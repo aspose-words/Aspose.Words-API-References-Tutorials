@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Étape 2 : Insérer une image
 
- Nous pouvons insérer une image en utilisant le`Shape` classe et en précisant le type d'image, ici`ShapeType.Image` Nous définissons également le type d'habillage de l'image sur`WrapType.Inline`.
+ Nous pouvons insérer une image en utilisant le`Shape` classe et en précisant le type d'image, ici`ShapeType.Image` . Nous définissons également le type d'habillage de l'image sur`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité image
 
 #### Q : Puis-je insérer une image à partir d’une URL dans Aspose.Words ?
 
- R : Oui, vous pouvez insérer une image à partir d’une URL dans Aspose.Words. Vous pouvez utiliser le même`InsertImage` et spécifiez l'URL de l'image au lieu du chemin du fichier local.
+ R : Oui, vous pouvez insérer une image à partir d’une URL dans Aspose.Words. Vous pouvez utiliser le même`InsertImage`et spécifiez l'URL de l'image au lieu du chemin du fichier local.
 
 #### Q : Comment puis-je redimensionner une image dans Aspose.Words ?
 
@@ -69,7 +69,7 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité image
 
 #### Q : Puis-je appliquer des filtres aux images dans Aspose.Words ?
 
- : Oui, vous pouvez appliquer des filtres aux images dans Aspose.Words. Par exemple, vous pouvez appliquer un filtre de flou à une image à l'aide de l'option`ApplyGaussianBlur` méthode du`Shape` objet.
+ R : Oui, vous pouvez appliquer des filtres aux images dans Aspose.Words. Par exemple, vous pouvez appliquer un filtre de flou à une image à l'aide de l'option`ApplyGaussianBlur` méthode du`Shape` objet.
 
 #### Q : Comment puis-je remplacer une image par une autre dans Aspose.Words ?
 

@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## चरण 3: तालिका बनाएं
- उपयोग`StartTable`, `EndTable`, `InsertCell` , और`Write` के तरीके`DocumentBuilder` तालिका बनाने के लिए ऑब्जेक्ट। का उपयोग करके वांछित पंक्ति ऊंचाई और ऊंचाई नियम सेट करें`RowFormat` गुण।
+ उपयोग`StartTable`, `EndTable`, `InsertCell` , और`Write` के तरीके`DocumentBuilder`तालिका बनाने के लिए ऑब्जेक्ट। का उपयोग करके वांछित पंक्ति ऊंचाई और ऊंचाई नियम सेट करें`RowFormat` गुण।
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## चरण 6: दस्तावेज़ में आकृति डालें
-का उपयोग करके दस्तावेज़ में वॉटरमार्क आकृति डालें`InsertNode` की विधि`DocumentBuilder` वस्तु। का उपयोग करके आकृति को स्थित करें`MoveTo` दस्तावेज़ में अंतिम बार चलाने के बाद इसे रखने की विधि।
+ का उपयोग करके दस्तावेज़ में वॉटरमार्क आकृति डालें`InsertNode` की विधि`DocumentBuilder` वस्तु। का उपयोग करके आकृति को स्थित करें`MoveTo` दस्तावेज़ में अंतिम बार चलाने के बाद इसे रखने की विधि।
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

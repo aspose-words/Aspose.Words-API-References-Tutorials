@@ -45,7 +45,7 @@ builder.Writeln("Cell 2 of the outer table");
 // A külső asztal megszűnése
 builder. EndTable();
 
-// Lépjen a külső táblázat első cellájára
+// Lépjen a külső táblázat első cellájába
 builder.MoveTo(cell.FirstParagraph);
 
 // Építsd meg a belső asztalt
@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	// Ez a hívás fontos egy beágyazott tábla létrehozásához az első táblán belül.
 	// E hívás nélkül az alább beszúrt cellák hozzá lesznek fűzve a külső táblázathoz.
 	builder.EndTable();
-	// Lépjen a külső táblázat első cellájára.
+	// Lépjen a külső táblázat első cellájába.
 	builder.MoveTo(cell.FirstParagraph);
 	// Építsd meg a belső asztalt.
 	builder.InsertCell();

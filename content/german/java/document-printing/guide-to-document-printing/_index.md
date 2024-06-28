@@ -153,7 +153,7 @@ try {
 
 ### Beheben häufiger Probleme
 
-Wenn beim Drucken Probleme auftreten, lesen Sie die Informationen[Aspose.Words für Java API-Referenz](https://reference.aspose.com/words/java/) für Schritte zur Fehlerbehebung und Community-Unterstützung.
+Wenn beim Drucken Probleme auftreten, lesen Sie die Informationen[Aspose.Words für Java API-Referenz](https://reference.aspose.com/words/java/) für Schritte zur Fehlerbehebung und Community-Support.
 
 ## Best Practices für den Dokumentendruck
 

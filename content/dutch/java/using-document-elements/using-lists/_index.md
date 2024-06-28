@@ -164,7 +164,7 @@ Door deze stappen te volgen, kunt u documenten maken met aangepaste lijstniveaus
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Maak een genummerde lijst op basis van een van de Microsoft Word-lijstsjablonen
+        // Maak een genummerde lijst op basis van een van de Microsoft Word-lijstsjablonen.
         //en pas het toe op de huidige paragraaf van de documentbouwer.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Er zijn negen niveaus in deze lijst, laten we ze allemaal proberen.
@@ -173,7 +173,7 @@ Door deze stappen te volgen, kunt u documenten maken met aangepaste lijstniveaus
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Maak een lijst met opsommingstekens op basis van een van de Microsoft Word-lijstsjablonen
+        // Maak een lijst met opsommingstekens op basis van een van de Microsoft Word-lijstsjablonen.
         //en pas het toe op de huidige paragraaf van de documentbouwer.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

@@ -90,7 +90,7 @@ A: Um das Vergleichsziel in Aspose.Words für .NET zu verwenden, führen Sie die
 1. Richten Sie Ihre Entwicklungsumgebung mit der Aspose.Words-Bibliothek ein.
 2. Fügen Sie Ihrem Projekt die erforderlichen Assemblys hinzu, indem Sie auf Aspose.Words verweisen.
 3.  Initialisieren Sie die Dokumente, die Sie vergleichen möchten, mit`Document` Klasse oder die`DocumentBuilder` Klasse.
-4.  Konfigurieren Sie die Vergleichsoptionen, indem Sie eine erstellen`CompareOptions` Objekt- und Einstellungseigenschaften wie`IgnoreFormatting` Und`Target` (z.B,`ComparisonTargetType.New` für Vergleichsziel).
+4.  Konfigurieren Sie die Vergleichsoptionen, indem Sie eine erstellen`CompareOptions` Objekt- und Einstellungseigenschaften wie`IgnoreFormatting` Und`Target` (z.B.,`ComparisonTargetType.New` für Vergleichsziel).
 5.  Benutzen Sie die`Compare` Methode für ein Dokument, Übergabe des anderen Dokuments und der`CompareOptions` Objekt als Parameter. Bei dieser Methode werden die Dokumente verglichen und die Änderungen im ersten Dokument gespeichert.
 
 ####  F: Was ist der Zweck des`Target` property in the `CompareOptions` class?

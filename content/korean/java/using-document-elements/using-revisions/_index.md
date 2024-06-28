@@ -107,7 +107,7 @@ para.remove();
 // 모든 수정본을 승인하거나 거부할 때까지 Microsoft Word에 수정본으로 표시됩니다.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// 변경 사항을 수락하면 개정 삭제 단락이 제거됩니다.
+// 삭제된 개정 단락은 변경 사항이 승인되면 제거됩니다.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //Is.Empty였습니다.

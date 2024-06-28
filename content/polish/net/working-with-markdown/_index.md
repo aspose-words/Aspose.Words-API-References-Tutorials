@@ -2,7 +2,7 @@
 title: Przetwarzanie słów za pomocą Markdown
 linktitle: Przetwarzanie słów za pomocą Markdown
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak pracować ze składnią Markdown w dokumentach programu Word przy użyciu Aspose.Words dla .NET, dzięki tym samouczkom krok po kroku i praktycznym przykładom.
+description: Dowiedz się, jak pracować ze składnią Markdown w dokumentach programu Word przy użyciu Aspose.Words dla .NET dzięki tym samouczkom krok po kroku i praktycznym przykładom.
 type: docs
 weight: 810
 url: /pl/net/working-with-markdown/
@@ -14,7 +14,7 @@ Words Processing with Markdown zapewnia wszechstronne źródło wiedzy, jak prac
 | Tytuł | Opis |
 | --- | --- |
 | [Pogrubiony tekst](./bold-text/) | Dowiedz się, jak pogrubić tekst za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
-| [Tekst kursywą](./italic-text/) | Dowiedz się, jak pisać kursywą za pomocą Aspose.Words for .NET Przewodnik krok po kroku. |
+| [Tekst włoski](./italic-text/) | Dowiedz się, jak pisać kursywą za pomocą Aspose.Words for .NET Przewodnik krok po kroku. |
 | [Przekreślenie](./strikethrough/) | Dowiedz się, jak zastosować styl przekreślonego tekstu za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Kod wbudowany](./inline-code/) | Dowiedz się, jak wstawić kod za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Automatyczne połączenie](./autolink/) | Dowiedz się, jak wstawić autolink za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
@@ -22,7 +22,7 @@ Words Processing with Markdown zapewnia wszechstronne źródło wiedzy, jak prac
 | [Obraz](./image/) | Dowiedz się, jak wstawić i dostosować obraz za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Linia pozioma](./horizontal-rule/) | Dowiedz się, jak wstawić linię poziomą za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Nagłówek](./heading/) | Dowiedz się, jak używać nagłówków w Aspose.Words for .NET Przewodnik krok po kroku. |
-| [Nagłówek setekstu](./setext-heading/) | Dowiedz się, jak używać nagłówków Setext do formatowania dokumentów za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
+| [Kierunek Setex](./setext-heading/) | Dowiedz się, jak używać nagłówków Setext do formatowania dokumentów za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Wcięty kod](./indented-code/) | Dowiedz się, jak używać kodu z wcięciami w Aspose.Words for .NET Przewodnik krok po kroku. |
 | [Kodeks Ogrodzony](./fenced-code/) | Dowiedz się, jak korzystać z funkcji kodu chronionego w Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Cytat](./quote/) | Dowiedz się, jak korzystać z cytatów w Aspose.Words dla .NET Przewodnik krok po kroku. |

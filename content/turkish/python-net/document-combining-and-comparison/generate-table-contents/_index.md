@@ -10,7 +10,7 @@ url: /tr/python-net/document-combining-and-comparison/generate-table-contents/
 
 ## İçindekiler Tablosuna Giriş
 
-İçindekiler tablosu, bir belgenin yapısının anlık görüntüsünü sağlayarak okuyucuların belirli bölümlere zahmetsizce gitmesine olanak tanır. Araştırma makaleleri, raporlar veya kitaplar gibi uzun belgeler için özellikle kullanışlıdır. Bir içindekiler tablosu oluşturarak kullanıcı deneyimini geliştirir ve okuyucuların içeriğinizle daha etkili bir şekilde etkileşim kurmasına yardımcı olursunuz.
+İçindekiler tablosu, belgenin yapısının anlık görüntüsünü sağlayarak okuyucuların belirli bölümlere zahmetsizce gitmesine olanak tanır. Araştırma makaleleri, raporlar veya kitaplar gibi uzun belgeler için özellikle kullanışlıdır. Bir içindekiler tablosu oluşturarak kullanıcı deneyimini geliştirir ve okuyucuların içeriğinizle daha etkili bir şekilde etkileşim kurmasına yardımcı olursunuz.
 
 ## Ortamın Ayarlanması
 

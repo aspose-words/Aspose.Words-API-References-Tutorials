@@ -283,7 +283,7 @@ Belge İstihbaratı çok önemlidir çünkü kuruluşların belge iş akışlar�
 Aspose.Words, çok çeşitli belge işleme yetenekleri sağlayan güçlü bir Python kütüphanesidir. Kullanıcıların Word belgelerini programlı olarak oluşturmasına, düzenlemesine, ayıklamasına ve değiştirmesine olanak tanır, bu da onu belge istihbaratı görevleri için değerli bir araç haline getirir.
 
 ### Aspose.Words, Word belgelerinin (DOCX) yanı sıra diğer belge formatlarını da işleyebilir mi?
-Evet, Aspose.Words öncelikli olarak Word belgelerine (DOCX) odaklansa da RTF (Zengin Metin Formatı) ve ODT (OpenDocument Metni) gibi diğer formatları da işleyebilir.
+Evet, Aspose.Words öncelikli olarak Word belgelerine (DOCX) odaklanırken, RTF (Zengin Metin Formatı) ve ODT (OpenDocument Metni) gibi diğer formatları da işleyebilir.
 
 ### Aspose.Words Python 3.x sürümleriyle uyumlu mu?
 Evet, Aspose.Words, Python 3.x sürümleriyle tamamen uyumludur ve kullanıcıların Python tarafından sunulan en yeni özelliklerden ve iyileştirmelerden yararlanabilmesini sağlar.
@@ -292,7 +292,7 @@ Evet, Aspose.Words, Python 3.x sürümleriyle tamamen uyumludur ve kullanıcıla
 Aspose, yeni özellikler eklemek, performansı artırmak ve bildirilen sorunları düzeltmek için kitaplıklarını düzenli olarak günceller. Kullanıcılar Aspose web sitesinden güncellemeleri kontrol ederek en son geliştirmelerden haberdar olabilirler.
 
 ### Aspose.Words belge çevirisi için kullanılabilir mi?
-Aspose.Words öncelikli olarak belge işleme görevlerine odaklanırken, belge çeviri işlevselliğini elde etmek için diğer çeviri API'leri veya kütüphaneleriyle entegre edilebilir.
+Aspose.Words öncelikli olarak belge işleme görevlerine odaklanırken, belge çeviri işlevselliğini elde etmek için diğer çeviri API'leri veya kitaplıklarıyla entegre edilebilir.
 
 ### Aspose.Words for Python tarafından sağlanan bazı gelişmiş belge zekası yetenekleri nelerdir?
 Aspose.Words, kullanıcıların Word belgeleri içindeki tablolar, grafikler, resimler ve şekillerle çalışmasına olanak tanır. Ayrıca belge otomasyonunu da destekleyerek dinamik ve kişiselleştirilmiş belgeler oluşturmayı kolaylaştırır.
@@ -301,4 +301,4 @@ Aspose.Words, kullanıcıların Word belgeleri içindeki tablolar, grafikler, re
 Kullanıcılar, derinlemesine belge analizi, duygu analizi ve varlık tanıma gerçekleştirmek için spaCy gibi Python NLP kitaplıklarını Aspose.Words ile birlikte kullanabilirler.
 
 ### Aspose.Words ile belge sınıflandırma için makine öğrenimi algoritmaları kullanılabilir mi?
-Evet, kullanıcılar Aspose.Words ile birlikte scikit-learn tarafından sağlananlar gibi makine öğrenimi algoritmalarını kullanarak belgeleri içeriklerine göre sınıflandırabilir ve büyük belge havuzlarının düzenlenmesine ve kategorize edilmesine yardımcı olabilirler.
+Evet, kullanıcılar Aspose.Words ile birlikte scikit-learn tarafından sağlananlar gibi makine öğrenimi algoritmalarını kullanarak belgeleri içeriklerine göre sınıflandırabilir ve büyük belge havuzlarının düzenlenmesine ve sınıflandırılmasına yardımcı olabilir.

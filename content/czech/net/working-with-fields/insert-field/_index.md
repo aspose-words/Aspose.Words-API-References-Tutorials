@@ -2,7 +2,7 @@
 title: Vložit pole
 linktitle: Vložit pole
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se vložit pole do dokumentů aplikace Word pomocí Aspose.Words for .NET. Přizpůsobte si dokumenty pomocí dynamických polí.
+description: Naučte se vložit pole do dokumentů aplikace Word pomocí Aspose.Words for .NET. Přizpůsobte si své dokumenty pomocí dynamických polí.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-field/

@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/basic-conversions/docx-to-txt/
 ---
 
-tomto podrobném tutoriálu vás provedeme tím, jak používat Aspose.Words pro .NET k převodu dokumentu aplikace Word ve formátu Docx na prostý text (Txt). Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+V tomto podrobném tutoriálu vás provedeme tím, jak používat Aspose.Words pro .NET k převodu dokumentu aplikace Word ve formátu Docx na prostý text (Txt). Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
 
  Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nastavený ve svém vývojovém prostředí. Pokud jste tak neučinili, stáhněte si a nainstalujte knihovnu z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -57,4 +57,4 @@ Problémy s kódováním mohou nastat při převodu DOCX na TXT kvůli rozdílů
 
 #### Jaká jsou omezení procesu konverze?
 
-Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít omezení související s podporovanými funkcemi, složitým formátováním nebo specifickými prvky souboru DOCX. Je důležité porozumět omezením zvoleného nástroje a posoudit, zda odpovídají vašim potřebám konverze.
+Omezení procesu převodu závisí na konkrétním nástroji nebo knihovně, kterou používáte. Některé nástroje mohou mít související omezení pro podporované funkce, složité formátování nebo specifické prvky souboru DOCX. Je důležité porozumět omezením zvoleného nástroje a posoudit, zda odpovídají vašim potřebám konverze.

@@ -40,7 +40,7 @@ builder. InsertCell();
 builder.CellFormat.SetPaddings(30, 50, 30, 50);
 ```
 
-## Schritt 5: Fügen Sie der Zelle Inhalte hinzu
+## Schritt 5: Inhalt zur Zelle hinzufügen
  Anschließend können wir mit dem Document Builder Inhalte zur Zelle hinzufügen`Writeln()` Methode.
 
 ```csharp

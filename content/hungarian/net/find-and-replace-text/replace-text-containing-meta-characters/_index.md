@@ -23,9 +23,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## 2. lépés: Szúrjon be szöveget a dokumentumba
+## 2. lépés: Szöveg beszúrása a dokumentumba
 
- Ha megvan a dokumentumunk, szöveget szúrhatunk be az a segítségével`DocumentBuilder` tárgy. Példánkban a`Writeln` módszer több bekezdés szövegének különböző szakaszokba történő beillesztésére:
+ Ha megvan a dokumentumunk, akkor az a segítségével tudunk szöveget beszúrni`DocumentBuilder` tárgy. Példánkban a`Writeln` módszer több bekezdés szövegének különböző szakaszokba történő beillesztésére:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -49,7 +49,7 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 
 ## 4. lépés: Metakaraktereket tartalmazó szöveg cseréje
 
- Használjuk a`Range.Replace`módszer a metakaraktereket tartalmazó szöveg cseréjének végrehajtására. Példánkban a "szakasz" szó minden előfordulását, amelyet egy bekezdéstörés követ, lecseréljük ugyanazzal a szóval, amelyet több kötőjel követ, és egy új bekezdéstörés:
+ Használjuk a`Range.Replace`módszer a metakaraktereket tartalmazó szöveg cseréjének végrehajtására. Példánkban a "szakasz" szó minden előfordulását, amelyet egy bekezdéstörés követ, ugyanazzal a szóval helyettesítjük, amelyet több kötőjel követ, és egy új bekezdéstörés:
 
 ```csharp
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
@@ -115,7 +115,7 @@ V: A Metakaraktereket tartalmazó szöveg cseréje funkciója az Aspose.Words fo
 
 #### K: Hogyan lehet új dokumentumot létrehozni az Aspose.Words for .NET-ben?
 
- V: A metakaraktereket tartalmazó szöveg cseréje funkció használata előtt létre kell hoznia egy új dokumentumot az Aspose.Words for .NET használatával. Ezt úgy lehet megtenni, hogy a`Document` tárgy. Íme egy mintakód egy új dokumentum létrehozásához:
+ V: A metakaraktereket tartalmazó szöveg cseréje funkció használata előtt létre kell hoznia egy új dokumentumot az Aspose.Words for .NET használatával. Ez megtehető az a. példányosításával`Document` tárgy. Íme egy mintakód egy új dokumentum létrehozásához:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -148,7 +148,7 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 
 #### K: Hogyan lehet metakaraktereket tartalmazó szöveget lecserélni egy dokumentumban az Aspose.Words for .NET használatával?
 
- V: Használjuk a`Range.Replace` módszer a metakaraktereket tartalmazó szöveg cseréjének végrehajtására. Példánkban a "szakasz" szó minden előfordulását, amelyet egy bekezdéstörés követ, lecseréljük ugyanazzal a szóval, amelyet több kötőjel követ, és egy új bekezdéstörés:
+ V: Használjuk a`Range.Replace` módszer a metakaraktereket tartalmazó szöveg cseréjének végrehajtására. Példánkban a "szakasz" szó minden előfordulását, amelyet egy bekezdéstörés követ, ugyanazzal a szóval helyettesítjük, amelyet több kötőjel követ, és egy új bekezdéstörés:
 
 ```csharp
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);

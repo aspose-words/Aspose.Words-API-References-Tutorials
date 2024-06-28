@@ -16,7 +16,7 @@ Word ドキュメントの操作、作成、変換、生成が必要な場合で
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [Word文書内の改ページを削除する](./remove-page-breaks/) | Aspose.Words Library for .NET を使用して Word 文書の改ページを削除する方法を学びます。シームレスなレイアウトについては、ステップバイステップのガイドに従ってください。 |
-| [Word文書内のセクション区切りを削除する](./remove-section-breaks/) | .NET 用の Aspose.Words ライブラリを使用して Word 文書内のセクション区切りを削除する方法を学びます。文書の書式を乱す可能性のあるセクション区切りを効果的に排除します。|
+| [Word文書の改ページを削除する](./remove-page-breaks/) | Aspose.Words Library for .NET を使用して Word 文書の改ページを削除する方法を学びます。シームレスなレイアウトについては、ステップバイステップのガイドに従ってください。 |
+| [Word文書内のセクション区切りを削除する](./remove-section-breaks/) | .NET 用の Aspose.Words ライブラリを使用して Word 文書内のセクション区切りを削除する方法を学びます。文書の書式を乱す可能性があるセクション区切りを効果的に排除します。|
 | [Word文書のフッターを削除する](./remove-footers/) | Aspose.Words for .NET を使用して Word 文書のフッターを簡単に削除する方法を学びます。 DOCX ファイルを効率的に処理するには、ステップバイステップのガイドに従ってください。 |
 | [Word文書の目次を削除する](./remove-table-of-contents/) | Aspose.Words for .NET を使用して Word 文書の目次を削除する方法を学習します。 |

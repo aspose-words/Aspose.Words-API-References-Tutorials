@@ -97,4 +97,4 @@ Cải thiện khả năng đọc: Việc nhúng phông chữ đảm bảo tài l
 Đáp: Có, việc nhúng tất cả phông chữ vào tài liệu PDF có thể làm tăng kích thước của tệp PDF được tạo vì dữ liệu phông chữ phải được đưa vào tệp. Tuy nhiên, mức tăng kích thước này thường không đáng kể đối với hầu hết các tài liệu và lợi ích của việc nhúng phông chữ thường lớn hơn mức tăng kích thước nhẹ này.
 
 #### Hỏi: Tôi có thể chọn phông chữ cụ thể để nhúng vào tài liệu PDF không?
- Trả lời: Có, với Aspose.Words cho .NET, bạn có thể chọn các phông chữ cụ thể để nhúng vào tài liệu PDF bằng các tùy chọn cấu hình nâng cao. Ví dụ: bạn có thể sử dụng`SubsetFonts` tài sản của`PdfSaveOptions` đối tượng để chỉ định phông chữ nào sẽ bao gồm hoặc sử dụng các tùy chọn bổ sung để đặt bộ lọc chọn phông chữ tùy chỉnh.
+ Trả lời: Có, với Aspose.Words for .NET, bạn có thể chọn các phông chữ cụ thể để nhúng vào tài liệu PDF bằng các tùy chọn cấu hình nâng cao. Ví dụ: bạn có thể sử dụng`SubsetFonts` tài sản của`PdfSaveOptions` đối tượng để chỉ định phông chữ nào sẽ bao gồm hoặc sử dụng các tùy chọn bổ sung để đặt bộ lọc chọn phông chữ tùy chỉnh.

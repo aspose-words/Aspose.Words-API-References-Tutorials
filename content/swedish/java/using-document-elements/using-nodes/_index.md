@@ -112,10 +112,10 @@ Aspose.Words för Java är ett Java-bibliotek som låter utvecklare skapa, manip
 Du kan ladda ner och installera Aspose.Words för Java från[här](https://releases.aspose.com/words/java/).
 
 ### Q3. Finns det en gratis provperiod?
- Ja, du kan få en gratis testversion av Aspose.Words för Java[här](https://releases.aspose.com/).
+ Ja, du kan få en gratis testversion av Aspose.Words för Java.[här](https://releases.aspose.com/).
 
 ### Q4. Var kan jag få en tillfällig licens?
- Du kan få en tillfällig licens för Aspose.Words för Java[här](https://purchase.aspose.com/temporary-license/).
+ Du kan få en tillfällig licens för Aspose.Words för Java.[här](https://purchase.aspose.com/temporary-license/).
 
 ### F5. Var kan jag hitta stöd för Aspose.Words för Java?
  För support och diskussioner, besök[Aspose.Words för Java-forum](https://forum.aspose.com/).

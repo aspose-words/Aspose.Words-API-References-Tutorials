@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## الخطوة 5: مسح حدود الجدول الموجودة
+## الخطوة 5: مسح حدود الجدول الموجودة.
 للبدء بحد مخطط تفصيلي جديد، نحتاج أولاً إلى مسح كافة الحدود الموجودة من الجدول. ويمكن القيام بذلك باستخدام`ClearBorders()` طريقة.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## الخطوة 7: املأ الخلايا بلون الخلفية
-لتحسين العرض المرئي للجدول، يمكننا ملء الخلايا بلون الخلفية الأرضية
+## الخطوة 7: املأ الخلايا بلون الخلفية.
+لتحسين العرض المرئي للجدول، يمكننا ملء الخلايا بلون الخلفية الأرضية.
 
 فكرة. في هذا المثال، نستخدم اللون الأخضر الفاتح.
 

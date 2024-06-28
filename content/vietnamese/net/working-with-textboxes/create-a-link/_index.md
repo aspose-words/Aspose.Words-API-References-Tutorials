@@ -66,7 +66,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách tạo liên kết giữa hai
 
 #### Câu hỏi: Có thể tạo liên kết giữa các phần tử ngoài hộp văn bản không?
 
-Trả lời: Có, bằng cách sử dụng thư viện Aspose.Words cho .NET, bạn có thể tạo liên kết giữa các thành phần khác nhau như đoạn văn, bảng, hình ảnh, v.v. Quá trình sẽ khác nhau tùy thuộc vào mục cụ thể mà bạn muốn liên kết.
+Trả lời: Có, bằng cách sử dụng thư viện Aspose.Words cho .NET, bạn có thể tạo liên kết giữa các thành phần khác nhau như đoạn văn, bảng, hình ảnh, v.v. Quá trình này sẽ khác nhau tùy thuộc vào mục cụ thể mà bạn muốn liên kết.
 
 #### Câu hỏi: Bạn có thể thêm chức năng nào khác vào hộp văn bản trong Word bằng Aspose.Words cho .NET?
 

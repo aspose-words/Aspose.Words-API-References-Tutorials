@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. lépés: Építsd meg az asztalt
- Használja a`StartTable`, `EndTable`, `InsertCell` , és`Write` módszerei a`DocumentBuilder` tárgyat építeni egy asztalt. Állítsa be a kívánt sormagasságot és magasságszabályt a gombbal`RowFormat` tulajdonságait.
+ Használja a`StartTable`, `EndTable`, `InsertCell` , és`Write` módszerei a`DocumentBuilder`tárgyat építeni egy asztalt. Állítsa be a kívánt sormagasságot és magasságszabályt a gombbal`RowFormat` tulajdonságait.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## 6. lépés: Illessze be az alakzatot a dokumentumba
-Illessze be a vízjel alakzatot a dokumentumba a gombbal`InsertNode` módszere a`DocumentBuilder` tárgy. Helyezze el az alakzatot a`MoveTo` módszerrel, hogy az utolsó futtatás után helyezze el a dokumentumban.
+ Illessze be a vízjel alakzatot a dokumentumba a gombbal`InsertNode` módszere a`DocumentBuilder` tárgy. Helyezze el az alakzatot a`MoveTo` módszerrel, hogy az utolsó futtatás után helyezze el a dokumentumban.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

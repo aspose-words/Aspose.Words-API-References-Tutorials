@@ -27,7 +27,7 @@ Document doc = new Document(dataDir + "Content-ID.docx");
 
 ## Βήμα 3: Διαμόρφωση επιλογών δημιουργίας αντιγράφων ασφαλείας HTML
 
-Τώρα θα διαμορφώσουμε τις επιλογές αποθήκευσης HTML για εξαγωγή διευθύνσεων URL CID πόρων MHTML. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τώρα θα διαμορφώσουμε τις επιλογές αποθήκευσης HTML για εξαγωγή διευθύνσεων URL CID πόρων MHTML. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Mhtml)
@@ -41,7 +41,7 @@ ExportCidUrlsForMhtmlResources = true
 
 ## Βήμα 4: Μετατροπή και αποθήκευση του εγγράφου σε MHTML
 
-Τέλος, θα μετατρέψουμε το έγγραφο σε MHTML χρησιμοποιώντας τις επιλογές αποθήκευσης HTML που διαμορφώθηκαν νωρίτερα. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τέλος, θα μετατρέψουμε το έγγραφο σε MHTML χρησιμοποιώντας τις επιλογές αποθήκευσης HTML που διαμορφώθηκαν νωρίτερα. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);

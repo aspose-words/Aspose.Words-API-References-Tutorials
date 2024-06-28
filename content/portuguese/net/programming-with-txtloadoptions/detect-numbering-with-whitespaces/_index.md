@@ -103,7 +103,7 @@ Agora você pode executar o código-fonte para carregar o documento de texto con
 ## Conclusão
 Neste tutorial, exploramos o recurso de detecção de numeração de espaços em branco no Aspose.Words for .NET. Aprendemos como criar listas a partir de um documento de texto contendo números de lista seguidos de espaços em branco.
 
-Este recurso é extremamente útil para processar documentos contendo números de listas formatados de diferentes maneiras. Ao usar as opções de carregamento apropriadas, o Aspose.Words é capaz de detectar esses números de lista, mesmo que sejam seguidos de espaços em branco, e convertê-los em listas estruturadas no documento final.
+Este recurso é extremamente útil para processar documentos contendo números de listas formatados de diferentes maneiras. Ao usar as opções de carregamento apropriadas, Aspose.Words é capaz de detectar esses números de lista, mesmo que sejam seguidos de espaços em branco, e convertê-los em listas estruturadas no documento final.
 
 Usar esse recurso pode economizar tempo e melhorar a eficiência do fluxo de trabalho. Você pode extrair facilmente informações de documentos de texto e convertê-los em documentos bem estruturados com listas adequadas.
 

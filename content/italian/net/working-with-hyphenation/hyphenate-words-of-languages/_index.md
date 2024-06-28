@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-In questo tutorial passo passo, ti guideremo su come sillabare le parole in diverse lingue nei documenti Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
+In questo tutorial passo passo ti guideremo su come sillabare le parole in diverse lingue nei documenti Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
 Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria dal sito ufficiale.
 
@@ -34,7 +34,7 @@ Assicurati di avere i file del dizionario appropriati nella directory dei dati.
 
 ## Passaggio 3: elaborazione delle parole mediante sillabazione
 
- Ora puoi utilizzare le funzionalità di sillabazione per elaborare parole in diverse lingue. È possibile utilizzare diversi metodi di`Document` O`DocumentBuilder` a seconda delle vostre esigenze specifiche.
+Ora puoi utilizzare le funzionalità di sillabazione per elaborare parole in diverse lingue. È possibile utilizzare diversi metodi di`Document` O`DocumentBuilder` a seconda delle vostre esigenze specifiche.
 
 ```csharp
 // Esempio: utilizzo del metodo Sillabazione di DocumentBuilder
@@ -71,7 +71,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo per a
 
 #### D: Come posso sillabare una parola in una lingua specifica con Aspose.Words?
 
- R: Per sillabare una parola in una lingua specifica con Aspose.Words, puoi usare il`Hyphenation` classe e il`Hyphenate()` metodo. Crea un'istanza di`Hyphenation` class specificando la lingua desiderata, quindi chiamare la classe`Hyphenate()`metodo che passa la parola da sillabare come argomento. Questo ti darà le sillabe della parola nella lingua specificata.
+ R: Per sillabare una parola in una lingua specifica con Aspose.Words, puoi usare il`Hyphenation` classe e il`Hyphenate()` metodo. Crea un'istanza di`Hyphenation` class specificando la lingua desiderata, quindi chiamare la classe`Hyphenate()` metodo che passa la parola da sillabare come argomento. Questo ti darà le sillabe della parola nella lingua specificata.
 
 #### D: Quali codici di lingua devo utilizzare per specificare la lingua di sillabazione in Aspose.Words?
 

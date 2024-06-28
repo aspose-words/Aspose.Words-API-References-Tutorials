@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 5. lépés: Mentse el a céldokumentumot
 
- Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");

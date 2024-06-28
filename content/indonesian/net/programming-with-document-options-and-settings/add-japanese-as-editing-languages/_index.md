@@ -42,7 +42,7 @@ Console.WriteLine(
 
 Kode tersebut memeriksa apakah ID bahasa Timur Jauh cocok dengan bahasa Jepang. Berdasarkan hasilnya, ini akan menampilkan pesan yang sesuai.
 
-### Contoh kode sumber untuk Menambahkan Bahasa Jepang Sebagai Bahasa Pengeditan menggunakan Aspose.Words untuk .NET
+### Contoh kode sumber untuk Menambahkan Bahasa Jepang Sebagai Bahasa Editing menggunakan Aspose.Words untuk .NET
 
 ```csharp
 

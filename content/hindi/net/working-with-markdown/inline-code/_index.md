@@ -53,7 +53,7 @@ Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "I
 builder.Font.Style = inlineCode1BackTicks;
 builder.Writeln("Text with InlineCode style with 1 backtick");
 
-// 3 बैकटिक्स होंगे।
+// 3 बैकटिक्स होंगे.
 Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
 builder.Font.Style = inlineCode3BackTicks;
 builder.Writeln("Text with InlineCode style with 3 backtick");

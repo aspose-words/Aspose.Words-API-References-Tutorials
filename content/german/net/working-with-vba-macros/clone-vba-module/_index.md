@@ -81,7 +81,7 @@ A: Bevor Sie ein VBA-Modul aus einem Word-Dokument klonen können, müssen Sie �
 
 #### F: Wie lege ich das Dokumentverzeichnis im Code fest?
 
- A: Im bereitgestellten Code müssen Sie ersetzen`"YOUR DOCUMENTS DIRECTORY"` mit dem entsprechenden Pfad zu dem Verzeichnis, in dem sich Ihr Word-Dokument mit dem VBA-Projekt befindet.
+ A: Im bereitgestellten Code müssen Sie ersetzen.`"YOUR DOCUMENTS DIRECTORY"` mit dem entsprechenden Pfad zu dem Verzeichnis, in dem sich Ihr Word-Dokument mit dem VBA-Projekt befindet.
 
 #### F: Wie speichere ich ein Zieldokument mit einem geklonten VBA-Modul?
 

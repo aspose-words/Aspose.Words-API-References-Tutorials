@@ -38,7 +38,7 @@ builder.InsertHtml(
 
 ## Βήμα 3: Ορίστε τις επιλογές αποθήκευσης HTML
 
-Τώρα θα ορίσουμε τις επιλογές αποθήκευσης HTML, συμπεριλαμβανομένης της μορφής μετα-αρχείου που θα χρησιμοποιείται για τις εικόνες. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τώρα θα ορίσουμε τις επιλογές αποθήκευσης HTML, συμπεριλαμβανομένης της μορφής μετα-αρχείου που θα χρησιμοποιείται για τις εικόνες. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
@@ -48,7 +48,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafil
 
 ## Βήμα 4: Μετατροπή και αποθήκευση του εγγράφου σε HTML
 
-Τέλος, θα μετατρέψουμε το έγγραφο σε HTML χρησιμοποιώντας τις επιλογές αποθήκευσης HTML που ορίσαμε προηγουμένως. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τέλος, θα μετατρέψουμε το έγγραφο σε HTML χρησιμοποιώντας τις επιλογές αποθήκευσης HTML που ορίσαμε προηγουμένως. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);

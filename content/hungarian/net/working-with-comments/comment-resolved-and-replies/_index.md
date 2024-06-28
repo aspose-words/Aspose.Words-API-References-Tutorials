@@ -12,7 +12,7 @@ Ebből az átfogó oktatóanyagból megtudhatja, hogyan oldhatja meg a megjegyz�
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Töltse be a dokumentumot és a megjegyzéseket
 Kezdésként töltse be a megjegyzéseket tartalmazó dokumentumot a Dokumentum osztály segítségével, és nyissa meg a megjegyzésgyűjteményt:
@@ -39,10 +39,10 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-A fenti kódban elérjük a szülő megjegyzést, és a válaszokon keresztül iterálunk. Lekérhetjük a szülő megjegyzés azonosítóját és annak felbontási állapotát. Ezután minden megjegyzésre adott válasznál frissítjük a „Kész” jelölést, jelezve a megoldást.
+fenti kódban elérjük a szülő megjegyzést, és a válaszokon keresztül iterálunk. Lekérhetjük a szülő megjegyzés azonosítóját és annak felbontási állapotát. Ezután minden megjegyzésre adott válasznál frissítjük a „Kész” jelölést, jelezve a megoldást.
 
 ## 3. lépés: Mentse el a dokumentumot
-megjegyzések feloldása és állapotfrissítése után mentse a módosított dokumentumot fájlba a Dokumentum osztály Mentés metódusával:
+A megjegyzések feloldása és állapotfrissítése után mentse a módosított dokumentumot fájlba a Dokumentum osztály Mentés metódusával:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
@@ -74,7 +74,7 @@ Ne felejtse el módosítani a kódot saját igényei szerint, beleértve a dokum
 ## Következtetés
 Gratulálunk! Sikeresen megtanulta, hogyan lehet feloldani a megjegyzéseket és a rájuk adott válaszokat egy Word-dokumentumban az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével és a mellékelt forráskód használatával mostantól kezelheti a megjegyzések felbontását, és igénye szerint frissítheti a megjegyzések és válaszaik állapotát.
 
-megjegyzésfeloldás segít a visszajelzések nyomon követésében és kezelésében a dokumentumon belül. Kísérletezzen a különböző megjegyzésállapotokkal, és szabja testre azokat, hogy javítsa az együttműködést és a dokumentumok áttekintési folyamatait.
+A megjegyzésfeloldás segít a visszajelzések nyomon követésében és kezelésében a dokumentumon belül. Kísérletezzen a különböző megjegyzésállapotokkal, és szabja testre azokat, hogy javítsa az együttműködést és a dokumentumok áttekintési folyamatait.
 
 ### GYIK
 
@@ -84,7 +84,7 @@ megjegyzésfeloldás segít a visszajelzések nyomon követésében és kezelés
 
 #### K: Hogyan adhatok választ egy megoldott megjegyzésre az Aspose.Words for .NET-ben?
 
- V: Bár a megoldott megjegyzések alapértelmezés szerint el vannak rejtve a végleges dokumentumban, továbbra is hozzáadhat választ a megoldott megjegyzésekre a`Comment.AddReply` metódus, amely megadja a válaszszöveget és azt, hogy hol szeretné hozzáadni.
+ V: Bár a megoldott megjegyzések alapértelmezés szerint el vannak rejtve a végleges dokumentumban, továbbra is hozzáadhat választ a megoldott megjegyzésekre a`Comment.AddReply`metódus, amely megadja a válaszszöveget és azt, hogy hol szeretné hozzáadni.
 
 #### K: Hogyan tekinthetem meg a megoldott megjegyzéseket az Aspose.Words for .NET-ben?
 

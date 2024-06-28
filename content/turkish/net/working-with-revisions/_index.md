@@ -16,7 +16,7 @@ Bu eğitimleri takip ederek Aspose.Words for .NET kullanarak Word belgelerinizde
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Düzeltmeleri Kabul Et](./accept-revisions/) | Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonları nasıl kabul edeceğinizi öğrenin. |
+| [İncelemeleri Kabul Et](./accept-revisions/) | Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonları nasıl kabul edeceğinizi öğrenin. |
 | [Kelime Türlerinin Revizyonunu Alın](./get-revision-types/) | Aspose.Words for .NET ile Word belgesindeki kelimelerin revizyon türlerini alın. |
 | [Revizyon Gruplarını Alma](./get-revision-groups/) | Aspose.Words for .NET ile revizyon grubu ayrıntılarını bir Word belgesinden alın. |
 | [Pdf Dosyasındaki Yorumları Kaldır](./remove-comments-in-pdf/) | Aspose.Words for .NET ile PDF dosyasındaki yorumları kaldırın. |

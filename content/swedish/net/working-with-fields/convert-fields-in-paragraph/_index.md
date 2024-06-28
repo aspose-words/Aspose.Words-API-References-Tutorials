@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-Den här koden använder en kombination av LINQ-metoder för att filtrera bort fält i dokumentets sista stycke och konverterar dem sedan till vanlig text genom att anropa`Unlink()` metod.
+ Den här koden använder en kombination av LINQ-metoder för att filtrera bort fält i dokumentets sista stycke och konverterar dem sedan till vanlig text genom att anropa`Unlink()` metod.
 
 ## Steg 4: Spara det ändrade dokumentet
 
@@ -93,4 +93,4 @@ S: Aspose.Words stöder ett brett utbud av konverteringsformat i fält, inklusiv
 
 #### F: Hur uppdaterar man ett konverteringsfält i ett Word-dokument med Aspose.Words?
 
-S: För att uppdatera ett konverteringsfält i ett Word-dokument med Aspose.Words kan du använda metoden UpdateFields. Den här metoden går igenom dokumentet och uppdaterar alla fält, inklusive konverteringsfält, och räknar om värden baserat på aktuell data.
+S: För att uppdatera ett konverteringsfält i ett Word-dokument med Aspose.Words kan du använda metoden UpdateFields. Denna metod går igenom dokumentet och uppdaterar alla fält, inklusive konverteringsfält, omräkning av värden baserat på aktuell data.

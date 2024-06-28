@@ -38,7 +38,7 @@ Document doc = new Document("your-document.docx");
 
 ## Rozdělení dokumentu
 
-Nyní rozdělme dokument na HTML stránky. Aspose.Words tento úkol zjednodušuje:
+Nyní rozdělme dokument na stránky HTML. Aspose.Words tento úkol zjednodušuje:
 
 ```java
 DocumentSplitOptions splitOptions = new DocumentSplitOptions();

@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 2: Kaynak ve Hedef Belgelerini Yükleyin
 
- Daha sonra Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. Dosya adlarını güncelleyin`Document` belge adlarınıza göre yapıcı.
+Daha sonra Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. Dosya adlarını güncelleyin`Document` belge adlarınıza göre yapıcı.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Adım 4: Üstbilgileri ve Altbilgileri Önceki Bölüme Bağlayın
 
-Kaynak belgenin üstbilgilerini ve altbilgilerini hedef belgedeki önceki bölüme bağlamak için`LinkToPrevious` yöntemi`HeadersFooters` Toplamak. Geçerek`true` parametre olarak kaynak belgedeki mevcut üstbilgileri veya altbilgileri geçersiz kılarsınız.
+ Kaynak belgenin üstbilgilerini ve altbilgilerini hedef belgedeki önceki bölüme bağlamak için`LinkToPrevious` yöntemi`HeadersFooters` Toplamak. Geçerek`true` parametre olarak kaynak belgedeki mevcut üstbilgileri veya altbilgileri geçersiz kılarsınız.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

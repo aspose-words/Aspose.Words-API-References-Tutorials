@@ -107,7 +107,7 @@ para.remove();
 // e será exibido como uma revisão no Microsoft Word, até aceitarmos ou rejeitarmos todas as revisões.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// O parágrafo de exclusão de revisão é removido assim que aceitamos as alterações.
+// O parágrafo de revisão excluído será removido assim que aceitarmos as alterações.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //estava is.vazio

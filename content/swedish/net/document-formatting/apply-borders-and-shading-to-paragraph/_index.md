@@ -91,7 +91,7 @@ Här är den fullständiga källkoden för funktionen Apply Borders and shading 
 
 ## Slutsats
 
- den här handledningen lärde vi oss hur man tillämpar ramar och skuggning på ett stycke i ett Word-dokument med Aspose.Words för .NET. Genom att konfigurera styckets`Borders` och`Shading` egenskaper kunde vi ställa in ramstil, linjefärg och fyllningsfärg för stycket. Aspose.Words för .NET ger kraftfulla formateringsmöjligheter för att anpassa utseendet på stycken och förbättra den visuella representationen av dina dokument.
+ I den här handledningen lärde vi oss hur man tillämpar ramar och skuggning på ett stycke i ett Word-dokument med Aspose.Words för .NET. Genom att konfigurera styckets`Borders` och`Shading` egenskaper kunde vi ställa in ramstil, linjefärg och fyllningsfärg för stycket. Aspose.Words för .NET ger kraftfulla formateringsmöjligheter för att anpassa utseendet på stycken och förbättra den visuella representationen av dina dokument.
 
 ### FAQ's
 
@@ -99,14 +99,14 @@ Här är den fullständiga källkoden för funktionen Apply Borders and shading 
 
 S: För att tillämpa ramar och skuggning på ett stycke i ett Word-dokument med Aspose.Words för .NET, följ dessa steg:
 1.  Skapa ett nytt dokument och en`DocumentBuilder` objekt.
-2.  Konfigurera styckegränserna genom att gå till`Borders` egendom av`ParagraphFormat` och ställa in kantstilen för varje sida.
-3.  Konfigurera styckefyllningen genom att gå till`Shading` egendom av`ParagraphFormat` och specificera textur och fyllningsfärger.
+2.  Konfigurera styckegränserna genom att gå till`Borders` egendom av`ParagraphFormat` och ange kantstilen för varje sida.
+3. Konfigurera styckefyllningen genom att gå till`Shading` egendom av`ParagraphFormat` och specificera textur och fyllningsfärger.
 4.  Lägg till innehåll i stycket med hjälp av`Write` metod för`DocumentBuilder`.
 5.  Spara dokumentet med hjälp av`Save` metod.
 
 #### F: Hur ställer jag in ramstilen för varje sida av stycket?
 
- S: För att ställa in ramstilen för varje sida av stycket kan du komma åt`Borders` egendom av`ParagraphFormat` och ställ in`LineStyle` egendom för varje`BorderType` (t.ex,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Du kan ange olika linjestilar som t.ex`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, etc.
+ S: För att ställa in ramstilen för varje sida av stycket kan du komma åt`Borders` egendom av`ParagraphFormat` och ställ in`LineStyle` egendom för varje`BorderType` (t.ex.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Du kan ange olika linjestilar som t.ex`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, etc.
 
 #### F: Hur anger jag textur och fyllningsfärger för styckeskuggningen?
 

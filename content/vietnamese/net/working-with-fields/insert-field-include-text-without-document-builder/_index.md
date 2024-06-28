@@ -97,4 +97,4 @@ Phần này kết thúc hướng dẫn của chúng tôi về cách sử dụng 
 
 #### Câu hỏi: Tôi có thể tùy chỉnh giao diện của trường bao gồm văn bản trong tài liệu Word bằng Aspose.Words cho .NET không?
 
-Trả lời: Trường bao gồm văn bản không trực tiếp tùy chỉnh hình thức của nó trong tài liệu Word. Tuy nhiên, bạn có thể định dạng văn bản được bao gồm bằng cách sử dụng thuộc tính đoạn văn, thuộc tính phông chữ và các đối tượng định dạng khác có sẵn trong Aspose.Words for .NET.
+Trả lời: Việc đưa vào trường văn bản không trực tiếp tùy chỉnh hình thức của nó trong tài liệu Word. Tuy nhiên, bạn có thể định dạng văn bản được bao gồm bằng cách sử dụng thuộc tính đoạn văn, thuộc tính phông chữ và các đối tượng định dạng khác có sẵn trong Aspose.Words cho .NET.

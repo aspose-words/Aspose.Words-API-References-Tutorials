@@ -59,7 +59,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 
 ## 결론
 
- 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에 단락 스타일을 적용하는 방법을 살펴보았습니다. 설정하여`StyleIdentifier` 의 재산`ParagraphFormat`, 단락에 내장된 스타일을 적용할 수 있었습니다. Aspose.Words for .NET은 사용자 정의 스타일을 생성하고 적용하는 기능을 포함하여 광범위한 서식 옵션을 제공하므로 전문가 수준의 문서를 쉽게 만들 수 있습니다.
+ 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에 단락 스타일을 적용하는 방법을 살펴보았습니다. 설정하여`StyleIdentifier` 의 재산`ParagraphFormat`단락에 내장된 스타일을 적용할 수 있었습니다. Aspose.Words for .NET은 사용자 정의 스타일을 생성하고 적용하는 기능을 포함하여 광범위한 서식 옵션을 제공하므로 전문가 수준의 문서를 쉽게 만들 수 있습니다.
 
 ### FAQ
 

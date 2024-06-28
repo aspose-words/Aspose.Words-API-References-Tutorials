@@ -2,82 +2,88 @@
 title: Konwertuj pola w treści
 linktitle: Konwertuj pola w treści
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak używać Aspose.Words dla .NET do konwersji pól strony na tekst w treści dokumentu programu Word.
+description: Dowiedz się, jak konwertować pola dokumentu na tekst statyczny za pomocą Aspose.Words dla .NET, aby zwiększyć wydajność przetwarzania dokumentów.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/convert-fields-in-body/
 ---
 
-W tym samouczku krok po kroku przeprowadzimy Cię przez proces korzystania z funkcji ConvertFieldsInBody w Aspose.Words dla .NET przy użyciu dostarczonego kodu źródłowego C#. Ta funkcja umożliwia konwersję określonych pól w treści dokumentu na zwykły tekst, co ułatwia przetwarzanie dokumentów. Aby skutecznie korzystać z tej funkcji, wykonaj poniższe czynności.
+## Wstęp
 
-## Krok 1: Warunki wstępne
+środowisku programowania .NET dynamiczne zarządzanie zawartością dokumentów jest niezbędne, często wymagając manipulacji różnymi typami pól w dokumentach. Aspose.Words dla .NET wyróżnia się jako potężny zestaw narzędzi dla programistów, oferujący solidne funkcje do wydajnej obsługi pól dokumentów. Ten obszerny przewodnik koncentruje się na konwertowaniu pól w treści dokumentu za pomocą Aspose.Words dla .NET, dostarczając instrukcje krok po kroku, które pozwolą programistom ulepszyć automatyzację dokumentów i zarządzanie nimi.
 
-Zanim zaczniesz, upewnij się, że zainstalowałeś Aspose.Words dla .NET i masz dokument gotowy do przetworzenia. Upewnij się także, że masz ścieżkę katalogu do swoich dokumentów.
+## Warunki wstępne
 
-## Krok 2: Załaduj dokument
+Przed zagłębieniem się w samouczek dotyczący konwertowania pól w treści dokumentu przy użyciu Aspose.Words dla .NET upewnij się, że spełniasz następujące wymagania wstępne:
 
-Zacznij od zadeklarowania zmiennej ścieżki do katalogu dokumentów, a następnie użyj tej zmiennej do zainicjowania obiektu Document z określonego dokumentu. W naszym przykładzie dokument nosi nazwę „Połączone pola.docx”.
+- Visual Studio: zainstalowany i skonfigurowany pod kątem programowania .NET.
+-  Aspose.Words dla .NET: pobrane i używane w projekcie Visual Studio. Można go uzyskać od[Tutaj](https://releases.aspose.com/words/net/).
+- Podstawowa znajomość języka C#: Znajomość języka programowania C# w celu zrozumienia i modyfikowania dostarczonych fragmentów kodu.
+
+## Importuj przestrzenie nazw
+
+Na początek zaimportuj niezbędne przestrzenie nazw do swojego projektu:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using System.Linq;
+```
 
-// Załaduj dokument
+Te przestrzenie nazw są niezbędne do uzyskania dostępu do funkcjonalności Aspose.Words i zapytań LINQ.
+
+## Przewodnik krok po kroku dotyczący konwersji pól w treści za pomocą Aspose.Words dla platformy .NET
+
+### Krok 1: Załaduj dokument
+
+Zacznij od załadowania dokumentu, w którym chcesz przekonwertować pola:
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## Krok 3: Konwertuj pola strony na zwykły tekst
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` ze ścieżką do aktualnego dokumentu.
 
- Teraz, gdy dokument jest załadowany, możemy przejść do kroków konwersji. Aby przekonwertować pola strony na zwykły tekst w treści pierwszej sekcji, możesz użyć metody`Range.Fields` metodę, aby uzyskać wszystkie pola w określonym zakresie, a następnie odfiltrować pola typu`FieldType.FieldPage` . Następnie możesz użyć`ForEach` metodę, aby przejść przez każde pole i wywołać metodę`Unlink()` metoda konwersji go na zwykły tekst.
+### Krok 2: Zidentyfikuj i przekonwertuj pola
+
+Zidentyfikuj i przekonwertuj określone pola w treści dokumentu. Na przykład, aby przekonwertować pola PAGE na tekst:
 
 ```csharp
-// Przekaż odpowiednie parametry, aby przekonwertować pola strony na zwykły tekst w treści pierwszej sekcji.
-doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.Unlink());
+doc.FirstSection.Body.Range.Fields
+    .Where(f => f.Type == FieldType.FieldPage)
+    .ToList()
+    .ForEach(f => f.Unlink());
 ```
 
-## Krok 4: Zapisz zmodyfikowany dokument
+Ten fragment kodu używa LINQ do znalezienia wszystkich pól PAGE w treści dokumentu, a następnie rozłącza je, skutecznie konwertując je na tekst statyczny.
 
-Po przekonwertowaniu pól strony na zwykły tekst możesz zapisać zmodyfikowany dokument za pomocą`Save()` metodę oraz określenie ścieżki i nazwy pliku wyjściowego. W naszym przykładzie zapisujemy go jako „WorkingWithFields.ConvertFieldsInBody.docx”.
+### Krok 3: Zapisz dokument
+
+Zapisz zmodyfikowany dokument po konwersji pól:
 
 ```csharp
-// Zapisz zmodyfikowany dokument
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
-### Przykładowy kod źródłowy do konwersji pól w treści za pomocą Aspose.Words dla .NET
+ Regulować`"WorkingWithFields.ConvertFieldsInBody.docx"` aby określić żądaną ścieżkę pliku wyjściowego.
 
-Oto pełny przykład kodu źródłowego do konwersji pól na treść przy użyciu Aspose.Words dla .NET:
+## Wniosek
 
-```csharp
-// Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Opanowanie sztuki manipulowania polami dokumentów przy użyciu Aspose.Words dla .NET umożliwia programistom efektywną automatyzację przepływu dokumentów. Niezależnie od tego, czy konwertujesz pola na zwykły tekst, czy obsługujesz bardziej złożone typy pól, Aspose.Words upraszcza te zadania dzięki intuicyjnemu interfejsowi API i solidnemu zestawowi funkcji, zapewniając bezproblemową integrację z aplikacjami .NET.
 
-// Załaduj dokument
-Document doc = new Document(dataDir + "Linked fields.docx");
+## Często zadawane pytania (FAQ)
 
-// Przekaż odpowiednie parametry, aby przekonwertować pola strony na zwykły tekst w treści pierwszej sekcji.
-doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
-doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
-```
+### Czym są pola dokumentów w Aspose.Words dla .NET?
+Pola dokumentów w Aspose.Words to elementy zastępcze, w których można przechowywać i wyświetlać dane dynamiczne, takie jak daty, numery stron i obliczenia.
 
-### Często zadawane pytania
+### Jak mogę obsługiwać różne typy pól w Aspose.Words dla .NET?
+Aspose.Words obsługuje różne typy pól, takie jak DATE, PAGE, MERGEFIELD i inne, umożliwiając programistom programową manipulację nimi.
 
-#### P: Czy Aspose.Words jest kompatybilny z różnymi wersjami Microsoft Word?
+### Czy Aspose.Words dla .NET może konwertować pola w różnych formatach dokumentów?
+Tak, Aspose.Words dla .NET może bezproblemowo konwertować i manipulować polami w różnych formatach, takich jak DOCX, DOC, RTF i innych.
 
-Odp.: Tak, Aspose.Words jest kompatybilny z różnymi wersjami Microsoft Word, w tym Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 i Word 2019.
+### Gdzie mogę znaleźć obszerną dokumentację Aspose.Words dla .NET?
+ Dostępna jest szczegółowa dokumentacja i odniesienia do API.[Tutaj](https://reference.aspose.com/words/net/).
 
-#### P: Czy Aspose.Words obsługuje złożone struktury pól?
-
-Odp.: Absolutnie! Aspose.Words zapewnia szeroką obsługę złożonych struktur pól, w tym pól zagnieżdżonych, obliczeń i wyrażeń warunkowych. Możesz wykorzystać potężny interfejs API do pracy z dowolnym typem struktury pól.
-
-#### P: Czy Aspose.Words obsługuje operacje aktualizacji w terenie?
-
-O: Tak, Aspose.Words umożliwia programową aktualizację pól. Za pomocą interfejsu API możesz łatwo aktualizować wartości pól, odświeżać obliczenia i wykonywać inne operacje związane z polami.
-
-#### P: Czy mogę konwertować pola na zwykły tekst za pomocą Aspose.Words?
-
-Odp.: Oczywiście! Aspose.Words udostępnia metody konwersji pól na zwykły tekst. Może to być przydatne, gdy trzeba wyodrębnić treść bez żadnego formatowania lub funkcjonalności związanej z polami.
-
-#### P: Czy możliwe jest generowanie dokumentów Word z polami dynamicznymi przy użyciu Aspose.Words?
-
-Odp.: Absolutnie! Aspose.Words oferuje solidne funkcje do generowania dokumentów Word z polami dynamicznymi. Możesz tworzyć szablony ze wstępnie zdefiniowanymi polami i dynamicznie wypełniać je danymi, zapewniając elastyczne i wydajne rozwiązanie do generowania dokumentów.
+### Czy dostępna jest wersja próbna Aspose.Words dla .NET?
+ Tak, możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.aspose.com/).

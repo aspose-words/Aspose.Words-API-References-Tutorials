@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Verwalten von Listen in Word-Dokumenten
 linktitle: Erstellen und Verwalten von Listen in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie mithilfe der Aspose.Words-Python-API Listen in Word-Dokumenten erstellen und verwalten. Schritt-für-Schritt-Anleitung mit Quellcode für Listenformatierung, Anpassung, Verschachtelung und mehr.
 type: docs
 weight: 18
@@ -16,7 +16,7 @@ Es gibt zwei Haupttypen von Listen: Listen mit Aufzählungszeichen und nummerier
 
 ## Einrichten der Umgebung
 
- Bevor wir uns mit der Erstellung und Verwaltung von Listen befassen, stellen Sie sicher, dass Sie die Aspose.Words for Python-Bibliothek installiert haben. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/python/) . Weitere Informationen finden Sie in der API-Dokumentation unter[dieser Link](https://reference.aspose.com/words/python-net/) für detaillierte Informationen.
+Bevor wir uns mit der Erstellung und Verwaltung von Listen befassen, stellen Sie sicher, dass Sie die Aspose.Words for Python-Bibliothek installiert haben. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/python/) . Weitere Informationen finden Sie in der API-Dokumentation unter[dieser Link](https://reference.aspose.com/words/python-net/) für detaillierte Informationen.
 
 ## Erstellen von Aufzählungslisten
 

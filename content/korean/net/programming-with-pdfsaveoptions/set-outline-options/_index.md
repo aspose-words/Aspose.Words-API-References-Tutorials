@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3단계: 계획 옵션을 사용하여 PDF로 저장 옵션 구성
 
- 생성된 PDF에서 개요 옵션을 설정하려면`PdfSaveOptions` 물체. 제목 개요 수준의 수를 설정할 수 있습니다(`HeadingsOutlineLevels`) 및 확장된 개요 수준 수(`ExpandedOutlineLevels`).
+생성된 PDF에서 개요 옵션을 설정하려면`PdfSaveOptions` 물체. 제목 개요 수준의 수를 설정할 수 있습니다(`HeadingsOutlineLevels`) 및 확장된 개요 수준 수(`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -86,4 +86,4 @@ A: .NET용 Aspose.Words를 사용하여 PDF 문서에서 개요 옵션을 설정
  다음을 사용하여 문서를 PDF 형식으로 저장합니다.`Save` 의 방법`Document` 경로와 저장 옵션을 지정하는 클래스입니다.
 
 #### Q: PDF 문서의 계획 옵션은 무엇입니까?
-답변: PDF 문서의 개요 옵션을 사용하면 콘텐츠의 계층 구조를 생성할 수 있으므로 문서를 더 쉽게 탐색하고 다른 섹션에 액세스할 수 있습니다. 이를 통해 사용자는 목차나 개요의 항목을 클릭하여 문서의 특정 부분으로 빠르게 이동할 수 있습니다. 개요 옵션은 전체 문서 구조에 대한 개요를 제공하여 읽기 경험을 향상시킵니다.
+답변: PDF 문서의 개요 옵션을 사용하면 콘텐츠의 계층적 구조를 생성할 수 있으므로 문서를 더 쉽게 탐색하고 다른 섹션에 액세스할 수 있습니다. 이를 통해 사용자는 목차나 개요의 항목을 클릭하여 문서의 특정 부분으로 빠르게 이동할 수 있습니다. 개요 옵션은 전체 문서 구조에 대한 개요를 제공하여 읽기 경험을 향상시킵니다.

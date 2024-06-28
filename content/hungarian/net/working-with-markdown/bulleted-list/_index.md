@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## 3. lépés: A listajel formátum testreszabása
 
-Testreszabhatjuk a felsorolás formátumát a tulajdonságok elérésével`ListFormat.List.ListLevels[0]`. Ebben a példában a "-" kötőjelet használjuk felsorolásjelként.
+ Testreszabhatjuk a felsorolás formátumát a tulajdonságok elérésével`ListFormat.List.ListLevels[0]`. Ebben a példában a "-" kötőjelet használjuk felsorolásjelként.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

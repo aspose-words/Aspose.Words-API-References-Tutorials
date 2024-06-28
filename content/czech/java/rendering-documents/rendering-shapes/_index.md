@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 Gratulujeme! Úspěšně jste se naučili vykreslovat tvary v Aspose.Words pro Javu. Tato schopnost otevírá svět možností při programové práci s dokumenty Wordu.
 
-## 9. Nejčastější dotazy
+## 9.Časté dotazy
 
 ### Q1: Mohu vykreslit více obrazců v jednom dokumentu?
 

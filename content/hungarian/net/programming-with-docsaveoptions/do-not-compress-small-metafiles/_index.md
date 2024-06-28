@@ -74,7 +74,7 @@ Feltétlenül cserélje ki a "dataDir" kifejezést a dokumentumkönyvtár elér�
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Szúrjon be két szakaszt némi szöveggel.
+// Szúrjon be két részt szöveggel.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");

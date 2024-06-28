@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 #### Q: Aspose.Words에서 어떻게 미주의 스타일을 지정할 수 있나요?
 
- A: Aspose.Words에서 미주의 스타일을 지정하려면 다음을 사용할 수 있습니다.`EndnoteOptions` 수업과`SeparatorNoteTextStyle` 재산. 이 속성을 사용하여 미주의 글꼴 스타일, 크기, 색상 등을 지정할 수 있습니다.
+A: Aspose.Words에서 미주의 스타일을 지정하려면 다음을 사용할 수 있습니다.`EndnoteOptions` 수업과`SeparatorNoteTextStyle` 재산. 이 속성을 사용하여 미주의 글꼴 스타일, 크기, 색상 등을 지정할 수 있습니다.
 
 #### Q: 문서의 미주 번호 매기기를 사용자 정의할 수 있습니까?
 
@@ -97,4 +97,4 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 #### Q: 문서의 섹션 간에 미주 번호를 계속 매길 수 있나요?
 
- A: 예, 문서의 섹션 간에 미주 번호를 계속 매기는 것이 가능합니다. 사용`RestartRule` 의 재산`EndnoteOptions` 클래스로 설정하고`RestartContinuous` 섹션 간에 번호 매기기를 계속할 수 있습니다.
+A: 예, 문서의 섹션 간에 미주 번호를 계속 매기는 것이 가능합니다. 사용`RestartRule` 의 재산`EndnoteOptions` 클래스로 설정하고`RestartContinuous` 섹션 간에 번호 매기기를 계속할 수 있습니다.

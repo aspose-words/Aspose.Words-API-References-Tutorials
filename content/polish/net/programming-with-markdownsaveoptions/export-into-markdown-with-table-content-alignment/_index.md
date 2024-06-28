@@ -79,7 +79,7 @@ Ustawiamy opcje eksportu Markdown z różnymi wyrównaniami zawartości tabeli, 
 	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 	builder.Write("Cell2");
 
-	// Wyrównuje wszystkie akapity w tabeli.
+	// Wyrównuje wszystkie akapity wewnątrz tabeli.
 	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 	{
 		TableContentAlignment = TableContentAlignment.Left

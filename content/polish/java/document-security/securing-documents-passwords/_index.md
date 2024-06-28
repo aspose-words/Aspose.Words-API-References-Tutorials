@@ -75,7 +75,7 @@ Nie, Aspose.Words for Java nie zapewnia wbudowanej funkcji odzyskiwania zapomnia
 
 ### Czy są jakieś ograniczenia dotyczące ochrony hasłem w Aspose.Words dla Java?
 
-Chociaż Aspose.Words dla Java oferuje solidną ochronę hasłem, dla zapewnienia optymalnego bezpieczeństwa konieczne jest używanie silnych i unikalnych haseł.
+Chociaż Aspose.Words dla Java oferuje solidną ochronę hasłem, dla optymalnego bezpieczeństwa konieczne jest używanie silnych i unikalnych haseł.
 
 ### Czy mogę zautomatyzować proces podawania hasła?
 
@@ -83,6 +83,6 @@ Tak, możesz zautomatyzować proces podawania hasła za pomocą skryptu lub pref
 
 ## Wniosek
 
-Zabezpieczenie dokumentów hasłami to podstawowy krok w ochronie danych. Aspose.Words for Java upraszcza ten proces, czyniąc go dostępnym dla programistów. Postępując zgodnie z tym przewodnikiem krok po kroku i korzystając z dostarczonego kodu źródłowego, możesz bezpiecznie zabezpieczyć swoje cenne dokumenty.
+Zabezpieczenie dokumentów hasłami to podstawowy krok w ochronie danych. Aspose.Words dla Java upraszcza ten proces, czyniąc go dostępnym dla programistów. Postępując zgodnie z tym przewodnikiem krok po kroku i korzystając z dostarczonego kodu źródłowego, możesz bezpiecznie zabezpieczyć swoje cenne dokumenty.
 
 Chroń swoje dane dzięki Aspose.Words dla Java i zwiększ bezpieczeństwo swoich dokumentów już dziś.

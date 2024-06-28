@@ -28,11 +28,11 @@ ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
 format.CharacterUnitLeftIndent = 10; // Обновить ParagraphFormat.LeftIndent
 format.CharacterUnitRightIndent = 10; // Обновить ParagraphFormat.RightIndent
 format.CharacterUnitFirstLineIndent = 20; //Обновить ParagraphFormat.FirstLineIndent
-format.LineUnitBefore = 5; // Обновить ParagraphFormat.SpaceBefore
-format.LineUnitAfter = 10; // Обновить ParagraphFormat.SpaceAfter
+format.LineUnitBefore = 5; // Обновите формат абзаца.
+format.LineUnitAfter = 10; // Обновите формат абзаца SpaceAfter.
 ```
 
-## Шаг 3: Сохранение документа
+## Шаг 3. Сохраните документ.
 
  После вставки поля формы ввода текста сохраните документ в нужное место с помощью кнопки`Save` метод. Обязательно укажите правильный путь к файлу:
 
@@ -55,7 +55,7 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent будет обновлен.
 	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent будет обновлен.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore будет обновлен.
-	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter будет обновлен.
+	format.LineUnitAfter = 10;                 // ПараграфФормат будет обновлен.
 
 	doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc");
 
@@ -65,13 +65,13 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 
 ## Заключение
 
- В этом уроке мы узнали, как изменить интервалы и отступы азиатского абзаца с помощью Aspose.Words для .NET. Изменяя соответствующие свойства`ParagraphFormat`мы можем управлять макетом и внешним видом абзацев на азиатском языке в документе Word. Эта функция полезна для настройки форматирования текста с использованием азиатских символов и достижения желаемого визуального представления в документах со смешанным языковым содержанием.
+ В этом уроке мы узнали, как изменить интервалы и отступы азиатского абзаца с помощью Aspose.Words для .NET. Изменяя соответствующие свойства`ParagraphFormat`мы можем управлять макетом и внешним видом абзацев на азиатском языке в документе Word. Эта функция полезна для настройки форматирования текста с азиатскими символами и достижения желаемого визуального представления в документах со смешанным языковым содержанием.
 
 ### Часто задаваемые вопросы
 
 #### Вопрос: Что делает функция «Изменить межабзацный интервал и отступы для азиатских языков» в Aspose.Words for .NET?
 
-О: Функция «Изменить интервалы и отступы азиатских абзацев» в Aspose.Words for .NET позволяет вам изменять свойства интервалов и отступов азиатского абзаца в документе Word. Вы можете настроить отступы слева и справа, отступ первой строки, пробел до и после значений, чтобы управлять макетом и внешним видом абзаца.
+О: Функция «Изменить интервалы и отступы абзацев для азиатских языков» в Aspose.Words for .NET позволяет вам изменять свойства интервалов и отступов абзацев для азиатских языков в документе Word. Вы можете настроить отступы слева и справа, отступ первой строки, пространство до и пространство после, чтобы управлять макетом и внешним видом абзаца.
 
 #### Вопрос: Как изменить интервалы и отступы азиатского абзаца с помощью Aspose.Words для .NET?
 
@@ -79,4 +79,4 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 
 #### Вопрос: Могу ли я применить эти изменения к другим абзацам документа?
 
- О: Да, вы можете применить эти изменения к другим абзацам документа, открыв соответствующие`ParagraphFormat` объекты. Пример кода нацелен на первый абзац документа, но вы можете изменить другие абзацы, изменив индекс в`Paragraphs` сбор или использование других критериев для выбора нужных абзацев.
+ О: Да, вы можете применить эти изменения к другим абзацам документа, открыв их соответственно.`ParagraphFormat` объекты. Пример кода нацелен на первый абзац документа, но вы можете изменить другие абзацы, изменив индекс в`Paragraphs` сбор или использование других критериев для выбора нужных абзацев.

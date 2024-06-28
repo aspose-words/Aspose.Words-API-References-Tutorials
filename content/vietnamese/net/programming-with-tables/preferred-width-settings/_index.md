@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Ở đây chúng tôi sử dụng trình tạo tài liệu để xây dựng một bảng có ba ô. Ô đầu tiên có chiều rộng ưu tiên là 40 điểm, ô thứ hai có chiều rộng ưu tiên là 20% chiều rộng của bảng và ô thứ ba có chiều rộng ưu tiên tự động điều chỉnh
+Ở đây chúng tôi sử dụng trình tạo tài liệu để xây dựng một bảng có ba ô. Ô đầu tiên có chiều rộng ưu tiên là 40 điểm, ô thứ hai có chiều rộng ưu tiên là 20% chiều rộng của bảng và ô thứ ba có chiều rộng ưu tiên tự động điều chỉnh.
 
   tùy thuộc vào không gian có sẵn.
 
@@ -103,4 +103,4 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã tìm hiểu cách đặt cài đặt độ rộng ưa thích cho các ô bảng trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này và triển khai mã C# được cung cấp, bạn có thể tùy chỉnh độ rộng ô trong bảng theo nhu cầu cụ thể trong tài liệu Word của mình.
+Trong hướng dẫn này, chúng ta đã tìm hiểu cách đặt cài đặt độ rộng ưa thích cho các ô bảng trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này và triển khai mã C# được cung cấp, bạn có thể tùy chỉnh độ rộng ô bảng theo nhu cầu cụ thể trong tài liệu Word của mình.

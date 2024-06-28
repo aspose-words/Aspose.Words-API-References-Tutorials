@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/programming-with-loadoptions/use-temp-folder/
 ---
-Podczas przetwarzania tekstu z dokumentami programu Word w aplikacji C# może być konieczne użycie folderu tymczasowego do przechowywania plików tymczasowych wygenerowanych podczas przetwarzania dokumentu. Dzięki bibliotece Aspose.Words dla .NET możesz łatwo określić folder tymczasowy, korzystając z opcji ładowania LoadOptions. W tym przewodniku krok po kroku pokażemy, jak używać kodu źródłowego Aspose.Words dla .NET C# do ładowania dokumentu przy użyciu folderu tymczasowego określonego przy użyciu opcji ładowania LoadOptions.
+Podczas przetwarzania tekstu z dokumentami programu Word w aplikacji C# może być konieczne użycie folderu tymczasowego do przechowywania plików tymczasowych wygenerowanych podczas przetwarzania dokumentu. Dzięki bibliotece Aspose.Words dla .NET możesz łatwo określić folder tymczasowy, korzystając z opcji ładowania LoadOptions. W tym przewodniku krok po kroku pokażemy, jak używać kodu źródłowego Aspose.Words for .NET C# do ładowania dokumentu przy użyciu folderu tymczasowego określonego przy użyciu opcji ładowania LoadOptions.
 
 ## Zrozumienie biblioteki Aspose.Words
 

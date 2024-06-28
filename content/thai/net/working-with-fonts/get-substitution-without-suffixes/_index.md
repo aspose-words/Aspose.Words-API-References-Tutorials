@@ -2,86 +2,122 @@
 title: รับการทดแทนโดยไม่มีคำต่อท้าย
 linktitle: รับการทดแทนโดยไม่มีคำต่อท้าย
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: ในบทช่วยสอนนี้ เรียนรู้วิธีรับการแทนที่แบบไม่มีส่วนต่อท้ายในเอกสาร Word ด้วย Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีจัดการการทดแทนแบบอักษรโดยไม่มีส่วนต่อท้ายใน Aspose.Words for .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อให้แน่ใจว่าเอกสารของคุณจะดูสมบูรณ์แบบทุกครั้ง
 type: docs
 weight: 10
 url: /th/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-ในบทช่วยสอนนี้ เราจะแสดงวิธีรับการแทนที่โดยไม่มีส่วนต่อท้ายในเอกสาร Word โดยใช้ไลบรารี Aspose.Words สำหรับ .NET การทดแทนที่ไม่มีส่วนต่อท้ายจะใช้ในการแก้ปัญหาการทดแทนแบบอักษรเมื่อแสดงหรือพิมพ์เอกสาร เราจะอธิบายทีละขั้นตอนเพื่อช่วยให้คุณเข้าใจและนำโค้ดไปใช้ในโครงการ .NET ของคุณ
+ยินดีต้อนรับสู่คำแนะนำที่ครอบคลุมเกี่ยวกับการจัดการการทดแทนแบบอักษรโดยใช้ Aspose.Words สำหรับ .NET หากคุณเคยประสบปัญหากับแบบอักษรที่ปรากฏไม่ถูกต้องในเอกสารของคุณ คุณมาถูกที่แล้ว บทช่วยสอนนี้จะนำคุณไปสู่กระบวนการทีละขั้นตอนเพื่อจัดการการแทนที่แบบอักษรโดยไม่มีส่วนต่อท้ายอย่างมีประสิทธิภาพ มาเริ่มกันเลย!
 
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีรายการต่อไปนี้:
-- ความรู้การทำงานของภาษาการเขียนโปรแกรม C #
-- ไลบรารี Aspose.Words สำหรับ .NET ที่ติดตั้งในโครงการของคุณ
+
+ก่อนที่จะเข้าสู่บทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+
+- ความรู้พื้นฐานของ C#: การทำความเข้าใจการเขียนโปรแกรม C# จะทำให้ง่ายต่อการปฏิบัติตามและดำเนินการตามขั้นตอนต่างๆ
+-  Aspose.Words สำหรับ .NET Library: ดาวน์โหลดและติดตั้งไลบรารีจาก[ลิ้งค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
+- สภาพแวดล้อมการพัฒนา: ตั้งค่าสภาพแวดล้อมการพัฒนาเช่น Visual Studio เพื่อเขียนและรันโค้ดของคุณ
+-  เอกสารตัวอย่าง: เอกสารตัวอย่าง (เช่น`Rendering.docx`) เพื่อใช้งานในระหว่างบทช่วยสอนนี้
+
+## นำเข้าเนมสเปซ
+
+ขั้นแรก เราต้องนำเข้าเนมสเปซที่จำเป็นเพื่อเข้าถึงคลาสและวิธีการที่ได้รับจาก Aspose.Words
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
+```
 
 ## ขั้นตอนที่ 1: กำหนดไดเร็กทอรีเอกสาร
- ขั้นแรก คุณต้องตั้งค่าเส้นทางไดเรกทอรีไปยังตำแหน่งของเอกสาร Word ของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ในโค้ดด้วยเส้นทางที่เหมาะสม
+
+ในการเริ่มต้น ให้ระบุไดเร็กทอรีที่มีเอกสารของคุณอยู่ ซึ่งจะช่วยในการค้นหาเอกสารที่คุณต้องการใช้งาน
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสารของคุณ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## ขั้นตอนที่ 2: โหลดเอกสารและกำหนดค่าการทดแทนโดยไม่มีส่วนต่อท้าย
- ต่อไปเราจะโหลดเอกสารโดยใช้ไฟล์`Document` คลาสและกำหนดค่าการทดแทนแบบไม่มีส่วนต่อท้ายโดยใช้`DocumentSubstitutionWarnings` ระดับ. นอกจากนี้เรายังจะเพิ่มแหล่งแบบอักษรโดยการระบุโฟลเดอร์ที่มีแบบอักษร
-
-```csharp
-// โหลดเอกสารและกำหนดค่าการทดแทนโดยไม่มีส่วนต่อท้าย
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## ขั้นตอนที่ 3: บันทึกเอกสาร
-สุดท้ายนี้ เราจะบันทึกเอกสารโดยใช้การแทนที่แบบไม่มีส่วนต่อท้าย
-
-```csharp
-// บันทึกเอกสาร
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### ตัวอย่างซอร์สโค้ดสำหรับรับการทดแทนโดยไม่มีส่วนต่อท้ายโดยใช้ Aspose.Words สำหรับ .NET 
-```csharp
-
 // เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## ขั้นตอนที่ 2: ตั้งค่าตัวจัดการคำเตือนการทดแทน
+
+ต่อไป เราต้องตั้งค่าตัวจัดการคำเตือนที่จะแจ้งให้เราทราบทุกครั้งที่มีการแทนที่แบบอักษรในระหว่างการประมวลผลเอกสาร นี่เป็นสิ่งสำคัญสำหรับการตรวจจับและจัดการกับปัญหาแบบอักษร
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## ขั้นตอนที่ 3: เพิ่มแหล่งแบบอักษรที่กำหนดเอง
+
+ในขั้นตอนนี้ เราจะเพิ่มแหล่งแบบอักษรที่กำหนดเองเพื่อให้แน่ใจว่า Aspose สามารถค้นหาและใช้แบบอักษรที่ถูกต้องได้ สิ่งนี้มีประโยชน์อย่างยิ่งหากคุณมีแบบอักษรเฉพาะเก็บไว้ในไดเร็กทอรีที่กำหนดเอง
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+ในรหัสนี้:
+-  เราดึงแหล่งแบบอักษรปัจจุบันและเพิ่มแหล่งใหม่`FolderFontSource` ชี้ไปที่ไดเร็กทอรีแบบอักษรที่กำหนดเองของเรา (`C:\\MyFonts\\`-
+- จากนั้นเราจะอัปเดตแหล่งแบบอักษรด้วยรายการใหม่นี้
+
+## ขั้นตอนที่ 4: บันทึกเอกสาร
+
+สุดท้าย ให้บันทึกเอกสารหลังจากใช้การตั้งค่าการแทนที่แบบอักษร สำหรับบทช่วยสอนนี้ เราจะบันทึกเป็น PDF
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## ขั้นตอนที่ 5: สร้างคลาสตัวจัดการคำเตือน
+
+เพื่อจัดการคำเตือนอย่างมีประสิทธิภาพ ให้สร้างคลาสแบบกำหนดเองที่ใช้`IWarningCallback` อินเตอร์เฟซ. คลาสนี้จะบันทึกและบันทึกคำเตือนการแทนที่แบบอักษร
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+ในชั้นเรียนนี้:
+-  ที่`Warning` วิธีการบันทึกคำเตือนที่เกี่ยวข้องกับการทดแทนแบบอักษร
+-  ที่`FontWarnings` คอลเลกชันจะจัดเก็บคำเตือนเหล่านี้เพื่อการตรวจสอบหรือบันทึกเพิ่มเติม
+
 ## บทสรุป
-ในบทช่วยสอนนี้ เราเห็นวิธีรับการแทนที่โดยไม่มีส่วนต่อท้ายในเอกสาร Word ด้วย Aspose.Words สำหรับ .NET การแทนที่โดยไม่มีส่วนต่อท้ายมีประโยชน์ในการแก้ปัญหาการแทนที่แบบอักษร คุณสามารถใช้คุณสมบัตินี้เพื่อปรับปรุงการแสดงผลและการพิมพ์เอกสารของคุณได้
 
-### คำถามที่พบบ่อย
+ตอนนี้คุณเชี่ยวชาญกระบวนการจัดการการทดแทนแบบอักษรโดยไม่มีส่วนต่อท้ายโดยใช้ Aspose.Words สำหรับ .NET แล้ว ความรู้นี้จะช่วยให้แน่ใจว่าเอกสารของคุณคงรูปลักษณ์ที่ต้องการไว้ โดยไม่คำนึงถึงแบบอักษรที่มีอยู่ในระบบ ทดลองใช้การตั้งค่าและแหล่งที่มาต่างๆ ต่อไปเพื่อใช้ประโยชน์จากพลังของ Aspose.Words ได้อย่างเต็มที่
 
-#### ถาม: เหตุใด Aspose.Words จึงเพิ่มส่วนต่อท้ายในการแทนที่แบบอักษร
+## คำถามที่พบบ่อย
 
-ตอบ: Aspose.Words เพิ่มส่วนต่อท้ายให้กับการแทนที่แบบอักษรเพื่อหลีกเลี่ยงความขัดแย้งระหว่างแบบอักษรดั้งเดิมและแบบอักษรที่ถูกแทนที่ สิ่งนี้ช่วยให้มั่นใจได้ถึงความเข้ากันได้สูงสุดเมื่อแปลงและจัดการเอกสาร
+### คำถามที่ 1: ฉันจะใช้แบบอักษรจากไดเร็กทอรีแบบกำหนดเองหลายรายการได้อย่างไร
 
-#### ถาม: ฉันจะดึงข้อมูลการแทนที่แบบอักษรโดยไม่มีส่วนต่อท้ายใน Aspose.Words ได้อย่างไร
+ คุณสามารถเพิ่มได้หลายรายการ`FolderFontSource` อินสแตนซ์ไปยัง`fontSources` แสดงรายการและอัปเดตแหล่งแบบอักษรตามลำดับ
 
- ตอบ: หากต้องการดึงข้อมูลการแทนที่แบบอักษรโดยไม่มีส่วนต่อท้ายใน Aspose.Words คุณสามารถใช้ไฟล์`FontSubstitutionSettings` ชั้นเรียนและ`RemoveSuffixes` คุณสมบัติ. การตั้งค่าคุณสมบัตินี้เป็น`true` จะได้รับการทดแทนแบบอักษรโดยไม่มีส่วนต่อท้ายที่เพิ่ม
+### คำถามที่ 2: ฉันจะดาวน์โหลด Aspose.Words สำหรับ .NET รุ่นทดลองใช้ฟรีได้ที่ไหน
 
-#### ถาม: เป็นไปได้หรือไม่ที่จะปิดใช้งานการเพิ่มส่วนต่อท้ายให้กับการทดแทนแบบอักษรใน Aspose.Words
+ คุณสามารถดาวน์โหลดรุ่นทดลองใช้ฟรีได้จาก[กำหนดหน้าทดลองใช้ฟรี](https://releases.aspose.com/).
 
-ตอบ: ไม่ได้ ไม่สามารถปิดใช้งานการเพิ่มส่วนต่อท้ายให้กับการแทนที่แบบอักษรใน Aspose.Words ได้ ส่วนต่อท้ายจะถูกเพิ่มตามค่าเริ่มต้นเพื่อให้มั่นใจถึงความเข้ากันได้และความสอดคล้องของเอกสาร
+###  คำถามที่ 3: ฉันสามารถจัดการกับคำเตือนหลายประเภทโดยใช้ได้หรือไม่`IWarningCallback`?
 
-#### ถาม: ฉันจะกรองส่วนต่อท้ายที่ไม่ต้องการในการทดแทนแบบอักษรใน Aspose.Words ได้อย่างไร
+ ใช่`IWarningCallback` อินเทอร์เฟซช่วยให้คุณจัดการกับคำเตือนประเภทต่างๆ ไม่ใช่แค่การแทนที่แบบอักษรเท่านั้น
 
- ตอบ: หากต้องการกรองส่วนต่อท้ายที่ไม่ต้องการในการทดแทนแบบอักษรใน Aspose.Words คุณสามารถใช้เทคนิคการประมวลผลสตริง เช่น การใช้`Replace` หรือ`Substring` วิธีการลบส่วนต่อท้ายเฉพาะที่คุณไม่ต้องการรวมไว้
+### คำถามที่ 4: ฉันจะรับการสนับสนุนสำหรับ Aspose.Words ได้ที่ไหน
+
+ สำหรับการสนับสนุนโปรดไปที่[ฟอรัมสนับสนุน Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### คำถามที่ 5: สามารถซื้อใบอนุญาตชั่วคราวได้หรือไม่
+
+ ใช่ คุณสามารถขอรับใบอนุญาตชั่วคราวได้จาก[หน้าใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/).

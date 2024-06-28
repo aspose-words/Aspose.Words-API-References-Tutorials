@@ -100,7 +100,7 @@ Para aplicar un tema personalizado a un documento existente, siga estos pasos:
 
 ### ¿Puedo crear mis propios temas personalizados en Aspose.Words para Java?
 
-Sí, puedes crear tus propios temas personalizados definiendo los colores y fuentes del tema según tus preferencias. Aspose.Words para Java ofrece flexibilidad en la personalización del tema.
+Sí, puedes crear tus propios temas personalizados definiendo los colores y fuentes del tema según tus preferencias. Aspose.Words para Java ofrece flexibilidad en la personalización de temas.
 
 ### ¿Cuál es la diferencia entre fuentes mayores y menores en un tema?
 

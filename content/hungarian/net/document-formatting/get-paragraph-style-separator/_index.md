@@ -71,7 +71,7 @@ V: Nem, az Aspose.Words for .NET nem az egyetlen elérhető megoldás a bekezdé
 
 #### K: Használhatom a "Bekezdésstílus-elválasztó lekérése" funkciót más programozási nyelvekkel?
 
-V: Igen, használhatja a "Bekezdésstílus-elválasztó lekérése" funkciót az Aspose.Words által támogatott más programozási nyelvekkel, például Java, Python vagy C++. Az Aspose.Words nyelvspecifikus API-k és könyvtárak széles skáláját kínálja, hogy megkönnyítse a dokumentumok feldolgozását több platformon.
+V: Igen, használhatja a "Bekezdésstílus-elválasztó lekérése" funkciót más, az Aspose.Words által támogatott programozási nyelvekkel is, mint például a Java, a Python vagy a C.++. Az Aspose.Words nyelvspecifikus API-k és könyvtárak széles skáláját kínálja, hogy megkönnyítse a dokumentumok feldolgozását több platformon.
 
 #### K: Hogyan érhetem el az Aspose.Words for .NET dokumentációját?
 

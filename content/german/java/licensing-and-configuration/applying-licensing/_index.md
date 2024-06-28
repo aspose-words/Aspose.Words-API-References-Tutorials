@@ -121,4 +121,4 @@ Aspose.Words für Java wird regelmäßig aktualisiert, um die Kompatibilität mi
 ### Gibt es Beispielprojekte für Aspose.Words für Java?
 Ja, Beispielprojekte und Codebeispiele finden Sie in der Dokumentation zu Aspose.Words für Java.
 
-Da Sie nun über ein umfassendes Verständnis der Lizenzierung von Aspose.Words für Java verfügen, können Sie damit beginnen, die leistungsstarken Funktionen für die Dokumentverarbeitung in Ihren Java-Anwendungen zu nutzen.
+Da Sie nun umfassende Kenntnisse über die Anwendung der Lizenzierung von Aspose.Words für Java haben, können Sie damit beginnen, die leistungsstarken Funktionen für die Dokumentverarbeitung in Ihren Java-Anwendungen zu nutzen.

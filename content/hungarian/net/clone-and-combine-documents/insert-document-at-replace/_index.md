@@ -2,87 +2,166 @@
 title: Helyezze be a dokumentumot a Csere pontnál
 linktitle: Helyezze be a dokumentumot a Csere pontnál
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan szúrhat be egy dokumentumot a csere során az Aspose.Words for .NET használatával.
+description: Részletes, lépésenkénti útmutatónkból megtudhatja, hogyan lehet zökkenőmentesen beilleszteni egy Word-dokumentumot a másikba az Aspose.Words for .NET segítségével. Tökéletes azoknak a fejlesztőknek, akik egyszerűsíteni szeretnék a dokumentumfeldolgozást.
 type: docs
 weight: 10
 url: /hu/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-Ebben az oktatóanyagban végigvezetjük, hogyan illeszthet be egy dokumentumot egy másik dokumentumba az Aspose.Words for .NET Dokumentum beszúrása csere során funkciójával. Kövesse az alábbi lépéseket a forráskód megértéséhez és a dokumentum beszúrásához.
+## Bevezetés
 
-## 1. lépés: A fő dokumentum betöltése
+Szia, dokumentummesterek! Volt már valaha olyan, hogy térdig a kódban találta magát, amikor megpróbálta kitalálni, hogyan lehet zökkenőmentesen beilleszteni egy Word-dokumentumot a másikba? Ne féljen, mert ma az Aspose.Words for .NET világába merülünk, hogy ezt a feladatot gyerekjáték tegyük. Részletes, lépésről lépésre bemutatjuk, hogyan használhatja ezt a hatékony könyvtárat dokumentumok beszúrására bizonyos pontokon a keresési és csereművelet során. Készen áll arra, hogy Aspose.Words varázslóvá váljon? Kezdjük el!
 
-A kezdéshez adja meg a dokumentumok könyvtárát, és töltse be a fő dokumentumot egy dokumentum objektumba. Itt van, hogyan:
+## Előfeltételek
+
+Mielőtt belevágnánk a kódba, néhány dolgot meg kell határoznia:
+
+-  Visual Studio: Győződjön meg arról, hogy a Visual Studio telepítve van a gépen. Ha még nincs meg, letöltheti innen[itt](https://visualstudio.microsoft.com/).
+-  Aspose.Words for .NET: Szüksége lesz az Aspose.Words könyvtárra. Beszerezheti a[Aspose honlapja](https://releases.aspose.com/words/net/).
+- Alapvető C#-ismeretek: A C# és a .NET alapvető ismeretei segítenek követni ezt az oktatóanyagot.
+
+Rendben, ha nincs az útból, piszkáljuk be a kezünket egy kóddal!
+
+## Névterek importálása
+
+Először is importálnunk kell a szükséges névtereket az Aspose.Words használatához. Ez olyan, mintha az összes eszközt összegyűjtené egy projekt elindítása előtt. Adja hozzá ezeket a C# fájl tetején található direktívák használatával:
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using Aspose.Words.Tables;
 ```
 
-## 2. lépés: Konfigurálja a keresési és csere opciókat
+Most, hogy megvannak az előfeltételeink, bontsuk le a folyamatot falatnyi lépésekre. Minden lépés döntő jelentőségű, és közelebb visz a célunkhoz.
 
-Most konfiguráljuk a keresési és csere opciókat a keresés irányának és a csere visszahívásának megadásával egy dokumentum másik dokumentumba történő beillesztéséhez. Itt van, hogyan:
+## 1. lépés: A Dokumentumkönyvtár beállítása
 
-```csharp
-// Konfigurálja a keresési és csere opciókat.
-FindReplaceOptions options = new FindReplaceOptions
-{
-Direction = FindReplaceDirection.Backward,
-ReplacingCallback = new InsertDocumentAtReplaceHandler()
-};
-```
-
-## 3. lépés: A helyettesítési módszer meghívása
-
-Most meghívjuk a csere metódust, hogy megkeressük és üres karakterláncra cseréljük a megadott szöveget a konfigurált beállítások segítségével. Itt van, hogyan:
+Először is meg kell adnunk a könyvtárat, ahol a dokumentumainkat tároljuk. Ez olyan, mint a színpad beállítása a nagy előadás előtt.
 
 ```csharp
-mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-```
-
-### Példa forráskódra az Insert Document At Replace (Aspose.Words for .NET) használatával
-
-Íme a Dokumentum beszúrása funkció teljes forráskódja az Aspose.Words for .NET lecserélésekor:
-
-```csharp
-// A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
-// Állítsa be a keresési és cserelehetőségeket.
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a könyvtár elérési útjával. Itt élnek és lélegzik a dokumentumai.
+
+## 2. lépés: Töltse be a fő dokumentumot
+
+Ezután betöltjük azt a fő dokumentumot, amelybe egy másik dokumentumot szeretnénk beilleszteni. Tekintsd ezt a fő színpadunknak, ahol minden tevékenység megtörténik.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+Ez a kód betölti a fő dokumentumot a megadott könyvtárból.
+
+## 3. lépés: Állítsa be a Keresés és csere opciókat
+
+Ahhoz, hogy megtaláljuk azt a helyet, ahová be szeretnénk illeszteni a dokumentumunkat, a keresés és csere funkciót használjuk. Ez olyan, mintha egy térképet használnánk az új kiegészítésünk pontos helyének megtalálásához.
+
+```csharp
 FindReplaceOptions options = new FindReplaceOptions
 {
-	Direction = FindReplaceDirection.Backward, 
-	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+    Direction = FindReplaceDirection.Backward,
+    ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
+```
 
-// Hívja a csere metódust.
+Itt beállítjuk a visszafelé irányt, és megadunk egy egyéni visszahíváskezelőt, amelyet a továbbiakban határozunk meg.
+
+## 4. lépés: Hajtsa végre a Csere műveletet
+
+Most azt mondjuk a fő dokumentumunknak, hogy keressen egy adott helyőrző szöveget, és cserélje le semmire, miközben az egyéni visszahívásunkat használja egy másik dokumentum beszúrásához.
+
+```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+Ez a kód végrehajtja a keresés és csere műveletet, majd elmenti a frissített dokumentumot.
+
+## 5. lépés: Hozzon létre egy egyéni csere-visszahíváskezelőt
+
+Egyedi visszahíváskezelőnk az, ahol a varázslat megtörténik. Ez a kezelő határozza meg, hogyan történjen a dokumentumbeillesztés a keresés és csere művelet során.
+
+```csharp
+private class InsertDocumentAtReplaceHandler : IReplacingCallback
+{
+    ReplaceAction IReplacingCallback.Replacing(ReplacingArgs args)
+    {
+        Document subDoc = new Document(dataDir + "Document insertion 2.docx");
+
+        // Szúrjon be egy dokumentumot a megfelelő szöveget tartalmazó bekezdés után.
+        Paragraph para = (Paragraph)args.MatchNode.ParentNode;
+        InsertDocument(para, subDoc);
+
+        // Távolítsa el a megfelelő szöveget tartalmazó bekezdést.
+        para.Remove();
+        return ReplaceAction.Skip;
+    }
+}
+```
+
+Itt betöltjük a beszúrandó dokumentumot, majd hívunk egy helper metódust a beszúráshoz.
+
+## 6. lépés: Határozza meg a dokumentum beszúrási módját
+
+A rejtvényünk utolsó darabja az a módszer, amely ténylegesen beszúrja a dokumentumot a megadott helyre.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+	{
+		CompositeNode destinationParent = insertionDestination.ParentNode;
+
+		NodeImporter importer =
+			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+		// A szakasz törzsében lévő összes blokkszintű csomóponton áthaladva,
+		// majd klónozzon és szúrjon be minden olyan csomópontot, amely nem a szakasz utolsó üres bekezdése.
+		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+		foreach (Node srcNode in srcSection.Body)
+		{
+			if (srcNode.NodeType == NodeType.Paragraph)
+			{
+				Paragraph para = (Paragraph)srcNode;
+				if (para.IsEndOfSection && !para.HasChildNodes)
+					continue;
+			}
+
+			Node newNode = importer.ImportNode(srcNode, true);
+
+			destinationParent.InsertAfter(newNode, insertionDestination);
+			insertionDestination = newNode;
+		}
+	}
+	else
+	{
+		throw new ArgumentException("The destination node should be either a paragraph or table.");
+	}
+}
+```
+
+Ez a módszer gondoskodik a csomópontok importálásáról a beillesztendő dokumentumból, és a fő dokumentum megfelelő helyre történő elhelyezéséről.
 
 ## Következtetés
 
-Ebben az oktatóanyagban megvizsgáltuk, hogyan illeszthetünk be egy dokumentumot egy másik dokumentumba a csere során az Aspose.Words for .NET Dokumentum beszúrása csere során funkciójával. A keresés és csere opciók konfigurálásával és a szükséges adatok megadásával dinamikusan összeállíthat dokumentumokat úgy, hogy adott helyőrzőket más dokumentumsablonok vagy szakaszok tartalmára cserél. Az Aspose.Words for .NET hatékony és rugalmas módot kínál összetett dokumentumkezelési feladatok kezelésére, így értékes eszköz a dokumentumkészítés és tartalombeillesztési forgatókönyvek automatizálására.
+És megvan! Átfogó útmutató egyik dokumentumnak a másikba való beszúrásához az Aspose.Words for .NET használatával. Ezen lépések követésével könnyedén automatizálhatja a dokumentum-összeállítási és -kezelési feladatokat. Akár dokumentumkezelő rendszert épít, akár csak egyszerűsítenie kell dokumentumfeldolgozási munkafolyamatát, az Aspose.Words az Ön megbízható segítője.
 
-### GYIK
+## GYIK
 
-#### K: Mi a célja egy dokumentum beszúrásának egy másik dokumentumba a csere során?
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár a Word dokumentumok programozott kezeléséhez. Lehetővé teszi a Word dokumentumok könnyű létrehozását, módosítását, konvertálását és feldolgozását.
 
-V: Egy dokumentum beszúrása egy másik dokumentumba a csere során lehetővé teszi, hogy egy adott helyőrzőt dinamikusan lecseréljen egy külön dokumentum tartalmára. Ez a funkció különösen akkor hasznos, ha nagyobb dokumentumot szeretne összeállítani különféle előre meghatározott dokumentumsablonok vagy szakaszok meghatározott helyőrzőkbe való kombinálásával.
+### Beilleszthetek több dokumentumot egyszerre?
+Igen, módosíthatja a visszahíváskezelőt úgy, hogy több beszúrást is kezeljen, ha egy dokumentumgyűjteményt ismételget.
 
-#### K: Hogyan illeszthetek be egy dokumentumot egy másik dokumentumba a csere során az Aspose.Words for .NET használatával?
+### Van ingyenes próbaverzió?
+ Teljesen! Ingyenes próbaverziót letölthet a webhelyről[itt](https://releases.aspose.com/).
 
-V: Ha egy dokumentumot szeretne beszúrni egy másik dokumentumba az Aspose.Words for .NET használatával történő cseréje során, kövesse az alábbi lépéseket:
-1. Töltse be a helyőrzőket tartalmazó fő dokumentumot egy dokumentum objektumba.
-2. Konfigurálja a keresési és cserelehetőségeket, beleértve a keresési irányt és a csere-visszahívást a dokumentumbeillesztés kezeléséhez.
-3. Hívja meg a csere metódust a megfelelő keresési mintával, cserélje ki a helyőrzőket egy üres karakterláncra, a beállított opciók használatával.
+### Hogyan kaphatok támogatást az Aspose.Words számára?
+Támogatást kaphat, ha ellátogat a[Aspose.Words fórum](https://forum.aspose.com/c/words/8).
 
-#### K: Testreszabhatom a beillesztési viselkedést a csere során?
-
-V: Igen, testreszabhatja a beillesztési viselkedést a csere során az egyéni ReplaceingCallback implementálásával. Az IReplalacingCallback felületről való örökléssel szabályozhatja, hogy a helyőrzők cseréjekor a dokumentumok beszúrása és egyesítése hogyan történjen az Ön sajátos követelményei alapján.
-
-#### K: Cserélhetek több helyőrzőt különböző dokumentumokkal?
-
-V: Igen, több helyőrzőt lecserélhet különböző dokumentumokra, ha minden helyőrzőhöz megadja a megfelelő keresési mintákat, és megadja a megfelelő dokumentumokat, amelyeket be kell szúrni.
+### Megtarthatom a beillesztett dokumentum formázását?
+ Igen, a`NodeImporter`osztály lehetővé teszi annak megadását, hogy a formázás hogyan legyen kezelve csomópontok importálásakor egyik dokumentumból a másikba.

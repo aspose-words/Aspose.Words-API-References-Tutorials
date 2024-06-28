@@ -18,7 +18,7 @@ url: /ja/java/document-loading-and-saving/configuring-rtf-load-options/
 
 ## ステップ 1: RTF ロード オプションのセットアップ
 
-まず、インスタンスを作成する必要があります。`RtfLoadOptions`をクリックし、必要なオプションを設定します。この例では、`RecognizeUtf8Text` UTF-8 でエンコードされたテキストを認識するオプション:
+まず、インスタンスを作成する必要があります。`RtfLoadOptions`をクリックし、必要なオプションを設定します。この例では、`RecognizeUtf8Text` UTF-8 エンコードされたテキストを認識するオプション:
 
 ```java
 RtfLoadOptions loadOptions = new RtfLoadOptions();

@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Töltse be a forrás- és céldokumentumot
 
- Ezután be kell töltenie a forrás- és céldokumentumot az Aspose.Words használatával`Document` osztály. Frissítse a fájlneveket a`Document` konstruktor a dokumentumnevek szerint.
+Ezután be kell töltenie a forrás- és céldokumentumot az Aspose.Words használatával.`Document` osztály. Frissítse a fájlneveket a`Document` konstruktor a dokumentumnevek szerint.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## 4. lépés: Kapcsolja össze a fejléceket és lábléceket az előző részhez
 
- forrásdokumentum fejléceinek és lábléceinek a céldokumentum előző részéhez való kapcsolásához használhatja a`LinkToPrevious` módszere a`HeadersFooters` Gyűjtemény. Áthaladással`true` paraméterként felülírja a forrásdokumentum meglévő fejléceit vagy lábléceit.
+ A forrásdokumentum fejléceinek és lábléceinek a céldokumentum előző részéhez való kapcsolásához használhatja a`LinkToPrevious` módszere a`HeadersFooters` Gyűjtemény. Áthaladással`true` paraméterként felülírja a forrásdokumentum meglévő fejléceit vagy lábléceit.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

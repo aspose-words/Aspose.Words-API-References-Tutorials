@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## 第 3 步：更新智能艺术绘图
-使用以下命令迭代文档中的形状`GetChildNodes`方法与`NodeType.Shape`范围。使用以下命令检查每个形状是否具有智能艺术`HasSmartArt`属性，如果为 true，则调用`UpdateSmartArtDrawing`更新 Smart Art 绘图的方法。
+使用以下命令迭代文档中的形状`GetChildNodes`方法与`NodeType.Shape`参数。使用以下命令检查每个形状是否具有智能艺术`HasSmartArt`属性，如果为 true，则调用`UpdateSmartArtDrawing`更新 Smart Art 绘图的方法。
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

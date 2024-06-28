@@ -70,11 +70,11 @@ Vui lòng khám phá các tính năng và tùy chọn bổ sung do Aspose.Words 
 
 #### Tôi có thể chia tài liệu Word thành những định dạng nào?
 
-Mã nguồn được cung cấp thể hiện việc chia tài liệu Word thành các phần nhỏ hơn ở định dạng HTML. Tuy nhiên, Aspose.Words for .NET hỗ trợ nhiều định dạng đầu ra khác nhau, bao gồm DOCX, PDF, EPUB, v.v. Bạn có thể sửa đổi mã và chỉ định định dạng đầu ra mong muốn trong`HtmlSaveOptions` đối tượng tương ứng.
+ Mã nguồn được cung cấp thể hiện việc chia tài liệu Word thành các phần nhỏ hơn ở định dạng HTML. Tuy nhiên, Aspose.Words for .NET hỗ trợ nhiều định dạng đầu ra khác nhau, bao gồm DOCX, PDF, EPUB, v.v. Bạn có thể sửa đổi mã và chỉ định định dạng đầu ra mong muốn trong`HtmlSaveOptions` đối tượng tương ứng.
 
 #### Tôi có thể chọn tiêu chí khác để chia tài liệu không?
 
- Có, bạn có thể chọn tiêu chí khác để chia tài liệu dựa trên yêu cầu của mình. Aspose.Words for .NET cung cấp một số tùy chọn tiêu chí, chẳng hạn như`HeadingParagraph`, `Page`, `Section` , và hơn thế nữa. Sửa đổi`DocumentSplitCriteria` tài sản ở`HtmlSaveOptions` đối tượng để lựa chọn tiêu chí phân chia thích hợp.
+Có, bạn có thể chọn tiêu chí khác để chia tài liệu dựa trên yêu cầu của mình. Aspose.Words for .NET cung cấp một số tùy chọn tiêu chí, chẳng hạn như`HeadingParagraph`, `Page`, `Section` , và hơn thế nữa. Sửa đổi`DocumentSplitCriteria` tài sản ở`HtmlSaveOptions` đối tượng để lựa chọn tiêu chí phân chia thích hợp.
 
 #### Làm cách nào tôi có thể tùy chỉnh HTML đầu ra cho các phần được chia nhỏ?
 

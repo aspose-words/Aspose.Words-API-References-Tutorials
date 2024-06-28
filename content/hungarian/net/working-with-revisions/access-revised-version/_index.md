@@ -54,7 +54,7 @@ foreach (Revision revision in doc.Revisions)
 Document doc = new Document(MyDir + "Revisions.docx");
 doc.UpdateListLabels();
 
-// Váltson át a dokumentum felülvizsgált verziójára.
+// Váltson a dokumentum felülvizsgált verziójára.
 doc.RevisionsView = RevisionsView.Final;
 
 foreach (Revision revision in doc.Revisions)
@@ -73,7 +73,7 @@ foreach (Revision revision in doc.Revisions)
 
 ## Következtetés
 
-Ebben az oktatóanyagban megtanultuk, hogyan lehet elérni egy Word-dokumentum átdolgozott verzióját az Aspose.Words for .NET használatával. A dokumentum betöltésével, a javított verzióra navigálással és a revíziók böngészésével konkrét információkat kaphattunk a listaelemeknek minősülő bekezdésekről. Az Aspose.Words for .NET hatékony szolgáltatásokat kínál a Word-dokumentumok kezeléséhez, beleértve a véleményekhez való hozzáférést. Ezt a tudást most felhasználhatja saját Word-dokumentumai átdolgozott verziójához az Aspose.Words for .NET használatával.
+Ebben az oktatóanyagban megtanultuk, hogyan lehet elérni egy Word-dokumentum átdolgozott verzióját az Aspose.Words for .NET használatával. A dokumentum betöltésével, a javított verzióra való navigálással és a revíziók böngészésével konkrét információkat kaphattunk a listaelemeknek minősülő bekezdésekről. Az Aspose.Words for .NET hatékony szolgáltatásokat kínál a Word-dokumentumok kezeléséhez, beleértve a véleményekhez való hozzáférést. Ezt a tudást most felhasználhatja saját Word-dokumentumai átdolgozott verziójához az Aspose.Words for .NET használatával.
 
 ### GYIK
 

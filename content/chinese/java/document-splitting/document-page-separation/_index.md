@@ -30,7 +30,7 @@ url: /zh/java/document-splitting/document-page-separation/
 
 ## 第 1 步：加载文档
 
-首先，我们需要加载要分成页面的文档。您可以这样做：
+首先，我们需要加载要分隔页面的文档。您可以这样做：
 
 ```java
 //加载文档
@@ -84,7 +84,7 @@ for (int i = 0; i < pages.size(); i++) {
 
 Aspose.Words for Java 是一个商业库，但它提供免费试用版。您可以查看他们的网站以获取定价详细信息和许可信息。
 
-### 我可以将分离的页面合并回单个文档吗？
+### 我可以将合并页面分离回单个文档吗？
 
 是的，您可以使用 Aspose.Words for Java 将分离的页面合并回单个文档。有关合并说明，请参阅文档。
 

@@ -2,84 +2,65 @@
 title: Tabel maken in Word-document
 linktitle: Tabel maken in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een tabel in een Word-document kunt maken met Aspose.Words voor .NET.
+description: Leer hoe u een tabel in een Word-document kunt maken met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze zelfstudie. Perfect voor zowel beginners als professionals.
 type: docs
 weight: 10
 url: /nl/net/add-content-using-documentbuilder/build-table/
 ---
-In deze stapsgewijze zelfstudie leert u hoe u een tabel in een Word-document kunt bouwen met Aspose.Words voor .NET. Wij begeleiden u door het proces en voorzien u van de benodigde C#-codefragmenten. Aan het einde van deze handleiding kunt u een tabel maken met aangepaste opmaak en inhoud met behulp van de klasse DocumentBuilder.
+## Invoering
+
+Hallo daar! Wilt u programmatisch tabellen in uw Word-documenten maken? Dan ben je hier aan het juiste adres! Vandaag duiken we in de magische wereld van Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u Word-documenten als een professional manipuleren. Stel je voor dat je een tovenaar bent, en Aspose.Words is je toverstaf, waarmee je met een snelle beweging van je pols (of beter gezegd, een regel code) documenten kunt maken, bewerken en opmaken. In deze zelfstudie concentreren we ons op het maken van een tabel in een Word-document. Dus pak je codeerhoed en laten we aan de slag gaan!
 
 ## Vereisten
-Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd op uw systeem.
 
-## Stap 1: Maak een nieuw document
-Maak om te beginnen een nieuw document met behulp van de Document-klasse:
+Voordat we aan ons tafelbouwavontuur beginnen, moeten we ervoor zorgen dat we al onze eenden op een rij hebben. Dit is wat je nodig hebt:
+
+- Visual Studio (of een andere C# IDE)
+- .NET Framework (4.0 of hoger)
+- Aspose.Words voor .NET-bibliotheek
+
+ Als u Aspose.Words nog niet heeft, kunt u dat eenvoudig doen[download het hier](https://releases.aspose.com/words/net/) . Je kunt ook beginnen met een[gratis proefperiode](https://releases.aspose.com/) als je de wateren wilt testen. Voor degenen die klaar zijn om de sprong te wagen: dat kan[koop een licentie](https://purchase.aspose.com/buy) , of als je meer tijd nodig hebt om te evalueren, pak dan een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
+
+## Naamruimten importeren
+
+Laten we eerst en vooral onze naamruimten op orde brengen. Deze stap is als het voorbereiden van een grote voorstelling. Voeg de volgende naamruimten toe aan uw C#-bestand:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Oké, laten we het proces van het maken van een tabel in een Word-document opsplitsen in beheersbare stappen. Zie het als het in elkaar zetten van een meubelstuk: we pakken het schroef en bout tegelijk aan.
+
+## Stap 1: Initialiseer het document en DocumentBuilder
+
+ Eerst moeten we onze document- en documentbouwer instellen. De`Document` klasse vertegenwoordigt het Word-document, en`DocumentBuilder` is onze handige tool om er inhoud aan toe te voegen.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
+
+ Stel je dit voor als het neerleggen van het canvas voordat je begint met schilderen. De`DocumentBuilder` is ons penseel, klaar om een meesterwerk te creëren.
 
 ## Stap 2: Start de tabel
-Gebruik vervolgens de StartTable-methode van de DocumentBuilder-klasse om te beginnen met het bouwen van de tabel:
+
+ Laten we nu onze tafel aftrappen. Wij noemen de`StartTable` werkwijze van de`DocumentBuilder` beginnen.
 
 ```csharp
-Table table = builder.StartTable();
-```
-
-## Stap 3: cellen invoegen en inhoud toevoegen
-Nu kunt u cellen in de tabel invoegen en er inhoud aan toevoegen met behulp van de methoden InsertCell en Write van de klasse DocumentBuilder. Pas de celopmaak indien nodig aan:
-
-```csharp
-builder.InsertCell();
-builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-builder.Write("This is row 1 cell 1");
-
-builder.InsertCell();
-builder.Write("This is row 1 cell 2");
-```
-
-## Stap 4: Beëindig de rij
-Nadat u inhoud aan de cellen van de eerste rij hebt toegevoegd, gebruikt u de EndRow-methode van de DocumentBuilder-klasse om de rij te beëindigen:
-
-```csharp
-builder.EndRow();
-```
-
-## Stap 5: Rijopmaak aanpassen
-U kunt de opmaak van een rij aanpassen door de eigenschappen van de objecten RowFormat en CellFormat in te stellen:
-
-```csharp
-builder.InsertCell();
-builder.RowFormat.Height = 100;
-builder.RowFormat.HeightRule = HeightRule.Exactly;
-builder.CellFormat.Orientation = TextOrientation.Upward;
-builder.Writeln("This is row 2 cell 1");
-
-builder.InsertCell();
-builder.CellFormat.Orientation = TextOrientation.Downward;
-builder.Writeln("This is row 2 cell 2");
-```
-
-## Stap 6: Beëindig de tabel
-Om de tabel te voltooien, gebruikt u de EndTable-methode van de DocumentBuilder-klasse:
-
-```csharp
-builder.EndTable();
-```
-
-### Voorbeeldbroncode voor het bouwen van een tabel met Aspose.Words voor .NET
-Hier is de volledige broncode voor het bouwen van een tabel met Aspose.Words voor .NET:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
 Table table = builder.StartTable();
 builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
+```
 
+ Door het gebruiken van`StartTable` vertellen we Aspose.Words dat we op het punt staan een tabel te maken. De`InsertCell` methode voegt de eerste cel toe, en`AutoFit` zorgt ervoor dat onze kolommen een vaste breedte hebben.
+
+## Stap 3: Formatteer de eerste rij
+
+Laten we de eerste rij opfleuren door wat tekst toe te voegen en deze verticaal uit te lijnen met het midden.
+
+```csharp
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.Write("This is row 1 cell 1");
 
@@ -87,7 +68,15 @@ builder.InsertCell();
 builder.Write("This is row 1 cell 2");
 
 builder.EndRow();
+```
 
+Zie dit als het dekken van het tafelkleed en het plaatsen van de eerste borden. Wij zorgen ervoor dat alles er netjes en opgeruimd uitziet.
+
+## Stap 4: Maak de tweede rij met aangepaste opmaak
+
+Laten we nu creatief worden met de tweede rij. We stellen de rijhoogte in, lijnen de tekst anders uit en voegen wat flair toe door de tekstrichting te wijzigen.
+
+```csharp
 builder.InsertCell();
 
 builder.RowFormat.Height = 100;
@@ -100,43 +89,49 @@ builder.CellFormat.Orientation = TextOrientation.Downward;
 builder.Writeln("This is row 2 cell 2");
 
 builder.EndRow();
-builder.EndTable();
-
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.BuildTable.docx");
 ```
 
+ Hier stellen we de hoogte van de rij in en zorgen ervoor dat deze vast blijft zitten`HeightRule.Exactly`. De veranderingen in de tekstrichting zorgen ervoor dat onze tafel opvalt en een vleugje uniekheid toevoegt.
+
+## Stap 5: Beëindig de tabel
+
+Nu onze rijen helemaal klaar zijn, is het tijd om het proces voor het maken van de tabel af te ronden.
+
+```csharp
+builder.EndTable();
+```
+
+Deze stap is als het toevoegen van de laatste hand aan ons kunstwerk. De tafelstructuur is compleet en klaar voor gebruik.
+
+## Stap 6: Sla het document op
+
+ Laten we tot slot ons document opslaan. Kies een locatie en een naam voor uw bestand en sla het op met de`.docx` verlenging.
+
+```csharp
+doc.Save("YourDirectoryPath/AddContentUsingDocumentBuilder.BuildTable.docx");
+```
+
+Zie dit als het inlijsten van ons meesterwerk en het tentoonstellen ervan. Uw tabel is nu onderdeel van een Word-document, klaar om te worden gedeeld en bewonderd.
+
 ## Conclusie
-Gefeliciteerd! Je hebt met succes geleerd hoe je een tabel in een Word-document kunt bouwen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu tabellen met aangepaste opmaak maken.
 
-### Veelgestelde vragen over het bouwen van een tabel in een Word-document
+En daar heb je het! U hebt met succes een tabel in een Word-document gebouwd met Aspose.Words voor .NET. In deze zelfstudie wordt u door elke stap geleid, van het initialiseren van het document tot het opslaan van het eindproduct. Met Aspose.Words zijn de mogelijkheden eindeloos. Of u nu rapporten, facturen of een ander document maakt, u heeft nu de mogelijkheid om tabellen naar hartenlust op te maken en aan te passen.
 
-#### Vraag: Wat is Aspose.Words voor .NET?
+Vergeet niet: oefening baart kunst. Aarzel dus niet om te experimenteren met verschillende tabelformaten en -stijlen. Veel codeerplezier!
 
-A: Aspose.Words voor .NET is een krachtige bibliotheek voor documentverwerking waarmee ontwikkelaars Microsoft Word-documenten programmatisch kunnen maken, lezen, bewerken en converteren in .NET-toepassingen. Het biedt een breed scala aan functies om met Word-documenten te werken, zoals tekstmanipulatie, het maken van tabellen, documentbeveiliging, opmaak en meer.
+## Veelgestelde vragen
 
-#### Vraag: Hoe kan ik een tabel in een Word-document bouwen met Aspose.Words voor .NET?
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten. Hiermee kunt u documenten maken, bewerken en manipuleren zonder dat u Microsoft Word nodig hebt.
 
-A: Om een tabel in een Word-document te bouwen met Aspose.Words voor .NET, kunt u deze stappen volgen:
-1.  Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder` voorwerp.
-2.  Gebruik de`StartTable` werkwijze van de`DocumentBuilder`klas om te beginnen met het bouwen van de tafel.
-3.  Voeg cellen in de tabel in en voeg inhoud toe met behulp van de`InsertCell` En`Write` methoden van de`DocumentBuilder` klas.
-4.  Beëindig de rij met behulp van de`EndRow` werkwijze van de`DocumentBuilder` klas.
-5.  Pas de rijopmaak aan door de eigenschappen van de`RowFormat` En`CellFormat` voorwerpen.
-6.  Beëindig de tabel met behulp van de`EndTable` werkwijze van de`DocumentBuilder` klas.
-7. Bewaar het document.
+### Hoe installeer ik Aspose.Words voor .NET?
+ Jij kan[download Aspose.Words voor .NET hier](https://releases.aspose.com/words/net/). Volg de meegeleverde installatie-instructies om het in uw ontwikkelomgeving in te stellen.
 
-#### Vraag: Hoe kan ik de opmaak van de tabel en de cellen ervan aanpassen?
+### Kan ik Aspose.Words gratis gebruiken?
+ Aspose.Words biedt een[gratis proefperiode](https://releases.aspose.com/) zodat u de functies ervan kunt testen. Voor langdurig gebruik kunt u een licentie aanschaffen of een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
 
- A: U kunt de opmaak van de tabel en de cellen aanpassen door verschillende eigenschappen van de tabel in te stellen`RowFormat` En`CellFormat` voorwerpen. U kunt bijvoorbeeld de celuitlijning, de verticale en horizontale tekstrichting, celhoogte, rijhoogte en meer aanpassen. Door deze eigenschappen te gebruiken, kunt u het gewenste uiterlijk van de tabel en de inhoud ervan bereiken.
+### Wat zijn enkele andere functies van Aspose.Words voor .NET?
+Naast het maken van tabellen kunt u met Aspose.Words werken met tekst, afbeeldingen, stijlen en vele andere documentelementen. Het ondersteunt een breed scala aan documentformaten, waaronder DOCX, PDF en HTML.
 
-#### Vraag: Kan ik complexe tabellen bouwen met samengevoegde cellen en andere geavanceerde functies?
-
- A: Ja, Aspose.Words voor .NET biedt geavanceerde functies voor het bouwen van complexe tabellen, inclusief ondersteuning voor samengevoegde cellen, geneste tabellen en complexe tabelindelingen. U kunt gebruik maken van de`MergeCells` methode om cellen samen te voegen,`StartTable`methode om geneste tabellen te maken, en andere methoden om de gewenste tabelstructuur te bereiken.
-
-#### Vraag: Is Aspose.Words voor .NET compatibel met verschillende Word-documentformaten?
-
-A: Ja, Aspose.Words voor .NET is compatibel met verschillende Word-documentformaten, waaronder DOC, DOCX, RTF en meer. Het ondersteunt zowel oudere formaten (DOC) als moderne op XML gebaseerde formaten (DOCX) en stelt u in staat zonder problemen met documenten in verschillende formaten te werken.
-
-#### Vraag: Waar kan ik meer informatie en documentatie vinden voor Aspose.Words voor .NET?
-
- A: U kunt uitgebreide documentatie en codevoorbeelden vinden op[API-referenties](https://reference.aspose.com/words/net/). De documentatie biedt gedetailleerde informatie over de functies van de bibliotheek en hoe u deze kunt gebruiken in uw .NET-toepassingen.
+### Waar kan ik hulp krijgen als ik problemen tegenkom?
+ Als je ondersteuning nodig hebt, bekijk dan de[Aspose.Words-forum](https://forum.aspose.com/c/words/8) waar u vragen kunt stellen en hulp kunt krijgen van de community en Aspose-ontwikkelaars.

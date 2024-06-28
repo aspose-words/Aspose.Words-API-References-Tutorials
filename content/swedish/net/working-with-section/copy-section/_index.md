@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-section/copy-section/
 ---
 
-I den här handledningen kommer vi att förklara hur man kopierar ett avsnitt från ett Word-dokument till ett annat dokument med hjälp av Aspose.Words-biblioteket för .NET. Genom att kopiera ett avsnitt kan du överföra ett specifikt avsnitt från ett källdokument till ett måldokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
+den här handledningen kommer vi att förklara hur man kopierar ett avsnitt från ett Word-dokument till ett annat dokument med hjälp av Aspose.Words-biblioteket för .NET. Genom att kopiera ett avsnitt kan du överföra ett specifikt avsnitt från ett källdokument till ett måldokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
 ## Förutsättningar
 Innan du börjar, se till att du har följande saker:
@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## Steg 3: Kopiera avsnittet till måldokumentet
- För att kopiera avsnittet från källdokumentet till måldokumentet använder vi`ImportNode` metod för att importera källsektionen och lägga till den i måldokumentet.
+ För att kopiera avsnittet från källdokumentet till måldokumentet använder vi`ImportNode`metod för att importera källsektionen och lägga till den i måldokumentet.
 
 ```csharp
 // Skaffa källsektionen
@@ -72,7 +72,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 ```
 
 ## Slutsats
-den här handledningen såg vi hur man kopierar ett avsnitt från ett Word-dokument till ett annat dokument med Aspose.Words för .NET. Genom att kopiera avsnitt kan du enkelt överföra specifika avsnitt från ett källdokument till ett måldokument. Använd gärna den här metoden för att effektivt organisera och manipulera delar av dina dokument.
+I den här handledningen såg vi hur man kopierar ett avsnitt från ett Word-dokument till ett annat dokument med Aspose.Words för .NET. Genom att kopiera avsnitt kan du enkelt överföra specifika avsnitt från ett källdokument till ett måldokument. Använd gärna den här metoden för att effektivt organisera och manipulera delar av dina dokument.
 
 ### FAQ's
 
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### F: Hur laddar man käll- och måldokument i Aspose.Words för .NET?
 
- S: För att ladda källdokumentet i en instans av`Document` klass kallas`srcDoc` och skapa en tom instans av`Document` klass kallas`dstDoc` för måldokumentet kan du använda följande kod:
+S: För att ladda källdokumentet i en instans av`Document` klass kallas`srcDoc` och skapa en tom instans av`Document` klass kallas`dstDoc` för måldokumentet kan du använda följande kod:
 
 ```csharp
 // Ladda källdokumentet

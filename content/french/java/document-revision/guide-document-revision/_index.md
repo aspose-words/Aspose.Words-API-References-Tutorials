@@ -59,7 +59,7 @@ Document doc = new Document("path/to/your/document.docx");
 
 ### 2.3 Manipulation de base des documents
 
-Une fois le document chargé, vous pouvez effectuer des manipulations de base telles que lire le contenu, ajouter du texte et enregistrer le document modifié.
+Une fois un document chargé, vous pouvez effectuer des manipulations de base telles que lire le contenu, ajouter du texte et enregistrer le document modifié.
 
 #### Lecture du contenu du document :
 
@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### Rejet des révisions :
+#### Rejet des avis :
 
 ```java
 Document doc = new Document("path/to/your/document.docx");

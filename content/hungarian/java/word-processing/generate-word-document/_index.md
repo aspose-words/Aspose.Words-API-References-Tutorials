@@ -37,7 +37,7 @@ import com.aspose.words.*;
 
 public class DocumentGenerator {
     public static void main(String[] args) throws Exception {
-        // Hozzon létre egy új Word-dokumentumot
+        // Hozzon létre egy új Word dokumentumot
         Document doc = new Document();
     }
 }

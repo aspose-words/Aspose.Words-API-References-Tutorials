@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### Q: .NET용 Aspose.Words에서 주석을 어떻게 제거할 수 있나요?
 
- A: .NET용 Aspose.Words에서 주석을 제거하려면 다음을 사용할 수 있습니다.`Comment.Remove` 지정하는 방법`Comment` 제거하려는 개체.
+A: .NET용 Aspose.Words에서 주석을 제거하려면 다음을 사용할 수 있습니다.`Comment.Remove` 지정하는 방법`Comment` 제거하려는 개체.
 
 #### Q: Aspose.Words for .NET의 댓글에 답글을 달 수 있나요?
 
@@ -85,8 +85,8 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### Q: .NET용 Aspose.Words의 기존 댓글에 어떻게 액세스할 수 있나요?
 
- A: 다음을 사용하여 .NET용 Aspose.Words의 기존 주석에 액세스할 수 있습니다.`CommentCollection` 의 재산`Document`물체. 이렇게 하면 문서에 있는 모든 주석을 찾아볼 수 있습니다.
+ A: 다음을 사용하여 .NET용 Aspose.Words의 기존 주석에 액세스할 수 있습니다.`CommentCollection` 의 재산`Document` 물체. 이렇게 하면 문서에 있는 모든 주석을 찾아볼 수 있습니다.
 
-#### Q: .NET용 Aspose.Words에서 주석 텍스트를 편집할 수 있나요?
+#### Q: .NET용 Aspose.Words에서 주석 텍스트를 편집할 수 있습니까?
 
  A: 예, Aspose.Words for .NET에 액세스하여 주석 텍스트를 편집할 수 있습니다.`Comment.Text` 해당 속성`Comment` 개체를 수정하고 필요에 따라 텍스트를 수정합니다.

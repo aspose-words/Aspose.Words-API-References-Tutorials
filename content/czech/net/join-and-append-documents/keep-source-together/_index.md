@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Načtěte zdrojové a cílové dokumenty
 
- Dále musíte načíst zdrojové a cílové dokumenty pomocí Aspose.Words`Document` třída. Aktualizujte názvy souborů v`Document` konstruktor podle názvů vašich dokumentů.
+Dále musíte načíst zdrojové a cílové dokumenty pomocí Aspose.Words.`Document` třída. Aktualizujte názvy souborů v`Document` konstruktor podle názvů vašich dokumentů.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Krok 4: Nastavte formátování odstavce "Keep with Next" pro zdrojový dokument
 
-Chcete-li zachovat odstavce ve zdrojovém dokumentu pohromadě, můžete iterovat každý odstavec v dokumentu a nastavit`KeepWithNext`majetek do`true`.
+ Chcete-li zachovat odstavce ve zdrojovém dokumentu pohromadě, můžete iterovat každý odstavec v dokumentu a nastavit`KeepWithNext`majetek do`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -90,4 +90,4 @@ Zde je úplný zdrojový kód pro funkci "Keep Source Together" v C# pomocí Asp
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-je to! Úspěšně jste implementovali funkci Keep Source Together pomocí Aspose.Words for .NET. Konečný dokument bude obsahovat sloučený obsah s odstavci ve zdrojovém dokumentu, které budou pohromadě.
+A je to! Úspěšně jste implementovali funkci Keep Source Together pomocí Aspose.Words for .NET. Konečný dokument bude obsahovat sloučený obsah s odstavci ve zdrojovém dokumentu, které budou pohromadě.

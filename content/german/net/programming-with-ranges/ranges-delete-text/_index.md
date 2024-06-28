@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Dieser Code greift über den Index auf den ersten Abschnitt des Dokuments zu`0` und löscht den gesamten Text innerhalb dieses Bereichs.
+ Dieser Code greift über den Index auf den ersten Abschnitt des Dokuments zu.`0` und löscht den gesamten Text innerhalb dieses Bereichs.
 
 #### F: Kann ich mit Aspose.Words für .NET Text aus mehreren Bereichen in einem Word-Dokument löschen?
 

@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## 2. Adım: Belirli bir yer işaretini gösterin veya gizleyin
 
- biz kullanıyoruz`ShowHideBookmarkedContent`Belgedeki belirli bir yer imini gösterme veya gizleme işlevi. Bu işlev, belgeyi, yer iminin adını ve yer iminin gösterilip gösterilmeyeceğini veya gizleneceğini belirten bir boole parametresini alır:
+ biz kullanıyoruz`ShowHideBookmarkedContent` Belgedeki belirli bir yer imini gösterme veya gizleme işlevi. Bu işlev, belgeyi, yer iminin adını ve yer iminin gösterilip gösterilmeyeceğini veya gizleneceğini belirten bir boole parametresini alır:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);

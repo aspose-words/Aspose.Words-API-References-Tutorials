@@ -2,110 +2,113 @@
 title: Gabungkan Dokumen Word
 linktitle: Gabungkan Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggabungkan beberapa dokumen Word menggunakan Aspose.Words untuk .NET. API canggih ini menyederhanakan proses penggabungan dokumen, menjadikannya efisien dan mudah.
+description: Pelajari cara menggabungkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk mengotomatiskan alur kerja dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/split-document/merge-documents/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda tentang cara menggabungkan beberapa dokumen Word menggunakan fitur Gabung Dokumen Aspose.Words untuk .NET. Ikuti langkah-langkah di bawah ini untuk memahami kode sumber dan mendapatkan dokumen gabungan yang berisi semua dokumen sumber.
+Hai! Pernahkah Anda merasa perlu menggabungkan beberapa dokumen Word menjadi satu file yang kohesif? Baik Anda sedang menyusun laporan, menyusun proyek, atau sekadar mencoba merapikan, menggabungkan dokumen dapat menghemat banyak waktu dan tenaga. Dengan Aspose.Words untuk .NET, proses ini menjadi mudah. Dalam tutorial ini, kita akan membahas cara menggabungkan dokumen Word menggunakan Aspose.Words untuk .NET, menguraikan setiap langkah sehingga Anda dapat mengikutinya dengan mudah. Pada akhirnya, Anda akan menggabungkan dokumen seperti seorang profesional!
 
-## Langkah 1: Cari dokumen untuk digabungkan
+## Prasyarat
 
-Sebelum menggabungkan dokumen, kita perlu mencari lokasi dokumen sumber yang akan digabungkan. Begini caranya:
+Sebelum kita mendalaminya, pastikan Anda memiliki semua yang Anda perlukan:
+
+1. Pengetahuan Dasar C#: Anda harus terbiasa dengan sintaks dan konsep C#.
+2.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/) . Jika Anda baru menjelajah, Anda bisa memulai dengan a[uji coba gratis](https://releases.aspose.com/).
+3. Visual Studio: Versi terbaru apa pun akan berfungsi, tetapi versi terbaru disarankan.
+4. .NET Framework: Pastikan itu diinstal pada sistem Anda.
+
+Baiklah, sekarang kita sudah menyelesaikan prasyaratnya, mari kita ke bagian yang menyenangkan!
+
+## Impor Namespace
+
+Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan untuk bekerja dengan Aspose.Words. Hal ini memungkinkan kita untuk mengakses semua kelas dan metode yang kita perlukan.
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// Cari dokumen untuk digabungkan.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-.GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.LowCode;
 ```
 
-## Langkah 2: Gabungkan dokumen
+Namespace ini penting untuk pembuatan, manipulasi, dan penyimpanan dokumen dalam berbagai format.
 
-Sekarang kita akan menggabungkan dokumen satu per satu untuk membuat dokumen gabungan akhir. Begini caranya:
+## Langkah 1: Menyiapkan Direktori Dokumen
 
-```csharp
-// Buka bagian pertama dari dokumen yang dihasilkan.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// Buat dokumen hasil baru.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// Gabungkan dokumen satu per satu.
-foreach(FileSystemInfo documentPath in documentPaths)
-{
-if (documentPath.FullName == sourceDocumentPath)
-keep on going;
-
-mergedDocBuilder.MoveToDocumentEnd();
-mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-```
-
-### Contoh kode sumber untuk Menggabungkan Dokumen menggunakan Aspose.Words untuk .NET
-
-Berikut adalah kode sumber lengkap untuk fitur Penggabungan Dokumen Aspose.Words untuk .NET:
+Sebelum kita mulai menggabungkan dokumen, kita perlu menentukan direktori tempat dokumen kita disimpan. Ini membantu Aspose.Words menemukan file yang ingin kita gabungkan.
 
 ```csharp
-// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Temukan dokumen yang digunakan untuk penggabungan.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
-
-// Buka bagian pertama dari dokumen yang dihasilkan.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// Buat dokumen hasil baru.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// Gabungkan bagian dokumen satu per satu.
-foreach (FileSystemInfo documentPath in documentPaths)
-{
-	if (documentPath.FullName == sourceDocumentPath)
-		continue;
-
-	mergedDocBuilder.MoveToDocumentEnd();
-	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-	sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
+
+ Di sini, kami menetapkan jalur ke direktori tempat dokumen Word Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya.
+
+## Langkah 2: Penggabungan Sederhana
+
+ Mari kita mulai dengan penggabungan sederhana. Kami akan menggabungkan dua dokumen menjadi satu menggunakan`Merger.Merge` metode.
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
+```
+
+ Pada langkah ini, kami menggabungkan`Document1.docx` Dan`Document2.docx` ke dalam file baru bernama`MergedDocument.docx`.
+
+## Langkah 3: Menggabungkan dengan Opsi Simpan
+
+Terkadang, Anda mungkin ingin mengatur opsi spesifik untuk dokumen yang digabungkan, seperti perlindungan kata sandi. Inilah cara Anda melakukannya:
+
+```csharp
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" };
+Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
+```
+
+Cuplikan kode ini menggabungkan dokumen dengan perlindungan kata sandi, memastikan bahwa dokumen akhir aman.
+
+## Langkah 4: Menggabungkan dan Menyimpan sebagai PDF
+
+Jika Anda perlu menggabungkan dokumen dan menyimpan hasilnya sebagai PDF, Aspose.Words memudahkannya:
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
+```
+
+ Di sini, kami bergabung`Document1.docx` Dan`Document2.docx` dan simpan hasilnya sebagai file PDF.
+
+## Langkah 5: Membuat Instans Dokumen dari Dokumen yang Digabung
+
+Terkadang, Anda mungkin ingin mengerjakan dokumen gabungan lebih jauh sebelum menyimpannya. Anda dapat membuat`Document` contoh dari dokumen yang digabungkan:
+
+```csharp
+Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
+doc.Save(dataDir + "MergedDocumentInstance.docx");
+```
+
+ Pada langkah ini, kita membuat a`Document` contoh dari dokumen yang digabungkan, memungkinkan manipulasi lebih lanjut sebelum disimpan.
 
 ## Kesimpulan
 
-Selamat! Anda telah mempelajari cara menggabungkan beberapa dokumen Word menggunakan fitur Gabung Dokumen Aspose.Words untuk .NET. Dengan mengikuti kode sumber yang disediakan, Anda dapat menggabungkan dokumen terpisah menjadi satu dokumen gabungan sambil mempertahankan format setiap dokumen sumber.
+ Dan itu dia! Anda telah mempelajari cara menggabungkan dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup pengaturan lingkungan Anda, melakukan penggabungan sederhana, menggabungkan dengan opsi penyimpanan, mengonversi dokumen gabungan ke PDF, dan membuat contoh dokumen dari dokumen gabungan. Aspose.Words menawarkan berbagai fitur, jadi pastikan untuk menjelajahinya[dokumentasi API](https://reference.aspose.com/words/net/) untuk membuka potensi penuhnya.
 
-Menggabungkan dokumen dapat berguna ketika Anda ingin menggabungkan informasi dari berbagai sumber atau membuat dokumen terpadu dari bagian-bagian individual. Aspose.Words untuk .NET menyediakan API canggih yang menyederhanakan proses penggabungan dokumen, menjadikannya efisien dan mudah.
+## FAQ
 
-Jangan ragu untuk menjelajahi fitur lain yang ditawarkan oleh Aspose.Words untuk .NET untuk meningkatkan kemampuan pemrosesan dokumen dan menyederhanakan alur kerja Anda.
+### 1. Apa itu Aspose.Words untuk .NET?
 
-### FAQ
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini ideal untuk mengotomatisasi tugas-tugas yang berhubungan dengan dokumen.
 
-#### Bagaimana cara menggabungkan dokumen dengan format berbeda?
+### 2. Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
 
- Saat menggabungkan dokumen, Aspose.Words untuk .NET menyediakan opsi untuk mempertahankan pemformatan setiap dokumen sumber. Dengan menggunakan`ImportFormatMode.KeepSourceFormatting` pilihan, dokumen yang digabungkan akan mempertahankan format dokumen asli. Jika Anda ingin menerapkan pemformatan yang konsisten di seluruh dokumen yang digabungkan, Anda dapat mengubah pemformatan menggunakan Aspose.Words API setelah menggabungkan dokumen.
+ Anda dapat mencoba Aspose.Words untuk .NET menggunakan a[uji coba gratis](https://releases.aspose.com/). Untuk penggunaan jangka panjang, Anda harus membeli lisensi.
 
-#### Bisakah saya menggabungkan dokumen dalam format berbeda?
+### 3. Bagaimana cara menangani pemformatan yang berbeda selama penggabungan?
 
-Ya, Aspose.Words untuk .NET mendukung penggabungan dokumen dalam berbagai format, termasuk DOCX, DOC, RTF, dan banyak lagi. Anda dapat memuat dokumen dengan format berbeda ke dalam Aspose.Words API dan menggabungkannya menjadi satu dokumen, apa pun format aslinya.
+ Aspose.Words menyediakan berbagai mode format penggabungan seperti`KeepSourceFormatting` Dan`MergeFormatting` . Mengacu kepada[dokumentasi API](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
 
-#### Bisakah saya menggabungkan dokumen dengan struktur kompleks, seperti tabel dan gambar?
+### 4. Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
 
-Sangat! Aspose.Words untuk .NET mampu menggabungkan dokumen dengan struktur kompleks, termasuk tabel, gambar, header, footer, dan lainnya. API menangani proses penggabungan dengan tetap menjaga integritas dan tata letak konten di setiap dokumen.
+Anda bisa mendapatkan dukungan dengan mengunjungi[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8).
 
-#### Apakah mungkin untuk menggabungkan dokumen dengan orientasi atau ukuran halaman berbeda?
+### 5. Bisakah saya menggabungkan format file lain dengan Aspose.Words untuk .NET?
 
-Ya, Aspose.Words untuk .NET menangani dokumen dengan orientasi atau ukuran halaman berbeda selama proses penggabungan. Dokumen gabungan yang dihasilkan akan mengakomodasi berbagai orientasi halaman dan ukuran dokumen sumber.
+Ya, Aspose.Words mendukung penggabungan berbagai format file, termasuk DOCX, PDF, dan HTML.

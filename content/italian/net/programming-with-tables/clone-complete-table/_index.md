@@ -65,10 +65,10 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//Clona la tabella e inseriscila nel documento dopo l'originale.
+	// Clona la tabella e inseriscila nel documento dopo l'originale.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Inserisci un paragrafo vuoto tra le due tabelle,
+	//Inserisci un paragrafo vuoto tra le due tabelle,
 	// oppure verranno combinati in uno solo al momento del salvataggio, ciò ha a che fare con la convalida del documento.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

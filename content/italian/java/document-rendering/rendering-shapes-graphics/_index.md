@@ -165,4 +165,4 @@ shape.setFillColor(Color.GREEN);
 
 ### Come posso disporre le forme in un ordine specifico?
 
- Puoi controllare l'ordine delle forme utilizzando la proprietà Z-order. Impostare il`ZOrder` proprietà di una forma per determinarne la posizione nella pila di forme. I valori più bassi vengono mandati in secondo piano, mentre i valori più alti vengono portati in primo piano.
+ Puoi controllare l'ordine delle forme utilizzando la proprietà Z-order. Impostare il`ZOrder` proprietà di una forma per determinarne la posizione nella pila di forme. I valori più bassi vengono portati in secondo piano, mentre i valori più alti vengono portati in primo piano.

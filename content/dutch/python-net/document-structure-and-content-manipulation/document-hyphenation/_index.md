@@ -114,7 +114,7 @@ Het efficiënt beheren van woordafbreking en tekststroom is essentieel voor het 
 
 ### Kan ik handmatig bepalen waar een woord eindigt?
 
-Ja, u kunt handmatig een koppelteken invoegen op het gewenste breekpunt om woordafbrekingen te bepalen.
+Ja, u kunt handmatig een koppelteken invoegen op het gewenste breekpunt om woordafbrekingen te beheren.
 
 ### Hoe kan ik de regelafstand aanpassen voor een betere leesbaarheid?
 
@@ -126,4 +126,4 @@ Om weduwen en wezen te voorkomen, kunt u de opties van Aspose.Words voor Python 
 
 ### Waar kan ik toegang krijgen tot de Aspose.Words voor Python-documentatie?
 
- U kunt toegang krijgen tot de API-documentatie op[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+ kunt toegang krijgen tot de API-documentatie op[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

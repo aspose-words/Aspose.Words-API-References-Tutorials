@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 3: Chèn và định cấu hình hình dạng
-Chèn một hình vào tài liệu bằng cách sử dụng`InsertShape` phương pháp của`DocumentBuilder` sự vật. Đặt kích thước mong muốn cho hình dạng.
+ Chèn một hình vào tài liệu bằng cách sử dụng`InsertShape` phương pháp của`DocumentBuilder` sự vật. Đặt kích thước mong muốn cho hình dạng.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## Bước 6: Lưu tài liệu
- Lưu tài liệu vào thư mục được chỉ định bằng cách sử dụng`Save` phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithShapes.VerticalAnchor.docx".
+ Lưu tài liệu vào thư mục được chỉ định bằng cách sử dụng`Save`phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithShapes.VerticalAnchor.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

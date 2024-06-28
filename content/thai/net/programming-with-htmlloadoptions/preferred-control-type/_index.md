@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /th/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-บทความนี้ให้คำแนะนำทีละขั้นตอนเกี่ยวกับวิธีการใช้ฟีเจอร์ชนิดการควบคุมที่ต้องการกับ Aspose.Words สำหรับ .NET เราจะอธิบายโค้ดแต่ละส่วนโดยละเอียด ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถเข้าใจวิธีระบุประเภทการควบคุมที่ต้องการเมื่อโหลดเอกสาร HTML
+บทความนี้ให้คำแนะนำทีละขั้นตอนเกี่ยวกับวิธีการใช้ฟีเจอร์ชนิดการควบคุมที่ต้องการกับ Aspose.Words สำหรับ .NET เราจะอธิบายโค้ดแต่ละส่วนอย่างละเอียด ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถเข้าใจวิธีระบุประเภทการควบคุมที่ต้องการเมื่อโหลดเอกสาร HTML
 
 ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งและกำหนดค่าไลบรารี Aspose.Words สำหรับ .NET ในโปรเจ็กต์ของคุณแล้ว คุณสามารถดูไลบรารีและคำแนะนำในการติดตั้งได้จากเว็บไซต์ Aspose
 
@@ -28,7 +28,7 @@ const string html=@"
 
 ## ขั้นตอนที่ 2: ตั้งค่าตัวเลือกการโหลด HTML
 
- ต่อไปเราจะสร้างไฟล์`HtmlLoadOptions` วัตถุและตั้งค่า`PreferredControlType`ทรัพย์สินเพื่อ`HtmlControlType.StructuredDocumentTag`. สิ่งนี้จะบอก Aspose.Words ให้ใช้ StructuredDocumentTags เพื่อแสดง HTML เมื่อโหลด
+ ต่อไปเราจะสร้างไฟล์`HtmlLoadOptions` วัตถุและตั้งค่า`PreferredControlType`ทรัพย์สินเพื่อ`HtmlControlType.StructuredDocumentTag`- สิ่งนี้จะบอก Aspose.Words ให้ใช้ StructuredDocumentTags เพื่อแสดง HTML เมื่อโหลด
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 ```
 
-นั่นคือทั้งหมดที่ ! คุณได้ระบุประเภทการควบคุมที่ต้องการสำเร็จแล้วเมื่อโหลดเอกสาร HTML ด้วย Aspose.Words สำหรับ .NET
+นั่นคือทั้งหมด! คุณได้ระบุประเภทการควบคุมที่ต้องการสำเร็จแล้วเมื่อโหลดเอกสาร HTML ด้วย Aspose.Words สำหรับ .NET
 
 ## บทสรุป
 
@@ -79,11 +79,11 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 #### ถาม: ฉันจะตั้งค่าประเภทการควบคุมที่ต้องการเมื่อโหลดเอกสาร HTML ได้อย่างไร
 
- ตอบ: หากต้องการตั้งค่าประเภทการควบคุมที่ต้องการ คุณต้องสร้าง`HtmlLoadOptions` วัตถุและตั้งค่า`PreferredControlType` ทรัพย์สินได้ตามต้องการ`HtmlControlType` . ในตัวอย่างที่ให้มา`HtmlControlType.StructuredDocumentTag` ถูกนำมาใช้.
+ ตอบ: หากต้องการตั้งค่าประเภทการควบคุมที่ต้องการ คุณต้องสร้าง`HtmlLoadOptions` วัตถุและตั้งค่า`PreferredControlType` ทรัพย์สินได้ตามต้องการ`HtmlControlType` - ในตัวอย่างที่ให้มา`HtmlControlType.StructuredDocumentTag` ถูกนำมาใช้.
 
 #### ถาม: การใช้ StructuredDocumentTags (SDT) เป็นประเภทการควบคุมที่ต้องการมีความสำคัญอย่างไร
 
-ตอบ: StructuredDocumentTags (SDT) เป็นองค์ประกอบที่ใช้ XML ซึ่งสามารถใช้เพื่อแสดงเนื้อหาและการควบคุมที่ซับซ้อนในเอกสาร Word การใช้ SDT เป็นประเภทการควบคุมที่ต้องการสามารถให้ความเข้ากันได้และการแสดงเนื้อหา HTML ได้ดีขึ้น
+ตอบ: StructuredDocumentTags (SDT) เป็นองค์ประกอบที่ใช้ XML ซึ่งสามารถใช้เพื่อแสดงเนื้อหาและการควบคุมที่ซับซ้อนในเอกสาร Word การใช้ SDT เป็นตัวควบคุมประเภทที่ต้องการสามารถให้ความเข้ากันได้และการแสดงเนื้อหา HTML ได้ดีขึ้น
 
 #### ถาม: ฉันจะมั่นใจได้อย่างไรว่า Aspose.Words ใช้ประเภทการควบคุมที่ต้องการเมื่อโหลดเอกสาร HTML
 

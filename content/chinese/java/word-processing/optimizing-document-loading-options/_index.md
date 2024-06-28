@@ -26,7 +26,7 @@ url: /zh/java/word-processing/optimizing-document-loading-options/
 
 ### 加载 HTML 文档
 
-HTML 是在 Web 上显示文档的常见格式。使用 Aspose.Words for Java，您可以高效地将 HTML 文档加载到您的应用程序中。这是分步指南：
+HTML 是在 Web 上显示文档的常用格式。使用 Aspose.Words for Java，您可以高效地将 HTML 文档加载到您的应用程序中。这是分步指南：
 
 ```java
 //添加必要的导入

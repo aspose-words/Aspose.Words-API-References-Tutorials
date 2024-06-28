@@ -30,7 +30,7 @@ Ebben az oktatóanyag-sorozatban végigvezetjük Önt az Aspose.Words-ben Python
 - Dokumentumvédelem: Ismerje meg, hogyan védheti meg a dokumentumokat jelszavas védelemmel és engedélyekkel.
 - Exportálás és konvertálás: Fedezze fel a dokumentumok különböző formátumokra és platformokra történő exportálásának lehetőségeit.
 
-A sorozat végére birtokában lesz a jól strukturált, tetszetős dokumentumok létrehozásának készségeinek, testreszabott beállításokkal, amelyek megfelelnek az Ön egyedi igényeinek.
+A sorozat végére elsajátítja a jól strukturált, tetszetős dokumentumok létrehozásához szükséges készségeket, testreszabott beállításokkal, amelyek megfelelnek az Ön egyedi igényeinek.
 
 ## Dokumentum opciók és beállítások oktatóanyagok
 ### [Speciális technikák a dokumentumok egyesítéséhez és csatolásához](./join-append-documents/)

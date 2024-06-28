@@ -65,10 +65,10 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//तालिका को क्लोन करें और मूल दस्तावेज़ के बाद उसे दस्तावेज़ में डालें।
+	// तालिका को क्लोन करें और मूल दस्तावेज़ के बाद उसे दस्तावेज़ में डालें।
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// दो तालिकाओं के बीच एक खाली पैराग्राफ डालें,
+	//दो तालिकाओं के बीच एक खाली पैराग्राफ डालें,
 	// अन्यथा सहेजने पर उन्हें एक में जोड़ दिया जाएगा, इसका संबंध दस्तावेज़ सत्यापन से है।
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

@@ -11,7 +11,7 @@ Aspose.Words for .NET je výkonná knihovna pro manipulaci a generování dokume
 
 Výukový program "Zpracování slov pomocí HtmlSaveOptions" se zaměřuje na použití možností uložení HTML v Aspose.Words pro .NET. Tento výukový program provede vývojáře různými dostupnými možnostmi přizpůsobení převodu dokumentů aplikace Word do HTML. Jsou uvedeny podrobné příklady kódu, které demonstrují použití těchto možností a dosažení požadovaných výsledků převodu.
 
-Ať už chcete převést dokumenty aplikace Word do formátu HTML pro zobrazení na webu, vložit obsah HTML do dokumentů aplikace Word nebo upravit vykreslování HTML, tento výukový program vám k tomu poskytne znalosti a dovednosti. Díky podrobným vysvětlením a praktickým příkladům budete moci plně využívat funkce převodu HTML Aspose.Words pro .NET ve svých vývojových projektech.
+Ať už chcete převést dokumenty aplikace Word do formátu HTML pro zobrazení na webu, vložit obsah HTML do dokumentů aplikace Word nebo upravit vykreslování HTML, tento výukový program vám k tomu poskytne znalosti a dovednosti. Díky podrobným vysvětlením a praktickým příkladům budete moci plně využívat funkce převodu HTML Aspose.Words for .NET ve svých vývojových projektech.
 
  ## Tutoriály
 | Titul | Popis |

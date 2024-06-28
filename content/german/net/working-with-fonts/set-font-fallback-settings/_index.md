@@ -2,80 +2,116 @@
 title: Legen Sie die Schriftart-Fallback-Einstellungen fest
 linktitle: Legen Sie die Schriftart-Fallback-Einstellungen fest
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie die Schriftartersetzungseinstellungen in Aspose.Words für .NET festlegen und die Schriftartenersetzung in Ihren Word-Dokumenten anpassen.
+description: Erfahren Sie, wie Sie Schriftart-Fallback-Einstellungen in Aspose.Words für .NET einrichten. Diese umfassende Anleitung stellt sicher, dass alle Zeichen in Ihren Dokumenten korrekt angezeigt werden.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/set-font-fallback-settings/
 ---
-In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Schriftartersetzungseinstellungen in einem Word-Dokument festlegen. Mit den Schriftartersetzungseinstellungen können Sie Ersatzschriftarten angeben, die verwendet werden sollen, wenn die angegebenen Schriftarten nicht verfügbar sind.
+
+Bei der Arbeit mit Dokumenten, die unterschiedliche Textelemente enthalten, beispielsweise verschiedene Sprachen oder Sonderzeichen, ist es wichtig, sicherzustellen, dass diese Elemente korrekt angezeigt werden. Aspose.Words für .NET bietet eine leistungsstarke Funktion namens „Font-Fallback-Einstellungen“, die beim Definieren von Regeln zum Ersetzen von Schriftarten hilft, wenn die Originalschriftart bestimmte Zeichen nicht unterstützt. In dieser Anleitung erfahren Sie in einer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Schriftart-Fallback-Einstellungen einrichten.
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
-- Grundkenntnisse der Programmiersprache C#
-- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
+
+Bevor Sie mit dem Tutorial beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+
+- Grundkenntnisse in C#: Vertrautheit mit der Programmiersprache C# und dem .NET Framework.
+-  Aspose.Words für .NET: Von herunterladen und installieren[Download-Link](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Ein Setup wie Visual Studio zum Schreiben und Ausführen Ihres Codes.
+-  Beispieldokument: Halten Sie ein Beispieldokument bereit (z. B.`Rendering.docx`) bereit zum Testen.
+- Schriftart-Fallback-Regeln XML: Bereiten Sie eine XML-Datei vor, die die Schriftart-Fallback-Regeln definiert.
+
+## Namespaces importieren
+
+Um Aspose.Words verwenden zu können, müssen Sie die erforderlichen Namespaces importieren. Dies ermöglicht den Zugriff auf verschiedene Klassen und Methoden, die für die Dokumentenverarbeitung erforderlich sind.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
+```
 
 ## Schritt 1: Definieren Sie das Dokumentenverzeichnis
- Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+
+Definieren Sie zunächst das Verzeichnis, in dem Ihr Dokument gespeichert ist. Dies ist für das Auffinden und Bearbeiten Ihres Dokuments unerlässlich.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Schritt 2: Laden Sie die Einstellungen für die Schriftartersetzung
- Erstellen Sie eine Instanz von`FontSettings` Klasse und nutzen Sie die`Load` Methode zum Laden von Einstellungen zum Überschreiben von Schriftarten aus einer XML-Datei. Die angegebene XML-Datei muss die zu verwendenden Schriftartersetzungsregeln enthalten.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## Schritt 3: Wenden Sie die Einstellungen für die Schriftartersetzung an
- Ordnen Sie Schriftartersetzungseinstellungen dem Dokument zu, indem Sie sie dem Dokument zuweisen`FontSettings` Eigentum.
-
-```csharp
-doc.FontSettings = fontSettings;
-```
-
-## Schritt 4: Speichern Sie das Dokument
- Speichern Sie das Dokument mit`Save` Methode der`Document` mit dem entsprechenden Pfad und Dateinamen.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
-
-### Beispielquellcode zum Festlegen von Font-Fallback-Einstellungen mit Aspose.Words für .NET 
-```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+// Der Pfad zum Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Schritt 2: Laden Sie das Dokument
+
+ Laden Sie Ihr Dokument in ein Aspose.Words`Document` Objekt. Mit diesem Schritt können Sie programmgesteuert mit dem Dokument arbeiten.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Schritt 3: Schriftarteinstellungen konfigurieren
+
+ Erstelle eine neue`FontSettings` Objekt und laden Sie die Schriftart-Fallback-Einstellungen aus einer XML-Datei. Diese XML-Datei enthält die Regeln für den Font-Fallback.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## Schritt 4: Schriftarteinstellungen auf das Dokument anwenden
+
+ Weisen Sie die konfigurierten zu`FontSettings`zum Dokument. Dadurch wird sichergestellt, dass beim Rendern des Dokuments die Schriftart-Fallback-Regeln angewendet werden.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Schritt 5: Speichern Sie das Dokument
+
+Speichern Sie abschließend das Dokument. Die Schriftart-Fallback-Einstellungen werden während des Speichervorgangs verwendet, um eine ordnungsgemäße Schriftartersetzung sicherzustellen.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
+```
+
+## XML-Datei: Font-Fallback-Regeln
+
+Hier ist ein Beispiel dafür, wie Ihre XML-Datei, die die Schriftart-Fallback-Regeln definiert, aussehen sollte:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
 ```
 
 ## Abschluss
-In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET Schriftartersetzungseinstellungen in einem Word-Dokument festlegen. Experimentieren Sie mit verschiedenen Schriftartersetzungsregeln, um sicherzustellen, dass Ihr Dokument konsistent aussieht, auch wenn die angegebenen Schriftarten nicht verfügbar sind.
 
-### FAQs
+Wenn Sie diese Schritte befolgen, können Sie Schriftart-Fallback-Einstellungen in Aspose.Words für .NET effektiv einrichten und verwenden. Dadurch wird sichergestellt, dass Ihre Dokumente alle Zeichen korrekt anzeigen, auch wenn die Originalschriftart bestimmte Zeichen nicht unterstützt. Durch die Implementierung dieser Einstellungen wird die Qualität und Lesbarkeit Ihrer Dokumente erheblich verbessert.
 
-#### F: Wie kann ich mit Aspose.Words Einstellungen für die Schriftartersetzung in einem Word-Dokument festlegen?
+## FAQs
 
-A: Um Einstellungen für die Schriftartersetzung in einem Word-Dokument mit Aspose.Words festzulegen, können Sie mithilfe der API Ersatzschriftarten angeben, die verwendet werden sollen, wenn erforderliche Schriftarten nicht verfügbar sind. Dies gewährleistet eine konsistente Textvisualisierung, auch ohne die Originalschriftarten.
+### F1: Was ist Font-Fallback?
 
-#### F: Ist es möglich, beim Überschreiben in einem Word-Dokument mit Aspose.Words Ersatzschriftarten zu verarbeiten?
+Font Fallback ist eine Funktion, die das Ersetzen von Schriftarten ermöglicht, wenn die ursprüngliche Schriftart bestimmte Zeichen nicht unterstützt, und so die ordnungsgemäße Anzeige aller Textelemente gewährleistet.
 
-A: Ja, mit Aspose.Words können Sie beim Ersetzen in einem Word-Dokument Ersatzschriftarten verwalten. Mit der API können Sie fehlende Schriftarten erkennen und geeignete Ersatzschriftarten angeben, um ein konsistentes Texterscheinungsbild auch dann beizubehalten, wenn Schriftarten ersetzt werden.
+### F2: Kann ich mehrere Fallback-Schriftarten angeben?
 
-#### F: Warum ist es wichtig, die Schriftartersetzungseinstellungen in einem Word-Dokument korrekt zu konfigurieren?
+Ja, Sie können in den XML-Regeln mehrere Fallback-Schriftarten angeben. Aspose.Words überprüft jede Schriftart in der angegebenen Reihenfolge, bis eine Schriftart gefunden wird, die das Zeichen unterstützt.
 
-A: Es ist wichtig, die Schriftartersetzungseinstellungen in einem Word-Dokument korrekt zu konfigurieren, um die visuelle Integrität des Textes zu wahren. Durch die Einstellung der entsprechenden Fallback-Schriftarten mit Aspose.Words stellen Sie sicher, dass der Text konsistent angezeigt wird, auch wenn die erforderlichen Schriftarten nicht verfügbar sind.
+### F3: Wo kann ich Aspose.Words für .NET herunterladen?
 
-#### F: Wie kann ich fehlende Schriftarten erkennen, wenn ich sie in einem Word-Dokument mit Aspose.Words ersetze?
+ Sie können es hier herunterladen[Aspose-Downloadseite](https://releases.aspose.com/words/net/).
 
-A: Mit Aspose.Words können Sie mithilfe der API fehlende Schriftarten während der Ersetzung in einem Word-Dokument erkennen. Sie können die von Aspose.Words bereitgestellten Methoden verwenden, um die Verfügbarkeit erforderlicher Schriftarten zu überprüfen und bei fehlenden Schriftarten entsprechende Maßnahmen zu ergreifen.
+### F4: Wie erstelle ich die XML-Datei für Schriftart-Fallback-Regeln?
 
-#### F: Beeinflusst die Schriftartersetzung das Layout meines Word-Dokuments?
+Die XML-Datei kann mit jedem Texteditor erstellt werden. Es sollte der Struktur folgen, die im Beispiel in diesem Tutorial gezeigt wird.
 
-A: Das Ersetzen von Schriftarten kann sich auf das Layout Ihres Word-Dokuments auswirken, wenn die Ersatzschriftarten andere Abmessungen als die Originalschriftarten haben. Allerdings können Sie die Auswirkungen auf das Layout minimieren, indem Sie Fallback-Schriftarten mit Bedacht auswählen und die Einstellungen für die Schriftartersetzung mit Aspose.Words konfigurieren.
+### F5: Gibt es Unterstützung für Aspose.Words?
+
+ Ja, Unterstützung finden Sie auf der[Aspose.Words-Supportforum](https://forum.aspose.com/c/words/8).

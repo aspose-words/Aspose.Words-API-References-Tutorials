@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## ขั้นตอนที่ 3: เก็บหมายเลขแหล่งที่มาไว้เมื่อนำเข้า
 
- หากต้องการรักษาการจัดรูปแบบลำดับเลขของย่อหน้าที่มีลำดับเลขจากเอกสารต้นฉบับ ให้สร้างอินสแตนซ์ของ`ImportFormatOptions` และตั้งค่า`KeepSourceNumbering` ถึง`true` . ใช้`NodeImporter` เพื่อนำเข้าโหนดจากเอกสารต้นทางไปยังเอกสารปลายทาง โดยระบุ`ImportFormatMode.KeepSourceFormatting` และ`importFormatOptions`.
+ หากต้องการรักษาการจัดรูปแบบลำดับเลขของย่อหน้าที่มีลำดับเลขจากเอกสารต้นฉบับ ให้สร้างอินสแตนซ์ของ`ImportFormatOptions` และตั้งค่า`KeepSourceNumbering` ถึง`true` - ใช้`NodeImporter` เพื่อนำเข้าโหนดจากเอกสารต้นทางไปยังเอกสารปลายทาง โดยระบุ`ImportFormatMode.KeepSourceFormatting` และ`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## ขั้นตอนที่ 4: นำเข้าและต่อท้ายย่อหน้า
 
-วนซ้ำย่อหน้าในเอกสารต้นฉบับและนำเข้าแต่ละย่อหน้าไปยังเอกสารปลายทางโดยใช้`importer`. ผนวกโหนดที่นำเข้าเข้ากับเนื้อหาของเอกสารปลายทาง
+ วนซ้ำย่อหน้าในเอกสารต้นฉบับและนำเข้าแต่ละย่อหน้าไปยังเอกสารปลายทางโดยใช้`importer`- ผนวกโหนดที่นำเข้าเข้ากับเนื้อหาของเอกสารปลายทาง
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## ขั้นตอนที่ 5: บันทึกเอกสารที่แก้ไข
 
- บันทึกเอกสารที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ.
+ บันทึกเอกสารที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ วัตถุ
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
@@ -69,7 +69,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// เก็บการจัดรูปแบบรายการต้นฉบับเมื่อนำเข้าย่อหน้าที่มีหมายเลขกำกับ
+	//เก็บการจัดรูปแบบรายการต้นฉบับเมื่อนำเข้าย่อหน้าที่มีหมายเลขกำกับ
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

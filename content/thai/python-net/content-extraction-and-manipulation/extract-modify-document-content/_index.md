@@ -30,7 +30,7 @@ from asposewords import Document
 doc = Document("path/to/your/document.docx")
 ```
 
-## การแยกข้อความ
+## กำลังแยกข้อความ
 
 หากต้องการแยกข้อความออกจากเอกสาร คุณสามารถวนซ้ำแต่ละย่อหน้าแล้วเรียกใช้:
 
@@ -68,7 +68,7 @@ run.get_font().set_color(255, 0, 0)
 doc.get_range().replace("old_text", "new_text", False, False)
 ```
 
-## การเพิ่มและแก้ไขรูปภาพ
+## การเพิ่มและแก้ไขภาพ
 
  สามารถเพิ่มหรือแทนที่รูปภาพได้โดยใช้`insert_image` วิธี:
 

@@ -16,7 +16,7 @@ Aspose.Words for Python adalah perpustakaan kaya fitur yang memungkinkan Anda me
 
 ## Memuat dan Menyimpan Dokumen
 
-Untuk memulai, Anda perlu menginstal perpustakaan Aspose.Words dan mengimpornya ke skrip Python Anda. Anda dapat memuat dokumen Word yang sudah ada atau membuat yang baru dari awal. Menyimpan dokumen Anda yang telah dimodifikasi juga mudah.
+Untuk memulai, Anda perlu menginstal perpustakaan Aspose.Words dan mengimpornya ke skrip Python Anda. Anda dapat memuat dokumen Word yang sudah ada atau membuat dokumen baru dari awal. Menyimpan dokumen Anda yang telah dimodifikasi juga mudah.
 
 ```python
 import aspose.words as aw

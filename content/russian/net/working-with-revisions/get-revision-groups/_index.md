@@ -31,9 +31,9 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 ```
 
 
-### Пример исходного кода для получения групп редакций с помощью Aspose.Words для .NET
+### Пример исходного кода для получения групп ревизий с помощью Aspose.Words для .NET
 
-Вот полный исходный код для получения групп редакций в документе с помощью Aspose.Words для .NET:
+Вот полный исходный код для получения групп ревизий в документе с помощью Aspose.Words для .NET:
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");

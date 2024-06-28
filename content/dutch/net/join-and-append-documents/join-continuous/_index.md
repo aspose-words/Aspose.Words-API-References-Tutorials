@@ -19,7 +19,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 
 ## Stap 2: Open de bron- en doeldocumenten
 
- Open de bron- en doeldocumenten met behulp van de`Document` klasse constructeur. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+ Open de bron- en doeldocumenten met behulp van de`Document` klasse constructor. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
 
 ```csharp
 // Pad naar uw documentmap
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Stap 3: Doorlopende sectiestart instellen
 
- Om het brondocument direct na de inhoud van het doeldocument te laten verschijnen, stelt u de`SectionStart` eigenschap van de eerste sectie in het brondocument`SectionStart.Continuous`.
+Om het brondocument direct na de inhoud van het doeldocument te laten verschijnen, stelt u de`SectionStart` eigenschap van de eerste sectie in het brondocument`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Stap 5: Sla het gewijzigde document op
 
- Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
+Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");

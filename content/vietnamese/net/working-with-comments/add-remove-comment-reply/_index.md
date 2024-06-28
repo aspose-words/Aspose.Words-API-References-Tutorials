@@ -77,7 +77,7 @@ Trả lời nhận xét cho phép thảo luận và phản hồi hợp tác tron
 
 #### Câu hỏi: Làm cách nào để xóa nhận xét trong Aspose.Words dành cho .NET?
 
- Đáp: Để xóa nhận xét trong Aspose.Words dành cho .NET, bạn có thể sử dụng`Comment.Remove` phương pháp xác định`Comment` đối tượng bạn muốn loại bỏ.
+Đáp: Để xóa nhận xét trong Aspose.Words dành cho .NET, bạn có thể sử dụng`Comment.Remove` phương pháp xác định`Comment` đối tượng bạn muốn loại bỏ.
 
 #### Câu hỏi: Tôi có thể trả lời nhận xét trong Aspose.Words cho .NET không?
 
@@ -85,7 +85,7 @@ Trả lời nhận xét cho phép thảo luận và phản hồi hợp tác tron
 
 #### Câu hỏi: Làm cách nào tôi có thể truy cập các nhận xét hiện có trong Aspose.Words cho .NET?
 
- Trả lời: Bạn có thể truy cập các nhận xét hiện có trong Aspose.Words cho .NET bằng cách sử dụng`CommentCollection` tài sản của`Document`sự vật. Điều này sẽ cho phép bạn duyệt tất cả các nhận xét có trong tài liệu.
+ Trả lời: Bạn có thể truy cập các nhận xét hiện có trong Aspose.Words cho .NET bằng cách sử dụng`CommentCollection` tài sản của`Document` sự vật. Điều này sẽ cho phép bạn duyệt tất cả các nhận xét có trong tài liệu.
 
 #### Câu hỏi: Tôi có thể chỉnh sửa văn bản nhận xét trong Aspose.Words cho .NET không?
 

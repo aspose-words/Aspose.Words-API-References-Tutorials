@@ -91,7 +91,7 @@ Selamat! Anda telah berhasil mempelajari cara mengubah sumber budaya pembaruan b
 
 #### T: Bagaimana cara menentukan budaya tertentu untuk memperbarui bidang di Aspose.Words untuk .NET?
 
-J: Untuk menentukan budaya tertentu untuk memperbarui bidang di Aspose.Words untuk .NET, Anda dapat menggunakan`Document.FieldOptions.FieldUpdateCultureInfo` properti dan atur`CultureInfo` objek yang sesuai dengan budaya yang diinginkan. Misalnya, Anda bisa menggunakan`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` untuk menentukan budaya Perancis (Prancis).
+ J: Untuk menentukan budaya tertentu untuk memperbarui bidang di Aspose.Words untuk .NET, Anda dapat menggunakan`Document.FieldOptions.FieldUpdateCultureInfo` properti dan atur`CultureInfo` objek yang sesuai dengan budaya yang diinginkan. Misalnya, Anda bisa menggunakan`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` untuk menentukan budaya Perancis (Prancis).
 
 #### T: Apakah mungkin untuk menonaktifkan pembaruan bidang otomatis di Aspose.Words untuk .NET?
 

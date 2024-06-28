@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте и настройте фигуру
-Вставьте фигуру в документ с помощью`InsertShape` метод`DocumentBuilder` объект. Установите нужные размеры фигуры.
+ Вставьте фигуру в документ с помощью`InsertShape` метод`DocumentBuilder` Объект Object. Установите нужные размеры фигуры.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## Шаг 6: Сохраните документ
- Сохраните документ в указанную директорию, используя команду`Save` метод. Укажите желаемое имя файла с соответствующим расширением. В этом примере мы сохраняем документ как «WorkingWithShapes.VerticalAnchor.docx».
+ Сохраните документ в указанную директорию, используя команду`Save`метод. Укажите желаемое имя файла с соответствующим расширением. В этом примере мы сохраняем документ как «WorkingWithShapes.VerticalAnchor.docx».
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

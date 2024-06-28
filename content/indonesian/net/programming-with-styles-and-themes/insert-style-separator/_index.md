@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Pada langkah ini, kami membuat yang baru`Document` objek dan yang terkait`DocumentBuilder` obyek.
+Pada langkah ini, kami membuat yang baru`Document` objek dan yang terkait`DocumentBuilder` obyek.
 
 ## Langkah 3: Membuat dan mengonfigurasi gaya kustom
 
@@ -98,7 +98,7 @@ Untuk menyiapkan lingkungan, Anda perlu memastikan bahwa Anda telah menginstal d
 
 #### Bagaimana cara membuat dan mengonfigurasi gaya khusus?
 
- Untuk membuat gaya khusus, Anda dapat menggunakan`Styles.Add` metode`Document` obyek. Tentukan jenis gaya (misalnya,`StyleType.Paragraph`dan berikan nama untuk gaya tersebut. Setelah dibuat, Anda dapat memodifikasi properti font objek gaya untuk mengonfigurasi tampilannya.
+ Untuk membuat gaya khusus, Anda dapat menggunakan`Styles.Add` metode`Document` obyek. Tentukan jenis gaya (misalnya,`StyleType.Paragraph`) dan berikan nama untuk gaya tersebut. Setelah dibuat, Anda dapat memodifikasi properti font objek gaya untuk mengonfigurasi tampilannya.
 
 #### Bagaimana cara menyisipkan pemisah gaya?
 
@@ -106,7 +106,7 @@ Untuk menyiapkan lingkungan, Anda perlu memastikan bahwa Anda telah menginstal d
 
 #### Bagaimana cara menerapkan gaya berbeda ke bagian teks berbeda?
 
- Anda dapat menerapkan gaya berbeda ke bagian teks berbeda dengan mengatur`ParagraphFormat.StyleName` properti dari`DocumentBuilder` obyek. Sebelum menulis teks, Anda dapat mengatur nama gaya ke gaya yang diinginkan, dan teks berikutnya akan diformat sesuai.
+ Anda dapat menerapkan gaya berbeda ke bagian teks berbeda dengan mengatur`ParagraphFormat.StyleName` properti dari`DocumentBuilder`obyek. Sebelum menulis teks, Anda dapat mengatur nama gaya ke gaya yang diinginkan, dan teks berikutnya akan diformat sesuai.
 
 #### Bisakah saya menyimpan dokumen dalam format berbeda?
 

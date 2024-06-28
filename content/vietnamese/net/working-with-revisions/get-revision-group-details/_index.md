@@ -2,7 +2,7 @@
 title: Nhận thông tin chi tiết về nhóm sửa đổi
 linktitle: Nhận thông tin chi tiết về nhóm sửa đổi
 second_title: API xử lý tài liệu Aspose.Words
-description: Nhận thông tin chi tiết về nhóm sửa đổi trong tài liệu Word với Aspose.Words for .NET.
+description: Nhận thông tin chi tiết về nhóm sửa đổi trong tài liệu Word bằng Aspose.Words cho .NET.
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/get-revision-group-details/

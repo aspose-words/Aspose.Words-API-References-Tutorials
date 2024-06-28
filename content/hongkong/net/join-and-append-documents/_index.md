@@ -7,7 +7,7 @@ type: docs
 weight: 1500
 url: /zh-hant/net/join-and-append-documents/
 ---
- Aspose.Words for .NET 教學將引導您了解應用程式中 Word 文件的文字處理的不同功能和技術。 「加入和合併文件」就是此類教學之一，它向您展示如何將多個 Word 文件合併為一個。您將學習如何使用`Document`開啟和操作文件的類，以及`AppendDocument`將一個文檔的內容附加到另一個文檔的方法。本教學為您提供了輕鬆執行此操作的逐步說明。
+ Aspose.Words for .NET 教學課程將引導您了解應用程式中 Word 文件的文字處理的不同功能和技術。 「加入和合併文件」就是此類教學之一，它向您展示如何將多個 Word 文件合併為一個。您將學習如何使用`Document`開啟和操作文件的類，以及`AppendDocument`將一個文檔的內容附加到另一個文檔的方法。本教學為您提供了輕鬆執行此操作的逐步說明。
 
 另一個很棒的教學是“替換文件中的文字”，它告訴您如何在 Word 文件中執行自動文字替換。您將學習如何使用`FindReplaceOptions`和`Document`用於尋找和取代文字的類，指定靈活的搜尋選項。本教學將引導您完成替換文件中文字的過程，使您能夠自動執行這項繁瑣的任務。
 
@@ -22,7 +22,7 @@ url: /zh-hant/net/join-and-append-documents/
 | [附加文檔](./append-document/) | 了解如何使用 Aspose.Words for .NET 將一個文件的內容附加到另一個文件。 |
 | [將文件附加到空白](./append-document-to-blank/) | 了解如何將文件附加到 Aspose.Words for .NET 中的空白目標文件。 |
 | [新增導入格式選項](./append-with-import-format-options/) | 了解如何使用 Aspose.Words for .NET 附加具有匯入格式選項的文件。 |
-| [不同的頁面設置](./different-page-setup/) | 了解如何使用 Aspose.Words for .NET 附加具有不同頁面設定設定的文件。 |
+| [不同的頁面設定](./different-page-setup/) | 了解如何使用 Aspose.Words for .NET 附加具有不同頁面設定設定的文件。 |
 | [加入持續](./join-continuous/) | 了解如何使用 Aspose.Words for .NET 連續連接兩個文檔，同時保留格式。 |
 | [加入新頁面](./join-new-page/) | 了解如何使用 Aspose.Words for .NET 在新頁面上合併兩個文檔，同時保留格式。 |
 | [保持來源格式](./keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 將來源文檔附加到目標文檔，同時保留原始格式。 |

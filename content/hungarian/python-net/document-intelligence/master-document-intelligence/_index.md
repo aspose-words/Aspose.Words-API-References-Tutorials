@@ -10,7 +10,7 @@ url: /hu/python-net/document-intelligence/master-document-intelligence/
 
 ## A dokumentumintelligencia megértése
 
-A dokumentumintelligencia arra a folyamatra vonatkozik, amely automatikusan kinyeri a dokumentumokból értékes információkat, például szöveget, metaadatokat, táblázatokat és diagramokat. Ez magában foglalja a dokumentumokon belüli strukturálatlan adatok elemzését, és strukturált és használható formátumokká alakítását. A dokumentumintelligencia lehetővé teszi a szervezetek számára, hogy egyszerűsítsék dokumentum-munkafolyamataikat, javítsák az adatközpontú döntéshozatalt, és javítsák az általános termelékenységet.
+A dokumentumintelligencia arra a folyamatra utal, amelynek során automatikusan kinyernek értékes információkat a dokumentumokból, például szövegeket, metaadatokat, táblázatokat és diagramokat. Ez magában foglalja a dokumentumokon belüli strukturálatlan adatok elemzését, és strukturált és használható formátumokká alakítását. A dokumentumintelligencia lehetővé teszi a szervezetek számára, hogy egyszerűsítsék dokumentum-munkafolyamataikat, javítsák az adatközpontú döntéshozatalt, és javítsák az általános termelékenységet.
 
 ## dokumentumintelligencia jelentősége a Pythonban
 
@@ -277,7 +277,7 @@ dokumentumintelligencia elsajátítása a Python és az Aspose.Words segítség�
 A dokumentumintelligencia az értékes információk – például szöveg, metaadatok, táblázatok és diagramok – automatikus kinyerésének folyamata. Ez magában foglalja a dokumentumokon belüli strukturálatlan adatok elemzését, és strukturált és használható formátumokká alakítását.
 
 ### Miért fontos a dokumentumintelligencia?
-A dokumentumintelligencia elengedhetetlen, mert lehetővé teszi a szervezetek számára, hogy egyszerűsítsék dokumentum-munkafolyamataikat, javítsák az adatközpontú döntéshozatalt, és javítsák az általános termelékenységet. Lehetővé teszi az adatokban gazdag dokumentumokból származó információk hatékony kinyerését, ami jobb üzleti eredményekhez vezet.
+A dokumentumintelligencia elengedhetetlen, mert lehetővé teszi a szervezetek számára, hogy egyszerűsítsék dokumentum-munkafolyamataikat, javítsák az adatvezérelt döntéshozatalt, és javítsák az általános termelékenységet. Lehetővé teszi az adatokban gazdag dokumentumokból származó információk hatékony kinyerését, ami jobb üzleti eredményekhez vezet.
 
 ### Hogyan segít az Aspose.Words a Python-alapú dokumentumintelligenciában?
 Az Aspose.Words egy erőteljes Python-könyvtár, amely a dokumentumfeldolgozási lehetőségek széles skáláját kínálja. Lehetővé teszi a felhasználók számára a Word-dokumentumok programozott létrehozását, szerkesztését, kibontását és manipulálását, így értékes eszköze a dokumentumintelligencia-feladatok elvégzésének.

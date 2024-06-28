@@ -58,7 +58,7 @@ table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
 
 ## Rijopmaak wijzigen
 
-Leer hoe u de opmaak van een specifieke rij binnen een tabel kunt wijzigen:
+Leer hoe u de opmaak van een specifieke rij in een tabel kunt wijzigen:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");
@@ -262,7 +262,7 @@ builder.writeln("I'm a wonderfully formatted row.");
 
 ## Conclusie
 
-Met Aspose.Words voor Java kunt u tabellen opmaken en tabelstijlen nauwkeurig toepassen. Van het wijzigen van de individuele celopmaak tot het maken van aangepaste tabelstijlen: u beschikt over de hulpmiddelen om uw documenten visueel aantrekkelijk en georganiseerd te maken.
+Met Aspose.Words voor Java kunt u tabellen opmaken en tabelstijlen nauwkeurig toepassen. Van het aanpassen van de individuele celopmaak tot het maken van aangepaste tabelstijlen: u beschikt over de hulpmiddelen om uw documenten visueel aantrekkelijk en overzichtelijk te maken.
 
 ## Veelgestelde vragen
 

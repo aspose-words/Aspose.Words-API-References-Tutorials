@@ -15,7 +15,7 @@ Innan du börjar, se till att du har följande saker:
 - Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
 ## Steg 1: Definiera dokumentkatalogen
- Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
+Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

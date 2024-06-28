@@ -2,94 +2,123 @@
 title: フォントの通知を受け取る
 linktitle: フォントの通知を受け取る
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用するときにフォントが見つからない、または代替されたという通知を受け取る方法について説明します。
+description: 詳細なガイドを参照して、Aspose.Words for .NET でフォント置換通知を受け取る方法を学びましょう。ドキュメントが毎回正しく表示されるようにします。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET の使用中にフォント通知を受け取る方法を説明します。フォント通知を使用すると、ドキュメント内の欠落フォントまたは代替フォントを検出して管理できます。 .NET プロジェクトのコードを理解して実装できるように、段階的に説明します。
+
+ドキュメント内でフォントが正しく表示されないという問題に直面したことがあるのは、あなただけではありません。フォント設定を管理し、フォントの置換に関する通知を受け取ることで、多くの悩みを軽減できます。この包括的な通知ガイドでは、Aspose.Words for .NET を使用してフォントを処理し、ドキュメントを常に最高の状態に保つ方法を説明します。
 
 ## 前提条件
-始める前に、次のものが揃っていることを確認してください。
-- C# プログラミング言語に関する実践的な知識
-- プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
+
+詳細に入る前に、次のものが揃っていることを確認してください。
+
+- C# の基本知識: C# プログラミングに精通していると、理解するのに役立ちます。
+-  Aspose.Words for .NET ライブラリ:[公式ダウンロードリンク](https://releases.aspose.com/words/net/).
+- 開発環境: コードを作成して実行するための Visual Studio などのセットアップ。
+- サンプルドキュメント: サンプルドキュメントを用意します (例:`Rendering.docx`) フォント設定をテストする準備ができました。
+
+## 名前空間のインポート
+
+Aspose.Words の使用を開始するには、必要な名前空間をプロジェクトにインポートする必要があります。これにより、必要なクラスとメソッドにアクセスできるようになります。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+```
 
 ## ステップ 1: ドキュメント ディレクトリを定義する
-まず、Word 文書の場所へのディレクトリ パスを設定する必要があります。交換する`"YOUR DOCUMENT DIRECTORY"`コード内で適切なパスを指定します。
+
+まず、ドキュメントが保存されているディレクトリを指定します。これは、処理するドキュメントを見つけるために重要です。
 
 ```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## ステップ 2: ドキュメントをロードし、フォント設定を構成する
-次に、次のコマンドを使用してドキュメントをロードします。`Document`クラスを作成し、を使用してフォント設定を構成します。`FontSettings`クラス。フォントが見つからない場合に使用するデフォルトのフォントを設定します。
-
-```csharp
-//ドキュメントをロードしてフォント設定を構成します
-Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-```
-
-## ステップ 3: 通知ハンドラーを設定する
-次に、次を実装して通知ハンドラーを定義します。`IWarningCallback`インターフェース。これにより、ドキュメントを保存するときにフォントの警告を収集できるようになります。
-
-```csharp
-//通知ハンドラーを定義する
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc. WarningCallback = callback;
-```
-
-## ステップ 4: フォント設定を適用してドキュメントを保存する
-最後に、フォント設定をドキュメントに適用して保存します。フォントの警告は、前に定義した通知ハンドラーによってキャプチャされます。
-
-```csharp
-//フォント設定を適用してドキュメントを保存します
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
-```
-
-### Aspose.Words for .NET を使用したフォントの通知の受信のサンプル ソース コード 
-```csharp
-
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## ステップ 2: ドキュメントをロードする
+
+ドキュメントを Aspose.Words にロードします。`Document`物体。これにより、ドキュメントをプログラムで操作できるようになります。
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## ステップ 3: フォント設定を構成する
+
+次に、フォント設定を構成して、必要なフォントが見つからない場合に Aspose.Words が使用するデフォルトのフォントを指定します。
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-//フォントが見つからない場合に使用するデフォルトのフォントを選択できます。
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-//テストのために、存在しないフォルダー内でのみフォントを検索するように Aspose.Words を設定します。 Aspose.Words では機能しないため、
-//指定されたディレクトリ内のフォントを検索すると、レンダリング中にドキュメント内のフォントがデフォルトのフォントに置き換えられます。
-// FontSettings.DefaultFontName で指定されたフォント。コールバックを使用して、このサブスーツを取得できます。
+
+//存在しないフォルダー内でのみフォントを検索するように Aspose.Words を設定する
 fontSettings.SetFontsFolder(string.Empty, false);
-//ドキュメントの保存中に生成された警告を収集する IWarningCallback を実装する新しいクラスを作成します。
+```
+
+## ステップ 4: 警告コールバックを設定する
+
+フォント置換の警告をキャプチャして処理するには、`IWarningCallback`インターフェース。このクラスは、ドキュメント処理中に発生する警告をログに記録します。
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        //置き換えられるフォントのみに興味があります。
+        if (info.WarningType == WarningType.FontSubstitution)
+        {
+            Console.WriteLine("Font substitution: " + info.Description);
+        }
+    }
+}
+```
+
+## ステップ 5: コールバックとフォント設定をドキュメントに割り当てる
+
+警告コールバックと構成されたフォント設定をドキュメントに割り当てます。これにより、フォントの問題が確実にキャプチャされ、ログに記録されます。
+
+```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
-
 ```
 
+## ステップ 6: ドキュメントを保存する
+
+最後に、フォント設定を適用し、フォントの置換を処理した後、ドキュメントを保存します。選択した形式で保存します。ここでは、PDF として保存します。
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
+```
+
+これらの手順に従うことで、フォントの置換を適切に処理し、置換が発生するたびに通知を受け取るようにアプリケーションを構成しました。
+
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET の使用中にフォント通知を受け取る方法について説明しました。フォント通知を使用すると、ドキュメント内の欠落フォントまたは代替フォントを検出して管理できます。この機能を使用して、文書内のフォントの一貫性を確保し、フォントが見つからない場合に適切な措置を講じます。
 
-### よくある質問
+これで、Aspose.Words for .NET を使用してフォント置換の通知を受け取るプロセスをマスターできました。このスキルは、必要なフォントが利用できない場合でも、ドキュメントを常に最高の状態に保つのに役立ちます。 Aspose.Words の機能を最大限に活用するには、さまざまな設定を試し続けてください。
 
-#### Q: Aspose.Words で見つからないフォントの通知を受け取るにはどうすればよいですか?
+## よくある質問
 
- A: Aspose.Words で見つからないフォントの通知を受け取るには、`FontSettings`クラスと`FontSubstitutionCallback`イベント。ドキュメントの処理中にフォントが見つからない場合に通知を受けるようにコールバック メソッドを設定できます。
+### Q1: デフォルトのフォントを複数指定できますか?
 
-#### Q: Word 文書でフォントが見つからない場合はどうすればよいですか?
+いいえ、置換用に指定できるデフォルトのフォントは 1 つだけです。ただし、複数のフォールバック フォント ソースを構成できます。
 
-A: Word 文書内でフォントが見つからない場合は、さまざまな方法を使用できます。 Aspose.Words アプリケーションを実行するシステムに不足しているフォントをインストールするか、不足しているフォントを利用可能な代替フォントで置き換えることができます。
+### Q2: Aspose.Words for .NET の無料トライアルはどこで入手できますか?
 
-#### Q: Aspose.Words で代替フォントの通知を受け取ることはできますか?
+無料トライアル版は次からダウンロードできます。[Asposeの無料トライアルページ](https://releases.aspose.com/).
 
- A: はい、Aspose.Words で代替フォントの通知を受け取ることができます。文書処理中にフォントが置き換えられると、`FontSubstitutionCallback`イベントを確認し、適切なアクションを実行してテキストの外観を調整します。
+###  Q3: 他の種類の警告を次の方法で処理できますか?`IWarningCallback`?
 
-#### Q: Aspose.Words でフォントが置き換えられる場合、テキストの外観の一貫性を保つにはどうすればよいですか?
+はい`IWarningCallback`インターフェイスは、フォントの置換だけでなく、さまざまなタイプの警告を処理できます。
 
-A: フォントを置き換えるときにテキストの外観の一貫性を維持するには、フォント サイズ、スタイル、色などのテキスト書式設定プロパティを調整できます。元のフォントと見た目が似ている代替フォントの使用を検討することもできます。
+### Q4: Aspose.Words のサポートはどこで見つけられますか?
+
+訪問[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)援助のために。
+
+### Q5: Aspose.Words の一時ライセンスを取得することはできますか?
+
+はい、次のサイトから一時ライセンスを取得できます。[一時ライセンスのページ](https://purchase.aspose.com/temporary-license/).

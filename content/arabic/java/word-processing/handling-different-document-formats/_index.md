@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### إنشاء الجداول
 
 ```java
-// إنشاء جدول مكون من 3 صفوف و4 أعمدة
+// إنشاء جدول مكون من 3 صفوف و4 أعمدة.
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

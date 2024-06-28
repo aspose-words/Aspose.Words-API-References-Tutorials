@@ -20,7 +20,7 @@ Niezależnie od tego, czy chcesz przekonwertować dokumenty programu Word na for
 | [Eksportuj czcionki jako Base 64](./export-fonts-as-base-64/) | Przewodnik krok po kroku dotyczący eksportowania czcionek bazowych 64 podczas zapisywania dokumentu za pomocą Aspose.Words dla .NET. |
 | [Eksportuj zasoby](./export-resources/) | Przewodnik krok po kroku dotyczący eksportowania zasobów dokumentów podczas zapisywania jako HTML za pomocą Aspose.Words dla .NET. |
 | [Konwertuj metapliki na format EMF lub WMF](./convert-metafiles-to-emf-or-wmf/) | Przewodnik krok po kroku dotyczący konwersji metaplików do formatów EMF lub WMF podczas konwersji dokumentu do formatu HTML za pomocą Aspose.Words dla .NET. |
-| [Konwertuj metapliki na format Svg](./convert-metafiles-to-svg/) | Przewodnik krok po kroku dotyczący konwersji metaplików do formatu SVG podczas konwersji dokumentu do HTML za pomocą Aspose.Words dla .NET. |
+| [Konwertuj metapliki na Svg](./convert-metafiles-to-svg/) | Przewodnik krok po kroku dotyczący konwersji metaplików do formatu SVG podczas konwersji dokumentu do HTML za pomocą Aspose.Words dla .NET. |
 | [Dodaj przedrostek nazwy klasy CSS](./add-css-class-name-prefix/) | Przewodnik krok po kroku dotyczący dodawania przedrostka nazwy klasy CSS podczas konwersji dokumentu do formatu HTML za pomocą Aspose.Words dla .NET. |
 | [Eksportuj adresy URL Cid do zasobów Mhtml](./export-cid-urls-for-mhtml-resources/) | Przewodnik krok po kroku dotyczący eksportowania adresów URL CID zasobów MHTML podczas zapisywania dokumentu za pomocą Aspose.Words dla .NET. |
 | [Rozwiąż nazwy czcionek](./resolve-font-names/) | Przewodnik krok po kroku dotyczący rozwiązywania brakujących nazw czcionek podczas konwersji do formatu HTML za pomocą Aspose.Words dla .NET. |

@@ -104,11 +104,11 @@ Evet, Aspose.Words for Java diğer Java kütüphaneleriyle uyumludur, bu da onu 
 
 ### S2: Aspose.Words for Java'nın deneme sürümü mevcut mu?
 
- Evet, Aspose.Words for Java'nın ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.aspose.com/).
+ Evet, Aspose.Words for Java'nın ücretsiz deneme sürümüne erişebilirsiniz.[Burada](https://releases.aspose.com/).
 
 ### S3: Aspose.Words for Java için nasıl geçici lisans alabilirim?
 
- Aspose.Words for Java için geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words for Java için geçici bir lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/).
 
 ### S4: Aspose.Words for Java desteğini nerede bulabilirim?
 

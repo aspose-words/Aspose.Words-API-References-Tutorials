@@ -2,82 +2,88 @@
 title: Konversi Bidang Dalam Tubuh
 linktitle: Konversi Bidang Dalam Tubuh
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan Aspose.Words untuk .NET untuk mengonversi bidang Halaman menjadi teks di badan dokumen Word.
+description: Pelajari cara mengonversi bidang dokumen menjadi teks statis menggunakan Aspose.Words untuk .NET untuk meningkatkan efisiensi pemrosesan dokumen.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/convert-fields-in-body/
 ---
 
-Dalam tutorial langkah demi langkah ini, kami akan memandu Anda tentang cara menggunakan fitur ConvertFieldsInBody dari Aspose.Words untuk .NET menggunakan kode sumber C# yang disediakan. Fitur ini memungkinkan Anda mengonversi bidang tertentu di badan dokumen menjadi teks biasa, sehingga dokumen Anda lebih mudah diproses. Ikuti langkah-langkah di bawah ini untuk menggunakan fitur ini secara efektif.
+## Perkenalan
 
-## Langkah 1: Prasyarat
+Dalam bidang pengembangan .NET, mengelola konten dokumen secara dinamis sangatlah penting, seringkali memerlukan manipulasi berbagai jenis bidang dalam dokumen. Aspose.Words for .NET menonjol sebagai perangkat canggih bagi pengembang, menawarkan fungsionalitas canggih untuk menangani bidang dokumen secara efisien. Panduan komprehensif ini berfokus pada cara mengonversi bidang di badan dokumen menggunakan Aspose.Words untuk .NET, memberikan petunjuk langkah demi langkah untuk memberdayakan pengembang dalam meningkatkan otomatisasi dan manajemen dokumen.
 
-Sebelum memulai, pastikan Anda telah menginstal Aspose.Words untuk .NET dan memiliki dokumen yang siap untuk diproses. Pastikan juga Anda memiliki jalur direktori ke dokumen Anda.
+## Prasyarat
 
-## Langkah 2: Muat dokumen
+Sebelum mempelajari tutorial tentang mengonversi bidang di badan dokumen menggunakan Aspose.Words untuk .NET, pastikan Anda memiliki prasyarat berikut:
 
-Mulailah dengan mendeklarasikan variabel untuk jalur ke direktori dokumen Anda, lalu gunakan variabel tersebut untuk menginisialisasi objek Dokumen dari dokumen yang ditentukan. Dalam contoh kita, dokumen tersebut disebut "Linked field.docx".
+- Visual Studio: Diinstal dan dikonfigurasi untuk pengembangan .NET.
+-  Aspose.Words untuk .NET: Diunduh dan direferensikan dalam proyek Visual Studio Anda. Anda bisa mendapatkannya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# untuk memahami dan memodifikasi cuplikan kode yang disediakan.
+
+## Impor Namespace
+
+Untuk memulainya, pastikan untuk mengimpor namespace yang diperlukan ke dalam proyek Anda:
 
 ```csharp
-// Jalur ke direktori dokumen Anda.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using System.Linq;
+```
 
-// Muat dokumen
+Namespace ini penting untuk mengakses fungsionalitas Aspose.Words dan kueri LINQ.
+
+## Panduan Langkah demi Langkah untuk Mengonversi Bidang di Isi dengan Aspose.Words untuk .NET
+
+### Langkah 1: Muat Dokumen
+
+Mulailah dengan memuat dokumen tempat Anda ingin mengonversi bidang:
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## Langkah 3: Ubah Bidang Halaman menjadi Teks Biasa
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur ke dokumen Anda yang sebenarnya.
 
- Sekarang dokumen sudah dimuat, kita dapat melanjutkan ke langkah konversi. Untuk mengonversi bidang halaman menjadi teks biasa di badan bagian pertama, Anda dapat menggunakan`Range.Fields` metode untuk mendapatkan semua bidang dalam rentang yang ditentukan, lalu memfilter jenis bidang`FieldType.FieldPage` . Kemudian Anda dapat menggunakan`ForEach` metode untuk mengulang setiap bidang dan memanggil`Unlink()` metode untuk mengubahnya menjadi teks biasa.
+### Langkah 2: Identifikasi dan Konversi Bidang
+
+Identifikasi dan konversi bidang tertentu dalam badan dokumen. Misalnya, untuk mengonversi bidang PAGE menjadi teks:
 
 ```csharp
-// Berikan parameter yang sesuai untuk mengonversi bidang halaman menjadi teks biasa di isi bagian pertama.
-doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.Unlink());
+doc.FirstSection.Body.Range.Fields
+    .Where(f => f.Type == FieldType.FieldPage)
+    .ToList()
+    .ForEach(f => f.Unlink());
 ```
 
-## Langkah 4: Simpan dokumen yang dimodifikasi
+Cuplikan kode ini menggunakan LINQ untuk menemukan semua bidang PAGE di badan dokumen dan kemudian memutuskan tautannya, sehingga secara efektif mengubahnya menjadi teks statis.
 
-Setelah Anda mengonversi bidang halaman menjadi teks biasa, Anda dapat menyimpan dokumen yang dimodifikasi menggunakan`Save()` metode dan menentukan jalur dan nama file keluaran. Dalam contoh kami, kami menyimpannya sebagai "WorkingWithFields.ConvertFieldsInBody.docx".
+### Langkah 3: Simpan Dokumen
+
+Simpan dokumen yang diubah setelah mengonversi bidang:
 
 ```csharp
-// Simpan dokumen yang diubah
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
-### Contoh kode sumber untuk mengonversi bidang di badan dengan Aspose.Words untuk .NET
+ Menyesuaikan`"WorkingWithFields.ConvertFieldsInBody.docx"` untuk menentukan jalur file keluaran yang diinginkan.
 
-Berikut adalah contoh kode sumber lengkap untuk mengonversi kolom menjadi isi menggunakan Aspose.Words untuk .NET:
+## Kesimpulan
 
-```csharp
-// Jalur ke direktori dokumen Anda.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Menguasai seni memanipulasi bidang dokumen menggunakan Aspose.Words untuk .NET memberdayakan pengembang untuk mengotomatiskan alur kerja dokumen secara efisien. Baik mengonversi bidang menjadi teks biasa atau menangani jenis bidang yang lebih kompleks, Aspose.Words menyederhanakan tugas-tugas ini dengan API intuitif dan rangkaian fitur yang kuat, memastikan integrasi yang lancar ke dalam aplikasi .NET.
 
-// Muat dokumen
-Document doc = new Document(dataDir + "Linked fields.docx");
+## Pertanyaan yang Sering Diajukan (FAQ)
 
-// Berikan parameter yang sesuai untuk mengonversi bidang halaman menjadi teks biasa di isi bagian pertama.
-doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
-doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
-```
+### Apa bidang dokumen di Aspose.Words untuk .NET?
+Bidang dokumen di Aspose.Words adalah placeholder yang dapat menyimpan dan menampilkan data dinamis, seperti tanggal, nomor halaman, dan perhitungan.
 
-### FAQ
+### Bagaimana cara menangani berbagai jenis bidang di Aspose.Words untuk .NET?
+Aspose.Words mendukung berbagai jenis bidang seperti DATE, PAGE, MERGEFIELD, dan banyak lagi, memungkinkan pengembang untuk memanipulasinya secara terprogram.
 
-#### T: Apakah Aspose.Words kompatibel dengan versi Microsoft Word yang berbeda?
+### Bisakah Aspose.Words for .NET mengonversi bidang di berbagai format dokumen?
+Ya, Aspose.Words untuk .NET dapat mengonversi dan memanipulasi bidang dalam berbagai format seperti DOCX, DOC, RTF, dan lainnya dengan lancar.
 
-J: Ya, Aspose.Words kompatibel dengan berbagai versi Microsoft Word, termasuk Word 2003, Word 2007, Word 2010, Word 2013, Word 2016, dan Word 2019.
+### Di mana saya dapat menemukan dokumentasi komprehensif untuk Aspose.Words untuk .NET?
+ Dokumentasi terperinci dan referensi API tersedia.[Di Sini](https://reference.aspose.com/words/net/).
 
-#### T: Dapatkah Aspose.Words menangani struktur bidang yang kompleks?
-
-J: Tentu saja! Aspose.Words memberikan dukungan ekstensif untuk struktur bidang yang kompleks, termasuk bidang bertumpuk, perhitungan, dan ekspresi kondisional. Anda dapat memanfaatkan API yang kuat untuk bekerja dengan semua jenis struktur bidang.
-
-#### T: Apakah Aspose.Words mendukung operasi pembaruan lapangan?
-
-J: Ya, Aspose.Words memungkinkan Anda memperbarui bidang secara terprogram. Anda dapat dengan mudah memperbarui nilai bidang, menyegarkan perhitungan, dan melakukan operasi terkait bidang lainnya menggunakan API.
-
-#### T: Bisakah saya mengonversi kolom menjadi teks biasa menggunakan Aspose.Words?
-
-J: Tentu saja! Aspose.Words menyediakan metode untuk mengubah bidang menjadi teks biasa. Ini dapat berguna ketika Anda perlu mengekstraksi konten tanpa format atau fungsi terkait bidang apa pun.
-
-#### T: Apakah mungkin membuat dokumen Word dengan bidang dinamis menggunakan Aspose.Words?
-
-J: Tentu saja! Aspose.Words menawarkan fitur canggih untuk menghasilkan dokumen Word dengan bidang dinamis. Anda dapat membuat templat dengan bidang yang telah ditentukan sebelumnya dan mengisinya dengan data secara dinamis, memberikan solusi pembuatan dokumen yang fleksibel dan efisien.
+### Apakah ada versi uji coba yang tersedia untuk Aspose.Words untuk .NET?
+ Ya, Anda dapat mengunduh versi uji coba gratis dari[Di Sini](https://releases.aspose.com/).

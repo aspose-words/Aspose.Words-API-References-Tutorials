@@ -58,7 +58,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     Node originalEndNode = endNode;
 
     //แยกเนื้อหาตามโหนดระดับบล็อก (ย่อหน้าและตาราง) สำรวจผ่านโหนดหลักเพื่อค้นหา
-    // เราจะแยกเนื้อหาของโหนดแรกและโหนดสุดท้าย ขึ้นอยู่กับว่าโหนดตัวทำเครื่องหมายอยู่ในบรรทัดหรือไม่
+    // เราจะแยกเนื้อหาของโหนดแรกและโหนดสุดท้าย ขึ้นอยู่กับว่าโหนดตัวทำเครื่องหมายออนไลน์อยู่หรือไม่
     startNode = getAncestorInBody(startNode);
     endNode = getAncestorInBody(endNode);
     boolean isExtracting = true;
@@ -68,7 +68,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
 
     // เริ่มการแยกเนื้อหา ประมวลผลโหนดระดับบล็อกทั้งหมดและแยกโหนดแรกโดยเฉพาะ
     // และโหนดสุดท้ายเมื่อจำเป็น ดังนั้นการจัดรูปแบบย่อหน้าจึงยังคงอยู่
-    // วิธีนี้ซับซ้อนกว่าเครื่องสกัดแบบปกติเล็กน้อยเนื่องจากเราจำเป็นต้องแยกตัวประกอบ
+    // วิธีนี้ซับซ้อนกว่าเครื่องสกัดทั่วไปเล็กน้อยเนื่องจากเราต้องการปัจจัย
     // ในการแตกไฟล์โดยใช้โหนดแบบอินไลน์ ฟิลด์ บุ๊กมาร์ก ฯลฯ เพื่อให้มีประโยชน์
     while (isExtracting) {
         // โคลนโหนดปัจจุบันและโหนดย่อยเพื่อรับสำเนา
@@ -76,7 +76,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
         boolean isEndingNode = currNode.equals(endNode);
         if (isStartingNode || isEndingNode) {
             // เราจำเป็นต้องประมวลผลเครื่องหมายแต่ละตัวแยกกัน ดังนั้นส่งต่อไปยังวิธีแยกกันแทน
-            // ควรประมวลผลจุดสิ้นสุดในตอนแรกเพื่อเก็บดัชนีโหนด
+            // ควรประมวลผลจุดสิ้นสุดในตอนแรกเพื่อรักษาดัชนีโหนด
             if (isEndingNode) {
                 // !isStartingNode: อย่าเพิ่มโหนดสองครั้งหากเครื่องหมายเป็นโหนดเดียวกัน
                 processMarker(cloneNode, nodes, originalEndNode, currNode, isInclusive,
@@ -105,7 +105,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
         }
     }
 
-    // เพื่อให้เข้ากันได้กับโหมดที่มีบุ๊กมาร์กแบบอินไลน์ ให้เพิ่มย่อหน้าถัดไป (ว่าง)
+    // เพื่อให้เข้ากันได้กับโหมดกับบุ๊กมาร์กออนไลน์ ให้เพิ่มย่อหน้าถัดไป (ว่าง)
     if (isInclusive && originalEndNode == endNode && !originalEndNode.isComposite())
         includeNextParagraph(endNode, nodes);
 

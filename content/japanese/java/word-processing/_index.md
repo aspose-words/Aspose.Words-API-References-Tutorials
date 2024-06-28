@@ -30,7 +30,7 @@ Aspose.Words for Java を使用する主な利点の一部を次に示します�
 
 Aspose.Words を使用して Java で Word ドキュメントを生成する方法を学びましょう。テキスト、画像、表を簡単に挿入できます。レポートと変換を自動化します。文書処理を簡素化します。
 ### [さまざまなドキュメント形式の処理](./handling-different-document-formats/)
-さまざまなドキュメント形式を処理する際に、Aspose.Words for Java の能力を最大限に活用します。テキスト編集や変換などを実践的な例で学びましょう。
+さまざまなドキュメント形式を処理する際に、Aspose.Words for Java の能力を最大限に活用します。テキストの編集や変換などを実践的な例で学びましょう。
 ### [HTML、RTF、TXT オプションを使用したドキュメントの読み込みの最適化](./optimizing-document-loading-options/)
 Aspose.Words for Java を使用してドキュメントの読み込みを最適化します。 HTML、RTF、TXT ファイルの速度と効率が向上します。今すぐユーザー エクスペリエンスを向上させましょう!
 ### [DOC、HTML、画像オプションを使用した効率的なドキュメント保存](./efficient-document-saving-options/)

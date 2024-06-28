@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Шаг 3. Настройте параметры рендеринга метафайла
 
- Чтобы включить или отключить масштабирование шрифта WMF до размера метафайла, нам необходимо настроить`MetafileRenderingOptions`объект. В этом примере мы отключаем масштабирование шрифта, установив параметр`ScaleWmfFontsToMetafileSize`собственность`false`.
+ Чтобы включить или отключить масштабирование шрифта WMF до размера метафайла, нам необходимо настроить`MetafileRenderingOptions` Объект Object. В этом примере мы отключаем масштабирование шрифта, установив параметр`ScaleWmfFontsToMetafileSize`собственность`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -55,7 +55,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = met
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-Вот и все ! Вы успешно включили или отключили масштабирование шрифта WMF до размера метафайла при преобразовании.
+Вот и все! Вы успешно включили или отключили масштабирование шрифта WMF до размера метафайла при преобразовании.
 
 PDF-документ с использованием Aspose.Words для .NET.
 
@@ -72,7 +72,7 @@ PDF-документ с использованием Aspose.Words для .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Если Aspose.Words не может правильно преобразовать некоторые записи метафайла в векторную графику
+	//Если Aspose.Words не может правильно преобразовать некоторые записи метафайла в векторную графику
 	// затем Aspose.Words преобразует этот метафайл в растровое изображение.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 
@@ -108,4 +108,4 @@ PDF-документ с использованием Aspose.Words для .NET.
 
 Уменьшение размера PDF-файла. Изменение размера шрифтов WMF до размера метафайла может уменьшить размер создаваемого PDF-документа за счет адаптации размера шрифта к потребностям метафайла.
 
-Повышенная производительность: адаптируя размер шрифтов WMF к размерам метафайла, рендеринг PDF-документа может стать более быстрым и эффективным.
+Повышенная производительность: адаптируя размер шрифтов WMF к размерам метафайла, рендеринг PDF-документа может стать быстрее и эффективнее.

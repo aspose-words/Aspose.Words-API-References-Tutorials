@@ -73,7 +73,7 @@ Der Vergleich von Dokumentversionen ist in vielen Szenarien eine wichtige Aufgab
 
 ### Wie genau erkennt Aspose.Words für Java Änderungen?
 
-Aspose.Words für Java erkennt Änderungen zwischen Dokumentversionen sehr genau. Es verwendet fortschrittliche Algorithmen, um Präzision zu gewährleisten.
+Aspose.Words für Java erkennt Änderungen zwischen Dokumentversionen äußerst genau. Es verwendet fortschrittliche Algorithmen, um Präzision zu gewährleisten.
 
 ### Kann ich die Art und Weise anpassen, wie Änderungen auf das Dokument angewendet werden?
 

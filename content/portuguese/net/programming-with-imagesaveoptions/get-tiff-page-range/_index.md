@@ -88,4 +88,4 @@ Este recurso é útil quando você deseja extrair apenas determinadas páginas d
 
 Aspose.Words for .NET oferece uma ampla gama de recursos avançados para manipulação e geração de documentos. Obter um intervalo de páginas TIFF é uma das muitas ferramentas poderosas que ele coloca à sua disposição.
 
-Sinta-se à vontade para integrar esta funcionalidade em seus projetos Aspose.Words for .NET para extrair e salvar intervalos específicos de páginas de seus documentos no formato TIFF.
+Sinta-se à vontade para integrar essa funcionalidade em seus projetos Aspose.Words for .NET para extrair e salvar intervalos específicos de páginas de seus documentos no formato TIFF.

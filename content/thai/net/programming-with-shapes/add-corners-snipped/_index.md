@@ -2,13 +2,13 @@
 title: เพิ่มมุมที่สนิป
 linktitle: เพิ่มมุมที่สนิป
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีเพิ่มรูปร่างที่มีมุมที่ตัดทอนลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีเพิ่มรูปร่างด้วยมุมที่ตัดทอนลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
 type: docs
 weight: 10
 url: /th/net/programming-with-shapes/add-corners-snipped/
 ---
 
- บทช่วยสอนนี้จะอธิบายวิธีเพิ่มรูปร่างที่มีมุมที่ตัดทอนลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET รูปร่างที่ตัดมุมสามารถปรับแต่งและแทรกได้โดยใช้`InsertShape` วิธี.
+ บทช่วยสอนนี้จะอธิบายวิธีเพิ่มรูปร่างที่มีมุมที่ตัดทอนลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET มุมที่ตัดเป็นรูป Snipped สามารถปรับแต่งและแทรกได้โดยใช้`InsertShape` วิธี.
 
 ## ข้อกำหนดเบื้องต้น
 หากต้องการติดตามบทช่วยสอนนี้ คุณจะต้องมีสิ่งต่อไปนี้:
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 3: แทรกรูปร่างที่ตัดมุม
- ใช้`InsertShape` วิธีการของ`DocumentBuilder` วัตถุเพื่อแทรกรูปร่างโดยหักมุม ระบุประเภทรูปร่าง (ในกรณีนี้`ShapeType.TopCornersSnipped`) และระบุขนาดรูปร่างที่ต้องการ
+ ใช้`InsertShape` วิธีการของ`DocumentBuilder` วัตถุเพื่อแทรกรูปร่างที่มีมุมที่ตัดออก ระบุประเภทรูปร่าง (ในกรณีนี้`ShapeType.TopCornersSnipped`) และระบุขนาดรูปร่างที่ต้องการ
 
 ```csharp
 builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 
 ```
 
-แค่นั้นแหละ! คุณได้เพิ่มรูปร่างที่ตัดมุมลงในเอกสาร Word ของคุณสำเร็จแล้วโดยใช้ Aspose.Words สำหรับ .NET
+แค่นั้นแหละ! คุณได้เพิ่มรูปร่างมุมที่ตัดทอนลงในเอกสาร Word ของคุณสำเร็จแล้วโดยใช้ Aspose.Words สำหรับ .NET

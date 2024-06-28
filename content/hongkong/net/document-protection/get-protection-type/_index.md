@@ -67,7 +67,7 @@ ProtectionType protectionType = doc.ProtectionType;
 
 #### Q：我可以使用 ProtectionType 屬性修改文件的保護類型嗎？
 
-答：不，該`ProtectionType`Aspose.Words for .NET 中的屬性是唯讀屬性。它允許您檢索文件的目前保護類型，但不提供修改保護類型的直接方法。若要修改保護類型，您需要使用其他可用的方法和屬性`Document`類，例如`Protect`或者`Unprotect`.
+答： 不，`ProtectionType`Aspose.Words for .NET 中的屬性是唯讀屬性。它允許您檢索文件的目前保護類型，但不提供修改保護類型的直接方法。若要修改保護類型，您需要使用其他可用的方法和屬性`Document`類，例如`Protect`或者`Unprotect`.
 
 #### Q：是否可以同時使用多種保護類型來保護一個文件？
 

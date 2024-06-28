@@ -101,7 +101,7 @@ public void createAndAddParagraphNode() throws Exception
 ```
 
 ## 8. Conclusão
-Neste tutorial, cobrimos aspectos essenciais do trabalho com nós no Aspose.Words for Java. Você aprendeu como obter nós pai, entender os documentos do proprietário, enumerar nós filho, recorrer a todos os nós e criar e adicionar nós de parágrafo. Essas habilidades são inestimáveis para tarefas de processamento de documentos.
+Neste tutorial, cobrimos aspectos essenciais do trabalho com nós no Aspose.Words for Java. Você aprendeu como obter nós pais, entender os documentos do proprietário, enumerar nós filhos, recorrer a todos os nós e criar e adicionar nós de parágrafo. Essas habilidades são inestimáveis para tarefas de processamento de documentos.
 
 ## 9. Perguntas frequentes (FAQ)
 
@@ -112,10 +112,10 @@ Aspose.Words for Java é uma biblioteca Java que permite aos desenvolvedores cri
 Você pode baixar e instalar Aspose.Words for Java em[aqui](https://releases.aspose.com/words/java/).
 
 ### Q3. Existe um teste gratuito disponível?
- Sim, você pode obter uma avaliação gratuita do Aspose.Words for Java[aqui](https://releases.aspose.com/).
+ Sim, você pode obter uma avaliação gratuita do Aspose.Words for Java.[aqui](https://releases.aspose.com/).
 
 ### Q4. Onde posso obter uma licença temporária?
- Você pode obter uma licença temporária para Aspose.Words for Java[aqui](https://purchase.aspose.com/temporary-license/).
+ Você pode obter uma licença temporária para Aspose.Words for Java.[aqui](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. Onde posso encontrar suporte para Aspose.Words for Java?
  Para suporte e discussões, visite o[Fórum Aspose.Words para Java](https://forum.aspose.com/).

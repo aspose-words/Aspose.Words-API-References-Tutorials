@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 3: สร้างตาราง
- ใช้`StartTable`, `EndTable`, `InsertCell` , และ`Write` วิธีการของ`DocumentBuilder` วัตถุเพื่อสร้างตาราง ตั้งค่ากฎความสูงและความสูงของแถวที่ต้องการโดยใช้`RowFormat` คุณสมบัติ.
+ ใช้`StartTable`, `EndTable`, `InsertCell` , และ`Write` วิธีการของ`DocumentBuilder`วัตถุเพื่อสร้างตาราง ตั้งค่ากฎความสูงและความสูงของแถวที่ต้องการโดยใช้`RowFormat` คุณสมบัติ.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## ขั้นตอนที่ 6: แทรกรูปร่างลงในเอกสาร
-แทรกรูปร่างลายน้ำลงในเอกสารโดยใช้`InsertNode` วิธีการของ`DocumentBuilder` วัตถุ. วางตำแหน่งรูปร่างโดยใช้`MoveTo` วิธีการวางหลังจากการรันครั้งสุดท้ายในเอกสาร
+ แทรกรูปร่างลายน้ำลงในเอกสารโดยใช้`InsertNode` วิธีการของ`DocumentBuilder` วัตถุ วัตถุ วางตำแหน่งรูปร่างโดยใช้`MoveTo` วิธีการวางหลังจากการรันครั้งสุดท้ายในเอกสาร
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

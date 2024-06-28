@@ -39,7 +39,7 @@ public class DocumentJoiner {
 }
 ```
 
-确保您更换`"Aspose.Words.Java.lic"`与您的许可证文件的路径。
+确保更换`"Aspose.Words.Java.lic"`与您的许可证文件的路径。
 
 ## 第三步：加载文档
 
@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-这`ImportFormatMode.KEEP_SOURCE_FORMATTING`选项可确保保留源文档的格式。
+这`ImportFormatMode.KEEP_SOURCE_FORMATTING`该选项可确保保留源文档的格式。
 
 ## 第 5 步：保存结果
 

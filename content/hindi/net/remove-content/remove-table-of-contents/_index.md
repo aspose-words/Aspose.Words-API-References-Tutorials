@@ -2,216 +2,103 @@
 title: Word दस्तावेज़ में सामग्री तालिका हटाएँ
 linktitle: Word दस्तावेज़ में सामग्री तालिका हटाएँ
 second_title: Aspose.Words दस्तावेज़ प्रोसेसिंग एपीआई
-description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में सामग्री तालिका को हटाने का तरीका जानें।
+description: इस आसान-से ट्यूटोरियल के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में सामग्री तालिका (TOC) को हटाने का तरीका जानें।
 type: docs
 weight: 10
 url: /hi/net/remove-content/remove-table-of-contents/
 ---
-इस ट्यूटोरियल में, हम आपको बताएंगे कि .NET के लिए Aspose.Words लाइब्रेरी का उपयोग करके किसी Word दस्तावेज़ में सामग्री तालिका को कैसे हटाया जाए। सामग्री तालिका कभी-कभी निरर्थक या अनावश्यक हो सकती है, और यह कोड आपको इसे प्रभावी ढंग से हटाने में मदद करेगा। हम आपको अपने .NET प्रोजेक्ट में कोड को समझने और लागू करने में मदद करने के लिए चरण-दर-चरण मार्गदर्शिका प्रदान करेंगे।
+## .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में सामग्री तालिका निकालें
+
+क्या आप अपने Word दस्तावेज़ों में अवांछित सामग्री तालिका (TOC) से निपटने से थक गए हैं? हम सब वहाँ रहे हैं—कभी-कभी टीओसी आवश्यक नहीं होती है। आपके लिए सौभाग्य की बात है कि .NET के लिए Aspose.Words किसी TOC को प्रोग्रामेटिक रूप से हटाना आसान बनाता है। इस ट्यूटोरियल में, मैं आपको चरण-दर-चरण प्रक्रिया के माध्यम से मार्गदर्शन करूंगा, ताकि आप कुछ ही समय में इसमें महारत हासिल कर सकें। आइए सीधे गोता लगाएँ!
 
 ## आवश्यक शर्तें
-शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित चीज़ें हैं:
-- C# प्रोग्रामिंग भाषा का कार्यसाधक ज्ञान
-- आपके प्रोजेक्ट में .NET के लिए Aspose.Words लाइब्रेरी स्थापित है
-- एक Word दस्तावेज़ जिसमें सामग्री की एक तालिका है जिसे आप हटाना चाहते हैं
 
-## चरण 1: दस्तावेज़ निर्देशिका को परिभाषित करें
- सबसे पहले, आपको अपने Word दस्तावेज़ के स्थान पर निर्देशिका पथ सेट करना होगा। प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` उचित पथ के साथ कोड में।
+आरंभ करने से पहले, आइए सुनिश्चित करें कि आपके पास वह सब कुछ है जो आपको चाहिए:
+
+1.  .NET लाइब्रेरी के लिए Aspose.Words: यदि आपने पहले से नहीं किया है, तो .NET लाइब्रेरी के लिए Aspose.Words को डाउनलोड और इंस्टॉल करें।[Aspose.रिलीज़](https://releases.aspose.com/words/net/).
+2. विकास का माहौल: विजुअल स्टूडियो जैसा आईडीई कोडिंग को आसान बना देगा।
+3. .NET फ्रेमवर्क: सुनिश्चित करें कि आपके पास .NET फ्रेमवर्क स्थापित है।
+4. वर्ड दस्तावेज़: आपके पास टीओसी वाला एक वर्ड दस्तावेज़ (.docx) है जिसे आप हटाना चाहते हैं।
+
+## नामस्थान आयात करें
+
+सबसे पहली बात, आइए आवश्यक नामस्थान आयात करें। यह Aspose.Words का उपयोग करने के लिए वातावरण तैयार करता है।
 
 ```csharp
-// आपके दस्तावेज़ निर्देशिका का पथ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## चरण 2: दस्तावेज़ अपलोड करें
- इसके बाद, हम Word दस्तावेज़ को एक उदाहरण में लोड करेंगे`Document` क्लास का उपयोग कर रहा हूँ`Load` तरीका।
+अब, आइए किसी Word दस्तावेज़ से TOC को हटाने की प्रक्रिया को स्पष्ट, प्रबंधनीय चरणों में विभाजित करें।
+
+## चरण 1: अपनी दस्तावेज़ निर्देशिका सेट करें
+
+इससे पहले कि हम आपके दस्तावेज़ में हेरफेर कर सकें, हमें यह परिभाषित करना होगा कि वह कहाँ स्थित है। यह आपका दस्तावेज़ निर्देशिका पथ है.
 
 ```csharp
-// दस्तावेज़ लोड करें
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` आपके दस्तावेज़ फ़ोल्डर के पथ के साथ। यहीं पर आपकी वर्ड फ़ाइल रहती है।
+
+## चरण 2: दस्तावेज़ लोड करें
+
+इसके बाद, हमें Word दस्तावेज़ को अपने एप्लिकेशन में लोड करना होगा। Aspose.Words इसे अविश्वसनीय रूप से सरल बनाता है।
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## चरण 3: सामग्री तालिका हटाएँ
- सामग्री तालिका को हटाने के लिए, हम TOC (सामग्री तालिका) प्रकार के माध्यम से लूप करेंगे`FieldStart` दस्तावेज़ में नोड्स. हम इन नोड्स को संग्रहीत करेंगे ताकि हम उन तक तुरंत पहुंच सकें और हटाने के लिए नोड्स की एक सूची बना सकें।
+ प्रतिस्थापित करें`"your-document.docx"` आपकी फ़ाइल के नाम के साथ. कोड की यह पंक्ति आपके दस्तावेज़ को लोड करती है ताकि हम इस पर काम करना शुरू कर सकें।
+
+## चरण 3: टीओसी फ़ील्ड को पहचानें और हटाएँ
+
+यहां जादू पैदा होता है। हम टीओसी फ़ील्ड का पता लगाएंगे और उसे हटा देंगे।
 
 ```csharp
-// त्वरित पहुंच के लिए दस्तावेज़ में टीओसी फ़ील्ड के फ़ील्डस्टार्ट नोड्स को संग्रहीत करें।
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// यह निर्दिष्ट टीओसी के अंदर पाए गए नोड्स को संग्रहीत करने के लिए एक सूची है। इस विधि के अंत में उन्हें हटा दिया जाएगा.
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+यहाँ क्या हो रहा है:
+- `doc.Range.Fields`: यह दस्तावेज़ के सभी फ़ील्ड तक पहुँचता है।
+- `.Where(f => f.Type == FieldType.FieldTOC)`: यह केवल उन फ़ील्ड्स को खोजने के लिए फ़िल्टर करता है जो टीओसी हैं।
+- `.ToList().ForEach(f => f.Remove())`: यह फ़िल्टर किए गए फ़ील्ड को एक सूची में परिवर्तित करता है और प्रत्येक को हटा देता है।
 
-// जांचें कि क्या निर्दिष्ट टीओसी सूचकांक मौजूद है।
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## चरण 4: संशोधित दस्तावेज़ सहेजें
 
-bool isRemoving = true;
+अंततः, हमें अपने परिवर्तनों को सहेजने की आवश्यकता है। मूल फ़ाइल को सुरक्षित रखने के लिए आप दस्तावेज़ को एक नए नाम से सहेज सकते हैं।
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // इन नोड्स को संग्रहीत करना और अंत में उन सभी को हटा देना अधिक सुरक्षित है।
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // जब हमें फ़ील्डTOC प्रकार का फ़ील्डएंड नोड मिलता है,
-     //हम जानते हैं कि हम वर्तमान टीओसी के अंत पर हैं और हम यहीं रुकते हैं।
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### .NET के लिए Aspose.Words का उपयोग करके सामग्री तालिका हटाने के लिए नमूना स्रोत कोड 
-```csharp
-
-// आपकी दस्तावेज़ निर्देशिका का पथ
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// दस्तावेज़ लोड करें
-Document doc = new Document(dataDir + "your-document.docx");
-
-// त्वरित पहुंच के लिए दस्तावेज़ में टीओसी फ़ील्ड के फ़ील्डस्टार्ट नोड्स को संग्रहीत करें।
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// यह निर्दिष्ट टीओसी के अंदर पाए गए नोड्स को संग्रहीत करने के लिए एक सूची है। इस विधि के अंत में उन्हें हटा दिया जाएगा.
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// सुनिश्चित करें कि पारित सूचकांक द्वारा निर्दिष्ट टीओसी मौजूद है।
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// इन नोड्स को संग्रहीत करना और बाद में उन सभी को एक साथ हटा देना अधिक सुरक्षित है।
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// एक बार जब हमें फ़ील्डTOC प्रकार का फ़ील्डएंड नोड मिलता है,
-	// हम जानते हैं कि हम वर्तमान टीओसी के अंत पर हैं और यहीं रुकते हैं।
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ यह लाइन आपके दस्तावेज़ को किए गए परिवर्तनों के साथ सहेजती है। प्रतिस्थापित करें`"modified-document.docx"` आपके इच्छित फ़ाइल नाम के साथ।
 
 ## निष्कर्ष
-इस ट्यूटोरियल में, हमने .NET के लिए Aspose.Words लाइब्रेरी का उपयोग करके किसी Word दस्तावेज़ से सामग्री तालिका को हटाने के लिए चरण-दर-चरण मार्गदर्शिका प्रस्तुत की है। दिए गए कोड और निर्देशों का पालन करके, आप सामग्री तालिका को आसानी से हटा सकते हैं और अपने दस्तावेज़ के लेआउट में सुधार कर सकते हैं। अपनी विशिष्ट आवश्यकताओं के अनुरूप निर्देशिका पथ और फ़ाइल नामों को अनुकूलित करना याद रखें।
 
-### अक्सर पूछे जाने वाले प्रश्न
+आखिर तुमने इसे हासिल कर ही लिया है! एक बार जब आप इसे इन सरल चरणों में तोड़ देते हैं तो .NET के लिए Aspose.Words का उपयोग करके किसी Word दस्तावेज़ से TOC को हटाना आसान हो जाता है। यह शक्तिशाली लाइब्रेरी न केवल टीओसी को हटाने में मदद करती है बल्कि असंख्य अन्य दस्तावेज़ हेरफेरों को भी संभाल सकती है। तो, आगे बढ़ें और इसे आज़माएँ!
 
-#### प्रश्न: मुझे Word दस्तावेज़ में सामग्री तालिका को हटाने के लिए Aspose.Words का उपयोग क्यों करना चाहिए?
+## पूछे जाने वाले प्रश्न
 
-उत्तर: Aspose.Words .NET अनुप्रयोगों में Word दस्तावेज़ों में हेरफेर करने के लिए एक शक्तिशाली और बहुमुखी क्लास लाइब्रेरी है। Aspose.Words का उपयोग करके, आप अपने दस्तावेज़ों से सामग्री तालिका को प्रभावी ढंग से हटा सकते हैं, जो सामग्री तालिका अनावश्यक या अनावश्यक होने पर उपयोगी हो सकती है। यह आपको अपने दस्तावेज़ की सामग्री को अनुकूलित करने और उसकी समग्र प्रस्तुति में सुधार करने की अनुमति देता है।
+### 1. .NET के लिए Aspose.Words क्या है?
 
-#### प्रश्न: मैं .NET के लिए Aspose.Words में दस्तावेज़ कैसे अपलोड करूं?
+.NET के लिए Aspose.Words दस्तावेज़ हेरफेर के लिए एक मजबूत .NET लाइब्रेरी है, जो डेवलपर्स को Word दस्तावेज़ों को प्रोग्रामेटिक रूप से बनाने, संशोधित करने और परिवर्तित करने की अनुमति देता है।
 
-उ: किसी Word दस्तावेज़ में सामग्री तालिका को हटाने के लिए, आपको पहले Aspose.Words की Load() विधि का उपयोग करके दस्तावेज़ को मेमोरी में लोड करना होगा। किसी विशिष्ट निर्देशिका से दस्तावेज़ लोड करने के लिए नमूना कोड यहां दिया गया है:
+### 2. क्या मैं Aspose.Words का निःशुल्क उपयोग कर सकता हूँ?
 
-```csharp
-// आपके दस्तावेज़ निर्देशिका का पथ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ हाँ, आप Aspose.Words का उपयोग a के साथ कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/) या एक प्राप्त करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/).
 
-// दस्तावेज़ लोड करें
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. क्या Aspose.Words का उपयोग करके अन्य फ़ील्ड को हटाना संभव है?
 
- प्रतिस्थापित करें`"YOUR DOCUMENTS DIRECTORY"` आपके दस्तावेज़ के वास्तविक पथ के साथ।
+बिल्कुल! आप फ़िल्टर स्थिति में किसी भी फ़ील्ड का प्रकार निर्दिष्ट करके उसे हटा सकते हैं।
 
-#### प्रश्न: मैं Aspose.Words का उपयोग करके किसी दस्तावेज़ में सामग्री तालिका को कैसे हटाऊं?
+### 4. क्या मुझे Aspose.Words का उपयोग करने के लिए विजुअल स्टूडियो की आवश्यकता है?
 
- उ: टीओसी को हटाने के लिए, आपको इसके माध्यम से पुनरावृत्त करना होगा`FieldStart` दस्तावेज़ में TOC के नोड टाइप करें। आप त्वरित पहुंच के लिए इन नोड्स को संग्रहीत कर सकते हैं और हटाने के लिए नोड्स की एक सूची बना सकते हैं। यहाँ एक नमूना कोड है:
+जबकि विकास में आसानी के लिए विज़ुअल स्टूडियो की अत्यधिक अनुशंसा की जाती है, आप .NET का समर्थन करने वाले किसी भी IDE का उपयोग कर सकते हैं।
 
-```csharp
-// त्वरित पहुंच के लिए दस्तावेज़ में टीओसी फ़ील्ड के फ़ील्डस्टार्ट नोड्स को संग्रहीत करें।
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//यह निर्दिष्ट टीओसी के अंदर पाए जाने वाले नोड्स को संग्रहीत करने की एक सूची है। इस विधि के अंत में उन्हें हटा दिया जाएगा.
-List<Node> nodeList = new List<Node>();
+### 5. मुझे Aspose.Words पर अधिक जानकारी कहां मिल सकती है?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// जांचें कि सामग्री अनुक्रमणिका की निर्दिष्ट तालिका मौजूद है या नहीं।
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// इन नोड्स को संग्रहीत करना और अंत में उन सभी को हटा देना अधिक सुरक्षित है।
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// जब हमें फ़ील्डTOC प्रकार का फ़ील्डएंड नोड मिलता है,
-//हम जानते हैं कि हम वर्तमान टीओसी के अंत पर हैं और हम यहीं रुकते हैं।
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### प्रश्न: संपादित दस्तावेज़ को .NET के लिए Aspose.Words में कैसे सहेजें?
-
-उ: सामग्री तालिका को हटाने के बाद, आपको Save() विधि का उपयोग करके संशोधित दस्तावेज़ को सहेजना होगा। संपादित दस्तावेज़ के लिए वांछित आउटपुट फ़ाइल पथ और प्रारूप (उदाहरण के लिए, DOCX) निर्दिष्ट करें। यहाँ एक नमूना कोड है:
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ अधिक विस्तृत दस्तावेज़ीकरण के लिए, पर जाएँ[.NET API दस्तावेज़ीकरण के लिए Aspose.Words](https://reference.aspose.com/words/net/).

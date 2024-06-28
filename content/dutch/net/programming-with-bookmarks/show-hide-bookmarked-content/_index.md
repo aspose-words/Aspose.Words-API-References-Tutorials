@@ -2,176 +2,156 @@
 title: Toon inhoud met bladwijzer verbergen in Word-document
 linktitle: Toon inhoud met bladwijzer verbergen in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u bladwijzerinhoud in een Word-document kunt weergeven of verbergen met Aspose.Words voor .NET.
+description: Leer hoe u inhoud met bladwijzers dynamisch kunt weergeven of verbergen in Word-documenten met behulp van Aspose.Words voor .NET met deze uitgebreide stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-In dit artikel zullen we de bovenstaande C#-broncode verkennen om te begrijpen hoe u de functie Show Hide Bookmarked Content in de Aspose.Words voor .NET-bibliotheek kunt gebruiken. Met deze functie kunt u de inhoud van een bladwijzer in een Word-document weergeven of verbergen op basis van een specifieke voorwaarde bij het samenvoegen van gegevens.
+## Invoering
+
+Hallo daar! Heeft u ooit de zichtbaarheid van specifieke inhoud in een Word-document willen controleren op basis van bepaalde voorwaarden? Met Aspose.Words voor .NET kunt u inhoud met bladwijzers dynamisch weergeven of verbergen met slechts een paar regels code. In deze zelfstudie begeleid ik u stap voor stap door het proces, zodat u elk onderdeel van de code begrijpt. Tegen het einde zul je een professional zijn in het manipuleren van bladwijzers in Word-documenten. Laten we beginnen!
 
 ## Vereisten
 
-- Basiskennis van de C#-taal.
-- .NET-ontwikkelomgeving met Aspose.Words-bibliotheek geïnstalleerd.
+Voordat we ingaan op de tutorial, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-## Stap 1: De bladwijzer ophalen
+1. Basiskennis van C#: U moet vertrouwd zijn met de syntaxis en concepten van C#.
+2.  Aspose.Words voor .NET: Download het[hier](https://releases.aspose.com/words/net/) . Als u nog niet klaar bent om te kopen, kunt u beginnen met a[gratis proefperiode](https://releases.aspose.com/).
+3. Visual Studio: Elke recente versie zal werken, maar het gebruik van de nieuwste versie wordt aanbevolen.
+4. .NET Framework: zorg ervoor dat het op uw computer is geïnstalleerd.
 
- Wij gebruiken de`Bookmarks` eigenschap van het documentbereik om de specifieke bladwijzer te krijgen waarop we de inhoud willen tonen of verbergen:
+klaar om te beginnen? Geweldig! Laten we beginnen met het importeren van de benodigde naamruimten.
+
+## Naamruimten importeren
+
+Om Aspose.Words voor .NET te gebruiken, moeten we de vereiste naamruimten importeren. Deze stap zorgt ervoor dat we toegang hebben tot alle klassen en methoden die we gaan gebruiken.
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Stap 2: De samenvoegvelden invoegen
+Deze naamruimten zijn cruciaal voor het werken met Word-documenten en het manipuleren van de inhoud ervan.
 
- Wij maken gebruik van een documentbuilder`DocumentBuilder` om de benodigde samenvoegvelden in te voegen. Deze samenvoegvelden stellen een voorwaarde in om de bladwijzerinhoud weer te geven of te verbergen, afhankelijk van de waarde van de`showHide` variabele:
+## Stap 1: Het document instellen
+
+Laten we eerst een nieuw Word-document en een documentbouwer maken. Met de documentbouwer kunnen we eenvoudig inhoud binnen het document toevoegen en manipuleren.
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## Stap 3: Bladwijzerinhoud verplaatsen
+In deze stap initialiseren we een nieuw document en een documentbuilder. Dit bereidt onze omgeving voor op verdere activiteiten.
 
-We doorlopen de inhoud van de bladwijzer en verplaatsen deze zodat deze verschijnt
+## Stap 2: Inhoud met bladwijzer toevoegen
 
-isse vóór de bladwijzer. Hiermee regel je het tonen of verbergen van inhoud op basis van de opgegeven voorwaarde:
+Vervolgens voegen we wat inhoud toe aan het document en maken we er een bladwijzer omheen. Deze bladwijzer helpt ons de inhoud te identificeren en te manipuleren.
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ Hier voegen we wat tekst toe voor en na de inhoud met een bladwijzer. De`StartBookmark` En`EndBookmark` methoden definiëren de grenzen van de bladwijzer.
+
+## Stap 3: Een voorwaardelijk veld invoegen
+
+Om de zichtbaarheid van de inhoud met een bladwijzer te bepalen, gebruiken we een voorwaardelijk veld. Dit veld controleert een voorwaarde en geeft de inhoud dienovereenkomstig weer of verbergt deze.
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+In deze stap voegen we een IF-veld in dat de waarde van de bladwijzer controleert. Als de waarde "waar" is, wordt "Zichtbaar" weergegeven; anders wordt "Verborgen" weergegeven.
+
+## Stap 4: Knooppunten herschikken
+
+Vervolgens moeten we de knooppunten opnieuw rangschikken om ervoor te zorgen dat de voorwaardelijke logica correct wordt toegepast op de inhoud met een bladwijzer.
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## Stap 4: Verplaats de rest van de bladwijzerinhoud
-
-We verplaatsen de rest van de bladwijzerinhoud na de bladwijzer, waarbij we het eindknooppunt van de bladwijzer als invoegpunt gebruiken:
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## Stap 5: Het samenvoegen uitvoeren
+Hier verplaatsen we knooppunten om er zeker van te zijn dat de voorwaarde de inhoud met een bladwijzer op de juiste manier omvat.
 
- Wij gebruiken de`Execute` methode van het document`s `Mailmerge` object to execute the merge using the bookmark name and the value of the `showHide` variabele:
+## Stap 5: Afdruk samenvoegen uitvoeren
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### Voorbeeldbroncode voor Show Hide Bookmarked Content met Aspose.Words voor .NET
-
-Hier is het volledige voorbeeld van broncode om het tonen of verbergen van bladwijzerinhoud aan te tonen met Aspose.Words voor .NET:
+Ten slotte voeren we een samenvoegbewerking uit om de waarde van de bladwijzer in te stellen en te bepalen of de inhoud moet worden weergegeven of verborgen.
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MERGEFIELD-bladwijzer}" = "true" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+Met deze stap wordt de bladwijzerwaarde ingesteld op 'waar', waardoor de inhoud zichtbaar wordt op basis van onze voorwaarde.
+
+## Stap 6: Het document opslaan
+
+Na alle manipulaties is de laatste stap het opslaan van het gewijzigde document.
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+Hier slaan we het document op met een beschrijvende bestandsnaam om de wijzigingen aan te geven.
 
 ## Conclusie
 
-In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de functie Show Hide Bookmarked Content van Aspose.Words voor .NET kunt gebruiken. We hebben een stapsgewijze handleiding gevolgd om de inhoud van een bladwijzer weer te geven of te verbergen op basis van een specifieke voorwaarde bij het samenvoegen van gegevens.
+ En dat is het! U hebt met succes geleerd hoe u inhoud met een bladwijzer in een Word-document kunt weergeven of verbergen met Aspose.Words voor .NET. Deze tutorial behandelde het maken van een document, het toevoegen van bladwijzers, het invoegen van voorwaardelijke velden, het herschikken van knooppunten en het uitvoeren van een samenvoegbewerking. Aspose.Words biedt een overvloed aan functies, dus aarzel niet om de[API-documentatie](https://reference.aspose.com/words/net/) voor meer geavanceerde mogelijkheden.
 
-### Veelgestelde vragen over het weergeven en verbergen van bladwijzerinhoud in een Word-document
+## Veelgestelde vragen
 
-#### Vraag: Kan ik dezelfde voorwaarde gebruiken voor meerdere bladwijzers in hetzelfde document?
+### 1. Wat is Aspose.Words voor .NET?
 
-A: Ja, u kunt dezelfde voorwaarde gebruiken voor meerdere bladwijzers in hetzelfde document. Herhaal gewoon stap 2-5 voor elke bladwijzer, waarbij u de bladwijzernaam en optioneel de waarde van de bladwijzer aanpast`showhide` variabel als dat nodig is.
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en converteren. Het wordt veel gebruikt voor documentautomatiseringstaken.
 
-#### Vraag: Hoe kan ik meer voorwaarden toevoegen om bladwijzerinhoud weer te geven of te verbergen?
+### 2. Kan ik Aspose.Words voor .NET gratis gebruiken?
 
- A: Om meer voorwaarden toe te voegen, kunt u logische operatoren gebruiken, zoals`AND` En`OR` in de code voor het invoegen van de samenvoegvelden in stap 2. Bewerk de voorwaarde in de volgende code om aanvullende voorwaarden toe te voegen:
+ U kunt Aspose.Words voor .NET proberen met behulp van een[gratis proefperiode](https://releases.aspose.com/). Voor langdurig gebruik moet u een licentie aanschaffen.
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. Hoe wijzig ik andere eigenschappen van een bladwijzer?
 
-#### Vraag: Hoe kan ik een bladwijzer in een Word-document verwijderen met Aspose.Words voor .NET?
+ Met Aspose.Words kunt u verschillende eigenschappen van een bladwijzer manipuleren, zoals de tekst en locatie. Verwijs naar de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
 
- A: Om een bladwijzer in een Word-document te verwijderen met Aspose.Words voor .NET, kunt u de`Remove` methode uit de`Bookmarks` verzameling van het documentbereik. Hier is voorbeeldcode voor het verwijderen van een specifieke bladwijzer:
+### 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+ kunt ondersteuning krijgen door naar de[Aspose-ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
-#### Vraag: Is de Aspose.Words-bibliotheek gratis?
+### 5. Kan ik andere soorten inhoud manipuleren met Aspose.Words voor .NET?
 
- A: De Aspose.Words-bibliotheek is een commerciële bibliotheek en vereist een geldige licentie om in uw projecten te gebruiken. Je kunt controleren[Aspose.Words voor .NET API-referenties](https://reference.aspose.com/words/net/) voor meer informatie over licentieopties en prijzen.
-
-#### Vraag: Zijn er andere bibliotheken beschikbaar voor tekstverwerking met Word-documenten in .NET?
-
-A: Ja, er zijn andere bibliotheken beschikbaar voor woordenverwerking met Word-documenten in .NET, zoals Open XML SDK en GemBox.Document. U kunt deze bibliotheken verkennen als alternatief voor Aspose.Words op basis van uw specifieke behoeften en voorkeuren.
+Ja, Aspose.Words voor .NET ondersteunt verschillende soorten inhoudsmanipulatie, waaronder tekst, afbeeldingen, tabellen en meer.

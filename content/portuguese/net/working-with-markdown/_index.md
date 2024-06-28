@@ -14,15 +14,15 @@ Processamento de palavras com Markdown fornece um recurso abrangente para aprend
 | Título | Descrição |
 | --- | --- |
 | [Texto em negrito](./bold-text/) | Aprenda como colocar texto em negrito com o guia passo a passo do Aspose.Words for .NET. |
-| [Texto em itálico](./italic-text/) | Aprenda como colocar texto em itálico com o guia passo a passo do Aspose.Words for .NET. |
+| [Texto italiano](./italic-text/) | Aprenda como colocar texto em itálico com o guia passo a passo do Aspose.Words for .NET. |
 | [Tachado](./strikethrough/) | Aprenda como aplicar o estilo de texto tachado com o guia passo a passo Aspose.Words for .NET. |
 | [Código embutido](./inline-code/) | Aprenda como codificar em linha com o guia passo a passo do Aspose.Words for .NET. |
 | [Vinculação automática](./autolink/) | Aprenda como inserir link automático com Aspose.Words for .NET Guia passo a passo. |
 | [Link](./link/) | Aprenda como inserir links com Aspose.Words for .NET. Guia passo a passo. |
-| [Imagemm](./image/) | Aprenda como inserir e personalizar imagens com o guia passo a passo do Aspose.Words for .NET. |
-| [Regra Horizontal](./horizontal-rule/) | Aprenda como inserir uma regra horizontal com o guia passo a passo Aspose.Words for .NET. |
+| [Imagemm](./image/) | Aprenda como inserir e personalizar imagens com o guia passo a passo Aspose.Words for .NET. |
+| [Regra horizontal](./horizontal-rule/) | Aprenda como inserir uma regra horizontal com o guia passo a passo Aspose.Words for .NET. |
 | [Cabeçalho](./heading/) | Aprenda como usar o título com o guia passo a passo do Aspose.Words for .NET. |
-| [Título do texto](./setext-heading/) | Aprenda como usar títulos Setext para formatar seus documentos com o guia passo a passo Aspose.Words for .NET. |
+| [Título Setex](./setext-heading/) | Aprenda como usar títulos Setext para formatar seus documentos com o guia passo a passo Aspose.Words for .NET. |
 | [Código recuado](./indented-code/) | Aprenda como usar código recuado com o guia passo a passo Aspose.Words for .NET. |
 | [Código Cercado](./fenced-code/) | Aprenda como usar o recurso de código protegido com o guia passo a passo do Aspose.Words for .NET. |
 | [Citar](./quote/) | Aprenda como usar citações com o guia passo a passo do Aspose.Words for .NET. |

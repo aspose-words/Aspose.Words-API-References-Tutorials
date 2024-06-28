@@ -16,7 +16,7 @@ Las listas vienen en dos tipos principales: con viñetas y numeradas. Le permite
 
 ## Configurar el entorno
 
- Antes de sumergirnos en la creación y administración de listas, asegúrese de tener instalada la biblioteca Aspose.Words para Python. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/python/) . Además, consulte la documentación de la API en[este enlace](https://reference.aspose.com/words/python-net/) para obtener información detallada.
+Antes de sumergirnos en la creación y administración de listas, asegúrese de tener instalada la biblioteca Aspose.Words para Python. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/python/) . Además, consulte la documentación de la API en[este enlace](https://reference.aspose.com/words/python-net/) para obtener información detallada.
 
 ## Crear listas con viñetas
 

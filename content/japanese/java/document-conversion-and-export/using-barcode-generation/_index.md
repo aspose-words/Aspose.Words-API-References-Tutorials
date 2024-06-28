@@ -10,7 +10,7 @@ url: /ja/java/document-conversion-and-export/using-barcode-generation/
 
 ## Aspose.Words for Java でのバーコード生成の使用の概要
 
-ドキュメント処理と自動化の分野では、Aspose.Words for Java は多用途かつ強力なライブラリとして機能します。この記事では、Aspose.Words for Java を使用してバーコードを生成するプロセスについて説明します。バーコード生成を Java アプリケーションに組み込む方法を段階的に見ていきます。それでは、早速入っていきましょう！
+ドキュメント処理と自動化の分野では、Aspose.Words for Java は多用途かつ強力なライブラリとして機能します。この記事では、Aspose.Words for Java を使用してバーコードを生成するプロセスについて説明します。バーコード生成を Java アプリケーションに組み込む方法を段階的に見ていきます。それでは、早速入ってみましょう！
 
 ## 前提条件
 
@@ -30,7 +30,7 @@ import com.aspose.words.FieldOptions;
 
 ## ドキュメントオブジェクトの作成
 
-を初期化します`Document`バーコード フィールドを含む既存の Word 文書をロードして、オブジェクトを作成します。交換する`"Field sample - BARCODE.docx"`Word 文書へのパスを置き換えます。
+を初期化します`Document`バーコード フィールドを含む既存の Word 文書をロードしてオブジェクトを作成します。交換する`"Field sample - BARCODE.docx"`Word 文書へのパスを置き換えます。
 
 ```java
 Document doc = new Document("Field sample - BARCODE.docx");

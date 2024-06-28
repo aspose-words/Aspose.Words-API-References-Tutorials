@@ -46,7 +46,7 @@ clone.Save(dataDir + "CloneAndCombineDocuments.CloningDocument.docx");
 
 ## 结论
 
-在本教程中，我们探讨了如何使用 Aspose.Words for .NET 的克隆功能来克隆 Word 文档。通过加载现有文档并创建克隆，您可以创建文档的精确副本，而无需修改原始文档。当您需要对文档执行独立操作而不影响源文件时，此功能非常有用。 Aspose.Words for .NET 提供了一种简单的克隆文档的方法，可以轻松地以编程方式处理 Word 文档并有效地管理文档版本。
+在本教程中，我们探讨了如何使用 Aspose.Words for .NET 的克隆功能来克隆 Word 文档。通过加载现有文档并创建克隆，您可以创建文档的精确副本，而无需修改原始文档。当您需要对文档执行独立操作而不影响源文件时，此功能非常有用。 Aspose.Words for .NET 提供了一种直接克隆文档的方法，可以轻松地以编程方式处理 Word 文档并有效管理文档版本。
 
 ### 克隆 Word 文档的常见问题解答
 

@@ -93,7 +93,7 @@ I den här handledningen har vi utforskat hur man genererar en innehållsförtec
 
  Du kan ändra stilarna som är associerade med innehållsförteckningsnivåer med hjälp av`doc.getStyles().getByStyleIdentifier(StyleIdentifier.TOC_X)`, där X är TOC-nivån.
 
-### Hur kan jag lägga till fler nivåer i min innehållsförteckning?
+### Hur kan jag lägga till fler nivåer till min innehållsförteckning?
 
 För att inkludera fler nivåer i din innehållsförteckning kan du ändra innehållsförteckningsfältet och ange önskat antal nivåer.
 

@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passaggio 3: configurare le unità di misura
 
-Ora convertiremo i valori dei margini, delle distanze di intestazione e piè di pagina, ecc. in diverse unità di misura. Utilizzare il codice seguente per specificare i valori in unità di misura specifiche:
+Ora convertiremo i valori dei margini, delle distanze di intestazione e piè di pagina, ecc. in diverse unità di misura. Utilizzare il seguente codice per specificare i valori in unità di misura specifiche:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;

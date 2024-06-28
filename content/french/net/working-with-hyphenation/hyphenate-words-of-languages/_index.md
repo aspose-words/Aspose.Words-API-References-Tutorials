@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## Étape 2 : Enregistrer les dictionnaires de césure
 
-Enregistrez ensuite les dictionnaires de césure pour les différentes langues que vous souhaitez traiter. Dans cet exemple, nous enregistrons des dictionnaires pour l'anglais américain et le suisse allemand :
+Ensuite, enregistrez les dictionnaires de césure pour les différentes langues que vous souhaitez traiter. Dans cet exemple, nous enregistrons des dictionnaires pour l'anglais américain et le suisse allemand :
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
@@ -34,7 +34,7 @@ Assurez-vous que vous disposez des fichiers de dictionnaire appropriés dans vot
 
 ## Étape 3 : Traitement des mots par césure
 
- Vous pouvez désormais utiliser les fonctionnalités de césure pour traiter des mots dans différentes langues. Vous pouvez utiliser différentes méthodes de`Document` ou`DocumentBuilder` en fonction de vos besoins spécifiques.
+Vous pouvez désormais utiliser les fonctionnalités de césure pour traiter des mots dans différentes langues. Vous pouvez utiliser différentes méthodes de`Document` ou`DocumentBuilder` en fonction de vos besoins spécifiques.
 
 ```csharp
 // Exemple : Utilisation de la méthode Hyphenate de DocumentBuilder
@@ -71,11 +71,11 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Comment puis-je syllaber un mot dans une langue spécifique avec Aspose.Words ?
 
- R : Pour syllabiser un mot dans une langue spécifique avec Aspose.Words, vous pouvez utiliser le`Hyphenation` la classe et le`Hyphenate()` méthode. Créez une instance du`Hyphenation` classe spécifiant la langue souhaitée, puis appelez la`Hyphenate()`méthode passant le mot à syllaber comme argument. Cela vous donnera les syllabes du mot dans la langue spécifiée.
+ R : Pour syllabiser un mot dans une langue spécifique avec Aspose.Words, vous pouvez utiliser le`Hyphenation` la classe et le`Hyphenate()` méthode. Créez une instance du`Hyphenation` classe spécifiant la langue souhaitée, puis appelez la`Hyphenate()` méthode passant le mot à syllaber comme argument. Cela vous donnera les syllabes du mot dans la langue spécifiée.
 
 #### Q : Quels codes de langue dois-je utiliser pour spécifier la langue de syllabation dans Aspose.Words ?
 
-R : Pour spécifier la langue de syllabisation dans Aspose.Words, vous devez utiliser les codes de langue appropriés. Par exemple, vous pouvez utiliser « en » pour l'anglais, « fr » pour le français, « es » pour l'espagnol, « de » pour l'allemand, etc. Consultez la documentation Aspose.Words pour une liste complète des codes de langue pris en charge.
+: Pour spécifier la langue de syllabisation dans Aspose.Words, vous devez utiliser les codes de langue appropriés. Par exemple, vous pouvez utiliser « en » pour l'anglais, « fr » pour le français, « es » pour l'espagnol, « de » pour l'allemand, etc. Consultez la documentation Aspose.Words pour une liste complète des codes de langue pris en charge.
 
 #### Q : La syllabisation fonctionne-t-elle pour toutes les langues dans Aspose.Words ?
 

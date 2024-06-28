@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ステップ 2: ドキュメントと DocumentBuilder を作成する
 
-次に、新しいものを作成する必要があります。`Document`オブジェクトと`DocumentBuilder`ドキュメントを構築するためのオブジェクト。
+次に、新しいものを作成する必要があります`Document`オブジェクトと`DocumentBuilder`ドキュメントを構築するためのオブジェクト。
 
 ```csharp
 Document doc = new Document();

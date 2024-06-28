@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Schritt 3: Fügen Sie eine Form ein und konfigurieren Sie sie
-Fügen Sie mithilfe von eine Form in das Dokument ein`InsertShape` Methode der`DocumentBuilder` Objekt. Stellen Sie die gewünschten Abmessungen für die Form ein.
+ Fügen Sie mithilfe von eine Form in das Dokument ein`InsertShape` Methode der`DocumentBuilder` Objekt. Stellen Sie die gewünschten Abmessungen für die Form ein.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## Schritt 6: Speichern Sie das Dokument
- Speichern Sie das Dokument mit im angegebenen Verzeichnis`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithShapes.VerticalAnchor.docx“.
+ Speichern Sie das Dokument mit im angegebenen Verzeichnis`Save`Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithShapes.VerticalAnchor.docx“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

@@ -85,7 +85,7 @@ Nyní máte v dokumentu přizpůsobený obsah s upravenými zarážkami tabulát
 
 ## Závěr
 
-V tomto tutoriálu jsme prozkoumali, jak generovat obsah (TOC) pomocí Aspose.Words for Java, výkonné knihovny pro práci s dokumenty aplikace Word. Dobře strukturovaný obsah je nezbytný pro organizování a procházení dlouhých dokumentů a Aspose.Words poskytuje nástroje pro snadné vytváření a přizpůsobení obsahu.
+V tomto tutoriálu jsme prozkoumali, jak generovat obsah (TOC) pomocí Aspose.Words for Java, výkonné knihovny pro práci s dokumenty Wordu. Dobře strukturovaný obsah je nezbytný pro organizování a procházení dlouhých dokumentů a Aspose.Words poskytuje nástroje pro snadné vytváření a přizpůsobení obsahu.
 
 ## FAQ
 

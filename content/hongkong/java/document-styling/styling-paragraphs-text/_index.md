@@ -9,7 +9,7 @@ url: /zh-hant/java/document-styling/styling-paragraphs-text/
 ---
 ## 介紹
 
-當談到用 Java 以程式方式操作和格式化文件時，Aspose.Words for Java 是開發人員的首選。這個強大的 API 允許您輕鬆地在文件中建立、編輯段落和文字並設定樣式。在這份綜合指南中，我們將引導您完成使用 Aspose.Words for Java 設定段落和文字樣式的過程。無論您是經驗豐富的開發人員還是新手，這份包含原始碼的逐步指南都將為您提供掌握文件格式所需的知識和技能。讓我們深入了解一下吧！
+當談到用 Java 以程式方式操作和格式化文件時，Aspose.Words for Java 是開發人員的首選。這個強大的 API 允許您輕鬆地在文件中建立、編輯段落和文字並設定樣式。在這份綜合指南中，我們將引導您完成使用 Aspose.Words for Java 設定段落和文字樣式的過程。無論您是經驗豐富的開發人員還是新手，這份包含原始碼的逐步指南都將為您提供掌握文件格式所需的知識和技能。讓我們深入了解吧！
 
 ## 了解 Aspose.Words for Java
 
@@ -321,7 +321,7 @@ doc.save("HeaderFooterDocument.docx");
 //建立一個新文檔
 Document doc = new Document();
 
-//建立一個 3 行 3 列的表
+//建立一個 3 行 3 列的表。
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

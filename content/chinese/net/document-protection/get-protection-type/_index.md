@@ -67,7 +67,7 @@ ProtectionType protectionType = doc.ProtectionType;
 
 #### 问：我可以使用 ProtectionType 属性修改文档的保护类型吗？
 
-答：不，该`ProtectionType`Aspose.Words for .NET 中的属性是只读属性。它允许您检索文档的当前保护类型，但不提供修改保护类型的直接方法。要修改保护类型，您需要使用其他可用的方法和属性`Document`类，例如`Protect`或者`Unprotect`.
+答： 不，`ProtectionType`Aspose.Words for .NET 中的属性是只读属性。它允许您检索文档的当前保护类型，但不提供修改保护类型的直接方法。要修改保护类型，您需要使用其他可用的方法和属性`Document`类，例如`Protect`或者`Unprotect`.
 
 #### 问：是否可以同时使用多种保护类型保护一个文档？
 

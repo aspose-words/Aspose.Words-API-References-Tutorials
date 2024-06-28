@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 ---
 
-W tym samouczku krok po kroku pokażemy, jak załadować słownik dzielenia wyrazów dla określonego języka do Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+tym samouczku krok po kroku pokażemy, jak załadować słownik dzielenia wyrazów dla określonego języka do Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
 
  Aby rozpocząć, upewnij się, że masz zainstalowane i skonfigurowane Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -64,12 +64,12 @@ Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go t
 
 #### P: Gdzie mogę znaleźć pliki słowników sylabizacji dla różnych języków?
 
-O: Pliki słowników sylabizacji dla różnych języków można znaleźć w różnych zasobach internetowych. Pliki te są zazwyczaj w formacie XML lub TEX. Słowniki sylabizacji open source dla różnych języków można znaleźć na stronach internetowych poświęconych projektom lingwistycznym lub w repozytoriach kodu źródłowego.
+Odp.: Pliki słowników sylabizacji dla różnych języków można znaleźć w różnych zasobach internetowych. Pliki te są zazwyczaj w formacie XML lub TEX. Słowniki sylabizacji open source dla różnych języków można znaleźć na stronach poświęconych projektom lingwistycznym lub w repozytoriach kodu źródłowego.
 
 #### P: Jak mogę zastosować załadowany słownik sylabiczny do dokumentu w Aspose.Words?
 
- O: Aby zastosować załadowany słownik sylabizacji do dokumentu w Aspose.Words, musisz iterować po słowach w dokumencie i użyć`Hyphenate()` metoda`Hyphenation`class, aby uzyskać sylabizację słów. Następnie możesz sformatować sylabizowane słowa według potrzeb, na przykład dodając łączniki między sylabami.
+O: Aby zastosować załadowany słownik sylabizacji do dokumentu w Aspose.Words, musisz iterować po słowach w dokumencie i użyć`Hyphenate()` metoda`Hyphenation` class, aby uzyskać sylabizację słów. Następnie możesz sformatować sylabizowane słowa według potrzeb, na przykład dodając łączniki między sylabami.
 
 #### P: Jakie języki są obsługiwane przez sylabizację w Aspose.Words?
 
-O: Aspose.Words obsługuje sylabizację wielu języków, w tym angielskiego, francuskiego, hiszpańskiego, niemieckiego, włoskiego, holenderskiego, rosyjskiego, portugalskiego, szwedzkiego, norweskiego, duńskiego, fińskiego, polskiego, czeskiego i wielu innych. Sprawdź dokumentację Aspose.Words, aby uzyskać pełną listę obsługiwanych języków do sylabizacji.
+Odp.: Aspose.Words obsługuje sylabizację dla wielu języków, w tym angielskiego, francuskiego, hiszpańskiego, niemieckiego, włoskiego, holenderskiego, rosyjskiego, portugalskiego, szwedzkiego, norweskiego, duńskiego, fińskiego, polskiego, czeskiego i wielu innych. Sprawdź dokumentację Aspose.Words, aby uzyskać pełną listę obsługiwanych języków do sylabizacji.

@@ -91,7 +91,7 @@ Aqui está o código-fonte completo para o recurso Aplicar bordas e sombreamento
 
 ## Conclusão
 
-Neste tutorial, aprendemos como aplicar bordas e sombreamento a um parágrafo em um documento do Word usando Aspose.Words for .NET. Ao configurar o parágrafo`Borders` e`Shading` propriedades, pudemos definir o estilo da borda, a cor da linha e a cor de preenchimento do parágrafo. Aspose.Words for .NET fornece recursos de formatação poderosos para personalizar a aparência dos parágrafos e aprimorar a representação visual de seus documentos.
+ Neste tutorial, aprendemos como aplicar bordas e sombreamento a um parágrafo em um documento do Word usando Aspose.Words for .NET. Ao configurar o parágrafo`Borders` e`Shading` propriedades, pudemos definir o estilo da borda, a cor da linha e a cor de preenchimento do parágrafo. Aspose.Words for .NET fornece recursos de formatação poderosos para personalizar a aparência dos parágrafos e aprimorar a representação visual de seus documentos.
 
 ### Perguntas frequentes
 
@@ -100,13 +100,13 @@ Neste tutorial, aprendemos como aplicar bordas e sombreamento a um parágrafo em
 R: Para aplicar bordas e sombreamento a um parágrafo em um documento do Word usando Aspose.Words for .NET, siga estas etapas:
 1.  Crie um novo documento e um`DocumentBuilder` objeto.
 2.  Configure as bordas do parágrafo acessando o`Borders` propriedade do`ParagraphFormat` e definir o estilo de borda para cada lado.
-3.  Configure o preenchimento do parágrafo acessando o`Shading` propriedade do`ParagraphFormat` e especificando a textura e as cores de preenchimento.
+3. Configure o preenchimento do parágrafo acessando o`Shading` propriedade do`ParagraphFormat` e especificando a textura e as cores de preenchimento.
 4.  Adicione conteúdo ao parágrafo usando o`Write` método do`DocumentBuilder`.
 5.  Salve o documento usando o`Save` método.
 
 #### P: Como defino o estilo da borda para cada lado do parágrafo?
 
- R: Para definir o estilo da borda para cada lado do parágrafo, você pode acessar o`Borders` propriedade do`ParagraphFormat` e definir o`LineStyle` propriedade para cada`BorderType` (por exemplo,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Você pode especificar diferentes estilos de linha, como`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, etc.
+ R: Para definir o estilo da borda para cada lado do parágrafo, você pode acessar o`Borders` propriedade do`ParagraphFormat` e definir o`LineStyle` propriedade para cada`BorderType` (por exemplo.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Você pode especificar diferentes estilos de linha, como`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, etc.
 
 #### P: Como especifico a textura e as cores de preenchimento do sombreamento do parágrafo?
 

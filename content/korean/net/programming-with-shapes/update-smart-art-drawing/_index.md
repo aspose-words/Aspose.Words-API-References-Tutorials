@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2단계: 문서 로드
-다음을 사용하여 스마트 아트 드로잉이 포함된 Word 문서를 로드합니다.`Document` 클래스 생성자.
+ 다음을 사용하여 스마트 아트 드로잉이 포함된 Word 문서를 로드합니다.`Document` 클래스 생성자.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");

@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ### 經常問的問題
 
-#### Q：PDF 文件中的轉義 URI 是什麼？為什麼它很重要？
+#### Q：PDF 文件中的轉義 URI 是什麼？
 答：PDF文件中的轉義URI是指將URL中的特殊字元轉換為轉義序列以避免格式錯誤的方法。這很重要，因為 URL 中的特殊字元可能會破壞 URL 的結構並導致誤解或不正確的呈現。透過轉義特殊字符，我們保證 URL 被正確解釋並顯示在 PDF 文件中。
 
 #### Q：如何使用 Aspose.Words for .NET 轉義 PDF 文件中的 URI？

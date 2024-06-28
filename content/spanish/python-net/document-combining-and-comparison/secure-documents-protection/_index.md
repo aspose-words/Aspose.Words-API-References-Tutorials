@@ -10,7 +10,7 @@ url: /es/python-net/document-combining-and-comparison/secure-documents-protectio
 
 ## Introducción
 
-En esta era digital, las filtraciones de datos y el acceso no autorizado a información confidencial son preocupaciones comunes. Aspose.Words para Python ofrece una solución sólida para proteger documentos contra tales riesgos. Esta guía demostrará cómo utilizar Aspose.Words para implementar técnicas de protección avanzadas para sus documentos.
+En esta era digital, las violaciones de datos y el acceso no autorizado a información confidencial son preocupaciones comunes. Aspose.Words para Python ofrece una solución sólida para proteger documentos contra tales riesgos. Esta guía demostrará cómo utilizar Aspose.Words para implementar técnicas de protección avanzadas para sus documentos.
 
 ## Instalación de Aspose.Words para Python
 

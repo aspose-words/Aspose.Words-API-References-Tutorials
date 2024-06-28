@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 
 Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
 
-### Ukázkový zdrojový kód pro pozici plovoucí tabulky pomocí Aspose.Words pro .NET 
+### Ukázka zdrojového kódu pro pozici plovoucí tabulky pomocí Aspose.Words pro .NET 
 
 ```csharp
 	// Cesta k vašemu adresáři dokumentů

@@ -2,7 +2,7 @@
 title: Vložit pole Žádné
 linktitle: Vložit pole Žádné
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak se dostat na mistrovství AUCUN v dokumentech Word a Aspose.Words pour .NET.
+description: Naučte se vytvářet dokumenty pomocí AUCUN ve Wordu a Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-field-none/

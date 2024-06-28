@@ -50,7 +50,7 @@ if (textBox1.IsValidLinkTarget(textBox2))
 
 Tebrikler! Artık .NET için Aspose.Words kütüphanesini kullanarak bir Word belgesindeki iki metin kutusu arasında nasıl bağlantı oluşturulacağını öğrendiniz. Bu adım adım kılavuzu kullanarak belgeyi ayarlayabildiniz, metin kutusu şekillerini oluşturabildiniz, metin kutularına erişebildiniz, bağlantı hedefinin geçerliliğini kontrol edebildiniz ve son olarak bağlantının kendisini oluşturabildiniz.
 
-### Word'de bağlantı oluşturmak için SSS
+### Word'de bağlantı oluşturmaya ilişkin SSS
 
 #### S: Aspose.Words for .NET kullanarak Word'deki metin kutularını bağlamak için kullanılan kütüphane nedir?
 

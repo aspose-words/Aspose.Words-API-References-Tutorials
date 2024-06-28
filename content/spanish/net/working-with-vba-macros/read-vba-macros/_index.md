@@ -23,7 +23,7 @@ Antes de comenzar, asegúrese de tener los siguientes elementos:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Paso 2: cargue el documento y lea las macros de VBA
+## Paso 2: cargue el documento y lea las macros de VBA.
 A continuación, cargaremos el documento de Word y comprobaremos si contiene un proyecto VBA. Si el documento tiene un proyecto VBA, recorreremos todos los módulos del proyecto y mostraremos el código fuente de cada módulo.
 
 ```csharp

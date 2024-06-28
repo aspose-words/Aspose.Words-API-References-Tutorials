@@ -11,7 +11,7 @@ Hướng dẫn Aspose.Words for .NET về Xử lý văn bản có hình dạng c
 
 Thông qua các hướng dẫn này, bạn sẽ tìm hiểu cách thêm hình dạng vào tài liệu của mình, chẳng hạn như hình chữ nhật, hình tròn, đường thẳng và mũi tên, để cải thiện bố cục và trực quan hóa thông tin. Bạn cũng sẽ tìm hiểu cách thao tác các thuộc tính của hình dạng, chẳng hạn như xoay, trong suốt và tô màu, để phù hợp với nhu cầu cụ thể của bạn.
 
-Bằng cách sử dụng Aspose.Words cho .NET và làm theo các hướng dẫn này, bạn sẽ có thể thành thạo cách thao tác với các hình dạng trong tài liệu Word của mình, cho phép bạn tạo các tài liệu trông chuyên nghiệp và hấp dẫn trực quan. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, những hướng dẫn này sẽ hướng dẫn bạn qua quy trình và giúp bạn khám phá toàn bộ tiềm năng của thao tác hình dạng trong Aspose.Words for .NET.
+Bằng cách sử dụng Aspose.Words cho .NET và làm theo các hướng dẫn này, bạn sẽ có thể thành thạo cách thao tác với các hình dạng trong tài liệu Word của mình, cho phép bạn tạo các tài liệu trông chuyên nghiệp và hấp dẫn về mặt hình ảnh. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, những hướng dẫn này sẽ hướng dẫn bạn qua quy trình và giúp bạn khám phá toàn bộ tiềm năng của thao tác hình dạng trong Aspose.Words for .NET.
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |

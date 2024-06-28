@@ -116,7 +116,7 @@ doc.getFirstSection().getBody().appendChild(sdtComboBox);
 doc.save("ComboBoxDocument.docx");
 ```
 
-## Arbeiten mit Rich Text Content Control
+## Arbeiten mit der Rich-Text-Inhaltssteuerung
 
 Rich-Text-Inhaltssteuerelemente eignen sich perfekt zum Hinzufügen von formatiertem Text zu Ihren Dokumenten. Lassen Sie uns eines erstellen und seinen Inhalt festlegen.
 

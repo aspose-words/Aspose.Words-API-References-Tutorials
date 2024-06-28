@@ -56,7 +56,7 @@ CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.C
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-這`Compare`方法將文件 A 與文件 B 進行比較，並將變更儲存至文件 A。您可以指定作者姓名和比較日期以供參考。
+這`Compare`方法將文件 A 與文件 B 進行比較，並將變更儲存至文件 A。
 
 ## 結論
 

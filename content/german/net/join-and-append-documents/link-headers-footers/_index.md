@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Laden Sie die Quell- und Zieldokumente
 
- Als nächstes müssen Sie die Quell- und Zieldokumente mit Aspose.Words laden`Document` Klasse. Aktualisieren Sie die Dateinamen im`Document` Konstruktor entsprechend Ihren Dokumentnamen.
+Als nächstes müssen Sie die Quell- und Zieldokumente mit Aspose.Words laden.`Document` Klasse. Aktualisieren Sie die Dateinamen im`Document` Konstruktor entsprechend Ihren Dokumentnamen.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Schritt 4: Kopf- und Fußzeilen mit dem vorherigen Abschnitt verknüpfen
 
-Um die Kopf- und Fußzeilen des Quelldokuments mit dem vorherigen Abschnitt im Zieldokument zu verknüpfen, können Sie die verwenden`LinkToPrevious` Methode der`HeadersFooters` Sammlung. Im Vorbeigehen`true` Als Parameter überschreiben Sie alle vorhandenen Kopf- und Fußzeilen im Quelldokument.
+ Um die Kopf- und Fußzeilen des Quelldokuments mit dem vorherigen Abschnitt im Zieldokument zu verknüpfen, können Sie die verwenden`LinkToPrevious` Methode der`HeadersFooters` Sammlung. Im Vorbeigehen`true` Als Parameter überschreiben Sie alle vorhandenen Kopf- und Fußzeilen im Quelldokument.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

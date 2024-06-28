@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Zbuduj stół
- Użyj`StartTable`, `EndTable`, `InsertCell` , I`Write` metody`DocumentBuilder` obiekt do zbudowania stołu. Ustaw żądaną wysokość wiersza i regułę wysokości za pomocą`RowFormat` nieruchomości.
+ Użyj`StartTable`, `EndTable`, `InsertCell` , I`Write` metody`DocumentBuilder`obiekt do zbudowania stołu. Ustaw żądaną wysokość wiersza i regułę wysokości za pomocą`RowFormat` nieruchomości.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Krok 6: Wstaw kształt do dokumentu
-Wstaw kształt znaku wodnego do dokumentu za pomocą`InsertNode` metoda`DocumentBuilder` obiekt. Ustaw kształt za pomocą`MoveTo` metodę umieszczenia go po ostatnim uruchomieniu w dokumencie.
+ Wstaw kształt znaku wodnego do dokumentu za pomocą`InsertNode` metoda`DocumentBuilder` obiekt. Ustaw kształt za pomocą`MoveTo` metodę umieszczenia go po ostatnim uruchomieniu w dokumencie.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

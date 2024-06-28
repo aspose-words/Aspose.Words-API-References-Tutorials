@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## الخطوة 2: تعيين مجلد الخط الافتراضي
-ثم يمكنك تعيين مجلد الخط الافتراضي باستخدام`FontSettings.DefaultInstance` الطبقة و`SetFontsFolder()` طريقة. حدد المسار إلى مجلد الخطوط الذي تريد استخدامه كمجلد افتراضي.
+ ثم يمكنك تعيين مجلد الخط الافتراضي باستخدام`FontSettings.DefaultInstance` الطبقة و`SetFontsFolder()`طريقة. حدد المسار إلى مجلد الخطوط الذي تريد استخدامه كمجلد افتراضي.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

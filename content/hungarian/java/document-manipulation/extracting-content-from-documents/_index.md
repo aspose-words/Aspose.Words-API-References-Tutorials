@@ -216,7 +216,7 @@ System.out.println(table.getLastRow().getLastCell().getRange().getText());
 ## Képek kibontása fájlba
 
 ```java
-// Java kódminta képek fájlokba történő kibontásához
+// Java kódminta képek fájlba bontásához
 Document doc = new Document("Your Directory Path" + "Images.docx");
 NodeCollection shapes = doc.getChildNodes(NodeType.SHAPE, true);
 int imageIndex = 0;
@@ -238,7 +238,7 @@ Gratulálunk! Megtanulta, hogyan lehet tartalmat kivonni dokumentumokból az Asp
 
 ### Hogyan nyerhetek ki tartalmat bizonyos dokumentumrészekből?
 
-Ha tartalmat szeretne kivonni bizonyos dokumentumrészekből, azonosíthatja a szakaszok kezdő- és végpontját, és a megfelelő Aspose.Words for Java metódusokkal kinyerheti a tartalmat közöttük.
+Konkrét dokumentumrészekből tartalom kinyeréséhez azonosíthatja a szakaszok kezdő- és végpontját, és a megfelelő Aspose.Words for Java metódusokkal kinyerheti a tartalmat közöttük.
 
 ### Kivonhatok tartalmat a jelszóval védett dokumentumokból?
 

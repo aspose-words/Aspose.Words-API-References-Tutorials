@@ -38,7 +38,7 @@ AllowComments = true
 
 ## ステップ 3: 署名欄を挿入する
 
-DocumentBuilder オブジェクトの InsertSignatureLine() メソッドを使用して、文書に署名行を挿入します。
+DocumentBuilder オブジェクトの InsertSignatureLine() メソッドを使用して、文書に署名欄を挿入します。
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;

@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### P: Jak wyświetlić wersje w dymkach za pomocą Aspose.Words dla .NET?
 
- O: Skorzystaj z`ShowInBalloons` własność`RevisionOptions` obiekt, aby skonfigurować wyświetlanie wersji w dymkach. Możesz ustawić tę właściwość`ShowInBalloons.FormatAndDelete` aby wyświetlić wersje w dymkach z wersjami do usunięcia i formatowania.
+ O: Skorzystaj z`ShowInBalloons` własność`RevisionOptions` obiekt, aby skonfigurować wyświetlanie wersji w dymkach. Możesz ustawić tę właściwość`ShowInBalloons.FormatAndDelete` aby wyświetlić wersje w dymkach z wersjami usuwania i formatowania.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

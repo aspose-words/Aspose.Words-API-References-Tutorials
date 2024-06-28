@@ -81,7 +81,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo in ba
 
 #### D: Come posso definire lo stile delle note di chiusura in Aspose.Words?
 
- A: Per definire lo stile delle note di chiusura in Aspose.Words, puoi utilizzare il file`EndnoteOptions` classe e il`SeparatorNoteTextStyle` proprietà. Puoi specificare lo stile del carattere, la dimensione, il colore, ecc. per le note di chiusura utilizzando questa proprietà.
+A: Per definire lo stile delle note di chiusura in Aspose.Words, puoi utilizzare il file`EndnoteOptions` classe e il`SeparatorNoteTextStyle` proprietà. Puoi specificare lo stile del carattere, la dimensione, il colore, ecc. per le note di chiusura utilizzando questa proprietà.
 
 #### D: È possibile personalizzare la numerazione delle note di chiusura in un documento?
 
@@ -97,4 +97,4 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo in ba
 
 #### D: È possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento?
 
- R: Sì, è possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento. Usa il`RestartRule` proprietà del`EndnoteOptions` class e impostarlo su`RestartContinuous` per consentire la numerazione di continuare tra le sezioni.
+R: Sì, è possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento. Usa il`RestartRule` proprietà del`EndnoteOptions` class e impostarlo su`RestartContinuous` per consentire la numerazione di continuare tra le sezioni.

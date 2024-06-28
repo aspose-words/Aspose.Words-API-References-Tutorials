@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Stap 2: Laad de bron- en doeldocumenten
 
- Vervolgens moet u de bron- en doeldocumenten laden met behulp van Aspose.Words`Document` klas. Werk de bestandsnamen bij in het`Document` constructor volgens uw documentnamen.
+Vervolgens moet u de bron- en doeldocumenten laden met behulp van Aspose.Words.`Document` klas. Werk de bestandsnamen bij in het`Document` constructor volgens uw documentnamen.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Stap 4: Koppel kop- en voetteksten aan de vorige sectie
 
-Om de kop- en voetteksten van het brondocument te koppelen aan de vorige sectie in het doeldocument, kunt u de`LinkToPrevious` werkwijze van de`HeadersFooters` verzameling. Door te passeren`true` als parameter overschrijft u eventuele bestaande kop- of voetteksten in het brondocument.
+ Om de kop- en voetteksten van het brondocument te koppelen aan de vorige sectie in het doeldocument, kunt u de`LinkToPrevious` werkwijze van de`HeadersFooters` verzameling. Door te passeren`true` als parameter overschrijft u eventuele bestaande kop- of voetteksten in het brondocument.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

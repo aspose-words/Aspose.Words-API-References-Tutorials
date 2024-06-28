@@ -29,7 +29,7 @@ url: /ja/java/document-revision/document-version-control-history/
 バージョン管理を実装するには、Aspose.Words を使用して作業するドキュメントを読み込みます。開始するためのコード スニペットを次に示します。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("sample.docx");
 ```
 
@@ -86,7 +86,7 @@ Aspose.Words for Java を Web サイトからダウンロードし、ドキュ�
 
 ### Aspose.Words は大規模なドキュメント管理に適していますか?
 
-はい、Aspose.Words for Java は小規模および大規模の両方のドキュメント管理タスクに適しており、高いパフォーマンスと信頼性を提供します。
+はい。Aspose.Words for Java は、小規模および大規模の両方のドキュメント管理タスクに適しており、高いパフォーマンスと信頼性を提供します。
 
 ### Aspose.Words を他の Java ライブラリと統合できますか?
 

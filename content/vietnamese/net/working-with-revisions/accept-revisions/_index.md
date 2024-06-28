@@ -1,8 +1,8 @@
 ---
-title: Chấp nhận sửa đổi
-linktitle: Chấp nhận sửa đổi
+title: Chấp nhận đánh giá
+linktitle: Chấp nhận đánh giá
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chấp nhận bản sửa đổi đối với tài liệu Word bằng Aspose.Words cho .NET
+description: Tìm hiểu cách chấp nhận bản sửa đổi đối với tài liệu Word bằng Aspose.Words for .NET
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/accept-revisions/
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Đoạn sửa đổi xóa sẽ bị xóa khi chúng tôi chấp nhận thay đổi.
+// Đoạn sửa đổi đã xóa sẽ bị xóa sau khi chúng tôi chấp nhận thay đổi.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

@@ -17,7 +17,7 @@ Assurez-vous que vous disposez des conditions préalables suivantes :
 - Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de document où le document de sortie sera enregistré.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique
+## Étape 2 : Créez un nouveau document et insérez un graphique.
 
  Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
 
@@ -73,7 +73,7 @@ Ceci termine la mise en œuvre de la définition de l’alignement des étiquett
 
 Dans ce didacticiel, vous avez appris à définir l'alignement des étiquettes multilignes de graduation dans un axe de graphique à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez créer un nouveau document, insérer un nuage de points, accéder à l'axe du graphique et modifier l'alignement des étiquettes de graduation.
 
-Aspose.Words for .NET fournit des fonctionnalités puissantes pour manipuler des graphiques dans des documents Word. Les étiquettes multilignes cochées sont utiles lorsque les étiquettes d’axe contiennent du texte long qui nécessite un retour à la ligne ou une division sur plusieurs lignes. En définissant l'alignement des étiquettes de graduation, vous pouvez contrôler l'alignement horizontal des étiquettes multilignes dans l'axe du graphique, garantissant ainsi une présentation et une lisibilité optimales.
+Aspose.Words for .NET fournit des fonctionnalités puissantes pour manipuler des graphiques dans des documents Word. Les étiquettes multilignes à cocher sont utiles lorsque les étiquettes d'axe contiennent du texte long qui nécessite un retour à la ligne ou une division sur plusieurs lignes. En définissant l'alignement des étiquettes de graduation, vous pouvez contrôler l'alignement horizontal des étiquettes multilignes dans l'axe du graphique, garantissant ainsi une présentation et une lisibilité optimales.
 
 La personnalisation de l'alignement des étiquettes multilignes vous permet d'affiner l'apparence de votre graphique, en particulier lorsqu'il s'agit d'étiquettes longues ou complexes. En alignant les étiquettes à droite, à gauche, au centre ou justifiées, vous pouvez obtenir une disposition équilibrée et visuellement attrayante des étiquettes de graduation le long de l'axe.
 
@@ -82,7 +82,7 @@ Avec Aspose.Words pour .NET, vous pouvez facilement accéder et modifier la prop
 ### FAQ
 
 #### T1. Que sont les étiquettes multilignes dans un axe de graphique ?
-Cocher les étiquettes multilignes dans un axe de graphique fait référence aux étiquettes d'axe qui s'étendent sur plusieurs lignes lorsque le texte de l'étiquette est long ou nécessite un retour à la ligne pour tenir dans l'espace disponible. Au lieu de tronquer le texte de l'étiquette ou de provoquer un encombrement visuel, l'axe du graphique divise automatiquement les étiquettes en plusieurs lignes pour garantir la lisibilité. Les étiquettes multilignes à cocher sont particulièrement utiles lorsqu’il s’agit de longues étiquettes de catégorie ou de valeur dans les graphiques.
+Cocher les étiquettes multilignes dans un axe de graphique fait référence aux étiquettes d'axe qui s'étendent sur plusieurs lignes lorsque le texte de l'étiquette est long ou nécessite un retour à la ligne pour s'adapter à l'espace disponible. Au lieu de tronquer le texte de l'étiquette ou de provoquer un encombrement visuel, l'axe du graphique divise automatiquement les étiquettes en plusieurs lignes pour garantir la lisibilité. Les étiquettes multilignes à cocher sont particulièrement utiles lorsqu'il s'agit de longues étiquettes de catégorie ou de valeur dans les graphiques.
 
 #### Q2. Puis-je personnaliser l’alignement des étiquettes de graduation dans un axe de graphique ?
  Oui, vous pouvez personnaliser l'alignement des étiquettes de graduation dans un axe de graphique à l'aide d'Aspose.Words pour .NET. En accédant au`TickLabelAlignment` propriété du`ChartAxis` objet, vous pouvez définir l’alignement souhaité pour les étiquettes de graduation. Les options d'alignement incluent l'alignement à gauche, à droite, au centre ou justifié. L'ajustement de l'alignement vous permet de contrôler le positionnement horizontal des étiquettes de graduation le long de l'axe du graphique, garantissant ainsi une lisibilité et une présentation visuelle appropriées.

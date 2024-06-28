@@ -46,7 +46,7 @@ PclSaveOptions saveOptions = new PclSaveOptions
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
-ในตัวอย่างนี้ เราบันทึกเอกสารที่แปลงแล้วเป็น "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" โดยใช้ตัวเลือกการบันทึกที่ระบุ
+ในตัวอย่างนี้ เราบันทึกเอกสารที่แปลงแล้วเป็น "WorkingWithPclSaveOptions. RasterizeTransformedElements.pcl" โดยใช้ตัวเลือกการบันทึกที่ระบุ
 
 ### ตัวอย่างซอร์สโค้ดสำหรับฟีเจอร์ "Rasterize Transformed Elements" ด้วย Aspose.Words สำหรับ .NET
 

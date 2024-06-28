@@ -105,7 +105,7 @@ V: Ha az Aspose.Words for .NET segítségével tartományokból kinyeri ki a sz�
 
 #### K: Kivonhatom a szövegnek csak egy meghatározott részét egy tartományon belül az Aspose.Words for .NET használatával?
 
-V: Igen, az Aspose.Words for .NET használatával a szövegnek csak egy meghatározott részét bonthatja ki egy tartományon belül. Miután elérte a kívánt tartományt, módosíthatja a letöltött szöveget szabványos karakterlánc-manipulációs technikákkal, hogy kivonja egy adott részét, vagy egyéni szűrést alkalmazzon az igényeinek megfelelően.
+V: Igen, az Aspose.Words for .NET használatával a szövegnek csak egy meghatározott részét bonthatja ki egy tartományon belül. Miután elérte a kívánt tartományt, módosíthatja a visszakeresett szöveget szabványos karakterlánc-manipulációs technikákkal, hogy kivonja egy adott részét, vagy egyéni szűrést alkalmazzon az igényeinek megfelelően.
 
 #### K: Kivonhatok szöveget jelszóval védett vagy titkosított Word dokumentumokból az Aspose.Words for .NET használatával?
 

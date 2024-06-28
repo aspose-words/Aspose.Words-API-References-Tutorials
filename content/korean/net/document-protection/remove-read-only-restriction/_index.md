@@ -44,7 +44,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ### .NET용 Aspose.Words를 사용하여 읽기 전용 제한 제거에 대한 예제 소스 코드
 
-다음은 .NET용 Aspose.Words를 사용하여 읽기 전용 제한을 제거하기 위한 전체 소스 코드입니다:
+다음은 .NET용 Aspose.Words를 사용하여 읽기 전용 제한을 제거하기 위한 전체 소스 코드입니다.
 
 ```csharp
 // 문서 디렉터리의 경로입니다.
@@ -73,7 +73,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 #### Q: Aspose.Words for .NET의 읽기 전용 제한은 무엇입니까?
 
-답변: Aspose.Words for .NET의 읽기 전용 제한은 Word 문서를 읽기 전용으로 설정하여 사용자가 내용이나 서식을 수정하지 못하도록 하는 기능을 의미합니다. 이러한 제한은 문서의 무결성을 보호하고 문서가 실수로 또는 악의적으로 수정되지 않도록 보장합니다.
+답변: Aspose.Words for .NET의 읽기 전용 제한은 Word 문서를 읽기 전용으로 설정하여 사용자가 내용이나 서식을 수정할 수 없도록 하는 기능을 의미합니다. 이러한 제한은 문서의 무결성을 보호하고 문서가 실수로 또는 악의적으로 수정되지 않도록 보장합니다.
 
 #### Q: .NET용 Aspose.Words를 사용하여 읽기 전용 제한을 어떻게 제거할 수 있나요?
 

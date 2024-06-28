@@ -108,7 +108,7 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 
 #### 问：通过 Aspose.Words for .NET 在 Word 文档中使用嵌套字段有什么好处？
 
-答：在 Aspose.Words for .NET 的 Word 文档中使用嵌套字段具有多种优势。通过允许将变量值和计算插入到嵌套字段中，这使得创建动态文档模板具有更大的灵活性。嵌套字段还可以促进自动内容生成，例如生成内容表、页码等。
+答：在 Aspose.Words for .NET 的 Word 文档中使用嵌套字段具有多种优势。通过允许将变量值和计算插入嵌套字段，这使得创建动态文档模板具有更大的灵活性。嵌套字段还可以促进自动内容生成，例如生成内容表、页码等。
 
 #### 问：我可以使用 Aspose.Words for .NET 在 Word 文档中拥有多层嵌套字段吗？
 

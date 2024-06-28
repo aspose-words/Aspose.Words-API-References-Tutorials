@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-markdown/fenced-code/
 ---
 
-det här exemplet kommer vi att gå igenom hur du använder den inhägnade kodfunktionen med Aspose.Words för .NET. inhägnad kod används för att representera kodblock med specifik formatering.
+I det här exemplet kommer vi att gå igenom hur du använder den inhägnade kodfunktionen med Aspose.Words för .NET. inhägnad kod används för att representera kodblock med specifik formatering.
 
 ## Steg 1: Använda en dokumentgenerator
 

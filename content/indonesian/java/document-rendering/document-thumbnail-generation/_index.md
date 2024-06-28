@@ -60,13 +60,13 @@ stream.writeTo(outputStream);
 
 ## Kesimpulan
 
-Pembuatan gambar mini dokumen menggunakan Aspose.Words untuk Java menawarkan cara yang lancar untuk meningkatkan pengalaman pengguna aplikasi Anda dengan menyediakan pratinjau dokumen yang menarik secara visual. Hal ini dapat sangat bermanfaat dalam sistem manajemen dokumen, platform konten, dan situs web e-niaga.
+Pembuatan gambar mini dokumen menggunakan Aspose.Words untuk Java menawarkan cara yang lancar untuk meningkatkan pengalaman pengguna aplikasi Anda dengan menyediakan pratinjau dokumen yang menarik secara visual. Hal ini dapat sangat bermanfaat dalam sistem manajemen dokumen, platform konten, dan situs web e-commerce.
 
 ## FAQ
 
 ### Bagaimana cara menginstal Aspose.Words untuk Java?
 
- Untuk menginstal Aspose.Words untuk Java, kunjungi halaman download[Di Sini](https://releases.aspose.com/words/java/) dan ikuti petunjuk instalasi yang diberikan.
+ Untuk menginstal Aspose.Words untuk Java, kunjungi halaman download.[Di Sini](https://releases.aspose.com/words/java/) dan ikuti petunjuk instalasi yang diberikan.
 
 ### Bisakah saya menyesuaikan ukuran thumbnail yang dihasilkan?
 

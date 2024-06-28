@@ -30,7 +30,7 @@ Java でドキュメントを操作する場合、Aspose.Words は強力で多�
 //新しいドキュメントを作成する
 Document doc = new Document();
 
-// 3行4列のテーブルを作成する
+// 3行4列のテーブルを作成します。
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

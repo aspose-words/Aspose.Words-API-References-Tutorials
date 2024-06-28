@@ -20,7 +20,7 @@ En suivant ces tutoriels, vous serez en mesure de manipuler efficacement les sig
 | [Accéder aux signets dans un document Word](./access-bookmarks/) | Découvrez comment accéder aux signets dans un document Word à l'aide d'Aspose.Words pour .NET. |
 | [Mettre à jour les données des signets dans un document Word](./update-bookmark-data/) | Guide étape par étape pour expliquer le code source C# de la mise à jour des données des signets Aspose.Words dans la fonctionnalité de document Word pour .NET. |
 | [Colonnes de tableau de signets dans un document Word](./bookmark-table-columns/) | Découvrez comment ajouter une colonne de tableau à vos favoris dans un document Word à l'aide d'Aspose.Words pour .NET. |
-| [Copier le texte marqué dans un document Word](./copy-bookmarked-text/) | Découvrez comment copier le texte d'un signet d'un document Word vers un autre document à l'aide d'Aspose.Words pour .NET. |
+| [Copier le texte marqué dans un document Word](./copy-bookmarked-text/) | Découvrez comment copier le texte d'un signet d'un document Word vers un autre document à l'aide d'Aspose.Words for .NET. |
 | [Ajouter du texte marqué dans un document Word](./append-bookmarked-text/) | Découvrez comment ajouter du texte à partir d'un signet dans un document Word à l'aide d'Aspose.Words pour .NET. |
 | [Créer un signet dans un document Word](./create-bookmark/) | Découvrez comment créer des signets dans un document Word et spécifier les niveaux d'aperçu des signets dans un PDF à l'aide d'Aspose.Words pour .NET. |
 | [Afficher Masquer les signets dans un document Word](./show-hide-bookmarks/) | Découvrez comment afficher ou masquer un signet spécifique dans un document Word à l'aide d'Aspose.Words pour .NET. |

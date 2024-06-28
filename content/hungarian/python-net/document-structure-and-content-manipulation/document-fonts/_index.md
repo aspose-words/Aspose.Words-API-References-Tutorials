@@ -29,7 +29,7 @@ betűméretek határozzák meg a szöveg vizuális kiemelkedőségét. A címsor
 
 ### Betűstílusok
 
-A betűstílusok kiemelik a szöveget. A félkövér szöveg a fontosságot jelöli, míg a dőlt betűs szöveg gyakran definíciót vagy idegen kifejezést jelöl. Az aláhúzás a legfontosabb pontokat is kiemelheti.
+A betűstílusok kiemelik a szöveget. A félkövér szöveg a fontosságot, míg a dőlt betűs szöveg gyakran definíciót vagy idegen kifejezést jelöl. Az aláhúzás a legfontosabb pontokat is kiemelheti.
 
 ## Szöveg színe és kiemelése
 

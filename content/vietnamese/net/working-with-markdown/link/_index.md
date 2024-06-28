@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Bước 2: Chèn liên kết
 
- Chúng ta có thể chèn một liên kết bằng cách sử dụng`Insertlink` phương pháp của trình tạo tài liệu. Chúng ta cần chỉ định văn bản liên kết, ở đây là "Aspose", cũng như URL đích.
+ Chúng ta có thể chèn một liên kết bằng cách sử dụng`InsertHyperlink` phương pháp của trình tạo tài liệu. Chúng ta cần chỉ định văn bản liên kết, ở đây là "Apose", cũng như URL đích.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com", sai);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", sai);
 ```
 
 ### Mã nguồn ví dụ cho các liên kết với Aspose.Words cho .NET
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", sai);
 DocumentBuilder builder = new DocumentBuilder();
 
 // Chèn đường dẫn.
-builder.Insertlink("Aspose", "https://www.aspose.com", sai);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", sai);
 ```
 Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng liên kết với Aspose.Words cho .NET.
 

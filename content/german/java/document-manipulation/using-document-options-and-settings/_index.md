@@ -72,7 +72,7 @@ public void cleanupDuplicateStyle() throws Exception
 
 Doppelte Stile können zu Verwirrung und Inkonsistenz in Ihren Dokumenten führen. Mit Aspose.Words für Java können Sie doppelte Stile problemlos entfernen und so die Klarheit und Kohärenz des Dokuments bewahren.
 
-## Anpassen der Dokumentanzeigeoptionen
+## Anpassen der Anzeigeoptionen für Dokumente
 
 ```java
 @Test

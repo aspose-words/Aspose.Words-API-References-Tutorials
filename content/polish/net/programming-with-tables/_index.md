@@ -9,7 +9,7 @@ url: /pl/net/programming-with-tables/
 ---
 Samouczki Aspose.Words for .NET dotyczące przetwarzania słów za pomocą tabel poprowadzą Cię przez różne funkcje i techniki manipulowania tabelami w dokumentach programu Word. Dowiesz się, jak tworzyć, modyfikować i formatować tabele, a także jak dynamicznie dodawać komórki, wiersze i kolumny. Te samouczki zawierają szczegółowe instrukcje krok po kroku, przejrzyste przykłady kodu i wyjaśnienia, które pomogą Ci opanować manipulację tabelami w Aspose.Words dla .NET.
 
-Niezależnie od tego, czy chcesz dostosować układ tabeli, scalić komórki, dodać nagłówki kolumn, czy posortować dane w tabeli, samouczki pokażą Ci, jak efektywnie wykonać te zadania za pomocą Aspose.Words dla .NET. Dowiesz się także, jak wyodrębniać i aktualizować dane z tabeli, dodawać obramowania i stosować niestandardowe style do komórek. Samouczki pozwolą Ci dogłębnie zrozumieć manipulację tabelami, co pozwoli Ci tworzyć profesjonalne i dobrze zorganizowane dokumenty Word.
+Niezależnie od tego, czy chcesz dostosować układ tabeli, scalić komórki, dodać nagłówki kolumn czy posortować dane w tabeli, samouczki pokażą Ci, jak efektywnie wykonać te zadania za pomocą Aspose.Words dla .NET. Dowiesz się także, jak wyodrębniać i aktualizować dane z tabeli, dodawać obramowania i stosować niestandardowe style do komórek. Samouczki pozwolą Ci dogłębnie zrozumieć manipulację tabelami, co pozwoli Ci tworzyć profesjonalne i dobrze zorganizowane dokumenty Word.
 
 Postępując zgodnie z tymi samouczkami, będziesz mógł w pełni wykorzystać funkcje manipulacji tabelami Aspose.Words dla .NET. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, te samouczki dadzą ci solidne podstawy do tworzenia, formatowania i zarządzania tabelami w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Będziesz mógł udoskonalić swoje umiejętności programowania i zoptymalizować przepływ pracy pod kątem tworzenia profesjonalnych dokumentów o wysokiej jakości.
 
@@ -19,7 +19,7 @@ Postępując zgodnie z tymi samouczkami, będziesz mógł w pełni wykorzystać 
 | [Automatyczne dopasowanie tabeli do zawartości](./auto-fit-table-to-contents/) | Dowiedz się, jak automatycznie dopasować tabelę do jej zawartości w dokumencie programu Word przy użyciu Aspose.Words dla .NET. |
 | [Klonuj kompletny stół](./clone-complete-table/) | Dowiedz się, jak sklonować całą tabelę do dokumentu programu Word za pomocą Aspose.Words dla .NET. |
 | [Znalezienie indeksu](./finding-index/) | Dowiedz się, jak znaleźć indeksy tabel, wierszy i komórek w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Wstaw tabelę bezpośrednio](./insert-table-directly/) | Dowiedz się, jak wstawić tabelę bezpośrednio do dokumentu programu Word za pomocą Aspose.Words dla .NET. |
+| [Wstaw tabelę bezpośrednio](./insert-table-directly/) | Dowiedz się, jak wstawiać tabele bezpośrednio do dokumentów programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku, aby usprawnić tworzenie dokumentów. |
 | [Wstaw tabelę z HTML](./insert-table-from-html/) | Dowiedz się, jak wstawić tabelę z HTML do dokumentu programu Word za pomocą Aspose.Words dla .NET. |
 | [Utwórz prostą tabelę](./create-simple-table/) | Dowiedz się, jak utworzyć prostą tabelę w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
 | [Sformatowana tabela](./formatted-table/) | Dowiedz się, jak utworzyć sformatowaną tabelę w dokumencie programu Word za pomocą Aspose.Words dla .NET. |

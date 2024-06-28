@@ -17,7 +17,7 @@ Pastikan Anda memiliki prasyarat berikut:
 - Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
 - Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Langkah 2: Buat dokumen baru dan masukkan bagan.
 
  Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
 
@@ -94,7 +94,7 @@ Ini menyelesaikan implementasi pemformatan jumlah label data dalam bagan menggun
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 	// Atau Anda dapat mengatur kode format untuk ditautkan ke sel sumber,
-	//dalam hal ini NumberFormat akan diatur ulang ke umum dan diwarisi dari sel sumber.
+	//Dalam hal ini NumberFormat akan diatur ulang ke umum dan diwarisi dari sel sumber.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
@@ -115,13 +115,13 @@ Dengan menggunakan Aspose.Words untuk .NET, Anda dapat menggabungkan kemampuan p
 Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen kaya fitur yang memungkinkan pengembang membuat, memanipulasi, dan menyimpan dokumen Word secara terprogram dalam aplikasi .NET. Ini menyediakan berbagai fitur untuk Pemrosesan Kata dengan elemen dokumen, termasuk bagan dan label data.
 
 #### Q2. Bagaimana cara menginstal Aspose.Words untuk .NET?
-Anda dapat menginstal Aspose.Words untuk .NET dengan mengunduhnya menggunakan manajer paket NuGet di Visual Studio. Cukup cari "Aspose.Words" di manajer paket NuGet dan instal ke proyek Anda.
+Anda dapat menginstal Aspose.Words untuk .NET dengan mengunduhnya menggunakan manajer paket NuGet di Visual Studio. Cukup cari "Apose.Words" di manajer paket NuGet dan instal ke proyek Anda.
 
 #### Q3. Bisakah saya memformat aspek lain dari bagan menggunakan Aspose.Words untuk .NET?
 Ya, Aspose.Words untuk .NET menyediakan kemampuan luas untuk memformat berbagai aspek bagan. Selain label data, Anda dapat mengkustomisasi tipe bagan, data seri, properti sumbu, legenda, judul, area plot, dan banyak elemen bagan lainnya. API ini menawarkan kontrol menyeluruh atas tampilan dan pemformatan bagan.
 
 #### Q4. Bisakah saya menerapkan format angka berbeda ke label data berbeda dalam rangkaian yang sama?
-Ya, Aspose.Words untuk .NET memungkinkan Anda menerapkan format angka berbeda ke label data individual dalam rangkaian yang sama. Dengan mengakses`DataLabels` koleksi yang terkait dengan suatu seri, Anda dapat mengaturnya`FormatCode` properti setiap label data untuk menentukan format angka yang diinginkan. Hal ini memungkinkan Anda menyajikan nilai numerik dalam format berbeda dalam bagan yang sama.
+Ya, Aspose.Words untuk .NET memungkinkan Anda menerapkan format angka berbeda ke label data individual dalam rangkaian yang sama. Dengan mengakses`DataLabels` koleksi yang terkait dengan suatu seri, Anda dapat mengaturnya`FormatCode` properti setiap label data untuk menentukan format angka yang diinginkan. Ini memungkinkan Anda menyajikan nilai numerik dalam format berbeda dalam bagan yang sama.
 
 #### Q5. Bisakah saya menggunakan format angka khusus untuk label data?
  Ya, Aspose.Words untuk .NET mendukung format angka khusus untuk label data. Anda dapat menentukan format angka yang diinginkan dengan mengatur`FormatCode` properti label data ke kode format khusus. Ini memberi Anda fleksibilitas untuk menerapkan berbagai format angka, seperti simbol mata uang, format tanggal, nilai persentase, dan banyak lagi.

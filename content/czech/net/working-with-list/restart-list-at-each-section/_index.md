@@ -2,13 +2,13 @@
 title: Seznam restartů v každé sekci
 linktitle: Seznam restartů v každé sekci
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak obnovit číslovaný seznam pro každou sekci v dokumentu Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak obnovit číslovaný seznam pro každou sekci v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-list/restart-list-at-each-section/
 ---
 
-V tomto tutoriálu krok za krokem vám ukážeme, jak pomocí Aspose.Words for .NET resetovat číslovaný seznam pro každou sekci v dokumentu aplikace Word. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+tomto tutoriálu krok za krokem vám ukážeme, jak pomocí Aspose.Words for .NET resetovat číslovaný seznam pro každou sekci v dokumentu aplikace Word. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
 
  Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nakonfigurovaný ve svém vývojovém prostředí. Pokud jste tak ještě neučinili, stáhněte si a nainstalujte knihovnu z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -91,12 +91,12 @@ Neváhejte použít tento kód ve svých vlastních projektech a upravit jej tak
 
 #### Otázka: Jak mohu restartovat seznam v každé sekci v Aspose.Words?
 
- A: Chcete-li restartovat seznam v každé sekci v Aspose.Words, musíte vytvořit instanci souboru`List` třídy a přiřadit k ní číslovaný seznam. Poté můžete použít`List.IsRestartAtEachSection` vlastnost, která určuje, že číslování by mělo být restartováno v každé sekci. Tento seznam můžete přidružit k jednomu nebo více oddílům dokumentu, aby se číslování u každého oddílu správně restartovalo.
+ A: Chcete-li restartovat seznam v každé sekci v Aspose.Words, musíte vytvořit instanci souboru`List`třídy a přiřadit k ní číslovaný seznam. Poté můžete použít`List.IsRestartAtEachSection` vlastnost, která určuje, že číslování by mělo být restartováno v každé sekci. Tento seznam můžete přidružit k jednomu nebo více oddílům dokumentu, aby se číslování u každého oddílu správně restartovalo.
 
 #### Otázka: Mohu upravit formát číslování seznamů v Aspose.Words?
 
-Odpověď: Ano, můžete upravit formát číslování seznamů v Aspose.Words. The`List` třída k tomu nabízí několik vlastností, jako např`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, atd. Pomocí těchto vlastností můžete nastavit typ seznamu (číslovaný, s odrážkami atd.), formát číslování (arabské číslice, římské číslice, písmena atd.) a další možnosti formátování číslování.
+ Odpověď: Ano, můžete upravit formát číslování seznamů v Aspose.Words. The`List` třída k tomu nabízí několik vlastností, jako např`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, atd. Pomocí těchto vlastností můžete nastavit typ seznamu (číslovaný, s odrážkami atd.), formát číslování (arabské číslice, římské číslice, písmena atd.) a další možnosti formátování číslování.
 
 #### Otázka: Je možné přidat další úrovně do číslovaného seznamu v Aspose.Words?
 
- Odpověď: Ano, je možné přidat další úrovně do číslovaného seznamu v Aspose.Words. The`ListLevel` class umožňuje nastavit vlastnosti formátování pro každou úroveň seznamu. Můžete nastavit možnosti, jako je předpona, přípona, zarovnání, odsazení atd. To vám umožní vytvářet seznamy s více úrovněmi hierarchie.
+ Odpověď: Ano, je možné přidat další úrovně do číslovaného seznamu v Aspose.Words. The`ListLevel`class umožňuje nastavit vlastnosti formátování pro každou úroveň seznamu. Můžete nastavit možnosti, jako je předpona, přípona, zarovnání, odsazení atd. To vám umožní vytvářet seznamy s více úrovněmi hierarchie.

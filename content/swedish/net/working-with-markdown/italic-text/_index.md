@@ -1,6 +1,6 @@
 ---
-title: Kursiv text
-linktitle: Kursiv text
+title: Italiensk text
+linktitle: Italiensk text
 second_title: Aspose.Words Document Processing API
 description: Lär dig att kursiv text med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Gör texten kursiv.
+// Gör texten italiensk.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
@@ -46,7 +46,7 @@ Grattis! Du har nu lärt dig hur du använder kursiv text med Aspose.Words för 
 
 #### F: Hur kan jag kursivera text i Aspose.Words?
 
-S: För att kursivera text i Aspose.Words kan du använda`Font.Italic` egendom av`Run` objekt. Du kan ställa in den här egenskapen till`true` för att kursivera specifik text. Du kan till exempel använda`run.Font.Italic=true` för att kursivera texten i`Run` objekt.
+S: För att kursivera text i Aspose.Words kan du använda`Font.Italic` egendom av`Run`objekt. Du kan ställa in den här egenskapen till`true` för att kursivera specifik text. Du kan till exempel använda`run.Font.Italic=true` för att kursivera texten i`Run` objekt.
 
 #### F: Är det möjligt att kursivera flera stycken text i samma stycke?
 

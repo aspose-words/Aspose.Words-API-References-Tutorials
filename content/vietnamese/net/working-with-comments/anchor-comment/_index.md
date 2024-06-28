@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Tạo ba đối tượng Run.
-// Hai cái đầu tiên chạy một số văn bản, trong khi cái thứ ba chạy Bình luận
+//Hai cái đầu tiên chạy một số văn bản, trong khi cái thứ ba chạy Bình luận
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 
 #### Câu hỏi: Làm cách nào tôi có thể chỉnh sửa văn bản của nhận xét được liên kết với neo nhận xét trong Aspose.Words cho .NET?
 
- Trả lời: Để sửa đổi văn bản của một nhận xét được liên kết với một neo nhận xét trong Aspose.Words cho .NET, bạn có thể truy cập vào`Comment.Text` thuộc tính tương ứng`Comment` đối tượng và sửa đổi văn bản nếu cần.
+Trả lời: Để sửa đổi văn bản của một nhận xét được liên kết với một neo nhận xét trong Aspose.Words cho .NET, bạn có thể truy cập vào`Comment.Text` thuộc tính tương ứng`Comment` đối tượng và sửa đổi văn bản nếu cần.
 

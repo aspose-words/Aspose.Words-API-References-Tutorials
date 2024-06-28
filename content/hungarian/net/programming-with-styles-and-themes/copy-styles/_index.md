@@ -72,13 +72,13 @@ Nyugodtan fedezze fel az Aspose.Words for .NET szolgáltatásait a stíluskezel�
 
 #### Hogyan másolhatok stílusokat egyik dokumentumból a másikba az Aspose.Words for .NET használatával?
 
-A stílusok forrásdokumentumból a céldokumentumba másolásához kövesse az alábbi lépéseket:
+stílusok forrásdokumentumból a céldokumentumba másolásához kövesse az alábbi lépéseket:
 1.  Hozzon létre kettőt`Document` objektumok, amelyek a forrásdokumentumot és a céldokumentumot képviselik.
 2.  Használja a`CopyStylesFromTemplate` metódus a céldokumentumban, argumentumként a forrásdokumentumot adva át.
 
 #### Milyen előnyökkel jár a stílusok dokumentumok közötti másolása?
 
-stílusok dokumentumok közötti másolása lehetővé teszi több dokumentum stíluskonzisztenciájának megőrzését. Biztosítja, hogy a dokumentumok azonos formázással és megjelenéssel rendelkezzenek, vizuálisan összefüggővé és professzionálissá téve őket. Időt és erőfeszítést takarít meg, mivel nincs szükség a stílusok manuális újbóli létrehozására az egyes dokumentumokban.
+A stílusok dokumentumok közötti másolása lehetővé teszi több dokumentum stíluskonzisztenciájának megőrzését. Biztosítja, hogy a dokumentumok azonos formázással és megjelenéssel rendelkezzenek, vizuálisan összefüggővé és professzionálissá téve őket. Időt és erőfeszítést takarít meg, mivel nincs szükség a stílusok manuális újbóli létrehozására az egyes dokumentumokban.
 
 #### Testreszabhatom a másolt stílusokat a másolás után?
 

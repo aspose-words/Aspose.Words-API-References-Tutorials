@@ -71,7 +71,7 @@ shape.setShadowEnabled(true);
 
 ## Konumlandırma ve Boyutlandırma
 
-Şekillerin hassas konumlandırılması ve boyutlandırılması belgenin düzeni açısından çok önemlidir. Aspose.Words for Java şu özellikleri ayarlamak için yöntemler sunar:
+Şekillerin hassas konumlandırılması ve boyutlandırılması belgenin düzeni açısından çok önemlidir. Aspose.Words for Java şu özellikleri ayarlamak için yöntemler sağlar:
 
 ```java
 shape.setLeft(100);
@@ -165,4 +165,4 @@ shape.setFillColor(Color.GREEN);
 
 ### Şekilleri belirli bir sıraya göre nasıl düzenleyebilirim?
 
- Z-düzeni özelliğini kullanarak şekillerin sırasını kontrol edebilirsiniz. Yı kur`ZOrder` Bir şeklin, şekil yığınındaki konumunu belirleyen özelliği. Düşük değerler arkaya, yüksek değerler ise öne gönderilir.
+ Z-düzeni özelliğini kullanarak şekillerin sırasını kontrol edebilirsiniz. Yı kur`ZOrder` Bir şeklin, şekil yığınındaki konumunu belirleyen özelliği. Düşük değerler arkaya gönderilirken, yüksek değerler öne getirilir.

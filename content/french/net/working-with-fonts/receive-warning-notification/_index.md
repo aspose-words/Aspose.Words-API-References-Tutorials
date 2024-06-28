@@ -2,88 +2,116 @@
 title: Recevoir une notification d'avertissement
 linktitle: Recevoir une notification d'avertissement
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment recevoir une notification d'avertissement lors de l'utilisation d'Aspose.Words pour .NET et gérer tout problème ou avertissement dans vos documents.
+description: Découvrez comment recevoir des notifications de substitution de polices dans Aspose.Words for .NET avec notre guide détaillé. Assurez-vous que vos documents s'affichent correctement à chaque fois.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/receive-warning-notification/
 ---
 
-Dans ce didacticiel, nous allons vous montrer comment recevoir une notification d'avertissement lors de l'utilisation d'Aspose.Words pour .NET. Des avertissements peuvent être émis lors de la configuration ou de l'enregistrement d'un document. Nous vous guiderons étape par étape pour comprendre et implémenter le code dans votre projet .NET.
+Êtes-vous fatigué de devoir faire face à des problèmes de police inattendus dans vos documents ? Avec Aspose.Words pour .NET, vous pouvez être informé de tout problème potentiel lors du traitement des documents, ce qui facilite le maintien de la qualité des documents. Ce guide complet vous guidera dans la configuration des notifications d'avertissement dans Aspose.Words, garantissant que vous ne manquerez plus jamais un avertissement crucial.
 
 ## Conditions préalables
-Avant de commencer, assurez-vous de disposer des éléments suivants :
-- Une connaissance pratique du langage de programmation C#
-- La bibliothèque Aspose.Words pour .NET installée dans votre projet
+
+Avant de plonger, assurez-vous d'avoir les éléments suivants :
+
+- Connaissance de base de C# : La familiarité avec C# vous aidera à comprendre et à mettre en œuvre les étapes.
+-  Aspose.Words for .NET Library : téléchargez-le et installez-le à partir du[lien de téléchargement](https://releases.aspose.com/words/net/).
+- Environnement de développement : une configuration comme Visual Studio pour écrire et exécuter votre code.
+-  Exemple de document : ayez un exemple de document (par exemple,`Rendering.docx`) travailler avec.
+
+## Importer des espaces de noms
+
+Pour commencer, vous devez importer les espaces de noms nécessaires. Ceux-ci donneront accès aux classes et méthodes nécessaires à notre tâche.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.WarningInfo;
+```
 
 ## Étape 1 : Définir le répertoire des documents
- Commencez par définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
+
+Tout d'abord, spécifiez le répertoire dans lequel votre document est stocké. Ceci est indispensable pour localiser le document que vous souhaitez traiter.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Étape 2 : Téléchargez le document et configurez le gestionnaire d'avertissements
- Chargez le document à l'aide du`Document` classe. Ensuite, créez une instance de`HandleDocumentWarnings` classe pour gérer les avertissements.
-
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc. WarningCallback = callback;
-```
-
-## Étape 3 : Mettez à jour la mise en page et enregistrez le document
- Mettez à jour la mise en page du document en appelant le`UpdatePageLayout()` méthode. Cela déclenchera les avertissements, le cas échéant. Enregistrez ensuite le document.
-
-```csharp
-doc.UpdatePageLayout();
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-```
-
-### Exemple de code source pour recevoir une notification d'avertissement à l'aide d'Aspose.Words pour .NET 
-
-```csharp
-
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Rendering.docx");
-// Lorsque vous appelez UpdatePageLayout, le document est rendu en mémoire. Tous les avertissements survenus pendant le rendu
-//sont stockés jusqu’à la sauvegarde du document, puis envoyés au WarningCallback approprié.
-doc.UpdatePageLayout();
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc.WarningCallback = callback;
-// Même si le document a été rendu précédemment, tout avertissement d'enregistrement est notifié à l'utilisateur lors de l'enregistrement du document.
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-
 ```
 
+## Étape 2 : Charger le document
+
+ Chargez votre document dans un Aspose.Words`Document` objet. Cela vous permet de manipuler le document par programme.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Étape 3 : Mettre à jour la mise en page
+
+ Appeler le`UpdatePageLayout` méthode. Cela restitue le document en mémoire et capture tous les avertissements qui se produisent lors du rendu.
+
+```csharp
+doc.UpdatePageLayout();
+```
+
+## Étape 4 : configurer le rappel d'avertissement
+
+ Pour capturer et gérer les avertissements, créez une classe qui implémente le`IWarningCallback` interface. Cette classe enregistrera tous les avertissements qui se produisent pendant le traitement du document.
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        // Nous ne nous intéressons qu'aux polices de caractères remplacées.
+        if (info.WarningType == WarningType.FontSubstitution)
+        {
+            Console.WriteLine("Font substitution: " + info.Description);
+        }
+    }
+}
+```
+
+## Étape 5 : attribuer le rappel au document
+
+Attribuez le rappel d’avertissement au document. Cela garantit que tous les problèmes de polices sont capturés et enregistrés.
+
+```csharp
+HandleDocumentWarnings callback = new HandleDocumentWarnings();
+doc.WarningCallback = callback;
+```
+
+## Étape 6 : Enregistrez le document
+
+Enfin, enregistrez le document. Même si le document a été rendu précédemment, tout avertissement de sauvegarde sera notifié à l'utilisateur au cours de cette étape.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
+```
+
+En suivant ces étapes, vous avez configuré votre application pour gérer correctement les substitutions de polices et recevoir des notifications chaque fois qu'une substitution se produit.
+
 ## Conclusion
-Dans ce didacticiel, vous avez appris à recevoir une notification d'avertissement lors de l'utilisation d'Aspose.Words pour .NET. Des avertissements peuvent être émis lors de la configuration ou de l'enregistrement d'un document. Utilisez cette fonctionnalité pour être informé de tout problème ou avertissement lié à vos documents.
 
-### FAQ
+Vous maîtrisez désormais le processus de réception de notifications pour les substitutions de polices à l'aide d'Aspose.Words for .NET. Cette compétence vous aidera à garantir que vos documents soient toujours à leur meilleur, même lorsque les polices nécessaires ne sont pas disponibles. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d'Aspose.Words.
 
-#### Q : Comment puis-je recevoir des notifications d'avertissement dans Aspose.Words ?
+## FAQ
 
- R : Pour recevoir des notifications d'avertissement dans Aspose.Words, vous pouvez utiliser le`FontSettings` la classe et le`WarningCallback` événement. Vous pouvez définir une méthode de rappel pour être averti lorsque des avertissements liés aux polices sont rencontrés lors du traitement des documents.
+### Q1 : Puis-je spécifier plusieurs polices par défaut ?
 
-#### Q : Quels sont les types courants d’avertissements liés aux polices dans Aspose.Words ?
+Non, vous ne pouvez spécifier qu'une seule police par défaut pour la substitution. Cependant, vous pouvez configurer plusieurs sources de polices de secours.
 
-R : Certains types courants d’avertissements liés aux polices dans Aspose.Words sont :
-- Polices manquantes
-- Polices substituées
-- Problèmes de formatage des polices
+### Q2 : Où puis-je obtenir un essai gratuit d'Aspose.Words pour .NET ?
 
-#### Q : Comment puis-je résoudre les problèmes liés aux polices dans mes documents Word ?
+ Vous pouvez télécharger un essai gratuit à partir du[Page d'essai gratuit d'Aspose](https://releases.aspose.com/).
 
-R : Pour résoudre les problèmes liés aux polices dans vos documents Word, vous pouvez suivre les étapes suivantes :
-- Installez les polices manquantes sur le système sur lequel vous exécutez votre application Aspose.Words.
-- Utilisez des polices de substitution appropriées, visuellement similaires aux polices d'origine.
-- Vérifiez et ajustez le formatage de la police pour garantir une apparence cohérente.
+###  Q3 : Puis-je gérer d'autres types d'avertissements avec`IWarningCallback`?
 
-#### Q : Pourquoi est-il important de recevoir des notifications d'avertissement liées aux polices dans Aspose.Words ?
+ Oui le`IWarningCallback` L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
 
-R : Il est important de recevoir des notifications d'avertissement liées aux polices dans Aspose.Words, car elles vous aident à identifier les problèmes potentiels dans vos documents. Cela vous permet de prendre les mesures nécessaires pour résoudre ces problèmes et garantir la qualité de vos documents.
+### Q4 : Où puis-je trouver de l'aide pour Aspose.Words ?
 
-#### Q : Comment puis-je activer ou désactiver les notifications d'avertissement dans Aspose.Words ?
+ Visiter le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) à l'aide.
 
- R : Pour activer ou désactiver les notifications d'avertissement dans Aspose.Words, vous pouvez utiliser le`FontSettings.ShowFontWarnings` propriété et définissez-la sur`true` ou`false`en fonction de vos besoins. Lorsqu'il est activé, vous recevrez des notifications d'avertissement liées aux polices.
+### Q5 : Est-il possible d'obtenir une licence temporaire pour Aspose.Words ?
+
+ Oui, vous pouvez obtenir une licence temporaire auprès du[page de licence temporaire](https://purchase.aspose.com/temporary-license/).

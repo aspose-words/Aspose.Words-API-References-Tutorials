@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. lépés: Hiperhivatkozás beszúrása
 
- Hiperhivatkozást beszúrhatunk a`InsertHyperlink` a dokumentumgenerátor módszere. Megadjuk az URL-t és a hivatkozáshoz megjelenítendő szöveget.
+ A hiperhivatkozást a`InsertHyperlink` a dokumentumgenerátor módszere. Megadjuk az URL-t és a hivatkozáshoz megjelenítendő szöveget.
 
 ```csharp
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
@@ -58,7 +58,7 @@ Gratulálok ! Megtanulta az "Autolink" funkció használatát az Aspose.Words fo
 
 #### K: Hogyan hozhatok létre automatikus hivatkozást egy URL-címre az Aspose.Words-ben?
 
-V: Az Aspose.Words URL-címére mutató automatikus hivatkozás létrehozásához használhatja a`<a>` címkével a`href` URL-címet tartalmazó attribútum. Például használhatja`<a href="https://www.aspose.com">https://www.aspose.com</a>` hogy automatikusan hivatkozzon a „https://www.aspose.com” oldalra.
+ V: Az Aspose.Words URL-címére mutató automatikus hivatkozás létrehozásához használhatja a`<a>` címkével a`href` URL-címet tartalmazó attribútum. Például használhatja`<a href="https://www.aspose.com">https://www.aspose.com</a>` hogy automatikusan hivatkozzon a „https://www.aspose.com” oldalra.
 
 #### K: Testreszabható egy automatikus hivatkozás megjelenített szövege az Aspose.Words-ben?
 
@@ -66,4 +66,4 @@ V: Az Aspose.Words URL-címére mutató automatikus hivatkozás létrehozásáho
 
 #### K: Hogyan adhatok hozzá további attribútumokat az Aspose.Words automatikus linkjéhez?
 
- V: Ha további attribútumokat szeretne hozzáadni az Aspose.Words automatikus hivatkozásaihoz, további HTML-attribútumokat használhat a`<a>` címke. Például használhatja`<a href="https://www.aspose.com" target="_blank">Link</a>` a hivatkozás új ablakban vagy lapon való megnyitásához a` attribute target="_blank"`.
+V: Ha további attribútumokat szeretne hozzáadni az Aspose.Words automatikus hivatkozásaihoz, további HTML-attribútumokat használhat a`<a>` címke. Például használhatja`<a href="https://www.aspose.com" target="_blank">Link</a>` a hivatkozás új ablakban vagy lapon való megnyitásához a` attribute target="_blank"`.

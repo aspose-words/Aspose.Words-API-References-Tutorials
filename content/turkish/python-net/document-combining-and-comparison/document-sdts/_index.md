@@ -10,7 +10,7 @@ url: /tr/python-net/document-combining-and-comparison/document-sdts/
 
 ## Yapılandırılmış Belge Etiketlerine (SDT'ler) Giriş
 
-Çoğunlukla içerik kontrolleri olarak anılan Yapılandırılmış Belge Etiketleri, bir belgenin içerdikleri içeriğe yapı sağlayan öğelerdir. Tutarlı biçimlendirmeye izin verir ve içeriğin programlı olarak değiştirilmesine olanak tanır. SDT'ler düz metin, zengin metin, resimler, onay kutuları ve daha fazlası gibi çeşitli içerik türlerini kapsayabilir.
+Genellikle içerik kontrolleri olarak anılan Yapılandırılmış Belge Etiketleri, bir belgenin içerdikleri içeriğe yapı sağlayan öğelerdir. Tutarlı biçimlendirmeye izin verir ve içeriğin programlı olarak değiştirilmesine olanak tanır. SDT'ler düz metin, zengin metin, resimler, onay kutuları ve daha fazlası gibi çeşitli içerik türlerini kapsayabilir.
 
 ## SDT Kullanmanın Yararları
 

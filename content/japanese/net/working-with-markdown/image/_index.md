@@ -69,7 +69,7 @@ builder.InsertNode(shape);
 
 #### Q: Aspose.Words の画像にフィルターを適用できますか?
 
-A: はい、Aspose.Words で画像にフィルターを適用できます。たとえば、次のコマンドを使用して画像にぼかしフィルターを適用できます。`ApplyGaussianBlur`の方法`Shape`物体。
+ A: はい、Aspose.Words で画像にフィルターを適用できます。たとえば、次のコマンドを使用して画像にぼかしフィルターを適用できます。`ApplyGaussianBlur`の方法`Shape`物体。
 
 #### Q: Aspose.Words で 1 つの画像を別の画像に置き換えるにはどうすればよいですか?
 

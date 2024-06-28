@@ -112,10 +112,10 @@ Aspose.Words for Java एक जावा लाइब्रेरी है ज
 आप जावा के लिए Aspose.Words को यहां से डाउनलोड और इंस्टॉल कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/).
 
 ### Q3. क्या कोई निःशुल्क परीक्षण उपलब्ध है?
- हां, आप जावा के लिए Aspose.Words का निःशुल्क परीक्षण प्राप्त कर सकते हैं[यहाँ](https://releases.aspose.com/).
+ हां, आप जावा के लिए Aspose.Words का निःशुल्क परीक्षण प्राप्त कर सकते हैं।[यहाँ](https://releases.aspose.com/).
 
 ### Q4. मुझे अस्थायी लाइसेंस कहां मिल सकता है?
- आप जावा के लिए Aspose.Words के लिए एक अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
+ आप जावा के लिए Aspose.Words के लिए एक अस्थायी लाइसेंस प्राप्त कर सकते हैं।[यहाँ](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. जावा के लिए Aspose.Words के लिए मुझे समर्थन कहां मिल सकता है?
  समर्थन और चर्चा के लिए, पर जाएँ[जावा फोरम के लिए Aspose.Words](https://forum.aspose.com/).

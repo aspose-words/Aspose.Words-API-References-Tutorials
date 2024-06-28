@@ -84,7 +84,7 @@ Az alábbi lépések követésével könnyedén megvédheti dokumentumait
 
 ## Következtetés
 
-Ebben az oktatóanyagban megvizsgáltuk az Aspose.Words for .NET csak olvasható védelmi funkcióját, amely lehetővé teszi a Word-dokumentumok írásvédettvé tételét az illetéktelen módosítások elkerülése érdekében. A megadott lépések követésével egyszerűen csak olvasható védelmet alkalmazhat dokumentumaira, és fokozhatja azok biztonságát. Az írásvédett védelem a szerkesztési lehetőségek korlátozásával segíti a dokumentum tartalmának integritását és pontosságát. Az Aspose.Words for .NET hatékony és rugalmas API-t biztosít a dokumentumok védelméhez, és számos egyéb szolgáltatást is támogat a Word-dokumentumok testreszabásához és biztonságához.
+Ebben az oktatóanyagban megvizsgáltuk az Aspose.Words for .NET csak olvasható védelmi funkcióját, amely lehetővé teszi a Word-dokumentumok írásvédettvé tételét az illetéktelen módosítások elkerülése érdekében. A megadott lépések követésével egyszerűen csak olvasható védelmet alkalmazhat dokumentumaira, és fokozhatja azok biztonságát. Az írásvédett védelem a szerkesztési lehetőségek korlátozásával segíti a dokumentum tartalmának integritását és pontosságát. Az Aspose.Words for .NET hatékony és rugalmas API-t biztosít a dokumentumvédelem kezelésére, és számos egyéb szolgáltatást is támogat a Word-dokumentumok testreszabásához és biztonságossá tételéhez.
 
 ### GYIK az írásvédett Word dokumentumban
 
@@ -98,7 +98,7 @@ V: Ha csak olvasható védelmet szeretne alkalmazni egy Word-dokumentumra az Asp
 1.  Hozzon létre egy példányt a`Document` osztály és a`DocumentBuilder` tárgy.
 2.  Használja a`DocumentBuilder` tartalmat írni a dokumentumba.
 3.  Állítson be jelszót a dokumentumhoz a segítségével`SetPassword` módszere a`WriteProtection` tárgy.
-4.  Állítsa be a`ReadOnlyRecommended` tulajdona a`WriteProtection` tiltakozni`true` hogy javasoljuk a dokumentum írásvédettként való megnyitását.
+4.  Állítsa be a`ReadOnlyRecommended` tulajdona a`WriteProtection` tiltakozni`true` hogy javasoljuk a dokumentum csak olvashatóként való megnyitását.
 5.  Alkalmazza a csak olvasható védelmet a`Protect` módszere a`Document` objektum, megadva a`ProtectionType` mint`ReadOnly`.
 6.  Mentse el a védett dokumentumot a`Save` módszere a`Document` tárgy.
 

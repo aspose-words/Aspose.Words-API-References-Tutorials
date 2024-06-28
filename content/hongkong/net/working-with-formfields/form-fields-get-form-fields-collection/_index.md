@@ -45,7 +45,7 @@ foreach (FormField formField in formFields)
 
 ## 第 4 步：儲存文檔
 
-最後，如有必要，請儲存修改後的文件：
+最後，如有必要，請保存修改後的文件：
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");

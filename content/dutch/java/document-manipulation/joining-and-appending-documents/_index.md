@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Voeg toe met paginanummerconversie
+### Voeg toe met paginanummerconversies
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -118,7 +118,7 @@ dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ## Conclusie
 
-Aspose.Words voor Java biedt flexibele en krachtige tools voor het samenvoegen en toevoegen van documenten, of u nu de opmaak wilt behouden, verschillende pagina-instellingen wilt verwerken of kop- en voetteksten wilt beheren. Experimenteer met deze technieken om aan uw specifieke documentverwerkingsbehoeften te voldoen.
+Aspose.Words voor Java biedt flexibele en krachtige tools voor het samenvoegen en toevoegen van documenten, of u nu de opmaak wilt behouden, verschillende pagina-instellingen wilt beheren of kop- en voetteksten wilt beheren. Experimenteer met deze technieken om aan uw specifieke documentverwerkingsbehoeften te voldoen.
 
 ## Veelgestelde vragen
 

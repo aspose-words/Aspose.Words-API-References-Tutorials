@@ -91,7 +91,7 @@ A: Om de volgorde van tekstvakken te controleren met Aspose.Words voor .NET, is 
 
 #### Vraag: Hoe bepaal ik of een TextBox de kop van de reeks is?
 
-A: Om te bepalen of een TextBox de kop van de reeks is, kunt u controleren of deze een volgende vorm heeft (`Next`) maar geen vorige vorm (`Previous`). Als dat zo is, betekent dit dat hij de kop van de streak is.
+A: Om te bepalen of een TextBox de kop van de reeks is, kunt u controleren of deze een volgende vorm heeft (`Next`) maar geen vorige vorm (`Previous`). Als dat zo is, betekent dit dat hij de kop van de reeks is.
 
 #### Vraag: Hoe weet ik of een TextBox zich in het midden van de reeks bevindt?
 

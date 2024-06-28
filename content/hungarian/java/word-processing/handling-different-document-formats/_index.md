@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Táblázatok létrehozása
 
 ```java
-// Hozzon létre egy táblázatot 3 sorból és 4 oszlopból
+// Hozzon létre egy táblázatot 3 sorból és 4 oszlopból.
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

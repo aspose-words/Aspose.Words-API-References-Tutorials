@@ -35,7 +35,7 @@ import com.aspose.words.ProtectionType;
 
 public class DocumentEncryptionExample {
     public static void main(String[] args) throws Exception {
-        //ドキュメントをロードします
+        //ドキュメントをロードする
         Document doc = new Document("document.docx");
         
         //暗号化用のパスワードを設定する

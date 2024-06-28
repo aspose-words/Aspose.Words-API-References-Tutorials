@@ -2,93 +2,98 @@
 title: Định dạng thước kẻ ngang trong tài liệu Word
 linktitle: Định dạng thước kẻ ngang trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách định dạng quy tắc ngang trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước một.
+description: Tìm hiểu cách chèn các quy tắc ngang có thể tùy chỉnh trong tài liệu Word bằng Aspose.Words cho .NET. Tăng cường tự động hóa tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
-Trong ví dụ toàn diện này, bạn sẽ tìm hiểu cách định dạng quy tắc ngang trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ hướng dẫn bạn thực hiện quy trình và cung cấp cho bạn các đoạn mã C# cần thiết. Đến cuối hướng dẫn này, bạn sẽ có thể tùy chỉnh căn chỉnh, chiều rộng, chiều cao, màu sắc và các thuộc tính khác của quy tắc ngang.
+## Giới thiệu
+
+Trong lĩnh vực phát triển .NET, việc thao tác và định dạng tài liệu Word theo chương trình có thể là một nhiệm vụ khó khăn. May mắn thay, Aspose.Words for .NET cung cấp một giải pháp mạnh mẽ, trao quyền cho các nhà phát triển tự động hóa việc tạo, chỉnh sửa và quản lý tài liệu một cách dễ dàng. Bài viết này đi sâu vào một trong những tính năng cần thiết: chèn thước ngang vào văn bản Word. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu với Aspose.Words, việc thành thạo khả năng này sẽ nâng cao quá trình tạo tài liệu của bạn.
 
 ## Điều kiện tiên quyết
-Trước khi chúng tôi bắt đầu, hãy đảm bảo rằng bạn có các điều kiện tiên quyết sau:
-- Thư viện Aspose.Words for .NET được cài đặt trên hệ thống của bạn.
 
-## Bước 1: Tạo DocumentBuilder và chèn quy tắc ngang
-Để bắt đầu, hãy tạo một đối tượng DocumentBuilder và sử dụng phương thức InsertHorizontalRule để chèn quy tắc ngang:
+Trước khi đi sâu vào triển khai các quy tắc theo chiều ngang bằng Aspose.Words cho .NET, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
+
+- Visual Studio: Cài đặt Visual Studio IDE để phát triển .NET.
+- Aspose.Words for .NET: Tải xuống và cài đặt Aspose.Words cho .NET từ[đây](https://releases.aspose.com/words/net/).
+- Kiến thức cơ bản về C#: Làm quen với các kiến thức cơ bản về ngôn ngữ lập trình C#.
+-  Lớp DocumentBuilder: Hiểu biết về`DocumentBuilder` lớp trong Aspose.Words để thao tác tài liệu.
+
+## Nhập không gian tên
+
+Để bắt đầu, hãy nhập các vùng tên cần thiết trong dự án C# của bạn:
 
 ```csharp
+using Aspose.Words;
+using System.Drawing;
+```
+
+Các không gian tên này cung cấp quyền truy cập vào các lớp Aspose.Words để thao tác tài liệu và các lớp .NET tiêu chuẩn để xử lý màu sắc.
+
+Hãy chia nhỏ quá trình thêm quy tắc ngang trong tài liệu Word bằng Aspose.Words cho .NET thành các bước toàn diện:
+
+## Bước 1: Khởi tạo DocumentBuilder và Đặt thư mục
+
+ Đầu tiên, khởi tạo một`DocumentBuilder` đối tượng và đặt đường dẫn thư mục nơi tài liệu sẽ được lưu.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 DocumentBuilder builder = new DocumentBuilder();
+```
+
+## Bước 2: Chèn thước ngang
+
+ Sử dụng`InsertHorizontalRule()` phương pháp của`DocumentBuilder` class để thêm quy tắc ngang.
+
+```csharp
 Shape shape = builder.InsertHorizontalRule();
 ```
 
-## Bước 2: Truy cập Định dạng quy tắc ngang
-Tiếp theo, truy cập thuộc tính HorizontalRuleFormat của đối tượng Shape để lấy các tùy chọn định dạng:
+## Bước 3: Tùy chỉnh định dạng quy tắc ngang
+
+ Truy cập`HorizontalRuleFormat` thuộc tính của hình được chèn để tùy chỉnh hình thức của đường ngang.
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-```
-
-## Bước 3: Tùy chỉnh các tùy chọn định dạng
-Bây giờ, bạn có thể tùy chỉnh các tùy chọn định dạng khác nhau cho quy tắc ngang. Ví dụ: bạn có thể điều chỉnh căn chỉnh, chiều rộng, chiều cao, màu sắc và bóng đổ:
-
-```csharp
 horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
 horizontalRuleFormat.WidthPercent = 70;
 horizontalRuleFormat.Height = 3;
 horizontalRuleFormat.Color = Color.Blue;
 horizontalRuleFormat.NoShade = true;
 ```
+
+- Căn chỉnh: Chỉ định căn chỉnh của quy tắc ngang (`HorizontalRuleAlignment.Center` trong ví dụ này).
+- widthPercent: Đặt chiều rộng của quy tắc ngang theo tỷ lệ phần trăm của chiều rộng trang (trong ví dụ này là 70%).
+- Chiều cao: Xác định chiều cao của thước ngang theo điểm (trong ví dụ này là 3 điểm).
+- Color: Đặt màu của thước ngang (`Color.Blue` trong ví dụ này).
+- NoShade: Chỉ định xem quy tắc ngang có nên có bóng hay không (`true` trong ví dụ này).
 
 ## Bước 4: Lưu tài liệu
-Sau khi định dạng quy tắc ngang, lưu tài liệu vào file bằng phương thức Save của đối tượng Document:
+
+ Cuối cùng, lưu tài liệu đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
 
 ```csharp
-builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
+builder.Document.Save(dataDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
-
-### Mã nguồn ví dụ cho định dạng quy tắc ngang bằng cách sử dụng Aspose.Words cho .NET
-Đây là mã nguồn hoàn chỉnh để định dạng quy tắc ngang bằng Aspose.Words cho .NET:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder();
-
-Shape shape = builder.InsertHorizontalRule();
-
-HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
-horizontalRuleFormat.WidthPercent = 70;
-horizontalRuleFormat.Height = 3;
-horizontalRuleFormat.Color = Color.Blue;
-horizontalRuleFormat.NoShade = true;
-
-builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
-```
-
-Hãy nhớ điều chỉnh mã theo yêu cầu cụ thể của bạn và nâng cao nó bằng chức năng bổ sung nếu cần.
 
 ## Phần kết luận
-Chúc mừng! Bạn đã học thành công cách định dạng thước ngang trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, giờ đây bạn có thể tùy chỉnh giao diện của các quy tắc ngang để nâng cao bố cục trực quan của tài liệu.
 
-Thử nghiệm với các tùy chọn định dạng khác nhau để đạt được phong cách và hiệu ứng mong muốn cho các quy tắc ngang của bạn.
+Nắm vững cách chèn quy tắc ngang trong tài liệu Word bằng Aspose.Words for .NET sẽ nâng cao khả năng tự động hóa tài liệu của bạn. Bằng cách tận dụng tính linh hoạt và sức mạnh của Aspose.Words, các nhà phát triển có thể hợp lý hóa quy trình tạo và định dạng tài liệu một cách hiệu quả.
 
-### Câu hỏi thường gặp về định dạng quy tắc ngang trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Tôi có thể áp dụng các màu khác nhau cho thước kẻ ngang không?
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình trong các ứng dụng .NET.
 
-Đ: Chắc chắn rồi! Với Aspose.Words for .NET, bạn có thể dễ dàng tùy chỉnh màu của thước ngang bằng cách đặt thuộc tính Color thành giá trị màu mong muốn. Điều này cho phép bạn khớp quy tắc ngang với thiết kế tổng thể của tài liệu.
+### Làm cách nào tôi có thể tải xuống Aspose.Words cho .NET?
+ Bạn có thể tải xuống Aspose.Words cho .NET từ[đây](https://releases.aspose.com/words/net/).
 
-#### Hỏi: Có thể điều chỉnh độ rộng và chiều cao của thước ngang được không?
+### Tôi có thể tùy chỉnh giao diện của các quy tắc ngang trong Aspose.Words không?
+Có, bạn có thể tùy chỉnh các khía cạnh khác nhau như căn chỉnh, chiều rộng, chiều cao, màu sắc và bóng của các quy tắc ngang bằng Aspose.Words.
 
-Đáp: Có, bạn có toàn quyền kiểm soát chiều rộng và chiều cao của thước ngang. Bằng cách sửa đổi thuộc tính Chiều rộng và Chiều cao, bạn có thể đạt được kích thước mong muốn cho quy tắc ngang.
+### Aspose.Words có phù hợp để xử lý tài liệu cấp doanh nghiệp không?
+Có, Aspose.Words được sử dụng rộng rãi trong môi trường doanh nghiệp nhờ khả năng thao tác tài liệu mạnh mẽ.
 
-#### Câu hỏi: Tôi có thể thay đổi cách căn chỉnh của thước ngang trong tài liệu không?
-
-Đ: Chắc chắn rồi! Aspose.Words for .NET cho phép bạn chỉ định căn chỉnh của quy tắc ngang bằng thuộc tính Alignment. Bạn có thể chọn từ nhiều tùy chọn khác nhau như Giữa, Trái, Phải và Căn đều.
-
-#### Câu hỏi: Tôi có thể áp dụng màu nền hoặc màu nền cho quy tắc ngang không?
-
-Trả lời: Có, bạn có thể thêm màu nền hoặc màu nền cho quy tắc ngang. Theo mặc định, thuộc tính NoShade được đặt thành true, nhưng bạn có thể đặt nó thành false và xác định độ bóng bằng các phương pháp thích hợp.
-
-#### Câu hỏi: Tôi có thể chèn nhiều quy tắc ngang vào một tài liệu không?
-
-Đ: Chắc chắn rồi! Bạn có thể chèn nhiều quy tắc ngang trong tài liệu Word bằng Aspose.Words for .NET. Chỉ cần lặp lại các bước trong hướng dẫn nếu cần để thêm bao nhiêu quy tắc ngang theo yêu cầu của bạn.
+### Tôi có thể nhận hỗ trợ cho Aspose.Words cho .NET ở đâu?
+ Để được hỗ trợ và tham gia cộng đồng, hãy truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8).

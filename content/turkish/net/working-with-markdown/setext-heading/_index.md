@@ -1,6 +1,6 @@
 ---
-title: Set metni Başlığı
-linktitle: Set metni Başlığı
+title: Setex Başlığı
+linktitle: Setex Başlığı
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile belgelerinizi formatlamak için Setext başlıklarını nasıl kullanacağınızı öğrenin. Adım adım kılavuz.
 type: docs

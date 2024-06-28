@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: configura le impostazioni della pagina per il documento di origine
 
- Regola le impostazioni di impostazione della pagina del documento di origine per garantire la corretta continuazione e numerazione. In questo esempio, impostiamo l'inizio della sezione su`SectionStart.Continuous` e riavviare la numerazione delle pagine. Ci assicuriamo inoltre che la larghezza, l'altezza e l'orientamento della pagina corrispondano all'ultima sezione del documento di destinazione.
+ Regola le impostazioni di impostazione della pagina del documento di origine per garantire la corretta continuazione e numerazione. In questo esempio, impostiamo l'inizio della sezione su`SectionStart.Continuous` riavviare la numerazione delle pagine. Ci assicuriamo inoltre che la larghezza, l'altezza e l'orientamento della pagina corrispondano all'ultima sezione del documento di destinazione.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Passaggio 4: modifica la formattazione del paragrafo
 
- Per mantenere la formattazione corretta, scorrere tutti i paragrafi nel documento di origine e impostare il file`KeepWithNext`proprietà a`true`Ciò garantisce che i paragrafi rimangano insieme durante il processo di aggiunta.
+ Per mantenere la formattazione corretta, scorrere tutti i paragrafi nel documento di origine e impostare il file`KeepWithNext`proprietà a`true`. Ciò garantisce che i paragrafi rimangano insieme durante il processo di aggiunta.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Passaggio 6: salva il documento di destinazione
 
- Infine, salva il documento di destinazione modificato utilizzando il file`Save` metodo del`Document` oggetto.
+Infine, salva il documento di destinazione modificato utilizzando il file`Save` metodo del`Document` oggetto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ Ciò completa l'implementazione dell'aggiunta di un documento con diverse impost
 	// Riavviare la numerazione delle pagine all'inizio del documento di origine.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Per garantire che ciò non accada quando il documento di origine ha impostazioni di impostazione della pagina diverse, assicurati che il file
+	//Per garantire che ciò non accada quando il documento di origine ha impostazioni di impostazione della pagina diverse, assicurati che il file
 	// le impostazioni sono identiche nell'ultima sezione del documento di destinazione.
 	// Se ci sono ulteriori sezioni continue che seguono nel documento di origine,
-	//questo dovrà essere ripetuto per quelle sezioni.
+	// questo dovrà essere ripetuto per quelle sezioni.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

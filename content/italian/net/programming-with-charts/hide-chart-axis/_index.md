@@ -17,7 +17,7 @@ Assicurati di avere i seguenti prerequisiti:
 - Aspose.Words per la libreria .NET installata. È possibile scaricarlo utilizzando Gestione pacchetti NuGet per installarlo.
 - Un percorso della directory del documento in cui verrà salvato il documento di output.
 
-## Passaggio 2: crea un nuovo documento e inserisci un grafico
+## Passaggio 2: crea un nuovo documento e inserisci un grafico.
 
  Creane uno nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 
@@ -93,7 +93,7 @@ In questo tutorial, hai imparato come nascondere l'asse del grafico in un docume
 
 Nascondere l'asse del grafico può essere utile quando vuoi concentrarti sui dati del grafico senza la distrazione delle linee e delle etichette degli assi. Fornisce un aspetto più pulito e minimalista al grafico.
 
-Utilizzando Aspose.Words per .NET, puoi facilmente incorporare funzionalità di creazione di grafici nelle tue applicazioni .NET e generare documenti dall'aspetto professionale con grafici personalizzati e assi dei grafici nascosti.
+Utilizzando Aspose.Words per .NET, puoi facilmente incorporare funzionalità di creazione di grafici nelle tue applicazioni .NET e generare documenti dall'aspetto professionale con grafici personalizzati e assi del grafico nascosti.
 
 ### Domande frequenti
 
@@ -101,7 +101,7 @@ Utilizzando Aspose.Words per .NET, puoi facilmente incorporare funzionalità di 
 Aspose.Words per .NET è una potente libreria di elaborazione documenti che consente agli sviluppatori di creare, manipolare e salvare documenti Word a livello di codice nelle applicazioni .NET. Fornisce un'ampia gamma di funzionalità per l'elaborazione di parole con elementi di documenti, inclusi grafici e assi del grafico.
 
 #### Q2. Come posso installare Aspose.Words per .NET?
-È possibile installare Aspose.Words per .NET scaricandolo utilizzando il gestore pacchetti NuGet in Visual Studio. Cerca semplicemente "Aspose.Words" nel gestore pacchetti NuGet e installalo nel tuo progetto.
+È possibile installare Aspose.Words per .NET scaricandolo utilizzando il gestore pacchetti NuGet in Visual Studio. Cerca semplicemente "Apose.Words" nel gestore pacchetti NuGet e installalo nel tuo progetto.
 
 #### Q3. Posso nascondere sia l'asse X che l'asse Y di un grafico?
  Sì, puoi nascondere sia l'asse X che l'asse Y di un grafico utilizzando Aspose.Words per .NET. Per nascondere l'asse X, puoi accedere a`AxisX` proprietà del grafico e impostare il file`Hidden`proprietà a`true` . Allo stesso modo, per nascondere l'asse Y, puoi accedere a`AxisY` proprietà e impostare il file`Hidden`proprietà a`true`. Ciò consente di rimuovere entrambi gli assi dalla visualizzazione del grafico.

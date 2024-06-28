@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Schritt 5: Speichern Sie das Zieldokument
 
- Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
+Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");

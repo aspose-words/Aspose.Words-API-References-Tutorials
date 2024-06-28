@@ -103,7 +103,7 @@ Chcete-li odeslat e-mail se souborem MHTML jako přílohou, můžete použít kn
 
 #### Jaká jsou omezení procesu konverze a odesílání e-mailů?
 
-Omezení procesu konverze a odesílání e-mailů závisí na konkrétních nástrojích, které používáte. Některé nástroje mohou mít omezení týkající se velikosti souboru, nastavení zabezpečení nebo podporovaných e-mailových protokolů. Je důležité vybrat nástroje, které vyhovují vašim potřebám, a při implementaci zohlednit tato omezení.
+Omezení procesu konverze a odesílání e-mailů závisí na konkrétních nástrojích, které používáte. Některé nástroje mohou mít související omezení velikosti souboru, nastavení zabezpečení nebo podporovaných e-mailových protokolů. Je důležité vybrat nástroje, které vyhovují vašim potřebám, a při implementaci zohlednit tato omezení.
 
 #### Je Aspose spolehlivým nástrojem pro konverzi DOCX do MHTML a odesílání e-mailů?
 

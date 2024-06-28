@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/join-and-append-documents/keep-source-numbering/
 ---
 
-W tym samouczku wyjaśniono, jak dołączyć dokument źródłowy do dokumentu docelowego, zachowując oryginalne formatowanie numeracji ponumerowanych akapitów za pomocą Aspose.Words dla .NET.
+tym samouczku wyjaśniono, jak dołączyć dokument źródłowy do dokumentu docelowego, zachowując oryginalne formatowanie numeracji ponumerowanych akapitów za pomocą Aspose.Words dla .NET.
 
 ## Krok 1: Skonfiguruj projekt
 
@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Krok 4: Importuj i dodawaj akapity
 
-Wykonaj iterację po akapitach w dokumencie źródłowym i zaimportuj każdy akapit do dokumentu docelowego za pomocą`importer`. Dołącz zaimportowane węzły do treści dokumentu docelowego.
+ Wykonaj iterację po akapitach w dokumencie źródłowym i zaimportuj każdy akapit do dokumentu docelowego za pomocą`importer`. Dołącz zaimportowane węzły do treści dokumentu docelowego.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ To kończy implementację dołączania dokumentu źródłowego do dokumentu doce
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Zachowaj formatowanie listy źródłowej podczas importowania numerowanych akapitów.
+	//Zachowaj formatowanie listy źródłowej podczas importowania numerowanych akapitów.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

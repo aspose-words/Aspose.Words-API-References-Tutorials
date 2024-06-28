@@ -90,6 +90,6 @@ V: A betűtípus-alkészletek PDF-dokumentumba ágyazásának előnyei a követk
 
 Csökkentett PDF-fájlméret: Ha csak a dokumentumban használt karakterjeleket tartalmazza, a PDF-fájl mérete csökken a teljes betűtípusok beágyazásához képest.
 
-A dokumentum megjelenésének megőrzése: A PDF fájlban szereplő betűkészlet-alkészletek lehetővé teszik a dokumentum megjelenésének reprodukálását csak a ténylegesen használt karakterek felhasználásával.
+A dokumentum megjelenésének megőrzése: A PDF fájlban található betűkészlet-alkészletek lehetővé teszik a dokumentum megjelenésének reprodukálását csak a ténylegesen használt karakterek felhasználásával.
 
-Kompatibilitás a Licenc korlátozásaival: A betűtípusok részhalmazainak beágyazása előnyben részesíthető olyan esetekben, amikor a teljes betűtípusokat nem lehet törvényesen beágyazni a licenckorlátozások miatt.
+Kompatibilitás a Licenc korlátozásaival: A betűtípusok részhalmazainak beágyazása előnyben részesíthető olyan esetekben, amikor a teljes betűtípusokat nem lehet legálisan beágyazni a licenckorlátozások miatt.

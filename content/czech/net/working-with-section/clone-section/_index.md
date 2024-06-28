@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-section/clone-section/
 ---
 
-tomto tutoriálu vám řekneme, jak naklonovat část dokumentu Word pomocí knihovny Aspose.Words pro .NET. Klonováním sekce se vytvoří identická kopie existující sekce. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+V tomto tutoriálu vám řekneme, jak naklonovat část dokumentu Word pomocí knihovny Aspose.Words pro .NET. Klonováním sekce se vytvoří identická kopie existující sekce. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
 
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující položky:
@@ -49,7 +49,7 @@ Section cloneSection = doc.Sections[0].Clone();
 ```
 
 ## Závěr
-V tomto tutoriálu jsme viděli, jak klonovat část dokumentu aplikace Word pomocí Aspose.Words for .NET. Klonování oddílů umožňuje vytvářet identické kopie existujících oddílů v dokumentu. Neváhejte a upravte a použijte tuto funkci klonování ve svých projektech k efektivní manipulaci a úpravám částí vašich dokumentů.
+tomto tutoriálu jsme viděli, jak klonovat část dokumentu aplikace Word pomocí Aspose.Words for .NET. Klonování oddílů umožňuje vytvářet identické kopie existujících oddílů v dokumentu. Neváhejte a upravte a použijte tuto funkci klonování ve svých projektech k efektivní manipulaci a úpravám částí vašich dokumentů.
 
 ### FAQ
 

@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: configurar la configuración de página para el documento fuente
 
- Ajuste la configuración de configuración de página del documento fuente para garantizar una continuación y numeración adecuadas. En este ejemplo, configuramos el inicio de la sección en`SectionStart.Continuous` y reiniciar la numeración de páginas. También nos aseguramos de que el ancho, alto y orientación de la página coincidan con la última sección del documento de destino.
+ Ajuste la configuración de configuración de página del documento fuente para garantizar una continuación y numeración adecuadas. En este ejemplo, configuramos el inicio de la sección en`SectionStart.Continuous` reiniciar la numeración de páginas. También nos aseguramos de que el ancho, alto y orientación de la página coincidan con la última sección del documento de destino.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Paso 4: modificar el formato del párrafo
 
- Para mantener el formato adecuado, repita todos los párrafos del documento fuente y establezca el`KeepWithNext`propiedad a`true`Esto garantiza que los párrafos permanezcan juntos durante el proceso de adición.
+ Para mantener el formato adecuado, repita todos los párrafos del documento fuente y establezca el`KeepWithNext`propiedad a`true`. Esto garantiza que los párrafos permanezcan juntos durante el proceso de adición.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Paso 6: guarde el documento de destino
 
- Finalmente, guarde el documento de destino modificado usando el`Save` método de la`Document` objeto.
+Finalmente, guarde el documento de destino modificado usando el`Save` método de la`Document` objeto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ Esto completa la implementación de agregar un documento con diferentes configur
 	// Reinicie la numeración de páginas al inicio del documento fuente.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Para garantizar que esto no suceda cuando el documento de origen tiene diferentes configuraciones de configuración de página, asegúrese de que
+	//Para garantizar que esto no suceda cuando el documento de origen tiene diferentes configuraciones de configuración de página, asegúrese de que
 	// Los ajustes son idénticos entre la última sección del documento de destino.
 	// Si hay más secciones continuas a continuación en el documento fuente,
-	//Esto deberá repetirse para esas secciones.
+	// Esto deberá repetirse para esas secciones.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

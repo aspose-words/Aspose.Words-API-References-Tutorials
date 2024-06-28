@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Quotes.md");
 
-// Eliminemos el formato de encabezado de una cita en el último párrafo.
+// Eliminemos el formato del encabezado de una cita en el último párrafo.
 Paragraph paragraph = doc.FirstSection.Body.LastParagraph;
 paragraph.ParagraphFormat.Style = doc.Styles["Quote"];
 

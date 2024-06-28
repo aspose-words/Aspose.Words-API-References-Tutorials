@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: Konfigurálja a betöltési beállításokat a betűtípus-beállításokkal
- Ezután létrehozunk egy példányt`LoadOptions`és adja meg a betűtípus beállításait egy új példány létrehozásával`FontSettings` és hozzárendelve ahhoz`loadOptions.FontSettings`.
+ Ezután létrehozunk egy példányt`LoadOptions` és adja meg a betűtípus beállításait egy új példány létrehozásával`FontSettings` és hozzárendelve ahhoz`loadOptions.FontSettings`.
 
 ```csharp
 // Konfigurálja a betöltési beállításokat a betűtípus-beállításokkal
@@ -35,7 +35,7 @@ loadOptions.FontSettings = new FontSettings();
  Most betöltjük a dokumentumot a segítségével`LoadOptions` és adja meg az általunk konfigurált betöltési beállításokat.
 
 ```csharp
-// Töltse be a dokumentumot a betöltési opciókkal együtt
+// Töltse be a dokumentumot a betöltési opciókkal
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
@@ -61,7 +61,7 @@ Ebben az oktatóanyagban azt láthattuk, hogyan lehet betöltési beállítások
 
 #### K: Milyen egyéb betűtípus-beállításokat adhatok meg az Aspose.Words betöltési beállításainál?
 
-V: Az alapértelmezett betűtípus megadása mellett más betűtípus-beállításokat is megadhat, például az alapértelmezett kódolást a megfelelő tulajdonságok használatával.`LoadOptions` osztály, mint pl`DefaultEncoding`.
+ V: Az alapértelmezett betűtípus megadása mellett más betűtípus-beállításokat is megadhat, például az alapértelmezett kódolást a megfelelő tulajdonságok használatával.`LoadOptions` osztály, mint pl`DefaultEncoding`.
 
 #### K: Mi történik, ha a megadott alapértelmezett betűtípus nem érhető el a dokumentum betöltésekor?
 

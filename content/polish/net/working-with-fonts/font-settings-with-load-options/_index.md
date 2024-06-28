@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fonts/font-settings-with-load-options/
 ---
-W tym samouczku pokażemy, jak używać opcji ładowania z ustawieniami czcionek w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Opcje ładowania umożliwiają określenie dodatkowych ustawień podczas ładowania dokumentu, w tym ustawień czcionki. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+tym samouczku pokażemy, jak używać opcji ładowania z ustawieniami czcionek w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Opcje ładowania umożliwiają określenie dodatkowych ustawień podczas ładowania dokumentu, w tym ustawień czcionki. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Skonfiguruj opcje ładowania za pomocą ustawień czcionek
- Następnie utworzymy instancję`LoadOptions` określ ustawienia czcionki, tworząc nową instancję`FontSettings` i przypisanie go do`loadOptions.FontSettings`.
+ Następnie utworzymy instancję`LoadOptions` i określ ustawienia czcionki, tworząc nową instancję`FontSettings` i przypisanie go do`loadOptions.FontSettings`.
 
 ```csharp
 // Skonfiguruj opcje ładowania za pomocą ustawień czcionek
@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
 ## Wniosek
-W tym samouczku widzieliśmy, jak używać opcji ładowania z ustawieniami czcionek w dokumencie programu Word za pomocą Aspose.Words dla .NET. Opcje ładowania umożliwiają dostosowanie ładowania dokumentu poprzez określenie dodatkowych ustawień, w tym ustawień czcionki. Możesz skorzystać z tej funkcji, aby dostosować ładowanie dokumentów do swoich konkretnych potrzeb.
+tym samouczku widzieliśmy, jak używać opcji ładowania z ustawieniami czcionek w dokumencie programu Word za pomocą Aspose.Words dla .NET. Opcje ładowania umożliwiają dostosowanie ładowania dokumentu poprzez określenie dodatkowych ustawień, w tym ustawień czcionki. Możesz skorzystać z tej funkcji, aby dostosować ładowanie dokumentów do swoich konkretnych potrzeb.
 
 ### Często zadawane pytania
 
@@ -61,7 +61,7 @@ W tym samouczku widzieliśmy, jak używać opcji ładowania z ustawieniami czcio
 
 #### P: Jakie inne ustawienia czcionek mogę określić za pomocą opcji ładowania w Aspose.Words?
 
-O: Oprócz określenia czcionki domyślnej możesz także określić inne ustawienia czcionki, takie jak domyślne kodowanie, korzystając z odpowiednich właściwości`LoadOptions` klasa, np`DefaultEncoding`.
+ O: Oprócz określenia czcionki domyślnej możesz także określić inne ustawienia czcionki, takie jak domyślne kodowanie, korzystając z odpowiednich właściwości`LoadOptions` klasa, np`DefaultEncoding`.
 
 #### P: Co się stanie, jeśli określona domyślna czcionka nie będzie dostępna podczas ładowania dokumentu?
 

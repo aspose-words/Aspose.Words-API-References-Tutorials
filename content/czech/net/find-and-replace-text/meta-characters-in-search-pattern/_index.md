@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Krok 4: Vložení konce stránky do dokumentu
 
- Abychom ilustrovali použití dalšího metaznaku, vložíme do dokumentu konec stránky pomocí`InsertBreak` metoda s`BreakType.PageBreak` parametr. Nejprve přesuneme kurzor z`DocumentBuilder` na konec dokumentu vložíme konec stránky a nový řádek textu:
+ Abychom ilustrovali použití dalšího metaznaku, vložíme do dokumentu konec stránky pomocí`InsertBreak` metoda s`BreakType.PageBreak` parametry. Nejprve přesuneme kurzor z`DocumentBuilder` na konec dokumentu vložíme konec stránky a nový řádek textu:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### Otázka: Jak vložit konec stránky do dokumentu pomocí Aspose.Words for .NET?
 
-A: Pro ilustraci použití jiného metaznaku vložíme do dokumentu zalomení stránky pomocí`InsertBreak` metoda s`BreakType.PageBreak` parametr. Nejprve přesuneme kurzor z`DocumentBuilder` na konec dokumentu vložíme konec stránky a nový řádek textu:
+A: Pro ilustraci použití jiného metaznaku vložíme do dokumentu zalomení stránky pomocí`InsertBreak` metoda s`BreakType.PageBreak` parametry. Nejprve přesuneme kurzor z`DocumentBuilder` na konec dokumentu vložíme konec stránky a nový řádek textu:
 
 ```csharp
 builder. MoveToDocumentEnd();

@@ -1,6 +1,6 @@
 ---
-title: Szövegfeldolgozás a dokumentum opciókkal és beállításokkal
-linktitle: Szövegfeldolgozás a dokumentum opciókkal és beállításokkal
+title: Szövegfeldolgozás dokumentumbeállításokkal és beállításokkal
+linktitle: Szövegfeldolgozás dokumentumbeállításokkal és beállításokkal
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan használhatja a dokumentumbeállításokat és -beállításokat a Word-dokumentumok viselkedésének testreszabásához és szabályozásához az Aspose.Words for .NET segítségével. Az oktatóanyagok végigvezetik a különböző funkciókon, például a dokumentum tulajdonságain.
 type: docs

@@ -56,7 +56,7 @@ Amikor dokumentumokkal dolgozik, elengedhetetlen a kivételek kecses kezelése. 
 
 ```java
 try {
-    // Itt végezze el a dokumentum konvertálását
+    // Itt hajtsa végre a dokumentum konvertálását
 } catch (Exception e) {
     // Kezelje a kivételeket
 }

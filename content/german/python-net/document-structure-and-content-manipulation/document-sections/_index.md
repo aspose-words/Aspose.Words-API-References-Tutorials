@@ -1,7 +1,7 @@
 ---
 title: Dokumentabschnitte und Layout verwalten
 linktitle: Dokumentabschnitte und Layout verwalten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie Dokumentabschnitte und Layouts mit Aspose.Words für Python verwalten. Erstellen und ändern Sie Abschnitte, passen Sie Layouts an und vieles mehr. Jetzt loslegen!
 type: docs
 weight: 24

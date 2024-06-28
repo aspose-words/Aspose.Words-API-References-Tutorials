@@ -18,7 +18,7 @@ En el código proporcionado, comenzamos creando un generador de documentos.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Paso 2: inserta el campo SI
+## Paso 2: inserte el campo SI.
 
  Usamos el`InsertField()` Método para insertar el campo IF en el documento especificando la condición a evaluar.
 
@@ -41,7 +41,7 @@ FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ### Código fuente de muestra para evaluar la condición IF con Aspose.Words para .NET
 
 ```csharp
-// Creación del generador de documentos.
+//Creación del generador de documentos.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Inserte el campo SI en el documento.
@@ -54,7 +54,7 @@ FieldIfComparisonResult actualResult = field.EvaluateCondition();
 Console.WriteLine(actualResult);
 ```
 
-En este ejemplo, creamos un generador de documentos, insertamos un campo IF con una condición especificada y luego evaluamos la condición. El resultado de la evaluación se muestra entonces en la consola.
+En este ejemplo, creamos un generador de documentos, insertamos un campo IF con una condición especificada y luego evaluamos la condición. El resultado de la evaluación se muestra luego en la consola.
 
 Con esto concluye nuestra guía sobre el uso de la función "Evaluar condición IF" con Aspose.Words para .NET.
 
@@ -79,7 +79,7 @@ R: Para actualizar una condición IF en un documento de Word con Aspose.Words, p
 
 #### P: ¿Qué tipo de condiciones se pueden evaluar en una condición IF con Aspose.Words?
 
-R: Con Aspose.Words puedes evaluar una variedad de condiciones en una condición IF, incluyendo comparaciones numéricas (por ejemplo, si un número es mayor que otro), comparaciones de texto (por ejemplo, si una cadena es igual a otra) y mucho más. También puede combinar varias condiciones utilizando operadores lógicos como AND y OR.
+R: Con Aspose.Words puedes evaluar una variedad de condiciones en una condición IF, incluidas comparaciones numéricas (por ejemplo, si un número es mayor que otro), comparaciones de texto (por ejemplo, si una cadena es igual a otra) y mucho más. También puede combinar varias condiciones utilizando operadores lógicos como AND y OR.
 
 #### P: ¿Es posible utilizar condiciones IF anidadas en un documento de Word con Aspose.Words?
 

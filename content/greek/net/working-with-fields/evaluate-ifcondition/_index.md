@@ -18,7 +18,7 @@ url: /el/net/working-with-fields/evaluate-ifcondition/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Βήμα 2: Εισαγάγετε το πεδίο IF
+## Βήμα 2: Εισαγάγετε το πεδίο IF.
 
  Χρησιμοποιούμε το`InsertField()` μέθοδος εισαγωγής του πεδίου IF στο έγγραφο που καθορίζει τη συνθήκη προς αξιολόγηση.
 
@@ -36,12 +36,12 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- ο`actualResult` μεταβλητή περιέχει το αποτέλεσμα της αξιολόγησης συνθήκης.
+ ο`actualResult` Η μεταβλητή περιέχει το αποτέλεσμα της αξιολόγησης συνθήκης.
 
 ### Δείγμα πηγαίου κώδικα για την αξιολόγηση της κατάστασης IF με το Aspose.Words για .NET
 
 ```csharp
-// Δημιουργία της δημιουργίας εγγράφων.
+//Δημιουργία της δημιουργίας εγγράφων.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Εισαγάγετε το πεδίο IF στο έγγραφο.

@@ -11,7 +11,7 @@ Kesinlikle! Burada Aspose.Words for Java kullanılarak belge şifreleme ve şifr
 
 # Aspose.Words for Java ile Belge Şifreleme ve Şifre Çözme
 
-Bu eğitimde Aspose.Words for Java kullanarak belgeleri nasıl şifreleyeceğinizi ve şifresini çözeceğinizi inceleyeceğiz. Belge şifreleme, hassas verilerinizin güvende kalmasını ve yalnızca yetkili kullanıcılar tarafından erişilebilmesini sağlar.
+Bu eğitimde Aspose.Words for Java kullanarak belgeleri nasıl şifreleyeceğinizi ve şifresini çözeceğinizi keşfedeceğiz. Belge şifreleme, hassas verilerinizin güvende kalmasını ve yalnızca yetkili kullanıcılar tarafından erişilebilmesini sağlar.
 
 ## Önkoşullar
 

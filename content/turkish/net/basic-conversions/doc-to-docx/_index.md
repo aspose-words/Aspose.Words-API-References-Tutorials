@@ -37,7 +37,7 @@ Document doc = new Document(dataDir + "Document.doc");
 
 ## Adım 4: Belgeyi Docx Formatına Dönüştürme
 
- Artık başlattığınıza göre`Document` nesne, dönüştürme işlemine devam edebilirsiniz. Aspose.Words for .NET, özelleştirme için çeşitli seçenekler ve ayarlar sunar, ancak temel bir dönüşüm için hiçbir ek parametreye gerek yoktur.
+ Artık başlattığınıza göre`Document` nesne, dönüştürme işlemine devam edebilirsiniz. Aspose.Words for .NET, özelleştirme için çeşitli seçenekler ve ayarlar sunar, ancak temel dönüşüm için ek parametre gerekmez.
 
 ## Adım 5: Dönüştürülen Belgeyi Kaydetme
 

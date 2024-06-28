@@ -12,7 +12,7 @@ Ebből az átfogó oktatóanyagból megtudhatja, hogyan engedélyezheti és hasz
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Töltse be a dokumentumot
 Kezdésként töltse be a dokumentumot a Dokumentum osztály segítségével:

@@ -10,7 +10,7 @@ url: /zh-hant/java/document-converting/converting-documents-images/
 
 ## 將文件轉換為影像簡介
 
-在當今的數位時代，文件管理在各個行業中發揮著至關重要的作用。有時，您可能需要出於各種目的將文件轉換為圖像，例如在網站上顯示內容或為文件建立縮圖。 Java 開發人員可以使用 Aspose.Words for Java（一個用於文件操作的強大 API）有效率地完成此任務。在本逐步指南中，我們將探討如何使用 Aspose.Words for Java 將文件轉換為圖片。
+在當今的數位時代，文件管理在各個行業中發揮著至關重要的作用。有時，您可能需要將文件轉換為圖像以用於各種目的，例如在網站上顯示內容或為文件建立縮圖。 Java 開發人員可以使用 Aspose.Words for Java（一個用於文件操作的強大 API）有效率地完成此任務。在本逐步指南中，我們將探討如何使用 Aspose.Words for Java 將文件轉換為圖片。
 
 ## 先決條件
 

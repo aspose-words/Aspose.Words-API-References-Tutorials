@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/working-with-oleobjects-and-activex/insert-ole-object/
 ---
 
-Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der zeigt, wie Sie mit Aspose.Words für .NET ein OLE-Objekt in ein Word-Dokument einfügen.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der veranschaulicht, wie Sie mit Aspose.Words für .NET ein OLE-Objekt in ein Word-Dokument einfügen.
 
 ## Schritt 1: Importieren Sie die erforderlichen Referenzen
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die erforderlichen Referenzen zur Verwendung von Aspose.Words für .NET in Ihr Projekt importiert haben. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.

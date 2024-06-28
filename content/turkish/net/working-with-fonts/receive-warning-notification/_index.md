@@ -2,88 +2,116 @@
 title: Uyarı Bildirimi Alın
 linktitle: Uyarı Bildirimi Alın
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanırken nasıl uyarı bildirimi alacağınızı ve belgelerinizdeki sorunları veya uyarıları nasıl yöneteceğinizi öğrenin.
+description: Ayrıntılı kılavuzumuzla Aspose.Words for .NET'te yazı tipi değiştirme bildirimlerini nasıl alacağınızı öğrenin. Belgelerinizin her zaman doğru şekilde oluşturulduğundan emin olun.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/receive-warning-notification/
 ---
 
-Bu eğitimde Aspose.Words for .NET'i kullanırken nasıl uyarı bildirimi alacağınızı göstereceğiz. Bir belgeyi ayarlarken veya kaydederken uyarılar verilebilir. .NET projenizdeki kodu anlamanız ve uygulamanız için size adım adım rehberlik edeceğiz.
+Belgelerinizde beklenmedik yazı tipi sorunlarıyla uğraşmaktan yoruldunuz mu? Aspose.Words for .NET ile belge işleme sırasında olası sorunlardan haberdar olabilir, böylece belge kalitesini korumayı kolaylaştırabilirsiniz. Bu kapsamlı kılavuz, Aspose.Words'te uyarı bildirimlerini ayarlama konusunda size yol gösterecek ve bir daha asla önemli bir uyarıyı kaçırmamanızı sağlayacaktır.
 
 ## Önkoşullar
-Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
-- C# programlama dili hakkında çalışma bilgisi
-- .NET için Aspose.Words kütüphanesi projenizde yüklü
 
-## 1. Adım: Belge dizinini tanımlayın
- Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
+Dalışa geçmeden önce aşağıdakilere sahip olduğunuzdan emin olun:
+
+- Temel C# Bilgisi: C#'a aşinalık, adımları anlamanıza ve uygulamanıza yardımcı olacaktır.
+-  Aspose.Words for .NET Kütüphanesi: Buradan indirip yükleyin.[İndirme: {link](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi bir kurulum.
+-  Örnek Belge: Örnek bir belgeye sahip olun (örn.`Rendering.docx`) birlikte çalışmak.
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bunlar görevimiz için gereken sınıflara ve yöntemlere erişim sağlayacaktır.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.WarningInfo;
 ```
 
-## 2. Adım: Belgeyi yükleyin ve uyarı işleyicisini yapılandırın
- Belgeyi kullanarak yükleyin`Document` sınıf. Daha sonra, örneğinin bir örneğini oluşturun.`HandleDocumentWarnings` Uyarıları işlemek için sınıf.
+## Adım 1: Belge Dizinini Tanımlayın
+
+Öncelikle belgenizin saklandığı dizini belirtin. Bu, işlemek istediğiniz belgeyi bulmak için gereklidir.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc. WarningCallback = callback;
-```
-
-## 3. Adım: Düzeni güncelleyin ve belgeyi kaydedin
- numaralı telefonu arayarak belge düzenini güncelleyin.`UpdatePageLayout()` yöntem. Bu, varsa uyarıları tetikleyecektir. Daha sonra belgeyi kaydedin.
-
-```csharp
-doc.UpdatePageLayout();
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-```
-
-### Aspose.Words for .NET kullanarak Uyarı Bildirimi Alma için örnek kaynak kodu 
-
-```csharp
-
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Rendering.docx");
-// UpdatePageLayout'u çağırdığınızda belge bellekte işlenir. Oluşturma sırasında oluşan tüm uyarılar
-//belge kaydedilene kadar saklanır ve ardından uygun WarningCallback'e gönderilir.
-doc.UpdatePageLayout();
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc.WarningCallback = callback;
-// Doküman daha önce render edilmiş olsa dahi, doküman kaydedilirken herhangi bir kaydetme uyarısı kullanıcıya bildirilir.
-doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
-
 ```
 
+## Adım 2: Belgeyi Yükleyin
+
+ Belgenizi Aspose.Words'e yükleyin`Document` nesne. Bu, belgeyi programlı olarak değiştirmenize olanak tanır.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## 3. Adım: Sayfa Düzenini Güncelleyin
+
+ Ara`UpdatePageLayout` yöntem. Bu, belgeyi bellekte işler ve işleme sırasında meydana gelen tüm uyarıları yakalar.
+
+```csharp
+doc.UpdatePageLayout();
+```
+
+## Adım 4: Uyarı Geri Aramasını Ayarlayın
+
+ Uyarıları yakalamak ve işlemek için aşağıdakileri uygulayan bir sınıf oluşturun:`IWarningCallback` arayüz. Bu sınıf, belge işleme sırasında meydana gelen uyarıları günlüğe kaydeder.
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        // Biz yalnızca değiştirilen yazı tipleriyle ilgileniyoruz.
+        if (info.WarningType == WarningType.FontSubstitution)
+        {
+            Console.WriteLine("Font substitution: " + info.Description);
+        }
+    }
+}
+```
+
+## Adım 5: Geri Aramayı Belgeye Atayın
+
+Uyarı geri aramasını belgeye atayın. Bu, tüm yazı tipi sorunlarının yakalanıp günlüğe kaydedilmesini sağlar.
+
+```csharp
+HandleDocumentWarnings callback = new HandleDocumentWarnings();
+doc.WarningCallback = callback;
+```
+
+## Adım 6: Belgeyi Kaydedin
+
+Son olarak belgeyi kaydedin. Doküman daha önce render edilmiş olsa dahi bu adımda kullanıcıya kaydetme uyarısı iletilecektir.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
+```
+
+Bu adımları izleyerek, uygulamanızı yazı tipi değişikliklerini sorunsuz bir şekilde gerçekleştirecek ve değişiklik gerçekleştiğinde bildirim alacak şekilde yapılandırdınız.
+
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET'i kullanırken nasıl uyarı bildirimi alacağınızı öğrendiniz. Bir belgeyi ayarlarken veya kaydederken uyarılar verilebilir. Belgelerinizle ilgili herhangi bir sorun veya uyarıdan haberdar olmak için bu özelliği kullanın.
 
-### SSS'ler
+Artık Aspose.Words for .NET kullanarak yazı tipi değişiklikleri için bildirim alma sürecinde uzmanlaştınız. Bu beceri, gerekli yazı tipleri mevcut olmadığında bile belgelerinizin her zaman en iyi şekilde görünmesini sağlamanıza yardımcı olacaktır. Aspose.Words'ün gücünden tam anlamıyla yararlanmak için farklı ayarlarla denemeler yapmaya devam edin.
 
-#### S: Aspose.Words'te uyarı bildirimlerini nasıl alabilirim?
+## SSS
 
- C: Aspose.Words'te uyarı bildirimleri almak için`FontSettings` sınıf ve`WarningCallback` etkinlik. Belgeleri işlerken fontla ilgili uyarılarla karşılaşıldığında bilgilendirilecek bir geri çağırma yöntemi tanımlayabilirsiniz.
+### S1: Birden fazla varsayılan yazı tipi belirtebilir miyim?
 
-#### S: Aspose.Words'te yazı tipiyle ilgili yaygın uyarı türleri nelerdir?
+Hayır, değiştirme için yalnızca bir varsayılan yazı tipi belirleyebilirsiniz. Ancak birden çok yedek yazı tipi kaynağını yapılandırabilirsiniz.
 
-C: Aspose.Words'te yazı tipiyle ilgili bazı yaygın uyarı türleri şunlardır:
-- Eksik yazı tipleri
-- Değiştirilen yazı tipleri
-- Yazı tipi biçimlendirme sorunları
+### S2: Aspose.Words for .NET'in ücretsiz deneme sürümünü nereden edinebilirim?
 
-#### S: Word belgelerimde yazı tipiyle ilgili sorunları nasıl giderebilirim?
+ Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Ücretsiz deneme sayfasını aspose](https://releases.aspose.com/).
 
-C: Word belgelerinizdeki yazı tipiyle ilgili sorunları düzeltmek için aşağıdaki adımları uygulayabilirsiniz:
-- Aspose.Words uygulamanızı çalıştırdığınız sisteme eksik fontları yükleyin.
-- Orijinal yazı tiplerine görsel olarak benzeyen uygun yedek yazı tiplerini kullanın.
-- Tutarlı bir görünüm sağlamak için yazı tipi formatını kontrol edin ve ayarlayın.
+###  S3: Diğer uyarı türlerini şununla işleyebilir miyim?`IWarningCallback`?
 
-#### S: Aspose.Words'te yazı tipiyle ilgili uyarı bildirimleri almak neden önemlidir?
+ Evet`IWarningCallback` arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
 
-C: Aspose.Words'te yazı tipiyle ilgili uyarı bildirimleri almak önemlidir çünkü bunlar belgelerinizdeki olası sorunları belirlemenize yardımcı olur. Bu, bu sorunları çözmek için gerekli adımları atmanıza ve belgelerinizin kalitesinden emin olmanıza olanak tanır.
+### S4: Aspose.Words desteğini nerede bulabilirim?
 
-#### S: Aspose.Words'te uyarı bildirimlerini nasıl etkinleştirebilir veya devre dışı bırakabilirim?
+ Ziyaret edin[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım için.
 
- C: Aspose.Words'te uyarı bildirimlerini etkinleştirmek veya devre dışı bırakmak için`FontSettings.ShowFontWarnings` özelliği ve bunu şu şekilde ayarlayın:`true` veya`false`ihtiyaçlarınıza bağlı olarak. Etkinleştirildiğinde yazı tipiyle ilgili uyarı bildirimleri alırsınız.
+### S5: Aspose.Words için geçici lisans almak mümkün mü?
+
+ Evet, geçici lisansı şu adresten alabilirsiniz:[geçici lisans sayfası](https://purchase.aspose.com/temporary-license/).

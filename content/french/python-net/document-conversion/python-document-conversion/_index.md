@@ -63,7 +63,7 @@ pip install aspose-words
 
 3. Une fois l'installation terminée, vous pouvez commencer à utiliser Aspose.Words dans vos projets Python.
 
-## Effectuer une conversion de documents
+## Effectuer des conversions de documents
 
 ### Conversion de Word en PDF
 
@@ -99,7 +99,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 Outre Word et PDF, Aspose.Words for Python prend en charge divers formats de documents, notamment HTML, TXT, EPUB, etc.
 
-## Personnalisation de la conversion de documents
+## Personnalisation des conversions de documents
 
 ### Application du formatage et du style
 
@@ -173,7 +173,7 @@ doc.styles.default_font.size = 12
 doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ```
 
-## Automatisation de la conversion de documents
+## Automatisation des conversions de documents
 
 ### Écrire des scripts Python pour l'automatisation
 

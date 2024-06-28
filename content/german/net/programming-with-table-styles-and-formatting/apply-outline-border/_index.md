@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Schritt 5: Vorhandene Tabellenränder löschen
+## Schritt 5: Vorhandene Tabellenränder löschen.
 Um mit einem neuen Umrissrahmen zu beginnen, müssen wir zunächst alle vorhandenen Rahmen aus der Tabelle löschen. Dies kann mit der erfolgen`ClearBorders()` Methode.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Schritt 7: Füllen Sie die Zellen mit einer Hintergrundfarbe
-Um die visuelle Darstellung der Tabelle zu verbessern, können wir die Zellen mit einer Grundhintergrundfarbe füllen
+## Schritt 7: Füllen Sie die Zellen mit einer Hintergrundfarbe.
+Um die visuelle Darstellung der Tabelle zu verbessern, können wir die Zellen mit einer Grundhintergrundfarbe füllen.
 
 Idee. In diesem Beispiel verwenden wir eine hellgrüne Farbe.
 

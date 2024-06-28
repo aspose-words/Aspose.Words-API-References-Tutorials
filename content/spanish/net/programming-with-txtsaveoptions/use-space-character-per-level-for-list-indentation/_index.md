@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-En este ejemplo, creamos un nuevo documento y usamos DocumentBuilder para agregar texto y crear una lista con tres niveles de sangría. Hemos agregado tres elementos a la lista, y cada elemento tiene una sangría de un nivel adicional.
+En este ejemplo, creamos un nuevo documento y usamos DocumentBuilder para agregar texto y crear una lista con tres niveles de sangría. Hemos agregado tres elementos a la lista, y cada elemento indica un nivel adicional.
 
 ## Usar un carácter de espacio por nivel para la sangría de la lista
 
@@ -91,7 +91,7 @@ namespace Example
 
 ## Conclusión
 
-En esta guía, explicamos cómo usar Aspose.Words para .NET para aplicar la funcionalidad "Usar un carácter de espacio por nivel para la sangría de la lista". Si sigue los pasos proporcionados y utiliza el código fuente C# proporcionado, puede configurar fácilmente la sangría de las listas en sus documentos de Word utilizando un carácter de espacio por nivel. Aspose.Words ofrece una enorme flexibilidad y potencia para el procesamiento de textos con formato de texto y gestión de listas, lo que le permite crear documentos bien estructurados en su aplicación C#.
+En esta guía, explicamos cómo usar Aspose.Words para .NET para aplicar la funcionalidad "Usar un carácter de espacio por nivel para la sangría de la lista". Si sigue los pasos proporcionados y utiliza el código fuente C# proporcionado, puede configurar fácilmente la sangría de las listas en sus documentos de Word utilizando un carácter de espacio por nivel. Aspose.Words ofrece una tremenda flexibilidad y potencia para el procesamiento de textos con formato de texto y gestión de listas, lo que le permite crear documentos bien estructurados en su aplicación C#.
 
 ### Preguntas frecuentes
 

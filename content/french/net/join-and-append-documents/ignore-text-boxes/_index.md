@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Étape 4 : Ajouter le contenu de la zone de texte
 
- Créer un`NodeImporter` objet et utilisez-le pour importer des nœuds de zone de texte du document source vers le document de destination. Parcourez chaque paragraphe du document source et importez-le dans le document de destination.
+ Créer un`NodeImporter`objet et utilisez-le pour importer des nœuds de zone de texte du document source vers le document de destination. Parcourez chaque paragraphe du document source et importez-le dans le document de destination.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Étape 5 : Enregistrez le document de destination
 
- Enfin, enregistrez le document de destination modifié à l'aide du`Save` méthode du`Document` objet.
+Enfin, enregistrez le document de destination modifié à l'aide du`Save` méthode du`Document` objet.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

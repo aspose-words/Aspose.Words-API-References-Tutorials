@@ -2,7 +2,7 @@
 title: Równania matematyczne
 linktitle: Równania matematyczne
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodawać równania matematyczne do dokumentów programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak dodawać równania matematyczne do dokumentów programu Word przy użyciu Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/programming-with-officemath/math-equations/

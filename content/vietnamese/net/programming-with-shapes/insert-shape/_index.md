@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 3: Chèn hình
- Sử dụng`InsertShape` phương pháp của`DocumentBuilder` đối tượng để chèn hình vào tài liệu. Chỉ định loại hình dạng, vị trí ngang và dọc tương đối, kích thước trang, kích thước và kiểu gói. Bạn cũng có thể thiết lập góc xoay của các hình nếu muốn.
+ Sử dụng`InsertShape` phương pháp của`DocumentBuilder`đối tượng để chèn hình vào tài liệu. Chỉ định loại hình dạng, vị trí ngang và dọc tương đối, kích thước trang, kích thước và kiểu gói. Bạn cũng có thể thiết lập góc xoay của các hình nếu muốn.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

@@ -88,4 +88,4 @@ C: Evet, bir Word belgesindeki yazar alanının biçimini özelleştirmek mümk�
 
 #### S: Yazar alanı, yazarın adında daha sonra yapılan değişikliklere duyarlı mıdır?
 
-C: Evet, yazar alanı, yazar adında daha sonra yapılan değişikliklere duyarlıdır. Belge özelliklerinde yazar adını değiştirirseniz, belge alanları güncellenirken yazar alanı otomatik olarak yeni adla güncellenecektir.
+C: Evet, yazar alanı, yazar adında daha sonra yapılan değişikliklere duyarlıdır. Belge özelliklerinde yazar adını değiştirirseniz, belge alanları güncellenirken yazar alanı yeni adla otomatik olarak güncellenecektir.

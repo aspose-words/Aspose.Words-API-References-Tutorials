@@ -69,7 +69,7 @@ comparer.save("comparison_result.docx");
 
 ### 如何安装 Aspose.Words for Java？
 
-要安装 Aspose.Words for Java，请访问下载页面[这里](https://releases.aspose.com/words/java/)并按照提供的安装说明进行操作。
+要安装 Aspose.Words for Java，请访问下载页面。[这里](https://releases.aspose.com/words/java/)并按照提供的安装说明进行操作。
 
 ### 我可以比较不同格式的文档，例如 DOCX 和 PDF 吗？
 
@@ -77,7 +77,7 @@ Aspose.Words 主要处理 DOCX 格式的 Word 文档。要比较不同格式的�
 
 ### 使用 Aspose.Words 时文档大小有限制吗？
 
-Aspose.Words 可以有效地处理大型文档，但在处理极大的文件时，必须考虑系统的内存和性能。
+Aspose.Words 可以有效地处理大型文档，但在处理极大的文件时必须考虑系统的内存和性能。
 
 ### 我可以自定义比较结果中突出显示差异的方式吗？
 

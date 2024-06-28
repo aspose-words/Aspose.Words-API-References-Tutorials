@@ -2,102 +2,120 @@
 title: Przejdź, aby scalić pole w dokumencie programu Word
 linktitle: Przejdź, aby scalić pole w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zaimplementować funkcję Przenieś do pola scalania w dokumencie tekstowym Aspose.Words dla .NET, korzystając z przewodnika krok po kroku.
+description: Dowiedz się, jak przejść do pola scalania w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego obszernego przewodnika krok po kroku. Idealny dla programistów .NET.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
-tym przykładzie omówimy funkcję Przenieś do pola scalania w dokumencie programu Word w Aspose.Words dla .NET. Aspose.Words to potężna biblioteka do manipulacji dokumentami, która umożliwia programistom programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word. Funkcja Przenieś do pola scalania pozwala nam nawigować w celu scalania pól w dokumencie i wykonywać na nich różne operacje.
+## Wstęp
 
+No hej! Czy zdarzyło Ci się kiedyś zakopać w dokumencie programu Word i zastanawiać się, jak przejść do określonego pola scalania? To jak być w labiryncie bez mapy, prawda? Cóż, nie martw się więcej! Dzięki Aspose.Words dla .NET możesz płynnie przejść do pola scalania w swoim dokumencie. Niezależnie od tego, czy generujesz raporty, tworzysz spersonalizowane listy, czy po prostu automatyzujesz dokumenty programu Word, ten przewodnik przeprowadzi Cię krok po kroku przez cały proces. Zanurzmy się!
 
-## Wyjaśnienie kodu źródłowego krok po kroku
+## Warunki wstępne
 
-Przejrzyjmy kod źródłowy krok po kroku, aby zrozumieć, jak korzystać z funkcji Przenieś do pola scalania przy użyciu Aspose.Words dla .NET.
+Zanim przejdziemy do sedna sprawy, ustawmy nasze kaczki w rzędzie. Oto, czego potrzebujesz, aby zacząć:
 
-## Krok 1: Inicjowanie dokumentu i kreatora dokumentów
+-  Visual Studio: Upewnij się, że na komputerze jest zainstalowany program Visual Studio. Jeśli nie, możesz go pobrać[Tutaj](https://visualstudio.microsoft.com/).
+-  Aspose.Words dla .NET: Potrzebujesz biblioteki Aspose.Words. Można go pobrać z[ten link](https://releases.aspose.com/words/net/).
+- .NET Framework: Upewnij się, że masz zainstalowaną platformę .NET Framework.
 
-Najpierw zainicjuj obiekty Document i DocumentBuilder:
+## Importuj przestrzenie nazw
+
+Na początek zaimportujmy niezbędne przestrzenie nazw. Przypomina to konfigurowanie przestrzeni roboczej przed rozpoczęciem projektu.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Podzielmy proces na zrozumiałe etapy. Każdy krok zostanie dokładnie wyjaśniony, abyś miał pewność, że nie będziesz drapać się po głowie.
+
+## Krok 1: Utwórz nowy dokument
+
+Najpierw musisz utworzyć nowy dokument Word. To jest Twoje puste płótno, na którym wydarzy się cała magia.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2 Wstawienie pola scalającego i dodanie po nim tekstu
+ Na tym etapie inicjujemy nowy dokument i a`DocumentBuilder` obiekt. The`DocumentBuilder` jest Twoim narzędziem do skonstruowania dokumentu.
 
-Użyj metody InsertField klasy DocumentBuilder, aby wstawić pole scalania, a następnie dodaj po nim tekst:
+## Krok 2: Wstaw pole scalania
+
+Następnie wstawmy pole scalania. Pomyśl o tym jak o umieszczeniu znacznika w dokumencie, w którym dane zostaną scalone.
 
 ```csharp
 Field field = builder.InsertField("MERGEFIELD field");
 builder.Write(" Text after the field.");
 ```
 
-## Krok 3: Kursor konstruktora znajduje się obecnie na końcu dokumentu.
+Tutaj wstawiamy pole scalania o nazwie „field” i zaraz po nim dodajemy tekst. Ten tekst pomoże nam później określić położenie pola.
+
+## Krok 3: Przesuń kursor na koniec dokumentu
+
+Teraz przesuńmy kursor na koniec dokumentu. To jak umieszczenie pióra na końcu notatek i gotowość do dodania dalszych informacji.
 
 ```csharp
-Assert.Null(builder.CurrentNode);
+builder.MoveToDocumentEnd();
 ```
-## Krok 4: Przesunięcie kursora narzędzia do tworzenia dokumentów do pola scalania
 
-Aby przenieść kursor konstruktora dokumentów do pola scalania, użyj metody MoveToField klasy DocumentBuilder:
+ To polecenie przenosi`DocumentBuilder` kursor na koniec dokumentu, przygotowując nas do kolejnych kroków.
+
+## Krok 4: Przejdź do pola Scal
+
+Nadchodzi ekscytująca część! Przesuniemy teraz kursor do wstawionego wcześniej pola scalania.
 
 ```csharp
 builder.MoveToField(field, true);
 ```
 
-## Dodanie tekstu bezpośrednio po polu scalania
+To polecenie przesuwa kursor bezpośrednio za polem scalania. To jak przejście bezpośrednio do zakładki w książce.
 
-Gdy kursor narzędzia do tworzenia dokumentów znajdzie się w polu scalania, możesz dodać tekst bezpośrednio po nim, korzystając z metody Write:
+## Krok 5: Sprawdź położenie kursora
+
+Ważne jest, aby sprawdzić, czy nasz kursor rzeczywiście znajduje się tam, gdzie chcemy. Potraktuj to jako ponowne sprawdzenie swojej pracy.
 
 ```csharp
-Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+if (builder.CurrentNode == null)
+{
+    Console.WriteLine("Cursor is at the end of the document.");
+}
+else
+{
+    Console.WriteLine("Cursor is at a different position.");
+}
+```
+
+Ten fragment sprawdza, czy kursor znajduje się na końcu dokumentu i odpowiednio wyświetla komunikat.
+
+## Krok 6: Wpisz tekst po polu
+
+Na koniec dodajmy tekst bezpośrednio po polu scalania. To już ostatni szlif naszego dokumentu.
+
+```csharp
 builder.Write(" Text immediately after the field.");
 ```
 
-### Przykładowy kod źródłowy dla pola Move To Merge przy użyciu Aspose.Words dla .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Wstaw pole za pomocą narzędzia DocumentBuilder i dodaj po nim ciąg tekstu.
-Field field = builder.InsertField("MERGEFIELD field");
-builder.Write(" Text after the field.");
-
-// Kursor konstruktora znajduje się obecnie na końcu dokumentu.
-Assert.Null(builder.CurrentNode);
-// Możemy przenieść konstruktora do takiego pola, umieszczając kursor bezpośrednio za polem.
-builder.MoveToField(field, true);
-
-// Należy zauważyć, że kursor znajduje się w miejscu za węzłem FieldEnd pola, co oznacza, że w rzeczywistości nie znajdujemy się w polu.
-// Jeśli chcemy przenieść DocumentBuilder do wnętrza pola,
-// będziemy musieli przenieść go do węzła FieldStart lub FieldSeparator pola przy użyciu metody DocumentBuilder.MoveTo().
-Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-builder.Write(" Text immediately after the field.");
-```
+Tutaj dodajemy tekst zaraz po polu scalania, zapewniając, że ruch kursora przebiegł pomyślnie.
 
 ## Wniosek
 
-sprawdziliśmy funkcję Move To Merge Field w Aspose.Words dla .NET. Dowiedzieliśmy się, jak nawigować w celu scalania pól w dokumencie za pomocą klasy DocumentBuilder i wykonywać na nich operacje. Ta funkcja jest przydatna podczas programowego przetwarzania słów z łączeniem
+I masz to! Przejście do pola scalania w dokumencie programu Word za pomocą Aspose.Words dla .NET jest dziecinnie proste, jeśli podzielisz je na proste kroki. Postępując zgodnie z tym przewodnikiem, możesz bez wysiłku nawigować i manipulować dokumentami programu Word, dzięki czemu zadania automatyzacji dokumentów stają się dziecinnie proste. Zatem następnym razem, gdy znajdziesz się w labiryncie połączonych pól, będziesz mieć mapę, która Cię poprowadzi!
 
-### Często zadawane pytania dotyczące przejścia do pola scalania w dokumencie programu Word
+## Często zadawane pytania
 
-#### P: Jaki jest cel funkcji Move To Merge Field w Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom tworzenie, modyfikowanie i konwertowanie dokumentów programu Word programowo przy użyciu platformy .NET.
 
-O: Funkcja Move To Merge Field w Aspose.Words dla .NET umożliwia programistom nawigację w celu scalania pól w dokumencie programu Word i programowe wykonywanie na nich różnych operacji. Pola scalania to specjalne symbole zastępcze używane w dokumentach programu Word do operacji korespondencji seryjnej.
+### Jak zainstalować Aspose.Words dla .NET?
+ Możesz pobrać i zainstalować Aspose.Words dla .NET z[Tutaj](https://releases.aspose.com/words/net/). Postępuj zgodnie z instrukcjami instalacji podanymi na stronie internetowej.
 
-#### P: Jak mogę wstawić pole scalania do dokumentu programu Word przy użyciu Aspose.Words dla .NET?
+### Czy mogę używać Aspose.Words dla .NET z .NET Core?
+ Tak, Aspose.Words dla .NET jest kompatybilny z .NET Core. Więcej szczegółów znajdziesz w[dokumentacja](https://reference.aspose.com/words/net/).
 
-O: Możesz użyć metody InsertField klasy DocumentBuilder, aby wstawić pole scalające do dokumentu. Po wstawieniu pola scalającego możesz dodać treść, na przykład tekst, przed lub po polu, korzystając z metody Write.
+### Jak uzyskać tymczasową licencję na Aspose.Words?
+ Licencję tymczasową można uzyskać od[ten link](https://purchase.aspose.com/temporary-license/).
 
-#### P: Jak przenieść kursor narzędzia do tworzenia dokumentów do określonego pola scalania?
-
-O: Aby przenieść kursor narzędzia do tworzenia dokumentów do określonego pola scalania, użyj metody MoveToField klasy DocumentBuilder i przekaż pole jako parametr. Spowoduje to umieszczenie kursora bezpośrednio za polem scalania.
-
-#### P: Czy mogę dodać tekst do pola scalania, korzystając z funkcji Przenieś do pola scalania?
-
-O: Nie, funkcja Przenieś do pola scalania umieszcza kursor narzędzia do tworzenia dokumentów bezpośrednio za polem scalania. Aby dodać tekst do pola scalania, można użyć metody DocumentBuilder.MoveTo w celu przesunięcia kursora do węzła FieldStart lub FieldSeparator pola scalania.
-
-#### P: Jak mogę wykonywać operacje korespondencji seryjnej przy użyciu Aspose.Words dla .NET?
-
-Odp.: Aspose.Words dla .NET zapewnia szerokie wsparcie dla operacji korespondencji seryjnej. Za pomocą klasy MailMerge można wykonywać korespondencję seryjną przy użyciu danych z różnych źródeł, takich jak tablice, zestawy danych lub niestandardowe źródła danych.
+### Gdzie mogę znaleźć więcej przykładów i wsparcia dla Aspose.Words dla .NET?
+ Więcej przykładów i wsparcia znajdziesz na stronie[Aspose.Words dla forum .NET](https://forum.aspose.com/c/words/8).

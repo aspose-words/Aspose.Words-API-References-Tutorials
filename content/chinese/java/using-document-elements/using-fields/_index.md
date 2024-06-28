@@ -357,7 +357,7 @@ HandleMergeField类的源代码
 
 恭喜！您已经学习了如何使用 Aspose.Words for Java 中的字段来动态操作 Word 文档。这个强大的 API 使您能够完全控制文档，使其成为 Java 开发人员的宝贵资产。
 
-## 7. 常见问题解答
+## 7.常见问题解答
 
 ### Q1：哪里可以下载 Aspose.Words for Java？
 您可以从以下位置下载 Aspose.Words for Java：[这里](https://releases.aspose.com/words/java/).

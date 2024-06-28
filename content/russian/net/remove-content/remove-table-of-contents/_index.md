@@ -2,216 +2,103 @@
 title: Удалить оглавление в документе Word
 linktitle: Удалить оглавление в документе Word
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как удалить оглавление в документе Word с помощью Aspose.Words для .NET.
+description: Узнайте, как удалить оглавление (TOC) в документах Word с помощью Aspose.Words for .NET, с помощью этого простого руководства.
 type: docs
 weight: 10
 url: /ru/net/remove-content/remove-table-of-contents/
 ---
-В этом уроке мы покажем вам, как удалить оглавление в документе Word с помощью библиотеки Aspose.Words для .NET. Оглавление иногда может быть избыточным или ненужным, и этот код поможет вам эффективно удалить его. Мы предоставим пошаговое руководство, которое поможет вам понять и реализовать код в вашем собственном .NET-проекте.
+## Удалить оглавление в документе Word с помощью Aspose.Words для .NET
+
+Вы устали иметь дело с нежелательным оглавлением (TOC) в ваших документах Word? Мы все были в этом — иногда TOC просто не нужен. К счастью для вас, Aspose.Words для .NET позволяет легко удалить оглавление программным способом. В этом уроке я проведу вас шаг за шагом через этот процесс, чтобы вы могли освоить его в кратчайшие сроки. Давайте погрузимся прямо сейчас!
 
 ## Предварительные условия
-Прежде чем начать, убедитесь, что у вас есть следующие предметы:
-- Практическое знание языка программирования C#.
-- Библиотека Aspose.Words для .NET, установленная в вашем проекте.
-- Документ Word, содержащий оглавление, которое вы хотите удалить.
 
-## Шаг 1. Определите каталог документов.
- Во-первых, вам нужно установить путь к каталогу, соответствующий местоположению вашего документа Word. Заменять`"YOUR DOCUMENT DIRECTORY"` в коде с соответствующим путем.
+Прежде чем мы начнем, давайте убедимся, что у вас есть все необходимое:
+
+1.  Библиотека Aspose.Words для .NET. Если вы еще этого не сделали, загрузите и установите библиотеку Aspose.Words для .NET из[Релизы.](https://releases.aspose.com/words/net/).
+2. Среда разработки. IDE, такая как Visual Studio, упростит кодирование.
+3. .NET Framework: убедитесь, что у вас установлена .NET Framework.
+4. Документ Word: у вас есть документ Word (.docx) с оглавлением, который вы хотите удалить.
+
+## Импортировать пространства имен
+
+Прежде всего, давайте импортируем необходимые пространства имен. Это настраивает среду для использования Aspose.Words.
 
 ```csharp
-// Путь к каталогу ваших документов
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
+
+Теперь давайте разобьем процесс удаления оглавления из документа Word на четкие и выполнимые шаги.
+
+## Шаг 1. Настройте каталог документов
+
+Прежде чем мы сможем манипулировать вашим документом, нам необходимо определить, где он находится. Это путь к каталогу вашего документа.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Заменять`"YOUR DOCUMENT DIRECTORY"` с путем к папке с вашими документами. Здесь находится ваш файл Word.
 
 ## Шаг 2. Загрузите документ
- Далее мы загрузим документ Word в экземпляр`Document` класс, используя`Load` метод.
+
+Далее нам нужно загрузить документ Word в наше приложение. Aspose.Words делает это невероятно простым.
 
 ```csharp
-// Загрузите документ
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## Шаг 3. Удалите оглавление
- Чтобы удалить оглавление, мы пройдемся по типу TOC (оглавление).`FieldStart` узлы в документе. Мы сохраним эти узлы, чтобы иметь возможность быстрого доступа к ним и создать список узлов для удаления.
+ Заменять`"your-document.docx"` с именем вашего файла. Эта строка кода загружает ваш документ, и мы можем начать над ним работать.
+
+## Шаг 3. Определите и удалите поле TOC.
+
+Вот где происходит волшебство. Мы собираемся найти поле TOC и удалить его.
 
 ```csharp
-// Сохраните узлы FieldStart полей оглавления в документе для быстрого доступа.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Это список для хранения узлов, найденных внутри указанного TOC. Они будут удалены в конце этого метода.
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+Вот что происходит:
+- `doc.Range.Fields`: доступ ко всем полям документа.
+- `.Where(f => f.Type == FieldType.FieldTOC)`: фильтрует поля, чтобы найти только те, которые являются оглавлением.
+- `.ToList().ForEach(f => f.Remove())`: преобразует отфильтрованные поля в список и удаляет каждое из них.
 
-// Проверьте, существует ли указанный индекс TOC.
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## Шаг 4. Сохраните измененный документ
 
-bool isRemoving = true;
+Наконец, нам нужно сохранить наши изменения. Вы можете сохранить документ под новым именем, чтобы сохранить исходный файл.
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // Безопаснее сохранить эти узлы и удалить их все в конце.
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // Когда мы встречаем узел FieldEnd типа FieldTOC,
-     //мы знаем, что находимся в конце текущего содержания, и останавливаемся на этом.
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### Пример исходного кода для удаления оглавления с помощью Aspose.Words для .NET 
-```csharp
-
-// Путь к каталогу ваших документов
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// Загрузите документ
-Document doc = new Document(dataDir + "your-document.docx");
-
-// Сохраните узлы FieldStart полей оглавления в документе для быстрого доступа.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Это список для хранения узлов, найденных внутри указанного TOC. Они будут удалены в конце этого метода.
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// Убедитесь, что оглавление, указанное переданным индексом, существует.
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// Безопаснее сохранить эти узлы и позже удалить их все сразу.
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// Как только мы встретим узел FieldEnd типа FieldTOC,
-	// мы знаем, что находимся в конце текущего содержания и останавливаемся на этом.
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ Эта строка сохраняет ваш документ с внесенными изменениями. Заменять`"modified-document.docx"` с желаемым именем файла.
 
 ## Заключение
-В этом уроке мы представили пошаговое руководство по удалению оглавления из документа Word с помощью библиотеки Aspose.Words для .NET. Следуя предоставленному коду и инструкциям, вы можете легко удалить оглавление и улучшить макет вашего документа. Не забудьте адаптировать путь к каталогу и имена файлов в соответствии с вашими конкретными потребностями.
 
-### Часто задаваемые вопросы
+И вот оно! Удаление оглавления из документа Word с помощью Aspose.Words for .NET будет простым, если разбить его на эти простые шаги. Эта мощная библиотека не только помогает удалять TOC, но также может выполнять множество других манипуляций с документами. Итак, давай, попробуй!
 
-#### Вопрос: Почему мне следует использовать Aspose.Words для удаления оглавления в документе Word?
+## Часто задаваемые вопросы
 
-О: Aspose.Words — это мощная и универсальная библиотека классов для управления документами Word в приложениях .NET. Используя Aspose.Words, вы можете эффективно удалить оглавление из ваших документов, что может быть полезно, если оглавление избыточно или ненужно. Это позволяет вам настроить содержимое вашего документа и улучшить его общее представление.
+### 1. Что такое Aspose.Words для .NET?
 
-#### Вопрос: Как загрузить документ в Aspose.Words для .NET?
+Aspose.Words for .NET — это надежная библиотека .NET для манипулирования документами, позволяющая разработчикам создавать, изменять и конвертировать документы Word программным способом.
 
-О: Чтобы удалить оглавление в документе Word, необходимо сначала загрузить документ в память с помощью метода Load() класса Aspose.Words. Вот пример кода для загрузки документа из определенного каталога:
+### 2. Могу ли я использовать Aspose.Words бесплатно?
 
-```csharp
-// Путь к каталогу ваших документов
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ Да, вы можете использовать Aspose Words с.[бесплатная пробная версия](https://releases.aspose.com/) или получить[временная лицензия](https://purchase.aspose.com/temporary-license/).
 
-// Загрузите документ
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. Можно ли удалить другие поля с помощью Aspose.Words?
 
- Заменять`"YOUR DOCUMENTS DIRECTORY"` с фактическим путем к вашему документу.
+Абсолютно! Вы можете удалить любое поле, указав его тип в условии фильтра.
 
-#### Вопрос: Как удалить оглавление документа с помощью Aspose.Words?
+### 4. Нужна ли мне Visual Studio для использования Aspose.Words?
 
- О: Чтобы удалить TOC, вам нужно перебрать`FieldStart` введите узлы оглавления в документе. Вы можете сохранить эти узлы для быстрого доступа и создать список узлов для удаления. Вот пример кода:
+Хотя Visual Studio настоятельно рекомендуется для простоты разработки, вы можете использовать любую IDE, поддерживающую .NET.
 
-```csharp
-// Сохраните узлы FieldStart полей оглавления в документе для быстрого доступа.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//Это список для хранения узлов, найденных внутри указанного TOC. Они будут удалены в конце этого метода.
-List<Node> nodeList = new List<Node>();
+### 5. Где я могу найти дополнительную информацию об Aspose.Words?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// Проверьте, существует ли указанный индекс оглавления.
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// Безопаснее сохранить эти узлы и удалить их все в конце.
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// Когда мы встречаем узел FieldEnd типа FieldTOC,
-//мы знаем, что находимся в конце текущего содержания, и останавливаемся на этом.
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### Вопрос: Как сохранить отредактированный документ в Aspose.Words for .NET?
-
-О: После удаления оглавления необходимо сохранить измененный документ методом Save(). Укажите желаемый путь и формат выходного файла (например, DOCX) для редактируемого документа. Вот пример кода:
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ Для получения более подробной документации посетите[Документация Aspose.Words для .NET API](https://reference.aspose.com/words/net/).

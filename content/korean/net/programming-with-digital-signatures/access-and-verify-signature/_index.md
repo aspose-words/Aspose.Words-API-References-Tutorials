@@ -94,7 +94,7 @@ A: Word 문서의 디지털 서명을 통해 다음과 같은 다양한 정보�
 
  A: 예, Aspose.Words for .NET을 사용하여 Word 문서에서 디지털 서명의 유효성을 확인할 수 있습니다. 액세스하여`IsValid` 의 재산`DigitalSignature` 개체를 사용하면 서명이 유효한지 여부를 확인할 수 있습니다.
 
-#### Q: Aspose.Words for .NET을 사용하여 Word 문서에서 디지털 서명의 유효성을 어떻게 확인할 수 있나요?
+#### Q: Aspose.Words for .NET을 사용하여 Word 문서에서 디지털 서명의 유효성을 어떻게 확인할 수 있습니까?
 
 A: .NET용 Aspose.Words를 사용하여 Word 문서에서 디지털 서명의 유효성을 확인하려면 다음 단계를 따르세요.
 1.  액세스`DigitalSignatures` 문서 수집.
@@ -111,7 +111,7 @@ A: Aspose.Words for .NET의 서명 확인 기능은 DOCX 파일 형식을 사용
 
 #### Q: Aspose.Words for .NET을 사용하여 Word 문서에 있는 디지털 서명의 인증서 세부 정보에 어떻게 액세스할 수 있나요?
 
- A: Aspose.Words for .NET을 사용하여 Word 문서에 있는 디지털 서명의 인증서 세부 정보에 액세스하려면`CertificateHolder` 의 재산`DigitalSignature` 물체. 로부터`CertificateHolder` 개체 이름, 발급자 이름 등 인증서의 다양한 세부 정보를 검색할 수 있습니다.
+ A: .NET용 Aspose.Words를 사용하여 Word 문서에서 디지털 서명의 인증서 세부 정보에 액세스하려면`CertificateHolder` 의 재산`DigitalSignature` 물체. 로부터`CertificateHolder` 개체 이름, 발급자 이름 등 인증서의 다양한 세부 정보를 검색할 수 있습니다.
 
 #### Q: Aspose.Words for .NET을 사용하여 Word 문서에서 디지털 서명의 표시 또는 처리를 사용자 정의할 수 있습니까?
 

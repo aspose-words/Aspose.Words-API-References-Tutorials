@@ -62,7 +62,7 @@ Bu, Aspose.Words for .NET ile "Birleştirme Alan Adlarını Al" özelliğinin ku
 
 #### S1: Aspose.Words'te adres-mektup birleştirme nedir?
 
-Aspose.Words'de adres-mektup birleştirme, kişiselleştirilmiş belgeler oluşturmak için harici bir kaynaktan (örn. Excel elektronik tablosu veya veritabanı) verileri şablon bir Word belgesiyle birleştirme işlemidir. Bu, mektupların, raporların ve diğer benzer belgelerin otomatik olarak oluşturulmasını kolaylaştırır.
+Aspose.Words'de adres-mektup birleştirme, kişiselleştirilmiş belgeler oluşturmak için harici bir kaynaktan (örn. Excel elektronik tablosu veya veri tabanı) verileri şablon Word belgesiyle birleştirme işlemidir. Bu, mektupların, raporların ve diğer benzer belgelerin otomatik olarak oluşturulmasını kolaylaştırır.
 
 #### S2: Bir Word belgesinde bulunan adres-mektup birleştirme alanlarının listesini nasıl edinebilirim?
 
@@ -96,7 +96,7 @@ foreach (string fieldName in fieldNames)
 
 #### S: Aspose.Words'te adres-mektup birleştirme nedir?
 
-C: Aspose.Words'de adres-mektup birleştirme, kişiselleştirilmiş belgeler oluşturmak için harici bir kaynaktan (örn. Excel elektronik tablosu veya veri tabanı) verileri şablon Word belgesiyle birleştirme işlemidir. Bu, mektupların, raporların ve diğer benzer belgelerin otomatik olarak oluşturulmasını kolaylaştırır.
+C: Aspose.Words'te adres-mektup birleştirme, kişiselleştirilmiş belgeler oluşturmak için harici bir kaynaktan (örn. Excel elektronik tablosu veya veri tabanı) verileri şablon Word belgesiyle birleştirme işlemidir. Bu, mektupların, raporların ve diğer benzer belgelerin otomatik olarak oluşturulmasını kolaylaştırır.
 
 #### S: Bir Word belgesinde bulunan adres-mektup birleştirme alanlarının listesini nasıl edinebilirim?
 
@@ -108,7 +108,7 @@ C: Bir Word belgesinde bulunan adres-mektup birleştirme alanlarının listesini
 
 #### S: Adres-mektup birleştirme alanlarını Excel elektronik tablosu gibi harici bir veri kaynağından alabilir miyim?
 
-C: Evet, adres-mektup birleştirme alanlarını Excel elektronik tablosu gibi harici bir veri kaynağından alabilirsiniz. Bunun için Aspose.Words'ün veri bağlama özelliklerini kullanarak veri kaynağı ile bağlantı kurabilir ve mevcut alanların adlarını alabilirsiniz.
+C: Evet, adres-mektup birleştirme alanlarını Excel elektronik tablosu gibi harici bir veri kaynağından alabilirsiniz. Bunun için Aspose.Words'ün veri bağlama özelliklerini kullanarak veri kaynağıyla bağlantı kurabilir ve mevcut alanların adlarını alabilirsiniz.
 
 #### S: Adres-mektup birleştirme alanlarını belirli ölçütlere göre filtrelemek mümkün mü?
 

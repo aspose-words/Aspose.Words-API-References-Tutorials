@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-section/copy-section/
 ---
 
-W tym samouczku wyjaśnimy, jak skopiować sekcję z dokumentu programu Word do innego dokumentu za pomocą biblioteki Aspose.Words dla .NET. Kopiowanie sekcji umożliwia przeniesienie określonej sekcji z dokumentu źródłowego do dokumentu docelowego. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+tym samouczku wyjaśnimy, jak skopiować sekcję z dokumentu programu Word do innego dokumentu za pomocą biblioteki Aspose.Words dla .NET. Kopiowanie sekcji umożliwia przeniesienie określonej sekcji z dokumentu źródłowego do dokumentu docelowego. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## Krok 3: Skopiuj sekcję do dokumentu docelowego
- Aby skopiować sekcję z dokumentu źródłowego do dokumentu docelowego, użyjemy metody`ImportNode` metodę importowania sekcji źródłowej i dodawania jej do dokumentu docelowego.
+ Aby skopiować sekcję z dokumentu źródłowego do dokumentu docelowego, użyjemy metody`ImportNode`metodę importowania sekcji źródłowej i dodawania jej do dokumentu docelowego.
 
 ```csharp
 // Pobierz sekcję źródłową
@@ -72,7 +72,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 ```
 
 ## Wniosek
-tym samouczku widzieliśmy, jak skopiować sekcję z dokumentu programu Word do innego dokumentu za pomocą Aspose.Words dla .NET. Kopiowanie sekcji umożliwia łatwe przeniesienie określonych sekcji z dokumentu źródłowego do dokumentu docelowego. Możesz skorzystać z tej metody, aby efektywnie organizować sekcje dokumentów i manipulować nimi.
+W tym samouczku widzieliśmy, jak skopiować sekcję z dokumentu programu Word do innego dokumentu za pomocą Aspose.Words dla .NET. Kopiowanie sekcji umożliwia łatwe przeniesienie określonych sekcji z dokumentu źródłowego do dokumentu docelowego. Możesz skorzystać z tej metody, aby efektywnie organizować sekcje dokumentów i manipulować nimi.
 
 ### Często zadawane pytania
 
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### P: Jak załadować dokumenty źródłowe i docelowe w Aspose.Words dla .NET?
 
- O: Aby załadować dokument źródłowy do instancji`Document` klasa tzw`srcDoc` i utwórz pustą instancję`Document` klasa tzw`dstDoc` dla dokumentu docelowego możesz użyć następującego kodu:
+O: Aby załadować dokument źródłowy do instancji`Document` klasa tzw`srcDoc` i utwórz pustą instancję`Document` klasa tzw`dstDoc` dla dokumentu docelowego możesz użyć następującego kodu:
 
 ```csharp
 // Załaduj dokument źródłowy
@@ -120,7 +120,7 @@ dstDoc.Sections.Add(newSection);
 
 #### P: Jak zapisać dokument docelowy ze skopiowaną sekcją w Aspose.Words dla .NET?
 
-O: Na koniec możesz zapisać dokument docelowy zawierający skopiowaną sekcję do pliku, używając następującego kodu:
+Odp.: Na koniec możesz zapisać dokument docelowy zawierający skopiowaną sekcję do pliku, używając następującego kodu:
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");

@@ -18,7 +18,7 @@ url: /ar/java/document-conversion-and-export/formatting-tables-and-table-styles/
 
 ## احصل على المسافة بين الجدول والنص المحيط
 
-للبدء، دعنا نستكشف كيفية استرداد المسافة بين الجدول والنص المحيط به في المستند.
+للبدء، دعونا نستكشف كيفية استرداد المسافة بين الجدول والنص المحيط به في المستند.
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");

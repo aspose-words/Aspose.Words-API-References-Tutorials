@@ -50,7 +50,7 @@ Dieser Code setzt den Layoutmodus auf „Gitter“ und gibt dann die Anzahl der 
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Legen Sie den Layoutmodus für einen Abschnitt fest, um das Verhalten des Dokumentrasters zu definieren.
-	// Beachten Sie, dass die Registerkarte „Dokumentenraster“ im Dialogfeld „Seite einrichten“ von MS Word sichtbar wird
+	// Beachten Sie, dass die Registerkarte „Dokumentenraster“ im Dialogfeld „Seite einrichten“ von MS Word sichtbar wird.
 	// wenn eine asiatische Sprache als Bearbeitungssprache definiert ist.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

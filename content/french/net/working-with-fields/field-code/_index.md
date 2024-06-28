@@ -30,7 +30,7 @@ Assurez-vous de remplacer "Hyperlinks.docx" par le nom de votre propre fichier.
 
 ## Étape 3 : Parcourir les champs du document
 
- Nous utilisons un`foreach` loop pour parcourir tous les champs présents dans le document.
+ Nous utilisons un`foreach`loop pour parcourir tous les champs présents dans le document.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Ceci conclut notre guide sur l'utilisation de la fonctionnalité « Obtenir le c
 
 #### Q : Comment puis-je insérer un champ dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour insérer un champ dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`DocumentBuilder.InsertField` méthode spécifiant le code de champ approprié. Par exemple, vous pouvez utiliser`builder.InsertField("MERGEFIELD CustomerName")` pour insérer un champ de fusion dans le document.
+ R : Pour insérer un champ dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`DocumentBuilder.InsertField` méthode spécifiant le code de champ approprié. Par exemple, vous pouvez utiliser`builder.InsertField("MERGEFIELD CustomerName")`pour insérer un champ de fusion dans le document.
 
 #### Q : Comment puis-je mettre à jour les champs d'un document à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour mettre à jour les champs du document à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Document.UpdateFields`méthode. Cela mettra à jour tous les champs présents dans le document, tels que les champs de fusion, les champs de date, etc.
+ R : Pour mettre à jour les champs du document à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Document.UpdateFields` méthode. Cela mettra à jour tous les champs présents dans le document, tels que les champs de fusion, les champs de date, etc.
 
 #### Q : Comment puis-je récupérer la valeur d'un champ spécifique dans Aspose.Words pour .NET ?
 

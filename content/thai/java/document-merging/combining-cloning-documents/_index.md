@@ -33,7 +33,7 @@ import com.aspose.words.Document;
 
 public class DocumentCombination {
     public static void main(String[] args) {
-        // เริ่มต้น Aspose.Words
+        // เริ่มต้น Aspose
         Document doc = new Document();
     }
 }
@@ -41,7 +41,7 @@ public class DocumentCombination {
 
 ## ขั้นตอนที่ 2: โหลดเอกสารต้นฉบับ
 
-ถัดไป คุณจะต้องโหลดเอกสารต้นฉบับที่คุณต้องการรวม คุณสามารถโหลดเอกสารหลายฉบับลงในอินสแตนซ์ที่แยกจากกันได้`Document` ระดับ.
+ถัดไป คุณจะต้องโหลดเอกสารต้นฉบับที่คุณต้องการรวม คุณสามารถโหลดเอกสารหลายฉบับลงในอินสแตนซ์ที่แยกจากกันได้`Document` ชั้นเรียน
 
 ```java
 // โหลดเอกสารต้นฉบับ
@@ -58,7 +58,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, Document.ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-## ขั้นตอนที่ 4: บันทึกเอกสารรวม
+## ขั้นตอนที่ 4: บันทึกเอกสารที่รวมกัน
 
 สุดท้าย ให้บันทึกเอกสารที่รวมกันเป็นไฟล์
 
@@ -78,7 +78,7 @@ import com.aspose.words.Document;
 
 public class DocumentCloning {
     public static void main(String[] args) {
-        // เริ่มต้น Aspose.Words
+        // เริ่มต้น Aspose
         Document doc = new Document("source_document.docx");
     }
 }

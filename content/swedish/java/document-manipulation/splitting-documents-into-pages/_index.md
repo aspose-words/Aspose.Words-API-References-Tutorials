@@ -290,7 +290,7 @@ private void checkPageListsPopulated() throws Exception {
 		return;
 	}
 	reversePageLookup = new HashMap<Integer, ArrayList<Node>>();
-	// Lägg till varje nod i en lista som representerar noderna som finns på varje sida.
+	// Lägg till varje nod i en lista som representerar de noder som finns på varje sida.
 	for (Node node : (Iterable<Node>) collector.getDocument().getChildNodes(NodeType.ANY, true))
 	{
 		//Sidhuvuden/sidfötter följer avsnitt och delas inte av sig själva.
@@ -591,7 +591,7 @@ private CompositeNode splitCompositeAtNode(CompositeNode baseNode, Node targetNo
 	// Infoga den delade noden efter originalet.
 	baseNode.getParentNode().insertAfter(cloneNode, baseNode);
 	// Uppdatera de nya sidnumren för basnoden och den klonade noden, inklusive dess avkomlingar.
-	// Detta kommer bara att vara en enda sida eftersom den klonade sammansättningen delas för att vara på en sida.
+	// Detta kommer bara att vara en enda sida eftersom den klonade sammansättningen är delad för att vara på en sida.
 	int currentEndPageNum = pageNumberFinder.getPageEnd(baseNode);
 	pageNumberFinder.addPageNumbersForNode(baseNode, currentPageNum, currentEndPageNum - 1);
 	pageNumberFinder.addPageNumbersForNode(cloneNode, currentEndPageNum, currentEndPageNum);

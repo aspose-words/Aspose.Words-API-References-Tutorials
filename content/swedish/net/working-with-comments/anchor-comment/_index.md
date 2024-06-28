@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-comments/anchor-comment/
 ---
 
-I den här omfattande handledningen kommer du att lära dig hur du förankrar kommentarsvar till specifik text i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna associera kommentarer med specifik text i dina dokument.
+den här omfattande handledningen kommer du att lära dig hur du förankrar kommentarsvar till specifik text i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna associera kommentarer med specifik text i dina dokument.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Skapa tre Kör-objekt.
-// De två första kör lite text, medan den tredje kör en kommentar
+//De två första kör lite text, medan den tredje kör en kommentar
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ S: För att lägga till ett kommentarsankare i ett Aspose.Words för .NET-dokume
 
 #### F: Hur kan jag redigera texten i en kommentar som är länkad till ett kommentarsankare i Aspose.Words för .NET?
 
- S: För att ändra texten i en kommentar som är bunden till ett kommentarsankare i Aspose.Words för .NET kan du komma åt`Comment.Text` motsvarande egendom`Comment` objekt och ändra texten efter behov.
+S: För att ändra texten i en kommentar som är bunden till ett kommentarsankare i Aspose.Words för .NET kan du komma åt`Comment.Text` motsvarande egendom`Comment` objekt och ändra texten efter behov.
 

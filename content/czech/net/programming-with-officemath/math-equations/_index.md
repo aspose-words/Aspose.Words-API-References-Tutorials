@@ -12,7 +12,7 @@ Aspose.Words for .NET je výkonná knihovna pro vytváření, úpravy a manipula
 
 ## Porozumění knihovně Aspose.Words
 
-Než se ponoříte do kódu, je důležité porozumět knihovně Aspose.Words pro .NET. Aspose.Words je oblíbená knihovna, která usnadňuje a zefektivňuje zpracování textu s dokumenty aplikace Word. Nabízí širokou škálu funkcí pro vytváření, úpravu a manipulaci s dokumenty Wordu, včetně podpory matematických rovnic.
+Než se ponoříte do kódu, je důležité porozumět knihovně Aspose.Words pro .NET. Aspose.Words je oblíbená knihovna, která usnadňuje a zefektivňuje zpracování textu s dokumenty aplikace Word. Nabízí širokou škálu funkcí pro vytváření, úpravy a manipulaci s dokumenty Wordu, včetně podpory matematických rovnic.
 
 ## Načítání dokumentu aplikace Word
 

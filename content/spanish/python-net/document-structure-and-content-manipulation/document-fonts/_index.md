@@ -29,7 +29,7 @@ Los tamaños de fuente determinan la prominencia visual del texto. El texto del 
 
 ### Estilos de fuente
 
-Los estilos de fuente añaden énfasis al texto. El texto en negrita significa importancia, mientras que el texto en cursiva a menudo indica una definición o término extranjero. El subrayado también puede resaltar puntos clave.
+Los estilos de fuente añaden énfasis al texto. El texto en negrita indica importancia, mientras que el texto en cursiva suele indicar una definición o término extranjero. El subrayado también puede resaltar puntos clave.
 
 ## Color de texto y resaltado
 

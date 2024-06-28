@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 
 ## ขั้นตอนที่ 5: บันทึกเอกสารปลายทาง
 
- สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ.
+สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ วัตถุ
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
@@ -64,7 +64,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// ระบุว่าหากการขัดแย้งกันของหมายเลขในเอกสารต้นทางและปลายทาง
-	//จากนั้นจะใช้การกำหนดหมายเลขจากเอกสารต้นทาง
+	// จากนั้นจะใช้การกำหนดหมายเลขจากเอกสารต้นทาง
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

@@ -2,110 +2,113 @@
 title: دمج مستندات Word
 linktitle: دمج المستندات
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية دمج مستندات Word متعددة باستخدام Aspose.Words لـ .NET. تعمل واجهة برمجة التطبيقات القوية هذه على تبسيط عملية دمج المستندات، مما يجعلها فعالة ومباشرة.
+description: تعرف على كيفية دمج مستندات Word باستخدام Aspose.Words لـ .NET مع هذا الدليل الشامل خطوة بخطوة. مثالية لأتمتة سير عمل المستندات الخاصة بك.
 type: docs
 weight: 10
 url: /ar/net/split-document/merge-documents/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سنرشدك إلى كيفية دمج مستندات Word متعددة باستخدام ميزة دمج المستندات في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم الكود المصدري والحصول على مستند مدمج يحتوي على كافة المستندات المصدرية.
+مرحبًا يا من هناك! هل وجدت نفسك بحاجة إلى دمج مستندات Word متعددة في ملف واحد متماسك؟ سواء كنت تقوم بتجميع التقارير، أو تجميع المشروع، أو مجرد محاولة الترتيب، فإن دمج المستندات يمكن أن يوفر عليك الكثير من الوقت والجهد. مع Aspose.Words for .NET، تصبح هذه العملية في غاية السهولة. في هذا البرنامج التعليمي، سنتعرف على كيفية دمج مستندات Word باستخدام Aspose.Words لـ .NET، مع تفصيل كل خطوة حتى تتمكن من المتابعة بسهولة. وفي النهاية، ستتمكن من دمج المستندات مثل المحترفين!
 
-## الخطوة 1: ابحث عن المستندات لدمجها
+## المتطلبات الأساسية
 
-قبل دمج المستندات، نحتاج إلى تحديد موقع المستندات المصدر المراد دمجها. إليك الطريقة:
+قبل أن نتعمق، دعونا نتأكد من حصولك على كل ما تحتاجه:
+
+1. المعرفة الأساسية بـ C#: يجب أن تكون مرتاحًا لبناء جملة C# ومفاهيمها.
+2.  Aspose.Words لـ .NET: قم بتنزيله[هنا](https://releases.aspose.com/words/net/) . إذا كنت تستكشف فقط، فيمكنك البدء بـ[تجربة مجانية](https://releases.aspose.com/).
+3. Visual Studio: يجب أن يعمل أي إصدار حديث، ولكن يوصى باستخدام الإصدار الأحدث.
+4. .NET Framework: تأكد من تثبيته على نظامك.
+
+حسنًا، الآن بعد أن قمنا بفرز المتطلبات الأساسية، فلننتقل إلى الجزء الممتع!
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، نحتاج إلى استيراد مساحات الأسماء الضرورية للعمل مع Aspose.Words. يتيح لنا ذلك الوصول إلى جميع الفئات والأساليب التي سنحتاجها.
 
 ```csharp
-// المسار إلى دليل المستندات.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// ابحث عن المستندات لدمجها.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-.GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.LowCode;
 ```
 
-## الخطوة 2: دمج المستندات
+تعد مساحات الأسماء هذه ضرورية لإنشاء المستندات ومعالجتها وحفظها بتنسيقات مختلفة.
 
-سنقوم الآن بدمج المستندات واحدًا تلو الآخر لإنشاء مستند مدمج نهائي. إليك الطريقة:
+## الخطوة 1: إعداد دليل المستندات
 
-```csharp
-// افتح الجزء الأول من المستند الناتج.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// قم بإنشاء مستند جديد ناتج.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// دمج المستندات واحدة تلو الأخرى.
-foreach(FileSystemInfo documentPath in documentPaths)
-{
-if (documentPath.FullName == sourceDocumentPath)
-keep on going;
-
-mergedDocBuilder.MoveToDocumentEnd();
-mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-```
-
-### مثال على التعليمات البرمجية المصدر لدمج المستندات باستخدام Aspose.Words لـ .NET
-
-فيما يلي الكود المصدري الكامل لميزة دمج المستندات في Aspose.Words for .NET:
+قبل أن نبدأ في دمج المستندات، نحتاج إلى تحديد الدليل الذي تم تخزين مستنداتنا فيه. يساعد هذا Aspose.Words في تحديد موقع الملفات التي نريد دمجها.
 
 ```csharp
-// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// ابحث عن المستندات التي تستخدم للدمج.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
-
-// افتح الجزء الأول من المستند الناتج.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// قم بإنشاء مستند جديد ناتج.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// دمج أجزاء المستند واحدًا تلو الآخر.
-foreach (FileSystemInfo documentPath in documentPaths)
-{
-	if (documentPath.FullName == sourceDocumentPath)
-		continue;
-
-	mergedDocBuilder.MoveToDocumentEnd();
-	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-	sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
+
+ هنا، قمنا بتعيين المسار إلى الدليل الذي توجد به مستندات Word الخاصة بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي
+
+## الخطوة 2: دمج بسيط
+
+ لنبدأ بدمج بسيط. سنقوم بدمج وثيقتين في وثيقة واحدة باستخدام`Merger.Merge` طريقة.
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
+```
+
+ في هذه الخطوة نقوم بالدمج`Document1.docx` و`Document2.docx` في ملف جديد اسمه`MergedDocument.docx`.
+
+## الخطوة 3: الدمج مع خيارات الحفظ
+
+في بعض الأحيان، قد ترغب في تعيين خيارات معينة للمستند المدمج، مثل الحماية بكلمة مرور. وإليك كيف يمكنك القيام بذلك:
+
+```csharp
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" };
+Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
+```
+
+يقوم مقتطف الكود هذا بدمج المستندات مع الحماية بكلمة مرور، مما يضمن أمان المستند النهائي.
+
+## الخطوة 4: الدمج والحفظ بصيغة PDF
+
+إذا كنت بحاجة إلى دمج المستندات وحفظ النتيجة كملف PDF، فإن Aspose.Words يجعل الأمر سهلاً:
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
+```
+
+ هنا، ندمج`Document1.docx` و`Document2.docx` وحفظ النتيجة كملف PDF.
+
+## الخطوة 5: إنشاء مثيل مستند من المستندات المدمجة
+
+في بعض الأحيان، قد ترغب في العمل على المستند المدمج بشكل أكبر قبل حفظه. يمكنك إنشاء`Document` مثال من المستندات المدمجة:
+
+```csharp
+Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
+doc.Save(dataDir + "MergedDocumentInstance.docx");
+```
+
+ في هذه الخطوة نقوم بإنشاء`Document` مثيل من المستندات المدمجة، مما يسمح بمزيد من المعالجة قبل الحفظ.
 
 ## خاتمة
 
-تهانينا! لقد تعلمت كيفية دمج مستندات Word متعددة باستخدام ميزة دمج المستندات في Aspose.Words لـ .NET. باتباع التعليمات البرمجية المصدر المتوفرة، يمكنك دمج مستندات منفصلة في مستند مدمج واحد مع الحفاظ على تنسيق كل مستند مصدر.
+ وهناك لديك! لقد تعلمت كيفية دمج مستندات Word باستخدام Aspose.Words لـ .NET. يغطي هذا البرنامج التعليمي إعداد البيئة الخاصة بك، وإجراء عمليات دمج بسيطة، والدمج مع خيارات الحفظ، وتحويل المستندات المدمجة إلى PDF، وإنشاء نسخة مستند من المستندات المدمجة. يقدم Aspose.Words مجموعة واسعة من الميزات، لذا تأكد من استكشاف[وثائق واجهة برمجة التطبيقات](https://reference.aspose.com/words/net/) لإطلاق العنان لإمكاناته الكاملة.
 
-يمكن أن يكون دمج المستندات مفيدًا عندما تريد دمج المعلومات من مصادر متعددة أو إنشاء مستند موحد من أجزاء فردية. يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية تعمل على تبسيط عملية دمج المستندات، مما يجعلها فعالة ومباشرة.
+## الأسئلة الشائعة
 
-لا تتردد في استكشاف الميزات الأخرى التي تقدمها Aspose.Words لـ .NET لتعزيز قدرات معالجة المستندات لديك وتبسيط سير عملك.
+### 1. ما هو Aspose.Words لـ .NET؟
 
-### الأسئلة الشائعة
+Aspose.Words for .NET هي مكتبة قوية تتيح للمطورين إنشاء مستندات Word ومعالجتها وتحويلها برمجيًا. إنه مثالي لأتمتة المهام المتعلقة بالمستندات.
 
-#### كيف يمكنني دمج المستندات ذات التنسيقات المختلفة؟
+### 2. هل يمكنني استخدام Aspose.Words لـ .NET مجانًا؟
 
- عند دمج المستندات، يوفر Aspose.Words for .NET خيار الحفاظ على تنسيق كل مستند مصدر. باستخدام`ImportFormatMode.KeepSourceFormatting` الخيار، سيحتفظ المستند المدمج بتنسيق المستندات الأصلية. إذا كنت تريد تطبيق تنسيق متسق على المستند المدمج، فيمكنك تعديل التنسيق باستخدام Aspose.Words API بعد دمج المستندات.
+ يمكنك تجربة Aspose.Words لـ .NET باستخدام ملف[تجربة مجانية](https://releases.aspose.com/). للاستخدام طويل الأمد، ستحتاج إلى شراء ترخيص.
 
-#### هل يمكنني دمج المستندات بتنسيقات مختلفة؟
+### 3. كيف أتعامل مع التنسيقات المختلفة أثناء الدمج؟
 
-نعم، يدعم Aspose.Words for .NET دمج المستندات بتنسيقات مختلفة، بما في ذلك DOCX وDOC وRTF والمزيد. يمكنك تحميل مستندات بتنسيقات مختلفة في Aspose.Words API ودمجها في مستند واحد بغض النظر عن تنسيقاتها الأصلية.
+ يوفر Aspose.Words أوضاع تنسيق دمج متنوعة مثل`KeepSourceFormatting` و`MergeFormatting` . الرجوع إلى[وثائق واجهة برمجة التطبيقات](https://reference.aspose.com/words/net/) للحصول على تعليمات مفصلة.
 
-#### هل يمكنني دمج المستندات ذات الهياكل المعقدة، مثل الجداول والصور؟
+### 4. كيف يمكنني الحصول على الدعم لـ Aspose.Words لـ .NET؟
 
-قطعاً! Aspose.Words for .NET قادر على دمج المستندات ذات الهياكل المعقدة، بما في ذلك الجداول والصور والرؤوس والتذييلات والمزيد. تتعامل واجهة برمجة التطبيقات (API) مع عملية الدمج مع الحفاظ على سلامة وتخطيط المحتوى في كل مستند.
+يمكنك الحصول على الدعم من خلال زيارة[Aspose منتدى الدعم](https://forum.aspose.com/c/words/8).
 
-#### هل من الممكن دمج المستندات ذات اتجاهات أو أحجام صفحات مختلفة؟
+### 5. هل يمكنني دمج تنسيقات ملفات أخرى مع Aspose.Words لـ .NET؟
 
-نعم، يتعامل Aspose.Words for .NET مع المستندات ذات اتجاهات الصفحة أو الأحجام المختلفة أثناء عملية الدمج. سوف يستوعب المستند المدمج الناتج اتجاهات الصفحة وأحجامها المختلفة للمستندات المصدر.
+نعم، يدعم Aspose.Words دمج تنسيقات الملفات المختلفة، بما في ذلك DOCX وPDF وHTML.

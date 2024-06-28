@@ -74,7 +74,7 @@ Sentiti libero di esplorare altre potenti funzionalità offerte da Aspose.Words 
  Sì, puoi estrarre pagine non consecutive specificando l'intervallo di pagine desiderato. Ad esempio, se desideri estrarre le pagine 1, 3 e 5, puoi impostare l'intervallo di pagine come`1,3,5` nel`ExtractPages` funzione.
 
 #### Q2: È possibile estrarre un intervallo di pagine specifico da più documenti contemporaneamente?
-Sì, puoi applicare la funzione "Per intervallo di pagine" a più documenti. Basta caricare ciascun documento singolarmente ed estrarre l'intervallo di pagine desiderato utilizzando il file`ExtractPages` funzione. È quindi possibile salvare separatamente le pagine estratte da ciascun documento.
+ Sì, puoi applicare la funzione "Per intervallo di pagine" a più documenti. Basta caricare ciascun documento singolarmente ed estrarre l'intervallo di pagine desiderato utilizzando il file`ExtractPages` funzione. È quindi possibile salvare separatamente le pagine estratte da ciascun documento.
 
 #### Q3: Posso estrarre intervalli di pagine da documenti Word crittografati o protetti da password?
 No, la funzione "Per intervallo di pagine" funziona su documenti Word non protetti. Se un documento è crittografato o protetto da password, dovrai fornire la password corretta e rimuovere la protezione prima di estrarre l'intervallo di pagine desiderato.

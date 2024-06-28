@@ -2,86 +2,122 @@
 title: Uzyskaj podstawienie bez przyrostków
 linktitle: Uzyskaj podstawienie bez przyrostków
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: W tym samouczku dowiesz się, jak uzyskać zastąpienia bez sufiksów w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak zarządzać zastępowaniem czcionek bez przyrostków w Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby mieć pewność, że Twoje dokumenty będą wyglądać idealnie za każdym razem.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-W tym samouczku pokażemy, jak uzyskać zastąpienia bez przyrostków w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Zastąpienia bez przyrostków służą do rozwiązywania problemów z zastępowaniem czcionek podczas wyświetlania lub drukowania dokumentów. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+Witamy w tym kompleksowym przewodniku na temat zarządzania zastępowaniem czcionek przy użyciu Aspose.Words dla .NET. Jeśli kiedykolwiek miałeś problem z nieprawidłowym wyświetlaniem czcionek w dokumentach, trafiłeś we właściwe miejsce. Ten samouczek przeprowadzi Cię krok po kroku przez proces skutecznego zastępowania czcionek bez przyrostków. Zacznijmy!
 
 ## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-- Praktyczna znajomość języka programowania C#
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
+
+Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące elementy:
+
+- Podstawowa znajomość języka C#: Zrozumienie programowania w języku C# ułatwi wykonanie i wdrożenie poszczególnych kroków.
+-  Aspose.Words dla biblioteki .NET: Pobierz i zainstaluj bibliotekę z[link do pobrania](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Skonfiguruj środowisko programistyczne, takie jak Visual Studio, aby pisać i uruchamiać kod.
+-  Przykładowy dokument: przykładowy dokument (np.`Rendering.docx`), z którymi będziesz pracować w tym samouczku.
+
+## Importuj przestrzenie nazw
+
+Najpierw musimy zaimportować niezbędne przestrzenie nazw, aby uzyskać dostęp do klas i metod dostarczonych przez Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
+```
 
 ## Krok 1: Zdefiniuj katalog dokumentów
- Najpierw musisz ustawić ścieżkę katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+
+Aby rozpocząć, określ katalog, w którym znajduje się Twój dokument. Pomaga to w zlokalizowaniu dokumentu, nad którym chcesz pracować.
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Krok 2: Załaduj dokument i skonfiguruj podstawienia bez przyrostków
- Następnie załadujemy dokument za pomocą metody`Document` class i skonfiguruj podstawienia bez sufiksów za pomocą`DocumentSubstitutionWarnings` klasa. Dodamy także źródło czcionek, określając folder zawierający czcionki.
-
-```csharp
-// Załaduj dokument i skonfiguruj podstawienia bez przyrostków
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## Krok 3: Zapisz dokument
-Na koniec zapiszemy dokument z zastosowanymi zastąpieniami bez przyrostka.
-
-```csharp
-// Zapisz dokument
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### Przykładowy kod źródłowy funkcji Uzyskaj podstawienie bez przyrostków przy użyciu Aspose.Words dla .NET 
-```csharp
-
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## Krok 2: Skonfiguruj procedurę obsługi ostrzeżeń o podstawieniach
+
+Następnie musimy skonfigurować procedurę obsługi ostrzeżeń, która powiadomi nas za każdym razem, gdy podczas przetwarzania dokumentu nastąpi zamiana czcionki. Ma to kluczowe znaczenie dla wychwytywania i rozwiązywania wszelkich problemów z czcionkami.
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## Krok 3: Dodaj niestandardowe źródła czcionek
+
+W tym kroku dodamy niestandardowe źródła czcionek, aby mieć pewność, że Aspose.Words będzie w stanie zlokalizować i używać właściwych czcionek. Jest to szczególnie przydatne, jeśli masz określone czcionki przechowywane w niestandardowych katalogach.
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+W tym kodzie:
+-  Pobieramy bieżące źródła czcionek i dodajemy nowe`FolderFontSource` wskazując na nasz niestandardowy katalog czcionek (`C:\\MyFonts\\`).
+- Następnie aktualizujemy źródła czcionek za pomocą tej nowej listy.
+
+## Krok 4: Zapisz dokument
+
+Na koniec zapisz dokument po zastosowaniu ustawień zastępowania czcionek. Na potrzeby tego samouczka zapiszemy go w formacie PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## Krok 5: Utwórz klasę obsługi ostrzeżeń
+
+Aby skutecznie obsługiwać ostrzeżenia, utwórz klasę niestandardową, która implementuje metodę`IWarningCallback` interfejs. Ta klasa będzie przechwytywać i rejestrować wszelkie ostrzeżenia dotyczące podstawiania czcionek.
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+W tej klasie:
+-  The`Warning` metoda przechwytuje ostrzeżenia związane z zastępowaniem czcionek.
+-  The`FontWarnings` kolekcja przechowuje te ostrzeżenia do dalszej kontroli lub rejestrowania.
+
 ## Wniosek
-W tym samouczku widzieliśmy, jak uzyskać zastąpienia bez przyrostków w dokumencie programu Word za pomocą Aspose.Words dla .NET. Podstawienia bez przyrostków są przydatne przy rozwiązywaniu problemów z zastępowaniem czcionek. Możesz skorzystać z tej funkcji, aby ulepszyć wyświetlanie i drukowanie dokumentów.
 
-### Często zadawane pytania
+Opanowałeś teraz proces obsługi zastępowania czcionek bez przyrostków przy użyciu Aspose.Words dla .NET. Dzięki tej wiedzy Twoje dokumenty zachowają swój zamierzony wygląd, niezależnie od czcionek dostępnych w systemie. Eksperymentuj z różnymi ustawieniami i źródłami, aby w pełni wykorzystać moc Aspose.Words.
 
-#### P: Dlaczego Aspose.Words dodaje przyrostki do podstawień czcionek?
+## Często zadawane pytania
 
-Odp.: Aspose.Words dodaje przyrostki do zastępowań czcionek, aby uniknąć konfliktów między czcionkami oryginalnymi i czcionkami podstawionymi. Pomaga to zapewnić maksymalną kompatybilność podczas konwertowania dokumentów i manipulowania nimi.
+### P1: Jak mogę używać czcionek z wielu niestandardowych katalogów?
 
-#### P: Jak mogę pobrać podstawienia czcionek bez przyrostków w Aspose.Words?
+ Możesz dodać wiele`FolderFontSource` przypadki do`fontSources` wylistuj i odpowiednio zaktualizuj źródła czcionek.
 
- O: Aby pobrać podstawienia czcionek bez przyrostków w Aspose.Words, możesz użyć metody`FontSubstitutionSettings` klasa i`RemoveSuffixes` nieruchomość. Ustawienie tej właściwości na`true` otrzyma podstawienia czcionek bez dodanych przyrostków.
+### P2: Gdzie mogę pobrać bezpłatną wersję próbną Aspose.Words dla .NET?
 
-#### P: Czy można wyłączyć dodawanie przyrostków do podstawień czcionek w Aspose.Words?
+ Możesz pobrać bezpłatną wersję próbną ze strony[Aspose bezpłatna strona próbna](https://releases.aspose.com/).
 
-O: Nie, nie można wyłączyć dodawania przyrostków do podstawień czcionek w Aspose.Words. Przyrostki są dodawane domyślnie, aby zapewnić zgodność i spójność dokumentu.
+###  P3: Czy mogę obsługiwać wiele typów ostrzeżeń za pomocą`IWarningCallback`?
 
-#### P: Jak mogę odfiltrować niechciane przyrostki w podstawieniach czcionek w Aspose.Words?
+ Tak`IWarningCallback` interfejs pozwala na obsługę różnego rodzaju ostrzeżeń, a nie tylko podmiany czcionek.
 
- O: Aby odfiltrować niechciane sufiksy w podstawieniach czcionek w Aspose.Words, możesz użyć technik przetwarzania ciągów, takich jak użycie`Replace` Lub`Substring` metody usuwania określonych przyrostków, których nie chcesz dołączać.
+### P4: Gdzie mogę uzyskać wsparcie dla Aspose.Words?
+
+ Aby uzyskać pomoc, odwiedź stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### P5: Czy można kupić licencję tymczasową?
+
+ Tak, możesz uzyskać tymczasową licencję od[strona licencji tymczasowej](https://purchase.aspose.com/temporary-license/).

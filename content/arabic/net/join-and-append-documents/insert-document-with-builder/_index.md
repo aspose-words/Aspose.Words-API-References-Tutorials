@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## الخطوة 4: ضع DocumentBuilder
 
- حرك ال`DocumentBuilder` إلى نهاية المستند باستخدام`MoveToDocumentEnd` طريقة. قم بإدراج فاصل صفحات لفصل المحتوى الموجود عن المستند المدرج.
+حرك ال`DocumentBuilder` إلى نهاية المستند باستخدام`MoveToDocumentEnd` طريقة. قم بإدراج فاصل صفحات لفصل المحتوى الموجود عن المستند المدرج.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## الخطوة 6: احفظ المستند المعدل
 
- وأخيرًا، احفظ مستند الوجهة المعدل باستخدام الملف`Save` طريقة`Document` هدف.
+وأخيرًا، احفظ مستند الوجهة المعدل باستخدام الملف`Save` طريقة`Document` هدف.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

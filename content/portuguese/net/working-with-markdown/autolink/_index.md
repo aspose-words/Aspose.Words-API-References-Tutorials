@@ -58,7 +58,7 @@ Parabéns! Agora você aprendeu como usar o recurso "Autolink" com Aspose.Words 
 
 #### P: Como posso criar um link automático para um endereço URL no Aspose.Words?
 
-R: Para criar um link automático para um endereço URL no Aspose.Words, você pode usar o`<a>` marque com o`href` atributo que contém o endereço URL. Por exemplo, você pode usar`<a href="https://www.aspose.com">https://www.aspose.com</a>` para vincular automaticamente ao "https: //www.aspose.com".
+ R: Para criar um link automático para um endereço URL no Aspose.Words, você pode usar o`<a>` marque com o`href` atributo que contém o endereço URL. Por exemplo, você pode usar`<a href="https://www.aspose.com">https://www.aspose.com</a>` para vincular automaticamente ao "https: //www.aspose.com".
 
 #### P: É possível personalizar o texto de exibição de um link automático no Aspose.Words?
 
@@ -66,4 +66,4 @@ R: Para criar um link automático para um endereço URL no Aspose.Words, você p
 
 #### P: Como posso adicionar atributos adicionais a um link automático no Aspose.Words?
 
- R: Para adicionar atributos adicionais a um link automático no Aspose.Words, você pode usar atributos HTML adicionais dentro do`<a>` marcação. Por exemplo, você pode usar`<a href="https://www.aspose.com" target="_blank">Link</a>` para abrir o link em uma nova janela ou guia usando o` attribute target="_blank"`.
+R: Para adicionar atributos adicionais a um link automático no Aspose.Words, você pode usar atributos HTML adicionais dentro do`<a>` marcação. Por exemplo, você pode usar`<a href="https://www.aspose.com" target="_blank">Link</a>` para abrir o link em uma nova janela ou guia usando o` attribute target="_blank"`.

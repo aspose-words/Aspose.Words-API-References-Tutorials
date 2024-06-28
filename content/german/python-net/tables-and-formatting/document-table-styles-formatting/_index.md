@@ -1,7 +1,7 @@
 ---
 title: Dokumenttabellenstile und -formatierung mit Aspose.Words Python
 linktitle: Dokumenttabellenstile und -formatierung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie Dokumenttabellen mit Aspose.Words für Python formatieren und formatieren. Erstellen, anpassen und exportieren Sie Tabellen mit Schritt-für-Schritt-Anleitungen und Codebeispielen. Verbessern Sie noch heute Ihre Dokumentpräsentationen!
 type: docs
 weight: 12

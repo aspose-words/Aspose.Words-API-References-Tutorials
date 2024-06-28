@@ -80,7 +80,7 @@ doc.save("Your Directory Path" + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 
 ## 6. lépés: A sorkönyvjelzők feloldása
 
-A soros könyvjelzők feloldása lehetővé teszi, hogy hatékonyabban dolgozzon velük:
+A sorkönyvjelzők feloldása lehetővé teszi, hogy hatékonyabban dolgozzon velük:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Table column bookmarks.docx");

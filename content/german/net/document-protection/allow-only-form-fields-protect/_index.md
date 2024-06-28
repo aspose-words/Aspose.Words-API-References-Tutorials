@@ -107,7 +107,7 @@ A: Ja, Sie können Formularfelder mit Aspose.Words für .NET in ein geschütztes
 
  A: Ja, Sie können den Dokumentschutz von einem geschützten Dokument mit Aspose.Words für .NET entfernen. Um den Schutz zu entfernen, können Sie die verwenden`Unprotect` Methode der`Document` Klasse und geben Sie das richtige Passwort ein. Dadurch wird der Schutz aufgehoben und das Dokument kann uneingeschränkt bearbeitet werden.
 
-#### F: Ist es möglich, ein Dokument mit mehreren Schutzarten zu schützen?
+#### F: Ist es möglich, ein Dokument mit mehreren Schutztypen zu schützen?
 
  A: Nein, mit Aspose.Words für .NET kann jeweils nur ein Schutztyp auf ein Dokument angewendet werden. Allerdings ist die`AllowOnlyFormFields` Der Schutztyp kann die Bearbeitung effektiv auf Formularfelder beschränken und gleichzeitig andere Schutztypen zulassen, z`AllowOnlyComments` oder`AllowOnlyRevisions`kombinierbar mit Formularfeldschutz.
 

@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách tải tài liệu lên bằng cách cập nhật các trường bẩn bằng thư viện Aspose.Words cho .NET. Bằng cách làm theo các bước được cung cấp và sử dụng mã nguồn C# được cung cấp, bạn có thể dễ dàng áp dụng chức năng này trong ứng dụng C# của mình. Bản cập nhật Trường bẩn khi tải tài liệu sẽ hiển thị các giá trị gần đây nhất trong tài liệu Word của bạn.
+Trong hướng dẫn này, chúng tôi đã giải thích cách tải tài liệu lên bằng cách cập nhật các trường bẩn bằng thư viện Aspose.Words cho .NET. Bằng cách làm theo các bước được cung cấp và sử dụng mã nguồn C# được cung cấp, bạn có thể dễ dàng áp dụng chức năng này trong ứng dụng C# của mình. Bản cập nhật Dirty field khi tải tài liệu sẽ hiển thị các giá trị gần đây nhất trong tài liệu Word của bạn.
 
 
 ### Câu hỏi thường gặp về cập nhật các trường bẩn trong tài liệu word

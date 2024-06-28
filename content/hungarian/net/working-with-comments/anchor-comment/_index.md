@@ -12,7 +12,7 @@ Ebből az átfogó oktatóanyagból megtudhatja, hogyan rögzítheti a megjegyz�
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Hozzon létre egy új dokumentumot és adjon hozzá szöveget
 Kezdésként hozzon létre egy új dokumentumot a Dokumentum osztály segítségével, és adja hozzá a kívánt szöveget:
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Hozzon létre három Run objektumot.
-// Az első kettő szöveget, míg a harmadik egy megjegyzést futtat
+//Az első kettő szöveget, míg a harmadik egy megjegyzést futtat
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ V: Megjegyzés horgony hozzáadásához egy Aspose.Words for .NET dokumentumhoz,
 
 #### K: Hogyan szerkeszthetem az Aspose.Words for .NET-ben egy megjegyzés horgonyhoz kapcsolódó megjegyzés szövegét?
 
- V: Az Aspose.Words for .NET-ben egy megjegyzés horgonyhoz kötött megjegyzés szövegének módosításához elérheti a`Comment.Text` a megfelelő tulajdonsága`Comment` objektumot, és szükség szerint módosítsa a szöveget.
+V: Az Aspose.Words for .NET-ben egy megjegyzés horgonyhoz kötött megjegyzés szövegének módosításához elérheti a`Comment.Text` a megfelelő tulajdonsága`Comment` objektumot, és szükség szerint módosítsa a szöveget.
 

@@ -121,7 +121,7 @@ Odp.: Aby utworzyć linię podpisu w dokumencie programu Word za pomocą Aspose.
 
 #### P: Jaki jest cel tworzenia i podpisywania nowej linii podpisu w dokumencie programu Word?
 
-Odp.: Tworzenie i podpisywanie nowej linii podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET umożliwia dodanie elementu zastępczego podpisu, a następnie podpisanie dokumentu przy użyciu certyfikatu cyfrowego. Proces ten zapewnia autentyczność i integralność dokumentu, stanowiąc dowód zatwierdzenia lub zgody.
+Odp.: Tworzenie i podpisywanie nowej linii podpisu w dokumencie Word przy użyciu Aspose.Words dla .NET umożliwia dodanie elementu zastępczego podpisu, a następnie podpisanie dokumentu przy użyciu certyfikatu cyfrowego. Proces ten zapewnia autentyczność i integralność dokumentu, stanowiąc dowód zatwierdzenia lub zgody.
 
 #### P: Czy mogę utworzyć i podpisać wiele linii podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
 

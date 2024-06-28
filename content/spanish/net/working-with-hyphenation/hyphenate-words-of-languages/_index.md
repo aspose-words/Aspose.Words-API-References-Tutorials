@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## Paso 2: Guardar diccionarios de separación de palabras
 
-A continuación, guarde los diccionarios de separación de palabras para los diferentes idiomas que desea procesar. En este ejemplo, registramos diccionarios de inglés americano y alemán suizo:
+A continuación, guarde los diccionarios de separación de palabras para los diferentes idiomas que desee procesar. En este ejemplo, registramos diccionarios de inglés americano y alemán suizo:
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
@@ -34,7 +34,7 @@ Asegúrese de tener los archivos de diccionario adecuados en su directorio de da
 
 ## Paso 3: Procesar palabras mediante separación de palabras
 
- Ahora puede utilizar funciones de separación de palabras para procesar palabras en diferentes idiomas. Puedes utilizar diferentes métodos de`Document` o`DocumentBuilder` dependiendo de sus necesidades específicas.
+Ahora puede utilizar funciones de separación de palabras para procesar palabras en diferentes idiomas. Puedes utilizar diferentes métodos de`Document` o`DocumentBuilder` dependiendo de sus necesidades específicas.
 
 ```csharp
 // Ejemplo: uso del método Hyphenate de DocumentBuilder
@@ -51,7 +51,7 @@ Finalmente, guarde el documento modificado:
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Entonces ! Ha procesado correctamente palabras separándolas con guiones en diferentes idiomas en un documento de Word utilizando Aspose.Words para .NET.
+Entonces ! Ha procesado con éxito palabras separándolas con guiones en diferentes idiomas en un documento de Word utilizando Aspose.Words para .NET.
 
 ### Código fuente de muestra para separación de palabras usando Aspose.Words para .NET
 
@@ -71,7 +71,7 @@ Siéntase libre de utilizar este código en sus propios proyectos y modificarlo 
 
 #### P: ¿Cómo puedo silabizar una palabra en un idioma específico con Aspose.Words?
 
- R: Para silabizar una palabra en un idioma específico con Aspose.Words, puede usar el`Hyphenation` clase y el`Hyphenate()` método. Crear una instancia del`Hyphenation` clase especificando el idioma deseado, luego llame al`Hyphenate()`Método que pasa la palabra a silabizar como argumento. Esto le dará las sílabas de la palabra en el idioma especificado.
+ R: Para silabizar una palabra en un idioma específico con Aspose.Words, puede usar el`Hyphenation` clase y el`Hyphenate()` método. Crear una instancia del`Hyphenation` clase especificando el idioma deseado, luego llame al`Hyphenate()` Método que pasa la palabra a silabizar como argumento. Esto le dará las sílabas de la palabra en el idioma especificado.
 
 #### P: ¿Qué códigos de idioma debo usar para especificar el idioma de silabización en Aspose.Words?
 
@@ -79,4 +79,4 @@ R: Para especificar el idioma de silabización en Aspose.Words, debe utilizar lo
 
 #### P: ¿La silabización funciona para todos los idiomas en Aspose.Words?
 
-R: La silabización en Aspose.Words depende de las reglas de silabización específicas del idioma. Aunque Aspose.Words admite una amplia gama de idiomas, es posible que algunos no lo sean o que la silabización no esté disponible para ellos. Consulte la documentación de Aspose.Words para descubrir qué idiomas son compatibles con la silabización.
+R: La silabización en Aspose.Words depende de las reglas de silabización específicas del idioma. Aunque Aspose.Words admite una amplia gama de idiomas, es posible que algunos idiomas no sean compatibles o que la silabización no esté disponible para ellos. Consulte la documentación de Aspose.Words para descubrir qué idiomas son compatibles con la silabización.

@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 
@@ -117,4 +117,4 @@ Làm mịn chuỗi biểu đồ là một kỹ thuật nâng cao hình ảnh cho
  Để tùy chỉnh điểm đánh dấu cho các điểm dữ liệu trong chuỗi biểu đồ bằng Aspose.Words cho .NET, bạn cần truy cập vào`Marker` tài sản của`ChartSeries` đối tượng và sửa đổi các thuộc tính của nó như`Symbol` Và`Size`. Điểm đánh dấu là các chỉ báo trực quan được đặt trên biểu đồ để thể hiện các điểm dữ liệu riêng lẻ. Bạn có thể chọn từ nhiều ký hiệu đánh dấu tích hợp sẵn và điều chỉnh kích thước của chúng để làm nổi bật hoặc phân biệt các điểm dữ liệu cụ thể trong chuỗi.
 
 #### Q5. Tôi có thể đảo ngược màu cho các giá trị âm trong chuỗi biểu đồ không?
- Có, bạn có thể đảo ngược màu cho các giá trị âm trong chuỗi biểu đồ bằng Aspose.Words for .NET. Bằng cách thiết lập`InvertIfNegative` tài sản của`ChartSeries` chủ đề`true`, màu sắc của các điểm dữ liệu có giá trị âm sẽ bị đảo ngược, khiến chúng khác biệt về mặt trực quan với các giá trị dương. Tính năng này có thể hữu ích khi so sánh các giá trị dương và âm trong một chuỗi biểu đồ, cung cấp sự khác biệt rõ ràng giữa hai giá trị này.
+ Có, bạn có thể đảo ngược màu cho các giá trị âm trong chuỗi biểu đồ bằng Aspose.Words for .NET. Bằng cách thiết lập`InvertIfNegative` tài sản của`ChartSeries` chủ đề`true`, màu sắc của các điểm dữ liệu có giá trị âm sẽ bị đảo ngược, khiến chúng khác biệt về mặt trực quan với các giá trị dương. Tính năng này có thể hữu ích khi so sánh các giá trị dương và âm trong một chuỗi biểu đồ, mang lại sự khác biệt rõ ràng giữa hai giá trị này.

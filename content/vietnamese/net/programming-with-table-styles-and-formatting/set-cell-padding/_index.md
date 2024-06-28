@@ -8,7 +8,7 @@ weight: 10
 url: /vi/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để đặt lề ô bảng bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Ở cuối hướng dẫn này, bạn sẽ biết cách điều chỉnh lề trái, trên, phải và dưới (khoảng trắng) của nội dung ô trong bảng trong tài liệu Word bằng Aspose.Words for .NET.
+Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để đặt lề ô bảng bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Ở cuối hướng dẫn này, bạn sẽ biết cách điều chỉnh lề trái, trên, phải và dưới (khoảng cách) của nội dung ô trong bảng trong tài liệu Word bằng Aspose.Words for .NET.
 
 ## Bước 1: Xác định thư mục tài liệu
 Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Đây là vị trí bạn muốn lưu tài liệu Word đã chỉnh sửa của mình. Thay thế "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp.

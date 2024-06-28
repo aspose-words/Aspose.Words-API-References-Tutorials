@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
-の`Resolution`プロパティは画像のターゲット解像度を指定し、`ResolutionThreshold`プロパティは、画像が縮小されない最小解像度を指定します。
+の`Resolution`プロパティは画像のターゲット解像度を指定し、`ResolutionThreshold`このプロパティは、画像が縮小されない最小解像度を指定します。
 
 ## ステップ 3: ドキュメントを PDF に変換する
 

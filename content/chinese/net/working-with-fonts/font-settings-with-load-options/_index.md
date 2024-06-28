@@ -61,7 +61,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 #### 问：我还可以使用 Aspose.Words 中的加载选项指定哪些其他字体设置？
 
-答：除了指定默认字体外，您还可以使用适当的属性来指定其他字体设置，例如默认编码`LoadOptions`类，例如`DefaultEncoding`.
+答：除了指定默认字体之外，您还可以使用适当的属性来指定其他字体设置，例如默认编码。`LoadOptions`类，例如`DefaultEncoding`.
 
 #### 问：如果加载文档时指定的默认字体不可用，会发生什么情况？
 

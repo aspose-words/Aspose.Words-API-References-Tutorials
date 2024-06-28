@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Stap 3: Haal de vormcollectie op en controleer op herzieningen
+## Stap 3: Haal de vormcollectie op en controleer op herzieningen.
 
 We halen de verzameling vormen uit het document en controleren de revisies die aan elke vorm zijn gekoppeld.
 

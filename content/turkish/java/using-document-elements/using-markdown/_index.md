@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Sıralı listeyi belirtin.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Metnin italik vurgusunu belirtin.
+// Metnin İtalyanca vurgusunu belirtin.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

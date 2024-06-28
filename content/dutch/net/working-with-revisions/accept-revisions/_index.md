@@ -1,6 +1,6 @@
 ---
-title: Accepteer revisies
-linktitle: Accepteer revisies
+title: Accepteer beoordelingen
+linktitle: Accepteer beoordelingen
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u revisies van een Word-document accepteert met Aspose.Words voor .NET
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// De paragraaf 'Revisie verwijderen' wordt verwijderd zodra we de wijzigingen accepteren.
+// De verwijderde revisieparagraaf wordt verwijderd zodra we de wijzigingen accepteren.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

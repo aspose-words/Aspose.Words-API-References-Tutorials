@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-styles-and-themes/copy-styles/
 ---
 
-V tomto tutoriálu prozkoumáme poskytnutý zdrojový kód C# pro kopírování stylů dokumentu Word ze zdrojového dokumentu do cílového dokumentu pomocí Aspose.Words for .NET. Tato funkce umožňuje přenášet styly z jednoho dokumentu do druhého, což může být užitečné, když chcete použít konzistentní styly na více dokumentů.
+tomto tutoriálu prozkoumáme poskytnutý zdrojový kód C# pro kopírování stylů dokumentu Word ze zdrojového dokumentu do cílového dokumentu pomocí Aspose.Words for .NET. Tato funkce umožňuje přenášet styly z jednoho dokumentu do druhého, což může být užitečné, když chcete použít konzistentní styly na více dokumentů.
 
 ## Krok 1: Nastavení prostředí
 
@@ -39,7 +39,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 
 V tomto posledním kroku uložíme zdrojový dokument se styly zkopírovanými do souboru.
 
-Nyní můžete spustit zdrojový kód pro kopírování stylů ze zdrojového dokumentu do cílového dokumentu. Tato funkce vám umožňuje zachovat konzistenci stylu ve více dokumentech, což usnadňuje správu vzhledu a formátování vašich dokumentů.
+Nyní můžete spustit zdrojový kód pro kopírování stylů ze zdrojového dokumentu do cílového dokumentu. Tato funkce umožňuje zachovat konzistenci stylu ve více dokumentech, což usnadňuje správu vzhledu a formátování dokumentů.
 
 ### Ukázka zdrojového kódu pro kopírování stylů pomocí Aspose.Words pro .NET 
 

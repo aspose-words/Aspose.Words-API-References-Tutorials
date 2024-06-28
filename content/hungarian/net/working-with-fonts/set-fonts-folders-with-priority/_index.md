@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
 
-Ebben az oktatóanyagban lépésről lépésre végigvezetjük a betűtípusmappák elsőbbségi beállításának folyamatán, amikor egy dokumentumot az Aspose.Words for .NET használatával renderel. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Az oktatóanyag végén tudni fogja, hogyan adjon meg több betűtípus-mappát egyéni keresési prioritással, amikor az Aspose.Words for .NET használatával rendereli dokumentumait.
+Ebben az oktatóanyagban lépésről lépésre végigvezetjük a betűtípusmappák elsőbbségi beállításának folyamatán, amikor egy dokumentumot az Aspose.Words for .NET használatával jelenít meg. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Az oktatóanyag végén tudni fogja, hogyan adjon meg több betűtípus-mappát egyéni keresési prioritással, amikor az Aspose.Words for .NET használatával rendereli dokumentumait.
 
 ## 1. lépés: Határozza meg a dokumentumkönyvtárat
 Először is be kell állítania a dokumentumkönyvtár elérési útját. Ez az a hely, ahová menteni szeretné a szerkesztett renderelt dokumentumot. Cserélje ki a "DOKUMENTUMKÖNYVTÁR" elemet a megfelelő elérési útra.

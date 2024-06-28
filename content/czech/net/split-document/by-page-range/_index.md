@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Name_of_large_document.docx");
 
 Nezapomeňte nahradit „VAŠE_DOKUMENTY_DIRECTORY“ skutečnou cestou k adresáři vašich dokumentů a „Name_of_large_document.docx“ názvem vašeho velkého souboru aplikace Word.
 
-## Krok 2: Rozbalení části dokumentu
+## Krok 2: Extrahování části dokumentu
  Nyní, když jsme načetli dokument, můžeme extrahovat konkrétní část pomocí`ExtractPages` funkce s požadovaným rozsahem stránek. Jak na to:
 
 ```csharp
@@ -74,7 +74,7 @@ Neváhejte a prozkoumejte další výkonné funkce nabízené Aspose.Words pro .
  Ano, můžete extrahovat stránky, které nejdou za sebou, zadáním požadovaného rozsahu stránek. Pokud například chcete extrahovat stránky 1, 3 a 5, můžete nastavit rozsah stránek jako`1,3,5` v`ExtractPages` funkce.
 
 #### Q2: Je možné extrahovat určitý rozsah stránek z více dokumentů současně?
-Ano, funkci "Podle rozsahu stránek" můžete použít na více dokumentů. Jednoduše vložte každý dokument jednotlivě a extrahujte požadovaný rozsah stránek pomocí`ExtractPages` funkce. Vyjmuté stránky pak můžete uložit z každého dokumentu zvlášť.
+ Ano, funkci "Podle rozsahu stránek" můžete použít na více dokumentů. Jednoduše vložte každý dokument jednotlivě a extrahujte požadovaný rozsah stránek pomocí`ExtractPages` funkce. Vyjmuté stránky pak můžete uložit z každého dokumentu zvlášť.
 
 #### Q3: Mohu extrahovat rozsahy stránek ze zašifrovaných nebo heslem chráněných dokumentů aplikace Word?
 Ne, funkce "Podle rozsahu stránek" funguje na nechráněné dokumenty aplikace Word. Pokud je dokument zašifrován nebo chráněn heslem, budete muset před extrahováním požadovaného rozsahu stránek zadat správné heslo a odstranit ochranu.

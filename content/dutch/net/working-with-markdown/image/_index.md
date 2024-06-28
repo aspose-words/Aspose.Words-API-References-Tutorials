@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Stap 2: Een afbeelding invoegen
 
- We kunnen een afbeelding invoegen met behulp van de`Shape` klasse en specificeer hier het type afbeelding`ShapeType.Image` We stellen ook het omlooptype van de afbeelding in`WrapType.Inline`.
+ We kunnen een afbeelding invoegen met behulp van de`Shape` klasse en specificeer hier het type afbeelding`ShapeType.Image` . We stellen ook het omlooptype van de afbeelding in`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ Gefeliciteerd! U hebt nu geleerd hoe u de afbeeldingenfunctie kunt gebruiken met
 
 #### Vraag: Kan ik een afbeelding van een URL in Aspose.Words invoegen?
 
- A: Ja, u kunt een afbeelding invoegen vanaf een URL in Aspose.Words. Je kunt hetzelfde gebruiken`InsertImage` methode en geef de afbeeldings-URL op in plaats van het lokale bestandspad.
+ A: Ja, u kunt een afbeelding invoegen vanaf een URL in Aspose.Words. Je kunt hetzelfde gebruiken`InsertImage`methode en geef de afbeeldings-URL op in plaats van het lokale bestandspad.
 
 #### Vraag: Hoe kan ik het formaat van een afbeelding wijzigen in Aspose.Words?
 
@@ -69,8 +69,8 @@ Gefeliciteerd! U hebt nu geleerd hoe u de afbeeldingenfunctie kunt gebruiken met
 
 #### Vraag: Kan ik filters toepassen op afbeeldingen in Aspose.Words?
 
-A: Ja, u kunt filters toepassen op afbeeldingen in Aspose.Words. U kunt bijvoorbeeld een vervagingsfilter op een afbeelding toepassen met behulp van de`ApplyGaussianBlur` werkwijze van de`Shape` voorwerp.
+ A: Ja, u kunt filters toepassen op afbeeldingen in Aspose.Words. U kunt bijvoorbeeld een vervagingsfilter op een afbeelding toepassen met behulp van de`ApplyGaussianBlur` werkwijze van de`Shape` voorwerp.
 
 #### Vraag: Hoe kan ik de ene afbeelding vervangen door een andere in Aspose.Words?
 
- A: Om de ene afbeelding door een andere te vervangen in Aspose.Words, kunt u de`Replace` werkwijze van de`Shape` klas. Deze methode neemt als parameter de`Shape` object van de afbeelding die moet worden vervangen en de`Shape` object van de nieuwe afbeelding.
+ A: Om de ene afbeelding door een andere te vervangen in Aspose.Words, kunt u de`Replace` werkwijze van de`Shape` klas. Deze methode neemt als parameter de`Shape` object van de afbeelding die moet worden vervangen en de`Shape` voorwerp van de nieuwe afbeelding.

@@ -72,7 +72,7 @@ Questo tutorial ti ha fornito una guida passo passo su come rilevare la firma di
 
 #### Come specificare la directory contenente i documenti in cui ricercare la firma digitale?
 
- Per specificare la directory contenente i documenti in cui si vuole ricercare la firma digitale è necessario modificare il file`dataDir` variabile nel codice. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
+ Per specificare la directory contenente i documenti in cui si vuole ricercare la firma digitale è necessario modificare il file`dataDir` variabili nel codice. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

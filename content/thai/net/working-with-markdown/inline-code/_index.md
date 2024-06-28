@@ -20,14 +20,14 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## ขั้นตอนที่ 2: เพิ่มสไตล์สำหรับโค้ดอินไลน์
 
- เราจะเพิ่มสไตล์ที่กำหนดเองสำหรับโค้ดอินไลน์โดยใช้`Styles.Add` วิธีการของ`Document` วัตถุ. ในตัวอย่างนี้ เรากำลังสร้างสไตล์ที่เรียกว่า "InlineCode" สำหรับโค้ดอินไลน์ที่มี backtick เริ่มต้น
+ เราจะเพิ่มสไตล์ที่กำหนดเองสำหรับโค้ดออนไลน์โดยใช้`Styles.Add` วิธีการของ`Document` วัตถุ วัตถุ ในตัวอย่างนี้ เรากำลังสร้างสไตล์ที่เรียกว่า "InlineCode" สำหรับโค้ดอินไลน์ที่มี backtick เริ่มต้น
 
 ```csharp
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 builder.Font.Style = inlineCode1BackTicks;
 ```
 
-## ขั้นตอนที่ 3: เพิ่มโค้ดอินไลน์
+## ขั้นตอนที่ 3: เพิ่มรหัสออนไลน์
 
 ตอนนี้เราสามารถเพิ่มโค้ดอินไลน์โดยใช้สไตล์ที่กำหนดเอง "InlineCode" ในตัวอย่างนี้ เราเพิ่มข้อความสองชิ้นโดยมีจำนวน backtick ต่างกัน
 
@@ -53,7 +53,7 @@ Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "I
 builder.Font.Style = inlineCode1BackTicks;
 builder.Writeln("Text with InlineCode style with 1 backtick");
 
-// จะมีแบ็คติ๊ก 3 อัน
+// จะมีแบ็คติ๊กอยู่ 3 อัน
 Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
 builder.Font.Style = inlineCode3BackTicks;
 builder.Writeln("Text with InlineCode style with 3 backtick");

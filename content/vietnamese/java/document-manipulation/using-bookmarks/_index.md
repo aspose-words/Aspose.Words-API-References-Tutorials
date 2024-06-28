@@ -10,7 +10,7 @@ url: /vi/java/document-manipulation/using-bookmarks/
 
 ## Giới thiệu về Sử dụng Dấu trang trong Aspose.Words cho Java
 
-Dấu trang là một tính năng mạnh mẽ trong Aspose.Words dành cho Java, cho phép bạn đánh dấu và thao tác các phần cụ thể của tài liệu. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng dấu trang trong Aspose.Words cho Java để nâng cao khả năng xử lý tài liệu của bạn. 
+Dấu trang là một tính năng mạnh mẽ trong Aspose.Words cho Java cho phép bạn đánh dấu và thao tác các phần cụ thể của tài liệu. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng dấu trang trong Aspose.Words cho Java để nâng cao khả năng xử lý tài liệu của bạn. 
 
 ## Bước 1: Tạo dấu trang
 

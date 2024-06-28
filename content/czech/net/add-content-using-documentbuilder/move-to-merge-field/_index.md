@@ -2,102 +2,120 @@
 title: Přesunout do slučovacího pole v dokumentu aplikace Word
 linktitle: Přesunout do slučovacího pole v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak implementovat funkci Přesunout do slučovacího pole ve wordovém dokumentu Aspose.Words for .NET pomocí podrobného průvodce.
+description: Naučte se, jak přejít na slučovací pole v dokumentu aplikace Word pomocí Aspose.Words for .NET s naším komplexním průvodcem krok za krokem. Ideální pro .NET vývojáře.
 type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
-tomto příkladu prozkoumáme funkci Přesunout do slučovacího pole ve wordovém dokumentu Aspose.Words for .NET. Aspose.Words je výkonná knihovna pro manipulaci s dokumenty, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově. Funkce Přesunout do slučovacího pole nám umožňuje navigaci ke sloučení polí v dokumentu a provádění různých operací s nimi.
+## Úvod
 
+Nazdárek! Ocitli jste se někdy pohřbeni v dokumentu aplikace Word a snažili se přijít na to, jak přejít na konkrétní slučovací pole? Je to jako být v bludišti bez mapy, že? No, už se nebojte! S Aspose.Words for .NET můžete plynule přejít na slučovací pole v dokumentu. Ať už generujete zprávy, vytváříte personalizované dopisy nebo jen automatizujete své dokumenty Word, tento průvodce vás krok za krokem provede celým procesem. Pojďme se ponořit!
 
-## Vysvětlení zdrojového kódu krok za krokem
+## Předpoklady
 
-Pojďme si projít zdrojový kód krok za krokem, abychom pochopili, jak používat funkci Move To Merge Field pomocí Aspose.Words for .NET.
+Než se pustíme do toho hnusného, dáme si kachny do řady. Zde je to, co potřebujete, abyste mohli začít:
 
-## Krok 1: Inicializace dokumentu a tvůrce dokumentů
+-  Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio. Pokud ne, můžete si jej stáhnout[tady](https://visualstudio.microsoft.com/).
+-  Aspose.Words for .NET: Potřebujete knihovnu Aspose.Words. Můžete si jej stáhnout z[tento odkaz](https://releases.aspose.com/words/net/).
+- .NET Framework: Ujistěte se, že máte nainstalované rozhraní .NET Framework.
 
-Nejprve inicializujte objekty Document a DocumentBuilder:
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Je to jako nastavení pracovního prostoru před zahájením projektu.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Pojďme si proces rozebrat na stravitelné kroky. Každý krok bude důkladně vysvětlen, abyste se ujistili, že se nebudete drbat na hlavě.
+
+## Krok 1: Vytvořte nový dokument
+
+Nejprve musíte vytvořit nový dokument aplikace Word. Toto je vaše prázdné plátno, kde se stane všechna kouzla.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2 Vložení slučovacího pole a přidání textu za něj
+ V tomto kroku inicializujeme nový dokument a`DocumentBuilder` objekt. The`DocumentBuilder` je váš nástroj pro vytvoření dokumentu.
 
-Pomocí metody InsertField třídy DocumentBuilder vložte slučovací pole a poté za něj přidejte text:
+## Krok 2: Vložte slučovací pole
+
+Dále vložíme slučovací pole. Berte to jako umístění značky do dokumentu, kde budou data sloučena.
 
 ```csharp
 Field field = builder.InsertField("MERGEFIELD field");
 builder.Write(" Text after the field.");
 ```
 
-## Krok 3: Kurzor stavitele je aktuálně na konci dokumentu.
+Zde vložíme slučovací pole s názvem „pole“ a hned za něj přidáme nějaký text. Tento text nám později pomůže určit polohu pole.
+
+## Krok 3: Přesuňte kurzor na konec dokumentu
+
+Nyní přesuňte kurzor na konec dokumentu. Je to jako umístit pero na konec poznámek, připravené přidat další informace.
 
 ```csharp
-Assert.Null(builder.CurrentNode);
+builder.MoveToDocumentEnd();
 ```
-## Krok 4: Přesunutí kurzoru tvůrce dokumentů do slučovacího pole
 
-Chcete-li přesunout kurzor tvůrce dokumentů do slučovacího pole, použijte metodu MoveToField třídy DocumentBuilder:
+ Tento příkaz přesune`DocumentBuilder` kurzor na konec dokumentu a připraví nás na další kroky.
+
+## Krok 4: Přesuňte se do slučovacího pole
+
+Přichází ta vzrušující část! Nyní přesuneme kurzor na slučovací pole, které jsme vložili dříve.
 
 ```csharp
 builder.MoveToField(field, true);
 ```
 
-## Přidání textu ihned za slučovací pole
+Tento příkaz přesune kurzor bezprostředně za slučovací pole. Je to jako skočit rovnou na stránku v knize označenou záložkou.
 
-Jakmile je kurzor tvůrce dokumentů uvnitř slučovacího pole, můžete přidat text bezprostředně za něj pomocí metody Write:
+## Krok 5: Ověřte polohu kurzoru
+
+Je důležité ověřit, zda je náš kurzor skutečně tam, kde ho chceme mít. Berte to jako dvojitou kontrolu vaší práce.
 
 ```csharp
-Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+if (builder.CurrentNode == null)
+{
+    Console.WriteLine("Cursor is at the end of the document.");
+}
+else
+{
+    Console.WriteLine("Cursor is at a different position.");
+}
+```
+
+Tento úryvek zkontroluje, zda je kurzor na konci dokumentu, a podle toho vytiskne zprávu.
+
+## Krok 6: Napište text za pole
+
+Nakonec přidáme nějaký text bezprostředně za slučovací pole. Toto je konečná úprava našeho dokumentu.
+
+```csharp
 builder.Write(" Text immediately after the field.");
 ```
 
-### Příklad zdrojového kódu pro Move To Merge Field pomocí Aspose.Words for .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Vložte pole pomocí DocumentBuilderu a přidejte za něj řadu textu.
-Field field = builder.InsertField("MERGEFIELD field");
-builder.Write(" Text after the field.");
-
-// Kurzor stavitele je aktuálně na konci dokumentu.
-Assert.Null(builder.CurrentNode);
-// Tvůrce můžeme přesunout do pole, jako je toto, umístěním kurzoru na bezprostředně za pole.
-builder.MoveToField(field, true);
-
-// Všimněte si, že kurzor je na místě za uzlem FieldEnd pole, což znamená, že ve skutečnosti nejsme uvnitř pole.
-// Pokud chceme přesunout DocumentBuilder dovnitř pole,
-// budeme jej muset přesunout do uzlu FieldStart nebo FieldSeparator pole pomocí metody DocumentBuilder.MoveTo().
-Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-builder.Write(" Text immediately after the field.");
-```
+Zde přidáme nějaký text hned za slučovací pole, čímž zajistíme, že náš pohyb kurzoru byl úspěšný.
 
 ## Závěr
 
-prozkoumali jsme funkci Přesunout do slučovacího pole Aspose.Words pro .NET. Naučili jsme se navigovat ke slučování polí v dokumentu pomocí třídy DocumentBuilder a provádět s nimi operace. Tato funkce je užitečná při programovém zpracování textu se sloučením
+A tady to máte! Přesunutí do slučovacího pole v dokumentu aplikace Word pomocí Aspose.Words for .NET je snadné jako facka, když to rozdělíte do jednoduchých kroků. Podle této příručky můžete bez námahy procházet a manipulovat s dokumenty Wordu, takže úkoly automatizace dokumentů budou hračkou. Takže až budete příště v bludišti slučovacích polí, budete mít mapu, která vás povede!
 
-### Nejčastější dotazy pro přesun do slučovacího pole v dokumentu aplikace Word
+## FAQ
 
-#### Otázka: Jaký je účel funkce Přesunout do slučovacího pole v Aspose.Words pro .NET?
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově pomocí rozhraní .NET.
 
-Odpověď: Funkce Přesunout do slučovacího pole v Aspose.Words for .NET umožňuje vývojářům přejít ke slučování polí v dokumentu aplikace Word a programově s nimi provádět různé operace. Slučovací pole jsou speciální zástupné symboly používané v dokumentech aplikace Word pro operace hromadné korespondence.
+### Jak nainstaluji Aspose.Words for .NET?
+ Aspose.Words for .NET si můžete stáhnout a nainstalovat z[tady](https://releases.aspose.com/words/net/). Postupujte podle pokynů k instalaci uvedených na webových stránkách.
 
-#### Otázka: Jak mohu vložit slučovací pole do dokumentu aplikace Word pomocí Aspose.Words for .NET?
+### Mohu používat Aspose.Words pro .NET s .NET Core?
+ Ano, Aspose.Words for .NET je kompatibilní s .NET Core. Více podrobností najdete v[dokumentace](https://reference.aspose.com/words/net/).
 
-Odpověď: K vložení slučovacího pole do dokumentu můžete použít metodu InsertField třídy DocumentBuilder. Po vložení slučovacího pole můžete přidat obsah, například text, před nebo za pole pomocí metody Write.
+### Jak získám dočasnou licenci pro Aspose.Words?
+ Dočasnou licenci můžete získat od[tento odkaz](https://purchase.aspose.com/temporary-license/).
 
-#### Otázka: Jak přesunu kurzor Tvůrce dokumentů do určitého slučovacího pole?
-
-Odpověď: Chcete-li přesunout kurzor tvůrce dokumentů na konkrétní slučovací pole, použijte metodu MoveToField třídy DocumentBuilder a předejte pole jako parametr. Tím se kurzor umístí hned za slučovací pole.
-
-#### Otázka: Mohu přidat text do slučovacího pole pomocí funkce Přesunout do slučovacího pole?
-
-Odpověď: Ne, funkce Přesunout do slučovacího pole umístí kurzor tvůrce dokumentů bezprostředně za slučovací pole. Chcete-li přidat text do slučovacího pole, můžete pomocí metody DocumentBuilder.MoveTo přesunout kurzor na uzel FieldStart nebo FieldSeparator slučovacího pole.
-
-#### Otázka: Jak mohu provádět operace hromadné korespondence pomocí Aspose.Words for .NET?
-
-A: Aspose.Words for .NET poskytuje rozsáhlou podporu pro operace hromadné korespondence. Třídu MailMerge můžete použít k provádění hromadné korespondence pomocí dat z různých zdrojů, jako jsou pole, datové sady nebo vlastní zdroje dat.
+### Kde najdu další příklady a podporu pro Aspose.Words pro .NET?
+ Další příklady a podporu naleznete na adrese[Aspose.Words for .NET fórum](https://forum.aspose.com/c/words/8).

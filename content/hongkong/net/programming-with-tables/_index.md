@@ -19,7 +19,7 @@ url: /zh-hant/net/programming-with-tables/
 | [自動調整表格以適應內容](./auto-fit-table-to-contents/) | 了解如何使用 Aspose.Words for .NET 將表格自動調整到 Word 文件中的內容。 |
 | [克隆完整表](./clone-complete-table/) | 了解如何使用 Aspose.Words for .NET 將整個表格複製到 Word 文件中。 |
 | [尋找索引](./finding-index/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中尋找資料表、行和儲存格索引。 |
-| [直接插入表格](./insert-table-directly/) | 了解如何使用 Aspose.Words for .NET 將表格直接插入 Word 文件中。 |
+| [直接插入表格](./insert-table-directly/) | 了解如何使用 Aspose.Words for .NET 將表格直接插入 Word 文件中。請按照我們詳細的逐步指南來簡化您的文件建立。 |
 | [從 Html 插入表格](./insert-table-from-html/) | 了解如何使用 Aspose.Words for .NET 將 HTML 表格插入 Word 文件中。 |
 | [建立簡單表](./create-simple-table/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中建立簡單的表格。 |
 | [格式化表](./formatted-table/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中建立格式化表格。 |

@@ -52,7 +52,7 @@ builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-Συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη δυνατότητα επικεφαλίδων με το Aspose.Words για .NET.
+συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη δυνατότητα επικεφαλίδων με το Aspose.Words για .NET.
 
 ### Συχνές ερωτήσεις
 

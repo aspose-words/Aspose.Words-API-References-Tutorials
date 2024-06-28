@@ -12,7 +12,7 @@ Los comentarios desempeñan un papel crucial en la colaboración y revisión de 
 
 ## Introducción
 
-La colaboración es un aspecto fundamental de la creación de documentos y los comentarios brindan una manera perfecta para que varios usuarios compartan sus comentarios e ideas dentro de un documento. Aspose.Words para Python, una potente biblioteca de manipulación de documentos, permite a los desarrolladores trabajar mediante programación con documentos de Word, lo que incluye agregar, modificar y recuperar comentarios.
+La colaboración es un aspecto fundamental de la creación de documentos y los comentarios brindan una manera perfecta para que varios usuarios compartan sus comentarios e ideas dentro de un documento. Aspose.Words para Python, una poderosa biblioteca de manipulación de documentos, permite a los desarrolladores trabajar mediante programación con documentos de Word, lo que incluye agregar, modificar y recuperar comentarios.
 
 ## Configurando Aspose.Words para Python
 

@@ -107,7 +107,7 @@ para.remove();
 // και θα εμφανίζεται ως αναθεώρηση στο Microsoft Word, μέχρι να αποδεχθούμε ή να απορρίψουμε όλες τις αναθεωρήσεις.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Η παράγραφος διαγραφής αναθεώρησης καταργείται μόλις αποδεχθούμε τις αλλαγές.
+// Η διαγραμμένη παράγραφος αναθεώρησης καταργείται μόλις αποδεχθούμε τις αλλαγές.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //ήταν Is.Empty

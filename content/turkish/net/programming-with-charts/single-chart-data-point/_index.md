@@ -17,7 +17,7 @@ Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
 - Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
+## Adım 2: Yeni bir belge oluşturun ve bir grafik ekleyin.
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -115,7 +115,7 @@ Bireysel veri noktalarını özelleştirmek, size önemli verileri vurgulama vey
  Aspose.Words for .NET kullanarak bir grafikteki bir veri noktasının işaretçi sembolünü değiştirmek için şu adrese erişmeniz gerekir:`Marker` mülkiyeti`ChartDataPoint` nesneyi ayarlayın ve`Symbol` özelliği istenen işaret sembolüne ekleyin. İşaretçi sembolleri, grafikteki her veri noktasını temsil etmek için kullanılan şekli veya simgeyi temsil eder. Daire, kare, elmas, üçgen, yıldız ve daha fazlası gibi çeşitli yerleşik işaretleyici semboller arasından seçim yapabilirsiniz.
 
 #### S3. Bir veri noktası işaretçisinin boyutunu ayarlayabilir miyim?
- Evet, Aspose.Words for .NET'i kullanarak bir grafikteki veri noktası işaretçisinin boyutunu ayarlayabilirsiniz. Erişmek`Marker` mülkiyeti`ChartDataPoint` nesneyi ayarlayın ve`Size`özelliği istenen işaretleyici boyutuna ayarlayın. İşaretçinin boyutu genellikle noktalarla belirtilir; burada daha büyük bir değer, daha büyük bir işaretleyici boyutunu temsil eder. İşaretçi boyutunu ayarlamak, belirli veri noktalarını vurgulamanıza veya bunları önemlerine göre ayırmanıza olanak tanır.
+ Evet, Aspose.Words for .NET'i kullanarak bir grafikteki veri noktası işaretçisinin boyutunu ayarlayabilirsiniz. Erişmek`Marker` mülkiyeti`ChartDataPoint` nesneyi ayarlayın ve`Size`özelliği istenen işaretleyici boyutuna getirin. İşaretçinin boyutu genellikle noktalarla belirtilir; burada daha büyük bir değer, daha büyük bir işaretleyici boyutunu temsil eder. İşaretçi boyutunu ayarlamak, belirli veri noktalarını vurgulamanıza veya bunları önemlerine göre ayırmanıza olanak tanır.
 
 #### S4. Bir veri noktası için başka hangi özellikleri değiştirebilirim?
 Aspose.Words for .NET, bir grafikteki veri noktası için değiştirebileceğiniz bir dizi özellik sağlar. Yaygın olarak değiştirilen özelliklerden bazıları işaretleyici sembolü, işaretleyici boyutu, işaretleyici rengi, veri etiketi görünürlüğü, patlama, negatifse ters çevirme ve daha fazlasını içerir. Bu özellikler, bireysel veri noktalarının görünümünü, davranışını ve etkileşimini özelleştirmenize olanak tanıyarak özel gereksinimlerinize göre uyarlanmış grafikler oluşturmanıza olanak tanır.

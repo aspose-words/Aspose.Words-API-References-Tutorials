@@ -34,7 +34,7 @@ Veri dizininizde uygun sözlük dosyalarının bulunduğundan emin olun.
 
 ## 3. Adım: Kelimeleri tireleme yoluyla işleme
 
- Artık farklı dillerdeki kelimeleri işlemek için tireleme özelliklerini kullanabilirsiniz. Farklı yöntemler kullanabilirsiniz`Document` veya`DocumentBuilder` özel ihtiyaçlarınıza bağlı olarak.
+Artık farklı dillerdeki kelimeleri işlemek için tireleme özelliklerini kullanabilirsiniz. Farklı yöntemler kullanabilirsiniz`Document` veya`DocumentBuilder` özel ihtiyaçlarınıza bağlı olarak.
 
 ```csharp
 // Örnek: DocumentBuilder'ın Tireleme yöntemini kullanma
@@ -51,7 +51,7 @@ Son olarak değiştirilen belgeyi kaydedin:
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Bu yüzden ! Aspose.Words for .NET'i kullanarak bir Word belgesinde farklı dillerdeki kelimeleri tireleyerek başarılı bir şekilde işlediniz.
+Bu yüzden ! Aspose.Words for .NET kullanarak bir Word belgesinde farklı dillerdeki kelimeleri tireleyerek başarılı bir şekilde işlediniz.
 
 ### Aspose.Words for .NET kullanarak sözcük tireleme için örnek kaynak kodu
 
@@ -71,7 +71,7 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şe
 
 #### S: Aspose.Words ile belirli bir dildeki bir kelimeyi nasıl heceleyebilirim?
 
- C: Aspose.Words ile belirli bir dildeki bir kelimeyi hecelemek için`Hyphenation` sınıf ve`Hyphenate()` yöntem. Bir örneğini oluşturun`Hyphenation` İstenilen dili belirten sınıfı seçin, ardından`Hyphenate()`Kelimeyi argüman olarak hecelemek için geçirme yöntemi. Bu size belirtilen dildeki kelimenin hecelerini verecektir.
+ C: Aspose.Words ile belirli bir dildeki bir kelimeyi hecelemek için`Hyphenation` sınıf ve`Hyphenate()` yöntem. Bir örneğini oluşturun`Hyphenation` İstenilen dili belirten sınıfı seçin, ardından`Hyphenate()` Kelimeyi argüman olarak hecelemek için geçirme yöntemi. Bu size belirtilen dildeki kelimenin hecelerini verecektir.
 
 #### S: Aspose.Words'te heceleme dilini belirlemek için hangi dil kodlarını kullanmalıyım?
 
@@ -79,4 +79,4 @@ C: Aspose.Words'te heceleme dilini belirlemek için uygun dil kodlarını kullan
 
 #### S: Aspose.Words'te heceleme tüm dillerde çalışıyor mu?
 
-C: Aspose.Words'te heceleme, dile özgü heceleme kurallarına bağlıdır. Aspose.Words çok çeşitli dilleri desteklese de, bazı diller desteklenmeyebilir veya bunlar için heceleme mevcut olmayabilir. Heceleme için hangi dillerin desteklendiğini öğrenmek için Aspose.Words belgelerine bakın.
+C: Aspose.Words'te heceleme, dile özgü heceleme kurallarına bağlıdır. Aspose.Words çok çeşitli dilleri desteklese de bazı diller desteklenmeyebilir veya heceleme onlar için mevcut olmayabilir. Heceleme için hangi dillerin desteklendiğini öğrenmek için Aspose.Words belgelerine bakın.

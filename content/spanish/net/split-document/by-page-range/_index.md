@@ -74,7 +74,7 @@ No dude en explorar otras potentes funciones que ofrece Aspose.Words para .NET p
  Sí, puede extraer páginas no consecutivas especificando el rango de páginas deseado. Por ejemplo, si desea extraer las páginas 1, 3 y 5, puede configurar el rango de páginas como`1,3,5` en el`ExtractPages` función.
 
 #### P2: ¿Es posible extraer un rango de páginas específico de varios documentos simultáneamente?
-Sí, puede aplicar la función "Por rango de páginas" a varios documentos. Simplemente cargue cada documento individualmente y extraiga el rango de páginas deseado usando el`ExtractPages` función. Luego puede guardar las páginas extraídas de cada documento por separado.
+ Sí, puede aplicar la función "Por rango de páginas" a varios documentos. Simplemente cargue cada documento individualmente y extraiga el rango de páginas deseado usando el`ExtractPages` función. Luego puede guardar las páginas extraídas de cada documento por separado.
 
 #### P3: ¿Puedo extraer rangos de páginas de documentos de Word cifrados o protegidos con contraseña?
 No, la función "Por rango de páginas" funciona en documentos de Word desprotegidos. Si un documento está cifrado o protegido con contraseña, deberá proporcionar la contraseña correcta y eliminar la protección antes de extraer el rango de páginas deseado.

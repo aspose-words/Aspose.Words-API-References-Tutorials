@@ -17,7 +17,7 @@ Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 - Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen, indem Sie es mit dem NuGet-Paketmanager installieren.
 - Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
 
-## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein
+## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein.
 
  Erstelle eine neue`Document` Objekt und a`DocumentBuilder` um das Dokument zu erstellen.
 
@@ -98,7 +98,7 @@ Durch die Verwendung von Aspose.Words für .NET können Sie den Prozess der Doku
 Aspose.Words für .NET ist eine leistungsstarke Dokumentverarbeitungsbibliothek, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert in .NET-Anwendungen zu erstellen, zu ändern und zu konvertieren. Es bietet einen umfassenden Satz von APIs für die Textverarbeitung mit Dokumentelementen, einschließlich Diagrammen, Absätzen, Tabellen und mehr.
 
 #### Q2. Wie installiere ich Aspose.Words für .NET?
-Um Aspose.Words für .NET zu installieren, können Sie den NuGet-Paketmanager in Visual Studio verwenden, um die Bibliothek direkt in Ihrem Projekt zu installieren. Suchen Sie einfach im NuGet-Paketmanager nach „Aspose.Words“ und installieren Sie das Paket.
+Um Aspose.Words für .NET zu installieren, können Sie den NuGet-Paketmanager in Visual Studio verwenden, um die Bibliothek direkt in Ihrem Projekt zu installieren. Suchen Sie einfach im NuGet-Paketmanager nach „Apose.Words“ und installieren Sie das Paket.
 
 #### Q3. Kann ich das Erscheinungsbild des Flächendiagramms anpassen?
 Ja, mit Aspose.Words für .NET können Sie verschiedene Aspekte des Erscheinungsbilds des Flächendiagramms anpassen. Sie können Eigenschaften wie Diagrammtitel, Reihenfarbe, Achsenbeschriftungen und Diagrammbereichsformatierung ändern. Die Bibliothek bietet einen umfangreichen Satz an APIs, um die visuellen Elemente des Diagramms zu steuern und ein individuelles Erscheinungsbild zu erstellen, das Ihren Anforderungen entspricht.

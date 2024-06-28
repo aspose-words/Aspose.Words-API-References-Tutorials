@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
-## 步骤3：检查文档是否已加密
+## 第三步：检查文档是否加密
 
 我们使用`IsEncrypted`的财产`FileFormatInfo`对象检查文档是否已加密。该属性返回`true`如果文档已加密，否则返回`false`。我们在控制台中显示结果。
 

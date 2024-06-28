@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          //ここにカスタムアクションを実装します
          //「args.PageIndex」プロパティを通じてページ情報にアクセスできます。
-         //各ページの保存オプションを個別に変更することもできます
+         //各ページの保存オプションを個別に変更することもできます。
      }
 }
 ```

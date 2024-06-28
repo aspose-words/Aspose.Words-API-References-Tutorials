@@ -67,7 +67,7 @@ Ebben az oktatóanyagban láthattuk, hogyan lehet VBA-makrókat szerkeszteni egy
 
 ### GYIK
 
-#### K: Mi az a VBA-makró egy Word-dokumentumban?
+#### K: Mi az a VBA makró egy Word dokumentumban?
 
 V: A Word-dokumentumban lévő VBA-makró egy olyan kódrészlet, amely futtatható meghatározott műveletek végrehajtására a dokumentumban. A VBA makrók lehetővé teszik a feladatok automatizálását, egyéni funkciók hozzáadását és a dokumentumtartalommal való interakciót.
 
@@ -85,4 +85,4 @@ V: Mielőtt VBA-makrókat szerkeszthetne egy Word-dokumentumban, rendelkeznie ke
 
 #### K: Szerkeszthetek több VBA-makrót egy Word-dokumentumban egyszerre?
 
- V: Igen, módosíthat több VBA-makrót egy Word-dokumentumban hurok használatával vagy közvetlenül a megfelelő`VbaModule` objektumok a`Modules` gyűjteménye a`VbaProject` tárgy. Ez lehetővé teszi több VBA makró egyidejű frissítését egyetlen műveletben.
+ V: Igen, módosíthat több VBA-makrót egy Word-dokumentumban hurok használatával vagy közvetlenül a megfelelő`VbaModule` tárgyak a`Modules` gyűjteménye a`VbaProject` tárgy. Ez lehetővé teszi több VBA makró egyidejű frissítését egyetlen műveletben.

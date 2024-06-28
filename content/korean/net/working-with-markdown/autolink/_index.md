@@ -58,7 +58,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### Q: Aspose.Words에서 URL 주소에 대한 자동 링크를 어떻게 만들 수 있나요?
 
-A: Aspose.Words의 URL 주소에 대한 자동 링크를 생성하려면 다음을 사용할 수 있습니다.`<a>` 태그를 지정하세요.`href` URL 주소가 포함된 속성입니다. 예를 들어 다음을 사용할 수 있습니다.`<a href="https://www.aspose.com">https://www.aspose.com</a>` "https: //www.aspose.com"에 자동으로 연결됩니다.
+ A: Aspose.Words의 URL 주소에 대한 자동 링크를 생성하려면 다음을 사용할 수 있습니다.`<a>` 태그를 지정하세요.`href` URL 주소가 포함된 속성입니다. 예를 들어 다음을 사용할 수 있습니다.`<a href="https://www.aspose.com">https://www.aspose.com</a>` "https: //www.aspose.com"에 자동으로 연결됩니다.
 
 #### Q: Aspose.Words에서 자동 링크의 표시 텍스트를 사용자 정의할 수 있습니까?
 
@@ -66,4 +66,4 @@ A: Aspose.Words의 URL 주소에 대한 자동 링크를 생성하려면 다음�
 
 #### Q: Aspose.Words의 자동 링크에 추가 속성을 추가하려면 어떻게 해야 합니까?
 
- A: Aspose.Words의 자동 링크에 추가 속성을 추가하려면`<a>` 꼬리표. 예를 들어 다음을 사용할 수 있습니다.`<a href="https://www.aspose.com" target="_blank">Link</a>` 새 창이나 탭에서 링크를 열려면` attribute target="_blank"`.
+A: Aspose.Words의 자동 링크에 추가 속성을 추가하려면`<a>` 꼬리표. 예를 들어 다음을 사용할 수 있습니다.`<a href="https://www.aspose.com" target="_blank">Link</a>` 새 창이나 탭에서 링크를 열려면` attribute target="_blank"`.

@@ -17,7 +17,7 @@ url: /ar/net/programming-with-charts/format-number-of-data-label/
 - تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله باستخدام مدير الحزم NuGet لتثبيته.
 - مسار دليل المستند حيث سيتم حفظ مستند الإخراج.
 
-## الخطوة 2: إنشاء مستند جديد وإدراج مخطط
+## الخطوة 2: إنشاء مستند جديد وإدراج مخطط.
 
  إنشاء جديد`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 	// أو يمكنك تعيين رمز التنسيق ليتم ربطه بخلية مصدر،
-	//في هذه الحالة سيتم إعادة تعيين NumberFormat إلى الوضع العام ويتم توريثه من الخلية المصدر.
+	//في هذه الحالة، سيتم إعادة تعيين NumberFormat إلى الوضع العام ويتم توريثه من الخلية المصدر.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 Aspose.Words for .NET عبارة عن مكتبة معالجة مستندات غنية بالميزات تمكن المطورين من إنشاء مستندات Word ومعالجتها وحفظها برمجيًا في تطبيقات .NET. فهو يوفر نطاقًا واسعًا من الميزات لمعالجة الكلمات باستخدام عناصر المستند، بما في ذلك المخططات وتسميات البيانات.
 
 #### س2. كيف يمكنني تثبيت Aspose.Words لـ .NET؟
-يمكنك تثبيت Aspose.Words لـ .NET عن طريق تنزيله باستخدام مدير الحزم NuGet في Visual Studio. ما عليك سوى البحث عن "Aspose.Words" في مدير الحزم NuGet وتثبيته في مشروعك.
+يمكنك تثبيت Aspose.Words لـ .NET عن طريق تنزيله باستخدام مدير الحزم NuGet في Visual Studio. ما عليك سوى البحث عن "Apose.Words" في مدير الحزم NuGet وتثبيته في مشروعك.
 
 #### س3. هل يمكنني تنسيق جوانب أخرى من المخطط باستخدام Aspose.Words لـ .NET؟
 نعم، يوفر Aspose.Words for .NET إمكانات واسعة النطاق لتنسيق الجوانب المختلفة للمخطط. بالإضافة إلى تسميات البيانات، يمكنك تخصيص نوع المخطط وبيانات السلسلة وخصائص المحور ووسيلة الإيضاح والعنوان ومنطقة الرسم والعديد من العناصر الأخرى للمخطط. توفر واجهة برمجة التطبيقات (API) تحكمًا دقيقًا في مظهر المخطط وتنسيقه.

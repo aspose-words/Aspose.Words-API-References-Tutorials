@@ -83,7 +83,7 @@ Gratulacje! Pomyślnie nauczyłeś się renderować kształty w Aspose.Words dla
 
 Tak, możesz renderować wiele kształtów w jednym dokumencie. Po prostu powtórz proces dla każdego kształtu, który chcesz wyrenderować.
 
-### P2: Czy Aspose.Words dla Java jest kompatybilny z różnymi formatami dokumentów?
+### P2: Czy Aspose.Words for Java jest kompatybilny z różnymi formatami dokumentów?
 
 Tak, Aspose.Words for Java obsługuje szeroką gamę formatów dokumentów, w tym DOCX, PDF, HTML i inne.
 

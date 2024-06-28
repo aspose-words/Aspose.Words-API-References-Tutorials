@@ -109,7 +109,7 @@ tym artykule zbadaliśmy kod źródłowy C#, aby zrozumieć, jak korzystać z fu
 
 ### Często zadawane pytania
 
-#### P: Jaka jest funkcja Zamień tekst zawierający znaki meta w Aspose.Words dla .NET?
+#### P: Jaka jest funkcja Zamień tekst zawierający metaznaki w Aspose.Words dla .NET?
 
 O: Funkcja Zamień tekst zawierający metaznaki w Aspose.Words dla .NET umożliwia zamianę fragmentów tekstu w dokumencie zawierającym określone metaznaki. Możesz użyć tej funkcji, aby dokonać zaawansowanych zamian w dokumencie, biorąc pod uwagę metaznaki.
 

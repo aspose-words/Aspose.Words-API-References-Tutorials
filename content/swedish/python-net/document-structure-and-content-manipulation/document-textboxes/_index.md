@@ -22,7 +22,7 @@ Innan du börjar, se till att du har följande:
 - En grundläggande förståelse för Python-programmering.
 - Aspose.Words för Python API-referenser.
 
-## Installerar Aspose.Words för Python
+## Installera Aspose.Words för Python
 
 För att komma igång måste du installera paketet Aspose.Words for Python. Du kan göra detta med pip, Python-paketets installationsprogram, med följande kommando:
 
@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- I den här koden skapar vi en ny`Document` och a`DocumentBuilder` . De`insert_text_box`metod används för att lägga till en textruta i dokumentet. Du kan anpassa textrutans innehåll, position och storlek enligt dina krav.
+ I den här koden skapar vi en ny`Document` och a`DocumentBuilder` . De`insert_text_box` metod används för att lägga till en textruta i dokumentet. Du kan anpassa textrutans innehåll, position och storlek enligt dina krav.
 
 ## Formatera textrutor
 

@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Bước 2: Tải tài liệu nguồn và đích
 
- Tiếp theo, bạn cần tải tài liệu nguồn và đích bằng Aspose.Words`Document` lớp học. Cập nhật tên tập tin trong`Document` hàm tạo theo tên tài liệu của bạn.
+Tiếp theo, bạn cần tải tài liệu nguồn và đích bằng Aspose.Words.`Document` lớp học. Cập nhật tên tập tin trong`Document` hàm tạo theo tên tài liệu của bạn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Bước 4: Liên kết đầu trang và chân trang với phần trước
 
-Để liên kết đầu trang và chân trang của tài liệu nguồn với phần trước đó trong tài liệu đích, bạn có thể sử dụng`LinkToPrevious` phương pháp của`HeadersFooters` bộ sưu tập. Bằng cách vượt qua`true` làm tham số, bạn ghi đè mọi đầu trang hoặc chân trang hiện có trong tài liệu nguồn.
+ Để liên kết đầu trang và chân trang của tài liệu nguồn với phần trước đó trong tài liệu đích, bạn có thể sử dụng`LinkToPrevious` phương pháp của`HeadersFooters` bộ sưu tập. Bằng cách vượt qua`true` làm tham số, bạn ghi đè mọi đầu trang hoặc chân trang hiện có trong tài liệu nguồn.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
@@ -86,4 +86,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 ```
 
-Đó là nó! Bạn đã triển khai thành công tính năng Chân trang của Tiêu đề Liên kết bằng Aspose.Words cho .NET. Tài liệu cuối cùng sẽ chứa nội dung đã hợp nhất với các đầu trang và chân trang từ tài liệu nguồn được liên kết với phần trước đó trong tài liệu đích.
+Đó là nó! Bạn đã triển khai thành công tính năng Chân trang của Tiêu đề Liên kết bằng Aspose.Words cho .NET. Tài liệu cuối cùng sẽ chứa nội dung đã hợp nhất với các đầu trang và chân trang từ tài liệu nguồn được liên kết với phần trước trong tài liệu đích.

@@ -2,110 +2,113 @@
 title: Word 문서 병합
 linktitle: 문서 병합
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 여러 Word 문서를 병합하는 방법을 알아보세요. 이 강력한 API는 문서 병합 프로세스를 단순화하여 효율적이고 간단하게 만듭니다.
+description: 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서를 병합하는 방법을 알아보세요. 문서 작업 흐름을 자동화하는 데 적합합니다.
 type: docs
 weight: 10
 url: /ko/net/split-document/merge-documents/
 ---
+## 소개
 
-이 튜토리얼에서는 Aspose.Words for .NET의 문서 병합 기능을 사용하여 여러 Word 문서를 병합하는 방법을 안내합니다. 소스 코드를 이해하고 모든 소스 문서가 포함된 병합 문서를 얻으려면 아래 단계를 따르세요.
+안녕하세요! 여러 Word 문서를 하나의 응집력 있는 파일로 병합해야 했던 적이 있습니까? 보고서를 편집하든, 프로젝트를 구성하든, 아니면 그냥 정리하든 문서를 병합하면 많은 시간과 노력을 절약할 수 있습니다. .NET용 Aspose.Words를 사용하면 이 프로세스가 매우 쉬워집니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서를 병합하는 방법을 단계별로 설명하므로 쉽게 따라할 수 있습니다. 마지막에는 전문가처럼 문서를 병합하게 될 것입니다!
 
-## 1단계: 병합할 문서 검색
+## 전제조건
 
-문서를 병합하기 전에 병합할 원본 문서를 찾아야 합니다. 방법은 다음과 같습니다.
+자세히 알아보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
+
+1. C# 기본 지식: C# 구문과 개념에 익숙해야 합니다.
+2.  .NET용 Aspose.Words: 다운로드[여기](https://releases.aspose.com/words/net/) . 단지 탐색 중이라면 다음과 같이 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/).
+3. Visual Studio: 모든 최신 버전이 작동하지만 최신 버전을 권장합니다.
+4. .NET Framework: 시스템에 설치되어 있는지 확인하세요.
+
+자, 이제 전제 조건이 정렬되었으므로 재미있는 부분으로 넘어가겠습니다!
+
+## 네임스페이스 가져오기
+
+먼저 Aspose.Words를 사용하려면 필요한 네임스페이스를 가져와야 합니다. 이를 통해 필요한 모든 클래스와 메서드에 액세스할 수 있습니다.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// 병합할 문서를 검색합니다.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-.GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.LowCode;
 ```
 
-## 2단계: 문서 병합
+이러한 네임스페이스는 문서 생성, 조작 및 다양한 형식으로 저장하는 데 필수적입니다.
 
-이제 문서를 하나씩 병합하여 최종 병합 문서를 만듭니다. 방법은 다음과 같습니다.
+## 1단계: 문서 디렉토리 설정
 
-```csharp
-// 결과 문서의 첫 번째 부분을 엽니다.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// 새 결과 문서를 만듭니다.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// 문서를 하나씩 병합하세요.
-foreach(FileSystemInfo documentPath in documentPaths)
-{
-if (documentPath.FullName == sourceDocumentPath)
-keep on going;
-
-mergedDocBuilder.MoveToDocumentEnd();
-mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-```
-
-### .NET용 Aspose.Words를 사용하여 문서 병합을 위한 예제 소스 코드
-
-다음은 .NET용 Aspose.Words의 문서 병합 기능에 대한 전체 소스 코드입니다.
+문서 병합을 시작하기 전에 문서가 저장되는 디렉터리를 지정해야 합니다. 이는 Aspose.Words가 병합하려는 파일을 찾는 데 도움이 됩니다.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// 병합에 사용되는 문서를 찾습니다.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
-
-// 결과 문서의 첫 번째 부분을 엽니다.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// 새 결과 문서를 만듭니다.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// 문서 부분을 하나씩 병합합니다.
-foreach (FileSystemInfo documentPath in documentPaths)
-{
-	if (documentPath.FullName == sourceDocumentPath)
-		continue;
-
-	mergedDocBuilder.MoveToDocumentEnd();
-	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-	sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
+
+ 여기서는 Word 문서가 있는 디렉터리의 경로를 설정합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 실제 경로와 함께.
+
+## 2단계: 단순 병합
+
+ 간단한 병합부터 시작해 보겠습니다. 다음을 사용하여 두 개의 문서를 하나로 병합하겠습니다.`Merger.Merge` 방법.
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
+```
+
+ 이 단계에서는 병합합니다.`Document1.docx` 그리고`Document2.docx` 라는 새 파일에`MergedDocument.docx`.
+
+## 3단계: 저장 옵션을 사용한 병합
+
+때로는 병합된 문서에 대해 비밀번호 보호와 같은 특정 옵션을 설정하고 싶을 수도 있습니다. 방법은 다음과 같습니다.
+
+```csharp
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" };
+Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
+```
+
+이 코드 조각은 문서를 비밀번호 보호 기능과 병합하여 최종 문서의 보안을 보장합니다.
+
+## 4단계: PDF로 병합 및 저장
+
+문서를 병합하고 결과를 PDF로 저장해야 하는 경우 Aspose.Words를 사용하면 다음과 같이 쉽게 할 수 있습니다.
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
+```
+
+ 여기서 우리는 병합합니다.`Document1.docx` 그리고`Document2.docx` 그리고 결과를 PDF 파일로 저장하세요.
+
+## 5단계: 병합된 문서에서 문서 인스턴스 만들기
+
+때로는 저장하기 전에 병합된 문서에 대한 추가 작업을 원할 수도 있습니다. 당신은 만들 수 있습니다`Document` 병합된 문서의 인스턴스:
+
+```csharp
+Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
+doc.Save(dataDir + "MergedDocumentInstance.docx");
+```
+
+ 이 단계에서는`Document` 병합된 문서의 인스턴스를 저장하기 전에 추가 조작이 가능합니다.
 
 ## 결론
 
-축하해요! Aspose.Words for .NET의 문서 병합 기능을 사용하여 여러 Word 문서를 병합하는 방법을 배웠습니다. 제공된 소스 코드를 따르면 각 소스 문서의 서식을 유지하면서 별도의 문서를 하나의 병합 문서로 결합할 수 있습니다.
+ 그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서를 병합하는 방법을 배웠습니다. 이 자습서에서는 환경 설정, 간단한 병합 수행, 저장 옵션을 사용한 병합, 병합된 문서를 PDF로 변환 및 병합된 문서에서 문서 인스턴스 만들기를 다루었습니다. Aspose.Words는 다양한 기능을 제공하므로 꼭 살펴보세요.[API 문서](https://reference.aspose.com/words/net/) 잠재력을 최대한 발휘할 수 있습니다.
 
-문서 병합은 여러 소스의 정보를 통합하거나 개별 부분에서 통합 문서를 만들 때 유용할 수 있습니다. Aspose.Words for .NET은 문서 병합 프로세스를 단순화하여 효율적이고 간단하게 만드는 강력한 API를 제공합니다.
+## 자주 묻는 질문
 
-문서 처리 기능을 향상하고 작업 흐름을 간소화하기 위해 Aspose.Words for .NET에서 제공하는 다른 기능을 자유롭게 탐색해 보세요.
+### 1. .NET용 Aspose.Words란 무엇입니까?
 
-### 자주 묻는 질문
+Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 조작 및 변환할 수 있는 강력한 라이브러리입니다. 문서 관련 작업을 자동화하는 데 이상적입니다.
 
-#### 서식이 다른 문서를 어떻게 병합할 수 있나요?
+### 2. Aspose.Words for .NET을 무료로 사용할 수 있나요?
 
- 문서를 병합할 때 Aspose.Words for .NET은 각 소스 문서의 서식을 유지하는 옵션을 제공합니다. 을 사용하여`ImportFormatMode.KeepSourceFormatting` 옵션을 선택하면 병합된 문서는 원본 문서의 형식을 유지합니다. 병합된 문서 전체에 일관된 서식을 적용하려면 문서를 병합한 후 Aspose.Words API를 사용하여 서식을 수정할 수 있습니다.
+ 다음을 사용하여 .NET용 Aspose.Words를 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구입해야 합니다.
 
-#### 다른 형식의 문서를 병합할 수 있나요?
+### 3. 병합 중에 다른 서식을 어떻게 처리합니까?
 
-예, Aspose.Words for .NET은 DOCX, DOC, RTF 등을 포함한 다양한 형식의 문서 병합을 지원합니다. 다양한 형식의 문서를 Aspose.Words API에 로드하고 원래 형식에 관계없이 단일 문서로 병합할 수 있습니다.
+ Aspose.Words는 다음과 같은 다양한 병합 형식 모드를 제공합니다.`KeepSourceFormatting` 그리고`MergeFormatting` . 다음을 참조하세요.[API 문서](https://reference.aspose.com/words/net/) 자세한 지침을 보려면.
 
-#### 표, 이미지 등 복잡한 구조의 문서를 병합할 수 있나요?
+### 4. .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
 
-전적으로! Aspose.Words for .NET은 표, 이미지, 머리글, 바닥글 등을 포함한 복잡한 구조의 문서를 병합할 수 있습니다. API는 각 문서 콘텐츠의 무결성과 레이아웃을 유지하면서 병합 프로세스를 처리합니다.
+방문하시면 지원을 받으실 수 있습니다.[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).
 
-#### 페이지 방향이나 크기가 다른 문서를 병합할 수 있습니까?
+### 5. .NET용 Aspose.Words와 다른 파일 형식을 병합할 수 있나요?
 
-예, Aspose.Words for .NET은 병합 프로세스 중에 페이지 방향이나 크기가 다른 문서를 처리합니다. 결과로 병합된 문서는 원본 문서의 다양한 페이지 방향과 크기를 수용합니다.
+예, Aspose.Words는 DOCX, PDF 및 HTML을 포함한 다양한 파일 형식 병합을 지원합니다.

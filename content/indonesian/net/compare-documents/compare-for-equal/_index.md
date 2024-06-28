@@ -73,4 +73,4 @@ J: Ya, Aspose.Words untuk .NET menyediakan berbagai opsi untuk menyesuaikan pros
 
 #### T: Dapatkah saya melakukan perbandingan yang lebih detail untuk mengidentifikasi perbedaan spesifik antar dokumen?
 
-J: Ya, Anda dapat melakukan perbandingan yang lebih detail untuk mengidentifikasi perbedaan spesifik antar dokumen dengan melakukan iterasi melalui`Revisions` kumpulan dokumen asli. Setiap revisi mewakili perubahan atau perbedaan antar dokumen. Anda dapat mengakses rincian setiap revisi, seperti jenis perubahan (penyisipan, penghapusan, perubahan format) dan rentang dokumen yang terpengaruh.
+ J: Ya, Anda dapat melakukan perbandingan yang lebih detail untuk mengidentifikasi perbedaan spesifik antar dokumen dengan melakukan iterasi melalui`Revisions` kumpulan dokumen asli. Setiap revisi mewakili perubahan atau perbedaan antar dokumen. Anda dapat mengakses rincian setiap revisi, seperti jenis perubahan (penyisipan, penghapusan, perubahan format) dan rentang dokumen yang terpengaruh.

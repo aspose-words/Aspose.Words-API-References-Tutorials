@@ -25,6 +25,6 @@ url: /ja/net/working-with-section/
 | [クローンセクション](./clone-section/) | このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のセクションのクローンを作成する方法を学びます。ステップバイステップのガイド。 |
 | [セクションのコピー](./copy-section/) | このチュートリアルでは、Aspose.Words for .NET を使用して Word ドキュメントから別のドキュメントにセクションをコピーする方法を学びます。 |
 | [ヘッダー フッター コンテンツの削除](./delete-header-footer-content/) | このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書からヘッダーとフッターのコンテンツを削除する方法を学びます。  |
-| [セクションの内容を削除](./delete-section-content/) | このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書の特定のセクションからコンテンツを削除する方法を学びます。 |
+| [セクションの内容を削除](./delete-section-content/) | このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書の特定のセクションからコンテンツを削除する方法を学習します。 |
 | [すべてのセクションの Word ページ設定を変更する](./modify-page-setup-in-all-sections/) | このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のすべてのセクションの Word ページ設定を変更する方法を学びます。 |
 | [インデックスによるセクションアクセス](./sections-access-by-index/) | このチュートリアルでは、インデックスによって Word 文書のセクションにアクセスし、Aspose.Words for .NET を使用してその設定を変更する方法を学びます。 |

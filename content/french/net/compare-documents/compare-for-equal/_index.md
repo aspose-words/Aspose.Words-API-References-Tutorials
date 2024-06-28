@@ -69,8 +69,8 @@ R : Pour comparer l'égalité de deux documents à l'aide d'Aspose.Words for .N
 
 #### Q : Puis-je personnaliser le processus de comparaison ou proposer des options de comparaison spécifiques ?
 
-R : Oui, Aspose.Words for .NET propose diverses options pour personnaliser le processus de comparaison. Vous pouvez contrôler la façon dont les documents sont comparés, spécifier des options de comparaison telles que la méthode de comparaison, les modifications de formatage ou ignorer des éléments spécifiques. Reportez-vous à la documentation Aspose.Words for .NET pour obtenir des informations détaillées sur la personnalisation du processus de comparaison.
+: Oui, Aspose.Words for .NET propose diverses options pour personnaliser le processus de comparaison. Vous pouvez contrôler la façon dont les documents sont comparés, spécifier des options de comparaison telles que la méthode de comparaison, les modifications de formatage ou ignorer des éléments spécifiques. Reportez-vous à la documentation Aspose.Words for .NET pour obtenir des informations détaillées sur la personnalisation du processus de comparaison.
 
 #### Q : Puis-je effectuer une comparaison plus détaillée pour identifier les différences spécifiques entre les documents ?
 
- : Oui, vous pouvez effectuer une comparaison plus détaillée pour identifier les différences spécifiques entre les documents en parcourant les`Revisions` collection du document original. Chaque révision représente un changement ou une différence entre les documents. Vous pouvez accéder aux détails de chaque révision, tels que le type de modification (insertion, suppression, modification de formatage) et la plage concernée du document.
+ R : Oui, vous pouvez effectuer une comparaison plus détaillée pour identifier les différences spécifiques entre les documents en parcourant les`Revisions` collection des documents originaux. Chaque révision représente un changement ou une différence entre les documents. Vous pouvez accéder aux détails de chaque révision, tels que le type de modification (insertion, suppression, changement de formatage) et la plage concernée du document.

@@ -18,7 +18,7 @@ url: /zh/net/working-with-markdown/indented-code/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 步骤 2：为缩进代码添加样式
+## 步骤2：为指定代码添加样式
 
 我们将使用以下命令为缩进代码添加自定义样式`Styles.Add`的方法`Document`目的。在此示例中，我们为缩进代码创建一个名为“IndentedCode”的样式。
 
@@ -27,7 +27,7 @@ Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedC
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## 步骤 3：添加缩进代码
+## 第三步：添加指定代码
 
 现在我们可以使用“IndentedCode”自定义样式添加缩进代码块。
 
@@ -51,7 +51,7 @@ builder.Writeln("This is an indented code");
 
 ### 常见问题解答
 
-#### 问：Markdown 中的缩进代码是什么？
+#### 问：Markdown 中的指定代码是什么？
 
 答：Markdown 中的缩进代码是一种用于在 Markdown 文档中显示代码的格式化方法。它包括用空格或制表符缩进每行代码。
 

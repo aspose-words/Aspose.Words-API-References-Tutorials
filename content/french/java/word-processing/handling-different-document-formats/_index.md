@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Création de tableaux
 
 ```java
-// Créer un tableau avec 3 lignes et 4 colonnes
+// Créez un tableau avec 3 lignes et 4 colonnes.
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 
@@ -112,7 +112,7 @@ String author = properties.getAuthor();
 
 ## Conclusion
 
-Aspose.Words for Java est un outil robuste pour gérer différents formats de documents. Que vous ayez besoin de manipuler du texte, de convertir entre formats ou de gérer les métadonnées d'un document, Aspose.Words simplifie le processus. Grâce aux connaissances acquises grâce à ce guide, vous pouvez aborder en toute confiance les tâches liées aux documents dans vos applications Java.
+Aspose.Words for Java est un outil robuste pour gérer divers formats de documents. Que vous ayez besoin de manipuler du texte, de convertir entre formats ou de gérer les métadonnées d'un document, Aspose.Words simplifie le processus. Grâce aux connaissances acquises grâce à ce guide, vous pouvez aborder en toute confiance les tâches liées aux documents dans vos applications Java.
 
  Pour plus de références et une documentation détaillée, visitez[Aspose.Words pour les références de l'API Java](https://reference.aspose.com/words/java/).
 

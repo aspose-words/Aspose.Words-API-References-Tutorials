@@ -15,7 +15,7 @@ Szeretné elsajátítani a dokumentumkezelés művészetét Java nyelven? Ne ker
 
 Mielőtt belemerülnénk az oktatóanyagokba, értsük meg, hogy az Aspose.Words for Java miért tűnik ki a legjobb megoldás a dokumentumkezeléshez.
 
-Az Aspose.Words for Java egy hatékony és sokoldalú API, amely lehetővé teszi a fejlesztők számára, hogy különféle formátumú dokumentumokat hozzanak létre, szerkesszenek, alakítsanak és kezeljenek, beleértve a DOCX, PDF, HTML és egyebeket. Ez egy változás a dokumentumokkal kapcsolatos feladatok automatizálására törekvő vállalkozások és fejlesztők számára.
+Az Aspose.Words for Java egy hatékony és sokoldalú API, amely lehetővé teszi a fejlesztők számára, hogy különféle formátumú dokumentumokat hozzanak létre, szerkesszenek, alakítsanak át és kezeljenek, beleértve a DOCX, PDF, HTML és egyebeket. Ez egy változás a dokumentumokkal kapcsolatos feladatok automatizálására törekvő vállalkozások és fejlesztők számára.
 
 ## Az Aspose.Words oktatóanyagok használatának megkezdése
 
@@ -71,7 +71,7 @@ Ebből az átfogó útmutatóból megtudhatja, hogyan használhatja a strukturá
 ### [Stílusok és témák használata az Aspose.Words for Java programban](./using-styles-and-themes/)
 Ismerje meg, hogyan javíthatja a dokumentumok formázását az Aspose.Words for Java segítségével. Fedezze fel a stílusokat, témákat és egyebeket ebben a forráskód-példákat tartalmazó átfogó útmutatóban.
 ### [Tartalomjegyzék létrehozása az Aspose.Words for Java programban](./generating-table-of-contents/)
-Ismerje meg, hogyan hozhat létre és szabhat testre tartalomjegyzéket (TOC) az Aspose.Words for Java használatával. Rendezett és professzionális dokumentumokat készíthet könnyedén.
+Ismerje meg, hogyan hozhat létre és testre szabhatja a tartalomjegyzéket (TOC) az Aspose.Words for Java használatával. Rendezett és professzionális dokumentumokat készíthet könnyedén.
 ### [Dokumentumok védelme az Aspose.Words for Java programban](./protecting-documents/)
 Ismerje meg, hogyan védheti meg Java Word dokumentumait az Aspose.Words for Java segítségével. Védje meg adatait jelszóval és még sok mással.
 ### [Dokumentumok felosztása oldalakra az Aspose.Words for Java programban](./splitting-documents-into-pages/)

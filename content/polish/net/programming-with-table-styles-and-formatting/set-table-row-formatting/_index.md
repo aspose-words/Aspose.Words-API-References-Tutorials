@@ -34,7 +34,7 @@ builder. InsertCell();
 ```
 
 ## Krok 4: Zdefiniuj formatowanie linii
- Teraz możemy ustawić formatowanie wierszy, uzyskując dostęp do pliku`RowFormat` przedmiot`DocumentBuilder` obiekt. Wysokość linii i marginesy (dopełnienia) możemy ustawić za pomocą odpowiednich właściwości.
+ Teraz możemy ustawić formatowanie wierszy, uzyskując dostęp do pliku`RowFormat` obiekt`DocumentBuilder` obiekt. Wysokość linii i marginesy (dopełnienia) możemy ustawić za pomocą odpowiednich właściwości.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;

@@ -2,84 +2,153 @@
 title: Vložit dokument při hromadné korespondenci
 linktitle: Vložit dokument při hromadné korespondenci
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vložit dokument do jiného během hromadné korespondence pomocí Aspose.Words for .NET.
+description: Naučte se vkládat dokumenty do polí hromadné korespondence pomocí Aspose.Words for .NET v tomto komplexním, podrobném tutoriálu.
 type: docs
 weight: 10
 url: /cs/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-V tomto tutoriálu vás provedeme tím, jak vložit dokument do jiného dokumentu během hromadné korespondence pomocí funkce Vložit dokument během hromadné korespondence Aspose.Words for .NET. Chcete-li porozumět zdrojovému kódu a provést vložení dokumentu, postupujte podle následujících kroků.
+## Úvod
 
-## Krok 1: Načtení hlavního dokumentu
+Vítejte ve světě automatizace dokumentů s Aspose.Words pro .NET! Přemýšleli jste někdy o tom, jak dynamicky vkládat dokumenty do určitých polí v hlavním dokumentu během operace hromadné korespondence? Tak to jste na správném místě. Tento tutoriál vás krok za krokem provede procesem vkládání dokumentů do polí hromadné korespondence pomocí Aspose.Words for .NET. Je to jako skládání puzzle, kde každý dílek dokonale zapadne na své místo. Takže, pojďme se ponořit!
 
-Chcete-li začít, zadejte adresář pro vaše dokumenty a načtěte hlavní dokument do objektu Document. Zde je postup:
+## Předpoklady
+
+Než začneme, ujistěte se, že máte následující:
+
+1.  Aspose.Words pro .NET: Můžete[stáhněte si nejnovější verzi zde](https://releases.aspose.com/words/net/) . Pokud potřebujete zakoupit licenci, můžete tak učinit[tady](https://purchase.aspose.com/buy) . Případně můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo to zkuste s a[zkušební verze zdarma](https://releases.aspose.com/).
+2. Vývojové prostředí: Visual Studio nebo jakékoli jiné C# IDE.
+3. Základní znalost C#: Díky znalosti programování v C# bude tento tutoriál hračkou.
+
+## Importovat jmenné prostory
+
+Nejprve budete muset importovat potřebné jmenné prostory. Jsou to jako stavební kameny vašeho projektu.
 
 ```csharp
-// Cesta k adresáři dokumentů.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+using System.Linq;
 ```
 
-## Krok 2: Nakonfigurujte hromadnou korespondenci
+Pojďme si tento proces rozdělit na zvládnutelné kroky. Každý krok bude navazovat na předchozí a povede vás ke kompletnímu řešení.
 
-Nyní nakonfigurujeme hromadnou korespondenci a určete zpětné volání sloučení polí pro vložení dokumentu do jiného dokumentu. Zde je postup:
+## Krok 1: Nastavení adresáře
 
-```csharp
-mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-```
-
-## Krok 3: Spuštění hromadné korespondence
-
-Hromadnou korespondenci spustíme zadáním názvů slučovacích polí a odpovídajících dat. Zde je postup:
+Než budete moci začít vkládat dokumenty, musíte definovat cestu k adresáři dokumentů. Zde jsou uloženy vaše dokumenty.
 
 ```csharp
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-```
-
-### Příklad zdrojového kódu pro Insert Document At Hromadná korespondence pomocí Aspose.Words for .NET
-
-Zde je úplný zdrojový kód pro funkci Vložit dokument do hromadné korespondence Aspose.Words pro .NET:
-
-```csharp
-// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
+## Krok 2: Načtení hlavního dokumentu
+
+Dále načtete hlavní dokument. Tento dokument obsahuje slučovací pole, kam budou vloženy další dokumenty.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+## Krok 3: Nastavení zpětného volání sloučení polí
+
+Abyste zvládli proces sloučení, budete muset nastavit funkci zpětného volání. Tato funkce bude zodpovědná za vkládání dokumentů do zadaných slučovacích polí.
+
+```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-// Hlavní dokument obsahuje slučovací pole s názvem "Document_1".
-// Odpovídající data pro toto pole obsahují plně kvalifikovanou cestu k dokumentu.
-// To by mělo být vloženo do tohoto pole.
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
+```
 
+## Krok 4: Provedení hromadné korespondence
+
+Nyní je čas provést hromadnou korespondenci. Tady se děje kouzlo. Určíte slučovací pole a dokument, který má být vložen do tohoto pole.
+
+```csharp
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
+```
+
+## Krok 5: Uložení dokumentu
+
+Po dokončení hromadné korespondence upravený dokument uložíte. Tento nový dokument bude mít vložený obsah přesně tam, kde ho chcete mít.
+
+```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-S tímto kódem budete moci vložit dokument do jiného dokumentu během hromadné korespondence pomocí Aspose.Words for .NET. Výsledný dokument bude uložen pod novým názvem
+## Krok 6: Vytvoření obsluhy zpětného volání
 
+Obslužná rutina zpětného volání je třída, která provádí speciální zpracování pro slučovací pole. Načte dokument zadaný v hodnotě pole a vloží jej do aktuálního slučovacího pole.
+
+```csharp
+private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
+{
+    void IFieldMergingCallback.FieldMerging(FieldMergingArgs args)
+    {
+        if (args.DocumentFieldName == "Document_1")
+        {
+            DocumentBuilder builder = new DocumentBuilder(args.Document);
+            builder.MoveToMergeField(args.DocumentFieldName);
+
+            Document subDoc = new Document((string)args.FieldValue);
+            InsertDocument(builder.CurrentParagraph, subDoc);
+
+            if (!builder.CurrentParagraph.HasChildNodes)
+                builder.CurrentParagraph.Remove();
+
+            args.Text = null;
+        }
+    }
+}
+```
+
+## Krok 7: Vložení dokumentu
+
+Tato metoda vloží zadaný dokument do aktuální buňky odstavce nebo tabulky.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        foreach (Node srcNode in srcSection.Body)
+        {
+            if (srcNode.NodeType == NodeType.Paragraph)
+            {
+                Paragraph para = (Paragraph)srcNode;
+                if (para.IsEndOfSection && !para.HasChildNodes)
+                    continue;
+            }
+
+            Node newNode = importer.ImportNode(srcNode, true);
+            destinationParent.InsertAfter(newNode, insertionDestination);
+            insertionDestination = newNode;
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
+}
+```
 
 ## Závěr
 
-tomto tutoriálu jsme prozkoumali, jak vložit dokument do jiného dokumentu během hromadné korespondence pomocí funkce Vložit dokument během hromadné korespondence Aspose.Words for .NET. Nakonfigurováním hromadné korespondence a poskytnutím potřebných dat můžete dynamicky sestavit dokumenty sloučením různých šablon dokumentů nebo oddílů. Aspose.Words for .NET poskytuje flexibilní a výkonný způsob správy složitých scénářů generování dokumentů, díky čemuž je cenným nástrojem pro automatizaci úkolů při vytváření dokumentů a manipulaci s nimi.
+tady to máte! Úspěšně jste vložili dokumenty do určitých polí během operace hromadné korespondence pomocí Aspose.Words for .NET. Tato výkonná funkce vám může ušetřit spoustu času a úsilí, zejména při práci s velkými objemy dokumentů. Berte to tak, že máte osobního asistenta, který se za vás postará o veškeré těžké zvedání. Takže jděte do toho a vyzkoušejte to. Šťastné kódování!
 
-### FAQ
+## FAQ
 
-#### Otázka: Jaký je účel vložení dokumentu do jiného dokumentu během hromadné korespondence?
+### Mohu vložit více dokumentů do různých slučovacích polí?
+ Ano můžeš. Jednoduše zadejte příslušná slučovací pole a odpovídající cesty dokumentu v`MailMerge.Execute` metoda.
 
-Odpověď: Vložení dokumentu do jiného dokumentu během hromadné korespondence umožňuje dynamicky kombinovat různé šablony dokumentů nebo oddíly na základě dat poskytnutých během procesu hromadné korespondence. Tato funkce je zvláště užitečná, když chcete sestavit složité dokumenty sloučením různých předdefinovaných šablon nebo oddílů do konečného dokumentu.
+### Je možné formátovat vložený dokument jinak než hlavní dokument?
+ Absolutně! Můžete použít`ImportFormatMode` parametry v`NodeImporter` k ovládání formátování.
 
-#### Otázka: Jak vložím dokument do jiného dokumentu během hromadné korespondence pomocí Aspose.Words for .NET?
+### Co když je název slučovacího pole dynamický?
+Názvy polí dynamického sloučení můžete zpracovat tak, že je předáte jako parametry obsluze zpětného volání.
 
-A: Chcete-li vložit dokument do jiného dokumentu během hromadné korespondence pomocí Aspose.Words for .NET, postupujte takto:
-1. Načtěte hlavní dokument, který bude sloužit jako základ, do objektu dokumentu.
-2. Nakonfigurujte hromadnou korespondenci a zadejte zpětné volání hromadné korespondence pro zpracování vkládání dokumentu.
-3. Spusťte hromadnou korespondenci s názvy slučovacích polí a odpovídajícími daty (cesta k dokumentu, který má být vložen).
+### Mohu tuto metodu použít s různými formáty souborů?
+Ano, Aspose.Words podporuje různé formáty souborů včetně DOCX, PDF a dalších.
 
-#### Otázka: Jak mohu přizpůsobit chování vkládání během hromadné korespondence?
-
-Odpověď: Chcete-li přizpůsobit chování vkládání během hromadné korespondence, můžete implementovat vlastní FieldMergingCallback zděděním z rozhraní IFieldMergingCallback. To vám umožňuje řídit, jak se dokumenty vkládají a spojují na základě vašich specifických požadavků.
-
-#### Otázka: Mohu během hromadné korespondence vložit více dokumentů?
-
-Odpověď: Ano, během hromadné korespondence můžete vložit více dokumentů poskytnutím příslušných dat pro každé pole hromadné korespondence. Pro každé slučovací pole, které vyžaduje vložení dokumentu, zadejte jako data cestu k odpovídajícímu dokumentu.
-
-
+### Jak se vypořádám s chybami během procesu vkládání dokumentu?
+Implementujte zpracování chyb v obslužné rutině zpětného volání, abyste mohli spravovat všechny výjimky, které mohou nastat.

@@ -13,6 +13,6 @@ url: /de/net/working-with-formfields/
 | Titel | Beschreibung |
 | --- | --- |
 | [Formularfelder einfügen](./insert-form-fields/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Dropdown-Formularfelder in Word-Dokumente einfügen. |
-| [Formularfelder funktionieren mit Eigenschaften](./form-fields-work-with-properties/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Formularfeldeigenschaften in Word-Dokumenten arbeiten. |
+| [Formularfelder arbeiten mit Eigenschaften](./form-fields-work-with-properties/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Formularfeldeigenschaften in Word-Dokumenten arbeiten. |
 | [Formularfelder Holen Sie sich eine Sammlung von Formularfeldern](./form-fields-get-form-fields-collection/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Formularfeldsammlungen in Word-Dokumenten abrufen und bearbeiten. |
 | [Formularfelder nach Namen abrufen](./form-fields-get-by-name/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Formularfelder in Word-Dokumenten nach Namen abrufen und ändern. |

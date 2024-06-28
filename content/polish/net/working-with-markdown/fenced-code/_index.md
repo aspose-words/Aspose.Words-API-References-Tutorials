@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-markdown/fenced-code/
 ---
 
-tym przykładzie przeprowadzimy Cię przez proces korzystania z funkcji chronionego kodu w Aspose.Words dla .NET. kod chroniony służy do reprezentowania bloków kodu o określonym formatowaniu.
+W tym przykładzie przeprowadzimy Cię przez proces korzystania z funkcji chronionego kodu w Aspose.Words dla .NET. kod chroniony służy do reprezentowania bloków kodu o określonym formatowaniu.
 
 ## Krok 1: Korzystanie z generatora dokumentów
 

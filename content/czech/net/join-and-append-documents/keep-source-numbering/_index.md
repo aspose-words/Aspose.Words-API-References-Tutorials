@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Krok 4: Importujte a přidejte odstavce
 
-Procházejte odstavce ve zdrojovém dokumentu a importujte každý odstavec do cílového dokumentu pomocí`importer`. Připojte importované uzly k tělu cílového dokumentu.
+ Procházejte odstavce ve zdrojovém dokumentu a importujte každý odstavec do cílového dokumentu pomocí`importer`. Připojte importované uzly k tělu cílového dokumentu.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ Tím je dokončena implementace připojení zdrojového dokumentu k cílovému d
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Při importu číslovaných odstavců dodržujte formátování seznamu zdrojů.
+	//Při importu číslovaných odstavců dodržujte formátování seznamu zdrojů.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

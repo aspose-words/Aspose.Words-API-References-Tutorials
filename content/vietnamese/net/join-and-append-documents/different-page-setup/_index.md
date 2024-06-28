@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Bước 3: Thiết lập cài đặt trang cho tài liệu nguồn
 
- Điều chỉnh cài đặt thiết lập trang của tài liệu nguồn để đảm bảo tính liên tục và đánh số phù hợp. Trong ví dụ này, chúng tôi đặt phần bắt đầu thành`SectionStart.Continuous` và bắt đầu lại việc đánh số trang. Chúng tôi cũng đảm bảo rằng chiều rộng, chiều cao và hướng của trang khớp với phần cuối cùng của tài liệu đích.
+ Điều chỉnh cài đặt thiết lập trang của tài liệu nguồn để đảm bảo tính liên tục và đánh số phù hợp. Trong ví dụ này, chúng tôi đặt phần bắt đầu thành`SectionStart.Continuous`và bắt đầu lại việc đánh số trang. Chúng tôi cũng đảm bảo rằng chiều rộng, chiều cao và hướng của trang khớp với phần cuối cùng của tài liệu đích.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Bước 4: Sửa đổi định dạng đoạn văn
 
- Để duy trì định dạng phù hợp, hãy lặp qua tất cả các đoạn văn trong tài liệu nguồn và đặt`KeepWithNext`tài sản để`true`Điều này đảm bảo rằng các đoạn văn luôn ở cùng nhau trong quá trình nối thêm.
+ Để duy trì định dạng phù hợp, hãy lặp qua tất cả các đoạn văn trong tài liệu nguồn và đặt`KeepWithNext`tài sản để`true`. Điều này đảm bảo rằng các đoạn văn luôn ở cùng nhau trong quá trình nối thêm.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Bước 6: Lưu tài liệu đích
 
- Cuối cùng, lưu tài liệu đích đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
+Cuối cùng, lưu tài liệu đích đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 	// Bắt đầu lại việc đánh số trang ở đầu tài liệu nguồn.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// Để đảm bảo điều này không xảy ra khi tài liệu nguồn có các cài đặt thiết lập trang khác nhau, hãy đảm bảo
+	//Để đảm bảo điều này không xảy ra khi tài liệu nguồn có các cài đặt thiết lập trang khác nhau, hãy đảm bảo
 	// cài đặt giống hệt nhau giữa phần cuối cùng của tài liệu đích.
 	// Nếu có thêm các phần liên tục tiếp theo trong tài liệu nguồn,
-	//điều này sẽ cần phải được lặp lại cho những phần đó.
+	// điều này sẽ cần phải được lặp lại cho những phần đó.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Paso 2: insertar un enlace
 
- Podemos insertar un enlace usando el`Insertlink` método del generador de documentos. Necesitamos especificar el texto del enlace, aquí "Aspose", así como la URL de destino.
+ Podemos insertar un enlace usando el`InsertHyperlink` método del generador de documentos. Necesitamos especificar el texto del enlace, aquí "Apose", así como la URL de destino.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com", falso);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", falso);
 ```
 
 ### Código fuente de ejemplo para enlaces con Aspose.Words para .NET
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", falso);
 DocumentBuilder builder = new DocumentBuilder();
 
 // Insertar el link.
-builder.Insertlink("Aspose", "https://www.aspose.com", falso);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", falso);
 ```
 ¡Enhorabuena! Ahora ha aprendido a utilizar la función de enlaces con Aspose.Words para .NET.
 

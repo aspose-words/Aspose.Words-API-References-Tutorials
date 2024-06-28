@@ -12,7 +12,7 @@ V digitálním věku se podniky i jednotlivci zabývají obrovským množstvím 
 
 ## Co je Aspose.Words for Java?
 
-Aspose.Words for Java je výkonná knihovna pro zpracování dokumentů, která umožňuje vývojářům v jazyce Java vytvářet, manipulovat a převádět dokumenty aplikace Word programově. Ať už potřebujete generovat sestavy, slučovat dokumenty, provádět úlohy zpracování textu nebo převádět dokumenty do různých formátů, Aspose.Words poskytuje komplexní sadu rozhraní API, která splní vaše požadavky.
+Aspose.Words for Java je výkonná knihovna pro zpracování dokumentů, která umožňuje vývojářům jazyka Java vytvářet, manipulovat a převádět dokumenty aplikace Word programově. Ať už potřebujete generovat sestavy, slučovat dokumenty, provádět úlohy zpracování textu nebo převádět dokumenty do různých formátů, Aspose.Words poskytuje komplexní sadu rozhraní API pro splnění vašich požadavků.
 
 ## Proč zvolit Aspose.Words pro převod dokumentů?
 
@@ -135,6 +135,6 @@ Ano, Aspose.Words pro Java si snadno poradí s hromadnou konverzí dokumentů. M
 
 Absolutně! Aspose.Words for Java je kompatibilní s cloudovými prostředími a umožňuje vám implementovat možnosti převodu dokumentů do cloudových aplikací.
 
-### Otázka 3: Vyžaduje Aspose.Words důkladnou znalost formátu souboru aplikace Word?
+### Q3: Vyžaduje Aspose.Words důkladnou znalost formátu souboru aplikace Word?
 
 I když určitá znalost formátu souboru Word může být prospěšná, Aspose.Words abstrahuje složitost formátu, takže je pro vývojáře relativně snadné pracovat s dokumenty Wordu programově.

@@ -1,6 +1,6 @@
 ---
-title: Egyéni tulajdonságok exportálása PDF dokumentumba
-linktitle: Egyéni tulajdonságok exportálása PDF dokumentumba
+title: Egyéni tulajdonságok exportálása PDF-dokumentumban
+linktitle: Egyéni tulajdonságok exportálása PDF-dokumentumban
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan exportálhat egyéni tulajdonságokat dokumentumok PDF-formátumba konvertálásakor az Aspose.Words for .NET segítségével.
 type: docs
@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## 2. lépés: Adjon hozzá egyéni tulajdonságokat
- Ezután adja hozzá a kívánt egyéni tulajdonságokat. Például egy "Cég" tulajdonság "Aspose" értékű hozzáadásához használja a`Add` a CustomDocumentProperties gyűjtemény metódusa:
+ Ezután adja hozzá a kívánt egyéni tulajdonságokat. Ha például egy „Cég” tulajdonságot szeretne hozzáadni „Apose” értékkel, használja a`Add` a CustomDocumentProperties gyűjtemény metódusa:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ V: Ha egy dokumentum egyéni tulajdonságait PDF-dokumentumba szeretné exportá
 
  Hozzon létre egy példányt a`Document` osztály.
 
- Adja hozzá a kívánt egyéni tulajdonságokat a`CustomDocumentProperties` Gyűjtemény. Például használja a`Add` módszerrel hozzáadhat egy „Vállalat” tulajdonságot „Aspose” értékkel.
+ Adja hozzá a kívánt egyéni tulajdonságokat a`CustomDocumentProperties` Gyűjtemény. Például használja a`Add` módszerrel hozzáadhat egy „Vállalat” tulajdonságot „Apose” értékkel.
 
  Hozzon létre egy példányt a`PdfSaveOptions` osztályt, és adja meg, hogyan exportáljon egyéni tulajdonságokat a`CustomPropertiesExport` ingatlan. A`PdfCustomPropertiesExport.Standard` érték exportálja az egyéni tulajdonságokat az alapértelmezett beállításoknak megfelelően.
 

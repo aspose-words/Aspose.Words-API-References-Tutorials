@@ -23,7 +23,7 @@ Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## 2. Adım: Belgeyi yükleyin ve VBA makrolarını okuyun
+## Adım 2: Belgeyi yükleyin ve VBA makrolarını okuyun.
 Daha sonra Word belgesini yükleyip bir VBA projesi içerip içermediğini kontrol edeceğiz. Belgenin bir VBA projesi varsa projedeki tüm modüller arasında geçiş yapıp her modülün kaynak kodunu göstereceğiz.
 
 ```csharp

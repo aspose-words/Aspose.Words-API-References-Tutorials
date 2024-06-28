@@ -86,7 +86,7 @@ Az alábbi lépések végrehajtásával kétirányú jelöléseket adhat a Word-
 
  Mentse el a dokumentumot kétirányú jelekkel a`Save` módszere a`Document` osztály.
 
-#### K: Az Aspose.Words több nyelvet is támogat kétirányú jelölések hozzáadásához?
+#### K: Az Aspose.Words több nyelvet is támogat a kétirányú jelölések hozzáadásához?
 Igen, az Aspose.Words több nyelvet is támogat a kétirányú jelölések hozzáadásához. Az Aspose.Words for .NET segítségével kétirányú jelöléseket adhat hozzá a különböző nyelvű szövegekhez, például angolul, héberül és arabul.
 
 #### K: Vannak további lehetőségek a dokumentum kétirányú jelöléssel történő mentésére?

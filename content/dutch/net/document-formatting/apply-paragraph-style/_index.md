@@ -59,7 +59,7 @@ Met deze code kunt u een alineastijl toepassen met Aspose.Words voor .NET.
 
 ## Conclusie
 
- In deze zelfstudie hebben we onderzocht hoe u een alineastijl in een Word-document kunt toepassen met Aspose.Words voor .NET. Door het instellen van de`StyleIdentifier` eigendom van de`ParagraphFormat`, konden we een ingebouwde stijl op de alinea toepassen. Aspose.Words voor .NET biedt een breed scala aan opmaakopties, waaronder de mogelijkheid om aangepaste stijlen te maken en toe te passen, zodat u gemakkelijk professioneel ogende documenten kunt maken.
+ In deze zelfstudie hebben we onderzocht hoe u een alineastijl in een Word-document kunt toepassen met Aspose.Words voor .NET. Door het instellen van de`StyleIdentifier` eigendom van de`ParagraphFormat`konden we een ingebouwde stijl op de alinea toepassen. Aspose.Words voor .NET biedt een breed scala aan opmaakopties, waaronder de mogelijkheid om aangepaste stijlen te maken en toe te passen, zodat u gemakkelijk professioneel ogende documenten kunt maken.
 
 ### Veelgestelde vragen
 

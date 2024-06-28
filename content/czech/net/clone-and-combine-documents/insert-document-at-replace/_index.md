@@ -2,87 +2,166 @@
 title: Vložit dokument při nahrazení
 linktitle: Vložit dokument při nahrazení
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vložit dokument při nahrazení pomocí Aspose.Words for .NET.
+description: Naučte se, jak bezproblémově vložit jeden dokument Wordu do druhého pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro vývojáře, kteří chtějí zefektivnit zpracování dokumentů.
 type: docs
 weight: 10
 url: /cs/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-V tomto tutoriálu vás provedeme tím, jak vložit dokument do jiného dokumentu při nahrazení pomocí funkce Vložit dokument při nahrazení Aspose.Words for .NET. Chcete-li porozumět zdrojovému kódu a provést vložení dokumentu, postupujte podle následujících kroků.
+## Úvod
 
-## Krok 1: Načtení hlavního dokumentu
+Ahoj, mistři dokumentů! Přistihli jste se někdy po kolena v kódu a snažili se přijít na to, jak hladce vložit jeden dokument Wordu do druhého? Nebojte se, protože dnes se ponoříme do světa Aspose.Words pro .NET, abychom tento úkol usnadnili. Projdeme si podrobným průvodcem krok za krokem, jak používat tuto výkonnou knihovnu k vkládání dokumentů do konkrétních bodů během operace hledání a nahrazení. Jste připraveni stát se průvodcem Aspose.Words? Začněme!
 
-Chcete-li začít, zadejte adresář pro vaše dokumenty a načtěte hlavní dokument do objektu Document. Zde je postup:
+## Předpoklady
+
+Než se pustíme do kódu, je třeba mít připraveno několik věcí:
+
+-  Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio. Pokud ji ještě nemáte, můžete si ji stáhnout z[tady](https://visualstudio.microsoft.com/).
+-  Aspose.Words for .NET: Budete potřebovat knihovnu Aspose.Words. Můžete to získat z[Aspose webové stránky](https://releases.aspose.com/words/net/).
+- Základní znalosti C#: Základní znalost C# a .NET vám pomůže pokračovat v tomto tutoriálu.
+
+Dobře, s těmi z cesty, pojďme si ušpinit ruce nějakým kódem!
+
+## Importovat jmenné prostory
+
+Nejprve musíme importovat potřebné jmenné prostory pro práci s Aspose.Words. Je to jako shromáždit všechny své nástroje před zahájením projektu. Přidejte je pomocí direktiv v horní části souboru C#:
 
 ```csharp
-// Cesta k adresáři dokumentů.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using Aspose.Words.Tables;
 ```
 
-## Krok 2: Nakonfigurujte možnosti vyhledávání a nahrazování
+Nyní, když máme připraveny naše předpoklady, pojďme si celý proces rozdělit na malé kroky. Každý krok je zásadní a přiblíží nás k našemu cíli.
 
-Nyní nakonfigurujeme možnosti hledání a nahrazení zadáním směru hledání a zpětného volání nahrazení pro vložení dokumentu do jiného dokumentu. Zde je postup:
+## Krok 1: Nastavení adresáře dokumentů
 
-```csharp
-// Nakonfigurujte možnosti hledání a nahrazování.
-FindReplaceOptions options = new FindReplaceOptions
-{
-Direction = FindReplaceDirection.Backward,
-ReplacingCallback = new InsertDocumentAtReplaceHandler()
-};
-```
-
-## Krok 3: Volání metody výměny
-
-Nyní zavoláme metodu nahradit, abychom našli a nahradili zadaný text prázdným řetězcem pomocí nakonfigurovaných možností. Zde je postup:
+Nejprve musíme určit adresář, kde jsou naše dokumenty uloženy. Je to jako připravit jeviště před velkým představením.
 
 ```csharp
-mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-```
-
-### Příklad zdrojového kódu pro Insert Document At Replace pomocí Aspose.Words for .NET
-
-Zde je úplný zdrojový kód pro funkci Vložit dokument při nahrazení Aspose.Words pro .NET:
-
-```csharp
-// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
-// Nastavte možnosti hledání a nahrazení.
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` s cestou k vašemu adresáři. Tady budou vaše dokumenty žít a dýchat.
+
+## Krok 2: Vložte hlavní dokument
+
+Dále načteme hlavní dokument, do kterého chceme vložit další dokument. Berte to jako naši hlavní scénu, kde se bude odehrávat veškerá akce.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+Tento kód načte hlavní dokument ze zadaného adresáře.
+
+## Krok 3: Nastavte možnosti Najít a nahradit
+
+K vyhledání konkrétního umístění, kam chceme vložit náš dokument, používáme funkci najít a nahradit. Je to jako pomocí mapy najít přesné místo pro náš nový přírůstek.
+
+```csharp
 FindReplaceOptions options = new FindReplaceOptions
 {
-	Direction = FindReplaceDirection.Backward, 
-	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+    Direction = FindReplaceDirection.Backward,
+    ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
+```
 
-// Zavolejte metodu nahrazení.
+Zde nastavujeme směr zpět a určujeme vlastní obsluhu zpětného volání, kterou definujeme dále.
+
+## Krok 4: Proveďte operaci výměny
+
+Nyní řekneme našemu hlavnímu dokumentu, aby hledal konkrétní zástupný text a nenahradil jej ničím, přičemž k vložení jiného dokumentu použijeme naše vlastní zpětné volání.
+
+```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+Tento kód provede operaci najít a nahradit a poté uloží aktualizovaný dokument.
+
+## Krok 5: Vytvořte vlastní obslužnou rutinu zpětného volání nahrazující
+
+Naše vlastní obsluha zpětného volání je místo, kde se kouzlo odehrává. Tento obslužný program definuje, jak se provádí vkládání dokumentu během operace hledání a nahrazení.
+
+```csharp
+private class InsertDocumentAtReplaceHandler : IReplacingCallback
+{
+    ReplaceAction IReplacingCallback.Replacing(ReplacingArgs args)
+    {
+        Document subDoc = new Document(dataDir + "Document insertion 2.docx");
+
+        // Vložte dokument za odstavec obsahující odpovídající text.
+        Paragraph para = (Paragraph)args.MatchNode.ParentNode;
+        InsertDocument(para, subDoc);
+
+        // Odstraňte odstavec s odpovídajícím textem.
+        para.Remove();
+        return ReplaceAction.Skip;
+    }
+}
+```
+
+Zde načteme dokument, který se má vložit, a poté zavoláme pomocnou metodu, která vložení provede.
+
+## Krok 6: Definujte metodu vložení dokumentu
+
+Posledním kouskem naší skládačky je metoda, která skutečně vloží dokument na určené místo.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+	{
+		CompositeNode destinationParent = insertionDestination.ParentNode;
+
+		NodeImporter importer =
+			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+		// Projděte všechny uzly na úrovni bloku v těle sekce,
+		// pak naklonujte a vložte každý uzel, který není posledním prázdným odstavcem sekce.
+		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+		foreach (Node srcNode in srcSection.Body)
+		{
+			if (srcNode.NodeType == NodeType.Paragraph)
+			{
+				Paragraph para = (Paragraph)srcNode;
+				if (para.IsEndOfSection && !para.HasChildNodes)
+					continue;
+			}
+
+			Node newNode = importer.ImportNode(srcNode, true);
+
+			destinationParent.InsertAfter(newNode, insertionDestination);
+			insertionDestination = newNode;
+		}
+	}
+	else
+	{
+		throw new ArgumentException("The destination node should be either a paragraph or table.");
+	}
+}
+```
+
+Tato metoda se stará o import uzlů z vkládaného dokumentu a jejich umístění na správné místo v hlavním dokumentu.
 
 ## Závěr
 
-V tomto tutoriálu jsme prozkoumali, jak vložit dokument do jiného dokumentu během nahrazování pomocí funkce Vložit dokument při nahrazení Aspose.Words for .NET. Nakonfigurováním možností hledání a nahrazení a poskytnutím potřebných dat můžete dynamicky sestavit dokumenty nahrazením určitých zástupných symbolů obsahem jiných šablon nebo oddílů dokumentů. Aspose.Words for .NET nabízí výkonný a flexibilní způsob, jak spravovat složité úlohy manipulace s dokumenty, což z něj činí cenný nástroj pro automatizaci vytváření dokumentů a scénářů vkládání obsahu.
+A tady to máte! Komplexní průvodce vkládáním jednoho dokumentu do druhého pomocí Aspose.Words pro .NET. Pomocí těchto kroků můžete snadno automatizovat úlohy sestavování dokumentů a manipulace s nimi. Ať už budujete systém správy dokumentů nebo jen potřebujete zefektivnit pracovní tok zpracování dokumentů, Aspose.Words je vaším spolehlivým pomocníkem.
 
-### FAQ
+## FAQ
 
-#### Otázka: Jaký je účel vložení dokumentu do jiného dokumentu během výměny?
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro programovou manipulaci s dokumenty Wordu. Umožňuje vám snadno vytvářet, upravovat, převádět a zpracovávat dokumenty aplikace Word.
 
-Odpověď: Vložení dokumentu do jiného dokumentu během nahrazování umožňuje dynamicky nahradit konkrétní zástupný objekt obsahem samostatného dokumentu. Tato funkce je užitečná zejména tehdy, chcete-li sestavit větší dokument kombinací různých předdefinovaných šablon dokumentu nebo oddílů do konkrétních zástupných symbolů.
+### Mohu vložit více dokumentů najednou?
+Ano, obslužnou rutinu zpětného volání můžete upravit tak, aby zvládla více vkládání iterací přes kolekci dokumentů.
 
-#### Otázka: Jak vložím dokument do jiného dokumentu během nahrazování pomocí Aspose.Words for .NET?
+### Je k dispozici bezplatná zkušební verze?
+ Absolutně! Bezplatnou zkušební verzi si můžete stáhnout z[tady](https://releases.aspose.com/).
 
-A: Chcete-li vložit dokument do jiného dokumentu během nahrazování pomocí Aspose.Words for .NET, postupujte takto:
-1. Načtěte hlavní dokument, který obsahuje zástupné symboly, do objektu dokumentu.
-2. Nakonfigurujte možnosti hledání a nahrazování, včetně směru hledání a zpětného volání nahrazení, aby se zvládlo vkládání dokumentu.
-3. Zavolejte metodu nahrazení s příslušným vyhledávacím vzorem a nahraďte zástupné symboly prázdným řetězcem pomocí nakonfigurovaných možností.
+### Jak získám podporu pro Aspose.Words?
+Podporu můžete získat návštěvou stránky[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
 
-#### Otázka: Mohu přizpůsobit chování vkládání během výměny?
-
-Odpověď: Ano, můžete přizpůsobit chování vkládání během nahrazování implementací vlastního ReplacingCallback. Děděním z rozhraní IReplacingCallback můžete řídit způsob vkládání a slučování dokumentů na základě vašich konkrétních požadavků při nahrazování zástupných symbolů.
-
-#### Otázka: Mohu nahradit více zástupných symbolů různými dokumenty?
-
-Odpověď: Ano, můžete nahradit více zástupných symbolů různými dokumenty zadáním vhodných vyhledávacích vzorů pro každý zástupný symbol a poskytnutím odpovídajících dokumentů, které mají být vloženy.
+### Mohu zachovat formátování vloženého dokumentu?
+ Ano,`NodeImporter`třída umožňuje určit, jak se bude pracovat s formátováním při importu uzlů z jednoho dokumentu do druhého.

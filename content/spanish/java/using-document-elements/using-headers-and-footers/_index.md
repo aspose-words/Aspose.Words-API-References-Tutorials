@@ -180,7 +180,7 @@ Después de crear y personalizar su documento, no olvide guardarlo usando el`doc
         // es diferente para la nueva sección y, por lo tanto, necesitamos establecer diferentes anchos de celda para una tabla de pie de página.
         currentSection.getHeadersFooters().linkToPrevious(false);
         // Si queremos utilizar el conjunto de encabezado/pie de página ya existente para esta sección.
-        // Pero con algunas modificaciones menores, puede resultar conveniente copiar encabezados y pies de página.
+        // Pero con algunas modificaciones menores, puede ser conveniente copiar encabezados y pies de página.
         // del apartado anterior y aplicar las modificaciones necesarias donde queramos.
         copyHeadersFootersFromPreviousSection(currentSection);
         HeaderFooter primaryFooter = currentSection.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);

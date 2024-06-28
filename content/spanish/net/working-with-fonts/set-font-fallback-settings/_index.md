@@ -2,80 +2,116 @@
 title: Establecer la configuración de reserva de fuentes
 linktitle: Establecer la configuración de reserva de fuentes
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a configurar la configuración de sustitución de fuentes en Aspose.Words para .NET y personalizar la sustitución de fuentes en sus documentos de Word.
+description: Aprenda a configurar la configuración de reserva de fuentes en Aspose.Words para .NET. Esta guía completa garantiza que todos los caracteres de sus documentos se muestren correctamente.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-font-fallback-settings/
 ---
-En este tutorial, le mostraremos cómo configurar la configuración de sustitución de fuentes en un documento de Word usando Aspose.Words para .NET. La configuración de sustitución de fuentes le permite especificar fuentes de reemplazo para usar cuando las fuentes especificadas no estén disponibles.
+
+Cuando se trabaja con documentos que contienen diversos elementos de texto, como diferentes idiomas o caracteres especiales, es fundamental asegurarse de que estos elementos se muestren correctamente. Aspose.Words para .NET ofrece una característica poderosa llamada Configuración de reserva de fuentes, que ayuda a definir reglas para sustituir fuentes cuando la fuente original no admite ciertos caracteres. En esta guía, exploraremos cómo configurar la configuración de reserva de fuentes usando Aspose.Words para .NET en un tutorial paso a paso.
 
 ## Requisitos previos
-Antes de comenzar, asegúrese de tener los siguientes elementos:
-- Un conocimiento práctico del lenguaje de programación C#.
-- La biblioteca Aspose.Words para .NET instalada en su proyecto
+
+Antes de sumergirse en el tutorial, asegúrese de cumplir con los siguientes requisitos previos:
+
+- Conocimientos básicos de C#: familiaridad con el lenguaje de programación C# y el marco .NET.
+-  Aspose.Words para .NET: descargue e instale desde[enlace de descarga](https://releases.aspose.com/words/net/).
+- Entorno de desarrollo: una configuración como Visual Studio para escribir y ejecutar su código.
+-  Documento de muestra: tenga un documento de muestra (p. ej.,`Rendering.docx`) listo para la prueba.
+- XML de reglas de reserva de fuentes: prepare un archivo XML que defina las reglas de reserva de fuentes.
+
+## Importar espacios de nombres
+
+Para utilizar Aspose.Words, debe importar los espacios de nombres necesarios. Esto permite el acceso a varias clases y métodos necesarios para el procesamiento de documentos.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
+```
 
 ## Paso 1: definir el directorio de documentos
- Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta apropiada.
+
+Primero, defina el directorio donde está almacenado su documento. Esto es esencial para localizar y procesar su documento.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Paso 2: cargar la configuración de sustitución de fuentes
- Crear una instancia del`FontSettings` clase y utilizar el`Load` Método para cargar la configuración de anulación de fuente desde un archivo XML. El archivo XML especificado debe contener las reglas de sustitución de fuentes que se utilizarán.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## Paso 3: aplicar la configuración de sustitución de fuentes
- Asocie la configuración de sustitución de fuentes con el documento asignándolas al nombre del documento.`FontSettings` propiedad.
-
-```csharp
-doc.FontSettings = fontSettings;
-```
-
-## Paso 4: guarde el documento
- Guarde el documento usando el`Save` método de la`Document` con la ruta y el nombre de archivo apropiados.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
-
-### Código fuente de muestra para establecer la configuración de reserva de fuentes usando Aspose.Words para .NET 
-```csharp
-// Ruta a su directorio de documentos
+// La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Paso 2: cargue el documento
+
+ Cargue su documento en Aspose.Words`Document` objeto. Este paso le permite trabajar con el documento mediante programación.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Paso 3: configurar los ajustes de fuente
+
+ Crear un nuevo`FontSettings` objeto y cargue la configuración de reserva de fuente desde un archivo XML. Este archivo XML contiene las reglas para la reserva de fuentes.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## Paso 4: aplicar la configuración de fuente al documento
+
+ Asigne el configurado`FontSettings`al documento. Esto garantiza que se apliquen las reglas de reserva de fuentes al renderizar el documento.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Paso 5: guarde el documento
+
+Finalmente, guarde el documento. La configuración de reserva de fuente se utilizará durante la operación de guardar para garantizar una sustitución de fuente adecuada.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
+```
+
+## Archivo XML: reglas de reserva de fuentes
+
+A continuación se muestra un ejemplo de cómo debería verse su archivo XML que define las reglas de reserva de fuentes:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
 ```
 
 ## Conclusión
-En este tutorial, aprendió cómo configurar la configuración de sustitución de fuentes en un documento de Word usando Aspose.Words para .NET. Experimente con diferentes reglas de sustitución de fuentes para asegurarse de que su documento luzca consistente, incluso cuando las fuentes especificadas no estén disponibles.
 
-### Preguntas frecuentes
+Si sigue estos pasos, podrá configurar y utilizar eficazmente la configuración de reserva de fuentes en Aspose.Words para .NET. Esto garantiza que sus documentos muestren todos los caracteres correctamente, incluso si la fuente original no admite ciertos caracteres. La implementación de estas configuraciones mejorará enormemente la calidad y legibilidad de sus documentos.
 
-#### P: ¿Cómo puedo configurar la configuración de sustitución de fuentes en un documento de Word con Aspose.Words?
+## Preguntas frecuentes
 
-R: Para establecer la configuración de sustitución de fuentes en un documento de Word con Aspose.Words, puede usar la API para especificar fuentes alternativas para usar cuando las fuentes requeridas no estén disponibles. Esto garantiza una visualización de texto consistente, incluso sin las fuentes originales.
+### P1: ¿Qué es la reserva de fuentes?
 
-#### P: ¿Es posible manejar fuentes alternativas al anular un documento de Word con Aspose.Words?
+Font Fallback es una función que permite la sustitución de fuentes cuando la fuente original no admite ciertos caracteres, lo que garantiza una visualización adecuada de todos los elementos del texto.
 
-R: Sí, con Aspose.Words puedes administrar fuentes alternativas al sustituirlas en un documento de Word. La API le permite detectar fuentes faltantes y especificar fuentes alternativas apropiadas para mantener una apariencia consistente del texto incluso cuando se sustituyen las fuentes.
+### P2: ¿Puedo especificar varias fuentes alternativas?
 
-#### P: ¿Por qué es importante configurar correctamente los ajustes de sustitución de fuentes en un documento de Word?
+Sí, puede especificar varias fuentes alternativas en las reglas XML. Aspose.Words verificará cada fuente en el orden especificado hasta que encuentre una que admita el carácter.
 
-R: Es importante configurar correctamente los ajustes de sustitución de fuentes en un documento de Word para mantener la integridad visual del texto. Al configurar las fuentes alternativas adecuadas con Aspose.Words, se asegura de que el texto se mostrará de manera consistente, incluso si las fuentes requeridas no están disponibles.
+### P3: ¿Dónde puedo descargar Aspose.Words para .NET?
 
-#### P: ¿Cómo puedo detectar fuentes faltantes al sustituir un documento de Word con Aspose.Words?
+ Puedes descargarlo desde el[Página de descarga de Aspose](https://releases.aspose.com/words/net/).
 
-R: Aspose.Words le permite detectar fuentes faltantes durante la sustitución en un documento de Word utilizando la API. Puede utilizar los métodos proporcionados por Aspose.Words para verificar la disponibilidad de las fuentes requeridas y tomar las medidas adecuadas en caso de que falten fuentes.
+### P4: ¿Cómo creo el archivo XML para las reglas de reserva de fuentes?
 
-#### P: ¿La sustitución de fuentes afecta el diseño de mi documento de Word?
+El archivo XML se puede crear utilizando cualquier editor de texto. Debe seguir la estructura que se muestra en el ejemplo proporcionado en este tutorial.
 
-R: La sustitución de fuentes puede afectar el diseño de su documento de Word si las fuentes alternativas tienen dimensiones diferentes a las fuentes originales. Sin embargo, al elegir sabiamente las fuentes alternativas y configurar los ajustes de sustitución de fuentes con Aspose.Words, puede minimizar los impactos en el diseño.
+### P5: ¿Hay soporte disponible para Aspose.Words?
+
+ Sí, puedes encontrar soporte en el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8).

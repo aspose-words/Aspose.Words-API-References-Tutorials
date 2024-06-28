@@ -60,7 +60,7 @@ Damit ist unser Leitfaden zur Verwendung der Funktion „Get Merge Field Names�
 
 ### FAQs
 
-#### F1: Was ist Serienbrief in Aspose.Words?
+#### F1: Was ist Seriendruck in Aspose.Words?
 
 Beim Seriendruck in Aspose.Words handelt es sich um einen Prozess zum Zusammenführen von Daten aus einer externen Quelle (z. B. einer Excel-Tabelle oder einer Datenbank) mit einer Word-Dokumentvorlage, um personalisierte Dokumente zu erstellen. Dies erleichtert die automatisierte Erstellung von Briefen, Berichten und ähnlichen Dokumenten.
 
@@ -70,7 +70,7 @@ Um die Liste der in einem Word-Dokument verfügbaren Serienbrieffelder zu erhalt
 
 1. Importieren Sie die Klassen Document und MailMergeFieldNames aus dem Aspose.Words-Namespace.
 2. Erstellen Sie eine Dokumentinstanz, indem Sie Ihr Word-Dokument laden.
-3. Verwenden Sie die GetMailMergeFieldNames-Methode des Document-Objekts, um die Liste der verfügbaren Serienbrieffelder abzurufen.
+3. Verwenden Sie die GetMailMergeFieldNames-Methode des Document-Objekts, um die Liste der verfügbaren Seriendruckfelder abzurufen.
 
 Hier ist ein Beispielcode zur Veranschaulichung des Prozesses:
 
@@ -98,13 +98,13 @@ foreach (string fieldName in fieldNames)
 
 A: Beim Serienbrief in Aspose.Words handelt es sich um einen Prozess zum Zusammenführen von Daten aus einer externen Quelle (z. B. Excel-Tabelle oder Datenbank) mit einer Word-Dokumentvorlage, um personalisierte Dokumente zu erstellen. Dies erleichtert die automatisierte Erstellung von Briefen, Berichten und ähnlichen Dokumenten.
 
-#### F: Wie erhalte ich die Liste der in einem Word-Dokument verfügbaren Serienbrieffelder?
+#### F: Wie erhalte ich die Liste der in einem Word-Dokument verfügbaren Seriendruckfelder?
 
 A: Um die Liste der in einem Word-Dokument verfügbaren Serienbrieffelder zu erhalten, können Sie die folgenden Schritte ausführen:
 
 1. Importieren Sie die Klassen Document und MailMergeFieldNames aus dem Aspose.Words-Namespace.
 2. Erstellen Sie eine Dokumentinstanz, indem Sie Ihr Word-Dokument laden.
-3. Verwenden Sie die GetMailMergeFieldNames-Methode des Document-Objekts, um die Liste der verfügbaren Serienbrieffelder abzurufen.
+3. Verwenden Sie die GetMailMergeFieldNames-Methode des Document-Objekts, um die Liste der verfügbaren Seriendruckfelder abzurufen.
 
 #### F: Kann ich Serienbrieffelder aus einer externen Datenquelle wie einer Excel-Tabelle abrufen?
 

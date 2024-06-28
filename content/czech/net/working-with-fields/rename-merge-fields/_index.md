@@ -88,7 +88,7 @@ Chcete-li přejmenovat slučovací pole v dokumentu pomocí Aspose.Words for .NE
 
 #### Otázka: Jak mohu přejmenovat sloučená pole v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
- A: Chcete-li přejmenovat sloučená pole v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete procházet pole v dokumentu pomocí`FieldMergingArgs` třídy a použijte`FieldMergingArgs.FieldName` způsob přejmenování pole.
+ A: Chcete-li přejmenovat sloučená pole v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete procházet pole v dokumentu pomocí`FieldMergingArgs` třídy a použijte`FieldMergingArgs.FieldName` způsob přejmenování polí.
 
 #### Otázka: Je možné pomocí Aspose.Words for .NET přejmenovat pouze určitá sloučená pole v dokumentu aplikace Word?
 

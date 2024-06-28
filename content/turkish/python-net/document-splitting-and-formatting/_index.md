@@ -29,12 +29,12 @@ Bu eğitim serisinde, Aspose.Words'ü hem Python hem de .NET kullanarak belge b�
 - Üstbilgiler ve Altbilgiler: Markalama ve gezinme için üstbilgi ve altbilgi özelleştirmesini keşfedin.
 - İçindekiler Tablosu: Belgede gezinmek için içindekiler tablosunun nasıl oluşturulacağını ve biçimlendirileceğini anlayın.
 
-Bu eğitimler boyunca pratik bilgiler edinecek, kaynak kodu örneklerine erişecek ve adım adım rehberlik elde edeceksiniz. Bu serinin sonunda, belgeleri verimli bir şekilde bölme ve biçimlendirme becerileriyle donatılmış olacak ve belge yönetimi süreçlerinizi kolaylaştıracaksınız.
+Bu eğitimler boyunca pratik bilgiler edinecek, kaynak kodu örneklerine erişecek ve adım adım rehberlik elde edeceksiniz. Bu serinin sonunda belgeleri verimli bir şekilde bölme ve biçimlendirme becerileriyle donatılacak ve belge yönetimi süreçlerinizi kolaylaştıracaksınız.
 
 ## Belge Bölme ve Biçimlendirme Eğitimleri
 ### [Verimli Belge Bölme ve Biçimlendirme Stratejileri](./split-format-documents/)
 Aspose.Words for Python'u kullanarak belgeleri verimli bir şekilde nasıl böleceğinizi ve biçimlendireceğinizi öğrenin. Bu eğitimde adım adım rehberlik ve kaynak kodu örnekleri sağlanmaktadır.
-### [Hassasiyet İçin İçerik Oluşturucuyla Belgeleri Bölme](./divide-documents-content-builder/)
+### [Hassasiyet için İçerik Oluşturucu ile Belgeleri Bölme](./divide-documents-content-builder/)
 Aspose.Words for Python'u kullanarak belgelerinizi hassas bir şekilde bölün ve yönetin. Verimli içerik çıkarma ve düzenleme için İçerik Oluşturucu'dan nasıl yararlanacağınızı öğrenin.
 ### [Karmaşık İş Akışları için Belgeleri Birleştirme ve Klonlama](./combine-clone-documents/)
 Aspose.Words for Python'u kullanarak belgeleri verimli bir şekilde nasıl birleştireceğinizi ve kopyalayacağınızı öğrenin. Belge işleme için kaynak kodu içeren adım adım kılavuz. Belge iş akışlarınızı bugün yükseltin!

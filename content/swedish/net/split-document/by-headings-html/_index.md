@@ -70,11 +70,11 @@ Utforska gärna ytterligare funktioner och alternativ som tillhandahålls av Asp
 
 #### Vilka format kan jag dela upp Word-dokumentet i?
 
-Den medföljande källkoden visar att Word-dokumentet delas upp i mindre delar i HTML-format. Men Aspose.Words för .NET stöder olika utdataformat, inklusive DOCX, PDF, EPUB och mer. Du kan ändra koden och ange önskat utdataformat i`HtmlSaveOptions` invända i enlighet därmed.
+ Den medföljande källkoden visar att Word-dokumentet delas upp i mindre delar i HTML-format. Men Aspose.Words för .NET stöder olika utdataformat, inklusive DOCX, PDF, EPUB och mer. Du kan ändra koden och ange önskat utdataformat i`HtmlSaveOptions` invända i enlighet därmed.
 
 #### Kan jag välja ett annat kriterium för att dela upp dokumentet?
 
- Ja, du kan välja andra kriterier för att dela upp dokumentet baserat på dina krav. Aspose.Words för .NET tillhandahåller flera kriteriealternativ, som t.ex`HeadingParagraph`, `Page`, `Section` , och mer. Ändra`DocumentSplitCriteria` egendom i`HtmlSaveOptions` objekt för att välja lämpliga kriterier för delning.
+Ja, du kan välja andra kriterier för att dela upp dokumentet baserat på dina krav. Aspose.Words för .NET tillhandahåller flera kriteriealternativ, som t.ex`HeadingParagraph`, `Page`, `Section` , och mer. Ändra`DocumentSplitCriteria` egendom i`HtmlSaveOptions` objekt för att välja lämpliga kriterier för delning.
 
 #### Hur kan jag anpassa HTML-utdata för de delade delarna?
 

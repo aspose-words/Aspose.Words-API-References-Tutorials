@@ -69,7 +69,7 @@ Aspose.Words for Java'yı kullanarak belgeleri farklılıklar açısından karş
 
 ### Aspose.Words for Java'yı nasıl yüklerim?
 
- Aspose.Words for Java'yı yüklemek için indirme sayfasını ziyaret edin[Burada](https://releases.aspose.com/words/java/) ve verilen kurulum talimatlarını izleyin.
+ Aspose.Words for Java'yı yüklemek için indirme sayfasını ziyaret edin.[Burada](https://releases.aspose.com/words/java/) ve verilen kurulum talimatlarını izleyin.
 
 ### DOCX ve PDF gibi farklı formatlardaki belgeleri karşılaştırabilir miyim?
 

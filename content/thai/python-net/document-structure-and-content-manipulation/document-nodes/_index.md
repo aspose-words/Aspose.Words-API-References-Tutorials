@@ -84,7 +84,7 @@ cell = row.first_cell
 cell.paragraphs[0].runs[0].text = "Cell text"
 ```
 
-## การแทรกและการแก้ไขรูปภาพ
+## การแทรกและแก้ไขรูปภาพ
 
 การรวมรูปภาพลงในเอกสารของคุณเป็นเรื่องง่ายด้วย Aspose.Words
 

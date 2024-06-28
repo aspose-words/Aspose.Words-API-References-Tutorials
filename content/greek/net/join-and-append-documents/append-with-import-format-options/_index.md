@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 
 ## Βήμα 5: Αποθηκεύστε το έγγραφο προορισμού
 
- Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
+Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
@@ -64,7 +64,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// Καθορίστε ότι εάν η αρίθμηση έρχεται σε αντίθεση στα έγγραφα προέλευσης και προορισμού,
-	//τότε θα χρησιμοποιηθεί αρίθμηση από το έγγραφο προέλευσης.
+	// τότε θα χρησιμοποιηθεί αρίθμηση από το έγγραφο προέλευσης.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

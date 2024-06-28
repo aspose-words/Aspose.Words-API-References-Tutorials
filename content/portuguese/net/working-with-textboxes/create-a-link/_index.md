@@ -50,7 +50,7 @@ if (textBox1.IsValidLinkTarget(textBox2))
 
 Parabéns! Agora você aprendeu como criar um link entre duas caixas de texto em um documento do Word usando a biblioteca Aspose.Words para .NET. Usando este guia passo a passo, você foi capaz de configurar o documento, criar os formatos das caixas de texto, acessar as caixas de texto, verificar a validade do destino do link e, finalmente, criar o próprio link.
 
-### Perguntas frequentes para criar link no Word
+### Perguntas frequentes para criar links no Word
 
 #### P: Qual é a biblioteca usada para vincular caixas de texto no Word usando Aspose.Words for .NET?
 

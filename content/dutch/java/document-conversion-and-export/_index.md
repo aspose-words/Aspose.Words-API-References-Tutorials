@@ -31,7 +31,7 @@ Genereer aangepaste streepjescodelabels in Aspose.Words voor Java. Leer in deze 
 ### [Barcodegeneratie gebruiken in Aspose.Words voor Java](./using-barcode-generation/)
 Leer hoe u aangepaste streepjescodes kunt genereren in Java met Aspose.Words voor Java. Stapsgewijze handleiding met broncode voor het genereren van barcodes. Verbeter documentautomatisering met Aspose.Words.
 ### [Grafieken gebruiken in Aspose.Words voor Java](./using-charts/)
-Leer hoe u diagrammen maakt en aanpast in Aspose.Words voor Java. Ontdek diagramtypen, opmaak en aseigenschappen voor gegevensvisualisatie.
+Leer hoe u diagrammen kunt maken en aanpassen in Aspose.Words voor Java. Ontdek diagramtypen, opmaak en aseigenschappen voor gegevensvisualisatie.
 ### [Office Math-objecten gebruiken in Aspose.Words voor Java](./using-office-math-objects/)
 Ontgrendel de kracht van wiskundige vergelijkingen in documenten met Aspose.Words voor Java. Leer moeiteloos Office Math-objecten manipuleren en weergeven.
 ### [Documentvormen gebruiken in Aspose.Words voor Java](./using-document-shapes/)

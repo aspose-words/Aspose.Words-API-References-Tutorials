@@ -64,9 +64,9 @@ Dans ce didacticiel, nous avons appris à définir des dossiers de polices lors 
 
 R : Pour configurer les dossiers de polices dans un document Word à l'aide d'Aspose.Words, vous pouvez utiliser l'API pour spécifier des dossiers de polices personnalisés à utiliser lors de la génération ou de la modification du document. Cela permettra à Word de trouver les polices requises pour un rendu correct.
 
-#### : Est-il possible d'ajouter des polices personnalisées à un document Word avec Aspose.Words ?
+#### Q : Est-il possible d'ajouter des polices personnalisées à un document Word avec Aspose.Words ?
 
-R : Oui, avec Aspose.Words, vous pouvez ajouter des polices personnalisées à un document Word. L'API vous permet d'intégrer des polices spécifiques dans votre document, garantissant ainsi qu'elles s'affichent correctement, même si les polices ne sont pas installées sur le système de l'utilisateur final.
+: Oui, avec Aspose.Words, vous pouvez ajouter des polices personnalisées à un document Word. L'API vous permet d'intégrer des polices spécifiques dans votre document, garantissant ainsi qu'elles s'affichent correctement, même si les polices ne sont pas installées sur le système de l'utilisateur final.
 
 #### Q : Que se passe-t-il si les polices requises sont manquantes dans un document Word ?
 
@@ -76,6 +76,6 @@ R : Si les polices requises sont manquantes dans un document Word, Aspose.Words 
 
 R : Pour supprimer les polices personnalisées d'un document Word à l'aide d'Aspose.Words, vous pouvez utiliser l'API pour nettoyer le document et supprimer les polices personnalisées qui ne sont plus nécessaires. Cela réduira la taille du fichier et facilitera la gestion des polices.
 
-#### : Est-il important de configurer les dossiers de polices dans un document Word ?
+#### Q : Est-il important de configurer les dossiers de polices dans un document Word ?
 
-R : Oui, il est important de configurer les dossiers de polices dans un document Word pour garantir que les polices utilisées s'affichent correctement. En spécifiant des dossiers de polices personnalisés à utiliser avec Aspose.Words, vous vous assurez que les polices requises sont disponibles pour restituer correctement les documents Word.
+: Oui, il est important de configurer les dossiers de polices dans un document Word pour garantir que les polices utilisées s'affichent correctement. En spécifiant des dossiers de polices personnalisés à utiliser avec Aspose.Words, vous vous assurez que les polices requises sont disponibles pour restituer correctement les documents Word.

@@ -112,10 +112,10 @@ Az Aspose.Words for Java egy Java-könyvtár, amely lehetővé teszi a fejleszt�
 Letöltheti és telepítheti az Aspose.Words for Java programot innen[itt](https://releases.aspose.com/words/java/).
 
 ### Q3. Van ingyenes próbaverzió?
- Igen, ingyenesen kipróbálhatja az Aspose.Words for Java-t[itt](https://releases.aspose.com/).
+ Igen, ingyenesen kipróbálhatja az Aspose.Words for Java-t.[itt](https://releases.aspose.com/).
 
 ### Q4. Hol kaphatok ideiglenes engedélyt?
- Az Aspose.Words for Java számára ideiglenes licencet szerezhet[itt](https://purchase.aspose.com/temporary-license/).
+ Az Aspose.Words for Java számára ideiglenes licencet szerezhet.[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. Hol találok támogatást az Aspose.Words for Java számára?
  Támogatásért és megbeszélésekért keresse fel a[Aspose.Words for Java fórum](https://forum.aspose.com/).

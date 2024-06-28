@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## الخطوة 5: احفظ المستند المعدل
 
- وأخيرًا، احفظ مستند الوجهة المعدل باستخدام الملف`Save` طريقة`Document` هدف.
+وأخيرًا، احفظ مستند الوجهة المعدل باستخدام الملف`Save` طريقة`Document` هدف.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//قم بتعيين المستند الملحق للبدء في صفحة جديدة.
+	// قم بتعيين المستند الملحق للبدء في صفحة جديدة.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// قم بإلحاق المستند المصدر باستخدام الأنماط الأصلية الموجودة في المستند المصدر.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

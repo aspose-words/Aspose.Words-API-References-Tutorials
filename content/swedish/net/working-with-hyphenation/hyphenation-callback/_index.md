@@ -2,107 +2,148 @@
 title: Återuppringning med avstavning
 linktitle: Återuppringning med avstavning
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du använder återuppringning av avstavning i Aspose.Words för .NET för att hantera ordavstavning.
+description: Lär dig att implementera återuppringning av avstavning i Aspose.Words för .NET för att förbättra dokumentformateringen med denna omfattande steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-I denna steg-för-steg handledning kommer vi att visa dig hur du använder avstavningsåteruppringningsfunktionen i Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+## Introduktion
 
- För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
+Hallå där! Har du någonsin funnit dig trasslig in i textformateringens komplexitet, särskilt när du har att göra med språk som kräver avstavning? Du är inte ensam. Avstavning, även om det är avgörande för korrekt textlayout, kan vara lite av en huvudvärk. Men gissa vad? Aspose.Words för .NET har fått din rygg. Detta kraftfulla bibliotek låter dig hantera textformatering sömlöst, inklusive hantering av avstavning genom en återuppringningsmekanism. Fascinerad? Låt oss fördjupa oss i hur du kan implementera en avstavningsåteruppringning med Aspose.Words för .NET.
 
-## Steg 1: Spara avstavningspåminnelse
+## Förutsättningar
 
- Först registrerar vi avstavningsåteruppringningen med en anpassad`CustomHyphenationCallback` klass. Detta gör att vi kan hantera ordavstavning enligt våra egna regler:
+Innan vi smutsar ner händerna med kod, låt oss se till att du har allt du behöver:
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  Aspose.Words för .NET: Se till att du har biblioteket. Du kan[ladda ner den här](https://releases.aspose.com/words/net/).
+2. IDE: En utvecklingsmiljö som Visual Studio.
+3. Grundläggande kunskaper i C#: Förståelse av C# och .NET framework.
+4. Avstavningsordböcker: Avstavningsordböcker för de språk du planerar att använda.
+5.  Aspose-licens: En giltig Aspose-licens. Du kan få en[tillfällig licens](https://purchase.aspose.com/temporary-license/) om du inte har en.
 
- Se till att du har implementerat`CustomHyphenationCallback` klass efter dina specifika behov.
+## Importera namnområden
 
-## Steg 2: Ladda dokumentet och tillämpa avstavning
-
-Ladda sedan ditt dokument från den angivna katalogen och avstava orden med Aspose.Words:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## Steg 3: Hantera saknade ordboksfel
-
-Om en avstavningsordbok saknas kommer vi att fånga motsvarande undantag och visa ett felmeddelande:
+Till att börja med, låt oss importera de nödvändiga namnrymden. Detta säkerställer att vår kod har tillgång till alla klasser och metoder vi behöver från Aspose.Words.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## Steg 4: Rensa och inaktivera avstavningspåminnelse
+## Steg 1: Registrera avstavningsåteruppringningen
 
-Slutligen, för renlighet och för att stänga av avstavningspåminnelsen, utför följande steg:
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-Detta rensar upp och inaktiverar avstavningspåminnelsen efter avslutad bearbetning.
-
-Så ! Du har framgångsrikt använt avstavningsuppringning i Aspose.Words för .NET.
-
-### Exempel på källkod för återuppringning av avstavning med Aspose.Words för .NET
+För att börja måste vi registrera vår avstavningsåteruppringning. Det är här vi säger till Aspose.Words att använda vår anpassade avstavningslogik.
 
 ```csharp
 try
 {
-	 // Registrera avstavningsuppringning.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // Registrera avstavningsuppringning.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ Här skapar vi en instans av vår anpassade återuppringning och tilldelar den till`Hyphenation.Callback`.
+
+## Steg 2: Definiera dokumentsökvägen
+
+Därefter måste vi definiera katalogen där våra dokument lagras. Detta är avgörande eftersom vi kommer att ladda och spara dokument från denna väg.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokument.
+
+## Steg 3: Ladda dokumentet
+
+Låt oss nu ladda dokumentet som kräver avstavning.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ Här laddar vi ett tyskt textdokument. Du kan byta ut`"German text.docx"` med ditt dokuments filnamn.
+
+## Steg 4: Spara dokumentet
+
+Efter att ha laddat dokumentet sparar vi det i en ny fil och tillämpar avstavningsåteruppringningen i processen.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+Den här raden sparar dokumentet som en PDF med avstavning tillämpad.
+
+## Steg 5: Hantera saknade avstavningsordbokundantag
+
+Ibland kan du stöta på ett problem där avstavningsordboken saknas. Låt oss hantera det.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-Använd gärna den här koden i dina egna projekt och modifiera den för att passa dina specifika behov.
+I det här blocket fångar vi det specifika undantaget relaterat till saknade ordböcker och skriver ut meddelandet.
 
-### FAQ's
+## Steg 6: Implementera den anpassade återuppringningsklassen för avstavning
 
-#### F: Vad är en stavningspåminnelse i Aspose.Words?
+ Låt oss nu implementera`CustomHyphenationCallback` klass som hanterar begäran om avstavningsordböcker.
 
-S: En påminnelse om stavning i Aspose.Words är en funktion som låter dig anpassa hur ord skrivs in i dina dokument. Genom att använda en stavningspåminnelse kan du ange anpassade regler för stavning av ord, vilket kan vara användbart för specifika språk eller särskilda scenarier där standardplaneringen inte ger önskat resultat.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // Registrera ordbok för begärt språk.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### F: Hur ställer jag in en stavningspåminnelse i Aspose.Words?
+ I den här klassen`RequestDictionary` metoden anropas närhelst en avstavningsordbok behövs. Den kontrollerar språket och registrerar lämplig ordbok.
 
- S: För att definiera en avstavningsåteruppringning i Aspose.Words måste du skapa en klass som implementerar`HyphenationCallback` gränssnitt och implementera`HandleWord()` metod. Denna metod kommer att anropas för varje ord som påträffas under stavning. Du kan tillämpa anpassade stavningsregler på det och returnera det stavelseordnade ordet. Sedan kan du binda din avstavningsuppringning med hjälp av`Document.HyphenationCallback` din handlings egendom.
+## Slutsats
 
-#### F: Vad är fördelen med att använda en syllabiseringspåminnelse i Aspose.Words?
+Och där har du det! Du har precis lärt dig hur man implementerar en avstavningsåteruppringning i Aspose.Words för .NET. Genom att följa dessa steg kan du säkerställa att dina dokument är vackert formaterade, oavsett språk. Oavsett om du har att göra med engelska, tyska eller något annat språk, låter den här metoden dig hantera avstavning utan ansträngning.
 
-S: Fördelen med att använda en stavningspåminnelse i Aspose.Words är möjligheten att anpassa hur ord stavas in i dina dokument. Detta ger dig mer kontroll över kursplanering, särskilt för specifika språk eller scenarier där standardplaneringen inte ger önskat resultat. Du kan tillämpa specifika regler för varje ord för att få exakt stavning enligt dina behov.
+## Vanliga frågor
 
-#### F: Vilka är några vanliga scenarier där det kan vara till hjälp att använda en påminnelse om kursplanering?
+### Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt dokumentmanipuleringsbibliotek som låter utvecklare skapa, modifiera och konvertera dokument programmatiskt.
 
-S: Att använda en kursplansförstärkare kan vara användbart i flera scenarier, till exempel:
-- Stavning av ord på specifika språk som har särskilda regler för stavning.
-- Tillämpningen av personliga stavningsregler för akronymer eller tekniska ord.
-- Anpassning av syllabisering enligt stilistiska preferenser eller typografiska standarder.
+### Varför är avstavning viktigt i dokumentformatering?
+Avstavning förbättrar textlayouten genom att bryta ord på lämpliga platser, vilket säkerställer ett mer läsbart och visuellt tilltalande dokument.
 
-#### F: Hur kan jag testa anpassad kursplanering med en påminnelse om kursplanering i Aspose.Words?
+### Kan jag använda Aspose.Words gratis?
+ Aspose.Words erbjuder en gratis provperiod. Du kan få det[här](https://releases.aspose.com/).
 
- S: För att testa anpassad stavning med en påminnelse om stavning i Aspose.Words, kan du skapa ett testdokument som innehåller ord som du vill tillämpa anpassade stavningsregler för. Sedan kan du ställa in din anpassade återuppringning, ring till`Document.Range.Replace()` metod för att ersätta orden i dokumentet och använd`Hyphenate()` metod för`Hyphenation` klass för att få stavning av orden . Du kan sedan formatera de stavelseordnade orden efter behov, till exempel genom att lägga till bindestreck mellan stavelserna.
+### Hur får jag en avstavningsordbok?
+Du kan ladda ner avstavningsordböcker från olika onlineresurser eller skapa dina egna om det behövs.
+
+### Vad händer om en avstavningsordbok saknas?
+ Om en ordbok saknas,`RequestDictionary` metod ger ett undantag, som du kan hantera för att informera användaren eller ge en reserv.

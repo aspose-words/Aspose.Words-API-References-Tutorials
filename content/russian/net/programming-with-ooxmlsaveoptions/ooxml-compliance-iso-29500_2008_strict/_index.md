@@ -35,7 +35,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompli
 
  На этом этапе мы настраиваем параметры сохранения OOXML, используя команду`OptimizeFor` и`OoxmlSaveOptions` методы. Оптимизируем совместимость документов для версии Word 2016 с помощью`OptimizeFor`и установите соответствие`Iso29500_2008_Strict` с использованием`Compliance`.
 
-## Шаг 4. Сохранение документа в соответствии со стандартом Ooxml Iso 29500_2008_Strict.
+## Шаг 4. Сохранение документа с соблюдением Ooxml ISO 29500_2008_Strict.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx", saveOptions);
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
 
  На этом последнем шаге мы сохраняем документ, используя`Save` метод и передавая путь к выходному файлу с помощью`.docx` расширение вместе с указанными параметрами сохранения.
 
-Теперь вы можете запустить исходный код, чтобы обеспечить соответствие Ooxml Iso 29500_2008_Strict при сохранении документа. Полученный файл будет сохранен в указанном каталоге с именем «WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx».
+Теперь вы можете запустить исходный код, чтобы обеспечить соответствие Ooxml Iso 29500_2008_Strict при сохранении документа. Полученный файл будет сохранен в указанном каталоге под именем «WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx».
 
 ### Пример исходного кода для соответствия Ooxml Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp

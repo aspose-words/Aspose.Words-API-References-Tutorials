@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Vložte tvary
- Použijte`InsertShape` metoda`DocumentBuilder` objekt pro vložení tvarů do dokumentu. Zadejte typ tvaru, relativní vodorovné a svislé polohy, rozměry stránky, velikost a typ obtékání. V případě potřeby můžete také nastavit úhel otočení tvarů.
+ Použijte`InsertShape` metoda`DocumentBuilder`objekt pro vložení tvarů do dokumentu. Zadejte typ tvaru, relativní vodorovné a svislé polohy, rozměry stránky, velikost a typ obtékání. V případě potřeby můžete také nastavit úhel otočení tvarů.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
@@ -75,4 +75,4 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 	doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-je to! Úspěšně jste vložili tvary do dokumentu aplikace Word pomocí Aspose.Words for .NET.
+A je to! Úspěšně jste vložili tvary do dokumentu aplikace Word pomocí Aspose.Words for .NET.

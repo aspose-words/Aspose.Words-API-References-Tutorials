@@ -30,7 +30,7 @@ A táblák kezelésének első lépése azok létrehozása. Az Aspose.Words hihe
 // Hozzon létre egy új dokumentumot
 Document doc = new Document();
 
-// Hozzon létre egy táblázatot 3 sorból és 4 oszlopból
+// Hozzon létre egy táblázatot 3 sorból és 4 oszlopból.
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {
@@ -92,7 +92,7 @@ table.getRows().get(0).getCells().get(0).getCellFormat().setHorizontalMerge(Cell
 
 ### Oldaltörések kezelése
 
-Egyes esetekben előfordulhat, hogy szabályoznia kell a táblázat kezdetét vagy végét a megfelelő elrendezés érdekében. Ha oldaltörést szeretne beszúrni a táblázat elé, használja a következő kódot:
+Egyes esetekben előfordulhat, hogy szabályoznia kell a táblázat kezdetét vagy végét a megfelelő elrendezés érdekében. Ha a táblázat elé oldaltörést szeretne beszúrni, használja a következő kódot:
 
 ```java
 table.getRows().get(0).getCells().get(0).getParagraphs().get(0).getRuns().get(0).getFont().setPageBreakBefore(true);
@@ -107,7 +107,7 @@ table.getRows().get(0).getCells().get(0).getParagraphs().get(0).getRuns().get(0)
 Igen, egyesíthet cellákat egy táblázatban az Aspose.Words használatával, amint az az útmutatóban látható.
 
 ### Mi a teendő, ha fel kell osztanom a korábban egyesített cellákat?
- Semmi gond! Könnyen feloszthatja a korábban egyesített cellákat, ha vízszintes egyesítési tulajdonságukat értékre állítja`NONE`.
+ Semmi gond! Könnyedén feloszthatja a korábban egyesített cellákat, ha vízszintes egyesítési tulajdonságukat értékre állítja`NONE`.
 
 ### Hogyan adhatok oldaltörést a táblázat elé?
  Ha oldaltörést szeretne beszúrni a táblázat elé, módosítsa a betűtípust`PageBreakBefore` tulajdonság a bemutatott módon.

@@ -24,7 +24,7 @@ Dzięki Aspose.Words dla Java możesz tworzyć dynamiczne dokumenty w locie. Wyo
 
 ## Doskonalenie umiejętności przetwarzania dokumentów
 
-Postępując zgodnie z tymi samouczkami, nie tylko poznasz podstawy manipulacji elementami dokumentu, ale także zagłębisz się w zaawansowane tematy, takie jak stylizacja, ochrona dokumentów, korespondencja seryjna i inne. Zdobyta tutaj wiedza pozwoli Ci z łatwością uporać się z nawet najbardziej złożonymi zadaniami związanymi z przetwarzaniem dokumentów.
+Postępując zgodnie z tymi samouczkami, nie tylko poznasz podstawy manipulacji elementami dokumentu, ale także zagłębisz się w zaawansowane tematy, takie jak stylizacja, ochrona dokumentów, korespondencja seryjna i inne. Zdobyta tutaj wiedza pozwoli Ci z łatwością uporać się nawet z najbardziej złożonymi zadaniami związanymi z przetwarzaniem dokumentów.
 
 ## Zacznij dziś
 

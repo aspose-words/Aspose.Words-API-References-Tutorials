@@ -2,176 +2,156 @@
 title: Hiển thị ẩn nội dung được đánh dấu trong tài liệu Word
 linktitle: Hiển thị ẩn nội dung được đánh dấu trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách hiển thị hoặc ẩn nội dung dấu trang trong tài liệu word bằng Aspose.Words for .NET.
+description: Tìm hiểu cách tự động hiển thị hoặc ẩn nội dung được đánh dấu trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này.
 type: docs
 weight: 10
 url: /vi/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-Trong bài viết này, chúng ta sẽ khám phá mã nguồn C# ở trên để hiểu cách sử dụng chức năng Hiển thị ẩn nội dung được đánh dấu trong thư viện Aspose.Words cho .NET. Tính năng này cho phép bạn hiển thị hoặc ẩn nội dung của dấu trang trong tài liệu word dựa trên một điều kiện cụ thể khi hợp nhất dữ liệu.
+## Giới thiệu
+
+Này! Bạn đã bao giờ muốn kiểm soát khả năng hiển thị của nội dung cụ thể trong tài liệu Word dựa trên các điều kiện nhất định chưa? Với Aspose.Words for .NET, bạn có thể tự động hiển thị hoặc ẩn nội dung được đánh dấu trang chỉ bằng một vài dòng mã. Trong hướng dẫn này, tôi sẽ hướng dẫn bạn từng bước trong quy trình, đảm bảo bạn hiểu từng phần của mã. Cuối cùng, bạn sẽ thành thạo trong việc thao tác đánh dấu trang trong tài liệu Word. Bắt đầu nào!
 
 ## Điều kiện tiên quyết
 
-- Kiến thức cơ bản về ngôn ngữ C#.
-- Môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có mọi thứ mình cần:
 
-## Bước 1: Lấy dấu trang
+1. Kiến thức cơ bản về C#: Bạn nên thành thạo với cú pháp và khái niệm C#.
+2.  Aspose.Words cho .NET: Tải xuống[đây](https://releases.aspose.com/words/net/) . Nếu bạn chưa sẵn sàng mua hàng, bạn có thể bắt đầu bằng[dùng thử miễn phí](https://releases.aspose.com/).
+3. Visual Studio: Mọi phiên bản gần đây đều có thể hoạt động nhưng bạn nên sử dụng phiên bản mới nhất.
+4. .NET Framework: Đảm bảo nó được cài đặt trên máy của bạn.
 
- Chúng tôi sử dụng`Bookmarks` thuộc tính của phạm vi tài liệu để lấy dấu trang cụ thể mà chúng tôi muốn hiển thị hoặc ẩn nội dung:
+Sẵn sàng để bắt đầu? Tuyệt vời! Hãy bắt đầu bằng cách nhập các không gian tên cần thiết.
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words cho .NET, chúng ta cần nhập các không gian tên được yêu cầu. Bước này đảm bảo chúng ta có quyền truy cập vào tất cả các lớp và phương thức mà chúng ta sẽ sử dụng.
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Bước 2: Chèn các trường hợp nhất
+Các không gian tên này rất quan trọng để làm việc với tài liệu Word và thao tác với nội dung của chúng.
 
- Chúng tôi sử dụng trình tạo tài liệu`DocumentBuilder` để chèn các trường hợp nhất cần thiết. Các trường hợp nhất này sẽ đặt điều kiện hiển thị hoặc ẩn nội dung dấu trang tùy thuộc vào giá trị của`showHide` Biến đổi:
+## Bước 1: Thiết lập tài liệu
+
+Trước tiên, hãy tạo một tài liệu Word mới và trình tạo tài liệu. Trình tạo tài liệu giúp chúng ta dễ dàng thêm và thao tác nội dung trong tài liệu.
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## Bước 3: Di chuyển nội dung bookmark
+Trong bước này, chúng tôi khởi tạo một tài liệu mới và trình tạo tài liệu. Điều này thiết lập môi trường của chúng tôi cho các hoạt động tiếp theo.
 
-Chúng tôi lặp qua nội dung của dấu trang và di chuyển nó để nó xuất hiện
+## Bước 2: Thêm nội dung được đánh dấu
 
-isse trước dấu trang. Điều này sẽ kiểm soát việc hiển thị hoặc ẩn nội dung dựa trên điều kiện đã chỉ định:
+Tiếp theo, chúng ta sẽ thêm một số nội dung vào tài liệu và tạo dấu trang xung quanh nó. Dấu trang này sẽ giúp chúng ta xác định và thao tác với nội dung.
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ Ở đây, chúng ta thêm một số văn bản trước và sau nội dung được đánh dấu. Các`StartBookmark` Và`EndBookmark` các phương thức xác định ranh giới của dấu trang.
+
+## Bước 3: Chèn trường có điều kiện
+
+Để kiểm soát khả năng hiển thị của nội dung được đánh dấu, chúng tôi sẽ sử dụng trường có điều kiện. Trường này sẽ kiểm tra một điều kiện và hiển thị hoặc ẩn nội dung tương ứng.
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+Trong bước này, chúng tôi chèn trường IF để kiểm tra giá trị của dấu trang. Nếu giá trị là "true", nó sẽ hiển thị "Hiển thị"; nếu không nó sẽ hiển thị "Ẩn".
+
+## Bước 4: Sắp xếp lại các nút
+
+Tiếp theo, chúng ta cần sắp xếp lại các nút để đảm bảo logic có điều kiện được áp dụng chính xác cho nội dung được đánh dấu.
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## Bước 4: Di chuyển phần nội dung còn lại của bookmark
-
-Chúng ta di chuyển phần còn lại của nội dung bookmark sau bookmark, sử dụng nút cuối của bookmark làm điểm chèn:
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## Bước 5: Thực hiện việc ghép
+Ở đây, chúng tôi di chuyển các nút xung quanh để đảm bảo điều kiện bao gồm đúng nội dung được đánh dấu.
 
- Chúng tôi sử dụng`Execute` phương pháp tài liệu`s `Mail Merge` object to execute the merge using the bookmark name and the value of the `biến showHide`:
+## Bước 5: Thực hiện trộn thư
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### Mã nguồn ví dụ cho Hiển thị Ẩn nội dung được đánh dấu bằng Aspose.Words cho .NET
-
-Dưới đây là ví dụ đầy đủ về Mã nguồn để minh họa việc hiển thị hoặc ẩn nội dung dấu trang bằng Aspose.Words cho .NET:
+Cuối cùng, chúng tôi sẽ thực hiện trộn thư để đặt giá trị của dấu trang và xác định xem nội dung sẽ được hiển thị hay ẩn.
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{Dấu trang MERGEFIELD}" = "true" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+Bước này đặt giá trị dấu trang thành "true", điều này sẽ hiển thị nội dung dựa trên điều kiện của chúng tôi.
+
+## Bước 6: Lưu tài liệu
+
+Sau tất cả các thao tác, bước cuối cùng là lưu tài liệu đã sửa đổi.
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+Ở đây, chúng tôi lưu tài liệu với tên tệp mô tả để chỉ ra những thay đổi.
 
 ## Phần kết luận
 
-Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu cách sử dụng tính năng Hiển thị ẩn nội dung được đánh dấu của Aspose.Words cho .NET. Chúng tôi đã làm theo hướng dẫn từng bước để hiển thị hoặc ẩn nội dung của dấu trang dựa trên điều kiện cụ thể khi hợp nhất dữ liệu.
+ Và thế là xong! Bạn đã học thành công cách hiển thị hoặc ẩn nội dung được đánh dấu trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đề cập đến việc tạo tài liệu, thêm dấu trang, chèn các trường có điều kiện, sắp xếp lại các nút và thực hiện phối thư. Aspose.Words cung cấp rất nhiều tính năng, vì vậy đừng ngần ngại khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để có những khả năng nâng cao hơn.
 
-### Câu hỏi thường gặp về ẩn nội dung được đánh dấu trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Hỏi: Tôi có thể sử dụng cùng một điều kiện cho nhiều dấu trang trong cùng một tài liệu không?
+### 1. Aspose.Words cho .NET là gì?
 
-Đáp: Có, bạn có thể sử dụng cùng một điều kiện cho nhiều dấu trang trong cùng một tài liệu. Chỉ cần lặp lại các bước 2-5 cho mỗi dấu trang, điều chỉnh tên dấu trang và giá trị tùy ý của dấu trang.`showhide` biến khi cần thiết.
+Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình. Nó được sử dụng rộng rãi cho các nhiệm vụ tự động hóa tài liệu.
 
-#### Hỏi: Làm cách nào tôi có thể thêm nhiều điều kiện hơn để hiển thị hoặc ẩn nội dung dấu trang?
+### 2. Tôi có thể sử dụng Aspose.Words cho .NET miễn phí không?
 
- Đáp: Để thêm nhiều điều kiện hơn, bạn có thể sử dụng các toán tử logic như`AND` Và`OR` trong mã để chèn các trường hợp nhất ở bước 2. Chỉnh sửa điều kiện trong mã sau để thêm các điều kiện bổ sung:
+ Bạn có thể thử Aspose.Words cho .NET bằng cách sử dụng[dùng thử miễn phí](https://releases.aspose.com/). Để sử dụng lâu dài, bạn sẽ cần phải mua giấy phép.
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. Làm cách nào để sửa đổi các thuộc tính khác của dấu trang?
 
-#### Hỏi: Làm cách nào tôi có thể xóa dấu trang trong tài liệu Word bằng Aspose.Words cho .NET?
+ Aspose.Words cho phép bạn thao tác các thuộc tính khác nhau của dấu trang, chẳng hạn như văn bản và vị trí của dấu trang. Tham khảo đến[Tài liệu API](https://reference.aspose.com/words/net/) để được hướng dẫn chi tiết.
 
- Trả lời: Để xóa dấu trang trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`Remove` phương pháp từ`Bookmarks` tập hợp phạm vi tài liệu. Đây là mã mẫu để xóa một dấu trang cụ thể:
+### 4. Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+Bạn có thể nhận được hỗ trợ bằng cách truy cập[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).
 
-#### Câu hỏi: Thư viện Aspose.Words có miễn phí không?
+### 5. Tôi có thể xử lý các loại nội dung khác bằng Aspose.Words cho .NET không?
 
- Trả lời: Thư viện Aspose.Words là thư viện thương mại và cần có giấy phép hợp lệ để sử dụng trong các dự án của bạn. Anh có thể kiểm tra[Aspose.Words cho tài liệu tham khảo API .NET](https://reference.aspose.com/words/net/) để tìm hiểu thêm về các tùy chọn cấp phép và giá cả.
-
-#### Câu hỏi: Có thư viện nào khác dành cho Xử lý văn bản với tài liệu Word trong .NET không?
-
-Đáp: Có, có các thư viện khác dành cho Xử lý văn bản với tài liệu Word trong .NET, chẳng hạn như Open XML SDK và GemBox.Document. Bạn có thể khám phá những thư viện này dưới dạng các lựa chọn thay thế cho Aspose.Words dựa trên nhu cầu và sở thích cụ thể của bạn.
+Có, Aspose.Words for .NET hỗ trợ nhiều loại thao tác nội dung khác nhau, bao gồm văn bản, hình ảnh, bảng, v.v.

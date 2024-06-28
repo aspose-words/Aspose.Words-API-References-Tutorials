@@ -19,7 +19,7 @@ url: /ko/net/join-and-append-documents/insert-document-with-builder/
 
 ## 2단계: 원본 및 대상 문서 열기
 
- 다음을 사용하여 원본 및 대상 문서를 엽니다.`Document` 클래스 생성자. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 다음을 사용하여 원본 및 대상 문서를 엽니다.`Document` 클래스 생성자. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 // 문서 디렉터리 경로
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## 4단계: DocumentBuilder 배치
 
- 이동`DocumentBuilder` 문서 끝까지`MoveToDocumentEnd` 방법. 삽입된 문서에서 기존 콘텐츠를 분리하려면 페이지 나누기를 삽입하세요.
+이동`DocumentBuilder` 문서 끝까지`MoveToDocumentEnd` 방법. 삽입된 문서에서 기존 콘텐츠를 분리하려면 페이지 나누기를 삽입하세요.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 6단계: 수정된 문서 저장
 
- 마지막으로 다음을 사용하여 수정된 대상 문서를 저장합니다.`Save` 의 방법`Document` 물체.
+마지막으로 다음을 사용하여 수정된 대상 문서를 저장합니다.`Save` 의 방법`Document` 물체.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

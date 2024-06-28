@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Dans cet exemple, nous créons un nouveau document et utilisons DocumentBuilder pour ajouter du texte et créer une liste avec trois niveaux d'indentation. Nous avons ajouté trois éléments à la liste, chaque élément étant en retrait d'un niveau supplémentaire.
+Dans cet exemple, nous créons un nouveau document et utilisons DocumentBuilder pour ajouter du texte et créer une liste avec trois niveaux d'indentation. Nous avons ajouté trois éléments à la liste, chaque élément indiquant un niveau supplémentaire.
 
 ## Utilisation d'un caractère d'espace par niveau pour l'indentation de la liste
 
@@ -91,7 +91,7 @@ namespace Example
 
 ## Conclusion
 
-Dans ce guide, nous avons expliqué comment utiliser Aspose.Words for .NET pour appliquer la fonctionnalité « Utiliser un caractère d'espace par niveau pour l'indentation de liste ». En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement configurer l'indentation des listes dans vos documents Word en utilisant un caractère d'espace par niveau. Aspose.Words offre une flexibilité et une puissance considérables pour le traitement de texte avec le formatage du texte et la gestion de listes, vous permettant de créer des documents bien structurés dans votre application C#.
+Dans ce guide, nous avons expliqué comment utiliser Aspose.Words pour .NET pour appliquer la fonctionnalité « Utiliser un caractère d'espace par niveau pour l'indentation de liste ». En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement configurer l'indentation des listes dans vos documents Word en utilisant un caractère d'espace par niveau. Aspose.Words offre une flexibilité et une puissance considérables pour le traitement de texte avec le formatage du texte et la gestion de listes, vous permettant de créer des documents bien structurés dans votre application C#.
 
 ### Questions fréquemment posées
 

@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 Das ist es! Sie haben die Grenzen einer Achse in einem Diagramm mit Aspose.Words für .NET erfolgreich festgelegt.
 
 ## Abschluss
-In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET die Grenzen einer Achse in einem Diagramm festlegen. Wenn Sie der Schritt-für-Schritt-Anleitung folgen, können Sie ein Diagramm einfügen und konfigurieren, Reihendaten hinzufügen und die Mindest- und Höchstwerte für die Achsenskalierung definieren. Aspose.Words für .NET bietet eine leistungsstarke und flexible API für die Textverarbeitung mit Word-Dokumenten, mit der Sie problemlos dynamische und optisch ansprechende Diagramme erstellen können.
+In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET die Grenzen einer Achse in einem Diagramm festlegen. Indem Sie der Schritt-für-Schritt-Anleitung folgen, können Sie ein Diagramm einfügen und konfigurieren, Reihendaten hinzufügen und die Mindest- und Höchstwerte für die Achsenskalierung definieren. Aspose.Words für .NET bietet eine leistungsstarke und flexible API für die Textverarbeitung mit Word-Dokumenten, mit der Sie problemlos dynamische und optisch ansprechende Diagramme erstellen können.
 
 
 ### FAQs
@@ -95,7 +95,7 @@ In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET die Gre
 Aspose.Words für .NET ist eine Bibliothek, die es Entwicklern ermöglicht, programmgesteuert mit Word-Dokumenten zu arbeiten. Es bietet eine breite Palette an Features und Funktionalitäten zum Erstellen, Bearbeiten und Speichern von Word-Dokumenten.
 
 #### Q2. Wie kann ich Aspose.Words für .NET installieren?
-Um Aspose.Words für .NET zu installieren, können Sie den NuGet-Paketmanager in Visual Studio verwenden. Suchen Sie einfach im NuGet-Paketmanager nach „Aspose.Words“ und installieren Sie es in Ihrem Projekt.
+Um Aspose.Words für .NET zu installieren, können Sie den NuGet-Paketmanager in Visual Studio verwenden. Suchen Sie einfach im NuGet-Paketmanager nach „Apose.Words“ und installieren Sie es in Ihrem Projekt.
 
 #### Q3. Kann ich Aspose.Words für .NET mit anderen Programmiersprachen verwenden?
 Nein, Aspose.Words für .NET wurde speziell für .NET-Anwendungen entwickelt. Es funktioniert mit Programmiersprachen wie C# und VB.NET.

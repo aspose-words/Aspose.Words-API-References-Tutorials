@@ -93,7 +93,7 @@ Jeśli zapomnisz hasła szyfrowania, nie będzie możliwości odzyskania dokumen
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy proces szyfrowania i deszyfrowania dokumentów za pomocą Aspose.Words dla Java. Zapewnienie bezpieczeństwa poufnych dokumentów jest kluczowe, a Aspose.Words zapewnia solidny i prosty sposób na osiągnięcie tego celu.
+W tym samouczku zbadaliśmy proces szyfrowania i deszyfrowania dokumentów za pomocą Aspose.Words dla Java. Zapewnienie bezpieczeństwa poufnych dokumentów jest kluczowe, a Aspose.Words zapewnia solidny i prosty sposób, aby to osiągnąć.
 
 Zaczęliśmy od skonfigurowania naszego projektu Java i upewnienia się, że mamy niezbędne wymagania wstępne, w tym bibliotekę Aspose.Words. Następnie przeszliśmy przez kolejne etapy szyfrowania dokumentu, dodając dodatkową warstwę ochrony, aby zapobiec nieautoryzowanemu dostępowi. Dowiedzieliśmy się także, jak w razie potrzeby odszyfrować zaszyfrowany dokument, korzystając z podanego hasła.
 

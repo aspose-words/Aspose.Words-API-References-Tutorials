@@ -52,7 +52,7 @@ Nyní můžete generovat samostatné HTML dokumenty pro každou sekci původníh
 
 ## Závěr
 
-V tomto tutoriálu jsme se naučili, jak rozdělit dokument aplikace Word do samostatných sekcí ve formátu HTML pomocí funkce By HTML Sections v Aspose.Words for .NET. Podle poskytnutého zdrojového kódu můžete generovat jednotlivé HTML dokumenty pro každou sekci původního dokumentu.
+V tomto tutoriálu jsme se naučili, jak rozdělit dokument aplikace Word do samostatných částí ve formátu HTML pomocí funkce By HTML Sections v Aspose.Words for .NET. Podle poskytnutého zdrojového kódu můžete generovat jednotlivé HTML dokumenty pro každou sekci původního dokumentu.
 
 Rozdělení dokumentu do sekcí může být užitečné pro různé účely, jako je vytváření webových stránek, extrahování konkrétního obsahu nebo organizace informací. Aspose.Words for .NET poskytuje výkonné API, které vám umožňuje manipulovat a upravovat dokumenty Wordu podle vašich požadavků.
 

@@ -14,7 +14,7 @@ url: /ja/python-net/data-visualization-and-formatting/document-shape-handling-fo
 
 ## 環境のセットアップ
 
-印象的な文書図形の作成に入る前に、Aspose.Words for Python がインストールされていることを確認してください。からダウンロードできます。[ダウンロードリンク](https://releases.aspose.com/words/python/)。さらに、[ドキュメンテーション](https://reference.aspose.com/words/python-net/)図書館の利用に関する包括的なガイダンスをご覧ください。
+印象的な文書図形の作成に入る前に、Aspose.Words for Python がインストールされていることを確認してください。からダウンロードできます。[ダウンロードリンク](https://releases.aspose.com/words/python/) 。さらに、[ドキュメンテーション](https://reference.aspose.com/words/python-net/)図書館の利用に関する包括的なガイダンスをご覧ください。
 
 ## 基本的なドキュメントの作成
 

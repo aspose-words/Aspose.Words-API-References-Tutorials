@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Struktur und Inhalt in Word-Dokumenten
 linktitle: Verwalten von Struktur und Inhalt in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für Python effizient verwalten. Diese Schritt-für-Schritt-Anleitung behandelt Dokumentstruktur, Textbearbeitung, Formatierung, Bilder, Tabellen und mehr.
 type: docs
 weight: 10
@@ -122,7 +122,7 @@ page_setup.left_margin = 72
 
 ## Kopf- und Fußzeilen hinzufügen
 
-Kopf- und Fußzeilen sorgen seitenübergreifend für konsistente Informationen:
+Kopf- und Fußzeilen sorgen für konsistente Informationen auf allen Seiten:
 
 ```python
 from aspose.words import HeaderFooterType
@@ -176,7 +176,7 @@ for data in dataset:
 
 ## Best Practices und Tipps
 
-- Halten Sie Ihren Code organisiert, indem Sie Funktionen für verschiedene Dokumentbearbeitungsaufgaben verwenden.
+- Halten Sie Ihren Code organisiert, indem Sie Funktionen für verschiedene Dokumentmanipulationsaufgaben verwenden.
 - Nutzen Sie die Ausnahmebehandlung, um Fehler während der Dokumentverarbeitung ordnungsgemäß zu behandeln.
 -  Überprüf den[Aspose.Words-Dokumentation](https://reference.aspose.com/words/python-net/) Ausführliche API-Referenzen und Beispiele finden Sie hier.
 

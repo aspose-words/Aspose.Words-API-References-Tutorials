@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## 第 2 步：添加自定义属性
-接下来，添加所需的自定义属性。例如，要添加值为“Aspose”的“Company”属性，请使用`Add`CustomDocumentProperties 集合的方法：
+接下来，添加所需的自定义属性。例如，要添加值为“Apose”的“Company”属性，请使用`Add`CustomDocumentProperties 集合的方法：
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 
 创建一个实例`Document`班级。
 
-使用以下命令添加所需的自定义属性`CustomDocumentProperties`收藏。例如，使用`Add`方法添加值为“Aspose”的“Company”属性。
+使用以下命令添加所需的自定义属性`CustomDocumentProperties`收藏。例如，使用`Add`方法添加值为“Apose”的“Company”属性。
 
 创建一个实例`PdfSaveOptions`类并指定如何使用导出自定义属性`CustomPropertiesExport`财产。这`PdfCustomPropertiesExport.Standard`value 根据默认设置导出自定义属性。
 

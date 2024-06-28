@@ -30,7 +30,7 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- I det här steget kommer vi åt dokumentets stilsamling med hjälp av`Styles` fast egendom. Den här samlingen innehåller alla stilar som finns i dokumentet.
+ I det här steget kommer vi åt dokumentets stilsamling med hjälp av`Styles`fast egendom. Den här samlingen innehåller alla stilar som finns i dokumentet.
 
 ## Steg 4: Bläddra bland stilar
 
@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Slutsats
 
- I den här handledningen lärde vi oss hur man hämtar och får åtkomst till de stilar som finns i ett Word-dokument med Aspose.Words för .NET. Genom att använda`Styles` egendom av`Document` objekt fick vi samlingen av stilar och gick igenom dem för att visa deras namn. Den här funktionen ger värdefulla insikter om stilarna som används i ett dokument och möjliggör ytterligare anpassning och analys.
+ I den här handledningen lärde vi oss hur man hämtar och får åtkomst till de stilar som finns i ett Word-dokument med Aspose.Words för .NET. Genom att använda`Styles` egendom av`Document`objekt fick vi samlingen av stilar och gick igenom dem för att visa deras namn. Den här funktionen ger värdefulla insikter om stilarna som används i ett dokument och möjliggör ytterligare anpassning och analys.
 
 Genom att utnyttja Aspose.Words för .NET:s kraftfulla API kan utvecklare enkelt manipulera och arbeta med dokumentstilar, vilket ger förbättrad kontroll över formatering och dokumentbehandling.
 

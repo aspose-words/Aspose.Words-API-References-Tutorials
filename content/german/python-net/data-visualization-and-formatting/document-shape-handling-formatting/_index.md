@@ -1,7 +1,7 @@
 ---
 title: Erstellen Sie visuell beeindruckende Dokumentformen und -layouts
 linktitle: Erstellen Sie visuell beeindruckende Dokumentformen und -layouts
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erstellen Sie visuell beeindruckende Dokumentlayouts mit Aspose.Words für Python. Erfahren Sie, wie Sie Formen hinzufügen, Stile anpassen, Bilder einfügen, den Textfluss verwalten und die Attraktivität steigern.
 type: docs
 weight: 13

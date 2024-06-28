@@ -62,7 +62,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan állíthat be betűtípusmappákat 
 
 #### K: Hogyan konfigurálhatok betűtípus-mappákat egy Word-dokumentumban az Aspose.Words használatával?
 
-V: A Word-dokumentumban lévő betűtípusmappák Aspose.Words használatával konfigurálásához az API segítségével egyéni betűtípusmappákat adhat meg a dokumentum generálásakor vagy szerkesztésekor. Ez lehetővé teszi a Word számára, hogy megtalálja a helyes megjelenítéshez szükséges betűtípusokat.
+V: A Word-dokumentumban lévő betűtípusmappák Aspose.Words használatával konfigurálásához az API segítségével egyéni betűtípusmappákat adhat meg a dokumentum előállítása vagy szerkesztése során. Ez lehetővé teszi a Word számára, hogy megtalálja a helyes megjelenítéshez szükséges betűtípusokat.
 
 #### K: Lehetséges egyéni betűtípusok hozzáadása egy Word-dokumentumhoz az Aspose.Words segítségével?
 
@@ -70,7 +70,7 @@ V: Igen, az Aspose.Words segítségével egyéni betűtípusokat adhat a Word-do
 
 #### K: Mi történik, ha a szükséges betűtípusok hiányoznak egy Word-dokumentumból?
 
-V: Ha egy Word-dokumentumból hiányoznak a szükséges betűtípusok, az Aspose.Words képes észlelni ezt a problémát, és lehetőségeket kínál a javításra. Dönthet úgy, hogy a hiányzó betűtípusokat alternatív betűtípusokkal helyettesíti, vagy beillesztheti a hiányzó betűtípusokat a dokumentumba, ami biztosítja a helyes megtekintést.
+V: Ha egy Word-dokumentumból hiányoznak a szükséges betűtípusok, az Aspose.Words képes észlelni ezt a problémát, és lehetőséget kínál a javításra. Dönthet úgy, hogy a hiányzó betűtípusokat alternatív betűtípusokkal helyettesíti, vagy beillesztheti a hiányzó betűtípusokat a dokumentumba, ami biztosítja a helyes megtekintést.
 
 #### K: Hogyan távolíthatok el egyéni betűtípusokat egy Word-dokumentumból az Aspose.Words segítségével?
 

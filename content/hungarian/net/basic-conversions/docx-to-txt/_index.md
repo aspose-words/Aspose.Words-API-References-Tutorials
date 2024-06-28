@@ -53,8 +53,8 @@ A DOCX-fájlok TXT-re konvertálásához különböző szoftvereszközöket vagy
 
 #### Hogyan kezeljük a kódolási problémákat az átalakítás során?
 
-karakterkódolási különbségek miatt a DOCX TXT-re konvertálásakor kódolási problémák léphetnek fel. Fontos, hogy a TXT fájl mentésekor a megfelelő kódolást adja meg, hogy elkerülje a helytelen vagy hiányzó karakterekkel kapcsolatos problémákat. Az Aspose.Words for .NET lehetőséget kínál a kódolás megadására az átalakítás során a karakterkompatibilitás és a pontosság biztosítása érdekében.
+A karakterkódolási különbségek miatt a DOCX TXT-re konvertálásakor kódolási problémák léphetnek fel. Fontos, hogy a TXT fájl mentésekor adja meg a helyes kódolást, hogy elkerülje a helytelen vagy hiányzó karakterproblémákat. Az Aspose.Words for .NET lehetőséget kínál a kódolás megadására az átalakítás során a karakterkompatibilitás és a pontosság biztosítása érdekében.
 
 #### Milyen korlátai vannak az átalakítási folyamatnak?
 
-Az átalakítási folyamat korlátai a használt eszköztől vagy könyvtártól függenek. Egyes eszközök korlátozásokat tartalmazhatnak a támogatott szolgáltatásokkal, összetett formázással vagy a DOCX-fájl egyes elemeivel kapcsolatban. Fontos megérteni a választott eszköz korlátait, és felmérni, hogy megfelelnek-e az Ön konverziós igényeinek.
+Az átalakítási folyamat korlátai a használt eszköztől vagy könyvtártól függenek. Egyes eszközökhöz kapcsolódó korlátozások vonatkozhatnak a támogatott szolgáltatásokra, az összetett formázásra vagy a DOCX-fájl bizonyos elemeire vonatkozóan. Fontos megérteni a választott eszköz korlátait, és felmérni, hogy megfelelnek-e az Ön konverziós igényeinek.

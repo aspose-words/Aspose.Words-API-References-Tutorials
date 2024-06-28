@@ -2,7 +2,7 @@
 title: Korzystanie z wykresów w Aspose.Words dla Java
 linktitle: Korzystanie z wykresów
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak tworzyć i dostosowywać wykresy w Aspose.Words dla Java. Przeglądaj typy wykresów, formatowanie i właściwości osi na potrzeby wizualizacji danych.
+description: Dowiedz się, jak tworzyć i dostosowywać wykresy w Aspose.Words dla Java. Przeglądaj typy wykresów, formatowanie i właściwości osi do wizualizacji danych.
 type: docs
 weight: 12
 url: /pl/java/document-conversion-and-export/using-charts/
@@ -127,7 +127,7 @@ W tym samouczku omówiliśmy, jak pracować z wykresami za pomocą Aspose.Words 
 
 ### Jak dodać wiele serii do wykresu?
 
- Możesz dodać wiele serii do wykresu za pomocą opcji`chart.getSeries().add()` metoda. Pamiętaj o określeniu nazwy serii, kategorii i wartości danych.
+ Możesz dodać wiele serii do wykresu za pomocą opcji`chart.getSeries().add()` metoda. Pamiętaj, aby określić nazwę serii, kategorie i wartości danych.
 
 ### Jak sformatować etykiety danych przy użyciu niestandardowych formatów liczb?
 

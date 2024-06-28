@@ -14,7 +14,7 @@ Words Processing with Markdown fournit une ressource complète pour apprendre à
 | Titre | Description |
 | --- | --- |
 | [Texte en gras](./bold-text/) | Apprenez à mettre du texte en gras avec le guide étape par étape d'Aspose.Words for .NET. |
-| [Texte en italique](./italic-text/) | Apprenez à mettre du texte en italique avec le guide étape par étape d'Aspose.Words for .NET. |
+| [Texte italien](./italic-text/) | Apprenez à mettre du texte en italique avec le guide étape par étape d'Aspose.Words for .NET. |
 | [Barré](./strikethrough/) | Découvrez comment appliquer le style de texte barré avec le guide étape par étape d'Aspose.Words for .NET. |
 | [Code en ligne](./inline-code/) | Apprenez à intégrer du code avec le guide étape par étape d'Aspose.Words for .NET. |
 | [Lien automatique](./autolink/) | Découvrez comment insérer une liaison automatique avec Aspose.Words pour .NET Guide étape par étape. |
@@ -22,7 +22,7 @@ Words Processing with Markdown fournit une ressource complète pour apprendre à
 | [Image](./image/) | Découvrez comment insérer et personnaliser une image avec le guide étape par étape d'Aspose.Words for .NET. |
 | [La règle horizontale](./horizontal-rule/) | Découvrez comment insérer une règle horizontale avec le guide étape par étape d'Aspose.Words for .NET. |
 | [Titre](./heading/) | Découvrez comment utiliser le titre avec Aspose.Words pour .NET Guide étape par étape. |
-| [Titre du texte](./setext-heading/) | Apprenez à utiliser les en-têtes Setext pour formater vos documents avec le guide étape par étape d'Aspose.Words for .NET. |
+| [Rubrique Setex](./setext-heading/) | Apprenez à utiliser les en-têtes Setext pour formater vos documents avec le guide étape par étape d'Aspose.Words for .NET. |
 | [Code en retrait](./indented-code/) | Découvrez comment utiliser le code indenté avec Aspose.Words for .NET Guide étape par étape. |
 | [Code clôturé](./fenced-code/) | Découvrez comment utiliser la fonctionnalité de code isolé avec le guide étape par étape d'Aspose.Words for .NET. |
 | [Citation](./quote/) | Découvrez comment utiliser le guillemet avec Aspose.Words pour .NET Guide étape par étape. |

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/compare-documents/compare-options/
 ---
-W tym samouczku wyjaśnimy, jak używać opcji porównywania w dokumencie programu Word w Aspose.Words dla .NET. Wykonaj poniższe kroki, aby zrozumieć kod źródłowy i zastosować zmiany.
+tym samouczku wyjaśnimy, jak używać opcji porównywania w dokumencie programu Word w Aspose.Words dla .NET. Wykonaj poniższe kroki, aby zrozumieć kod źródłowy i zastosować zmiany.
 
 ## Krok 1: Porównaj dokumenty z opcjami niestandardowymi
 
@@ -110,4 +110,4 @@ Odp.: Typowe opcje dostępne w CompareOptions obejmują:
 
 #### P: Czy podczas porównywania dokumentów mogę używać niestandardowych opcji dla określonych elementów?
 
- Odp.: Tak, podczas porównywania dokumentów możesz używać niestandardowych opcji dla określonych elementów. Ustawiając właściwości pliku`CompareOptions` odpowiednio możesz wybrać, które elementy należy zignorować, a które wziąć pod uwagę podczas porównania.
+ Odp.: Tak, podczas porównywania dokumentów możesz użyć niestandardowych opcji dla określonych elementów. Ustawiając właściwości pliku`CompareOptions` odpowiednio możesz wybrać, które elementy należy zignorować, a które wziąć pod uwagę podczas porównania.

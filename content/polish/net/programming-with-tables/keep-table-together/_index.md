@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-tables/keep-table-together/
 ---
 
-W tym samouczku nauczymy się, jak łączyć tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz w stanie zachować tabelę w stanie nienaruszonym bez dzielenia jej na wiele stron w dokumentach programu Word.
+tym samouczku nauczymy się, jak łączyć tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz w stanie zachować tabelę w stanie nienaruszonym bez dzielenia jej na wiele stron w dokumentach programu Word.
 
 ## Krok 1: Konfiguracja projektu
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.

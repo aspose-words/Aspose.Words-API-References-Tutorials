@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Langkah 2: Muat Dokumen
-Muat dokumen Word yang berisi gambar Smart Art menggunakan`Document` konstruktor kelas.
+ Muat dokumen Word yang berisi gambar Smart Art menggunakan`Document` konstruktor kelas.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");

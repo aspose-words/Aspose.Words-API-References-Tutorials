@@ -2,80 +2,116 @@
 title: Ustaw ustawienia zastępczej czcionki
 linktitle: Ustaw ustawienia zastępczej czcionki
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić ustawienia zastępowania czcionek w Aspose.Words dla .NET i dostosowywać zastępowanie czcionek w dokumentach programu Word.
+description: Dowiedz się, jak skonfigurować ustawienia zastępczych czcionek w Aspose.Words dla .NET. Dzięki temu obszernemu przewodnikowi wszystkie znaki w dokumentach będą wyświetlane poprawnie.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/set-font-fallback-settings/
 ---
-tym samouczku pokażemy, jak ustawić ustawienia zastępowania czcionek w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ustawienia zastępowania czcionek umożliwiają określenie czcionek zastępczych, które będą używane, gdy określone czcionki nie będą dostępne.
+
+Pracując z dokumentami, które zawierają różnorodne elementy tekstowe, takie jak różne języki czy znaki specjalne, niezwykle ważne jest, aby elementy te były wyświetlane prawidłowo. Aspose.Words dla .NET oferuje zaawansowaną funkcję zwaną Ustawieniami zastępczych czcionek, która pomaga w definiowaniu reguł zastępowania czcionek, gdy oryginalna czcionka nie obsługuje niektórych znaków. W tym przewodniku omówimy krok po kroku, jak skonfigurować ustawienia zastępczej czcionki przy użyciu Aspose.Words dla .NET.
 
 ## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-- Praktyczna znajomość języka programowania C#
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
+
+Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
+
+- Podstawowa znajomość C#: Znajomość języka programowania C# i frameworku .NET.
+-  Aspose.Words dla .NET: Pobierz i zainstaluj z[link do pobrania](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: konfiguracja taka jak Visual Studio do pisania i uruchamiania kodu.
+-  Przykładowy dokument: Przygotuj przykładowy dokument (np.`Rendering.docx`) gotowy do testów.
+- Reguły zastępowania czcionek XML: Przygotuj plik XML definiujący zasady zastępowania czcionek.
+
+## Importuj przestrzenie nazw
+
+Aby korzystać z Aspose.Words, musisz zaimportować niezbędne przestrzenie nazw. Umożliwia to dostęp do różnych klas i metod niezbędnych do przetwarzania dokumentów.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
+```
 
 ## Krok 1: Zdefiniuj katalog dokumentów
- Zacznij od ustawienia ścieżki katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Najpierw zdefiniuj katalog, w którym przechowywany jest dokument. Jest to niezbędne do zlokalizowania i przetworzenia dokumentu.
 
-## Krok 2: Załaduj ustawienia zastępowania czcionek
- Utwórz instancję`FontSettings` klasę i użyj`Load` metoda ładowania ustawień zastępowania czcionek z pliku XML. Określony plik XML musi zawierać reguły podstawiania czcionek, które mają zostać użyte.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## Krok 3: Zastosuj ustawienia zastępowania czcionek
- Powiąż ustawienia zastępowania czcionek z dokumentem, przypisując je do dokumentu`FontSettings` nieruchomość.
-
-```csharp
-doc.FontSettings = fontSettings;
-```
-
-## Krok 4: Zapisz dokument
- Zapisz dokument za pomocą`Save` metoda`Document` z odpowiednią ścieżką i nazwą pliku.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
-
-### Przykładowy kod źródłowy dla Ustawień zastępczych czcionek przy użyciu Aspose.Words dla .NET 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Krok 2: Załaduj dokument
+
+ Załaduj swój dokument do Aspose.Words`Document` obiekt. Ten krok umożliwia programową pracę z dokumentem.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Krok 3: Skonfiguruj ustawienia czcionek
+
+ Stwórz nowy`FontSettings` obiekt i załaduj ustawienia zastępczej czcionki z pliku XML. Ten plik XML zawiera reguły dotyczące zastępczych czcionek.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## Krok 4: Zastosuj ustawienia czcionki do dokumentu
+
+ Przypisz skonfigurowane`FontSettings`do dokumentu. Dzięki temu podczas renderowania dokumentu zostaną zastosowane reguły dotyczące czcionek zastępczych.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Krok 5: Zapisz dokument
+
+Na koniec zapisz dokument. Ustawienia zastępczej czcionki zostaną użyte podczas operacji zapisywania, aby zapewnić prawidłowe podstawienie czcionek.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
+## Plik XML: Reguły zastępowania czcionek
+
+Oto przykład tego, jak powinien wyglądać plik XML definiujący reguły zastępczych czcionek:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
+```
+
 ## Wniosek
-W tym samouczku nauczyłeś się, jak ustawić ustawienia zastępowania czcionek w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Eksperymentuj z różnymi regułami zastępowania czcionek, aby mieć pewność, że dokument będzie wyglądał spójnie, nawet jeśli określone czcionki nie są dostępne.
 
-### Często zadawane pytania
+Wykonując poniższe kroki, możesz skutecznie skonfigurować i używać ustawień zastępczych czcionek w Aspose.Words dla .NET. Dzięki temu wszystkie znaki będą poprawnie wyświetlane w dokumentach, nawet jeśli oryginalna czcionka nie obsługuje niektórych znaków. Wdrożenie tych ustawień znacznie poprawi jakość i czytelność dokumentów.
 
-#### P: Jak mogę ustawić ustawienia zastępowania czcionek w dokumencie Word za pomocą Aspose.Words?
+## Często zadawane pytania
 
-Odp.: Aby ustawić ustawienia zastępowania czcionek w dokumencie Word za pomocą Aspose.Words, możesz użyć interfejsu API do określenia czcionek zastępczych, które będą używane, gdy wymagane czcionki nie będą dostępne. Zapewnia to spójną wizualizację tekstu, nawet bez oryginalnych czcionek.
+### P1: Co to jest funkcja zastępowania czcionek?
 
-#### P: Czy można obsługiwać czcionki zastępcze podczas zastępowania w dokumencie programu Word za pomocą Aspose.Words?
+Font Fallback to funkcja umożliwiająca podmianę czcionek, gdy oryginalna czcionka nie obsługuje niektórych znaków, zapewniając prawidłowe wyświetlanie wszystkich elementów tekstu.
 
-Odp.: Tak, za pomocą Aspose.Words możesz zarządzać czcionkami zastępczymi podczas zastępowania w dokumencie Word. Interfejs API pozwala wykryć brakujące czcionki i określić odpowiednie czcionki zastępcze, aby zachować spójny wygląd tekstu nawet po zastąpieniu czcionek.
+### P2: Czy mogę określić wiele czcionek zastępczych?
 
-#### P: Dlaczego ważne jest prawidłowe skonfigurowanie ustawień zastępowania czcionek w dokumencie programu Word?
+Tak, możesz określić wiele czcionek zastępczych w regułach XML. Aspose.Words sprawdzi każdą czcionkę w określonej kolejności, aż znajdzie taką, która obsługuje dany znak.
 
-Odp.: Prawidłowe skonfigurowanie ustawień zastępowania czcionek w dokumencie programu Word jest ważne, aby zachować wizualną integralność tekstu. Ustawiając odpowiednie czcionki zastępcze w Aspose.Words, masz pewność, że tekst będzie wyświetlany spójnie, nawet jeśli wymagane czcionki nie są dostępne.
+### P3: Gdzie mogę pobrać Aspose.Words dla .NET?
 
-#### P: Jak mogę wykryć brakujące czcionki podczas zastępowania w dokumencie Word za pomocą Aspose.Words?
+ Można go pobrać z[Strona pobierania Aspose](https://releases.aspose.com/words/net/).
 
-Odp.: Aspose.Words umożliwia wykrycie brakujących czcionek podczas zastępowania w dokumencie programu Word przy użyciu interfejsu API. Możesz skorzystać z metod dostarczonych przez Aspose.Words, aby sprawdzić dostępność wymaganych czcionek i podjąć odpowiednie działania w przypadku ich braku.
+### P4: Jak utworzyć plik XML dla reguł zastępczych czcionek?
 
-#### P: Czy zastępowanie czcionek wpływa na układ mojego dokumentu programu Word?
+Plik XML można utworzyć za pomocą dowolnego edytora tekstu. Powinien mieć strukturę pokazaną w przykładzie podanym w tym samouczku.
 
-Odp.: Zastępowanie czcionek może mieć wpływ na układ dokumentu programu Word, jeśli czcionki zastępcze mają inne wymiary niż czcionki oryginalne. Jednakże, mądrze wybierając czcionki zastępcze i konfigurując ustawienia zastępowania czcionek za pomocą Aspose.Words, możesz zminimalizować wpływ na układ.
+### P5: Czy dostępna jest obsługa Aspose.Words?
+
+ Tak, możesz znaleźć wsparcie na stronie[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).

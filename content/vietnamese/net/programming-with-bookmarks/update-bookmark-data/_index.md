@@ -96,7 +96,7 @@ Trả lời: Có, tính năng Cập nhật dữ liệu dấu trang được thi�
 
 #### Hỏi: Tôi có thể cập nhật các thuộc tính dấu trang khác ngoài văn bản không?
 
- Đáp: Có, ngoài văn bản, bạn cũng có thể cập nhật các thuộc tính dấu trang khác, chẳng hạn như tên dấu trang, phạm vi dấu trang, v.v. Sử dụng các thuộc tính thích hợp của dấu trang`Bookmark` đối tượng để cập nhật các thuộc tính mong muốn.
+ Trả lời: Có, ngoài văn bản, bạn cũng có thể cập nhật các thuộc tính dấu trang khác, chẳng hạn như tên dấu trang, phạm vi dấu trang, v.v. Sử dụng các thuộc tính thích hợp của dấu trang`Bookmark` đối tượng để cập nhật các thuộc tính mong muốn.
 
 #### Hỏi: Tôi có thể cập nhật nhiều dấu trang trong cùng một tài liệu không?
 

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-fields/change-field-update-culture-source/
 ---
 
-W tym samouczku przeprowadzimy Cię przez proces zmiany źródła kultury aktualizacji pola w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Modyfikując źródło kultury, możesz kontrolować formatowanie daty podczas operacji aktualizacji pól i korespondencji seryjnej. Dostarczymy Ci niezbędny kod źródłowy C# i instrukcje krok po kroku, jak to osiągnąć.
+tym samouczku przeprowadzimy Cię przez proces zmiany źródła kultury aktualizacji pola w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Modyfikując źródło kultury, możesz kontrolować formatowanie daty podczas operacji aktualizacji pól i korespondencji seryjnej. Dostarczymy Ci niezbędny kod źródłowy C# i instrukcje krok po kroku, jak to osiągnąć.
 
 ## Warunki wstępne
 Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## Wniosek
-Gratulacje! Pomyślnie nauczyłeś się zmieniać źródło kultury aktualizacji pola w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i wykorzystując dostarczony kod źródłowy, możesz teraz kontrolować kulturę używaną do formatowania daty podczas operacji aktualizacji pól i korespondencji seryjnej. Dostosuj źródło kultury zgodnie ze swoimi wymaganiami, aby zapewnić dokładną i spójną datę.
+Gratulacje! Pomyślnie nauczyłeś się zmieniać źródło kultury aktualizacji pola w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz teraz kontrolować kulturę używaną do formatowania daty podczas operacji aktualizacji pól i korespondencji seryjnej. Dostosuj źródło kultury zgodnie ze swoimi wymaganiami, aby zapewnić dokładną i spójną datę.
 
 ### Często zadawane pytania
 
@@ -91,7 +91,7 @@ Gratulacje! Pomyślnie nauczyłeś się zmieniać źródło kultury aktualizacji
 
 #### P: Jak mogę określić konkretną kulturę aktualizowania pól w Aspose.Words dla .NET?
 
-O: Aby określić konkretną kulturę aktualizowania pól w Aspose.Words dla .NET, możesz użyć metody`Document.FieldOptions.FieldUpdateCultureInfo` właściwość i ustaw`CultureInfo` obiekt odpowiadający pożądanej kulturze. Możesz na przykład użyć`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` aby określić kulturę francuską (francuską).
+ O: Aby określić konkretną kulturę aktualizowania pól w Aspose.Words dla .NET, możesz użyć metody`Document.FieldOptions.FieldUpdateCultureInfo` właściwość i ustaw`CultureInfo` obiekt odpowiadający pożądanej kulturze. Możesz na przykład użyć`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` aby określić kulturę francuską (francuską).
 
 #### P: Czy można wyłączyć automatyczne aktualizowanie pól w Aspose.Words dla .NET?
 

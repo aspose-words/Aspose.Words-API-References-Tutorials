@@ -27,7 +27,7 @@ Pelajari cara menentukan format dan orientasi dokumen Anda. Baik itu surat stand
 Document doc = new Document();
 doc.save("output.docx", SaveFormat.DOCX);
 
-// Atur orientasi halaman ke Lanskap
+// Atur orientasi halaman ke Lansekap
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);

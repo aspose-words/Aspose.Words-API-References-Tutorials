@@ -2,80 +2,116 @@
 title: Đặt cài đặt dự phòng phông chữ
 linktitle: Đặt cài đặt dự phòng phông chữ
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách đặt cài đặt thay thế phông chữ trong Aspose.Words cho .NET và tùy chỉnh thay thế phông chữ trong tài liệu Word của bạn.
+description: Tìm hiểu cách thiết lập Cài đặt dự phòng phông chữ trong Aspose.Words cho .NET. Hướng dẫn toàn diện này đảm bảo tất cả các ký tự trong tài liệu của bạn được hiển thị chính xác.
 type: docs
 weight: 10
 url: /vi/net/working-with-fonts/set-font-fallback-settings/
 ---
-Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn cách đặt cài đặt thay thế phông chữ trong tài liệu Word bằng Aspose.Words cho .NET. Cài đặt thay thế phông chữ cho phép bạn chỉ định phông chữ thay thế để sử dụng khi phông chữ được chỉ định không có sẵn.
+
+Khi làm việc với các tài liệu chứa các thành phần văn bản đa dạng, chẳng hạn như các ngôn ngữ khác nhau hoặc các ký tự đặc biệt, điều quan trọng là phải đảm bảo rằng các thành phần này được hiển thị chính xác. Aspose.Words for .NET cung cấp một tính năng mạnh mẽ được gọi là Cài đặt dự phòng phông chữ, giúp xác định quy tắc thay thế phông chữ khi phông chữ gốc không hỗ trợ một số ký tự nhất định. Trong hướng dẫn này, chúng ta sẽ khám phá cách thiết lập Cài đặt dự phòng phông chữ bằng Aspose.Words cho .NET theo hướng dẫn từng bước.
 
 ## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
-- Kiến thức làm việc về ngôn ngữ lập trình C#
-- Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
+
+Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+
+- Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C# và .NET framework.
+-  Aspose.Words for .NET: Tải xuống và cài đặt từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Thiết lập như Visual Studio để viết và chạy mã của bạn.
+-  Tài liệu mẫu: Có tài liệu mẫu (ví dụ:`Rendering.docx`) sẵn sàng để thử nghiệm.
+- Quy tắc dự phòng phông chữ XML: Chuẩn bị tệp XML xác định quy tắc dự phòng phông chữ.
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words, bạn cần nhập các không gian tên cần thiết. Điều này cho phép truy cập vào các lớp và phương thức khác nhau cần thiết để xử lý tài liệu.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
+```
 
 ## Bước 1: Xác định thư mục tài liệu
- Bắt đầu bằng cách đặt đường dẫn thư mục đến vị trí tài liệu Word của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+
+Đầu tiên, xác định thư mục nơi tài liệu của bạn được lưu trữ. Điều này rất cần thiết cho việc định vị và xử lý tài liệu của bạn.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Bước 2: Tải cài đặt thay thế phông chữ
- Tạo một thể hiện của`FontSettings` lớp và sử dụng`Load` phương pháp tải cài đặt ghi đè phông chữ từ tệp XML. Tệp XML được chỉ định phải chứa các quy tắc thay thế phông chữ để sử dụng.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## Bước 3: Áp dụng cài đặt thay thế phông chữ
- Liên kết cài đặt thay thế phông chữ với tài liệu bằng cách gán chúng cho tài liệu`FontSettings` tài sản.
-
-```csharp
-doc.FontSettings = fontSettings;
-```
-
-## Bước 4: Lưu tài liệu
- Lưu tài liệu bằng cách sử dụng`Save` phương pháp của`Document` với đường dẫn và tên file thích hợp.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
-
-### Mã nguồn mẫu cho Đặt cài đặt dự phòng phông chữ bằng Aspose.Words cho .NET 
-```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
+// Đường dẫn đến thư mục tài liệu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Bước 2: Tải tài liệu
+
+ Tải tài liệu của bạn vào Aspose.Words`Document` sự vật. Bước này cho phép bạn làm việc với tài liệu theo chương trình.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Bước 3: Định cấu hình cài đặt phông chữ
+
+ Tạo một cái mới`FontSettings` đối tượng và tải cài đặt dự phòng phông chữ từ tệp XML. Tệp XML này chứa các quy tắc dự phòng phông chữ.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## Bước 4: Áp dụng cài đặt phông chữ cho tài liệu
+
+ Chỉ định cấu hình`FontSettings`vào tài liệu. Điều này đảm bảo rằng các quy tắc dự phòng phông chữ được áp dụng khi hiển thị tài liệu.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Bước 5: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu. Cài đặt dự phòng phông chữ sẽ được sử dụng trong quá trình lưu để đảm bảo thay thế phông chữ phù hợp.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
+```
+
+## Tệp XML: Quy tắc dự phòng phông chữ
+
+Dưới đây là ví dụ về cách tệp XML xác định quy tắc dự phòng phông chữ của bạn sẽ trông như thế nào:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
 ```
 
 ## Phần kết luận
-Trong hướng dẫn này, bạn đã học cách đặt cài đặt thay thế phông chữ trong tài liệu Word bằng Aspose.Words cho .NET. Thử nghiệm với các quy tắc thay thế phông chữ khác nhau để đảm bảo tài liệu của bạn trông nhất quán, ngay cả khi các phông chữ được chỉ định không có sẵn.
 
-### Câu hỏi thường gặp
+Bằng cách làm theo các bước này, bạn có thể thiết lập và sử dụng Cài đặt dự phòng phông chữ trong Aspose.Words cho .NET một cách hiệu quả. Điều này đảm bảo rằng tài liệu của bạn hiển thị chính xác tất cả các ký tự, ngay cả khi phông chữ gốc không hỗ trợ một số ký tự nhất định. Việc triển khai các cài đặt này sẽ nâng cao đáng kể chất lượng và khả năng đọc tài liệu của bạn.
 
-#### Câu hỏi: Làm cách nào tôi có thể đặt cài đặt thay thế phông chữ trong tài liệu Word bằng Aspose.Words?
+## Câu hỏi thường gặp
 
-Trả lời: Để đặt cài đặt thay thế phông chữ trong tài liệu Word bằng Aspose.Words, bạn có thể sử dụng API để chỉ định phông chữ dự phòng để sử dụng khi không có phông chữ được yêu cầu. Điều này đảm bảo hiển thị văn bản nhất quán, ngay cả khi không có phông chữ gốc.
+### Câu hỏi 1: Dự phòng phông chữ là gì?
 
-#### Câu hỏi: Có thể xử lý phông chữ dự phòng khi ghi đè trong tài liệu Word bằng Aspose.Words không?
+Font Fallback là tính năng cho phép thay thế font chữ khi font gốc không hỗ trợ một số ký tự nhất định, đảm bảo hiển thị đúng tất cả các thành phần văn bản.
 
-Trả lời: Có, với Aspose.Words, bạn có thể quản lý phông chữ dự phòng khi thay thế trong tài liệu Word. API cho phép bạn phát hiện các phông chữ bị thiếu và chỉ định phông chữ dự phòng thích hợp để duy trì giao diện văn bản nhất quán ngay cả khi phông chữ được thay thế.
+### Câu hỏi 2: Tôi có thể chỉ định nhiều phông chữ dự phòng không?
 
-#### Hỏi: Tại sao việc đặt cấu hình chính xác cài đặt thay thế phông chữ trong tài liệu Word lại quan trọng?
+Có, bạn có thể chỉ định nhiều phông chữ dự phòng trong quy tắc XML. Aspose.Words sẽ kiểm tra từng phông chữ theo thứ tự được chỉ định cho đến khi tìm thấy phông chữ hỗ trợ ký tự.
 
-Trả lời: Điều quan trọng là phải đặt cấu hình chính xác cài đặt thay thế phông chữ trong tài liệu Word để duy trì tính toàn vẹn hình ảnh của văn bản. Bằng cách đặt phông chữ dự phòng thích hợp với Aspose.Words, bạn đảm bảo rằng văn bản sẽ được hiển thị nhất quán, ngay cả khi không có sẵn phông chữ được yêu cầu.
+### Câu hỏi 3: Tôi có thể tải xuống Aspose.Words cho .NET ở đâu?
 
-#### Câu hỏi: Làm cách nào tôi có thể phát hiện phông chữ bị thiếu khi thay thế trong tài liệu Word bằng Aspose.Words?
+ Bạn có thể tải nó xuống từ[Trang tải xuống](https://releases.aspose.com/words/net/).
 
-Trả lời: Aspose.Words cho phép bạn phát hiện các phông chữ bị thiếu trong quá trình thay thế trong tài liệu Word bằng API. Bạn có thể sử dụng các phương pháp do Aspose.Words cung cấp để kiểm tra tính khả dụng của các phông chữ được yêu cầu và thực hiện hành động thích hợp trong trường hợp thiếu phông chữ.
+### Câu hỏi 4: Làm cách nào để tạo tệp XML cho quy tắc dự phòng phông chữ?
 
-#### Hỏi: Việc thay thế phông chữ có ảnh hưởng đến bố cục tài liệu Word của tôi không?
+Tệp XML có thể được tạo bằng bất kỳ trình soạn thảo văn bản nào. Nó phải tuân theo cấu trúc được hiển thị trong ví dụ được cung cấp trong hướng dẫn này.
 
-Trả lời: Việc thay thế phông chữ có thể ảnh hưởng đến bố cục tài liệu Word của bạn nếu phông chữ dự phòng có kích thước khác với phông chữ gốc. Tuy nhiên, bằng cách chọn phông chữ dự phòng một cách khôn ngoan và định cấu hình cài đặt thay thế phông chữ bằng Aspose.Words, bạn có thể giảm thiểu tác động đến bố cục.
+### Câu hỏi 5: Aspose.Words có hỗ trợ không?
+
+ Có, bạn có thể tìm thấy sự hỗ trợ trên[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8).

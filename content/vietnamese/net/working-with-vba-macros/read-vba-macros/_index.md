@@ -23,7 +23,7 @@ Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Bước 2: Tải tài liệu và đọc macro VBA
+## Bước 2: Tải tài liệu và đọc macro VBA.
 Tiếp theo, chúng ta sẽ tải tài liệu Word và kiểm tra xem nó có chứa dự án VBA hay không. Nếu tài liệu có dự án VBA, chúng tôi sẽ lặp qua tất cả các mô-đun trong dự án và hiển thị mã nguồn cho từng mô-đun.
 
 ```csharp
@@ -63,7 +63,7 @@ Trong hướng dẫn này, chúng ta đã biết cách đọc macro VBA từ tà
 
 #### Hỏi: Macro VBA trong tài liệu Word là gì?
 
-Đáp: Macro VBA trong tài liệu Word là một tập hợp hướng dẫn hoặc mã có thể chạy để tự động hóa các tác vụ hoặc thực hiện các hành động cụ thể trong tài liệu. Macro VBA cho phép bạn thêm chức năng tùy chỉnh và tự động hóa các hoạt động lặp đi lặp lại.
+Đáp: Macro VBA trong tài liệu Word là một tập hợp các hướng dẫn hoặc mã có thể chạy để tự động hóa các tác vụ hoặc thực hiện các hành động cụ thể trong tài liệu. Macro VBA cho phép bạn thêm chức năng tùy chỉnh và tự động hóa các hoạt động lặp đi lặp lại.
 
 #### Câu hỏi: Điều kiện tiên quyết để đọc macro VBA từ tài liệu Word là gì?
 

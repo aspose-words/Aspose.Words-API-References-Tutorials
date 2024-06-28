@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Dalam contoh ini, kita membuat dokumen baru dan menggunakan DocumentBuilder untuk menambahkan teks dan membuat daftar dengan tiga tingkat indentasi. Kami telah menambahkan tiga item ke dalam daftar, dengan masing-masing item diindentasi pada level tambahan.
+Dalam contoh ini, kita membuat dokumen baru dan menggunakan DocumentBuilder untuk menambahkan teks dan membuat daftar dengan tiga tingkat indentasi. Kami telah menambahkan tiga item ke daftar, dengan setiap item menunjukkan level tambahan.
 
 ## Menggunakan satu karakter spasi per level untuk lekukan daftar
 

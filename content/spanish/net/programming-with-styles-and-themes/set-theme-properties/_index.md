@@ -19,7 +19,7 @@ Asegúrese de haber configurado su entorno de desarrollo con Aspose.Words para .
 Document doc = new Document();
 ```
 
- En este paso, creamos un nuevo`Document` objeto.
+En este paso, creamos un nuevo`Document` objeto.
 
 ## Paso 3: editar las propiedades del tema
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- En este paso accedemos al`Theme` objeto de la`Document` objeto para obtener el tema del documento. A continuación, podemos modificar las propiedades del tema, como las fuentes secundarias (`MinorFonts.Latin`) y colores (`Colors.Hyperlink`).
+ En este paso accedemos al`Theme` objeto de la`Document`objeto para obtener el tema del documento. A continuación, podemos modificar las propiedades del tema, como las fuentes secundarias (`MinorFonts.Latin`) y colores (`Colors.Hyperlink`).
 
 ## Paso 4: guarde el documento
 
@@ -67,7 +67,7 @@ Para configurar el entorno, debe asegurarse de tener Aspose.Words para .NET inst
 
 #### ¿Cómo accedo y modifico las propiedades del tema?
 
- Para acceder y modificar las propiedades del tema, puede utilizar el`Theme` objeto de la`Document` clase. Al acceder al`Theme`objeto, puede modificar propiedades como fuentes secundarias (`MinorFonts.Latin`) y colores (`Colors.Hyperlink`). Asigne los valores deseados a estas propiedades para personalizar el tema de su documento.
+ Para acceder y modificar las propiedades del tema, puede utilizar el`Theme` objeto de la`Document` clase. Al acceder al`Theme` objeto, puede modificar propiedades como fuentes secundarias (`MinorFonts.Latin`) y colores (`Colors.Hyperlink`). Asigne los valores deseados a estas propiedades para personalizar el tema de su documento.
 
 #### ¿Cuáles son los beneficios de configurar propiedades de tema en un documento de Word?
 
@@ -79,4 +79,4 @@ Configurar las propiedades del tema en un documento de Word le permite personali
 
 #### ¿Puedo guardar el documento modificado en diferentes formatos?
 
-Sí, puede guardar el documento modificado en varios formatos admitidos por Aspose.Words para .NET. El`Save` método de la`Document` object le permite especificar el formato del archivo de salida, como DOCX, PDF, HTML y más. Elija el formato apropiado según sus requisitos.
+ Sí, puede guardar el documento modificado en varios formatos admitidos por Aspose.Words para .NET. El`Save` método de la`Document` object le permite especificar el formato del archivo de salida, como DOCX, PDF, HTML y más. Elija el formato apropiado según sus requisitos.

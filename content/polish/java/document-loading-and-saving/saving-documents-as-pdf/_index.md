@@ -113,7 +113,7 @@ doc.save("output.pdf", saveOptions);
 
 ## Wniosek
 
-Aspose.Words dla Java zapewnia wszechstronne możliwości konwersji dokumentów Word do formatu PDF z elastycznością i opcjami dostosowywania. Możesz kontrolować różne aspekty wyjściowego pliku PDF, w tym czcionki, właściwości dokumentu, kompresję obrazu i inne.
+Aspose.Words for Java zapewnia wszechstronne możliwości konwersji dokumentów Word do formatu PDF z elastycznością i opcjami dostosowywania. Możesz kontrolować różne aspekty wyjściowego pliku PDF, w tym czcionki, właściwości dokumentu, kompresję obrazu i inne.
 
 ## Często zadawane pytania
 

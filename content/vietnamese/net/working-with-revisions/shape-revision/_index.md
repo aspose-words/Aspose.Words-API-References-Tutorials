@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Bước 3: Lấy bộ sưu tập hình dạng và kiểm tra các bản sửa đổi
+## Bước 3: Lấy bộ sưu tập hình dạng và kiểm tra các bản sửa đổi.
 
 Chúng ta sẽ lấy bộ sưu tập các hình dạng từ tài liệu và kiểm tra các bản sửa đổi liên quan đến từng hình dạng.
 

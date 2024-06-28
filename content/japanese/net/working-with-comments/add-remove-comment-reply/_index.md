@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### Q: Aspose.Words for .NET でコメントを削除するにはどうすればよいですか?
 
- A: Aspose.Words for .NET でコメントを削除するには、`Comment.Remove`を指定するメソッド`Comment`削除したいオブジェクト。
+A: Aspose.Words for .NET でコメントを削除するには、`Comment.Remove`を指定するメソッド`Comment`削除したいオブジェクト。
 
 #### Q: Aspose.Words for .NET のコメントに返信できますか?
 

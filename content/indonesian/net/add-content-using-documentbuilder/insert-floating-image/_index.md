@@ -2,89 +2,144 @@
 title: Sisipkan Gambar Mengambang di Dokumen Word
 linktitle: Sisipkan Gambar Mengambang di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan gambar mengambang di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah.
+description: Pelajari cara menyisipkan gambar mengambang di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Sempurna untuk menyempurnakan dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/add-content-using-documentbuilder/insert-floating-image/
 ---
-Dalam contoh komprehensif ini, Anda akan mempelajari cara menyisipkan gambar mengambang ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan memandu Anda melalui proses dan memberi Anda cuplikan kode C# yang diperlukan. Di akhir panduan ini, Anda akan dapat menambahkan gambar dengan opsi pemosisian dan pembungkusan yang dapat disesuaikan ke dokumen Anda.
+## Perkenalan
+
+Bayangkan membuat laporan atau proposal menakjubkan dengan gambar diposisikan secara sempurna untuk melengkapi teks Anda. Dengan Aspose.Words untuk .NET, Anda dapat mencapainya dengan mudah. Pustaka ini menyediakan fitur canggih untuk manipulasi dokumen, menjadikannya solusi tepat bagi pengembang. Dalam tutorial ini, kita akan fokus menyisipkan gambar mengambang menggunakan kelas DocumentBuilder. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan ini akan memandu Anda melalui setiap langkah.
 
 ## Prasyarat
-Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
-- Aspose.Words untuk perpustakaan .NET diinstal pada sistem Anda.
 
-## Langkah 1: Buat Dokumen Baru dan DocumentBuilder
-Untuk memulai, buat dokumen baru menggunakan kelas Dokumen dan inisialisasi objek DocumentBuilder:
+Sebelum kita mendalaminya, pastikan Anda memiliki semua yang dibutuhkan untuk memulai:
+
+1.  Aspose.Words untuk .NET: Anda dapat mengunduh perpustakaan dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
+2. Visual Studio: Versi apa pun yang mendukung pengembangan .NET.
+3. Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C# akan sangat membantu.
+4. File Gambar: File gambar yang ingin Anda sisipkan, seperti logo atau gambar.
+
+## Impor Namespace
+
+Untuk menggunakan Aspose.Words dalam proyek Anda, Anda perlu mengimpor namespace yang diperlukan. Ini dilakukan dengan menambahkan baris berikut di bagian atas file C# Anda:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Dengan prasyarat dan namespace ini, kami siap memulai tutorial kami.
+
+Mari kita uraikan proses memasukkan gambar mengambang ke dalam dokumen Word menjadi langkah-langkah yang dapat dikelola. Setiap langkah akan dijelaskan secara rinci untuk memastikan Anda dapat mengikutinya tanpa hambatan.
+
+## Langkah 1: Siapkan Proyek Anda
+
+Pertama, buat proyek C# baru di Visual Studio. Anda dapat memilih Aplikasi Konsol untuk kesederhanaan.
+
+1. Buka Visual Studio dan buat proyek baru.
+2. Pilih "Aplikasi Konsol (.NET Core)" dan klik "Berikutnya".
+3. Beri nama proyek Anda dan pilih lokasi untuk menyimpannya. Klik "Buat."
+4. Instal Aspose.Words untuk .NET melalui NuGet Package Manager. Klik kanan proyek Anda di Solution Explorer, pilih "Kelola Paket NuGet," dan cari "Apose.Words." Instal versi terbaru.
+
+## Langkah 2: Inisialisasi Dokumen dan DocumentBuilder
+
+Sekarang proyek Anda sudah siap, mari kita inisialisasi objek Document dan DocumentBuilder.
+
+1.  Buat instance baru dari`Document` kelas:
 
 ```csharp
 Document doc = new Document();
+```
+
+2. Inisialisasi objek DocumentBuilder:
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Sisipkan Gambar Mengambang
-Selanjutnya, gunakan metode InsertImage dari kelas DocumentBuilder untuk menyisipkan gambar mengambang. Berikan jalur file gambar, posisi relatif horizontal dan vertikal, lebar, tinggi, dan opsi pembungkusan sebagai parameter:
+ Itu`Document` objek mewakili dokumen Word, dan`DocumentBuilder` membantu dalam menambahkan konten ke dalamnya.
+
+## Langkah 3: Tentukan Jalur Gambar
+
+Selanjutnya, tentukan jalur ke file gambar Anda. Pastikan gambar Anda dapat diakses dari direktori proyek Anda.
+
+Tentukan direktori gambar dan nama file gambar:
 
 ```csharp
-builder.InsertImage(ImagesDir + "Transparent background logo.png",
-	RelativeHorizontalPosition.Margin,
-	100,
-	RelativeVerticalPosition.Margin,
-	100,
-	200,
-	100,
-	WrapType.Square);
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+string imagePath = dataDir + "Transparent background logo.png";
 ```
 
-## Langkah 3: Simpan Dokumen
-Setelah menyisipkan gambar mengambang, simpan dokumen ke file menggunakan metode Simpan dari kelas Dokumen:
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat gambar Anda disimpan.
+
+## Langkah 4: Masukkan Gambar Mengambang
+
+Setelah semuanya siap, mari masukkan gambar mengambang ke dalam dokumen.
+
+ Menggunakan`InsertImage` metode`DocumentBuilder` kelas untuk menyisipkan gambar:
 
 ```csharp
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
+builder.InsertImage(imagePath,
+   RelativeHorizontalPosition.Margin,
+   100,
+   RelativeVerticalPosition.Margin,
+   100,
+   200,
+   100,
+   WrapType.Square);
 ```
 
-## Contoh Kode Sumber untuk Menyisipkan Gambar Mengambang menggunakan Aspose.Words untuk .NET
-Berikut source code lengkap untuk menyisipkan gambar mengambang menggunakan Aspose.Words for .NET:
-Gambar mengambang berguna untuk berbagai skenario, seperti menambahkan logo, ilustrasi, atau elemen dekoratif yang dapat diposisikan secara terpisah dari teks dokumen.
+Berikut arti setiap parameter:
+- `imagePath`Jalur ke file gambar Anda.
+- `RelativeHorizontalPosition.Margin`: Posisi horizontal relatif terhadap margin.
+- `100`: Offset horizontal dari margin (dalam poin).
+- `RelativeVerticalPosition.Margin`: Posisi vertikal relatif terhadap margin.
+- `100`: Offset vertikal dari margin (dalam poin).
+- `200`: Lebar gambar (dalam poin).
+- `100`: Ketinggian gambar (dalam poin).
+- `WrapType.Square`: Gaya pembungkusan teks di sekitar gambar.
+
+## Langkah 5: Simpan Dokumen
+
+Terakhir, simpan dokumen ke lokasi yang Anda inginkan.
+
+1. Tentukan jalur file keluaran:
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertImage(ImagesDir + "Transparent background logo.png",
-	RelativeHorizontalPosition.Margin,
-	100,
-	RelativeVerticalPosition.Margin,
-	100,
-	200,
-	100,
-	WrapType.Square);
-
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
+string outputPath = dataDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx";
 ```
 
-Ingatlah untuk menyesuaikan kode sesuai dengan kebutuhan spesifik Anda, termasuk jalur file gambar serta opsi pemosisian dan pembungkusan yang diinginkan.
+2. Simpan dokumen:
+
+```csharp
+doc.Save(outputPath);
+```
+
+Dokumen Word Anda dengan gambar mengambang sekarang siap!
 
 ## Kesimpulan
-Selamat! Anda telah berhasil mempelajari cara menyisipkan gambar mengambang ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, kini Anda dapat menyempurnakan dokumen Anda dengan gambar mengambang yang menarik secara visual dan dapat disesuaikan.
 
-### FAQ untuk menyisipkan gambar mengambang di dokumen Word
+Memasukkan gambar mengambang ke dalam dokumen Word menggunakan Aspose.Words untuk .NET adalah proses yang mudah jika dipecah menjadi beberapa langkah yang dapat dikelola. Dengan mengikuti panduan ini, Anda dapat menambahkan gambar yang terlihat profesional ke dokumen Anda, sehingga meningkatkan daya tarik visualnya. Aspose.Words menyediakan API tangguh yang memudahkan manipulasi dokumen, baik Anda mengerjakan laporan, proposal, atau jenis dokumen lainnya.
 
-#### T: Dapatkah saya menyisipkan beberapa gambar mengambang dalam satu dokumen?
+## FAQ
 
-J: Tentu saja! Anda dapat menyisipkan gambar mengambang sebanyak yang diperlukan dalam dokumen Word menggunakan Aspose.Words untuk .NET. Cukup ulangi proses penyisipan untuk menambahkan beberapa gambar yang menarik secara visual.
+### Bisakah saya menyisipkan banyak gambar menggunakan Aspose.Words untuk .NET?
 
-#### T: Opsi pembungkusan apa yang tersedia untuk gambar mengambang?
+ Ya, Anda dapat menyisipkan banyak gambar dengan mengulanginya`InsertImage` metode untuk setiap gambar dengan parameter yang diinginkan.
 
-J: Aspose.Words untuk .NET menyediakan berbagai opsi pembungkusan untuk gambar mengambang, termasuk Square, Tight, Through, TopBottom, dan None. Opsi ini menentukan bagaimana teks berinteraksi dengan gambar mengambang.
+### Bagaimana cara mengubah posisi gambar?
 
-#### T: Dapatkah saya menyesuaikan ukuran gambar mengambang?
+ Anda dapat menyesuaikannya`RelativeHorizontalPosition`, `RelativeVerticalPosition`, dan parameter offset untuk memposisikan gambar sesuai kebutuhan.
 
-J: Tentu saja! Anda dapat menentukan lebar dan tinggi gambar mengambang menggunakan parameter masing-masing dalam metode InsertImage. Ini memungkinkan Anda mengontrol dimensi gambar sesuai dengan preferensi desain Anda.
+### Jenis bungkus apa lagi yang tersedia untuk gambar?
 
-#### T: Dapatkah saya memposisikan gambar mengambang relatif terhadap elemen tertentu dalam dokumen?
+ Aspose.Words mendukung berbagai jenis bungkus seperti`Inline`, `TopBottom`, `Tight`, `Through`, dan banyak lagi. Anda dapat memilih salah satu yang paling sesuai dengan tata letak dokumen Anda.
 
-J: Ya, Aspose.Words untuk .NET memungkinkan Anda memposisikan gambar mengambang relatif terhadap elemen tertentu, seperti margin, halaman, paragraf, atau tabel. Anda dapat memilih parameter posisi relatif horizontal dan vertikal yang sesuai untuk mencapai penempatan yang diinginkan.
+### Bisakah saya menggunakan format gambar yang berbeda?
 
-#### T: Apakah Aspose.Words untuk .NET cocok untuk aplikasi desktop dan web?
+Ya, Aspose.Words mendukung berbagai format gambar termasuk JPEG, PNG, BMP, dan GIF.
 
-J: Ya, Aspose.Words for .NET adalah perpustakaan serbaguna yang cocok untuk aplikasi desktop dan web. Baik Anda sedang membangun aplikasi Windows atau sistem berbasis web, Anda dapat mengintegrasikan perpustakaan dengan mudah.
+### Bagaimana cara mendapatkan uji coba gratis Aspose.Words untuk .NET?
+
+ Anda bisa mendapatkan uji coba gratis dari[Asumsikan halaman uji coba gratis](https://releases.aspose.com/).

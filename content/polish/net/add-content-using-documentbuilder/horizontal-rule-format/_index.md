@@ -2,93 +2,98 @@
 title: Format linii poziomej w dokumencie programu Word
 linktitle: Format linii poziomej w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak formatować linie poziome w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Przewodnik krok po kroku.
+description: Dowiedz się, jak wstawiać konfigurowalne linie poziome w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Zwiększ automatyzację dokumentów.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
-tym kompleksowym przykładzie dowiesz się, jak sformatować linię poziomą w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Pod koniec tego przewodnika będziesz mógł dostosować wyrównanie, szerokość, wysokość, kolor i inne właściwości linii poziomej.
+## Wstęp
+
+W środowisku programowania .NET programowe manipulowanie i formatowanie dokumentów programu Word może być trudnym zadaniem. Na szczęście Aspose.Words dla .NET zapewnia solidne rozwiązanie, umożliwiające programistom łatwą automatyzację tworzenia, edytowania i zarządzania dokumentami. W tym artykule omówiono jedną z podstawowych funkcji: wstawianie poziomych linii do dokumentów programu Word. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz z Aspose.Words, opanowanie tej możliwości usprawni proces generowania dokumentów.
 
 ## Warunki wstępne
-Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim systemie.
 
-## Krok 1: Utwórz narzędzie DocumentBuilder i wstaw linię poziomą
-Na początek utwórz obiekt DocumentBuilder i użyj metody InsertHorizontalRule, aby wstawić linię poziomą:
+Zanim zaczniesz wdrażać reguły horyzontalne przy użyciu Aspose.Words dla .NET, upewnij się, że spełniasz następujące wymagania wstępne:
+
+- Visual Studio: Zainstaluj Visual Studio IDE do programowania .NET.
+- Aspose.Words dla .NET: Pobierz i zainstaluj Aspose.Words dla .NET z[Tutaj](https://releases.aspose.com/words/net/).
+- Podstawowa znajomość języka C#: Znajomość podstaw języka programowania C#.
+-  Klasa DocumentBuilder: Zrozumienie`DocumentBuilder` klasa w Aspose.Words do manipulacji dokumentami.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, zaimportuj niezbędne przestrzenie nazw do swojego projektu C#:
 
 ```csharp
+using Aspose.Words;
+using System.Drawing;
+```
+
+Te przestrzenie nazw zapewniają dostęp do klas Aspose.Words do manipulowania dokumentami i standardowych klas .NET do obsługi kolorów.
+
+Podzielmy proces dodawania linii poziomej w dokumencie programu Word za pomocą Aspose.Words dla .NET na kompleksowe kroki:
+
+## Krok 1: Zainicjuj DocumentBuilder i ustaw katalog
+
+ Najpierw zainicjuj a`DocumentBuilder` obiekt i ustaw ścieżkę katalogu, w którym dokument zostanie zapisany.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 DocumentBuilder builder = new DocumentBuilder();
+```
+
+## Krok 2: Wstaw linię poziomą
+
+ Użyj`InsertHorizontalRule()` metoda`DocumentBuilder` class, aby dodać linię poziomą.
+
+```csharp
 Shape shape = builder.InsertHorizontalRule();
 ```
 
-## Krok 2: Uzyskaj dostęp do formatu linii poziomej
-Następnie uzyskaj dostęp do właściwości HorizontalRuleFormat obiektu Shape, aby pobrać opcje formatowania:
+## Krok 3: Dostosuj format linii poziomej
+
+ Uzyskać dostęp do`HorizontalRuleFormat` właściwość wstawionego kształtu, aby dostosować wygląd linii poziomej.
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-```
-
-## Krok 3: Dostosuj opcje formatowania
-Teraz możesz dostosować różne opcje formatowania linii poziomej. Można na przykład dostosować wyrównanie, szerokość, wysokość, kolor i cieniowanie:
-
-```csharp
 horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
 horizontalRuleFormat.WidthPercent = 70;
 horizontalRuleFormat.Height = 3;
 horizontalRuleFormat.Color = Color.Blue;
 horizontalRuleFormat.NoShade = true;
 ```
+
+- Wyrównanie: Określa wyrównanie linii poziomej (`HorizontalRuleAlignment.Center` w tym przykładzie).
+- SzerokośćPercent: Ustawia szerokość linii poziomej jako procent szerokości strony (w tym przykładzie 70%).
+- Wysokość: Określa wysokość linii poziomej w punktach (w tym przykładzie 3 punkty).
+- Kolor: Ustawia kolor linii poziomej (`Color.Blue` w tym przykładzie).
+- NoShade: Określa, czy linia pozioma powinna mieć cień (`true` w tym przykładzie).
 
 ## Krok 4: Zapisz dokument
-Po sformatowaniu linii poziomej zapisz dokument do pliku korzystając z metody Save obiektu Document:
+
+ Na koniec zapisz zmodyfikowany dokument za pomocą pliku`Save` metoda`Document` obiekt.
 
 ```csharp
-builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
+builder.Document.Save(dataDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
-
-### Przykładowy kod źródłowy dla formatu reguły poziomej przy użyciu Aspose.Words dla .NET
-Oto kompletny kod źródłowy do formatowania linii poziomej przy użyciu Aspose.Words dla .NET:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder();
-
-Shape shape = builder.InsertHorizontalRule();
-
-HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
-horizontalRuleFormat.WidthPercent = 70;
-horizontalRuleFormat.Height = 3;
-horizontalRuleFormat.Color = Color.Blue;
-horizontalRuleFormat.NoShade = true;
-
-builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
-```
-
-Pamiętaj, aby dostosować kod do swoich konkretnych wymagań i w razie potrzeby wzbogacić go o dodatkowe funkcjonalności.
 
 ## Wniosek
-Gratulacje! Pomyślnie nauczyłeś się formatować linię poziomą w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz teraz dostosować wygląd linii poziomych, aby poprawić układ wizualny dokumentu.
 
-Eksperymentuj z różnymi opcjami formatowania, aby uzyskać pożądany styl i efekt linii poziomych.
+Opanowanie wstawiania linii poziomych w dokumentach Word przy użyciu Aspose.Words dla .NET zwiększa możliwości automatyzacji dokumentów. Wykorzystując elastyczność i możliwości Aspose.Words, programiści mogą efektywnie usprawnić procesy generowania i formatowania dokumentów.
 
-### Często zadawane pytania dotyczące formatu linii poziomej w dokumencie programu Word
+## Często zadawane pytania
 
-#### P: Czy mogę zastosować różne kolory do linii poziomej?
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do programowej pracy z dokumentami Word w aplikacjach .NET.
 
-Odp.: Absolutnie! Dzięki Aspose.Words dla .NET możesz łatwo dostosować kolor linii poziomej, ustawiając właściwość Color na żądaną wartość koloru. Dzięki temu możesz dopasować linię poziomą do ogólnego projektu dokumentu.
+### Jak mogę pobrać Aspose.Words dla .NET?
+ Możesz pobrać Aspose.Words dla .NET z[Tutaj](https://releases.aspose.com/words/net/).
 
-#### P: Czy można dostosować szerokość i wysokość linii poziomej?
+### Czy mogę dostosować wygląd linii poziomych w Aspose.Words?
+Tak, możesz dostosować różne aspekty, takie jak wyrównanie, szerokość, wysokość, kolor i cieniowanie linii poziomych, używając Aspose.Words.
 
-O: Tak, masz pełną kontrolę nad szerokością i wysokością linii poziomej. Modyfikując właściwości SzerokośćPercent i Wysokość, można uzyskać żądane wymiary linii poziomej.
+### Czy Aspose.Words nadaje się do przetwarzania dokumentów na poziomie przedsiębiorstwa?
+Tak, Aspose.Words jest szeroko stosowany w środowiskach korporacyjnych ze względu na jego niezawodne możliwości manipulowania dokumentami.
 
-#### P: Czy mogę zmienić wyrównanie linii poziomej w dokumencie?
-
-Odp.: Oczywiście! Aspose.Words dla .NET umożliwia określenie wyrównania linii poziomej przy użyciu właściwości Alignment. Możesz wybierać spośród różnych opcji, takich jak Środek, Lewo, Prawo i Wyrównanie.
-
-#### P: Czy mogę zastosować cieniowanie lub kolor tła do linii poziomej?
-
-Odp.: Tak, możesz dodać cieniowanie lub kolor tła do linii poziomej. Domyślnie właściwość NoShade jest ustawiona na true, ale można ustawić ją na false i zdefiniować cieniowanie przy użyciu odpowiednich metod.
-
-#### P: Czy mogę wstawić wiele linii poziomych w jednym dokumencie?
-
-Odp.: Absolutnie! Możesz wstawić wiele poziomych linii w dokumencie programu Word za pomocą Aspose.Words dla .NET. W razie potrzeby po prostu powtórz kroki z samouczka, aby dodać dowolną liczbę linii poziomych.
+### Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words dla .NET?
+ Aby uzyskać wsparcie i zaangażowanie społeczności, odwiedź stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8).

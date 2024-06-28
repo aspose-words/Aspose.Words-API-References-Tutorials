@@ -2,110 +2,113 @@
 title: Word 文書を結合する
 linktitle: ドキュメントを結合する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して複数の Word ドキュメントを結合する方法を学びます。この強力な API により、ドキュメントの結合プロセスが簡素化され、効率的かつ簡単になります。
+description: この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word ドキュメントを結合する方法を学びます。ドキュメントのワークフローを自動化するのに最適です。
 type: docs
 weight: 10
 url: /ja/net/split-document/merge-documents/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET のドキュメントの結合機能を使用して複数の Word ドキュメントを結合する方法を説明します。以下の手順に従ってソース コードを理解し、すべてのソース ドキュメントを含むマージされたドキュメントを取得します。
+ちょっと、そこ！複数の Word 文書を 1 つのまとまったファイルに結合する必要があると感じたことはありませんか?レポートを編集している場合でも、プロジェクトを組み立てている場合でも、単に整理整頓をしている場合でも、ドキュメントを結合すると時間と労力を大幅に節約できます。 Aspose.Words for .NET を使用すると、このプロセスが簡単になります。このチュートリアルでは、Aspose.Words for .NET を使用して Word ドキュメントを結合する方法を、簡単に理解できるように各ステップに分けて説明します。最後には、プロのようにドキュメントを結合できるようになります。
 
-## ステップ 1: 結合するドキュメントを検索する
+## 前提条件
 
-ドキュメントをマージする前に、マージするソース ドキュメントを見つける必要があります。その方法は次のとおりです。
+本題に入る前に、必要なものがすべて揃っていることを確認してください。
+
+1. C# の基本知識: C# の構文と概念に精通している必要があります。
+2.  Aspose.Words for .NET: ダウンロードしてください[ここ](https://releases.aspose.com/words/net/) 。探索するだけの場合は、次から始めることができます。[無料トライアル](https://releases.aspose.com/).
+3. Visual Studio: 最新バージョンであればどれでも動作しますが、最新バージョンをお勧めします。
+4. .NET Framework: システムにインストールされていることを確認してください。
+
+さて、前提条件が整ったので、楽しい部分に移りましょう。
+
+## 名前空間のインポート
+
+まず最初に、Aspose.Words を操作するために必要な名前空間をインポートする必要があります。これにより、必要なすべてのクラスとメソッドにアクセスできるようになります。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-//結合するドキュメントを検索します。
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-.GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.LowCode;
 ```
 
-## ステップ 2: ドキュメントを結合する
+これらの名前空間は、ドキュメントの作成、操作、さまざまな形式での保存に不可欠です。
 
-次に、ドキュメントを 1 つずつ結合して、最終的な結合ドキュメントを作成します。その方法は次のとおりです。
+## ステップ 1: ドキュメント ディレクトリのセットアップ
 
-```csharp
-//作成されたドキュメントの最初の部分を開きます。
-Document sourceDoc = new Document(sourceDocumentPath);
-
-//新しい結果ドキュメントを作成します。
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-//文書を 1 つずつ結合します。
-foreach(FileSystemInfo documentPath in documentPaths)
-{
-if (documentPath.FullName == sourceDocumentPath)
-keep on going;
-
-mergedDocBuilder.MoveToDocumentEnd();
-mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-```
-
-### Aspose.Words for .NET を使用したドキュメントの結合のソース コード例
-
-Aspose.Words for .NET のドキュメントの結合機能の完全なソース コードは次のとおりです。
+ドキュメントの結合を開始する前に、ドキュメントが保存されているディレクトリを指定する必要があります。これは、Aspose.Words がマージするファイルを見つけるのに役立ちます。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-//マージに使用しているドキュメントを検索します。
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
-
-//作成されたドキュメントの最初の部分を開きます。
-Document sourceDoc = new Document(sourceDocumentPath);
-
-//新しい結果ドキュメントを作成します。
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-//ドキュメントのパーツを 1 つずつ結合します。
-foreach (FileSystemInfo documentPath in documentPaths)
-{
-	if (documentPath.FullName == sourceDocumentPath)
-		continue;
-
-	mergedDocBuilder.MoveToDocumentEnd();
-	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-	sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
+
+ここでは、Word ドキュメントが配置されているディレクトリへのパスを設定します。交換する`"YOUR DOCUMENT DIRECTORY"`実際のパスを使用します。
+
+## ステップ 2: 単純なマージ
+
+簡単なマージから始めましょう。を使用して 2 つのドキュメントを 1 つにマージします。`Merger.Merge`方法。
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
+```
+
+このステップでは、マージします`Document1.docx`そして`Document2.docx`という名前の新しいファイルに`MergedDocument.docx`.
+
+## ステップ 3: 保存オプションを使用してマージする
+
+場合によっては、結合されたドキュメントにパスワード保護などの特定のオプションを設定することが必要になる場合があります。その方法は次のとおりです。
+
+```csharp
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" };
+Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
+```
+
+このコード スニペットは、パスワードで保護されたドキュメントを結合し、最終的なドキュメントの安全性を確保します。
+
+## ステップ 4: PDF として結合して保存する
+
+ドキュメントを結合して結果を PDF として保存する必要がある場合、Aspose.Words を使用するとそれが簡単になります。
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
+```
+
+ここでマージします`Document1.docx`そして`Document2.docx`結果を PDF ファイルとして保存します。
+
+## ステップ 5: 結合されたドキュメントからドキュメント インスタンスを作成する
+
+場合によっては、結合したドキュメントを保存する前にさらに作業したい場合があります。作成できます`Document`マージされたドキュメントからのインスタンス:
+
+```csharp
+Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
+doc.Save(dataDir + "MergedDocumentInstance.docx");
+```
+
+このステップでは、`Document`結合されたドキュメントからインスタンスを取得し、保存する前にさらに操作できるようにします。
 
 ## 結論
 
-おめでとう！ Aspose.Words for .NET のドキュメントの結合機能を使用して、複数の Word ドキュメントを結合する方法を学習しました。提供されたソース コードに従うことで、各ソース ドキュメントの書式設定を維持しながら、別々のドキュメントを 1 つの結合ドキュメントに結合できます。
+そして、それができました！ Aspose.Words for .NET を使用して Word ドキュメントを結合する方法を学習しました。このチュートリアルでは、環境の設定、単純な結合の実行、保存オプションを使用した結合、結合されたドキュメントの PDF への変換、結合されたドキュメントからのドキュメント インスタンスの作成について説明しました。 Aspose.Words は幅広い機能を提供するため、必ず調べてください。[APIドキュメント](https://reference.aspose.com/words/net/)その可能性を最大限に引き出すために。
 
-ドキュメントの結合は、複数のソースからの情報を統合する場合、または個々の部分から統合されたドキュメントを作成する場合に便利です。 Aspose.Words for .NET は、ドキュメントの結合プロセスを簡素化し、効率的かつ簡単にする強力な API を提供します。
+## よくある質問
 
-Aspose.Words for .NET が提供する他の機能を自由に探索して、ドキュメント処理機能を強化し、ワークフローを合理化してください。
+### 1. Aspose.Words for .NET とは何ですか?
 
-### よくある質問
+Aspose.Words for .NET は、開発者が Word ドキュメントをプログラムで作成、操作、変換できるようにする強力なライブラリです。ドキュメント関連のタスクを自動化するのに最適です。
 
-#### 異なる書式のドキュメントを結合するにはどうすればよいですか?
+### 2. Aspose.Words for .NET は無料で使用できますか?
 
-ドキュメントを結合する場合、Aspose.Words for .NET には、各ソース ドキュメントの書式設定を保持するオプションが用意されています。を使用することで、`ImportFormatMode.KeepSourceFormatting`オプションを選択すると、結合されたドキュメントは元のドキュメントの書式設定を保持します。結合されたドキュメント全体に一貫した書式設定を適用する場合は、ドキュメントの結合後に Aspose.Words API を使用して書式設定を変更できます。
+ Aspose.Words for .NET を試すことができます。[無料トライアル](https://releases.aspose.com/)。長期間使用するには、ライセンスを購入する必要があります。
 
-#### 異なる形式のドキュメントを結合できますか?
+### 3. 結合中にさまざまなフォーマットを処理するにはどうすればよいですか?
 
-はい、Aspose.Words for .NET は、DOCX、DOC、RTF などのさまざまな形式のドキュメントの結合をサポートしています。さまざまな形式のドキュメントを Aspose.Words API にロードし、元の形式に関係なく、それらを 1 つのドキュメントに結合できます。
+ Aspose.Words は、次のようなさまざまな結合形式モードを提供します。`KeepSourceFormatting`そして`MergeFormatting` 。を参照してください。[APIドキュメント](https://reference.aspose.com/words/net/)詳細な手順については、
 
-#### 表や画像などの複雑な構造を持つドキュメントを結合できますか?
+### 4. Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
 
-絶対に！ Aspose.Words for .NET は、テーブル、画像、ヘッダー、フッターなどを含む複雑な構造を持つドキュメントを結合できます。 API は、各ドキュメント内のコンテンツの整合性とレイアウトを維持しながら、結合プロセスを処理します。
+にアクセスしてサポートを受けることができます。[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8).
 
-#### ページの向きやサイズが異なる文書を結合することはできますか?
+### 5. 他のファイル形式を Aspose.Words for .NET とマージできますか?
 
-はい、Aspose.Words for .NET は、結合プロセス中にページの向きやサイズが異なるドキュメントを処理します。結合されたドキュメントは、ソース ドキュメントのさまざまなページの向きとサイズに対応します。
+はい、Aspose.Words は、DOCX、PDF、HTML などのさまざまなファイル形式の結合をサポートしています。

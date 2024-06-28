@@ -89,4 +89,4 @@ doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 
 ## Çözüm
 
-Bu kılavuzda, bir belgeyi kaydederken "Küçük Meta Dosyaları Sıkıştırma" özelliğini etkinleştirmek için .NET için Aspose.Words kütüphanesinin nasıl kullanılacağını anlattık. Verilen adımları takip ederek ve verilen C# kaynak kodunu kullanarak bu işlevselliği C# uygulamanıza kolayca uygulayabilirsiniz. Sıkıştırılmamış küçük dosya meta verilerinin korunması, belge kalitesinin ve bütünlüğünün korunması açısından önemli olabilir.
+Bu kılavuzda, bir belgeyi kaydederken "Küçük Meta Dosyalarını Sıkıştırma" özelliğini etkinleştirmek için .NET için Aspose.Words kütüphanesinin nasıl kullanılacağını anlattık. Verilen adımları takip ederek ve verilen C# kaynak kodunu kullanarak bu işlevselliği C# uygulamanıza kolayca uygulayabilirsiniz. Sıkıştırılmamış küçük dosya meta verilerinin korunması, belge kalitesinin ve bütünlüğünün korunması açısından önemli olabilir.

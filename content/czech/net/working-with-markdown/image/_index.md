@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-markdown/image/
 ---
 
-V tomto příkladu vysvětlíme, jak používat funkci obrázku s Aspose.Words pro .NET. Obrázky umožňují vkládat do dokumentu ilustrace a grafiku.
+tomto příkladu vysvětlíme, jak používat funkci obrázku s Aspose.Words pro .NET. Obrázky umožňují vkládat do dokumentu ilustrace a grafiku.
 
 ## Krok 1: Použití generátoru dokumentů
 
@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Vložení obrázku
 
- Můžeme vložit obrázek pomocí`Shape` třídu a specifikaci typu obrázku zde`ShapeType.Image` Nastavíme také typ obtékání obrázku na`WrapType.Inline`.
+ Můžeme vložit obrázek pomocí`Shape` třídu a specifikaci typu obrázku zde`ShapeType.Image` . Nastavíme také typ obtékání obrázku na`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ gratuluji! Nyní jste se naučili používat funkci obrázků s Aspose.Words pro
 
 #### Otázka: Mohu vložit obrázek z adresy URL do Aspose.Words?
 
- Odpověď: Ano, do Aspose.Words můžete vložit obrázek z adresy URL. Můžete použít totéž`InsertImage` a místo cesty k místnímu souboru zadejte adresu URL obrázku.
+ Odpověď: Ano, do Aspose.Words můžete vložit obrázek z adresy URL. Můžete použít totéž`InsertImage` místo cesty k místnímu souboru zadejte adresu URL obrázku.
 
 #### Otázka: Jak mohu změnit velikost obrázku v Aspose.Words?
 
@@ -69,7 +69,7 @@ gratuluji! Nyní jste se naučili používat funkci obrázků s Aspose.Words pro
 
 #### Otázka: Mohu použít filtry na obrázky v Aspose.Words?
 
-Odpověď: Ano, můžete použít filtry na obrázky v Aspose.Words. Můžete například použít filtr rozostření na obrázek pomocí`ApplyGaussianBlur` metoda`Shape` objekt.
+ Odpověď: Ano, můžete použít filtry na obrázky v Aspose.Words. Můžete například použít filtr rozostření na obrázek pomocí`ApplyGaussianBlur` metoda`Shape` objekt.
 
 #### Otázka: Jak mohu v Aspose.Words nahradit jeden obrázek jiným?
 

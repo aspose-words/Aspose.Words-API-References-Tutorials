@@ -2,86 +2,97 @@
 title: Yazı Tipi Ayarları Varsayılan Örnek
 linktitle: Yazı Tipi Ayarları Varsayılan Örnek
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde varsayılan yazı tipi ayarlarının nasıl yapılandırılacağını öğrenin.
+description: Adım adım kılavuzumuzla Aspose.Words for .NET'te yazı tipi ayarlarını nasıl yöneteceğinizi ve özelleştireceğinizi öğrenin. Belge oluşturmayı geliştirmek isteyen geliştiriciler için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/font-settings-default-instance/
 ---
 
-Bu eğitimde, .NET için Aspose.Words kütüphanesini kullanarak bir Word belgesinde varsayılan yazı tipi ayarlarını nasıl yapılandıracağınız konusunda size yol göstereceğiz. Varsayılan yazı tipi ayarları, belgeleri yüklerken ve görüntülerken kullanılan yazı tipi kaynaklarını belirtmenize olanak tanır. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
+Aspose.Words for .NET kullanarak yazı tipi ayarlarını yönetmeye ilişkin bu ayrıntılı eğitime hoş geldiniz. Belgelerinizde yazı tipi kullanımıyla ilgili zorluklarla karşılaştıysanız bu kılavuz, yazı tiplerini etkili bir şekilde özelleştirmek ve yönetmek için bilmeniz gereken her şeyi size anlatacaktır. Hadi dalalım!
 
 ## Önkoşullar
-Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
-- C# programlama dili hakkında çalışma bilgisi
-- .NET için Aspose.Words kütüphanesi projenizde yüklü
 
-## 1. Adım: Belge dizinini tanımlayın
- Öncelikle, Word belgenizin konumuna giden dizin yolunu ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+
+- Temel C# Bilgisi: C# programlamaya aşinalık, adımları anlamanıza ve sorunsuz bir şekilde uygulamanıza yardımcı olacaktır.
+-  Aspose.Words for .NET Kütüphanesi: Aspose.Words for .NET'i şu adresten indirip yükleyin:[İndirme: {link](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Kodunuzu yazmak ve yürütmek için Visual Studio gibi uygun bir ortam.
+-  Örnek Belge: Örnek bir belge (örn.`Rendering.docx`) yazı tipi ayarlarını uygulamak için.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words'ü kullanmaya başlamak için gerekli ad alanlarını projenize aktarmanız gerekir. Bu, Aspose.Words tarafından sağlanan tüm sınıflara ve yöntemlere erişmenizi sağlar.
 
 ```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Adım 2: Varsayılan Yazı Tipi Ayarlarını Yapılandırın
- Daha sonra, şunun bir örneğini oluşturacağız:`FontSettings` kullanarak`FontSettings.DefaultInstance`, ardından belgeleri yüklerken ve işlerken kullanılan yazı tipi kaynaklarını belirteceğiz. Bu örnekte bir sistem yazı tipi kaynağı ve bir klasör yazı tipi kaynağı kullanıyoruz.
+## Adım 1: Belge Dizinini Tanımlayın
+
+Öncelikle belgenizin saklandığı dizini belirtmeniz gerekir. Bu, çalışmak istediğiniz belgeyi bulmanıza yardımcı olur.
 
 ```csharp
-// Varsayılan yazı tipi ayarlarını yapılandırın
-FontSettings fontSettings = FontSettings.DefaultInstance;
-fontSettings.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(),
-new FolderFontSource("C:\\MyFonts\\", true)
-});
-```
-
-## 3. Adım: Yazı tipi ayarlarını içeren belgeyi yükleyin
- Şimdi belgeyi kullanarak yükleyeceğiz`LoadOptions` ve kullanılacak yazı tipi ayarlarını belirtme.
-
-```csharp
-// Belgeyi yazı tipi ayarlarıyla yükleyin
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-```
-
-
-### Aspose.Words for .NET kullanan Yazı Tipi Ayarları Varsayılan Örneği için örnek kaynak kodu 
-```csharp
-
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = FontSettings.DefaultInstance;
-fontSettings.SetFontsSources(new FontSourceBase[]
-{
-	new SystemFontSource(),
-	new FolderFontSource("C:\\MyFonts\\", true)
-});
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+## Adım 2: Yazı Tipi Kaynaklarını Ayarlayın
+
+Daha sonra yazı tipi kaynaklarını yapılandıracaksınız. Bu adım, Aspose.Words'e belgeyi oluşturmak için ihtiyaç duyduğu yazı tiplerini nerede bulacağını bildirdiği için çok önemlidir.
+
+```csharp
+FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
+{
+    new SystemFontSource(),
+    new FolderFontSource("C:\\MyFonts\\", true)
+});
+```
+
+Bu örnekte:
+- `SystemFontSource` sistemin varsayılan yazı tiplerini temsil eder.
+- `FolderFontSource` özel bir klasöre işaret eder (`C:\\MyFonts\\` ) ek yazı tiplerinin depolandığı yer.`true` parametresi bu klasörün yinelemeli olarak taranması gerektiğini belirtir.
+
+## 3. Adım: Belgeyi Yükleyin
+
+Yazı tipi kaynaklarınız yapılandırıldıktan sonraki adım, belgenizi Aspose.Words'e yüklemektir.`Document` nesne. Bu, belgeyi değiştirmenize ve sonunda kaydetmenize olanak tanır.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Adım 4: Belgeyi Kaydedin
+
+Son olarak yazı tipi ayarlarını uyguladıktan sonra belgeyi kaydedin. Bu çeşitli formatlarda yapılabilir, ancak bu eğitim için bunu PDF olarak kaydedeceğiz.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
+```
+
+Bu adımları izleyerek özel yazı tipi ayarlarını başarıyla yapılandırdınız ve belgeyi bu ayarlar uygulanarak kaydettiniz.
+
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET ile bir Word belgesinde varsayılan yazı tipi ayarlarının nasıl yapılandırılacağını gördük. Belgeleri yüklerken ve oluştururken kullanılan yazı tipi kaynaklarını belirterek, yazı tiplerinin belgelerinizdeki görünümünü kontrol edebilirsiniz. Projelerinizdeki yazı tipi ayarlarını özelleştirmek için bu özelliği kullanmaktan çekinmeyin.
 
-### SSS'ler
+Tebrikler! Aspose.Words for .NET'i kullanarak yazı tipi ayarlarını yönetmenin temellerini öğrendiniz. İster basit bir proje üzerinde ister karmaşık bir belge işleme sistemi üzerinde çalışıyor olun, bu beceriler belgelerinizin tam istediğiniz gibi görünmesini sağlamanıza yardımcı olacaktır. Aspose.Words'ün sağladığı esnekliğin çok çeşitli özelleştirmelere olanak tanıdığını unutmayın; bu nedenle farklı ayarları keşfetmekten ve denemekten çekinmeyin.
 
-#### S: Aspose.Words'te varsayılan yazı tipini nasıl ayarlayabilirim?
+## SSS
 
- C: Aspose.Words'te varsayılan yazı tipini ayarlamak için`FontSettings` sınıf ve`DefaultFontName` İstenilen yazı tipinin adını belirten özellik.
+### S1: Birden fazla özel klasördeki yazı tiplerini kullanabilir miyim?
 
-#### S: Aspose.Words'te varsayılan yazı tipi boyutunu belirtebilir miyim?
+ Evet, birden fazla belirtebilirsiniz`FolderFontSource`içindeki örnekler`SetFontsSources` farklı klasörlerdeki yazı tiplerini ekleme yöntemini kullanın.
 
- C: Evet, Aspose.Words'te varsayılan yazı tipi boyutunu aşağıdaki komutu kullanarak belirtebilirsiniz:`DefaultFontSize` mülkiyeti`FontSettings` sınıf. İstediğiniz nokta boyutunu ayarlayabilirsiniz.
+### S2: Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?
 
-#### S: Aspose.Words'te varsayılan yazı tipi rengini ayarlamak mümkün mü?
+ Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Ücretsiz deneme sayfasını aspose](https://releases.aspose.com/).
 
- C: Evet, Aspose.Words'te varsayılan yazı tipi rengini aşağıdaki komutu kullanarak ayarlayabilirsiniz:`DefaultColor` mülkiyeti`FontSettings` sınıf. Rengi RGB değerlerini veya önceden tanımlanmış adları kullanarak belirleyebilirsiniz.
+### S3: Yazı tiplerini doğrudan belgeye gömmek mümkün mü?
 
-#### S: Varsayılan yazı tipi ayarları tüm belgelere uygulanır mı?
+Aspose.Words, PDF gibi bazı formatlardaki yazı tiplerinin gömülmesine olanak tanır. Yazı tiplerini gömmeyle ilgili daha fazla ayrıntı için belgelere bakın.
 
-C: Evet, varsayılan yazı tipi ayarları, tek bir belge için belirli ayarlar yapılmadığı sürece Aspose.Words'te oluşturulan veya düzenlenen tüm belgelere uygulanır.
+### S4: Aspose.Words için nereden destek alabilirim?
+
+ Destek için şu adresi ziyaret edin:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).
+
+### S5: Geçici bir lisans satın alabilir miyim?
+
+ Evet, geçici lisans alabilirsiniz.[geçici lisans sayfası](https://purchase.aspose.com/temporary-license/).

@@ -31,7 +31,7 @@ Jakmile je dokument vytvořen, můžete přistupovat ke stylům dokumentu a měn
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-tomto příkladu používáme vlastnost Styles třídy Document pro přístup ke stylům dokumentu. Dále použijeme identifikátor stylu StyleIdentifier.Toc1 pro přístup ke stylu použitému pro první úroveň obsahu. Nakonec upravíme vlastnost Font.Bold stylu tak, aby byl tučný.
+V tomto příkladu používáme vlastnost Styles třídy Document pro přístup ke stylům dokumentu. Dále použijeme identifikátor stylu StyleIdentifier.Toc1 pro přístup ke stylu použitému pro první úroveň obsahu. Nakonec upravíme vlastnost Font.Bold stylu tak, aby byl tučný.
 
 ## Uložte upravený dokument
 
@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Závěr
 
-této příručce jsme vysvětlili, jak používat Aspose.Words pro .NET ke změně stylu úrovně obsahu dokumentu aplikace Word pomocí poskytnutého zdrojového kódu C#. Podle uvedených kroků můžete snadno přizpůsobit styl obsahu v dokumentech aplikace Word v aplikaci C#. Aspose.Words nabízí obrovskou flexibilitu a výkon pro práci se styly a formátováním vašich dokumentů, což vám umožňuje vytvářet atraktivní a profesionální dokumenty Word.
+V této příručce jsme vysvětlili, jak používat Aspose.Words pro .NET ke změně stylu úrovně obsahu dokumentu aplikace Word pomocí poskytnutého zdrojového kódu C#. Podle uvedených kroků můžete snadno přizpůsobit styl obsahu v dokumentech aplikace Word v aplikaci C#. Aspose.Words nabízí obrovskou flexibilitu a výkon pro práci se styly a formátováním vašich dokumentů, což vám umožňuje vytvářet atraktivní a profesionální dokumenty Word.
 
 ### Časté dotazy pro změnu stylu obsahu v dokumentu aplikace Word
 
@@ -75,7 +75,7 @@ A: Aspose.Words for .NET je výkonná knihovna navržená pro zpracování textu
 
 #### Otázka: Jak vytvořím nový dokument aplikace Word pomocí Aspose.Words for .NET?
 
- A: Chcete-li vytvořit nový dokument aplikace Word pomocí Aspose.Words for .NET, můžete použít`Document` třída a její konstruktér. Inicializací nové instance`Document` třídy, můžete vytvořit prázdný dokument. Zde je příklad:
+ A: Chcete-li vytvořit nový dokument aplikace Word pomocí Aspose.Words for .NET, můžete použít`Document` třída a její konstruktor. Inicializací nové instance souboru`Document` třídy, můžete vytvořit prázdný dokument. Zde je příklad:
 
 ```csharp
 Document doc = new Document();

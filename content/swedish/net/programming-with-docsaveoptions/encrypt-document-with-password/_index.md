@@ -83,4 +83,4 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 ## Slutsats
 
-I den här guiden förklarade vi hur man använder Aspose.Words-biblioteket för .NET för att kryptera ett dokument med ett lösenord med hjälp av DocSaveOptions-sparalternativen. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Att kryptera dokumentet med ett lösenord garanterar dess konfidentialitet och säkerhet vid hanteringen.
+I den här guiden förklarade vi hur man använder Aspose.Words-biblioteket för .NET för att kryptera ett dokument med ett lösenord med hjälp av DocSaveOptions-sparalternativen. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa denna funktion i din C#-applikation. Att kryptera dokumentet med ett lösenord garanterar dess konfidentialitet och säkerhet vid hanteringen.

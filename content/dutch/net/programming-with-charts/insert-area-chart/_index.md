@@ -17,7 +17,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 - Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
 - Een documentmappad waar het uitvoerdocument wordt opgeslagen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Stap 2: Maak een nieuw document en voeg een diagram in.
 
  Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
 
@@ -98,7 +98,7 @@ Door Aspose.Words voor .NET te gebruiken, kunt u het proces van het genereren va
 Aspose.Words voor .NET is een krachtige bibliotheek voor documentverwerking waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en converteren in .NET-toepassingen. Het biedt een uitgebreide set API's voor tekstverwerking met documentelementen, waaronder diagrammen, alinea's, tabellen en meer.
 
 #### Vraag 2. Hoe installeer ik Aspose.Words voor .NET?
-Om Aspose.Words voor .NET te installeren, kunt u de NuGet-pakketbeheerder in Visual Studio gebruiken om de bibliotheek rechtstreeks in uw project te installeren. Zoek eenvoudigweg naar "Aspose.Words" in de NuGet-pakketbeheerder en installeer het pakket.
+Om Aspose.Words voor .NET te installeren, kunt u de NuGet-pakketbeheerder in Visual Studio gebruiken om de bibliotheek rechtstreeks in uw project te installeren. Zoek eenvoudigweg naar "Apose.Words" in de NuGet-pakketbeheerder en installeer het pakket.
 
 #### Q3. Kan ik het uiterlijk van het vlakdiagram aanpassen?
 Ja, met Aspose.Words voor .NET kunt u verschillende aspecten van de weergave van het vlakdiagram aanpassen. U kunt eigenschappen wijzigen, zoals de diagramtitel, reekskleur, aslabels en de opmaak van het diagramgebied. De bibliotheek biedt een uitgebreide set API's om de visuele elementen van het diagram te beheren en een aangepast uiterlijk te creëren dat aan uw behoeften voldoet.

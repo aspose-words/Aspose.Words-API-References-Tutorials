@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## 3. Adım: Meta dosyası oluşturma seçeneklerini yapılandırma
 
- WMF yazı tipi ölçeklendirmesini meta dosya boyutuna göre etkinleştirmek veya devre dışı bırakmak için,`MetafileRenderingOptions`nesne. Bu örnekte, yazı tipi ölçeklendirmeyi ayarlayarak devre dışı bırakıyoruz.`ScaleWmfFontsToMetafileSize`mülkiyet`false`.
+ WMF yazı tipi ölçeklendirmesini meta dosya boyutuna göre etkinleştirmek veya devre dışı bırakmak için,`MetafileRenderingOptions` nesne. Bu örnekte, yazı tipi ölçeklendirmeyi ayarlayarak devre dışı bırakıyoruz.`ScaleWmfFontsToMetafileSize`mülkiyet`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ Aspose.Words for .NET kullanan bir PDF belgesi.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Aspose.Words bazı meta dosyası kayıtlarını vektör grafiklerine doğru şekilde işleyemiyorsa
+	//Aspose.Words bazı meta dosyası kayıtlarını vektör grafiklerine doğru şekilde işleyemiyorsa
 	// daha sonra Aspose.Words bu meta dosyasını bir bitmap'e dönüştürür.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

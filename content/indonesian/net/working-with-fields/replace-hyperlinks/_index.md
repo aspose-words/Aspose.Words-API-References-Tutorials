@@ -2,106 +2,95 @@
 title: Ganti Hyperlink
 linktitle: Ganti Hyperlink
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Ganti hyperlink di dokumen Word menggunakan Aspose.Words untuk .NET. Petunjuk langkah demi langkah untuk mengganti hyperlink.
+description: Pelajari cara mengganti hyperlink di dokumen .NET menggunakan Aspose.Words untuk manajemen dokumen yang efisien dan pembaruan konten dinamis.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/replace-hyperlinks/
 ---
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# berikut untuk menggantikan hyperlink menggunakan Aspose.Words untuk fungsionalitas .NET. Pastikan Anda telah menyertakan perpustakaan Aspose.Words di proyek Anda sebelum menggunakan kode ini.
+## Perkenalan
 
-## Langkah 1: Tetapkan jalur direktori dokumen
+Dalam dunia pengembangan .NET, mengelola dan memanipulasi dokumen adalah tugas penting, yang sering kali memerlukan penanganan hyperlink dalam dokumen secara efisien. Aspose.Words untuk .NET memberikan kemampuan canggih untuk mengganti hyperlink dengan lancar, memastikan dokumen Anda tertaut secara dinamis ke sumber daya yang tepat. Tutorial ini mendalami bagaimana Anda dapat mencapai hal ini menggunakan Aspose.Words untuk .NET, memandu Anda langkah demi langkah melalui proses tersebut.
+
+## Prasyarat
+
+Sebelum mulai mengganti hyperlink dengan Aspose.Words untuk .NET, pastikan Anda memiliki hal berikut:
+
+- Visual Studio: Diinstal dan disiapkan untuk pengembangan .NET.
+-  Aspose.Words untuk .NET: Diunduh dan direferensikan dalam proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Keakraban dengan C#: Pemahaman dasar untuk menulis dan mengkompilasi kode.
+
+## Impor Namespace
+
+Pertama, pastikan untuk menyertakan namespace yang diperlukan dalam proyek Anda:
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- Pastikan untuk menentukan jalur yang benar ke direktori dokumen Anda yang berisi`Hyperlinks.docx` mengajukan.
+## Langkah 1: Muat Dokumen
 
-## Langkah 2: Muat dokumen yang berisi hyperlink
+Mulailah dengan memuat dokumen tempat Anda ingin mengganti hyperlink:
 
 ```csharp
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- Di sini kita membuat sebuah instance dari`Document` kelas dari file yang ditentukan.
+ Mengganti`"Hyperlinks.docx"` dengan jalur ke dokumen Anda yang sebenarnya.
 
-## Langkah 3: Telusuri bidang untuk menemukan hyperlink
+## Langkah 2: Iterasi Melalui Bidang
+
+Ulangi setiap bidang dalam dokumen untuk menemukan dan mengganti hyperlink:
 
 ```csharp
-foreach(Field field in doc.Range.Fields)
+foreach (Field field in doc.Range.Fields)
 {
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
-
-         // Beberapa hyperlink mungkin bersifat lokal (link ke bookmark di dalam dokumen), kami mengabaikannya.
-         if (hyperlink.SubAddress != null)
-             keep on going;
-
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
+    if (field.Type == FieldType.FieldHyperlink)
+    {
+        FieldHyperlink hyperlink = (FieldHyperlink)field;
+        
+        // Periksa apakah hyperlink tersebut bukan tautan lokal (abaikan bookmark).
+        if (hyperlink.SubAddress != null)
+            continue;
+        
+        // Ganti alamat hyperlink dan hasilnya.
+        hyperlink.Address = "http://www.aspose.com";
+        hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
+    }
 }
 ```
 
- Perulangan ini melewati semua bidang dalam dokumen untuk mencari bidang tipe`FieldType.FieldHyperlink` . Setelah bidang jenis ini ditemukan, kami memeriksa apakah itu adalah tautan lokal dengan mencentang`SubAddress` Properti. Jika tidak, kami mengganti alamat tautannya dengan`"http://www.aspose.com"` dan hasilnya dengan`"Aspose - The .NET & Java Component Editor"`.
+## Langkah 3: Simpan Dokumen
 
-## Langkah 4: Simpan dokumen yang dimodifikasi
+Terakhir, simpan dokumen yang dimodifikasi dengan hyperlink yang diganti:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-Terakhir, kami menyimpan dokumen yang dimodifikasi dengan hyperlink yang diganti ke file tertentu.
+ Mengganti`"WorkingWithFields.ReplaceHyperlinks.docx"` dengan jalur file keluaran yang Anda inginkan.
 
-### Contoh kode sumber untuk menggantikan hyperlink dengan Aspose.Words untuk .NET
+## Kesimpulan
 
-```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+Mengganti hyperlink dalam dokumen menggunakan Aspose.Words untuk .NET sangatlah mudah dan meningkatkan sifat dinamis dokumen Anda. Baik memperbarui URL atau mengubah konten dokumen secara terprogram, Aspose.Words menyederhanakan tugas-tugas ini, memastikan manajemen dokumen yang efisien.
 
-Document doc = new Document(dataDir + "Hyperlinks.docx");
+## Pertanyaan yang Sering Diajukan (FAQ)
 
-foreach(Field field in doc.Range.Fields)
-{
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
+### Bisakah Aspose.Words for .NET menangani struktur dokumen yang kompleks?
+Ya, Aspose.Words mendukung struktur kompleks seperti tabel, gambar, dan hyperlink dengan lancar.
 
-         // Beberapa hyperlink mungkin bersifat lokal (link ke bookmark di dalam dokumen), kami mengabaikannya.
-         if (hyperlink.SubAddress != null)
-             keep on going;
+### Apakah ada versi uji coba yang tersedia untuk Aspose.Words untuk .NET?
+ Ya, Anda dapat mengunduh uji coba gratis dari[Di Sini](https://releases.aspose.com/).
 
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
-}
+### Di mana saya dapat menemukan dokumentasi Aspose.Words untuk .NET?
+ Dokumentasi terperinci tersedia[Di Sini](https://reference.aspose.com/words/net/).
 
-doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
-```
+### Bagaimana saya bisa mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
+ Lisensi sementara dapat diperoleh[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-Ini adalah contoh kode sumber untuk menggantikan hyperlink dalam dokumen menggunakan Aspose.Words untuk .NET.
-
-### FAQ
-
-#### T: Bagaimana cara mengganti hyperlink di dokumen Word menggunakan Aspose.Words untuk .NET?
-
- J: Untuk mengganti hyperlink di dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document.Range.Replace`metode menentukan teks yang akan dicari dan teks pengganti. Pastikan untuk menggunakan opsi yang sesuai untuk mengatur parameter pencarian dan penggantian.
-
-#### T: Apakah mungkin untuk mengganti hanya hyperlink tertentu di dokumen Word dengan Aspose.Words untuk .NET?
-
-J: Ya, dimungkinkan untuk mengganti hanya hyperlink tertentu di dokumen Word dengan Aspose.Words untuk .NET. Anda dapat memfilter hyperlink yang akan diganti menggunakan kriteria tertentu, seperti URL link, teks link, atau properti relevan lainnya. Kemudian Anda dapat menerapkan penggantian hanya pada hyperlink yang cocok.
-
-#### T: Bagaimana cara mengabaikan hyperlink di header, footer, atau catatan kaki saat mengganti dengan Aspose.Words untuk .NET?
-
-J: Untuk mengabaikan hyperlink di header, footer, atau catatan kaki saat mengganti dengan Aspose.Words untuk .NET, Anda dapat menggunakan opsi pencarian lanjutan dan menentukan batas pencarian yang sesuai. Misalnya, Anda dapat membatasi pencarian pada bagian utama dokumen dan mengecualikan header, footer, atau catatan kaki.
-
-#### T: Apakah mungkin untuk mengganti hyperlink dengan link internal ke bagian lain dokumen?
-
- J: Ya, hyperlink dapat diganti dengan link internal ke bagian lain dokumen dengan Aspose.Words untuk .NET. Anda dapat menggunakan jangkar atau id teks untuk membuat tautan internal dan kemudian menggantinya menggunakan`Document.Range.Replace` metode dengan pilihan yang sesuai.
-
-#### T: Apakah mengganti hyperlink dengan Aspose.Words untuk .NET mempertahankan properti tautan, seperti warna atau gaya?
-
-J: Ya, saat mengganti hyperlink dengan Aspose.Words untuk .NET, properti tautan seperti warna atau gaya dipertahankan. Anda dapat menentukan properti pemformatan yang sama di teks pengganti untuk mencapai hasil yang konsisten.
+### Opsi dukungan apa yang tersedia untuk Aspose.Words untuk .NET?
+ Anda bisa mendapatkan dukungan komunitas atau mengirimkan pertanyaan di[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8).

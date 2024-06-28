@@ -17,7 +17,7 @@ Asegúrese de tener los siguientes requisitos previos:
 - Aspose.Words para la biblioteca .NET instalada. Puede descargarlo utilizando el administrador de paquetes NuGet para instalarlo.
 - Una ruta del directorio de documentos donde se guardará el documento de salida.
 
-## Paso 2: cree un nuevo documento e inserte un gráfico
+## Paso 2: cree un nuevo documento e inserte un gráfico.
 
  Crear un nuevo`Document` objeto y un`DocumentBuilder` para construir el documento.
 
@@ -117,4 +117,4 @@ El suavizado de series de gráficos es una técnica de mejora visual que le perm
  Para personalizar marcadores para puntos de datos en una serie de gráficos usando Aspose.Words para .NET, debe acceder al`Marker` propiedad de la`ChartSeries` objeto y modificar sus propiedades como`Symbol` y`Size`. Los marcadores son indicadores visuales colocados en el gráfico para representar puntos de datos individuales. Puede elegir entre una variedad de símbolos de marcadores integrados y ajustar su tamaño para resaltar o diferenciar puntos de datos específicos dentro de la serie.
 
 #### P5. ¿Puedo invertir colores para valores negativos en una serie de gráficos?
- Sí, puede invertir colores para valores negativos en una serie de gráficos usando Aspose.Words para .NET. Al configurar el`InvertIfNegative` propiedad de la`ChartSeries` oponerse a`true`, los colores de los puntos de datos con valores negativos se invertirán, haciéndolos visualmente distintos de los valores positivos. Esta característica puede resultar útil al comparar valores positivos y negativos en una serie de gráficos, proporcionando una clara diferenciación entre los dos.
+ Sí, puedes invertir colores para valores negativos en una serie de gráficos usando Aspose.Words para .NET. Al configurar el`InvertIfNegative` propiedad de la`ChartSeries` oponerse a`true`, los colores de los puntos de datos con valores negativos se invertirán, haciéndolos visualmente distintos de los valores positivos. Esta característica puede resultar útil al comparar valores positivos y negativos en una serie de gráficos, proporcionando una clara diferenciación entre los dos.

@@ -1,7 +1,7 @@
 ---
 title: Formatieren von Absätzen und Text in Word-Dokumenten
 linktitle: Formatieren von Absätzen und Text in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Absätze und Text in Word-Dokumenten formatieren. Schritt-für-Schritt-Anleitung mit Codebeispielen für eine effektive Dokumentformatierung.
 type: docs
 weight: 22

@@ -16,7 +16,7 @@ url: /th/java/table-processing/creating-tables-rows/
 
 ## การสร้างตาราง
 ### การสร้างตาราง
-ในการเริ่มต้น เรามาสร้างตารางในเอกสารของคุณกัน ต่อไปนี้เป็นข้อมูลโค้ดง่ายๆ เพื่อให้คุณก้าวต่อไป:
+ในการเริ่มต้น เรามาสร้างตารางในเอกสารของคุณกัน ต่อไปนี้เป็นข้อมูลโค้ดง่ายๆ ที่จะช่วยให้คุณก้าวต่อไป:
 
 ```java
 // นำเข้าคลาสที่จำเป็น
@@ -102,7 +102,7 @@ firstCell.getCellFormat().setHorizontalMerge(CellMerge.FIRST);
 ```
 
 ### ฉันจะเพิ่มสารบัญลงในเอกสารของฉันได้อย่างไร
- หากต้องการเพิ่มสารบัญ คุณสามารถใช้ Aspose.Words สำหรับ Java ได้`DocumentBuilder` ระดับ. นี่คือตัวอย่างพื้นฐาน:
+ หากต้องการเพิ่มสารบัญ คุณสามารถใช้ Aspose.Words สำหรับ Java ได้`DocumentBuilder` ชั้นเรียน นี่คือตัวอย่างพื้นฐาน:
 ```java
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");

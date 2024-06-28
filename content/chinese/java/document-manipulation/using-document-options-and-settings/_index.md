@@ -123,7 +123,7 @@ public void addJapaneseAsEditingLanguages() throws Exception
 }
 ```
 
-编辑语言在文档处理中起着至关重要的作用。使用 Aspose.Words for Java，您可以设置和自定义编辑语言以满足文档的语言需求。
+编辑语言在文档处理中起着至关重要的作用。使用Aspose.Words for Java，您可以设置和自定义编辑语言以满足文档的语言需求。
 
 
 ## 结论

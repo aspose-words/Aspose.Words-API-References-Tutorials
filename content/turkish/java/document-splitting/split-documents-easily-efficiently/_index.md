@@ -134,7 +134,7 @@ Büyük belgelerle uğraşırken performans optimizasyonlarını dikkate almak �
 
 Bu kılavuzda Aspose.Words for Java'yı kullanarak belgeleri nasıl kolay ve verimli bir şekilde bölebileceğinizi araştırdık. Geliştiriciler, büyük belgeleri daha küçük, daha yönetilebilir parçalara bölerek belirli bölümlerle çalışabilir ve belge işleme görevlerini basitleştirebilir. Aspose.Words for Java, belgeleri sayfalara, paragraflara, başlıklara ve bölümlere göre bölmek için çeşitli yöntemler sunarak geliştiricilere bölme işlemini kendi özel ihtiyaçlarına göre uyarlama esnekliği sağlar.
 
-## 12. SSS
+## 12.SSS
 
 ### S1. Aspose.Words for Java, DOC ve DOCX gibi farklı formatlardaki belgeleri bölebilir mi?
 

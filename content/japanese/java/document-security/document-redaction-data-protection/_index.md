@@ -27,7 +27,7 @@ Aspose.Words for Java の使用を開始する前に、開発環境をセット�
 環境がセットアップされたので、Aspose.Words for Java を使用して Word ドキュメントをロードして操作してみましょう。
 
 ```java
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document("sample.docx");
 
 //ドキュメントのコンテンツにアクセスして編集する

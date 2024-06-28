@@ -72,4 +72,4 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.doc
 
 #### Câu hỏi: Làm cách nào tôi có thể lấy ngôn ngữ hiện đang được sử dụng cho một trường trong Aspose.Words cho .NET?
 
- Đáp: Để lấy ngôn ngữ hiện đang được sử dụng cho một trường trong Aspose.Words cho .NET, bạn có thể sử dụng ngôn ngữ của trường đó`Field.LocaleId` tài sản. Điều này sẽ cho phép bạn lấy mã định danh miền địa phương được liên kết với trường.
+ Đáp: Để lấy ngôn ngữ hiện đang được sử dụng cho một trường trong Aspose.Words cho .NET, bạn có thể sử dụng ngôn ngữ của trường đó`Field.LocaleId`tài sản. Điều này sẽ cho phép bạn lấy mã định danh miền địa phương được liên kết với trường.

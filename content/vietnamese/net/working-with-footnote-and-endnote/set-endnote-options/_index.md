@@ -81,7 +81,7 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Câu hỏi: Làm cách nào tôi có thể tạo kiểu cho chú thích cuối trong Aspose.Words?
 
- Đáp: Để tạo kiểu cho chú thích cuối trong Aspose.Words, bạn có thể sử dụng`EndnoteOptions` lớp học và`SeparatorNoteTextStyle` tài sản. Bạn có thể chỉ định kiểu phông chữ, kích thước, màu sắc, v.v. cho chú thích bằng thuộc tính này.
+Đáp: Để tạo kiểu cho chú thích cuối trong Aspose.Words, bạn có thể sử dụng`EndnoteOptions` lớp học và`SeparatorNoteTextStyle` tài sản. Bạn có thể chỉ định kiểu phông chữ, kích thước, màu sắc, v.v. cho chú thích bằng thuộc tính này.
 
 #### Hỏi: Có thể tùy chỉnh cách đánh số chú thích cuối trong tài liệu không?
 
@@ -97,4 +97,4 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Câu hỏi: Có thể tiếp tục đánh số chú thích cuối giữa các phần của tài liệu không?
 
- Đáp: Có, có thể tiếp tục đánh số chú thích cuối giữa các phần của tài liệu. Sử dụng`RestartRule` tài sản của`EndnoteOptions` lớp và đặt nó thành`RestartContinuous` để cho phép đánh số tiếp tục giữa các phần.
+Đáp: Có, có thể tiếp tục đánh số chú thích cuối giữa các phần của tài liệu. Sử dụng`RestartRule` tài sản của`EndnoteOptions` lớp và đặt nó thành`RestartContinuous` để cho phép đánh số tiếp tục giữa các phần.

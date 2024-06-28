@@ -101,7 +101,7 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ### Výchozí hodnoty a formátování
 
-Pole formuláře můžete předvyplnit výchozími hodnotami a podle toho je naformátovat:
+Pole formuláře můžete předem vyplnit výchozími hodnotami a podle toho je naformátovat:
 
 ```python
 text_input_field.text = "John Doe"
@@ -228,7 +228,7 @@ Nástroje pro výběr data vylepšují uživatelskou zkušenost při zachycován
 
 ## Závěr
 
-Zvládnutí polí formulářů a zachycování dat v dokumentech aplikace Word je cenná dovednost, která vám umožňuje vytvářet interaktivní a efektivní dokumenty pro sběr dat. Aspose.Words pro Python poskytuje komplexní sadu nástrojů pro vytváření, přizpůsobení a extrahování dat z polí formuláře. Od jednoduchých polí pro zadávání textu až po složité výpočty a podmíněné formátování, možnosti jsou obrovské.
+Zvládnutí polí formulářů a zachycování dat v dokumentech aplikace Word je cenná dovednost, která vám umožňuje vytvářet interaktivní a efektivní dokumenty pro sběr dat. Aspose.Words pro Python poskytuje komplexní sadu nástrojů pro vytváření, přizpůsobení a extrahování dat z polí formuláře. Možnosti jsou obrovské, od jednoduchých polí pro zadávání textu až po složité výpočty a podmíněné formátování.
 
 V této příručce jsme prozkoumali základy polí formuláře, typy polí formuláře, nastavení vlastností a přizpůsobení jejich chování. Dotkli jsme se také osvědčených postupů pro návrh formulářů a nabídli pohledy na optimalizaci formulářů dokumentů pro vyhledávače.
 
@@ -246,7 +246,7 @@ pip install aspose-words
 
 ### Mohu nastavit výchozí hodnoty pro pole formuláře?
 
- Ano, pomocí příslušných vlastností můžete nastavit výchozí hodnoty pro pole formuláře. Chcete-li například nastavit výchozí text pro pole pro zadávání textu, použijte`text` vlastnictví.
+ Ano, výchozí hodnoty pro pole formuláře můžete nastavit pomocí příslušných vlastností. Chcete-li například nastavit výchozí text pro pole pro zadávání textu, použijte`text` vlastnictví.
 
 ### Jsou pole formuláře přístupná pro uživatele se zdravotním postižením?
 

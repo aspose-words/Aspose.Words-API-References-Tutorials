@@ -52,7 +52,7 @@ Document doc = new Document(MyDir + "Big document.docx");
 
 for (int i = 0; i < doc.Sections.Count; i++)
 {
-	// Divisez un document en parties plus petites, dans ce cas, divisé par section.
+	//Divisez un document en parties plus petites, dans ce cas, divisé par section.
 	Section section = doc.Sections[i].Clone();
 
 	Document newDoc = new Document();

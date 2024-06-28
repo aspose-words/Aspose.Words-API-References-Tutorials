@@ -61,7 +61,7 @@ for (DataRow dataRow : dataTable.getRows()) {
 
 ## 4. lépés: Mentse el a dokumentumot
 
-Végül mentse a dokumentumot a generált táblázattal a kívánt helyre.
+Végül mentse el a dokumentumot a generált táblázattal a kívánt helyre.
 
 ```java
 // Mentse el a dokumentumot

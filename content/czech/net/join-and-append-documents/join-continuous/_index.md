@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 3: Nastavte souvislý začátek sekce
 
- Chcete-li, aby se zdrojový dokument objevil hned za obsahem cílového dokumentu, nastavte`SectionStart` vlastnost první sekce ve zdrojovém dokumentu na`SectionStart.Continuous`.
+Chcete-li, aby se zdrojový dokument objevil hned za obsahem cílového dokumentu, nastavte`SectionStart` vlastnost první sekce ve zdrojovém dokumentu na`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Krok 5: Uložte upravený dokument
 
- Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");

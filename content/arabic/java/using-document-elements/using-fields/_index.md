@@ -1,5 +1,5 @@
 ---
-title: استخدام الحقول في Aspose.Words لـ Java
+title: استخدام الحقول في Aspose.Words لجافا
 linktitle: استخدام الحقول
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
 description: تعلم كيفية استخدام Aspose.Words لحقول Java بشكل فعال في هذا البرنامج التعليمي خطوة بخطوة. قم بإنشاء مستندات Word ديناميكية بسهولة.
@@ -97,7 +97,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // قررنا أننا نريد أن يتم إخراج جميع القيم المنطقية كحقول نموذج خانة اختيار.
+            // قررنا أننا نريد إخراج جميع القيم المنطقية كحقول نموذج خانة اختيار.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
                 // انقل "المؤشر" إلى حقل الدمج الحالي.
@@ -357,7 +357,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 
 تهانينا! لقد تعلمت كيفية استخدام الحقول في Aspose.Words for Java لمعالجة مستندات Word ديناميكيًا. تمنحك واجهة برمجة التطبيقات القوية هذه تحكمًا كاملاً في مستنداتك، مما يجعلها رصيدًا قيمًا لمطوري Java.
 
-## 7. الأسئلة الشائعة
+## 7.الأسئلة الشائعة
 
 ### س1: أين يمكنني تنزيل Aspose.Words لـ Java؟
  يمكنك تنزيل Aspose.Words for Java من[هنا](https://releases.aspose.com/words/java/).

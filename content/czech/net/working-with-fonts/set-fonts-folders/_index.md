@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-fonts/set-fonts-folders/
 ---
 
-tomto tutoriálu vás provedeme krok za krokem procesem nastavení složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete vědět, jak určit složky písem, které se mají použít při vykreslování dokumentů pomocí Aspose.Words for .NET.
+V tomto tutoriálu vás provedeme krok za krokem procesem nastavení složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete vědět, jak určit složky písem, které se mají použít při vykreslování dokumentů pomocí Aspose.Words for .NET.
 
 ## Krok 1: Definujte adresář dokumentů
 Nejprve musíte nastavit cestu k adresáři dokumentů. Toto je umístění, kam chcete uložit upravený vykreslený dokument. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak nastavit složky písem při vykreslování dokumentu pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno určit zdroje písem, které se mají použít při vykreslování dokumentů. Aspose.Words nabízí výkonné a flexibilní API pro zpracování textu s písmy ve vašich dokumentech. S těmito znalostmi můžete ovládat a přizpůsobovat zdroje písem používané při vykreslování dokumentů podle vašich specifických potřeb.
+tomto tutoriálu jsme se naučili, jak nastavit složky písem při vykreslování dokumentu pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno určit zdroje písem, které se mají použít při vykreslování dokumentů. Aspose.Words nabízí výkonné a flexibilní API pro zpracování textu s písmy ve vašich dokumentech. S těmito znalostmi můžete ovládat a přizpůsobovat zdroje písem používané při vykreslování dokumentů podle vašich specifických potřeb.
 
 ### FAQ
 

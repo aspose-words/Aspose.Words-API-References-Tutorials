@@ -59,7 +59,7 @@ Ezzel a kóddal bekezdésstílust alkalmazhat az Aspose.Words for .NET használa
 
 ## Következtetés
 
- Ebben az oktatóanyagban megvizsgáltuk, hogyan lehet bekezdésstílust alkalmazni egy Word-dokumentumban az Aspose.Words for .NET használatával. Beállításával a`StyleIdentifier` tulajdona a`ParagraphFormat`, beépített stílust tudtunk alkalmazni a bekezdésre. Az Aspose.Words for .NET a formázási lehetőségek széles skáláját kínálja, beleértve az egyéni stílusok létrehozásának és alkalmazásának lehetőségét, lehetővé téve a professzionális megjelenésű dokumentumok könnyű elkészítését.
+ Ebben az oktatóanyagban megvizsgáltuk, hogyan alkalmazhatunk bekezdésstílust Word-dokumentumban az Aspose.Words for .NET használatával. Beállításával a`StyleIdentifier` tulajdona a`ParagraphFormat`beépített stílust tudtunk alkalmazni a bekezdésre. Az Aspose.Words for .NET a formázási lehetőségek széles skáláját kínálja, beleértve az egyéni stílusok létrehozásának és alkalmazásának lehetőségét, lehetővé téve a professzionális megjelenésű dokumentumok könnyű elkészítését.
 
 ### GYIK
 
@@ -68,7 +68,7 @@ Ezzel a kóddal bekezdésstílust alkalmazhat az Aspose.Words for .NET használa
 V: Ha egy bekezdésstílust szeretne alkalmazni egy Word-dokumentumban az Aspose.Words for .NET használatával, kövesse az alábbi lépéseket:
 1.  Hozzon létre egy új dokumentumot, és a`DocumentBuilder` tárgy.
 2.  Állítsa be a bekezdésstílust a`StyleIdentifier` tulajdona a`ParagraphFormat` a kívánt stílusazonosítóhoz (pl.`StyleIdentifier.Title`, `StyleIdentifier.Heading1`stb.).
-3.  Adjon hozzá tartalmat a bekezdéshez a gombbal`Write` módszere a`DocumentBuilder`.
+3.  Adjon hozzá tartalmat a bekezdéshez a`Write` módszere a`DocumentBuilder`.
 4.  Mentse el a dokumentumot a`Save` módszer.
 
 #### K: Mik azok a stílusazonosítók az Aspose.Words for .NET-ben?

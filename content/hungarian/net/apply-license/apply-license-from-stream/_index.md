@@ -12,7 +12,7 @@ Ebből a lépésenkénti oktatóanyagból megtudhatja, hogyan kell licencet alka
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 - Az Aspose.Words érvényes licencfájlja.
 
 ## 1. lépés: Importálja a szükséges névtereket

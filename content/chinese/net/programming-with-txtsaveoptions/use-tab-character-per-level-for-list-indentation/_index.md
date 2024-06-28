@@ -110,7 +110,7 @@ Aspose.Words for .NET 的“每级使用一个制表符进行列表缩进”功�
 是的，您可以通过更改列表缩进的值来自定义每个级别的制表符字符数`ListIndentation.Count`财产在`TxtSaveOptions`班级。您可以指定每个缩进级别所需的制表符数量。
 
 #### 问：Aspose.Words for .NET 的列表缩进还可以使用哪些其他字符？
-除了制表符之外，您还可以使用 Aspose.Words for .NET 的其他字符进行列表缩进。您可以设置`ListIndentation.Character`属性为任何所需的字符，例如空格（`' '`)，用于缩进列表。
+除了制表符之外，您还可以使用 Aspose.Words for .NET 的其他字符进行列表缩进。您可以设置`ListIndentation.Character`属性为任何所需的字符，例如空格（`' '`)，用于识别列表。
 
 #### 问：Aspose.Words for .NET 是否提供任何其他管理列表的功能？
 是的，Aspose.Words for .NET 提供了许多用于管理 Word 文档中的列表的功能。您可以创建编号列表或项目符号列表、设置缩进级别、自定义列表样式、添加列表项等等。

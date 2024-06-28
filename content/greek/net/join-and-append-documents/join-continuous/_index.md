@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Βήμα 3: Ρυθμίστε την έναρξη συνεχούς τμήματος
 
- Για να εμφανίσετε το έγγραφο προέλευσης αμέσως μετά το περιεχόμενο του εγγράφου προορισμού, ορίστε το`SectionStart` ιδιότητα της πρώτης ενότητας στο έγγραφο προέλευσης to`SectionStart.Continuous`.
+Για να εμφανίσετε το έγγραφο προέλευσης αμέσως μετά το περιεχόμενο του εγγράφου προορισμού, ορίστε το`SectionStart` ιδιότητα της πρώτης ενότητας στο έγγραφο προέλευσης to`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Βήμα 5: Αποθηκεύστε το τροποποιημένο έγγραφο
 
- Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
+Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");

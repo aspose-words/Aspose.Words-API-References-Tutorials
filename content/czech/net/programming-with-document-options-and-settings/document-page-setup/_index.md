@@ -50,7 +50,7 @@ Tento kód nastaví režim rozvržení na "Mřížka" a poté určuje počet zna
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Nastavte režim rozvržení pro sekci umožňující definovat chování mřížky dokumentu.
-	// Všimněte si, že karta Mřížka dokumentu se zobrazí v dialogovém okně Vzhled stránky aplikace MS Word
+	// Všimněte si, že karta Mřížka dokumentu se zobrazí v dialogovém okně Vzhled stránky aplikace MS Word.
 	// pokud je jako jazyk úprav definován nějaký asijský jazyk.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

@@ -69,7 +69,7 @@ Aspose.Words for Java를 사용하여 문서의 차이점을 비교하는 것은
 
 ### Java용 Aspose.Words를 어떻게 설치하나요?
 
- Aspose.Words for Java를 설치하려면 다운로드 페이지를 방문하세요.[여기](https://releases.aspose.com/words/java/) 제공된 설치 지침을 따르십시오.
+ Java용 Aspose.Words를 설치하려면 다운로드 페이지를 방문하세요.[여기](https://releases.aspose.com/words/java/) 제공된 설치 지침을 따르십시오.
 
 ### DOCX, PDF 등 다양한 형식의 문서를 비교할 수 있나요?
 

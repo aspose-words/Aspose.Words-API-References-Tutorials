@@ -20,7 +20,7 @@ Prima di approfondire l'implementazione, è fondamentale comprendere la struttur
 
 ## Selezione della libreria Python giusta
 
-Per raggiungere il nostro obiettivo di generare documenti Word utilizzando Python, abbiamo bisogno di una libreria affidabile e ricca di funzionalità. Una delle scelte più popolari per questa attività è la libreria "Aspose.Words for Python". Fornisce un robusto set di API che consentono una manipolazione dei documenti semplice ed efficiente. Esploriamo come configurare e utilizzare questa libreria per il nostro progetto.
+Per raggiungere il nostro obiettivo di generare documenti Word utilizzando Python, abbiamo bisogno di una libreria affidabile e ricca di funzionalità. Una delle scelte più popolari per questa attività è la libreria "Apose.Words for Python". Fornisce un robusto set di API che consentono una manipolazione dei documenti semplice ed efficiente. Esploriamo come configurare e utilizzare questa libreria per il nostro progetto.
 
 ## Installazione di Aspose.Words per Python
 
@@ -143,7 +143,7 @@ Aspose.Words for Python è una potente libreria che fornisce API per interagire 
 
 Per installare Aspose.Words per Python, attenersi alla seguente procedura:
 
-1. Visita il Aspose.Releases (https://releases.aspose.com/words/python).
+1. Visita le Aspose.Releases (https://releases.aspose.com/words/python).
 2. Scarica i file della libreria compatibili con la tua versione di Python e il tuo sistema operativo.
 3. Seguire le istruzioni di installazione fornite sul sito web.
 

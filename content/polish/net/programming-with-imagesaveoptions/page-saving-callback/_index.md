@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          // Zaimplementuj tutaj swoje niestandardowe działania
          // Dostęp do informacji o stronie można uzyskać poprzez właściwość „args.PageIndex”.
-         // Możesz także zmienić opcje zapisywania dla każdej strony indywidualnie
+         // Możesz także zmienić opcje zapisywania dla każdej strony indywidualnie.
      }
 }
 ```

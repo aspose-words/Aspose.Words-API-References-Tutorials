@@ -17,7 +17,7 @@ Certifique-se de ter os seguintes pré-requisitos:
 - Biblioteca Aspose.Words para .NET instalada. Você pode baixá-lo usando o gerenciador de pacotes NuGet para instalá-lo.
 - Um caminho do diretório do documento onde o documento de saída será salvo.
 
-## Passo 2: Crie um novo documento e insira um gráfico
+## Passo 2: Crie um novo documento e insira um gráfico.
 
  Crie um novo`Document` objeto e um`DocumentBuilder` para construir o documento.
 
@@ -101,7 +101,7 @@ Ao usar o Aspose.Words for .NET, você pode incorporar facilmente recursos de gr
 Aspose.Words for .NET é uma poderosa biblioteca de processamento de documentos que permite aos desenvolvedores criar, manipular e salvar documentos do Word programaticamente em aplicativos .NET. Ele fornece uma ampla gama de recursos para processamento de texto com elementos de documentos, incluindo gráficos e eixos de gráficos.
 
 #### Q2. Como posso instalar o Aspose.Words para .NET?
-Você pode instalar o Aspose.Words for .NET baixando-o usando o gerenciador de pacotes NuGet no Visual Studio. Basta pesquisar “Aspose.Words” no gerenciador de pacotes NuGet e instalá-lo em seu projeto.
+Você pode instalar o Aspose.Words for .NET baixando-o usando o gerenciador de pacotes NuGet no Visual Studio. Basta pesquisar “Apose.Words” no gerenciador de pacotes NuGet e instalá-lo em seu projeto.
 
 #### Q3. Posso ocultar o eixo X e o eixo Y de um gráfico?
  Sim, você pode ocultar o eixo X e o eixo Y de um gráfico usando Aspose.Words for .NET. Para ocultar o eixo X, você pode acessar o`AxisX` propriedade do gráfico e defina o`Hidden`propriedade para`true` . Da mesma forma, para ocultar o eixo Y, você pode acessar o`AxisY` propriedade e definir o`Hidden`propriedade para`true`. Isso permite remover ambos os eixos da visualização do gráfico.

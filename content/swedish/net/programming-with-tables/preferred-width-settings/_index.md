@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Här använder vi dokumentbyggaren för att bygga en tabell med tre celler. Den första cellen har en föredragen bredd på 40 punkter, den andra cellen har en föredragen bredd på 20 % av tabellbredden och den tredje cellen har en automatisk föredragen bredd som justeras
+Här använder vi dokumentbyggaren för att bygga en tabell med tre celler. Den första cellen har en föredragen bredd på 40 punkter, den andra cellen har en föredragen bredd på 20 % av tabellbredden och den tredje cellen har en automatisk föredragen bredd som justeras.
 
   beroende på tillgängligt utrymme.
 

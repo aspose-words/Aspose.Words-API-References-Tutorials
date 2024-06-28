@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## ขั้นตอนที่ 3: ตั้งค่าการเริ่มต้นส่วนต่อเนื่อง
 
- หากต้องการให้เอกสารต้นทางปรากฏต่อจากเนื้อหาของเอกสารปลายทาง ให้ตั้งค่า`SectionStart` คุณสมบัติของส่วนแรกในเอกสารต้นฉบับถึง`SectionStart.Continuous`.
+หากต้องการให้เอกสารต้นทางปรากฏต่อจากเนื้อหาของเอกสารปลายทาง ให้ตั้งค่า`SectionStart` คุณสมบัติของส่วนแรกในเอกสารต้นฉบับถึง`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## ขั้นตอนที่ 4: ผนวกเอกสารต้นฉบับ
 
- ผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทางโดยใช้`AppendDocument` วิธีการของ`Document` ระดับ. ตั้งค่าโหมดรูปแบบการนำเข้าเป็น`ImportFormatMode.KeepSourceFormatting` เพื่อรักษาสไตล์ดั้งเดิมจากเอกสารต้นฉบับ
+ ผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทางโดยใช้`AppendDocument` วิธีการของ`Document` ชั้นเรียน ตั้งค่าโหมดรูปแบบการนำเข้าเป็น`ImportFormatMode.KeepSourceFormatting` เพื่อรักษาสไตล์ดั้งเดิมจากเอกสารต้นฉบับ
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## ขั้นตอนที่ 5: บันทึกเอกสารที่แก้ไข
 
- สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ.
+สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ วัตถุ
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");

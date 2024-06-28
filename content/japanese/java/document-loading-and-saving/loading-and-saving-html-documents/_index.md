@@ -10,7 +10,7 @@ url: /ja/java/document-loading-and-saving/loading-and-saving-html-documents/
 
 ## Aspose.Words for Java を使用した HTML ドキュメントの読み込みと保存の概要
 
-この記事では、Aspose.Words for Java ライブラリを使用して HTML ドキュメントを読み込んで保存する方法を説明します。 Aspose.Words は、Word ドキュメントの操作を可能にする強力な Java API であり、HTML などのさまざまなドキュメント形式を処理するためのさまざまな機能を提供します。ソース コードの例を示しながら、プロセスを段階的に説明します。
+この記事では、Aspose.Words for Java ライブラリを使用して HTML ドキュメントを読み込んで保存する方法を説明します。 Aspose.Words は、Word ドキュメントの操作を可能にする強力な Java API で、HTML などのさまざまなドキュメント形式を処理するためのさまざまな機能を提供します。ソース コードの例を示しながら、プロセスを段階的に説明します。
 
 ## 前提条件
 

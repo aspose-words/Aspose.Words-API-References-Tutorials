@@ -27,7 +27,7 @@ Trước khi chúng ta đi sâu vào mã, hãy đảm bảo bạn có sẵn các
 
 ### Bước 1: Tải tài liệu
 
-Để phân chia một tài liệu, trước tiên chúng ta cần tải nó vào ứng dụng Java của mình. Đây là cách bạn có thể làm điều đó:
+Để tách một tài liệu, trước tiên chúng ta cần tải nó vào ứng dụng Java của mình. Đây là cách bạn có thể làm điều đó:
 
 ```java
 // Tải tài liệu
@@ -88,7 +88,7 @@ Bạn có thể xử lý thêm văn bản được trích xuất nếu cần. Đ
 
 ## Phần kết luận
 
-Aspose.Words for Java cho phép bạn phân tách và trích xuất nội dung từ tài liệu một cách dễ dàng. Cho dù bạn cần chia một tài liệu lớn thành các phần nhỏ hơn hay trích xuất văn bản để phân tích, API này sẽ đơn giản hóa quy trình. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn sẽ được trang bị tốt để khai thác toàn bộ tiềm năng của Aspose.Words cho Java.
+Aspose.Words for Java cho phép bạn phân tách và trích xuất nội dung từ tài liệu một cách dễ dàng. Cho dù bạn cần chia một tài liệu lớn thành các phần nhỏ hơn hay trích xuất văn bản để phân tích, API này sẽ đơn giản hóa quy trình. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn sẽ được trang bị đầy đủ để khai thác toàn bộ tiềm năng của Aspose.Words cho Java.
 
 ## Câu hỏi thường gặp
 
@@ -110,4 +110,4 @@ Có, Aspose.Words for Java có thể trích xuất văn bản từ các tài li�
 
 ### Tôi có thể truy cập tài liệu về Aspose.Words cho Java ở đâu?
 
- Bạn có thể tìm tài liệu về Aspose.Words for Java[đây](https://reference.aspose.com/words/java/).
+ Bạn có thể tìm tài liệu về Aspose.Words for Java.[đây](https://reference.aspose.com/words/java/).

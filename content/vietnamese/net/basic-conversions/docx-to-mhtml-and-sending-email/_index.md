@@ -103,7 +103,7 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Những hạn chế của quá trình chuyển đổi và gửi email là gì?
 
-Những hạn chế của quá trình chuyển đổi và gửi email phụ thuộc vào các công cụ cụ thể mà bạn đang sử dụng. Một số công cụ có thể có những hạn chế liên quan đến kích thước tệp, cài đặt bảo mật hoặc giao thức email được hỗ trợ. Điều quan trọng là chọn công cụ phù hợp với nhu cầu của bạn và cân nhắc những hạn chế này khi triển khai.
+Những hạn chế của quá trình chuyển đổi và gửi email phụ thuộc vào các công cụ cụ thể mà bạn đang sử dụng. Một số công cụ có thể có các hạn chế liên quan đến kích thước tệp, cài đặt bảo mật hoặc giao thức email được hỗ trợ. Điều quan trọng là chọn công cụ phù hợp với nhu cầu của bạn và cân nhắc những hạn chế này khi triển khai.
 
 #### Aspose có phải là công cụ đáng tin cậy để chuyển đổi DOCX sang MHTML và gửi email không?
 

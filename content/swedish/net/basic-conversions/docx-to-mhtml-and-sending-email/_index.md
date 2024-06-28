@@ -103,7 +103,7 @@ För att skicka ett e-postmeddelande med en MHTML-fil som en bilaga kan du anvä
 
 #### Vilka är begränsningarna för e-postkonvertering och sändningsprocessen?
 
-Begränsningarna för e-postkonvertering och sändningsprocessen beror på de specifika verktyg du använder. Vissa verktyg kan ha begränsningar relaterade till filstorlek, säkerhetsinställningar eller e-postprotokoll som stöds. Det är viktigt att välja verktyg som passar dina behov och överväga dessa begränsningar vid implementering.
+Begränsningarna för e-postkonvertering och sändningsprocessen beror på de specifika verktyg du använder. Vissa verktyg kan ha relaterade begränsningar för filstorlek, säkerhetsinställningar eller e-postprotokoll som stöds. Det är viktigt att välja verktyg som passar dina behov och överväga dessa begränsningar vid implementering.
 
 #### Är Aspose ett pålitligt verktyg för DOCX till MHTML-konvertering och e-postsändning?
 

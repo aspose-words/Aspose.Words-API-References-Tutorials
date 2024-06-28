@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
 
- بعد ذلك، تحتاج إلى تحميل المستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في`Document` مُنشئ وفقًا لأسماء المستندات الخاصة بك.
+بعد ذلك، تحتاج إلى تحميل المستندات المصدر والوجهة باستخدام Aspose.Words.`Document` فصل. قم بتحديث أسماء الملفات في`Document` مُنشئ وفقًا لأسماء المستندات الخاصة بك.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## الخطوة 4: قم بتعيين تنسيق الفقرة "الاحتفاظ بالتالي" للمستند المصدر
 
-للاحتفاظ بالفقرات في المستند المصدر معًا، يمكنك التكرار خلال كل فقرة في المستند وتعيين`KeepWithNext`الملكية ل`true`.
+ للاحتفاظ بالفقرات في المستند المصدر معًا، يمكنك التكرار خلال كل فقرة في المستند وتعيين`KeepWithNext`الملكية ل`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

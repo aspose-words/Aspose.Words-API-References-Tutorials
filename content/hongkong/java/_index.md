@@ -1,5 +1,5 @@
 ---
-title: 文件處理 | Aspose.Words Java 文件處理 API
+title: 文件處理| Aspose.Words Java 文件處理 API
 linktitle: Aspose.Words Java 教程
 type: docs
 weight: 11
@@ -40,12 +40,12 @@ is_root: true
 ### [文件安全](./document-security/)
 使用 Aspose.Words for Java 增強文件安全性！實施保護、加密和數位簽章以實現強大的資料保護。 
 ### [文件分割](./document-splitting/)
-使用 Aspose.Words for Java 輕鬆分割文件！根據頁面範圍、段落計數或自訂標準有效地劃分大檔案。
+使用 Aspose.Words for Java 輕鬆分割文件！根據頁面範圍、段落計數或自訂標準有效地劃分大型文件。
 ### [文件修訂](./document-revision/)
 使用 Aspose.Words for Java 簡化文件修訂！輕鬆追蹤變更、管理版本控制並自動執行修訂任務。 
 ### [文件載入和儲存](./document-loading-and-saving/)
 透過我們的綜合教學了解如何使用 Aspose.Words for Java 輕鬆載入和儲存文件。立即提升您的 Java 文件處理技能！
-### [文件操作](./document-manipulation/)
+### [文件處理](./document-manipulation/)
 透過我們的綜合教程，了解如何使用 Aspose.Words for Java 有效地操作文件。立即提升您的 Java 文件處理技能！
 ### [文檔轉換和匯出](./document-conversion-and-export/)
 在這份綜合指南中探索 Aspose.Words for Java 的強大功能。了解如何輕鬆轉換和匯出文件。

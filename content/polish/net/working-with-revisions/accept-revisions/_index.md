@@ -1,6 +1,6 @@
 ---
-title: Zaakceptuj poprawki
-linktitle: Zaakceptuj poprawki
+title: Zaakceptuj recenzje
+linktitle: Zaakceptuj recenzje
 second_title: Aspose.Words API do przetwarzania dokumentów
 description: Dowiedz się, jak akceptować poprawki w dokumencie programu Word za pomocą Aspose.Words dla .NET
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Akapit dotyczący usunięcia wersji zostanie usunięty po zaakceptowaniu zmian.
+// Usunięty akapit dotyczący wersji zostanie usunięty po zaakceptowaniu zmian.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

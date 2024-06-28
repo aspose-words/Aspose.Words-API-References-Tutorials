@@ -1,6 +1,6 @@
 ---
-title: Uruchom ponownie numerowanie stron
-linktitle: Uruchom ponownie numerowanie stron
+title: Uruchom ponownie numerację stron
+linktitle: Uruchom ponownie numerację stron
 second_title: Aspose.Words API do przetwarzania dokumentów
 description: Dowiedz się, jak ponownie uruchomić numerowanie stron podczas łączenia i dołączania dokumentów programu Word za pomocą Aspose.Words dla .NET.
 type: docs
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj dokumenty źródłowe i docelowe
 
- Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
+Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words.`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");

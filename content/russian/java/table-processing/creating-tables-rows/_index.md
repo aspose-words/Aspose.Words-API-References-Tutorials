@@ -102,7 +102,7 @@ firstCell.getCellFormat().setHorizontalMerge(CellMerge.FIRST);
 ```
 
 ### Как добавить оглавление в документ?
- Чтобы добавить оглавление, вы можете использовать Aspose.Words для Java.`DocumentBuilder` сорт. Вот базовый пример:
+ Чтобы добавить оглавление, вы можете использовать Aspose.Words для Java.`DocumentBuilder` класс. Вот базовый пример:
 ```java
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");

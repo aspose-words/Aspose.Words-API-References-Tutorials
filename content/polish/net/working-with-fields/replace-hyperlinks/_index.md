@@ -2,106 +2,95 @@
 title: Zamień hiperłącza
 linktitle: Zamień hiperłącza
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Zamień hiperłącza w dokumentach programu Word za pomocą Aspose.Words dla .NET. Instrukcje krok po kroku dotyczące zastępowania hiperłączy.
+description: Dowiedz się, jak zastępować hiperłącza w dokumentach .NET przy użyciu Aspose.Words w celu wydajnego zarządzania dokumentami i dynamicznych aktualizacji treści.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/replace-hyperlinks/
 ---
 
-Oto przewodnik krok po kroku wyjaśniający następujący kod źródłowy C# służący do zastępowania hiperłączy przy użyciu funkcjonalności Aspose.Words dla .NET. Zanim użyjesz tego kodu, upewnij się, że w swoim projekcie umieściłeś bibliotekę Aspose.Words.
+## Wstęp
 
-## Krok 1: Ustaw ścieżkę katalogu dokumentów
+W świecie programowania .NET zarządzanie dokumentami i manipulowanie nimi jest kluczowym zadaniem, często wymagającym wydajnej obsługi hiperłączy w dokumentach. Aspose.Words dla .NET zapewnia potężne możliwości płynnego zastępowania hiperłączy, zapewniając, że Twoje dokumenty są dynamicznie łączone z właściwymi zasobami. W tym samouczku szczegółowo opisano, jak można to osiągnąć za pomocą Aspose.Words dla .NET, prowadząc Cię krok po kroku przez proces.
+
+## Warunki wstępne
+
+Zanim zaczniesz zastępować hiperłącza Aspose.Words dla .NET, upewnij się, że masz następujące elementy:
+
+- Visual Studio: zainstalowany i skonfigurowany do programowania w .NET.
+-  Aspose.Words dla .NET: Pobrane i używane w Twoim projekcie. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Znajomość języka C#: Podstawowa umiejętność pisania i kompilowania kodu.
+
+## Importuj przestrzenie nazw
+
+Najpierw pamiętaj o uwzględnieniu w projekcie niezbędnych przestrzeni nazw:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- Pamiętaj, aby podać poprawną ścieżkę do katalogu dokumentów zawierającego plik`Hyperlinks.docx` plik.
+## Krok 1: Załaduj dokument
 
-## Krok 2: Załaduj dokument zawierający hiperłącza
+Rozpocznij od załadowania dokumentu, w którym chcesz zastąpić hiperłącza:
 
 ```csharp
+// Ścieżka do katalogu dokumentów
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- Tutaj tworzymy instancję`Document` class z określonego pliku.
+ Zastępować`"Hyperlinks.docx"` ze ścieżką do aktualnego dokumentu.
 
-## Krok 3: Przeglądaj pola, aby znaleźć hiperłącza
+## Krok 2: Iteruj po polach
+
+Iteruj po każdym polu w dokumencie, aby znaleźć i zastąpić hiperłącza:
 
 ```csharp
-foreach(Field field in doc.Range.Fields)
+foreach (Field field in doc.Range.Fields)
 {
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
-
-         // Niektóre hiperłącza mogą mieć charakter lokalny (linki do zakładek w dokumencie), ignorujemy je.
-         if (hyperlink.SubAddress != null)
-             keep on going;
-
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
+    if (field.Type == FieldType.FieldHyperlink)
+    {
+        FieldHyperlink hyperlink = (FieldHyperlink)field;
+        
+        // Sprawdź, czy hiperłącze nie jest łączem lokalnym (zignoruj zakładki).
+        if (hyperlink.SubAddress != null)
+            continue;
+        
+        // Zastąp adres hiperłącza i wynik.
+        hyperlink.Address = "http://www.aspose.com";
+        hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
+    }
 }
 ```
 
- Ta pętla przechodzi przez wszystkie pola w dokumencie w poszukiwaniu pól typu`FieldType.FieldHyperlink` . Po znalezieniu pola tego typu sprawdzamy, czy jest to łącze lokalne, zaznaczając`SubAddress` nieruchomość. Jeśli nie, zastępujemy adres linku przez`"http://www.aspose.com"` i wynik z`"Aspose - The .NET & Java Component Editor"`.
+## Krok 3: Zapisz dokument
 
-## Krok 4: Zapisz zmodyfikowany dokument
+Na koniec zapisz zmodyfikowany dokument z zastąpionymi hiperłączami:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-Na koniec zapisujemy zmodyfikowany dokument z zastąpionymi hiperłączami do określonego pliku.
+ Zastępować`"WorkingWithFields.ReplaceHyperlinks.docx"` z żądaną ścieżką pliku wyjściowego.
 
-### Przykładowy kod źródłowy do zamiany hiperłączy na Aspose.Words dla .NET
+## Wniosek
 
-```csharp
-// Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+Zastępowanie hiperłączy w dokumentach przy użyciu Aspose.Words dla .NET jest proste i zwiększa dynamiczny charakter dokumentów. Niezależnie od tego, czy aktualizujesz adresy URL, czy programowo przekształcasz treść dokumentu, Aspose.Words upraszcza te zadania, zapewniając wydajne zarządzanie dokumentami.
 
-Document doc = new Document(dataDir + "Hyperlinks.docx");
+## Często zadawane pytania (FAQ)
 
-foreach(Field field in doc.Range.Fields)
-{
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
+### Czy Aspose.Words dla .NET może obsługiwać złożone struktury dokumentów?
+Tak, Aspose.Words bezproblemowo obsługuje złożone struktury, takie jak tabele, obrazy i hiperłącza.
 
-         // Niektóre hiperłącza mogą mieć charakter lokalny (linki do zakładek w dokumencie), ignorujemy je.
-         if (hyperlink.SubAddress != null)
-             keep on going;
+### Czy dostępna jest wersja próbna Aspose.Words dla .NET?
+ Tak, możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.aspose.com/).
 
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
-}
+### Gdzie mogę znaleźć dokumentację Aspose.Words dla .NET?
+ Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
 
-doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
-```
+### Jak mogę uzyskać tymczasową licencję na Aspose.Words dla .NET?
+ Można uzyskać licencje tymczasowe[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-To jest przykładowy kod źródłowy zastępujący hiperłącza w dokumencie przy użyciu Aspose.Words dla .NET.
-
-### Często zadawane pytania
-
-#### P: Jak mogę zastąpić hiperłącza w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
-
- Odp.: Aby zastąpić hiperłącza w dokumencie programu Word za pomocą programu Aspose.Words dla .NET, możesz użyć metody`Document.Range.Replace`metoda określająca tekst do wyszukania i tekst zastępczy. Pamiętaj, aby użyć odpowiednich opcji, aby ustawić parametry wyszukiwania i zamiany.
-
-#### P: Czy możliwe jest zastąpienie tylko niektórych hiperłączy w dokumencie programu Word za pomocą Aspose.Words dla .NET?
-
-Odp.: Tak, możliwe jest zastąpienie tylko niektórych hiperłączy w dokumencie Word za pomocą Aspose.Words dla .NET. Możesz filtrować zastępowane hiperłącza, korzystając z określonych kryteriów, takich jak adres URL łącza, tekst łącza lub inna istotna właściwość. Następnie możesz zastosować zamianę tylko do pasujących hiperłączy.
-
-#### P: Jak mogę zignorować hiperłącza w nagłówkach, stopkach lub przypisach podczas zastępowania za pomocą Aspose.Words dla .NET?
-
-O: Aby zignorować hiperłącza w nagłówkach, stopkach lub przypisach podczas zastępowania za pomocą Aspose.Words dla .NET, możesz skorzystać z zaawansowanych opcji wyszukiwania i określić odpowiednie limity wyszukiwania. Można na przykład ograniczyć wyszukiwanie do głównych sekcji dokumentu i wykluczyć nagłówki, stopki i przypisy.
-
-#### P: Czy możliwe jest zastąpienie hiperłączy wewnętrznymi łączami do innych części dokumentu?
-
- Odp.: Tak, możliwe jest zastąpienie hiperłączy wewnętrznymi łączami do innych części dokumentu za pomocą Aspose.Words dla .NET. Możesz użyć kotwic lub identyfikatorów tekstowych, aby utworzyć linki wewnętrzne, a następnie zastąpić je za pomocą`Document.Range.Replace` metodę z odpowiednimi opcjami.
-
-#### P: Czy zastąpienie hiperłączy programem Aspose.Words dla .NET zachowuje właściwości łącza, takie jak kolory i style?
-
-Odp.: Tak, podczas zastępowania hiperłączy przez Aspose.Words dla .NET, właściwości łącza, takie jak kolory i style, zostają zachowane. Aby uzyskać spójny wynik, możesz określić te same właściwości formatowania w tekście zastępczym.
+### Jakie opcje wsparcia są dostępne dla Aspose.Words dla .NET?
+ Możesz uzyskać wsparcie społeczności lub przesłać zapytania na stronie[Forum Aspose.Words](https://forum.aspose.com/c/words/8).

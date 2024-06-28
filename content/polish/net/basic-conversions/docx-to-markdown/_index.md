@@ -71,7 +71,7 @@ To, czy formatowanie zostanie zachowane podczas konwersji, zależy od używanego
 
 #### Jakie są ograniczenia procesu konwersji?
 
-Ograniczenia procesu konwersji zależą od konkretnego narzędzia lub biblioteki, z której korzystasz. Niektóre narzędzia mogą mieć ograniczenia związane ze złożonym formatowaniem, tabelami lub obrazami osadzonymi w pliku DOCX. Ważne jest, aby w pełni zrozumieć funkcje i ograniczenia wybranego narzędzia, aby móc podejmować świadome decyzje podczas konwersji.
+Ograniczenia procesu konwersji zależą od konkretnego narzędzia lub biblioteki, z której korzystasz. Niektóre narzędzia mogą mieć powiązane ograniczenia dotyczące złożonego formatowania, tabel lub obrazów osadzonych w pliku DOCX. Ważne jest, aby w pełni zrozumieć funkcje i ograniczenia wybranego narzędzia, aby móc podejmować świadome decyzje podczas konwersji.
 
 #### Czy Aspose jest niezawodnym narzędziem do konwersji DOCX na Markdown?
 

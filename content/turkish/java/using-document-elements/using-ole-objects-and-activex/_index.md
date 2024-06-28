@@ -15,7 +15,7 @@ Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
 1.  Aspose.Words for Java : Java projenizde Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
-2. Java Geliştirme Ortamı: Sisteminizde çalışan bir Java geliştirme ortamının kurulu olması gerekir.
+2. Java Geliştirme Ortamı : Sisteminizde çalışan bir Java geliştirme ortamının kurulu olması gerekir.
 
 ### OLE Nesnesi Ekleme
 

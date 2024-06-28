@@ -1,81 +1,117 @@
 ---
-title: Állítsa be a Font Backback beállításokat
-linktitle: Állítsa be a Font Backback beállításokat
+title: Állítsa be a tartalék betűkészlet-beállításokat
+linktitle: Állítsa be a tartalék betűkészlet-beállításokat
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan állíthatja be a betűtípus-helyettesítési beállításokat az Aspose.Words for .NET-ben, és hogyan szabhatja testre a betűkészlet-helyettesítést a Word-dokumentumokban.
+description: Ismerje meg, hogyan állíthatja be a tartalék betűkészlet-beállításokat az Aspose.Words for .NET-ben. Ez az átfogó útmutató biztosítja, hogy a dokumentumokban szereplő összes karakter helyesen jelenjen meg.
 type: docs
 weight: 10
 url: /hu/net/working-with-fonts/set-font-fallback-settings/
 ---
-Ebben az oktatóanyagban bemutatjuk, hogyan állíthatja be a betűkészlet-helyettesítési beállításokat egy Word-dokumentumban az Aspose.Words for .NET használatával. A betűkészlet helyettesítési beállításai lehetővé teszik, hogy megadjon helyettesítő betűtípusokat, amelyeket akkor használ, ha a megadott betűtípusok nem állnak rendelkezésre.
+
+Ha olyan dokumentumokkal dolgozik, amelyek különböző szövegelemeket, például különböző nyelveket vagy speciális karaktereket tartalmaznak, alapvető fontosságú, hogy ezek az elemek helyesen jelenjenek meg. Az Aspose.Words for .NET a Font Fallback Settings nevű hatékony funkciót kínálja, amely segít a betűtípusok helyettesítésére vonatkozó szabályok meghatározásában, ha az eredeti betűtípus nem támogat bizonyos karaktereket. Ebben az útmutatóban lépésről lépésre bemutatjuk, hogyan állíthatja be a tartalék betűkészlet-beállításokat az Aspose.Words for .NET használatával.
 
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
-- C# programozási nyelv gyakorlati ismerete
-- A projektben telepített .NET Aspose.Words könyvtár
+
+Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételeket teljesítette:
+
+- C# alapismeretek: C# programozási nyelv és .NET keretrendszer ismerete.
+-  Aspose.Words for .NET: Töltse le és telepítse a[letöltési link](https://releases.aspose.com/words/net/).
+- Fejlesztési környezet: Olyan beállítás, mint a Visual Studio a kód írásához és futtatásához.
+-  Dokumentumminta: rendelkezzen mintadokumentummal (pl.`Rendering.docx`) készen áll a tesztelésre.
+- Font Fallback Rules XML: Készítsen egy XML-fájlt, amely meghatározza a font backback szabályokat.
+
+## Névterek importálása
+
+Az Aspose.Words használatához importálnia kell a szükséges névtereket. Ez lehetővé teszi a hozzáférést a dokumentumok feldolgozásához szükséges különféle osztályokhoz és módszerekhez.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using System;
+```
 
 ## 1. lépés: Határozza meg a dokumentumkönyvtárat
- Először állítsa be a könyvtár elérési útját a Word-dokumentum helyére. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal.
+
+Először határozza meg a könyvtárat, ahol a dokumentumot tárolja. Ez elengedhetetlen a dokumentum megkereséséhez és feldolgozásához.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## 2. lépés: Betűtípus-helyettesítési beállítások betöltése
- Hozzon létre egy példányt a`FontSettings` osztályt, és használja a`Load` metódus a betűtípus-felülírási beállítások betöltésére egy XML-fájlból. A megadott XML-fájlnak tartalmaznia kell a használni kívánt betűtípus-helyettesítési szabályokat.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
-```
-
-## 3. lépés: Alkalmazza a betűtípus-helyettesítési beállításokat
- Társítsa a betűtípus helyettesítési beállításait a dokumentumhoz úgy, hogy hozzárendeli azokat a dokumentumhoz`FontSettings` ingatlan.
-
-```csharp
-doc.FontSettings = fontSettings;
-```
-
-## 4. lépés: Mentse el a dokumentumot
- Mentse el a dokumentumot a`Save` módszere a`Document` a megfelelő elérési úttal és fájlnévvel.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
-```
-
-### Minta forráskód a Set Font Fallback beállításokhoz az Aspose.Words for .NET használatával 
-```csharp
-// A dokumentumkönyvtár elérési útja
+// A dokumentumok könyvtárának elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## 2. lépés: Töltse be a dokumentumot
+
+ Töltse be a dokumentumot egy Aspose.Words-be`Document` tárgy. Ez a lépés lehetővé teszi, hogy programozottan dolgozzon a dokumentummal.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## 3. lépés: Konfigurálja a betűtípus-beállításokat
+
+ Újat csinálni`FontSettings` objektumot, és töltse be a tartalék font-beállításokat egy XML-fájlból. Ez az XML-fájl tartalmazza a tartalék betűkészlet szabályait.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
+```
+
+## 4. lépés: Alkalmazza a Betűtípus-beállításokat a dokumentumra
+
+ Rendelje hozzá a konfigurált`FontSettings` dokumentumhoz. Ez biztosítja, hogy a betűkészlet-visszaállítási szabályok alkalmazásra kerüljenek a dokumentum renderelésekor.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## 5. lépés: Mentse el a dokumentumot
+
+Végül mentse el a dokumentumot. A mentési művelet során a rendszer a tartalék betűkészlet-beállításokat használja a megfelelő betűkészlet-csere érdekében.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
+```
+
+## XML fájl: Font Fallback Rules
+
+Íme egy példa arra, hogyan kell kinéznie a font tartalék szabályokat meghatározó XML-fájlnak:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="0B80-0BFF" FallbackFonts="Vijaya"/>
+        <Rule Ranges="1F300-1F64F" FallbackFonts="Segoe UI Emoji, Segoe UI Symbol"/>
+        <Rule Ranges="2000-206F, 2070-209F, 20B9" FallbackFonts="Arial" />
+        <Rule Ranges="3040-309F" FallbackFonts="MS Gothic" BaseFonts="Times New Roman"/>
+        <Rule Ranges="3040-309F" FallbackFonts="MS Mincho"/>
+        <Rule FallbackFonts="Arial Unicode MS"/>
+    </FallbackTable>
+</FontFallbackSettings>
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanulta, hogyan állíthat be betűkészlet-helyettesítési beállításokat egy Word-dokumentumban az Aspose.Words for .NET használatával. Kísérletezzen a különböző betűtípus-helyettesítési szabályokkal, hogy biztosítsa a dokumentum egységes megjelenését, még akkor is, ha a megadott betűtípusok nem állnak rendelkezésre.
 
-### GYIK
+Ha követi ezeket a lépéseket, hatékonyan állíthatja be és használhatja az Aspose.Words for .NET betűtípus-visszaállítási beállításait. Ez biztosítja, hogy a dokumentumok minden karaktert helyesen jelenítsenek meg, még akkor is, ha az eredeti betűtípus nem támogat bizonyos karaktereket. Ezeknek a beállításoknak a végrehajtása nagymértékben javítja a dokumentumok minőségét és olvashatóságát.
 
-#### K: Hogyan állíthatom be a betűkészlet-helyettesítési beállításokat egy Word-dokumentumban az Aspose.Words segítségével?
+## GYIK
 
-V: A Word-dokumentumban az Aspose.Words segítségével történő betűkészlet-helyettesítési beállítások megadásához az API segítségével megadhat tartalék betűtípusokat, amelyeket akkor használ, ha nem állnak rendelkezésre szükséges betűtípusok. Ez biztosítja a következetes szövegvizualizációt, még az eredeti betűtípusok nélkül is.
+### 1. kérdés: Mi az a Font Fallback?
 
-#### K: Lehetséges-e kezelni a tartalék betűtípusokat, ha egy Word-dokumentumban felülírja az Aspose.Words-t?
+A Font Fallback egy olyan funkció, amely lehetővé teszi a betűtípusok helyettesítését, ha az eredeti betűtípus nem támogat bizonyos karaktereket, így biztosítva az összes szövegelem megfelelő megjelenítését.
 
-V: Igen, az Aspose.Words segítségével kezelheti a tartalék betűtípusokat, amikor helyettesíti a Word dokumentumot. Az API lehetővé teszi a hiányzó betűtípusok észlelését és a megfelelő tartalék betűtípusok megadását, hogy a betűtípusok helyettesítése esetén is konzisztens legyen a szöveg megjelenése.
+### 2. kérdés: Megadhatok több tartalék betűtípust?
 
-#### K: Miért fontos a betűtípus-helyettesítési beállítások helyes konfigurálása egy Word-dokumentumban?
+Igen, több tartalék betűtípust is megadhat az XML-szabályokban. Az Aspose.Words az egyes betűtípusokat a megadott sorrendben ellenőrzi, amíg meg nem találja azt, amelyik támogatja a karaktert.
 
-V: A szöveg vizuális integritásának megőrzése érdekében fontos a Word-dokumentumban a betűtípus-helyettesítési beállítások helyes konfigurálása. A megfelelő tartalék betűtípusok Aspose.Words beállításával biztosítja, hogy a szöveg konzisztens legyen, még akkor is, ha a szükséges betűtípusok nem állnak rendelkezésre.
+### 3. kérdés: Honnan tölthetem le az Aspose.Words for .NET fájlt?
 
-#### K: Hogyan észlelhetem a hiányzó betűtípusokat, amikor egy Word-dokumentumot Aspose.Words-re cserélek?
+ Letöltheti a[Aspose letöltési oldal](https://releases.aspose.com/words/net/).
 
-V: Az Aspose.Words lehetővé teszi a hiányzó betűtípusok észlelését a Word-dokumentumban az API segítségével történő helyettesítés során. Az Aspose.Words által biztosított módszerek segítségével ellenőrizheti a szükséges betűtípusok elérhetőségét, és megteheti a megfelelő lépéseket hiányzó betűtípusok esetén.
+### 4. kérdés: Hogyan hozhatom létre az XML-fájlt a font tartalék szabályokhoz?
 
-#### K: Befolyásolja-e a betűtípus helyettesítése a Word dokumentumom elrendezését?
+Az XML fájl bármilyen szövegszerkesztővel létrehozható. Az oktatóanyagban található példában látható szerkezetet kell követnie.
 
-V: A betűkészlet-csere hatással lehet a Word-dokumentum elrendezésére, ha a tartalék betűtípusok mérete eltér az eredeti betűtípusoktól. Ha azonban bölcsen választja meg a tartalék betűtípusokat, és konfigurálja a betűkészlet-helyettesítési beállításokat az Aspose.Words segítségével, minimálisra csökkentheti az elrendezési hatásokat.
+### 5. kérdés: Van-e támogatás az Aspose.Words számára?
+
+ Igen, találsz támogatást a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).

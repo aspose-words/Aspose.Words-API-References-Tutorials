@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-tables/keep-table-together/
 ---
 
-I den här handledningen ska vi lära oss hur man håller ihop en tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av den här handledningen kommer du att kunna behålla en tabell intakt utan att den delas över flera sidor i dina Word-dokument.
+den här handledningen ska vi lära oss hur man håller ihop en tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av den här handledningen kommer du att kunna behålla en tabell intakt utan att den delas över flera sidor i dina Word-dokument.
 
 ## Steg 1: Projektinställning
 1. Starta Visual Studio och skapa ett nytt C#-projekt.

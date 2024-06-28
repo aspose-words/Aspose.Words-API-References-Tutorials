@@ -110,4 +110,4 @@ Ya, Aspose.Words untuk Java dapat mengekstrak teks dari dokumen yang dipindai de
 
 ### Di mana saya dapat mengakses dokumentasi Aspose.Words untuk Java?
 
- Anda dapat menemukan dokumentasi Aspose.Words untuk Java[Di Sini](https://reference.aspose.com/words/java/).
+ Anda dapat menemukan dokumentasi Aspose.Words untuk Java.[Di Sini](https://reference.aspose.com/words/java/).

@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-In diesem Beispiel erstellen wir ein neues Dokument und verwenden den DocumentBuilder, um Text hinzuzufügen und eine Liste mit drei Einrückungsebenen zu erstellen. Wir haben der Liste drei Elemente hinzugefügt, wobei jedes Element um eine weitere Ebene eingerückt ist.
+In diesem Beispiel erstellen wir ein neues Dokument und verwenden den DocumentBuilder, um Text hinzuzufügen und eine Liste mit drei Einrückungsebenen zu erstellen. Wir haben der Liste drei Elemente hinzugefügt, wobei jedes Element eine zusätzliche Ebene angibt.
 
 ## Verwendung eines Leerzeichens pro Ebene zum Einrücken der Liste
 
@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIn
 
 In diesem Beispiel erstellen wir eine Instanz von TxtSaveOptions und setzen die ListIndentation.Count-Eigenschaft auf 3, um anzugeben, dass die Liste drei Einrückungsebenen enthält. Außerdem legen wir die ListIndentation.Character-Eigenschaft auf das Leerzeichen (' ') fest, das wir für die Einrückung verwenden möchten.
 
-### Beispielquellcode für die Funktion „Ein Leerzeichen pro Ebene für die Listeneinrückung verwenden“ mit Aspose.Words für .NET
+### Beispielquellcode für die Funktion „Ein Leerzeichen pro Ebene für Listeneinrückung verwenden“ mit Aspose.Words für .NET
 
 Hier ist der vollständige Beispielquellcode für die Funktion „Ein Leerzeichen pro Ebene für die Listeneinrückung verwenden“ mit Aspose.Words für .NET:
 
@@ -110,7 +110,7 @@ Sie können ein Leerzeichen pro Ebene für die Listeneinrückung verwenden, inde
  Speichern Sie das Dokument mit den angegebenen Optionen mithilfe von`Save` Methode der`Document` Klasse.
 
 #### F: Unterstützt Aspose.Words andere Zeichen für die Listeneinrückung?
-Ja, Aspose.Words unterstützt andere Zeichen zum Einrücken von Listen. Sie können Nicht-Leerzeichen wie Tabulatoren (`'\t'` ) oder andere Sonderzeichen, indem Sie die festlegen`ListIndentation.Character` Eigenschaft auf den gewünschten Charakter.
+Ja, Aspose.Words unterstützt andere Zeichen zum Einrücken von Listen. Sie können Zeichen verwenden, die keine Leerzeichen sind, beispielsweise Tabulatoren (`'\t'` ) oder andere Sonderzeichen, indem Sie die festlegen`ListIndentation.Character` Eigenschaft dem gewünschten Zeichen zu.
 
 #### F: Ist es möglich, die Anzahl der Leerzeichen pro Ebene für die Listeneinrückung anzupassen?
  Ja, Sie können die Anzahl der Leerzeichen pro Ebene für die Listeneinrückung anpassen, indem Sie den Wert von ändern`ListIndentation.Count` Eigentum in der`TxtSaveOptions` Klasse. Sie können die gewünschte Anzahl an Leerzeichen für jede Einrückungsebene angeben.

@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Kode ini mengakses bagian pertama dokumen menggunakan indeks`0` dan menghapus semua teks dalam rentang itu.
+ Kode ini mengakses bagian pertama dokumen menggunakan indeks.`0` dan menghapus semua teks dalam rentang itu.
 
 #### T: Dapatkah saya menghapus teks dari beberapa rentang dalam dokumen Word menggunakan Aspose.Words untuk .NET?
 

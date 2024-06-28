@@ -46,7 +46,7 @@ MemoryStream inStream = new MemoryStream(docBytes);
 
 ## Étape 5 : Création d'un document à partir de MemoryStream
 
- Enfin, créez un nouveau`Document` objet de la`MemoryStream`:
+ Enfin, créez un nouveau`Document` objet du`MemoryStream`:
 
 ```csharp
 Document docFromBytes = new Document(inStream);
@@ -82,7 +82,7 @@ Les limites du processus de conversion dépendent de l'outil ou de la bibliothè
 
 ### Puis-je conserver la mise en forme du document original ?
 
-Oui, avec le bon outil, vous pouvez conserver la mise en forme du document original pendant le processus de conversion. Aspose.Words for .NET, par exemple, offre une prise en charge complète pour conserver le formatage, les styles et d'autres éléments du fichier DOCX dans le document d'octets converti.
+Oui, avec le bon outil, vous pouvez conserver la mise en forme du document original pendant le processus de conversion. Aspose.Words for .NET, par exemple, offre une prise en charge complète de la conservation du formatage, des styles et d'autres éléments du fichier DOCX dans le document d'octets converti.
 
 ### Aspose est-il un outil fiable pour la conversion de DOCX en octets ?
 

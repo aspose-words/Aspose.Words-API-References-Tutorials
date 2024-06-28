@@ -61,7 +61,7 @@ doc.save("path/to/your/secured/document.docx");
 
 Aspose.Words for Java 中的密碼保護非常安全。它使用強大的加密演算法來確保您的文件免受未經授權的存取。
 
-### 我以後可以更改或刪除密碼嗎？
+### 我可以稍後更改或刪除密碼嗎？
 
 是的，您可以稍後使用 Aspose.Words for Java 變更或刪除密碼。只需載入文檔，進行必要的更改，然後再次儲存即可。
 

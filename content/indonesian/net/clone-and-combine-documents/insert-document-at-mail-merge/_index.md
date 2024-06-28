@@ -2,84 +2,153 @@
 title: Sisipkan Dokumen Pada Mail Merge
 linktitle: Sisipkan Dokumen Pada Mail Merge
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan dokumen ke dokumen lain selama penggabungan surat menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menyisipkan dokumen di bidang gabungan surat menggunakan Aspose.Words untuk .NET dalam tutorial langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-Dalam tutorial ini, kami akan memandu Anda tentang cara menyisipkan dokumen ke dalam dokumen lain selama penggabungan surat menggunakan fitur Sisipkan Dokumen Selama Penggabungan Surat di Aspose.Words untuk .NET. Ikuti langkah-langkah di bawah ini untuk memahami kode sumber dan melakukan penyisipan dokumen.
+## Perkenalan
 
-## Langkah 1: Memuat dokumen utama
+Selamat datang di dunia otomatisasi dokumen dengan Aspose.Words for .NET! Pernahkah Anda bertanya-tanya bagaimana cara menyisipkan dokumen secara dinamis ke dalam bidang tertentu dalam dokumen utama selama operasi penggabungan surat? Nah, Anda berada di tempat yang tepat. Tutorial ini akan memandu Anda langkah demi langkah melalui proses menyisipkan dokumen di bidang gabungan surat menggunakan Aspose.Words untuk .NET. Ini seperti menyusun sebuah puzzle, di mana setiap bagiannya terpasang dengan sempurna pada tempatnya. Jadi, mari selami!
 
-Untuk memulai, tentukan direktori untuk dokumen Anda dan muat dokumen utama ke dalam objek Dokumen. Begini caranya:
+## Prasyarat
+
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
+
+1.  Aspose.Words untuk .NET: Anda bisa[unduh versi terbaru di sini](https://releases.aspose.com/words/net/) . Jika Anda perlu membeli lisensi, Anda dapat melakukannya[Di Sini](https://purchase.aspose.com/buy) . Alternatifnya, Anda bisa mendapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) atau mencobanya dengan a[uji coba gratis](https://releases.aspose.com/).
+2. Lingkungan Pengembangan: Visual Studio atau C# IDE lainnya.
+3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membuat tutorial ini mudah.
+
+## Impor Namespace
+
+Hal pertama yang pertama, Anda harus mengimpor namespace yang diperlukan. Ini seperti landasan proyek Anda.
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+using System.Linq;
 ```
 
-## Langkah 2: Konfigurasikan Gabungan Surat
+Mari kita bagi prosesnya menjadi langkah-langkah yang dapat dikelola. Setiap langkah akan melanjutkan langkah sebelumnya, sehingga mengarahkan Anda pada solusi yang lengkap.
 
-Sekarang mari kita konfigurasikan gabungan surat dan tentukan bidang panggilan balik gabungan untuk menyisipkan dokumen ke dalam dokumen lain. Begini caranya:
+## Langkah 1: Menyiapkan Direktori Anda
 
-```csharp
-mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-```
-
-## Langkah 3: Menjalankan Mail Merge
-
-Kami akan menjalankan gabungan surat dengan memberikan nama bidang gabungan dan data terkait. Begini caranya:
+Sebelum Anda dapat mulai memasukkan dokumen, Anda perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Anda disimpan.
 
 ```csharp
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-```
-
-### Contoh kode sumber untuk Sisipkan Dokumen Pada Gabungan Surat menggunakan Aspose.Words untuk .NET
-
-Berikut adalah kode sumber lengkap untuk fitur Sisipkan Dokumen di Mail Merge Aspose.Words untuk .NET:
-
-```csharp
-// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
+## Langkah 2: Memuat Dokumen Utama
+
+Selanjutnya, Anda akan memuat dokumen utama. Dokumen ini berisi bidang gabungan tempat dokumen lain akan disisipkan.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+## Langkah 3: Mengatur Panggilan Balik Penggabungan Bidang
+
+Untuk menangani proses penggabungan, Anda perlu menyetel fungsi panggilan balik. Fungsi ini akan bertanggung jawab untuk memasukkan dokumen pada kolom gabungan yang ditentukan.
+
+```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-// Dokumen utama memiliki bidang gabungan yang disebut "Dokumen_1".
-// Data terkait untuk bidang ini berisi jalur yang sepenuhnya memenuhi syarat ke dokumen.
-// Itu harus dimasukkan ke bidang ini.
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
+```
 
+## Langkah 4: Menjalankan Mail Merge
+
+Sekarang saatnya untuk mengeksekusi gabungan surat. Ini adalah dimana keajaiban terjadi. Anda akan menentukan bidang gabungan dan dokumen yang harus disisipkan di bidang ini.
+
+```csharp
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
+```
+
+## Langkah 5: Menyimpan Dokumen
+
+Setelah gabungan surat selesai, Anda akan menyimpan dokumen yang dimodifikasi. Dokumen baru ini akan memiliki konten yang disisipkan tepat di tempat yang Anda inginkan.
+
+```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-Dengan kode ini Anda akan dapat menyisipkan dokumen ke dalam dokumen lain selama penggabungan surat menggunakan Aspose.Words untuk .NET. Dokumen yang dihasilkan akan disimpan dengan nama baru
+## Langkah 6: Membuat Penangan Panggilan Balik
 
+Pengendali panggilan balik adalah kelas yang membuat pemrosesan khusus untuk bidang gabungan. Ini memuat dokumen yang ditentukan dalam nilai bidang dan memasukkannya ke dalam bidang gabungan saat ini.
+
+```csharp
+private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
+{
+    void IFieldMergingCallback.FieldMerging(FieldMergingArgs args)
+    {
+        if (args.DocumentFieldName == "Document_1")
+        {
+            DocumentBuilder builder = new DocumentBuilder(args.Document);
+            builder.MoveToMergeField(args.DocumentFieldName);
+
+            Document subDoc = new Document((string)args.FieldValue);
+            InsertDocument(builder.CurrentParagraph, subDoc);
+
+            if (!builder.CurrentParagraph.HasChildNodes)
+                builder.CurrentParagraph.Remove();
+
+            args.Text = null;
+        }
+    }
+}
+```
+
+## Langkah 7: Memasukkan Dokumen
+
+Metode ini menyisipkan dokumen tertentu ke dalam paragraf atau sel tabel saat ini.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        foreach (Node srcNode in srcSection.Body)
+        {
+            if (srcNode.NodeType == NodeType.Paragraph)
+            {
+                Paragraph para = (Paragraph)srcNode;
+                if (para.IsEndOfSection && !para.HasChildNodes)
+                    continue;
+            }
+
+            Node newNode = importer.ImportNode(srcNode, true);
+            destinationParent.InsertAfter(newNode, insertionDestination);
+            insertionDestination = newNode;
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
+}
+```
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita menjelajahi cara menyisipkan dokumen ke dalam dokumen lain selama penggabungan surat menggunakan fitur Sisipkan Dokumen Selama Penggabungan Surat di Aspose.Words untuk .NET. Dengan mengonfigurasi gabungan surat dan menyediakan data yang diperlukan, Anda dapat menyusun dokumen secara dinamis dengan menggabungkan berbagai templat atau bagian dokumen. Aspose.Words untuk .NET menyediakan cara yang fleksibel dan canggih untuk mengelola skenario pembuatan dokumen yang kompleks, menjadikannya alat yang berharga untuk mengotomatiskan tugas pembuatan dan manipulasi dokumen.
+Dan itu dia! Anda telah berhasil menyisipkan dokumen ke dalam bidang tertentu selama operasi gabungan surat menggunakan Aspose.Words untuk .NET. Fitur canggih ini dapat menghemat banyak waktu dan tenaga, terutama saat menangani dokumen dalam jumlah besar. Anggap saja memiliki asisten pribadi yang mengurus semua pekerjaan berat untuk Anda. Jadi, silakan dan cobalah. Selamat membuat kode!
 
-### FAQ
+## FAQ
 
-#### Q: Apa tujuan menyisipkan dokumen ke dalam dokumen lain saat mail merge?
+### Bisakah saya menyisipkan banyak dokumen di bidang gabungan yang berbeda?
+ Ya kamu bisa. Cukup tentukan bidang gabungan yang sesuai dan jalur dokumen terkait di`MailMerge.Execute` metode.
 
-J: Memasukkan dokumen ke dalam dokumen lain selama penggabungan surat memungkinkan Anda menggabungkan templat atau bagian dokumen yang berbeda secara dinamis berdasarkan data yang disediakan selama proses penggabungan. Fitur ini sangat berguna ketika Anda ingin menyusun dokumen kompleks dengan menggabungkan berbagai templat atau bagian yang telah ditentukan sebelumnya menjadi dokumen akhir.
+### Apakah mungkin untuk memformat dokumen yang disisipkan secara berbeda dari dokumen utama?
+ Sangat! Anda dapat menggunakan`ImportFormatMode` parameter di`NodeImporter` untuk mengontrol pemformatan.
 
-#### T: Bagaimana cara menyisipkan dokumen ke dokumen lain selama penggabungan surat menggunakan Aspose.Words untuk .NET?
+### Bagaimana jika nama bidang gabungan bersifat dinamis?
+Anda dapat menangani nama bidang gabungan dinamis dengan meneruskannya sebagai parameter ke pengendali panggilan balik.
 
-J: Untuk menyisipkan dokumen ke dalam dokumen lain selama penggabungan surat menggunakan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
-1. Muat dokumen utama yang akan dijadikan dasar ke dalam objek Dokumen.
-2. Konfigurasikan gabungan surat dan tentukan panggilan balik gabungan bidang untuk menangani penyisipan dokumen.
-3. Jalankan gabungan surat dengan nama bidang gabungan dan data terkait (jalur ke dokumen yang akan disisipkan).
+### Bisakah saya menggunakan metode ini dengan format file yang berbeda?
+Ya, Aspose.Words mendukung berbagai format file termasuk DOCX, PDF, dan lainnya.
 
-#### T: Bagaimana cara menyesuaikan perilaku penyisipan selama penggabungan surat?
-
-J: Untuk menyesuaikan perilaku penyisipan selama penggabungan surat, Anda dapat mengimplementasikan FieldMergingCallback kustom dengan mewarisi antarmuka IFieldMergingCallback. Ini memungkinkan Anda mengontrol cara dokumen disisipkan dan digabungkan berdasarkan kebutuhan spesifik Anda.
-
-#### T: Dapatkah saya menyisipkan banyak dokumen selama penggabungan surat?
-
-J: Ya, Anda dapat menyisipkan beberapa dokumen selama penggabungan surat dengan menyediakan data yang sesuai untuk setiap bidang gabungan. Untuk setiap bidang gabungan yang memerlukan penyisipan dokumen, tentukan jalur ke dokumen terkait sebagai data.
-
-
+### Bagaimana cara menangani kesalahan selama proses penyisipan dokumen?
+Terapkan penanganan kesalahan di pengendali panggilan balik Anda untuk mengelola pengecualian apa pun yang mungkin terjadi.

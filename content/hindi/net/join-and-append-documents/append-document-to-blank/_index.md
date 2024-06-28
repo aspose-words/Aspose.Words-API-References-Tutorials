@@ -19,7 +19,7 @@ url: /hi/net/join-and-append-documents/append-document-to-blank/
 
 ## चरण 2: एक नया गंतव्य दस्तावेज़ बनाएँ
 
- कोई नया बनाएं`Document` गंतव्य दस्तावेज़ के लिए ऑब्जेक्ट.
+ कोई नया बनाएं`Document` गंतव्य दस्तावेज़ के लिए ऑब्जेक्ट।
 
 ```csharp
 // आपकी दस्तावेज़ निर्देशिका का पथ
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## चरण 5: गंतव्य दस्तावेज़ सहेजें
 
- अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
+अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");

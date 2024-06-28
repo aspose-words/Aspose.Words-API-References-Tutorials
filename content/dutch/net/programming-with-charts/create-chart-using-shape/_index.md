@@ -50,7 +50,7 @@ chart.Legend.Position = LegendPosition.Left;
 chart.Legend.Overlay = true;
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
  Sla het document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithCharts.CreateChartUsingShape.docx".
 
 ```csharp

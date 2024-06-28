@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Bước 4: Nhập và nối đoạn văn
 
-Lặp lại các đoạn trong tài liệu nguồn và nhập từng đoạn vào tài liệu đích bằng cách sử dụng`importer`. Nối các nút đã nhập vào phần nội dung của tài liệu đích.
+ Lặp lại các đoạn trong tài liệu nguồn và nhập từng đoạn vào tài liệu đích bằng cách sử dụng`importer`. Nối các nút đã nhập vào phần nội dung của tài liệu đích.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Giữ định dạng danh sách nguồn khi nhập các đoạn văn được đánh số.
+	//Giữ định dạng danh sách nguồn khi nhập các đoạn văn được đánh số.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

@@ -10,7 +10,7 @@ url: /ru/net/working-with-markdown/read-markdown-document/
 
 В этом примере мы покажем вам, как читать документ Markdown с помощью Aspose.Words для .NET. Markdown — это легкий язык разметки, используемый для форматирования обычного текста.
 
-## Шаг 1. Чтение документа Markdown
+## Шаг 1. Прочтите документ Markdown
 
  Сначала мы будем использовать`Document` class для чтения документа Markdown. Нам нужно указать путь к файлу Markdown для чтения.
 
@@ -28,7 +28,7 @@ Paragraph paragraph = doc.FirstSection.Body.LastParagraph;
 paragraph.ParagraphFormat.Style = doc.Styles["Quote"];
 ```
 
-## Шаг 3: Сохранение документа
+## Шаг 3. Сохраните документ.
 
 Наконец, мы можем сохранить документ в нужном формате.
 

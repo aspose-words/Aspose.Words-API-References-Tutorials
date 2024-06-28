@@ -109,11 +109,11 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### Vraag: Hoe markeer ik tekst met Markdown?
 
- A: Om tekst te markeren met Markdown, omringt u de tekst eenvoudigweg met de juiste symbolen. Gebruik`*` of`_` voor cursief,`**` of`__` voor vetgedrukt, en`~~` voor doorhalen.
+A: Om tekst te markeren met Markdown, omringt u de tekst eenvoudigweg met de juiste symbolen. Gebruik`*` of`_` voor cursief,`**` of`__` voor vetgedrukt, en`~~` voor doorhalen.
 
 #### Vraag: Kunnen we verschillende hoogtepunten in dezelfde tekst combineren?
 
- A: Ja, het is mogelijk om verschillende highlights in dezelfde tekst te combineren. U kunt een woord bijvoorbeeld vet en cursief maken door beide te gebruiken`**` En`*`over de hele wereld.
+ A: Ja, het is mogelijk om verschillende highlights in dezelfde tekst te combineren. U kunt een woord bijvoorbeeld vet en cursief maken door beide te gebruiken`**` En`*` over de hele wereld.
 
 #### Vraag: Welke markeringsopties zijn beschikbaar in Markdown?
 

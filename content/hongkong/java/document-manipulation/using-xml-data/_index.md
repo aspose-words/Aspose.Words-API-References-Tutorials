@@ -73,6 +73,6 @@ doc.save("Your Directory Path" + "MustacheSyntaxUsingDataSet.docx");
 
 是的，您可以控制在郵件合併期間是否修剪前導和尾隨空格，方法是使用`doc.getMailMerge().setTrimWhitespaces(false)`.
 
-### Mustache 語法是什麼？什麼時候該使用它？
+### Mustache 語法是什麼？
 
  Mustache 語法可讓您以更靈活的方式設定郵件合併欄位的格式。使用`doc.getMailMerge().setUseNonMergeFields(true)`啟用 Mustache 語法。

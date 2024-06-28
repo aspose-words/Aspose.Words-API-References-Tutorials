@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 2: Tetapkan folder font default
-Kemudian Anda dapat mengatur folder font default menggunakan`FontSettings.DefaultInstance` kelas dan`SetFontsFolder()` metode. Tentukan jalur ke folder font yang ingin Anda gunakan sebagai folder default.
+ Kemudian Anda dapat mengatur folder font default menggunakan`FontSettings.DefaultInstance` kelas dan`SetFontsFolder()`metode. Tentukan jalur ke folder font yang ingin Anda gunakan sebagai folder default.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

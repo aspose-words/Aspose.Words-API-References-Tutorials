@@ -78,4 +78,4 @@ Tak, możesz dokonać różnych modyfikacji dokumentu po załadowaniu go z okre�
 
 ### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla Java?
 
- Możesz zapoznać się z[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/) aby uzyskać wyczerpujące informacje, odniesienia do API i przykłady korzystania z biblioteki.
+ Możesz odwołać się do[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/) aby uzyskać wyczerpujące informacje, odniesienia do API i przykłady korzystania z biblioteki.

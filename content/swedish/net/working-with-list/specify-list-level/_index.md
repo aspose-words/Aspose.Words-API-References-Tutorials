@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-list/specify-list-level/
 ---
 
-I denna steg-för-steg handledning kommer vi att visa dig hur du anger listnivån i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+denna steg-för-steg handledning kommer vi att visa dig hur du anger listnivån i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
  För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Steg 6: Sluta formatera listan
 
- För att stoppa listformateringen, ställ in`null` till`List` egenskapen för dokumentgeneratorn:
+ För att stoppa listformateringen, ställ in`null` till`List`egenskapen för dokumentgeneratorn:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Skapa en numrerad lista baserad på en av Microsoft Word-listmallarna
+// Skapa en numrerad lista baserad på en av Microsoft Word-listmallarna.
 //och tillämpa den på dokumentbyggarens nuvarande stycke.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Skapa en punktlista baserad på en av Microsoft Word-listmallarna
+// Skapa en punktlista baserad på en av Microsoft Word-listmallarna.
 //och tillämpa den på dokumentbyggarens nuvarande stycke.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### F: Kan jag lägga till ytterligare nivåer till en numrerad lista i Aspose.Words?
 
- S: Ja, det är möjligt att lägga till ytterligare nivåer till en numrerad lista i Aspose.Words. De`ListLevel` class låter dig ställa in formateringsegenskaper för varje nivå i listan. Du kan ställa in alternativ som prefix, suffix, justering, indrag, etc. Detta låter dig skapa listor med flera nivåer av hierarki.
+ S: Ja, det är möjligt att lägga till ytterligare nivåer till en numrerad lista i Aspose.Words. De`ListLevel`class låter dig ställa in formateringsegenskaper för varje nivå i listan. Du kan ställa in alternativ som prefix, suffix, justering, indrag, etc. Detta låter dig skapa listor med flera nivåer av hierarki.
 
 

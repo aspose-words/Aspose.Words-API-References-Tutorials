@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 
 ## Krok 5: Uložte cílový dokument
 
- Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
@@ -64,7 +64,7 @@ Tím je dokončena implementace připojení dokumentu s možnostmi formátu impo
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// Určete, že pokud se číslování ve zdrojových a cílových dokumentech střetává,
-	//pak se použije číslování ze zdrojového dokumentu.
+	// pak se použije číslování ze zdrojového dokumentu.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

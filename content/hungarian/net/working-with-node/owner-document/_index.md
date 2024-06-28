@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-node/owner-document/
 ---
 
-Itt található egy lépésről lépésre bemutatott útmutató a C# forráskód leírásához, amely bemutatja, hogyan használhatja a szabadalmaztatott dokumentumfunkciókat az Aspose.Words for .NET-hez.
+Itt található egy lépésről lépésre bemutatott útmutató a C# forráskód leírásához, amely bemutatja, hogyan használhatja a védett dokumentumfunkciókat az Aspose.Words for .NET-hez.
 
 ## 1. lépés: Importálja a szükséges referenciákat
 Mielőtt elkezdené, győződjön meg arról, hogy importálta az Aspose.Words for .NET használatához szükséges hivatkozásokat a projektbe. Ez magában foglalja az Aspose.Words könyvtár importálását és a szükséges névterek hozzáadását a forrásfájlhoz.

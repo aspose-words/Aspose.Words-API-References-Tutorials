@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกการเรนเดอร์ metafile
 
- หากต้องการเปิดใช้งานหรือปิดใช้งานการปรับขนาดแบบอักษร WMF เป็นขนาด metafile เราจำเป็นต้องกำหนดค่า`MetafileRenderingOptions`วัตถุ. ในตัวอย่างนี้ เราปิดใช้งานการปรับขนาดแบบอักษรโดยการตั้งค่า`ScaleWmfFontsToMetafileSize`ทรัพย์สินเพื่อ`false`.
+ หากต้องการเปิดใช้งานหรือปิดใช้งานการปรับขนาดแบบอักษร WMF เป็นขนาด metafile เราจำเป็นต้องกำหนดค่า`MetafileRenderingOptions` วัตถุ วัตถุ ในตัวอย่างนี้ เราปิดใช้งานการปรับขนาดแบบอักษรโดยการตั้งค่า`ScaleWmfFontsToMetafileSize`ทรัพย์สินเพื่อ`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -55,7 +55,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = met
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-นั่นคือทั้งหมดที่ ! คุณได้เปิดใช้งานหรือปิดใช้งานการปรับขนาดฟอนต์ WMF เป็นขนาดเมตาไฟล์สำเร็จแล้วเมื่อทำการแปลง
+นั่นคือทั้งหมด! คุณได้เปิดใช้งานหรือปิดใช้งานการปรับขนาดฟอนต์ WMF เป็นขนาดเมตาไฟล์สำเร็จแล้วเมื่อทำการแปลง
 
 เอกสาร PDF โดยใช้ Aspose.Words สำหรับ .NET
 
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// หาก Aspose.Words ไม่สามารถแสดงบันทึก metafile บางส่วนเป็นกราฟิกแบบเวกเตอร์ได้อย่างถูกต้อง
+	//หาก Aspose.Words ไม่สามารถแสดงบันทึก metafile บางส่วนเป็นกราฟิกแบบเวกเตอร์ได้อย่างถูกต้อง
 	// จากนั้น Aspose.Words จะแสดงผล metafile นี้เป็นบิตแมป
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

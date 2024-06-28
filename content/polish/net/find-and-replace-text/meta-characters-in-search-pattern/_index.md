@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Krok 4: Wstawienie podziału strony w dokumencie
 
- Aby zilustrować użycie innego metaznaku, wstawimy podział strony do dokumentu za pomocą`InsertBreak` metoda z`BreakType.PageBreak` parametr. Najpierw przesuwamy kursor z`DocumentBuilder` na koniec dokumentu, następnie wstawiamy podział strony i nową linijkę tekstu:
+ Aby zilustrować użycie innego metaznaku, wstawimy podział strony do dokumentu za pomocą`InsertBreak` metoda z`BreakType.PageBreak` parametry. Najpierw przesuwamy kursor z`DocumentBuilder` na koniec dokumentu, następnie wstawiamy podział strony i nową linijkę tekstu:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### P: Jak wstawić podział strony w dokumencie przy użyciu Aspose.Words dla .NET?
 
-O: Aby zilustrować użycie innego metaznaku, wstawimy podział strony do dokumentu za pomocą`InsertBreak` metoda z`BreakType.PageBreak` parametr. Najpierw przesuwamy kursor z`DocumentBuilder` na koniec dokumentu, następnie wstawiamy podział strony i nową linijkę tekstu:
+O: Aby zilustrować użycie innego metaznaku, wstawimy podział strony do dokumentu za pomocą`InsertBreak` metoda z`BreakType.PageBreak` parametry. Najpierw przesuwamy kursor z`DocumentBuilder` na koniec dokumentu, następnie wstawiamy podział strony i nową linijkę tekstu:
 
 ```csharp
 builder. MoveToDocumentEnd();

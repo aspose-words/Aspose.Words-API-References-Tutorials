@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          // Terapkan tindakan khusus Anda di sini
          // Anda dapat mengakses informasi halaman melalui properti "args.PageIndex".
-         // Anda juga dapat mengubah opsi penyimpanan untuk setiap halaman satu per satu
+         // Anda juga dapat mengubah opsi penyimpanan untuk setiap halaman satu per satu.
      }
 }
 ```

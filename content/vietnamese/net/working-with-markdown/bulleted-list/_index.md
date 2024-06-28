@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## Bước 3: Tùy chỉnh định dạng Bullet
 
-Chúng ta có thể tùy chỉnh định dạng dấu đầu dòng bằng cách truy cập các thuộc tính của`ListFormat.List.ListLevels[0]`. Trong ví dụ này, chúng tôi sử dụng dấu gạch ngang "-" làm dấu đầu dòng.
+ Chúng ta có thể tùy chỉnh định dạng dấu đầu dòng bằng cách truy cập các thuộc tính của`ListFormat.List.ListLevels[0]`. Trong ví dụ này, chúng tôi sử dụng dấu gạch ngang "-" làm dấu đầu dòng.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

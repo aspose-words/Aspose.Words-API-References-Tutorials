@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Itt a dokumentumkészítővel három cellát tartalmazó táblázatot készítünk. Az első cella preferált szélessége 40 pont, a második cella preferált szélessége a táblázat szélességének 20%-a, a harmadik cellának pedig automatikus preferált szélessége van, amely beállítja
+Itt a dokumentumkészítővel három cellát tartalmazó táblázatot készítünk. Az első cella preferált szélessége 40 pont, a második cella szélessége a táblázat szélességének 20%-a, a harmadik cella pedig automatikusan beállítható.
 
   a rendelkezésre álló helytől függően.
 
@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 	builder.Writeln("Cell at 20% width");
-	// Automatikus méretű cella beszúrása.
+	// Szúrjon be egy automatikus méretű cellát.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;

@@ -15,7 +15,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel ver
 - Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
 ## Schritt 1: Definieren Sie das Dokumentenverzeichnis
- Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -61,7 +61,7 @@ Herzlichen Glückwunsch! Sie wissen jetzt, wie Sie das Schriftartenverzeichnis i
 
 #### F: Wie kann ich in Aspose.Words einen benutzerdefinierten Schriftartenordner festlegen?
 
- A: Um einen benutzerdefinierten Schriftartenordner in Aspose.Words festzulegen, können Sie den verwenden`FontsFolder` Klasse und die`SetFontsFolders` -Methode, die den Pfad zu dem Ordner angibt, der Ihre Schriftarten enthält.
+ A: Um einen benutzerdefinierten Schriftartenordner in Aspose.Words festzulegen, können Sie den verwenden`FontsFolder` Klasse und die`SetFontsFolders` Methode, die den Pfad zu dem Ordner angibt, der Ihre Schriftarten enthält.
 
 #### F: Kann ich in Aspose.Words mehrere Schriftartenordner festlegen?
 

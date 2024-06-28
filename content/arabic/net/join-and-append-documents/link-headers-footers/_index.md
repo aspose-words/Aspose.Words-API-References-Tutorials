@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
 
- بعد ذلك، تحتاج إلى تحميل المستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في`Document` مُنشئ وفقًا لأسماء المستندات الخاصة بك.
+بعد ذلك، تحتاج إلى تحميل المستندات المصدر والوجهة باستخدام Aspose.Words.`Document` فصل. قم بتحديث أسماء الملفات في`Document` مُنشئ وفقًا لأسماء المستندات الخاصة بك.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## الخطوة 4: ربط الرؤوس والتذييلات بالقسم السابق
 
-لربط رؤوس وتذييلات المستند المصدر بالقسم السابق في المستند الوجهة، يمكنك استخدام الأمر`LinkToPrevious` طريقة`HeadersFooters` مجموعة. بالمرور`true` كمعلمة، يمكنك تجاوز أي رؤوس أو تذييلات موجودة في المستند المصدر.
+ لربط رؤوس وتذييلات المستند المصدر بالقسم السابق في المستند الوجهة، يمكنك استخدام الأمر`LinkToPrevious` طريقة`HeadersFooters` مجموعة. بالمرور`true` كمعلمة، يمكنك تجاوز أي رؤوس أو تذييلات موجودة في المستند المصدر.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

@@ -1,6 +1,6 @@
 ---
-title: Zpracování textu pomocí maker aplikace Word VBA
-linktitle: Zpracování textu pomocí maker aplikace Word VBA
+title: Zpracování textu pomocí maker Word VBA
+linktitle: Zpracování textu pomocí maker Word VBA
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se pracovat s makry VBA v dokumentech aplikace Word pomocí Aspose.Words for .NET. Kompletní výukové programy s ukázkami kódu pro vytváření, úpravu a spouštění maker jazyka VBA v dokumentech aplikace Word.
 type: docs

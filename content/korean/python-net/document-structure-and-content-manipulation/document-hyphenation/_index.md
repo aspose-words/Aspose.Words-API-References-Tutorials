@@ -7,7 +7,7 @@ type: docs
 weight: 17
 url: /ko/python-net/document-structure-and-content-manipulation/document-hyphenation/
 ---
-하이픈 넣기 및 텍스트 흐름은 전문적인 느낌과 잘 구성된 Word 문서를 만드는 데 중요한 측면입니다. 보고서, 프레젠테이션 또는 기타 유형의 문서를 준비할 때 텍스트가 원활하게 흐르고 하이픈 연결이 적절하게 처리되는지 확인하면 콘텐츠의 가독성과 심미성을 크게 향상시킬 수 있습니다. 이 기사에서는 Aspose.Words for Python API를 사용하여 하이픈 넣기와 텍스트 흐름을 효과적으로 관리하는 방법을 살펴보겠습니다. 하이픈 이해부터 문서에 프로그래밍 방식으로 구현하는 것까지 모든 내용을 다룹니다.
+하이픈 넣기 및 텍스트 흐름은 전문적인 느낌과 잘 구성된 Word 문서를 만드는 데 중요한 측면입니다. 보고서, 프리젠테이션 또는 기타 유형의 문서를 준비할 때 텍스트가 원활하게 흐르고 하이픈 연결이 적절하게 처리되는지 확인하면 콘텐츠의 가독성과 심미성을 크게 향상시킬 수 있습니다. 이 기사에서는 Aspose.Words for Python API를 사용하여 하이픈 넣기와 텍스트 흐름을 효과적으로 관리하는 방법을 살펴보겠습니다. 하이픈 이해부터 문서에 프로그래밍 방식으로 구현하는 것까지 모든 내용을 다룹니다.
 
 ## 하이픈 이해
 
@@ -126,4 +126,4 @@ Python용 Aspose.Words의 줄 간격 설정을 사용하여 줄 사이의 간격
 
 ### Aspose.Words for Python 문서는 어디에서 액세스할 수 있나요?
 
- 다음에서 API 문서에 액세스할 수 있습니다.[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+다음에서 API 문서에 액세스할 수 있습니다.[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

@@ -36,7 +36,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Étape 3 : Modifier les paramètres de la section
-Pour modifier les paramètres de la section, nous utilisons les propriétés du`PageSetup` objet. Dans cet exemple, nous modifions les marges, la distance entre l’en-tête et le pied de page et l’espacement des colonnes de texte.
+ Pour modifier les paramètres de la section, nous utilisons les propriétés du`PageSetup`objet. Dans cet exemple, nous modifions les marges, la distance entre l’en-tête et le pied de page et l’espacement des colonnes de texte.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm
@@ -83,7 +83,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### Q : Comment charger un document et accéder à une section par index dans Aspose.Words pour .NET ?
 
- R : Pour charger le document Word dans une instance du`Document` et accéder à une section spécifique par index, vous pouvez utiliser le code suivant :
+ R : Pour charger le document Word dans une instance du`Document` classe et accéder à une section spécifique par index, vous pouvez utiliser le code suivant :
 
 ```csharp
 // Charger le document
@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### Q : Comment modifier les paramètres de section dans Aspose.Words pour .NET ?
 
- R : Pour modifier les paramètres d'une section, vous pouvez utiliser les propriétés du`PageSetup` objet. Dans cet exemple, nous modifions les marges, la distance entre l’en-tête et le pied de page et l’espacement des colonnes de texte.
+ R : Pour modifier les paramètres d'une section, vous pouvez utiliser les propriétés de la section.`PageSetup`objet. Dans cet exemple, nous modifions les marges, la distance entre l’en-tête et le pied de page et l’espacement des colonnes de texte.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm

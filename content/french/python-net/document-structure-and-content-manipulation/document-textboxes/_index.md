@@ -20,7 +20,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 - Python installé sur votre système.
 - Une compréhension de base de la programmation Python.
-- Aspose.Words pour les références de l’API Python.
+- Aspose.Words pour les références de l'API Python.
 
 ## Installation d'Aspose.Words pour Python
 
@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- Dans ce code, nous créons un nouveau`Document` et un`DocumentBuilder` . Le`insert_text_box`La méthode est utilisée pour ajouter une zone de texte au document. Vous pouvez personnaliser le contenu, la position et la taille de la zone de texte en fonction de vos besoins.
+ Dans ce code, nous créons un nouveau`Document` et un`DocumentBuilder` . Le`insert_text_box` La méthode est utilisée pour ajouter une zone de texte au document. Vous pouvez personnaliser le contenu, la position et la taille de la zone de texte en fonction de vos besoins.
 
 ## Formatage des zones de texte
 

@@ -81,7 +81,7 @@ Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go z
 
 #### P: Jak mogę nadać styl przypisom końcowym w Aspose.Words?
 
- O: Aby nadać styl przypisom końcowym w Aspose.Words, możesz użyć metody`EndnoteOptions` klasa i`SeparatorNoteTextStyle` nieruchomość. Za pomocą tej właściwości możesz określić styl czcionki, rozmiar, kolor itp. dla przypisów końcowych.
+O: Aby nadać styl przypisom końcowym w Aspose.Words, możesz użyć metody`EndnoteOptions` klasa i`SeparatorNoteTextStyle` nieruchomość. Za pomocą tej właściwości możesz określić styl czcionki, rozmiar, kolor itp. dla przypisów końcowych.
 
 #### P: Czy można dostosować numerację przypisów końcowych w dokumencie?
 
@@ -97,4 +97,4 @@ Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go z
 
 #### P: Czy można kontynuować numerowanie przypisów końcowych pomiędzy sekcjami dokumentu?
 
- Odpowiedź: Tak, możliwe jest kontynuowanie numerowania przypisów końcowych pomiędzy sekcjami dokumentu. Użyj`RestartRule` własność`EndnoteOptions` class i ustaw ją na`RestartContinuous` aby umożliwić kontynuację numeracji pomiędzy sekcjami.
+Odpowiedź: Tak, możliwe jest kontynuowanie numerowania przypisów końcowych pomiędzy sekcjami dokumentu. Użyj`RestartRule` własność`EndnoteOptions` class i ustaw ją na`RestartContinuous` aby umożliwić kontynuację numeracji pomiędzy sekcjami.

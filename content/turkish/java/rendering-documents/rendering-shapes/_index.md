@@ -12,7 +12,7 @@ Belge işleme ve işleme dünyasında Aspose.Words for Java güçlü bir araç o
 
 ## 1. Aspose.Words for Java'ya Giriş
 
-Aspose.Words for Java, geliştiricilerin Word belgeleriyle programlı olarak çalışmasına olanak tanıyan bir Java API'sidir. Word belgelerini oluşturmak, düzenlemek ve dönüştürmek için çok çeşitli özellikler sunar.
+Aspose.Words for Java, geliştiricilerin Word belgeleriyle programlı olarak çalışmasına olanak tanıyan bir Java API'sidir. Word belgelerini oluşturmak, düzenlemek ve dönüştürmek için çok çeşitli özellikler sağlar.
 
 ## 2. Geliştirme Ortamınızı Kurma
 
@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 Tebrikler! Aspose.Words for Java'da şekillerin nasıl oluşturulacağını başarıyla öğrendiniz. Bu yetenek, Word belgeleriyle programlı olarak çalışırken bir olasılıklar dünyasının kapılarını açar.
 
-## 9. SSS
+## 9.SSS
 
 ### S1: Tek bir belgede birden fazla şekil oluşturabilir miyim?
 

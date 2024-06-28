@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Hyperlinks.docx");
 
 ## ขั้นตอนที่ 3: เรียกดูฟิลด์เอกสาร
 
- เราใช้ก`foreach` วนซ้ำเพื่อวนซ้ำทุกฟิลด์ที่มีอยู่ในเอกสาร
+ เราใช้ก`foreach`วนซ้ำเพื่อวนซ้ำทุกฟิลด์ที่มีอยู่ในเอกสาร
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ foreach(Field field in doc.Range.Fields)
 
 #### ถาม: ฉันจะแทรกฟิลด์ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: หากต้องการแทรกฟิลด์ลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`DocumentBuilder.InsertField` วิธีการระบุรหัสฟิลด์ที่เหมาะสม ตัวอย่างเช่นคุณสามารถใช้`builder.InsertField("MERGEFIELD CustomerName")` เพื่อแทรกเขตข้อมูลผสานลงในเอกสาร
+ ตอบ: หากต้องการแทรกฟิลด์ลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`DocumentBuilder.InsertField` วิธีการระบุรหัสฟิลด์ที่เหมาะสม ตัวอย่างเช่นคุณสามารถใช้`builder.InsertField("MERGEFIELD CustomerName")`เพื่อแทรกเขตข้อมูลผสานลงในเอกสาร
 
 #### ถาม: ฉันจะอัปเดตฟิลด์ในเอกสารโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: หากต้องการอัปเดตฟิลด์เอกสารโดยใช้ Aspose.Words สำหรับ .NET คุณสามารถใช้`Document.UpdateFields`วิธี. การดำเนินการนี้จะอัปเดตฟิลด์ทั้งหมดที่มีอยู่ในเอกสาร เช่น ฟิลด์ผสาน ฟิลด์วันที่ ฯลฯ
+ ตอบ: หากต้องการอัปเดตฟิลด์เอกสารโดยใช้ Aspose.Words สำหรับ .NET คุณสามารถใช้`Document.UpdateFields` วิธี. การดำเนินการนี้จะอัปเดตฟิลด์ทั้งหมดที่มีอยู่ในเอกสาร เช่น ฟิลด์ผสาน ฟิลด์วันที่ ฯลฯ
 
 #### ถาม: ฉันจะดึงค่าของฟิลด์เฉพาะใน Aspose.Words สำหรับ .NET ได้อย่างไร
 

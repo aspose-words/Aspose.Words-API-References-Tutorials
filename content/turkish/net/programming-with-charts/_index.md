@@ -26,10 +26,10 @@ Bu eğitimlerle Word belgelerinizi görsel olarak çekici ve bilgilendirici graf
 | [XYAxis Özelliklerini Tanımlayın](./define-xyaxis-properties/) | Aspose.Words for .NET kullanarak bir grafikte XY ekseni özelliklerini nasıl tanımlayacağınızı öğrenin. X ve Y eksenleri için özelleştirme seçenekleri gösterilmiştir. |
 | [Eksene Tarih Saat Değerleri](./date-time-values-to-axis/) | Aspose.Words for .NET'i kullanarak bir grafiğin eksenine tarih saat değerlerini nasıl ekleyeceğinizi öğrenin. |
 | [Eksen İçin Sayı Formatı](./number-format-for-axis/) | Aspose.Words for .NET kullanarak bir grafikteki eksen için sayı formatını nasıl ayarlayacağınızı öğrenin. |
-| [Eksen Sınırları](./bounds-of-axis/) | Aspose.Words for .NET kullanarak eksende görüntülenen değer aralığını kontrol ederek bir grafikte eksenin sınırlarını nasıl ayarlayacağınızı öğrenin. |
+| [Eksen Sınırları](./bounds-of-axis/) | Eksen üzerinde görüntülenen değer aralığını kontrol eden Aspose.Words for .NET'i kullanarak bir grafikte bir eksenin sınırlarını nasıl ayarlayacağınızı öğrenin. |
 | [Eksen Üzerindeki Etiketler Arasındaki Aralık Birimi](./interval-unit-between-labels-on-axis/) | Aspose.Words for .NET kullanarak bir grafiğin eksenindeki etiketler arasındaki aralık birimini nasıl ayarlayacağınızı öğrenin. |
 | [Grafik Eksenini Gizle](./hide-chart-axis/) | Aspose.Words for .NET kullanarak bir belgede grafik eksenini nasıl gizleyeceğinizi öğrenin. Daha net ve daha odaklanmış bir grafik görünümü için ekseni gizleyin. |
-| [Çok Satırlı Etiket Hizalamasını işaretleyin](./tick-multi-line-label-alignment/) | Aspose.Words for .NET'i kullanarak çok satırlı işaret etiketlerini grafik ekseninde nasıl hizalayacağınızı öğrenin. |
+| [Çok Satırlı Etiket Hizalamasını Kene](./tick-multi-line-label-alignment/) | Aspose.Words for .NET'i kullanarak çok satırlı işaret etiketlerini grafik ekseninde nasıl hizalayacağınızı öğrenin. |
 | [Grafik Veri Etiketi](./chart-data-label/) | Veri noktaları hakkında ek bilgi sağlamak için Aspose.Words for .NET'i kullanarak bir grafiğe veri etiketlerini nasıl ekleyeceğinizi ve özelleştireceğinizi öğrenin. |
 | [Veri Etiketleri İçin Varsayılan Seçenekler](./default-options-for-data-labels/) | Aspose.Words for .NET kullanarak bir grafikteki veri etiketleri için varsayılan seçenekleri nasıl ayarlayacağınızı öğrenin. |
 | [Tek Grafik Veri Noktası](./single-chart-data-point/) | Aspose.Words for .NET'i kullanarak bir grafikteki tek bir veri noktasını nasıl özelleştireceğinizi öğrenin. |

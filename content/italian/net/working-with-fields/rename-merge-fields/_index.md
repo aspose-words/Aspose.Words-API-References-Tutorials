@@ -88,7 +88,7 @@ Segui questi passaggi per rinominare i campi di unione nel documento utilizzando
 
 #### D: Come posso rinominare i campi uniti in un documento Word utilizzando Aspose.Words per .NET?
 
- R: Per rinominare i campi uniti in un documento Word utilizzando Aspose.Words per .NET, è possibile scorrere i campi nel documento utilizzando il comando`FieldMergingArgs` classe e utilizzare il file`FieldMergingArgs.FieldName` metodo per rinominare il campo.
+ R: Per rinominare i campi uniti in un documento Word utilizzando Aspose.Words per .NET, è possibile scorrere i campi nel documento utilizzando il comando`FieldMergingArgs` classe e utilizzare il file`FieldMergingArgs.FieldName` metodo per rinominare i campi.
 
 #### D: È possibile rinominare solo alcuni campi uniti in un documento Word con Aspose.Words per .NET?
 

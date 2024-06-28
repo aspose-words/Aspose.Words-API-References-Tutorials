@@ -75,7 +75,7 @@ A: Aspose.Words for .NET を使用して Word 文書にパスワード保護を�
 
 #### Q: Protect メソッドの ProtectionType パラメーターの目的は何ですか?
 
- A:`ProtectionType`のパラメータ`Protect`Aspose.Words for .NET のメソッドを使用すると、ドキュメントに適用する保護の種類を指定できます。パスワード保護の場合は、次のように設定します。`ProtectionType`に`NoProtection`ドキュメントがパスワードで保護されていることを示します。
+ A:`ProtectionType`のパラメータ`Protect` Aspose.Words for .NET のメソッドを使用すると、ドキュメントに適用する保護の種類を指定できます。パスワード保護の場合は、次のように設定します。`ProtectionType`に`NoProtection`ドキュメントがパスワードで保護されていることを示します。
 
 #### Q: Aspose.Words for .NET を使用して Word 文書からパスワード保護を削除できますか?
 

@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## ขั้นตอนที่ 3: การสร้างบุ๊กมาร์กที่ซ้อนกัน
 
-นอกจากนี้เรายังสามารถสร้างบุ๊กมาร์กแบบซ้อนภายในบุ๊กมาร์กหลักได้ เราก็ใช้เหมือนกัน`StartBookmark` และ`EndBookmark` วิธีสร้างและสิ้นสุดบุ๊กมาร์กที่ซ้อนกัน:
+ นอกจากนี้เรายังสามารถสร้างบุ๊กมาร์กแบบซ้อนภายในบุ๊กมาร์กหลักได้ เราก็ใช้เหมือนกัน`StartBookmark` และ`EndBookmark` วิธีสร้างและสิ้นสุดบุ๊กมาร์กที่ซ้อนกัน:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 
 #### ถาม: จะสร้างเอกสารใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: หากต้องการสร้างเอกสารใน Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`Document` ระดับ. นี่คือโค้ดตัวอย่าง:
+ ตอบ: หากต้องการสร้างเอกสารใน Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`Document` ชั้นเรียน นี่คือโค้ดตัวอย่าง:
 
 ```csharp
 Document doc = new Document();

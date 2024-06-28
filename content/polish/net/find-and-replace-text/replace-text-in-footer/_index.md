@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/find-and-replace-text/replace-text-in-footer/
 ---
 
-W tym artykule przeanalizujemy powyższy kod źródłowy C#, aby zrozumieć, jak używać funkcji Zamień tekst w stopce w bibliotece Aspose.Words dla .NET. Ta funkcja umożliwia wyszukiwanie i zastępowanie określonego tekstu w stopkach dokumentów programu Word.
+W tym artykule zbadamy powyższy kod źródłowy C#, aby zrozumieć, jak używać funkcji Zamień tekst w stopce w bibliotece Aspose.Words dla .NET. Ta funkcja umożliwia wyszukiwanie i zastępowanie określonego tekstu w stopkach dokumentów programu Word.
 
 ## Warunki wstępne
 

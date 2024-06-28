@@ -72,4 +72,4 @@ Il s'agissait d'un exemple de code source permettant de spécifier la localisati
 
 #### Q : Comment puis-je obtenir les paramètres régionaux actuellement utilisés pour un champ dans Aspose.Words for .NET ?
 
- R : Pour obtenir les paramètres régionaux actuellement utilisés pour un champ dans Aspose.Words for .NET, vous pouvez utiliser les paramètres régionaux du champ.`Field.LocaleId` propriété. Cela vous permettra d'obtenir l'identifiant de locale associé au champ.
+ R : Pour obtenir les paramètres régionaux actuellement utilisés pour un champ dans Aspose.Words for .NET, vous pouvez utiliser les paramètres régionaux du champ.`Field.LocaleId`propriété. Cela vous permettra d'obtenir l'identifiant de locale associé au champ.

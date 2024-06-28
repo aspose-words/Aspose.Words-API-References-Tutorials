@@ -175,7 +175,7 @@ Az Aspose.Words for Java használatának megkezdéséhez kövesse az alábbi lé
 
 ### Átalakíthatok egy betöltött szöveges dokumentumot más formátumba?
 
- Igen, az Aspose.Words for Java lehetővé teszi a betöltött szöveges dokumentumok különböző formátumokba konvertálását, beleértve a DOCX-et, PDF-t és egyebeket. Használhatja a`Document` osztály a konverziók végrehajtásához. Tekintse meg a dokumentációt konkrét konverziós példákért.
+ Igen, az Aspose.Words for Java lehetővé teszi a betöltött szöveges dokumentumok különböző formátumokba konvertálását, beleértve a DOCX-et, PDF-t és egyebeket. Használhatja a`Document` osztályt a konverziók végrehajtásához. Tekintse meg a dokumentációt konkrét konverziós példákért.
 
 ### Hogyan kezelhetem a szóközöket a betöltött szöveges dokumentumokban?
 

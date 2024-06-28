@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Adım 5: Dönüştürülen belgeyi kaydedin
- Kullan`Save()`Belgeyi, belirtilen belge dizininde metne dönüştürülmüş alanlarla kaydetme yöntemi.
+ Kullan`Save()` Belgeyi, belirtilen belge dizininde metne dönüştürülmüş alanlarla kaydetme yöntemi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

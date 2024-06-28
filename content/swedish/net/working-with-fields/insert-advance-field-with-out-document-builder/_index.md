@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Steg 3: Infoga det avancerade fältet
+## Steg 3: Infoga de avancerade fälten
 
  Vi använder`AppendField()` metod för att infoga ett avancerat fält i stycket.
 

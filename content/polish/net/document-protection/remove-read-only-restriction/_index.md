@@ -93,4 +93,4 @@ Odp.: Nie, nie można usunąć ograniczenia tylko do odczytu z dokumentu program
 
 #### P: Czy można usunąć inne rodzaje ochrony dokumentów za pomocą Aspose.Words dla .NET?
 
-O: Tak, Aspose.Words dla .NET udostępnia różne metody usuwania innych typów ochrony dokumentów, takich jak ochrona hasłem, ochrona formularzy lub ograniczenia edycji dokumentów. W zależności od rodzaju ochrony zastosowanej w dokumencie możesz użyć odpowiednich metod i właściwości dostarczonych przez Aspose.Words, aby usunąć określoną ochronę i umożliwić edycję dokumentu.
+Odp.: Tak, Aspose.Words dla .NET udostępnia różne metody usuwania innych typów ochrony dokumentów, takich jak ochrona hasłem, ochrona formularzy lub ograniczenia edycji dokumentów. W zależności od rodzaju ochrony zastosowanej w dokumencie możesz użyć odpowiednich metod i właściwości dostarczonych przez Aspose.Words, aby usunąć określoną ochronę i umożliwić edycję dokumentu.

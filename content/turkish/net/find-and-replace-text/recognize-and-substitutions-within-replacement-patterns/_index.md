@@ -110,7 +110,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### S: Örnek kaynak kodu, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanıma ve Değiştirmeler" özelliği için neyi gösteriyor?
 
-C: Örnek kaynak kodu, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanıma ve Değiştirmeler" özelliğinin kullanımını göstermektedir. Bir belgenin nasıl oluşturulacağını, metin ekleneceğini, metin aramasının nasıl gerçekleştirileceğini ve normal ifadeler kullanarak nasıl değiştirileceğini ve eşleşen metni dinamik olarak dönüştürmek için değiştirme modelinde yakalanan grupların nasıl kullanılacağını gösterir.
+C: Örnek kaynak kodu, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanıma ve Değiştirme" özelliğinin kullanımını göstermektedir. Bir belgenin nasıl oluşturulacağını, metin ekleneceğini, metin aramasının nasıl gerçekleştirileceğini ve normal ifadeler kullanarak nasıl değiştirileceğini ve eşleşen metni dinamik olarak dönüştürmek için değiştirme modelinde yakalanan grupların nasıl kullanılacağını gösterir.
 
 #### S: Aspose.Words for .NET'te düzenli ifadelerin kullanımına ilişkin daha fazla bilgi ve örneği nerede bulabilirim?
 
@@ -126,4 +126,4 @@ C: Düzenli ifadeler ve yakalanan gruplar, Aspose.Words for .NET'te metin arama 
 
 #### S: "Değiştirme Modelleri İçinde Tanıma ve Değiştirme" özelliğini İngilizce dışındaki dillerde kullanabilir miyim?
 
-C: Evet, Aspose.Words for .NET'in "Değiştirme Modelleri İçinde Tanıma ve Değiştirmeler" özelliği İngilizce dışındaki dillerle de kullanılabilir. Düzenli ifadeler dilden bağımsızdır ve herhangi bir dildeki belirli kalıplarla eşleşecek şekilde hazırlanabilir. Normal ifade modelini istediğiniz dile ve tanımak ve değiştirmek istediğiniz belirli metin kalıplarına uyacak şekilde ayarlayabilirsiniz.
+C: Evet, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanıma ve Değiştirmeler" özelliği İngilizce dışındaki dillerle de kullanılabilir. Düzenli ifadeler dilden bağımsızdır ve herhangi bir dildeki belirli kalıplarla eşleşecek şekilde hazırlanabilir. Normal ifade modelini istediğiniz dile ve tanımak ve değiştirmek istediğiniz belirli metin kalıplarına uyacak şekilde ayarlayabilirsiniz.

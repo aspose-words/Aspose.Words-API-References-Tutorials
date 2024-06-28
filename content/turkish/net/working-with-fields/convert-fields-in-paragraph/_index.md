@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-Bu kod, belgenin son paragrafındaki alanları filtrelemek için LINQ yöntemlerinin bir birleşimini kullanır ve ardından bunları çağırarak bunları düz metne dönüştürür.`Unlink()` yöntem.
+ Bu kod, belgenin son paragrafındaki alanları filtrelemek için LINQ yöntemlerinin bir birleşimini kullanır ve ardından bunları çağırarak bunları düz metne dönüştürür.`Unlink()` yöntem.
 
 ## Adım 4: Değiştirilen belgeyi kaydetme
 
@@ -93,4 +93,4 @@ C: Aspose.Words, tarih formatları, sayı formatları, metin formatları, para b
 
 #### S: Aspose.Words ile bir Word belgesindeki dönüşüm alanı nasıl güncellenir?
 
-C: Bir Word belgesindeki dönüştürme alanını Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem belgede döngü yapar ve dönüştürme alanları da dahil olmak üzere tüm alanları günceller ve değerleri geçerli verilere göre yeniden hesaplar.
+C: Bir Word belgesindeki dönüştürme alanını Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem, belge boyunca döngü yapar ve dönüşüm alanları da dahil olmak üzere tüm alanları günceller, değerleri mevcut verilere göre yeniden hesaplar.

@@ -2,7 +2,7 @@
 title: Advance HTML dokumentumok mentési lehetőségek Aspose.Words Java
 linktitle: HTML dokumentumok mentése ezzel
 second_title: Aspose.Words Java Document Processing API
-description: Ebben az oktatóanyagban az Aspose.Words for Java különféle fejlett HTML-dokumentummentési lehetőségeivel foglalkozunk. Ezek a lehetőségek kiváló minőségű HTML létrehozását teszik lehetővé
+description: Ebben az oktatóanyagban az Aspose.Words for Java különféle fejlett HTML-dokumentummentési lehetőségeivel foglalkozunk. Ezek a lehetőségek kiváló minőségű HTML létrehozását teszik lehetővé.
 type: docs
 weight: 16
 url: /hu/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. Következtetés
 Ebben az oktatóanyagban az Aspose.Words for Java által biztosított speciális HTML-dokumentummentési lehetőségeket fedeztük fel. Ezek a beállítások lehetővé teszik az átalakítási folyamat finom vezérlését, lehetővé téve olyan HTML-dokumentumok létrehozását, amelyek nagyon hasonlítanak az eredeti Word-dokumentumokra.
 
-## 12. GYIK
+## 12.GYIK
 Íme néhány gyakran ismételt kérdés az Aspose.Words for Java és HTML-dokumentummentési beállításokkal kapcsolatban:
 
 ### 1. kérdés: Hogyan konvertálhatom vissza a HTML-t Word formátumba az Aspose.Words for Java használatával?

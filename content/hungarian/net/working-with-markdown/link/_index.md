@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. lépés: Hivatkozás beszúrása
 
- A hivatkozás segítségével beszúrhatunk egy hivatkozást`Insertlink` a dokumentumgenerátor módszere. Meg kell adnunk a link szövegét, itt az "Aspose", valamint a cél URL-t.
+ A hivatkozást a`InsertHyperlink` a dokumentumgenerátor módszere. Meg kell adnunk a link szövegét, itt az "Apose"-t, valamint a cél URL-t.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com", false);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
 
 ### Példa forráskódra az Aspose.Words for .NET-hez való hivatkozásokhoz
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", false);
 DocumentBuilder builder = new DocumentBuilder();
 
 // Link beszúrása.
-builder.Insertlink("Aspose", "https://www.aspose.com", false);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
 Gratulálok ! Most már megtanulta, hogyan kell használni a linkek funkciót az Aspose.Words for .NET-hez.
 

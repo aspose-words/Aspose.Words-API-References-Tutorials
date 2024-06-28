@@ -23,7 +23,7 @@ url: /zh/java/document-printing/printing-specific-document-pages/
 
 ## 创建一个新的 Java 项目
 
-首先，我们在您首选的 IDE 中创建一个新的 Java 项目。您可以将其命名为任何您喜欢的名称。该项目将作为我们打印特定文档页面的工作区。
+首先，我们在您首选的 IDE 中创建一个新的 Java 项目。您可以将其命名为任何您喜欢的名称。该项目将作为我们打印特定文档页面的工作空间。
 
 ## 添加 Aspose.Words 依赖项
 

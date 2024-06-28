@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);
 ```
 
-นั่นคือทั้งหมดที่ ! คุณได้เปิดใช้งานการแก้ไขรูปภาพสำเร็จแล้วในขณะที่แปลงเอกสารเป็น PDF โดยใช้ Aspose.Words สำหรับ .NET
+นั่นคือทั้งหมด! คุณได้เปิดใช้งานการแก้ไขรูปภาพสำเร็จแล้วในขณะที่แปลงเอกสารเป็น PDF โดยใช้ Aspose.Words สำหรับ .NET
 
 ### ตัวอย่างซอร์สโค้ดสำหรับการแก้ไขรูปภาพด้วย Aspose.Words สำหรับ .NET
 

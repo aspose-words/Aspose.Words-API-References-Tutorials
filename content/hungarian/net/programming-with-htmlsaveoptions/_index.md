@@ -7,7 +7,7 @@ type: docs
 weight: 1620
 url: /hu/net/programming-with-htmlsaveoptions/
 ---
-Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok manipulálására és generálására .NET-alkalmazásokban. Az Aspose.Words for .NET referenciawebhelyen található oktatóanyagok értékes forrást biztosítanak azoknak a fejlesztőknek, akik szeretnék elsajátítani ezt a könyvtárat, és teljes mértékben kiaknázni a funkcióit.
+Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok manipulálására és generálására .NET-alkalmazásokban. Az Aspose.Words for .NET referenciawebhelyen található oktatóanyagok értékes forrást biztosítanak azoknak a fejlesztőknek, akik szeretnék elsajátítani ezt a könyvtárat és teljes mértékben kiaknázni annak funkcióit.
 
 A „Szövegfeldolgozás HtmlSaveOptions használatával” oktatóanyag az Aspose.Words for .NET HTML-mentési beállításainak használatára összpontosít. Ez az oktatóanyag végigvezeti a fejlesztőket a Word-dokumentumok HTML-formátumba konvertálásának testreszabásához rendelkezésre álló különféle lehetőségeken. A részletes kódpéldák bemutatják ezen opciók használatát és a kívánt konverziós eredményeket.
 

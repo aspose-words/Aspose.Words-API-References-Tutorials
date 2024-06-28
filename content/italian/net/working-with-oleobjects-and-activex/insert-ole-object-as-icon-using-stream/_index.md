@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using-stream/
 ---
 
-Ecco una guida passo passo per spiegare il codice sorgente C# di seguito che illustra come inserire un oggetto OLE come icona utilizzando un flusso con Aspose.Words per .NET.
+Ecco una guida passo passo per spiegare il codice sorgente C# riportato di seguito che illustra come inserire un oggetto OLE come icona utilizzando un flusso con Aspose.Words per .NET.
 
 ## Passaggio 1: importa i riferimenti necessari
 Prima di iniziare, assicurati di aver importato i riferimenti necessari per utilizzare Aspose.Words per .NET nel tuo progetto. Ciò include l'importazione della libreria Aspose.Words e l'aggiunta degli spazi dei nomi richiesti al file di origine.

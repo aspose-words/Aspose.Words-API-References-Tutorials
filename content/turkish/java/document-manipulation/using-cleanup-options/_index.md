@@ -114,7 +114,7 @@ doc.getMailMerge().execute(new String[] { "FullName", "Company", "Address", "Add
 doc.save("WorkingWithCleanupOptions.RemoveContainingFields.docx");
 ```
 
-Bu örnekte, birleştirme alanlarına sahip bir belge açıyoruz, temizleme seçeneklerini içeren alanları kaldıracak şekilde ayarlıyoruz ve adres-mektup birleştirmeyi verilerle yürütüyoruz. Birleştirmeden sonra alanların kendileri belgeden kaldırılacaktır.
+Bu örnekte, birleştirme alanlarına sahip bir belge açıyoruz, temizleme seçeneklerini içeren alanları kaldıracak şekilde ayarlıyoruz ve adres-mektup birleştirmeyi verilerle yürütüyoruz. Birleştirmeden sonra alanların kendisi belgeden kaldırılacaktır.
 
 ## Adım 6: Boş Tablo Satırlarını Kaldırma
 
@@ -158,7 +158,7 @@ Aspose.Words for Java'daki temizleme seçenekleri, adres-mektup birleştirme iş
 
 ###  Ayarladığımda ne olur?`REMOVE_CONTAINING_FIELDS` option?
 
- ayarlamak`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` seçeneği, adres-mektup birleştirme işlemi sırasında, içerdiği paragraf da dahil olmak üzere birleştirme alanının tamamını belgeden kaldıracaktır. Bu, birleştirme alanlarını ve bunlarla ilişkili metinleri ortadan kaldırmak istediğinizde kullanışlıdır.
+ ayarlamak`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` Bu seçenek, adres-mektup birleştirme işlemi sırasında, içerdiği paragraf da dahil olmak üzere birleştirme alanının tamamını belgeden kaldıracaktır. Bu, birleştirme alanlarını ve bunlarla ilişkili metinleri ortadan kaldırmak istediğinizde kullanışlıdır.
 
 ### Kullanılmayan birleştirme alanlarını belgemden nasıl kaldırabilirim?
 

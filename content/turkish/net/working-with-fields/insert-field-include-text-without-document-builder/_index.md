@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
 
-Aşağıda Aspose.Words for .NET'in "FieldIncludeText alanı ekle" işlevini kullanan C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. İstediğiniz sonuçları elde etmek için her adımı dikkatlice takip ettiğinizden emin olun.
+Aşağıda, Aspose.Words for .NET'in "FieldIncludeText alanı ekle" işlevini kullanan C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. İstediğiniz sonuçları elde etmek için her adımı dikkatlice takip ettiğinizden emin olun.
 
 ## Adım 1: Belge Dizini Kurulumu
 
@@ -97,4 +97,4 @@ C: Belge oluşturucu olmadan bir metin içerme alanı eklemek, Word belgesinin y
 
 #### S: Aspose.Words for .NET ile bir Word belgesindeki metin ekleme alanının görünümünü özelleştirebilir miyim?
 
-C: Metin ekleme alanı, Word belgesindeki görünümünü doğrudan özelleştirmez. Ancak, Aspose.Words for .NET'te bulunan paragraf özelliklerini, yazı tipi özelliklerini ve diğer biçimlendirme nesnelerini kullanarak dahil edilen metni biçimlendirebilirsiniz.
+C: Metin alanının eklenmesi, Word belgesindeki görünümünü doğrudan özelleştirmez. Ancak, Aspose.Words for .NET'te bulunan paragraf özelliklerini, yazı tipi özelliklerini ve diğer biçimlendirme nesnelerini kullanarak dahil edilen metni biçimlendirebilirsiniz.

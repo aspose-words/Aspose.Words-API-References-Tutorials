@@ -1,7 +1,7 @@
 ---
 title: Dokumentoptionen und -einstellungen
 linktitle: Dokumentoptionen und -einstellungen
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Entdecken Sie Aspose.Words-Tutorials zu Dokumentoptionen und -einstellungen in Python und .NET. Erfahren Sie anhand von Schritt-für-Schritt-Anleitungen und Quellcode-Beispielen, wie Sie die Erstellung und Formatierung von Dokumenten optimieren.
 type: docs
 weight: 14

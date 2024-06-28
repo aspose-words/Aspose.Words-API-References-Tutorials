@@ -1,6 +1,6 @@
 ---
-title: セットテキストの見出し
-linktitle: セットテキストの見出し
+title: セテックスヘディング
+linktitle: セテックスヘディング
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET のステップバイステップ ガイドで、Setext 見出しを使用してドキュメントを書式設定する方法を学びます。
 type: docs

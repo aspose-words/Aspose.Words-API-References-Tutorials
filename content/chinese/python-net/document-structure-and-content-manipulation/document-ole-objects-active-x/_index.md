@@ -17,7 +17,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/document-ole-obj
 
 - Python环境搭建
 - Aspose.Words for Python 库已安装
-- 对Word文档结构的基本了解
+- 对Word文档结构有基本的了解
 
 ## 嵌入 OLE 对象
 

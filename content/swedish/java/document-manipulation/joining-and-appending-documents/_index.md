@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Lägg till med sidnummerkonvertering
+### Lägg till med sidnummerkonverteringar
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -136,7 +136,7 @@ Aspose.Words för Java tillhandahåller flexibla och kraftfulla verktyg för att
 
 ### Hur kan jag hantera textrutor när jag lägger till dokument?
 
-Uppsättning`importFormatOptions.setIgnoreTextBoxes(false)` att inkludera textrutor när du lägger till.
+Uppsättning`importFormatOptions.setIgnoreTextBoxes(false)` att inkludera textrutor under tillägg.
 
 ### Vad händer om jag vill länka/ta bort länkhuvuden och sidfötter mellan dokument?
 

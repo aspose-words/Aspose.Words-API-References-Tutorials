@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## 4. lépés: A forrásdokumentum hozzáfűzése a céldokumentumhoz
 
- Használja a`AppendDocument` a céldokumentum módszere a forrásdokumentum hozzáfűzéséhez. Pass`ImportFormatMode.KeepSourceFormatting` második paraméterként, harmadikként pedig az import formátum beállításai.
+ Használja a`AppendDocument` a céldokumentum módszere a forrásdokumentum hozzáfűzéséhez. Pass`ImportFormatMode.KeepSourceFormatting`második paraméterként, harmadikként pedig az import formátum beállításai.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## 5. lépés: Mentse el a céldokumentumot
 
- Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

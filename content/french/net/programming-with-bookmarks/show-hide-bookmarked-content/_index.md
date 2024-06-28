@@ -2,176 +2,156 @@
 title: Afficher Masquer le contenu marqué dans un document Word
 linktitle: Afficher Masquer le contenu marqué dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment afficher ou masquer le contenu des signets dans un document Word à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment afficher ou masquer dynamiquement le contenu mis en signet dans des documents Word à l'aide d'Aspose.Words for .NET avec ce guide complet étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-Dans cet article, nous explorerons le code source C# ci-dessus pour comprendre comment utiliser la fonction Afficher masquer le contenu marqué dans les favoris dans la bibliothèque Aspose.Words pour .NET. Cette fonctionnalité vous permet d'afficher ou de masquer le contenu d'un signet dans un document Word en fonction d'une condition spécifique lors de la fusion de données.
+## Introduction
+
+Salut! Avez-vous déjà souhaité contrôler la visibilité d'un contenu spécifique dans un document Word en fonction de certaines conditions ? Avec Aspose.Words pour .NET, vous pouvez afficher ou masquer dynamiquement le contenu mis en signet avec seulement quelques lignes de code. Dans ce didacticiel, je vais vous guider pas à pas tout au long du processus, en m'assurant que vous comprenez chaque partie du code. À la fin, vous serez un pro dans la manipulation des signets dans les documents Word. Commençons!
 
 ## Conditions préalables
 
-- Connaissance de base du langage C#.
-- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+Avant de plonger dans le didacticiel, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-## Étape 1 : Obtenir le signet
+1. Connaissance de base de C# : Vous devez être à l'aise avec la syntaxe et les concepts C#.
+2.  Aspose.Words pour .NET : téléchargez-le[ici](https://releases.aspose.com/words/net/) . Si vous n'êtes pas prêt à acheter, vous pouvez commencer par un[essai gratuit](https://releases.aspose.com/).
+3. Visual Studio : toute version récente fonctionnera, mais il est recommandé d'utiliser la dernière version.
+4. .NET Framework : assurez-vous qu'il est installé sur votre ordinateur.
 
- Nous utilisons le`Bookmarks` propriété de la plage de documents pour obtenir le signet spécifique sur lequel nous voulons afficher ou masquer le contenu :
+Prêt à commencer? Super! Commençons par importer les espaces de noms nécessaires.
+
+## Importer des espaces de noms
+
+Pour utiliser Aspose.Words pour .NET, nous devons importer les espaces de noms requis. Cette étape garantit que nous avons accès à toutes les classes et méthodes que nous utiliserons.
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Étape 2 : Insérer les champs de fusion
+Ces espaces de noms sont cruciaux pour travailler avec des documents Word et manipuler leur contenu.
 
- Nous utilisons un générateur de documents`DocumentBuilder` pour insérer les champs de fusion nécessaires. Ces champs de fusion définiront une condition pour afficher ou masquer le contenu du signet en fonction de la valeur du`showHide` variable:
+## Étape 1 : configuration du document
+
+Commençons par créer un nouveau document Word et un générateur de documents. Le générateur de documents nous aide à ajouter et à manipuler facilement du contenu dans le document.
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## Étape 3 : Déplacer le contenu des favoris
+Dans cette étape, nous initialisons un nouveau document et un générateur de documents. Cela prépare notre environnement pour d’autres opérations.
 
-Nous parcourons le contenu du signet et le déplaçons pour qu'il apparaisse
+## Étape 2 : ajout de contenu mis en favoris
 
-isse avant le signet. Cela contrôlera l'affichage ou le masquage du contenu en fonction de la condition spécifiée :
+Ensuite, nous ajouterons du contenu au document et créerons un signet autour de celui-ci. Ce signet nous aidera à identifier et à manipuler le contenu.
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ Ici, nous ajoutons du texte avant et après le contenu mis en signet. Le`StartBookmark` et`EndBookmark` les méthodes définissent les limites du signet.
+
+## Étape 3 : Insertion d'un champ conditionnel
+
+Pour contrôler la visibilité du contenu mis en signet, nous utiliserons un champ conditionnel. Ce champ vérifiera une condition et affichera ou masquera le contenu en conséquence.
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+Dans cette étape, nous insérons un champ IF qui vérifie la valeur du signet. Si la valeur est « vrai », elle affichera « Visible » ; sinon, il affichera « Caché ».
+
+## Étape 4 : Réorganiser les nœuds
+
+Ensuite, nous devons réorganiser les nœuds pour garantir que la logique conditionnelle s'applique correctement au contenu mis en signet.
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## Étape 4 : Déplacer le reste du contenu du signet
-
-Nous déplaçons le reste du contenu du signet après le signet, en utilisant le nœud de fin du signet comme point d'insertion :
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## Étape 5 : Effectuer la fusion
+Ici, nous déplaçons les nœuds pour nous assurer que la condition englobe correctement le contenu mis en signet.
 
- Nous utilisons le`Execute` méthode du document`s `Fusion et publipostage` object to execute the merge using the bookmark name and the value of the `variable showHide :
+## Étape 5 : Exécution du publipostage
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### Exemple de code source pour Afficher Masquer le contenu marqué à l'aide d'Aspose.Words pour .NET
-
-Voici l'exemple complet de code source pour démontrer l'affichage ou le masquage du contenu des signets à l'aide d'Aspose.Words pour .NET :
+Enfin, nous exécuterons un publipostage pour définir la valeur du signet et déterminer si le contenu doit être affiché ou masqué.
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MERGEFIELD bookmark}" = "true" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+Cette étape définit la valeur du signet sur "true", ce qui rendra le contenu visible en fonction de notre condition.
+
+## Étape 6 : Sauvegarde du document
+
+Après toutes les manipulations, la dernière étape consiste à sauvegarder le document modifié.
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+Ici, nous enregistrons le document avec un nom de fichier descriptif pour indiquer les modifications.
 
 ## Conclusion
 
-Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonctionnalité Afficher masquer le contenu marqué d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour afficher ou masquer le contenu d'un signet en fonction d'une condition spécifique lors de la fusion de données.
+ Et c'est tout! Vous avez appris avec succès comment afficher ou masquer le contenu mis en signet dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel a couvert la création d'un document, l'ajout de signets, l'insertion de champs conditionnels, la réorganisation des nœuds et l'exécution d'un publipostage. Aspose.Words offre une pléthore de fonctionnalités, alors n'hésitez pas à explorer les[Documentation API](https://reference.aspose.com/words/net/) pour des capacités plus avancées.
 
-### FAQ pour afficher et masquer le contenu mis en signet dans un document Word
+## FAQ
 
-#### Q : Puis-je utiliser la même condition pour plusieurs signets dans le même document ?
+### 1. Qu'est-ce qu'Aspose.Words pour .NET ?
 
- : Oui, vous pouvez utiliser la même condition pour plusieurs signets dans le même document. Répétez simplement les étapes 2 à 5 pour chaque signet, en ajustant le nom du signet et éventuellement la valeur du`showhide` variable selon les besoins.
+Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeurs de créer, modifier et convertir des documents Word par programme. Il est largement utilisé pour les tâches d'automatisation des documents.
 
-#### Q : Comment puis-je ajouter des conditions supplémentaires pour afficher ou masquer le contenu des favoris ?
+### 2. Puis-je utiliser Aspose.Words pour .NET gratuitement ?
 
- R : Pour ajouter plus de conditions, vous pouvez utiliser des opérateurs logiques tels que`AND` et`OR` dans le code d'insertion des champs de fusion à l'étape 2. Editez la condition dans le code suivant pour ajouter des conditions supplémentaires :
+ Vous pouvez essayer Aspose.Words pour .NET en utilisant un[essai gratuit](https://releases.aspose.com/). Pour une utilisation à long terme, vous devrez acheter une licence.
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. Comment modifier d'autres propriétés d'un signet ?
 
-#### Q : Comment puis-je supprimer un signet dans un document Word à l'aide d'Aspose.Words pour .NET ?
+ Aspose.Words vous permet de manipuler diverses propriétés d'un signet, telles que son texte et son emplacement. Se référer au[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
 
- R : Pour supprimer un signet dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Remove` méthode de la`Bookmarks` collection de la gamme de documents. Voici un exemple de code pour supprimer un signet spécifique :
+### 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+Vous pouvez obtenir de l'aide en visitant le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 
-#### Q : La bibliothèque Aspose.Words est-elle gratuite ?
+### 5. Puis-je manipuler d’autres types de contenu avec Aspose.Words for .NET ?
 
- R : La bibliothèque Aspose.Words est une bibliothèque commerciale et nécessite une licence valide pour être utilisée dans vos projets. Tu peux vérifier[Références de l'API Aspose.Words pour .NET](https://reference.aspose.com/words/net/) pour en savoir plus sur les options de licence et les tarifs.
-
-#### Q : Existe-t-il d'autres bibliothèques disponibles pour le traitement de texte avec des documents Word dans .NET ?
-
-R : Oui, il existe d'autres bibliothèques disponibles pour le traitement de texte avec des documents Word dans .NET, telles que le SDK Open XML et GemBox.Document. Vous pouvez explorer ces bibliothèques comme alternatives à Aspose.Words en fonction de vos besoins et préférences spécifiques.
+Oui, Aspose.Words for .NET prend en charge différents types de manipulation de contenu, notamment du texte, des images, des tableaux, etc.

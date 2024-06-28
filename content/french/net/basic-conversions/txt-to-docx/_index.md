@@ -58,7 +58,7 @@ La conservation ou non du formatage lors de la conversion dépend de l'outil ou 
 
 #### Quelles sont les limites du processus de conversion ?
 
-Les limites du processus de conversion dépendent de l'outil ou de la bibliothèque spécifique que vous utilisez. Certains outils peuvent avoir des restrictions liées à un formatage complexe, des tableaux ou des images intégrées dans le fichier texte. Il est important de bien comprendre les fonctionnalités et les limites de l'outil choisi afin de prendre des décisions éclairées lors de la conversion.
+Les limites du processus de conversion dépendent de l'outil ou de la bibliothèque spécifique que vous utilisez. Certains outils peuvent avoir des restrictions liées au formatage complexe, aux tableaux ou aux images intégrées dans le fichier texte. Il est important de bien comprendre les fonctionnalités et les limites de l'outil choisi afin de prendre des décisions éclairées lors de la conversion.
 
 #### Aspose est-il un outil fiable pour convertir un fichier texte en document Word ?
 

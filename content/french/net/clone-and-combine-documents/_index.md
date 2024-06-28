@@ -13,5 +13,5 @@ Clone And Combine Documents propose des didacticiels sur le clonage et la combin
 | Titre | Description |
 | --- | --- |
 | [Cloner un document Word](./cloning-document/) | Découvrez comment cloner un document Word à l'aide d'Aspose.Words pour .NET. |
-| [Insérer un document lors du remplacement](./insert-document-at-replace/) | Découvrez comment insérer un document lors du remplacement à l'aide d'Aspose.Words pour .NET. |
-| [Insérer un document lors du publipostage](./insert-document-at-mail-merge/) | Découvrez comment insérer un document dans un autre lors d'un publipostage à l'aide d'Aspose.Words for .NET. |
+| [Insérer un document lors du remplacement](./insert-document-at-replace/) | Découvrez comment insérer de manière transparente un document Word dans un autre à l'aide d'Aspose.Words for .NET grâce à notre guide détaillé étape par étape. Parfait pour les développeurs cherchant à rationaliser le traitement des documents. |
+| [Insérer un document lors du publipostage](./insert-document-at-mail-merge/) | Découvrez comment insérer des documents dans des champs de publipostage à l'aide d'Aspose.Words for .NET dans ce didacticiel complet, étape par étape. |

@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 
 ## Langkah 5: Simpan dokumen tujuan
 
- Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
+Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
@@ -64,7 +64,7 @@ Ini menyelesaikan implementasi penambahan dokumen dengan opsi format impor mengg
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// Tentukan bahwa jika penomoran bertentangan dalam dokumen sumber dan tujuan,
-	//maka penomoran dari dokumen sumber akan digunakan.
+	// maka penomoran dari dokumen sumber akan digunakan.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

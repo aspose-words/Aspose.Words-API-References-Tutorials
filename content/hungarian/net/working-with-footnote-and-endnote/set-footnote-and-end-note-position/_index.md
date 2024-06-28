@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## 2. lépés: A lábjegyzet és a végjegyzet pozíciójának beállítása
 
- Ezután nyissa meg a`FootnoteOptions` és`EndnoteOptions` a dokumentum tulajdonságait a lábjegyzetek és végjegyzetek pozíciójának beállításához. Ebben a példában a lábjegyzetek helyét a szöveg alatt, a végjegyzeteket pedig a szakasz végén állítjuk be:
+ Ezután nyissa meg a`FootnoteOptions` és`EndnoteOptions` dokumentum tulajdonságait a lábjegyzetek és végjegyzetek pozíciójának beállításához. Ebben a példában a lábjegyzetek helyét a szöveg alatt, a végjegyzeteket pedig a szakasz végén állítjuk be:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

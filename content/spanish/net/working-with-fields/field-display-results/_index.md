@@ -61,7 +61,7 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // Actualizar campos.
 document. UpdateFields();
 
-// Visualización de resultados de campo.
+//Visualización de resultados de campo.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```

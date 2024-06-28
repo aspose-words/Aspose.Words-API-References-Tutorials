@@ -1,6 +1,6 @@
 ---
-title: Định dạng hàng Tắt ngắt giữa các trang
-linktitle: Định dạng hàng Tắt ngắt giữa các trang
+title: Định dạng hàng Tắt ngắt trên các trang
+linktitle: Định dạng hàng Tắt ngắt trên các trang
 second_title: API xử lý tài liệu Aspose.Words
 description: Tìm hiểu cách tắt tính năng ngắt dòng cho một bảng trên nhiều trang trong tài liệu Word bằng Aspose.Words for .NET.
 type: docs

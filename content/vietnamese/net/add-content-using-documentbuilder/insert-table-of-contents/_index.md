@@ -2,39 +2,69 @@
 title: Chèn mục lục vào tài liệu Word
 linktitle: Chèn mục lục vào tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chèn mục lục vào tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách chèn Mục lục trong Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để điều hướng tài liệu liền mạch.
 type: docs
 weight: 10
 url: /vi/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-Trong hướng dẫn toàn diện này, bạn sẽ tìm hiểu cách chèn mục lục vào tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ hướng dẫn bạn thực hiện quy trình và cung cấp cho bạn các đoạn mã C# cần thiết. Đến cuối hướng dẫn này, bạn sẽ có thể tạo mục lục với các tiêu đề và số trang thích hợp.
+## Giới thiệu
+Trong hướng dẫn này, bạn sẽ tìm hiểu cách thêm Mục lục (TOC) vào tài liệu Word một cách hiệu quả bằng cách sử dụng Aspose.Words cho .NET. Tính năng này rất cần thiết để tổ chức và điều hướng các tài liệu dài, nâng cao khả năng đọc và cung cấp tổng quan nhanh về các phần tài liệu.
 
 ## Điều kiện tiên quyết
-Trước khi chúng tôi bắt đầu, hãy đảm bảo rằng bạn có các điều kiện tiên quyết sau:
-- Thư viện Aspose.Words for .NET được cài đặt trên hệ thống của bạn.
 
-## Bước 1: Tạo một tài liệu mới và DocumentBuilder
-Để bắt đầu, hãy tạo một tài liệu mới bằng lớp Document và khởi tạo đối tượng DocumentBuilder:
+Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
+
+- Hiểu biết cơ bản về C# và .NET framework.
+- Visual Studio được cài đặt trên máy của bạn.
+-  Aspose.Words cho thư viện .NET. Nếu bạn chưa cài đặt nó, bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+
+## Nhập không gian tên
+
+Để bắt đầu, hãy nhập các vùng tên cần thiết trong dự án C# của bạn:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+Hãy chia quy trình thành các bước rõ ràng:
+
+## Bước 1: Khởi tạo Aspose.Words Document và DocumentBuilder
+
+ Đầu tiên, khởi tạo Aspose.Words mới`Document` đối tượng và một`DocumentBuilder` để làm việc với:
+
+```csharp
+// Khởi tạo Document và DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 2: Chèn mục lục
-Tiếp theo, sử dụng phương thức InsertTableOfContents của lớp DocumentBuilder để chèn mục lục. Chỉ định các tùy chọn định dạng cần thiết trong phương thức:
+
+ Bây giờ, hãy chèn Mục lục bằng cách sử dụng`InsertTableOfContents` phương pháp:
 
 ```csharp
+// Chèn mục lục
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## Bước 3: Thêm nội dung tài liệu
-Sau khi chèn mục lục, hãy thêm nội dung tài liệu thực tế. Đặt kiểu tiêu đề thích hợp bằng StyleIdentifier:
+## Bước 3: Bắt đầu nội dung tài liệu trên một trang mới
+
+Để đảm bảo định dạng đúng, hãy bắt đầu nội dung tài liệu thực tế trên một trang mới:
 
 ```csharp
+// Chèn ngắt trang
 builder.InsertBreak(BreakType.PageBreak);
+```
 
+## Bước 4: Cấu trúc tài liệu của bạn với các tiêu đề
+
+Sắp xếp nội dung tài liệu của bạn bằng cách sử dụng các kiểu tiêu đề thích hợp:
+
+```csharp
+// Đặt kiểu tiêu đề
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 builder.Writeln("Heading 1");
 
@@ -59,96 +89,42 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## Bước 4: Cập nhật Mục lục
-Mục lục mới được chèn ban đầu sẽ trống. Để điền nó, hãy cập nhật các trường trong tài liệu:
+## Bước 5: Cập nhật và điền vào mục lục
+
+Cập nhật Mục lục để phản ánh cấu trúc tài liệu:
 
 ```csharp
+// Cập nhật các trường Mục lục
 doc.UpdateFields();
 ```
 
-## Bước 5: Lưu tài liệu
-Sau khi chèn mục lục và cập nhật các trường, hãy lưu tài liệu vào file bằng phương thức Save của lớp Document:
+## Bước 6: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu của bạn vào một thư mục được chỉ định:
 
 ```csharp
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-```
-
-### Mã nguồn ví dụ để chèn mục lục bằng Aspose.Words cho .NET
-Đây là mã nguồn hoàn chỉnh để chèn mục lục bằng Aspose.Words cho .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-// Khởi tạo DocumentBuilder với đối tượng Document
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Chèn bảng nội dung
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-
-// Bắt đầu nội dung tài liệu thực tế trên trang thứ hai.
-builder.InsertBreak(BreakType.PageBreak);
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
-builder.Writeln("Heading 1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 1.1");
-builder.Writeln("Heading 1.2");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
-builder.Writeln("Heading 2");
-builder.Writeln("Heading 3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 3.1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
-
-builder.Writeln("Heading 3.1.1");
-builder.Writeln("Heading 3.1.2");
-builder.Writeln("Heading 3.1.3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 3.2");
-builder.Writeln("Heading 3.3");
-
-
-// Mục lục mới được chèn ban đầu sẽ trống.
-// Nó cần được điền bằng cách cập nhật các trường trong tài liệu.
-doc.UpdateFields();
-
-
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
+// Lưu tài liệu
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
 ## Phần kết luận
 
-Chúc mừng! Bạn đã học thành công cách chèn mục lục vào tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này và sử dụng mã nguồn được cung cấp, giờ đây bạn có thể tạo mục lục với các tiêu đề và số trang thích hợp cho tài liệu của mình.
+Việc thêm Mục lục bằng Aspose.Words cho .NET rất đơn giản và nâng cao đáng kể khả năng sử dụng tài liệu của bạn. Bằng cách làm theo các bước này, bạn có thể sắp xếp và điều hướng hiệu quả qua các tài liệu phức tạp.
 
-### Hỏi đáp chèn mục lục vào văn bản word
+## Câu hỏi thường gặp
 
-#### Hỏi: Tôi có thể tùy chỉnh hình thức của mục lục không?
+### Tôi có thể tùy chỉnh hình thức của Mục lục không?
+Có, bạn có thể tùy chỉnh giao diện và hoạt động của Mục lục bằng cách sử dụng Aspose.Words for .NET API.
 
- Đáp: Có, bạn có thể tùy chỉnh hình thức của mục lục bằng cách sửa đổi các tùy chọn định dạng được chỉ định trong`InsertTableOfContents` phương pháp. Các tham số cho phép bạn kiểm soát số trang, thụt lề và các kiểu khác.
+### Aspose.Words có hỗ trợ cập nhật các trường tự động không?
+Có, Aspose.Words cho phép bạn cập nhật động các trường như Mục lục dựa trên các thay đổi của tài liệu.
 
-#### Hỏi: Điều gì sẽ xảy ra nếu tôi muốn đưa các cấp tiêu đề cụ thể vào mục lục?
+### Tôi có thể tạo nhiều Mục lục trong một tài liệu không?
+Aspose.Words hỗ trợ tạo nhiều Mục lục với các cài đặt khác nhau trong một tài liệu.
 
- Đáp: Bạn có thể chỉ định mức tiêu đề mong muốn được đưa vào mục lục bằng cách điều chỉnh giá trị trong`InsertTableOfContents` phương pháp. Ví dụ, sử dụng`"\\o \"1-3\""` sẽ bao gồm các tiêu đề cấp 1 đến 3.
+### Aspose.Words có tương thích với các phiên bản Microsoft Word khác nhau không?
+Có, Aspose.Words đảm bảo khả năng tương thích với nhiều phiên bản định dạng Microsoft Word khác nhau.
 
-#### Hỏi: Tôi có thể tự động cập nhật mục lục nếu tôi thay đổi nội dung tài liệu không?
-
- Đáp: Có, bạn có thể cập nhật mục lục một cách tự động bằng cách gọi`UpdateFields` phương pháp trên tài liệu. Điều này sẽ đảm bảo rằng mọi thay đổi được thực hiện đối với nội dung tài liệu, chẳng hạn như thêm hoặc xóa tiêu đề, đều được phản ánh trong mục lục.
-
-#### Câu hỏi: Làm cách nào để tạo kiểu khác nhau cho các cấp tiêu đề trong mục lục?
-
- Đáp: Bạn có thể tạo kiểu cho các cấp độ tiêu đề khác nhau bằng cách sử dụng các kiểu đoạn văn khác nhau cho từng cấp độ tiêu đề. Bằng cách phân công khác nhau`StyleIdentifier` các giá trị để`ParagraphFormat` sau đó`DocumentBuilder`, bạn có thể tạo các kiểu riêng biệt cho từng cấp độ tiêu đề.
-
-#### Hỏi: Có thể thêm định dạng bổ sung cho các tiêu đề trong mục lục không?
-
- Đáp: Có, bạn có thể thêm định dạng bổ sung cho các tiêu đề trong mục lục, chẳng hạn như kiểu phông chữ, màu sắc hoặc các thuộc tính khác. Bằng cách điều chỉnh`Font` thuộc tính của`DocumentBuilder`, bạn có thể áp dụng định dạng tùy chỉnh cho các tiêu đề.
+### Tôi có thể tìm thêm trợ giúp và hỗ trợ cho Aspose.Words ở đâu?
+Để được hỗ trợ thêm, hãy truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) hoặc kiểm tra[tài liệu chính thức](https://reference.aspose.com/words/net/).

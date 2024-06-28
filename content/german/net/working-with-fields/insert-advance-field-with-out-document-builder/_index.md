@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Schritt 3: Einfügen des erweiterten Feldes
+## Schritt 3: Einfügen der erweiterten Felder
 
  Wir benutzen das`AppendField()` Methode zum Einfügen eines erweiterten Felds in den Absatz.
 

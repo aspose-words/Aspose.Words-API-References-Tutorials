@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
 ```
 
-นั่นคือทั้งหมดที่ ! คุณได้ส่งออกโครงสร้างเอกสารสำเร็จแล้วและสร้าง PDF ด้วยโครงสร้างเอกสารที่มองเห็นได้โดยใช้ Aspose.Words สำหรับ .NET
+นั่นคือทั้งหมด! คุณได้ส่งออกโครงสร้างเอกสารสำเร็จแล้วและสร้าง PDF ด้วยโครงสร้างเอกสารที่มองเห็นได้โดยใช้ Aspose.Words สำหรับ .NET
 
 ### ตัวอย่างซอร์สโค้ดสำหรับส่งออกโครงสร้างเอกสารด้วย Aspose.Words สำหรับ .NET
 
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", save
 
  สร้างอินสแตนซ์ของ`Document` คลาสที่ระบุเส้นทางไปยังเอกสาร Word
 
- สร้างอินสแตนซ์ของ`PdfSaveOptions` คลาสและตั้งค่า`ExportDocumentStructure`ทรัพย์สินเพื่อ`true`. การดำเนินการนี้จะส่งออกโครงสร้างเอกสารและทำให้มองเห็นได้ในบานหน้าต่างนำทาง "เนื้อหา" ของ Adobe Acrobat Pro เมื่อแก้ไขไฟล์ PDF
+ สร้างอินสแตนซ์ของ`PdfSaveOptions` คลาสและตั้งค่า`ExportDocumentStructure`ทรัพย์สินเพื่อ`true`- การดำเนินการนี้จะส่งออกโครงสร้างเอกสารและทำให้มองเห็นได้ในบานหน้าต่างนำทาง "เนื้อหา" ของ Adobe Acrobat Pro เมื่อแก้ไขไฟล์ PDF
 
  ใช้`Save` วิธีการของ`Document`คลาสเพื่อบันทึกเอกสารในรูปแบบ PDF โดยระบุตัวเลือกการบันทึก
 

@@ -17,7 +17,7 @@ Pastikan Anda memiliki prasyarat berikut:
 - Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
 - Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Langkah 2: Buat dokumen baru dan masukkan bagan.
 
  Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
 
@@ -117,4 +117,4 @@ Pemulusan rangkaian grafik adalah teknik penyempurnaan visual yang memungkinkan 
  Untuk menyesuaikan penanda titik data dalam rangkaian bagan menggunakan Aspose.Words untuk .NET, Anda perlu mengakses`Marker` properti dari`ChartSeries` objek dan memodifikasi propertinya seperti`Symbol` Dan`Size`. Penanda adalah indikator visual yang ditempatkan pada grafik untuk mewakili titik data individual. Anda dapat memilih dari berbagai simbol penanda bawaan dan menyesuaikan ukurannya untuk menyorot atau membedakan titik data tertentu dalam rangkaian.
 
 #### Q5. Bisakah saya membalikkan warna untuk nilai negatif dalam rangkaian bagan?
- Ya, Anda dapat membalikkan warna untuk nilai negatif dalam rangkaian bagan menggunakan Aspose.Words untuk .NET. Dengan mengatur`InvertIfNegative` properti dari`ChartSeries` objek untuk`true`, warna titik data dengan nilai negatif akan dibalik, membuatnya berbeda secara visual dari nilai positif. Fitur ini dapat berguna saat membandingkan nilai positif dan negatif dalam rangkaian bagan, sehingga memberikan perbedaan yang jelas antara keduanya.
+ Ya, Anda dapat membalikkan warna untuk nilai negatif dalam rangkaian bagan menggunakan Aspose.Words untuk .NET. Dengan mengatur`InvertIfNegative` properti dari`ChartSeries` objek untuk`true`, warna titik data dengan nilai negatif akan dibalik, membuatnya berbeda secara visual dari nilai positif. Fitur ini dapat berguna saat membandingkan nilai positif dan negatif dalam rangkaian grafik, sehingga memberikan perbedaan yang jelas antara keduanya.

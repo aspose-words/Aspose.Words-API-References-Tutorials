@@ -58,7 +58,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
  De`Compare`methode vergelijkt document A met document B en slaat de wijzigingen in document A op. U kunt ter referentie de gebruikersnaam en de vergelijkingsdatum opgeven.
 
-### Voorbeeldbroncode voor Comparison Target met Aspose.Words voor .NET
+### Voorbeeldbroncode voor Compare Target met Aspose.Words voor .NET
 
 
 ```csharp
@@ -95,4 +95,4 @@ A: Volg deze stappen om Comparison Target in Aspose.Words voor .NET te gebruiken
 
 ####  Vraag: Wat is het doel van de`Target` property in the `CompareOptions` class?
 
- EEN: De`Target` eigendom in de`CompareOptions` Met class kunt u het vergelijkingsdoel opgeven, dat vergelijkbaar is met de optie "Wijzigingen weergeven in" in het dialoogvenster "Documenten vergelijken" van Microsoft Word. Het doel kan worden ingesteld`ComparisonTargetType.New` om wijzigingen in een nieuw document weer te geven,`ComparisonTargetType.Current` om wijzigingen in het huidige document weer te geven, of`ComparisonTargetType.Formatting` om alleen opmaakwijzigingen weer te geven.
+ EEN: De`Target` eigendom in de`CompareOptions` Met class kunt u het vergelijkingsdoel opgeven, dat vergelijkbaar is met de optie "Wijzigingen weergeven in" in het dialoogvenster "Documenten vergelijken" van Microsoft Word. Het doel kan worden ingesteld op`ComparisonTargetType.New` om wijzigingen in een nieuw document weer te geven,`ComparisonTargetType.Current` om wijzigingen in het huidige document weer te geven, of`ComparisonTargetType.Formatting` om alleen opmaakwijzigingen weer te geven.

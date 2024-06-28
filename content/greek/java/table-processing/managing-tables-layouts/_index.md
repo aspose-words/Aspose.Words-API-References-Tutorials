@@ -30,7 +30,7 @@ url: /el/java/table-processing/managing-tables-layouts/
 // Δημιουργήστε ένα νέο Έγγραφο
 Document doc = new Document();
 
-// Δημιουργήστε έναν πίνακα με 3 σειρές και 4 στήλες
+// Δημιουργήστε έναν πίνακα με 3 σειρές και 4 στήλες.
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {
@@ -98,7 +98,7 @@ table.getRows().get(0).getCells().get(0).getCellFormat().setHorizontalMerge(Cell
 table.getRows().get(0).getCells().get(0).getParagraphs().get(0).getRuns().get(0).getFont().setPageBreakBefore(true);
 ```
 
-## Συχνές Ερωτήσεις (FAQ)
+## Συχνές Ερωτήσεις (Συχνές Ερωτήσεις)
 
 ### Πώς ορίζω ένα συγκεκριμένο πλάτος πίνακα;
  Για να ορίσετε ένα συγκεκριμένο πλάτος για έναν πίνακα, χρησιμοποιήστε το`setPreferredWidth` μέθοδο, όπως φαίνεται στο παράδειγμά μας.

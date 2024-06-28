@@ -107,7 +107,7 @@ para.remove();
 // a budou zobrazeny jako revize v aplikaci Microsoft Word, dokud nepřijmeme nebo neodmítneme všechny revize.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Jakmile přijmeme změny, odstavec pro odstranění revize je odstraněn.
+// Smazaný odstavec revize je odstraněn, jakmile přijmeme změny.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //byl Is.Empty

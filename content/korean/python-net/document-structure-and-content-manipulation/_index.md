@@ -18,7 +18,7 @@ url: /ko/python-net/document-structure-and-content-manipulation/
 
 ## 당신이 배울 내용
 
-이 튜토리얼 시리즈 전반에 걸쳐 Python과 .NET 모두에 대해 Aspose.Words를 사용하여 문서 구조와 콘텐츠 조작의 복잡성을 탐구하게 됩니다. 튜토리얼은 다음을 포함한 다양한 주제를 다룹니다.
+이 튜토리얼 시리즈 전반에 걸쳐 Python과 .NET 모두에서 Aspose.Words를 사용하여 문서 구조와 콘텐츠 조작의 복잡성을 탐구하게 됩니다. 튜토리얼은 다음을 포함한 다양한 주제를 다룹니다.
 
 - 문서 요소 탐색: 문서, 섹션, 단락, 표 등을 탐색하는 방법을 알아보세요.
 - 텍스트 추출: 분석 또는 추가 처리를 위해 문서에서 텍스트 콘텐츠를 추출하는 방법을 탐색합니다.
@@ -49,7 +49,7 @@ Aspose.Words for Python을 사용하여 Word 문서의 머리글과 바닥글을
 ### [Word 문서에서 하이픈 넣기 및 텍스트 흐름 관리](./document-hyphenation/)
 Aspose.Words for Python을 사용하여 Word 문서에서 하이픈 넣기와 텍스트 흐름을 관리하는 방법을 알아보세요. 단계별 예제와 소스 코드를 사용하여 세련되고 독자 친화적인 문서를 만듭니다. 
 ### [Word 문서에서 목록 만들기 및 관리](./document-lists/)
-Aspose.Words Python API를 사용하여 Word 문서에서 목록을 만들고 관리하는 방법을 알아보세요. 목록 형식 지정, 사용자 정의, 중첩 등에 대한 소스 코드가 포함된 단계별 가이드입니다. 
+Aspose.Words Python API를 사용하여 Word 문서에서 목록을 만들고 관리하는 방법을 알아보세요. 목록 형식화, 사용자 정의, 중첩 등에 대한 소스 코드가 포함된 단계별 가이드입니다. 
 ### [Word 문서에서 마크다운 형식 활용](./document-markdown/)
 Aspose.Words for Python을 사용하여 Markdown 서식을 Word 문서에 통합하는 방법을 알아보세요. 동적이고 시각적으로 매력적인 콘텐츠 제작을 위한 코드 예제가 포함된 단계별 가이드입니다. 
 ### [문서 노드 이해 및 탐색](./document-nodes/)

@@ -92,7 +92,7 @@ public void formFieldsGetByName() throws Exception {
    يمكنك تخصيص مظهر حقل النموذج عن طريق ضبط حجم الخط واللون وخيارات التنسيق الأخرى.
 
 4. ### هل هناك نسخة تجريبية مجانية متاحة لـ Aspose.Words لـ Java؟
-    نعم، يمكنك الوصول إلى النسخة التجريبية المجانية من Aspose.Words for Java[هنا](https://releases.aspose.com/).
+    نعم، يمكنك الوصول إلى النسخة التجريبية المجانية من Aspose.Words for Java.[هنا](https://releases.aspose.com/).
 
 5. ### أين يمكنني الحصول على الدعم لـ Aspose.Words لـ Java؟
     للحصول على الدعم والمساعدة، قم بزيارة[منتدى Aspose.Words](https://forum.aspose.com/).

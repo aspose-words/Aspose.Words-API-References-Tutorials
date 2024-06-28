@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Dans cette étape, nous créons un nouveau`Document` objet et un associé`DocumentBuilder` objet. Ces objets nous permettront de manipuler et de générer notre document.
+Dans cette étape, nous créons un nouveau`Document` objet et un associé`DocumentBuilder` objet. Ces objets nous permettront de manipuler et de générer notre document.
 
 ## Étape 3 : Création d'une liste avec trois niveaux d'indentation
 
@@ -110,7 +110,7 @@ Configurez votre environnement de développement en ajoutant les références n�
  Oui, vous pouvez personnaliser le nombre de caractères de tabulation par niveau pour l'indentation de liste en modifiant la valeur de`ListIndentation.Count` propriété dans le`TxtSaveOptions` classe. Vous pouvez spécifier le nombre de caractères de tabulation souhaité pour chaque niveau d'indentation.
 
 #### Q : Quels autres caractères puis-je utiliser pour l’indentation de liste avec Aspose.Words for .NET ?
- Outre les caractères de tabulation, vous pouvez également utiliser d'autres caractères pour l'indentation de liste avec Aspose.Words for .NET. Vous pouvez définir le`ListIndentation.Character` propriété à n'importe quel caractère souhaité, tel que l'espace (`' '`), pour l'indentation des listes.
+ Outre les caractères de tabulation, vous pouvez également utiliser d'autres caractères pour l'indentation de liste avec Aspose.Words for .NET. Vous pouvez définir le`ListIndentation.Character` propriété à n'importe quel caractère souhaité, tel que l'espace (`' '`), pour identifier les listes.
 
 #### Q : Aspose.Words for .NET offre-t-il d'autres fonctionnalités pour la gestion des listes ?
 Oui, Aspose.Words for .NET offre de nombreuses fonctionnalités pour gérer les listes dans les documents Word. Vous pouvez créer des listes numérotées ou à puces, définir des niveaux d'indentation, personnaliser le style des listes, ajouter des éléments de liste, etc.

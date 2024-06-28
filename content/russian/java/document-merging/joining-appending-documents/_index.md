@@ -32,7 +32,7 @@ import com.aspose.words.*;
 
 public class DocumentJoiner {
     public static void main(String[] args) throws Exception {
-        // Инициализируйте Aspose.Words
+        // Инициализируйте слова Aspose.
         License license = new License();
         license.setLicense("Aspose.Words.Java.lic");
     }
@@ -62,7 +62,7 @@ doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 `ImportFormatMode.KEEP_SOURCE_FORMATTING` Опция гарантирует сохранение форматирования исходных документов.
 
-## Шаг 5: Сохранение результата
+## Шаг 5: Сохраните результат
 
 Чтобы сохранить объединенный документ в файл, вы можете использовать следующий код:
 

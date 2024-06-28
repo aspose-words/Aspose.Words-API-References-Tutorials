@@ -73,7 +73,7 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-### Példa a Date Time Values To Axis forráskódhoz az Aspose.Words for .NET használatával 
+### Példa forráskódra a Date Time Values'To Axishez az Aspose.Words for .NET használatával 
 
 ```csharp
 	// A dokumentumkönyvtár elérési útja
@@ -105,15 +105,15 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 Ez a példakód létrehoz egy új Word-dokumentumot, beszúr egy oszlopdiagramot dátum és idő értékekkel az X-tengelyre, és elmenti a dokumentumot a megadott könyvtárba.
 
 ## Következtetés
-Ebben az oktatóanyagban megtanulta, hogyan adhat dátum és idő értékeket a diagram tengelyéhez az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével diagramot hozhat létre, dátum- és időértékeket adhat hozzá a sorozathoz, és konfigurálhatja a tengelyt a dátum és idő értékek pontos megjelenítésére. Az Aspose.Words for .NET hatékony szolgáltatáskészletet kínál a Word-dokumentumok diagramjaival a Word-feldolgozáshoz, lehetővé téve az adatok hatékony megjelenítését és megjelenítését dátum- és időértékekkel.
+Ebben az oktatóanyagban megtanulta, hogyan adhat dátum és idő értékeket a diagram tengelyéhez az Aspose.Words for .NET segítségével. A lépésenkénti útmutatót követve létrehozhat egy diagramot, dátum- és időértékeket adhat hozzá a sorozathoz, és konfigurálhatja a tengelyt a dátum és időértékek pontos megjelenítéséhez. Az Aspose.Words for .NET hatékony szolgáltatáskészletet kínál a Word-dokumentumok diagramjaival a Word-feldolgozáshoz, lehetővé téve az adatok hatékony ábrázolását és megjelenítését dátum- és időértékekkel.
 
 ### GYIK
 
 #### Q1. Hozzáadhatok dátum és idő értékeket a diagram tengelyéhez az Aspose.Words for .NET használatával?
-Igen, az Aspose.Words for .NET segítségével dátum és idő értékeket adhat hozzá és megjeleníthet egy Word-dokumentum diagram tengelyén. Az Aspose.Words API-kat és funkciókat biztosít a különféle diagramtípusokkal való munkavégzéshez és azok megjelenésének testreszabásához, beleértve a dátum és idő értékek kezelését a tengelyen.
+Igen, az Aspose.Words for .NET segítségével dátum- és időértékeket adhat hozzá és megjeleníthet egy Word-dokumentum diagram tengelyén. Az Aspose.Words API-kat és funkciókat biztosít a különféle diagramtípusokkal való munkavégzéshez és azok megjelenésének testreszabásához, beleértve a dátum és idő értékek kezelését a tengelyen.
 
 #### Q2. Hogyan adhatok hozzá dátum és idő értékeket a diagramsorozathoz?
  Ha dátum- és időértékeket szeretne hozzáadni a diagramsorozathoz, használja a`Add` diagram sorozatának módszere. Adja meg a dátum és idő értékek tömbjét kategória (X-tengely) adatként, a megfelelő sorozatértékekkel együtt. Ez lehetővé teszi az adatpontok dátum- és időértékekkel való ábrázolását a diagramon.
 
 #### Q3. Hogyan konfigurálhatom a tengelyt a dátum és idő értékek megjelenítésére?
- A megfelelő tulajdonságok beállításával beállíthatja a diagram tengelyét a dátum és idő értékek megjelenítésére. Például megadhatja a tengely minimális és maximális értékét a segítségével`Scaling.Minimum` és`Scaling.Maximum` tulajdonságait, ill. Ezenkívül beállíthatja a fő- és mellékegységeket a tengely intervallumának és pipajeleinek meghatározásához.
+ A megfelelő tulajdonságok beállításával beállíthatja a diagram tengelyét a dátum és idő értékek megjelenítésére. Például megadhatja a tengely minimális és maximális értékét a gombbal`Scaling.Minimum` és`Scaling.Maximum` tulajdonságait, ill. Ezenkívül beállíthatja a fő- és mellékegységeket a tengely intervallumának és pipajeleinek meghatározásához.

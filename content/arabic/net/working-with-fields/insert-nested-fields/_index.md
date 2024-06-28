@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## الخطوة 5: إدراج الحقل المتداخل
 
- نحن نستخدم DocumentBuilder`InsertField()`طريقة لإدراج حقل متداخل في التذييل.
+ نحن نستخدم DocumentBuilder`InsertField()` طريقة لإدراج حقل متداخل في التذييل.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");

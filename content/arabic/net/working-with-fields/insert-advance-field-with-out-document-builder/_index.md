@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## الخطوة 3: إدخال الحقل المتقدم
+## الخطوة 3: إدراج الحقول المتقدمة
 
  نحن نستخدم ال`AppendField()` طريقة لإدراج حقل متقدم في الفقرة.
 

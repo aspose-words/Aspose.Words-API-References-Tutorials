@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## चरण 4: पैराग्राफ आयात करें और जोड़ें
 
-स्रोत दस्तावेज़ में पैराग्राफ के माध्यम से पुनरावृत्ति करें और प्रत्येक पैराग्राफ को गंतव्य दस्तावेज़ में आयात करें`importer`. आयातित नोड्स को गंतव्य दस्तावेज़ के मुख्य भाग में जोड़ें।
+ स्रोत दस्तावेज़ में पैराग्राफ के माध्यम से पुनरावृत्ति करें और प्रत्येक पैराग्राफ को गंतव्य दस्तावेज़ में आयात करें`importer`. आयातित नोड्स को गंतव्य दस्तावेज़ के मुख्य भाग में जोड़ें।
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// क्रमांकित पैराग्राफ आयात करते समय स्रोत सूची स्वरूपण रखें।
+	//क्रमांकित पैराग्राफ आयात करते समय स्रोत सूची स्वरूपण रखें।
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

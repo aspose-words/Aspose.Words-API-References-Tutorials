@@ -164,7 +164,7 @@ Si sigue estos pasos, puede crear documentos con niveles de lista personalizados
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Cree una lista numerada basada en una de las plantillas de listas de Microsoft Word
+        // Cree una lista numerada basada en una de las plantillas de listas de Microsoft Word.
         // aplicarlo al párrafo actual del creador de documentos.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Hay nueve niveles en esta lista, probémoslos todos.
@@ -173,7 +173,7 @@ Si sigue estos pasos, puede crear documentos con niveles de lista personalizados
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Cree una lista con viñetas basada en una de las plantillas de listas de Microsoft Word
+        // Cree una lista con viñetas basada en una de las plantillas de listas de Microsoft Word.
         // aplicarlo al párrafo actual del creador de documentos.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

@@ -160,7 +160,7 @@ Trong hướng dẫn này, chúng tôi đã khám phá cách tải tệp văn b�
 
 ### Aspose.Words cho Java là gì?
 
-Aspose.Words for Java là thư viện xử lý tài liệu mạnh mẽ cho phép các nhà phát triển tạo, thao tác và chuyển đổi tài liệu Word theo chương trình trong các ứng dụng Java. Nó cung cấp nhiều tính năng để làm việc với văn bản, bảng, hình ảnh và các thành phần tài liệu khác.
+Aspose.Words for Java là một thư viện xử lý tài liệu mạnh mẽ cho phép các nhà phát triển tạo, thao tác và chuyển đổi tài liệu Word theo chương trình trong các ứng dụng Java. Nó cung cấp nhiều tính năng để làm việc với văn bản, bảng, hình ảnh và các thành phần tài liệu khác.
 
 ### Làm cách nào tôi có thể bắt đầu với Aspose.Words cho Java?
 

@@ -35,7 +35,7 @@ Pour commencer, nous devons définir la hauteur de notre code-barres en twips (1
 	int heightInTwips = tryParseInt(heightInTwipsString);
 	if (heightInTwips == Integer.MIN_VALUE)
 		throw new Exception("Error! Incorrect height - " + heightInTwipsString + ".");
-	// Convertir en mm
+	// Convertir en millimètres
 	return (float) (heightInTwips * 25.4 / 1440.0);
 ```
 

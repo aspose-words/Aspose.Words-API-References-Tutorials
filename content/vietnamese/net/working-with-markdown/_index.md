@@ -14,7 +14,7 @@ Xử lý từ với Markdown cung cấp tài nguyên toàn diện để tìm hi�
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
 | [Chữ in đậm](./bold-text/) | Tìm hiểu cách in đậm văn bản với Aspose.Words for .NET Hướng dẫn từng bước. |
-| [Văn bản in nghiêng](./italic-text/) | Tìm hiểu cách in nghiêng văn bản với Aspose.Words for .NET Hướng dẫn từng bước. |
+| [Văn bản tiếng Ý](./italic-text/) | Tìm hiểu cách in nghiêng văn bản với Aspose.Words for .NET Hướng dẫn từng bước. |
 | [Gạch ngang](./strikethrough/) | Tìm hiểu cách áp dụng kiểu văn bản gạch ngang với Aspose.Words for .NET Hướng dẫn từng bước. |
 | [Mã nội tuyến](./inline-code/) | Tìm hiểu cách viết mã nội tuyến với Aspose.Words for .NET Hướng dẫn từng bước. |
 | [Tự động liên kết](./autolink/) | Tìm hiểu cách chèn liên kết tự động bằng Aspose.Words for .NET Hướng dẫn từng bước. |
@@ -22,7 +22,7 @@ Xử lý từ với Markdown cung cấp tài nguyên toàn diện để tìm hi�
 | [Hình ảnh](./image/) | Tìm hiểu cách chèn và tùy chỉnh hình ảnh bằng Aspose.Words for .NET Hướng dẫn từng bước. |
 | [Quy tắc ngang](./horizontal-rule/) | Tìm hiểu cách chèn quy tắc ngang với Hướng dẫn từng bước của Aspose.Words for .NET. |
 | [Phần mở đầu](./heading/) | Tìm hiểu cách sử dụng tiêu đề với Aspose.Words for .NET Hướng dẫn từng bước. |
-| [Tiêu đề văn bản](./setext-heading/) | Tìm hiểu cách sử dụng tiêu đề Setext để định dạng tài liệu của bạn với hướng dẫn từng bước Aspose.Words for .NET. |
+| [Tiêu đề Setex](./setext-heading/) | Tìm hiểu cách sử dụng tiêu đề Setext để định dạng tài liệu của bạn với hướng dẫn từng bước Aspose.Words for .NET. |
 | [Mã thụt lề](./indented-code/) | Tìm hiểu cách sử dụng mã thụt lề với Hướng dẫn từng bước của Aspose.Words for .NET. |
 | [Mã có rào chắn](./fenced-code/) | Tìm hiểu cách sử dụng tính năng mã có rào chắn với hướng dẫn từng bước của Aspose.Words for .NET. |
 | [Trích dẫn](./quote/) | Tìm hiểu cách sử dụng trích dẫn với Aspose.Words for .NET Hướng dẫn từng bước. |
@@ -31,4 +31,4 @@ Xử lý từ với Markdown cung cấp tài nguyên toàn diện để tìm hi�
 | [Bàn](./table/) | Tìm hiểu cách tạo bảng bằng Aspose.Words for .NET Hướng dẫn từng bước. |
 | [Đọc tài liệu đánh dấu](./read-markdown-document/) | Tìm hiểu cách đọc tài liệu đánh dấu bằng Aspose.Words for .NET Hướng dẫn từng bước. |
 | [Nhấn mạnh](./emphases/) | Tìm hiểu cách sử dụng dấu nhấn mạnh (in đậm và in nghiêng) với Hướng dẫn từng bước của Aspose.Words for .NET. |
-| [Sử dụng nguồn cảnh báo](./use-warning-source/) | Tìm hiểu cách sử dụng nguồn cảnh báo với Aspose.Words for .NET Hướng dẫn từng bước. |
+| [Sử dụng nguồn cảnh báo](./use-warning-source/) | Tìm hiểu cách sử dụng nguồn cảnh báo với Hướng dẫn từng bước của Aspose.Words for .NET. |

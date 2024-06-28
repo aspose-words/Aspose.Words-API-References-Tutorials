@@ -1,6 +1,6 @@
 ---
-title: Ignora piè di pagina intestazione
-linktitle: Ignora piè di pagina intestazione
+title: Ignora il piè di pagina dell'intestazione
+linktitle: Ignora il piè di pagina dell'intestazione
 second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come aggiungere un documento ignorando il contenuto di intestazione e piè di pagina utilizzando Aspose.Words per .NET.
 type: docs
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Passaggio 4: aggiungi il documento di origine al documento di destinazione
 
- Usa il`AppendDocument` metodo del documento di destinazione per aggiungere il documento di origine. Passaggio`ImportFormatMode.KeepSourceFormatting` come secondo parametro e le opzioni del formato di importazione come terzo parametro.
+ Usa il`AppendDocument` metodo del documento di destinazione per aggiungere il documento di origine. Passaggio`ImportFormatMode.KeepSourceFormatting`come secondo parametro e le opzioni del formato di importazione come terzo parametro.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## Passaggio 5: salva il documento di destinazione
 
- Infine, salva il documento di destinazione modificato utilizzando il file`Save` metodo del`Document` oggetto.
+Infine, salva il documento di destinazione modificato utilizzando il file`Save` metodo del`Document` oggetto.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

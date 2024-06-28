@@ -19,7 +19,7 @@ Trong hướng dẫn này, chúng ta sẽ khám phá mã nguồn C# được cun
 Document doc = new Document();
 ```
 
- Ở bước này chúng ta tạo mới`Document` sự vật.
+Ở bước này chúng ta tạo mới`Document` sự vật.
 
 ## Bước 3: Chỉnh sửa thuộc tính chủ đề
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- Ở bước này chúng ta truy cập vào`Theme` đối tượng của`Document` object để lấy chủ đề tài liệu. Tiếp theo, chúng ta có thể sửa đổi các thuộc tính chủ đề như phông chữ phụ (`MinorFonts.Latin`) và màu sắc (`Colors.Hyperlink`).
+ Ở bước này chúng ta truy cập vào`Theme` đối tượng của`Document`object để lấy chủ đề tài liệu. Tiếp theo, chúng ta có thể sửa đổi các thuộc tính chủ đề như phông chữ phụ (`MinorFonts.Latin`) và màu sắc (`Colors.Hyperlink`).
 
 ## Bước 4: Lưu tài liệu
 
@@ -67,7 +67,7 @@ Khám phá thêm các tính năng do Aspose.Words cho .NET cung cấp để tố
 
 #### Làm cách nào để truy cập và sửa đổi thuộc tính chủ đề?
 
- Để truy cập và sửa đổi các thuộc tính của chủ đề, bạn có thể sử dụng`Theme` đối tượng của`Document` lớp học. Bằng cách truy cập vào`Theme`đối tượng, bạn có thể sửa đổi các thuộc tính như phông chữ phụ (`MinorFonts.Latin`) và màu sắc (`Colors.Hyperlink`). Gán các giá trị mong muốn cho các thuộc tính này để tùy chỉnh chủ đề tài liệu của bạn.
+ Để truy cập và sửa đổi các thuộc tính của chủ đề, bạn có thể sử dụng`Theme` đối tượng của`Document` lớp học. Bằng cách truy cập vào`Theme` đối tượng, bạn có thể sửa đổi các thuộc tính như phông chữ phụ (`MinorFonts.Latin`) và màu sắc (`Colors.Hyperlink`). Gán các giá trị mong muốn cho các thuộc tính này để tùy chỉnh chủ đề tài liệu của bạn.
 
 #### Lợi ích của việc đặt thuộc tính chủ đề trong tài liệu Word là gì?
 
@@ -79,4 +79,4 @@ Khám phá thêm các tính năng do Aspose.Words cho .NET cung cấp để tố
 
 #### Tôi có thể lưu tài liệu đã sửa đổi ở các định dạng khác nhau không?
 
-Có, bạn có thể lưu tài liệu đã sửa đổi ở nhiều định dạng khác nhau được Aspose.Words hỗ trợ cho .NET. Các`Save` phương pháp của`Document` đối tượng cho phép bạn chỉ định định dạng tệp đầu ra, chẳng hạn như DOCX, PDF, HTML, v.v. Chọn định dạng phù hợp dựa trên yêu cầu của bạn.
+ Có, bạn có thể lưu tài liệu đã sửa đổi ở nhiều định dạng khác nhau được Aspose.Words hỗ trợ cho .NET. Các`Save` phương pháp của`Document` đối tượng cho phép bạn chỉ định định dạng tệp đầu ra, chẳng hạn như DOCX, PDF, HTML, v.v. Chọn định dạng phù hợp dựa trên yêu cầu của bạn.

@@ -1,6 +1,6 @@
 ---
-title: Modificare la spaziatura dei paragrafi asiatici e i rientri nel documento di Word
-linktitle: Modificare la spaziatura dei paragrafi asiatici e i rientri nel documento di Word
+title: Modificare la spaziatura e i rientri dei paragrafi asiatici nel documento Word
+linktitle: Modificare la spaziatura e i rientri dei paragrafi asiatici nel documento Word
 second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come modificare la spaziatura e i rientri dei paragrafi asiatici nel documento Word con Aspose.Words per .NET.
 type: docs
@@ -51,9 +51,9 @@ Ecco il codice sorgente completo per la funzione Modifica spaziatura paragrafo e
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent verrà aggiornato
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent verrà aggiornato
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent verrà aggiornato
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent verrà aggiornato.
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent verrà aggiornato.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent verrà aggiornato.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore verrà aggiornato
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter verrà aggiornato
 
@@ -71,7 +71,7 @@ Con questo codice sarai in grado di modificare la spaziatura e i rientri di un p
 
 #### D: Cosa fa la funzione "Modifica spaziatura paragrafo e rientri asiatici" in Aspose.Words per .NET?
 
-R: La funzione "Cambia spaziatura e rientri dei paragrafi asiatici" in Aspose.Words per .NET consente di modificare le proprietà di spaziatura e rientro di un paragrafo asiatico in un documento di Word. Puoi regolare i valori del rientro sinistro e destro, del rientro della prima riga, dello spazio prima e dello spazio dopo per controllare il layout e l'aspetto del paragrafo.
+R: La funzione "Cambia spaziatura e rientri dei paragrafi asiatici" in Aspose.Words per .NET consente di modificare le proprietà di spaziatura e rientro di un paragrafo asiatico in un documento di Word. Puoi regolare i rientri sinistro e destro, il rientro della prima riga, lo spazio prima e lo spazio dopo per controllare il layout e l'aspetto del paragrafo.
 
 #### D: Come posso modificare la spaziatura e i rientri di un paragrafo asiatico utilizzando Aspose.Words per .NET?
 

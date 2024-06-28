@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Ce code crée une instance de`HtmlSaveOptions` et des ensembles`CssStyleSheetType` à`CssStyleSheetType.External`pour générer une feuille de style CSS externe, et`CssClassNamePrefix` à`"pfx_"` préfixer`"pfx_"` aux noms de classe CSS.
+ Ce code crée une instance de`HtmlSaveOptions` et des ensembles`CssStyleSheetType` à`CssStyleSheetType.External`pour générer une feuille de style CSS externe, et`CssClassNamePrefix` à`"pfx_"` préfixer`"pfx_"` pour nommer les classes CSS.
 
 ## Étape 4 : Conversion et enregistrement du document au format HTML
 

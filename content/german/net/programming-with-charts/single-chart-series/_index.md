@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/programming-with-charts/single-chart-series/
 ---
 
-In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET einzelne Diagrammreihen in einem Diagramm anpassen. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, auf bestimmte Reihen zugreifen und deren Eigenschaften ändern.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET einzelne Diagrammreihen in einem Diagramm anpassen. Der bereitgestellte Quellcode zeigt, wie man ein Diagramm erstellt, auf bestimmte Reihen zugreift und deren Eigenschaften ändert.
 
 ## Schritt 1: Richten Sie das Projekt ein
 
@@ -17,7 +17,7 @@ Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 - Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen, indem Sie es mit dem NuGet-Paketmanager installieren.
 - Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
 
-## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein
+## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein.
 
  Erstelle eine neue`Document` Objekt und a`DocumentBuilder` um das Dokument zu erstellen.
 
@@ -117,4 +117,4 @@ Das Glätten von Diagrammreihen ist eine visuelle Verbesserungstechnik, mit der 
  Um Markierungen für Datenpunkte in einer Diagrammreihe mithilfe von Aspose.Words für .NET anzupassen, müssen Sie auf Folgendes zugreifen`Marker` Eigentum der`ChartSeries` Objekt und ändern Sie seine Eigenschaften, z`Symbol` Und`Size`. Markierungen sind visuelle Indikatoren, die im Diagramm platziert werden, um einzelne Datenpunkte darzustellen. Sie können aus einer Vielzahl integrierter Markierungssymbole auswählen und deren Größe anpassen, um bestimmte Datenpunkte innerhalb der Serie hervorzuheben oder zu unterscheiden.
 
 #### F5. Kann ich Farben für negative Werte in einer Diagrammreihe umkehren?
- Ja, Sie können mit Aspose.Words für .NET Farben für negative Werte in einer Diagrammreihe umkehren. Durch Einstellen der`InvertIfNegative` Eigentum der`ChartSeries` widersprechen`true`werden die Farben für Datenpunkte mit negativen Werten invertiert, sodass sie sich optisch von positiven Werten unterscheiden. Diese Funktion kann beim Vergleich positiver und negativer Werte in einer Diagrammreihe nützlich sein und eine klare Unterscheidung zwischen beiden ermöglichen.
+ Ja, Sie können mit Aspose.Words für .NET Farben für negative Werte in einer Diagrammreihe umkehren. Durch Einstellen der`InvertIfNegative` Eigentum der`ChartSeries` widersprechen`true`, werden die Farben für Datenpunkte mit negativen Werten invertiert, sodass sie sich optisch von positiven Werten unterscheiden. Diese Funktion kann beim Vergleich positiver und negativer Werte in einer Diagrammreihe nützlich sein und eine klare Unterscheidung zwischen beiden ermöglichen.

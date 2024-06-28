@@ -13,5 +13,5 @@ Clone And Combine Documents는 Aspose.Words for .NET을 사용하여 문서를 �
 | 제목 | 설명 |
 | --- | --- |
 | [Word 문서 복제](./cloning-document/) | .NET용 Aspose.Words를 사용하여 Word 문서를 복제하는 방법을 알아보세요. |
-| [교체 시 문서 삽입](./insert-document-at-replace/) | .NET용 Aspose.Words를 사용하여 교체 시 문서를 삽입하는 방법을 알아보세요. |
-| [편지 병합 시 문서 삽입](./insert-document-at-mail-merge/) | .NET용 Aspose.Words를 사용하여 메일 병합 중에 다른 문서에 문서를 삽입하는 방법을 알아보세요. |
+| [교체 시 문서 삽입](./insert-document-at-replace/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 하나의 Word 문서를 다른 Word 문서에 원활하게 삽입하는 방법을 알아보세요. 문서 처리를 간소화하려는 개발자에게 적합합니다. |
+| [편지 병합 시 문서 삽입](./insert-document-at-mail-merge/) | 이 포괄적인 단계별 튜토리얼에서 .NET용 Aspose.Words를 사용하여 메일 병합 필드에 문서를 삽입하는 방법을 알아보세요. |

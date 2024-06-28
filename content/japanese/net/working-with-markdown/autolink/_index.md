@@ -58,7 +58,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### Q: Aspose.Words で URL アドレスへの自動リンクを作成するにはどうすればよいですか?
 
-A: Aspose.Words で URL アドレスへの自動リンクを作成するには、`<a>`のタグを付けます`href`URL アドレスを含む属性。たとえば、次のように使用できます`<a href="https://www.aspose.com">https://www.aspose.com</a>`「https://www.aspose.com」に自動的にリンクします。
+ A: Aspose.Words で URL アドレスへの自動リンクを作成するには、`<a>`のタグを付けます`href`URL アドレスを含む属性。たとえば、次のように使用できます`<a href="https://www.aspose.com">https://www.aspose.com</a>`「https://www.aspose.com」に自動的にリンクします。
 
 #### Q: Aspose.Words で自動リンクの表示テキストをカスタマイズすることはできますか?
 
@@ -66,4 +66,4 @@ A: Aspose.Words で URL アドレスへの自動リンクを作成するには�
 
 #### Q: Aspose.Words のオートリンクに属性を追加するにはどうすればよいですか?
 
- A: Aspose.Words の自動リンクに追加の属性を追加するには、`<a>`鬼ごっこ。たとえば、次のように使用できます`<a href="https://www.aspose.com" target="_blank">Link</a>`新しいウィンドウまたはタブでリンクを開くには、` attribute target="_blank"`.
+A: Aspose.Words の自動リンクに追加の属性を追加するには、`<a>`鬼ごっこ。たとえば、次のように使用できます`<a href="https://www.aspose.com" target="_blank">Link</a>`新しいウィンドウまたはタブでリンクを開くには、` attribute target="_blank"`.

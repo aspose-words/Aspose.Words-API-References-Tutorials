@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Étape 4 : Importer et ajouter des paragraphes
 
-Parcourez les paragraphes du document source et importez chaque paragraphe dans le document de destination à l'aide du`importer`. Ajoutez les nœuds importés au corps du document de destination.
+ Parcourez les paragraphes du document source et importez chaque paragraphe dans le document de destination à l'aide du`importer`. Ajoutez les nœuds importés au corps du document de destination.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ Ceci termine la mise en œuvre de l’ajout d’un document source à un documen
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Conservez le formatage de la liste source lors de l’importation de paragraphes numérotés.
+	//Conservez le formatage de la liste source lors de l’importation de paragraphes numérotés.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

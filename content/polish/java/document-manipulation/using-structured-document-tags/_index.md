@@ -10,7 +10,7 @@ url: /pl/java/document-manipulation/using-structured-document-tags/
 
 ## Wprowadzenie do używania znaczników dokumentów strukturalnych (SDT) w Aspose.Words dla Java
 
-Tagi dokumentów strukturalnych (SDT) to potężna funkcja w Aspose.Words dla Java, która umożliwia tworzenie i manipulowanie ustrukturyzowaną zawartością w dokumentach. W tym obszernym przewodniku przeprowadzimy Cię przez różne aspekty używania SDT w Aspose.Words dla Java. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, w tym artykule znajdziesz cenne spostrzeżenia i praktyczne przykłady.
+Tagi dokumentów strukturalnych (SDT) to potężna funkcja w Aspose.Words dla Java, która umożliwia tworzenie i manipulowanie uporządkowaną treścią w dokumentach. W tym obszernym przewodniku przeprowadzimy Cię przez różne aspekty używania SDT w Aspose.Words dla Java. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, w tym artykule znajdziesz cenne spostrzeżenia i praktyczne przykłady.
 
 ## Pierwsze kroki
 

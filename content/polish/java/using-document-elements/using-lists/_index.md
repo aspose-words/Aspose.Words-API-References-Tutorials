@@ -8,7 +8,7 @@ weight: 18
 url: /pl/java/using-document-elements/using-lists/
 ---
 
-tym obszernym samouczku odkryjemy, jak efektywnie używać list w Aspose.Words for Java, potężnym interfejsie API do programowej pracy z dokumentami Microsoft Word. Listy są niezbędne do strukturyzowania i organizowania treści w dokumentach. Omówimy dwa kluczowe aspekty pracy z listami: ponowne uruchamianie list w każdej sekcji i określanie poziomów list. Zanurzmy się!
+tym obszernym samouczku odkryjemy, jak efektywnie używać list w Aspose.Words dla Java, potężnym interfejsie API do programowej pracy z dokumentami Microsoft Word. Listy są niezbędne do strukturyzowania i organizowania treści w dokumentach. Omówimy dwa kluczowe aspekty pracy z listami: ponowne uruchamianie list w każdej sekcji i określanie poziomów list. Zanurzmy się!
 
 ## Wprowadzenie do Aspose.Words dla Java
 
@@ -164,7 +164,7 @@ Wykonując poniższe kroki, możesz tworzyć dokumenty z niestandardowymi poziom
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Utwórz listę numerowaną w oparciu o jeden z szablonów list Microsoft Word
+        // Utwórz listę numerowaną w oparciu o jeden z szablonów list Microsoft Word.
         // zastosuj go do bieżącego akapitu kreatora dokumentu.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Na tej liście jest dziewięć poziomów, wypróbujmy je wszystkie.
@@ -173,7 +173,7 @@ Wykonując poniższe kroki, możesz tworzyć dokumenty z niestandardowymi poziom
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Utwórz listę punktowaną w oparciu o jeden z szablonów list programu Microsoft Word
+        // Utwórz listę punktowaną w oparciu o jeden z szablonów list programu Microsoft Word.
         // zastosuj go do bieżącego akapitu kreatora dokumentu.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

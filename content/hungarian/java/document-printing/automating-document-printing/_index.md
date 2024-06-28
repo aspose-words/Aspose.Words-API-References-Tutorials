@@ -79,7 +79,7 @@ A dokumentumnyomtatás automatizálása az Aspose.Words for Java használatával
 
 ### Automatizálhatok más dokumentumokkal kapcsolatos feladatokat az Aspose.Words for Java segítségével?
 
-Igen, az Aspose.Words for Java dokumentumautomatizálási lehetőségek széles skáláját kínálja. Olyan feladatokat hajthat végre, mint például a dokumentumkonverzió, a szövegkivonás és egyebek. Az átfogó részletekért tekintse meg az Aspose.Words dokumentációját.
+Igen, az Aspose.Words for Java dokumentumautomatizálási lehetőségek széles skáláját kínálja. Olyan feladatokat hajthat végre, mint például a dokumentumkonverzió, a szövegkivonat stb. Az átfogó részletekért tekintse meg az Aspose.Words dokumentációját.
 
 ### Az Aspose.Words for Java kompatibilis a különböző dokumentumformátumokkal?
 
@@ -87,7 +87,7 @@ Igen, az Aspose.Words for Java számos dokumentumformátumot támogat, beleértv
 
 ### Szükségem van speciális engedélyekre a dokumentumok programozott nyomtatásához?
 
-A dokumentumok programozott, Aspose.Words for Java használatával történő nyomtatásához nincs szükség különleges engedélyekre azon túl, amelyek általában a rendszerről történő nyomtatáshoz szükségesek. Győződjön meg arról, hogy az alkalmazás rendelkezik a szükséges nyomtató-hozzáférési jogokkal.
+A dokumentumok programozott, Aspose.Words for Java használatával történő nyomtatásához nincs szükség különleges engedélyekre azon felül, amelyek általában a rendszerről történő nyomtatáshoz szükségesek. Győződjön meg arról, hogy az alkalmazás rendelkezik a szükséges nyomtató-hozzáférési jogokkal.
 
 ### Hol találhatok további forrásokat és dokumentációt az Aspose.Words for Java-hoz?
 

@@ -15,7 +15,7 @@ C# アプリケーションで数式図形を含むドキュメントをワー�
 
 ## 読み込みオプションの構成
 
-最初のステップは、ドキュメントの読み込みオプションを構成することです。 LoadOptions クラスを使用して、読み込みパラメータを指定します。この例では、図形を Office の数式に変換したいので、ConvertShapeToOfficeMath プロパティを true に設定する必要があります。その方法は次のとおりです。
+最初のステップは、ドキュメントの読み込みオプションを設定することです。 LoadOptions クラスを使用して、読み込みパラメータを指定します。この例では、図形を Office の数式に変換したいので、ConvertShapeToOfficeMath プロパティを true に設定する必要があります。その方法は次のとおりです。
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };

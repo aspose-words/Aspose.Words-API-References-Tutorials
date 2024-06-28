@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 
 Pamiętaj, aby zastąpić „TWOJ PLIK DOKUMENTU” nazwą własnego pliku.
 
-## Krok 3: Uzyskaj nazwy pól scalających
+## Krok 3: Uzyskaj nazwy pól scalania
 
  Używamy`GetFieldNames()` metodę, aby uzyskać tablicę zawierającą nazwy pól scalających występujących w dokumencie.
 
@@ -54,7 +54,7 @@ string[] fieldNames = doc.MailMerge.GetFieldNames();
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- W tym przykładzie załadowaliśmy dokument, otrzymaliśmy nazwy pól scalania za pomocą`GetFieldNames()` metodę i wyświetlił liczbę pól scalania występujących w dokumencie.
+ W tym przykładzie załadowaliśmy dokument, uzyskaliśmy nazwy pól scalania za pomocą`GetFieldNames()` metodę i wyświetlił liczbę pól scalania występujących w dokumencie.
 
 Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Uzyskaj scalanie nazw pól” w Aspose.Words dla .NET.
 
@@ -62,7 +62,7 @@ Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Uzyskaj 
 
 #### P1: Co to jest korespondencja seryjna w Aspose.Words?
 
-Korespondencja seryjna w Aspose.Words to proces łączenia danych z zewnętrznego źródła (np. arkusza kalkulacyjnego Excel lub bazy danych) z szablonowym dokumentem Word w celu tworzenia spersonalizowanych dokumentów. Ułatwia to automatyczne generowanie pism, raportów i innych podobnych dokumentów.
+Korespondencja seryjna w Aspose.Words to proces łączenia danych z zewnętrznego źródła (np. arkusza kalkulacyjnego lub bazy danych Excel) z szablonowym dokumentem Word w celu tworzenia spersonalizowanych dokumentów. Ułatwia to automatyczne generowanie pism, raportów i innych podobnych dokumentów.
 
 #### P2: Jak uzyskać listę pól korespondencji seryjnej dostępnych w dokumencie programu Word?
 
@@ -116,4 +116,4 @@ O: Tak, możliwe jest filtrowanie pól korespondencji seryjnej na podstawie okre
 
 #### P: Jak mogę manipulować polami korespondencji seryjnej w Aspose.Words?
 
-O: Aby manipulować polami korespondencji seryjnej w Aspose.Words, możesz użyć metod i właściwości udostępnianych przez obiekty Document i MailMergeField. Możesz dodawać, usuwać lub aktualizować pola korespondencji seryjnej, a także pobierać i edytować wartości skojarzone z polami.
+O: Aby manipulować polami korespondencji seryjnej w Aspose.Words, możesz użyć metod i właściwości udostępnianych przez obiekty Document i MailMergeField. Możesz dodawać, usuwać lub aktualizować pola korespondencji seryjnej, a także pobierać i edytować wartości powiązane z polami.

@@ -24,7 +24,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: crear y aplicar una lista numerada
 
-continuación, cree una lista numerada basada en una de las plantillas de listas de Microsoft Word y aplíquela al párrafo actual en el generador de documentos:
+A continuación, cree una lista numerada basada en una de las plantillas de listas de Microsoft Word y aplíquela al párrafo actual en el generador de documentos:
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
@@ -46,7 +46,7 @@ Repita estos pasos para especificar niveles de lista y agregar texto en cada niv
 
 ## Paso 4: crear y aplicar una lista con viñetas
 
-También puede crear y aplicar una lista con viñetas utilizando una de las plantillas de listas de Microsoft Word:
+También puede crear y aplicar una lista con viñetas utilizando una de las plantillas de lista de Microsoft Word:
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Paso 6: dejar de formatear la lista
 
- Para detener el formato de la lista, configure`null` hacia`List` propiedad del generador de documentos:
+ Para detener el formato de la lista, configure`null` hacia`List`propiedad del generador de documentos:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Cree una lista numerada basada en una de las plantillas de listas de Microsoft Word
+// Cree una lista numerada basada en una de las plantillas de listas de Microsoft Word.
 // aplicarlo al párrafo actual del creador de documentos.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Cree una lista con viñetas basada en una de las plantillas de listas de Microsoft Word
+// Cree una lista con viñetas basada en una de las plantillas de listas de Microsoft Word.
 // aplicarlo al párrafo actual del creador de documentos.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### P: ¿Puedo agregar niveles adicionales a una lista numerada en Aspose.Words?
 
- R: Sí, es posible agregar niveles adicionales a una lista numerada en Aspose.Words. El`ListLevel` La clase le permite establecer propiedades de formato para cada nivel de la lista. Puede configurar opciones como prefijo, sufijo, alineación, sangría, etc. Esto le permite crear listas con múltiples niveles de jerarquía.
+ R: Sí, es posible agregar niveles adicionales a una lista numerada en Aspose.Words. El`ListLevel`La clase le permite establecer propiedades de formato para cada nivel de la lista. Puede configurar opciones como prefijo, sufijo, alineación, sangría, etc. Esto le permite crear listas con múltiples niveles de jerarquía.
 
 

@@ -209,7 +209,7 @@ Dalam panduan langkah demi langkah ini, kami mengeksplorasi pentingnya keamanan 
 ### Apakah Aspose.Words mendukung format dokumen lain selain Word?
    Ya, Aspose.Words mendukung berbagai format, termasuk PDF, HTML, EPUB, dan banyak lagi.
 
-### Apakah mungkin untuk menambahkan beberapa tanda tangan digital ke sebuah dokumen?
+### Apakah mungkin untuk menambahkan beberapa tanda tangan digital ke suatu dokumen?
    Ya, Aspose.Words memungkinkan Anda menambahkan beberapa tanda tangan digital ke dokumen.
 
 ### Apakah Aspose.Words mendukung pemulihan kata sandi dokumen?

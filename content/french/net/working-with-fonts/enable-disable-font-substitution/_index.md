@@ -82,7 +82,7 @@ R : Lorsque les polices requises sont manquantes lors de la substitution dans u
 
 #### Q : Comment puis-je gérer les polices manquantes lors d'un remplacement dans un document Word avec Aspose.Words ?
 
-R : Pour gérer les polices manquantes lors d'un remplacement dans un document Word avec Aspose.Words, vous pouvez utiliser l'API pour détecter les polices manquantes et fournir des options de résolution. Vous pouvez choisir de remplacer les polices manquantes par des polices alternatives ou d'inclure les polices manquantes dans le document, en fonction de vos besoins.
+R : Pour gérer les polices manquantes lors du remplacement dans un document Word avec Aspose.Words, vous pouvez utiliser l'API pour détecter les polices manquantes et fournir des options de résolution. Vous pouvez choisir de remplacer les polices manquantes par des polices alternatives ou d'inclure les polices manquantes dans le document, en fonction de vos besoins.
 
 #### Q : Est-il important de contrôler la substitution de polices dans un document Word ?
 

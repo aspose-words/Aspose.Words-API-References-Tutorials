@@ -70,11 +70,11 @@ Belge işleme yeteneklerinizi daha da geliştirmek ve iş akışınızı kolayla
 
 #### Word belgesini hangi formatlara bölebilirim?
 
-Sağlanan kaynak kodu, Word belgesinin HTML biçiminde daha küçük parçalara bölünmesini gösterir. Ancak Aspose.Words for .NET, DOCX, PDF, EPUB ve daha fazlası dahil olmak üzere çeşitli çıktı formatlarını destekler. Kodu değiştirebilir ve istediğiniz çıktı formatını belirtebilirsiniz.`HtmlSaveOptions` buna göre itiraz edin.
+ Sağlanan kaynak kodu, Word belgesinin HTML biçiminde daha küçük parçalara bölünmesini gösterir. Ancak Aspose.Words for .NET, DOCX, PDF, EPUB ve daha fazlası dahil olmak üzere çeşitli çıktı formatlarını destekler. Kodu değiştirebilir ve istediğiniz çıktı formatını belirtebilirsiniz.`HtmlSaveOptions` buna göre itiraz edin.
 
 #### Belgeyi bölmek için farklı bir kriter seçebilir miyim?
 
- Evet, gereksinimlerinize göre belgeyi bölmek için farklı bir kriter seçebilirsiniz. Aspose.Words for .NET çeşitli kriter seçenekleri sunar;`HeadingParagraph`, `Page`, `Section` , ve dahası. Değiştirmek`DocumentSplitCriteria` içindeki mülk`HtmlSaveOptions` Bölme için uygun kriterleri seçmek için nesneyi seçin.
+Evet, gereksinimlerinize göre belgeyi bölmek için farklı bir kriter seçebilirsiniz. Aspose.Words for .NET çeşitli kriter seçenekleri sunar;`HeadingParagraph`, `Page`, `Section` , ve dahası. Değiştirmek`DocumentSplitCriteria` içindeki mülk`HtmlSaveOptions` Bölme için uygun kriterleri seçmek için nesneyi seçin.
 
 #### Bölünmüş parçalar için çıktı HTML'sini nasıl özelleştirebilirim?
 

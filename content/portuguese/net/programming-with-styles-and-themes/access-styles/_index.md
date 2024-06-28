@@ -30,7 +30,7 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- Nesta etapa, acessamos a coleção de estilos do documento usando o`Styles` propriedade. Esta coleção contém todos os estilos presentes no documento.
+ Nesta etapa, acessamos a coleção de estilos do documento usando o`Styles`propriedade. Esta coleção contém todos os estilos presentes no documento.
 
 ## Etapa 4: navegar pelos estilos
 
@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Conclusão
 
- Neste tutorial, aprendemos como recuperar e acessar os estilos presentes em um documento Word usando Aspose.Words for .NET. Ao utilizar o`Styles` propriedade do`Document` objeto, obtivemos a coleção de estilos e percorremos eles para exibir seus nomes. Este recurso fornece informações valiosas sobre os estilos usados em um documento e permite maior personalização e análise.
+ Neste tutorial, aprendemos como recuperar e acessar os estilos presentes em um documento Word usando Aspose.Words for .NET. Ao utilizar o`Styles` propriedade do`Document`objeto, obtivemos a coleção de estilos e percorremos eles para exibir seus nomes. Este recurso fornece informações valiosas sobre os estilos usados em um documento e permite maior personalização e análise.
 
 Ao aproveitar a poderosa API do Aspose.Words for .NET, os desenvolvedores podem manipular e trabalhar facilmente com estilos de documentos, oferecendo controle aprimorado sobre a formatação e o processamento de documentos.
 

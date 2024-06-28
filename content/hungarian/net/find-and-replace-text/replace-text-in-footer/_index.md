@@ -17,7 +17,7 @@ Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogya
 
 ## 1. lépés: Töltse be a dokumentumot
 
-Mielőtt elkezdené használni a szövegcserét a láblécben, be kell töltenünk a dokumentumot az Aspose.Words for .NET-be. Ezt a`Document` osztályt, és adja meg a dokumentum fájl elérési útját:
+Mielőtt elkezdené használni a szövegcserét a láblécben, be kell töltenünk a dokumentumot az Aspose.Words for .NET-be. Ezt a`Document` osztályt, és megadja a dokumentum fájl elérési útját:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

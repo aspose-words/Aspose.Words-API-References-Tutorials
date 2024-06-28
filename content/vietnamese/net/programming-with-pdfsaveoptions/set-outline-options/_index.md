@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Bước 3: Định cấu hình tùy chọn lưu dưới dạng PDF với các tùy chọn gói
 
- Để đặt các tùy chọn phác thảo trong tệp PDF được tạo, chúng ta cần định cấu hình`PdfSaveOptions` sự vật. Chúng ta có thể đặt số lượng cấp độ phác thảo tiêu đề (`HeadingsOutlineLevels`) và số lượng cấp độ phác thảo mở rộng (`ExpandedOutlineLevels`).
+Để đặt các tùy chọn phác thảo trong tệp PDF được tạo, chúng ta cần định cấu hình`PdfSaveOptions` sự vật. Chúng ta có thể đặt số lượng cấp độ phác thảo tiêu đề (`HeadingsOutlineLevels`) và số lượng cấp độ phác thảo mở rộng (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

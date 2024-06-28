@@ -2,84 +2,153 @@
 title: 差し込み印刷時に文書を挿入
 linktitle: 差し込み印刷時に文書を挿入
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、差し込み印刷中にドキュメントを別のドキュメントに挿入する方法を学習します。
+description: この包括的なステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して差し込み印刷フィールドにドキュメントを挿入する方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-このチュートリアルでは、Aspose.Words for .NET の差し込み印刷中にドキュメントを挿入機能を使用して、差し込み印刷中にドキュメントを別のドキュメントに挿入する方法を説明します。以下の手順に従ってソース コードを理解し、ドキュメントの挿入を実行します。
+## 導入
 
-## ステップ 1: メインドキュメントをロードする
+Aspose.Words for .NET によるドキュメント自動化の世界へようこそ!差し込み印刷操作中に、メイン文書内の特定のフィールドに文書を動的に挿入する方法を考えたことはありますか?そうですね、あなたは正しい場所にいます。このチュートリアルでは、Aspose.Words for .NET を使用して差し込み印刷フィールドにドキュメントを挿入するプロセスを段階的に説明します。それはパズルをつなぎ合わせるようなもので、各ピースが完璧に所定の位置に収まります。それでは、飛び込んでみましょう！
 
-まず、ドキュメントのディレクトリを指定し、メインドキュメントを Document オブジェクトにロードします。その方法は次のとおりです。
+## 前提条件
+
+始める前に、以下のものがあることを確認してください。
+
+1.  Aspose.Words for .NET: できること[最新バージョンをここからダウンロードしてください](https://releases.aspose.com/words/net/)。ライセンスを購入する必要がある場合は、購入できます[ここ](https://purchase.aspose.com/buy)。あるいは、[仮免許](https://purchase.aspose.com/temporary-license/)または、[無料トライアル](https://releases.aspose.com/).
+2. 開発環境: Visual Studio またはその他の C# IDE。
+3. C# の基本知識: C# プログラミングに精通していると、このチュートリアルを簡単に進めることができます。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートする必要があります。これらはプロジェクトの構成要素のようなものです。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+using System.Linq;
 ```
 
-## ステップ 2: 差し込み印刷を構成する
+プロセスを管理可能なステップに分割してみましょう。各ステップは前のステップに基づいて構築され、完全な解決策に導きます。
 
-次に、差し込み印刷を構成し、文書を別の文書に挿入するためのフィールド差し込みコールバックを指定しましょう。その方法は次のとおりです。
+## ステップ 1: ディレクトリを設定する
 
-```csharp
-mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-```
-
-## ステップ 3: 差し込み印刷の実行
-
-差し込みフィールドの名前と対応するデータを指定して、差し込み印刷を実行します。その方法は次のとおりです。
+ドキュメントの挿入を開始する前に、ドキュメント ディレクトリへのパスを定義する必要があります。ここに書類が保管されます。
 
 ```csharp
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-```
-
-### Aspose.Words for .NET を使用した差し込み文書挿入のソース コード例
-
-Aspose.Words for .NET の差し込み文書への文書の挿入機能の完全なソース コードを次に示します。
-
-```csharp
-//ドキュメントディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
+## ステップ 2: メインドキュメントのロード
+
+次に、メインドキュメントをロードします。この文書には、他の文書が挿入される差し込みフィールドが含まれています。
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+## ステップ 3: フィールドマージコールバックの設定
+
+マージ プロセスを処理するには、コールバック関数を設定する必要があります。この関数は、指定された差し込みフィールドにドキュメントを挿入する役割を果たします。
+
+```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-//メイン文書には「Document_1」という差し込みフィールドがあります。
-//このフィールドに対応するデータには、ドキュメントへの完全修飾パスが含まれています。
-//それをこのフィールドに挿入する必要があります。
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
+```
 
+## ステップ 4: 差し込み印刷の実行
+
+次に、差し込み印刷を実行します。ここで魔法が起こります。差し込みフィールドと、このフィールドに挿入するドキュメントを指定します。
+
+```csharp
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
+```
+
+## ステップ 5: ドキュメントを保存する
+
+差し込み印刷が完了したら、変更した文書を保存します。この新しいドキュメントには、必要な場所にコンテンツが挿入されます。
+
+```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-このコードを使用すると、Aspose.Words for .NET を使用して差し込み印刷中に文書を別の文書に挿入できるようになります。結果のドキュメントは新しい名前で保存されます
+## ステップ 6: コールバック ハンドラーの作成
 
+コールバック ハンドラーは、差し込みフィールドに対する特別な処理を行うクラスです。フィールド値で指定されたドキュメントをロードし、現在の差し込みフィールドに挿入します。
+
+```csharp
+private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
+{
+    void IFieldMergingCallback.FieldMerging(FieldMergingArgs args)
+    {
+        if (args.DocumentFieldName == "Document_1")
+        {
+            DocumentBuilder builder = new DocumentBuilder(args.Document);
+            builder.MoveToMergeField(args.DocumentFieldName);
+
+            Document subDoc = new Document((string)args.FieldValue);
+            InsertDocument(builder.CurrentParagraph, subDoc);
+
+            if (!builder.CurrentParagraph.HasChildNodes)
+                builder.CurrentParagraph.Remove();
+
+            args.Text = null;
+        }
+    }
+}
+```
+
+## ステップ 7: ドキュメントを挿入する
+
+このメソッドは、指定されたドキュメントを現在の段落または表のセルに挿入します。
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        foreach (Node srcNode in srcSection.Body)
+        {
+            if (srcNode.NodeType == NodeType.Paragraph)
+            {
+                Paragraph para = (Paragraph)srcNode;
+                if (para.IsEndOfSection && !para.HasChildNodes)
+                    continue;
+            }
+
+            Node newNode = importer.ImportNode(srcNode, true);
+            destinationParent.InsertAfter(newNode, insertionDestination);
+            insertionDestination = newNode;
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
+}
+```
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET の差し込み印刷中にドキュメントを挿入機能を使用して、差し込み印刷中にドキュメントを別のドキュメントに挿入する方法を検討しました。差し込み印刷を構成し、必要なデータを提供すると、さまざまな文書テンプレートまたはセクションを結合して動的に文書を組み立てることができます。 Aspose.Words for .NET は、複雑なドキュメント生成シナリオを管理するための柔軟かつ強力な方法を提供し、ドキュメントの作成および操作タスクを自動化するための貴重なツールとなります。
+そして、それができました！ Aspose.Words for .NET を使用して、差し込み印刷操作中に特定のフィールドにドキュメントを正常に挿入しました。この強力な機能により、特に大量のドキュメントを扱う場合に、時間と労力を大幅に節約できます。それは、面倒な作業をすべて引き受けてくれるパーソナルアシスタントを持つようなものだと考えてください。さあ、試してみてください。コーディングを楽しんでください!
 
-### よくある質問
+## よくある質問
 
-#### Q: 差し込み印刷中に文書を別の文書に挿入する目的は何ですか?
+### 複数の文書を異なる差し込みフィールドに挿入できますか?
+はい、できます。適切な差し込みフィールドと対応するドキュメント パスを`MailMerge.Execute`方法。
 
-A: 差し込み印刷中にドキュメントを別のドキュメントに挿入すると、差し込み印刷プロセス中に提供されたデータに基づいて、さまざまなドキュメント テンプレートまたはセクションを動的に組み合わせることができます。この機能は、さまざまな事前定義されたテンプレートまたはセクションを最終ドキュメントにマージして複雑なドキュメントを組み立てる場合に特に便利です。
+### 挿入した文書をメイン文書とは異なるフォーマットにすることはできますか?
+絶対に！使用できます`ImportFormatMode`のパラメータ`NodeImporter`書式設定を制御します。
 
-#### Q: Aspose.Words for .NET を使用して差し込み印刷中に文書を別の文書に挿入するにはどうすればよいですか?
+### 差し込みフィールド名が動的である場合はどうなるでしょうか?
+動的差し込みフィールド名をパラメータとしてコールバック ハンドラに渡すことで、動的差し込みフィールド名を処理できます。
 
-A: Aspose.Words for .NET を使用して差し込み印刷中に文書を別の文書に挿入するには、次の手順に従います。
-1. ベースとなるメインドキュメントを Document オブジェクトに読み込みます。
-2. 差し込み印刷を構成し、文書の挿入を処理するフィールド差し込みコールバックを指定します。
-3. 差し込みフィールドの名前と対応するデータ (挿入する文書へのパス) を使用して差し込み印刷を実行します。
+### この方法をさまざまなファイル形式で使用できますか?
+はい、Aspose.Words は、DOCX、PDF などを含むさまざまなファイル形式をサポートしています。
 
-#### Q: 差し込み印刷中の挿入動作をカスタマイズするにはどうすればよいですか?
-
-A: 差し込み印刷中の挿入動作をカスタマイズするには、IFieldMergingCallback インターフェイスから継承してカスタム FieldMergingCallback を実装できます。これにより、特定の要件に基づいてドキュメントの挿入および結合方法を制御できます。
-
-#### Q: 差し込み印刷中に複数の文書を挿入できますか?
-
-A: はい、各差し込みフィールドに適切なデータを指定することで、差し込み印刷中に複数の文書を挿入できます。ドキュメントの挿入が必要な差し込みフィールドごとに、対応するドキュメントへのパスをデータとして指定します。
-
-
+### 文書挿入プロセス中のエラーはどのように処理すればよいですか?
+コールバック ハンドラーにエラー処理を実装して、発生する可能性のある例外を管理します。

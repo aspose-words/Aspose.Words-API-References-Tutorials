@@ -10,7 +10,7 @@ is_root: true
 
 ## .NET 的 Aspose.Words 文档处理教程
 {{% alert color="primary" %}}
-这些教程提供了有关如何以编程方式使用 Microsoft Word 文档的清晰详细的说明，涵盖了广泛的功能。从文档创建和编辑等简单任务到邮件合并、文档转换和文档加密等更高级的功能，开发人员可以找到实际示例和代码片段以在其项目中实现。通过遵循这些教程，.NET 开发人员可以通过强大的文档处理功能增强其应用程序，确保在其软件解决方案中高效、无缝地处理 Word 文档。 
+这些教程提供了有关如何以编程方式处理 Microsoft Word 文档的清晰详细的说明，涵盖了广泛的功能。从文档创建和编辑等简单任务到邮件合并、文档转换和文档加密等更高级的功能，开发人员可以找到实际示例和代码片段以在其项目中实现。通过遵循这些教程，.NET 开发人员可以通过强大的文档处理功能增强其应用程序，确保在其软件解决方案中高效、无缝地处理 Word 文档。 
 {{% /alert %}}
 
 这些是一些有用资源的链接：
@@ -25,7 +25,7 @@ is_root: true
 - [使用列表](./net/working-with-list/)   
 - [使用 Markdown](./net/working-with-markdown/)   
 - [使用节点](./net/working-with-node/)   
-- [使用修订版](./net/working-with-revisions/)   
+- [处理评论](./net/working-with-revisions/)   
 - [使用文本框](./net/working-with-textboxes/)   
 - [拆分文档](./net/split-document/)   
 - [使用 Documentbuilder 添加内容](./net/add-content-using-documentbuilder/)

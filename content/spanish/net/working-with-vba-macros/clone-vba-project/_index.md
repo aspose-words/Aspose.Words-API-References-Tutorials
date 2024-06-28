@@ -32,7 +32,7 @@ A continuación, cargaremos el documento de Word de origen, que contiene el proy
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## Paso 3: cree un nuevo documento con el proyecto VBA clonado
+## Paso 3: cree un nuevo documento con el proyecto VBA clonado.
 Crearemos un nuevo documento con un proyecto VBA vacío y clonaremos el proyecto VBA del documento fuente.
 
 ```csharp
@@ -74,7 +74,7 @@ R: Duplicar un proyecto VBA consiste en copiar todo el código VBA de un documen
 R: Antes de poder clonar un proyecto VBA a partir de un documento de Word, debe tener conocimientos prácticos del lenguaje de programación C#. También necesita instalar la biblioteca Aspose.Words para .NET en su proyecto. Además, necesita un documento de Word que contenga un proyecto VBA que desee clonar.
 
 #### P: ¿Cómo configurar el directorio de documentos en el código?
- R: En el código proporcionado, debes reemplazar`"YOUR DOCUMENTS DIRECTORY"` con la ruta adecuada al directorio donde se encuentra su documento de Word que contiene el proyecto VBA.
+ R: En el código proporcionado, debes reemplazarlo.`"YOUR DOCUMENTS DIRECTORY"` con la ruta adecuada al directorio donde se encuentra su documento de Word que contiene el proyecto VBA.
 
 #### P: ¿Cómo guardar el documento de destino con un proyecto VBA clonado?
 

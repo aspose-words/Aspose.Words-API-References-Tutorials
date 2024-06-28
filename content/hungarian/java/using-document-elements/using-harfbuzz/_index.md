@@ -2,7 +2,7 @@
 title: A HarfBuzz használata az Aspose.Words for Java-ban
 linktitle: A HarfBuzz használata
 second_title: Aspose.Words Java Document Processing API
-description: Tanulja meg a HarfBuzz használatát az Aspose.Words for Java speciális szövegformázásához. Ezzel a lépésenkénti útmutatóval javíthatja a szöveg megjelenítését összetett szkriptekben.
+description: Tanulja meg a HarfBuzz használatát az Aspose.Words for Java speciális szövegformázásához. Ezzel a lépésenkénti útmutatóval javíthatja a szövegmegjelenítést összetett szkriptekben.
 type: docs
 weight: 15
 url: /hu/java/using-document-elements/using-harfbuzz/

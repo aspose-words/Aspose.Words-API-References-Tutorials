@@ -8,7 +8,7 @@ weight: 16
 url: /ja/java/document-loading-and-saving/advance-html-documents-saving-options/
 ---
 
-このチュートリアルでは、Aspose.Words for Java が提供する高度な HTML ドキュメント保存オプションを検討します。 Aspose.Words は Word ドキュメントを操作するための強力な Java API であり、ドキュメントの操作と変換のための幅広い機能を提供します。
+このチュートリアルでは、Aspose.Words for Java が提供する高度な HTML ドキュメント保存オプションを検討します。 Aspose.Words は、Word ドキュメントを操作するための強力な Java API であり、ドキュメントの操作と変換のための幅広い機能を提供します。
 
 ## 1. はじめに
 Aspose.Words for Java を使用すると、Word ドキュメントをプログラムで操作できます。このチュートリアルでは、Word 文書を HTML に変換する方法を制御できる、高度な HTML 文書保存オプションに焦点を当てます。
@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. 結論
 このチュートリアルでは、Aspose.Words for Java が提供する高度な HTML ドキュメント保存オプションを検討しました。これらのオプションを使用すると、変換プロセスをきめ細かく制御できるため、元の Word 文書によく似た HTML 文書を作成できます。
 
-## 12. よくある質問
+## 12.よくある質問
 Aspose.Words for Java および HTML ドキュメント保存オプションの操作に関してよくある質問をいくつか示します。
 
 ### Q1: Aspose.Words for Java を使用して HTML を Word 形式に変換するにはどうすればよいですか?

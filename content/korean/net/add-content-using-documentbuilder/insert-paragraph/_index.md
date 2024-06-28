@@ -2,29 +2,44 @@
 title: Word 문서에 단락 삽입
 linktitle: Word 문서에 단락 삽입
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에 서식 있는 단락을 삽입하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에 단락을 삽입하는 방법을 알아보세요. 원활한 문서 조작을 위한 자세한 튜토리얼을 따르십시오.
 type: docs
 weight: 10
 url: /ko/net/add-content-using-documentbuilder/insert-paragraph/
 ---
-이 포괄적인 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에 단락을 삽입하는 방법을 배웁니다. 우리는 프로세스를 안내하고 필요한 C# 코드 조각을 제공할 것입니다. 이 가이드가 끝나면 문서에 서식 있는 단락을 추가할 수 있게 됩니다.
+## 소개
+
+.NET용 Aspose.Words를 사용하여 프로그래밍 방식으로 Word 문서에 단락을 삽입하는 방법에 대한 포괄적인 가이드에 오신 것을 환영합니다. 숙련된 개발자이거나 .NET에서 문서 조작을 이제 막 시작하는 사람이라면 이 자습서에서는 명확한 단계별 지침과 예제를 통해 프로세스를 안내합니다.
 
 ## 전제조건
-시작하기 전에 다음 필수 구성 요소가 있는지 확인하세요.
-- 시스템에 설치된 .NET 라이브러리용 Aspose.Words.
 
-## 1단계: 새 문서 및 DocumentBuilder 만들기
-시작하려면 Document 클래스를 사용하여 새 문서를 만들고 DocumentBuilder 객체를 초기화합니다.
+튜토리얼을 시작하기 전에 다음 전제조건이 충족되었는지 확인하십시오.
+- C# 프로그래밍 및 .NET 프레임워크에 대한 기본 지식
+- 컴퓨터에 Visual Studio가 설치되어 있습니다.
+-  .NET 라이브러리용 Aspose.Words가 설치되었습니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
 
+## 네임스페이스 가져오기
+
+먼저 시작하는 데 필요한 네임스페이스를 가져오겠습니다.
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Builder;
+using System.Drawing;
+```
+
+## 1단계: 문서 및 DocumentBuilder 초기화
+
+ 문서를 설정하고 초기화하는 것부터 시작하세요.`DocumentBuilder` 물체.
+```csharp
+// 문서 디렉터리의 경로입니다.
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2단계: 글꼴 및 서식 설정
-다음으로 각각 Font 및 ParagraphFormat 개체를 사용하여 글꼴 속성과 단락 서식을 설정합니다.
+## 2단계: 글꼴 및 단락 서식 지정
 
+다음으로 새 단락의 글꼴과 단락 서식을 사용자 정의합니다.
 ```csharp
 Font font = builder.Font;
 font.Size = 16;
@@ -40,65 +55,36 @@ paragraphFormat.KeepTogether = true;
 ```
 
 ## 3단계: 단락 삽입
-글꼴과 서식을 설정한 후 DocumentBuilder 클래스의 Writeln 메서드를 사용하여 전체 단락을 삽입합니다.
 
+ 이제 다음을 사용하여 원하는 콘텐츠를 추가하세요.`WriteLn` 의 방법`DocumentBuilder`.
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
 
 ## 4단계: 문서 저장
-단락을 삽입한 후 Document 클래스의 Save 메서드를 사용하여 문서를 파일에 저장합니다.
 
+마지막으로 수정된 문서를 원하는 위치에 저장합니다.
 ```csharp
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
-```
-
-## .NET용 Aspose.Words를 사용하여 단락 삽입을 위한 소스 코드 예
-다음은 .NET용 Aspose.Words를 사용하여 단락을 삽입하는 전체 소스 코드입니다.
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-Font font = builder.Font;
-font.Size = 16;
-font.Bold = true;
-font.Color = Color.Blue;
-font.Name = "Arial";
-font.Underline = Underline.Dash;
-
-ParagraphFormat paragraphFormat = builder.ParagraphFormat;
-paragraphFormat.FirstLineIndent = 8;
-paragraphFormat.Alignment = ParagraphAlignment.Justify;
-paragraphFormat.KeepTogether = true;
-
-builder.Writeln("A whole paragraph.");
-
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
 ## 결론
-축하해요! Aspose.Words for .NET을 사용하여 서식이 지정된 단락을 Word 문서에 삽입하는 방법을 성공적으로 배웠습니다. 단계별 가이드를 따르고 제공된 소스 코드를 활용하면 이제 특정 글꼴, 서식 및 정렬이 포함된 사용자 정의 단락을 문서에 추가할 수 있습니다.
 
-### Word 문서에 단락 삽입에 대한 FAQ
+축하해요! .NET용 Aspose.Words를 사용하여 Word 문서에 서식이 지정된 단락을 성공적으로 삽입했습니다. 이 프로세스를 통해 애플리케이션의 요구 사항에 맞는 풍부한 콘텐츠를 동적으로 생성할 수 있습니다.
 
-#### Q: 동일한 문서에 서식이 다른 여러 단락을 삽입할 수 있나요?
+## FAQ
 
- A: 예, Aspose.Words for .NET을 사용하여 동일한 문서에 서로 다른 서식을 가진 여러 단락을 삽입할 수 있습니다. 호출하기 전에 글꼴 및 단락 서식 속성을 조정하기만 하면 됩니다.`Writeln` 각 단락에 대한 방법.
+### .NET Core 애플리케이션과 함께 .NET용 Aspose.Words를 사용할 수 있나요?
+예, .NET용 Aspose.Words는 .NET Framework와 함께 .NET Core 애플리케이션을 지원합니다.
 
-#### Q: 단락의 줄 간격과 들여쓰기를 어떻게 설정합니까?
+### .NET용 Aspose.Words의 임시 라이선스를 어떻게 얻을 수 있나요?
+ 임시면허를 취득하실 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 
- A: .NET용 Aspose.Words는 단락의 줄 간격과 들여쓰기를 설정하는 옵션을 제공합니다. 당신은 조정할 수 있습니다`LineSpacing` 그리고`LeftIndent` 의 속성`ParagraphFormat` 이러한 측면을 제어하는 객체입니다.
+### .NET용 Aspose.Words는 Microsoft Word 버전과 호환됩니까?
+예, Aspose.Words for .NET은 최신 릴리스를 포함한 다양한 Microsoft Word 버전과의 호환성을 보장합니다.
 
-#### Q: DocumentBuilder를 사용하여 글머리 기호 또는 번호 매기기 목록을 삽입할 수 있습니까?
+### .NET용 Aspose.Words는 문서 암호화를 지원합니까?
+예, Aspose.Words for .NET을 사용하여 프로그래밍 방식으로 문서를 암호화하고 보호할 수 있습니다.
 
- A: 예.`ListFormat` 의 속성`DocumentBuilder` 물체. 다음을 사용하여 목록 항목을 추가할 수 있습니다.`Writeln` 방법을 사용하면 번호 매기기 또는 글머리 기호 스타일이 자동으로 적용됩니다.
-
-#### Q: 단락 내에 하이퍼링크나 기타 요소를 삽입할 수 있나요?
-
- 답: 물론이죠! 다음을 사용하여 단락 내에 하이퍼링크, 이미지 및 기타 요소를 삽입할 수 있습니다.`DocumentBuilder` 수업. 이를 통해 단락 내에 풍부하고 대화형 콘텐츠를 만들 수 있습니다.
-
-#### Q: 단락에 특수 문자나 기호를 삽입하려면 어떻게 해야 합니까?
-
- A: 특수 문자나 기호를 삽입하려면`Writeln` 원하는 유니코드 표현을 사용하여 메소드를 사용하거나`InsertSpecialChar` 의 방법`DocumentBuilder` 수업.
+### .NET용 Aspose.Words에 대한 추가 도움말과 지원은 어디서 찾을 수 있나요?
+ 방문하다[Aspose.Words 포럼](https://forum.aspose.com/c/words/8) 커뮤니티 지원 및 토론을 위해.

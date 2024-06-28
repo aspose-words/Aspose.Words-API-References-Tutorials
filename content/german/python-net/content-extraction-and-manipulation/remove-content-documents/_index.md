@@ -1,7 +1,7 @@
 ---
 title: Entfernen und Verfeinern von Inhalten in Word-Dokumenten
 linktitle: Entfernen und Verfeinern von Inhalten in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Inhalte in Word-Dokumenten effizient entfernen und verfeinern. Schritt-für-Schritt-Anleitung mit Quellcode-Beispielen.
 type: docs
 weight: 13

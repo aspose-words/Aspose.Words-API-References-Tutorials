@@ -13,5 +13,5 @@ Clone And Combine Documents oferece tutoriais sobre clonagem e combinação de d
 | Título | Descrição |
 | --- | --- |
 | [Clonar um documento do Word](./cloning-document/) | Aprenda como clonar um documento do Word usando Aspose.Words for .NET. |
-| [Inserir documento em substituição](./insert-document-at-replace/) | Aprenda como inserir um documento de substituição usando Aspose.Words for .NET. |
-| [Inserir documento na mala direta](./insert-document-at-mail-merge/) | Aprenda como inserir um documento em outro durante a mala direta usando Aspose.Words for .NET. |
+| [Inserir documento em substituição](./insert-document-at-replace/) | Aprenda como inserir perfeitamente um documento do Word em outro usando Aspose.Words for .NET com nosso guia passo a passo detalhado. Perfeito para desenvolvedores que buscam agilizar o processamento de documentos. |
+| [Inserir documento na mala direta](./insert-document-at-mail-merge/) | Aprenda como inserir documentos em campos de mala direta usando Aspose.Words for .NET neste tutorial passo a passo abrangente. |

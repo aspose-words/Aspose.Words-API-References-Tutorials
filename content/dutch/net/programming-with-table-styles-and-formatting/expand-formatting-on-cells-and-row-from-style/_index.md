@@ -12,7 +12,7 @@ In deze zelfstudie leiden we u stapsgewijs door het proces om de opmaak uit te b
 
 
 ## Stap 1: Definieer de documentmap
-Eerst moet u het pad naar uw documentenmap instellen. Dit is waar uw Word-document zich bevindt. Vervang "UW DOCUMENTENMAP" door het juiste pad.
+Eerst moet u het pad naar uw documentenmap instellen. Dit is waar uw Word-document zich bevindt. Vervang "UW DOCUMENTENDIRECTORY" door het juiste pad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

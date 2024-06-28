@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 
-在本教程中，我們將探索提供的 C# 原始程式碼，用於將頁面保存回呼與 .NET 的 Aspose.Words 圖像保存選項結合使用。此功能可讓您在將文件的每一頁儲存為映像時執行自訂操作。
+在本教程中，我們將探索提供的 C# 原始程式碼，以便將頁面儲存回呼與適用於 .NET 的 Aspose.Words 圖像保存選項結合使用。此功能可讓您在將文件的每一頁儲存為映像時執行自訂操作。
 
 ## 第一步：建構環境
 
@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          //在此實施您的自訂操作
          //您可以透過「args.PageIndex」屬性存取頁面訊息
-         //您也可以單獨更改每個頁面的儲存選項
+         //您也可以單獨變更每個頁面的儲存選項。
      }
 }
 ```

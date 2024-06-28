@@ -74,7 +74,7 @@ for (Paragraph paragraph : paragraphs) {
 若要使用 Aspose.Words for Java 按標題分割文檔，請依照下列步驟操作：
 
 ```java
-//使用 Aspose.Words for Java 按標題分割文件的 Java 程式碼
+//使用 Aspose.Words for Java 按標題拆分文件的 Java 程式碼
 Document doc = new Document("input.docx");
 LayoutCollector layoutCollector = new LayoutCollector(doc);
 
@@ -134,7 +134,7 @@ Aspose.Words for Java 也提供了將分割文件合併回單一文件的功能�
 
 在本指南中，我們探索如何使用 Aspose.Words for Java 輕鬆有效率地分割文件。透過將大型文件劃分為更小、更易於管理的部分，開發人員可以處理特定部分並簡化文件處理任務。 Aspose.Words for Java 提供了多種基於頁面、段落、標題和部分分割文件的方法，使開發人員能夠靈活地根據其特定需求自訂分割過程。
 
-## 12. 常見問題解答
+## 12.常見問題解答
 
 ### Q1. Aspose.Words for Java可以分割不同格式的文檔，如DOC和DOCX嗎？
 

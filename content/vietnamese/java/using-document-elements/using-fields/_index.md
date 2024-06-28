@@ -297,7 +297,7 @@ Mã nguồn của Lớp HandleMergeField
         /// <tóm tắt>
         /// Được gọi cho mọi trường hợp nhất gặp phải trong tài liệu.
         /// Chúng tôi có thể trả lại một số dữ liệu cho công cụ trộn thư hoặc thực hiện thao tác khác với tài liệu.
-        /// Trong trường hợp này, chúng tôi sửa đổi định dạng ô.
+        /// Trong trường hợp này chúng tôi sửa đổi định dạng ô.
         /// </tóm tắt>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e)
         {
@@ -357,7 +357,7 @@ Mã nguồn của Lớp HandleMergeField
 
 Chúc mừng! Bạn đã học cách sử dụng các trường trong Aspose.Words dành cho Java để thao tác linh hoạt với tài liệu Word. API mạnh mẽ này cung cấp cho bạn toàn quyền kiểm soát tài liệu của mình, khiến nó trở thành tài sản quý giá cho các nhà phát triển Java.
 
-## 7. Câu hỏi thường gặp
+## 7.Câu hỏi thường gặp
 
 ### Câu hỏi 1: Tôi có thể tải xuống Aspose.Words cho Java ở đâu?
  Bạn có thể tải xuống Aspose.Words cho Java từ[đây](https://releases.aspose.com/words/java/).

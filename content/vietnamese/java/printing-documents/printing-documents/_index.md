@@ -104,7 +104,7 @@ class MultipagePrintDocument implements Printable
         // Tính toán kích thước của mỗi phần giữ chỗ hình thu nhỏ theo điểm.
         Point2D.Float thumbSize = new Point2D.Float((float) (pf.getImageableWidth() / thumbCount.getWidth()),
                 (float) (pf.getImageableHeight() / thumbCount.getHeight()));
-        // Tính số trang đầu tiên in trên tờ giấy này.
+        // Tính số trang đầu tiên sẽ in trên tờ giấy này.
         int startPage = pagesOnCurrentSheet + fromPage;
         // Chọn số trang cuối cùng sẽ được in trên tờ giấy này.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);

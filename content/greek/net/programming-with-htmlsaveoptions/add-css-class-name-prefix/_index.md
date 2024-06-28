@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Βήμα 3: Ορίστε τις επιλογές αποθήκευσης HTML
 
-Τώρα ας ορίσουμε τις επιλογές αποθήκευσης HTML, συμπεριλαμβανομένου του τύπου φύλλου στυλ CSS και του προθέματος ονόματος κλάσης CSS. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τώρα ας ορίσουμε τις επιλογές αποθήκευσης HTML, συμπεριλαμβανομένου του τύπου φύλλου στυλ CSS και του προθέματος ονόματος κλάσης CSS. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
@@ -38,11 +38,11 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Αυτός ο κώδικας δημιουργεί μια παρουσία του`HtmlSaveOptions` και σετ`CssStyleSheetType` προς την`CssStyleSheetType.External`για να δημιουργήσετε ένα εξωτερικό φύλλο στυλ CSS και`CssClassNamePrefix` προς την`"pfx_"` στο πρόθεμα`"pfx_"` σε ονόματα κλάσης CSS.
+ Αυτός ο κώδικας δημιουργεί μια παρουσία του`HtmlSaveOptions` και σετ`CssStyleSheetType` προς την`CssStyleSheetType.External`για να δημιουργήσετε ένα εξωτερικό φύλλο στυλ CSS και`CssClassNamePrefix` προς την`"pfx_"` στο πρόθεμα`"pfx_"` για να ονομάσει κλάσεις CSS.
 
 ## Βήμα 4: Μετατροπή και αποθήκευση του εγγράφου σε HTML
 
-Τέλος, θα μετατρέψουμε το έγγραφο σε HTML χρησιμοποιώντας τις επιλογές αποθήκευσης HTML που καθορίστηκαν προηγουμένως. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τέλος, θα μετατρέψουμε το έγγραφο σε HTML χρησιμοποιώντας τις επιλογές αποθήκευσης HTML που καθορίστηκαν προηγουμένως. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Legen Sie den Standard-Schriftartenordner fest
-Anschließend können Sie den Standard-Schriftartenordner mithilfe von festlegen`FontSettings.DefaultInstance` Klasse und die`SetFontsFolder()` Methode. Geben Sie den Pfad zum Schriftartenordner an, den Sie als Standardordner verwenden möchten.
+ Anschließend können Sie den Standard-Schriftartenordner mithilfe von festlegen`FontSettings.DefaultInstance` Klasse und die`SetFontsFolder()`Methode. Geben Sie den Pfad zum Schriftartenordner an, den Sie als Standardordner verwenden möchten.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
@@ -58,7 +58,7 @@ In diesem Tutorial haben wir gelernt, wie man den Standardschriftartordner beim 
 
  A: Um Standardschriftartordner in Aspose.Words festzulegen, müssen Sie die verwenden`Fonts` Klasse und die`SetFontsFolders` Methode zum Angeben benutzerdefinierter Schriftartenordnerspeicherorte.
 
-#### F: Hat das Festlegen von Standardschriftordnern Auswirkungen auf alle mit Aspose.Words verarbeiteten Word-Dokumente?
+#### F: Hat das Festlegen von Standard-Schriftartordnern Auswirkungen auf alle Word-Dokumente, die mit Aspose.Words verarbeitet werden?
 
 A: Ja, das Festlegen von Standardschriftartenordnern wirkt sich auf alle Word-Dokumente aus, die mit Aspose.Words verarbeitet werden. Sobald Sie die Standardschriftartenordner festgelegt haben, verwendet Aspose.Words diese Speicherorte, um in allen Dokumenten nach Schriftarten zu suchen.
 

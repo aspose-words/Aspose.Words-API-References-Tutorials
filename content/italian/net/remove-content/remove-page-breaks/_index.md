@@ -14,7 +14,7 @@ In questo tutorial esploreremo come rimuovere le interruzioni di pagina nel docu
 Prima di iniziare, assicurati di avere quanto segue:
 
 - Conoscenza base del linguaggio di programmazione C#
-- Libreria Aspose.Words per .NET installata
+- Aspose.Words per la libreria .NET installata
 - Visual Studio o qualsiasi altro ambiente di sviluppo C# configurato
 
 ## Passaggio 1: impostazione dell'ambiente
@@ -61,7 +61,7 @@ Lo snippet di codice sopra scorre tutti i paragrafi del documento e controlla se
 
 ## Passaggio 4: salvataggio del documento modificato
 
-Dopo aver rimosso le interruzioni di pagina, dobbiamo salvare il documento modificato. Il codice seguente illustra come salvare il documento modificato in una posizione specifica:
+Dopo aver rimosso le interruzioni di pagina, dobbiamo salvare il documento modificato. Il codice seguente mostra come salvare il documento modificato in una posizione specifica:
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

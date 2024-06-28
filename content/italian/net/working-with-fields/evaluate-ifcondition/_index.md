@@ -18,7 +18,7 @@ Nel codice fornito, iniziamo creando un generatore di documenti.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Passaggio 2: inserire il campo IF
+## Passaggio 2: inserire il campo IF.
 
  Noi usiamo il`InsertField()` metodo per inserire il campo IF nel documento specificando la condizione da valutare.
 
@@ -41,7 +41,7 @@ FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ### Codice sorgente di esempio per la valutazione della condizione IF con Aspose.Words per .NET
 
 ```csharp
-// Creazione del generatore di documenti.
+//Creazione del generatore di documenti.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Inserisci il campo IF nel documento.

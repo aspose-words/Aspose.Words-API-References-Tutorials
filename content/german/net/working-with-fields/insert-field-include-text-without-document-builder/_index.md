@@ -97,4 +97,4 @@ A: Das Einfügen eines Text-Include-Felds ohne den Document Builder hat keinen d
 
 #### F: Kann ich das Erscheinungsbild des Texteinschlussfelds in einem Word-Dokument mit Aspose.Words für .NET anpassen?
 
-A: Das Texteinschlussfeld passt sein Erscheinungsbild in einem Word-Dokument nicht direkt an. Sie können den enthaltenen Text jedoch mithilfe der Absatzeigenschaften, Schriftarteigenschaften und anderen Formatierungsobjekten formatieren, die in Aspose.Words für .NET verfügbar sind.
+A: Durch die Einbeziehung eines Textfelds wird dessen Erscheinungsbild in einem Word-Dokument nicht direkt angepasst. Sie können den enthaltenen Text jedoch mithilfe der Absatzeigenschaften, Schriftarteigenschaften und anderen Formatierungsobjekten formatieren, die in Aspose.Words für .NET verfügbar sind.

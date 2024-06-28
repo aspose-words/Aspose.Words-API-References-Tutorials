@@ -122,7 +122,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### Q: リストを再開する特定の番号付け値を指定するにはどうすればよいですか?
 
-A: リストを再開する特定の数値を指定するには、`ListRestartAtNumber`必要な値を引数として渡すメソッド。たとえば、番号付けを 5 から再開するには、次のようにします。`list.ListRestartAtNumber(5)`.
+ A: リストを再開する特定の数値を指定するには、`ListRestartAtNumber`必要な値を引数として渡すメソッド。たとえば、番号付けを 5 から再開するには、次のようにします。`list.ListRestartAtNumber(5)`.
 
 #### Q: Aspose.Words で複数レベルのリストの番号付けを再開することはできますか?
 

@@ -19,7 +19,7 @@ Genom att följa dessa tutorials kommer du att fullt ut kunna utnyttja tabellman
 | [Autopassa tabell till innehåll](./auto-fit-table-to-contents/) | Lär dig hur du automatiskt anpassar en tabell till dess innehåll i ett Word-dokument med Aspose.Words för .NET. |
 | [Klona komplett tabell](./clone-complete-table/) | Lär dig hur du klona en hel tabell till ett Word-dokument med Aspose.Words för .NET. |
 | [Hitta Index](./finding-index/) | Lär dig hur du hittar tabell-, rad- och cellindex i ett Word-dokument med Aspose.Words för .NET. |
-| [Sätt in tabell direkt](./insert-table-directly/) | Lär dig hur du infogar en tabell direkt i ett Word-dokument med Aspose.Words för .NET. |
+| [Sätt in tabell direkt](./insert-table-directly/) | Lär dig hur du infogar tabeller direkt i Word-dokument med Aspose.Words för .NET. Följ vår detaljerade, steg-för-steg-guide för att effektivisera ditt dokumentskapande. |
 | [Infoga tabell från HTML](./insert-table-from-html/) | Lär dig hur du infogar en tabell från HTML i ett Word-dokument med Aspose.Words för .NET. |
 | [Skapa en enkel tabell](./create-simple-table/) | Lär dig hur du skapar en enkel tabell i ett Word-dokument med Aspose.Words för .NET. |
 | [Formaterad tabell](./formatted-table/) | Lär dig hur du skapar en formaterad tabell i ett Word-dokument med Aspose.Words för .NET. |

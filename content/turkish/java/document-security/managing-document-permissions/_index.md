@@ -100,6 +100,6 @@ Belge parolasını unutursanız onu kurtarmanın bir yolu yoktur. Şifrelerinizi
 
 Belge izinlerini yönetmek, belgelerinizin gizliliğini ve bütünlüğünü korumak açısından çok önemlidir. Aspose.Words for Java bunu başarmanıza yardımcı olacak güçlü araçlar sağlar. Bu kılavuzda Aspose.Words for Java'nın nasıl kurulacağını ve belge izinlerinin etkili bir şekilde nasıl yönetileceğini araştırdık. Doğru bilgi ve araçlarla belge güvenliğinizin kontrolünü ele alabilir ve hassas bilgilerinizin korunmasını sağlayabilirsiniz.
 
-Artık Aspose.Words for Java kullanarak belge izinlerini yönetme konusunda sağlam bir anlayışa sahip olduğunuza göre, bu bilgiyi pratiğe dökmenin zamanı geldi. Belge yönetimi süreçlerinizi geliştirin ve verilerinizi kolaylıkla koruyun.
+Artık Aspose.Words for Java'yı kullanarak belge izinlerini yönetme konusunda sağlam bir anlayışa sahip olduğunuza göre, bu bilgiyi pratiğe dökmenin zamanı geldi. Belge yönetimi süreçlerinizi geliştirin ve verilerinizi kolaylıkla koruyun.
 
 Belge güvenliğinin devam eden bir süreç olduğunu unutmayın; bu nedenle dikkatli olun ve değerli belgelerinizi korumak için Aspose.Words for Java'nın sunduğu güçlü özelliklerden yararlanın.

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { CompressionLevel = CompressionLevel.SuperFast };
 ```
 
- На этом этапе мы настраиваем параметры сохранения OOXML, используя команду`OoxmlSaveOptions` сорт. Мы устанавливаем уровень сжатия`SuperFast` чтобы получить более быстрое сжатие.
+ На этом этапе мы настраиваем параметры сохранения OOXML, используя команду`OoxmlSaveOptions` класс. Мы устанавливаем уровень сжатия`SuperFast` чтобы получить более быстрое сжатие.
 
 ## Шаг 4. Сохраните документ с указанным уровнем сжатия.
 

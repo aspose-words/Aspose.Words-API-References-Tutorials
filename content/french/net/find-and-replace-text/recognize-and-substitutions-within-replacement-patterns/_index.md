@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/find-and-replace-text/recognize-and-substitutions-within-replacement-patterns/
 ---
 
-Dans cet article, nous explorerons le code source C# ci-dessus pour comprendre comment utiliser la fonction Reconnaître et remplacer les modèles de remplacement dans la bibliothèque Aspose.Words pour .NET. Cette fonctionnalité permet de reconnaître des modèles de recherche complexes et d'effectuer des substitutions en fonction des groupes capturés lors de la manipulation de documents.
+Dans cet article, nous explorerons le code source C# ci-dessus pour comprendre comment utiliser la fonction Reconnaître et remplacer les modèles de remplacement dans la bibliothèque Aspose.Words pour .NET. Cette fonctionnalité permet de reconnaître des modèles de recherche complexes et d'effectuer des substitutions basées sur les groupes capturés lors de la manipulation de documents.
 
 ## Conditions préalables
 
@@ -124,6 +124,6 @@ R : Oui, vous pouvez manipuler d'autres aspects du document en fonction des grou
 
 R : Bien que les expressions régulières et les groupes capturés offrent de puissantes fonctionnalités de recherche et de remplacement de texte dans Aspose.Words pour .NET, il est important de prendre en compte les implications en matière de complexité et de performances. Des expressions régulières très complexes et un grand nombre de groupes capturés peuvent avoir un impact sur les performances. Il est recommandé de tester et d'optimiser les expressions régulières pour vos cas d'utilisation spécifiques afin de garantir une manipulation efficace des documents.
 
-#### Q : Puis-je utiliser la fonctionnalité « Reconnaissance et substitutions dans les modèles de remplacement » avec des langues autres que l'anglais ?
+#### Q : Puis-je utiliser la fonctionnalité « Reconnaître et substitutions dans les modèles de remplacement » avec des langues autres que l'anglais ?
 
-R : Oui, la fonctionnalité « Reconnaissance et substitutions dans les modèles de remplacement » d'Aspose.Words pour .NET peut être utilisée avec des langues autres que l'anglais. Les expressions régulières sont indépendantes de la langue et peuvent être conçues pour correspondre à des modèles spécifiques dans n'importe quelle langue. Vous pouvez ajuster le modèle d'expression régulière en fonction de la langue souhaitée et des modèles de texte spécifiques que vous souhaitez reconnaître et remplacer.
+R : Oui, la fonctionnalité « Reconnaître et substitutions dans les modèles de remplacement » d'Aspose.Words pour .NET peut être utilisée avec des langues autres que l'anglais. Les expressions régulières sont indépendantes de la langue et peuvent être conçues pour correspondre à des modèles spécifiques dans n'importe quelle langue. Vous pouvez ajuster le modèle d'expression régulière en fonction de la langue souhaitée et des modèles de texte spécifiques que vous souhaitez reconnaître et remplacer.

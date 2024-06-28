@@ -7,7 +7,7 @@ type: docs
 weight: 17
 url: /hu/python-net/document-structure-and-content-manipulation/document-hyphenation/
 ---
-Az elválasztás és a szövegáramlás kulcsfontosságú szempont a professzionális megjelenésű és jól strukturált Word-dokumentumok létrehozásában. Legyen szó jelentésről, prezentációról vagy bármilyen más típusú dokumentumról, a szöveg zökkenőmentes áramlásának és az elválasztás megfelelő kezelésének biztosítása jelentősen javíthatja a tartalom olvashatóságát és esztétikáját. Ebben a cikkben megvizsgáljuk, hogyan kezelheti hatékonyan az elválasztást és a szövegáramlást az Aspose.Words for Python API használatával. Mindenre kiterjedünk, az elválasztás megértésétől a dokumentumokban való programozott megvalósításig.
+Az elválasztás és a szövegáramlás kulcsfontosságú szempont a professzionális megjelenésű és jól strukturált Word-dokumentumok létrehozásában. Akár jelentést, prezentációt vagy bármilyen más típusú dokumentumot készít, a szöveg zökkenőmentes áramlásának és az elválasztás megfelelő kezelésének biztosítása jelentősen javíthatja a tartalom olvashatóságát és esztétikáját. Ebben a cikkben megvizsgáljuk, hogyan kezelheti hatékonyan az elválasztást és a szövegáramlást az Aspose.Words for Python API használatával. Mindenre kiterjedünk, az elválasztás megértésétől a dokumentumokban való programozott megvalósításig.
 
 ## Az elválasztás megértése
 
@@ -27,7 +27,7 @@ Egyes esetekben érdemes lehet manuálisan szabályozni, hogy egy szó hol szaka
 
 ### Automatikus elválasztás
 
-A legtöbb esetben az automatikus elválasztást részesítjük előnyben, mivel dinamikusan módosítja a szótöréseket a dokumentum elrendezése és formázása alapján. Ez egységes és tetszetős megjelenést biztosít a különféle eszközökön és képernyőméreteken.
+legtöbb esetben az automatikus elválasztást részesítjük előnyben, mivel dinamikusan módosítja a szótöréseket a dokumentum elrendezése és formázása alapján. Ez egységes és tetszetős megjelenést biztosít a különféle eszközökön és képernyőméreteken.
 
 ## Az Aspose.Words for Python használata
 
@@ -126,4 +126,4 @@ Az özvegyek és árvák elkerülése érdekében használja az Aspose.Words for
 
 ### Hol érhetem el az Aspose.Words for Python dokumentációját?
 
- Az API dokumentációját a következő címen érheti el[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+Az API dokumentációját a következő címen érheti el[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

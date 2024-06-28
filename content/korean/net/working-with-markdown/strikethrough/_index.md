@@ -53,11 +53,11 @@ builder.Writeln("This text will be StrikeThrough");
 
 #### Q: Aspose.Words에 취소선 텍스트를 어떻게 추가할 수 있나요?
 
- A: Aspose.Words에 취소선 텍스트를 추가하려면`Font.StrikeThrough` 의 재산`Run` 물체. 이 속성을 다음과 같이 설정할 수 있습니다.`true` 특정 텍스트에 취소선 텍스트를 추가하려면 예를 들어 다음을 사용할 수 있습니다.`run.Font.StrikeThrough=true` 취소선 텍스트를`Run` 물체.
+ A: Aspose.Words에 취소선 텍스트를 추가하려면`Font.StrikeThrough` 의 재산`Run`물체. 이 속성을 다음과 같이 설정할 수 있습니다.`true` 특정 텍스트에 취소선 텍스트를 추가하려면 예를 들어 다음을 사용할 수 있습니다.`run.Font.StrikeThrough=true` 취소선 텍스트를`Run` 물체.
 
 #### Q: 같은 단락의 여러 텍스트에 취소선 텍스트를 추가할 수 있습니까?
 
- A: 예, 여러 가지 옵션을 사용하여 단일 단락에 있는 텍스트의 여러 부분에 취소선 텍스트를 추가할 수 있습니다.`Run` 사물. 여러 개를 생성할 수 있습니다.`Run` 객체를 설정하고`Font.StrikeThrough`재산`true` 각 개체에 대해 취소선 텍스트를 원하는 텍스트 부분에 추가합니다. 그런 다음 다음을 사용하여 단락에 추가할 수 있습니다.`Paragraph.AppendChild(run)` 방법.
+ A: 예, 다중 기능을 사용하면 단일 단락에 있는 텍스트의 여러 부분에 취소선 텍스트를 추가할 수 있습니다.`Run` 사물. 여러 개를 생성할 수 있습니다.`Run` 객체를 설정하고`Font.StrikeThrough`재산`true` 각 개체에 대해 취소선 텍스트를 원하는 텍스트 부분에 추가합니다. 그런 다음 다음을 사용하여 단락에 추가할 수 있습니다.`Paragraph.AppendChild(run)` 방법.
 
 #### Q: Aspose.Words의 테이블이나 셀에 있는 텍스트에 취소선 텍스트를 추가할 수 있나요?
 

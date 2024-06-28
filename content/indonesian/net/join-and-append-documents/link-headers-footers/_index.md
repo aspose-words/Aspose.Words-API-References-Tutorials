@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Muat Dokumen Sumber dan Tujuan
 
- Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
+Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words.`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Langkah 4: Tautkan Header dan Footer ke Bagian Sebelumnya
 
-Untuk menautkan header dan footer dokumen sumber ke bagian sebelumnya di dokumen tujuan, Anda dapat menggunakan`LinkToPrevious` metode`HeadersFooters` koleksi. Dengan lewat`true` sebagai parameternya, Anda mengganti header atau footer yang ada di dokumen sumber.
+ Untuk menautkan header dan footer dokumen sumber ke bagian sebelumnya di dokumen tujuan, Anda dapat menggunakan`LinkToPrevious` metode`HeadersFooters` koleksi. Dengan lewat`true` sebagai parameternya, Anda mengganti header atau footer yang ada di dokumen sumber.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

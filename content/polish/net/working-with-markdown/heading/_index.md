@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-markdown/heading/
 ---
 
-tym przykładzie pokażemy, jak korzystać z funkcji nagłówków w Aspose.Words dla .NET. Nagłówki służą do strukturyzowania i ustalania priorytetów zawartości dokumentu.
+W tym przykładzie pokażemy, jak korzystać z funkcji nagłówków w Aspose.Words dla .NET. Nagłówki służą do strukturyzowania i ustalania priorytetów zawartości dokumentu.
 
 ## Krok 1: Korzystanie z generatora dokumentów
 

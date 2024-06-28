@@ -42,7 +42,7 @@ Document docB = docA.Clone();
 
 ## Adım 5: Karşılaştırma Seçeneklerini Yapılandırma
 
-Bu adımda karşılaştırmanın davranışını belirtmek için karşılaştırma seçeneklerini yapılandıracağız. Seçenekler arasında biçimlendirmeyi göz ardı etme özelliğinin yanı sıra, Microsoft Word'ün "Belgeleri Karşılaştır" iletişim kutusundaki "Değişiklikleri göster" seçeneği olan karşılaştırma hedefi de bulunur.
+Bu adımda karşılaştırmanın davranışını belirlemek için karşılaştırma seçeneklerini yapılandıracağız. Seçenekler arasında biçimlendirmeyi göz ardı etme özelliğinin yanı sıra, Microsoft Word'ün "Belgeleri Karşılaştır" iletişim kutusundaki "Değişiklikleri göster" seçeneği olan karşılaştırma hedefi de bulunur.
 
 ```csharp
 CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
@@ -58,7 +58,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
 `Compare`yöntemi, A belgesini B belgesiyle karşılaştırır ve değişiklikleri A belgesine kaydeder. Referans için kullanıcı adını ve karşılaştırma tarihini belirleyebilirsiniz.
 
-### Aspose.Words for .NET kullanan Karşılaştırma Hedefi için örnek kaynak kodu
+### Aspose.Words for .NET kullanarak Hedefi Karşılaştır için örnek kaynak kodu
 
 
 ```csharp
@@ -90,7 +90,7 @@ C: Aspose.Words for .NET'te Karşılaştırma Hedefini kullanmak için şu adım
 1. Aspose.Words kütüphanesiyle geliştirme ortamınızı kurun.
 2. Aspose.Words'e başvurarak gerekli derlemeleri projenize ekleyin.
 3.  Karşılaştırmak istediğiniz belgeleri kullanarak başlatın.`Document` sınıf veya`DocumentBuilder` sınıf.
-4.  Karşılaştırma seçeneklerini bir`CompareOptions` gibi nesne ve ayar özellikleri`IgnoreFormatting` Ve`Target` (Örneğin,`ComparisonTargetType.New` karşılaştırma hedefi için).
+4.  Karşılaştırma seçeneklerini bir`CompareOptions` gibi nesne ve ayar özellikleri`IgnoreFormatting` Ve`Target` (Örneğin.,`ComparisonTargetType.New` karşılaştırma hedefi için).
 5.  Kullan`Compare` yöntemi bir belge üzerinde, diğer belgeyi aktararak ve`CompareOptions` parametre olarak nesne. Bu yöntem belgeleri karşılaştıracak ve değişiklikleri ilk belgeye kaydedecektir.
 
 ####  Soru: Programın amacı nedir?`Target` property in the `CompareOptions` class?

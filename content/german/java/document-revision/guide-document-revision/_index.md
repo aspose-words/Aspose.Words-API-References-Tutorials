@@ -21,7 +21,7 @@ Unter Dokumentrevision versteht man den Vorgang, bei dem Änderungen an einem Do
 
 Die Überarbeitung von Dokumenten spielt eine entscheidende Rolle bei der Gewährleistung der Genauigkeit, Konsistenz und Qualität der in einem Dokument präsentierten Informationen. In kollaborativen Arbeitsumgebungen können Teammitglieder Änderungen vorschlagen, Genehmigungen einholen und Feedback nahtlos integrieren. Dieser iterative Prozess führt letztendlich zu einem ausgefeilten und fehlerfreien Dokument.
 
-### 1.3 Herausforderungen beim Umgang mit Dokumentrevisionen
+### 1.3 Herausforderungen beim Umgang mit Dokumentenrevisionen
 
 Die Verwaltung von Dokumentrevisionen kann eine Herausforderung sein, insbesondere wenn es um große Dokumente oder mehrere Mitwirkende geht. Änderungen im Auge zu behalten, Konflikte zu lösen und den Versionsverlauf zu pflegen sind Aufgaben, die zeitaufwändig und fehleranfällig sein können.
 
@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### Änderungen ablehnen:
+#### Bewertungen ablehnen:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");

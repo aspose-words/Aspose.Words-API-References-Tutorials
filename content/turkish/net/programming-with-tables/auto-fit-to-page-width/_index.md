@@ -1,79 +1,114 @@
 ---
-title: Sayfa Genişliğine Otomatik Sığdır
-linktitle: Sayfa Genişliğine Otomatik Sığdır
+title: Pencereye Otomatik Sığdır
+linktitle: Pencereye Otomatik Sığdır
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesinde bir tabloyu sayfa genişliğine nasıl otomatik olarak sığdıracağınızı öğrenin.
+description: Bu kapsamlı, adım adım kılavuzla Aspose.Words for .NET kullanarak tabloları Word belgelerindeki sayfa genişliğine nasıl otomatik olarak sığdıracağınızı öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/auto-fit-to-page-width/
 ---
 
-Bu eğitimde, bir Word belgesindeki tabloyu sayfa genişliğine otomatik olarak sığdırmak için Aspose.Words for .NET'in nasıl kullanılacağını öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word belgelerindeki tabloları programlı olarak değiştirebileceksiniz.
+## giriiş
 
-## Adım 1: Proje Kurulumu
-1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
-2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
+Selam! Aspose.Words for .NET kullanarak belge işleme görevlerinizi otomatikleştirmek mi istiyorsunuz? İster raporlar oluşturuyor olun, ister şablonlar oluşturuyor olun, ister mevcut belgeleri yönetiyor olun, Aspose.Words tüm bunları ve daha fazlasını başarmanıza yardımcı olabilecek güçlü bir araçtır. Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerinde tabloların sayfa genişliğine nasıl otomatik olarak sığdırılacağını açıklayacağız. Ortamınızı ayarlamaktan özelliği kodunuzda uygulamaya kadar her adımda size yol göstereceğiz. Bu kılavuzun sonunda tablo biçimlendirmeyi programlı olarak nasıl kullanacağınız konusunda sağlam bir kavrayışa sahip olacaksınız.
 
-## Adım 2: Belgeyi Oluşturma ve Yapılandırma
-Kelime İşleme'yi tabloyla başlatmak için bir belge oluşturmamız ve belge oluşturucuyu yapılandırmamız gerekir. Bu adımları takip et:
+## Önkoşullar
+
+Başlamadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1. Temel C# Bilgisi: C# sözdizimine ve kavramlarına aşina olmak çok önemlidir.
+2.  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/) . Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/).
+3. Visual Studio: Güncel sürümlerden herhangi biri çalışacaktır ancak en son sürüm önerilir.
+4. .NET Framework: Sisteminizde kurulu olduğundan emin olun.
+
+Herşeye sahip? Harika! Eğlenceli kısma geçelim.
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için gerekli ad alanlarını içe aktarmamız gerekiyor. Bu, bu eğitim boyunca kullanacağımız sınıflara ve yöntemlere erişmemizi sağladığı için çok önemlidir.
 
 ```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// Belgeyi ve belge oluşturucuyu oluşturun
+Bu ad alanları Aspose.Words'te belgelerle ve tablo formatlamayla çalışmak için gereklidir.
+
+## Adım 1: Belge Dizinini Ayarlama
+
+Öncelikle belgelerimizin kaydedileceği dizini belirleyelim. Bu Aspose.Words'ün işlemek istediğimiz dosyaları bulmasına ve kaydetmesine yardımcı olur.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge klasörünüzün gerçek yolu ile.
+
+## Adım 2: Yeni Bir Belge Oluşturma
+
+ Daha sonra yeni bir Word belgesi oluşturacağız ve`DocumentBuilder` belge içeriğini oluşturmamıza yardımcı olmak için.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
+ Burada bir başlangıç başlatıyoruz`Document` nesne ve bir`DocumentBuilder` içeriğimizi eklemek ve biçimlendirmek için kullanacağımız nesne.
 
-## Adım 3: Tabloyu Ekleme ve Yapılandırma
-Daha sonra belgeye sayfanın genişliğinin yarısını kaplayan genişliğe sahip bir tablo ekleyeceğiz. Aşağıdaki kodu kullanın:
+## Adım 3: Tablo Ekleme
+
+Şimdi belgemize bir tablo ekleyelim. Sayfa genişliğinin yarısını kaplayan bir tablo oluşturarak başlayacağız.
 
 ```csharp
-// Tabloyu ekleyin ve genişliğini yapılandırın
-Table table = builder. StartTable();
-builder. InsertCell();
-table. PreferredWidth = PreferredWidth. FromPercent(50);
+Table table = builder.StartTable();
+builder.InsertCell();
+table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("Cell #2");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("Cell #3");
 ```
 
-Burada tabloyu oluşturmaya başlamak, hücreleri eklemek ve tablonun tercih edilen genişliğini sayfa genişliğinin %50'sine ayarlamak için belge oluşturucuyu kullanıyoruz. Daha sonra her hücreye metin ekliyoruz.
+ Bu adımda bir tablo başlatıyoruz, hücreleri ekliyoruz ve her hücreye bir miktar metin ekliyoruz.`AutoFit` yöntemi, tablonun genişliğini sayfa genişliğine uyacak şekilde ayarlamak için kullanılır.
 
-## Adım 4: Değiştirilen belgeyi kaydetme
-Son olarak, değiştirilen belgeyi, sayfanın genişliğine göre ayarlanmış tabloyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
+## Adım 4: Belgeyi Kaydetme
+
+Son olarak belgemizi kaydetmemiz gerekiyor. Bu, yeni bir Word dosyasına yaptığımız değişiklikleri yazacaktır.
 
 ```csharp
-// Değiştirilen belgeyi kaydet
 doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
-Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
-  
-### Aspose.Words for .NET kullanarak Sayfa Genişliğine Otomatik Sığdır için örnek kaynak kodu 
+Bu kod satırı, belgeyi verilen dosya adıyla belirtilen dizine kaydeder.
 
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Adım 5: Kodu Çalıştırma
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Sayfa genişliğinin yarısını kaplayan genişliğe sahip bir tablo ekleyin.
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	table.PreferredWidth = PreferredWidth.FromPercent(50);
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	builder.Writeln("Cell #2");
-	builder.InsertCell();
-	builder.Writeln("Cell #3");
-	doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
-```
+Kodu yazdıktan sonra Visual Studio'da çalıştırın. Belgeniz, tablonun sayfa genişliğine otomatik olarak sığdırılmasıyla belirtilen dizine kaydedilecektir.
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde bir tabloyu sayfa genişliğine otomatik olarak nasıl sığdıracağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, Word belgelerinizdeki tabloları programlı olarak değiştirebilirsiniz. Bu özellik, tablonun genişliğini sayfaya göre dinamik olarak uyarlamanıza olanak tanır, böylece profesyonel ve görsel olarak çekici bir belge sunar.
+
+ İşte buyur! Aspose.Words for .NET'i kullanarak Word belgelerinde tabloları sayfa genişliğine nasıl otomatik olarak sığdıracağınızı başarıyla öğrendiniz. Bu eğitim ortamınızı ayarlamayı, tabloları oluşturmayı ve biçimlendirmeyi ve belgeyi kaydetmeyi kapsıyordu. Aspose.Words çok sayıda özellik sunuyor; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) yeteneklerini tam olarak kullanmak.
+
+## SSS
+
+### 1. Aspose.Words for .NET nedir?
+
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır. Belgeyle ilgili görevleri otomatikleştirmek için mükemmeldir.
+
+### 2. Aspose.Words for .NET'i ücretsiz kullanabilir miyim?
+
+ Aspose.Words for .NET'i kullanarak deneyebilirsiniz.[ücretsiz deneme](https://releases.aspose.com/). Uzun süreli kullanım için lisans satın almanız gerekir.
+
+### 3. Tabloları farklı şekilde nasıl formatlarım?
+
+Aspose.Words tarafından sağlanan farklı yöntemleri kullanarak tablo formatını özelleştirebilirsiniz. Kontrol edin[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
+
+### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
+
+adresini ziyaret ederek destek alabilirsiniz.[Aspose destek forumu](https://forum.aspose.com/c/words/8).
+
+### 5. Resimler ve grafikler gibi diğer unsurları değiştirebilir miyim?
+
+ Evet, Aspose.Words resimler, grafikler ve SmartArt gibi çeşitli öğeleri değiştirmenize olanak tanır. Keşfedin[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.

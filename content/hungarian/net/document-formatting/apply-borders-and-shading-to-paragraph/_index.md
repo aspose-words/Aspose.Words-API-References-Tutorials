@@ -91,7 +91,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## Következtetés
 
-Ebben az oktatóanyagban megtanultuk, hogyan lehet szegélyeket és árnyékolást alkalmazni egy Word-dokumentum bekezdésére az Aspose.Words for .NET használatával. A bekezdések beállításával`Borders` és`Shading` tulajdonságokkal, be tudtuk állítani a bekezdés keretének stílusát, vonalszínét és kitöltési színét. Az Aspose.Words for .NET hatékony formázási lehetőségeket biztosít a bekezdések megjelenésének testreszabásához és a dokumentumok vizuális megjelenítésének javításához.
+ Ebben az oktatóanyagban megtanultuk, hogyan lehet szegélyeket és árnyékolást alkalmazni egy Word-dokumentum bekezdésére az Aspose.Words for .NET használatával. A bekezdések beállításával`Borders` és`Shading` tulajdonságokkal, be tudtuk állítani a bekezdés keretének stílusát, vonalszínét és kitöltési színét. Az Aspose.Words for .NET hatékony formázási lehetőségeket biztosít a bekezdések megjelenésének testreszabásához és a dokumentumok vizuális megjelenítésének javításához.
 
 ### GYIK
 
@@ -99,14 +99,14 @@ Ebben az oktatóanyagban megtanultuk, hogyan lehet szegélyeket és árnyékolá
 
 V: Ha egy Word-dokumentumban az Aspose.Words for .NET használatával szeretne szegélyeket és árnyékolást alkalmazni, kövesse az alábbi lépéseket:
 1.  Hozzon létre egy új dokumentumot, és a`DocumentBuilder` tárgy.
-2.  Állítsa be a bekezdés határait a`Borders` tulajdona a`ParagraphFormat` és állítsa be a szegélystílust mindkét oldalhoz.
-3.  Konfigurálja a bekezdés kitöltését a következővel:`Shading` tulajdona a`ParagraphFormat` valamint a textúra és a kitöltési színek megadása.
-4.  Adjon hozzá tartalmat a bekezdéshez a gombbal`Write` módszere a`DocumentBuilder`.
+2.  Állítsa be a bekezdés szegélyeit a`Borders` tulajdona a`ParagraphFormat` és állítsa be a szegélystílust mindkét oldalhoz.
+3. Konfigurálja a bekezdés kitöltését a`Shading` tulajdona a`ParagraphFormat` valamint a textúra és a kitöltési színek megadása.
+4.  Adjon hozzá tartalmat a bekezdéshez a`Write` módszere a`DocumentBuilder`.
 5.  Mentse el a dokumentumot a`Save` módszer.
 
 #### K: Hogyan állíthatom be a szegélystílust a bekezdés mindkét oldalán?
 
- V: A bekezdés mindkét oldalának szegélystílusának beállításához elérheti a`Borders` tulajdona a`ParagraphFormat` és állítsa be a`LineStyle` ingatlan mindegyiknek`BorderType` (például,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Különféle vonalstílusokat adhat meg, mint pl`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`stb.
+ V: A bekezdés mindkét oldalának szegélystílusának beállításához elérheti a`Borders` tulajdona a`ParagraphFormat` és állítsa be a`LineStyle` ingatlan mindegyiknek`BorderType` (például.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Különféle vonalstílusokat adhat meg, mint pl`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`stb.
 
 #### K: Hogyan adhatom meg a textúrát és a kitöltési színeket a bekezdésárnyékoláshoz?
 

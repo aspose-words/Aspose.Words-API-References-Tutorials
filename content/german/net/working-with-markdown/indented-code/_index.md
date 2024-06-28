@@ -18,16 +18,16 @@ Zuerst verwenden wir einen Dokumentgenerator, um Inhalte zu unserem Dokument hin
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Schritt 2: Stil für eingerückten Code hinzufügen
+## Schritt 2: Stil für den angegebenen Code hinzufügen
 
- Wir werden mithilfe von einen benutzerdefinierten Stil für den eingerückten Code hinzufügen`Styles.Add` Methode der`Document` Objekt. In diesem Beispiel erstellen wir einen Stil namens „IndentedCode“ für eingerückten Code.
+Wir werden mithilfe von einen benutzerdefinierten Stil für den eingerückten Code hinzufügen`Styles.Add` Methode der`Document` Objekt. In diesem Beispiel erstellen wir einen Stil namens „IndentedCode“ für eingerückten Code.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Schritt 3: Eingerückten Code hinzufügen
+## Schritt 3: Angegebenen Code hinzufügen
 
 Jetzt können wir einen eingerückten Codeblock mit dem benutzerdefinierten Stil „IndentedCode“ hinzufügen.
 
@@ -51,7 +51,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Funktion für eing
 
 ### FAQs
 
-#### F: Was ist eingerückter Code in Markdown?
+#### F: Was ist der angegebene Code in Markdown?
 
 A: Eingerückter Code in Markdown ist eine Formatierungsmethode, die zum Anzeigen von Code in einem Markdown-Dokument verwendet wird. Es besteht darin, jede Codezeile mit Leerzeichen oder Tabulatoren einzurücken.
 

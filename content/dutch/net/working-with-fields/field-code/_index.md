@@ -30,7 +30,7 @@ Zorg ervoor dat u "Hyperlinks.docx" vervangt door de naam van uw eigen bestand.
 
 ## Stap 3: Blader door documentvelden
 
- Wij gebruiken een`foreach` lus om alle velden in het document te doorlopen.
+ Wij gebruiken een`foreach`lus om alle velden in het document te doorlopen.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Dit concludeert onze handleiding over het gebruik van de functie "Get Field Code
 
 #### Vraag: Hoe kan ik een veld invoegen in een Word-document met Aspose.Words voor .NET?
 
- A: Om een veld in een Word-document in te voegen met Aspose.Words voor .NET, kunt u de`DocumentBuilder.InsertField` methode die de juiste veldcode specificeert. U kunt bijvoorbeeld gebruiken`builder.InsertField("MERGEFIELD CustomerName")` om een samenvoegveld in het document in te voegen.
+ A: Om een veld in een Word-document in te voegen met Aspose.Words voor .NET, kunt u de`DocumentBuilder.InsertField` methode die de juiste veldcode specificeert. U kunt bijvoorbeeld gebruiken`builder.InsertField("MERGEFIELD CustomerName")`om een samenvoegveld in het document in te voegen.
 
 #### Vraag: Hoe kan ik velden in een document bijwerken met Aspose.Words voor .NET?
 
- A: Om documentvelden bij te werken met Aspose.Words voor .NET, kunt u de`Document.UpdateFields`methode. Hiermee worden alle velden in het document bijgewerkt, zoals samenvoegvelden, datumvelden, enz.
+ A: Om documentvelden bij te werken met Aspose.Words voor .NET, kunt u de`Document.UpdateFields` methode. Hiermee worden alle velden in het document bijgewerkt, zoals samenvoegvelden, datumvelden, enz.
 
 #### Vraag: Hoe kan ik de waarde van een specifiek veld in Aspose.Words voor .NET ophalen?
 

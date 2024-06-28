@@ -34,7 +34,7 @@ Certifique-se de ter os arquivos de dicionário apropriados em seu diretório de
 
 ## Etapa 3: Processamento de palavras por hifenização
 
- Agora você pode usar recursos de hifenização para processar palavras em diferentes idiomas. Você pode usar diferentes métodos de`Document` ou`DocumentBuilder` dependendo de suas necessidades específicas.
+Agora você pode usar recursos de hifenização para processar palavras em diferentes idiomas. Você pode usar diferentes métodos de`Document` ou`DocumentBuilder` dependendo de suas necessidades específicas.
 
 ```csharp
 // Exemplo: usando o método Hyphenate do DocumentBuilder
@@ -71,7 +71,7 @@ Sinta-se à vontade para usar este código em seus próprios projetos e modific�
 
 #### P: Como posso silabizar uma palavra em um idioma específico com Aspose.Words?
 
- R: Para silabizar uma palavra em um idioma específico com Aspose.Words, você pode usar o`Hyphenation` classe e o`Hyphenate()` método. Crie uma instância do`Hyphenation` classe especificando o idioma desejado e, em seguida, chame o`Hyphenate()`método passando a palavra para silabizar como argumento. Isto lhe dará as sílabas da palavra no idioma especificado.
+ R: Para silabizar uma palavra em um idioma específico com Aspose.Words, você pode usar o`Hyphenation` classe e o`Hyphenate()` método. Crie uma instância do`Hyphenation` classe especificando o idioma desejado e, em seguida, chame o`Hyphenate()` método passando a palavra para silabizar como argumento. Isto lhe dará as sílabas da palavra no idioma especificado.
 
 #### P: Quais códigos de idioma devo usar para especificar o idioma de silabização em Aspose.Words?
 

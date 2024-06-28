@@ -59,7 +59,7 @@ foreach (Paragraph srcPara in srcParas)
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-これで、Aspose.Words for .NET を使用して元の番号付け書式を維持しながら、ソース ドキュメントを宛先ドキュメントに追加する実装が完了しました。
+これで、Aspose.Words for .NET を使用して、元の番号付け書式を維持しながら、ソース ドキュメントを宛先ドキュメントに追加する実装が完了しました。
 
 ### Aspose.Words for .NET を使用した Keep Source Numbering のソース コード例 
 

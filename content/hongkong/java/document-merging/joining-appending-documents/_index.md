@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-這`ImportFormatMode.KEEP_SOURCE_FORMATTING`選項可確保保留來源文件的格式。
+這`ImportFormatMode.KEEP_SOURCE_FORMATTING`此選項可確保保留來源文件的格式。
 
 ## 第 5 步：儲存結果
 

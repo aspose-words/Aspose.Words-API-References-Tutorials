@@ -1,7 +1,7 @@
 ---
 title: Verbessern Sie die Wirkung von Dokumenten mit Rich Media-Bildern
 linktitle: Verbessern Sie die Wirkung von Dokumenten mit Rich Media-Bildern
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Verbessern Sie die Wirkung von Dokumenten mit Rich-Media-Bildern mit Aspose.Words für Python. Erfahren Sie Schritt für Schritt, wie Sie Bilder einfügen, formatieren und optimieren.
 type: docs
 weight: 11
@@ -106,7 +106,7 @@ doc.save("document.pdf", aw.SaveFormat.PDF)
 
 ## Integration mit Web- und mobilen Apps
 
-Sie können Aspose.Words in Ihre Web- und Mobilanwendungen integrieren, um dynamische Dokumente mit Rich-Media-Bildern zu erstellen.
+Sie können Aspose.Words in Ihre Web- und Mobilanwendungen integrieren, um dynamische Dokumente mit Rich-Media-Bildern zu generieren.
 
 ```python
 # Integrate with a web app framework

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fonts/set-font-formatting/
 ---
-tomto tutoriálu vám ukážeme, jak nastavit formátování písma v dokumentu aplikace Word pomocí Aspose.Words for .NET. Naučíte se používat styly, jako je tučné písmo, barva, kurzíva, písmo, velikost, mezery a podtržení.
+V tomto tutoriálu vám ukážeme, jak nastavit formátování písma v dokumentu aplikace Word pomocí Aspose.Words for .NET. Naučíte se používat styly, jako je tučné písmo, barva, kurzíva, písmo, velikost, mezery a podtržení.
 
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující položky:
@@ -15,14 +15,14 @@ Než začnete, ujistěte se, že máte následující položky:
 - Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
 
 ## Krok 1: Definujte adresář dokumentů
- Začněte nastavením cesty k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+Začněte nastavením cesty k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Vytvořte a naformátujte dokument
- Vytvořte instanci souboru`Document` třída a`DocumentBuilder` třídy k vytvoření dokumentu. Použijte`Font` vlastnictvím`DocumentBuilder` pro přístup k vlastnostem formátování písma.
+ Vytvořte instanci souboru`Document` třída a`DocumentBuilder`třídy k sestavení dokumentu. Použijte`Font` vlastnictvím`DocumentBuilder` pro přístup k vlastnostem formátování písma.
 
 ```csharp
 Document doc = new Document();

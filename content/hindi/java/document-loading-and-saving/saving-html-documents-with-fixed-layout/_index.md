@@ -48,7 +48,7 @@ doc.save("Your Directory Path" + "FixedLayoutDocument.html", saveOptions);
 
  प्रतिस्थापित करें`"FixedLayoutDocument.html"` आपकी HTML फ़ाइल के लिए वांछित नाम के साथ।
 
-## जावा के लिए Aspose.Words में निश्चित लेआउट के साथ HTML दस्तावेज़ों को सहेजने के लिए संपूर्ण स्रोत कोड
+## जावा के लिए Aspose.Words में निश्चित लेआउट के साथ HTML दस्तावेज़ों को सहेजने के लिए पूर्ण स्रोत कोड
 
 ```java
         Document doc = new Document("Your Directory Path" + "Bullet points with alternative font.docx");

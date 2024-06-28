@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Étape 3 : Configurer les options de rendu des métafichiers
 
- Pour activer ou désactiver la mise à l'échelle des polices WMF en fonction de la taille du métafichier, nous devons configurer le`MetafileRenderingOptions`objet. Dans cet exemple, nous désactivons la mise à l'échelle des polices en définissant le`ScaleWmfFontsToMetafileSize`propriété à`false`.
+ Pour activer ou désactiver la mise à l'échelle des polices WMF en fonction de la taille du métafichier, nous devons configurer le`MetafileRenderingOptions` objet. Dans cet exemple, nous désactivons la mise à l'échelle des polices en définissant le`ScaleWmfFontsToMetafileSize`propriété à`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ un document PDF utilisant Aspose.Words pour .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Si Aspose.Words ne peut pas restituer correctement certains enregistrements de métafichier en graphiques vectoriels
+	//Si Aspose.Words ne peut pas restituer correctement certains enregistrements de métafichier en graphiques vectoriels
 	// puis Aspose.Words restitue ce métafichier en bitmap.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

@@ -60,13 +60,13 @@ stream.writeTo(outputStream);
 
 ## Wniosek
 
-Generowanie miniatur dokumentów przy użyciu Aspose.Words dla Java oferuje bezproblemowy sposób na poprawę komfortu użytkowania aplikacji, zapewniając atrakcyjne wizualnie podglądy dokumentów. Może to być szczególnie cenne w systemach zarządzania dokumentami, platformach treści i witrynach handlu elektronicznego.
+Generowanie miniatur dokumentów przy użyciu Aspose.Words dla Java oferuje płynny sposób na poprawę komfortu użytkowania aplikacji, zapewniając atrakcyjne wizualnie podglądy dokumentów. Może to być szczególnie cenne w systemach zarządzania dokumentami, platformach treści i witrynach handlu elektronicznego.
 
 ## Często zadawane pytania
 
 ### Jak zainstalować Aspose.Words dla Java?
 
- Aby zainstalować Aspose.Words dla Java, odwiedź stronę pobierania[Tutaj](https://releases.aspose.com/words/java/) i postępuj zgodnie z dostarczonymi instrukcjami instalacji.
+ Aby zainstalować Aspose.Words dla Java, odwiedź stronę pobierania.[Tutaj](https://releases.aspose.com/words/java/) i postępuj zgodnie z dostarczonymi instrukcjami instalacji.
 
 ### Czy mogę dostosować rozmiar generowanej miniatury?
 

@@ -46,7 +46,7 @@ public class DocumentListExample {
         // Vytvořte seznam
         List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
 
-        // Přidat položky seznamu
+        // Přidejte položky seznamu
         list.getListItems().add("Item 1");
         list.getListItems().add("Item 2");
         list.getListItems().add("Item 3");

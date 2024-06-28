@@ -29,7 +29,7 @@ Con questi tutorial potrai migliorare i tuoi documenti Word aggiungendo grafica 
 | [Limiti dell'asse](./bounds-of-axis/) | Scopri come impostare i limiti di un asse in un grafico utilizzando Aspose.Words per .NET controllando l'intervallo di valori visualizzati sull'asse. |
 | [Unità di intervallo tra le etichette sull'asse](./interval-unit-between-labels-on-axis/) | Scopri come impostare l'unità di intervallo tra le etichette sull'asse di un grafico utilizzando Aspose.Words per .NET. |
 | [Nascondi asse del grafico](./hide-chart-axis/) | Scopri come nascondere l'asse del grafico in un documento utilizzando Aspose.Words per .NET. Nascondi l'asse per una visualizzazione del grafico più chiara e mirata. |
-| [Selezionare Allineamento etichette su più righe](./tick-multi-line-label-alignment/) | Scopri come allineare le etichette su più righe in un asse del grafico utilizzando Aspose.Words per .NET. |
+| [Selezionare Allineamento etichetta multilinea](./tick-multi-line-label-alignment/) | Scopri come allineare le etichette su più righe in un asse del grafico utilizzando Aspose.Words per .NET. |
 | [Etichetta dati grafico](./chart-data-label/) | Scopri come aggiungere e personalizzare le etichette dei dati in un grafico utilizzando Aspose.Words per .NET per fornire ulteriori informazioni sui punti dati. |
 | [Opzioni predefinite per le etichette dati](./default-options-for-data-labels/) | Scopri come impostare le opzioni predefinite per le etichette dei dati in un grafico utilizzando Aspose.Words per .NET. |
 | [Punto dati grafico singolo](./single-chart-data-point/) | Scopri come personalizzare un singolo punto dati in un grafico utilizzando Aspose.Words per .NET. |

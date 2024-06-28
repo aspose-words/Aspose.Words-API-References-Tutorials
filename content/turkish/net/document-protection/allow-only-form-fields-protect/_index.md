@@ -107,7 +107,7 @@ C: Evet, Aspose.Words for .NET kullanarak form alanlarını korumalı bir belgey
 
  C: Evet, Aspose.Words for .NET'i kullanarak korumalı bir belgedeki belge korumasını kaldırabilirsiniz. Korumayı kaldırmak için şunu kullanabilirsiniz:`Unprotect` yöntemi`Document` sınıf ve doğru şifreyi girin. Bu, korumayı kaldıracak ve belgenin sınırsız düzenlenmesine olanak tanıyacaktır.
 
-#### S: Bir belgeyi birden fazla koruma türüyle korumak mümkün müdür?
+#### S: Bir belgeyi birden fazla koruma türüyle korumak mümkün mü?
 
  C: Hayır, Aspose.Words for .NET bir belgeye aynı anda yalnızca tek bir koruma türünün uygulanmasına izin verir. Ancak`AllowOnlyFormFields` koruma türü, diğer koruma türlerine izin verirken, form alanlarındaki düzenlemeyi etkili bir şekilde kısıtlayabilir:`AllowOnlyComments` veya`AllowOnlyRevisions`form alanı korumasıyla birleştirilecek.
 

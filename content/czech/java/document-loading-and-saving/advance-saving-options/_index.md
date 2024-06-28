@@ -40,7 +40,7 @@ DocSaveOptions saveOptions = new DocSaveOptions();
 doc.save("Your Directory Path" + "EncryptedDocument.docx", saveOptions);
 ```
 
-## Malé metasoubory se nekomprimují
+## Nekomprimuje malé metasoubory
 
 Metasoubory jsou nezbytné v dokumentech aplikace Word, ale možná nebudete chtít komprimovat malé soubory. Jak toho dosáhnout:
 

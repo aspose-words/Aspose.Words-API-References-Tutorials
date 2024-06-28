@@ -58,7 +58,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng "T�
 
 #### Câu hỏi: Làm cách nào tôi có thể tạo liên kết tự động đến địa chỉ URL trong Aspose.Words?
 
-Trả lời: Để tạo liên kết tự động đến địa chỉ URL trong Aspose.Words, bạn có thể sử dụng`<a>` gắn thẻ với`href` thuộc tính chứa địa chỉ URL. Ví dụ, bạn có thể sử dụng`<a href="https://www.aspose.com">https://www.aspose.com</a>` để tự động liên kết đến "https://www.aspose.com".
+ Trả lời: Để tạo liên kết tự động đến địa chỉ URL trong Aspose.Words, bạn có thể sử dụng`<a>` gắn thẻ với`href` thuộc tính chứa địa chỉ URL. Ví dụ, bạn có thể sử dụng`<a href="https://www.aspose.com">https://www.aspose.com</a>` để tự động liên kết đến "https://www.aspose.com".
 
 #### Câu hỏi: Có thể tùy chỉnh văn bản hiển thị của liên kết tự động trong Aspose.Words không?
 
@@ -66,4 +66,4 @@ Trả lời: Để tạo liên kết tự động đến địa chỉ URL trong 
 
 #### Câu hỏi: Làm cách nào tôi có thể thêm các thuộc tính bổ sung vào liên kết tự động trong Aspose.Words?
 
- Trả lời: Để thêm các thuộc tính bổ sung vào liên kết tự động trong Aspose.Words, bạn có thể sử dụng các thuộc tính HTML bổ sung bên trong`<a>` nhãn. Ví dụ, bạn có thể sử dụng`<a href="https://www.aspose.com" target="_blank">Link</a>` để mở liên kết trong một cửa sổ hoặc tab mới bằng cách sử dụng` attribute target="_blank"`.
+Trả lời: Để thêm các thuộc tính bổ sung vào liên kết tự động trong Aspose.Words, bạn có thể sử dụng các thuộc tính HTML bổ sung bên trong`<a>` nhãn. Ví dụ, bạn có thể sử dụng`<a href="https://www.aspose.com" target="_blank">Link</a>` để mở liên kết trong một cửa sổ hoặc tab mới bằng cách sử dụng` attribute target="_blank"`.

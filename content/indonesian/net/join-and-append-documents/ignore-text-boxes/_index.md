@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Langkah 4: Tambahkan konten kotak teks
 
- Membuat`NodeImporter` objek dan menggunakannya untuk mengimpor node kotak teks dari dokumen sumber ke dokumen tujuan. Ulangi setiap paragraf dalam dokumen sumber dan impor ke dokumen tujuan.
+ Membuat`NodeImporter`objek dan menggunakannya untuk mengimpor node kotak teks dari dokumen sumber ke dokumen tujuan. Ulangi setiap paragraf dalam dokumen sumber dan impor ke dokumen tujuan.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Langkah 5: Simpan dokumen tujuan
 
- Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
+Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

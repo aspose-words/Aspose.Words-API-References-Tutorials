@@ -110,7 +110,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### D: Cosa dimostra il codice sorgente di esempio per la funzionalità "Riconoscimento e sostituzioni all'interno dei modelli di sostituzione" in Aspose.Words per .NET?
 
-R: Il codice sorgente di esempio dimostra l'uso della funzionalità "Riconosci e sostituzioni all'interno dei modelli di sostituzione" in Aspose.Words per .NET. Mostra come creare un documento, inserire testo, eseguire ricerche e sostituzioni di testo utilizzando espressioni regolari e utilizzare i gruppi acquisiti nel modello di sostituzione per trasformare dinamicamente il testo corrispondente.
+R: Il codice sorgente di esempio dimostra l'uso della funzionalità "Riconosci e sostituzioni all'interno di modelli di sostituzione" in Aspose.Words per .NET. Mostra come creare un documento, inserire testo, eseguire ricerche e sostituzioni di testo utilizzando espressioni regolari e utilizzare i gruppi acquisiti nel modello di sostituzione per trasformare dinamicamente il testo corrispondente.
 
 #### D: Dove posso trovare ulteriori informazioni ed esempi sull'utilizzo delle espressioni regolari in Aspose.Words per .NET?
 
@@ -124,6 +124,6 @@ R: Sì, puoi manipolare altri aspetti del documento in base ai gruppi acquisiti 
 
 R: Sebbene le espressioni regolari e i gruppi acquisiti offrano potenti funzionalità per la ricerca e la sostituzione del testo in Aspose.Words per .NET, è importante considerare la complessità e le implicazioni sulle prestazioni. Espressioni regolari altamente complesse e un numero elevato di gruppi acquisiti possono influire sulle prestazioni. Si consiglia di testare e ottimizzare le espressioni regolari per i casi d'uso specifici per garantire una manipolazione efficiente dei documenti.
 
-#### D: Posso utilizzare la funzione "Riconoscimento e sostituzioni all'interno dei modelli di sostituzione" con lingue diverse dall'inglese?
+#### D: Posso utilizzare la funzionalità "Riconosci e sostituzioni all'interno dei modelli di sostituzione" con lingue diverse dall'inglese?
 
 R: Sì, la funzionalità "Riconosci e sostituzioni all'interno di modelli di sostituzione" in Aspose.Words per .NET può essere utilizzata con lingue diverse dall'inglese. Le espressioni regolari sono indipendenti dalla lingua e possono essere create per corrispondere a modelli specifici in qualsiasi lingua. Puoi modificare il modello di espressione regolare per adattarlo alla lingua desiderata e ai modelli di testo specifici che desideri riconoscere e sostituire.

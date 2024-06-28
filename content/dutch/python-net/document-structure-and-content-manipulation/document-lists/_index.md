@@ -16,7 +16,7 @@ Lijsten zijn er in twee hoofdtypen: met opsommingstekens en genummerd. Hiermee k
 
 ## De omgeving instellen
 
- Voordat we dieper ingaan op het maken en behiern van lijsten, moet u ervoor zorgen dat de Aspose.Words voor Python-bibliotheek is geïnstalleerd. Je kunt het downloaden van[here](https://releases.aspose.com/words/python/) . Raadpleeg bovendien de API-documentatie op[deze link](https://reference.aspose.com/words/python-net/) voor gedetailleerde informatie.
+Voordat we dieper ingaan op het maken en behiern van lijsten, moet u ervoor zorgen dat de Aspose.Words voor Python-bibliotheek is geïnstalleerd. Je kunt het downloaden van[here](https://releases.aspose.com/words/python/) . Raadpleeg bovendien de API-documentatie op[deze link](https://reference.aspose.com/words/python-net/) voor gedetailleerde informatie.
 
 ## Lijsten met opsommingstekens maken
 

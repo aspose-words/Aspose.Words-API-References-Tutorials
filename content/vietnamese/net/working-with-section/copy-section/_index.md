@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## Bước 3: Sao chép phần vào tài liệu đích
- Để sao chép phần từ tài liệu nguồn sang tài liệu đích, chúng ta sẽ sử dụng`ImportNode` phương pháp nhập phần nguồn và thêm nó vào tài liệu đích.
+ Để sao chép phần từ tài liệu nguồn sang tài liệu đích, chúng ta sẽ sử dụng`ImportNode`phương pháp nhập phần nguồn và thêm nó vào tài liệu đích.
 
 ```csharp
 // Lấy phần nguồn
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### Câu hỏi: Làm cách nào để tải tài liệu nguồn và đích trong Aspose.Words cho .NET?
 
- A: Để tải tài liệu nguồn vào một phiên bản của`Document` lớp được gọi là`srcDoc` và tạo một phiên bản trống của`Document` lớp được gọi là`dstDoc` đối với tài liệu đích, bạn có thể sử dụng mã sau:
+A: Để tải tài liệu nguồn vào một phiên bản của`Document` lớp được gọi là`srcDoc` và tạo một phiên bản trống của`Document` lớp được gọi là`dstDoc` đối với tài liệu đích, bạn có thể sử dụng mã sau:
 
 ```csharp
 // Tải tài liệu nguồn

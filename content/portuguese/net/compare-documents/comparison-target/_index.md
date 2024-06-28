@@ -33,7 +33,7 @@ Nesta etapa, inicializaremos dois documentos para comparação. Você deve espec
 // Caminho para o diretório de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Inicialização do documento A para comparação.
+// Inicialização do documento A para comparar.
 Document docA = new Document(dataDir + "DocumentA.docx");
 
 // Clone o documento A para criar uma cópia idêntica do documento B.
@@ -58,7 +58,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
  O`Compare` método compara o documento A com o documento B e salva as alterações no documento A. Você pode especificar o nome de usuário e a data de comparação para referência.
 
-### Exemplo de código-fonte para Comparison Target usando Aspose.Words for .NET
+### Exemplo de código-fonte para Compare Target usando Aspose.Words for .NET
 
 
 ```csharp
@@ -90,7 +90,7 @@ R: Para usar o alvo de comparação no Aspose.Words for .NET, siga estas etapas:
 1. Configure seu ambiente de desenvolvimento com a biblioteca Aspose.Words.
 2. Adicione os assemblies necessários ao seu projeto referenciando Aspose.Words.
 3.  Inicialize os documentos que você deseja comparar usando o`Document` classe ou o`DocumentBuilder` aula.
-4.  Configure as opções de comparação criando um`CompareOptions` objeto e configurando propriedades como`IgnoreFormatting` e`Target` (por exemplo,`ComparisonTargetType.New` para alvo de comparação).
+4.  Configure as opções de comparação criando um`CompareOptions` objeto e configurando propriedades como`IgnoreFormatting` e`Target` (por exemplo.,`ComparisonTargetType.New` para alvo de comparação).
 5.  Use o`Compare` método em um documento, passando o outro documento e o`CompareOptions` objeto como parâmetros. Este método irá comparar os documentos e salvar as alterações no primeiro documento.
 
 ####  P: Qual é o propósito do`Target` property in the `CompareOptions` class?

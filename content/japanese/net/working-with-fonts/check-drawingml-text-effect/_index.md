@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 次に、Word 文書をロードし、文書本文の最初の段落にあるラン (文字シーケンス) のコレクションにアクセスします。次に、特定の DrawingML テキスト効果が最初の実行のフォントに適用されているかどうかを確認します。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "DrawingML text effects.docx");
 RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
 Font runFont = runs[0].Font;

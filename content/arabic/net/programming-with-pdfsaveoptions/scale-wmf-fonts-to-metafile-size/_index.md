@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## الخطوة 3: تكوين خيارات عرض ملف التعريف
 
- لتمكين أو تعطيل تغيير حجم خط WMF إلى حجم ملف التعريف، نحتاج إلى تكوين`MetafileRenderingOptions`هدف. في هذا المثال، نقوم بتعطيل تغيير حجم الخط عن طريق تعيين`ScaleWmfFontsToMetafileSize`الملكية ل`false`.
+ لتمكين أو تعطيل تغيير حجم خط WMF إلى حجم ملف التعريف، نحتاج إلى تكوين`MetafileRenderingOptions` هدف. في هذا المثال، نقوم بتعطيل تغيير حجم الخط عن طريق تعيين`ScaleWmfFontsToMetafileSize`الملكية ل`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// إذا لم يتمكن Aspose.Words من عرض بعض سجلات ملف التعريف بشكل صحيح إلى رسومات متجهة
+	//إذا لم يتمكن Aspose.Words من عرض بعض سجلات ملف التعريف بشكل صحيح إلى رسومات متجهة
 	// ثم يعرض Aspose.Words ملف التعريف هذا إلى صورة نقطية.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

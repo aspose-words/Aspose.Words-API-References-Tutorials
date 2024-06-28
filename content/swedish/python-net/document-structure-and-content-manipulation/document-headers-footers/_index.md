@@ -132,7 +132,7 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ## Vanliga frågor
 
-### Hur får jag åtkomst till sidhuvud och sidfotsinnehåll?
+### Hur kommer jag åt sidhuvud och sidfotsinnehåll?
 
  För att komma åt sidhuvud och sidfotsinnehåll, använd`headers_footers` egendom för dokumentets avdelning.
 

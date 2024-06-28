@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Krok 5: Vložení vnořeného pole
 
- Používáme DocumentBuilder's`InsertField()`metoda pro vložení vnořeného pole do zápatí.
+ Používáme DocumentBuilder's`InsertField()` metoda pro vložení vnořeného pole do zápatí.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -94,7 +94,7 @@ field. Update();
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-V tomto příkladu jsme vytvořili nový dokument, vložili konce stránek, přesunuli kurzor do zápatí a pak do zápatí vložili vnořené pole.
+tomto příkladu jsme vytvořili nový dokument, vložili konce stránek, přesunuli kurzor do zápatí a pak do zápatí vložili vnořené pole.
 
 ### FAQ
 

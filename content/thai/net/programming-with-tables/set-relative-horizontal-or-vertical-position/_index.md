@@ -41,7 +41,7 @@ table.HorizontalAnchor = RelativeHorizontalPosition.Column;
 table.VerticalAnchor = RelativeVerticalPosition.Page;
 ```
 
- ที่นี่เราใช้เอกสารเพื่อดึงข้อมูลตารางแรกจากเนื้อหาของส่วนแรก ต่อไป เรากำหนดตำแหน่งแนวนอนของตารางด้วย`HorizontalAnchor` คุณสมบัติโดยใช้`RelativeHorizontalPosition.Column` ค่า. ในทำนองเดียวกัน เรากำหนดตำแหน่งแนวตั้งสัมพัทธ์ของตารางด้วย`VerticalAnchor` คุณสมบัติโดยใช้`RelativeVerticalPosition.Page` ค่า.
+ ที่นี่เราใช้เอกสารเพื่อดึงข้อมูลตารางแรกจากเนื้อหาของส่วนแรก ต่อไป เรากำหนดตำแหน่งแนวนอนของตารางด้วย`HorizontalAnchor` คุณสมบัติโดยใช้`RelativeHorizontalPosition.Column` ความคุ้มค่า ในทำนองเดียวกัน เรากำหนดตำแหน่งแนวตั้งสัมพัทธ์ของตารางด้วย`VerticalAnchor` คุณสมบัติโดยใช้`RelativeVerticalPosition.Page` ความคุ้มค่า
 
 ## ขั้นตอนที่ 4: บันทึกเอกสารที่แก้ไข
 สุดท้ายนี้ เราจำเป็นต้องบันทึกเอกสารที่แก้ไขโดยกำหนดตำแหน่งสัมพัทธ์ของตาราง ใช้รหัสต่อไปนี้:

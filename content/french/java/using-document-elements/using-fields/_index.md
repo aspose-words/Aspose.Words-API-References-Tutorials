@@ -97,7 +97,7 @@ Code source de la classe HandleMergeField
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // Nous avons décidé que nous souhaitions que toutes les valeurs booléennes soient affichées sous forme de champs de formulaire à cocher.
+            // Nous avons décidé que nous souhaitions que toutes les valeurs booléennes soient affichées sous forme de champs de formulaire de case à cocher.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
                 // Déplacez le "curseur" vers le champ de fusion actuel.
@@ -357,7 +357,7 @@ Code source de la classe HandleMergeField
 
 Toutes nos félicitations! Vous avez appris à utiliser les champs dans Aspose.Words pour Java pour manipuler dynamiquement des documents Word. Cette API puissante vous donne un contrôle total sur vos documents, ce qui en fait un atout précieux pour les développeurs Java.
 
-## 7. FAQ
+## 7.FAQ
 
 ### Q1 : Où puis-je télécharger Aspose.Words pour Java ?
  Vous pouvez télécharger Aspose.Words pour Java à partir de[ici](https://releases.aspose.com/words/java/).

@@ -31,7 +31,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára.
 
 ## 3. lépés: Engedélyezze a „KeepWithNext” opciót
-Annak érdekében, hogy a táblázat egyben maradjon, és ne váljon szét több oldalra, engedélyeznünk kell a „KeepWithNext” opciót a táblázat minden bekezdésénél, kivéve a táblázat utolsó sorának utolsó bekezdéseit. Használja a következő kódot:
+Annak érdekében, hogy a táblázat egyben maradjon, és ne váljon szét több oldalra, engedélyeznünk kell a "KeepWithNext" opciót a táblázat minden bekezdésénél, kivéve a táblázat utolsó sorának utolsó bekezdéseit. Használja a következő kódot:
 
 ```csharp
 foreach(Cell cell in table.GetChildNodes(NodeType.Cell, true))
@@ -43,7 +43,7 @@ para.ParagraphFormat.KeepWithNext = true;
 }
 ```
 
-Itt végigpörgetjük a táblázat minden egyes celláját, és engedélyezzük a „KeepWithNext” opciót a cella minden bekezdéséhez, kivéve a táblázat utolsó sorának utolsó bekezdéseit.
+Itt végigpörgetjük a táblázat minden celláját, és engedélyezzük a "KeepWithNext" opciót a cellában lévő minden egyes bekezdéshez, kivéve a táblázat utolsó sorának utolsó bekezdéseit.
 
 ## 4. lépés: Mentse el a módosított dokumentumot
 Végül el kell mentenünk a módosított dokumentumot a táblázat összetartásával. Használja a következő kódot:
@@ -75,4 +75,4 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet összetartani egy táblázatot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C#-kódot, megőrizheti a táblázat érintetlenségét, és megakadályozhatja, hogy a dokumentumokban több oldalra oszlana fel. Ezzel a funkcióval jobban szabályozhatja a dokumentumokban lévő táblázatok megjelenését és elrendezését.
+Ebben az oktatóanyagban megtanultuk, hogyan tarthatunk össze egy táblázatot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C#-kódot, megőrizheti a táblázat érintetlenségét, és megakadályozhatja, hogy a dokumentumokban több oldalra oszlana fel. Ezzel a funkcióval jobban szabályozhatja a dokumentumokban lévő táblázatok megjelenését és elrendezését.

@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Ε: Πώς να εμφανίσετε αναθεωρήσεις σε μπαλόνια με το Aspose.Words για .NET;
 
- Α: Χρησιμοποιήστε το`ShowInBalloons` ιδιοκτησία του`RevisionOptions` αντικείμενο να ρυθμίσετε την εμφάνιση των αναθεωρήσεων σε μπαλόνια. Μπορείτε να ρυθμίσετε αυτήν την ιδιότητα`ShowInBalloons.FormatAndDelete` για εμφάνιση αναθεωρήσεων σε μπαλόνια με αναθεωρήσεις διαγραφής και μορφοποίησης.
+ Α: Χρησιμοποιήστε το`ShowInBalloons` ιδιοκτησία του`RevisionOptions` αντικείμενο να ρυθμίσετε την εμφάνιση των αναθεωρήσεων σε μπαλόνια. Μπορείτε να ορίσετε αυτήν την ιδιότητα`ShowInBalloons.FormatAndDelete` για εμφάνιση αναθεωρήσεων σε μπαλόνια με αναθεωρήσεις διαγραφής και μορφοποίησης.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

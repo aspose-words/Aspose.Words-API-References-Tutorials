@@ -61,7 +61,7 @@ doc.save("modified-document.docx");
 
 I det här exemplet använder vi ett reguljärt uttrycksmönster för att hitta och ersätta text i dokumentet.
 
-## Ignorerar text i fält
+## Ignorera text i fält
 
 Du kan konfigurera Aspose.Words att ignorera text i fält när du utför sök- och ersätt-operationer.
 

@@ -97,4 +97,4 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 
 #### 问：我可以使用 Aspose.Words for .NET 自定义 Word 文档中文本包含字段的外观吗？
 
-答：文本包含字段不会直接自定义其在 Word 文档中的外观。但是，您可以使用段落属性、字体属性和 Aspose.Words for .NET 中提供的其他格式对象来格式化包含的文本。
+答：文本字段包含不会直接自定义其在 Word 文档中的外观。但是，您可以使用段落属性、字体属性和 Aspose.Words for .NET 中提供的其他格式对象来格式化包含的文本。

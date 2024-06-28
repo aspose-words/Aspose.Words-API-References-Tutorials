@@ -2,84 +2,65 @@
 title: Word文書に表を作成する
 linktitle: Word文書に表を作成する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内に表を作成する方法を学びます。
+description: この詳細なステップバイステップのチュートリアルで、Aspose.Words for .NET を使用して Word 文書に表を作成する方法を学びます。初心者にもプロにも最適です。
 type: docs
 weight: 10
 url: /ja/net/add-content-using-documentbuilder/build-table/
 ---
-このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内に表を作成する方法を学習します。プロセスを案内し、必要な C# コード スニペットを提供します。このガイドを終えると、DocumentBuilder クラスを使用してカスタムの書式設定とコンテンツを含む表を作成できるようになります。
+## 導入
+
+ちょっと、そこ！ Word 文書内にプログラムで表を作成したいと考えていますか?さて、あなたは正しい場所に来ました！今日は、Aspose.Words for .NET の魔法の世界に飛び込みます。この強力なライブラリを使用すると、Word 文書をプロのように操作できます。あなたがウィザードであり、Aspose.Words があなたの杖のようなもので、手首を軽く動かすだけ (またはコード行を 1 行書くだけ) でドキュメントを作成、編集、書式設定できるようになると想像してください。このチュートリアルでは、Word 文書内での表の作成に焦点を当てます。それでは、コーディング帽子を手に取り、始めましょう!
 
 ## 前提条件
-始める前に、次の前提条件を満たしていることを確認してください。
-- Aspose.Words for .NET ライブラリがシステムにインストールされています。
 
-## ステップ 1: 新しいドキュメントを作成する
-まず、Document クラスを使用して新しいドキュメントを作成します。
+テーブル作りの冒険に乗り出す前に、すべてのアヒルが揃っていることを確認しましょう。必要なものは次のとおりです。
+
+- Visual Studio (またはその他の C# IDE)
+- .NET Framework (4.0以降)
+- Aspose.Words for .NET ライブラリ
+
+Aspose.Words をまだお持ちでない場合は、簡単にインストールできます。[ここからダウンロードしてください](https://releases.aspose.com/words/net/) 。から始めることもできます[無料トライアル](https://releases.aspose.com/)水をテストしたい場合。思い切って挑戦する準備ができている人は、次のことができます。[ライセンスを購入する](https://purchase.aspose.com/buy)または、評価にさらに時間が必要な場合は、[仮免許](https://purchase.aspose.com/temporary-license/).
+
+## 名前空間のインポート
+
+まず最初に、名前空間を整理しましょう。このステップは、大事なパフォーマンスの前に舞台を整えるようなものです。次の名前空間を C# ファイルに追加します。
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+それでは、Word 文書に表を作成するプロセスを管理しやすい手順に分割してみましょう。家具を組み立てるようなものだと考えてください。一度に 1 本のネジとボルトを使って組み立てていきます。
+
+## ステップ 1: ドキュメントと DocumentBuilder を初期化する
+
+まず、ドキュメントとドキュメントビルダーを設定する必要があります。の`Document`クラスは Word 文書を表し、`DocumentBuilder`コンテンツを追加するための便利なツールです。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
+
+これは、絵を描き始める前にキャンバスを置くことを想像してください。の`DocumentBuilder`傑作を作成する準備ができている私たちのブラシです。
 
 ## ステップ 2: テーブルを開始する
-次に、DocumentBuilder クラスの StartTable メソッドを使用して、テーブルの構築を開始します。
+
+さあ、テーブルを始めましょう。私たちは、`StartTable`の方法`DocumentBuilder`始める。
 
 ```csharp
-Table table = builder.StartTable();
-```
-
-## ステップ 3: セルを挿入してコンテンツを追加する
-これで、DocumentBuilder クラスの InsertCell メソッドと Write メソッドを使用して、テーブルにセルを挿入し、セルにコンテンツを追加できるようになりました。必要に応じてセルの書式設定をカスタマイズします。
-
-```csharp
-builder.InsertCell();
-builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-builder.Write("This is row 1 cell 1");
-
-builder.InsertCell();
-builder.Write("This is row 1 cell 2");
-```
-
-## ステップ 4: 列を終了する
-最初の行のセルにコンテンツを追加した後、DocumentBuilder クラスの EndRow メソッドを使用して行を終了します。
-
-```csharp
-builder.EndRow();
-```
-
-## ステップ 5: 行の書式設定をカスタマイズする
-RowFormat オブジェクトと CellFormat オブジェクトのプロパティを設定することで、行の書式設定をカスタマイズできます。
-
-```csharp
-builder.InsertCell();
-builder.RowFormat.Height = 100;
-builder.RowFormat.HeightRule = HeightRule.Exactly;
-builder.CellFormat.Orientation = TextOrientation.Upward;
-builder.Writeln("This is row 2 cell 1");
-
-builder.InsertCell();
-builder.CellFormat.Orientation = TextOrientation.Downward;
-builder.Writeln("This is row 2 cell 2");
-```
-
-## ステップ 6: テーブルを終了する
-表を完成するには、DocumentBuilder クラスの EndTable メソッドを使用します。
-
-```csharp
-builder.EndTable();
-```
-
-### Aspose.Words for .NET を使用してテーブルを構築するためのソース コードの例
-Aspose.Words for .NET を使用してテーブルを構築するための完全なソース コードを次に示します。
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
 Table table = builder.StartTable();
 builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
+```
 
+を使用することで`StartTable`、Aspose.Words にテーブルを作成しようとしていることを伝えています。の`InsertCell`メソッドは最初のセルを追加し、`AutoFit`列の幅が固定されていることを確認します。
+
+## ステップ 3: 最初の行をフォーマットする
+
+テキストを追加し、垂直方向に中央に揃えて、最初の行に味を加えてみましょう。
+
+```csharp
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.Write("This is row 1 cell 1");
 
@@ -87,7 +68,15 @@ builder.InsertCell();
 builder.Write("This is row 1 cell 2");
 
 builder.EndRow();
+```
 
+これは、テーブルクロスを敷いて最初の料理を置くことと考えてください。すべてがきちんと整頓されて見えるようにしています。
+
+## ステップ 4: カスタム書式設定を使用して 2 行目を作成する
+
+次に、2 行目を工夫してみましょう。行の高さを設定し、テキストの配置を変更し、テキストの方向を変更してセンスを加えます。
+
+```csharp
 builder.InsertCell();
 
 builder.RowFormat.Height = 100;
@@ -100,43 +89,49 @@ builder.CellFormat.Orientation = TextOrientation.Downward;
 builder.Writeln("This is row 2 cell 2");
 
 builder.EndRow();
-builder.EndTable();
-
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.BuildTable.docx");
 ```
 
+ここでは、行の高さを設定し、それが固定されたままであることを確認しています。`HeightRule.Exactly`。テキストの方向を変更することでテーブルが目立ち、独特の雰囲気が加わります。
+
+## ステップ 5: テーブルを終了する
+
+行をすべて設定したら、テーブル作成プロセスを終了します。
+
+```csharp
+builder.EndTable();
+```
+
+このステップは、アートワークに最後の仕上げを加えるようなものです。テーブル構造が完成し、すぐに使用できるようになりました。
+
+## ステップ 6: ドキュメントを保存する
+
+最後に、ドキュメントを保存しましょう。ファイルの場所と名前を選択し、ファイルを`.docx`拡大。
+
+```csharp
+doc.Save("YourDirectoryPath/AddContentUsingDocumentBuilder.BuildTable.docx");
+```
+
+これは私たちの傑作を額装して展示することだと考えてください。表は Word 文書の一部になり、共有したり賞賛したりできるようになりました。
+
 ## 結論
-おめでとう！ Aspose.Words for .NET を使用して Word 文書内に表を作成する方法を学習しました。ステップバイステップのガイドに従い、提供されているソース コードを利用することで、カスタム書式設定を使用したテーブルを作成できるようになります。
 
-### Word 文書でのテーブルの作成に関する FAQ
+そして、それができました！ Aspose.Words for .NET を使用して Word 文書内に表を作成することに成功しました。このチュートリアルでは、ドキュメントの初期化から最終成果物の保存までの各ステップを説明します。 Aspose.Words を使用すると、可能性は無限大です。レポート、請求書、その他のドキュメントを作成する場合でも、表を思いどおりに書式設定してカスタマイズできるようになりました。
 
-#### Q: Aspose.Words for .NET とは何ですか?
+練習すれば完璧になるということを忘れないでください。したがって、さまざまな表形式やスタイルをためらわずに試してください。コーディングを楽しんでください!
 
-A: Aspose.Words for .NET は、開発者が .NET アプリケーションでプログラム的に Microsoft Word ドキュメントを作成、読み取り、編集、変換できるようにする強力なドキュメント処理ライブラリです。テキスト操作、表の作成、文書保護、書式設定など、Word 文書を操作するための幅広い機能を提供します。
+## よくある質問
 
-#### Q: Aspose.Words for .NET を使用して Word 文書内に表を作成するにはどうすればよいですか?
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、Word ドキュメントをプログラムで操作するための強力なライブラリです。 Microsoft Word を必要とせずにドキュメントを作成、編集、操作できます。
 
-A: Aspose.Words for .NET を使用して Word 文書内に表を作成するには、次の手順に従います。
-1. の新しいインスタンスを作成します。`Document`クラスと`DocumentBuilder`物体。
-2. 使用`StartTable`の方法`DocumentBuilder`クラスを使用してテーブルの作成を開始します。
-3. 表にセルを挿入し、`InsertCell`そして`Write`のメソッド`DocumentBuilder`クラス。
-4. を使用して行を終了します`EndRow`の方法`DocumentBuilder`クラス。
-5. のプロパティを設定して行の書式設定をカスタマイズします。`RowFormat`そして`CellFormat`オブジェクト。
-6. を使用してテーブルを終了します`EndTable`の方法`DocumentBuilder`クラス。
-7. 文書を保存します。
+### Aspose.Words for .NET をインストールするにはどうすればよいですか?
+あなたはできる[ここから Aspose.Words for .NET をダウンロードします](https://releases.aspose.com/words/net/)。提供されるインストール手順に従って、開発環境にセットアップします。
 
-#### Q: テーブルとそのセルの書式設定をカスタマイズするにはどうすればよいですか?
+### Aspose.Words を無料で使用できますか?
+ Aspose.Words が提供するのは、[無料トライアル](https://releases.aspose.com/)その機能をテストできます。延長して使用するには、ライセンスを購入するか、[仮免許](https://purchase.aspose.com/temporary-license/).
 
- A: テーブルのさまざまなプロパティを設定することで、テーブルとそのセルの書式設定をカスタマイズできます。`RowFormat`そして`CellFormat`オブジェクト。たとえば、セルの配置、テキストの縦方向と横方向、セルの高さ、行の高さなどを調整できます。これらのプロパティを使用すると、テーブルとその内容を希望どおりの外観にすることができます。
+### Aspose.Words for .NET のその他の機能は何ですか?
+Aspose.Words では、テーブルの作成に加えて、テキスト、画像、スタイル、その他多くのドキュメント要素を操作できます。 DOCX、PDF、HTML などの幅広いドキュメント形式をサポートしています。
 
-#### Q: 結合されたセルやその他の高度な機能を使用して複雑なテーブルを作成できますか?
-
- A: はい。Aspose.Words for .NET は、結合セル、ネストされたテーブル、複雑なテーブル レイアウトのサポートなど、複雑なテーブルを構築するための高度な機能を提供します。使用できます`MergeCells`セルを結合するメソッド、`StartTable`ネストされたテーブルを作成する方法、および目的のテーブル構造を実現するその他の方法。
-
-#### Q: Aspose.Words for .NET はさまざまな Word ドキュメント形式と互換性がありますか?
-
-A: はい、Aspose.Words for .NET は、DOC、DOCX、RTF などを含むさまざまな Word ドキュメント形式と互換性があります。従来の形式 (DOC) と最新の XML ベースの形式 (DOCX) の両方をサポートしており、さまざまな形式のドキュメントを問題なく操作できます。
-
-#### Q: Aspose.Words for .NET の詳細情報とドキュメントはどこで入手できますか?
-
- A: 包括的なドキュメントとコード例は、次の場所にあります。[APIリファレンス](https://reference.aspose.com/words/net/)。このドキュメントには、ライブラリの機能と、.NET アプリケーションでの使用方法に関する詳細情報が記載されています。
+### 問題が発生した場合はどこに問い合わせればよいですか?
+サポートが必要な場合は、こちらをご覧ください。[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)ここでは、コミュニティや Aspose 開発者に質問したり、サポートを受けることができます。

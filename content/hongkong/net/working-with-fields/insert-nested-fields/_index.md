@@ -108,7 +108,7 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 
 #### Q：透過 Aspose.Words for .NET 在 Word 文件中使用巢狀欄位有什麼好處？
 
-答：在 Aspose.Words for .NET 的 Word 文件中使用巢狀欄位具有多種優點。透過允許將變數值和計算插入到嵌套欄位中，這使得建立動態文件範本具有更大的靈活性。巢狀欄位還可以促進自動內容生成，例如生成內容表、頁碼等。
+答：在 Aspose.Words for .NET 的 Word 文件中使用巢狀欄位具有多種優點。透過允許將變數值和計算插入巢狀字段，這使得建立動態文件範本具有更大的靈活性。巢狀欄位還可以促進自動內容生成，例如生成內容表、頁碼等。
 
 #### Q：我可以使用 Aspose.Words for .NET 在 Word 文件中擁有多層巢狀欄位嗎？
 

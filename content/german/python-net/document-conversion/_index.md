@@ -1,7 +1,7 @@
 ---
 title: Dokumentenkonvertierung
 linktitle: Dokumentenkonvertierung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Konvertieren Sie Dokumente effizient zwischen Formaten mit Aspose.Words für Python. Optimieren Sie die Verarbeitung von Word-Dokumenten und vereinfachen Sie Ihre Dokumentenverwaltungsaufgaben.
 type: docs
 weight: 13

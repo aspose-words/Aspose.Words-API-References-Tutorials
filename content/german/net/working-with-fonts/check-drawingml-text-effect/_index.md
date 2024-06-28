@@ -76,7 +76,7 @@ A: Zu den häufig verwendeten Arten von DrawingML-Texteffekten in Word-Dokumente
 
 #### F: Wie kann ich die Farbe eines DrawingML-Texteffekts in einem Word-Dokument überprüfen?
 
-A: Um die Farbe eines DrawingML-Texteffekts in einem Word-Dokument zu überprüfen, können Sie die von Aspose.Words bereitgestellten Methoden verwenden, um auf die Farbeigenschaften des Texteffekts zuzugreifen. Auf diese Weise können Sie die Farbe erhalten, die für den spezifischen Texteffekt verwendet wird.
+A: Um die Farbe eines DrawingML-Texteffekts in einem Word-Dokument zu überprüfen, können Sie die von Aspose.Words bereitgestellten Methoden verwenden, um auf die Farbeigenschaften des Texteffekts zuzugreifen. Auf diese Weise können Sie die Farbe erhalten, die für den jeweiligen Texteffekt verwendet wird.
 
 #### F: Ist es möglich, Texteffekte in Word-Dokumenten zu überprüfen, die mehrere Abschnitte enthalten?
 

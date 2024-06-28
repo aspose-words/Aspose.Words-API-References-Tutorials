@@ -16,7 +16,7 @@ Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini akan memban
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Terima Revisi](./accept-revisions/) | Pelajari cara menerima revisi dokumen Word menggunakan Aspose.Words untuk .NET. |
+| [Terima Ulasan](./accept-revisions/) | Pelajari cara menerima revisi dokumen Word menggunakan Aspose.Words untuk .NET. |
 | [Dapatkan Jenis Kata Revisi](./get-revision-types/) | Dapatkan revisi jenis kata dalam dokumen Word dengan Aspose.Words untuk .NET. |
 | [Dapatkan Grup Revisi](./get-revision-groups/) | Dapatkan detail grup revisi dalam dokumen Word dengan Aspose.Words untuk .NET. |
 | [Hapus Komentar Di File Pdf](./remove-comments-in-pdf/) | Hapus komentar dalam file PDF dengan Aspose.Words untuk .NET. |

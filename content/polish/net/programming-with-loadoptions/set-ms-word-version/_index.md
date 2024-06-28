@@ -58,7 +58,7 @@ W tym przewodniku wyjaśniliśmy, jak przesłać dokument określający konkretn
 
 #### P: Dlaczego miałbym określić wersję programu MS Word podczas ładowania dokumentu do aplikacji C#?
 
-Określenie wersji programu MS Word gwarantuje, że dokument zostanie poprawnie załadowany i przetworzony, szczególnie w przypadku określonego formatowania lub funkcji, które mogą się różnić w różnych wersjach.
+Określenie wersji programu MS Word gwarantuje, że dokument zostanie poprawnie załadowany i przetworzony, szczególnie w przypadku określonego formatowania lub funkcji, które mogą się różnić w zależności od wersji.
 
 #### P: Jakie wersje MS Word obsługuje Aspose.Words?
 

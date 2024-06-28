@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 
 ## 5. Adım: Hedef belgeyi kaydedin
 
- Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
+Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
@@ -64,7 +64,7 @@ Bu, Aspose.Words for .NET kullanarak içe aktarma formatı seçenekleriyle bir b
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// Kaynak ve hedef belgelerdeki numaralandırmanın çakışması durumunda,
-	//daha sonra kaynak belgedeki numaralandırma kullanılacaktır.
+	// daha sonra kaynak belgedeki numaralandırma kullanılacaktır.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

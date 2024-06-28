@@ -75,7 +75,7 @@ S: För att tillämpa lösenordsskydd på ett Word-dokument med Aspose.Words fö
 
 #### F: Vad är syftet med parametern ProtectionType i Protect-metoden?
 
- A: Den`ProtectionType` parametern i`Protect` metod för Aspose.Words för .NET låter dig ange vilken typ av skydd som ska tillämpas på dokumentet. I fallet med lösenordsskydd skulle du ställa in`ProtectionType` till`NoProtection` för att indikera att dokumentet är lösenordsskyddat.
+ A: Den`ProtectionType` parametrar i`Protect` Metoden för Aspose.Words för .NET låter dig ange vilken typ av skydd som ska tillämpas på dokumentet. I fallet med lösenordsskydd skulle du ställa in`ProtectionType` till`NoProtection` för att indikera att dokumentet är lösenordsskyddat.
 
 #### F: Kan jag ta bort lösenordsskyddet från ett Word-dokument med Aspose.Words för .NET?
 

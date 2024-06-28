@@ -94,4 +94,4 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki tabloyu nasıl böleceğimizi öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki tabloları belirli bir satırdan kolayca bölebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki tabloyu nasıl böleceğimizi öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, Word belgelerinizdeki tabloları belirli bir satırdan kolayca bölebilirsiniz.

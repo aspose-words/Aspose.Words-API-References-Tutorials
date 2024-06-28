@@ -107,7 +107,7 @@ para.remove();
 // và sẽ được hiển thị dưới dạng bản sửa đổi trong Microsoft Word cho đến khi chúng tôi chấp nhận hoặc từ chối tất cả các bản sửa đổi.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Đoạn sửa đổi xóa sẽ bị xóa khi chúng tôi chấp nhận thay đổi.
+// Đoạn sửa đổi đã xóa sẽ bị xóa sau khi chúng tôi chấp nhận thay đổi.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //là Is.Empty

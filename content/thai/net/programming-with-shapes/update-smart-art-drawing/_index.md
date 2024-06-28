@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสาร
-โหลดเอกสาร Word ที่มีรูปวาด Smart Art โดยใช้`Document` ตัวสร้างคลาส
+ โหลดเอกสาร Word ที่มีรูปวาด Smart Art โดยใช้`Document` ตัวสร้างคลาส
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");

@@ -2,87 +2,129 @@
 title: Word 문서에 나누기 삽입
 linktitle: Word 문서에 나누기 삽입
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에 페이지 나누기를 삽입하는 방법을 알아보세요. 단계별 가이드.
+description: 이 자세한 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 나누기를 삽입하는 방법을 알아보세요. 문서 조작을 마스터하려는 개발자에게 적합합니다.
 type: docs
 weight: 10
 url: /ko/net/add-content-using-documentbuilder/insert-break/
 ---
-이 포괄적인 예에서는 Aspose.Words for .NET의 InsertBreak 메서드를 사용하여 Word 문서에 페이지 나누기를 삽입하는 방법을 알아봅니다. 우리는 프로세스를 안내하고 필요한 C# 코드 조각을 제공할 것입니다. 이 가이드가 끝나면 문서 내에서 페이지 나누기를 제어할 수 있게 됩니다.
+## 소개
+
+안녕하세요! .NET용 Aspose.Words의 세계로 뛰어들 준비가 되셨습니까? 이 강력한 라이브러리는 Word 문서 조작을 위한 스위스 군용 칼과 같습니다. 복잡한 문서 자동화 작업을 처리하거나 간단한 페이지 나누기를 추가해야 하는 경우 Aspose.Words가 도와드립니다. 이 튜토리얼에서는 Word 문서에 나누기를 삽입하는 방법을 단계별로 살펴보겠습니다. 그럼 커피 한잔 마시고 시작해보세요!
 
 ## 전제조건
-시작하기 전에 다음 필수 구성 요소가 있는지 확인하세요.
-- 시스템에 설치된 .NET 라이브러리용 Aspose.Words.
 
-## 1단계: 새 문서 및 DocumentBuilder 만들기
-시작하려면 Document 클래스를 사용하여 새 문서를 만들고 DocumentBuilder 객체를 초기화합니다.
+코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
+
+1.  .NET 라이브러리용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) . Aspose를 처음 사용하는 경우 다음으로 시작하는 것이 좋습니다.[무료 시험판](https://releases.aspose.com/).
+2. 개발 환경: Visual Studio 또는 기타 .NET 호환 IDE.
+3. .NET Framework: .NET Framework가 설치되어 있는지 확인하세요.
+4. C#에 대한 기본 지식: 이 자습서에서는 사용자가 C# 프로그래밍에 익숙하다고 가정합니다.
+
+이제 모든 준비가 완료되었으므로 흥미로운 부분인 코딩으로 넘어가겠습니다!
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져오겠습니다. 모든 마법이 시작되는 곳입니다.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System;
+```
+
+## 1단계: 문서 디렉토리 설정
+
+좋습니다. 문서 디렉터리 경로를 설정하는 것부터 시작하겠습니다. 여기에 Word 문서가 저장됩니다.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서를 저장하려는 실제 경로를 사용하십시오.
+
+## 2단계: 새 문서 만들기
+
+ 다음으로, 새로운 인스턴스를 생성해야 합니다.`Document` 수업. 이것을 콘텐츠 추가를 시작할 수 있는 빈 캔버스라고 생각하세요.
 
 ```csharp
 Document doc = new Document();
+```
+
+## 3단계: DocumentBuilder 초기화
+
+ 그만큼`DocumentBuilder` 당신의 붓과 같습니다. 문서에 내용을 추가하는 데 도움이 됩니다. 초기화해 보겠습니다.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2단계: 콘텐츠 및 페이지 나누기 삽입
-다음으로 DocumentBuilder 클래스의 Writeln 메서드를 사용하여 문서에 내용을 추가합니다. 페이지 나누기를 삽입하려면 BreakType.PageBreak 매개 변수와 함께 InsertBreak 메서드를 사용합니다.
+## 4단계: 첫 페이지에 콘텐츠 쓰기
+
+첫 번째 페이지에 몇 가지 콘텐츠를 추가해 보겠습니다. 여기서 창의력을 발휘할 수 있습니다.
 
 ```csharp
 builder.Writeln("This is page 1.");
-builder.InsertBreak(BreakType.PageBreak);
+```
 
+## 5단계: 페이지 나누기 삽입
+
+ 이제 재미있는 부분이 나옵니다. 다음 페이지로 이동하려면 페이지 나누기를 삽입해야 합니다. 전화하는 것만큼 간단해요.`InsertBreak` 방법.
+
+```csharp
+builder.InsertBreak(BreakType.PageBreak);
+```
+
+## 6단계: 두 번째 페이지에 콘텐츠 쓰기
+
+페이지 나누기를 삽입한 후 두 번째 페이지에 일부 내용을 추가해 보겠습니다.
+
+```csharp
 builder.Writeln("This is page 2.");
-builder.InsertBreak(BreakType.PageBreak);
+```
 
+## 7단계: 다른 페이지 나누기 삽입
+
+세 번째 페이지로 이동하려면 또 다른 페이지 나누기를 삽입해 보겠습니다.
+
+```csharp
+builder.InsertBreak(BreakType.PageBreak);
+```
+
+## 8단계: 세 번째 페이지에 콘텐츠 쓰기
+
+마지막으로 세 번째 페이지에 일부 콘텐츠를 추가해 보겠습니다.
+
+```csharp
 builder.Writeln("This is page 3.");
 ```
 
-## 3단계: 문서 저장
-내용과 페이지 나누기를 삽입한 후 Document 클래스의 Save 메서드를 사용하여 문서를 파일에 저장합니다.
+## 9단계: 문서 저장
+
+마지막으로 문서를 저장해야 합니다. 이곳은 여러분의 모든 노력이 함께 모이는 곳입니다.
 
 ```csharp
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-### .NET용 Aspose.Words를 사용하여 삽입 중단을 위한 예제 소스 코드
-다음은 .NET용 Aspose.Words를 사용하여 페이지 나누기를 삽입하는 전체 소스 코드입니다.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Writeln("This is page 1.");
-builder.InsertBreak(BreakType.PageBreak);
-
-builder.Writeln("This is page 2.");
-builder.InsertBreak(BreakType.PageBreak);
-
-builder.Writeln("This is page 3.");
-
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
-```
-
-특정 요구 사항에 따라 코드를 조정하고 필요에 따라 추가 기능을 사용하여 코드를 향상시키는 것을 잊지 마십시오.
-
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서를 성공적으로 만들고 페이지 나누기를 삽입했습니다.
 
 ## 결론
-축하해요! Aspose.Words for .NET을 사용하여 Word 문서에 페이지 나누기를 삽입하는 방법을 성공적으로 배웠습니다. 단계별 가이드를 따르고 제공된 소스 코드를 활용하면 이제 원하는 위치에 페이지 나누기를 삽입하여 문서의 페이지 매기기 및 레이아웃을 제어할 수 있습니다.
 
-### FAQ
+재미없었어? .NET용 Aspose.Words를 사용하면 Word 문서를 조작하는 것이 매우 쉽습니다. 간단한 페이지 나누기를 추가하든 복잡한 문서 자동화를 수행하든 이 라이브러리를 사용하면 작업이 훨씬 쉬워집니다. 이제 Aspose.Words가 할 수 있는 작업에 대해 더 자세히 알아보세요. 가능성은 무궁무진합니다!
 
-#### Q: 페이지 나누기 외에 다른 유형의 나누기를 삽입할 수 있나요?
+## FAQ
 
-답: 물론이죠! Aspose.Words for .NET은 페이지 나누기, 열 나누기, 섹션 나누기를 포함한 다양한 유형의 나누기를 지원합니다. 다양한 BreakType 매개 변수와 함께 InsertBreak 메서드를 사용하여 원하는 유형의 나누기를 삽입할 수 있습니다.
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 작업하기 위한 강력한 라이브러리입니다. 문서 작성 및 편집부터 다양한 형식 간 변환에 이르기까지 광범위한 기능을 지원합니다.
 
-#### Q: 문서의 특정 섹션에 페이지 나누기를 삽입할 수 있나요?
+### Aspose.Words를 무료로 사용할 수 있나요?
+ 예, 다음과 같이 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 그 특징을 탐구합니다. 장기간 사용하려면 다음을 수행하십시오.[라이센스를 구매하다](https://purchase.aspose.com/buy).
 
-A: 예, 문서 내의 특정 위치에 페이지 나누기를 삽입할 수 있습니다. DocumentBuilder를 사용하면 문서의 내용과 구조에 따라 페이지 나누기 위치를 제어할 수 있습니다.
+### Aspose.Words에 대한 지원을 받으려면 어떻게 해야 하나요?
+ 에서 지원을 받으실 수 있습니다.[Aspose 커뮤니티 포럼](https://forum.aspose.com/c/words/8). 질문을 하고 경험을 공유할 수 있는 좋은 장소입니다.
 
-#### Q: 문서를 다른 파일 형식으로 저장할 때 페이지 나누기가 유지되나요?
+### Aspose.Words는 .NET Core와 호환됩니까?
+예, Aspose.Words는 .NET Core 및 .NET Framework와 호환됩니다.
 
-A: 예, .NET용 Aspose.Words를 사용하여 삽입한 페이지 나누기는 문서를 DOCX, PDF 또는 RTF와 같은 다른 파일 형식으로 저장할 때 보존됩니다. 이를 통해 다양한 파일 형식에 걸쳐 일관된 페이지 매김 및 레이아웃이 보장됩니다.
-
-#### Q: 페이지 나누기 모양을 사용자 정의할 수 있나요?
-
-A: 페이지 나누기는 문서 자체에는 표시되지 않지만 페이지 나누기 전후의 내용 서식과 레이아웃을 조정하여 문서의 모양을 제어할 수 있습니다.
-
-#### Q: Aspose.Words for .NET은 데스크탑과 웹 애플리케이션 모두에 적합합니까?
-
-A: 네, Aspose.Words for .NET은 데스크탑과 웹 애플리케이션 모두에 적합한 다용도 라이브러리입니다. Windows 애플리케이션을 구축하든 웹 기반 시스템을 구축하든 상관없이 라이브러리를 손쉽게 통합할 수 있습니다.
+### Aspose.Words로 복잡한 문서 작업을 자동화할 수 있나요?
+전적으로! Aspose.Words는 복잡한 문서 자동화 작업을 처리하도록 설계되어 개발자를 위한 강력한 도구입니다.

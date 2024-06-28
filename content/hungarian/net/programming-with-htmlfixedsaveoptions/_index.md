@@ -7,7 +7,7 @@ type: docs
 weight: 1610
 url: /hu/net/programming-with-htmlfixedsaveoptions/
 ---
-Az Aspose.Words for .NET oktatóanyagok célja, hogy segítsenek elsajátítani az Aspose.Words könyvtár használatát a .NET-projektekben. Az egyik ilyen oktatóanyag, a „Szövegfeldolgozás HtmlFixedSaveOptions segítségével”, végigvezeti a Word-dokumentum rögzített HTML-formátumba konvertálásához szükséges lépéseken a HtmlFixedSaveOptions mentési beállításai segítségével. Ez az oktatóanyag elmagyarázza, hogyan kell konfigurálni a mentési beállításokat, hogyan adhatja meg az elrendezési beállításokat, és hogyan kezelheti a képeket és a betűtípusokat az átalakítás során. Azt is megtanulja, hogyan szabhatja testre a biztonsági mentési beállításokat az Ön egyedi igényei szerint.
+Az Aspose.Words for .NET oktatóanyagok célja, hogy segítsenek elsajátítani az Aspose.Words könyvtár használatát a .NET-projektekben. Az egyik ilyen oktatóanyag, a „Szövegfeldolgozás HtmlFixedSaveOptions segítségével”, végigvezeti a Word-dokumentum rögzített HTML-formátumba konvertálásához szükséges lépéseken a HtmlFixedSaveOptions mentési beállítások használatával. Ez az oktatóanyag elmagyarázza, hogyan kell konfigurálni a mentési beállításokat, hogyan adhatja meg az elrendezési beállításokat, és hogyan kezelheti a képeket és a betűtípusokat az átalakítás során. Azt is megtanulja, hogyan szabhatja testre a biztonsági mentési beállításokat az Ön egyedi igényei szerint.
 
  ## Oktatóanyagok
 | Cím | Leírás |

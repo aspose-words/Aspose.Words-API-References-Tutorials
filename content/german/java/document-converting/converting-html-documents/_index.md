@@ -72,7 +72,7 @@ try {
 
 ## Abschluss
 
-Das Konvertieren von HTML in Dokumente mit Aspose.Words für Java ist ein unkomplizierter Vorgang. Mit nur wenigen Codezeilen können Sie Webinhalte in professionell formatierte Word-Dokumente umwandeln. Diese leistungsstarke API vereinfacht die Komplexität der Dokumentbearbeitung und macht sie zu einem unschätzbar wertvollen Werkzeug für Entwickler.
+Das Konvertieren von HTML in Dokumente mit Aspose.Words für Java ist ein unkomplizierter Vorgang. Mit nur wenigen Codezeilen können Sie Webinhalte in professionell formatierte Word-Dokumente umwandeln. Diese leistungsstarke API vereinfacht die Komplexität der Dokumentenbearbeitung und macht sie zu einem unschätzbar wertvollen Werkzeug für Entwickler.
 
 ## FAQs
 

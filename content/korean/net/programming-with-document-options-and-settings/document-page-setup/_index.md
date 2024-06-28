@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// 문서 그리드 동작을 정의할 수 있는 섹션의 레이아웃 모드를 설정합니다.
-	// MS Word의 페이지 설정 대화 상자에 문서 격자 탭이 표시됩니다.
+	// 문서 격자선 탭은 MS Word의 페이지 설정 대화 상자에 표시됩니다.
 	// 아시아 언어가 편집 언어로 정의된 경우.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

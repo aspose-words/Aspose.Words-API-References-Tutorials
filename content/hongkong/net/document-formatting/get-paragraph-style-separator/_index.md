@@ -71,7 +71,7 @@ foreach (Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
 
 #### Q：我可以將「取得段落樣式分隔符號」功能與其他程式語言一起使用嗎？
 
-答：是的，您可以將「取得段落樣式分隔符號」功能與 Aspose.Words 支援的其他程式語言（例如 Java、Python 或 C）一起使用++。 Aspose.Words 提供了一系列特定於語言的 API 和函式庫，以促進跨多個平台的文件處理。
+答：是的，您可以將「取得段落樣式分隔符號」功能與 Aspose.Words 支援的其他程式語言（例如 Java、Python 或 C）一起使用。++。 Aspose.Words 提供了一系列特定於語言的 API 和函式庫，以促進跨多個平台的文件處理。
 
 #### Q：如何存取 Aspose.Words for .NET 文件？
 

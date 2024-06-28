@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Bước 2: Tải tài liệu nguồn và đích
 
- Tiếp theo, bạn cần tải tài liệu nguồn và đích bằng Aspose.Words`Document` lớp học. Cập nhật tên tập tin trong`Document` hàm tạo theo tên tài liệu của bạn.
+Tiếp theo, bạn cần tải tài liệu nguồn và đích bằng Aspose.Words.`Document` lớp học. Cập nhật tên tập tin trong`Document` hàm tạo theo tên tài liệu của bạn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Bước 4: Đặt định dạng đoạn văn "Keep with Next" cho tài liệu nguồn
 
-Để giữ các đoạn trong tài liệu nguồn lại với nhau, bạn có thể lặp qua từng đoạn trong tài liệu và đặt`KeepWithNext`tài sản để`true`.
+ Để giữ các đoạn trong tài liệu nguồn lại với nhau, bạn có thể lặp qua từng đoạn trong tài liệu và đặt`KeepWithNext`tài sản để`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

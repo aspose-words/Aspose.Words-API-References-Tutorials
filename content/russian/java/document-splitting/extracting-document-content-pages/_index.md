@@ -22,7 +22,7 @@ Aspose.Words for Java меняет правила игры, когда дело 
 
 1. Установите Java. Если у вас не установлена Java, загрузите и установите последнюю версию с веб-сайта.
 
-2.  Загрузите Aspose.Words для Java: перейдите по ссылке[Aspose.Words для Java](https://releases.aspose.com/words/java/) и скачайте последнюю версию библиотеки.
+2.  Загрузите Aspose.Words для Java: перейдите по ссылке[Aspose.Words для Java](https://releases.aspose.com/words/java/) И скачайте последнюю версию библиотеки.
 
 3. Интегрируйте Aspose.Words в свой проект: добавьте файлы JAR Aspose.Words в путь к классам вашего Java-проекта.
 
@@ -64,7 +64,7 @@ DocumentVisitor visitor = new DocumentVisitor();
 // Пройти документ
 doc.accept(visitor);
 
-//Извлеченный контент теперь доступен в посетителе.
+//Извлеченный контент теперь доступен посетителю.
 String extractedText = visitor.getText();
 ```
 
@@ -100,7 +100,7 @@ for (int i = 0; i < pageCount; i++) {
 }
 ```
 
-## Манипулирование извлеченным контентом
+## Манипулирование извлеченным содержимым
 
 ### Форматирование и стилизация текста
 

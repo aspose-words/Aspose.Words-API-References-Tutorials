@@ -1,6 +1,6 @@
 ---
-title: Setext 제목
-linktitle: Setext 제목
+title: 세텍스 제목
+linktitle: 세텍스 제목
 second_title: Aspose.Words 문서 처리 API
 description: .NET용 Aspose.Words 단계별 가이드를 통해 Setext 제목을 사용하여 문서 형식을 지정하는 방법을 알아보세요.
 type: docs

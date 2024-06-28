@@ -357,7 +357,7 @@ HandleMergeFieldクラスのソースコード
 
 おめでとう！ Aspose.Words for Java のフィールドを使用して Word ドキュメントを動的に操作する方法を学習しました。この強力な API を使用すると、ドキュメントを完全に制御できるため、Java 開発者にとって貴重な資産になります。
 
-## 7. よくある質問
+## 7.よくある質問
 
 ### Q1: Aspose.Words for Java はどこでダウンロードできますか?
  Aspose.Words for Java は次からダウンロードできます。[ここ](https://releases.aspose.com/words/java/).

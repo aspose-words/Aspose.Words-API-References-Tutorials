@@ -13,5 +13,5 @@ Clone And Combine Documents nabízí výukové programy pro klonování a kombin
 | Titul | Popis |
 | --- | --- |
 | [Klonovat dokument aplikace Word](./cloning-document/) | Naučte se klonovat dokument aplikace Word pomocí Aspose.Words for .NET. |
-| [Vložit dokument při nahrazení](./insert-document-at-replace/) | Naučte se, jak vložit dokument při nahrazení pomocí Aspose.Words for .NET. |
-| [Vložit dokument při hromadné korespondenci](./insert-document-at-mail-merge/) | Naučte se, jak vložit dokument do jiného během hromadné korespondence pomocí Aspose.Words for .NET. |
+| [Vložit dokument při nahrazení](./insert-document-at-replace/) | Naučte se, jak bezproblémově vložit jeden dokument Wordu do druhého pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro vývojáře, kteří chtějí zefektivnit zpracování dokumentů. |
+| [Vložit dokument při hromadné korespondenci](./insert-document-at-mail-merge/) | Naučte se vkládat dokumenty do polí hromadné korespondence pomocí Aspose.Words for .NET v tomto komplexním, podrobném tutoriálu. |

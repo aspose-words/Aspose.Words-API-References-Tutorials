@@ -70,7 +70,7 @@ C: Belirli bir düğümün üst düğümünü almak için`parentNode` düğümü
 
 #### S: Bir düğümün üst düğümünü değiştirebilir miyiz?
 
- C: Çoğu durumda, bir düğümün üst düğümü XML belgesinin yapısına göre belirlenir ve doğrudan değiştirilemez. Ancak belirli yöntemleri kullanarak bir düğümü başka bir düğüme taşıyabilirsiniz:`appendChild` veya`insertBefore`.
+ C: Çoğu durumda, bir düğümün üst düğümü XML belgesinin yapısına göre belirlenir ve doğrudan değiştirilemez. Ancak belirli yöntemleri kullanarak bir düğümü başka bir düğüme taşıyabilirsiniz.`appendChild` veya`insertBefore`.
 
 #### S: Ana düğümlerin hiyerarşisine nasıl göz atılır?
 

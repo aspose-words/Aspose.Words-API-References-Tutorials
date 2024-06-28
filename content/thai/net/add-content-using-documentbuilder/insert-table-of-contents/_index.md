@@ -2,153 +2,129 @@
 title: แทรกสารบัญในเอกสาร Word
 linktitle: แทรกสารบัญในเอกสาร Word
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีแทรกสารบัญในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีแทรกสารบัญใน Word โดยใช้ Aspose.Words สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อการนำทางเอกสารที่ราบรื่น
 type: docs
 weight: 10
 url: /th/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-ในบทช่วยสอนที่ครอบคลุมนี้ คุณจะได้เรียนรู้วิธีแทรกสารบัญลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เราจะแนะนำคุณตลอดกระบวนการและจัดเตรียมข้อมูลโค้ด C# ที่จำเป็นให้กับคุณ ในตอนท้ายของคู่มือนี้ คุณจะสามารถสร้างสารบัญที่มีส่วนหัวและหมายเลขหน้าที่เหมาะสมได้
+## การแนะนำ
+ในบทช่วยสอนนี้ คุณจะได้เรียนรู้วิธีเพิ่มสารบัญ (TOC) ลงในเอกสาร Word ของคุณอย่างมีประสิทธิภาพโดยใช้ Aspose.Words สำหรับ .NET คุณสมบัตินี้จำเป็นสำหรับการจัดระเบียบและการนำทางเอกสารที่มีความยาว เพิ่มความสามารถในการอ่าน และให้ภาพรวมอย่างรวดเร็วของส่วนต่างๆ ของเอกสาร
 
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่เราจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นดังต่อไปนี้:
-- ติดตั้งไลบรารี Aspose.Words สำหรับ .NET บนระบบของคุณ
 
-## ขั้นตอนที่ 1: สร้างเอกสารใหม่และ DocumentBuilder
-ในการเริ่มต้น ให้สร้างเอกสารใหม่โดยใช้คลาส Document และเตรียมใช้งานอ็อบเจ็กต์ DocumentBuilder:
+ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+
+- ความเข้าใจพื้นฐานเกี่ยวกับกรอบงาน C# และ .NET
+- ติดตั้ง Visual Studio บนเครื่องของคุณแล้ว
+-  Aspose.Words สำหรับไลบรารี .NET หากคุณยังไม่ได้ติดตั้ง คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/net/).
+
+## นำเข้าเนมสเปซ
+
+ในการเริ่มต้น ให้นำเข้าเนมสเปซที่จำเป็นในโปรเจ็กต์ C# ของคุณ:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+มาแบ่งกระบวนการออกเป็นขั้นตอนที่ชัดเจน:
+
+## ขั้นตอนที่ 1: เริ่มต้นเอกสาร Aspose.Words และ DocumentBuilder
+
+ ขั้นแรก เริ่มต้น Aspose.Words ใหม่`Document` วัตถุและก`DocumentBuilder` ที่จะทำงานร่วมกับ:
+
+```csharp
+// เริ่มต้นเอกสารและ DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 2: แทรกสารบัญ
-จากนั้น ใช้เมธอด InsertTableOfContents ของคลาส DocumentBuilder เพื่อแทรกสารบัญ ระบุตัวเลือกการจัดรูปแบบที่ต้องการภายในวิธีการ:
+
+ ตอนนี้ให้แทรกสารบัญโดยใช้`InsertTableOfContents` วิธี:
 
 ```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-```
-
-## ขั้นตอนที่ 3: เพิ่มเนื้อหาเอกสาร
-หลังจากแทรกสารบัญแล้ว ให้เพิ่มเนื้อหาเอกสารจริง ตั้งค่ารูปแบบส่วนหัวที่เหมาะสมโดยใช้ StyleIdentifier:
-
-```csharp
-builder.InsertBreak(BreakType.PageBreak);
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-builder.Writeln("Heading 1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-builder.Writeln("Heading 1.1");
-builder.Writeln("Heading 1.2");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-builder.Writeln("Heading 2");
-builder.Writeln("Heading 3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-builder.Writeln("Heading 3.1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
-builder.Writeln("Heading 3.1.1");
-builder.Writeln("Heading 3.1.2");
-builder.Writeln("Heading 3.1.3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-builder.Writeln("Heading 3.2");
-builder.Writeln("Heading 3.3");
-```
-
-## ขั้นตอนที่ 4: อัปเดตสารบัญ
-สารบัญที่แทรกใหม่จะว่างเปล่าในตอนแรก หากต้องการเติมข้อมูล ให้อัปเดตฟิลด์ในเอกสาร:
-
-```csharp
-doc.UpdateFields();
-```
-
-## ขั้นตอนที่ 5: บันทึกเอกสาร
-หลังจากแทรกสารบัญและอัปเดตฟิลด์แล้ว ให้บันทึกเอกสารลงในไฟล์โดยใช้วิธีบันทึกของคลาสเอกสาร:
-
-```csharp
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-```
-
-### ตัวอย่างซอร์สโค้ดสำหรับการแทรกสารบัญโดยใช้ Aspose.Words สำหรับ .NET
-นี่คือซอร์สโค้ดที่สมบูรณ์สำหรับการแทรกสารบัญโดยใช้ Aspose.Words สำหรับ .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-// เริ่มต้น DocumentBuilder ด้วยวัตถุ Document
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
 // แทรกสารบัญ
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+```
 
-// เริ่มต้นเนื้อหาเอกสารจริงในหน้าที่สอง
+## ขั้นตอนที่ 3: เริ่มเนื้อหาเอกสารในหน้าใหม่
+
+เพื่อให้แน่ใจว่ามีการจัดรูปแบบที่เหมาะสม ให้เริ่มเนื้อหาเอกสารจริงในหน้าใหม่:
+
+```csharp
+// แทรกตัวแบ่งหน้า
 builder.InsertBreak(BreakType.PageBreak);
+```
 
+## ขั้นตอนที่ 4: จัดโครงสร้างเอกสารของคุณด้วยส่วนหัว
+
+จัดระเบียบเนื้อหาเอกสารของคุณโดยใช้สไตล์หัวเรื่องที่เหมาะสม:
+
+```csharp
+// กำหนดรูปแบบหัวเรื่อง
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
 builder.Writeln("Heading 1");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
 builder.Writeln("Heading 1.1");
 builder.Writeln("Heading 1.2");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
 builder.Writeln("Heading 2");
 builder.Writeln("Heading 3");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
 builder.Writeln("Heading 3.1");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
-
 builder.Writeln("Heading 3.1.1");
 builder.Writeln("Heading 3.1.2");
 builder.Writeln("Heading 3.1.3");
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
 builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
+```
 
+## ขั้นตอนที่ 5: อัปเดตและเติมสารบัญ
 
-// สารบัญที่แทรกใหม่จะว่างเปล่าในตอนแรก
-// จำเป็นต้องเติมข้อมูลโดยการอัปเดตฟิลด์ในเอกสาร
+อัปเดตสารบัญเพื่อแสดงโครงสร้างเอกสาร:
+
+```csharp
+// อัพเดตฟิลด์สารบัญ
 doc.UpdateFields();
+```
 
+## ขั้นตอนที่ 6: บันทึกเอกสาร
 
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
+สุดท้าย ให้บันทึกเอกสารของคุณไปยังไดเร็กทอรีที่ระบุ:
+
+```csharp
+// บันทึกเอกสาร
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
 ## บทสรุป
 
-ยินดีด้วย! คุณได้เรียนรู้วิธีแทรกสารบัญลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เรียบร้อยแล้ว ด้วยการทำตามคำแนะนำทีละขั้นตอนนี้และใช้ซอร์สโค้ดที่ให้มา คุณสามารถสร้างสารบัญที่มีส่วนหัวและหมายเลขหน้าที่เหมาะสมสำหรับเอกสารของคุณได้แล้ว
+การเพิ่มสารบัญโดยใช้ Aspose.Words สำหรับ .NET นั้นตรงไปตรงมาและช่วยเพิ่มความสามารถในการใช้งานเอกสารของคุณอย่างมาก เมื่อทำตามขั้นตอนเหล่านี้ คุณจะสามารถจัดระเบียบและนำทางผ่านเอกสารที่ซับซ้อนได้อย่างมีประสิทธิภาพ
 
-### คำถามที่พบบ่อยสำหรับการแทรกสารบัญในเอกสารคำ
+## คำถามที่พบบ่อย
 
-#### ถาม: ฉันสามารถปรับแต่งลักษณะที่ปรากฏของสารบัญได้หรือไม่
+### ฉันสามารถปรับแต่งลักษณะที่ปรากฏของสารบัญได้หรือไม่
+ได้ คุณสามารถปรับแต่งลักษณะที่ปรากฏและลักษณะการทำงานของสารบัญได้โดยใช้ Aspose.Words สำหรับ .NET API
 
- ตอบ: ได้ คุณสามารถปรับแต่งลักษณะที่ปรากฏของสารบัญได้โดยการแก้ไขตัวเลือกการจัดรูปแบบที่ระบุใน`InsertTableOfContents` วิธี. พารามิเตอร์ช่วยให้คุณควบคุมหมายเลขหน้า การเยื้อง และสไตล์อื่นๆ
+### Aspose.Words รองรับการอัปเดตฟิลด์โดยอัตโนมัติหรือไม่
+ใช่ Aspose.Words ช่วยให้คุณสามารถอัปเดตฟิลด์ต่างๆ เช่น สารบัญ แบบไดนามิกตามการเปลี่ยนแปลงเอกสาร
 
-#### ถาม: จะเกิดอะไรขึ้นหากฉันต้องการรวมระดับหัวเรื่องเฉพาะเจาะจงในสารบัญ
+### ฉันสามารถสร้างสารบัญหลายรายการในเอกสารเดียวได้หรือไม่
+Aspose.Words รองรับการสร้างสารบัญหลายรายการด้วยการตั้งค่าที่แตกต่างกันภายในเอกสารเดียว
 
- ตอบ: คุณสามารถระบุระดับหัวเรื่องที่ต้องการรวมไว้ในสารบัญได้โดยการปรับค่าภายใน`InsertTableOfContents` วิธี. เช่น การใช้`"\\o \"1-3\""` จะรวมส่วนหัวระดับ 1 ถึง 3
+### Aspose.Words เข้ากันได้กับ Microsoft Word เวอร์ชันต่างๆ หรือไม่
+ใช่ Aspose.Words รับประกันความเข้ากันได้กับรูปแบบ Microsoft Word เวอร์ชันต่างๆ
 
-#### ถาม: ฉันสามารถอัปเดตสารบัญโดยอัตโนมัติได้หรือไม่หากฉันเปลี่ยนแปลงเนื้อหาเอกสาร
-
- ตอบ: ได้ คุณสามารถอัปเดตสารบัญได้โดยอัตโนมัติโดยการโทรไปที่`UpdateFields` วิธีการในเอกสาร เพื่อให้แน่ใจว่าการเปลี่ยนแปลงใดๆ ที่เกิดขึ้นกับเนื้อหาเอกสาร เช่น การเพิ่มหรือการลบส่วนหัว จะสะท้อนให้เห็นในสารบัญ
-
-#### ถาม: ฉันจะจัดรูปแบบระดับหัวข้อในสารบัญให้แตกต่างออกไปได้อย่างไร
-
- ตอบ: คุณสามารถจัดสไตล์ระดับหัวเรื่องให้แตกต่างกันได้โดยใช้สไตล์ย่อหน้าที่แตกต่างกันสำหรับหัวเรื่องแต่ละระดับ โดยมอบหมายงานต่างๆ`StyleIdentifier` ค่าให้กับ`ParagraphFormat` ของ`DocumentBuilder`คุณสามารถสร้างสไตล์ที่แตกต่างกันสำหรับส่วนหัวแต่ละระดับได้
-
-#### ถาม: เป็นไปได้ไหมที่จะเพิ่มการจัดรูปแบบเพิ่มเติมให้กับส่วนหัวในสารบัญ
-
- ตอบ: ได้ คุณสามารถเพิ่มการจัดรูปแบบเพิ่มเติมให้กับส่วนหัวในสารบัญได้ เช่น สไตล์ฟอนต์ สี หรือคุณสมบัติอื่นๆ โดยการปรับ`Font` คุณสมบัติของ`DocumentBuilder`คุณสามารถใช้การจัดรูปแบบแบบกำหนดเองกับส่วนหัวได้
+### ฉันจะขอความช่วยเหลือและการสนับสนุนเพิ่มเติมสำหรับ Aspose.Words ได้ที่ไหน
+หากต้องการความช่วยเหลือเพิ่มเติม โปรดไปที่[ฟอรั่ม Aspose.Words](https://forum.aspose.com/c/words/8) หรือตรวจสอบ[เอกสารอย่างเป็นทางการ](https://reference.aspose.com/words/net/).

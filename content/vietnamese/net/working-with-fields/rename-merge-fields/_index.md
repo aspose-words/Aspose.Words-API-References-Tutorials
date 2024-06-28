@@ -88,7 +88,7 @@ Hãy làm theo các bước sau để đổi tên các trường hợp nhất tr
 
 #### Câu hỏi: Làm cách nào tôi có thể đổi tên các trường đã hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET?
 
- Đáp: Để đổi tên các trường đã hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể lặp qua các trường trong tài liệu bằng cách sử dụng lệnh`FieldMergingArgs` lớp và sử dụng`FieldMergingArgs.FieldName` phương pháp đổi tên trường.
+ Đáp: Để đổi tên các trường đã hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể lặp qua các trường trong tài liệu bằng cách sử dụng lệnh`FieldMergingArgs` lớp và sử dụng`FieldMergingArgs.FieldName` phương pháp đổi tên các trường.
 
 #### Câu hỏi: Có thể chỉ đổi tên một số trường đã hợp nhất nhất định trong tài liệu Word bằng Aspose.Words cho .NET không?
 

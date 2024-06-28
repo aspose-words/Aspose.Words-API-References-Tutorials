@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Steg 4: Lägg till innehåll i textrutan
 
- Skapa en`NodeImporter` objekt och använd det för att importera textboxnoder från källdokumentet till måldokumentet. Iterera igenom varje stycke i källdokumentet och importera det till måldokumentet.
+ Skapa en`NodeImporter`objekt och använd det för att importera textboxnoder från källdokumentet till måldokumentet. Iterera igenom varje stycke i källdokumentet och importera det till måldokumentet.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Steg 5: Spara måldokumentet
 
- Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
+Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

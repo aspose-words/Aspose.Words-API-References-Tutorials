@@ -61,7 +61,7 @@ watermark.color = aw.drawing.Color.GRAY
 
 ## Aggiunta di filigrane alle immagini
 
-L'aggiunta di filigrane alle immagini prevede un processo simile:
+L'aggiunta di filigrane alle immagini comporta un processo simile:
 
 1. Carica l'immagine per la filigrana.
 2. Crea un oggetto filigrana immagine.

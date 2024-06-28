@@ -321,7 +321,7 @@ doc.save("HeaderFooterDocument.docx");
 // 새 문서 만들기
 Document doc = new Document();
 
-// 행 3개와 열 3개로 구성된 테이블 만들기
+// 3개의 행과 3개의 열로 구성된 테이블을 만듭니다.
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

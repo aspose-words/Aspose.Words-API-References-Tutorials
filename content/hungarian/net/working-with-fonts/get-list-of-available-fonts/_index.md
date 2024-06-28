@@ -22,7 +22,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## 2. lépés: Konfigurálja a betűtípusforrásokat
+## 2. lépés: Konfigurálja a fontforrásokat
  Ezután létrehozunk egy példányt`FontSettings` és szerezze be a meglévő fontforrásokat a`GetFontsSources()` módszer. A betűtípusokat tartalmazó mappa megadásával egy új fontforrást is hozzáadunk.
 
 ```csharp
@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 
-// Új betűtípus-forrás hozzáadása
+// Új fontforrás hozzáadása
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
 fontSources.Add(folderFontSource);
 

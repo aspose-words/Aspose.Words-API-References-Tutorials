@@ -84,7 +84,7 @@ La résolution des commentaires aide à suivre et à gérer les commentaires dan
 
 #### Q : Comment ajouter une réponse à un commentaire résolu dans Aspose.Words pour .NET ?
 
- R : Bien que les commentaires résolus soient masqués par défaut dans le document final, vous pouvez toujours ajouter une réponse à un commentaire résolu en utilisant le`Comment.AddReply` méthode spécifiant le texte de la réponse et l'endroit où vous souhaitez l'ajouter.
+ R : Bien que les commentaires résolus soient masqués par défaut dans le document final, vous pouvez toujours ajouter une réponse à un commentaire résolu en utilisant le`Comment.AddReply`méthode spécifiant le texte de la réponse et l'endroit où vous souhaitez l'ajouter.
 
 #### Q : Comment afficher les commentaires résolus dans Aspose.Words pour .NET ?
 

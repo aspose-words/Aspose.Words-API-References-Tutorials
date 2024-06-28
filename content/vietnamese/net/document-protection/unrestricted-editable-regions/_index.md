@@ -97,7 +97,7 @@ Trong hướng dẫn này, chúng ta đã học cách tạo các vùng có thể
 
 #### Câu hỏi: Vùng có thể chỉnh sửa không hạn chế trong Aspose.Words dành cho .NET là gì?
 
-Trả lời: Các vùng có thể chỉnh sửa không hạn chế trong Aspose.Words dành cho .NET là các vùng trong tài liệu Word nơi nội dung có thể được chỉnh sửa mà không có bất kỳ hạn chế nào, ngay cả khi phần còn lại của tài liệu được đặt ở chế độ chỉ đọc. Các vùng này cung cấp cách xác định các phần cụ thể của tài liệu mà người dùng có thể sửa đổi trong khi vẫn duy trì khả năng bảo vệ tài liệu tổng thể.
+Trả lời: Các vùng có thể chỉnh sửa không hạn chế trong Aspose.Words dành cho .NET là các vùng trong tài liệu Word nơi nội dung có thể được chỉnh sửa mà không có bất kỳ hạn chế nào, ngay cả khi phần còn lại của tài liệu được đặt ở dạng chỉ đọc. Các vùng này cung cấp cách xác định các phần cụ thể của tài liệu mà người dùng có thể sửa đổi trong khi vẫn duy trì khả năng bảo vệ tài liệu tổng thể.
 
 #### Câu hỏi: Làm cách nào tôi có thể tạo các vùng có thể chỉnh sửa không hạn chế bằng Aspose.Words cho .NET?
 

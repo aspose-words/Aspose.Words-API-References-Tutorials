@@ -52,7 +52,7 @@ Document doc = new Document(MyDir + "Big document.docx");
 
 for (int i = 0; i < doc.Sections.Count; i++)
 {
-	// Teilen Sie ein Dokument in kleinere Teile auf, in diesem Fall nach Abschnitten.
+	//Teilen Sie ein Dokument in kleinere Teile auf, in diesem Fall nach Abschnitten.
 	Section section = doc.Sections[i].Clone();
 
 	Document newDoc = new Document();
@@ -76,7 +76,7 @@ In diesem Tutorial haben wir die Funktion „Dokument nach Abschnitten aufteilen
 
 Die Verwendung der Funktion „Dokument nach Abschnitten aufteilen“ kann von Vorteil sein, wenn Sie bestimmte Teile eines Dokuments bearbeiten oder analysieren müssen, z. B. Kapitel, Abschnitte oder andere Unterteilungen. Aspose.Words für .NET bietet eine zuverlässige und unkomplizierte Lösung für die Abschnittstrennung und ermöglicht so eine effiziente Dokumentenverarbeitung.
 
-Entdecken Sie die weiteren leistungsstarken Funktionen von Aspose.Words für .NET, um Ihre Möglichkeiten zur Dokumentenverarbeitung zu verbessern und Ihren Arbeitsablauf zu optimieren.
+Entdecken Sie gerne weitere leistungsstarke Funktionen von Aspose.Words für .NET, um Ihre Dokumentverarbeitungsmöglichkeiten zu verbessern und Ihren Arbeitsablauf zu optimieren.
 
 ### FAQs
 

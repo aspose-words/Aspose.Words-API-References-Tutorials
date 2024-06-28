@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## ステップ 5: 既存のテーブルの境界線を消去する
+## ステップ 5: 既存のテーブルの境界線を消去します。
 新しいアウトラインの境界線を作成するには、まずテーブルから既存の境界線をすべて消去する必要があります。これは、`ClearBorders()`方法。
 
 ```csharp

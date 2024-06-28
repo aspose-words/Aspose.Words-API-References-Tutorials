@@ -18,16 +18,16 @@ Tout d’abord, nous utiliserons un générateur de documents pour ajouter du co
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Étape 2 : Ajouter un style pour le code indenté
+## Étape 2 : ajouter un style pour le code spécifié
 
- Nous ajouterons un style personnalisé pour le code indenté en utilisant le`Styles.Add` méthode du`Document` objet. Dans cet exemple, nous créons un style appelé « IndentedCode » pour le code indenté.
+Nous ajouterons un style personnalisé pour le code indenté en utilisant le`Styles.Add` méthode du`Document` objet. Dans cet exemple, nous créons un style appelé « IndentedCode » pour le code indenté.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Étape 3 : ajouter du code en retrait
+## Étape 3 : Ajouter le code spécifié
 
 Nous pouvons maintenant ajouter un bloc de code indenté en utilisant le style personnalisé "IndentedCode".
 
@@ -51,7 +51,7 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de co
 
 ### FAQ
 
-#### Q : Qu'est-ce que le code indenté dans Markdown ?
+#### Q : Qu'est-ce que le code spécifié dans Markdown ?
 
 R : Le code indenté dans Markdown est une méthode de formatage utilisée pour afficher le code dans un document Markdown. Elle consiste à indenter chaque ligne de code avec des espaces ou des tabulations.
 

@@ -57,4 +57,4 @@ Bei der Konvertierung von DOCX in TXT können aufgrund von Unterschieden in der 
 
 #### Welche Einschränkungen gibt es beim Konvertierungsprozess?
 
-Die Einschränkungen des Konvertierungsprozesses hängen von dem spezifischen Tool oder der Bibliothek ab, die Sie verwenden. Bei einigen Tools gelten möglicherweise Einschränkungen im Zusammenhang mit unterstützten Funktionen, komplexer Formatierung oder bestimmten Elementen der DOCX-Datei. Es ist wichtig, die Einschränkungen des gewählten Tools zu verstehen und zu beurteilen, ob es Ihren Konvertierungsanforderungen entspricht.
+Die Einschränkungen des Konvertierungsprozesses hängen von dem spezifischen Tool oder der Bibliothek ab, die Sie verwenden. Bei einigen Tools gelten möglicherweise Einschränkungen hinsichtlich unterstützter Funktionen, komplexer Formatierungen oder bestimmter Elemente der DOCX-Datei. Es ist wichtig, die Einschränkungen des gewählten Tools zu verstehen und zu beurteilen, ob es Ihren Konvertierungsanforderungen entspricht.

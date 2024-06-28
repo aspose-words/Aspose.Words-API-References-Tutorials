@@ -75,7 +75,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesine şifre koruması uygulama
 
 #### S: Koruma yöntemindeki ProtectionType parametresinin amacı nedir?
 
- C:`ProtectionType` parametresi`Protect` Aspose.Words for .NET yöntemi, belgeye uygulanacak koruma türünü belirtmenize olanak tanır. Şifre koruması durumunda,`ProtectionType` ile`NoProtection` Belgenin parola korumalı olduğunu belirtmek için.
+ C:`ProtectionType` parametreler`Protect` Aspose.Words for .NET yöntemi, belgeye uygulanacak koruma türünü belirtmenize olanak tanır. Şifre koruması durumunda,`ProtectionType` ile`NoProtection` Belgenin parola korumalı olduğunu belirtmek için.
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesinden şifre korumasını kaldırabilir miyim?
 

@@ -107,7 +107,7 @@ para.remove();
 // और Microsoft Word में एक संशोधन के रूप में प्रदर्शित किया जाएगा, जब तक कि हम सभी संशोधनों को स्वीकार या अस्वीकार नहीं कर देते।
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// एक बार जब हम परिवर्तन स्वीकार कर लेते हैं तो डिलीट रिवीजन पैराग्राफ हटा दिया जाता है।
+// एक बार जब हम परिवर्तन स्वीकार कर लेते हैं तो हटाया गया संशोधन पैराग्राफ हटा दिया जाता है।
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //खाली था

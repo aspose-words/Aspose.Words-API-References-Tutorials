@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Шаг 3. Вставьте гиперссылки с экранированными Uri.
 
- Использовать`InsertHyperlink` метод`DocumentBuilder` объект для вставки гиперссылок в документ. Ури необходимо экранировать с помощью`Uri.EscapeUriString` функция, позволяющая избежать ошибок формата.
+ Использовать`InsertHyperlink` метод`DocumentBuilder` объект для вставки гиперссылок в документ. Ури необходимо экранировать с помощью`Uri.EscapeUriString` функция, позволяющая избежать ошибок форматирования.
 
 ```csharp
 builder.InsertHyperlink("Testlink",
@@ -43,13 +43,13 @@ builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2F
 
 ## Шаг 4. Сохраните документ в формате PDF.
 
- Наконец, мы можем сохранить документ в формате PDF, используя команду`Save` метод`Document` объект. Укажите имя выходного файла.
+ Наконец, мы можем сохранить документ в формате PDF, используя команду`Save` метод`Document` Объект Object. Укажите имя выходного файла.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-Вот и все ! Вы успешно вставили гиперссылки с экранированными Uri в документ с помощью Aspose.Words для .NET.
+Вот и все! Вы успешно вставили гиперссылки с экранированными Uri в документ с помощью Aspose.Words для .NET.
 
 ### Пример исходного кода для экранирования Uri с помощью Aspose.Words для .NET
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
  Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для построения документа.
 
- Использовать`InsertHyperlink` метод`DocumentBuilder` объект для вставки гиперссылок в документ. Обязательно экранируйте URI, используя`Uri.EscapeUriString` функция, позволяющая избежать ошибок формата.
+ Использовать`InsertHyperlink` метод`DocumentBuilder` объект для вставки гиперссылок в документ. Обязательно экранируйте URI, используя`Uri.EscapeUriString` функция, позволяющая избежать ошибок форматирования.
 
  Использовать`Save` метод`Document` объект для сохранения документа в формате PDF, указав имя выходного файла.
 

@@ -72,7 +72,7 @@ Bu eğitimde size Aspose.Words for .NET'in dijital imza algılama özelliğini k
 
 #### Dijital imzanın aranacağı belgelerin bulunduğu dizin nasıl belirlenir?
 
- Dijital imzayı aramak istediğiniz belgeleri içeren dizini belirtmek için,`dataDir` koddaki değişken. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
+ Dijital imzayı aramak istediğiniz belgeleri içeren dizini belirtmek için,`dataDir` koddaki değişkenler. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -84,7 +84,7 @@ Aspose.Words ile bir belgeyi açtığınızda veya kaydettiğinizde belgede bulu
 
 #### Aspose.Words for .NET'in başka hangi özellikleri dijital imza algılamayla birlikte kullanılabilir?
 
- Aspose.Words for .NET, Word belgelerinin işlenmesi ve işlenmesi için çeşitli özellikler sunar. Dijital imzaları tespit etmenin yanı sıra, kitaplığı belgelerden metin, resim veya meta veri çıkarmak, biçimlendirme değişiklikleri uygulamak, belgeleri birleştirmek, belgeleri farklı biçimlere dönüştürmek ve çok daha fazlası için de kullanabilirsiniz. Keşfedebilirsiniz[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/) Mevcut tüm özellikleri keşfetmek ve ihtiyaçlarınıza en uygun olanları bulmak için.
+ Aspose.Words for .NET, Word belgelerinin işlenmesi ve işlenmesi için çeşitli özellikler sunar. Dijital imzaları tespit etmenin yanı sıra, kitaplığı belgelerden metin, görüntü veya meta veri çıkarmak, biçimlendirme değişiklikleri uygulamak, belgeleri birleştirmek, belgeleri farklı biçimlere dönüştürmek ve çok daha fazlası için de kullanabilirsiniz. Keşfedebilirsiniz[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/) Mevcut tüm özellikleri keşfetmek ve ihtiyaçlarınıza en uygun olanları bulmak için.
 
 #### Aspose.Words for .NET ile dijital imzaları tespit etmenin sınırlamaları nelerdir?
 

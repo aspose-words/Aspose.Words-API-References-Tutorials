@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/get-table-position/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Tables.docx");
 
 //アレイへのアクセス

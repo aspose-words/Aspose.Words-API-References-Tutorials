@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
 
-Itt található egy lépésről lépésre bemutatott útmutató a C# forráskód leírásához, amely az Aspose.Words for .NET "Advanced Field Insertion without DocumentBuilder" funkcióját használja. A kívánt eredmény elérése érdekében gondosan kövesse az egyes lépéseket.
+Az alábbiakban egy lépésről lépésre bemutatjuk a C# forráskódot, amely az Aspose.Words for .NET "Advanced Field Insertion without DocumentBuilder" funkcióját használja. A kívánt eredmény elérése érdekében gondosan kövesse az egyes lépéseket.
 
 ## 1. lépés: Dokumentumkönyvtár beállítása
 
@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## 3. lépés: A speciális mező beszúrása
+## 3. lépés: A speciális mezők beszúrása
 
  Használjuk a`AppendField()` módszer egy speciális mező beillesztéséhez a bekezdésbe.
 

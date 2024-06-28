@@ -16,7 +16,7 @@ url: /ar/python-net/document-structure-and-content-manipulation/document-lists/
 
 ## تهيئة البيئة
 
- قبل أن نتعمق في إنشاء القوائم وإدارتها، تأكد من تثبيت مكتبة Aspose.Words for Python. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/python/) . بالإضافة إلى ذلك، راجع وثائق API في[هذا الرابط](https://reference.aspose.com/words/python-net/) للحصول على معلومات مفصلة.
+قبل أن نتعمق في إنشاء القوائم وإدارتها، تأكد من تثبيت مكتبة Aspose.Words for Python. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/python/) . بالإضافة إلى ذلك، راجع وثائق API في[هذا الرابط](https://reference.aspose.com/words/python-net/) للحصول على معلومات مفصلة.
 
 ## إنشاء قوائم نقطية
 

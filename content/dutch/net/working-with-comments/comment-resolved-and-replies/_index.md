@@ -84,7 +84,7 @@ Het oplossen van opmerkingen helpt bij het volgen en beheren van feedback binnen
 
 #### Vraag: Hoe voeg ik een antwoord toe aan een opgeloste opmerking in Aspose.Words voor .NET?
 
- A: Hoewel opgeloste opmerkingen standaard verborgen zijn in het definitieve document, kunt u nog steeds een antwoord toevoegen aan een opgeloste opmerking met behulp van de`Comment.AddReply` methode die de antwoordtekst specificeert en waar u deze wilt toevoegen.
+ A: Hoewel opgeloste opmerkingen standaard verborgen zijn in het definitieve document, kunt u nog steeds een antwoord toevoegen aan een opgeloste opmerking met behulp van de`Comment.AddReply`methode die de antwoordtekst specificeert en waar u deze wilt toevoegen.
 
 #### Vraag: Hoe bekijk ik opgeloste opmerkingen in Aspose.Words voor .NET?
 

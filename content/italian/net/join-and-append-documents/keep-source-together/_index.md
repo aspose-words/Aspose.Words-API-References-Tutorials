@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Passaggio 2: caricare i documenti di origine e di destinazione
 
- Successivamente, è necessario caricare i documenti di origine e di destinazione utilizzando Aspose.Words`Document` classe. Aggiorna i nomi dei file nel file`Document` costruttore in base ai nomi dei documenti.
+Successivamente, è necessario caricare i documenti di origine e di destinazione utilizzando Aspose.Words.`Document` classe. Aggiorna i nomi dei file nel file`Document` costruttore in base ai nomi dei documenti.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Passaggio 4: impostare la formattazione del paragrafo "Conserva con successivo" per il documento di origine
 
-Per mantenere insieme i paragrafi nel documento di origine, è possibile scorrere ciascun paragrafo nel documento e impostare il file`KeepWithNext`proprietà a`true`.
+ Per mantenere insieme i paragrafi nel documento di origine, è possibile scorrere ciascun paragrafo nel documento e impostare il file`KeepWithNext`proprietà a`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

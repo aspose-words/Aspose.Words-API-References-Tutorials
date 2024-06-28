@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Paso 3: insertar formas
- Utilizar el`InsertShape` método de la`DocumentBuilder` objeto para insertar formas en el documento. Especifique el tipo de forma, las posiciones horizontales y verticales relativas, las dimensiones de la página, el tamaño y el tipo de envoltura. También puede establecer el ángulo de rotación de las formas si lo desea.
+ Utilizar el`InsertShape` método de la`DocumentBuilder`objeto para insertar formas en el documento. Especifique el tipo de forma, las posiciones horizontales y verticales relativas, las dimensiones de la página, el tamaño y el tipo de envoltura. También puede establecer el ángulo de rotación de las formas si lo desea.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

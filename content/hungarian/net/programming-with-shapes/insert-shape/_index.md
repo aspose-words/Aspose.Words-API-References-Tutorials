@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. lépés: Alakzatok beszúrása
- Használja a`InsertShape` módszere a`DocumentBuilder` objektum alakzatok beszúrásához a dokumentumba. Adja meg az alakzat típusát, a relatív vízszintes és függőleges pozíciókat, az oldalméreteket, a méretet és a csomagolás típusát. Igény szerint beállíthatja az alakzatok elforgatási szögét is.
+ Használja a`InsertShape` módszere a`DocumentBuilder`objektum alakzatok beszúrásához a dokumentumba. Adja meg az alakzat típusát, a relatív vízszintes és függőleges pozíciókat, az oldalméreteket, a méretet és a csomagolás típusát. Igény szerint beállíthatja az alakzatok elforgatási szögét is.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- Itu`Resolution` properti menentukan resolusi target gambar dan`ResolutionThreshold`properti menentukan resolusi minimum di mana gambar tidak akan diperkecil.
+ Itu`Resolution` properti menentukan resolusi target gambar dan`ResolutionThreshold`Properti ini menentukan resolusi minimum yang di bawahnya gambar tidak akan diperkecil.
 
 ## Langkah 3: Konversi Dokumen ke PDF
 

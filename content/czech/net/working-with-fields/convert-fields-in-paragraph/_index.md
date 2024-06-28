@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-Tento kód používá kombinaci metod LINQ k odfiltrování polí v posledním odstavci dokumentu a poté je převede na prostý text voláním`Unlink()` metoda.
+ Tento kód používá kombinaci metod LINQ k odfiltrování polí v posledním odstavci dokumentu a poté je převede na prostý text voláním`Unlink()` metoda.
 
 ## Krok 4: Uložení upraveného dokumentu
 
@@ -93,4 +93,4 @@ Odpověď: Aspose.Words podporuje širokou škálu formátů převodu v polích,
 
 #### Otázka: Jak aktualizovat pole převodu v dokumentu aplikace Word pomocí Aspose.Words?
 
-Odpověď: Chcete-li aktualizovat pole převodu v dokumentu aplikace Word pomocí Aspose.Words, můžete použít metodu UpdateFields. Tato metoda prochází dokumentem a aktualizuje všechna pole, včetně převodních polí, přepočítává hodnoty na základě aktuálních dat.
+Odpověď: Chcete-li aktualizovat pole převodu v dokumentu aplikace Word pomocí Aspose.Words, můžete použít metodu UpdateFields. Tato metoda prochází dokumentem a aktualizuje všechna pole, včetně konverzních polí, přepočítává hodnoty na základě aktuálních dat.

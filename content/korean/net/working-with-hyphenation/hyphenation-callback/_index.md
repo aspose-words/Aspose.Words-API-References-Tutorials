@@ -2,107 +2,148 @@
 title: 하이픈 넣기 콜백
 linktitle: 하이픈 넣기 콜백
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words에서 하이픈 콜백을 사용하여 단어 하이픈을 처리하는 방법을 알아보세요.
+description: 이 포괄적인 단계별 가이드를 통해 문서 형식을 향상하기 위해 .NET용 Aspose.Words에서 하이픈 넣기 콜백을 구현하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-이 단계별 튜토리얼에서는 Aspose.Words for .NET의 하이픈 넣기 콜백 기능을 사용하는 방법을 보여줍니다. 제공된 C# 소스 코드를 설명하고 이를 자신의 프로젝트에 구현하는 방법을 보여 드리겠습니다.
+## 소개
 
- 시작하려면 개발 환경에 Aspose.Words for .NET이 설치 및 구성되어 있는지 확인하세요. 아직 설치하지 않았다면 다음에서 라이브러리를 다운로드하여 설치하세요.[Aspose.Releases]https://releases.aspose.com/words/net/.
+안녕하세요! 특히 하이픈이 필요한 언어를 다룰 때 텍스트 형식의 복잡성에 얽힌 적이 있습니까? 당신은 혼자가 아닙니다. 하이픈 넣기는 적절한 텍스트 레이아웃에 중요하지만 약간 골치 아픈 일이 될 수 있습니다. 하지만 그거 알아? .NET용 Aspose.Words가 여러분을 도와드립니다. 이 강력한 라이브러리를 사용하면 콜백 메커니즘을 통한 하이픈 처리를 포함하여 텍스트 서식을 원활하게 관리할 수 있습니다. 흥미가 있으신가요? .NET용 Aspose.Words를 사용하여 하이픈 넣기 콜백을 구현하는 방법의 핵심을 살펴보겠습니다.
 
-## 1단계: 하이픈 연결 알림 저장
+## 전제조건
 
- 먼저 사용자 정의를 사용하여 하이픈 넣기 콜백을 등록하겠습니다.`CustomHyphenationCallback` 수업. 이를 통해 자체 규칙에 따라 단어 하이픈 넣기를 처리할 수 있습니다.
+코드를 직접 다루기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  .NET용 Aspose.Words: 라이브러리가 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+2. IDE: Visual Studio와 같은 개발 환경입니다.
+3. C# 기본 지식: C# 및 .NET 프레임워크에 대한 이해.
+4. 하이픈 사전: 사용하려는 언어에 대한 하이픈 사전입니다.
+5.  Aspose 라이선스: 유효한 Aspose 라이선스입니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 당신이 하나도 없다면.
 
- 다음을 구현했는지 확인하세요.`CustomHyphenationCallback` 귀하의 특정 요구에 따라 수업.
+## 네임스페이스 가져오기
 
-## 2단계: 문서 로드 및 하이픈 적용
-
-다음으로, 지정된 디렉터리에서 문서를 로드하고 Aspose.Words를 사용하여 단어에 하이픈을 넣습니다.
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## 3단계: 누락된 사전 오류 처리
-
-하이픈 사전이 누락된 경우 해당 예외를 포착하고 오류 메시지를 표시합니다.
+먼저 필요한 네임스페이스를 가져오겠습니다. 이렇게 하면 코드가 Aspose.Words에서 필요한 모든 클래스와 메서드에 액세스할 수 있습니다.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## 4단계: 하이픈 넣기 알림 정리 및 비활성화
+## 1단계: 하이픈 넣기 콜백 등록
 
-마지막으로 청결을 유지하고 하이픈 넣기 알림을 끄려면 다음 단계를 수행하세요.
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-이렇게 하면 처리가 완료된 후 하이픈 넣기 알림이 정리되고 비활성화됩니다.
-
-그래서 ! .NET용 Aspose.Words에서 하이픈 넣기 콜백을 성공적으로 사용했습니다.
-
-### .NET용 Aspose.Words를 사용한 하이픈 넣기 콜백의 샘플 소스 코드
+시작하려면 하이픈 넣기 콜백을 등록해야 합니다. 여기가 Aspose.Words에 사용자 지정 하이픈 넣기 논리를 사용하도록 지시하는 곳입니다.
 
 ```csharp
 try
 {
-	 // 하이픈 콜백을 등록합니다.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // 하이픈 콜백을 등록합니다.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ 여기서는 사용자 정의 콜백의 인스턴스를 생성하고 이를 다음에 할당합니다.`Hyphenation.Callback`.
+
+## 2단계: 문서 경로 정의
+
+다음으로 문서가 저장되는 디렉터리를 정의해야 합니다. 이 경로에서 문서를 로드하고 저장하므로 이는 매우 중요합니다.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서의 실제 경로와 함께.
+
+## 3단계: 문서 로드
+
+이제 하이픈 넣기가 필요한 문서를 로드해 보겠습니다.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ 여기서는 독일어 텍스트 문서를 로드합니다. 교체할 수 있습니다`"German text.docx"` 문서의 파일 이름으로.
+
+## 4단계: 문서 저장
+
+문서를 로드한 후 프로세스에 하이픈 넣기 콜백을 적용하여 새 파일에 저장합니다.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+이 줄은 문서를 하이픈이 적용된 PDF로 저장합니다.
+
+## 5단계: 누락된 하이픈 넣기 사전 예외 처리
+
+때로는 하이픈 넣기 사전이 누락되는 문제가 발생할 수 있습니다. 그걸 처리하자.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-자신의 프로젝트에서 이 코드를 자유롭게 사용하고 특정 요구 사항에 맞게 수정하십시오.
+이 블록에서는 누락된 사전과 관련된 특정 예외를 포착하고 메시지를 인쇄합니다.
 
-### FAQ
+## 6단계: 사용자 정의 하이픈 넣기 콜백 클래스 구현
 
-#### Q: Aspose.Words의 음절 알림은 무엇입니까?
+ 이제`CustomHyphenationCallback` 하이픈 사전 요청을 처리하는 클래스입니다.
 
-A: Aspose.Words의 음절 알림은 문서에서 단어의 음절을 사용자 정의할 수 있는 기능입니다. 음절 미리 알림을 사용하면 단어의 음절에 대한 사용자 정의 규칙을 지정할 수 있습니다. 이는 기본 음절이 원하는 결과를 생성하지 못하는 특정 언어나 특정 시나리오에 유용할 수 있습니다.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // 요청한 언어에 대한 사전을 등록합니다.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### Q: Aspose.Words에서 음절 알림을 설정하는 방법은 무엇입니까?
+ 이 수업에서는`RequestDictionary` 메소드는 하이픈 넣기 사전이 필요할 때마다 호출됩니다. 언어를 확인하고 해당 사전을 등록합니다.
 
- A: Aspose.Words에서 하이픈 넣기 콜백을 정의하려면 다음을 구현하는 클래스를 생성해야 합니다.`HyphenationCallback` 인터페이스를 구현하고`HandleWord()` 방법. 이 메서드는 음절을 구성하는 동안 나타나는 각 단어에 대해 호출됩니다. 여기에 사용자 정의 음절 규칙을 적용하고 음절 단어를 반환할 수 있습니다. 그런 다음 다음을 사용하여 하이픈 넣기 콜백을 바인딩할 수 있습니다.`Document.HyphenationCallback` 문서의 속성입니다.
+## 결론
 
-#### Q: Aspose.Words에서 음절 미리 알림을 사용하면 어떤 이점이 있나요?
+그리고 거기에 있습니다! 방금 .NET용 Aspose.Words에서 하이픈 넣기 콜백을 구현하는 방법을 배웠습니다. 다음 단계를 따르면 언어에 관계없이 문서의 형식을 아름답게 유지할 수 있습니다. 영어, 독일어 또는 기타 언어를 사용하든 이 방법을 사용하면 하이픈 넣기를 쉽게 처리할 수 있습니다.
 
-A: Aspose.Words에서 음절 미리 알림을 사용하면 문서에서 단어의 음절을 사용자 정의할 수 있다는 이점이 있습니다. 이를 통해 특히 기본 음절이 원하는 결과를 제공하지 않는 특정 언어나 시나리오의 경우 음절을 더 효과적으로 제어할 수 있습니다. 필요에 따라 정확한 음절을 얻기 위해 각 단어에 특정 규칙을 적용할 수 있습니다.
+## 자주 묻는 질문
 
-#### Q: 음절 미리 알림을 사용하는 것이 도움이 될 수 있는 일반적인 시나리오는 무엇입니까?
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 문서를 생성, 수정 및 변환할 수 있는 강력한 문서 조작 라이브러리입니다.
 
-A: 음절 부스터를 사용하면 다음과 같은 여러 시나리오에서 유용할 수 있습니다.
-- 특정 음절 규칙이 있는 특정 언어의 단어 음절입니다.
-- 약어나 기술 단어에 대한 맞춤형 음절 규칙 적용.
-- 스타일 선호도나 인쇄 기준에 따라 음절을 조정합니다.
+### 문서 서식에서 하이픈 넣기가 중요한 이유는 무엇입니까?
+하이픈 넣기는 적절한 위치에서 단어를 분리하여 텍스트 레이아웃을 개선하여 더 읽기 쉽고 시각적으로 매력적인 문서를 보장합니다.
 
-#### Q: Aspose.Words의 음절 미리 알림을 사용하여 사용자 정의 음절을 어떻게 테스트할 수 있나요?
+### Aspose.Words를 무료로 사용할 수 있나요?
+ Aspose.Words는 무료 평가판을 제공합니다. 당신은 그것을 얻을 수 있습니다[여기](https://releases.aspose.com/).
 
- A: Aspose.Words의 음절 미리 알림을 사용하여 사용자 정의 음절을 테스트하려면 사용자 정의 음절 규칙을 적용하려는 단어가 포함된 테스트 문서를 만들 수 있습니다. 그런 다음 사용자 정의 음절 콜백을 설정하고`Document.Range.Replace()` 문서의 단어를 바꾸는 방법과`Hyphenate()` 의 방법`Hyphenation` 단어의 음절을 알아내는 클래스입니다. 그런 다음 필요에 따라 음절 사이에 하이픈을 추가하여 음절 단어의 형식을 지정할 수 있습니다.
+### 하이픈 사전은 어떻게 구하나요?
+다양한 온라인 리소스에서 하이픈 넣기 사전을 다운로드하거나 필요한 경우 직접 만들 수 있습니다.
+
+### 하이픈 넣기 사전이 없으면 어떻게 되나요?
+ 사전이 누락된 경우`RequestDictionary` 메소드는 사용자에게 알리거나 대체를 제공하기 위해 처리할 수 있는 예외를 발생시킵니다.

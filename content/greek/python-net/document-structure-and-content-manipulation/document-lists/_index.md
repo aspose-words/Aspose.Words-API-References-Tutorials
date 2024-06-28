@@ -16,7 +16,7 @@ url: /el/python-net/document-structure-and-content-manipulation/document-lists/
 
 ## Ρύθμιση του περιβάλλοντος
 
- Πριν ξεκινήσουμε τη δημιουργία και τη διαχείριση λιστών, βεβαιωθείτε ότι έχετε εγκαταστήσει τη βιβλιοθήκη Aspose.Words for Python. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/python/) . Επιπλέον, ανατρέξτε στην τεκμηρίωση του API στη διεύθυνση[αυτός ο σύνδεσμος](https://reference.aspose.com/words/python-net/) για αναλυτικές πληροφορίες.
+Πριν ξεκινήσουμε τη δημιουργία και τη διαχείριση λιστών, βεβαιωθείτε ότι έχετε εγκαταστήσει τη βιβλιοθήκη Aspose.Words for Python. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/python/) . Επιπλέον, ανατρέξτε στην τεκμηρίωση του API στη διεύθυνση[αυτός ο σύνδεσμος](https://reference.aspose.com/words/python-net/) για αναλυτικές πληροφορίες.
 
 ## Δημιουργία λιστών με κουκκίδες
 

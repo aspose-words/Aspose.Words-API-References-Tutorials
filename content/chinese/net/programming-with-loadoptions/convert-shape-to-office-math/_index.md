@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveF
 
 #### 问：为什么需要将形状转换为 Office 数学公式？
 
-答：将形状转换为 Office 数学公式对于提高 C# 应用程序中 Word 文档的兼容性和更好地呈现数学元素至关重要。
+答：将形状转换为 Office 数学公式对于提高 C# 应用程序中 Word 文档中的兼容性和更好地呈现数学元素至关重要。
 
 #### 问：Aspose.Words 可以处理复杂的数学表达式吗？
 

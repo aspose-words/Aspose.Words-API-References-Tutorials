@@ -74,7 +74,7 @@ document.digital_signatures.clear()
 document.save("unsigned_document.docx")
 ```
 
-## Belgenin Orijinalliğini Sağlama
+## Belge Orijinalliğini Sağlama
 
 Dijital imzalar, belgenin kaynağını ve bütünlüğünü doğrulayarak belgenin orijinalliğini sağlar. Kurcalamaya ve yetkisiz değişikliklere karşı koruma sağlarlar.
 

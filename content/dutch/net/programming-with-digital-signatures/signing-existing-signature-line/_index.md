@@ -87,7 +87,7 @@ Door deze stappen te volgen, kunt u eenvoudig een bestaande handtekeningregel in
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u een bestaande handtekeningregel in een Word-document kunt ondertekenen met Aspose.Words voor .NET. Door de aangegeven stappen te volgen, kunt u het document eenvoudig laden, toegang krijgen tot de bestaande handtekeningregel, de ondertekeningsopties instellen en het document ondertekenen. De mogelijkheid om een bestaande handtekeningregel te ondertekenen biedt een handige manier om digitale handtekeningen toe te voegen aan vooraf gedefinieerde gebieden in uw Word-documenten, waardoor de documentintegriteit en authenticatie wordt gegarandeerd. Aspose.Words voor .NET biedt een krachtige API voor tekstverwerking met digitale handtekeningen, waarmee u het ondertekeningsproces kunt aanpassen en de beveiliging van uw Word-documenten kunt verbeteren.
+In deze zelfstudie hebben we geleerd hoe u een bestaande handtekeningregel in een Word-document kunt ondertekenen met Aspose.Words voor .NET. Door de gegeven stappen te volgen, kunt u het document eenvoudig laden, toegang krijgen tot de bestaande handtekeningregel, de ondertekeningsopties instellen en het document ondertekenen. De mogelijkheid om een bestaande handtekeningregel te ondertekenen biedt een handige manier om digitale handtekeningen toe te voegen aan vooraf gedefinieerde gebieden in uw Word-documenten, waardoor de documentintegriteit en authenticatie wordt gegarandeerd. Aspose.Words voor .NET biedt een krachtige API voor tekstverwerking met digitale handtekeningen, waarmee u het ondertekeningsproces kunt aanpassen en de beveiliging van uw Word-documenten kunt verbeteren.
 
 ### Veelgestelde vragen
 

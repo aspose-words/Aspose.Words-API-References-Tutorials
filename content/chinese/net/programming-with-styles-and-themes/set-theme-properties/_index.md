@@ -57,7 +57,7 @@ Aspose.Words for .NET 提供了强大的 API 来操作您的文档样式和主�
 
 设置主题属性后，不要忘记保存编辑的文档。
 
-探索 Aspose.Words for .NET 提供的更多功能来优化您的工作流程并获得专业且有吸引力的文档。
+探索 Aspose.Words for .NET 提供的更多功能，以优化您的工作流程并获得专业且有吸引力的文档。
 
 ### 常见问题解答
 
@@ -79,4 +79,4 @@ Aspose.Words for .NET 提供了强大的 API 来操作您的文档样式和主�
 
 #### 我可以将修改后的文档保存为不同的格式吗？
 
-是的，您可以将修改后的文档保存为 Aspose.Words for .NET 支持的各种格式。这`Save`的方法`Document`对象允许您指定输出文件格式，例如 DOCX、PDF、HTML 等。根据您的要求选择合适的格式。
+是的，您可以将修改后的文档保存为 Aspose.Words for .NET 支持的各种格式。这`Save`的方法`Document`对象允许您指定输出文件格式，例如 DOCX、PDF、HTML 等。根据您的要求选择适当的格式。

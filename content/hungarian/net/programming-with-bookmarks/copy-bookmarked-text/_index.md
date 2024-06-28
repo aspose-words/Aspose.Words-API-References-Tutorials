@@ -104,7 +104,7 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
                 throw new InvalidOperationException(
                     "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 
-            // Korlátozzuk magunkat egy meglehetősen egyszerű forgatókönyvre.
+            // Korlátozzuk magunkat egy ésszerűen egyszerű forgatókönyvre.
             if (startPara.ParentNode != endPara.ParentNode)
                 throw new InvalidOperationException(
                     "Start and end paragraphs have different parents, cannot handle this scenario yet.");
@@ -116,7 +116,7 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
             for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
             {
                 //Ez létrehozza az aktuális csomópont másolatát, és importálja (érvényessé teszi) a kontextusba
-                // a céldokumentumról. Az importálás a stílusok és a listaazonosítók helyes beállítását jelenti.
+                // a rendeltetési okmány. Az importálás a stílusok és a listaazonosítók helyes beállítását jelenti.
                 Node newNode = importer.ImportNode(curNode, true);
 
                 dstNode.AppendChild(newNode);
@@ -152,7 +152,7 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 
 #### K: Hogyan lehet megadni a könyvjelző szövegmásolatának helyét a céldokumentumban az Aspose.Words for .NET használatával?
 
- V: Ha az Aspose.Words for .NET segítségével szeretné megadni, hogy hova kívánja hozzáadni a másolt könyvjelzőszöveget a céldokumentumban, navigáljon a céldokumentum utolsó szakaszához. Használhatja a`LastSection` tulajdonság eléréséhez az utolsó szakaszt és a`Body` tulajdonság eléréséhez az adott szakasz törzséhez. Itt van egy minta kód:
+ V: Ha az Aspose.Words for .NET használatával szeretné megadni, hogy hova kívánja hozzáadni a másolt könyvjelzőszöveget a céldokumentumban, navigáljon a céldokumentum utolsó szakaszához. Használhatja a`LastSection` tulajdonság eléréséhez az utolsó szakaszt és a`Body` tulajdonság eléréséhez az adott szakasz törzséhez. Itt van egy minta kód:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;

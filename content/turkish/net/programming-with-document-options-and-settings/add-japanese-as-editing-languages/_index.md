@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-document-options-and-settings/add-japanese-as-editing-languages/
 ---
 
-Bu eğitimde, Aspose.Words for .NET ile düzenleme dili olarak Japonca eklemenin işlevselliğini anlamanız ve uygulamanız için sizi adım adım yönlendireceğiz. Bu özellik, bir belgeyi yüklerken dil tercihlerini ayarlamanıza ve düzenleme dili olarak Japonca eklemenize olanak tanır.
+Bu eğitimde, Aspose.Words for .NET ile Japonca'yı düzenleme dili olarak eklemenin işlevselliğini anlamanız ve uygulamanız için sizi adım adım yönlendireceğiz. Bu özellik, bir belgeyi yüklerken dil tercihlerini ayarlamanıza ve düzenleme dili olarak Japonca eklemenize olanak tanır.
 
 ## Adım 1: Proje Kurulumu
 

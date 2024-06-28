@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 第 2 步：加载源文档和目标文档
 
-接下来，您需要使用 Aspose.Words 加载源文档和目标文档`Document`班级。更新文件名`Document`根据您的文档名称构造函数。
+接下来，您需要使用 Aspose.Words 加载源文档和目标文档。`Document`班级。更新文件名`Document`根据您的文档名称构造函数。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");

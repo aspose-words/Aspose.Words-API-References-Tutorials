@@ -110,4 +110,4 @@ Oui, Aspose.Words for Java peut extraire le texte de documents numérisés avec 
 
 ### Où puis-je accéder à la documentation d’Aspose.Words pour Java ?
 
- Vous pouvez trouver la documentation d'Aspose.Words pour Java[ici](https://reference.aspose.com/words/java/).
+ Vous pouvez trouver la documentation d'Aspose.Words pour Java.[ici](https://reference.aspose.com/words/java/).

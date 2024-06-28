@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-list/restart-list-number/
 ---
-tym samouczku krok po kroku pokażemy, jak zresetować numer listy w dokumencie programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+W tym samouczku krok po kroku pokażemy, jak zresetować numer listy w dokumencie programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
 
  Aby rozpocząć, upewnij się, że masz zainstalowane i skonfigurowane Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -118,11 +118,11 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### P: Czy można dostosować prefiks i sufiks wznowionej numeracji list w Aspose.Words?
 
- O: Tak, możesz dostosować przedrostek i przyrostek ponownie uruchomionej numeracji list w Aspose.Words. The`ListLevel` klasa oferuje właściwości takie jak`ListLevel.NumberPrefix` I`ListLevel.NumberSuffix` które pozwalają określić przedrostek i przyrostek dla każdego poziomu na liście. Możesz użyć tych właściwości, aby dostosować przedrostek i przyrostek zgodnie z potrzebami.
+ O: Tak, możesz dostosować przedrostek i przyrostek ponownie uruchomionej numeracji list w Aspose.Words. The`ListLevel` klasa oferuje właściwości takie jak`ListLevel.NumberPrefix` I`ListLevel.NumberSuffix`które pozwalają określić przedrostek i przyrostek dla każdego poziomu na liście. Możesz użyć tych właściwości, aby dostosować przedrostek i przyrostek zgodnie z potrzebami.
 
 #### P: Jak mogę określić konkretną wartość numeracji, od której lista powinna zostać wznowiona?
 
-O: Aby określić konkretną wartość liczbową, od której lista powinna zostać ponownie uruchomiona, możesz użyć opcji`ListRestartAtNumber` metoda przekazująca żądaną wartość jako argument. Na przykład, aby wznowić numerację od 5, możesz użyć`list.ListRestartAtNumber(5)`.
+ O: Aby określić konkretną wartość liczbową, od której lista powinna zostać ponownie uruchomiona, możesz użyć opcji`ListRestartAtNumber` metoda przekazująca żądaną wartość jako argument. Na przykład, aby wznowić numerację od 5, możesz użyć`list.ListRestartAtNumber(5)`.
 
 #### P: Czy można zrestartować wielopoziomową numerację list w Aspose.Words?
 

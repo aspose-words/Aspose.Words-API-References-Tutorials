@@ -10,7 +10,7 @@ url: /pl/python-net/document-protection/document-security-python/
 
 ## Wstęp
 
-dzisiejszej epoce cyfrowej zabezpieczenie wrażliwych dokumentów jest sprawą najwyższej wagi. Niezależnie od tego, czy masz do czynienia z danymi osobowymi, poufnymi informacjami biznesowymi, czy jakąkolwiek treścią wrażliwą, zapewnienie bezpieczeństwa dokumentów jest niezbędne w celu ochrony przed nieupoważnionym dostępem, wyciekami i potencjalnymi naruszeniami danych. W tym przewodniku krok po kroku odkryjemy, jak zaimplementować bezpieczeństwo dokumentów w Pythonie przy użyciu biblioteki Aspose.Words dla Pythona. W tym przewodniku omówione zostaną różne aspekty bezpieczeństwa dokumentów, w tym ochrona dokumentów, szyfrowanie i przetwarzanie.
+dzisiejszej epoce cyfrowej zabezpieczenie wrażliwych dokumentów jest sprawą najwyższej wagi. Niezależnie od tego, czy masz do czynienia z danymi osobowymi, poufnymi informacjami biznesowymi czy jakąkolwiek wrażliwą treścią, zapewnienie bezpieczeństwa dokumentów jest niezbędne, aby chronić je przed nieupoważnionym dostępem, wyciekami i potencjalnymi naruszeniami danych. W tym przewodniku krok po kroku odkryjemy, jak zaimplementować bezpieczeństwo dokumentów w Pythonie przy użyciu biblioteki Aspose.Words dla Pythona. W tym przewodniku omówione zostaną różne aspekty bezpieczeństwa dokumentów, w tym ochrona dokumentów, szyfrowanie i przetwarzanie.
 
 ## 1. Co to jest bezpieczeństwo dokumentów?
 
@@ -18,11 +18,11 @@ Bezpieczeństwo dokumentów odnosi się do praktyki zabezpieczania dokumentów c
 
 ## 2. Zrozumienie znaczenia bezpieczeństwa dokumentów
 
-W dzisiejszym połączonym świecie ryzyko naruszeń danych i cyberataków jest wyższe niż kiedykolwiek wcześniej. Od dokumentów osobistych po pliki firmowe – wszelkie dane pozostawione bez ochrony mogą wpaść w niepowołane ręce, co może prowadzić do poważnych konsekwencji. Bezpieczeństwo dokumentów jest niezbędne zarówno dla osób prywatnych, jak i organizacji, ponieważ pozwala zapobiegać wyciekom danych i chronić wrażliwe informacje przed ujawnieniem.
+W dzisiejszym połączonym świecie ryzyko naruszeń danych i cyberataków jest wyższe niż kiedykolwiek wcześniej. Od dokumentów osobistych po pliki firmowe – wszelkie dane pozostawione bez ochrony mogą wpaść w niepowołane ręce, co może prowadzić do poważnych konsekwencji. Bezpieczeństwo dokumentów jest niezbędne zarówno dla osób fizycznych, jak i organizacji, ponieważ pozwala zapobiegać wyciekom danych i chronić wrażliwe informacje przed ujawnieniem.
 
 ## 3. Wprowadzenie do Aspose.Words dla Pythona
 
-Aspose.Words dla Pythona to potężna biblioteka, która umożliwia programistom programowe tworzenie, edytowanie, konwertowanie i przetwarzanie dokumentów Microsoft Word. Zapewnia szeroką gamę funkcji do pracy z dokumentami Word, w tym funkcje bezpieczeństwa dokumentów, takie jak szyfrowanie, ochrona hasłem i ograniczanie dostępu.
+Aspose.Words dla Pythona to potężna biblioteka, która umożliwia programistom programowe tworzenie, edytowanie, konwertowanie i przetwarzanie dokumentów Microsoft Word. Zapewnia szeroką gamę funkcji do pracy z dokumentami Word, w tym funkcje bezpieczeństwa dokumentów, takie jak szyfrowanie, ochrona hasłem i ograniczenia dostępu.
 
 ## 4. Instalowanie Aspose.Words dla Pythona
 

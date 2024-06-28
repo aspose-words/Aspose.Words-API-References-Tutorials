@@ -17,7 +17,7 @@ url: /ko/net/programming-with-charts/insert-area-chart/
 - .NET 라이브러리용 Aspose.Words가 설치되었습니다. NuGet 패키지 관리자를 사용하여 다운로드하여 설치할 수 있습니다.
 - 출력 문서가 저장될 문서 디렉터리 경로입니다.
 
-## 2단계: 새 문서 만들기 및 차트 삽입
+## 2단계: 새 문서를 만들고 차트를 삽입합니다.
 
  새로 만들기`Document` 객체와`DocumentBuilder` 문서를 작성합니다.
 
@@ -98,7 +98,7 @@ Aspose.Words for .NET은 Word 문서의 차트를 사용하여 단어 처리를 
 Aspose.Words for .NET은 개발자가 .NET 애플리케이션에서 프로그래밍 방식으로 Word 문서를 생성, 수정 및 변환할 수 있게 해주는 강력한 문서 처리 라이브러리입니다. 차트, 단락, 표 등을 포함한 문서 요소로 단어 처리를 위한 포괄적인 API 세트를 제공합니다.
 
 #### Q2. .NET용 Aspose.Words를 어떻게 설치하나요?
-.NET용 Aspose.Words를 설치하려면 Visual Studio의 NuGet 패키지 관리자를 사용하여 프로젝트에 라이브러리를 직접 설치할 수 있습니다. NuGet 패키지 관리자에서 "Aspose.Words"를 검색하고 패키지를 설치하기만 하면 됩니다.
+.NET용 Aspose.Words를 설치하려면 Visual Studio의 NuGet 패키지 관리자를 사용하여 프로젝트에 라이브러리를 직접 설치할 수 있습니다. NuGet 패키지 관리자에서 "Apose.Words"를 검색하고 패키지를 설치하기만 하면 됩니다.
 
 #### Q3. 영역 차트의 모양을 사용자 정의할 수 있나요?
 예, .NET용 Aspose.Words를 사용하면 영역 차트 모양의 다양한 측면을 사용자 정의할 수 있습니다. 차트 제목, 계열 색상, 축 레이블, 차트 영역 서식 등의 속성을 수정할 수 있습니다. 라이브러리는 차트의 시각적 요소를 제어하고 필요에 맞는 사용자 정의된 모양을 생성할 수 있는 풍부한 API 세트를 제공합니다.

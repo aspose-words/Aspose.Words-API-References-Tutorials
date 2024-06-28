@@ -24,7 +24,7 @@ Mit diesen Tutorials können Sie Ihre Word-Dokumente durch das Hinzufügen optis
 | [Blasendiagramm einfügen](./insert-bubble-chart/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Blasendiagramm in ein Dokument einfügen. Fügen Sie Seriendaten mit X-, Y- und Blasengrößenwerten hinzu. |
 | [Streudiagramm einfügen](./insert-scatter-chart/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Streudiagramm in ein Dokument einfügen. Fügen Sie Seriendaten mit X- und Y-Koordinaten hinzu. |
 | [Definieren Sie XYAxis-Eigenschaften](./define-xyaxis-properties/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET XY-Achseneigenschaften in einem Diagramm definieren. Anpassungsmöglichkeiten für die X- und Y-Achse werden demonstriert. |
-| [Datum-Uhrzeit-Werte zur Achse](./date-time-values-to-axis/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Datums- und Uhrzeitwerte zur Achse eines Diagramms hinzufügen. |
+| [Datum-Uhrzeit-Werte zur Achse](./date-time-values-to-axis/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Datums- und Zeitwerte zur Achse eines Diagramms hinzufügen. |
 | [Zahlenformat für Achse](./number-format-for-axis/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET das Zahlenformat für eine Achse in einem Diagramm festlegen. |
 | [Grenzen der Achse](./bounds-of-axis/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Grenzen einer Achse in einem Diagramm festlegen und den auf der Achse angezeigten Wertebereich steuern. |
 | [Intervalleinheit zwischen Beschriftungen auf der Achse](./interval-unit-between-labels-on-axis/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Intervalleinheit zwischen Beschriftungen auf der Achse eines Diagramms festlegen. |

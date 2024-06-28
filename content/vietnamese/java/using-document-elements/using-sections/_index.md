@@ -104,11 +104,11 @@ Có, Aspose.Words for Java tương thích với các thư viện Java khác, khi
 
 ### Câu hỏi 2: Có phiên bản dùng thử của Aspose.Words cho Java không?
 
- Có, bạn có thể truy cập bản dùng thử miễn phí của Aspose.Words cho Java[đây](https://releases.aspose.com/).
+ Có, bạn có thể truy cập bản dùng thử miễn phí của Aspose.Words cho Java.[đây](https://releases.aspose.com/).
 
 ### Câu hỏi 3: Làm cách nào tôi có thể nhận được giấy phép tạm thời cho Aspose.Words cho Java?
 
- Bạn có thể xin giấy phép tạm thời cho Aspose.Words for Java[đây](https://purchase.aspose.com/temporary-license/).
+ Bạn có thể lấy giấy phép tạm thời cho Aspose.Words cho Java.[đây](https://purchase.aspose.com/temporary-license/).
 
 ### Câu hỏi 4: Tôi có thể tìm hỗ trợ cho Aspose.Words cho Java ở đâu?
 

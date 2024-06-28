@@ -2,13 +2,13 @@
 title: Konvertera fält i dokument
 linktitle: Konvertera fält i dokument
 second_title: Aspose.Words Document Processing API
-description: Steg-för-steg guide för att konvertera dokumentfält till text med Aspose.Words för .NET.
+description: Steg-för-steg-guide för att konvertera dokumentfält till text med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/convert-fields-in-document/
 ---
 
-den här handledningen kommer vi att guida dig steg för steg med hjälp av ConvertFieldsInDocument-funktionen i Aspose.Words för .NET-programvara. Vi kommer att förklara i detalj C#-källkoden som behövs för den här funktionen och tillhandahålla exempel på markdown-utdataformat.
+I den här handledningen kommer vi att guida dig steg för steg med hjälp av ConvertFieldsInDocument-funktionen i Aspose.Words för .NET-programvara. Vi kommer att förklara i detalj C#-källkoden som behövs för den här funktionen och tillhandahålla exempel på markdown-utdataformat.
 
 ## Steg 1: Förutsättningar
 Innan du börjar, se till att du har följande:
@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Steg 5: Spara det transformerade dokumentet
- Använd`Save()`metod för att spara dokumentet med fälten konverterade till text i den angivna dokumentkatalogen.
+ Använd`Save()` metod för att spara dokumentet med fälten konverterade till text i den angivna dokumentkatalogen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

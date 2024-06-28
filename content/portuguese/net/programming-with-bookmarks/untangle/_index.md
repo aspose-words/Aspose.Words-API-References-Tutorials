@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Etapa 2: obter linhas principais dos favoritos
 
- Nós usamos o`GetAncestor` métodos para recuperar as linhas pai dos nós inicial e final do marcador:
+ Nós usamos o`GetAncestor` Métodos para recuperar as linhas pai dos nós inicial e final do marcador:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
@@ -82,7 +82,7 @@ R: Você pode identificar marcadores aninhados percorrendo os marcadores no docu
 
 R: Sim, a função Untangle modifica o documento original movendo o nó final do marcador para o final do último parágrafo da última célula da linha superior. Certifique-se de salvar uma cópia de backup do documento antes de aplicar este recurso.
 
-#### P: Como posso desemaranhar marcadores aninhados em outros tipos de elementos de documento, como seções ou parágrafos?
+#### P: Como posso desembaraçar marcadores aninhados em outros tipos de elementos de documento, como seções ou parágrafos?
 
 R: A função Untangle apresentada neste artigo foi projetada especificamente para desembaraçar marcadores aninhados em linhas adjacentes da tabela. Se quiser desemaranhar marcadores aninhados em outros elementos do documento, você precisará adaptar o código adequadamente e usar métodos apropriados para acessar os elementos desejados.
 

@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Este código acessa a primeira seção do documento usando o índice`0` e exclui todo o texto dentro desse intervalo.
+ Este código acessa a primeira seção do documento usando o índice.`0` e exclui todo o texto dentro desse intervalo.
 
 #### P: Posso excluir texto de vários intervalos em um documento do Word usando Aspose.Words for .NET?
 

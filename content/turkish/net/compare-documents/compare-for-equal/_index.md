@@ -73,4 +73,4 @@ C: Evet, Aspose.Words for .NET karşılaştırma sürecini kişiselleştirmek i�
 
 #### S: Belgeler arasındaki belirli farklılıkları belirlemek için daha ayrıntılı bir karşılaştırma yapabilir miyim?
 
-C: Evet, belgeler arasındaki belirli farklılıkları belirlemek için, aşağıda belirtilenleri yineleyerek daha ayrıntılı bir karşılaştırma yapabilirsiniz:`Revisions` Orijinal belgenin toplanması. Her revizyon, belgeler arasındaki bir değişikliği veya farklılığı temsil eder. Her revizyonun, değişikliğin türü (ekleme, silme, biçimlendirme değişikliği) ve belgenin etkilenen aralığı gibi ayrıntılarına erişebilirsiniz.
+ C: Evet, belgeler arasındaki belirli farklılıkları belirlemek için, aşağıda belirtilenleri yineleyerek daha ayrıntılı bir karşılaştırma yapabilirsiniz:`Revisions` orijinal belgelerin toplanması. Her revizyon, belgeler arasındaki bir değişikliği veya farklılığı temsil eder. Her revizyonun, değişikliğin türü (ekleme, silme, biçimlendirme değişikliği) ve belgenin etkilenen aralığı gibi ayrıntılarına erişebilirsiniz.

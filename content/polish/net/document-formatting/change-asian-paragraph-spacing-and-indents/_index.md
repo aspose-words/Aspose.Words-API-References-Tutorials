@@ -51,9 +51,9 @@ Oto kompletny kod źródłowy funkcji Edytuj azjatyckie odstępy i wcięcia akap
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent zostanie zaktualizowany
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent zostanie zaktualizowany
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent zostanie zaktualizowany
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent zostanie zaktualizowany.
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent zostanie zaktualizowany.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent zostanie zaktualizowany.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore zostanie zaktualizowany
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter zostanie zaktualizowany
 
@@ -65,7 +65,7 @@ Za pomocą tego kodu będziesz mógł zmienić odstępy i wcięcia akapitu azjat
 
 ## Wniosek
 
- W tym samouczku nauczyliśmy się zmieniać odstępy i wcięcia akapitu azjatyckiego za pomocą Aspose.Words dla .NET. Modyfikując odpowiednie właściwości pliku`ParagraphFormat`możemy kontrolować układ i wygląd akapitów azjatyckich w dokumencie Word. Ta funkcja jest przydatna do dostosowywania formatowania tekstu przy użyciu znaków azjatyckich i uzyskiwania pożądanej prezentacji wizualnej w dokumentach o zawartości w różnych językach.
+ W tym samouczku nauczyliśmy się zmieniać odstępy i wcięcia akapitu azjatyckiego za pomocą Aspose.Words dla .NET. Modyfikując odpowiednie właściwości pliku`ParagraphFormat`możemy kontrolować układ i wygląd akapitów azjatyckich w dokumencie Word. Ta funkcja jest przydatna do dostosowywania formatowania tekstu za pomocą znaków azjatyckich i uzyskiwania pożądanej prezentacji wizualnej w dokumentach o zawartości w różnych językach.
 
 ### Często zadawane pytania
 

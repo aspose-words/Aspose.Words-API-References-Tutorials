@@ -107,7 +107,7 @@ Zapouzdřením generování TOC do metody ji můžete snadno začlenit do svých
 
 ### Jak mohu aktualizovat stávající TOC?
 
-Chcete-li aktualizovat existující obsah v dokumentu, jednoduše na něj klikněte pravým tlačítkem a vyberte "Aktualizovat pole". Aspose.Words for Java aktualizuje obsah na základě jakýchkoli změn v záhlaví vašeho dokumentu.
+Chcete-li aktualizovat stávající obsah v dokumentu, jednoduše na něj klikněte pravým tlačítkem a vyberte „Aktualizovat pole“. Aspose.Words for Java aktualizuje obsah na základě jakýchkoli změn v záhlaví vašeho dokumentu.
 
 ### Mohu vygenerovat více TOC v jednom dokumentu?
 

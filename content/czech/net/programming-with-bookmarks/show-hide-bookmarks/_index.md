@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Krok 2: Zobrazte nebo skryjte konkrétní záložku
 
- Používáme`ShowHideBookmarkedContent`funkce pro zobrazení nebo skrytí konkrétní záložky v dokumentu. Tato funkce bere jako parametry dokument, název záložky a boolean označující, zda se má záložka zobrazit nebo skrýt:
+ Používáme`ShowHideBookmarkedContent` funkce pro zobrazení nebo skrytí konkrétní záložky v dokumentu. Tato funkce bere jako parametry dokument, název záložky a boolean označující, zda se má záložka zobrazit nebo skrýt:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
@@ -128,7 +128,7 @@ Odpověď: Ano, poskytnutý kód funguje s různými formáty dokumentů Word po
 
 #### Otázka: Mohu použít podmínky k zobrazení nebo skrytí záložek na základě hodnot slučovacích polí v dokumentu?
 
- Odpověď: Ano, můžete použít podmínky a sloučit hodnoty polí k určení, zda má být záložka zobrazena nebo skryta. Kód si můžete přizpůsobit`ShowHideBookmarkedContent` funkce zohlednit vhodné podmínky a hodnoty.
+ Odpověď: Ano, můžete použít podmínky a sloučit hodnoty polí k určení, zda se má záložka zobrazit nebo skrýt. Kód si můžete přizpůsobit`ShowHideBookmarkedContent` funkce zohlednit vhodné podmínky a hodnoty.
 
 #### Otázka: Jak mohu odstranit záložku v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 

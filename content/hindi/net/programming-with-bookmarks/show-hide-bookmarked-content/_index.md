@@ -2,176 +2,156 @@
 title: Word दस्तावेज़ में बुकमार्क की गई सामग्री छिपाएँ दिखाएँ
 linktitle: Word दस्तावेज़ में बुकमार्क की गई सामग्री छिपाएँ दिखाएँ
 second_title: Aspose.Words दस्तावेज़ प्रोसेसिंग एपीआई
-description: .NET के लिए Aspose.Words का उपयोग करके वर्ड दस्तावेज़ में बुकमार्क सामग्री को दिखाना या छिपाना सीखें।
+description: इस व्यापक चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में बुकमार्क की गई सामग्री को गतिशील रूप से दिखाने या छिपाने का तरीका जानें।
 type: docs
 weight: 10
 url: /hi/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-इस लेख में, हम .NET लाइब्रेरी के लिए Aspose.Words में शो हाइड बुकमार्क कंटेंट फ़ंक्शन का उपयोग करने के तरीके को समझने के लिए उपरोक्त C# स्रोत कोड का पता लगाएंगे। यह सुविधा आपको डेटा मर्ज करते समय एक विशिष्ट स्थिति के आधार पर वर्ड दस्तावेज़ में बुकमार्क की सामग्री को दिखाने या छिपाने की अनुमति देती है।
+## परिचय
+
+सुनो! क्या आपने कभी कुछ शर्तों के आधार पर किसी Word दस्तावेज़ में विशिष्ट सामग्री की दृश्यता को नियंत्रित करना चाहा है? .NET के लिए Aspose.Words के साथ, आप कोड की कुछ पंक्तियों के साथ बुकमार्क की गई सामग्री को गतिशील रूप से दिखा या छिपा सकते हैं। इस ट्यूटोरियल में, मैं आपको चरण-दर-चरण प्रक्रिया के बारे में बताऊंगा, यह सुनिश्चित करते हुए कि आप कोड के प्रत्येक भाग को समझें। अंत तक, आप Word दस्तावेज़ों में बुकमार्क में हेरफेर करने में माहिर हो जायेंगे। आएँ शुरू करें!
 
 ## आवश्यक शर्तें
 
-- C# भाषा का बुनियादी ज्ञान।
-- Aspose.Words लाइब्रेरी के साथ .NET विकास वातावरण स्थापित।
+इससे पहले कि हम ट्यूटोरियल में उतरें, आइए सुनिश्चित करें कि आपके पास वह सब कुछ है जो आपको चाहिए:
 
-## चरण 1: बुकमार्क प्राप्त करना
+1. C# का बुनियादी ज्ञान: आपको C# सिंटैक्स और अवधारणाओं के साथ सहज होना चाहिए।
+2.  .NET के लिए Aspose.Words: इसे डाउनलोड करें[यहाँ](https://releases.aspose.com/words/net/) . यदि आप खरीदारी के लिए तैयार नहीं हैं, तो आप इससे शुरुआत कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/).
+3. विजुअल स्टूडियो: कोई भी नवीनतम संस्करण काम करेगा, लेकिन नवीनतम संस्करण का उपयोग करने की अनुशंसा की जाती है।
+4. .NET फ्रेमवर्क: सुनिश्चित करें कि यह आपकी मशीन पर स्थापित है।
 
- हम उपयोग करते हैं`Bookmarks` विशिष्ट बुकमार्क प्राप्त करने के लिए दस्तावेज़ श्रेणी की संपत्ति जिस पर हम सामग्री को दिखाना या छिपाना चाहते हैं:
+आरंभ करने के लिए तैयार हैं? महान! आइए आवश्यक नामस्थान आयात करके शुरुआत करें।
+
+## नामस्थान आयात करें
+
+.NET के लिए Aspose.Words का उपयोग करने के लिए, हमें आवश्यक नेमस्पेस आयात करने की आवश्यकता है। यह चरण सुनिश्चित करता है कि हमारे द्वारा उपयोग की जाने वाली सभी कक्षाओं और विधियों तक हमारी पहुंच हो।
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## चरण 2: मर्ज फ़ील्ड सम्मिलित करना
+ये नामस्थान Word दस्तावेज़ों के साथ काम करने और उनकी सामग्री में हेरफेर करने के लिए महत्वपूर्ण हैं।
 
- हम एक दस्तावेज़ निर्माता का उपयोग करते हैं`DocumentBuilder` आवश्यक मर्ज फ़ील्ड सम्मिलित करने के लिए। ये मर्ज फ़ील्ड के मान के आधार पर बुकमार्क सामग्री को दिखाने या छिपाने के लिए एक शर्त निर्धारित करेंगे`showHide` चर:
+## चरण 1: दस्तावेज़ स्थापित करना
+
+सबसे पहले, आइए एक नया Word दस्तावेज़ और एक दस्तावेज़ बिल्डर बनाएँ। दस्तावेज़ निर्माता हमें दस्तावेज़ के भीतर सामग्री को आसानी से जोड़ने और हेरफेर करने में मदद करता है।
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## चरण 3: बुकमार्क सामग्री को स्थानांतरित करना
+इस चरण में, हम एक नया दस्तावेज़ और एक दस्तावेज़ निर्माता प्रारंभ करते हैं। यह आगे के संचालन के लिए हमारे वातावरण को तैयार करता है।
 
-हम बुकमार्क की सामग्री को लूप करते हैं और उसे घुमाते हैं ताकि वह दिखाई दे
+## चरण 2: बुकमार्क की गई सामग्री जोड़ना
 
-बुकमार्क से पहले जारी करें। यह निर्दिष्ट स्थिति के आधार पर सामग्री को दिखाने या छिपाने को नियंत्रित करेगा:
+इसके बाद, हम दस्तावेज़ में कुछ सामग्री जोड़ेंगे और उसके चारों ओर एक बुकमार्क बनाएंगे। यह बुकमार्क हमें सामग्री को पहचानने और उसमें हेरफेर करने में मदद करेगा।
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ यहां, हम बुकमार्क की गई सामग्री से पहले और बाद में कुछ टेक्स्ट जोड़ते हैं।`StartBookmark` और`EndBookmark` विधियाँ बुकमार्क की सीमाओं को परिभाषित करती हैं।
+
+## चरण 3: एक सशर्त फ़ील्ड सम्मिलित करना
+
+बुकमार्क की गई सामग्री की दृश्यता को नियंत्रित करने के लिए, हम एक सशर्त फ़ील्ड का उपयोग करेंगे। यह फ़ील्ड एक शर्त की जांच करेगी और तदनुसार सामग्री को प्रदर्शित या छुपाएगी।
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+इस चरण में, हम एक IF फ़ील्ड सम्मिलित करते हैं जो बुकमार्क के मान की जाँच करता है। यदि मान "सत्य" है, तो यह "दृश्यमान" प्रदर्शित करेगा; अन्यथा, यह "छिपा हुआ" प्रदर्शित करेगा।
+
+## चरण 4: नोड्स को पुनर्व्यवस्थित करना
+
+इसके बाद, हमें यह सुनिश्चित करने के लिए नोड्स को पुनर्व्यवस्थित करने की आवश्यकता है कि बुकमार्क की गई सामग्री पर सशर्त तर्क सही ढंग से लागू होता है।
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## चरण 4: शेष बुकमार्क सामग्री को स्थानांतरित करना
-
-हम बुकमार्क के अंतिम नोड को सम्मिलन बिंदु के रूप में उपयोग करते हुए, बुकमार्क के बाद शेष बुकमार्क सामग्री को स्थानांतरित करते हैं:
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## चरण 5: मर्ज करना
+यहां, हम यह सुनिश्चित करने के लिए नोड्स को चारों ओर घुमाते हैं कि स्थिति बुकमार्क की गई सामग्री को ठीक से शामिल करती है।
 
- हम उपयोग करते हैं`Execute` दस्तावेज़ की विधि`s `मेल मर्ज करें` object to execute the merge using the bookmark name and the value of the `showHide` वैरिएबल:
+## चरण 5: मेल मर्ज निष्पादित करना
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### .NET के लिए Aspose.Words का उपयोग करके बुकमार्क की गई सामग्री को छुपाने के लिए उदाहरण स्रोत कोड
-
-.NET के लिए Aspose.Words का उपयोग करके बुकमार्क सामग्री को दिखाने या छिपाने के लिए स्रोत कोड का पूरा उदाहरण यहां दिया गया है:
+अंत में, हम बुकमार्क का मूल्य निर्धारित करने और यह निर्धारित करने के लिए एक मेल मर्ज निष्पादित करेंगे कि सामग्री को दिखाया जाना चाहिए या छिपाया जाना चाहिए।
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MERGEFIELD बुकमार्क}" = "सही" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+यह चरण बुकमार्क मान को "सही" पर सेट करता है, जो हमारी स्थिति के आधार पर सामग्री को दृश्यमान बना देगा।
+
+## चरण 6: दस्तावेज़ सहेजना
+
+सभी जोड़तोड़ के बाद, अंतिम चरण संशोधित दस्तावेज़ को सहेजना है।
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+यहां, हम परिवर्तनों को इंगित करने के लिए दस्तावेज़ को एक वर्णनात्मक फ़ाइल नाम के साथ सहेजते हैं।
 
 ## निष्कर्ष
 
-इस आलेख में, हमने .NET के लिए Aspose.Words की शो हाइड बुकमार्क सामग्री सुविधा का उपयोग करने के तरीके को समझने के लिए C# स्रोत कोड की खोज की। हमने डेटा मर्ज करते समय एक विशिष्ट स्थिति के आधार पर बुकमार्क की सामग्री को दिखाने या छिपाने के लिए चरण-दर-चरण मार्गदर्शिका का पालन किया है।
+ और बस! आपने .NET के लिए Aspose.Words का उपयोग करके किसी Word दस्तावेज़ में बुकमार्क की गई सामग्री को दिखाना या छिपाना सफलतापूर्वक सीख लिया है। इस ट्यूटोरियल में दस्तावेज़ बनाना, बुकमार्क जोड़ना, सशर्त फ़ील्ड सम्मिलित करना, नोड्स को पुनर्व्यवस्थित करना और मेल मर्ज निष्पादित करना शामिल है। Aspose.Words ढेर सारी सुविधाएं प्रदान करता है, इसलिए इसे एक्सप्लोर करने में संकोच न करें[एपीआई दस्तावेज़ीकरण](https://reference.aspose.com/words/net/) अधिक उन्नत क्षमताओं के लिए.
 
-### वर्ड दस्तावेज़ में बुकमार्क की गई सामग्री को दिखाने, छिपाने के लिए अक्सर पूछे जाने वाले प्रश्न
+## पूछे जाने वाले प्रश्न
 
-#### प्रश्न: क्या मैं एक ही दस्तावेज़ में एकाधिक बुकमार्क के लिए एक ही शर्त का उपयोग कर सकता हूँ?
+### 1. .NET के लिए Aspose.Words क्या है?
 
-उ: हां, आप एक ही दस्तावेज़ में एकाधिक बुकमार्क के लिए एक ही शर्त का उपयोग कर सकते हैं। बस प्रत्येक बुकमार्क के लिए चरण 2-5 दोहराएँ, बुकमार्क का नाम और वैकल्पिक रूप से उसका मान समायोजित करें`showhide` आवश्यकतानुसार परिवर्तनशील।
+.NET के लिए Aspose.Words एक शक्तिशाली लाइब्रेरी है जो डेवलपर्स को Word दस्तावेज़ों को प्रोग्रामेटिक रूप से बनाने, संशोधित करने और परिवर्तित करने की अनुमति देती है। दस्तावेज़ स्वचालन कार्यों के लिए इसका व्यापक रूप से उपयोग किया जाता है।
 
-#### प्रश्न: मैं बुकमार्क सामग्री को दिखाने या छिपाने के लिए और शर्तें कैसे जोड़ सकता हूं?
+### 2. क्या मैं .NET के लिए Aspose.Words का निःशुल्क उपयोग कर सकता हूँ?
 
- उ: अधिक शर्तें जोड़ने के लिए, आप तार्किक ऑपरेटरों का उपयोग कर सकते हैं जैसे`AND` और`OR` चरण 2 में मर्ज फ़ील्ड डालने के लिए कोड में। अतिरिक्त शर्तें जोड़ने के लिए निम्नलिखित कोड में स्थिति संपादित करें:
+ आप a का उपयोग करके .NET के लिए Aspose.Words आज़मा सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/). दीर्घकालिक उपयोग के लिए, आपको लाइसेंस खरीदने की आवश्यकता होगी।
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. मैं बुकमार्क के अन्य गुणों को कैसे संशोधित करूं?
 
-#### प्रश्न: मैं .NET के लिए Aspose.Words का उपयोग करके किसी Word दस्तावेज़ में बुकमार्क कैसे हटा सकता हूं?
+ Aspose.Words आपको किसी बुकमार्क के विभिन्न गुणों, जैसे उसका टेक्स्ट और स्थान, में हेरफेर करने की अनुमति देता है। को देखें[एपीआई दस्तावेज़ीकरण](https://reference.aspose.com/words/net/) विस्तृत निर्देशों के लिए.
 
- उ: .NET के लिए Aspose.Words का उपयोग करके किसी Word दस्तावेज़ में बुकमार्क हटाने के लिए, आप इसका उपयोग कर सकते हैं`Remove` से विधि`Bookmarks` दस्तावेज़ श्रेणी का संग्रह. किसी विशिष्ट बुकमार्क को हटाने के लिए नमूना कोड यहां दिया गया है:
+### 4. मुझे .NET के लिए Aspose.Words के लिए समर्थन कैसे मिलेगा?
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+पर जाकर समर्थन प्राप्त कर सकते हैं[Aspose समर्थन मंच](https://forum.aspose.com/c/words/8).
 
-#### प्रश्न: क्या Aspose.Words लाइब्रेरी मुफ़्त है?
+### 5. क्या मैं .NET के लिए Aspose.Words के साथ अन्य प्रकार की सामग्री में हेरफेर कर सकता हूँ?
 
- उत्तर: Aspose.Words लाइब्रेरी एक व्यावसायिक लाइब्रेरी है और इसे आपके प्रोजेक्ट में उपयोग करने के लिए एक वैध लाइसेंस की आवश्यकता होती है। आप देख सकते हैं[.NET API संदर्भों के लिए Aspose.Words](https://reference.aspose.com/words/net/) लाइसेंसिंग विकल्पों और मूल्य निर्धारण के बारे में अधिक जानने के लिए।
-
-#### प्रश्न: क्या .NET में वर्ड दस्तावेज़ों के साथ वर्ड प्रोसेसिंग के लिए अन्य लाइब्रेरी उपलब्ध हैं?
-
-उ: हां, .NET में वर्ड दस्तावेज़ों के साथ वर्ड प्रोसेसिंग के लिए अन्य लाइब्रेरी उपलब्ध हैं, जैसे ओपन एक्सएमएल एसडीके और जेमबॉक्स.डॉक्यूमेंट। आप अपनी विशिष्ट आवश्यकताओं और प्राथमिकताओं के आधार पर Aspose.Words के विकल्प के रूप में इन पुस्तकालयों का पता लगा सकते हैं।
+हां, .NET के लिए Aspose.Words टेक्स्ट, छवियों, तालिकाओं और बहुत कुछ सहित विभिन्न प्रकार की सामग्री हेरफेर का समर्थन करता है।

@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Langkah 2: Dapatkan baris induk dari bookmark
 
- Kami menggunakan`GetAncestor` metode untuk mengambil baris induk dari node awal dan akhir bookmark:
+ Kami menggunakan`GetAncestor` Metode untuk mengambil baris induk dari node awal dan akhir bookmark:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Hozzáfűzés oldalszám-konverzióval
+### Hozzáfűzése oldalszám-konverziókkal
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -132,7 +132,7 @@ Az Aspose.Words for Java rugalmas és hatékony eszközöket biztosít a dokumen
 
 ### Mi az a Smart Style viselkedés?
 
- A Smart Style Behavior segít megőrizni a konzisztens stílusokat a dokumentumok csatolásakor. Használd vele`ImportFormatOptions` jobb eredmények érdekében.
+ A Smart Style Behavior segít megőrizni a konzisztens stílusokat a dokumentumok csatolásakor. Használd vele`ImportFormatOptions` a jobb eredmények érdekében.
 
 ### Hogyan kezelhetem a szövegdobozokat dokumentumok csatolásakor?
 
@@ -140,4 +140,4 @@ Készlet`importFormatOptions.setIgnoreTextBoxes(false)` szövegdobozok beilleszt
 
 ### Mi a teendő, ha szeretném a fejléceket és a lábléceket összekapcsolni/leválasztani a dokumentumok között?
 
- A fejléceket és lábléceket összekapcsolhatja a következővel`linkToPrevious(true)` vagy leválasztja őket`linkToPrevious(false)` szükség szerint.
+ A fejléceket és lábléceket összekapcsolhatja a következővel`linkToPrevious(true)` vagy megszünteti a kapcsolatukat`linkToPrevious(false)` szükség szerint.

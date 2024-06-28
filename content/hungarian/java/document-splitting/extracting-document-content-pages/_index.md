@@ -104,7 +104,7 @@ for (int i = 0; i < pageCount; i++) {
 
 ### Szöveg formázása és stílusozása
 
-A kivont szöveghez formázást és stílust alkalmazhat, ugyanúgy, mint bármely más Java szövegnél. Például a szöveg félkövérré tételéhez:
+A kivont szöveghez formázást és stílust alkalmazhat, ugyanúgy, mint bármely más Java szövegnél. Például a szöveg félkövérre való szedéséhez:
 
 ```java
 // Hozzon létre egy DocumentBuilder programot

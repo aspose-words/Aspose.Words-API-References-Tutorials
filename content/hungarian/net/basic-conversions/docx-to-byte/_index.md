@@ -78,11 +78,11 @@ DOCX-fájlok bájtokká alakításához különböző szoftvereszközöket vagy 
 
 #### Milyen korlátai vannak az átalakítási folyamatnak?
 
-Az átalakítási folyamat korlátai a használt eszköztől vagy könyvtártól függenek. Egyes eszközök korlátozásokat tartalmazhatnak a bemeneti dokumentum méretével vagy összetettségével kapcsolatban. Fontos, hogy olyan eszközt válasszunk, amely képes kezelni az átalakítási feladat követelményeit.
+Az átalakítási folyamat korlátai a használt eszköztől vagy könyvtártól függenek. Egyes eszközökhöz kapcsolódó korlátozások vonatkozhatnak a bemeneti dokumentum méretére vagy összetettségére. Fontos, hogy olyan eszközt válasszunk, amely képes kezelni az átalakítási feladat követelményeit.
 
 ### Megőrizhetem az eredeti dokumentum formázását?
 
-Igen, a megfelelő eszközzel megőrizheti az eredeti dokumentum formázását a konvertálási folyamat során. Az Aspose.Words for .NET például teljes mértékben támogatja a formázást, a stílusokat és a DOCX-fájl egyéb elemeit a konvertált bájtdokumentumban.
+Igen, a megfelelő eszközzel megőrizheti az eredeti dokumentum formázását a konvertálási folyamat során. Az Aspose.Words for .NET például teljes mértékben támogatja a DOCX-fájl formázásának, stílusainak és egyéb elemeinek karbantartását az átalakított bájtdokumentumban.
 
 ### Megbízható eszköz az Aspose a DOCX-bájtok konvertálásához?
 

@@ -146,6 +146,6 @@ Sì, puoi scorrere i commenti in un documento e recuperare le loro proprietà us
 
  Sì, puoi controllare la visibilità dei commenti utilizzando il file`comment.visible` proprietà in Aspose.Words per Python.
 
-### Aspose.Words per Python supporta l'aggiunta di commenti a intervalli di testo specifici?
+### Aspose.Words per Python supporta l'aggiunta di commenti a specifici intervalli di testo?
 
 Assolutamente, puoi aggiungere commenti a specifici intervalli di testo all'interno di un documento utilizzando Aspose.Words per la ricca API di Python.

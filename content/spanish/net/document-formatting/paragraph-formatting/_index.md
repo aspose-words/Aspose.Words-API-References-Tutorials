@@ -77,7 +77,7 @@ Con este código podrás aplicar diferentes formatos a tus párrafos usando Aspo
 
 ## Conclusión
 
-En este tutorial, exploramos el proceso de uso de la función de formato de párrafo en un documento de Word con Aspose.Words para .NET. Si sigue los pasos descritos, podrá formatear eficazmente sus párrafos, ajustando su alineación, sangría y espaciado para crear documentos visualmente atractivos y bien estructurados.
+En este tutorial, exploramos el proceso de uso de la función de formato de párrafo en un documento de Word con Aspose.Words para .NET. Si sigue los pasos descritos, podrá dar formato a sus párrafos de manera efectiva, ajustando su alineación, sangría y espaciado para crear documentos visualmente atractivos y bien estructurados.
 
 ### Preguntas frecuentes
 

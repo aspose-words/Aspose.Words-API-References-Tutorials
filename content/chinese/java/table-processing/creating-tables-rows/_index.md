@@ -28,7 +28,7 @@ public class TableCreation {
         //创建一个新文档
         Document doc = new Document();
         
-        //创建一个 3 行 3 列的表
+        //创建一个 3 行 3 列的表。
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         //用数据填充表格单元格

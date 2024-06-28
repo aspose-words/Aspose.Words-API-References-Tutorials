@@ -24,11 +24,11 @@ Az Aspose.Words for Java segítségével dinamikus dokumentumokat hozhat létre 
 
 ## A dokumentumfeldolgozási készségek fejlesztése
 
-Ha követi ezeket az oktatóanyagokat, akkor nemcsak a dokumentumelemek kezelésének alapjait ismerheti meg, hanem mélyrehatóan elmerülhet az olyan haladó témákban is, mint a stílus, a dokumentumvédelem, a körlevél és egyebek. Az itt megszerzett tudás képessé teszi Önt arra, hogy a legösszetettebb dokumentumfeldolgozási feladatokat is könnyedén meg tudja oldani.
+Ha követi ezeket az oktatóanyagokat, nemcsak a dokumentumelemek kezelésének alapjait ismerheti meg, hanem mélyrehatóan elmerülhet olyan haladó témákban is, mint a stílus, a dokumentumvédelem, a körlevél és egyebek. Az itt megszerzett tudás képessé teszi Önt arra, hogy a legösszetettebb dokumentumfeldolgozási feladatokat is könnyedén meg tudja oldani.
 
 ## Kezdje el még ma
 
- Készen áll az indulásra? Irány oda[Aspose.Words for Java API dokumentáció](https://reference.aspose.com/words/java/) hogy hozzáférjen az átfogó dokumentációhoz. Részletes magyarázatokat, kódmintákat és API-referenciákat talál, amelyek végigvezetik Önt a dokumentumelem-kezelés minden aspektusán.
+ Készen áll az indulásra? Irány a[Aspose.Words for Java API dokumentáció](https://reference.aspose.com/words/java/) hogy hozzáférjen az átfogó dokumentációhoz. Részletes magyarázatokat, kódmintákat és API-referenciákat talál, amelyek végigvezetik Önt a dokumentumelem-kezelés minden aspektusán.
 
 Összefoglalva, a dokumentumelem-kezelés elsajátítása az Aspose.Words for Java használatával értékes készség minden dokumentummal dolgozó Java-fejlesztő számára. Ezek az oktatóanyagok világos és strukturált utat kínálnak ahhoz, hogy jártassá váljon ezen a területen. Tegye fel az ingujját, merüljön el az oktatóanyagokban, és aknázza ki az Aspose.Words for Java teljes potenciálját dokumentumfeldolgozási projektjeiben.
 
@@ -46,13 +46,13 @@ Ismerje meg a lábjegyzetek és végjegyzetek hatékony használatát az Aspose.
 ### [Űrlapmezők használata az Aspose.Words for Java programban](./using-form-fields/)
 "Tanulja meg az Aspose.Words for Java használatát űrlapmezőkkel rendelkező interaktív Word-dokumentumok létrehozásához. Kezdje el most!"
 ### [A HarfBuzz használata az Aspose.Words for Java-ban](./using-harfbuzz/)
-Tanulja meg a HarfBuzz használatát az Aspose.Words for Java speciális szövegformázásához. Ezzel a lépésenkénti útmutatóval javíthatja a szöveg megjelenítését összetett szkriptekben.
+Tanulja meg a HarfBuzz használatát az Aspose.Words for Java speciális szövegformázásához. Ezzel a lépésenkénti útmutatóval javíthatja a szövegmegjelenítést összetett szkriptekben.
 ### [Fejlécek és láblécek használata az Aspose.Words for Java-ban](./using-headers-and-footers/)
 Ismerje meg lépésről lépésre a fejlécek és láblécek használatát az Aspose.Words for Java programban. Hozzon létre professzionális dokumentumokat könnyedén.
 ### [Elválasztás használata az Aspose.Words for Java programban](./using-hyphenation/)
 Ezzel az átfogó oktatóanyaggal megtudhatja, hogyan használhatja hatékonyan az elválasztást az Aspose.Words for Java programban. Növelje a dokumentumok olvashatóságát még ma!
 ### [Listák használata az Aspose.Words for Java-ban](./using-lists/)
-Tanulja meg a listák használatát az Aspose.Words for Java programban ezzel a lépésről lépésre mutató oktatóanyaggal. Hatékonyan rendszerezze és formázza dokumentumait.
+Tanulja meg a listák használatát az Aspose.Words for Java programban ezzel a lépésenkénti oktatóanyaggal. Hatékonyan rendszerezze és formázza dokumentumait.
 ### [Markdown használata az Aspose.Words for Java-ban](./using-markdown/)
 Tanulja meg a Markdown használatát az Aspose.Words for Java programban ezzel a lépésről lépésre mutató oktatóanyaggal. Könnyedén hozhat létre, alakíthat ki és menthet Markdown dokumentumokat.
 ### [Csomópontok használata az Aspose.Words for Java-ban](./using-nodes/)

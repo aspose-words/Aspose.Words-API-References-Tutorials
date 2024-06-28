@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/compare-documents/compare-options/
 ---
-I den här handledningen kommer vi att förklara hur man använder funktionen Jämför alternativ i word-dokument med Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och tillämpa ändringarna.
+den här handledningen kommer vi att förklara hur man använder funktionen Jämför alternativ i word-dokument med Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och tillämpa ändringarna.
 
 ## Steg 1: Jämför dokument med anpassade alternativ
 

@@ -72,4 +72,4 @@ Este foi um exemplo de código-fonte para especificar a localização no nível 
 
 #### P: Como posso obter a localidade usada atualmente para um campo no Aspose.Words for .NET?
 
- R: Para obter a localidade usada atualmente para um campo no Aspose.Words for .NET, você pode usar o campo`Field.LocaleId` propriedade. Isso permitirá que você obtenha o identificador de localidade associado ao campo.
+ R: Para obter a localidade usada atualmente para um campo no Aspose.Words for .NET, você pode usar o campo`Field.LocaleId`propriedade. Isso permitirá que você obtenha o identificador de localidade associado ao campo.

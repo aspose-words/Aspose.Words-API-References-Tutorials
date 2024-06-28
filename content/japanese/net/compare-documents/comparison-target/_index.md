@@ -90,9 +90,9 @@ A: Aspose.Words for .NET で比較ターゲットを使用するには、次の�
 1. Aspose.Words ライブラリを使用して開発環境をセットアップします。
 2. Aspose.Words を参照して、必要なアセンブリをプロジェクトに追加します。
 3. を使用して、比較するドキュメントを初期化します。`Document`クラスまたは`DocumentBuilder`クラス。
-4. を作成して比較オプションを構成します。`CompareOptions`オブジェクトと設定プロパティなど`IgnoreFormatting`そして`Target`（例えば、`ComparisonTargetType.New`比較対象用）。
+4. を作成して比較オプションを構成します。`CompareOptions`オブジェクトと設定プロパティなど`IgnoreFormatting`そして`Target`（例えば。、`ComparisonTargetType.New`比較対象用）。
 5. 使用`Compare`一方のドキュメントのメソッドを、もう一方のドキュメントと`CompareOptions`オブジェクトをパラメータとして指定します。このメソッドはドキュメントを比較し、最初のドキュメントの変更を保存します。
 
-####  Q: その目的は何ですか?`Target` property in the `CompareOptions` class?
+####  Q：その目的は何ですか？`Target` property in the `CompareOptions` class?
 
  A:`Target`のプロパティ`CompareOptions`クラスを使用すると、比較対象を指定できます。これは、Microsoft Word の [ドキュメントの比較] ダイアログ ボックスの [変更箇所を表示] オプションに似ています。ターゲットを設定できるのは、`ComparisonTargetType.New`新しいドキュメントの変更を表示するには、`ComparisonTargetType.Current`現在のドキュメントの変更を表示する、または`ComparisonTargetType.Formatting`書式の変更のみを表示します。

@@ -39,7 +39,7 @@ FormFieldCollection formFields = doc.Range.FormFields;
 foreach (FormField formField in formFields)
 {
     // เข้าถึงและจัดการฟิลด์แบบฟอร์มแต่ละฟิลด์
-    // ...
+    // -
 }
 ```
 
@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 FormFieldCollection formFields = doc.Range.FormFields;
 
 // เข้าถึงและจัดการฟิลด์แบบฟอร์มตามต้องการ
-// ...
+// -
 
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```

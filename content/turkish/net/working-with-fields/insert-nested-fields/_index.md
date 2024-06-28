@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Adım 5: Yuvalanmış alanı ekleme
 
- DocumentBuilder'ı kullanıyoruz`InsertField()`altbilgiye iç içe geçmiş bir alan ekleme yöntemi.
+ DocumentBuilder'ı kullanıyoruz`InsertField()` altbilgiye iç içe geçmiş bir alan ekleme yöntemi.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");

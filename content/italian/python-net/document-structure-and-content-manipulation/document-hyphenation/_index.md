@@ -63,7 +63,7 @@ L'impaginazione garantisce che il contenuto sia suddiviso in pagine in modo appr
 
 ### Interruzioni di riga e di pagina
 
-A volte è necessario un maggiore controllo sul punto in cui si interrompe una riga o una pagina. Aspose.Words fornisce opzioni per inserire interruzioni di riga esplicite o forzare una nuova pagina quando necessario.
+volte è necessario un maggiore controllo sul punto in cui si interrompe una riga o una pagina. Aspose.Words fornisce opzioni per inserire interruzioni di riga esplicite o forzare una nuova pagina quando necessario.
 
 ## Implementazione della sillabazione con Aspose.Words per Python
 
@@ -126,4 +126,4 @@ Per evitare vedove e orfani, utilizzare le opzioni fornite da Aspose.Words per P
 
 ### Dove posso accedere alla documentazione di Aspose.Words per Python?
 
- Puoi accedere alla documentazione dell'API all'indirizzo[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+Puoi accedere alla documentazione dell'API all'indirizzo[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

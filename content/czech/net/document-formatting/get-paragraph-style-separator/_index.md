@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/document-formatting/get-paragraph-style-separator/
 ---
-V tomto tutoriálu vás provedeme tím, jak používat funkci Získat oddělovač stylu odstavce ve funkci dokumentu aplikace Word s Aspose.Words pro .NET. Chcete-li porozumět zdrojovému kódu a použít změny, postupujte podle následujících kroků.
+V tomto tutoriálu vás provedeme tím, jak používat funkci Získat oddělovač stylu odstavců ve funkci dokumentu aplikace Word s Aspose.Words pro .NET. Chcete-li porozumět zdrojovému kódu a použít změny, postupujte podle následujících kroků.
 
 ## Krok 1: Načtení dokumentu
 
@@ -71,7 +71,7 @@ Odpověď: Ne, Aspose.Words for .NET není jediným dostupným řešením pro pr
 
 #### Otázka: Mohu použít funkci "Získat oddělovač stylu odstavce" s jinými programovacími jazyky?
 
-Odpověď: Ano, můžete použít funkci "Získat oddělovač stylu odstavce" s jinými programovacími jazyky podporovanými Aspose.Words, jako je Java, Python nebo C++. Aspose.Words nabízí řadu jazykových rozhraní API a knihoven pro usnadnění zpracování dokumentů na více platformách.
+Odpověď: Ano, funkci "Získat oddělovač stylu odstavce" můžete použít s jinými programovacími jazyky podporovanými Aspose.Words, jako je Java, Python nebo C.++. Aspose.Words nabízí řadu jazykových rozhraní API a knihoven pro usnadnění zpracování dokumentů na více platformách.
 
 #### Otázka: Jak mohu získat přístup k dokumentaci Aspose.Words for .NET?
 

@@ -11,7 +11,7 @@ Aspose.Words für Python bietet eine Reihe von Tutorials, die Entwicklern die Do
 
 ## Python-Dokument-API für nahtlose Dokumentenverwaltung
 
-Entdecken Sie die Leistungsfähigkeit der Python Document API mit Aspose.Words-Tutorials. Entwickler lernen, Word-Dokumente programmgesteuert zu erstellen, zu ändern und zu verwalten. Die API ermöglicht die Anpassung der Formatierung, das Einfügen von Inhalten und das Zusammenführen von Dokumenten und optimiert so die Dokumentenverwaltungsaufgaben.
+Entdecken Sie die Leistungsfähigkeit der Python Document API mit Aspose.Words-Tutorials. Entwickler lernen, Word-Dokumente programmgesteuert zu erstellen, zu ändern und zu verwalten. Die API ermöglicht die Anpassung der Formatierung, das Einfügen von Inhalten und das Zusammenführen von Dokumenten sowie das Streamen von Dokumentenverwaltungsaufgaben.
 
 ## Automatisieren Sie die Dokumentenverarbeitung mit Python
 

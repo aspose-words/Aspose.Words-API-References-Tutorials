@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
 
-Aşağıda, Aspose.Words for .NET kullanılarak bir OLE paketiyle bir OLE nesnesinin word'e nasıl ekleneceğini gösteren, C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır.
+Aşağıda, Aspose.Words for .NET kullanarak bir OLE paketiyle bir OLE nesnesinin word'e nasıl ekleneceğini gösteren, C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır.
 
 ## 1. Adım: Gerekli referansları içe aktarın
 Başlamadan önce Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Buna Aspose.Words kütüphanesinin içe aktarılması ve gerekli ad alanlarının kaynak dosyanıza eklenmesi de dahildir.

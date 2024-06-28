@@ -21,7 +21,7 @@ Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Vora
 
 ## Schritt 1: Einrichten Ihres Java-Projekts
 
-Erstellen Sie zunächst ein neues Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in die Abhängigkeiten Ihres Projekts einbeziehen.
+Erstellen Sie zunächst ein neues Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in die Abhängigkeiten Ihres Projekts einschließen.
 
 ## Schritt 2: Aspose.Words initialisieren
 

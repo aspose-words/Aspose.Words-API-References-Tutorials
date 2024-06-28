@@ -197,7 +197,7 @@ Igen, módosíthatja a vonalkód színeit az előtér és a háttér színének 
 
 ### Mely vonalkódtípusokat támogatja az Aspose.Words for Java?
 
-Az Aspose.Words for Java különféle vonalkód-típusokat támogat, beleértve a QR-kódokat, CODE128, CODE39, EAN8, EAN13, UPCA, UPCE, ITF14 stb. Kiválaszthatja az alkalmazás igényeinek megfelelő vonalkód típust.
+Az Aspose.Words for Java különféle vonalkódtípusokat támogat, beleértve a QR-kódokat, CODE128, CODE39, EAN8, EAN13, UPCA, UPCE, ITF14 stb. Kiválaszthatja az alkalmazás igényeinek megfelelő vonalkód típust.
 
 ### Hogyan integrálhatom a generált vonalkódot a Word dokumentumomba?
 

@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### तालिकाएँ बनाना
 
 ```java
-// 3 पंक्तियों और 4 स्तंभों वाली एक तालिका बनाएं
+// 3 पंक्तियों और 4 स्तंभों वाली एक तालिका बनाएं।
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

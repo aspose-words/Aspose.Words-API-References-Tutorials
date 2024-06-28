@@ -2,94 +2,123 @@
 title: Ricevi notifiche sui caratteri
 linktitle: Ricevi notifiche sui caratteri
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come ricevere notifiche di caratteri mancanti o sostituiti quando si utilizza Aspose.Words per .NET.
+description: Scopri come ricevere notifiche di sostituzione dei caratteri in Aspose.Words per .NET con la nostra guida dettagliata. Assicurati che i tuoi documenti vengano visualizzati correttamente ogni volta.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
-In questo tutorial ti spiegheremo come ricevere notifiche sui caratteri durante l'utilizzo di Aspose.Words per .NET. Le notifiche sui caratteri ti consentono di rilevare e gestire i caratteri mancanti o sostituiti nei tuoi documenti. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
+
+Se hai mai riscontrato problemi con i caratteri che non vengono visualizzati correttamente nei tuoi documenti, non sei il solo. Gestire le impostazioni dei caratteri e ricevere notifiche sulla sostituzione dei caratteri può farti risparmiare un sacco di mal di testa. In questa guida completa alle notifiche, esploreremo come gestire i caratteri utilizzando Aspose.Words per .NET, assicurando che i tuoi documenti appaiano sempre al meglio.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere i seguenti elementi:
-- Una conoscenza pratica del linguaggio di programmazione C#
-- La libreria Aspose.Words per .NET installata nel tuo progetto
+
+Prima di entrare nei dettagli, assicurati di avere quanto segue:
+
+- Conoscenza di base di C#: la familiarità con la programmazione C# ti aiuterà a proseguire.
+-  Aspose.Words per .NET Library: scaricalo e installalo da[collegamento ufficiale per il download](https://releases.aspose.com/words/net/).
+- Ambiente di sviluppo: una configurazione come Visual Studio per scrivere ed eseguire il codice.
+-  Documento di esempio: disporre di un documento di esempio (ad es.`Rendering.docx`) pronto per testare le impostazioni del carattere.
+
+## Importa spazi dei nomi
+
+Per iniziare a lavorare con Aspose.Words, devi importare gli spazi dei nomi necessari nel tuo progetto. Ciò fornisce l'accesso alle classi e ai metodi di cui avrai bisogno.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+```
 
 ## Passaggio 1: definire la directory dei documenti
- Innanzitutto, devi impostare il percorso della directory sulla posizione del tuo documento Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
+
+Innanzitutto, specifica la directory in cui è archiviato il tuo documento. Questo è fondamentale per individuare il documento che desideri elaborare.
 
 ```csharp
-// Percorso della directory dei documenti
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Passaggio 2: caricare il documento e configurare le impostazioni del carattere
- Successivamente, caricheremo il documento utilizzando il file`Document` classe e configurare le impostazioni del carattere utilizzando il file`FontSettings` classe. Imposteremo il carattere predefinito da utilizzare in caso di caratteri mancanti.
-
-```csharp
-// Caricare il documento e configurare le impostazioni del carattere
-Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-```
-
-## Passaggio 3: imposta il gestore delle notifiche
-Successivamente, definiremo un gestore di notifiche implementando il file`IWarningCallback` interfaccia. Ciò ci consentirà di raccogliere avvisi sui caratteri durante il salvataggio del documento.
-
-```csharp
-// Definire il gestore delle notifiche
-HandleDocumentWarnings callback = new HandleDocumentWarnings();
-doc. WarningCallback = callback;
-```
-
-## Passaggio 4: applica le impostazioni dei caratteri e salva il documento
-Infine, applicheremo le impostazioni del carattere al documento e lo salveremo. Eventuali avvisi relativi ai caratteri verranno acquisiti dal gestore delle notifiche definito in precedenza.
-
-```csharp
-// Applica le impostazioni dei caratteri e salva il documento
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
-```
-
-### Codice sorgente di esempio per ricevere notifiche di caratteri utilizzando Aspose.Words per .NET 
-```csharp
-
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Passaggio 2: caricare il documento
+
+ Carica il tuo documento in un Aspose.Words`Document` oggetto. Ciò consente di manipolare il documento a livello di codice.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Passaggio 3: configura le impostazioni dei caratteri
+
+Ora, configura le impostazioni del carattere per specificare un carattere predefinito che Aspose.Words dovrebbe utilizzare se i caratteri richiesti non vengono trovati.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Possiamo scegliere il carattere predefinito da utilizzare in caso di caratteri mancanti.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-// Per i test imposteremo Aspose.Words per cercare i caratteri solo in una cartella che non esiste. Dal momento che Aspose.Words non lo farà
-// trova qualsiasi carattere nella directory specificata, durante il rendering i caratteri nel documento verranno sostituiti con quelli predefiniti
-// carattere specificato in FontSettings.DefaultFontName. Possiamo riprendere questa subordinazione utilizzando la nostra richiamata.
+
+// Imposta Aspose.Words per cercare i caratteri solo in una cartella inesistente
 fontSettings.SetFontsFolder(string.Empty, false);
-//Crea una nuova classe che implementa IWarningCallback che raccoglie tutti gli avvisi prodotti durante il salvataggio del documento.
+```
+
+## Passaggio 4: impostare la richiamata di avviso
+
+ Per acquisire e gestire gli avvisi di sostituzione dei caratteri, crea una classe che implementi il file`IWarningCallback` interfaccia. Questa classe registrerà tutti gli avvisi che si verificano durante l'elaborazione del documento.
+
+```csharp
+public class HandleDocumentWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        // Siamo interessati solo alla sostituzione dei caratteri.
+        if (info.WarningType == WarningType.FontSubstitution)
+        {
+            Console.WriteLine("Font substitution: " + info.Description);
+        }
+    }
+}
+```
+
+## Passaggio 5: assegnare le impostazioni di richiamata e carattere al documento
+
+Assegnare la richiamata di avviso e le impostazioni dei caratteri configurate al documento. Ciò garantisce che eventuali problemi relativi ai caratteri vengano acquisiti e registrati.
+
+```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
-
 ```
 
+## Passaggio 6: salva il documento
+
+Infine, salva il documento dopo aver applicato le impostazioni dei caratteri e gestito eventuali sostituzioni di caratteri. Salvalo in un formato a tua scelta; qui, lo salveremo come PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
+```
+
+Seguendo questi passaggi, hai configurato la tua applicazione per gestire correttamente le sostituzioni dei caratteri e ricevere notifiche ogni volta che si verifica una sostituzione.
+
 ## Conclusione
-In questo tutorial, abbiamo visto come ricevere notifiche sui caratteri durante l'utilizzo di Aspose.Words per .NET. Le notifiche sui caratteri ti consentono di rilevare e gestire i caratteri mancanti o sostituiti nei tuoi documenti. Utilizza questa funzione per garantire la coerenza dei caratteri nei tuoi documenti e intraprendere le azioni appropriate in caso di caratteri mancanti.
 
-### Domande frequenti
+Ora hai imparato il processo di ricezione delle notifiche per la sostituzione dei caratteri utilizzando Aspose.Words per .NET. Questa abilità ti aiuterà a garantire che i tuoi documenti appaiano sempre al meglio, anche quando i caratteri necessari non sono disponibili. Continua a sperimentare diverse impostazioni per sfruttare appieno la potenza di Aspose.Words.
 
-#### D: Come posso ricevere notifiche di caratteri mancanti in Aspose.Words?
+## Domande frequenti
 
- R: Per ricevere notifiche di caratteri mancanti in Aspose.Words, puoi utilizzare il`FontSettings` classe e il`FontSubstitutionCallback` evento. È possibile impostare un metodo di richiamata per ricevere una notifica quando vengono rilevati caratteri mancanti durante l'elaborazione dei documenti.
+### Q1: Posso specificare più caratteri predefiniti?
 
-#### D: Come posso gestire i caratteri mancanti nei miei documenti Word?
+No, puoi specificare solo un carattere predefinito per la sostituzione. Tuttavia, puoi configurare più origini di caratteri di fallback.
 
-R: Per gestire i caratteri mancanti nei tuoi documenti Word, puoi utilizzare diverse strategie. È possibile installare i caratteri mancanti nel sistema in cui si esegue l'applicazione Aspose.Words oppure è possibile sostituire i caratteri mancanti con caratteri alternativi disponibili.
+### Q2: Dove posso ottenere una prova gratuita di Aspose.Words per .NET?
 
-#### D: È possibile ricevere notifiche sui caratteri sostituiti in Aspose.Words?
+ È possibile scaricare una versione di prova gratuita da[Aspose la pagina di prova gratuita](https://releases.aspose.com/).
 
- R: Sì, è possibile ricevere notifiche sui caratteri sostituiti in Aspose.Words. Quando i caratteri vengono sostituiti durante l'elaborazione del documento, è possibile ricevere una notifica utilizzando il`FontSubstitutionCallback` evento e intraprendere le azioni appropriate per modificare l'aspetto del testo.
+###  Q3: Posso gestire altri tipi di avvisi con`IWarningCallback`?
 
-#### D: Come posso mantenere coerente l'aspetto del testo quando i caratteri vengono sostituiti in Aspose.Words?
+ Sì, il`IWarningCallback` l'interfaccia può gestire vari tipi di avvisi, non solo la sostituzione dei caratteri.
 
-R: Per mantenere l'uniformità dell'aspetto del testo quando i caratteri vengono sostituiti, puoi regolare le proprietà di formattazione del testo, come dimensione, stile e colore del carattere. Potresti anche prendere in considerazione l'utilizzo di caratteri sostitutivi visivamente simili ai caratteri originali.
+### Q4: Dove posso trovare supporto per Aspose.Words?
+
+ Visitare il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8) per assistenza.
+
+### Q5: È possibile ottenere una licenza temporanea per Aspose.Words?
+
+ Sì, puoi ottenere una licenza temporanea da[pagina della licenza temporanea](https://purchase.aspose.com/temporary-license/).

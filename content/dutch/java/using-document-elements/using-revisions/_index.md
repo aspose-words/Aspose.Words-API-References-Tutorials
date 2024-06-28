@@ -107,7 +107,7 @@ para.remove();
 // en wordt als revisie in Microsoft Word weergegeven, totdat we alle revisies accepteren of afwijzen.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// De paragraaf 'Revisie verwijderen' wordt verwijderd zodra we de wijzigingen accepteren.
+// De verwijderde revisieparagraaf wordt verwijderd zodra we de wijzigingen accepteren.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //was Is.Leeg

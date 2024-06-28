@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 #### Q: Aspose.Words で文末脚注のスタイルを設定するにはどうすればよいですか?
 
- A: Aspose.Words で文末脚注のスタイルを設定するには、`EndnoteOptions`クラスと`SeparatorNoteTextStyle`財産。このプロパティを使用して、文末脚注のフォント スタイル、サイズ、色などを指定できます。
+A: Aspose.Words で文末脚注のスタイルを設定するには、`EndnoteOptions`クラスと`SeparatorNoteTextStyle`財産。このプロパティを使用して、文末脚注のフォント スタイル、サイズ、色などを指定できます。
 
 #### Q: 文書内の文末脚注の番号をカスタマイズすることはできますか?
 
@@ -97,4 +97,4 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 #### Q: 文書のセクション間で文末脚注の番号付けを継続することは可能ですか?
 
- A: はい、文書のセクション間で文末脚注の番号付けを継続することができます。使用`RestartRule`の財産`EndnoteOptions`クラスを作成し、次のように設定します`RestartContinuous`セクション間で番号付けを継続できるようにします。
+A: はい、文書のセクション間で文末脚注の番号付けを継続することができます。使用`RestartRule`の財産`EndnoteOptions`クラスを作成し、次のように設定します`RestartContinuous`セクション間で番号付けを継続できるようにします。

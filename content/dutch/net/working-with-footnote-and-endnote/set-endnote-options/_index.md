@@ -12,7 +12,7 @@ In deze stapsgewijze zelfstudie laten we u zien hoe u Aspose.Words voor .NET kun
 
  Om aan de slag te gaan, moet u ervoor zorgen dat Aspose.Words voor .NET is geïnstalleerd en ingesteld in uw ontwikkelomgeving. Als u dit nog niet hebt gedaan, downloadt en installeert u de bibliotheek van[Aspose.Releases]https://releases.aspose.com/words/net/.
 
-## Stap 1: Het documentobject initialiseren
+## Stap 1: Initialiseren van het documentobject
 
  Initialiseer eerst de`Document` object door het pad naar uw brondocument op te geven:
 
@@ -81,7 +81,7 @@ U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw spec
 
 #### Vraag: Hoe kan ik eindnoten opmaken in Aspose.Words?
 
- A: Om eindnoten op te maken in Aspose.Words, kunt u de`EndnoteOptions` klasse en de`SeparatorNoteTextStyle` eigendom. Met deze eigenschap kunt u de letterstijl, grootte, kleur, enz. voor eindnoten opgeven.
+A: Om eindnoten op te maken in Aspose.Words, kunt u de`EndnoteOptions` klasse en de`SeparatorNoteTextStyle` eigendom. Met deze eigenschap kunt u de letterstijl, grootte, kleur, enz. voor eindnoten opgeven.
 
 #### Vraag: Is het mogelijk om de nummering van eindnoten in een document aan te passen?
 
@@ -97,4 +97,4 @@ U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw spec
 
 #### Vraag: Is het mogelijk om de eindnootnummering tussen secties van een document voort te zetten?
 
- A: Ja, het is mogelijk om de eindnootnummering tussen secties van een document voort te zetten. Gebruik de`RestartRule` eigendom van de`EndnoteOptions` klasse en stel deze in`RestartContinuous` om de nummering tussen secties door te laten gaan.
+A: Ja, het is mogelijk om de eindnootnummering tussen secties van een document voort te zetten. Gebruik de`RestartRule` eigendom van de`EndnoteOptions` klasse en stel deze in`RestartContinuous` om de nummering tussen secties door te laten gaan.

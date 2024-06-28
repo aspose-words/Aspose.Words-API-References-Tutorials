@@ -105,15 +105,15 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 Bu örnek kod, yeni bir Word belgesi oluşturur, X eksenine tarih saat değerlerini içeren bir sütun grafiği ekler ve belgeyi belirtilen dizine kaydeder.
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET'i kullanarak bir grafiğin eksenine tarih saat değerlerini nasıl ekleyeceğinizi öğrendiniz. Adım adım kılavuzu takip ederek bir grafik oluşturabilir, seriye tarih saat değerleri ekleyebilir ve ekseni, tarih saat değerlerini doğru görüntüleyecek şekilde yapılandırabilirsiniz. Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için güçlü bir dizi özellik sunarak, verileri tarih ve saat değerleriyle etkili bir şekilde temsil etmenize ve görselleştirmenize olanak tanır.
+Bu eğitimde Aspose.Words for .NET kullanarak bir grafiğin eksenine tarih saat değerlerini nasıl ekleyeceğinizi öğrendiniz. Adım adım kılavuzu takip ederek grafik oluşturabilir, seriye tarih saat değerleri ekleyebilir, eksenleri tarih saat değerlerini doğru gösterecek şekilde yapılandırabilirsiniz. Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için güçlü bir dizi özellik sunarak, verileri tarih ve saat değerleriyle etkili bir şekilde temsil etmenize ve görselleştirmenize olanak tanır.
 
 ### SSS
 
-#### S1. Aspose.Words for .NET kullanarak bir grafiğin eksenine tarih ve saat değerleri ekleyebilir miyim?
-Evet, Aspose.Words for .NET ile bir Word belgesindeki grafiğin ekseninde tarih ve saat değerleri ekleyebilir ve görüntüleyebilirsiniz. Aspose.Words, eksende tarih ve saat değerlerinin işlenmesi de dahil olmak üzere çeşitli grafik türleriyle çalışmak ve görünümlerini özelleştirmek için API'ler ve işlevler sağlar.
+#### S1. Aspose.Words for .NET kullanarak bir grafiğin eksenine tarih saat değerleri ekleyebilir miyim?
+Evet, Aspose.Words for .NET ile Word belgesindeki grafik ekseninde tarih saat değerleri ekleyebilir ve görüntüleyebilirsiniz. Aspose.Words, çeşitli grafik türleriyle çalışmak ve eksende tarih saat değerlerini işlemek de dahil olmak üzere görünümlerini özelleştirmek için API'ler ve işlevler sağlar.
 
 #### Q2. Grafik serisine tarih saat değerlerini nasıl eklerim?
- Grafik serisine tarih saat değerleri eklemek için`Add`Grafiğin serisinin yöntemi. İlgili seri değerleriyle birlikte kategori (X ekseni) verileri olarak bir tarih saat değerleri dizisi sağlayın. Bu, grafikte tarih saat değerlerine sahip veri noktalarını çizmenize olanak tanır.
+ Grafik serisine tarih saat değerleri eklemek için kullanabilirsiniz.`Add`Grafiğin serisinin yöntemi. İlgili seri değerleriyle birlikte kategori (X ekseni) verileri olarak bir tarih saat değerleri dizisi sağlayın. Bu, grafik üzerinde tarih saat değerlerine sahip veri noktalarını çizmenize olanak tanır.
 
 #### S3. Ekseni tarih saat değerlerini görüntüleyecek şekilde nasıl yapılandırabilirim?
- Uygun özellikleri ayarlayarak grafiğin eksenini tarih saat değerlerini görüntüleyecek şekilde yapılandırabilirsiniz. Örneğin eksen için minimum ve maksimum değerleri şunu kullanarak belirleyebilirsiniz:`Scaling.Minimum` Ve`Scaling.Maximum` sırasıyla özellikler. Ayrıca eksen için aralığı ve onay işaretlerini tanımlamak üzere ana ve küçük birimleri ayarlayabilirsiniz.
+ Uygun özellikleri ayarlayarak grafiğin eksenini tarih saat değerlerini gösterecek şekilde yapılandırabilirsiniz. Örneğin eksen için minimum ve maksimum değerleri şunu kullanarak belirleyebilirsiniz:`Scaling.Minimum` Ve`Scaling.Maximum` sırasıyla özellikler. Ayrıca eksen için aralığı ve onay işaretlerini tanımlamak üzere ana ve küçük birimleri ayarlayabilirsiniz.

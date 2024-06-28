@@ -104,11 +104,11 @@ public void cloneSection() throws Exception {
 
 ### Q2: क्या जावा के लिए Aspose.Words का कोई परीक्षण संस्करण उपलब्ध है?
 
- हां, आप जावा के लिए Aspose.Words के निःशुल्क परीक्षण तक पहुंच सकते हैं[यहाँ](https://releases.aspose.com/).
+ हां, आप जावा के लिए Aspose.Words के निःशुल्क परीक्षण तक पहुंच सकते हैं।[यहाँ](https://releases.aspose.com/).
 
 ### Q3: मैं जावा के लिए Aspose.Words के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?
 
- आप जावा के लिए Aspose.Words के लिए एक अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
+ आप जावा के लिए Aspose.Words के लिए एक अस्थायी लाइसेंस प्राप्त कर सकते हैं।[यहाँ](https://purchase.aspose.com/temporary-license/).
 
 ### Q4: मुझे जावा के लिए Aspose.Words के लिए समर्थन कहां मिल सकता है?
 

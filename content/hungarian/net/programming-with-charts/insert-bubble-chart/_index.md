@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -93,4 +93,4 @@ Igen, az Aspose.Words for .NET használatával testreszabhatja a buborékdiagram
  Igen, az Aspose.Words for .NET lehetővé teszi a dokumentum elmentését a beillesztett buborékdiagrammal különböző formátumokban, például DOCX, PDF, HTML stb. Kiválaszthatja a kívánt kimeneti formátumot igényei alapján, és használhatja a`Save` módszere a`Document` objektumot a dokumentum mentéséhez. A beszúrt buborékdiagram megmarad a mentett dokumentumban.
 
 #### Q5. Módosíthatom a buborékdiagram adatait és megjelenését a beillesztés után?
-Igen, miután beszúrta a buborékdiagramot a dokumentumba, módosíthatja annak adatait és megjelenését az Aspose.Words for .NET által biztosított API-k segítségével. Frissítheti a sorozatadatokat, módosíthatja a buborék méretét, testreszabhatja a tengely tulajdonságait, és formázási beállításokat alkalmazhat dinamikus és interaktív diagramok létrehozásához a Word-dokumentumokban.
+Igen, miután beszúrta a buborékdiagramot a dokumentumba, az Aspose.Words for .NET által biztosított API-k segítségével módosíthatja annak adatait és megjelenését. Frissítheti a sorozatadatokat, módosíthatja a buborék méretét, testreszabhatja a tengely tulajdonságait, és formázási beállításokat alkalmazhat dinamikus és interaktív diagramok létrehozásához a Word-dokumentumokban.

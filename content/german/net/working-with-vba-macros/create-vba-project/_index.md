@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## Schritt 3: Erstellen Sie ein neues Modul und geben Sie den Makroquellcode an
+## Schritt 3: Erstellen Sie ein neues Modul und geben Sie den Makroquellcode an.
  Wir werden ein neues Modul erstellen, indem wir es instanziieren`VbaModule` Klasse und Angabe des Makronamens, des Typs (prozedurales Modul) und des Quellcodes.
 
 ```csharp
@@ -94,7 +94,7 @@ A: Bevor Sie ein VBA-Projekt in einem Word-Dokument erstellen können, müssen S
 
 #### F: Wie lege ich das Dokumentverzeichnis im Code fest?
 
- A: Im bereitgestellten Code müssen Sie ersetzen`"YOUR DOCUMENTS DIRECTORY"` mit dem entsprechenden Pfad zu dem Verzeichnis, in dem Sie Ihr Word-Dokument mit dem VBA-Projekt speichern möchten.
+ A: Im bereitgestellten Code müssen Sie ersetzen.`"YOUR DOCUMENTS DIRECTORY"` mit dem entsprechenden Pfad zu dem Verzeichnis, in dem Sie Ihr Word-Dokument mit dem VBA-Projekt speichern möchten.
 
 #### F: Wie spezifiziere ich den Makroquellcode im VBA-Modul?
 

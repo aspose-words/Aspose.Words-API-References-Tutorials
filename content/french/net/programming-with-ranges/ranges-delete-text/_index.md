@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Ce code accède à la première section du document à l'aide de l'index`0` et supprime tout le texte dans cette plage.
+ Ce code accède à la première section du document à l'aide de l'index.`0` et supprime tout le texte dans cette plage.
 
 #### Q : Puis-je supprimer du texte de plusieurs plages dans un document Word à l'aide d'Aspose.Words pour .NET ?
 

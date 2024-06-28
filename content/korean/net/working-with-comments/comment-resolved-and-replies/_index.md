@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 
 #### Q: Aspose.Words for .NET에서 해결된 댓글에 답글을 어떻게 추가하나요?
 
- A: 해결된 댓글은 기본적으로 최종 문서에 숨겨져 있지만 다음을 사용하여 해결된 댓글에 답글을 추가할 수 있습니다.`Comment.AddReply` 응답 텍스트와 이를 추가할 위치를 지정하는 방법입니다.
+ A: 해결된 댓글은 기본적으로 최종 문서에 숨겨져 있지만 다음을 사용하여 해결된 댓글에 답글을 추가할 수 있습니다.`Comment.AddReply`응답 텍스트와 이를 추가할 위치를 지정하는 방법입니다.
 
 #### Q: .NET용 Aspose.Words에서 해결된 댓글을 어떻게 볼 수 있나요?
 

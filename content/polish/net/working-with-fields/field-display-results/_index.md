@@ -61,12 +61,12 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // Aktualizuj pola.
 document. UpdateFields();
 
-// Wyświetlanie wyników terenowych.
+//Wyświetlanie wyników terenowych.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
-tym przykładzie przesłaliśmy dokument, zaktualizowaliśmy wszystkie pola, a następnie przeglądaliśmy pola, aby wyświetlić wyniki. Możesz dostosować ten krok, korzystając z własnej logiki przetwarzania wyników w terenie.
+W tym przykładzie przesłaliśmy dokument, zaktualizowaliśmy wszystkie pola, a następnie przeglądaliśmy pola, aby wyświetlić wyniki. Możesz dostosować ten krok, korzystając z własnej logiki przetwarzania wyników w terenie.
 
 Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Pokaż wyniki pola” w Aspose.Words dla .NET.
 
@@ -74,7 +74,7 @@ Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Pokaż w
 
 #### P: Co to jest pole wyświetlania wyników w Aspose.Words?
 
-O: Pole wyświetlania wyników w Aspose.Words to typ pola, które wyświetla wynik operacji lub obliczenia w dokumencie programu Word. Na przykład pole wyświetlania wyników można wykorzystać do wyświetlenia sumy kilku wartości lub wyniku wzoru matematycznego.
+O: Pole wyświetlania wyników w Aspose.Words to typ pola, które wyświetla wynik operacji lub obliczenia w dokumencie programu Word. Na przykład pole wyświetlania wyniku można wykorzystać do wyświetlenia sumy kilku wartości lub wyniku wzoru matematycznego.
 
 #### P: Jak zaktualizować pole wyświetlania wyników w dokumencie Word za pomocą Aspose.Words?
 

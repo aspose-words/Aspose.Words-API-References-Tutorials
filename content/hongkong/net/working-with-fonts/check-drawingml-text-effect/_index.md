@@ -72,7 +72,7 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 
 #### Q：Word 文件中常用的 DrawingML 文字效果有哪些類型？
 
-答：Word 文件中常用的 DrawingML 文字效果類型包括陰影、反射、發光、漸層等。這些效果可用於改善文字的外觀和格式。
+答：Word 文件中常用的 DrawingML 文字效果類型包括陰影、反射、發光、漸層等。
 
 #### Q：如何檢查 Word 文件中 DrawingML 文字效果的顏色？
 

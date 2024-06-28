@@ -2,29 +2,44 @@
 title: إدراج فقرة في مستند Word
 linktitle: إدراج فقرة في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج فقرات منسقة في مستندات Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إدراج فقرات في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع برنامجنا التعليمي المفصل للتعامل السلس مع المستندات.
 type: docs
 weight: 10
 url: /ar/net/add-content-using-documentbuilder/insert-paragraph/
 ---
-في هذا البرنامج التعليمي الشامل، ستتعلم كيفية إدراج فقرات في مستند Word باستخدام Aspose.Words for .NET. سنرشدك خلال العملية ونزودك بمقتطفات التعليمات البرمجية اللازمة لـ C#. بحلول نهاية هذا الدليل، ستتمكن من إضافة فقرات منسقة إلى مستنداتك.
+## مقدمة
+
+مرحبًا بك في دليلنا الشامل حول استخدام Aspose.Words لـ .NET لإدراج فقرات في مستندات Word برمجيًا. سواء كنت مطورًا متمرسًا أو بدأت للتو في معالجة المستندات في .NET، فسيرشدك هذا البرنامج التعليمي خلال العملية من خلال تعليمات وأمثلة واضحة خطوة بخطوة.
 
 ## المتطلبات الأساسية
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
-- Aspose.Words لمكتبة .NET المثبتة على نظامك.
 
-## الخطوة 1: إنشاء مستند جديد وDocumentBuilder
-للبدء، قم بإنشاء مستند جديد باستخدام فئة Document وقم بتهيئة كائن DocumentBuilder:
+قبل الغوص في البرنامج التعليمي، تأكد من أن لديك المتطلبات الأساسية التالية:
+- المعرفة الأساسية ببرمجة C# وإطار عمل .NET.
+- تم تثبيت Visual Studio على جهازك.
+-  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
 
+## استيراد مساحات الأسماء
+
+أولاً، لنستورد مساحات الأسماء الضرورية للبدء:
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Builder;
+using System.Drawing;
+```
+
+## الخطوة 1: تهيئة المستند و DocumentBuilder
+
+ ابدأ بإعداد المستند الخاص بك وتهيئة الملف`DocumentBuilder` هدف.
+```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تعيين الخط والتنسيق
-بعد ذلك، قم بإعداد خصائص الخط وتنسيق الفقرة باستخدام كائنات Font وParagraphFormat على التوالي:
+## الخطوة 2: تنسيق الخط والفقرة
 
+بعد ذلك، قم بتخصيص تنسيق الخط والفقرة للفقرة الجديدة.
 ```csharp
 Font font = builder.Font;
 font.Size = 16;
@@ -39,66 +54,37 @@ paragraphFormat.Alignment = ParagraphAlignment.Justify;
 paragraphFormat.KeepTogether = true;
 ```
 
-## الخطوة 3: أدخل فقرة
-بعد إعداد الخط والتنسيق، استخدم طريقة Writeln لفئة DocumentBuilder لإدراج فقرة كاملة:
+## الخطوة 3: أدخل الفقرة
 
+ الآن، قم بإضافة المحتوى المطلوب باستخدام`WriteLn` طريقة`DocumentBuilder`.
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
 
 ## الخطوة 4: احفظ المستند
-بعد إدراج الفقرة، احفظ المستند في ملف باستخدام طريقة الحفظ لفئة المستند:
 
+وأخيرًا، احفظ المستند المعدل في الموقع الذي تريده.
 ```csharp
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
-```
-
-## مثال على كود المصدر لإدراج فقرة باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدراج فقرة باستخدام Aspose.Words لـ .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-Font font = builder.Font;
-font.Size = 16;
-font.Bold = true;
-font.Color = Color.Blue;
-font.Name = "Arial";
-font.Underline = Underline.Dash;
-
-ParagraphFormat paragraphFormat = builder.ParagraphFormat;
-paragraphFormat.FirstLineIndent = 8;
-paragraphFormat.Alignment = ParagraphAlignment.Justify;
-paragraphFormat.KeepTogether = true;
-
-builder.Writeln("A whole paragraph.");
-
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
 ## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فقرات منسقة في مستند Word باستخدام Aspose.Words لـ .NET. باتباع الدليل الموضح خطوة بخطوة واستخدام كود المصدر المقدم، يمكنك الآن إضافة فقرات مخصصة بخطوط وتنسيقات ومواءمة محددة إلى مستنداتك.
 
-### الأسئلة الشائعة حول إدراج فقرة في مستند Word
+تهانينا! لقد نجحت في إدراج فقرة منسقة في مستند Word باستخدام Aspose.Words لـ .NET. تسمح لك هذه العملية بإنشاء محتوى غني ديناميكيًا مصممًا خصيصًا لتلبية احتياجات تطبيقك.
 
-#### س: هل يمكنني إدراج فقرات متعددة بتنسيق مختلف في نفس المستند؟
+## الأسئلة الشائعة
 
- ج: نعم، يمكنك إدراج فقرات متعددة بتنسيق مختلف في نفس المستند باستخدام Aspose.Words for .NET. ما عليك سوى ضبط خصائص تنسيق الخط والفقرة قبل الاتصال بـ`Writeln` طريقة لكل فقرة.
+### هل يمكنني استخدام Aspose.Words لـ .NET مع تطبيقات .NET Core؟
+نعم، يدعم Aspose.Words for .NET تطبيقات .NET Core بالإضافة إلى .NET Framework.
 
-#### س: كيف يمكنني ضبط تباعد الأسطر والمسافات البادئة للفقرات؟
+### كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words لـ .NET؟
+ يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/).
 
- ج: يوفر Aspose.Words for .NET خيارات لتعيين تباعد الأسطر والمسافات البادئة للفقرات. يمكنك ضبط`LineSpacing` و`LeftIndent` خصائص`ParagraphFormat` كائن للسيطرة على هذه الجوانب.
+### هل يتوافق Aspose.Words for .NET مع إصدارات Microsoft Word؟
+نعم، يضمن Aspose.Words for .NET التوافق مع إصدارات Microsoft Word المختلفة، بما في ذلك الإصدارات الأخيرة.
 
-#### س: هل من الممكن إدراج قوائم ذات تعداد نقطي أو رقمي باستخدام DocumentBuilder؟
+### هل يدعم Aspose.Words for .NET تشفير المستندات؟
+نعم، يمكنك تشفير مستنداتك وتأمينها برمجيًا باستخدام Aspose.Words for .NET.
 
- ج: نعم، يمكنك إنشاء قوائم ذات تعداد نقطي أو رقمي عن طريق ضبط الإعداد`ListFormat` خصائص`DocumentBuilder` هدف. يمكنك إضافة عناصر القائمة باستخدام`Writeln` الطريقة، وسيتم تطبيق نمط الترقيم أو التعداد النقطي تلقائيًا.
-
-#### س: هل يمكنني إدراج ارتباطات تشعبية أو عناصر أخرى داخل الفقرات؟
-
- ج: بالتأكيد! يمكنك إدراج الارتباطات التشعبية والصور والعناصر الأخرى داخل الفقرات باستخدام`DocumentBuilder` فصل. يتيح لك ذلك إنشاء محتوى غني وتفاعلي ضمن فقراتك.
-
-#### س: كيف يمكنني إدراج أحرف أو رموز خاصة في فقرة؟
-
- ج: لإدراج أحرف أو رموز خاصة، يمكنك استخدام`Writeln` طريقة مع تمثيل Unicode المطلوب أو استخدم`InsertSpecialChar` طريقة`DocumentBuilder` فصل.
+### أين يمكنني العثور على مزيد من المساعدة والدعم لـ Aspose.Words for .NET؟
+ قم بزيارة[منتدى Aspose.Words](https://forum.aspose.com/c/words/8) لدعم المجتمع والمناقشات.

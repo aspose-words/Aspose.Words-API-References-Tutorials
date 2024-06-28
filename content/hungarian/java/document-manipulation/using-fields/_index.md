@@ -103,7 +103,7 @@ Ha képeket szeretne beszúrni egy dokumentumba, használhatja az Aspose.Words f
 
 ### Mi a célja a feltételes mezőknek az Aspose.Words for Java programban?
 
-Az Aspose.Words for Java feltételes mezői lehetővé teszik dinamikus dokumentumok létrehozását úgy, hogy bizonyos feltételek alapján feltételesen szerepelteti a tartalmat. A bemutatott példában egy IF mezőt használunk arra, hogy az IF utasítás eredménye alapján feltételesen szerepeltessenek adatokat a dokumentumban körlevél-összevonás során.
+Az Aspose.Words for Java feltételes mezői lehetővé teszik dinamikus dokumentumok létrehozását úgy, hogy bizonyos feltételek alapján feltételesen szerepelteti a tartalmat. A bemutatott példában egy IF mezőt használunk arra, hogy az IF utasítás eredménye alapján feltételesen szerepeltessen adatokat a dokumentumban körlevél-összevonás során.
 
 ### Hogyan formázhatom a táblázat váltakozó sorait az Aspose.Words for Java segítségével?
 

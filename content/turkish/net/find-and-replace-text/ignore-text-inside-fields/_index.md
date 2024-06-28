@@ -151,7 +151,7 @@ doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-#### S: Aspose.Words for .NET'te çıktı sonucuna alanları nasıl ekleyebilirim?
+#### S: Aspose.Words for .NET'te çıktı sonucuna alanları nasıl dahil edebilirim?
 
  C: Çıktı sonucundaki alanların içindeki metni dahil etmek için, alanları göz ardı etmeyecek şekilde seçenekleri değiştirebilirsiniz. Bunun için ayarlayabilirsiniz`IgnoreFields` mülkiyeti`FindReplaceOptions` itiraz etmek`false`:
 

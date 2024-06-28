@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
 
-以下是分步指南，解释以下 C# 源代码，有助于使用 .NET 的 Aspose.Words 库为 Markdown 导出选项设置图像文件夹。在使用此代码之前，请确保您已在项目中包含 Aspose.Words 库。
+以下是逐步指南，解释以下 C# 源代码，该代码有助于使用 .NET 的 Aspose.Words 库为 Markdown 导出选项设置图像文件夹。在使用此代码之前，请确保您已在项目中包含 Aspose.Words 库。
 
 ## 第1步：设置文档目录路径
 

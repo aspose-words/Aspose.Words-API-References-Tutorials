@@ -2,106 +2,95 @@
 title: Hyperlinks vervangen
 linktitle: Hyperlinks vervangen
 second_title: Aspose.Words-API voor documentverwerking
-description: Vervang hyperlinks in Word-documenten met Aspose.Words voor .NET. Stapsgewijze instructies voor het vervangen van hyperlinks.
+description: Leer hoe u hyperlinks in .NET-documenten vervangt met Aspose.Words voor efficiënt documentbeheer en dynamische inhoudsupdates.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/replace-hyperlinks/
 ---
 
-Hier is een stapsgewijze handleiding waarin de volgende C#-broncode wordt uitgelegd voor het vervangen van hyperlinks met behulp van Aspose.Words voor .NET-functionaliteit. Zorg ervoor dat u de Aspose.Words-bibliotheek in uw project hebt opgenomen voordat u deze code gebruikt.
+## Invoering
 
-## Stap 1: Stel het documentmappad in
+In de wereld van .NET-ontwikkeling is het beheren en manipuleren van documenten een cruciale taak, waarbij vaak een efficiënte omgang met hyperlinks binnen documenten vereist is. Aspose.Words voor .NET biedt krachtige mogelijkheden om hyperlinks naadloos te vervangen, zodat uw documenten dynamisch aan de juiste bronnen worden gekoppeld. Deze tutorial gaat dieper in op hoe u dit kunt bereiken met Aspose.Words voor .NET en begeleidt u stap voor stap door het proces.
+
+## Vereisten
+
+Voordat u zich gaat verdiepen in het vervangen van hyperlinks door Aspose.Words voor .NET, moet u ervoor zorgen dat u over het volgende beschikt:
+
+- Visual Studio: geïnstalleerd en ingesteld voor .NET-ontwikkeling.
+-  Aspose.Words voor .NET: gedownload en waarnaar wordt verwezen in uw project. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Bekendheid met C#: Basiskennis van het schrijven en compileren van code.
+
+## Naamruimten importeren
+
+Zorg er eerst voor dat u de benodigde naamruimten in uw project opneemt:
 
 ```csharp
-// Het pad naar de documentenmap.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- Zorg ervoor dat u het juiste pad opgeeft naar uw documentenmap met de`Hyperlinks.docx` bestand.
+## Stap 1: Laad het document
 
-## Stap 2: Laad het document met de hyperlinks
+Begin met het laden van het document waar u hyperlinks wilt vervangen:
 
 ```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- Hier maken we een exemplaar van de`Document` klasse uit het opgegeven bestand.
+ Vervangen`"Hyperlinks.docx"` met het pad naar uw daadwerkelijke document.
 
-## Stap 3: Blader door velden om hyperlinks te vinden
+## Stap 2: Herhaal de velden
+
+Blader door elk veld in het document om hyperlinks te vinden en te vervangen:
 
 ```csharp
-foreach(Field field in doc.Range.Fields)
+foreach (Field field in doc.Range.Fields)
 {
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
-
-         // Sommige hyperlinks kunnen lokaal zijn (links naar bladwijzers in het document), we negeren ze.
-         if (hyperlink.SubAddress != null)
-             keep on going;
-
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
+    if (field.Type == FieldType.FieldHyperlink)
+    {
+        FieldHyperlink hyperlink = (FieldHyperlink)field;
+        
+        // Controleer of de hyperlink geen lokale link is (negeer bladwijzers).
+        if (hyperlink.SubAddress != null)
+            continue;
+        
+        // Vervang het hyperlinkadres en het resultaat.
+        hyperlink.Address = "http://www.aspose.com";
+        hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
+    }
 }
 ```
 
- Deze lus doorloopt alle velden in het document op zoek naar velden van het type`FieldType.FieldHyperlink` . Zodra een veld van dit type is gevonden, controleren we of het een lokale link is door de`SubAddress` eigendom. Als dit niet het geval is, vervangen we het linkadres door`"http://www.aspose.com"` en het resultaat met`"Aspose - The .NET & Java Component Editor"`.
+## Stap 3: Sla het document op
 
-## Stap 4: Sla het gewijzigde document op
+Sla ten slotte het gewijzigde document op met vervangen hyperlinks:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-Ten slotte slaan we het gewijzigde document op met de vervangen hyperlinks naar een opgegeven bestand.
+ Vervangen`"WorkingWithFields.ReplaceHyperlinks.docx"` met het gewenste uitvoerbestandspad.
 
-### Voorbeeldbroncode om hyperlinks te vervangen door Aspose.Words voor .NET
+## Conclusie
 
-```csharp
-// Het pad naar de documentenmap.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+Het vervangen van hyperlinks in documenten met Aspose.Words voor .NET is eenvoudig en verbetert het dynamische karakter van uw documenten. Of het nu gaat om het bijwerken van URL's of het programmatisch transformeren van documentinhoud, Aspose.Words vereenvoudigt deze taken en zorgt voor efficiënt documentbeheer.
 
-Document doc = new Document(dataDir + "Hyperlinks.docx");
+## Veelgestelde vragen (FAQ's)
 
-foreach(Field field in doc.Range.Fields)
-{
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
+### Kan Aspose.Words voor .NET omgaan met complexe documentstructuren?
+Ja, Aspose.Words ondersteunt naadloos complexe structuren zoals tabellen, afbeeldingen en hyperlinks.
 
-         // Sommige hyperlinks kunnen lokaal zijn (links naar bladwijzers in het document), we negeren ze.
-         if (hyperlink.SubAddress != null)
-             keep on going;
+### Is er een proefversie beschikbaar voor Aspose.Words voor .NET?
+ Ja, u kunt een gratis proefversie downloaden van[hier](https://releases.aspose.com/).
 
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
-}
+### Waar kan ik documentatie vinden voor Aspose.Words voor .NET?
+ Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
 
-doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
-```
+### Hoe kan ik tijdelijke licenties krijgen voor Aspose.Words voor .NET?
+ Er kunnen tijdelijke licenties worden verkregen[hier](https://purchase.aspose.com/temporary-license/).
 
-Dit is een voorbeeldbroncode om hyperlinks in een document te vervangen met Aspose.Words voor .NET.
-
-### Veelgestelde vragen
-
-#### Vraag: Hoe kan ik hyperlinks in een Word-document vervangen met Aspose.Words voor .NET?
-
- A: Om hyperlinks in een Word-document te vervangen met Aspose.Words voor .NET, kunt u de`Document.Range.Replace`methode die de te zoeken tekst en de vervangende tekst specificeert. Zorg ervoor dat u de juiste opties gebruikt om zoek- en vervangparameters in te stellen.
-
-#### Vraag: Is het mogelijk om alleen bepaalde hyperlinks in een Word-document te vervangen door Aspose.Words voor .NET?
-
-A: Ja, het is mogelijk om alleen bepaalde hyperlinks in een Word-document te vervangen door Aspose.Words voor .NET. U kunt de te vervangen hyperlinks filteren met behulp van specifieke criteria, zoals de link-URL, linktekst of een andere relevante eigenschap. Dan kunt u de vervanging alleen toepassen op de overeenkomende hyperlinks.
-
-#### Vraag: Hoe kan ik hyperlinks in kop-, voetteksten of voetnoten negeren wanneer ik deze vervang door Aspose.Words voor .NET?
-
-A: Als u hyperlinks in kop-, voetteksten of voetnoten wilt negeren bij het vervangen door Aspose.Words voor .NET, kunt u de geavanceerde zoekopties gebruiken en de juiste zoeklimieten opgeven. U kunt de zoekopdracht bijvoorbeeld beperken tot de belangrijkste secties van het document en kop-, voetteksten of voetnoten uitsluiten.
-
-#### Vraag: Is het mogelijk om hyperlinks te vervangen door interne links naar andere delen van het document?
-
- A: Ja, het is mogelijk om hyperlinks te vervangen door interne links naar andere delen van het document met Aspose.Words voor .NET. U kunt ankers of tekst-ID's gebruiken om interne links te maken en deze vervolgens te vervangen met behulp van de`Document.Range.Replace` methode met de juiste opties.
-
-#### Vraag: Blijven bij het vervangen van hyperlinks door Aspose.Words voor .NET de linkeigenschappen, zoals kleuren of stijlen, behouden?
-
-A: Ja, bij het vervangen van hyperlinks door Aspose.Words voor .NET blijven linkeigenschappen zoals kleuren of stijlen behouden. U kunt dezelfde opmaakeigenschappen in de vervangende tekst opgeven om een consistent resultaat te bereiken.
+### Welke ondersteuningsopties zijn beschikbaar voor Aspose.Words voor .NET?
+ U kunt community-ondersteuning krijgen of vragen indienen via de[Aspose.Words-forum](https://forum.aspose.com/c/words/8).

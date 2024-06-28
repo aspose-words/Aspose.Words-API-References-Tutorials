@@ -15,7 +15,7 @@ url: /el/net/working-with-fonts/set-fonts-folder/
 - Η βιβλιοθήκη Aspose.Words για .NET είναι εγκατεστημένη στο έργο σας
 
 ## Βήμα 1: Ορίστε τον κατάλογο εγγράφων
- Ξεκινήστε ορίζοντας τη διαδρομή καταλόγου στη θέση του εγγράφου του Word. Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"` στον κωδικό με την κατάλληλη διαδρομή.
+Ξεκινήστε ορίζοντας τη διαδρομή καταλόγου στη θέση του εγγράφου του Word. Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"` στον κωδικό με την κατάλληλη διαδρομή.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

@@ -63,7 +63,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng trí
 
 #### Câu hỏi: Trích dẫn trong Markdown là gì?
 
-Đáp: Trích dẫn trong Markdown là một cách làm nổi bật các đoạn văn bản từ các nguồn khác hoặc tham khảo các trích dẫn nổi tiếng.
+Đáp: Trích dẫn trong Markdown là một cách để làm nổi bật các đoạn văn bản từ các nguồn khác hoặc tham khảo các trích dẫn nổi tiếng.
 
 #### Câu hỏi: Làm cách nào để sử dụng dấu ngoặc kép trong Markdown?
 

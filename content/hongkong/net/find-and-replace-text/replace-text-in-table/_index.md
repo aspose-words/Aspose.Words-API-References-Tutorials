@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### Q：如何使用 Aspose.Words for .NET 存取文件中的表格？
 
-答：文件載入後，您可以存取要執行文字取代的表格。在 Aspose.Words for .NET 中，您可以使用`GetChild`方法與`NodeType.Table`參數來取得所需的表。例如：
+答：文件載入後，您可以存取要執行文字取代的表格。在 Aspose.Words for .NET 中，您可以使用`GetChild`方法與`NodeType.Table`參數以獲得所需的表。例如：
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

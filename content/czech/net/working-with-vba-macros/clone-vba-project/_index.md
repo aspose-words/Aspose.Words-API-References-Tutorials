@@ -32,7 +32,7 @@ Dále načteme zdrojový dokument Word, který obsahuje projekt VBA, který chce
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## Krok 3: Vytvořte nový dokument s klonovaným projektem VBA
+## Krok 3: Vytvořte nový dokument s klonovaným projektem VBA.
 Vytvoříme nový dokument s prázdným projektem VBA a projekt VBA naklonujeme ze zdrojového dokumentu.
 
 ```csharp
@@ -74,7 +74,7 @@ Odpověď: Duplikování projektu VBA spočívá v zkopírování veškerého k�
 Odpověď: Než budete moci klonovat projekt VBA z dokumentu aplikace Word, musíte mít pracovní znalost programovacího jazyka C#. Do projektu je také potřeba nainstalovat knihovnu Aspose.Words for .NET. Potřebujete také dokument aplikace Word obsahující projekt VBA, který chcete naklonovat.
 
 #### Otázka: Jak nastavit adresář dokumentů v kódu?
- Odpověď: V poskytnutém kódu musíte nahradit`"YOUR DOCUMENTS DIRECTORY"` s příslušnou cestou k adresáři, kde se nachází váš dokument aplikace Word obsahující projekt VBA.
+ Odpověď: V poskytnutém kódu musíte nahradit.`"YOUR DOCUMENTS DIRECTORY"` s příslušnou cestou k adresáři, kde se nachází váš dokument aplikace Word obsahující projekt VBA.
 
 #### Otázka: Jak uložit cílový dokument s klonovaným projektem VBA?
 

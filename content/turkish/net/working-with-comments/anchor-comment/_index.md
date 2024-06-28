@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Üç Çalıştırma nesnesi oluşturun.
-// İlk ikisi bir metin çalıştırırken üçüncüsü bir Yorum çalıştırır
+//İlk ikisi bir metin çalıştırırken üçüncüsü bir Yorum çalıştırır
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ C: Aspose.Words for .NET belgesine yorum bağlantısı eklemek için eğitimde b
 
 #### S: Aspose.Words for .NET'te bir yorum bağlantısına bağlı bir yorumun metnini nasıl düzenleyebilirim?
 
- C: Aspose.Words for .NET'te bir yorum bağlantısına bağlı yorumun metnini değiştirmek için`Comment.Text` karşılık gelen mülk`Comment` nesneyi seçin ve metni gerektiği gibi değiştirin.
+C: Aspose.Words for .NET'te bir yorum bağlantısına bağlı yorumun metnini değiştirmek için`Comment.Text` karşılık gelen mülk`Comment` nesneyi seçin ve metni gerektiği gibi değiştirin.
 

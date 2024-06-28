@@ -10,7 +10,7 @@ url: /tr/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## giriiş
 
-Web uzantıları modern belge yönetim sistemlerinin ayrılmaz bir parçası haline geldi. Geliştiricilerin web tabanlı bileşenleri sorunsuz bir şekilde entegre ederek belge işlevselliğini geliştirmelerine olanak tanır. Python için güçlü bir belge işleme API'si olan Aspose.Words, web uzantılarını belgelerinize dahil etmek için kapsamlı bir çözüm sunar.
+Web uzantıları modern belge yönetim sistemlerinin ayrılmaz bir parçası haline geldi. Geliştiricilerin web tabanlı bileşenleri sorunsuz bir şekilde entegre ederek belge işlevselliğini geliştirmelerine olanak tanır. Python için güçlü bir belge işleme API'si olan Aspose.Words, web uzantılarını belgelerinize entegre etmek için kapsamlı bir çözüm sunar.
 
 ## Önkoşullar
 

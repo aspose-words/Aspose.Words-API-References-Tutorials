@@ -1,6 +1,6 @@
 ---
-title: Távolítsa el a Csak olvasási korlátozást
-linktitle: Távolítsa el a Csak olvasási korlátozást
+title: Távolítsa el a Csak olvasható korlátozást
+linktitle: Távolítsa el a Csak olvasható korlátozást
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan távolíthatja el a csak olvasható korlátozást egy Word-dokumentumból az Aspose.Words for .NET segítségével.
 type: docs
@@ -85,7 +85,7 @@ V: Ha az Aspose.Words for .NET használatával el szeretné távolítani a Word-
 
 #### K: Eltávolíthatom a csak olvasható korlátozást egy Word-dokumentumból jelszó nélkül?
 
-V: Nem, nem távolíthatja el a csak olvasható korlátozást a Word-dokumentumból a megfelelő jelszó megadása nélkül. A csak olvasható korlátozás biztonsági okokból van beállítva, és a jelszó nélküli eltávolítása aláásná a dokumentum integritásának védelmét.
+V: Nem, nem távolíthatja el a csak olvasható korlátozást a Word-dokumentumból a megfelelő jelszó megadása nélkül. A csak olvasható korlátozást biztonsági okokból állítják be, és a jelszó nélküli eltávolítása aláásná a dokumentum integritásának védelmét.
 
 #### K: Eltávolíthatom a csak olvasható korlátozást egy rossz jelszóval rendelkező Word-dokumentumból?
 

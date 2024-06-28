@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-fields/change-locale/
 ---
 
-tym samouczku przeprowadzimy Cię przez proces zmiany ustawień regionalnych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Modyfikując ustawienia regionalne, możesz kontrolować formatowanie dat i liczb podczas operacji korespondencji seryjnej. Dostarczymy Ci niezbędny kod źródłowy C# i instrukcje krok po kroku, jak to osiągnąć.
+W tym samouczku przeprowadzimy Cię przez proces zmiany ustawień regionalnych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Modyfikując ustawienia regionalne, możesz kontrolować formatowanie dat i liczb podczas operacji korespondencji seryjnej. Dostarczymy Ci niezbędny kod źródłowy C# i instrukcje krok po kroku, jak to osiągnąć.
 
 ## Warunki wstępne
 Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
@@ -49,7 +49,7 @@ Wykonaj operację korespondencji seryjnej i podaj wartość daty w polu „Data�
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-tym fragmencie kodu wykonujemy operację korespondencji seryjnej i jako wartość w polu „Data” podajemy bieżącą datę.
+W tym fragmencie kodu wykonujemy operację korespondencji seryjnej i jako wartość w polu „Data” podajemy bieżącą datę.
 
 ## Krok 5: Przywróć oryginalne ustawienia regionalne
 Po zakończeniu korespondencji seryjnej przywróć oryginalną kulturę wątku:

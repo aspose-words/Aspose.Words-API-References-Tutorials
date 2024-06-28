@@ -35,6 +35,6 @@ Naučte se extrahovat a upravovat obsah v dokumentech Word pomocí Aspose.Words 
 ### [Efektivní extrakce obsahu v dokumentech aplikace Word](./document-content-extraction/)
 Efektivně extrahujte obsah z dokumentů aplikace Word pomocí Aspose.Words pro Python. Naučte se krok za krokem s příklady kódu.
 ### [Pokročilé techniky hledání a nahrazování v dokumentech aplikace Word](./find-replace-documents/)
-Naučte se pokročilé techniky hledání a nahrazování v dokumentech Word pomocí Aspose.Words pro Python. Nahraďte text, použijte regulární výraz, formátování a další.
+Naučte se pokročilé techniky hledání a nahrazování v dokumentech aplikace Word pomocí Aspose.Words pro Python. Nahraďte text, použijte regulární výraz, formátování a další.
 ### [Odebrání a zpřesnění obsahu v dokumentech aplikace Word](./remove-content-documents/)
 Naučte se, jak efektivně odstraňovat a upřesňovat obsah v dokumentech aplikace Word pomocí Aspose.Words pro Python. Průvodce krok za krokem s příklady zdrojového kódu.

@@ -126,7 +126,7 @@ Selamat! Anda telah mempelajari cara bekerja dengan objek OLE dan kontrol Active
    - Kontrol ActiveX adalah elemen interaktif yang bisa menambahkan fungsionalitas ke dokumen Word Anda, seperti kontrol formulir atau pemutar multimedia.
 
 ### Apakah Aspose.Words untuk Java cocok untuk otomatisasi dokumen tingkat perusahaan? 
-   - Ya, Aspose.Words for Java adalah perpustakaan yang kuat untuk mengotomatiskan pembuatan dan manipulasi dokumen dalam aplikasi Java.
+   - Ya, Aspose.Words for Java adalah perpustakaan yang kuat untuk mengotomatisasi pembuatan dan manipulasi dokumen dalam aplikasi Java.
 
 ### Di mana saya bisa mendapatkan akses ke Aspose.Words untuk Java? 
    -  Anda dapat mengunduh Aspose.Words untuk Java dari[Di Sini](https://releases.aspose.com/words/java/).

@@ -50,7 +50,7 @@ In diesem Artikel haben wir erklärt, wie Sie die Funktion „Get Protection Typ
 
 A: Um den Schutztyp eines Dokuments mit Aspose.Words für .NET abzurufen, können Sie die folgenden Schritte ausführen:
 1.  Laden Sie das Dokument mit`Document` Klasse.
-2.  Greife auf ... zu`ProtectionType` Eigentum der`Document`Objekt zum Abrufen des Schutztyps.
+2.  Greife auf ... zu`ProtectionType` Eigentum der`Document` Objekt zum Abrufen des Schutztyps.
 
 #### F: Kann ich mithilfe der ProtectionType-Eigenschaft feststellen, ob ein Dokument für Formulare oder Formularfelder geschützt ist?
 

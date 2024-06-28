@@ -17,7 +17,7 @@ url: /zh-hant/net/programming-with-charts/insert-area-chart/
 - 已安裝 Aspose.Words for .NET 程式庫。您可以使用 NuGet 套件管理員下載並安裝它。
 - 將儲存輸出文檔的文檔目錄路徑。
 
-## 步驟 2：建立一個新文件並插入圖表
+## 步驟2：建立一個新文件並插入圖表。
 
 創建一個新的`Document`物件和一個`DocumentBuilder`建置文檔。
 
@@ -98,7 +98,7 @@ Aspose.Words for .NET 為 Word 文件中的圖表進行文字處理提供了強�
 Aspose.Words for .NET 是一個功能強大的文件處理庫，使開發人員能夠在 .NET 應用程式中以程式設計方式建立、修改和轉換 Word 文件。它提供了一套全面的用於文字處理的 API，其中包含文件元素，包括圖表、段落、表格等。
 
 #### Q2。如何安裝 Aspose.Words for .NET？
-若要安裝 Aspose.Words for .NET，您可以使用 Visual Studio 中的 NuGet 套件管理器將程式庫直接安裝到您的專案中。只需在 NuGet 套件管理器中搜尋“Aspose.Words”並安裝該套件即可。
+若要安裝 Aspose.Words for .NET，您可以使用 Visual Studio 中的 NuGet 套件管理器將程式庫直接安裝到您的專案中。只需在 NuGet 套件管理器中搜尋“Apose.Words”並安裝該套件即可。
 
 #### Q3。我可以自訂面積圖的外觀嗎？
 是的，使用 Aspose.Words for .NET，您可以自訂面積圖外觀的各個方面。您可以修改圖表標題、系列顏色、軸標籤和圖表區域格式等屬性。該庫提供了一組豐富的 API 來控制圖表的視覺元素並創建適合您需求的自訂外觀。

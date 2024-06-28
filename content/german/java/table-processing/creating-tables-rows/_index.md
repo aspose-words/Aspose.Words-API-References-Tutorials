@@ -28,7 +28,7 @@ public class TableCreation {
         // Erstellen Sie ein neues Dokument
         Document doc = new Document();
         
-        // Erstellen Sie eine Tabelle mit 3 Zeilen und 3 Spalten
+        // Erstellen Sie eine Tabelle mit 3 Zeilen und 3 Spalten.
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // Füllen Sie die Tabellenzellen mit Daten
@@ -46,7 +46,7 @@ public class TableCreation {
 
 In diesem Codeausschnitt erstellen wir eine einfache Tabelle mit 3 Zeilen und 3 Spalten und füllen jede Zelle mit dem Text „Beispieltext“.
 
-### Hinzufügen von Kopfzeilen zur Tabelle
+### Überschriften zur Tabelle hinzufügen
 Das Hinzufügen von Kopfzeilen zu Ihrer Tabelle ist für eine bessere Organisation oft notwendig. So können Sie das erreichen:
 
 ```java

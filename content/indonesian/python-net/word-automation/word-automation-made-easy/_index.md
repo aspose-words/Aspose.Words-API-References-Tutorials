@@ -130,7 +130,7 @@ Ya, Aspose.Words tersedia untuk berbagai platform, termasuk Java dan .NET, memun
 ### Bisakah saya mengonversi dokumen Word ke PDF menggunakan Aspose.Words?
 Sangat! Aspose.Words mendukung berbagai format, termasuk konversi DOCX ke PDF.
 
-### Apakah Aspose.Words cocok untuk mengotomatiskan tugas pemrosesan dokumen skala besar?
+### Apakah Aspose.Words cocok untuk mengotomatisasi tugas pemrosesan dokumen skala besar?
 Ya, Aspose.Words dirancang untuk menangani pemrosesan dokumen dalam jumlah besar secara efisien.
 
 ### Apakah Aspose.Words mendukung manipulasi dokumen berbasis cloud?

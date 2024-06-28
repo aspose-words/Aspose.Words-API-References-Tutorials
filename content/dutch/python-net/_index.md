@@ -11,7 +11,7 @@ Aspose.Words voor Python biedt een reeks tutorials die ontwikkelaars in staat st
 
 ## Python Document API voor naadloos documentbeheer
 
-Ontdek de kracht van de Python Document API met Aspose.Words-tutorials. Ontwikkelaars leren Word-documenten programmatisch maken, wijzigen en beheren. De API maakt aanpassing van de opmaak, het invoegen van inhoud en het samenvoegen van documenten mogelijk, waardoor documentbeheertaken worden gestroomlijnd.
+Ontdek de kracht van de Python Document API met Aspose.Words-tutorials. Ontwikkelaars leren Word-documenten programmatisch maken, wijzigen en beheren. De API maakt aanpassing van de opmaak, het invoegen van inhoud en het samenvoegen van documenten mogelijk, en het streamen van documentbeheertaken.
 
 ## Automatiseer documentverwerking met Python
 

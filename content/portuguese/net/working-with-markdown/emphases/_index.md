@@ -21,7 +21,7 @@ Document doc = new Document();
 
 ## Etapa 2: usando um gerador de documentos
 
-seguir, usaremos um gerador de documentos para adicionar conteúdo ao nosso documento.
+A seguir, usaremos um gerador de documentos para adicionar conteúdo ao nosso documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -109,11 +109,11 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### P: Como realço texto usando Markdown?
 
- R: Para destacar texto usando Markdown, simplesmente coloque o texto entre os símbolos apropriados. Usar`*` ou`_` para itálico,`**` ou`__` para ousado e`~~` para tachado.
+R: Para destacar texto usando Markdown, simplesmente coloque o texto entre os símbolos apropriados. Usar`*` ou`_` para itálico,`**` ou`__` para ousado e`~~` para tachado.
 
 #### P: Podemos combinar diferentes destaques no mesmo texto?
 
- R: Sim, é possível combinar diferentes destaques no mesmo texto. Por exemplo, você pode colocar uma palavra em negrito e itálico usando ambos`**` e`*`ao redor do mundo.
+ R: Sim, é possível combinar diferentes destaques no mesmo texto. Por exemplo, você pode colocar uma palavra em negrito e itálico usando ambos`**` e`*` ao redor do mundo.
 
 #### P: Quais opções de destaque estão disponíveis no Markdown?
 

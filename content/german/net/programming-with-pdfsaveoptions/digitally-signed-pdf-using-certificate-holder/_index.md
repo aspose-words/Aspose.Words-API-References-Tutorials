@@ -102,7 +102,7 @@ A: Um mithilfe eines Zertifikats mit Aspose.Words für .NET eine digitale Signat
  Benutzen Sie die`Save` Methode zum Speichern des Dokuments im PDF-Format unter Angabe der Speicheroptionen.
 
 #### F: Wie erhalte ich ein Zertifikat zum Hinzufügen einer digitalen Signatur zu einem PDF-Dokument?
-A: Um ein Zertifikat zum Hinzufügen einer digitalen Signatur zu einem PDF-Dokument zu erhalten, können Sie sich normalerweise an eine Zertifizierungsstelle (CA) oder einen Vertrauensdienstanbieter wenden. Diese Unternehmen stellen digitale Zertifikate aus, nachdem sie Ihre Identität überprüft und Ihre Anfrage validiert haben. Sobald Sie ein Zertifikat erhalten haben, können Sie es in Ihrer Bewerbung verwenden, um PDF-Dokumente mit digitalen Signaturen zu versehen.
+A: Um ein Zertifikat zum Hinzufügen einer digitalen Signatur zu einem PDF-Dokument zu erhalten, können Sie sich normalerweise an eine Zertifizierungsstelle (CA) oder einen Vertrauensdienstanbieter wenden. Diese Unternehmen stellen digitale Zertifikate aus, nachdem sie Ihre Identität überprüft und Ihre Anfrage validiert haben. Sobald Sie ein Zertifikat erhalten haben, können Sie es in Ihrer Anwendung verwenden, um PDF-Dokumente mit digitalen Signaturen zu versehen.
 
 #### F: Ist es möglich, die Details der digitalen Signatur, z. B. Grund und Ort, anzupassen?
  A: Ja, Sie können die Details der digitalen Signatur anpassen, indem Sie den Grund und den Ort der Signatur angeben. Im bereitgestellten Beispielcode können Sie die Werte von ändern`reason` Und`location` Parameter beim Erstellen der`PdfDigitalSignatureDetails` Objekt. Stellen Sie sicher, dass Sie für jeden Parameter geeignete Informationen angeben, um den Grund und die Position der Signatur in Ihrem PDF-Dokument widerzuspiegeln.

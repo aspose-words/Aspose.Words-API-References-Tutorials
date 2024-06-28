@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Etapa 4: importar e anexar parágrafos
 
-Itere pelos parágrafos no documento de origem e importe cada parágrafo para o documento de destino usando o comando`importer`. Anexe os nós importados ao corpo do documento de destino.
+ Itere pelos parágrafos no documento de origem e importe cada parágrafo para o documento de destino usando o comando`importer`. Anexe os nós importados ao corpo do documento de destino.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ Isso completa a implementação de anexar um documento de origem a um documento 
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Mantenha a formatação da lista de fontes ao importar parágrafos numerados.
+	//Mantenha a formatação da lista de fontes ao importar parágrafos numerados.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

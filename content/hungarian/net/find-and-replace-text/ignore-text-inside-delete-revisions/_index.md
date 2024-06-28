@@ -38,7 +38,7 @@ builder. Write("Text");
 
 ## 3. lépés: Eltávolít egy bekezdést a módosítások nyomon követésével
 
-"Szöveg figyelmen kívül hagyása a változatok törlése alatt" funkció használatának szemléltetésére a dokumentumból a revíziókövetés segítségével törölünk egy bekezdést. Ez lehetővé teszi számunkra, hogy meglássuk, hogyan befolyásolja ez a funkció a későbbi műveleteket.
+"Szöveg figyelmen kívül hagyása a változatok törlése alatt" funkció használatának szemléltetésére a verziókövetéssel törölünk egy bekezdést a dokumentumból. Ez lehetővé teszi számunkra, hogy meglássuk, hogyan befolyásolja ez a funkció a későbbi műveleteket.
 
 ```csharp
 doc.StartTrackRevisions("author", DateTime.Now);
@@ -122,7 +122,7 @@ Console.WriteLine(doc.GetText());
 
 ## Következtetés
 
-Ebben a cikkben megvizsgáltuk a C# forráskódot, hogy megértsük, hogyan használható az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a módosításokon belül" funkciójában. Ez a funkció akkor hasznos, ha a dokumentumok kezelésekor figyelmen kívül hagyja a törlési változatokon belüli szöveget. Lépésről lépésre követtük a dokumentum létrehozását, szöveg beszúrását, bekezdés törlését revíziókövetéssel, a "Szöveg figyelmen kívül hagyása a változatok törlése alatt" funkciót, valamint keresési és csereműveleteket.
+Ebben a cikkben megvizsgáltuk a C# forráskódot, hogy megértsük, hogyan használható az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a módosításokon belül" funkciójában. Ez a funkció akkor hasznos, ha a dokumentumok kezelésekor figyelmen kívül hagyja a törlési változatokon belüli szöveget. Lépésről lépésre követtük a dokumentum létrehozását, szöveg beszúrását, bekezdés törlését revíziókövetéssel, a "Szöveg figyelmen kívül hagyása a változatok törlése közben" funkciót, valamint keresési és csereműveleteket.
 
 ### GYIK
 
@@ -136,7 +136,7 @@ V: Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok létrehoz
 
 #### K: Hogyan lehet új dokumentumot létrehozni az Aspose.Words for .NET-ben?
 
- V: Mielőtt elkezdené manipulálni a szöveget egy dokumentumban, létre kell hoznia egy új dokumentumot az Aspose.Words for .NET használatával. Ez megtehető az a. példányosításával`Document` tárgy. Íme egy mintakód egy új dokumentum létrehozásához:
+ V: Mielőtt elkezdené manipulálni a szöveget egy dokumentumban, létre kell hoznia egy új dokumentumot az Aspose.Words for .NET használatával. Ezt úgy lehet megtenni, hogy a`Document` tárgy. Íme egy mintakód egy új dokumentum létrehozásához:
 
 ```csharp
 Document doc = new Document();

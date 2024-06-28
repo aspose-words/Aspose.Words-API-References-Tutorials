@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Krok 4: Umístěte DocumentBuilder
 
- Přesuňte`DocumentBuilder` na konec dokumentu pomocí`MoveToDocumentEnd` metoda. Vložením konce stránky oddělíte stávající obsah od vloženého dokumentu.
+Přesuňte`DocumentBuilder` na konec dokumentu pomocí`MoveToDocumentEnd` metoda. Vložením konce stránky oddělíte stávající obsah od vloženého dokumentu.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Krok 6: Uložte upravený dokument
 
- Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

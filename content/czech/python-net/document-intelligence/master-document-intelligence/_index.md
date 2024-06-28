@@ -219,7 +219,7 @@ print(predicted_label)
 
 ### Automatizace pracovních toků dokumentů
 
-Zjistěte, jak organizace využívají inteligenci dokumentů k automatizaci opakujících se úloh, jako je zpracování faktur, generování smluv a vytváření sestav.
+Zjistěte, jak organizace využívají informace o dokumentech k automatizaci opakujících se úloh, jako je zpracování faktur, generování smluv a vytváření sestav.
 
 ```python
 # Implementing document automation using Aspose.Words for Python

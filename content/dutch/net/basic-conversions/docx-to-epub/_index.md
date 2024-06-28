@@ -12,7 +12,7 @@ In deze stapsgewijze zelfstudie laten we u zien hoe u Aspose.Words voor .NET kun
 
  Om aan de slag te gaan, moet u ervoor zorgen dat Aspose.Words voor .NET is geïnstalleerd en ingesteld in uw ontwikkelomgeving. Als u dit nog niet heeft gedaan, download en installeer dan de bibliotheek van de[Aspose.Releases](https://releases.aspose.com/words/net/).
 
-## Stap 1: Het documentobject initialiseren
+## Stap 1: Initialiseren van het documentobject
 
  Eerst moet u het`Document`object door het pad naar uw brondocument in Docx-indeling op te geven. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke mappad waar uw document zich bevindt, en`"Document.docx"` met de naam van uw brondocument. Hier is het codefragment:
 
@@ -53,7 +53,7 @@ Om een DOCX-bestand naar EPUB te converteren, kunt u verschillende softwaretools
 
 #### Wat zijn de beperkingen van het conversieproces?
 
-De beperkingen van het conversieproces zijn afhankelijk van de specifieke tool of bibliotheek die u gebruikt. Voor sommige tools kunnen beperkingen gelden die verband houden met de grootte of complexiteit van het invoerdocument. Het is belangrijk om een tool te kiezen die aan de eisen van uw conversietaak kan voldoen.
+De beperkingen van het conversieproces zijn afhankelijk van de specifieke tool of bibliotheek die u gebruikt. Sommige tools kunnen beperkingen hebben met betrekking tot de grootte of complexiteit van het invoerdocument. Het is belangrijk om een tool te kiezen die aan de eisen van uw conversietaak kan voldoen.
 
 #### Kan ik de opmaak van het originele document behouden?
 

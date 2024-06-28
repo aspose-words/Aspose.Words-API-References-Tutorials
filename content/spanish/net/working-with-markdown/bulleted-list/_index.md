@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## Paso 3: Personalizar el formato de viñeta
 
-Podemos personalizar el formato de viñeta accediendo a las propiedades de`ListFormat.List.ListLevels[0]`. En este ejemplo, utilizamos el guión "-" como viñeta.
+ Podemos personalizar el formato de viñeta accediendo a las propiedades de`ListFormat.List.ListLevels[0]`. En este ejemplo, utilizamos el guión "-" como viñeta.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

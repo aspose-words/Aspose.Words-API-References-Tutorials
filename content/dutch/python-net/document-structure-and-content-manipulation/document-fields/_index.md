@@ -113,7 +113,7 @@ Door effectief om te gaan met velden en gegevens in Word-documenten kunt u dynam
 
 ## Veelgestelde vragen
 
-### Hoe kan ik de veldwaarden handmatig bijwerken?
+### Hoe update ik de veldwaarden handmatig?
 
  Om veldwaarden handmatig bij te werken, selecteert u het veld en drukt u op`F9`.
 

@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 
  โหลดเอกสารที่คุณต้องการแปลงเป็น PDF โดยใช้`Document` คลาสและเส้นทางเอกสาร
 
- สร้างอินสแตนซ์ของ`PdfSaveOptions` คลาสและตั้งค่า`FontEmbeddingMode`ทรัพย์สินเพื่อ`PdfFontEmbeddingMode.EmbedNone`. ซึ่งจะปิดใช้งานการฝังแบบอักษร Windows ในไฟล์ PDF ที่สร้างขึ้น
+ สร้างอินสแตนซ์ของ`PdfSaveOptions` คลาสและตั้งค่า`FontEmbeddingMode`ทรัพย์สินเพื่อ`PdfFontEmbeddingMode.EmbedNone`- ซึ่งจะปิดใช้งานการฝังแบบอักษร Windows ในไฟล์ PDF ที่สร้างขึ้น
 
  ใช้`Save` วิธีการของ`Document` วัตถุเพื่อแปลงเอกสารเป็น PDF โดยระบุตัวเลือกการแปลงที่กำหนดค่าไว้ก่อนหน้านี้
 

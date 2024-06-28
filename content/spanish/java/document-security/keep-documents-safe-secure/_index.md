@@ -12,7 +12,7 @@ En esta era digital, donde la información es clave, mantener sus documentos seg
 
 ## 1. Introducción
 
-En este acelerado mundo digital, la seguridad de los documentos electrónicos se ha convertido en una máxima prioridad tanto para particulares como para empresas. Las filtraciones de datos y los ciberataques han generado preocupación sobre la confidencialidad y la integridad de la información sensible. Aspose.Words para Java viene al rescate al proporcionar un conjunto completo de funciones para garantizar que sus documentos permanezcan seguros contra el acceso no autorizado.
+En este acelerado mundo digital, la seguridad de los documentos electrónicos se ha convertido en una máxima prioridad tanto para particulares como para empresas. Las violaciones de datos y los ataques cibernéticos han generado preocupación sobre la confidencialidad y la integridad de la información confidencial. Aspose.Words para Java viene al rescate proporcionando un conjunto completo de funciones para garantizar que sus documentos permanezcan seguros contra el acceso no autorizado.
 
 ## 2. Comprender la seguridad de los documentos
 

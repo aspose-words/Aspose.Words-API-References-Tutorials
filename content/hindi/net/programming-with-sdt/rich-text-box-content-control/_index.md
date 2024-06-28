@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## चरण 2: एक दस्तावेज़ और संरचित दस्तावेज़ टैग बनाएं
- का एक नया उदाहरण बनाएं`Document` कक्षा और ए`StructuredDocumentTag` रिच टेक्स्ट बॉक्स सामग्री नियंत्रण का प्रतिनिधित्व करने के लिए। उल्लिखित करना`SdtType.RichText` प्रकार और के रूप में`MarkupLevel.Block` ब्लॉक-स्तरीय रिच टेक्स्ट बॉक्स बनाने के लिए मार्कअप स्तर के रूप में।
+ का एक नया उदाहरण बनाएं`Document` कक्षा और ए`StructuredDocumentTag` रिच टेक्स्ट बॉक्स सामग्री नियंत्रण का प्रतिनिधित्व करने के लिए। उल्लिखित करना`SdtType.RichText` प्रकार के रूप में और`MarkupLevel.Block` ब्लॉक-स्तरीय रिच टेक्स्ट बॉक्स बनाने के लिए मार्कअप स्तर के रूप में।
 
 ```csharp
 Document doc = new Document();

@@ -62,7 +62,7 @@ for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
 
-## Přidávání hypertextových odkazů
+## Přidání hypertextových odkazů
 
 Aby byl obsah interaktivní, přidejte hypertextové odkazy, které čtenářům umožní přejít přímo na odpovídající části dokumentu.
 

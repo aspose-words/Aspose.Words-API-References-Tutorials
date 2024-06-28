@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-markdown/bulleted-list/
 ---
 
-I den här handledningen kommer vi att berätta för dig hur du skapar en punktlista med Aspose.Words för .NET. En punktlista används för att lista objekt utan att använda numrering.
+den här handledningen kommer vi att berätta för dig hur du skapar en punktlista med Aspose.Words för .NET. En punktlista används för att lista objekt utan att använda numrering.
 
 ## Steg 1: Använda en dokumentgenerator
 
@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## Steg 3: Anpassa Bullet Format
 
-Vi kan anpassa punktformatet genom att komma åt egenskaperna för`ListFormat.List.ListLevels[0]`. I det här exemplet använder vi bindestrecket "-" som en punkt.
+ Vi kan anpassa punktformatet genom att komma åt egenskaperna för`ListFormat.List.ListLevels[0]`. I det här exemplet använder vi bindestrecket "-" som en punkt.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

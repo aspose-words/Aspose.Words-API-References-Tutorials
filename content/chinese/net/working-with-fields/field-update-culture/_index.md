@@ -77,7 +77,7 @@ doc.Save(dataDir + "UpdateCultureChamps.pdf");
 
 #### 问：Aspose.Words 中的字段更新文化是什么？
 
-答：Aspose.Words 中的字段更新区域性是指用于格式化和更新 Word 文档中字段值的区域性。区域性决定数字、日期和其他数据更新时在字段中的显示方式。
+答：Aspose.Words中的字段更新区域性是指用于格式化和更新Word文档中字段值的区域性。区域性决定数字、日期和其他数据更新时在字段中的显示方式。
 
 #### 问：如何使用 Aspose.Words 设置 Word 文档中字段的更新区域性？
 

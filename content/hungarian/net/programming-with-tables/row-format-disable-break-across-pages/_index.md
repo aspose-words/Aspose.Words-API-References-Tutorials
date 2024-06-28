@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
 
-Ebben az oktatóanyagban megtudjuk, hogyan lehet letiltani egy többoldalas táblázat sortörését egy Word-dokumentumban az Aspose.Words for .NET használatával. A kód megértéséhez és ennek a funkciónak a megvalósításához lépésről lépésre követjük az útmutatót. Ennek az oktatóanyagnak a végére letilthatja a sortörést a táblázat összes sorában a Word-dokumentumokban.
+Ebben az oktatóanyagban megtudjuk, hogyan lehet letiltani egy többoldalas táblázat sortörését egy Word-dokumentumban az Aspose.Words for .NET használatával. A kód megértéséhez és ennek a funkciónak a megvalósításához lépésről lépésre követjük az útmutatót. Ennek az oktatóanyagnak a végére letilthatja a sortörést a Word-dokumentumok táblázatának összes sorában.
 
 ## 1. lépés: A projekt beállítása
 1. Indítsa el a Visual Studio programot, és hozzon létre egy új C# projektet.
@@ -58,7 +58,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-// Tiltsa le az oldalak közötti törést a táblázat összes sorában.
+// Az oldalak közötti törés letiltása a táblázat összes sorában.
 foreach (Row row in table.Rows)
 	row.RowFormat.AllowBreakAcrossPages = false;
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");

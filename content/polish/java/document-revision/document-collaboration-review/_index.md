@@ -22,7 +22,7 @@ Zanim zajmiemy się współpracą i przeglądaniem dokumentów, skonfigurujmy na
 
 3. Zainicjuj Aspose.Words: Zainicjuj Aspose.Words w kodzie Java, aby rozpocząć korzystanie z jego funkcji.
 
-Teraz, gdy mamy skonfigurowany Aspose.Words dla Java, przejdźmy do współpracy nad dokumentacją.
+Teraz, gdy mamy już skonfigurowany Aspose.Words dla Java, przejdźmy do współpracy nad dokumentacją.
 
 ## Współpraca dokumentacyjna
 
@@ -30,7 +30,7 @@ Współpraca jest niezbędna, gdy wielu członków zespołu pracuje nad tym samy
 
 ## Krok 1: Udostępnienie dokumentu
 
-Aby rozpocząć współpracę, udostępnij dokument członkom zespołu. Do dystrybucji dokumentu możesz używać różnych platform udostępniania plików lub poczty e-mail.
+Aby rozpocząć współpracę, udostępnij dokument członkom zespołu. Do rozpowszechniania dokumentu możesz używać różnych platform udostępniania plików lub poczty e-mail.
 
 ## Krok 2: Śledzenie zmian
 
@@ -41,7 +41,7 @@ Document doc = new Document("document.docx");
 doc.startTrackRevisions("Author Name");
 ```
 
-## Krok 3: Przeglądanie zmian
+## Krok 3: Przegląd zmian
 
 Członkowie zespołu mogą przeglądać zmiany wprowadzone w dokumencie i przekazywać komentarze lub sugestie. Aspose.Words for Java umożliwia programowy dostęp do tych komentarzy i ich przetwarzanie.
 

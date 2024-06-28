@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## Schritt 3: Fügen Sie einen neuen Abschnitt hinzu
- Um dem Dokument einen neuen Abschnitt hinzuzufügen, erstellen wir eine Instanz von`Section` Klasse und fügen Sie sie der hinzu`Sections` Sammlung des Dokuments.
+ Um dem Dokument einen neuen Abschnitt hinzuzufügen, erstellen wir eine Instanz von`Section` Klasse und fügen Sie sie der hinzu`Sections` Sammlung der Dokumente.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
@@ -82,7 +82,7 @@ builder. Writen("Hello2");
 
 #### F: Wie füge ich in Aspose.Words für .NET einen neuen Abschnitt zum Dokument hinzu?
 
- A: Um dem Dokument in Aspose.Words für .NET einen neuen Abschnitt hinzuzufügen, können Sie eine Instanz davon erstellen`Section` Klasse und fügen Sie sie der hinzu`Sections` Sammlung des Dokuments:
+ A: Um dem Dokument in Aspose.Words für .NET einen neuen Abschnitt hinzuzufügen, können Sie eine Instanz davon erstellen`Section` Klasse und fügen Sie sie der hinzu`Sections` Sammlung der Dokumente:
 
 ```csharp
 Section sectionToAdd = new Section(doc);

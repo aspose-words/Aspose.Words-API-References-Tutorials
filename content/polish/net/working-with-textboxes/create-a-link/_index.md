@@ -48,7 +48,7 @@ if (textBox1.IsValidLinkTarget(textBox2))
 ```
 ## Wniosek
 
-Gratulacje! Nauczyłeś się teraz, jak utworzyć łącze między dwoma polami tekstowymi w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Korzystając z tego przewodnika krok po kroku, można było skonfigurować dokument, utworzyć kształty pól tekstowych, uzyskać dostęp do pól tekstowych, sprawdzić ważność celu łącza i na koniec utworzyć samo łącze.
+Gratulacje! Nauczyłeś się teraz, jak utworzyć łącze pomiędzy dwoma polami tekstowymi w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla platformy .NET. Korzystając z tego przewodnika krok po kroku, można było skonfigurować dokument, utworzyć kształty pól tekstowych, uzyskać dostęp do pól tekstowych, sprawdzić ważność celu łącza i na koniec utworzyć samo łącze.
 
 ### Często zadawane pytania dotyczące tworzenia łącza w programie Word
 

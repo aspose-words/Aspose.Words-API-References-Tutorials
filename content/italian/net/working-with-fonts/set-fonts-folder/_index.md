@@ -15,7 +15,7 @@ Prima di iniziare, assicurati di avere i seguenti elementi:
 - La libreria Aspose.Words per .NET installata nel tuo progetto
 
 ## Passaggio 1: definire la directory dei documenti
- Inizia impostando il percorso della directory sulla posizione del tuo documento Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
+Inizia impostando il percorso della directory sulla posizione del tuo documento Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

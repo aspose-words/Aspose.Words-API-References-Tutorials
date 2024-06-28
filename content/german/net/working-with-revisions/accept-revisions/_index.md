@@ -1,6 +1,6 @@
 ---
-title: Überarbeitungen akzeptieren
-linktitle: Überarbeitungen akzeptieren
+title: Akzeptieren Sie Bewertungen
+linktitle: Akzeptieren Sie Bewertungen
 second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Überarbeitungen an einem Word-Dokument akzeptieren
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Der Absatz zum Löschen der Revision wird entfernt, sobald wir die Änderungen akzeptieren.
+// Der gelöschte Revisionsabsatz wird entfernt, sobald wir die Änderungen akzeptieren.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-list/restart-list-at-each-section/
 ---
 
-W tym samouczku krok po kroku pokażemy, jak zresetować listę numerowaną dla każdej sekcji dokumentu programu Word przy użyciu Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+tym samouczku krok po kroku pokażemy, jak zresetować listę numerowaną dla każdej sekcji dokumentu programu Word przy użyciu Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
 
  Aby rozpocząć, upewnij się, że masz zainstalowane i skonfigurowane Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -28,7 +28,7 @@ list. IsRestartAtEachSection = true;
 
 ## Krok 2: Dodawanie pozycji do listy
 
- Następnie użyj A`DocumentBuilder` aby dodać pozycje do listy. Możesz użyć pętli, aby dodać wiele elementów do listy:
+ Następnie użyj A`DocumentBuilder` aby dodać elementy do listy. Możesz użyć pętli, aby dodać wiele elementów do listy:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -91,12 +91,12 @@ Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go t
 
 #### P: Jak mogę ponownie uruchomić listę w każdej sekcji Aspose.Words?
 
- O: Aby zrestartować listę w każdej sekcji Aspose.Words, musisz utworzyć instancję`List` class i przypisz do niej listę numerowaną. Następnie możesz użyć`List.IsRestartAtEachSection` aby określić, że numeracja powinna być rozpoczynana od nowa w każdej sekcji. Możesz powiązać tę listę z jedną lub kilkoma sekcjami dokumentu, aby numeracja została poprawnie wznowiona w każdej sekcji.
+ O: Aby zrestartować listę w każdej sekcji Aspose.Words, musisz utworzyć instancję`List`class i przypisz do niej listę numerowaną. Następnie możesz użyć`List.IsRestartAtEachSection` aby określić, że numeracja powinna być rozpoczynana od nowa w każdej sekcji. Możesz powiązać tę listę z jedną lub kilkoma sekcjami dokumentu, aby numeracja została poprawnie wznowiona w każdej sekcji.
 
 #### P: Czy mogę dostosować format numeracji list w Aspose.Words?
 
-O: Tak, możesz dostosować format numeracji list w Aspose.Words. The`List` class oferuje do tego kilka właściwości, takich jak`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`itp. Możesz użyć tych właściwości, aby ustawić typ listy (numerowana, punktowana itp.), format numeracji (cyfry arabskie, cyfry rzymskie, litery itp.) i inne opcje formatowania numeracji.
+ O: Tak, możesz dostosować format numeracji list w Aspose.Words. The`List` class oferuje do tego kilka właściwości, takich jak`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`itp. Możesz użyć tych właściwości, aby ustawić typ listy (numerowana, punktowana itp.), format numeracji (cyfry arabskie, cyfry rzymskie, litery itp.) i inne opcje formatowania numeracji.
 
 #### P: Czy można dodać dodatkowe poziomy do listy numerowanej w Aspose.Words?
 
- O: Tak, możliwe jest dodanie dodatkowych poziomów do listy numerowanej w Aspose.Words. The`ListLevel` class umożliwia ustawienie właściwości formatowania dla każdego poziomu listy. Możesz ustawić opcje takie jak przedrostek, przyrostek, wyrównanie, wcięcie itp. Umożliwia to tworzenie list o wielu poziomach hierarchii.
+ O: Tak, możliwe jest dodanie dodatkowych poziomów do listy numerowanej w Aspose.Words. The`ListLevel`class umożliwia ustawienie właściwości formatowania dla każdego poziomu listy. Możesz ustawić opcje takie jak przedrostek, przyrostek, wyrównanie, wcięcie itp. Umożliwia to tworzenie list o wielu poziomach hierarchii.

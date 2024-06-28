@@ -104,7 +104,7 @@ table.description = "Figures are in USD."
 
 ## 表格的響應式設計：
 
-在佈局不同的文件中，響應式表格設計變得至關重要。根據可用空間調整列寬和儲存格高度可確保表格保持可讀性和視覺吸引力。
+在具有不同佈局的文件中，響應式表格設計變得至關重要。根據可用空間調整列寬和儲存格高度可確保表格保持可讀性和視覺吸引力。
 
 ```python
 # Check available space and adjust column widths accordingly

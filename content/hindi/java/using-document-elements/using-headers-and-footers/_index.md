@@ -189,7 +189,7 @@ Aspose.Words आपको एक दस्तावेज़ के भीतर
         row.getLastCell().getCellFormat().setPreferredWidth(PreferredWidth.fromPercent(100 * 2 / 3));
         doc.save("Your Directory Path" + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```	
-CopyHeadersFootersFromPreviousSection पद्धति का स्रोत कोड
+CopyHeadersFootersFromPreviousSection विधि का स्रोत कोड
 ```java
     /// <सारांश>
     /// क्लोन और कॉपी हेडर/फुटर निर्दिष्ट अनुभाग के पिछले अनुभाग का निर्माण करते हैं।
@@ -217,7 +217,7 @@ CopyHeadersFootersFromPreviousSection पद्धति का स्रोत 
  आप डालकर पेज नंबर जोड़ सकते हैं`PAGE` Aspose.Words का उपयोग करके पादलेख में फ़ील्ड डालें।
 
 ### 2. क्या Aspose.Words जावा विकास परिवेश के साथ संगत है?
-हाँ, Aspose.Words जावा विकास के लिए समर्थन प्रदान करता है। सुनिश्चित करें कि आपके पास आवश्यक सेटअप मौजूद है।
+हाँ, Aspose.Words जावा विकास के लिए सहायता प्रदान करता है। सुनिश्चित करें कि आपके पास आवश्यक सेटअप मौजूद है।
 
 ### 3. क्या मैं शीर्षलेख और पादलेख के फ़ॉन्ट और शैली को अनुकूलित कर सकता हूँ?
 बिल्कुल, आप अपने हेडर और फ़ूटर को दृश्यमान रूप से आकर्षक बनाने के लिए फ़ॉन्ट, संरेखण और अन्य शैलियों को अनुकूलित कर सकते हैं।

@@ -18,16 +18,16 @@ Trong ví dụ này, chúng tôi sẽ giải thích cách sử dụng tính năn
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Bước 2: Thêm kiểu cho mã thụt lề
+## Bước 2: Thêm kiểu cho mã được chỉ định
 
- Chúng tôi sẽ thêm kiểu tùy chỉnh cho mã thụt lề bằng cách sử dụng`Styles.Add` phương pháp của`Document` sự vật. Trong ví dụ này, chúng tôi đang tạo một kiểu có tên là "IndentedCode" cho mã thụt lề.
+Chúng tôi sẽ thêm kiểu tùy chỉnh cho mã thụt lề bằng cách sử dụng`Styles.Add` phương pháp của`Document` sự vật. Trong ví dụ này, chúng tôi đang tạo một kiểu có tên là "IndentedCode" cho mã thụt lề.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Bước 3: Thêm mã thụt lề
+## Bước 3: Thêm mã được chỉ định
 
 Bây giờ chúng ta có thể thêm khối mã thụt lề bằng cách sử dụng kiểu tùy chỉnh "IndentedCode".
 
@@ -51,7 +51,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng mã 
 
 ### Câu hỏi thường gặp
 
-#### Câu hỏi: Mã thụt lề trong Markdown là gì?
+#### Câu hỏi: Mã được chỉ định trong Markdown là gì?
 
 Trả lời: Mã thụt lề trong Markdown là một phương pháp định dạng được sử dụng để hiển thị mã trong tài liệu Markdown. Nó bao gồm việc thụt lề từng dòng mã bằng dấu cách hoặc tab.
 

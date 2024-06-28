@@ -79,7 +79,7 @@ V: A Word dokumentumokban lévő digitális aláírások olyan elektronikus alá
 
 V: Az Aspose.Words for .NET használatával a Word-dokumentumban lévő digitális aláírások eléréséhez kövesse az alábbi lépéseket:
 1.  Töltse be a dokumentumot a gombbal`Document` osztályt, és adja meg a dokumentumfájl elérési útját.
-2.  Használjon egy ciklust az iterációhoz`DigitalSignatures` a dokumentum gyűjteménye. Minden iteráció egy digitális aláírást jelent.
+2.  Használjon hurkot a`DigitalSignatures` a dokumentumok gyűjteménye. Minden iteráció egy digitális aláírást jelent.
 
 #### K: Milyen információkhoz férhetek hozzá egy Word-dokumentumban lévő digitális aláírásból?
 
@@ -97,13 +97,13 @@ V: A Word-dokumentumban lévő digitális aláírásból különféle informáci
 #### K: Hogyan ellenőrizhetem a digitális aláírások érvényességét egy Word-dokumentumban az Aspose.Words for .NET használatával?
 
 V: A Word-dokumentumban lévő digitális aláírások érvényességének ellenőrzéséhez az Aspose.Words for .NET használatával, kövesse az alábbi lépéseket:
-1.  Hozzáférés a`DigitalSignatures` a dokumentum gyűjteménye.
+1.  Hozzáférés a`DigitalSignatures` a dokumentumok gyűjteménye.
 2.  Ismételje meg mindegyiket`DigitalSignature` tárgy a gyűjteményben.
 3.  Használja a`IsValid` tulajdona a`DigitalSignature` objektumot, hogy ellenőrizze, hogy az aláírás érvényes-e.
 
 #### K: Lekérhetem az aláíró megjegyzéseit vagy az aláírás indokát egy Word dokumentumban lévő digitális aláírásból?
 
-V: Igen, lekérheti az aláíró megjegyzéseit vagy az aláírás indokait egy Word-dokumentumban lévő digitális aláírásból. A`Comments` tulajdona a`DigitalSignature` objektum hozzáférést biztosít az aláíró által az aláírási folyamat során megadott megjegyzésekhez.
+V: Igen, lekérheti az aláíró megjegyzéseit vagy az aláírás indokait egy Word-dokumentumban lévő digitális aláírásból. A`Comments` tulajdona a`DigitalSignature` Az objektum hozzáférést biztosít az aláíró által az aláírási folyamat során megadott megjegyzésekhez.
 
 #### K: Milyen típusú dokumentumokat támogat az aláírás-ellenőrzési funkció az Aspose.Words for .NET-ben?
 

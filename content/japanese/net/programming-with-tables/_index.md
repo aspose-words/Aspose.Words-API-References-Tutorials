@@ -17,9 +17,9 @@ url: /ja/net/programming-with-tables/
 | タイトル | 説明 |
 | --- | --- |
 | [テーブルをコンテンツに自動調整](./auto-fit-table-to-contents/) | Aspose.Words for .NET を使用して、表を Word 文書の内容に自動的に合わせる方法を学びます。 |
-| [完全なテーブルのクローンを作成する](./clone-complete-table/) | Aspose.Words for .NET を使用して、表全体を Word 文書に複製する方法を学びます。 |
+| [完全なテーブルのクローンを作成する](./clone-complete-table/) | Aspose.Words for .NET を使用して、テーブル全体のクローンを Word ドキュメントに作成する方法を学びます。 |
 | [インデックスの検索](./finding-index/) | Aspose.Words for .NET を使用して Word 文書内のテーブル、行、セルのインデックスを検索する方法を学びます。 |
-| [テーブルを直接挿入](./insert-table-directly/) | Aspose.Words for .NET を使用して Word 文書に表を直接挿入する方法を学びます。 |
+| [テーブルを直接挿入](./insert-table-directly/) | Aspose.Words for .NET を使用して Word 文書に表を直接挿入する方法を学びます。詳細なステップバイステップのガイドに従って、ドキュメントの作成を効率化します。 |
 | [HTML からテーブルを挿入](./insert-table-from-html/) | Aspose.Words for .NET を使用して、HTML から Word 文書に表を挿入する方法を学びます。 |
 | [単純なテーブルの作成](./create-simple-table/) | Aspose.Words for .NET を使用して Word 文書内に簡単な表を作成する方法を学びます。 |
 | [フォーマットされたテーブル](./formatted-table/) | Aspose.Words for .NET を使用して Word 文書内に書式設定された表を作成する方法を学びます。 |

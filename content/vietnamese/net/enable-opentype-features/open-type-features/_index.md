@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "OpenType text shaping.docx");
 ```
 
 ## Bước 2: Kích hoạt tính năng loại mở
-Để bật các tính năng Loại mở, hãy đặt thuộc tính TextShaperFactory của lớp LayoutOptions thành một phiên bản của nhà máy tạo hình văn bản mong muốn. Trong ví dụ này, chúng tôi sử dụng HarfBuzzTextShaperFactory:
+Để bật các tính năng của Loại mở, hãy đặt thuộc tính TextShaperFactory của lớp LayoutOptions thành một phiên bản của nhà máy tạo hình văn bản mong muốn. Trong ví dụ này, chúng tôi sử dụng HarfBuzzTextShaperFactory:
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
 ## Phần kết luận
-Chúc mừng! Bạn đã học thành công cách bật và sử dụng các tính năng Loại mở trong Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, giờ đây bạn có thể làm việc với các tính năng Loại mở trong tài liệu Word của mình.
+Chúc mừng! Bạn đã học thành công cách bật và sử dụng các tính năng Open Type trong Aspose.Words for .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, giờ đây bạn có thể làm việc với các tính năng Loại mở trong tài liệu Word của mình.
 
 Các tính năng của Open Type cung cấp khả năng tạo kiểu chữ và định hình văn bản nâng cao, cho phép bạn tạo các tài liệu trông hấp dẫn và chuyên nghiệp về mặt trực quan. Thử nghiệm với các nhà máy tạo hình văn bản khác nhau và khám phá khả năng của các tính năng Kiểu mở trong dự án của bạn.
 

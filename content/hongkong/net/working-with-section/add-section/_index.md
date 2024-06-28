@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## 第 3 步：新增部分
-若要為文件新增部分，我們將建立一個實例`Section`類別並將其添加到`Sections`文檔的集合。
+若要為文件新增部分，我們將建立一個實例`Section`類別並將其添加到`Sections`文件收集。
 
 ```csharp
 Section sectionToAdd = new Section(doc);

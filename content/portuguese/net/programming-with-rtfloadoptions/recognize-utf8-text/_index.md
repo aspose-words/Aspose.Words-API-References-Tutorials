@@ -31,7 +31,7 @@ RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
 ```
 
- Nesta etapa, carregamos o documento RTF usando o`Document` método e passando o caminho para o arquivo RTF a ser carregado, juntamente com as opções de carregamento especificadas.
+ Nesta etapa, carregamos o documento RTF usando o`Document` método e passando o caminho para o arquivo RTF a ser carregado, junto com as opções de carregamento especificadas.
 
 ## Etapa 4: salve o documento
 
@@ -67,4 +67,4 @@ Neste tutorial, exploramos o recurso de reconhecimento de texto Utf-8 com opçõ
 
 Este recurso é essencial para garantir a exibição correta dos caracteres Utf-8 em seus documentos RTF. Ao configurar as opções de carregamento adequadas, o Aspose.Words é capaz de reconhecer e processar corretamente esses caracteres, ajudando a preservar a integridade e a qualidade do texto.
 
-reconhecimento de texto Utf-8 é especialmente importante no processamento de palavras com idiomas e conjuntos de caracteres específicos que exigem suporte à codificação Utf-8. Graças ao Aspose.Words for .NET, você pode manipular facilmente documentos RTF contendo caracteres Utf-8 sem risco de perda ou corrupção.
+reconhecimento de texto Utf-8 é especialmente importante no processamento de palavras com idiomas e conjuntos de caracteres específicos que requerem suporte à codificação Utf-8. Graças ao Aspose.Words for .NET, você pode manipular facilmente documentos RTF contendo caracteres Utf-8 sem risco de perda ou corrupção.

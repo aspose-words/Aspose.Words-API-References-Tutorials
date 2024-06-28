@@ -17,7 +17,7 @@ Ujistěte se, že máte následující předpoklady:
 - Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
 - Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
 
-## Krok 2: Vytvořte nový dokument a vložte graf
+## Krok 2: Vytvořte nový dokument a vložte graf.
 
  Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
 
@@ -129,7 +129,7 @@ Tím je dokončena implementace definování vlastností osy XY v grafu pomocí 
 
 ## Závěr
 
-V tomto tutoriálu jste se naučili, jak definovat vlastnosti pro osy X a Y v grafu pomocí Aspose.Words for .NET. Podle podrobného průvodce můžete vytvořit graf, přidat data řady a přizpůsobit vlastnosti osy tak, aby vyhovovaly vašim specifickým požadavkům. Aspose.Words for .NET poskytuje komplexní rozhraní API pro textové zpracování s grafy v dokumentech aplikace Word, které vám umožňuje manipulovat s různými aspekty grafu, včetně os.
+V tomto tutoriálu jste se naučili, jak definovat vlastnosti pro osy X a Y v grafu pomocí Aspose.Words for .NET. Podle podrobného průvodce můžete vytvořit graf, přidat data řady a přizpůsobit vlastnosti osy tak, aby vyhovovaly vašim konkrétním požadavkům. Aspose.Words for .NET poskytuje komplexní rozhraní API pro textové zpracování s grafy v dokumentech aplikace Word, které vám umožňuje manipulovat s různými aspekty grafu, včetně os.
 
 Přístupem k`ChartAxis` objektů spojených s grafem, můžete upravit vlastnosti, jako je typ kategorie, křížení os, značky zatržení, pozice štítků, měřítko a další. Tato flexibilita vám umožňuje přizpůsobit vzhled a chování os grafu tak, abyste efektivně prezentovali svá data.
 
@@ -141,7 +141,7 @@ Pomocí Aspose.Words for .NET můžete bezproblémově integrovat možnosti tvor
 Aspose.Words for .NET je výkonná knihovna pro zpracování dokumentů, která umožňuje vývojářům vytvářet, manipulovat a ukládat dokumenty Word programově v aplikacích .NET. Poskytuje širokou škálu funkcí pro textové zpracování s prvky dokumentu, včetně grafů.
 
 #### Q2. Jak mohu nainstalovat Aspose.Words pro .NET?
-Aspose.Words for .NET můžete nainstalovat stažením pomocí správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Aspose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
+Aspose.Words for .NET můžete nainstalovat stažením pomocí správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Apose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
 
 #### Q3. Mohu upravit další aspekty grafu pomocí Aspose.Words pro .NET?
 Ano, Aspose.Words for .NET poskytuje rozsáhlé možnosti pro přizpůsobení různých aspektů grafu. Kromě definování vlastností os můžete upravit typ grafu, datovou řadu, legendu, nadpis, oblast vykreslení, popisky dat a mnoho dalších prvků grafu. Rozhraní API nabízí jemnou kontrolu nad vzhledem a chováním grafu.

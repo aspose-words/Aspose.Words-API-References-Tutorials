@@ -31,7 +31,7 @@ Document doc = new Document();
 doc.save("NewDocument.docx");
 ```
 
-يقوم هذا الرمز بإنشاء مستند Word فارغ وحفظه باسم "NewDocument.docx." يمكنك تخصيص المستند بشكل أكبر عن طريق إضافة المحتوى والتنسيق.
+يقوم هذا الرمز بإنشاء مستند Word فارغ وحفظه باسم "NewDocument.docx". يمكنك تخصيص المستند بشكل أكبر عن طريق إضافة المحتوى والتنسيق.
 
 ## إضافة وتنسيق الفقرات
 
@@ -321,7 +321,7 @@ doc.save("HeaderFooterDocument.docx");
 // إنشاء مستند جديد
 Document doc = new Document();
 
-// إنشاء جدول مكون من 3 صفوف و3 أعمدة
+// إنشاء جدول مكون من 3 صفوف و3 أعمدة.
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

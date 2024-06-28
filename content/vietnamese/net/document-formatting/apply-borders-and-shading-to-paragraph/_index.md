@@ -91,7 +91,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã học cách áp dụng đường viền và tô bóng cho một đoạn văn trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách định cấu hình đoạn văn`Borders` Và`Shading` Properties, chúng tôi có thể đặt kiểu đường viền, màu đường và màu tô cho đoạn văn. Aspose.Words for .NET cung cấp khả năng định dạng mạnh mẽ để tùy chỉnh giao diện của các đoạn văn và nâng cao khả năng trình bày trực quan cho tài liệu của bạn.
+ Trong hướng dẫn này, chúng ta đã học cách áp dụng đường viền và tô bóng cho một đoạn văn trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách định cấu hình đoạn văn`Borders` Và`Shading` Properties, chúng tôi có thể đặt kiểu đường viền, màu đường và màu tô cho đoạn văn. Aspose.Words for .NET cung cấp khả năng định dạng mạnh mẽ để tùy chỉnh giao diện của các đoạn văn và nâng cao khả năng trình bày trực quan cho tài liệu của bạn.
 
 ### Câu hỏi thường gặp
 
@@ -100,13 +100,13 @@ Trong hướng dẫn này, chúng ta đã học cách áp dụng đường viề
 Trả lời: Để áp dụng đường viền và bóng cho một đoạn trong tài liệu Word bằng Aspose.Words cho .NET, hãy làm theo các bước sau:
 1.  Tạo một tài liệu mới và một`DocumentBuilder` sự vật.
 2.  Định cấu hình đường viền đoạn văn bằng cách truy cập`Borders` tài sản của`ParagraphFormat` và thiết lập kiểu đường viền cho mỗi bên.
-3.  Định cấu hình điền đoạn văn bằng cách truy cập`Shading` tài sản của`ParagraphFormat` và chỉ định kết cấu và màu tô.
+3. Định cấu hình điền đoạn văn bằng cách truy cập`Shading` tài sản của`ParagraphFormat` và chỉ định kết cấu và màu tô.
 4.  Thêm nội dung vào đoạn văn bằng cách sử dụng`Write` phương pháp của`DocumentBuilder`.
 5.  Lưu tài liệu bằng cách sử dụng`Save` phương pháp.
 
 #### Hỏi: Làm cách nào để đặt kiểu đường viền cho mỗi bên của đoạn văn?
 
- Đáp: Để đặt kiểu đường viền cho mỗi cạnh của đoạn văn, bạn có thể truy cập vào`Borders` tài sản của`ParagraphFormat` và thiết lập`LineStyle` tài sản cho mỗi người`BorderType` (ví dụ,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Bạn có thể chỉ định các kiểu đường khác nhau như`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, vân vân.
+ Đáp: Để đặt kiểu đường viền cho mỗi cạnh của đoạn văn, bạn có thể truy cập vào`Borders` tài sản của`ParagraphFormat` và thiết lập`LineStyle` tài sản cho mỗi người`BorderType` (ví dụ.,`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). Bạn có thể chỉ định các kiểu đường khác nhau như`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, vân vân.
 
 #### Hỏi: Làm cách nào để chỉ định họa tiết và màu tô cho phần tô bóng đoạn văn?
 

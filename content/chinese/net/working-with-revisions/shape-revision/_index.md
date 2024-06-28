@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## 第 3 步：获取形状集合并检查修订情况
+## 第 3 步：获取形状集合并检查是否有修订。
 
 我们将从文档中获取形状集合并检查与每个形状相关的修订。
 

@@ -248,7 +248,7 @@ pip install aspose-words
 
  Igen, beállíthatja az űrlapmezők alapértelmezett értékeit a megfelelő tulajdonságokkal. Például egy szövegbeviteli mező alapértelmezett szövegének beállításához használja a`text` ingatlan.
 
-### Hozzáférhetők-e az űrlapmezők a fogyatékkal élő felhasználók számára?
+### Hozzáférhetők az űrlapmezők a fogyatékkal élő felhasználók számára?
 
 Teljesen. Űrlapok tervezésekor vegye figyelembe a kisegítő lehetőségekre vonatkozó irányelveket, amelyek biztosítják, hogy a fogyatékkal élő felhasználók képernyőolvasók és más segítő technológiák segítségével interakcióba léphessenek az űrlapmezőkkel.
 

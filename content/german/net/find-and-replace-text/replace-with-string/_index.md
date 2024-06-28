@@ -75,7 +75,7 @@ In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie di
 
 #### F: Was ist die Funktion „Mit String ersetzen“ in Aspose.Words für .NET?
 
-A: Mit der Funktion „Durch Zeichenfolge ersetzen“ in Aspose.Words für .NET können Sie Text auf der Grundlage einer bestimmten Zeichenfolge in einem Word-Dokument ersetzen. Es ermöglicht Ihnen, Vorkommen einer bestimmten Zeichenfolge zu finden und diese durch eine andere angegebene Zeichenfolge zu ersetzen.
+A: Mit der Funktion „Durch Zeichenfolge ersetzen“ in Aspose.Words für .NET können Sie eine Textersetzung basierend auf einer bestimmten Zeichenfolge in einem Word-Dokument durchführen. Es ermöglicht Ihnen, Vorkommen einer bestimmten Zeichenfolge zu finden und diese durch eine andere angegebene Zeichenfolge zu ersetzen.
 
 #### F: Wie kann ich mit Aspose.Words für .NET ein neues Dokument erstellen?
 

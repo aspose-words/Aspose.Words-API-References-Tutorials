@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- In diesem Schritt erstellen wir ein neues`Document` Objekt und ein zugehöriges Objekt`DocumentBuilder` Objekt. Mit diesen Objekten können wir unser Dokument bearbeiten und generieren.
+In diesem Schritt erstellen wir ein neues`Document` Objekt und ein zugehöriges Objekt`DocumentBuilder` Objekt. Mit diesen Objekten können wir unser Dokument bearbeiten und generieren.
 
 ## Schritt 3: Erstellen einer Liste mit drei Einrückungsebenen
 
@@ -110,7 +110,7 @@ Richten Sie Ihre Entwicklungsumgebung ein, indem Sie die erforderlichen Referenz
  Ja, Sie können die Anzahl der Tabulatorzeichen pro Ebene für die Listeneinrückung anpassen, indem Sie den Wert von ändern`ListIndentation.Count` Eigentum in der`TxtSaveOptions` Klasse. Sie können die Anzahl der gewünschten Tabulatorzeichen für jede Einrückungsebene angeben.
 
 #### F: Welche anderen Zeichen kann ich für die Listeneinrückung mit Aspose.Words für .NET verwenden?
- Neben Tabulatorzeichen können Sie mit Aspose.Words für .NET auch andere Zeichen zum Einrücken von Listen verwenden. Sie können das einstellen`ListIndentation.Character` -Eigenschaft auf ein beliebiges Zeichen, z. B. ein Leerzeichen (`' '`), zum Einrücken von Listen.
+ Neben Tabulatorzeichen können Sie mit Aspose.Words für .NET auch andere Zeichen zum Einrücken von Listen verwenden. Sie können das einstellen`ListIndentation.Character` -Eigenschaft auf ein beliebiges Zeichen, z. B. ein Leerzeichen (`' '`), zur Identifizierung von Listen.
 
 #### F: Bietet Aspose.Words für .NET weitere Funktionen zum Verwalten von Listen?
 Ja, Aspose.Words für .NET bietet viele Funktionen zum Verwalten von Listen in Word-Dokumenten. Sie können nummerierte Listen oder Listen mit Aufzählungszeichen erstellen, Einrückungsstufen festlegen, den Stil von Listen anpassen, Listenelemente hinzufügen und vieles mehr.

@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## 4. lépés: Importáljon és fűzzen hozzá bekezdéseket
 
-Ismételje meg a forrásdokumentum bekezdéseit, és importálja az egyes bekezdéseket a céldokumentumba a segítségével`importer`. Az importált csomópontok hozzáfűzése a céldokumentum törzséhez.
+ Ismételje meg a forrásdokumentum bekezdéseit, és importálja az egyes bekezdéseket a céldokumentumba a segítségével`importer`. Az importált csomópontok hozzáfűzése a céldokumentum törzséhez.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -59,7 +59,7 @@ foreach (Paragraph srcPara in srcParas)
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-Ezzel befejeződik a forrásdokumentumnak a céldokumentumhoz való hozzáfűzése, miközben megtartja az eredeti számozási formázást az Aspose.Words for .NET használatával.
+Ezzel befejeződik a forrásdokumentumnak a céldokumentumhoz való hozzáfűzésének megvalósítása, miközben megtartja az eredeti számozási formázást az Aspose.Words for .NET használatával.
 
 ### Példa forráskód a Keep Source Numbering használatához az Aspose.Words for .NET használatával 
 
@@ -69,7 +69,7 @@ Ezzel befejeződik a forrásdokumentumnak a céldokumentumhoz való hozzáfűzé
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Tartsa meg a forráslista formázását számozott bekezdések importálásakor.
+	//Tartsa meg a forráslista formázását számozott bekezdések importálásakor.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

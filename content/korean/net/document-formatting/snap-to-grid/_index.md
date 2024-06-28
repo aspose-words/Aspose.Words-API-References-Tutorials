@@ -94,6 +94,6 @@ A: 격자에 맞추기는 개체의 일관된 정렬을 유지하여 문서의 �
 
 A: Aspose.Words for .NET은 Word 문서에서 Snap to Grid를 구현하는 데 사용할 수 있는 솔루션 중 하나입니다. 다른 방법과 도구도 있지만 Aspose.Words for .NET은 프로그래밍 방식으로 Word 문서 작업을 위한 강력한 API와 기능을 제공합니다.
 
-#### Q: Aspose.Words for .NET을 사용하여 다른 문서 기능과 함께 작업할 수 있나요?
+#### Q: Aspose.Words for .NET을 사용하여 다른 문서 기능과 함께 작업할 수 있습니까?
 
 A: 예, Aspose.Words for .NET은 Word 문서 작업을 위한 다양한 기능을 제공합니다. 여기에는 텍스트 조작, 페이지 레이아웃, 표, 이미지 등의 기능이 포함되어 있습니다. .NET용 Aspose.Words를 사용하여 Word 문서를 생성, 수정 및 변환할 수 있습니다.

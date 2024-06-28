@@ -75,7 +75,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 #### 问：Protect 方法中的 ProtectionType 参数的用途是什么？
 
-答： 的`ProtectionType`中的参数`Protect`Aspose.Words for .NET 的方法允许您指定要应用于文档的保护类型。在密码保护的情况下，您可以设置`ProtectionType`到`NoProtection`表明该文档受密码保护。
+答： 的`ProtectionType`中的参数`Protect` Aspose.Words for .NET 的方法允许您指定要应用于文档的保护类型。在密码保护的情况下，您可以设置`ProtectionType`到`NoProtection`表明该文档受密码保护。
 
 #### 问：我可以使用 Aspose.Words for .NET 从 Word 文档中删除密码保护吗？
 

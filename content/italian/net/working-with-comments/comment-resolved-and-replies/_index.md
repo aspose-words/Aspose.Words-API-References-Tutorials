@@ -84,7 +84,7 @@ La risoluzione dei commenti aiuta a tenere traccia e gestire il feedback all'int
 
 #### D: Come posso aggiungere una risposta a un commento risolto in Aspose.Words per .NET?
 
- R: Sebbene i commenti risolti siano nascosti per impostazione predefinita nel documento finale, puoi comunque aggiungere una risposta a un commento risolto utilizzando il file`Comment.AddReply` metodo specificando il testo della risposta e dove vuoi aggiungerlo.
+ R: Sebbene i commenti risolti siano nascosti per impostazione predefinita nel documento finale, puoi comunque aggiungere una risposta a un commento risolto utilizzando il file`Comment.AddReply`metodo specificando il testo della risposta e dove vuoi aggiungerlo.
 
 #### D: Come posso visualizzare i commenti risolti in Aspose.Words per .NET?
 

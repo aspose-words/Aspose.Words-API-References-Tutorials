@@ -57,7 +57,7 @@ foreach (Paragraph para in paragraphs)
 }
 ```
 
-A fenti kódrészlet végigfut a dokumentum összes bekezdésén, és ellenőrzi, hogy minden bekezdés előtt van-e oldaltörés. Ha oldaltörést észlel, az törlődik. Ezután a bekezdésen belüli minden egyes futást ellenőrzi az oldaltörések szempontjából, és eltávolítja azokat.
+A fenti kódrészlet végighalad a dokumentum összes bekezdésén, és ellenőrzi, hogy minden bekezdés előtt van-e oldaltörés. Ha oldaltörést észlel, az törlődik. Ezután a bekezdésen belüli minden egyes futást ellenőrzi az oldaltörések szempontjából, és eltávolítja azokat.
 
 ## 4. lépés: Mentse el a módosított dokumentumot
 

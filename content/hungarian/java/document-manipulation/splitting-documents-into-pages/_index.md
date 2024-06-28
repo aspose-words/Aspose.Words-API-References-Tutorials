@@ -12,7 +12,7 @@ Ha Java-alapú dokumentumfeldolgozással dolgozik, az Aspose.Words for Java egy 
 
 ## 1. Bemutatkozás
 
-Az Aspose.Words for Java egy Java könyvtár, amely lehetővé teszi a Word dokumentumok programozott kezelését. Az egyik gyakori feladat a dokumentum különálló oldalakra való felosztása, amely különféle célokra hasznos lehet, például archiváláshoz, nyomtatáshoz vagy dokumentumfeldolgozáshoz.
+Az Aspose.Words for Java egy Java könyvtár, amely lehetővé teszi a Word dokumentumok programozott kezelését. Az egyik gyakori feladat a dokumentum különálló oldalakra való felosztása, amely különféle célokra, például archiválásra, nyomtatásra vagy dokumentumfeldolgozásra hasznos lehet.
 
 ## 2. Előfeltételek
 
@@ -26,7 +26,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a következő e
 A kezdéshez állítsa be fejlesztői környezetét az alábbiak szerint:
 
 - Hozzon létre egy Java-projektet a kívánt integrált fejlesztőkörnyezetben (IDE).
-- Adja hozzá az Aspose.Words for Java könyvtárat a projekthez. Hivatkozhat a[dokumentáció](https://reference.aspose.com/words/java/) részletes utasításokért.
+- Adja hozzá az Aspose.Words for Java könyvtárat a projekthez. Hivatkozhat a[dokumentáció](https://reference.aspose.com/words/java/) részletes útmutatásért.
 
 ## 4. A forráskód megértése
 
@@ -98,7 +98,7 @@ private Document getDocument() {
 	return pageNumberFinder.getDocument();
 }
 /// <összefoglaló>
-/// Beolvassa egy oldal dokumentumát.
+/// Lekéri egy oldal dokumentumát.
 /// </summary>
 /// <param name="pageIndex">
 /// 1 alapú oldal indexe.
@@ -662,7 +662,7 @@ private static void removePageBreak(Run run)
 
 ## Következtetés
 
-Most megtanulta, hogyan lehet egy dokumentumot külön oldalakra osztani az Aspose.Words for Java segítségével. Ez az útmutató egy átfogó, lépésről lépésre bemutatott oktatóanyagot tartalmaz forráskód-példákkal. Tovább szabhatja és kibővítheti ezt a kódot, hogy megfeleljen a dokumentumokkal végzett munka során felmerülő speciális követelményeknek.
+Most már megtanulta, hogyan lehet egy dokumentumot külön oldalakra osztani az Aspose.Words for Java segítségével. Ez az útmutató átfogó, lépésről lépésre bemutatott oktatóanyagot tartalmaz forráskód-példákkal. Tovább szabhatja és kibővítheti ezt a kódot, hogy megfeleljen a dokumentumokkal végzett munka során felmerülő speciális követelményeknek.
 Biztosan! Adjunk hozzá egy GYIK részt az útmutatónkhoz, amely az Aspose.Words for Java használatával oldalakra bontja a dokumentumokat.
 
 ## GYIK

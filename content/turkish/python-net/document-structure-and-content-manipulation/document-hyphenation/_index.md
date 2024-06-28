@@ -126,4 +126,4 @@ Dul ve yetimleri önlemek için Aspose.Words for Python tarafından sağlanan sa
 
 ### Aspose.Words for Python belgelerine nereden erişebilirim?
 
- API belgelerine şu adresten erişebilirsiniz:[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+API belgelerine şu adresten erişebilirsiniz:[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

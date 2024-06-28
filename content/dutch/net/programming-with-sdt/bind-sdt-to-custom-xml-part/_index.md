@@ -46,7 +46,7 @@ doc.FirstSection.Body.AppendChild(sdt);
 sdt.XmlMapping.SetMapping(xmlPart, "/root[1]/text[1]", "");
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
  Sla het gewijzigde document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.BindSDTtoCustomXmlPart.doc".
 
 ```csharp

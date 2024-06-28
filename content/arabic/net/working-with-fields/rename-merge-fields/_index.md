@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 
 #### س: كيف يمكنني إعادة تسمية الحقول المدمجة في مستند Word باستخدام Aspose.Words لـ .NET؟
 
- ج: لإعادة تسمية الحقول المدمجة في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك تكرار الحقول الموجودة في المستند باستخدام`FieldMergingArgs` الصف واستخدام`FieldMergingArgs.FieldName` طريقة إعادة تسمية الحقل
+ ج: لإعادة تسمية الحقول المدمجة في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك تكرار الحقول الموجودة في المستند باستخدام`FieldMergingArgs` الصف واستخدام`FieldMergingArgs.FieldName` طريقة إعادة تسمية الحقول
 
 #### س: هل من الممكن إعادة تسمية بعض الحقول المدمجة فقط في مستند Word باستخدام Aspose.Words لـ .NET؟
 

@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- यह कोड एक उदाहरण बनाता है`HtmlSaveOptions` और सेट`CssStyleSheetType` को`CssStyleSheetType.External`एक बाहरी सीएसएस स्टाइल शीट तैयार करने के लिए, और`CssClassNamePrefix` को`"pfx_"` उपसर्ग करना`"pfx_"` सीएसएस वर्ग के नाम के लिए।
+ यह कोड एक उदाहरण बनाता है`HtmlSaveOptions` और सेट`CssStyleSheetType` को`CssStyleSheetType.External`एक बाहरी सीएसएस स्टाइल शीट तैयार करने के लिए, और`CssClassNamePrefix` को`"pfx_"` उपसर्ग करना`"pfx_"` सीएसएस कक्षाओं को नाम देने के लिए।
 
 ## चरण 4: दस्तावेज़ को HTML में परिवर्तित करना और सहेजना
 

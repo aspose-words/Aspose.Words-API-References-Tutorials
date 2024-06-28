@@ -44,7 +44,7 @@ Biblioteket erbjuder omfattande formateringsalternativ för text, tabeller, bild
 #### Stöd för sidhuvuden, sidfötter och sidinställningar
 Aspose.Words gör att du kan bevara sidhuvuden, sidfötter och sidinställningar under konverteringsprocessen, vilket säkerställer dokumentkonsistens.
 
-## Installerar Aspose.Words för Python
+## Installera Aspose.Words för Python
 
 ### Förutsättningar
 
@@ -63,7 +63,7 @@ pip install aspose-words
 
 3. När installationen är klar kan du börja använda Aspose.Words i dina Python-projekt.
 
-## Utföra dokumentkonvertering
+## Utföra dokumentkonverteringar
 
 ### Konvertera Word till PDF
 
@@ -99,7 +99,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 Förutom Word och PDF stöder Aspose.Words för Python olika dokumentformat, inklusive HTML, TXT, EPUB och mer.
 
-## Anpassa dokumentkonvertering
+## Anpassa dokumentkonverteringar
 
 ### Tillämpa formatering och styling
 
@@ -173,7 +173,7 @@ doc.styles.default_font.size = 12
 doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ```
 
-## Automatisera dokumentkonvertering
+## Automatisera dokumentkonverteringar
 
 ### Skriva Python-skript för automation
 

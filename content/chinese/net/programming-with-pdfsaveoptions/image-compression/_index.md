@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 ### 经常问的问题
 
 #### 问：什么是 PDF 文档中的图像压缩？
-答：压缩PDF文档中的图像是指缩小PDF文档中包含的图像的大小，以减小PDF文件的整体大小。这减少了加载和查看 PDF 时所需的存储空间并提高了性能。
+答：压缩PDF文档中的图像是缩小PDF文档中包含的图像的大小，以减小PDF文件的整体大小。这减少了加载和查看 PDF 时所需的存储空间并提高了性能。
 
 #### 问：如何使用 Aspose.Words for .NET 压缩 PDF 文档中的图像？
 答：要使用 Aspose.Words for .NET 压缩 PDF 文档中的图像，请按照下列步骤操作：

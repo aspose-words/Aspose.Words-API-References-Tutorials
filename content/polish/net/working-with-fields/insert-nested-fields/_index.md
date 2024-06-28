@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Krok 5: Wstawianie zagnieżdżonego pola
 
- Używamy narzędzia DocumentBuilder`InsertField()`metoda wstawienia zagnieżdżonego pola do stopki.
+ Używamy narzędzia DocumentBuilder`InsertField()` metoda wstawienia zagnieżdżonego pola do stopki.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -94,7 +94,7 @@ field. Update();
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-W tym przykładzie utworzyliśmy nowy dokument, wstawiliśmy podziały stron, przesunęliśmy kursor do stopki, a następnie wstawiliśmy zagnieżdżone pole w stopce.
+tym przykładzie utworzyliśmy nowy dokument, wstawiliśmy podziały stron, przesunęliśmy kursor do stopki, a następnie wstawiliśmy zagnieżdżone pole w stopce.
 
 ### Często zadawane pytania
 
@@ -108,7 +108,7 @@ Odp.: Aby wstawić zagnieżdżone pola w dokumencie programu Word przy użyciu A
 
 #### P: Jakie są korzyści z używania zagnieżdżonych pól w dokumencie programu Word w Aspose.Words dla .NET?
 
-Odp.: Korzystanie z zagnieżdżonych pól oferuje kilka korzyści w dokumencie Word z Aspose.Words dla .NET. Pozwala to na większą elastyczność w tworzeniu dynamicznych szablonów dokumentów, umożliwiając wstawianie wartości zmiennych i obliczeń do zagnieżdżonych pól. Pola zagnieżdżone mogą również ułatwiać automatyczne generowanie treści, np. generowanie spisów treści, numerów stron itp.
+Odp.: Korzystanie z zagnieżdżonych pól oferuje kilka korzyści w dokumencie Word z Aspose.Words dla .NET. Pozwala to na większą elastyczność w tworzeniu dynamicznych szablonów dokumentów, poprzez umożliwienie wstawiania wartości zmiennych i obliczeń do zagnieżdżonych pól. Pola zagnieżdżone mogą również ułatwiać automatyczne generowanie treści, np. generowanie spisów treści, numerów stron itp.
 
 #### P: Czy mogę mieć wielopoziomowe zagnieżdżone pola w dokumencie programu Word za pomocą Aspose.Words dla .NET?
 

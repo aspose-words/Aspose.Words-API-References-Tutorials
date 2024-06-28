@@ -11,7 +11,7 @@ Aspose.Words for Python offre una gamma di tutorial che consentono agli sviluppa
 
 ## API dei documenti Python per una gestione fluida dei documenti
 
-Esplora la potenza dell'API Python Document con i tutorial Aspose.Words. Gli sviluppatori impareranno a creare, modificare e gestire i documenti Word a livello di codice. L'API consente la personalizzazione della formattazione, dell'inserimento di contenuti e dell'unione dei documenti, semplificando le attività di gestione dei documenti.
+Esplora la potenza dell'API Python Document con i tutorial Aspose.Words. Gli sviluppatori impareranno a creare, modificare e gestire i documenti Word a livello di codice. L'API consente la personalizzazione della formattazione, dell'inserimento di contenuti e dell'unione di documenti, nonché delle attività di gestione dei documenti in streaming.
 
 ## Automatizza l'elaborazione dei documenti con Python
 

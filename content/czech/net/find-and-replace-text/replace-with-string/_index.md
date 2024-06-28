@@ -34,7 +34,7 @@ builder.Writeln("sad mad bad");
 
 ## Krok 3: Nahraďte provázkem
 
- Používáme`Range.Replace`metoda pro nahrazení textu řetězcem. V našem příkladu nahradíme všechny výskyty slova "smutný" slovem "špatný" pomocí`FindReplaceOptions` možnost s`FindReplaceDirection.Forward` směr hledání:
+ Používáme`Range.Replace`metoda k nahrazení textu řetězcem. V našem příkladu nahradíme všechny výskyty slova "smutný" slovem "špatný" pomocí`FindReplaceOptions` možnost s`FindReplaceDirection.Forward` směr hledání:
 
 ```csharp
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
@@ -113,7 +113,7 @@ Odpověď: Ano, ve výchozím nastavení funkce "Nahradit řetězcem" v Aspose.W
 
 #### Otázka: Existují nějaká omezení nebo úvahy při používání funkce "Nahradit řetězcem" v Aspose.Words pro .NET?
 
-Odpověď: Při použití funkce "Nahradit řetězcem" v Aspose.Words pro .NET je důležité si uvědomit kontext a zajistit, aby se nahrazení použilo pouze tam, kde je zamýšleno. Ujistěte se, že se hledaný řetězec neobjevuje na nechtěných místech, například v jiných slovech nebo jako součást speciálního formátování. Kromě toho zvažte dopady na výkon při textovém zpracování s velkými dokumenty nebo při častém nahrazování.
+Odpověď: Při použití funkce "Nahradit řetězcem" v Aspose.Words pro .NET je důležité si uvědomit kontext a zajistit, aby se nahrazení použilo pouze tam, kde bylo zamýšleno. Ujistěte se, že se hledaný řetězec neobjevuje na nechtěných místech, například v jiných slovech nebo jako součást speciálního formátování. Kromě toho zvažte dopady na výkon při textovém zpracování s velkými dokumenty nebo při častém nahrazování.
 
 #### Otázka: Mohu nahradit řetězce s různými délkami pomocí funkce "Nahradit řetězcem" v Aspose.Words pro .NET?
 

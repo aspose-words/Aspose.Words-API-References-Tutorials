@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## चरण 2: डिफ़ॉल्ट फ़ॉन्ट फ़ोल्डर सेट करें
-फिर आप इसका उपयोग करके डिफ़ॉल्ट फ़ॉन्ट फ़ोल्डर सेट कर सकते हैं`FontSettings.DefaultInstance` कक्षा और`SetFontsFolder()` तरीका। उस फ़ॉन्ट फ़ोल्डर का पथ निर्दिष्ट करें जिसे आप डिफ़ॉल्ट फ़ोल्डर के रूप में उपयोग करना चाहते हैं।
+ फिर आप इसका उपयोग करके डिफ़ॉल्ट फ़ॉन्ट फ़ोल्डर सेट कर सकते हैं`FontSettings.DefaultInstance` कक्षा और`SetFontsFolder()`तरीका। उस फ़ॉन्ट फ़ोल्डर का पथ निर्दिष्ट करें जिसे आप डिफ़ॉल्ट फ़ोल्डर के रूप में उपयोग करना चाहते हैं।
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

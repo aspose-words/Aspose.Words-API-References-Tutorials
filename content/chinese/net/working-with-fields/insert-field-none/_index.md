@@ -2,7 +2,7 @@
 title: 插入字段 无
 linktitle: 插入字段 无
 second_title: Aspose.Words 文档处理 API
-description: 了解如何在 .NET 的 Word 和 Aspose.Words 文档中赢得 AUCUN 冠军。
+description: 了解如何在 Word avec Aspose.Words pour .NET 中使用 AUCUN 创建文档。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/insert-field-none/

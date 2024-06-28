@@ -72,4 +72,4 @@ Dit was een voorbeeld van de broncode om lokalisatie op veldniveau te specificer
 
 #### Vraag: Hoe kan ik de momenteel gebruikte landinstelling voor een veld in Aspose.Words voor .NET verkrijgen?
 
- A: Om de momenteel gebruikte landinstelling voor een veld in Aspose.Words voor .NET te verkrijgen, kunt u de`Field.LocaleId` eigendom. Hierdoor kunt u de landinstellings-ID ophalen die aan het veld is gekoppeld.
+ A: Om de momenteel gebruikte landinstelling voor een veld in Aspose.Words voor .NET te verkrijgen, kunt u de`Field.LocaleId`eigendom. Hierdoor kunt u de landinstellings-ID ophalen die aan het veld is gekoppeld.

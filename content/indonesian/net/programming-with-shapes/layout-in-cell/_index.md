@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Langkah 3: Bangun Tabel
- Menggunakan`StartTable`, `EndTable`, `InsertCell` , Dan`Write` metode dari`DocumentBuilder` objek untuk membuat tabel. Tetapkan tinggi baris dan aturan tinggi yang diinginkan menggunakan`RowFormat` properti.
+ Menggunakan`StartTable`, `EndTable`, `InsertCell` , Dan`Write` metode dari`DocumentBuilder`objek untuk membuat tabel. Tetapkan tinggi baris dan aturan tinggi yang diinginkan menggunakan`RowFormat` properti.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Langkah 6: Masukkan Bentuk ke dalam Dokumen
-Masukkan bentuk tanda air ke dalam dokumen menggunakan`InsertNode` metode`DocumentBuilder` obyek. Posisikan bentuk menggunakan`MoveTo` metode untuk menempatkannya setelah proses terakhir dalam dokumen.
+ Masukkan bentuk tanda air ke dalam dokumen menggunakan`InsertNode` metode`DocumentBuilder` obyek. Posisikan bentuk menggunakan`MoveTo` metode untuk menempatkannya setelah proses terakhir dalam dokumen.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

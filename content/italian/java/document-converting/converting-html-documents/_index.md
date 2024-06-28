@@ -78,7 +78,7 @@ La conversione di HTML in documenti utilizzando Aspose.Words per Java è un proc
 
 ### Come installo Aspose.Words per Java?
 
- È possibile scaricare la libreria Aspose.Words per Java da[Qui](https://releases.aspose.com/words/java/). Seguire le istruzioni di installazione fornite sul loro sito web.
+ È possibile scaricare la libreria Aspose.Words per Java da[Qui](https://releases.aspose.com/words/java/). Seguire le istruzioni di installazione fornite sul loro sito Web.
 
 ### Posso convertire HTML con stili CSS in un documento Word?
 

@@ -20,7 +20,7 @@ using System.IO;
 ```
 
 ## Krok 2: Vytvořte nový dokument a generátor dokumentů
- V tomto kroku vytvoříme nový dokument pomocí`Document` třída a tvůrce dokumentů pomocí`DocumentBuilder` třída.
+ V tomto kroku vytvoříme nový dokument pomocí`Document` třídu a tvůrce dokumentů pomocí`DocumentBuilder` třída.
 
 ```csharp
 Document doc = new Document();
@@ -88,7 +88,7 @@ using System.IO;
 
 #### Otázka: Jak vytvořit nový dokument a generátor dokumentů?
 
- Odpověď: Můžete vytvořit nový dokument pomocí`Document` třída a tvůrce dokumentů pomocí`DocumentBuilder` třídy, jak je uvedeno níže:
+ Odpověď: Nový dokument můžete vytvořit pomocí`Document` třídu a tvůrce dokumentů pomocí`DocumentBuilder` třídy, jak je uvedeno níže:
 
 ```csharp
 Document doc = new Document();

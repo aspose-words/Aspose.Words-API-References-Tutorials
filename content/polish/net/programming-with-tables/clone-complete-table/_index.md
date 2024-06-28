@@ -65,10 +65,10 @@ Pamiętaj, aby określić poprawną ścieżkę i nazwę pliku dokumentu wyjścio
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//Sklonuj tabelę i wstaw ją do dokumentu po oryginale.
+	// Sklonuj tabelę i wstaw ją do dokumentu po oryginale.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Wstaw pusty akapit pomiędzy dwiema tabelami,
+	//Wstaw pusty akapit pomiędzy dwiema tabelami,
 	// w przeciwnym razie po zapisaniu zostaną połączone w jeden. Ma to związek z walidacją dokumentu.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

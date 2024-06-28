@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/basic-conversions/docx-to-txt/
 ---
 
-tym samouczku krok po kroku poprowadzimy Cię, jak używać Aspose.Words dla .NET do konwersji dokumentu programu Word w formacie Docx na zwykły tekst (Txt). Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+W tym samouczku krok po kroku poprowadzimy Cię, jak używać Aspose.Words dla .NET do konwersji dokumentu programu Word w formacie Docx na zwykły tekst (Txt). Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
 
  Aby rozpocząć, upewnij się, że masz zainstalowany i skonfigurowany Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -57,4 +57,4 @@ Podczas konwersji DOCX na TXT mogą pojawić się problemy z kodowaniem ze wzgl�
 
 #### Jakie są ograniczenia procesu konwersji?
 
-Ograniczenia procesu konwersji zależą od konkretnego narzędzia lub biblioteki, z której korzystasz. Niektóre narzędzia mogą mieć ograniczenia związane z obsługiwanymi funkcjami, złożonym formatowaniem lub określonymi elementami pliku DOCX. Ważne jest, aby zrozumieć ograniczenia wybranego narzędzia i ocenić, czy odpowiadają one Twoim potrzebom konwersji.
+Ograniczenia procesu konwersji zależą od konkretnego narzędzia lub biblioteki, z której korzystasz. Niektóre narzędzia mogą mieć powiązane ograniczenia dotyczące obsługiwanych funkcji, złożonego formatowania lub określonych elementów pliku DOCX. Ważne jest, aby zrozumieć ograniczenia wybranego narzędzia i ocenić, czy odpowiadają one Twoim potrzebom konwersji.

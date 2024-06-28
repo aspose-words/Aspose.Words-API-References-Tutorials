@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## Conclusão
 
-Neste guia, explicamos como fazer upload de um documento atualizando campos sujos usando a biblioteca Aspose.Words para .NET. Seguindo as etapas fornecidas e usando o código-fonte C# fornecido, você pode aplicar facilmente essa funcionalidade em seu aplicativo C#. A atualização de campos sujos no carregamento do documento exibirá os valores mais recentes em seu documento do Word.
+Neste guia, explicamos como fazer upload de um documento atualizando campos sujos usando a biblioteca Aspose.Words para .NET. Seguindo as etapas fornecidas e usando o código-fonte C# fornecido, você pode aplicar facilmente essa funcionalidade em seu aplicativo C#. A atualização de campos sujos ao carregar o documento exibirá os valores mais recentes em seu documento do Word.
 
 
 ### Perguntas frequentes para atualizar campos sujos em documentos do Word

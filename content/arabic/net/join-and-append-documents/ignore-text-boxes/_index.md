@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## الخطوة 4: إلحاق محتوى مربع النص
 
- إنشاء`NodeImporter` الكائن واستخدامه لاستيراد عقد مربع النص من المستند المصدر إلى المستند الوجهة. قم بالتكرار خلال كل فقرة في المستند المصدر وقم باستيرادها إلى المستند الوجهة.
+ إنشاء`NodeImporter`الكائن واستخدامه لاستيراد عقد مربع النص من المستند المصدر إلى المستند الوجهة. قم بالتكرار خلال كل فقرة في المستند المصدر وقم باستيرادها إلى المستند الوجهة.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## الخطوة 5: احفظ مستند الوجهة
 
- وأخيرًا، احفظ مستند الوجهة المعدل باستخدام الملف`Save` طريقة`Document` هدف.
+وأخيرًا، احفظ مستند الوجهة المعدل باستخدام الملف`Save` طريقة`Document` هدف.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

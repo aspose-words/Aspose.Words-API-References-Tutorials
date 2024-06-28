@@ -32,5 +32,5 @@ Med dessa handledningar kommer du att kunna förbättra dina Word-dokument genom
 | [Markera Multi Line Label Alignment](./tick-multi-line-label-alignment/) | Lär dig hur du justerar etiketter med flera rader i en diagramaxel med Aspose.Words för .NET. |
 | [Diagramdataetikett](./chart-data-label/) | Lär dig hur du lägger till och anpassar dataetiketter i ett diagram med Aspose.Words för .NET för att ge ytterligare information om datapunkter. |
 | [Standardalternativ för dataetiketter](./default-options-for-data-labels/) | Lär dig hur du ställer in standardalternativ för dataetiketter i ett diagram med Aspose.Words för .NET. |
-| [Enstaka diagramdatapunkt](./single-chart-data-point/) | Lär dig hur du anpassar en enskild datapunkt i ett diagram med Aspose.Words för .NET. |
+| [Enkel diagramdatapunkt](./single-chart-data-point/) | Lär dig hur du anpassar en enskild datapunkt i ett diagram med Aspose.Words för .NET. |
 | [Single Chart Series](./single-chart-series/) | Lär dig hur du anpassar enstaka diagramserier i ett diagram med Aspose.Words för .NET. |

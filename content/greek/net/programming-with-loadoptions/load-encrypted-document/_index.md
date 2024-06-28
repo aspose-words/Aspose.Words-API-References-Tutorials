@@ -1,5 +1,5 @@
 ---
-title: Φόρτωση κρυπτογραφημένου σε έγγραφο του Word
+title: Φόρτωση κρυπτογραφημένου εγγράφου του Word
 linktitle: Φόρτωση κρυπτογραφημένου εγγράφου σε έγγραφο του Word
 second_title: Aspose.Words Document Processing API
 description: Μάθετε πώς να φορτώνετε και να αποθηκεύετε κρυπτογραφημένα έγγραφα Word με το Aspose.Words για .NET.

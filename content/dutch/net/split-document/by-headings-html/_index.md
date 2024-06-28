@@ -70,11 +70,11 @@ Ontdek gerust de extra functies en opties van Aspose.Words voor .NET om uw docum
 
 #### In welke formaten kan ik het Word-document opsplitsen?
 
-De meegeleverde broncode demonstreert het opsplitsen van het Word-document in kleinere delen in HTML-formaat. Aspose.Words voor .NET ondersteunt echter verschillende uitvoerformaten, waaronder DOCX, PDF, EPUB en meer. U kunt de code wijzigen en het gewenste uitvoerformaat opgeven in het`HtmlSaveOptions` dienovereenkomstig bezwaar maken.
+ De meegeleverde broncode demonstreert het opsplitsen van het Word-document in kleinere delen in HTML-formaat. Aspose.Words voor .NET ondersteunt echter verschillende uitvoerformaten, waaronder DOCX, PDF, EPUB en meer. U kunt de code wijzigen en het gewenste uitvoerformaat opgeven in het`HtmlSaveOptions` dienovereenkomstig bezwaar maken.
 
 #### Kan ik een ander criterium kiezen voor het splitsen van het document?
 
- Ja, u kunt een ander criterium kiezen voor het splitsen van het document op basis van uw vereisten. Aspose.Words voor .NET biedt verschillende criteria-opties, zoals`HeadingParagraph`, `Page`, `Section` , en meer. Wijzig de`DocumentSplitCriteria` eigendom in de`HtmlSaveOptions` object om de juiste criteria voor splitsing te selecteren.
+Ja, u kunt een ander criterium kiezen voor het splitsen van het document op basis van uw vereisten. Aspose.Words voor .NET biedt verschillende criteria-opties, zoals`HeadingParagraph`, `Page`, `Section` , en meer. Wijzig de`DocumentSplitCriteria` eigendom in de`HtmlSaveOptions` object om de juiste criteria voor splitsing te selecteren.
 
 #### Hoe kan ik de uitvoer-HTML voor de gesplitste delen aanpassen?
 

@@ -72,7 +72,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 #### K: Hogyan lehet elérni az Aspose.Words for .NET-ben egy áttekintő csoport szerzőjét?
 
- V: Használja a`Author` tulajdona a`RevisionGroup` tiltakozik a felülvizsgálati csoport szerzőjének lekérésére.
+ V: Használja a`Author` tulajdona a`RevisionGroup` tiltakozik a revíziócsoport szerzőjének lekérésére.
 
 ```csharp
 string author = group.Author;

@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/join-and-append-documents/keep-source-numbering/
 ---
 
-Bu eğitimde, Aspose.Words for .NET kullanılarak numaralı paragrafların orijinal numaralandırma formatı korunarak bir kaynak belgenin hedef belgeye nasıl ekleneceği açıklanmaktadır.
+Bu eğitimde, Aspose.Words for .NET kullanılarak numaralandırılmış paragrafların orijinal numaralandırma formatı korunurken, bir kaynak belgenin hedef belgeye nasıl ekleneceği açıklanmaktadır.
 
 ## 1. Adım: Projeyi ayarlayın
 
@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## 4. Adım: Paragrafları içe aktarın ve ekleyin
 
-Kaynak belgedeki paragraflar arasında yineleyin ve her paragrafı hedef belgeye aktarın.`importer`. İçe aktarılan düğümleri hedef belgenin gövdesine ekleyin.
+ Kaynak belgedeki paragraflar arasında yineleyin ve her paragrafı hedef belgeye aktarın.`importer`. İçe aktarılan düğümleri hedef belgenin gövdesine ekleyin.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ Bu, Aspose.Words for .NET kullanarak orijinal numaralandırma formatını korurk
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Numaralandırılmış paragrafları içe aktarırken kaynak listesi formatını koruyun.
+	//Numaralandırılmış paragrafları içe aktarırken kaynak listesi formatını koruyun.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

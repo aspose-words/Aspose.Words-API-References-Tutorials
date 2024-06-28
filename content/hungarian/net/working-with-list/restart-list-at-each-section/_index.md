@@ -91,12 +91,12 @@ Nyugodtan használhatja ezt a kódot saját projektjeiben, és módosíthatja sa
 
 #### K: Hogyan indíthatok újra egy listát az Aspose.Words minden szakaszában?
 
- V: Ha újra szeretné indítani a listát az Aspose.Words minden szakaszában, létre kell hoznia egy példányt a`List` osztályt, és rendeljünk hozzá egy számozott listát. Ezután használhatja a`List.IsRestartAtEachSection` tulajdonság megadásához, hogy a számozást minden szakasznál újra kell kezdeni. Ezt a listát a dokumentum egy vagy több részéhez társíthatja, így a számozás minden szakasznál helyesen indul újra.
+ V: Ha újra szeretné indítani a listát az Aspose.Words minden szakaszában, létre kell hoznia egy példányt a`List`osztályt, és rendeljünk hozzá egy számozott listát. Ezután használhatja a`List.IsRestartAtEachSection` tulajdonság megadásához, hogy a számozást minden szakasznál újra kell kezdeni. Ezt a listát a dokumentum egy vagy több részéhez társíthatja, így a számozás minden szakasznál helyesen indul újra.
 
 #### K: Testreszabhatom az Aspose.Words listák számozási formátumát?
 
-V: Igen, testreszabhatja a listák számozási formátumát az Aspose.Words-ben. A`List` osztály több tulajdonságot kínál erre, mint pl`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, stb. Ezekkel a tulajdonságokkal beállíthatja a lista típusát (számozott, felsorolásjeles stb.), a számozási formátumot (arab számok, római számok, betűk stb.) és más számozási formázási beállításokat.
+ V: Igen, testreszabhatja a listák számozási formátumát az Aspose.Words-ben. A`List` osztály több tulajdonságot kínál erre, mint pl`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, stb. Ezekkel a tulajdonságokkal beállíthatja a lista típusát (számozott, felsorolásjeles stb.), a számozási formátumot (arab számok, római számok, betűk stb.) és más számozási formázási beállításokat.
 
 #### K: Lehetséges-e további szinteket hozzáadni az Aspose.Words számozott listájához?
 
- V: Igen, lehetséges további szinteket hozzáadni az Aspose.Words számozott listájához. A`ListLevel` osztály lehetővé teszi a formázási tulajdonságok beállítását a lista minden szintjéhez. Beállíthat olyan beállításokat, mint az előtag, utótag, igazítás, behúzás stb. Ez lehetővé teszi több szintű hierarchiával rendelkező listák létrehozását.
+ V: Igen, lehetséges további szinteket hozzáadni az Aspose.Words számozott listájához. A`ListLevel`osztály lehetővé teszi a formázási tulajdonságok beállítását a lista minden szintjéhez. Beállíthat olyan beállításokat, mint az előtag, utótag, igazítás, behúzás stb. Ez lehetővé teszi több szintű hierarchiával rendelkező listák létrehozását.

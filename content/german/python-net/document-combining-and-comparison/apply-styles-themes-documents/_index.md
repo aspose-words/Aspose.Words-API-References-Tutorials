@@ -1,7 +1,7 @@
 ---
 title: Anwenden von Stilen und Themen zum Transformieren von Dokumenten
 linktitle: Anwenden von Stilen und Themen zum Transformieren von Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Verbessern Sie die Ästhetik von Dokumenten mit Aspose.Words für Python. Wenden Sie mühelos Stile, Themen und Anpassungen an.
 type: docs
 weight: 14

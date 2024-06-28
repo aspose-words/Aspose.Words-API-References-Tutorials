@@ -2,84 +2,153 @@
 title: Infoga dokument vid brevkoppling
 linktitle: Infoga dokument vid brevkoppling
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du infogar dokument i ett annat under sammankoppling med Aspose.Words för .NET.
+description: Lär dig hur du infogar dokument vid sammanslagningsfält med Aspose.Words för .NET i denna omfattande, steg-för-steg handledning.
 type: docs
 weight: 10
 url: /sv/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-I den här självstudien kommer vi att gå igenom hur du infogar ett dokument i ett annat dokument under kopplingen med hjälp av funktionen Infoga dokument under koppling av brev i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och utföra dokumentinfogningen.
+## Introduktion
 
-## Steg 1: Laddar huvuddokumentet
+Välkommen till en värld av dokumentautomatisering med Aspose.Words för .NET! Har du någonsin undrat hur man dynamiskt infogar dokument i specifika fält i ett huvuddokument under en sammankopplingsoperation? Tja, du är på rätt plats. Denna handledning guidar dig steg-för-steg genom processen att infoga dokument vid sammanslagningsfält med Aspose.Words för .NET. Det är som att lägga ihop ett pussel, där varje bit faller perfekt på plats. Så, låt oss dyka in!
 
-För att komma igång, ange katalogen för dina dokument och ladda huvuddokumentet i ett dokumentobjekt. Här är hur:
+## Förutsättningar
+
+Innan vi börjar, se till att du har följande:
+
+1.  Aspose.Words för .NET: Du kan[ladda ner den senaste versionen här](https://releases.aspose.com/words/net/) . Om du behöver köpa en licens kan du göra det[här](https://purchase.aspose.com/buy) . Alternativt kan du få en[tillfällig licens](https://purchase.aspose.com/temporary-license/) eller prova med en[gratis provperiod](https://releases.aspose.com/).
+2. Utvecklingsmiljö: Visual Studio eller någon annan C# IDE.
+3. Grundläggande kunskaper om C#: Bekantskap med C#-programmering kommer att göra denna handledning till en lek.
+
+## Importera namnområden
+
+Först och främst måste du importera de nödvändiga namnrymden. Dessa är som byggstenarna i ditt projekt.
 
 ```csharp
-// Sökväg till dokumentkatalogen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+using System.Linq;
 ```
 
-## Steg 2: Konfigurera Mail Merge
+Låt oss dela upp processen i hanterbara steg. Varje steg kommer att bygga på det föregående, vilket leder dig till en komplett lösning.
 
-Låt oss nu konfigurera kopplingen och ange fältet kopplingsanrop för att infoga ett dokument i ett annat dokument. Här är hur:
+## Steg 1: Konfigurera din katalog
 
-```csharp
-mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-```
-
-## Steg 3: Kör sammankopplingen av brev
-
-Vi kör kopplingen genom att ange namnen på kopplingsfälten och motsvarande data. Här är hur:
+Innan du kan börja infoga dokument måste du definiera sökvägen till din dokumentkatalog. Det är här dina dokument lagras.
 
 ```csharp
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-```
-
-### Exempel på källkod för Insert Document At Mail Merge med Aspose.Words för .NET
-
-Här är den fullständiga källkoden för funktionen Infoga dokument i brevkoppling av Aspose.Words för .NET:
-
-```csharp
-// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
+## Steg 2: Ladda huvuddokumentet
+
+Därefter laddar du huvuddokumentet. Detta dokument innehåller sammanslagningsfälten där andra dokument kommer att infogas.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+## Steg 3: Ställa in återuppringning för fältsammanslagning
+
+För att hantera sammanslagningen måste du ställa in en återuppringningsfunktion. Denna funktion kommer att ansvara för att infoga dokument vid de angivna sammanslagningsfälten.
+
+```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-// Huvuddokumentet har ett sammanslagningsfält i sig som heter "Dokument_1".
-// Motsvarande data för detta fält innehåller en fullständigt kvalificerad sökväg till dokumentet.
-// Det ska infogas i det här fältet.
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
+```
 
+## Steg 4: Kör sammankopplingen av brev
+
+Nu är det dags att köra sammanslagningen. Det är här magin händer. Du anger kopplingsfältet och dokumentet som ska infogas i detta fält.
+
+```csharp
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
+```
+
+## Steg 5: Spara dokumentet
+
+När sammanslagningen är klar sparar du det ändrade dokumentet. Det här nya dokumentet kommer att ha infogat innehåll precis där du vill ha det.
+
+```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-Med denna kod kommer du att kunna infoga ett dokument i ett annat dokument under sammanslagningen med Aspose.Words för .NET. Det resulterande dokumentet kommer att sparas under ett nytt namn
+## Steg 6: Skapa återuppringningshanteraren
 
+Callback-hanteraren är en klass som gör speciell bearbetning för sammanslagningsfältet. Den laddar dokumentet som anges i fältvärdet och infogar det i det aktuella sammanslagningsfältet.
+
+```csharp
+private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
+{
+    void IFieldMergingCallback.FieldMerging(FieldMergingArgs args)
+    {
+        if (args.DocumentFieldName == "Document_1")
+        {
+            DocumentBuilder builder = new DocumentBuilder(args.Document);
+            builder.MoveToMergeField(args.DocumentFieldName);
+
+            Document subDoc = new Document((string)args.FieldValue);
+            InsertDocument(builder.CurrentParagraph, subDoc);
+
+            if (!builder.CurrentParagraph.HasChildNodes)
+                builder.CurrentParagraph.Remove();
+
+            args.Text = null;
+        }
+    }
+}
+```
+
+## Steg 7: Infoga dokumentet
+
+Den här metoden infogar det angivna dokumentet i det aktuella stycket eller tabellcellen.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        foreach (Node srcNode in srcSection.Body)
+        {
+            if (srcNode.NodeType == NodeType.Paragraph)
+            {
+                Paragraph para = (Paragraph)srcNode;
+                if (para.IsEndOfSection && !para.HasChildNodes)
+                    continue;
+            }
+
+            Node newNode = importer.ImportNode(srcNode, true);
+            destinationParent.InsertAfter(newNode, insertionDestination);
+            insertionDestination = newNode;
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
+}
+```
 
 ## Slutsats
 
-den här självstudien undersökte vi hur man infogar ett dokument i ett annat dokument under sammankoppling med hjälp av funktionen Infoga dokument under sammankoppling av Aspose.Words för .NET. Genom att konfigurera kopplingen och tillhandahålla nödvändiga data kan du dynamiskt sammanställa dokument genom att slå samman olika dokumentmallar eller sektioner. Aspose.Words för .NET ger ett flexibelt och kraftfullt sätt att hantera komplexa dokumentgenereringsscenarier, vilket gör det till ett värdefullt verktyg för att automatisera dokumentskapande och manipuleringsuppgifter.
+Och där har du det! Du har framgångsrikt infogat dokument i specifika fält under en kopplingsoperation med Aspose.Words för .NET. Denna kraftfulla funktion kan spara massor av tid och ansträngning, särskilt när du hanterar stora volymer dokument. Se det som att ha en personlig assistent som tar hand om alla tunga lyft åt dig. Så fortsätt och prova. Glad kodning!
 
-### FAQ's
+## FAQ's
 
-#### F: Vad är syftet med att infoga ett dokument i ett annat dokument under sammankoppling?
+### Kan jag infoga flera dokument i olika sammanslagningsfält?
+ Jo det kan du. Ange helt enkelt lämpliga sammanslagningsfält och motsvarande dokumentsökvägar i`MailMerge.Execute` metod.
 
-S: Genom att infoga ett dokument i ett annat dokument under sammankopplingen kan du kombinera olika dokumentmallar eller avsnitt dynamiskt baserat på data som tillhandahålls under sammanfogningsprocessen. Den här funktionen är särskilt användbar när du vill sammanställa komplexa dokument genom att slå samman olika fördefinierade mallar eller avsnitt till ett slutligt dokument.
+### Är det möjligt att formatera det infogade dokumentet annorlunda än huvuddokumentet?
+ Absolut! Du kan använda`ImportFormatMode` parametrar i`NodeImporter` för att styra formateringen.
 
-#### F: Hur infogar jag ett dokument i ett annat dokument under sammanslagningen med Aspose.Words för .NET?
+### Vad händer om sammanslagningsfältets namn är dynamiskt?
+Du kan hantera dynamiska sammanslagningsfältnamn genom att skicka dem som parametrar till återuppringningshanteraren.
 
-S: För att infoga ett dokument i ett annat dokument under sammankoppling med Aspose.Words för .NET, följ dessa steg:
-1. Ladda huvuddokumentet som kommer att fungera som bas i ett dokumentobjekt.
-2. Konfigurera kopplingen och ange fältet kopplingsanrop för att hantera dokumentinfogning.
-3. Kör kopplingen med namnen på kopplingsfälten och motsvarande data (sökväg till dokumentet som ska infogas).
+### Kan jag använda den här metoden med olika filformat?
+Ja, Aspose.Words stöder olika filformat inklusive DOCX, PDF och mer.
 
-#### F: Hur kan jag anpassa infogningsbeteendet under kopplingen?
-
-S: För att anpassa infogningsbeteendet under sammankoppling av e-post kan du implementera en anpassad FieldMergingCallback genom att ärva från IFieldMergingCallback-gränssnittet. Detta låter dig styra hur dokumenten infogas och slås samman baserat på dina specifika krav.
-
-#### F: Kan jag infoga flera dokument under sammanslagningen?
-
-S: Ja, du kan infoga flera dokument under sammanslagningen genom att tillhandahålla lämplig information för varje sammanfogningsfält. För varje sammanslagningsfält som kräver dokumentinfogning, ange sökvägen till motsvarande dokument som data.
-
-
+### Hur hanterar jag fel under dokumentinsättningsprocessen?
+Implementera felhantering i din callback-hanterare för att hantera eventuella undantag som kan uppstå.

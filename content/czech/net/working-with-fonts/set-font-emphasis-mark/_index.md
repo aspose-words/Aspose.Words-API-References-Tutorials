@@ -16,14 +16,14 @@ Než začnete, ujistěte se, že máte následující položky:
 - Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
 
 ## Krok 1: Definujte adresář dokumentů
- Začněte nastavením cesty k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+Začněte nastavením cesty k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Vytvořte a přizpůsobte dokument
- Vytvořte instanci souboru`Document` třída a přidružená`DocumentBuilder` k vytvoření obsahu dokumentu. Použijte`Font.EmphasisMark` vlastnost, na kterou chcete nastavit styl zvýraznění písma`EmphasisMark.UnderSolidCircle` . Poté použijte`Write` a`Writeln` metody`DocumentBuilder` pro přidání textu se zadaným zvýrazněním písma.
+ Vytvořte instanci souboru`Document` třída a přidružená`DocumentBuilder` k vytvoření obsahu dokumentu. Použijte`Font.EmphasisMark` vlastnost pro nastavení stylu zvýraznění písma`EmphasisMark.UnderSolidCircle` . Poté použijte`Write` a`Writeln` metody`DocumentBuilder` pro přidání textu se zvýrazněním zadaného písma.
 
 ```csharp
 Document document = new Document();
@@ -59,13 +59,13 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Závěr
-tomto kurzu jste se naučili, jak nastavit styl zvýraznění písma v dokumentu aplikace Word pomocí Aspose.Words for .NET. Experimentujte s různými styly důrazu a použijte tuto funkci ke zvýraznění slov nebo frází v dokumentech.
+V tomto tutoriálu jste se naučili, jak nastavit styl zvýraznění písma v dokumentu aplikace Word pomocí Aspose.Words for .NET. Experimentujte s různými styly důrazu a použijte tuto funkci ke zvýraznění slov nebo frází v dokumentech.
 
 ### FAQ
 
 #### Otázka: Jak mohu přidat akcenty do konkrétního písma v dokumentu aplikace Word pomocí Aspose.Words?
 
-A: Chcete-li přidat akcenty do konkrétního písma v dokumentu aplikace Word pomocí Aspose.Words, můžete použít API k navigaci na požadované písmo a použití příslušných akcentů. Tím se do textu s vybraným písmem přidají akcenty.
+A: Chcete-li přidat akcenty do konkrétního písma v dokumentu aplikace Word pomocí Aspose.Words, můžete použít API k navigaci k požadovanému fontu a použití příslušných akcentů. Tím se do textu s vybraným písmem přidají akcenty.
 
 #### Otázka: Je možné pomocí Aspose.Words změnit styl diakritických znamének v dokumentu aplikace Word?
 

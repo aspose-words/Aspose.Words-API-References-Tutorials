@@ -24,14 +24,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## الخطوة 2: قم بتحميل المستند
-قم بتحميل مستند Word الذي يحتوي على رسم Smart Art باستخدام الملف`Document` منشئ الطبقة.
+ قم بتحميل مستند Word الذي يحتوي على رسم Smart Art باستخدام الملف`Document` منشئ الطبقة.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## الخطوة 3: تحديث الرسم الفني الذكي
- قم بالتكرار عبر الأشكال الموجودة في المستند باستخدام`GetChildNodes` الطريقة مع`NodeType.Shape` معامل. تحقق مما إذا كان كل شكل يحتوي على Smart Art باستخدام`HasSmartArt` الملكية، وإذا كان صحيحا، استدعاء`UpdateSmartArtDrawing` طريقة لتحديث رسم Smart Art.
+ قم بالتكرار عبر الأشكال الموجودة في المستند باستخدام`GetChildNodes` الطريقة مع`NodeType.Shape` حدود. تحقق مما إذا كان كل شكل يحتوي على Smart Art باستخدام`HasSmartArt` الملكية، وإذا كان صحيحا، استدعاء`UpdateSmartArtDrawing` طريقة لتحديث رسم Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

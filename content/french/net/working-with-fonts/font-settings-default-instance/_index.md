@@ -2,86 +2,97 @@
 title: Instance par défaut des paramètres de police
 linktitle: Instance par défaut des paramètres de police
 second_title: API de traitement de documents Aspose.Words
-description: Dans ce didacticiel, découvrez comment configurer les paramètres de police par défaut dans un document Word avec Aspose.Words for .NET.
+description: Découvrez comment gérer et personnaliser les paramètres de police dans Aspose.Words for .NET avec notre guide étape par étape. Parfait pour les développeurs cherchant à améliorer le rendu des documents.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/font-settings-default-instance/
 ---
 
-Dans ce didacticiel, nous vous expliquerons comment configurer les paramètres de police par défaut dans un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. Les paramètres de police par défaut vous permettent de spécifier les sources de polices utilisées lors du chargement et du rendu des documents. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
+Bienvenue dans ce didacticiel approfondi sur la gestion des paramètres de police à l'aide d'Aspose.Words for .NET. Si vous avez déjà rencontré des difficultés avec la gestion des polices dans vos documents, ce guide vous expliquera tout ce que vous devez savoir pour personnaliser et gérer efficacement les polices. Allons-y !
 
 ## Conditions préalables
-Avant de commencer, assurez-vous de disposer des éléments suivants :
-- Une connaissance pratique du langage de programmation C#
-- La bibliothèque Aspose.Words pour .NET installée dans votre projet
+
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+
+- Connaissance de base de C# : La familiarité avec la programmation C# vous aidera à comprendre et à mettre en œuvre les étapes en douceur.
+-  Bibliothèque Aspose.Words for .NET : téléchargez et installez Aspose.Words for .NET à partir du[lien de téléchargement](https://releases.aspose.com/words/net/).
+- Environnement de développement : un environnement approprié comme Visual Studio pour écrire et exécuter votre code.
+-  Exemple de document : Un exemple de document (par exemple,`Rendering.docx`) pour appliquer les paramètres de police.
+
+## Importer des espaces de noms
+
+Pour démarrer avec Aspose.Words, vous devez importer les espaces de noms nécessaires dans votre projet. Cela vous permet d'accéder à toutes les classes et méthodes fournies par Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
 
 ## Étape 1 : Définir le répertoire des documents
- Tout d’abord, vous devez définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
+
+Tout d'abord, vous devez spécifier le répertoire dans lequel votre document est stocké. Cela aide à localiser le document avec lequel vous souhaitez travailler.
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Étape 2 : configurer les paramètres de police par défaut
- Ensuite, nous allons créer une instance de`FontSettings` en utilisant`FontSettings.DefaultInstance`, puis nous spécifierons les sources de polices utilisées lors du chargement et du rendu des documents. Dans cet exemple, nous utilisons une source de police système et une source de police de dossier.
-
-```csharp
-// Configurer les paramètres de police par défaut
-FontSettings fontSettings = FontSettings.DefaultInstance;
-fontSettings.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(),
-new FolderFontSource("C:\\MyFonts\\", true)
-});
-```
-
-## Étape 3 : Téléchargez le document avec les paramètres de police
- Nous allons maintenant charger le document en utilisant`LoadOptions` et en spécifiant les paramètres de police à utiliser.
-
-```csharp
-// Chargez le document avec les paramètres de police
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-```
-
-
-### Exemple de code source pour l'instance par défaut des paramètres de police à l'aide d'Aspose.Words pour .NET 
-```csharp
-
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = FontSettings.DefaultInstance;
-fontSettings.SetFontsSources(new FontSourceBase[]
-{
-	new SystemFontSource(),
-	new FolderFontSource("C:\\MyFonts\\", true)
-});
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+## Étape 2 : configurer les sources de polices
+
+Ensuite, vous allez configurer les sources de polices. Cette étape est cruciale car elle indique à Aspose.Words où trouver les polices dont il a besoin pour le rendu du document.
+
+```csharp
+FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
+{
+    new SystemFontSource(),
+    new FolderFontSource("C:\\MyFonts\\", true)
+});
+```
+
+Dans cet exemple :
+- `SystemFontSource` représente les polices par défaut du système.
+- `FolderFontSource` pointe vers un dossier personnalisé (`C:\\MyFonts\\` ) où des polices supplémentaires sont stockées. Le`true` Le paramètre indique que ce dossier doit être analysé de manière récursive.
+
+## Étape 3 : Charger le document
+
+Une fois vos sources de polices configurées, l'étape suivante consiste à charger votre document dans un fichier Aspose.Words.`Document` objet. Cela vous permet de manipuler et éventuellement de sauvegarder le document.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Étape 4 : Enregistrez le document
+
+Enfin, enregistrez le document après avoir appliqué les paramètres de police. Cela peut être fait dans différents formats, mais pour ce didacticiel, nous l'enregistrerons au format PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
+```
+
+En suivant ces étapes, vous avez configuré avec succès les paramètres de police personnalisés et enregistré le document avec ces paramètres appliqués.
+
 ## Conclusion
-Dans ce didacticiel, nous avons vu comment configurer les paramètres de police par défaut dans un document Word avec Aspose.Words for .NET. En spécifiant les sources de polices utilisées lors du chargement et du rendu des documents, vous pouvez contrôler l'apparence des polices dans vos documents. N'hésitez pas à utiliser cette fonctionnalité pour personnaliser les paramètres de police dans vos projets.
 
-### FAQ
+Toutes nos félicitations! Vous maîtrisez les bases de la gestion des paramètres de police à l'aide d'Aspose.Words for .NET. Que vous travailliez sur un projet simple ou sur un système de traitement de documents complexe, ces compétences vous aideront à garantir que vos documents auront exactement l'apparence que vous souhaitez. N'oubliez pas que la flexibilité offerte par Aspose.Words permet un large éventail de personnalisations, alors n'hésitez pas à explorer et expérimenter différents paramètres.
 
-#### Q : Comment puis-je définir la police par défaut dans Aspose.Words ?
+## FAQ
 
- R : Pour définir la police par défaut dans Aspose.Words, vous pouvez utiliser le`FontSettings` la classe et le`DefaultFontName` propriété spécifiant le nom de la police souhaitée.
+### Q1 : Puis-je utiliser les polices de plusieurs dossiers personnalisés ?
 
-#### Q : Puis-je spécifier la taille de police par défaut dans Aspose.Words ?
+ Oui, vous pouvez spécifier plusieurs`FolderFontSource`instances au sein de`SetFontsSources` méthode pour inclure des polices de différents dossiers.
 
- R : Oui, vous pouvez spécifier la taille de police par défaut dans Aspose.Words à l'aide du`DefaultFontSize` propriété du`FontSettings` classe. Vous pouvez définir la taille de point souhaitée.
+### Q2 : Comment puis-je obtenir un essai gratuit d'Aspose.Words pour .NET ?
 
-#### Q : Est-il possible de définir la couleur de police par défaut dans Aspose.Words ?
+ Vous pouvez télécharger un essai gratuit à partir du[Page d'essai gratuit d'Aspose](https://releases.aspose.com/).
 
- R : Oui, vous pouvez définir la couleur de police par défaut dans Aspose.Words à l'aide du`DefaultColor` propriété du`FontSettings` classe. Vous pouvez spécifier la couleur à l'aide de valeurs RVB ou de noms prédéfinis.
+### Q3 : Est-il possible d'intégrer des polices directement dans le document ?
 
-#### Q : Les paramètres de police par défaut s'appliquent-ils à tous les documents ?
+Aspose.Words permet d'intégrer des polices dans certains formats, comme le PDF. Consultez la documentation pour plus de détails sur l'intégration des polices.
 
-R : Oui, les paramètres de police par défaut s'appliquent à tous les documents créés ou modifiés dans Aspose.Words, sauf si des paramètres spécifiques sont définis pour un document individuel.
+### Q4 : Où puis-je obtenir de l'aide pour Aspose.Words ?
+
+ Pour obtenir de l'aide, visitez le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### Q5 : Puis-je acheter une licence temporaire ?
+
+ Oui, vous pouvez obtenir une licence temporaire auprès du[page de licence temporaire](https://purchase.aspose.com/temporary-license/).

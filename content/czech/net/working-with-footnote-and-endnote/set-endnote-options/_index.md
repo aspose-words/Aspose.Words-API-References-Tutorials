@@ -81,7 +81,7 @@ Neváhejte použít tento kód ve svých vlastních projektech a upravit jej pod
 
 #### Otázka: Jak mohu stylovat vysvětlivky v Aspose.Words?
 
- A: Chcete-li stylovat vysvětlivky v Aspose.Words, můžete použít`EndnoteOptions` třída a`SeparatorNoteTextStyle` vlastnictví. Pomocí této vlastnosti můžete určit styl písma, velikost, barvu atd. pro vysvětlivky.
+A: Chcete-li stylovat vysvětlivky v Aspose.Words, můžete použít`EndnoteOptions` třída a`SeparatorNoteTextStyle` vlastnictví. Pomocí této vlastnosti můžete určit styl písma, velikost, barvu atd. pro vysvětlivky.
 
 #### Otázka: Je možné přizpůsobit číslování vysvětlivek v dokumentu?
 
@@ -97,4 +97,4 @@ Neváhejte použít tento kód ve svých vlastních projektech a upravit jej pod
 
 #### Otázka: Je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu?
 
- Odpověď: Ano, je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu. Použijte`RestartRule` vlastnictvím`EndnoteOptions` třídu a nastavte ji na`RestartContinuous` aby číslování pokračovalo mezi sekcemi.
+Odpověď: Ano, je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu. Použijte`RestartRule` vlastnictvím`EndnoteOptions` třídu a nastavte ji na`RestartContinuous` aby číslování pokračovalo mezi sekcemi.

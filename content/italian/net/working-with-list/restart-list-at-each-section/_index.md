@@ -91,12 +91,12 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo per a
 
 #### D: Come posso riavviare un elenco in ogni sezione di Aspose.Words?
 
- R: Per riavviare un elenco in ogni sezione di Aspose.Words, è necessario creare un'istanza di`List` classe e assegnarle un elenco numerato. Quindi puoi usare il`List.IsRestartAtEachSection` proprietà per specificare che la numerazione deve essere riavviata ad ogni sezione. Puoi associare questo elenco ad una o più sezioni del tuo documento in modo che la numerazione ricominci correttamente ad ogni sezione.
+ R: Per riavviare un elenco in ogni sezione di Aspose.Words, è necessario creare un'istanza di`List`classe e assegnarle un elenco numerato. Quindi puoi usare il`List.IsRestartAtEachSection` proprietà per specificare che la numerazione deve essere riavviata ad ogni sezione. Puoi associare questo elenco ad una o più sezioni del tuo documento in modo che la numerazione ricominci correttamente ad ogni sezione.
 
 #### D: Posso personalizzare il formato di numerazione degli elenchi in Aspose.Words?
 
-R: Sì, puoi personalizzare il formato di numerazione degli elenchi in Aspose.Words. IL`List` class offre diverse proprietà per questo, come ad esempio`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, ecc. È possibile utilizzare queste proprietà per impostare il tipo di elenco (numerato, puntato e così via), il formato di numerazione (numeri arabi, numeri romani, lettere e così via) e altre opzioni di formattazione della numerazione.
+ R: Sì, puoi personalizzare il formato di numerazione degli elenchi in Aspose.Words. IL`List` class offre diverse proprietà per questo, come ad esempio`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, ecc. È possibile utilizzare queste proprietà per impostare il tipo di elenco (numerato, puntato e così via), il formato di numerazione (numeri arabi, numeri romani, lettere e così via) e altre opzioni di formattazione della numerazione.
 
 #### D: È possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words?
 
- R: Sì, è possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words. IL`ListLevel` La classe consente di impostare le proprietà di formattazione per ogni livello dell'elenco. Puoi impostare opzioni come prefisso, suffisso, allineamento, rientro, ecc. Ciò ti consente di creare elenchi con più livelli di gerarchia.
+ R: Sì, è possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words. IL`ListLevel`La classe consente di impostare le proprietà di formattazione per ogni livello dell'elenco. Puoi impostare opzioni come prefisso, suffisso, allineamento, rientro, ecc. Ciò ti consente di creare elenchi con più livelli di gerarchia.

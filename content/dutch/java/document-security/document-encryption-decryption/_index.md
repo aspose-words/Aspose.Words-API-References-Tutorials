@@ -101,4 +101,4 @@ Het is belangrijk om te onthouden dat documentversleuteling een waardevolle beve
 
 Door de stappen in deze zelfstudie te volgen, kunt u de beveiliging van uw Java-toepassingen verbeteren en gevoelige informatie in uw documenten effectief beschermen.
 
-Aspose.Words voor Java vereenvoudigt het proces van documentmanipulatie en -beveiliging, waardoor ontwikkelaars robuuste applicaties kunnen creëren die voldoen aan hun documentverwerkingsbehoeften.
+Aspose.Words voor Java vereenvoudigt het proces van documentmanipulatie en -beveiliging, waardoor ontwikkelaars robuuste applicaties kunnen maken die aan hun documentverwerkingsbehoeften voldoen.

@@ -16,7 +16,7 @@ Innan vi fördjupar oss i handledningarna är det viktigt att förstå konceptet
 
 ## Åtkomst till och manipulering av dokumentelement
 
-En av kärnfärdigheterna du kommer att förvärva genom dessa handledningar är förmågan att komma åt och manipulera dokumentelement. Aspose.Words för Java tillhandahåller en rik uppsättning API:er som låter dig navigera, modifiera och extrahera information från dina dokument programmatiskt. Oavsett om du behöver hitta och ersätta text, infoga tabeller eller uppdatera sidhuvuden och sidfötter, har dessa handledningar dig täckt.
+En av kärnfärdigheterna du kommer att förvärva genom dessa handledningar är förmågan att komma åt och manipulera dokumentelement. Aspose.Words för Java tillhandahåller en rik uppsättning API:er som låter dig navigera, modifiera och extrahera information från dina dokument. Oavsett om du behöver hitta och ersätta text, infoga tabeller eller uppdatera sidhuvuden och sidfötter, har dessa handledningar dig täckt.
 
 ## Skapa dynamiska dokument
 
@@ -24,7 +24,7 @@ Med Aspose.Words för Java kan du skapa dynamiska dokument i farten. Föreställ
 
 ## Förbättra dina färdigheter i dokumenthantering
 
-Genom att följa dessa handledningar lär du dig inte bara grunderna för manipulering av dokumentelement utan också dyka djupt in i avancerade ämnen som stil, dokumentskydd, e-postkoppling och mer. Den kunskap som du får här ger dig möjlighet att hantera även de mest komplexa dokumentbearbetningsuppgifterna med lätthet.
+Genom att följa dessa handledningar lär du dig inte bara grunderna för manipulering av dokumentelement utan också dyka djupt in i avancerade ämnen som stil, dokumentskydd, e-postkoppling och mer. Den inhämtade kunskapen här ger dig möjlighet att hantera även de mest komplexa dokumentbearbetningsuppgifterna med lätthet.
 
 ## Kom igång idag
 

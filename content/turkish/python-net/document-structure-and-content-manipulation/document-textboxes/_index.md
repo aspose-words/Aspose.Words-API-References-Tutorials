@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- Bu kodda yeni bir tane oluşturuyoruz.`Document` ve bir`DocumentBuilder` .`insert_text_box`Belgeye metin kutusu eklemek için kullanılan yöntem. Metin kutusunun içeriğini, konumunu ve boyutunu gereksinimlerinize göre özelleştirebilirsiniz.
+ Bu kodda yeni bir tane oluşturuyoruz.`Document` ve bir`DocumentBuilder` .`insert_text_box` Belgeye metin kutusu eklemek için kullanılan yöntem. Metin kutusunun içeriğini, konumunu ve boyutunu gereksinimlerinize göre özelleştirebilirsiniz.
 
 ## Metin Kutularını Biçimlendirme
 
@@ -112,7 +112,7 @@ Bu kılavuzda Aspose.Words Python API'sini kullanarak Word belgelerindeki metin 
 
 Kesinlikle! Ek kaynaklar veya referanslar sağlamak için metin kutusu içeriğine köprüler ekleyebilirsiniz.
 
-### Metin kutularını belgeler arasında kopyalayıp yapıştırmak mümkün mü?
+### Metin kutularını belgeler arasında kopyalayıp yapıştırmak mümkün müdür?
 
  Evet, bir metin kutusunu bir belgeden kopyalayıp başka bir belgeye yapıştırabilirsiniz.`builder.insert_node` yöntem.
 

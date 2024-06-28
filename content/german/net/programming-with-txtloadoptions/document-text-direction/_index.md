@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-In diesem Tutorial untersuchen wir den C#-Quellcode, der für die Funktion „Dokumenttextrichtung“ mit Aspose.Words für .NET bereitgestellt wird. Mit dieser Funktion können Sie die Textrichtung in einem Dokument festlegen. Dies ist besonders nützlich für Sprachen, die von rechts nach links geschrieben werden, wie z. B. Hebräisch oder Arabisch.
+In diesem Tutorial untersuchen wir den C#-Quellcode, der für die Funktion „Dokumenttextrichtung“ mit Aspose.Words für .NET bereitgestellt wird. Mit dieser Funktion können Sie die Textrichtung in einem Dokument festlegen, was besonders nützlich für Sprachen ist, die von rechts nach links geschrieben werden, wie etwa Hebräisch oder Arabisch.
 
 ## Schritt 1: Einrichten der Umgebung
 
@@ -81,7 +81,7 @@ Diese Funktion ist wichtig, um sicherzustellen, dass Text in mehrsprachigen Doku
 
 Mit Aspose.Words können Sie die Textrichtung in Ihren Dokumenten einfach ändern und so den Benutzern ein reibungsloses und intuitives Leseerlebnis bieten.
 
-Es ist wichtig zu beachten, dass diese Funktion besonders nützlich ist, wenn die Textverarbeitung mit Sprachen erfolgt, die eine bestimmte Textrichtung erfordern. Aspose.Words erleichtert diese Aufgabe, indem es leistungsstarke Tools zur Verwaltung der Textrichtung in Ihren Dokumenten bereitstellt.
+Es ist wichtig zu beachten, dass diese Funktion besonders nützlich ist, wenn Wörter mit Sprachen verarbeitet werden, die eine bestimmte Textrichtung erfordern. Aspose.Words erleichtert diese Aufgabe, indem es leistungsstarke Tools zur Verwaltung der Textrichtung in Ihren Dokumenten bereitstellt.
 
 Denken Sie daran, die entsprechenden Ladeoptionen zu verwenden, z. B. das Festlegen der automatischen Textrichtung, um die gewünschten Ergebnisse in Ihren Dokumenten zu erzielen.
 

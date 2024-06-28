@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Legacy control character.doc");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
 ```
 
- Ebben a lépésben konfiguráljuk az OOXML mentési beállításait egy új létrehozásával`OoxmlSaveOptions` tárgy. Megadjuk a kívánt mentési formátumot (itt,`FlatOpc` ), és engedélyezze a`KeepLegacyControlChars` lehetőség a régi vezérlőkarakterek megtartására.
+ Ebben a lépésben konfiguráljuk az OOXML mentési beállításait egy új létrehozásával`OoxmlSaveOptions` tárgy. Megadjuk a kívánt mentési formátumot (itt,`FlatOpc` ), és engedélyezze a`KeepLegacyControlChars` lehetőség az örökölt vezérlőkarakterek megtartására.
 
 ## 4. lépés: A dokumentum mentése örökölt vezérlőkarakterekkel
 
@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 ## Következtetés
 
-Ebben az oktatóanyagban megvizsgáltuk a régi vezérlőkarakterek megőrzésének funkcióit egy dokumentum Aspose.Words for .NET használatával mentésekor. Megtanultuk, hogyan őrizhetjük meg azokat a speciális karaktereket, amelyek fontosak lehetnek a dokumentum megfelelő formázásához vagy megjelenítéséhez.
+Ebben az oktatóanyagban megvizsgáltuk a régi vezérlőkarakterek megőrzésének funkcióit egy dokumentum Aspose.Words for .NET használatával mentésekor. Megtanultuk, hogyan kell megőrizni azokat a speciális karaktereket, amelyek fontosak lehetnek a dokumentum megfelelő formázásához vagy megjelenítéséhez.
 
  Az örökölt vezérlőkarakterek megőrzése különösen hasznos olyan dokumentumoknál, amelyek régebbi vagy speciális szolgáltatásokat, például speciális vezérlőkaraktereket használnak. Engedélyezésével a`KeepLegacyControlChars` opcióval a dokumentum mentésekor gondoskodik ezeknek a karaktereknek a megőrzéséről.
 

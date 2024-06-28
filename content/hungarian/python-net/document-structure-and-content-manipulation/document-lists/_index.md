@@ -8,7 +8,7 @@ weight: 18
 url: /hu/python-net/document-structure-and-content-manipulation/document-lists/
 ---
 
-listák számos dokumentum alapvető alkotóelemei, amelyek strukturált és szervezett módot biztosítanak az információk bemutatására. Az Aspose.Words for Python segítségével zökkenőmentesen hozhat létre és kezelhet listákat Word-dokumentumaiban. Ebben az oktatóanyagban végigvezetjük az Aspose.Words Python API-t használó listákkal való munka folyamatán.
+A listák számos dokumentum alapvető alkotóelemei, amelyek strukturált és szervezett módot biztosítanak az információk bemutatására. Az Aspose.Words for Python segítségével zökkenőmentesen hozhat létre és kezelhet listákat Word-dokumentumaiban. Ebben az oktatóanyagban végigvezetjük az Aspose.Words Python API-t használó listákkal való munka folyamatán.
 
 ## Bevezetés a Word-dokumentumok listáiba
 
@@ -16,7 +16,7 @@ A listáknak két fő típusa van: felsorolásjeles és számozott. Lehetővé t
 
 ## A környezet beállítása
 
- Mielőtt belemerülnénk a listák létrehozásába és kezelésébe, győződjön meg arról, hogy telepítve van az Aspose.Words for Python könyvtár. Letöltheti innen[itt](https://releases.aspose.com/words/python/) . Ezenkívül tekintse meg az API dokumentációját a következő címen:[ez a link](https://reference.aspose.com/words/python-net/) részletes információkért.
+Mielőtt belemerülnénk a listák létrehozásába és kezelésébe, győződjön meg arról, hogy telepítve van az Aspose.Words for Python könyvtár. Letöltheti innen[itt](https://releases.aspose.com/words/python/) . Ezenkívül tekintse meg az API dokumentációját a következő címen:[ez a link](https://reference.aspose.com/words/python-net/) részletes információkért.
 
 ## Felsorolásos listák létrehozása
 
@@ -106,7 +106,7 @@ A lista eltávolítása ugyanolyan fontos, mint egy lista létrehozása. A list�
 
 ## Dokumentumok mentése és exportálása
 
-listák létrehozása és testreszabása után a dokumentumot különféle formátumokban mentheti, beleértve a DOCX és PDF formátumokat.
+A listák létrehozása és testreszabása után a dokumentumot különféle formátumokban mentheti, beleértve a DOCX és PDF formátumokat.
 
 ## Következtetés
 

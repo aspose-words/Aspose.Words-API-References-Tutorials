@@ -2,82 +2,88 @@
 title: 본문의 필드 변환
 linktitle: 본문의 필드 변환
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 페이지 필드를 Word 문서 본문의 텍스트로 변환하는 방법을 알아보세요.
+description: 문서 처리 효율성을 높이기 위해 Aspose.Words for .NET을 사용하여 문서 필드를 정적 텍스트로 변환하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-fields/convert-fields-in-body/
 ---
 
-이 단계별 튜토리얼에서는 제공된 C# 소스 코드를 사용하여 Aspose.Words for .NET의 ConvertFieldsInBody 기능을 사용하는 방법을 안내합니다. 이 기능을 사용하면 문서 본문의 특정 필드를 일반 텍스트로 변환하여 문서를 더 쉽게 처리할 수 있습니다. 이 기능을 효과적으로 사용하려면 아래 단계를 따르십시오.
+## 소개
 
-## 1단계: 전제조건
+.NET 개발 영역에서는 문서 콘텐츠를 동적으로 관리하는 것이 필수적이며, 문서 내의 다양한 필드 유형을 조작해야 하는 경우가 많습니다. Aspose.Words for .NET은 문서 필드를 효율적으로 처리할 수 있는 강력한 기능을 제공하는 개발자를 위한 강력한 도구 세트로 돋보입니다. 이 포괄적인 가이드는 .NET용 Aspose.Words를 사용하여 문서 본문의 필드를 변환하는 방법에 중점을 두고 개발자가 문서 자동화 및 관리를 향상할 수 있도록 지원하는 단계별 지침을 제공합니다.
 
-시작하기 전에 Aspose.Words for .NET을 설치했고 처리할 문서가 준비되어 있는지 확인하세요. 또한 문서의 디렉터리 경로가 있는지 확인하세요.
+## 전제조건
 
-## 2단계: 문서 넣기
+.NET용 Aspose.Words를 사용하여 문서 본문의 필드를 변환하는 방법에 대한 튜토리얼을 살펴보기 전에 다음 전제 조건이 있는지 확인하세요.
 
-문서 디렉터리 경로에 대한 변수를 선언하여 시작한 다음 해당 변수를 사용하여 지정된 문서에서 Document 개체를 초기화합니다. 이 예에서는 문서 이름이 "Linked fields.docx"입니다.
+- Visual Studio: .NET 개발을 위해 설치 및 구성되었습니다.
+-  .NET용 Aspose.Words: Visual Studio 프로젝트에서 다운로드 및 참조됩니다. 당신은 그것을 얻을 수 있습니다[여기](https://releases.aspose.com/words/net/).
+- C#의 기본 지식: 제공된 코드 조각을 이해하고 수정할 수 있는 C# 프로그래밍 언어에 대한 지식입니다.
+
+## 네임스페이스 가져오기
+
+우선, 필요한 네임스페이스를 프로젝트로 가져와야 합니다.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using System.Linq;
+```
 
-// 문서를 로드하세요
+이러한 네임스페이스는 Aspose.Words 기능 및 LINQ 쿼리에 액세스하는 데 필수적입니다.
+
+## .NET용 Aspose.Words를 사용하여 본문의 필드를 변환하는 단계별 가이드
+
+### 1단계: 문서 로드
+
+필드를 변환하려는 문서를 로드하여 시작하십시오.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## 3단계: 페이지 필드를 일반 텍스트로 변환
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 실제 문서의 경로와 함께.
 
- 이제 문서가 로드되었으므로 변환 단계로 넘어갈 수 있습니다. 첫 번째 섹션 본문의 페이지 필드를 일반 텍스트로 변환하려면 다음을 사용할 수 있습니다.`Range.Fields` 지정된 범위의 모든 필드를 가져온 다음 해당 유형의 필드를 필터링하는 메서드`FieldType.FieldPage` . 그런 다음`ForEach` 각 필드를 반복하고 호출하는 메서드`Unlink()` 일반 텍스트로 변환하는 방법입니다.
+### 2단계: 필드 식별 및 변환
+
+문서 본문 내의 특정 필드를 식별하고 변환합니다. 예를 들어 PAGE 필드를 텍스트로 변환하려면 다음을 수행하세요.
 
 ```csharp
-// 페이지 필드를 첫 번째 섹션 본문의 일반 텍스트로 변환하려면 적절한 매개변수를 전달하세요.
-doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.Unlink());
+doc.FirstSection.Body.Range.Fields
+    .Where(f => f.Type == FieldType.FieldPage)
+    .ToList()
+    .ForEach(f => f.Unlink());
 ```
 
-## 4단계: 수정된 문서 저장
+이 코드 조각은 LINQ를 사용하여 문서 본문의 모든 PAGE 필드를 찾은 다음 연결을 해제하여 효과적으로 정적 텍스트로 변환합니다.
 
-페이지 필드를 일반 텍스트로 변환한 후에는 다음을 사용하여 수정된 문서를 저장할 수 있습니다.`Save()` 방법을 사용하고 출력 파일의 경로와 이름을 지정합니다. 이 예에서는 이를 "WorkingWithFields.ConvertFieldsInBody.docx"로 저장합니다.
+### 3단계: 문서 저장
+
+필드를 변환한 후 수정된 문서를 저장합니다.
 
 ```csharp
-// 수정된 문서를 저장하세요
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
-### .NET용 Aspose.Words를 사용하여 본문의 필드를 변환하는 예제 소스 코드
+ 조정하다`"WorkingWithFields.ConvertFieldsInBody.docx"` 원하는 출력 파일 경로를 지정합니다.
 
-다음은 .NET용 Aspose.Words를 사용하여 필드를 본문으로 변환하는 전체 소스 코드 예입니다.
+## 결론
 
-```csharp
-// 문서 디렉터리의 경로입니다.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+.NET용 Aspose.Words를 사용하여 문서 필드를 조작하는 기술을 익히면 개발자는 문서 작업 흐름을 효율적으로 자동화할 수 있습니다. 필드를 일반 텍스트로 변환하든 더 복잡한 필드 유형을 처리하든 Aspose.Words는 직관적인 API와 강력한 기능 세트를 통해 이러한 작업을 단순화하여 .NET 애플리케이션과의 원활한 통합을 보장합니다.
 
-// 문서를 로드하세요
-Document doc = new Document(dataDir + "Linked fields.docx");
+## 자주 묻는 질문(FAQ)
 
-// 페이지 필드를 첫 번째 섹션 본문의 일반 텍스트로 변환하려면 적절한 매개변수를 전달하세요.
-doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
-doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
-```
+### .NET용 Aspose.Words의 문서 필드란 무엇입니까?
+Aspose.Words의 문서 필드는 날짜, 페이지 번호, 계산과 같은 동적 데이터를 저장하고 표시할 수 있는 자리 표시자입니다.
 
-### FAQ
+### .NET용 Aspose.Words에서 다양한 유형의 필드를 어떻게 처리할 수 있나요?
+Aspose.Words는 DATE, PAGE, MERGEFIELD 등과 같은 다양한 필드 유형을 지원하므로 개발자는 이를 프로그래밍 방식으로 조작할 수 있습니다.
 
-#### Q: Aspose.Words는 다른 버전의 Microsoft Word와 호환됩니까?
+### .NET용 Aspose.Words는 필드를 다양한 문서 형식으로 변환할 수 있습니까?
+예, Aspose.Words for .NET은 DOCX, DOC, RTF 등과 같은 형식의 필드를 보다 원활하게 변환하고 조작할 수 있습니다.
 
-A: 예, Aspose.Words는 Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 및 Word 2019를 포함한 다양한 버전의 Microsoft Word와 호환됩니다.
+### .NET용 Aspose.Words에 대한 포괄적인 문서는 어디서 찾을 수 있나요?
+ 자세한 문서와 API 참조가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
 
-#### Q: Aspose.Words는 복잡한 필드 구조를 처리할 수 있나요?
-
-답: 물론이죠! Aspose.Words는 중첩된 필드, 계산 및 조건식을 포함한 복잡한 필드 구조에 대한 광범위한 지원을 제공합니다. 강력한 API를 활용하여 모든 유형의 필드 구조로 작업할 수 있습니다.
-
-#### Q: Aspose.Words는 필드 업데이트 작업을 지원합니까?
-
-A: 예, Aspose.Words를 사용하면 프로그래밍 방식으로 필드를 업데이트할 수 있습니다. API를 사용하면 쉽게 필드 값을 업데이트하고, 계산을 새로 고치고, 기타 필드 관련 작업을 수행할 수 있습니다.
-
-#### Q: Aspose.Words를 사용하여 필드를 일반 텍스트로 변환할 수 있나요?
-
-답: 물론이죠! Aspose.Words는 필드를 일반 텍스트로 변환하는 방법을 제공합니다. 이는 필드 관련 서식이나 기능 없이 콘텐츠를 추출해야 할 때 유용할 수 있습니다.
-
-#### Q: Aspose.Words를 사용하여 동적 필드가 있는 Word 문서를 생성할 수 있습니까?
-
-답: 물론이죠! Aspose.Words는 동적 필드가 포함된 Word 문서를 생성하는 강력한 기능을 제공합니다. 사전 정의된 필드로 템플릿을 생성하고 여기에 데이터를 동적으로 입력하여 유연하고 효율적인 문서 생성 솔루션을 제공할 수 있습니다.
+### .NET용 Aspose.Words에 사용할 수 있는 평가판이 있습니까?
+ 예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).

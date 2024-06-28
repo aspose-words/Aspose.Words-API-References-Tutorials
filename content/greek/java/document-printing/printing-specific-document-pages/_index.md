@@ -16,7 +16,7 @@ url: /el/java/document-printing/printing-specific-document-pages/
 
 Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
-- Εγκατεστημένο Java Development Kit (JDK).
+- Εγκαταστάθηκε το Java Development Kit (JDK).
 - Ολοκληρωμένο περιβάλλον ανάπτυξης (IDE) όπως το Eclipse ή το IntelliJ IDEA
 - Aspose.Words για βιβλιοθήκη Java
 - Βασικές γνώσεις προγραμματισμού Java

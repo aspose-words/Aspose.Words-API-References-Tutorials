@@ -14,7 +14,7 @@ url: /zh/net/working-with-markdown/
 | 标题 | 描述 |
 | --- | --- |
 | [加粗字体](./bold-text/) | 了解如何使用 Aspose.Words for .NET 分步指南将文本加粗。 |
-| [斜体文本](./italic-text/) | 了解如何使用 Aspose.Words for .NET 分步指南将文本设置为斜体。 |
+| [意大利语文本](./italic-text/) | 了解如何使用 Aspose.Words for .NET 分步指南将文本设置为斜体。 |
 | [删除线](./strikethrough/) | 了解如何使用 Aspose.Words for .NET 分步指南应用删除线文本样式。 |
 | [内联代码](./inline-code/) | 了解如何使用 Aspose.Words for .NET 分步指南内联代码。 |
 | [自动链接](./autolink/) | 了解如何使用 Aspose.Words for .NET 分步指南插入自动链接。 |
@@ -22,7 +22,7 @@ url: /zh/net/working-with-markdown/
 | [图像](./image/) | 了解如何使用 Aspose.Words for .NET 分步指南插入和自定义图像。 |
 | [水平线](./horizontal-rule/) | 了解如何使用 Aspose.Words for .NET 分步指南插入水平线。 |
 | [标题](./heading/) | 了解如何通过 Aspose.Words for .NET 分步指南使用标题。 |
-| [固定文本标题](./setext-heading/) | 通过 Aspose.Words for .NET 分步指南了解如何使用 Setext 标题来格式化文档。 |
+| [塞泰克斯标题](./setext-heading/) | 通过 Aspose.Words for .NET 分步指南了解如何使用 Setext 标题来格式化文档。 |
 | [缩进代码](./indented-code/) | 了解如何通过 Aspose.Words for .NET 分步指南使用缩进代码。 |
 | [围栏代码](./fenced-code/) | 了解如何通过 Aspose.Words for .NET 分步指南使用隔离代码功能。 |
 | [引用](./quote/) | 了解如何通过 Aspose.Words for .NET 分步指南使用引用。 |

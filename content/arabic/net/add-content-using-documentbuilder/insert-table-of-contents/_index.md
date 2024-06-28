@@ -2,39 +2,69 @@
 title: إدراج جدول المحتويات في مستند Word
 linktitle: إدراج جدول المحتويات في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج جدول محتويات في مستندات Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إدراج جدول محتويات في Word باستخدام Aspose.Words لـ .NET. اتبع دليلنا خطوة بخطوة للتنقل السلس بين المستندات.
 type: docs
 weight: 10
 url: /ar/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-في هذا البرنامج التعليمي الشامل، ستتعلم كيفية إدراج جدول محتويات في مستند Word باستخدام Aspose.Words for .NET. سنرشدك خلال العملية ونزودك بمقتطفات التعليمات البرمجية اللازمة لـ C#. بحلول نهاية هذا الدليل، ستكون قادرًا على إنشاء جدول محتويات بالعناوين وأرقام الصفحات المناسبة.
+## مقدمة
+ستتعلم في هذا البرنامج التعليمي كيفية إضافة جدول محتويات (TOC) بكفاءة إلى مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. تعد هذه الميزة ضرورية لتنظيم المستندات الطويلة والتنقل فيها، وتحسين إمكانية القراءة، وتقديم نظرة عامة سريعة على أقسام المستند.
 
 ## المتطلبات الأساسية
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
-- Aspose.Words لمكتبة .NET المثبتة على نظامك.
 
-## الخطوة 1: إنشاء مستند جديد وDocumentBuilder
-للبدء، قم بإنشاء مستند جديد باستخدام فئة Document وقم بتهيئة كائن DocumentBuilder:
+قبل أن تبدأ، تأكد من أن لديك ما يلي:
+
+- الفهم الأساسي لـ C# و.NET Framework.
+- تم تثبيت Visual Studio على جهازك.
+-  Aspose.Words لمكتبة .NET. إذا لم تكن قد قمت بتثبيته بعد، يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+
+## استيراد مساحات الأسماء
+
+للبدء، قم باستيراد مساحات الأسماء الضرورية في مشروع C# الخاص بك:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+دعونا نقسم العملية إلى خطوات واضحة:
+
+## الخطوة 1: تهيئة مستند Aspose.Words وDocumentBuilder
+
+ أولاً، قم بتهيئة Aspose.Words جديد`Document` كائن و`DocumentBuilder` للعمل مع:
+
+```csharp
+// تهيئة المستند و DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 2: أدخل جدول المحتويات
-بعد ذلك، استخدم أسلوب InsertTableOfContents لفئة DocumentBuilder لإدراج جدول محتويات. حدد خيارات التنسيق المطلوبة ضمن الطريقة:
+
+ الآن، قم بإدراج جدول المحتويات باستخدام`InsertTableOfContents` طريقة:
 
 ```csharp
+// إدراج جدول المحتويات
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## الخطوة 3: إضافة محتوى المستند
-بعد إدراج جدول المحتويات، أضف محتوى المستند الفعلي. قم بتعيين أنماط العناوين المناسبة باستخدام StyleIdentifier:
+## الخطوة 3: ابدأ محتوى المستند على صفحة جديدة
+
+لضمان التنسيق الصحيح، ابدأ محتوى المستند الفعلي في صفحة جديدة:
 
 ```csharp
+// إدراج فاصل الصفحات
 builder.InsertBreak(BreakType.PageBreak);
+```
 
+## الخطوة 4: هيكلة المستند الخاص بك مع العناوين
+
+قم بتنظيم محتوى المستند باستخدام أنماط العناوين المناسبة:
+
+```csharp
+// ضبط أنماط العناوين
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 builder.Writeln("Heading 1");
 
@@ -59,96 +89,42 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## الخطوة 4: تحديث جدول المحتويات
-سيكون جدول المحتويات المدرج حديثًا فارغًا في البداية. لملئها، قم بتحديث الحقول الموجودة في المستند:
+## الخطوة 5: تحديث وملء جدول المحتويات
+
+قم بتحديث جدول المحتويات ليعكس بنية الوثيقة:
 
 ```csharp
+// قم بتحديث حقول جدول المحتويات
 doc.UpdateFields();
 ```
 
-## الخطوة 5: احفظ المستند
-بعد إدراج جدول المحتويات وتحديث الحقول، احفظ المستند في ملف باستخدام طريقة الحفظ لفئة المستند:
+## الخطوة 6: احفظ المستند
+
+وأخيرًا، احفظ مستندك في دليل محدد:
 
 ```csharp
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-```
-
-### مثال على كود المصدر لإدراج جدول المحتويات باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدراج جدول المحتويات باستخدام Aspose.Words لـ .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-// تهيئة DocumentBuilder باستخدام كائن المستند
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// إدراج جدول المحتوياتأ
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-
-// ابدأ محتوى المستند الفعلي في الصفحة الثانية.
-builder.InsertBreak(BreakType.PageBreak);
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
-builder.Writeln("Heading 1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 1.1");
-builder.Writeln("Heading 1.2");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
-builder.Writeln("Heading 2");
-builder.Writeln("Heading 3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 3.1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
-
-builder.Writeln("Heading 3.1.1");
-builder.Writeln("Heading 3.1.2");
-builder.Writeln("Heading 3.1.3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 3.2");
-builder.Writeln("Heading 3.3");
-
-
-// سيكون جدول المحتويات المدرج حديثًا فارغًا في البداية.
-// ويجب ملؤها عن طريق تحديث الحقول الموجودة في المستند.
-doc.UpdateFields();
-
-
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
+// احفظ المستند
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
 ## خاتمة
 
-تهانينا! لقد تعلمت بنجاح كيفية إدراج جدول محتويات في مستند Word باستخدام Aspose.Words لـ .NET. باتباع هذا الدليل التفصيلي واستخدام كود المصدر المقدم، يمكنك الآن إنشاء جدول محتويات بالعناوين وأرقام الصفحات المناسبة لمستنداتك.
+تعد إضافة جدول محتويات باستخدام Aspose.Words for .NET أمرًا مباشرًا وتعزز سهولة استخدام مستنداتك بشكل كبير. باتباع هذه الخطوات، يمكنك تنظيم المستندات المعقدة والتنقل خلالها بكفاءة.
 
-### الأسئلة الشائعة حول إدراج جدول المحتويات في مستند Word
+## الأسئلة الشائعة
 
-#### س: هل يمكنني تخصيص مظهر جدول المحتويات؟
+### هل يمكنني تخصيص مظهر جدول المحتويات؟
+نعم، يمكنك تخصيص مظهر وسلوك جدول المحتويات باستخدام Aspose.Words لواجهات برمجة تطبيقات .NET.
 
- ج: نعم، يمكنك تخصيص مظهر جدول المحتويات عن طريق تعديل خيارات التنسيق المحددة في ملف`InsertTableOfContents` طريقة. تسمح لك المعلمات بالتحكم في أرقام الصفحات والمسافات البادئة والأنماط الأخرى.
+### هل يدعم Aspose.Words تحديث الحقول تلقائيًا؟
+نعم، يتيح لك Aspose.Words تحديث الحقول مثل جدول المحتويات ديناميكيًا بناءً على تغييرات المستند.
 
-#### س: ماذا لو كنت أرغب في تضمين مستويات عناوين محددة في جدول المحتويات؟
+### هل يمكنني إنشاء جداول محتويات متعددة في مستند واحد؟
+يدعم Aspose.Words إنشاء جداول محتويات متعددة بإعدادات مختلفة داخل مستند واحد.
 
- ج: يمكنك تحديد مستويات العناوين المطلوبة لإدراجها في جدول المحتويات عن طريق ضبط القيمة داخل`InsertTableOfContents` طريقة. على سبيل المثال، باستخدام`"\\o \"1-3\""` سوف تشمل مستويات العنوان من 1 إلى 3.
+### هل Aspose.Words متوافق مع الإصدارات المختلفة من Microsoft Word؟
+نعم، يضمن Aspose.Words التوافق مع الإصدارات المختلفة من تنسيقات Microsoft Word.
 
-#### س: هل يمكنني تحديث جدول المحتويات تلقائيًا إذا قمت بإجراء تغييرات على محتوى المستند؟
-
- ج: نعم، يمكنك تحديث جدول المحتويات تلقائيًا عن طريق الاتصال بـ`UpdateFields` الطريقة على الوثيقة سيضمن هذا أن أي تغييرات يتم إجراؤها على محتوى المستند، مثل إضافة أو إزالة العناوين، تنعكس في جدول المحتويات.
-
-#### س: كيف يمكنني تصميم مستويات العناوين في جدول المحتويات بشكل مختلف؟
-
- ج: يمكنك تصميم مستويات العناوين بشكل مختلف باستخدام أنماط فقرات مختلفة لكل مستوى عنوان. عن طريق تعيين مختلفة`StyleIdentifier` القيم إلى`ParagraphFormat` التابع`DocumentBuilder`، يمكنك إنشاء أنماط مميزة لكل مستوى عنوان.
-
-#### س: هل من الممكن إضافة تنسيق إضافي للعناوين في جدول المحتويات؟
-
- ج: نعم، يمكنك إضافة تنسيق إضافي إلى العناوين الموجودة في جدول المحتويات، مثل أنماط الخطوط أو الألوان أو خصائص أخرى. عن طريق ضبط`Font` خصائص`DocumentBuilder`، يمكنك تطبيق تنسيق مخصص على العناوين.
+### أين يمكنني العثور على مزيد من المساعدة والدعم لـ Aspose.Words؟
+لمزيد من المساعدة، قم بزيارة[Aspose.منتدى الكلمات](https://forum.aspose.com/c/words/8) أو تحقق من[الوثائق الرسمية](https://reference.aspose.com/words/net/).

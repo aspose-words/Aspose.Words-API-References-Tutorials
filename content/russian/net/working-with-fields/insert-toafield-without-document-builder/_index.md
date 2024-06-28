@@ -45,7 +45,7 @@ fieldTA.LongCitation = "Value 0";
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## Шаг 5. Создание абзаца для поля TOA.
+## Шаг 5. Создайте абзац для поля TOA.
 
 Мы создаем новый абзац для поля TOA.
 

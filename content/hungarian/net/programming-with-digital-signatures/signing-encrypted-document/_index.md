@@ -72,7 +72,7 @@ V: Dokumentum-aláírás az Aspose.Words for .NET-ben egy Word-dokumentum digit�
 
 #### K: Mi az a titkosított Word-dokumentum?
 
-V: A titkosított Word-dokumentum olyan dokumentum, amelyet jelszóval titkosítottak. A titkosítás egy olyan biztonsági intézkedés, amely a dokumentum tartalmát úgy védi, hogy kódolja és olvashatatlanná teszi a helyes visszafejtési jelszó nélkül.
+V: A titkosított Word-dokumentum olyan dokumentum, amelyet jelszóval titkosítottak. A titkosítás egy biztonsági intézkedés, amely a dokumentum tartalmát úgy védi, hogy kódolja és olvashatatlanná teszi a helyes visszafejtési jelszó nélkül.
 
 #### K: Hogyan írhatok alá egy titkosított Word-dokumentumot az Aspose.Words for .NET használatával?
 

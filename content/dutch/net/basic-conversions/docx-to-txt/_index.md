@@ -12,7 +12,7 @@ In deze stapsgewijze zelfstudie laten we u zien hoe u Aspose.Words voor .NET kun
 
  Om aan de slag te gaan, moet u ervoor zorgen dat Aspose.Words voor .NET is geïnstalleerd en ingesteld in uw ontwikkelomgeving. Als u dit nog niet hebt gedaan, downloadt en installeert u de bibliotheek van[Aspose.Releases]https://releases.aspose.com/words/net/.
 
-## Stap 1: Het documentobject initialiseren
+## Stap 1: Initialiseren van het documentobject
 
  Initialiseer eerst de`Document`object met het pad naar uw brondocument in Docx-indeling:
 
@@ -57,4 +57,4 @@ Er kunnen coderingsproblemen optreden bij het converteren van DOCX naar TXT vanw
 
 #### Wat zijn de beperkingen van het conversieproces?
 
-De beperkingen van het conversieproces zijn afhankelijk van de specifieke tool of bibliotheek die u gebruikt. Voor sommige tools kunnen beperkingen gelden met betrekking tot ondersteunde functies, complexe opmaak of specifieke elementen van het DOCX-bestand. Het is belangrijk om de beperkingen van de gekozen tool te begrijpen en te beoordelen of deze aansluiten bij uw conversiebehoeften.
+De beperkingen van het conversieproces zijn afhankelijk van de specifieke tool of bibliotheek die u gebruikt. Sommige tools hebben mogelijk gerelateerde beperkingen voor ondersteunde functies, complexe opmaak of specifieke elementen van het DOCX-bestand. Het is belangrijk om de beperkingen van de gekozen tool te begrijpen en te beoordelen of deze aansluiten bij uw conversiebehoeften.

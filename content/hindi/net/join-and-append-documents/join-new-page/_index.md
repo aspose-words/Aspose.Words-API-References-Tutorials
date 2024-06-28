@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## चरण 5: संशोधित दस्तावेज़ सहेजें
 
- अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
+अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//संलग्न दस्तावेज़ को एक नए पृष्ठ पर प्रारंभ करने के लिए सेट करें।
+	// संलग्न दस्तावेज़ को एक नए पृष्ठ पर प्रारंभ करने के लिए सेट करें।
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// स्रोत दस्तावेज़ में पाई गई मूल शैलियों का उपयोग करके स्रोत दस्तावेज़ जोड़ें।
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

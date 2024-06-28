@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Vytváření tabulek
 
 ```java
-// Vytvořte tabulku se 3 řádky a 4 sloupci
+// Vytvořte tabulku se 3 řádky a 4 sloupci.
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

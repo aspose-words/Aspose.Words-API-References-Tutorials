@@ -15,4 +15,4 @@ url: /ar/net/working-with-list/
 | --- | --- |
 | [إعادة تشغيل القائمة في كل قسم](./restart-list-at-each-section/)  | تعرف على كيفية إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET. |
 | [تحديد مستوى القائمة](./specify-list-level/) | تعرف على كيفية تحديد مستوى القائمة في مستند Word باستخدام Aspose.Words لـ .NET. |
-| [إعادة تشغيل رقم القائمة](./restart-list-number/) | تعرف على كيفية إعادة تعيين رقم القائمة في مستند Word باستخدام Aspose.Words for .NET. |
+| [إعادة تشغيل رقم القائمة](./restart-list-number/) | تعرف على كيفية إعادة تعيين رقم القائمة في مستند Word باستخدام Aspose.Words لـ .NET. |

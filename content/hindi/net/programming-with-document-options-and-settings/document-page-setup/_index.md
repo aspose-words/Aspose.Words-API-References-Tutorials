@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// दस्तावेज़ ग्रिड व्यवहार को परिभाषित करने की अनुमति देने वाले अनुभाग के लिए लेआउट मोड सेट करें।
-	// ध्यान दें कि दस्तावेज़ ग्रिड टैब एमएस वर्ड के पेज सेटअप संवाद में दिखाई देता है
+	// ध्यान दें कि दस्तावेज़ ग्रिड टैब एमएस वर्ड के पेज सेटअप संवाद में दिखाई देता है।
 	// यदि किसी एशियाई भाषा को संपादन भाषा के रूप में परिभाषित किया गया है।
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

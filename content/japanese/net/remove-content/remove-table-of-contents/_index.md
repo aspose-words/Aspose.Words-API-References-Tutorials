@@ -2,216 +2,103 @@
 title: Word文書の目次を削除する
 linktitle: Word文書の目次を削除する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書の目次を削除する方法を学習します。
+description: このわかりやすいチュートリアルでは、Aspose.Words for .NET を使用して Word 文書の目次 (TOC) を削除する方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/remove-content/remove-table-of-contents/
 ---
-このチュートリアルでは、.NET 用の Aspose.Words ライブラリを使用して Word 文書の目次を削除する方法を説明します。目次は冗長または不必要な場合がありますが、このコードはそれを効果的に削除するのに役立ちます。コードを理解し、独自の .NET プロジェクトに実装するのに役立つステップバイステップのガイドを提供します。
+## Aspose.Words for .NET を使用して Word 文書の目次を削除する
+
+Word 文書内の不要な目次 (TOC) を扱うことにうんざりしていませんか?誰もが経験したことがありますが、目次が必要ない場合もあります。幸いなことに、Aspose.Words for .NET を使用すると、目次をプログラムで簡単に削除できます。このチュートリアルでは、プロセスを段階的に説明するので、すぐにマスターできるようになります。さっそく飛び込んでみましょう！
 
 ## 前提条件
-始める前に、次のものが揃っていることを確認してください。
-- C# プログラミング言語に関する実践的な知識
-- プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
-- 削除する目次を含む Word 文書
 
-## ステップ 1: ドキュメント ディレクトリを定義する
-まず、Word 文書の場所へのディレクトリ パスを設定する必要があります。交換する`"YOUR DOCUMENT DIRECTORY"`コード内で適切なパスを指定します。
+始める前に、必要なものがすべて揃っていることを確認してください。
+
+1.  Aspose.Words for .NET ライブラリ: まだダウンロードしていない場合は、Aspose.Words for .NET ライブラリを次の場所からダウンロードしてインストールします。[Aspose.リリース](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio のような IDE を使用すると、コーディングが容易になります。
+3. .NET Framework: .NET Framework がインストールされていることを確認してください。
+4. Word ドキュメント: 削除する目次を含む Word ドキュメント (.docx) を用意します。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートしましょう。これにより、Aspose.Words を使用するための環境がセットアップされます。
 
 ```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## ステップ 2: ドキュメントをアップロードする
-次に、Word 文書を`Document`を使用したクラス`Load`方法。
+ここで、Word 文書から目次を削除するプロセスを、明確で管理しやすい手順に分割してみましょう。
+
+## ステップ 1: ドキュメント ディレクトリを設定する
+
+ドキュメントを操作する前に、ドキュメントがどこにあるかを定義する必要があります。これはドキュメント ディレクトリのパスです。
 
 ```csharp
-//ドキュメントをロードします
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントフォルダーへのパスを置き換えます。ここに Word ファイルが存在します。
+
+## ステップ 2: ドキュメントをロードする
+
+次に、Word ドキュメントをアプリケーションにロードする必要があります。 Aspose.Words を使用すると、これが驚くほど簡単になります。
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## ステップ 3: 目次を削除する
-目次を削除するには、TOC (目次) タイプをループします。`FieldStart`ドキュメント内のノード。これらのノードにすぐにアクセスして、削除するノードのリストを作成できるように、これらのノードを保存します。
+交換する`"your-document.docx"`ファイルの名前を付けます。このコード行によりドキュメントが読み込まれ、作業を開始できるようになります。
+
+## ステップ 3: TOC フィールドを特定して削除する
+
+ここで魔法が起こります。 TOC フィールドを見つけて削除します。
 
 ```csharp
-//素早くアクセスできるように、目次フィールドの FieldStart ノードをドキュメントに保存します。
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//これは、指定された TOC 内で見つかったノードを保存するリストです。これらはこのメソッドの終了時に削除されます。
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+何が起こっているかは次のとおりです。
+- `doc.Range.Fields`: ドキュメント内のすべてのフィールドにアクセスします。
+- `.Where(f => f.Type == FieldType.FieldTOC)`: これによりフィールドがフィルタリングされ、目次であるフィールドのみが検索されます。
+- `.ToList().ForEach(f => f.Remove())`: これにより、フィルターされたフィールドがリストに変換され、それぞれが削除されます。
 
-//指定された TOC インデックスが存在するかどうかを確認します。
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## ステップ 4: 変更したドキュメントを保存する
 
-bool isRemoving = true;
+最後に、変更を保存する必要があります。元のファイルを保存するために、ドキュメントを新しい名前で保存できます。
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     //これらのノードを保存し、最後にすべて削除する方が安全です。
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // FieldTOC タイプの FieldEnd ノードに遭遇すると、
-     //現在の目次の終わりに来ていることがわかっているので、ここで終了します。
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### Aspose.Words for .NET を使用して目次を削除するためのサンプル ソース コード 
-```csharp
-
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-//ドキュメントをロードします
-Document doc = new Document(dataDir + "your-document.docx");
-
-//素早くアクセスできるように、目次フィールドの FieldStart ノードをドキュメントに保存します。
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//これは、指定された TOC 内で見つかったノードを保存するリストです。これらはこのメソッドの最後に削除されます。
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-//渡されたインデックスによって指定された TOC が存在することを確認してください。
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	//これらのノードを保存し、後ですべて一度に削除する方が安全です。
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// FieldTOC タイプの FieldEnd ノードに遭遇すると、
-	//現在の目次の終わりに来ていることがわかっているので、ここで終了します。
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+この行により、変更を加えた状態でドキュメントが保存されます。交換する`"modified-document.docx"`任意のファイル名を付けてください。
 
 ## 結論
-このチュートリアルでは、.NET 用の Aspose.Words ライブラリを使用して Word 文書から目次を削除するためのステップバイステップのガイドを紹介しました。提供されているコードと指示に従うことで、目次を簡単に削除し、ドキュメントのレイアウトを改善できます。特定のニーズに合わせてディレクトリ パスとファイル名を変更することを忘れないでください。
 
-### よくある質問
+そして、それができました！ Aspose.Words for .NET を使用して Word 文書から目次を削除するのは、これらの簡単な手順に分割すると簡単です。この強力なライブラリは、目次の削除に役立つだけでなく、その他の無数のドキュメント操作も処理できます。さあ、試してみてください!
 
-#### Q: Word 文書の目次を削除するには、Aspose.Words を使用する必要があるのはなぜですか?
+## よくある質問
 
-A: Aspose.Words は、.NET アプリケーションで Word ドキュメントを操作するための強力で多用途のクラス ライブラリです。 Aspose.Words を使用すると、ドキュメントから目次を効果的に削除できます。これは、目次が冗長または不要な場合に役立ちます。これにより、ドキュメントのコンテンツをカスタマイズし、全体的なプレゼンテーションを改善することができます。
+### 1. Aspose.Words for .NET とは何ですか?
 
-#### Q: Aspose.Words for .NET でドキュメントをアップロードするにはどうすればよいですか?
+Aspose.Words for .NET は、ドキュメント操作用の堅牢な .NET ライブラリであり、開発者が Word ドキュメントをプログラムで作成、変更、変換できるようにします。
 
-A: Word 文書の目次を削除するには、まず Aspose.Words の Load() メソッドを使用して文書をメモリにロードする必要があります。特定のディレクトリからドキュメントをロードするサンプル コードを次に示します。
+### 2. Aspose.Words は無料で使用できますか?
 
-```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+はい、Aspose.Words を使用できます。[無料トライアル](https://releases.aspose.com/)または、[仮免許](https://purchase.aspose.com/temporary-license/).
 
-//ドキュメントをロードします
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. Aspose.Words を使用して他のフィールドを削除することはできますか?
 
-交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントへの実際のパスを含めます。
+絶対に！フィルター条件でフィールドの種類を指定することで、任意のフィールドを削除できます。
 
-#### Q: Aspose.Words を使用してドキュメントの目次を削除するにはどうすればよいですか?
+### 4. Aspose.Words を使用するには Visual Studio が必要ですか?
 
- A: 目次を削除するには、次の手順を繰り返す必要があります。`FieldStart`ドキュメント内の目次のノードを入力します。これらのノードを保存してすぐにアクセスしたり、削除するノードのリストを作成したりできます。サンプルコードは次のとおりです。
+開発を容易にするために Visual Studio を強くお勧めしますが、.NET をサポートする任意の IDE を使用できます。
 
-```csharp
-//素早くアクセスできるように、目次フィールドの FieldStart ノードをドキュメントに保存します。
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//これは、指定された TOC 内で見つかったノードを格納するリストです。これらはこのメソッドの終了時に削除されます。
-List<Node> nodeList = new List<Node>();
+### 5. Aspose.Words に関する詳細情報はどこで入手できますか?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-//指定された目次インデックスが存在するかどうかを確認します。
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-//これらのノードを保存し、最後にすべて削除する方が安全です。
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// FieldTOC タイプの FieldEnd ノードに遭遇すると、
-//現在の目次の終わりに来ていることがわかっているので、ここで終了します。
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### Q: Aspose.Words for .NET で編集したドキュメントを保存するにはどうすればよいですか?
-
-A: 目次を削除した後、Save() メソッドを使用して変更したドキュメントを保存する必要があります。編集したドキュメントに必要な出力ファイルのパスと形式 (DOCX など) を指定します。サンプルコードは次のとおりです。
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+さらに詳細なドキュメントについては、次のサイトを参照してください。[Aspose.Words for .NET API ドキュメント](https://reference.aspose.com/words/net/).

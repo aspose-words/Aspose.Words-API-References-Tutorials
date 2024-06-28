@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Bu kod bir örneğini oluşturur`HtmlSaveOptions` ve setler`CssStyleSheetType` ile`CssStyleSheetType.External`harici bir CSS stil sayfası oluşturmak ve`CssClassNamePrefix` ile`"pfx_"` önek için`"pfx_"` CSS sınıfını adlandırmak için.
+ Bu kod bir örneğini oluşturur`HtmlSaveOptions` ve setler`CssStyleSheetType` ile`CssStyleSheetType.External`harici bir CSS stil sayfası oluşturmak ve`CssClassNamePrefix` ile`"pfx_"` önek için`"pfx_"` CSS sınıflarını adlandırmak için.
 
 ## Adım 4: Belgeyi HTML'ye dönüştürme ve kaydetme
 

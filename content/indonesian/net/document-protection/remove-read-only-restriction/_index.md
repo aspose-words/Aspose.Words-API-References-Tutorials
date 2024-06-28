@@ -73,7 +73,7 @@ Dalam tutorial ini, kita mempelajari cara menghapus pembatasan read-only dari do
 
 #### T: Apa yang dimaksud dengan pembatasan baca-saja di Aspose.Words untuk .NET?
 
-J: Pembatasan baca-saja di Aspose.Words untuk .NET mengacu pada fitur yang memungkinkan Anda mengatur dokumen Word sebagai hanya-baca, mencegah pengguna melakukan modifikasi apa pun pada konten atau pemformatan. Pembatasan ini membantu melindungi integritas dokumen dan memastikan bahwa dokumen tersebut tidak dimodifikasi secara tidak sengaja atau jahat.
+J: Pembatasan baca-saja di Aspose.Words untuk .NET mengacu pada fitur yang memungkinkan Anda mengatur dokumen Word sebagai hanya-baca, mencegah pengguna membuat modifikasi apa pun pada konten atau pemformatan. Pembatasan ini membantu melindungi integritas dokumen dan memastikan bahwa dokumen tersebut tidak dimodifikasi secara tidak sengaja atau jahat.
 
 #### T: Bagaimana cara menghapus pembatasan baca-saja menggunakan Aspose.Words untuk .NET?
 

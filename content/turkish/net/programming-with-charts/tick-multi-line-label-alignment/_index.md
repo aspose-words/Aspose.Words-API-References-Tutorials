@@ -1,6 +1,6 @@
 ---
-title: Grafikte Çok Satırlı Etiket Hizalamasını İşaretleyin
-linktitle: Grafikte Çok Satırlı Etiket Hizalamasını İşaretleyin
+title: Bir Grafikte Çok Satırlı Etiket Hizalamasını İşaretleyin
+linktitle: Bir Grafikte Çok Satırlı Etiket Hizalamasını İşaretleyin
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET'i kullanarak çok satırlı işaret etiketlerini grafik ekseninde nasıl hizalayacağınızı öğrenin.
 type: docs
@@ -17,7 +17,7 @@ Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
 - Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
+## Adım 2: Yeni bir belge oluşturun ve bir grafik ekleyin.
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -73,7 +73,7 @@ Bu, Aspose.Words for .NET kullanılarak çok satırlı etiket hizalamasının ay
 
 Bu eğitimde Aspose.Words for .NET'i kullanarak bir grafik ekseninde çok satırlı işaret etiketlerinin hizalamasını nasıl ayarlayacağınızı öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak yeni bir belge oluşturabilir, dağılım grafiği ekleyebilir, grafik eksenine erişebilir ve onay etiketi hizalamasını değiştirebilirsiniz.
 
-Aspose.Words for .NET, Word belgelerindeki grafikleri yönetmek için güçlü özellikler sağlar. Çok satırlı etiketleri işaretleyin, eksen etiketleri birden çok satıra sarmayı veya bölmeyi gerektiren uzun metinler içerdiğinde kullanışlıdır. Onay etiketi hizalamasını ayarlayarak, çok satırlı etiketlerin grafik ekseni içindeki yatay hizalamasını kontrol ederek en iyi sunumu ve okunabilirliği sağlayabilirsiniz.
+Aspose.Words for .NET, Word belgelerindeki grafikleri yönetmek için güçlü özellikler sağlar. Çok satırlı etiketleri işaretleyin, eksen etiketleri birden fazla satıra sarma veya bölme gerektiren uzun metinler içerdiğinde kullanışlıdır. Onay etiketi hizalamasını ayarlayarak, çok satırlı etiketlerin grafik ekseni içindeki yatay hizalamasını kontrol ederek en iyi sunumu ve okunabilirliği sağlayabilirsiniz.
 
 Çok satırlı etiket hizalamasını özelleştirmek, özellikle uzun veya karmaşık etiketlerle uğraşırken grafiğinizin görünümüne ince ayar yapmanıza olanak tanır. Etiketleri sağa, sola, ortaya veya iki yana hizalayarak eksen boyunca dengeli ve görsel olarak çekici bir onay etiketi düzenlemesi elde edebilirsiniz.
 
@@ -82,7 +82,7 @@ Aspose.Words for .NET ile, bir grafik ekseninin onay etiketi hizalama özelliği
 ### SSS
 
 #### S1. Grafik eksenindeki çok satırlı işaret etiketleri nelerdir?
-Grafik eksenindeki çok satırlı etiketleri işaretleyin, etiket metni uzun olduğunda veya kullanılabilir alana sığması için sarmalamayı gerektirdiğinde birden çok satıra yayılan eksen etiketlerini ifade eder. Grafik ekseni, etiket metnini kısaltmak veya görsel dağınıklığa neden olmak yerine, okunabilirliği sağlamak için etiketleri otomatik olarak birden çok satıra böler. Çok satırlı etiketleri işaretleyin, özellikle grafiklerdeki uzun kategori veya değer etiketleriyle uğraşırken kullanışlıdır.
+Bir grafik eksenindeki çok satırlı etiketleri işaretleyin, etiket metni uzun olduğunda veya kullanılabilir alana sığması için sarmalamayı gerektirdiğinde birden çok satıra yayılan eksen etiketlerini ifade eder. Grafik ekseni, etiket metnini kısaltmak veya görsel dağınıklığa neden olmak yerine, okunabilirliği sağlamak için etiketleri otomatik olarak birden çok satıra böler. Çok satırlı etiketleri işaretleyin, özellikle grafiklerdeki uzun kategori veya değer etiketleriyle uğraşırken kullanışlıdır.
 
 #### Q2. Grafik eksenindeki onay etiketlerinin hizalamasını özelleştirebilir miyim?
  Evet, Aspose.Words for .NET'i kullanarak grafik eksenindeki onay etiketlerinin hizalamasını özelleştirebilirsiniz. Erişerek`TickLabelAlignment` mülkiyeti`ChartAxis` nesneyi seçtiğinizde, onay etiketleri için istediğiniz hizalamayı ayarlayabilirsiniz. Hizalama seçenekleri sola, sağa, ortaya veya iki yana hizalanmış hizalamayı içerir. Hizalamayı ayarlamak, onay etiketlerinin grafik ekseni boyunca yatay konumunu kontrol etmenize olanak tanıyarak uygun okunabilirlik ve görsel sunum sağlar.

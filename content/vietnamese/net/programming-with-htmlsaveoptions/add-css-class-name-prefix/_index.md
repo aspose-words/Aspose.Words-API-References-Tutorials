@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Mã này tạo ra một thể hiện của`HtmlSaveOptions` và bộ`CssStyleSheetType` ĐẾN`CssStyleSheetType.External`để tạo một biểu định kiểu CSS bên ngoài và`CssClassNamePrefix` ĐẾN`"pfx_"` đến tiền tố`"pfx_"` để đặt tên cho lớp CSS.
+ Mã này tạo ra một thể hiện của`HtmlSaveOptions` và bộ`CssStyleSheetType` ĐẾN`CssStyleSheetType.External`để tạo một biểu định kiểu CSS bên ngoài và`CssClassNamePrefix` ĐẾN`"pfx_"` đến tiền tố`"pfx_"` để đặt tên cho các lớp CSS.
 
 ## Bước 4: Chuyển đổi và lưu tài liệu sang HTML
 

@@ -11,7 +11,7 @@ Aspose.Words for Python 提供了一系列教程，帮助开发人员进行文�
 
 ## 用于无缝文档管理的 Python 文档 API
 
-通过 Aspose.Words 教程探索 Python Document API 的强大功能。开发人员将学习以编程方式创建、修改和管理 Word 文档。该 API 允许自定义格式、内容插入和文档合并，从而简化文档管理任务。
+通过 Aspose.Words 教程探索 Python Document API 的强大功能。开发人员将学习以编程方式创建、修改和管理 Word 文档。该 API 允许自定义格式、内容插入、文档合并、流文档管理任务。
 
 ## 使用 Python 自动化文档处理
 

@@ -2,7 +2,7 @@
 title: Opções avançadas de salvamento de documentos HTML com Aspose.Words Java
 linktitle: Salvando documentos HTML com
 second_title: API de processamento de documentos Java Aspose.Words
-description: Neste tutorial, cobrimos várias opções avançadas de salvamento de documentos HTML com Aspose.Words para Java. Essas opções permitem que você crie HTML de alta qualidade
+description: Neste tutorial, cobrimos várias opções avançadas de salvamento de documentos HTML com Aspose.Words para Java. Essas opções permitem que você crie HTML de alta qualidade.
 type: docs
 weight: 16
 url: /pt/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -134,4 +134,4 @@ Aqui estão algumas perguntas frequentes sobre como trabalhar com Aspose.Words p
 Sim, você pode otimizar a saída HTML para exibição na web configurando opções como exportar fontes como Base64 e converter metarquivos para SVG.
 
 ### P4: Há alguma limitação ao converter documentos complexos do Word em HTML?
-Embora Aspose.Words for Java forneça recursos de conversão poderosos, documentos complexos do Word com layouts complexos podem exigir pós-processamento adicional para obter a saída HTML desejada.
+Embora Aspose.Words for Java forneça recursos de conversão poderosos, documentos Word complexos com layouts intrincados podem exigir pós-processamento adicional para obter a saída HTML desejada.

@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## 5단계: 기존 표 테두리 지우기
+## 5단계: 기존 표 테두리를 지웁니다.
 새로운 윤곽선 테두리를 시작하려면 먼저 테이블에서 기존 테두리를 모두 지워야 합니다. 이 작업은 다음을 사용하여 수행할 수 있습니다.`ClearBorders()` 방법.
 
 ```csharp
@@ -55,7 +55,7 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## 7단계: 배경색으로 셀 채우기
+## 7단계: 배경색으로 셀을 채웁니다.
 테이블의 시각적 표현을 개선하기 위해 셀을 바탕 배경색으로 채울 수 있습니다.
 
 아이디어. 이 예에서는 연한 녹색을 사용합니다.

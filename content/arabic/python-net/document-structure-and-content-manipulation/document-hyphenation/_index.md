@@ -126,4 +126,4 @@ hyphenation_options.consecutive_hyphen_limit = 2
 
 ### أين يمكنني الوصول إلى وثائق Aspose.Words for Python؟
 
- يمكنك الوصول إلى وثائق API على[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+يمكنك الوصول إلى وثائق API على[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

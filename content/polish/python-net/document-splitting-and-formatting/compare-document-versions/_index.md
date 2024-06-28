@@ -87,7 +87,7 @@ Wykonując te kroki, możesz skutecznie porównywać wersje dokumentów i zarzą
 ### Czy mogę podkreślić zmiany różnymi kolorami?
 Tak, możesz wybierać spośród różnych kolorów podświetlenia, aby różnicować zmiany.
 
-### Czy można porównać więcej niż dwie wersje dokumentów?
+### Czy można porównać więcej niż dwie wersje dokumentu?
 Aspose.Words dla Pythona umożliwia jednoczesne porównywanie wielu wersji dokumentów.
 
 ### Czy Aspose.Words dla Pythona obsługuje inne formaty dokumentów?

@@ -19,7 +19,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสารที่มีอยู่
- ถัดไป คุณต้องโหลดเอกสาร Word ที่มีอยู่ลงในอินสแตนซ์ของ`Document` ระดับ.
+ ถัดไป คุณต้องโหลดเอกสาร Word ที่มีอยู่ลงในอินสแตนซ์ของ`Document` ชั้นเรียน
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
@@ -48,7 +48,7 @@ Console.WriteLine("Shading cell before style expansion: " + cellShadingBefore);
 doc.ExpandTableStylesToDirectFormatting();
 ```
 
-## ขั้นตอนที่ 6: แสดงการจัดรูปแบบเซลล์หลังการขยายสไตล์
+## ขั้นตอนที่ 6: แสดงการจัดรูปแบบเซลล์หลังจากสไตล์การขยาย
 ตอนนี้เราแสดงสีพื้นหลังของเซลล์หลังจากขยายสไตล์ตาราง ควรใช้สีพื้นหลังสีน้ำเงินจากสไตล์ตาราง
 
 ```csharp
@@ -68,8 +68,8 @@ Shading the cell after style expansion: " + cellShadingAfter);
 	// รับเซลล์แรกของตารางแรกในเอกสาร
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	Cell firstCell = table.FirstRow.FirstCell;
-	// ขั้นแรกให้พิมพ์สีของการแรเงาของเซลล์
-	// ซึ่งควรว่างเปล่าเนื่องจากการแรเงาปัจจุบันถูกจัดเก็บไว้ในรูปแบบตาราง
+	// ขั้นแรกให้พิมพ์สีของเฉดสีเซลล์
+	// ควรเว้นว่างไว้เนื่องจากเฉดสีปัจจุบันถูกจัดเก็บไว้ในรูปแบบตาราง
 	Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
 	Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 	doc.ExpandTableStylesToDirectFormatting();

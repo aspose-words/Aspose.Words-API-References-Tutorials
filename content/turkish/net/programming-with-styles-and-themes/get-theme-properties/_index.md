@@ -20,7 +20,7 @@ Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Ge
 Document doc = new Document();
 ```
 
- Bu adımda yeni bir tane oluşturuyoruz.`Document` nesne.
+Bu adımda yeni bir tane oluşturuyoruz.`Document` nesne.
 
 ## 3. Adım: Tema özelliklerini alın
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- Bu adımda şunu kullanıyoruz:`Theme` mülkiyeti`Document`almak için nesne`Theme` nesne. Daha sonra temanın ana yazı tipleri gibi farklı özelliklerine erişebiliriz (`MajorFonts`), ikincil yazı tipleri (`MinorFonts`) ve vurgu renkleri (`Colors`).
+ Bu adımda şunu kullanıyoruz:`Theme` mülkiyeti`Document` almak için nesne`Theme` nesne. Daha sonra temanın ana yazı tipleri gibi farklı özelliklerine erişebiliriz (`MajorFonts`), ikincil yazı tipleri (`MinorFonts`) ve vurgu renkleri (`Colors`).
 
 ## 4. Adım: Tema özelliklerini görüntüleyin
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Çözüm
 
- Bu eğitimde Aspose.Words for .NET ile bir belgenin tema özelliklerini almanın işlevselliğini araştırdık. Kullanmak`Theme` nesne ve ilişkili özellikleri sayesinde, belge temasında kullanılan vurgu renklerinin yanı sıra birincil ve ikincil yazı tipleri hakkındaki bilgilere de erişebildik.
+ Bu eğitimde Aspose.Words for .NET ile bir belgenin tema özelliklerini almanın işlevselliğini araştırdık. Kullanmak`Theme`nesne ve ilişkili özellikleri sayesinde, birincil ve ikincil yazı tipleri ile belge temasında kullanılan vurgu renkleri hakkındaki bilgilere ulaşabildik.
 
 Tema özelliklerini alma yeteneği, belgelerinizin stillerini ve düzenlerini analiz etmenize ve özelleştirmenize olanak tanır. Bu bilgileri hedeflenen değişiklikleri uygulamak, raporlar oluşturmak veya belgelerinizdeki yazı tipi ve renk kullanımına ilişkin analizler gerçekleştirmek için kullanabilirsiniz.
 
@@ -68,11 +68,11 @@ Aspose.Words for .NET, belge temalarınızı değiştirmek için güçlü bir AP
 
 #### Aspose.Words for .NET kullanarak bir belgenin tema özelliklerine nasıl erişebilirim?
 
- Bir belgenin tema özelliklerine erişmek için`Theme` mülkiyeti`Document` nesne. Bir döndürür`Theme` Birincil ve ikincil yazı tiplerinin yanı sıra belgenin temasında kullanılan vurgu renkleri hakkında bilgi içeren nesne.
+ Bir belgenin tema özelliklerine erişmek için`Theme` mülkiyeti`Document` nesne. Bir döndürür`Theme`Birincil ve ikincil yazı tiplerinin yanı sıra belgenin temasında kullanılan vurgu renkleri hakkında bilgi içeren nesne.
 
 #### Bir belge temasının birincil ve ikincil yazı tiplerini nasıl alabilirim?
 
-Bir belgenin temasının birincil ve ikincil yazı tiplerine,`MajorFonts` Ve`MinorFonts` özellikleri`Theme` sırasıyla nesne. Bu özellikler, farklı diller veya bölgeler için belgenin temasında kullanılan yazı tipi adlarına erişim sağlar.
+ Bir belgenin temasının birincil ve ikincil yazı tiplerine,`MajorFonts` Ve`MinorFonts` özellikleri`Theme` sırasıyla nesne. Bu özellikler, farklı diller veya bölgeler için belgenin temasında kullanılan yazı tipi adlarına erişim sağlar.
 
 #### Bir belgenin temasında kullanılan vurgu renklerini alabilir miyim?
 

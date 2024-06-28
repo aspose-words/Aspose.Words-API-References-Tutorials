@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## Passaggio 2: mostra o nascondi un segnalibro specifico
 
- Noi usiamo il`ShowHideBookmarkedContent`funzione per mostrare o nascondere un segnalibro specifico nel documento. Questa funzione prende come parametri il documento, il nome del segnalibro e un valore booleano per indicare se mostrare o nascondere il segnalibro:
+ Noi usiamo il`ShowHideBookmarkedContent` funzione per mostrare o nascondere un segnalibro specifico nel documento. Questa funzione prende come parametri il documento, il nome del segnalibro e un valore booleano per indicare se mostrare o nascondere il segnalibro:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);

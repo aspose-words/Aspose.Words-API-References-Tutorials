@@ -17,7 +17,7 @@ Pastikan Anda memiliki prasyarat berikut:
 - Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
 - Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Langkah 2: Buat dokumen baru dan masukkan bagan.
 
  Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
 
@@ -80,7 +80,7 @@ Ini menyelesaikan implementasi penyisipan bagan kolom sederhana menggunakan Aspo
 	seriesColl.Clear();
 	// Buat array nama kategori, dalam tutorial ini kita memiliki dua kategori.
 	string[] categories = new string[] { "Category 1", "Category 2" };
-	// Harap dicatat, array data tidak boleh kosong dan array harus berukuran sama.
+	// Harap dicatat, array data tidak boleh kosong dan ukuran array harus sama.
 	seriesColl.Add("Aspose Series 1", categories, new double[] { 1, 2 });
 	seriesColl.Add("Aspose Series 2", categories, new double[] { 3, 4 });
 	seriesColl.Add("Aspose Series 3", categories, new double[] { 5, 6 });

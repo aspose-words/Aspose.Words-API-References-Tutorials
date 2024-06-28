@@ -12,7 +12,7 @@ Ebben az oktatóanyagban végigvezetjük a Word-dokumentumok mezőfrissítési k
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Hozzon létre egy dokumentumot és a DocumentBuildert
 Kezdésként hozzon létre egy példányt a Document osztályból és egy DocumentBuilder objektumból:
@@ -23,7 +23,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: Tartalom beszúrása adott területi beállítással
+## 2. lépés: Tartalom beszúrása meghatározott nyelvi beállítással
 Ezután állítsa be a nyelvet németre, és szúrjon be dátumformátumú mezőket:
 
 ```csharp
@@ -91,7 +91,7 @@ Gratulálunk! Sikeresen megtanulta, hogyan módosíthatja a mező frissítési k
 
 #### K: Hogyan adhatok meg egy adott kultúrát az Aspose.Words for .NET mezőinek frissítéséhez?
 
-V: Ha egy adott kultúrát szeretne megadni az Aspose.Words for .NET mezőinek frissítéséhez, használja a`Document.FieldOptions.FieldUpdateCultureInfo` tulajdonság és állítsa be a`CultureInfo` a kívánt kultúrának megfelelő tárgy. Például használhatja`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` a francia (francia) kultúra pontosítására.
+ V: Ha egy adott kultúrát szeretne megadni az Aspose.Words for .NET mezőinek frissítéséhez, használja a`Document.FieldOptions.FieldUpdateCultureInfo` tulajdonság és állítsa be a`CultureInfo` a kívánt kultúrának megfelelő tárgy. Például használhatja`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` a francia (francia) kultúra pontosítására.
 
 #### K: Letiltható az automatikus mezőfrissítés az Aspose.Words for .NET-ben?
 

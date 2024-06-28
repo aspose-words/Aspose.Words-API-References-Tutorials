@@ -27,7 +27,7 @@ Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode"
 builder.ParagraphFormat.Style = fencedCode;
 ```
 
-## ステップ 3: 情報なしでフェンスされたコードを追加する
+## ステップ 3: 情報なしでフェンスで囲まれたコードを追加する
 
 これで、「FencedCode」カスタム スタイルを使用して、情報文字列のないフェンスで囲まれたコード ブロックを追加できるようになりました。
 

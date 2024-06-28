@@ -1,6 +1,6 @@
 ---
-title: 文件操作
-linktitle: 文件操作
+title: 文档处理
+linktitle: 文档处理
 second_title: Aspose.Words Java 文档处理 API
 description: 通过我们的综合教程，了解如何使用 Aspose.Words for Java 高效地操作文档。立即提高您的 Java 文档处理技能！
 type: docs
@@ -82,14 +82,14 @@ Aspose.Words for Java 是一个功能强大且多功能的 API，允许开发人
 了解如何使用 Aspose.Words for Java 将文档拆分为 HTML 页面。请按照我们的分步指南进行无缝文档转换。
 ### [在 Aspose.Words for Java 中使用 DocumentBuilder 添加内容](./adding-content-using-documentbuilder/)
 使用 Aspose.Words for Java 掌握文档创建。添加文本、表格、图像等的分步指南。轻松创建令人惊叹的 Word 文档。
-### [在 Aspose.Words for Java 中克隆和组合文档](./cloning-and-combining-documents/)
-了解如何在 Aspose.Words for Java 中克隆和组合文档。带有源代码示例的分步指南。
+### [在 Aspose.Words for Java 中克隆和合并文档](./cloning-and-combining-documents/)
+了解如何在 Aspose.Words for Java 中克隆和合并文档。带有源代码示例的分步指南。
 ### [比较 Aspose.Words for Java 中的文档](./comparing-documents/)
 了解如何在 Aspose.Words for Java 中比较文档，这是一个用于高效文档分析的强大 Java 库。 
 ### [在 Aspose.Words for Java 中格式化文档](./formatting-documents/)
-通过我们的综合指南了解在 Aspose.Words for Java 中格式化文档的艺术。探索强大的功能并提高您的文档处理技能。
+通过我们的综合指南了解在 Aspose.Words for Java 中格式化文档的技巧。探索强大的功能并提高您的文档处理技能。
 ### [在 Aspose.Words for Java 中连接和附加文档](./joining-and-appending-documents/)
-了解如何使用 Aspose.Words for Java 轻松加入和追加文档。保留格式、管理页眉页脚等。
+了解如何使用 Aspose.Words for Java 轻松加入和附加文档。保留格式、管理页眉页脚等。
 ### [在 Aspose.Words for Java 中使用文档选项和设置](./using-document-options-and-settings/)
 释放 Aspose.Words for Java 的强大功能。无缝文档管理的主文档选项和设置。优化、定制等等。
 ### [在 Aspose.Words for Java 中使用文档属性](./using-document-properties/)

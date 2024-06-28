@@ -39,7 +39,7 @@ Document doc = new Document();
 NodeType type = doc.NodeType;
 ```
 
-To jest kompletny przykład kodu do używania typu węzła z Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać kroki opisane wcześniej, aby zintegrować ten kod ze swoim projektem.
+To jest kompletny przykład kodu do używania typu węzła z Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać opisane wcześniej kroki, aby zintegrować ten kod ze swoim projektem.
 
 
 ### Często zadawane pytania

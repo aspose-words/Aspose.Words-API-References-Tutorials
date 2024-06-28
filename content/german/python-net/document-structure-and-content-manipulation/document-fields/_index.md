@@ -1,7 +1,7 @@
 ---
 title: Umgang mit Feldern und Daten in Word-Dokumenten
 linktitle: Umgang mit Feldern und Daten in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python mit Feldern und Daten in Word-Dokumenten umgehen. Schritt-für-Schritt-Anleitung mit Codebeispielen für dynamische Inhalte, Automatisierung und mehr.
 type: docs
 weight: 12

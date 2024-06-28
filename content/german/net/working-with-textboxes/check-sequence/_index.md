@@ -81,7 +81,7 @@ if (textBox. Next == null && textBox. Previous != null)
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie wissen jetzt, wie Sie die Reihenfolge von TextBoxen in einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET überprüfen. Indem Sie die Schritte in dieser Anleitung befolgten, konnten Sie das Dokument einrichten, eine TextBox-Form erstellen und prüfen, ob sie sich am Anfang, in der Mitte oder am Ende der Sequenz befindet.
+Herzlichen Glückwunsch! Sie wissen jetzt, wie Sie die Reihenfolge von TextBoxen in einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET überprüfen. Durch Befolgen der Schritte in dieser Anleitung konnten Sie das Dokument einrichten, eine TextBox-Form erstellen und prüfen, ob sie sich am Anfang, in der Mitte oder am Ende der Sequenz befindet.
 
 ### FAQs zur Prüfreihenfolge
 

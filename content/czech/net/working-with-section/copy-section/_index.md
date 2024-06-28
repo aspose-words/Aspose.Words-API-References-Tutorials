@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-section/copy-section/
 ---
 
-V tomto tutoriálu vysvětlíme, jak zkopírovat část z dokumentu aplikace Word do jiného dokumentu pomocí knihovny Aspose.Words pro .NET. Kopírování oddílu umožňuje přenést konkrétní oddíl ze zdrojového dokumentu do cílového dokumentu. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+tomto tutoriálu vysvětlíme, jak zkopírovat část z dokumentu aplikace Word do jiného dokumentu pomocí knihovny Aspose.Words pro .NET. Kopírování oddílu umožňuje přenést konkrétní oddíl ze zdrojového dokumentu do cílového dokumentu. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
 
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující položky:
@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## Krok 3: Zkopírujte oddíl do cílového dokumentu
- Ke zkopírování oddílu ze zdrojového dokumentu do cílového dokumentu použijeme`ImportNode` metoda pro import zdrojové sekce a její přidání do cílového dokumentu.
+ Ke zkopírování oddílu ze zdrojového dokumentu do cílového dokumentu použijeme`ImportNode`metoda pro import zdrojové sekce a její přidání do cílového dokumentu.
 
 ```csharp
 // Získejte zdrojovou sekci
@@ -72,7 +72,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 ```
 
 ## Závěr
-tomto tutoriálu jsme viděli, jak zkopírovat část z dokumentu aplikace Word do jiného dokumentu pomocí Aspose.Words for .NET. Kopírování oddílů umožňuje snadno přenést konkrétní oddíly ze zdrojového dokumentu do cílového dokumentu. Neváhejte použít tuto metodu k efektivní organizaci a manipulaci s částmi vašich dokumentů.
+V tomto tutoriálu jsme viděli, jak zkopírovat část z dokumentu aplikace Word do jiného dokumentu pomocí Aspose.Words for .NET. Kopírování oddílů umožňuje snadno přenést konkrétní oddíly ze zdrojového dokumentu do cílového dokumentu. Neváhejte použít tuto metodu k efektivní organizaci a manipulaci s částmi vašich dokumentů.
 
 ### FAQ
 
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### Otázka: Jak načíst zdrojové a cílové dokumenty v Aspose.Words pro .NET?
 
- A: Chcete-li načíst zdrojový dokument do instance souboru`Document` třída tzv`srcDoc` a vytvořte prázdnou instanci souboru`Document` třída tzv`dstDoc` pro cílový dokument můžete použít následující kód:
+A: Chcete-li načíst zdrojový dokument do instance souboru`Document` třída tzv`srcDoc` a vytvořte prázdnou instanci souboru`Document` třída tzv`dstDoc` pro cílový dokument můžete použít následující kód:
 
 ```csharp
 // Načtěte zdrojový dokument

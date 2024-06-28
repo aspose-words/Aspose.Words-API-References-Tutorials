@@ -99,11 +99,11 @@ Aby przekonwertować plik DOCX na MHTML, można skorzystać z narzędzi programo
 
 #### Jak wysłać wiadomość e-mail z załącznikiem w postaci pliku MHTML?
 
-Aby wysłać wiadomość e-mail zawierającą plik MHTML jako załącznik, można skorzystać z bibliotek lub narzędzi specyficznych dla wysyłania wiadomości e-mail, takich jak System.Net.Mail w środowisku .NET. Musisz utworzyć wiadomość e-mail, określić odbiorcę, temat i treść, a następnie dodać plik MHTML jako załącznik do wiadomości przed jej wysłaniem.
+Aby wysłać wiadomość e-mail zawierającą plik MHTML jako załącznik, można skorzystać z bibliotek lub narzędzi specyficznych dla wysyłania wiadomości e-mail, takich jak System.Net.Mail w platformie .NET. Musisz utworzyć wiadomość e-mail, określić odbiorcę, temat i treść, a następnie dodać plik MHTML jako załącznik do wiadomości przed jej wysłaniem.
 
 #### Jakie są ograniczenia procesu konwersji i wysyłania wiadomości e-mail?
 
-Ograniczenia procesu konwersji i wysyłania wiadomości e-mail zależą od konkretnych narzędzi, z których korzystasz. Niektóre narzędzia mogą mieć ograniczenia związane z rozmiarem pliku, ustawieniami zabezpieczeń lub obsługiwanymi protokołami poczty e-mail. Ważne jest, aby wybrać narzędzia odpowiadające swoim potrzebom i uwzględnić te ograniczenia podczas wdrażania.
+Ograniczenia procesu konwersji i wysyłania wiadomości e-mail zależą od konkretnych narzędzi, z których korzystasz. Niektóre narzędzia mogą mieć powiązane ograniczenia dotyczące rozmiaru pliku, ustawień zabezpieczeń lub obsługiwanych protokołów e-mail. Ważne jest, aby wybrać narzędzia odpowiadające swoim potrzebom i uwzględnić te ograniczenia podczas wdrażania.
 
 #### Czy Aspose to niezawodne narzędzie do konwersji DOCX na MHTML i wysyłania wiadomości e-mail?
 

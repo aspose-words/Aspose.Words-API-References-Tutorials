@@ -71,7 +71,7 @@ A: Nee, Aspose.Words voor .NET is niet de enige beschikbare oplossing voor het w
 
 #### Vraag: Kan ik de functie 'Alineastijlscheidingsteken ophalen' gebruiken met andere programmeertalen?
 
-A: Ja, u kunt de functie "Get Paragraph Style Separator" gebruiken met andere programmeertalen die worden ondersteund door Aspose.Words, zoals Java, Python of C++. Aspose.Words biedt een reeks taalspecifieke API's en bibliotheken om documentverwerking op meerdere platforms te vergemakkelijken.
+A: Ja, u kunt de functie "Get Paragraph Style Separator" gebruiken met andere programmeertalen die worden ondersteund door Aspose.Words, zoals Java, Python of C.++. Aspose.Words biedt een reeks taalspecifieke API's en bibliotheken om documentverwerking op meerdere platforms te vergemakkelijken.
 
 #### Vraag: Hoe krijg ik toegang tot de Aspose.Words voor .NET-documentatie?
 

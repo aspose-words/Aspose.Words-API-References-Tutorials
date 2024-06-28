@@ -68,7 +68,7 @@ V tomto tutoriálu jsme se naučili, jak vložit všechna písma do dokumentu PD
 ### Často kladené otázky
 
 #### Otázka: Co je vkládání písem do dokumentu PDF a proč je to důležité?
-Odpověď: Vkládání písem do dokumentu PDF je proces zahrnutí všech písem použitých v dokumentu do samotného souboru PDF. Tím je zajištěno, že písma uvedená v dokumentu budou dostupná a správně zobrazena, a to i v případě, že písma nejsou nainstalována v systému, kde je soubor PDF otevřen. Vkládání písem je důležité pro zachování vzhledu a formátování dokumentu a zajišťuje konzistentní vykreslování písem na různých zařízeních a platformách.
+Odpověď: Vkládání písem do dokumentu PDF je proces zahrnutí všech písem použitých v dokumentu do samotného souboru PDF. Tím je zajištěno, že písma určená v dokumentu budou dostupná a správně zobrazena, a to i v případě, že písma nejsou nainstalována v systému, kde je soubor PDF otevřen. Vkládání písem je důležité pro zachování vzhledu a formátování dokumentu a zajišťuje konzistentní vykreslování písem na různých zařízeních a platformách.
 
 #### Otázka: Jak mohu vložit všechna písma do dokumentu PDF pomocí Aspose.Words for .NET?
 Odpověď: Chcete-li vložit všechna písma do dokumentu PDF pomocí Aspose.Words pro .NET, postupujte takto:

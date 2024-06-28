@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Bước 5: Lưu tài liệu đã chuyển đổi
- Sử dụng`Save()`phương pháp lưu tài liệu với các trường được chuyển đổi thành văn bản trong thư mục tài liệu được chỉ định.
+ Sử dụng`Save()` phương pháp lưu tài liệu với các trường được chuyển đổi thành văn bản trong thư mục tài liệu được chỉ định.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

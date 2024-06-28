@@ -83,7 +83,7 @@ Ja, Aspose.Words voor Java biedt flexibiliteit bij het aanpassen van commentaars
 
 ### 4. Zijn er beperkingen aan de lengte van reacties?
 
-Met Aspose.Words voor Java kunt u opmerkingen van verschillende lengtes toevoegen, zodat er uitgebreide uitleg mogelijk is.
+Met Aspose.Words voor Java kunt u opmerkingen van verschillende lengtes toevoegen, zodat u uitgebreide uitleg kunt krijgen.
 
 ### 5. Waar kan ik toegang krijgen tot Aspose.Words voor Java?
 

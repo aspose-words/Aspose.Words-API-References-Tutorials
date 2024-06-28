@@ -14,7 +14,7 @@ Words Processing with Markdown は、Aspose.Words for .NET ライブラリを使
 | タイトル | 説明 |
 | --- | --- |
 | [太字](./bold-text/) | Aspose.Words for .NET のステップバイステップ ガイドを使用してテキストを太字にする方法を学びます。 |
-| [斜体のテキスト](./italic-text/) | Aspose.Words for .NET のステップバイステップ ガイドを使用してテキストを斜体にする方法を学びます。 |
+| [イタリア語のテキスト](./italic-text/) | Aspose.Words for .NET のステップバイステップ ガイドを使用してテキストを斜体にする方法を学びます。 |
 | [取り消し線](./strikethrough/) | Aspose.Words for .NET のステップバイステップ ガイドで取り消し線テキスト スタイルを適用する方法を学びます。 |
 | [インラインコード](./inline-code/) | Aspose.Words for .NET のステップバイステップ ガイドを使用してコードをインライン化する方法を学習します。 |
 | [オートリンク](./autolink/) | Aspose.Words for .NET のステップバイステップ ガイドを使用して自動リンクを挿入する方法を学習します。 |
@@ -22,7 +22,7 @@ Words Processing with Markdown は、Aspose.Words for .NET ライブラリを使
 | [画像](./image/) | Aspose.Words for .NET を使用して画像を挿入およびカスタマイズする方法について説明するステップバイステップ ガイドです。 |
 | [横罫](./horizontal-rule/) | Aspose.Words for .NET のステップバイステップ ガイドを使用して水平罫線を挿入する方法を学びます。 |
 | [見出し](./heading/) | Aspose.Words for .NET で見出しを使用する方法について説明するステップバイステップ ガイドです。 |
-| [セットテキストの見出し](./setext-heading/) | Aspose.Words for .NET のステップバイステップ ガイドで、Setext 見出しを使用してドキュメントを書式設定する方法を学びます。 |
+| [セテックスヘディング](./setext-heading/) | Aspose.Words for .NET のステップバイステップ ガイドで、Setext 見出しを使用してドキュメントを書式設定する方法を学びます。 |
 | [インデントされたコード](./indented-code/) | Aspose.Words for .NET のステップバイステップ ガイドでインデントされたコードを使用する方法を学びます。 |
 | [フェンスで囲まれたコード](./fenced-code/) | Aspose.Words for .NET のステップバイステップ ガイドでフェンス コード機能を使用する方法を学びます。 |
 | [引用](./quote/) | Aspose.Words for .NET で引用符を使用する方法については、ステップバイステップ ガイドをご覧ください。 |

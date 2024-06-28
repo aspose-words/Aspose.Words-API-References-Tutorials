@@ -64,7 +64,7 @@ doc.rejectRevision(1);
 
 ## Het document opslaan
 
-Na het accepteren of afwijzen van wijzigingen is het van cruciaal belang om het document met de gewenste wijzigingen op te slaan:
+Na het accepteren of afwijzen van wijzigingen is het cruciaal om het document met de gewenste wijzigingen op te slaan:
 
 ```java
 // Sla het gewijzigde document op

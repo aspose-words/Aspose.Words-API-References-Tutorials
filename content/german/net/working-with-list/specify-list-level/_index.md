@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Schritt 6: Beenden Sie die Formatierung der Liste
 
- Um die Listenformatierung zu stoppen, legen Sie fest`null` zum`List` Eigenschaft des Dokumentengenerators:
+ Um die Listenformatierung zu stoppen, legen Sie fest`null` zum`List`Eigenschaft des Dokumentengenerators:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Erstellen Sie eine nummerierte Liste basierend auf einer der Microsoft Word-Listenvorlagen
+// Erstellen Sie eine nummerierte Liste basierend auf einer der Microsoft Word-Listenvorlagen.
 //und wenden Sie es auf den aktuellen Absatz des Document Builders an.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Erstellen Sie eine Liste mit Aufzählungszeichen basierend auf einer der Microsoft Word-Listenvorlagen
+// Erstellen Sie eine Liste mit Aufzählungszeichen basierend auf einer der Microsoft Word-Listenvorlagen.
 //und wenden Sie es auf den aktuellen Absatz des Document Builders an.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### F: Kann ich einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzufügen?
 
- A: Ja, es ist möglich, einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzuzufügen. Der`ListLevel` Mit der Klasse können Sie Formatierungseigenschaften für jede Ebene der Liste festlegen. Sie können Optionen wie Präfix, Suffix, Ausrichtung, Einzug usw. festlegen. Dadurch können Sie Listen mit mehreren Hierarchieebenen erstellen.
+ A: Ja, es ist möglich, einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzuzufügen. Der`ListLevel`Mit der Klasse können Sie Formatierungseigenschaften für jede Ebene der Liste festlegen. Sie können Optionen wie Präfix, Suffix, Ausrichtung, Einzug usw. festlegen. Dadurch können Sie Listen mit mehreren Hierarchieebenen erstellen.
 
 

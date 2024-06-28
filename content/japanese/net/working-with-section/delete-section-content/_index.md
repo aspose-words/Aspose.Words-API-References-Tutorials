@@ -2,7 +2,7 @@
 title: セクションの内容を削除
 linktitle: セクションの内容を削除
 second_title: Aspose.Words ドキュメント処理 API
-description: このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書の特定のセクションからコンテンツを削除する方法を学びます。
+description: このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書の特定のセクションからコンテンツを削除する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-section/delete-section-content/
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 次に、Word 文書を`Document`クラス。インデックス 0 を使用してドキュメントの最初のセクションにアクセスします。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Document.docx");
 
 //セクションにアクセスする
@@ -73,7 +73,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Word 文書を`Document`というクラス`doc`インデックス 0 を使用してドキュメントの最初のセクションにアクセスするには、次のコードを使用できます。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Document.docx");
 
 //セクションにアクセスする

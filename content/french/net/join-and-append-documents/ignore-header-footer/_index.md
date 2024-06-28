@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Étape 4 : Ajouter le document source au document de destination
 
- Utilisez le`AppendDocument` méthode du document de destination pour ajouter le document source. Passer`ImportFormatMode.KeepSourceFormatting` comme deuxième paramètre et les options de format d'importation comme troisième paramètre.
+ Utilisez le`AppendDocument` méthode du document de destination pour ajouter le document source. Passer`ImportFormatMode.KeepSourceFormatting`comme deuxième paramètre et les options de format d'importation comme troisième paramètre.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## Étape 5 : Enregistrez le document de destination
 
- Enfin, enregistrez le document de destination modifié à l'aide du`Save` méthode du`Document` objet.
+Enfin, enregistrez le document de destination modifié à l'aide du`Save` méthode du`Document` objet.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

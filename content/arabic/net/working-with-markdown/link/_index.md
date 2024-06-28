@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## الخطوة 2: إدراج رابط
 
- يمكننا إدراج رابط باستخدام`Insertlink` طريقة مولد الوثيقة. نحتاج إلى تحديد نص الرابط، هنا "Aspose"، بالإضافة إلى عنوان URL المقصود.
+ يمكننا إدراج رابط باستخدام`InsertHyperlink` طريقة مولد الوثيقة. نحتاج إلى تحديد نص الرابط، هنا "Apose"، بالإضافة إلى عنوان URL المقصود.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com"، خطأ)؛
+builder.InsertHyperlink("Aspose", "https://www.aspose.com"، خطأ)؛
 ```
 
 ### مثال على التعليمات البرمجية المصدر للارتباطات مع Aspose.Words لـ .NET
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com"، خطأ)؛
 DocumentBuilder builder = new DocumentBuilder();
 
 // أدخل الرابط.
-builder.Insertlink("Aspose", "https://www.aspose.com"، خطأ)؛
+builder.InsertHyperlink("Aspose", "https://www.aspose.com"، خطأ)؛
 ```
 تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الروابط مع Aspose.Words لـ .NET.
 

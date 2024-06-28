@@ -219,7 +219,7 @@ Az Aspose.Words for .NET számos dokumentumformátumot támogat, beleértve a Mi
 
 #### Hogyan kezeljük a titkosított dokumentumfájlokat a formátumészlelés során?
 
- Egy dokumentumfájl formátumának észlelésekor használhatja a`IsEncrypted` tulajdona a`FileFormatInfo` objektumot, hogy ellenőrizze, hogy a fájl titkosított-e. Ha a fájl titkosított, további lépéseket tehet az adott eset kezelésére, például átmásolhatja a fájlt egy titkosított dokumentumoknak szentelt könyvtárba. Használhatja a`File.Copy` módszer erre.
+ Egy dokumentumfájl formátumának észlelésekor használhatja a`IsEncrypted` tulajdona a`FileFormatInfo` objektumot, hogy ellenőrizze, hogy a fájl titkosított-e. Ha a fájl titkosított, további lépéseket tehet az adott eset kezelésére, például átmásolhatja a fájlt egy titkosított dokumentumoknak fenntartott könyvtárba. Használhatja a`File.Copy` módszer erre.
 
 #### Milyen lépéseket kell tenni, ha egy dokumentum formátuma ismeretlen?
 

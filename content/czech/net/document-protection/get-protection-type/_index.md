@@ -50,7 +50,7 @@ tomto článku jsme vysvětlili, jak pomocí funkce Získat typ ochrany Aspose.W
 
 Odpověď: Chcete-li načíst typ ochrany dokumentu pomocí Aspose.Words for .NET, můžete postupovat takto:
 1.  Vložte dokument pomocí`Document` třída.
-2.  Přístup k`ProtectionType` vlastnictvím`Document`objekt pro načtení typu ochrany.
+2.  Přístup k`ProtectionType` vlastnictvím`Document` objekt pro načtení typu ochrany.
 
 #### Otázka: Mohu určit, zda je dokument chráněn pro formuláře nebo pole formuláře pomocí vlastnosti ProtectionType?
 

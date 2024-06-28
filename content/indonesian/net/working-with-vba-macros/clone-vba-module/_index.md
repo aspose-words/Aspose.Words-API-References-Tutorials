@@ -81,7 +81,7 @@ J: Sebelum Anda dapat mengkloning modul VBA dari dokumen Word, Anda harus memili
 
 #### Q: Bagaimana cara mengatur direktori dokumen dalam kode?
 
- A: Pada kode yang diberikan, Anda perlu menggantinya`"YOUR DOCUMENTS DIRECTORY"` dengan jalur yang sesuai ke direktori tempat dokumen Word Anda yang berisi proyek VBA berada.
+ A: Dalam kode yang diberikan, Anda perlu mengganti.`"YOUR DOCUMENTS DIRECTORY"` dengan jalur yang sesuai ke direktori tempat dokumen Word Anda yang berisi proyek VBA berada.
 
 #### Q: Bagaimana cara menyimpan dokumen tujuan dengan modul VBA yang dikloning?
 

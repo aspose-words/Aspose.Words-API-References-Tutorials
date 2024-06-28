@@ -52,7 +52,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 
 ### Szövegdoboz alakzat beszúrása
 
- Szövegdoboz alakzat beszúrásához használhatja a`insertShape` módszer az alábbi példában látható módon:
+ Szövegdoboz alakzat beszúrásához használhatja a`insertShape` az alábbi példában bemutatott módszer:
 
 ```java
 Document doc = new Document();
@@ -135,7 +135,7 @@ doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2010);
 doc.save("Your Directory Path" + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-## Munkavégzés SmartArt alakzatokkal
+## SmartArt alakzatokkal való munka
 
 ### SmartArt alakzatok észlelése
 

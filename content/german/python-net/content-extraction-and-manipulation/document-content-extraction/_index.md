@@ -1,7 +1,7 @@
 ---
 title: Effiziente Inhaltsextraktion in Word-Dokumenten
 linktitle: Effiziente Inhaltsextraktion in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Extrahieren Sie effizient Inhalte aus Word-Dokumenten mit Aspose.Words für Python. Lernen Sie Schritt für Schritt anhand von Codebeispielen.
 type: docs
 weight: 11

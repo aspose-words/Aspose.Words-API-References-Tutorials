@@ -2,216 +2,103 @@
 title: ลบสารบัญในเอกสาร Word
 linktitle: ลบสารบัญในเอกสาร Word
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีลบสารบัญในเอกสาร Word โดยใช้ Aspose.Words for .NET
+description: เรียนรู้วิธีลบสารบัญ (TOC) ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ด้วยบทช่วยสอนที่ปฏิบัติตามง่ายนี้
 type: docs
 weight: 10
 url: /th/net/remove-content/remove-table-of-contents/
 ---
-ในบทช่วยสอนนี้ เราจะอธิบายวิธีการลบสารบัญในเอกสาร Word โดยใช้ไลบรารี Aspose.Words สำหรับ .NET บางครั้งสารบัญอาจมีการซ้ำซ้อนหรือไม่จำเป็น และโค้ดนี้จะช่วยให้คุณลบสารบัญได้อย่างมีประสิทธิภาพ เราจะให้คำแนะนำทีละขั้นตอนเพื่อช่วยให้คุณเข้าใจและนำโค้ดไปใช้ในโครงการ .NET ของคุณเอง
+## ลบสารบัญในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
+
+คุณเบื่อที่จะจัดการกับสารบัญ (TOC) ที่ไม่ต้องการในเอกสาร Word ของคุณหรือไม่? เราทุกคนต่างเคยทำมาแล้ว บางครั้ง TOC ก็ไม่จำเป็น โชคดีสำหรับคุณ Aspose.Words สำหรับ .NET ช่วยให้การลบ TOC โดยทางโปรแกรมเป็นเรื่องง่าย ในบทช่วยสอนนี้ ฉันจะแนะนำคุณตลอดกระบวนการทีละขั้นตอน เพื่อให้คุณสามารถเชี่ยวชาญได้ในเวลาอันรวดเร็ว มาดำดิ่งกันเถอะ!
 
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีรายการต่อไปนี้:
-- ความรู้การทำงานของภาษาการเขียนโปรแกรม C #
-- ไลบรารี Aspose.Words สำหรับ .NET ที่ติดตั้งในโครงการของคุณ
-- เอกสาร Word ที่มีสารบัญที่คุณต้องการลบ
 
-## ขั้นตอนที่ 1: กำหนดไดเร็กทอรีเอกสาร
- ขั้นแรก คุณต้องตั้งค่าเส้นทางไดเรกทอรีไปยังตำแหน่งของเอกสาร Word ของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ในโค้ดด้วยเส้นทางที่เหมาะสม
+ก่อนที่เราจะเริ่ม ตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
+
+1.  Aspose.Words for .NET Library: หากคุณยังไม่ได้ดำเนินการ ให้ดาวน์โหลดและติดตั้งไลบรารี Aspose.Words for .NET จาก[กำหนด](https://releases.aspose.com/words/net/).
+2. สภาพแวดล้อมการพัฒนา: IDE เช่น Visual Studio จะทำให้การเขียนโค้ดง่ายขึ้น
+3. .NET Framework: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง .NET Framework แล้ว
+4. เอกสาร Word: มีเอกสาร Word (.docx) พร้อมด้วย TOC ที่คุณต้องการลบ
+
+## นำเข้าเนมสเปซ
+
+ก่อนอื่น มานำเข้าเนมสเปซที่จำเป็นกันก่อน นี่เป็นการตั้งค่าสภาพแวดล้อมสำหรับการใช้ Aspose.Words
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสารของคุณ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## ขั้นตอนที่ 2: อัปโหลดเอกสาร
- ต่อไปเราจะโหลดเอกสาร Word ลงในอินสแตนซ์ของ`Document` ชั้นเรียนโดยใช้`Load` วิธี.
+ตอนนี้ เรามาแจกแจงขั้นตอนการลบ TOC ออกจากเอกสาร Word ให้เป็นขั้นตอนที่ชัดเจนและจัดการได้
+
+## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสารของคุณ
+
+ก่อนที่เราจะสามารถจัดการเอกสารของคุณได้ เราจำเป็นต้องกำหนดตำแหน่งของเอกสารก่อน นี่คือเส้นทางไดเรกทอรีเอกสารของคุณ
 
 ```csharp
-// โหลดเอกสาร
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ แทนที่`"YOUR DOCUMENT DIRECTORY"` พร้อมเส้นทางไปยังโฟลเดอร์เอกสารของคุณ นี่คือที่ที่ไฟล์ Word ของคุณอยู่
+
+## ขั้นตอนที่ 2: โหลดเอกสาร
+
+ต่อไปเราต้องโหลดเอกสาร Word ลงในแอปพลิเคชันของเรา Aspose.Words ทำให้สิ่งนี้เรียบง่ายอย่างเหลือเชื่อ
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## ขั้นตอนที่ 3: ลบสารบัญ
- หากต้องการลบสารบัญ เราจะวนซ้ำประเภท TOC (สารบัญ)`FieldStart` โหนดในเอกสาร เราจะจัดเก็บโหนดเหล่านี้เพื่อให้เราสามารถเข้าถึงได้อย่างรวดเร็วและสร้างรายการโหนดที่จะลบ
+ แทนที่`"your-document.docx"` พร้อมชื่อไฟล์ของคุณ โค้ดบรรทัดนี้จะโหลดเอกสารของคุณเพื่อให้เราเริ่มทำงานได้
+
+## ขั้นตอนที่ 3: ระบุและลบฟิลด์ TOC
+
+นี่คือจุดที่ความมหัศจรรย์เกิดขึ้น เราจะค้นหาฟิลด์ TOC และลบออก
 
 ```csharp
-// จัดเก็บโหนด FieldStart ของฟิลด์ TOC ในเอกสารเพื่อการเข้าถึงที่รวดเร็ว
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// นี่คือรายการสำหรับจัดเก็บโหนดที่พบใน TOC ที่ระบุ พวกเขาจะถูกลบเมื่อสิ้นสุดวิธีนี้
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+นี่คือสิ่งที่เกิดขึ้น:
+- `doc.Range.Fields`: เข้าถึงทุกฟิลด์ในเอกสาร
+- `.Where(f => f.Type == FieldType.FieldTOC)`: วิธีนี้จะกรองฟิลด์เพื่อค้นหาเฉพาะฟิลด์ที่เป็น TOC
+- `.ToList().ForEach(f => f.Remove())`: วิธีนี้จะแปลงฟิลด์ที่กรองเป็นรายการและลบแต่ละรายการออก
 
-// ตรวจสอบว่ามีดัชนี TOC ที่ระบุอยู่หรือไม่
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## ขั้นตอนที่ 4: บันทึกเอกสารที่แก้ไข
 
-bool isRemoving = true;
+ในที่สุด เราต้องบันทึกการเปลี่ยนแปลงของเรา คุณสามารถบันทึกเอกสารโดยใช้ชื่อใหม่เพื่อเก็บรักษาไฟล์ต้นฉบับได้
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // จะปลอดภัยกว่าถ้าจัดเก็บโหนดเหล่านี้และลบออกทั้งหมดในตอนท้าย
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // เมื่อเราเจอโหนด FieldEnd ประเภท FieldTOC
-     //เรารู้ว่าเรามาถึงจุดสิ้นสุดของ TOC ปัจจุบันแล้ว และเราหยุดอยู่แค่นี้
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### ตัวอย่างซอร์สโค้ดสำหรับการลบสารบัญโดยใช้ Aspose.Words สำหรับ .NET 
-```csharp
-
-// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// โหลดเอกสาร
-Document doc = new Document(dataDir + "your-document.docx");
-
-// จัดเก็บโหนด FieldStart ของฟิลด์ TOC ในเอกสารเพื่อการเข้าถึงที่รวดเร็ว
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// นี่คือรายการสำหรับจัดเก็บโหนดที่พบใน TOC ที่ระบุ พวกเขาจะถูกลบออกเมื่อสิ้นสุดวิธีนี้
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// ตรวจสอบให้แน่ใจว่ามี TOC ที่ระบุโดยดัชนีที่ส่งผ่านอยู่
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// จะปลอดภัยกว่าถ้าจัดเก็บโหนดเหล่านี้และลบออกทั้งหมดพร้อมกันในภายหลัง
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// เมื่อเราพบโหนด FieldEnd ประเภท FieldTOC แล้ว
-	// เรารู้ว่าเรามาถึงจุดสิ้นสุดของ TOC ปัจจุบันและหยุดอยู่แค่นี้
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ บรรทัดนี้จะบันทึกเอกสารของคุณพร้อมกับการเปลี่ยนแปลงที่เกิดขึ้น แทนที่`"modified-document.docx"` ด้วยชื่อไฟล์ที่คุณต้องการ
 
 ## บทสรุป
-ในบทช่วยสอนนี้ เราได้นำเสนอคำแนะนำทีละขั้นตอนในการลบสารบัญออกจากเอกสาร Word โดยใช้ไลบรารี Aspose.Words สำหรับ .NET ด้วยการทำตามโค้ดและคำแนะนำที่ให้มา คุณสามารถกำจัดสารบัญและปรับปรุงเลย์เอาต์ของเอกสารของคุณได้อย่างง่ายดาย อย่าลืมปรับเส้นทางไดเรกทอรีและชื่อไฟล์ให้เหมาะกับความต้องการเฉพาะของคุณ
 
-### คำถามที่พบบ่อย
+และคุณก็ได้แล้ว! การลบ TOC ออกจากเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET จะทำได้ง่ายตรงไปตรงมาเมื่อคุณแบ่งย่อยออกเป็นขั้นตอนง่ายๆ เหล่านี้ ไลบรารีอันทรงพลังนี้ไม่เพียงแต่ช่วยในการลบ TOC เท่านั้น แต่ยังสามารถรองรับการจัดการเอกสารอื่นๆ อีกมากมายอีกด้วย ดังนั้นลองดูสิ!
 
-#### ถาม: เหตุใดฉันจึงควรใช้ Aspose.Words เพื่อลบสารบัญในเอกสาร Word
+## คำถามที่พบบ่อย
 
-ตอบ: Aspose.Words เป็นไลบรารีคลาสที่ทรงพลังและอเนกประสงค์สำหรับจัดการเอกสาร Word ในแอปพลิเคชัน .NET ด้วยการใช้ Aspose.Words คุณสามารถลบสารบัญออกจากเอกสารของคุณได้อย่างมีประสิทธิภาพ ซึ่งจะมีประโยชน์หากสารบัญซ้ำซ้อนหรือไม่จำเป็น วิธีนี้ช่วยให้คุณปรับแต่งเนื้อหาของเอกสารและปรับปรุงการนำเสนอโดยรวมได้
+### 1. Aspose.Words สำหรับ .NET คืออะไร
 
-#### ถาม: ฉันจะอัปโหลดเอกสารใน Aspose.Words สำหรับ .NET ได้อย่างไร
+Aspose.Words สำหรับ .NET เป็นไลบรารี .NET ที่มีประสิทธิภาพสำหรับการจัดการเอกสาร ช่วยให้นักพัฒนาสามารถสร้าง แก้ไข และแปลงเอกสาร Word โดยทางโปรแกรมได้
 
-ตอบ: หากต้องการลบสารบัญในเอกสาร Word คุณต้องโหลดเอกสารลงในหน่วยความจำก่อนโดยใช้เมธอด Load() ของ Aspose.Words นี่คือโค้ดตัวอย่างในการโหลดเอกสารจากไดเร็กทอรีเฉพาะ:
+### 2. ฉันสามารถใช้ Aspose.Words ได้ฟรีหรือไม่
 
-```csharp
-// พาธไปยังไดเร็กทอรีเอกสารของคุณ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ ใช่ คุณสามารถใช้ Aspose ได้[ทดลองฟรี](https://releases.aspose.com/) หรือได้รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/).
 
-// โหลดเอกสาร
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. เป็นไปได้ไหมที่จะลบฟิลด์อื่นโดยใช้ Aspose.Words?
 
- แทนที่`"YOUR DOCUMENTS DIRECTORY"` พร้อมเส้นทางจริงไปยังเอกสารของคุณ
+อย่างแน่นอน! คุณสามารถลบฟิลด์ใดก็ได้โดยการระบุประเภทของฟิลด์ในเงื่อนไขตัวกรอง
 
-#### ถาม: ฉันจะลบสารบัญในเอกสารโดยใช้ Aspose.Words ได้อย่างไร
+### 4. ฉันจำเป็นต้องมี Visual Studio เพื่อใช้ Aspose.Words หรือไม่
 
- ตอบ: หากต้องการลบ TOC คุณต้องทำซ้ำผ่าน`FieldStart` พิมพ์โหนดของ TOC ในเอกสาร คุณสามารถจัดเก็บโหนดเหล่านี้เพื่อการเข้าถึงที่รวดเร็วและสร้างรายการโหนดที่จะลบได้ นี่คือโค้ดตัวอย่าง:
+แม้ว่า Visual Studio จะได้รับการแนะนำเป็นอย่างยิ่งเพื่อความสะดวกในการพัฒนา แต่คุณสามารถใช้ IDE ใดก็ได้ที่รองรับ .NET
 
-```csharp
-// จัดเก็บโหนด FieldStart ของฟิลด์ TOC ในเอกสารเพื่อการเข้าถึงที่รวดเร็ว
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//นี่คือรายการสำหรับจัดเก็บโหนดที่พบใน TOC ที่ระบุ พวกเขาจะถูกลบเมื่อสิ้นสุดวิธีนี้
-List<Node> nodeList = new List<Node>();
+### 5. ฉันจะหาข้อมูลเพิ่มเติมเกี่ยวกับ Aspose.Words ได้ที่ไหน?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// ตรวจสอบว่ามีดัชนีสารบัญที่ระบุอยู่หรือไม่
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// จะปลอดภัยกว่าถ้าจัดเก็บโหนดเหล่านี้และลบออกทั้งหมดในตอนท้าย
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// เมื่อเราเจอโหนด FieldEnd ประเภท FieldTOC
-//เรารู้ว่าเรามาถึงจุดสิ้นสุดของ TOC ปัจจุบันแล้ว และเราหยุดอยู่แค่นี้
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### ถาม: จะบันทึกเอกสารที่แก้ไขใน Aspose.Words สำหรับ .NET ได้อย่างไร
-
-ตอบ: หลังจากลบสารบัญแล้ว คุณต้องบันทึกเอกสารที่แก้ไขโดยใช้เมธอด Save() ระบุเส้นทางและรูปแบบไฟล์เอาต์พุตที่ต้องการ (เช่น DOCX) สำหรับเอกสารที่แก้ไข นี่คือโค้ดตัวอย่าง:
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ สำหรับเอกสารรายละเอียดเพิ่มเติม โปรดไปที่[Aspose.Words สำหรับเอกสาร .NET API](https://reference.aspose.com/words/net/).

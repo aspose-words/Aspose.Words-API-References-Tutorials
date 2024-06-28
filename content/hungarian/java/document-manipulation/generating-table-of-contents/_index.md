@@ -2,7 +2,7 @@
 title: Tartalomjegyzék létrehozása az Aspose.Words for Java programban
 linktitle: Tartalomjegyzék létrehozása
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan hozhat létre és szabhat testre tartalomjegyzéket (TOC) az Aspose.Words for Java használatával. Rendezett és professzionális dokumentumokat készíthet könnyedén.
+description: Ismerje meg, hogyan hozhat létre és testre szabhatja a tartalomjegyzéket (TOC) az Aspose.Words for Java használatával. Rendezett és professzionális dokumentumokat készíthet könnyedén.
 type: docs
 weight: 21
 url: /hu/java/document-manipulation/generating-table-of-contents/

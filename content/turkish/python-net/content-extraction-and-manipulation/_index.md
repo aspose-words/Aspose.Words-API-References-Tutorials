@@ -27,7 +27,7 @@ Bu eğitimler boyunca Aspose.Words'ü kullanarak içerik çıkarma ve düzenleme
 - Belge Oluşturma: Çıkarılan içeriğe dayalı olarak yeni belgelerin veya raporların nasıl oluşturulacağını öğrenin.
 - Meta Veri İşleme: Belge özelliklerini ve meta verileri nasıl değiştireceğinizi anlayın.
 
-Bu eğitimlerin sonunda, çeşitli belge içeriği düzenleme görevlerini kolaylıkla gerçekleştirebilecek bilgiyle donatılacaksınız. Belge işleme iş akışlarınızın verimli, doğru ve özel ihtiyaçlarınıza göre uyarlanmasını sağlayarak içeriğin çıkarılması ve işlenmesine yönelik en iyi uygulamalar hakkında bilgi edineceksiniz.
+Bu eğitimlerin sonunda, çeşitli belge içeriği düzenleme görevlerini kolaylıkla gerçekleştirebilecek bilgiyle donatılacaksınız. Belge işleme iş akışlarınızın verimli, doğru ve özel ihtiyaçlarınıza göre uyarlanmış olmasını sağlayarak içeriğin çıkarılması ve işlenmesine yönelik en iyi uygulamalar hakkında bilgi edineceksiniz.
 
 ## İçerik Çıkarma ve İşleme Eğitimleri
 ### [Word Belgelerindeki İçeriği Çıkarma ve Değiştirme](./extract-modify-document-content/)

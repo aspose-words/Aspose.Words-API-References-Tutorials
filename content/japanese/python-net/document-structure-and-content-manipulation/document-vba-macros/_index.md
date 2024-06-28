@@ -29,7 +29,7 @@ VBA マクロ、または Visual Basic for Applications マクロは、Microsoft
 
 ## Aspose.Words Python と VBA マクロの統合
 
-Aspose.Words for Python と VBA マクロの統合は、大きな変革をもたらします。 VBA コード内で Aspose.Words API を活用すると、VBA マクロだけで実現できる機能を超える高度なドキュメント処理機能にアクセスできます。この相乗効果により、動的なデータ駆動型のドキュメント自動化が可能になります。
+Aspose.Words for Python と VBA マクロの統合は、大きな変革をもたらします。 VBA コード内で Aspose.Words API を活用すると、VBA マクロだけで実現できる機能を超える高度なドキュメント処理機能にアクセスできます。この相乗効果により、動的なデータ駆動型のドキュメントの自動化が可能になります。
 
 ```vba
 Sub AutomateWithAspose()
@@ -114,10 +114,10 @@ Aspose.Words for Python と VBA マクロの融合により、Word ドキュメ�
 ## よくある質問
 
 ### Aspose.Words for Python をインストールするにはどうすればよいですか?
-最新バージョンの Aspose.Words for Python は、次の場所からダウンロードできます。[Aspose ウェブサイト](https://releases.aspose.com/words/python/).
+ Aspose.Words for Python の最新バージョンは、次の場所からダウンロードできます。[Aspose ウェブサイト](https://releases.aspose.com/words/python/).
 
 ### VBA マクロを他の Microsoft Office アプリケーションで使用できますか?
-はい、VBA マクロは、Excel や PowerPoint などのさまざまな Microsoft Office アプリケーションで利用できます。
+はい、VBA マクロは、Excel や PowerPoint などのさまざまな Microsoft Office アプリケーションで使用できます。
 
 ### VBA マクロの使用に関連するセキュリティ リスクはありますか?
 VBA マクロは自動化を強化できますが、慎重に使用しないとセキュリティ上のリスクを引き起こす可能性もあります。マクロが信頼できるソースからのものであることを常に確認し、セキュリティ対策の実装を検討してください。

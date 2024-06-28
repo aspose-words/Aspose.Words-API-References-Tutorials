@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-Ce code utilise une combinaison de méthodes LINQ pour filtrer les champs du dernier paragraphe du document, puis les convertit en texte brut en appelant le`Unlink()` méthode.
+ Ce code utilise une combinaison de méthodes LINQ pour filtrer les champs du dernier paragraphe du document, puis les convertit en texte brut en appelant le`Unlink()` méthode.
 
 ## Étape 4 : Sauvegarde du document modifié
 
@@ -76,11 +76,11 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 
 #### Q : Qu'est-ce qu'un champ de conversion dans Aspose.Words ?
 
-R : Un champ de conversion dans Aspose.Words est un type de champ qui convertit une valeur ou une expression dans un autre format ou type de données. Par exemple, vous pouvez utiliser un champ de conversion pour convertir une date dans un format spécifique, un nombre en texte ou effectuer d'autres types de conversions.
+: Un champ de conversion dans Aspose.Words est un type de champ qui convertit une valeur ou une expression dans un autre format ou type de données. Par exemple, vous pouvez utiliser un champ de conversion pour convertir une date dans un format spécifique, un nombre en texte ou effectuer d'autres types de conversions.
 
 #### Q : Comment insérer un champ de conversion dans un paragraphe avec Aspose.Words ?
 
-: Pour insérer un champ de conversion dans un paragraphe avec Aspose.Words, vous pouvez suivre ces étapes :
+R : Pour insérer un champ de conversion dans un paragraphe avec Aspose.Words, vous pouvez suivre ces étapes :
 
 1. Importez la classe Document à partir de l’espace de noms Aspose.Words.
 2. Créez une instance de Document en chargeant votre document existant.
@@ -93,4 +93,4 @@ R : Aspose.Words prend en charge un large éventail de formats de conversion da
 
 #### Q : Comment mettre à jour un champ de conversion dans un document Word avec Aspose.Words ?
 
-R : Pour mettre à jour un champ de conversion dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les champs de conversion, en recalculant les valeurs en fonction des données actuelles.
+: Pour mettre à jour un champ de conversion dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les champs de conversion, en recalculant les valeurs en fonction des données actuelles.

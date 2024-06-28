@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## 步骤3：创建一个新模块并指定宏源代码
+## 步骤3：创建一个新模块并指定宏源代码。
 我们将通过实例化来创建一个新模块`VbaModule`类并指定宏名称、类型（过程模块）和源代码。
 
 ```csharp
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 #### Q：代码中如何设置文档目录？
 
- A：在提供的代码中，您需要替换`"YOUR DOCUMENTS DIRECTORY"`输入要保存包含 VBA 项目的 Word 文档的目录的适当路径。
+ A：提供的代码中，需要替换。`"YOUR DOCUMENTS DIRECTORY"`输入要保存包含 VBA 项目的 Word 文档的目录的相应路径。
 
 #### 问：如何在VBA模块中指定宏源代码？
 

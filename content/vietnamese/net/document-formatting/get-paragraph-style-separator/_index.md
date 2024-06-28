@@ -71,7 +71,7 @@ Trả lời: Có, bạn có thể tùy chỉnh dấu phân cách kiểu trong t�
 
 #### Câu hỏi: Tôi có thể sử dụng tính năng "Nhận dấu tách kiểu đoạn văn" với các ngôn ngữ lập trình khác không?
 
-Trả lời: Có, bạn có thể sử dụng tính năng "Nhận dấu phân cách kiểu đoạn" với các ngôn ngữ lập trình khác được Aspose.Words hỗ trợ, chẳng hạn như Java, Python hoặc C++. Aspose.Words cung cấp một loạt các API và thư viện dành riêng cho ngôn ngữ để hỗ trợ xử lý tài liệu trên nhiều nền tảng.
+Trả lời: Có, bạn có thể sử dụng tính năng "Nhận dấu phân cách kiểu đoạn" với các ngôn ngữ lập trình khác được Aspose.Words hỗ trợ, chẳng hạn như Java, Python hoặc C.++. Aspose.Words cung cấp một loạt các API và thư viện dành riêng cho ngôn ngữ để hỗ trợ xử lý tài liệu trên nhiều nền tảng.
 
 #### Câu hỏi: Làm cách nào tôi có thể truy cập tài liệu Aspose.Words for .NET?
 

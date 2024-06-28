@@ -81,7 +81,7 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprech
 
 #### F: Wie kann ich Endnoten in Aspose.Words formatieren?
 
- A: Um Endnoten in Aspose.Words zu formatieren, können Sie die verwenden`EndnoteOptions` Klasse und die`SeparatorNoteTextStyle` Eigentum. Mit dieser Eigenschaft können Sie Schriftart, Größe, Farbe usw. für Endnoten festlegen.
+A: Um Endnoten in Aspose.Words zu formatieren, können Sie die verwenden`EndnoteOptions` Klasse und die`SeparatorNoteTextStyle` Eigentum. Mit dieser Eigenschaft können Sie Schriftart, Größe, Farbe usw. für Endnoten festlegen.
 
 #### F: Ist es möglich, die Nummerierung der Endnoten in einem Dokument anzupassen?
 
@@ -97,4 +97,4 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprech
 
 #### F: Ist es möglich, die Endnotennummerierung zwischen Abschnitten eines Dokuments fortzusetzen?
 
- A: Ja, es ist möglich, die Endnotennummerierung zwischen Abschnitten eines Dokuments fortzusetzen. Benutzen Sie die`RestartRule` Eigentum der`EndnoteOptions` Klasse und setzen Sie es auf`RestartContinuous` Damit die Nummerierung zwischen den Abschnitten fortgesetzt werden kann.
+A: Ja, es ist möglich, die Endnotennummerierung zwischen Abschnitten eines Dokuments fortzusetzen. Benutzen Sie die`RestartRule` Eigentum der`EndnoteOptions` Klasse und setzen Sie es auf`RestartContinuous` Damit die Nummerierung zwischen den Abschnitten fortgesetzt werden kann.

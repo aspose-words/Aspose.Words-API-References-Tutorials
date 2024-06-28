@@ -122,7 +122,7 @@ public void readActiveXControlProperties() throws Exception
 ### 我可以自訂文件中 OLE 物件的外觀嗎？ 
    - 是的，您可以自訂 OLE 物件的外觀，包括設定圖示和檔案名稱。
 
-### 什麼是 ActiveX 控制項？它們如何增強我的文件？ 
+### 什麼是 ActiveX 控制項？ 
    - ActiveX 控制項是可以為 Word 文件新增功能的互動式元素，例如表單控製或多媒體播放器。
 
 ### Aspose.Words for Java 適合企業級文件自動化嗎？ 

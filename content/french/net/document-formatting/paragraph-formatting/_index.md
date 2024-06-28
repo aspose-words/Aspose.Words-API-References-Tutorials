@@ -83,7 +83,7 @@ Dans ce didacticiel, nous avons exploré le processus d'utilisation de la foncti
 
 #### Q : Qu'est-ce que la mise en forme d'un paragraphe dans un document Word ?
 
-R : Le formatage des paragraphes fait référence à la personnalisation visuelle de paragraphes individuels dans un document Word. Il comprend des ajustements de l'alignement, de l'indentation, de l'espacement des lignes et d'autres éléments stylistiques pour améliorer l'apparence et la lisibilité du contenu.
+R : Le formatage des paragraphes fait référence à la personnalisation visuelle de paragraphes individuels dans un document Word. Il comprend des ajustements de l'alignement, de l'indentation, de l'espacement des lignes et d'autres éléments stylistiques pour améliorer l'apparence et la lisibilité du contenu.
 
 #### Q : Puis-je appliquer une mise en forme différente à différents paragraphes du même document ?
 

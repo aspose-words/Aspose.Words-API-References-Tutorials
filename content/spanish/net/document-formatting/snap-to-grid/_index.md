@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 2: alineación de la cuadrícula
+## Paso 2: Alineación de la cuadrícula
 
 Ahora aplicaremos la alineación de la cuadrícula a un párrafo específico y la fuente utilizada en el párrafo. Así es cómo:
 

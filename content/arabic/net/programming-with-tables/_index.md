@@ -19,7 +19,7 @@ url: /ar/net/programming-with-tables/
 | [ملاءمة الجدول تلقائيًا للمحتويات](./auto-fit-table-to-contents/) | تعرف على كيفية ملاءمة الجدول تلقائيًا لمحتوياته في مستند Word باستخدام Aspose.Words for .NET. |
 | [استنساخ الجدول الكامل](./clone-complete-table/) | تعرف على كيفية استنساخ جدول بأكمله في مستند Word باستخدام Aspose.Words لـ .NET. |
 | [العثور على الفهرس](./finding-index/) | تعرف على كيفية البحث عن فهارس الجداول والصفوف والخلايا في مستند Word باستخدام Aspose.Words for .NET. |
-| [إدراج الجدول مباشرة](./insert-table-directly/) | تعرف على كيفية إدراج جدول مباشرةً في مستند Word باستخدام Aspose.Words لـ .NET. |
+| [إدراج الجدول مباشرة](./insert-table-directly/) | تعرف على كيفية إدراج الجداول مباشرةً في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع دليلنا التفصيلي خطوة بخطوة لتبسيط إنشاء المستندات الخاصة بك. |
 | [إدراج جدول من HTML](./insert-table-from-html/) | تعرف على كيفية إدراج جدول من HTML في مستند Word باستخدام Aspose.Words لـ .NET. |
 | [إنشاء جدول بسيط](./create-simple-table/) | تعرف على كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words لـ .NET. |
 | [جدول منسق](./formatted-table/) | تعرف على كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words لـ .NET. |

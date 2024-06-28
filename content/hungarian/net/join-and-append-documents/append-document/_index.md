@@ -2,76 +2,101 @@
 title: Dokumentum csatolása
 linktitle: Dokumentum csatolása
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan fűzheti egy dokumentum tartalmát a másikhoz az Aspose.Words for .NET segítségével.
+description: Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan fűzhet hozzá Word-dokumentumokat az Aspose.Words for .NET használatával. Tökéletes a dokumentumok munkafolyamatának automatizálásához.
 type: docs
 weight: 10
 url: /hu/net/join-and-append-documents/append-document/
 ---
 
-Ez az oktatóanyag elmagyarázza, hogyan használható az Aspose.Words for .NET egyik dokumentum tartalmának a másikhoz fűzéséhez. A mellékelt forráskód bemutatja, hogyan lehet megnyitni a forrás- és céldokumentumot, importálni és hozzáfűzni szakaszokat a forrásdokumentumból a céldokumentumhoz.
+## Bevezetés
 
-## 1. lépés: Állítsa be a projektet
+Halihó! Szüksége volt már arra, hogy két Word-dokumentumot egyesítsen egybe úgy, hogy az eredeti formázást érintetlenül hagyja? Akár jelentéseket állít össze, akár kiterjedt projektdokumentációt készít, akár csak egyszerűsíteni próbálja dokumentumkezelését, az Aspose.Words for .NET nagyban megkönnyítheti az életét. Ebben az oktatóanyagban megvizsgáljuk, hogyan fűzhet hozzá egy Word-dokumentumot a másikhoz az Aspose.Words for .NET használatával, részletesen lebontva az egyes lépéseket. Az útmutató végére profi módon egyesítheti a dokumentumokat!
 
-Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+## Előfeltételek
 
--  Aspose.Words for .NET könyvtár telepítve. Letöltheti innen[Aspose.Releases]https://releases.aspose.com/words/net/ vagy használja a NuGet csomagkezelőt a telepítéséhez.
-- Egy dokumentumkönyvtár elérési útja, ahol a forrás- és céldokumentum található.
+Mielőtt belevetnénk magunkat a finomságokba, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
 
-## 2. lépés: Nyissa meg a forrás- és céldokumentumot
+1. Alapvető C# ismerete: Kényelmesnek kell lennie a C# szintaxisával és fogalmaival.
+2.  Aspose.Words for .NET: Töltse le[itt](https://releases.aspose.com/words/net/) . Ha csak felfedez, kezdheti a[ingyenes próbaverzió](https://releases.aspose.com/).
+3. Visual Studio: Bármelyik legújabb verziónak működnie kell, de a legújabb verzió ajánlott.
+4. .NET-keretrendszer: Győződjön meg arról, hogy telepítve van a rendszerére.
 
- Nyissa meg a forrás- és céldokumentumot a segítségével`Document` osztályú konstruktőr. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+Minden készen van? Nagy! ugorjunk be.
+
+## Névterek importálása
+
+Az Aspose.Words for .NET használatához importálnunk kell a szükséges névtereket. Ez a lépés biztosítja, hogy hozzáférjünk az összes szükséges osztályhoz és metódushoz.
 
 ```csharp
-// A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+```
 
+Ezek a névterek elengedhetetlenek a Word dokumentumok létrehozásához, kezeléséhez és mentéséhez.
+
+## 1. lépés: A dokumentumkönyvtár beállítása
+
+Először is meg kell adnunk a könyvtárat, ahol a dokumentumainkat tároljuk. Ez segít az Aspose.Wordsnek megtalálni azokat a fájlokat, amelyekkel dolgozni akarunk.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumok tényleges elérési útjával.
+
+## 2. lépés: A forrás- és céldokumentumok betöltése
+
+Ezután betöltjük a forrásdokumentumot (a csatolandó dokumentumot) és a céldokumentumot (azt a dokumentumot, amelyhez a forrás hozzá lesz csatolva).
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. lépés: A forrásdokumentum szakaszainak hozzáfűzése a céldokumentumhoz
+ Itt inicializálunk kettőt`Document` tárgyakat.`srcDoc` a forrásdokumentumot képviseli, és`dstDoc` a céldokumentumot jelenti.
 
- Keresse át a forrásdokumentum összes szakaszát, és importálja az egyes szakaszokat a céldokumentumba a segítségével`ImportNode` módszer. Ezután fűzze hozzá az importált részt a céldokumentumhoz.
+## 3. lépés: A forrásdokumentum hozzáfűzése a céldokumentumhoz
 
-```csharp
-foreach (Section srcSection in srcDoc)
-{
-    Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-    dstDoc.AppendChild(dstSection);
-}
-```
-
-## 4. lépés: Mentse el a céldokumentumot
-
- Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+Most jön az izgalmas rész – a forrásdokumentum hozzáfűzése a céldokumentumhoz, miközben az eredeti formázás sértetlen marad.
 
 ```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-Ezzel befejeződik a dokumentum Aspose.Words for .NET használatával történő hozzáfűzése.
+ Ebben a lépésben a`AppendDocument`módszer a két dokumentum kombinálására. A`ImportFormatMode.KeepSourceFormatting` paraméter biztosítja a forrásdokumentum formázásának megőrzését.
 
-### Példa forráskódra a Dokumentum hozzáfűzéséhez az Aspose.Words for .NET használatával 
+## 4. lépés: A kombinált dokumentum mentése
+
+A dokumentumok csatolása után az utolsó lépés az egyesített dokumentum új néven történő mentése.
 
 ```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Lapozzon át a forrásdokumentum összes szakaszán.
-	// szakasz csomópontjai a Dokumentum csomópont közvetlen gyermekei, így csak felsorolni tudjuk a dokumentumot.
-	foreach (Section srcSection in srcDoc)
-	{
-		// Mivel egy részt másolunk egyik dokumentumból a másikba,
-		// szükséges a szakasz csomópont importálása a céldokumentumba.
-		// Ez módosítja a dokumentumspecifikus hivatkozásokat a stílusokhoz, listákhoz stb.
-		//
-		// Egy csomópont importálása létrehozza az eredeti csomópont másolatát, de a másolatot
-		// ss készen áll a céldokumentumba való beillesztésre.
-		Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-		// Mostantól az új szakaszcsomópont hozzáfűzhető a céldokumentumhoz.
-		dstDoc.AppendChild(dstSection);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
+dstDoc.Save(dataDir + "AppendedDocument.docx");
 ```
+
+Itt a hozzáfűzött dokumentumot leíró fájlnévvel mentjük, jelezve, hogy hozzáfűzött tartalmat tartalmaz.
+
+## Következtetés
+
+ És megvan! Sikeresen megtanulta, hogyan fűzhet egy Word-dokumentumot a másikhoz az Aspose.Words for .NET segítségével. Ez az oktatóanyag a környezet beállítását, a dokumentumok betöltését, az egyik dokumentum hozzáfűzését a másikhoz a forrásformázás megtartása mellett, valamint a kombinált dokumentum mentését tárgyalta. Az Aspose.Words a funkciók széles skáláját kínálja, ezért feltétlenül fedezze fel a[API dokumentáció](https://reference.aspose.com/words/net/) hogy kibontakoztassa teljes potenciálját.
+
+## GYIK
+
+### 1. Mi az Aspose.Words for .NET?
+
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és konvertálását. Ideális a dokumentumokkal kapcsolatos feladatok automatizálására.
+
+### 2. Használhatom ingyenesen az Aspose.Words for .NET-et?
+
+ Kipróbálhatja az Aspose.Words for .NET-et a[ingyenes próbaverzió](https://releases.aspose.com/). Hosszú távú használathoz licencet kell vásárolnia.
+
+### 3. Hogyan biztosíthatom a formázás megőrzését a dokumentumok csatolásakor?
+
+ Használja a`ImportFormatMode.KeepSourceFormatting` paramétereket a`AppendDocument` módszer a forrásdokumentum formázásának megőrzésére.
+
+### 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
+
+Támogatást kaphat, ha ellátogat a[Aspose támogatási fórum](https://forum.aspose.com/c/words/8).
+
+### 5. Csatolhatok különböző formátumú dokumentumokat?
+
+Igen, az Aspose.Words különféle formátumokat támogat, és különböző formátumú dokumentumokat is csatolhat, például DOCX, DOC, RTF stb.

@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 次に、Word 文書を`Document`クラス。特定のセクションにアクセスするには、セクション インデックスを使用します。この例では、インデックス 0 を使用して最初のセクションにアクセスします。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Document.docx");
 
 //インデックスによるセクションへのアクセス
@@ -36,7 +36,7 @@ Section section = doc.Sections[0];
 ```
 
 ## ステップ 3: セクション設定を編集する
-セクション設定を変更するには、セクションのプロパティを使用します。`PageSetup`物体。この例では、余白、ヘッダーとフッターの距離、テキスト列の間隔を変更します。
+セクション設定を変更するには、セクションのプロパティを使用します。`PageSetup`物体。この例では、余白、ヘッダーとフッターの距離、テキスト列の間隔を変更しています。
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3.17cm
@@ -86,7 +86,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Word 文書を`Document`クラスを使用し、インデックスによって特定のセクションにアクセスするには、次のコードを使用できます。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Document.docx");
 
 //インデックスによるセクションへのアクセス
@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### Q: Aspose.Words for .NET のセクション設定を変更するにはどうすればよいですか?
 
- A: セクションの設定を変更するには、セクションのプロパティを使用できます。`PageSetup`物体。この例では、余白、ヘッダーとフッターの距離、テキスト列の間隔を変更します。
+ A: セクションの設定を変更するには、セクションのプロパティを使用できます。`PageSetup`物体。この例では、余白、ヘッダーとフッターの距離、テキスト列の間隔を変更しています。
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3.17cm

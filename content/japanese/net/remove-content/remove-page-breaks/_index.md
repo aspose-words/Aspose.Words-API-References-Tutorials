@@ -1,5 +1,5 @@
 ---
-title: Word文書内の改ページを削除する
+title: Word文書の改ページを削除する
 linktitle: 改ページを削除する
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words Library for .NET を使用して Word 文書の改ページを削除する方法を学びます。シームレスなレイアウトについては、ステップバイステップのガイドに従ってください。
@@ -29,7 +29,7 @@ url: /ja/net/remove-content/remove-page-breaks/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
@@ -75,7 +75,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "your-document.docx");
 
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
@@ -116,7 +116,7 @@ A: Word 文書内の改ページを削除するには、まず Aspose.Words の 
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 

@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -73,16 +73,16 @@ Ezzel befejeződik a többsoros címkeigazítás beállításának végrehajtás
 
 Ebben az oktatóanyagban megtanulta, hogyan állíthatja be a többsoros címkék igazítását egy diagramtengelyen az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével és a mellékelt forráskód felhasználásával új dokumentumot hozhat létre, szórványdiagramot szúrhat be, hozzáférhet a diagram tengelyéhez, és módosíthatja a pipa címke igazítását.
 
-Az Aspose.Words for .NET hatékony funkciókat kínál a Word dokumentumok diagramjainak kezeléséhez. A többsoros címkék akkor hasznosak, ha a tengelycímkék hosszú szöveget tartalmaznak, amelyet tördelni vagy több sorra fel kell osztani. A pipa címke igazításának beállításával szabályozhatja a többsoros címkék vízszintes igazítását a diagram tengelyén belül, így biztosítva az optimális megjelenítést és olvashatóságot.
+Az Aspose.Words for .NET hatékony funkciókat kínál a Word dokumentumok diagramjainak kezeléséhez. A többsoros címkék pipálása akkor hasznos, ha a tengelycímkék hosszú szöveget tartalmaznak, amelyet tördelni vagy több sorra fel kell osztani. A pipa címke igazításának beállításával szabályozhatja a többsoros címkék vízszintes igazítását a diagram tengelyén belül, így biztosítva az optimális megjelenítést és olvashatóságot.
 
 többsoros címkeigazítás testreszabása lehetővé teszi a diagram megjelenésének finomhangolását, különösen hosszú vagy összetett címkék esetén. A címkék jobbra, balra, középre vagy sorkizárt igazításával a pipacímkék kiegyensúlyozott és tetszetős elrendezését érheti el a tengely mentén.
 
-Az Aspose.Words for .NET segítségével könnyen elérheti és módosíthatja a diagram tengelyének jelölőcímke igazítási tulajdonságát, így teljes ellenőrzést biztosít a Word-dokumentumdiagramokon lévő jelölőcímkék megjelenése és elrendezése felett.
+Az Aspose.Words for .NET segítségével könnyen elérheti és módosíthatja a diagramtengely jelölőcímkék igazítási tulajdonságát, így teljes ellenőrzést biztosít a Word-dokumentumdiagramokon lévő jelölőcímkék megjelenése és elrendezése felett.
 
 ### GYIK
 
 #### Q1. Mik azok a többsoros címkék egy diagram tengelyében?
-diagram tengelyén lévő többsoros címkék azokra a tengelycímkékre utalnak, amelyek több sort ívelnek át, ha a címkeszöveg hosszú, vagy tördelni kell, hogy elférjen a rendelkezésre álló helyen. A címke szövegének csonkolása vagy vizuális zűrzavar helyett a diagram tengelye automatikusan több sorra osztja a címkéket az olvashatóság biztosítása érdekében. A többsoros címkék kipipálása különösen akkor hasznos, ha hosszú kategória- vagy értékcímkéket használ a diagramokban.
+többsoros címkék egy diagram tengelyén azokra a tengelycímkékre utalnak, amelyek több sort ívelnek át, ha a címkeszöveg hosszú, vagy tördelni kell, hogy elférjen a rendelkezésre álló helyen. A címke szövegének csonkolása vagy vizuális zűrzavar helyett a diagram tengelye automatikusan több sorra osztja a címkéket az olvashatóság biztosítása érdekében. A többsoros címkék kipipálása különösen hasznos hosszú kategória- vagy értékcímkék esetén a diagramokban.
 
 #### Q2. Testreszabhatom a pipacímkék igazítását a diagram tengelyében?
  Igen, az Aspose.Words for .NET használatával testreszabhatja a jelölőcímkék igazítását a diagram tengelyében. A hozzáféréssel a`TickLabelAlignment` tulajdona a`ChartAxis` objektumhoz, beállíthatja a kívánt igazítást a pipacímkék számára. Az igazítási lehetőségek közé tartozik a balra, jobbra, középre vagy sorkizárt igazítás. Az igazítás beállításával szabályozható a pipacímkék vízszintes elhelyezése a diagram tengelye mentén, biztosítva a megfelelő olvashatóságot és vizuális megjelenítést.
@@ -94,4 +94,4 @@ A jelölőcímke igazításának megváltoztatása a diagram tengelyében akkor 
 Nem, a pipa címke igazítási tulajdonsága nincs hatással a diagramtengely egysoros címkéire. Kifejezetten többsoros címkékhez készült, amelyek csomagolást vagy felosztást igényelnek. Az egysoros címkék igazítása a diagram tengelyének alapértelmezett igazítási beállításai alapján történik. A jelölőcímke igazítási tulajdonsága csak azokra a címkékre vonatkozik, amelyek több vonalon átnyúlnak, lehetővé téve az egyes sorok igazításának szabályozását a többsoros címkén belül.
 
 #### Q5. Rendelhetem-e másképp a pipacímkéket az X és Y tengelyen a diagramon?
- Igen, az Aspose.Words for .NET használatával eltérő módon igazíthatja a pipacímkéket az X- és az Y-tengelyhez egy diagramon. A jelölőcímke igazítási tulajdonsága minden diagramtengelyre jellemző. A megfelelő elérésével`ChartAxis` objektumhoz az X- vagy Y-tengelyhez, egymástól függetlenül beállíthatja a pipacímke igazítását különböző értékekre. Ez rugalmasságot biztosít a pipacímkék eltérő igazítására a diagram egyes tengelyeire vonatkozó speciális követelmények alapján.
+ Igen, az Aspose.Words for .NET segítségével eltérő módon igazíthatja a pipacímkéket az X- és Y-tengelyhez egy diagramon. A jelölőcímke igazítási tulajdonsága minden diagramtengelyre jellemző. A megfelelő elérésével`ChartAxis` objektumhoz az X- vagy Y-tengelyhez, egymástól függetlenül beállíthatja a pipacímke igazítását különböző értékekre. Ez rugalmasságot biztosít a pipacímkék eltérő igazítására a diagram egyes tengelyeire vonatkozó speciális követelmények alapján.

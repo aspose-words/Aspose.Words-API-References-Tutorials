@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/working-with-markdown/quote/
 ---
 
-In dit voorbeeld leggen we uit hoe je de aanhalingstekensfunctie met Aspose kunt gebruiken. Woorden voor .NET Quote worden gebruikt om delen van de tekst te markeren door ze te omringen met een speciale rand.
+In dit voorbeeld leggen we uit hoe je de aanhalingstekens-functie gebruikt met Aspose.Words voor .NET Quote worden gebruikt om delen van de tekst te markeren door ze te omringen met een speciale rand.
 
 ## Stap 1: Een documentgenerator gebruiken
 

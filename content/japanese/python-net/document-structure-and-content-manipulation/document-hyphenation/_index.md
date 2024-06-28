@@ -17,7 +17,7 @@ url: /ja/python-net/document-structure-and-content-manipulation/document-hyphena
 
 ### ハイフネーションの重要性
 
-ハイフネーションを使用すると、ドキュメントがプロフェッショナルで視覚的に魅力的なものになります。一貫性のある均等なテキストの流れを維持するのに役立ち、不規則な間隔によって生じる気を散らすものを排除します。
+ハイフネーションを使用すると、ドキュメントがプロフェッショナルで視覚的に魅力的なものになります。一貫性のある均一なテキストの流れを維持するのに役立ち、不規則な間隔によって生じる気を散らすものを排除します。
 
 ## ハイフネーションの制御
 
@@ -126,4 +126,4 @@ Aspose.Words for Python の行間隔設定を使用して、行間の間隔を�
 
 ### Aspose.Words for Python ドキュメントにはどこからアクセスできますか?
 
- API ドキュメントには次の場所からアクセスできます。[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+API ドキュメントには次の場所からアクセスできます。[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

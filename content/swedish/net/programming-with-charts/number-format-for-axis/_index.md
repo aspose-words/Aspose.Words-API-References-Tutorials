@@ -17,7 +17,7 @@ Se till att du har följande förutsättningar:
 - Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den genom att använda NuGet-pakethanteraren för att installera den.
 - En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram.
 
  Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
@@ -94,7 +94,7 @@ Med Aspose.Words för .NET har du flexibiliteten att formatera olika aspekter av
 ### Vanliga frågor
 
 #### Q1. Vilket är talformatet för en axel i ett diagram?
-Talformatet för en axel i ett diagram hänvisar till den formatering som tillämpas på de numeriska värdena som visas på axeln. Det låter dig styra hur siffror presenteras, inklusive alternativ som decimaler, tusentalsavgränsare, valutasymboler, procenttecken och mer. Genom att ställa in sifferformatet kan du anpassa utseendet på numeriska data i diagrammet för att passa dina specifika krav.
+Talformatet för en axel i ett diagram hänvisar till formateringen som tillämpas på de numeriska värdena som visas på axeln. Det låter dig styra hur siffror presenteras, inklusive alternativ som decimaler, tusentalsavgränsare, valutasymboler, procenttecken och mer. Genom att ställa in sifferformatet kan du anpassa utseendet på numeriska data i diagrammet för att passa dina specifika krav.
 
 #### Q2. Hur kan jag ställa in nummerformatet för axeletiketterna?
  För att ställa in talformatet för axeletiketterna i ett diagram med Aspose.Words för .NET, kan du komma åt`AxisY` egenskapen för diagrammet och ställ in`NumberFormat.FormatCode`egenskapen till önskat formatkod. Formatkoden följer syntaxen för vanliga numeriska formateringsmönster och bestämmer hur talen visas. Du kan till exempel använda "#,##0.00" för att visa tal med två decimaler och tusentalsavgränsare.

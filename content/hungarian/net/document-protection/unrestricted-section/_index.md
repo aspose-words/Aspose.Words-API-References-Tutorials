@@ -67,7 +67,7 @@ doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 
 // A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Szúrjon be két szakaszt némi szöveggel.
+// Szúrjon be két részt szöveggel.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 

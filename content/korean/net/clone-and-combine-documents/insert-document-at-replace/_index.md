@@ -2,87 +2,166 @@
 title: 교체 시 문서 삽입
 linktitle: 교체 시 문서 삽입
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 교체 시 문서를 삽입하는 방법을 알아보세요.
+description: 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 하나의 Word 문서를 다른 Word 문서에 원활하게 삽입하는 방법을 알아보세요. 문서 처리를 간소화하려는 개발자에게 적합합니다.
 type: docs
 weight: 10
 url: /ko/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-이 튜토리얼에서는 Aspose.Words for .NET의 대체 시 문서 삽입 기능을 사용하여 대체할 때 다른 문서에 문서를 삽입하는 방법을 안내합니다. 소스 코드를 이해하고 문서 삽입을 수행하려면 아래 단계를 수행하십시오.
+## 소개
 
-## 1단계: 기본 문서 로드
+안녕하세요, 문서 전문가 여러분! 한 Word 문서를 다른 Word 문서에 원활하게 삽입하는 방법을 알아내려고 코드에 빠져들었던 적이 있습니까? 두려워하지 마십시오. 오늘 우리는 해당 작업을 쉽게 수행하기 위해 .NET용 Aspose.Words의 세계로 뛰어들기 때문입니다. 찾기 및 바꾸기 작업 중 특정 지점에 문서를 삽입하기 위해 이 강력한 라이브러리를 사용하는 방법에 대한 자세한 단계별 가이드를 살펴보겠습니다. Aspose.Words 마법사가 될 준비가 되셨나요? 시작하자!
 
-시작하려면 문서 디렉터리를 지정하고 기본 문서를 Document 객체에 로드하세요. 방법은 다음과 같습니다.
+## 전제조건
+
+코드를 시작하기 전에 준비해야 할 몇 가지 사항이 있습니다.
+
+-  Visual Studio: 컴퓨터에 Visual Studio가 설치되어 있는지 확인하세요. 아직 없으시다면, 다음에서 다운로드하실 수 있습니다.[여기](https://visualstudio.microsoft.com/).
+-  .NET용 Aspose.Words: Aspose.Words 라이브러리가 필요합니다. 에서 받으실 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+- 기본 C# 지식: C# 및 .NET에 대한 기본적인 이해는 이 자습서를 따라가는 데 도움이 됩니다.
+
+좋습니다. 이제 코드를 좀 더 작성해 보겠습니다.
+
+## 네임스페이스 가져오기
+
+먼저 Aspose.Words를 사용하려면 필요한 네임스페이스를 가져와야 합니다. 이는 프로젝트를 시작하기 전에 모든 도구를 모으는 것과 같습니다. C# 파일 상단에 다음 using 지시문을 추가합니다.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using Aspose.Words.Tables;
 ```
 
-## 2단계: 검색 및 바꾸기 옵션 구성
+이제 전제 조건이 준비되었으므로 프로세스를 간단한 단계로 나누어 보겠습니다. 각 단계는 매우 중요하며 목표에 더 가까워질 것입니다.
 
-이제 검색 방향을 지정하고 문서를 다른 문서에 삽입하기 위한 바꾸기 콜백을 지정하여 찾기 및 바꾸기 옵션을 구성하겠습니다. 방법은 다음과 같습니다.
+## 1단계: 문서 디렉토리 설정
 
-```csharp
-// 검색 및 바꾸기 옵션을 구성합니다.
-FindReplaceOptions options = new FindReplaceOptions
-{
-Direction = FindReplaceDirection.Backward,
-ReplacingCallback = new InsertDocumentAtReplaceHandler()
-};
-```
-
-## 3단계: 대체 메서드 호출
-
-이제 구성된 옵션을 사용하여 지정된 텍스트를 찾아 빈 문자열로 바꾸는 바꾸기 메서드를 호출합니다. 방법은 다음과 같습니다.
+먼저 문서가 저장되는 디렉터리를 지정해야 합니다. 이는 마치 큰 공연을 앞두고 무대를 준비하는 것과 같습니다.
 
 ```csharp
-mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-```
-
-### .NET용 Aspose.Words를 사용하여 대체 시 문서 삽입에 대한 예제 소스 코드
-
-다음은 .NET용 Aspose.Words를 대체할 때 문서 삽입 기능에 대한 전체 소스 코드입니다.
-
-```csharp
-// 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
-// 찾기 및 바꾸기 옵션을 설정합니다.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 디렉토리 경로와 함께. 이곳은 귀하의 문서가 살아 숨쉬는 곳입니다.
+
+## 2단계: 주 문서 로드
+
+다음으로 다른 문서를 삽입하려는 기본 문서를 로드합니다. 이것을 모든 작업이 일어나는 주요 단계라고 생각하십시오.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+이 코드는 지정된 디렉터리에서 기본 문서를 로드합니다.
+
+## 3단계: 찾기 및 바꾸기 옵션 설정
+
+문서를 삽입할 특정 위치를 찾으려면 찾기 및 바꾸기 기능을 사용합니다. 이는 새로 추가할 정확한 지점을 찾기 위해 지도를 사용하는 것과 같습니다.
+
+```csharp
 FindReplaceOptions options = new FindReplaceOptions
 {
-	Direction = FindReplaceDirection.Backward, 
-	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+    Direction = FindReplaceDirection.Backward,
+    ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
+```
 
-// 교체 메소드를 호출하십시오.
+여기서는 방향을 뒤로 설정하고 다음에 정의할 사용자 정의 콜백 핸들러를 지정합니다.
+
+## 4단계: 바꾸기 작업 수행
+
+이제 사용자 정의 콜백을 사용하여 다른 문서를 삽입하는 동안 특정 자리 표시자 텍스트를 찾아서 아무것도 바꾸지 않도록 기본 문서에 지시합니다.
+
+```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+이 코드는 찾기 및 바꾸기 작업을 수행한 다음 업데이트된 문서를 저장합니다.
+
+## 5단계: 사용자 지정 대체 콜백 핸들러 만들기
+
+우리의 사용자 정의 콜백 핸들러는 마법이 일어나는 곳입니다. 이 처리기는 찾기 및 바꾸기 작업 중에 문서 삽입이 수행되는 방법을 정의합니다.
+
+```csharp
+private class InsertDocumentAtReplaceHandler : IReplacingCallback
+{
+    ReplaceAction IReplacingCallback.Replacing(ReplacingArgs args)
+    {
+        Document subDoc = new Document(dataDir + "Document insertion 2.docx");
+
+        // 일치 텍스트가 포함된 단락 뒤에 문서를 삽입합니다.
+        Paragraph para = (Paragraph)args.MatchNode.ParentNode;
+        InsertDocument(para, subDoc);
+
+        // 일치하는 텍스트가 있는 단락을 제거합니다.
+        para.Remove();
+        return ReplaceAction.Skip;
+    }
+}
+```
+
+여기서는 삽입할 문서를 로드한 후 도우미 메서드를 호출하여 삽입을 수행합니다.
+
+## 6단계: 문서 삽입 방법 정의
+
+우리 퍼즐의 마지막 조각은 문서를 지정된 위치에 실제로 삽입하는 방법입니다.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+	{
+		CompositeNode destinationParent = insertionDestination.ParentNode;
+
+		NodeImporter importer =
+			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+		// 섹션 본문의 모든 블록 수준 노드를 반복합니다.
+		// 그런 다음 섹션의 마지막 빈 단락이 아닌 모든 노드를 복제하고 삽입합니다.
+		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+		foreach (Node srcNode in srcSection.Body)
+		{
+			if (srcNode.NodeType == NodeType.Paragraph)
+			{
+				Paragraph para = (Paragraph)srcNode;
+				if (para.IsEndOfSection && !para.HasChildNodes)
+					continue;
+			}
+
+			Node newNode = importer.ImportNode(srcNode, true);
+
+			destinationParent.InsertAfter(newNode, insertionDestination);
+			insertionDestination = newNode;
+		}
+	}
+	else
+	{
+		throw new ArgumentException("The destination node should be either a paragraph or table.");
+	}
+}
+```
+
+이 방법은 삽입할 문서에서 노드를 가져와서 기본 문서의 올바른 위치에 배치하는 작업을 처리합니다.
 
 ## 결론
 
-이 튜토리얼에서는 .NET용 Aspose.Words의 대체 시 문서 삽입 기능을 사용하여 대체하는 동안 다른 문서에 문서를 삽입하는 방법을 살펴보았습니다. 찾기 및 바꾸기 옵션을 구성하고 필요한 데이터를 제공하면 특정 자리 표시자를 다른 문서 템플릿이나 섹션의 콘텐츠로 바꿔 문서를 동적으로 조합할 수 있습니다. Aspose.Words for .NET은 복잡한 문서 조작 작업을 관리하는 강력하고 유연한 방법을 제공하여 문서 생성 및 콘텐츠 삽입 시나리오를 자동화하는 데 유용한 도구입니다.
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 한 문서를 다른 문서에 삽입하는 방법에 대한 포괄적인 가이드입니다. 다음 단계를 따르면 문서 조립 및 조작 작업을 쉽게 자동화할 수 있습니다. 문서 관리 시스템을 구축하든 문서 처리 워크플로를 간소화해야 하든 Aspose.Words는 신뢰할 수 있는 조수입니다.
 
-### FAQ
+## FAQ
 
-#### Q: 교체 중에 문서를 다른 문서에 삽입하는 목적은 무엇입니까?
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 조작하기 위한 강력한 라이브러리입니다. 이를 통해 Word 문서를 쉽게 생성, 수정, 변환 및 처리할 수 있습니다.
 
-A: 바꾸는 동안 문서를 다른 문서에 삽입하면 특정 자리 표시자를 별도 문서의 내용으로 동적으로 바꿀 수 있습니다. 이 기능은 미리 정의된 다양한 문서 템플릿이나 섹션을 특정 자리 표시자로 결합하여 더 큰 문서를 조합하려는 경우 특히 유용합니다.
+### 한 번에 여러 문서를 삽입할 수 있나요?
+예, 문서 컬렉션을 반복하여 여러 삽입을 처리하도록 콜백 핸들러를 수정할 수 있습니다.
 
-#### Q: .NET용 Aspose.Words를 사용하여 교체하는 동안 문서를 다른 문서에 어떻게 삽입합니까?
+### 무료 평가판이 제공되나요?
+ 전적으로! 다음에서 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 
-A: .NET용 Aspose.Words를 사용하여 교체하는 동안 문서를 다른 문서에 삽입하려면 다음 단계를 따르세요.
-1. 자리 표시자가 포함된 기본 문서를 Document 개체에 로드합니다.
-2. 문서 삽입을 처리하기 위한 검색 방향 및 바꾸기 콜백을 포함하여 찾기 및 바꾸기 옵션을 구성합니다.
-3. 구성된 옵션을 사용하여 적절한 검색 패턴으로 교체 메소드를 호출하고 자리 표시자를 빈 문자열로 바꿉니다.
+### Aspose.Words에 대한 지원을 받으려면 어떻게 해야 하나요?
+방문하시면 지원을 받으실 수 있습니다.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).
 
-#### Q: 교체 중 삽입 동작을 사용자 정의할 수 있습니까?
-
-A: 예, 사용자 지정 ReplacingCallback을 구현하여 교체 중 삽입 동작을 사용자 지정할 수 있습니다. IReplacingCallback 인터페이스에서 상속하면 자리 표시자를 바꿀 때 특정 요구 사항에 따라 문서가 삽입되고 병합되는 방식을 제어할 수 있습니다.
-
-#### Q: 여러 자리 표시자를 다른 문서로 바꿀 수 있나요?
-
-A: 예, 각 자리 표시자에 대한 적절한 검색 패턴을 지정하고 삽입할 해당 문서를 제공하여 여러 자리 표시자를 다른 문서로 바꿀 수 있습니다.
+### 삽입된 문서의 서식을 유지할 수 있나요?
+ 예,`NodeImporter`클래스를 사용하면 한 문서에서 다른 문서로 노드를 가져올 때 서식이 처리되는 방식을 지정할 수 있습니다.

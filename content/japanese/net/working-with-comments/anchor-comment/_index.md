@@ -120,5 +120,5 @@ A: Aspose.Words for .NET ドキュメントにコメント アンカーを追加
 
 #### Q: Aspose.Words for .NET でコメント アンカーにリンクされているコメントのテキストを編集するにはどうすればよいですか?
 
- A: Aspose.Words for .NET のコメント アンカーにバインドされたコメントのテキストを変更するには、`Comment.Text`対応するプロパティ`Comment`オブジェクトを変更し、必要に応じてテキストを変更します。
+A: Aspose.Words for .NET のコメント アンカーにバインドされたコメントのテキストを変更するには、`Comment.Text`対応するプロパティ`Comment`オブジェクトを変更し、必要に応じてテキストを変更します。
 

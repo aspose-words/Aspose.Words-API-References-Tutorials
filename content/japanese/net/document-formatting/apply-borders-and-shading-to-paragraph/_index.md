@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /ja/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
-このチュートリアルでは、Aspose.Words for .NET の機能を使用して Word 文書の段落に枠線と網掛けを適用する方法を説明します。以下の手順に従って、ソース コードを理解し、書式設定の変更を適用します。
+このチュートリアルでは、Aspose.Words for .NET の機能を使用して、Word 文書の段落に枠線と網掛けを適用する方法を説明します。以下の手順に従って、ソース コードを理解し、書式設定の変更を適用します。
 
 ## ステップ 1: ドキュメントの作成と構成
 
@@ -106,7 +106,7 @@ A: Aspose.Words for .NET を使用して Word 文書の段落に枠線と網掛�
 
 #### Q: 段落の各辺の境界線スタイルを設定するにはどうすればよいですか?
 
- A: 段落の各辺の境界線スタイルを設定するには、`Borders`の財産`ParagraphFormat`そして、`LineStyle`それぞれのプロパティ`BorderType`（例えば、`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom`）。次のようなさまざまな線スタイルを指定できます。`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`、など。
+ A: 段落の各辺の境界線スタイルを設定するには、`Borders`の財産`ParagraphFormat`そして、`LineStyle`それぞれのプロパティ`BorderType`（例えば。、`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom`）。次のようなさまざまな線スタイルを指定できます。`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`、など。
 
 #### Q: 段落のシェーディングのテクスチャと塗りつぶしの色を指定するにはどうすればよいですか?
 

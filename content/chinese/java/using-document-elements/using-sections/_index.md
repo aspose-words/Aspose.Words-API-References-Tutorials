@@ -104,11 +104,11 @@ public void cloneSection() throws Exception {
 
 ### 问题 2：Aspose.Words for Java 有试用版吗？
 
-是的，您可以免费试用 Aspose.Words for Java[这里](https://releases.aspose.com/).
+是的，您可以访问 Aspose.Words for Java 的免费试用版。[这里](https://releases.aspose.com/).
 
 ### Q3：如何获得 Aspose.Words for Java 的临时许可证？
 
-您可以获得 Aspose.Words for Java 的临时许可证[这里](https://purchase.aspose.com/temporary-license/).
+您可以获得 Aspose.Words for Java 的临时许可证。[这里](https://purchase.aspose.com/temporary-license/).
 
 ### 问题 4：在哪里可以找到 Aspose.Words for Java 的支持？
 

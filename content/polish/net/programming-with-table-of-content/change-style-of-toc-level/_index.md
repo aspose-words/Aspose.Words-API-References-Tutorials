@@ -31,7 +31,7 @@ Po utworzeniu dokumentu możesz uzyskać dostęp do stylów dokumentu i zmienić
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-tym przykładzie używamy właściwości Styles klasy Document, aby uzyskać dostęp do stylów dokumentu. Następnie używamy identyfikatora stylu StyleIdentifier.Toc1, aby uzyskać dostęp do stylu używanego dla pierwszego poziomu spisu treści. Na koniec modyfikujemy właściwość Font.Bold stylu, aby był pogrubiony.
+W tym przykładzie używamy właściwości Styles klasy Document, aby uzyskać dostęp do stylów dokumentu. Następnie używamy identyfikatora stylu StyleIdentifier.Toc1, aby uzyskać dostęp do stylu używanego dla pierwszego poziomu spisu treści. Na koniec modyfikujemy właściwość Font.Bold stylu, aby był pogrubiony.
 
 ## Zapisz zmodyfikowany dokument
 
@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Wniosek
 
-tym przewodniku wyjaśniliśmy, jak używać Aspose.Words dla .NET do zmiany stylu poziomu spisu treści dokumentu Word przy użyciu dostarczonego kodu źródłowego C#. Wykonując podane kroki, możesz łatwo dostosować styl spisu treści w dokumentach programu Word w aplikacji C#. Aspose.Words oferuje ogromną elastyczność i możliwości pracy ze stylami i formatowaniem dokumentów, umożliwiając tworzenie atrakcyjnych i profesjonalnych dokumentów Word.
+W tym przewodniku wyjaśniliśmy, jak używać Aspose.Words dla .NET do zmiany stylu poziomu spisu treści dokumentu Word przy użyciu dostarczonego kodu źródłowego C#. Wykonując podane kroki, możesz łatwo dostosować styl spisu treści w dokumentach programu Word w aplikacji C#. Aspose.Words oferuje ogromną elastyczność i możliwości pracy ze stylami i formatowaniem dokumentów, umożliwiając tworzenie atrakcyjnych i profesjonalnych dokumentów Word.
 
 ### Często zadawane pytania dotyczące zmiany stylu toc w dokumencie programu Word
 

@@ -17,7 +17,7 @@ url: /zh-hant/net/programming-with-charts/default-options-for-data-labels/
 - 已安裝 Aspose.Words for .NET 程式庫。您可以使用 NuGet 套件管理員下載並安裝它。
 - 將儲存輸出文檔的文檔目錄路徑。
 
-## 步驟 2：建立一個新文件並插入圖表
+## 步驟2：建立一個新文件並插入圖表。
 
 首先，我們創建一個新的`Document`物件和一個`DocumentBuilder`建置文檔。
 
@@ -49,7 +49,7 @@ ChartSeries series = chart.Series.Add("Aspose Series 1",
 
 ## 第 4 步：自訂資料標籤
 
-要自訂圖表中的資料標籤，我們需要訪問`ChartDataLabelCollection`與該系列關聯的對象。
+要自訂圖表中的資料標籤，我們需要訪問`ChartDataLabelCollection`與該系列關聯的物件。
 
 ```csharp
 ChartDataLabelCollection labels = series.DataLabels;
@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 Aspose.Words for .NET 是一個函式庫，可讓開發人員使用 .NET 應用程式以程式設計方式建立、操作和儲存 Word 文件。它為文檔元素（包括圖表）的文字處理提供了廣泛的功能。
 
 #### Q2。如何安裝 Aspose.Words for .NET？
-您可以透過使用 Visual Studio 中的 NuGet 套件管理器下載來安裝 Aspose.Words for .NET。只需在 NuGet 套件管理器中搜尋“Aspose.Words”並將其安裝到您的專案中即可。
+您可以透過使用 Visual Studio 中的 NuGet 套件管理器下載來安裝 Aspose.Words for .NET。只需在 NuGet 套件管理器中搜尋“Apose.Words”並將其安裝到您的專案中即可。
 
 #### Q3。我可以使用 Aspose.Words for .NET 自訂圖表的其他方面嗎？
 是的，Aspose.Words for .NET 可讓您自訂圖表的各個方面，例如圖表類型、軸標籤、圖例、繪圖區域等。您可以存取和修改圖表物件的不同屬性以實現所需的外觀和行為。

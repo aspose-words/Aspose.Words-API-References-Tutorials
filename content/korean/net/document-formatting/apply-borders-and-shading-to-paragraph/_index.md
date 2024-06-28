@@ -91,7 +91,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## 결론
 
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 단락에 테두리와 음영을 적용하는 방법을 배웠습니다. 단락을 구성하여`Borders` 그리고`Shading` 속성을 사용하여 단락의 테두리 스타일, 선 색상 및 채우기 색상을 설정할 수 있었습니다. Aspose.Words for .NET은 단락의 모양을 사용자 정의하고 문서의 시각적 표현을 향상시키는 강력한 서식 기능을 제공합니다.
+ 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 단락에 테두리와 음영을 적용하는 방법을 배웠습니다. 단락을 구성하여`Borders` 그리고`Shading` 속성을 사용하여 단락의 테두리 스타일, 선 색상 및 채우기 색상을 설정할 수 있었습니다. Aspose.Words for .NET은 단락의 모양을 사용자 정의하고 문서의 시각적 표현을 향상시키는 강력한 서식 기능을 제공합니다.
 
 ### FAQ
 
@@ -100,7 +100,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 A: .NET용 Aspose.Words를 사용하여 Word 문서의 단락에 테두리와 음영을 적용하려면 다음 단계를 따르세요.
 1.  새 문서를 만들고`DocumentBuilder` 물체.
 2.  액세스하여 단락 테두리를 구성합니다.`Borders` 의 재산`ParagraphFormat` 각 측면의 테두리 스타일을 설정합니다.
-3.  액세스하여 단락 채우기를 구성합니다.`Shading` 의 재산`ParagraphFormat` 텍스처와 채우기 색상을 지정합니다.
+3. 액세스하여 단락 채우기를 구성합니다.`Shading` 의 재산`ParagraphFormat` 텍스처와 채우기 색상을 지정합니다.
 4.  다음을 사용하여 단락에 내용을 추가합니다.`Write` 의 방법`DocumentBuilder`.
 5.  다음을 사용하여 문서를 저장합니다.`Save` 방법.
 

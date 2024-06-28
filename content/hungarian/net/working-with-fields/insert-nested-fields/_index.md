@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-fields/insert-nested-fields/
 ---
 
-Az alábbiakban egy lépésről lépésre bemutatjuk a C# forráskódot, amely az Aspose.Words for .NET „Beágyazott mezők beszúrása” funkcióját használja. A kívánt eredmény elérése érdekében gondosan kövesse az egyes lépéseket.
+Itt található egy lépésről lépésre bemutatott útmutató a C# forráskód leírásához, amely az Aspose.Words for .NET "Beágyazott mezők beszúrása" funkcióját használja. A kívánt eredmény elérése érdekében gondosan kövesse az egyes lépéseket.
 
 ## 1. lépés: Dokumentumkönyvtár beállítása
 
@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## 5. lépés: A beágyazott mező beszúrása
 
- A DocumentBuildert használjuk`InsertField()`módszer beágyazott mező beszúrására a láblécbe.
+ A DocumentBuildert használjuk`InsertField()` módszer beágyazott mező beszúrására a láblécbe.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");

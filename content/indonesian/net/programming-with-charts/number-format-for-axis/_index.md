@@ -17,7 +17,7 @@ Pastikan Anda memiliki prasyarat berikut:
 - Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
 - Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Langkah 2: Buat dokumen baru dan masukkan bagan.
 
  Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
 
@@ -107,7 +107,7 @@ Aspose.Words for .NET mendukung berbagai kode format angka yang dapat Anda gunak
 
 - `0` atau`#` - Menampilkan angka tanpa tempat desimal.
 - `0.00` atau`#.00` - Menampilkan nomor dengan dua tempat desimal.
-- `#,##0` Menampilkan angka dengan pemisah ribuan.
+- `#,##0` Menampilkan angka dengan ribuan pemisah.
 - `"€"0.00` - Menampilkan nomor dengan simbol mata uang Euro dan dua tempat desimal.
 - `"%"0` - Menampilkan angka sebagai persentase.
 

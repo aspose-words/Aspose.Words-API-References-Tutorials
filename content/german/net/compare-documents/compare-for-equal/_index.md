@@ -73,4 +73,4 @@ A: Ja, Aspose.Words für .NET bietet verschiedene Optionen zum Anpassen des Verg
 
 #### F: Kann ich einen detaillierteren Vergleich durchführen, um spezifische Unterschiede zwischen Dokumenten zu identifizieren?
 
-A: Ja, Sie können einen detaillierteren Vergleich durchführen, um spezifische Unterschiede zwischen Dokumenten zu identifizieren, indem Sie die durchlaufen`Revisions` Sammlung des Originaldokuments. Jede Revision stellt eine Änderung oder einen Unterschied zwischen den Dokumenten dar. Sie können auf die Details jeder Revision zugreifen, z. B. auf die Art der Änderung (Einfügung, Löschung, Formatierungsänderung) und den betroffenen Bereich des Dokuments.
+ A: Ja, Sie können einen detaillierteren Vergleich durchführen, um spezifische Unterschiede zwischen Dokumenten zu identifizieren, indem Sie die durchlaufen`Revisions` Sammlung der Originaldokumente. Jede Revision stellt eine Änderung oder einen Unterschied zwischen den Dokumenten dar. Sie können auf die Details jeder Revision zugreifen, z. B. auf die Art der Änderung (Einfügung, Löschung, Formatierungsänderung) und den betroffenen Bereich des Dokuments.

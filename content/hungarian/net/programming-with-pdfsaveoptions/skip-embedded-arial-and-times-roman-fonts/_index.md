@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
 
-Ez a cikk lépésről lépésre ismerteti, hogyan használhatja a funkciót a PDF-méret optimalizálására úgy, hogy a beágyazott Arial és Times Roman betűtípusokat metafájlméretre hagyja az Aspose.Words for .NET segítségével. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan konfigurálhatja a betűtípus beágyazási módot egy dokumentumban, és hogyan hozhat létre PDF-et Arial és Times Roman betűtípusok beágyazása nélkül.
+Ez a cikk lépésről lépésre ismerteti, hogyan használhatja a funkciót a PDF-méret optimalizálására úgy, hogy a beágyazott Arial és Times Roman betűtípusokat átugorja a metafájl méretére az Aspose.Words for .NET segítségével. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan konfigurálhatja a betűtípus beágyazási módot egy dokumentumban, és hogyan hozhat létre PDF-et Arial és Times Roman betűtípusok beágyazása nélkül.
 
 Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
 

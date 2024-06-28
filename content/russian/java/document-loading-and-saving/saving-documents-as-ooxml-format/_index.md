@@ -48,7 +48,7 @@ import com.aspose.words.OoxmlCompliance;
 // Загрузите документ
 Document doc = new Document("Document.docx");
 
-// Оптимизация для Word 2016
+// Оптимизировать для Word 2016
 doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2016);
 
 // Создайте OoxmlSaveOptions и установите уровень соответствия.
@@ -59,7 +59,7 @@ saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_STRICT);
 doc.save("ComplianceDoc.docx", saveOptions);
 ```
 
-## Обновление свойства времени последнего сохранения
+## Обновить свойство времени последнего сохранения
 
 Вы можете обновить свойство «Время последнего сохранения» документа при его сохранении. Вот как:
 

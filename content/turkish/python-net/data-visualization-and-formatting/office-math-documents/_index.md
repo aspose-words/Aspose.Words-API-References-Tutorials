@@ -77,7 +77,7 @@ insert_subscript_request = InsertMathObjectRequest(document_name=doc_create_resp
 insert_subscript_response = words_api.insert_math_object(insert_subscript_request)
 ```
 
-## Üst Simgeler ve Özel Semboller Ekleme
+## Üst Simge ve Özel Semboller Ekleme
 
 Üst simgeler ve özel semboller matematiksel ifadelerde çok önemli olabilir:
 

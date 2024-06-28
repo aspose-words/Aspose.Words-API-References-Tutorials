@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 
 ## Etapa 5: salve o documento de destino
 
- Finalmente, salve o documento de destino modificado usando o`Save` método do`Document` objeto.
+Finalmente, salve o documento de destino modificado usando o`Save` método do`Document` objeto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
@@ -64,7 +64,7 @@ Isso conclui a implementação de anexar um documento com opções de formato de
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// Especifique que se a numeração entrar em conflito nos documentos de origem e de destino,
-	//então será usada a numeração do documento de origem.
+	// então será usada a numeração do documento de origem.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

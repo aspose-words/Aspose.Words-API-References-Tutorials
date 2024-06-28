@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Etapa 5: Inserindo o campo aninhado
 
- Usamos o DocumentBuilder`InsertField()`método para inserir um campo aninhado no rodapé.
+ Usamos o DocumentBuilder`InsertField()` método para inserir um campo aninhado no rodapé.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -108,7 +108,7 @@ R: Para inserir campos aninhados em um documento do Word usando Aspose.Words for
 
 #### P: Quais são os benefícios de usar campos aninhados em um documento do Word com Aspose.Words for .NET?
 
-R: O uso de campos aninhados oferece várias vantagens em um documento do Word com Aspose.Words for .NET. Isto permite maior flexibilidade na criação de modelos de documentos dinâmicos, permitindo a inserção de valores de variáveis e cálculos em campos aninhados. Os campos aninhados também podem facilitar a geração automatizada de conteúdo, como a geração de tabelas de conteúdo, números de páginas, etc.
+R: O uso de campos aninhados oferece várias vantagens em um documento do Word com Aspose.Words for .NET. Isso permite maior flexibilidade na criação de modelos de documentos dinâmicos, ao permitir a inserção de valores de variáveis e cálculos em campos aninhados. Os campos aninhados também podem facilitar a geração automatizada de conteúdo, como a geração de tabelas de conteúdo, números de páginas, etc.
 
 #### P: Posso ter campos aninhados de vários níveis em um documento do Word com Aspose.Words for .NET?
 

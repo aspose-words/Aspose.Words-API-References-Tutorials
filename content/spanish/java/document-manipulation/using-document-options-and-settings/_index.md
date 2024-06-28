@@ -123,7 +123,7 @@ public void addJapaneseAsEditingLanguages() throws Exception
 }
 ```
 
-Los idiomas de edición desempeñan un papel vital en el procesamiento de documentos. Con Aspose.Words para Java, puede configurar y personalizar idiomas de edición para satisfacer las necesidades lingüísticas de su documento.
+Los lenguajes de edición juegan un papel vital en el procesamiento de documentos. Con Aspose.Words para Java, puede configurar y personalizar idiomas de edición para satisfacer las necesidades lingüísticas de su documento.
 
 
 ## Conclusión

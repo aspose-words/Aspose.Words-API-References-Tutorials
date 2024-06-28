@@ -2,7 +2,7 @@
 title: Łączenie i porównywanie dokumentów w programie Word
 linktitle: Łączenie i porównywanie dokumentów w programie Word
 second_title: Aspose.Words API do zarządzania dokumentami w języku Python
-description: Łącz i porównuj dokumenty programu Word bez wysiłku, korzystając z Aspose.Words dla języka Python. Dowiedz się, jak manipulować dokumentami, podkreślać różnice i automatyzować zadania.
+description: Łącz i porównuj dokumenty programu Word bez wysiłku, korzystając z Aspose.Words dla Pythona. Dowiedz się, jak manipulować dokumentami, podkreślać różnice i automatyzować zadania.
 type: docs
 weight: 10
 url: /pl/python-net/document-combining-and-comparison/merge-compare-documents/

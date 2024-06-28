@@ -58,7 +58,7 @@ Gefeliciteerd! U hebt nu geleerd hoe u de functie "Autolink" kunt gebruiken met 
 
 #### Vraag: Hoe kan ik een automatische link naar een URL-adres in Aspose.Words maken?
 
-A: Om een automatische link naar een URL-adres in Aspose.Words te maken, kunt u de`<a>` labelen met de`href` attribuut dat het URL-adres bevat. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com">https://www.aspose.com</a>` om automatisch te linken naar "https://www.aspose.com".
+ A: Om een automatische link naar een URL-adres in Aspose.Words te maken, kunt u de`<a>` labelen met de`href` attribuut dat het URL-adres bevat. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com">https://www.aspose.com</a>` om automatisch te linken naar "https://www.aspose.com".
 
 #### Vraag: Is het mogelijk om de weergavetekst van een automatische link in Aspose.Words aan te passen?
 
@@ -66,4 +66,4 @@ A: Om een automatische link naar een URL-adres in Aspose.Words te maken, kunt u 
 
 #### Vraag: Hoe kan ik extra attributen toevoegen aan een autolink in Aspose.Words?
 
- A: Om extra attributen toe te voegen aan een automatische link in Aspose.Words, kunt u extra HTML-attributen gebruiken in de`<a>` label. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com" target="_blank">Link</a>` om de link in een nieuw venster of tabblad te openen met behulp van de` attribute target="_blank"`.
+A: Om extra attributen toe te voegen aan een automatische link in Aspose.Words, kunt u extra HTML-attributen gebruiken in de`<a>` label. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com" target="_blank">Link</a>` om de link in een nieuw venster of tabblad te openen met behulp van de` attribute target="_blank"`.

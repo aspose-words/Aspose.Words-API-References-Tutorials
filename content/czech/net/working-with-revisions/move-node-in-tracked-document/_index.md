@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Krok 5: Uložení dokumentu
 
- Po vložení textového pole formuláře uložte dokument na požadované místo pomocí`Save` metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
+ Po vložení pole formuláře pro zadání textu uložte dokument na požadované místo pomocí`Save` metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);

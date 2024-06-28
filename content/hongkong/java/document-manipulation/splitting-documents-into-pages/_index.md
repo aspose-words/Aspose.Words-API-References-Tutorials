@@ -145,7 +145,7 @@ private Map<Integer, ArrayList<Node>> reversePageLookup;
 /// <摘要>
 /// 初始化 <see cref="PageNumberFinder"/> 類別的新實例。
 /// </摘要>
-/// <param name="collector">具有文檔佈局模型記錄的收集器實例。</param>
+/// <param name="collector">具有文件佈局模型記錄的收集器實例。
 public PageNumberFinder(LayoutCollector collector)
 {
 	this.collector = collector;

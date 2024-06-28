@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Шаг 5. Вставка вложенного поля
 
- Мы используем DocumentBuilder`InsertField()`метод для вставки вложенного поля в нижний колонтитул.
+ Мы используем DocumentBuilder`InsertField()` метод для вставки вложенного поля в нижний колонтитул.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");

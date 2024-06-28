@@ -2,89 +2,144 @@
 title: Fügen Sie ein schwebendes Bild in ein Word-Dokument ein
 linktitle: Fügen Sie ein schwebendes Bild in ein Word-Dokument ein
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET schwebende Bilder in Word-Dokumente einfügen. Schritt für Schritt Anleitung.
+description: Erfahren Sie in dieser detaillierten Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET ein schwebendes Bild in ein Word-Dokument einfügen. Perfekt zur Aufwertung Ihrer Dokumente.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-floating-image/
 ---
-In diesem umfassenden Beispiel erfahren Sie, wie Sie mit Aspose.Words für .NET ein schwebendes Bild in ein Word-Dokument einfügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieser Anleitung werden Sie in der Lage sein, Bilder mit anpassbaren Positionierungs- und Umbruchoptionen zu Ihren Dokumenten hinzuzufügen.
+## Einführung
+
+Stellen Sie sich vor, Sie erstellen einen beeindruckenden Bericht oder Vorschlag, bei dem die Bilder perfekt positioniert sind, um Ihren Text zu ergänzen. Mit Aspose.Words für .NET können Sie dies mühelos erreichen. Diese Bibliothek bietet leistungsstarke Funktionen für die Dokumentbearbeitung und ist damit eine Lösung der Wahl für Entwickler. In diesem Tutorial konzentrieren wir uns auf das Einfügen eines schwebenden Bildes mithilfe der DocumentBuilder-Klasse. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, dieser Leitfaden führt Sie durch jeden Schritt.
 
 ## Voraussetzungen
-Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
-- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## Schritt 1: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
-Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse und initialisieren Sie ein DocumentBuilder-Objekt:
+Bevor wir loslegen, stellen wir sicher, dass Sie über alles verfügen, was Sie für den Einstieg benötigen:
+
+1.  Aspose.Words für .NET: Sie können die Bibliothek von herunterladen[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
+2. Visual Studio: Jede Version, die die .NET-Entwicklung unterstützt.
+3. Grundkenntnisse in C#: Das Verständnis der Grundlagen der C#-Programmierung ist hilfreich.
+4. Bilddatei: Eine Bilddatei, die Sie einfügen möchten, beispielsweise ein Logo oder ein Bild.
+
+## Namespaces importieren
+
+Um Aspose.Words in Ihrem Projekt verwenden zu können, müssen Sie die erforderlichen Namespaces importieren. Fügen Sie dazu am Anfang Ihrer C#-Datei die folgenden Zeilen hinzu:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Nachdem diese Voraussetzungen und Namespaces erfüllt sind, können wir mit unserem Tutorial beginnen.
+
+Lassen Sie uns den Prozess des Einfügens eines schwebenden Bildes in ein Word-Dokument in überschaubare Schritte unterteilen. Jeder Schritt wird im Detail erklärt, um sicherzustellen, dass Sie ihn ohne Probleme befolgen können.
+
+## Schritt 1: Richten Sie Ihr Projekt ein
+
+Erstellen Sie zunächst ein neues C#-Projekt in Visual Studio. Der Einfachheit halber können Sie eine Konsolen-App wählen.
+
+1. Öffnen Sie Visual Studio und erstellen Sie ein neues Projekt.
+2. Wählen Sie „Konsolen-App (.NET Core)“ und klicken Sie auf „Weiter“.
+3. Benennen Sie Ihr Projekt und wählen Sie einen Speicherort aus. Klicken Sie auf „Erstellen“.
+4. Installieren Sie Aspose.Words für .NET über den NuGet Package Manager. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, wählen Sie „NuGet-Pakete verwalten“ und suchen Sie nach „Apose.Words“. Installieren Sie die neueste Version.
+
+## Schritt 2: Initialisieren Sie Document und DocumentBuilder
+
+Nachdem Ihr Projekt nun eingerichtet ist, initialisieren wir die Objekte Document und DocumentBuilder.
+
+1.  Erstellen Sie eine neue Instanz von`Document` Klasse:
 
 ```csharp
 Document doc = new Document();
+```
+
+2. Initialisieren Sie ein DocumentBuilder-Objekt:
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 2: Fügen Sie ein schwebendes Bild ein
-Als nächstes verwenden Sie die InsertImage-Methode der DocumentBuilder-Klasse, um ein schwebendes Bild einzufügen. Geben Sie den Pfad der Bilddatei, die relative horizontale und vertikale Position, Breite, Höhe und Umbruchoptionen als Parameter an:
+ Der`Document` Das Objekt stellt das Word-Dokument dar und das`DocumentBuilder` hilft beim Hinzufügen von Inhalten.
+
+## Schritt 3: Definieren Sie den Bildpfad
+
+Geben Sie als Nächstes den Pfad zu Ihrer Bilddatei an. Stellen Sie sicher, dass Ihr Bild über das Verzeichnis Ihres Projekts zugänglich ist.
+
+Definieren Sie das Bildverzeichnis und den Namen der Bilddatei:
 
 ```csharp
-builder.InsertImage(ImagesDir + "Transparent background logo.png",
-	RelativeHorizontalPosition.Margin,
-	100,
-	RelativeVerticalPosition.Margin,
-	100,
-	200,
-	100,
-	WrapType.Square);
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+string imagePath = dataDir + "Transparent background logo.png";
 ```
 
-## Schritt 3: Speichern Sie das Dokument
-Nachdem Sie das schwebende Bild eingefügt haben, speichern Sie das Dokument mit der Save-Methode der Document-Klasse in einer Datei:
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad, in dem Ihr Bild gespeichert ist.
+
+## Schritt 4: Fügen Sie das schwebende Bild ein
+
+Wenn alles eingerichtet ist, fügen wir das schwebende Bild in das Dokument ein.
+
+ Benutzen Sie die`InsertImage` Methode der`DocumentBuilder` Klasse zum Einfügen des Bildes:
 
 ```csharp
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
+builder.InsertImage(imagePath,
+   RelativeHorizontalPosition.Margin,
+   100,
+   RelativeVerticalPosition.Margin,
+   100,
+   200,
+   100,
+   WrapType.Square);
 ```
 
-## Beispielquellcode zum Einfügen eines schwebenden Bildes mit Aspose.Words für .NET
-Hier ist der vollständige Quellcode zum Einfügen eines schwebenden Bildes mit Aspose.Words für .NET:
-Schwebende Bilder sind für verschiedene Szenarien nützlich, beispielsweise zum Hinzufügen von Logos, Illustrationen oder dekorativen Elementen, die unabhängig vom Text des Dokuments positioniert werden können.
+Hier ist, was jeder Parameter bedeutet:
+- `imagePath`Der Pfad zu Ihrer Bilddatei.
+- `RelativeHorizontalPosition.Margin`: Die horizontale Position relativ zum Rand.
+- `100`: Der horizontale Versatz vom Rand (in Punkten).
+- `RelativeVerticalPosition.Margin`: Die vertikale Position relativ zum Rand.
+- `100`: Der vertikale Versatz vom Rand (in Punkten).
+- `200`: Die Breite des Bildes (in Punkten).
+- `100`: Die Höhe des Bildes (in Punkten).
+- `WrapType.Square`: Der Textumbruchstil um das Bild.
+
+## Schritt 5: Speichern Sie das Dokument
+
+Speichern Sie das Dokument abschließend am gewünschten Ort.
+
+1. Geben Sie den Pfad der Ausgabedatei an:
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertImage(ImagesDir + "Transparent background logo.png",
-	RelativeHorizontalPosition.Margin,
-	100,
-	RelativeVerticalPosition.Margin,
-	100,
-	200,
-	100,
-	WrapType.Square);
-
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
+string outputPath = dataDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx";
 ```
 
-Denken Sie daran, den Code entsprechend Ihren spezifischen Anforderungen anzupassen, einschließlich des Bilddateipfads und der gewünschten Positionierungs- und Umbruchoptionen.
+2. Speichern Sie das Dokument:
+
+```csharp
+doc.Save(outputPath);
+```
+
+Ihr Word-Dokument mit dem schwebenden Bild ist jetzt fertig!
 
 ## Abschluss
-Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET ein schwebendes Bild in ein Word-Dokument einfügen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie Ihre Dokumente jetzt mit optisch ansprechenden und anpassbaren schwebenden Bildern verbessern.
 
-### FAQs zum Einfügen eines schwebenden Bildes in ein Word-Dokument
+Das Einfügen eines schwebenden Bildes in ein Word-Dokument mit Aspose.Words für .NET ist ein unkomplizierter Vorgang, wenn er in überschaubare Schritte unterteilt wird. Wenn Sie dieser Anleitung folgen, können Sie Ihren Dokumenten professionell aussehende Bilder hinzufügen und so deren visuelle Attraktivität steigern. Aspose.Words bietet eine robuste API, die die Bearbeitung von Dokumenten zum Kinderspiel macht, unabhängig davon, ob Sie an Berichten, Vorschlägen oder anderen Dokumenttypen arbeiten.
 
-#### F: Kann ich mehrere schwebende Bilder in ein einzelnes Dokument einfügen?
+## FAQs
 
-A: Auf jeden Fall! Mit Aspose.Words für .NET können Sie beliebig viele schwebende Bilder in ein Word-Dokument einfügen. Wiederholen Sie einfach den Einfügevorgang, um mehrere optisch ansprechende Bilder hinzuzufügen.
+### Kann ich mit Aspose.Words für .NET mehrere Bilder einfügen?
 
-#### F: Welche Umbruchoptionen stehen für das schwebende Bild zur Verfügung?
+ Ja, Sie können mehrere Bilder einfügen, indem Sie den Vorgang wiederholen`InsertImage` Methode für jedes Bild mit den gewünschten Parametern.
 
-A: Aspose.Words für .NET bietet verschiedene Umbruchoptionen für schwebende Bilder, darunter „Quadrat“, „Enge“, „Durch“, „Oben Unten“ und „Keine“. Diese Optionen bestimmen, wie der Text mit dem schwebenden Bild interagiert.
+### Wie ändere ich die Position des Bildes?
 
-#### F: Kann ich die Größe des schwebenden Bildes anpassen?
+ Sie können die anpassen`RelativeHorizontalPosition`, `RelativeVerticalPosition`und Offset-Parameter, um das Bild nach Bedarf zu positionieren.
 
-A: Auf jeden Fall! Sie können die Breite und Höhe des schwebenden Bildes mithilfe der entsprechenden Parameter in der Methode InsertImage angeben. Dadurch können Sie die Abmessungen des Bildes entsprechend Ihren Designvorlieben steuern.
+### Welche anderen Wrap-Typen sind für Bilder verfügbar?
 
-#### F: Kann ich das schwebende Bild relativ zu einem bestimmten Element im Dokument positionieren?
+ Aspose.Words unterstützt verschiedene Wrap-Typen wie z`Inline`, `TopBottom`, `Tight`, `Through`, und mehr. Sie können diejenige auswählen, die am besten zu Ihrem Dokumentlayout passt.
 
-A: Ja, mit Aspose.Words für .NET können Sie das schwebende Bild relativ zu bestimmten Elementen wie dem Rand, der Seite, dem Absatz oder der Tabelle positionieren. Sie können die entsprechenden relativen horizontalen und vertikalen Positionsparameter auswählen, um die gewünschte Platzierung zu erreichen.
+### Kann ich verschiedene Bildformate verwenden?
 
-#### F: Ist Aspose.Words für .NET sowohl für Desktop- als auch für Webanwendungen geeignet?
+Ja, Aspose.Words unterstützt eine Vielzahl von Bildformaten, darunter JPEG, PNG, BMP und GIF.
 
-A: Ja, Aspose.Words für .NET ist eine vielseitige Bibliothek, die sowohl für Desktop- als auch für Webanwendungen geeignet ist. Unabhängig davon, ob Sie eine Windows-Anwendung oder ein webbasiertes System erstellen, können Sie die Bibliothek mühelos integrieren.
+### Wie erhalte ich eine kostenlose Testversion von Aspose.Words für .NET?
+
+ Sie können eine kostenlose Testversion von erhalten[Aspose kostenlose Testseite](https://releases.aspose.com/).

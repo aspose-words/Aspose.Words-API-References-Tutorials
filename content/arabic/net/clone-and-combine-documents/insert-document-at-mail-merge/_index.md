@@ -2,84 +2,153 @@
 title: إدراج مستند في دمج البريد
 linktitle: إدراج مستند في دمج البريد
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إدراج المستندات في حقول دمج البريد باستخدام Aspose.Words for .NET في هذا البرنامج التعليمي الشامل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-في هذا البرنامج التعليمي، سنرشدك إلى كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام ميزة إدراج مستند أثناء دمج البريد في Aspose.Words for .NET. اتبع الخطوات الموضحة أدناه لفهم الكود المصدري وإجراء عملية إدراج المستند.
+## مقدمة
 
-## الخطوة 1: تحميل المستند الرئيسي
+مرحبًا بك في عالم أتمتة المستندات باستخدام Aspose.Words for .NET! هل تساءلت يومًا عن كيفية إدراج المستندات ديناميكيًا في حقول محددة داخل مستند رئيسي أثناء عملية دمج البريد؟ حسنا، أنت في المكان الصحيح. سيرشدك هذا البرنامج التعليمي خطوة بخطوة خلال عملية إدراج المستندات في حقول دمج البريد باستخدام Aspose.Words for .NET. إنه مثل تجميع قطعة أحجية، حيث تقع كل قطعة في مكانها بشكل مثالي. لذا، دعونا نتعمق!
 
-للبدء، حدد الدليل لمستنداتك وقم بتحميل المستند الرئيسي في كائن Document. إليك الطريقة:
+## المتطلبات الأساسية
+
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
+
+1.  Aspose.Words لـ .NET: يمكنك ذلك[تحميل أحدث نسخة هنا](https://releases.aspose.com/words/net/) . إذا كنت بحاجة إلى شراء ترخيص، يمكنك القيام بذلك[هنا](https://purchase.aspose.com/buy) . وبدلاً من ذلك، يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) أو جربه مع[تجربة مجانية](https://releases.aspose.com/).
+2. بيئة التطوير: Visual Studio أو أي C# IDE آخر.
+3. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# سيجعل هذا البرنامج التعليمي سهلاً.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، ستحتاج إلى استيراد مساحات الأسماء الضرورية. هذه هي مثل اللبنات الأساسية لمشروعك.
 
 ```csharp
-// المسار إلى دليل المستندات.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+using System.Linq;
 ```
 
-## الخطوة 2: تكوين دمج البريد
+دعونا نقسم العملية إلى خطوات يمكن التحكم فيها. ستعتمد كل خطوة على الخطوة السابقة، مما يقودك إلى الحل الكامل.
 
-لنقم الآن بتكوين دمج المراسلات وتحديد رد اتصال دمج الحقول لإدراج مستند في مستند آخر. إليك الطريقة:
+## الخطوة 1: إعداد الدليل الخاص بك
 
-```csharp
-mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-```
-
-## الخطوة 3: تشغيل دمج المراسلات
-
-سنقوم بتشغيل دمج البريد من خلال توفير أسماء حقول الدمج والبيانات المقابلة. إليك الطريقة:
+قبل أن تتمكن من البدء في إدراج المستندات، تحتاج إلى تحديد المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يتم فيه تخزين المستندات الخاصة بك.
 
 ```csharp
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-```
-
-### مثال على التعليمات البرمجية المصدر لإدراج مستند عند دمج المراسلات باستخدام Aspose.Words لـ .NET
-
-فيما يلي الكود المصدري الكامل لميزة إدراج مستند في دمج المراسلات في Aspose.Words لـ .NET:
-
-```csharp
-// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
+## الخطوة 2: تحميل المستند الرئيسي
+
+بعد ذلك، عليك تحميل المستند الرئيسي. يحتوي هذا المستند على حقول الدمج حيث سيتم إدراج المستندات الأخرى.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+## الخطوة 3: إعداد رد اتصال دمج الحقول
+
+للتعامل مع عملية الدمج، ستحتاج إلى تعيين وظيفة رد الاتصال. ستكون هذه الوظيفة مسؤولة عن إدراج المستندات في حقول الدمج المحددة.
+
+```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-// يحتوي المستند الرئيسي على حقل دمج يسمى "Document_1".
-// تحتوي البيانات المقابلة لهذا الحقل على مسار مؤهل بالكامل للمستند.
-// ينبغي إدراج ذلك في هذا الحقل.
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
+```
 
+## الخطوة 4: تنفيذ دمج المراسلات
+
+حان الوقت الآن لتنفيذ عملية دمج البريد. هذا هو المكان الذي يحدث السحر. ستحدد حقل الدمج والمستند الذي يجب إدراجه في هذا الحقل.
+
+```csharp
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
+```
+
+## الخطوة 5: حفظ المستند
+
+بعد اكتمال عملية دمج البريد، ستقوم بحفظ المستند المعدل. سيحتوي هذا المستند الجديد على المحتوى المدرج في المكان الذي تريده.
+
+```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-باستخدام هذا الرمز، ستتمكن من إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET. سيتم حفظ المستند الناتج تحت اسم جديد
+## الخطوة 6: إنشاء معالج رد الاتصال
 
+معالج رد الاتصال هو فئة تقوم بإجراء معالجة خاصة لحقل الدمج. يقوم بتحميل المستند المحدد في قيمة الحقل وإدراجه في حقل الدمج الحالي.
+
+```csharp
+private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
+{
+    void IFieldMergingCallback.FieldMerging(FieldMergingArgs args)
+    {
+        if (args.DocumentFieldName == "Document_1")
+        {
+            DocumentBuilder builder = new DocumentBuilder(args.Document);
+            builder.MoveToMergeField(args.DocumentFieldName);
+
+            Document subDoc = new Document((string)args.FieldValue);
+            InsertDocument(builder.CurrentParagraph, subDoc);
+
+            if (!builder.CurrentParagraph.HasChildNodes)
+                builder.CurrentParagraph.Remove();
+
+            args.Text = null;
+        }
+    }
+}
+```
+
+## الخطوة 7: إدراج المستند
+
+تقوم هذه الطريقة بإدراج المستند المحدد في الفقرة الحالية أو خلية الجدول.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        foreach (Node srcNode in srcSection.Body)
+        {
+            if (srcNode.NodeType == NodeType.Paragraph)
+            {
+                Paragraph para = (Paragraph)srcNode;
+                if (para.IsEndOfSection && !para.HasChildNodes)
+                    continue;
+            }
+
+            Node newNode = importer.ImportNode(srcNode, true);
+            destinationParent.InsertAfter(newNode, insertionDestination);
+            insertionDestination = newNode;
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
+}
+```
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، اكتشفنا كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام ميزة إدراج مستند أثناء دمج البريد في Aspose.Words for .NET. من خلال تكوين دمج البريد وتوفير البيانات الضرورية، يمكنك تجميع المستندات ديناميكيًا عن طريق دمج قوالب أو أقسام المستندات المختلفة. يوفر Aspose.Words for .NET طريقة مرنة وقوية لإدارة سيناريوهات إنشاء المستندات المعقدة، مما يجعلها أداة قيمة لأتمتة مهام إنشاء المستندات ومعالجتها.
+وهناك لديك! لقد قمت بإدراج المستندات بنجاح في حقول معينة أثناء عملية دمج البريد باستخدام Aspose.Words for .NET. يمكن لهذه الميزة القوية أن توفر عليك الكثير من الوقت والجهد، خاصة عند التعامل مع كميات كبيرة من المستندات. فكر في الأمر كأنك تمتلك مساعدًا شخصيًا يتولى جميع المهام الثقيلة نيابةً عنك. إذا انطلق وقم بالمحاولة. ترميز سعيد!
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: ما هو الغرض من إدراج مستند في مستند آخر أثناء دمج المراسلات؟
+### هل يمكنني إدراج مستندات متعددة في حقول دمج مختلفة؟
+ نعم يمكنك ذلك. ما عليك سوى تحديد حقول الدمج المناسبة ومسارات المستندات المقابلة في الملف`MailMerge.Execute` طريقة.
 
-ج: يتيح لك إدراج مستند في مستند آخر أثناء دمج البريد إمكانية دمج قوالب أو أقسام مستند مختلفة ديناميكيًا استنادًا إلى البيانات المقدمة أثناء عملية الدمج. تعتبر هذه الميزة مفيدة بشكل خاص عندما تريد تجميع مستندات معقدة عن طريق دمج قوالب أو أقسام مختلفة محددة مسبقًا في مستند نهائي.
+### هل من الممكن تنسيق المستند المدرج بشكل مختلف عن المستند الرئيسي؟
+ قطعاً! يمكنك استخدام ال`ImportFormatMode` المعلمات في`NodeImporter` للتحكم في التنسيق
 
-#### س: كيف يمكنني إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET؟
+### ماذا لو كان اسم حقل الدمج ديناميكيًا؟
+يمكنك التعامل مع أسماء حقول الدمج الديناميكي عن طريق تمريرها كمعلمات إلى معالج رد الاتصال.
 
-ج: لإدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words لـ .NET، اتبع الخطوات التالية:
-1. قم بتحميل المستند الرئيسي الذي سيكون بمثابة الأساس في كائن المستند.
-2. قم بتكوين دمج المراسلات وحدد رد الاتصال لدمج الحقول للتعامل مع إدراج المستند.
-3. قم بتشغيل دمج المراسلات باستخدام أسماء حقول الدمج والبيانات المقابلة (المسار إلى المستند الذي سيتم إدراجه).
+### هل يمكنني استخدام هذه الطريقة مع تنسيقات ملفات مختلفة؟
+نعم، يدعم Aspose.Words تنسيقات ملفات متنوعة بما في ذلك DOCX وPDF والمزيد.
 
-#### س: كيف يمكنني تخصيص سلوك الإدراج أثناء دمج المراسلات؟
-
-ج: لتخصيص سلوك الإدراج أثناء دمج البريد، يمكنك تنفيذ FieldMergingCallback مخصص عن طريق الوراثة من واجهة IFieldMergingCallback. يتيح لك ذلك التحكم في كيفية إدراج المستندات ودمجها بناءً على متطلباتك المحددة.
-
-#### س: هل يمكنني إدراج مستندات متعددة أثناء دمج البريد؟
-
-ج: نعم، يمكنك إدراج مستندات متعددة أثناء دمج البريد عن طريق توفير البيانات المناسبة لكل حقل دمج. لكل حقل دمج يتطلب إدراج مستند، حدد المسار إلى المستند المقابل كبيانات.
-
-
+### كيف أتعامل مع الأخطاء أثناء عملية إدراج المستند؟
+قم بتنفيذ معالجة الأخطاء في معالج رد الاتصال الخاص بك لإدارة أي استثناءات قد تحدث.

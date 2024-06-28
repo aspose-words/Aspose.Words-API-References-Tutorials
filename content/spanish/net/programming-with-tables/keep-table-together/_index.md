@@ -31,7 +31,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
 ## Paso 3: habilite la opción "KeepWithNext"
-Para mantener la tabla unida y evitar que se divida en varias páginas, debemos habilitar la opción "KeepWithNext" para cada párrafo de la tabla excepto los últimos párrafos de la última fila de la tabla. Utilice el siguiente código:
+Para mantener la tabla unida y evitar que se divida en varias páginas, debemos habilitar la opción "KeepWithNext" para cada párrafo de la tabla, excepto los últimos párrafos de la última fila de la tabla. Utilice el siguiente código:
 
 ```csharp
 foreach(Cell cell in table.GetChildNodes(NodeType.Cell, true))

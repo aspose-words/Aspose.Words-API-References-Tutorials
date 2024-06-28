@@ -14,7 +14,7 @@ url: /ru/net/find-and-replace-text/simple-find-replace/
 - Базовые знания языка C#.
 - Среда разработки .NET с установленной библиотекой Aspose.Words.
 
-## Шаг 1. Создание нового документа
+## Шаг 1. Создайте новый документ
 
  Прежде чем мы начнем использовать простой поиск и замену, нам нужно создать новый документ, используя Aspose.Words для .NET. Это можно сделать, создав экземпляр`Document` объект:
 
@@ -25,7 +25,7 @@ Document doc = new Document();
 
 ## Шаг 2. Вставьте текст в документ.
 
- Когда у нас есть документ, мы можем вставить текст, используя`DocumentBuilder` объект. В нашем примере мы используем`Writeln` метод вставки фразы «Привет_CustomerName_,":
+ Когда у нас есть документ, мы можем вставить текст, используя`DocumentBuilder` Объект Object. В нашем примере мы используем`Writeln` метод вставки фразы «Привет_CustomerName_,":
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -40,7 +40,7 @@ builder.Writeln("Hello _CustomerName_,");
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-## Шаг 4: Сохранение отредактированного документа
+## Шаг 4. Сохраните отредактированный документ.
 
 Наконец, мы сохраняем измененный документ в указанном каталоге, используя команду`Save` метод:
 
@@ -83,7 +83,7 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 
 #### Вопрос: Как создать новый документ в Aspose.Words для .NET?
 
- О: Прежде чем использовать функцию поиска и замены простого текста, вы должны создать новый документ, используя Aspose.Words для .NET. Это можно сделать, создав экземпляр`Document` объект. Вот пример кода для создания нового документа:
+ О: Прежде чем использовать функцию поиска и замены простого текста, вы должны создать новый документ, используя Aspose.Words для .NET. Это можно сделать, создав экземпляр`Document` Объект Object. Вот пример кода для создания нового документа:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -92,7 +92,7 @@ Document doc = new Document();
 
 #### Вопрос: Как вставить текст в документ с помощью Aspose.Words for .NET?
 
- О: Если у вас есть документ, вы можете вставить текст с помощью`DocumentBuilder` объект. В нашем примере мы используем`Writeln` метод вставки фразы «Привет_CustomerName_:":
+ О: Если у вас есть документ, вы можете вставить текст с помощью`DocumentBuilder` Объект Object. В нашем примере мы используем`Writeln` метод вставки фразы «Привет_CustomerName_:":
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -24,4 +24,4 @@ url: /zh/python-net/document-intelligence/
 
 ## Python 文档智能教程
 ### [掌握文档智能](./master-document-intelligence/)
-使用 Aspose.Words for Python 掌握文档智能。高效自动化工作流程、分析数据和处理文档。现在就开始！
+使用 Aspose.Words for Python 掌握文档智能。高效地自动化工作流程、分析数据和处理文档。现在就开始！

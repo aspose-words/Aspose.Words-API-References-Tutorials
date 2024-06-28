@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
-这`Resolution`属性指定图像的目标分辨率和`ResolutionThreshold`属性指定最小分辨率，低于该分辨率图像将不会按比例缩小。
+这`Resolution`属性指定图像的目标分辨率和`ResolutionThreshold`该属性指定最小分辨率，低于该分辨率图像将不会按比例缩小。
 
 ## 步骤 3：将文档转换为 PDF
 
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 ### 经常问的问题
 
 #### 问：什么是通过图像采样来减小 PDF 文档的大小？
-答：通过图像采样减小 PDF 文档大小是指在转换为 PDF 时，通过降低图像的分辨率来减小生成的 PDF 文件的大小。这优化了存储空间的使用，并使共享和传输 PDF 文件变得更加容易。
+答：通过图像采样减小 PDF 文档大小是在转换为 PDF 时通过降低图像的分辨率来减小生成的 PDF 文件的大小。这优化了存储空间的使用，并使共享和传输 PDF 文件变得更加容易。
 
 #### 问：如何使用 Aspose.Words for .NET 通过图像采样来减小 PDF 文档大小？
 答：要使用 Aspose.Words for .NET 通过图像采样来减小 PDF 文档大小，请按照下列步骤操作：
@@ -83,13 +83,13 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 
 通过创建一个实例来配置另存为 PDF 选项`PdfSaveOptions`类并使用设置图像采样选项`DownsampleOptions`财产。您可以使用以下命令指定图像的目标分辨率`Resolution`属性并设置最小分辨率阈值，超过该阈值图像将不会使用`ResolutionThreshold`财产。
 
-使用以下命令将文档保存为 PDF 格式`Save`的方法`Document`指定路径和保存选项的类。
+使用以下命令将文档保存为 PDF 格式`Save`的方法`Document`类指定路径和保存选项。
 
 #### 问：通过图像采样减小 PDF 文档大小有什么好处？
 答：通过图像采样减小 PDF 文档大小的好处是：
 
 减小 PDF 文件大小：图像采样会降低 PDF 文档中图像的分辨率，从而显着减小 PDF 文件大小。这使得共享和传输文件变得容易，尤其是通过电子邮件或在线。
 
-优化存储空间：减小 PDF 文件的大小有助于优化存储空间的使用，尤其是当您有许多包含高分辨率图像的 PDF 文件时。
+优化存储空间：减小 PDF 文件的大小有助于优化存储空间的使用，特别是当您有许多包含高分辨率图像的 PDF 文件时。
 
 性能改进：较小的 PDF 文件加载速度更快，并且可以在不同设备上更快地打开和查看。

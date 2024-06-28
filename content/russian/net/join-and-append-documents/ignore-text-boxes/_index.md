@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Шаг 4. Добавьте содержимое текстового поля
 
- Создать`NodeImporter` объект и используйте его для импорта узлов текстового поля из исходного документа в целевой документ. Перейдите по каждому абзацу исходного документа и импортируйте его в целевой документ.
+ Создать`NodeImporter`объект и используйте его для импорта узлов текстового поля из исходного документа в целевой документ. Перейдите по каждому абзацу исходного документа и импортируйте его в целевой документ.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Шаг 5. Сохраните целевой документ.
 
- Наконец, сохраните измененный целевой документ, используя команду`Save` метод`Document` объект.
+Наконец, сохраните измененный целевой документ, используя команду`Save` метод`Document` Объект Object.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

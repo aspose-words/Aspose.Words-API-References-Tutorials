@@ -19,7 +19,7 @@ Assurez-vous d'avoir configuré votre environnement de développement avec Aspos
 Document doc = new Document();
 ```
 
- Dans cette étape, nous créons un nouveau`Document` objet.
+Dans cette étape, nous créons un nouveau`Document` objet.
 
 ## Étape 3 : Modifier les propriétés du thème
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- Dans cette étape, nous accédons au`Theme` objet de la`Document` objet pour obtenir le thème du document. Ensuite, nous pouvons modifier les propriétés du thème telles que les polices secondaires (`MinorFonts.Latin`) et les couleurs (`Colors.Hyperlink`).
+ Dans cette étape, nous accédons au`Theme` objet de la`Document`objet pour obtenir le thème du document. Ensuite, nous pouvons modifier les propriétés du thème telles que les polices secondaires (`MinorFonts.Latin`) et les couleurs (`Colors.Hyperlink`).
 
 ## Étape 4 : Enregistrez le document
 
@@ -67,7 +67,7 @@ Pour configurer l'environnement, vous devez vous assurer qu'Aspose.Words for .NE
 
 #### Comment accéder et modifier les propriétés du thème ?
 
- Pour accéder et modifier les propriétés du thème, vous pouvez utiliser le`Theme` objet de la`Document` classe. En accédant au`Theme`objet, vous pouvez modifier des propriétés telles que les polices secondaires (`MinorFonts.Latin`) et les couleurs (`Colors.Hyperlink`). Attribuez les valeurs souhaitées à ces propriétés pour personnaliser le thème de votre document.
+ Pour accéder et modifier les propriétés du thème, vous pouvez utiliser le`Theme` objet de la`Document` classe. En accédant au`Theme` objet, vous pouvez modifier des propriétés telles que les polices secondaires (`MinorFonts.Latin`) et les couleurs (`Colors.Hyperlink`). Attribuez les valeurs souhaitées à ces propriétés pour personnaliser le thème de votre document.
 
 #### Quels sont les avantages de définir les propriétés du thème dans un document Word ?
 
@@ -79,4 +79,4 @@ La définition des propriétés du thème dans un document Word vous permet de p
 
 #### Puis-je enregistrer le document modifié dans différents formats ?
 
-Oui, vous pouvez enregistrer le document modifié dans différents formats pris en charge par Aspose.Words for .NET. Le`Save` méthode du`Document` L'objet vous permet de spécifier le format du fichier de sortie, tel que DOCX, PDF, HTML, etc. Choisissez le format approprié en fonction de vos besoins.
+ Oui, vous pouvez enregistrer le document modifié dans différents formats pris en charge par Aspose.Words for .NET. Le`Save` méthode du`Document` L'objet vous permet de spécifier le format du fichier de sortie, tel que DOCX, PDF, HTML, etc. Choisissez le format approprié en fonction de vos besoins.

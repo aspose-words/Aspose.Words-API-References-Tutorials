@@ -2,13 +2,13 @@
 title: 使用 Aspose.Words Python 記錄表格樣式和格式
 linktitle: 文件表格樣式和格式
 second_title: Aspose.Words Python 文件管理 API
-description: 了解如何使用 Aspose.Words for Python 設定文件表格的樣式和格式。透過逐步指南和程式碼範例建立、自訂和匯出表。立即增強您的文件示範！
+description: 了解如何使用 Aspose.Words for Python 設定文件表格的樣式和格式。透過逐步指南和程式碼範例建立、自訂和匯出表格。立即增強您的文件示範！
 type: docs
 weight: 12
 url: /zh-hant/python-net/tables-and-formatting/document-table-styles-formatting/
 ---
 
-文件桌在以有組織且具有視覺吸引力的方式呈現資訊方面發揮著至關重要的作用。 Aspose.Words for Python 提供了一組功能強大的工具，使開發人員能夠有效地使用表格並自訂其樣式和格式。在本文中，我們將探討如何使用 Aspose.Words for Python API 操作和增強文件表。讓我們深入了解一下吧！
+文件桌在以有組織且具有視覺吸引力的方式呈現資訊方面發揮著至關重要的作用。 Aspose.Words for Python 提供了一組功能強大的工具，使開發人員能夠有效地使用表格並自訂其樣式和格式。在本文中，我們將探討如何使用 Aspose.Words for Python API 操作和增強文件表。讓我們深入了解吧！
 
 ## Python 版 Aspose.Words 入門
 

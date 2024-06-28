@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Langkah 4: Impor dan tambahkan paragraf
 
-Ulangi paragraf-paragraf dalam dokumen sumber dan impor setiap paragraf ke dalam dokumen tujuan menggunakan`importer`. Tambahkan node yang diimpor ke badan dokumen tujuan.
+ Ulangi paragraf-paragraf dalam dokumen sumber dan impor setiap paragraf ke dalam dokumen tujuan menggunakan`importer`. Tambahkan node yang diimpor ke badan dokumen tujuan.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ Ini menyelesaikan implementasi penambahan dokumen sumber ke dokumen tujuan sambi
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Pertahankan format daftar sumber saat mengimpor paragraf bernomor.
+	//Pertahankan format daftar sumber saat mengimpor paragraf bernomor.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

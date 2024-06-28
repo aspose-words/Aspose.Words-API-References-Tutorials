@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## चरण 2: स्रोत और गंतव्य दस्तावेज़ लोड करें
 
- इसके बाद, आपको Aspose.Words का उपयोग करके स्रोत और गंतव्य दस्तावेज़ों को लोड करना होगा`Document` कक्षा। में फ़ाइल नाम अपडेट करें`Document` आपके दस्तावेज़ के नाम के अनुसार कंस्ट्रक्टर।
+इसके बाद, आपको Aspose.Words का उपयोग करके स्रोत और गंतव्य दस्तावेज़ों को लोड करना होगा।`Document` कक्षा। में फ़ाइल नाम अपडेट करें`Document` आपके दस्तावेज़ के नाम के अनुसार कंस्ट्रक्टर।
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## चरण 4: स्रोत दस्तावेज़ के लिए "अगले के साथ रखें" पैराग्राफ फ़ॉर्मेटिंग सेट करें
 
-स्रोत दस्तावेज़ में अनुच्छेदों को एक साथ रखने के लिए, आप दस्तावेज़ में प्रत्येक अनुच्छेद को दोहरा सकते हैं और सेट कर सकते हैं`KeepWithNext`संपत्ति को`true`.
+ स्रोत दस्तावेज़ में अनुच्छेदों को एक साथ रखने के लिए, आप दस्तावेज़ में प्रत्येक अनुच्छेद को दोहरा सकते हैं और सेट कर सकते हैं`KeepWithNext`संपत्ति को`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

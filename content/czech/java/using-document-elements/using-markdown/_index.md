@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Zadejte seřazený seznam.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Zadejte pro text důraz na kurzívu.
+// Určete italský důraz pro text.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

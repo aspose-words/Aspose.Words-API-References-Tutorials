@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Étape 5 : Insérer le champ imbriqué
 
- Nous utilisons le logiciel DocumentBuilder`InsertField()`méthode pour insérer un champ imbriqué dans le pied de page.
+ Nous utilisons le logiciel DocumentBuilder`InsertField()` méthode pour insérer un champ imbriqué dans le pied de page.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");

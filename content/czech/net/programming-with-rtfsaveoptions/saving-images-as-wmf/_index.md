@@ -78,7 +78,7 @@ Nastavte své vývojové prostředí přidáním nezbytných odkazů a importem 
 
  Vložte dokument pomocí`Document` a zadáním cesty k souboru DOCX, který se má načíst.
 
- Nakonfigurujte možnosti ukládání RTF vytvořením souboru`RtfSaveOptions` objekt a nastavení`SaveImagesAsWmf`majetek do`true`. To říká Aspose.Words, aby uložil obrázky dokumentu jako 
+ Nakonfigurujte možnosti uložení RTF vytvořením souboru`RtfSaveOptions` objekt a nastavení`SaveImagesAsWmf`majetek do`true`. To říká Aspose.Words, aby uložil obrázky dokumentu jako 
 WMF při převodu do RTF.
 
  Uložte výsledný dokument ve formátu RTF pomocí`Save` a zadáním úplné cesty k výstupnímu souboru spolu se zadanými volbami uložení.

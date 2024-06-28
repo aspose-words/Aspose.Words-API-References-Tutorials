@@ -25,7 +25,7 @@ is_root: true
 - [Εργασία με τη λίστα](./net/working-with-list/)   
 - [Εργασία με Markdown](./net/working-with-markdown/)   
 - [Εργασία με το Node](./net/working-with-node/)   
-- [Εργασία με αναθεωρήσεις](./net/working-with-revisions/)   
+- [Εργασία με Κριτικές](./net/working-with-revisions/)   
 - [Εργασία με πλαίσια κειμένου](./net/working-with-textboxes/)   
 - [Διαίρεση εγγράφου](./net/split-document/)   
 - [Προσθήκη περιεχομένου με χρήση του Documentbuilder](./net/add-content-using-documentbuilder/)
@@ -44,7 +44,7 @@ is_root: true
 Αυτοί είναι σύνδεσμοι προς μερικούς χρήσιμους πόρους:
 - [Επεξεργασίας κειμένου](./java/word-processing/)  
 - [Επεξεργασία πίνακα](./java/table-processing/)
-- [Document Styling](./java/document-styling/)
+- [Στυλ εγγράφου](./java/document-styling/)
 - [Συγχώνευση εγγράφων](./java/document-merging/)
 - [Μετατροπή εγγράφων](./java/document-converting/)
 - [Εκτύπωση Εγγράφων](./java/document-printing/)
@@ -67,7 +67,7 @@ is_root: true
 
 Αυτοί είναι σύνδεσμοι προς μερικούς χρήσιμους πόρους:
 - [Δημιουργία Εγγράφου](./python-net/document-creation/)  
-- [Αυτοματοποίηση λέξεων](./python-net/word-automation/)
+- [Αυτοματισμός Λέξεων](./python-net/word-automation/)
 - [Νοημοσύνη εγγράφων](./python-net/document-intelligence/)
 - [Μετατροπή εγγράφου](./python-net/document-conversion/)
 - [Προστασία εγγράφων](./python-net/document-protection/)

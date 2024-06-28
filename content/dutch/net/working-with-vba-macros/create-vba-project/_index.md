@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## Stap 3: Maak een nieuwe module en specificeer de macrobroncode
+## Stap 3: Maak een nieuwe module en specificeer de macrobroncode.
  We zullen een nieuwe module maken door het`VbaModule` klasse en specificeert de macronaam, het type (procedurele module) en de broncode.
 
 ```csharp
@@ -94,7 +94,7 @@ A: Voordat u een VBA-project in een Word-document kunt maken, moet u praktische 
 
 #### Vraag: Hoe kan ik de documentmap in de code instellen?
 
- A: In de verstrekte code moet u deze vervangen`"YOUR DOCUMENTS DIRECTORY"` met het juiste pad naar de map waarin u uw Word-document met het VBA-project wilt opslaan.
+ A: In de verstrekte code moet u deze vervangen.`"YOUR DOCUMENTS DIRECTORY"` met het juiste pad naar de map waarin u uw Word-document met het VBA-project wilt opslaan.
 
 #### Vraag: Hoe specificeer ik de macrobroncode in de VBA-module?
 

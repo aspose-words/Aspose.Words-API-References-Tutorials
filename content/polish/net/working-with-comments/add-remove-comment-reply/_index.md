@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-comments/add-remove-comment-reply/
 ---
 
-W tym kompleksowym samouczku dowiesz się, jak dodawać i usuwać odpowiedzi na komentarze w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Po przeczytaniu tego przewodnika będziesz mógł zarządzać odpowiedziami na komentarze i dostosowywać je do swoich wymagań.
+tym kompleksowym samouczku dowiesz się, jak dodawać i usuwać odpowiedzi na komentarze w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Po przeczytaniu tego przewodnika będziesz mógł zarządzać odpowiedziami na komentarze i dostosowywać je do swoich wymagań.
 
 ## Warunki wstępne
 Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
@@ -35,7 +35,7 @@ Aby usunąć odpowiedź z komentarza, użyj metody RemoveReply i podaj żądany 
 comment.RemoveReply(comment.Replies[0]);
 ```
 
-Aby dodać nową odpowiedź do komentarza, użyj metody AddReply i podaj imię i nazwisko autora, inicjały autora, datę i godzinę oraz treść odpowiedzi:
+Aby dodać nową odpowiedź do komentarza, skorzystaj z metody AddReply i podaj imię i nazwisko autora, inicjały autora, datę i godzinę oraz treść odpowiedzi:
 
 ```csharp
 comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New reply");
@@ -77,7 +77,7 @@ Odpowiedzi na komentarze umożliwiają wspólne dyskusje i wyrażanie opinii w r
 
 #### P: Jak mogę usunąć komentarz w Aspose.Words dla .NET?
 
- O: Aby usunąć komentarz w Aspose.Words dla .NET, możesz użyć metody`Comment.Remove` metoda określająca`Comment` obiekt, który chcesz usunąć.
+O: Aby usunąć komentarz w Aspose.Words dla .NET, możesz użyć metody`Comment.Remove` metoda określająca`Comment` obiekt, który chcesz usunąć.
 
 #### P: Czy mogę odpowiedzieć na komentarz w Aspose.Words dla .NET?
 
@@ -85,7 +85,7 @@ Odpowiedzi na komentarze umożliwiają wspólne dyskusje i wyrażanie opinii w r
 
 #### P: Jak mogę uzyskać dostęp do istniejących komentarzy w Aspose.Words dla .NET?
 
- O: Możesz uzyskać dostęp do istniejących komentarzy w Aspose.Words dla .NET za pomocą`CommentCollection` własność`Document`obiekt. Umożliwi to przeglądanie wszystkich komentarzy znajdujących się w dokumencie.
+ O: Możesz uzyskać dostęp do istniejących komentarzy w Aspose.Words dla .NET za pomocą`CommentCollection` własność`Document` obiekt. Umożliwi to przeglądanie wszystkich komentarzy znajdujących się w dokumencie.
 
 #### P: Czy mogę edytować tekst komentarza w Aspose.Words dla .NET?
 

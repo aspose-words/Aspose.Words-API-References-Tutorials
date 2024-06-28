@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Steg 4: Placera DocumentBuilder
 
- Flytta`DocumentBuilder` till slutet av dokumentet med hjälp av`MoveToDocumentEnd` metod. Infoga en sidbrytning för att separera det befintliga innehållet från det infogade dokumentet.
+Flytta`DocumentBuilder` till slutet av dokumentet med hjälp av`MoveToDocumentEnd` metod. Infoga en sidbrytning för att separera det befintliga innehållet från det infogade dokumentet.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Steg 6: Spara det ändrade dokumentet
 
- Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
+Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Bước 3: Tạo dấu trang lồng nhau
 
-Chúng ta cũng có thể tạo các dấu trang lồng nhau bên trong dấu trang chính. Chúng tôi sử dụng tương tự`StartBookmark` Và`EndBookmark` phương pháp tạo và kết thúc dấu trang lồng nhau:
+ Chúng ta cũng có thể tạo các dấu trang lồng nhau bên trong dấu trang chính. Chúng tôi sử dụng tương tự`StartBookmark` Và`EndBookmark` phương pháp tạo và kết thúc dấu trang lồng nhau:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");

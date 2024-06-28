@@ -102,7 +102,7 @@ private Document getDocument() {
 /// </resumo>
 /// <param name="pageIndex">
 /// Índice baseado em 1 de uma página.
-///</param>
+/// </param>
 /// <retorna>
 /// O <ver cref="Documento"/>.
 /// </retorna>
@@ -114,10 +114,10 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 /// </resumo>
 //<param name="startIndex">
 /// Índice baseado em 1 da página inicial.
-///</param>
+/// </param>
 /// <param name="endIndex">
 /// Índice baseado em 1 da página final.
-///</param>
+/// </param>
 /// <retorna>
 /// O <ver cref="Documento"/>.
 /// </retorna>
@@ -159,7 +159,7 @@ public Document getDocument()
 /// </resumo>
 /// <param name="nó">
 /// O nó.
-///</param>
+/// </param>
 /// <retorna>
 ///Índice de página.
 /// </retorna>
@@ -173,7 +173,7 @@ public int getPage(Node node) throws Exception {
 /// </resumo>
 /// <param name="nó">
 /// O nó.
-///</param>
+/// </param>
 /// <retorna>
 ///Índice de página.
 /// </retorna>
@@ -187,7 +187,7 @@ public int getPageEnd(Node node) throws Exception {
 /// </resumo>
 /// <param name="nó">
 /// O nó.
-///</param>
+/// </param>
 /// <retorna>
 ///Índice de página.
 /// </retorna>
@@ -199,13 +199,13 @@ public int pageSpan(Node node) throws Exception {
 /// </resumo>
 /// <param name="startPage">
 /// A página inicial.
-///</param>
+/// </param>
 /// <param name="endPage">
 /// A página final.
-///</param>
+/// </param>
 /// <param name="nodeType">
 /// O tipo de nó.
-///</param>
+/// </param>
 /// <retorna>
 /// O <see cref="IList{T}"/>.
 /// </retorna>
@@ -258,17 +258,17 @@ public void splitNodesAcrossPages() throws Exception
 	collector.getDocument().accept(new SectionSplitter(this));
 }
 /// <resumo>
-/// Isso é chamado por <see cref="SectionSplitter"/> para atualizar os números das páginas dos nós divididos.
+/// Isso é chamado por <see cref="SectionSplitter"/> para atualizar os números de página dos nós divididos.
 /// </resumo>
 /// <param name="nó">
 /// O nó.
-///</param>
+/// </param>
 /// <param name="startPage">
 /// A página inicial.
-///</param>
+/// </param>
 /// <param name="endPage">
 /// A página final.
-///</param>
+/// </param>
 void addPageNumbersForNode(Node node, int startPage, int endPage)
 {
 	if (startPage > 0)

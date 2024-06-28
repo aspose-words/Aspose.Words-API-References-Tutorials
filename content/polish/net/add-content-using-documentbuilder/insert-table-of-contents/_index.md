@@ -2,39 +2,69 @@
 title: Wstaw spis treści do dokumentu programu Word
 linktitle: Wstaw spis treści do dokumentu programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić spis treści do dokumentów programu Word przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawić spis treści w programie Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać płynną nawigację po dokumentach.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-W tym obszernym samouczku dowiesz się, jak wstawić spis treści do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Pod koniec tego przewodnika będziesz w stanie wygenerować spis treści z odpowiednimi nagłówkami i numerami stron.
+## Wstęp
+W tym samouczku dowiesz się, jak efektywnie dodawać spis treści (TOC) do dokumentów programu Word przy użyciu Aspose.Words dla .NET. Ta funkcja jest niezbędna do organizowania i nawigacji w długich dokumentach, zwiększania czytelności i zapewniania szybkiego przeglądu sekcji dokumentu.
 
 ## Warunki wstępne
-Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim systemie.
 
-## Krok 1: Utwórz nowy dokument i narzędzie DocumentBuider
-Aby rozpocząć, utwórz nowy dokument za pomocą klasy Document i zainicjuj obiekt DocumentBuilder:
+Zanim zaczniesz, upewnij się, że masz następujące elementy:
+
+- Podstawowa znajomość C# i frameworku .NET.
+- Program Visual Studio zainstalowany na Twoim komputerze.
+-  Aspose.Words dla biblioteki .NET. Jeśli jeszcze go nie zainstalowałeś, możesz go pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, zaimportuj niezbędne przestrzenie nazw do swojego projektu C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+Podzielmy proces na jasne etapy:
+
+## Krok 1: Zainicjuj dokument Aspose.Words i narzędzie DocumentBuilder
+
+ Najpierw zainicjuj nowy plik Aspose.Words`Document` obiekt i a`DocumentBuilder` pracować z:
+
+```csharp
+// Zainicjuj dokument i narzędzie DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 2: Wstaw spis treści
-Następnie użyj metody InsertTableOfContents klasy DocumentBuilder, aby wstawić spis treści. Określ wymagane opcje formatowania w ramach metody:
+
+ Teraz wstaw spis treści za pomocą`InsertTableOfContents` metoda:
 
 ```csharp
+// Wstaw spis treści
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## Krok 3: Dodaj treść dokumentu
-Po wstawieniu spisu treści należy dodać rzeczywistą treść dokumentu. Ustaw odpowiednie style nagłówków za pomocą StyleIdentifier:
+## Krok 3: Rozpocznij zawartość dokumentu na nowej stronie
+
+Aby zapewnić prawidłowe formatowanie, należy rozpocząć właściwą treść dokumentu na nowej stronie:
 
 ```csharp
+// Wstaw podział strony
 builder.InsertBreak(BreakType.PageBreak);
+```
 
+## Krok 4: Zbuduj swój dokument za pomocą nagłówków
+
+Uporządkuj zawartość dokumentu, używając odpowiednich stylów nagłówków:
+
+```csharp
+// Ustaw style nagłówków
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 builder.Writeln("Heading 1");
 
@@ -59,96 +89,42 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## Krok 4: Zaktualizuj spis treści
-Nowo wstawiony spis treści będzie początkowo pusty. Aby go wypełnić, zaktualizuj pola w dokumencie:
+## Krok 5: Zaktualizuj i wypełnij spis treści
+
+Zaktualizuj spis treści, aby odzwierciedlał strukturę dokumentu:
 
 ```csharp
+// Zaktualizuj pola spisu treści
 doc.UpdateFields();
 ```
 
-## Krok 5: Zapisz dokument
-Po wstawieniu spisu treści i aktualizacji pól należy zapisać dokument do pliku korzystając z metody Save klasy Document:
+## Krok 6: Zapisz dokument
+
+Na koniec zapisz dokument w określonym katalogu:
 
 ```csharp
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-```
-
-### Przykładowy kod źródłowy do wstawiania spisu treści przy użyciu Aspose.Words dla .NET
-Oto kompletny kod źródłowy do wstawiania spisu treści przy użyciu Aspose.Words dla .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-// Zainicjuj DocumentBuilder za pomocą obiektu Document
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Wstaw spis treścia
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-
-// Rozpocznij właściwą treść dokumentu na drugiej stronie.
-builder.InsertBreak(BreakType.PageBreak);
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
-builder.Writeln("Heading 1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 1.1");
-builder.Writeln("Heading 1.2");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
-builder.Writeln("Heading 2");
-builder.Writeln("Heading 3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 3.1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
-
-builder.Writeln("Heading 3.1.1");
-builder.Writeln("Heading 3.1.2");
-builder.Writeln("Heading 3.1.3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 3.2");
-builder.Writeln("Heading 3.3");
-
-
-// Nowo wstawiony spis treści będzie początkowo pusty.
-// Należy go wypełnić poprzez aktualizację pól w dokumencie.
-doc.UpdateFields();
-
-
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
+// Zapisz dokument
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
 ## Wniosek
 
-Gratulacje! Pomyślnie nauczyłeś się, jak wstawić spis treści do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wykorzystując dostarczony kod źródłowy, możesz teraz wygenerować spis treści z odpowiednimi nagłówkami i numerami stron dla swoich dokumentów.
+Dodanie spisu treści przy użyciu Aspose.Words dla .NET jest proste i znacznie zwiększa użyteczność dokumentów. Wykonując poniższe kroki, możesz efektywnie organizować i poruszać się po złożonych dokumentach.
 
-### Często zadawane pytania dotyczące wstawiania spisu treści w dokumencie programu Word
+## Często zadawane pytania
 
-#### P: Czy mogę dostosować wygląd spisu treści?
+### Czy mogę dostosować wygląd spisu treści?
+Tak, możesz dostosować wygląd i zachowanie spisu treści za pomocą Aspose.Words dla interfejsów API .NET.
 
- O: Tak, możesz dostosować wygląd spisu treści, modyfikując opcje formatowania określone w pliku`InsertTableOfContents` metoda. Parametry umożliwiają kontrolowanie numerów stron, wcięć i innych stylów.
+### Czy Aspose.Words obsługuje automatyczne aktualizowanie pól?
+Tak, Aspose.Words umożliwia dynamiczną aktualizację pól takich jak spis treści w oparciu o zmiany w dokumencie.
 
-#### P: Co się stanie, jeśli chcę uwzględnić w spisie treści określone poziomy nagłówków?
+### Czy mogę wygenerować wiele spisów treści w jednym dokumencie?
+Aspose.Words obsługuje generowanie wielu spisów treści z różnymi ustawieniami w jednym dokumencie.
 
- O: Możesz określić żądane poziomy nagłówków, które mają być uwzględnione w spisie treści, dostosowując wartość w obrębie`InsertTableOfContents` metoda. Na przykład za pomocą`"\\o \"1-3\""` będzie obejmować poziomy nagłówków od 1 do 3.
+### Czy Aspose.Words jest kompatybilny z różnymi wersjami Microsoft Word?
+Tak, Aspose.Words zapewnia kompatybilność z różnymi wersjami formatów Microsoft Word.
 
-#### P: Czy mogę automatycznie zaktualizować spis treści, jeśli dokonam zmian w treści dokumentu?
-
- O: Tak, możesz automatycznie zaktualizować spis treści, wywołując metodę`UpdateFields` metoda na dokumencie. Dzięki temu wszelkie zmiany dokonane w treści dokumentu, takie jak dodanie lub usunięcie nagłówków, zostaną odzwierciedlone w spisie treści.
-
-#### P: Jak mogę zmienić styl poziomów nagłówków w spisie treści?
-
- O: Możesz stylizować poziomy nagłówków w różny sposób, używając różnych stylów akapitów dla każdego poziomu nagłówków. Przypisując różne`StyleIdentifier` wartości do`ParagraphFormat` z`DocumentBuilder`, możesz utworzyć odrębne style dla każdego poziomu nagłówka.
-
-#### P: Czy można dodać dodatkowe formatowanie nagłówków w spisie treści?
-
- O: Tak, możesz dodać dodatkowe formatowanie do nagłówków spisu treści, takie jak style czcionek, kolory i inne właściwości. Dostosowując`Font` właściwości`DocumentBuilder`, możesz zastosować niestandardowe formatowanie nagłówków.
+### Gdzie mogę znaleźć dalszą pomoc i wsparcie dla Aspose.Words?
+Aby uzyskać dodatkową pomoc, odwiedź stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8) lub sprawdź[oficjalna dokumentacja](https://reference.aspose.com/words/net/).

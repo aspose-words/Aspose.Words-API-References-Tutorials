@@ -87,7 +87,7 @@ Evet, Aspose.Words for Java, DOCX, DOC, PDF ve daha fazlasını içeren çeşitl
 
 ### Belgeleri programlı olarak yazdırmak için herhangi bir özel izne ihtiyacım var mı?
 
-Aspose.Words for Java kullanarak belgeleri programlı olarak yazdırmak, sisteminizden yazdırmak için genellikle gerekenlerin ötesinde özel izinler gerektirmez. Uygulamanızın gerekli yazıcı erişim haklarına sahip olduğundan emin olun.
+Aspose.Words for Java'yı kullanarak belgeleri programlı olarak yazdırmak, sisteminizden yazdırmak için genellikle gerekenlerin ötesinde özel izinler gerektirmez. Uygulamanızın gerekli yazıcı erişim haklarına sahip olduğundan emin olun.
 
 ### Aspose.Words for Java için ek kaynakları ve belgeleri nerede bulabilirim?
 

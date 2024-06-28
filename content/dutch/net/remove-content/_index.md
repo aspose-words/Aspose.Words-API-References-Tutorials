@@ -18,5 +18,5 @@ Of u nu Word-documenten moet manipuleren, creëren, converteren of genereren, As
 | --- | --- |
 | [Verwijder pagina-einden in Word-document](./remove-page-breaks/) | Leer hoe u pagina-einden in een Word-document verwijdert met behulp van de Aspose.Words-bibliotheek voor .NET. Volg onze stapsgewijze handleiding voor een naadloze lay-out. |
 | [Sectie-einden verwijderen in Word-document](./remove-section-breaks/) | Leer hoe u sectie-einden in een Word-document verwijdert met behulp van de Aspose.Words-bibliotheek voor .NET. Elimineer effectief sectie-einden die de opmaak van uw document kunnen verstoren.|
-| [Voetteksten verwijderen uit Word-document](./remove-footers/) | Leer hoe u eenvoudig voetteksten in Word-documenten kunt verwijderen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor een efficiënte verwerking van DOCX-bestanden. |
+| [Voetteksten verwijderen uit Word-document](./remove-footers/) | Leer hoe u eenvoudig voetteksten in Word-documenten kunt verwijderen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor een efficiënte omgang met DOCX-bestanden. |
 | [Verwijder de inhoudsopgave in een Word-document](./remove-table-of-contents/) | Leer hoe u de inhoudsopgave in een Word-document verwijdert met Aspose.Words voor .NET. |

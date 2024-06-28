@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## ステップ 4: 文書に改ページを挿入する
 
-別のメタキャラクターの使用を説明するために、次のコマンドを使用して文書に改ページを挿入します。`InsertBreak`を使用したメソッド`BreakType.PageBreak`パラメータ。まずカーソルを`DocumentBuilder`文書の最後に改ページと新しいテキスト行を挿入します。
+別のメタキャラクターの使用を説明するために、次のコマンドを使用して文書に改ページを挿入します。`InsertBreak`を使用したメソッド`BreakType.PageBreak`パラメーター。まずカーソルを`DocumentBuilder`文書の最後に改ページと新しいテキスト行を挿入します。
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### Q: Aspose.Words for .NET を使用してドキュメントに改ページを挿入するにはどうすればよいですか?
 
-A: 別のメタキャラクターの使用を説明するために、次のコマンドを使用して文書に改ページを挿入します。`InsertBreak`を使用したメソッド`BreakType.PageBreak`パラメータ。まずカーソルを`DocumentBuilder`文書の最後に改ページと新しいテキスト行を挿入します。
+A: 別のメタキャラクターの使用を説明するために、次のコマンドを使用して文書に改ページを挿入します。`InsertBreak`を使用したメソッド`BreakType.PageBreak`パラメーター。まずカーソルを`DocumentBuilder`文書の最後に改ページと新しいテキスト行を挿入します。
 
 ```csharp
 builder. MoveToDocumentEnd();

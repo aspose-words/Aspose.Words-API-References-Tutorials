@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Βήμα 5: Αποθηκεύστε το τροποποιημένο έγγραφο
 
- Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
+Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο προορισμού χρησιμοποιώντας το`Save` μέθοδος του`Document` αντικείμενο.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Ρυθμίστε το συνημμένο έγγραφο ώστε να ξεκινά από μια νέα σελίδα.
+	// Ρυθμίστε το συνημμένο έγγραφο ώστε να ξεκινά από μια νέα σελίδα.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Προσθέστε το έγγραφο προέλευσης χρησιμοποιώντας τα πρωτότυπα στυλ που βρίσκονται στο έγγραφο προέλευσης.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

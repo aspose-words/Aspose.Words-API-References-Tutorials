@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Conclusión
 
-En esta guía, explicamos cómo usar Aspose.Words para .NET para cambiar el estilo de un nivel de la tabla de contenido de un documento de Word usando el código fuente C# proporcionado. Si sigue los pasos proporcionados, puede personalizar fácilmente el estilo de la tabla de contenido de sus documentos de Word en su aplicación C#. Aspose.Words ofrece una tremenda flexibilidad y potencia para trabajar con los estilos y formatos de sus documentos, permitiéndole crear documentos de Word atractivos y profesionales.
+En esta guía, explicamos cómo usar Aspose.Words para .NET para cambiar el estilo de un nivel de la tabla de contenido de un documento de Word usando el código fuente C# proporcionado. Si sigue los pasos proporcionados, puede personalizar fácilmente el estilo de la tabla de contenido de sus documentos de Word en su aplicación C#. Aspose.Words ofrece una enorme flexibilidad y potencia para trabajar con los estilos y formatos de sus documentos, permitiéndole crear documentos de Word atractivos y profesionales.
 
 ### Preguntas frecuentes para cambiar el estilo del índice en un documento de Word
 
@@ -85,7 +85,7 @@ Este fragmento de código crea un documento de Word nuevo y vacío.
 
 #### P: ¿Cómo puedo cambiar el estilo de un nivel específico en la tabla de contenido usando Aspose.Words para .NET?
 
- R: Una vez que tenga un documento cargado, puede modificar el estilo de un nivel específico en la tabla de contenido accediendo a los estilos del documento y realizando los cambios necesarios. En Aspose.Words para .NET, puede utilizar el`Styles` propiedad de la`Document` clase para acceder a los estilos del documento y luego modificar el estilo deseado usando sus propiedades. Por ejemplo, para cambiar el estilo del primer nivel de la tabla de contenido a negrita, puedes usar el siguiente código:
+ R: Una vez que haya cargado un documento, puede modificar el estilo de un nivel específico en la tabla de contenido accediendo a los estilos del documento y realizando los cambios necesarios. En Aspose.Words para .NET, puede utilizar el`Styles` propiedad de la`Document` clase para acceder a los estilos del documento y luego modificar el estilo deseado usando sus propiedades. Por ejemplo, para cambiar el estilo del primer nivel de la tabla de contenido a negrita, puedes usar el siguiente código:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
@@ -113,7 +113,7 @@ R: Sí, además de cambiar el estilo, puede aplicar varios cambios de formato a 
 
 #### P: ¿Cómo puedo especificar un estilo personalizado para un nivel específico en la tabla de contenido usando Aspose.Words para .NET?
 
- R: Para especificar un estilo personalizado para un nivel específico en la tabla de contenido usando Aspose.Words para .NET, puede crear un nuevo`Style` objeto, configure sus propiedades de acuerdo con el estilo deseado y asígnelo al nivel correspondiente de la tabla de contenido usando el`Styles` propiedad de la`Document` clase. Esto le permite definir un estilo personalizado para un nivel específico según sus requisitos.
+ R: Para especificar un estilo personalizado para un nivel específico en la tabla de contenido usando Aspose.Words para .NET, puede crear un nuevo`Style` objeto, configure sus propiedades de acuerdo con el estilo que desee y asígnelo al nivel correspondiente de la tabla de contenido usando el`Styles` propiedad de la`Document` clase. Esto le permite definir un estilo personalizado para un nivel específico según sus requisitos.
 
 #### P: ¿Puedo cambiar el estilo de la tabla de contenido en un documento de Word existente usando Aspose.Words para .NET?
 

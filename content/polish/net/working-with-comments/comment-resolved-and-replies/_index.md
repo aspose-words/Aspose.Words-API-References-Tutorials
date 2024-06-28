@@ -8,14 +8,14 @@ weight: 10
 url: /pl/net/working-with-comments/comment-resolved-and-replies/
 ---
 
-tym kompleksowym samouczku dowiesz się, jak rozwiązywać komentarze i odpowiedzi na nie w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Pod koniec tego przewodnika będziesz mógł zarządzać rozstrzyganiem komentarzy oraz aktualizować status komentarzy i odpowiedzi na nie.
+W tym kompleksowym samouczku dowiesz się, jak rozwiązywać komentarze i odpowiedzi na nie w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Pod koniec tego przewodnika będziesz mógł zarządzać rozstrzyganiem komentarzy oraz aktualizować status komentarzy i odpowiedzi na nie.
 
 ## Warunki wstępne
 Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
 - Biblioteka Aspose.Words dla .NET zainstalowana w Twoim systemie.
 
 ## Krok 1: Załaduj dokument i uzyskaj dostęp do komentarzy
-Aby rozpocząć, załaduj dokument zawierający komentarze za pomocą klasy Document i uzyskaj dostęp do kolekcji komentarzy:
+Aby rozpocząć, załaduj dokument zawierający komentarze przy użyciu klasy Document i uzyskaj dostęp do kolekcji komentarzy:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,7 +39,7 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-W powyższym kodzie uzyskujemy dostęp do komentarza nadrzędnego i przeglądamy zawarte w nim odpowiedzi. Możemy pobrać identyfikator komentarza nadrzędnego i status jego rozwiązania. Następnie aktualizujemy znacznik „Gotowe” w każdej odpowiedzi na komentarz, aby wskazać rozwiązanie.
+powyższym kodzie uzyskujemy dostęp do komentarza nadrzędnego i przeglądamy zawarte w nim odpowiedzi. Możemy pobrać identyfikator komentarza nadrzędnego i status jego rozwiązania. Następnie aktualizujemy znacznik „Gotowe” w każdej odpowiedzi na komentarz, aby wskazać rozwiązanie.
 
 ## Krok 3: Zapisz dokument
 Po rozwiązaniu komentarzy i zaktualizowaniu ich statusu zapisz zmodyfikowany dokument do pliku, korzystając z metody Save klasy Document:
@@ -84,7 +84,7 @@ Rozwiązywanie komentarzy pomaga w śledzeniu i zarządzaniu opiniami w dokumenc
 
 #### P: Jak dodać odpowiedź na rozwiązany komentarz w Aspose.Words dla .NET?
 
- O: Chociaż rozwiązane komentarze są domyślnie ukryte w dokumencie końcowym, nadal możesz dodać odpowiedź do rozwiązanego komentarza za pomocą przycisku`Comment.AddReply` metoda określająca tekst odpowiedzi i miejsce, w którym chcesz go dodać.
+ O: Chociaż rozwiązane komentarze są domyślnie ukryte w dokumencie końcowym, nadal możesz dodać odpowiedź do rozwiązanego komentarza za pomocą przycisku`Comment.AddReply`metoda określająca tekst odpowiedzi i miejsce, w którym chcesz go dodać.
 
 #### P: Jak wyświetlić rozwiązane komentarze w Aspose.Words dla .NET?
 

@@ -67,7 +67,7 @@ Trả lời: Để tải cài đặt thay thế phông chữ Noto trong tài li�
 
 #### Câu hỏi: Việc sử dụng phông chữ Noto để thay thế trong tài liệu Word có đảm bảo hiển thị văn bản nhất quán không?
 
-Đáp: Có, việc sử dụng phông chữ Noto để thay thế trong tài liệu Word sẽ đảm bảo hiển thị văn bản nhất quán. Phông chữ Noto được thiết kế để hỗ trợ nhiều ngôn ngữ và ký tự, giúp duy trì giao diện nhất quán ngay cả khi không có sẵn phông chữ được yêu cầu.
+Đáp: Có, việc sử dụng phông chữ Noto để thay thế trong tài liệu Word sẽ đảm bảo hiển thị văn bản nhất quán. Phông chữ Noto được thiết kế để hỗ trợ nhiều ngôn ngữ và ký tự, giúp duy trì giao diện nhất quán ngay cả khi không có phông chữ yêu cầu.
 
 #### Hỏi: Phông chữ Noto có miễn phí không?
 
@@ -75,4 +75,4 @@ Trả lời: Có, phông chữ Noto là nguồn mở và miễn phí. Chúng có
 
 #### Hỏi: Việc sử dụng phông chữ Noto có làm cho tài liệu Word của tôi dễ truy nhập hơn không?
 
-Đáp: Có, việc sử dụng phông chữ Noto để thay thế trong tài liệu Word sẽ giúp tài liệu của bạn dễ tiếp cận hơn. Phông chữ Noto hỗ trợ nhiều ngôn ngữ và ký tự, đảm bảo người dùng xem tài liệu của bạn bằng các ngôn ngữ khác nhau dễ đọc và dễ hiểu hơn.
+Đáp: Có, việc sử dụng phông chữ Noto để thay thế trong tài liệu Word sẽ giúp tài liệu của bạn dễ tiếp cận hơn. Phông chữ Noto hỗ trợ nhiều ngôn ngữ và ký tự, đảm bảo khả năng đọc và hiểu tốt hơn cho người dùng xem tài liệu của bạn bằng các ngôn ngữ khác nhau.

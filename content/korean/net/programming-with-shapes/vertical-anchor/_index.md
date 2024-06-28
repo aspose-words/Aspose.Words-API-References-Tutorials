@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3단계: 도형 삽입 및 구성
-다음을 사용하여 문서에 도형을 삽입합니다.`InsertShape` 의 방법`DocumentBuilder` 물체. 모양에 대해 원하는 크기를 설정합니다.
+ 다음을 사용하여 문서에 도형을 삽입합니다.`InsertShape` 의 방법`DocumentBuilder` 물체. 모양에 대해 원하는 크기를 설정합니다.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## 6단계: 문서 저장
- 다음을 사용하여 문서를 지정된 디렉터리에 저장합니다.`Save` 방법. 적절한 파일 확장자와 함께 원하는 파일 이름을 제공하십시오. 이 예에서는 문서를 "WorkingWithShapes.VerticalAnchor.docx"로 저장합니다.
+ 다음을 사용하여 문서를 지정된 디렉터리에 저장합니다.`Save`방법. 적절한 파일 확장자와 함께 원하는 파일 이름을 제공하십시오. 이 예에서는 문서를 "WorkingWithShapes.VerticalAnchor.docx"로 저장합니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Steg 3: Infoga former
- Använd`InsertShape` metod för`DocumentBuilder` objekt för att infoga former i dokumentet. Ange formtyp, relativa horisontella och vertikala positioner, sidmått, storlek och omslagstyp. Du kan också ställa in formernas rotationsvinkel om så önskas.
+ Använd`InsertShape` metod för`DocumentBuilder`objekt för att infoga former i dokumentet. Ange formtyp, relativa horisontella och vertikala positioner, sidmått, storlek och omslagstyp. Du kan också ställa in formernas rotationsvinkel om så önskas.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

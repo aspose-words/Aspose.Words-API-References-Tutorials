@@ -1,6 +1,6 @@
 ---
-title: Aufzählungsliste
-linktitle: Aufzählungsliste
+title: Liste mit Aufzählungszeichen
+linktitle: Liste mit Aufzählungszeichen
 second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET eine Aufzählungsliste erstellen.
 type: docs
@@ -26,9 +26,9 @@ DocumentBuilder builder = new DocumentBuilder();
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Schritt 3: Anpassen des Aufzählungsformats
+## Schritt 3: Anpassen des Bullet-Formats
 
-Wir können das Aufzählungsformat anpassen, indem wir auf die Eigenschaften von zugreifen`ListFormat.List.ListLevels[0]`. In diesem Beispiel verwenden wir den Bindestrich „-“ als Aufzählungszeichen.
+ Wir können das Aufzählungsformat anpassen, indem wir auf die Eigenschaften von zugreifen`ListFormat.List.ListLevels[0]`. In diesem Beispiel verwenden wir den Bindestrich „-“ als Aufzählungszeichen.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

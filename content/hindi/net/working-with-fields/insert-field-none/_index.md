@@ -2,7 +2,7 @@
 title: फ़ील्ड कोई नहीं डालें
 linktitle: फ़ील्ड कोई नहीं डालें
 second_title: Aspose.Words दस्तावेज़ प्रोसेसिंग एपीआई
-description: सीखें कि कैसे अपने दस्तावेज़ों में AUCUN को शामिल करें, Word और Aspose.Words को .NET में बदलें।
+description: वर्ड और Aspose.Words .NET में AUCUN के साथ दस्तावेज़ बनाना सीखें।
 type: docs
 weight: 10
 url: /hi/net/working-with-fields/insert-field-none/

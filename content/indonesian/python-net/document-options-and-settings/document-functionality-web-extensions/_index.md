@@ -10,7 +10,7 @@ url: /id/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## Perkenalan
 
-Ekstensi web telah menjadi bagian integral dari sistem manajemen dokumen modern. Mereka memungkinkan pengembang untuk meningkatkan fungsionalitas dokumen dengan mengintegrasikan komponen berbasis web secara mulus. Aspose.Words, API manipulasi dokumen yang kuat untuk Python, memberikan solusi komprehensif untuk memasukkan ekstensi web ke dalam dokumen Anda.
+Ekstensi web telah menjadi bagian integral dari sistem manajemen dokumen modern. Mereka memungkinkan pengembang untuk meningkatkan fungsionalitas dokumen dengan mengintegrasikan komponen berbasis web secara mulus. Aspose.Words, API manipulasi dokumen yang kuat untuk Python, memberikan solusi komprehensif untuk mengintegrasikan ekstensi web ke dalam dokumen Anda.
 
 ## Prasyarat
 

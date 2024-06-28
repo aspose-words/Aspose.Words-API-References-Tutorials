@@ -76,7 +76,7 @@ customStyle.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 Tento vlastní styl pak můžete použít na jakoukoli část dokumentu.
 
 ### Efekty písma
-Experimentujte s efekty písma, aby váš text vynikl. Zde je příklad použití efektu stínu:
+Experimentujte s efekty písma, aby váš text vynikl. Zde je příklad použití stínového efektu:
 
 ```java
 // Použijte na písmo efekt stínu

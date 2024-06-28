@@ -81,7 +81,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 
 #### Q：程式碼中如何設定文檔目錄？
 
- A：在提供的代碼中，您需要替換`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 專案的 Word 文件所在目錄的適當路徑。
+ A：在提供的代碼中，需要替換。`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 專案的 Word 文件所在目錄的適當路徑。
 
 #### Q：如何使用複製的 VBA 模組保存目標文件？
 

@@ -17,7 +17,7 @@ Antes de começarmos, certifique-se de ter os seguintes requisitos em vigor:
 - Biblioteca Aspose.Words para .NET instalada. Você pode baixá-lo usando o gerenciador de pacotes NuGet para instalá-lo.
 - Um caminho do diretório do documento onde o documento de saída será salvo.
 
-## Passo 2: Crie um novo documento e insira um gráfico
+## Passo 2: Crie um novo documento e insira um gráfico.
 
  Primeiro, vamos criar um novo`Document` objeto e um`DocumentBuilder` para construir o documento.
 
@@ -108,7 +108,7 @@ Neste tutorial, você aprendeu como definir opções padrão para rótulos de da
 Aspose.Words for .NET é uma biblioteca que permite aos desenvolvedores criar, manipular e salvar documentos do Word programaticamente usando aplicativos .NET. Ele fornece uma ampla gama de recursos para processamento de texto com elementos de documentos, incluindo gráficos.
 
 #### Q2. Como posso instalar o Aspose.Words para .NET?
-Você pode instalar o Aspose.Words for .NET baixando-o usando o gerenciador de pacotes NuGet no Visual Studio. Basta pesquisar “Aspose.Words” no gerenciador de pacotes NuGet e instalá-lo em seu projeto.
+Você pode instalar o Aspose.Words for .NET baixando-o usando o gerenciador de pacotes NuGet no Visual Studio. Basta pesquisar “Apose.Words” no gerenciador de pacotes NuGet e instalá-lo em seu projeto.
 
 #### Q3. Posso personalizar outros aspectos do gráfico usando Aspose.Words for .NET?
 Sim, Aspose.Words for .NET permite personalizar vários aspectos de um gráfico, como tipo de gráfico, rótulos de eixo, legenda, área de plotagem e muito mais. Você pode acessar e modificar diferentes propriedades do objeto gráfico para obter a aparência e o comportamento desejados.

@@ -55,7 +55,7 @@ format.setHangingPunctuation(false);
 doc.save("AsianTypographyLineBreakGroup.docx");
 ```
 
-## Форматирование абзацев
+## Форматирование абзаца
 
 Aspose.Words для Java позволяет легко форматировать абзацы. Посмотрите этот пример:
 
@@ -107,7 +107,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 BorderCollection borders = builder.getParagraphFormat().getBorders();
 // Настройте границы здесь...
 Shading shading = builder.getParagraphFormat().getShading();
-// Настройте затенение здесь...
+// Настройте оттенок здесь...
 builder.write("I'm a formatted paragraph with double border and nice shading.");
 doc.save("ApplyBordersAndShadingToParagraph.docx");
 ```

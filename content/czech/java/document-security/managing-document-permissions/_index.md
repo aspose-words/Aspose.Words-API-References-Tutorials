@@ -90,7 +90,7 @@ Aspose.Words for Java můžete použít ke kontrole oprávnění dokumentu prozk
 
 ## Mohu automatizovat správu oprávnění k dokumentům?
 
-Absolutně! Aspose.Words for Java můžete integrovat do svých aplikací a zautomatizovat tak správu oprávnění k dokumentům, díky čemuž se stane bezproblémovou součástí vašeho pracovního toku dokumentů.
+Absolutně! Aspose.Words for Java můžete integrovat do svých aplikací a automatizovat tak správu oprávnění k dokumentům, díky čemuž se stane bezproblémovou součástí vašeho pracovního toku dokumentů.
 
 ## Co když zapomenu heslo dokumentu?
 

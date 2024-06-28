@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-Kode ini menggunakan kombinasi metode LINQ untuk memfilter bidang di paragraf terakhir dokumen dan kemudian mengubahnya menjadi teks biasa dengan memanggil`Unlink()` metode.
+ Kode ini menggunakan kombinasi metode LINQ untuk memfilter bidang di paragraf terakhir dokumen dan kemudian mengubahnya menjadi teks biasa dengan memanggil`Unlink()` metode.
 
 ## Langkah 4: Menyimpan dokumen yang dimodifikasi
 
@@ -93,4 +93,4 @@ J: Aspose.Words mendukung berbagai format konversi dalam bidang, termasuk format
 
 #### T: Bagaimana cara memperbarui bidang konversi di dokumen Word dengan Aspose.Words?
 
-J: Untuk memperbarui bidang konversi di dokumen Word dengan Aspose.Words, Anda dapat menggunakan metode UpdateFields. Metode ini mengulang dokumen dan memperbarui semua bidang, termasuk bidang konversi, menghitung ulang nilai berdasarkan data saat ini.
+J: Untuk memperbarui bidang konversi di dokumen Word dengan Aspose.Words, Anda dapat menggunakan metode UpdateFields. Metode ini menelusuri dokumen dan memperbarui semua bidang, termasuk bidang konversi, menghitung ulang nilai berdasarkan data saat ini.

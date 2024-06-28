@@ -31,7 +31,7 @@ När dokumentet har skapats kan du komma åt dokumentstilar och ändra stilen so
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-det här exemplet använder vi egenskapen Styles för klassen Document för att komma åt dokumentstilar. Därefter använder vi stilidentifieraren StyleIdentifier.Toc1 för att komma åt stilen som används för den första nivån i innehållsförteckningen. Slutligen ändrar vi egenskapen Font.Bold för stilen för att göra den fet.
+I det här exemplet använder vi egenskapen Styles för klassen Document för att komma åt dokumentstilar. Därefter använder vi stilidentifieraren StyleIdentifier.Toc1 för att komma åt stilen som används för den första nivån i innehållsförteckningen. Slutligen ändrar vi egenskapen Font.Bold för stilen för att göra den fet.
 
 ## Spara ändrat dokument
 
@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Slutsats
 
-den här guiden förklarade vi hur man använder Aspose.Words för .NET för att ändra stilen på en nivå i innehållsförteckningen i ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt anpassa stilen på innehållsförteckningen i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder enorm flexibilitet och kraft att arbeta med stilarna och formateringen av dina dokument, vilket gör att du kan skapa attraktiva och professionella Word-dokument.
+I den här guiden förklarade vi hur man använder Aspose.Words för .NET för att ändra stilen på en nivå i innehållsförteckningen i ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt anpassa stilen på innehållsförteckningen i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder enorm flexibilitet och kraft att arbeta med stilarna och formateringen av dina dokument, vilket gör att du kan skapa attraktiva och professionella Word-dokument.
 
 ### Vanliga frågor för att ändra toc-stil i word-dokument
 

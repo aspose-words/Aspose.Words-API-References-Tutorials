@@ -49,7 +49,7 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprech
 
 #### Wie konvertiert man PDF in JPEG?
 
-Um eine PDF-Datei in JPEG zu konvertieren, können Sie verschiedene Softwaretools oder Bibliotheken verwenden, die diese Funktionalität bieten. Aspose.Words für .NET ist eine zuverlässige Option für diese Konvertierung. Mit der Bibliotheks-API können Sie die PDF-Datei laden und im JPEG-Format speichern.
+Um eine PDF-Datei in JPEG zu konvertieren, können Sie verschiedene Softwaretools oder Bibliotheken verwenden, die diese Funktionalität bereitstellen. Aspose.Words für .NET ist eine zuverlässige Option für diese Konvertierung. Mit der Bibliotheks-API können Sie die PDF-Datei laden und im JPEG-Format speichern.
 
 #### Wie lege ich die Auflösung und Qualität von JPEG-Bildern fest?
 
@@ -57,8 +57,8 @@ Beim Konvertieren von PDF in JPEG können Sie die Auflösung und Qualität des g
 
 #### Welche Einschränkungen gibt es beim Konvertierungsprozess?
 
-Die Einschränkungen des Konvertierungsprozesses hängen von dem spezifischen Tool oder der Bibliothek ab, die Sie verwenden. Für einige Tools gelten möglicherweise Einschränkungen im Zusammenhang mit komplexem Layout, bestimmten Schriftarten oder interaktiven Elementen im PDF. Um bei der Konvertierung fundierte Entscheidungen treffen zu können, ist es wichtig, die Funktionen und Einschränkungen des gewählten Tools vollständig zu verstehen.
+Die Einschränkungen des Konvertierungsprozesses hängen von dem spezifischen Tool oder der Bibliothek ab, die Sie verwenden. Für einige Tools gelten möglicherweise Einschränkungen hinsichtlich komplexer Layouts, bestimmter Schriftarten oder interaktiver Elemente im PDF. Um bei der Konvertierung fundierte Entscheidungen treffen zu können, ist es wichtig, die Funktionen und Einschränkungen des gewählten Tools vollständig zu verstehen.
 
 #### Ist Aspose ein zuverlässiges Tool zum Konvertieren von PDF in JPEG?
 
-Ja, Aspose.Words für .NET ist ein zuverlässiges Tool zum Konvertieren von PDF in JPEG. Aufgrund seiner Qualität, Genauigkeit und fortschrittlichen Funktionen wird es in der Industrie häufig eingesetzt. Das Tool bietet umfassende Dokumentation, regelmäßige Updates und engagierten technischen Support, was es zu einer empfohlenen Wahl für Dokumentkonvertierungsaufgaben macht.
+Ja, Aspose.Words für .NET ist ein zuverlässiges Tool zum Konvertieren von PDF in JPEG. Aufgrund seiner Qualität, Genauigkeit und erweiterten Funktionen wird es in der Industrie häufig eingesetzt. Das Tool bietet umfassende Dokumentation, regelmäßige Updates und engagierten technischen Support, was es zu einer empfohlenen Wahl für Dokumentkonvertierungsaufgaben macht.

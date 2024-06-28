@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-W tym przykładzie tworzymy nowy dokument i za pomocą narzędzia DocumentBuilder dodajemy tekst i tworzymy listę z trzema poziomami wcięć. Dodaliśmy trzy pozycje do listy, a każda pozycja ma wcięcie o dodatkowy poziom.
+W tym przykładzie tworzymy nowy dokument i za pomocą narzędzia DocumentBuilder dodajemy tekst i tworzymy listę z trzema poziomami wcięć. Dodaliśmy do listy trzy pozycje, przy czym każda pozycja wskazuje dodatkowy poziom.
 
 ## Użycie jednego znaku spacji na poziom w celu wcięcia listy
 

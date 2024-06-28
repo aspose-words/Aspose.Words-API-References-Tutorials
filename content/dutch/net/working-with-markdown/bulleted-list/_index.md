@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## Stap 3: Het opsommingstekenformaat aanpassen
 
-We kunnen het opsommingstekenformaat aanpassen door toegang te krijgen tot de eigenschappen van`ListFormat.List.ListLevels[0]`. In dit voorbeeld gebruiken we het streepje "-" als opsommingsteken.
+ We kunnen het opsommingstekenformaat aanpassen door toegang te krijgen tot de eigenschappen van`ListFormat.List.ListLevels[0]`. In dit voorbeeld gebruiken we het streepje "-" als opsommingsteken.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
@@ -36,7 +36,7 @@ builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 
 ## Stap 4: Items aan de lijst toevoegen
 
- Nu kunnen we items toevoegen aan de lijst met opsommingstekens met behulp van de documentbouwer`Writeln` methode.
+ Nu kunnen we items toevoegen aan de lijst met opsommingstekens met behulp van de documentbuilder`Writeln` methode.
 
 ```csharp
 builder. Writen("Element 1");

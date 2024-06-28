@@ -79,7 +79,7 @@ A: Digitale Signaturen in einem Word-Dokument sind elektronische Signaturen, die
 
 A: Um mit Aspose.Words für .NET auf digitale Signaturen in einem Word-Dokument zuzugreifen, können Sie die folgenden Schritte ausführen:
 1.  Laden Sie das Dokument mit`Document` Klasse und geben Sie den Pfad zur Dokumentdatei an.
-2.  Verwenden Sie eine Schleife, um die zu durchlaufen`DigitalSignatures` Sammlung des Dokuments. Jede Iteration stellt eine digitale Signatur dar.
+2.  Verwenden Sie eine Schleife, um die zu durchlaufen`DigitalSignatures` Sammlung der Dokumente. Jede Iteration stellt eine digitale Signatur dar.
 
 #### F: Auf welche Informationen kann ich über eine digitale Signatur in einem Word-Dokument zugreifen?
 
@@ -97,7 +97,7 @@ A: Über eine digitale Signatur in einem Word-Dokument können Sie auf verschied
 #### F: Wie kann ich mit Aspose.Words für .NET die Gültigkeit digitaler Signaturen in einem Word-Dokument überprüfen?
 
 A: Um die Gültigkeit digitaler Signaturen in einem Word-Dokument mit Aspose.Words für .NET zu überprüfen, können Sie die folgenden Schritte ausführen:
-1.  Greife auf ... zu`DigitalSignatures` Sammlung des Dokuments.
+1.  Greife auf ... zu`DigitalSignatures` Sammlung der Dokumente.
 2.  Durchlaufen Sie jedes einzelne`DigitalSignature` Objekt in der Sammlung.
 3.  Benutzen Sie die`IsValid` Eigentum der`DigitalSignature` Objekt, um zu prüfen, ob die Signatur gültig ist.
 

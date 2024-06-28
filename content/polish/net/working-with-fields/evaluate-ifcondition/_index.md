@@ -18,7 +18,7 @@ W dostarczonym kodzie zaczynamy od stworzenia generatora dokumentów.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Wstaw pole JEŻELI
+## Krok 2: Wstaw pole JEŻELI.
 
  Używamy`InsertField()` metoda wstawienia pola JEŻELI do dokumentu określającego warunek do oceny.
 
@@ -36,12 +36,12 @@ Jako przykład użyliśmy tutaj warunku „1=1”, ale w razie potrzeby możesz 
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- The`actualResult` zmienna zawiera wynik oceny warunku.
+ The`actualResult` Zmienna zawiera wynik oceny warunku.
 
 ### Przykładowy kod źródłowy do oceny warunku JEŻELI za pomocą Aspose.Words dla .NET
 
 ```csharp
-// Stworzenie generatora dokumentów.
+//Stworzenie generatora dokumentów.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Wstaw pole JEŻELI do dokumentu.
@@ -54,7 +54,7 @@ FieldIfComparisonResult actualResult = field.EvaluateCondition();
 Console.WriteLine(actualResult);
 ```
 
-tym przykładzie utworzyliśmy narzędzie do tworzenia dokumentów, wstawiliśmy pole JEŻELI z określonym warunkiem, a następnie oceniliśmy warunek. Wynik oceny zostanie następnie wyświetlony w konsoli.
+W tym przykładzie utworzyliśmy narzędzie do tworzenia dokumentów, wstawiliśmy pole JEŻELI z określonym warunkiem, a następnie oceniliśmy warunek. Wynik oceny zostanie następnie wyświetlony w konsoli.
 
 Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Oceń warunek JEŻELI” w Aspose.Words dla .NET.
 

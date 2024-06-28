@@ -2,106 +2,95 @@
 title: Köprüleri Değiştir
 linktitle: Köprüleri Değiştir
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak Word belgelerindeki köprüleri değiştirin. Köprüleri değiştirmek için adım adım talimatlar.
+description: Etkin belge yönetimi ve dinamik içerik güncellemeleri için Aspose.Words'ü kullanarak .NET belgelerindeki köprüleri nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/replace-hyperlinks/
 ---
 
-Burada, Aspose.Words for .NET işlevselliğini kullanarak köprüleri değiştirmek için aşağıdaki C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. Bu kodu kullanmadan önce projenize Aspose.Words kütüphanesini eklediğinizden emin olun.
+## giriiş
 
-## 1. Adım: Belge dizini yolunu ayarlayın
+.NET geliştirme dünyasında, belgeleri yönetmek ve değiştirmek çok önemli bir görevdir ve genellikle belgeler içindeki köprülerin verimli bir şekilde ele alınmasını gerektirir. Aspose.Words for .NET, köprüleri sorunsuz bir şekilde değiştirmek için güçlü özellikler sunarak belgelerinizin doğru kaynaklara dinamik olarak bağlanmasını sağlar. Bu eğitim, Aspose.Words for .NET kullanarak bunu nasıl başarabileceğinizi derinlemesine ele alıyor ve süreç boyunca size adım adım yol gösteriyor.
+
+## Önkoşullar
+
+Köprüleri Aspose.Words for .NET ile değiştirmeye başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+
+- Visual Studio: .NET geliştirme için yüklendi ve ayarlandı.
+-  Aspose.Words for .NET: İndirilir ve projenizde referans alınır. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- C#'a aşinalık: Kod yazma ve derlemeye yönelik temel anlayış.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle projenize gerekli ad alanlarını eklediğinizden emin olun:
 
 ```csharp
-// Belgeler dizininin yolu.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- Belgeler dizininize giden ve aşağıdakileri içeren doğru yolu belirttiğinizden emin olun:`Hyperlinks.docx` dosya.
+## 1. Adım: Belgeyi Yükleyin
 
-## Adım 2: Köprüleri içeren belgeyi yükleyin
+Belgeyi köprüleri değiştirmek istediğiniz yere yükleyerek başlayın:
 
 ```csharp
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- Burada bir örneğini oluşturuyoruz.`Document` belirtilen dosyadan sınıf.
+ Yer değiştirmek`"Hyperlinks.docx"` gerçek belgenizin yolu ile birlikte.
 
-## 3. Adım: Köprüleri bulmak için alanlara göz atın
+## Adım 2: Alanlar Arasında Yineleme Yapın
+
+Köprüleri bulmak ve değiştirmek için belgedeki her alanı yineleyin:
 
 ```csharp
-foreach(Field field in doc.Range.Fields)
+foreach (Field field in doc.Range.Fields)
 {
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
-
-         // Bazı köprü bağlantılar yerel olabilir (belge içindeki yer imlerine bağlantılar), bunları göz ardı ederiz.
-         if (hyperlink.SubAddress != null)
-             keep on going;
-
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
+    if (field.Type == FieldType.FieldHyperlink)
+    {
+        FieldHyperlink hyperlink = (FieldHyperlink)field;
+        
+        // Köprünün yerel bir bağlantı olup olmadığını kontrol edin (yer imlerini dikkate almayın).
+        if (hyperlink.SubAddress != null)
+            continue;
+        
+        // Köprü adresini ve sonucunu değiştirin.
+        hyperlink.Address = "http://www.aspose.com";
+        hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
+    }
 }
 ```
 
- Bu döngü, belgedeki tüm alanlardan geçerek tür alanlarını arar`FieldType.FieldHyperlink` . Bu türde bir alan bulunduğunda, bunun yerel bir bağlantı olup olmadığını kontrol ederiz.`SubAddress` mülk. Değilse, bağlantı adresini şununla değiştiririz:`"http://www.aspose.com"` ve sonuç`"Aspose - The .NET & Java Component Editor"`.
+## 3. Adım: Belgeyi Kaydedin
 
-## 4. Adım: Değiştirilen belgeyi kaydedin
+Son olarak, değiştirilen belgeyi değiştirilen köprülerle birlikte kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-Son olarak, değiştirilen belgeyi değiştirilen köprülerle birlikte belirtilen bir dosyaya kaydederiz.
+ Yer değiştirmek`"WorkingWithFields.ReplaceHyperlinks.docx"` İstediğiniz çıktı dosyası yolu ile.
 
-### Köprüleri Aspose.Words for .NET ile değiştirmek için örnek kaynak kodu
+## Çözüm
 
-```csharp
-// Belgeler dizininin yolu.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+Aspose.Words for .NET kullanarak belgelerdeki köprüleri değiştirmek oldukça basittir ve belgelerinizin dinamik yapısını geliştirir. URL'leri güncellemek veya belge içeriğini programlı olarak dönüştürmek olsun, Aspose.Words bu görevleri basitleştirerek verimli belge yönetimi sağlar.
 
-Document doc = new Document(dataDir + "Hyperlinks.docx");
+## Sıkça Sorulan Sorular (SSS)
 
-foreach(Field field in doc.Range.Fields)
-{
-     if (field.Type == FieldType.FieldHyperlink)
-     {
-         FieldHyperlink hyperlink = (FieldHyperlink)field;
+### Aspose.Words for .NET karmaşık belge yapılarını yönetebilir mi?
+Evet, Aspose.Words tablolar, resimler ve köprüler gibi karmaşık yapıları sorunsuz bir şekilde destekler.
 
-         // Bazı köprü bağlantılar yerel olabilir (belge içindeki yer imlerine bağlantılar), bunları göz ardı ederiz.
-         if (hyperlink.SubAddress != null)
-             keep on going;
+### Aspose.Words for .NET'in deneme sürümü mevcut mu?
+ Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
 
-         hyperlink.Address = "http://www.aspose.com";
-         hyperlink.Result = "Aspose - The .NET & Java component editor";
-     }
-}
+### Aspose.Words for .NET belgelerini nerede bulabilirim?
+ Detaylı dokümantasyon mevcut[Burada](https://reference.aspose.com/words/net/).
 
-doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
-```
+### Aspose.Words for .NET için nasıl geçici lisans alabilirim?
+ Geçici lisans alınabilecek[Burada](https://purchase.aspose.com/temporary-license/).
 
-Bu, Aspose.Words for .NET kullanarak bir belgedeki köprüleri değiştirmek için kullanılan örnek kaynak kodudur.
-
-### SSS'ler
-
-#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki köprüleri nasıl değiştirebilirim?
-
- C: Aspose.Words for .NET kullanarak bir Word belgesindeki köprüleri değiştirmek için şu komutu kullanabilirsiniz:`Document.Range.Replace`Aranacak metni ve değiştirilecek metni belirten yöntem. Arama ve değiştirme parametrelerini ayarlamak için uygun seçenekleri kullandığınızdan emin olun.
-
-#### S: Bir Word belgesindeki yalnızca belirli köprüleri Aspose.Words for .NET ile değiştirmek mümkün müdür?
-
-C: Evet, Aspose.Words for .NET ile bir Word belgesindeki yalnızca belirli köprüleri değiştirmek mümkündür. Değiştirilecek köprüleri, bağlantı URL'si, bağlantı metni veya diğer ilgili özellikler gibi belirli kriterleri kullanarak filtreleyebilirsiniz. Daha sonra değiştirme işlemini yalnızca eşleşen köprülere uygulayabilirsiniz.
-
-#### S: Aspose.Words for .NET ile değiştirirken üstbilgi, altbilgi veya dipnotlardaki köprüleri nasıl yok sayabilirim?
-
-C: Aspose.Words for .NET ile değiştirirken üstbilgi, altbilgi veya dipnotlardaki köprüleri yok saymak için gelişmiş arama seçeneklerini kullanabilir ve uygun arama sınırlarını belirleyebilirsiniz. Örneğin, aramayı belgenin ana bölümleriyle sınırlayabilir ve üstbilgileri, altbilgileri veya dipnotları hariç tutabilirsiniz.
-
-#### S: Köprü bağlantılarını belgenin diğer bölümlerine giden dahili bağlantılarla değiştirmek mümkün müdür?
-
- C: Evet, Aspose.Words for .NET ile köprü bağlantılarını belgenin diğer bölümlerine giden dahili bağlantılarla değiştirmek mümkündür. Dahili bağlantılar oluşturmak için çapaları veya metin kimliklerini kullanabilir ve ardından bunları kullanarak değiştirebilirsiniz.`Document.Range.Replace` Uygun seçeneklerle yöntem.
-
-#### S: Köprüleri Aspose.Words for .NET ile değiştirmek renkler veya stiller gibi bağlantı özelliklerini korur mu?
-
-C: Evet, köprüleri Aspose.Words for .NET ile değiştirirken renkler veya stiller gibi bağlantı özellikleri korunur. Tutarlı bir sonuç elde etmek için değiştirilen metinde aynı biçimlendirme özelliklerini belirtebilirsiniz.
+### Aspose.Words for .NET için hangi destek seçenekleri mevcut?
+ Topluluk desteği alabilir veya sorularınızı şu adresten gönderebilirsiniz:[Aspose.Words forumu](https://forum.aspose.com/c/words/8).

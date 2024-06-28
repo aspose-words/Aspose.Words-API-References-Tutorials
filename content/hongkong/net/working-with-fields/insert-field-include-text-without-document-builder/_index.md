@@ -97,4 +97,4 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 
 #### Q：我可以使用 Aspose.Words for .NET 自訂 Word 文件中文字包含欄位的外觀嗎？
 
-答：文字包含欄位不會直接自訂其在 Word 文件中的外觀。但是，您可以使用段落屬性、字體屬性和 Aspose.Words for .NET 中提供的其他格式物件來格式化包含的文字。
+答：文字欄位包含不會直接自訂其在 Word 文件中的外觀。但是，您可以使用段落屬性、字體屬性和 Aspose.Words for .NET 中提供的其他格式物件來格式化包含的文字。

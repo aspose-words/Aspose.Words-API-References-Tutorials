@@ -197,7 +197,7 @@ Sim, você pode alterar as cores do código de barras especificando as cores de 
 
 ### Quais tipos de código de barras são suportados pelo Aspose.Words for Java?
 
-Aspose.Words for Java suporta vários tipos de códigos de barras, incluindo códigos QR, CODE128, CODE39, EAN8, EAN13, UPCA, UPCE, ITF14 e muito mais. Você pode escolher o tipo de código de barras que atenda às necessidades da sua aplicação.
+Aspose.Words for Java suporta vários tipos de códigos de barras, incluindo códigos QR, CODE128, CODE39, EAN8, EAN13, UPCA, UPCE, ITF14 e muito mais. Você pode escolher o tipo de código de barras que atende às necessidades da sua aplicação.
 
 ### Como integro o código de barras gerado ao meu documento Word?
 

@@ -48,7 +48,7 @@ builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
 builder.Writeln("Title Setext level 1");
 ```
 
-## Шаг 5: Сохранение документа
+## Шаг 5: Сохраните документ
 
 Наконец, мы можем сохранить документ в нужном формате.
 

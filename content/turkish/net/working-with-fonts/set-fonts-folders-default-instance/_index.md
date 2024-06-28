@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Varsayılan yazı tipi klasörünü ayarlayın
-Daha sonra varsayılan yazı tipi klasörünü kullanarak ayarlayabilirsiniz.`FontSettings.DefaultInstance` sınıf ve`SetFontsFolder()` yöntem. Varsayılan klasör olarak kullanmak istediğiniz yazı tipleri klasörünün yolunu belirtin.
+ Daha sonra varsayılan yazı tipi klasörünü kullanarak ayarlayabilirsiniz.`FontSettings.DefaultInstance` sınıf ve`SetFontsFolder()`yöntem. Varsayılan klasör olarak kullanmak istediğiniz yazı tipleri klasörünün yolunu belirtin.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

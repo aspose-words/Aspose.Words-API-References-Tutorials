@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## ขั้นตอนที่ 3: สร้างและเพิ่มรูปร่างให้กับ GroupShape
- สร้างรูปร่างเฉพาะบุคคลเช่น`accentBorderShape` และ`actionButtonShape` ใช้`Shape` ระดับ. ปรับแต่งคุณสมบัติตามต้องการ ผนวกรูปร่างเหล่านี้เข้ากับ`groupShape` วัตถุ.
+ สร้างรูปร่างเฉพาะบุคคลเช่น`accentBorderShape` และ`actionButtonShape` ใช้`Shape` ชั้นเรียน ปรับแต่งคุณสมบัติตามต้องการ ผนวกรูปร่างเหล่านี้เข้ากับ`groupShape` วัตถุ วัตถุ
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };

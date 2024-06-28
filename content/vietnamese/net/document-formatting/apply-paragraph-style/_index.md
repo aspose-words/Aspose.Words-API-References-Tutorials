@@ -59,7 +59,7 @@ Với mã này, bạn sẽ có thể áp dụng kiểu đoạn văn bằng Aspos
 
 ## Phần kết luận
 
- Trong hướng dẫn này, chúng tôi đã khám phá cách áp dụng kiểu đoạn văn trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách thiết lập`StyleIdentifier` tài sản của`ParagraphFormat`, chúng tôi có thể áp dụng một kiểu có sẵn cho đoạn văn. Aspose.Words for .NET cung cấp nhiều tùy chọn định dạng, bao gồm khả năng tạo và áp dụng các kiểu tùy chỉnh, cho phép bạn tạo ra các tài liệu trông chuyên nghiệp một cách dễ dàng.
+ Trong hướng dẫn này, chúng tôi đã khám phá cách áp dụng kiểu đoạn văn trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách thiết lập`StyleIdentifier` tài sản của`ParagraphFormat`chúng tôi có thể áp dụng một kiểu có sẵn cho đoạn văn. Aspose.Words for .NET cung cấp nhiều tùy chọn định dạng, bao gồm khả năng tạo và áp dụng các kiểu tùy chỉnh, cho phép bạn tạo ra các tài liệu trông chuyên nghiệp một cách dễ dàng.
 
 ### Câu hỏi thường gặp
 

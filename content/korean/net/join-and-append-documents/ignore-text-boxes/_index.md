@@ -19,7 +19,7 @@ url: /ko/net/join-and-append-documents/ignore-text-boxes/
 
 ## 2단계: 원본 및 대상 문서 열기
 
- 다음을 사용하여 원본 및 대상 문서를 엽니다.`Document` 클래스 생성자. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 다음을 사용하여 원본 및 대상 문서를 엽니다.`Document` 클래스 생성자. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 // 문서 디렉터리 경로
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## 4단계: 텍스트 상자 내용 추가
 
- 만들기`NodeImporter` 개체를 사용하여 원본 문서의 텍스트 상자 노드를 대상 문서로 가져옵니다. 소스 문서의 각 단락을 반복하고 이를 대상 문서로 가져옵니다.
+ 만들기`NodeImporter`개체를 사용하여 원본 문서의 텍스트 상자 노드를 대상 문서로 가져옵니다. 소스 문서의 각 단락을 반복하고 이를 대상 문서로 가져옵니다.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## 5단계: 대상 문서 저장
 
- 마지막으로 다음을 사용하여 수정된 대상 문서를 저장합니다.`Save` 의 방법`Document` 물체.
+마지막으로 다음을 사용하여 수정된 대상 문서를 저장합니다.`Save` 의 방법`Document` 물체.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

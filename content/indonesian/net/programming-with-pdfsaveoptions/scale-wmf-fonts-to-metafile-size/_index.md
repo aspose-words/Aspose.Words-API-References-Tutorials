@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Langkah 3: Konfigurasikan opsi rendering metafile
 
- Untuk mengaktifkan atau menonaktifkan penskalaan font WMF ke ukuran metafile, kita perlu mengkonfigurasi`MetafileRenderingOptions`obyek. Dalam contoh ini, kami menonaktifkan penskalaan font dengan mengatur`ScaleWmfFontsToMetafileSize`properti ke`false`.
+ Untuk mengaktifkan atau menonaktifkan penskalaan font WMF ke ukuran metafile, kita perlu mengkonfigurasi`MetafileRenderingOptions` obyek. Dalam contoh ini, kami menonaktifkan penskalaan font dengan mengatur`ScaleWmfFontsToMetafileSize`properti ke`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -72,7 +72,7 @@ dokumen PDF menggunakan Aspose.Words untuk .NET.
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// Jika Aspose.Words tidak dapat merender beberapa rekaman metafile ke grafik vektor dengan benar
+	//Jika Aspose.Words tidak dapat merender beberapa rekaman metafile ke grafik vektor dengan benar
 	// lalu Aspose.Words merender metafile ini menjadi bitmap.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 

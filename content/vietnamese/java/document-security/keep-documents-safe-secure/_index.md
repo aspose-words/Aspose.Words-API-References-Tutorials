@@ -50,7 +50,7 @@ Trước khi chúng ta tiến hành bảo mật tài liệu, trước tiên chú
 Quá trình cài đặt Aspose.Words cho Java là một quá trình đơn giản. Hãy làm theo các bước đơn giản sau để thêm thư viện vào dự án Java của bạn:
 
 1. ### Tải xuống:
-  đi đến[Aspose.Rereleases](https://releases.aspose.com/words/java/) và tải xuống gói Aspose.Words cho Java.
+  đi tới[Aspose.Rereleases](https://releases.aspose.com/words/java/) và tải xuống gói Aspose.Words cho Java.
 
 2. ### Trích xuất:
  Giải nén gói đã tải xuống vào một vị trí thuận tiện trên máy tính của bạn.

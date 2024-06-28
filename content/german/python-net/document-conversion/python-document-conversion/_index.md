@@ -1,7 +1,7 @@
 ---
 title: Konvertierung von Python-Dokumenten – Die vollständige Anleitung
 linktitle: Konvertierung von Python-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Lernen Sie die Konvertierung von Python-Dokumenten mit Aspose.Words für Python. Konvertieren, bearbeiten und passen Sie Dokumente mühelos an. Steigern Sie jetzt die Produktivität!
 type: docs
 weight: 10
@@ -63,7 +63,7 @@ pip install aspose-words
 
 3. Sobald die Installation abgeschlossen ist, können Sie Aspose.Words in Ihren Python-Projekten verwenden.
 
-## Dokumentkonvertierung durchführen
+## Durchführen von Dokumentkonvertierungen
 
 ### Konvertieren von Word in PDF
 
@@ -99,7 +99,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 Neben Word und PDF unterstützt Aspose.Words für Python verschiedene Dokumentformate, darunter HTML, TXT, EPUB und mehr.
 
-## Anpassen der Dokumentkonvertierung
+## Anpassen von Dokumentkonvertierungen
 
 ### Anwenden von Formatierung und Stil
 
@@ -173,7 +173,7 @@ doc.styles.default_font.size = 12
 doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ```
 
-## Automatisierung der Dokumentenkonvertierung
+## Dokumentkonvertierungen automatisieren
 
 ### Schreiben von Python-Skripten für die Automatisierung
 

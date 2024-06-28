@@ -2,76 +2,101 @@
 title: 附加文檔
 linktitle: 附加文檔
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 將一個文件的內容附加到另一個文件。
+description: 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 附加 Word 文件。非常適合自動化文件工作流程。
 type: docs
 weight: 10
 url: /zh-hant/net/join-and-append-documents/append-document/
 ---
 
-本教學課程介紹如何使用 Aspose.Words for .NET 將一個文件的內容附加到另一個文件。提供的原始程式碼示範如何開啟來源文檔和目標文檔，將來源文檔中的部分匯入並附加到目標文檔。
+## 介紹
 
-## 第 1 步：設定項目
+嘿！您是否曾經需要將兩個 Word 文件合併為一個，同時保持原始格式不變？無論您是在編譯報告、建立大量專案文檔，還是只是想簡化文件管理，Aspose.Words for .NET 都可以讓您的生活變得更加輕鬆。在本教程中，我們將探索如何使用 Aspose.Words for .NET 將一個 Word 文檔附加到另一個 Word 文檔，並詳細分解每個步驟。在本指南結束時，您將像專業人士一樣合併文件！
 
-確保您具備以下先決條件：
+## 先決條件
 
-- 已安裝 Aspose.Words for .NET 程式庫。您可以從以下位置下載：[Aspose.Releases]https://releases.aspose.com/words/net/ 或使用 NuGet 套件管理器來安裝它。
-- 來源文檔和目標文檔所在的文檔目錄路徑。
+在我們深入討論細節之前，讓我們確保您擁有所需的一切：
 
-## 步驟 2：開啟來源文檔和目標文檔
+1. C# 基礎知識：您應該熟悉 C# 文法和概念。
+2.  Aspose.Words for .NET：下載[這裡](https://releases.aspose.com/words/net/) 。如果您只是探索，您可以從[免費試用](https://releases.aspose.com/).
+3. Visual Studio：任何最新版本都應該可以使用，但建議使用最新版本。
+4. .NET Framework：確保您的系統上已安裝它。
 
-使用以下命令開啟來源文檔和目標文檔`Document`類別構造函數。代替`"YOUR DOCUMENT DIRECTORY"`與文檔目錄的實際路徑。
+一切都準備好了嗎？偉大的！讓我們跳進去吧。
+
+## 導入命名空間
+
+要開始使用 Aspose.Words for .NET，我們需要匯入必要的命名空間。此步驟確保我們能夠存取所需的所有類別和方法。
 
 ```csharp
-//文檔目錄的路徑
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+```
 
+這些命名空間對於建立、操作和儲存 Word 文件至關重要。
+
+## 第 1 步：設定文檔目錄
+
+首先，我們需要指定儲存文檔的目錄。這有助於 Aspose.Words 找到我們想要使用的檔案。
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+代替`"YOUR DOCUMENT DIRECTORY"`與您的文件的實際路徑。
+
+## 第 2 步：載入來源文檔和目標文檔
+
+接下來，我們將載入來源文檔（要附加的文檔）和目標文檔（將附加來源的文檔）。
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 步驟 3：將來源文檔中的部分附加到目標文檔
+這裡我們初始化兩個`Document`對象。`srcDoc`代表來源文檔，並且`dstDoc`代表目標文檔。
 
-循環遍歷來源文件中的所有部分，並使用以下命令將每個部分匯入目標文件中`ImportNode`方法。然後，將匯入的部分附加到目標文件。
+## 步驟 3：將來源文檔附加到目標文檔
 
-```csharp
-foreach (Section srcSection in srcDoc)
-{
-    Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-    dstDoc.AppendChild(dstSection);
-}
-```
-
-## 步驟 4：儲存目標文檔
-
-最後，使用以下命令儲存修改後的目標文檔`Save`的方法`Document`目的。
+現在是令人興奮的部分 - 將來源文檔附加到目標文檔，同時保持原始格式不變。
 
 ```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-這樣就完成了使用 Aspose.Words for .NET 附加文件的實作。
+在這一步驟中，我們使用`AppendDocument`合併兩個文檔的方法。這`ImportFormatMode.KeepSourceFormatting`參數確保保留來源文件的格式。
 
-### 使用 Aspose.Words for .NET 追加文件的範例原始碼 
+## 步驟 4：儲存組合文檔
+
+新增文件後，最後一步是使用新名稱儲存組合文件。
 
 ```csharp
-	//文檔目錄的路徑
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//循環瀏覽來源文檔中的所有部分。
-	//節節點是文檔節點的直接子節點，因此我們可以列舉文件。
-	foreach (Section srcSection in srcDoc)
-	{
-		//因為我們要將一個文檔的一部分複製到另一個文檔，
-		//需要將Section節點匯入到目標文件中。
-		//這會調整任何特定於文件的樣式、清單等引用。
-		//
-		//導入節點會建立原始節點的副本，但該副本
-		//ss 準備插入到目標文件中。
-		Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-		//現在可以將新的節節點附加到目標文件。
-		dstDoc.AppendChild(dstSection);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
+dstDoc.Save(dataDir + "AppendedDocument.docx");
 ```
+
+在這裡，我們用描述性文件名稱保存附加文檔，表明它包含附加內容。
+
+## 結論
+
+現在你就得到它了！您已成功學習如何使用 Aspose.Words for .NET 將一個 Word 文件附加到另一個文件。本教學介紹了設定環境、載入文件、將一個文件附加到另一個文件並同時保留來源格式以及保存組合文件。 Aspose.Words 提供了廣泛的功能，因此請務必探索[API文件](https://reference.aspose.com/words/net/)釋放其全部潛力。
+
+## 常見問題解答
+
+### 1. 什麼是 Aspose.Words for .NET？
+
+Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員以程式設計方式建立、操作和轉換 Word 文件。它非常適合自動化文件相關任務。
+
+### 2. 我可以免費使用Aspose.Words for .NET嗎？
+
+您可以嘗試使用 Aspose.Words for .NET[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
+
+### 3. 如何確保附加文件時保留格式？
+
+使用`ImportFormatMode.KeepSourceFormatting`中的參數`AppendDocument`保留來源文件格式的方法。
+
+### 4. 如何獲得 Aspose.Words for .NET 支援？
+
+您可以透過訪問獲得支持[Aspose 支援論壇](https://forum.aspose.com/c/words/8).
+
+### 5. 我可以附加不同格式的文件嗎？
+
+是的，Aspose.Words支援各種格式，您可以附加不同格式的文檔，例如DOCX、DOC、RTF等。

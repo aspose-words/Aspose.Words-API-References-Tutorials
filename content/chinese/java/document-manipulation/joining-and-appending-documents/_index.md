@@ -2,7 +2,7 @@
 title: 在 Aspose.Words for Java 中连接和附加文档
 linktitle: 加入和附加文档
 second_title: Aspose.Words Java 文档处理 API
-description: 了解如何使用 Aspose.Words for Java 轻松加入和追加文档。保留格式、管理页眉页脚等。
+description: 了解如何使用 Aspose.Words for Java 轻松加入和附加文档。保留格式、管理页眉页脚等。
 type: docs
 weight: 30
 url: /zh/java/document-manipulation/joining-and-appending-documents/
@@ -10,7 +10,7 @@ url: /zh/java/document-manipulation/joining-and-appending-documents/
 
 ## Aspose.Words for Java 中连接和附加文档简介
 
-在本教程中，我们将探讨如何使用 Aspose.Words for Java 库加入和附加文档。您将学习如何无缝合并多个文档，同时保留格式和结构。
+在本教程中，我们将探索如何使用 Aspose.Words for Java 库加入和追加文档。您将学习如何无缝合并多个文档，同时保留格式和结构。
 
 ## 先决条件
 

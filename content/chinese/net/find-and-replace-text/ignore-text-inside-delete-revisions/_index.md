@@ -56,7 +56,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
 ## 步骤 5：使用正则表达式进行查找和替换
 
-为了对文档文本执行搜索和替换操作，我们将使用正则表达式。在我们的示例中，我们将搜索所有出现的字母“e”并将其替换为星号“* “。 。网`Regex`为此使用了类：
+为了对文档文本执行搜索和替换操作，我们将使用正则表达式。在我们的示例中，我们将搜索所有出现的字母“e”并将其替换为星号“* “。 。网`Regex`类用于此目的：
 
 ```csharp
 Regex regex = new Regex("e");

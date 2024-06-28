@@ -18,9 +18,9 @@ url: /ar/net/working-with-fields/evaluate-ifcondition/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: أدخل حقل IF
+## الخطوة 2: أدخل حقل IF.
 
- نحن نستخدم ال`InsertField()` طريقة لإدراج حقل IF في المستند الذي يحدد الشرط المطلوب تقييمه.
+ نحن نستخدم ال`InsertField()` طريقة لإدراج حقل IF في المستند الذي يحدد الشرط المراد تقييمه.
 
 ```csharp
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
@@ -36,12 +36,12 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- ال`actualResult` المتغير يحتوي على نتيجة تقييم الحالة.
+ ال`actualResult` يحتوي المتغير على نتيجة تقييم الحالة.
 
 ### نموذج التعليمات البرمجية المصدر لتقييم حالة IF باستخدام Aspose.Words لـ .NET
 
 ```csharp
-// إنشاء منشئ المستندات.
+//إنشاء منشئ المستندات.
 DocumentBuilder builder = new DocumentBuilder();
 
 // أدخل الحقل IF في المستند.
@@ -62,7 +62,7 @@ Console.WriteLine(actualResult);
 
 #### س: ما هو شرط IF في Aspose.Words؟
 
-ج: شرط IF في Aspose.Words هو ميزة تسمح لك بتقييم شرط منطقي وعرض محتويات مختلفة اعتمادًا على نتيجة الشرط. على سبيل المثال، يمكنك استخدام شرط IF لعرض نص مختلف في مستند بناءً على شروط معينة محددة مسبقًا.
+ج: شرط IF في Aspose.Words هو ميزة تتيح لك تقييم الشرط المنطقي وعرض محتويات مختلفة اعتمادًا على نتيجة الشرط. على سبيل المثال، يمكنك استخدام شرط IF لعرض نص مختلف في مستند بناءً على شروط معينة محددة مسبقًا.
 
 #### س: كيفية إدراج شرط IF في مستند Word باستخدام Aspose.Words؟
 

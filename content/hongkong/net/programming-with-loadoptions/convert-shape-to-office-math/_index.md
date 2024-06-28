@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveF
 
 #### Q：為什麼需要將形狀轉換為 Office 數學公式？
 
-答：將形狀轉換為 Office 數學公式對於提高 C# 應用程式中 Word 文件的兼容性和更好地呈現數學元素至關重要。
+答：將形狀轉換為 Office 數學公式對於提高 C# 應用程式中 Word 文件中的相容性和更好地呈現數學元素至關重要。
 
 #### Q：Aspose.Words 可以處理複雜的數學表達式嗎？
 

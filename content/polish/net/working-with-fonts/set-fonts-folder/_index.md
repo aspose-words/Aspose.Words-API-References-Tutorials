@@ -15,7 +15,7 @@ Zanim zaczniesz, upewnij się, że masz następujące elementy:
 - Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
 
 ## Krok 1: Zdefiniuj katalog dokumentów
- Zacznij od ustawienia ścieżki katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+Zacznij od ustawienia ścieżki katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

@@ -2,107 +2,148 @@
 title: Gọi lại dấu gạch nối
 linktitle: Gọi lại dấu gạch nối
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách sử dụng lệnh gọi lại dấu gạch nối trong Aspose.Words cho .NET để xử lý dấu gạch nối từ.
+description: Tìm hiểu cách triển khai gọi lại dấu gạch nối trong Aspose.Words cho .NET để nâng cao định dạng tài liệu bằng hướng dẫn từng bước toàn diện này.
 type: docs
 weight: 10
 url: /vi/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-Trong hướng dẫn từng bước này, chúng tôi sẽ chỉ cho bạn cách sử dụng tính năng gọi lại dấu gạch nối trong Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# được cung cấp và chỉ cho bạn cách triển khai nó trong các dự án của riêng bạn.
+## Giới thiệu
 
- Để bắt đầu, hãy đảm bảo bạn đã cài đặt và định cấu hình Aspose.Words for .NET trong môi trường phát triển của mình. Nếu bạn chưa có, hãy tải xuống và cài đặt thư viện từ[Aspose.Releases]https://releases.aspose.com/words/net/.
+Này! Bạn đã bao giờ thấy mình vướng vào sự phức tạp của việc định dạng văn bản, đặc biệt là khi xử lý các ngôn ngữ yêu cầu dấu gạch nối chưa? Bạn không cô đơn. Dấu gạch nối, mặc dù rất quan trọng để có bố cục văn bản phù hợp, nhưng có thể hơi đau đầu. Nhưng đoán xem? Aspose.Words for .NET đã hỗ trợ bạn. Thư viện mạnh mẽ này cho phép bạn quản lý định dạng văn bản một cách liền mạch, bao gồm cả việc xử lý dấu gạch nối thông qua cơ chế gọi lại. Có mưu đồ? Hãy cùng tìm hiểu chi tiết về cách bạn có thể triển khai lệnh gọi lại dấu gạch nối bằng cách sử dụng Aspose.Words cho .NET.
 
-## Bước 1: Lưu lời nhắc gạch nối
+## Điều kiện tiên quyết
 
- Đầu tiên, chúng ta sẽ đăng ký lệnh gọi lại dấu gạch nối bằng cách sử dụng một tùy chỉnh`CustomHyphenationCallback` lớp học. Điều này sẽ cho phép chúng tôi xử lý việc gạch nối từ theo quy tắc riêng của chúng tôi:
+Trước khi bắt tay vào viết mã, hãy đảm bảo rằng bạn có mọi thứ mình cần:
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+2. IDE: Môi trường phát triển như Visual Studio.
+3. Kiến thức cơ bản về C#: Hiểu biết về C# và .NET framework.
+4. Từ điển gạch nối: Từ điển gạch nối cho các ngôn ngữ bạn dự định sử dụng.
+5.  Giấy phép Aspose: Giấy phép Aspose hợp lệ. Bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) nếu bạn không có.
 
- Hãy chắc chắn rằng bạn đã triển khai`CustomHyphenationCallback` lớp học theo nhu cầu cụ thể của bạn.
+## Nhập không gian tên
 
-## Bước 2: Tải tài liệu và áp dụng dấu gạch nối
-
-Tiếp theo, tải tài liệu của bạn từ thư mục đã chỉ định và gạch nối các từ bằng Aspose.Words:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## Bước 3: Xử lý lỗi thiếu từ điển
-
-Trong trường hợp thiếu từ điển gạch nối, chúng ta sẽ bắt ngoại lệ tương ứng và hiển thị thông báo lỗi:
+Trước tiên, hãy nhập các không gian tên cần thiết. Điều này đảm bảo mã của chúng tôi có quyền truy cập vào tất cả các lớp và phương thức chúng tôi cần từ Aspose.Words.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## Bước 4: Dọn dẹp và tắt lời nhắc gạch nối
+## Bước 1: Đăng ký gọi lại dấu gạch nối
 
-Cuối cùng, để sạch sẽ và tắt lời nhắc gạch nối, hãy thực hiện các bước sau:
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-Thao tác này sẽ dọn sạch và tắt lời nhắc gạch nối sau khi xử lý xong.
-
-Vì thế ! Bạn đã sử dụng thành công lệnh gọi lại dấu gạch nối trong Aspose.Words cho .NET.
-
-### Mã nguồn mẫu cho lệnh gọi lại gạch nối với Aspose.Words cho .NET
+Để bắt đầu, chúng ta cần đăng ký lệnh gọi lại dấu gạch nối. Đây là nơi chúng tôi yêu cầu Aspose.Words sử dụng logic gạch nối tùy chỉnh của chúng tôi.
 
 ```csharp
 try
 {
-	 // Đăng ký gọi lại dấu gạch nối.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // Đăng ký gọi lại dấu gạch nối.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ Ở đây, chúng tôi đang tạo một phiên bản gọi lại tùy chỉnh của mình và gán nó cho`Hyphenation.Callback`.
+
+## Bước 2: Xác định đường dẫn tài liệu
+
+Tiếp theo, chúng ta cần xác định thư mục lưu trữ tài liệu của chúng ta. Điều này rất quan trọng vì chúng tôi sẽ tải và lưu tài liệu từ đường dẫn này.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến tài liệu của bạn.
+
+## Bước 3: Tải tài liệu
+
+Bây giờ, hãy tải tài liệu yêu cầu gạch nối.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ Ở đây, chúng tôi đang tải một tài liệu văn bản tiếng Đức. Bạn có thể thay thế`"German text.docx"` với tên tệp tài liệu của bạn.
+
+## Bước 4: Lưu tài liệu
+
+Sau khi tải tài liệu, chúng tôi lưu nó vào một tệp mới, áp dụng lệnh gọi lại dấu gạch nối trong quy trình.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+Dòng này lưu tài liệu dưới dạng PDF có áp dụng dấu gạch nối.
+
+## Bước 5: Xử lý ngoại lệ từ điển thiếu dấu gạch nối
+
+Đôi khi, bạn có thể gặp phải vấn đề thiếu từ điển gạch nối. Hãy xử lý việc đó.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa đổi nó cho phù hợp với nhu cầu cụ thể của bạn.
+Trong khối này, chúng tôi nắm bắt ngoại lệ cụ thể liên quan đến từ điển bị thiếu và in thông báo.
 
-### Câu hỏi thường gặp
+## Bước 6: Triển khai lớp gọi lại dấu gạch nối tùy chỉnh
 
-#### Câu hỏi: Lời nhắc về âm tiết trong Aspose.Words là gì?
+ Bây giờ chúng ta hãy thực hiện`CustomHyphenationCallback` lớp xử lý yêu cầu về từ điển gạch nối.
 
-Trả lời: Lời nhắc về âm tiết trong Aspose.Words là một tính năng cho phép bạn tùy chỉnh cách các từ được âm tiết trong tài liệu của bạn. Bằng cách sử dụng lời nhắc về âm tiết, bạn có thể chỉ định các quy tắc tùy chỉnh cho âm tiết của từ, điều này có thể hữu ích cho các ngôn ngữ cụ thể hoặc các tình huống cụ thể trong đó âm tiết mặc định không mang lại kết quả mong muốn.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // Đăng ký từ điển cho ngôn ngữ được yêu cầu.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### Hỏi: Làm cách nào để đặt lời nhắc về âm tiết trong Aspose.Words?
+ Trong lớp này,`RequestDictionary` phương thức này được gọi bất cứ khi nào cần một từ điển gạch nối. Nó kiểm tra ngôn ngữ và đăng ký từ điển thích hợp.
 
- Trả lời: Để xác định lệnh gọi lại dấu gạch nối trong Aspose.Words, bạn cần tạo một lớp triển khai`HyphenationCallback` giao diện và thực hiện các`HandleWord()` phương pháp. Phương pháp này sẽ được gọi cho mỗi từ gặp phải trong quá trình sắp xếp âm tiết. Bạn có thể áp dụng các quy tắc âm tiết tùy chỉnh cho nó và trả về từ có âm tiết. Sau đó, bạn có thể liên kết lệnh gọi lại dấu gạch nối của mình bằng cách sử dụng`Document.HyphenationCallback` thuộc tính của tài liệu của bạn.
+## Phần kết luận
 
-#### Hỏi: Lợi ích của việc sử dụng lời nhắc về âm tiết trong Aspose.Words là gì?
+Và bạn có nó rồi đấy! Bạn vừa học cách triển khai lệnh gọi lại dấu gạch nối trong Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể đảm bảo tài liệu của mình được định dạng đẹp mắt, bất kể ngôn ngữ. Cho dù bạn đang làm việc với tiếng Anh, tiếng Đức hay bất kỳ ngôn ngữ nào khác, phương pháp này cho phép bạn xử lý dấu gạch nối một cách dễ dàng.
 
-Trả lời: Lợi ích của việc sử dụng lời nhắc về âm tiết trong Aspose.Words là khả năng tùy chỉnh cách các từ được sắp xếp âm tiết trong tài liệu của bạn. Điều này cho phép bạn kiểm soát nhiều hơn đối với cách sắp xếp âm tiết, đặc biệt đối với các ngôn ngữ hoặc tình huống cụ thể mà cách sắp xếp âm tiết mặc định không mang lại kết quả như mong muốn. Bạn có thể áp dụng các quy tắc cụ thể cho từng từ để có được âm tiết chính xác theo nhu cầu của mình.
+## Câu hỏi thường gặp
 
-#### Hỏi: Một số tình huống phổ biến mà việc sử dụng lời nhắc về âm tiết có thể hữu ích là gì?
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện thao tác tài liệu mạnh mẽ cho phép các nhà phát triển tạo, sửa đổi và chuyển đổi tài liệu theo chương trình.
 
-Đáp: Việc sử dụng bộ tăng cường âm tiết có thể hữu ích trong một số trường hợp, chẳng hạn như:
-- Âm tiết của các từ trong các ngôn ngữ cụ thể có quy tắc âm tiết cụ thể.
-- Việc áp dụng các quy tắc âm tiết được cá nhân hóa cho các từ viết tắt hoặc từ kỹ thuật.
-- Điều chỉnh âm tiết theo sở thích về văn phong hoặc tiêu chuẩn đánh máy.
+### Tại sao gạch nối lại quan trọng trong định dạng tài liệu?
+Dấu gạch nối cải thiện bố cục văn bản bằng cách ngắt các từ ở những vị trí thích hợp, đảm bảo tài liệu dễ đọc và hấp dẫn hơn về mặt hình ảnh.
 
-#### Câu hỏi: Làm cách nào tôi có thể kiểm tra cách sắp xếp âm tiết tùy chỉnh bằng lời nhắc về cách sắp xếp âm tiết trong Aspose.Words?
+### Tôi có thể sử dụng Aspose.Words miễn phí không?
+ Aspose.Words cung cấp bản dùng thử miễn phí. Bạn có thể lấy nó[đây](https://releases.aspose.com/).
 
- Trả lời: Để kiểm tra cách sắp xếp âm tiết tùy chỉnh bằng lời nhắc về cách sắp xếp âm tiết trong Aspose.Words, bạn có thể tạo một tài liệu kiểm tra chứa các từ mà bạn muốn áp dụng quy tắc sắp xếp âm tiết tùy chỉnh. Sau đó, bạn có thể đặt lệnh gọi lại âm tiết tùy chỉnh của mình, gọi`Document.Range.Replace()` phương pháp thay thế các từ trong tài liệu và sử dụng`Hyphenate()` phương pháp của`Hyphenation` lớp để có được âm tiết của các từ. Sau đó, bạn có thể định dạng các từ có âm tiết nếu cần, ví dụ bằng cách thêm dấu gạch nối giữa các âm tiết.
+### Làm cách nào để có được từ điển gạch nối?
+Bạn có thể tải xuống từ điển gạch nối từ nhiều nguồn trực tuyến khác nhau hoặc tự tạo từ điển nếu cần.
+
+### Điều gì xảy ra nếu thiếu từ điển gạch nối?
+ Nếu thiếu từ điển,`RequestDictionary` phương thức này sẽ đưa ra một ngoại lệ mà bạn có thể xử lý để thông báo cho người dùng hoặc cung cấp phương án dự phòng.

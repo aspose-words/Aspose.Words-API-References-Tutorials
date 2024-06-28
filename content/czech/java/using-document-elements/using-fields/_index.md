@@ -97,7 +97,7 @@ Zdrojový kód třídy HandleMergeField
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // Rozhodli jsme se, že chceme, aby všechny booleovské hodnoty byly na výstupu jako zaškrtávací pole formuláře.
+            // Rozhodli jsme se, že chceme, aby se všechny booleovské hodnoty vypisovaly jako pole formuláře zaškrtávacích políček.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
                 // Přesuňte "kurzor" na aktuální slučovací pole.
@@ -357,7 +357,7 @@ Zdrojový kód třídy HandleMergeField
 
 Gratulujeme! Naučili jste se používat pole v Aspose.Words pro Java k dynamické manipulaci s dokumenty Wordu. Toto výkonné rozhraní API vám poskytuje úplnou kontrolu nad vašimi dokumenty, což z něj činí cenný přínos pro vývojáře v jazyce Java.
 
-## 7. Nejčastější dotazy
+## 7.Časté dotazy
 
 ### Q1: Kde si mohu stáhnout Aspose.Words for Java?
  Aspose.Words for Java si můžete stáhnout z[tady](https://releases.aspose.com/words/java/).

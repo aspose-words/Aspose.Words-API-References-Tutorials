@@ -137,7 +137,7 @@ Aspose.Words 提供了高級功能，例如郵件合併、文件加密以及使�
 是的，Aspose.Words 可以與雲端平台結合使用，使其成為基於雲端的應用程式的理想選擇。
 
 ### 什麼是 Word Automation，Aspose.Words 如何促進它？
-Word Automation 涉及以程式設計方式與 Word 文件進行互動。 Aspose.Words for Python 提供了一個強大的程式庫，具有廣泛的功能，可以無縫地建立、操作和處理 Word 文檔，從而簡化了這一過程。
+Word Automation 涉及以程式設計方式與 Word 文件進行互動。 Aspose.Words for Python 提供了一個強大的函式庫，具有廣泛的功能，可以無縫地建立、操作和處理 Word 文檔，從而簡化了這一過程。
 
 ### 我可以在不同的作業系統上使用 Aspose.Words for Python 嗎？**
 是的，Aspose.Words for Python 與各種作業系統相容，包括 Windows、macOS 和 Linux，使其適用於不同的開發環境。

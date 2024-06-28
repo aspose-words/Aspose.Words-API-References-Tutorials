@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Hyperlinks.docx");
 
 ## 3단계: 문서 필드 찾아보기
 
- 우리는`foreach` loop는 문서에 있는 모든 필드를 반복합니다.
+ 우리는`foreach`loop는 문서에 있는 모든 필드를 반복합니다.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ foreach(Field field in doc.Range.Fields)
 
 #### Q: .NET용 Aspose.Words를 사용하여 Word 문서에 필드를 삽입하려면 어떻게 해야 합니까?
 
- A: .NET용 Aspose.Words를 사용하여 Word 문서에 필드를 삽입하려면 다음을 사용할 수 있습니다.`DocumentBuilder.InsertField` 적절한 필드 코드를 지정하는 방법입니다. 예를 들어 다음을 사용할 수 있습니다.`builder.InsertField("MERGEFIELD CustomerName")` 문서에 병합 필드를 삽입합니다.
+ A: .NET용 Aspose.Words를 사용하여 Word 문서에 필드를 삽입하려면 다음을 사용할 수 있습니다.`DocumentBuilder.InsertField` 적절한 필드 코드를 지정하는 방법입니다. 예를 들어 다음을 사용할 수 있습니다.`builder.InsertField("MERGEFIELD CustomerName")`문서에 병합 필드를 삽입합니다.
 
 #### Q: .NET용 Aspose.Words를 사용하여 문서의 필드를 어떻게 업데이트할 수 있나요?
 
- A: .NET용 Aspose.Words를 사용하여 문서 필드를 업데이트하려면 다음을 사용할 수 있습니다.`Document.UpdateFields`방법. 그러면 병합 필드, 날짜 필드 등과 같이 문서에 있는 모든 필드가 업데이트됩니다.
+ A: .NET용 Aspose.Words를 사용하여 문서 필드를 업데이트하려면 다음을 사용할 수 있습니다.`Document.UpdateFields` 방법. 그러면 병합 필드, 날짜 필드 등과 같이 문서에 있는 모든 필드가 업데이트됩니다.
 
 #### Q: .NET용 Aspose.Words의 특정 필드 값을 어떻게 검색할 수 있나요?
 

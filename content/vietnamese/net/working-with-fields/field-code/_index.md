@@ -30,7 +30,7 @@ Hãy nhớ thay thế "Hyperlinks.docx" bằng tên tệp của riêng bạn.
 
 ## Bước 3: Duyệt các trường tài liệu
 
- Chúng tôi sử dụng một`foreach` vòng lặp để lặp qua tất cả các trường có trong tài liệu.
+ Chúng tôi sử dụng một`foreach`vòng lặp để lặp qua tất cả các trường có trong tài liệu.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Phần này kết thúc hướng dẫn của chúng tôi về cách sử dụng 
 
 #### Câu hỏi: Làm cách nào tôi có thể chèn một trường vào tài liệu Word bằng Aspose.Words cho .NET?
 
- Trả lời: Để chèn một trường vào tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`DocumentBuilder.InsertField` phương pháp xác định mã trường thích hợp. Ví dụ, bạn có thể sử dụng`builder.InsertField("MERGEFIELD CustomerName")` để chèn trường hợp nhất vào tài liệu.
+ Trả lời: Để chèn một trường vào tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`DocumentBuilder.InsertField` phương pháp xác định mã trường thích hợp. Ví dụ, bạn có thể sử dụng`builder.InsertField("MERGEFIELD CustomerName")`để chèn trường hợp nhất vào tài liệu.
 
 #### Câu hỏi: Làm cách nào tôi có thể cập nhật các trường trong tài liệu bằng Aspose.Words cho .NET?
 
- Trả lời: Để cập nhật các trường tài liệu bằng Aspose.Words cho .NET, bạn có thể sử dụng`Document.UpdateFields`phương pháp. Điều này sẽ cập nhật tất cả các trường có trong tài liệu, chẳng hạn như trường hợp nhất, trường ngày, v.v.
+ Trả lời: Để cập nhật các trường tài liệu bằng Aspose.Words cho .NET, bạn có thể sử dụng`Document.UpdateFields` phương pháp. Điều này sẽ cập nhật tất cả các trường có trong tài liệu, chẳng hạn như trường hợp nhất, trường ngày, v.v.
 
 #### Câu hỏi: Làm cách nào tôi có thể truy xuất giá trị của một trường cụ thể trong Aspose.Words cho .NET?
 

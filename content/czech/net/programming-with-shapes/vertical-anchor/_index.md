@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-shapes/vertical-anchor/
 ---
 
-Tento výukový program vysvětluje, jak použít funkci svislého ukotvení v Aspose.Words pro .NET k umístění tvaru svisle v dokumentu. Nastavením vlastnosti vertikálního ukotvení tvaru můžete ovládat jeho vertikální zarovnání vzhledem k textu nebo stránce.
+Tento výukový program vysvětluje, jak používat funkci svislého ukotvení v Aspose.Words pro .NET k umístění tvaru svisle v dokumentu. Nastavením vlastnosti vertikálního ukotvení tvaru můžete ovládat jeho vertikální zarovnání vzhledem k textu nebo stránce.
 
 ## Předpoklady
 Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Vložte a nakonfigurujte tvar
-Vložte tvar do dokumentu pomocí`InsertShape` metoda`DocumentBuilder` objekt. Nastavte požadované rozměry tvaru.
+ Vložte tvar do dokumentu pomocí`InsertShape` metoda`DocumentBuilder` objekt. Nastavte požadované rozměry tvaru.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## Krok 6: Uložte dokument
- Uložte dokument do určeného adresáře pomocí`Save` metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu uložíme dokument jako "WorkingWithShapes.VerticalAnchor.docx".
+ Uložte dokument do určeného adresáře pomocí`Save`metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu uložíme dokument jako "WorkingWithShapes.VerticalAnchor.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

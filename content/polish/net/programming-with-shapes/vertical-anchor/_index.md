@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Wstaw i skonfiguruj kształt
-Wstaw kształt do dokumentu za pomocą`InsertShape` metoda`DocumentBuilder` obiekt. Ustaw żądane wymiary kształtu.
+ Wstaw kształt do dokumentu za pomocą`InsertShape` metoda`DocumentBuilder` obiekt. Ustaw żądane wymiary kształtu.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## Krok 6: Zapisz dokument
- Zapisz dokument w określonym katalogu za pomocą`Save` metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithShapes.VerticalAnchor.docx”.
+ Zapisz dokument w określonym katalogu za pomocą`Save`metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithShapes.VerticalAnchor.docx”.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

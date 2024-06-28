@@ -1,6 +1,6 @@
 ---
-title: Rijopmaak Schakel het verdelen over pagina's uit
-linktitle: Rijopmaak Schakel het verdelen over pagina's uit
+title: Rijopmaak Schakel het splitsen van pagina's uit
+linktitle: Rijopmaak Schakel het splitsen van pagina's uit
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u regeleinde voor een tabel op meerdere pagina's in een Word-document kunt uitschakelen met Aspose.Words voor .NET.
 type: docs

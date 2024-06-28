@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## 2. Adım: Yer işaretlerinden üst satırları alın
 
- biz kullanıyoruz`GetAncestor` yer iminin başlangıç ve bitiş düğümlerinin üst satırlarını alma yöntemleri:
+ biz kullanıyoruz`GetAncestor` Yer iminin başlangıç ve bitiş düğümlerinin üst satırlarını alma yöntemleri:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

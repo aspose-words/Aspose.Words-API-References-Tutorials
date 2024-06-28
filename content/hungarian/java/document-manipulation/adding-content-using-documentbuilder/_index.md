@@ -233,7 +233,7 @@ builder.writeln("This is the 3rd paragraph.");
 
 ## Következtetés
 
-Ebben az átfogó útmutatóban feltártuk az Aspose.Words for Java DocumentBuilder képességeit, amellyel különféle típusú tartalmakat adhat hozzá Word dokumentumokhoz. Lefedtük a szöveget, a táblázatokat, a vízszintes szabályokat, az űrlapmezőket, a HTML-t, a hiperhivatkozásokat, a tartalomjegyzéket, a képeket, a bekezdéseket és a kurzormozgást.
+Ebben az átfogó útmutatóban feltártuk az Aspose.Words for Java DocumentBuilder képességeit, amellyel különféle típusú tartalmakat adhatunk Word dokumentumokhoz. Lefedtük a szöveget, a táblázatokat, a vízszintes szabályokat, az űrlapmezőket, a HTML-t, a hiperhivatkozásokat, a tartalomjegyzéket, a képeket, a bekezdéseket és a kurzormozgást.
 
 ## GYIK
 

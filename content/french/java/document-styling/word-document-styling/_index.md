@@ -119,7 +119,7 @@ builder.writeln("Introduction");
 
 ### 1. Choix des polices et définition des propriétés des polices
 
-Aspose.Words for Java vous permet de spécifier des noms de police, des tailles et des styles pour votre texte.
+Aspose.Words for Java vous permet de spécifier les noms, tailles et styles de police pour votre texte.
 
 ```java
 import com.aspose.words.Font;
@@ -219,7 +219,7 @@ style.getFont().setSize(18);
 
 ### 2. Création et application de styles personnalisés
 
-Vous pouvez créer des styles personnalisés et les appliquer à des paragraphes ou à des passages de texte.
+Vous pouvez créer des styles personnalisés et les appliquer à des paragraphes ou à des séquences de texte.
 
 ```java
 Style customStyle = doc.getStyles().add(StyleType.PARAGRAPH, "CustomStyle");

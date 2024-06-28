@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Muat Dokumen Sumber dan Tujuan
 
- Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
+Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words.`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Langkah 4: Atur Pemformatan Paragraf "Simpan dengan Berikutnya" untuk Dokumen Sumber
 
-Untuk menyatukan paragraf-paragraf dalam dokumen sumber, Anda dapat mengulangi setiap paragraf dalam dokumen dan mengaturnya`KeepWithNext`properti ke`true`.
+ Untuk menyatukan paragraf-paragraf dalam dokumen sumber, Anda dapat mengulangi setiap paragraf dalam dokumen dan mengaturnya`KeepWithNext`properti ke`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

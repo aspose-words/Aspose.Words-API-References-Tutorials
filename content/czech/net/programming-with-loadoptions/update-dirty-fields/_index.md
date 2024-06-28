@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## Závěr
 
-V této příručce jsme vysvětlili, jak nahrát dokument aktualizací nečistých polí pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Aktualizace Nečistých polí při načtení dokumentu zobrazí nejnovější hodnoty ve vašem dokumentu Word.
+V této příručce jsme vysvětlili, jak nahrát dokument aktualizací nečistých polí pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Aktualizace špinavých polí při načítání dokumentu zobrazí nejnovější hodnoty ve vašem dokumentu Word.
 
 
 ### Časté dotazy k aktualizaci špinavých polí v dokumentu aplikace Word

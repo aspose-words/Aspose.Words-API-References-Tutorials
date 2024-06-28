@@ -2,176 +2,156 @@
 title: Zobrazit skrýt obsah označený záložkou v dokumentu aplikace Word
 linktitle: Zobrazit skrýt obsah označený záložkou v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak zobrazit nebo skrýt obsah záložek v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak dynamicky zobrazit nebo skrýt obsah označený záložkou v dokumentech aplikace Word pomocí Aspose.Words for .NET s tímto komplexním průvodcem krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-tomto článku prozkoumáme výše uvedený zdrojový kód C#, abychom pochopili, jak používat funkci Zobrazit skrýt obsah se záložkami v knihovně Aspose.Words for .NET. Tato funkce umožňuje zobrazit nebo skrýt obsah záložky v dokumentu aplikace Word na základě konkrétní podmínky při slučování dat.
+## Úvod
+
+Nazdárek! Chtěli jste někdy ovládat viditelnost konkrétního obsahu v dokumentu aplikace Word na základě určitých podmínek? S Aspose.Words for .NET můžete dynamicky zobrazit nebo skrýt obsah se záložkami pomocí několika řádků kódu. V tomto tutoriálu vás provedu procesem krok za krokem a zajistím, že porozumíte každé části kódu. Nakonec z vás bude profesionál v manipulaci se záložkami v dokumentech aplikace Word. Začněme!
 
 ## Předpoklady
 
-- Základní znalost jazyka C#.
-- Vývojové prostředí .NET s nainstalovanou knihovnou Aspose.Words.
+Než se vrhneme na tutoriál, ujistěte se, že máte vše, co potřebujete:
 
-## Krok 1: Získání záložky
+1. Základní znalost C#: Měli byste být spokojeni se syntaxí a koncepty C#.
+2.  Aspose.Words pro .NET: Stáhněte si ji[tady](https://releases.aspose.com/words/net/) . Pokud nejste připraveni na nákup, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/).
+3. Visual Studio: Bude fungovat jakákoli nejnovější verze, ale doporučuje se používat nejnovější verzi.
+4. .NET Framework: Ujistěte se, že je na vašem počítači nainstalováno.
 
- Používáme`Bookmarks` vlastnost rozsahu dokumentu, abychom získali konkrétní záložku, na které chceme zobrazit nebo skrýt obsah:
+Jste připraveni začít? Skvělý! Začněme importem potřebných jmenných prostorů.
+
+## Importovat jmenné prostory
+
+Chcete-li používat Aspose.Words pro .NET, musíme importovat požadované jmenné prostory. Tento krok zajišťuje, že máme přístup ke všem třídám a metodám, které budeme používat.
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Krok 2: Vložení slučovacích polí
+Tyto jmenné prostory jsou klíčové pro práci s dokumenty aplikace Word a manipulaci s jejich obsahem.
 
- Používáme nástroj pro tvorbu dokumentů`DocumentBuilder` pro vložení nezbytných slučovacích polí. Tato slučovací pole nastaví podmínku pro zobrazení nebo skrytí obsahu záložky v závislosti na hodnotě`showHide` proměnná:
+## Krok 1: Nastavení dokumentu
+
+Nejprve vytvořte nový dokument aplikace Word a tvůrce dokumentů. Tvůrce dokumentů nám pomáhá snadno přidávat a manipulovat s obsahem v dokumentu.
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## Krok 3: Přesunutí obsahu záložky
+V tomto kroku inicializujeme nový dokument a tvůrce dokumentů. Tím se naše prostředí nastaví pro další operace.
 
-Procházíme obsah záložky a posouváme ji tak, aby se objevila
+## Krok 2: Přidání obsahu označeného záložkou
 
-isse před záložkou. To bude ovládat zobrazení nebo skrytí obsahu na základě zadané podmínky:
+Dále do dokumentu přidáme nějaký obsah a vytvoříme kolem něj záložku. Tato záložka nám pomůže identifikovat a manipulovat s obsahem.
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ Zde přidáme nějaký text před a za obsah označený záložkou. The`StartBookmark` a`EndBookmark` metody definují hranice záložky.
+
+## Krok 3: Vložení podmíněného pole
+
+ovládání viditelnosti obsahu označeného záložkou použijeme podmíněné pole. Toto pole zkontroluje podmínku a podle toho zobrazí nebo skryje obsah.
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+V tomto kroku vložíme pole IF, které kontroluje hodnotu záložky. Pokud je hodnota "true", zobrazí se "Visible"; jinak se zobrazí "Skrytý".
+
+## Krok 4: Přeuspořádání uzlů
+
+Dále musíme změnit uspořádání uzlů, abychom zajistili, že se podmíněná logika správně aplikuje na obsah v záložkách.
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## Krok 4: Přesunutí zbytku obsahu záložky
-
-Zbytek obsahu záložky přesuneme za záložku, přičemž jako bod vložení použijeme koncový uzel záložky:
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## Krok 5: Provedení sloučení
+Zde přesouváme uzly, abychom se ujistili, že podmínka správně zahrnuje obsah v záložkách.
 
- Používáme`Execute` způsob dokumentu`s `Sloučení emailů` object to execute the merge using the bookmark name and the value of the `showHide` proměnná:
+## Krok 5: Provedení hromadné korespondence
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### Příklad zdrojového kódu pro Show Hide Bookmarked Content pomocí Aspose.Words for .NET
-
-Zde je úplný příklad zdrojového kódu, který demonstruje zobrazení nebo skrytí obsahu záložek pomocí Aspose.Words for .NET:
+Nakonec provedeme hromadnou korespondenci, abychom nastavili hodnotu záložky a určili, zda se má obsah zobrazit nebo skrýt.
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MERGEFIELD bookmark}" = "true" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+Tento krok nastaví hodnotu záložky na "true", což zviditelní obsah na základě našeho stavu.
+
+## Krok 6: Uložení dokumentu
+
+Po všech manipulacích je posledním krokem uložení upraveného dokumentu.
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+Zde dokument uložíme s popisným názvem souboru pro označení změn.
 
 ## Závěr
 
-V tomto článku jsme prozkoumali zdrojový kód jazyka C#, abychom pochopili, jak používat funkci Zobrazit skrýt obsah se záložkami Aspose.Words for .NET. Postupovali jsme podle podrobného průvodce, jak zobrazit nebo skrýt obsah záložky na základě konkrétní podmínky při slučování dat.
+ A to je vše! Úspěšně jste se naučili, jak zobrazit nebo skrýt obsah označený záložkou v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval vytvářením dokumentu, přidáváním záložek, vkládáním podmíněných polí, přeskupováním uzlů a prováděním hromadné korespondence. Aspose.Words nabízí nepřeberné množství funkcí, takže neváhejte a prozkoumejte[API dokumentace](https://reference.aspose.com/words/net/) pro pokročilejší možnosti.
 
-### Časté dotazy pro show skrýt záložkovaný obsah v dokumentu aplikace Word
+## Nejčastější dotazy
 
-#### Otázka: Mohu použít stejnou podmínku pro více záložek ve stejném dokumentu?
+### 1. Co je Aspose.Words pro .NET?
 
-Odpověď: Ano, stejnou podmínku můžete použít pro více záložek ve stejném dokumentu. Opakujte kroky 2-5 pro každou záložku, upravte název záložky a volitelně hodnotu`showhide` variabilní dle potřeby.
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově. Je široce používán pro úlohy automatizace dokumentů.
 
-#### Otázka: Jak mohu přidat další podmínky pro zobrazení nebo skrytí obsahu záložek?
+### 2. Mohu používat Aspose.Words pro .NET zdarma?
 
- A: Chcete-li přidat další podmínky, můžete použít logické operátory jako např`AND` a`OR` v kódu pro vkládání slučovacích polí v kroku 2. Upravte podmínku v následujícím kódu a přidejte další podmínky:
+ Můžete zkusit Aspose.Words for .NET pomocí a[zkušební verze zdarma](https://releases.aspose.com/). Pro dlouhodobé používání si budete muset zakoupit licenci.
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. Jak mohu upravit další vlastnosti záložky?
 
-#### Otázka: Jak mohu odstranit záložku v dokumentu aplikace Word pomocí Aspose.Words for .NET?
+ Aspose.Words vám umožňuje manipulovat s různými vlastnostmi záložky, jako je její text a umístění. Odkazovat na[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
 
- Odpověď: Chcete-li odstranit záložku v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete použít`Remove` metoda z`Bookmarks` sbírka rozsahu dokumentů. Zde je ukázkový kód pro smazání konkrétní záložky:
+### 4. Jak získám podporu pro Aspose.Words for .NET?
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+Podporu můžete získat návštěvou stránky[Aspose fórum podpory](https://forum.aspose.com/c/words/8).
 
-#### Otázka: Je knihovna Aspose.Words zdarma?
+### 5. Mohu pomocí Aspose.Words for .NET manipulovat s jinými typy obsahu?
 
- A: Knihovna Aspose.Words je komerční knihovna a pro použití ve vašich projektech vyžaduje platnou licenci. Můžeš zkontrolovat[Aspose.Words for .NET API odkazy](https://reference.aspose.com/words/net/) se dozvíte více o možnostech licencování a cenách.
-
-#### Otázka: Jsou k dispozici další knihovny pro zpracování textu s dokumenty Word v .NET?
-
-Odpověď: Ano, pro textové zpracování s dokumenty Word v .NET jsou k dispozici další knihovny, jako je Open XML SDK a GemBox.Document. Tyto knihovny můžete prozkoumat jako alternativy k Aspose.Words na základě vašich konkrétních potřeb a preferencí.
+Ano, Aspose.Words for .NET podporuje různé typy manipulace s obsahem, včetně textu, obrázků, tabulek a dalších.

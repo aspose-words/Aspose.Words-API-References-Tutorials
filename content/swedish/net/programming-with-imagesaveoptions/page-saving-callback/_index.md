@@ -1,6 +1,6 @@
 ---
-title: Sidspara återuppringning
-linktitle: Sidspara återuppringning
+title: Sidspara Återuppringning
+linktitle: Sidspara Återuppringning
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du anpassar spara dokumentsidor till bilder med Aspose.Words för .NET.
 type: docs
@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          // Implementera dina anpassade åtgärder här
          // Du kan komma åt sidinformation via egenskapen "args.PageIndex".
-         // Du kan också ändra sparalternativ för varje sida individuellt
+         // Du kan också ändra sparalternativ för varje sida individuellt.
      }
 }
 ```

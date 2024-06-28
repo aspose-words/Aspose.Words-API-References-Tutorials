@@ -104,5 +104,5 @@ Odp.: Kreator pól w Aspose.Words umożliwia wstawianie różnych typów pól do
 
 #### P: Jak dostosować pola wstawione za pomocą narzędzia do tworzenia pól?
 
-Odp.: Kreator pól oferuje opcje dostosowywania wstawionych pól. Metod i właściwości konstruktora pól można używać do ustawiania opcji, takich jak formatowanie pola, argumenty, przełączniki i wartości domyślne. Na przykład możesz ustawić format daty, format liczb, separator tysięcy itp.
+Odp.: Kreator pól oferuje opcje dostosowywania wstawionych pól. Metod i właściwości konstruktora pól można używać do ustawiania opcji, takich jak formatowanie pól, argumenty, przełączniki i wartości domyślne. Na przykład możesz ustawić format daty, format liczb, separator tysięcy itp.
   

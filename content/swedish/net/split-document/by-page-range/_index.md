@@ -74,7 +74,7 @@ Utforska gärna andra kraftfulla funktioner som erbjuds av Aspose.Words för .NE
  Ja, du kan extrahera icke-konsekutiva sidor genom att ange önskat sidintervall. Om du till exempel vill extrahera sidorna 1, 3 och 5 kan du ställa in sidintervallet som`1,3,5` i`ExtractPages` fungera.
 
 #### F2: Är det möjligt att extrahera ett specifikt sidintervall från flera dokument samtidigt?
-Ja, du kan använda funktionen "Efter sidintervall" på flera dokument. Ladda helt enkelt varje dokument individuellt och extrahera önskat sidintervall med hjälp av`ExtractPages` fungera. Du kan sedan spara de extraherade sidorna från varje dokument separat.
+ Ja, du kan använda funktionen "Efter sidintervall" på flera dokument. Ladda helt enkelt varje dokument individuellt och extrahera önskat sidintervall med hjälp av`ExtractPages` fungera. Du kan sedan spara de extraherade sidorna från varje dokument separat.
 
 #### F3: Kan jag extrahera sidintervall från krypterade eller lösenordsskyddade Word-dokument?
 Nej, funktionen "Efter sidintervall" fungerar på oskyddade Word-dokument. Om ett dokument är krypterat eller lösenordsskyddat måste du ange rätt lösenord och ta bort skyddet innan du extraherar det önskade sidintervallet.

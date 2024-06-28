@@ -37,7 +37,7 @@ doc.FirstSection.Body.AppendChild(para2);
 ```
 
 ## Paso 2: crear un comentario y agregar un rango de comentarios
-continuación, cree un comentario y asócielo con un texto específico utilizando los objetos CommentRangeStart y CommentRangeEnd:
+A continuación, cree un comentario y asócielo con un texto específico utilizando los objetos CommentRangeStart y CommentRangeEnd:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Crea tres objetos Ejecutar.
-// Los dos primeros ejecutan algo de texto, mientras que el tercero ejecuta un comentario.
+//Los dos primeros ejecutan algo de texto, mientras que el tercero ejecuta un comentario.
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ R: Para agregar un ancla de comentario en un documento Aspose.Words para .NET, s
 
 #### P: ¿Cómo puedo editar el texto de un comentario vinculado a un ancla de comentario en Aspose.Words para .NET?
 
- R: Para modificar el texto de un comentario vinculado a un ancla de comentario en Aspose.Words para .NET, puede acceder a`Comment.Text` propiedad de la correspondiente`Comment` objeto y modifique el texto según sea necesario.
+R: Para modificar el texto de un comentario vinculado a un ancla de comentario en Aspose.Words para .NET, puede acceder a`Comment.Text` propiedad de la correspondiente`Comment` objeto y modifique el texto según sea necesario.
 

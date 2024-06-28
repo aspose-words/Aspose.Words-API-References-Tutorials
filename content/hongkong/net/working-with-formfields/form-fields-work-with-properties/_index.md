@@ -31,7 +31,7 @@ FormField formField = doc.Range.FormFields[3];
 
 ## 步驟 3：使用表單欄位屬性進行文字處理
 
-您可以根據表單欄位的類型來操作表單欄位的各種屬性。在此範例中，我們檢查表單欄位的類型是否為`FieldType.FieldFormTextInput`並設定其`Result`相應的財產：
+您可以根據表單欄位的類型來操作表單欄位的各種屬性。在此範例中，我們檢查表單欄位的類型是否為`FieldType.FieldFormTextInput`並設置其`Result`相應的財產：
 
 ```csharp
 if (formField.Type == FieldType.FieldFormTextInput)

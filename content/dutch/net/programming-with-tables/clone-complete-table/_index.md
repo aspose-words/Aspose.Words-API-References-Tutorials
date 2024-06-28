@@ -65,10 +65,10 @@ Zorg ervoor dat u het juiste pad en de juiste bestandsnaam voor het uitvoerdocum
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//Kloon de tabel en plaats deze na het origineel in het document.
+	// Kloon de tabel en plaats deze na het origineel in het document.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Voeg een lege alinea in tussen de twee tabellen,
+	//Voeg een lege alinea in tussen de twee tabellen,
 	// anders worden ze bij het opslaan tot één samengevoegd. Dit heeft te maken met documentvalidatie.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

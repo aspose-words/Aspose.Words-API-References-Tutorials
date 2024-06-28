@@ -57,7 +57,7 @@ Dönüştürme sırasında biçimlendirmenin korunup korunmayacağı, kullandı�
 
 #### Dönüştürme sürecinin sınırlamaları nelerdir?
 
-Dönüştürme işleminin sınırlamaları, kullandığınız belirli araca veya kitaplığa bağlıdır. Bazı araçlarda metin tanıma, karmaşık düzen veya PDF'ye gömülü resimlerle ilgili kısıtlamalar bulunabilir. Dönüştürme sırasında bilinçli kararlar verebilmek için seçilen aracın özelliklerini ve sınırlamalarını tam olarak anlamak önemlidir.
+Dönüştürme işleminin sınırlamaları, kullandığınız belirli araca veya kitaplığa bağlıdır. Bazı araçların metin tanıma, karmaşık düzen veya PDF'ye gömülü resimlerle ilgili kısıtlamaları olabilir. Dönüştürme sırasında bilinçli kararlar verebilmek için seçilen aracın özelliklerini ve sınırlamalarını tam olarak anlamak önemlidir.
 
 #### Aspose, PDF'yi Word formatına dönüştürmek için güvenilir bir araç mıdır?
 

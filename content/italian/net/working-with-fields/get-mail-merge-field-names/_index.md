@@ -62,7 +62,7 @@ Questo conclude la nostra guida sull'utilizzo della funzione "Ottieni nomi campi
 
 #### Q1: Cos'è la stampa unione in Aspose.Words?
 
-La stampa unione in Aspose.Words è un processo per unire dati da una fonte esterna (ad esempio foglio di calcolo Excel o database) con un modello di documento Word per creare documenti personalizzati. Ciò facilita la generazione automatizzata di lettere, rapporti e altri documenti simili.
+La stampa unione in Aspose.Words è un processo per unire i dati da una fonte esterna (ad esempio, un foglio di calcolo o un database Excel) con un modello di documento Word per creare documenti personalizzati. Ciò facilita la generazione automatizzata di lettere, rapporti e altri documenti simili.
 
 #### Q2: Come posso ottenere l'elenco dei campi di stampa unione disponibili in un documento di Word?
 
@@ -96,7 +96,7 @@ foreach (string fieldName in fieldNames)
 
 #### D: Cos'è la stampa unione in Aspose.Words?
 
-R: La stampa unione in Aspose.Words è un processo per unire i dati da una fonte esterna (ad esempio, un foglio di calcolo o un database Excel) con un modello di documento Word per creare documenti personalizzati. Ciò facilita la generazione automatizzata di lettere, rapporti e altri documenti simili.
+R: La stampa unione in Aspose.Words è un processo per unire dati da una fonte esterna (ad esempio, foglio di calcolo o database Excel) con un modello di documento Word per creare documenti personalizzati. Ciò facilita la generazione automatizzata di lettere, rapporti e altri documenti simili.
 
 #### D: Come posso ottenere l'elenco dei campi di stampa unione disponibili in un documento di Word?
 
@@ -116,4 +116,4 @@ R: Sì, è possibile filtrare i campi della stampa unione in base a determinati 
 
 #### D: Come posso manipolare i campi di stampa unione in Aspose.Words?
 
-R: Per manipolare i campi di stampa unione in Aspose.Words, è possibile utilizzare i metodi e le proprietà forniti dagli oggetti Document e MailMergeField. È possibile aggiungere, rimuovere o aggiornare i campi della stampa unione, nonché recuperare e modificare i valori associati ai campi.
+R: Per manipolare i campi di stampa unione in Aspose.Words, è possibile utilizzare i metodi e le proprietà forniti dagli oggetti Document e MailMergeField. Puoi aggiungere, rimuovere o aggiornare i campi della stampa unione, nonché recuperare e modificare i valori associati ai campi.

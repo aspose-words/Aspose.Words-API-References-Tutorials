@@ -18,7 +18,7 @@ Písma hrají zásadní roli v designu a čitelnosti dokumentu. Aspose.Words for
 
 Než se ponoříte do kódu, ujistěte se, že máte splněny následující předpoklady:
 
-1.  Knihovna Aspose.Words for Java: Ujistěte se, že jste si stáhli a nainstalovali knihovnu Aspose.Words for Java. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/java/).
+1.  Knihovna Aspose.Words for Java: Ujistěte se, že jste si stáhli a nainstalovali knihovnu Aspose.Words for Java. Můžeš[stáhněte si to zde](https://releases.aspose.com/words/java/).
 
 2. Vývojové prostředí Java: Ujistěte se, že máte nastavené vývojové prostředí Java.
 

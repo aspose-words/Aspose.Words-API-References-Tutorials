@@ -70,11 +70,11 @@ Neváhejte a prozkoumejte další funkce a možnosti poskytované Aspose.Words p
 
 #### Na jaké formáty mohu rozdělit dokument aplikace Word?
 
-Poskytnutý zdrojový kód ukazuje rozdělení dokumentu aplikace Word na menší části ve formátu HTML. Aspose.Words for .NET však podporuje různé výstupní formáty, včetně DOCX, PDF, EPUB a dalších. Můžete upravit kód a zadat požadovaný výstupní formát v`HtmlSaveOptions` objekt podle toho.
+ Poskytnutý zdrojový kód ukazuje rozdělení dokumentu aplikace Word na menší části ve formátu HTML. Aspose.Words for .NET však podporuje různé výstupní formáty, včetně DOCX, PDF, EPUB a dalších. Můžete upravit kód a zadat požadovaný výstupní formát v`HtmlSaveOptions` objekt podle toho.
 
 #### Mohu zvolit jiná kritéria pro rozdělení dokumentu?
 
- Ano, můžete si vybrat jiná kritéria pro rozdělení dokumentu na základě vašich požadavků. Aspose.Words for .NET poskytuje několik možností kritérií, jako např`HeadingParagraph`, `Page`, `Section` , a více. Upravte`DocumentSplitCriteria` nemovitost v`HtmlSaveOptions` objektu a vyberte vhodná kritéria pro rozdělení.
+Ano, můžete si vybrat jiná kritéria pro rozdělení dokumentu na základě vašich požadavků. Aspose.Words for .NET poskytuje několik možností kritérií, jako např`HeadingParagraph`, `Page`, `Section` , a více. Upravte`DocumentSplitCriteria` nemovitost v`HtmlSaveOptions` objektu a vyberte vhodná kritéria pro rozdělení.
 
 #### Jak mohu přizpůsobit výstupní HTML pro rozdělené části?
 

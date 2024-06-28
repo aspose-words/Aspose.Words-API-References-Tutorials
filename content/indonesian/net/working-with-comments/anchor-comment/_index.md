@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Buat tiga objek Jalankan.
-// Dua yang pertama menjalankan beberapa teks, sedangkan yang ketiga menjalankan Komentar
+//Dua yang pertama menjalankan beberapa teks, sedangkan yang ketiga menjalankan Komentar
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ J: Untuk menambahkan jangkar komentar di dokumen Aspose.Words for .NET, ikuti la
 
 #### T: Bagaimana cara mengedit teks komentar yang ditautkan ke jangkar komentar di Aspose.Words untuk .NET?
 
- J: Untuk mengubah teks komentar yang terikat pada jangkar komentar di Aspose.Words untuk .NET, Anda dapat mengakses`Comment.Text` milik yang bersangkutan`Comment` objek dan memodifikasi teks sesuai kebutuhan.
+J: Untuk mengubah teks komentar yang terikat pada jangkar komentar di Aspose.Words untuk .NET, Anda dapat mengakses`Comment.Text` milik yang bersangkutan`Comment` objek dan memodifikasi teks sesuai kebutuhan.
 

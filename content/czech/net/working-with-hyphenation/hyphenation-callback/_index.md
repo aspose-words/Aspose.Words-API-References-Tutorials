@@ -2,107 +2,148 @@
 title: Zpětné volání dělení slov
 linktitle: Zpětné volání dělení slov
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se používat zpětné volání dělení slov v Aspose.Words pro .NET ke zpracování dělení slov.
+description: Naučte se implementovat zpětné volání dělení slov v Aspose.Words pro .NET a vylepšit formátování dokumentu pomocí tohoto komplexního podrobného průvodce.
 type: docs
 weight: 10
 url: /cs/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-V tomto podrobném tutoriálu vám ukážeme, jak používat funkci zpětného volání dělení slov v Aspose.Words pro .NET. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+## Úvod
 
- Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nakonfigurovaný ve svém vývojovém prostředí. Pokud jste tak ještě neučinili, stáhněte si a nainstalujte knihovnu z[Aspose.Releases]https://releases.aspose.com/words/net/.
+Nazdárek! Zapletli jste se někdy do složitosti formátování textu, zejména při práci s jazyky, které vyžadují dělení slov? Nejsi sám. Dělení slov, i když je klíčové pro správné rozvržení textu, může být trochu bolehlav. Ale Hádej co? Aspose.Words for .NET vám drží záda. Tato výkonná knihovna umožňuje bezproblémovou správu formátování textu, včetně zpracování dělení slov pomocí mechanismu zpětného volání. Zaujalo? Pojďme se ponořit do toho, jak můžete implementovat zpětné volání dělení slov pomocí Aspose.Words pro .NET.
 
-## Krok 1: Uložte připomenutí dělení slov
+## Předpoklady
 
- Nejprve zaregistrujeme zpětné volání dělení slov pomocí vlastního`CustomHyphenationCallback` třída. To nám umožní zacházet s dělením slov podle našich vlastních pravidel:
+Než si ušpiníme ruce kódem, ujistěte se, že máte vše, co potřebujete:
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu. Můžeš[stáhněte si to zde](https://releases.aspose.com/words/net/).
+2. IDE: Vývojové prostředí jako Visual Studio.
+3. Základní znalost C#: Pochopení C# a .NET frameworku.
+4. Slovníky dělení slov: Slovníky dělení slov pro jazyky, které plánujete používat.
+5.  Licence Aspose: Platná licence Aspose. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pokud žádný nemáte.
 
- Ujistěte se, že jste implementovali`CustomHyphenationCallback` třídy podle vašich konkrétních potřeb.
+## Importovat jmenné prostory
 
-## Krok 2: Načtení dokumentu a použití dělení slov
-
-Dále načtěte dokument ze zadaného adresáře a rozdělte slova pomocí Aspose.Words:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## Krok 3: Zpracování chyb chybějících slovníků
-
-případě, že chybí slovník dělení slov, zachytíme odpovídající výjimku a zobrazíme chybovou zprávu:
+Nejprve importujme potřebné jmenné prostory. To zajišťuje, že náš kód má přístup ke všem třídám a metodám, které potřebujeme z Aspose.Words.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## Krok 4: Vyčištění a zakázání připomenutí dělení slov
+## Krok 1: Zaregistrujte zpětné volání dělení slov
 
-Nakonec pro čistotu a vypnutí připomenutí dělení slov proveďte následující kroky:
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-Tím se po dokončení zpracování vyčistí a zakáže připomenutí dělení slov.
-
-Tak ! Úspěšně jste použili zpětné volání dělení slov v Aspose.Words pro .NET.
-
-### Ukázkový zdrojový kód pro zpětné volání dělení slov s Aspose.Words pro .NET
+Chcete-li začít, musíme zaregistrovat naše zpětné volání dělení slov. Zde říkáme Aspose.Words, aby použil naši vlastní logiku dělení slov.
 
 ```csharp
 try
 {
-	 // Zaregistrujte zpětné volání dělení slov.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // Zaregistrujte zpětné volání dělení slov.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ Zde vytváříme instanci našeho vlastního zpětného volání a přiřazujeme ji`Hyphenation.Callback`.
+
+## Krok 2: Definujte cestu dokumentu
+
+Dále musíme definovat adresář, kde jsou uloženy naše dokumenty. To je zásadní, protože budeme načítat a ukládat dokumenty z této cesty.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašim dokumentům.
+
+## Krok 3: Vložte dokument
+
+Nyní načteme dokument, který vyžaduje dělení slov.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ Zde načítáme německý textový dokument. Můžete vyměnit`"German text.docx"` s názvem souboru vašeho dokumentu.
+
+## Krok 4: Uložte dokument
+
+Po načtení dokumentu jej uložíme do nového souboru, přičemž v procesu použijeme zpětné volání dělení slov.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+Tento řádek uloží dokument jako PDF s použitým dělením slov.
+
+## Krok 5: Ošetřete chybějící výjimku slovníku dělení slov
+
+Někdy můžete narazit na problém, kdy chybí slovník dělení slov. Pojďme to zvládnout.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-Neváhejte použít tento kód ve svých vlastních projektech a upravit jej tak, aby vyhovoval vašim konkrétním potřebám.
+V tomto bloku zachytíme konkrétní výjimku související s chybějícími slovníky a zprávu vytiskneme.
 
-### FAQ
+## Krok 6: Implementujte vlastní třídu zpětného volání dělení slov
 
-#### Otázka: Co je připomenutí sylabizace v Aspose.Words?
+ Nyní implementujme`CustomHyphenationCallback` třída, která zpracovává požadavek na slovníky dělení slov.
 
-Odpověď: Připomenutí syllabization v Aspose.Words je funkce, která vám umožňuje přizpůsobit, jak jsou slova ve vašich dokumentech slabikována. Pomocí připomenutí slabikáře můžete určit vlastní pravidla pro slabikování slov, která mohou být užitečná pro konkrétní jazyky nebo konkrétní scénáře, kde výchozí slabikování nepřináší požadované výsledky.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // Zaregistrujte slovník pro požadovaný jazyk.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### Otázka: Jak nastavit připomenutí slabikáře v Aspose.Words?
+ V této třídě je`RequestDictionary` metoda se volá vždy, když je potřeba slovník dělení slov. Zkontroluje jazyk a zaregistruje příslušný slovník.
 
- A: Chcete-li definovat zpětné volání dělení slov v Aspose.Words, musíte vytvořit třídu, která implementuje`HyphenationCallback` rozhraní a implementovat`HandleWord()` metoda. Tato metoda bude volána pro každé slovo, na které narazíte během slabikování. Můžete na něj použít vlastní pravidla slabikování a vrátit slabikované slovo. Potom můžete svázat zpětné volání dělení slov pomocí`Document.HyphenationCallback` vlastnost vašeho dokumentu.
+## Závěr
 
-#### Otázka: Jaká je výhoda použití připomenutí slabikáře v Aspose.Words?
+A tady to máte! Právě jste se naučili, jak implementovat zpětné volání dělení slov v Aspose.Words pro .NET. Pomocí těchto kroků můžete zajistit, že vaše dokumenty budou krásně naformátované bez ohledu na jazyk. Ať už máte co do činění s angličtinou, němčinou nebo jakýmkoli jiným jazykem, tato metoda vám umožní zvládnout dělení slov bez námahy.
 
-Odpověď: Výhodou použití připomenutí slabikáře v Aspose.Words je možnost přizpůsobit, jak jsou slova ve vašich dokumentech slabikována. To vám dává větší kontrolu nad slabikováním, zejména pro konkrétní jazyky nebo scénáře, kde výchozí slabikování nedává požadované výsledky. Na každé slovo můžete použít specifická pravidla, abyste získali přesné slabikování podle svých potřeb.
+## Nejčastější dotazy
 
-#### Otázka: Jaké jsou některé běžné scénáře, kdy může být užitečné připomenutí slabikáře?
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro manipulaci s dokumenty, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty programově.
 
-Odpověď: Použití zesilovače slabikáře může být užitečné v několika scénářích, například:
-- Slabikování slov v konkrétních jazycích, které mají určitá pravidla slabikování.
-- Aplikace personalizovaných pravidel slabikování pro akronymy nebo odborná slova.
-- Úprava slabikování podle stylistických preferencí nebo typografických norem.
+### Proč je dělení slov důležité při formátování dokumentu?
+Dělení slov zlepšuje rozvržení textu rozdělením slov na vhodná místa, což zajišťuje čitelnější a vizuálně přitažlivější dokument.
 
-#### Otázka: Jak mohu v Aspose.Words otestovat vlastní slabikování pomocí připomenutí slabikáře?
+### Mohu používat Aspose.Words zdarma?
+ Aspose.Words nabízí bezplatnou zkušební verzi. Můžeš to dostat[tady](https://releases.aspose.com/).
 
- Odpověď: Chcete-li otestovat vlastní slabikování pomocí připomenutí slabikáře v Aspose.Words, můžete vytvořit testovací dokument obsahující slova, pro která chcete použít vlastní pravidla slabikování. Poté si můžete nastavit zpětné volání pro vlastní slabiku, zavolejte`Document.Range.Replace()` způsob, jak nahradit slova v dokumentu, a použít`Hyphenate()` metoda`Hyphenation` třídy získat slabikování slov . Slabiková slova pak můžete formátovat podle potřeby, například přidáním pomlček mezi slabiky.
+### Jak získám slovník dělení slov?
+Slovníky dělení slov si můžete stáhnout z různých online zdrojů nebo si v případě potřeby vytvořit vlastní.
+
+### Co se stane, když chybí slovník dělení slov?
+ Pokud slovník chybí,`RequestDictionary` metoda vyvolá výjimku, kterou můžete zpracovat za účelem informování uživatele nebo poskytnutí nouzového řešení.

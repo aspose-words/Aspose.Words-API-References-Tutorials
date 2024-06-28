@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Steg 3: Bygg tabellen
- Använd`StartTable`, `EndTable`, `InsertCell` , och`Write` metoder för`DocumentBuilder` objekt för att bygga ett bord. Ställ in önskad radhöjd och höjdregel med hjälp av`RowFormat` egenskaper.
+ Använd`StartTable`, `EndTable`, `InsertCell` , och`Write` metoder för`DocumentBuilder`objekt för att bygga ett bord. Ställ in önskad radhöjd och höjdregel med hjälp av`RowFormat` egenskaper.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Steg 6: Infoga formen i dokumentet
-Infoga vattenstämpelns form i dokumentet med hjälp av`InsertNode` metod för`DocumentBuilder` objekt. Placera formen med hjälp av`MoveTo` metod för att placera den efter den senaste körningen i dokumentet.
+ Infoga vattenstämpelns form i dokumentet med hjälp av`InsertNode` metod för`DocumentBuilder` objekt. Placera formen med hjälp av`MoveTo` metod för att placera den efter den senaste körningen i dokumentet.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

@@ -14,7 +14,7 @@ In questo tutorial, seguiremo una guida passo passo per comprendere e implementa
 
 Prima di procedere con il tutorial, assicurati di avere i seguenti requisiti:
 
-- Libreria Aspose.Words per .NET installata
+- Aspose.Words per la libreria .NET installata
 - Conoscenza base del linguaggio di programmazione C#
 - Visual Studio o qualsiasi altro IDE compatibile
 

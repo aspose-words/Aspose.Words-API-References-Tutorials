@@ -77,7 +77,7 @@ dstNode.AppendChild(newNode);
 		throw new InvalidOperationException(
 			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 
-	// Korlátozzuk magunkat egy meglehetősen egyszerű forgatókönyvre.
+	// Korlátozzuk magunkat egy ésszerűen egyszerű forgatókönyvre.
 	if (startPara.ParentNode != endPara.ParentNode)
 		throw new InvalidOperationException(
 			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
@@ -89,7 +89,7 @@ dstNode.AppendChild(newNode);
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
 		//Ez létrehozza az aktuális csomópont másolatát, és importálja (érvényessé teszi) a kontextusba
-		// a céldokumentumról. Az importálás a stílusok és a listaazonosítók helyes beállítását jelenti.
+		// a rendeltetési okmány. Az importálás a stílusok és a listaazonosítók helyes beállítását jelenti.
 		Node newNode = importer.ImportNode(curNode, true);
 
 		dstNode.AppendChild(newNode);

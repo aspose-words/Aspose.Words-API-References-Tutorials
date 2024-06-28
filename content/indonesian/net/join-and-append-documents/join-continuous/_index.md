@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Langkah 3: Siapkan permulaan bagian berkelanjutan
 
- Untuk membuat dokumen sumber muncul tepat setelah isi dokumen tujuan, atur`SectionStart` properti bagian pertama dalam dokumen sumber ke`SectionStart.Continuous`.
+Untuk membuat dokumen sumber muncul tepat setelah isi dokumen tujuan, atur`SectionStart` properti bagian pertama dalam dokumen sumber ke`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Langkah 5: Simpan dokumen yang dimodifikasi
 
- Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
+Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");

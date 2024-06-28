@@ -48,7 +48,7 @@ Aspose.Words le permite conservar encabezados, pies de página y configuraciones
 
 ### Requisitos previos
 
-Antes de instalar Aspose.Words para Python, debe tener Python instalado en su sistema. Puede descargar Python desde Aspose.Releases (https://releases.aspose.com/words/python/) y siga las instrucciones de instalación.
+Antes de instalar Aspose.Words para Python, debe tener Python instalado en su sistema. Puede descargar Python desde Aspose.Releases(https://releases.aspose.com/words/python/) y siga las instrucciones de instalación.
 
 ### Pasos de instalación
 
@@ -63,7 +63,7 @@ pip install aspose-words
 
 3. Una vez que se completa la instalación, puede comenzar a usar Aspose.Words en sus proyectos de Python.
 
-## Realizar la conversión de documentos
+## Realizar conversiones de documentos
 
 ### Convertir Word a PDF
 
@@ -99,7 +99,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 Además de Word y PDF, Aspose.Words para Python admite varios formatos de documentos, incluidos HTML, TXT, EPUB y más.
 
-## Personalización de la conversión de documentos
+## Personalización de conversiones de documentos
 
 ### Aplicar formato y estilo
 
@@ -173,7 +173,7 @@ doc.styles.default_font.size = 12
 doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ```
 
-## Automatización de la conversión de documentos
+## Automatización de conversiones de documentos
 
 ### Escribir scripts de Python para la automatización
 

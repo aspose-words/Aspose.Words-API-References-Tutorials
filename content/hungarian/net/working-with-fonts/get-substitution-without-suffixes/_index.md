@@ -2,86 +2,122 @@
 title: Helyettesítés utótagok nélkül
 linktitle: Helyettesítés utótagok nélkül
 second_title: Aspose.Words Document Processing API
-description: Ebből az oktatóanyagból megtudhatja, hogyan kaphat utótag nélküli felülírásokat Word-dokumentumokban az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan kezelheti a betűtípusok utótagok nélküli helyettesítését az Aspose.Words for .NET alkalmazásban. Kövesse lépésről lépésre útmutatónkat, hogy dokumentumai minden alkalommal tökéletesek legyenek.
 type: docs
 weight: 10
 url: /hu/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-Ebben az oktatóanyagban bemutatjuk, hogyan szerezheti be az utótagok nélküli felülírásokat egy Word-dokumentumban az Aspose.Words könyvtár segítségével a .NET-hez. Az utótagok nélküli helyettesítések a betűkészlet-helyettesítési problémák megoldására szolgálnak dokumentumok megjelenítése vagy nyomtatása során. Lépésről lépésre segítünk megérteni és megvalósítani a kódot a .NET-projektben.
+Üdvözöljük ebben az átfogó útmutatóban a betűtípusok Aspose.Words for .NET használatával történő kezeléséről. Ha valaha is küzdött azzal, hogy a betűtípusok nem jelennek meg megfelelően a dokumentumokban, akkor jó helyen jár. Ez az oktatóanyag lépésről lépésre vezeti végig a betűtípusok utótagok nélküli helyettesítésének hatékony kezelését. Kezdjük el!
 
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
-- C# programozási nyelv gyakorlati ismerete
-- A projektben telepített .NET Aspose.Words könyvtár
+
+Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy rendelkezik az alábbiakkal:
+
+- C# alapismeretek: A C# programozás megértése megkönnyíti a lépések követését és végrehajtását.
+-  Aspose.Words for .NET Library: Töltse le és telepítse a könyvtárat a[letöltési link](https://releases.aspose.com/words/net/).
+- Fejlesztési környezet: állítson be egy fejlesztői környezetet, például a Visual Studio-t a kód írásához és futtatásához.
+-  Dokumentumminta: Egy mintadokumentum (pl.`Rendering.docx`), amellyel az oktatóprogram során dolgozhat.
+
+## Névterek importálása
+
+Először is importálnunk kell a szükséges névtereket, hogy elérjük az Aspose.Words által biztosított osztályokat és metódusokat.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
+```
 
 ## 1. lépés: Határozza meg a dokumentumkönyvtárat
- Először is be kell állítania a könyvtár elérési útját a Word-dokumentum helyére. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal.
+
+Kezdésként adja meg a könyvtárat, ahol a dokumentum található. Ez segít megtalálni azt a dokumentumot, amelyen dolgozni szeretne.
 
 ```csharp
-// A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## 2. lépés: Töltse be a dokumentumot, és konfigurálja a helyettesítéseket utótagok nélkül
- Ezután betöltjük a dokumentumot a`Document` osztályt, és konfigurálja az utótag nélküli helyettesítéseket a`DocumentSubstitutionWarnings` osztály. A betűtípusokat tartalmazó mappa megadásával fontforrást is hozzáadunk.
-
-```csharp
-// Töltse be a dokumentumot, és konfigurálja a helyettesítéseket utótagok nélkül
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## 3. lépés: Mentse el a dokumentumot
-Végül elmentjük a dokumentumot az utótag nélküli felülírásokkal.
-
-```csharp
-// Mentse el a dokumentumot
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### Minta forráskód az Aspose.Words for .NET használatával végzett helyettesítés nélkül utótagok nélkül 
-```csharp
-
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## 2. lépés: Állítsa be a helyettesítési figyelmeztető kezelőt
+
+Ezután be kell állítanunk egy figyelmeztető kezelőt, amely minden alkalommal értesít bennünket, ha a dokumentumfeldolgozás során betűkészlet-csere történik. Ez döntő fontosságú a betűtípus-problémák észleléséhez és kezeléséhez.
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## 3. lépés: Adjon hozzá egyéni betűtípus-forrásokat
+
+Ebben a lépésben egyéni betűtípus-forrásokat adunk hozzá, hogy az Aspose.Words meg tudja találni és használni tudja a megfelelő betűtípusokat. Ez különösen akkor hasznos, ha meghatározott betűtípusokat tárol egyéni könyvtárakban.
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+Ebben a kódban:
+-  Lekérjük az aktuális fontforrásokat, és hozzáadunk egy újat`FolderFontSource` az egyéni betűtípus-könyvtárunkra mutat (`C:\\MyFonts\\`).
+- Ezt követően frissítjük a fontforrásokat ezzel az új listával.
+
+## 4. lépés: Mentse el a dokumentumot
+
+Végül mentse el a dokumentumot a betűtípus-helyettesítési beállítások alkalmazása után. Ehhez az oktatóanyaghoz PDF formátumban mentjük el.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## 5. lépés: Hozza létre a Figyelmeztetéskezelő osztályt
+
+ figyelmeztetések hatékony kezeléséhez hozzon létre egy egyéni osztályt, amely megvalósítja a`IWarningCallback` felület. Ez az osztály rögzíti és naplózza a betűtípus helyettesítésére vonatkozó figyelmeztetéseket.
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+Ebben az osztályban:
+-  A`Warning` metódus rögzíti a betűtípus-cserével kapcsolatos figyelmeztetéseket.
+-  A`FontWarnings` A gyűjtemény ezeket a figyelmeztetéseket tárolja további ellenőrzés vagy naplózás céljából.
+
 ## Következtetés
-Ebben az oktatóanyagban azt láthattuk, hogyan lehet utótagok nélküli felülírásokat elérni egy Word-dokumentumban az Aspose.Words for .NET segítségével. Az utótagok nélküli helyettesítések hasznosak a betűtípus-helyettesítési problémák megoldásában. Nyugodtan használja ezt a funkciót a dokumentumok megjelenítésének és nyomtatásának javítására.
 
-### GYIK
+Most már elsajátította a betűtípusok utótagok nélküli helyettesítésének kezelését az Aspose.Words for .NET használatával. Ez a tudás biztosítja, hogy dokumentumai megőrizzék tervezett megjelenésüket, függetlenül a rendszerben elérhető betűtípusoktól. Folytassa a kísérletezést a különböző beállításokkal és forrásokkal, hogy teljes mértékben kiaknázhassa az Aspose.Words erejét.
 
-#### K: Miért ad az Aspose.Words utótagokat a betűtípusok helyettesítéséhez?
+## GYIK
 
-V: Az Aspose.Words utótagokat ad a betűtípusok helyettesítéséhez, hogy elkerülje az eredeti és helyettesített betűtípusok közötti ütközéseket. Ez segít maximális kompatibilitást biztosítani a dokumentumok konvertálása és kezelése során.
+### 1. kérdés: Hogyan használhatok betűtípusokat több egyéni könyvtárból?
 
-#### K: Hogyan kérhetem le a betűkészlet-helyettesítéseket utótagok nélkül az Aspose.Words-ben?
+ Többet is hozzáadhat`FolderFontSource` példányok a`fontSources` listázza ki, és ennek megfelelően frissítse a fontforrásokat.
 
- V: Az Aspose.Words utótagok nélküli betűkészlet-helyettesítéseinek lekéréséhez használhatja a`FontSubstitutionSettings` osztály és a`RemoveSuffixes` ingatlan. Ennek a tulajdonságnak a beállítása`true` megkapja a betűtípus-helyettesítéseket a hozzáadott utótagok nélkül.
+### 2. kérdés: Honnan tölthetem le az Aspose.Words for .NET ingyenes próbaverzióját?
 
-#### K: Lehetséges letiltani az utótagok hozzáadását a betűtípusok helyettesítéséhez az Aspose.Words programban?
+ Ingyenes próbaverziót tölthet le a webhelyről[Aspose ingyenes próbaoldal](https://releases.aspose.com/).
 
-V: Nem, nem lehet letiltani az utótagok hozzáadását a betűtípusok helyettesítéséhez az Aspose.Words programban. Az utótagok alapértelmezés szerint a dokumentumok kompatibilitásának és konzisztenciájának biztosítására szolgálnak.
+###  3. kérdés: Kezelhetek-e többféle figyelmeztetést a használatával`IWarningCallback`?
 
-#### K: Hogyan szűrhetem ki a nem kívánt utótagokat az Aspose.Words betűtípus-helyettesítéseiben?
+ Igen, a`IWarningCallback` Az interfész lehetővé teszi a különböző típusú figyelmeztetések kezelését, nem csak a betűtípusok helyettesítését.
 
- V: Az Aspose.Words betűtípus-helyettesítéseiben előforduló nem kívánt utótagok kiszűréséhez karakterlánc-feldolgozási technikákat használhat, például`Replace` vagy`Substring` módszerek a nem kívánt utótagok eltávolítására.
+### 4. kérdés: Hol kaphatok támogatást az Aspose.Words számára?
+
+ Támogatásért keresse fel a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).
+
+### 5. kérdés: Lehetséges ideiglenes licenc vásárlása?
+
+ Igen, ideiglenes engedélyt kaphat a[ideiglenes licenc oldal](https://purchase.aspose.com/temporary-license/).

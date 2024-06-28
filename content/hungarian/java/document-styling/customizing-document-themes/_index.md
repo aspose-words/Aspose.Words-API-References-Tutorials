@@ -30,7 +30,7 @@ Most, hogy a környezet készen áll, folytassuk a dokumentumtémák testreszab�
 
 ### A dokumentumtémák megértése
 
-A dokumentumtémák határozzák meg a dokumentum általános megjelenését és hangulatát, beleértve a betűtípusokat, színeket és stílusokat. Az Aspose.Words for Java hatékony eszközkészletet kínál ezeknek a témáknak az Ön igényei szerint testreszabásához.
+A dokumentumtémák határozzák meg a dokumentum általános megjelenését és hangulatát, beleértve a betűtípusokat, színeket és stílusokat. Az Aspose.Words for Java hatékony eszközkészletet biztosít ezeknek a témáknak az Ön igényei szerint testreszabásához.
 
 ### Téma alkalmazása
 
@@ -108,7 +108,7 @@ A dokumentumtémában a fő betűtípusok a címsorok és a címek, míg a kiseb
 
 ### Lehetséges-e különböző témákat alkalmazni egy dokumentum különböző szakaszaira?
 
-Igen, különböző témákat alkalmazhat egy dokumentum különböző szakaszaira úgy, hogy részekre osztja, és külön-külön testreszabja az egyes szakaszokhoz tartozó témákat.
+Igen, különböző témákat alkalmazhat egy dokumentum különböző szakaszaira úgy, hogy részekre osztja, és külön-külön testreszabja a témát az egyes szakaszokhoz.
 
 ### Hogyan állíthatom vissza egy dokumentum témáját az alapértelmezettre?
 

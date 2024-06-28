@@ -2,7 +2,7 @@
 title: Negeer koptekst en voettekst
 linktitle: Negeer koptekst en voettekst
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een document kunt toevoegen terwijl u de inhoud van de kop- en voettekst negeert met behulp van Aspose.Words voor .NET.
+description: Leer hoe u een document kunt toevoegen terwijl u de kop- en voettekst negeert met behulp van Aspose.Words voor .NET.
 type: docs
 weight: 10
 url: /nl/net/join-and-append-documents/ignore-header-footer/
@@ -19,7 +19,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 
 ## Stap 2: Open de bron- en doeldocumenten
 
- Open de bron- en doeldocumenten met behulp van de`Document` klasse constructeur. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+ Open de bron- en doeldocumenten met behulp van de`Document` klasse constructor. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
 
 ```csharp
 // Pad naar uw documentmap
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Stap 4: Voeg het brondocument toe aan het doeldocument
 
- Gebruik de`AppendDocument` methode van het doeldocument om het brondocument toe te voegen. Doorgang`ImportFormatMode.KeepSourceFormatting` als tweede parameter en de importformaatopties als derde parameter.
+ Gebruik de`AppendDocument` methode van het doeldocument om het brondocument toe te voegen. Doorgang`ImportFormatMode.KeepSourceFormatting`als tweede parameter en de importformaatopties als derde parameter.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## Stap 5: Sla het bestemmingsdocument op
 
- Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
+Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

@@ -1,7 +1,7 @@
 ---
 title: Dokumentensicherheit mit Python – Eine Schritt-für-Schritt-Anleitung
 linktitle: Dokumentensicherheit mit Python
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Sichern Sie Ihre sensiblen Dokumente mit Aspose.Words für Python! Verschlüsseln, schützen und kontrollieren Sie den Zugriff auf Ihre Word-Dateien programmgesteuert.
 type: docs
 weight: 10
@@ -18,7 +18,7 @@ Dokumentensicherheit bezieht sich auf die Praxis, digitale Dokumente vor unbefug
 
 ## 2. Die Bedeutung der Dokumentensicherheit verstehen
 
-In der heutigen vernetzten Welt ist das Risiko von Datenschutzverletzungen und Cyberangriffen höher als je zuvor. Von persönlichen Dokumenten bis hin zu Unternehmensdateien: Alle ungeschützten Daten könnten in die falschen Hände geraten und schwerwiegende Folgen haben. Dokumentensicherheit ist sowohl für Einzelpersonen als auch für Organisationen von entscheidender Bedeutung, um Datenlecks zu verhindern und sensible Informationen vor der Gefährdung zu schützen.
+In der heutigen vernetzten Welt ist das Risiko von Datenschutzverletzungen und Cyberangriffen höher als je zuvor. Von persönlichen Dokumenten bis hin zu Unternehmensdateien: Alle ungeschützten Daten könnten in die falschen Hände geraten und schwerwiegende Folgen haben. Dokumentensicherheit ist für Einzelpersonen und Organisationen gleichermaßen wichtig, um Datenlecks zu verhindern und sensible Informationen vor der Gefährdung zu schützen.
 
 ## 3. Einführung in Aspose.Words für Python
 

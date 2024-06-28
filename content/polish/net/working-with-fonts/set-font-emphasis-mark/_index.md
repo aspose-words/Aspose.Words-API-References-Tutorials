@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-fonts/set-font-emphasis-mark/
 ---
 
-W tym samouczku pokażemy, jak ustawić styl wyróżnienia czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET. Podkreślenie czcionki służy do wyróżniania określonych słów lub fraz w tekście.
+W tym samouczku pokażemy, jak ustawić styl podkreślenia czcionki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Podkreślenie czcionki służy do wyróżniania określonych słów lub fraz w tekście.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -16,14 +16,14 @@ Zanim zaczniesz, upewnij się, że masz następujące elementy:
 - Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
 
 ## Krok 1: Zdefiniuj katalog dokumentów
- Zacznij od ustawienia ścieżki katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+Zacznij od ustawienia ścieżki katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Utwórz i dostosuj dokument
- Utwórz instancję`Document` klasa i powiązana`DocumentBuilder` do tworzenia treści dokumentu. Użyj`Font.EmphasisMark` właściwość, na którą chcesz ustawić styl wyróżnienia czcionki`EmphasisMark.UnderSolidCircle` . Następnie użyj`Write` I`Writeln` metody`DocumentBuilder` , aby dodać tekst z określonym wyróżnieniem czcionki.
+ Utwórz instancję`Document` klasa i powiązana`DocumentBuilder` do tworzenia treści dokumentu. Użyj`Font.EmphasisMark` właściwość, na którą chcesz ustawić styl podkreślenia czcionki`EmphasisMark.UnderSolidCircle` . Następnie użyj`Write` I`Writeln` metody`DocumentBuilder` aby dodać tekst z podkreśleniem określonej czcionki.
 
 ```csharp
 Document document = new Document();
@@ -42,7 +42,7 @@ builder.Write("Simple text");
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
-### Przykładowy kod źródłowy dla opcji Ustaw znak wyróżnienia czcionki przy użyciu Aspose.Words dla .NET 
+### Przykładowy kod źródłowy dla Ustaw znacznik wyróżnienia czcionki przy użyciu Aspose.Words dla .NET 
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -59,7 +59,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Wniosek
-tym samouczku nauczyłeś się, jak ustawić styl wyróżnienia czcionki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Eksperymentuj z różnymi stylami wyróżniania i korzystaj z tej funkcji, aby wyróżniać słowa lub frazy w dokumentach.
+W tym samouczku nauczyłeś się, jak ustawić styl podkreślenia czcionki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Eksperymentuj z różnymi stylami wyróżniania i korzystaj z tej funkcji, aby wyróżniać słowa lub frazy w dokumentach.
 
 ### Często zadawane pytania
 

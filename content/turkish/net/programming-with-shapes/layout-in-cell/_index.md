@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Adım 3: Tabloyu Oluşturun
- Kullan`StartTable`, `EndTable`, `InsertCell` , Ve`Write` yöntemleri`DocumentBuilder` bir tablo oluşturmak için nesne. İstenilen satır yüksekliğini ve yükseklik kuralını kullanarak ayarlayın.`RowFormat` özellikler.
+ Kullan`StartTable`, `EndTable`, `InsertCell` , Ve`Write` yöntemleri`DocumentBuilder`bir tablo oluşturmak için nesne. İstenilen satır yüksekliğini ve yükseklik kuralını kullanarak ayarlayın.`RowFormat` özellikler.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Adım 6: Şekli Belgeye Ekleme
-kullanarak filigran şeklini belgeye ekleyin.`InsertNode` yöntemi`DocumentBuilder` nesne. kullanarak şekli konumlandırın.`MoveTo` belgedeki son çalıştırmadan sonra yerleştirme yöntemini kullanın.
+ kullanarak filigran şeklini belgeye ekleyin.`InsertNode` yöntemi`DocumentBuilder` nesne. kullanarak şekli konumlandırın.`MoveTo` belgedeki son çalıştırmadan sonra yerleştirme yöntemini kullanın.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

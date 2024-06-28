@@ -119,7 +119,7 @@ Aqui está o exemplo de código-fonte completo para demonstrar o uso da função
 
 ## Conclusão
 
-Neste artigo, exploramos o código-fonte C# para entender como usar a função Ignore Text Inside Insert Revisions em Aspose.Words for .NET. Seguimos um guia passo a passo para criar um documento, inserir texto com rastreamento de revisões e texto não revisado, usando a função Ignore Text Inside Insert Revisions, realizando operações de pesquisa e substituição por expressões regulares e exibindo o documento modificado.
+Neste artigo, exploramos o código-fonte C# para entender como usar a função Ignore Text Inside Insert Revisions em Aspose.Words for .NET. Seguimos um guia passo a passo para criar um documento, inserir texto com rastreamento de revisões e texto não revisado, usando a função Ignore Text Inside Insert Revisions, realizando operações de pesquisa e substituição com expressões regulares e exibindo o documento modificado.
 
 ### Perguntas frequentes
 

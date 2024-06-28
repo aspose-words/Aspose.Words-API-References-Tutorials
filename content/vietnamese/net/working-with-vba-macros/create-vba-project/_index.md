@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## Bước 3: Tạo mô-đun mới và chỉ định mã nguồn macro
+## Bước 3: Tạo mô-đun mới và chỉ định mã nguồn macro.
  Chúng tôi sẽ tạo một mô-đun mới bằng cách khởi tạo`VbaModule` lớp và chỉ định tên macro, loại (mô-đun thủ tục) và mã nguồn.
 
 ```csharp
@@ -94,7 +94,7 @@ Trả lời: Trước khi có thể tạo dự án VBA trong tài liệu Word, b
 
 #### Hỏi: Làm cách nào để đặt thư mục tài liệu trong mã?
 
- Đáp: Trong mã được cung cấp, bạn cần thay thế`"YOUR DOCUMENTS DIRECTORY"` với đường dẫn thích hợp đến thư mục mà bạn muốn lưu tài liệu Word của mình bằng dự án VBA.
+ Đáp: Trong mã được cung cấp, bạn cần thay thế.`"YOUR DOCUMENTS DIRECTORY"` với đường dẫn thích hợp đến thư mục mà bạn muốn lưu tài liệu Word của mình bằng dự án VBA.
 
 #### Câu hỏi: Làm cách nào để chỉ định mã nguồn macro trong mô-đun VBA?
 

@@ -14,7 +14,7 @@ A Words Processing with Markdown átfogó forrást biztosít a Markdown formátu
 | Cím | Leírás |
 | --- | --- |
 | [Félkövér szöveg](./bold-text/) | Ismerje meg, hogyan lehet félkövéren szedni a szöveget az Aspose.Words for .NET segítségével Lépésről lépésre. |
-| [Dőlt szöveg](./italic-text/) | Ismerje meg, hogyan írhat dőlt szöveget az Aspose.Words for .NET segítségével Lépésről lépésre. |
+| [Olasz szöveg](./italic-text/) | Ismerje meg, hogyan írhat dőlt szöveget az Aspose.Words for .NET segítségével Lépésről lépésre. |
 | [Áthúzott](./strikethrough/) | Ismerje meg, hogyan alkalmazhatja az áthúzott szövegstílust az Aspose.Words for .NET segítségével Lépésről lépésre. |
 | [Inline kód](./inline-code/) | Ismerje meg, hogyan írhat be kódot az Aspose.Words for .NET segítségével Lépésről lépésre. |
 | [Autolink](./autolink/) | Ismerje meg, hogyan szúrhat be automatikus linket az Aspose.Words for .NET segítségével Lépésről lépésre. |
@@ -22,7 +22,7 @@ A Words Processing with Markdown átfogó forrást biztosít a Markdown formátu
 | [Kép](./image/) | Ismerje meg, hogyan lehet képeket beszúrni és testreszabni az Aspose.Words for .NET segítségével Lépésről lépésre. |
 | [Vízszintes szabály](./horizontal-rule/) | Ismerje meg, hogyan illeszthet be vízszintes szabályt az Aspose.Words for .NET segítségével Lépésről lépésre. |
 | [Cím](./heading/) | Ismerje meg a fejléc használatát az Aspose.Words for .NET programban Lépésről lépésre. |
-| [Szövegcímsor](./setext-heading/) | Az Aspose.Words for .NET segítségével megtudhatja, hogyan használhatja a Setext fejlécet a dokumentumok formázására az Aspose.Words for .NET segítségével – lépésről lépésre. |
+| [Setex címsor](./setext-heading/) | Az Aspose.Words for .NET segítségével megtudhatja, hogyan használhatja a Setext fejlécet a dokumentumok formázására az Aspose.Words for .NET segítségével – lépésről lépésre. |
 | [Behúzott kód](./indented-code/) | Ismerje meg, hogyan használhatja a behúzott kódot az Aspose.Words for .NET-hez Lépésről lépésre. |
 | [Bekerített kód](./fenced-code/) | Ismerje meg, hogyan használhatja az elkerített kód funkciót az Aspose.Words for .NET segítségével Lépésről lépésre. |
 | [Idézet](./quote/) | Ismerje meg, hogyan használhatja az idézetet az Aspose.Words for .NET használatával Lépésről lépésre. |

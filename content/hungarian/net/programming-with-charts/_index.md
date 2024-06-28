@@ -26,11 +26,11 @@ Ezekkel az oktatóanyagokkal tetszetős és informatív grafikák hozzáadásáv
 | [Határozza meg az XYAxis tulajdonságait](./define-xyaxis-properties/) | Ismerje meg, hogyan határozhatja meg az XY tengely tulajdonságait egy diagramban az Aspose.Words for .NET használatával. Bemutatjuk az X és Y tengely testreszabási lehetőségeit. |
 | [Dátum és idő értékek a tengelyhez](./date-time-values-to-axis/) | Ismerje meg, hogyan adhat dátum és idő értékeket a diagram tengelyéhez az Aspose.Words for .NET használatával. |
 | [Axis számformátuma](./number-format-for-axis/) | Ismerje meg, hogyan állíthatja be a diagramon lévő tengelyek számformátumát az Aspose.Words for .NET használatával. |
-| [A tengely határai](./bounds-of-axis/) | Ismerje meg, hogyan állíthatja be egy tengely határait egy diagramon az Aspose.Words for .NET segítségével, amely a tengelyen megjelenített értéktartományt szabályozza. |
+| [A tengely határai](./bounds-of-axis/) | Ismerje meg, hogyan állíthatja be egy tengely határait egy diagramon az Aspose.Words for .NET segítségével, amely szabályozza a tengelyen megjelenített értéktartományt. |
 | [A tengelyen lévő címkék közötti intervallum mértékegysége](./interval-unit-between-labels-on-axis/) | Ismerje meg, hogyan állíthatja be az intervallum mértékegységét a diagram tengelyén lévő címkék között az Aspose.Words for .NET használatával. |
 | [Diagramtengely elrejtése](./hide-chart-axis/) | Ismerje meg, hogyan rejtheti el a diagram tengelyét egy dokumentumban az Aspose.Words for .NET használatával. A tengely elrejtése tisztább és fókuszáltabb diagrammegjelenítéshez. |
 | [Jelölje be a Többsoros címkeigazítást](./tick-multi-line-label-alignment/) | Ismerje meg, hogyan igazíthat többsoros címkéket egy diagramtengelyen az Aspose.Words for .NET használatával. |
-| [Diagram adatcímke](./chart-data-label/) | Ismerje meg, hogyan adhat hozzá és testreszabhat adatcímkéket egy diagramhoz az Aspose.Words for .NET használatával, hogy további információkat nyújtson az adatpontokról. |
+| [Diagram adatcímke](./chart-data-label/) | Ismerje meg, hogyan adhat hozzá és testreszabhat adatcímkéket diagramokhoz az Aspose.Words for .NET használatával, hogy további információkat nyújtson az adatpontokról. |
 | [Adatcímkék alapértelmezett beállításai](./default-options-for-data-labels/) | Ismerje meg, hogyan állíthat be alapértelmezett beállításokat a diagramok adatcímkéihez az Aspose.Words for .NET használatával. |
 | [Egyetlen diagram adatpont](./single-chart-data-point/) | Ismerje meg, hogyan szabhat testre egyetlen adatpontot a diagramon az Aspose.Words for .NET használatával. |
 | [Single Chart Series](./single-chart-series/) | Ismerje meg, hogyan szabhat testre egyetlen diagramsorozatot egy diagramon az Aspose.Words for .NET használatával. |

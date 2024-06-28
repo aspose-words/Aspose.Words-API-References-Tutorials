@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 축하해요! Aspose.Words for Java에서 모양을 렌더링하는 방법을 성공적으로 배웠습니다. 이 기능은 프로그래밍 방식으로 Word 문서를 작업할 때 가능성의 세계를 열어줍니다.
 
-## 9. FAQ
+## 9.FAQ
 
 ### Q1: 단일 문서에서 여러 도형을 렌더링할 수 있나요?
 

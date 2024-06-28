@@ -81,7 +81,7 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Comment puis-je styliser les notes de fin dans Aspose.Words ?
 
- R : Pour styliser les notes de fin dans Aspose.Words, vous pouvez utiliser l'outil`EndnoteOptions` la classe et le`SeparatorNoteTextStyle` propriété. Vous pouvez spécifier le style de police, la taille, la couleur, etc. pour les notes de fin à l'aide de cette propriété.
+R : Pour styliser les notes de fin dans Aspose.Words, vous pouvez utiliser l'outil`EndnoteOptions` la classe et le`SeparatorNoteTextStyle` propriété. Vous pouvez spécifier le style de police, la taille, la couleur, etc. pour les notes de fin à l'aide de cette propriété.
 
 #### Q : Est-il possible de personnaliser la numérotation des notes de fin dans un document ?
 
@@ -97,4 +97,4 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Est-il possible de continuer à numéroter les notes de fin entre les sections d'un document ?
 
- R : Oui, il est possible de continuer à numéroter les notes de fin entre les sections d'un document. Utilisez le`RestartRule` propriété du`EndnoteOptions` classe et réglez-le sur`RestartContinuous` pour permettre à la numérotation de continuer entre les sections.
+ : Oui, il est possible de continuer à numéroter les notes de fin entre les sections d'un document. Utilisez le`RestartRule` propriété du`EndnoteOptions` classe et réglez-le sur`RestartContinuous` pour permettre à la numérotation de continuer entre les sections.

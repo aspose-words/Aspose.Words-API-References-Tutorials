@@ -88,7 +88,7 @@ Befolgen Sie diese Schritte, um Briefvorlagenfelder in Ihrem Dokument mit Aspose
 
 #### F: Wie kann ich zusammengeführte Felder in einem Word-Dokument mit Aspose.Words für .NET umbenennen?
 
- A: Um zusammengeführte Felder in einem Word-Dokument mit Aspose.Words für .NET umzubenennen, können Sie die Felder im Dokument mithilfe von durchlaufen`FieldMergingArgs` Klasse und nutzen Sie die`FieldMergingArgs.FieldName` Methode zum Umbenennen des Feldes.
+ A: Um zusammengeführte Felder in einem Word-Dokument mit Aspose.Words für .NET umzubenennen, können Sie die Felder im Dokument mithilfe von durchlaufen`FieldMergingArgs` Klasse und nutzen Sie die`FieldMergingArgs.FieldName` Methode zum Umbenennen von Feldern.
 
 #### F: Ist es möglich, mit Aspose.Words für .NET nur bestimmte zusammengeführte Felder in einem Word-Dokument umzubenennen?
 

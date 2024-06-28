@@ -86,7 +86,7 @@ För att skapa och infoga tabeller i dokument med Aspose.Words för Python, föl
 
 ## Styling tabeller med Aspose.Words
 
-Aspose.Words for Python tillhandahåller en rad stilalternativ för att göra dina bord visuellt tilltalande:
+Aspose.Words för Python tillhandahåller en rad stilalternativ för att göra dina bord visuellt tilltalande:
 
 1. Tabellstilar: Använd fördefinierade bordsstilar för att få ett professionellt utseende.
 

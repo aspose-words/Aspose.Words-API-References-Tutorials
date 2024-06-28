@@ -33,7 +33,7 @@ shape.AspectRatioLocked = false;
 ```
 
 ## Stap 3: Haal de werkelijke vormgrenspunten op
- Toegang tot de vormen`ShapeRenderer` de ... gebruiken`GetShapeRenderer` methode. Haal vervolgens de werkelijke grenzen van de vorm op in punten met behulp van de`BoundsInPoints` eigendom.
+ Toegang tot de vorm`ShapeRenderer` de ... gebruiken`GetShapeRenderer` methode. Haal vervolgens de werkelijke grenzen van de vorm op in punten met behulp van de`BoundsInPoints` eigendom.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");

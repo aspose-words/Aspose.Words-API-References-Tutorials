@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Content-ID.docx");
 ```
 
- Этот код создает экземпляр`Document` загрузив документ из указанного каталога.
+ Этот код создает экземпляр`Document` Загрузив документ из указанного каталога.
 
 ## Шаг 3. Настройка параметров резервного копирования HTML
 
@@ -37,7 +37,7 @@ ExportCidUrlsForMhtmlResources = true
 };
 ```
 
- Этот код создает экземпляр`HtmlSaveOptions` с установленным форматом сохранения MHTML. Он также позволяет экспортировать URL-адреса CID ресурсов MHTML, установив`ExportCidUrlsForMhtmlResources` к`true`.
+ Этот код создает экземпляр`HtmlSaveOptions` Формат сохранения установлен на MHTML. Он также позволяет экспортировать URL-адреса CID ресурсов MHTML, установив`ExportCidUrlsForMhtmlResources` к`true`.
 
 ## Шаг 4. Преобразование и сохранение документа в MHTML.
 

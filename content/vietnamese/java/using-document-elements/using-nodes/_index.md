@@ -112,10 +112,10 @@ Aspose.Words for Java là thư viện Java cho phép các nhà phát triển t�
 Bạn có thể tải xuống và cài đặt Aspose.Words cho Java từ[đây](https://releases.aspose.com/words/java/).
 
 ### Q3. Có bản dùng thử miễn phí không?
- Có, bạn có thể dùng thử miễn phí Aspose.Words cho Java[đây](https://releases.aspose.com/).
+ Có, bạn có thể dùng thử miễn phí Aspose.Words cho Java.[đây](https://releases.aspose.com/).
 
 ### Q4. Tôi có thể lấy giấy phép tạm thời ở đâu?
- Bạn có thể xin giấy phép tạm thời cho Aspose.Words for Java[đây](https://purchase.aspose.com/temporary-license/).
+ Bạn có thể lấy giấy phép tạm thời cho Aspose.Words cho Java.[đây](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. Tôi có thể tìm hỗ trợ cho Aspose.Words cho Java ở đâu?
  Để được hỗ trợ và thảo luận, hãy truy cập[Diễn đàn Aspose.Words cho Java](https://forum.aspose.com/).

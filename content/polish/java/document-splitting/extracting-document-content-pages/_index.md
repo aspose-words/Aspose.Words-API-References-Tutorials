@@ -152,7 +152,7 @@ Możesz wnieść swój wkład, dzieląc się swoją wiedzą na forach, zgłaszaj
 
 ### Czy są jakieś uwagi dotyczące licencji?
 
-Aspose.Words dla Java wymaga ważnej licencji do użytku komercyjnego. Upewnij się, że uzyskałeś niezbędne licencje, aby zachować zgodność z warunkami użytkowania.
+Aspose.Words dla Java wymaga ważnej licencji do użytku komercyjnego. Upewnij się, że nabyłeś niezbędne licencje, aby zachować zgodność z warunkami użytkowania.
 
 ## Wniosek
 

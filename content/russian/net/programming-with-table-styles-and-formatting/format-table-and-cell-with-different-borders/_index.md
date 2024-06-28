@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 	builder.Writeln("Cell #1");
 	builder.InsertCell();
-	// Укажите другую заливку для второй ячейки.
+	// Укажите другой оттенок для второй ячейки.
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 	builder.Writeln("Cell #2");
 	builder.EndRow();

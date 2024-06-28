@@ -18,7 +18,7 @@ A megadott kódban egy dokumentumgenerátor létrehozásával kezdjük.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. lépés: Illessze be az IF mezőt
+## 2. lépés: Illessze be az IF mezőt.
 
  Használjuk a`InsertField()` módszer az IF mező beillesztésére a dokumentumba, amely meghatározza az értékelendő feltételt.
 
@@ -36,12 +36,12 @@ Itt példaként az "1=1" feltételt használtuk, de szükség szerint testreszab
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- A`actualResult` változó tartalmazza a feltétel kiértékelésének eredményét.
+ A`actualResult` A változó az állapotértékelés eredményét tartalmazza.
 
 ### Minta forráskód az IF-állapot értékeléséhez az Aspose.Words segítségével .NET-hez
 
 ```csharp
-// Dokumentumgenerátor létrehozása.
+//Dokumentumgenerátor létrehozása.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Illessze be az IF mezőt a dokumentumba.

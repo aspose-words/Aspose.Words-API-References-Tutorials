@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### पृष्ठ क्रमांक रूपांतरण के साथ संलग्न करें
+### पृष्ठ संख्या रूपांतरण के साथ जोड़ें
 
 ```java
 Document srcDoc = new Document("source.docx");

@@ -70,11 +70,11 @@ Jangan ragu untuk menjelajahi fitur dan opsi tambahan yang disediakan oleh Aspos
 
 #### Dalam format apa saya dapat membagi dokumen Word?
 
-Kode sumber yang disediakan menunjukkan pemisahan dokumen Word menjadi bagian-bagian kecil dalam format HTML. Namun, Aspose.Words untuk .NET mendukung berbagai format keluaran, termasuk DOCX, PDF, EPUB, dan banyak lagi. Anda dapat memodifikasi kode dan menentukan format keluaran yang diinginkan di`HtmlSaveOptions` objek sesuai.
+ Kode sumber yang disediakan menunjukkan pemisahan dokumen Word menjadi bagian-bagian kecil dalam format HTML. Namun, Aspose.Words untuk .NET mendukung berbagai format keluaran, termasuk DOCX, PDF, EPUB, dan banyak lagi. Anda dapat memodifikasi kode dan menentukan format keluaran yang diinginkan di`HtmlSaveOptions` objek sesuai.
 
 #### Bisakah saya memilih kriteria lain untuk memisahkan dokumen?
 
- Ya, Anda dapat memilih kriteria berbeda untuk memisahkan dokumen berdasarkan kebutuhan Anda. Aspose.Words for .NET menyediakan beberapa pilihan kriteria, seperti`HeadingParagraph`, `Page`, `Section` , dan banyak lagi. Ubah`DocumentSplitCriteria` properti di`HtmlSaveOptions` objek untuk memilih kriteria pemisahan yang sesuai.
+Ya, Anda dapat memilih kriteria berbeda untuk memisahkan dokumen berdasarkan kebutuhan Anda. Aspose.Words for .NET menyediakan beberapa pilihan kriteria, seperti`HeadingParagraph`, `Page`, `Section` , dan banyak lagi. Ubah`DocumentSplitCriteria` properti di`HtmlSaveOptions` objek untuk memilih kriteria pemisahan yang sesuai.
 
 #### Bagaimana cara menyesuaikan HTML keluaran untuk bagian yang terpisah?
 

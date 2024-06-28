@@ -30,7 +30,7 @@ doc.save("output.docx")
 
 ## 瀏覽文件樹
 
-文件的結構為節點樹，其中每個節點代表一個元素，如段落、表格、圖像等。導航此樹對於文件操作至關重要。
+文件的結構為節點樹，其中每個節點代表一個元素，如段落、表格、圖像等。
 
 ```python
 # Access the first paragraph of the document

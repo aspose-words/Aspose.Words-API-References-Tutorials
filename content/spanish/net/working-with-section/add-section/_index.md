@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## Paso 3: agrega una nueva sección
- Para agregar una nueva sección al documento, crearemos una instancia del`Section` clase y agregarla a la`Sections` recogida del documento.
+ Para agregar una nueva sección al documento, crearemos una instancia del`Section` clase y agregarla a la`Sections` recogida de los documentos.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
@@ -82,7 +82,7 @@ builder. Writen("Hello2");
 
 #### P: ¿Cómo agregar una nueva sección al documento en Aspose.Words para .NET?
 
- R: Para agregar una nueva sección al documento en Aspose.Words para .NET, puede crear una instancia del`Section` clase y agregarla a la`Sections` recogida del documento:
+ R: Para agregar una nueva sección al documento en Aspose.Words para .NET, puede crear una instancia del`Section` clase y agregarla a la`Sections` recogida de los documentos:
 
 ```csharp
 Section sectionToAdd = new Section(doc);

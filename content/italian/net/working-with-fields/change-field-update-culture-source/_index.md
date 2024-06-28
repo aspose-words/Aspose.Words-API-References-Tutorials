@@ -91,7 +91,7 @@ Congratulazioni! Hai imparato con successo come modificare l'origine della cultu
 
 #### D: Come posso specificare una cultura specifica per l'aggiornamento dei campi in Aspose.Words per .NET?
 
-R: Per specificare una cultura specifica per l'aggiornamento dei campi in Aspose.Words per .NET, è possibile utilizzare il file`Document.FieldOptions.FieldUpdateCultureInfo` proprietà e impostare il file`CultureInfo` oggetto corrispondente alla cultura desiderata. Ad esempio, puoi usare`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` per specificare le impostazioni cultura francesi (Francia).
+ R: Per specificare una cultura specifica per l'aggiornamento dei campi in Aspose.Words per .NET, è possibile utilizzare il file`Document.FieldOptions.FieldUpdateCultureInfo` proprietà e impostare il file`CultureInfo` oggetto corrispondente alla cultura desiderata. Ad esempio, puoi usare`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` per specificare le impostazioni cultura francesi (Francia).
 
 #### D: È possibile disabilitare l'aggiornamento automatico dei campi in Aspose.Words per .NET?
 

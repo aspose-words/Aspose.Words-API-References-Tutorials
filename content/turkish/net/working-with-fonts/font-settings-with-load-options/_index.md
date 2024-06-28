@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Adım 2: Yükleme Seçeneklerini Yazı Tipi Ayarlarıyla Yapılandırma
- Daha sonra, şunun bir örneğini oluşturacağız:`LoadOptions`ve yeni bir örneğini oluşturarak yazı tipi ayarlarını belirtin.`FontSettings` ve onu atamak`loadOptions.FontSettings`.
+ Daha sonra, şunun bir örneğini oluşturacağız:`LoadOptions` ve yeni bir örneğini oluşturarak yazı tipi ayarlarını belirtin.`FontSettings` ve onu atamak`loadOptions.FontSettings`.
 
 ```csharp
 // Yazı tipi ayarlarıyla yükleme seçeneklerini yapılandırma
@@ -61,7 +61,7 @@ Bu eğitimde Aspose.Words for .NET ile bir Word belgesinde yazı tipi ayarlarıy
 
 #### S: Aspose.Words'teki yükleme seçenekleriyle başka hangi yazı tipi ayarlarını belirtebilirim?
 
-C: Varsayılan yazı tipini belirtmenin yanı sıra, varsayılan kodlama gibi diğer yazı tipi ayarlarını da, yazı tipinin uygun özelliklerini kullanarak belirleyebilirsiniz.`LoadOptions` sınıf gibi`DefaultEncoding`.
+ C: Varsayılan yazı tipini belirlemenin yanı sıra, varsayılan kodlama gibi diğer yazı tipi ayarlarını da, yazı tipinin uygun özelliklerini kullanarak belirleyebilirsiniz.`LoadOptions` sınıf gibi`DefaultEncoding`.
 
 #### S: Belge yüklenirken belirtilen varsayılan yazı tipi kullanılamıyorsa ne olur?
 

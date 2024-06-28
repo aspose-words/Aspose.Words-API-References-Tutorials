@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions` en sets`CssStyleSheetType` naar`CssStyleSheetType.External`om een extern CSS-stijlblad te genereren, en`CssClassNamePrefix` naar`"pfx_"` naar voorvoegsel`"pfx_"` om de CSS-klasse te benoemen.
+ Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions` en sets`CssStyleSheetType` naar`CssStyleSheetType.External`om een extern CSS-stijlblad te genereren, en`CssClassNamePrefix` naar`"pfx_"` naar voorvoegsel`"pfx_"` om CSS-klassen een naam te geven.
 
 ## Stap 4: Het document converteren en opslaan naar HTML
 

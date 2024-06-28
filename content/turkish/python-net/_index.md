@@ -11,7 +11,7 @@ Aspose.Words for Python, geliştiricilere belge yönetimi ve kelime belgesi işl
 
 ## Sorunsuz Belge Yönetimi için Python Belge API'si
 
-Aspose.Words eğitimleriyle Python Document API'nin gücünü keşfedin. Geliştiriciler Word belgelerini programlı olarak oluşturmayı, değiştirmeyi ve yönetmeyi öğrenecekler. API, biçimlendirmenin, içerik eklemenin ve belge birleştirmenin özelleştirilmesine olanak tanıyarak belge yönetimi görevlerini kolaylaştırır.
+Aspose.Words eğitimleriyle Python Document API'nin gücünü keşfedin. Geliştiriciler Word belgelerini programlı olarak oluşturmayı, değiştirmeyi ve yönetmeyi öğrenecekler. API, biçimlendirmenin, içerik eklemenin ve belge birleştirmenin, akışlı belge yönetimi görevlerinin özelleştirilmesine olanak tanır.
 
 ## Python ile Belge İşlemeyi Otomatikleştirin
 

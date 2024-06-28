@@ -2,7 +2,7 @@
 title: Traitement de mots avec Rtfsaveoptions
 linktitle: Traitement de mots avec Rtfsaveoptions
 second_title: API de traitement de documents Aspose.Words
-description: Explorez le traitement de mots avec les options d'enregistrement RTF dans Aspose.Words for .NET. Découvrez comment enregistrer et personnaliser des documents RTF avec des didacticiels pas à pas et des exemples de code C#.
+description: Explorez le traitement de mots avec les options d'enregistrement RTF dans Aspose.Words for .NET. Découvrez comment enregistrer et personnaliser des documents RTF avec des didacticiels étape par étape et des exemples de code C#.
 type: docs
 weight: 1690
 url: /fr/net/programming-with-rtfsaveoptions/

@@ -34,7 +34,7 @@ builder.Write("Jason gives money to Paul.");
 
 ## 第三步：替換模式中的辨識與替換
 
-現在我們將使用`Range.Replace`函數執行文字搜尋和替換，使用正規表示式來識別特定模式。在我們的範例中，我們使用正規表示式`([A-z]+) gives money to ([A-z]+)`辨識某人給別人錢的句子。我們使用替換模式`$2 takes money from $1`透過互換角色來執行替換。指某東西的用途`$1`和`$2`指的是正規表示式捕獲的群組：
+現在我們將使用`Range.Replace`函數執行文字搜尋和替換，使用正規表示式來識別特定模式。在我們的範例中，我們使用正規表示式`([A-z]+) gives money to ([A-z]+)`辨識某人給別人錢的句子。我們使用替換模式`$2 takes money from $1`透過互換角色來執行替換。指某東西的用途`$1`和`$2`指正則表達式捕獲的群組：
 
 ```csharp
 Regex regex = new Regex(@"([A-z]+) gives money to ([A-z]+)");
@@ -114,11 +114,11 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### Q：在哪裡可以找到有關在 Aspose.Words for .NET 中使用正規表示式的更多資訊和範例？
 
-答：有關在 Aspose.Words for .NET 中使用正規表示式的詳細資訊和範例，您可以參考[Aspose.Words for .NET API 參考](https://reference.aspose.com/words/net/)。該文件提供了 Aspose.Words for .NET 中涉及正規表示式和文字操作的各種場景的詳細說明和程式碼範例。
+答：有關在 Aspose.Words for .NET 中使用正規表示式的詳細資訊和範例，您可以參考[Aspose.Words for .NET API 參考](https://reference.aspose.com/words/net/)。該文件提供了 Aspose.Words for .NET 中涉及正規表示式和文字操作的各種場景的詳細解釋和程式碼範例。
 
 #### Q：我可以在文字搜尋和替換期間根據捕獲的群組操作文件的其他方面嗎？
 
-答：是的，您可以在文字搜尋和替換過程中根據捕獲的群組來操作文件的其他方面。除了執行文字替換之外，您還可以使用 Aspose.Words for .NET 提供的各種 API 根據擷取的群組修改格式、樣式、文件結構和其他元素。
+答：是的，您可以在文字搜尋和替換過程中根據捕獲的群組來操作文件的其他方面。除了執行文字替換之外，您還可以使用 Aspose.Words for .NET 提供的各種 API 根據捕獲的群組修改格式、樣式、文件結構和其他元素。
 
 #### Q：在 Aspose.Words for .NET 中使用正規表示式和捕獲群組時是否有任何限製或註意事項？
 

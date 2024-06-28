@@ -74,7 +74,7 @@ Lembre-se de ajustar o código de acordo com seus requisitos específicos, inclu
 ## Conclusão
 Parabéns! Você aprendeu com sucesso como resolver comentários e suas respostas em um documento do Word usando Aspose.Words for .NET. Seguindo o guia passo a passo e utilizando o código-fonte fornecido, agora você pode gerenciar a resolução de comentários e atualizar o status dos comentários e suas respostas de acordo com suas necessidades.
 
-resolução de comentários ajuda a rastrear e gerenciar feedback em um documento. Experimente diferentes status de comentários e personalize-os para melhorar os processos de colaboração e revisão em seus documentos.
+A resolução de comentários ajuda a rastrear e gerenciar feedback em um documento. Experimente diferentes status de comentários e personalize-os para melhorar os processos de colaboração e revisão em seus documentos.
 
 ### Perguntas frequentes
 
@@ -84,7 +84,7 @@ resolução de comentários ajuda a rastrear e gerenciar feedback em um document
 
 #### P: Como adiciono uma resposta a um comentário resolvido no Aspose.Words for .NET?
 
- R: Embora os comentários resolvidos estejam ocultos por padrão no documento final, você ainda pode adicionar uma resposta a um comentário resolvido usando o botão`Comment.AddReply` método especificando o texto da resposta e onde você deseja adicioná-lo.
+ R: Embora os comentários resolvidos estejam ocultos por padrão no documento final, você ainda pode adicionar uma resposta a um comentário resolvido usando o botão`Comment.AddReply`método especificando o texto da resposta e onde você deseja adicioná-lo.
 
 #### P: Como posso ver os comentários resolvidos no Aspose.Words for .NET?
 

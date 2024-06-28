@@ -1,6 +1,6 @@
 ---
-title: Expose Threshold Control for Tiff Binarization
-linktitle: Expose Threshold Control for Tiff Binarization
+title: Expose Threshold Control για Tiff Binarization
+linktitle: Expose Threshold Control για Tiff Binarization
 second_title: Aspose.Words Document Processing API
 description: Μάθετε πώς να ελέγχετε το όριο δυαδοποίησης TIFF με το Aspose.Words για .NET. Πλήρες σεμινάριο για εικόνες καλύτερης ποιότητας.
 type: docs

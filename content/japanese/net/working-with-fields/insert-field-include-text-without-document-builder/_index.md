@@ -60,7 +60,7 @@ fieldIncludeText.Update();
 //ドキュメントディレクトリへのパス。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//文書と段落を作成します。
+//ドキュメントと段落を作成します。
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
@@ -97,4 +97,4 @@ A: ドキュメント ビルダーを使用せずにテキスト インクルー
 
 #### Q: Aspose.Words for .NET を使用して、Word 文書内のテキスト挿入フィールドの外観をカスタマイズできますか?
 
-A: テキスト挿入フィールドは、Word 文書内の外観を直接カスタマイズしません。ただし、段落プロパティ、フォント プロパティ、および Aspose.Words for .NET で利用可能なその他の書式設定オブジェクトを使用して、含まれるテキストを書式設定することができます。
+A: テキスト フィールドを含めても、Word 文書内の外観は直接カスタマイズされません。ただし、段落プロパティ、フォント プロパティ、および Aspose.Words for .NET で利用可能なその他の書式設定オブジェクトを使用して、含まれるテキストを書式設定することができます。

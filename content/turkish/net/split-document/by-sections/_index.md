@@ -52,7 +52,7 @@ Document doc = new Document(MyDir + "Big document.docx");
 
 for (int i = 0; i < doc.Sections.Count; i++)
 {
-	// Bir belgeyi daha küçük parçalara (bu örnekte bölüme göre) bölün.
+	//Bir belgeyi daha küçük parçalara (bu örnekte bölüme göre) bölün.
 	Section section = doc.Sections[i].Clone();
 
 	Document newDoc = new Document();
@@ -74,7 +74,7 @@ Artık belirli bölümlerle kolayca çalışabilirsiniz.
 
 Bu eğitimde Aspose.Words for .NET'in Belgeyi Bölümlere Göre Böl işlevini inceledik. Bir Word belgesini ayrı bölümlere nasıl ayıracağımızı, her bölüm için ayrı belgeler oluşturmayı öğrendik. Belgeyi yükleyerek, her bölümü yineleyerek ve bunları ayrı belgeler olarak kaydederek belirli bölümlerle etkili bir şekilde çalışabildik.
 
-Belgeyi Bölümlere Göre Böl özelliğini kullanmak, bir belgenin bölümler, bölümler veya diğer bölümler gibi belirli bölümlerini işlemeniz veya analiz etmeniz gerektiğinde avantajlı olabilir. Aspose.Words for .NET, bölüm ayırma işlemini gerçekleştirmek için güvenilir ve basit bir çözüm sunarak verimli belge işleme olanağı sağlar.
+Belgeyi Bölümlere Göre Böl özelliğini kullanmak, bir belgenin bölümler, kısımlar veya diğer bölümler gibi belirli bölümlerini işlemeniz veya analiz etmeniz gerektiğinde avantajlı olabilir. Aspose.Words for .NET, bölüm ayırma işlemini gerçekleştirmek için güvenilir ve basit bir çözüm sunarak verimli belge işleme olanağı sağlar.
 
 Belge işleme yeteneklerinizi geliştirmek ve iş akışınızı kolaylaştırmak için Aspose.Words for .NET'in sunduğu diğer güçlü özellikleri keşfetmekten çekinmeyin.
 

@@ -42,7 +42,7 @@ public class HTMLToWordConversion {
 
 ## Bước 3: Tải nội dung HTML
 
- Tiếp theo, tải nội dung HTML mà bạn muốn chuyển đổi vào`Document` sự vật. Bạn có thể dùng`DocumentBuilder` lớp học cho mục đích này.
+ Tiếp theo, tải nội dung HTML mà bạn muốn chuyển đổi vào`Document` sự vật. Bạn có thể dùng`DocumentBuilder` lớp cho mục đích này.
 
 ```java
 DocumentBuilder builder = new DocumentBuilder(doc);

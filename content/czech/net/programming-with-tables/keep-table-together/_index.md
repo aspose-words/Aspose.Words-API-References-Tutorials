@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-tables/keep-table-together/
 ---
 
-V tomto tutoriálu se naučíme, jak držet stůl pohromadě v dokumentu aplikace Word pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto tutoriálu budete schopni udržet tabulku neporušenou, aniž by se rozdělovala na více stránek v dokumentech aplikace Word.
+tomto tutoriálu se naučíme, jak držet stůl pohromadě v dokumentu aplikace Word pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto tutoriálu budete schopni udržet tabulku neporušenou, aniž by se rozdělovala na více stránek v dokumentech aplikace Word.
 
 ## Krok 1: Nastavení projektu
 1. Spusťte Visual Studio a vytvořte nový projekt C#.

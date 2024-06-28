@@ -61,7 +61,7 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // تحديث الحقول.
 document. UpdateFields();
 
-// عرض النتائج الميدانية.
+//عرض النتائج الميدانية.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
@@ -78,7 +78,7 @@ foreach(Field field in document.Range.Fields)
 
 #### س: كيفية تحديث حقل عرض النتائج في مستند Word باستخدام Aspose.Words؟
 
-ج: لتحديث حقل عرض النتيجة في مستند Word باستخدام Aspose.Words، يمكنك استخدام الأسلوب UpdateFields. تتكرر هذه الطريقة خلال المستند وتقوم بتحديث كافة الحقول، بما في ذلك حقول عرض النتائج، وإعادة حساب القيم بناءً على البيانات الحالية.
+ج: لتحديث حقل عرض النتيجة في مستند Word باستخدام Aspose.Words، يمكنك استخدام الأسلوب UpdateFields. تتكرر هذه الطريقة عبر المستند وتقوم بتحديث جميع الحقول، بما في ذلك حقول عرض النتائج، وإعادة حساب القيم بناءً على البيانات الحالية.
 
 #### س: هل يمكنني تنسيق النتيجة المعروضة بواسطة حقل عرض النتيجة؟
 

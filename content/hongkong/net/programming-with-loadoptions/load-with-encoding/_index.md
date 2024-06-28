@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 
 ### 常見問題解答
 
-#### Q：什麼是編碼？為什麼它在處理文字文檔時很重要？
+#### Q：什麼是編碼？
 
 答：編碼是指以電腦可讀格式表示字元的方法。它對於正確解釋和顯示文字文件至關重要，尤其是當它們包含非 ASCII 字元或採用不同字元集時。
 

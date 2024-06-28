@@ -36,7 +36,7 @@ field. Remove();
 
 ## Paso 4: guardar el documento
 
- Finalmente llamamos al`Save()` Método para guardar el documento modificado.
+ Finalmente llamamos al`Save()` método para guardar el documento modificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");

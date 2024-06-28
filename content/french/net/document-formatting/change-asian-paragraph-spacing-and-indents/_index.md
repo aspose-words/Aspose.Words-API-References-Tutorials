@@ -51,9 +51,9 @@ Voici le code source complet de la fonctionnalité Modifier l'espacement et les 
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent sera mis à jour
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent sera mis à jour
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent sera mis à jour
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent sera mis à jour.
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent sera mis à jour.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent sera mis à jour.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore sera mis à jour
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter sera mis à jour
 
@@ -71,7 +71,7 @@ Avec ce code, vous pourrez modifier l'espacement et les retraits d'un paragraphe
 
 #### Q : À quoi sert la fonctionnalité « Modifier l'espacement et les retraits des paragraphes asiatiques » dans Aspose.Words pour .NET ?
 
-R : La fonctionnalité « Modifier l'espacement et les retraits des paragraphes asiatiques » dans Aspose.Words pour .NET vous permet de modifier les propriétés d'espacement et d'indentation d'un paragraphe asiatique dans un document Word. Vous pouvez ajuster les valeurs de retrait gauche et droit, de retrait de première ligne, d’espace avant et d’espace après pour contrôler la disposition et l’apparence du paragraphe.
+R : La fonctionnalité « Modifier l'espacement et les retraits des paragraphes asiatiques » dans Aspose.Words pour .NET vous permet de modifier les propriétés d'espacement et d'indentation d'un paragraphe asiatique dans un document Word. Vous pouvez ajuster les valeurs de retrait gauche et droit, de retrait de première ligne, d'espace avant et d'espace après pour contrôler la disposition et l'apparence du paragraphe.
 
 #### Q : Comment modifier l'espacement et le retrait d'un paragraphe asiatique à l'aide d'Aspose.Words pour .NET ?
 

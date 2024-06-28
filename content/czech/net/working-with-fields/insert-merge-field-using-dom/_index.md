@@ -2,65 +2,52 @@
 title: Vložit slučovací pole pomocí DOM
 linktitle: Vložit slučovací pole pomocí DOM
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vložit vlastní pole slučování polí do dokumentů aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se vkládat a konfigurovat slučovací pole v dokumentech aplikace Word pomocí Aspose.Words for .NET s tímto komplexním, podrobným výukovým programem.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-merge-field-using-dom/
 ---
 
-Zde je průvodce krok za krokem vysvětlující níže uvedený zdrojový kód C#, který používá funkci "Vložit pole slučovacího pole" Aspose.Words for .NET. Ujistěte se, že pečlivě dodržujete každý krok, abyste dosáhli požadovaných výsledků.
+Pokud pracujete se zpracováním dokumentů v .NET, pravděpodobně jste narazili na Aspose.Words. Tato výkonná knihovna nabízí širokou škálu funkcí pro programovou manipulaci s dokumenty Wordu. V tomto tutoriálu se zaměříme na jednu konkrétní funkci: vložení slučovacího pole pomocí Document Object Model (DOM) v Aspose.Words pro .NET. Tato příručka vás provede každým krokem, od nastavení prostředí až po vložení a aktualizaci slučovacího pole v dokumentu aplikace Word.
 
-## Krok 1: Nastavení adresáře dokumentů
+## Předpoklady
 
-V poskytnutém kódu musíte zadat adresář vašich dokumentů. Nahraďte hodnotu „VÁŠ ADRESÁŘ DOKUMENTŮ“ příslušnou cestou k adresáři vašich dokumentů.
+Než se ponoříte do kódu, ujistěte se, že máte v tomto návodu vše, co potřebujete.
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1. **Basic Knowledge of C#:** Programování v C# by vám mělo být příjemné.
+2. **Visual Studio Installed:** Ujistěte se, že máte na počítači nainstalované Visual Studio nebo jakékoli jiné IDE C#.
+3. **Aspose.Words for .NET:** Stáhněte si a nainstalujte nejnovější verzi Aspose.Words for .NET z[Vydání](https://releases.aspose.com/words/net/).
+4. **Valid License:** Pokud nemáte licenci, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
 
-## Krok 2: Vytvoření dokumentu a DocumentBuilderu
+## Krok 1: Nastavte svůj projekt
 
-Začneme vytvořením nového dokumentu a inicializací DocumentBuilderu.
+Za prvé, pojďme nastavit nový projekt ve Visual Studiu.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+1. **Open Visual Studio.**
+2. **Create a New Project:** Přejděte na Soubor > Nový > Projekt. Vyberte aplikaci C# Console.
+3. **Name Your Project:** Dejte svému projektu smysluplný název a klikněte na Vytvořit.
 
-## Krok 3: Přesunutí kurzoru na odstavec
+## Krok 2: Nainstalujte Aspose.Words
 
- Používáme`MoveTo()` metodou DocumentBuilderu přesuneme kurzor na odstavec, kam chceme vložit pole pro sloučení pole.
+Chcete-li používat Aspose.Words, musíte je přidat do svého projektu. To lze provést pomocí Správce balíčků NuGet.
 
-```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-builder. MoveTo(para);
-```
+1. **Open NuGet Package Manager:** Klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení a poté vyberte Spravovat balíčky NuGet.
+2. **Search for Aspose.Words:** Ve Správci balíčků NuGet vyhledejte „Apose.Words“.
+3. **Install the Package:** Klepnutím na Instalovat přidáte Aspose.Words do svého projektu.
 
-## Krok 4: Vložení pole sloučení polí
+## Krok 3: Import jmenných prostorů
 
- Používáme DocumentBuilder's`InsertField()` metoda pro vložení pole slučovacího pole do odstavce.
-
-```csharp
-FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
-```
-
-Poté nakonfigurujeme vlastnosti pole sloučení polí zadáním příslušných možností, jako je název pole, text před a za polem a možnosti vertikálního formátování.
+Chcete-li začít používat Aspose.Words, musíte do projektu importovat potřebné jmenné prostory. Můžete to udělat takto:
 
 ```csharp
-field.FieldName = "Test1";
-field.TextBefore = "Test2";
-field. TextAfter = "Test3";
-field. IsMapped = true;
-field. IsVerticalFormatting = true;
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- Nakonec zavoláme`Update()` způsob aktualizace pole.
+## Krok 4: Inicializujte svůj dokument
 
-```csharp
-field. Update();
-```
-
-### Ukázkový zdrojový kód pro vložení pole sloučení pole s Aspose.Words pro .NET
+Nyní, když je vše nastaveno, vytvořte nový dokument aplikace Word a inicializujte DocumentBuilder.
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -69,51 +56,67 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Vytvořte dokument a DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Krok 5: Přesuňte kurzor na konkrétní odstavec
+
+Dále musíme přesunout kurzor na konkrétní odstavec v dokumentu, kam chceme vložit slučovací pole.
+
+```csharp
 // Přesuňte kurzor na odstavec.
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-builder. MoveTo(para);
+builder.MoveToParagraph(2, 0);
+```
 
+## Krok 6: Vložte slučovací pole
+
+ Vložení slučovacího pole je jednoduché. Budeme používat`InsertField` metoda`DocumentBuilder` třída.
+
+```csharp
 // Vložit pole sloučení pole.
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
+```
 
+## Krok 7: Nakonfigurujte slučovací pole
+
+Po vložení slučovacího pole můžete nastavit různé vlastnosti a nakonfigurovat jej podle svých potřeb.
+
+```csharp
 field.FieldName = "Test1";
 field.TextBefore = "Test2";
-field. TextAfter = "Test3";
-field. IsMapped = true;
-field. IsVerticalFormatting = true;
+field.TextAfter = "Test3";
+field.IsMapped = true;
+field.IsVerticalFormatting = true;
+```
 
+## Krok 8: Aktualizujte a uložte dokument
+
+Nakonec aktualizujte pole, abyste zajistili použití všech nastavení a uložte dokument.
+
+```csharp
 // Aktualizujte pole.
-field. Update();
+field.Update();
 
+// Uložte dokument.
 doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
-V tomto příkladu jsme vytvořili nový dokument, přesunuli kurzor na požadovaný odstavec a pak do dokumentu vložili pole pro sloučení polí.
+## Závěr
 
-### FAQ
+Podle těchto kroků můžete snadno vložit a nakonfigurovat slučovací pole v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento výukový program se zabýval základními kroky od nastavení prostředí až po uložení konečného dokumentu. S Aspose.Words můžete automatizovat složité úlohy zpracování dokumentů, díky čemuž budou vaše aplikace .NET výkonnější a efektivnější.
 
-#### Otázka: Jak mohu vložit slučovací pole do dokumentu aplikace Word pomocí Aspose.Words for .NET s DOM?
+## Nejčastější dotazy
 
-Odpověď: Chcete-li vložit slučovací pole do dokumentu aplikace Word pomocí Aspose.Words for .NET s DOM, můžete postupovat takto:
+### 1. Co je slučovací pole?
+Slučovací pole je zástupný symbol v dokumentu, který lze dynamicky nahradit daty ze zdroje dat, jako je databáze nebo soubor CSV.
 
-1. Přejděte na odstavec, kam chcete vložit slučovací pole.
-2.  Vytvořit`FieldMergeField` objekt.
-3. Nastavte vlastnosti slučovacího pole, jako je název pole a možnosti formátování.
-4.  Přidejte slučovací pole do odstavce pomocí`Paragraph.AppendChild` metoda.
+### 2. Mohu používat Aspose.Words zdarma?
+ Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/). Pro dlouhodobé používání si budete muset zakoupit licenci.
 
-#### Otázka: Jak mohu zadat zdrojová data pro slučovací pole v Aspose.Words pro .NET?
+### 3. Jak získám dočasnou licenci pro Aspose.Words?
+ Dočasnou licenci můžete získat z webu Aspose[tady](https://purchase.aspose.com/temporary-license/).
 
-Odpověď: Chcete-li zadat zdrojová data pro slučovací pole v Aspose.Words pro .NET, můžete použít`FieldMergeField.FieldName` metoda pro nastavení názvu slučovacího pole, což je název pole v externím zdroji dat, jako je soubor CSV, databáze atd. Můžete také použít`FieldMergeField.Text` metodu pro přímé nastavení hodnoty slučovacího pole.
+### 4. Jaké verze .NET jsou podporovány Aspose.Words?
+Aspose.Words podporuje několik verzí .NET, včetně .NET Framework, .NET Core a .NET Standard.
 
-#### Otázka: Mohu upravit vzhled slučovacího pole v dokumentu aplikace Word pomocí Aspose.Words for .NET?
-
- Odpověď: Ano, vzhled slučovacího pole v dokumentu aplikace Word můžete upravit pomocí Aspose.Words for .NET. Můžete nastavit možnosti formátování, jako je velikost písmen, písmo, barva atd. pomocí vlastností souboru`FieldMergeField` objekt.
-
-#### Otázka: Jak mohu zkontrolovat, zda bylo slučovací pole úspěšně vloženo do dokumentu aplikace Word pomocí Aspose.Words for .NET?
-
- Odpověď: Chcete-li zkontrolovat, zda bylo slučovací pole vloženo úspěšně, můžete procházet obsah dokumentu a hledat instance slučovacího pole. Můžete použít metody a vlastnosti`Document` objekt pro přístup k odstavcům, polím a dalším prvkům dokumentu.
-
-#### Otázka: Má vložení slučovacího pole pomocí DOM vliv na strukturu dokumentu Word s Aspose.Words pro .NET?
-
-Odpověď: Vložení slučovacího pole pomocí modelu DOM přímo neovlivní strukturu dokumentu aplikace Word. Do obsahu dokumentu však přidá nový prvek pole. Strukturu dokumentu můžete upravovat přidáním, odstraněním nebo úpravou stávajících prvků podle vašich potřeb.
+### 5. Kde najdu dokumentaci API pro Aspose.Words?
+ K dispozici je dokumentace API.[tady](https://reference.aspose.com/words/net/).

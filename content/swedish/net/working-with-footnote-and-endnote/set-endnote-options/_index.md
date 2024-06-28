@@ -50,7 +50,7 @@ option.Position = EndnotePosition.EndOfSection;
 
 ## Steg 5: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
@@ -81,7 +81,7 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Hur kan jag utforma slutnoter i Aspose.Words?
 
- S: För att utforma slutnoter i Aspose.Words kan du använda`EndnoteOptions` klass och`SeparatorNoteTextStyle` fast egendom. Du kan ange teckensnittsstil, storlek, färg etc. för slutanteckningar med den här egenskapen.
+S: För att utforma slutnoter i Aspose.Words kan du använda`EndnoteOptions` klass och`SeparatorNoteTextStyle` fast egendom. Du kan ange teckensnittsstil, storlek, färg etc. för slutanteckningar med den här egenskapen.
 
 #### F: Är det möjligt att anpassa numreringen av slutnoter i ett dokument?
 
@@ -97,4 +97,4 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Är det möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument?
 
- S: Ja, det är möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument. Använd`RestartRule` egendom av`EndnoteOptions` klass och ställ in den på`RestartContinuous` för att låta numreringen fortsätta mellan avsnitten.
+S: Ja, det är möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument. Använd`RestartRule` egendom av`EndnoteOptions` klass och ställ in den på`RestartContinuous` för att låta numreringen fortsätta mellan avsnitten.

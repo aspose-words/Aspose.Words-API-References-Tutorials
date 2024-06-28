@@ -321,7 +321,7 @@ doc.save("HeaderFooterDocument.docx");
 // एक नया दस्तावेज़ बनाएँ
 Document doc = new Document();
 
-// 3 पंक्तियों और 3 स्तंभों वाली एक तालिका बनाएं
+// 3 पंक्तियों और 3 स्तंभों वाली एक तालिका बनाएं।
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

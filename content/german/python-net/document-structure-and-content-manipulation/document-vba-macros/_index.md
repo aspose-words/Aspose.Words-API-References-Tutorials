@@ -1,7 +1,7 @@
 ---
 title: Erschließen Sie erweiterte Automatisierung mit VBA-Makros in Word-Dokumenten
 linktitle: Erschließen Sie erweiterte Automatisierung mit VBA-Makros in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Nutzen Sie die erweiterte Automatisierung in Word-Dokumenten mithilfe der Aspose.Words-Python-API und VBA-Makros. Lernen Sie Schritt für Schritt mit Quellcode und FAQs. Steigern Sie jetzt die Produktivität. Zugang unter [Link].
 type: docs
 weight: 26

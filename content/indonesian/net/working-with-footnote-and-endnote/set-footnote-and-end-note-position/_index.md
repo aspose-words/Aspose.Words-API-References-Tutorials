@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Langkah 2: Mengatur Posisi Catatan Kaki dan Catatan Akhir
 
- Selanjutnya, akses`FootnoteOptions` Dan`EndnoteOptions` properti dokumen untuk mengatur posisi catatan kaki dan catatan akhir. Pada contoh ini, kita atur posisi catatan kaki berada di bawah teks dan posisi catatan akhir berada di akhir bagian:
+ Selanjutnya, akses`FootnoteOptions` Dan`EndnoteOptions`properti dokumen untuk mengatur posisi catatan kaki dan catatan akhir. Pada contoh ini, kita atur posisi catatan kaki berada di bawah teks dan posisi catatan akhir berada di akhir bagian:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

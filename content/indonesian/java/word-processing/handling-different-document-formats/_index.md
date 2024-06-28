@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Membuat Tabel
 
 ```java
-// Buat tabel dengan 3 baris dan 4 kolom
+// Buat tabel dengan 3 baris dan 4 kolom.
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

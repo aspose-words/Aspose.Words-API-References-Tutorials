@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 
@@ -101,7 +101,7 @@ Bằng cách sử dụng Aspose.Words cho .NET, bạn có thể dễ dàng kết
 Aspose.Words for .NET là một thư viện xử lý tài liệu mạnh mẽ cho phép các nhà phát triển tạo, thao tác và lưu tài liệu Word theo chương trình trong các ứng dụng .NET. Nó cung cấp nhiều tính năng cho Xử lý văn bản với các thành phần tài liệu, bao gồm biểu đồ và trục biểu đồ.
 
 #### Q2. Làm cách nào tôi có thể cài đặt Aspose.Words cho .NET?
-Bạn có thể cài đặt Aspose.Words cho .NET bằng cách tải xuống bằng cách sử dụng trình quản lý gói NuGet trong Visual Studio. Chỉ cần tìm kiếm "Aspose.Words" trong trình quản lý gói NuGet và cài đặt nó vào dự án của bạn.
+Bạn có thể cài đặt Aspose.Words cho .NET bằng cách tải xuống bằng cách sử dụng trình quản lý gói NuGet trong Visual Studio. Chỉ cần tìm kiếm "Apose.Words" trong trình quản lý gói NuGet và cài đặt nó vào dự án của bạn.
 
 #### Q3. Tôi có thể ẩn cả trục X và trục Y của biểu đồ không?
  Có, bạn có thể ẩn cả trục X và trục Y của biểu đồ bằng Aspose.Words for .NET. Để ẩn trục X, bạn có thể truy cập`AxisX` thuộc tính của biểu đồ và thiết lập`Hidden`tài sản để`true` . Tương tự, để ẩn trục Y, bạn có thể truy cập vào`AxisY` thuộc tính và thiết lập`Hidden`tài sản để`true`. Điều này cho phép bạn loại bỏ cả hai trục khỏi trực quan hóa biểu đồ.

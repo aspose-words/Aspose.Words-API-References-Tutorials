@@ -11,7 +11,7 @@ Szöveg keresése és cseréje oktatóprogram elmagyarázza, hogyan használhatj
 
 Az Aspose.Words for .NET egy hatékony könyvtár, amely a .NET-alkalmazásokban található Word-dokumentumokkal végzett szövegfeldolgozási funkciók széles skáláját kínálja. Az oktatóanyag részletes kódpéldákat tartalmaz, és elmagyarázza a szövegkeresési és -csere műveletek végrehajtásához szükséges lépéseket. Megtanulja, hogyan használhatja az Aspose.Words API metódusait és tulajdonságait szöveg keresésére és cseréjére, figyelembe véve a különböző lehetőségeket, például a kis- és nagybetűket, az ékezetes érzékenységet és egyebeket.
 
-Akár adott szavakat kell cserélnie, akár szövegsablonokat kell frissítenie, akár a Word-dokumentumok tartalmát kell testreszabnia, a "Szöveg keresése és cseréje" című oktatóanyag végigvezeti Önt az Aspose-val végzett feladatok elvégzéséhez szükséges alapvető lépéseken. Szavak a .NET-hez. Átfogó dokumentációval és egyértelmű kódmintákkal ezek az oktatóanyagok értékes forrást jelentenek azoknak a fejlesztőknek, akik a legtöbbet szeretnék kihozni ebből a könyvtárból, és fejleszteni szeretnék a Word-dokumentumokkal végzett szövegfeldolgozási készségeiket.
+Akár bizonyos szavakat kell cserélnie, akár szövegsablonokat kell frissítenie, akár a Word-dokumentumok tartalmát kell testreszabnia, a "Szöveg keresése és cseréje" című oktatóanyag végigvezeti Önt az Aspose-val végzett feladatok elvégzéséhez szükséges alapvető lépéseken. Szavak a .NET-hez. Átfogó dokumentációval és egyértelmű kódmintákkal ezek az oktatóanyagok értékes forrást jelentenek azoknak a fejlesztőknek, akik a legtöbbet szeretnék kihozni ebből a könyvtárból, és fejleszteni szeretnék a Word-dokumentumokkal végzett szövegfeldolgozási készségeiket.
 
  ## Oktatóanyagok
 | Cím | Leírás |

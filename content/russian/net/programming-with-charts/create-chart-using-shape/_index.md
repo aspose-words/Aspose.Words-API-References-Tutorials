@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте и настройте фигуру диаграммы
- Вставьте фигуру диаграммы в документ, используя`InsertChart` метод`DocumentBuilder` объект. Установите желаемый тип и размеры диаграммы.
+ Вставьте фигуру диаграммы в документ, используя`InsertChart` метод`DocumentBuilder` Объект Object. Установите желаемый тип и размеры диаграммы.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);

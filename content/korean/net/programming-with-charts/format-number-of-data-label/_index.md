@@ -17,7 +17,7 @@ url: /ko/net/programming-with-charts/format-number-of-data-label/
 - .NET 라이브러리용 Aspose.Words가 설치되었습니다. NuGet 패키지 관리자를 사용하여 다운로드하여 설치할 수 있습니다.
 - 출력 문서가 저장될 문서 디렉터리 경로입니다.
 
-## 2단계: 새 문서 만들기 및 차트 삽입
+## 2단계: 새 문서를 만들고 차트를 삽입합니다.
 
  새로 만들기`Document` 객체와`DocumentBuilder` 문서를 작성합니다.
 
@@ -60,7 +60,7 @@ series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-이 예에서는 각 데이터 레이블에 대해 서로 다른 숫자 형식을 설정합니다. 첫 번째 데이터 레이블은 통화로 형식화되고, 두 번째는 날짜로, 세 번째는 백분율로 지정됩니다.
+이 예에서는 각 데이터 레이블에 대해 서로 다른 숫자 형식을 설정합니다. 첫 번째 데이터 레이블은 통화 형식으로, 두 번째는 날짜로, 세 번째는 백분율 형식으로 지정됩니다.
 
 ## 5단계: 문서 저장
 
@@ -115,7 +115,7 @@ API를 사용하면 값 표시를 제어하고, 각 데이터 레이블에 대�
 Aspose.Words for .NET은 개발자가 .NET 애플리케이션에서 프로그래밍 방식으로 Word 문서를 생성, 조작 및 저장할 수 있도록 하는 기능이 풍부한 문서 처리 라이브러리입니다. 차트 및 데이터 레이블을 포함한 문서 요소를 사용하여 단어 처리를 위한 광범위한 기능을 제공합니다.
 
 #### Q2. .NET용 Aspose.Words를 어떻게 설치하나요?
-Visual Studio의 NuGet 패키지 관리자를 사용하여 .NET용 Aspose.Words를 다운로드하여 설치할 수 있습니다. NuGet 패키지 관리자에서 "Aspose.Words"를 검색하여 프로젝트에 설치하기만 하면 됩니다.
+Visual Studio의 NuGet 패키지 관리자를 사용하여 .NET용 Aspose.Words를 다운로드하여 설치할 수 있습니다. NuGet 패키지 관리자에서 "Apose.Words"를 검색하여 프로젝트에 설치하기만 하면 됩니다.
 
 #### Q3. .NET용 Aspose.Words를 사용하여 차트의 다른 측면에 서식을 지정할 수 있나요?
 예, Aspose.Words for .NET은 차트의 다양한 측면에 서식을 지정하기 위한 광범위한 기능을 제공합니다. 데이터 레이블 외에도 차트 유형, 계열 데이터, 축 속성, 범례, 제목, 그림 영역 및 차트의 기타 여러 요소를 사용자 정의할 수 있습니다. API는 차트 모양과 서식을 세밀하게 제어할 수 있는 기능을 제공합니다.

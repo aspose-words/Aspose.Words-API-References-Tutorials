@@ -11,7 +11,7 @@ Samouczki Aspose.Words dla .NET dotyczące przetwarzania tekstu z właściwości
 
 Te samouczki poprowadzą Cię krok po kroku przez korzystanie z biblioteki Aspose.Words for .NET do interakcji z właściwościami dokumentu. Dowiesz się, jak wyodrębnić istniejące właściwości, ustawić nowe wartości i usunąć niechciane właściwości. Rozumiejąc, jak manipulować właściwościami dokumentu, będziesz mógł tworzyć profesjonalne dokumenty Word i dostosowywać je do swoich wymagań.
 
-Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, samouczki Aspose.Words dla .NET dotyczące przetwarzania słów z właściwościami dokumentu zapewnią ci wiedzę i umiejętności potrzebne do skutecznego zarządzania właściwościami dokumentu Word i optymalizacji przepływu pracy.
+Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, samouczki Aspose.Words dla .NET na temat przetwarzania słów z właściwościami dokumentu zapewnią ci wiedzę i umiejętności potrzebne do skutecznego zarządzania właściwościami dokumentu Word i optymalizacji przepływu pracy.
 
  ## Poradniki
 | Tytuł | Opis |

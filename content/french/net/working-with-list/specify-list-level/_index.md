@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Étape 6 : Arrêter le formatage de la liste
 
- Pour arrêter le formatage de la liste, définissez`null` au`List` propriété du générateur de documents :
+ Pour arrêter le formatage de la liste, définissez`null` au`List`propriété du générateur de documents :
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Créez une liste numérotée basée sur l'un des modèles de liste Microsoft Word
+// Créez une liste numérotée basée sur l'un des modèles de liste Microsoft Word.
 //et appliquez-le au paragraphe actuel du générateur de documents.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Créez une liste à puces basée sur l'un des modèles de liste Microsoft Word
+// Créez une liste à puces basée sur l'un des modèles de liste Microsoft Word.
 //et appliquez-le au paragraphe actuel du générateur de documents.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### Q : Puis-je ajouter des niveaux supplémentaires à une liste numérotée dans Aspose.Words ?
 
- R : Oui, il est possible d'ajouter des niveaux supplémentaires à une liste numérotée dans Aspose.Words. Le`ListLevel` La classe vous permet de définir les propriétés de formatage pour chaque niveau de la liste. Vous pouvez définir des options telles que le préfixe, le suffixe, l'alignement, le retrait, etc. Cela vous permet de créer des listes avec plusieurs niveaux de hiérarchie.
+ R : Oui, il est possible d'ajouter des niveaux supplémentaires à une liste numérotée dans Aspose.Words. Le`ListLevel`La classe vous permet de définir les propriétés de formatage pour chaque niveau de la liste. Vous pouvez définir des options telles que le préfixe, le suffixe, l'alignement, le retrait, etc. Cela vous permet de créer des listes avec plusieurs niveaux de hiérarchie.
 
 

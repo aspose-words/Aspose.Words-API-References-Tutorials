@@ -17,7 +17,7 @@ url: /zh/net/programming-with-charts/hide-chart-axis/
 - 已安装 Aspose.Words for .NET 库。您可以使用 NuGet 包管理器下载并安装它。
 - 将保存输出文档的文档目录路径。
 
-## 步骤 2：创建一个新文档并插入图表
+## 步骤2：创建一个新文档并插入图表。
 
 创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 Aspose.Words for .NET 是一个功能强大的文档处理库，使开发人员能够在 .NET 应用程序中以编程方式创建、操作和保存 Word 文档。它为文档元素（包括图表和图表轴）的文字处理提供了广泛的功能。
 
 #### Q2。如何安装 Aspose.Words for .NET？
-您可以使用 Visual Studio 中的 NuGet 包管理器下载 Aspose.Words for .NET 来安装它。只需在 NuGet 包管理器中搜索“Aspose.Words”并将其安装到您的项目中即可。
+您可以使用 Visual Studio 中的 NuGet 包管理器下载 Aspose.Words for .NET 来安装它。只需在 NuGet 包管理器中搜索“Apose.Words”并将其安装到您的项目中即可。
 
 #### Q3。我可以隐藏图表的 X 轴和 Y 轴吗？
 是的，您可以使用 Aspose.Words for .NET 隐藏图表的 X 轴和 Y 轴。要隐藏 X 轴，您可以访问`AxisX`图表的属性并设置`Hidden`财产给`true`。同样，要隐藏 Y 轴，您可以访问`AxisY`属性并设置`Hidden`财产给`true`。这允许您从图表可视化中删除两个轴。

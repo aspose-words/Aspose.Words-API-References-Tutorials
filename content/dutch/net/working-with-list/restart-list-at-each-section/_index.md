@@ -91,12 +91,12 @@ U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw spec
 
 #### Vraag: Hoe kan ik een lijst in elke sectie in Aspose.Words opnieuw starten?
 
- A: Om een lijst bij elke sectie in Aspose.Words opnieuw te starten, moet u een exemplaar van de`List` klasse en wijs er een genummerde lijst aan toe. Dan kunt u gebruik maken van de`List.IsRestartAtEachSection` eigenschap om aan te geven dat de nummering bij elke sectie opnieuw moet worden gestart. U kunt deze lijst koppelen aan één of meerdere secties van uw document, zodat de nummering bij elke sectie correct opnieuw wordt gestart.
+ A: Om een lijst bij elke sectie in Aspose.Words opnieuw te starten, moet u een exemplaar van de`List`klasse en wijs er een genummerde lijst aan toe. Dan kun je gebruik maken van de`List.IsRestartAtEachSection` eigenschap om aan te geven dat de nummering bij elke sectie opnieuw moet worden gestart. U kunt deze lijst koppelen aan één of meerdere secties van uw document, zodat de nummering bij elke sectie correct opnieuw wordt gestart.
 
 #### Vraag: Kan ik het nummeringsformaat van lijsten in Aspose.Words aanpassen?
 
-A: Ja, u kunt het nummeringsformaat van lijsten in Aspose.Words aanpassen. De`List` class biedt hiervoor verschillende eigenschappen, zoals`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, enz. U kunt deze eigenschappen gebruiken om het lijsttype (genummerd, met opsommingstekens, enz.), de nummeringsnotatie (Arabische cijfers, Romeinse cijfers, letters, enz.) en andere opmaakopties voor nummering in te stellen.
+ A: Ja, u kunt het nummeringsformaat van lijsten in Aspose.Words aanpassen. De`List` class biedt hiervoor verschillende eigenschappen, zoals`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, enz. U kunt deze eigenschappen gebruiken om het lijsttype (genummerd, met opsommingstekens, enz.), de nummeringsnotatie (Arabische cijfers, Romeinse cijfers, letters, enz.) en andere opmaakopties voor nummering in te stellen.
 
 #### Vraag: Is het mogelijk om extra niveaus toe te voegen aan een genummerde lijst in Aspose.Words?
 
- A: Ja, het is mogelijk om extra niveaus toe te voegen aan een genummerde lijst in Aspose.Words. De`ListLevel` Met class kunt u opmaakeigenschappen instellen voor elk niveau van de lijst. U kunt opties instellen zoals voorvoegsel, achtervoegsel, uitlijning, inspringing, enz. Hiermee kunt u lijsten maken met meerdere hiërarchieniveaus.
+ A: Ja, het is mogelijk om extra niveaus toe te voegen aan een genummerde lijst in Aspose.Words. De`ListLevel`Met class kunt u opmaakeigenschappen instellen voor elk niveau van de lijst. U kunt opties instellen zoals voorvoegsel, achtervoegsel, uitlijning, inspringing, enz. Hiermee kunt u lijsten maken met meerdere hiërarchieniveaus.

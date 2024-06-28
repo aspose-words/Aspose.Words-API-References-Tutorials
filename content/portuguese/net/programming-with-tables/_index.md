@@ -19,7 +19,7 @@ Seguindo estes tutoriais, você poderá explorar totalmente os recursos de manip
 | [Ajustar automaticamente a tabela ao conteúdo](./auto-fit-table-to-contents/) | Aprenda como ajustar automaticamente uma tabela ao seu conteúdo em um documento do Word usando Aspose.Words for .NET. |
 | [Clonar tabela completa](./clone-complete-table/) | Aprenda como clonar uma tabela inteira em um documento do Word com Aspose.Words for .NET. |
 | [Encontrando Índice](./finding-index/) | Aprenda como encontrar índices de tabelas, linhas e células em um documento do Word com Aspose.Words for .NET. |
-| [Inserir tabela diretamente](./insert-table-directly/) | Aprenda como inserir uma tabela diretamente em um documento do Word com Aspose.Words for .NET. |
+| [Inserir tabela diretamente](./insert-table-directly/) | Aprenda como inserir tabelas diretamente em documentos do Word usando Aspose.Words for .NET. Siga nosso guia passo a passo detalhado para agilizar a criação de documentos. |
 | [Inserir tabela de HTML](./insert-table-from-html/) | Aprenda como inserir uma tabela HTML em um documento Word com Aspose.Words for .NET. |
 | [Crie uma tabela simples](./create-simple-table/) | Aprenda como criar uma tabela simples em um documento do Word com Aspose.Words for .NET. |
 | [Tabela formatada](./formatted-table/) | Aprenda como criar uma tabela formatada em um documento do Word com Aspose.Words for .NET. |
@@ -28,7 +28,7 @@ Seguindo estes tutoriais, você poderá explorar totalmente os recursos de manip
 | [Tabela dividida](./split-table/) | Aprenda como dividir uma tabela em um documento do Word usando Aspose.Words for .NET. |
 | [Formato de linha desabilita quebra entre páginas](./row-format-disable-break-across-pages/) | Aprenda como desabilitar a quebra de linha para uma tabela em várias páginas em um documento do Word com Aspose.Words for .NET. |
 | [Mantenha a mesa unida](./keep-table-together/) | Aprenda como manter uma tabela unida em um documento do Word com Aspose.Words for .NET. |
-| [Mesclagem Vertical](./vertical-merge/) | Aprenda como mesclar células verticais em uma tabela em um documento do Word usando Aspose.Words for .NET. |
+| [Mesclagem vertical](./vertical-merge/) | Aprenda como mesclar células verticais em uma tabela em um documento do Word usando Aspose.Words for .NET. |
 | [Mesclagem horizontal](./horizontal-merge/) | Aprenda como mesclar células horizontalmente em uma tabela do Word com Aspose.Words for .NET. |
 | [Converter em células mescladas horizontalmente](./convert-to-horizontally-merged-cells/) | Aprenda como converter células de tabela em células mescladas horizontalmente em um documento do Word com Aspose.Words for .NET. |
 | [Repetir linhas nas páginas subsequentes](./repeat-rows-on-subsequent-pages/) | Aprenda como repetir linhas da tabela nas páginas subsequentes em um documento do Word com Aspose.Words for .NET. |

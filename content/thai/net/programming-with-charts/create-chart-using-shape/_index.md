@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 3: แทรกและกำหนดค่ารูปร่างแผนภูมิ
- แทรกรูปร่างแผนภูมิลงในเอกสารโดยใช้`InsertChart` วิธีการของ`DocumentBuilder` วัตถุ. ตั้งค่าประเภทแผนภูมิและขนาดที่ต้องการ
+ แทรกรูปร่างแผนภูมิลงในเอกสารโดยใช้`InsertChart` วิธีการของ`DocumentBuilder` วัตถุ วัตถุ ตั้งค่าประเภทแผนภูมิและขนาดที่ต้องการ
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);

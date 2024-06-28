@@ -57,4 +57,4 @@ Các vấn đề về mã hóa có thể phát sinh khi chuyển đổi DOCX san
 
 #### Những hạn chế của quá trình chuyển đổi là gì?
 
-Những hạn chế của quá trình chuyển đổi tùy thuộc vào công cụ hoặc thư viện cụ thể mà bạn đang sử dụng. Một số công cụ có thể có những hạn chế liên quan đến các tính năng được hỗ trợ, định dạng phức tạp hoặc các thành phần cụ thể của tệp DOCX. Điều quan trọng là phải hiểu những hạn chế của công cụ đã chọn và đánh giá xem chúng có phù hợp với nhu cầu chuyển đổi của bạn hay không.
+Những hạn chế của quá trình chuyển đổi tùy thuộc vào công cụ hoặc thư viện cụ thể mà bạn đang sử dụng. Một số công cụ có thể có các hạn chế liên quan đến các tính năng được hỗ trợ, định dạng phức tạp hoặc các thành phần cụ thể của tệp DOCX. Điều quan trọng là phải hiểu những hạn chế của công cụ đã chọn và đánh giá xem chúng có phù hợp với nhu cầu chuyển đổi của bạn hay không.

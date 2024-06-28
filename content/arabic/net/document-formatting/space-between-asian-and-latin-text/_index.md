@@ -2,7 +2,7 @@
 title: المسافة بين النص الآسيوي واللاتيني في مستند Word
 linktitle: المسافة بين النص الآسيوي واللاتيني في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي والنص اللاتيني في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي والنص اللاتيني في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/document-formatting/space-between-asian-and-latin-text/
@@ -84,7 +84,7 @@ doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
 
 #### س: هل يدعم Aspose.Words for .NET ميزات تنسيق المستندات الأخرى؟
 
-ج: نعم، يوفر Aspose.Words for .NET دعمًا شاملاً لمختلف ميزات تنسيق المستندات. يتضمن وظائف لأنماط الخطوط والفقرات والجداول والصور والمزيد. يمكنك التعامل مع مستندات Word الخاصة بك وتنسيقها بشكل فعال برمجيًا.
+ج: نعم، يوفر Aspose.Words for .NET دعمًا شاملاً لمختلف ميزات تنسيق المستندات. يتضمن وظائف لأنماط الخطوط والفقرات والجداول والصور والمزيد. يمكنك التعامل مع مستندات Word الخاصة بك وتنسيقها بشكل فعال برمجياً.
 
 #### س: أين يمكنني العثور على موارد ووثائق إضافية لـ Aspose.Words لـ .NET؟
 

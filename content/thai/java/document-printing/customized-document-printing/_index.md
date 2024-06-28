@@ -22,7 +22,7 @@ url: /th/java/document-printing/customized-document-printing/
 
 ## การตั้งค่า Aspose.Words สำหรับ Java
 
- ในการเริ่มต้น ให้ดาวน์โหลดไลบรารี Aspose.Words สำหรับ Java จาก[ที่นี่](https://releases.aspose.com/words/java/). ปฏิบัติตามคำแนะนำในการติดตั้งเพื่อรวมเข้ากับโปรเจ็กต์ Java ของคุณ
+ ในการเริ่มต้น ให้ดาวน์โหลดไลบรารี Aspose.Words สำหรับ Java จาก[ที่นี่](https://releases.aspose.com/words/java/)- ปฏิบัติตามคำแนะนำในการติดตั้งเพื่อรวมเข้ากับโปรเจ็กต์ Java ของคุณ
 
 ## การสร้างเอกสารเปล่า
 

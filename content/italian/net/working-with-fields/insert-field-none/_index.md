@@ -2,7 +2,7 @@
 title: Inserisci campo Nessuno
 linktitle: Inserisci campo Nessuno
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come inserire un campione AUCUN nei tuoi documenti Word con Aspose.Words per .NET.
+description: Scopri come creare documenti con AUCUN in Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-field-none/

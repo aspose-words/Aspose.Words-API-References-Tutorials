@@ -88,7 +88,7 @@ Volg deze stappen om de samenvoegvelden in uw document te hernoemen met Aspose.W
 
 #### Vraag: Hoe kan ik de naam van samengevoegde velden in een Word-document wijzigen met Aspose.Words voor .NET?
 
- A: Om de samengevoegde velden in een Word-document te hernoemen met Aspose.Words voor .NET, kunt u door de velden in het document lopen met behulp van de`FieldMergingArgs` klasse en gebruik de`FieldMergingArgs.FieldName` methode om veld te hernoemen.
+ A: Om de samengevoegde velden in een Word-document te hernoemen met Aspose.Words voor .NET, kunt u door de velden in het document lopen met behulp van de`FieldMergingArgs` klasse en gebruik de`FieldMergingArgs.FieldName` methode om velden te hernoemen.
 
 #### Vraag: Is het mogelijk om alleen bepaalde samengevoegde velden in een Word-document te hernoemen met Aspose.Words voor .NET?
 

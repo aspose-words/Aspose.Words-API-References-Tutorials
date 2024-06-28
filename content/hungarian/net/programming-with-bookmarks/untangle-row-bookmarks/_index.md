@@ -120,7 +120,7 @@ V: Igen, a Sorkönyvjelzők feloldása funkció kifejezetten a táblázatokban t
 
 #### K: Módosítja az Unscramble Line Bookmarks funkció az eredeti dokumentum tartalmát?
 
-V: Igen, a sorkönyvjelzők feloldása funkció úgy módosítja az eredeti dokumentumot, hogy a könyvjelzők sorvégeit elmozdítja, hogy azok ugyanabba a sorba kerüljenek, mint a könyvjelzők eleje. A funkció alkalmazása előtt mindenképpen mentsen biztonsági másolatot a dokumentumról.
+V: Igen, a sorkönyvjelzők feloldása funkció módosítja az eredeti dokumentumot a könyvjelzők sorvégeinek mozgatásával, hogy azok ugyanabba a sorba kerüljenek, mint a könyvjelzők eleje. A funkció alkalmazása előtt mindenképpen mentsen biztonsági másolatot a dokumentumról.
 
 #### K: Hogyan azonosíthatom be a soros könyvjelzőket a Word-dokumentumban?
 

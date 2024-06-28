@@ -17,7 +17,7 @@ Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
 - Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
+## Adım 2: Yeni bir belge oluşturun ve bir grafik ekleyin.
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -85,7 +85,7 @@ Bu, Aspose.Words for .NET kullanılarak eksen için sayı formatının ayarlanma
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir grafikteki eksen için sayı formatını nasıl ayarlayacağınızı öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak yeni bir belge oluşturabilir, sütun grafiği ekleyebilir, seri verileri ekleyebilir ve eksen etiketlerini, sayıları belirli bir biçimde görüntüleyecek şekilde biçimlendirebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir grafikteki eksen için sayı formatını nasıl ayarlayacağınızı öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak, yeni bir belge oluşturabilir, sütun grafiği ekleyebilir, seri verileri ekleyebilir ve eksen etiketlerini, sayıları belirli bir biçimde görüntüleyecek şekilde biçimlendirebilirsiniz.
 
 Aspose.Words for .NET, Word belgelerindeki grafiklerin görünümünü özelleştirmek için güçlü özellikler sağlar. Eksen etiketleri için sayı biçimini ayarlayarak, ondalık basamaklar, binlik ayırıcılar, para birimi simgeleri ve daha fazlası gibi seçenekler de dahil olmak üzere sayıların nasıl görüntüleneceğini kontrol edebilirsiniz. Bu, sayısal verileri açık ve anlamlı bir şekilde sunmanıza olanak tanır.
 
@@ -94,7 +94,7 @@ Aspose.Words for .NET ile eksen etiketleri de dahil olmak üzere grafiğin çeş
 ### SSS
 
 #### S1. Grafikteki bir eksenin sayı biçimi nedir?
-Grafikteki bir eksenin sayı biçimi, eksende görüntülenen sayısal değerlere uygulanan biçimlendirmeyi ifade eder. Ondalık basamaklar, binlik ayırıcılar, para birimi simgeleri, yüzde işaretleri ve daha fazlası gibi seçenekler de dahil olmak üzere sayıların nasıl sunulacağını kontrol etmenize olanak tanır. Sayı biçimini ayarlayarak, grafikteki sayısal verilerin görünümünü özel gereksinimlerinize uyacak şekilde özelleştirebilirsiniz.
+Bir grafikteki bir eksenin sayı biçimi, eksende görüntülenen sayısal değerlere uygulanan biçimlendirmeyi ifade eder. Ondalık basamaklar, binlik ayırıcılar, para birimi simgeleri, yüzde işaretleri ve daha fazlası gibi seçenekler de dahil olmak üzere sayıların nasıl sunulacağını kontrol etmenize olanak tanır. Sayı biçimini ayarlayarak, grafikteki sayısal verilerin görünümünü özel gereksinimlerinize uyacak şekilde özelleştirebilirsiniz.
 
 #### Q2. Eksen etiketleri için sayı formatını nasıl ayarlayabilirim?
  Aspose.Words for .NET kullanarak bir grafikteki eksen etiketlerinin sayı formatını ayarlamak için şuraya erişebilirsiniz:`AxisY` Grafiğin özelliğini seçin ve`NumberFormat.FormatCode`özelliği istenilen format koduna ayarlayın. Biçim kodu, standart sayısal biçimlendirme kalıplarının sözdizimini takip eder ve sayıların nasıl görüntüleneceğini belirler. Örneğin, iki ondalık basamaklı ve binlik ayırıcılı sayıları görüntülemek için "#,##0.00" komutunu kullanabilirsiniz.
@@ -107,7 +107,7 @@ Aspose.Words for .NET, bir grafikteki eksen etiketlerini formatlamak için kulla
 
 - `0` veya`#` - Sayıyı ondalık basamak olmadan görüntüler.
 - `0.00` veya`#.00` - Sayıyı iki ondalık basamakla görüntüler.
-- `#,##0` Sayıyı binlik ayırıcılarla görüntüler.
+- `#,##0` Sayıyı binlerce ayırıcıyla görüntüler.
 - `"€"0.00` - Sayıyı Euro para birimi simgesiyle ve iki ondalık basamakla görüntüler.
 - `"%"0` - Sayıyı yüzde olarak görüntüler.
 

@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## 4. lépés: Helyezze el a DocumentBuildert
 
- Mozdítsd meg a`DocumentBuilder` a dokumentum végére a gombbal`MoveToDocumentEnd` módszer. Oldaltörés beszúrásával elválaszthatja a meglévő tartalmat a beillesztett dokumentumtól.
+Mozdítsd meg a`DocumentBuilder` a dokumentum végére a gombbal`MoveToDocumentEnd` módszer. Oldaltörés beszúrásával elválaszthatja a meglévő tartalmat a beillesztett dokumentumtól.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 6. lépés: Mentse el a módosított dokumentumot
 
- Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
@@ -64,7 +64,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilde
 
 Ezzel befejeződik egy dokumentum másik dokumentumba történő beszúrása az Aspose.Words for .NET használatával.
 
-### Példa forráskódra az Insert Document With Builder programhoz az Aspose.Words for .NET használatával 
+### Példa forráskód az Insert Document With Builder alkalmazáshoz az Aspose.Words for .NET használatával 
 
 ```csharp
 	// A dokumentumkönyvtár elérési útja

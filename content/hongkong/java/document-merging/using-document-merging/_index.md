@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words for Java 讓 Java 開發人員能夠輕鬆合併 Word 文件。透過遵循本文中的逐步指南，現在可以輕鬆合併文件、處理格式、插入分隔符號和管理衝突。借助 Aspose.Words for Java，文件合併成為一個無縫且自動化的過程，節省了寶貴的時間和精力。
 
-## 11. 常見問題解答 
+## 11.常見問題解答 
 
 ### 我可以合併不同格式和樣式的文件嗎？
 
@@ -215,7 +215,7 @@ Aspose.Words for Java 讓 Java 開發人員能夠輕鬆合併 Word 文件。透�
 
     Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
 
-### Aspose.Words for Java 與 Java 8 及更高版本相容嗎？
+### Aspose.Words for Java 是否與 Java 8 及更高版本相容？
 
     Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
 

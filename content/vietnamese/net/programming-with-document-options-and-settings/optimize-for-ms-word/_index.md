@@ -37,7 +37,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
 
  Mã này yêu cầu Aspose.Words tối ưu hóa tài liệu cho MS Word 2016. Bạn có thể thay thế`MsWordVersion.Word2016` với phiên bản MS Word cụ thể mà bạn muốn tối ưu hóa.
 
-### Mã nguồn mẫu cho Tối ưu hóa cho Ms Word bằng Aspose.Words cho .NET
+### Mã nguồn ví dụ cho Tối ưu hóa cho Ms Word bằng Aspose.Words cho .NET
 
 ```csharp
 

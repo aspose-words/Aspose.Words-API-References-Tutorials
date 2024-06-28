@@ -2,176 +2,156 @@
 title: Mostrar Ocultar contenido marcado en un documento de Word
 linktitle: Mostrar Ocultar contenido marcado en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a mostrar u ocultar el contenido de los marcadores en un documento de Word usando Aspose.Words para .NET.
+description: Aprenda a mostrar u ocultar dinámicamente contenido marcado en documentos de Word usando Aspose.Words para .NET con esta guía completa paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-En este artículo, exploraremos el código fuente de C# anterior para comprender cómo utilizar la función Mostrar ocultar contenido marcado en Aspose.Words para la biblioteca .NET. Esta función le permite mostrar u ocultar el contenido de un marcador en un documento de Word según una condición específica al fusionar datos.
+## Introducción
+
+¡Hola! ¿Alguna vez ha querido controlar la visibilidad de un contenido específico dentro de un documento de Word en función de determinadas condiciones? Con Aspose.Words para .NET, puede mostrar u ocultar dinámicamente contenido marcado como favorito con solo unas pocas líneas de código. En este tutorial, lo guiaré a través del proceso paso a paso, asegurándome de que comprenda cada parte del código. Al final, serás un profesional en la manipulación de marcadores en documentos de Word. ¡Empecemos!
 
 ## Requisitos previos
 
-- Conocimientos básicos del lenguaje C#.
-- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
+Antes de sumergirnos en el tutorial, asegurémonos de que tiene todo lo que necesita:
 
-## Paso 1: Obtener el marcador
+1. Conocimientos básicos de C#: debe sentirse cómodo con la sintaxis y los conceptos de C#.
+2.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/) . Si no está listo para comprar, puede comenzar con un[prueba gratis](https://releases.aspose.com/).
+3. Visual Studio: cualquier versión reciente funcionará, pero se recomienda usar la última versión.
+4. .NET Framework: asegúrese de que esté instalado en su máquina.
 
- Usamos el`Bookmarks` propiedad del rango del documento para obtener el marcador específico sobre el que queremos mostrar u ocultar el contenido:
+¿Listo para comenzar? ¡Excelente! Comencemos importando los espacios de nombres necesarios.
+
+## Importar espacios de nombres
+
+Para usar Aspose.Words para .NET, necesitamos importar los espacios de nombres requeridos. Este paso garantiza que tengamos acceso a todas las clases y métodos que usaremos.
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Paso 2: insertar los campos de combinación
+Estos espacios de nombres son cruciales para trabajar con documentos de Word y manipular su contenido.
 
- Usamos un generador de documentos.`DocumentBuilder` para insertar los campos de combinación necesarios. Estos campos de combinación establecerán una condición para mostrar u ocultar el contenido del marcador dependiendo del valor del`showHide` variable:
+## Paso 1: configurar el documento
+
+Primero, creemos un nuevo documento de Word y un generador de documentos. El creador de documentos nos ayuda a agregar y manipular fácilmente contenido dentro del documento.
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## Paso 3: mover el contenido del marcador
+En este paso, inicializamos un nuevo documento y un generador de documentos. Esto configura nuestro entorno para futuras operaciones.
 
-Recorremos el contenido del marcador y lo movemos para que aparezca.
+## Paso 2: Agregar contenido marcado
 
-isse antes del marcador. Esto controlará mostrar u ocultar contenido según la condición especificada:
+A continuación, agregaremos contenido al documento y crearemos un marcador a su alrededor. Este marcador nos ayudará a identificar y manipular el contenido.
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ Aquí, agregamos algo de texto antes y después del contenido marcado. El`StartBookmark` y`EndBookmark` Los métodos definen los límites del marcador.
+
+## Paso 3: insertar un campo condicional
+
+Para controlar la visibilidad del contenido marcado, usaremos un campo condicional. Este campo verificará una condición y mostrará u ocultará el contenido en consecuencia.
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+En este paso, insertamos un campo IF que verifica el valor del marcador. Si el valor es "verdadero", mostrará "Visible"; de lo contrario, mostrará "Oculto".
+
+## Paso 4: reorganizar los nodos
+
+A continuación, debemos reorganizar los nodos para garantizar que la lógica condicional se aplique correctamente al contenido marcado.
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## Paso 4: mover el resto del contenido del marcador
-
-Movemos el resto del contenido del marcador después del marcador, utilizando el nodo final del marcador como punto de inserción:
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## Paso 5: Realizar la fusión
+Aquí, movemos los nodos para asegurarnos de que la condición abarque adecuadamente el contenido marcado.
 
- Usamos el`Execute` método del documento`s `Unificación de correo` object to execute the merge using the bookmark name and the value of the `mostrarHide`variable:
+## Paso 5: Ejecutar la combinación de correspondencia
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### Código fuente de ejemplo para Mostrar ocultar contenido marcado usando Aspose.Words para .NET
-
-Aquí está el ejemplo completo del código fuente para demostrar cómo mostrar u ocultar el contenido de los marcadores usando Aspose.Words para .NET:
+Finalmente, ejecutaremos una combinación de correspondencia para establecer el valor del marcador y determinar si el contenido debe mostrarse u ocultarse.
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MERGEFIELD favorito}" = "verdadero" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+Este paso establece el valor del marcador en "verdadero", lo que hará que el contenido sea visible según nuestra condición.
+
+## Paso 6: guardar el documento
+
+Después de todas las manipulaciones, el último paso es guardar el documento modificado.
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+Aquí guardamos el documento con un nombre de archivo descriptivo para indicar los cambios.
 
 ## Conclusión
 
-En este artículo, exploramos el código fuente de C# para comprender cómo utilizar la función Mostrar ocultar contenido marcado como favorito de Aspose.Words para .NET. Hemos seguido una guía paso a paso para mostrar u ocultar el contenido de un marcador según una condición específica al fusionar datos.
+ ¡Y eso es! Ha aprendido con éxito cómo mostrar u ocultar contenido marcado como favorito en un documento de Word usando Aspose.Words para .NET. Este tutorial cubrió la creación de un documento, la adición de marcadores, la inserción de campos condicionales, la reorganización de nodos y la ejecución de una combinación de correspondencia. Aspose.Words ofrece una gran cantidad de funciones, así que no dude en explorar las[Documentación API](https://reference.aspose.com/words/net/) para capacidades más avanzadas.
 
-### Preguntas frecuentes para mostrar ocultar contenido marcado en un documento de Word
+## Preguntas frecuentes
 
-#### P: ¿Puedo utilizar la misma condición para varios marcadores en el mismo documento?
+### 1. ¿Qué es Aspose.Words para .NET?
 
-R: Sí, puedes utilizar la misma condición para varios marcadores en el mismo documento. Simplemente repita los pasos 2 a 5 para cada marcador, ajustando el nombre del marcador y, opcionalmente, el valor del`showhide` variables según sea necesario.
+Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrolladores crear, modificar y convertir documentos de Word mediante programación. Es muy utilizado para tareas de automatización de documentos.
 
-#### P: ¿Cómo puedo agregar más condiciones para mostrar u ocultar el contenido de los marcadores?
+### 2. ¿Puedo utilizar Aspose.Words para .NET de forma gratuita?
 
- R: Para agregar más condiciones, puede usar operadores lógicos como`AND` y`OR` en el código para insertar los campos de combinación en el paso 2. Edite la condición en el siguiente código para agregar condiciones adicionales:
+ Puedes probar Aspose.Words para .NET usando un[prueba gratis](https://releases.aspose.com/). Para un uso prolongado, deberá adquirir una licencia.
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. ¿Cómo modifico otras propiedades de un marcador?
 
-#### P: ¿Cómo puedo eliminar un marcador en un documento de Word usando Aspose.Words para .NET?
+ Aspose.Words le permite manipular varias propiedades de un marcador, como su texto y ubicación. Referirse a[Documentación API](https://reference.aspose.com/words/net/) para obtener instrucciones detalladas.
 
- R: Para eliminar un marcador en un documento de Word usando Aspose.Words para .NET, puede usar el`Remove` método de la`Bookmarks` colección del rango de documentos. Aquí hay un código de muestra para eliminar un marcador específico:
+### 4. ¿Cómo obtengo soporte para Aspose.Words para .NET?
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+Puede obtener soporte visitando el[Aspose foro de soporte](https://forum.aspose.com/c/words/8).
 
-#### P: ¿La biblioteca Aspose.Words es gratuita?
+### 5. ¿Puedo manipular otros tipos de contenido con Aspose.Words para .NET?
 
- R: La biblioteca Aspose.Words es una biblioteca comercial y requiere una licencia válida para usarla en sus proyectos. Puedes comprobar[Aspose.Words para referencias de API .NET](https://reference.aspose.com/words/net/) para obtener más información sobre las opciones de licencia y los precios.
-
-#### P: ¿Hay otras bibliotecas disponibles para el procesamiento de textos con documentos de Word en .NET?
-
-R: Sí, hay otras bibliotecas disponibles para el procesamiento de textos con documentos de Word en .NET, como Open XML SDK y GemBox.Document. Puede explorar estas bibliotecas como alternativas a Aspose.Words según sus necesidades y preferencias específicas.
+Sí, Aspose.Words para .NET admite varios tipos de manipulación de contenido, incluidos texto, imágenes, tablas y más.

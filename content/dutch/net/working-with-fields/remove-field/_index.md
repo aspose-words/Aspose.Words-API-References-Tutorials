@@ -51,7 +51,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Laad het document.
 Document doc = new Document(dataDir + "Various fields.docx");
 
-// Selectie van het veld dat moet worden verwijderd.
+// Selectie van het veld dat u wilt verwijderen.
 Field field = doc.Range.Fields[0];
 field. Remove();
 

@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## चरण 3: बुलेट प्रारूप को अनुकूलित करना
 
-हम के गुणों तक पहुंच कर बुलेट प्रारूप को अनुकूलित कर सकते हैं`ListFormat.List.ListLevels[0]`. इस उदाहरण में, हम डैश "-" का उपयोग बुलेट के रूप में करते हैं।
+ हम के गुणों तक पहुंच कर बुलेट प्रारूप को अनुकूलित कर सकते हैं`ListFormat.List.ListLevels[0]`. इस उदाहरण में, हम डैश "-" का उपयोग बुलेट के रूप में करते हैं।
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

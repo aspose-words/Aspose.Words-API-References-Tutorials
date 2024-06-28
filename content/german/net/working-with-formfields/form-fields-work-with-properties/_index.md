@@ -1,6 +1,6 @@
 ---
-title: Formularfelder funktionieren mit Eigenschaften
-linktitle: Formularfelder funktionieren mit Eigenschaften
+title: Formularfelder arbeiten mit Eigenschaften
+linktitle: Formularfelder arbeiten mit Eigenschaften
 second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Formularfeldeigenschaften in Word-Dokumenten arbeiten.
 type: docs

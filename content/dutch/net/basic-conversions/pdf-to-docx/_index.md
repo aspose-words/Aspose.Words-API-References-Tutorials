@@ -12,7 +12,7 @@ In deze stapsgewijze zelfstudie laten we u zien hoe u Aspose.Words voor .NET kun
 
  Om aan de slag te gaan, moet u ervoor zorgen dat Aspose.Words voor .NET is geïnstalleerd en ingesteld in uw ontwikkelomgeving. Als u dit nog niet hebt gedaan, downloadt en installeert u de bibliotheek van[Aspose.Releases]https://releases.aspose.com/words/net/.
 
-## Stap 1: Het documentobject initialiseren
+## Stap 1: Initialiseren van het documentobject
 
  Initialiseer eerst de`Document` object door het pad naar uw PDF-document op te geven:
 
@@ -57,7 +57,7 @@ Of de opmaak tijdens de conversie behouden blijft, hangt af van de tool of bibli
 
 #### Wat zijn de beperkingen van het conversieproces?
 
-De beperkingen van het conversieproces zijn afhankelijk van de specifieke tool of bibliotheek die u gebruikt. Voor sommige tools gelden mogelijk beperkingen met betrekking tot tekstherkenning, complexe lay-out of afbeeldingen die in de PDF zijn ingesloten. Het is belangrijk om de kenmerken en beperkingen van de gekozen tool volledig te begrijpen, zodat u weloverwogen beslissingen kunt nemen bij het converteren.
+De beperkingen van het conversieproces zijn afhankelijk van de specifieke tool of bibliotheek die u gebruikt. Sommige tools kunnen beperkingen hebben op het gebied van tekstherkenning, complexe lay-out of afbeeldingen die in de PDF zijn ingesloten. Het is belangrijk om de kenmerken en beperkingen van de gekozen tool volledig te begrijpen, zodat u weloverwogen beslissingen kunt nemen bij het converteren.
 
 #### Is Aspose een betrouwbaar hulpmiddel voor het converteren van PDF naar Word-formaat?
 

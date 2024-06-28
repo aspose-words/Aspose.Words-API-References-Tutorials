@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- In questo codice creiamo un nuovo file`Document` e un`DocumentBuilder` . IL`insert_text_box`viene utilizzato per aggiungere una casella di testo al documento. Puoi personalizzare il contenuto, la posizione e la dimensione della casella di testo in base alle tue esigenze.
+ In questo codice creiamo un nuovo file`Document` e un`DocumentBuilder` . IL`insert_text_box` viene utilizzato per aggiungere una casella di testo al documento. Puoi personalizzare il contenuto, la posizione e la dimensione della casella di testo in base alle tue esigenze.
 
 ## Formattazione delle caselle di testo
 

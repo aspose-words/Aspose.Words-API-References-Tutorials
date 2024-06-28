@@ -130,7 +130,7 @@ Paragraph para = new Paragraph(doc);
 
 // เพิ่มข้อความด้วยขนาดตัวอักษรและสีที่กำหนดเอง
 Run run = new Run(doc, "Customized Text");
-run.getFont().setSize(18); // กำหนดขนาดตัวอักษรเป็น 18 พอยต์
+run.getFont().setSize(18); // กำหนดขนาดตัวอักษรเป็น 18 พอยท์
 run.getFont().setColor(Color.BLUE); // ตั้งค่าสีข้อความเป็นสีน้ำเงิน
 
 para.appendChild(run);
@@ -274,7 +274,7 @@ pageSetup.setTopMargin(72);    // 1 นิ้ว (72 จุด)
 pageSetup.setBottomMargin(72); // 1 นิ้ว (72 จุด)
 
 // เพิ่มเนื้อหาลงในเอกสาร
-// ...
+// -
 
 // บันทึกเอกสาร
 doc.save("PageLayoutDocument.docx");
@@ -305,7 +305,7 @@ Field pageField = new Field(doc, FieldType.FIELD_PAGE);
 footer.appendChild(pageField);
 
 // เพิ่มเนื้อหาลงในเนื้อหาเอกสาร
-// ...
+// -
 
 // บันทึกเอกสาร
 doc.save("HeaderFooterDocument.docx");
@@ -351,7 +351,7 @@ doc.save("TableDocument.docx");
 Document doc = new Document();
 
 // เพิ่มเนื้อหาลงในเอกสาร
-// ...
+// -
 
 // บันทึกเอกสารเป็น PDF
 doc.save("Document.pdf", SaveFormat.PDF);
@@ -414,7 +414,7 @@ run.getFont().setItalic(true);  // ทำให้ข้อความเป็
 ใช่ Aspose.Words สำหรับ Java เข้ากันได้กับ Java 11 และเวอร์ชันที่ใหม่กว่า
 
 ### ฉันจะตั้งค่าระยะขอบหน้าสำหรับส่วนใดส่วนหนึ่งของเอกสารของฉันได้อย่างไร
-คุณสามารถตั้งค่าระยะขอบหน้าสำหรับส่วนเฉพาะของเอกสารของคุณได้โดยใช้`PageSetup` ระดับ. นี่คือตัวอย่าง:
+คุณสามารถตั้งค่าระยะขอบหน้าสำหรับส่วนเฉพาะของเอกสารของคุณได้โดยใช้`PageSetup` ชั้นเรียน นี่คือตัวอย่าง:
 
 ```java
 Section section = doc.getSections().get(0); // รับภาคแรก

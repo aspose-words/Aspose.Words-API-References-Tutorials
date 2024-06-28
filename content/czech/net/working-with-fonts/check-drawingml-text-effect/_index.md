@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-fonts/check-drawingml-text-effect/
 ---
 
-tomto tutoriálu vás provedeme tím, jak zkontrolovat textové efekty DrawingML v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Zaškrtnutím textových efektů DrawingML můžete určit, zda je na část textu aplikován konkrétní efekt. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+V tomto tutoriálu vás provedeme tím, jak zkontrolovat textové efekty DrawingML v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Zaškrtnutím textových efektů DrawingML můžete určit, zda je na část textu aplikován konkrétní efekt. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
 
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující položky:
@@ -62,7 +62,7 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 ```
 
 ## Závěr
-tomto tutoriálu jsme viděli, jak zkontrolovat textové efekty DrawingML v dokumentu aplikace Word pomocí Aspose.Words for .NET. Zaškrtnutí textových efektů DrawingML vám umožňuje identifikovat části textu, které mají aplikované specifické efekty. Neváhejte použít tuto funkci k manipulaci a analýze textových efektů v dokumentech aplikace Word.
+V tomto tutoriálu jsme viděli, jak zkontrolovat textové efekty DrawingML v dokumentu aplikace Word pomocí Aspose.Words for .NET. Zaškrtnutí textových efektů DrawingML vám umožňuje identifikovat části textu, které mají aplikované specifické efekty. Neváhejte použít tuto funkci k manipulaci a analýze textových efektů v dokumentech aplikace Word.
 
 ### FAQ
 

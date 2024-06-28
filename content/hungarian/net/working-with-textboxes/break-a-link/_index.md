@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-textboxes/break-a-link/
 ---
 
-Az Aspose.Words for .NET egy hatékony könyvtár, amely különféle funkciókat kínál a Microsoft Word dokumentumok programozott szövegfeldolgozásához. Egyik hasznos funkciója az, hogy képes áttörni a Word dokumentumban lévő hivatkozásokat. Ebben az oktatóanyagban megvizsgáljuk a C# nyelvű forráskódot, amely bemutatja, hogyan lehet áttörni az előremutató hivatkozást Word dokumentumban az Aspose.Words for .NET használatával.
+Az Aspose.Words for .NET egy hatékony könyvtár, amely különféle funkciókat kínál a Microsoft Word dokumentumok programozott szövegfeldolgozásához. Egyik hasznos funkciója, hogy képes áttörni a Word dokumentumban lévő hivatkozásokat. Ebben az oktatóanyagban megvizsgáljuk a C# nyelvű forráskódot, amely bemutatja, hogyan lehet áttörni az előremutató hivatkozást Word dokumentumban az Aspose.Words for .NET használatával.
 
 ## 1. lépés: C# forráskód előnézete
 
@@ -73,7 +73,7 @@ Gratulálok ! Most megtanulta, hogyan bonthatja meg az átirányítási hivatkoz
 
 #### K: Mi az a könyvtár, amely az Aspose.Words for .NET segítségével megtöri az átirányítási hivatkozásokat egy Word-dokumentumban?
 
-V: A Word-dokumentumban az Aspose.Words for .NET használatával történő átirányítási hivatkozások megszakításához az Aspose.Words for .NET könyvtárat kell használni.
+V: A Word-dokumentumban az Aspose.Words for .NET használatával történő átirányítási hivatkozások megszakításához a használt könyvtár az Aspose.Words for .NET.
 
 #### K: Hogyan lehet megtörni egy átirányítási hivatkozást a TextBoxban?
 

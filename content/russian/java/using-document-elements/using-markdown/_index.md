@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Укажите упорядоченный список.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Укажите курсив для текста.
+// Укажите итальянский акцент в тексте.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

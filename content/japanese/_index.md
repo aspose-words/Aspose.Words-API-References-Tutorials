@@ -25,7 +25,7 @@ is_root: true
 - [リストの操作](./net/working-with-list/)   
 - [マークダウンの使用](./net/working-with-markdown/)   
 - [ノードの操作](./net/working-with-node/)   
-- [リビジョンの操作](./net/working-with-revisions/)   
+- [レビューの操作](./net/working-with-revisions/)   
 - [テキストボックスの操作](./net/working-with-textboxes/)   
 - [分割ドキュメント](./net/split-document/)   
 - [Documentbuilder を使用してコンテンツを追加する](./net/add-content-using-documentbuilder/)

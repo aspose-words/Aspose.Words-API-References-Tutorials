@@ -107,7 +107,7 @@ para.remove();
 // och kommer att visas som en version i Microsoft Word tills vi accepterar eller avvisar alla versioner.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Raderingsrevisionsparagrafen tas bort när vi accepterar ändringar.
+// Det raderade revisionsstycket tas bort när vi accepterar ändringar.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //var Is.Empty

@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 Teraz możesz uruchomić kod źródłowy, aby załadować dokument tekstowy zawierający numery list ze spacjami, a następnie utworzyć dokument .docx z wykrytymi listami. Plik wyjściowy zostanie zapisany w określonym katalogu pod nazwą „WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx”.
 
 ## Wniosek
-W tym samouczku omówiliśmy funkcję wykrywania numerowania białych znaków w Aspose.Words dla .NET. Dowiedzieliśmy się, jak tworzyć listy z dokumentu tekstowego zawierającego numery list, po których następują białe znaki.
+W tym samouczku omówiliśmy funkcję wykrywania numerowania białych znaków w Aspose.Words dla .NET. Dowiedzieliśmy się, jak tworzyć listy z dokumentu tekstowego zawierającego numery list, po których następują białe spacje.
 
 Funkcja ta jest niezwykle przydatna przy przetwarzaniu dokumentów zawierających numery list sformatowane na różne sposoby. Używając odpowiednich opcji ładowania, Aspose.Words jest w stanie wykryć te numery list, nawet jeśli następują po nich białe spacje, i przekonwertować je na uporządkowane listy w dokumencie końcowym.
 

@@ -17,7 +17,7 @@ Upewnij się, że masz następujące wymagania wstępne:
 - Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
 - Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres
+## Krok 2: Utwórz nowy dokument i wstaw wykres.
 
  Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
 
@@ -86,7 +86,7 @@ To kończy implementację wstawiania wykresu warstwowego za pomocą Aspose.Words
 
 ### Wniosek
 
-W tym samouczku nauczyłeś się, jak wstawić wykres warstwowy do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z instrukcją krok po kroku i korzystając z dostarczonego kodu źródłowego, możesz utworzyć nowy dokument, wstawić wykres warstwowy, dodać dane serii i zapisać dokument z wykresem.
+W tym samouczku nauczyłeś się, jak wstawić wykres warstwowy do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz utworzyć nowy dokument, wstawić wykres warstwowy, dodać dane serii i zapisać dokument z wykresem.
 
 Aspose.Words dla .NET zapewnia potężny interfejs API do przetwarzania słów z wykresami w dokumentach Word. Za pomocą zaledwie kilku linijek kodu możesz utworzyć profesjonalnie wyglądające wykresy warstwowe i dostosować je do swoich wymagań. Wykresy warstwowe są powszechnie używane do wyświetlania wielkości i trendów danych w czasie lub w kategoriach.
 
@@ -98,7 +98,7 @@ Używając Aspose.Words dla .NET, możesz zautomatyzować proces generowania dok
 Aspose.Words dla .NET to potężna biblioteka do przetwarzania dokumentów, która umożliwia programistom programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word w aplikacjach .NET. Zapewnia kompleksowy zestaw interfejsów API do przetwarzania tekstu z elementami dokumentu, w tym wykresami, akapitami, tabelami i nie tylko.
 
 #### Pytanie 2. Jak zainstalować Aspose.Words dla .NET?
-Aby zainstalować Aspose.Words dla .NET, możesz użyć menedżera pakietów NuGet w Visual Studio, aby zainstalować bibliotekę bezpośrednio w projekcie. Po prostu wyszukaj „Aspose.Words” w menedżerze pakietów NuGet i zainstaluj pakiet.
+Aby zainstalować Aspose.Words dla .NET, możesz użyć menedżera pakietów NuGet w Visual Studio, aby zainstalować bibliotekę bezpośrednio w projekcie. Po prostu wyszukaj „Apose.Words” w menedżerze pakietów NuGet i zainstaluj pakiet.
 
 #### Pytanie 3. Czy mogę dostosować wygląd wykresu warstwowego?
 Tak, używając Aspose.Words dla .NET, możesz dostosować różne aspekty wyglądu wykresu warstwowego. Można modyfikować właściwości, takie jak tytuł wykresu, kolor serii, etykiety osi i formatowanie obszaru wykresu. Biblioteka udostępnia bogaty zestaw interfejsów API do kontrolowania elementów wizualnych wykresu i tworzenia niestandardowego wyglądu odpowiadającego Twoim potrzebom.
@@ -110,4 +110,4 @@ Tak, możesz dodać wiele serii do wykresu warstwowego za pomocą Aspose.Words d
  Tak, Aspose.Words dla .NET umożliwia zapisanie dokumentu z wstawionym wykresem warstwowym w różnych formatach, takich jak DOCX, PDF, HTML i innych. Możesz wybrać żądany format wyjściowy w oparciu o swoje wymagania i użyć`Save` metoda`Document` obiekt, aby zapisać dokument. Wstawiony wykres warstwowy zostanie zachowany w zapisanym dokumencie.
 
 #### Pytanie 6. Czy mogę modyfikować dane i wygląd wykresu warstwowego po jego wstawieniu?
-Tak, po wstawieniu wykresu warstwowego do dokumentu możesz modyfikować jego dane i wygląd, korzystając z interfejsów API udostępnianych przez Aspose.Words dla .NET. Możesz aktualizować dane serii, zmieniać typ wykresu, dostosowywać właściwości osi i stosować opcje formatowania, aby tworzyć dynamiczne i interaktywne wykresy w dokumentach programu Word.
+Tak, po wstawieniu wykresu warstwowego do dokumentu, możesz modyfikować jego dane i wygląd, korzystając z API udostępnianych przez Aspose.Words dla .NET. Możesz aktualizować dane serii, zmieniać typ wykresu, dostosowywać właściwości osi i stosować opcje formatowania, aby tworzyć dynamiczne i interaktywne wykresy w dokumentach programu Word.

@@ -103,7 +103,7 @@ Ha MHTML-fájlt csatolt e-mailben szeretne elküldeni, használhat könyvtáraka
 
 #### Milyen korlátai vannak az e-mailek átalakítási és küldési folyamatának?
 
-Az e-mailek konverziós és küldési folyamatának korlátai az Ön által használt konkrét eszközöktől függenek. Egyes eszközök korlátozásokat tartalmazhatnak a fájlmérettel, a biztonsági beállításokkal vagy a támogatott e-mail protokollokkal kapcsolatban. Fontos, hogy az igényeinek megfelelő eszközöket válasszon, és a megvalósítás során vegye figyelembe ezeket a korlátokat.
+Az e-mailek konverziós és küldési folyamatának korlátai az Ön által használt konkrét eszközöktől függenek. Egyes eszközökhöz kapcsolódó korlátozások vonatkozhatnak a fájlméretre, a biztonsági beállításokra vagy a támogatott e-mail protokollokra vonatkozóan. Fontos, hogy az igényeinek megfelelő eszközöket válasszon, és a megvalósítás során vegye figyelembe ezeket a korlátokat.
 
 #### Megbízható eszköz az Aspose a DOCX-ből MHTML-be konvertálásához és az e-mailek küldéséhez?
 

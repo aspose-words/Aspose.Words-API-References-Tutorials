@@ -79,7 +79,7 @@ Trả lời: Chữ ký số trong tài liệu Word là chữ ký điện tử cu
 
 Trả lời: Để truy cập chữ ký điện tử trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
 1.  Tải tài liệu bằng cách sử dụng`Document` class và chỉ định đường dẫn đến tệp tài liệu.
-2.  Sử dụng vòng lặp để duyệt qua`DigitalSignatures` việc sưu tầm tài liệu. Mỗi lần lặp đại diện cho một chữ ký số.
+2.  Sử dụng vòng lặp để duyệt qua`DigitalSignatures` việc thu thập tài liệu. Mỗi lần lặp đại diện cho một chữ ký số.
 
 #### Hỏi: Tôi có thể truy cập thông tin gì từ chữ ký điện tử trong tài liệu Word?
 
@@ -97,13 +97,13 @@ Trả lời: Để truy cập chữ ký điện tử trong tài liệu Word bằ
 #### Câu hỏi: Làm cách nào tôi có thể xác minh tính hợp lệ của chữ ký điện tử trong tài liệu Word bằng Aspose.Words cho .NET?
 
 Trả lời: Để xác minh tính hợp lệ của chữ ký số trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
-1.  Truy cập`DigitalSignatures` việc sưu tầm tài liệu.
+1.  Truy cập`DigitalSignatures` việc thu thập tài liệu.
 2.  Lặp lại qua từng`DigitalSignature` đối tượng trong bộ sưu tập.
 3.  Sử dụng`IsValid` tài sản của`DigitalSignature` đối tượng để kiểm tra xem chữ ký có hợp lệ hay không.
 
 #### Hỏi: Tôi có thể truy xuất nhận xét hoặc lý do ký của người ký từ chữ ký điện tử trong tài liệu Word không?
 
-Trả lời: Có, bạn có thể truy xuất nhận xét của người ký hoặc lý do ký từ chữ ký điện tử trong tài liệu Word. Các`Comments` tài sản của`DigitalSignature` đối tượng cung cấp quyền truy cập vào các nhận xét do người ký chỉ định trong quá trình ký.
+Trả lời: Có, bạn có thể truy xuất nhận xét của người ký hoặc lý do ký từ chữ ký điện tử trong tài liệu Word. Các`Comments` tài sản của`DigitalSignature` Đối tượng cung cấp quyền truy cập vào các nhận xét do người ký chỉ định trong quá trình ký.
 
 #### Câu hỏi: Tính năng xác minh chữ ký hỗ trợ loại tài liệu nào trong Aspose.Words cho .NET?
 

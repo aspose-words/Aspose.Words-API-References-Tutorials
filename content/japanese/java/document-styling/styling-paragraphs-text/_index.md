@@ -321,7 +321,7 @@ doc.save("HeaderFooterDocument.docx");
 //新しいドキュメントを作成する
 Document doc = new Document();
 
-// 3行3列のテーブルを作成します
+// 3行3列のテーブルを作成します。
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));
@@ -396,7 +396,7 @@ Document doc = new Document("input.docx");
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
-### テキストを次のようにフォーマットするにはどうすればよいですか
+### テキストを次のように書式設定するにはどうすればよいですか
 
  太字か斜体か？
 テキストを太字または斜体に書式設定するには、次のコードを使用できます。

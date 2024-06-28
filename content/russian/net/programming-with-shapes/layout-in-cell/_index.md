@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3: Создайте таблицу
- Использовать`StartTable`, `EndTable`, `InsertCell` , и`Write` методы`DocumentBuilder` объект для построения таблицы. Установите желаемую высоту строки и правило высоты, используя`RowFormat` характеристики.
+ Использовать`StartTable`, `EndTable`, `InsertCell` , и`Write` методы`DocumentBuilder`объект для построения таблицы. Установите желаемую высоту строки и правило высоты, используя`RowFormat` характеристики.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Шаг 6. Вставьте фигуру в документ
-Вставьте фигуру водяного знака в документ, используя`InsertNode` метод`DocumentBuilder` объект. Расположите фигуру с помощью`MoveTo` метод, чтобы поместить его после последнего запуска в документе.
+ Вставьте фигуру водяного знака в документ, используя`InsertNode` метод`DocumentBuilder` Объект Object. Расположите фигуру с помощью`MoveTo` метод, чтобы поместить его после последнего запуска в документе.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

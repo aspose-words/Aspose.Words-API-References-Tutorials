@@ -58,7 +58,7 @@ Huruvida formateringen bevaras under konverteringen beror på vilket verktyg ell
 
 #### Vilka är begränsningarna i konverteringsprocessen?
 
-Begränsningarna för konverteringsprocessen beror på det specifika verktyget eller biblioteket du använder. Vissa verktyg kan ha begränsningar relaterade till komplex formatering, tabeller eller bilder inbäddade i textfilen. Det är viktigt att till fullo förstå funktionerna och begränsningarna hos det valda verktyget för att kunna fatta välgrundade beslut vid konvertering.
+Begränsningarna för konverteringsprocessen beror på det specifika verktyget eller biblioteket du använder. Vissa verktyg kan ha relaterade begränsningar till komplex formatering, tabeller eller bilder inbäddade i textfilen. Det är viktigt att till fullo förstå funktionerna och begränsningarna hos det valda verktyget för att kunna fatta välgrundade beslut vid konvertering.
 
 #### Är Aspose ett pålitligt verktyg för att konvertera textfiler till Word-dokument?
 

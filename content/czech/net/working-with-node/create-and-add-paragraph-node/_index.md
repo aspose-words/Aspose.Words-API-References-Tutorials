@@ -31,7 +31,7 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## Krok 4: Otevřete sekci dokumentů
+## Krok 4: Vstupte do sekce dokumentu
  Chcete-li přidat odstavec do dokumentu, musíme přistupovat k poslední části dokumentu pomocí`LastSection` vlastnictví.
 
 ```csharp

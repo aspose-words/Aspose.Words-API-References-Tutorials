@@ -55,7 +55,7 @@ builder.getListFormat().setList(list);
 ```
 
 ### Listenelemente hinzufügen: 
-Verwenden Sie eine Schleife, um Listenelemente zu Ihrem Dokument hinzuzufügen. Nach dem 15. Element fügen wir einen Abschnittsumbruch ein.
+Verwenden Sie eine Schleife, um Listenelemente zu Ihrem Dokument hinzuzufügen. Nach dem 15. Element fügen wir einen Abschnittswechsel ein.
 
 ```java
 for (int i = 1; i < 45; i++) {
@@ -164,7 +164,7 @@ Wenn Sie diese Schritte befolgen, können Sie Dokumente mit benutzerdefinierten 
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Erstellen Sie eine nummerierte Liste basierend auf einer der Microsoft Word-Listenvorlagen
+        // Erstellen Sie eine nummerierte Liste basierend auf einer der Microsoft Word-Listenvorlagen.
         //und wenden Sie es auf den aktuellen Absatz des Document Builders an.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Es gibt neun Level in dieser Liste, probieren wir sie alle aus.
@@ -173,7 +173,7 @@ Wenn Sie diese Schritte befolgen, können Sie Dokumente mit benutzerdefinierten 
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Erstellen Sie eine Liste mit Aufzählungszeichen basierend auf einer der Microsoft Word-Listenvorlagen
+        // Erstellen Sie eine Liste mit Aufzählungszeichen basierend auf einer der Microsoft Word-Listenvorlagen.
         //und wenden Sie es auf den aktuellen Absatz des Document Builders an.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

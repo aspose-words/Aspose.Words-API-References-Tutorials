@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Tablo Oluşturma
 
 ```java
-// 3 satır ve 4 sütundan oluşan bir tablo oluşturun
+// 3 satır ve 4 sütundan oluşan bir tablo oluşturun.
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

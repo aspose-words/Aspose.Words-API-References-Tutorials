@@ -56,7 +56,7 @@ Végül mentse el a módosított dokumentumot:
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-Ez az! Sikeresen beállította a végjegyzetbeállításokat egy Word-dokumentumban az Aspose.Words for .NET használatával.
+Ez az! Sikeresen beállította a végjegyzet beállításait egy Word-dokumentumban az Aspose.Words for .NET használatával.
 
 ### Példa a Set Endnote Options for Aspose.Words for .NET forráskódjához
 
@@ -81,7 +81,7 @@ Nyugodtan használja ezt a kódot saját projektjeiben, és módosítsa saját i
 
 #### K: Hogyan formázhatom a végjegyzeteket az Aspose.Words-ben?
 
- V: Az Aspose.Words végjegyzeteinek stílusozásához használhatja a`EndnoteOptions` osztály és a`SeparatorNoteTextStyle` ingatlan. Ezzel a tulajdonsággal megadhatja a betűtípust, -méretet, -színt stb. a végjegyzetekhez.
+V: Az Aspose.Words végjegyzeteinek stílusozásához használhatja a`EndnoteOptions` osztály és a`SeparatorNoteTextStyle` ingatlan. Ezzel a tulajdonsággal megadhatja a betűtípust, -méretet, -színt stb. a végjegyzetekhez.
 
 #### K: Testreszabható a végjegyzetek számozása egy dokumentumban?
 
@@ -97,4 +97,4 @@ Nyugodtan használja ezt a kódot saját projektjeiben, és módosítsa saját i
 
 #### K: Folytatni lehet a végjegyzetek számozását a dokumentum szakaszai között?
 
- V: Igen, folytatható a végjegyzetek számozása a dokumentum szakaszai között. Használja a`RestartRule` tulajdona a`EndnoteOptions` osztályba, és állítsa be`RestartContinuous` hogy a számozás folytatódjon a szakaszok között.
+V: Igen, folytatható a végjegyzetek számozása a dokumentum szakaszai között. Használja a`RestartRule` tulajdona a`EndnoteOptions` osztályba, és állítsa be`RestartContinuous` hogy a számozás folytatódjon a szakaszok között.

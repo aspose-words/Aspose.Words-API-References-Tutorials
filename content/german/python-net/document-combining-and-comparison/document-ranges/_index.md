@@ -1,7 +1,7 @@
 ---
 title: Navigieren in Dokumentbereichen für eine präzise Bearbeitung
 linktitle: Navigieren in Dokumentbereichen für eine präzise Bearbeitung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python präzise in Dokumentbereichen navigieren und diese bearbeiten. Schritt-für-Schritt-Anleitung mit Quellcode für eine effiziente Inhaltsbearbeitung.
 type: docs
 weight: 12

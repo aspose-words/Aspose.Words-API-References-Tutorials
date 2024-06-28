@@ -94,7 +94,7 @@ Toutes nos félicitations! Vous avez appris avec succès comment modifier les pa
 
 #### Q : Aspose.Words est-il compatible avec différentes versions de Microsoft Word ?
 
-: Oui, Aspose.Words est compatible avec différentes versions de Microsoft Word, notamment Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 et Word 2019.
+R : Oui, Aspose.Words est compatible avec différentes versions de Microsoft Word, notamment Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 et Word 2019.
 
 #### Q : Aspose.Words prend-il en charge les structures de champs complexes ?
 
@@ -108,6 +108,6 @@ R : Oui, Aspose.Words vous permet de mettre à jour les champs selon un calendr
 
 R : Certainement ! Aspose.Words fournit des méthodes pour convertir les champs en texte brut. Cela peut être utile lorsque vous devez extraire le contenu sans aucun formatage ni fonctionnalité liée aux champs.
 
-#### : Est-il possible de générer des documents Word avec des champs dynamiques à l'aide d'Aspose.Words ?
+#### Q : Est-il possible de générer des documents Word avec des champs dynamiques à l'aide d'Aspose.Words ?
 
 R : Absolument ! Aspose.Words offre des fonctionnalités robustes pour générer des documents Word avec des champs dynamiques. Vous pouvez créer des modèles avec des champs prédéfinis et les remplir dynamiquement avec des données, offrant ainsi une solution flexible et efficace pour la génération de documents.

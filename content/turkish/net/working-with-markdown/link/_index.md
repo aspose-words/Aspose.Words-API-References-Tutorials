@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. Adım: Bağlantı ekleme
 
- kullanarak bir bağlantı ekleyebiliriz.`Insertlink` belge oluşturucu yöntemi. Bağlantı metnini, burada "Aspose"u ve hedef URL'yi belirtmemiz gerekiyor.
+ kullanarak bir bağlantı ekleyebiliriz.`InsertHyperlink` belge oluşturucu yöntemi. Burada bağlantı metnini "Apose" ve hedef URL'yi belirtmemiz gerekiyor.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com", false);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
 
 ### Aspose.Words for .NET ile bağlantılar için örnek kaynak kodu
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", false);
 DocumentBuilder builder = new DocumentBuilder();
 
 // Bağlantıyı ekle.
-builder.Insertlink("Aspose", "https://www.aspose.com", false);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
 Tebrikler! Artık Aspose.Words for .NET ile bağlantılar özelliğini nasıl kullanacağınızı öğrendiniz.
 
@@ -43,7 +43,7 @@ Tebrikler! Artık Aspose.Words for .NET ile bağlantılar özelliğini nasıl ku
 
 #### S: Aspose.Words'te bir URL'ye nasıl bağlantı verebilirim?
 
- C: Aspose.Words'te bir URL adresine bağlantı vermek için`<a>` ile etiketleyin`href` URL adresini içeren özellik. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com">Click Here</a>` "Burayı tıklayın" görüntü metniyle birlikte "https://www.example.com" URL'sine köprü oluşturmak için.
+ C: Aspose.Words'te bir URL adresine bağlantı vermek için`<a>` ile etiketleyin`href` URL adresini içeren özellik. Örneğin şunları kullanabilirsiniz:`<a href="https://www.aspose.com">Click Here</a>` "Burayı tıklayın" görüntü metniyle birlikte "https://www.example.com" URL'sine köprü oluşturmak için.
 
 #### S: Aspose.Words'te dahili bir yer imine bağlantı vermek mümkün mü?
 

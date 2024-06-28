@@ -12,7 +12,7 @@ A dokumentumfeldolgozás világában a precizitás és az esztétika létfontoss
 
 ## 1. Bevezetés az elválasztásba
 
-Az elválasztás az a folyamat, amikor a szavakat szótagokra bontják, és kötőjeleket adnak a sorok végére, hogy javítsák a szöveg igazítását a dokumentumokban. Ez különösen fontos, ha bonyolult szószerkezettel rendelkező nyelvekkel foglalkozunk.
+Az elválasztás az a folyamat, amikor a szavakat szótagokra bontják, és kötőjeleket adnak a sorok végére, hogy javítsák a szöveg igazítását a dokumentumokban. Ez különösen fontos olyan nyelvek esetében, amelyek összetett szószerkezettel rendelkeznek.
 
 ## 2. A környezet beállítása
 
@@ -24,7 +24,7 @@ Mielőtt belemerülnénk az elválasztás használatába az Aspose.Words for Jav
 
 ## 3. Elválasztási szótárak regisztrálása
 
-Az Aspose.Words lehetővé teszi a különböző nyelvek elválasztási szótárainak regisztrálását. Ez a lépés elengedhetetlen annak biztosításához, hogy az elválasztási szabályokat megfelelően alkalmazzák. A következőképpen teheti meg:
+Az Aspose.Words lehetővé teszi az elválasztási szótárak regisztrálását különböző nyelvekhez. Ez a lépés elengedhetetlen annak biztosításához, hogy az elválasztási szabályokat megfelelően alkalmazzák. A következőképpen teheti meg:
 
 ```java
 Document doc = new Document(dataDir + "German text.docx");

@@ -17,7 +17,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 - Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
 - Een documentmappad waar het uitvoerdocument wordt opgeslagen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Stap 2: Maak een nieuw document en voeg een diagram in.
 
  Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
 
@@ -89,12 +89,12 @@ In deze zelfstudie hebt u geleerd hoe u de getalnotatie voor een as in een diagr
 
 Aspose.Words voor .NET biedt krachtige functies om de weergave van diagrammen in Word-documenten aan te passen. Door de getalnotatie voor de aslabels in te stellen, kunt u bepalen hoe getallen worden weergegeven, inclusief opties zoals decimalen, scheidingstekens voor duizendtallen, valutasymbolen en meer. Hierdoor kunt u numerieke gegevens op een duidelijke en betekenisvolle manier presenteren.
 
-Met Aspose.Words voor .NET heeft u de flexibiliteit om verschillende aspecten van het diagram op te maken, inclusief de aslabels. Door het getalformaat voor de as in te stellen, kunt u de consistentie garanderen en de leesbaarheid van het diagram verbeteren, waardoor het voor gebruikers gemakkelijker wordt om de weergegeven waarden te interpreteren.
+Met Aspose.Words voor .NET heeft u de flexibiliteit om verschillende aspecten van het diagram op te maken, inclusief de aslabels. Door het getalformaat voor de as in te stellen, kunt u consistentie garanderen en de leesbaarheid van het diagram verbeteren, waardoor het voor gebruikers gemakkelijker wordt om de weergegeven waarden te interpreteren.
 
 ### Veelgestelde vragen
 
 #### Q1. Wat is de getalnotatie voor een as in een diagram?
-De getalnotatie voor een as in een diagram verwijst naar de opmaak die wordt toegepast op de numerieke waarden die op de as worden weergegeven. Hiermee kunt u bepalen hoe getallen worden gepresenteerd, inclusief opties zoals decimalen, scheidingstekens voor duizendtallen, valutasymbolen, procenttekens en meer. Door de getalnotatie in te stellen, kunt u de weergave van numerieke gegevens in het diagram aanpassen aan uw specifieke vereisten.
+Het getalformaat voor een as in een diagram verwijst naar de opmaak die wordt toegepast op de numerieke waarden die op de as worden weergegeven. Hiermee kunt u bepalen hoe getallen worden gepresenteerd, inclusief opties zoals decimalen, scheidingstekens voor duizendtallen, valutasymbolen, procenttekens en meer. Door de getalnotatie in te stellen, kunt u de weergave van numerieke gegevens in het diagram aanpassen aan uw specifieke vereisten.
 
 #### Vraag 2. Hoe kan ik het getalformaat voor de aslabels instellen?
  Om de getalnotatie voor de aslabels in een diagram in te stellen met behulp van Aspose.Words voor .NET, kunt u toegang krijgen tot de`AxisY` eigenschap van het diagram en stel de`NumberFormat.FormatCode`eigenschap naar de gewenste formaatcode. De opmaakcode volgt de syntaxis van standaard numerieke opmaakpatronen en bepaalt hoe de getallen worden weergegeven. U kunt bijvoorbeeld "#,##0.00" gebruiken om getallen met twee decimalen en scheidingstekens voor duizendtallen weer te geven.
@@ -107,7 +107,7 @@ Aspose.Words voor .NET ondersteunt een breed scala aan getalnotatiecodes die u k
 
 - `0` of`#` - Geeft het getal weer zonder decimalen.
 - `0.00` of`#.00` - Geeft het getal weer met twee decimalen.
-- `#,##0` Geeft het getal weer met scheidingstekens voor duizendtallen.
+- `#,##0` Geeft het getal weer met duizenden scheidingstekens.
 - `"€"0.00` - Geeft het getal weer met het euro-valutasymbool en twee decimalen.
 - `"%"0` - Geeft het getal weer als een percentage.
 

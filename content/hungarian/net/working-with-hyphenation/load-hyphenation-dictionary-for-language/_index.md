@@ -60,15 +60,15 @@ Nyugodtan használhatja ezt a kódot saját projektjeiben, és módosíthatja sa
 
 #### K: Hogyan tölthető be egy szótagozási szótár egy adott nyelvhez az Aspose.Words-ben?
 
- V: Ha az Aspose.Words-ben egy adott nyelvhez szeretne szótagozási szótárt betölteni, használja a`Hyphenation` osztály és a`LoadDictionary()` módszer. Hozzon létre egy példányt a`Hyphenation` osztályt, és hívja fel a`LoadDictionary()` metódus, amely megadja a szótagozási szótárfájl elérési útját a kívánt nyelvhez. Ez betölti a szótagozási szótárt az Aspose.Wordsbe.
+ V: Ha az Aspose.Words-ben egy adott nyelvhez szeretne szótagozási szótárt betölteni, használja a`Hyphenation` osztály és a`LoadDictionary()` módszer. Hozzon létre egy példányt a`Hyphenation` osztályt, és hívja fel a`LoadDictionary()` metódus, amely megadja a szótagozási szótárfájl elérési útját a kívánt nyelvhez. Ez betölti a szótagozási szótárt az Aspose.Words-be.
 
 #### K: Hol találok szótagozási szótár fájlokat a különböző nyelvekhez?
 
-V: Különböző online forrásokban találhat szótagozási szótár fájlokat különböző nyelvekhez. Ezek a fájlok általában XML vagy TEX formátumúak. Nyílt forráskódú szótagozási szótárakat találhat különböző nyelvekhez a nyelvészeti projektekkel foglalkozó webhelyeken vagy forráskód-tárházakban.
+V: Különféle online forrásokban találhat szótagozási szótár fájlokat különböző nyelvekhez. Ezek a fájlok általában XML vagy TEX formátumúak. Nyílt forráskódú szótagozási szótárakat találhat különböző nyelvekhez a nyelvészeti projekteknek vagy forráskód-tárházaknak szentelt webhelyeken.
 
 #### K: Hogyan alkalmazhatom a betöltött szótagszótárt egy dokumentumra az Aspose.Words programban?
 
- V: Ha a betöltött szótagozási szótárt egy dokumentumra szeretné alkalmazni az Aspose.Words programban, ismételje meg a szavakat a dokumentumban, és használja a`Hyphenate()` módszere a`Hyphenation`osztályban, hogy megkapjuk a szavak szótagolását. Ezután szükség szerint formázhatja a szótagozott szavakat, például kötőjelek hozzáadásával a szótagok közé.
+V: Ha a betöltött szótagozási szótárt egy dokumentumra szeretné alkalmazni az Aspose.Words programban, ismételje meg a szavakat a dokumentumban, és használja a`Hyphenate()` módszere a`Hyphenation` osztályban, hogy megkapjuk a szavak szótagolását. Ezután szükség szerint formázhatja a szótagozott szavakat, például kötőjelek hozzáadásával a szótagok közé.
 
 #### K: Milyen nyelveken támogatott az Aspose.Words szótagosítása?
 

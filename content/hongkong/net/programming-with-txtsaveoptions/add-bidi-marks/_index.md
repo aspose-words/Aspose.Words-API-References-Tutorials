@@ -86,7 +86,7 @@ Aspose.Words for .NET 提供了廣泛的用於建立、編輯和操作 Word 文�
 
 使用以下命令儲存帶有 Bidi 標記的文檔`Save`的方法`Document`班級。
 
-#### Q：Aspose.Words 是否支援多種語言添加 Bidi 標記？
+#### Q：Aspose.Words 支援多種語言添加 Bidi 標記嗎？
 是的，Aspose.Words 支援多種語言添加 Bidi 標記。您可以使用 Aspose.Words for .NET 將 Bidi 標籤新增至不同語言的文字中，例如英語、希伯來語和阿拉伯語。
 
 #### Q：是否有其他選項可以保存帶有 Bidi 標記的文件？

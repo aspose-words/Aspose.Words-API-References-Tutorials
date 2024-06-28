@@ -2,86 +2,122 @@
 title: Erhalten Sie Substitution ohne Suffixe
 linktitle: Erhalten Sie Substitution ohne Suffixe
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET suffixlose Überschreibungen in einem Word-Dokument erhalten.
+description: Erfahren Sie, wie Sie die Schriftartersetzung ohne Suffixe in Aspose.Words für .NET verwalten. Befolgen Sie unsere Schritt-für-Schritt-Anleitung, um sicherzustellen, dass Ihre Dokumente jedes Mal perfekt aussehen.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET die Überschreibungen ohne Suffixe in ein Word-Dokument abrufen. Ersetzungen ohne Suffixe werden zur Lösung von Schriftartersetzungsproblemen beim Anzeigen oder Drucken von Dokumenten verwendet. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
+Willkommen zu diesem umfassenden Leitfaden zum Verwalten der Schriftartersetzung mit Aspose.Words für .NET. Wenn Sie schon einmal damit zu kämpfen hatten, dass Schriftarten in Ihren Dokumenten nicht korrekt angezeigt wurden, sind Sie hier genau richtig. Dieses Tutorial führt Sie Schritt für Schritt durch den effizienten Umgang mit der Schriftartersetzung ohne Suffixe. Lass uns anfangen!
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
-- Grundkenntnisse der Programmiersprache C#
-- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
+
+Bevor Sie mit dem Tutorial beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+
+- Grundkenntnisse in C#: Wenn Sie die C#-Programmierung verstehen, können Sie die Schritte leichter befolgen und implementieren.
+-  Aspose.Words für .NET-Bibliothek: Laden Sie die Bibliothek von herunter und installieren Sie sie[Download-Link](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Richten Sie eine Entwicklungsumgebung wie Visual Studio ein, um Ihren Code zu schreiben und auszuführen.
+-  Beispieldokument: Ein Beispieldokument (z. B.`Rendering.docx`), mit denen Sie während dieses Tutorials arbeiten können.
+
+## Namespaces importieren
+
+Zuerst müssen wir die notwendigen Namespaces importieren, um auf die von Aspose.Words bereitgestellten Klassen und Methoden zuzugreifen.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
+```
 
 ## Schritt 1: Definieren Sie das Dokumentenverzeichnis
- Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments festlegen. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+
+Geben Sie zunächst das Verzeichnis an, in dem sich Ihr Dokument befindet. Dies hilft beim Auffinden des Dokuments, an dem Sie arbeiten möchten.
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Schritt 2: Laden Sie das Dokument und konfigurieren Sie Ersetzungen ohne Suffixe
- Als nächstes laden wir das Dokument mit`Document` Klasse und konfigurieren Sie suffixlose Ersetzungen mithilfe der`DocumentSubstitutionWarnings` Klasse. Wir werden auch eine Schriftartenquelle hinzufügen, indem wir einen Ordner angeben, der die Schriftarten enthält.
-
-```csharp
-// Laden Sie das Dokument und konfigurieren Sie Ersetzungen ohne Suffixe
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## Schritt 3: Speichern Sie das Dokument
-Abschließend speichern wir das Dokument mit den angewendeten No-Suffix-Überschreibungen.
-
-```csharp
-// Speichern Sie das Dokument
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### Beispielquellcode für Get Substitution Without Suffixes mit Aspose.Words für .NET 
-```csharp
-
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## Schritt 2: Richten Sie den Substitutionswarnungshandler ein
+
+Als Nächstes müssen wir einen Warnhandler einrichten, der uns benachrichtigt, wenn während der Dokumentverarbeitung eine Schriftartersetzung auftritt. Dies ist entscheidend für das Erkennen und Behandeln von Schriftartproblemen.
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## Schritt 3: Benutzerdefinierte Schriftartquellen hinzufügen
+
+In diesem Schritt fügen wir benutzerdefinierte Schriftartquellen hinzu, um sicherzustellen, dass Aspose.Words die richtigen Schriftarten finden und verwenden kann. Dies ist besonders nützlich, wenn Sie bestimmte Schriftarten in benutzerdefinierten Verzeichnissen gespeichert haben.
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+In diesem Code:
+-  Wir rufen die aktuellen Schriftartquellen ab und fügen eine neue hinzu`FolderFontSource` Verweis auf unser benutzerdefiniertes Schriftartenverzeichnis (`C:\\MyFonts\\`).
+- Anschließend aktualisieren wir die Schriftartquellen mit dieser neuen Liste.
+
+## Schritt 4: Speichern Sie das Dokument
+
+Speichern Sie abschließend das Dokument, nachdem Sie die Einstellungen für die Schriftartersetzung angewendet haben. Für dieses Tutorial speichern wir es als PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## Schritt 5: Erstellen Sie die Warnungshandlerklasse
+
+Um Warnungen effektiv zu verarbeiten, erstellen Sie eine benutzerdefinierte Klasse, die Folgendes implementiert`IWarningCallback` Schnittstelle. Diese Klasse erfasst und protokolliert alle Warnungen zur Schriftartersetzung.
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+In dieser Klasse:
+-  Der`Warning` Die Methode erfasst Warnungen im Zusammenhang mit der Schriftartersetzung.
+-  Der`FontWarnings` Die Sammlung speichert diese Warnungen zur weiteren Überprüfung oder Protokollierung.
+
 ## Abschluss
-In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET die Überschreibungen ohne Suffixe in ein Word-Dokument erhält. Ersetzungen ohne Suffixe sind nützlich, um Probleme mit der Schriftartersetzung zu lösen. Nutzen Sie diese Funktion gerne, um die Anzeige und den Ausdruck Ihrer Dokumente zu verbessern.
 
-### FAQs
+Sie beherrschen jetzt den Prozess der Schriftartersetzung ohne Suffixe mit Aspose.Words für .NET. Dieses Wissen stellt sicher, dass Ihre Dokumente unabhängig von den im System verfügbaren Schriftarten ihr beabsichtigtes Aussehen behalten. Experimentieren Sie weiter mit verschiedenen Einstellungen und Quellen, um die Leistungsfähigkeit von Aspose.Words voll auszuschöpfen.
 
-#### F: Warum fügt Aspose.Words Suffixe zu Schriftartersetzungen hinzu?
+## FAQs
 
-A: Aspose.Words fügt Schriftartersetzungen Suffixe hinzu, um Konflikte zwischen Originalschriftarten und ersetzten Schriftarten zu vermeiden. Dies trägt dazu bei, maximale Kompatibilität beim Konvertieren und Bearbeiten von Dokumenten sicherzustellen.
+### F1: Wie kann ich Schriftarten aus mehreren benutzerdefinierten Verzeichnissen verwenden?
 
-#### F: Wie kann ich Schriftartersetzungen ohne Suffixe in Aspose.Words abrufen?
+ Sie können mehrere hinzufügen`FolderFontSource` Instanzen zum`fontSources` Listen Sie die Schriftartquellen auf und aktualisieren Sie sie entsprechend.
 
- A: Um Schriftartersetzungen ohne Suffixe in Aspose.Words abzurufen, können Sie die verwenden`FontSubstitutionSettings` Klasse und die`RemoveSuffixes` Eigentum. Diese Eigenschaft festlegen auf`true` erhält die Schriftartersetzungen ohne die hinzugefügten Suffixe.
+### F2: Wo kann ich eine kostenlose Testversion von Aspose.Words für .NET herunterladen?
 
-#### F: Ist es möglich, das Hinzufügen von Suffixen zu Schriftartersetzungen in Aspose.Words zu deaktivieren?
+ Sie können eine kostenlose Testversion herunterladen[Aspose kostenlose Testseite](https://releases.aspose.com/).
 
-A: Nein, es ist nicht möglich, das Hinzufügen von Suffixen zu Schriftartersetzungen in Aspose.Words zu deaktivieren. Suffixe werden standardmäßig hinzugefügt, um die Kompatibilität und Konsistenz des Dokuments sicherzustellen.
+###  F3: Kann ich mit mehreren Arten von Warnungen umgehen?`IWarningCallback`?
 
-#### F: Wie kann ich unerwünschte Suffixe bei Schriftartersetzungen in Aspose.Words herausfiltern?
+ Ja das`IWarningCallback` Mit der Benutzeroberfläche können Sie verschiedene Arten von Warnungen verarbeiten, nicht nur das Ersetzen von Schriftarten.
 
- A: Um unerwünschte Suffixe bei Schriftartersetzungen in Aspose.Words herauszufiltern, können Sie Zeichenfolgenverarbeitungstechniken verwenden, z. B. die`Replace` oder`Substring` Methoden zum Entfernen bestimmter Suffixe, die Sie nicht einschließen möchten.
+### F4: Wo erhalte ich Unterstützung für Aspose.Words?
+
+ Für Unterstützung besuchen Sie die[Aspose.Words-Supportforum](https://forum.aspose.com/c/words/8).
+
+### F5: Ist es möglich, eine temporäre Lizenz zu erwerben?
+
+ Ja, Sie können eine temporäre Lizenz von erhalten[temporäre Lizenzseite](https://purchase.aspose.com/temporary-license/).

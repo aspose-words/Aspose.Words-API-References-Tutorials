@@ -57,7 +57,7 @@ A PDF JPEG formátumba konvertálásakor megadhatja a generált JPEG kép felbon
 
 #### Milyen korlátai vannak az átalakítási folyamatnak?
 
-Az átalakítási folyamat korlátai a használt eszköztől vagy könyvtártól függenek. Egyes eszközökhöz korlátozások vonatkozhatnak a PDF összetett elrendezésével, meghatározott betűtípusaival vagy interaktív elemeivel kapcsolatban. Fontos, hogy teljes mértékben megértsük a választott eszköz jellemzőit és korlátait, hogy megalapozott döntéseket hozhassunk a konvertálás során.
+Az átalakítási folyamat korlátai a használt eszköztől vagy könyvtártól függenek. Egyes eszközökhöz kapcsolódó korlátozások vonatkozhatnak a PDF összetett elrendezésére, meghatározott betűtípusaira vagy interaktív elemeire. Fontos, hogy teljes mértékben megértsük a választott eszköz jellemzőit és korlátait, hogy megalapozott döntéseket hozhassunk a konvertálás során.
 
 #### Az Aspose megbízható eszköz a PDF JPEG formátumba konvertálására?
 

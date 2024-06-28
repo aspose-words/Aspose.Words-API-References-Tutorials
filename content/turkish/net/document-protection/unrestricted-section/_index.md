@@ -90,7 +90,7 @@ Bu adımları takip ederek Aspose.Words for .NET ile Word belgenizdeki sınırs�
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET'in, Word belgesindeki belirli bölümlerin korumasız kalmasına ve belgenin geri kalanının korunmasına olanak tanıyan sınırsız bölüm özelliğini inceledik. Sağlanan adımları izleyerek, belgenizde, diğer bölümlerin korumasını korurken kullanıcıların içeriği serbestçe düzenleyebileceği bölümleri kolayca tanımlayabilirsiniz. Aspose.Words for .NET, belge koruması ve özelleştirme için güçlü yetenekler sunarak, Word belgelerinizdeki düzenleme izinleri üzerinde kontrol sahibi olmanızı sağlar.
+Bu eğitimde, Aspose.Words for .NET'in, Word belgesindeki belirli bölümlerin korumasız kalmasına ve belgenin geri kalanının korunmasına olanak tanıyan sınırsız bölüm özelliğini inceledik. Sağlanan adımları izleyerek, belgenizde kullanıcıların diğer bölümlerin korumasını korurken içeriği serbestçe düzenleyebilecekleri bölümleri kolayca tanımlayabilirsiniz. Aspose.Words for .NET, belge koruma ve özelleştirme için güçlü yetenekler sunarak, Word belgelerinizdeki düzenleme izinleri üzerinde kontrol sahibi olmanızı sağlar.
 
 ### Word belgesindeki sınırsız bölüm için SSS
 

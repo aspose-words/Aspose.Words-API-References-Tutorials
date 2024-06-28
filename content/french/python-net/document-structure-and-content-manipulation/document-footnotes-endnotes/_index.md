@@ -74,7 +74,7 @@ Vous pouvez gérer les notes de bas de page et les notes de fin par programmatio
 - Gardez les notes de bas de page concises et pertinentes
 - Utilisez les notes de fin pour des explications plus détaillées
 - Maintenir un formatage cohérent
-- Vérifiez à nouveau l’exactitude des citations
+- Vérifiez à nouveau l’exactitude des citations.
 
 ## Dépannage des problèmes courants
 

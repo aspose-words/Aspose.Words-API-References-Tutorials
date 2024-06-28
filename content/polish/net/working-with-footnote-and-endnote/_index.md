@@ -13,5 +13,5 @@ Przetwarzanie tekstu z przypisami dolnymi i końcowymi to wszechstronne źródł
 | Tytuł | Opis |
 | --- | --- |
 | [Ustaw kolumny przypisów dolnych](./set-foot-note-columns/) | Dowiedz się, jak ustawić liczbę kolumn przypisów w dokumentach programu Word przy użyciu Aspose.Words dla .NET. |
-| [Ustaw położenie przypisu dolnego i przypisu końcowego](./set-footnote-and-end-note-position/) | Dowiedz się, jak ustawić położenie przypisów dolnych i końcowych w dokumentach programu Word za pomocą Aspose.Words dla .NET. |
+| [Ustaw położenie przypisu dolnego i przypisu końcowego](./set-footnote-and-end-note-position/) | Dowiedz się, jak ustawić położenie przypisów dolnych i końcowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. |
 | [Ustaw opcje przypisu końcowego](./set-endnote-options/) | Dowiedz się, jak ustawić opcje przypisów końcowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. |

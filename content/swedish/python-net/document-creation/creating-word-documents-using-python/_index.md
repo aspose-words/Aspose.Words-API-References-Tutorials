@@ -20,9 +20,9 @@ Innan vi fördjupar oss i implementeringen är det avgörande att förstå struk
 
 ## Välja rätt Python-bibliotek
 
-För att uppnå vårt mål att skapa Word-dokument med Python behöver vi ett pålitligt och funktionsrikt bibliotek. Ett av de populära valen för denna uppgift är "Aspose.Words for Python"-biblioteket. Den tillhandahåller en robust uppsättning API:er som möjliggör enkel och effektiv dokumenthantering. Låt oss utforska hur du ställer in och använder det här biblioteket för vårt projekt.
+För att uppnå vårt mål att skapa Word-dokument med Python behöver vi ett pålitligt och funktionsrikt bibliotek. Ett av de populära valen för denna uppgift är "Apose.Words for Python"-biblioteket. Den tillhandahåller en robust uppsättning API:er som möjliggör enkel och effektiv dokumenthantering. Låt oss utforska hur du ställer in och använder det här biblioteket för vårt projekt.
 
-## Installerar Aspose.Words för Python
+## Installera Aspose.Words för Python
 
 För att komma igång måste du ladda ner och installera Aspose.Words for Python-biblioteket. Du kan hämta de nödvändiga filerna från Aspose.Releases (https://releases.aspose.com/words/python/). När du har laddat ner biblioteket, följ installationsinstruktionerna som är specifika för ditt operativsystem.
 

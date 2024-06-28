@@ -2,93 +2,103 @@
 title: Word 문서에 TCField 삽입
 linktitle: Word 문서에 TCField 삽입
 second_title: Aspose.Words 문서 처리 API
-description: 이 단계별 가이드에서 C# 및 .NET용 Aspose.Words를 사용하여 Word 문서에 TCField를 삽입하고 조작하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에 TC 필드를 삽입하는 방법을 알아보세요. 원활한 문서 자동화를 위한 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/add-content-using-documentbuilder/insert-tcfield/
 ---
-이 예에서는 Aspose.Words for .NET의 TCField 삽입 기능을 사용하는 과정을 안내합니다. TCField는 Word 문서의 목차 항목을 나타냅니다. 마크다운 형식의 예상 출력과 함께 C# 소스 코드에 대한 단계별 설명을 제공합니다. 시작하자!
+## 소개
 
-## 1단계: 문서 및 문서 작성기 초기화
+안녕하세요! 문서 자동화의 세계에 뛰어들고 있다면 바로 이곳에 오셨습니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서에 TC(목차) 필드를 삽입하는 방법을 살펴보겠습니다. 저를 믿으세요. 이 튜토리얼이 끝나면 여러분은 Word 문서에서 마법사가 주문을 거는 듯한 느낌을 받게 될 것입니다. 시작할 준비가 되셨나요? 해보자!
 
-시작하려면 문서와 문서 작성기를 초기화해야 합니다. 문서 빌더는 Aspose.Words for .NET에서 제공하는 강력한 도구로, 이를 통해 Word 문서를 프로그래밍 방식으로 구성하고 조작할 수 있습니다. 방법은 다음과 같습니다.
+## 전제조건
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+핵심을 다루기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+1.  .NET용 Aspose.Words: 아직 설치하지 않은 경우 .NET용 Aspose.Words를 다운로드하여 설치해야 합니다. 에서 받으실 수 있습니다.[다운로드 페이지](https://releases.aspose.com/words/net/).
+2. 개발 환경: 모든 .NET 개발 환경에서 가능하지만 Visual Studio를 적극 권장합니다.
+3. C# 기본 지식: C# 프로그래밍의 기본 사항에 익숙해야 합니다.
+4.  임시 라이센스: Aspose.Words의 모든 기능을 잠금 해제하려면 임시 라이센스가 필요할 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 
-## 2단계: TCField 삽입
+## 네임스페이스 가져오기
 
- 다음으로, 다음을 사용하여 TCField를 문서에 삽입합니다.`InsertField` 방법. TCField는 지정된 항목 텍스트가 포함된 목차 항목을 나타냅니다. 예는 다음과 같습니다.
-
-```csharp
-builder.InsertField("TC \"Entry Text\" \\f t");
-```
-
-위의 코드는 "Entry Text"라는 입력 텍스트가 있는 TCField를 문서에 삽입합니다.
-
-## 3단계: 문서 저장
-
- TCField를 삽입한 후 다음을 사용하여 문서를 특정 위치에 저장할 수 있습니다.`Save` 방법. 출력 문서에 대해 원하는 경로와 파일 이름을 제공해야 합니다. 예는 다음과 같습니다.
+먼저 필요한 네임스페이스를 가져오겠습니다. 이것은 마술쇼의 무대를 마련하는 것과 같습니다.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-위의 코드는 TCField가 포함된 문서를 지정된 디렉터리에 저장합니다.
+자, 예선은 끝났으니 본격적으로 시작해 볼까요!
 
-## 출력 마크다운 형식
+## 1단계: 프로젝트 설정
 
-코드가 성공적으로 실행되면 출력 문서에는 지정된 항목 텍스트가 포함된 목차 항목이 포함됩니다. TCField는 Word 문서의 필드로 표시되며 결과 마크다운 형식은 문서 처리 방법에 따라 달라집니다.
+코딩을 시작하기 전에 프로젝트를 설정해 보겠습니다. 개발 환경을 열고 새 .NET 프로젝트를 만듭니다. .NET용 Aspose.Words 라이브러리에 대한 참조를 추가하세요. NuGet을 사용하는 경우 패키지 관리자 콘솔을 통해 쉽게 설치할 수 있습니다.
 
-출력 문서는 마크다운 형식이 아니라 Word 형식이라는 점에 유의하세요. 그러나 적절한 도구나 라이브러리를 사용하여 Word 문서를 마크다운으로 변환하면 TCField가 그에 따라 처리됩니다.
+```shell
+Install-Package Aspose.Words
+```
 
-### .NET용 Aspose.Words를 사용하여 TCField를 삽입하기 위한 소스 코드 예
+## 2단계: 새 문서 만들기
 
-다음은 .NET용 Aspose.Words를 사용하여 TCField를 삽입하기 위한 전체 예제 소스 코드입니다.
+ 자, 새 Word 문서를 만드는 것부터 시작해 보겠습니다. 우리는`Document` 그리고`DocumentBuilder` Aspose.Words의 클래스를 사용하여 작업을 진행하세요.
 
 ```csharp
 // 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// 새 문서 만들기
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+그러면 문서가 설정되고 문서 작성을 시작할 준비가 됩니다.
+
+## 3단계: TC 필드 삽입
+
+이제 재미있는 부분이 나옵니다. 문서에 TC 필드를 삽입하겠습니다. TC 필드는 목차 항목을 표시하는 데 사용됩니다.
+
+```csharp
+// TC 필드 삽입
 builder.InsertField("TC \"Entry Text\" \\f t");
+```
 
+ 이 코드 줄은 Aspose.Words에게 "Entry Text"라는 입력 텍스트가 있는 TC 필드를 삽입하도록 지시합니다. 그만큼`\\f t` part는 목차에 항목이 표시되는 방식을 결정하는 스위치입니다.
+
+## 4단계: 문서 저장
+
+마지막으로 문서를 저장해 보겠습니다. 이곳은 우리의 모든 노력이 함께 모이는 곳입니다.
+
+```csharp
+// 문서 저장
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-요구 사항에 따라 코드를 자유롭게 수정하고 Aspose.Words for .NET에서 제공하는 다른 기능을 살펴보세요.
+팔! 방금 TC 필드가 포함된 Word 문서를 만들었습니다. 얼마나 멋진 일입니까?
 
 ## 결론
 
-축하해요! Aspose.Words for .NET을 사용하여 TCField를 Word 문서에 삽입하는 방법을 성공적으로 배웠습니다. 단계별 가이드를 따르고 제공된 소스 코드를 활용하면 이제 사용자 정의 항목 텍스트가 포함된 목차 항목을 문서에 추가할 수 있습니다.
+ 그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에 TC 필드를 삽입하는 방법을 살펴보았습니다. 꽤 간단하죠? 이러한 기술을 사용하면 이제 전문가처럼 Word 문서를 자동화하고 사용자 지정할 수 있습니다. 궁금한 점이 있거나 문제가 발생하면 주저하지 말고[Aspose.Words 문서](https://reference.aspose.com/words/net/) 아니면 그들에게 다가가거나[지원 포럼](https://forum.aspose.com/c/words/8). 즐거운 코딩하세요!
 
-TCField 기능은 Word 문서에서 체계적이고 탐색 가능한 목차를 만드는 데 유용한 도구입니다. 다양한 입력 텍스트와 서식 옵션을 실험하여 탐색하기 쉬운 전문적이고 구조화된 문서를 만드세요. 문서의 최신 내용이 반영되도록 변경한 후 목차를 업데이트하는 것을 잊지 마세요.
+## FAQ
 
-### Word 문서에 TCField 삽입에 대한 FAQ
+### 1. Word의 TC 필드란 무엇입니까?
 
-#### Q: .NET용 Aspose.Words의 TCField는 무엇입니까?
+Word의 TC(목차) 필드는 목차에 포함하려는 특정 항목을 표시하는 데 사용됩니다.
 
-A: .NET용 Aspose.Words의 TCField는 Word 문서의 목차(TOC) 항목을 나타냅니다. 문서가 업데이트될 때 목차를 생성하는 데 사용되는 지정된 항목 텍스트가 있는 목차 항목을 추가할 수 있습니다.
+### 2. Aspose.Words for .NET을 사용하려면 라이선스가 필요합니까?
 
-#### Q: TCField 항목 텍스트를 어떻게 사용자 정의합니까?
+ 예, 임시 라이선스를 사용하여 Aspose.Words의 전체 기능을 잠금 해제할 수 있습니다. 하나를 얻을 수 있습니다[여기](https://purchase.aspose.com/temporary-license/).
 
- A: 원하는 텍스트를 인수로 제공하여 TCField 항목 텍스트를 사용자 정의할 수 있습니다.`InsertField` 방법. 예를 들어,`builder.InsertField("TC \"Custom Entry\" \\f t");` "Custom Entry"라는 입력 텍스트가 있는 TCField를 문서에 삽입합니다.
+### 3. Aspose.Words를 다른 프로그래밍 언어와 함께 사용할 수 있나요?
 
-#### Q: 문서에 여러 TCField를 추가할 수 있나요?
+Aspose.Words는 주로 C#과 같은 .NET 언어를 지원하지만 Java 및 기타 플랫폼에서 사용할 수 있는 버전도 있습니다.
 
- A: 예, 다음을 호출하여 문서에 여러 TCField를 추가할 수 있습니다.`InsertField` 다른 입력 텍스트를 사용하여 메서드를 여러 번 사용하세요. 각 TCField는 목차의 별도 항목을 나타냅니다.
+### 4. .NET용 Aspose.Words 사용에 대한 추가 예제는 어디에서 찾을 수 있습니까?
 
-#### Q: TCField를 삽입한 후 목차를 어떻게 업데이트합니까?
+ 더 많은 예제와 자세한 문서는 다음에서 찾을 수 있습니다.[Aspose.Words 문서 페이지](https://reference.aspose.com/words/net/).
 
-A: TCField를 삽입한 후 목차를 업데이트하려면`UpdateFields` 문서에 대한 방법. 이렇게 하면 TCField 또는 문서 내용에 대한 모든 변경 사항이 목차에 반영됩니다.
+### 5. 문제가 발생할 경우 어떻게 지원을 받을 수 있나요?
 
-#### Q: 목차의 모양을 사용자 정의할 수 있나요?
-
-A: 예, TCField의 서식 옵션을 조정하여 목차의 모양을 사용자 정의할 수 있습니다. 글꼴 스타일, 색상 및 기타 속성을 수정하여 시각적으로 매력적인 목차를 만들 수 있습니다.
+ 문제가 발생하면 지원을 받을 수 있습니다.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8).

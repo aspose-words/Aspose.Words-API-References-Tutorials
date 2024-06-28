@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Steg 5: Spara det ändrade dokumentet
 
- Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
+Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
@@ -63,7 +63,7 @@ Detta slutför implementeringen av att sammanfoga två dokument på en ny sida m
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Ställ in det bifogade dokumentet att börja på en ny sida.
+	// Ställ in det bifogade dokumentet att börja på en ny sida.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 	// Bifoga källdokumentet med de ursprungliga stilarna som finns i källdokumentet.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. Adım: Ölçü birimlerini yapılandırın
 
-Şimdi kenar boşlukları, üstbilgi ve altbilgi mesafeleri vb. değerlerini farklı ölçü birimlerine dönüştüreceğiz. Değerleri belirli ölçü birimlerinde belirtmek için aşağıdaki kodu kullanın:
+Şimdi kenar boşlukları, üstbilgi ve altbilgi mesafeleri vb. değerlerini farklı ölçü birimlerine dönüştüreceğiz. Belirli ölçü birimlerindeki değerleri belirtmek için aşağıdaki kodu kullanın:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Bu kod şunu kullanır:`ConvertUtil` Belirtilen değerleri inç'e ( inç) dönüştürmek için Aspose.Words sınıfı`InchToPoint` ). Ayrıca mevcut diğer dönüştürme yöntemlerini de kullanabilirsiniz.`ConvertUtil` Değerleri diğer ölçü birimlerine dönüştürmek için sınıf.
+ Bu kod şunu kullanır:`ConvertUtil` Belirtilen değerleri inç'e dönüştürmek için Aspose.Words sınıfı (`InchToPoint` ). Ayrıca mevcut diğer dönüştürme yöntemlerini de kullanabilirsiniz.`ConvertUtil` değerleri diğer ölçü birimlerine dönüştürmek için sınıf.
 
 ### Aspose.Words for .NET kullanarak Ölçü Birimleri Arasında Dönüştürme için örnek kaynak kodu
 

@@ -110,7 +110,7 @@ Aspose.Words for .NET 的「每級使用一個製表符進行清單縮排」功�
 是的，您可以透過變更清單縮排的值來自訂每個層級的製表符字元數`ListIndentation.Count`財產在`TxtSaveOptions`班級。您可以指定每個縮排等級所需的製表符數量。
 
 #### Q：Aspose.Words for .NET 的清單縮排還可以使用哪些其他字元？
-除了製表符之外，您還可以使用 Aspose.Words for .NET 的其他字元進行清單縮排。您可以設定`ListIndentation.Character`屬性為任何所需的字符，例如空格（`' '`)，用於縮排列表。
+除了製表符之外，您還可以使用 Aspose.Words for .NET 的其他字元進行清單縮排。您可以設定`ListIndentation.Character`屬性為任何所需的字符，例如空格（`' '`)，用於識別清單。
 
 #### Q：Aspose.Words for .NET 是否提供任何其他管理清單的功能？
 是的，Aspose.Words for .NET 提供了許多用於管理 Word 文件中的清單的功能。您可以建立編號清單或項目符號清單、設定縮排等級、自訂清單樣式、新增清單項目等等。

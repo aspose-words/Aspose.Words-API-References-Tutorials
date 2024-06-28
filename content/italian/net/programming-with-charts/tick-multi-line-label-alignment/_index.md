@@ -17,7 +17,7 @@ Assicurati di avere i seguenti prerequisiti:
 - Aspose.Words per la libreria .NET installata. È possibile scaricarlo utilizzando Gestione pacchetti NuGet per installarlo.
 - Un percorso della directory del documento in cui verrà salvato il documento di output.
 
-## Passaggio 2: crea un nuovo documento e inserisci un grafico
+## Passaggio 2: crea un nuovo documento e inserisci un grafico.
 
  Creane uno nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 
@@ -82,7 +82,7 @@ Con Aspose.Words per .NET, puoi facilmente accedere e modificare la proprietà d
 ### Domande frequenti
 
 #### Q1. Cosa sono le etichette multilinea in un asse del grafico?
-Le etichette su più righe nell'asse del grafico si riferiscono alle etichette dell'asse che si estendono su più righe quando il testo dell'etichetta è lungo o richiede il ritorno a capo per adattarsi allo spazio disponibile. Invece di troncare il testo dell'etichetta o creare confusione visiva, l'asse del grafico divide automaticamente le etichette in più righe per garantirne la leggibilità. Le etichette su più righe sono particolarmente utili quando si ha a che fare con etichette di categorie o valori lunghe nei grafici.
+Le etichette su più righe nell'asse del grafico si riferiscono alle etichette dell'asse che si estendono su più righe quando il testo dell'etichetta è lungo o richiede il ritorno a capo per adattarsi allo spazio disponibile. Invece di troncare il testo dell'etichetta o creare confusione visiva, l'asse del grafico divide automaticamente le etichette in più righe per garantirne la leggibilità. Le etichette multilinea tick sono particolarmente utili quando si ha a che fare con etichette di categorie o valori lunghe nei grafici.
 
 #### Q2. Posso personalizzare l'allineamento delle etichette dei segni di spunta nell'asse di un grafico?
  Sì, puoi personalizzare l'allineamento delle etichette di spunta in un asse del grafico utilizzando Aspose.Words per .NET. Accedendo al`TickLabelAlignment` proprietà del`ChartAxis` oggetto, è possibile impostare l'allineamento desiderato per le etichette dei segni di spunta. Le opzioni di allineamento includono l'allineamento a sinistra, a destra, al centro o giustificato. La regolazione dell'allineamento consente di controllare il posizionamento orizzontale delle etichette dei segni di spunta lungo l'asse del grafico, garantendo una corretta leggibilità e presentazione visiva.

@@ -74,7 +74,7 @@ Ontdek gerust andere krachtige functies van Aspose.Words voor .NET om uw documen
  Ja, u kunt niet-opeenvolgende pagina's extraheren door het gewenste paginabereik op te geven. Als u bijvoorbeeld pagina's 1, 3 en 5 wilt extraheren, kunt u het paginabereik instellen op`1,3,5` in de`ExtractPages` functie.
 
 #### Vraag 2: Is het mogelijk om een specifiek paginabereik uit meerdere documenten tegelijk te extraheren?
-Ja, u kunt de functie 'Op paginabereik' op meerdere documenten toepassen. Laad eenvoudig elk document afzonderlijk en extraheer het gewenste paginabereik met behulp van de`ExtractPages` functie. Vervolgens kunt u de geëxtraheerde pagina's van elk document afzonderlijk opslaan.
+ Ja, u kunt de functie 'Op paginabereik' op meerdere documenten toepassen. Laad eenvoudig elk document afzonderlijk en extraheer het gewenste paginabereik met behulp van de`ExtractPages` functie. Vervolgens kunt u de geëxtraheerde pagina's van elk document afzonderlijk opslaan.
 
 #### V3: Kan ik paginabereiken extraheren uit gecodeerde of met een wachtwoord beveiligde Word-documenten?
 Nee, de functie 'Op paginabereik' werkt op onbeveiligde Word-documenten. Als een document is gecodeerd of met een wachtwoord is beveiligd, moet u het juiste wachtwoord opgeven en de beveiliging verwijderen voordat u het gewenste paginabereik kunt extraheren.

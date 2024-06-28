@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
 
-En este tutorial, lo guiaremos paso a paso para configurar las carpetas de fuentes con prioridad al renderizar un documento usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarle a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar varias carpetas de fuentes con prioridad de búsqueda personalizada al renderizar sus documentos usando Aspose.Words para .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para configurar las carpetas de fuentes con prioridad al renderizar un documento usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarle a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar varias carpetas de fuentes con prioridad de búsqueda personalizada al renderizar sus documentos usando Aspose.Words para .NET.
 
 ## Paso 1: definir el directorio de documentos
 Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.

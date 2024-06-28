@@ -85,7 +85,7 @@ Bu kod parçacığı yeni, boş bir Word belgesi oluşturur.
 
 #### S: Aspose.Words for .NET'i kullanarak içindekiler tablosundaki belirli bir düzeyin stilini nasıl değiştirebilirim?
 
- C: Bir belge yükledikten sonra, belgenin stillerine erişerek ve gerekli değişiklikleri yaparak içindekiler tablosundaki belirli bir düzeyin stilini değiştirebilirsiniz. Aspose.Words for .NET'te şunları kullanabilirsiniz:`Styles` mülkiyeti`Document` Belge stillerine erişmek için sınıfa gidin ve ardından özelliklerini kullanarak istediğiniz stili değiştirin. Örneğin, içindekiler tablosunun ilk düzeyinin stilini kalın olarak değiştirmek için aşağıdaki kodu kullanabilirsiniz:
+ C: Bir belge yükledikten sonra, belgenin stillerine erişip gerekli değişiklikleri yaparak içindekiler tablosundaki belirli bir düzeyin stilini değiştirebilirsiniz. Aspose.Words for .NET'te şunları kullanabilirsiniz:`Styles` mülkiyeti`Document` Belge stillerine erişmek için sınıfa gidin ve ardından özelliklerini kullanarak istediğiniz stili değiştirin. Örneğin, içindekiler tablosunun ilk düzeyinin stilini kalın olarak değiştirmek için aşağıdaki kodu kullanabilirsiniz:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;

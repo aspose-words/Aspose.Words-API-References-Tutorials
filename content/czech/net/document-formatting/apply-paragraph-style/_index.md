@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/document-formatting/apply-paragraph-style/
 ---
-V tomto tutoriálu vás provedeme tím, jak použít styl odstavce pomocí Aspose.Words for .NET. Chcete-li porozumět zdrojovému kódu a použít styl odstavce, postupujte podle následujících kroků.
+tomto tutoriálu vás provedeme tím, jak použít styl odstavce pomocí Aspose.Words for .NET. Chcete-li porozumět zdrojovému kódu a použít styl odstavce, postupujte podle následujících kroků.
 
 ## Krok 1: Vytvoření a konfigurace dokumentu
 
@@ -59,7 +59,7 @@ S tímto kódem budete moci použít styl odstavce pomocí Aspose.Words pro .NET
 
 ## Závěr
 
- V tomto tutoriálu jsme prozkoumali, jak použít styl odstavce v dokumentu aplikace Word pomocí Aspose.Words for .NET. Nastavením`StyleIdentifier` vlastnictvím`ParagraphFormat`, mohli jsme na odstavec použít vestavěný styl. Aspose.Words for .NET poskytuje širokou škálu možností formátování, včetně možnosti vytvářet a aplikovat vlastní styly, což vám umožní snadno dosáhnout profesionálně vypadajících dokumentů.
+ V tomto tutoriálu jsme prozkoumali, jak použít styl odstavce v dokumentu aplikace Word pomocí Aspose.Words for .NET. Nastavením`StyleIdentifier` vlastnictvím`ParagraphFormat`mohli jsme na odstavec použít vestavěný styl. Aspose.Words for .NET poskytuje širokou škálu možností formátování, včetně možnosti vytvářet a aplikovat vlastní styly, což vám umožní snadno dosáhnout profesionálně vypadajících dokumentů.
 
 ### FAQ
 

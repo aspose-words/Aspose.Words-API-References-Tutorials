@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## चरण 4: टेक्स्ट बॉक्स सामग्री जोड़ें
 
- एक बनाने के`NodeImporter` ऑब्जेक्ट बनाएं और स्रोत दस्तावेज़ से गंतव्य दस्तावेज़ में टेक्स्ट बॉक्स नोड्स आयात करने के लिए इसका उपयोग करें। स्रोत दस्तावेज़ में प्रत्येक पैराग्राफ को दोहराएँ और इसे गंतव्य दस्तावेज़ में आयात करें।
+ एक बनाने के`NodeImporter`ऑब्जेक्ट बनाएं और स्रोत दस्तावेज़ से गंतव्य दस्तावेज़ में टेक्स्ट बॉक्स नोड्स आयात करने के लिए इसका उपयोग करें। स्रोत दस्तावेज़ में प्रत्येक पैराग्राफ को दोहराएँ और इसे गंतव्य दस्तावेज़ में आयात करें।
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## चरण 5: गंतव्य दस्तावेज़ सहेजें
 
- अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
+अंत में, संशोधित गंतव्य दस्तावेज़ का उपयोग करके सहेजें`Save` की विधि`Document` वस्तु।
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

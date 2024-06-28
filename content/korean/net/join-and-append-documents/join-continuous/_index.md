@@ -19,7 +19,7 @@ url: /ko/net/join-and-append-documents/join-continuous/
 
 ## 2단계: 원본 및 대상 문서 열기
 
- 다음을 사용하여 원본 및 대상 문서를 엽니다.`Document` 클래스 생성자. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 다음을 사용하여 원본 및 대상 문서를 엽니다.`Document` 클래스 생성자. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 // 문서 디렉터리 경로
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3단계: 연속 구간 시작 설정
 
- 소스 문서가 대상 문서의 내용 바로 뒤에 나타나도록 하려면`SectionStart` 소스 문서의 첫 번째 섹션 속성을`SectionStart.Continuous`.
+소스 문서가 대상 문서의 내용 바로 뒤에 나타나도록 하려면`SectionStart` 소스 문서의 첫 번째 섹션 속성을`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 5단계: 수정된 문서 저장
 
- 마지막으로 다음을 사용하여 수정된 대상 문서를 저장합니다.`Save` 의 방법`Document` 물체.
+마지막으로 다음을 사용하여 수정된 대상 문서를 저장합니다.`Save` 의 방법`Document` 물체.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");

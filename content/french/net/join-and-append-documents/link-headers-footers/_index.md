@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Étape 2 : Charger les documents source et de destination
 
- Ensuite, vous devez charger les documents source et de destination à l'aide du Aspose.Words`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
+Ensuite, vous devez charger les documents source et de destination à l'aide de Aspose.Words.`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Étape 4 : lier les en-têtes et les pieds de page à la section précédente
 
-Pour lier les en-têtes et pieds de page du document source à la section précédente du document destination, vous pouvez utiliser le`LinkToPrevious` méthode du`HeadersFooters` collection. En passant`true` en tant que paramètre, vous remplacez les en-têtes ou pieds de page existants dans le document source.
+ Pour lier les en-têtes et pieds de page du document source à la section précédente du document destination, vous pouvez utiliser le`LinkToPrevious` méthode du`HeadersFooters` collection. En passant`true` en tant que paramètre, vous remplacez les en-têtes ou pieds de page existants dans le document source.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);

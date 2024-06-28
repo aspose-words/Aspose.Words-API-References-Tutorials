@@ -17,7 +17,7 @@ url: /zh/net/programming-with-charts/single-chart-series/
 - 已安装 Aspose.Words for .NET 库。您可以使用 NuGet 包管理器下载并安装它。
 - 将保存输出文档的文档目录路径。
 
-## 步骤 2：创建一个新文档并插入图表
+## 步骤2：创建一个新文档并插入图表。
 
 创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 

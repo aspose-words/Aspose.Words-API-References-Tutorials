@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Maak drie Run-objecten.
-// De eerste twee voeren wat tekst uit, terwijl de derde een commentaar uitvoert
+//De eerste twee voeren wat tekst uit, terwijl de derde een commentaar uitvoert
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ A: Als u een commentaaranker wilt toevoegen aan een Aspose.Words voor .NET-docum
 
 #### Vraag: Hoe kan ik de tekst bewerken van een opmerking die is gekoppeld aan een commentaaranker in Aspose.Words voor .NET?
 
- A: Om de tekst van een opmerking die is gekoppeld aan een commentaaranker in Aspose.Words voor .NET te wijzigen, kunt u toegang krijgen tot de`Comment.Text` eigendom van de corresponderende`Comment` object en wijzig de tekst indien nodig.
+A: Om de tekst van een opmerking die is gekoppeld aan een commentaaranker in Aspose.Words voor .NET te wijzigen, kunt u toegang krijgen tot de`Comment.Text` eigendom van de corresponderende`Comment` object en wijzig de tekst indien nodig.
 

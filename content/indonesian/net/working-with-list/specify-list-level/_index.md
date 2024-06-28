@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Langkah 6: Hentikan Pemformatan Daftar
 
- Untuk menghentikan pemformatan daftar, atur`null` ke`List` properti pembuat dokumen:
+ Untuk menghentikan pemformatan daftar, atur`null` ke`List`properti pembuat dokumen:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Buat daftar bernomor berdasarkan salah satu templat daftar Microsoft Word
+// Buat daftar bernomor berdasarkan salah satu templat daftar Microsoft Word.
 //dan menerapkannya pada paragraf pembuat dokumen saat ini.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Buat daftar berpoin berdasarkan salah satu templat daftar Microsoft Word
+// Buat daftar berpoin berdasarkan salah satu templat daftar Microsoft Word.
 //dan menerapkannya pada paragraf pembuat dokumen saat ini.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### T: Bisakah saya menambahkan level tambahan ke daftar bernomor di Aspose.Words?
 
- J: Ya, dimungkinkan untuk menambahkan level tambahan ke daftar bernomor di Aspose.Words. Itu`ListLevel` kelas memungkinkan Anda mengatur properti pemformatan untuk setiap level daftar. Anda dapat mengatur opsi seperti awalan, akhiran, perataan, indentasi, dll. Ini memungkinkan Anda membuat daftar dengan berbagai tingkat hierarki.
+ J: Ya, dimungkinkan untuk menambahkan level tambahan ke daftar bernomor di Aspose.Words. Itu`ListLevel`kelas memungkinkan Anda mengatur properti pemformatan untuk setiap level daftar. Anda dapat mengatur opsi seperti awalan, akhiran, perataan, indentasi, dll. Ini memungkinkan Anda membuat daftar dengan berbagai tingkat hierarki.
 
 

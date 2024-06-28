@@ -2,76 +2,101 @@
 title: Připojit dokument
 linktitle: Připojit dokument
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak připojit obsah jednoho dokumentu k druhému pomocí Aspose.Words for .NET.
+description: Naučte se, jak přidávat dokumenty aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto komplexního průvodce krok za krokem. Ideální pro automatizaci pracovního toku dokumentů.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/append-document/
 ---
 
-Tento tutoriál vysvětluje, jak používat Aspose.Words pro .NET k připojení obsahu jednoho dokumentu k druhému. Poskytnutý zdrojový kód ukazuje, jak otevřít zdrojový a cílový dokument, importovat a připojit sekce ze zdrojového dokumentu do cílového dokumentu.
+## Úvod
 
-## Krok 1: Nastavte projekt
+Nazdárek! Potřebovali jste někdy spojit dva dokumenty Wordu do jednoho a zachovat původní formátování nedotčené? Ať už sestavujete zprávy, vytváříte rozsáhlou projektovou dokumentaci nebo se jen snažíte zefektivnit správu dokumentů, Aspose.Words pro .NET vám může hodně usnadnit život. V tomto tutoriálu prozkoumáme, jak připojit jeden dokument aplikace Word k jinému pomocí Aspose.Words for .NET, přičemž podrobně rozebereme každý krok. Na konci této příručky budete slučovat dokumenty jako profesionál!
 
-Ujistěte se, že máte následující předpoklady:
+## Předpoklady
 
--  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose.Releases]https://releases.aspose.com/words/net/ nebo k instalaci použijte správce balíčků NuGet.
-- Cesta k adresáři dokumentů, kde jsou umístěny zdrojové a cílové dokumenty.
+Než se ponoříme do toho nejnutnějšího, ujistěte se, že máte vše, co potřebujete:
 
-## Krok 2: Otevřete zdrojové a cílové dokumenty
+1. Základní znalost C#: Měli byste být spokojeni se syntaxí a koncepty C#.
+2.  Aspose.Words pro .NET: Stáhněte si ji[tady](https://releases.aspose.com/words/net/) . Pokud teprve zkoumáte, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/).
+3. Visual Studio: Jakákoli nejnovější verze by měla fungovat, ale doporučujeme nejnovější verzi.
+4. .NET Framework: Ujistěte se, že je ve vašem systému nainstalováno.
 
- Otevřete zdrojové a cílové dokumenty pomocí`Document` konstruktor třídy. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů.
+Máte vše připraveno? Skvělý! Pojďme do toho.
+
+## Importovat jmenné prostory
+
+Abychom mohli začít pracovat s Aspose.Words pro .NET, musíme importovat potřebné jmenné prostory. Tento krok zajišťuje, že máme přístup ke všem třídám a metodám, které budeme potřebovat.
 
 ```csharp
-// Cesta k vašemu adresáři dokumentů
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+```
 
+Tyto jmenné prostory jsou nezbytné pro vytváření, manipulaci a ukládání dokumentů aplikace Word.
+
+## Krok 1: Nastavení adresáře dokumentů
+
+Nejprve musíme určit adresář, kde jsou naše dokumenty uloženy. To pomáhá Aspose.Words najít soubory, se kterými chceme pracovat.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašim dokumentům.
+
+## Krok 2: Načtení zdrojových a cílových dokumentů
+
+Dále načteme zdrojový dokument (dokument, který se má připojit) a cílový dokument (dokument, ke kterému bude zdroj připojen).
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Připojte oddíly ze zdrojového dokumentu do cílového dokumentu
+ Zde inicializujeme dva`Document` objektů.`srcDoc` představuje zdrojový dokument a`dstDoc` představuje cílový dokument.
 
- Projděte všechny sekce ve zdrojovém dokumentu a importujte každou sekci do cílového dokumentu pomocí`ImportNode` metoda. Poté připojte importovanou sekci k cílovému dokumentu.
+## Krok 3: Připojení zdrojového dokumentu k cílovému dokumentu
 
-```csharp
-foreach (Section srcSection in srcDoc)
-{
-    Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-    dstDoc.AppendChild(dstSection);
-}
-```
-
-## Krok 4: Uložte cílový dokument
-
- Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+Nyní přichází ta vzrušující část – připojení zdrojového dokumentu k cílovému dokumentu při zachování původního formátování.
 
 ```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-Tím je implementace připojení dokumentu pomocí Aspose.Words for .NET dokončena.
+ V tomto kroku použijeme`AppendDocument`způsob spojení dvou dokumentů. The`ImportFormatMode.KeepSourceFormatting` Parametr zajišťuje zachování formátování zdrojového dokumentu.
 
-### Příklad zdrojového kódu pro Append Document pomocí Aspose.Words pro .NET 
+## Krok 4: Uložení kombinovaného dokumentu
+
+Po připojení dokumentů je posledním krokem uložení kombinovaného dokumentu pod novým názvem.
 
 ```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Projděte všechny sekce ve zdrojovém dokumentu.
-	//Uzly sekcí jsou bezprostředními potomky uzlu Dokument, takže můžeme dokument pouze vyčíslit.
-	foreach (Section srcSection in srcDoc)
-	{
-		// Protože kopírujeme část z jednoho dokumentu do druhého,
-		// je nutné importovat uzel Section do cílového dokumentu.
-		// Tím se upraví všechny odkazy specifické pro dokument na styly, seznamy atd.
-		//
-		// Import uzlu vytvoří kopii původního uzlu, ale kopii
-		// ss připraven k vložení do cílového dokumentu.
-		Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-		// Nyní lze nový uzel sekce připojit k cílovému dokumentu.
-		dstDoc.AppendChild(dstSection);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
+dstDoc.Save(dataDir + "AppendedDocument.docx");
 ```
+
+Zde uložíme připojený dokument s popisným názvem souboru, který označuje, že obsahuje připojený obsah.
+
+## Závěr
+
+ A tady to máte! Úspěšně jste se naučili, jak připojit jeden dokument Wordu k druhému pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením vašeho prostředí, načítáním dokumentů, připojením jednoho dokumentu k druhému při zachování zdrojového formátování a uložením kombinovaného dokumentu. Aspose.Words nabízí širokou škálu funkcí, takže nezapomeňte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) odemknout jeho plný potenciál.
+
+## Nejčastější dotazy
+
+### 1. Co je Aspose.Words pro .NET?
+
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty Wordu programově. Je ideální pro automatizaci úloh souvisejících s dokumenty.
+
+### 2. Mohu používat Aspose.Words pro .NET zdarma?
+
+ Můžete zkusit Aspose.Words for .NET pomocí a[zkušební verze zdarma](https://releases.aspose.com/). Pro dlouhodobé používání si budete muset zakoupit licenci.
+
+### 3. Jak zajistím zachování formátování při připojování dokumentů?
+
+ Použijte`ImportFormatMode.KeepSourceFormatting` parametry v`AppendDocument` způsob, jak zachovat formátování zdrojového dokumentu.
+
+### 4. Jak získám podporu pro Aspose.Words for .NET?
+
+Podporu můžete získat návštěvou stránky[Aspose fórum podpory](https://forum.aspose.com/c/words/8).
+
+### 5. Mohu připojit dokumenty různých formátů?
+
+Ano, Aspose.Words podporuje různé formáty a můžete přidávat dokumenty různých formátů, jako jsou DOCX, DOC, RTF atd.

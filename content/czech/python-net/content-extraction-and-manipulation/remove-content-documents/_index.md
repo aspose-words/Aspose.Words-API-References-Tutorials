@@ -38,7 +38,7 @@ import aspose.words as aw
 doc = aw.Document("path/to/your/document.docx")
 ```
 
-## Odebírání textu
+## Odebrání textu
 
  Odebrání konkrétního textu z dokumentu aplikace Word je s Aspose.Words jednoduché. Můžete použít`Range.replace` způsob, jak toho dosáhnout:
 

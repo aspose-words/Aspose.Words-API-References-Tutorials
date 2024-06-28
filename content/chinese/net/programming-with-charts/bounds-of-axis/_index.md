@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-charts/bounds-of-axis/
 ---
 
-本教程介绍如何使用 Aspose.Words for .NET 设置图表中轴的边界。通过插入图表、添加系列数据和配置轴缩放，您可以定义轴的最小值和最大值。
+本教程介绍如何使用 Aspose.Words for .NET 设置图表中轴的边界。通过插入图表、添加系列数据以及配置轴缩放比例，您可以定义轴的最小值和最大值。
 
 ## 先决条件
 要学习本教程，您需要具备以下条件：
@@ -95,7 +95,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 Aspose.Words for .NET 是一个库，允许开发人员以编程方式处理 Word 文档。它提供了广泛的用于创建、操作和保存 Word 文档的特性和功能。
 
 #### Q2。如何安装 Aspose.Words for .NET？
-要安装 Aspose.Words for .NET，您可以使用 Visual Studio 中的 NuGet 包管理器。只需在 NuGet 包管理器中搜索“Aspose.Words”并将其安装到您的项目中即可。
+要安装 Aspose.Words for .NET，您可以使用 Visual Studio 中的 NuGet 包管理器。只需在 NuGet 包管理器中搜索“Apose.Words”并将其安装到您的项目中即可。
 
 #### Q3。我可以将 Aspose.Words for .NET 与其他编程语言一起使用吗？
 不，Aspose.Words for .NET 是专门为 .NET 应用程序设计的。它适用于 C# 和 VB.NET 等编程语言。

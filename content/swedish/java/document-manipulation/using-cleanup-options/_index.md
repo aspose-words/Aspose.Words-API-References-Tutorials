@@ -158,7 +158,7 @@ Rensningsalternativ i Aspose.Words för Java är inställningar som låter dig s
 
 ###  Vad händer när jag ställer in`REMOVE_CONTAINING_FIELDS` option?
 
- Ställa in`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` alternativet tar bort hela kopplingsfältet, inklusive dess innehållande stycke, från dokumentet under kopplingsprocessen. Detta är användbart när du vill eliminera sammanslagningsfält och deras tillhörande text.
+ Ställa in`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` Alternativet tar bort hela kopplingsfältet, inklusive dess innehållande stycke, från dokumentet under kopplingsprocessen. Detta är användbart när du vill eliminera sammanslagningsfält och deras tillhörande text.
 
 ### Hur kan jag ta bort oanvända sammanslagningsfält från mitt dokument?
 

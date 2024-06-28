@@ -21,7 +21,7 @@ Zde jsou některé z klíčových výhod používání Aspose.Words pro Java:
 * Komplexní sada funkcí pro zpracování textu a zpracování dokumentů
 * Rozsáhlá dokumentace a návody
 * Snadno použitelné API
-* Podpora pro širokou škálu formátů dokumentů
+* Podpora široké škály formátů dokumentů
 * Vysoký výkon a škálovatelnost
 
 ## Návody na zpracování textu
@@ -34,7 +34,7 @@ Odemkněte sílu Aspose.Words pro Java při manipulaci s různými formáty doku
 ### [Optimalizace načítání dokumentů pomocí možností HTML, RTF a TXT](./optimizing-document-loading-options/)
 Optimalizujte načítání dokumentů pomocí Aspose.Words pro Java. Zlepšete rychlost a efektivitu pro soubory HTML, RTF a TXT. Zvyšte uživatelský zážitek ještě dnes!
 ### [Efektivní ukládání dokumentů pomocí možností DOC, HTML a obrázků](./efficient-document-saving-options/)
-Naučte se efektivní ukládání dokumentů s Aspose.Words pro Java. Tento podrobný průvodce pokrývá možnosti DOC, HTML a obrázků a rozšíří vaše dovednosti v oblasti správy dokumentů
+Naučte se efektivní ukládání dokumentů s Aspose.Words pro Java. Tento podrobný průvodce pokrývá možnosti DOC, HTML a obrázků a rozšíří vaše dovednosti v oblasti správy dokumentů.
 ### [Zvládnutí pokročilých nastavení ukládání pro dokumenty](./mastering-advanced-save-settings/)
 Zvládněte pokročilé nastavení ukládání dokumentů pomocí Aspose.Words pro Java. Naučte se formátovat, chránit, optimalizovat a automatizovat vytváření dokumentů bez námahy.
 ### [Manipulace s obsahem dokumentu pomocí vyčištění, polí a dat XML](./manipulating-document-content/)

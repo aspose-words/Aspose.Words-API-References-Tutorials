@@ -64,11 +64,11 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre s
 
 #### F: Wo finde ich Silbenwörterbuchdateien für verschiedene Sprachen?
 
-A: Sie können Silbenwörterbuchdateien für verschiedene Sprachen in verschiedenen Online-Ressourcen finden. Diese Dateien liegen normalerweise im XML- oder TEX-Format vor. Sie finden Open-Source-Silbenwörterbücher für verschiedene Sprachen auf Websites, die sich mit Linguistikprojekten oder Quellcode-Repositories befassen.
+A: Sie können Silbenwörterbuchdateien für verschiedene Sprachen auf verschiedenen Online-Ressourcen finden. Diese Dateien liegen normalerweise im XML- oder TEX-Format vor. Open-Source-Silbenwörterbücher für verschiedene Sprachen finden Sie auf Websites, die sich Linguistikprojekten oder Quellcode-Repositories widmen.
 
 #### F: Wie kann ich das geladene Silbenwörterbuch auf ein Dokument in Aspose.Words anwenden?
 
- A: Um das geladene Silbenwörterbuch auf ein Dokument in Aspose.Words anzuwenden, müssen Sie die Wörter im Dokument durchlaufen und verwenden`Hyphenate()` Methode der`Hyphenation`Klasse, um die Silbenbildung der Wörter zu erhalten. Anschließend können Sie die Silbenwörter nach Bedarf formatieren, indem Sie beispielsweise Bindestriche zwischen den Silben einfügen.
+A: Um das geladene Silbenwörterbuch auf ein Dokument in Aspose.Words anzuwenden, müssen Sie die Wörter im Dokument durchlaufen und verwenden`Hyphenate()` Methode der`Hyphenation` Klasse, um die Silbenbildung der Wörter zu erhalten. Anschließend können Sie die Silbenwörter nach Bedarf formatieren, indem Sie beispielsweise Bindestriche zwischen den Silben einfügen.
 
 #### F: Welche Sprachen werden für die Silbenbildung in Aspose.Words unterstützt?
 

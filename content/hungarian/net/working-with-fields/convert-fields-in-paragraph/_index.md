@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-Ez a kód a LINQ metódusok kombinációját használja a dokumentum utolsó bekezdésében lévő mezők kiszűrésére, majd egyszerű szöveggé alakítja azokat a`Unlink()` módszer.
+ Ez a kód a LINQ metódusok kombinációját használja a dokumentum utolsó bekezdésében lévő mezők kiszűrésére, majd egyszerű szöveggé alakítja azokat a`Unlink()` módszer.
 
 ## 4. lépés: Mentse el a módosított dokumentumot
 
@@ -93,4 +93,4 @@ V: Az Aspose.Words a mezőkben a konverziós formátumok széles skáláját tá
 
 #### K: Hogyan lehet frissíteni egy konverziós mezőt egy Word-dokumentumban az Aspose.Words segítségével?
 
-V: A Word-dokumentum konverziós mezőjének Aspose.Words segítségével történő frissítéséhez használhatja az UpdateFields metódust. Ez a módszer végigfut a dokumentumon, és frissíti az összes mezőt, beleértve a konverziós mezőket is, és újraszámolja az értékeket az aktuális adatok alapján.
+V: A Word-dokumentum konverziós mezőjének Aspose.Words segítségével történő frissítéséhez használhatja az UpdateFields metódust. Ez a módszer végigfut a dokumentumon, és frissíti az összes mezőt, beleértve a konverziós mezőket is, újraszámolva az értékeket az aktuális adatok alapján.

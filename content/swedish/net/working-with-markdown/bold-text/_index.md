@@ -53,11 +53,11 @@ Grattis! Du har nu lärt dig hur man fet text med Aspose.Words för .NET.
 
 #### F: Hur kan jag göra text fet i Aspose.Words?
 
- S: För att göra text fet i Aspose.Words kan du använda`Font.Bold` egendom av`Run` objekt. Du kan ställa in den här egenskapen till`true` till fet specifik text. Du kan till exempel använda`run.Font.Bold=true` för att feta texten inuti`Run` objekt.
+ S: För att göra text fet i Aspose.Words kan du använda`Font.Bold` egendom av`Run`objekt. Du kan ställa in den här egenskapen till`true` till fet specifik text. Du kan till exempel använda`run.Font.Bold=true` för att feta texten inuti`Run` objekt.
 
 #### F: Är det möjligt att feta flera stycken text i samma stycke?
 
-S: Ja, du kan feta flera stycken text i ett enda stycke med hjälp av flera`Run` föremål. Du kan skapa flera`Run` objekt och ställ in`Font.Bold`egendom till`true` för varje objekt att feta de önskade textdelarna. Sedan kan du lägga till dem i stycket med hjälp av`Paragraph.AppendChild(run)` metod.
+ S: Ja, du kan feta flera stycken text i ett enda stycke med hjälp av flera`Run` föremål. Du kan skapa flera`Run` objekt och ställ in`Font.Bold`egendom till`true` för varje objekt att feta de önskade textdelarna. Sedan kan du lägga till dem i stycket med hjälp av`Paragraph.AppendChild(run)` metod.
 
 #### F: Kan jag fet text som finns i en tabell eller cell i Aspose.Words?
 

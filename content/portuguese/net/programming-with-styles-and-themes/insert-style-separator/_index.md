@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Nesta etapa, criamos um novo`Document` objeto e um associado`DocumentBuilder` objeto.
+Nesta etapa, criamos um novo`Document` objeto e um associado`DocumentBuilder` objeto.
 
 ## Etapa 3: Criando e configurando o estilo personalizado
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 
 Neste tutorial, aprendemos como inserir um separador de estilo em um documento usando Aspose.Words for .NET. Criamos um novo documento, definimos um estilo personalizado e usamos o separador de estilos para diferenciar seções de texto com estilos diferentes.
 
-uso de separadores de estilo oferece flexibilidade adicional ao formatar seus documentos. Isso ajuda a manter a consistência visual ao mesmo tempo que permite variações estilísticas.
+O uso de separadores de estilo oferece flexibilidade adicional ao formatar seus documentos. Isso ajuda a manter a consistência visual ao mesmo tempo que permite variações estilísticas.
 
 Aspose.Words for .NET fornece uma API poderosa para gerenciar estilos em seus documentos. Você pode explorar ainda mais esta biblioteca para personalizar a aparência dos seus documentos e criar resultados profissionais.
 
@@ -98,7 +98,7 @@ Para configurar o ambiente, você precisa garantir que o Aspose.Words for .NET e
 
 #### Como posso criar e configurar um estilo personalizado?
 
- Para criar um estilo personalizado, você pode usar o`Styles.Add` método do`Document` objeto. Especifique o tipo de estilo (por exemplo,`StyleType.Paragraph`e forneça um nome para o estilo. Depois de criado, você pode modificar as propriedades da fonte do objeto de estilo para configurar sua aparência.
+ Para criar um estilo personalizado, você pode usar o`Styles.Add` método do`Document` objeto. Especifique o tipo de estilo (por exemplo,`StyleType.Paragraph`) e forneça um nome para o estilo. Depois de criado, você pode modificar as propriedades da fonte do objeto de estilo para configurar sua aparência.
 
 #### Como insiro um separador de estilo?
 
@@ -106,7 +106,7 @@ Para configurar o ambiente, você precisa garantir que o Aspose.Words for .NET e
 
 #### Como posso aplicar estilos diferentes a diferentes seções de texto?
 
- Você pode aplicar diferentes estilos a diferentes seções de texto definindo o`ParagraphFormat.StyleName` propriedade do`DocumentBuilder` objeto. Antes de escrever o texto, você pode definir o nome do estilo desejado e o texto seguinte será formatado de acordo.
+ Você pode aplicar diferentes estilos a diferentes seções de texto definindo o`ParagraphFormat.StyleName` propriedade do`DocumentBuilder`objeto. Antes de escrever o texto, você pode definir o nome do estilo desejado e o texto seguinte será formatado de acordo.
 
 #### Posso salvar o documento em diferentes formatos?
 

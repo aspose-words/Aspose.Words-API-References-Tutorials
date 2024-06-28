@@ -27,7 +27,7 @@ Ezen oktatóanyagok során az Aspose.Words segítségével történő tartalomki
 - Dokumentumgenerálás: Ismerje meg, hogyan hozhat létre új dokumentumokat vagy jelentéseket a kivont tartalom alapján.
 - Metaadat-manipuláció: Ismerje meg, hogyan kezelheti a dokumentum tulajdonságait és metaadatait.
 
-Ezen oktatóanyagok végére olyan tudás birtokában lesz, amellyel könnyedén kezelheti a különféle dokumentumtartalom-kezelési feladatokat. Betekintést nyerhet a tartalom kinyerésének és kezelésének legjobb gyakorlataiba, így biztosítva, hogy a dokumentumfeldolgozási munkafolyamatok hatékonyak, pontosak és az Ön egyedi igényeihez igazodjanak.
+Ezen oktatóanyagok végére olyan tudás birtokában lesz, amellyel könnyedén kezelheti a különféle dokumentumtartalom-kezelési feladatokat. Betekintést nyerhet a tartalom kinyerésének és kezelésének bevált gyakorlataiba, így biztosítva, hogy a dokumentumfeldolgozási munkafolyamatok hatékonyak, pontosak és az Ön egyedi igényeihez igazodjanak.
 
 ## Tartalom kinyerési és manipulációs oktatóanyagok
 ### [Tartalmak kibontása és módosítása Word dokumentumokban](./extract-modify-document-content/)
@@ -37,4 +37,4 @@ Hatékonyan kinyerhet tartalmat Word dokumentumokból az Aspose.Words for Python
 ### [Speciális keresési és cseretechnikák a Word dokumentumokban](./find-replace-documents/)
 Az Aspose.Words for Python segítségével sajátítson el haladó keresési és cseretechnikákat a Word dokumentumokban. Cserélje ki a szöveget, használja a reguláris kifejezést, a formázást stb.
 ### [Tartalmak eltávolítása és finomítása a Word dokumentumokban](./remove-content-documents/)
-Tanulja meg, hogyan távolíthat el és finomíthat hatékonyan tartalmat Word-dokumentumokból az Aspose.Words for Python segítségével. Lépésről lépésre útmutató forráskód-példákkal.
+Tanulja meg, hogyan távolíthat el és finomíthat hatékonyan tartalmat Word-dokumentumokból az Aspose.Words for Python segítségével. Lépésről lépésre, forráskód-példákkal.

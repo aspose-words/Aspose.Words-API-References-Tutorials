@@ -51,9 +51,9 @@ Aquí está el código fuente completo para la función Editar sangrías y espac
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent se actualizará
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent se actualizará
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent se actualizará
+	format.CharacterUnitLeftIndent = 10;       // Se actualizará ParagraphFormat.LeftIndent.
+	format.CharacterUnitRightIndent = 10;      // Se actualizará ParagraphFormat.RightIndent.
+	format.CharacterUnitFirstLineIndent = 20;  // Se actualizará ParagraphFormat.FirstLineIndent.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore se actualizará
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter se actualizará
 
@@ -71,7 +71,7 @@ Con este código podrás cambiar el espaciado y las sangrías de un párrafo asi
 
 #### P: ¿Qué hace la función "Cambiar sangrías y espaciado de párrafos asiáticos" en Aspose.Words para .NET?
 
-R: La función "Cambiar sangrías y espaciado de párrafos asiáticos" en Aspose.Words para .NET le permite modificar las propiedades de espaciado y sangría de un párrafo asiático en un documento de Word. Puede ajustar los valores de sangría izquierda y derecha, sangría de primera línea, espacio antes y espacio después para controlar el diseño y la apariencia del párrafo.
+R: La función "Cambiar sangría y espaciado de párrafos asiáticos" en Aspose.Words para .NET le permite modificar las propiedades de espaciado y sangría de un párrafo asiático en un documento de Word. Puede ajustar los valores de sangría izquierda y derecha, sangría de primera línea, espacio antes y espacio después para controlar el diseño y la apariencia del párrafo.
 
 #### P: ¿Cómo cambio el espaciado y las sangrías de un párrafo asiático usando Aspose.Words para .NET?
 

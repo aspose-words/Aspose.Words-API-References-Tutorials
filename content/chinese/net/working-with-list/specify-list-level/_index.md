@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//根据 Microsoft Word 列表模板之一创建编号列表
+//根据 Microsoft Word 列表模板之一创建编号列表。
 //并将其应用于文档生成器的当前段落。
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-//基于 Microsoft Word 列表模板之一创建项目符号列表
+//根据 Microsoft Word 列表模板之一创建项目符号列表。
 //并将其应用于文档生成器的当前段落。
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 

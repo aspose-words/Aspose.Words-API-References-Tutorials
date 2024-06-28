@@ -64,7 +64,7 @@ doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rt
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
-### मैं UTF-8 पाठ पहचान को कैसे अक्षम करूँ?
+### मैं UTF-8 टेक्स्ट पहचान को कैसे अक्षम करूँ?
 
  UTF-8 पाठ पहचान को अक्षम करने के लिए, बस सेट करें`RecognizeUtf8Text` का विकल्प`false` अपना कॉन्फिगर करते समय`RtfLoadOptions` . यह कॉल करके किया जा सकता है`setRecognizeUtf8Text(false)`.
 

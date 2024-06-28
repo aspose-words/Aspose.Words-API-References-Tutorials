@@ -58,7 +58,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
  Các`Compare`phương pháp so sánh tài liệu A với tài liệu B và lưu các thay đổi vào tài liệu A. Bạn có thể chỉ định tên người dùng và ngày so sánh để tham khảo.
 
-### Mã nguồn mẫu cho Mục tiêu so sánh bằng Aspose.Words cho .NET
+### Mã nguồn mẫu cho So sánh mục tiêu bằng Aspose.Words cho .NET
 
 
 ```csharp
@@ -90,7 +90,7 @@ Trả lời: Để sử dụng Mục tiêu so sánh trong Aspose.Words cho .NET,
 1. Thiết lập môi trường phát triển của bạn với thư viện Aspose.Words.
 2. Thêm các tập hợp cần thiết vào dự án của bạn bằng cách tham khảo Aspose.Words.
 3.  Khởi tạo các tài liệu mà bạn muốn so sánh bằng cách sử dụng`Document` lớp học hoặc`DocumentBuilder` lớp học.
-4.  Định cấu hình các tùy chọn so sánh bằng cách tạo một`CompareOptions` đối tượng và các thuộc tính cài đặt như`IgnoreFormatting` Và`Target` (ví dụ,`ComparisonTargetType.New` cho mục tiêu so sánh).
+4.  Định cấu hình các tùy chọn so sánh bằng cách tạo một`CompareOptions` đối tượng và các thuộc tính cài đặt như`IgnoreFormatting` Và`Target` (ví dụ.,`ComparisonTargetType.New` cho mục tiêu so sánh).
 5.  Sử dụng`Compare` phương pháp trên một tài liệu, chuyển tài liệu khác và`CompareOptions` đối tượng làm tham số. Phương pháp này sẽ so sánh các tài liệu và lưu các thay đổi trong tài liệu đầu tiên.
 
 ####  Hỏi: Mục đích của việc này là gì?`Target` property in the `CompareOptions` class?

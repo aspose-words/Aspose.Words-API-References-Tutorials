@@ -19,7 +19,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 
 ## Stap 2: Open de bron- en doeldocumenten
 
- Open de bron- en doeldocumenten met behulp van de`Document` klasse constructeur. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+ Open de bron- en doeldocumenten met behulp van de`Document` klasse constructor. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
 
 ```csharp
 // Pad naar uw documentmap
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Stap 4: Plaats de DocumentBuilder
 
- Verplaats de`DocumentBuilder` naar het einde van het document met behulp van de`MoveToDocumentEnd` methode. Voeg een pagina-einde in om de bestaande inhoud van het ingevoegde document te scheiden.
+Verplaats de`DocumentBuilder` naar het einde van het document met behulp van de`MoveToDocumentEnd` methode. Voeg een pagina-einde in om de bestaande inhoud van het ingevoegde document te scheiden.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Stap 6: Sla het gewijzigde document op
 
- Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
+Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

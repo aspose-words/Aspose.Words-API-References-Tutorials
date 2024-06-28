@@ -123,7 +123,7 @@ public void addJapaneseAsEditingLanguages() throws Exception
 }
 ```
 
-편집 언어는 문서 처리에 중요한 역할을 합니다. Aspose.Words for Java를 사용하면 문서의 언어적 요구 사항에 맞게 편집 언어를 설정하고 사용자 정의할 수 있습니다.
+편집 언어는 문서 처리에 중요한 역할을 합니다. Aspose.Words for Java를 사용하면 문서의 언어적 요구에 맞게 편집 언어를 설정하고 사용자 정의할 수 있습니다.
 
 
 ## 결론

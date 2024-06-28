@@ -2,84 +2,153 @@
 title: 在邮件合并中插入文档
 linktitle: 在邮件合并中插入文档
 second_title: Aspose.Words 文档处理 API
-description: 了解如何在邮件合并期间使用 Aspose.Words for .NET 将文档插入到另一个文档中。
+description: 在此全面的分步教程中，了解如何使用 Aspose.Words for .NET 在邮件合并字段中插入文档。
 type: docs
 weight: 10
 url: /zh/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-在本教程中，我们将引导您了解如何使用 Aspose.Words for .NET 的“邮件合并期间插入文档”功能在邮件合并期间将文档插入到另一个文档中。请按照以下步骤了解源代码并执行文档插入。
+## 介绍
 
-## 第 1 步：加载主文档
+欢迎来到 Aspose.Words for .NET 的文档自动化世界！您是否想知道如何在邮件合并操作期间将文档动态插入主文档中的特定字段？嗯，您来对地方了。本教程将指导您逐步完成使用 Aspose.Words for .NET 在邮件合并字段中插入文档的过程。这就像拼图一样，每一块都完美地拼凑到位。那么，让我们深入了解一下吧！
 
-首先，指定文档的目录并将主文档加载到 Document 对象中。就是这样：
+## 先决条件
+
+在我们开始之前，请确保您具备以下条件：
+
+1.  Aspose.Words for .NET：您可以[点击这里下载最新版本](https://releases.aspose.com/words/net/)。如果您需要购买许可证，您可以这样做[这里](https://purchase.aspose.com/buy)。或者，您可以获得[临时执照](https://purchase.aspose.com/temporary-license/)或者尝试一下[免费试用](https://releases.aspose.com/).
+2. 开发环境：Visual Studio 或任何其他 C# IDE。
+3. C# 基础知识：熟悉 C# 编程将使本教程变得轻而易举。
+
+## 导入命名空间
+
+首先，您需要导入必要的名称空间。这些就像您项目的构建块。
 
 ```csharp
-//文档目录的路径。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+using System.Linq;
 ```
 
-## 步骤 2：配置邮件合并
+让我们将这个过程分解为可管理的步骤。每一步都将建立在前一步的基础上，从而引导您获得完整的解决方案。
 
-现在让我们配置邮件合并并指定字段合并回调以将一个文档插入另一个文档。就是这样：
+## 第 1 步：设置您的目录
 
-```csharp
-mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-```
-
-## 第 3 步：运行邮件合并
-
-我们将通过提供合并字段的名称和相应的数据来运行邮件合并。就是这样：
+在开始插入文档之前，您需要定义文档目录的路径。这是您的文档的存储位置。
 
 ```csharp
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-```
-
-### 使用 Aspose.Words for .NET 在邮件合并中插入文档的示例源代码
-
-以下是 Aspose.Words for .NET 的“在邮件合并中插入文档”功能的完整源代码：
-
-```csharp
-//文档目录的路径。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
+## 第2步：加载主文档
+
+接下来，您将加载主文档。该文档包含将插入其他文档的合并字段。
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+## 第三步：设置字段合并回调
+
+要处理合并过程，您需要设置一个回调函数。该函数将负责在指定的合并字段中插入文档。
+
+```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-//主文档中有一个名为“Document_1”的合并字段。
-//该字段的相应数据包含文档的完全限定路径。
-//应该将其插入到该字段中。
-mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
+```
 
+## 步骤 4：执行邮件合并
+
+现在是执行邮件合并的时候了。这就是奇迹发生的地方。您将指定合并字段以及应在此字段插入的文档。
+
+```csharp
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
+```
+
+## 第 5 步：保存文档
+
+邮件合并完成后，您将保存修改后的文档。这个新文档将在您想要的位置插入内容。
+
+```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-通过此代码，您将能够在邮件合并期间使用 Aspose.Words for .NET 将一个文档插入到另一个文档中。生成的文档将以新名称保存
+## 第 6 步：创建回调处理程序
 
+回调处理程序是一个对合并字段进行特殊处理的类。它加载字段值中指定的文档并将其插入到当前合并字段中。
+
+```csharp
+private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
+{
+    void IFieldMergingCallback.FieldMerging(FieldMergingArgs args)
+    {
+        if (args.DocumentFieldName == "Document_1")
+        {
+            DocumentBuilder builder = new DocumentBuilder(args.Document);
+            builder.MoveToMergeField(args.DocumentFieldName);
+
+            Document subDoc = new Document((string)args.FieldValue);
+            InsertDocument(builder.CurrentParagraph, subDoc);
+
+            if (!builder.CurrentParagraph.HasChildNodes)
+                builder.CurrentParagraph.Remove();
+
+            args.Text = null;
+        }
+    }
+}
+```
+
+## 第7步：插入文档
+
+此方法将指定文档插入到当前段落或表格单元格中。
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        foreach (Node srcNode in srcSection.Body)
+        {
+            if (srcNode.NodeType == NodeType.Paragraph)
+            {
+                Paragraph para = (Paragraph)srcNode;
+                if (para.IsEndOfSection && !para.HasChildNodes)
+                    continue;
+            }
+
+            Node newNode = importer.ImportNode(srcNode, true);
+            destinationParent.InsertAfter(newNode, insertionDestination);
+            insertionDestination = newNode;
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
+}
+```
 
 ## 结论
 
-在本教程中，我们探讨了如何使用 Aspose.Words for .NET 的“邮件合并期间插入文档”功能在邮件合并期间将文档插入到另一个文档中。通过配置邮件合并并提供必要的数据，您可以通过合并各种文档模板或部分来动态组合文档。 Aspose.Words for .NET 提供了一种灵活而强大的方法来管理复杂的文档生成场景，使其成为自动化文档创建和操作任务的宝贵工具。
+现在你就拥有了！您已使用 Aspose.Words for .NET 在邮件合并操作期间成功将文档插入到特定字段中。这一强大的功能可以为您节省大量的时间和精力，特别是在处理大量文档时。您可以将其视为拥有一位私人助理，为您处理所有繁重的工作。所以，继续尝试吧。快乐编码！
 
-### 常见问题解答
+## 常见问题解答
 
-#### 问：邮件合并时将一个文档插入另一个文档的目的是什么？
+### 我可以在不同的合并字段插入多个文档吗？
+是的你可以。只需在中指定适当的合并字段和相应的文档路径即可`MailMerge.Execute`方法。
 
-答：在邮件合并过程中将一个文档插入到另一个文档中，您可以根据合并过程中提供的数据动态组合不同的文档模板或部分。当您想要通过将各种预定义模板或部分合并到最终文档中来组装复杂文档时，此功能特别有用。
+### 插入文档的格式是否可以与主文档不同？
+绝对地！您可以使用`ImportFormatMode`中的参数`NodeImporter`来控制格式。
 
-#### 问：如何在邮件合并过程中使用 Aspose.Words for .NET 将文档插入到另一个文档中？
+### 如果合并字段名称是动态的怎么办？
+您可以通过将动态合并字段名称作为参数传递给回调处理程序来处理动态合并字段名称。
 
-答：要在邮件合并过程中使用 Aspose.Words for .NET 将文档插入到另一个文档中，请按照下列步骤操作：
-1. 将作为基础的主文档加载到 Document 对象中。
-2. 配置邮件合并并指定字段合并回调来处理文档插入。
-3. 使用合并字段的名称和相应的数据（要插入的文档的路径）运行邮件合并。
+### 我可以对不同的文件格式使用此方法吗？
+是的，Aspose.Words 支持各种文件格式，包括 DOCX、PDF 等。
 
-#### 问：如何自定义邮件合并期间的插入行为？
-
-答：要自定义邮件合并期间的插入行为，您可以通过继承 IFieldMergingCallback 接口来实现自定义 FieldMergingCallback。这使您可以根据您的具体要求控制文档的插入和合并方式。
-
-#### 问：邮件合并时可以插入多个文档吗？
-
-答：是的，您可以通过为每个合并字段提供适当的数据，在邮件合并期间插入多个文档。对于每个需要文档插入的合并字段，指定相应文档的路径作为数据。
-
-
+### 如何处理文档插入过程中的错误？
+在回调处理程序中实现错误处理以管理可能发生的任何异常。

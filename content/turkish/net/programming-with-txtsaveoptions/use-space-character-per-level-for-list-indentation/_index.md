@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Bu örnekte, yeni bir belge oluşturuyoruz ve metin eklemek ve üç girinti düzeyine sahip bir liste oluşturmak için DocumentBuilder'ı kullanıyoruz. Listeye üç öğe ekledik; her öğe ek bir düzey girintili olacak şekilde.
+Bu örnekte, yeni bir belge oluşturuyoruz ve metin eklemek ve üç girinti düzeyine sahip bir liste oluşturmak için DocumentBuilder'ı kullanıyoruz. Listeye üç öğe ekledik; her öğe ek bir seviyeyi gösteriyordu.
 
 ## Liste girintisi için düzey başına bir boşluk karakteri kullanma
 

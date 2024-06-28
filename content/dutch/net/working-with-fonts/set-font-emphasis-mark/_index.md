@@ -16,14 +16,14 @@ Zorg ervoor dat u over de volgende items beschikt voordat u begint:
 - De Aspose.Words-bibliotheek voor .NET die in uw project is geïnstalleerd
 
 ## Stap 1: Definieer de documentmap
- Begin met het instellen van het mappad naar de locatie van uw Word-document. Vervangen`"YOUR DOCUMENT DIRECTORY"` in de code met het juiste pad.
+Begin met het instellen van het mappad naar de locatie van uw Word-document. Vervangen`"YOUR DOCUMENT DIRECTORY"` in de code met het juiste pad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Stap 2: Maak het document en pas het aan
- Maak een exemplaar van de`Document` klasse en een geassocieerde`DocumentBuilder` om de documentinhoud op te bouwen. Gebruik de`Font.EmphasisMark` eigenschap waarop u de nadrukstijl van het lettertype wilt instellen`EmphasisMark.UnderSolidCircle` . Gebruik dan de`Write` En`Writeln` methoden van de`DocumentBuilder` om tekst toe te voegen met de opgegeven nadruk op het lettertype.
+ Maak een exemplaar van de`Document` klasse en een geassocieerde`DocumentBuilder` om de documentinhoud op te bouwen. Gebruik de`Font.EmphasisMark` eigenschap om de nadrukstijl van het lettertype in te stellen`EmphasisMark.UnderSolidCircle` . Gebruik dan de`Write` En`Writeln` methoden van de`DocumentBuilder` om tekst toe te voegen met de nadruk op het opgegeven lettertype.
 
 ```csharp
 Document document = new Document();

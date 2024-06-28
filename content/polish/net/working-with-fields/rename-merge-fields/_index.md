@@ -88,7 +88,7 @@ Wykonaj poniższe kroki, aby zmienić nazwę pól scalania w dokumencie przy uż
 
 #### P: Jak mogę zmienić nazwę scalonych pól w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
 
- Odp.: Aby zmienić nazwę scalonych pól w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz przeglądać pola w dokumencie za pomocą`FieldMergingArgs` klasę i użyj`FieldMergingArgs.FieldName` metoda zmiany nazwy pola.
+ Odp.: Aby zmienić nazwę scalonych pól w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz przeglądać pola w dokumencie za pomocą`FieldMergingArgs` klasę i użyj`FieldMergingArgs.FieldName` metoda zmiany nazw pól.
 
 #### P: Czy można zmienić nazwy tylko niektórych scalonych pól w dokumencie programu Word za pomocą Aspose.Words dla .NET?
 

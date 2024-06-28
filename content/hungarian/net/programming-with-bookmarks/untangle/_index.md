@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## 2. lépés: Szülősorok lekérése a könyvjelzőkből
 
- Használjuk a`GetAncestor` módszerek a könyvjelző kezdő és záró csomópontjainak szülősorainak lekéréséhez:
+ Használjuk a`GetAncestor` Módszerek a könyvjelző kezdő és záró csomópontjainak szülősorainak lekérésére:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
@@ -84,7 +84,7 @@ V: Igen, a Untangle funkció úgy módosítja az eredeti dokumentumot, hogy a k�
 
 #### K: Hogyan távolíthatom el a beágyazott könyvjelzőket más típusú dokumentumelemekben, például szakaszokban vagy bekezdésekben?
 
-V: A jelen cikkben bemutatott Untangle funkció kifejezetten a szomszédos táblázatsorokban lévő beágyazott könyvjelzők kibontására szolgál. Ha más dokumentumelemekben szeretné szétválasztani a beágyazott könyvjelzőket, akkor ennek megfelelően módosítania kell a kódot, és megfelelő módszereket kell használnia a kívánt elemek eléréséhez.
+V: A jelen cikkben bemutatott Untangle funkció kifejezetten a szomszédos táblázatsorokban lévő beágyazott könyvjelzők kibontására szolgál. Ha szeretné szétválasztani a beágyazott könyvjelzőket más dokumentumelemekben, akkor ennek megfelelően módosítania kell a kódot, és megfelelő módszereket kell használnia a kívánt elemek eléréséhez.
 
 #### K: Vannak más módszerek a beágyazott könyvjelzők feloldására egy Word-dokumentumban az Aspose.Words for .NET használatával?
 

@@ -14,7 +14,7 @@ Words Processing with Markdown proporciona un recurso integral para aprender a t
 | Título | Descripción |
 | --- | --- |
 | [Texto en negrita](./bold-text/) | Aprenda a poner texto en negrita con Aspose.Words para la guía paso a paso de .NET. |
-| [Texto en cursiva](./italic-text/) | Aprenda a poner texto en cursiva con Aspose.Words para la guía paso a paso de .NET. |
+| [Texto italiano](./italic-text/) | Aprenda a poner texto en cursiva con Aspose.Words para la guía paso a paso de .NET. |
 | [Tachado](./strikethrough/) | Aprenda a aplicar el estilo de texto tachado con la guía paso a paso de Aspose.Words para .NET. |
 | [Código en línea](./inline-code/) | Aprenda a insertar código con Aspose.Words para la guía paso a paso de .NET. |
 | [Enlace automático](./autolink/) | Aprenda cómo insertar un enlace automático con Aspose.Words para la guía paso a paso de .NET. |
@@ -22,7 +22,7 @@ Words Processing with Markdown proporciona un recurso integral para aprender a t
 | [Imagenn](./image/) | Aprenda a insertar y personalizar imágenes con Aspose.Words para .NET Guía paso a paso. |
 | [Regla horizontal](./horizontal-rule/) | Aprenda cómo insertar una regla horizontal con Aspose.Words para .NET Guía paso a paso. |
 | [Título](./heading/) | Aprenda a utilizar el encabezado con Aspose.Words para la guía paso a paso de .NET. |
-| [Título de texto](./setext-heading/) | Aprenda a utilizar los encabezados de Setext para formatear sus documentos con la guía paso a paso de Aspose.Words para .NET. |
+| [Título Setex](./setext-heading/) | Aprenda a utilizar los encabezados de Setext para formatear sus documentos con la guía paso a paso de Aspose.Words para .NET. |
 | [Código sangrado](./indented-code/) | Aprenda a utilizar código con sangría con Aspose.Words para la guía paso a paso de .NET. |
 | [Código vallado](./fenced-code/) | Aprenda a utilizar la función de código delimitado con la guía paso a paso de Aspose.Words para .NET. |
 | [Cita](./quote/) | Aprenda a utilizar la cotización con Aspose.Words para la guía paso a paso de .NET. |

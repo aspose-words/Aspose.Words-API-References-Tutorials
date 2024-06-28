@@ -81,7 +81,7 @@ A digitális aláírás egy titkosítási technika, amely ellenőrzi a digitáli
 
 ### Használhatok önaláírt tanúsítványt digitális aláírásokhoz?
 
-Igen, használhat önaláírt tanúsítványt, de előfordulhat, hogy nem nyújt ugyanolyan szintű megbízhatóságot, mint egy megbízható tanúsító hatóságtól (CA) származó tanúsítvány.
+Igen, használhat önaláírt tanúsítványt, de előfordulhat, hogy nem nyújt ugyanolyan szintű megbízhatóságot, mint egy megbízható tanúsító hatóság (CA) tanúsítványa.
 
 ### Az Aspose.Words for Java kompatibilis más dokumentumformátumokkal?
 

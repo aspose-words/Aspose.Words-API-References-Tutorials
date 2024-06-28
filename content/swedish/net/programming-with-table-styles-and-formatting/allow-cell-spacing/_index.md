@@ -32,7 +32,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
 ## Steg 4: Aktivera cellavstånd
- Nu kan vi aktivera cellavstånd genom att ställa in`AllowCellSpacing` egenskap av tabellen till`true`. Den här egenskapen avgör om tabellen kan ha cellavstånd.
+ Nu kan vi aktivera cellavstånd genom att ställa in`AllowCellSpacing` egenskap hos tabellen till`true`. Den här egenskapen avgör om tabellen kan ha cellavstånd.
 
 ```csharp
 table.AllowCellSpacing = true;

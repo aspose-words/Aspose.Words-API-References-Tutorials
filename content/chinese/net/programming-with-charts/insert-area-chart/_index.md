@@ -17,7 +17,7 @@ url: /zh/net/programming-with-charts/insert-area-chart/
 - 已安装 Aspose.Words for .NET 库。您可以使用 NuGet 包管理器下载并安装它。
 - 将保存输出文档的文档目录路径。
 
-## 步骤 2：创建一个新文档并插入图表
+## 步骤2：创建一个新文档并插入图表。
 
 创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
@@ -98,7 +98,7 @@ Aspose.Words for .NET 为 Word 文档中的图表进行文字处理提供了强�
 Aspose.Words for .NET 是一个功能强大的文档处理库，使开发人员能够在 .NET 应用程序中以编程方式创建、修改和转换 Word 文档。它提供了一套全面的用于文字处理的 API，其中包含文档元素，包括图表、段落、表格等。
 
 #### Q2。如何安装 Aspose.Words for .NET？
-要安装 Aspose.Words for .NET，您可以使用 Visual Studio 中的 NuGet 包管理器将该库直接安装到您的项目中。只需在 NuGet 包管理器中搜索“Aspose.Words”并安装该包即可。
+要安装 Aspose.Words for .NET，您可以使用 Visual Studio 中的 NuGet 包管理器将该库直接安装到您的项目中。只需在 NuGet 包管理器中搜索“Apose.Words”并安装该包即可。
 
 #### Q3。我可以自定义面积图的外观吗？
 是的，使用 Aspose.Words for .NET，您可以自定义面积图外观的各个方面。您可以修改图表标题、系列颜色、轴标签和图表区域格式等属性。该库提供了一组丰富的 API 来控制图表的视觉元素并创建适合您需求的自定义外观。

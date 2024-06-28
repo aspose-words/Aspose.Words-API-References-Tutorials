@@ -2,7 +2,7 @@
 title: Imagem
 linktitle: Imagem
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como inserir e personalizar imagens com o guia passo a passo do Aspose.Words for .NET.
+description: Aprenda como inserir e personalizar imagens com o guia passo a passo Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /pt/net/working-with-markdown/image/
@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Passo 2: Inserindo uma imagem
 
- Podemos inserir uma imagem usando o`Shape` classe e especificando o tipo de imagem, aqui`ShapeType.Image` Também definimos o tipo de quebra da imagem como`WrapType.Inline`.
+ Podemos inserir uma imagem usando o`Shape` classe e especificando o tipo de imagem, aqui`ShapeType.Image` . Também definimos o tipo de quebra da imagem como`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ Parabéns! Agora você aprendeu como usar o recurso de imagens com Aspose.Words 
 
 #### P: Posso inserir uma imagem de um URL no Aspose.Words?
 
- R: Sim, você pode inserir uma imagem de um URL no Aspose.Words. Você pode usar o mesmo`InsertImage` e especifique o URL da imagem em vez do caminho do arquivo local.
+ R: Sim, você pode inserir uma imagem de um URL no Aspose.Words. Você pode usar o mesmo`InsertImage` especifique o URL da imagem em vez do caminho do arquivo local.
 
 #### P: Como posso redimensionar uma imagem no Aspose.Words?
 
@@ -69,7 +69,7 @@ Parabéns! Agora você aprendeu como usar o recurso de imagens com Aspose.Words 
 
 #### P: Posso aplicar filtros a imagens no Aspose.Words?
 
-R: Sim, você pode aplicar filtros a imagens no Aspose.Words. Por exemplo, você pode aplicar um filtro de desfoque a uma imagem usando o`ApplyGaussianBlur` método do`Shape` objeto.
+ R: Sim, você pode aplicar filtros a imagens no Aspose.Words. Por exemplo, você pode aplicar um filtro de desfoque a uma imagem usando o`ApplyGaussianBlur` método do`Shape` objeto.
 
 #### P: Como posso substituir uma imagem por outra no Aspose.Words?
 

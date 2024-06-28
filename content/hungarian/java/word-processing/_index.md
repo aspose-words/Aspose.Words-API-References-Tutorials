@@ -34,7 +34,7 @@ Fedezze fel az Aspose.Words for Java erejét a különféle dokumentumformátumo
 ### [Dokumentumbetöltés optimalizálása HTML, RTF és TXT opciókkal](./optimizing-document-loading-options/)
 Optimalizálja a dokumentumbetöltést az Aspose.Words for Java segítségével. Növelje a HTML, RTF és TXT fájlok sebességét és hatékonyságát. Növelje a felhasználói élményt még ma!
 ### [Hatékony dokumentummentés DOC, HTML és képbeállításokkal](./efficient-document-saving-options/)
-Tanuljon meg hatékony dokumentummentést az Aspose.Words for Java segítségével. Ez a lépésenkénti útmutató a DOC, HTML és képbeállításokat ismerteti, és fejleszti dokumentumkezelési készségeit
+Tanuljon meg hatékony dokumentummentést az Aspose.Words for Java segítségével. Ez a lépésenkénti útmutató a DOC, HTML és képbeállításokat ismerteti, és fejleszti dokumentumkezelési készségeit.
 ### [A dokumentumok speciális mentési beállításainak elsajátítása](./mastering-advanced-save-settings/)
 Sajátítsa el a speciális dokumentummentési beállításokat az Aspose.Words for Java segítségével. Tanuljon meg könnyedén formázni, védeni, optimalizálni és automatizálni a dokumentumok létrehozását.
 ### [Dokumentumtartalom kezelése tisztítással, mezőkkel és XML adatokkal](./manipulating-document-content/)

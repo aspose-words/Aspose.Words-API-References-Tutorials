@@ -2,176 +2,156 @@
 title: Word Belgesinde Yer İşaretli İçeriği Gizle'yi Göster
 linktitle: Word Belgesinde Yer İşaretli İçeriği Gizle'yi Göster
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak word belgesindeki yer imi içeriğini nasıl göstereceğinizi veya gizleyeceğinizi öğrenin.
+description: Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde yer imlerine eklenmiş içeriği dinamik olarak nasıl göstereceğinizi veya gizleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-Bu makalede, Aspose.Words for .NET kütüphanesinde Yer İşaretli İçeriği Gizle Göster fonksiyonunun nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, verileri birleştirirken belirli bir koşula göre word belgesindeki bir yer işaretinin içeriğini göstermenize veya gizlemenize olanak tanır.
+## giriiş
+
+Selam! Belirli koşullara bağlı olarak bir Word belgesindeki belirli içeriğin görünürlüğünü hiç kontrol etmek istediniz mi? Aspose.Words for .NET ile, yer imlerine eklenmiş içeriği yalnızca birkaç satır kodla dinamik olarak gösterebilir veya gizleyebilirsiniz. Bu eğitimde, kodun her bir bölümünü anladığınızdan emin olmak için size süreç boyunca adım adım yol göstereceğim. Sonunda, Word belgelerindeki yer işaretlerini değiştirme konusunda uzman olacaksınız. Başlayalım!
 
 ## Önkoşullar
 
-- C# dili hakkında temel bilgi.
-- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
+Eğiticiye dalmadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-## 1. Adım: Yer işaretini alma
+1. Temel C# Bilgisi: C# sözdizimi ve kavramları konusunda rahat olmalısınız.
+2.  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/) . Satın almaya hazır değilseniz, bir tane ile başlayabilirsiniz.[ücretsiz deneme](https://releases.aspose.com/).
+3. Visual Studio: En yeni sürümlerden herhangi biri çalışacaktır ancak en son sürümün kullanılması önerilir.
+4. .NET Framework: Makinenizde kurulu olduğundan emin olun.
 
- biz kullanıyoruz`Bookmarks` İçeriği göstermek veya gizlemek istediğimiz belirli yer imini almak için belge aralığının özelliği:
+başlamaya hazır mısın? Harika! Gerekli ad alanlarını içe aktararak başlayalım.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words for .NET'i kullanmak için gerekli ad alanlarını içe aktarmamız gerekir. Bu adım, kullanacağımız tüm sınıflara ve yöntemlere erişebilmemizi sağlar.
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## 2. Adım: Birleştirme alanlarını ekleme
+Bu ad alanları, Word belgeleriyle çalışmak ve içeriklerini değiştirmek için çok önemlidir.
 
- Bir belge oluşturucu kullanıyoruz`DocumentBuilder` gerekli birleştirme alanlarını eklemek için. Bu birleştirme alanları, yer imi içeriğinin değerine bağlı olarak yer imi içeriğini göstermek veya gizlemek için bir koşul belirleyecektir.`showHide` değişken:
+## Adım 1: Belgeyi Ayarlama
+
+Öncelikle yeni bir Word belgesi ve belge oluşturucu oluşturalım. Belge oluşturucu, belge içindeki içeriği kolayca eklememize ve değiştirmemize yardımcı olur.
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## 3. Adım: Yer imi içeriğini taşıma
+Bu adımda yeni bir belge ve belge oluşturucuyu başlatıyoruz. Bu, daha sonraki işlemler için ortamımızı hazırlar.
 
-Yer iminin içeriğinde dolaşıyoruz ve görünecek şekilde hareket ettiriyoruz
+## 2. Adım: Yer İmlerine Eklenen İçerik Ekleme
 
-yer iminden önce gelir. Bu, belirtilen koşula göre içeriğin gösterilmesini veya gizlenmesini kontrol edecektir:
+Daha sonra belgeye biraz içerik ekleyeceğiz ve çevresinde bir yer işareti oluşturacağız. Bu yer imi, içeriği tanımlamamıza ve değiştirmemize yardımcı olacaktır.
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ Burada, yer imlerine eklenen içeriğin öncesine ve sonrasına bir miktar metin ekliyoruz.`StartBookmark` Ve`EndBookmark` yöntemler yer iminin sınırlarını tanımlar.
+
+## 3. Adım: Koşullu Alan Ekleme
+
+Yer imlerine eklenen içeriğin görünürlüğünü kontrol etmek için koşullu bir alan kullanacağız. Bu alan bir koşulu kontrol edecek ve içeriği buna göre görüntüleyecek veya gizleyecektir.
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+Bu adımda yer iminin değerini kontrol eden bir IF alanı ekliyoruz. Değer "true" ise "Görünür" olarak görüntülenir; aksi takdirde "Gizli" ifadesi görüntülenir.
+
+## Adım 4: Düğümleri Yeniden Düzenleme
+
+Daha sonra, koşullu mantığın yer imlerine eklenen içeriğe doğru şekilde uygulanmasını sağlamak için düğümleri yeniden düzenlememiz gerekir.
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## 4. Adım: Yer imi içeriğinin geri kalanını taşıma
-
-Yer imi içeriğinin geri kalanını, yer iminin son düğümünü ekleme noktası olarak kullanarak yer iminden sonra taşırız:
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## Adım 5: Birleştirmenin gerçekleştirilmesi
+Burada, koşulun yer imlerine eklenen içeriği uygun şekilde kapsadığından emin olmak için düğümleri hareket ettiririz.
 
- biz kullanıyoruz`Execute` belgenin yöntemi`s `Posta birleştirme` object to execute the merge using the bookmark name and the value of the `showHide` değişkeni:
+## Adım 5: Adres Mektup Birleştirmeyi Yürütme
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### Aspose.Words for .NET kullanarak Yer İşaretli İçeriği Gösterme ve Gizleme için örnek kaynak kodu
-
-Aspose.Words for .NET kullanarak yer imi içeriğini göstermeyi veya gizlemeyi gösteren Kaynak kodunun tam örneği:
+Son olarak, yer işaretinin değerini ayarlamak ve içeriğin gösterilmesi mi yoksa gizlenmesi mi gerektiğine karar vermek için adres-mektup birleştirme işlemi gerçekleştireceğiz.
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MERGEFIELD yer imi}" = "true" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+Bu adım, yer imi değerini "true" olarak ayarlar, bu da içeriğin durumumuza göre görünür olmasını sağlar.
+
+## Adım 6: Belgeyi Kaydetme
+
+Tüm manipülasyonlardan sonra son adım, değiştirilen belgeyi kaydetmektir.
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+Burada değişiklikleri belirtmek için belgeyi açıklayıcı bir dosya adıyla kaydediyoruz.
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Yer İşaretli İçeriği Göster Göster Gizle özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Verileri birleştirirken belirli bir duruma göre yer işaretinin içeriğini göstermek veya gizlemek için adım adım bir kılavuz izledik.
+ Ve bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesinde yer imlerine eklenmiş içeriği nasıl göstereceğinizi veya gizleyeceğinizi başarıyla öğrendiniz. Bu eğitimde belge oluşturma, yer işaretleri ekleme, koşullu alanlar ekleme, düğümleri yeniden düzenleme ve adres-mektup birleştirme yürütme konuları ele alındı. Aspose.Words çok sayıda özellik sunar; bu nedenle, keşfetmekten çekinmeyin.[API belgeleri](https://reference.aspose.com/words/net/) daha gelişmiş yetenekler için.
 
-### Word belgesinde yer imlerine eklenen içeriği gizlemeyi gösteren SSS'ler
+## SSS
 
-#### S: Aynı koşulu, aynı belgedeki birden fazla yer imi için kullanabilir miyim?
+### 1. Aspose.Words for .NET nedir?
 
-C: Evet, aynı koşulu aynı belgedeki birden fazla yer imi için kullanabilirsiniz. Yer imi adını ve isteğe bağlı olarak yer imi değerini ayarlayarak her yer imi için 2-5 arasındaki adımları tekrarlayın.`showhide` gerektiği gibi değişken.
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır. Belge otomasyonu görevleri için yaygın olarak kullanılır.
 
-#### S: Yer imi içeriğini göstermek veya gizlemek için nasıl daha fazla koşul ekleyebilirim?
+### 2. Aspose.Words for .NET'i ücretsiz kullanabilir miyim?
 
- C: Daha fazla koşul eklemek için aşağıdaki gibi mantıksal operatörleri kullanabilirsiniz:`AND` Ve`OR` 2. adımdaki birleştirme alanlarını ekleme kodunda. Ek koşullar eklemek için aşağıdaki koddaki koşulu düzenleyin:
+ Aspose.Words for .NET'i kullanarak deneyebilirsiniz.[ücretsiz deneme](https://releases.aspose.com/). Uzun süreli kullanım için lisans satın almanız gerekir.
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. Bir yer iminin diğer özelliklerini nasıl değiştirebilirim?
 
-#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini nasıl silebilirim?
+ Aspose.Words, bir yer iminin metni ve konumu gibi çeşitli özelliklerini değiştirmenize olanak sağlar. Bakın[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
 
- C: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini kaldırmak için şu komutu kullanabilirsiniz:`Remove` gelen yöntem`Bookmarks` belge aralığının toplanması. Belirli bir yer imini silmek için örnek kod:
+### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+adresini ziyaret ederek destek alabilirsiniz.[Aspose destek forumu](https://forum.aspose.com/c/words/8).
 
-#### S: Aspose.Words kütüphanesi ücretsiz mi?
+### 5. Aspose.Words for .NET ile diğer içerik türlerini değiştirebilir miyim?
 
- C: Aspose.Words kütüphanesi ticari bir kütüphanedir ve projelerinizde kullanmak için geçerli bir lisans gerektirir. Kontrol edebilirsin[Aspose.Words for .NET API referansları](https://reference.aspose.com/words/net/) Lisanslama seçenekleri ve fiyatlandırma hakkında daha fazla bilgi edinmek için.
-
-#### S: .NET'te Word belgeleriyle Kelime İşleme için kullanılabilen başka kitaplıklar var mı?
-
-C: Evet, .NET'te Word belgeleriyle Kelime İşleme için Open XML SDK ve GemBox.Document gibi başka kitaplıklar da mevcuttur. Özel ihtiyaçlarınıza ve tercihlerinize göre Aspose.Words'e alternatif olarak bu kütüphaneleri inceleyebilirsiniz.
+Evet, Aspose.Words for .NET; metin, görseller, tablolar ve daha fazlası dahil olmak üzere çeşitli içerik işleme türlerini destekler.

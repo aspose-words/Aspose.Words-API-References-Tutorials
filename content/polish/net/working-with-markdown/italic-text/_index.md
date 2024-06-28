@@ -1,6 +1,6 @@
 ---
-title: Tekst kursywą
-linktitle: Tekst kursywą
+title: Tekst włoski
+linktitle: Tekst włoski
 second_title: Aspose.Words API do przetwarzania dokumentów
 description: Dowiedz się, jak pisać kursywą za pomocą Aspose.Words for .NET Przewodnik krok po kroku.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Użyj narzędzia do tworzenia dokumentów, aby dodać treść do dokumentu.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Ustaw tekst kursywą.
+// Utwórz tekst w języku włoskim.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
@@ -46,7 +46,7 @@ Gratulacje! Nauczyłeś się teraz, jak używać funkcji kursywy w Aspose.Words 
 
 #### P: Jak mogę zastosować kursywę w Aspose.Words?
 
-Odp.: Aby zastosować kursywę w Aspose.Words, możesz użyć metody`Font.Italic` własność`Run` obiekt. Możesz ustawić tę właściwość na`true` pochylić określony tekst. Możesz na przykład użyć`run.Font.Italic=true` pochylić tekst zawarty w`Run` obiekt.
+Odp.: Aby zastosować kursywę w Aspose.Words, możesz użyć metody`Font.Italic` własność`Run`obiekt. Możesz ustawić tę właściwość na`true` pochylić określony tekst. Możesz na przykład użyć`run.Font.Italic=true` pochylić tekst zawarty w`Run` obiekt.
 
 #### P: Czy można zastosować kursywę kilka fragmentów tekstu w tym samym akapicie?
 

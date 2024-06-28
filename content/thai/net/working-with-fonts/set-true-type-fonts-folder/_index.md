@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสารที่จะแสดงผล
- ถัดไป คุณต้องโหลดเอกสารเพื่อแสดงผลโดยใช้`Document` ระดับ. อย่าลืมระบุเส้นทางเอกสารที่ถูกต้อง
+ ถัดไป คุณต้องโหลดเอกสารเพื่อแสดงผลโดยใช้`Document` ชั้นเรียน อย่าลืมระบุเส้นทางเอกสารที่ถูกต้อง
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -34,7 +34,7 @@ doc.FontSettings = fontSettings;
 ```
 
 ## ขั้นตอนที่ 4: บันทึกเอกสารที่แสดงผล
- สุดท้าย คุณสามารถบันทึกเอกสารที่แสดงผลลงในไฟล์ได้โดยใช้`Save()` วิธีการของ`Document` ระดับ. อย่าลืมระบุเส้นทางและชื่อไฟล์ที่ถูกต้อง
+ สุดท้าย คุณสามารถบันทึกเอกสารที่แสดงผลลงในไฟล์ได้โดยใช้`Save()` วิธีการของ`Document` ชั้นเรียน อย่าลืมระบุเส้นทางและชื่อไฟล์ที่ถูกต้อง
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 // โปรดทราบว่าการตั้งค่านี้จะแทนที่แหล่งแบบอักษรเริ่มต้นใดๆ ที่กำลังค้นหาตามค่าเริ่มต้น ตอนนี้จะค้นหาเฉพาะโฟลเดอร์เหล่านี้เท่านั้น
 // แบบอักษรเมื่อเรนเดอร์หรือฝังแบบอักษร หากต้องการเพิ่มแหล่งแบบอักษรพิเศษในขณะที่เก็บแหล่งแบบอักษรของระบบไว้ ให้ใช้ทั้ง FontSettings.GetFontSources และ
-// FontSettings.SetFontSources แทน
+// การตั้งค่าแบบอักษร SetFontSources แทน
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
 // ตั้งค่าแบบอักษร
 doc.FontSettings = fontSettings;

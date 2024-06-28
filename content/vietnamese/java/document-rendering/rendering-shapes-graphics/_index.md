@@ -165,4 +165,4 @@ shape.setFillColor(Color.GREEN);
 
 ### Làm cách nào để sắp xếp các hình dạng theo một thứ tự cụ thể?
 
- Bạn có thể kiểm soát thứ tự của các hình bằng thuộc tính Z-order. Đặt`ZOrder` thuộc tính của một hình để xác định vị trí của nó trong chồng các hình. Giá trị thấp hơn được gửi ra phía sau, trong khi giá trị cao hơn được đưa ra phía trước.
+ Bạn có thể kiểm soát thứ tự của các hình bằng thuộc tính Z-order. Đặt`ZOrder` thuộc tính của một hình để xác định vị trí của nó trong chồng các hình. Các giá trị thấp hơn được gửi ra phía sau, trong khi các giá trị cao hơn được đưa ra phía trước.

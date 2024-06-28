@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## Langkah 3: Menyesuaikan Format Poin
 
-Kita dapat menyesuaikan format poin dengan mengakses properti`ListFormat.List.ListLevels[0]`. Dalam contoh ini, kita menggunakan tanda hubung "-" sebagai tanda peluru.
+ Kita dapat menyesuaikan format poin dengan mengakses properti`ListFormat.List.ListLevels[0]`. Dalam contoh ini, kita menggunakan tanda hubung "-" sebagai tanda peluru.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

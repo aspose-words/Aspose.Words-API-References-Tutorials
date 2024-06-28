@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Certifique-se de substituir "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho real para o diretório de documentos.
 
 ## Etapa 3: Inserindo a tabela do HTML
-seguir, inseriremos a tabela no documento usando o código HTML. Use o seguinte código:
+A seguir, inseriremos a tabela no documento usando o código HTML. Use o seguinte código:
 
 ```csharp
 builder.InsertHtml("<table>" +

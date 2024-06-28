@@ -11,7 +11,7 @@ url: /de/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess zum Zulassen von Zellabständen in Tabellen mithilfe von Aspose.Words für .NET. Wir erklären den C#-Quellcode, der diese Aufgabe erfüllt, und stellen einen umfassenden Leitfaden zur Verfügung, der Ihnen hilft, ihn zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials werden Sie ein klares Verständnis dafür haben, wie Sie die Tabellenformatierung in Ihren Word-Dokumenten mit Aspose.Words für .NET bearbeiten.
 
 ## Schritt 1: Legen Sie das Dokumentverzeichnis fest
-Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Dies ist der Ort, an dem Ihr Word-Dokument gespeichert ist. Ersetzen Sie „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad.
+Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Dies ist der Ort, an dem Ihr Word-Dokument gespeichert ist. Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ durch den entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/join-and-append-documents/append-with-import-format-options/
 ---
 
-Ez az oktatóanyag elmagyarázza, hogyan használható az Aspose.Words for .NET egyik dokumentum tartalmának a másikhoz importálási formátumbeállításokkal történő hozzáfűzésére. A mellékelt forráskód bemutatja, hogyan kell megnyitni a forrás- és céldokumentumot, megadni az importálási formátumbeállításokat, és hogyan kell hozzáfűzni a forrásdokumentumot a céldokumentumhoz.
+Ez az oktatóanyag elmagyarázza, hogyan használható az Aspose.Words for .NET egyik dokumentum tartalmának a másikhoz importálási formátumbeállításokkal történő hozzáfűzésére. A mellékelt forráskód bemutatja a forrás- és céldokumentumok megnyitását, az importálási formátumbeállítások megadását, valamint a forrásdokumentum hozzáfűzését a céldokumentumhoz.
 
 ## 1. lépés: Állítsa be a projektet
 
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 
 ## 5. lépés: Mentse el a céldokumentumot
 
- Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
@@ -64,7 +64,7 @@ Ezzel az Aspose.Words for .NET használatával befejeződik egy dokumentum impor
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 	// Adja meg, hogy ha a számozás ütközik a forrás- és a céldokumentumban,
-	//akkor a forrásdokumentumból származó számozás kerül felhasználásra.
+	// akkor a forrásdokumentumból származó számozás kerül felhasználásra.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

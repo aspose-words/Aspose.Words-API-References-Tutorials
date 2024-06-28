@@ -91,7 +91,7 @@ doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 Door deze stappen te volgen, kunt u eenvoudig onbeperkte bewerkbare gebieden in uw Word-document maken met Aspose.Words voor .NET.
 
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u onbeperkt bewerkbare gebieden in een Word-document kunt maken met Aspose.Words voor .NET. Door de aangegeven stappen te volgen, kunt u specifieke gebieden binnen het document definiëren waar gebruikers de inhoud vrijelijk kunnen bewerken terwijl de rest van het document alleen-lezen blijft. Aspose.Words voor .NET biedt krachtige functies voor documentbeveiliging en aanpassing, waardoor u controle krijgt over de bewerkingsmogelijkheden van uw Word-documenten.
+In deze zelfstudie hebben we geleerd hoe u onbeperkt bewerkbare gebieden in een Word-document kunt maken met Aspose.Words voor .NET. Door de gegeven stappen te volgen, kunt u specifieke gebieden binnen het document definiëren waar gebruikers de inhoud vrijelijk kunnen bewerken terwijl de rest van het document alleen-lezen blijft. Aspose.Words voor .NET biedt krachtige functies voor documentbeveiliging en aanpassing, waardoor u controle krijgt over de bewerkingsmogelijkheden van uw Word-documenten.
 
 ### Veelgestelde vragen over onbeperkt bewerkbare gebieden in een Word-document
 

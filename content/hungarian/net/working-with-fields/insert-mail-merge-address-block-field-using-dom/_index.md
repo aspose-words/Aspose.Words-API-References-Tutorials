@@ -38,7 +38,7 @@ builder. MoveTo(para);
 
 ## 4. lépés: A Körlevél-címblokk mező beszúrása
 
- A DocumentBuildert használjuk`InsertField()` metódussal egy körlevél-címblokk mezőt illeszthet be a bekezdésbe.
+ A DocumentBuildert használjuk`InsertField()` metódussal egy körlevél címblokk mezőt illeszthet be a bekezdésbe.
 
 ```csharp
 FieldAddressBlock field = (FieldAddressBlock)builder.InsertField(FieldType.FieldAddressBlock, false);

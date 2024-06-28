@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ebben a lépésben létrehozunk egy újat`Document` objektum és kapcsolódó`DocumentBuilder` tárgy.
+Ebben a lépésben létrehozunk egy újat`Document` objektum és kapcsolódó`DocumentBuilder` tárgy.
 
 ## 3. lépés: Az egyéni stílus létrehozása és konfigurálása
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 
 Ebben az oktatóanyagban megtanultuk, hogyan lehet stíluselválasztót beszúrni egy dokumentumba az Aspose.Words for .NET használatával. Létrehoztunk egy új dokumentumot, meghatároztunk egy egyéni stílust, és a stíluselválasztót használtuk a különböző stílusú szövegrészek megkülönböztetésére.
 
-stíluselválasztók használata további rugalmasságot biztosít a dokumentumok formázásakor. Ez segít megőrizni a vizuális konzisztenciát, miközben lehetővé teszi a stilisztikai variációt.
+A stíluselválasztók használata további rugalmasságot biztosít a dokumentumok formázásakor. Ez segít megőrizni a vizuális konzisztenciát, miközben lehetővé teszi a stilisztikai variációt.
 
 Az Aspose.Words for .NET hatékony API-t biztosít a dokumentumok stílusainak kezeléséhez. A könyvtár további felfedezésével személyre szabhatja dokumentumai megjelenését és professzionális eredményeket hozhat létre.
 
@@ -94,7 +94,7 @@ Ne felejtse el menteni a dokumentumot a stíluselválasztó beillesztése után.
 
 #### Hogyan állíthatom be a környezetet stíluselválasztó beszúrására egy dokumentumba az Aspose.Words for .NET használatával?
 
-A környezet beállításához gondoskodnia kell arról, hogy az Aspose.Words for .NET telepítve legyen és konfigurálva legyen a fejlesztői környezetben. Ez magában foglalja a szükséges hivatkozások hozzáadását és a megfelelő névterek importálását az Aspose.Words API eléréséhez.
+környezet beállításához gondoskodnia kell arról, hogy az Aspose.Words for .NET telepítve legyen és konfigurálva legyen a fejlesztői környezetben. Ez magában foglalja a szükséges hivatkozások hozzáadását és a megfelelő névterek importálását az Aspose.Words API eléréséhez.
 
 #### Hogyan hozhatok létre és konfigurálhatok egyéni stílust?
 
@@ -106,7 +106,7 @@ A környezet beállításához gondoskodnia kell arról, hogy az Aspose.Words fo
 
 #### Hogyan alkalmazhatok különböző stílusokat a szöveg különböző szakaszaira?
 
- Különböző stílusokat alkalmazhat a szöveg különböző szakaszaira a`ParagraphFormat.StyleName` tulajdona a`DocumentBuilder` tárgy. Szövegírás előtt beállíthatja a stílus nevét a kívánt stílusra, és az ezt követő szöveget ennek megfelelően formázza a rendszer.
+ Különböző stílusokat alkalmazhat a szöveg különböző szakaszaira a`ParagraphFormat.StyleName` tulajdona a`DocumentBuilder`tárgy. Szövegírás előtt beállíthatja a stílus nevét a kívánt stílusra, és az ezt követő szöveget ennek megfelelően formázza a rendszer.
 
 #### Menthetem a dokumentumot különböző formátumokban?
 

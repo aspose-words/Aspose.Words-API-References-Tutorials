@@ -16,7 +16,7 @@ Sebelum memulai, pastikan Anda memiliki item berikut:
 - Pustaka Aspose.Words untuk .NET diinstal di proyek Anda
 
 ## Langkah 1: Tentukan direktori dokumen
- Mulailah dengan mengatur jalur direktori ke lokasi dokumen Word Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai.
+Mulailah dengan mengatur jalur direktori ke lokasi dokumen Word Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

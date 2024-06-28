@@ -2,89 +2,144 @@
 title: Chèn ảnh nổi vào tài liệu Word
 linktitle: Chèn ảnh nổi vào tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chèn hình ảnh nổi trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước một.
+description: Tìm hiểu cách chèn hình ảnh nổi vào tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Hoàn hảo để nâng cao tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/add-content-using-documentbuilder/insert-floating-image/
 ---
-Trong ví dụ toàn diện này, bạn sẽ tìm hiểu cách chèn hình ảnh nổi vào tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ hướng dẫn bạn thực hiện quy trình và cung cấp cho bạn các đoạn mã C# cần thiết. Đến cuối hướng dẫn này, bạn sẽ có thể thêm hình ảnh với các tùy chọn định vị và gói có thể tùy chỉnh vào tài liệu của mình.
+## Giới thiệu
+
+Hãy tưởng tượng việc tạo một báo cáo hoặc đề xuất tuyệt đẹp trong đó hình ảnh được đặt ở vị trí hoàn hảo để bổ sung cho văn bản của bạn. Với Aspose.Words for .NET, bạn có thể đạt được điều này một cách dễ dàng. Thư viện này cung cấp các tính năng mạnh mẽ để thao tác tài liệu, khiến nó trở thành giải pháp phù hợp cho các nhà phát triển. Trong hướng dẫn này, chúng ta sẽ tập trung vào việc chèn một hình ảnh nổi bằng lớp DocumentBuilder. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn từng bước.
 
 ## Điều kiện tiên quyết
-Trước khi chúng tôi bắt đầu, hãy đảm bảo rằng bạn có các điều kiện tiên quyết sau:
-- Thư viện Aspose.Words for .NET được cài đặt trên hệ thống của bạn.
 
-## Bước 1: Tạo một tài liệu mới và DocumentBuilder
-Để bắt đầu, hãy tạo một tài liệu mới bằng lớp Document và khởi tạo đối tượng DocumentBuilder:
+Trước khi chúng ta đi sâu vào, hãy đảm bảo bạn có mọi thứ bạn cần để bắt đầu:
+
+1.  Aspose.Words for .NET: Bạn có thể tải xuống thư viện từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
+2. Visual Studio: Bất kỳ phiên bản nào hỗ trợ phát triển .NET.
+3. Kiến thức cơ bản về C#: Hiểu những điều cơ bản về lập trình C# sẽ rất hữu ích.
+4. Tệp hình ảnh: Tệp hình ảnh bạn muốn chèn, chẳng hạn như logo hoặc hình ảnh.
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words trong dự án của bạn, bạn cần nhập các không gian tên cần thiết. Điều này được thực hiện bằng cách thêm các dòng sau vào đầu tệp C# của bạn:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Với những điều kiện tiên quyết và không gian tên này, chúng ta đã sẵn sàng bắt đầu phần hướng dẫn của mình.
+
+Hãy chia nhỏ quá trình chèn hình ảnh nổi vào tài liệu Word thành các bước có thể quản lý được. Mỗi bước sẽ được giải thích chi tiết để đảm bảo bạn có thể làm theo mà không gặp bất kỳ trục trặc nào.
+
+## Bước 1: Thiết lập dự án của bạn
+
+Đầu tiên, tạo một dự án C# mới trong Visual Studio. Bạn có thể chọn Ứng dụng Console để đơn giản.
+
+1. Mở Visual Studio và tạo một dự án mới.
+2. Chọn "Ứng dụng Console (.NET Core)" và nhấp vào "Tiếp theo".
+3. Đặt tên cho dự án của bạn và chọn một vị trí để lưu nó. Nhấp vào "Tạo."
+4. Cài đặt Aspose.Words cho .NET thông qua Trình quản lý gói NuGet. Nhấp chuột phải vào dự án của bạn trong Solution Explorer, chọn "Quản lý gói NuGet" và tìm kiếm "Apose.Words". Cài đặt phiên bản mới nhất.
+
+## Bước 2: Khởi tạo Document và DocumentBuilder
+
+Bây giờ dự án của bạn đã được thiết lập, hãy khởi tạo các đối tượng Document và DocumentBuilder.
+
+1.  Tạo một phiên bản mới của`Document` lớp học:
 
 ```csharp
 Document doc = new Document();
+```
+
+2. Khởi tạo một đối tượng DocumentBuilder:
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 2: Chèn hình ảnh nổi
-Tiếp theo, sử dụng phương thức InsertImage của lớp DocumentBuilder để chèn hình ảnh nổi. Cung cấp đường dẫn tệp hình ảnh, vị trí ngang và dọc tương đối, chiều rộng, chiều cao và các tùy chọn gói dưới dạng tham số:
+ Các`Document` đối tượng đại diện cho tài liệu Word và`DocumentBuilder` giúp thêm nội dung vào đó.
+
+## Bước 3: Xác định đường dẫn hình ảnh
+
+Tiếp theo, chỉ định đường dẫn đến tệp hình ảnh của bạn. Đảm bảo hình ảnh của bạn có thể truy cập được từ thư mục dự án của bạn.
+
+Xác định thư mục ảnh và tên file ảnh:
 
 ```csharp
-builder.InsertImage(ImagesDir + "Transparent background logo.png",
-	RelativeHorizontalPosition.Margin,
-	100,
-	RelativeVerticalPosition.Margin,
-	100,
-	200,
-	100,
-	WrapType.Square);
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+string imagePath = dataDir + "Transparent background logo.png";
 ```
 
-## Bước 3: Lưu tài liệu
-Sau khi chèn ảnh nổi, lưu tài liệu vào file bằng phương thức Save của lớp Document:
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi hình ảnh của bạn được lưu trữ.
+
+## Bước 4: Chèn ảnh nổi
+
+Với mọi thứ đã được thiết lập, hãy chèn hình ảnh nổi vào tài liệu.
+
+ Sử dụng`InsertImage` phương pháp của`DocumentBuilder` lớp để chèn hình ảnh:
 
 ```csharp
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
+builder.InsertImage(imagePath,
+   RelativeHorizontalPosition.Margin,
+   100,
+   RelativeVerticalPosition.Margin,
+   100,
+   200,
+   100,
+   WrapType.Square);
 ```
 
-## Mã nguồn ví dụ để chèn hình ảnh nổi bằng Aspose.Words cho .NET
-Đây là mã nguồn hoàn chỉnh để chèn hình ảnh nổi bằng Aspose.Words cho .NET:
-Hình ảnh nổi rất hữu ích cho nhiều trường hợp khác nhau, chẳng hạn như thêm biểu tượng, hình minh họa hoặc các thành phần trang trí có thể được định vị độc lập với văn bản của tài liệu.
+Dưới đây là ý nghĩa của từng tham số:
+- `imagePath`Đường dẫn tới file ảnh của bạn.
+- `RelativeHorizontalPosition.Margin`: Vị trí nằm ngang so với lề.
+- `100`: Độ lệch ngang so với lề (tính bằng điểm).
+- `RelativeVerticalPosition.Margin`: Vị trí thẳng đứng so với lề.
+- `100`: Độ lệch dọc so với lề (tính bằng điểm).
+- `200`: Chiều rộng của hình ảnh (tính bằng điểm).
+- `100`: Chiều cao của hình ảnh (tính bằng điểm).
+- `WrapType.Square`: Kiểu bao văn bản xung quanh hình ảnh.
+
+## Bước 5: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu vào vị trí mong muốn của bạn.
+
+1. Chỉ định đường dẫn tệp đầu ra:
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertImage(ImagesDir + "Transparent background logo.png",
-	RelativeHorizontalPosition.Margin,
-	100,
-	RelativeVerticalPosition.Margin,
-	100,
-	200,
-	100,
-	WrapType.Square);
-
-doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
+string outputPath = dataDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx";
 ```
 
-Hãy nhớ điều chỉnh mã theo yêu cầu cụ thể của bạn, bao gồm đường dẫn tệp hình ảnh cũng như các tùy chọn định vị và gói mong muốn.
+2. Lưu tài liệu:
+
+```csharp
+doc.Save(outputPath);
+```
+
+Tài liệu Word của bạn với hình ảnh nổi hiện đã sẵn sàng!
 
 ## Phần kết luận
-Chúc mừng! Bạn đã học thành công cách chèn hình ảnh nổi vào tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, giờ đây bạn có thể nâng cao tài liệu của mình bằng các hình ảnh nổi hấp dẫn và có thể tùy chỉnh trực quan.
 
-### Hỏi đáp chèn ảnh nổi vào văn bản word
+Chèn hình ảnh nổi vào tài liệu Word bằng Aspose.Words cho .NET là một quá trình đơn giản khi được chia thành các bước có thể quản lý được. Bằng cách làm theo hướng dẫn này, bạn có thể thêm hình ảnh trông chuyên nghiệp vào tài liệu của mình, nâng cao sức hấp dẫn trực quan của chúng. Aspose.Words cung cấp một API mạnh mẽ giúp thao tác tài liệu trở nên dễ dàng, cho dù bạn đang làm việc trên các báo cáo, đề xuất hay bất kỳ loại tài liệu nào khác.
 
-#### Câu hỏi: Tôi có thể chèn nhiều hình ảnh nổi vào một tài liệu không?
+## Câu hỏi thường gặp
 
-Đ: Chắc chắn rồi! Bạn có thể chèn bao nhiêu hình ảnh nổi nếu cần vào tài liệu Word bằng Aspose.Words for .NET. Chỉ cần lặp lại quá trình chèn để thêm nhiều hình ảnh hấp dẫn trực quan.
+### Tôi có thể chèn nhiều hình ảnh bằng Aspose.Words cho .NET không?
 
-#### Câu hỏi: Có những tùy chọn gói nào cho hình ảnh nổi?
+ Có, bạn có thể chèn nhiều hình ảnh bằng cách lặp lại thao tác`InsertImage` phương pháp cho mỗi hình ảnh với các thông số mong muốn.
 
-Đáp: Aspose.Words for .NET cung cấp nhiều tùy chọn gói khác nhau cho hình ảnh nổi, bao gồm Square, Tight, Through, TopBottom và None. Các tùy chọn này xác định cách văn bản tương tác với hình ảnh nổi.
+### Làm cách nào để thay đổi vị trí của hình ảnh?
 
-#### Hỏi: Tôi có thể điều chỉnh kích thước của hình ảnh nổi không?
+ Bạn có thể điều chỉnh`RelativeHorizontalPosition`, `RelativeVerticalPosition`và bù các tham số để định vị hình ảnh khi cần thiết.
 
-Đ: Chắc chắn rồi! Bạn có thể chỉ định chiều rộng và chiều cao của hình ảnh nổi bằng các tham số tương ứng trong phương thức InsertImage. Điều này cho phép bạn kiểm soát kích thước của hình ảnh theo sở thích thiết kế của bạn.
+### Những loại bọc nào khác có sẵn cho hình ảnh?
 
-#### Câu hỏi: Tôi có thể định vị hình ảnh nổi tương ứng với một thành phần cụ thể trong tài liệu không?
+ Aspose.Words hỗ trợ nhiều loại bọc khác nhau như`Inline`, `TopBottom`, `Tight`, `Through`, và hơn thế nữa. Bạn có thể chọn cái phù hợp nhất với bố cục tài liệu của mình.
 
-Đáp: Có, Aspose.Words for .NET cho phép bạn định vị hình ảnh nổi tương ứng với các thành phần cụ thể, chẳng hạn như lề, trang, đoạn văn hoặc bảng. Bạn có thể chọn các tham số vị trí ngang và dọc tương đối thích hợp để đạt được vị trí mong muốn.
+### Tôi có thể sử dụng các định dạng hình ảnh khác nhau không?
 
-#### Câu hỏi: Aspose.Words cho .NET có phù hợp cho cả ứng dụng máy tính để bàn và web không?
+Có, Aspose.Words hỗ trợ nhiều định dạng hình ảnh bao gồm JPEG, PNG, BMP và GIF.
 
-Trả lời: Có, Aspose.Words for .NET là một thư viện đa năng phù hợp cho cả ứng dụng máy tính để bàn và web. Cho dù bạn đang xây dựng một ứng dụng Windows hay một hệ thống dựa trên web, bạn đều có thể tích hợp thư viện một cách dễ dàng.
+### Làm cách nào để tôi có được bản dùng thử miễn phí Aspose.Words cho .NET?
+
+ Bạn có thể dùng thử miễn phí từ[Trang dùng thử miễn phí](https://releases.aspose.com/).

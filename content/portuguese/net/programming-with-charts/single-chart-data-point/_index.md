@@ -17,7 +17,7 @@ Certifique-se de ter os seguintes pré-requisitos:
 - Biblioteca Aspose.Words para .NET instalada. Você pode baixá-lo usando o gerenciador de pacotes NuGet para instalá-lo.
 - Um caminho do diretório do documento onde o documento de saída será salvo.
 
-## Passo 2: Crie um novo documento e insira um gráfico
+## Passo 2: Crie um novo documento e insira um gráfico.
 
  Crie um novo`Document` objeto e um`DocumentBuilder` para construir o documento.
 
@@ -100,7 +100,7 @@ Isso conclui a implementação da personalização de um único ponto de dados e
 
 ## Conclusão
 
-Neste tutorial, você aprendeu como personalizar um único ponto de dados em um gráfico usando Aspose.Words for .NET. Seguindo o guia passo a passo e utilizando o código-fonte fornecido, você pode criar um novo documento, inserir um gráfico de linhas, acessar pontos de dados específicos dentro da série de gráficos e modificar suas propriedades para obter a personalização desejada.
+Neste tutorial, você aprendeu como personalizar um único ponto de dados em um gráfico usando Aspose.Words for .NET. Seguindo o guia passo a passo e utilizando o código-fonte fornecido, você pode criar um novo documento, inserir um gráfico de linhas, acessar pontos de dados específicos na série de gráficos e modificar suas propriedades para obter a personalização desejada.
 
 Aspose.Words for .NET fornece recursos poderosos para manipular gráficos em documentos do Word. Ao acessar pontos de dados individuais em uma série de gráficos, você pode aplicar modificações específicas para personalizar sua aparência e comportamento. Isso permite destacar pontos de dados específicos, alterar símbolos de marcadores, ajustar tamanhos de marcadores e muito mais, para aprimorar a representação visual do seu gráfico.
 

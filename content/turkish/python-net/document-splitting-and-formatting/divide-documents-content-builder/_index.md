@@ -1,6 +1,6 @@
 ---
-title: Hassasiyet İçin İçerik Oluşturucuyla Belgeleri Bölme
-linktitle: Hassasiyet İçin İçerik Oluşturucuyla Belgeleri Bölme
+title: Hassasiyet için İçerik Oluşturucu ile Belgeleri Bölme
+linktitle: Hassasiyet için İçerik Oluşturucu ile Belgeleri Bölme
 second_title: Aspose.Words Python Doküman Yönetimi API'si
 description: Aspose.Words for Python'u kullanarak belgelerinizi hassas bir şekilde bölün ve yönetin. Verimli içerik çıkarma ve düzenleme için İçerik Oluşturucu'dan nasıl yararlanacağınızı öğrenin.
 type: docs
@@ -70,7 +70,7 @@ builder.insert_break(aw.BreakType.SECTION_BREAK_NEW_PAGE)
 
 ## Örnek Kullanım Durumu: Özgeçmiş Oluşturma
 
-Pratik bir kullanım örneği düşünelim: farklı bölümleri olan bir özgeçmiş (CV) oluşturmak.
+Pratik bir kullanım örneğini ele alalım: farklı bölümleri olan bir özgeçmiş (CV) oluşturmak.
 
 ```python
 # Add CV sections

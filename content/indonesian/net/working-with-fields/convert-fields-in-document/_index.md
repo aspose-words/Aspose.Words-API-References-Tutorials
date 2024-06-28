@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/working-with-fields/convert-fields-in-document/
 ---
 
-Dalam tutorial ini, Kami akan memandu Anda panduan langkah demi langkah menggunakan fungsi ConvertFieldsInDocument dari perangkat lunak Aspose.Words untuk .NET. Kami akan menjelaskan secara rinci kode sumber C# yang diperlukan untuk fitur ini dan memberikan contoh format output penurunan harga.
+Dalam tutorial ini, Kami akan memandu Anda panduan langkah demi langkah menggunakan fungsi ConvertFieldsInDocument dari perangkat lunak Aspose.Words untuk .NET. Kami akan menjelaskan secara rinci kode sumber C# yang diperlukan untuk fitur ini dan memberikan contoh format keluaran penurunan harga.
 
 ## Langkah 1: Prasyarat
 Sebelum memulai, pastikan Anda memiliki hal berikut:
@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Langkah 5: Simpan dokumen yang diubah
- Menggunakan`Save()`metode untuk menyimpan dokumen dengan kolom diubah menjadi teks di direktori dokumen yang ditentukan.
+ Menggunakan`Save()` metode untuk menyimpan dokumen dengan kolom diubah menjadi teks di direktori dokumen yang ditentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

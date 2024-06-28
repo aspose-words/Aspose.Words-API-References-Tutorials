@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Этот код создает экземпляр`Document` загрузив документ из указанного каталога.
+ Этот код создает экземпляр`Document` Загрузив документ из указанного каталога.
 
 ## Шаг 3. Настройка параметров резервного копирования HTML
 

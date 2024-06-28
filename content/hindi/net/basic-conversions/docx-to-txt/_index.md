@@ -29,7 +29,7 @@ Document doc = new Document(MyDir + "Document.docx");
 doc.Save(dataDir + "BaseConversions.DocxToTxt.txt");
 ```
 
-इतना ही! आपने .NET के लिए Aspose.Words का उपयोग करके एक Word दस्तावेज़ को Docx प्रारूप में सादे पाठ (Txt) में सफलतापूर्वक परिवर्तित कर लिया है।
+इतना ही! आपने .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ को Docx प्रारूप में सादे पाठ (Txt) में सफलतापूर्वक परिवर्तित कर लिया है।
 
 ### .NET के लिए Aspose.Words का उपयोग करके Docx To Txt के लिए उदाहरण स्रोत कोड
 

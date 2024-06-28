@@ -117,7 +117,7 @@ Połączenie Aspose.Words dla makr Pythona i VBA oferuje bramę do zaawansowanej
  Możesz pobrać najnowszą wersję Aspose.Words dla Pythona z[Strona Aspose](https://releases.aspose.com/words/python/).
 
 ### Czy mogę używać makr VBA z innymi aplikacjami Microsoft Office?
-Tak, makra VBA można wykorzystywać w różnych aplikacjach pakietu Microsoft Office, w tym w programach Excel i PowerPoint.
+Tak, makr VBA można używać w różnych aplikacjach pakietu Microsoft Office, w tym w programach Excel i PowerPoint.
 
 ### Czy istnieją jakieś zagrożenia bezpieczeństwa związane z używaniem makr VBA?
 Chociaż makra VBA mogą usprawnić automatyzację, mogą również stwarzać zagrożenie bezpieczeństwa, jeśli nie będą używane ostrożnie. Zawsze upewnij się, że makra pochodzą z zaufanych źródeł i rozważ wdrożenie środków bezpieczeństwa.
@@ -126,4 +126,4 @@ Chociaż makra VBA mogą usprawnić automatyzację, mogą również stwarzać za
 Absolutnie! Dzięki makrom Aspose.Words Python i VBA możesz zautomatyzować tworzenie i wypełnianie dokumentów przy użyciu danych ze źródeł zewnętrznych, baz danych lub interfejsów API.
 
 ### Gdzie mogę znaleźć więcej zasobów i przykładów dla Aspose.Words Python?
- Możesz zapoznać się z obszerną kolekcją zasobów, samouczków i przykładów na stronie[Aspose.Words Odniesienia do API Pythona](https://reference.aspose.com/words/python-net/) strona.
+ Możesz zapoznać się z obszerną kolekcją zasobów, samouczków i przykładów na stronie[Aspose.Words Referencje API Pythona](https://reference.aspose.com/words/python-net/) strona.

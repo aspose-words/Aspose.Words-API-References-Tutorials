@@ -62,7 +62,7 @@ Detta avslutar vår guide om hur du använder funktionen "Get Merge Field Names"
 
 #### F1: Vad är e-postkoppling i Aspose.Words?
 
-Mail merge i Aspose.Words är en process för att slå samman data från en extern källa (t.ex. Excel-kalkylblad eller databas) med en mall Word-dokument för att skapa personliga dokument. Detta underlättar automatisk generering av brev, rapporter och andra liknande dokument.
+Mail merge i Aspose.Words är en process för att slå samman data från en extern källa (t.ex. Excel-kalkylblad eller databas) med en mall i Word-dokument för att skapa personliga dokument. Detta underlättar automatisk generering av brev, rapporter och andra liknande dokument.
 
 #### F2: Hur får jag listan över kopplingsfält som är tillgängliga i ett Word-dokument?
 
@@ -96,7 +96,7 @@ foreach (string fieldName in fieldNames)
 
 #### F: Vad är e-postkoppling i Aspose.Words?
 
-S: Mail merge i Aspose.Words är en process för att sammanfoga data från en extern källa (t.ex. Excel-kalkylblad eller databas) med en mall i Word-dokument för att skapa personliga dokument. Detta underlättar automatisk generering av brev, rapporter och andra liknande dokument.
+S: Mail merge i Aspose.Words är en process för att slå samman data från en extern källa (t.ex. Excel-kalkylblad eller databas) med en mall i Word-dokument för att skapa personliga dokument. Detta underlättar automatisk generering av brev, rapporter och andra liknande dokument.
 
 #### F: Hur får jag en lista över kopplingsfält som är tillgängliga i ett Word-dokument?
 
@@ -116,4 +116,4 @@ S: Ja, det är möjligt att filtrera sammanslagningsfält baserat på vissa krit
 
 #### F: Hur kan jag manipulera kopplingsfält i Aspose.Words?
 
-S: För att manipulera kopplingsfält i Aspose.Words kan du använda metoderna och egenskaperna som tillhandahålls av objekten Document och MailMergeField. Du kan lägga till, ta bort eller uppdatera sammanslagningsfält, samt hämta och redigera värden som är kopplade till fält.
+S: För att manipulera kopplingsfält i Aspose.Words kan du använda metoderna och egenskaperna som tillhandahålls av objekten Document och MailMergeField. Du kan lägga till, ta bort eller uppdatera sammanslagningsfält, samt hämta och redigera värden som är associerade med fält.

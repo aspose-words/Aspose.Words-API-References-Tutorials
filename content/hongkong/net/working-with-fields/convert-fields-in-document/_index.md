@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/working-with-fields/convert-fields-in-document/
 ---
 
-在本教學中，我們將逐步指導您使用Aspose.Words for .NET 軟體的ConvertFieldsInDocument 功能。我們將詳細解釋此功能所需的 C# 原始程式碼，並提供範例 Markdown 輸出格式。
+在本教學中，我們將逐步指導您使用 Aspose.Words for .NET 軟體的 ConvertFieldsInDocument 功能。我們將詳細解釋此功能所需的 C# 原始程式碼，並提供範例 Markdown 輸出格式。
 
 ## 第 1 步：先決條件
 在開始之前，請確保您具備以下條件：

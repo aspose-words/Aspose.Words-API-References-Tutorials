@@ -22,7 +22,7 @@ In diesem Leitfaden untersuchen wir verschiedene Aspekte der Gestaltung von Doku
 
 Bevor wir uns mit den Details befassen, beginnen wir mit den Grundlagen von Kopf- und Fußzeilen im Dokumentstil. Kopfzeilen enthalten normalerweise Informationen wie Dokumenttitel, Abschnittsnamen oder Seitenzahlen. Fußzeilen hingegen enthalten häufig Urheberrechtshinweise, Seitenzahlen oder Kontaktinformationen.
 
-#### Kopfzeile erstellen:
+#### Header erstellen:
 
  Um mit Aspose.Words für Java eine Kopfzeile in Ihrem Dokument zu erstellen, können Sie die verwenden`HeaderFooter` Klasse. Hier ist ein einfaches Beispiel:
 

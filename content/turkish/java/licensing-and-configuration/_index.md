@@ -15,7 +15,7 @@ Aspose.Words for Java'yı kullanma yolculuğunuza çıktığınızda ilk adım l
 
 1.  Lisans Alın: Ziyaret Edin[Satın Alma Sayfasını Belirleyin](https://purchase.aspose.com/buy)Aspose.Words for Java lisansını almak için. Kısa vadeli projelere yönelik geçici lisanslar da dahil olmak üzere çeşitli lisanslama seçenekleri arasından seçim yapabilirsiniz.
 
-2. Lisans Dosyasını Alın: Satın aldıktan sonra size bir lisans dosyası gönderilecektir. Bu dosya, Java projenizde Aspose.Words'ü yapılandırmak için çok önemlidir.
+2. Lisans Dosyasını Alın: Satın aldıktan sonra bir lisans dosyası alacaksınız. Bu dosya, Java projenizde Aspose.Words'ü yapılandırmak için çok önemlidir.
 
 3.  Lisansı Entegre Edin: Aspose.Words'ü etkinleştirmek için lisansı Java uygulamanıza entegre edin. Bu genellikle lisans dosyasının yüklenmesini ve Aspose.Words'e uygulanmasını içerir. Bakın[API belgeleri](https://reference.aspose.com/words/java/) ayrıntılı kod örnekleri için.
 

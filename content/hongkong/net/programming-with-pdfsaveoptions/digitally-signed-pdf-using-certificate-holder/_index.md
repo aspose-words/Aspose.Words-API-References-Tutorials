@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificate
 
 ### 經常問的問題
 
-#### Q：什麼是數位簽章？為什麼它在 PDF 文件中很重要？
+#### Q：什麼是數位簽章？
 答：數位簽章是一種安全技術，有助於確保電子文件（例如 PDF 文件）的真實性、完整性和不可否認性。它使用數位憑證為文件添加一層安全性保護，這有助於驗證作者的身份並檢測內容的任何後續變更。
 
 #### Q：如何使用 Aspose.Words for .NET 的憑證在 PDF 文件中新增數位簽章？

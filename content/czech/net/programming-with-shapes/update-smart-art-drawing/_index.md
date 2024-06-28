@@ -24,14 +24,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Vložte dokument
-Načtěte dokument aplikace Word, který obsahuje kresbu Smart Art pomocí`Document` konstruktor třídy.
+ Načtěte dokument aplikace Word, který obsahuje kresbu Smart Art pomocí`Document` konstruktor třídy.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Krok 3: Aktualizujte kresbu Smart Art
- Procházejte tvary v dokumentu pomocí`GetChildNodes` metoda s`NodeType.Shape` parametr. Zkontrolujte, zda má každý tvar Smart Art pomocí`HasSmartArt` vlastnost, a pokud je to pravda, zavolejte`UpdateSmartArtDrawing` způsob aktualizace výkresu Smart Art.
+ Procházejte tvary v dokumentu pomocí`GetChildNodes` metoda s`NodeType.Shape` parametry. Zkontrolujte, zda má každý tvar Smart Art pomocí`HasSmartArt` vlastnost, a pokud je to pravda, zavolejte`UpdateSmartArtDrawing` způsob aktualizace výkresu Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

@@ -52,7 +52,7 @@ Pomocí tohoto kódu budete moci porovnat dva dokumenty a určit, zda jsou stejn
 
 ## Závěr
 
-tomto tutoriálu jsme prozkoumali, jak porovnávat dokumenty pro rovnost pomocí funkce Porovnat za stejné v Aspose.Words pro .NET. Porovnáním dvou dokumentů a analýzou revizí můžete určit, zda dokumenty mají stejný obsah nebo zda mezi nimi existují nějaké rozdíly. Aspose.Words for .NET poskytuje výkonné možnosti porovnávání dokumentů, což vám umožňuje automatizovat proces identifikace podobností a rozdílů dokumentů.
+V tomto tutoriálu jsme prozkoumali, jak porovnávat dokumenty pro rovnost pomocí funkce Porovnat za stejné v Aspose.Words pro .NET. Porovnáním dvou dokumentů a analýzou revizí můžete určit, zda dokumenty mají stejný obsah nebo zda mezi nimi existují nějaké rozdíly. Aspose.Words for .NET poskytuje výkonné možnosti porovnávání dokumentů, což vám umožňuje automatizovat proces identifikace podobností a rozdílů dokumentů.
 
 ### FAQ
 
@@ -73,4 +73,4 @@ Odpověď: Ano, Aspose.Words for .NET poskytuje různé možnosti přizpůsoben�
 
 #### Otázka: Mohu provést podrobnější srovnání, abych identifikoval konkrétní rozdíly mezi dokumenty?
 
-Odpověď: Ano, můžete provést podrobnější srovnání, abyste identifikovali konkrétní rozdíly mezi dokumenty tím, že projdete souborem`Revisions` sbírka původního dokumentu. Každá revize představuje změnu nebo rozdíl mezi dokumenty. Máte přístup k podrobnostem každé revize, jako je typ změny (vložení, odstranění, změna formátování) a dotčený rozsah dokumentu.
+ Odpověď: Ano, můžete provést podrobnější srovnání, abyste identifikovali konkrétní rozdíly mezi dokumenty tím, že projdete souborem`Revisions` sbírka původních dokumentů. Každá revize představuje změnu nebo rozdíl mezi dokumenty. Máte přístup k podrobnostem každé revize, jako je typ změny (vložení, odstranění, změna formátování) a dotčený rozsah dokumentu.

@@ -10,7 +10,7 @@ url: /it/java/table-processing/managing-tables-layouts/
 
 ## introduzione
 
-Quando si tratta di lavorare con documenti in Java, Aspose.Words è uno strumento potente e versatile. In questa guida completa, ti guideremo attraverso il processo di gestione di tabelle e layout all'interno dei tuoi documenti utilizzando Aspose.Words per Java. Che tu sia un principiante o uno sviluppatore esperto, troverai preziosi approfondimenti ed esempi pratici di codice sorgente per semplificare le tue attività di gestione dei documenti.
+Quando si tratta di lavorare con documenti in Java, Aspose.Words è uno strumento potente e versatile. In questa guida completa, ti guideremo attraverso il processo di gestione di tabelle e layout all'interno dei tuoi documenti utilizzando Aspose.Words per Java. Che tu sia un principiante o uno sviluppatore esperto, troverai preziosi approfondimenti ed esempi pratici di codice sorgente per semplificare le attività di gestione dei documenti.
 
 ## Comprendere l'importanza del layout del documento
 
@@ -30,7 +30,7 @@ Il primo passo nella gestione delle tabelle è crearle. Aspose.Words lo rende in
 // Crea un nuovo documento
 Document doc = new Document();
 
-// Crea una tabella con 3 righe e 4 colonne
+// Crea una tabella con 3 righe e 4 colonne.
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

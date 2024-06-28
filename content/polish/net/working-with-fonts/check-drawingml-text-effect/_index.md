@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-fonts/check-drawingml-text-effect/
 ---
 
-tym samouczku przeprowadzimy Cię przez proces sprawdzania efektów tekstowych DrawingML w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Sprawdzanie efektów tekstowych DrawingML pozwala określić, czy do części tekstu zastosowano określony efekt. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+W tym samouczku przeprowadzimy Cię przez proces sprawdzania efektów tekstowych DrawingML w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Sprawdzanie efektów tekstowych DrawingML pozwala określić, czy do części tekstu zastosowano określony efekt. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -62,7 +62,7 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 ```
 
 ## Wniosek
-tym samouczku widzieliśmy, jak sprawdzić efekty tekstowe DrawingML w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Sprawdzanie efektów tekstowych DrawingML pozwala zidentyfikować części tekstu, do których zastosowano określone efekty. Możesz swobodnie używać tej funkcji do manipulowania i analizowania efektów tekstowych w dokumentach programu Word.
+W tym samouczku widzieliśmy, jak sprawdzić efekty tekstowe DrawingML w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Sprawdzanie efektów tekstowych DrawingML pozwala zidentyfikować części tekstu, do których zastosowano określone efekty. Możesz swobodnie używać tej funkcji do manipulowania i analizowania efektów tekstowych w dokumentach programu Word.
 
 ### Często zadawane pytania
 

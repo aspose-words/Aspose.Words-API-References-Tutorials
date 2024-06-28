@@ -95,7 +95,7 @@ R : Un document propriétaire dans Node.js est le document XML auquel appartien
 
 #### Q : Comment obtenir le document propriétaire d’un nœud ?
 
- R : Pour obtenir le document propriétaire d'un nœud dans Node.js, vous pouvez utiliser le`ownerDocument` propriété du nœud. Cette propriété renvoie le document XML propriétaire du nœud.
+ R : Pour obtenir le document propriétaire d'un nœud dans Node.js, vous pouvez utiliser le`ownerDocument` propriété du nœud. Cette propriété renvoie le document XML propriétaire du nœud.
 
 #### Q : A quoi sert le document propriétaire ?
 

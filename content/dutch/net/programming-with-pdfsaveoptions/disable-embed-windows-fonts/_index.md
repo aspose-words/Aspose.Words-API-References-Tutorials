@@ -85,7 +85,7 @@ Verkleinde PDF-bestandsgrootte: Door het insluiten van Windows-lettertypen uit t
 
 Gemakkelijker opslaan: Kleinere PDF-bestanden zijn gemakkelijker op te slaan, op te slaan en over te dragen.
 
-Sneller delen en overbrengen: Kleinere PDF-bestanden kunnen sneller worden gedeeld en overgedragen, waardoor tijd en middelen worden bespaard.
+Sneller delen en overdragen: Kleinere PDF-bestanden kunnen sneller worden gedeeld en overgedragen, waardoor tijd en middelen worden bespaard.
 
 #### Vraag: Wat zijn de gevolgen van het uitschakelen van het insluiten van Windows-lettertypen in een PDF-document?
 A: Het uitschakelen van de insluiting van Windows-lettertypen in een PDF-document kan tot gevolgen leiden zoals:

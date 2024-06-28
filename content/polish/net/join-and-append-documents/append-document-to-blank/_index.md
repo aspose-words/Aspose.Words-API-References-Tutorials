@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/join-and-append-documents/append-document-to-blank/
 ---
 
-W tym samouczku wyjaśniono, jak używać Aspose.Words dla .NET do dołączania zawartości jednego dokumentu do pustego dokumentu docelowego. Dostarczony kod źródłowy pokazuje, jak utworzyć nowy dokument, usunąć jego zawartość, a następnie dołączyć do niego dokument źródłowy.
+tym samouczku wyjaśniono, jak używać Aspose.Words dla .NET do dołączania zawartości jednego dokumentu do pustego dokumentu docelowego. Dostarczony kod źródłowy pokazuje, jak utworzyć nowy dokument, usunąć jego zawartość, a następnie dołączyć do niego dokument źródłowy.
 
 ## Krok 1: Skonfiguruj projekt
 
@@ -47,7 +47,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Krok 5: Zapisz dokument docelowy
 
- Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
+Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");

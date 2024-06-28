@@ -17,7 +17,7 @@ Bevor wir beginnen, stellen Sie sicher, dass die folgenden Anforderungen erfüll
 - Aspose.Words für .NET-Bibliothek installiert. Sie können es mit dem NuGet-Paketmanager herunterladen, um es zu installieren.
 - Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
 
-## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein
+## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein.
 
  Lassen Sie uns zunächst ein neues erstellen`Document` Objekt und a`DocumentBuilder` um das Dokument zu erstellen.
 
@@ -108,7 +108,7 @@ In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET Standar
 Aspose.Words für .NET ist eine Bibliothek, die es Entwicklern ermöglicht, Word-Dokumente mithilfe von .NET-Anwendungen programmgesteuert zu erstellen, zu bearbeiten und zu speichern. Es bietet zahlreiche Funktionen für die Textverarbeitung mit Dokumentelementen, einschließlich Diagrammen.
 
 #### Q2. Wie kann ich Aspose.Words für .NET installieren?
-Sie können Aspose.Words für .NET installieren, indem Sie es mithilfe des NuGet-Paketmanagers in Visual Studio herunterladen. Suchen Sie einfach im NuGet-Paketmanager nach „Aspose.Words“ und installieren Sie es in Ihrem Projekt.
+Sie können Aspose.Words für .NET installieren, indem Sie es mithilfe des NuGet-Paketmanagers in Visual Studio herunterladen. Suchen Sie einfach im NuGet-Paketmanager nach „Apose.Words“ und installieren Sie es in Ihrem Projekt.
 
 #### Q3. Kann ich andere Aspekte des Diagramms mit Aspose.Words für .NET anpassen?
 Ja, mit Aspose.Words für .NET können Sie verschiedene Aspekte eines Diagramms anpassen, z. B. Diagrammtyp, Achsenbeschriftungen, Legende, Diagrammbereich und mehr. Sie können auf verschiedene Eigenschaften des Diagrammobjekts zugreifen und diese ändern, um das gewünschte Erscheinungsbild und Verhalten zu erzielen.

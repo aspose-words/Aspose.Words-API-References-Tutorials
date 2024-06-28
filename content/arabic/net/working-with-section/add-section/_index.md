@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## الخطوة 3: إضافة قسم جديد
- لإضافة قسم جديد إلى المستند، سنقوم بإنشاء مثيل لـ`Section` الصف وإضافته إلى`Sections` جمع الوثيقة.
+ لإضافة قسم جديد إلى المستند، سنقوم بإنشاء مثيل لـ`Section` الصف وإضافته إلى`Sections` جمع الوثائق.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
@@ -82,7 +82,7 @@ builder. Writen("Hello2");
 
 #### س: كيفية إضافة قسم جديد إلى المستند في Aspose.Words لـ .NET؟
 
- ج: لإضافة قسم جديد إلى المستند في Aspose.Words لـ .NET، يمكنك إنشاء مثيل لـ`Section` الصف وإضافته إلى`Sections` جمع الوثيقة:
+ ج: لإضافة قسم جديد إلى المستند في Aspose.Words لـ .NET، يمكنك إنشاء مثيل لـ`Section` الصف وإضافته إلى`Sections` جمع الوثائق:
 
 ```csharp
 Section sectionToAdd = new Section(doc);

@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/row-format-disable-break-across-pages/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 

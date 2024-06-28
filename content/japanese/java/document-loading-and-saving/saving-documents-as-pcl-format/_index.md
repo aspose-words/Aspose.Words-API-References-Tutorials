@@ -81,7 +81,7 @@ Aspose.Words for Java は主に Word ドキュメントを扱います。 PDF �
 
 ### Aspose.Words for Java の試用版は利用可能ですか?
 
-はい、購入する前に、Aspose.Words for Java の試用版にアクセスしてその機能を調べることができます。詳細については、Aspose の Web サイトをご覧ください。
+はい、購入する前に、Aspose.Words for Java の試用版にアクセスしてその機能を調べることができます。詳細については、Aspose Web サイトをご覧ください。
 
 ### Aspose.Words for Java のその他のリソースとドキュメントはどこで見つけられますか?
 

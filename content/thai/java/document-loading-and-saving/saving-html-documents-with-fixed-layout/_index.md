@@ -31,7 +31,7 @@ Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 
 ## ขั้นตอนที่ 2: กำหนดค่าตัวเลือกการบันทึกคงที่ HTML
 
- หากต้องการบันทึกเอกสารด้วยรูปแบบคงที่ เราจำเป็นต้องกำหนดค่า`HtmlFixedSaveOptions` ระดับ. เราจะตั้งค่า`useTargetMachineFonts`ทรัพย์สินเพื่อ`true` เพื่อให้แน่ใจว่าแบบอักษรของเครื่องเป้าหมายถูกใช้ในเอาต์พุต HTML:
+ หากต้องการบันทึกเอกสารด้วยรูปแบบคงที่ เราจำเป็นต้องกำหนดค่า`HtmlFixedSaveOptions` ชั้นเรียน เราจะตั้งค่า`useTargetMachineFonts`ทรัพย์สินเพื่อ`true` เพื่อให้แน่ใจว่าแบบอักษรของเครื่องเป้าหมายถูกใช้ในเอาต์พุต HTML:
 
 ```java
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions();

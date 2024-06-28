@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## Bước 3: Thêm phần mới
- Để thêm một phần mới vào tài liệu, chúng ta sẽ tạo một thể hiện của`Section` lớp và thêm nó vào`Sections` việc sưu tầm tài liệu.
+ Để thêm một phần mới vào tài liệu, chúng ta sẽ tạo một thể hiện của`Section` lớp và thêm nó vào`Sections` việc thu thập tài liệu.
 
 ```csharp
 Section sectionToAdd = new Section(doc);

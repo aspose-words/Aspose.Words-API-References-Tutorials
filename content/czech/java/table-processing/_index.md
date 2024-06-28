@@ -12,14 +12,14 @@ Aspose.Words for Java poskytuje komplexní sadu rozhraní API pro zpracování t
 
 Výukové programy Aspose.Words for Java Table Processing poskytují podrobné pokyny ke všem aspektům zpracování tabulek, od základních až po pokročilá témata. Tyto výukové programy pokrývají vše od vytváření jednoduchých tabulek až po dynamické naplňování tabulek daty pomocí hromadné korespondence.
 
-Podle podrobných pokynů a příkladů kódu ve výukových programech Zpracování tabulek se vývojáři mohou rychle naučit používat Aspose.Words k vytváření a správě tabulek ve svých dokumentech aplikace Word. Ať už jste začátečník nebo zkušený vývojář, výukové programy Aspose.Words for Java Table Processing vám pomohou posunout vaše dovednosti ve zpracování tabulek na další úroveň.
+Podle podrobných pokynů a příkladů kódu v kurzech Zpracování tabulek se vývojáři mohou rychle naučit, jak používat Aspose.Words k vytváření a správě tabulek ve svých dokumentech aplikace Word. Ať už jste začátečník nebo zkušený vývojář, výukové programy Aspose.Words for Java Table Processing vám pomohou posunout vaše dovednosti ve zpracování tabulek na další úroveň.
 
 Zde jsou některé z výhod používání Aspose.Words for Java pro zpracování tabulek:
 
 * Komplexní sada API pro zpracování tabulek
 * Podrobné konzultace a dokumentace
 * Snadno použitelné API
-* Podpora pro širokou škálu formátů dokumentů
+* Podpora široké škály formátů dokumentů
 * Vysoký výkon a škálovatelnost
 
 

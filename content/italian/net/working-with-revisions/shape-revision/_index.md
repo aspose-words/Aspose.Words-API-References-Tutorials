@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Passaggio 3: ottieni la raccolta di forme e controlla le revisioni
+## Passaggio 3: ottieni la raccolta di forme e controlla le revisioni.
 
 Otterremo la raccolta di forme dal documento e controlleremo le revisioni associate a ciascuna forma.
 

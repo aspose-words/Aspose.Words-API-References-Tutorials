@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. Adım: Şekilleri Ekleme
- Kullan`InsertShape` yöntemi`DocumentBuilder` Belgeye şekiller eklemek için nesne. Şekil türünü, göreli yatay ve dikey konumları, sayfa boyutlarını, boyutunu ve sarma türünü belirtin. İsterseniz şekillerin dönüş açısını da ayarlayabilirsiniz.
+ Kullan`InsertShape` yöntemi`DocumentBuilder`Belgeye şekiller eklemek için nesne. Şekil türünü, göreli yatay ve dikey konumları, sayfa boyutlarını, boyutunu ve sarma türünü belirtin. İsterseniz şekillerin dönüş açısını da ayarlayabilirsiniz.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

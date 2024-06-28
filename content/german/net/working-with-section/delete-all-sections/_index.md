@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## Schritt 3: Alle Abschnitte löschen
- Um alle Abschnitte aus dem Dokument zu entfernen, verwenden wir die`Clear` Methode der`Sections` Sammlung des Dokuments.
+ Um alle Abschnitte aus dem Dokument zu entfernen, verwenden wir die`Clear` Methode der`Sections` Sammlung der Dokumente.
 
 ```csharp
 doc.Sections.Clear();
@@ -85,7 +85,7 @@ doc.AppendChild(new Section(doc));
 
 #### F: Wie entferne ich alle Abschnitte in Aspose.Words für .NET?
 
- A: Um alle Abschnitte aus dem Dokument in Aspose.Words für .NET zu entfernen, können Sie die verwenden`Clear` Methode der`Sections` Sammlung des Dokuments:
+ A: Um alle Abschnitte aus dem Dokument in Aspose.Words für .NET zu entfernen, können Sie die verwenden`Clear` Methode der`Sections` Sammlung der Dokumente:
 
 ```csharp
 doc.Sections.Clear();

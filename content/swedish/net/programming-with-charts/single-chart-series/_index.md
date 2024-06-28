@@ -17,7 +17,7 @@ Se till att du har följande förutsättningar:
 - Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den genom att använda NuGet-pakethanteraren för att installera den.
 - En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram.
 
  Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
@@ -117,4 +117,4 @@ Diagramserieutjämning är en visuell förbättringsteknik som låter dig skapa 
  För att anpassa markörer för datapunkter i en diagramserie med Aspose.Words för .NET måste du komma åt`Marker` egendom av`ChartSeries` objekt och ändra dess egenskaper som t.ex`Symbol` och`Size`. Markörer är visuella indikatorer placerade på diagrammet för att representera enskilda datapunkter. Du kan välja från en mängd olika inbyggda markörsymboler och justera deras storlek för att markera eller särskilja specifika datapunkter inom serien.
 
 #### F5. Kan jag invertera färger för negativa värden i en diagramserie?
- Ja, du kan invertera färger för negativa värden i en diagramserie med Aspose.Words för .NET. Genom att ställa in`InvertIfNegative` egendom av`ChartSeries` invända mot`true`, kommer färgerna för datapunkter med negativa värden att inverteras, vilket gör dem visuellt åtskilda från positiva värden. Den här funktionen kan vara användbar när du jämför positiva och negativa värden i en diagramserie, vilket ger en tydlig skillnad mellan de två.
+ Ja, du kan invertera färger för negativa värden i en diagramserie med Aspose.Words för .NET. Genom att ställa in`InvertIfNegative` egendom av`ChartSeries` invända mot`true`, kommer färgerna för datapunkter med negativa värden att inverteras, vilket gör dem visuellt åtskilda från positiva värden. Den här funktionen kan vara användbar när man jämför positiva och negativa värden i en diagramserie, vilket ger en tydlig skillnad mellan de två.

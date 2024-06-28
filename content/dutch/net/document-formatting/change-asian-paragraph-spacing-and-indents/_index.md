@@ -51,9 +51,9 @@ Hier is de volledige broncode voor de functie Aziatische alinea-afstand en inspr
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent wordt bijgewerkt
-	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent wordt bijgewerkt
-	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent wordt bijgewerkt
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent wordt bijgewerkt.
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent wordt bijgewerkt.
+	format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent wordt bijgewerkt.
 	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore wordt bijgewerkt
 	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter wordt bijgewerkt
 

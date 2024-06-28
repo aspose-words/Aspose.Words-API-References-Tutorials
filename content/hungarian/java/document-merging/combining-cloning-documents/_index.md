@@ -95,7 +95,7 @@ Document sourceDoc = new Document("source_document.docx");
 
 ## 3. lépés: Klónozza a dokumentumot
 
-Új dokumentum létrehozásához klónozza a forrásdokumentumot.
+Klónozza a forrásdokumentumot egy új létrehozásához.
 
 ```java
 // Klónozza a dokumentumot

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: Állítsa be az alapértelmezett betűtípusmappát
-Ezután beállíthatja az alapértelmezett betűtípus mappát a`FontSettings.DefaultInstance` osztály és a`SetFontsFolder()` módszer. Adja meg az alapértelmezett mappaként használni kívánt fonts mappa elérési útját.
+ Ezután beállíthatja az alapértelmezett betűtípus mappát a`FontSettings.DefaultInstance` osztály és a`SetFontsFolder()`módszer. Adja meg az alapértelmezett mappaként használni kívánt fonts mappa elérési útját.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

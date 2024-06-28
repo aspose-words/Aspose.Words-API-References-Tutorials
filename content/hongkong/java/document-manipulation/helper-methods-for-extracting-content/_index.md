@@ -105,7 +105,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
         }
     }
 
-    //為了與內嵌書籤模式相容，請新增下一段（空）。
+    //為了與內嵌書籤模式相容，請新增下一段（空白）。
     if (isInclusive && originalEndNode == endNode && !originalEndNode.isComposite())
         includeNextParagraph(endNode, nodes);
 

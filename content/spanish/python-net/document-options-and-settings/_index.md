@@ -2,7 +2,7 @@
 title: Opciones y configuraciones del documento
 linktitle: Opciones y configuraciones del documento
 second_title: API de gestión de documentos Aspose.Words Python
-description: Explore los tutoriales de Aspose.Words sobre opciones y configuraciones de documentos en Python y .NET. Aprenda a optimizar la creación y el formato de documentos utilizando guías paso a paso y ejemplos de código fuente.
+description: Explore los tutoriales de Aspose.Words sobre opciones y configuraciones de documentos en Python y .NET. Aprenda a optimizar la creación y el formato de documentos utilizando instrucciones paso a paso y ejemplos de código fuente.
 type: docs
 weight: 14
 url: /es/python-net/document-options-and-settings/
@@ -38,6 +38,6 @@ Aprenda técnicas avanzadas para fusionar y agregar documentos usando Aspose.Wor
 ### [Ajuste de las opciones y configuraciones del documento para lograr eficiencia](./manage-document-options-settings/)
 Aprenda cómo manipular eficientemente documentos de Word usando Aspose.Words para Python. Guía paso a paso con código fuente.
 ### [Propiedades de documentos y gestión de metadatos](./document-properties-metadata/)
-Aprenda a administrar las propiedades y los metadatos de los documentos usando Aspose.Words para Python. Guía paso a paso con código fuente.
+Aprenda a administrar las propiedades y los metadatos de los documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente.
 ### [Ampliación de la funcionalidad del documento con extensiones web](./document-functionality-web-extensions/)
 Aprenda cómo ampliar la funcionalidad de los documentos con extensiones web usando Aspose.Words para Python. Guía paso a paso con código fuente para una integración perfecta.

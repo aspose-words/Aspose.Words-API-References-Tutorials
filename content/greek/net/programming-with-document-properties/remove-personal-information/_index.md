@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInforma
 
 ## Βήμα 3: Διαγραφή προσωπικών στοιχείων
 
- Τώρα θα ενεργοποιήσουμε την αφαίρεση των προσωπικών πληροφοριών ορίζοντας το`RemovePersonalInformation`ιδιοκτησία σε`true`. Χρησιμοποιήστε τον παρακάτω κώδικα:
+ Τώρα θα ενεργοποιήσουμε την αφαίρεση των προσωπικών πληροφοριών ορίζοντας το`RemovePersonalInformation`ιδιοκτησία σε`true`. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 doc.RemovePersonalInformation = true;
@@ -38,7 +38,7 @@ doc.RemovePersonalInformation = true;
 
 ## Βήμα 4: Αποθήκευση του εγγράφου
 
-Τέλος, θα αποθηκεύσουμε το έγγραφο με την αφαίρεση των προσωπικών στοιχείων. Χρησιμοποιήστε τον παρακάτω κώδικα:
+Τέλος, θα αποθηκεύσουμε το έγγραφο με την αφαίρεση των προσωπικών στοιχείων. Χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
 doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.docx");

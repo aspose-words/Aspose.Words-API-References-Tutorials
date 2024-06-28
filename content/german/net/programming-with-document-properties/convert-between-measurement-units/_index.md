@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 3: Maßeinheiten konfigurieren
 
-Jetzt werden wir die Werte für Ränder, Kopf- und Fußzeilenabstände usw. in verschiedene Maßeinheiten umrechnen. Verwenden Sie den folgenden Code, um Werte in bestimmten Maßeinheiten anzugeben:
+Nun werden wir die Werte für Ränder, Kopf- und Fußzeilenabstände usw. in verschiedene Maßeinheiten umrechnen. Verwenden Sie den folgenden Code, um Werte in bestimmten Maßeinheiten anzugeben:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Dieser Code verwendet die`ConvertUtil` Klasse von Aspose.Words zum Konvertieren der angegebenen Werte in Zoll (`InchToPoint` ). Sie können auch andere im verfügbare Konvertierungsmethoden verwenden`ConvertUtil` Klasse, um Werte in andere Maßeinheiten umzuwandeln.
+ Dieser Code verwendet die`ConvertUtil` Klasse von Aspose.Words zum Konvertieren der angegebenen Werte in Zoll (`InchToPoint` ). Sie können auch andere im verfügbare Konvertierungsmethoden verwenden`ConvertUtil` Klasse zum Konvertieren von Werten in andere Maßeinheiten.
 
 ### Beispielquellcode für die Konvertierung zwischen Maßeinheiten mit Aspose.Words für .NET
 
@@ -56,4 +56,4 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
   
 ```
 
-Sie haben jetzt gelernt, wie Sie zwischen Maßeinheiten konvertieren, wenn Sie Ränder, Kopf- und Fußzeilenabstände usw. in einem Dokument mit Aspose.Words für .NET angeben. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie die Werte in den gewünschten Maßeinheiten ganz einfach in Ihren eigenen Dokumenten angeben.
+Sie haben jetzt gelernt, wie Sie zwischen Maßeinheiten konvertieren, wenn Sie Ränder, Kopf- und Fußzeilenabstände usw. in einem Dokument mit Aspose.Words für .NET angeben. Indem Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie die Werte in den gewünschten Maßeinheiten ganz einfach in Ihren eigenen Dokumenten angeben.

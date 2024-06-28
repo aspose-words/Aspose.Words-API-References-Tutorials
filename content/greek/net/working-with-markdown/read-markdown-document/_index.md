@@ -50,7 +50,7 @@ paragraph.ParagraphFormat.Style = doc.Styles["Quote"];
 doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 ```
 
-Συγχαρητήρια ! Τώρα έχετε μάθει πώς να διαβάζετε ένα έγγραφο Markdown με το Aspose.Words για .NET.
+συγχαρητήρια ! Τώρα έχετε μάθει πώς να διαβάζετε ένα έγγραφο Markdown με το Aspose.Words για .NET.
 
 
 ### Συχνές ερωτήσεις

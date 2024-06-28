@@ -10,7 +10,7 @@ url: /vi/java/document-printing/guide-to-document-printing/
 
 ## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình in tài liệu bằng Aspose.Words cho Java. Cho dù bạn là nhà phát triển đang làm việc trong các dự án xử lý văn bản hay xử lý tài liệu, việc hiểu cách in tài liệu theo chương trình có thể rất có lợi. Chúng tôi sẽ đề cập đến các bước cần thiết để giúp bạn bắt đầu in tài liệu một cách nhanh chóng.
+Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình in tài liệu bằng Aspose.Words cho Java. Cho dù bạn là nhà phát triển đang làm việc trong các dự án xử lý văn bản hay xử lý tài liệu, việc hiểu cách in tài liệu theo chương trình có thể mang lại lợi ích rất lớn. Chúng tôi sẽ đề cập đến các bước cần thiết để giúp bạn bắt đầu in tài liệu một cách nhanh chóng.
 
 ## Hiểu về in tài liệu
 

@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Шаг 4. Добавьте исходный документ в целевой документ.
 
- Использовать`AppendDocument` метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting` в качестве второго параметра и параметры формата импорта в качестве третьего параметра.
+ Использовать`AppendDocument` метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting`в качестве второго параметра и параметры формата импорта в качестве третьего параметра.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## Шаг 5. Сохраните целевой документ.
 
- Наконец, сохраните измененный целевой документ, используя команду`Save` метод`Document` объект.
+Наконец, сохраните измененный целевой документ, используя команду`Save` метод`Document` Объект Object.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

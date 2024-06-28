@@ -1,79 +1,114 @@
 ---
-title: Pas Otomatis Dengan Lebar Halaman
-linktitle: Pas Otomatis Dengan Lebar Halaman
+title: Pas Otomatis Ke Jendela
+linktitle: Pas Otomatis Ke Jendela
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyesuaikan tabel secara otomatis dengan lebar halaman di dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara menyesuaikan tabel secara otomatis dengan lebar halaman di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk mengotomatiskan alur kerja dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/programming-with-tables/auto-fit-to-page-width/
 ---
 
-Dalam tutorial ini, kita akan mempelajari cara menggunakan Aspose.Words untuk .NET untuk menyesuaikan tabel secara otomatis dengan lebar halaman di dokumen Word. Kami akan mengikuti panduan langkah demi langkah untuk memahami kode dan menerapkan fitur ini. Di akhir tutorial ini, Anda akan mampu memanipulasi tabel di dokumen Word secara terprogram.
+## Perkenalan
 
-## Langkah 1: Pengaturan Proyek
-1. Luncurkan Visual Studio dan buat proyek C# baru.
-2. Tambahkan referensi ke perpustakaan Aspose.Words untuk .NET.
+Hai! Apakah Anda ingin mengotomatiskan tugas pemrosesan dokumen Anda menggunakan Aspose.Words untuk .NET? Baik Anda membuat laporan, membuat templat, atau memanipulasi dokumen yang ada, Aspose.Words adalah alat canggih yang dapat membantu Anda mencapai semua itu dan banyak lagi. Dalam tutorial ini, kita akan mendalami cara menyesuaikan tabel secara otomatis dengan lebar halaman di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan memandu Anda melalui setiap langkah, mulai dari menyiapkan lingkungan hingga mengimplementasikan fitur dalam kode Anda. Di akhir panduan ini, Anda akan memiliki pemahaman yang kuat tentang cara menangani pemformatan tabel secara terprogram.
 
-## Langkah 2: Membuat dan Mengonfigurasi Dokumen
-Untuk memulai Pemrosesan Kata dengan tabel, kita perlu membuat dokumen dan mengkonfigurasi pembuat dokumen. Ikuti langkah ini:
+## Prasyarat
+
+Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
+
+1. Pengetahuan Dasar C#: Keakraban dengan sintaks dan konsep C# sangat penting.
+2.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/) . Anda bisa memulai dengan a[uji coba gratis](https://releases.aspose.com/).
+3. Visual Studio: Versi terbaru apa pun bisa digunakan, tetapi versi terbaru disarankan.
+4. .NET Framework: Pastikan itu diinstal pada sistem Anda.
+
+Punya segalanya? Besar! Mari beralih ke bagian yang menyenangkan.
+
+## Impor Namespace
+
+Untuk memulai, kita perlu mengimpor namespace yang diperlukan. Ini penting karena memberi kita akses ke kelas dan metode yang akan kita gunakan sepanjang tutorial ini.
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// Buat dokumen dan pembuat dokumen
+Namespace ini penting untuk bekerja dengan dokumen dan pemformatan tabel di Aspose.Words.
+
+## Langkah 1: Menyiapkan Direktori Dokumen
+
+Hal pertama yang pertama, mari kita tentukan direktori dimana dokumen kita akan disimpan. Ini membantu Aspose.Words menemukan dan menyimpan file yang ingin kita manipulasi.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke folder dokumen Anda.
+
+## Langkah 2: Membuat Dokumen Baru
+
+ Selanjutnya, kita akan membuat dokumen Word baru dan menginisialisasi a`DocumentBuilder` untuk membantu kami membangun konten dokumen.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Pastikan untuk mengganti "DIREKTORI DOKUMEN ANDA" dengan jalur sebenarnya ke direktori dokumen Anda.
+ Di sini, kami menginisialisasi a`Document` objek dan a`DocumentBuilder` objek yang akan kita gunakan untuk menyisipkan dan memformat konten kita.
 
-## Langkah 3: Memasukkan dan Mengonfigurasi Tabel
-Selanjutnya, kita akan menyisipkan tabel ke dalam dokumen dengan lebar yang memakan setengah lebar halaman. Gunakan kode berikut:
+## Langkah 3: Memasukkan Tabel
+
+Sekarang, mari masukkan tabel ke dalam dokumen kita. Kita akan mulai dengan membuat tabel yang berukuran setengah lebar halaman.
 
 ```csharp
-// Masukkan tabel dan konfigurasikan lebarnya
-Table table = builder. StartTable();
-builder. InsertCell();
-table. PreferredWidth = PreferredWidth. FromPercent(50);
+Table table = builder.StartTable();
+builder.InsertCell();
+table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("Cell #2");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("Cell #3");
 ```
 
-Di sini kita menggunakan pembuat dokumen untuk mulai membuat tabel, menyisipkan sel, dan mengatur lebar tabel yang diinginkan menjadi 50% dari lebar halaman. Kemudian kami menambahkan teks di setiap sel.
+ Pada langkah ini, kita memulai sebuah tabel, menyisipkan sel, dan menambahkan beberapa teks ke setiap sel. Itu`AutoFit` Metode ini digunakan untuk mengatur lebar tabel agar sesuai dengan lebar halaman.
 
-## Langkah 4: Menyimpan dokumen yang dimodifikasi
-Terakhir, kita perlu menyimpan dokumen yang telah dimodifikasi dengan tabel yang disesuaikan dengan lebar halaman. Gunakan kode berikut:
+## Langkah 4: Menyimpan Dokumen
+
+Terakhir, kita perlu menyimpan dokumen kita. Ini akan menulis perubahan yang kita buat pada file Word baru.
 
 ```csharp
-// Simpan dokumen yang diubah
 doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
-Pastikan untuk menentukan jalur dan nama file yang benar untuk dokumen keluaran.
-  
-### Contoh kode sumber untuk Pas Otomatis Ke Lebar Halaman menggunakan Aspose.Words untuk .NET 
+Baris kode ini menyimpan dokumen ke direktori tertentu dengan nama file tertentu.
 
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Langkah 5: Menjalankan Kode
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Sisipkan tabel dengan lebar setengah lebar halaman.
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	table.PreferredWidth = PreferredWidth.FromPercent(50);
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	builder.Writeln("Cell #2");
-	builder.InsertCell();
-	builder.Writeln("Cell #3");
-	doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
-```
+Setelah Anda menulis kodenya, jalankan di Visual Studio. Dokumen Anda akan disimpan di direktori yang ditentukan dengan tabel disesuaikan secara otomatis dengan lebar halaman.
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara menyesuaikan tabel secara otomatis dengan lebar halaman di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini dan menerapkan kode C# yang disediakan, Anda dapat memanipulasi tabel di dokumen Word Anda secara terprogram. Fitur ini memungkinkan Anda menyesuaikan lebar tabel secara dinamis sesuai halaman, sehingga menawarkan dokumen yang profesional dan menarik secara visual.
+
+ Dan itu dia! Anda telah berhasil mempelajari cara menyesuaikan tabel secara otomatis dengan lebar halaman di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup pengaturan lingkungan Anda, membuat dan memformat tabel, dan menyimpan dokumen. Aspose.Words menawarkan banyak fitur, jadi pastikan untuk menjelajahinya[dokumentasi API](https://reference.aspose.com/words/net/) untuk memanfaatkan sepenuhnya kemampuannya.
+
+## FAQ
+
+### 1. Apa itu Aspose.Words untuk .NET?
+
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini sempurna untuk mengotomatisasi tugas-tugas yang berhubungan dengan dokumen.
+
+### 2. Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
+
+ Anda dapat mencoba Aspose.Words untuk .NET menggunakan a[uji coba gratis](https://releases.aspose.com/). Untuk penggunaan jangka panjang, Anda harus membeli lisensi.
+
+### 3. Bagaimana cara memformat tabel secara berbeda?
+
+Anda dapat menyesuaikan pemformatan tabel dengan menggunakan metode berbeda yang disediakan oleh Aspose.Words. Periksalah[dokumentasi API](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
+
+### 4. Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
+
+Anda bisa mendapatkan dukungan dengan mengunjungi[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8).
+
+### 5. Bisakah saya memanipulasi elemen lain seperti gambar dan bagan?
+
+ Ya, Aspose.Words memungkinkan Anda memanipulasi berbagai elemen seperti gambar, bagan, dan SmartArt. Jelajahi[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.

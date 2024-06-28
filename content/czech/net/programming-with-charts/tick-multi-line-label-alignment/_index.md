@@ -1,6 +1,6 @@
 ---
-title: Zaškrtněte Zarovnání štítků s více řádky v grafu
-linktitle: Zaškrtněte Zarovnání štítků s více řádky v grafu
+title: Zaškrtněte víceřádkové zarovnání štítků v grafu
+linktitle: Zaškrtněte víceřádkové zarovnání štítků v grafu
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak zarovnat víceřádkové popisky v ose grafu pomocí Aspose.Words for .NET.
 type: docs
@@ -17,7 +17,7 @@ Ujistěte se, že máte následující předpoklady:
 - Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
 - Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
 
-## Krok 2: Vytvořte nový dokument a vložte graf
+## Krok 2: Vytvořte nový dokument a vložte graf.
 
  Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
 
@@ -82,7 +82,7 @@ S Aspose.Words for .NET můžete snadno přistupovat k vlastnosti zarovnání š
 ### Nejčastější dotazy
 
 #### Q1. Co jsou víceřádkové štítky na ose grafu?
-Víceřádkové štítky na ose grafu odkazují na štítky os, které se rozprostírají přes více řádků, když je text štítku dlouhý nebo vyžaduje zalomení, aby se vešel do dostupného prostoru. Namísto zkrácení textu štítku nebo vizuálního nepořádku osa grafu automaticky rozděluje štítky na více řádků, aby byla zajištěna čitelnost. Víceřádkové štítky jsou zvláště užitečné při práci s dlouhými štítky kategorií nebo hodnot v grafech.
+Zaškrtávací víceřádkové štítky na ose grafu odkazují na štítky os, které se rozprostírají přes více řádků, když je text štítku dlouhý nebo vyžaduje zalomení, aby se vešel do dostupného prostoru. Namísto zkrácení textu štítku nebo vizuálního nepořádku osa grafu automaticky rozděluje štítky na více řádků, aby byla zajištěna čitelnost. Zaškrtávací víceřádkové štítky jsou užitečné zejména při práci s dlouhými štítky kategorií nebo hodnot v grafech.
 
 #### Q2. Mohu přizpůsobit zarovnání štítků na ose grafu?
  Ano, můžete upravit zarovnání štítků v ose grafu pomocí Aspose.Words for .NET. Přístupem k`TickLabelAlignment` vlastnictvím`ChartAxis` objektu, můžete nastavit požadované zarovnání pro popisky. Možnosti zarovnání zahrnují zarovnání doleva, doprava, na střed nebo do bloku. Úprava zarovnání vám umožňuje ovládat horizontální umístění štítků podél osy grafu, což zajišťuje správnou čitelnost a vizuální prezentaci.

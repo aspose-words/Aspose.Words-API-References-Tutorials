@@ -102,7 +102,7 @@ doc.save("document_with_inserted_fields.docx");
 
 XML データをドキュメントに統合すると、特に動的コンテンツを生成する場合に強力になります。 Aspose.Words for Java は、このプロセスを簡素化します。
 
-### XMLデータのバインディング
+### XMLデータのバインド
 
 XML データをドキュメントに簡単にバインドします。
 

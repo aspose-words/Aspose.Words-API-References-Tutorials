@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Bước 2: Đặt vị trí chú thích cuối trang và chú thích cuối trang
 
- Tiếp theo, truy cập vào`FootnoteOptions` Và`EndnoteOptions` thuộc tính của tài liệu để đặt vị trí của chú thích cuối trang và chú thích cuối trang. Trong ví dụ này, chúng tôi đặt vị trí của chú thích ở bên dưới văn bản và vị trí của chú thích ở cuối phần:
+ Tiếp theo, truy cập vào`FootnoteOptions` Và`EndnoteOptions`thuộc tính của tài liệu để đặt vị trí của chú thích cuối trang và chú thích cuối trang. Trong ví dụ này, chúng tôi đặt vị trí của chú thích ở bên dưới văn bản và vị trí của chú thích ở cuối phần:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

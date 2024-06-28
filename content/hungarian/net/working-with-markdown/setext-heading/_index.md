@@ -1,6 +1,6 @@
 ---
-title: Szövegcímsor
-linktitle: Szövegcímsor
+title: Setex címsor
+linktitle: Setex címsor
 second_title: Aspose.Words Document Processing API
 description: Az Aspose.Words for .NET segítségével megtudhatja, hogyan használhatja a Setext fejlécet a dokumentumok formázására az Aspose.Words for .NET segítségével – lépésről lépésre.
 type: docs

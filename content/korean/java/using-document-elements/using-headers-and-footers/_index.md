@@ -8,7 +8,7 @@ weight: 16
 url: /ko/java/using-document-elements/using-headers-and-footers/
 ---
 
-이 종합 가이드에서는 Aspose.Words for Java에서 머리글과 바닥글을 사용하는 과정을 안내합니다. 머리글과 바닥글은 문서 서식의 필수 요소이며 Aspose.Words는 필요에 따라 이를 생성하고 사용자 정의할 수 있는 강력한 도구를 제공합니다.
+이 종합 가이드에서는 Aspose.Words for Java에서 머리글과 바닥글을 사용하는 과정을 안내합니다. 머리글과 바닥글은 문서 서식의 필수 요소이며 Aspose.Words는 필요에 따라 이를 만들고 사용자 정의할 수 있는 강력한 도구를 제공합니다.
 
 이제 각 단계를 자세히 살펴보겠습니다.
 

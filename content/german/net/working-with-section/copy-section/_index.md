@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## Schritt 3: Kopieren Sie den Abschnitt in das Zieldokument
- Um den Abschnitt vom Quelldokument in das Zieldokument zu kopieren, verwenden wir die`ImportNode` Methode zum Importieren des Quellabschnitts und Hinzufügen zum Zieldokument.
+ Um den Abschnitt vom Quelldokument in das Zieldokument zu kopieren, verwenden wir die`ImportNode`Methode zum Importieren des Quellabschnitts und Hinzufügen zum Zieldokument.
 
 ```csharp
 // Holen Sie sich den Quellabschnitt
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### F: Wie lade ich Quell- und Zieldokumente in Aspose.Words für .NET?
 
- A: Um das Quelldokument in eine Instanz von zu laden`Document` Klasse aufgerufen`srcDoc` und erstellen Sie eine leere Instanz von`Document` Klasse aufgerufen`dstDoc` Für das Zieldokument können Sie den folgenden Code verwenden:
+A: Um das Quelldokument in eine Instanz von zu laden`Document` Klasse aufgerufen`srcDoc` und erstellen Sie eine leere Instanz von`Document` Klasse aufgerufen`dstDoc` Für das Zieldokument können Sie den folgenden Code verwenden:
 
 ```csharp
 // Laden Sie das Quelldokument

@@ -66,7 +66,7 @@ Aspose.Words for .NET cung cấp nhiều tùy chọn khác nhau để tùy chỉ
 
 #### Tôi có thể chia tài liệu dựa trên tiêu chí khác không?
 
-Có, ngoài việc sử dụng dấu ngắt phần làm tiêu chí phân tách, Aspose.Words for .NET còn cung cấp các tùy chọn khác như ngắt đoạn, kiểu tiêu đề hoặc nội dung cụ thể làm tiêu chí để phân chia tài liệu. Bạn có thể chọn tiêu chí phù hợp nhất dựa trên yêu cầu của mình và điều chỉnh mã cho phù hợp.
+Có, ngoài việc sử dụng dấu ngắt phần làm tiêu chí phân chia, Aspose.Words for .NET còn cung cấp các tùy chọn khác như ngắt đoạn, kiểu tiêu đề hoặc nội dung cụ thể làm tiêu chí để phân chia tài liệu. Bạn có thể chọn tiêu chí phù hợp nhất dựa trên yêu cầu của mình và điều chỉnh mã cho phù hợp.
 
 #### Có thể chia tài liệu thành các định dạng khác ngoài HTML không?
 

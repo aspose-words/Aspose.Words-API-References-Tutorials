@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- 그만큼`Resolution` 속성은 이미지의 목표 해상도를 지정하고`ResolutionThreshold`속성은 이미지가 축소되지 않는 최소 해상도를 지정합니다.
+ 그만큼`Resolution` 속성은 이미지의 목표 해상도를 지정하고`ResolutionThreshold`이 속성은 이미지가 축소되지 않는 최소 해상도를 지정합니다.
 
 ## 3단계: 문서를 PDF로 변환
 

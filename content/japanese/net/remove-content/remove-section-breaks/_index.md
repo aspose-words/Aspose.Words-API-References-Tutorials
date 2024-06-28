@@ -2,7 +2,7 @@
 title: Word文書内のセクション区切りを削除する
 linktitle: Word文書内のセクション区切りを削除する
 second_title: Aspose.Words ドキュメント処理 API
-description: .NET 用の Aspose.Words ライブラリを使用して Word 文書内のセクション区切りを削除する方法を学びます。文書の書式を乱す可能性のあるセクション区切りを効果的に排除します。
+description: .NET 用の Aspose.Words ライブラリを使用して Word 文書内のセクション区切りを削除する方法を学びます。文書の書式を乱す可能性があるセクション区切りを効果的に排除します。
 type: docs
 weight: 10
 url: /ja/net/remove-content/remove-section-breaks/
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 次に、Word 文書を`Document`を使用したクラス`Load`方法。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
@@ -59,7 +59,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "your-document.docx");
 
 //最後のセクションの前のセクションから始まり、最初のセクションに移動するすべてのセクションをループします。
@@ -92,7 +92,7 @@ A: Word 文書内のセクション区切りを削除するには、まず Aspos
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 

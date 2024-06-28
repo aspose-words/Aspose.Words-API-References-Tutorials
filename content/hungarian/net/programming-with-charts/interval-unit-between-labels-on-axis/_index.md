@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -94,7 +94,7 @@ Az Aspose.Words for .NET segítségével rugalmasan testreszabhatja a diagram k�
 ### GYIK
 
 #### Q1. Mik azok a tengelycímkék a diagramban?
-diagram tengelycímkéi az értékek szöveges megjelenítésére utalnak a diagram vízszintes (X-tengely) vagy függőleges (Y-tengely) tengelye mentén. Ezek a címkék segítenek azonosítani és értelmezni a diagramon ábrázolt adatpontokat. A tengelycímkék kontextust biztosítanak, és lehetővé teszik a felhasználók számára, hogy megértsék a diagram skáláját és értéktartományát.
+diagram tengelycímkéi az értékek szöveges megjelenítésére utalnak a diagram vízszintes (X-tengely) vagy függőleges (Y-tengely) tengelye mentén. Ezek a címkék segítenek azonosítani és értelmezni a diagramon ábrázolt adatpontokat. A tengelycímkék kontextust biztosítanak, és lehetővé teszik a felhasználók számára, hogy megértsék a diagramon szereplő értékek skáláját és tartományát.
 
 #### Q2. Hogyan szabhatom testre a tengelycímkék közötti távolságot?
  A diagramon a tengelycímkék közötti távolság testreszabásához az Aspose.Words for .NET használatával elérheti a`AxisX` vagy`AxisY` a diagram tulajdonságait, és módosítsa a`TickLabelSpacing` ingatlan. Beállításával a`TickLabelSpacing` egy adott értékhez szabályozhatja a megfelelő tengelyen lévő címkék közötti intervallum mértékegységét, és az Ön igényei szerint állíthatja be a távolságot.
@@ -106,4 +106,4 @@ Igen, az Aspose.Words for .NET használatával különböző távolságot állí
 A tengelyen lévő címkék közötti intervallum mértékegysége határozza meg a diagramon megjelenített egymást követő címkék közötti távolságot. Az intervallum mértékegységének beállításával szabályozhatja a címkék sűrűségét, és gondoskodhat a megfelelő távolságról, hogy elkerülje a túlzsúfoltságot és az átfedést. Az intervallum mértékegységének beállítása lehetővé teszi az adatok olvashatóbb és látványosabb megjelenítését.
 
 #### Q5. Módosíthatom a tengelycímkék egyéb tulajdonságait?
-Igen, az Aspose.Words for .NET tulajdonságok széles skáláját kínálja a tengelycímkék megjelenésének és viselkedésének testreszabásához. Módosíthatja a tulajdonságokat, például a betűtípust, a méretet, a színt, a tájolást, az igazítást és egyebeket, hogy elérje a tengelycímkék kívánt formázását és stílusát. A könyvtár széles körű ellenőrzést biztosít a diagramelemek felett, lehetővé téve, hogy professzionális megjelenésű diagramokat hozzon létre az Ön egyedi igényei szerint.
+Igen, az Aspose.Words for .NET tulajdonságok széles skáláját kínálja a tengelycímkék megjelenésének és viselkedésének testreszabásához. Módosíthatja a tulajdonságokat, például a betűtípust, a méretet, a színt, a tájolást, az igazítást és egyebeket, hogy elérje a tengelycímkék kívánt formázását és stílusát. A könyvtár széleskörű ellenőrzést biztosít a diagramelemek felett, lehetővé téve, hogy professzionális megjelenésű diagramokat hozzon létre az Ön egyedi igényei szerint.

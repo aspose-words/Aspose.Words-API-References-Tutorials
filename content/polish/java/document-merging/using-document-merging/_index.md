@@ -53,7 +53,7 @@ public class DocumentMerger {
 }
 ```
 
- W powyższym przykładzie załadowaliśmy dwa dokumenty za pomocą metody`Document` class, a następnie użyłem`appendDocument()`metoda scalania zawartości „dokumentu2.docx” z „dokumentem1.docx” przy jednoczesnym zachowaniu formatowania dokumentu źródłowego.
+ W powyższym przykładzie załadowaliśmy dwa dokumenty za pomocą metody`Document` class, a następnie użyłem`appendDocument()`metoda scalania zawartości „document2.docx” z „document1.docx” przy jednoczesnym zachowaniu formatowania dokumentu źródłowego.
 
 ## 4. Obsługa formatowania dokumentów
 
@@ -165,7 +165,7 @@ public class DocumentMerger {
 }
 ```
 
- Używając`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words zachowuje style, które różnią się pomiędzy dokumentami źródłowymi i docelowymi, skutecznie rozwiązując konflikty.
+ Używając`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words zachowuje style, które różnią się między dokumentami źródłowymi i docelowymi, skutecznie rozwiązując konflikty.
 
 ## 9. Najlepsze praktyki dotyczące łączenia dokumentów
 
@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words for Java umożliwia programistom Java łatwe łączenie dokumentów programu Word. Postępując zgodnie ze szczegółowym przewodnikiem zawartym w tym artykule, możesz teraz z łatwością łączyć dokumenty, obsługiwać formatowanie, wstawiać przerwy i zarządzać konfliktami. Dzięki Aspose.Words dla Java łączenie dokumentów staje się płynnym i zautomatyzowanym procesem, oszczędzającym cenny czas i wysiłek.
 
-## 11. Często zadawane pytania 
+## 11.FAQ 
 
 ### Czy mogę łączyć dokumenty o różnych formatach i stylach?
 

@@ -56,7 +56,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
 ## Krok 5: Použití regulárních výrazů pro hledání a nahrazování
 
-K provádění operací vyhledávání a nahrazování v textu dokumentu použijeme regulární výrazy. V našem příkladu vyhledáme všechny výskyty písmene "e" a nahradíme je hvězdičkou "* ". .SÍŤ`Regex` třída se k tomu používá:
+K provádění operací vyhledávání a nahrazování v textu dokumentu použijeme regulární výrazy. V našem příkladu vyhledáme všechny výskyty písmene "e" a nahradíme je hvězdičkou "* ". .SÍŤ`Regex` k tomu se používá třída:
 
 ```csharp
 Regex regex = new Regex("e");
@@ -122,7 +122,7 @@ Zde je úplný ukázkový zdrojový kód, který demonstruje použití funkce "I
 
 ## Závěr
 
-tomto článku jsme prozkoumali zdrojový kód C#, abychom pochopili, jak používat funkci "Ignorovat text uvnitř Delete Revisions" v Aspose.Words pro .NET. Tato funkce je užitečná pro ignorování textu uvnitř odstraněných revizí při manipulaci s dokumenty. Postupovali jsme podle podrobného průvodce vytvořením dokumentu, vložením textu, odstraněním odstavce se sledováním revizí, použitím funkce "Ignorovat text uvnitř odstranění revizí" a provedením operací hledání a nahrazení.
+tomto článku jsme prozkoumali zdrojový kód C#, abychom pochopili, jak používat funkci "Ignorovat text uvnitř Delete Revisions" v Aspose.Words pro .NET. Tato funkce je užitečná pro ignorování textu uvnitř odstraněných revizí při manipulaci s dokumenty. Postupovali jsme podle podrobného průvodce vytvořením dokumentu, vložením textu, odstraněním odstavce se sledováním revizí, použitím funkce "Ignorovat text uvnitř odstranění revizí" a provedením operací hledání a nahrazování.
 
 ### FAQ
 

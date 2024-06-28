@@ -36,7 +36,7 @@ import com.aspose.words.FieldOptions;
 Document doc = new Document("Field sample - BARCODE.docx");
 ```
 
-## Stellen Sie den Barcode-Generator ein
+## Legen Sie den Barcode-Generator fest
 
  Richten Sie mithilfe von einen benutzerdefinierten Barcode-Generator ein`FieldOptions` Klasse. In diesem Beispiel gehen wir davon aus, dass Sie a implementiert haben`CustomBarcodeGenerator`Klasse zum Generieren des Barcodes. Ersetzen`CustomBarcodeGenerator` mit Ihrer eigentlichen Barcode-Generierungslogik:
 

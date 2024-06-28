@@ -15,7 +15,7 @@ Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
 - Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
 
 ## Bước 1: Xác định thư mục tài liệu
- Bắt đầu bằng cách đặt đường dẫn thư mục đến vị trí tài liệu Word của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+Bắt đầu bằng cách đặt đường dẫn thư mục đến vị trí tài liệu Word của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

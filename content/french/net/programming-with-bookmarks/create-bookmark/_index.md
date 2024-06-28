@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Étape 3 : Création de signets imbriqués
 
-Nous pouvons également créer des signets imbriqués dans un signet principal. Nous utilisons le même`StartBookmark` et`EndBookmark` méthodes pour créer et mettre fin aux signets imbriqués :
+ Nous pouvons également créer des signets imbriqués dans un signet principal. Nous utilisons le même`StartBookmark` et`EndBookmark` méthodes pour créer et mettre fin aux signets imbriqués :
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -96,7 +96,7 @@ Dans cet article, nous avons exploré le code source C# pour comprendre comment 
 
 ### FAQ
 
-#### Q : Quelles sont les conditions préalables pour utiliser la fonction « Créer des favoris » dans Aspose.Words pour .NET ?
+#### Q : Quelles sont les conditions préalables pour utiliser la fonction « Créer des favoris » dans Aspose.Words for .NET ?
 
 : Pour utiliser la fonction « Créer des favoris » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 

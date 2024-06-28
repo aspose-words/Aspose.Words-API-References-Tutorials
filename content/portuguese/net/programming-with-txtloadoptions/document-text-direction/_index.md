@@ -81,7 +81,7 @@ Este recurso é essencial para garantir que o texto seja exibido corretamente em
 
 Com Aspose.Words, você pode manipular facilmente a direção do texto em seus documentos, proporcionando uma experiência de leitura suave e intuitiva para os usuários.
 
-É importante observar que esse recurso é especialmente útil no processamento de palavras em idiomas que exigem direção de texto específica. Aspose.Words facilita essa tarefa, fornecendo ferramentas poderosas para gerenciar a direção do texto em seus documentos.
+É importante observar que esse recurso é especialmente útil no processamento de palavras com idiomas que exigem direção de texto específica. Aspose.Words facilita essa tarefa, fornecendo ferramentas poderosas para gerenciar a direção do texto em seus documentos.
 
 Lembre-se de usar as opções de carregamento apropriadas, como definir a direção automática do texto, para obter os resultados desejados em seus documentos.
 

@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-fonts/set-font-emphasis-mark/
 ---
 
-In questo tutorial, ti mostreremo come impostare lo stile di enfasi del carattere in un documento Word utilizzando Aspose.Words per .NET. L'enfasi sui caratteri viene utilizzata per evidenziare determinate parole o frasi nel testo.
+In questo tutorial, ti mostreremo come impostare lo stile di enfasi del carattere in un documento di Word utilizzando Aspose.Words per .NET. L'enfasi sui caratteri viene utilizzata per evidenziare determinate parole o frasi nel testo.
 
 ## Prerequisiti
 Prima di iniziare, assicurati di avere i seguenti elementi:
@@ -16,14 +16,14 @@ Prima di iniziare, assicurati di avere i seguenti elementi:
 - La libreria Aspose.Words per .NET installata nel tuo progetto
 
 ## Passaggio 1: definire la directory dei documenti
- Inizia impostando il percorso della directory sulla posizione del tuo documento Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
+Inizia impostando il percorso della directory sulla posizione del tuo documento Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: crea e personalizza il documento
- Crea un'istanza di`Document` classe e un associato`DocumentBuilder` per costruire il contenuto del documento. Usa il`Font.EmphasisMark` proprietà su cui impostare lo stile di enfasi del carattere`EmphasisMark.UnderSolidCircle` . Quindi utilizzare il`Write` E`Writeln` metodi del`DocumentBuilder` per aggiungere testo con l'enfasi del carattere specificato.
+ Crea un'istanza di`Document` classe e un associato`DocumentBuilder` per costruire il contenuto del documento. Usa il`Font.EmphasisMark` proprietà su cui impostare lo stile di enfasi del carattere`EmphasisMark.UnderSolidCircle` . Quindi utilizzare il`Write` E`Writeln` metodi del`DocumentBuilder` per aggiungere testo con il carattere specificato enfatizzato.
 
 ```csharp
 Document document = new Document();

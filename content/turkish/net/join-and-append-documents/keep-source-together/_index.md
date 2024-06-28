@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/join-and-append-documents/keep-source-together/
 ---
 
-Bu eğitim Aspose.Words for .NET'in Kaynağı Birlikte Tut özelliğini kullanma sürecinde size rehberlik edecektir. Bu özellik, kaynak belgenin içeriğini hedef belgenin içeriğiyle bir arada tutarken birden çok Word belgesini birleştirmenize ve eklemenize olanak tanır. 
+Bu eğitim Aspose.Words for .NET'in Kaynağı Birlikte Tut özelliğini kullanma sürecinde size rehberlik edecektir. Bu özellik, kaynak belgenin içeriğini hedef belgenin içeriğiyle bir arada tutarken birden fazla Word belgesini birleştirmenize ve eklemenize olanak tanır. 
 
 ## Önkoşullar
 
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 2: Kaynak ve Hedef Belgelerini Yükleyin
 
- Daha sonra Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. Dosya adlarını güncelleyin`Document` belge adlarınıza göre yapıcı.
+Daha sonra Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. Dosya adlarını güncelleyin`Document` belge adlarınıza göre yapıcı.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Adım 4: Kaynak Belge için "Sonrakiyle Tut" Paragraf Biçimlendirmesini Ayarlayın
 
-Kaynak belgedeki paragrafları bir arada tutmak için belgedeki her paragrafta yinelenebilir ve`KeepWithNext`mülkiyet`true`.
+ Kaynak belgedeki paragrafları bir arada tutmak için belgedeki her paragrafta yinelenebilir ve`KeepWithNext`mülkiyet`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

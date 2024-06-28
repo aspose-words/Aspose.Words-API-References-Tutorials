@@ -13,5 +13,5 @@ url: /ja/net/clone-and-combine-documents/
 | タイトル | 説明 |
 | --- | --- |
 | [Word 文書のクローンを作成する](./cloning-document/) | Aspose.Words for .NET を使用して Word ドキュメントのクローンを作成する方法を学びます。 |
-| [置換時にドキュメントを挿入](./insert-document-at-replace/) | Aspose.Words for .NET を使用して置換時にドキュメントを挿入する方法を学習します。 |
-| [差し込み印刷時に文書を挿入](./insert-document-at-mail-merge/) | Aspose.Words for .NET を使用して、差し込み印刷中にドキュメントを別のドキュメントに挿入する方法を学習します。 |
+| [置換時にドキュメントを挿入](./insert-document-at-replace/) | 詳細なステップバイステップ ガイドで、Aspose.Words for .NET を使用して、ある Word ドキュメントを別の Word ドキュメントにシームレスに挿入する方法を学びましょう。ドキュメント処理を合理化したい開発者に最適です。 |
+| [差し込み印刷時に文書を挿入](./insert-document-at-mail-merge/) | この包括的なステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して差し込み印刷フィールドにドキュメントを挿入する方法を学びます。 |

@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Töltse be a forrás- és céldokumentumot
 
- Ezután be kell töltenie a forrás- és céldokumentumot az Aspose.Words használatával`Document` osztály. Frissítse a fájlneveket a`Document` konstruktor a dokumentumnevek szerint.
+Ezután be kell töltenie a forrás- és céldokumentumot az Aspose.Words használatával.`Document` osztály. Frissítse a fájlneveket a`Document` konstruktor a dokumentumnevek szerint.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## 5. lépés: Csatolja a forrásdokumentumot a céldokumentumhoz
 
- Most hozzáfűzheti a forrásdokumentumot a céldokumentumhoz a segítségével`InsertDocument` módszere a`DocumentBuilder` osztály. Használja a`ImportFormatMode.UseDestinationStyles` paramétert, és adja át a`ImportFormatOptions` az intelligens stílusú viselkedés fenntartása.
+ Most hozzáfűzheti a forrásdokumentumot a céldokumentumhoz a segítségével`InsertDocument` módszere a`DocumentBuilder` osztály. Használja a`ImportFormatMode.UseDestinationStyles` paramétereket, és adja át a`ImportFormatOptions` az intelligens stílusú viselkedés fenntartása.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

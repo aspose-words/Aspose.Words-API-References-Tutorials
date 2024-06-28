@@ -77,7 +77,7 @@ doc.Save(dataDir + "UpdateCultureChamps.pdf");
 
 #### Q：Aspose.Words 中的字段更新文化是什麼？
 
-答：Aspose.Words 中的欄位更新區域性是指用於格式化和更新 Word 文件中欄位值的區域性。區域性決定數字、日期和其他資料更新時在欄位中的顯示方式。
+答：Aspose.Words中的欄位更新區域性是指用於格式化和更新Word文件中欄位值的區域性。區域性決定數字、日期和其他資料更新時在欄位中的顯示方式。
 
 #### Q：如何使用 Aspose.Words 設定 Word 文件中欄位的更新區域性？
 

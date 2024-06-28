@@ -129,7 +129,7 @@ Aspose.Words for Java je univerzální a lze jej použít v různých scénář�
 
 ## Tipy pro odstraňování problémů
 
-Pokud při práci s tvary a grafikou narazíte na problémy, řešení najdete v dokumentaci Aspose.Words for Java nebo na fórech komunity. Mezi běžné problémy patří kompatibilita formátů obrázků a problémy související s písmy.
+Pokud při práci s tvary a grafikou narazíte na problémy, vyhledejte řešení v dokumentaci Aspose.Words for Java nebo na fórech komunity. Mezi běžné problémy patří kompatibilita formátů obrázků a problémy související s písmy.
 
 ## Závěr
 

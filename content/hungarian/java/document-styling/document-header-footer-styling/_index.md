@@ -123,4 +123,4 @@ Ebben a kiterjedt útmutatóban megvizsgáltuk a dokumentumfejlécek és -lábl�
 
 Ne felejtse el gyakorolni ezeket a készségeket, és kísérletezzen különböző stílusokkal, hogy megtalálja a dokumentumaihoz legjobban illőt. Az Aspose.Words for Java lehetővé teszi, hogy teljes mértékben átvegye az irányítást a dokumentum formázása felett, és végtelen lehetőségeket nyit meg lenyűgöző tartalom létrehozásához.
 
-Tehát kezdjen el olyan dokumentumokat készíteni, amelyek maradandó benyomást keltenek. A dokumentumfejléc- és lábléc-stílusban szerzett új szakértelme kétségtelenül a dokumentumok tökéletesítése felé vezet.
+Tehát kezdjen el olyan dokumentumokat készíteni, amelyek maradandó benyomást keltenek. A dokumentumfejléc- és láblécstílusban szerzett új szakértelme kétségtelenül a dokumentumok tökéletesítése felé vezet.

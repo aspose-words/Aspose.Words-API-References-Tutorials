@@ -72,4 +72,4 @@ Ini adalah contoh kode sumber untuk menentukan lokalisasi di tingkat bidang dala
 
 #### T: Bagaimana cara mendapatkan lokal yang saat ini digunakan untuk bidang di Aspose.Words untuk .NET?
 
- J: Untuk mendapatkan lokal yang saat ini digunakan untuk bidang di Aspose.Words untuk .NET, Anda dapat menggunakan bidang tersebut`Field.LocaleId` Properti. Ini akan memungkinkan Anda untuk mendapatkan pengenal lokal yang terkait dengan bidang tersebut.
+ J: Untuk mendapatkan lokal yang saat ini digunakan untuk bidang di Aspose.Words untuk .NET, Anda dapat menggunakan bidang tersebut`Field.LocaleId`Properti. Ini akan memungkinkan Anda untuk mendapatkan pengenal lokal yang terkait dengan bidang tersebut.

@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Langkah 3: Membuat Bookmark Bersarang
 
-Kita juga dapat membuat bookmark bersarang di dalam bookmark utama. Kami menggunakan hal yang sama`StartBookmark` Dan`EndBookmark` metode untuk membuat dan mengakhiri bookmark bersarang:
+ Kita juga dapat membuat bookmark bersarang di dalam bookmark utama. Kami menggunakan hal yang sama`StartBookmark` Dan`EndBookmark` metode untuk membuat dan mengakhiri bookmark bersarang:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");

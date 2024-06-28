@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- V tomto kódu vytvoříme nový`Document` a a`DocumentBuilder` . The`insert_text_box`metoda se používá k přidání textového pole do dokumentu. Obsah, umístění a velikost textového pole si můžete přizpůsobit podle svých požadavků.
+ V tomto kódu vytvoříme nový`Document` a a`DocumentBuilder` . The`insert_text_box` metoda se používá k přidání textového pole do dokumentu. Obsah, umístění a velikost textového pole si můžete přizpůsobit podle svých požadavků.
 
 ## Formátování textových polí
 

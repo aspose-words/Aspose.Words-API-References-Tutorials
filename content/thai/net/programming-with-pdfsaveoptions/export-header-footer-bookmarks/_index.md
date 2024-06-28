@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 
 ## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกบันทึกเป็น PDF
 
- ในการส่งออกบุ๊กมาร์กส่วนหัวและส่วนท้าย เราจำเป็นต้องกำหนดค่า`PdfSaveOptions` วัตถุ. ในตัวอย่างนี้ เราตั้งค่าระดับโครงร่างบุ๊กมาร์กเริ่มต้นเป็น 1 และโหมดการส่งออกบุ๊กมาร์กส่วนหัวและส่วนท้ายเป็น "แรก"
+ ในการส่งออกบุ๊กมาร์กส่วนหัวและส่วนท้าย เราจำเป็นต้องกำหนดค่า`PdfSaveOptions` วัตถุ วัตถุ ในตัวอย่างนี้ เราตั้งค่าระดับโครงร่างบุ๊กมาร์กเริ่มต้นเป็น 1 และโหมดการส่งออกบุ๊กมาร์กส่วนหัวและส่วนท้ายเป็น "ครั้งแรก"
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -46,7 +46,7 @@ saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.Fi
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-นั่นคือทั้งหมดที่ ! คุณได้ส่งออกบุ๊กมาร์กส่วนหัวและส่วนท้ายจากเอกสารเรียบร้อยแล้ว และสร้าง PDF ด้วยบุ๊กมาร์กที่เหมาะสมโดยใช้ Aspose.Words สำหรับ .NET
+นั่นคือทั้งหมด! คุณได้ส่งออกบุ๊กมาร์กส่วนหัวและส่วนท้ายจากเอกสารเรียบร้อยแล้ว และสร้าง PDF ด้วยบุ๊กมาร์กที่เหมาะสมโดยใช้ Aspose.Words สำหรับ .NET
 
 ### ตัวอย่างซอร์สโค้ดสำหรับการส่งออกบุ๊กมาร์กส่วนหัวและส่วนท้ายด้วย Aspose.Words สำหรับ .NET
 

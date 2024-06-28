@@ -52,7 +52,7 @@ Document doc = new Document(MyDir + "Big document.docx");
 
 for (int i = 0; i < doc.Sections.Count; i++)
 {
-	// A dokumentum felosztása kisebb részekre, jelen esetben szakaszonként.
+	// dokumentum felosztása kisebb részekre, jelen esetben szakaszonként.
 	Section section = doc.Sections[i].Clone();
 
 	Document newDoc = new Document();
@@ -74,7 +74,7 @@ Mostantól könnyedén dolgozhat meghatározott részekkel.
 
 Ebben az oktatóanyagban megvizsgáltuk az Aspose.Words for .NET Dokumentum szakaszok szerinti felosztása funkcióját. Megtanultuk, hogyan lehet egy Word-dokumentumot külön szakaszokra bontani, minden szakaszhoz külön dokumentumokat létrehozva. A dokumentum betöltésével, az egyes szakaszokon való iterációval és külön dokumentumként való elmentésével hatékonyan tudtunk konkrét részekkel dolgozni.
 
-A Dokumentum felosztása szakaszok szerint funkció használata előnyös lehet, ha egy dokumentum bizonyos részeit, például fejezeteket, szakaszokat vagy más felosztásokat kell módosítani vagy elemezni. Az Aspose.Words for .NET megbízható és egyszerű megoldást kínál a szakaszok szétválasztására, lehetővé téve a hatékony dokumentumfeldolgozást.
+A Dokumentum felosztása szakaszok szerint funkció akkor lehet előnyös, ha egy dokumentum bizonyos részeit, például fejezeteket, szakaszokat vagy más felosztásokat kell kezelnie vagy elemeznie. Az Aspose.Words for .NET megbízható és egyszerű megoldást kínál a szakaszok szétválasztására, lehetővé téve a hatékony dokumentumfeldolgozást.
 
 Nyugodtan fedezze fel az Aspose.Words for .NET által kínált egyéb hatékony funkciókat, amelyek javítják dokumentumfeldolgozási képességeit és egyszerűsítik a munkafolyamatot.
 

@@ -183,7 +183,7 @@ doc.encrypt(aw.EncryptionType.STANDARD, "password")
 
 ## Conclusione
 
-In questo tutorial hai imparato gli elementi essenziali dell'utilizzo di Aspose.Words per Python per manipolare e migliorare i documenti di Word a livello di codice. Dal caricamento e salvataggio dei documenti alla navigazione nell'albero dei documenti, al lavoro con paragrafi, formattazione, tabelle e altro ancora, ora disponi di solide basi per la manipolazione dei documenti.
+In questo tutorial hai imparato gli elementi essenziali dell'utilizzo di Aspose.Words per Python per manipolare e migliorare i documenti di Word a livello di codice. Dal caricamento e salvataggio dei documenti alla navigazione nell'albero dei documenti, al lavoro con paragrafi, formattazione, tabelle e altro ancora, ora disponi di una solida base per la manipolazione dei documenti.
 
 ## Domande frequenti
 

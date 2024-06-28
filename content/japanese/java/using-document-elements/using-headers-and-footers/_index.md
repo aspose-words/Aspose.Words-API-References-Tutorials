@@ -91,7 +91,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ### 7.2.フッターへの画像の挿入
 
-フッターに画像を挿入するには、`insertImage`メソッドはヘッダーと同様です。
+フッターに画像を挿入するには、`insertImage`ヘッダーと同様のメソッドです。
 
 ### 7.3.フッタースタイルのカスタマイズ
 

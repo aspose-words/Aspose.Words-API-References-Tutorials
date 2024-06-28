@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOption
 
 透過建立一個實例將轉換配置為 PDF 選項`PdfSaveOptions`類別並指定您要使用的 PDF 標準的版本`Compliance`具有價值的財產`PdfCompliance. Pdf17`產生符合 PDF 1.7 標準的 PDF 檔案。
 
-使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`指定路徑和儲存選項的類別。
+使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`類別指定路徑和儲存選項。
 
 #### Q：使用 Aspose.Words for .NET 轉換為 PDF 1.7 有什麼好處？
 答：使用 Aspose.Words for .NET 轉換為 PDF 1.7 的優點是：

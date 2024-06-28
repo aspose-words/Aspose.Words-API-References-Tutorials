@@ -13,5 +13,5 @@ Clone And Combine Documents oferuje samouczki dotyczące klonowania i łączenia
 | Tytuł | Opis |
 | --- | --- |
 | [Klonuj dokument programu Word](./cloning-document/) | Dowiedz się, jak sklonować dokument programu Word za pomocą Aspose.Words dla .NET. |
-| [Wstaw dokument przy zamianie](./insert-document-at-replace/) | Dowiedz się, jak wstawić dokument dotyczący wymiany za pomocą Aspose.Words dla .NET. |
-| [Wstaw dokument podczas korespondencji seryjnej](./insert-document-at-mail-merge/) | Dowiedz się, jak wstawić dokument do innego podczas korespondencji seryjnej za pomocą Aspose.Words dla .NET. |
+| [Wstaw dokument przy zamianie](./insert-document-at-replace/) | Dowiedz się, jak bezproblemowo wstawić jeden dokument programu Word do drugiego za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. Idealny dla programistów chcących usprawnić przetwarzanie dokumentów. |
+| [Wstaw dokument podczas korespondencji seryjnej](./insert-document-at-mail-merge/) | Dowiedz się, jak wstawiać dokumenty w polach korespondencji seryjnej za pomocą Aspose.Words dla .NET, w tym kompleksowym samouczku krok po kroku. |

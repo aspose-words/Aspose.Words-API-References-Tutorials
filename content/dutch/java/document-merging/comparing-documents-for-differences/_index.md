@@ -10,7 +10,7 @@ url: /nl/java/document-merging/comparing-documents-for-differences/
 
 ## Inleiding tot het vergelijken van documenten op verschillen
 
-In de steeds evoluerende wereld van documentbeheer is het garanderen van de nauwkeurigheid en consistentie van uw documenten van het allergrootste belang. Of u nu te maken heeft met juridische contracten, financiële rapporten of eenvoudigweg revisies in uw documenten bijhoudt, de mogelijkheid om documenten te vergelijken op verschillen is een cruciaal kenmerk. Deze stapsgewijze handleiding leidt u door het proces van het vergelijken van documenten op verschillen met behulp van Aspose.Words voor Java, een krachtige API voor het werken met Word-documenten.
+In de steeds evoluerende wereld van documentbeheer is het garanderen van de nauwkeurigheid en consistentie van uw documenten van het allergrootste belang. Of u nu te maken heeft met juridische contracten, financiële rapporten of eenvoudigweg revisies in uw documenten bijhoudt, de mogelijkheid om documenten op verschillen te vergelijken is een cruciaal kenmerk. Deze stapsgewijze handleiding leidt u door het proces van het vergelijken van documenten op verschillen met behulp van Aspose.Words voor Java, een krachtige API voor het werken met Word-documenten.
 
 ## Vereisten
 
@@ -69,7 +69,7 @@ Het vergelijken van documenten op verschillen met behulp van Aspose.Words voor J
 
 ### Hoe installeer ik Aspose.Words voor Java?
 
- Bezoek de downloadpagina om Aspose.Words voor Java te installeren[hier](https://releases.aspose.com/words/java/) en volg de meegeleverde installatie-instructies.
+ Bezoek de downloadpagina om Aspose.Words voor Java te installeren.[hier](https://releases.aspose.com/words/java/) en volg de meegeleverde installatie-instructies.
 
 ### Kan ik documenten met verschillende formaten, zoals DOCX en PDF, vergelijken?
 

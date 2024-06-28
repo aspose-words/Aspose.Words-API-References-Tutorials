@@ -118,11 +118,11 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### T: Apakah mungkin untuk menyesuaikan awalan dan akhiran penomoran daftar yang dimulai ulang di Aspose.Words?
 
- A: Ya, Anda dapat menyesuaikan awalan dan akhiran penomoran daftar yang dimulai ulang di Aspose.Words. Itu`ListLevel` kelas menawarkan properti seperti`ListLevel.NumberPrefix` Dan`ListLevel.NumberSuffix` yang memungkinkan Anda menentukan awalan dan akhiran untuk setiap level dalam daftar. Anda dapat menggunakan properti ini untuk menyesuaikan awalan dan akhiran sesuai kebutuhan.
+ A: Ya, Anda dapat menyesuaikan awalan dan akhiran penomoran daftar yang dimulai ulang di Aspose.Words. Itu`ListLevel` kelas menawarkan properti seperti`ListLevel.NumberPrefix` Dan`ListLevel.NumberSuffix`yang memungkinkan Anda menentukan awalan dan akhiran untuk setiap level dalam daftar. Anda dapat menggunakan properti ini untuk menyesuaikan awalan dan akhiran sesuai kebutuhan.
 
 #### T: Bagaimana cara menentukan nilai penomoran tertentu untuk memulai ulang daftar?
 
-J: Untuk menentukan nilai angka tertentu yang akan digunakan untuk memulai ulang daftar, Anda dapat menggunakan`ListRestartAtNumber` metode meneruskan nilai yang diinginkan sebagai argumen. Misalnya untuk me-restart penomoran dari 5, Anda dapat menggunakan`list.ListRestartAtNumber(5)`.
+ J: Untuk menentukan nilai angka tertentu yang akan digunakan untuk memulai ulang daftar, Anda dapat menggunakan`ListRestartAtNumber` metode meneruskan nilai yang diinginkan sebagai argumen. Misalnya untuk me-restart penomoran dari 5, Anda dapat menggunakan`list.ListRestartAtNumber(5)`.
 
 #### T: Apakah mungkin untuk memulai ulang penomoran daftar multi-level di Aspose.Words?
 

@@ -20,10 +20,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## चरण 2: एक लिंक सम्मिलित करना
 
- हम इसका उपयोग करके एक लिंक डाल सकते हैं`Insertlink` दस्तावेज़ जनरेटर की विधि. हमें लिंक टेक्स्ट, यहां "एस्पोज़", साथ ही गंतव्य यूआरएल निर्दिष्ट करने की आवश्यकता है।
+ हम इसका उपयोग करके एक लिंक डाल सकते हैं`InsertHyperlink` दस्तावेज़ जनरेटर की विधि. हमें लिंक टेक्स्ट, यहां "एपोज़", साथ ही गंतव्य यूआरएल निर्दिष्ट करने की आवश्यकता है।
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com", गलत);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", गलत);
 ```
 
 ### .NET के लिए Aspose.Words वाले लिंक के लिए उदाहरण स्रोत कोड
@@ -34,7 +34,7 @@ builder.Insertlink("Aspose", "https://www.aspose.com", गलत);
 DocumentBuilder builder = new DocumentBuilder();
 
 // लिंक डालें.
-builder.Insertlink("Aspose", "https://www.aspose.com", गलत);
+builder.InsertHyperlink("Aspose", "https://www.aspose.com", गलत);
 ```
 बधाई हो! अब आपने सीख लिया है कि .NET के लिए Aspose.Words के साथ लिंक सुविधा का उपयोग कैसे करें।
 

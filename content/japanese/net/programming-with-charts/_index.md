@@ -26,10 +26,10 @@ Aspose.Words for .NET グラフィックス プログラミング チュート�
 | [XYAxis プロパティの定義](./define-xyaxis-properties/) | Aspose.Words for .NET を使用してグラフの XY 軸プロパティを定義する方法を学びます。 X 軸と Y 軸のカスタマイズ オプションが示されています。 |
 | [軸への日付時刻値](./date-time-values-to-axis/) | Aspose.Words for .NET を使用してグラフの軸に日時値を追加する方法を学びます。 |
 | [軸の数値形式](./number-format-for-axis/) | Aspose.Words for .NET を使用してグラフの軸の数値形式を設定する方法を学習します。 |
-| [軸の境界](./bounds-of-axis/) | Aspose.Words for .NET を使用してグラフの軸の境界を設定し、軸に表示される値の範囲を制御する方法を学びます。 |
+| [軸の境界](./bounds-of-axis/) | 軸に表示される値の範囲を制御する Aspose.Words for .NET を使用して、グラフの軸の境界を設定する方法を学びます。 |
 | [軸上のラベル間の間隔単位](./interval-unit-between-labels-on-axis/) | Aspose.Words for .NET を使用して、グラフの軸上のラベル間の間隔単位を設定する方法を学習します。 |
 | [グラフの軸を非表示にする](./hide-chart-axis/) | Aspose.Words for .NET を使用してドキュメント内のグラフの軸を非表示にする方法を学習します。軸を非表示にすると、より明確で焦点を絞ったグラフ表示が可能になります。 |
-| [複数行ラベルの配置にチェックマークを付ける](./tick-multi-line-label-alignment/) | Aspose.Words for .NET を使用してグラフの軸に複数行の目盛りラベルを配置する方法を学びます。 |
+| [複数行のラベルの配置にチェックマークを付けます](./tick-multi-line-label-alignment/) | Aspose.Words for .NET を使用してグラフの軸に複数行の目盛りラベルを配置する方法を学びます。 |
 | [チャートデータラベル](./chart-data-label/) | Aspose.Words for .NET を使用してグラフにデータ ラベルを追加およびカスタマイズし、データ ポイントに関する追加情報を提供する方法を学びます。 |
 | [データラベルのデフォルトオプション](./default-options-for-data-labels/) | Aspose.Words for .NET を使用してグラフ内のデータ ラベルのデフォルト オプションを設定する方法を学習します。 |
 | [単一のチャート データ ポイント](./single-chart-data-point/) | Aspose.Words for .NET を使用してグラフ内の単一のデータ ポイントをカスタマイズする方法を学びます。 |

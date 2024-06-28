@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-Questo codice utilizza una combinazione di metodi LINQ per filtrare i campi nell'ultimo paragrafo del documento e quindi convertirli in testo semplice chiamando il comando`Unlink()` metodo.
+ Questo codice utilizza una combinazione di metodi LINQ per filtrare i campi nell'ultimo paragrafo del documento e quindi convertirli in testo semplice chiamando il comando`Unlink()` metodo.
 
 ## Passaggio 4: salvataggio del documento modificato
 

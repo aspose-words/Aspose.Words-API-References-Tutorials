@@ -15,7 +15,7 @@ Ebben az oktatóanyagban megtanuljuk, hogyan kell az Aspose.Words for .NET haszn
 2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
 
 ## 2. lépés: A dokumentum betöltése és a táblázat elérése
-Szövegfeldolgozás elindításához a táblázattal be kell töltenünk az azt tartalmazó dokumentumot, és hozzá kell férnünk. Kovesd ezeket a lepeseket:
+A Szövegfeldolgozás elindításához a táblázattal be kell töltenünk az azt tartalmazó dokumentumot, és hozzá kell férnünk. Kovesd ezeket a lepeseket:
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -65,10 +65,10 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//Klónozza a táblázatot, és helyezze be a dokumentumba az eredeti után.
+	// Klónozza a táblázatot, és helyezze be a dokumentumba az eredeti után.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Szúrjon be egy üres bekezdést a két táblázat közé,
+	//Szúrjon be egy üres bekezdést a két táblázat közé,
 	// vagy különben összevonják őket a mentéskor, ami a dokumentum érvényesítésével kapcsolatos.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

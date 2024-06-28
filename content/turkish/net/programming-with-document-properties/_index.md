@@ -11,7 +11,7 @@ Aspose.Words for .NET belge özellikleriyle Kelime İşleme eğitimleri, projele
 
 Bu eğitimler, belge özellikleriyle etkileşimde bulunmak amacıyla Aspose.Words for .NET kütüphanesini kullanma konusunda size adım adım rehberlik edecektir. Mevcut özellikleri nasıl çıkaracağınızı, yeni değerleri nasıl ayarlayacağınızı ve istenmeyen özellikleri nasıl kaldıracağınızı öğreneceksiniz. Belge özelliklerini nasıl değiştireceğinizi anlayarak, profesyonel Word belgeleri oluşturabilecek ve bunları gereksinimlerinize uyacak şekilde özelleştirebileceksiniz.
 
-İster yeni başlayan ister deneyimli bir geliştirici olun, Aspose.Words for .NET belge özelliklerine sahip Kelime İşleme eğitimleri, Word belgenizin özelliklerini etkili bir şekilde yönetmeniz ve geliştirme iş akışınızı optimize etmeniz için size bilgi ve beceri sağlayacaktır.
+İster yeni başlayan ister deneyimli bir geliştirici olun, belge özelliklerine sahip Kelime İşleme üzerine Aspose.Words for .NET eğitimleri, Word belgenizin özelliklerini etkili bir şekilde yönetmeniz ve geliştirme iş akışınızı optimize etmeniz için size bilgi ve beceri sağlayacaktır.
 
  ## Öğreticiler
 | Başlık | Tanım |

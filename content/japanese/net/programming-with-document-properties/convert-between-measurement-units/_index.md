@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
-このコードでは、`ConvertUtil` Aspose.Words のクラスを使用して、指定された値をインチに変換します (`InchToPoint` ）。で利用可能な他の変換方法を使用することもできます。`ConvertUtil`値を他の測定単位に変換するクラス。
+このコードでは、`ConvertUtil`指定された値をインチに変換する Aspose.Words のクラス (`InchToPoint` ）。で利用可能な他の変換方法を使用することもできます。`ConvertUtil`値を他の測定単位に変換するクラス。
 
 ### Aspose.Words for .NET を使用した測定単位間の変換のソース コードの例
 
@@ -56,4 +56,4 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
   
 ```
 
-Aspose.Words for .NET を使用してドキュメント内で余白、ヘッダーとフッターの距離などを指定するときに測定単位を変換する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、独自のドキュメント内で目的の測定単位の値を簡単に指定できます。
+Aspose.Words for .NET を使用してドキュメント内で余白、ヘッダーとフッターの距離などを指定するときに測定単位を変換する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、独自のドキュメントで目的の測定単位の値を簡単に指定できます。

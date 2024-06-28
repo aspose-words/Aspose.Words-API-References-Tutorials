@@ -2,110 +2,113 @@
 title: Word-Dokumente zusammenführen
 linktitle: Dokumente zusammenführen
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mehrere Word-Dokumente zusammenführen. Diese leistungsstarke API vereinfacht das Zusammenführen von Dokumenten und macht es effizient und unkompliziert.
+description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie Word-Dokumente mit Aspose.Words für .NET zusammenführen. Perfekt für die Automatisierung Ihres Dokumenten-Workflows.
 type: docs
 weight: 10
 url: /de/net/split-document/merge-documents/
 ---
+## Einführung
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie mehrere Word-Dokumente mithilfe der Funktion „Dokumente zusammenführen“ von Aspose.Words für .NET zusammenführen. Führen Sie die folgenden Schritte aus, um den Quellcode zu verstehen und ein zusammengeführtes Dokument mit allen Quelldokumenten zu erhalten.
+Hallo! Mussten Sie schon einmal mehrere Word-Dokumente in einer zusammenhängenden Datei zusammenführen? Ganz gleich, ob Sie Berichte zusammenstellen, ein Projekt zusammenstellen oder einfach nur versuchen, Ordnung zu schaffen, das Zusammenführen von Dokumenten kann Ihnen eine Menge Zeit und Mühe ersparen. Mit Aspose.Words für .NET wird dieser Vorgang zum Kinderspiel. In diesem Tutorial erklären wir Ihnen Schritt für Schritt, wie Sie Word-Dokumente mit Aspose.Words für .NET zusammenführen. Dabei werden die einzelnen Schritte aufgeschlüsselt, damit Sie sie problemlos nachvollziehen können. Am Ende werden Sie Dokumente wie ein Profi zusammenführen!
 
-## Schritt 1: Suchen Sie nach zusammenzuführenden Dokumenten
+## Voraussetzungen
 
-Bevor wir die Dokumente zusammenführen, müssen wir die zusammenzuführenden Quelldokumente finden. Hier ist wie:
+Bevor wir loslegen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+
+1. Grundkenntnisse in C#: Sie sollten mit der Syntax und den Konzepten von C# vertraut sein.
+2.  Aspose.Words für .NET: Laden Sie es herunter[Hier](https://releases.aspose.com/words/net/) . Wenn Sie nur auf Entdeckungsreise sind, können Sie mit a beginnen[Kostenlose Testphase](https://releases.aspose.com/).
+3. Visual Studio: Jede neuere Version sollte funktionieren, die neueste Version wird jedoch empfohlen.
+4. .NET Framework: Stellen Sie sicher, dass es auf Ihrem System installiert ist.
+
+Okay, jetzt, da wir die Voraussetzungen geklärt haben, kommen wir zum spaßigen Teil!
+
+## Namespaces importieren
+
+Als Erstes müssen wir die notwendigen Namespaces importieren, um mit Aspose.Words arbeiten zu können. Dadurch können wir auf alle Klassen und Methoden zugreifen, die wir benötigen.
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// Suchen Sie nach zusammenzuführenden Dokumenten.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-.GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.LowCode;
 ```
 
-## Schritt 2: Dokumente zusammenführen
+Diese Namespaces sind für die Erstellung, Bearbeitung und Speicherung von Dokumenten in verschiedenen Formaten unerlässlich.
 
-Jetzt führen wir die Dokumente einzeln zusammen, um ein endgültiges zusammengeführtes Dokument zu erstellen. Hier ist wie:
+## Schritt 1: Einrichten des Dokumentenverzeichnisses
 
-```csharp
-// Öffnen Sie den ersten Teil des resultierenden Dokuments.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// Erstellen Sie ein neues resultierendes Dokument.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// Führen Sie die Dokumente einzeln zusammen.
-foreach(FileSystemInfo documentPath in documentPaths)
-{
-if (documentPath.FullName == sourceDocumentPath)
-keep on going;
-
-mergedDocBuilder.MoveToDocumentEnd();
-mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-```
-
-### Beispielquellcode für Merge Documents mit Aspose.Words für .NET
-
-Hier ist der vollständige Quellcode für die Funktion „Dokumente zusammenführen“ von Aspose.Words für .NET:
+Bevor wir mit dem Zusammenführen von Dokumenten beginnen, müssen wir das Verzeichnis angeben, in dem unsere Dokumente gespeichert sind. Dies hilft Aspose.Words dabei, die Dateien zu finden, die wir zusammenführen möchten.
 
 ```csharp
-// Der Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Suchen Sie nach Dokumenten, die zum Zusammenführen verwendet werden.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
-
-// Öffnen Sie den ersten Teil des resultierenden Dokuments.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// Erstellen Sie ein neues resultierendes Dokument.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// Dokumentteile einzeln zusammenführen.
-foreach (FileSystemInfo documentPath in documentPaths)
-{
-	if (documentPath.FullName == sourceDocumentPath)
-		continue;
-
-	mergedDocBuilder.MoveToDocumentEnd();
-	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-	sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
+
+ Hier legen wir den Pfad zu dem Verzeichnis fest, in dem sich Ihre Word-Dokumente befinden. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad.
+
+## Schritt 2: Einfache Zusammenführung
+
+ Beginnen wir mit einer einfachen Zusammenführung. Wir werden zwei Dokumente mithilfe von zu einem zusammenführen`Merger.Merge` Methode.
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
+```
+
+ In diesem Schritt führen wir zusammen`Document1.docx` Und`Document2.docx` in eine neue Datei namens`MergedDocument.docx`.
+
+## Schritt 3: Zusammenführen mit Speicheroptionen
+
+Manchmal möchten Sie möglicherweise bestimmte Optionen für das zusammengeführte Dokument festlegen, z. B. einen Passwortschutz. So können Sie es machen:
+
+```csharp
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" };
+Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
+```
+
+Dieses Code-Snippet führt die Dokumente mit einem Passwortschutz zusammen und stellt so sicher, dass das endgültige Dokument sicher ist.
+
+## Schritt 4: Zusammenführen und Speichern als PDF
+
+Wenn Sie Dokumente zusammenführen und das Ergebnis als PDF speichern müssen, macht Aspose.Words es Ihnen leicht:
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
+```
+
+ Hier verschmelzen wir`Document1.docx` Und`Document2.docx` und speichern Sie das Ergebnis als PDF-Datei.
+
+## Schritt 5: Erstellen einer Dokumentinstanz aus zusammengeführten Dokumenten
+
+Manchmal möchten Sie möglicherweise vor dem Speichern weiter mit dem zusammengeführten Dokument arbeiten. Sie können eine erstellen`Document` Instanz aus zusammengeführten Dokumenten:
+
+```csharp
+Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
+doc.Save(dataDir + "MergedDocumentInstance.docx");
+```
+
+ In diesem Schritt erstellen wir eine`Document` Instanz aus den zusammengeführten Dokumenten, was eine weitere Bearbeitung vor dem Speichern ermöglicht.
 
 ## Abschluss
 
-Glückwunsch! Sie haben gelernt, wie Sie mehrere Word-Dokumente mit der Funktion „Dokumente zusammenführen“ von Aspose.Words für .NET zusammenführen. Indem Sie dem bereitgestellten Quellcode folgen, können Sie separate Dokumente zu einem einzigen zusammengeführten Dokument kombinieren und dabei die Formatierung jedes Quelldokuments beibehalten.
+ Und da haben Sie es! Sie haben gelernt, wie Sie Word-Dokumente mit Aspose.Words für .NET zusammenführen. In diesem Tutorial wurde das Einrichten Ihrer Umgebung, das Durchführen einfacher Zusammenführungen, das Zusammenführen mit Speicheroptionen, das Konvertieren zusammengeführter Dokumente in PDF und das Erstellen einer Dokumentinstanz aus zusammengeführten Dokumenten behandelt. Aspose.Words bietet eine breite Palette an Funktionen. Entdecken Sie diese also unbedingt[API-Dokumentation](https://reference.aspose.com/words/net/) um sein volles Potenzial auszuschöpfen.
 
-Das Zusammenführen von Dokumenten kann nützlich sein, wenn Sie Informationen aus mehreren Quellen konsolidieren oder aus einzelnen Teilen ein einheitliches Dokument erstellen möchten. Aspose.Words für .NET bietet eine leistungsstarke API, die den Prozess des Zusammenführens von Dokumenten vereinfacht und ihn effizient und unkompliziert macht.
+## FAQs
 
-Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um Ihre Dokumentverarbeitungsmöglichkeiten zu verbessern und Ihren Arbeitsablauf zu optimieren.
+### 1. Was ist Aspose.Words für .NET?
 
-### FAQs
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert zu erstellen, zu bearbeiten und zu konvertieren. Es ist ideal für die Automatisierung dokumentenbezogener Aufgaben.
 
-#### Wie kann ich Dokumente mit unterschiedlicher Formatierung zusammenführen?
+### 2. Kann ich Aspose.Words für .NET kostenlos nutzen?
 
- Beim Zusammenführen von Dokumenten bietet Aspose.Words für .NET die Option, die Formatierung jedes Quelldokuments beizubehalten. Durch die Verwendung der`ImportFormatMode.KeepSourceFormatting` Option behält das zusammengeführte Dokument die Formatierung der Originaldokumente bei. Wenn Sie im gesamten zusammengeführten Dokument eine einheitliche Formatierung anwenden möchten, können Sie die Formatierung nach dem Zusammenführen der Dokumente mithilfe der Aspose.Words-API ändern.
+ Sie können Aspose.Words für .NET mit a ausprobieren[Kostenlose Testphase](https://releases.aspose.com/). Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
 
-#### Kann ich Dokumente in verschiedenen Formaten zusammenführen?
+### 3. Wie gehe ich beim Zusammenführen mit unterschiedlichen Formatierungen um?
 
-Ja, Aspose.Words für .NET unterstützt das Zusammenführen von Dokumenten in verschiedenen Formaten, einschließlich DOCX, DOC, RTF und mehr. Sie können Dokumente unterschiedlicher Formate in die Aspose.Words-API laden und sie unabhängig von ihren Originalformaten zu einem einzigen Dokument zusammenführen.
+ Aspose.Words bietet verschiedene Zusammenführungsformatmodi wie`KeepSourceFormatting` Und`MergeFormatting` . Siehe die[API-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Anweisungen.
 
-#### Kann ich Dokumente mit komplexen Strukturen wie Tabellen und Bildern zusammenführen?
+### 4. Wie erhalte ich Unterstützung für Aspose.Words für .NET?
 
-Absolut! Aspose.Words für .NET ist in der Lage, Dokumente mit komplexen Strukturen, einschließlich Tabellen, Bildern, Kopf- und Fußzeilen und mehr, zusammenzuführen. Die API übernimmt den Zusammenführungsprozess und bewahrt gleichzeitig die Integrität und das Layout des Inhalts in jedem Dokument.
+Sie können Unterstützung erhalten, indem Sie die besuchen[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
 
-#### Ist es möglich, Dokumente mit unterschiedlichen Seitenausrichtungen oder -größen zusammenzuführen?
+### 5. Kann ich andere Dateiformate mit Aspose.Words für .NET zusammenführen?
 
-Ja, Aspose.Words für .NET verarbeitet während des Zusammenführungsprozesses Dokumente mit unterschiedlichen Seitenausrichtungen oder -größen. Das resultierende zusammengeführte Dokument berücksichtigt die unterschiedlichen Seitenausrichtungen und -größen der Quelldokumente.
+Ja, Aspose.Words unterstützt das Zusammenführen verschiedener Dateiformate, einschließlich DOCX, PDF und HTML.

@@ -123,7 +123,7 @@ for (int i = 0; i < 9; i++) {
 ```
 
 ### تنسيق قائمة التوقف: 
-لإيقاف تنسيق القائمة، قم بتعيين القائمة إلى قيمة خالية.
+لإيقاف تنسيق القائمة، قم بتعيين القائمة إلى قيمة فارغة.
 
 ```java
 builder.getListFormat().setList(null);
@@ -164,7 +164,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // قم بإنشاء قائمة مرقمة بناءً على أحد قوالب قوائم Microsoft Word
+        // قم بإنشاء قائمة مرقمة بناءً على أحد قوالب قوائم Microsoft Word.
         //وتطبيقه على الفقرة الحالية لمنشئ المستندات.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // هناك تسعة مستويات في هذه القائمة، دعونا نجربهم جميعا.
@@ -173,7 +173,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // قم بإنشاء قائمة ذات تعداد نقطي استناداً إلى أحد قوالب قوائم Microsoft Word
+        // قم بإنشاء قائمة ذات تعداد نقطي استناداً إلى أحد قوالب قوائم Microsoft Word.
         //وتطبيقه على الفقرة الحالية لمنشئ المستندات.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)
@@ -227,7 +227,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
 نعم، يوفر Aspose.Words for Java خيارات شاملة لتخصيص تنسيقات ترقيم القائمة. يمكنك الرجوع إلى وثائق API للحصول على التفاصيل.
 
 ### هل Aspose.Words for Java متوافق مع أحدث معايير مستندات Word؟
-نعم، يمكنك تكوين Aspose.Words لـ Java ليتوافق مع معايير مستندات Word المختلفة، بما في ذلك ISO 29500.
+نعم، يمكنك تكوين Aspose.Words لـ Java ليتوافق مع معايير مستندات Word المتنوعة، بما في ذلك ISO 29500.
 
 ### هل يمكنني إنشاء مستندات معقدة تحتوي على جداول وصور باستخدام Aspose.Words for Java؟
 قطعاً! يدعم Aspose.Words for Java التنسيق المتقدم للمستندات، بما في ذلك الجداول والصور والمزيد. تحقق من الوثائق للحصول على أمثلة.

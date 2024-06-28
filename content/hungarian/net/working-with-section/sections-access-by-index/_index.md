@@ -1,6 +1,6 @@
 ---
-title: A szakaszok elérése index szerint
-linktitle: A szakaszok elérése index szerint
+title: szakaszok elérése index szerint
+linktitle: szakaszok elérése index szerint
 second_title: Aspose.Words Document Processing API
 description: Ebből az oktatóanyagból megtudhatja, hogyan érheti el a Word-dokumentum részeit index segítségével, és hogyan módosíthatja azok beállításait az Aspose.Words for .NET segítségével.
 type: docs
@@ -36,7 +36,7 @@ Section section = doc.Sections[0];
 ```
 
 ## 3. lépés: Szerkessze a szakasz beállításait
- szakasz beállításainak módosításához a szakasz tulajdonságait használjuk`PageSetup` tárgy. Ebben a példában megváltoztatjuk a margókat, a fejléc és lábléc távolságát, valamint a szöveg oszlopközét.
+ A szakasz beállításainak módosításához a szakasz tulajdonságait használjuk`PageSetup`tárgy. Ebben a példában megváltoztatjuk a margókat, a fejléc és lábléc távolságát, valamint a szöveg oszlopközét.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm
@@ -83,7 +83,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### K: Hogyan tölthető be a dokumentum és a hozzáférési szakasz indexenként az Aspose.Words for .NET-ben?
 
- V: A Word-dokumentum betöltése a`Document` osztályba, és index szerint érhet el egy adott szakaszt, a következő kódot használhatja:
+ V: A Word-dokumentum betöltése a`Document` osztályba, és index alapján hozzáférhet egy adott szakaszhoz, a következő kódot használhatja:
 
 ```csharp
 // Töltse be a dokumentumot
@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### K: Hogyan módosíthatom a szakaszbeállításokat az Aspose.Words for .NET-ben?
 
- V: Egy szakasz beállításainak módosításához használhatja a szakasz tulajdonságait`PageSetup` tárgy. Ebben a példában megváltoztatjuk a margókat, a fejléc és lábléc távolságát, valamint a szöveg oszlopközét.
+ V: Egy szakasz beállításainak módosításához használhatja a szakasz tulajdonságait.`PageSetup`tárgy. Ebben a példában megváltoztatjuk a margókat, a fejléc és lábléc távolságát, valamint a szöveg oszlopközét.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm

@@ -8,7 +8,7 @@ weight: 18
 url: /sv/java/using-document-elements/using-lists/
 ---
 
-den här omfattande självstudien kommer vi att utforska hur man effektivt använder listor i Aspose.Words för Java, ett kraftfullt API för att arbeta med Microsoft Word-dokument programmatiskt. Listor är viktiga för att strukturera och organisera innehåll i dina dokument. Vi kommer att täcka två viktiga aspekter av att arbeta med listor: att starta om listor vid varje avsnitt och ange listnivåer. Låt oss dyka in!
+den här omfattande handledningen kommer vi att utforska hur man effektivt använder listor i Aspose.Words för Java, ett kraftfullt API för att arbeta med Microsoft Word-dokument programmatiskt. Listor är viktiga för att strukturera och organisera innehåll i dina dokument. Vi kommer att täcka två viktiga aspekter av att arbeta med listor: att starta om listor vid varje avsnitt och ange listnivåer. Låt oss dyka in!
 
 ## Introduktion till Aspose.Words för Java
 
@@ -164,7 +164,7 @@ Genom att följa dessa steg kan du skapa dokument med anpassade listnivåer, så
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Skapa en numrerad lista baserad på en av Microsoft Word-listmallarna
+        // Skapa en numrerad lista baserad på en av Microsoft Word-listmallarna.
         //och tillämpa den på dokumentbyggarens nuvarande stycke.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Det finns nio nivåer i den här listan, låt oss prova dem alla.
@@ -173,7 +173,7 @@ Genom att följa dessa steg kan du skapa dokument med anpassade listnivåer, så
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Skapa en punktlista baserad på en av Microsoft Word-listmallarna
+        // Skapa en punktlista baserad på en av Microsoft Word-listmallarna.
         //och tillämpa den på dokumentbyggarens nuvarande stycke.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)
@@ -214,7 +214,7 @@ Genom att följa dessa steg kan du skapa dokument med anpassade listnivåer, så
 
 ## Slutsats
 
-Grattis! Du har lärt dig hur du arbetar med listor i Aspose.Words för Java effektivt. Listor är avgörande för att organisera och presentera innehåll i dina dokument. Oavsett om du behöver starta om listor vid varje avsnitt eller ange listnivåer, tillhandahåller Aspose.Words för Java de verktyg du behöver för att skapa professionella dokument.
+Grattis! Du har lärt dig hur du arbetar med listor i Aspose.Words för Java effektivt. Listor är avgörande för att organisera och presentera innehåll i dina dokument. Oavsett om du behöver starta om listor vid varje avsnitt eller specificera listnivåer, tillhandahåller Aspose.Words för Java de verktyg du behöver för att skapa professionella dokument.
 
 Nu kan du med säkerhet använda dessa funktioner för att förbättra dina dokumentgenererings- och formateringsuppgifter. Om du har några frågor eller behöver ytterligare hjälp, tveka inte att kontakta oss[Aspose community forum](https://forum.aspose.com/) för support.
 

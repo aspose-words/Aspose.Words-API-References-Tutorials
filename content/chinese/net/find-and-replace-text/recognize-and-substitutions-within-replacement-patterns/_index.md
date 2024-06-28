@@ -34,7 +34,7 @@ builder.Write("Jason gives money to Paul.");
 
 ## 第三步：替换模式中的识别和替换
 
-现在我们将使用`Range.Replace`函数执行文本搜索和替换，使用正则表达式来识别特定模式。在我们的示例中，我们使用正则表达式`([A-z]+) gives money to ([A-z]+)`识别某人给别人钱的句子。我们使用替换模式`$2 takes money from $1`通过互换角色来执行替换。指某东西的用途`$1`和`$2`指的是正则表达式捕获的组：
+现在我们将使用`Range.Replace`函数执行文本搜索和替换，使用正则表达式来识别特定模式。在我们的示例中，我们使用正则表达式`([A-z]+) gives money to ([A-z]+)`识别某人给别人钱的句子。我们使用替换模式`$2 takes money from $1`通过互换角色来执行替换。指某东西的用途`$1`和`$2`指正则表达式捕获的组：
 
 ```csharp
 Regex regex = new Regex(@"([A-z]+) gives money to ([A-z]+)");
@@ -114,7 +114,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### 问：在哪里可以找到有关在 Aspose.Words for .NET 中使用正则表达式的更多信息和示例？
 
-答：有关在 Aspose.Words for .NET 中使用正则表达式的更多信息和示例，您可以参考[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)。该文档提供了 Aspose.Words for .NET 中涉及正则表达式和文本操作的各种场景的详细说明和代码示例。
+答：有关在 Aspose.Words for .NET 中使用正则表达式的更多信息和示例，您可以参考[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)。该文档提供了 Aspose.Words for .NET 中涉及正则表达式和文本操作的各种场景的详细解释和代码示例。
 
 #### 问：我可以在文本搜索和替换期间根据捕获的组操作文档的其他方面吗？
 

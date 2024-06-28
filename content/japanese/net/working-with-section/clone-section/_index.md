@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 次に、Word 文書を`Document`クラス。次に、`Clone`ドキュメントの最初のセクションを複製するメソッド。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Document.docx");
 
 //セクションのクローンを作成する
@@ -67,7 +67,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Word 文書を`Document`クラスを作成し、ドキュメントの最初のセクションをクローンするには、次のコードを使用できます。
 
 ```csharp
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Document.docx");
 
 //セクションのクローンを作成する

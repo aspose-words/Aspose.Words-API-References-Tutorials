@@ -34,6 +34,6 @@ Ať už chcete převést dokumenty aplikace Word do formátu PDF pro online dist
 | [Export uživatelských vlastností v dokumentu PDF](./custom-properties-export/) | Naučte se exportovat uživatelské vlastnosti při převodu dokumentů do PDF pomocí Aspose.Words for .NET. |
 | [Export struktury dokumentu Word do dokumentu PDF](./export-document-structure/) | Krok za krokem průvodce exportem struktury dokumentu pomocí Aspose.Words pro .NET. |
 | [Komprese obrázků v dokumentu PDF](./image-compression/) | Krok za krokem průvodce kompresí obrázků pomocí Aspose.Words pro .NET. |
-| [Aktualizujte naposledy vytištěnou vlastnost v dokumentu PDF](./update-last-printed-property/) | Podrobný průvodce aktualizací vlastnosti "Last Printed" při převodu do PDF pomocí Aspose.Words for .NET. |
+| [Aktualizovat naposledy vytištěnou vlastnost v dokumentu PDF](./update-last-printed-property/) | Podrobný průvodce aktualizací vlastnosti "Last Printed" při převodu do PDF pomocí Aspose.Words for .NET. |
 | [Renderujte 3D DML 3D efekty v dokumentu PDF](./dml-3deffects-rendering/) | Naučte se, jak povolit vykreslování 3D DML efektů při převodu do PDF pomocí Aspose.Words for .NET. |
 | [Interpolace obrázků v dokumentu PDF](./interpolate-images/) | Podrobný průvodce povolit interpolaci obrázků pomocí Aspose.Words pro .NET. |

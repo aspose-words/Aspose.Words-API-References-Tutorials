@@ -53,7 +53,7 @@ doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011
 
 In dit codefragment voeren we de samenvoegbewerking uit en geven we een DateTime-waarde op voor het veld 'Datum2'.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 Sla het gewijzigde document op in een bestand met behulp van de Save-methode van de Document-klasse:
 
 ```csharp
@@ -91,7 +91,7 @@ Gefeliciteerd! U hebt met succes geleerd hoe u de veldupdatecultuurbron in Word-
 
 #### Vraag: Hoe kan ik een specifieke cultuur opgeven voor het bijwerken van velden in Aspose.Words voor .NET?
 
-A: Om een specifieke cultuur te specificeren voor het bijwerken van velden in Aspose.Words voor .NET, kunt u de`Document.FieldOptions.FieldUpdateCultureInfo` eigendom en stel de`CultureInfo` object dat overeenkomt met de gewenste cultuur. U kunt bijvoorbeeld gebruiken`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` om de Franse (Frankrijk) cultuur te specificeren.
+ A: Om een specifieke cultuur te specificeren voor het bijwerken van velden in Aspose.Words voor .NET, kunt u de`Document.FieldOptions.FieldUpdateCultureInfo` eigendom en stel de`CultureInfo` object dat overeenkomt met de gewenste cultuur. U kunt bijvoorbeeld gebruiken`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` om de Franse (Frankrijk) cultuur te specificeren.
 
 #### Vraag: Is het mogelijk om het automatisch bijwerken van velden in Aspose.Words voor .NET uit te schakelen?
 

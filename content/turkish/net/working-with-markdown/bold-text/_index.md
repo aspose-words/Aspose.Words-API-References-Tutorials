@@ -2,7 +2,7 @@
 title: Kalın yazı
 linktitle: Kalın yazı
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile metni nasıl kalınlaştıracağınızı öğrenin. Adım adım kılavuz.
+description: Aspose.Words for .NET ile kalın metinlerin nasıl yazılacağını öğrenin. Adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/bold-text/
@@ -53,11 +53,11 @@ Tebrikler! Artık Aspose.Words for .NET ile kalın metinlerin nasıl yazılacağ
 
 #### S: Aspose.Words'te metni nasıl kalın yapabilirim?
 
- C: Aspose.Words'te metni kalın yapmak için`Font.Bold` mülkiyeti`Run` nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metni kalın yapmak için. Örneğin, kullanabilirsiniz`run.Font.Bold=true` içindeki metni kalınlaştırmak için`Run` nesne.
+ C: Aspose.Words'te metni kalın yapmak için`Font.Bold` mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metni kalın yapmak için. Örneğin şunları kullanabilirsiniz:`run.Font.Bold=true` içindeki metni kalınlaştırmak için`Run` nesne.
 
 #### S: Aynı paragrafta birkaç metin parçasını kalın harflerle yazmak mümkün müdür?
 
-C: Evet, tek bir paragrafta birden çok metin parçasını birden çok harf kullanarak kalınlaştırabilirsiniz.`Run` nesneler. Birden fazla oluşturabilirsiniz`Run` nesneleri ayarlayın ve`Font.Bold`mülkiyet`true` Her nesne için metnin istenen bölümlerini kalınlaştırmak için. Daha sonra bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.
+ C: Evet, tek bir paragrafta birden çok metin parçasını birden çok harf kullanarak kalınlaştırabilirsiniz.`Run` nesneler. Birden fazla oluşturabilirsiniz`Run` nesneleri ayarlayın ve`Font.Bold`mülkiyet`true` Her nesne için metnin istenen bölümlerini kalınlaştırmak için. Daha sonra bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.
 
 #### S: Aspose.Words'te bir tablo veya hücredeki metni kalınlaştırabilir miyim?
 

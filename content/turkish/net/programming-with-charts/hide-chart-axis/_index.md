@@ -17,7 +17,7 @@ Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
 - Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
+## Adım 2: Yeni bir belge oluşturun ve bir grafik ekleyin.
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -101,7 +101,7 @@ Aspose.Words for .NET'i kullanarak grafik yeteneklerini .NET uygulamalarınıza 
 Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgelerini programlı olarak oluşturmasına, yönetmesine ve kaydetmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır. Grafikler ve grafik eksenleri de dahil olmak üzere belge öğeleriyle Kelime İşleme için geniş bir özellik yelpazesi sunar.
 
 #### Q2. Aspose.Words for .NET'i nasıl kurabilirim?
-Aspose.Words for .NET'i, Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini arayın ve projenize yükleyin.
+Aspose.Words for .NET'i, Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Apose.Words" ifadesini aramanız ve projenize yüklemeniz yeterlidir.
 
 #### S3. Bir grafiğin hem X eksenini hem de Y eksenini gizleyebilir miyim?
  Evet, Aspose.Words for .NET'i kullanarak bir grafiğin hem X eksenini hem de Y eksenini gizleyebilirsiniz. X eksenini gizlemek için şuraya erişebilirsiniz:`AxisX` Grafiğin özelliğini seçin ve`Hidden`mülkiyet`true` . Benzer şekilde Y eksenini gizlemek için`AxisY` özelliği ayarlayın ve`Hidden`mülkiyet`true`. Bu, grafik görselleştirmesinden her iki ekseni de kaldırmanıza olanak tanır.

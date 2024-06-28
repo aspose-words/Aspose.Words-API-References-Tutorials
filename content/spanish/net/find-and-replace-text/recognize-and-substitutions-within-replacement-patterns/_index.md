@@ -116,7 +116,7 @@ R: El código fuente de ejemplo demuestra el uso de la función "Reconocer y sus
 
 R: Para obtener más información y ejemplos sobre el uso de expresiones regulares en Aspose.Words para .NET, puede consultar el[Aspose.Words para referencias de API .NET](https://reference.aspose.com/words/net/). La documentación proporciona explicaciones detalladas y ejemplos de código para varios escenarios que involucran expresiones regulares y manipulación de texto en Aspose.Words para .NET.
 
-#### P: ¿Puedo manipular otros aspectos del documento en función de los grupos capturados durante la búsqueda y reemplazo de texto?
+#### P: ¿Puedo manipular otros aspectos del documento según los grupos capturados durante la búsqueda y reemplazo de texto?
 
 R: Sí, puede manipular otros aspectos del documento según los grupos capturados durante la búsqueda y el reemplazo de texto. Además de realizar sustituciones de texto, puede modificar el formato, los estilos, la estructura del documento y otros elementos según los grupos capturados utilizando las diversas API proporcionadas por Aspose.Words para .NET.
 
@@ -126,4 +126,4 @@ R: Si bien las expresiones regulares y los grupos capturados ofrecen poderosas c
 
 #### P: ¿Puedo utilizar la función "Reconocer y sustituciones dentro de patrones de reemplazo" con otros idiomas además del inglés?
 
-R: Sí, la función "Reconocer y sustituciones dentro de patrones de reemplazo" en Aspose.Words para .NET se puede usar con otros idiomas además del inglés. Las expresiones regulares son independientes del idioma y se pueden diseñar para que coincidan con patrones específicos en cualquier idioma. Puede ajustar el patrón de expresión regular para adaptarlo al idioma que desee y a los patrones de texto específicos que desee reconocer y sustituir.
+R: Sí, la función "Reconocer y sustituciones dentro de patrones de reemplazo" en Aspose.Words para .NET se puede usar con idiomas distintos del inglés. Las expresiones regulares son independientes del idioma y se pueden diseñar para que coincidan con patrones específicos en cualquier idioma. Puede ajustar el patrón de expresión regular para adaptarlo al idioma que desee y a los patrones de texto específicos que desee reconocer y sustituir.

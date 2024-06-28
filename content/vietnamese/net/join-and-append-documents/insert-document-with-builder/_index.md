@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## Bước 4: Định vị DocumentBuilder
 
- Di chuyển`DocumentBuilder` đến cuối tài liệu bằng cách sử dụng`MoveToDocumentEnd` phương pháp. Chèn ngắt trang để tách nội dung hiện có khỏi tài liệu được chèn.
+Di chuyển`DocumentBuilder` đến cuối tài liệu bằng cách sử dụng`MoveToDocumentEnd` phương pháp. Chèn ngắt trang để tách nội dung hiện có khỏi tài liệu được chèn.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Bước 6: Lưu tài liệu đã sửa đổi
 
- Cuối cùng, lưu tài liệu đích đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
+Cuối cùng, lưu tài liệu đích đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Bước 6: Dừng định dạng danh sách
 
- Để dừng định dạng danh sách, hãy đặt`null` đến`List` thuộc tính của trình tạo tài liệu:
+ Để dừng định dạng danh sách, hãy đặt`null` đến`List`thuộc tính của trình tạo tài liệu:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Tạo danh sách đánh số dựa trên một trong các mẫu danh sách Microsoft Word
+// Tạo danh sách đánh số dựa trên một trong các mẫu danh sách Microsoft Word.
 //và áp dụng nó cho đoạn hiện tại của trình tạo tài liệu.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Tạo danh sách có dấu đầu dòng dựa trên một trong các mẫu danh sách Microsoft Word
+// Tạo danh sách có dấu đầu dòng dựa trên một trong các mẫu danh sách Microsoft Word.
 //và áp dụng nó cho đoạn hiện tại của trình tạo tài liệu.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### Câu hỏi: Tôi có thể thêm các cấp độ bổ sung vào danh sách được đánh số trong Aspose.Words không?
 
- Trả lời: Có, có thể thêm các cấp độ bổ sung vào danh sách được đánh số trong Aspose.Words. Các`ListLevel` class cho phép bạn đặt thuộc tính định dạng cho từng cấp độ của danh sách. Bạn có thể đặt các tùy chọn như tiền tố, hậu tố, căn chỉnh, thụt lề, v.v. Điều này cho phép bạn tạo danh sách với nhiều cấp độ phân cấp.
+ Trả lời: Có, có thể thêm các cấp độ bổ sung vào danh sách được đánh số trong Aspose.Words. Các`ListLevel`class cho phép bạn đặt thuộc tính định dạng cho từng cấp độ của danh sách. Bạn có thể đặt các tùy chọn như tiền tố, hậu tố, căn chỉnh, thụt lề, v.v. Điều này cho phép bạn tạo danh sách với nhiều cấp độ phân cấp.
 
 

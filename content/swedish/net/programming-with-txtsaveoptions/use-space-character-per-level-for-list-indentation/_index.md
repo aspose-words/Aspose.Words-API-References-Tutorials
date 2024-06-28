@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-I det här exemplet skapar vi ett nytt dokument och använder DocumentBuilder för att lägga till text och skapa en lista med tre nivåer av indrag. Vi har lagt till tre objekt till listan, med varje objekt indraget en extra nivå.
+I det här exemplet skapar vi ett nytt dokument och använder DocumentBuilder för att lägga till text och skapa en lista med tre nivåer av indrag. Vi har lagt till tre objekt till listan, där varje objekt har en extra nivå.
 
 ## Använder ett blanksteg per nivå för listindrag
 

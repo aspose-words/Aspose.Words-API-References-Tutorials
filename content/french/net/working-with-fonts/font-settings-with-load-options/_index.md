@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : configurer les options de chargement avec les paramètres de police
- Ensuite, nous allons créer une instance de`LoadOptions`et spécifiez les paramètres de police en créant une nouvelle instance de`FontSettings` et l'attribuer à`loadOptions.FontSettings`.
+ Ensuite, nous allons créer une instance de`LoadOptions` et spécifiez les paramètres de police en créant une nouvelle instance de`FontSettings` et l'attribuer à`loadOptions.FontSettings`.
 
 ```csharp
 // Configurer les options de chargement avec les paramètres de police
@@ -61,11 +61,11 @@ Dans ce didacticiel, nous avons vu comment utiliser les options de chargement av
 
 #### Q : Quels autres paramètres de police puis-je spécifier avec les options de chargement dans Aspose.Words ?
 
-R : Outre la spécification de la police par défaut, vous pouvez également spécifier d'autres paramètres de police, tels que l'encodage par défaut, à l'aide des propriétés appropriées du`LoadOptions` classe, comme`DefaultEncoding`.
+ R : Outre la spécification de la police par défaut, vous pouvez également spécifier d'autres paramètres de police, tels que l'encodage par défaut, à l'aide des propriétés appropriées du`LoadOptions` classe, comme`DefaultEncoding`.
 
 #### Q : Que se passe-t-il si la police par défaut spécifiée n'est pas disponible lors du chargement du document ?
 
-R : Si la police par défaut spécifiée n'est pas disponible lorsque le document est chargé dans Aspose.Words, une police de remplacement sera utilisée pour afficher le texte dans le document. Cela peut entraîner une légère différence d’apparence par rapport à la police d’origine.
+: Si la police par défaut spécifiée n'est pas disponible lorsque le document est chargé dans Aspose.Words, une police de remplacement sera utilisée pour afficher le texte dans le document. Cela peut entraîner une légère différence d’apparence par rapport à la police d’origine.
 
 #### Q : Puis-je spécifier des paramètres de police différents pour chaque document téléchargé ?
 

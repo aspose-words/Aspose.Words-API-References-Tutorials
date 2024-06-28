@@ -63,7 +63,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 //文檔建立。
 Document doc = new Document();
 
-//使用 FieldBuilder 建構 IF 欄位。
+//使用 FieldBuilder 建立 IF 欄位。
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
      .AddArgument("left expression")
      .AddArgument("=")

@@ -9,7 +9,7 @@ url: /cs/net/programming-with-fileformat/
 ---
 Výukové programy Aspose.Words for .NET o zpracování textu ve formátu souboru nabízejí komplexní zdroj pro vývojáře, kteří chtějí ve svých aplikacích manipulovat a pracovat s různými formáty souborů. Výukové programy pokrývají různé aspekty zpracování textu pomocí formátů souborů, včetně čtení, psaní, převodu a manipulace s dokumenty aplikace Word.
 
-V těchto výukových programech se naučíte, jak používat výkonné funkce Aspose.Words for .NET k extrahování dat z dokumentů aplikace Word, přidávání prvků, jako je text, obrázky a tabulky, a provádění operací rozvržení. pokročilá forma a rozvržení. Dozvíte se také, jak spravovat vlastnosti dokumentu, jako jsou metadata, záhlaví a zápatí a komentáře.
+V těchto výukových programech se naučíte, jak používat výkonné funkce Aspose.Words for .NET k extrahování dat z dokumentů aplikace Word, přidávání prvků, jako je text, obrázky a tabulky, a provádění operací rozvržení. pokročilá forma a rozložení. Dozvíte se také, jak spravovat vlastnosti dokumentu, jako jsou metadata, záhlaví a zápatí a komentáře.
 
 Ať už potřebujete generovat sestavy, vytvářet vlastní dokumenty, automatizovat úlohy dokumentů aplikace Word nebo převádět dokumenty mezi různými formáty, výukové programy Aspose.Words for .NET vám poskytnou znalosti a dovednosti k dosažení vašich rozvojových cílů.
 
@@ -18,4 +18,4 @@ Ať už potřebujete generovat sestavy, vytvářet vlastní dokumenty, automatiz
 | --- | --- |
 | [Rozpoznat formát souboru dokumentu](./detect-file-format/) | Průvodce krok za krokem k detekci formátu souboru dokumentu pomocí Aspose.Words pro .NET. |
 | [Detekce digitálního podpisu v dokumentu aplikace Word](./detect-document-signatures/) | Podrobný průvodce detekcí digitálních podpisů v dokumentu pomocí Aspose.Words for .NET. |
-| [Ověřte zašifrovaný dokument aplikace Word](./verify-encrypted-document/) | Podrobný průvodce pro ověření, zda je dokument zašifrován pomocí Aspose.Words for .NET. |
+| [Ověřte šifrovaný dokument Word](./verify-encrypted-document/) | Podrobný průvodce pro ověření, zda je dokument zašifrován pomocí Aspose.Words for .NET. |

@@ -110,4 +110,4 @@ Sí, Aspose.Words para Java puede extraer texto de documentos escaneados con cap
 
 ### ¿Dónde puedo acceder a la documentación de Aspose.Words para Java?
 
- Puede encontrar la documentación de Aspose.Words para Java[aquí](https://reference.aspose.com/words/java/).
+ Puede encontrar la documentación de Aspose.Words para Java.[aquí](https://reference.aspose.com/words/java/).

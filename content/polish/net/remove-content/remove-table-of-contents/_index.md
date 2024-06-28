@@ -2,216 +2,103 @@
 title: Usuń spis treści z dokumentu programu Word
 linktitle: Usuń spis treści z dokumentu programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak usunąć spis treści z dokumentu programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak usunąć spis treści (TOC) z dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z tego łatwego do zrozumienia samouczka.
 type: docs
 weight: 10
 url: /pl/net/remove-content/remove-table-of-contents/
 ---
-W tym samouczku przeprowadzimy Cię przez proces usuwania spisu treści z dokumentu programu Word przy użyciu biblioteki Aspose.Words dla platformy .NET. Spis treści może czasami być zbędny lub niepotrzebny, a ten kod pomoże Ci go skutecznie usunąć. Udostępnimy przewodnik krok po kroku, który pomoże Ci zrozumieć i wdrożyć kod we własnym projekcie .NET.
+## Usuń spis treści z dokumentu programu Word za pomocą Aspose.Words dla .NET
+
+Czy masz dość radzenia sobie z niechcianym spisem treści (TOC) w dokumentach programu Word? Każdy z nas to przeżył — czasami spis treści po prostu nie jest konieczny. Na szczęście dla Ciebie, Aspose.Words dla .NET ułatwia programowe usunięcie spisu treści. W tym samouczku poprowadzę Cię przez ten proces krok po kroku, abyś mógł go opanować w mgnieniu oka. Zanurkujmy od razu!
 
 ## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-- Praktyczna znajomość języka programowania C#
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
-- Dokument programu Word zawierający spis treści, który chcesz usunąć
 
-## Krok 1: Zdefiniuj katalog dokumentów
- Najpierw musisz ustawić ścieżkę katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
+
+1.  Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę Aspose.Words dla .NET z[Aspose.Wydaje](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: IDE takie jak Visual Studio ułatwi kodowanie.
+3. .NET Framework: Upewnij się, że masz zainstalowany .NET Framework.
+4. Dokument programu Word: Przygotuj dokument programu Word (.docx) ze spisem treści, który chcesz usunąć.
+
+## Importuj przestrzenie nazw
+
+Na początek zaimportujmy niezbędne przestrzenie nazw. To konfiguruje środowisko do używania Aspose.Words.
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Krok 2: Prześlij dokument
- Następnie załadujemy dokument Word do instancji pliku`Document` klasa za pomocą`Load` metoda.
+Podzielmy teraz proces usuwania spisu treści z dokumentu programu Word na jasne, łatwe do wykonania kroki.
+
+## Krok 1: Skonfiguruj katalog dokumentów
+
+Zanim będziemy mogli manipulować Twoim dokumentem, musimy określić, gdzie się on znajduje. To jest ścieżka katalogu dokumentów.
 
 ```csharp
-// Załaduj dokument
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` ze ścieżką do folderu dokumentów. Tutaj znajduje się plik programu Word.
+
+## Krok 2: Załaduj dokument
+
+Następnie musimy załadować dokument Word do naszej aplikacji. Dzięki Aspose.Words jest to niezwykle proste.
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## Krok 3: Usuń spis treści
- Aby usunąć spis treści, przejdziemy przez typ TOC (spis treści).`FieldStart` węzły w dokumencie. Będziemy przechowywać te węzły, abyśmy mogli szybko uzyskać do nich dostęp i utworzyć listę węzłów do usunięcia.
+ Zastępować`"your-document.docx"` z nazwą swojego pliku. Ta linia kodu ładuje Twój dokument, abyśmy mogli rozpocząć nad nim pracę.
+
+## Krok 3: Zidentyfikuj i usuń pole spisu treści
+
+To tutaj dzieje się magia. Zlokalizujemy pole spisu treści i usuniemy je.
 
 ```csharp
-// Przechowuj węzły FieldStart pól spisu treści w dokumencie, aby uzyskać szybki dostęp.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// To jest lista przechowująca węzły znalezione w określonym spisie treści. Zostaną one usunięte po zakończeniu tej metody.
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+Oto, co się dzieje:
+- `doc.Range.Fields`: umożliwia dostęp do wszystkich pól w dokumencie.
+- `.Where(f => f.Type == FieldType.FieldTOC)`: filtruje pola w celu znalezienia tylko tych, które są spisami treści.
+- `.ToList().ForEach(f => f.Remove())`: powoduje konwersję przefiltrowanych pól na listę i usunięcie każdego z nich.
 
-// Sprawdź, czy istnieje określony indeks spisu treści.
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## Krok 4: Zapisz zmodyfikowany dokument
 
-bool isRemoving = true;
+Na koniec musimy zapisać nasze zmiany. Możesz zapisać dokument pod nową nazwą, aby zachować oryginalny plik.
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // Bezpieczniej jest przechowywać te węzły i na koniec je wszystkie usunąć.
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // Kiedy napotkamy węzeł FieldEnd typu FieldTOC,
-     //wiemy, że dotarliśmy do końca bieżącego spisu treści i na tym się zatrzymujemy.
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### Przykładowy kod źródłowy narzędzia Usuń spis treści przy użyciu Aspose.Words dla .NET 
-```csharp
-
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// Załaduj dokument
-Document doc = new Document(dataDir + "your-document.docx");
-
-// Przechowuj węzły FieldStart pól spisu treści w dokumencie, aby uzyskać szybki dostęp.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// To jest lista przechowująca węzły znalezione w określonym spisie treści. Zostaną one usunięte na końcu tej metody.
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// Upewnij się, że spis treści określony w przekazanym indeksie istnieje.
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// Bezpieczniej jest przechowywać te węzły i później usunąć je wszystkie na raz.
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// Gdy napotkamy węzeł FieldEnd typu FieldTOC,
-	// wiemy, że dotarliśmy do końca bieżącego spisu treści i na tym się zatrzymujemy.
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ Ta linia zapisuje dokument z wprowadzonymi zmianami. Zastępować`"modified-document.docx"` z żądaną nazwą pliku.
 
 ## Wniosek
-W tym samouczku przedstawiliśmy przewodnik krok po kroku dotyczący usuwania spisu treści z dokumentu programu Word przy użyciu biblioteki Aspose.Words dla platformy .NET. Postępując zgodnie z dostarczonym kodem i instrukcjami, możesz łatwo wyeliminować spis treści i poprawić układ swojego dokumentu. Pamiętaj, aby dostosować ścieżkę katalogu i nazwy plików do własnych potrzeb.
 
-### Często zadawane pytania
+masz to! Usunięcie spisu treści z dokumentu programu Word za pomocą Aspose.Words dla .NET jest proste, jeśli podzielisz go na te proste kroki. Ta potężna biblioteka nie tylko pomaga w usuwaniu spisów treści, ale może także obsługiwać niezliczoną ilość innych manipulacji dokumentami. Więc śmiało, spróbuj!
 
-#### P: Dlaczego powinienem używać Aspose.Words do usuwania spisu treści z dokumentu programu Word?
+## Często zadawane pytania
 
-O: Aspose.Words to potężna i wszechstronna biblioteka klas do manipulowania dokumentami programu Word w aplikacjach .NET. Używając Aspose.Words, możesz skutecznie usunąć spis treści ze swoich dokumentów, co może być przydatne, jeśli spis treści jest zbędny lub niepotrzebny. Pozwala to dostosować zawartość dokumentu i poprawić jego ogólną prezentację.
+### 1. Co to jest Aspose.Words dla .NET?
 
-#### P: Jak przesłać dokument do Aspose.Words dla .NET?
+Aspose.Words dla .NET to solidna biblioteka .NET do manipulowania dokumentami, umożliwiająca programistom programowe tworzenie, modyfikowanie i konwertowanie dokumentów Word.
 
-O: Aby usunąć spis treści z dokumentu programu Word, należy najpierw załadować dokument do pamięci przy użyciu metody Load() programu Aspose.Words. Oto przykładowy kod umożliwiający załadowanie dokumentu z określonego katalogu:
+### 2. Czy mogę korzystać z Aspose.Words za darmo?
 
-```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ Tak, możesz używać Aspose.Words z[bezpłatna wersja próbna](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
 
-// Załaduj dokument
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. Czy można usunąć inne pola za pomocą Aspose.Words?
 
- Zastępować`"YOUR DOCUMENTS DIRECTORY"` z rzeczywistą ścieżką do dokumentu.
+Absolutnie! Możesz usunąć dowolne pole, określając jego typ w warunku filtra.
 
-#### P: Jak usunąć spis treści z dokumentu za pomocą Aspose.Words?
+### 4. Czy potrzebuję Visual Studio, aby używać Aspose.Words?
 
- Odp.: Aby usunąć spis treści, musisz iterować po`FieldStart` wpisz węzły spisu treści w dokumencie. Możesz zapisać te węzły, aby mieć do nich szybki dostęp, i utworzyć listę węzłów do usunięcia. Oto przykładowy kod:
+Chociaż zdecydowanie zaleca się korzystanie z programu Visual Studio ze względu na łatwość programowania, można użyć dowolnego środowiska IDE obsługującego platformę .NET.
 
-```csharp
-// Przechowuj węzły FieldStart pól spisu treści w dokumencie, aby uzyskać szybki dostęp.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//To jest lista przechowująca węzły znalezione w określonym spisie treści. Zostaną one usunięte po zakończeniu tej metody.
-List<Node> nodeList = new List<Node>();
+### 5. Gdzie mogę znaleźć więcej informacji na temat Aspose.Words?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// Sprawdź, czy istnieje określony indeks spisu treści.
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// Bezpieczniej jest przechowywać te węzły i na koniec je wszystkie usunąć.
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// Kiedy napotkamy węzeł FieldEnd typu FieldTOC,
-//wiemy, że dotarliśmy do końca bieżącego spisu treści i na tym się zatrzymujemy.
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### P: Jak zapisać edytowany dokument w Aspose.Words dla .NET?
-
-Odp.: Po usunięciu spisu treści należy zapisać zmodyfikowany dokument za pomocą metody Save(). Określ żądaną ścieżkę i format pliku wyjściowego (np. DOCX) dla edytowanego dokumentu. Oto przykładowy kod:
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ Bardziej szczegółową dokumentację znajdziesz na stronie[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/).

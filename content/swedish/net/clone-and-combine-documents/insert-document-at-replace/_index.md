@@ -2,87 +2,166 @@
 title: Infoga dokument vid ersätt
 linktitle: Infoga dokument vid ersätt
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du infogar ett dokument vid ersättning med Aspose.Words för .NET.
+description: Lär dig hur du sömlöst infogar ett Word-dokument i ett annat med Aspose.Words för .NET med vår detaljerade, steg-för-steg-guide. Perfekt för utvecklare som vill effektivisera dokumentbehandlingen.
 type: docs
 weight: 10
 url: /sv/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-I den här handledningen går vi igenom hur du infogar ett dokument i ett annat dokument när du ersätter med hjälp av funktionen Infoga dokument vid ersättning i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och utföra dokumentinfogningen.
+## Introduktion
 
-## Steg 1: Laddar huvuddokumentet
+Hej där, dokumentmästare! Har du någonsin funnit dig själv i koden och försökt ta reda på hur man infogar ett Word-dokument i ett annat sömlöst? Var inte rädd, för idag dyker vi in i Aspose.Words-världen för .NET för att göra den uppgiften till en lek. Vi går igenom en detaljerad, steg-för-steg-guide om hur du använder detta kraftfulla bibliotek för att infoga dokument vid specifika punkter under en sök- och ersättningsoperation. Är du redo att bli en Aspose.Words-guide? Låt oss börja!
 
-För att komma igång, ange katalogen för dina dokument och ladda huvuddokumentet i ett dokumentobjekt. Här är hur:
+## Förutsättningar
+
+Innan vi går in i koden finns det några saker du måste ha på plats:
+
+-  Visual Studio: Se till att du har Visual Studio installerat på din dator. Om du inte har det ännu kan du ladda ner det från[här](https://visualstudio.microsoft.com/).
+-  Aspose.Words för .NET: Du behöver Aspose.Words-biblioteket. Du kan få det från[Aspose hemsida](https://releases.aspose.com/words/net/).
+- Grundläggande C#-kunskap: En grundläggande förståelse för C# och .NET hjälper dig att följa med i denna handledning.
+
+Okej, med de ur vägen, låt oss smutsa ner händerna med lite kod!
+
+## Importera namnområden
+
+Först och främst måste vi importera de nödvändiga namnrymden för att arbeta med Aspose.Words. Det här är som att samla alla dina verktyg innan du startar ett projekt. Lägg till dessa med hjälp av direktiv överst i din C#-fil:
 
 ```csharp
-// Sökväg till dokumentkatalogen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insert 1.docx");
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using Aspose.Words.Tables;
 ```
 
-## Steg 2: Konfigurera sök- och ersättalternativ
+Nu när vi har våra förutsättningar på plats, låt oss dela upp processen i små steg. Varje steg är avgörande och kommer att föra oss närmare vårt mål.
 
-Nu kommer vi att konfigurera sök- och ersätt-alternativen genom att ange sökriktningen och ersätt återuppringning för att infoga ett dokument i ett annat dokument. Här är hur:
+## Steg 1: Konfigurera dokumentkatalogen
 
-```csharp
-// Konfigurera sök- och ersättalternativ.
-FindReplaceOptions options = new FindReplaceOptions
-{
-Direction = FindReplaceDirection.Backward,
-ReplacingCallback = new InsertDocumentAtReplaceHandler()
-};
-```
-
-## Steg 3: Anropa ersättningsmetoden
-
-Vi kommer nu att anropa ersätt-metoden för att hitta och ersätta den angivna texten med en tom sträng, med hjälp av de konfigurerade alternativen. Här är hur:
+Först måste vi ange katalogen där våra dokument lagras. Det här är som att sätta scenen inför den stora föreställningen.
 
 ```csharp
-mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-```
-
-### Exempel på källkod för Insert Document At Replace med Aspose.Words för .NET
-
-Här är den fullständiga källkoden för funktionen Infoga dokument när du ersätter Aspose.Words för .NET:
-
-```csharp
-// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+```
 
-// Ställ in alternativ för sök och ersätt.
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till din katalog. Det är här dina dokument kommer att leva och andas.
+
+## Steg 2: Ladda huvuddokumentet
+
+Därefter laddar vi huvuddokumentet som vi vill infoga ett annat dokument i. Se det här som vår huvudscen där all action kommer att ske.
+
+```csharp
+Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
+```
+
+Denna kod laddar huvuddokumentet från den angivna katalogen.
+
+## Steg 3: Ställ in alternativ för Sök och ersätt
+
+För att hitta den specifika platsen där vi vill infoga vårt dokument använder vi sök- och ersätt-funktionen. Det här är som att använda en karta för att hitta den exakta platsen för vårt nya tillskott.
+
+```csharp
 FindReplaceOptions options = new FindReplaceOptions
 {
-	Direction = FindReplaceDirection.Backward, 
-	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+    Direction = FindReplaceDirection.Backward,
+    ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
+```
 
-// Kalla ersättningsmetoden.
+Här ställer vi in riktningen till bakåt och anger en anpassad återuppringningshanterare som vi kommer att definiera härnäst.
+
+## Steg 4: Utför Ersätt-operationen
+
+Nu säger vi till vårt huvuddokument att leta efter en specifik platshållartext och ersätta den med ingenting, samtidigt som vi använder vår anpassade återuppringning för att infoga ett annat dokument.
+
+```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
+
+Den här koden utför sök- och ersätt-operationen och sparar sedan det uppdaterade dokumentet.
+
+## Steg 5: Skapa en anpassad ersättande återuppringningshanterare
+
+Vår anpassade återuppringningshanterare är där magin händer. Denna hanterare kommer att definiera hur dokumentinsättningen utförs under sök- och ersätt-operationen.
+
+```csharp
+private class InsertDocumentAtReplaceHandler : IReplacingCallback
+{
+    ReplaceAction IReplacingCallback.Replacing(ReplacingArgs args)
+    {
+        Document subDoc = new Document(dataDir + "Document insertion 2.docx");
+
+        // Infoga ett dokument efter stycket som innehåller matchningstexten.
+        Paragraph para = (Paragraph)args.MatchNode.ParentNode;
+        InsertDocument(para, subDoc);
+
+        // Ta bort stycket med matchningstexten.
+        para.Remove();
+        return ReplaceAction.Skip;
+    }
+}
+```
+
+Här laddar vi dokumentet som ska infogas och anropar sedan en hjälpmetod för att utföra infogningen.
+
+## Steg 6: Definiera metoden för att infoga dokument
+
+Den sista biten i vårt pussel är metoden som faktiskt infogar dokumentet på den angivna platsen.
+
+```csharp
+private static void InsertDocument(Node insertionDestination, Document docToInsert)
+{
+	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+	{
+		CompositeNode destinationParent = insertionDestination.ParentNode;
+
+		NodeImporter importer =
+			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+
+		// Gå igenom alla noder på blocknivå i sektionens kropp,
+		// klona sedan och infoga varje nod som inte är det sista tomma stycket i ett avsnitt.
+		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+		foreach (Node srcNode in srcSection.Body)
+		{
+			if (srcNode.NodeType == NodeType.Paragraph)
+			{
+				Paragraph para = (Paragraph)srcNode;
+				if (para.IsEndOfSection && !para.HasChildNodes)
+					continue;
+			}
+
+			Node newNode = importer.ImportNode(srcNode, true);
+
+			destinationParent.InsertAfter(newNode, insertionDestination);
+			insertionDestination = newNode;
+		}
+	}
+	else
+	{
+		throw new ArgumentException("The destination node should be either a paragraph or table.");
+	}
+}
+```
+
+Denna metod tar hand om att importera noder från dokumentet som ska infogas och placera dem på rätt plats i huvuddokumentet.
 
 ## Slutsats
 
-I den här handledningen undersökte vi hur man infogar ett dokument i ett annat dokument under ersättning med hjälp av funktionen Infoga dokument vid ersättning i Aspose.Words för .NET. Genom att konfigurera sök- och ersätt-alternativen och tillhandahålla nödvändiga data kan du dynamiskt sammanställa dokument genom att ersätta specifika platshållare med innehållet i andra dokumentmallar eller avsnitt. Aspose.Words för .NET erbjuder ett kraftfullt och flexibelt sätt att hantera komplexa dokumenthanteringsuppgifter, vilket gör det till ett värdefullt verktyg för att automatisera scenarier för att skapa dokument och infoga innehåll.
+Och där har du det! En omfattande guide för att infoga ett dokument i ett annat med Aspose.Words för .NET. Genom att följa dessa steg kan du enkelt automatisera dokumentsammansättning och manipuleringsuppgifter. Oavsett om du bygger ett dokumenthanteringssystem eller bara behöver effektivisera ditt arbetsflöde för dokumentbearbetning är Aspose.Words din pålitliga medhjälpare.
 
-### FAQ's
+## FAQ's
 
-#### F: Vad är syftet med att infoga ett dokument i ett annat dokument under ersättning?
+### Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt bibliotek för att manipulera Word-dokument programmatiskt. Det låter dig skapa, ändra, konvertera och bearbeta Word-dokument med lätthet.
 
-S: Genom att infoga ett dokument i ett annat dokument under ersättning kan du dynamiskt ersätta en specifik platshållare med innehållet i ett separat dokument. Den här funktionen är särskilt användbar när du vill sätta ihop ett större dokument genom att kombinera olika fördefinierade dokumentmallar eller avsnitt till specifika platshållare.
+### Kan jag infoga flera dokument samtidigt?
+Ja, du kan modifiera återuppringningshanteraren för att hantera flera infogningar genom att iterera över en samling dokument.
 
-#### F: Hur infogar jag ett dokument i ett annat dokument under ersättning med Aspose.Words för .NET?
+### Finns det en gratis provperiod?
+ Absolut! Du kan ladda ner en gratis testversion från[här](https://releases.aspose.com/).
 
-S: För att infoga ett dokument i ett annat dokument under ersättning med Aspose.Words för .NET, följ dessa steg:
-1. Ladda huvuddokumentet som innehåller platshållarna i ett dokumentobjekt.
-2. Konfigurera sök- och ersätt-alternativen, inklusive sökriktningen och ersätt återuppringning för att hantera dokumentinfogningen.
-3. Anropa ersätt-metoden med lämpligt sökmönster, ersätt platshållarna med en tom sträng med de konfigurerade alternativen.
+### Hur får jag support för Aspose.Words?
+Du kan få stöd genom att besöka[Aspose.Words forum](https://forum.aspose.com/c/words/8).
 
-#### F: Kan jag anpassa insättningsbeteendet under utbyte?
-
-S: Ja, du kan anpassa insättningsbeteendet under ersättning genom att implementera en anpassad ErsättandeCallback. Genom att ärva från IReplacingCallback-gränssnittet kan du styra hur dokumenten infogas och slås samman baserat på dina specifika krav när du byter platshållare.
-
-#### F: Kan jag ersätta flera platshållare med olika dokument?
-
-S: Ja, du kan ersätta flera platshållare med olika dokument genom att ange lämpliga sökmönster för varje platshållare och tillhandahålla motsvarande dokument som ska infogas.
+### Kan jag behålla formateringen av det infogade dokumentet?
+ Ja den`NodeImporter`class låter dig ange hur formatering ska hanteras när du importerar noder från ett dokument till ett annat.

@@ -39,7 +39,7 @@ foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- Zde používáme dokument k načtení první tabulky a poté iterujeme všechny řádky v tabulce pomocí smyčky foreach. Uvnitř smyčky zakážeme zalamování řádků pro každý řádek nastavením`RowFormat.AllowBreakAcrossPages`majetek do`false`.
+ Zde použijeme dokument k načtení první tabulky a poté iterujeme všechny řádky v tabulce pomocí smyčky foreach. Uvnitř smyčky zakážeme zalamování řádků pro každý řádek nastavením`RowFormat.AllowBreakAcrossPages`majetek do`false`.
 
 ## Krok 4: Uložení upraveného dokumentu
 Nakonec musíme upravený dokument uložit s vypnutým zalomením řádku tabulky. Použijte následující kód:

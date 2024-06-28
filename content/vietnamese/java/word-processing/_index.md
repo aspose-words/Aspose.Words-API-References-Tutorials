@@ -34,7 +34,7 @@ Khai phá sức mạnh của Aspose.Words cho Java trong việc xử lý các đ
 ### [Tối ưu hóa việc tải tài liệu với các tùy chọn HTML, RTF và TXT](./optimizing-document-loading-options/)
 Tối ưu hóa việc tải tài liệu với Aspose.Words cho Java. Cải thiện tốc độ và hiệu quả cho các tệp HTML, RTF và TXT. Tăng trải nghiệm người dùng ngay hôm nay!
 ### [Lưu tài liệu hiệu quả với các tùy chọn DOC, HTML và hình ảnh](./efficient-document-saving-options/)
-Tìm hiểu cách lưu tài liệu hiệu quả với Aspose.Words cho Java. Hướng dẫn từng bước này bao gồm các tùy chọn DOC, HTML và hình ảnh, nâng cao kỹ năng quản lý tài liệu của bạn
+Tìm hiểu cách lưu tài liệu hiệu quả với Aspose.Words cho Java. Hướng dẫn từng bước này bao gồm các tùy chọn DOC, HTML và hình ảnh, nâng cao kỹ năng quản lý tài liệu của bạn.
 ### [Nắm vững các cài đặt lưu nâng cao cho tài liệu](./mastering-advanced-save-settings/)
 Nắm vững các cài đặt lưu tài liệu nâng cao với Aspose.Words cho Java. Tìm hiểu cách định dạng, bảo vệ, tối ưu hóa và tự động hóa việc tạo tài liệu một cách dễ dàng.
 ### [Thao tác nội dung tài liệu với dữ liệu dọn dẹp, trường và dữ liệu XML](./manipulating-document-content/)

@@ -19,7 +19,7 @@ Ujistěte se, že jste nastavili vývojové prostředí pomocí Aspose.Words pro
 Document doc = new Document();
 ```
 
- V tomto kroku vytvoříme nový`Document` objekt.
+ tomto kroku vytvoříme nový`Document` objekt.
 
 ## Krok 3: Upravte vlastnosti motivu
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- V tomto kroku přistupujeme k`Theme` objekt`Document` objekt získat téma dokumentu. Dále můžeme upravit vlastnosti motivu, jako jsou sekundární písma (`MinorFonts.Latin`) a barvy (`Colors.Hyperlink`).
+ V tomto kroku přistupujeme k`Theme` objekt`Document`objekt získat téma dokumentu. Dále můžeme upravit vlastnosti motivu, jako jsou sekundární písma (`MinorFonts.Latin`) a barvy (`Colors.Hyperlink`).
 
 ## Krok 4: Uložte dokument
 
@@ -51,7 +51,7 @@ theme.Colors.Hyperlink = Color.Gold;
 
 ## Závěr
 
-tomto tutoriálu jsme prozkoumali funkčnost nastavení vlastností motivu dokumentu pomocí Aspose.Words for .NET. Změnou sekundárních písem a barev motivu můžete přizpůsobit vzhled svých dokumentů a zachovat vizuální konzistenci.
+V tomto tutoriálu jsme prozkoumali funkčnost nastavení vlastností motivu dokumentu pomocí Aspose.Words for .NET. Změnou sekundárních písem a barev motivu můžete přizpůsobit vzhled svých dokumentů a zachovat vizuální konzistenci.
 
 Aspose.Words for .NET nabízí výkonné API pro manipulaci se styly a motivy dokumentů. Úpravou vlastností motivu můžete přizpůsobit vzhled vašich dokumentů konkrétním potřebám vašeho projektu nebo vaší značky.
 
@@ -67,7 +67,7 @@ Chcete-li nastavit prostředí, musíte se ujistit, že máte Aspose.Words for .
 
 #### Jak získám přístup a upravím vlastnosti motivu?
 
- Chcete-li získat přístup a upravit vlastnosti motivu, můžete použít`Theme` objekt`Document` třída. Přístupem k`Theme`objektu, můžete upravit vlastnosti, jako jsou sekundární písma (`MinorFonts.Latin`) a barvy (`Colors.Hyperlink`). Přiřaďte těmto vlastnostem požadované hodnoty, abyste přizpůsobili motiv dokumentu.
+ Chcete-li získat přístup a upravit vlastnosti motivu, můžete použít`Theme` objekt`Document` třída. Přístupem k`Theme` objektu, můžete upravit vlastnosti, jako jsou sekundární písma (`MinorFonts.Latin`) a barvy (`Colors.Hyperlink`). Přiřaďte požadované hodnoty těmto vlastnostem, abyste přizpůsobili téma svého dokumentu.
 
 #### Jaké jsou výhody nastavení vlastností motivu v dokumentu aplikace Word?
 
@@ -79,4 +79,4 @@ Nastavení vlastností motivu v dokumentu aplikace Word vám umožní upravit vz
 
 #### Mohu uložit upravený dokument v různých formátech?
 
-Ano, upravený dokument můžete uložit v různých formátech podporovaných Aspose.Words for .NET. The`Save` metoda`Document` objekt umožňuje určit výstupní formát souboru, jako je DOCX, PDF, HTML a další. Vyberte si vhodný formát na základě vašich požadavků.
+ Ano, upravený dokument můžete uložit v různých formátech podporovaných Aspose.Words for .NET. The`Save` metoda`Document` objekt umožňuje určit výstupní formát souboru, jako je DOCX, PDF, HTML a další. Vyberte si vhodný formát na základě vašich požadavků.

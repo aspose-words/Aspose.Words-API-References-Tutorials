@@ -8,7 +8,7 @@ weight: 10
 url: /ja/net/working-with-fields/insert-field-using-field-builder/
 ---
 
-ここでは、Aspose.Words for .NET の「FieldBuilder を使用してフィールドを挿入」機能を使用する、以下の C# ソース コードを説明するステップバイステップ ガイドを示します。望ましい結果を得るために、各ステップを注意深く実行してください。
+ここでは、Aspose.Words for .NET の「FieldBuilder を使用してフィールドを挿入」機能を使用する、以下の C# ソース コードを説明するステップバイステップ ガイドを示します。望ましい結果を得るために、各ステップを慎重に実行してください。
 
 ## ステップ 1: ドキュメント ディレクトリのセットアップ
 

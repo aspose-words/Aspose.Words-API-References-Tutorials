@@ -74,7 +74,7 @@ Trả lời: Việc chuyển đổi hình dạng sang công thức toán Office 
 
 #### Câu hỏi: Aspose.Words có thể xử lý các biểu thức toán học phức tạp không?
 
-Đ: Chắc chắn rồi! Aspose.Words có thể xử lý nhiều loại biểu thức và công thức toán học, khiến nó trở thành một công cụ phù hợp để xử lý ngay cả những nội dung toán học phức tạp.
+Đ: Chắc chắn rồi! Aspose.Words có thể xử lý một loạt các biểu thức và công thức toán học, khiến nó trở thành một công cụ phù hợp để xử lý ngay cả những nội dung toán học phức tạp.
 
 #### Câu hỏi: Aspose.Words có chỉ giới hạn ở nền tảng .NET không?
 

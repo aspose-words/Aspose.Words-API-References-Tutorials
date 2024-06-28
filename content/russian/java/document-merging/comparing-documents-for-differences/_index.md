@@ -2,7 +2,7 @@
 title: Сравнение документов на предмет различий
 linktitle: Сравнение документов на предмет различий
 second_title: API обработки Java-документов Aspose.Words
-description: Узнайте, как сравнивать документы на наличие различий с помощью Aspose.Words в Java. Наше пошаговое руководство обеспечивает точный менеджмент документов.
+description: Узнайте, как сравнивать документы на предмет различий с помощью Aspose.Words в Java. Наше пошаговое руководство обеспечивает точный менеджмент документов.
 type: docs
 weight: 12
 url: /ru/java/document-merging/comparing-documents-for-differences/
@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Заменять`"original_document.docx"` и`"modified_document.docx"` с путями к вашим собственным документам.
+ Заменять`"original_document.docx"` и`"modified_document.docx"` С путями к собственным документам.
 
 ## Шаг 2. Сравните документы
 

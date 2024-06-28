@@ -128,8 +128,8 @@ Odpověď: Řádkové záložky se obvykle používají v tabulkách k označen�
 
 #### Otázka: Je možné rozmotat záložky řádků v nesousedících tabulkách?
 
-Odpověď: Funkce Untangle Row Bookmarks, jak je uvedena v tomto článku, je navržena tak, aby rozmotala záložky řádků v sousedních tabulkách. K rozuzlení záložek řádků v nesousedících tabulkách mohou být nutné další úpravy kódu v závislosti na struktuře dokumentu.
+Odpověď: Funkce Untangle Row Bookmarks, jak je uvedena v tomto článku, je navržena tak, aby rozmotala záložky řádků v sousedních tabulkách. K rozuzlení záložek řádků v nesousedících tabulkách mohou být vyžadovány další úpravy kódu v závislosti na struktuře dokumentu.
 
 #### Otázka: Jaké další manipulace mohu provádět se záložkami řádků, jakmile jsou rozbaleny?
 
-Odpověď: Jakmile jsou záložky řádků rozbaleny, můžete podle potřeby provádět různé manipulace. To může zahrnovat úpravy, mazání nebo přidávání obsahu do řádků označených záložkou. S řádkovými záložkami zacházejte opatrně, abyste předešli nechtěnému dopadu na zbytek dokumentu.
+Odpověď: Jakmile jsou záložky řádků rozbaleny, můžete podle potřeby provádět různé manipulace. To může zahrnovat úpravy, mazání nebo přidávání obsahu do řádků se záložkami. S řádkovými záložkami zacházejte opatrně, abyste předešli nechtěnému dopadu na zbytek dokumentu.

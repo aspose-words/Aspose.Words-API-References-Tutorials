@@ -17,7 +17,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 - Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
 - Een documentmappad waar het uitvoerdocument wordt opgeslagen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Stap 2: Maak een nieuw document en voeg een diagram in.
 
  Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
 
@@ -73,7 +73,7 @@ Hiermee is de implementatie voltooid van het instellen van de uitlijning van lab
 
 In deze zelfstudie hebt u geleerd hoe u de uitlijning van meerregelige labels in een diagramas kunt instellen met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u een nieuw document maken, een spreidingsdiagram invoegen, toegang krijgen tot de diagramas en de uitlijning van het vinkje wijzigen.
 
-Aspose.Words voor .NET biedt krachtige functies voor het manipuleren van diagrammen in Word-documenten. Het aanvinken van labels met meerdere regels is handig wanneer aslabels lange tekst bevatten die moet worden teruggelopen of over meerdere regels moet worden gesplitst. Door de uitlijning van de vinklabels in te stellen, kunt u de horizontale uitlijning van labels met meerdere regels binnen de diagramas bepalen, waardoor een optimale presentatie en leesbaarheid wordt gegarandeerd.
+Aspose.Words voor .NET biedt krachtige functies voor het manipuleren van diagrammen in Word-documenten. Aanvinklabels met meerdere regels zijn handig wanneer aslabels lange tekst bevatten die moet worden teruggelopen of over meerdere regels moet worden gesplitst. Door de uitlijning van de vinklabels in te stellen, kunt u de horizontale uitlijning van labels met meerdere regels binnen de diagramas bepalen, waardoor een optimale presentatie en leesbaarheid wordt gegarandeerd.
 
 Door de uitlijning van labels met meerdere regels aan te passen, kunt u het uiterlijk van uw diagram verfijnen, vooral als u te maken heeft met lange of complexe labels. Door de labels rechts, links, gecentreerd of uitgelijnd uit te lijnen, kunt u een evenwichtige en visueel aantrekkelijke opstelling van vinkjes langs de as bereiken.
 
@@ -82,7 +82,7 @@ Met Aspose.Words voor .NET kunt u eenvoudig de uitlijningseigenschap van de maat
 ### Veelgestelde vragen
 
 #### Q1. Wat zijn vinklabels met meerdere regels in een diagramas?
-Aangevinkte labels met meerdere regels in een diagramas verwijzen naar de aslabels die zich over meerdere regels uitstrekken wanneer de labeltekst lang is of moet worden teruggelopen om in de beschikbare ruimte te passen. In plaats van de labeltekst af te korten of visuele rommel te veroorzaken, splitst de diagramas de labels automatisch in meerdere regels om de leesbaarheid te garanderen. Aanvinklabels met meerdere regels zijn vooral handig als u te maken heeft met lange categorie- of waardelabels in diagrammen.
+Aangevinkte labels met meerdere regels in een diagramas verwijzen naar de aslabels die zich over meerdere regels uitstrekken wanneer de labeltekst lang is of omloop vereist om binnen de beschikbare ruimte te passen. In plaats van de labeltekst af te korten of visuele rommel te veroorzaken, splitst de diagramas de labels automatisch in meerdere regels om de leesbaarheid te garanderen. Vinklabels met meerdere regels zijn vooral handig bij het omgaan met lange categorie- of waardelabels in diagrammen.
 
 #### Vraag 2. Kan ik de uitlijning van maatstreeplabels in een diagramas aanpassen?
  Ja, u kunt de uitlijning van maatstreeplabels in een diagramas aanpassen met Aspose.Words voor .NET. Door toegang te krijgen tot de`TickLabelAlignment` eigendom van de`ChartAxis` object, kunt u de gewenste uitlijning voor de vinklabels instellen. De uitlijningsopties omvatten links, rechts, gecentreerd of uitgevuld. Door de uitlijning aan te passen, kunt u de horizontale positionering van maatstreeplabels langs de kaartas bepalen, waardoor een goede leesbaarheid en visuele presentatie wordt gegarandeerd.

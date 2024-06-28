@@ -146,7 +146,7 @@ Neste código, personalizamos o tamanho da fonte e a cor do texto do parágrafo.
 
 ## Gerenciando alinhamento e espaçamento
 
-Controlar o alinhamento e espaçamento de parágrafos e texto é essencial para o layout do documento. Veja como você pode ajustar o alinhamento e o espaçamento:
+Controlar o alinhamento e o espaçamento dos parágrafos e do texto é essencial para o layout do documento. Veja como você pode ajustar o alinhamento e o espaçamento:
 
 ```java
 // Crie um novo documento
@@ -321,7 +321,7 @@ As tabelas são uma forma poderosa de organizar e apresentar dados em seus docum
 // Crie um novo documento
 Document doc = new Document();
 
-// Crie uma tabela com 3 linhas e 3 colunas
+// Crie uma tabela com 3 linhas e 3 colunas.
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

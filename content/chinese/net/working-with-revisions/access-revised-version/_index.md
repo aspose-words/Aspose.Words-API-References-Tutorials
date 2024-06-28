@@ -73,7 +73,7 @@ foreach (Revision revision in doc.Revisions)
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 访问 Word 文档的修订版本。通过加载文档、导航到修订版本并浏览修订版本，我们能够获取列表项段落的特定信息。 Aspose.Words for .NET 提供了用于操作 Word 文档的强大功能，包括访问评论。您现在可以利用这些知识，使用 Aspose.Words for .NET 访问您自己的 Word 文档的修订版本。
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 访问 Word 文档的修订版本。通过加载文档、导航到修订版本并浏览修订版本，我们能够获取列表项段落的具体信息。 Aspose.Words for .NET 提供了用于操作 Word 文档的强大功能，包括访问评论。您现在可以利用这些知识，使用 Aspose.Words for .NET 访问您自己的 Word 文档的修订版本。
 
 ### 常见问题解答
 

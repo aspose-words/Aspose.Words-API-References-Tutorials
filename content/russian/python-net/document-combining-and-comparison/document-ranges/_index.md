@@ -65,7 +65,7 @@ for table in doc.get_child_nodes(NodeType.TABLE, True):
     # Your code to work with tables goes here
 ```
 
-## Поиск и замена текста
+## Поиск и копирование текста
 
 Для навигации и изменения текста мы можем использовать функцию поиска и замены:
 

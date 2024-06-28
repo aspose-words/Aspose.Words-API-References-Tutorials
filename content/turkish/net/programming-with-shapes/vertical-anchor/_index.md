@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. Adım: Şekil Ekleme ve Yapılandırma
-kullanarak belgeye bir şekil ekleyin.`InsertShape` yöntemi`DocumentBuilder` nesne. Şekil için istediğiniz boyutları ayarlayın.
+ kullanarak belgeye bir şekil ekleyin.`InsertShape` yöntemi`DocumentBuilder` nesne. Şekil için istediğiniz boyutları ayarlayın.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## Adım 6: Belgeyi Kaydedin
- Belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithShapes.VerticalAnchor.docx" olarak kaydediyoruz.
+ Belgeyi kullanarak belirtilen dizine kaydedin.`Save`yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithShapes.VerticalAnchor.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

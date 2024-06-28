@@ -107,7 +107,7 @@ para.remove();
 //すべてのリビジョンが承認または拒否されるまで、Microsoft Word ではリビジョンとして表示されます。
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-//リビジョン削除の段落は、変更を受け入れると削除されます。
+//削除された改訂段落は、変更を受け入れると削除されます。
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //Is.Emptyでした

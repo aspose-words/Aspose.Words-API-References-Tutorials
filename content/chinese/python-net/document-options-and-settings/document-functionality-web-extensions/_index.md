@@ -10,7 +10,7 @@ url: /zh/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## 介绍
 
-Web 扩展已成为现代文档管理系统不可或缺的一部分。它们允许开发人员通过无缝集成基于 Web 的组件来增强文档功能。 Aspose.Words 是一个强大的 Python 文档操作 API，提供了将 Web 扩展合并到文档中的全面解决方案。
+Web 扩展已成为现代文档管理系统不可或缺的一部分。它们允许开发人员通过无缝集成基于 Web 的组件来增强文档功能。 Aspose.Words 是一个强大的 Python 文档操作 API，提供了将 Web 扩展集成到文档中的全面解决方案。
 
 ## 先决条件
 

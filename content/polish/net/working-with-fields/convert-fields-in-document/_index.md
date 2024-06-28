@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-fields/convert-fields-in-document/
 ---
 
-tym samouczku poprowadzimy Cię krok po kroku, korzystając z funkcji ConvertFieldsInDocument oprogramowania Aspose.Words dla .NET. Wyjaśnimy szczegółowo kod źródłowy C# potrzebny dla tej funkcji i udostępnimy przykładowe formaty wyjściowe przeceny.
+W tym samouczku poprowadzimy Cię krok po kroku, korzystając z funkcji ConvertFieldsInDocument oprogramowania Aspose.Words dla .NET. Wyjaśnimy szczegółowo kod źródłowy C# potrzebny dla tej funkcji i udostępnimy przykładowe formaty wyjściowe przeceny.
 
 ## Krok 1: Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Krok 5: Zapisz przekształcony dokument
- Użyj`Save()`metoda zapisania dokumentu z polami zamienionymi na tekst w określonym katalogu dokumentów.
+ Użyj`Save()` metoda zapisania dokumentu z polami zamienionymi na tekst w określonym katalogu dokumentów.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
@@ -70,7 +70,7 @@ Funkcja ConvertFieldsInDocument Aspose.Words dla platformy .NET to potężne nar
 
 #### P: Co to jest konwersja pola w Aspose.Words?
 
-Odp.: Konwersja pola w Aspose.Words odnosi się do możliwości przekształcania danych z pola w dokumencie programu Word przy użyciu różnych formatów lub typów danych. Pozwala to na zmianę prezentacji lub struktury danych w dokumencie końcowym.
+O: Konwersja pola w Aspose.Words odnosi się do możliwości przekształcania danych z pola w dokumencie programu Word przy użyciu różnych formatów lub typów danych. Pozwala to na zmianę prezentacji lub struktury danych w dokumencie końcowym.
 
 #### P: Jak przekonwertować pola w dokumencie Word za pomocą Aspose.Words?
 

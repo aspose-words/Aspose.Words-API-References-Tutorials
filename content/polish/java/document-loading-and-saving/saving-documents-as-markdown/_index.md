@@ -102,7 +102,7 @@ public void autoTableContentAlignment() throws Exception
 	builder.insertCell();
 	builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 	builder.write("Cell2");
-	// Wyrównuje wszystkie akapity w tabeli.
+	// Wyrównuje wszystkie akapity wewnątrz tabeli.
 	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 	{
 		saveOptions.setTableContentAlignment(TableContentAlignment.LEFT);
@@ -130,7 +130,7 @@ public void setImagesFolder() throws Exception
 
 ## Wniosek
 
-tym przewodniku omówiliśmy, jak zapisywać dokumenty w formacie Markdown przy użyciu Aspose.Words dla Java. Omówiliśmy tworzenie dokumentu Word, dostosowywanie wyrównania zawartości tabeli i obsługę obrazów w plikach Markdown. Możesz teraz efektywnie konwertować dokumenty programu Word do formatu Markdown, dzięki czemu będą odpowiednie dla różnych platform wydawniczych i potrzeb związanych z dokumentacją.
+tym przewodniku omówiliśmy, jak zapisywać dokumenty w formacie Markdown przy użyciu Aspose.Words dla Java. Omówiliśmy tworzenie dokumentu Word, dostosowywanie wyrównania zawartości tabeli i obsługę obrazów w plikach Markdown. Możesz teraz skutecznie konwertować dokumenty programu Word do formatu Markdown, dzięki czemu będą odpowiednie dla różnych platform wydawniczych i potrzeb związanych z dokumentacją.
 
 ## Często zadawane pytania
 

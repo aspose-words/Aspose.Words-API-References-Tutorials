@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Schritt 2: Einfügen eines Bildes
 
- Wir können ein Bild mit einfügen`Shape` Klasse und geben Sie hier den Typ des Bildes an`ShapeType.Image` Wir stellen auch den Wrap-Typ des Bildes auf ein`WrapType.Inline`.
+ Wir können ein Bild mit einfügen`Shape` Klasse und geben Sie hier den Typ des Bildes an`ShapeType.Image` . Wir stellen auch den Wrap-Typ des Bildes auf ein`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
@@ -61,7 +61,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Bilderfunktion mit
 
 #### F: Kann ich ein Bild von einer URL in Aspose.Words einfügen?
 
- A: Ja, Sie können ein Bild von einer URL in Aspose.Words einfügen. Sie können dasselbe verwenden`InsertImage` -Methode und geben Sie die Bild-URL anstelle des lokalen Dateipfads an.
+ A: Ja, Sie können ein Bild von einer URL in Aspose.Words einfügen. Sie können dasselbe verwenden`InsertImage`-Methode und geben Sie die Bild-URL anstelle des lokalen Dateipfads an.
 
 #### F: Wie kann ich die Größe eines Bildes in Aspose.Words ändern?
 
@@ -69,7 +69,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Bilderfunktion mit
 
 #### F: Kann ich in Aspose.Words Filter auf Bilder anwenden?
 
-A: Ja, Sie können in Aspose.Words Filter auf Bilder anwenden. Beispielsweise können Sie mithilfe von einen Unschärfefilter auf ein Bild anwenden`ApplyGaussianBlur` Methode der`Shape` Objekt.
+ A: Ja, Sie können in Aspose.Words Filter auf Bilder anwenden. Beispielsweise können Sie mithilfe von einen Unschärfefilter auf ein Bild anwenden`ApplyGaussianBlur` Methode der`Shape` Objekt.
 
 #### F: Wie kann ich in Aspose.Words ein Bild durch ein anderes ersetzen?
 

@@ -66,7 +66,7 @@ Met deze code kunt u een regeleindegroep voor Aziatische typografie toepassen me
 
 #### Vraag: Wat is de functie "Asian Typography Line Break Group" in Aspose.Words voor .NET?
 
-A: Met de functie "Aziatische typografieregeleindegroep" in Aspose.Words voor .NET kunt u het regeleindegedrag voor Aziatische typografie in een Word-document beheren. Het heeft met name invloed op de manier waarop regels worden onderbroken en omlopen bij het omgaan met Aziatische tekens in alinea's.
+A: Met de functie "Aziatische typografieregelafbrekingsgroep" in Aspose.Words voor .NET kunt u het regelafbrekingsgedrag voor Aziatische typografie in een Word-document beheren. Het heeft met name invloed op de manier waarop regels worden onderbroken en omlopen bij het omgaan met Aziatische tekens in alinea's.
 
 #### Vraag: Hoe schakel ik de "Asian Typography Line Break Group" in Aspose.Words voor .NET in?
 

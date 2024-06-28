@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## Passaggio 3: personalizzare il formato del punto elenco
 
-Possiamo personalizzare il formato del punto elenco accedendo alle proprietà di`ListFormat.List.ListLevels[0]`. In questo esempio utilizziamo il trattino "-" come punto elenco.
+ Possiamo personalizzare il formato del punto elenco accedendo alle proprietà di`ListFormat.List.ListLevels[0]`. In questo esempio utilizziamo il trattino "-" come punto elenco.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

@@ -50,7 +50,7 @@ Denna kod ställer in layoutläget på "Grid" och anger sedan antalet tecken per
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Ställ in layoutläget för en sektion som gör det möjligt att definiera dokumentrutnätets beteende.
-	// Observera att fliken Document Grid blir synlig i dialogrutan Utskriftsformat i MS Word
+	// Observera att fliken Document Grid blir synlig i dialogrutan Utskriftsformat i MS Word.
 	// om något asiatiskt språk definieras som redigeringsspråk.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

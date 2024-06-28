@@ -1,6 +1,6 @@
 ---
-title: Intestazione settesto
-linktitle: Intestazione settesto
+title: Intestazione Setex
+linktitle: Intestazione Setex
 second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come utilizzare le intestazioni Setext per formattare i tuoi documenti con Aspose.Words per .NET Guida passo passo.
 type: docs

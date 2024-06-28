@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-fields/convert-fields-in-document/
 ---
 
-tomto tutoriálu vás provedeme průvodcem krok za krokem pomocí funkce ConvertFieldsInDocument softwaru Aspose.Words for .NET. Podrobně vysvětlíme zdrojový kód C# potřebný pro tuto funkci a poskytneme ukázkové výstupní formáty markdown.
+V tomto tutoriálu vás provedeme průvodcem krok za krokem pomocí funkce ConvertFieldsInDocument softwaru Aspose.Words for .NET. Podrobně vysvětlíme zdrojový kód C# potřebný pro tuto funkci a poskytneme ukázkové výstupní formáty markdown.
 
 ## Krok 1: Předpoklady
 Než začnete, ujistěte se, že máte následující:
@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Krok 5: Uložte transformovaný dokument
- Použijte`Save()`metoda pro uložení dokumentu s poli převedenými na text v určeném adresáři dokumentů.
+ Použijte`Save()` metoda pro uložení dokumentu s poli převedenými na text v určeném adresáři dokumentů.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

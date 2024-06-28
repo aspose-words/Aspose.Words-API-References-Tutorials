@@ -2,7 +2,7 @@
 title: Erweiterte Optionen zum Speichern von HTML-Dokumenten mit Aspose.Words Java
 linktitle: Speichern von HTML-Dokumenten mit
 second_title: Aspose.Words Java-Dokumentverarbeitungs-API
-description: In diesem Tutorial haben wir verschiedene erweiterte Optionen zum Speichern von HTML-Dokumenten mit Aspose.Words für Java behandelt. Mit diesen Optionen können Sie hochwertiges HTML erstellen
+description: In diesem Tutorial haben wir verschiedene erweiterte Optionen zum Speichern von HTML-Dokumenten mit Aspose.Words für Java behandelt. Mit diesen Optionen können Sie hochwertiges HTML erstellen.
 type: docs
 weight: 16
 url: /de/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. Fazit
 In diesem Tutorial haben wir die erweiterten Optionen zum Speichern von HTML-Dokumenten untersucht, die Aspose.Words für Java bietet. Mit diesen Optionen haben Sie eine detaillierte Kontrolle über den Konvertierungsprozess und können so HTML-Dokumente erstellen, die den Original-Word-Dokumenten sehr ähnlich sind.
 
-## 12. FAQs
+## 12.FAQs
 Hier sind einige häufig gestellte Fragen zur Arbeit mit Aspose.Words für Java und den Optionen zum Speichern von HTML-Dokumenten:
 
 ### F1: Wie kann ich HTML mit Aspose.Words für Java zurück in das Word-Format konvertieren?

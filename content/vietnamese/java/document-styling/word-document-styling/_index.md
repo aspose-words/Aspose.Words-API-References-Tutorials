@@ -348,7 +348,7 @@ Luôn xem trước và kiểm tra tài liệu của bạn trên các thiết b�
 
 ## Phần kết luận
 
-Aspose.Words for Java là một công cụ mạnh mẽ giúp các nhà phát triển Java tạo kiểu cho tài liệu của họ và giải phóng khả năng sáng tạo của họ. Cho dù bạn cần tạo các báo cáo chuyên nghiệp, các bức thư hấp dẫn trực quan hay bất kỳ loại tài liệu nào khác, Aspose.Words for Java đều có thể đáp ứng được nhu cầu của bạn. Thử nghiệm với các kiểu, phông chữ và tùy chọn định dạng khác nhau để tạo ra các tài liệu tuyệt đẹp để lại ấn tượng lâu dài cho người xem.
+Aspose.Words for Java là một công cụ mạnh mẽ giúp các nhà phát triển Java tạo kiểu cho tài liệu của họ và giải phóng khả năng sáng tạo của họ. Cho dù bạn cần tạo các báo cáo chuyên nghiệp, các bức thư hấp dẫn trực quan hay bất kỳ loại tài liệu nào khác, Aspose.Words for Java đều có thể giúp bạn. Thử nghiệm với các kiểu, phông chữ và tùy chọn định dạng khác nhau để tạo ra các tài liệu tuyệt đẹp để lại ấn tượng lâu dài cho người xem.
 
 ---
 

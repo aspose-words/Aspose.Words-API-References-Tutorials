@@ -11,9 +11,9 @@ url: /hu/java/document-revision/guide-document-revision/
 Napjaink felgyorsult világában a dokumentumkezelés és az együttműködés a különböző iparágak alapvető szempontjai. Legyen szó jogi szerződésről, műszaki jelentésről vagy tudományos dolgozatról, a revíziók hatékony nyomon követésének és kezelésének képessége kulcsfontosságú. Az Aspose.Words for Java hatékony megoldást kínál a dokumentumok revízióinak kezelésére, a változtatások elfogadására, a különböző revíziótípusok megértésére, valamint a szöveg- és dokumentumfeldolgozás kezelésére. Ebben az átfogó útmutatóban lépésről lépésre végigvezetjük az Aspose.Words for Java használatának folyamatán, amellyel hatékonyan kezelheti a dokumentumok módosításait.
 
 
-## A dokumentum átdolgozásának megértése
+## A dokumentum felülvizsgálatának megértése
 
-### 1.1 Mi az a dokumentum-felülvizsgálat?
+### 1.1 Mi az a dokumentum-revízió?
 
 dokumentum-revízió a dokumentum módosításának folyamatára vonatkozik, legyen szó szöveges fájlról, táblázatról vagy prezentációról. Ezek a változtatások lehetnek tartalomszerkesztés, formázási módosítások vagy megjegyzések hozzáadása. Együttműködési környezetben több szerző és lektor is hozzájárulhat egy dokumentumhoz, ami idővel különféle revíziókhoz vezethet.
 
@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### Változatok elutasítása:
+#### Vélemények elutasítása:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");
@@ -188,7 +188,7 @@ dokumentumok átdolgozása az együttműködési munka kritikus szempontja, amel
    - Az Aspose.Words for Java hatékony megoldást kínál a dokumentumok revízióinak programozott kezelésére. Lehetővé teszi a felhasználók számára a változtatások áttekintését, elfogadását vagy elutasítását, a különböző revíziótípusok kezelését és a dokumentumban való hatékony navigálást.
 
 ### Nyomon követhetem-e a különböző szerzők által készített átdolgozásokat egy dokumentumban?
-   - Igen, az Aspose.Words lehetővé teszi a módosításokkal kapcsolatos információk elérését, beleértve a szerzőt, a módosítás dátumát és a módosított tartalmat, így könnyen nyomon követheti a különböző együttműködők által végrehajtott változtatásokat.
+   - Igen, az Aspose.Words lehetővé teszi a módosításokkal kapcsolatos információk elérését, beleértve a szerzőt, a változtatás dátumát és a módosított tartalmat, így könnyen nyomon követheti a különböző együttműködők által végrehajtott változtatásokat.
 
 ### Lehetséges-e programozottan elfogadni vagy elutasítani bizonyos módosításokat?
    - Teljesen! Az Aspose.Words lehetővé teszi a revíziók szelektív elfogadását vagy elutasítását meghatározott kritériumok alapján, így pontos irányítást biztosít a revíziós folyamat felett.

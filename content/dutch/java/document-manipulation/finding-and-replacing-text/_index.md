@@ -177,7 +177,7 @@ U kunt Aspose.Words gebruiken om wijzigingen in de kop- en voettekstvolgorde in 
 // Laad het document
 Document doc = new Document("your-document.docx");
 
-// Haal het eerste gedeelte
+// Verkrijg het eerste gedeelte
 Section firstPageSection = doc.getFirstSection();
 
 // Maak een FindReplaceOptions-instantie en pas deze toe op het bereik van het document
@@ -351,7 +351,7 @@ Ja, u kunt reguliere expressies gebruiken voor tekstvervanging in Aspose.Words v
 
 ### Kan ik tekst in kop- en voetteksten vervangen?
 
- Ja, u kunt tekst in de kop- en voetteksten van uw Word-document vervangen. Ga eenvoudigweg naar de juiste kop- of voettekst en gebruik de`replace` methode met het gewenste`FindReplaceOptions`.
+ Ja, u kunt tekst in de kop- en voetteksten van uw Word-document vervangen. Ga eenvoudigweg naar de juiste kop- of voettekst en gebruik de`replace` methode met de gewenste`FindReplaceOptions`.
 
 ### Waar is de UseLegacyOrder-optie voor?
 

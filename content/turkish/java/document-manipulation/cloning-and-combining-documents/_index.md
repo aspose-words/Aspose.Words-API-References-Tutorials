@@ -96,7 +96,7 @@ mainDoc.save("Your Directory Path" + "CombinedDocument.docx");
 
 ### Aspose.Words for Java'da adres-mektup birleştirme sırasında belgeleri nasıl eklerim?
 
-Aspose.Words for Java'da adres-mektup birleştirme sırasında, alan birleştirme geri aramasını ayarlayıp eklenecek belgeyi belirterek belge ekleyebilirsiniz. İşte bir örnek:
+Aspose.Words for Java'da adres-mektup birleştirme sırasında bir alan birleştirme geri çağrısı ayarlayıp eklenecek belgeyi belirterek belge ekleyebilirsiniz. İşte bir örnek:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");

@@ -321,7 +321,7 @@ Tablolar, belgelerinizdeki verileri düzenlemenin ve sunmanın güçlü bir yolu
 // Yeni bir belge oluştur
 Document doc = new Document();
 
-// 3 satır ve 3 sütundan oluşan bir tablo oluşturun
+// 3 satır ve 3 sütundan oluşan bir tablo oluşturun.
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

@@ -52,7 +52,7 @@ Za pomocą tego kodu będziesz mógł porównać dwa dokumenty i określić, czy
 
 ## Wniosek
 
-tym samouczku omówiliśmy, jak porównywać dokumenty pod kątem równości przy użyciu funkcji Porównaj pod kątem równości w Aspose.Words dla .NET. Porównując dwa dokumenty i analizując wersje, można określić, czy dokumenty mają tę samą treść lub czy są między nimi jakieś różnice. Aspose.Words dla .NET zapewnia potężne możliwości porównywania dokumentów, umożliwiając automatyzację procesu identyfikacji podobieństw i różnic w dokumentach.
+W tym samouczku omówiliśmy, jak porównywać dokumenty pod kątem równości przy użyciu funkcji Porównaj pod kątem równości w Aspose.Words dla .NET. Porównując dwa dokumenty i analizując wersje, można określić, czy dokumenty mają tę samą treść lub czy są między nimi jakieś różnice. Aspose.Words dla .NET zapewnia potężne możliwości porównywania dokumentów, umożliwiając automatyzację procesu identyfikacji podobieństw i różnic w dokumentach.
 
 ### Często zadawane pytania
 
@@ -73,4 +73,4 @@ Odp.: Tak, Aspose.Words dla .NET zapewnia różne opcje dostosowywania procesu p
 
 #### P: Czy mogę przeprowadzić bardziej szczegółowe porównanie, aby zidentyfikować konkretne różnice między dokumentami?
 
-Odpowiedź: Tak, możesz przeprowadzić bardziej szczegółowe porównanie, aby zidentyfikować konkretne różnice między dokumentami, iterując po pliku`Revisions` zbiór oryginału dokumentu. Każda wersja oznacza zmianę lub różnicę pomiędzy dokumentami. Możesz uzyskać dostęp do szczegółów każdej wersji, takich jak typ zmiany (wstawienie, usunięcie, zmiana formatowania) i zakres dokumentu, którego to dotyczy.
+ Odpowiedź: Tak, możesz przeprowadzić bardziej szczegółowe porównanie, aby zidentyfikować konkretne różnice między dokumentami, iterując po pliku`Revisions` zbiór oryginalnych dokumentów. Każda wersja oznacza zmianę lub różnicę pomiędzy dokumentami. Możesz uzyskać dostęp do szczegółów każdej wersji, takich jak typ zmiany (wstawienie, usunięcie, zmiana formatowania) i zakres dokumentu, którego to dotyczy.

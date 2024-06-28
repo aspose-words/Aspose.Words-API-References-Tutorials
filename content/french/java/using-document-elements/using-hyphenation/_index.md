@@ -12,7 +12,7 @@ Dans le monde du traitement documentaire, la précision et l’esthétique jouen
 
 ## 1. Introduction à la césure
 
-La césure est le processus consistant à diviser les mots en syllabes et à ajouter des traits d'union à la fin des lignes pour améliorer l'alignement du texte dans les documents. C’est particulièrement important lorsqu’il s’agit de langues comportant des structures de mots complexes.
+La césure est le processus consistant à diviser les mots en syllabes et à ajouter des traits d'union à la fin des lignes pour améliorer l'alignement du texte dans les documents. C'est particulièrement important lorsqu'il s'agit de langues qui ont des structures de mots complexes.
 
 ## 2. Configuration de votre environnement
 
@@ -76,4 +76,4 @@ Oui, Aspose.Words for Java fournit une API conviviale, facilitant son intégrati
 
 ### 5. Comment puis-je accéder à Aspose.Words pour Java ?
 
- Pour accéder à Aspose.Words pour Java,[Cliquez ici](https://purchase.aspose.com/buy). Découvrez la puissance du traitement de documents dans vos applications Java !
+ Pour accéder à Aspose.Words pour Java,[Cliquez ici](https://purchase.aspose.com/buy). Découvrez la puissance du traitement documentaire dans vos applications Java !

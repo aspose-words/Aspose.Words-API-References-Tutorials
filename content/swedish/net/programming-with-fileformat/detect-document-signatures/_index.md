@@ -72,7 +72,7 @@ Denna handledning har gett dig en steg-för-steg-guide om hur du upptäcker digi
 
 #### Hur anger man katalogen som innehåller dokumenten där man ska söka efter den digitala signaturen?
 
- För att ange katalogen som innehåller dokumenten där du vill söka efter den digitala signaturen, måste du ändra`dataDir` variabel i koden. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ För att ange katalogen som innehåller dokumenten där du vill söka efter den digitala signaturen, måste du ändra`dataDir` variabler i koden. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

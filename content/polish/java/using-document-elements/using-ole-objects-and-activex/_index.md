@@ -15,7 +15,7 @@ Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstęp
 
 1.  Aspose.Words dla Java: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words w swoim projekcie Java. Można go pobrać z[Tutaj](https://releases.aspose.com/words/java/).
 
-2. Środowisko programistyczne Java: W swoim systemie powinieneś mieć skonfigurowane działające środowisko programistyczne Java.
+2. Środowisko programistyczne Java: w systemie powinno być skonfigurowane działające środowisko programistyczne Java.
 
 ### Wstawianie obiektu OLE
 

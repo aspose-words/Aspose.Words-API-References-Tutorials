@@ -78,7 +78,7 @@ Nyugodtan használja ezt a kódot saját projektjeiben, és módosítsa saját i
 
 #### K: Hogyan kaphatok név szerint űrlapmezőt az Aspose.Words-ben?
 
- V: Ha név szerint szeretne űrlapmezőt kapni az Aspose.Words programban, használja a`Document.Range.FormFields[name]` módszer. Ez a metódus a megadott névnek megfelelő űrlapmezőt adja vissza.
+ V: Ha név szerint szeretne űrlapmezőt kapni az Aspose.Words-ben, használja a`Document.Range.FormFields[name]` módszer. Ez a metódus a megadott névnek megfelelő űrlapmezőt adja vissza.
 
 #### K: Mi a teendő, ha a megadott nevű űrlapmező nem létezik a dokumentumban?
 

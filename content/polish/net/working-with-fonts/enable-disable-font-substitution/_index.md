@@ -2,12 +2,12 @@
 title: Włącz opcję Wyłącz zastępowanie czcionek
 linktitle: Włącz opcję Wyłącz zastępowanie czcionek
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: tym samouczku dowiesz się, jak włączyć lub wyłączyć zastępowanie czcionek w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: W tym samouczku dowiesz się, jak włączyć lub wyłączyć zastępowanie czcionek w dokumencie programu Word za pomocą Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/enable-disable-font-substitution/
 ---
-W tym samouczku przeprowadzimy Cię przez proces włączania lub wyłączania zastępowania czcionek w dokumencie programu Word podczas jego renderowania przy użyciu biblioteki Aspose.Words dla platformy .NET. Włączenie lub wyłączenie zastępowania czcionek pozwala kontrolować, czy brakujące czcionki są automatycznie zastępowane czcionką domyślną. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+tym samouczku przeprowadzimy Cię przez proces włączania lub wyłączania zastępowania czcionek w dokumencie programu Word podczas jego renderowania przy użyciu biblioteki Aspose.Words dla platformy .NET. Włączenie lub wyłączenie zastępowania czcionek pozwala kontrolować, czy brakujące czcionki są automatycznie zastępowane czcionką domyślną. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:

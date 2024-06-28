@@ -2,86 +2,122 @@
 title: Zorg voor vervanging zonder achtervoegsels
 linktitle: Zorg voor vervanging zonder achtervoegsels
 second_title: Aspose.Words-API voor documentverwerking
-description: In deze zelfstudie leert u hoe u achtervoegselloze overschrijvingen in een Word-document kunt krijgen met Aspose.Words voor .NET.
+description: Leer hoe u lettertypevervanging zonder achtervoegsels kunt beheren in Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om ervoor te zorgen dat uw documenten er elke keer perfect uitzien.
 type: docs
 weight: 10
 url: /nl/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-In deze zelfstudie laten we u zien hoe u de overschrijvingen zonder achtervoegsels in een Word-document kunt krijgen met behulp van de Aspose.Words-bibliotheek voor .NET. Vervangingen zonder achtervoegsels worden gebruikt om problemen met lettertypevervanging op te lossen bij het weergeven of afdrukken van documenten. We nemen u stap voor stap mee om u te helpen de code in uw .NET-project te begrijpen en te implementeren.
+Welkom bij deze uitgebreide handleiding over het beheren van lettertypevervanging met Aspose.Words voor .NET. Als u ooit last heeft gehad van lettertypen die niet correct in uw documenten verschijnen, bent u hier aan het juiste adres. In deze zelfstudie leert u stapsgewijs hoe u lettertypevervanging zonder achtervoegsels efficiënt kunt afhandelen. Laten we beginnen!
 
 ## Vereisten
-Zorg ervoor dat u over de volgende items beschikt voordat u begint:
-- Een praktische kennis van de programmeertaal C#
-- De Aspose.Words-bibliotheek voor .NET die in uw project is geïnstalleerd
+
+Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u over het volgende beschikt:
+
+- Basiskennis van C#: Als u C#-programmering begrijpt, wordt het gemakkelijker om de stappen te volgen en te implementeren.
+-  Aspose.Words voor .NET-bibliotheek: Download en installeer de bibliotheek van de .NET-bibliotheek[download link](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Zet een ontwikkelomgeving zoals Visual Studio op om uw code te schrijven en uit te voeren.
+-  Voorbeelddocument: een voorbeelddocument (bijv.`Rendering.docx`) om mee te werken tijdens deze zelfstudie.
+
+## Naamruimten importeren
+
+Eerst moeten we de benodigde naamruimten importeren om toegang te krijgen tot de klassen en methoden die door Aspose.Words worden geleverd.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
+```
 
 ## Stap 1: Definieer de documentmap
- Eerst moet u het mappad instellen op de locatie van uw Word-document. Vervangen`"YOUR DOCUMENT DIRECTORY"` in de code met het juiste pad.
+
+Geef om te beginnen de map op waarin uw document zich bevindt. Dit helpt bij het vinden van het document waaraan u wilt werken.
 
 ```csharp
-// Pad naar uw documentenmap
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Stap 2: Laad het document en configureer vervangingen zonder achtervoegsels
- Vervolgens laden we het document met behulp van de`Document` klasse en configureer achtervoegselloze vervangingen met behulp van de`DocumentSubstitutionWarnings` klas. We zullen ook een lettertypebron toevoegen door een map op te geven die de lettertypen bevat.
-
-```csharp
-// Laad het document en configureer vervangingen zonder achtervoegsels
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## Stap 3: Sla het document op
-Ten slotte slaan we het document op met de toegepaste overschrijvingen zonder achtervoegsel.
-
-```csharp
-// Bewaar het document
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### Voorbeeldbroncode voor Get Substitution Without Suffixes met Aspose.Words voor .NET 
-```csharp
-
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## Stap 2: Stel de vervangingswaarschuwingshandler in
+
+Vervolgens moeten we een waarschuwingshandler instellen die ons op de hoogte stelt wanneer er een lettertypevervanging plaatsvindt tijdens de documentverwerking. Dit is van cruciaal belang voor het opsporen en afhandelen van eventuele lettertypeproblemen.
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## Stap 3: Voeg aangepaste lettertypebronnen toe
+
+In deze stap voegen we aangepaste lettertypebronnen toe om ervoor te zorgen dat Aspose.Words de juiste lettertypen kan vinden en gebruiken. Dit is vooral handig als u specifieke lettertypen hebt opgeslagen in aangepaste mappen.
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+In deze code:
+-  We halen de huidige lettertypebronnen op en voegen een nieuwe toe`FolderFontSource` verwijzend naar onze aangepaste lettertypemap (`C:\\MyFonts\\`).
+- Vervolgens werken we de lettertypebronnen bij met deze nieuwe lijst.
+
+## Stap 4: Sla het document op
+
+Sla ten slotte het document op nadat u de instellingen voor lettertypevervanging hebt toegepast. Voor deze zelfstudie slaan we deze op als PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## Stap 5: Maak de klasse Waarschuwingshandler aan
+
+Om waarschuwingen effectief af te handelen, maakt u een aangepaste klasse die de`IWarningCallback` koppel. Deze klasse registreert en registreert waarschuwingen voor lettertypevervanging.
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+In deze klas:
+-  De`Warning` methode registreert waarschuwingen met betrekking tot lettertypevervanging.
+-  De`FontWarnings` collection slaat deze waarschuwingen op voor verdere inspectie of registratie.
+
 ## Conclusie
-In deze zelfstudie hebben we gezien hoe u de overschrijvingen zonder achtervoegsels in een Word-document kunt krijgen met Aspose.Words voor .NET. Vervangingen zonder achtervoegsels zijn handig voor het oplossen van problemen met het vervangen van lettertypen. U kunt deze functie gerust gebruiken om de weergave en het afdrukken van uw documenten te verbeteren.
 
-### Veelgestelde vragen
+U hebt nu het proces van het vervangen van lettertypen zonder achtervoegsels onder de knie met behulp van Aspose.Words voor .NET. Deze kennis zorgt ervoor dat uw documenten het beoogde uiterlijk behouden, ongeacht de lettertypen die op het systeem beschikbaar zijn. Blijf experimenteren met verschillende instellingen en bronnen om de kracht van Aspose.Words volledig te benutten.
 
-#### Vraag: Waarom voegt Aspose.Words achtervoegsels toe aan lettertypevervangingen?
+## Veelgestelde vragen
 
-A: Aspose.Words voegt achtervoegsels toe aan lettertypevervangingen om conflicten tussen originele lettertypen en vervangende lettertypen te voorkomen. Dit zorgt voor maximale compatibiliteit bij het converteren en manipuleren van documenten.
+### V1: Hoe kan ik lettertypen uit meerdere aangepaste mappen gebruiken?
 
-#### Vraag: Hoe kan ik lettertypevervangingen zonder achtervoegsels ophalen in Aspose.Words?
+ Je kunt er meerdere toevoegen`FolderFontSource` exemplaren naar de`fontSources` lijst en update de lettertypebronnen dienovereenkomstig.
 
- A: Om lettertypevervangingen zonder achtervoegsels in Aspose.Words op te halen, kunt u de`FontSubstitutionSettings` klasse en de`RemoveSuffixes` eigendom. Deze eigenschap instellen op`true` krijgt de lettertypevervangingen zonder de toegevoegde achtervoegsels.
+### V2: Waar kan ik een gratis proefversie van Aspose.Words voor .NET downloaden?
 
-#### Vraag: Is het mogelijk om het toevoegen van achtervoegsels aan lettertypevervangingen in Aspose.Words uit te schakelen?
+ U kunt een gratis proefversie downloaden van de[Aspose gratis proefpagina](https://releases.aspose.com/).
 
-A: Nee, het is niet mogelijk om het toevoegen van achtervoegsels aan lettertypevervangingen in Aspose.Words uit te schakelen. Er worden standaard achtervoegsels toegevoegd om de compatibiliteit en consistentie van documenten te garanderen.
+###  Vraag 3: Kan ik meerdere soorten waarschuwingen afhandelen met behulp van`IWarningCallback`?
 
-#### Vraag: Hoe kan ik ongewenste achtervoegsels uit lettertypevervangingen in Aspose.Words filteren?
+ Ja de`IWarningCallback` Met de interface kunt u verschillende soorten waarschuwingen afhandelen, niet alleen lettertypevervanging.
 
- A: Om ongewenste achtervoegsels uit lettertypevervangingen in Aspose.Words te filteren, kunt u tekenreeksverwerkingstechnieken gebruiken, zoals het gebruik van de`Replace` of`Substring` methoden om specifieke achtervoegsels te verwijderen die u niet wilt opnemen.
+### V4: Waar kan ik ondersteuning krijgen voor Aspose.Words?
+
+ Voor ondersteuning kunt u terecht op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).
+
+### Vraag 5: Is het mogelijk om een tijdelijke licentie aan te schaffen?
+
+ Ja, u kunt een tijdelijke licentie verkrijgen bij de[tijdelijke licentiepagina](https://purchase.aspose.com/temporary-license/).

@@ -57,7 +57,7 @@ builder.Writeln("This text will be StrikeThrough");
 
 #### 问：是否可以在同一段落的多段文本中添加删除线文本？
 
-答：是的，您可以使用多个文本向单个段落中的多个文本部分添加删除线文本。`Run`对象。您可以创建多个`Run`对象并设置`Font.StrikeThrough`财产给`true`对于每个对象，将删除线文本添加到所需的文本部分。然后您可以使用以下命令将它们添加到段落中`Paragraph.AppendChild(run)`方法。
+答：是的，您可以通过使用 multiple 为单个段落中的多个文本部分添加删除线文本。`Run`对象。您可以创建多个`Run`对象并设置`Font.StrikeThrough`财产给`true`对于每个对象，将删除线文本添加到所需的文本部分。然后您可以使用以下命令将它们添加到段落中`Paragraph.AppendChild(run)`方法。
 
 #### 问：我可以在 Aspose.Words 的表格或单元格中的文本中添加删除线文本吗？
 

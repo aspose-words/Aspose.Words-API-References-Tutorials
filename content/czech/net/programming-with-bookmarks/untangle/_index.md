@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Krok 2: Získejte nadřazené řádky ze záložek
 
- Používáme`GetAncestor` metody pro načtení nadřazených řádků počátečních a koncových uzlů záložky:
+ Používáme`GetAncestor` Metody pro načtení nadřazených řádků počátečních a koncových uzlů záložky:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

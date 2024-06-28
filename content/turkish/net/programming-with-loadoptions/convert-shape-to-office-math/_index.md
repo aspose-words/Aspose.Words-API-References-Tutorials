@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/convert-shape-to-office-math/
 ---
-Bir C# uygulamasında matematik şekilleri içeren belgelerle Kelime İşleme yaparken, daha iyi uyumluluk ve sunum için bunları Office matematik formüllerine dönüştürmeniz gerekebilir. .NET için Aspose.Words kitaplığıyla, bir belgeyi yüklerken şekilleri kolaylıkla Office matematik formüllerine dönüştürebilirsiniz. Bu adım adım kılavuzda, LoadOptions'ı kullanarak şekilleri Office matematik formüllerine dönüştüren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+Bir C# uygulamasında matematik şekilleri içeren belgelerle Kelime İşleme yaparken, daha iyi uyumluluk ve sunum için bunları Office matematik formüllerine dönüştürmeniz gerekebilir. .NET için Aspose.Words kitaplığıyla, bir belgeyi yüklerken şekilleri kolayca Office matematik formüllerine dönüştürebilirsiniz. Bu adım adım kılavuzda, LoadOptions'ı kullanarak şekilleri Office matematik formüllerine dönüştüren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
 ## Aspose.Words kütüphanesini anlama
 
@@ -21,7 +21,7 @@ Koda dalmadan önce .NET için Aspose.Words kütüphanesini anlamak önemlidir. 
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 ```
 
-Belgeyi yüklerken şekilleri Office matematik formüllerine dönüştürmeyi etkinleştirmek için yeni bir LoadOptions nesnesi oluşturuyoruz ve ConvertShapeToOfficeMath özelliğini true olarak ayarlıyoruz.
+Belgeyi yüklerken şekillerin Office matematik formüllerine dönüştürülmesini etkinleştirmek için yeni bir LoadOptions nesnesi oluşturuyoruz ve ConvertShapeToOfficeMath özelliğini true olarak ayarlıyoruz.
 
 ## Şekilleri Office matematik formüllerine dönüştürerek belge yükleme
 
@@ -78,7 +78,7 @@ C: Kesinlikle! Aspose.Words çok çeşitli matematiksel ifadeleri ve formülleri
 
 #### S: Aspose.Words yalnızca .NET platformlarıyla mı sınırlı?
 
-C: Aspose.Words .NET için optimize edilmiş olsa da Java ve Android dahil olmak üzere diğer platformlar için de destek sunarak belge işleme için çok yönlü bir çözüm haline geliyor.
+C: Aspose.Words .NET için optimize edilmiş olsa da Java ve Android gibi diğer platformlar için de destek sunarak belge işleme için çok yönlü bir çözüm haline geliyor.
 
 #### S: Yükleme seçeneklerini başka amaçlar için özelleştirebilir miyim?
 

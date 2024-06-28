@@ -58,7 +58,7 @@ Aby podzielić dokument według słowa kluczowego, możesz przeglądać zawarto�
 ### Czy mogę podzielić dokument na pliki PDF?
 Tak, możesz. Po podzieleniu dokumentu za pomocą Aspose.Words dla Java możesz użyć Aspose.PDF dla Java, aby zapisać każdą część jako plik PDF.
 
-### Czy korzystanie z Aspose.Words dla Java jest darmowe?
+### Czy korzystanie z Aspose.Words dla Java jest bezpłatne?
 Aspose.Words for Java jest biblioteką komercyjną, ale oferuje bezpłatną wersję próbną. Możesz sprawdzić ich ceny i licencje na ich stronie internetowej.
 
 ### Co się stanie, jeśli mój dokument ma złożone formatowanie?

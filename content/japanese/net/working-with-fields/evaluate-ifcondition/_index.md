@@ -18,7 +18,7 @@ url: /ja/net/working-with-fields/evaluate-ifcondition/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## ステップ 2: IF フィールドを挿入する
+## ステップ 2: IF フィールドを挿入します。
 
 私たちが使用するのは、`InsertField()`メソッドを使用して、評価する条件を指定する IF フィールドをドキュメントに挿入します。
 

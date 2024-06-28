@@ -92,7 +92,7 @@ Du kan anpassa utseendet på formulärfält, som att justera teckenstorlek och f
    Du kan anpassa formulärfältets utseende genom att justera teckenstorlek, färg och andra formateringsalternativ.
 
 4. ### Finns det en gratis testversion tillgänglig för Aspose.Words för Java?
-    Ja, du kan få tillgång till en gratis testversion av Aspose.Words för Java[här](https://releases.aspose.com/).
+    Ja, du kan få tillgång till en gratis testversion av Aspose.Words för Java.[här](https://releases.aspose.com/).
 
 5. ### Var kan jag få support för Aspose.Words för Java?
     För support och hjälp, besök[Aspose.Words forum](https://forum.aspose.com/).

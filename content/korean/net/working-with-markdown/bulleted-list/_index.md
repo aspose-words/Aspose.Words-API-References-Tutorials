@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## 3단계: 글머리 기호 형식 사용자 정의
 
-속성에 액세스하여 글머리 기호 형식을 사용자 정의할 수 있습니다.`ListFormat.List.ListLevels[0]`. 이 예에서는 대시 "-"를 글머리 기호로 사용합니다.
+ 속성에 액세스하여 글머리 기호 형식을 사용자 정의할 수 있습니다.`ListFormat.List.ListLevels[0]`. 이 예에서는 대시 "-"를 글머리 기호로 사용합니다.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

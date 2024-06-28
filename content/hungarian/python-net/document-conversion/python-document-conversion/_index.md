@@ -63,7 +63,7 @@ pip install aspose-words
 
 3. A telepítés befejezése után megkezdheti az Aspose.Words használatát a Python-projektekben.
 
-## Dokumentumkonverzió végrehajtása
+## Dokumentumok konvertálása
 
 ### Word konvertálása PDF-be
 
@@ -99,7 +99,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 A Word és a PDF mellett az Aspose.Words for Python különféle dokumentumformátumokat támogat, beleértve a HTML-t, TXT-t, EPUB-t és még sok mást.
 
-## A dokumentumkonverzió testreszabása
+## Dokumentumkonverziók testreszabása
 
 ### Formázás és stílus alkalmazása
 
@@ -173,9 +173,9 @@ doc.styles.default_font.size = 12
 doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ```
 
-## Dokumentumkonverzió automatizálása
+## Dokumentumkonverziók automatizálása
 
-### Python szkriptek írása automatizáláshoz
+### Python-szkriptek írása automatizáláshoz
 
 A Python szkriptelési képességei kiváló választássá teszik az ismétlődő feladatok automatizálására. Python szkripteket írhat a kötegelt dokumentumok konvertálásához, így időt és erőfeszítést takaríthat meg.
 
@@ -207,7 +207,7 @@ for filename in input_files:
 
 Által
 
- a Python és az Aspose.Words erejét egyesítve automatizálhatja a dokumentumok tömeges konvertálását, növelve a termelékenységet és a hatékonyságot.
+ A Python és az Aspose.Words erejének ötvözésével automatizálhatja a dokumentumok tömeges konvertálását, növelve a termelékenységet és a hatékonyságot.
 
 #### Példa:
 

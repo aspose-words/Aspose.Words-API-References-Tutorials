@@ -18,7 +18,7 @@ Verilen kodda bir belge oluşturucu oluşturarak başlıyoruz.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. Adım: IF alanını ekleyin
+## Adım 2: IF alanını ekleyin.
 
  biz kullanıyoruz`InsertField()` Değerlendirilecek koşulu belirten IF alanını belgeye ekleme yöntemi.
 
@@ -36,12 +36,12 @@ Burada örnek olarak "1=1" koşulunu kullandık, ancak koşulu gerektiği gibi �
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-`actualResult` değişken koşul değerlendirmesinin sonucunu içerir.
+`actualResult` Değişken, durum değerlendirmesinin sonucunu içerir.
 
 ### Aspose.Words for .NET ile IF Durumunu Değerlendirmek için Örnek Kaynak Kodu
 
 ```csharp
-// Belge oluşturucunun oluşturulması.
+//Belge oluşturucunun oluşturulması.
 DocumentBuilder builder = new DocumentBuilder();
 
 // IF alanını belgeye ekleyin.

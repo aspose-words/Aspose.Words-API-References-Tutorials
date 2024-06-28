@@ -87,7 +87,7 @@ V: Igen, az Aspose.Words for Java segítségével különböző betűtípusokat 
 V: Igen, használhat egyéni betűtípusokat a betűtípus fájl elérési útjának megadásával.
 
 ### K: Hogyan változtathatom meg a szöveg betűszínét?
- V: Használhatja a`Font.setColor()` a betűszín beállításának módja.
+ V: Használhatja a`Font.setColor()` módszer a betűszín beállítására.
 
 ### K: Vannak korlátozások a dokumentumban használható betűtípusok számára?
 V: Az Aspose.Words for Java a betűtípusok széles skáláját támogatja, és általában nincs szigorú korlátozás a dokumentumban használható betűtípusok számára.

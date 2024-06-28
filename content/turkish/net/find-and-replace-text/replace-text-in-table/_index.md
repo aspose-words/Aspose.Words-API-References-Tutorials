@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### S: Aspose.Words for .NET kullanarak bir belgedeki tabloya nasıl erişebilirim?
 
-C: Belge yüklendikten sonra metin değiştirme işlemini gerçekleştirmek istediğiniz tabloya erişebilirsiniz. Aspose.Words for .NET'te şunları kullanabilirsiniz:`GetChild` yöntemi ile`NodeType.Table` İstenilen tabloyu elde etmek için parametre. Örneğin:
+C: Belge yüklendikten sonra metin değiştirme işlemini gerçekleştirmek istediğiniz tabloya erişebilirsiniz. Aspose.Words for .NET'te şunları kullanabilirsiniz:`GetChild` yöntemi ile`NodeType.Table` İstenilen tabloyu elde etmek için parametreler. Örneğin:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

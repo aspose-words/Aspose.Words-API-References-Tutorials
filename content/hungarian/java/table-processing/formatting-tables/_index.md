@@ -49,7 +49,7 @@ Most, hogy beállítottuk környezetünket, merüljünk el a táblák létrehoz�
 
 ### Táblázat létrehozása
 
- Táblázat létrehozásához a dokumentumban használhatja a`Table` osztály az Aspose.Words for Java-ból. A következőképpen hozhat létre alaptáblázatot:
+ Táblázat létrehozásához a dokumentumban használhatja a`Table` osztály az Aspose.Words for Java-ból. A következőképpen hozhat létre egy alaptáblázatot:
 
 ```java
 Table table = new Table(doc);

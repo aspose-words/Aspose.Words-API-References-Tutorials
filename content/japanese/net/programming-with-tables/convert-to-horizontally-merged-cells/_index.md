@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/convert-to-horizontally-merged-cells/
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントをロードします
+//ドキュメントをロードする
 Document doc = new Document(dataDir + "Table with merged cells.docx");
 
 //アレイへのアクセス

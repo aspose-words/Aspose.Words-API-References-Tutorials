@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## 第 3 步：刪除所有部分
-要從文件中刪除所有部分，我們將使用`Clear`的方法`Sections`文檔的集合。
+要從文件中刪除所有部分，我們將使用`Clear`的方法`Sections`文件收集。
 
 ```csharp
 doc.Sections.Clear();

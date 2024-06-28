@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### 问：如何在 Aspose.Words for .NET 中加载源文档和目标文档？
 
- A：将源文档加载到实例中`Document`类称为`srcDoc`并创建一个空实例`Document`类称为`dstDoc`对于目标文档，您可以使用以下代码：
+A：将源文档加载到实例中`Document`类称为`srcDoc`并创建一个空实例`Document`类称为`dstDoc`对于目标文档，您可以使用以下代码：
 
 ```csharp
 //加载源文档

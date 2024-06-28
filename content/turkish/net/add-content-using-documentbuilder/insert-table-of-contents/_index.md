@@ -2,39 +2,69 @@
 title: Word Belgesine İçindekiler Tablosu Ekleme
 linktitle: Word Belgesine İçindekiler Tablosu Ekleme
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerine nasıl içindekiler tablosu ekleyeceğinizi öğrenin.
+description: Aspose.Words for .NET kullanarak Word'e nasıl İçindekiler ekleyeceğinizi öğrenin. Belgelerde kusursuz gezinme için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-Bu kapsamlı eğitimde Aspose.Words for .NET'i kullanarak bir Word belgesine içindekiler tablosunu nasıl ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, uygun başlıklara ve sayfa numaralarına sahip bir içindekiler tablosu oluşturabileceksiniz.
+## giriiş
+Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerinize nasıl etkili bir İçindekiler Tablosu (TOC) ekleyeceğinizi öğreneceksiniz. Bu özellik, uzun belgeleri düzenlemek ve gezinmek, okunabilirliği artırmak ve belge bölümlerine hızlı bir genel bakış sağlamak için gereklidir.
 
 ## Önkoşullar
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-- Aspose.Words for .NET kütüphanesi sisteminizde kuruludur.
 
-## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
-Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesini başlatın:
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+
+- C# ve .NET çerçevesine ilişkin temel anlayış.
+- Makinenizde Visual Studio yüklü.
+-  Aspose.Words for .NET kitaplığı. Henüz yüklemediyseniz adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için C# projenize gerekli ad alanlarını içe aktarın:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+Süreci net adımlara ayıralım:
+
+## Adım 1: Aspose.Words Document ve DocumentBuilder'ı başlatın
+
+ Öncelikle yeni bir Aspose.Words başlatın`Document` nesne ve bir`DocumentBuilder` birlikte çalışmak:
+
+```csharp
+// Document ve DocumentBuilder'ı Başlat
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Adım 2: İçindekiler Tablosu Ekleyin
-Daha sonra içindekiler tablosu eklemek için DocumentBuilder sınıfının InsertTableOfContents yöntemini kullanın. Yöntem içinde gerekli biçimlendirme seçeneklerini belirtin:
+## Adım 2: İçindekiler Tablosunu Ekleyin
+
+ Şimdi içindekileri kullanarak İçindekiler'i ekleyin.`InsertTableOfContents` yöntem:
 
 ```csharp
+// İçindekiler Ekle
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## 3. Adım: Belge İçeriğini Ekleyin
-İçindekiler tablosunu ekledikten sonra asıl belge içeriğini ekleyin. StyleIdentifier'ı kullanarak uygun başlık stillerini ayarlayın:
+## 3. Adım: Belge İçeriğini Yeni Bir Sayfada Başlatın
+
+Doğru biçimlendirmeyi sağlamak için asıl belge içeriğini yeni bir sayfada başlatın:
 
 ```csharp
+// Sayfa sonu ekleme
 builder.InsertBreak(BreakType.PageBreak);
+```
 
+## Adım 4: Belgenizi Başlıklarla Yapılandırın
+
+Uygun başlık stillerini kullanarak belge içeriğinizi düzenleyin:
+
+```csharp
+// Başlık stillerini ayarlama
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 builder.Writeln("Heading 1");
 
@@ -59,96 +89,42 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## 4. Adım: İçindekiler Tablosunu Güncelleyin
-Yeni eklenen içindekiler tablosu başlangıçta boş olacaktır. Doldurmak için belgedeki alanları güncelleyin:
+## 5. Adım: İçindekiler Tablosunu Güncelleyin ve Doldurun
+
+Belge yapısını yansıtacak şekilde İçindekiler Tablosunu güncelleyin:
 
 ```csharp
+// İçindekiler alanlarını güncelleme
 doc.UpdateFields();
 ```
 
-## Adım 5: Belgeyi Kaydedin
-İçindekiler tablosunu ekledikten ve alanları güncelledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
+## Adım 6: Belgeyi Kaydedin
+
+Son olarak belgenizi belirtilen dizine kaydedin:
 
 ```csharp
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-```
-
-### Aspose.Words for .NET kullanarak İçindekiler Tablosu Eklemek için Örnek Kaynak Kodu
-Aspose.Words for .NET kullanarak içindekiler tablosu eklemek için gereken kaynak kodun tamamı burada:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-// DocumentBuilder'ı Document nesnesiyle başlat
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// İçerik tablosu eklea
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-
-// Asıl belge içeriğini ikinci sayfadan başlatın.
-builder.InsertBreak(BreakType.PageBreak);
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
-builder.Writeln("Heading 1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 1.1");
-builder.Writeln("Heading 1.2");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-
-builder.Writeln("Heading 2");
-builder.Writeln("Heading 3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 3.1");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
-
-builder.Writeln("Heading 3.1.1");
-builder.Writeln("Heading 3.1.2");
-builder.Writeln("Heading 3.1.3");
-
-builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
-
-builder.Writeln("Heading 3.2");
-builder.Writeln("Heading 3.3");
-
-
-// Yeni eklenen içindekiler tablosu başlangıçta boş olacaktır.
-// Dokümandaki alanlar güncellenerek doldurulması gerekmektedir.
-doc.UpdateFields();
-
-
-doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
+// Belgeyi kaydet
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesine içindekiler tablosunu nasıl ekleyeceğinizi başarıyla öğrendiniz. Bu adım adım kılavuzu izleyerek ve verilen kaynak kodunu kullanarak artık belgeleriniz için uygun başlıklara ve sayfa numaralarına sahip bir içindekiler tablosu oluşturabilirsiniz.
+Aspose.Words for .NET'i kullanarak İçindekiler Tablosu eklemek basittir ve belgelerinizin kullanılabilirliğini önemli ölçüde artırır. Bu adımları izleyerek karmaşık belgeleri verimli bir şekilde düzenleyebilir ve bunlar arasında gezinebilirsiniz.
 
-### Word belgesine içindekiler tablosu eklemek için SSS'ler
+## SSS'ler
 
-#### S: İçindekiler tablosunun görünümünü özelleştirebilir miyim?
+### İçindekiler Tablosunun görünümünü özelleştirebilir miyim?
+Evet, Aspose.Words for .NET API'lerini kullanarak İçindekiler Tablosunun görünümünü ve davranışını özelleştirebilirsiniz.
 
- C: Evet, içindekiler tablosunun görünümünü, belirtilen biçimlendirme seçeneklerini değiştirerek özelleştirebilirsiniz.`InsertTableOfContents` yöntem. Parametreler sayfa numaralarını, girintiyi ve diğer stilleri kontrol etmenize olanak tanır.
+### Aspose.Words alanların otomatik olarak güncellenmesini destekliyor mu?
+Evet, Aspose.Words, İçindekiler gibi alanları belge değişikliklerine göre dinamik olarak güncellemenize olanak tanır.
 
-#### S: İçindekiler tablosuna belirli başlık düzeyleri eklemek istersem ne olur?
+### Tek bir belgede birden fazla İçindekiler Tablosu oluşturabilir miyim?
+Aspose.Words, tek bir belgede farklı ayarlarla birden fazla İçindekiler oluşturmayı destekler.
 
- C: İçindekiler tablosuna dahil edilecek istenen başlık düzeylerini, içindeki değeri ayarlayarak belirleyebilirsiniz.`InsertTableOfContents` yöntem. Örneğin, kullanarak`"\\o \"1-3\""` 1'den 3'e kadar olan başlık düzeylerini içerecektir.
+### Aspose.Words Microsoft Word'ün farklı sürümleriyle uyumlu mu?
+Evet, Aspose.Words, Microsoft Word formatlarının çeşitli sürümleriyle uyumluluk sağlar.
 
-#### S: Belge içeriğinde değişiklik yaparsam içindekiler tablosunu otomatik olarak güncelleyebilir miyim?
-
- C: Evet, içindekileri arayarak otomatik olarak güncelleyebilirsiniz.`UpdateFields` belgedeki yöntem. Bu, belge içeriğinde yapılan, başlık ekleme veya kaldırma gibi değişikliklerin içindekiler tablosuna yansıtılmasını sağlayacaktır.
-
-#### S: İçindekiler tablosundaki başlık düzeylerini nasıl farklı şekilde stillendirebilirim?
-
- C: Her başlık düzeyi için farklı paragraf stilleri kullanarak başlık düzeylerini farklı biçimlendirebilirsiniz. Farklı atama yaparak`StyleIdentifier` değerleri`ParagraphFormat` arasında`DocumentBuilder`ile her başlık düzeyi için farklı stiller oluşturabilirsiniz.
-
-#### S: İçindekiler bölümündeki başlıklara ek biçimlendirme eklemek mümkün müdür?
-
- C: Evet, içindekiler tablosundaki başlıklara yazı tipi stilleri, renkler veya diğer özellikler gibi ek biçimlendirmeler ekleyebilirsiniz. Ayarlayarak`Font` özellikleri`DocumentBuilder`başlıklara özel biçimlendirme uygulayabilirsiniz.
+### Aspose.Words için nerede daha fazla yardım ve destek bulabilirim?
+Daha fazla yardım için şu adresi ziyaret edin:[Aspose.Words Forumu](https://forum.aspose.com/c/words/8) veya şuraya göz atın[resmi belgeler](https://reference.aspose.com/words/net/).

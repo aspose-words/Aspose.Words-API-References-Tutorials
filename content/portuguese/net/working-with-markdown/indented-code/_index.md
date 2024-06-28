@@ -18,16 +18,16 @@ Primeiro, usaremos um gerador de documentos para adicionar conteúdo ao nosso do
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Etapa 2: adicionar estilo ao código recuado
+## Etapa 2: adicionar estilo ao código especificado
 
- Adicionaremos um estilo personalizado para o código recuado usando o`Styles.Add` método do`Document` objeto. Neste exemplo, estamos criando um estilo chamado “IndentedCode” para código recuado.
+Adicionaremos um estilo personalizado para o código recuado usando o`Styles.Add` método do`Document` objeto. Neste exemplo, estamos criando um estilo chamado “IndentedCode” para código recuado.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Etapa 3: adicionar código recuado
+## Etapa 3: adicione o código especificado
 
 Agora podemos adicionar um bloco de código recuado usando o estilo personalizado "IndentedCode".
 
@@ -51,7 +51,7 @@ Parabéns! Agora você aprendeu como usar o recurso de código recuado com Aspos
 
 ### Perguntas frequentes
 
-#### P: O que é código recuado no Markdown?
+#### P: Qual é o código especificado no Markdown?
 
 R: O código recuado no Markdown é um método de formatação usado para exibir o código em um documento Markdown. Consiste em recuar cada linha de código com espaços ou tabulações.
 

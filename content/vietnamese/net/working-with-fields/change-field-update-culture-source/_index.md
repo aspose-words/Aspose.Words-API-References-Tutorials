@@ -91,7 +91,7 @@ Chúc mừng! Bạn đã học thành công cách thay đổi nguồn văn hóa 
 
 #### Câu hỏi: Làm cách nào tôi có thể chỉ định một nền văn hóa cụ thể để cập nhật các trường trong Aspose.Words cho .NET?
 
-Trả lời: Để chỉ định một nền văn hóa cụ thể để cập nhật các trường trong Aspose.Words cho .NET, bạn có thể sử dụng`Document.FieldOptions.FieldUpdateCultureInfo` thuộc tính và thiết lập`CultureInfo` đối tượng tương ứng với nền văn hóa mong muốn. Ví dụ, bạn có thể sử dụng`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` để chỉ rõ văn hóa Pháp (Pháp).
+ Trả lời: Để chỉ định một nền văn hóa cụ thể để cập nhật các trường trong Aspose.Words cho .NET, bạn có thể sử dụng`Document.FieldOptions.FieldUpdateCultureInfo` thuộc tính và thiết lập`CultureInfo` đối tượng tương ứng với nền văn hóa mong muốn. Ví dụ, bạn có thể sử dụng`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` để chỉ rõ văn hóa Pháp (Pháp).
 
 #### Câu hỏi: Có thể tắt tính năng cập nhật trường tự động trong Aspose.Words cho .NET không?
 

@@ -22,5 +22,5 @@ url: /ru/net/basic-conversions/
 | [Конвертировать файл Docx в Markdown](./docx-to-markdown/) | Узнайте, как конвертировать документы Word из формата Docx в формат Markdown с помощью Aspose.Words для .NET. |
 | [Конвертировать Docx в Txt](./docx-to-txt/) | Узнайте, как конвертировать документы Word из Docx в обычный текст (Txt) с помощью Aspose.Words для .NET. |
 | [Преобразование текстового файла в документ Word](./txt-to-docx/) | Узнайте, как конвертировать обычные текстовые файлы (Txt) в документы Word (Docx) с помощью Aspose.Words для .NET. | 
-| [Сохранить PDF как Jpeg](./pdf-to-jpeg/) | Узнайте, как конвертировать PDF-документы в изображения JPEG с помощью Aspose.Words для .NET. |
+| [Сохранить PDF как JPEG](./pdf-to-jpeg/) | Узнайте, как конвертировать PDF-документы в изображения JPEG с помощью Aspose.Words для .NET. |
 | [Сохранить PDF в формате Word (Docx)](./pdf-to-docx/) | Узнайте, как конвертировать PDF-документы в формат Docx с помощью Aspose.Words для .NET.  |

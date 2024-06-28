@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### Q: Aspose.Words for .NET でソース ドキュメントと宛先ドキュメントをロードするにはどうすればよいですか?
 
- A: ソースドキュメントを`Document`というクラス`srcDoc`の空のインスタンスを作成します。`Document`というクラス`dstDoc`宛先ドキュメントには、次のコードを使用できます。
+A: ソースドキュメントを`Document`というクラス`srcDoc`の空のインスタンスを作成します。`Document`というクラス`dstDoc`宛先ドキュメントには、次のコードを使用できます。
 
 ```csharp
 //ソースドキュメントをロードします

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3. Adım: PDF olarak kaydetme seçeneklerini plan seçenekleriyle yapılandırın
 
- Oluşturulan PDF'deki anahat seçeneklerini ayarlamak için,`PdfSaveOptions` nesne. Başlık anahat düzeylerinin sayısını ayarlayabiliriz (`HeadingsOutlineLevels`) ve genişletilmiş anahat düzeylerinin sayısı (`ExpandedOutlineLevels`).
+Oluşturulan PDF'deki anahat seçeneklerini ayarlamak için,`PdfSaveOptions` nesne. Başlık anahat düzeylerinin sayısını ayarlayabiliriz (`HeadingsOutlineLevels`) ve genişletilmiş anahat düzeylerinin sayısı (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

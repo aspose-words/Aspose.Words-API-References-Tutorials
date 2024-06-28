@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Βήμα 5: Εισαγωγή του ένθετου πεδίου
 
- Χρησιμοποιούμε το DocumentBuilder's`InsertField()`μέθοδος για την εισαγωγή ενός ένθετου πεδίου στο υποσέλιδο.
+ Χρησιμοποιούμε το DocumentBuilder's`InsertField()` μέθοδος για την εισαγωγή ενός ένθετου πεδίου στο υποσέλιδο.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -104,7 +104,7 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 
 1. Λάβετε την παράγραφο όπου θέλετε να εισαγάγετε τα ένθετα πεδία.
 2.  Δημιουργώ ένα`FieldStart` αντικείμενο για το γονικό πεδίο.
-3.  Προσθέστε τα θυγατρικά πεδία χρησιμοποιώντας το`FieldStart.NextSibling` μέθοδος περνώντας την αντίστοιχη`FieldStart` αντικείμενα ως παράμετροι.
+3.  Προσθέστε τα θυγατρικά πεδία χρησιμοποιώντας το`FieldStart.NextSibling` μέθοδος περνώντας την αντίστοιχη`FieldStart` αντικείμενα ως παραμέτρους.
 
 #### Ε: Ποια είναι τα οφέλη από τη χρήση ένθετων πεδίων σε ένα έγγραφο του Word με το Aspose.Words για .NET;
 

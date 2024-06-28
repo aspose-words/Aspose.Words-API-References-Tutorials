@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
-In diesem Tutorial untersuchen wir den C#-Quellcode, der für die Funktionalität „Format 1Bpp Indexed“ mit Aspose.Words für .NET bereitgestellt wird. Mit dieser Funktion können Sie Bilder in einem Dokument im PNG-Format mit einer Farbtiefe von 1 Bit pro Pixel (1 BPP) und einem indizierten Farbmodus formatieren.
+In diesem Tutorial untersuchen wir den C#-Quellcode, der für die Funktion „Format 1Bpp Indexed“ mit Aspose.Words für .NET bereitgestellt wird. Mit dieser Funktion können Sie Bilder in einem Dokument im PNG-Format mit einer Farbtiefe von 1 Bit pro Pixel (1 BPP) und einem indizierten Farbmodus formatieren.
 
 ## Schritt 1: Einrichten der Umgebung
 

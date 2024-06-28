@@ -2,13 +2,13 @@
 title: Oplocený kód
 linktitle: Oplocený kód
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se používat funkci chráněného kódu pomocí Aspose.Words for .NET Podrobný průvodce.
+description: Naučte se používat funkci chráněného kódu s Aspose.Words for .NET Podrobný průvodce.
 type: docs
 weight: 10
 url: /cs/net/working-with-markdown/fenced-code/
 ---
 
-tomto příkladu vás provedeme tím, jak používat funkci chráněného kódu s Aspose.Words for .NET. chráněný kód se používá k reprezentaci bloků kódu se specifickým formátováním.
+V tomto příkladu vás provedeme tím, jak používat funkci chráněného kódu s Aspose.Words for .NET. chráněný kód se používá k reprezentaci bloků kódu se specifickým formátováním.
 
 ## Krok 1: Použití generátoru dokumentů
 

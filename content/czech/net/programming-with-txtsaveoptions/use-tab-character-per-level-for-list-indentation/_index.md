@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- V tomto kroku vytvoříme nový`Document` objekt a přidružený`DocumentBuilder` objekt. Tyto objekty nám umožní manipulovat a generovat náš dokument.
+ tomto kroku vytvoříme nový`Document` objekt a přidružený`DocumentBuilder` objekt. Tyto objekty nám umožní manipulovat a generovat náš dokument.
 
 ## Krok 3: Vytvoření seznamu se třemi úrovněmi odsazení
 
@@ -110,7 +110,7 @@ Nastavte své vývojové prostředí přidáním nezbytných odkazů a importem 
  Ano, můžete upravit počet znaků tabulátoru na úroveň pro odsazení seznamu změnou hodnoty`ListIndentation.Count` nemovitost v`TxtSaveOptions` třída. Můžete zadat požadovaný počet znaků tabulátoru pro každou úroveň odsazení.
 
 #### Otázka: Jaké další znaky mohu použít pro odsazení seznamu pomocí Aspose.Words pro .NET?
- Kromě znaků tabulátoru můžete pro odsazení seznamu pomocí Aspose.Words for .NET použít i jiné znaky. Můžete nastavit`ListIndentation.Character` vlastnost libovolnému požadovanému znaku, jako je mezera (`' '`), pro odsazení seznamů.
+ Kromě znaků tabulátoru můžete pro odsazení seznamu pomocí Aspose.Words for .NET použít i jiné znaky. Můžete nastavit`ListIndentation.Character` vlastnost libovolnému požadovanému znaku, jako je mezera (`' '`), pro identifikaci seznamů.
 
 #### Otázka: Nabízí Aspose.Words for .NET nějaké další funkce pro správu seznamů?
 Ano, Aspose.Words for .NET nabízí mnoho funkcí pro správu seznamů v dokumentech aplikace Word. Můžete vytvářet číslované seznamy nebo seznamy s odrážkami, nastavovat úrovně odsazení, přizpůsobovat styl seznamů, přidávat položky seznamu a další.

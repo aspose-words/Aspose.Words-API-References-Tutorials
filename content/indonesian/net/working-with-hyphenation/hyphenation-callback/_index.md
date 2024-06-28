@@ -2,107 +2,148 @@
 title: Panggilan Balik Tanda Hubung
 linktitle: Panggilan Balik Tanda Hubung
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan panggilan balik tanda hubung di Aspose.Words untuk .NET untuk menangani tanda hubung kata.
+description: Pelajari cara menerapkan panggilan balik tanda hubung di Aspose.Words untuk .NET guna menyempurnakan pemformatan dokumen dengan panduan langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-Dalam tutorial langkah demi langkah ini, kami akan menunjukkan kepada Anda cara menggunakan fitur panggilan balik tanda hubung di Aspose.Words untuk .NET. Kami akan menjelaskan kode sumber C# yang disediakan dan menunjukkan cara mengimplementasikannya di proyek Anda sendiri.
+## Perkenalan
 
- Untuk memulai, pastikan Anda telah menginstal dan mengkonfigurasi Aspose.Words for .NET di lingkungan pengembangan Anda. Jika Anda belum melakukannya, unduh dan instal perpustakaan dari[Aspose.Rilis]https://releases.aspose.com/words/net/.
+Hai! Pernahkah Anda terjebak dalam kerumitan pemformatan teks, terutama ketika berhadapan dengan bahasa yang memerlukan tanda hubung? Kamu tidak sendiri. Tanda hubung, meskipun penting untuk tata letak teks yang tepat, bisa sedikit memusingkan. Tapi coba tebak? Aspose.Words untuk .NET mendukung Anda. Pustaka canggih ini memungkinkan Anda mengelola pemformatan teks dengan lancar, termasuk menangani tanda hubung melalui mekanisme panggilan balik. Penasaran? Mari selami seluk beluk bagaimana Anda dapat mengimplementasikan callback tanda hubung menggunakan Aspose.Words untuk .NET.
 
-## Langkah 1: Simpan Pengingat Tanda Hubung
+## Prasyarat
 
- Pertama, kita akan mendaftarkan callback tanda hubung menggunakan custom`CustomHyphenationCallback` kelas. Ini akan memungkinkan kita menangani tanda hubung kata sesuai dengan aturan kita sendiri:
+Sebelum kita mengotak-atik kode, pastikan Anda memiliki semua yang Anda butuhkan:
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+2. IDE: Lingkungan pengembangan seperti Visual Studio.
+3. Pengetahuan Dasar C#: Pemahaman C# dan .NET framework.
+4. Kamus Tanda Hubung: Kamus tanda hubung untuk bahasa yang ingin Anda gunakan.
+5.  Lisensi Aspose: Lisensi Aspose yang valid. Anda bisa mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/) jika Anda tidak memilikinya.
 
- Pastikan Anda telah menerapkannya`CustomHyphenationCallback` kelas sesuai dengan kebutuhan spesifik Anda.
+## Impor Namespace
 
-## Langkah 2: Memuat dokumen dan menerapkan tanda hubung
-
-Selanjutnya, muat dokumen Anda dari direktori yang ditentukan dan beri tanda hubung pada kata-kata tersebut menggunakan Aspose.Words:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## Langkah 3: Menangani Kesalahan Kamus yang Hilang
-
-Jika kamus tanda hubung tidak ada, kami akan menangkap pengecualian yang sesuai dan menampilkan pesan kesalahan:
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini memastikan kode kita memiliki akses ke semua kelas dan metode yang kita perlukan dari Aspose.Words.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## Langkah 4: Bersihkan dan Nonaktifkan Pengingat Tanda Hubung
+## Langkah 1: Daftarkan Panggilan Balik Tanda Hubung
 
-Terakhir, untuk kebersihan dan mematikan pengingat tanda hubung, lakukan langkah-langkah berikut:
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-Ini membersihkan dan menonaktifkan pengingat tanda hubung setelah pemrosesan selesai.
-
-Jadi ! Anda telah berhasil menggunakan panggilan balik tanda hubung di Aspose.Words untuk .NET.
-
-### Contoh Kode Sumber untuk Panggilan Balik Tanda Hubung dengan Aspose.Words untuk .NET
+Untuk memulai, kita perlu mendaftarkan panggilan balik tanda hubung kita. Di sinilah kami memberi tahu Aspose.Words untuk menggunakan logika tanda hubung khusus kami.
 
 ```csharp
 try
 {
-	 // Daftarkan panggilan balik tanda hubung.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // Daftarkan panggilan balik tanda hubung.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ Di sini, kami membuat instance panggilan balik khusus kami dan menugaskannya ke dalamnya`Hyphenation.Callback`.
+
+## Langkah 2: Tentukan Jalur Dokumen
+
+Selanjutnya, kita perlu menentukan direktori tempat dokumen kita disimpan. Ini penting karena kita akan memuat dan menyimpan dokumen dari jalur ini.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke dokumen Anda.
+
+## Langkah 3: Muat Dokumen
+
+Sekarang, mari muat dokumen yang memerlukan tanda hubung.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ Di sini, kami memuat dokumen teks Jerman. Anda bisa menggantinya`"German text.docx"` dengan nama file dokumen Anda.
+
+## Langkah 4: Simpan Dokumen
+
+Setelah memuat dokumen, kami menyimpannya ke file baru, menerapkan panggilan balik tanda hubung dalam prosesnya.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+Baris ini menyimpan dokumen sebagai PDF dengan tanda hubung diterapkan.
+
+## Langkah 5: Tangani Pengecualian Kamus Tanda Hubung yang Hilang
+
+Terkadang, Anda mungkin mengalami masalah ketika kamus tanda hubung tidak ada. Mari kita atasi itu.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasinya agar sesuai dengan kebutuhan spesifik Anda.
+Di blok ini, kami menangkap pengecualian spesifik yang terkait dengan kamus yang hilang dan mencetak pesannya.
 
-### FAQ
+## Langkah 6: Terapkan Kelas Panggilan Balik Tanda Hubung Kustom
 
-#### T: Apa yang dimaksud dengan pengingat silabisasi di Aspose.Words?
+ Sekarang, mari kita terapkan`CustomHyphenationCallback` kelas yang menangani permintaan kamus tanda hubung.
 
-J: Pengingat Suku Kata di Aspose.Words adalah fitur yang memungkinkan Anda menyesuaikan cara menyusun suku kata dalam dokumen Anda. Dengan menggunakan pengingat silabisasi, Anda dapat menentukan aturan khusus untuk silabisasi kata, yang dapat berguna untuk bahasa tertentu atau skenario tertentu di mana silabisasi default tidak memberikan hasil yang diinginkan.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // Daftarkan kamus untuk bahasa yang diminta.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### T: Bagaimana cara mengatur pengingat silabisasi di Aspose.Words?
+ Di kelas ini,`RequestDictionary` metode dipanggil setiap kali kamus tanda hubung diperlukan. Ia memeriksa bahasa dan mendaftarkan kamus yang sesuai.
 
- J: Untuk menentukan callback tanda hubung di Aspose.Words, Anda perlu membuat kelas yang mengimplementasikan`HyphenationCallback` antarmuka dan mengimplementasikan`HandleWord()` metode. Metode ini akan dipanggil untuk setiap kata yang ditemui selama silabisasi. Anda dapat menerapkan aturan suku kata khusus padanya dan mengembalikan kata yang diberi suku kata. Kemudian Anda dapat mengikat panggilan balik tanda hubung menggunakan`Document.HyphenationCallback` milik dokumen Anda.
+## Kesimpulan
 
-#### T: Apa keuntungan menggunakan pengingat silabisasi di Aspose.Words?
+Dan itu dia! Anda baru saja mempelajari cara menerapkan panggilan balik tanda hubung di Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat memastikan dokumen Anda diformat dengan indah, apa pun bahasanya. Baik Anda menggunakan bahasa Inggris, Jerman, atau bahasa lainnya, metode ini memungkinkan Anda menangani tanda hubung dengan mudah.
 
-J: Manfaat menggunakan pengingat silabisasi di Aspose.Words adalah kemampuan untuk menyesuaikan cara kata-kata disusun dalam dokumen Anda. Hal ini memberi Anda kontrol lebih besar atas silabisasi, terutama untuk bahasa atau skenario tertentu di mana silabisasi default tidak memberikan hasil yang diinginkan. Anda dapat menerapkan aturan khusus pada setiap kata untuk mendapatkan silabisasi yang tepat sesuai kebutuhan Anda.
+## FAQ
 
-#### T: Apa sajakah skenario umum di mana penggunaan pengingat silabisasi dapat membantu?
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah pustaka manipulasi dokumen canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen secara terprogram.
 
-J: Menggunakan penguat silabisasi dapat berguna dalam beberapa skenario, seperti:
-- Sukukata kata dalam bahasa tertentu yang mempunyai aturan suku kata tertentu.
-- Penerapan aturan silabisasi yang dipersonalisasi untuk akronim atau kata teknis.
-- Penyesuaian suku kata menurut preferensi gaya atau standar tipografi.
+### Mengapa tanda hubung penting dalam pemformatan dokumen?
+Tanda hubung meningkatkan tata letak teks dengan memecah kata-kata di tempat yang tepat, memastikan dokumen lebih mudah dibaca dan menarik secara visual.
 
-#### T: Bagaimana cara menguji silabisasi khusus dengan pengingat silabisasi di Aspose.Words?
+### Bisakah saya menggunakan Aspose.Words secara gratis?
+ Aspose.Words menawarkan uji coba gratis. Kamu bisa mendapatkannya[Di Sini](https://releases.aspose.com/).
 
- J: Untuk menguji silabisasi kustom dengan pengingat silabisasi di Aspose.Words, Anda dapat membuat dokumen pengujian yang berisi kata-kata yang ingin Anda terapkan aturan silabisasi kustomnya. Kemudian Anda dapat mengatur panggilan balik silabisasi khusus Anda, panggil`Document.Range.Replace()` metode untuk mengganti kata-kata dalam dokumen, dan menggunakan`Hyphenate()` metode`Hyphenation` kelas untuk mendapatkan suku kata dari kata-kata tersebut. Anda kemudian dapat memformat kata-kata yang diberi suku kata sesuai kebutuhan, misalnya dengan menambahkan tanda hubung di antara suku kata.
+### Bagaimana cara mendapatkan kamus tanda hubung?
+Anda dapat mengunduh kamus tanda hubung dari berbagai sumber online atau membuatnya sendiri jika diperlukan.
+
+### Apa yang terjadi jika kamus tanda hubung tidak ada?
+ Jika kamus tidak ada,`RequestDictionary` metode memunculkan pengecualian, yang dapat Anda tangani untuk memberi tahu pengguna atau menyediakan cadangan.

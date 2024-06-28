@@ -26,11 +26,11 @@ Die Tutorials bieten eine solide Grundlage für den Aufbau robuster und skalierb
 ### [Textverarbeitung](./word-processing/) 
 Lernen Sie Textverarbeitung mit Aspose.Words für Java. Erstellen, bearbeiten und manipulieren Sie Dokumente programmgesteuert. Verbessern Sie noch heute Ihre Fähigkeiten in der Dokumentenverarbeitung.
 ### [Tabellenverarbeitung](./table-processing/)
-Erfahren Sie mehr über die leistungsstarke Tabellenverarbeitungs-API für Java-Entwickler mit Aspose.Word für Java. Erstellen, bearbeiten und formatieren Sie Tabellen in Word-Dokumenten. Erweitern Sie noch heute Ihre Dokumentenverarbeitungsanwendungen.
+Lernen Sie die leistungsstarke Tabellenverarbeitungs-API für Java-Entwickler kennen, die Aspose.Word für Java verwenden. Erstellen, bearbeiten und formatieren Sie Tabellen in Word-Dokumenten. Erweitern Sie noch heute Ihre Dokumentenverarbeitungsanwendungen.
 ### [Dokumentstil](./document-styling/)
 Masterdokumentgestaltung mit Aspose.Words für Java-Tutorials. Lernen Sie fortgeschrittene Formatierungstechniken für optisch ansprechende und effiziente Dokumente. 
 ### [Zusammenführen von Dokumenten](./document-merging/)
-Nutzen Sie das Potenzial der Dokumentenzusammenführung in Java mit Aspose.Words! Lernen Sie mit detaillierten Tutorials das effiziente Zusammenführen von Dokumenten, Textverarbeitung und Dokumentenverarbeitung. 
+Nutzen Sie das Potenzial der Dokumentenzusammenführung in Java mit Aspose.Words! Lernen Sie effizientes Zusammenführen von Dokumenten, Textverarbeitung und Dokumentenverarbeitung mit ausführlichen Tutorials. 
 ### [Konvertieren von Dokumenten](./document-converting/)
 Optimieren Sie die Dokumentkonvertierung in Java mit Aspose.Words! Erfahren Sie umfassende Anleitungen zur Dokumentenkonvertierung, Textverarbeitung und Dokumentenverarbeitung.
 ### [Dokumentendruck](./document-printing/)

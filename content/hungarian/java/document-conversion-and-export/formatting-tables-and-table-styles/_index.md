@@ -2,7 +2,7 @@
 title: Táblázatok és táblázatstílusok formázása az Aspose.Words for Java programban
 linktitle: Táblázatok és táblázatstílusok formázása
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan formázhat táblázatokat és hogyan alkalmazhat táblázatstílusokat az Aspose.Words for Java programban. Fedezze fel a forráskóddal ellátott, lépésenkénti útmutatókat a hatékony táblázatformázás érdekében. Javítsa dokumentum-elrendezését az Aspose.Words segítségével.
+description: Ismerje meg, hogyan formázhat táblázatokat és alkalmazhat táblázatstílusokat az Aspose.Words for Java programban. Fedezze fel a forráskóddal ellátott, lépésről lépésre szóló útmutatókat a hatékony táblázatformázás érdekében. Javítsa dokumentum-elrendezését az Aspose.Words segítségével.
 type: docs
 weight: 17
 url: /hu/java/document-conversion-and-export/formatting-tables-and-table-styles/

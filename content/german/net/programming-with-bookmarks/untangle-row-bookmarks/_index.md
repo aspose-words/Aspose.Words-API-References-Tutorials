@@ -42,7 +42,7 @@ DeleteRowByBookmark(doc, "ROW2");
 
 ## Schritt 4: Überprüfen Sie die Integrität anderer Lesezeichen
 
-Wir stellen sicher, dass die anderen Lesezeichen nicht beschädigt wurden, indem wir prüfen, ob das Ende des Lesezeichens noch vorhanden ist:
+Wir überprüfen, ob die anderen Lesezeichen nicht beschädigt wurden, indem wir prüfen, ob das Ende des Lesezeichens noch vorhanden ist:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -128,7 +128,7 @@ A: Zeilenlesezeichen werden normalerweise in Tabellen verwendet, um bestimmte Ab
 
 #### F: Ist es möglich, Zeilenlesezeichen in nicht benachbarten Tabellen zu entwirren?
 
-A: Die in diesem Artikel vorgestellte Funktion „Zeilenlesezeichen entwirren“ dient dazu, Zeilenlesezeichen in benachbarten Tabellen zu entwirren. Um Zeilenlesezeichen in nicht benachbarten Tabellen zu entwirren, können je nach Struktur des Dokuments zusätzliche Anpassungen am Code erforderlich sein.
+A: Die in diesem Artikel vorgestellte Funktion „Zeilenlesezeichen entwirren“ dient dazu, Zeilenlesezeichen in benachbarten Tabellen zu entwirren. Um Zeilenlesezeichen in nicht benachbarten Tabellen zu entwirren, sind je nach Struktur des Dokuments möglicherweise zusätzliche Anpassungen am Code erforderlich.
 
 #### F: Welche anderen Manipulationen kann ich an Zeilenlesezeichen vornehmen, nachdem sie entschlüsselt wurden?
 

@@ -1,8 +1,8 @@
 ---
-title: 在 Aspose.Words for Java 中克隆和组合文档
+title: 在 Aspose.Words for Java 中克隆和合并文档
 linktitle: 克隆和合并文档
 second_title: Aspose.Words Java 文档处理 API
-description: 了解如何在 Aspose.Words for Java 中克隆和组合文档。带有源代码示例的分步指南。
+description: 了解如何在 Aspose.Words for Java 中克隆和合并文档。带有源代码示例的分步指南。
 type: docs
 weight: 27
 url: /zh/java/document-manipulation/cloning-and-combining-documents/
@@ -10,7 +10,7 @@ url: /zh/java/document-manipulation/cloning-and-combining-documents/
 
 ## Aspose.Words for Java 中克隆和组合文档的简介
 
-在本教程中，我们将探索如何使用 Aspose.Words for Java 克隆和合并文档。我们将介绍各种场景，包括克隆文档、在替换点插入文档、书签以及在邮件合并操作期间。
+在本教程中，我们将探索如何使用 Aspose.Words for Java 克隆和组合文档。我们将介绍各种场景，包括克隆文档、在替换点插入文档、书签以及在邮件合并操作期间。
 
 ## 第 1 步：克隆文档
 

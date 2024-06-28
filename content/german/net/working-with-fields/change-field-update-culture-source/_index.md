@@ -91,7 +91,7 @@ Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET 
 
 #### F: Wie kann ich eine bestimmte Kultur zum Aktualisieren von Feldern in Aspose.Words für .NET angeben?
 
-A: Um eine bestimmte Kultur für die Aktualisierung von Feldern in Aspose.Words für .NET anzugeben, können Sie die verwenden`Document.FieldOptions.FieldUpdateCultureInfo` Eigenschaft und legen Sie die fest`CultureInfo` Objekt, das der gewünschten Kultur entspricht. Sie können zum Beispiel verwenden`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` um die französische (französische) Kultur zu spezifizieren.
+ A: Um eine bestimmte Kultur für die Aktualisierung von Feldern in Aspose.Words für .NET anzugeben, können Sie die verwenden`Document.FieldOptions.FieldUpdateCultureInfo` Eigenschaft und legen Sie die fest`CultureInfo` Objekt, das der gewünschten Kultur entspricht. Sie können zum Beispiel verwenden`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` um die französische (französische) Kultur zu spezifizieren.
 
 #### F: Ist es möglich, die automatische Feldaktualisierung in Aspose.Words für .NET zu deaktivieren?
 

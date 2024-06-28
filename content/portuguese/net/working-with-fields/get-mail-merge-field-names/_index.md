@@ -116,4 +116,4 @@ R: Sim, é possível filtrar campos de mala direta com base em determinados crit
 
 #### P: Como posso manipular campos de mala direta no Aspose.Words?
 
-R: Para manipular campos de mala direta em Aspose.Words, você pode usar os métodos e propriedades fornecidos pelos objetos Document e MailMergeField. Você pode adicionar, remover ou atualizar campos de mala direta, bem como recuperar e editar valores associados a campos.
+R: Para manipular campos de mala direta em Aspose.Words, você pode usar os métodos e propriedades fornecidos pelos objetos Document e MailMergeField. Você pode adicionar, remover ou atualizar campos de mala direta, bem como recuperar e editar valores associados aos campos.

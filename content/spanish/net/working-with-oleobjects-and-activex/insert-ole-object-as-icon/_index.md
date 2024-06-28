@@ -34,7 +34,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 ```
 
 ## Paso 4: guarde el documento
- Utilice el documento`Save` método para guardar el documento en un archivo.
+ Utilice el documento`Save` Método para guardar el documento en un archivo.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

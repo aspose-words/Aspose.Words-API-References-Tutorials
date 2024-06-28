@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Ställ in sidinställningar för källdokumentet
 
- Justera sidinställningarna för källdokumentet för att säkerställa korrekt fortsättning och numrering. I det här exemplet ställer vi in avsnittets början till`SectionStart.Continuous` och starta om sidnumreringen. Vi ser också till att sidbredden, höjden och orienteringen matchar den sista delen av måldokumentet.
+ Justera sidinställningarna för källdokumentet för att säkerställa korrekt fortsättning och numrering. I det här exemplet ställer vi in avsnittets början till`SectionStart.Continuous`och starta om sidnumreringen. Vi ser också till att sidbredden, höjden och orienteringen matchar den sista delen av måldokumentet.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Steg 4: Ändra styckeformatering
 
- För att bibehålla korrekt formatering, iterera igenom alla stycken i källdokumentet och ställ in`KeepWithNext`egendom till`true`Detta säkerställer att stycken håller ihop under bifogningsprocessen.
+ För att bibehålla korrekt formatering, iterera igenom alla stycken i källdokumentet och ställ in`KeepWithNext`egendom till`true`. Detta säkerställer att stycken håller ihop under bifogningsprocessen.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Steg 6: Spara måldokumentet
 
- Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
+Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -84,10 +84,10 @@ Detta slutför implementeringen av att lägga till ett dokument med olika sidins
 	// Starta om sidnumreringen i början av källdokumentet.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// För att säkerställa att detta inte händer när källdokumentet har andra sidinställningar, se till att
+	//För att säkerställa att detta inte händer när källdokumentet har andra sidinställningar, se till att
 	// inställningarna är identiska mellan den sista delen av måldokumentet.
 	// Om det finns ytterligare fortlöpande avsnitt som följer i källdokumentet,
-	//detta måste upprepas för dessa avsnitt.
+	// detta måste upprepas för dessa avsnitt.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;

@@ -91,7 +91,7 @@ saveOptions.setUpdateLastPrintedProperty(true);
 doc.save("output.pdf", saveOptions);
 ```
 
-## डीएमएल 3डी प्रभाव का प्रतिपादन
+## डीएमएल 3डी प्रभावों का प्रतिपादन
 
 डीएमएल 3डी प्रभावों के उन्नत प्रतिपादन के लिए, प्रतिपादन मोड सेट करें:
 

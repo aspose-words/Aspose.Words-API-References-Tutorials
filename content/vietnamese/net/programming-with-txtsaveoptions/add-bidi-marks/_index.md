@@ -86,7 +86,7 @@ Bạn có thể thêm dấu Bidi vào tài liệu Word bằng cách làm theo c�
 
  Lưu tài liệu có dấu Bidi bằng cách sử dụng`Save` phương pháp của`Document` lớp học.
 
-#### Câu hỏi: Aspose.Words có hỗ trợ nhiều ngôn ngữ để thêm nhãn Bidi không?
+#### Hỏi: Aspose.Words có hỗ trợ nhiều ngôn ngữ để thêm nhãn Bidi không?
 Có, Aspose.Words hỗ trợ nhiều ngôn ngữ để thêm nhãn Bidi. Bạn có thể thêm dấu Bidi vào văn bản bằng các ngôn ngữ khác nhau, chẳng hạn như tiếng Anh, tiếng Do Thái và tiếng Ả Rập, bằng cách sử dụng Aspose.Words cho .NET.
 
 #### Hỏi: Có tùy chọn bổ sung nào để lưu tài liệu bằng nhãn Bidi không?

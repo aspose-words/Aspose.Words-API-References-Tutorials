@@ -112,10 +112,10 @@ Aspose.Words for Java, geliştiricilerin Word belgelerini programlı olarak olu�
 Aspose.Words for Java'yı şu adresten indirip yükleyebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
 
 ### S3. Ücretsiz deneme mevcut mu?
- Evet, Aspose.Words for Java'nın ücretsiz deneme sürümünü edinebilirsiniz[Burada](https://releases.aspose.com/).
+ Evet, Aspose.Words for Java'nın ücretsiz deneme sürümünü edinebilirsiniz.[Burada](https://releases.aspose.com/).
 
 ### S4. Geçici lisansı nereden alabilirim?
- Aspose.Words for Java için geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words for Java için geçici bir lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/).
 
 ### S5. Aspose.Words for Java desteğini nerede bulabilirim?
  Destek ve tartışmalar için şu adresi ziyaret edin:[Aspose.Words for Java forumu](https://forum.aspose.com/).

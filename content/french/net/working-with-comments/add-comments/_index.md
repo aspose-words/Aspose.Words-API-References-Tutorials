@@ -89,11 +89,11 @@ R : Pour ajouter un commentaire dans un document Aspose.Words for .NET, vous dev
 
 #### Q : Puis-je formater le texte des commentaires dans Aspose.Words pour .NET ?
 
-R : Oui, vous pouvez formater le texte des commentaires dans Aspose.Words for .NET à l'aide des propriétés de formatage disponibles.
+: Oui, vous pouvez formater le texte des commentaires dans Aspose.Words for .NET à l'aide des propriétés de formatage disponibles.
 
 #### Q : Comment récupérer tous les commentaires présents dans un document ?
 
- : Vous pouvez récupérer tous les commentaires présents dans un document en utilisant le`Document.Comments` propriété.
+ R : Vous pouvez récupérer tous les commentaires présentés dans un document en utilisant le`Document.Comments` propriété.
 
 #### Q : Puis-je supprimer un commentaire spécifique dans Aspose.Words pour .NET ?
 

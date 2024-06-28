@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 
 ### 經常問的問題
 
-#### Q：什麼是停用 PDF 文件中的 Arial 和 Times Roman 字體嵌入？為什麼它很重要？
+#### Q：什麼是禁用 PDF 文件中的 Arial 和 Times Roman 字體嵌入？
 答：在 PDF 文件中停用 Arial 和 Times Roman 字體的嵌入是指在產生的 PDF 文件中不包含這些字體的過程。透過避免包含 PDF 閱讀器系統上已經常見的字體，這對於減少 PDF 檔案的大小非常重要。它還可以幫助確保 PDF 文件在不同設備和平台上具有更好的兼容性和一致的外觀。
 
 #### Q：如何設定 Aspose.Words for .NET 不在 PDF 文件中嵌入 Arial 和 Times Roman 字型？

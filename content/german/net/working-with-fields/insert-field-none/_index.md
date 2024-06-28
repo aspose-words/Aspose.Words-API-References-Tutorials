@@ -2,7 +2,7 @@
 title: Feld „Keine“ einfügen
 linktitle: Feld „Keine“ einfügen
 second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie AUCUN-Werte in Ihre Word-Dokumente mit Aspose.Words für .NET einfügen.
+description: Erfahren Sie, wie Sie Dokumente mit AUCUN in Word mit Aspose.Words für .NET erstellen.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/insert-field-none/

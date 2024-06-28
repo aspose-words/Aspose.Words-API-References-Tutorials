@@ -167,7 +167,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Вставка встроенного изображения
+// Вставка онлайн-изображения
 builder.insertImage("path/to/your/image.png");
 
 // Сохраните документ
@@ -215,7 +215,7 @@ doc.save("path/to/your/document.docx");
 
 ## Шаг 10: Перемещение курсора
 
- Вы можете управлять положением курсора в документе, используя различные методы, такие как`moveToParagraph`, `moveToCell`и более. Вот пример:
+ Вы можете контролировать положение курсора в документе, используя различные методы, такие как`moveToParagraph`, `moveToCell`и более. Вот пример:
 
 ```java
 Document doc = new Document();
@@ -269,7 +269,7 @@ doc.updateFields();
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Вставка встроенного изображения
+// Вставка онлайн-изображения
 builder.insertImage("path/to/your/image.png");
 ```
 

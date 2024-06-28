@@ -28,7 +28,7 @@ Nous allons maintenant configurer le style de paragraphe à l'aide de l'identifi
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;
 ```
 
-## Étape 3 : ajouter du contenu
+## Étape 3 : Ajouter du contenu
 
 Nous allons ajouter du contenu au paragraphe. Voici comment:
 
@@ -59,13 +59,13 @@ Avec ce code, vous pourrez appliquer un style de paragraphe en utilisant Aspose.
 
 ## Conclusion
 
- Dans ce didacticiel, nous avons exploré comment appliquer un style de paragraphe dans un document Word à l'aide d'Aspose.Words pour .NET. En définissant le`StyleIdentifier` propriété du`ParagraphFormat`, nous avons pu appliquer un style intégré au paragraphe. Aspose.Words for .NET offre une large gamme d'options de formatage, notamment la possibilité de créer et d'appliquer des styles personnalisés, vous permettant ainsi d'obtenir facilement des documents d'aspect professionnel.
+ Dans ce didacticiel, nous avons exploré comment appliquer un style de paragraphe dans un document Word à l'aide d'Aspose.Words pour .NET. En définissant le`StyleIdentifier` propriété du`ParagraphFormat`nous avons pu appliquer un style intégré au paragraphe. Aspose.Words for .NET offre une large gamme d'options de formatage, notamment la possibilité de créer et d'appliquer des styles personnalisés, vous permettant ainsi d'obtenir facilement des documents d'aspect professionnel.
 
 ### FAQ
 
 #### Q : Comment appliquer un style de paragraphe dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
-: Pour appliquer un style de paragraphe dans un document Word à l'aide d'Aspose.Words for .NET, procédez comme suit :
+R : Pour appliquer un style de paragraphe dans un document Word à l'aide d'Aspose.Words for .NET, procédez comme suit :
 1.  Créez un nouveau document et un`DocumentBuilder` objet.
 2.  Configurez le style de paragraphe en définissant le`StyleIdentifier` propriété du`ParagraphFormat` à l'identifiant de style souhaité (par exemple,`StyleIdentifier.Title`, `StyleIdentifier.Heading1`, etc.).
 3.  Ajoutez du contenu au paragraphe en utilisant le`Write` méthode du`DocumentBuilder`.
@@ -77,4 +77,4 @@ Avec ce code, vous pourrez appliquer un style de paragraphe en utilisant Aspose.
 
 #### Q : Puis-je créer et appliquer des styles de paragraphe personnalisés à l’aide d’Aspose.Words for .NET ?
 
-: Oui, en utilisant Aspose.Words pour .NET, vous pouvez créer et appliquer des styles de paragraphe personnalisés. Vous pouvez définir vos propres styles avec des propriétés de mise en forme spécifiques telles que la police, l'alignement, l'indentation, etc., et les appliquer aux paragraphes de votre document. Cela vous permet d’obtenir une mise en forme cohérente et personnalisée dans tout votre document.
+R : Oui, en utilisant Aspose.Words pour .NET, vous pouvez créer et appliquer des styles de paragraphe personnalisés. Vous pouvez définir vos propres styles avec des propriétés de mise en forme spécifiques telles que la police, l'alignement, l'indentation, etc., et les appliquer aux paragraphes de votre document. Cela vous permet d’obtenir une mise en forme cohérente et personnalisée dans tout votre document.

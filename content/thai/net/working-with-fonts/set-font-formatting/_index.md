@@ -15,14 +15,14 @@ url: /th/net/working-with-fonts/set-font-formatting/
 - ไลบรารี Aspose.Words สำหรับ .NET ที่ติดตั้งในโครงการของคุณ
 
 ## ขั้นตอนที่ 1: กำหนดไดเร็กทอรีเอกสาร
- เริ่มต้นด้วยการตั้งค่าเส้นทางไดเรกทอรีไปยังตำแหน่งของเอกสาร Word ของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ในโค้ดด้วยเส้นทางที่เหมาะสม
+เริ่มต้นด้วยการตั้งค่าเส้นทางไดเรกทอรีไปยังตำแหน่งของเอกสาร Word ของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ในโค้ดด้วยเส้นทางที่เหมาะสม
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: สร้างและจัดรูปแบบเอกสาร
- สร้างอินสแตนซ์ของ`Document` ชั้นเรียนและ`DocumentBuilder` คลาสเพื่อสร้างเอกสาร ใช้`Font` ทรัพย์สินของ`DocumentBuilder` เพื่อเข้าถึงคุณสมบัติการจัดรูปแบบแบบอักษร
+ สร้างอินสแตนซ์ของ`Document` ชั้นเรียนและ`DocumentBuilder`คลาสเพื่อสร้างเอกสาร ใช้`Font` ทรัพย์สินของ`DocumentBuilder` เพื่อเข้าถึงคุณสมบัติการจัดรูปแบบแบบอักษร
 
 ```csharp
 Document doc = new Document();

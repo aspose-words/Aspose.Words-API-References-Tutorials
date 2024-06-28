@@ -149,6 +149,6 @@ Sim, os marcadores podem ser usados em vários formatos de documento, incluindo 
 
 Absolutamente! Você pode extrair texto e outros conteúdos dos marcadores, o que é particularmente útil para gerar resumos ou realizar análises adicionais.
 
-### Onde posso acessar a documentação da API Aspose.Words para Python?
+### Onde posso acessar a documentação da API Aspose.Words for Python?
 
  Você pode encontrar a documentação da API Aspose.Words for Python em[aqui](https://reference.aspose.com/words/python-net/).

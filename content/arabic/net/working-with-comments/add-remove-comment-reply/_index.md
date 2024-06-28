@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### س: كيف يمكنني إزالة تعليق في Aspose.Words لـ .NET؟
 
- ج: لإزالة تعليق في Aspose.Words لـ .NET، يمكنك استخدام`Comment.Remove` طريقة تحديد`Comment` الكائن الذي تريد إزالته.
+ج: لإزالة تعليق في Aspose.Words لـ .NET، يمكنك استخدام`Comment.Remove` طريقة تحديد`Comment` الكائن الذي تريد إزالته.
 
 #### س: هل يمكنني الرد على تعليق في Aspose.Words لـ .NET؟
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### س: كيف يمكنني الوصول إلى التعليقات الموجودة في Aspose.Words لـ .NET؟
 
- ج: يمكنك الوصول إلى التعليقات الموجودة في Aspose.Words for .NET باستخدام`CommentCollection` ملكية`Document`هدف. سيسمح لك هذا بتصفح جميع التعليقات الموجودة في المستند.
+ ج: يمكنك الوصول إلى التعليقات الموجودة في Aspose.Words for .NET باستخدام`CommentCollection` ملكية`Document` هدف. سيسمح لك هذا بتصفح جميع التعليقات الموجودة في المستند.
 
 #### س: هل يمكنني تحرير نص التعليق في Aspose.Words لـ .NET؟
 

@@ -64,7 +64,7 @@ Với mã này, bạn sẽ có thể áp dụng nhóm ngắt dòng Kiểu chữ 
 
 ### Câu hỏi thường gặp
 
-#### Câu hỏi: Tính năng "Nhóm ngắt dòng kiểu chữ châu Á" trong Aspose.Words dành cho .NET là gì?
+#### Câu hỏi: Tính năng "Nhóm ngắt dòng kiểu chữ Châu Á" trong Aspose.Words dành cho .NET là gì?
 
 Trả lời: Tính năng "Nhóm ngắt dòng kiểu chữ Châu Á" trong Aspose.Words dành cho .NET cho phép bạn kiểm soát hành vi ngắt dòng đối với kiểu chữ Châu Á trong tài liệu Word. Cụ thể, nó ảnh hưởng đến cách ngắt dòng và ngắt dòng khi xử lý các ký tự châu Á trong đoạn văn.
 

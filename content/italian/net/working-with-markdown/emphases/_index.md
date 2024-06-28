@@ -109,11 +109,11 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### D: Come evidenzio il testo utilizzando Markdown?
 
- R: Per evidenziare il testo utilizzando Markdown, circonda semplicemente il testo con i simboli appropriati. Utilizzo`*` O`_` per il corsivo,`**` O`__` per grassetto e`~~` per barrato.
+R: Per evidenziare il testo utilizzando Markdown, circonda semplicemente il testo con i simboli appropriati. Utilizzo`*` O`_` per il corsivo,`**` O`__` per grassetto e`~~` per barrato.
 
 #### D: Possiamo combinare diversi punti salienti nello stesso testo?
 
- R: Sì, è possibile combinare diversi punti salienti nello stesso testo. Ad esempio, puoi mettere in grassetto e in corsivo una parola utilizzando entrambi`**` E`*`intorno alla parola.
+ R: Sì, è possibile combinare diversi punti salienti nello stesso testo. Ad esempio, puoi mettere in grassetto e in corsivo una parola utilizzando entrambi`**` E`*` intorno alla parola.
 
 #### D: Quali opzioni di evidenziazione sono disponibili in Markdown?
 

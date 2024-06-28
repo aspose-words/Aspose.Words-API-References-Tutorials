@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## 第 2 步：保存连字词典
 
-接下来，保存要处理的不同语言的连字符字典。在此示例中，我们注册美国英语和瑞士德语的词典：
+接下来，保存要处理的不同语言的连字词典。在此示例中，我们注册美国英语和瑞士德语的词典：
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
@@ -51,7 +51,7 @@ builder.InsertHyphenation();
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-所以 ！您已使用 Aspose.Words for .NET 在 Word 文档中以不同语言对单词进行连字符，从而成功处理了单词。
+所以 ！您已使用 Aspose.Words for .NET 在 Word 文档中以不同语言对单词进行连字符，成功处理了单词。
 
 ### 使用 Aspose.Words for .NET 进行单词连字符的示例源代码
 
@@ -77,6 +77,6 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 
 答：要在 Aspose.Words 中指定音节语言，您必须使用适当的语言代码。例如，您可以使用“en”表示英语、“fr”表示法语、“es”表示西班牙语、“de”表示德语等。有关支持的语言代码的完整列表，请参阅 Aspose.Words 文档。
 
-#### 问：音节化是否适用于 Aspose.Words 中的所有语言？
+#### 问：Aspose.Words 中的音节化适用于所有语言吗？
 
-答：Aspose.Words 中的音节化取决于特定于语言的音节化规则。尽管Aspose.Words支持多种语言，但某些语言可能不受支持或者音节化可能不可用。查看 Aspose.Words 文档以了解哪些语言支持音节化。
+答：Aspose.Words 中的音节化取决于特定于语言的音节化规则。尽管Aspose.Words支持多种语言，但某些语言可能不受支持或者音节化可能不可用。检查 Aspose.Words 文档以了解哪些语言支持音节化。

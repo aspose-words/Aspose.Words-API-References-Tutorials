@@ -71,7 +71,7 @@ R: Não, Aspose.Words for .NET não é a única solução disponível para traba
 
 #### P: Posso usar o recurso "Obter separador de estilo de parágrafo" com outras linguagens de programação?
 
-R: Sim, você pode usar o recurso "Obter separador de estilo de parágrafo" com outras linguagens de programação suportadas pelo Aspose.Words, como Java, Python ou C++. Aspose.Words oferece uma variedade de APIs e bibliotecas específicas de linguagem para facilitar o processamento de documentos em várias plataformas.
+R: Sim, você pode usar o recurso "Obter separador de estilo de parágrafo" com outras linguagens de programação suportadas pelo Aspose.Words, como Java, Python ou C.++. Aspose.Words oferece uma variedade de APIs e bibliotecas específicas de linguagem para facilitar o processamento de documentos em várias plataformas.
 
 #### P: Como posso acessar a documentação do Aspose.Words for .NET?
 

@@ -131,7 +131,7 @@ builder.Writeln("This is line 1");
 builder.Writeln("This is line 2");
 ```
 
-#### Q: .NET용 Aspose.Words를 사용하여 문서에서 텍스트를 검색하고 메타 문자로 바꾸는 방법은 무엇입니까?
+#### Q: Aspose.Words for .NET을 사용하여 문서에서 텍스트를 검색하고 메타 문자로 바꾸는 방법은 무엇입니까?
 
  A: 텍스트를 검색하고 메타 문자로 바꾸려면 다음을 사용할 수 있습니다.`Range.Replace` 방법. 이 예에서는 "This is line 1&pThis is line 2"라는 문구를 다음을 사용하여 "This line is replacement"로 바꿉니다.`&p` 단락 나누기를 나타내는 메타 문자:
 

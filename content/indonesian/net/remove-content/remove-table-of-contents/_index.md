@@ -2,216 +2,103 @@
 title: Hapus Daftar Isi Dalam Dokumen Word
 linktitle: Hapus Daftar Isi Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menghapus daftar isi dalam dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menghapus Daftar Isi (TOC) di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial yang mudah diikuti ini.
 type: docs
 weight: 10
 url: /id/net/remove-content/remove-table-of-contents/
 ---
-Dalam tutorial ini, kami akan memandu Anda tentang cara menghapus daftar isi dalam dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Daftar isi terkadang berlebihan atau tidak diperlukan, dan kode ini akan membantu Anda menghapusnya secara efektif. Kami akan memberikan panduan langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda sendiri.
+## Hapus Daftar Isi di Dokumen Word Menggunakan Aspose.Words untuk .NET
+
+Apakah Anda lelah berurusan dengan Daftar Isi (TOC) yang tidak diinginkan di dokumen Word Anda? Kita semua pernah mengalaminya—terkadang TOC tidak diperlukan. Beruntung bagi Anda, Aspose.Words untuk .NET memudahkan penghapusan TOC secara terprogram. Dalam tutorial ini, saya akan memandu Anda melalui proses langkah demi langkah, sehingga Anda dapat menguasainya dalam waktu singkat. Mari selami!
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki item berikut:
-- Pengetahuan tentang bahasa pemrograman C#
-- Pustaka Aspose.Words untuk .NET diinstal di proyek Anda
-- Dokumen Word berisi daftar isi yang ingin Anda hapus
 
-## Langkah 1: Tentukan direktori dokumen
- Pertama, Anda perlu mengatur jalur direktori ke lokasi dokumen Word Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai.
+Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
+
+1.  Aspose.Words for .NET Library: Jika Anda belum melakukannya, unduh dan instal perpustakaan Aspose.Words for .NET dari[Aspose.Rilis](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: IDE seperti Visual Studio akan membuat pengkodean lebih mudah.
+3. .NET Framework: Pastikan Anda telah menginstal .NET Framework.
+4. Dokumen Word: Miliki dokumen Word (.docx) dengan TOC yang ingin Anda hapus.
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini mengatur lingkungan untuk menggunakan Aspose.Words.
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Langkah 2: Unggah dokumen
- Selanjutnya, kita akan memuat dokumen Word ke dalam sebuah instance`Document` kelas menggunakan`Load` metode.
+Sekarang, mari kita uraikan proses menghapus TOC dari dokumen Word menjadi langkah-langkah yang jelas dan mudah dikelola.
+
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+Sebelum kami dapat memanipulasi dokumen Anda, kami perlu menentukan di mana lokasinya. Ini adalah jalur direktori dokumen Anda.
 
 ```csharp
-// Muat dokumen
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur ke folder dokumen Anda. Di sinilah file Word Anda berada.
+
+## Langkah 2: Muat Dokumen
+
+Selanjutnya, kita perlu memuat dokumen Word ke dalam aplikasi kita. Aspose.Words membuat ini menjadi sangat sederhana.
+
+```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## Langkah 3: Hapus daftar isi
- Untuk menghapus daftar isi, kita akan mengulang tipe TOC (daftar isi).`FieldStart` node dalam dokumen. Kami akan menyimpan node ini sehingga kami dapat mengaksesnya dengan cepat dan membuat daftar node untuk dihapus.
+ Mengganti`"your-document.docx"` dengan nama file Anda. Baris kode ini memuat dokumen Anda sehingga kami dapat mulai mengerjakannya.
+
+## Langkah 3: Identifikasi dan Hapus Bidang TOC
+
+Ini adalah dimana keajaiban terjadi. Kami akan mencari bidang TOC dan menghapusnya.
 
 ```csharp
-// Simpan node FieldStart dari bidang TOC dalam dokumen untuk akses cepat.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Ini adalah daftar untuk menyimpan node yang ditemukan di dalam TOC yang ditentukan. Mereka akan dihapus pada akhir metode ini.
-List<Node> nodeList = new List<Node>();
+doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
+    .ForEach(f => f.Remove());
+```
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-     if (start.FieldType == FieldType.FieldTOC)
-     {
-         fieldStarts.Add(start);
-     }
-}
+Inilah yang terjadi:
+- `doc.Range.Fields`: Ini mengakses semua bidang dalam dokumen.
+- `.Where(f => f.Type == FieldType.FieldTOC)`: Ini memfilter bidang untuk hanya menemukan bidang yang TOC.
+- `.ToList().ForEach(f => f.Remove())`: Ini mengubah bidang yang difilter menjadi daftar dan menghapus masing-masing bidang.
 
-// Periksa apakah indeks TOC yang ditentukan ada.
-if (index > fieldStarts.Count - 1)
-     throw new ArgumentOutOfRangeException("TOC index is out of range");
+## Langkah 4: Simpan Dokumen yang Dimodifikasi
 
-bool isRemoving = true;
+Terakhir, kita perlu menyimpan perubahan kita. Anda dapat menyimpan dokumen dengan nama baru untuk mempertahankan file aslinya.
 
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-     // Lebih aman menyimpan node-node ini dan menghapus semuanya pada akhirnya.
-     nodeList.Add(currentNode);
-     currentNode = currentNode.NextPreOrder(doc);
-
-     // Saat kita menemukan node FieldEnd bertipe FieldTOC,
-     //kami tahu kami berada di akhir TOC saat ini dan kami berhenti di sini.
-     if (currentNode.NodeType == NodeType.FieldEnd)
-     {
-         FieldEnd fieldEnd = (FieldEnd)currentNode;
-         if (fieldEnd.FieldType == FieldType.FieldTOC)
-
-
-             isRemoving = false;
-     }
-}
-
-foreach(Node node in nodeList)
-{
-     node. Remove();
-}
-
+```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-
-### Contoh kode sumber untuk Menghapus Daftar Isi menggunakan Aspose.Words untuk .NET 
-```csharp
-
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
- 
-// Muat dokumen
-Document doc = new Document(dataDir + "your-document.docx");
-
-// Simpan node FieldStart dari bidang TOC dalam dokumen untuk akses cepat.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-// Ini adalah daftar untuk menyimpan node yang ditemukan di dalam TOC yang ditentukan. Mereka akan dihapus pada akhir metode ini.
-List<Node> nodeList = new List<Node>();
-
-foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-	if (start.FieldType == FieldType.FieldTOC)
-	{
-		fieldStarts.Add(start);
-	}
-}
-
-// Pastikan TOC yang ditentukan oleh indeks yang diteruskan ada.
-if (index > fieldStarts.Count - 1)
-	throw new ArgumentOutOfRangeException("TOC index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-	// Lebih aman menyimpan node ini dan menghapus semuanya sekaligus nanti.
-	nodeList.Add(currentNode);
-	currentNode = currentNode.NextPreOrder(doc);
-
-	// Setelah kita menemukan node FieldEnd bertipe FieldTOC,
-	// kita tahu kita berada di akhir TOC saat ini dan berhenti di sini.
-	if (currentNode.NodeType == NodeType.FieldEnd)
-	{
-		FieldEnd fieldEnd = (FieldEnd) currentNode;
-		if (fieldEnd.FieldType == FieldType.FieldTOC)
-			isRemoving = false;
-	}
-}
-
-foreach (Node node in nodeList)
-{
-	node.Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-        
-```
+ Baris ini menyimpan dokumen Anda dengan perubahan yang dilakukan. Mengganti`"modified-document.docx"` dengan nama file yang Anda inginkan.
 
 ## Kesimpulan
-Dalam tutorial ini, kami menyajikan panduan langkah demi langkah untuk menghapus daftar isi dari dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Dengan mengikuti kode dan instruksi yang diberikan, Anda dapat dengan mudah menghilangkan daftar isi dan memperbaiki tata letak dokumen Anda. Ingatlah untuk menyesuaikan jalur direktori dan nama file agar sesuai dengan kebutuhan spesifik Anda.
 
-### FAQ
+Dan itu dia! Menghapus TOC dari dokumen Word menggunakan Aspose.Words untuk .NET sangatlah mudah setelah Anda membaginya menjadi langkah-langkah sederhana ini. Pustaka yang kuat ini tidak hanya membantu menghilangkan TOC tetapi juga dapat menangani berbagai manipulasi dokumen lainnya. Jadi, silakan dan cobalah!
 
-#### T: Mengapa saya harus menggunakan Aspose.Words untuk menghapus daftar isi di dokumen Word?
+## FAQ
 
-J: Aspose.Words adalah perpustakaan kelas yang kuat dan serbaguna untuk memanipulasi dokumen Word dalam aplikasi .NET. Dengan menggunakan Aspose.Words, Anda dapat menghapus daftar isi dari dokumen Anda secara efektif, yang dapat berguna jika daftar isi berlebihan atau tidak diperlukan. Ini memungkinkan Anda untuk menyesuaikan konten dokumen Anda dan meningkatkan presentasinya secara keseluruhan.
+### 1. Apa itu Aspose.Words untuk .NET?
 
-#### T: Bagaimana cara mengunggah dokumen di Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah pustaka .NET yang tangguh untuk manipulasi dokumen, memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram.
 
-A: Untuk menghapus daftar isi di dokumen Word, Anda harus memuat dokumen ke dalam memori terlebih dahulu menggunakan metode Load() dari Aspose.Words. Berikut ini contoh kode untuk memuat dokumen dari direktori tertentu:
+### 2. Bisakah saya menggunakan Aspose.Words secara gratis?
 
-```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+ Ya, Anda dapat menggunakan Aspose.Words dengan a[uji coba gratis](https://releases.aspose.com/) atau dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/).
 
-// Muat dokumen
-Document doc = new Document(dataDir + "your-document.docx");
-```
+### 3. Apakah mungkin untuk menghapus kolom lain menggunakan Aspose.Words?
 
- Mengganti`"YOUR DOCUMENTS DIRECTORY"` dengan jalur sebenarnya ke dokumen Anda.
+Sangat! Anda dapat menghapus bidang apa pun dengan menentukan jenisnya di kondisi filter.
 
-#### Q: Bagaimana cara menghapus daftar isi dokumen menggunakan Aspose.Words?
+### 4. Apakah saya memerlukan Visual Studio untuk menggunakan Aspose.Words?
 
- J: Untuk menghapus TOC, Anda perlu melakukan iterasi melalui`FieldStart` ketik node TOC dalam dokumen. Anda dapat menyimpan node ini untuk akses cepat dan membuat daftar node untuk dihapus. Berikut ini contoh kodenya:
+Meskipun Visual Studio sangat disarankan untuk kemudahan pengembangan, Anda dapat menggunakan IDE apa pun yang mendukung .NET.
 
-```csharp
-// Simpan node FieldStart dari bidang TOC dalam dokumen untuk akses cepat.
-List<FieldStart> fieldStarts = new List<FieldStart>();
-//Ini adalah daftar untuk menyimpan node yang ditemukan di dalam TOC yang ditentukan. Mereka akan dihapus pada akhir metode ini.
-List<Node> nodeList = new List<Node>();
+### 5. Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Words?
 
-foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
-{
-if (start.FieldType == FieldType.FieldTOC)
-{
-fieldStarts.Add(start);
-}
-}
-
-// Periksa apakah indeks daftar isi yang ditentukan ada.
-if (index > fieldStarts.Count - 1)
-throw new ArgumentOutOfRangeException("Table of contents index is out of range");
-
-bool isRemoving = true;
-
-Node currentNode = fieldStarts[index];
-while (isRemoving)
-{
-// Lebih aman menyimpan node-node ini dan menghapus semuanya pada akhirnya.
-nodeList.Add(currentNode);
-currentNode = currentNode.NextPreOrder(doc);
-
-// Saat kita menemukan node FieldEnd bertipe FieldTOC,
-//kami tahu kami berada di akhir TOC saat ini dan kami berhenti di sini.
-if (currentNode.NodeType == NodeType.FieldEnd)
-{
-FieldEnd fieldEnd = (FieldEnd)currentNode;
-if (fieldEnd.FieldType == FieldType.FieldTOC)
-isRemoving = false;
-}
-}
-
-foreach(Node node in nodeList)
-{
-node. Remove();
-}
-
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
-
-#### T: Bagaimana cara menyimpan dokumen yang diedit di Aspose.Words untuk .NET?
-
-A: Setelah menghapus daftar isi, Anda harus menyimpan dokumen yang diubah menggunakan metode Save(). Tentukan jalur dan format file keluaran yang diinginkan (misalnya, DOCX) untuk dokumen yang diedit. Berikut ini contoh kodenya:
-
-```csharp
-doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
-```
+ Untuk dokumentasi lebih rinci, kunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/).

@@ -52,7 +52,7 @@ Med den här koden kommer du att kunna jämföra två dokument och avgöra om de
 
 ## Slutsats
 
-den här handledningen undersökte vi hur man jämför dokument för jämlikhet med hjälp av funktionen Compare for Equal i Aspose.Words för .NET. Genom att jämföra två dokument och analysera revisionerna kan du avgöra om dokumenten har samma innehåll eller om det finns några skillnader mellan dem. Aspose.Words för .NET tillhandahåller kraftfulla dokumentjämförelsefunktioner, vilket gör att du kan automatisera processen för att identifiera dokumentlikheter och skillnader.
+I den här handledningen undersökte vi hur man jämför dokument för jämlikhet med hjälp av funktionen Compare for Equal i Aspose.Words för .NET. Genom att jämföra två dokument och analysera revisionerna kan du avgöra om dokumenten har samma innehåll eller om det finns några skillnader mellan dem. Aspose.Words för .NET tillhandahåller kraftfulla dokumentjämförelsefunktioner, vilket gör att du kan automatisera processen för att identifiera dokumentlikheter och skillnader.
 
 ### FAQ's
 
@@ -73,4 +73,4 @@ S: Ja, Aspose.Words för .NET erbjuder olika alternativ för att anpassa jämfö
 
 #### F: Kan jag göra en mer detaljerad jämförelse för att identifiera specifika skillnader mellan dokument?
 
-S: Ja, du kan göra en mer detaljerad jämförelse för att identifiera specifika skillnader mellan dokument genom att iterera genom`Revisions` insamling av originaldokumentet. Varje revision representerar en ändring eller skillnad mellan dokumenten. Du kan komma åt detaljerna för varje revision, såsom typ av ändring (infogning, radering, formateringsändring) och det berörda området för dokumentet.
+ S: Ja, du kan göra en mer detaljerad jämförelse för att identifiera specifika skillnader mellan dokument genom att iterera genom`Revisions` insamling av originalhandlingarna. Varje revision representerar en ändring eller skillnad mellan dokumenten. Du kan komma åt detaljerna för varje revision, såsom typ av ändring (infogning, radering, formateringsändring) och det berörda området för dokumentet.

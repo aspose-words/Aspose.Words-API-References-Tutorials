@@ -61,7 +61,7 @@ Console.WriteLine(text);
 
 ## Çözüm
 
-Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesinden metin çıkarmak için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Verilen adımları takip ederek C# uygulamanızdaki Word belgelerinizdeki belirli aralıklardan kolayca metin ayıklayabilirsiniz. Aspose.Words, belge içeriğiyle Kelime İşleme için muazzam esneklik ve güç sunarak metni özel ihtiyaçlarınıza göre işlemenize ve kullanmanıza olanak tanır.
+Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesinden metin çıkarmak için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Verilen adımları takip ederek C# uygulamanızdaki Word belgelerinizdeki belirli aralıklardan kolayca metin ayıklayabilirsiniz. Aspose.Words, belge içeriğiyle Kelime İşleme için muazzam bir esneklik ve güç sunarak metni özel ihtiyaçlarınıza göre işlemenize ve kullanmanıza olanak tanır.
 
 ### Aralıklarla ilgili SSS'ler word belgesinde metin alır
 

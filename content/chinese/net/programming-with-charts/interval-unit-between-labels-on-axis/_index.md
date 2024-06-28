@@ -17,7 +17,7 @@ url: /zh/net/programming-with-charts/interval-unit-between-labels-on-axis/
 - 已安装 Aspose.Words for .NET 库。您可以使用 NuGet 包管理器下载并安装它。
 - 将保存输出文档的文档目录路径。
 
-## 步骤 2：创建一个新文档并插入图表
+## 步骤2：创建一个新文档并插入图表。
 
 创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
@@ -89,12 +89,12 @@ doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 
 Aspose.Words for .NET 提供了强大的功能来操作 Word 文档中的图表。通过设置轴上标签之间的间隔单位，您可以控制标签的显示密度并增强图表的可读性。这使您可以优化数据的呈现并改善整体用户体验。
 
-借助 Aspose.Words for .NET，您可以灵活地自定义图表的各个方面，包括轴标签。您可以设置所需的间隔单位，以确保标签间隔适当并提供数据点的清晰表示。
+借助 Aspose.Words for .NET，您可以灵活地自定义图表的各个方面，包括轴标签。您可以设置所需的间隔单位，以确保标签适当间隔并提供数据点的清晰表示。
 
 ### 常见问题解答
 
 #### Q1.图表中的轴标签是什么？
-图表中的轴标签是指沿图表水平（X 轴）或垂直（Y 轴）轴的值的文本表示形式。这些标签有助于识别和解释图表上绘制的数据点。轴标签提供上下文并允许用户了解图表中值的比例和范围。
+图表中的轴标签是指沿图表水平（X 轴）或垂直（Y 轴）轴的值的文本表示。这些标签有助于识别和解释图表上绘制的数据点。轴标签提供上下文并允许用户了解图表中值的比例和范围。
 
 #### Q2。如何自定义轴标签之间的间距？
 要使用 Aspose.Words for .NET 自定义图表中轴标签之间的间距，您可以访问`AxisX`或者`AxisY`图表的属性并修改`TickLabelSpacing`财产。通过设置`TickLabelSpacing`为特定值时，您可以控制各个轴上标签之间的间隔单位，根据您的要求调整间距。

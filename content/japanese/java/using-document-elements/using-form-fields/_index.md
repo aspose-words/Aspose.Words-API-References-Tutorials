@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 4. ComboBox フォームフィールドの挿入
-Word 文書のフォーム フィールドは、テキスト フィールド、チェックボックス、コンボ ボックスなど、さまざまな形式をとることができます。この例では、ComboBox フォーム フィールドの挿入に焦点を当てます。
+Word 文書のフォーム フィールドは、テキスト フィールド、チェックボックス、コンボ ボックスなど、さまざまな形式を取ることができます。この例では、ComboBox フォーム フィールドの挿入に焦点を当てます。
 
 ```java
 String[] items = { "One", "Two", "Three" };
@@ -78,7 +78,7 @@ public void formFieldsGetByName() throws Exception {
 フォント サイズや色の調整など、フォーム フィールドの外観をカスタマイズして、ドキュメントをより視覚的に魅力的で使いやすいものにすることができます。
 
 ## 9. 結論
-Aspose.Words for Java を使用すると、Word ドキュメント内のフォーム フィールドの操作が簡素化され、アプリケーション用の対話型で動的なドキュメントの作成が容易になります。次の場所にある広範なドキュメントを参照してください。[Aspose.Words API ドキュメント](https://reference.aspose.com/words/java/)より多くの機能を発見するために。
+Aspose.Words for Java を使用すると、Word ドキュメント内のフォーム フィールドの操作が簡素化され、アプリケーション用に対話型で動的なドキュメントを簡単に作成できるようになります。次の場所にある広範なドキュメントを参照してください。[Aspose.Words API ドキュメント](https://reference.aspose.com/words/java/)より多くの機能を発見するために。
 
 ## よくある質問 (FAQ)
 

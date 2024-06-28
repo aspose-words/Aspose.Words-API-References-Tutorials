@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Krok 3: Vytvoření vnořených záložek
 
-Můžeme také vytvořit vnořené záložky uvnitř hlavní záložky. Používáme to samé`StartBookmark` a`EndBookmark` metody pro vytvoření a ukončení vnořených záložek:
+ Můžeme také vytvořit vnořené záložky uvnitř hlavní záložky. Používáme to samé`StartBookmark` a`EndBookmark` metody pro vytvoření a ukončení vnořených záložek:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");

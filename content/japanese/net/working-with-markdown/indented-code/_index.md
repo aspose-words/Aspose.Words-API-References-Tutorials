@@ -18,7 +18,7 @@ url: /ja/net/working-with-markdown/indented-code/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## ステップ 2: インデントされたコードのスタイルを追加する
+## ステップ 2: 指定されたコードのスタイルを追加する
 
 を使用して、インデントされたコードのカスタム スタイルを追加します。`Styles.Add`の方法`Document`物体。この例では、インデントされたコード用に「IndentedCode」というスタイルを作成します。
 
@@ -27,7 +27,7 @@ Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedC
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## ステップ 3: インデントされたコードを追加する
+## ステップ 3: 指定されたコードを追加する
 
 これで、「IndentedCode」カスタム スタイルを使用してインデントされたコード ブロックを追加できるようになりました。
 
@@ -51,7 +51,7 @@ builder.Writeln("This is an indented code");
 
 ### よくある質問
 
-#### Q: Markdown のインデントされたコードとは何ですか?
+#### Q:Markdownで指定するコードとは何ですか?
 
 A: Markdown のインデント コードは、Markdown ドキュメント内のコードを表示するために使用される書式設定方法です。これは、コードの各行をスペースまたはタブでインデントすることで構成されます。
 

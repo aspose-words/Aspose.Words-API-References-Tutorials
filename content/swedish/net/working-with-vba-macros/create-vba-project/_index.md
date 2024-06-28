@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## Steg 3: Skapa en ny modul och ange makrokällkod
+## Steg 3: Skapa en ny modul och ange makrokällkod.
  Vi kommer att skapa en ny modul genom att instansiera`VbaModule` klass och anger makronamn, typ (procedurmodul) och källkod.
 
 ```csharp
@@ -94,7 +94,7 @@ S: Innan du kan skapa ett VBA-projekt i ett Word-dokument måste du ha praktiska
 
 #### F: Hur ställer jag in dokumentkatalogen i koden?
 
- S: I den angivna koden måste du byta ut`"YOUR DOCUMENTS DIRECTORY"` med lämplig sökväg till katalogen där du vill spara ditt Word-dokument med VBA-projektet.
+ S: I den angivna koden måste du byta ut.`"YOUR DOCUMENTS DIRECTORY"` med lämplig sökväg till katalogen där du vill spara ditt Word-dokument med VBA-projektet.
 
 #### F: Hur anger man makrokällkod i VBA-modulen?
 

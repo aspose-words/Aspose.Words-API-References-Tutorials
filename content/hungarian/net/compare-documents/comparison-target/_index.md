@@ -42,7 +42,7 @@ Document docB = docA.Clone();
 
 ## 5. lépés: Összehasonlítási beállítások konfigurálása
 
-Ebben a lépésben konfiguráljuk az összehasonlítási beállításokat, hogy meghatározzuk az összehasonlítás viselkedését. A lehetőségek között szerepel a formázás figyelmen kívül hagyása, valamint az összehasonlítási cél, amely a Microsoft Word „Dokumentumok összehasonlítása” párbeszédpaneljének „Változások megjelenítése” opciója.
+Ebben a lépésben konfiguráljuk az összehasonlítási beállításokat, hogy meghatározzuk az összehasonlítás viselkedését. A lehetőségek között szerepel a formázás figyelmen kívül hagyásának lehetősége, valamint az összehasonlítási cél, amely a Microsoft Word „Dokumentumok összehasonlítása” párbeszédpaneljének „Változások megjelenítése” opciója.
 
 ```csharp
 CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
@@ -58,7 +58,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 
  A`Compare`módszer összehasonlítja az A dokumentumot a B dokumentummal, és elmenti az A dokumentum módosításait. Referenciaként megadhatja a felhasználónevet és az összehasonlítás dátumát.
 
-### Minta forráskód a Comparison Targethez az Aspose.Words for .NET használatával
+### Minta forráskód a Compare Target használatához Aspose.Words for .NET használatával
 
 
 ```csharp
@@ -90,9 +90,9 @@ V: A Comparison Target használatához az Aspose.Words for .NET-ben, kövesse az
 1. Állítsa be fejlesztői környezetét az Aspose.Words könyvtárral.
 2. Adja hozzá a szükséges összeállításokat a projekthez az Aspose.Words hivatkozással.
 3.  Inicializálja az összehasonlítani kívánt dokumentumokat a segítségével`Document` osztály vagy a`DocumentBuilder` osztály.
-4.  Konfigurálja az összehasonlítási beállításokat a létrehozásával`CompareOptions` objektum és beállítás tulajdonságai, mint pl`IgnoreFormatting` és`Target` (például,`ComparisonTargetType.New` összehasonlítási célhoz).
+4.  Konfigurálja az összehasonlítási beállításokat a létrehozásával`CompareOptions` objektum és beállítás tulajdonságai, mint pl`IgnoreFormatting` és`Target` (például.,`ComparisonTargetType.New` összehasonlítási célhoz).
 5.  Használja a`Compare` módszer az egyik dokumentumon, átadva a másik dokumentumot és a`CompareOptions` objektum paraméterként. Ez a módszer összehasonlítja a dokumentumokat, és elmenti a módosításokat az első dokumentumban.
 
 ####  K: Mi a célja a`Target` property in the `CompareOptions` class?
 
- V: A`Target` ingatlan a`CompareOptions` osztály lehetővé teszi az összehasonlítási cél megadását, amely hasonló a Microsoft Word "Dokumentumok összehasonlítása" párbeszédpaneljének "Változások megjelenítése" opciójához. A cél beállítható`ComparisonTargetType.New` új dokumentum változásainak megjelenítéséhez,`ComparisonTargetType.Current` az aktuális dokumentum változásainak megjelenítéséhez, vagy`ComparisonTargetType.Formatting` hogy csak a formázási változások jelenjenek meg.
+ V: A`Target` ingatlan a`CompareOptions` osztály lehetővé teszi az összehasonlítási cél megadását, amely hasonló a Microsoft Word "Dokumentumok összehasonlítása" párbeszédpaneljének "Változások megjelenítése" opciójához. A cél beállítható`ComparisonTargetType.New` a változások megjelenítéséhez egy új dokumentumban,`ComparisonTargetType.Current` az aktuális dokumentum változásainak megjelenítéséhez, vagy`ComparisonTargetType.Formatting` hogy csak a formázási változások jelenjenek meg.

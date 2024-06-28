@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -72,7 +72,7 @@ Ezzel befejeződik egy szóródiagram beszúrása az Aspose.Words for .NET haszn
 
 Ebben az oktatóanyagban megtanulta, hogyan illeszthet be szóródiagramot egy Word-dokumentumba az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével és a mellékelt forráskód használatával új dokumentumot hozhat létre, szórványdiagramot szúrhat be, sorozatadatokat adhat hozzá X és Y koordinátákkal, és mentheti a dokumentumot a diagrammal együtt.
 
-Az Aspose.Words for .NET átfogó API-t biztosít a Word-dokumentumokban lévő diagramokkal a szövegfeldolgozáshoz. A szóródiagramok hasznosak az adatok két numerikus változóval történő megjelenítéséhez és elemzéséhez. Az Aspose.Words for .NET segítségével könnyen létrehozhat szóródiagramokat, amelyek az X és Y értékek közötti kapcsolatot ábrázolják, és azonosítják az adatok mintáit vagy trendjeit.
+Az Aspose.Words for .NET átfogó API-t biztosít a Word-dokumentumokban lévő diagramokkal a szövegfeldolgozáshoz. A szóródiagramok hasznosak az adatok két numerikus változóval történő megjelenítéséhez és elemzéséhez. Az Aspose.Words for .NET segítségével könnyen létrehozhat szóródiagramokat, amelyek bemutatják az X és Y értékek közötti kapcsolatot, és azonosítják az adatok mintáit vagy trendjeit.
 
 Az Aspose.Words for .NET használatával automatizálhatja a dokumentumok szórványdiagramokkal történő előállítását, így időt és erőfeszítést takaríthat meg a kézi dokumentumkészítés során. A könyvtár diagramtípusok széles skáláját kínálja, beleértve a szóródiagramokat is, és különféle testreszabási lehetőségeket kínál a diagram megjelenésének az Ön igényei szerint történő testreszabásához.
 
@@ -91,4 +91,4 @@ Igen, az Aspose.Words for .NET használatával testreszabhatja a szóródiagram 
 Igen, az Aspose.Words for .NET lehetővé teszi a dokumentum elmentését a beillesztett pontdiagrammal különböző formátumokban, például DOCX, PDF, HTML stb. Kiválaszthatja a kívánt kimeneti formátumot igényei alapján, és használhatja a`Save` módszere a`Document` objektumot a dokumentum mentéséhez. A beszúrt szóródiagram megmarad a mentett dokumentumban.
 
 #### Q5. Módosíthatom a szóródiagram adatait és megjelenését a beillesztés után?
-Igen, miután beszúrta a szóródiagramot a dokumentumba, az Aspose.Words for .NET által biztosított API-k segítségével módosíthatja annak adatait és megjelenését. Frissítheti a sorozatadatokat új X és Y koordinátákkal, módosíthatja a jelölők alakját és színét, testreszabhatja a tengely tulajdonságait, és formázási beállításokat alkalmazhat dinamikus és interaktív diagramok létrehozásához a Word-dokumentumokban.
+Igen, miután beszúrta a szóródiagramot a dokumentumba, módosíthatja annak adatait és megjelenését az Aspose.Words for .NET által biztosított API-k segítségével. Frissítheti a sorozatadatokat új X és Y koordinátákkal, módosíthatja a jelölők alakját és színét, testreszabhatja a tengely tulajdonságait, és formázási beállításokat alkalmazhat dinamikus és interaktív diagramok létrehozásához a Word-dokumentumokban.

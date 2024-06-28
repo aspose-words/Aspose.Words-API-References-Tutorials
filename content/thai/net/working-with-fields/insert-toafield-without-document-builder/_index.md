@@ -45,7 +45,7 @@ fieldTA.LongCitation = "Value 0";
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## ขั้นตอนที่ 5: การสร้างย่อหน้าสำหรับฟิลด์ TOA
+## ขั้นตอนที่ 5: สร้างย่อหน้าสำหรับฟิลด์ TOA
 
 เราสร้างย่อหน้าใหม่สำหรับฟิลด์ TOA
 

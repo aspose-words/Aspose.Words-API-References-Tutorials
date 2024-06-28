@@ -52,7 +52,7 @@ Pomocí následujících kroků můžete snadno podepsat dokument aplikace Word 
 
  V tomto tutoriálu jsme prozkoumali funkci podepisování dokumentů v Aspose.Words pro .NET. Načtením podpisového certifikátu a použitím`DigitalSignatureUtil.Sign` můžeme digitálně podepsat dokument aplikace Word. Podepisování dokumentů zajišťuje autentizaci a zajišťuje integritu obsahu dokumentu, což z něj činí cennou funkci pro bezpečnou a důvěryhodnou správu dokumentů.
 
-### Nejčastější dotazy pro dokument znakového slova
+### Časté dotazy pro dokument znakového slova
 
 #### Otázka: Co je podepisování dokumentů v Aspose.Words pro .NET?
 

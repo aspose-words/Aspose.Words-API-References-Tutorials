@@ -50,7 +50,7 @@ chart.Series.Add("Aspose Series 1",
 ```
 
 ## Steg 5: Ställ in gränserna för axeln
- Konfigurera skalningen av Y-axeln genom att ställa in lägsta och maximala värden med hjälp av`Scaling.Minimum` och`Scaling.Maximum` axelns egenskaper.
+ Konfigurera skalningen av Y-axeln genom att ställa in lägsta och högsta värden med hjälp av`Scaling.Minimum` och`Scaling.Maximum` axelns egenskaper.
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
@@ -95,7 +95,7 @@ I den här handledningen har du lärt dig hur du ställer in gränserna för en 
 Aspose.Words för .NET är ett bibliotek som låter utvecklare arbeta med Word-dokument programmatiskt. Den tillhandahåller ett brett utbud av funktioner och funktioner för att skapa, manipulera och spara Word-dokument.
 
 #### Q2. Hur kan jag installera Aspose.Words för .NET?
-För att installera Aspose.Words för .NET kan du använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Aspose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
+För att installera Aspose.Words för .NET kan du använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Apose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
 
 #### Q3. Kan jag använda Aspose.Words för .NET med andra programmeringsspråk?
 Nej, Aspose.Words för .NET är speciellt designat för .NET-applikationer. Det fungerar med programmeringsspråk som C# och VB.NET.

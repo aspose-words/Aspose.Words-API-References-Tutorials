@@ -1,6 +1,6 @@
 ---
-title: Változások elfogadása
-linktitle: Változások elfogadása
+title: Értékelések elfogadása
+linktitle: Értékelések elfogadása
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan fogadhat el Word-dokumentumok módosításait az Aspose.Words for .NET használatával
 type: docs
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// A revízió törlése bekezdés eltávolításra kerül, ha elfogadjuk a változtatásokat.
+// A törölt revíziós bekezdést a rendszer eltávolítja, ha elfogadjuk a változtatásokat.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
@@ -171,7 +171,7 @@ doc.Save("path/to/the/document.docx");
 
 #### K: Hogyan állíthatom le az Aspose.Words for .NET változatainak követését?
 
- V: Használja a`StopTrackRevisions` módszere a`Document` objektumot a követési változatok leállításához.
+ V: Használja a`StopTrackRevisions` módszere a`Document` objektumot a nyomkövetési revíziók leállításához.
 
 ```csharp
 doc.StopTrackRevisions();

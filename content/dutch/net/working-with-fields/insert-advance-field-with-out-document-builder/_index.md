@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Stap 3: Het geavanceerde veld invoegen
+## Stap 3: De geavanceerde velden invoegen
 
  Wij gebruiken de`AppendField()` methode om een geavanceerd veld in de alinea in te voegen.
 

@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### ถาม: ฉันจะลบความคิดเห็นใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: หากต้องการลบความคิดเห็นใน Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`Comment.Remove` วิธีการระบุ`Comment` วัตถุที่คุณต้องการลบ
+ตอบ: หากต้องการลบความคิดเห็นใน Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`Comment.Remove` วิธีการระบุ`Comment` วัตถุที่คุณต้องการลบ
 
 #### ถาม: ฉันสามารถตอบกลับความคิดเห็นใน Aspose.Words สำหรับ .NET ได้หรือไม่
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### ถาม: ฉันจะเข้าถึงความคิดเห็นที่มีอยู่ใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: คุณสามารถเข้าถึงความคิดเห็นที่มีอยู่ใน Aspose.Words for .NET ได้โดยใช้`CommentCollection` ทรัพย์สินของ`Document`วัตถุ. ซึ่งจะช่วยให้คุณสามารถเรียกดูความคิดเห็นทั้งหมดที่มีอยู่ในเอกสารได้
+ ตอบ: คุณสามารถเข้าถึงความคิดเห็นที่มีอยู่ใน Aspose.Words for .NET ได้โดยใช้`CommentCollection` ทรัพย์สินของ`Document` วัตถุ วัตถุ ซึ่งจะช่วยให้คุณสามารถเรียกดูความคิดเห็นทั้งหมดที่มีอยู่ในเอกสารได้
 
 #### ถาม: ฉันสามารถแก้ไขข้อความความคิดเห็นใน Aspose.Words สำหรับ .NET ได้หรือไม่
 

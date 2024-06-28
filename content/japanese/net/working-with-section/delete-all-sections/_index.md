@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## ステップ 3: すべてのセクションを削除する
-ドキュメントからすべてのセクションを削除するには、`Clear`の方法`Sections`文書のコレクション。
+ドキュメントからすべてのセクションを削除するには、`Clear`の方法`Sections`書類のコレクション。
 
 ```csharp
 doc.Sections.Clear();

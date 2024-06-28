@@ -2,107 +2,148 @@
 title: Retorno de chamada de hifenização
 linktitle: Retorno de chamada de hifenização
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como usar o retorno de chamada de hifenização em Aspose.Words for .NET para lidar com a hifenização de palavras.
+description: Aprenda a implementar o retorno de chamada de hifenização no Aspose.Words for .NET para aprimorar a formatação de documentos com este guia passo a passo abrangente.
 type: docs
 weight: 10
 url: /pt/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-Neste tutorial passo a passo, mostraremos como usar o recurso de retorno de chamada de hifenização no Aspose.Words for .NET. Explicaremos o código-fonte C# fornecido e mostraremos como implementá-lo em seus próprios projetos.
+## Introdução
 
- Para começar, certifique-se de ter o Aspose.Words for .NET instalado e configurado em seu ambiente de desenvolvimento. Se ainda não o fez, baixe e instale a biblioteca em[Aspose.Releases]https://releases.aspose.com/words/net/.
+Ei! Você já se viu envolvido nas complexidades da formatação de texto, especialmente ao lidar com idiomas que exigem hifenização? Você não está sozinho. A hifenização, embora crucial para o layout adequado do texto, pode ser uma dor de cabeça. Mas adivinhe? Aspose.Words for .NET está à sua volta. Esta poderosa biblioteca permite gerenciar a formatação de texto perfeitamente, incluindo o tratamento da hifenização por meio de um mecanismo de retorno de chamada. Intrigado? Vamos mergulhar nos detalhes de como você pode implementar um retorno de chamada de hifenização usando Aspose.Words for .NET.
 
-## Etapa 1: salvar lembrete de hifenização
+## Pré-requisitos
 
- Primeiro, registraremos o retorno de chamada de hifenização usando um comando personalizado`CustomHyphenationCallback` aula. Isso nos permitirá lidar com a hifenização de palavras de acordo com nossas próprias regras:
+Antes de sujarmos as mãos com o código, vamos ter certeza de que você tem tudo o que precisa:
 
-```csharp
-Hyphenation.Callback = new CustomHyphenationCallback();
-```
+1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
+2. IDE: Um ambiente de desenvolvimento como o Visual Studio.
+3. Conhecimento básico de C#: Compreensão de C# e .NET framework.
+4. Dicionários de hifenização: dicionários de hifenização para os idiomas que você planeja usar.
+5.  Licença Aspose: Uma licença Aspose válida. Você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/) se você não tiver um.
 
- Certifique-se de ter implementado o`CustomHyphenationCallback` aula de acordo com suas necessidades específicas.
+## Importar namespaces
 
-## Etapa 2: Carregar o documento e aplicar a hifenização
-
-Em seguida, carregue seu documento do diretório especificado e hifenize as palavras usando Aspose.Words:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document document = new Document(dataDir + "German text.docx");
-document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
-```
-
-## Etapa 3: Tratamento de erros de dicionário ausentes
-
-Caso falte um dicionário de hifenização, capturaremos a exceção correspondente e exibiremos uma mensagem de erro:
+Primeiramente, vamos importar os namespaces necessários. Isso garante que nosso código tenha acesso a todas as classes e métodos que precisamos do Aspose.Words.
 
 ```csharp
-catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
-{
-     Console.WriteLine(e.Message);
-}
+using Aspose.Words;
+using System;
+using System.IO;
 ```
 
-## Etapa 4: limpar e desativar o lembrete de hifenização
+## Etapa 1: registrar o retorno de chamada de hifenização
 
-Por fim, para limpeza e para desligar o lembrete de hifenização, execute as seguintes etapas:
-
-```csharp
-finally
-{
-     Hyphenation. Callback = null;
-}
-```
-
-Isso limpa e desativa o lembrete de hifenização após concluir o processamento.
-
-Então ! Você usou com sucesso o retorno de chamada de hifenização em Aspose.Words for .NET.
-
-### Exemplo de código-fonte para retorno de chamada de hifenização com Aspose.Words para .NET
+Para começar, precisamos registrar nosso retorno de chamada de hifenização. É aqui que dizemos ao Aspose.Words para usar nossa lógica de hifenização personalizada.
 
 ```csharp
 try
 {
-	 // Registrar retorno de chamada de hifenização.
-	 Hyphenation.Callback = new CustomHyphenationCallback();
-	 string dataDir = "YOUR DOCUMENT DIRECTORY";
-	 Document document = new Document(dataDir + "German text.docx");
-	 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+    // Registrar retorno de chamada de hifenização.
+    Hyphenation.Callback = new CustomHyphenationCallback();
 }
+catch (Exception e)
+{
+    Console.WriteLine($"Error registering hyphenation callback: {e.Message}");
+}
+```
+
+ Aqui, estamos criando uma instância do nosso retorno de chamada personalizado e atribuindo-o a`Hyphenation.Callback`.
+
+## Etapa 2: definir o caminho do documento
+
+A seguir, precisamos definir o diretório onde nossos documentos serão armazenados. Isso é crucial porque carregaremos e salvaremos documentos deste caminho.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para seus documentos.
+
+## Etapa 3: carregue o documento
+
+Agora, vamos carregar o documento que requer hifenização.
+
+```csharp
+Document document = new Document(dataDir + "German text.docx");
+```
+
+ Aqui, estamos carregando um documento de texto em alemão. Você pode substituir`"German text.docx"` com o nome do arquivo do seu documento.
+
+## Etapa 4: salve o documento
+
+Após carregar o documento, salvamos ele em um novo arquivo, aplicando o callback de hifenização no processo.
+
+```csharp
+document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
+```
+
+Esta linha salva o documento como PDF com hifenização aplicada.
+
+## Etapa 5: lidar com exceção de dicionário de hifenização ausente
+
+Às vezes, você pode se deparar com um problema em que o dicionário de hifenização está faltando. Vamos cuidar disso.
+
+```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
 {
-	 Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);
 }
 finally
 {
-	 Hyphenation. Callback = null;
+    Hyphenation.Callback = null;
 }
-
 ```
 
-Sinta-se à vontade para usar este código em seus próprios projetos e modificá-lo para atender às suas necessidades específicas.
+Neste bloco, capturamos a exceção específica relacionada aos dicionários ausentes e imprimimos a mensagem.
 
-### Perguntas frequentes
+## Etapa 6: implementar a classe de retorno de chamada de hifenização personalizada
 
-#### P: O que é um lembrete de silabização em Aspose.Words?
+ Agora, vamos implementar o`CustomHyphenationCallback` classe que trata da solicitação de dicionários de hifenização.
 
-R: Um lembrete de silabização no Aspose.Words é um recurso que permite personalizar como as palavras são silabizadas em seus documentos. Ao usar um lembrete de silabização, você pode especificar regras personalizadas para silabização de palavras, o que pode ser útil para idiomas específicos ou cenários específicos onde a silabização padrão não produz os resultados desejados.
+```csharp
+public class CustomHyphenationCallback : IHyphenationCallback
+{
+    public void RequestDictionary(string language)
+    {
+        string dictionaryFolder = MyDir;
+        string dictionaryFullFileName;
+        switch (language)
+        {
+            case "en-US":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_en_US.dic");
+                break;
+            case "de-CH":
+                dictionaryFullFileName = Path.Combine(dictionaryFolder, "hyph_de_CH.dic");
+                break;
+            default:
+                throw new Exception($"Missing hyphenation dictionary for {language}.");
+        }
+        // Registre o dicionário para o idioma solicitado.
+        Hyphenation.RegisterDictionary(language, dictionaryFullFileName);
+    }
+}
+```
 
-#### P: Como definir um lembrete de silabização em Aspose.Words?
+ Nesta aula, o`RequestDictionary` O método é chamado sempre que um dicionário de hifenização é necessário. Verifica o idioma e registra o dicionário apropriado.
 
- R: Para definir um retorno de chamada de hifenização em Aspose.Words, você precisa criar uma classe que implemente o`HyphenationCallback` interface e implementar o`HandleWord()` método. Este método será chamado para cada palavra encontrada durante a silabização. Você pode aplicar regras de silabização personalizadas a ele e retornar a palavra silabizada. Então você pode vincular seu retorno de chamada de hifenização usando o`Document.HyphenationCallback` propriedade do seu documento.
+## Conclusão
 
-#### P: Qual é a vantagem de usar um lembrete de silabização no Aspose.Words?
+E aí está! Você acabou de aprender como implementar um retorno de chamada de hifenização no Aspose.Words for .NET. Seguindo essas etapas, você pode garantir que seus documentos sejam formatados de maneira bonita, independentemente do idioma. Esteja você lidando com inglês, alemão ou qualquer outro idioma, esse método permite lidar com a hifenização sem esforço.
 
-R: A vantagem de usar um lembrete de silabização no Aspose.Words é a capacidade de personalizar como as palavras são silabizadas em seus documentos. Isso lhe dá mais controle sobre a silabização, especialmente para idiomas ou cenários específicos onde a silabização padrão não fornece os resultados desejados. Você pode aplicar regras específicas a cada palavra para obter uma silabização precisa de acordo com suas necessidades.
+## Perguntas frequentes
 
-#### P: Quais são alguns cenários comuns em que o uso de um lembrete de silabização pode ser útil?
+### O que é Aspose.Words para .NET?
+Aspose.Words for .NET é uma poderosa biblioteca de manipulação de documentos que permite aos desenvolvedores criar, modificar e converter documentos programaticamente.
 
-R: Usar um reforço de silabização pode ser útil em vários cenários, como:
-- Silabização de palavras em idiomas específicos que possuem regras específicas de silabização.
-- A aplicação de regras de silabização personalizadas para siglas ou palavras técnicas.
-- Adaptação da silabização de acordo com preferências estilísticas ou padrões tipográficos.
+### Por que a hifenização é importante na formatação de documentos?
+A hifenização melhora o layout do texto, quebrando as palavras nos locais apropriados, garantindo um documento mais legível e visualmente atraente.
 
-#### P: Como posso testar a silabização personalizada com um lembrete de silabização no Aspose.Words?
+### Posso usar o Aspose.Words gratuitamente?
+ Aspose.Words oferece um teste gratuito. Você pode conseguir isso[aqui](https://releases.aspose.com/).
 
- R: Para testar a silabização personalizada com um lembrete de silabização no Aspose.Words, você pode criar um documento de teste contendo palavras às quais deseja aplicar regras de silabização personalizadas. Então você pode definir seu retorno de chamada de silabização personalizado, chamar o`Document.Range.Replace()` método para substituir as palavras no documento e usar o`Hyphenate()` método do`Hyphenation` class para obter a silabização das palavras. Você pode então formatar as palavras silabizadas conforme necessário, por exemplo, adicionando hífens entre as sílabas.
+### Como obtenho um dicionário de hifenização?
+Você pode baixar dicionários de hifenização de vários recursos online ou criar os seus próprios, se necessário.
+
+### O que acontece se faltar um dicionário de hifenização?
+ Se faltar um dicionário, o`RequestDictionary` O método lança uma exceção, que você pode manipular para informar o usuário ou fornecer um substituto.

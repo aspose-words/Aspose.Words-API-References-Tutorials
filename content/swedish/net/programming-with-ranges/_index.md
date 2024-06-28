@@ -11,7 +11,7 @@ Handledningarna i Aspose.Words för .NET "Ordbehandling med intervall" är en om
 
 dessa handledningar kommer du att lära dig hur du använder de olika funktionerna som erbjuds av Aspose.Words för .NET för att arbeta effektivt och exakt med textintervall. Du kommer att lära dig hur du identifierar intervall med olika urvalsmetoder, manipulerar deras innehåll med kopierings-, trim- och raderingsoperationer och använder format som fetstil, kursiv stil och teckensnittsfärg. teckensnitt till de valda intervallen.
 
-Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa tutorials hjälpa dig att bemästra teknikerna för att manipulera textområden i Word-dokument med hjälp av det kraftfulla Aspose.Words-biblioteket för .NET. Med denna kunskap kommer du att kunna bygga robusta, högpresterande applikationer som effektivt automatiserar behandlingen av Word-dokument.
+Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa tutorials hjälpa dig att bemästra teknikerna för att manipulera textområden i Word-dokument med det kraftfulla Aspose.Words-biblioteket för .NET. Med denna kunskap kommer du att kunna bygga robusta, högpresterande applikationer som effektivt automatiserar behandlingen av Word-dokument.
 
  ## Handledningar
 | Titel | Beskrivning |

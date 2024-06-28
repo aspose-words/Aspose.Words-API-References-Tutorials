@@ -1,6 +1,6 @@
 ---
-title: Judul Seteks
-linktitle: Judul Seteks
+title: Pos Setex
+linktitle: Pos Setex
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara menggunakan judul Setext untuk memformat dokumen Anda dengan Aspose.Words for .NET Panduan langkah demi langkah.
 type: docs

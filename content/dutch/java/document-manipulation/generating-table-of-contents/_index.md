@@ -46,7 +46,7 @@ FieldToc fieldToc = new FieldToc();
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(fieldToc);
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte het document op met de inhoudsopgave.
 

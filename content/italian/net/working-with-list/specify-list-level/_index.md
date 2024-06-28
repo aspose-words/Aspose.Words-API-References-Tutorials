@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Passaggio 6: interrompere la formattazione dell'elenco
 
- Per interrompere la formattazione dell'elenco, impostare`null` al`List` proprietà del generatore di documenti:
+ Per interrompere la formattazione dell'elenco, impostare`null` al`List`proprietà del generatore di documenti:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Crea un elenco numerato basato su uno dei modelli di elenco di Microsoft Word
+// Crea un elenco numerato basato su uno dei modelli di elenco di Microsoft Word.
 // applicarlo al paragrafo corrente del generatore di documenti.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Crea un elenco puntato basato su uno dei modelli di elenco di Microsoft Word
+// Crea un elenco puntato basato su uno dei modelli di elenco di Microsoft Word.
 // applicarlo al paragrafo corrente del generatore di documenti.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### D: Posso aggiungere ulteriori livelli a un elenco numerato in Aspose.Words?
 
- R: Sì, è possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words. IL`ListLevel` La classe consente di impostare le proprietà di formattazione per ogni livello dell'elenco. Puoi impostare opzioni come prefisso, suffisso, allineamento, rientro, ecc. Ciò ti consente di creare elenchi con più livelli di gerarchia.
+ R: Sì, è possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words. IL`ListLevel`La classe consente di impostare le proprietà di formattazione per ogni livello dell'elenco. Puoi impostare opzioni come prefisso, suffisso, allineamento, rientro, ecc. Ciò ti consente di creare elenchi con più livelli di gerarchia.
 
 

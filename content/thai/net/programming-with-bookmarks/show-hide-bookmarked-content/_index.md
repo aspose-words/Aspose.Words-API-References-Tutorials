@@ -2,176 +2,156 @@
 title: แสดงซ่อนเนื้อหาที่คั่นหน้าในเอกสาร Word
 linktitle: แสดงซ่อนเนื้อหาที่คั่นหน้าในเอกสาร Word
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีแสดงหรือซ่อนเนื้อหาที่คั่นหน้าในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีแสดงหรือซ่อนเนื้อหาที่บุ๊กมาร์กในเอกสาร Word แบบไดนามิกโดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนที่ครอบคลุมนี้
 type: docs
 weight: 10
 url: /th/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-ในบทความนี้ เราจะสำรวจซอร์สโค้ด C# ด้านบนเพื่อทำความเข้าใจวิธีใช้ฟังก์ชันแสดงซ่อนเนื้อหาที่คั่นหน้าใน Aspose.Words สำหรับไลบรารี .NET คุณลักษณะนี้ช่วยให้คุณสามารถแสดงหรือซ่อนเนื้อหาของบุ๊กมาร์กในเอกสาร Word ตามเงื่อนไขเฉพาะเมื่อรวมข้อมูล
+## การแนะนำ
+
+สวัสดี! คุณเคยต้องการควบคุมการเปิดเผยเนื้อหาเฉพาะภายในเอกสาร Word ตามเงื่อนไขบางประการหรือไม่? ด้วย Aspose.Words สำหรับ .NET คุณสามารถแสดงหรือซ่อนเนื้อหาที่คั่นหน้าแบบไดนามิกด้วยโค้ดเพียงไม่กี่บรรทัด ในบทช่วยสอนนี้ ฉันจะแนะนำคุณตลอดกระบวนการทีละขั้นตอน เพื่อให้แน่ใจว่าคุณจะเข้าใจโค้ดแต่ละส่วน ในตอนท้าย คุณจะเป็นมืออาชีพในการจัดการบุ๊กมาร์กในเอกสาร Word มาเริ่มกันเลย!
 
 ## ข้อกำหนดเบื้องต้น
 
-- ความรู้พื้นฐานของภาษา C#
-- สภาพแวดล้อมการพัฒนา .NET ที่ติดตั้งไลบรารี Aspose.Words
+ก่อนที่เราจะเจาะลึกบทช่วยสอน เรามาตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
 
-## ขั้นตอนที่ 1: รับบุ๊กมาร์ก
+1. ความรู้พื้นฐานของ C#: คุณควรจะคุ้นเคยกับไวยากรณ์และแนวคิดของ C#
+2.  Aspose.Words สำหรับ .NET: ดาวน์โหลด[ที่นี่](https://releases.aspose.com/words/net/) - หากคุณยังไม่พร้อมที่จะซื้อคุณสามารถเริ่มต้นด้วยก[ทดลองฟรี](https://releases.aspose.com/).
+3. Visual Studio: เวอร์ชันล่าสุดจะใช้งานได้ แต่แนะนำให้ใช้เวอร์ชันล่าสุด
+4. .NET Framework: ตรวจสอบให้แน่ใจว่าได้ติดตั้งไว้ในเครื่องของคุณแล้ว
 
- เราใช้`Bookmarks` คุณสมบัติของช่วงเอกสารเพื่อรับบุ๊กมาร์กเฉพาะที่เราต้องการแสดงหรือซ่อนเนื้อหา:
+พร้อมที่จะเริ่มต้นหรือยัง? ยอดเยี่ยม! เริ่มต้นด้วยการนำเข้าเนมสเปซที่จำเป็น
+
+## นำเข้าเนมสเปซ
+
+หากต้องการใช้ Aspose.Words สำหรับ .NET เราจำเป็นต้องนำเข้าเนมสเปซที่จำเป็น ขั้นตอนนี้ทำให้แน่ใจว่าเราสามารถเข้าถึงคลาสและวิธีการทั้งหมดที่เราจะใช้
 
 ```csharp
-Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## ขั้นตอนที่ 2: การแทรกเขตข้อมูลผสาน
+เนมสเปซเหล่านี้มีความสำคัญอย่างยิ่งต่อการทำงานกับเอกสาร Word และจัดการเนื้อหา
 
- เราใช้เครื่องมือสร้างเอกสาร`DocumentBuilder` เพื่อแทรกช่องผสานที่จำเป็น ช่องผสานเหล่านี้จะกำหนดเงื่อนไขให้แสดงหรือซ่อนเนื้อหาบุ๊กมาร์กโดยขึ้นอยู่กับค่าของ`showHide` ตัวแปร:
+## ขั้นตอนที่ 1: การตั้งค่าเอกสาร
+
+ขั้นแรก มาสร้างเอกสาร Word ใหม่และตัวสร้างเอกสารกัน เครื่องมือสร้างเอกสารช่วยให้เราเพิ่มและจัดการเนื้อหาภายในเอกสารได้อย่างง่ายดาย
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. MoveToDocumentEnd();
-
-Field field = builder. InsertField("IF \"", null);
-builder. MoveTo(field. Start. NextSibling);
-builder. InsertField("MERGEFIELD " + bookmarkName + "", null);
-builder. Write("\" = \"true\" ");
-builder. Write("\"");
-builder. Write("\"");
-builder. Write(" \"\"");
 ```
 
-## ขั้นตอนที่ 3: การย้ายเนื้อหาบุ๊กมาร์ก
+ในขั้นตอนนี้ เราจะเริ่มต้นเอกสารใหม่และตัวสร้างเอกสาร สิ่งนี้จะกำหนดสภาพแวดล้อมของเราสำหรับการดำเนินงานเพิ่มเติม
 
-เราวนซ้ำเนื้อหาของบุ๊กมาร์กแล้วย้ายเพื่อให้ปรากฏ
+## ขั้นตอนที่ 2: การเพิ่มเนื้อหาที่คั่นหน้า
 
-ปัญหาก่อนบุ๊กมาร์ก วิธีนี้จะควบคุมการแสดงหรือซ่อนเนื้อหาตามเงื่อนไขที่ระบุ:
+ต่อไป เราจะเพิ่มเนื้อหาบางส่วนลงในเอกสารและสร้างบุ๊กมาร์กรอบๆ เอกสาร บุ๊กมาร์กนี้จะช่วยให้เราระบุและจัดการเนื้อหาได้
 
 ```csharp
-Node currentNode = field. Start;
+builder.Write("This is some text before the bookmark.");
+builder.StartBookmark("MyBookmark");
+builder.Write("This is the bookmarked content.");
+builder.EndBookmark("MyBookmark");
+builder.Write("This is some text after the bookmark.");
+```
+
+ ที่นี่ เราจะเพิ่มข้อความก่อนและหลังเนื้อหาที่บุ๊กมาร์กไว้ ที่`StartBookmark` และ`EndBookmark` วิธีการกำหนดขอบเขตของบุ๊กมาร์ก
+
+## ขั้นตอนที่ 3: การแทรกฟิลด์แบบมีเงื่อนไข
+
+เพื่อควบคุมการเปิดเผยเนื้อหาที่บุ๊กมาร์ก เราจะใช้ฟิลด์เงื่อนไข ช่องนี้จะตรวจสอบเงื่อนไขและแสดงหรือซ่อนเนื้อหาตามนั้น
+
+```csharp
+builder.MoveToDocumentEnd();
+Field field = builder.InsertField("IF \"", null);
+builder.MoveTo(field.Start.NextSibling);
+builder.InsertField("MERGEFIELD MyBookmark", null);
+builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
+```
+
+ในขั้นตอนนี้ เราจะแทรกฟิลด์ IF ที่จะตรวจสอบค่าของบุ๊กมาร์ก หากค่าเป็น "จริง" ก็จะแสดงเป็น "มองเห็นได้" มิฉะนั้นจะแสดงคำว่า "ซ่อน"
+
+## ขั้นตอนที่ 4: การจัดเรียงโหนดใหม่
+
+ต่อไป เราจำเป็นต้องจัดเรียงโหนดใหม่เพื่อให้แน่ใจว่าตรรกะแบบมีเงื่อนไขใช้กับเนื้อหาที่บุ๊กมาร์กไว้อย่างถูกต้อง
+
+```csharp
+Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
+Node currentNode = field.Start;
 bool flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.Run)
-         if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-             flag = false;
+    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+    currentNode = nextNode;
 }
-```
 
-## ขั้นตอนที่ 4: การย้ายเนื้อหาบุ๊กมาร์กที่เหลือ
-
-เราย้ายเนื้อหาบุ๊กมาร์กที่เหลือไปหลังบุ๊กมาร์ก โดยใช้จุดสิ้นสุดของบุ๊กมาร์กเป็นจุดแทรก:
-
-```csharp
 Node endNode = bm.BookmarkEnd;
 flag = true;
+
 while (currentNode != null && flag)
 {
-     if (currentNode.NodeType == NodeType.FieldEnd)
-         flag = false;
+    if (currentNode.NodeType == NodeType.FieldEnd)
+        flag = false;
 
-     Node nextNode = currentNode.NextSibling;
-
-     bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-     endNode = currentNode;
-     currentNode = nextNode;
+    Node nextNode = currentNode.NextSibling;
+    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+    endNode = currentNode;
+    currentNode = nextNode;
 }
 ```
 
-## ขั้นตอนที่ 5: ดำเนินการผสาน
+ที่นี่ เราย้ายโหนดไปรอบๆ เพื่อให้แน่ใจว่าเงื่อนไขครอบคลุมเนื้อหาที่บุ๊กมาร์กไว้อย่างเหมาะสม
 
- เราใช้`Execute` วิธีการจัดทำเอกสาร`s `จดหมายเวียน` object to execute the merge using the bookmark name and the value of the `ตัวแปร showHide`:
+## ขั้นตอนที่ 5: การดำเนินการจดหมายเวียน
 
-```csharp
-doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
-```
-
-### ตัวอย่างซอร์สโค้ดสำหรับแสดงซ่อนเนื้อหาที่คั่นหน้าโดยใช้ Aspose.Words สำหรับ .NET
-
-นี่คือตัวอย่างแบบเต็มของซอร์สโค้ดเพื่อแสดงหรือซ่อนเนื้อหาบุ๊กมาร์กโดยใช้ Aspose.Words สำหรับ .NET:
+สุดท้ายนี้ เราจะดำเนินการจดหมายเวียนเพื่อตั้งค่าของบุ๊กมาร์ก และพิจารณาว่าควรแสดงหรือซ่อนเนื้อหา
 
 ```csharp
-
-	Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToDocumentEnd();
-
-	// {IF "{MERGEFIELD bookmark}" = "true" "" ""}
-	Field field = builder.InsertField("IF \"", null);
-	builder.MoveTo(field.Start.NextSibling);
-	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-	builder.Write("\" = \"true\" ");
-	builder.Write("\"");
-	builder.Write("\"");
-	builder.Write(" \"\"");
-
-	Node currentNode = field.Start;
-	bool flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.Run)
-			if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-				flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-		currentNode = nextNode;
-	}
-
-	Node endNode = bm.BookmarkEnd;
-	flag = true;
-	while (currentNode != null && flag)
-	{
-		if (currentNode.NodeType == NodeType.FieldEnd)
-			flag = false;
-
-		Node nextNode = currentNode.NextSibling;
-
-		bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-		endNode = currentNode;
-		currentNode = nextNode;
-	}
-
-	doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-
+doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
 ```
+
+ขั้นตอนนี้ตั้งค่าบุ๊กมาร์กเป็น "จริง" ซึ่งจะทำให้เนื้อหามองเห็นได้ตามเงื่อนไขของเรา
+
+## ขั้นตอนที่ 6: บันทึกเอกสาร
+
+หลังจากดำเนินการทั้งหมดแล้ว ขั้นตอนสุดท้ายคือการบันทึกเอกสารที่แก้ไข
+
+```csharp
+doc.Save("ShowHideBookmarkedContent.docx");
+```
+
+ที่นี่ เราจะบันทึกเอกสารด้วยชื่อไฟล์ที่สื่อความหมายเพื่อระบุการเปลี่ยนแปลง
 
 ## บทสรุป
 
-ในบทความนี้ เราได้สำรวจซอร์สโค้ด C# เพื่อทำความเข้าใจวิธีใช้ฟีเจอร์แสดงซ่อนเนื้อหาที่คั่นหน้าของ Aspose.Words สำหรับ .NET เราได้ปฏิบัติตามคำแนะนำทีละขั้นตอนเพื่อแสดงหรือซ่อนเนื้อหาของบุ๊กมาร์กตามเงื่อนไขเฉพาะเมื่อรวมข้อมูล
+ แค่นั้นแหละ! คุณได้เรียนรู้วิธีแสดงหรือซ่อนเนื้อหาที่บุ๊กมาร์กในเอกสาร Word เรียบร้อยแล้วโดยใช้ Aspose.Words for .NET บทช่วยสอนนี้ครอบคลุมถึงการสร้างเอกสาร การเพิ่มบุ๊กมาร์ก การแทรกฟิลด์ตามเงื่อนไข การจัดเรียงโหนดใหม่ และการดำเนินการจดหมายเวียน Aspose.Words นำเสนอฟีเจอร์มากมาย ดังนั้นอย่าลังเลที่จะสำรวจ[เอกสารประกอบ API](https://reference.aspose.com/words/net/) เพื่อความสามารถขั้นสูงยิ่งขึ้น
 
-### คำถามที่พบบ่อยสำหรับการแสดงซ่อนเนื้อหาที่คั่นหน้าในเอกสาร Word
+## คำถามที่พบบ่อย
 
-#### ถาม: ฉันสามารถใช้เงื่อนไขเดียวกันสำหรับบุ๊กมาร์กหลายรายการในเอกสารเดียวกันได้หรือไม่
+### 1. Aspose.Words สำหรับ .NET คืออะไร
 
-ตอบ: ได้ คุณสามารถใช้เงื่อนไขเดียวกันสำหรับบุ๊กมาร์กหลายรายการในเอกสารเดียวกันได้ เพียงทำซ้ำขั้นตอนที่ 2-5 สำหรับแต่ละบุ๊กมาร์ก โดยปรับชื่อบุ๊กมาร์กและเลือกค่าของ`showhide` ตัวแปรได้ตามต้องการ
+Aspose.Words สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้นักพัฒนาสามารถสร้าง แก้ไข และแปลงเอกสาร Word โดยทางโปรแกรมได้ มีการใช้กันอย่างแพร่หลายสำหรับงานเอกสารอัตโนมัติ
 
-#### ถาม: ฉันจะเพิ่มเงื่อนไขเพื่อแสดงหรือซ่อนเนื้อหาบุ๊กมาร์กได้อย่างไร
+### 2. ฉันสามารถใช้ Aspose.Words สำหรับ .NET ได้ฟรีหรือไม่
 
- ตอบ: หากต้องการเพิ่มเงื่อนไข คุณสามารถใช้ตัวดำเนินการเชิงตรรกะ เช่น`AND` และ`OR` ในโค้ดสำหรับแทรกเขตข้อมูลผสานในขั้นตอนที่ 2 แก้ไขเงื่อนไขในโค้ดต่อไปนี้เพื่อเพิ่มเงื่อนไขเพิ่มเติม:
+ คุณสามารถลองใช้ Aspose.Words สำหรับ .NET โดยใช้ไฟล์[ทดลองฟรี](https://releases.aspose.com/)- สำหรับการใช้งานระยะยาว คุณจะต้องซื้อใบอนุญาต
 
-```csharp
-builder. Write("\" = \"true\" ");
-```
+### 3. ฉันจะแก้ไขคุณสมบัติอื่นๆ ของบุ๊กมาร์กได้อย่างไร?
 
-#### ถาม: ฉันจะลบบุ๊กมาร์กในเอกสาร Word โดยใช้ Aspose.Words for .NET ได้อย่างไร
+ Aspose.Words ช่วยให้คุณสามารถจัดการคุณสมบัติต่างๆ ของบุ๊กมาร์ก เช่น ข้อความและตำแหน่งของบุ๊กมาร์กได้ อ้างถึง[เอกสารประกอบ API](https://reference.aspose.com/words/net/) สำหรับคำแนะนำโดยละเอียด
 
- ตอบ: หากต้องการลบบุ๊กมาร์กในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`Remove` วิธีการจาก`Bookmarks` การรวบรวมช่วงเอกสาร นี่คือโค้ดตัวอย่างสำหรับการลบบุ๊กมาร์กเฉพาะ:
+### 4. ฉันจะรับการสนับสนุนสำหรับ Aspose.Words สำหรับ .NET ได้อย่างไร
 
-```csharp
-doc.Range.Bookmarks.Remove(bookmarkName);
-```
+คุณสามารถรับการสนับสนุนได้โดยไปที่[กำหนดฟอรั่มการสนับสนุน](https://forum.aspose.com/c/words/8).
 
-#### ถาม: ไลบรารี Aspose.Words ฟรีหรือไม่
+### 5. ฉันสามารถจัดการเนื้อหาประเภทอื่นด้วย Aspose.Words สำหรับ .NET ได้หรือไม่
 
- ตอบ: ไลบรารี Aspose.Words เป็นไลบรารีเชิงพาณิชย์และจำเป็นต้องมีใบอนุญาตที่ถูกต้องเพื่อใช้ในโครงการของคุณ คุณสามารถตรวจสอบได้[Aspose.Words สำหรับการอ้างอิง .NET API](https://reference.aspose.com/words/net/) เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับตัวเลือกใบอนุญาตและราคา
-
-#### ถาม: มีไลบรารีอื่นสำหรับการประมวลผลคำด้วยเอกสาร Word ใน .NET หรือไม่
-
-ตอบ: ใช่ ยังมีไลบรารีอื่นๆ สำหรับการประมวลผลคำด้วยเอกสาร Word ใน .NET เช่น Open XML SDK และ GemBox.Document คุณสามารถสำรวจไลบรารีเหล่านี้เป็นทางเลือกแทน Aspose.Words ได้ตามความต้องการและความชอบเฉพาะของคุณ
+ใช่ Aspose.Words สำหรับ .NET รองรับการจัดการเนื้อหาหลายประเภท รวมถึงข้อความ รูปภาพ ตาราง และอื่นๆ

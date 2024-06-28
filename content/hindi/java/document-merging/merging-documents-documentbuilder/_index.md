@@ -32,7 +32,7 @@ url: /hi/java/document-merging/merging-documents-documentbuilder/
 // दस्तावेज़ ऑब्जेक्ट को प्रारंभ करें
 Document doc = new Document();
 
-// दस्तावेज़बिल्डर को प्रारंभ करें
+// डॉक्यूमेंटबिल्डर को प्रारंभ करें
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 

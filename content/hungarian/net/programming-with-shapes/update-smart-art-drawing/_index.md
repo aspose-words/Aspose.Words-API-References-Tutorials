@@ -24,14 +24,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Töltse be a dokumentumot
-Töltse be a Smart Art rajzot tartalmazó Word-dokumentumot a`Document` osztályú konstruktőr.
+ Töltse be a Smart Art rajzot tartalmazó Word-dokumentumot a`Document` osztályú konstruktőr.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## 3. lépés: Frissítse a Smart Art rajzot
- Iteráljon a dokumentumban lévő alakzatokon keresztül a`GetChildNodes` módszerrel a`NodeType.Shape` paraméter. Ellenőrizze, hogy az egyes alakzatokban van-e Smart Art a`HasSmartArt` ingatlant, és ha igaz, hívja a`UpdateSmartArtDrawing` módszer a Smart Art rajz frissítéséhez.
+ Iteráljon a dokumentumban lévő alakzatokon keresztül a`GetChildNodes` módszerrel a`NodeType.Shape` paramétereket. Ellenőrizze, hogy az egyes alakzatokban van-e Smart Art a`HasSmartArt` ingatlant, és ha igaz, hívja a`UpdateSmartArtDrawing` módszer a Smart Art rajz frissítéséhez.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

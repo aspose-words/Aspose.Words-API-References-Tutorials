@@ -16,7 +16,7 @@ As listas vêm em dois tipos principais: com marcadores e numeradas. Eles permit
 
 ## Configurando o Ambiente
 
- Antes de nos aprofundarmos na criação e gerenciamento de listas, certifique-se de ter a biblioteca Aspose.Words para Python instalada. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/) . Além disso, consulte a documentação da API em[esse link](https://reference.aspose.com/words/python-net/) para obter informações detalhadas.
+Antes de nos aprofundarmos na criação e gerenciamento de listas, certifique-se de ter a biblioteca Aspose.Words para Python instalada. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/) . Além disso, consulte a documentação da API em[esse link](https://reference.aspose.com/words/python-net/) para obter informações detalhadas.
 
 ## Criando listas com marcadores
 

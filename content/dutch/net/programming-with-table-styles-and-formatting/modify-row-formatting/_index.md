@@ -11,7 +11,7 @@ url: /nl/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 In deze zelfstudie leiden we u stapsgewijs door het proces om de opmaak van een tabelrij te wijzigen met Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze tutorial weet u hoe u de randen, hoogte en regeleinde van een tabelrij in uw Word-documenten kunt wijzigen met Aspose.Words voor .NET.
 
 ## Stap 1: Definieer de documentmap
-Eerst moet u het pad naar uw documentenmap instellen. Dit is waar uw Word-document zich bevindt. Vervang "UW DOCUMENTENMAP" door het juiste pad.
+Eerst moet u het pad naar uw documentenmap instellen. Dit is waar uw Word-document zich bevindt. Vervang "UW DOCUMENTENDIRECTORY" door het juiste pad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

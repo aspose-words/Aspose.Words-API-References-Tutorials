@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Stap 3: Een vorm invoegen en configureren
-Voeg een vorm in het document in met behulp van de`InsertShape` werkwijze van de`DocumentBuilder` voorwerp. Stel de gewenste afmetingen voor de vorm in.
+ Voeg een vorm in het document in met behulp van de`InsertShape` werkwijze van de`DocumentBuilder` voorwerp. Stel de gewenste afmetingen voor de vorm in.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## Stap 6: Sla het document op
- Sla het document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithShapes.VerticalAnchor.docx".
+ Sla het document op in de opgegeven map met behulp van de`Save`methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithShapes.VerticalAnchor.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

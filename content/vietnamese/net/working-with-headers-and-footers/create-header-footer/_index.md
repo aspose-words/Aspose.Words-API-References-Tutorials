@@ -2,157 +2,68 @@
 title: Tạo đầu trang chân trang
 linktitle: Tạo đầu trang chân trang
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tạo đầu trang và chân trang trong tài liệu Word của bạn bằng Aspose.Words cho .NET. Tùy chỉnh đầu trang và chân trang cho mỗi trang.
+description: Tìm hiểu cách thêm và tùy chỉnh đầu trang và chân trang trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước này đảm bảo định dạng tài liệu chuyên nghiệp.
 type: docs
 weight: 10
 url: /vi/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-Dưới đây là hướng dẫn từng bước để giải thích mã nguồn C# sau đây nhằm tạo đầu trang và chân trang bằng chức năng Aspose.Words for .NET. Đảm bảo bạn đã đưa thư viện Aspose.Words vào dự án của mình trước khi sử dụng mã này.
+Việc thêm đầu trang và chân trang vào tài liệu của bạn có thể nâng cao tính chuyên nghiệp và khả năng đọc của chúng. Với Aspose.Words for .NET, bạn có thể dễ dàng tạo và tùy chỉnh đầu trang và chân trang cho tài liệu Word của mình. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn từng bước trong quy trình, đảm bảo bạn có thể triển khai các tính năng này một cách liền mạch.
 
-## Bước 1: Đặt đường dẫn thư mục tài liệu
+## Điều kiện tiên quyết
+
+Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
+
+-  Aspose.Words for .NET: Tải xuống và cài đặt từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Chẳng hạn như Visual Studio, để viết và chạy mã của bạn.
+- Kiến thức cơ bản về C#: Hiểu biết về C# và .NET framework.
+- Tài liệu mẫu: Một tài liệu mẫu để áp dụng đầu trang và chân trang hoặc tạo một tài liệu mới như được hiển thị trong hướng dẫn.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các không gian tên cần thiết để truy cập các lớp và phương thức Aspose.Words.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System;
+```
+
+## Bước 1: Xác định thư mục tài liệu
+
+Xác định thư mục nơi tài liệu của bạn sẽ được lưu. Điều này giúp quản lý đường dẫn một cách hiệu quả.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-Đảm bảo chỉ định đường dẫn chính xác tới thư mục tài liệu của bạn nơi tài liệu đã chỉnh sửa sẽ được lưu.
+## Bước 2: Tạo một tài liệu mới
 
-## Bước 2: Tạo tài liệu và trình tạo tài liệu
+ Tạo một tài liệu mới và một`DocumentBuilder` để thuận tiện cho việc bổ sung nội dung.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ở đây chúng ta tạo một thể hiện của`Document` lớp và một thể hiện của`DocumentBuilder` class sẽ cho phép chúng ta thao tác với tài liệu và thêm các phần tử.
+## Bước 3: Định cấu hình thiết lập trang
 
-## Bước 3: Đặt thông số trang và tiêu đề đầu tiên
+Thiết lập cài đặt trang, bao gồm cả việc trang đầu tiên có đầu trang/chân trang khác hay không.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// Chỉ định xem chúng ta có muốn đầu trang/chân trang của trang đầu tiên khác với các trang khác hay không.
-// Bạn cũng có thể sử dụng thuộc tính PageSetup.OddAndEvenPagesHeaderFooter để chỉ định
-// đầu trang/chân trang khác nhau cho các trang chẵn và lẻ.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
-
-builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-
-builder.Font.Name = "Arial";
-builder.Font.Bold = true;
-builder.Font.Size = 14;
-
-builder.Write("Aspose.Words - Creating Headers/Footers - Title Page.");
-
-pageSetup.HeaderDistance = 20;
-builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-Chúng tôi đặt các tham số trang, bao gồm khoảng cách tiêu đề, sau đó chuyển đến tiêu đề chính (`HeaderPrimary`). Chúng tôi sử dụng trình tạo tài liệu để thêm văn bản và định dạng tiêu đề.
+## Bước 4: Thêm tiêu đề vào trang đầu tiên
 
-## Bước 4: Chèn hình ảnh và văn bản vào tiêu đề chính
-
-```csharp
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-     RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
-
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.Write("Aspose.Words - Building headers/footers.");
-
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
-```
-
-Chúng tôi sử dụng trình tạo tài liệu để chèn hình ảnh vào góc trên bên trái của tiêu đề chính, sau đó chúng tôi thêm một số văn bản căn phải.
-
-## Bước 5: Chèn bảng vào footer chính
+Di chuyển đến phần tiêu đề cho trang đầu tiên và định cấu hình văn bản tiêu đề.
 
 ```csharp
-builder.StartTable();
-
-builder.CellFormat.ClearFormatting();
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-
-builder.Write("Page ");
-builder.InsertField("PAGE", "");
-builder.Write(" of ");
-builder.InsertField("NUMPAGES", "");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
-builder.InsertCell();
-
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
-builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
-builder.EndRow();
-builder.EndTable();
-
-builder.MoveToDocumentEnd();
-```
-
-## Bước 6: Thêm trang mới và đặt đầu trang/chân trang
-
-```csharp
-builder. InsertBreak(BreakType.PageBreak);
-builder.InsertBreak(BreakType.SectionBreakNewPage);
-
-currentSection = builder. CurrentSection;
-pageSetup = currentSection.PageSetup;
-pageSetup.Orientation = Orientation.Landscape;
-// Phần này không cần đầu trang/chân trang khác cho trang đầu tiên, chúng ta chỉ cần một trang tiêu đề trong tài liệu,
-//và đầu trang/chân trang cho trang này đã được xác định ở phần trước.
-pageSetup.DifferentFirstPageHeaderFooter = false;
-
-// Phần này mặc định hiển thị đầu trang/chân trang của phần trước, gọi currentSection.HeadersFooters.LinkToPrevious(false) để ngắt liên kết này,
-// chiều rộng trang khác nhau đối với phần mới, vì vậy chúng ta cần đặt độ rộng ô khác nhau cho bảng chân trang.
-currentSection.HeadersFooters.LinkToPrevious(false);
-
-// Nếu chúng tôi muốn sử dụng đầu trang/chân trang đã có sẵn cho phần này,
-//nhưng với một vài thay đổi nhỏ, việc sao chép đầu trang/chân trang có thể hợp lý
-// từ phần trước và áp dụng những thay đổi cần thiết ở nơi chúng tôi muốn.
-CopyHeadersFootersFromPreviousSection(currentSection);
-
-HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
-Row row = primaryFooter.Tables[0].FirstRow;
-row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
-
-// Lưu tài liệu
-doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
-```
-
- Chúng tôi thêm ngắt trang và ngắt phần để tạo một trang mới nơi hiển thị đầu trang/chân trang chính. Chúng tôi đặt tham số cho phần mới, sau đó chúng tôi sử dụng`CopyHeadersFootersFromPreviousSection` phương pháp sao chép đầu trang/chân trang từ phần trước. Cuối cùng, chúng ta đặt độ rộng ô thích hợp cho bảng chân trang chính và lưu tài liệu.
-
-### Mã nguồn ví dụ để tạo đầu trang và chân trang với Aspose.Words cho .NET
-
-```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-Section currentSection = builder.CurrentSection;
-PageSetup pageSetup = currentSection.PageSetup;
-// Chỉ định xem chúng tôi có muốn đầu trang/chân trang của trang đầu tiên khác với các trang khác hay không.
-// Bạn cũng có thể sử dụng thuộc tính PageSetup.OddAndEvenPagesHeaderFooter để chỉ định
-// đầu trang/chân trang khác nhau cho các trang chẵn và lẻ.
-pageSetup.DifferentFirstPageHeaderFooter = true;
-pageSetup.HeaderDistance = 20;
-
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
@@ -161,75 +72,70 @@ builder.Font.Bold = true;
 builder.Font.Size = 14;
 
 builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+```
 
-pageSetup.HeaderDistance = 20;
+## Bước 5: Thêm tiêu đề chính
+
+Di chuyển đến phần tiêu đề chính và chèn hình ảnh và văn bản.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-// Chèn hình ảnh được định vị vào góc trên/trái của tiêu đề.
-// Khoảng cách từ cạnh trên/trái của trang được đặt thành 10 điểm.
-builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+// Chèn hình ảnh vào tiêu đề
+builder.InsertImage(dataDir + "Graphics Interchange Format.gif", 
+    RelativeHorizontalPosition.Page, 10, RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-
 builder.Write("Aspose.Words Header/Footer Creation Primer.");
+```
 
+## Bước 6: Thêm chân trang chính
+
+Di chuyển đến phần chân trang chính và tạo bảng để định dạng nội dung chân trang.
+
+```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// Chúng ta sử dụng bảng có hai ô để tạo thành một phần văn bản trên dòng (có đánh số trang).
-// Để được căn trái và phần còn lại của văn bản (có bản quyền) được căn phải.
 builder.StartTable();
-
 builder.CellFormat.ClearFormatting();
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-// Nó sử dụng các trường TRANG và SỐ để tự động tính toán số trang hiện tại và nhiều trang.
+// Thêm đánh số trang
 builder.Write("Page ");
 builder.InsertField("PAGE", "");
 builder.Write(" of ");
 builder.InsertField("NUMPAGES", "");
 
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
-
 builder.InsertCell();
-
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
 builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
-
 builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
 builder.EndRow();
 builder.EndTable();
+```
 
+## Bước 7: Thêm nội dung và ngắt trang
+
+Di chuyển đến cuối tài liệu, thêm ngắt trang và tạo phần mới với các cài đặt trang khác nhau.
+
+```csharp
 builder.MoveToDocumentEnd();
-
-// Thực hiện ngắt trang để tạo trang thứ hai trên đó sẽ nhìn thấy đầu trang/chân trang chính.
 builder.InsertBreak(BreakType.PageBreak);
 builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-// Phần này không cần đầu trang/chân trang khác của trang đầu tiên, chúng tôi chỉ cần một trang tiêu đề trong tài liệu,
-//và đầu trang/chân trang cho trang này đã được xác định ở phần trước.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// Phần này hiển thị đầu trang/chân trang từ phần trước
-// theo mặc định, hãy gọi currentSection.HeadersFooters.LinkToPrevious(false) để hủy độ rộng trang này
-// khác với phần mới và do đó chúng ta cần đặt độ rộng ô khác nhau cho bảng chân trang.
 currentSection.HeadersFooters.LinkToPrevious(false);
-
-// Nếu chúng ta muốn sử dụng bộ đầu trang/chân trang đã có sẵn cho phần này.
-// Nhưng với một số sửa đổi nhỏ, việc sao chép đầu trang/chân trang có thể sẽ hữu ích hơn
-// từ phần trước và áp dụng các sửa đổi cần thiết ở nơi chúng tôi muốn.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
-
 Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
@@ -237,24 +143,47 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
-### Câu hỏi thường gặp
+## Bước 8: Sao chép Đầu trang và Chân trang từ Phần trước
 
-#### Câu hỏi: Làm cách nào tôi có thể thêm tiêu đề vào tài liệu của mình trong Aspose.Words?
+Nếu bạn muốn sử dụng lại đầu trang và chân trang từ phần trước, hãy sao chép chúng và áp dụng các sửa đổi cần thiết.
 
- Đáp: Để thêm tiêu đề vào tài liệu của bạn trong Aspose.Words, bạn có thể sử dụng`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` phương pháp. Phương pháp này thêm tiêu đề chính vào phần đầu tiên của tài liệu của bạn.
+```csharp
+private static void CopyHeadersFootersFromPreviousSection(Section section)
+{
+    Section previousSection = (Section)section.PreviousSibling;
+    if (previousSection == null) return;
 
-#### Câu hỏi: Làm cách nào tôi có thể thêm chân trang vào tài liệu của mình trong Aspose.Words?
+    section.HeadersFooters.Clear();
 
- Trả lời: Để thêm chân trang vào tài liệu của bạn trong Aspose.Words, bạn có thể sử dụng`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)`phương pháp. Phương pháp này thêm chân trang chính vào phần đầu tiên của tài liệu của bạn.
+    foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
+    {
+        section.HeadersFooters.Add(headerFooter.Clone(true));
+    }
+}
+```
 
-#### Câu hỏi: Làm cách nào tôi có thể thêm văn bản vào đầu trang hoặc chân trang của mình trong Aspose.Words?
+## Phần kết luận
 
- Trả lời: Để thêm văn bản vào đầu trang hoặc chân trang trong Aspose.Words, bạn có thể sử dụng`HeaderFooter.Paragraphs` để lấy bộ sưu tập đoạn văn của đầu trang hoặc chân trang, sau đó thêm đoạn chứa văn bản của bạn vào bộ sưu tập này bằng cách sử dụng thuộc tính`ParagraphCollection.Add` phương pháp.
+Bằng cách làm theo các bước này, bạn có thể thêm và tùy chỉnh đầu trang và chân trang trong tài liệu Word một cách hiệu quả bằng cách sử dụng Aspose.Words for .NET. Điều này nâng cao hình thức và tính chuyên nghiệp của tài liệu của bạn, làm cho nó dễ đọc và hấp dẫn hơn.
 
-#### Câu hỏi: Tôi có thể tùy chỉnh nội dung đầu trang hoặc chân trang bằng hình ảnh và số trang trong Aspose.Words không?
+## Câu hỏi thường gặp
 
- Trả lời: Có, bạn có thể tùy chỉnh nội dung đầu trang hoặc chân trang bằng hình ảnh và số trang trong Aspose.Words. Bạn có thể sử dụng các đối tượng như`Shape` để thêm hình ảnh và các đối tượng như`Field` để thêm số trang vào đầu trang hoặc chân trang của bạn.
+### Câu hỏi 1: Aspose.Words dành cho .NET là gì?
 
-#### Câu hỏi: Tôi có thể thay đổi phông chữ, kích thước và màu sắc của văn bản trong đầu trang hoặc chân trang trong Aspose.Words không?
+Aspose.Words for .NET là thư viện cho phép các nhà phát triển tạo, chỉnh sửa và chuyển đổi tài liệu Word theo chương trình trong các ứng dụng .NET.
 
- Trả lời: Có, bạn có thể thay đổi phông chữ, kích thước và màu sắc của văn bản trong đầu trang hoặc chân trang trong Aspose.Words. Bạn có thể truy cập các thuộc tính định dạng văn bản như`Font` để thay đổi phông chữ,`Size` để điều chỉnh kích thước và`Color`để đặt màu văn bản.
+### Q2: Tôi có thể thêm hình ảnh vào đầu trang hoặc chân trang không?
+
+ Có, bạn có thể dễ dàng thêm hình ảnh vào đầu trang hoặc chân trang bằng cách sử dụng`DocumentBuilder.InsertImage` phương pháp.
+
+### Câu hỏi 3: Làm cách nào để đặt đầu trang và chân trang khác nhau cho trang đầu tiên?
+
+ Bạn có thể đặt đầu trang và chân trang khác nhau cho trang đầu tiên bằng cách sử dụng`DifferentFirstPageHeaderFooter` tài sản của`PageSetup` lớp học.
+
+### Câu hỏi 4: Tôi có thể tìm thêm tài liệu về Aspose.Words ở đâu?
+
+ Bạn có thể tìm thấy tài liệu đầy đủ về[Trang tài liệu API Aspose.Words](https://reference.aspose.com/words/net/).
+
+### Câu hỏi 5: Aspose.Words có hỗ trợ không?
+
+ Có, Aspose cung cấp hỗ trợ thông qua[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8).

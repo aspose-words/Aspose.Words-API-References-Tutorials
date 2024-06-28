@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Stap 5: Het geneste veld invoegen
 
- Wij gebruiken de DocumentBuilder`InsertField()`methode om een genest veld in de voettekst in te voegen.
+ Wij gebruiken de DocumentBuilder`InsertField()` methode om een genest veld in de voettekst in te voegen.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");

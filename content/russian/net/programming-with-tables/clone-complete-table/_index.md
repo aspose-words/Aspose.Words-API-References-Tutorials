@@ -65,10 +65,10 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//Клонируйте таблицу и вставьте ее в документ после оригинала.
+	// Клонируйте таблицу и вставьте ее в документ после оригинала.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Вставьте пустой абзац между двумя таблицами,
+	//Вставьте пустой абзац между двумя таблицами,
 	// или же они будут объединены в один при сохранении, это связано с проверкой документа.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

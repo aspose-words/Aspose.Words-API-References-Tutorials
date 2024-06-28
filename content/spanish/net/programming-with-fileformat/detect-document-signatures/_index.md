@@ -72,7 +72,7 @@ Este tutorial le proporciona una guía paso a paso sobre cómo detectar firmas d
 
 #### ¿Cómo especificar el directorio que contiene los documentos en los que buscar la firma digital?
 
- Para especificar el directorio que contiene los documentos en los que desea buscar la firma digital, debe modificar el`dataDir` variable en el código. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
+ Para especificar el directorio que contiene los documentos en los que desea buscar la firma digital, debe modificar el`dataDir` variables en el código. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -72,7 +72,7 @@ Si sigue estos pasos, podrá generar con éxito una tabla a partir de un DataTab
 
 ## Conclusión
 
-¡Felicidades! Ha aprendido con éxito cómo generar una tabla a partir de un DataTable usando Aspose.Words para Java. Esta guía paso a paso demostró el proceso de preparar una tabla de datos, crear y formatear una tabla en un documento de Word y guardar el resultado final. Aspose.Words para Java ofrece una API potente y flexible para el procesamiento de tablas, lo que facilita la gestión de datos tabulares y su incorporación a sus proyectos de procesamiento de textos.
+¡Felicidades! Ha aprendido con éxito cómo generar una tabla a partir de un DataTable usando Aspose.Words para Java. Esta guía paso a paso demostró el proceso de preparar un DataTable, crear y formatear una tabla en un documento de Word y guardar el resultado final. Aspose.Words para Java ofrece una API potente y flexible para el procesamiento de tablas, lo que facilita la gestión de datos tabulares y su incorporación a sus proyectos de procesamiento de textos.
 
 Al aprovechar las capacidades de Aspose.Words, puede manejar estructuras de tablas complejas, aplicar formatos personalizados e integrar tablas sin problemas en sus documentos. Ya sea que esté generando informes, facturas o cualquier otro documento que requiera representación tabular, Aspose.Words le permite lograr resultados profesionales con facilidad.
 

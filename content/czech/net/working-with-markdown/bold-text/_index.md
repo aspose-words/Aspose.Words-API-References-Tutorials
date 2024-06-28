@@ -53,11 +53,11 @@ gratuluji! Nyní jste se naučili, jak zvýraznit tučný text pomocí Aspose.Wo
 
 #### Otázka: Jak mohu v Aspose.Words nastavit tučný text?
 
- A: Chcete-li, aby byl text v Aspose.Words tučný, můžete použít`Font.Bold` vlastnictvím`Run` objekt. Tuto vlastnost můžete nastavit na`true` na tučný konkrétní text. Můžete například použít`run.Font.Bold=true` zvýraznit text uvnitř`Run` objekt.
+ A: Chcete-li, aby byl text v Aspose.Words tučný, můžete použít`Font.Bold` vlastnictvím`Run`objekt. Tuto vlastnost můžete nastavit na`true` na tučný konkrétní text. Můžete například použít`run.Font.Bold=true` zvýraznit text uvnitř`Run` objekt.
 
 #### Otázka: Je možné zvýraznit několik částí textu ve stejném odstavci tučně?
 
-Odpověď: Ano, můžete použít tučné písmo více kusů textu v jednom odstavci pomocí více`Run` objektů. Můžete vytvořit více`Run` objekty a nastavte`Font.Bold`majetek do`true` pro každý objekt zvýraznit požadované části textu tučně. Poté je můžete přidat do odstavce pomocí`Paragraph.AppendChild(run)` metoda.
+ Odpověď: Ano, můžete použít tučné písmo více kusů textu v jednom odstavci pomocí více`Run` objektů. Můžete vytvořit více`Run` objekty a nastavte`Font.Bold`majetek do`true` pro každý objekt zvýraznit požadované části textu tučně. Poté je můžete přidat do odstavce pomocí`Paragraph.AppendChild(run)` metoda.
 
 #### Otázka: Mohu zvýraznit tučný text, který je v tabulce nebo buňce v Aspose.Words?
 

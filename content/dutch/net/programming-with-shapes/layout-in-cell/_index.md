@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Stap 3: Bouw de tafel
- Gebruik de`StartTable`, `EndTable`, `InsertCell` , En`Write` methoden van de`DocumentBuilder` object om een tafel te bouwen. Stel de gewenste rijhoogte en hoogteregel in met behulp van de`RowFormat` eigenschappen.
+ Gebruik de`StartTable`, `EndTable`, `InsertCell` , En`Write` methoden van de`DocumentBuilder`object om een tafel te bouwen. Stel de gewenste rijhoogte en hoogteregel in met behulp van de`RowFormat` eigenschappen.
 
 ```csharp
 builder.StartTable();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Stap 6: Plaats de vorm in het document
-Voeg de watermerkvorm in het document in met behulp van de`InsertNode` werkwijze van de`DocumentBuilder` voorwerp. Positioneer de vorm met behulp van de`MoveTo` methode om deze na de laatste run in het document te plaatsen.
+ Voeg de watermerkvorm in het document in met behulp van de`InsertNode` werkwijze van de`DocumentBuilder` voorwerp. Positioneer de vorm met behulp van de`MoveTo` methode om deze na de laatste run in het document te plaatsen.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

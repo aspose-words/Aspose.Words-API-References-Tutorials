@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInforma
 
  Nahradit`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou k adresáři, kde je umístěn váš dokument.
 
-## Krok 3: Vymažte osobní údaje
+## Krok 3: Smažte osobní údaje
 
  Nyní umožníme odstranění osobních údajů nastavením`RemovePersonalInformation`majetek do`true`. Použijte následující kód:
 

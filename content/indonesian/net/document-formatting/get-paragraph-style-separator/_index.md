@@ -71,7 +71,7 @@ J: Tidak, Aspose.Words untuk .NET bukan satu-satunya solusi yang tersedia untuk 
 
 #### Q: Bisakah saya menggunakan fitur "Get Paragraph Style Separator" dengan bahasa pemrograman lain?
 
-A: Ya, Anda dapat menggunakan fitur "Get Paragraph Style Separator" dengan bahasa pemrograman lain yang didukung oleh Aspose.Words, seperti Java, Python, atau C++. Aspose.Words menawarkan serangkaian API dan perpustakaan khusus bahasa untuk memfasilitasi pemrosesan dokumen di berbagai platform.
+A: Ya, Anda dapat menggunakan fitur "Get Paragraph Style Separator" dengan bahasa pemrograman lain yang didukung Aspose.Words, seperti Java, Python, atau C.++. Aspose.Words menawarkan serangkaian API dan perpustakaan khusus bahasa untuk memfasilitasi pemrosesan dokumen di berbagai platform.
 
 #### T: Bagaimana cara mengakses dokumentasi Aspose.Words untuk .NET?
 

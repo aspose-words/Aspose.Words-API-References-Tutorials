@@ -63,7 +63,7 @@ Odp.: Aby sklonować dokument programu Word przy użyciu Aspose.Words dla .NET, 
 
 #### P: Czy mogę modyfikować sklonowany dokument bez wpływu na oryginał?
 
-O: Tak, sklonowany dokument jest instancją odrębną od oryginału i modyfikacje dokonane w sklonowanym dokumencie nie będą miały wpływu na oryginalny dokument. Pozwala to na bezpieczne manipulowanie sklonowanym dokumentem bez zmiany dokumentu źródłowego.
+O: Tak, sklonowany dokument jest instancją odrębną od oryginału, a modyfikacje dokonane w sklonowanym dokumencie nie będą miały wpływu na oryginalny dokument. Pozwala to na bezpieczne manipulowanie sklonowanym dokumentem bez zmiany dokumentu źródłowego.
 
 #### P: Czy można sklonować wiele dokumentów i połączyć je w jeden dokument?
 

@@ -17,4 +17,4 @@ url: /th/net/programming-with-pdfloadoptions/
 | ชื่อ | คำอธิบาย |
 | --- | --- |
 | [โหลด PDF ที่เข้ารหัส](./load-encrypted-pdf/) | คำแนะนำทีละขั้นตอนในการโหลด PDF ที่เข้ารหัสโดยใช้ Aspose.Words สำหรับ .NET |
-| [โหลดหน้าช่วงของ Pdf](./load-page-range-of-pdf/) | คำแนะนำทีละขั้นตอนในการโหลดช่วงหน้า PDF เฉพาะด้วย Aspose.Words สำหรับ .NET |
+| [โหลดช่วงหน้าของ PDF](./load-page-range-of-pdf/) | คำแนะนำทีละขั้นตอนในการโหลดช่วงหน้า PDF เฉพาะด้วย Aspose.Words สำหรับ .NET |

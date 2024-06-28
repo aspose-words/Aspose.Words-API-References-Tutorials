@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", save
 
 ### 經常問的問題
 
-#### Q：有什麼選項可以不在 PDF 檔案中嵌入基本字體？為什麼它很重要？
+#### Q：有什麼選項可以不在 PDF 檔案中嵌入基本字體？
 答：不在 PDF 文件中嵌入基本字體的選項控制在轉換 Word 文件時是否必須在 PDF 中嵌入 Arial、Times New Roman 等基本字體。透過避免包含 PDF 閱讀器系統上常用的字體，這對於減小 PDF 檔案的大小非常重要。它還可以幫助確保 PDF 文件在不同設備和平台上具有更好的兼容性和一致的外觀。
 
 #### Q：如何設定 Aspose.Words for .NET 不在 PDF 檔案中嵌入基本字體？

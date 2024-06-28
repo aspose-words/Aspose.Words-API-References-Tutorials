@@ -73,7 +73,7 @@ doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-### Przykładowy kod źródłowy dla opcji Ignoruj tekst w polach przy użyciu Aspose.Words dla .NET
+### Przykładowy kod źródłowy opcji Ignoruj tekst w polach przy użyciu Aspose.Words dla .NET
 
 Oto pełny przykładowy kod źródłowy demonstrujący użycie funkcji Ignore Text Inside Fields w Aspose.Words dla .NET:
 

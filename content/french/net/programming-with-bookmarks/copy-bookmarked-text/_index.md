@@ -2,7 +2,7 @@
 title: Copier le texte marqué dans un document Word
 linktitle: Copier le texte marqué dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment copier le texte d'un signet d'un document Word vers un autre document à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment copier le texte d'un signet d'un document Word vers un autre document à l'aide d'Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/copy-bookmarked-text/

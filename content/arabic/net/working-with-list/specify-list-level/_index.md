@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## الخطوة 6: إيقاف قائمة التنسيق
 
- لإيقاف تنسيق القائمة، قم بتعيين`null` إلى`List` خاصية مولد الوثيقة:
+ لإيقاف تنسيق القائمة، قم بتعيين`null` إلى`List`خاصية مولد الوثيقة:
 
 ```csharp
 builder. ListFormat. List = null;
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة مرقمة بناءً على أحد قوالب قوائم Microsoft Word
+// قم بإنشاء قائمة مرقمة بناءً على أحد قوالب قوائم Microsoft Word.
 //وتطبيقه على الفقرة الحالية لمنشئ المستندات.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// قم بإنشاء قائمة ذات تعداد نقطي استناداً إلى أحد قوالب قوائم Microsoft Word
+// قم بإنشاء قائمة ذات تعداد نقطي استناداً إلى أحد قوالب قوائم Microsoft Word.
 //وتطبيقه على الفقرة الحالية لمنشئ المستندات.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### س: هل يمكنني إضافة مستويات إضافية إلى قائمة مرقمة في Aspose.Words؟
 
- ج: نعم، من الممكن إضافة مستويات إضافية إلى القائمة المرقمة في Aspose.Words. ال`ListLevel` يسمح لك class بتعيين خصائص التنسيق لكل مستوى من القائمة. يمكنك تعيين خيارات مثل البادئة، واللاحقة، والمحاذاة، والمسافة البادئة، وما إلى ذلك. ويتيح لك ذلك إنشاء قوائم ذات مستويات متعددة من التسلسل الهرمي.
+ ج: نعم، من الممكن إضافة مستويات إضافية إلى القائمة المرقمة في Aspose.Words. ال`ListLevel`يسمح لك class بتعيين خصائص التنسيق لكل مستوى من القائمة. يمكنك تعيين خيارات مثل البادئة، واللاحقة، والمحاذاة، والمسافة البادئة، وما إلى ذلك. ويتيح لك ذلك إنشاء قوائم ذات مستويات متعددة من التسلسل الهرمي.
 
 

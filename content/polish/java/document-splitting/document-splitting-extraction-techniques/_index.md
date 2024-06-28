@@ -77,7 +77,7 @@ Aby wyodrębnić obrazy z dokumentu programu Word, możesz użyć następująceg
 // Załaduj dokument źródłowy
 Document doc = new Document("input.docx");
 
-// Utwórz ekstraktor obrazów
+// Utwórz ekstraktor obrazu
 ImageExtractor extractor = new ImageExtractor(doc);
 
 // Wyodrębnij obrazy z dokumentu

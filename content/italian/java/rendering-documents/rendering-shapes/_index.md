@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 Congratulazioni! Hai imparato con successo come eseguire il rendering delle forme in Aspose.Words per Java. Questa funzionalità apre un mondo di possibilità quando si lavora con documenti Word a livello di codice.
 
-## 9. Domande frequenti
+## 9.Domande frequenti
 
 ### Q1: Posso eseguire il rendering di più forme in un singolo documento?
 

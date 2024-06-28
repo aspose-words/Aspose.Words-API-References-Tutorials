@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Passo 3: Inserimento del campo avanzato
+## Passo 3: Inserimento dei campi avanzati
 
  Noi usiamo il`AppendField()` metodo per inserire un campo avanzato nel paragrafo.
 

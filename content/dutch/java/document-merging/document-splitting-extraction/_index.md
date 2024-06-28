@@ -110,4 +110,4 @@ Ja, Aspose.Words voor Java kan tekst uit gescande documenten extraheren met OCR-
 
 ### Waar kan ik toegang krijgen tot de documentatie voor Aspose.Words voor Java?
 
- U kunt de documentatie voor Aspose.Words voor Java vinden[hier](https://reference.aspose.com/words/java/).
+ U kunt de documentatie voor Aspose.Words voor Java vinden.[hier](https://reference.aspose.com/words/java/).

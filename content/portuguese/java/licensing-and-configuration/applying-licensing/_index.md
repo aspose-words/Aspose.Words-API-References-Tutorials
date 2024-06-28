@@ -40,7 +40,7 @@ try {
 
 ## 5. Lidando com exceções de licenciamento
 
-É importante lidar normalmente com as exceções de licenciamento. Se houver um problema com o arquivo de licença, você receberá uma exceção. Você pode personalizar o tratamento de erros de acordo com as necessidades do seu aplicativo.
+É importante lidar com exceções de licenciamento normalmente. Se houver um problema com o arquivo de licença, você receberá uma exceção. Você pode personalizar o tratamento de erros de acordo com as necessidades do seu aplicativo.
 
 ## 6. Testando seu aplicativo licenciado Aspose.Words
 

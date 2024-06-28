@@ -40,7 +40,7 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 
 ### Contoh kode sumber untuk Grup Pemutus Garis Tipografi Asia menggunakan Aspose.Words untuk .NET
 
-Berikut adalah kode sumber lengkap fitur Asian Typography Line Break Group dengan Aspose.Words for .NET:
+Berikut kode sumber lengkap fitur Asian Typography Line Break Group dengan Aspose.Words for .NET:
 
 ```csharp
 

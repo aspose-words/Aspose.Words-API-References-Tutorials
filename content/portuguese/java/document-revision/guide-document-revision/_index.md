@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### Rejeitando revisões:
+#### Rejeitando comentários:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");
@@ -151,7 +151,7 @@ As revisões de formatação incluem alterações relacionadas a estilos de font
 
 ### 4.3 Comentários e alterações monitoradas
 
-Os colaboradores costumam usar comentários para fornecer feedback e sugestões. As alterações rastreadas, por outro lado, mantêm um registro das modificações feitas no documento. Aspose.Words permite gerenciar comentários e controlar alterações programaticamente.
+Os colaboradores costumam usar comentários para fornecer feedback e sugestões. As alterações rastreadas, por outro lado, mantêm um registro das modificações feitas no documento. Aspose.Words permite que você gerencie comentários e controle alterações programaticamente.
 
 ### 4.4 Tratamento Avançado de Revisão
 

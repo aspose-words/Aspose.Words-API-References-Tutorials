@@ -2,110 +2,113 @@
 title: Hợp nhất tài liệu Word
 linktitle: Hợp nhất tài liệu
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách hợp nhất nhiều tài liệu Word bằng Aspose.Words cho .NET. API mạnh mẽ này đơn giản hóa quá trình hợp nhất các tài liệu, làm cho nó hiệu quả và đơn giản.
+description: Tìm hiểu cách hợp nhất các tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. Hoàn hảo để tự động hóa quy trình làm việc tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/split-document/merge-documents/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách hợp nhất nhiều tài liệu Word bằng tính năng Hợp nhất Tài liệu của Aspose.Words cho .NET. Thực hiện theo các bước bên dưới để hiểu mã nguồn và nhận tài liệu được hợp nhất chứa tất cả tài liệu nguồn.
+Này! Bạn có bao giờ thấy mình cần hợp nhất nhiều tài liệu Word thành một tệp gắn kết không? Cho dù bạn đang biên soạn báo cáo, tập hợp một dự án hay chỉ cố gắng dọn dẹp, việc hợp nhất các tài liệu có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức. Với Aspose.Words for .NET, quá trình này trở nên dễ dàng. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn cách hợp nhất các tài liệu Word bằng Aspose.Words cho .NET, chia nhỏ từng bước để bạn có thể dễ dàng thực hiện. Cuối cùng, bạn sẽ hợp nhất được các tài liệu như một người chuyên nghiệp!
 
-## Bước 1: Tìm kiếm tài liệu cần ghép
+## Điều kiện tiên quyết
 
-Trước khi hợp nhất các tài liệu, chúng ta cần xác định vị trí các tài liệu nguồn cần hợp nhất. Đây là cách thực hiện:
+Trước khi chúng ta đi sâu vào, hãy đảm bảo bạn có mọi thứ bạn cần:
+
+1. Kiến thức cơ bản về C#: Bạn nên thành thạo với cú pháp và khái niệm C#.
+2.  Aspose.Words cho .NET: Tải xuống[đây](https://releases.aspose.com/words/net/) . Nếu bạn chỉ đang khám phá, bạn có thể bắt đầu với[dùng thử miễn phí](https://releases.aspose.com/).
+3. Visual Studio: Mọi phiên bản gần đây đều hoạt động nhưng nên sử dụng phiên bản mới nhất.
+4. .NET Framework: Đảm bảo nó được cài đặt trên hệ thống của bạn.
+
+Được rồi, bây giờ chúng ta đã sắp xếp các điều kiện tiên quyết, hãy chuyển sang phần thú vị!
+
+## Nhập không gian tên
+
+Trước tiên, chúng ta cần nhập các không gian tên cần thiết để hoạt động với Aspose.Words. Điều này cho phép chúng ta truy cập vào tất cả các lớp và phương thức mà chúng ta cần.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// Tìm kiếm tài liệu để hợp nhất.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-.GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.LowCode;
 ```
 
-## Bước 2: Hợp nhất tài liệu
+Các không gian tên này rất cần thiết cho việc tạo, thao tác và lưu tài liệu ở các định dạng khác nhau.
 
-Bây giờ chúng ta sẽ hợp nhất từng tài liệu một để tạo thành tài liệu hợp nhất cuối cùng. Đây là cách thực hiện:
+## Bước 1: Thiết lập thư mục tài liệu
 
-```csharp
-// Mở phần đầu tiên của tài liệu kết quả.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// Tạo một tài liệu kết quả mới.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// Hợp nhất từng tài liệu một.
-foreach(FileSystemInfo documentPath in documentPaths)
-{
-if (documentPath.FullName == sourceDocumentPath)
-keep on going;
-
-mergedDocBuilder.MoveToDocumentEnd();
-mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-```
-
-### Mã nguồn mẫu cho Hợp nhất tài liệu bằng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh cho tính năng Hợp nhất Tài liệu của Aspose.Words cho .NET:
+Trước khi bắt đầu hợp nhất các tài liệu, chúng ta cần chỉ định thư mục lưu trữ tài liệu của chúng ta. Điều này giúp Aspose.Words xác định vị trí các tệp chúng tôi muốn hợp nhất.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Tìm tài liệu sử dụng để hợp nhất.
-FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-string sourceDocumentPath =
-	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
-
-// Mở phần đầu tiên của tài liệu kết quả.
-Document sourceDoc = new Document(sourceDocumentPath);
-
-// Tạo một tài liệu kết quả mới.
-Document mergedDoc = new Document();
-DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
-
-// Hợp nhất từng phần tài liệu một.
-foreach (FileSystemInfo documentPath in documentPaths)
-{
-	if (documentPath.FullName == sourceDocumentPath)
-		continue;
-
-	mergedDocBuilder.MoveToDocumentEnd();
-	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-	sourceDoc = new Document(documentPath.FullName);
-}
-
-mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
+
+ Ở đây, chúng tôi đặt đường dẫn đến thư mục chứa tài liệu Word của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế.
+
+## Bước 2: Hợp nhất đơn giản
+
+ Hãy bắt đầu với một sự hợp nhất đơn giản. Chúng ta sẽ hợp nhất hai tài liệu thành một bằng cách sử dụng`Merger.Merge` phương pháp.
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
+```
+
+ Ở bước này, chúng ta hợp nhất`Document1.docx` Và`Document2.docx` vào một tập tin mới gọi là`MergedDocument.docx`.
+
+## Bước 3: Hợp nhất với tùy chọn lưu
+
+Đôi khi, bạn có thể muốn đặt các tùy chọn cụ thể cho tài liệu đã hợp nhất, chẳng hạn như bảo vệ bằng mật khẩu. Đây là cách bạn có thể làm điều đó:
+
+```csharp
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" };
+Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
+```
+
+Đoạn mã này hợp nhất các tài liệu bằng mật khẩu bảo vệ, đảm bảo rằng tài liệu cuối cùng được an toàn.
+
+## Bước 4: Hợp nhất và lưu dưới dạng PDF
+
+Nếu bạn cần hợp nhất các tài liệu và lưu kết quả dưới dạng PDF, Aspose.Words sẽ giúp bạn thực hiện dễ dàng:
+
+```csharp
+Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
+```
+
+ Ở đây, chúng tôi hợp nhất`Document1.docx` Và`Document2.docx` và lưu kết quả dưới dạng tệp PDF.
+
+## Bước 5: Tạo một phiên bản tài liệu từ các tài liệu đã hợp nhất
+
+Đôi khi, bạn có thể muốn làm việc thêm với tài liệu đã hợp nhất trước khi lưu. Bạn có thể tạo một`Document` ví dụ từ các tài liệu được hợp nhất:
+
+```csharp
+Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
+doc.Save(dataDir + "MergedDocumentInstance.docx");
+```
+
+ Ở bước này, chúng ta tạo một`Document` instance từ các tài liệu đã hợp nhất, cho phép thao tác thêm trước khi lưu.
 
 ## Phần kết luận
 
-Chúc mừng! Bạn đã học cách hợp nhất nhiều tài liệu Word bằng tính năng Hợp nhất Tài liệu của Aspose.Words cho .NET. Bằng cách tuân theo mã nguồn được cung cấp, bạn có thể kết hợp các tài liệu riêng biệt thành một tài liệu được hợp nhất duy nhất trong khi vẫn giữ nguyên định dạng của từng tài liệu nguồn.
+ Và bạn có nó rồi đấy! Bạn đã học cách hợp nhất các tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này đề cập đến việc thiết lập môi trường của bạn, thực hiện các thao tác hợp nhất đơn giản, hợp nhất với các tùy chọn lưu, chuyển đổi các tài liệu đã hợp nhất thành PDF và tạo một phiên bản tài liệu từ các tài liệu đã hợp nhất. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
 
-Việc hợp nhất các tài liệu có thể hữu ích khi bạn muốn hợp nhất thông tin từ nhiều nguồn hoặc tạo một tài liệu hợp nhất từ các phần riêng lẻ. Aspose.Words for .NET cung cấp một API mạnh mẽ giúp đơn giản hóa quá trình hợp nhất các tài liệu, giúp quá trình này trở nên hiệu quả và đơn giản.
+## Câu hỏi thường gặp
 
-Vui lòng khám phá các tính năng khác do Aspose.Words for .NET cung cấp để nâng cao khả năng xử lý tài liệu và hợp lý hóa quy trình làm việc của bạn.
+### 1. Aspose.Words cho .NET là gì?
 
-### Câu hỏi thường gặp
+Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển tạo, thao tác và chuyển đổi tài liệu Word theo chương trình. Đó là lý tưởng để tự động hóa các tác vụ liên quan đến tài liệu.
 
-#### Làm cách nào để hợp nhất các tài liệu có định dạng khác nhau?
+### 2. Tôi có thể sử dụng Aspose.Words cho .NET miễn phí không?
 
- Khi hợp nhất các tài liệu, Aspose.Words for .NET cung cấp tùy chọn giữ nguyên định dạng của từng tài liệu nguồn. Bằng cách sử dụng`ImportFormatMode.KeepSourceFormatting` tùy chọn, tài liệu được hợp nhất sẽ giữ lại định dạng của tài liệu gốc. Nếu muốn áp dụng định dạng nhất quán trong toàn bộ tài liệu đã hợp nhất, bạn có thể sửa đổi định dạng bằng API Aspose.Words sau khi hợp nhất các tài liệu.
+ Bạn có thể thử Aspose.Words cho .NET bằng cách sử dụng[dùng thử miễn phí](https://releases.aspose.com/). Để sử dụng lâu dài, bạn sẽ cần phải mua giấy phép.
 
-#### Tôi có thể hợp nhất các tài liệu ở các định dạng khác nhau không?
+### 3. Làm cách nào để xử lý các định dạng khác nhau trong quá trình hợp nhất?
 
-Có, Aspose.Words for .NET hỗ trợ hợp nhất các tài liệu ở nhiều định dạng khác nhau, bao gồm DOCX, DOC, RTF, v.v. Bạn có thể tải các tài liệu có định dạng khác nhau vào API Aspose.Words và hợp nhất chúng thành một tài liệu duy nhất bất kể định dạng ban đầu của chúng là gì.
+ Aspose.Words cung cấp nhiều chế độ định dạng hợp nhất khác nhau như`KeepSourceFormatting` Và`MergeFormatting` . Tham khảo đến[Tài liệu API](https://reference.aspose.com/words/net/) để được hướng dẫn chi tiết.
 
-#### Tôi có thể hợp nhất các tài liệu có cấu trúc phức tạp như bảng và hình ảnh không?
+### 4. Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
 
-Tuyệt đối! Aspose.Words for .NET có khả năng hợp nhất các tài liệu có cấu trúc phức tạp, bao gồm bảng, hình ảnh, đầu trang, chân trang, v.v. API xử lý quá trình hợp nhất trong khi vẫn duy trì tính toàn vẹn và bố cục của nội dung trong mỗi tài liệu.
+Bạn có thể nhận được hỗ trợ bằng cách truy cập[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).
 
-#### Có thể hợp nhất các tài liệu có hướng hoặc kích thước trang khác nhau không?
+### 5. Tôi có thể hợp nhất các định dạng tệp khác với Aspose.Words cho .NET không?
 
-Có, Aspose.Words for .NET xử lý các tài liệu có hướng hoặc kích thước trang khác nhau trong quá trình hợp nhất. Tài liệu được hợp nhất thu được sẽ phù hợp với các hướng và kích thước trang khác nhau của tài liệu nguồn.
+Có, Aspose.Words hỗ trợ hợp nhất nhiều định dạng tệp khác nhau, bao gồm DOCX, PDF và HTML.

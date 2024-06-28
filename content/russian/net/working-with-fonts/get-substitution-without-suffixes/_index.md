@@ -2,86 +2,122 @@
 title: Получить замену без суффиксов
 linktitle: Получить замену без суффиксов
 second_title: API обработки документов Aspose.Words
-description: В этом руководстве вы узнаете, как получить переопределения без суффиксов в документе Word с помощью Aspose.Words для .NET.
+description: Узнайте, как управлять заменой шрифтов без суффиксов в Aspose.Words для .NET. Следуйте нашему пошаговому руководству, чтобы ваши документы всегда выглядели идеально.
 type: docs
 weight: 10
 url: /ru/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-В этом уроке мы покажем вам, как получить переопределения без суффиксов в документе Word, используя библиотеку Aspose.Words для .NET. Замены без суффиксов используются для решения проблем замены шрифтов при отображении или печати документов. Мы шаг за шагом проведем вас, чтобы помочь вам понять и реализовать код в вашем проекте .NET.
+Добро пожаловать в это подробное руководство по управлению заменой шрифтов с помощью Aspose.Words для .NET. Если вы когда-либо сталкивались с проблемой неправильного отображения шрифтов в ваших документах, вы попали по адресу. В этом руководстве вы шаг за шагом проведете процесс эффективной замены шрифтов без суффиксов. Давайте начнем!
 
 ## Предварительные условия
-Прежде чем начать, убедитесь, что у вас есть следующие предметы:
-- Практическое знание языка программирования C#.
-- Библиотека Aspose.Words для .NET, установленная в вашем проекте.
 
-## Шаг 1. Определите каталог документов.
- Во-первых, вам нужно установить путь к каталогу, соответствующий местоположению вашего документа Word. Заменять`"YOUR DOCUMENT DIRECTORY"` в коде с соответствующим путем.
+Прежде чем приступить к изучению руководства, убедитесь, что у вас есть следующее:
+
+- Базовые знания C#. Понимание программирования на C# облегчит выполнение и реализацию этих шагов.
+-  Библиотека Aspose.Words для .NET: загрузите и установите библиотеку из[ссылка для скачивания](https://releases.aspose.com/words/net/).
+- Среда разработки: настройте среду разработки, например Visual Studio, для написания и запуска кода.
+-  Образец документа: Образец документа (например,`Rendering.docx`), с которым можно работать в этом уроке.
+
+## Импортировать пространства имен
+
+Во-первых, нам нужно импортировать необходимые пространства имен для доступа к классам и методам, предоставляемым Aspose.Words.
 
 ```csharp
-// Путь к каталогу ваших документов
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
 ```
 
-## Шаг 2. Загрузите документ и настройте замены без суффиксов.
- Далее мы загрузим документ, используя`Document` класс и настройте замены без суффиксов, используя`DocumentSubstitutionWarnings` сорт. Мы также добавим источник шрифтов, указав папку, содержащую шрифты.
+## Шаг 1. Определите каталог документов
+
+Для начала укажите каталог, в котором находится ваш документ. Это помогает найти документ, над которым вы хотите работать.
 
 ```csharp
-// Загрузите документ и настройте замены без суффиксов.
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## Шаг 3. Сохраните документ.
-Наконец, мы сохраним документ с примененными переопределениями без суффиксов.
-
-```csharp
-// Сохраните документ
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### Пример исходного кода для получения замены без суффиксов с использованием Aspose.Words для .NET 
-```csharp
-
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## Шаг 2. Настройте обработчик предупреждения о подмене
+
+Далее нам нужно настроить обработчик предупреждений, который будет уведомлять нас всякий раз, когда во время обработки документа происходит подмена шрифта. Это имеет решающее значение для выявления и устранения любых проблем со шрифтами.
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## Шаг 3. Добавьте собственные источники шрифтов
+
+На этом этапе мы добавим собственные источники шрифтов, чтобы Aspose мог найти и использовать правильные шрифты. Это особенно полезно, если у вас есть определенные шрифты, хранящиеся в пользовательских каталогах.
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+В этом коде:
+-  Мы извлекаем текущие источники шрифтов и добавляем новые.`FolderFontSource` указывая на наш собственный каталог шрифтов (`C:\\MyFonts\\`).
+- Затем мы обновляем источники шрифтов этим новым списком.
+
+## Шаг 4. Сохраните документ
+
+Наконец, сохраните документ после применения настроек подстановки шрифтов. Для этого урока мы сохраним его в формате PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## Шаг 5. Создайте класс обработчика предупреждений
+
+Для эффективной обработки предупреждений создайте собственный класс, реализующий`IWarningCallback` интерфейс. Этот класс будет захватывать и регистрировать любые предупреждения о замене шрифта.
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+В этом классе:
+- `Warning` Метод фиксирует предупреждения, связанные с заменой шрифта.
+- `FontWarnings` Коллекция сохраняет эти предупреждения для дальнейшей проверки или регистрации.
+
 ## Заключение
-В этом уроке мы увидели, как получить переопределения без суффиксов в документе Word с помощью Aspose.Words для .NET. Замены без суффиксов полезны для решения проблем с заменой шрифтов. Не стесняйтесь использовать эту функцию, чтобы улучшить отображение и печать ваших документов.
 
-### Часто задаваемые вопросы
+Теперь вы освоили процесс замены шрифтов без суффиксов с помощью Aspose.Words для .NET. Эти знания гарантируют, что ваши документы сохранят свой предполагаемый вид независимо от шрифтов, доступных в системе. Продолжайте экспериментировать с различными настройками и источниками, чтобы полностью использовать возможности Aspose.Words.
 
-#### Вопрос: Почему Aspose.Words добавляет суффиксы к замене шрифтов?
+## Часто задаваемые вопросы
 
-О: Aspose.Words добавляет суффиксы к заменам шрифтов, чтобы избежать конфликтов между исходными и замененными шрифтами. Это помогает обеспечить максимальную совместимость при преобразовании и работе с документами.
+### Вопрос 1. Как использовать шрифты из нескольких пользовательских каталогов?
 
-#### Вопрос: Как я могу получить замены шрифтов без суффиксов в Aspose.Words?
+ Вы можете добавить несколько`FolderFontSource` экземпляры в`fontSources` список и соответствующим образом обновите источники шрифтов.
 
- О: Чтобы получить замены шрифтов без суффиксов в Aspose.Words, вы можете использовать команду`FontSubstitutionSettings` класс и`RemoveSuffixes` свойство. Установка этого свойства в`true` получит замены шрифтов без добавленных суффиксов.
+### Вопрос 2. Где я могу скачать бесплатную пробную версию Aspose.Words для .NET?
 
-#### Вопрос: Можно ли отключить добавление суффиксов к замене шрифтов в Aspose.Words?
+ Вы можете скачать бесплатную пробную версию на сайте[Страница бесплатной пробной версии Aspose](https://releases.aspose.com/).
 
-О: Нет, отключить добавление суффиксов к замене шрифтов в Aspose.Words невозможно. Суффиксы добавляются по умолчанию, чтобы обеспечить совместимость и согласованность документа.
+###  Вопрос 3. Могу ли я обрабатывать несколько типов предупреждений, используя`IWarningCallback`?
 
-#### Вопрос: Как я могу отфильтровать нежелательные суффиксы при замене шрифтов в Aspose.Words?
+ Да,`IWarningCallback` Интерфейс позволяет обрабатывать различные типы предупреждений, а не только подмену шрифта.
 
- О: Чтобы отфильтровать нежелательные суффиксы при замене шрифтов в Aspose.Words, вы можете использовать методы обработки строк, например, использование`Replace` или`Substring` методы удаления определенных суффиксов, которые вы не хотите включать.
+### Вопрос 4: Где я могу получить поддержку для Aspose.Words?
+
+ Для получения поддержки посетите[Форум поддержки Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### В5: Можно ли приобрести временную лицензию?
+
+ Да, вы можете получить временную лицензию от[страница временной лицензии](https://purchase.aspose.com/temporary-license/).

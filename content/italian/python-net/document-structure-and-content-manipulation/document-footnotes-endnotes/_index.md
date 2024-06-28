@@ -74,7 +74,7 @@ Puoi gestire le note a piè di pagina e le note di chiusura a livello di codice:
 - Mantieni le note a piè di pagina concise e pertinenti
 - Utilizza le note finali per spiegazioni più approfondite
 - Mantieni una formattazione coerente
-- Ricontrolla le citazioni per verificarne l'accuratezza
+- Ricontrolla le citazioni per verificarne l'accuratezza.
 
 ## Risoluzione dei problemi comuni
 

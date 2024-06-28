@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 步骤 3：配置计量单位
 
-现在我们将以不同的测量单位转换边距、页眉和页脚距离等值。使用以下代码指定特定测量单位的值：
+现在我们将转换不同测量单位的边距、页眉和页脚距离等值。使用以下代码指定特定测量单位的值：
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
-这段代码使用了`ConvertUtil`Aspose.Words 类将指定值转换为英寸 (`InchToPoint` ）。您还可以使用其他可用的转换方法`ConvertUtil`类将值转换为其他测量单位。
+这段代码使用了`ConvertUtil`Aspose.Words 类将指定值转换为英寸（`InchToPoint` ）。您还可以使用其他可用的转换方法`ConvertUtil`类将值转换为其他测量单位。
 
 ### 使用 Aspose.Words for .NET 在测量单位之间转换的示例源代码
 

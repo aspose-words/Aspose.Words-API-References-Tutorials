@@ -1,7 +1,7 @@
 ---
 title: Beherrschen Sie die Dokumentenintelligenz
 linktitle: Beherrschen Sie die Dokumentenintelligenz
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-Dokumentverwaltungs-API
 description: Master-Dokumentintelligenz mit Aspose.Words für Python. Automatisieren Sie Arbeitsabläufe, analysieren Sie Daten und verarbeiten Sie Dokumente effizient. Jetzt loslegen!
 type: docs
 weight: 10
@@ -10,7 +10,7 @@ url: /de/python-net/document-intelligence/master-document-intelligence/
 
 ## Document Intelligence verstehen
 
-Unter Document Intelligence versteht man den Prozess der automatischen Extraktion wertvoller Informationen aus Dokumenten wie Text, Metadaten, Tabellen und Diagrammen. Dabei werden unstrukturierte Daten in den Dokumenten analysiert und in strukturierte und nutzbare Formate umgewandelt. Mithilfe von Document Intelligence können Unternehmen ihre Dokumenten-Workflows optimieren, die datengesteuerte Entscheidungsfindung verbessern und die Gesamtproduktivität steigern.
+Unter Document Intelligence versteht man den Prozess der automatischen Extraktion wertvoller Informationen aus Dokumenten wie Text, Metadaten, Tabellen und Diagrammen. Dabei werden unstrukturierte Daten in den Dokumenten analysiert und in strukturierte und nutzbare Formate umgewandelt. Mit Document Intelligence können Unternehmen ihre Dokumenten-Workflows optimieren, die datengesteuerte Entscheidungsfindung verbessern und die Gesamtproduktivität steigern.
 
 ## Die Bedeutung von Document Intelligence in Python
 
@@ -140,7 +140,7 @@ doc.save("output.docx")
 
 ### NLP-Techniken zur Dokumentenanalyse
 
-Kombinieren Sie die Leistungsfähigkeit von NLP-Bibliotheken (Natural Language Processing) mit Aspose.Words, um eine detaillierte Dokumentanalyse, Stimmungsanalyse und Entitätserkennung durchzuführen.
+Kombinieren Sie die Leistungsfähigkeit von NLP-Bibliotheken (Natural Language Processing) mit Aspose.Words, um eine tiefgreifende Dokumentanalyse, Stimmungsanalyse und Entitätserkennung durchzuführen.
 
 ```python
 # Use a Python NLP library (e.g., spaCy) in combination with Aspose.Words for document analysis

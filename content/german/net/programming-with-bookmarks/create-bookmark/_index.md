@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Schritt 3: Verschachtelte Lesezeichen erstellen
 
-Wir können auch verschachtelte Lesezeichen innerhalb eines Hauptlesezeichens erstellen. Wir verwenden das Gleiche`StartBookmark` Und`EndBookmark` Methoden zum Erstellen und Beenden verschachtelter Lesezeichen:
+ Wir können auch verschachtelte Lesezeichen innerhalb eines Hauptlesezeichens erstellen. Wir verwenden das Gleiche`StartBookmark` Und`EndBookmark` Methoden zum Erstellen und Beenden verschachtelter Lesezeichen:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -159,7 +159,7 @@ doc.Save("path/to/your/output-pdf-file.pdf", options);
 
 #### F: Wie erstelle ich mit Aspose.Words für .NET verschachtelte Lesezeichen innerhalb eines Hauptlesezeichens?
 
- A: Um mit Aspose.Words für .NET verschachtelte Lesezeichen innerhalb eines Hauptlesezeichens zu erstellen, können Sie dasselbe verwenden`StartBookmark` Und`EndBookmark` Methoden zum Starten und Beenden verschachtelter Lesezeichen. Stellen Sie sicher, dass Sie beim Aufrufen das übergeordnete Lesezeichen als Parameter angeben`StartBookmark` Methode. Hier ist ein Beispielcode:
+ A: Um mit Aspose.Words für .NET verschachtelte Lesezeichen innerhalb eines Hauptlesezeichens zu erstellen, können Sie dasselbe verwenden`StartBookmark` Und`EndBookmark` Methoden zum Starten und Beenden verschachtelter Lesezeichen. Geben Sie beim Aufruf unbedingt das übergeordnete Lesezeichen als Parameter an`StartBookmark` Methode. Hier ist ein Beispielcode:
 
 ```csharp
 builder.StartBookmark("Main bookmark");

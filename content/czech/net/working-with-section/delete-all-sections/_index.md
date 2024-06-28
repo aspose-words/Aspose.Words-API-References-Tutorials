@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-section/delete-all-sections/
 ---
-V tomto tutoriálu vám řekneme, jak odstranit všechny sekce z dokumentu Word pomocí knihovny Aspose.Words pro .NET. Odstranění oddílů může být užitečné pro reorganizaci nebo zjednodušení dokumentu. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+tomto tutoriálu vám řekneme, jak odstranit všechny sekce z dokumentu Word pomocí knihovny Aspose.Words pro .NET. Odstranění oddílů může být užitečné pro reorganizaci nebo zjednodušení dokumentu. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
 
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující položky:
@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## Krok 3: Odstraňte všechny sekce
- K odstranění všech sekcí z dokumentu použijeme`Clear` metoda`Sections` sbírka listiny.
+ K odstranění všech sekcí z dokumentu použijeme`Clear` metoda`Sections` sbírka dokumentů.
 
 ```csharp
 doc.Sections.Clear();
@@ -53,7 +53,7 @@ doc.Sections.Clear();
 ```
 
 ## Závěr
-tomto tutoriálu jsme viděli, jak odstranit všechny sekce z dokumentu aplikace Word pomocí Aspose.Words for .NET. Odebráním sekcí můžete změnit uspořádání nebo zjednodušit strukturu dokumentu. Neváhejte a přizpůsobte si tuto funkci tak, aby vyhovovala vašim konkrétním potřebám.
+V tomto tutoriálu jsme viděli, jak odstranit všechny sekce z dokumentu aplikace Word pomocí Aspose.Words for .NET. Odebráním sekcí můžete změnit uspořádání nebo zjednodušit strukturu dokumentu. Neváhejte a přizpůsobte si tuto funkci tak, aby vyhovovala vašim konkrétním potřebám.
 
 ### FAQ
 
@@ -85,7 +85,7 @@ doc.AppendChild(new Section(doc));
 
 #### Otázka: Jak odstranit všechny sekce v Aspose.Words pro .NET?
 
- A: Chcete-li odstranit všechny sekce z dokumentu v Aspose.Words pro .NET, můžete použít`Clear` metoda`Sections` sbírka listiny:
+ A: Chcete-li odstranit všechny sekce z dokumentu v Aspose.Words pro .NET, můžete použít`Clear` metoda`Sections` sbírka listin:
 
 ```csharp
 doc.Sections.Clear();

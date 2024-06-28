@@ -46,11 +46,11 @@ ProtectionType protectionType = doc.ProtectionType;
 
  답:`ProtectionType` Aspose.Words for .NET의 속성은 Word 문서에 적용되는 보호 유형을 결정할 수 있는 기능입니다. 문서가 주석, 개정, 양식 또는 기타 유형의 제한 사항에 대해 보호되는지 여부와 같은 문서 보호 수준에 대한 정보를 제공합니다.
 
-#### Q: .NET용 Aspose.Words를 사용하여 문서의 보호 유형을 어떻게 검색할 수 있나요?
+#### Q: .NET용 Aspose.Words를 사용하여 문서의 보호 유형을 어떻게 검색할 수 있습니까?
 
 A: .NET용 Aspose.Words를 사용하여 문서의 보호 유형을 검색하려면 다음 단계를 따르세요.
 1.  다음을 사용하여 문서를 로드합니다.`Document` 수업.
-2.  액세스`ProtectionType` 의 재산`Document`보호 유형을 검색하는 개체입니다.
+2.  액세스`ProtectionType` 의 재산`Document` 보호 유형을 검색하는 개체입니다.
 
 #### Q: ProtectionType 속성을 사용하여 문서가 양식 또는 양식 필드에 대해 보호되는지 확인할 수 있습니까?
 

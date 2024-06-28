@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-In dit artikel zullen we de bovenstaande C#-broncode onderzoeken om te begrijpen hoe u de functie Tekst binnen velden negeren in de Aspose.Words voor .NET-bibliotheek kunt gebruiken. Deze functie is handig als we de tekst in de velden willen negeren bij het manipuleren van documenten.
+In dit artikel zullen we de bovenstaande C#-broncode verkennen om te begrijpen hoe u de functie Tekst binnen velden negeren in de Aspose.Words voor .NET-bibliotheek kunt gebruiken. Deze functie is handig als we de tekst in de velden willen negeren bij het manipuleren van documenten.
 
 ## Vereisten
 

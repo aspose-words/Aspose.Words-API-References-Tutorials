@@ -2,86 +2,122 @@
 title: 取得不含後綴的替換
 linktitle: 取得不含後綴的替換
 second_title: Aspose.Words 文件處理 API
-description: 在本教學中，了解如何使用 Aspose.Words for .NET 在 Word 文件中取得無後綴覆蓋。
+description: 了解如何在 Aspose.Words for .NET 中管理不含字尾的字體替換。請遵循我們的逐步指南，確保您的文件每次都看起來完美。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-在本教學中，我們將向您展示如何使用 .NET 的 Aspose.Words 函式庫在 Word 文件中取得不帶後綴的覆寫。無後綴替換用於解決顯示或列印文件時的字型替換問題。我們將逐步指導您瞭解並實作 .NET 專案中的程式碼。
+歡迎閱讀這份有關使用 Aspose.Words for .NET 管理字體替換的綜合指南。如果您曾經因文件中的字體無法正確顯示而苦惱過，那麼您來對地方了。本教學將引導您逐步完成有效處理無後綴的字體替換的過程。讓我們開始吧！
 
 ## 先決條件
-在開始之前，請確保您擁有以下物品：
-- C# 程式語言的應用知識
-- 專案中安裝的 .NET 的 Aspose.Words 函式庫
 
-## 步驟1：定義文檔目錄
-首先，您需要將目錄路徑設定為 Word 文件的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有適當路徑的程式碼中。
+在深入學習本教學之前，請確保您具備以下條件：
+
+- C# 基礎知識：了解 C# 程式設計將使您更容易遵循和實現這些步驟。
+-  Aspose.Words for .NET Library：從以下位置下載並安裝該程式庫：[下載連結](https://releases.aspose.com/words/net/).
+- 開發環境：設定 Visual Studio 等開發環境來編寫和執行程式碼。
+- 範例文件：範例文件（例如，`Rendering.docx`）在本教程中使用。
+
+## 導入命名空間
+
+首先，我們需要導入必要的命名空間來存取 Aspose.Words 提供的類別和方法。
 
 ```csharp
-//文檔目錄的路徑
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
+using Aspose.Words.WarningInfo;
+using System.Collections.Generic;
 ```
 
-## 步驟2：載入文件並配置不含後綴的替換
-接下來，我們將使用以下命令載入文檔`Document`類別並使用以下命令配置無後綴替換`DocumentSubstitutionWarnings`班級。我們還將透過指定包含字體的資料夾來新增字體來源。
+## 第 1 步：定義文檔目錄
+
+首先，指定文檔所在的目錄。這有助於找到您想要處理的文件。
 
 ```csharp
-//載入文件並配置不含後綴的替換
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-```
-
-## 步驟 3：儲存文檔
-最後，我們將儲存套用無後綴覆蓋的文件。
-
-```csharp
-//儲存文件
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-```
-
-### 使用 Aspose.Words for .NET 取得無後綴的替換的範例原始碼 
-```csharp
-
 //文檔目錄的路徑
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
-DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
-doc.WarningCallback = substitutionWarningHandler;
-List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource(FontsDir, true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
-doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
-
 ```
 
+## 第 2 步：設定替換警告處理程序
+
+接下來，我們需要設定一個警告處理程序，只要在文件處理過程中發生字體替換，它就會通知我們。這對於捕獲和處理任何字體問題至關重要。
+
+```csharp
+DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.WarningCallback = substitutionWarningHandler;
+```
+
+## 第 3 步：新增自訂字體來源
+
+在此步驟中，我們將新增自訂字體來源，以確保 Aspose.Words 可以找到並使用正確的字體。如果您在自訂目錄中儲存了特定字體，這尤其有用。
+
+```csharp
+List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
+
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+fontSources.Add(folderFontSource);
+
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
+```
+
+在此程式碼中：
+- 我們檢索目前的字體來源並新增新的`FolderFontSource`指向我們的自訂字體目錄（`C:\\MyFonts\\`）。
+- 然後，我們使用這個新清單更新字體來源。
+
+## 步驟 4：儲存文檔
+
+最後，應用字型替換設定後儲存文件。對於本教程，我們將其另存為 PDF。
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
+```
+
+## 第 5 步：建立警告處理程序類
+
+要有效地處理警告，請建立一個實現以下功能的自訂類`IWarningCallback`介面.此類將捕獲並記錄任何字體替換警告。
+
+```csharp
+public class DocumentSubstitutionWarnings : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        if (info.WarningType == WarningType.FontSubstitution)
+            FontWarnings.Warning(info);
+    }
+
+    public WarningInfoCollection FontWarnings = new WarningInfoCollection();
+}
+```
+
+在本課程中：
+- 這`Warning`方法捕獲與字體替換相關的警告。
+- 這`FontWarnings`集合儲存這些警告以供進一步檢查或記錄。
+
 ## 結論
-在本教學中，我們了解如何使用 Aspose.Words for .NET 在 Word 文件中取得不含後綴的覆寫。不帶後綴的替換對於解決字體替換問題很有用。請隨意使用此功能來改進文件的顯示和列印。
 
-### 常見問題解答
+現在您已經掌握了使用 Aspose.Words for .NET 處理無後綴的字體替換的過程。這些知識將確保您的文件保持其預期的外觀，無論系統上可用的字體如何。不斷嘗試不同的設定和來源，以充分利用 Aspose.Words 的強大功能。
 
-#### Q：為什麼 Aspose.Words 在字體替換中加上字尾？
+## 常見問題解答
 
-答：Aspose.Words 在字體替換中加入後綴，以避免原始字體和替換字體之間的衝突。這有助於確保轉換和操作文件時的最大相容性。
+### Q1：如何使用多個自訂目錄中的字體？
 
-#### Q：如何在 Aspose.Words 中擷取沒有後綴的字體替換？
+您可以新增多個`FolderFontSource`實例到`fontSources`相應地列出並更新字體來源。
 
-答：要在 Aspose.Words 中檢索不含後綴的字體替換，您可以使用`FontSubstitutionSettings`類和`RemoveSuffixes`財產。將此屬性設為`true`將獲得不添加後綴的字體替換。
+### 問題 2：哪裡可以下載 Aspose.Words for .NET 的免費試用版？
 
-#### Q：是否可以在 Aspose.Words 中停用為字體替換添加後綴？
+您可以從以下位置下載免費試用版：[Aspose免費試用頁面](https://releases.aspose.com/).
 
-答：不，無法在 Aspose.Words 中停用為字體替換添加後綴。預設添加後綴以確保文件相容性和一致性。
+###  Q3：我可以使用處理多種類型的警告嗎？`IWarningCallback`?
 
-#### Q：如何在 Aspose.Words 中過濾掉字體替換中不需要的後綴？
+是的`IWarningCallback`介面可讓您處理各種類型的警告，而不僅僅是字體替換。
 
-答：要過濾掉 Aspose.Words 中字體替換中不需要的後綴，可以使用字串處理技術，例如使用`Replace`或者`Substring`刪除您不想包含的特定後綴的方法。
+### Q4：我可以在哪裡獲得 Aspose.Words 的支援？
+
+如需支持，請訪問[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8).
+
+### Q5: 可以購買臨時許可證嗎？
+
+是的，您可以從以下機構獲得臨時許可證[臨時許可證頁面](https://purchase.aspose.com/temporary-license/).

@@ -40,7 +40,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 
 ## Stap 4: Importeer en voeg alinea's toe
 
-Blader door de alinea's in het brondocument en importeer elke alinea in het doeldocument met behulp van de`importer`. Voeg de geïmporteerde knooppunten toe aan de hoofdtekst van het doeldocument.
+ Blader door de alinea's in het brondocument en importeer elke alinea in het doeldocument met behulp van de`importer`. Voeg de geïmporteerde knooppunten toe aan de hoofdtekst van het doeldocument.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -69,7 +69,7 @@ Hiermee is de implementatie voltooid van het toevoegen van een brondocument aan 
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Behoud de opmaak van de bronlijst bij het importeren van genummerde alinea's.
+	//Behoud de opmaak van de bronlijst bij het importeren van genummerde alinea's.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-list/restart-list-number/
 ---
-tomto podrobném tutoriálu vám ukážeme, jak resetovat číslo seznamu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+V tomto podrobném tutoriálu vám ukážeme, jak resetovat číslo seznamu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
 
  Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nakonfigurovaný ve svém vývojovém prostředí. Pokud jste tak ještě neučinili, stáhněte si a nainstalujte knihovnu z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -118,11 +118,11 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### Otázka: Je možné upravit předponu a příponu číslování restartovaných seznamů v Aspose.Words?
 
- Odpověď: Ano, můžete upravit předponu a příponu číslování restartovaných seznamů v Aspose.Words. The`ListLevel` třída nabízí vlastnosti jako např`ListLevel.NumberPrefix` a`ListLevel.NumberSuffix` které umožňují zadat předponu a příponu pro každou úroveň v seznamu. Tyto vlastnosti můžete použít k přizpůsobení předpony a přípony podle potřeby.
+ Odpověď: Ano, můžete upravit předponu a příponu číslování restartovaných seznamů v Aspose.Words. The`ListLevel` třída nabízí vlastnosti jako např`ListLevel.NumberPrefix` a`ListLevel.NumberSuffix`které umožňují zadat předponu a příponu pro každou úroveň v seznamu. Tyto vlastnosti můžete použít k přizpůsobení předpony a přípony podle potřeby.
 
 #### Otázka: Jak mohu zadat konkrétní hodnotu číslování, od které má být seznam restartován?
 
-A: Chcete-li zadat konkrétní číselnou hodnotu, od které se má seznam restartovat, můžete použít`ListRestartAtNumber` metoda předávající požadovanou hodnotu jako argument. Chcete-li například restartovat číslování od 5, můžete použít`list.ListRestartAtNumber(5)`.
+ A: Chcete-li zadat konkrétní číselnou hodnotu, od které se má seznam restartovat, můžete použít`ListRestartAtNumber` metoda předávající požadovanou hodnotu jako argument. Chcete-li například restartovat číslování od 5, můžete použít`list.ListRestartAtNumber(5)`.
 
 #### Otázka: Je možné restartovat víceúrovňové číslování seznamů v Aspose.Words?
 

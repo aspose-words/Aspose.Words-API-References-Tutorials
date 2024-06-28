@@ -81,7 +81,7 @@ public class DocumentDecryptionExample {
 }
 ```
 
-此代码加载加密文档，提供解密密码，然后将解密文档另存为“decrypted_document.docx”。
+此代码加载加密文档，提供解密密码，然后将解密文档保存为“decrypted_document.docx”。
 
 ## 常见问题解答
 

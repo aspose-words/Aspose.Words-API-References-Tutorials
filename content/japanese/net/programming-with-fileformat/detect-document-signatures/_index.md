@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signe
 
 ## ステップ 3: デジタル署名を確認する
 
-ドキュメントにデジタル署名が含まれているかどうかを、`HasDigitalSignature`の財産`FileFormatInfo`物体。デジタル署名が検出された場合は、Aspose.Words でドキュメントを開いたり保存したりすると署名が失われることを示すメッセージが表示されます。
+ドキュメントにデジタル署名が含まれているかどうかを、`HasDigitalSignature`の財産`FileFormatInfo`物体。デジタル署名が検出された場合は、Aspose.Words で文書を開いたり保存したりすると署名が失われることを示すメッセージが表示されます。
 
 ```csharp
 if (info.HasDigitalSignature)
@@ -84,7 +84,7 @@ Aspose.Words で文書を開いたり保存したりすると、文書内に存�
 
 #### Aspose.Words for .NET の他の機能をデジタル署名検出と組み合わせて使用できますか?
 
- Aspose.Words for .NET は、Word ドキュメントを処理および操作するためのさまざまな機能を提供します。デジタル署名の検出に加えて、このライブラリを使用して、ドキュメントからテキスト、画像、またはメタデータを抽出したり、書式設定の変更を適用したり、ドキュメントを結合したり、ドキュメントを別の形式に変換したりすることができます。探索することができます[Aspose.Words for .NET API リファレンス](https://reference.aspose.com/words/net/)利用可能なすべての機能を確認し、ニーズに最適なものを見つけてください。
+ Aspose.Words for .NET は、Word ドキュメントを処理および操作するためのさまざまな機能を提供します。デジタル署名の検出に加えて、このライブラリを使用して、ドキュメントからテキスト、画像、またはメタデータを抽出したり、書式設定の変更を適用したり、ドキュメントを結合したり、ドキュメントを別の形式に変換したりすることができます。を探索できます。[Aspose.Words for .NET API リファレンス](https://reference.aspose.com/words/net/)利用可能なすべての機能を確認し、ニーズに最適なものを見つけてください。
 
 #### Aspose.Words for .NET を使用したデジタル署名の検出にはどのような制限がありますか?
 

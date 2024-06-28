@@ -93,9 +93,9 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### Вопрос 4: Могу ли я попробовать Aspose.Words для Java перед покупкой?
 
- Конечно! Вы можете получить доступ к бесплатной пробной версии Aspose.Words для Java на сайте[Aspose.Релизы](https://releases.aspose.com/).
+ Конечно! Вы можете получить доступ к бесплатной пробной версии Aspose.Words для Java на сайте[Релизы.](https://releases.aspose.com/).
 
-### Вопрос 5: Где я могу получить поддержку или задать вопросы об Aspose.Words для Java?
+### Вопрос 5: Где я могу обратиться за поддержкой или задать вопросы об Aspose.Words для Java?
 
  По любым вопросам или поддержке посетите[Форум Aspose.Words для Java](https://forum.aspose.com/).
 

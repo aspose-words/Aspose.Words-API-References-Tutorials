@@ -81,7 +81,7 @@ doc.save("Your Directory Path" + "RemoveContent.RemoveToc.doc");
 
 ## Conclusão
 
-Neste artigo, exploramos como remover vários tipos de conteúdo de documentos do Word usando Aspose.Words for Java. Quer se trate de quebras de página, quebras de seção, rodapés ou índice analítico, Aspose.Words fornece as ferramentas para manipular seus documentos de forma eficaz.
+Neste artigo, exploramos como remover vários tipos de conteúdo de documentos do Word usando Aspose.Words for Java. Quer se trate de quebras de página, quebras de seção, rodapés ou índice analítico, Aspose.Words fornece as ferramentas para manipular seus documentos de maneira eficaz.
 
 ## Perguntas frequentes
 

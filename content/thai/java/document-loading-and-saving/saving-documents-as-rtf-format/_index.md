@@ -18,7 +18,7 @@ url: /th/java/document-loading-and-saving/saving-documents-as-rtf-format/
 
 1.  Aspose.Words สำหรับไลบรารี Java: ตรวจสอบให้แน่ใจว่าคุณมีไลบรารี Aspose.Words สำหรับ Java ที่รวมอยู่ในโปรเจ็กต์ Java ของคุณ คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/java/).
 
-2. เอกสารที่จะบันทึก: คุณควรมีเอกสาร Word ที่มีอยู่ (เช่น "Document.docx") ที่คุณต้องการบันทึกในรูปแบบ RTF
+2. เอกสารที่จะบันทึก: คุณควรมีเอกสาร Word ที่มีอยู่ (เช่น “Document.docx”) ที่คุณต้องการบันทึกในรูปแบบ RTF
 
 ## ขั้นตอนที่ 1: การโหลดเอกสาร
 
@@ -77,7 +77,7 @@ doc.save("Your Directory Path" + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rt
 
 ### ฉันจะเปลี่ยนตัวเลือกการบันทึก RTF อื่นๆ ได้อย่างไร
 
- คุณสามารถแก้ไขตัวเลือกการบันทึก RTF ต่างๆ ได้โดยใช้`RtfSaveOptions` ระดับ. โปรดดูเอกสารประกอบ Aspose.Words สำหรับ Java สำหรับรายการตัวเลือกทั้งหมดที่มี
+ คุณสามารถแก้ไขตัวเลือกการบันทึก RTF ต่างๆ ได้โดยใช้`RtfSaveOptions` ชั้นเรียน โปรดดูเอกสารประกอบ Aspose.Words สำหรับ Java สำหรับรายการตัวเลือกทั้งหมดที่มี
 
 ### ฉันสามารถบันทึกเอกสาร RTF เป็นการเข้ารหัสอื่นได้หรือไม่
 

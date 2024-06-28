@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -107,7 +107,7 @@ Az Aspose.Words for .NET a számformátumkódok széles skáláját támogatja, 
 
 - `0` vagy`#` - A számot tizedesjegyek nélkül jeleníti meg.
 - `0.00` vagy`#.00` - Két tizedesjegy pontossággal jeleníti meg a számot.
-- `#,##0` Ezerelválasztókkal jeleníti meg a számot.
+- `#,##0` Megjeleníti a számot több ezer elválasztóval.
 - `"€"0.00` - Megjeleníti a számot az euró valuta szimbólummal és két tizedesjegygel.
 - `"%"0` - A számot százalékban jeleníti meg.
 

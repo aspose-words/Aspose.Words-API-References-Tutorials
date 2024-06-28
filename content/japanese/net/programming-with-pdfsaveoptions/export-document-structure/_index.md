@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Paragraphs.docx");
 
 ## ステップ 3: PDF として保存オプションを構成する
 
-ドキュメント構造をエクスポートし、PDF ファイルの編集中に Adobe Acrobat Pro の「コンテンツ」ナビゲーション ペインにその構造が表示されるようにするには、`PdfSaveOptions`オブジェクトを使用して`ExportDocumentStructure`に設定されたプロパティ`true`.
+ドキュメント構造をエクスポートし、PDF ファイルの編集中に Adobe Acrobat Pro の「コンテンツ」ナビゲーションペインにその構造が表示されるようにするには、`PdfSaveOptions`オブジェクトを使用して`ExportDocumentStructure`に設定されたプロパティ`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };

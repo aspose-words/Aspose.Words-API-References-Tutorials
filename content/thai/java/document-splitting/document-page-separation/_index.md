@@ -15,7 +15,7 @@ url: /th/java/document-splitting/document-page-separation/
 ก่อนที่เราจะเจาะลึกโค้ด ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
 
 - ติดตั้ง Java Development Kit (JDK) แล้ว
--  Aspose.Words สำหรับไลบรารี Java (คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/java/))
+-  Aspose.Words สำหรับไลบรารี Java (คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/java/-)
 - สภาพแวดล้อมการพัฒนาแบบรวม (IDE) ที่คุณเลือก (Eclipse, IntelliJ IDEA ฯลฯ)
 
 ## การตั้งค่าโครงการ Java ของคุณ
@@ -49,7 +49,7 @@ DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 List<Document> pages = splitter.splitIntoPages();
 ```
 
- ที่`pages` ขณะนี้รายการจะมีเอกสารแยกกัน โดยแต่ละเอกสารแทนหน้าเดียวของเอกสารต้นฉบับ
+ ที่`pages` ขณะนี้รายการจะมีเอกสารแยกกัน โดยแต่ละเอกสารแสดงถึงหน้าเดียวของเอกสารต้นฉบับ
 
 ## ขั้นตอนที่ 3: บันทึกหน้า
 

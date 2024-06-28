@@ -99,7 +99,7 @@ public class ModifyDocumentListExample {
 ```java
 public class ExtractListItemsExample {
     public static void main(String[] args) throws Exception {
-        //ドキュメントをロードします
+        //ドキュメントをロードする
         Document doc = new Document("ModifiedDocumentListExample.docx");
 
         //リストにアクセスする

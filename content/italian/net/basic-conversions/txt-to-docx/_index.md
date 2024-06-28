@@ -58,7 +58,7 @@ Il mantenimento della formattazione durante la conversione dipende dallo strumen
 
 #### Quali sono i limiti del processo di conversione?
 
-Le limitazioni del processo di conversione dipendono dallo strumento o dalla libreria specifica che stai utilizzando. Alcuni strumenti potrebbero avere restrizioni relative a formattazioni complesse, tabelle o immagini incorporate nel file di testo. È importante comprendere appieno le caratteristiche e i limiti dello strumento scelto per prendere decisioni informate durante la conversione.
+Le limitazioni del processo di conversione dipendono dallo strumento o dalla libreria specifica che stai utilizzando. Alcuni strumenti potrebbero avere restrizioni correlate a formattazioni complesse, tabelle o immagini incorporate nel file di testo. È importante comprendere appieno le caratteristiche e i limiti dello strumento scelto per prendere decisioni informate durante la conversione.
 
 #### Aspose è uno strumento affidabile per convertire file di testo in documenti Word?
 

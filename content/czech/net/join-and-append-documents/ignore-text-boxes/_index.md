@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Krok 4: Přidejte obsah textového pole
 
- Vytvořit`NodeImporter` objekt a použijte jej k importu uzlů textových polí ze zdrojového dokumentu do cílového dokumentu. Iterujte každý odstavec ve zdrojovém dokumentu a importujte jej do cílového dokumentu.
+ Vytvořit`NodeImporter`objekt a použijte jej k importu uzlů textových polí ze zdrojového dokumentu do cílového dokumentu. Iterujte každý odstavec ve zdrojovém dokumentu a importujte jej do cílového dokumentu.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Krok 5: Uložte cílový dokument
 
- Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

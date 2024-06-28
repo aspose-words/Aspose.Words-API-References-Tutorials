@@ -109,11 +109,11 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### T: Bagaimana cara menyorot teks menggunakan Markdown?
 
- J: Untuk menyorot teks menggunakan Markdown, cukup kelilingi teks dengan simbol yang sesuai. Menggunakan`*` atau`_` untuk huruf miring,`**` atau`__` untuk berani, dan`~~` untuk dicoret.
+J: Untuk menyorot teks menggunakan Markdown, cukup kelilingi teks dengan simbol yang sesuai. Menggunakan`*` atau`_` untuk huruf miring,`**` atau`__` untuk berani, dan`~~` untuk dicoret.
 
 #### T: Bisakah kita menggabungkan sorotan berbeda dalam teks yang sama?
 
- J: Ya, dimungkinkan untuk menggabungkan sorotan berbeda dalam teks yang sama. Misalnya, Anda dapat mencetak tebal dan miring sebuah kata dengan menggunakan keduanya`**` Dan`*`di sekitar kata.
+ J: Ya, dimungkinkan untuk menggabungkan sorotan berbeda dalam teks yang sama. Misalnya, Anda dapat mencetak tebal dan miring sebuah kata dengan menggunakan keduanya`**` Dan`*` di sekitar kata.
 
 #### T: Opsi penyorotan apa yang tersedia di Markdown?
 

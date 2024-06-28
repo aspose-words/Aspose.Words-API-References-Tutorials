@@ -40,7 +40,7 @@ Most, hogy ismeri az alapokat, folytassa a dokumentumengedélyek beállításáv
 
 1. Nyisson meg egy dokumentumot: Töltse be Word dokumentumát az Aspose.Words for Java segítségével.
 
-2. Hozzáférés-vezérlés meghatározása: Az Aspose.Words for Java segítségével meghatározhatja, hogy mely felhasználók vagy csoportok férhetnek hozzá a dokumentumhoz, és milyen műveleteket hajthatnak végre, például olvasást, szerkesztést vagy nyomtatást.
+2. Hozzáférés-szabályozás meghatározása: Az Aspose.Words for Java segítségével megadhatja, hogy mely felhasználók vagy csoportok férhetnek hozzá a dokumentumhoz, és milyen műveleteket hajthatnak végre, például olvasást, szerkesztést vagy nyomtatást.
 
 3. Dokumentumvédelem alkalmazása: Ha szükséges, alkalmazzon dokumentumvédelmet jelszóval a hozzáférés korlátozása érdekében.
 

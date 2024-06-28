@@ -75,16 +75,16 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET'teki belge metni yönü özelliğini inceledik. Özellikle İbranice veya Arapça gibi sağdan sola yazılan dillerde, bir belgedeki metnin yönünü nasıl belirleyeceğimizi öğrendik.
+Bu eğitimde Aspose.Words for .NET'teki belge metni yönü özelliğini inceledik. Özellikle İbranice veya Arapça gibi sağdan sola yazılan dillerde bir belgedeki metnin yönünün nasıl belirleneceğini öğrendik.
 
 Bu özellik, metnin çok dilli belgelerde doğru şekilde görüntülenmesini sağlamak için gereklidir. Aspose.Words, uygun yükleme seçeneklerini kullanarak metnin yönünü otomatik olarak algılayabilir ve bunu belgeye uygulayabilir.
 
 Aspose.Words ile belgelerinizdeki metnin yönünü kolayca değiştirebilir, kullanıcılara sorunsuz ve sezgisel bir okuma deneyimi sunabilirsiniz.
 
-Bu özelliğin özellikle belirli metin yönü gerektiren dillerde Kelime İşleme yaparken kullanışlı olduğunu unutmamak önemlidir. Aspose.Words, belgelerinizdeki metnin yönünü yönetmek için güçlü araçlar sağlayarak bu görevi kolaylaştırır.
+Bu özelliğin özellikle belirli metin yönü gerektiren dillerle Kelime İşleme yaparken kullanışlı olduğunu unutmamak önemlidir. Aspose.Words, belgelerinizdeki metnin yönünü yönetmek için güçlü araçlar sağlayarak bu görevi kolaylaştırır.
 
 Belgelerinizde istediğiniz sonuçları elde etmek için otomatik metin yönünü ayarlama gibi uygun yükleme seçeneklerini kullanmayı unutmayın.
 
 Aspose.Words for .NET, belge işleme ve oluşturma için birçok gelişmiş özellik sunar. Aspose.Words tarafından sağlanan belgeleri ve örnekleri daha fazla inceleyerek bu güçlü kütüphanenin özelliklerinden tam olarak yararlanabileceksiniz.
 
-Bu nedenle, belge metni yönünü Aspose.Words for .NET projelerinize entegre etmekten çekinmeyin ve ilgi çekici ve yüksek kalitede çok dilli belgeler oluşturmak için bunun avantajlarından yararlanın.
+Bu nedenle, belge metin yönünü Aspose.Words for .NET projelerinize entegre etmekten çekinmeyin ve ilgi çekici, yüksek kaliteli, çok dilli belgeler oluşturmak için bunun avantajlarından yararlanın.

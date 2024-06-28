@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-comments/anchor-comment/
 ---
 
-V tomto komplexním tutoriálu se naučíte, jak ukotvit odpovědi na komentáře ke konkrétnímu textu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete moci přiřadit komentáře ke konkrétnímu textu ve vašich dokumentech.
+tomto komplexním tutoriálu se naučíte, jak ukotvit odpovědi na komentáře ke konkrétnímu textu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete moci přiřadit komentáře ke konkrétnímu textu ve vašich dokumentech.
 
 ## Předpoklady
 Než začneme, ujistěte se, že máte následující předpoklady:
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Vytvořte tři objekty Run.
-// První dva spouští nějaký text, zatímco třetí spouští komentář
+//První dva spouští nějaký text, zatímco třetí spouští komentář
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ A: Chcete-li přidat kotvu komentáře do dokumentu Aspose.Words for .NET, postu
 
 #### Otázka: Jak mohu upravit text komentáře propojeného s kotvou komentáře v Aspose.Words for .NET?
 
- Odpověď: Chcete-li upravit text komentáře vázaného na kotvu komentáře v Aspose.Words pro .NET, můžete získat přístup k`Comment.Text` vlastnost odpovídající`Comment` objekt a upravte text podle potřeby.
+Odpověď: Chcete-li upravit text komentáře vázaného na kotvu komentáře v Aspose.Words pro .NET, můžete získat přístup k`Comment.Text` vlastnost odpovídající`Comment` objekt a upravte text podle potřeby.
 

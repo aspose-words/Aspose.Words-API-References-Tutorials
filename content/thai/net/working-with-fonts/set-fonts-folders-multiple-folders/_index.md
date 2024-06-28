@@ -18,14 +18,14 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสารที่จะแสดงผล
- จากนั้นคุณสามารถโหลดเอกสารเพื่อแสดงผลโดยใช้`Document` ระดับ. อย่าลืมระบุเส้นทางเอกสารที่ถูกต้อง
+ จากนั้นคุณสามารถโหลดเอกสารเพื่อแสดงผลโดยใช้`Document` ชั้นเรียน อย่าลืมระบุเส้นทางเอกสารที่ถูกต้อง
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## ขั้นตอนที่ 3: ตั้งค่าโฟลเดอร์แบบอักษร
- ตอนนี้คุณสามารถตั้งค่าโฟลเดอร์ฟอนต์ได้หลายโฟลเดอร์โดยใช้ไฟล์`FontSettings` ชั้นเรียนและ`SetFontsFolders()` วิธี. คุณสามารถระบุเส้นทางไปยังโฟลเดอร์แบบอักษรที่คุณต้องการใช้ในอาร์เรย์ได้ ในตัวอย่างนี้ เราได้ระบุโฟลเดอร์แบบอักษรสองโฟลเดอร์: "C:\MyFonts\" และ "D:\Misc\Fonts\".
+ ตอนนี้คุณสามารถตั้งค่าโฟลเดอร์ฟอนต์ได้หลายโฟลเดอร์โดยใช้ไฟล์`FontSettings` ชั้นเรียนและ`SetFontsFolders()` วิธี. คุณสามารถระบุเส้นทางไปยังโฟลเดอร์แบบอักษรที่คุณต้องการใช้ในอาร์เรย์ได้ ในตัวอย่างนี้ เราได้ระบุโฟลเดอร์แบบอักษรสองโฟลเดอร์: "C:\MyFonts\" และ "D:\Misc\Fonts\-
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -33,14 +33,14 @@ fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
 ## ขั้นตอนที่ 4: ใช้การตั้งค่าแบบอักษร
- ถัดไป คุณจะต้องใช้การตั้งค่าแบบอักษรกับเอกสารของคุณโดยใช้`FontSettings` ทรัพย์สินของ`Document` ระดับ.
+ ถัดไป คุณจะต้องใช้การตั้งค่าแบบอักษรกับเอกสารของคุณโดยใช้`FontSettings` ทรัพย์สินของ`Document` ชั้นเรียน
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
 ## ขั้นตอนที่ 5: บันทึกเอกสารที่แสดงผล
- สุดท้าย คุณสามารถบันทึกเอกสารที่แสดงผลลงในไฟล์ได้โดยใช้`Save()` วิธีการของ`Document` ระดับ. อย่าลืมระบุเส้นทางและชื่อไฟล์ที่ถูกต้อง
+ สุดท้าย คุณสามารถบันทึกเอกสารที่แสดงผลลงในไฟล์ได้โดยใช้`Save()` วิธีการของ`Document` ชั้นเรียน อย่าลืมระบุเส้นทางและชื่อไฟล์ที่ถูกต้อง
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
@@ -56,7 +56,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 // โปรดทราบว่าการตั้งค่านี้จะแทนที่แหล่งแบบอักษรเริ่มต้นใดๆ ที่กำลังค้นหาตามค่าเริ่มต้น ตอนนี้จะค้นหาเฉพาะโฟลเดอร์เหล่านี้เท่านั้น
 // แบบอักษรเมื่อเรนเดอร์หรือฝังแบบอักษร หากต้องการเพิ่มแหล่งแบบอักษรพิเศษในขณะที่เก็บแหล่งแบบอักษรของระบบไว้ ให้ใช้ทั้ง FontSettings.GetFontSources และ
-// FontSettings.SetFontSources แทน
+// การตั้งค่าแบบอักษร SetFontSources แทน
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");

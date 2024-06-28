@@ -10,7 +10,7 @@ url: /ja/java/document-loading-and-saving/saving-html-documents-with-fixed-layou
 
 ## Aspose.Words for Java での固定レイアウトでの HTML ドキュメントの保存の概要
 
-この包括的なガイドでは、Aspose.Words for Java を使用して、HTML ドキュメントを固定レイアウトで保存するプロセスについて説明します。段階的な手順とコード例で、これをシームレスに実現する方法を学びます。それでは、早速入っていきましょう！
+この包括的なガイドでは、Aspose.Words for Java を使用して、HTML ドキュメントを固定レイアウトで保存するプロセスについて説明します。段階的な手順とコード例で、これをシームレスに実現する方法を学びます。それでは、早速入ってみましょう！
 
 ## 前提条件
 
@@ -31,7 +31,7 @@ Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 
 ## ステップ 2: HTML 固定保存オプションを構成する
 
-ドキュメントを固定レイアウトで保存するには、`HtmlFixedSaveOptions`クラス。を設定します。`useTargetMachineFonts`財産を`true`ターゲット マシンのフォントが HTML 出力で使用されていることを確認するには、次のようにします。
+ドキュメントを固定レイアウトで保存するには、`HtmlFixedSaveOptions`クラス。を設定します`useTargetMachineFonts`財産を`true`ターゲット マシンのフォントが HTML 出力で使用されていることを確認するには、次のようにします。
 
 ```java
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions();
@@ -48,7 +48,7 @@ doc.save("Your Directory Path" + "FixedLayoutDocument.html", saveOptions);
 
 交換する`"FixedLayoutDocument.html"` HTML ファイルの任意の名前を付けます。
 
-## Aspose.Words for Java で HTML ドキュメントを固定レイアウトで保存するための完全なソース コード
+## Aspose.Words for Java で固定レイアウトの HTML ドキュメントを保存するための完全なソース コード
 
 ```java
         Document doc = new Document("Your Directory Path" + "Bullet points with alternative font.docx");

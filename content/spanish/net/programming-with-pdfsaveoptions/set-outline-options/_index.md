@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Paso 3: Configure las opciones de guardar como PDF con las opciones del plan
 
- Para configurar las opciones de esquema en el PDF generado, necesitamos configurar el`PdfSaveOptions` objeto. Podemos establecer el número de niveles de esquema de encabezado (`HeadingsOutlineLevels`) y el número de niveles de esquema ampliados (`ExpandedOutlineLevels`).
+Para configurar las opciones de esquema en el PDF generado, necesitamos configurar el`PdfSaveOptions` objeto. Podemos establecer el número de niveles de esquema de encabezado (`HeadingsOutlineLevels`) y el número de niveles de esquema ampliados (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();

@@ -40,7 +40,7 @@ builder. EndBookmark("My Bookmark");
 
 ## Stap 3: Geneste bladwijzers maken
 
-We kunnen ook geneste bladwijzers maken binnen een hoofdbladwijzer. Wij gebruiken hetzelfde`StartBookmark` En`EndBookmark` methoden om geneste bladwijzers te maken en te beëindigen:
+ We kunnen ook geneste bladwijzers maken binnen een hoofdbladwijzer. Wij gebruiken hetzelfde`StartBookmark` En`EndBookmark` methoden om geneste bladwijzers te maken en te beëindigen:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -48,11 +48,11 @@ builder.Writeln("Text inside nested bookmark.");
 builder.EndBookmark("Embedded bookmark");
 ```
 
-## Stap 4: Voorvertoningsniveaus voor bladwijzers opgeven in het uitgevoerde PDF-bestand
+## Stap 4: Voorvertoningsniveaus van bladwijzers opgeven in het uitgevoerde PDF-bestand
 
  Wij gebruiken de`PdfSaveOptions` object om de voorbeeldniveaus van de bladwijzers in het uitgevoerde PDF-bestand op te geven. Wij gebruiken de`BookmarksOutlineLevels` eigendom
 
-  om hoofdbladwijzers en geneste bladwijzers met hun respectieve niveaus toe te voegen:
+  om hoofdbladwijzers en geneste bladwijzers met hun respectievelijke niveaus toe te voegen:
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();

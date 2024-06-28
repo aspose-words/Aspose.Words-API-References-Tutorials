@@ -2,76 +2,101 @@
 title: Belge Ekle
 linktitle: Belge Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak bir belgenin içeriğini diğerine nasıl ekleyeceğinizi öğrenin.
+description: Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerini nasıl ekleyeceğinizi öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/append-document/
 ---
 
-Bu eğitimde Aspose.Words for .NET'in bir belgenin içeriğini diğerine eklemek için nasıl kullanılacağı açıklanmaktadır. Sağlanan kaynak kodu, kaynak ve hedef belgelerin nasıl açılacağını, kaynak belgeden bölümlerin hedef belgeye nasıl aktarılacağını ve ekleneceğini gösterir.
+## giriiş
 
-## 1. Adım: Projeyi ayarlayın
+Selam! Orijinal biçimlendirmeyi bozmadan iki Word belgesini tek bir belgede birleştirmeniz gerekti mi? İster rapor derliyor olun, ister kapsamlı proje dokümantasyonu oluşturuyor olun, ister sadece doküman yönetiminizi kolaylaştırmaya çalışıyor olun, Aspose.Words for .NET hayatınızı çok daha kolaylaştırabilir. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinin diğerine nasıl ekleneceğini inceleyeceğiz ve her adımı ayrıntılı olarak ele alacağız. Bu kılavuzun sonunda belgeleri bir profesyonel gibi birleştireceksiniz!
 
-Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+## Önkoşullar
 
--  Aspose.Words for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Aspose.Releases]https://releases.aspose.com/words/net/ adresine gidin veya yüklemek için NuGet paket yöneticisini kullanın.
-- Kaynak ve hedef belgelerin bulunduğu belge dizini yolu.
+İşin detayına dalmadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-## 2. Adım: Kaynak ve hedef belgeleri açın
+1. Temel C# Bilgisi: C# sözdizimi ve kavramları konusunda rahat olmalısınız.
+2.  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/) . Sadece keşfediyorsanız, bir tane ile başlayabilirsiniz.[ücretsiz deneme](https://releases.aspose.com/).
+3. Visual Studio: Güncel sürümlerden herhangi biri çalışmalıdır ancak en son sürüm önerilir.
+4. .NET Framework: Sisteminizde kurulu olduğundan emin olun.
 
- Kaynak ve hedef belgeleri kullanarak açın.`Document` sınıf yapıcısı. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+Her şey hazır mı? Harika! Hadi içeri girelim.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words for .NET ile çalışmaya başlamak için gerekli ad alanlarını içe aktarmamız gerekiyor. Bu adım, ihtiyaç duyacağımız tüm sınıflara ve yöntemlere erişmemizi sağlar.
 
 ```csharp
-// Belge dizininizin yolu
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+```
 
+Bu ad alanları, Word belgelerini oluşturmak, değiştirmek ve kaydetmek için gereklidir.
+
+## Adım 1: Belge Dizinini Ayarlama
+
+Öncelikle belgelerimizin saklandığı dizini belirtmemiz gerekiyor. Bu Aspose.Words'ün çalışmak istediğimiz dosyaları bulmasına yardımcı olur.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgelerinizin gerçek yolu ile.
+
+## Adım 2: Kaynak ve Hedef Belgelerini Yükleme
+
+Daha sonra kaynak belgeyi (eklenecek belge) ve hedef belgeyi (kaynağın ekleneceği belge) yükleyeceğiz.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. Adım: Kaynak belgedeki bölümleri hedef belgeye ekleyin
+ Burada iki tanesini başlatıyoruz`Document` nesneler.`srcDoc` kaynak belgeyi temsil eder ve`dstDoc` hedef belgeyi temsil eder.
 
- Kaynak belgedeki tüm bölümler arasında dolaşın ve her bölümü hedef belgeye aktarın.`ImportNode` yöntem. Daha sonra içe aktarılan bölümü hedef belgeye ekleyin.
+## Adım 3: Kaynak Belgeyi Hedef Belgeye Ekleme
 
-```csharp
-foreach (Section srcSection in srcDoc)
-{
-    Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-    dstDoc.AppendChild(dstSection);
-}
-```
-
-## 4. Adım: Hedef belgeyi kaydedin
-
- Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
+Şimdi heyecan verici kısım geliyor; orijinal biçimlendirmeyi olduğu gibi korurken kaynak belgeyi hedef belgeye eklemek.
 
 ```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-Bu, Aspose.Words for .NET kullanarak belge ekleme işlemini tamamlar.
+ Bu adımda şunu kullanıyoruz:`AppendDocument`İki belgeyi birleştirme yöntemi.`ImportFormatMode.KeepSourceFormatting` parametresi kaynak belgenin formatının korunmasını sağlar.
 
-### Aspose.Words for .NET kullanarak Belge Ekleme için örnek kaynak kodu 
+## Adım 4: Birleştirilmiş Belgeyi Kaydetme
+
+Belgeleri ekledikten sonra son adım, birleştirilmiş belgeyi yeni bir adla kaydetmektir.
 
 ```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Kaynak belgedeki tüm bölümler arasında dolaşın.
-	//Bölüm düğümleri Belge düğümünün doğrudan alt öğeleridir, dolayısıyla Belgeyi yalnızca numaralandırabiliriz.
-	foreach (Section srcSection in srcDoc)
-	{
-		// Bir bölümü bir belgeden diğerine kopyaladığımız için,
-		// Bölüm düğümünün hedef belgeye aktarılması gerekir.
-		// Bu, stillere, listelere vb. yönelik belgeye özgü referansları ayarlar.
-		//
-		// Bir düğümün içe aktarılması orijinal düğümün bir kopyasını oluşturur, ancak kopya
-		// Hedef belgeye eklenmeye hazır ss.
-		Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-		// Artık yeni bölüm düğümü hedef belgeye eklenebilir.
-		dstDoc.AppendChild(dstSection);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
+dstDoc.Save(dataDir + "AppendedDocument.docx");
 ```
+
+Burada, eklenen belgeyi, ek içerik içerdiğini belirten açıklayıcı bir dosya adı ile kaydediyoruz.
+
+## Çözüm
+
+ İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesini diğerine nasıl ekleyeceğinizi başarıyla öğrendiniz. Bu eğitim ortamınızı ayarlamayı, belgeleri yüklemeyi, kaynak biçimlendirmesini korurken bir belgeyi diğerine eklemeyi ve birleştirilmiş belgeyi kaydetmeyi kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
+
+## SSS
+
+### 1. Aspose.Words for .NET nedir?
+
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır. Belgeyle ilgili görevleri otomatikleştirmek için idealdir.
+
+### 2. Aspose.Words for .NET'i ücretsiz kullanabilir miyim?
+
+ Aspose.Words for .NET'i kullanarak deneyebilirsiniz.[ücretsiz deneme](https://releases.aspose.com/). Uzun süreli kullanım için lisans satın almanız gerekir.
+
+### 3. Belgeleri eklerken formatın korunduğundan nasıl emin olabilirim?
+
+ Kullan`ImportFormatMode.KeepSourceFormatting` parametreler`AppendDocument` Kaynak belgenin biçimlendirmesini koruma yöntemi.
+
+### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
+
+adresini ziyaret ederek destek alabilirsiniz.[Aspose destek forumu](https://forum.aspose.com/c/words/8).
+
+### 5. Farklı formatlardaki belgeleri ekleyebilir miyim?
+
+Evet, Aspose.Words çeşitli formatları destekler ve DOCX, DOC, RTF vb. gibi farklı formatlardaki belgeleri ekleyebilirsiniz.
