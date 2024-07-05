@@ -2,7 +2,7 @@
 title: 用連字符連接語言單字
 linktitle: 用連字符連接語言單字
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中對不同語言的單字進行連字符。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中以連字符連接不同語言的單字。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-hyphenation/hyphenate-words-of-languages/
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## 第 2 步：保存連字詞典
 
-接下來，保存要處理的不同語言的連字詞典。在此範例中，我們註冊美國英語和瑞士德語的字典：
+接下來，儲存要處理的不同語言的連字符字典。在此範例中，我們註冊美國英語和瑞士德語的字典：
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
@@ -51,7 +51,7 @@ builder.InsertHyphenation();
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-所以 ！您已使用 Aspose.Words for .NET 在 Word 文件中以不同語言對單字進行連字符，並成功處理了單字。
+所以 ！您已使用 Aspose.Words for .NET 在 Word 文件中以不同語言對單字進行連字符，從而成功處理了單字。
 
 ### 使用 Aspose.Words for .NET 進行單字連字符的範例原始程式碼
 
@@ -77,6 +77,6 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 
 答：要在 Aspose.Words 中指定音節語言，您必須使用適當的語言代碼。例如，您可以使用“en”表示英語、“fr”表示法語、“es”表示西班牙語、“de”表示德語等。
 
-#### Q：Aspose.Words 中的音節化適用於所有語言嗎？
+#### Q：音節化是否適用於 Aspose.Words 中的所有語言？
 
-答：Aspose.Words 中的音節化取決於語言特定的音節化規則。儘管Aspose.Words支援多種語言，但某些語言可能不受支援或音節化可能不可用。檢查 Aspose.Words 文件以了解哪些語言支援音節化。
+答：Aspose.Words 中的音節化取決於語言特定的音節化規則。儘管Aspose.Words支援多種語言，但某些語言可能不受支援或音節化可能不可用。查看 Aspose.Words 文件以了解哪些語言支援音節化。

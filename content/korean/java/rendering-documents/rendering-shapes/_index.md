@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 축하해요! Aspose.Words for Java에서 모양을 렌더링하는 방법을 성공적으로 배웠습니다. 이 기능은 프로그래밍 방식으로 Word 문서를 작업할 때 가능성의 세계를 열어줍니다.
 
-## 9.FAQ
+## 9. FAQ
 
 ### Q1: 단일 문서에서 여러 도형을 렌더링할 수 있나요?
 
@@ -87,9 +87,9 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 예, Aspose.Words for Java는 DOCX, PDF, HTML 등을 포함한 광범위한 문서 형식을 지원합니다.
 
-### Q3: Aspose.Words for Java에 사용할 수 있는 라이선스 옵션이 있나요?
+### Q3: Aspose.Words for Java에 사용할 수 있는 라이선스 옵션이 있습니까?
 
- 예, 다음 사이트에서 라이선스 옵션을 살펴보고 Aspose.Words for Java를 구매할 수 있습니다.[Aspose 웹 사이트](https://purchase.aspose.com/buy).
+ 예, 다음 사이트에서 라이선스 옵션을 살펴보고 Aspose.Words for Java를 구매할 수 있습니다.[Aspose 웹사이트](https://purchase.aspose.com/buy).
 
 ### Q4: 구매하기 전에 Aspose.Words for Java를 사용해 볼 수 있나요?
 

@@ -8,44 +8,44 @@ weight: 10
 url: /ja/net/programming-with-sdt/clear-contents-control/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内の SDT の内容をクリアする方法を説明します。 SDT のコンテンツをクリアすると、コンテンツ コントロール内のテキストまたは子ノードが削除されます。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内の SDT の内容をクリアする方法を説明します。SDT の内容をクリアすると、コンテンツ コントロール内のすべてのテキストまたは子ノードが削除されます。
 
 ## 前提条件
-このチュートリアルに従うには、以下が必要です。
+このチュートリアルを実行するには、次のものが必要です。
 
 - Aspose.Words for .NET ライブラリがインストールされています。
-- C# と Word ドキュメントを使用したワード処理の基本的な知識。
+- C# と Word 文書を使用した Words Processing に関する基本的な知識。
 
-## ステップ 1: ドキュメント ディレクトリを設定する
-まず、ドキュメント ディレクトリへのパスを設定します。交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントが置かれているディレクトリへの実際のパスを置き換えます。
+## ステップ1: ドキュメントディレクトリを設定する
+まず、ドキュメントディレクトリへのパスを設定します。`"YOUR DOCUMENT DIRECTORY"`ドキュメントが配置されているディレクトリへの実際のパスを入力します。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ 2: ドキュメントをロードして StructuredDocumentTag を取得する
-を使用して Word 文書をロードします。`Document`コンストラクターを使用して、ドキュメントへのパスをパラメーターとして渡します。次に、必要なファイルを取得します`StructuredDocumentTag`文書から。この例では、SDT がドキュメント内の最初の子ノードであると仮定します。
+## ステップ2: ドキュメントを読み込み、StructuredDocumentTagを取得する
+Word文書を読み込むには、`Document`コンストラクタにドキュメントへのパスをパラメータとして渡します。次に、目的の`StructuredDocumentTag`ドキュメントから。この例では、SDT がドキュメントの最初の子ノードであると想定しています。
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## ステップ 3: StructuredDocumentTag の内容をクリアする
-SDT の内容をクリアするには、`Clear`方法。これにより、コンテンツ コントロール内のテキストまたは子ノードが削除されます。
+## ステップ3: StructuredDocumentTagの内容をクリアする
+SDTの内容をクリアするには、`Clear`メソッド。これにより、コンテンツ コントロール内のすべてのテキストまたは子ノードが削除されます。
 
 ```csharp
 sdt.Clear();
 ```
 
-## ステップ 4: ドキュメントを保存する
-変更したドキュメントを保存するには、`Save`方法。適切なファイル拡張子を付けて、目的のファイル名を指定します。この例では、ドキュメントを「WorkingWithSdt.ClearContentsControl.doc」として保存します。
+## ステップ4: ドキュメントを保存する
+変更した文書を保存するには、`Save`メソッド。適切なファイル拡張子を持つファイル名を指定します。この例では、ドキュメントを「WorkingWithSdt.ClearContentsControl.doc」として保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ```
 
-### Aspose.Words for .NET を使用したクリア コンテンツ コントロールのソース コードの例 
+### Aspose.Words for .NET を使用した Clear Contents Control のサンプル ソース コード 
 
 ```csharp
 	//ドキュメントディレクトリへのパス
@@ -57,4 +57,4 @@ doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 	doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ```
 
-それでおしまい！ Aspose.Words for .NET を使用して、Word 文書内の StructuredDocumentTag の内容を正常にクリアしました。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書内の StructuredDocumentTag の内容を正常にクリアできました。

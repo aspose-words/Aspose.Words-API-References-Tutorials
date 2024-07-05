@@ -104,11 +104,11 @@ Sí, Aspose.Words para Java es compatible con otras bibliotecas de Java, lo que 
 
 ### P2: ¿Existe una versión de prueba de Aspose.Words para Java disponible?
 
- Sí, puede acceder a una prueba gratuita de Aspose.Words para Java.[aquí](https://releases.aspose.com/).
+ Sí, puedes acceder a una prueba gratuita de Aspose.Words para Java[aquí](https://releases.aspose.com/).
 
 ### P3: ¿Cómo puedo obtener una licencia temporal de Aspose.Words para Java?
 
- Puede obtener una licencia temporal de Aspose.Words para Java.[aquí](https://purchase.aspose.com/temporary-license/).
+ Puede obtener una licencia temporal de Aspose.Words para Java[aquí](https://purchase.aspose.com/temporary-license/).
 
 ### P4: ¿Dónde puedo encontrar soporte para Aspose.Words para Java?
 

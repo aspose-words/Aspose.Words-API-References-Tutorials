@@ -137,4 +137,4 @@ Absolutnie! Aspose.Words for Java jest kompatybilny ze środowiskami opartymi na
 
 ### P3: Czy Aspose.Words wymaga dogłębnej wiedzy na temat formatu pliku Word?
 
-Chociaż pewna znajomość formatu pliku Word może być korzystna, Aspose.Words abstrahuje od złożoności formatu, dzięki czemu programiści stosunkowo łatwo mogą programowo pracować z dokumentami Word.
+Chociaż pewna znajomość formatu pliku Word może być korzystna, Aspose.Words abstrahuje od złożoności formatu, dzięki czemu programiści mogą stosunkowo łatwo programowo pracować z dokumentami Word.

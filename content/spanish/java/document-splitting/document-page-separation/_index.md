@@ -30,7 +30,7 @@ Antes de profundizar en el código, asegúrese de tener implementados los siguie
 
 ## Paso 1: cargue el documento
 
-Para comenzar, debemos cargar el documento del que queremos separar páginas. Así es como puedes hacerlo:
+Para comenzar necesitamos cargar el documento que queremos separar en páginas. Así es como puedes hacerlo:
 
 ```java
 // Cargar el documento
@@ -84,7 +84,7 @@ Sí, Aspose.Words admite varios formatos de documentos, incluidos DOC, RTF, HTML
 
 Aspose.Words para Java es una biblioteca comercial, pero ofrece una versión de prueba gratuita. Puede consultar su sitio web para obtener detalles sobre precios e información sobre licencias.
 
-### ¿Puedo separar páginas combinadas en un solo documento?
+### ¿Puedo fusionar páginas separadas en un solo documento?
 
 Sí, puede fusionar las páginas separadas en un solo documento usando Aspose.Words para Java. Consulte la documentación para obtener instrucciones sobre la fusión.
 

@@ -1,25 +1,25 @@
 ---
-title: Word文書にインライン画像を挿入
-linktitle: Word文書にインライン画像を挿入
+title: Word 文書にインライン画像を挿入する
+linktitle: Word 文書にインライン画像を挿入する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書にインライン画像を挿入する方法を学びます。コード例と FAQ を含むステップバイステップのガイド。
+description: Aspose.Words for .NET を使用して Word 文書にインライン画像を挿入する方法を学びます。コード例と FAQ を含むステップバイステップ ガイドです。
 type: docs
 weight: 10
 url: /ja/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 ## 導入
 
-.NET アプリケーションによるドキュメント処理の分野では、Aspose.Words は Word ドキュメントをプログラムで操作するための堅牢なソリューションとして優れています。その重要な機能の 1 つは、インライン画像を簡単に挿入して、ドキュメントの視覚的な魅力と機能性を向上させる機能です。このチュートリアルでは、Aspose.Words for .NET を利用して Word 文書内に画像をシームレスに埋め込む方法について詳しく説明します。
+.NET アプリケーションによるドキュメント処理の分野では、Aspose.Words は Word ドキュメントをプログラムで操作するための強力なソリューションとして優れています。その主な機能の 1 つは、インライン画像を簡単に挿入して、ドキュメントの見た目と機能性を向上させる機能です。このチュートリアルでは、Aspose.Words for .NET を活用して Word ドキュメント内に画像をシームレスに埋め込む方法について詳しく説明します。
 
 ## 前提条件
 
-Aspose.Words for .NET を使用してインライン イメージを挿入するプロセスを詳しく調べる前に、次の前提条件が満たされていることを確認してください。
+Aspose.Words for .NET を使用してインライン画像を挿入するプロセスに進む前に、次の前提条件が満たされていることを確認してください。
 
-1. Visual Studio 環境: Visual Studio をインストールし、.NET アプリケーションを作成およびコンパイルできるようにします。
-2.  Aspose.Words for .NET ライブラリ:Aspose.Words for .NET ライブラリをダウンロードしてインストールします。[ここ](https://releases.aspose.com/words/net/).
-3. C# の基本的な理解: C# プログラミング言語の基本を理解していると、コード スニペットを実装するのに役立ちます。
+1. Visual Studio 環境: Visual Studio がインストールされており、.NET アプリケーションを作成およびコンパイルできる状態になっている必要があります。
+2.  Aspose.Words for .NETライブラリ: Aspose.Words for .NETライブラリを以下からダウンロードしてインストールします。[ここ](https://releases.aspose.com/words/net/).
+3. C# の基本的な理解: C# プログラミング言語の基礎を理解していると、コード スニペットを実装する際に役立ちます。
 
-次に、Aspose.Words for .NET を使用して、必要な名前空間をインポートし、インライン イメージを挿入する手順を見てみましょう。
+ここで、Aspose.Words for .NET を使用して必要な名前空間をインポートし、インライン イメージを挿入する手順を見ていきましょう。
 
 ## 名前空間のインポート
 
@@ -32,9 +32,9 @@ using Aspose.Words.Drawing;
 
 これらの名前空間は、Word 文書の操作や画像の処理に必要なクラスとメソッドへのアクセスを提供します。
 
-## ステップ 1: 新しいドキュメントを作成する
+## ステップ1: 新しいドキュメントを作成する
 
-の新しいインスタンスを初期化することから始めます。`Document`クラスと`DocumentBuilder`文書作成を容易にするため。
+まず、新しいインスタンスを初期化します。`Document`クラスと`DocumentBuilder`ドキュメントの作成を容易にするため。
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
@@ -42,20 +42,20 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ 2: インライン画像を挿入する
+## ステップ2: インライン画像を挿入する
 
-使用`InsertImage`の方法`DocumentBuilder`クラスを使用して、ドキュメントの現在の位置に画像を挿入します。
+使用`InsertImage`方法の`DocumentBuilder`ドキュメントの現在の位置に画像を挿入するクラス。
 
 ```csharp
 string imagePath = "PATH_TO_YOUR_IMAGE_FILE";
 builder.InsertImage(imagePath);
 ```
 
-交換する`"PATH_TO_YOUR_IMAGE_FILE"`画像ファイルへの実際のパスを含めます。この方法では、画像がドキュメントにシームレスに統合されます。
+交換する`"PATH_TO_YOUR_IMAGE_FILE"`画像ファイルへの実際のパスを使用します。この方法により、画像がドキュメントにシームレスに統合されます。
 
-## ステップ 3: ドキュメントを保存する
+## ステップ3: ドキュメントを保存する
 
-最後に、`Save`の方法`Document`クラス。
+最後に、ドキュメントを目的の場所に保存します。`Save`方法の`Document`クラス。
 
 ```csharp
 doc.Save(dataDir + "InsertInlineImage.docx");
@@ -65,21 +65,21 @@ doc.Save(dataDir + "InsertInlineImage.docx");
 
 ## 結論
 
-結論として、Aspose.Words for .NET を使用してインライン イメージを Word ドキュメントに統合することは、ドキュメントの視覚化と機能を強化する簡単なプロセスです。上記の手順に従うと、Aspose.Words の機能を活用して、ドキュメント内の画像をプログラムで効率的に操作できます。
+結論として、Aspose.Words for .NET を使用してインライン画像を Word 文書に統合することは、文書の視覚化と機能性を高める簡単なプロセスです。上記の手順に従うことで、Aspose.Words のパワーを活用して、文書内の画像をプログラムで効率的に操作できます。
 
 ## よくある質問
 
-### Aspose.Words for .NET を使用して複数の画像を 1 つの Word 文書に挿入できますか?
-はい、画像ファイルを反復処理して呼び出して、複数の画像を挿入できます。`builder.InsertImage`各画像ごとに。
+### Aspose.Words for .NET を使用して、単一の Word 文書に複数の画像を挿入できますか?
+はい、画像ファイルを反復処理して呼び出すことで、複数の画像を挿入できます。`builder.InsertImage`各画像ごとに。
 
-### Aspose.Words for .NET は背景が透明な画像の挿入をサポートしていますか?
-はい。Aspose.Words for .NET は、背景が透明な画像の挿入をサポートしており、ドキュメント内の画像の透明性を維持します。
+### Aspose.Words for .NET は透明な背景の画像の挿入をサポートしていますか?
+はい、Aspose.Words for .NET は、ドキュメント内で画像の透明度を維持しながら、透明な背景を持つ画像の挿入をサポートしています。
 
 ### Aspose.Words for .NET を使用して挿入されたインライン画像のサイズを変更するにはどうすればよいですか?
-画像の幅と高さのプロパティを設定することで、画像のサイズを変更できます。`Shape`によって返されるオブジェクト`builder.InsertImage`.
+画像の幅と高さのプロパティを設定することで画像のサイズを変更できます。`Shape`返されるオブジェクト`builder.InsertImage`.
 
-### Aspose.Words for .NET を使用して、ドキュメント内の特定の場所にインライン画像を配置することはできますか?
-はい、呼び出す前にドキュメントビルダーのカーソル位置を使用してインライン画像の位置を指定できます。`builder.InsertImage`.
+### Aspose.Words for .NET を使用して、ドキュメント内の特定の場所にインライン画像を配置することは可能ですか?
+はい、ドキュメントビルダーのカーソル位置を使用してインライン画像の位置を指定してから呼び出すことができます。`builder.InsertImage`.
 
-### Aspose.Words for .NET を使用して、URL からの画像を Word 文書に埋め込むことはできますか?
-はい、.NET ライブラリを使用して URL から画像をダウンロードし、Aspose.Words for .NET を使用して Word 文書に挿入できます。
+### Aspose.Words for .NET を使用して URL から Word 文書に画像を埋め込むことはできますか?
+はい、.NET ライブラリを使用して URL から画像をダウンロードし、Aspose.Words for .NET を使用して Word 文書に挿入することができます。

@@ -67,7 +67,7 @@ Dans ce didacticiel, nous avons appris comment obtenir les détails d'un groupe 
 
 #### Q : Comment charger un document avec des révisions dans Aspose.Words for .NET ?
 
- R : Utilisez le`Document`classe d'Aspose.Words for .NET pour charger un document à partir d'un fichier contenant des révisions. Vous pouvez spécifier le chemin complet du document.
+ R : Utilisez le`Document` classe d'Aspose.Words for .NET pour charger un document à partir d'un fichier contenant des révisions. Vous pouvez spécifier le chemin complet du document.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Q : Comment puis-je obtenir les détails d'un groupe de révision dans Aspose.Words for .NET ?
 
- R : Parcourez les révisions du document à l'aide d'une boucle et accédez aux propriétés de chaque révision pour obtenir les détails souhaités. Vous pouvez utiliser le`RevisionType`, `Author`, `DateTime` et`ParentNode` propriétés pour obtenir respectivement le type de révision, l’auteur, la date et le texte révisé.
+ : Parcourez les révisions du document à l'aide d'une boucle et accédez aux propriétés de chaque révision pour obtenir les détails souhaités. Vous pouvez utiliser le`RevisionType`, `Author`, `DateTime` et`ParentNode` propriétés pour obtenir respectivement le type de révision, l’auteur, la date et le texte révisé.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Q : Comment vérifier si une révision appartient à un groupe dans Aspose.Words for .NET ?
 
- R : Utilisez le`Group` propriété du`Revision` objet pour vérifier si une révision appartient à un groupe. Si la`Group` la propriété est`null`cela signifie que la révision n'appartient à aucun groupe.
+ R : Utilisez le`Group` propriété du`Revision` objet pour vérifier si une révision appartient à un groupe. Si la`Group` la propriété est`null`, cela signifie que la révision n'appartient à aucun groupe.
 
 ```csharp
 if (revision.Group != null)

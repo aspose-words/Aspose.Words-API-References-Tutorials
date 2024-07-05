@@ -71,7 +71,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-恭喜！現在您已經了解如何將有序清單功能與 Aspose.Words for .NET 一起使用。
+恭喜！現在您已經了解如何將有序清單功能與 Aspose.Words for .NET 結合使用。
 
 
 ### 常見問題解答

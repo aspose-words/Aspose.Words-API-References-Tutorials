@@ -56,7 +56,7 @@ CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.C
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- 그만큼`Compare` 메서드는 문서 A를 문서 B와 비교하고 변경 사항을 문서 A에 저장합니다. 참조를 위해 작성자 이름과 비교 날짜를 지정할 수 있습니다.
+ 그만큼`Compare`메서드는 문서 A를 문서 B와 비교하고 변경 사항을 문서 A에 저장합니다. 참조를 위해 작성자 이름과 비교 날짜를 지정할 수 있습니다.
 
 ## 결론
 
@@ -95,7 +95,7 @@ A: .NET용 Aspose.Words에서 비교 세분성을 사용하려면 다음 단계�
 2. Aspose.Words를 참조하여 프로젝트에 필요한 어셈블리를 추가합니다.
 3.  다음을 사용하여 비교하려는 문서를 만듭니다.`DocumentBuilder` 수업.
 4.  다음을 생성하여 비교 옵션을 구성합니다.`CompareOptions` 개체 및 설정`Granularity` 속성을 원하는 수준으로 조정합니다(예:`Granularity.CharLevel` 캐릭터 레벨 비교용).
-5.  사용`Compare` 한 문서에 대한 메서드를 사용하여 다른 문서와`CompareOptions` 매개변수로 개체를 사용합니다. 이 방법은 지정된 세분성을 기준으로 문서를 비교하고 첫 번째 문서의 변경 사항을 저장합니다.
+5.  사용`Compare`한 문서에 대한 메서드를 사용하여 다른 문서와`CompareOptions` 매개변수로 개체를 사용합니다. 이 방법은 지정된 세분성을 기준으로 문서를 비교하고 첫 번째 문서의 변경 사항을 저장합니다.
 
 #### Q: .NET용 Aspose.Words에서 사용 가능한 비교 세분성 수준은 무엇입니까?
 

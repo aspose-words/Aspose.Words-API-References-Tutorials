@@ -89,7 +89,7 @@ Oui, Aspose.Words prend en charge de manière transparente les structures comple
 ### Où puis-je trouver de la documentation pour Aspose.Words pour .NET ?
  Une documentation détaillée est disponible[ici](https://reference.aspose.com/words/net/).
 
-### Comment puis-je obtenir une licence temporaire pour Aspose.Words for .NET ?
+### Comment puis-je obtenir une licence temporaire pour Aspose.Words pour .NET ?
  Des licences temporaires peuvent être obtenues[ici](https://purchase.aspose.com/temporary-license/).
 
 ### Quelles options de support sont disponibles pour Aspose.Words pour .NET ?

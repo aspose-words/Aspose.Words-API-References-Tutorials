@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## 3단계: 모양 컬렉션을 가져오고 수정 사항을 확인합니다.
+## 3단계: 모양 컬렉션 가져오기 및 수정 사항 확인
 
 문서에서 모양 컬렉션을 가져와 각 모양과 관련된 개정을 확인합니다.
 
@@ -101,7 +101,7 @@ Assert.AreEqual(2, shapes.Count);
 // 첫 번째 모양을 제거합니다.
 shapes[0].Remove();
 
-// 변경 사항을 추적하는 동안 해당 모양을 제거했기 때문에 해당 모양은 삭제 개정으로 계산됩니다.
+// 변경 사항을 추적하는 동안 해당 모양을 제거했기 때문에 해당 모양은 삭제 개정으로 간주됩니다.
 Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
 Assert.True(shapes[0].IsDeleteRevision);
 

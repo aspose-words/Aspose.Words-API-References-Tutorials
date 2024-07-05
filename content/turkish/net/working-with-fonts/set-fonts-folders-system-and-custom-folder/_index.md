@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Aspose.Words'e yazı tiplerini aşağıdaki klasörde araması talimatını verecek yeni bir klasör kaynağı ekleyin.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-// Yazı tiplerimizi içeren özel klasörü mevcut yazı tipi kaynakları listesine ekleyin.
+//Yazı tiplerimizi içeren özel klasörü mevcut yazı tipi kaynakları listesine ekleyin.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

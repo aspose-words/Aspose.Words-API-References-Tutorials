@@ -47,13 +47,13 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## ขั้นตอนที่ 5: บันทึกเอกสารปลายทาง
 
-สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ วัตถุ
+สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ```
 
-การดำเนินการนี้ทำให้การใช้งานการต่อท้ายเอกสารเสร็จสมบูรณ์โดยไม่สนใจเนื้อหาส่วนหัวและส่วนท้ายโดยใช้ Aspose.Words สำหรับ .NET
+การดำเนินการนี้ทำให้การดำเนินการผนวกเอกสารเสร็จสมบูรณ์โดยไม่สนใจเนื้อหาส่วนหัวและส่วนท้ายโดยใช้ Aspose.Words สำหรับ .NET
 
 ### ตัวอย่างซอร์สโค้ดสำหรับละเว้น Header Footer โดยใช้ Aspose.Words สำหรับ .NET 
 

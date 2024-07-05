@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### T: Bagaimana cara mengubah pengaturan bagian di Aspose.Words untuk .NET?
 
- J: Untuk mengubah pengaturan suatu bagian, Anda dapat menggunakan properti bagian tersebut.`PageSetup`obyek. Dalam contoh ini, kami mengubah margin, jarak header dan footer, dan spasi kolom teks.
+ J: Untuk mengubah pengaturan suatu bagian, Anda dapat menggunakan properti bagian tersebut`PageSetup`obyek. Dalam contoh ini, kami mengubah margin, jarak header dan footer, dan spasi kolom teks.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17cm

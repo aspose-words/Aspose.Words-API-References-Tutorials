@@ -35,15 +35,15 @@ Ebben a példában a dokumentum első szakaszát 0 indexszel érjük el (a szaka
 
 ## Módosított dokumentum mentése
 
-Miután törölte a megadott tartományok szövegét, a módosított dokumentumot a Dokumentum osztály Mentés metódusával mentheti. Íme egy példa:
+Ha a megadott tartományokban törölte a szöveget, a módosított dokumentumot a Dokumentum osztály Mentés metódusával mentheti. Íme egy példa:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 ```
 
-Ebben a példában a módosított dokumentumot "WorkingWithRangesDeleteText.ModifiedDocument.docx" néven mentjük el.
+Ebben a példában a módosított dokumentumot "WorkingWithRangesDeleteText.ModifiedDocument.docx" néven mentjük.
 
-### Példa forráskód a "Szöveg törlése a tartományokban" funkcióhoz az Aspose.Words for .NET-hez
+### Példa forráskód a "Szöveg törlése a tartományokban" funkcióhoz az Aspose.Words .NET-hez
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Ez a kód az index segítségével éri el a dokumentum első részét.`0` és törli az összes szöveget az adott tartományon belül.
+ Ez a kód az index segítségével éri el a dokumentum első részét`0` és törli az összes szöveget az adott tartományon belül.
 
 #### K: Törölhetek szöveget több tartományból egy Word-dokumentumban az Aspose.Words for .NET használatával?
 

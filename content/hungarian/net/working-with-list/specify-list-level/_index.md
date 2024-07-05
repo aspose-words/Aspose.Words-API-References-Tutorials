@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Hozzon létre egy számozott listát az egyik Microsoft Word listasablon alapján.
+// Hozzon létre egy számozott listát az egyik Microsoft Word listasablon alapján
 //és alkalmazza a dokumentumkészítő aktuális bekezdésére.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Hozzon létre egy felsorolásjeles listát a Microsoft Word listasablonjainak egyike alapján.
+// Hozzon létre egy felsorolásjeles listát a Microsoft Word listasablonjainak egyike alapján
 //és alkalmazza a dokumentumkészítő aktuális bekezdésére.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 

@@ -1,74 +1,74 @@
 ---
-title: ページレイアウトを更新する
-linktitle: ページレイアウトを更新する
+title: ページレイアウトの更新
+linktitle: ページレイアウトの更新
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word ドキュメントを結合および追加するときにページ レイアウトを更新する方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書を結合および追加するときにページ レイアウトを更新する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/update-page-layout/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET のページ レイアウトの更新機能を使用するプロセスについて説明します。この機能により、Word 文書を結合および追加するときにページ レイアウトが正しく更新されます。
+このチュートリアルでは、Aspose.Words for .NET のページ レイアウト更新機能を使用する手順について説明します。この機能により、Word 文書を結合および追加するときにページ レイアウトが正しく更新されます。
 
 ## 前提条件
 
-始める前に、以下のものがあることを確認してください。
+始める前に、次のものがあることを確認してください。
 
-1. Aspose.Words for .NET がインストールされています。 Aspose Web サイトからダウンロードするか、NuGet 経由でインストールできます。
+1. Aspose.Words for .NET がインストールされています。Aspose Web サイトからダウンロードするか、NuGet 経由でインストールできます。
 2. Visual Studio またはその他の C# 開発環境。
 
-## ステップ 1: ドキュメント ディレクトリを初期化する
+## ステップ1: ドキュメントディレクトリを初期化する
 
-まず、ドキュメント ディレクトリへのパスを設定する必要があります。の値を変更します。`dataDir`変数をドキュメントが配置されているパスに設定します。
+まず、ドキュメントディレクトリへのパスを設定する必要があります。`dataDir`ドキュメントが保存されているパスへの変数。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ 2: ソースドキュメントと宛先ドキュメントをロードする
+## ステップ2: ソースドキュメントと宛先ドキュメントを読み込む
 
-次に、Aspose.Words を使用してソース ドキュメントと宛先ドキュメントをロードする必要があります。`Document`クラス。ファイル名を更新します。`Document`ドキュメント名に従ってコンストラクターを作成します。
+次に、Aspose.Wordsを使用してソースドキュメントと宛先ドキュメントをロードする必要があります。`Document`クラス。`Document`ドキュメント名に応じてコンストラクターを作成します。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## ステップ 3: 宛先ドキュメントのページ レイアウトを更新する
+## ステップ3: 宛先ドキュメントのページレイアウトを更新する
 
-ソースドキュメントを追加する前にページレイアウトが正しく更新されていることを確認するには、`UpdatePageLayout`宛先ドキュメントのメソッド。
+ソース文書を追加する前にページレイアウトが正しく更新されていることを確認するには、`UpdatePageLayout`宛先ドキュメントのメソッド。
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## ステップ 4: ソースドキュメントを宛先ドキュメントに追加する
+## ステップ4: ソースドキュメントを宛先ドキュメントに追加する
 
-これで、`AppendDocument`の方法`Document`クラス。の`ImportFormatMode.KeepSourceFormatting`パラメータを使用すると、追加操作中にソースの書式設定が確実に保持されます。
+これで、ソース文書を宛先文書に追加することができます。`AppendDocument`方法の`Document`クラス。`ImportFormatMode.KeepSourceFormatting`パラメータにより、追加操作中にソースの書式が保持されます。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## ステップ 5: ページ レイアウトを再度更新する
+## ステップ5: ページレイアウトを再度更新する
 
-ソースドキュメントを追加した後、`UpdatePageLayout`宛先ドキュメントのメソッドを再度実行して、追加操作後に行われた変更がレンダリングされた出力に反映されていることを確認します。
+ソース文書を追加した後、`UpdatePageLayout`追加操作後に加えられた変更がレンダリングされた出力に反映されるように、宛先ドキュメントに対して再度メソッドを実行します。
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## ステップ 6: 最終ドキュメントを保存する
+## ステップ6: 最終文書を保存する
 
-最後に、ページ レイアウトの更新機能を有効にして、結合されたドキュメントを保存します。`Save`の方法`Document`クラス。
+最後に、ページレイアウトの更新機能を有効にして結合した文書を保存します。`Save`方法の`Document`クラス。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 ```
 
-### Aspose.Words for .NET を使用したページ レイアウトの更新のソース コードの例
+### Aspose.Words for .NET を使用してページ レイアウトを更新するためのサンプル ソース コード
 
-Aspose.Words for .NET を使用した C# の「ページ レイアウトの更新」機能の完全なソース コードは次のとおりです。
+以下は、Aspose.Words for .NET を使用した C# の「ページ レイアウトの更新」機能の完全なソース コードです。
 
 ```csharp
 	//ドキュメントディレクトリへのパス
@@ -76,15 +76,15 @@ Aspose.Words for .NET を使用した C# の「ページ レイアウトの更�
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//宛先ドキュメントが PDF、画像などにレンダリングされる場合。
-	//または、UpdatePageLayout がソース ドキュメントの前に呼び出されます。追加されており、
-	//その後に行われた変更は、レンダリングされた出力には反映されません。
+	//宛先ドキュメントが PDF や画像などにレンダリングされる場合
+	//またはUpdatePageLayoutがソースドキュメントの前に呼び出されます。追加されます。
+	//その後の変更はレンダリングされた出力には反映されません。
 	dstDoc.UpdatePageLayout();
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	//レンダリングされた出力に変更を更新するには、UpdatePageLayout を再度呼び出す必要があります。
-	//再度呼び出されないと、追加されたドキュメントは次のレンダリングの出力に表示されません。
+	//変更をレンダリングされた出力に更新するには、UpdatePageLayout を再度呼び出す必要があります。
+	//再度呼び出されない場合、追加されたドキュメントは次のレンダリングの出力には表示されません。
 	dstDoc.UpdatePageLayout();
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 ```
 
-それでおしまい！ Aspose.Words for .NET を使用してページ レイアウトの更新機能を正常に実装しました。最終的なドキュメントには、ページ レイアウトが正しく更新されたマージされたコンテンツが含まれます。
+これで完了です。Aspose.Words for .NET を使用してページ レイアウトの更新機能を正常に実装しました。最終的なドキュメントには、ページ レイアウトが正しく更新された結合されたコンテンツが含まれます。

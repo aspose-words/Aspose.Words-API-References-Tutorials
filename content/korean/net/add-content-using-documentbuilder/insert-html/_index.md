@@ -88,7 +88,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 
 Word 문서에 HTML을 삽입하는 것이 이보다 쉬웠던 적은 없었습니다. 그렇죠? .NET용 Aspose.Words를 사용하면 HTML의 강력한 기능과 Word 문서의 다양성을 원활하게 혼합할 수 있습니다. 보고서 생성을 자동화하든, 아름다운 형식의 문서를 작성하든 이 도구는 최고의 솔루션입니다.
 
-궁금한 점이 있거나 추가 도움이 필요한 경우 주저하지 말고 다음을 확인하세요.[선적 서류 비치](https://reference.aspose.com/words/net/), [지원 포럼](https://forum.aspose.com/c/words/8) , 또는 스스로에게[임시 면허증](https://purchase.aspose.com/temporary-license/) .NET용 Aspose.Words의 잠재력을 최대한 활용하세요.
+궁금한 점이 있거나 추가 도움이 필요한 경우 주저하지 말고 다음을 확인하세요.[선적 서류 비치](https://reference.aspose.com/words/net/), [지원 포럼](https://forum.aspose.com/c/words/8) , 또는 스스로에게[임시면허](https://purchase.aspose.com/temporary-license/) .NET용 Aspose.Words의 잠재력을 최대한 활용하세요.
 
 즐거운 코딩하세요!
 
@@ -104,7 +104,7 @@ Word 문서에 HTML을 삽입하는 것이 이보다 쉬웠던 적은 없었습�
 예, HTML이 삽입되면 Aspose.Words for .NET에서 제공하는 다양한 방법을 사용하여 문서를 추가로 조작할 수 있습니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?  
- 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 완전한 기능을 위해.
+ 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 또는[임시면허](https://purchase.aspose.com/temporary-license/) 완전한 기능을 위해.
 
 ### 더 많은 튜토리얼과 예제는 어디서 찾을 수 있나요?  
  그만큼[선적 서류 비치](https://reference.aspose.com/words/net/) 그리고[지원 포럼](https://forum.aspose.com/c/words/8)자세한 가이드와 커뮤니티 지원을 시작하기에 좋은 곳입니다.

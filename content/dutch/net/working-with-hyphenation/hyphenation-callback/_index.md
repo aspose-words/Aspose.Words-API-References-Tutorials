@@ -10,7 +10,7 @@ url: /nl/net/working-with-hyphenation/hyphenation-callback/
 
 ## Invoering
 
-Hallo daar! Ben je ooit verstrikt geraakt in de complexiteit van tekstopmaak, vooral als je te maken hebt met talen die woordafbreking vereisen? Je bent niet alleen. Afbreking is weliswaar cruciaal voor de juiste tekstopmaak, maar kan een beetje hoofdpijn veroorzaken. Maar Raad eens? Aspose.Words voor .NET staat voor u klaar. Met deze krachtige bibliotheek kunt u de tekstopmaak naadloos beheren, inclusief het afbreken van tekst via een terugbelmechanisme. Gefascineerd? Laten we eens kijken hoe u een callback voor woordafbreking kunt implementeren met behulp van Aspose.Words voor .NET.
+Hallo daar! Bent u ooit verstrikt geraakt in de complexiteit van tekstopmaak, vooral als u te maken heeft met talen waarin woordafbreking vereist is? Je bent niet alleen. Afbreking is weliswaar cruciaal voor de juiste tekstopmaak, maar kan een beetje hoofdpijn veroorzaken. Maar Raad eens? Aspose.Words voor .NET staat voor u klaar. Met deze krachtige bibliotheek kunt u de tekstopmaak naadloos beheren, inclusief het afbreken van tekst via een terugbelmechanisme. Gefascineerd? Laten we eens kijken hoe u een callback voor woordafbreking kunt implementeren met behulp van Aspose.Words voor .NET.
 
 ## Vereisten
 

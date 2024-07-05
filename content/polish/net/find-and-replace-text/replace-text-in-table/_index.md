@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### P: Jak mogę uzyskać dostęp do tabeli w dokumencie przy użyciu Aspose.Words dla .NET?
 
-Odp.: Po załadowaniu dokumentu możesz uzyskać dostęp do tabeli, w której chcesz dokonać zamiany tekstu. W Aspose.Words dla .NET możesz używać`GetChild` metoda z`NodeType.Table` parametry, aby uzyskać żądaną tabelę. Na przykład:
+Odp.: Po załadowaniu dokumentu możesz uzyskać dostęp do tabeli, w której chcesz dokonać zamiany tekstu. W Aspose.Words dla .NET możesz używać`GetChild` metoda z`NodeType.Table` parametr, aby uzyskać żądaną tabelę. Na przykład:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

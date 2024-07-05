@@ -1,6 +1,6 @@
 ---
-title: Chấp nhận đánh giá
-linktitle: Chấp nhận đánh giá
+title: Chấp nhận sửa đổi
+linktitle: Chấp nhận sửa đổi
 second_title: API xử lý tài liệu Aspose.Words
 description: Tìm hiểu cách chấp nhận bản sửa đổi đối với tài liệu Word bằng Aspose.Words for .NET
 type: docs
@@ -74,7 +74,7 @@ doc.StopTrackRevisions();
 ```
 ## Bước 6: Lưu tài liệu
 
- Sau khi chèn trường biểu mẫu nhập văn bản, hãy lưu tài liệu vào vị trí mong muốn bằng cách sử dụng`Save` phương pháp. Đảm bảo cung cấp đường dẫn tệp thích hợp:
+ Sau khi chèn trường biểu mẫu nhập văn bản, hãy lưu tài liệu vào vị trí mong muốn bằng cách sử dụng`Save`phương pháp. Đảm bảo cung cấp đường dẫn tệp thích hợp:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Đoạn sửa đổi đã xóa sẽ bị xóa sau khi chúng tôi chấp nhận thay đổi.
+// Đoạn sửa đổi xóa sẽ bị xóa khi chúng tôi chấp nhận thay đổi.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

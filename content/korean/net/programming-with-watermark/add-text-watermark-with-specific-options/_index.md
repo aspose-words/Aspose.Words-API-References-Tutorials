@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## 3단계: 특정 옵션으로 텍스트 워터마크 추가
 
- 우리는`TextWatermarkOptions` 클래스를 선택하고 텍스트 워터마크에 대해 원하는 옵션을 설정합니다.
+ 우리는`TextWatermarkOptions`클래스를 선택하고 텍스트 워터마크에 대해 원하는 옵션을 설정합니다.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

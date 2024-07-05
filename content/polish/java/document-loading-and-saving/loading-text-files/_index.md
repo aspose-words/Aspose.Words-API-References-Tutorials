@@ -160,7 +160,7 @@ W tym przewodniku omówiliśmy, jak ładować pliki tekstowe za pomocą Aspose.W
 
 ### Co to jest Aspose.Words dla Java?
 
-Aspose.Words for Java to potężna biblioteka do przetwarzania dokumentów, która umożliwia programistom tworzenie, manipulowanie i konwertowanie dokumentów programu Word w aplikacjach Java. Zapewnia szeroką gamę funkcji do pracy z tekstem, tabelami, obrazami i innymi elementami dokumentu.
+Aspose.Words for Java to potężna biblioteka do przetwarzania dokumentów, która umożliwia programistom programowe tworzenie, manipulowanie i konwertowanie dokumentów Word w aplikacjach Java. Zapewnia szeroką gamę funkcji do pracy z tekstem, tabelami, obrazami i innymi elementami dokumentu.
 
 ### Jak mogę rozpocząć pracę z Aspose.Words dla Java?
 

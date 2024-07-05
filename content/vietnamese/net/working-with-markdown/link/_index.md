@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Bước 2: Chèn liên kết
 
- Chúng ta có thể chèn một liên kết bằng cách sử dụng`InsertHyperlink` phương pháp của trình tạo tài liệu. Chúng ta cần chỉ định văn bản liên kết, ở đây là "Apose", cũng như URL đích.
+ Chúng ta có thể chèn một liên kết bằng cách sử dụng`InsertHyperlink` phương pháp của trình tạo tài liệu. Chúng ta cần chỉ định văn bản liên kết, ở đây là "Aspose", cũng như URL đích.
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", sai);

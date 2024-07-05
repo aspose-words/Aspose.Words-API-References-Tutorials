@@ -91,7 +91,7 @@ Aspose.Words umožňuje vkládání písem v některých formátech, jako je PDF
 
 ### Q4: Kde mohu získat podporu pro Aspose.Words?
 
- Pro podporu navštivte stránku[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).
+ Pro podporu navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Q5: Mohu si zakoupit dočasnou licenci?
 

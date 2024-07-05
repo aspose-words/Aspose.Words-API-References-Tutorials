@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. Adım: Bağlantı ekleme
 
- kullanarak bir bağlantı ekleyebiliriz.`InsertHyperlink` belge oluşturucu yöntemi. Burada bağlantı metnini "Apose" ve hedef URL'yi belirtmemiz gerekiyor.
+ kullanarak bir bağlantı ekleyebiliriz.`InsertHyperlink` belge oluşturucu yöntemi. Bağlantı metnini, burada "Aspose"u ve hedef URL'yi belirtmemiz gerekiyor.
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);

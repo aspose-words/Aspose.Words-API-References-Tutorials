@@ -93,4 +93,4 @@ Odp.: Aspose.Words obsługuje szeroką gamę formatów konwersji pól, w tym for
 
 #### P: Jak zaktualizować pole konwersji w dokumencie Word za pomocą Aspose.Words?
 
-Odp.: Aby zaktualizować pole konwersji w dokumencie Word za pomocą Aspose.Words, możesz użyć metody UpdateFields. Metoda ta wykonuje pętlę po dokumencie i aktualizuje wszystkie pola, łącznie z polami konwersji, przeliczając wartości na podstawie bieżących danych.
+Odp.: Aby zaktualizować pole konwersji w dokumencie Word za pomocą Aspose.Words, możesz użyć metody UpdateFields. Ta metoda przegląda dokument i aktualizuje wszystkie pola, w tym pola konwersji, przeliczając wartości na podstawie bieżących danych.

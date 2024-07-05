@@ -9,7 +9,7 @@ url: /vi/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Nếu bạn đã từng gặp phải vấn đề về phông chữ không hiển thị chính xác trong tài liệu của mình thì bạn không đơn độc. Quản lý cài đặt phông chữ và nhận thông báo về việc thay thế phông chữ có thể giúp bạn đỡ đau đầu hơn rất nhiều. Trong hướng dẫn thông báo toàn diện này, chúng ta sẽ khám phá cách xử lý phông chữ bằng Aspose.Words dành cho .NET, đảm bảo tài liệu của bạn luôn trông đẹp nhất.
+Nếu bạn đã từng gặp phải vấn đề về phông chữ không hiển thị chính xác trong tài liệu của mình thì bạn không đơn độc. Quản lý cài đặt phông chữ và nhận thông báo về việc thay thế phông chữ có thể giúp bạn đỡ đau đầu hơn rất nhiều. Trong hướng dẫn toàn diện này, chúng ta sẽ khám phá cách xử lý thông báo phông chữ bằng Aspose.Words cho .NET, đảm bảo tài liệu của bạn luôn trông đẹp nhất.
 
 ## Điều kiện tiên quyết
 

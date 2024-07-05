@@ -15,7 +15,7 @@ url: /ru/net/remove-content/remove-table-of-contents/
 
 Прежде чем мы начнем, давайте убедимся, что у вас есть все необходимое:
 
-1.  Библиотека Aspose.Words для .NET. Если вы еще этого не сделали, загрузите и установите библиотеку Aspose.Words для .NET из[Релизы.](https://releases.aspose.com/words/net/).
+1.  Библиотека Aspose.Words для .NET. Если вы еще этого не сделали, загрузите и установите библиотеку Aspose.Words для .NET из[Aspose.Релизы](https://releases.aspose.com/words/net/).
 2. Среда разработки. IDE, такая как Visual Studio, упростит кодирование.
 3. .NET Framework: убедитесь, что у вас установлена .NET Framework.
 4. Документ Word: у вас есть документ Word (.docx) с оглавлением, который вы хотите удалить.
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
  Заменять`"your-document.docx"` с именем вашего файла. Эта строка кода загружает ваш документ, и мы можем начать над ним работать.
 
-## Шаг 3. Определите и удалите поле TOC.
+## Шаг 3. Определите и удалите поле TOC.
 
 Вот где происходит волшебство. Мы собираемся найти поле TOC и удалить его.
 
@@ -89,7 +89,7 @@ Aspose.Words for .NET — это надежная библиотека .NET дл
 
 ### 2. Могу ли я использовать Aspose.Words бесплатно?
 
- Да, вы можете использовать Aspose Words с.[бесплатная пробная версия](https://releases.aspose.com/) или получить[временная лицензия](https://purchase.aspose.com/temporary-license/).
+ Да, вы можете использовать Aspose.Words с[бесплатная пробная версия](https://releases.aspose.com/) или получить[временная лицензия](https://purchase.aspose.com/temporary-license/).
 
 ### 3. Можно ли удалить другие поля с помощью Aspose.Words?
 

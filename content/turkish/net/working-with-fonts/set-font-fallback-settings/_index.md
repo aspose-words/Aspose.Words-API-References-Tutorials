@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Adım 4: Yazı Tipi Ayarlarını Belgeye Uygulayın
 
- Yapılandırılmış olanı ata`FontSettings`belgeye. Bu, belge oluşturulurken yazı tipi geri dönüş kurallarının uygulanmasını sağlar.
+ Yapılandırılmış olanı ata`FontSettings` belgeye. Bu, belge oluşturulurken yazı tipi geri dönüş kurallarının uygulanmasını sağlar.
 
 ```csharp
 doc.FontSettings = fontSettings;

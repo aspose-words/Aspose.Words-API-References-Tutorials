@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Étape 3 : Configurer les unités de mesure
 
-Nous allons maintenant convertir les valeurs des marges, des distances d'en-tête et de pied de page, etc. dans différentes unités de mesure. Utilisez le code suivant pour spécifier les valeurs dans des unités de mesure spécifiques :
+Nous allons maintenant convertir les valeurs des marges, des distances d’en-tête et de pied de page, etc. dans différentes unités de mesure. Utilisez le code suivant pour spécifier des valeurs dans des unités de mesure spécifiques :
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Ce code utilise le`ConvertUtil` classe d'Aspose.Words pour convertir les valeurs spécifiées en pouces (`InchToPoint` ). Vous pouvez également utiliser d'autres méthodes de conversion disponibles dans le`ConvertUtil` classe pour convertir les valeurs vers d’autres unités de mesure.
+ Ce code utilise le`ConvertUtil` classe de Aspose.Words pour convertir les valeurs spécifiées en pouces (`InchToPoint` ). Vous pouvez également utiliser d'autres méthodes de conversion disponibles dans le`ConvertUtil` classe pour convertir les valeurs vers d’autres unités de mesure.
 
 ### Exemple de code source pour la conversion entre unités de mesure à l'aide d'Aspose.Words pour .NET
 
@@ -56,4 +56,4 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
   
 ```
 
-Vous avez maintenant appris à effectuer une conversion entre les unités de mesure lors de la spécification des marges, des distances d'en-tête et de pied de page, etc. dans un document à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape fourni dans ce tutoriel, vous pourrez facilement spécifier les valeurs dans les unités de mesure souhaitées dans vos propres documents.
+Vous avez maintenant appris à effectuer une conversion entre les unités de mesure lors de la spécification des marges, des distances d'en-tête et de pied de page, etc. dans un document à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape fourni dans ce didacticiel, vous pouvez facilement spécifier les valeurs dans les unités de mesure souhaitées dans vos propres documents.

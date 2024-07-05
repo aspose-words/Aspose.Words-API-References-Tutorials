@@ -17,7 +17,7 @@ Word 문서에서 원치 않는 목차(TOC)를 처리하는 데 지치셨나요?
 
 1.  .NET 라이브러리용 Aspose.Words: 아직 설치하지 않은 경우 다음에서 .NET용 Aspose.Words 라이브러리를 다운로드하여 설치하세요.[Aspose.릴리스](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 IDE를 사용하면 코딩이 더 쉬워집니다.
-3. .NET Framework: .NET Framework가 설치되어 있는지 확인하세요.
+3. .NET Framework: .NET Framework가 설치되어 있는지 확인하십시오.
 4. Word 문서: 제거하려는 목차가 포함된 Word 문서(.docx)가 있습니다.
 
 ## 네임스페이스 가져오기
@@ -89,7 +89,7 @@ Aspose.Words for .NET은 문서 조작을 위한 강력한 .NET 라이브러리�
 
 ### 2. Aspose.Words를 무료로 사용할 수 있나요?
 
- 예, Aspose.Words를 다음과 함께 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/).
+ 예, Aspose.Words를 다음과 함께 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시면허](https://purchase.aspose.com/temporary-license/).
 
 ### 3. Aspose.Words를 사용하여 다른 필드를 제거할 수 있습니까?
 

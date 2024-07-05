@@ -70,7 +70,7 @@ Ebben az oktatóanyagban elmagyaráztuk, hogyan exportálhat fejléc- és lábl�
 
 ### Gyakran Ismételt Kérdések
 
-### K: Mit jelent a fejléc és lábléc könyvjelzők exportálása Word-dokumentumból PDF-dokumentumba?
+### K: Mit jelent a fejléc- és lábléc-könyvjelzők exportálása Word-dokumentumból PDF-dokumentumba?
 V: A fejléc- és lábléc-könyvjelzők exportálása Word-dokumentumból PDF-dokumentumba egy olyan szolgáltatás, amellyel a fej- és láblécekből könyvjelzőket tarthat és hozhat létre a PDF-dokumentumban. az eredeti Word-dokumentum láblécében. Ez lehetővé teszi a felhasználók számára, hogy gyorsan és egyszerűen navigálhassanak a PDF-dokumentumban a fejléceknek és lábléceknek megfelelő könyvjelzők használatával.
 
 ### K: Hogyan használhatom az Aspose.Words for .NET alkalmazást fejléc- és lábléc-könyvjelzők exportálására Word-dokumentumból PDF-dokumentumba?

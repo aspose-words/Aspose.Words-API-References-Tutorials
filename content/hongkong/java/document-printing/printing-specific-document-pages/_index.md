@@ -23,7 +23,7 @@ url: /zh-hant/java/document-printing/printing-specific-document-pages/
 
 ## 建立一個新的 Java 項目
 
-首先，我們在您首選的 IDE 中建立一個新的 Java 專案。您可以將其命名為任何您喜歡的名稱。該項目將作為我們列印特定文件頁面的工作空間。
+首先，我們在您首選的 IDE 中建立一個新的 Java 專案。您可以將其命名為任何您喜歡的名稱。該項目將作為我們列印特定文檔頁面的工作區。
 
 ## 新增 Aspose.Words 依賴項
 

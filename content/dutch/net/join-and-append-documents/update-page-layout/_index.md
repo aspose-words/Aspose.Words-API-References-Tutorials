@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Stap 2: Laad de bron- en doeldocumenten
 
-Vervolgens moet u de bron- en doeldocumenten laden met behulp van Aspose.Words.`Document` klas. Werk de bestandsnamen bij in het`Document` constructor volgens uw documentnamen.
+Vervolgens moet u de bron- en doeldocumenten laden met behulp van Aspose.Words`Document` klas. Werk de bestandsnamen bij in het`Document` constructor volgens uw documentnamen.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");

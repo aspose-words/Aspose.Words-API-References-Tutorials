@@ -85,7 +85,7 @@ doc.getFirstSection().getPageSetup().setDifferentFirstPageHeaderFooter(true);
 HeaderFooter firstPageHeader = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 firstPageHeader.appendParagraph("First Page Header");
 
-//儲存格式化文檔
+//儲存格式化的文檔
 doc.save("formatted_document.docx");
 ```
 

@@ -1,6 +1,6 @@
 ---
-title: Конвертировать метафайлы в PNG
-linktitle: Конвертировать метафайлы в PNG
+title: Конвертировать метафайлы в Png
+linktitle: Конвертировать метафайлы в Png
 second_title: API обработки документов Aspose.Words
 description: Узнайте, как конвертировать метафайлы в изображения PNG при загрузке документов с помощью Aspose.Words для .NET.
 type: docs

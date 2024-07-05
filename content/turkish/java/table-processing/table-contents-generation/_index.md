@@ -61,7 +61,7 @@ com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
 tocField.update();
 ```
 
-Yukarıdaki kod belgenizde temel bir TOC oluşturur. Düzeyleri, biçimlendirmeyi ve daha fazlasını belirterek bunu daha da özelleştirebilirsiniz.
+Yukarıdaki kod belgenizde temel bir İçindekiler oluşturur. Düzeyleri, biçimlendirmeyi ve daha fazlasını belirterek bunu daha da özelleştirebilirsiniz.
 
 ## Gelişmiş TOC Özelleştirmesi
 

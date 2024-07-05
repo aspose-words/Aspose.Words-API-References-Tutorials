@@ -42,7 +42,7 @@ Detta kommer att skapa en krypterad version av PDF-dokumentet i den angivna kata
 
 ## Steg 3: Spara det krypterade PDF-dokumentet
 
-Efter att ha laddat upp och valfritt krypterat PDF-dokumentet kan du spara det i ett annat format eller bearbeta det vidare enligt dina specifika behov.
+Efter att ha laddat upp och eventuellt krypterat PDF-dokumentet kan du spara det i ett annat format eller bearbeta det vidare enligt dina specifika behov.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions);

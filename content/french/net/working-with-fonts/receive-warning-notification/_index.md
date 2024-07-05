@@ -12,7 +12,7 @@ url: /fr/net/working-with-fonts/receive-warning-notification/
 
 ## Conditions préalables
 
-Avant de plonger, assurez-vous d'avoir les éléments suivants :
+Avant de plonger, assurez-vous d’avoir les éléments suivants :
 
 - Connaissance de base de C# : La familiarité avec C# vous aidera à comprendre et à mettre en œuvre les étapes.
 -  Aspose.Words for .NET Library : téléchargez-le et installez-le à partir du[lien de téléchargement](https://releases.aspose.com/words/net/).

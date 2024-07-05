@@ -107,7 +107,7 @@ Použití záložek v Aspose.Words pro Java může výrazně zjednodušit úlohy
 
 Řádek podle jeho záložky můžete odstranit tak, že nejprve najdete řádek označený záložkou a poté jej odstraníte z dokumentu.
 
-### Jaké jsou běžné případy použití záložek?
+### Jaké jsou některé běžné případy použití záložek?
 
 Záložky se běžně používají pro generování obsahu, extrahování konkrétního obsahu a automatizaci procesů generování dokumentů.
 

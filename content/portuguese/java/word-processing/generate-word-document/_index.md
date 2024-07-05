@@ -132,7 +132,7 @@ Aspose.Words permite converter documentos do Word em vários formatos, como PDF,
 
 Aspose.Words oferece recursos avançados para ajustar e personalizar seus documentos do Word.
 
-### 8.1 Adicionando marcas d’água
+### 8.1 Adicionando marcas d'água
 
 Adicione marcas d’água, como “Confidencial” ou “Rascunho”, aos seus documentos para indicar seu status.
 

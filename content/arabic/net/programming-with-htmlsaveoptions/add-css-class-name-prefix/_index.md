@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ومجموعات`CssStyleSheetType` ل`CssStyleSheetType.External`لإنشاء ورقة أنماط CSS خارجية، و`CssClassNamePrefix` ل`"pfx_"` إلى البادئة`"pfx_"` لأسماء فئات CSS.
+ يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ومجموعات`CssStyleSheetType` ل`CssStyleSheetType.External`لإنشاء ورقة أنماط CSS خارجية، و`CssClassNamePrefix` ل`"pfx_"` إلى البادئة`"pfx_"` لأسماء فئة CSS.
 
 ## الخطوة 4: تحويل وحفظ المستند إلى HTML
 

@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة مرقمة بناءً على أحد قوالب قوائم Microsoft Word.
+// قم بإنشاء قائمة مرقمة بناءً على أحد قوالب قوائم Microsoft Word
 //وتطبيقه على الفقرة الحالية لمنشئ المستندات.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// قم بإنشاء قائمة ذات تعداد نقطي استناداً إلى أحد قوالب قوائم Microsoft Word.
+// قم بإنشاء قائمة ذات تعداد نقطي استناداً إلى أحد قوالب قوائم Microsoft Word
 //وتطبيقه على الفقرة الحالية لمنشئ المستندات.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 

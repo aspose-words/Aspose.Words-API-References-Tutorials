@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Bước 2: Tải tài liệu nguồn và đích
 
-Tiếp theo, bạn cần tải tài liệu nguồn và đích bằng Aspose.Words.`Document` lớp học. Cập nhật tên tập tin trong`Document` hàm tạo theo tên tài liệu của bạn.
+Tiếp theo, bạn cần tải tài liệu nguồn và đích bằng Aspose.Words`Document` lớp học. Cập nhật tên tập tin trong`Document` hàm tạo theo tên tài liệu của bạn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Bước 3: Nối tài liệu nguồn với kiểu đích
 
- Để nối tài liệu nguồn vào tài liệu đích trong khi áp dụng kiểu của tài liệu đích, bạn có thể sử dụng`AppendDocument` phương pháp của`Document` lớp học với`ImportFormatMode.UseDestinationStyles` thông số.
+ Để nối tài liệu nguồn vào tài liệu đích trong khi áp dụng kiểu của tài liệu đích, bạn có thể sử dụng`AppendDocument` phương pháp của`Document` lớp học với`ImportFormatMode.UseDestinationStyles` tham số.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);

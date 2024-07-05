@@ -72,7 +72,7 @@ Bu eğitimde size Aspose.Words for .NET'in dijital imza algılama özelliğini k
 
 #### Dijital imzanın aranacağı belgelerin bulunduğu dizin nasıl belirlenir?
 
- Dijital imzayı aramak istediğiniz belgeleri içeren dizini belirtmek için,`dataDir` koddaki değişkenler. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
+ Dijital imzayı aramak istediğiniz belgeleri içeren dizini belirtmek için,`dataDir` koddaki değişken. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

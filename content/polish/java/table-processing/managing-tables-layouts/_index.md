@@ -30,7 +30,7 @@ Pierwszym krokiem w zarządzaniu tabelami jest ich utworzenie. Dzięki Aspose.Wo
 // Utwórz nowy dokument
 Document doc = new Document();
 
-// Utwórz tabelę z 3 wierszami i 4 kolumnami.
+// Utwórz tabelę z 3 wierszami i 4 kolumnami
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

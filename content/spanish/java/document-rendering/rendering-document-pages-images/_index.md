@@ -16,7 +16,7 @@ Antes de profundizar en los detalles técnicos, presentemos brevemente Aspose.Wo
 
 Antes de comenzar a codificar, asegúrese de cumplir con los siguientes requisitos previos:
 
-1.  Aspose.Words para Java: Descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
+1.  Aspose.Words para Java: descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
 2. Entorno de desarrollo Java: asegúrese de tener un entorno de desarrollo Java configurado en su máquina.
 

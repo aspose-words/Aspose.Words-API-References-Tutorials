@@ -2,112 +2,131 @@
 title: Vergelijk opties in Word-document
 linktitle: Vergelijk opties in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het uitleggen van de C#-broncode van de vergelijkingsopties in de Word-documentfunctie met Aspose.Words voor .NET.
+description: Leer hoe u Word-documenten kunt vergelijken met Aspose.Words voor .NET met onze stapsgewijze handleiding. Zorg moeiteloos voor documentconsistentie.
 type: docs
 weight: 10
 url: /nl/net/compare-documents/compare-options/
 ---
-In deze zelfstudie leggen we uit hoe u de functie Vergelijkingsopties in Word-documenten gebruikt met Aspose.Words voor .NET. Volg de onderstaande stappen om de broncode te begrijpen en de wijzigingen toe te passen.
+## Invoering
 
-## Stap 1: Vergelijk documenten met aangepaste opties
+Hallo mede-techliefhebbers! Heeft u ooit twee Word-documenten moeten vergelijken om te controleren op verschillen? Misschien werkt u aan een samenwerkingsproject en moet u zorgen voor consistentie tussen meerdere versies. Vandaag duiken we in de wereld van Aspose.Words voor .NET om u precies te laten zien hoe u opties in een Word-document kunt vergelijken. Deze tutorial gaat niet alleen over het schrijven van code, maar over het begrijpen van het proces op een leuke, boeiende en gedetailleerde manier. Dus pak je favoriete drankje en laten we aan de slag gaan!
 
- Laad om te beginnen twee documenten om te vergelijken. In dit voorbeeld gebruiken we de`Clone()` methode om een kopie van het originele document te maken. Hier is hoe:
+## Vereisten
+
+Voordat we onze handen vuil maken aan code, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben. Hier is een korte checklist:
+
+1.  Aspose.Words voor .NET-bibliotheek: U moet de Aspose.Words voor .NET-bibliotheek geïnstalleerd hebben. Als u dit nog niet heeft gedaan, kunt u deze downloaden[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Elke C#-ontwikkelomgeving zoals Visual Studio is voldoende.
+3. Basiskennis van C#: Een fundamenteel begrip van programmeren in C# zal nuttig zijn.
+4. Voorbeeld van Word-documenten: twee Word-documenten die u wilt vergelijken.
+
+Als u hiermee klaar bent, gaan we verder met het importeren van de benodigde naamruimten!
+
+## Naamruimten importeren
+
+Om Aspose.Words voor .NET effectief te gebruiken, moeten we een paar naamruimten importeren. Hier is het codefragment om dat te doen:
 
 ```csharp
-Document docA = new Document(MyDir + "Document.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Comparing;
+```
+
+Deze naamruimten bieden alle klassen en methoden die we nodig hebben om Word-documenten te manipuleren en te vergelijken.
+
+Laten we nu het proces van het vergelijken van opties in een Word-document opsplitsen in eenvoudige, begrijpelijke stappen.
+
+## Stap 1: Stel uw project in
+
+Laten we eerst ons project in Visual Studio opzetten.
+
+1. Maak een nieuw project: Open Visual Studio en maak een nieuw Console App-project (.NET Core).
+2. Aspose.Words-bibliotheek toevoegen: u kunt de Aspose.Words voor .NET-bibliotheek toevoegen via NuGet Package Manager. Zoek gewoon naar "Aspose.Words" en installeer het.
+
+## Stap 2: Initialiseer documenten
+
+Nu moeten we onze Word-documenten initialiseren. Dit zijn de bestanden die we zullen vergelijken.
+
+```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+Document docA = new Document(dataDir + "Document.docx");
 Document docB = docA.Clone();
 ```
 
-## Stap 2: Vergelijkingsopties configureren
+In dit fragment:
+- We specificeren de map waar onze documenten zijn opgeslagen.
+- We laden het eerste document (`docA`).
+-  Wij klonen`docA` maken`docB`. Op deze manier hebben we twee identieke documenten om mee te werken.
 
- We zullen nu de vergelijkingsopties configureren door een`CompareOptions` object en stel indien nodig de verschillende eigenschappen in. Hier is hoe:
+## Stap 3: Vergelijkingsopties configureren
+
+Vervolgens stellen we de opties in die bepalen hoe de vergelijking wordt uitgevoerd.
 
 ```csharp
 CompareOptions options = new CompareOptions
 {
-IgnoreFormatting = true,
-IgnoreHeadersAndFooters = true,
-IgnoreCaseChanges = true,
-IgnoreTables = true,
-IgnoreFields = true,
-IgnoreComments = true,
-IgnoreTextboxes=true,
-IgnoreFootnotes=true
+	IgnoreFormatting = true,
+	IgnoreHeadersAndFooters = true,
+	IgnoreCaseChanges = true,
+	IgnoreTables = true,
+	IgnoreFields = true,
+	IgnoreComments = true,
+	IgnoreTextboxes = true,
+	IgnoreFootnotes = true
 };
 ```
 
-## Stap 3: Vergelijk documenten met aangepaste opties
+Dit is wat elke optie doet:
+- IgnoreFormatting: Negeert eventuele opmaakwijzigingen.
+- IgnoreHeadersAndFooters: Negeert wijzigingen in kop- en voetteksten.
+- IgnoreCaseChanges: Negeert hoofdletterwijzigingen in tekst.
+- IgnoreTables: Negeert wijzigingen in tabellen.
+- IgnoreFields: negeert wijzigingen in velden.
+- IgnoreComments: Negeert wijzigingen in opmerkingen.
+- Negeer tekstvakken: negeert wijzigingen in tekstvakken.
+- Voetnoten negeren: negeert wijzigingen in voetnoten.
 
- We zullen nu gebruik maken van de`Compare()` methode waarbij de aangepaste opties worden doorgegeven om de twee documenten te vergelijken. Deze methode markeert de wijzigingen in het originele document. Hier is hoe:
+## Stap 4: Documenten vergelijken
+
+Nu we onze documenten en opties hebben ingesteld, gaan we ze vergelijken.
 
 ```csharp
-// Vergelijk documenten met aangepaste opties
 docA.Compare(docB, "user", DateTime.Now, options);
-
-// Controleer of de documenten gelijk zijn
-Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal": "Documents are not equal");
 ```
 
-### Voorbeeldbroncode voor vergelijkingsopties met Aspose.Words voor .NET
+In deze regel:
+-  Wij vergelijken`docA` met`docB`.
+- Wij specificeren een gebruikersnaam ("gebruiker") en de huidige datum en tijd.
 
-Hier is de volledige broncode voor de functie Vergelijk opties met Aspose.Words voor .NET:
+## Stap 5: Controleer en toon de resultaten
+
+Ten slotte controleren we de resultaten van de vergelijking en geven we weer of de documenten gelijk zijn of niet.
 
 ```csharp
-
-	Document docA = new Document(MyDir + "Document.docx");
-	Document docB = docA.Clone();
-
-	CompareOptions options = new CompareOptions
-	{
-		IgnoreFormatting = true,
-		IgnoreHeadersAndFooters = true,
-		IgnoreCaseChanges = true,
-		IgnoreTables = true,
-		IgnoreFields = true,
-		IgnoreComments = true,
-		IgnoreTextboxes = true,
-		IgnoreFootnotes = true
-	};
-
-	docA.Compare(docB, "user", DateTime.Now, options);
-
-	Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
-
+Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-Met deze code kunt u twee documenten vergelijken met behulp van aangepaste opties om specifieke elementen te negeren bij het vergelijken met Aspose.Words voor .NET.
+ Als`docA.Revisions.Count` nul is, betekent dit dat er geen verschillen zijn tussen de documenten. Anders geeft dit aan dat er enkele verschillen zijn.
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u de vergelijkingsopties in Aspose.Words voor .NET kunt gebruiken om het vergelijkingsproces aan te passen bij het vergelijken van twee documenten. Door verschillende opties op te geven, kunt u specifieke elementen negeren en het vergelijkingsproces flexibeler maken. Met deze functie heeft u meer controle over het vergelijkingsproces en kunt u dit afstemmen op uw specifieke vereisten. Aspose.Words voor .NET biedt krachtige mogelijkheden voor documentvergelijking, waardoor het gemakkelijk wordt om verschillen tussen documenten te identificeren en bepaalde elementen indien nodig te negeren.
+En daar heb je het! U hebt met succes twee Word-documenten vergeleken met Aspose.Words voor .NET. Dit proces kan een echte redder in nood zijn als u aan grote projecten werkt en consistentie en nauwkeurigheid moet garanderen. Vergeet niet dat de sleutel is om uw vergelijkingsopties zorgvuldig in te stellen, zodat de vergelijking op uw specifieke behoeften wordt afgestemd. Veel codeerplezier!
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is het doel van het gebruik van vergelijkingsopties in Aspose.Words voor .NET?
+### Kan ik meer dan twee documenten tegelijk vergelijken?  
+Aspose.Words voor .NET vergelijkt twee documenten tegelijk. Als u meerdere documenten wilt vergelijken, kunt u dit paarsgewijs doen.
 
-A: Met de vergelijkingsopties in Aspose.Words voor .NET kunt u het vergelijkingsproces aanpassen wanneer u twee documenten vergelijkt. Met deze opties kunt u opgeven welke elementen u tijdens de vergelijking moet negeren, zoals wijzigingen in de opmaak, kop- en voetteksten, tabellen, velden, opmerkingen, tekstvakken en voetnoten.
+### Hoe negeer ik wijzigingen in afbeeldingen?  
+ U kunt de configureren`CompareOptions` om verschillende elementen te negeren, maar het negeren van afbeeldingen vereist specifiek een aangepaste afhandeling.
 
-#### Vraag: Hoe gebruik ik vergelijkingsopties in Aspose.Words voor .NET?
+### Kan ik een gedetailleerd rapport krijgen van de verschillen?  
+Ja, Aspose.Words biedt gedetailleerde revisie-informatie waartoe u programmatisch toegang hebt.
 
-A: Volg deze stappen om vergelijkingsopties in Aspose.Words voor .NET te gebruiken:
-1. Laad de twee documenten die u wilt vergelijken in afzonderlijke documentobjecten.
-2.  Gebruik de`Clone()` methode om een kopie van het originele document te maken.
-3.  Maak een`CompareOptions` object en stel de eigenschappen ervan in om het vergelijkingsproces aan te passen. U kunt opgeven welke elementen u tijdens de vergelijking moet negeren.
-4.  Gebruik de`Compare()` methode op een van de documenten en geef het andere document en de`CompareOptions` object als parameters. Deze methode vergelijkt de documenten op basis van de opgegeven opties en markeert de wijzigingen in het originele document.
-5.  Controleer de`Revisions` eigendom van het originele document. Als de telling nul is, betekent dit dat de documenten identiek zijn, rekening houdend met de opgegeven opties.
+### Is het mogelijk om met een wachtwoord beveiligde documenten te vergelijken?  
+Ja, maar u moet eerst de documenten ontgrendelen met het juiste wachtwoord.
 
-#### Vraag: Wat zijn de gebruikelijke opties die beschikbaar zijn in CompareOptions?
-
-A: De gebruikelijke opties die beschikbaar zijn in CompareOptions zijn onder meer:
-- `IgnoreFormatting`: Negeert wijzigingen in de opmaak.
-- `IgnoreHeadersAndFooters`: Negeert wijzigingen in kop- en voetteksten.
-- `IgnoreCaseChanges`: Negeert hoofdletterwijzigingen (hoofdletters/kleine letters).
-- `IgnoreTables`: Negeert wijzigingen in tabellen.
-- `IgnoreFields`: Negeert wijzigingen in velden.
-- `IgnoreComments`: negeert wijzigingen in opmerkingen.
-- `IgnoreTextboxes`Negeert wijzigingen in tekstvakken.
-- `IgnoreFootnotes`: Negeert wijzigingen in voetnoten.
-
-#### Vraag: Kan ik aangepaste opties gebruiken voor specifieke elementen tijdens documentvergelijking?
-
- A: Ja, u kunt tijdens documentvergelijking aangepaste opties voor specifieke elementen gebruiken. Door de eigenschappen van de`CompareOptions` dienovereenkomstig bezwaar maakt, kunt u kiezen welke elementen u wilt negeren en welke u tijdens de vergelijking in overweging wilt nemen.
+### Waar kan ik meer voorbeelden en documentatie vinden?  
+ Meer voorbeelden en gedetailleerde documentatie vindt u op de[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/).

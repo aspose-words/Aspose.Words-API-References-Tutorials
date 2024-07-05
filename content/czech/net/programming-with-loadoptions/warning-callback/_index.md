@@ -40,7 +40,7 @@ public class DocumentLoadingWarningCallback : IWarningCallback
 
 V této třídě máme metodu Warning, která se volá vždy, když se při načítání dokumentu objeví varování. Tuto metodu můžete přizpůsobit tak, aby zpracovávala varování způsobem, který vám vyhovuje, jako je jejich uložení do souboru protokolu nebo jejich zobrazení v konzole.
 
-## Načítání dokumentu pomocí zpětného volání pro varování
+## Načítání dokumentu pomocí zpětného volání pro upozornění
 
 Nyní, když jsme nakonfigurovali možnosti načtení a vytvořili funkci zpětného volání pro varování, můžeme načíst dokument pomocí třídy Dokument a určit možnosti načtení. Zde je příklad:
 

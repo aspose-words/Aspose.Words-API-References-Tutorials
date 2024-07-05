@@ -2,33 +2,33 @@
 title: 警告ソースを使用する
 linktitle: 警告ソースを使用する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET で警告ソースを使用する方法のステップバイステップ ガイドを学習します。
+description: Aspose.Words for .NET で警告ソースを使用する方法をステップバイステップ ガイドで学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/use-warning-source/
 ---
 
-この例では、Aspose.Words for .NET で警告ソースを使用する方法を示します。警告ソースは、コールバック関数を使用する場合の警告の原因を示します。
+この例では、Aspose.Words for .NET で警告ソースを使用する方法を説明します。警告ソースは、コールバック関数を使用するときに警告の発生元を示します。
 
-## ステップ 1: ドキュメントをロードする
+## ステップ1: ドキュメントの読み込み
 
-警告を含む既存のドキュメントをロードします。`Load`の方法`Document`クラス。
+警告を含む既存の文書をロードするには、`Load`方法の`Document`クラス。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 ```
 
-## ステップ 3: 警告ソースの使用
+## ステップ3: 警告ソースの使用
 
-ドキュメントの設定により警告ソースを使用します。`WarningCallback`プロパティをコレクションに`WarningInfo`オブジェクト。
+警告ソースを使用するには、ドキュメントの`WarningCallback`コレクションのプロパティ`WarningInfo`オブジェクト。
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
 doc.WarningCallback = warnings;
 ```
 
-## ステップ 4: ドキュメントを保存する
+## ステップ4: ドキュメントを保存する
 
 最後に、ドキュメントを希望の形式で保存できます。
 
@@ -44,7 +44,7 @@ if (warningInfo.Source == WarningSource.Markdown)
 ### Aspose.Words for .NET で警告ソースを使用するためのサンプル ソース コード
 
 ```csharp
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 
@@ -60,18 +60,18 @@ foreach (WarningInfo warningInfo in warnings)
 }
 ```
 
-おめでとうございます！これで、Aspose.Words for .NET で警告ソースを使用する方法を学習しました。
+おめでとうございます。これで、Aspose.Words for .NET で警告ソースを使用する方法を学習しました。
 
 ### よくある質問
 
 #### Q: 「警告」タグの外観をカスタマイズできますか?
 
- A: 「警告」タグの形式は、使用される Markdown レンダラーによって異なります。ほとんどの場合、CSS を使用して外観をカスタマイズできます。`blockquote`ドキュメント内のタグ。
+ A: 「警告」タグの書式は、使用するMarkdownレンダラーによって異なります。ほとんどの場合、CSSを使用してターゲットを絞ることで外観をカスタマイズできます。`blockquote`ドキュメント内のタグ。
 
-#### Q: 「警告」タグにアイコンを追加することはできますか?
+#### Q: 「警告」タグにアイコンを追加することは可能ですか?
 
-A: はい、Markdown ドキュメントの HTML コードを使用して「警告」タグにアイコンを追加できます。を挿入できます`span`タグを適切なクラスで使用すると、警告テキストの横にアイコンが表示されます。
+A: はい、マークダウン文書のHTMLコードを使用して「警告」タグにアイコンを追加することは可能です。`span`警告テキストの横にアイコンを表示するには、適切なクラスのタグを使用します。
 
 #### Q: 「警告」タグはすべての Markdown リーダーと互換性がありますか?
 
- A: 「Warning」タグの互換性は、使用される Markdown レンダリングによって異なります。ほとんどの Markdown 読者は、`blockquote`タグを使用して強調表示されたテキストを表示しますが、正確な外観は異なる場合があります。
+ A: 「警告」タグの互換性は、使用するMarkdownレンダリングに依存します。ほとんどのMarkdownリーダーは、`blockquote`強調表示されたテキストを表示するためのタグですが、実際の外観は異なる場合があります。

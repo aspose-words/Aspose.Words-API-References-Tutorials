@@ -63,7 +63,7 @@ Di sini, kita membuat tabel baru dan menambahkannya ke badan bagian pertama doku
 
 ## Langkah 3: Menambahkan Baris dan Sel
 
-Sebuah tabel terdiri dari baris dan sel. Mari tambahkan elemen ini selangkah demi selangkah.
+Sebuah tabel terdiri dari baris dan sel. Mari tambahkan elemen ini langkah demi langkah.
 
 ### Menambahkan Baris
 

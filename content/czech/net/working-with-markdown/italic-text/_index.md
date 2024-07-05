@@ -1,6 +1,6 @@
 ---
-title: Italský text
-linktitle: Italský text
+title: Text kurzívou
+linktitle: Text kurzívou
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se používat kurzívu pomocí Aspose.Words pro .NET Podrobný průvodce.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // K přidání obsahu do dokumentu použijte tvůrce dokumentů.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Udělejte text italsky.
+// Udělejte text kurzívou.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
@@ -46,7 +46,7 @@ gratuluji! Nyní jste se naučili používat funkci textu kurzíva s Aspose.Word
 
 #### Otázka: Jak mohu v Aspose.Words napsat text kurzívou?
 
-Odpověď: Chcete-li text v Aspose.Words zobrazit kurzívou, můžete použít`Font.Italic` vlastnictvím`Run`objekt. Tuto vlastnost můžete nastavit na`true` kurzívou konkrétní text. Můžete například použít`run.Font.Italic=true` zvýraznit kurzívou text obsažený v`Run` objekt.
+Odpověď: Chcete-li text v Aspose.Words zobrazit kurzívou, můžete použít`Font.Italic` vlastnictvím`Run`objekt. Tuto vlastnost můžete nastavit na`true` kurzívou konkrétní text. Můžete například použít`run.Font.Italic=true` pro kurzívu textu obsaženého v`Run` objekt.
 
 #### Otázka: Je možné napsat kurzívou několik částí textu ve stejném odstavci?
 

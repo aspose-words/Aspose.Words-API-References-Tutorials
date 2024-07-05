@@ -40,7 +40,7 @@ Primero, cree un nuevo proyecto de C# en Visual Studio. Puede elegir una aplicac
 1. Abra Visual Studio y cree un nuevo proyecto.
 2. Seleccione "Aplicación de consola (.NET Core)" y haga clic en "Siguiente".
 3. Nombra tu proyecto y elige una ubicación para guardarlo. Haga clic en "Crear".
-4. Instale Aspose.Words para .NET a través del Administrador de paquetes NuGet. Haga clic derecho en su proyecto en el Explorador de soluciones, seleccione "Administrar paquetes NuGet" y busque "Apose.Words". Instale la última versión.
+4. Instale Aspose.Words para .NET a través del Administrador de paquetes NuGet. Haga clic derecho en su proyecto en el Explorador de soluciones, seleccione "Administrar paquetes NuGet" y busque "Aspose.Words". Instale la última versión.
 
 ## Paso 2: Inicializar documento y DocumentBuilder
 

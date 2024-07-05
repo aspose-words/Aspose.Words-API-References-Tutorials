@@ -61,7 +61,7 @@ doc.save("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskP
 
 ## Получение информации панели задач
 
-Чтобы получить информацию об панелях ссылок на задачи в документе, вы можете перебирать их и обращаться к ним:
+Чтобы получить информацию об панелях задач в документе, вы можете перебирать их и получать доступ к их ссылкам:
 
 ```java
 doc = new Document("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");

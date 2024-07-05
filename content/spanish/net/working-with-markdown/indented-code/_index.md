@@ -18,7 +18,7 @@ Primero, usaremos un generador de documentos para agregar contenido a nuestro do
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Paso 2: agregar estilo para el código especificado
+## Paso 2: agregar estilo al código con sangría
 
 Agregaremos un estilo personalizado para el código sangrado usando el`Styles.Add` método de la`Document` objeto. En este ejemplo, estamos creando un estilo llamado "IndentedCode" para código sangrado.
 
@@ -27,7 +27,7 @@ Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedC
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Paso 3: agregar el código especificado
+## Paso 3: agregar código con sangría
 
 Ahora podemos agregar un bloque de código sangrado usando el estilo personalizado "IndentedCode".
 
@@ -51,7 +51,7 @@ builder.Writeln("This is an indented code");
 
 ### Preguntas frecuentes
 
-#### P: ¿Qué es el código especificado en Markdown?
+#### P: ¿Qué es el código con sangría en Markdown?
 
 R: El código con sangría en Markdown es un método de formato que se utiliza para mostrar código en un documento de Markdown. Consiste en sangrar cada línea de código con espacios o tabulaciones.
 

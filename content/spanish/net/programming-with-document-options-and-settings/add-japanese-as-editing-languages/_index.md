@@ -1,6 +1,6 @@
 ---
-title: Agregar japonés como idioma de edición
-linktitle: Agregar japonés como idioma de edición
+title: Agregar japonés como idiomas de edición
+linktitle: Agregar japonés como idiomas de edición
 second_title: API de procesamiento de documentos Aspose.Words
 description: Guía paso a paso para agregar japonés como idioma de edición con Aspose.Words para .NET.
 type: docs

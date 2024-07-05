@@ -2,7 +2,7 @@
 title: Usando opções de carregamento em Aspose.Words para Java
 linktitle: Usando opções de carregamento
 second_title: API de processamento de documentos Java Aspose.Words
-description: Dominando as opções de carregamento em Aspose.Words para Java. Personalize o carregamento de documentos, lide com criptografia, converta formas, defina versões do Word e muito mais para um processamento eficiente de documentos Java.
+description: Dominando as opções de carregamento em Aspose.Words para Java. Personalize o carregamento de documentos, lide com criptografia, converta formas, defina versões do Word e muito mais para processamento eficiente de documentos Java.
 type: docs
 weight: 11
 url: /pt/java/document-loading-and-saving/using-load-options/

@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Bước 2: Tải tài liệu nguồn và đích
 
-Tiếp theo, bạn cần tải tài liệu nguồn và đích bằng Aspose.Words.`Document` lớp học. Cập nhật tên tập tin trong`Document` hàm tạo theo tên tài liệu của bạn.
+Tiếp theo, bạn cần tải tài liệu nguồn và đích bằng Aspose.Words`Document` lớp học. Cập nhật tên tập tin trong`Document` hàm tạo theo tên tài liệu của bạn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -1,28 +1,28 @@
 ---
-title: 确定 Aspose.Words for Java 中的文档格式
+title: 在 Aspose.Words for Java 中确定文档格式
 linktitle: 确定文档格式
 second_title: Aspose.Words Java 文档处理 API
-description: 了解如何使用 Aspose.Words 检测 Java 中的文档格式。识别 DOC、DOCX 等。有效地组织文件。
+description: 了解如何使用 Aspose.Words 检测 Java 中的文档格式。识别 DOC、DOCX 等。高效组织文件。
 type: docs
 weight: 25
 url: /zh/java/document-loading-and-saving/determining-document-format/
 ---
 
-## 在 Aspose.Words for Java 中确定文档格式简介
+## Aspose.Words for Java 中确定文档格式的简介
 
-在 Java 中进行文档处理时，确定正在处理的文件的格式至关重要。 Aspose.Words for Java 提供了用于识别文档格式的强大功能，我们将引导您完成整个过程。
+使用 Java 进行文档处理时，确定所处理文件的格式至关重要。Aspose.Words for Java 提供了强大的文档格式识别功能，我们将引导您完成整个过程。
 
 ## 先决条件
 
-在我们开始之前，请确保您满足以下先决条件：
+在开始之前，请确保您满足以下先决条件：
 
 - [Aspose.Words for Java](https://releases.aspose.com/words/java/)
-- 系统上安装的 Java 开发工具包 (JDK)
-- Java编程基础知识
+- 系统上安装了 Java 开发工具包 (JDK)
+- Java 编程基础知识
 
-## 第 1 步：目录设置
+## 步骤 1：目录设置
 
-首先，我们需要设置必要的目录来有效地组织我们的文件。我们将为不同的文档类型创建目录。
+首先，我们需要设置必要的目录来有效地组织文件。我们将为不同的文档类型创建目录。
 
 ```java
 File supportedDir = new File("Your Directory Path" + "Supported");
@@ -30,7 +30,7 @@ File unknownDir = new File("Your Directory Path" + "Unknown");
 File encryptedDir = new File("Your Directory Path" + "Encrypted");
 File pre97Dir = new File("Your Directory Path" + "Pre97");
 
-//如果目录尚不存在，则创建它们。
+//如果目录不存在，则创建目录。
 if (!supportedDir.exists())
     supportedDir.mkdir();
 if (!unknownDir.exists())
@@ -41,9 +41,9 @@ if (!pre97Dir.exists())
     pre97Dir.mkdir();
 ```
 
-我们为受支持的、未知的、加密的和 97 之前的文档类型创建了目录。
+我们为受支持的、未知的、加密的和 97 年之前的文档类型创建了目录。
 
-## 第2步：检测文档格式
+## 第 2 步：检测文档格式
 
 现在，让我们检测目录中文档的格式。我们将使用 Aspose.Words for Java 来实现这一点。
 
@@ -87,16 +87,16 @@ for (String fileName : listFiles) {
 }
 ```
 
-在此代码片段中，我们迭代文件，检测它们的格式，并将它们组织到各自的目录中。
+在此代码片段中，我们遍历文件，检测它们的格式，并将它们组织到相应的目录中。
 
-## 在 Aspose.Words for Java 中确定文档格式的完整源代码
+## 用于在 Aspose.Words for Java 中确定文档格式的完整源代码
 
 ```java
         File supportedDir = new File("Your Directory Path" + "Supported");
         File unknownDir = new File("Your Directory Path" + "Unknown");
         File encryptedDir = new File("Your Directory Path" + "Encrypted");
         File pre97Dir = new File("Your Directory Path" + "Pre97");
-        //如果目录尚不存在，则创建它们。
+        //如果目录不存在，则创建目录。
         if (supportedDir.exists() == false)
             supportedDir.mkdir();
         if (unknownDir.exists() == false)
@@ -183,26 +183,26 @@ for (String fileName : listFiles) {
 
 ## 结论
 
-确定 Aspose.Words for Java 中的文档格式对于高效文档处理至关重要。通过本指南中概述的步骤，您可以识别文档类型并在 Java 应用程序中相应地处理它们。
+在 Aspose.Words for Java 中确定文档格式对于高效处理文档至关重要。通过本指南中概述的步骤，您可以识别文档类型并在 Java 应用程序中进行相应处理。
 
 ## 常见问题解答
 
 ### 如何安装 Aspose.Words for Java？
 
-您可以从以下位置下载 Aspose.Words for Java：[这里](https://releases.aspose.com/words/java/)并按照提供的安装说明进行操作。
+您可以从[这里](https://releases.aspose.com/words/java/)并按照提供的安装说明进行操作。
 
 ### 支持哪些文档格式？
 
-Aspose.Words for Java 支持各种文档格式，包括 DOC、DOCX、RTF、HTML 等。您可以参阅文档以获取完整列表。
+Aspose.Words for Java 支持多种文档格式，包括 DOC、DOCX、RTF、HTML 等。您可以参考文档获取完整列表。
 
 ### 如何使用 Aspose.Words for Java 检测加密文档？
 
-您可以使用`FileFormatUtil.detectFileFormat()`检测加密文档的方法，如本指南中所示。
+您可以使用`FileFormatUtil.detectFileFormat()`方法来检测加密文档，如本指南所示。
 
-### 使用较旧的文档格式时是否有任何限制？
+### 使用旧文档格式时有什么限制吗？
 
-较旧的文档格式（例如 MS Word 6 或 Word 95）可能在功能和与现代应用程序的兼容性方面存在限制。必要时考虑升级或转换这些文档。
+较旧的文档格式（例如 MS Word 6 或 Word 95）在功能和与现代应用程序的兼容性方面可能存在限制。必要时请考虑升级或转换这些文档。
 
-### 我可以在 Java 应用程序中自动检测文档格式吗？
+### 我可以在我的 Java 应用程序中自动检测文档格式吗？
 
-是的，您可以通过将提供的代码集成到您的 Java 应用程序中来自动检测文档格式。这允许您根据检测到的格式处理文档。
+是的，您可以通过将提供的代码集成到 Java 应用程序中来自动检测文档格式。这样您就可以根据检测到的格式来处理文档。

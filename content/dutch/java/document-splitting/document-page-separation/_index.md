@@ -30,7 +30,7 @@ Voordat we in de code duiken, moet je ervoor zorgen dat je aan de volgende verei
 
 ## Stap 1: Laad het document
 
-Om te beginnen moeten we het document laden waarvan we de pagina's willen scheiden. Hier ziet u hoe u het kunt doen:
+Om te beginnen moeten we het document laden dat we in pagina's willen opdelen. Hier ziet u hoe u het kunt doen:
 
 ```java
 // Laad het document
@@ -84,7 +84,7 @@ Ja, Aspose.Words ondersteunt verschillende documentformaten, waaronder DOC, RTF,
 
 Aspose.Words voor Java is een commerciële bibliotheek, maar biedt een gratis proefversie. U kunt hun website raadplegen voor prijsgegevens en licentie-informatie.
 
-### Kan ik samenvoegpagina's weer opsplitsen in één document?
+### Kan ik gescheiden pagina's weer samenvoegen tot één document?
 
 Ja, u kunt de gescheiden pagina's weer samenvoegen tot één document met behulp van Aspose.Words voor Java. Raadpleeg de documentatie voor samenvoeginstructies.
 

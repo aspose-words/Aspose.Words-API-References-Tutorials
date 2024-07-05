@@ -17,7 +17,7 @@ Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 - Connaissance de base de C# et du traitement de mots avec des documents Word.
 
 ## Étape 1 : Créer un nouveau document et DocumentBuilder
- Créez une nouvelle instance du`Document` classe et un`DocumentBuilder` s'opposer à travailler avec le document.
+ Créez une nouvelle instance du`Document` classe et un`DocumentBuilder`s'opposer à travailler avec le document.
 
 ```csharp
 Document doc = new Document();

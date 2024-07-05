@@ -52,7 +52,7 @@ catch (Exception e)
 
 ## Bước 2: Xác định đường dẫn tài liệu
 
-Tiếp theo, chúng ta cần xác định thư mục lưu trữ tài liệu của chúng ta. Điều này rất quan trọng vì chúng tôi sẽ tải và lưu tài liệu từ đường dẫn này.
+Tiếp theo, chúng ta cần xác định thư mục nơi tài liệu của chúng ta được lưu trữ. Điều này rất quan trọng vì chúng tôi sẽ tải và lưu tài liệu từ đường dẫn này.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

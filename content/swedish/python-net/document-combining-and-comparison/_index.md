@@ -17,7 +17,7 @@ Förmågan att kombinera och jämföra dokument är väsentlig i olika scenarier
 
 ## Vad du kommer att lära dig
 
-Genom den här självstudieserien kommer vi att täcka ett brett utbud av ämnen relaterade till dokumentkombination och jämförelse. Du får en omfattande förståelse för:
+Under den här självstudieserien kommer vi att täcka ett brett utbud av ämnen relaterade till dokumentkombination och jämförelse. Du får en omfattande förståelse för:
 
 - Sammanfoga dokument: Lär dig hur du sömlöst kombinerar flera dokument till en enda sammanhängande fil, och bibehåller formatering och layoutintegritet.
 - Jämföra dokument: Upptäck tekniker för att identifiera och markera skillnader mellan två eller flera dokument, vilket möjliggör effektiv revisionsspårning.

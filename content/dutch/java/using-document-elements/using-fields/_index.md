@@ -97,7 +97,7 @@ Broncode van klasse HandleMergeField
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // We hebben besloten dat we willen dat alle Booleaanse waarden worden uitgevoerd als selectievakje-formuliervelden.
+            // We hebben besloten dat we willen dat alle Booleaanse waarden worden uitgevoerd als velden voor selectievakjes.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
                 // Verplaats de "cursor" naar het huidige samenvoegveld.
@@ -357,7 +357,7 @@ Broncode van klasse HandleMergeField
 
 Gefeliciteerd! U hebt geleerd hoe u velden in Aspose.Words voor Java kunt gebruiken om Word-documenten dynamisch te manipuleren. Deze krachtige API geeft u volledige controle over uw documenten, waardoor het een waardevol bezit is voor Java-ontwikkelaars.
 
-## 7.Veelgestelde vragen
+## 7. Veelgestelde vragen
 
 ### V1: Waar kan ik Aspose.Words voor Java downloaden?
  U kunt Aspose.Words voor Java downloaden van[hier](https://releases.aspose.com/words/java/).

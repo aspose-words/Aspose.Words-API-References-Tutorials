@@ -1,6 +1,6 @@
 ---
-title: Título Setex
-linktitle: Título Setex
+title: Título do texto
+linktitle: Título do texto
 second_title: API de processamento de documentos Aspose.Words
 description: Aprenda como usar títulos Setext para formatar seus documentos com o guia passo a passo Aspose.Words for .NET.
 type: docs

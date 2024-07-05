@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## Krok 3: Přidejte novou sekci
- Chcete-li do dokumentu přidat novou sekci, vytvoříme instanci souboru`Section` třídy a přidejte ji do`Sections` sbírka dokumentů.
+ Chcete-li do dokumentu přidat novou sekci, vytvoříme instanci souboru`Section` třídy a přidejte ji do`Sections` sbírka listiny.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
@@ -82,7 +82,7 @@ builder. Writen("Hello2");
 
 #### Otázka: Jak přidat novou sekci do dokumentu v Aspose.Words pro .NET?
 
- A: Chcete-li přidat novou sekci do dokumentu v Aspose.Words pro .NET, můžete vytvořit instanci`Section` třídy a přidejte ji do`Sections` sbírka listin:
+ A: Chcete-li přidat novou sekci do dokumentu v Aspose.Words pro .NET, můžete vytvořit instanci`Section` třídy a přidejte ji do`Sections` sbírka listiny:
 
 ```csharp
 Section sectionToAdd = new Section(doc);

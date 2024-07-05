@@ -13,6 +13,6 @@ Esta página fornece um guia detalhado sobre como aplicar uma licença em projet
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Aplicar licença do arquivo](./apply-license-from-file/) | Aprenda como aplicar uma licença de um arquivo usando Aspose.Words for .NET.|
-| [Aplicar licença do Stream](./apply-license-from-stream/) | Aprenda como aplicar uma licença de um stream usando Aspose.Words for .NET.|
-| [Aplicar licença medida](./apply-metered-license/) | Aprenda como aplicar uma licença limitada usando Aspose.Words for .NET. |
+| [Aplicar licença do arquivo](./apply-license-from-file/) | Aprenda como aplicar uma licença de um arquivo no Aspose.Words for .NET com nosso guia passo a passo detalhado. Desbloqueie todo o potencial da sua biblioteca sem esforço. |
+| [Aplicar licença do Stream](./apply-license-from-stream/) | Aprenda como aplicar uma licença de um stream no Aspose.Words for .NET com este guia passo a passo. Desbloqueie todo o potencial do Aspose.Words. |
+| [Aplicar licença medida](./apply-metered-license/) | Aprenda como aplicar uma licença medida no Aspose.Words for .NET com nosso guia passo a passo. Licenciamento flexível e econômico simplificado. |

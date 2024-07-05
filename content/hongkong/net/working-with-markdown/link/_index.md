@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 第 2 步：插入鏈接
 
-我們可以使用以下命令插入鏈接`InsertHyperlink`文檔生成器的方法。我們需要指定連結文字（此處為「Apose」）以及目標 URL。
+我們可以使用以下命令插入鏈接`InsertHyperlink`文檔生成器的方法。我們需要指定連結文字（此處為「Aspose」）以及目標 URL。
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com”，錯誤）；

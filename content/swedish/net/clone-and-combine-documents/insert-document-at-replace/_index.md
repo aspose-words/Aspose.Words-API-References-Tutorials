@@ -164,4 +164,4 @@ Ja, du kan modifiera återuppringningshanteraren för att hantera flera infognin
 Du kan få stöd genom att besöka[Aspose.Words forum](https://forum.aspose.com/c/words/8).
 
 ### Kan jag behålla formateringen av det infogade dokumentet?
- Ja den`NodeImporter`class låter dig ange hur formatering ska hanteras när du importerar noder från ett dokument till ett annat.
+ Ja den`NodeImporter` class låter dig ange hur formatering ska hanteras när du importerar noder från ett dokument till ett annat.

@@ -1,6 +1,6 @@
 ---
-title: เจ้าของเอกสาร
-linktitle: เจ้าของเอกสาร
+title: เอกสารเจ้าของ
+linktitle: เอกสารเจ้าของ
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: เรียนรู้วิธีใช้เอกสารเจ้าของใน Aspose.Words สำหรับ .NET
 type: docs
@@ -20,7 +20,7 @@ using Aspose.Words.Paragraphs;
 ```
 
 ## ขั้นตอนที่ 2: สร้างเอกสารใหม่
- ในขั้นตอนนี้ เราจะสร้างเอกสารใหม่โดยใช้`Document` ชั้นเรียน
+ ในขั้นตอนนี้ เราจะสร้างเอกสารใหม่โดยใช้`Document` ระดับ.
 
 ```csharp
 Document doc = new Document();
@@ -76,7 +76,7 @@ Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 // แต่โหนดย่อหน้ารู้เอกสารของมัน
 Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-// ความจริงที่ว่าโหนดเป็นของเอกสารอยู่เสมอทำให้เราสามารถเข้าถึงและแก้ไขมันได้
+// ความจริงที่ว่าโหนดเป็นของเอกสารอยู่เสมอทำให้เราสามารถเข้าถึงและแก้ไขได้
 // คุณสมบัติที่อ้างอิงข้อมูลทั่วทั้งเอกสาร เช่น สไตล์หรือรายการ
 para.ParagraphFormat.StyleName = "Heading 1";
 

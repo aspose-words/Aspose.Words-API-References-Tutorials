@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Bước 2: Lấy hàng gốc từ dấu trang
 
- Chúng tôi sử dụng`GetAncestor` Các phương pháp truy xuất các hàng gốc của nút bắt đầu và kết thúc của dấu trang:
+ Chúng tôi sử dụng`GetAncestor` các phương thức truy xuất các hàng cha của nút bắt đầu và kết thúc của dấu trang:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

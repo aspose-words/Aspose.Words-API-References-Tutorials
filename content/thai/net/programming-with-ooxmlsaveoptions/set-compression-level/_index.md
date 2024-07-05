@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { CompressionLevel = CompressionLevel.SuperFast };
 ```
 
- ในขั้นตอนนี้ เรากำหนดค่าตัวเลือกการบันทึก OOXML โดยใช้`OoxmlSaveOptions` ชั้นเรียน เราตั้งค่าระดับการบีบอัดเป็น`SuperFast` เพื่อให้ได้การบีบอัดที่รวดเร็วยิ่งขึ้น
+ ในขั้นตอนนี้ เรากำหนดค่าตัวเลือกการบันทึก OOXML โดยใช้`OoxmlSaveOptions` ระดับ. เราตั้งค่าระดับการบีบอัดเป็น`SuperFast` เพื่อให้ได้การบีบอัดที่รวดเร็วยิ่งขึ้น
 
 ## ขั้นตอนที่ 4: บันทึกเอกสารด้วยระดับการบีบอัดที่ระบุ
 

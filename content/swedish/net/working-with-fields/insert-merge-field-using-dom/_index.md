@@ -32,7 +32,7 @@ Först till kvarn, låt oss sätta upp ett nytt projekt i Visual Studio.
 För att använda Aspose.Words måste du lägga till det i ditt projekt. Detta kan göras via NuGet Package Manager.
 
 1. **Open NuGet Package Manager:** Högerklicka på ditt projekt i Solution Explorer och välj sedan Hantera NuGet-paket.
-2. **Search for Aspose.Words:** I NuGet Package Manager, sök efter "Apose.Words".
+2. **Search for Aspose.Words:** I NuGet Package Manager, sök efter "Aspose.Words".
 3. **Install the Package:** Klicka på Installera för att lägga till Aspose.Words till ditt projekt.
 
 ## Steg 3: Importera namnområden
@@ -119,4 +119,4 @@ Ett sammanslagningsfält är en platshållare i ett dokument som dynamiskt kan e
 Aspose.Words stöder flera versioner av .NET, inklusive .NET Framework, .NET Core och .NET Standard.
 
 ### 5. Var kan jag hitta API-dokumentationen för Aspose.Words?
- API-dokumentationen finns tillgänglig.[här](https://reference.aspose.com/words/net/).
+ API-dokumentationen finns tillgänglig[här](https://reference.aspose.com/words/net/).

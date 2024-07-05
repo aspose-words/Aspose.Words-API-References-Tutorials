@@ -26,7 +26,7 @@ DocumentBuilder builder = new DocumentBuilder();
 builder.Font.Bold = true;
 ```
 
-## Étape 3 : ajouter du contenu au document
+## Étape 3 : Ajouter du contenu au document
 
  Nous pouvons désormais ajouter du contenu au document à l'aide des méthodes de création de documents, telles que`Writeln`, ce qui ajoute une ligne de texte.
 

@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -100,14 +100,14 @@ A diagramon szereplő tengelyek számformátuma a tengelyen megjelenített szám
  A diagramon lévő tengelycímkék számformátumának beállításához az Aspose.Words for .NET használatával elérheti a`AxisY` a diagram tulajdonságát, és állítsa be a`NumberFormat.FormatCode`tulajdonságot a kívánt formátumkódhoz. A formátumkód követi a szabványos numerikus formázási minták szintaxisát, és meghatározza a számok megjelenítési módját. Használhatja például a "#,##0.00" karaktert a számok két tizedesjegyekkel és ezres elválasztókkal való megjelenítéséhez.
 
 #### Q3. Beállíthatok különböző számformátumokat az X-tengely és az Y-tengely címkéihez?
-Igen, az Aspose.Words for .NET használatával különböző számformátumokat állíthat be az X-tengely és az Y-tengely címkéihez. Nyissa meg a megfelelő tengelyt (`AxisX` az X-tengelyhez ill`AxisY` az Y-tengelyhez) a diagramon, és módosítsa a`NumberFormat.FormatCode` tengelyenként külön-külön. Ez lehetővé teszi, hogy különböző számformátumokat alkalmazzon az egyes tengelyeken lévő címkékre az Ön egyedi igényei alapján.
+Igen, az Aspose.Words for .NET használatával különböző számformátumokat állíthat be az X-tengely és az Y-tengely címkéihez. Nyissa meg a megfelelő tengelyt (`AxisX` az X-tengelyhez ill`AxisY` az Y tengelyhez) a diagramon, és módosítsa a`NumberFormat.FormatCode` tengelyenként külön-külön. Ez lehetővé teszi, hogy különböző számformátumokat alkalmazzon az egyes tengelyeken lévő címkékre az Ön egyedi igényei alapján.
 
 #### Q4. Milyen általános számformátumú kódokat használhatok?
 Az Aspose.Words for .NET a számformátumkódok széles skáláját támogatja, amelyek segítségével formázhatja a diagram tengelycímkéit. Néhány általános formátumkód:
 
 - `0` vagy`#` - A számot tizedesjegyek nélkül jeleníti meg.
 - `0.00` vagy`#.00` - Két tizedesjegy pontossággal jeleníti meg a számot.
-- `#,##0` Megjeleníti a számot több ezer elválasztóval.
+- `#,##0` Ezerelválasztókkal jeleníti meg a számot.
 - `"€"0.00` - Megjeleníti a számot az euró valuta szimbólummal és két tizedesjegygel.
 - `"%"0` - A számot százalékban jeleníti meg.
 

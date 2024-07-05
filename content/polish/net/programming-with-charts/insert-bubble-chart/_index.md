@@ -17,7 +17,7 @@ Upewnij się, że masz następujące wymagania wstępne:
 - Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
 - Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres.
+## Krok 2: Utwórz nowy dokument i wstaw wykres
 
  Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
 
@@ -93,4 +93,4 @@ Tak, używając Aspose.Words dla .NET, możesz dostosować różne aspekty wygl�
  Tak, Aspose.Words dla .NET umożliwia zapisanie dokumentu z wstawionym wykresem bąbelkowym w różnych formatach, takich jak DOCX, PDF, HTML i innych. Możesz wybrać żądany format wyjściowy w oparciu o swoje wymagania i użyć`Save` metoda`Document` obiekt, aby zapisać dokument. Wstawiony wykres bąbelkowy zostanie zachowany w zapisanym dokumencie.
 
 #### Pytanie 5. Czy mogę modyfikować dane i wygląd wykresu bąbelkowego po jego wstawieniu?
-Tak, po wstawieniu wykresu bąbelkowego do dokumentu możesz modyfikować jego dane i wygląd korzystając z API udostępnionych przez Aspose.Words dla .NET. Możesz aktualizować dane serii, zmieniać rozmiar bąbelków, dostosowywać właściwości osi i stosować opcje formatowania, aby tworzyć dynamiczne i interaktywne wykresy w dokumentach programu Word.
+Tak, po wstawieniu wykresu bąbelkowego do dokumentu możesz modyfikować jego dane i wygląd, korzystając z interfejsów API udostępnianych przez Aspose.Words dla .NET. Możesz aktualizować dane serii, zmieniać rozmiar bąbelków, dostosowywać właściwości osi i stosować opcje formatowania, aby tworzyć dynamiczne i interaktywne wykresy w dokumentach programu Word.

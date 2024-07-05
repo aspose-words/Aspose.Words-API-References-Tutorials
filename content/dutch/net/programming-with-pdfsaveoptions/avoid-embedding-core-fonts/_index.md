@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
 
-In deze zelfstudie leiden we u door de stappen voor het verkleinen van de PDF-bestandsgrootte door geen kernlettertypen in te sluiten met Aspose.Words voor .NET. Met deze functie kunt u bepalen of basislettertypen zoals Arial, Times New Roman, enz. in de PDF moeten worden ingesloten bij het converteren van een Word-document. Volg onderstaande stappen:
+In deze zelfstudie leiden we u door de stappen voor het verkleinen van de PDF-bestandsgrootte door geen kernlettertypen in te sluiten met Aspose.Words voor .NET. Met deze functie kunt u bepalen of basislettertypen zoals Arial, Times New Roman, etc. in de PDF moeten worden ingesloten bij het converteren van een Word-document. Volg onderstaande stappen:
 
 ## Stap 1: Het document laden
 

@@ -258,7 +258,7 @@ public void splitNodesAcrossPages() throws Exception
 	collector.getDocument().accept(new SectionSplitter(this));
 }
 /// <resumo>
-/// Isso é chamado por <see cref="SectionSplitter"/> para atualizar os números de página dos nós divididos.
+/// Isso é chamado por <see cref="SectionSplitter"/> para atualizar os números das páginas dos nós divididos.
 /// </resumo>
 /// <param name="nó">
 /// O nó.

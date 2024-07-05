@@ -32,7 +32,7 @@ Trước tiên, hãy thiết lập một dự án mới trong Visual Studio.
 Để sử dụng Aspose.Words, bạn cần thêm nó vào dự án của mình. Điều này có thể được thực hiện thông qua Trình quản lý gói NuGet.
 
 1. **Open NuGet Package Manager:** Nhấp chuột phải vào dự án của bạn trong Solution Explorer, sau đó chọn Quản lý gói NuGet.
-2. **Search for Aspose.Words:** Trong Trình quản lý gói NuGet, tìm kiếm "Apose.Words".
+2. **Search for Aspose.Words:** Trong Trình quản lý gói NuGet, tìm kiếm "Aspose.Words".
 3. **Install the Package:** Nhấp vào Cài đặt để thêm Aspose.Words vào dự án của bạn.
 
 ## Bước 3: Nhập không gian tên
@@ -119,4 +119,4 @@ Trường hợp nhất là phần giữ chỗ trong tài liệu có thể đư�
 Aspose.Words hỗ trợ nhiều phiên bản .NET, bao gồm .NET Framework, .NET Core và .NET Standard.
 
 ### 5. Tôi có thể tìm tài liệu API cho Aspose.Words ở đâu?
- Tài liệu API có sẵn.[đây](https://reference.aspose.com/words/net/).
+ Tài liệu API có sẵn[đây](https://reference.aspose.com/words/net/).

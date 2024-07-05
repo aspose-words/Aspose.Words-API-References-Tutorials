@@ -14,7 +14,7 @@ url: /ko/java/document-manipulation/splitting-documents/
 
 ## 제목별 문서 분할
 
-대용량 문서를 처리할 때 공통적으로 요구되는 사항 중 하나는 제목을 기준으로 문서를 분할하는 것입니다. Aspose.Words for Java는 이 작업을 간단하게 만듭니다. 문서를 제목별로 분할하는 코드 조각을 살펴보겠습니다.
+대용량 문서를 처리할 때 일반적으로 요구되는 사항 중 하나는 제목을 기준으로 문서를 분할하는 것입니다. Aspose.Words for Java는 이 작업을 간단하게 만듭니다. 문서를 제목별로 분할하는 코드 조각을 살펴보겠습니다.
 
 ```java
 //Aspose.Words for Java를 사용하여 제목별로 문서를 분할하는 Java 코드

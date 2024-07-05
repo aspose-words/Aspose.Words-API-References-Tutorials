@@ -41,7 +41,7 @@ using Aspose.Words.Tables;
 
 ติดตั้ง Aspose.Words สำหรับ .NET
 
-ถัดไป คุณจะต้องติดตั้งไลบรารี Aspose.Words สำหรับ .NET คุณสามารถทำได้ผ่าน NuGet Package Manager เพียงคลิกขวาที่โปรเจ็กต์ของคุณใน Solution Explorer เลือก “จัดการแพ็คเกจ NuGet” ค้นหา “Aspose.Words” แล้วติดตั้ง
+ถัดไป คุณจะต้องติดตั้งไลบรารี Aspose.Words สำหรับ .NET คุณสามารถทำได้ผ่าน NuGet Package Manager เพียงคลิกขวาที่โปรเจ็กต์ของคุณใน Solution Explorer เลือก "จัดการแพ็คเกจ NuGet" ค้นหา "Aspose.Words" และติดตั้ง
 
 ## ขั้นตอนที่ 2: เริ่มต้นเอกสาร
 
@@ -105,7 +105,7 @@ builder.Font.ClearFormatting();
 builder.Write(" for more information.");
 ```
 
-วิธีนี้จะรีเซ็ตการจัดรูปแบบแบบอักษรและเพิ่มข้อความบางส่วนด้วย
+วิธีนี้จะรีเซ็ตการจัดรูปแบบแบบอักษรและเพิ่มข้อความสรุป
 
 ## ขั้นตอนที่ 7: บันทึกเอกสาร
 

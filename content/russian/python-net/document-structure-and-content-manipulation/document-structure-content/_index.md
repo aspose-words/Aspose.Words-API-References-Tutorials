@@ -161,7 +161,7 @@ doc.save("output_document.docx")
 doc.save("output_document.pdf", SaveFormat.PDF)
 ```
 
-## Автоматизация формирования документов
+## Автоматизация создания документов
 
 Aspose.Words превосходно автоматизирует рабочие процессы создания документов:
 

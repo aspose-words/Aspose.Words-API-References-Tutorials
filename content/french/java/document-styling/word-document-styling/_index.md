@@ -8,7 +8,7 @@ weight: 10
 url: /fr/java/document-styling/word-document-styling/
 ---
 
-Si vous cherchez à améliorer l'apparence visuelle de vos documents et à créer des sorties élégantes et professionnelles à l'aide d'Aspose.Words pour Java, vous êtes au bon endroit. Dans ce guide étape par étape, nous explorerons le processus de style et de traitement de documents à l'aide d'Aspose.Words pour Java. Que vous soyez un développeur Java chevronné ou tout juste débutant, ce guide vous sera utile pour transformer vos documents en œuvres d'art bien formatées et esthétiques.
+Si vous cherchez à améliorer l'apparence visuelle de vos documents et à créer des sorties élégantes et professionnelles à l'aide d'Aspose.Words pour Java, vous êtes au bon endroit. Dans ce guide étape par étape, nous explorerons le processus de style et de traitement des documents à l'aide d'Aspose.Words pour Java. Que vous soyez un développeur Java chevronné ou tout juste débutant, ce guide vous sera utile pour transformer vos documents en œuvres d'art bien formatées et esthétiques.
 
 ## Introduction
 
@@ -119,7 +119,7 @@ builder.writeln("Introduction");
 
 ### 1. Choix des polices et définition des propriétés des polices
 
-Aspose.Words for Java vous permet de spécifier les noms, tailles et styles de police pour votre texte.
+Aspose.Words for Java vous permet de spécifier des noms de police, des tailles et des styles pour votre texte.
 
 ```java
 import com.aspose.words.Font;

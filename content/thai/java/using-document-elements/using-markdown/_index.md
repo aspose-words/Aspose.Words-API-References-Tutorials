@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // ระบุรายการสั่งซื้อ
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// ระบุการเน้นภาษาอิตาลีสำหรับข้อความ
+// ระบุการเน้นตัวเอียงสำหรับข้อความ
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

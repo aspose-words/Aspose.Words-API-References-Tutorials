@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### 리뷰 거부:
+#### 개정 거부:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");

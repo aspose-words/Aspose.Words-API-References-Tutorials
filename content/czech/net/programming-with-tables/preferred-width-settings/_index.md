@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Zde použijeme tvůrce dokumentů k vytvoření tabulky se třemi buňkami. První buňka má preferovanou šířku 40 bodů, druhá buňka má preferovanou šířku 20 % šířky tabulky a třetí buňka má automatickou preferovanou šířku, která se nastavuje.
+Zde použijeme tvůrce dokumentů k vytvoření tabulky se třemi buňkami. První buňka má preferovanou šířku 40 bodů, druhá buňka má preferovanou šířku 20 % šířky tabulky a třetí buňka má automatickou preferovanou šířku, která upravuje
 
   v závislosti na dostupném prostoru.
 

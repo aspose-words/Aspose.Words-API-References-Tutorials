@@ -64,7 +64,7 @@ Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go t
 
 #### P: Gdzie mogę znaleźć pliki słowników sylabizacji dla różnych języków?
 
-Odp.: Pliki słowników sylabizacji dla różnych języków można znaleźć w różnych zasobach internetowych. Pliki te są zazwyczaj w formacie XML lub TEX. Słowniki sylabizacji open source dla różnych języków można znaleźć na stronach poświęconych projektom lingwistycznym lub w repozytoriach kodu źródłowego.
+O: Pliki słowników sylabizacji dla różnych języków można znaleźć w różnych zasobach internetowych. Pliki te są zazwyczaj w formacie XML lub TEX. Słowniki sylabizacji open source dla różnych języków można znaleźć na stronach internetowych poświęconych projektom lingwistycznym lub w repozytoriach kodu źródłowego.
 
 #### P: Jak mogę zastosować załadowany słownik sylabiczny do dokumentu w Aspose.Words?
 
@@ -72,4 +72,4 @@ O: Aby zastosować załadowany słownik sylabizacji do dokumentu w Aspose.Words,
 
 #### P: Jakie języki są obsługiwane przez sylabizację w Aspose.Words?
 
-Odp.: Aspose.Words obsługuje sylabizację dla wielu języków, w tym angielskiego, francuskiego, hiszpańskiego, niemieckiego, włoskiego, holenderskiego, rosyjskiego, portugalskiego, szwedzkiego, norweskiego, duńskiego, fińskiego, polskiego, czeskiego i wielu innych. Sprawdź dokumentację Aspose.Words, aby uzyskać pełną listę obsługiwanych języków do sylabizacji.
+O: Aspose.Words obsługuje sylabizację wielu języków, w tym angielskiego, francuskiego, hiszpańskiego, niemieckiego, włoskiego, holenderskiego, rosyjskiego, portugalskiego, szwedzkiego, norweskiego, duńskiego, fińskiego, polskiego, czeskiego i wielu innych. Sprawdź dokumentację Aspose.Words, aby uzyskać pełną listę obsługiwanych języków do sylabizacji.

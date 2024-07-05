@@ -2,7 +2,7 @@
 title: Tambahkan Dokumen
 linktitle: Tambahkan Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menambahkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk mengotomatiskan alur kerja dokumen Anda.
+description: Pelajari cara menambahkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk mengotomatisasi alur kerja dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/append-document/

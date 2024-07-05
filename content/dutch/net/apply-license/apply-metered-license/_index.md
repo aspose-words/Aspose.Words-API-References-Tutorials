@@ -2,94 +2,109 @@
 title: Pas een gemeten licentie toe
 linktitle: Pas een gemeten licentie toe
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een gemeten licentie toepast met Aspose.Words voor .NET.
+description: Leer hoe u een gemeten licentie toepast in Aspose.Words voor .NET met onze stapsgewijze handleiding. Flexibele, kosteneffectieve licentieverlening eenvoudig gemaakt.
 type: docs
 weight: 10
 url: /nl/net/apply-license/apply-metered-license/
 ---
+## Invoering
 
-In deze uitgebreide zelfstudie leert u hoe u een gemeten licentie kunt toepassen met Aspose.Words voor .NET. Wij begeleiden u door het proces met gedetailleerde stapsgewijze instructies en voorzien u van de benodigde C#-codefragmenten. Aan het einde van deze handleiding kunt u een gemeten licentie toepassen en de geavanceerde functies van Aspose.Words benutten voor uw documentverwerkingsbehoeften.
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee u met Word-documenten kunt werken in uw .NET-toepassingen. Een van de opvallende kenmerken is de mogelijkheid om een gemeten licentie toe te passen. Dit licentiemodel is perfect voor bedrijven en ontwikkelaars die de voorkeur geven aan een pay-as-you-go-aanpak. Met een meterlicentie betaalt u alleen voor wat u gebruikt, waardoor het een flexibele en kosteneffectieve oplossing is. In deze handleiding leiden we u door het proces van het toepassen van een gemeten licentie op uw Aspose.Words voor .NET-project.
 
 ## Vereisten
-Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd op uw systeem.
-- Geldige referenties voor gemeten licenties. 
 
-## Stap 1: Importeer de vereiste naamruimten
-Importeer om te beginnen de benodigde naamruimten in uw C#-code. Deze naamruimten bevatten de klassen en methoden die nodig zijn voor de woordenverwerking met Aspose.Words.
+Voordat we ingaan op de code, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+
+1.  Aspose.Words voor .NET: Download de bibliotheek van de .NET als u dat nog niet heeft gedaan[Aspose-website](https://releases.aspose.com/words/net/).
+2. Geldige gemeten licentiesleutels: u hebt de sleutels nodig om de gemeten licentie te activeren. Deze kunt u verkrijgen bij de[Aspose aankooppagina](https://purchase.aspose.com/buy).
+3. Ontwikkelomgeving: Zorg ervoor dat u een .NET-ontwikkelomgeving hebt ingesteld. Visual Studio is een populaire keuze, maar u kunt elke IDE gebruiken die .NET ondersteunt.
+
+## Naamruimten importeren
+
+Voordat we in de code duiken, moeten we de benodigde naamruimten importeren. Dit is van cruciaal belang omdat het ons toegang geeft tot de klassen en methoden die door Aspose.Words worden aangeboden.
 
 ```csharp
 using Aspose.Words;
+using Aspose.Words.Metered;
 ```
 
-## Stap 2: Stel de gemeten licentiesleutel in
-Vervolgens moet u de gemeten licentiesleutel instellen met behulp van de SetMeteredKey-methode van de Metered-klasse. Geef uw gemeten openbare en privésleutels op als parameters voor deze methode.
+Oké, laten we het opsplitsen. We doorlopen het proces stap voor stap, zodat u niets mist.
+
+## Stap 1: Initialiseer de gemeten klasse
+
+ Allereerst moeten we een exemplaar maken van de`Metered` klas. Deze klasse is verantwoordelijk voor het instellen van de gemeten licentie.
+
+```csharp
+Metered metered = new Metered();
+```
+
+## Stap 2: Stel de gemeten toetsen in
+
+ Nu we onze`Metered` We moeten bijvoorbeeld de gemeten toetsen instellen. Deze sleutels worden geleverd door Aspose en zijn uniek voor uw abonnement.
+
+```csharp
+metered.SetMeteredKey("your_public_key", "your_private_key");
+```
+
+ Vervangen`"your_public_key"` En`"your_private_key"`met de daadwerkelijke sleutels die u van Aspose heeft ontvangen. Deze stap vertelt Aspose in wezen dat u een gemeten licentie wilt gebruiken.
+
+## Stap 3: Laad uw document
+
+ Laten we vervolgens een Word-document laden met Aspose.Words. Voor dit voorbeeld gebruiken we een document met de naam`Document.docx`. Zorg ervoor dat dit document in uw projectmap staat.
+
+```csharp
+Document doc = new Document("Document.docx");
+```
+
+## Stap 4: Controleer de licentieaanvraag
+
+Om te bevestigen dat de licentie correct is toegepast, gaan we een bewerking op het document uitvoeren. We printen eenvoudigweg het aantal pagina's naar de console.
+
+```csharp
+Console.WriteLine(doc.PageCount);
+```
+
+Deze stap zorgt ervoor dat uw document wordt geladen en verwerkt met behulp van de gemeten licentie.
+
+## Stap 5: Uitzonderingen afhandelen
+
+Het is altijd een goede gewoonte om met eventuele uitzonderingen om te gaan. Laten we een try-catch-blok aan onze code toevoegen om fouten netjes te beheren.
 
 ```csharp
 try
 {
     Metered metered = new Metered();
-    metered.SetMeteredKey("*", "*");
-}
-catch (Exception e)
-{
-    Console.WriteLine("\nThere was an error setting the license: " + e.Message);
-}
-```
+    metered.SetMeteredKey("your_public_key", "your_private_key");
 
-## Stap 3: Documenten laden en verwerken
-Nu u de gemeten licentie heeft ingesteld, kunt u documenten laden en verwerken met Aspose.Words. In het volgende codefragment laden we een document met de naam "Document.docx" en voeren we een eenvoudige handeling uit om het aantal pagina's af te drukken.
-
-```csharp
-try
-{
-    Document doc = new Document(MyDir + "Document.docx");
-    Console.WriteLine(doc.PageCount);
-}
-catch (Exception e)
-{
-    Console.WriteLine("\nThere was an error setting the license: " + e.Message);
-}
-```
-
-### Voorbeeldbroncode voor toepassing van gemeten licentie met Aspose.Words voor .NET
-Hier is de volledige broncode voor het toepassen van een gemeten licentie met Aspose.Words voor .NET:
-
-```csharp
-try
-{
-    Metered metered = new Metered();
-    metered.SetMeteredKey("*", "*");
-
-    Document doc = new Document(MyDir + "Document.docx");
+    Document doc = new Document("Document.docx");
 
     Console.WriteLine(doc.PageCount);
 }
 catch (Exception e)
 {
-    Console.WriteLine("\nThere was an error setting the license: " + e.Message);
+    Console.WriteLine("There was an error setting the license: " + e.Message);
 }
 ```
+
+Dit zorgt ervoor dat als er iets misgaat, u een betekenisvolle foutmelding krijgt in plaats van dat uw applicatie crasht.
 
 ## Conclusie
-Gefeliciteerd! U hebt met succes geleerd hoe u een gemeten licentie kunt toepassen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu profiteren van de geavanceerde functies van Aspose.Words voor uw documentverwerkingstaken.
 
-Nu kunt u vol vertrouwen de gemeten licentie instellen, documenten laden en verwerken, en het volledige potentieel van Aspose.Words benutten om Word-documenten programmatisch te maken, wijzigen en manipuleren.
+En daar heb je het! Het toepassen van een gemeten licentie in Aspose.Words voor .NET is eenvoudig als u het opsplitst in beheersbare stappen. Dit licentiemodel biedt flexibiliteit en kostenbesparingen, waardoor het voor veel ontwikkelaars een uitstekende keuze is. Vergeet niet dat de sleutel is om uw gemeten sleutels correct in te stellen en eventuele uitzonderingen af te handelen. Veel codeerplezier!
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Hoe pas ik een pay-per-use-licentie toe in Aspose.Words voor .NET?
+### Wat is een meterlicentie?
+Een gemeten licentie is een pay-as-you-go-model waarbij u alleen betaalt voor het daadwerkelijke gebruik van de Aspose.Words voor .NET-bibliotheek, wat flexibiliteit en kostenefficiëntie biedt.
 
-A: Om een pay-as-you-go-licentie toe te passen in Aspose.Words voor .NET, volgt u de stappen die in de tutorial worden vermeld.
+### Waar kan ik mijn gemeten licentiesleutels krijgen?
+ U kunt uw gemeten licentiesleutels verkrijgen bij de[Aspose aankooppagina](https://purchase.aspose.com/buy).
 
-#### Vraag: Wat zijn de voordelen van het gebruik van een pay-per-use-licentie in Aspose.Words voor .NET?
+### Kan ik een gemeten licentie gebruiken bij elk .NET-project?
+Ja, u kunt een gemeten licentie gebruiken voor elk .NET-project dat gebruikmaakt van de Aspose.Words voor .NET-bibliotheek.
 
-A: De voordelen van het gebruik van een pay-as-you-go-licentie in Aspose.Words voor .NET omvatten efficiënter kostenbeheer en grotere flexibiliteit.
+### Wat gebeurt er als de gemeten licentiesleutels onjuist zijn?
+Als de sleutels onjuist zijn, wordt de licentie niet toegepast en genereert uw toepassing een uitzondering. Zorg ervoor dat u uitzonderingen afhandelt om een duidelijke foutmelding te krijgen.
 
-#### Vraag: Hoe kan ik mijn pay-as-you-go-licentiegebruik in Aspose.Words voor .NET controleren?
-
-A: U kunt uw pay-as-you-go-licentiegebruik in Aspose.Words voor .NET controleren met behulp van de juiste methode die in de tutorial wordt vermeld.
-
-#### Vraag: Kan ik een reguliere licentie gebruiken met Aspose.Words voor .NET in plaats van een pay-as-you-go-licentie?
-
-A: Ja, u kunt desgewenst een normale licentie gebruiken met Aspose.Words voor .NET.
+### Hoe controleer ik of de meterlicentie correct wordt toegepast?
+U kunt de gemeten licentie verifiëren door een bewerking uit te voeren op een Word-document (zoals het afdrukken van het aantal pagina's) en ervoor te zorgen dat deze wordt uitgevoerd zonder licentiefouten.

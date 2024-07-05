@@ -10,7 +10,7 @@ url: /fr/java/document-manipulation/extracting-content-from-documents/
 
 ## Introduction à l'extraction de contenu à partir de documents dans Aspose.Words pour Java
 
-Dans le monde du traitement documentaire, extraire le contenu des documents est une exigence courante. Que vous ayez besoin d'extraire du texte, des tableaux, des images ou des éléments de document spécifiques, Aspose.Words for Java fournit des outils puissants pour faciliter cette tâche. Dans ce guide complet, nous vous guiderons tout au long du processus d'extraction de contenu à partir de documents à l'aide d'Aspose.Words pour Java. 
+Dans le monde du traitement documentaire, extraire le contenu des documents est une exigence courante. Que vous ayez besoin d'extraire du texte, des tableaux, des images ou des éléments de document spécifiques, Aspose.Words for Java fournit des outils puissants pour rendre cette tâche un jeu d'enfant. Dans ce guide complet, nous vous guiderons tout au long du processus d'extraction de contenu à partir de documents à l'aide d'Aspose.Words pour Java. 
 
 ## Conditions préalables
 

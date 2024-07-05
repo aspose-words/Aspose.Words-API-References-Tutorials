@@ -10,11 +10,11 @@ url: /zh/java/document-manipulation/removing-content-from-documents/
 
 ## Aspose.Words for Java 简介
 
-在深入研究删除技术之前，我们先简单介绍一下 Aspose.Words for Java。它是一个 Java API，提供了用于处理 Word 文档的广泛功能。您可以使用此库无缝地创建、编辑、转换和操作 Word 文档。
+在深入研究删除技术之前，让我们简要介绍一下 Aspose.Words for Java。它是一个 Java API，提供处理 Word 文档的广泛功能。您可以使用此库无缝地创建、编辑、转换和操作 Word 文档。
 
 ## 删除分页符
 
-分页符通常用于控制文档的布局。但是，在某些情况下您可能需要删除它们。以下是使用 Aspose.Words for Java 删除分页符的方法：
+分页符通常用于控制文档的布局。但是，在某些情况下，您可能需要删除它们。以下是使用 Aspose.Words for Java 删除分页符的方法：
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -32,11 +32,11 @@ for (Paragraph para : (Iterable<Paragraph>) paragraphs) {
 doc.save("Your Directory Path" + "RemoveContent.RemovePageBreaks.docx");
 ```
 
-此代码片段将遍历文档中的段落，检查分页符并将其删除。
+此代码片段将遍历文档中的各个段落，检查分页符并将其删除。
 
 ## 删除分节符
 
-分节符将文档分成具有不同格式的单独部分。要删除分节符，请按照下列步骤操作：
+分节符将文档分成具有不同格式的单独部分。要删除分节符，请按照以下步骤操作：
 
 ```java
 for (int i = doc.getSections().getCount() - 2; i >= 0; i--) {
@@ -45,7 +45,7 @@ for (int i = doc.getSections().getCount() - 2; i >= 0; i--) {
 }
 ```
 
-此代码以相反的顺序迭代各个部分，将当前部分的内容与上一个部分的内容组合起来，然后删除复制的部分。
+此代码以相反的顺序遍历各个部分，将当前部分的内容与最后一部分的内容合并，然后删除复制的部分。
 
 ## 删除页脚
 
@@ -64,11 +64,11 @@ for (Section section : doc.getSections()) {
 doc.save("Your Directory Path" + "RemoveContent.RemoveFooters.docx");
 ```
 
-此代码从文档中的每个部分中删除所有类型的页脚（第一个、主要甚至偶数）。
+此代码从文档的每个部分中删除所有类型的页脚（第一页、主要页脚和偶数页脚）。
 
 ## 删除目录
 
-目录 (TOC) 字段生成一个动态表格，其中列出了标题及其页码。要删除 TOC，您可以使用以下代码：
+目录 (TOC) 字段会生成一个动态表格，其中列出了标题及其页码。要删除目录，您可以使用以下代码：
 
 ```java
 Document doc = new Document("Your Directory Path" + "Table of contents.docx");
@@ -87,11 +87,11 @@ doc.save("Your Directory Path" + "RemoveContent.RemoveToc.doc");
 
 ### 如何删除特定的分页符？
 
-要删除特定分页符，请遍历文档中的段落并清除所需段落的分页符属性。
+要删除特定的分页符，请遍历文档中的各个段落并清除所需段落的分页符属性。
 
-### 我可以删除页眉和页脚吗？
+### 我可以将页眉和页脚一起删除吗？
 
-是的，您可以按照页脚文章中所示的类似方法从文档中删除页眉和页脚。
+是的，您可以按照文章中针对页脚所示的类似方法从文档中删除页眉和页脚。
 
 ### Aspose.Words for Java 是否与最新的 Word 文档格式兼容？
 
@@ -99,4 +99,4 @@ doc.save("Your Directory Path" + "RemoveContent.RemoveToc.doc");
 
 ### Aspose.Words for Java 还提供哪些其他文档操作功能？
 
-Aspose.Words for Java 提供了广泛的功能，包括文档创建、编辑、转换等。您可以浏览其文档以获取详细信息。
+Aspose.Words for Java 提供广泛的功能，包括文档创建、编辑、转换等。您可以浏览其文档以获取详细信息。

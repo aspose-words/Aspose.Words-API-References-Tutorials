@@ -46,7 +46,7 @@ Assicurati di avere un progetto C# nuovo o esistente in Visual Studio in cui hai
 Se non lo hai già fatto, aggiungi un riferimento ad Aspose.Words nel tuo progetto Visual Studio. Puoi farlo tramite:
    - Facendo clic con il pulsante destro del mouse sul progetto in Esplora soluzioni.
    - Selezionando "Gestisci pacchetti NuGet..."
-   - Cercare "Apose.Words" e installarlo nel tuo progetto.
+   - Cercare "Aspose.Words" e installarlo nel tuo progetto.
 
 ## Passaggio 3: prepara il documento
 
@@ -105,4 +105,4 @@ In conclusione, questo tutorial ha fornito una guida completa su come rimuovere 
    - Sì, il metodo mostrato qui si rivolge specificamente solo ai campi e lascia invariati gli altri contenuti.
 
 ### Dove posso trovare ulteriori risorse e supporto per Aspose.Words?
-   -  Visitare il[Aspose.Words per la documentazione dell'API .NET](https://reference.aspose.com/words/net/) e il[Forum Aspose.Words](https://forum.aspose.com/c/words/8)per ulteriore assistenza.
+   -  Visitare il[Aspose.Words per la documentazione dell'API .NET](https://reference.aspose.com/words/net/) e il[Forum Aspose.Words](https://forum.aspose.com/c/words/8) per ulteriore assistenza.

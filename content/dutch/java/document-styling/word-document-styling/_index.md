@@ -336,7 +336,7 @@ watermark.setLeft(200);
 
 ### 1. Het ontwerp eenvoudig en consistent houden
 
-Zorg ervoor dat uw document niet rommelig wordt door overmatige opmaak en blijf altijd bij een consistent ontwerp.
+Zorg ervoor dat uw document niet rommelig wordt door overmatige opmaak en blijf bij een consistent ontwerp.
 
 ### 2. Witruimte effectief gebruiken
 

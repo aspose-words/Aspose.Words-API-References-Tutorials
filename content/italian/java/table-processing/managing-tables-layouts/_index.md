@@ -30,7 +30,7 @@ Il primo passo nella gestione delle tabelle è crearle. Aspose.Words lo rende in
 // Crea un nuovo documento
 Document doc = new Document();
 
-// Crea una tabella con 3 righe e 4 colonne.
+// Crea una tabella con 3 righe e 4 colonne
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

@@ -1,6 +1,6 @@
 ---
 title: การใช้ส่วนใน Aspose.Words สำหรับ Java
-linktitle: การใช้ Sections
+linktitle: การใช้ส่วน
 second_title: Aspose.Words Java การประมวลผลเอกสาร API
 description: สำรวจ Aspose.Words สำหรับ Java; คำแนะนำที่ครอบคลุมเกี่ยวกับการใช้ส่วนต่างๆ เพิ่ม ลบ ผนวก โคลนส่วนพร้อมตัวอย่างโค้ด
 type: docs
@@ -32,7 +32,7 @@ public void addSection() throws Exception {
 
 ในข้อมูลโค้ดนี้ เราสร้างเอกสารใหม่ เพิ่มเนื้อหา และเพิ่มส่วนใหม่ให้กับเอกสาร
 
-## ลบส่วน
+## การลบส่วน
 
 หากต้องการลบส่วนออกจากเอกสาร คุณสามารถใช้รหัสต่อไปนี้:
 

@@ -1,47 +1,47 @@
 ---
-title: Word 向けに最適化
-linktitle: Word 向けに最適化
+title: Ms Word 用に最適化
+linktitle: Ms Word 用に最適化
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して MS Word 用にドキュメントを最適化するためのステップバイステップ ガイド。
+description: Aspose.Words for .NET を使用して MS Word 用にドキュメントを最適化する手順ガイド。
 type: docs
 weight: 10
 url: /ja/net/programming-with-document-options-and-settings/optimize-for-ms-word/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して MS Word 用にドキュメントを最適化するための C# ソース コードを説明します。この機能を使用すると、MS Word の特定のバージョンに合わせて文書を最適化できます。
+このチュートリアルでは、Aspose.Words for .NET を使用して MS Word 用にドキュメントを最適化するための C# ソース コードについて説明します。この機能を使用すると、特定のバージョンの MS Word 用にドキュメントを最適化できます。
 
-## ステップ 1: プロジェクトのセットアップ
+## ステップ1: プロジェクトのセットアップ
 
-まず、お気に入りの IDE で新しい C# プロジェクトを作成します。 Aspose.Words for .NET ライブラリがプロジェクトで参照されていることを確認してください。
+まず、お気に入りの IDE で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET ライブラリが参照されていることを確認します。
 
-## ステップ 2: ドキュメントをロードする
+## ステップ2: ドキュメントの読み込み
 
-このステップでは、最適化する Word 文書を読み込みます。次のコードを使用してドキュメントをロードします。
+このステップでは、最適化する Word 文書を読み込みます。次のコードを使用して文書を読み込みます。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが置かれているディレクトリの実際のパスに置き換えます。
+交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが配置されているディレクトリの実際のパスを入力します。
 
-## ステップ 3: MS Word 用の最適化
+## ステップ3: MS Wordの最適化
 
-次に、MS Word の特定のバージョンに合わせて文書を最適化しましょう。最適化を実行するには、次のコードを使用します。
+次に、特定のバージョンの MS Word 用にドキュメントを最適化してみましょう。最適化を実行するには、次のコードを使用します。
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx");
 ```
 
-このコードは、Aspose.Words にドキュメントを MS Word 2016 用に最適化するように指示します。`MsWordVersion.Word2016`最適化したい特定のバージョンの MS Word を使用してください。
+このコードはAspose.WordsにMS Word 2016用に文書を最適化するよう指示します。`MsWordVersion.Word2016`最適化する MS Word の特定のバージョンを使用します。
 
-### Aspose.Words for .NET を使用した Optimize For Ms Word のソース コード例
+### Aspose.Words for .NET を使用して Ms Word 用に最適化するためのサンプル ソース コード
 
 ```csharp
 
-	//ドキュメントディレクトリへのパス。
+	//ドキュメント ディレクトリへのパス。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
@@ -51,6 +51,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
    
 ```
 
-必ず正しいドキュメント パスを指定してください。`dataDir`変数。
+正しいドキュメントパスを必ず指定してください。`dataDir`変数。
 
-Aspose.Words for .NET を使用して、MS Word の特定のバージョンに合わせてドキュメントを最適化する方法を学習しました。このチュートリアルで提供されるステップバイステップ ガイドに従うことで、MS Word のさまざまなバージョンに合わせて独自の文書を簡単に最適化できます。
+Aspose.Words for .NET を使用して、特定のバージョンの MS Word 用にドキュメントを最適化する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、さまざまなバージョンの MS Word 用に独自のドキュメントを簡単に最適化できます。

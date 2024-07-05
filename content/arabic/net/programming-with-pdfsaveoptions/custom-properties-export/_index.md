@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## الخطوة 2: إضافة خصائص مخصصة
- بعد ذلك، قم بإضافة الخصائص المخصصة المطلوبة. على سبيل المثال، لإضافة خاصية "شركة" بالقيمة "Apose"، استخدم الخاصية`Add` طريقة مجموعة CustomDocumentProperties:
+ بعد ذلك، قم بإضافة الخصائص المخصصة المطلوبة. على سبيل المثال، لإضافة خاصية "شركة" بالقيمة "Aspose"، استخدم الخاصية`Add` طريقة مجموعة CustomDocumentProperties:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 
  إنشاء مثيل لـ`Document` فصل.
 
- قم بإضافة الخصائص المخصصة المطلوبة باستخدام`CustomDocumentProperties` مجموعة. على سبيل المثال، استخدم`Add` طريقة لإضافة خاصية "الشركة" بالقيمة "Apose".
+ قم بإضافة الخصائص المخصصة المطلوبة باستخدام`CustomDocumentProperties` مجموعة. على سبيل المثال، استخدم`Add` طريقة لإضافة خاصية "الشركة" بالقيمة "Aspose".
 
  إنشاء مثيل لـ`PdfSaveOptions` فئة وحدد كيفية تصدير الخصائص المخصصة باستخدام`CustomPropertiesExport` ملكية. ال`PdfCustomPropertiesExport.Standard` تقوم القيمة بتصدير الخصائص المخصصة وفقًا للإعدادات الافتراضية.
 

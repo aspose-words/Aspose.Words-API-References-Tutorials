@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/find-and-replace-text/replace-text-in-table/
 ---
 
-Pada artikel ini, kita akan menjelajahi kode sumber C# di atas untuk memahami cara menggunakan fungsi Ganti Teks Dalam Tabel di pustaka Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menemukan dan mengganti teks tertentu di dalam tabel di dokumen Word.
+Pada artikel ini, kita akan menjelajahi kode sumber C# di atas untuk memahami cara menggunakan fungsi Ganti Teks Dalam Tabel di perpustakaan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menemukan dan mengganti teks tertentu di dalam tabel di dokumen Word.
 
 ## Prasyarat
 
@@ -115,7 +115,7 @@ table.LastRow.LastCell.Range.Replace("50", "20", new FindReplaceOptions(FindRepl
 
 #### T: Dapatkah saya menggunakan ekspresi reguler untuk penggantian teks dalam tabel dengan Aspose.Words untuk .NET?
 
-J: Ya, Anda dapat menggunakan ekspresi reguler untuk penggantian teks dalam tabel dengan Aspose.Words untuk .NET. Dengan membuat pola ekspresi reguler, Anda dapat melakukan pencocokan lebih lanjut dan fleksibel untuk mengganti teks dalam tabel. Hal ini memungkinkan Anda menangani pola pencarian yang kompleks dan melakukan penggantian dinamis berdasarkan grup atau pola yang diambil.
+J: Ya, Anda dapat menggunakan ekspresi reguler untuk penggantian teks dalam tabel dengan Aspose.Words untuk .NET. Dengan membuat pola ekspresi reguler, Anda dapat melakukan pencocokan lebih lanjut dan fleksibel untuk mengganti teks dalam tabel. Hal ini memungkinkan Anda menangani pola pencarian yang kompleks dan melakukan penggantian dinamis berdasarkan grup atau pola yang ditangkap.
 
 #### T: Apakah ada batasan atau pertimbangan saat mengganti teks dalam tabel menggunakan Aspose.Words untuk .NET?
 

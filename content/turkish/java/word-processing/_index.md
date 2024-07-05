@@ -34,7 +34,7 @@ Aspose.Words for Java'nın çeşitli belge formatlarını kullanma gücünün ki
 ### [HTML, RTF ve TXT Seçenekleri ile Belge Yüklemeyi Optimize Etme](./optimizing-document-loading-options/)
 Aspose.Words for Java ile belge yüklemeyi optimize edin. HTML, RTF ve TXT dosyalarının hızını ve verimliliğini artırın. Kullanıcı deneyimini bugün artırın!
 ### [DOC, HTML ve Görüntü Seçenekleri ile Verimli Belge Kaydetme](./efficient-document-saving-options/)
-Aspose.Words for Java ile verimli belge kaydetmeyi öğrenin. Bu adım adım kılavuz, DOC, HTML ve görüntü seçeneklerini kapsayarak belge yönetimi becerilerinizi geliştirir.
+Aspose.Words for Java ile verimli belge kaydetmeyi öğrenin. Bu adım adım kılavuz, belge yönetimi becerilerinizi geliştiren DOC, HTML ve görüntü seçeneklerini kapsar
 ### [Belgeler için Gelişmiş Kaydetme Ayarlarında Uzmanlaşma](./mastering-advanced-save-settings/)
 Aspose.Words for Java ile gelişmiş belge kaydetme ayarlarında ustalaşın. Belge oluşturmayı zahmetsizce biçimlendirmeyi, korumayı, optimize etmeyi ve otomatikleştirmeyi öğrenin.
 ### [Belge İçeriğini Temizleme, Alanlar ve XML Verileriyle Değiştirme](./manipulating-document-content/)

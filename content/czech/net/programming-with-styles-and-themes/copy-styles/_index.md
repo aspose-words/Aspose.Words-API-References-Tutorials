@@ -39,7 +39,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 
 V tomto posledním kroku uložíme zdrojový dokument se styly zkopírovanými do souboru.
 
-Nyní můžete spustit zdrojový kód pro kopírování stylů ze zdrojového dokumentu do cílového dokumentu. Tato funkce umožňuje zachovat konzistenci stylu ve více dokumentech, což usnadňuje správu vzhledu a formátování dokumentů.
+Nyní můžete spustit zdrojový kód pro kopírování stylů ze zdrojového dokumentu do cílového dokumentu. Tato funkce vám umožňuje zachovat konzistenci stylu ve více dokumentech, což usnadňuje správu vzhledu a formátování vašich dokumentů.
 
 ### Ukázka zdrojového kódu pro kopírování stylů pomocí Aspose.Words pro .NET 
 

@@ -2,7 +2,7 @@
 title: Sửa đổi hình dạng
 linktitle: Sửa đổi hình dạng
 second_title: API xử lý tài liệu Aspose.Words
-description: Sửa đổi hình dạng trong tài liệu Word bằng Aspose.Words for .NET.
+description: Sửa đổi hình dạng trong tài liệu Word bằng Aspose.Words cho .NET.
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/shape-revision/
@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Bước 3: Lấy bộ sưu tập hình dạng và kiểm tra các bản sửa đổi.
+## Bước 3: Lấy bộ sưu tập hình dạng và kiểm tra các bản sửa đổi
 
 Chúng ta sẽ lấy bộ sưu tập các hình dạng từ tài liệu và kiểm tra các bản sửa đổi liên quan đến từng hình dạng.
 

@@ -17,7 +17,7 @@ url: /ru/net/add-content-using-documentbuilder/move-to-bookmark-end/
 
 -  Visual Studio: Вы можете скачать его с[здесь](https://visualstudio.microsoft.com/).
 -  Aspose.Words для .NET: возьмите его из[ссылка для скачивания](https://releases.aspose.com/words/net/).
--  Действующая лицензия Aspose. Words: вы можете получить временную лицензию.[здесь](https://purchase.aspose.com/temporary-license/) если у вас его нет.
+-  Действующая лицензия Aspose.Words: вы можете получить временную лицензию.[здесь](https://purchase.aspose.com/temporary-license/) если у вас его нет.
 
 И, конечно же, базовые знания C# и .NET будут иметь большое значение.
 
@@ -89,8 +89,8 @@ bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEn
 ```
 
 - `bookmarkName`: имя закладки, к которой вы хотите перейти.
-- `isBookmarkStart` :Если установлено`true`, перемещает к началу закладки.
-- `isBookmarkEnd` :Если установлено`true`, перемещает в конец закладки.
+- `isBookmarkStart` : Если установлено значение`true`, перемещает к началу закладки.
+- `isBookmarkEnd` : Если установлено значение`true`, перемещает в конец закладки.
 
 ### Реализация метода MoveToBookmark
 

@@ -16,7 +16,7 @@ url: /el/python-net/content-extraction-and-manipulation/remove-content-documents
 
 Πριν προχωρήσουμε στην υλοποίηση, βεβαιωθείτε ότι έχετε τα εξής:
 
-- Python εγκατεστημένη στο σύστημά σας
+- Η Python είναι εγκατεστημένη στο σύστημά σας
 - Βασική κατανόηση προγραμματισμού Python
 - Εγκαταστάθηκε η βιβλιοθήκη Aspose.Words for Python
 

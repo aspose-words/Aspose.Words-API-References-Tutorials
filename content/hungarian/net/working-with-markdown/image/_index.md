@@ -61,7 +61,7 @@ Gratulálok ! Most már megtanulta, hogyan kell használni a képek funkciót az
 
 #### K: Beszúrhatok képet az Aspose.Words URL-ből?
 
- V: Igen, beszúrhat egy képet az Aspose.Words-ben található URL-ből. Ugyanazt használhatod`InsertImage`módszert, és adja meg a kép URL-címét a helyi fájl elérési útja helyett.
+ V: Igen, beszúrhat egy képet az Aspose.Words URL-ből. Ugyanazt használhatod`InsertImage`módszert, és adja meg a kép URL-címét a helyi fájl elérési útja helyett.
 
 #### K: Hogyan méretezhetek át egy képet az Aspose.Words programban?
 

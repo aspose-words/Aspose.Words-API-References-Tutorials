@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
 ## Conclusie
-Gefeliciteerd! U hebt met succes geleerd hoe u de landinstelling in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu de opmaak van datums en getallen tijdens samenvoegbewerkingen beheren. Pas de landinstelling aan uw vereisten aan om een nauwkeurige en consistente opmaak in uw documenten te garanderen.
+Gefeliciteerd! U hebt met succes geleerd hoe u de landinstelling in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu de opmaak van datums en getallen tijdens samenvoegbewerkingen bepalen. Pas de landinstelling aan uw vereisten aan om een nauwkeurige en consistente opmaak in uw documenten te garanderen.
 
 ### Veelgestelde vragen
 

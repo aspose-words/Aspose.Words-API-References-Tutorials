@@ -60,7 +60,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document
 
 #### ถาม: ฉันจะโหลดใบรับรองการลงนามใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: หากต้องการโหลดใบรับรองการลงนามใน Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`CertificateHolder` ชั้นเรียน สร้างอินสแตนซ์ของ`CertificateHolder` โดยระบุเส้นทางไปยังไฟล์ใบรับรองและรหัสผ่านที่เกี่ยวข้อง นี่คือตัวอย่าง:
+ ตอบ: หากต้องการโหลดใบรับรองการลงนามใน Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`CertificateHolder` ระดับ. สร้างอินสแตนซ์ของ`CertificateHolder` โดยระบุเส้นทางไปยังไฟล์ใบรับรองและรหัสผ่านที่เกี่ยวข้อง นี่คือตัวอย่าง:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx", "password");
@@ -70,7 +70,7 @@ CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx
 
 #### ถาม: ฉันจะลงนามในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: หากต้องการลงนามในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`DigitalSignatureUtil` ชั้นเรียน โทรหา`Sign` วิธีการระบุเส้นทางไปยังเอกสารต้นฉบับ เส้นทางไปยังเอกสารที่ลงนาม (เอาต์พุต) และ`CertificateHolder` วัตถุ วัตถุ นี่คือตัวอย่าง:
+ ตอบ: หากต้องการลงนามในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`DigitalSignatureUtil` ระดับ. โทรหา`Sign` วิธีการระบุเส้นทางไปยังเอกสารต้นฉบับ เส้นทางไปยังเอกสารที่ลงนาม (เอาต์พุต) และ`CertificateHolder` วัตถุ. นี่คือตัวอย่าง:
 
 ```csharp
 DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/document.docx", certHolder);

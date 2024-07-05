@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Tento kód vytvoří instanci`HtmlSaveOptions` a sady`CssStyleSheetType` na`CssStyleSheetType.External`vygenerovat externí šablonu stylů CSS a`CssClassNamePrefix` na`"pfx_"` předponovat`"pfx_"` pojmenovat třídy CSS.
+ Tento kód vytvoří instanci`HtmlSaveOptions` a sady`CssStyleSheetType` na`CssStyleSheetType.External`vygenerovat externí šablonu stylů CSS a`CssClassNamePrefix` na`"pfx_"` předponovat`"pfx_"` pojmenovat třídu CSS.
 
 ## Krok 4: Převod a uložení dokumentu do HTML
 

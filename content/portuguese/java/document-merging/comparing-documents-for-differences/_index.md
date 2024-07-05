@@ -69,7 +69,7 @@ Comparar documentos em busca de diferenças usando Aspose.Words for Java é um p
 
 ### Como faço para instalar o Aspose.Words para Java?
 
- Para instalar o Aspose.Words for Java, visite a página de download.[aqui](https://releases.aspose.com/words/java/) e siga as instruções de instalação fornecidas.
+ Para instalar o Aspose.Words for Java, visite a página de download[aqui](https://releases.aspose.com/words/java/) e siga as instruções de instalação fornecidas.
 
 ### Posso comparar documentos com formatos diferentes, como DOCX e PDF?
 
@@ -81,7 +81,7 @@ Aspose.Words pode lidar com documentos grandes de forma eficiente, mas é essenc
 
 ### Posso personalizar a forma como as diferenças são destacadas no resultado da comparação?
 
-Sim, Aspose.Words permite personalizar a aparência das diferenças no documento de resultado da comparação, como usar cores ou estilos diferentes para conteúdo adicionado e excluído.
+Sim, Aspose.Words permite personalizar a aparência das diferenças no documento de resultados de comparação, como usar cores ou estilos diferentes para conteúdo adicionado e excluído.
 
 ### Existe uma versão de teste do Aspose.Words disponível para teste?
 

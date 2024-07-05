@@ -1,6 +1,6 @@
 ---
-title: Italiensk text
-linktitle: Italiensk text
+title: Kursiv text
+linktitle: Kursiv text
 second_title: Aspose.Words Document Processing API
 description: Lär dig att kursiv text med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Gör texten italiensk.
+// Gör texten kursiv.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

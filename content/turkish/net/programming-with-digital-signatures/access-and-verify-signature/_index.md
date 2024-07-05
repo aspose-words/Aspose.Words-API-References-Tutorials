@@ -79,7 +79,7 @@ C: Word belgesindeki dijital imzalar, belgenin bütünlüğünü ve kaynağını
 
 C: Aspose.Words for .NET kullanarak bir Word belgesindeki dijital imzalara erişmek için şu adımları takip edebilirsiniz:
 1.  Belgeyi kullanarak yükleyin`Document` sınıfını seçin ve belge dosyasının yolunu belirtin.
-2.  Yinelemek için bir döngü kullanın`DigitalSignatures` belgelerin toplanması. Her yineleme bir dijital imzayı temsil eder.
+2.  Yinelemek için bir döngü kullanın`DigitalSignatures` belgenin toplanması. Her yineleme bir dijital imzayı temsil eder.
 
 #### S: Word belgesindeki dijital imzadan hangi bilgilere erişebilirim?
 
@@ -97,13 +97,13 @@ C: Bir Word belgesindeki dijital imzadan aşağıdakiler gibi çeşitli bilgiler
 #### S: Aspose.Words for .NET kullanarak bir Word belgesindeki dijital imzaların geçerliliğini nasıl doğrulayabilirim?
 
 C: Aspose.Words for .NET kullanarak bir Word belgesindeki dijital imzaların geçerliliğini doğrulamak için şu adımları takip edebilirsiniz:
-1.  Erişmek`DigitalSignatures` belgelerin toplanması.
+1.  Erişmek`DigitalSignatures` belgenin toplanması.
 2.  Her birini yineleyin`DigitalSignature` koleksiyondaki nesne.
 3.  Kullan`IsValid` mülkiyeti`DigitalSignature` İmzanın geçerli olup olmadığını kontrol etmek için itiraz edin.
 
 #### S: İmzalayanın yorumlarını veya imzalama nedenini bir Word belgesindeki dijital imzadan alabilir miyim?
 
-C: Evet, imzalayanın yorumlarını veya imzalama nedenini bir Word belgesindeki dijital imzadan alabilirsiniz.`Comments` mülkiyeti`DigitalSignature` Nesne, imzalama işlemi sırasında imzalayan tarafından belirtilen açıklamalara erişim sağlar.
+C: Evet, imzalayanın yorumlarını veya imzalama nedenini bir Word belgesindeki dijital imzadan alabilirsiniz.`Comments` mülkiyeti`DigitalSignature` nesnesi, imzalama işlemi sırasında imzalayan tarafından belirtilen açıklamalara erişim sağlar.
 
 #### S: Aspose.Words for .NET'te imza doğrulama özelliği ne tür belgeleri destekliyor?
 

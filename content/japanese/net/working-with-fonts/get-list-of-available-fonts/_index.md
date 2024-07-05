@@ -2,31 +2,31 @@
 title: 利用可能なフォントのリストを取得する
 linktitle: 利用可能なフォントのリストを取得する
 second_title: Aspose.Words ドキュメント処理 API
-description: このチュートリアルでは、Aspose.Words for .NET で使用できるフォントのリストを取得する方法を学習します。
+description: このチュートリアルでは、Aspose.Words for .NET で使用可能なフォントのリストを取得する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/get-list-of-available-fonts/
 ---
-このチュートリアルでは、Aspose.Words for .NET で使用できるフォントのリストを取得する方法を説明します。使用可能なフォントのリストにより、ドキュメントで使用できるフォントがわかります。 .NET プロジェクトのコードを理解して実装できるように、段階的に説明します。
+このチュートリアルでは、Aspose.Words for .NET で使用できるフォントのリストを取得する方法について説明します。使用可能なフォントのリストにより、ドキュメントで使用できるフォントがわかります。.NET プロジェクトでコードを理解して実装できるように、手順を追って説明します。
 
 ## 前提条件
 始める前に、次のものが揃っていることを確認してください。
-- C# プログラミング言語に関する実践的な知識
+- C#プログラミング言語の実用的な知識
 - プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
 
-## ステップ 1: ドキュメント ディレクトリを定義する
-まず、Word 文書の場所へのディレクトリ パスを設定する必要があります。交換する`"YOUR DOCUMENT DIRECTORY"`コード内で適切なパスを指定します。
+## ステップ1: ドキュメントディレクトリを定義する
+まず、Word文書の場所にディレクトリパスを設定する必要があります。`"YOUR DOCUMENT DIRECTORY"`コード内に適切なパスを追加します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## ステップ 2: フォント ソースを構成する
-次に、インスタンスを作成します。`FontSettings`を使用して既存のフォント ソースを取得します。`GetFontsSources()`方法。また、フォントが含まれているフォルダーを指定して、新しいフォント ソースを追加します。
+## ステップ2: フォントソースを構成する
+次に、インスタンスを作成します`FontSettings`既存のフォントソースを取得するには、`GetFontsSources()`メソッド。フォントを含むフォルダーを指定して、新しいフォント ソースも追加します。
 
 ```csharp
-//フォントソースを設定する
+//フォントソースを構成する
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 
@@ -37,11 +37,11 @@ fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## ステップ 3: 利用可能なフォントのリストを取得する
-次に、使用可能なフォントを参照します。`GetAvailableFonts()`最初に更新されたフォント ソースのメソッド。
+## ステップ3: 利用可能なフォントのリストを取得する
+次に、利用可能なフォントを参照します。`GetAvailableFonts()`最初に更新されたフォント ソースのメソッド。
 
 ```csharp
-//使用可能なフォントのリストを取得する
+//利用可能なフォントのリストを取得する
 foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
 Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
@@ -61,7 +61,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-//新しいフォルダー ソースを追加して、次のフォルダーでフォントを検索するように Aspose.Words に指示します。
+//Aspose.Words に次のフォルダーでフォントを検索するように指示する新しいフォルダー ソースを追加します。
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
 //フォントを含むカスタム フォルダーを既存のフォント ソースのリストに追加します。
 fontSources.Add(folderFontSource);
@@ -77,18 +77,18 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET で利用可能なフォントのリストを取得する方法を説明しました。これにより、ドキュメントで使用できるフォントがわかります。この機能を自由に使用して、ニーズに合わせて適切なフォントを選択してください。
+このチュートリアルでは、Aspose.Words for .NET で使用できるフォントのリストを取得する方法について説明しました。これにより、ドキュメントで使用できるフォントがわかります。この機能を使用して、ニーズに合った適切なフォントを自由に選択してください。
 
 ### よくある質問
 
-#### Q: Aspose.Words で利用可能なフォントのリストを取得するにはどうすればよいですか?
+#### Q: Aspose.Words で使用できるフォントのリストを取得するにはどうすればよいですか?
 
- A: Aspose.Words で利用可能なフォントのリストを取得するには、`FontsProvider`クラスと`GetAvailableFonts`方法。このメソッドは、システムにインストールされているすべてのフォントのリストを返します。
+ A: Aspose.Wordsで利用可能なフォントのリストを取得するには、`FontsProvider`クラスと`GetAvailableFonts`メソッド。このメソッドは、システムにインストールされているすべてのフォントのリストを返します。
 
-#### Q: Aspose.Words で特定の条件で使用可能なフォントのリストをフィルタリングできますか?
+#### Q: Aspose.Words で、特定の基準で使用可能なフォントのリストをフィルターできますか?
 
-A: はい、特定の条件を使用して、Aspose.Words で使用可能なフォントのリストをフィルタリングできます。たとえば、ファミリー、スタイル、言語ごとにフォントをフィルタリングできます。
+A: はい、特定の条件を使用して、Aspose.Words で使用可能なフォントのリストをフィルターできます。たとえば、フォントをファミリ、スタイル、言語でフィルターできます。
 
 #### Q: Word 文書で使用可能なフォントのリストを使用するにはどうすればよいですか?
 
- A: Word 文書で使用できるフォントのリストを使用するには、リストを参照し、`FontSettings` Aspose.Words のクラス。
+A: Word文書で使用可能なフォントのリストを使用するには、リストを参照し、メソッドとプロパティを使用して適切なフォントを選択します。`FontSettings` Aspose.Words のクラス。

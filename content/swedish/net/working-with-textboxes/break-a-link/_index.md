@@ -1,6 +1,6 @@
 ---
-title: Bryt länken framåt i Word-dokument
-linktitle: Bryt länken framåt i Word-dokument
+title: Bryt vidarelänken i Word-dokument
+linktitle: Bryt vidarelänken i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du bryter fram länkar i ett Word-dokument med Aspose.Words för .NET.
 type: docs
@@ -69,7 +69,7 @@ textBox.Previous?.BreakForwardLink();
 
 Grattis! Du har nu lärt dig hur du bryter omdirigeringslänkar i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Genom att följa stegen i den här guiden kunde du ställa in dokumentet, skapa en TextBox-form och bryta omdirigeringslänkarna med olika metoder.
 
-### Vanliga frågor om bryta framåt länk i word-dokument
+### Vanliga frågor om bryt framåt länk i word-dokument
 
 #### F: Vilket bibliotek används för att bryta omdirigeringslänkar i ett Word-dokument med Aspose.Words för .NET?
 
@@ -81,7 +81,7 @@ S: För att bryta omdirigeringslänkar i ett Word-dokument med Aspose.Words för
 
 #### F: Hur bryter man en omdirigeringslänk genom att ställa in ett nollvärde?
 
-S: Alternativt kan du bryta en omdirigeringslänk genom att ställa in`Next` egenskapen för textrutan till`null`. Detta tar effektivt bort kopplingen till nästa form.
+S: Alternativt kan du bryta en omdirigeringslänk genom att ställa in`Next` textrutans egendom till`null`. Detta tar effektivt bort kopplingen till nästa form.
 
 #### F: Hur bryter man en länk som leder till textrutan?
 

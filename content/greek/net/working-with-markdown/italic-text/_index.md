@@ -1,6 +1,6 @@
 ---
-title: Ιταλικό κείμενο
-linktitle: Ιταλικό κείμενο
+title: Πλάγιο κείμενο
+linktitle: Πλάγιο κείμενο
 second_title: Aspose.Words Document Processing API
 description: Μάθετε πώς να κάνετε πλάγιο κείμενο με το Aspose.Words for .NET Βήμα προς βήμα οδηγό.
 type: docs
@@ -34,12 +34,12 @@ builder.Writeln("This text will be in italics");
 // Χρησιμοποιήστε ένα πρόγραμμα δημιουργίας εγγράφων για να προσθέσετε περιεχόμενο στο έγγραφο.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Κάντε το κείμενο ιταλικό.
+// Κάντε το κείμενο πλάγιο.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```
 
-συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη δυνατότητα πλάγιου κειμένου με το Aspose.Words για .NET.
+Συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη δυνατότητα πλάγιου κειμένου με το Aspose.Words για .NET.
 
 
 ### Συχνές ερωτήσεις

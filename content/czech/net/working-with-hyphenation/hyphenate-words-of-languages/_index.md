@@ -79,4 +79,4 @@ A: Chcete-li určit jazyk slabikáře v Aspose.Words, musíte použít příslu�
 
 #### Otázka: Funguje slabikování pro všechny jazyky v Aspose.Words?
 
-A: Slabikování v Aspose.Words závisí na pravidlech slabikování specifických pro jazyk. Přestože Aspose.Words podporuje širokou škálu jazyků, některé jazyky nemusí být podporovány nebo pro ně nemusí být k dispozici slabika. Podívejte se do dokumentace Aspose.Words a zjistěte, které jazyky jsou podporovány pro slabikování.
+A: Slabikování v Aspose.Words závisí na pravidlech slabikování specifických pro jazyk. Přestože Aspose.Words podporuje širokou škálu jazyků, některé jazyky nemusí být podporovány nebo pro ně nemusí být slabikování dostupné. Podívejte se do dokumentace Aspose.Words a zjistěte, které jazyky jsou podporovány pro slabikování.

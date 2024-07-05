@@ -8,7 +8,7 @@ weight: 780
 url: /hu/net/working-with-list/
 ---
 
-Words Processing with Lists egy átfogó forrás, amely végigvezeti Önt a Word-dokumentumok listáival végzett szövegfeldolgozáson az Aspose.Words for .NET könyvtár használatával. Az oktatóanyagok lépésről lépésre magyarázatot, teljes forráskódot és gyakorlati példákat kínálnak különböző típusú listák létrehozásához, testreszabásához és kezeléséhez, beleértve a felsorolásjeles listákat, a számozott listákat és a többszintű listákat. Azt is megtudhatja, hogyan adhat hozzá elemeket, hogyan formázhat listákat, hogyan módosíthatja a megjelenést és a behúzást, valamint egyéb speciális műveleteket. Ez az erőforrás elengedhetetlen azoknak a fejlesztőknek, akik automatizálni szeretnék a listák létrehozását és kezelését Word-dokumentumaikban az Aspose.Words for .NET segítségével.
+Words Processing with Lists egy átfogó forrás, amely végigvezeti Önt a Word-dokumentumok listáival végzett szövegfeldolgozáson az Aspose.Words for .NET könyvtár használatával. Az oktatóanyagok lépésről lépésre magyarázatot, teljes forráskódot és gyakorlati példákat kínálnak különböző típusú listák létrehozásához, testreszabásához és kezeléséhez, beleértve a felsorolásjeles listákat, a számozott listákat és a többszintű listákat. Azt is megtudhatja, hogyan adhat hozzá elemeket, hogyan formázhat listákat, hogyan módosíthatja a megjelenést és a behúzást, valamint egyéb speciális műveleteket. Ez az erőforrás elengedhetetlen azoknak a fejlesztőknek, akik szeretnék automatizálni a listák létrehozását és kezelését Word-dokumentumaikban az Aspose.Words for .NET segítségével.
 
  ## Oktatóanyagok
 | Cím | Leírás |

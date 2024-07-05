@@ -28,7 +28,7 @@ public class TableCreation {
         // Hozzon létre egy új dokumentumot
         Document doc = new Document();
         
-        // Hozzon létre egy táblázatot 3 sorból és 3 oszlopból.
+        // Hozzon létre egy táblázatot 3 sorból és 3 oszlopból
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // Töltse fel a táblázat celláit adatokkal

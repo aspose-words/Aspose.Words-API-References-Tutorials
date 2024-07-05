@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でのテキストの検索と置換
 linktitle: テキストの検索と置換
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用して Word 文書内のテキストを検索して置換する方法を学びます。コード例を含むステップバイステップのガイド。 Java ドキュメント操作スキルを強化します。
+description: Aspose.Words for Java を使用して Word 文書内のテキストを検索および置換する方法を学びます。コード例を使用したステップバイステップのガイド。Java 文書の操作スキルを強化します。
 type: docs
 weight: 15
 url: /ja/java/document-manipulation/finding-and-replacing-text/
@@ -10,7 +10,7 @@ url: /ja/java/document-manipulation/finding-and-replacing-text/
 
 ## Aspose.Words for Java でのテキストの検索と置換の概要
 
-Aspose.Words for Java は、Word ドキュメントをプログラムで操作できるようにする強力な Java API です。 Word 文書を扱うときの一般的なタスクの 1 つは、テキストを検索して置換することです。テンプレート内のプレースホルダーを更新する必要がある場合でも、より複雑なテキスト操作を実行する必要がある場合でも、Aspose.Words for Java は目標を効率的に達成するのに役立ちます。
+Aspose.Words for Java は、Word 文書をプログラムで操作できる強力な Java API です。Word 文書を扱う際の一般的なタスクの 1 つは、テキストの検索と置換です。テンプレートのプレースホルダーを更新する必要がある場合でも、より複雑なテキスト操作を実行する必要がある場合でも、Aspose.Words for Java を使用すると、効率的に目標を達成できます。
 
 ## 前提条件
 
@@ -18,17 +18,17 @@ Aspose.Words for Java は、Word ドキュメントをプログラムで操作�
 
 - Java開発環境
 - Aspose.Words for Java ライブラリ
-- 使用するサンプル Word 文書
+- 作業に使えるサンプルのWord文書
 
- Aspose.Words for Java ライブラリは、次からダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
+ Aspose.Words for Javaライブラリは以下からダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## 単純なテキストの検索と置換
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-//DocumentBuilder を作成する
+//ドキュメントビルダーを作成する
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 //テキストの検索と置換
@@ -38,17 +38,17 @@ builder.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 doc.save("modified-document.docx");
 ```
 
-この例では、Word 文書をロードし、`DocumentBuilder`を使用し、`replace`ドキュメント内の「古いテキスト」を検索して「新しいテキスト」に置き換えるメソッド。
+この例では、Word文書を読み込み、`DocumentBuilder` 、そして`replace`ドキュメント内の「古いテキスト」を検索して「新しいテキスト」に置き換える方法。
 
 ## 正規表現の使用
 
-正規表現は、テキストの検索と置換のための強力なパターン マッチング機能を提供します。 Aspose.Words for Java は、より高度な検索および置換操作のための正規表現をサポートしています。
+正規表現は、テキストの検索と置換のための強力なパターン マッチング機能を提供します。Aspose.Words for Java は、より高度な検索および置換操作のための正規表現をサポートしています。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-//DocumentBuilder を作成する
+//ドキュメントビルダーを作成する
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 //正規表現を使用してテキストを検索および置換する
@@ -61,15 +61,15 @@ doc.save("modified-document.docx");
 
 この例では、正規表現パターンを使用して、ドキュメント内のテキストを検索して置換します。
 
-## フィールド内のテキストの無視
+## フィールド内のテキストを無視する
 
 検索および置換操作を実行するときにフィールド内のテキストを無視するように Aspose.Words を構成できます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-// FindReplaceOptions インスタンスを作成し、IgnoreFields を true に設定します。
+// FindReplaceOptionsインスタンスを作成し、IgnoreFieldsをtrueに設定する
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreFields(true);
 
@@ -80,17 +80,17 @@ doc.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-これは、差し込みフィールドなどのフィールド内のテキストを置換から除外する場合に便利です。
+これは、マージ フィールドなどのフィールド内のテキストを置換対象から除外する場合に便利です。
 
-## リビジョンの削除内のテキストを無視する
+## 削除リビジョン内のテキストを無視する
 
 検索および置換操作中に削除リビジョン内のテキストを無視するように Aspose.Words を構成できます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-// FindReplaceOptions インスタンスを作成し、IgnoreDeleted を true に設定します。
+// FindReplaceOptionsインスタンスを作成し、IgnoreDeletedをtrueに設定する
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreDeleted(true);
 
@@ -101,17 +101,17 @@ doc.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-これにより、追跡された変更で削除対象としてマークされたテキストを置換から除外できます。
+これにより、変更履歴で削除対象としてマークされたテキストを置き換えから除外できます。
 
-## リビジョンの挿入内のテキストを無視する
+## 挿入リビジョン内のテキストを無視する
 
 検索および置換操作中に挿入リビジョン内のテキストを無視するように Aspose.Words を構成できます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-// FindReplaceOptions インスタンスを作成し、IgnoreInserted を true に設定します。
+// FindReplaceOptionsインスタンスを作成し、IgnoreInsertedをtrueに設定する
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreInserted(true);
 
@@ -122,14 +122,14 @@ doc.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-これにより、追跡された変更に挿入されたものとしてマークされているテキストを置換から除外できます。
+これにより、変更履歴で挿入としてマークされたテキストを置換対象から除外できます。
 
-## テキストを HTML に置き換える
+## テキストをHTMLに置き換える
 
 Aspose.Words for Java を使用して、テキストを HTML コンテンツに置き換えることができます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
 //カスタム置換コールバックを使用して FindReplaceOptions インスタンスを作成する
@@ -143,23 +143,23 @@ doc.getRange().replace("text-to-replace", "new-html-content", options);
 doc.save("modified-document.docx");
 ```
 
-この例では、カスタムの`ReplaceWithHtmlEvaluator`テキストを HTML コンテンツに置き換えます。
+この例では、カスタム`ReplaceWithHtmlEvaluator`テキストを HTML コンテンツに置き換えます。
 
-## ヘッダーとフッターのテキストを置換する
+## ヘッダーとフッターのテキストの置き換え
 
 Word 文書のヘッダーとフッター内のテキストを検索して置換できます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
 //ヘッダーとフッターのコレクションを取得する
 HeaderFooterCollection headersFooters = doc.getFirstSection().getHeadersFooters();
 
-//テキストを置換するヘッダーまたはフッターのタイプを選択します (例: HeaderFooterType.FOOTER_PRIMARY)
+//テキストを置き換えるヘッダーまたはフッターの種類を選択します (例: HeaderFooterType.FOOTER_PRIMARY)
 HeaderFooter footer = headersFooters.getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
 
-// FindReplaceOptions インスタンスを作成し、フッターの範囲に適用します。
+// FindReplaceOptionsインスタンスを作成し、フッターの範囲に適用します。
 FindReplaceOptions options = new FindReplaceOptions();
 footer.getRange().replace("text-to-replace", "new-text", options);
 
@@ -167,24 +167,24 @@ footer.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-これにより、特にヘッダーとフッターでテキストの置換を実行できるようになります。
+これにより、ヘッダーとフッター内のテキストの置換を具体的に実行できるようになります。
 
-## ヘッダーとフッターの注文の変更を表示する
+## ヘッダーとフッターの順序の変更を表示する
 
 Aspose.Words を使用すると、ドキュメント内のヘッダーとフッターの順序の変更を表示できます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
 //最初のセクションを取得する
 Section firstPageSection = doc.getFirstSection();
 
-//FindReplaceOptions インスタンスを作成し、ドキュメントの範囲に適用します。
+//FindReplaceOptionsインスタンスを作成し、それをドキュメントの範囲に適用します。
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceLog());
 
-//ヘッダーとフッターの順序に影響するテキストを置換する
+//ヘッダーとフッターの順序に影響するテキストを置き換える
 doc.getRange().replace(Pattern.compile("(header|footer)"), "", options);
 
 //変更したドキュメントを保存する
@@ -193,15 +193,15 @@ doc.save("modified-document.docx");
 
 これにより、ドキュメント内のヘッダーとフッターの順序に関連する変更を視覚化できます。
 
-## テキストをフィールドに置き換える
+## テキストをフィールドで置き換える
 
-Aspose.Words for Java を使用してテキストをフィールドに置き換えることができます。
+Aspose.Words for Java を使用して、テキストをフィールドに置き換えることができます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-// FindReplaceOptions インスタンスを作成し、フィールドのカスタム置換コールバックを設定します。
+// FindReplaceOptionsインスタンスを作成し、フィールドのカスタム置換コールバックを設定します。
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceTextWithFieldHandler(FieldType.FIELD_MERGE_FIELD));
 
@@ -212,17 +212,17 @@ doc.getRange().replace(Pattern.compile("PlaceHolder(\\d+)"), "", options);
 doc.save("modified-document.docx");
 ```
 
-この例では、テキストをフィールドに置き換え、フィールドのタイプを指定します (例:`FieldType.FIELD_MERGE_FIELD`）。
+この例では、テキストをフィールドに置き換え、フィールドタイプを指定します（例：`FieldType.FIELD_MERGE_FIELD`）。
 
-## エバリュエーターに置き換える
+## 評価者との交代
 
-カスタム エバリュエーターを使用して、置換テキストを動的に決定できます。
+カスタム評価ツールを使用すると、置換テキストを動的に決定できます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-// FindReplaceOptions インスタンスを作成し、カスタム置換コールバックを設定する
+// FindReplaceOptionsインスタンスを作成し、カスタム置換コールバックを設定する
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new MyReplaceEvaluator());
 
@@ -233,14 +233,14 @@ doc.getRange().replace(Pattern.compile("[s|m]ad"), "", options);
 doc.save("modified-document.docx");
 ```
 
-この例では、カスタム エバリュエーター (`MyReplaceEvaluator`) テキストを置き換えます。
+この例では、カスタム評価器（`MyReplaceEvaluator`）を使用してテキストを置き換えます。
 
-## 正規表現で置き換える
+## 正規表現による置換
 
-Aspose.Words for Java を使用すると、正規表現を使用してテキストを置換できます。
+Aspose.Words for Java を使用すると、正規表現を使用してテキストを置き換えることができます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
 //正規表現を使用してテキストを検索および置換する
@@ -254,31 +254,31 @@ doc.save("modified-document.docx");
 
 ## 置換パターン内の認識と置換
 
-Aspose.Words for Java を使用すると、置換パターン内で置換を認識して実行できます。
+Aspose.Words for Java を使用すると、置換パターン内での置換を認識して実行できます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-//UseSubstitutions を true に設定して FindReplaceOptions インスタンスを作成します
+//UseSubstitutionsをtrueに設定してFindReplaceOptionsインスタンスを作成します。
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseSubstitutions(true);
 
-//テキストをパターンに置き換える場合はオプションを使用します
+//テキストをパターンに置き換えるときにオプションを使用する
 doc.getRange().replace(Pattern.compile("([A-z]+) give money to ([A-z]+)"), "$2 take money from $1", options);
 
 //変更したドキュメントを保存する
 doc.save("modified-document.docx");
 ```
 
-これにより、置換パターン内で置換を実行して、より高度な置換を行うことができます。
+これにより、置換パターン内で置換を実行し、より高度な置換を実行できるようになります。
 
 ## 文字列に置き換える
 
 Aspose.Words for Java を使用して、テキストを単純な文字列に置き換えることができます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
 //テキストを文字列に置き換える
@@ -288,17 +288,17 @@ doc.getRange().replace("text-to-replace", "new-string", new FindReplaceOptions()
 doc.save("modified-document.docx");
 ```
 
-この例では、文書内の「置換するテキスト」を「新しい文字列」に置き換えます。
+この例では、ドキュメント内の「text-to-replace」を「new-string」に置き換えます。
 
-## 従来の注文の使用
+## レガシーオーダーの使用
 
-検索および置換操作を実行するときに従来の順序を使用できます。
+検索および置換操作を実行するときに、従来の順序を使用できます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-// FindReplaceOptions インスタンスを作成し、UseLegacyOrder を true に設定します。
+// FindReplaceOptionsインスタンスを作成し、UseLegacyOrderをtrueに設定する
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseLegacyOrder(true);
 
@@ -316,43 +316,43 @@ doc.save("modified-document.docx");
 Word 文書内の表内のテキストを検索して置換できます。
 
 ```java
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-//特定のテーブル (最初のテーブルなど) を取得します。
+//特定のテーブル（例：最初のテーブル）を取得する
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 
-//テーブル内のテキストを置換するには FindReplaceOptions を使用します
+//表内のテキストを置換するには FindReplaceOptions を使用します
 table.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 
 //変更したドキュメントを保存する
 doc.save("modified-document.docx");
 ```
 
-これにより、特にテーブル内でテキストの置換を実行できるようになります。
+これにより、テーブル内でのみテキストの置換を実行できます。
 
 ## 結論
 
-Aspose.Words for Java は、Word 文書内のテキストを検索および置換するための包括的な機能を提供します。単純なテキスト置換を実行する必要がある場合でも、正規表現、フィールド操作、またはカスタム エバリュエーターを使用したより高度な操作を実行する必要がある場合でも、Aspose.Words for Java が対応します。この強力な Java ライブラリの可能性を最大限に活用するには、Aspose が提供する広範なドキュメントと例を必ず調べてください。
+Aspose.Words for Java は、Word 文書内のテキストを検索および置換するための包括的な機能を提供します。単純なテキスト置換を実行する必要がある場合でも、正規表現、フィールド操作、カスタム評価子を使用したより高度な操作を実行する必要がある場合でも、Aspose.Words for Java が対応します。この強力な Java ライブラリの可能性を最大限に活用するには、Aspose が提供する広範なドキュメントと例を必ず参照してください。
 
 ## よくある質問
 
-### Aspose.Words for Java をダウンロードするにはどうすればよいですか?
+### Aspose.Words for Java をダウンロードするにはどうすればいいですか?
 
- Aspose.Words for Java は、次の Web サイトからダウンロードできます。[このリンク](https://releases.aspose.com/words/java/).
+ Aspose.Words for Javaは、次のウェブサイトからダウンロードできます。[このリンク](https://releases.aspose.com/words/java/).
 
 ### テキストの置換に正規表現を使用できますか?
 
-はい、Aspose.Words for Java では正規表現を使用してテキストを置換できます。これにより、より高度で柔軟な検索および置換操作を実行できるようになります。
+はい、Aspose.Words for Java では、テキスト置換に正規表現を使用できます。これにより、より高度で柔軟な検索および置換操作を実行できます。
 
 ### 置換中にフィールド内のテキストを無視するにはどうすればよいですか?
 
-置換中にフィールド内のテキストを無視するには、`IgnoreFields`の財産`FindReplaceOptions`に`true`。これにより、差し込みフィールドなどのフィールド内のテキストが置換から除外されます。
+置換時にフィールド内のテキストを無視するには、`IgnoreFields`の財産`FindReplaceOptions`に`true`これにより、マージ フィールドなどのフィールド内のテキストが置換から除外されます。
 
 ### ヘッダーとフッター内のテキストを置き換えることはできますか?
 
-はい、Word 文書のヘッダーとフッター内のテキストを置き換えることができます。適切なヘッダーまたはフッターにアクセスし、`replace`希望の方法で`FindReplaceOptions`.
+はい、Word文書のヘッダーとフッター内のテキストを置き換えることができます。適切なヘッダーまたはフッターにアクセスし、`replace`望ましい方法`FindReplaceOptions`.
 
-### UseLegacyOrder オプションは何のためにありますか?
+### UseLegacyOrder オプションの目的は何ですか?
 
-の`UseLegacyOrder`のオプション`FindReplaceOptions`を使用すると、検索および置換操作を実行するときに従来の順序を使用できます。これは、従来の注文動作が必要な特定のシナリオで役立ちます。
+の`UseLegacyOrder`オプション`FindReplaceOptions`検索および置換操作を実行するときに従来の順序を使用できます。これは、従来の順序の動作が望ましい特定のシナリオで役立ちます。

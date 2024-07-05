@@ -1,29 +1,29 @@
 ---
 title: Dokument beim Ersetzen einfügen
 linktitle: Dokument beim Ersetzen einfügen
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie in unserer detaillierten Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET nahtlos ein Word-Dokument in ein anderes einfügen. Perfekt für Entwickler, die die Dokumentenverarbeitung optimieren möchten.
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Erfahren Sie in unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET ein Word-Dokument nahtlos in ein anderes einfügen. Perfekt für Entwickler, die die Dokumentverarbeitung optimieren möchten.
 type: docs
 weight: 10
 url: /de/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## Einführung
 
-Hallo, Dokumentenmaestros! Haben Sie sich schon einmal mitten im Code gefühlt und versucht herauszufinden, wie Sie ein Word-Dokument nahtlos in ein anderes einfügen können? Keine Angst, denn heute tauchen wir in die Welt von Aspose.Words für .NET ein, um diese Aufgabe zu einem Kinderspiel zu machen. Wir führen Sie durch eine detaillierte Schritt-für-Schritt-Anleitung zur Verwendung dieser leistungsstarken Bibliothek zum Einfügen von Dokumenten an bestimmten Stellen während eines Such- und Ersetzungsvorgangs. Sind Sie bereit, ein Aspose.Words-Assistent zu werden? Lass uns anfangen!
+Hallo, Dokument-Meister! Haben Sie sich schon einmal mitten im Code verfangen und versucht, herauszufinden, wie Sie ein Word-Dokument nahtlos in ein anderes einfügen können? Keine Angst, denn heute tauchen wir in die Welt von Aspose.Words für .NET ein, um diese Aufgabe zu einem Kinderspiel zu machen. Wir werden Sie Schritt für Schritt durch die Verwendung dieser leistungsstarken Bibliothek führen, um Dokumente an bestimmten Stellen während eines Such- und Ersetzungsvorgangs einzufügen. Sind Sie bereit, ein Aspose.Words-Zauberer zu werden? Dann legen wir los!
 
 ## Voraussetzungen
 
-Bevor wir uns mit dem Code befassen, müssen Sie einige Dinge erledigen:
+Bevor wir uns in den Code stürzen, müssen einige Dinge bereitstehen:
 
--  Visual Studio: Stellen Sie sicher, dass Visual Studio auf Ihrem Computer installiert ist. Wenn Sie es noch nicht haben, können Sie es hier herunterladen[Hier](https://visualstudio.microsoft.com/).
--  Aspose.Words für .NET: Sie benötigen die Aspose.Words-Bibliothek. Sie erhalten es von der[Aspose-Website](https://releases.aspose.com/words/net/).
-- Grundlegende C#-Kenntnisse: Ein grundlegendes Verständnis von C# und .NET wird Ihnen beim Durcharbeiten dieses Tutorials helfen.
+-  Visual Studio: Stellen Sie sicher, dass Visual Studio auf Ihrem Computer installiert ist. Wenn Sie es noch nicht haben, können Sie es hier herunterladen:[Hier](https://visualstudio.microsoft.com/).
+-  Aspose.Words für .NET: Sie benötigen die Aspose.Words-Bibliothek. Sie erhalten sie von[Aspose-Website](https://releases.aspose.com/words/net/).
+- Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse von C# und .NET helfen Ihnen dabei, diesem Tutorial zu folgen.
 
-Okay, wenn das erledigt ist, machen wir uns mit etwas Code die Hände schmutzig!
+Gut, nachdem wir das geklärt haben, machen wir uns mit etwas Code die Hände schmutzig!
 
 ## Namespaces importieren
 
-Als Erstes müssen wir die notwendigen Namespaces importieren, um mit Aspose.Words arbeiten zu können. Das ist so, als würden Sie alle Ihre Werkzeuge zusammentragen, bevor Sie mit einem Projekt beginnen. Fügen Sie diese using-Anweisungen oben in Ihrer C#-Datei hinzu:
+Als Erstes müssen wir die erforderlichen Namespaces importieren, um mit Aspose.Words arbeiten zu können. Das ist so, als ob Sie alle Ihre Werkzeuge zusammentragen, bevor Sie ein Projekt starten. Fügen Sie diese using-Direktiven oben in Ihrer C#-Datei hinzu:
 
 ```csharp
 using System;
@@ -33,21 +33,21 @@ using Aspose.Words.Replacing;
 using Aspose.Words.Tables;
 ```
 
-Nachdem wir nun alle Voraussetzungen geschaffen haben, unterteilen wir den Prozess in kleine Schritte. Jeder Schritt ist entscheidend und bringt uns unserem Ziel näher.
+Nachdem wir nun die Voraussetzungen geschaffen haben, können wir den Prozess in kleinere Schritte unterteilen. Jeder Schritt ist entscheidend und bringt uns unserem Ziel näher.
 
 ## Schritt 1: Einrichten des Dokumentenverzeichnisses
 
-Zuerst müssen wir das Verzeichnis angeben, in dem unsere Dokumente gespeichert sind. Das ist, als würde man die Bühne vor dem großen Auftritt bereiten.
+Zuerst müssen wir das Verzeichnis angeben, in dem unsere Dokumente gespeichert sind. Das ist wie die Vorbereitung der Bühne vor der großen Aufführung.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem Pfad zu Ihrem Verzeichnis. Hier werden Ihre Dokumente leben und atmen.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem Pfad zu Ihrem Verzeichnis. Hier leben und atmen Ihre Dokumente.
 
-## Schritt 2: Laden Sie das Hauptdokument
+## Schritt 2: Hauptdokument laden
 
-Als nächstes laden wir das Hauptdokument, in das wir ein weiteres Dokument einfügen möchten. Betrachten Sie dies als unsere Hauptbühne, auf der die ganze Action stattfinden wird.
+Als nächstes laden wir das Hauptdokument, in das wir ein weiteres Dokument einfügen möchten. Betrachten Sie dies als unsere Hauptbühne, auf der die ganze Aktion stattfindet.
 
 ```csharp
 Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
@@ -55,9 +55,9 @@ Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
 
 Dieser Code lädt das Hauptdokument aus dem angegebenen Verzeichnis.
 
-## Schritt 3: Legen Sie die Such- und Ersetzungsoptionen fest
+## Schritt 3: Suchen- und Ersetzen-Optionen festlegen
 
-Um die spezifische Stelle zu finden, an der wir unser Dokument einfügen möchten, verwenden wir die Funktion „Suchen und Ersetzen“. Das ist, als würde man mithilfe einer Karte den genauen Standort für unseren Neuzugang finden.
+Um die genaue Stelle zu finden, an der wir unser Dokument einfügen möchten, verwenden wir die Funktion „Suchen und Ersetzen“. Das ist, als würden wir eine Karte verwenden, um die genaue Stelle für unseren neuen Zusatz zu finden.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions
@@ -67,9 +67,9 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
-Hier legen wir die Richtung auf „Rückwärts“ fest und geben einen benutzerdefinierten Callback-Handler an, den wir als Nächstes definieren.
+Hier stellen wir die Richtung auf „rückwärts“ ein und geben einen benutzerdefinierten Rückrufhandler an, den wir als Nächstes definieren.
 
-## Schritt 4: Führen Sie den Ersetzungsvorgang durch
+## Schritt 4: Ersetzen durchführen
 
 Jetzt weisen wir unser Hauptdokument an, nach einem bestimmten Platzhaltertext zu suchen und ihn durch nichts zu ersetzen, während wir unseren benutzerdefinierten Rückruf verwenden, um ein anderes Dokument einzufügen.
 
@@ -80,9 +80,9 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 
 Dieser Code führt den Such- und Ersetzungsvorgang aus und speichert dann das aktualisierte Dokument.
 
-## Schritt 5: Erstellen Sie einen benutzerdefinierten ersetzenden Callback-Handler
+## Schritt 5: Erstellen Sie einen benutzerdefinierten Callback-Ersetzungshandler
 
-Unser benutzerdefinierter Callback-Handler ist der Ort, an dem die Magie geschieht. Dieser Handler definiert, wie das Einfügen des Dokuments während des Such- und Ersetzungsvorgangs durchgeführt wird.
+In unserem benutzerdefinierten Callback-Handler geschieht die Magie. Dieser Handler definiert, wie das Einfügen des Dokuments während des Such- und Ersetzungsvorgangs durchgeführt wird.
 
 ```csharp
 private class InsertDocumentAtReplaceHandler : IReplacingCallback
@@ -91,22 +91,22 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
     {
         Document subDoc = new Document(dataDir + "Document insertion 2.docx");
 
-        // Fügen Sie nach dem Absatz, der den passenden Text enthält, ein Dokument ein.
+        // Fügen Sie nach dem Absatz, der den übereinstimmenden Text enthält, ein Dokument ein.
         Paragraph para = (Paragraph)args.MatchNode.ParentNode;
         InsertDocument(para, subDoc);
 
-        // Entfernen Sie den Absatz mit dem passenden Text.
+        // Entfernen Sie den Absatz mit dem übereinstimmenden Text.
         para.Remove();
         return ReplaceAction.Skip;
     }
 }
 ```
 
-Hier laden wir das einzufügende Dokument und rufen dann eine Hilfsmethode auf, um das Einfügen durchzuführen.
+Hier laden wir das einzufügende Dokument und rufen dann eine Hilfsmethode auf, um den Einfügungsvorgang durchzuführen.
 
-## Schritt 6: Definieren Sie die Methode zum Einfügen von Dokumenten
+## Schritt 6: Definieren Sie die Methode „Dokument einfügen“
 
-Das letzte Teil unseres Puzzles ist die Methode, mit der das Dokument tatsächlich an der angegebenen Stelle eingefügt wird.
+Das letzte Teil unseres Puzzles ist die Methode, die das Dokument tatsächlich an der angegebenen Stelle einfügt.
 
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
@@ -119,7 +119,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
 		// Durchlaufen Sie alle Knoten auf Blockebene im Hauptteil des Abschnitts.
-		// Klonen Sie dann jeden Knoten und fügen Sie ihn ein, der nicht der letzte leere Absatz eines Abschnitts ist.
+		// klonen und fügen Sie dann jeden Knoten ein, der nicht der letzte leere Absatz eines Abschnitts ist.
 		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
 		foreach (Node srcNode in srcSection.Body)
 		{
@@ -143,25 +143,25 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 }
 ```
 
-Diese Methode sorgt dafür, dass Knoten aus dem einzufügenden Dokument importiert und an der richtigen Stelle im Hauptdokument platziert werden.
+Bei dieser Methode werden die einzufügenden Knoten aus dem Dokument importiert und an der richtigen Stelle im Hauptdokument platziert.
 
 ## Abschluss
 
-Und da haben Sie es! Eine umfassende Anleitung zum Einfügen eines Dokuments in ein anderes mithilfe von Aspose.Words für .NET. Wenn Sie diese Schritte befolgen, können Sie Aufgaben zur Dokumentzusammenstellung und -bearbeitung problemlos automatisieren. Egal, ob Sie ein Dokumentenmanagementsystem aufbauen oder einfach nur Ihren Dokumentenverarbeitungs-Workflow optimieren müssen, Aspose.Words ist Ihr treuer Begleiter.
+Und da haben Sie es! Eine umfassende Anleitung zum Einfügen eines Dokuments in ein anderes mit Aspose.Words für .NET. Indem Sie diese Schritte befolgen, können Sie Aufgaben zur Dokumentzusammenstellung und -bearbeitung problemlos automatisieren. Egal, ob Sie ein Dokumentenverwaltungssystem erstellen oder einfach nur Ihren Dokumentenverarbeitungs-Workflow optimieren möchten, Aspose.Words ist Ihr zuverlässiger Kumpel.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Was ist Aspose.Words für .NET?
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum programmgesteuerten Bearbeiten von Word-Dokumenten. Damit können Sie ganz einfach Word-Dokumente erstellen, ändern, konvertieren und verarbeiten.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zur programmgesteuerten Bearbeitung von Word-Dokumenten. Sie können damit problemlos Word-Dokumente erstellen, ändern, konvertieren und verarbeiten.
 
 ### Kann ich mehrere Dokumente gleichzeitig einfügen?
-Ja, Sie können den Callback-Handler so ändern, dass er mehrere Einfügungen verarbeitet, indem er eine Sammlung von Dokumenten durchläuft.
+Ja, Sie können den Rückrufhandler so ändern, dass er mehrere Einfügungen verarbeitet, indem er über eine Sammlung von Dokumenten iteriert.
 
 ### Gibt es eine kostenlose Testversion?
- Absolut! Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/).
+ Auf jeden Fall! Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/).
 
-### Wie erhalte ich Unterstützung für Aspose.Words?
-Sie können Unterstützung erhalten, indem Sie die besuchen[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
+### Wie erhalte ich Support für Aspose.Words?
+Sie erhalten Unterstützung unter[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
 
 ### Kann ich die Formatierung des eingefügten Dokuments beibehalten?
- Ja das`NodeImporter`Mit der Klasse können Sie angeben, wie die Formatierung beim Importieren von Knoten aus einem Dokument in ein anderes gehandhabt wird.
+ Ja das`NodeImporter` Mit der Klasse können Sie angeben, wie die Formatierung beim Importieren von Knoten von einem Dokument in ein anderes gehandhabt wird.

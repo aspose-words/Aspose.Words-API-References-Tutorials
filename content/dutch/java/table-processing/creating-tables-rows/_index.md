@@ -28,7 +28,7 @@ public class TableCreation {
         // Maak een nieuw document
         Document doc = new Document();
         
-        // Maak een tabel met 3 rijen en 3 kolommen.
+        // Maak een tabel met 3 rijen en 3 kolommen
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // Vul de tabelcellen met gegevens

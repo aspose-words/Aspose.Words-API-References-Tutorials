@@ -126,4 +126,4 @@ C: Düzenli ifadeler ve yakalanan gruplar, Aspose.Words for .NET'te metin arama 
 
 #### S: "Değiştirme Modelleri İçinde Tanıma ve Değiştirme" özelliğini İngilizce dışındaki dillerde kullanabilir miyim?
 
-C: Evet, Aspose.Words for .NET'teki "Değiştirme Modelleri İçinde Tanıma ve Değiştirmeler" özelliği İngilizce dışındaki dillerle de kullanılabilir. Düzenli ifadeler dilden bağımsızdır ve herhangi bir dildeki belirli kalıplarla eşleşecek şekilde hazırlanabilir. Normal ifade modelini istediğiniz dile ve tanımak ve değiştirmek istediğiniz belirli metin kalıplarına uyacak şekilde ayarlayabilirsiniz.
+C: Evet, Aspose.Words for .NET'in "Değiştirme Modelleri İçinde Tanıma ve Değiştirmeler" özelliği İngilizce dışındaki dillerle de kullanılabilir. Düzenli ifadeler dilden bağımsızdır ve herhangi bir dildeki belirli kalıplarla eşleşecek şekilde hazırlanabilir. Normal ifade modelini istediğiniz dile ve tanımak ve değiştirmek istediğiniz belirli metin kalıplarına uyacak şekilde ayarlayabilirsiniz.

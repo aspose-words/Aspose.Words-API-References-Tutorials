@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Skapa en numrerad lista baserad på en av Microsoft Word-listmallarna.
+// Skapa en numrerad lista baserad på en av Microsoft Word-listmallarna
 //och tillämpa den på dokumentbyggarens nuvarande stycke.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Skapa en punktlista baserad på en av Microsoft Word-listmallarna.
+// Skapa en punktlista baserad på en av Microsoft Word-listmallarna
 //och tillämpa den på dokumentbyggarens nuvarande stycke.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 

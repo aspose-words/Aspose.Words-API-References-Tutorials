@@ -64,7 +64,7 @@ doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 doc.save("protected_document.docx");
 ```
 
-## Συχνές Ερωτήσεις (Συχνές Ερωτήσεις)
+## Συχνές Ερωτήσεις (FAQ)
 
 ## Πώς μπορώ να αφαιρέσω την προστασία εγγράφων;
 

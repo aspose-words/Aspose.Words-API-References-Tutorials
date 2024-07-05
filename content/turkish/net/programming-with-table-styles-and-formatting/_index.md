@@ -11,7 +11,7 @@ Tablo Stilleri ve Formatlama ile Kelime İşleme üzerine Aspose.Words for .NET 
 
 Bu adım adım eğitimler, geliştiricilere tablo düzenleme ve biçimlendirme sürecinin her adımında rehberlik eden ayrıntılı açıklamaların yanı sıra açık ve kısa kod örnekleri sağlar. Eğitimler ayrıca satır ve sütun ekleme ve silme, hücreleri birleştirme ve bölme ve tablolara koşullu stiller ekleme gibi ileri düzey konuları da kapsar.
 
-Bu eğitimler geliştiricilerin Aspose.Words for .NET'teki tablolarla Kelime İşleme için temel tekniklerde uzmanlaşmasına yardımcı olacak. İster yeni başlayan ister deneyimli bir geliştirici olun, bu kaynaklar tablo işleme ve biçimlendirme becerilerinizi geliştirmenize yardımcı olarak profesyonel ve estetik açıdan hoş Word belgeleri oluşturmanıza olanak tanır.
+Bu eğitimler, geliştiricilerin Aspose.Words for .NET'teki tablolarla Kelime İşleme için temel tekniklerde uzmanlaşmasına yardımcı olacak. İster yeni başlayan ister deneyimli bir geliştirici olun, bu kaynaklar tablo işleme ve biçimlendirme becerilerinizi geliştirmenize yardımcı olarak profesyonel ve estetik açıdan hoş Word belgeleri oluşturmanıza olanak tanır.
 
  ## Öğreticiler
 | Başlık | Tanım |

@@ -2,115 +2,130 @@
 title: Wielopoziomowe formatowanie listy w dokumencie programu Word
 linktitle: Wielopoziomowe formatowanie listy w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak utworzyć listę wielopoziomową i zastosować niestandardowe formatowanie w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak opanować wielopoziomowe formatowanie list w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Bez wysiłku ulepszaj strukturę dokumentu.
 type: docs
 weight: 10
 url: /pl/net/document-formatting/multilevel-list-formatting/
 ---
-W tym samouczku pokażemy, jak używać wielopoziomowego formatowania list w funkcji dokumentu tekstowego w Aspose.Words dla .NET. Wykonaj poniższe kroki, aby zrozumieć kod źródłowy i zastosować zmiany.
+## Wstęp
 
-## Krok 1: Tworzenie i konfiguracja dokumentu
+Jeśli jesteś programistą i chcesz zautomatyzować tworzenie i formatowanie dokumentów programu Word, Aspose.Words dla .NET zmienia zasady gry. Dzisiaj przyjrzymy się, jak opanować wielopoziomowe formatowanie list przy użyciu tej potężnej biblioteki. Niezależnie od tego, czy tworzysz dokumenty o określonej strukturze, sporządzasz konspekty raportów, czy generujesz dokumentację techniczną, listy wielopoziomowe mogą zwiększyć czytelność i organizację treści.
 
-Aby rozpocząć, utwórz nowy dokument i powiązany obiekt DocumentBuilder. Oto jak:
+## Warunki wstępne
+
+Zanim przejdziemy do najdrobniejszych szczegółów, upewnijmy się, że masz wszystko, czego potrzebujesz, wraz z tym samouczkiem.
+
+1. Środowisko programistyczne: Upewnij się, że masz skonfigurowane środowisko programistyczne. Visual Studio to świetny wybór.
+2.  Aspose.Words dla .NET: Pobierz i zainstaluj bibliotekę Aspose.Words dla .NET. Możesz to dostać[Tutaj](https://releases.aspose.com/words/net/).
+3.  Licencja: Uzyskaj licencję tymczasową, jeśli nie masz pełnej. Zdobyć[Tutaj](https://purchase.aspose.com/temporary-license/).
+4. Podstawowa znajomość C#: Znajomość C# i frameworku .NET będzie korzystna.
+
+## Importuj przestrzenie nazw
+
+Aby użyć Aspose.Words for .NET w swoim projekcie, musisz zaimportować niezbędne przestrzenie nazw. Oto jak to zrobić:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
 
-## Krok 2: Formatowanie listy wielopoziomowej
+## Krok 1: Zainicjuj dokument i kreator
 
-Zastosujemy teraz formatowanie listy wielopoziomowej wykorzystując metody dostępne w obiekcie DocumentBuilder. Oto jak:
-
-```csharp
-builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-
-builder.ListFormat.ListIndent();
-builder.Writeln("Element 2.1");
-builder.Writeln("Element 2.2");
-
-builder.ListFormat.ListIndent();
-builder.Writeln("Element 2.2.1");
-builder.Writeln("Element 2.2.2");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Element 2.3");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Element 3");
-
-builder.ListFormat.RemoveNumbers();
-```
-
-## Krok 3: Zapisywanie dokumentu
-
- Po wstawieniu pola formularza wprowadzania tekstu zapisz dokument w wybranej lokalizacji za pomocą przycisku`Save` metoda. Upewnij się, że podałeś odpowiednią ścieżkę pliku:
+Na początek utwórzmy nowy dokument Worda i zainicjujmy DocumentBuilder. Klasa DocumentBuilder udostępnia metody wstawiania treści do dokumentu.
 
 ```csharp
-doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
-```
-
-### Przykładowy kod źródłowy dla formatowania listy wielopoziomowej przy użyciu Aspose.Words dla .NET
-
-Oto kompletny kod źródłowy funkcji formatowania list wielopoziomowych w Aspose.Words dla .NET:
-
-
-```csharp
-
 // Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Krok 2: Zastosuj domyślną numerację
+
+ Aby rozpocząć od listy numerowanej, użyj opcji`ApplyNumberDefault` metoda. Spowoduje to ustawienie domyślnego formatowania listy numerowanej.
+
+```csharp
 builder.ListFormat.ApplyNumberDefault();
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+ W tych wierszach`ApplyNumberDefault` rozpoczyna listę numerowaną i`Writeln` dodaje pozycje do listy.
+
+## Krok 3: Wcięcie dla podpoziomów
+
+ Następnie, aby utworzyć podpoziomy na swojej liście, użyj opcji`ListIndent` metoda. Ta metoda powoduje wcięcie elementu listy, czyniąc go poziomem podrzędnym poprzedniego elementu.
+
+```csharp
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2.1");
 builder.Writeln("Item 2.2");
+```
 
+Ten fragment kodu powoduje wcięcie elementów, tworząc listę drugiego poziomu.
+
+## Krok 4: Dalsze wcięcie dla głębszych poziomów
+
+Możesz kontynuować wcięcie, aby utworzyć głębsze poziomy na liście. Tutaj utworzymy trzeci poziom.
+
+```csharp
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2.2.1");
 builder.Writeln("Item 2.2.2");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Item 2.3");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Item 3");
-
-builder.ListFormat.RemoveNumbers();
-
-doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
-
 ```
 
-Za pomocą tego kodu będziesz mógł utworzyć listę wielopoziomową i zastosować odpowiednie formatowanie do każdego poziomu za pomocą Aspose.Words dla .NET.
+Teraz masz listę trzeciego poziomu w „Pozycji 2.2”.
 
+## Krok 5: Outdent, aby powrócić na wyższe poziomy
+
+ Aby powrócić na wyższy poziom użyj przycisku`ListOutdent` metoda. Spowoduje to przeniesienie elementu z powrotem na poprzedni poziom listy.
+
+```csharp
+builder.ListFormat.ListOutdent();
+builder.Writeln("Item 2.3");
+```
+
+To przenosi „Element 2.3” z powrotem na drugi poziom.
+
+## Krok 6: Usuń numerację
+
+Po zakończeniu tworzenia listy możesz usunąć numerację, aby kontynuować korzystanie ze zwykłego tekstu lub innego rodzaju formatowania.
+
+```csharp
+builder.ListFormat.ListOutdent();
+builder.Writeln("Item 3");
+builder.ListFormat.RemoveNumbers();
+```
+
+Ten fragment kodu uzupełnia listę i zatrzymuje numerację.
+
+## Krok 7: Zapisz swój dokument
+
+Na koniec zapisz dokument w wybranym katalogu.
+
+```csharp
+doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
+```
+
+Dzięki temu Twój pięknie sformatowany dokument z listami wielopoziomowymi zostanie zapisany.
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy proces wykorzystania funkcji formatowania listy wielopoziomowej w dokumencie programu Word za pomocą Aspose.Words dla .NET. Wykonując opisane czynności, możesz tworzyć dobrze zorganizowane listy wielopoziomowe, poprawiając strukturę i czytelność dokumentów.
+masz to! Pomyślnie utworzyłeś listę wielopoziomową w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka pozwala z łatwością zautomatyzować złożone zadania formatowania dokumentów. Pamiętaj, że opanowanie tych narzędzi nie tylko oszczędza czas, ale także zapewnia spójność i profesjonalizm w procesie generowania dokumentów.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Co to jest lista wielopoziomowa w dokumencie programu Word?
+### Czy mogę dostosować styl numeracji list?
+ Tak, Aspose.Words dla .NET umożliwia dostosowanie stylu numeracji list za pomocą`ListTemplate` klasa.
 
-O: Lista wielopoziomowa w dokumencie programu Word to lista hierarchiczna, która umożliwia organizowanie elementów na różnych poziomach podelementów. Pomaga przedstawić informacje w uporządkowany sposób, ułatwiając czytelnikom zrozumienie treści.
+### Jak dodać wypunktowania zamiast liczb?
+ Punktory można zastosować za pomocą opcji`ApplyBulletDefault` metoda zamiast`ApplyNumberDefault`.
 
-#### P: Czy mogę dostosować wygląd listy wielopoziomowej?
+### Czy można kontynuować numerację z poprzedniej listy?
+ Tak, możesz kontynuować numerację za pomocą przycisku`ListFormat.List` właściwość, aby połączyć się z istniejącą listą.
 
-Odp.: Tak, możesz dostosować wygląd listy wielopoziomowej w dokumencie programu Word. Stosując różne style, takie jak wypunktowania, cyfry lub litery, a także dostosowując wcięcia i odstępy, możesz utworzyć atrakcyjną wizualnie i uporządkowaną listę.
+### Jak dynamicznie zmieniać poziom wcięcia?
+ Możesz dynamicznie zmieniać poziom wcięcia za pomocą`ListIndent` I`ListOutdent` metody według potrzeb.
 
-#### P: Czy Aspose.Words dla .NET obsługuje inne opcje formatowania list?
-
-O: Tak, Aspose.Words dla .NET zapewnia kompleksowy zestaw funkcji do formatowania list. Obsługuje różne typy list, w tym listy punktowane, listy numerowane i listy wielopoziomowe. Możesz manipulować formatowaniem list, dodawać lub usuwać elementy i dostosowywać ich wygląd.
-
-#### P: Czy mogę używać Aspose.Words dla .NET do pracy z innymi elementami dokumentu?
-
-Odp.: Tak, Aspose.Words dla .NET oferuje szerokie możliwości pracy z różnymi elementami dokumentu, takimi jak akapity, tabele, obrazy i inne. Umożliwia programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word, usprawniając zadania przetwarzania dokumentów.
+### Czy mogę tworzyć listy wielopoziomowe w innych formatach dokumentów, takich jak PDF?
+Tak, Aspose.Words obsługuje zapisywanie dokumentów w różnych formatach, w tym PDF, zachowując formatowanie.

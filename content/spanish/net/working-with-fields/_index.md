@@ -23,7 +23,7 @@ Este es un recurso completo para aprender a trabajar con campos en documentos de
 | [Insertar campo de combinación usando DOM](./insert-merge-field-using-dom/) | Aprenda a insertar campos de combinación de campos personalizados en sus documentos de Word con Aspose.Words para .NET. |
 | [Insertar campo de bloque de direcciones de combinación de correspondencia usando DOM](./insert-mail-merge-address-block-field-using-dom/) | Aprenda a insertar un campo de bloque de dirección de combinación de correspondencia en sus documentos de Word con Aspose.Words para .NET. |
 | [Insertar campoIncludeText sin generador de documentos](./insert-field-include-text-without-document-builder/) | Aprenda cómo insertar un campo FieldIncludeText en sus documentos de Word con Aspose.Words para .NET. |
-| [Insertar campo Ninguno](./insert-field-none/) | Aprenda a crear documentos con AUCUN en Word con Aspose.Words para .NET. |
+| [Insertar campo Ninguno](./insert-field-none/) | Aprenda a insertar un campeón AUCUN en sus documentos Word con Aspose.Words para .NET. |
 | [Insertar campo](./insert-field/) | Aprenda a insertar un campo en sus documentos de Word con Aspose.Words para .NET. Personalice sus documentos con campos dinámicos. |
 | [Insertar campo usando el generador de campos](./insert-field-using-field-builder/) | Aprenda a insertar campos personalizados en sus documentos de Word con Aspose.Words para .NET. |
 | [Insertar campo de autor](./insert-author-field/) | Aprenda a insertar un campo AUTOR en sus documentos de Word con Aspose.Words para .NET. Especifique el nombre del autor para personalizar sus documentos. |

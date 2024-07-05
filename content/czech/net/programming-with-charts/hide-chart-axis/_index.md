@@ -17,7 +17,7 @@ Ujistěte se, že máte následující předpoklady:
 - Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
 - Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
 
-## Krok 2: Vytvořte nový dokument a vložte graf.
+## Krok 2: Vytvořte nový dokument a vložte graf
 
  Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
 
@@ -101,7 +101,7 @@ Pomocí Aspose.Words for .NET můžete snadno začlenit možnosti vytváření g
 Aspose.Words for .NET je výkonná knihovna pro zpracování dokumentů, která umožňuje vývojářům vytvářet, manipulovat a ukládat dokumenty Word programově v aplikacích .NET. Poskytuje širokou škálu funkcí pro textové zpracování s prvky dokumentu, včetně grafů a os grafů.
 
 #### Q2. Jak mohu nainstalovat Aspose.Words pro .NET?
-Aspose.Words for .NET můžete nainstalovat stažením pomocí správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Apose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
+Aspose.Words for .NET můžete nainstalovat stažením pomocí správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Aspose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
 
 #### Q3. Mohu skrýt jak osu X, tak osu Y grafu?
  Ano, pomocí Aspose.Words for .NET můžete skrýt jak osu X, tak osu Y grafu. Chcete-li skrýt osu X, můžete získat přístup k`AxisX` vlastnost grafu a nastavte`Hidden`majetek do`true` . Podobně, chcete-li skrýt osu Y, můžete získat přístup k`AxisY` vlastnost a nastavte`Hidden`majetek do`true`. To vám umožní odstranit obě osy z vizualizace grafu.

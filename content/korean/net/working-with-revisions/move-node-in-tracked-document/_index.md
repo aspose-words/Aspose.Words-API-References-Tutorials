@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## 5단계: 문서 저장
 
- 텍스트 입력 양식 필드를 삽입한 후,`Save` 방법. 적절한 파일 경로를 제공해야 합니다.
+ 텍스트 입력 양식 필드를 삽입한 후,`Save`방법. 적절한 파일 경로를 제공해야 합니다.
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 #### Q: .NET 문서용 Aspose.Words에서 개정 추적을 활성화하려면 어떻게 해야 합니까?
 
-A: .NET 문서용 Aspose.Words에서 개정 추적을 활성화하려면 다음을 사용할 수 있습니다.`StartTrackRevisions` 의 방법`Document` 물체. 이 방법은 개정판 작성자의 이름과 개정판 후속 작업의 시작 날짜를 매개변수로 사용합니다.
+ A: .NET 문서용 Aspose.Words에서 개정 추적을 활성화하려면 다음을 사용할 수 있습니다.`StartTrackRevisions` 의 방법`Document` 물체. 이 방법은 개정판 작성자의 이름과 개정판 후속 작업의 시작 날짜를 매개변수로 사용합니다.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
@@ -136,7 +136,7 @@ nodeToMove.Remove();
 document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
 ```
 
-#### Q: .NET 문서용 Aspose.Words에서 개정 추적을 어떻게 중지할 수 있나요?
+#### Q: .NET 문서용 Aspose.Words에서 개정 추적을 어떻게 중지할 수 있습니까?
 
  A: .NET용 Aspose.Words 문서에서 개정 추적을 중지하려면 다음을 사용할 수 있습니다.`StopTrackRevisions` 의 방법`Document` 물체.
 

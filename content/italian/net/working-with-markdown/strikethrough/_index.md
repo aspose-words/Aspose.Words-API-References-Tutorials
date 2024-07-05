@@ -57,7 +57,7 @@ Congratulazioni! Ora hai imparato come applicare lo stile di testo barrato con A
 
 #### D: È possibile aggiungere il testo barrato a più parti di testo nello stesso paragrafo?
 
- R: Sì, puoi aggiungere testo barrato a più parti di testo in un singolo paragrafo utilizzando più.`Run` oggetti. Puoi crearne multipli`Run` oggetti e impostare il`Font.StrikeThrough`proprietà a`true` per ciascun oggetto per aggiungere il testo barrato alle parti di testo desiderate. Quindi puoi aggiungerli al paragrafo usando il`Paragraph.AppendChild(run)` metodo.
+ R: Sì, puoi aggiungere testo barrato a più parti di testo in un singolo paragrafo utilizzando più`Run` oggetti. Puoi crearne multipli`Run` oggetti e impostare il`Font.StrikeThrough`proprietà a`true` per ciascun oggetto per aggiungere il testo barrato alle parti di testo desiderate. Quindi puoi aggiungerli al paragrafo usando il`Paragraph.AppendChild(run)` metodo.
 
 #### D: Posso aggiungere testo barrato al testo presente in una tabella o cella in Aspose.Words?
 

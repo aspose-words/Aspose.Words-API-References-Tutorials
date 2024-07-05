@@ -321,7 +321,7 @@ doc.save("HeaderFooterDocument.docx");
 //建立一個新文檔
 Document doc = new Document();
 
-//建立一個 3 行 3 列的表。
+//建立一個 3 行 3 列的表
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

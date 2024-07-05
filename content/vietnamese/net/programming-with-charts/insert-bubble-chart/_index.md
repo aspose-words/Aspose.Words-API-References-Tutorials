@@ -2,7 +2,7 @@
 title: Chèn biểu đồ bong bóng vào tài liệu Word
 linktitle: Chèn biểu đồ bong bóng vào tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chèn biểu đồ bong bóng vào tài liệu bằng Aspose.Words for .NET. Thêm dữ liệu chuỗi với các giá trị kích thước X, Y và bong bóng.
+description: Tìm hiểu cách chèn biểu đồ bong bóng vào tài liệu bằng Aspose.Words cho .NET. Thêm dữ liệu chuỗi với các giá trị kích thước X, Y và bong bóng.
 type: docs
 weight: 10
 url: /vi/net/programming-with-charts/insert-bubble-chart/
@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 

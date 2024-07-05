@@ -14,7 +14,7 @@ L'elaborazione delle parole con Markdown fornisce una risorsa completa per impar
 | Titolo | Descrizione |
 | --- | --- |
 | [Testo grassetto](./bold-text/) | Scopri come scrivere in grassetto con Aspose.Words per .NET Guida passo passo. |
-| [Testo italiano](./italic-text/) | Scopri come scrivere il testo in corsivo con Aspose.Words per .NET Guida passo passo. |
+| [Testo corsivo](./italic-text/) | Scopri come scrivere il testo in corsivo con Aspose.Words per .NET Guida passo passo. |
 | [Barrato](./strikethrough/) | Scopri come applicare lo stile di testo barrato con Aspose.Words per .NET Guida passo passo. |
 | [Codice in linea](./inline-code/) | Scopri come incorporare il codice con Aspose.Words per .NET Guida passo passo. |
 | [Collegamento automatico](./autolink/) | Scopri come inserire il collegamento automatico con Aspose.Words per .NET Guida passo passo. |
@@ -22,7 +22,7 @@ L'elaborazione delle parole con Markdown fornisce una risorsa completa per impar
 | [Immagine](./image/) | Scopri come inserire e personalizzare l'immagine con Aspose.Words per .NET Guida passo passo. |
 | [Regola orizzontale](./horizontal-rule/) | Scopri come inserire una regola orizzontale con Aspose.Words per .NET Guida passo passo. |
 | [Intestazione](./heading/) | Scopri come utilizzare l'intestazione con Aspose.Words per .NET Guida passo passo. |
-| [Intestazione Setex](./setext-heading/) | Scopri come utilizzare le intestazioni Setext per formattare i tuoi documenti con Aspose.Words per .NET Guida passo passo. |
+| [Intestazione settesto](./setext-heading/) | Scopri come utilizzare le intestazioni Setext per formattare i tuoi documenti con Aspose.Words per .NET Guida passo passo. |
 | [Codice rientrato](./indented-code/) | Scopri come utilizzare il codice rientrato con Aspose.Words per .NET Guida passo passo. |
 | [Codice recintato](./fenced-code/) | Scopri come utilizzare la funzionalità di codice recintato con Aspose.Words per .NET Guida passo passo. |
 | [Citazione](./quote/) | Scopri come utilizzare la citazione con Aspose.Words per .NET Guida passo passo. |

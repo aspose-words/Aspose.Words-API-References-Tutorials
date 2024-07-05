@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Skapa och anpassa dokumentet
- Skapa en instans av`Document` klass och en tillhörande`DocumentBuilder` att bygga dokumentinnehållet. Använd`Font.EmphasisMark` egenskap för att ställa in teckensnittets betoningsstil till`EmphasisMark.UnderSolidCircle` . Använd sedan`Write` och`Writeln` metoder för`DocumentBuilder` för att lägga till text med det angivna teckensnittet.
+ Skapa en instans av`Document` klass och en tillhörande`DocumentBuilder` att bygga dokumentinnehållet. Använd`Font.EmphasisMark` egenskap för att ställa in teckensnittets betoningstil till`EmphasisMark.UnderSolidCircle` . Använd sedan`Write` och`Writeln` metoder för`DocumentBuilder` för att lägga till text med den angivna teckensnittets betoning.
 
 ```csharp
 Document document = new Document();

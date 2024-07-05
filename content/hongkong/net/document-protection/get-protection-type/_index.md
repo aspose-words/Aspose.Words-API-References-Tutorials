@@ -44,7 +44,7 @@ ProtectionType protectionType = doc.ProtectionType;
 
 #### Q：Aspose.Words for .NET 中的 ProtectionType 屬性是什麼？
 
-答： 的`ProtectionType` Aspose.Words for .NET 中的屬性是一項可讓您確定套用於 Word 文件的保護類型的功能。它提供有關文件保護等級的信息，例如文件是否受到評論、修訂、表單或其他類型限制的保護。
+答： 的`ProtectionType`Aspose.Words for .NET 中的屬性是一項可讓您確定套用於 Word 文件的保護類型的功能。它提供有關文件保護等級的信息，例如文件是否受到評論、修訂、表單或其他類型限制的保護。
 
 #### Q：如何使用 Aspose.Words for .NET 擷取文件的保護類型？
 
@@ -67,7 +67,7 @@ ProtectionType protectionType = doc.ProtectionType;
 
 #### Q：我可以使用 ProtectionType 屬性修改文件的保護類型嗎？
 
-答： 不，`ProtectionType`Aspose.Words for .NET 中的屬性是唯讀屬性。它允許您檢索文件的目前保護類型，但不提供修改保護類型的直接方法。若要修改保護類型，您需要使用其他可用的方法和屬性`Document`類，例如`Protect`或者`Unprotect`.
+答：不，該`ProtectionType`Aspose.Words for .NET 中的屬性是唯讀屬性。它允許您檢索文件的目前保護類型，但不提供修改保護類型的直接方法。若要修改保護類型，您需要使用其他可用的方法和屬性`Document`類，例如`Protect`或者`Unprotect`.
 
 #### Q：是否可以同時使用多種保護類型來保護一個文件？
 

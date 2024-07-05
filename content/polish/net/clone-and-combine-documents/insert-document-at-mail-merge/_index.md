@@ -134,15 +134,15 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Wniosek
 
-masz to! Pomyślnie wstawiłeś dokumenty do określonych pól podczas operacji korespondencji seryjnej przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja może zaoszczędzić mnóstwo czasu i wysiłku, szczególnie w przypadku dużych ilości dokumentów. Pomyśl o tym jak o osobistym asystentze, który zajmie się wszystkimi ciężkimi zadaniami za Ciebie. Więc śmiało, spróbuj. Miłego kodowania!
+I masz to! Pomyślnie wstawiłeś dokumenty do określonych pól podczas operacji korespondencji seryjnej przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja może zaoszczędzić mnóstwo czasu i wysiłku, szczególnie w przypadku dużych ilości dokumentów. Pomyśl o tym jak o osobistym asystentze, który zajmie się wszystkimi ciężkimi zadaniami za Ciebie. Więc śmiało, spróbuj. Miłego kodowania!
 
 ## Często zadawane pytania
 
 ### Czy mogę wstawić wiele dokumentów w różnych polach scalania?
- Tak, możesz. Wystarczy określić odpowiednie pola scalania i odpowiadające im ścieżki dokumentów w pliku`MailMerge.Execute` metoda.
+Tak, możesz. Wystarczy określić odpowiednie pola scalania i odpowiadające im ścieżki dokumentów w pliku`MailMerge.Execute` metoda.
 
 ### Czy można sformatować wstawiony dokument inaczej niż dokument główny?
- Absolutnie! Możesz skorzystać z`ImportFormatMode` parametry w`NodeImporter` do kontrolowania formatowania.
+ Absolutnie! Możesz skorzystać z`ImportFormatMode` parametr w`NodeImporter` do kontrolowania formatowania.
 
 ### Co się stanie, jeśli nazwa pola scalania jest dynamiczna?
 Możesz obsługiwać dynamiczne nazwy pól scalania, przekazując je jako parametry do procedury obsługi wywołania zwrotnego.

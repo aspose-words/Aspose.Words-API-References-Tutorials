@@ -16,7 +16,7 @@ url: /ko/net/clone-and-combine-documents/insert-document-at-replace/
 코드를 시작하기 전에 준비해야 할 몇 가지 사항이 있습니다.
 
 -  Visual Studio: 컴퓨터에 Visual Studio가 설치되어 있는지 확인하세요. 아직 없으시다면, 다음에서 다운로드하실 수 있습니다.[여기](https://visualstudio.microsoft.com/).
--  .NET용 Aspose.Words: Aspose.Words 라이브러리가 필요합니다. 에서 받으실 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: Aspose.Words 라이브러리가 필요합니다. 에서 받으실 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
 - 기본 C# 지식: C# 및 .NET에 대한 기본적인 이해는 이 자습서를 따라가는 데 도움이 됩니다.
 
 좋습니다. 이제 코드를 좀 더 작성해 보겠습니다.
@@ -164,4 +164,4 @@ Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 조작하�
 방문하시면 지원을 받으실 수 있습니다.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).
 
 ### 삽입된 문서의 서식을 유지할 수 있나요?
- 예,`NodeImporter`클래스를 사용하면 한 문서에서 다른 문서로 노드를 가져올 때 서식이 처리되는 방식을 지정할 수 있습니다.
+ 예,`NodeImporter` 클래스를 사용하면 한 문서에서 다른 문서로 노드를 가져올 때 서식이 처리되는 방식을 지정할 수 있습니다.

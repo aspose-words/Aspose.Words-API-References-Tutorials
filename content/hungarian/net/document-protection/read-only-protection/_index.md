@@ -98,7 +98,7 @@ V: Ha csak olvasható védelmet szeretne alkalmazni egy Word-dokumentumra az Asp
 1.  Hozzon létre egy példányt a`Document` osztály és a`DocumentBuilder` tárgy.
 2.  Használja a`DocumentBuilder` tartalmat írni a dokumentumba.
 3.  Állítson be jelszót a dokumentumhoz a segítségével`SetPassword` módszere a`WriteProtection` tárgy.
-4.  Állítsa be a`ReadOnlyRecommended` tulajdona a`WriteProtection` tiltakozni`true` hogy javasoljuk a dokumentum csak olvashatóként való megnyitását.
+4.  Állítsa be a`ReadOnlyRecommended` tulajdona a`WriteProtection` tiltakozni`true` hogy javasoljuk a dokumentum írásvédettként való megnyitását.
 5.  Alkalmazza a csak olvasható védelmet a`Protect` módszere a`Document` objektum, megadva a`ProtectionType` mint`ReadOnly`.
 6.  Mentse el a védett dokumentumot a`Save` módszere a`Document` tárgy.
 

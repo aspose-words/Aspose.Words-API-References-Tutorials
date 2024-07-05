@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Krok 3: Zaktualizuj inteligentny rysunek artystyczny
- Iteruj po kształtach w dokumencie, używając metody`GetChildNodes` metoda z`NodeType.Shape` parametry. Sprawdź, czy każdy kształt ma inteligentną grafikę, używając`HasSmartArt` właściwość i jeśli to prawda, wywołaj metodę`UpdateSmartArtDrawing` metoda aktualizacji rysunku Smart Art.
+ Iteruj po kształtach w dokumencie, używając metody`GetChildNodes` metoda z`NodeType.Shape` parametr. Sprawdź, czy każdy kształt ma inteligentną grafikę, używając`HasSmartArt` właściwość i jeśli to prawda, wywołaj metodę`UpdateSmartArtDrawing` metoda aktualizacji rysunku Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

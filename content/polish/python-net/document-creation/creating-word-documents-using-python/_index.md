@@ -20,7 +20,7 @@ Zanim zagłębimy się w implementację, istotne jest zrozumienie struktury doku
 
 ## Wybór właściwej biblioteki Pythona
 
-Aby osiągnąć nasz cel, jakim jest generowanie dokumentów Word przy użyciu języka Python, potrzebujemy niezawodnej i bogatej w funkcje biblioteki. Jednym z popularnych wyborów do tego zadania jest biblioteka „Apose.Words for Python”. Zapewnia solidny zestaw interfejsów API, które umożliwiają łatwą i wydajną manipulację dokumentami. Przyjrzyjmy się, jak skonfigurować i wykorzystać tę bibliotekę w naszym projekcie.
+Aby osiągnąć nasz cel, jakim jest generowanie dokumentów Word przy użyciu języka Python, potrzebujemy niezawodnej i bogatej w funkcje biblioteki. Jednym z popularnych wyborów do tego zadania jest biblioteka „Aspose.Words for Python”. Zapewnia solidny zestaw interfejsów API, które umożliwiają łatwą i wydajną manipulację dokumentami. Przyjrzyjmy się, jak skonfigurować i wykorzystać tę bibliotekę w naszym projekcie.
 
 ## Instalowanie Aspose.Words dla Pythona
 

@@ -1,6 +1,6 @@
 ---
-title: Teks Italia
-linktitle: Teks Italia
+title: Teks Miring
+linktitle: Teks Miring
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara membuat teks miring dengan Aspose.Words untuk .NET Panduan langkah demi langkah.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Buatlah teks dalam bahasa Italia.
+// Buatlah teks menjadi miring.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

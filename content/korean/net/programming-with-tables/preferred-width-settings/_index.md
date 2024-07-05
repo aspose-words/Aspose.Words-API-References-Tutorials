@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 	builder.Writeln("Cell at 20% width");
-	// 자동 크기의 셀을 삽입합니다.
+	// 자동 크기 셀을 삽입합니다.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;

@@ -12,6 +12,6 @@ url: /th/net/working-with-hyphenation/
  ## บทช่วยสอน
 | ชื่อ | คำอธิบาย |
 | --- | --- |
-| [ยัติภังค์คำของภาษา](./hyphenate-words-of-languages/) | เรียนรู้วิธีใส่ยัติภังค์คำในภาษาต่างๆในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET |
+| [ยัติภังค์คำของภาษา](./hyphenate-words-of-languages/) | เรียนรู้วิธีใส่ยัติภังค์คำในภาษาต่างๆ ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET |
 | [โหลดพจนานุกรมยัติภังค์สำหรับภาษา](./load-hyphenation-dictionary-for-language/) |เรียนรู้วิธีโหลดพจนานุกรมการใส่ยัติภังค์สำหรับภาษาเฉพาะใน Aspose.Words สำหรับ .NET |
 | [การโทรกลับด้วยยัติภังค์](./hyphenation-callback/) | เรียนรู้วิธีใช้การเรียกกลับด้วยยัติภังค์ใน Aspose.Words สำหรับ .NET เพื่อจัดการการใส่ยติภังค์คำ |

@@ -9,7 +9,7 @@ url: /sv/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 ## Introduktion
 
-Hallå där! Om du någonsin har behövt ändra sidinställningar i flera avsnitt i ett Word-dokument, är du på rätt plats. I den här handledningen guidar jag dig genom processen med Aspose.Words för .NET. Detta kraftfulla bibliotek låter dig programmässigt kontrollera nästan alla aspekter av Word-dokument, vilket gör det till ett go-to-verktyg för utvecklare. Så ta en kopp kaffe och låt oss komma igång med denna steg-för-steg-resa för att bemästra ändringar av sidinställningar!
+Hallå där! Om du någonsin har behövt ändra sidinställningar i flera sektioner i ett Word-dokument har du kommit rätt. I den här handledningen guidar jag dig genom processen med Aspose.Words för .NET. Detta kraftfulla bibliotek låter dig programmässigt kontrollera nästan alla aspekter av Word-dokument, vilket gör det till ett go-to-verktyg för utvecklare. Så ta en kopp kaffe och låt oss börja på denna steg-för-steg-resa för att bemästra ändringar av sidinställningar!
 
 ## Förutsättningar
 

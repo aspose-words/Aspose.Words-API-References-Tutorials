@@ -46,7 +46,7 @@ Zorg ervoor dat u een nieuw of bestaand C#-project in Visual Studio hebt waarin 
 Als u dat nog niet heeft gedaan, voegt u een verwijzing toe naar Aspose.Words in uw Visual Studio-project. Je kunt dit doen door:
    - Klik met de rechtermuisknop op uw project in Solution Explorer.
    - Selecteer "NuGet-pakketten beheren..."
-   - Zoeken naar "Apose.Words" en installeren in uw project.
+   - Zoeken naar "Aspose.Words" en installeren in uw project.
 
 ## Stap 3: Bereid uw document voor
 
@@ -105,4 +105,4 @@ Kortom, deze tutorial biedt een uitgebreide handleiding over hoe u velden effect
    - Ja, de hier getoonde methode richt zich specifiek alleen op velden en laat andere inhoud ongewijzigd.
 
 ### Waar kan ik meer bronnen en ondersteuning vinden voor Aspose.Words?
-   -  Bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/) en de[Aspose.Words-forum](https://forum.aspose.com/c/words/8)voor verdere assistentie.
+   -  Bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/) en de[Aspose.Words-forum](https://forum.aspose.com/c/words/8) voor verdere assistentie.

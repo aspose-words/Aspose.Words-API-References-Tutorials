@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Adım 4: Belgeye sayfa sonu ekleme
 
- Başka bir meta karakterin kullanımını göstermek için belgeye bir sayfa sonu ekleyeceğiz.`InsertBreak` yöntemi ile`BreakType.PageBreak` parametreler. İlk önce imleci`DocumentBuilder` belgenin sonuna sayfa sonunu ve yeni bir metin satırını ekliyoruz:
+ Başka bir meta karakterin kullanımını göstermek için belgeye bir sayfa sonu ekleyeceğiz.`InsertBreak` yöntemi ile`BreakType.PageBreak` parametre. İlk önce imleci`DocumentBuilder` belgenin sonuna sayfa sonunu ve yeni bir metin satırını ekliyoruz:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### S: Aspose.Words for .NET kullanarak bir belgeye sayfa sonu nasıl eklenir?
 
-C: Başka bir meta karakterin kullanımını göstermek için belgeye bir sayfa sonu ekleyeceğiz.`InsertBreak` yöntemi ile`BreakType.PageBreak` parametreler. İlk önce imleci`DocumentBuilder` belgenin sonuna sayfa sonunu ve yeni bir metin satırını ekliyoruz:
+C: Başka bir meta karakterin kullanımını göstermek için belgeye bir sayfa sonu ekleyeceğiz.`InsertBreak` yöntemi ile`BreakType.PageBreak` parametre. İlk önce imleci`DocumentBuilder` belgenin sonuna sayfa sonunu ve yeni bir metin satırını ekliyoruz:
 
 ```csharp
 builder. MoveToDocumentEnd();

@@ -61,7 +61,7 @@ comparer.applyChangesToOriginalDocument();
 Po aplikaci změn je čas uložit porovnávaný dokument pro další použití.
 
 ```java
-// Uložte porovnávaný dokument
+// Uložte porovnaný dokument
 originalDocument.save("compared_document.docx");
 ```
 

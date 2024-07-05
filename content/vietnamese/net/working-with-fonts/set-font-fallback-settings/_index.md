@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Bước 4: Áp dụng cài đặt phông chữ cho tài liệu
 
- Chỉ định cấu hình`FontSettings`vào tài liệu. Điều này đảm bảo rằng các quy tắc dự phòng phông chữ được áp dụng khi hiển thị tài liệu.
+ Chỉ định cấu hình`FontSettings` vào tài liệu. Điều này đảm bảo rằng các quy tắc dự phòng phông chữ được áp dụng khi hiển thị tài liệu.
 
 ```csharp
 doc.FontSettings = fontSettings;

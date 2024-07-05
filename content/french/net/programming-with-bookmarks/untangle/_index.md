@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Étape 2 : Récupérer les lignes parentales à partir des signets
 
- Nous utilisons le`GetAncestor` Méthodes pour récupérer les lignes parentes des nœuds de début et de fin du signet :
+ Nous utilisons le`GetAncestor` méthodes pour récupérer les lignes parentes des nœuds de début et de fin du signet :
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

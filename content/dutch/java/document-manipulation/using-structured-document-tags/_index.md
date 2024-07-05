@@ -86,7 +86,7 @@ if (sdtDropDown.getSdtType() == SdtType.DROP_DOWN_LIST) {
 doc.save("ModifiedDocument.docx");
 ```
 
-### Beeldinhoudsbeheer aanpassen
+### Beeldinhoudsbeheer wijzigen
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");

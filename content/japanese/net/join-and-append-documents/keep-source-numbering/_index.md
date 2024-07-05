@@ -1,25 +1,25 @@
 ---
-title: ソースの番号付けを維持する
-linktitle: ソースの番号付けを維持する
+title: ソース番号を保持
+linktitle: ソース番号を保持
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET でソース番号の書式設定を維持しながらドキュメントを追加する方法を学びます。
+description: Aspose.Words for .NET でソース番号の書式を保持しながらドキュメントを追加する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/keep-source-numbering/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、番号付き段落の元の番号付け書式を維持しながら、ソース ドキュメントを宛先ドキュメントに追加する方法について説明します。
+このチュートリアルでは、Aspose.Words for .NET を使用して、番号付き段落の元の番号付け書式を保持しながら、ソース ドキュメントを宛先ドキュメントに追加する方法について説明します。
 
-## ステップ 1: プロジェクトをセットアップする
+## ステップ1: プロジェクトを設定する
 
 次の前提条件を満たしていることを確認してください。
 
--  Aspose.Words for .NET ライブラリがインストールされています。からダウンロードできます[Aspose.Releases]https://releases.aspose.com/words/net/ または NuGet パッケージ マネージャーを使用してインストールします。
-- ソースドキュメントと宛先ドキュメントが保存されるドキュメントディレクトリのパス。
+-  Aspose.Words for .NETライブラリがインストールされています。ダウンロードはこちらから[Aspose.Releases]https://releases.aspose.com/words/net/ にアクセスするか、NuGet パッケージ マネージャーを使用してインストールします。
+- ソース ドキュメントと宛先ドキュメントが保存されるドキュメント ディレクトリ パス。
 
-## ステップ 2: 宛先ドキュメントとソースドキュメントを作成する
+## ステップ2: 宛先ドキュメントとソースドキュメントを作成する
 
-のインスタンスを作成します`Document`宛先ドキュメントとソースドキュメント用。
+インスタンスを作成する`Document`宛先ドキュメントとソースドキュメント用。
 
 ```csharp
 //ドキュメントディレクトリへのパス
@@ -29,18 +29,18 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## ステップ 3: インポート時にソースの番号付けを維持する
+## ステップ3: インポート時にソース番号を保持する
 
-ソース文書の番号付き段落の番号付け書式を保持するには、次のインスタンスを作成します。`ImportFormatOptions`そしてセット`KeepSourceNumbering`に`true`。使う`NodeImporter`ソースドキュメントから宛先ドキュメントにノードをインポートするには、次のように指定します。`ImportFormatMode.KeepSourceFormatting`そしてその`importFormatOptions`.
+ソース文書の番号付き段落の番号書式を保持するには、`ImportFormatOptions`そして設定`KeepSourceNumbering`に`true`。 使う`NodeImporter`ソース文書から宛先文書にノードをインポートするには、`ImportFormatMode.KeepSourceFormatting`そしてその`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## ステップ 4: 段落をインポートして追加する
+## ステップ4: 段落をインポートして追加する
 
-ソース文書内の段落を繰り返し処理し、各段落を宛先文書にインポートします。`importer`。インポートされたノードを宛先ドキュメントの本文に追加します。
+ソース文書内の段落を反復処理し、各段落を目的の文書にインポートします。`importer`インポートしたノードを宛先ドキュメントの本文に追加します。
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -51,17 +51,17 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## ステップ 5: 変更したドキュメントを保存する
+## ステップ5: 変更したドキュメントを保存する
 
-変更したドキュメントを保存するには、`Save`の方法`Document`物体。
+変更した文書を保存するには、`Save`方法の`Document`物体。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-これで、Aspose.Words for .NET を使用して、元の番号付け書式を維持しながら、ソース ドキュメントを宛先ドキュメントに追加する実装が完了しました。
+これにより、Aspose.Words for .NET を使用して、元の番号付け書式を維持しながら、ソース ドキュメントを宛先ドキュメントに追加する実装が完了します。
 
-### Aspose.Words for .NET を使用した Keep Source Numbering のソース コード例 
+### Aspose.Words for .NET を使用してソース番号を保持するサンプル ソース コード 
 
 ```csharp
 	//ドキュメントディレクトリへのパス
@@ -69,7 +69,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//番号付き段落をインポートするときにソース リストの書式設定を維持します。
+	//番号付き段落をインポートするときにソース リストの書式を維持します。
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

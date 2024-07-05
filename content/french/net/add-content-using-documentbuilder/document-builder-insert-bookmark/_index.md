@@ -9,7 +9,7 @@ url: /fr/net/add-content-using-documentbuilder/document-builder-insert-bookmark/
 ---
 ## Introduction
 
-La création et la gestion de documents Word par programmation peuvent parfois donner l'impression de naviguer dans un labyrinthe. Mais avec Aspose.Words pour .NET, c'est simple comme bonjour ! Ce guide vous guidera tout au long du processus d'insertion d'un signet dans un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. Alors attachez votre ceinture et plongeons dans le monde de l’automatisation des documents.
+La création et la gestion de documents Word par programmation peuvent parfois donner l'impression de naviguer dans un labyrinthe. Mais avec Aspose.Words pour .NET, c'est simple comme bonjour ! Ce guide vous guidera tout au long du processus d'insertion d'un signet dans un document Word à l'aide de la bibliothèque Aspose.Words for .NET. Alors attachez votre ceinture et plongeons dans le monde de l’automatisation des documents.
 
 ## Conditions préalables
 

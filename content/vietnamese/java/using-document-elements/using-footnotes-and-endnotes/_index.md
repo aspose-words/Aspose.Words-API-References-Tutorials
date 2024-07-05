@@ -107,7 +107,7 @@ Bạn có thể tùy chỉnh thêm cài đặt ghi chú cuối để đáp ứng
 
 ## 7. Kết luận
 
-Trong hướng dẫn này, chúng ta đã khám phá cách làm việc với chú thích cuối trang và chú thích cuối trong Aspose.Words cho Java. Những tính năng này là vô giá để tạo ra các tài liệu có cấu trúc tốt với các trích dẫn và tài liệu tham khảo thích hợp.
+Trong hướng dẫn này, chúng ta đã khám phá cách làm việc với chú thích cuối trang và chú thích cuối trong Aspose.Words cho Java. Những tính năng này rất có giá trị trong việc tạo ra các tài liệu có cấu trúc tốt với các trích dẫn và tài liệu tham khảo thích hợp.
 
 Bây giờ bạn đã học cách sử dụng chú thích cuối trang và chú thích cuối, bạn có thể cải thiện định dạng tài liệu và làm cho nội dung của mình chuyên nghiệp hơn.
 

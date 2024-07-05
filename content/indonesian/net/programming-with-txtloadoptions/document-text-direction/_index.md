@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-Dalam tutorial ini, kita akan menjelajahi kode sumber C# yang disediakan untuk fitur "Arah Teks Dokumen" dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menentukan arah teks dalam dokumen, yang sangat berguna untuk bahasa yang ditulis dari kanan ke kiri, seperti Ibrani atau Arab.
+Dalam tutorial ini, kita akan menjelajahi kode sumber C# yang disediakan untuk fitur "Arah Teks Dokumen" dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menentukan arah teks dalam dokumen, yang khususnya berguna untuk bahasa yang ditulis dari kanan ke kiri, seperti Ibrani atau Arab.
 
 ## Langkah 1: Menyiapkan lingkungan
 
@@ -75,13 +75,13 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita menjelajahi fitur arah teks dokumen di Aspose.Words untuk .NET. Kami mempelajari cara menentukan arah teks dalam suatu dokumen, terutama untuk bahasa yang ditulis dari kanan ke kiri, seperti Ibrani atau Arab.
+Dalam tutorial ini, kita menjelajahi fitur arah teks dokumen di Aspose.Words untuk .NET. Kami mempelajari cara menentukan arah teks dalam dokumen, khususnya untuk bahasa yang ditulis dari kanan ke kiri, seperti Ibrani atau Arab.
 
 Fitur ini penting untuk memastikan teks ditampilkan dengan benar dalam dokumen multibahasa. Dengan menggunakan opsi pemuatan yang sesuai, Aspose.Words dapat secara otomatis mendeteksi arah teks dan menerapkannya pada dokumen.
 
 Dengan Aspose.Words, Anda dapat dengan mudah memanipulasi arah teks dalam dokumen Anda, memberikan pengalaman membaca yang lancar dan intuitif bagi pengguna.
 
-Penting untuk dicatat bahwa fitur ini sangat berguna ketika Pengolahan Kata dengan bahasa yang memerlukan arah teks tertentu. Aspose.Words mempermudah tugas ini dengan menyediakan alat canggih untuk mengelola arah teks dalam dokumen Anda.
+Penting untuk dicatat bahwa fitur ini sangat berguna ketika Pemrosesan Kata dengan bahasa yang memerlukan arah teks tertentu. Aspose.Words mempermudah tugas ini dengan menyediakan alat canggih untuk mengelola arah teks dalam dokumen Anda.
 
 Ingatlah untuk menggunakan opsi pemuatan yang sesuai, seperti mengatur arah teks otomatis, untuk mendapatkan hasil yang Anda inginkan di dokumen Anda.
 

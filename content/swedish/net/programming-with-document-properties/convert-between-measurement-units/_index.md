@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 3: Konfigurera måttenheter
 
-Nu kommer vi att konvertera värdena för marginaler, sidhuvuds- och sidfotsavstånd etc. i olika måttenheter. Använd följande kod för att ange värden i specifika måttenheter:
+Nu ska vi konvertera värdena för marginaler, sidhuvuds- och sidfotsavstånd etc. i olika måttenheter. Använd följande kod för att ange värden i specifika måttenheter:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -56,4 +56,4 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
   
 ```
 
-Du har nu lärt dig hur du konverterar mellan måttenheter när du anger marginaler, sidhuvud och sidfotsavstånd etc. i ett dokument med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden i denna handledning kan du enkelt ange värdena i de önskade måttenheterna i dina egna dokument.
+Du har nu lärt dig hur du konverterar mellan måttenheter när du anger marginaler, sidhuvud och sidfotsavstånd etc. i ett dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i denna handledning kan du enkelt ange värdena i de önskade måttenheterna i dina egna dokument.

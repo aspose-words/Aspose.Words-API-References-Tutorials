@@ -102,13 +102,13 @@ Dalam contoh ini, kita membuat dokumen baru, menyisipkan hentian halaman, memind
 
 J: Untuk menyisipkan bidang bertumpuk dalam dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
 
-1. Dapatkan paragraf tempat Anda ingin menyisipkan bidang bersarang.
+1. Dapatkan paragraf di mana Anda ingin menyisipkan bidang bersarang.
 2.  Membuat`FieldStart` objek untuk bidang induk.
 3.  Tambahkan bidang anak menggunakan`FieldStart.NextSibling` metode melewati yang sesuai`FieldStart` objek sebagai parameter.
 
 #### T: Apa manfaat menggunakan bidang bertumpuk di dokumen Word dengan Aspose.Words untuk .NET?
 
-J: Menggunakan bidang bertingkat menawarkan beberapa keuntungan dalam dokumen Word dengan Aspose.Words untuk .NET. Hal ini memungkinkan fleksibilitas yang lebih besar dalam membuat templat dokumen dinamis, dengan memungkinkan penyisipan nilai variabel dan penghitungan ke dalam bidang bersarang. Bidang bersarang juga dapat memfasilitasi pembuatan konten otomatis, seperti membuat daftar isi, nomor halaman, dll.
+J: Menggunakan bidang bertingkat menawarkan beberapa keuntungan dalam dokumen Word dengan Aspose.Words untuk .NET. Hal ini memungkinkan fleksibilitas yang lebih besar dalam membuat templat dokumen dinamis, dengan memungkinkan penyisipan nilai variabel dan perhitungan ke dalam bidang yang disarangkan. Bidang bersarang juga dapat memfasilitasi pembuatan konten otomatis, seperti membuat daftar isi, nomor halaman, dll.
 
 #### T: Bisakah saya memiliki bidang bertingkat bertingkat di dokumen Word dengan Aspose.Words untuk .NET?
 

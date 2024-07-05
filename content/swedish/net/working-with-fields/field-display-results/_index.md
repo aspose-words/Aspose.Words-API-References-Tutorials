@@ -61,12 +61,12 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // Uppdatera fält.
 document. UpdateFields();
 
-//Visning av fältresultat.
+// Visning av fältresultat.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
-I det här exemplet laddade vi upp ett dokument, uppdaterade alla fält och cyklade sedan igenom fälten för att visa deras resultat. Du kan anpassa detta steg med din egen logik för att bearbeta fältresultat.
+det här exemplet laddade vi upp ett dokument, uppdaterade alla fält och cyklade sedan igenom fälten för att visa deras resultat. Du kan anpassa detta steg med din egen logik för att bearbeta fältresultat.
 
 Detta avslutar vår guide till att använda funktionen "Visa fältresultat" med Aspose.Words för .NET.
 

@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.Structu
 ```
 
 ## 3. lépés: Töltse le a stílust, és alkalmazza a tartalomvezérlőre
- A kívánt stílus lekérése a dokumentum stílusgyűjteményéből. Ebben a példában az "Idézet" stílust a használatával kérjük le`StyleIdentifier.Quote` . Ezután rendelje hozzá a letöltött stílust a`Style` a strukturált dokumentumcímke tulajdonsága.
+ A kívánt stílus lekérése a dokumentum stílusgyűjteményéből. Ebben a példában az "Idézet" stílust a használatával kérjük le`StyleIdentifier.Quote` . Ezután rendelje hozzá a lekért stílust a`Style` a strukturált dokumentumcímke tulajdonsága.
 
 ```csharp
 Style style = doc.Styles[StyleIdentifier.Quote];

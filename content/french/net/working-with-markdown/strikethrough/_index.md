@@ -57,7 +57,7 @@ Félicitation ! Vous avez maintenant appris à appliquer le style de texte barr�
 
 #### Q : Est-il possible d’ajouter le texte barré à plusieurs morceaux de texte dans un même paragraphe ?
 
- R : Oui, vous pouvez ajouter du texte barré à plusieurs parties de texte dans un seul paragraphe en en utilisant plusieurs.`Run` objets. Vous pouvez créer plusieurs`Run` objets et définir le`Font.StrikeThrough`propriété à`true` pour chaque objet pour ajouter le texte barré aux parties de texte souhaitées. Ensuite, vous pouvez les ajouter au paragraphe en utilisant le`Paragraph.AppendChild(run)` méthode.
+ R : Oui, vous pouvez ajouter du texte barré à plusieurs parties de texte dans un seul paragraphe en utilisant plusieurs`Run` objets. Vous pouvez créer plusieurs`Run` objets et définir le`Font.StrikeThrough`propriété à`true` pour chaque objet pour ajouter le texte barré aux parties de texte souhaitées. Ensuite, vous pouvez les ajouter au paragraphe en utilisant le`Paragraph.AppendChild(run)` méthode.
 
 #### Q : Puis-je ajouter du texte barré au texte qui se trouve dans un tableau ou une cellule dans Aspose.Words ?
 

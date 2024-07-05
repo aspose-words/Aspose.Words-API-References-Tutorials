@@ -102,7 +102,7 @@ Aspose.Words oferece opções de criptografia como AES_256 para proteger o conte
 
 ### Como as assinaturas digitais melhoram a segurança dos documentos?
 
-As assinaturas digitais garantem a autenticidade e a integridade dos documentos, dificultando a adulteração do conteúdo por partes não autorizadas.
+As assinaturas digitais garantem a autenticidade e integridade dos documentos, dificultando a adulteração do conteúdo por partes não autorizadas.
 
 ### Como posso remover permanentemente informações confidenciais de um documento?
 

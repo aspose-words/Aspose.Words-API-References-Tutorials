@@ -2,115 +2,130 @@
 title: Formato de lista multinivel en documento de Word
 linktitle: Formato de lista multinivel en documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a crear una lista de varios niveles y aplicar formato personalizado en un documento de Word con Aspose.Words para .NET.
+description: Aprenda a dominar el formato de listas multinivel en documentos de Word usando Aspose.Words para .NET con nuestra guía paso a paso. Mejore la estructura del documento sin esfuerzo.
 type: docs
 weight: 10
 url: /es/net/document-formatting/multilevel-list-formatting/
 ---
-En este tutorial, le mostraremos cómo utilizar la función de formato de lista multinivel en documentos de Word con Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
+## Introducción
 
-## Paso 1: Crear y configurar el documento
+Si es un desarrollador que busca automatizar la creación y el formato de documentos de Word, Aspose.Words para .NET cambia las reglas del juego. Hoy, profundizaremos en cómo dominar el formato de listas multinivel utilizando esta poderosa biblioteca. Ya sea que esté creando documentos estructurados, describiendo informes o generando documentación técnica, las listas multinivel pueden mejorar la legibilidad y la organización de su contenido.
 
-Para comenzar, cree un nuevo documento y un objeto DocumentBuilder asociado. Así es cómo:
+## Requisitos previos
+
+Antes de entrar en los detalles esenciales, asegurémonos de que tiene todo lo que necesita para seguir este tutorial.
+
+1. Entorno de desarrollo: asegúrese de tener configurado un entorno de desarrollo. Visual Studio es una gran elección.
+2.  Aspose.Words para .NET: descargue e instale la biblioteca Aspose.Words para .NET. Puedes conseguirlo[aquí](https://releases.aspose.com/words/net/).
+3.  Licencia: Obtenga una licencia temporal si no tiene una completa. Consíguelo[aquí](https://purchase.aspose.com/temporary-license/).
+4. Conocimientos básicos de C#: será beneficiosa la familiaridad con C# y .NET Framework.
+
+## Importar espacios de nombres
+
+Para usar Aspose.Words para .NET en su proyecto, necesitará importar los espacios de nombres necesarios. Así es como lo haces:
 
 ```csharp
-// Ruta al directorio de documentos.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
 
-## Paso 2: formatear la lista multinivel
+## Paso 1: Inicialice su documento y su generador
 
-Ahora aplicaremos el formato de lista multinivel utilizando los métodos disponibles en el objeto DocumentBuilder. Así es cómo:
-
-```csharp
-builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-
-builder.ListFormat.ListIndent();
-builder.Writeln("Element 2.1");
-builder.Writeln("Element 2.2");
-
-builder.ListFormat.ListIndent();
-builder.Writeln("Element 2.2.1");
-builder.Writeln("Element 2.2.2");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Element 2.3");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Element 3");
-
-builder.ListFormat.RemoveNumbers();
-```
-
-## Paso 3: guardar el documento
-
- Después de insertar el campo del formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
+Lo primero es lo primero, creemos un nuevo documento de Word e inicialicemos DocumentBuilder. La clase DocumentBuilder proporciona métodos para insertar contenido en el documento.
 
 ```csharp
-doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
-```
-
-### Código fuente de ejemplo para formato de lista multinivel usando Aspose.Words para .NET
-
-Aquí está el código fuente completo para la función de formato de listas multinivel con Aspose.Words para .NET:
-
-
-```csharp
-
 // La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Paso 2: aplicar la numeración predeterminada
+
+ Para comenzar con una lista numerada, utilice el`ApplyNumberDefault` método. Esto configura el formato de lista numerada predeterminado.
+
+```csharp
 builder.ListFormat.ApplyNumberDefault();
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+ En estas líneas,`ApplyNumberDefault` comienza la lista numerada, y`Writeln` agrega elementos a la lista.
+
+## Paso 3: sangría para subniveles
+
+ A continuación, para crear subniveles dentro de su lista, utilice el`ListIndent` método. Este método sangra el elemento de la lista, convirtiéndolo en un subnivel del elemento anterior.
+
+```csharp
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2.1");
 builder.Writeln("Item 2.2");
+```
 
+Este fragmento de código sangra los elementos, creando una lista de segundo nivel.
+
+## Paso 4: sangría adicional para niveles más profundos
+
+Puede continuar sangrando para crear niveles más profundos dentro de su lista. Aquí crearemos un tercer nivel.
+
+```csharp
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2.2.1");
 builder.Writeln("Item 2.2.2");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Item 2.3");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Item 3");
-
-builder.ListFormat.RemoveNumbers();
-
-doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
-
 ```
 
-Con este código podrá crear una lista de varios niveles y aplicar el formato adecuado a cada nivel usando Aspose.Words para .NET.
+Ahora tiene una lista de tercer nivel en el "Ítem 2.2".
 
+## Paso 5: Salir de la sangría para volver a niveles superiores
+
+ Para volver a un nivel superior, utilice el`ListOutdent` método. Esto hace que el elemento vuelva al nivel de lista anterior.
+
+```csharp
+builder.ListFormat.ListOutdent();
+builder.Writeln("Item 2.3");
+```
+
+Esto devuelve el "Ítem 2.3" al segundo nivel.
+
+## Paso 6: eliminar la numeración
+
+Una vez que haya terminado con su lista, puede eliminar la numeración para continuar con el texto normal u otro tipo de formato.
+
+```csharp
+builder.ListFormat.ListOutdent();
+builder.Writeln("Item 3");
+builder.ListFormat.RemoveNumbers();
+```
+
+Este fragmento de código completa la lista y detiene la numeración.
+
+## Paso 7: guarde su documento
+
+Finalmente, guarde el documento en el directorio que desee.
+
+```csharp
+doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
+```
+
+Esto guarda su documento bellamente formateado con listas multinivel.
 
 ## Conclusión
 
-En este tutorial, hemos explorado el proceso de utilización de la función de formato de lista multinivel en un documento de Word con Aspose.Words para .NET. Si sigue los pasos descritos, puede crear listas bien organizadas con múltiples niveles, mejorando la estructura y legibilidad de sus documentos.
+¡Y ahí lo tienes! Ha creado con éxito una lista multinivel en un documento de Word utilizando Aspose.Words para .NET. Esta poderosa biblioteca le permite automatizar tareas complejas de formato de documentos con facilidad. Recuerde, dominar estas herramientas no sólo ahorra tiempo sino que también garantiza coherencia y profesionalismo en su proceso de generación de documentos.
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 
-#### P: ¿Qué es una lista multinivel en un documento de Word?
+### ¿Puedo personalizar el estilo de numeración de la lista?
+ Sí, Aspose.Words para .NET le permite personalizar el estilo de numeración de la lista utilizando el`ListTemplate` clase.
 
-R: Una lista multinivel en un documento de Word es una lista jerárquica que le permite organizar elementos en varios niveles de subelementos. Ayuda a presentar la información de manera estructurada, lo que facilita a los lectores la comprensión del contenido.
+### ¿Cómo agrego viñetas en lugar de números?
+ Puede aplicar viñetas utilizando el`ApplyBulletDefault` método en lugar de`ApplyNumberDefault`.
 
-#### P: ¿Puedo personalizar la apariencia de la lista multinivel?
+### ¿Es posible seguir numerando desde una lista anterior?
+ Sí, puedes continuar numerando usando el`ListFormat.List` propiedad para vincular a una lista existente.
 
-R: Sí, puedes personalizar la apariencia de la lista multinivel en tu documento de Word. Al aplicar diferentes estilos, como viñetas, números o letras, y ajustar la sangría y el espaciado, puede crear una lista organizada y visualmente atractiva.
+### ¿Cómo cambio el nivel de sangría dinámicamente?
+ Puede cambiar dinámicamente el nivel de sangría utilizando`ListIndent` y`ListOutdent` métodos según sea necesario.
 
-#### P: ¿Aspose.Words para .NET admite otras opciones de formato de listas?
-
-R: Sí, Aspose.Words para .NET proporciona un conjunto completo de funciones para formatear listas. Admite varios tipos de listas, incluidas listas con viñetas, listas numeradas y listas de varios niveles. Puede manipular el formato de las listas, agregar o eliminar elementos y personalizar su apariencia.
-
-#### P: ¿Puedo usar Aspose.Words para .NET para trabajar con otros elementos del documento?
-
-R: Sí, Aspose.Words para .NET ofrece amplias capacidades para trabajar con varios elementos del documento, como párrafos, tablas, imágenes y más. Le permite crear, modificar y convertir documentos de Word mediante programación, simplificando las tareas de procesamiento de documentos.
+### ¿Puedo crear listas multinivel en otros formatos de documentos como PDF?
+Sí, Aspose.Words admite guardar documentos en varios formatos, incluido PDF, manteniendo el formato.

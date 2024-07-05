@@ -9,13 +9,13 @@ url: /cs/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## Úvod
 
-Ahoj, kolegové vývojáři! Ocitli jste se někdy po kolena v projektu dokumentu Word a pomysleli jste si: „Člověče, opravdu sem potřebuji vložit horizontální pravidlo, abych věci rozbil“? No, hádejte co? Máte štěstí! V dnešním tutoriálu se ponoříme do toho, jak vložit vodorovné pravítko do dokumentu aplikace Word pomocí Aspose.Words for .NET. Toto není jen tak obyčejný tutoriál – je nabitý podrobnými kroky, poutavými vysvětleními a špetkou zábavy. Takže se připoutejte a připravte se na to, abyste se stali profesionálem ve zpracování Aspose.Words pro .NET!
+Ahoj, kolegové vývojáři! Ocitli jste se někdy po kolena v projektu dokumentu Word a pomysleli jste si: „Člověče, opravdu sem potřebuji vložit horizontální pravidlo, abych věci rozbil“? Hádej co? Máte štěstí! V dnešním tutoriálu se ponoříme do toho, jak vložit vodorovné pravítko do dokumentu aplikace Word pomocí Aspose.Words for .NET. Toto není jen tak obyčejný tutoriál – je nabitý podrobnými kroky, poutavými vysvětleními a špetkou zábavy. Takže se připoutejte a připravte se na to, abyste se stali profesionálem ve zpracování Aspose.Words pro .NET!
 
 ## Předpoklady
 
 Než se ponoříme do toho nejnutnějšího, ujistěte se, že máte vše, co potřebujete, abyste mohli začít. Zde je rychlý kontrolní seznam:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžeš[stáhněte si to zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Jakékoli IDE, které podporuje .NET, jako je Visual Studio.
 3. Základní znalost C#: Díky znalosti programování v C# bude tento tutoriál plynulejší.
 4. Adresář dokumentů: Budete potřebovat adresář, kam můžete ukládat dokumenty aplikace Word.

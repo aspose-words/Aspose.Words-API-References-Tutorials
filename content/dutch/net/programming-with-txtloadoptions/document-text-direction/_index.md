@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-In deze zelfstudie verkennen we de C#-broncode voor de functie "Documenttekstrichting" met Aspose.Words voor .NET. Met deze functie kunt u de richting van tekst in een document opgeven, wat vooral handig is voor talen die van rechts naar links worden geschreven, zoals Hebreeuws of Arabisch.
+In deze zelfstudie verkennen we de C#-broncode voor de functie "Documenttekstrichting" met Aspose.Words voor .NET. Met deze functie kunt u de richting van de tekst in een document opgeven, wat vooral handig is voor talen die van rechts naar links worden geschreven, zoals Hebreeuws of Arabisch.
 
 ## Stap 1: De omgeving instellen
 

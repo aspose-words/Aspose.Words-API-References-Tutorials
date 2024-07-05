@@ -41,7 +41,7 @@ Nu u de woordenboeken heeft geregistreerd, is het tijd om woordafbreking op uw d
 
 ## 5. Afbrekingswoordenboeken laden
 
-In sommige gevallen moet u afbreekwoordenboeken dynamisch laden. Hierdoor kunt u zich aanpassen aan verschillende taalvereisten. Zo kunt u een woordafbrekingswoordenboek voor een specifieke taal laden:
+In sommige gevallen moet u de woordafbrekingswoordenboeken dynamisch laden. Hierdoor kunt u zich aanpassen aan verschillende taalvereisten. Zo kunt u een woordafbrekingswoordenboek voor een specifieke taal laden:
 
 ```java
 Document doc = new Document(dataDir + "German text.docx");
@@ -52,7 +52,7 @@ doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.
 
 ## 6. Conclusie
 
-Woordafbreking speelt een cruciale rol bij het behouden van de kwaliteit en esthetiek van uw documenten, vooral als het om meertalige inhoud gaat. Aspose.Words voor Java vereenvoudigt het proces van het toepassen van woordafbrekingsregels om ervoor te zorgen dat uw documenten er op hun best uitzien.
+Woordafbreking speelt een cruciale rol bij het behouden van de kwaliteit en esthetiek van uw documenten, vooral als het gaat om meertalige inhoud. Aspose.Words voor Java vereenvoudigt het proces van het toepassen van woordafbrekingsregels om ervoor te zorgen dat uw documenten er op hun best uitzien.
 
 Begin vandaag nog met het maken van professionele en visueel aantrekkelijke documenten met Aspose.Words voor de woordafbrekingsfuncties van Java!
 

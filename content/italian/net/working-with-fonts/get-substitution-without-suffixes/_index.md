@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Passaggio 5: creare la classe del gestore degli avvisi
 
-Per gestire gli avvisi in modo efficace, crea una classe personalizzata che implementi il file`IWarningCallback` interfaccia. Questa classe acquisirà e registrerà eventuali avvisi di sostituzione dei caratteri.
+ Per gestire gli avvisi in modo efficace, crea una classe personalizzata che implementi il file`IWarningCallback` interfaccia. Questa classe acquisirà e registrerà eventuali avvisi di sostituzione dei caratteri.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Ora hai imparato il processo di gestione della sostituzione dei caratteri senza 
 
 ### Q1: Come posso utilizzare i caratteri da più directory personalizzate?
 
- Puoi aggiungerne più di uno`FolderFontSource` istanze al`fontSources` elencare e aggiornare le fonti dei caratteri di conseguenza.
+ Puoi aggiungerne più di uno`FolderFontSource` istanze al`fontSources`elencare e aggiornare le fonti dei caratteri di conseguenza.
 
 ### Q2: Dove posso scaricare una versione di prova gratuita di Aspose.Words per .NET?
 

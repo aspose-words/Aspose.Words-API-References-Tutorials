@@ -79,7 +79,7 @@ for table in doc.get_child_nodes(doc.is_table, True):
             print("Cell Text:", cell.get_text())
 ```
 
-## Munka a hiperhivatkozásokkal
+## Hiperhivatkozásokkal való munka
 
 Hiperhivatkozások kibontása:
 
@@ -91,7 +91,7 @@ for hyperlink in doc.get_child_nodes(doc.is_hyperlink, True):
 
 ## Fejlécek és láblécek kibontása
 
-Tartalom kinyerése a fej- és láblécekből:
+Tartalom kinyerése fejlécekből és láblécekből:
 
 ```python
 for section in doc.sections:

@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Thêm nguồn thư mục mới sẽ hướng dẫn Aspose.Words tìm kiếm phông chữ trong thư mục sau.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// Thêm thư mục tùy chỉnh chứa phông chữ của chúng tôi vào danh sách các nguồn phông chữ hiện có.
+//Thêm thư mục tùy chỉnh chứa phông chữ của chúng tôi vào danh sách các nguồn phông chữ hiện có.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ Trả lời: Có, bạn có thể lọc danh sách phông chữ có sẵn trong 
 
 #### Hỏi: Làm cách nào tôi có thể sử dụng danh sách phông chữ có sẵn trong tài liệu Word của mình?
 
- Trả lời: Để sử dụng danh sách phông chữ có sẵn trong tài liệu Word của bạn, bạn có thể duyệt qua danh sách và chọn phông chữ thích hợp bằng cách sử dụng các phương pháp và thuộc tính của`FontSettings` lớp trong Aspose.Words.
+Trả lời: Để sử dụng danh sách phông chữ có sẵn trong tài liệu Word của bạn, bạn có thể duyệt qua danh sách và chọn phông chữ thích hợp bằng cách sử dụng các phương pháp và thuộc tính của`FontSettings` lớp trong Aspose.Words.

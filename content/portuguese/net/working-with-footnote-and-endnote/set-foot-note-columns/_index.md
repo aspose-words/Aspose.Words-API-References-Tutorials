@@ -57,7 +57,7 @@ Sinta-se à vontade para usar este código em seus próprios projetos e modific�
 
 #### P: Como posso configurar o número de colunas para notas de rodapé no Aspose.Words?
 
- R: Para configurar o número de colunas para notas de rodapé no Aspose.Words, você precisa usar o`FootnoteOptions` classe e o`ColumnsCount` propriedade. Você pode definir essa propriedade para qualquer número de colunas que desejar.
+R: Para configurar o número de colunas para notas de rodapé no Aspose.Words, você precisa usar o`FootnoteOptions` classe e o`ColumnsCount` propriedade. Você pode definir essa propriedade para qualquer número de colunas que desejar.
 
 #### P: Quais são os benefícios de configurar colunas de notas de rodapé?
 

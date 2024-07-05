@@ -1,6 +1,6 @@
 ---
-title: Văn bản tiếng Ý
-linktitle: Văn bản tiếng Ý
+title: Văn bản in nghiêng
+linktitle: Văn bản in nghiêng
 second_title: API xử lý tài liệu Aspose.Words
 description: Tìm hiểu cách in nghiêng văn bản với Aspose.Words for .NET Hướng dẫn từng bước.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Tạo văn bản bằng tiếng Ý.
+// Làm cho văn bản nghiêng.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

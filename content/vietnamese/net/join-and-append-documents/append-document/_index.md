@@ -91,7 +91,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### 3. Làm cách nào để đảm bảo rằng định dạng được giữ nguyên khi nối thêm tài liệu?
 
- Sử dụng`ImportFormatMode.KeepSourceFormatting` các thông số trong`AppendDocument` phương pháp để giữ nguyên định dạng của tài liệu nguồn.
+ Sử dụng`ImportFormatMode.KeepSourceFormatting` tham số trong`AppendDocument` phương pháp để giữ nguyên định dạng của tài liệu nguồn.
 
 ### 4. Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
 

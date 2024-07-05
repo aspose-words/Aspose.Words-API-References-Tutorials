@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### Q: .NET용 Aspose.Words에서 섹션 설정을 어떻게 변경합니까?
 
- A: 섹션의 설정을 수정하려면 섹션의 속성을 사용할 수 있습니다.`PageSetup`물체. 이 예에서는 여백, 머리글과 바닥글 거리, 텍스트 열 간격을 변경합니다.
+ A: 섹션 설정을 수정하려면 해당 섹션의 속성을 사용할 수 있습니다.`PageSetup`물체. 이 예에서는 여백, 머리글과 바닥글 거리, 텍스트 열 간격을 변경합니다.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3.17cm

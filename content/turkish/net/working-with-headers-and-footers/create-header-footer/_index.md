@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-Belgelerinize üstbilgi ve altbilgi eklemek, belgelerinizin profesyonelliğini ve okunabilirliğini artırabilir. Aspose.Words for .NET ile Word belgeleriniz için kolayca üstbilgi ve altbilgi oluşturabilir ve özelleştirebilirsiniz. Bu eğitimde, bu özellikleri sorunsuz bir şekilde uygulayabilmenizi sağlamak için süreç boyunca size adım adım yol göstereceğiz.
+Belgelerinize üstbilgi ve altbilgi eklemek belgelerinizin profesyonelliğini ve okunabilirliğini artırabilir. Aspose.Words for .NET ile Word belgeleriniz için kolayca üstbilgi ve altbilgi oluşturabilir ve özelleştirebilirsiniz. Bu eğitimde, bu özellikleri sorunsuz bir şekilde uygulayabilmenizi sağlamak için süreç boyunca size adım adım yol göstereceğiz.
 
 ## Önkoşullar
 

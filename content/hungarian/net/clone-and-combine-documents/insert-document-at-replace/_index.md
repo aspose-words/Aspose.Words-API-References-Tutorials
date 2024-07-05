@@ -57,7 +57,7 @@ Ez a kód betölti a fő dokumentumot a megadott könyvtárból.
 
 ## 3. lépés: Állítsa be a Keresés és csere opciókat
 
-Ahhoz, hogy megtaláljuk azt a helyet, ahová be szeretnénk illeszteni a dokumentumunkat, a keresés és csere funkciót használjuk. Ez olyan, mintha egy térképet használnánk az új kiegészítésünk pontos helyének megtalálásához.
+Ahhoz, hogy megtaláljuk azt a helyet, ahová a dokumentumunkat be szeretnénk illeszteni, a keresés és csere funkciót használjuk. Ez olyan, mintha egy térképet használnánk az új kiegészítésünk pontos helyének megtalálásához.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions
@@ -164,4 +164,4 @@ Igen, módosíthatja a visszahíváskezelőt úgy, hogy több beszúrást is kez
 Támogatást kaphat, ha ellátogat a[Aspose.Words fórum](https://forum.aspose.com/c/words/8).
 
 ### Megtarthatom a beillesztett dokumentum formázását?
- Igen, a`NodeImporter`osztály lehetővé teszi annak megadását, hogy a formázás hogyan legyen kezelve csomópontok importálásakor egyik dokumentumból a másikba.
+ Igen, a`NodeImporter` osztály lehetővé teszi annak megadását, hogy a formázás hogyan legyen kezelve csomópontok importálásakor egyik dokumentumból a másikba.

@@ -67,4 +67,4 @@ Ebben az oktatóanyagban megvizsgáltuk az Utf-8 szövegfelismerési funkciót a
 
 Ez a funkció elengedhetetlen az Utf-8 karakterek megfelelő megjelenítéséhez az RTF-dokumentumokban. A megfelelő betöltési beállítások konfigurálásával az Aspose.Words képes helyesen felismerni és feldolgozni ezeket a karaktereket, segítve a szöveg integritásának és minőségének megőrzését.
 
-Az Utf-8-szövegfelismerés különösen fontos, ha a szövegfeldolgozást olyan nyelvekkel és karakterkészletekkel végzik, amelyek Utf-8 kódolás támogatását igénylik. Az Aspose.Words for .NET-nek köszönhetően könnyedén kezelheti az Utf-8 karaktereket tartalmazó RTF-dokumentumokat az elvesztés vagy a sérülés kockázata nélkül.
+Az Utf-8-szövegfelismerés különösen fontos olyan speciális nyelvekkel és karakterkészletekkel végzett szövegfeldolgozáskor, amelyek Utf-8-kódolás támogatását igénylik. Az Aspose.Words for .NET-nek köszönhetően könnyedén kezelheti az Utf-8 karaktereket tartalmazó RTF-dokumentumokat az elvesztés vagy a sérülés kockázata nélkül.

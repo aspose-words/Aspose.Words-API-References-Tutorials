@@ -51,7 +51,7 @@ doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
 
-ในโค้ดนี้ เราจะดำเนินการดำเนินการจดหมายเวียนและระบุค่า DateTime สำหรับฟิลด์ "Date2"
+ในข้อมูลโค้ดนี้ เราดำเนินการดำเนินการจดหมายเวียน และระบุค่า DateTime สำหรับฟิลด์ "Date2"
 
 ## ขั้นตอนที่ 5: บันทึกเอกสาร
 บันทึกเอกสารที่แก้ไขลงในไฟล์โดยใช้วิธีการบันทึกของคลาสเอกสาร:

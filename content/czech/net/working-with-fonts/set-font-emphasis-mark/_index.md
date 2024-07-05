@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Vytvořte a přizpůsobte dokument
- Vytvořte instanci souboru`Document` třída a přidružená`DocumentBuilder` k vytvoření obsahu dokumentu. Použijte`Font.EmphasisMark` vlastnost pro nastavení stylu zvýraznění písma`EmphasisMark.UnderSolidCircle` . Poté použijte`Write` a`Writeln` metody`DocumentBuilder` pro přidání textu se zvýrazněním zadaného písma.
+ Vytvořte instanci souboru`Document` třída a přidružená`DocumentBuilder` k vytvoření obsahu dokumentu. Použijte`Font.EmphasisMark` vlastnost, na kterou chcete nastavit styl zvýraznění písma`EmphasisMark.UnderSolidCircle` . Poté použijte`Write` a`Writeln` metody`DocumentBuilder` pro přidání textu se zadaným zvýrazněním písma.
 
 ```csharp
 Document document = new Document();
@@ -59,7 +59,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Závěr
-V tomto tutoriálu jste se naučili, jak nastavit styl zvýraznění písma v dokumentu aplikace Word pomocí Aspose.Words for .NET. Experimentujte s různými styly důrazu a použijte tuto funkci ke zvýraznění slov nebo frází v dokumentech.
+V tomto kurzu jste se naučili, jak nastavit styl zvýraznění písma v dokumentu aplikace Word pomocí Aspose.Words for .NET. Experimentujte s různými styly důrazu a použijte tuto funkci ke zvýraznění slov nebo frází v dokumentech.
 
 ### FAQ
 

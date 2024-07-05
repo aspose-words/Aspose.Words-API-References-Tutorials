@@ -2,7 +2,7 @@
 title: Anexar documento
 linktitle: Anexar documento
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo adjuntar documentos de Word usando Aspose.Words para .NET con esta guía completa paso a paso. Perfecto para automatizar el flujo de trabajo de sus documentos.
+description: Aprenda a adjuntar documentos de Word usando Aspose.Words para .NET con esta guía completa paso a paso. Perfecto para automatizar el flujo de trabajo de sus documentos.
 type: docs
 weight: 10
 url: /es/net/join-and-append-documents/append-document/
@@ -91,7 +91,7 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
 
 ### 3. ¿Cómo me aseguro de que se conserve el formato al adjuntar documentos?
 
- Utilizar el`ImportFormatMode.KeepSourceFormatting` parámetros en el`AppendDocument` método para preservar el formato del documento fuente.
+ Utilizar el`ImportFormatMode.KeepSourceFormatting` parámetro en el`AppendDocument` método para preservar el formato del documento fuente.
 
 ### 4. ¿Cómo obtengo soporte para Aspose.Words para .NET?
 

@@ -16,7 +16,7 @@ Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de qu
 
 ## Paso 2: cargar el documento
 
-En este paso cargaremos el documento de Word para el cual queremos configurar las opciones de visualización. Utilice el siguiente código para cargar el documento:
+En este paso cargaremos el documento de Word para el que queremos configurar las opciones de visualización. Utilice el siguiente código para cargar el documento:
 
 ```csharp
 // Ruta al directorio de documentos.

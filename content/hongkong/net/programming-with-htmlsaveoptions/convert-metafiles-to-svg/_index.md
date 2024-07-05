@@ -51,7 +51,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafil
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 ```
 
-此程式碼將文件轉換為 HTML，並將其儲存到一個檔案中，其中圖元檔案已轉換為 SVG。
+此程式碼將文件轉換為 HTML，並將其保存到一個文件中，其中圖元文件已轉換為 SVG。
 
 ### 使用 Aspose.Words for .NET 將圖元檔案轉換為 Svg 的範例原始程式碼
 

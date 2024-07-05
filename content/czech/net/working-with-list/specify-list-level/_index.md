@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Vytvořte číslovaný seznam založený na jedné ze šablon seznamu Microsoft Word.
+// Vytvořte číslovaný seznam založený na jedné ze šablon seznamu Microsoft Word
 // použijte jej na aktuální odstavec tvůrce dokumentů.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Vytvořte seznam s odrážkami založený na jedné ze šablon seznamu Microsoft Word.
+// Vytvořte seznam s odrážkami založený na jedné ze šablon seznamu Microsoft Word
 // použijte jej na aktuální odstavec tvůrce dokumentů.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 

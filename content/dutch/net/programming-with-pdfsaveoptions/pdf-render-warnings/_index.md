@@ -126,7 +126,7 @@ Door deze stappen te volgen, kunt u effectief omgaan met PDF-weergavewaarschuwin
 
 ### Vraag 1: Kan ik met deze methode andere soorten waarschuwingen afhandelen?
 
- Ja de`IWarningCallback` De interface kan verschillende soorten waarschuwingen verwerken, niet alleen waarschuwingen die betrekking hebben op PDF-weergave.
+ Ja de`IWarningCallback` interface kan verschillende soorten waarschuwingen verwerken, niet alleen die gerelateerd aan PDF-weergave.
 
 ### V2: Waar kan ik een gratis proefversie van Aspose.Words voor .NET downloaden?
 

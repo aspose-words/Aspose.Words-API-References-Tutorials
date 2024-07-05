@@ -97,4 +97,4 @@ V: A szöveges mező beszúrása a dokumentumkészítő nélkül nem befolyásol
 
 #### K: Testreszabhatom a szövegbefoglaló mező megjelenését Word-dokumentumban az Aspose.Words for .NET segítségével?
 
-V: A szövegmező felvétele nem szabja meg közvetlenül a megjelenését a Word-dokumentumban. A mellékelt szöveget azonban formázhatja az Aspose.Words for .NET-ben elérhető bekezdéstulajdonságokkal, betűtípustulajdonságokkal és egyéb formázási objektumokkal.
+V: A szövegbeillesztési mező nem szabja közvetlenül testre megjelenését a Word-dokumentumban. A mellékelt szöveget azonban formázhatja az Aspose.Words for .NET-ben elérhető bekezdéstulajdonságokkal, betűtípustulajdonságokkal és egyéb formázási objektumokkal.

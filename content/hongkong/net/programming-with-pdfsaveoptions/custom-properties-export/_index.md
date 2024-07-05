@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## 第 2 步：新增自訂屬性
-接下來，新增所需的自訂屬性。例如，若要新增值為“Apose”的“Company”屬性，請使用`Add`CustomDocumentProperties 集合的方法：
+接下來，新增所需的自訂屬性。例如，若要新增值為“Aspose”的“Company”屬性，請使用`Add`CustomDocumentProperties 集合的方法：
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 
 建立一個實例`Document`班級。
 
-使用以下命令新增所需的自訂屬性`CustomDocumentProperties`收藏。例如，使用`Add`方法加入值為“Apose”的“Company”屬性。
+使用以下命令新增所需的自訂屬性`CustomDocumentProperties`收藏。例如，使用`Add`方法新增值為“Aspose”的“Company”屬性。
 
 建立一個實例`PdfSaveOptions`類別並指定如何使用匯出自訂屬性`CustomPropertiesExport`財產。這`PdfCustomPropertiesExport.Standard`value 根據預設設定匯出自訂屬性。
 

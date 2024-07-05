@@ -33,7 +33,7 @@ Cell firstCell = table.FirstRow.FirstCell;
 ```
 
 ## Stap 4: Wijzig de celopmaak
- Nu kunnen we de celopmaak wijzigen met behulp van de eigenschappen van het`CellFormat` klas. We kunnen bijvoorbeeld de celbreedte, tekstoriëntatie en achtergrondkleur instellen.
+ Nu kunnen we de celopmaak wijzigen met behulp van de eigenschappen van het`CellFormat` klas. We kunnen bijvoorbeeld de celbreedte, tekstrichting en achtergrondkleur instellen.
 
 ```csharp
 firstCell.CellFormat.Width = 30;

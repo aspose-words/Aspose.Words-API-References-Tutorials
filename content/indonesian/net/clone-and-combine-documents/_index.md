@@ -12,6 +12,6 @@ Clone And Combine Documents menawarkan tutorial tentang mengkloning dan menggabu
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Mengkloning Dokumen Word](./cloning-document/) | Pelajari cara mengkloning dokumen Word menggunakan Aspose.Words untuk .NET. |
+| [Mengkloning Dokumen Word](./cloning-document/) | Pelajari cara mengkloning dokumen Word dengan mudah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk pemula dan pengembang berpengalaman. |
 | [Sisipkan Dokumen Saat Ganti](./insert-document-at-replace/) | Pelajari cara menyisipkan satu dokumen Word ke dokumen lain dengan lancar menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci. Sempurna untuk pengembang yang ingin menyederhanakan pemrosesan dokumen. |
 | [Sisipkan Dokumen Pada Mail Merge](./insert-document-at-mail-merge/) | Pelajari cara menyisipkan dokumen di bidang gabungan surat menggunakan Aspose.Words untuk .NET dalam tutorial langkah demi langkah yang komprehensif ini. |

@@ -50,7 +50,7 @@ Questo codice imposta la modalità di layout su "Griglia" e quindi specifica il 
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Imposta la modalità di layout per una sezione consentendo di definire il comportamento della griglia del documento.
-	// Tieni presente che la scheda Griglia documento diventa visibile nella finestra di dialogo Imposta pagina di MS Word.
+	// Tieni presente che la scheda Griglia documento diventa visibile nella finestra di dialogo Imposta pagina di MS Word
 	// se una qualsiasi lingua asiatica è definita come lingua di modifica.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

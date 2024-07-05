@@ -57,7 +57,7 @@ Tento kód načte hlavní dokument ze zadaného adresáře.
 
 ## Krok 3: Nastavte možnosti Najít a nahradit
 
-K vyhledání konkrétního umístění, kam chceme vložit náš dokument, používáme funkci najít a nahradit. Je to jako pomocí mapy najít přesné místo pro náš nový přírůstek.
+vyhledání konkrétního umístění, kam chceme vložit náš dokument, používáme funkci najít a nahradit. Je to jako pomocí mapy najít přesné místo pro náš nový přírůstek.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions
@@ -164,4 +164,4 @@ Ano, obslužnou rutinu zpětného volání můžete upravit tak, aby zvládla v�
 Podporu můžete získat návštěvou stránky[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Mohu zachovat formátování vloženého dokumentu?
- Ano,`NodeImporter`třída umožňuje určit, jak se bude pracovat s formátováním při importu uzlů z jednoho dokumentu do druhého.
+ Ano,`NodeImporter` třída umožňuje určit, jak se bude pracovat s formátováním při importu uzlů z jednoho dokumentu do druhého.

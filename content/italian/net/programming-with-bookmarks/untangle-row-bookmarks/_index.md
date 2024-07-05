@@ -132,4 +132,4 @@ R: La funzione Districa segnalibri di riga presentata in questo articolo è prog
 
 #### D: Quali altre manipolazioni posso eseguire sui segnalibri di riga una volta sbrogliati?
 
-R: Una volta sbrogliati i segnalibri di linea, puoi eseguire diverse manipolazioni secondo necessità. Ciò può includere la modifica, l'eliminazione o l'aggiunta di contenuto alle righe con segnalibri. Assicurati di maneggiare con cura i segnalibri di riga per evitare qualsiasi impatto indesiderato sul resto del documento.
+R: Una volta sbrogliati i segnalibri di linea, puoi eseguire diverse manipolazioni secondo necessità. Ciò può includere la modifica, l'eliminazione o l'aggiunta di contenuto alle righe con segnalibro. Assicurati di maneggiare con cura i segnalibri di riga per evitare qualsiasi impatto indesiderato sul resto del documento.

@@ -11,7 +11,7 @@ url: /nl/python-net/tables-and-formatting/
 
 ## Inleiding tot tabellen en opmaak in Aspose.Words-tutorials
 
-Welkom in de wereld van Aspose.Words-tutorials, waar we ons verdiepen in de kunst van tabellen en opmaak. Deze tutorialserie is op maat gemaakt voor ontwikkelaars die met Python en .NET werken, met als doel u de vaardigheden bij te brengen die nodig zijn om de kracht van tabellen in uw documenten te gebruiken. Of u nu rapporten ontwerpt, nieuwsbrieven maakt of academische artikelen schrijft, het beheersen van het maken van tabellen, het aanpassen en opmaken ervan is essentieel voor het produceren van documenten die zowel visueel aantrekkelijk als rijk aan inhoud zijn.
+Welkom in de wereld van Aspose.Words-tutorials, waar we ons verdiepen in de kunst van tabellen en opmaak. Deze tutorialserie is op maat gemaakt voor ontwikkelaars die met Python en .NET werken, met als doel u de vaardigheden bij te brengen die nodig zijn om de kracht van tabellen in uw documenten te gebruiken. Of u nu rapporten ontwerpt, nieuwsbrieven maakt of academische papers schrijft, het beheersen van het maken, aanpassen en opmaken van tabellen is essentieel voor het produceren van documenten die zowel visueel aantrekkelijk als rijk aan inhoud zijn.
 
 ## Het belang van tabellen en opmaak
 

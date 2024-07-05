@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Stap 5: Maak de klasse Waarschuwingshandler aan
 
-Om waarschuwingen effectief af te handelen, maakt u een aangepaste klasse die de`IWarningCallback` koppel. Deze klasse registreert en registreert waarschuwingen voor lettertypevervanging.
+ Om waarschuwingen effectief af te handelen, maakt u een aangepaste klasse die de`IWarningCallback` koppel. Deze klasse registreert en registreert waarschuwingen voor lettertypevervanging.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ U hebt nu het proces van het vervangen van lettertypen zonder achtervoegsels ond
 
 ### V1: Hoe kan ik lettertypen uit meerdere aangepaste mappen gebruiken?
 
- Je kunt er meerdere toevoegen`FolderFontSource` exemplaren naar de`fontSources` lijst en update de lettertypebronnen dienovereenkomstig.
+ Je kunt er meerdere toevoegen`FolderFontSource` exemplaren naar de`fontSources`lijst en update de lettertypebronnen dienovereenkomstig.
 
 ### V2: Waar kan ik een gratis proefversie van Aspose.Words voor .NET downloaden?
 

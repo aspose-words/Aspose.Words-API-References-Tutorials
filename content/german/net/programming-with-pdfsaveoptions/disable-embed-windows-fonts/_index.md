@@ -1,39 +1,39 @@
 ---
 title: Reduzieren Sie die PDF-Größe, indem Sie eingebettete Schriftarten deaktivieren
 linktitle: Reduzieren Sie die PDF-Größe, indem Sie eingebettete Schriftarten deaktivieren
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die PDF-Größe reduzieren, indem Sie die Einbettung von Windows-Schriftarten deaktivieren, wenn Sie Dokumente mit Aspose.Words für .NET in PDF konvertieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
 
-In diesem Tutorial führen wir Sie durch die Schritte zum Reduzieren der PDF-Größe und Deaktivieren der Einbettung von Windows-Schriftarten in ein PDF-Dokument mit Aspose.Words für .NET. Durch Deaktivieren der Schriftarteinbettung können Sie die Größe der generierten PDF-Datei reduzieren. Folgen Sie den unteren Schritten:
+In diesem Tutorial führen wir Sie durch die Schritte zum Reduzieren der PDF-Größe durch Deaktivieren der Windows-Schriftarteneinbettung in einem PDF-Dokument mit Aspose.Words für .NET. Durch Deaktivieren der Schriftarteneinbettung können Sie die Größe der generierten PDF-Datei reduzieren. Befolgen Sie die folgenden Schritte:
 
-## Schritt 1: Laden des Dokuments
+## Schritt 1: Dokument einlegen
 
-Laden Sie zunächst das Dokument hoch, das Sie in PDF konvertieren möchten:
+Beginnen Sie mit dem Hochladen des Dokuments, das Sie in PDF konvertieren möchten:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Stellen Sie sicher, dass Sie den korrekten Pfad zu Ihrem Dokument angeben.
+Achten Sie darauf, den richtigen Pfad zu Ihrem Dokument anzugeben.
 
 ## Schritt 2: PDF-Speicheroptionen festlegen
 
-Erstellen Sie eine Instanz der PdfSaveOptions-Klasse und geben Sie an, wie Schriftarten eingebettet werden sollen:
+Erstellen Sie eine Instanz der Klasse PdfSaveOptions und geben Sie an, wie Schriftarten eingebettet werden:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
 ```
 
-Mit dieser Option können Sie die Integration von Windows-Schriftarten in der generierten PDF-Datei deaktivieren.
+Mit dieser Option können Sie die Einbindung von Windows-Schriftarten in die erzeugte PDF-Datei deaktivieren.
 
 ## Schritt 3: Dokument in PDF konvertieren
 
- Benutzen Sie die`Save` Methode zum Konvertieren des Dokuments in PDF unter Angabe der Konvertierungsoptionen:
+ Verwenden Sie die`Save` Methode zum Konvertieren des Dokuments in PDF unter Angabe der Konvertierungsoptionen:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
@@ -41,13 +41,13 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 
 Stellen Sie sicher, dass Sie den richtigen Pfad zum Speichern der konvertierten PDF-Datei angeben.
 
-### Beispielquellcode für die Deaktivierung der Einbettung von Windows-Schriftarten mit Aspose.Words für .NET
+### Beispielquellcode zum Deaktivieren des Einbettens von Windows-Schriftarten mit Aspose.Words für .NET
 
 Hier ist der vollständige Quellcode zum Deaktivieren der Einbettung von Windows-Schriftarten in ein PDF-Dokument mit Aspose.Words für .NET:
 
 ```csharp
 
-	// Der Pfad zum Dokumentenverzeichnis.
+	// Der Pfad zum Dokumentverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -57,39 +57,39 @@ Hier ist der vollständige Quellcode zum Deaktivieren der Einbettung von Windows
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 
 ```
-Wenn Sie diese Schritte befolgen, können Sie die Einbettung von Windows-Schriftarten in ein PDF-Dokument mit Aspose.Words für .NET ganz einfach deaktivieren.
+Indem Sie diese Schritte befolgen, können Sie die Einbettung von Windows-Schriftarten in ein PDF-Dokument mit Aspose.Words für .NET ganz einfach deaktivieren.
 
 
 ## Abschluss
 
-In diesem Tutorial haben wir gelernt, wie man die Größe einer PDF-Datei reduziert, indem man die Einbettung von Windows-Schriftarten mit Aspose.Words für .NET deaktiviert. Durch Deaktivieren der Schriftarteinbettung können Sie die Größe der generierten PDF-Datei reduzieren und so das Speichern, Teilen und Übertragen von Dateien vereinfachen. Es ist jedoch wichtig zu beachten, dass die Deaktivierung der Windows-Schriftarteinbettung zu Änderungen im Aussehen und in der Formatierung des endgültigen PDF-Dokuments führen kann. Berücksichtigen Sie unbedingt diese Konsequenzen, wenn Sie diese Funktion verwenden. Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um die Generierung Ihrer PDF-Dateien zu optimieren.
+In diesem Tutorial haben wir gelernt, wie Sie die Größe einer PDF-Datei reduzieren können, indem Sie die Einbettung von Windows-Schriftarten mithilfe von Aspose.Words für .NET deaktivieren. Durch Deaktivieren der Schriftarteinbettung können Sie die Größe der generierten PDF-Datei reduzieren und so das Speichern, Teilen und Übertragen von Dateien erleichtern. Es ist jedoch wichtig zu beachten, dass das Deaktivieren der Windows-Schriftarteinbettung zu Änderungen des Erscheinungsbilds und der Formatierung im endgültigen PDF-Dokument führen kann. Berücksichtigen Sie diese Konsequenzen unbedingt, wenn Sie diese Funktion verwenden. Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um die Generierung Ihrer PDF-Dateien zu optimieren.
 
 ### Häufig gestellte Fragen
 
-#### F: Was bedeutet die Deaktivierung der Einbettung von Windows-Schriftarten in ein PDF-Dokument und warum ist das wichtig?
-A: Durch das Deaktivieren der Einbettung von Windows-Schriftarten in ein PDF-Dokument wird verhindert, dass Windows-Schriftarten in die generierte PDF-Datei einbezogen werden. Dadurch wird die Größe der PDF-Datei reduziert, indem eingebettete Windows-Schriftartdaten entfernt werden. Dies kann wichtig sein, um die Größe von PDF-Dateien zu reduzieren, wodurch sie einfacher gespeichert, geteilt und schneller übertragen werden können.
+#### F: Was bedeutet das Deaktivieren der Einbettung von Windows-Schriftarten in ein PDF-Dokument und warum ist das wichtig?
+A: Durch das Deaktivieren der Einbettung von Windows-Schriftarten in ein PDF-Dokument wird verhindert, dass Windows-Schriftarten in die generierte PDF-Datei aufgenommen werden. Dadurch wird die Größe der PDF-Datei reduziert, indem eingebettete Windows-Schriftartendaten entfernt werden. Dies kann wichtig sein, um die Größe von PDF-Dateien zu reduzieren, wodurch sie einfacher gespeichert, freigegeben und schneller übertragen werden können.
 
 #### F: Wie kann ich die Einbettung von Windows-Schriftarten in ein PDF-Dokument mit Aspose.Words für .NET deaktivieren?
 A: Um das Einbetten von Windows-Schriftarten in ein PDF-Dokument mit Aspose.Words für .NET zu deaktivieren, gehen Sie folgendermaßen vor:
 
- Laden Sie das Dokument, das Sie in PDF konvertieren möchten, mit`Document` Klasse und Dokumentpfad.
+ Laden Sie das Dokument, das Sie in PDF konvertieren möchten, mit dem`Document` Klasse und Dokumentpfad.
 
- Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`FontEmbeddingMode`Eigentum zu`PdfFontEmbeddingMode.EmbedNone`. Dadurch wird die Einbettung von Windows-Schriftarten in die generierte PDF-Datei deaktiviert.
+ Erstellen Sie eine Instanz des`PdfSaveOptions` Klasse und legen Sie die`FontEmbeddingMode`Eigentum an`PdfFontEmbeddingMode.EmbedNone`Dadurch wird die Einbettung von Windows-Schriftarten in die generierte PDF-Datei deaktiviert.
 
- Benutzen Sie die`Save` Methode der`Document` Objekt zum Konvertieren des Dokuments in PDF unter Angabe der zuvor konfigurierten Konvertierungsoptionen.
+ Verwenden Sie die`Save` Methode der`Document` Objekt zum Konvertieren des Dokuments in PDF unter Angabe der zuvor konfigurierten Konvertierungsoptionen.
 
-#### F: Welche Vorteile bietet es, die Einbettung von Windows-Schriftarten in einem PDF-Dokument zu deaktivieren?
-A: Die Deaktivierung der Einbettung von Windows-Schriftarten in ein PDF-Dokument bietet folgende Vorteile:
+#### F: Welche Vorteile bietet das Deaktivieren der Einbettung von Windows-Schriftarten in einem PDF-Dokument?
+A: Das Deaktivieren der Einbettung von Windows-Schriftarten in ein PDF-Dokument bietet folgende Vorteile:
 
-Reduzierte PDF-Dateigröße: Durch Deaktivieren der Windows-Schriftarteinbettung werden eingebettete Windows-Schriftartdaten entfernt, wodurch die Größe der generierten PDF-Datei verringert wird.
+Reduzierte PDF-Dateigröße: Durch Deaktivieren der Windows-Schriftarteneinbettung werden eingebettete Windows-Schriftartendaten entfernt, wodurch die Größe der generierten PDF-Datei reduziert wird.
 
-Einfachere Speicherung: Kleinere PDF-Dateien lassen sich einfacher speichern, speichern und übertragen.
+Einfachere Speicherung: Kleinere PDF-Dateien lassen sich einfacher speichern und übertragen.
 
 Schnelleres Teilen und Übertragen: Kleinere PDF-Dateien können schneller geteilt und übertragen werden, was Zeit und Ressourcen spart.
 
-#### F: Welche Konsequenzen hat es, wenn die Einbettung von Windows-Schriftarten in einem PDF-Dokument deaktiviert wird?
+#### F: Welche Konsequenzen hat es, wenn ich die Einbettung von Windows-Schriftarten in einem PDF-Dokument deaktiviere?
 A: Das Deaktivieren der Einbettung von Windows-Schriftarten in ein PDF-Dokument kann folgende Konsequenzen haben:
 
-Verlust von Darstellung und Formatierung: Wenn die im Dokument angegebenen Windows-Schriftarten auf dem System, auf dem die PDF-Datei geöffnet wird, nicht verfügbar sind, werden Ersatzschriftarten verwendet, was zu einer falschen Darstellung und Formatierung führen kann. in der Form anders als erwartet.
+Verlust von Erscheinungsbild und Formatierung: Wenn die im Dokument angegebenen Windows-Schriftarten auf dem System, auf dem die PDF-Datei geöffnet wird, nicht verfügbar sind, werden Ersatzschriftarten verwendet. Dies kann zu einem falschen Erscheinungsbild und einer falschen Formatierung führen, d. h. zu einer anderen Form als erwartet.
 
-Probleme mit der Lesbarkeit: Wenn die verwendeten Ersatzschriftarten nicht so gut lesbar sind wie die Originalschriftarten, kann dies die Lesbarkeit des Textes im PDF-Dokument beeinträchtigen.
+Lesbarkeitsprobleme: Wenn die verwendeten Ersatzschriften nicht so gut lesbar sind wie die Originalschriften, kann dies die Lesbarkeit des Textes im PDF-Dokument beeinträchtigen.

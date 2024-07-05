@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ขั้นตอนที่ 2: โหลดเอกสาร
 
- โหลดเอกสารของคุณลงใน Aspose.Words`Document` วัตถุ วัตถุ ซึ่งช่วยให้คุณสามารถจัดการเอกสารโดยทางโปรแกรมได้
+ โหลดเอกสารของคุณลงใน Aspose.Words`Document` วัตถุ. ซึ่งช่วยให้คุณสามารถจัดการเอกสารโดยทางโปรแกรมได้
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## ขั้นตอนที่ 3: กำหนดการตั้งค่าแบบอักษร
 
-ตอนนี้ กำหนดการตั้งค่าแบบอักษรเพื่อระบุแบบอักษรเริ่มต้นที่ Aspose ควรใช้หากไม่พบแบบอักษรที่ต้องการ
+ตอนนี้ กำหนดการตั้งค่าแบบอักษรเพื่อระบุแบบอักษรเริ่มต้นที่ Aspose.Words ควรใช้หากไม่พบแบบอักษรที่ต้องการ
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

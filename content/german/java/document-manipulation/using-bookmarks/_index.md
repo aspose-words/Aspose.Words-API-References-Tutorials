@@ -1,8 +1,8 @@
 ---
 title: Verwenden von Lesezeichen in Aspose.Words für Java
 linktitle: Lesezeichen verwenden
-second_title: Aspose.Words Java-Dokumentverarbeitungs-API
-description: Optimieren Sie Ihre Dokumentenverarbeitung mit Aspose.Words für Java. Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie Lesezeichen für eine effiziente Inhaltsnavigation und -bearbeitung verwenden.
+second_title: Aspose.Words Java-API zur Dokumentverarbeitung
+description: Optimieren Sie Ihre Dokumentverarbeitung mit Aspose.Words für Java. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie Lesezeichen für eine effiziente Inhaltsnavigation und -bearbeitung verwenden.
 type: docs
 weight: 17
 url: /de/java/document-manipulation/using-bookmarks/
@@ -10,9 +10,9 @@ url: /de/java/document-manipulation/using-bookmarks/
 
 ## Einführung in die Verwendung von Lesezeichen in Aspose.Words für Java
 
-Lesezeichen sind eine leistungsstarke Funktion in Aspose.Words für Java, mit der Sie bestimmte Teile eines Dokuments markieren und bearbeiten können. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie Lesezeichen in Aspose.Words für Java verwenden, um Ihre Dokumentverarbeitung zu verbessern. 
+Lesezeichen sind eine leistungsstarke Funktion in Aspose.Words für Java, mit der Sie bestimmte Teile eines Dokuments markieren und bearbeiten können. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie Lesezeichen in Aspose.Words für Java verwenden können, um Ihre Dokumentverarbeitung zu verbessern. 
 
-## Schritt 1: Erstellen eines Lesezeichens
+## Schritt 1: Lesezeichen erstellen
 
 Um ein Lesezeichen zu erstellen, gehen Sie folgendermaßen vor:
 
@@ -24,13 +24,13 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.startBookmark("My Bookmark");
 builder.writeln("Text inside a bookmark.");
 
-//Beenden Sie das Lesezeichen
+//Beenden des Lesezeichens
 builder.endBookmark("My Bookmark");
 ```
 
-## Schritt 2: Zugriff auf Lesezeichen
+## Schritt 2: Auf Lesezeichen zugreifen
 
-Sie können über deren Index oder Namen auf Lesezeichen in einem Dokument zugreifen. Hier ist wie:
+Sie können auf Lesezeichen in einem Dokument über ihren Index oder Namen zugreifen. So geht's:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -55,9 +55,9 @@ bookmark.setName("RenamedBookmark");
 bookmark.setText("This is new bookmarked text.");
 ```
 
-## Schritt 4: Arbeiten mit mit Lesezeichen versehenem Text
+## Schritt 4: Mit markiertem Text arbeiten
 
-Sie können mit Lesezeichen versehene Texte kopieren und zu einem anderen Dokument hinzufügen. Hier ist wie:
+Sie können mit Lesezeichen versehenen Text kopieren und in ein anderes Dokument einfügen. So geht's:
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -70,7 +70,7 @@ dstDoc.save("Your Directory Path" + "WorkingWithBookmarks.CopyBookmarkedText.doc
 
 ## Schritt 5: Lesezeichen ein- und ausblenden
 
-Sie können Lesezeichen in einem Dokument ein- oder ausblenden. Hier ist ein Beispiel:
+Sie können Lesezeichen in einem Dokument ein- oder ausblenden. Hier ein Beispiel:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -91,25 +91,25 @@ doc.save("Your Directory Path" + "WorkingWithBookmarks.UntangleRowBookmarks.docx
 
 ## Abschluss
 
-Die Verwendung von Lesezeichen in Aspose.Words für Java kann Dokumentverarbeitungsaufgaben erheblich vereinfachen. Unabhängig davon, ob Sie Inhalte navigieren, extrahieren oder bearbeiten müssen, stellen Lesezeichen einen leistungsstarken Mechanismus zur Verfügung, um dies effizient zu tun.
+Die Verwendung von Lesezeichen in Aspose.Words für Java kann die Dokumentverarbeitung erheblich vereinfachen. Egal, ob Sie Inhalte navigieren, extrahieren oder bearbeiten müssen, Lesezeichen bieten einen leistungsstarken Mechanismus, um dies effizient zu tun.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie erstelle ich ein Lesezeichen in einer Tabellenzelle?
 
- Um ein Lesezeichen in einer Tabellenzelle zu erstellen, verwenden Sie die`DocumentBuilder` Klasse und beginnen und beenden Sie das Lesezeichen innerhalb der Zelle.
+ Um ein Lesezeichen in einer Tabellenzelle zu erstellen, verwenden Sie das`DocumentBuilder` Klasse und starten und beenden Sie das Lesezeichen innerhalb der Zelle.
 
 ### Kann ich ein Lesezeichen in ein anderes Dokument kopieren?
 
- Ja, Sie können ein Lesezeichen mit in ein anderes Dokument kopieren`NodeImporter` Klasse, um sicherzustellen, dass die Formatierung erhalten bleibt.
+ Ja, Sie können ein Lesezeichen in ein anderes Dokument kopieren, indem Sie`NodeImporter` Klasse, um sicherzustellen, dass die Formatierung erhalten bleibt.
 
 ### Wie kann ich eine Zeile anhand ihres Lesezeichens löschen?
 
-Sie können eine Zeile anhand ihres Lesezeichens löschen, indem Sie zuerst die mit einem Lesezeichen versehene Zeile suchen und sie dann aus dem Dokument entfernen.
+Sie können eine Zeile anhand ihres Lesezeichens löschen, indem Sie zuerst die mit dem Lesezeichen versehene Zeile suchen und sie dann aus dem Dokument entfernen.
 
-### Was sind einige häufige Anwendungsfälle für Lesezeichen?
+### Was sind einige gängige Anwendungsfälle für Lesezeichen?
 
-Lesezeichen werden häufig zum Erstellen von Inhaltsverzeichnissen, zum Extrahieren spezifischer Inhalte und zum Automatisieren von Dokumentenerstellungsprozessen verwendet.
+Lesezeichen werden häufig zum Erstellen von Inhaltsverzeichnissen, zum Extrahieren bestimmter Inhalte und zum Automatisieren von Dokumenterstellungsprozessen verwendet.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für Java?
 

@@ -20,7 +20,7 @@ Bằng cách làm theo các hướng dẫn này, bạn sẽ có thể thao tác 
 | [Truy cập dấu trang trong tài liệu Word](./access-bookmarks/) | Tìm hiểu cách truy cập dấu trang trong tài liệu Word bằng Aspose.Words cho .NET. |
 | [Cập nhật dữ liệu Bookmark trong tài liệu Word](./update-bookmark-data/) | Hướng dẫn từng bước giải thích mã nguồn C# của tính năng cập nhật dữ liệu dấu trang Aspose.Words trong tài liệu word cho .NET. |
 | [Đánh dấu cột bảng trong tài liệu Word](./bookmark-table-columns/) | Tìm hiểu cách đánh dấu cột trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Sao chép văn bản được đánh dấu trong tài liệu Word](./copy-bookmarked-text/) | Tìm hiểu cách sao chép văn bản dấu trang trong tài liệu word sang tài liệu khác bằng Aspose.Words for .NET. |
+| [Sao chép văn bản được đánh dấu trong tài liệu Word](./copy-bookmarked-text/) | Tìm hiểu cách sao chép văn bản dấu trang trong tài liệu word sang tài liệu khác bằng Aspose.Words cho .NET. |
 | [Nối văn bản đã đánh dấu vào tài liệu Word](./append-bookmarked-text/) | Tìm hiểu cách thêm văn bản từ dấu trang trong tài liệu Word bằng Aspose.Words cho .NET. |
 | [Tạo Bookmark Trong Tài Liệu Word](./create-bookmark/) | Tìm hiểu cách tạo dấu trang trong tài liệu word và chỉ định mức xem trước dấu trang trong tệp PDF bằng Aspose.Words cho .NET. |
 | [Hiển thị Ẩn dấu trang trong tài liệu Word](./show-hide-bookmarks/) | Tìm hiểu cách hiển thị hoặc ẩn dấu trang cụ thể trong tài liệu word bằng Aspose.Words cho .NET. |

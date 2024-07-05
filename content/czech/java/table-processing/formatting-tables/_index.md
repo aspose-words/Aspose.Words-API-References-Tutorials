@@ -88,7 +88,7 @@ cell1.getCellFormat().setPreferredWidth(100.0);
 
 ### Použití hranic
 
-Přidání ohraničení do tabulky může zlepšit její čitelnost. Styly ohraničení můžete také přizpůsobit:
+Přidání ohraničení do tabulky může zlepšit její čitelnost. Styly ohraničení můžete také upravit:
 
 ```java
 // Použijte ohraničení na buňku

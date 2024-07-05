@@ -1,19 +1,19 @@
 ---
-title: パスワードを使用して Docx を暗号化する
-linktitle: パスワードを使用して Docx を暗号化する
+title: Docx をパスワードで暗号化する
+linktitle: Docx をパスワードで暗号化する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して DOCX ファイルをパスワードで暗号化する方法を学習します。ドキュメントセキュリティに関する完全なチュートリアル。
+description: Aspose.Words for .NET を使用して DOCX ファイルをパスワードで暗号化する方法を学びます。ドキュメント セキュリティに関する完全なチュートリアルです。
 type: docs
 weight: 10
 url: /ja/net/programming-with-ooxmlsaveoptions/encrypt-docx-with-password/
 ---
-このチュートリアルでは、提供されている C# ソース コードを調べて、Aspose.Words for .NET を使用してパスワードで DOCX ファイルを暗号化します。この機能を使用すると、指定したパスワードでのみアクセスできるようにしてドキュメントを保護できます。
+このチュートリアルでは、Aspose.Words for .NET を使用して DOCX ファイルをパスワードで暗号化するための C# ソース コードについて説明します。この機能を使用すると、指定したパスワードでのみアクセスできるようにすることで、ドキュメントを保護できます。
 
-## ステップ 1: 環境をセットアップする
+## ステップ1: 環境の設定
 
-始める前に、Aspose.Words for .NET を使用して開発環境がセットアップされていることを確認してください。必要な参照を追加し、適切な名前空間をインポートしたことを確認してください。
+始める前に、Aspose.Words for .NET を使用して開発環境をセットアップしていることを確認してください。必要な参照を追加し、適切な名前空間をインポートしたことを確認してください。
 
-## ステップ 2: ドキュメントをロードする
+## ステップ2: ドキュメントの読み込み
 
 ```csharp
 //ドキュメントディレクトリへのパス
@@ -22,27 +22,27 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-このステップでは、`Document`メソッドを実行し、ロードする DOCX ファイルへのパスを渡します。
+このステップでは、`Document`メソッドを呼び出して、読み込む DOCX ファイルへのパスを渡します。
 
-## ステップ 3: OOXML バックアップ オプションの構成
+## ステップ3: OOXMLバックアップオプションの設定
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-このステップでは、新しいファイルを作成して OOXML 保存オプションを構成します。`OoxmlSaveOptions`物体。を設定して、ドキュメントを暗号化するために必要なパスワードを指定します。`Password`プロパティをカスタムパスワードに追加します。
+このステップでは、新しいOOXMLファイルを作成して、OOXML保存オプションを設定します。`OoxmlSaveOptions`オブジェクト。文書を暗号化するためのパスワードを指定するには、`Password`プロパティをカスタム パスワードに追加します。
 
-## ステップ 4: パスワードを使用して文書を暗号化する
+## ステップ4: パスワードで文書を暗号化する
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-この最後のステップでは、`Save`メソッドを使用し、出力ファイルへのパスを渡します。`.docx`拡張子と、指定された保存オプションを追加します。
+この最後のステップでは、`Save`メソッドを使用し、出力ファイルへのパスを`.docx`拡張子と指定された保存オプションを指定します。
 
-これで、ソース コードを実行して、DOCX ドキュメントをパスワードで暗号化できるようになりました。結果のファイルは、指定されたディレクトリに「WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx」という名前で保存されます。パスワードは暗号化された文書を開くために必要となるため、必ず安全に保管してください。
+これで、ソース コードを実行して、DOCX ドキュメントをパスワードで暗号化できます。結果のファイルは、指定されたディレクトリに「WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx」という名前で保存されます。暗号化されたドキュメントを開くにはパスワードが必要になるため、パスワードは必ず安全に保管してください。
 
-### Aspose.Words for .NET を使用してパスワードで Docx を暗号化するためのサンプル ソース コード 
+### Aspose.Words for .NET を使用して Docx をパスワードで暗号化するためのサンプル ソース コード 
 
 ```csharp
 
@@ -60,10 +60,10 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", s
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して DOCX ファイルをパスワードで暗号化する機能を検討しました。私たちは、指定したパスワードでのみアクセスできるようにすることでドキュメントを保護する方法を学びました。
+このチュートリアルでは、Aspose.Words for .NET を使用して DOCX ファイルをパスワードで暗号化する機能について説明しました。指定したパスワードでのみアクセスできるようにすることでドキュメントを保護する方法を学習しました。
 
-ドキュメントの暗号化は、機密情報を保護するために不可欠なセキュリティ対策です。 Aspose.Words for .NET のおかげで、この機能をアプリケーションに簡単に追加できます。
+ドキュメントの暗号化は、機密情報を保護するための重要なセキュリティ対策です。Aspose.Words for .NET を使用すると、この機能をアプリケーションに簡単に追加できます。
 
-記載されている手順に従うことで、Aspose.Words for .NET プロジェクトにパスワード暗号化を統合し、ドキュメントの機密性を確保できます。
+提供されている手順に従うことで、Aspose.Words for .NET プロジェクトにパスワード暗号化を統合し、ドキュメントの機密性を確保できます。
 
-Aspose.Words for .NET が提供する他の機能を自由に試して、高度なドキュメント操作機能でアプリケーションを強化してください。
+Aspose.Words for .NET が提供する他の機能を自由に試して、高度なドキュメント操作機能でアプリケーションを充実させてください。

@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 Tebrikler! Aspose.Words for Java'da şekillerin nasıl oluşturulacağını başarıyla öğrendiniz. Bu yetenek, Word belgeleriyle programlı olarak çalışırken bir olasılıklar dünyasının kapılarını açar.
 
-## 9.SSS
+## 9. SSS
 
 ### S1: Tek bir belgede birden fazla şekil oluşturabilir miyim?
 

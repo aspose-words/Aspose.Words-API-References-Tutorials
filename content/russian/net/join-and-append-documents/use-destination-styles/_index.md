@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Шаг 2. Загрузите исходные и целевые документы
 
-Далее вам необходимо загрузить исходные и целевые документы с помощью Aspose.Words.`Document` класс. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
+Далее вам необходимо загрузить исходные и целевые документы с помощью Aspose.Words.`Document` сорт. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -42,9 +42,9 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## Шаг 4. Сохраните окончательный документ.
+## Шаг 4. Сохраните окончательный документ
 
- Наконец, сохраните объединенный документ с включенной функцией «Использовать целевые стили», используя`Save` метод`Document` класс.
+ Наконец, сохраните объединенный документ с включенной функцией «Использовать целевые стили», используя`Save` метод`Document` сорт.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");

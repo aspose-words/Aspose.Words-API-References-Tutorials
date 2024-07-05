@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-In deze stapsgewijze zelfstudie begeleiden we u bij het afbreken van woorden in verschillende talen in Word-documenten met behulp van Aspose.Words voor .NET. We leggen de meegeleverde C#-broncode uit en laten u zien hoe u deze in uw eigen projecten kunt implementeren.
+In deze stapsgewijze zelfstudie laten we u zien hoe u woorden in verschillende talen in Word-documenten kunt afbreken met behulp van Aspose.Words voor .NET. We leggen de meegeleverde C#-broncode uit en laten u zien hoe u deze in uw eigen projecten kunt implementeren.
 
 Zorg er om te beginnen voor dat Aspose.Words voor .NET is geïnstalleerd en geconfigureerd in uw ontwikkelomgeving. Download en installeer de bibliotheek vanaf de officiële site als u dat nog niet heeft gedaan.
 
@@ -51,7 +51,7 @@ Sla ten slotte het gewijzigde document op:
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Dus ! Je hebt woorden succesvol verwerkt door ze in verschillende talen af te breken in een Word-document met Aspose.Words voor .NET.
+Dus ! U hebt met succes woorden verwerkt door ze in verschillende talen in een Word-document af te breken met Aspose.Words voor .NET.
 
 ### Voorbeeldbroncode voor woordafbreking met Aspose.Words voor .NET
 
@@ -79,4 +79,4 @@ A: Om de syllabisatietaal in Aspose.Words te specificeren, moet u de juiste taal
 
 #### Vraag: Werkt syllabisatie voor alle talen in Aspose.Words?
 
-A: Syllabisatie in Aspose.Words is afhankelijk van taalspecifieke syllabisatieregels. Hoewel Aspose.Words een breed scala aan talen ondersteunt, worden sommige talen mogelijk niet ondersteund of is syllabisering mogelijk niet beschikbaar voor deze talen. Bekijk de documentatie van Aspose.Words om erachter te komen welke talen worden ondersteund voor syllabisering.
+A: Syllabisatie in Aspose.Words is afhankelijk van taalspecifieke syllabisatieregels. Hoewel Aspose.Words een breed scala aan talen ondersteunt, worden sommige talen mogelijk niet ondersteund of is syllabisering mogelijk niet beschikbaar voor deze talen. Bekijk de Aspose.Words-documentatie om erachter te komen welke talen worden ondersteund voor syllabisering.

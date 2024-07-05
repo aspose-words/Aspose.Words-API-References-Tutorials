@@ -79,7 +79,7 @@ Boom! U hebt zojuist een Word-document gemaakt met een TC-veld. Hoe geweldig is 
 
 ## Conclusie
 
- En daar heb je het! We hebben besproken hoe u een TC-veld in een Word-document kunt invoegen met Aspose.Words voor .NET. Het is vrij eenvoudig, toch? Met deze vaardigheden kunt u uw Word-documenten nu als een professional automatiseren en aanpassen. Als u vragen heeft of tegen problemen aanloopt, aarzel dan niet om de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of neem contact met hen op[Helpforum](https://forum.aspose.com/c/words/8). Veel codeerplezier!
+ En daar heb je het! We hebben besproken hoe u een TC-veld in een Word-document kunt invoegen met Aspose.Words voor .NET. Het is vrij eenvoudig, toch? Met deze vaardigheden kunt u uw Word-documenten nu als een professional automatiseren en aanpassen. Als u vragen heeft of tegen problemen aanloopt, aarzel dan niet om de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of neem contact op met hun[Helpforum](https://forum.aspose.com/c/words/8). Veel codeerplezier!
 
 ## Veelgestelde vragen
 

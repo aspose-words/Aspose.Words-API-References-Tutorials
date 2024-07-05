@@ -63,7 +63,7 @@ pip install aspose-words
 
 3. Kurulum tamamlandıktan sonra Aspose.Words'ü Python projelerinizde kullanmaya başlayabilirsiniz.
 
-## Belge Dönüşümlerini Gerçekleştirme
+## Belge Dönüştürme Gerçekleştirme
 
 ### Word'ü PDF'ye Dönüştürme
 
@@ -99,7 +99,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 Aspose.Words for Python, Word ve PDF'nin yanı sıra HTML, TXT, EPUB ve daha fazlasını içeren çeşitli belge formatlarını da destekler.
 
-## Belge Dönüşümlerini Özelleştirme
+## Belge Dönüştürmeyi Özelleştirme
 
 ### Biçimlendirme ve Şekillendirme Uygulama
 
@@ -173,7 +173,7 @@ doc.styles.default_font.size = 12
 doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ```
 
-## Belge Dönüşümlerini Otomatikleştirme
+## Belge Dönüştürmeyi Otomatikleştirme
 
 ### Otomasyon için Python Komut Dosyaları Yazma
 
@@ -207,7 +207,7 @@ for filename in input_files:
 
 İle
 
- Python ve Aspose.Words'ün gücünü birleştirerek, belgelerin toplu dönüştürülmesini otomatikleştirerek üretkenliği ve verimliliği artırabilirsiniz.
+ Python ve Aspose.Words'ün gücünü birleştirerek, belgelerin toplu dönüştürülmesini otomatikleştirerek verimliliği ve verimliliği artırabilirsiniz.
 
 #### Örnek:
 

@@ -131,4 +131,4 @@ Sí, puede copiar encabezados y pies de página entre cualquier sección de un d
 
 ### P5: ¿Hay una prueba gratuita disponible para Aspose.Words para .NET?
 
-Sí, puedes descargar una prueba gratuita desde[pagina de descarga](https://releases.aspose.com/).
+ Sí, puedes descargar una prueba gratuita desde[pagina de descarga](https://releases.aspose.com/).

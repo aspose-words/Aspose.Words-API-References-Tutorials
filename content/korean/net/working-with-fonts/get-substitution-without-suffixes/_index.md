@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## 5단계: 경고 처리기 클래스 만들기
 
-경고를 효과적으로 처리하려면`IWarningCallback` 상호 작용. 이 클래스는 모든 글꼴 대체 경고를 캡처하고 기록합니다.
+ 경고를 효과적으로 처리하려면`IWarningCallback` 상호 작용. 이 클래스는 모든 글꼴 대체 경고를 캡처하고 기록합니다.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 
 ### Q1: 여러 사용자 정의 디렉토리의 글꼴을 어떻게 사용할 수 있습니까?
 
- 여러 개를 추가할 수 있습니다.`FolderFontSource` 인스턴스에 대한`fontSources` 이에 따라 글꼴 소스를 나열하고 업데이트합니다.
+ 여러 개를 추가할 수 있습니다.`FolderFontSource` 인스턴스에 대한`fontSources`이에 따라 글꼴 소스를 나열하고 업데이트합니다.
 
 ### Q2: Aspose.Words for .NET 무료 평가판은 어디서 다운로드할 수 있나요?
 

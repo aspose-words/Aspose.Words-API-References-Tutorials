@@ -12,7 +12,7 @@ Ebből az átfogó oktatóanyagból megtudhatja, hogyan adhat hozzá és távol�
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Töltse be a dokumentumot
 Kezdésként töltse be a megjegyzéseket tartalmazó dokumentumot a Dokumentum osztály használatával:

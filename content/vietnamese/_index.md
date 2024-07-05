@@ -25,7 +25,7 @@ Các hướng dẫn này cung cấp hướng dẫn rõ ràng và chi tiết về
 - [Làm việc với Danh sách](./net/working-with-list/)   
 - [Làm việc với Markdown](./net/working-with-markdown/)   
 - [Làm việc với nút](./net/working-with-node/)   
-- [Làm việc với các bài đánh giá](./net/working-with-revisions/)   
+- [Làm việc với các bản sửa đổi](./net/working-with-revisions/)   
 - [Làm việc với hộp văn bản](./net/working-with-textboxes/)   
 - [Tách tài liệu](./net/split-document/)   
 - [Thêm nội dung bằng Documentbuilder](./net/add-content-using-documentbuilder/)

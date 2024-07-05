@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tạo một tài liệu mới và GroupShape
- Tạo một phiên bản mới của`Document` lớp học và`GroupShape` đối tượng làm việc với tài liệu.
+ Tạo một phiên bản mới của`Document` lớp học và`GroupShape`đối tượng làm việc với tài liệu.
 
 ```csharp
 Document doc = new Document();

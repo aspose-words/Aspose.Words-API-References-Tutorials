@@ -30,7 +30,7 @@ Antes de mergulharmos no código, certifique-se de ter os seguintes pré-requisi
 
 ## Etapa 1: carregue o documento
 
-Para começar, precisamos carregar o documento cujas páginas queremos separar. Veja como você pode fazer isso:
+Para começar, precisamos carregar o documento que queremos separar em páginas. Veja como você pode fazer isso:
 
 ```java
 // Carregue o documento
@@ -84,7 +84,7 @@ Sim, Aspose.Words oferece suporte a vários formatos de documento, incluindo DOC
 
 Aspose.Words for Java é uma biblioteca comercial, mas oferece uma versão de teste gratuita. Você pode verificar o site deles para obter detalhes de preços e informações de licenciamento.
 
-### Posso separar páginas mescladas em um único documento?
+### Posso mesclar páginas separadas em um único documento?
 
 Sim, você pode mesclar as páginas separadas em um único documento usando Aspose.Words for Java. Consulte a documentação para obter instruções de mesclagem.
 

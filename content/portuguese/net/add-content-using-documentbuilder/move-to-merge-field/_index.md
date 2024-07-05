@@ -9,7 +9,7 @@ url: /pt/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
 ## Introdução
 
-Ei! Você já se viu enterrado em um documento do Word, tentando descobrir como navegar para um campo de mesclagem específico? É como estar em um labirinto sem mapa, certo? Bem, não se preocupe mais! Com Aspose.Words for .NET, você pode mover-se perfeitamente para um campo de mesclagem em seu documento. Esteja você gerando relatórios, criando cartas personalizadas ou apenas automatizando seus documentos do Word, este guia irá guiá-lo por todo o processo, passo a passo. Vamos mergulhar!
+Ei! Você já se viu enterrado em um documento do Word, tentando descobrir como navegar para um campo de mesclagem específico? É como estar em um labirinto sem mapa, certo? Bem, não se preocupe mais! Com Aspose.Words for .NET, você pode mover-se perfeitamente para um campo de mesclagem em seu documento. Esteja você gerando relatórios, criando cartas personalizadas ou apenas automatizando seus documentos do Word, este guia o guiará por todo o processo, passo a passo. Vamos mergulhar!
 
 ## Pré-requisitos
 

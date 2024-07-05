@@ -1,20 +1,20 @@
 ---
-title: Schriftartnamen auflösen
-linktitle: Schriftartnamen auflösen
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Beheben fehlender Schriftartnamen bei der Konvertierung in HTML mit Aspose.Words für .NET.
+title: Schriftnamen auflösen
+linktitle: Schriftnamen auflösen
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Schritt-für-Schritt-Anleitung zum Beheben fehlender Schriftnamen bei der Konvertierung in HTML mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 
-In diesem Tutorial führen wir Sie durch den C#-Quellcode, um fehlende Schriftartnamen mit Aspose.Words für .NET aufzulösen. Mit dieser Funktion können Sie fehlende Schriftartnamen automatisch auflösen, wenn Sie ein Dokument in HTML konvertieren.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode, um fehlende Schriftnamen mit Aspose.Words für .NET aufzulösen. Mit dieser Funktion können Sie fehlende Schriftnamen automatisch auflösen, wenn Sie ein Dokument in HTML konvertieren.
 
-## Schritt 1: Projekteinrichtung
+## Schritt 1: Projekt-Setup
 
-Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Bibliothek Aspose.Words für .NET verwiesen wird.
 
-## Schritt 2: Laden des Dokuments
+## Schritt 2: Dokument einlegen
 
 In diesem Schritt laden wir das zu verarbeitende Dokument. Verwenden Sie den folgenden Code, um das Dokument aus einem angegebenen Verzeichnis zu laden:
 
@@ -25,9 +25,9 @@ Document doc = new Document(dataDir + "Missing font.docx");
 
  Dieser Code erstellt eine Instanz von`Document` durch Laden des Dokuments aus dem angegebenen Verzeichnis.
 
-## Schritt 3: Konfigurieren der HTML-Backup-Optionen
+## Schritt 3: Konfigurieren der HTML-Sicherungsoptionen
 
-Jetzt konfigurieren wir die HTML-Speicheroptionen, um fehlende Schriftartennamen während der Konvertierung aufzulösen. Verwenden Sie den folgenden Code:
+Nun konfigurieren wir die HTML-Speicheroptionen, um fehlende Schriftnamen während der Konvertierung aufzulösen. Verwenden Sie den folgenden Code:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
@@ -37,23 +37,23 @@ ResolveFontNames=true
 };
 ```
 
- Dieser Code erstellt eine Instanz von`HtmlSaveOptions`und legt die fest`ResolveFontNames` Option zu`true`um fehlende Schriftartnamen bei der Konvertierung in HTML aufzulösen. Auch der`PrettyFormat` Option ist auf eingestellt`true` um schön formatierten HTML-Code zu erhalten.
+ Dieser Code erstellt eine Instanz von`HtmlSaveOptions`und setzt den`ResolveFontNames` Möglichkeit,`true`um fehlende Schriftnamen bei der Konvertierung in HTML zu beheben. Außerdem`PrettyFormat` ist auf`true` um schön formatierten HTML-Code zu erhalten.
 
-## Schritt 4: Konvertieren und Speichern des Dokuments in HTML
+## Schritt 4: Konvertieren und Speichern des Dokuments im HTML-Format
 
-Abschließend konvertieren wir das Dokument mithilfe der zuvor konfigurierten HTML-Speicheroptionen in HTML. Verwenden Sie den folgenden Code:
+Zum Schluss konvertieren wir das Dokument in HTML, indem wir die zuvor konfigurierten HTML-Speicheroptionen verwenden. Verwenden Sie den folgenden Code:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 ```
 
-Dieser Code konvertiert das Dokument in HTML, indem er fehlende Schriftartnamen automatisch auflöst und die konvertierte HTML-Datei im angegebenen Verzeichnis speichert.
+Dieser Code konvertiert das Dokument in HTML, indem er fehlende Schriftnamen automatisch auflöst und die konvertierte HTML-Datei im angegebenen Verzeichnis speichert.
 
-### Beispielquellcode für das Auflösen von Schriftartnamen mit Aspose.Words für .NET
+### Beispielquellcode zum Auflösen von Schriftnamen mit Aspose.Words für .NET
 
 ```csharp
 
-	// Der Pfad zum Dokumentenverzeichnis.
+	// Der Pfad zum Dokumentverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Missing font.docx");
 
@@ -66,4 +66,4 @@ Dieser Code konvertiert das Dokument in HTML, indem er fehlende Schriftartnamen 
 
 ```
 
- Stellen Sie sicher, dass Sie den richtigen Pfad zum Dokumentenverzeichnis im angeben`dataDir` Variable.
+ Achten Sie darauf, den korrekten Pfad zum Dokumentenverzeichnis im`dataDir` Variable.

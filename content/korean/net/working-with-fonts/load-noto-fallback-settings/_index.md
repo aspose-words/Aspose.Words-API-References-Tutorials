@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2단계: 문서 로드 및 글꼴 대체 설정 구성
- 다음으로, 다음을 사용하여 문서를 로드하겠습니다.`Document` 클래스를 사용하여 글꼴 재정의 설정을 구성합니다.`FontSettings` 수업. 다음을 사용하여 Noto 글꼴 대체 설정을 로드하겠습니다.`LoadNotoFallbackSettings()` 방법.
+ 다음으로, 다음을 사용하여 문서를 로드하겠습니다.`Document` 클래스를 사용하여 글꼴 재정의 설정을 구성합니다.`FontSettings`수업. 다음을 사용하여 Noto 글꼴 대체 설정을 로드하겠습니다.`LoadNotoFallbackSettings()` 방법.
 
 ```csharp
 // 문서를 로드하고 글꼴 대체 설정을 구성합니다.

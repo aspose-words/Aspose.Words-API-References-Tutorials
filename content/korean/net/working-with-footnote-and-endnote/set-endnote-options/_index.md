@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## 4단계: 미주 옵션 설정하기
 
- 액세스`EndnoteOptions` 미주 옵션을 수정하려면 문서의 속성을 사용하세요. 이 예에서는 각 페이지에서 다시 시작하도록 다시 시작 규칙과 섹션 끝 위치를 설정했습니다.
+ 액세스`EndnoteOptions`미주 옵션을 수정하려면 문서의 속성을 사용하세요. 이 예에서는 각 페이지에서 다시 시작하도록 다시 시작 규칙과 섹션 끝 위치를 설정했습니다.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 #### Q: Aspose.Words에서 어떻게 미주의 스타일을 지정할 수 있나요?
 
-A: Aspose.Words에서 미주의 스타일을 지정하려면 다음을 사용할 수 있습니다.`EndnoteOptions` 수업과`SeparatorNoteTextStyle` 재산. 이 속성을 사용하여 미주의 글꼴 스타일, 크기, 색상 등을 지정할 수 있습니다.
+ A: Aspose.Words에서 미주의 스타일을 지정하려면 다음을 사용할 수 있습니다.`EndnoteOptions` 수업과`SeparatorNoteTextStyle` 재산. 이 속성을 사용하여 미주의 글꼴 스타일, 크기, 색상 등을 지정할 수 있습니다.
 
 #### Q: 문서의 미주 번호 매기기를 사용자 정의할 수 있습니까?
 
@@ -89,7 +89,7 @@ A: Aspose.Words에서 미주의 스타일을 지정하려면 다음을 사용할
 
 #### Q: 문서에서 미주를 배치하려면 어떻게 해야 합니까?
 
- A: 문서에서 미주 위치를 지정하려면`Position` 의 재산`EndnoteOptions` 수업. 미주를 각 페이지 하단, 각 섹션 끝, 문서 끝 중 어디에 배치할지 지정할 수 있습니다.
+A: 문서에서 미주 위치를 지정하려면`Position` 의 재산`EndnoteOptions` 수업. 미주를 각 페이지 하단, 각 섹션 끝, 문서 끝 중 어디에 배치할지 지정할 수 있습니다.
 
 #### Q: 미주 번호 매기기 형식을 사용자 정의할 수 있나요?
 
@@ -97,4 +97,4 @@ A: Aspose.Words에서 미주의 스타일을 지정하려면 다음을 사용할
 
 #### Q: 문서의 섹션 간에 미주 번호를 계속 매길 수 있나요?
 
-A: 예, 문서의 섹션 간에 미주 번호를 계속 매기는 것이 가능합니다. 사용`RestartRule` 의 재산`EndnoteOptions` 클래스로 설정하고`RestartContinuous` 섹션 간에 번호 매기기를 계속할 수 있습니다.
+ A: 예, 문서의 섹션 간에 미주 번호를 계속 매기는 것이 가능합니다. 사용`RestartRule` 의 재산`EndnoteOptions` 클래스로 설정하고`RestartContinuous` 섹션 간에 번호 매기기를 계속할 수 있습니다.

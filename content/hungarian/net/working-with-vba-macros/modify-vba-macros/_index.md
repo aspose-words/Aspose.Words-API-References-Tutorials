@@ -85,4 +85,4 @@ V: Mielőtt VBA-makrókat szerkeszthetne egy Word-dokumentumban, rendelkeznie ke
 
 #### K: Szerkeszthetek több VBA-makrót egy Word-dokumentumban egyszerre?
 
- V: Igen, módosíthat több VBA-makrót egy Word-dokumentumban hurok használatával vagy közvetlenül a megfelelő`VbaModule` tárgyak a`Modules` gyűjteménye a`VbaProject` tárgy. Ez lehetővé teszi több VBA makró egyidejű frissítését egyetlen műveletben.
+ V: Igen, módosíthat több VBA-makrót egy Word-dokumentumban hurok használatával vagy közvetlenül a megfelelő`VbaModule` objektumok a`Modules` gyűjteménye a`VbaProject` tárgy. Ez lehetővé teszi több VBA makró egyidejű frissítését egyetlen műveletben.

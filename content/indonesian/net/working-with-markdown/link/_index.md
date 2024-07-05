@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Langkah 2: Memasukkan tautan
 
- Kita dapat menyisipkan tautan menggunakan`InsertHyperlink` metode pembuat dokumen. Kita perlu menentukan teks tautan, di sini "Apose", serta URL tujuan.
+ Kita dapat menyisipkan tautan menggunakan`InsertHyperlink` metode pembuat dokumen. Kita perlu menentukan teks link, di sini "Aspose", serta URL tujuan.
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", salah);

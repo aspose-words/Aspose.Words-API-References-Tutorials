@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## Etapa 3: adicione uma nova seção
- Para adicionar uma nova seção ao documento, criaremos uma instância do`Section` classe e adicione-a à`Sections` coleta dos documentos.
+ Para adicionar uma nova seção ao documento, criaremos uma instância do`Section` classe e adicione-a à`Sections` coleta do documento.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
@@ -82,7 +82,7 @@ builder. Writen("Hello2");
 
 #### P: Como adicionar uma nova seção ao documento no Aspose.Words for .NET?
 
- R: Para adicionar uma nova seção ao documento no Aspose.Words for .NET, você pode criar uma instância do`Section` classe e adicione-a à`Sections` coleta dos documentos:
+ R: Para adicionar uma nova seção ao documento no Aspose.Words for .NET, você pode criar uma instância do`Section` classe e adicione-a à`Sections` coleta do documento:
 
 ```csharp
 Section sectionToAdd = new Section(doc);

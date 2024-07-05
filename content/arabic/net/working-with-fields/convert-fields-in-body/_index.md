@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 نعم، يمكن لـ Aspose.Words for .NET تحويل الحقول ومعالجتها عبر تنسيقات مثل DOCX وDOC وRTF والمزيد بسلاسة أكبر.
 
 ### أين يمكنني العثور على وثائق شاملة لـ Aspose.Words لـ .NET؟
- تتوفر الوثائق التفصيلية ومراجع API.[هنا](https://reference.aspose.com/words/net/).
+ تتوفر الوثائق التفصيلية ومراجع API[هنا](https://reference.aspose.com/words/net/).
 
 ### هل هناك إصدار تجريبي متاح لـ Aspose.Words لـ .NET؟
  نعم، يمكنك تنزيل نسخة تجريبية مجانية من[هنا](https://releases.aspose.com/).

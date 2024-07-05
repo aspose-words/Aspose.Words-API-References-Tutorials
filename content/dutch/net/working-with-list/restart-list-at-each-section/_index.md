@@ -91,7 +91,7 @@ U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw spec
 
 #### Vraag: Hoe kan ik een lijst in elke sectie in Aspose.Words opnieuw starten?
 
- A: Om een lijst bij elke sectie in Aspose.Words opnieuw te starten, moet u een exemplaar van de`List`klasse en wijs er een genummerde lijst aan toe. Dan kun je gebruik maken van de`List.IsRestartAtEachSection` eigenschap om aan te geven dat de nummering bij elke sectie opnieuw moet worden gestart. U kunt deze lijst koppelen aan één of meerdere secties van uw document, zodat de nummering bij elke sectie correct opnieuw wordt gestart.
+ A: Om een lijst bij elke sectie in Aspose.Words opnieuw te starten, moet u een exemplaar van de`List`klasse en wijs er een genummerde lijst aan toe. Dan kunt u gebruik maken van de`List.IsRestartAtEachSection` eigenschap om aan te geven dat de nummering bij elke sectie opnieuw moet worden gestart. U kunt deze lijst koppelen aan één of meerdere secties van uw document, zodat de nummering bij elke sectie correct opnieuw wordt gestart.
 
 #### Vraag: Kan ik het nummeringsformaat van lijsten in Aspose.Words aanpassen?
 

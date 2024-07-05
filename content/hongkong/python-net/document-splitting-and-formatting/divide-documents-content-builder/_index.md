@@ -18,7 +18,7 @@ Aspose.Words for Python 提供了強大的 API 用於處理 Word 文檔，使您
 
 在我們深入實施之前，讓我們為 Python 設定 Aspose.Words。
 
-1. 安裝：使用以下指令安裝 Aspose.Words 函式庫`pip`:
+1. 安裝：使用以下指令安裝 Aspose.Words 函式庫`pip`：
    
    ```python
    pip install aspose-words

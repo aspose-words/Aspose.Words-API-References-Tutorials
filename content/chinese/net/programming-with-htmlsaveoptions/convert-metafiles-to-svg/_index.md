@@ -2,21 +2,21 @@
 title: 将图元文件转换为 Svg
 linktitle: 将图元文件转换为 Svg
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 将文档转换为 HTML 时将图元文件转换为 SVG 格式的分步指南。
+description: 使用 Aspose.Words for .NET 将文档转换为 HTML 时，将元文件转换为 SVG 格式的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
 
-在本教程中，我们将引导您完成 C# 源代码，以使用 Aspose.Words for .NET 将图元文件转换为 SVG 格式。此功能允许您在将文档转换为 HTML 时将图元文件转换为 SVG 格式。
+在本教程中，我们将引导您使用 Aspose.Words for .NET 将元文件转换为 SVG 格式的 C# 源代码。此功能允许您在将文档转换为 HTML 时将元文件转换为 SVG 格式。
 
-## 第 1 步：项目设置
+## 步骤 1：项目设置
 
 首先，在您最喜欢的 IDE 中创建一个新的 C# 项目。确保您的项目中引用了 Aspose.Words for .NET 库。
 
-## 步骤 2：将 SVG 图像插入文档中
+## 步骤 2：将 SVG 图像插入文档
 
-在此步骤中，我们将在要转换的文档中插入 SVG 图像。使用以下代码通过 HTML 标签插入 SVG 图像：
+在此步骤中，我们将在要转换的文档中插入 SVG 图像。使用以下代码使用 HTML 标记插入 SVG 图像：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -31,17 +31,17 @@ builder.InsertHtml(
 </svg> ");
 ```
 
-这段代码创建了一个实例`Document`和`DocumentBuilder`构建文档。它插入一个`<svg>`标签包含一个`<polygon>`具有定义 SVG 图像的形状和样式的属性的元素。
+此代码创建`Document`和`DocumentBuilder`构建文档。它插入一个`<svg>`标签包含`<polygon>`具有属性的元素来定义 SVG 图像的形状和样式。
 
-## 第 3 步：设置 HTML 保存选项
+## 步骤 3：设置 HTML 保存选项
 
-现在我们将设置 HTML 保存选项，指定图元文件应转换为 SVG 格式。使用以下代码：
+现在我们将设置 HTML 保存选项，指定应将元文件转换为 SVG 格式。使用以下代码：
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Svg };
 ```
 
-这段代码创建了一个实例`HtmlSaveOptions`和集`MetafileFormat`到`HtmlMetafileFormat.Svg`指定图元文件在转换为 HTML 时应转换为 SVG 格式。
+此代码创建`HtmlSaveOptions`并设置`MetafileFormat`到`HtmlMetafileFormat.Svg`指定在转换为 HTML 时应将元文件转换为 SVG 格式。
 
 ## 步骤 4：将文档转换并保存为 HTML
 
@@ -51,7 +51,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafil
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 ```
 
-此代码将文档转换为 HTML，并将其保存到一个文件中，其中图元文件已转换为 SVG。
+此代码将文档转换为 HTML，并将其保存为将元文件转换为 SVG 的文件。
 
 ### 使用 Aspose.Words for .NET 将图元文件转换为 Svg 的示例源代码
 

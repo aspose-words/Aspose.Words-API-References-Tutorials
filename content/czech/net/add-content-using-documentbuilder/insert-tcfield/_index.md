@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-To nastaví náš dokument a připraví nás na jeho tvorbu.
+To nastaví náš dokument a připraví nás na jeho vytváření.
 
 ## Krok 3: Vložte pole TC
 
@@ -79,7 +79,7 @@ Výložník! Právě jste vytvořili dokument aplikace Word s polem TC. Jak úž
 
 ## Závěr
 
- A tady to máte! Prošli jsme tím, jak vložit pole TC do dokumentu aplikace Word pomocí Aspose.Words for .NET. Je to docela jednoduché, že? S těmito dovednostmi nyní můžete automatizovat a přizpůsobovat své dokumenty Word jako profesionál. Pokud máte nějaké dotazy nebo narazíte na nějaké problémy, neváhejte se podívat na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo se na ně obrátit[Fórum podpory](https://forum.aspose.com/c/words/8). Šťastné kódování!
+ A tady to máte! Prošli jsme tím, jak vložit pole TC do dokumentu aplikace Word pomocí Aspose.Words for .NET. Je to docela jednoduché, že? S těmito dovednostmi nyní můžete automatizovat a přizpůsobovat své dokumenty Word jako profesionál. Pokud máte nějaké dotazy nebo narazíte na nějaké problémy, neváhejte se podívat na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo se obrátit na jejich[Fórum podpory](https://forum.aspose.com/c/words/8). Šťastné kódování!
 
 ## FAQ
 
@@ -93,7 +93,7 @@ Pole TC (Table of Contents) ve Wordu se používá k označení konkrétních po
 
 ### 3. Mohu používat Aspose.Words s jinými programovacími jazyky?
 
-Aspose.Words primárně podporuje jazyky .NET, jako je C#, ale jsou k dispozici verze pro Javu a další platformy.
+Aspose.Words primárně podporuje jazyky .NET jako C#, ale jsou k dispozici verze pro Javu a další platformy.
 
 ### 4. Kde najdu další příklady použití Aspose.Words pro .NET?
 

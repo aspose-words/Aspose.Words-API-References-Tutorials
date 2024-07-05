@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Various fields.docx");
 ```
 
-## ขั้นตอนที่ 3: ลบฟิลด์
+## ขั้นตอนที่ 3: การลบฟิลด์
 
  เราเลือกฟิลด์แรกในช่วงเอกสารและใช้`Remove()` วิธีการลบมัน
 
@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 
 #### ถาม: ฉันจะตรวจสอบได้อย่างไรว่าฟิลด์ถูกลบในเอกสาร Word ด้วย Aspose.Words for .NET สำเร็จหรือไม่
 
- ตอบ: หากต้องการตรวจสอบว่าฟิลด์ถูกลบออกสำเร็จในเอกสาร Word ด้วย Aspose.Words for .NET หรือไม่ คุณสามารถใช้`Document.Range.Fields.Contains` วิธีการตรวจสอบว่าฟิลด์นั้นยังคงอยู่ในเอกสารหรือไม่หลังจากลบไปแล้ว
+ ตอบ: หากต้องการตรวจสอบว่าฟิลด์ถูกลบออกในเอกสาร Word ด้วย Aspose.Words for .NET เรียบร้อยแล้วหรือไม่ คุณสามารถใช้`Document.Range.Fields.Contains` วิธีการตรวจสอบว่าฟิลด์ยังคงอยู่ในเอกสารหลังจากลบไปแล้วหรือไม่
 
 #### ถาม: อะไรคือผลที่ตามมาของการลบฟิลด์ในเอกสาร Word ด้วย Aspose.Words for .NET
 

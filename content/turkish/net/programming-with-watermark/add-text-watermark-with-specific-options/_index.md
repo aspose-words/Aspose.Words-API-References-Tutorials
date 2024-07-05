@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## 3. Adım: Belirli seçeneklerle metin filigranı ekleyin
 
- Bunun bir örneğini oluşturacağız`TextWatermarkOptions` sınıfını seçin ve metin filigranı için istediğiniz seçenekleri ayarlayın.
+ Bunun bir örneğini oluşturacağız`TextWatermarkOptions`sınıfını seçin ve metin filigranı için istediğiniz seçenekleri ayarlayın.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

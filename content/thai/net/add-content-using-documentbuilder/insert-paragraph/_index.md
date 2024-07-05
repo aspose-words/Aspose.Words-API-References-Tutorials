@@ -29,7 +29,7 @@ using System.Drawing;
 
 ## ขั้นตอนที่ 1: เริ่มต้นเอกสารและ DocumentBuilder
 
- เริ่มต้นด้วยการตั้งค่าเอกสารของคุณและเริ่มต้น`DocumentBuilder` วัตถุ วัตถุ
+ เริ่มต้นด้วยการตั้งค่าเอกสารของคุณและเริ่มต้น`DocumentBuilder` วัตถุ.
 ```csharp
 // เส้นทางไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";

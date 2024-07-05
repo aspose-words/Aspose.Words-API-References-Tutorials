@@ -85,7 +85,7 @@ Teraz masz dostosowany spis treści w swoim dokumencie z dostosowanymi tabulator
 
 ## Wniosek
 
-W tym samouczku omówiliśmy, jak wygenerować spis treści (TOC) przy użyciu Aspose.Words dla języka Java, potężnej biblioteki do pracy z dokumentami programu Word. Dobrze zorganizowany spis treści jest niezbędny do organizowania długich dokumentów i nawigacji, a Aspose.Words zapewnia narzędzia do łatwego tworzenia i dostosowywania spisów treści.
+W tym samouczku omówiliśmy, jak wygenerować spis treści (TOC) przy użyciu Aspose.Words dla języka Java, potężnej biblioteki do pracy z dokumentami programu Word. Dobrze zorganizowany spis treści jest niezbędny do organizowania długich dokumentów i poruszania się po nich, a Aspose.Words zapewnia narzędzia do łatwego tworzenia i dostosowywania spisów treści.
 
 ## Często zadawane pytania
 

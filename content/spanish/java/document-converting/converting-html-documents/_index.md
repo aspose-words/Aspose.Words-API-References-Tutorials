@@ -42,7 +42,7 @@ public class HTMLToWordConversion {
 
 ## Paso 3: cargar contenido HTML
 
- A continuación, cargue el contenido HTML que desea convertir al formato`Document` objeto. Puedes usar el`DocumentBuilder` clase para este propósito.
+ A continuación, cargue el contenido HTML que desea convertir en el`Document` objeto. Puedes usar el`DocumentBuilder` clase para este propósito.
 
 ```java
 DocumentBuilder builder = new DocumentBuilder(doc);

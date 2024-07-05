@@ -118,7 +118,7 @@ Questa guida ha trattato le nozioni di base per lavorare con stili e temi in Asp
 
 ### Come posso recuperare le proprietà del tema in Aspose.Words per Java?
 
-Puoi recuperare le proprietà del tema accedendo all'oggetto del tema e alle sue proprietà.
+È possibile recuperare le proprietà del tema accedendo all'oggetto del tema e alle relative proprietà.
 
 ### Come posso impostare le proprietà del tema, come caratteri e colori?
 

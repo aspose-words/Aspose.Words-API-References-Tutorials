@@ -18,7 +18,7 @@ Dalam kode yang disediakan, kita mulai dengan membuat pembuat dokumen.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Langkah 2: Masukkan bidang IF.
+## Langkah 2: Masukkan bidang IF
 
  Kami menggunakan`InsertField()` metode untuk memasukkan bidang IF ke dalam dokumen yang menentukan kondisi yang akan dievaluasi.
 
@@ -36,18 +36,18 @@ Di sini kami menggunakan kondisi "1=1" sebagai contoh, namun Anda dapat menyesua
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- Itu`actualResult` Variabel berisi hasil evaluasi kondisi.
+ Itu`actualResult` variabel berisi hasil evaluasi kondisi.
 
 ### Contoh Kode Sumber untuk Evaluasi Kondisi IF dengan Aspose.Words untuk .NET
 
 ```csharp
-//Pembuatan pembuat dokumen.
+// Pembuatan pembuat dokumen.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Masukkan bidang IF ke dalam dokumen.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// Evaluasi kondisi IF.
+//Evaluasi kondisi IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Menampilkan hasil evaluasi.

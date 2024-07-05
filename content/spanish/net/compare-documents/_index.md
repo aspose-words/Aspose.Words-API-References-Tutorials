@@ -13,7 +13,7 @@ Comparar documentos es un tutorial completo sobre cómo comparar documentos usan
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Comparar por igual en un documento de Word](./compare-for-equal/) | Guía paso a paso para explicar el código fuente de C# de la función Comparar para iguales en documentos de Word con Aspose.Words para .NET. |
-| [Comparar opciones en un documento de Word](./compare-options/) | Guía paso a paso para explicar el código fuente de C# de la función Comparar opciones en documentos de Word con Aspose.Words para .NET. |
-| [Objetivo de comparación en documento de Word](./comparison-target/) | Aprenda a comparar objetivos en la función de documentos de Word de Aspose.Words para .NET que le permite comparar documentos y generar un nuevo documento que contenga los cambios realizados. |
+| [Comparar por igual en un documento de Word](./compare-for-equal/) | Aprenda a comparar la igualdad de dos documentos de Word utilizando Aspose.Words para .NET. Siga esta guía paso a paso para asegurarse de que sus documentos sean idénticos. |
+| [Comparar opciones en un documento de Word](./compare-options/) | Aprenda a comparar documentos de Word usando Aspose.Words para .NET con nuestra guía paso a paso. Garantice la coherencia de los documentos sin esfuerzo. |
+| [Objetivo de comparación en documento de Word](./comparison-target/) | Compare fácilmente documentos de Word utilizando Aspose.Words para .NET con esta guía detallada paso a paso. Ahorre tiempo y mejore la precisión en la comparación de documentos. |
 | [Granularidad de comparación en documento de Word](./comparison-granularity/) | Aprenda a comparar la granularidad en la función de documentos de Word de Aspose.Words para .NET que permite comparar documentos carácter por carácter e informar los cambios realizados. |

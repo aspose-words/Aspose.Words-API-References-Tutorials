@@ -101,7 +101,7 @@ Document doc = new Document(dataDir + "Table of contents.docx");
 
 Ez a kódrészlet betölti a megadott könyvtárban található "Table of Contents.docx" dokumentumot.
 
-#### K: Hogyan módosíthatom a tartalomjegyzékben használt füleket az Aspose.Words for .NET segítségével?
+#### K: Hogyan módosíthatom a tartalomjegyzékben használt füleket az Aspose.Words for .NET használatával?
 
  V: A dokumentum betöltése után ismételheti a dokumentum egyes bekezdéseit, és ellenőrizheti, hogy a tartalomjegyzék (TOC) eredménystílusai alapján formázták-e. Ha egy bekezdés TOC stílusban van formázva, módosíthatja az oldalszámok igazításához használt tabulátorokat. Az Aspose.Words for .NET alkalmazásban elérheti a`ParagraphFormat` minden bekezdés tulajdonsága a tabulátorok lekéréséhez és módosításához. Íme egy példa:
 

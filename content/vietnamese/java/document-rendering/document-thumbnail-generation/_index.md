@@ -66,7 +66,7 @@ Tạo hình thu nhỏ tài liệu bằng Aspose.Words cho Java cung cấp một 
 
 ### Làm cách nào để cài đặt Aspose.Words cho Java?
 
- Để cài đặt Aspose.Words cho Java, hãy truy cập trang tải xuống.[đây](https://releases.aspose.com/words/java/) và làm theo hướng dẫn cài đặt được cung cấp.
+ Để cài đặt Aspose.Words cho Java, hãy truy cập trang tải xuống[đây](https://releases.aspose.com/words/java/) và làm theo hướng dẫn cài đặt được cung cấp.
 
 ### Tôi có thể tùy chỉnh kích thước của hình thu nhỏ được tạo không?
 

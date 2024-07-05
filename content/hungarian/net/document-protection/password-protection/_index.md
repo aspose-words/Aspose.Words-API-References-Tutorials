@@ -40,7 +40,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### Példa forráskód jelszavas védelemhez az Aspose.Words for .NET használatával
 
-Íme a teljes forráskód az Aspose.Words for .NET jelszavas védelméhez:
+Íme az Aspose.Words for .NET jelszavas védelem teljes forráskódja:
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
@@ -75,7 +75,7 @@ V: Ha az Aspose.Words for .NET használatával jelszóvédelmet szeretne alkalma
 
 #### K: Mi a célja a ProtectionType paraméternek a Protect metódusban?
 
- V: A`ProtectionType` paramétereket a`Protect` Az Aspose.Words for .NET metódusa lehetővé teszi a dokumentumra alkalmazandó védelem típusának megadását. Jelszavas védelem esetén beállítaná a`ProtectionType` nak nek`NoProtection` jelzi, hogy a dokumentum jelszóval védett.
+ V: A`ProtectionType` paraméter a`Protect` Az Aspose.Words for .NET metódusa lehetővé teszi a dokumentumra alkalmazandó védelem típusának megadását. Jelszavas védelem esetén beállítaná a`ProtectionType` nak nek`NoProtection` jelzi, hogy a dokumentum jelszóval védett.
 
 #### K: Eltávolíthatom a jelszavas védelmet egy Word-dokumentumból az Aspose.Words for .NET használatával?
 

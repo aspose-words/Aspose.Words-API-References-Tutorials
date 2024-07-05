@@ -1,6 +1,6 @@
 ---
-title: 添加具有特定选项的文本水印
-linktitle: 添加具有特定选项的文本水印
+title: 使用特定选项添加文本水印
+linktitle: 使用特定选项添加文本水印
 second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 添加具有特定选项的文本水印。分步指南。
 type: docs
@@ -8,17 +8,17 @@ weight: 10
 url: /zh/net/programming-with-watermark/add-text-watermark-with-specific-options/
 ---
 
-在本教程中，我们将引导您了解如何使用 Aspose.Words for .NET 添加具有特定选项的文本水印。文本水印是叠加在文档上的文本，用于表明该文档是草稿、机密等。
+在本教程中，我们将引导您了解如何使用 Aspose.Words for .NET 添加具有特定选项的文本水印。文本水印是叠加在文档上的文本，用于指示它是草稿、机密等。
 
-## 第 1 步：使用文档生成器
+## 步骤 1：使用文档生成器
 
-首先，我们将使用文档生成器将内容添加到文档中。
+首先，我们将使用文档生成器向文档添加内容。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 第 2 步：加载文档
+## 步骤 2：加载文档
 
 我们将使用文档路径加载现有文档。
 
@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## 步骤 3：添加具有特定选项的文本水印
+## 步骤 3：使用特定选项添加文本水印
 
 我们将创建一个实例`TextWatermarkOptions`类并设置文本水印所需的选项。
 
@@ -45,7 +45,7 @@ doc.Watermark.SetText("Test", options);
 
 ## 步骤 4：保存文档
 
-最后，我们可以保存添加了文本水印的文档。
+最后，我们就可以保存添加了文字水印的文档了。
 
 ```csharp
 	doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");

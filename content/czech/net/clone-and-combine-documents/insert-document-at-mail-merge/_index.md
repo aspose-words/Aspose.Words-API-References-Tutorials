@@ -134,15 +134,15 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Závěr
 
-tady to máte! Úspěšně jste vložili dokumenty do určitých polí během operace hromadné korespondence pomocí Aspose.Words for .NET. Tato výkonná funkce vám může ušetřit spoustu času a úsilí, zejména při práci s velkými objemy dokumentů. Berte to tak, že máte osobního asistenta, který se za vás postará o veškeré těžké zvedání. Takže jděte do toho a vyzkoušejte to. Šťastné kódování!
+A tady to máte! Úspěšně jste vložili dokumenty do určitých polí během operace hromadné korespondence pomocí Aspose.Words for .NET. Tato výkonná funkce vám může ušetřit spoustu času a úsilí, zejména při práci s velkými objemy dokumentů. Berte to tak, že máte osobního asistenta, který se za vás postará o veškeré těžké zvedání. Takže do toho a vyzkoušejte to. Šťastné kódování!
 
 ## FAQ
 
 ### Mohu vložit více dokumentů do různých slučovacích polí?
- Ano můžeš. Jednoduše zadejte příslušná slučovací pole a odpovídající cesty dokumentu v`MailMerge.Execute` metoda.
+Ano můžeš. Jednoduše zadejte příslušná slučovací pole a odpovídající cesty dokumentu v`MailMerge.Execute` metoda.
 
 ### Je možné formátovat vložený dokument jinak než hlavní dokument?
- Absolutně! Můžete použít`ImportFormatMode` parametry v`NodeImporter` k ovládání formátování.
+ Absolutně! Můžete použít`ImportFormatMode` parametr v`NodeImporter` k ovládání formátování.
 
 ### Co když je název slučovacího pole dynamický?
 Názvy polí dynamického sloučení můžete zpracovat tak, že je předáte jako parametry obsluze zpětného volání.

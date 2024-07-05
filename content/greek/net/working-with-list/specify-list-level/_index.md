@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Δημιουργήστε μια αριθμημένη λίστα με βάση ένα από τα πρότυπα λίστας του Microsoft Word.
+// Δημιουργήστε μια αριθμημένη λίστα με βάση ένα από τα πρότυπα λίστας του Microsoft Word
 //και εφαρμόστε το στην τρέχουσα παράγραφο του εργαλείου δημιουργίας εγγράφων.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Δημιουργήστε μια λίστα με κουκκίδες με βάση ένα από τα πρότυπα λίστας του Microsoft Word.
+// Δημιουργήστε μια λίστα με κουκκίδες με βάση ένα από τα πρότυπα λίστας του Microsoft Word
 //και εφαρμόστε το στην τρέχουσα παράγραφο του εργαλείου δημιουργίας εγγράφων.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 

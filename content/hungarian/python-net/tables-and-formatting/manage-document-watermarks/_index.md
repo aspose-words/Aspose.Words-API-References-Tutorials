@@ -143,6 +143,6 @@ Bár a vízjeleket nem lehet teljesen védeni, átlátszóságuk és elhelyezés
 
 ### Az Aspose.Words for Python alkalmas Windowsra és Linuxra is?
 
-Igen, az Aspose.Words for Python Windows és Linux környezetekkel egyaránt kompatibilis.
+Igen, az Aspose.Words for Python Windows és Linux környezetekkel is kompatibilis.
 
  További részletekért és átfogó API-referenciákért keresse fel az Aspose.Words dokumentációját:[Aspose.Words for Python API References](https://reference.aspose.com/words/python-net/)

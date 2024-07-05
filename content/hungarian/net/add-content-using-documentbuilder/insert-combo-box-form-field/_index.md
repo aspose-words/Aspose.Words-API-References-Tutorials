@@ -118,4 +118,4 @@ Nem, de az ideiglenes licenc lehetővé teszi az Aspose.Words teljes szolgáltat
 Igen, az Aspose.Words különféle űrlapmezőket támogat, például szövegdobozokat, jelölőnégyzeteket stb.
 
 ### Hol találok további dokumentációt?  
- A részletes dokumentációt megtalálja a[Aspose.Words dokumentációs oldal](https://reference.aspose.com/words/net/).
+ Részletes dokumentációt találhat a[Aspose.Words dokumentációs oldal](https://reference.aspose.com/words/net/).

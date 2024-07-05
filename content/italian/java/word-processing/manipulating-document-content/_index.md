@@ -98,7 +98,7 @@ I campi aggiungono funzionalità dinamiche ai tuoi documenti, migliorandone l'ut
 
 ---
 
-## Incorporazione di dati XML
+## Incorporamento di dati XML
 
 L'integrazione dei dati XML nei tuoi documenti può essere potente, soprattutto per la generazione di contenuti dinamici. Aspose.Words per Java semplifica questo processo.
 

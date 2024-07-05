@@ -18,7 +18,7 @@ In de meegeleverde code beginnen we met het maken van een documentgenerator.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Stap 2: Voeg het IF-veld in.
+## Stap 2: Voeg het IF-veld in
 
  Wij gebruiken de`InsertField()` methode om het IF-veld in te voegen in het document waarin de te evalueren voorwaarde wordt gespecificeerd.
 
@@ -36,18 +36,18 @@ Hier hebben we de voorwaarde '1=1' als voorbeeld gebruikt, maar u kunt de voorwa
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- De`actualResult` De variabele bevat het resultaat van de conditie-evaluatie.
+ De`actualResult` variabele bevat het resultaat van de conditie-evaluatie.
 
 ### Voorbeeldbroncode voor het evalueren van de IF-voorwaarde met Aspose.Words voor .NET
 
 ```csharp
-//Oprichting van de documentgenerator.
+// Oprichting van de documentgenerator.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Voeg het IF-veld in het document in.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// Evalueer de ALS-voorwaarde.
+//Evalueer de ALS-voorwaarde.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Geef het resultaat van de evaluatie weer.

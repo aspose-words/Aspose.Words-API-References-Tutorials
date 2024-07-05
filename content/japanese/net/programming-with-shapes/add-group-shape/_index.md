@@ -1,30 +1,30 @@
 ---
-title: グループ形状の追加
-linktitle: グループ形状の追加
+title: グループシェイプを追加
+linktitle: グループシェイプを追加
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、複数の図形を含むグループ図形を Word 文書に追加する方法を学習します。
+description: Aspose.Words for .NET を使用して、複数の図形を含むグループ図形を Word 文書に追加する方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/programming-with-shapes/add-group-shape/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、複数の図形を含むグループ図形を Word 文書に追加する方法について説明します。グループ シェイプを使用すると、複数のシェイプを 1 つのエンティティとして組み合わせて操作できます。
+このチュートリアルでは、Aspose.Words for .NET を使用して、複数の図形を含むグループ図形を Word 文書に追加する方法について説明します。グループ図形を使用すると、複数の図形を 1 つのエンティティとして結合して操作できます。
 
 ## 前提条件
-このチュートリアルに従うには、以下が必要です。
+このチュートリアルを実行するには、次のものが必要です。
 
 - Aspose.Words for .NET ライブラリがインストールされています。
-- C# と Word ドキュメントを使用したワード処理の基本的な知識。
+- C# と Word 文書を使用した Words Processing に関する基本的な知識。
 
-## ステップ 1: ドキュメント ディレクトリを設定する
-まず、ドキュメント ディレクトリへのパスを設定します。交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントを保存するディレクトリへの実際のパスを指定します。
+## ステップ1: ドキュメントディレクトリを設定する
+まず、ドキュメントディレクトリへのパスを設定します。`"YOUR DOCUMENT DIRECTORY"`ドキュメントを保存するディレクトリへの実際のパスを入力します。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ 2: 新しいドキュメントと GroupShape を作成する
-の新しいインスタンスを作成します。`Document`クラスと`GroupShape`ドキュメントを操作するオブジェクト。
+## ステップ2: 新しいドキュメントとGroupShapeを作成する
+新しいインスタンスを作成する`Document`クラスと`GroupShape`ドキュメントを操作するオブジェクト。
 
 ```csharp
 Document doc = new Document();
@@ -32,8 +32,8 @@ doc.EnsureMinimum();
 GroupShape groupShape = new GroupShape(doc);
 ```
 
-## ステップ 3: シェイプを作成して GroupShape に追加する
-などの個別の形状を作成します。`accentBorderShape`そして`actionButtonShape`を使用して`Shape`クラス。必要に応じてプロパティをカスタマイズします。これらの形状を`groupShape`物体。
+## ステップ 3: GroupShape に図形を作成して追加する
+次のような個別の図形を作成します。`accentBorderShape`そして`actionButtonShape`使用して`Shape`クラス。必要に応じてプロパティをカスタマイズします。これらの図形を`groupShape`物体。
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -48,7 +48,7 @@ Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
 groupShape.AppendChild(actionButtonShape);
 ```
 
-## ステップ 4: GroupShape の寸法を設定する
+## ステップ4: GroupShapeの寸法を設定する
 幅、高さ、座標サイズを設定します。`groupShape`.
 
 ```csharp
@@ -57,22 +57,22 @@ groupShape.Height = 200;
 groupShape.CoordSize = new Size(200, 200);
 ```
 
-## ステップ 5: GroupShape をドキュメントに挿入する
-を作成します`DocumentBuilder`オブジェクトを挿入して、`groupShape`を使用して文書に取り込みます`InsertNode`方法。
+## ステップ5: GroupShapeをドキュメントに挿入する
+作成する`DocumentBuilder`オブジェクトを挿入し、`groupShape`文書に`InsertNode`方法。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertNode(groupShape);
 ```
 
-## ステップ 6: ドキュメントを保存する
-を使用してドキュメントを指定されたディレクトリに保存します。`Save`方法。適切なファイル拡張子を付けて、目的のファイル名を指定します。この例では、ドキュメントを「WorkingWithShapes.AddGroupShape.docx」として保存します。
+## ステップ6: ドキュメントを保存する
+指定されたディレクトリにドキュメントを保存するには、`Save`メソッド。適切なファイル拡張子を持つファイル名を指定します。この例では、ドキュメントを「WorkingWithShapes.AddGroupShape.docx」として保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-### Aspose.Words for .NET を使用したグループ図形の追加のソース コード例 
+### Aspose.Words for .NET を使用してグループ図形を追加するためのサンプル ソース コード 
 
 ```csharp
 	//ドキュメントディレクトリへのパス
@@ -96,4 +96,4 @@ doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 	doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-それでおしまい！ Aspose.W を使用して、複数の図形を含むグループ図形を Word 文書に追加できました。
+これで完了です。Aspose.W を使用して、複数の図形を含むグループ図形を Word 文書に追加できました。

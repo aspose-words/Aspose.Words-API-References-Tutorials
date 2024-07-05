@@ -74,4 +74,4 @@ R: Sim, você pode definir um valor padrão para um campo de formulário no Aspo
 
 #### P: Como posso recuperar os dados inseridos nos campos do formulário no Aspose.Words?
 
- R: Para recuperar dados inseridos em campos de formulário no Aspose.Words, você pode usar o`FormField.Result` propriedade que contém o valor inserido pelo usuário. Você pode acessar essa propriedade para cada campo de formulário do seu documento.
+ R: Para recuperar dados inseridos em campos de formulário no Aspose.Words, você pode usar o`FormField.Result` propriedade que contém o valor inserido pelo usuário. Você pode acessar essa propriedade para cada campo do formulário no seu documento.

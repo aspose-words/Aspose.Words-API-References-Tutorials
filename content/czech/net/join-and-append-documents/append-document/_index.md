@@ -77,7 +77,7 @@ Zde uložíme připojený dokument s popisným názvem souboru, který označuje
 
 ## Závěr
 
- A tady to máte! Úspěšně jste se naučili, jak připojit jeden dokument Wordu k druhému pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením vašeho prostředí, načítáním dokumentů, připojením jednoho dokumentu k druhému při zachování zdrojového formátování a uložením kombinovaného dokumentu. Aspose.Words nabízí širokou škálu funkcí, takže nezapomeňte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) odemknout jeho plný potenciál.
+ A tady to máte! Úspěšně jste se naučili, jak připojit jeden dokument Wordu k druhému pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením vašeho prostředí, načítáním dokumentů, připojením jednoho dokumentu k druhému při zachování zdrojového formátování a uložením kombinovaného dokumentu. Aspose.Words nabízí širokou škálu funkcí, takže nezapomeňte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) odemknout svůj plný potenciál.
 
 ## Nejčastější dotazy
 
@@ -91,7 +91,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### 3. Jak zajistím zachování formátování při připojování dokumentů?
 
- Použijte`ImportFormatMode.KeepSourceFormatting` parametry v`AppendDocument` způsob, jak zachovat formátování zdrojového dokumentu.
+ Použijte`ImportFormatMode.KeepSourceFormatting` parametr v`AppendDocument` způsob, jak zachovat formátování zdrojového dokumentu.
 
 ### 4. Jak získám podporu pro Aspose.Words for .NET?
 

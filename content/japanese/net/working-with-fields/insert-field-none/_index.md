@@ -1,18 +1,18 @@
 ---
-title: 挿入フィールドなし
-linktitle: 挿入フィールドなし
+title: フィールドを挿入なし
+linktitle: フィールドを挿入なし
 second_title: Aspose.Words ドキュメント処理 API
-description: Word avec Aspose.Words pour .NET で AUCUN を使用してドキュメントを作成する方法を学びます。
+description: Aspose.Words for .NET を使用して Word ドキュメントにテキストを挿入する方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/insert-field-none/
 ---
 
-ここでは、Aspose.Words for .NET の "Insert NONE Field" 機能を使用する、以下の C# ソース コードを説明するステップバイステップ ガイドを示します。望ましい結果を得るために、各ステップを慎重に実行してください。
+ここでは、Aspose.Words for .NET の「NONE フィールドを挿入」機能を使用する以下の C# ソース コードを説明するステップ バイ ステップ ガイドを示します。目的の結果を得るには、各手順を慎重に実行してください。
 
-## ステップ 1: ドキュメント ディレクトリのセットアップ
+## ステップ1: ドキュメントディレクトリの設定
 
-提供されたコードでは、ドキュメントのディレクトリを指定する必要があります。 「YOUR DOCUMENT DIRECTORY」という値を、ドキュメント ディレクトリへの適切なパスに置き換えます。
+提供されたコードでは、ドキュメントのディレクトリを指定する必要があります。値「YOUR DOCUMENT DIRECTORY」をドキュメント ディレクトリへの適切なパスに置き換えます。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -27,9 +27,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ 3: NONE フィールドの挿入
+## ステップ3: NONEフィールドを挿入する
 
-私たちが使用するのは、`InsertField()`DocumentBuilder のメソッドを使用して、ドキュメントに NONE フィールドを挿入します。
+私たちは`InsertField()`DocumentBuilder のメソッドを使用して、ドキュメントに NONE フィールドを挿入します。
 
 ```csharp
 FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, false);
@@ -38,10 +38,10 @@ FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, fals
 ### Aspose.Words for .NET で NONE フィールドを挿入するソース コードの例
 
 ```csharp
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントとDocumentBuilderを作成します。
+//ドキュメントと DocumentBuilder を作成します。
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
@@ -51,20 +51,20 @@ FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, fals
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-この例では、新しいドキュメントを作成し、DocumentBuilder を初期化し、NONE フィールドを挿入しました。ドキュメントは指定したファイル名で保存されます。
+この例では、新しいドキュメントを作成し、DocumentBuilder を初期化して、NONE フィールドを挿入しました。その後、ドキュメントは指定されたファイル名で保存されます。
 
-これで、Aspose.Words for .NET での「NONE フィールドの挿入」機能の使用に関するガイドは終わりです。
+これで、Aspose.Words for .NET で「NONE フィールドを挿入」機能を使用するガイドは終了です。
 
 ### よくある質問
 
-#### Q: 「フィールドを使用したワープロ処理: フィールドなしの挿入」チュートリアルではどのような内容が説明されていますか?
+#### Q: 「フィールドを使用した単語処理: フィールドの挿入なし」チュートリアルでは何が説明されていますか?
 
-A: このチュートリアルでは、Aspose Words for .NET でのフィールド操作について説明し、特に「なし」フィールドの挿入に焦点を当てます。フィールドは、データの表示または計算に使用できる Word 文書内の動的要素です。このチュートリアルでは、「なし」フィールドを挿入し、それを適切に使用する方法を説明します。
+A: このチュートリアルでは、Aspose Words for .NET でのフィールド操作について説明し、特に「なし」フィールドの挿入に重点を置いています。フィールドは、データの表示や計算に使用できる Word 文書内の動的な要素です。このチュートリアルでは、「なし」フィールドを挿入して適切に使用する方法について説明します。
 
 #### Q: Aspose Words で「なし」フィールドを使用するのはなぜですか?
 
-A: Aspose Words の「なし」フィールドは、文書にプレースホルダーまたはマーカーを挿入したいが、特定の効果や計算を必要としない場合に便利です。これは、後でデータを挿入する文書内の場所にマークを付けたり、コンテンツの残りの部分を邪魔することなく特別なメモを追加したりするために使用できます。
+A: Aspose Words の「なし」フィールドは、ドキュメントにプレースホルダーまたはマーカーを挿入したいが、特定の効果や計算は行わない場合に便利です。ドキュメント内で後でデータを挿入する場所をマークしたり、残りのコンテンツを妨げずに特別なメモを追加したりするために使用できます。
 
-#### Q: 追加パラメータを使用して「なし」フィールドをカスタマイズできますか?
+#### Q: 追加のパラメータを使用して「なし」フィールドをカスタマイズできますか?
 
-A: いいえ、「なし」フィールドでは追加のパラメータを受け入れません。これは主にマーカーまたはプレースホルダーとして使用され、特定の機能はありません。ただし、Aspose Words の他のフィールド タイプを使用して、より高度な操作を実行できます。
+A: いいえ、「なし」フィールドは追加のパラメータを受け入れません。主にマーカーまたはプレースホルダーとして使用され、特別な機能はありません。ただし、Aspose Words の他のフィールド タイプを使用して、より高度な操作を実行できます。

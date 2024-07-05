@@ -75,7 +75,7 @@ Bij het verwerken van Word-documenten in een C#-toepassing met behulp van Aspose
 
 #### Vraag: Waarom moet ik een waarschuwingscallback gebruiken bij het laden van Word-documenten?
 
-A: Door een waarschuwingscallback te gebruiken, bent u op de hoogte van eventuele waarschuwingen die worden gegeven tijdens het laden van documenten. Waarschuwingen kunnen potentiële problemen met het document aangeven en u helpen de juiste maatregelen te nemen om deze te behandelen of op te lossen.
+A: Door een waarschuwingscallback te gebruiken, bent u op de hoogte van eventuele waarschuwingen die worden gegeven tijdens het laden van documenten. Waarschuwingen kunnen potentiële problemen met het document aangeven en u helpen de juiste actie te ondernemen om deze te behandelen of op te lossen.
 
 #### Vraag: Hoe configureer ik laadopties om een waarschuwingscallback te gebruiken?
 

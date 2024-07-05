@@ -1,6 +1,6 @@
 ---
-title: Установить папки со шрифтами в несколько папок
-linktitle: Установить папки со шрифтами в несколько папок
+title: Установить папки шрифтов в несколько папок
+linktitle: Установить папки шрифтов в несколько папок
 second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по установке нескольких папок шрифтов при рендеринге документа с помощью Aspose.Words для .NET.
 type: docs
@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 2. Загрузите документ для рендеринга
- Затем вы можете загрузить документ для рендеринга, используя`Document` класс. Обязательно укажите правильный путь к документу.
+ Затем вы можете загрузить документ для рендеринга, используя`Document` сорт. Обязательно укажите правильный путь к документу.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -33,14 +33,14 @@ fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
 ## Шаг 4. Примените настройки шрифта
- Далее вам необходимо применить настройки шрифта к вашему документу, используя`FontSettings` собственность`Document` класс.
+ Далее вам необходимо применить настройки шрифта к вашему документу, используя`FontSettings` собственность`Document` сорт.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
 ## Шаг 5. Сохраните визуализированный документ.
- Наконец, вы можете сохранить визуализированный документ в файл, используя команду`Save()` метод`Document` класс. Обязательно укажите правильный путь и имя файла.
+ Наконец, вы можете сохранить визуализированный документ в файл, используя команду`Save()` метод`Document` сорт. Обязательно укажите правильный путь и имя файла.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
@@ -56,7 +56,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 // Обратите внимание, что этот параметр переопределяет любые источники шрифтов по умолчанию, поиск по которым осуществляется по умолчанию. Теперь будут искаться только эти папки
 // шрифты при рендеринге или внедрении шрифтов. Чтобы добавить дополнительный источник шрифтов, сохраняя при этом системные источники шрифтов, используйте FontSettings.GetFontSources и
-// Вместо этого установите FontSettings.
+// Вместо этого FontSettings.SetFontSources.
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");

@@ -71,7 +71,7 @@ markdown_table = "| Header 1 | Header 2 |\n|----------|----------|\n| Cell 1   |
 builder.insert_html(markdown_table)
 ```
 
-## 페이지 레이아웃 및 서식
+## 페이지 레이아웃 및 형식
 
 Aspose.Words는 페이지 레이아웃과 서식에 대한 광범위한 제어 기능을 제공합니다. 여백 조정, 페이지 크기 설정 등을 수행할 수 있습니다.
 

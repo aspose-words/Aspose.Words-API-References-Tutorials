@@ -88,7 +88,7 @@ Aspose.Words for .NET'i kullanarak belgenizdeki birleştirme alanlarını yenide
 
 #### S: Aspose.Words for .NET'i kullanarak bir Word belgesindeki birleştirilmiş alanları nasıl yeniden adlandırabilirim?
 
- C: Aspose.Words for .NET'i kullanarak bir Word belgesindeki birleştirilmiş alanları yeniden adlandırmak için, belgedeki alanlar arasında geçiş yapabilirsiniz.`FieldMergingArgs` sınıf ve kullanın`FieldMergingArgs.FieldName` alanları yeniden adlandırma yöntemi.
+ C: Aspose.Words for .NET'i kullanarak bir Word belgesindeki birleştirilmiş alanları yeniden adlandırmak için, belgedeki alanlar arasında geçiş yapabilirsiniz.`FieldMergingArgs` sınıf ve kullanın`FieldMergingArgs.FieldName` Alanı yeniden adlandırma yöntemi.
 
 #### S: Aspose.Words for .NET ile bir Word belgesinde yalnızca belirli birleştirilmiş alanları yeniden adlandırmak mümkün mü?
 

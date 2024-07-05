@@ -81,7 +81,7 @@ S: Innan du kan klona en VBA-modul från ett Word-dokument måste du ha praktisk
 
 #### F: Hur ställer jag in dokumentkatalogen i koden?
 
- S: I den medföljande koden måste du byta ut.`"YOUR DOCUMENTS DIRECTORY"` med lämplig sökväg till katalogen där ditt Word-dokument som innehåller VBA-projektet finns.
+ S: I den medföljande koden måste du byta ut`"YOUR DOCUMENTS DIRECTORY"` med lämplig sökväg till katalogen där ditt Word-dokument som innehåller VBA-projektet finns.
 
 #### F: Hur sparar man måldokument med klonad VBA-modul?
 

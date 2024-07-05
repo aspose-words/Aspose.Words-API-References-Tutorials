@@ -1,25 +1,25 @@
 ---
-title: テキストボックスを無視する
-linktitle: テキストボックスを無視する
+title: テキストボックスを無視
+linktitle: テキストボックスを無視
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、テキスト ボックスの書式設定を無視してドキュメントを追加する方法を学びます。
+description: Aspose.Words for .NET を使用して、テキスト ボックスの書式を無視しながらドキュメントを追加する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/ignore-text-boxes/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、テキスト ボックスの書式を維持しながらドキュメントを追加する方法について説明します。提供されたソース コードは、追加プロセス中にテキスト ボックスを含めるようにインポート形式オプションを設定する方法を示しています。
+このチュートリアルでは、Aspose.Words for .NET を使用して、テキスト ボックスの書式設定を保持しながらドキュメントを追加する方法について説明します。提供されているソース コードは、追加プロセス中にテキスト ボックスを含めるようにインポート形式オプションを設定する方法を示しています。
 
-## ステップ 1: プロジェクトをセットアップする
+## ステップ1: プロジェクトを設定する
 
 次の前提条件を満たしていることを確認してください。
 
--  Aspose.Words for .NET ライブラリがインストールされています。からダウンロードできます[Aspose.Releases]https://releases.aspose.com/words/net/ または NuGet パッケージ マネージャーを使用してインストールします。
-- ソースおよび宛先ドキュメントが配置されるドキュメント ディレクトリ パス。
+-  Aspose.Words for .NETライブラリがインストールされています。ダウンロードはこちらから[Aspose.Releases]https://releases.aspose.com/words/net/ にアクセスするか、NuGet パッケージ マネージャーを使用してインストールします。
+- ソース ドキュメントと宛先ドキュメントが配置されているドキュメント ディレクトリ パス。
 
-## ステップ 2: ソース文書と宛先文書を開く
+## ステップ2: ソースドキュメントと宛先ドキュメントを開く
 
-を使用して、ソースドキュメントと宛先ドキュメントを開きます。`Document`クラスコンストラクター。交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントディレクトリへの実際のパスを置き換えます。
+ソース文書と宛先文書を`Document`クラスコンストラクタ。置換`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
@@ -29,17 +29,17 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## ステップ 3: インポート形式オプションを設定する
+## ステップ3: インポート形式オプションを設定する
 
-のインスタンスを作成します。`ImportFormatOptions`クラスを設定して、`IgnoreTextBoxes`財産を`false`。これにより、書式設定を維持しながら、追加プロセス中にテキスト ボックスが確実に組み込まれます。
+インスタンスを作成する`ImportFormatOptions`クラスを設定し、`IgnoreTextBoxes`財産に`false`これにより、追加プロセス中にテキスト ボックスが書式設定を保持したまま含められるようになります。
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## ステップ 4: テキスト ボックスの内容を追加する
+## ステップ4: テキストボックスの内容を追加する
 
-を作成します`NodeImporter`オブジェクトを作成し、それを使用して、ソース ドキュメントから宛先ドキュメントにテキスト ボックス ノードをインポートします。ソース文書の各段落を繰り返し処理し、それを宛先文書にインポートします。
+作成する`NodeImporter`オブジェクトを作成し、それを使用してテキスト ボックス ノードをソース ドキュメントから宛先ドキュメントにインポートします。ソース ドキュメントの各段落を反復処理し、宛先ドキュメントにインポートします。
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -51,17 +51,17 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## ステップ 5: 宛先ドキュメントを保存する
+## ステップ5: 宛先ドキュメントを保存する
 
-最後に、変更した宛先ドキュメントを次のコマンドを使用して保存します。`Save`の方法`Document`物体。
+最後に、変更した宛先ドキュメントを`Save`方法の`Document`物体。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ```
 
-これで、Aspose.Words for .NET を使用してテキスト ボックスの書式を維持しながらドキュメントを追加する実装が完了しました。
+これで、Aspose.Words for .NET を使用してテキスト ボックスの書式設定を保持しながらドキュメントを追加する実装が完了します。
 
-### Aspose.Words for .NET を使用したテキスト ボックスを無視するソース コードの例 
+### Aspose.Words for .NET を使用してテキスト ボックスを無視するサンプル ソース コード 
 
 ```csharp
 	//ドキュメントディレクトリへのパス
@@ -69,7 +69,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//インポート時にソース テキスト ボックスの書式設定を維持します。
+	//インポート時にソース テキスト ボックスの書式を維持します。
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

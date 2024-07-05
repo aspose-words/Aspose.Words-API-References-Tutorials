@@ -26,7 +26,7 @@ url: /zh-hant/java/document-security/
 ### [使用密碼保護文檔](./securing-documents-passwords/)
 了解如何使用 Aspose.Words for Java 使用密碼保護文件。本逐步指南包括原始程式碼和專家提示。保護您的資料。
 ### [管理文件權限](./managing-document-permissions/)
-了解如何使用 Aspose.Words for Java 有效管理文件權限。本綜合指南提供了逐步說明和原始程式碼範例。
+了解如何使用 Aspose.Words for Java 有效管理文件權限。這個綜合指南提供了逐步說明和原始程式碼範例。
 ### [文件加密和解密](./document-encryption-decryption/)
 了解如何使用 Aspose.Words for Java 加密和解密文件。透過逐步指導和原始程式碼範例有效保護您的資料。
 ### [文件中的數位簽名](./digital-signatures-in-documents/)

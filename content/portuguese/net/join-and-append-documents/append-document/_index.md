@@ -91,7 +91,7 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores
 
 ### 3. Como posso garantir que a formatação seja preservada ao anexar documentos?
 
- Use o`ImportFormatMode.KeepSourceFormatting` parâmetros no`AppendDocument` método para preservar a formatação do documento de origem.
+ Use o`ImportFormatMode.KeepSourceFormatting` parâmetro no`AppendDocument` método para preservar a formatação do documento de origem.
 
 ### 4. Como obtenho suporte para Aspose.Words for .NET?
 

@@ -79,7 +79,7 @@ A: Digitale handtekeningen in een Word-document zijn elektronische handtekeninge
 
 A: Om toegang te krijgen tot digitale handtekeningen in een Word-document met Aspose.Words voor .NET, kunt u deze stappen volgen:
 1.  Laad het document met behulp van de`Document` class en geef het pad naar het documentbestand op.
-2.  Gebruik een lus om door de`DigitalSignatures` verzameling van de documenten. Elke iteratie vertegenwoordigt een digitale handtekening.
+2.  Gebruik een lus om door de`DigitalSignatures` verzameling van het document. Elke iteratie vertegenwoordigt een digitale handtekening.
 
 #### Vraag: Tot welke informatie kan ik toegang krijgen via een digitale handtekening in een Word-document?
 
@@ -97,13 +97,13 @@ A: Vanuit een digitale handtekening in een Word-document heeft u toegang tot ver
 #### Vraag: Hoe kan ik de geldigheid van digitale handtekeningen in een Word-document verifiëren met Aspose.Words voor .NET?
 
 A: Om de geldigheid van digitale handtekeningen in een Word-document te verifiëren met Aspose.Words voor .NET, kunt u deze stappen volgen:
-1.  Toegang krijgen tot`DigitalSignatures` verzameling van de documenten.
+1.  Toegang krijgen tot`DigitalSignatures` verzameling van het document.
 2.  Herhaal ze allemaal`DigitalSignature` voorwerp in de collectie.
 3.  Gebruik de`IsValid` eigendom van de`DigitalSignature` object om te controleren of de handtekening geldig is.
 
 #### Vraag: Kan ik de opmerkingen van de ondertekenaar of de reden voor ondertekening ophalen uit een digitale handtekening in een Word-document?
 
-A: Ja, u kunt de opmerkingen van de ondertekenaar of de reden voor ondertekening ophalen uit een digitale handtekening in een Word-document. De`Comments` eigendom van de`DigitalSignature` Het object biedt toegang tot de opmerkingen die de ondertekenaar tijdens het ondertekenproces heeft opgegeven.
+A: Ja, u kunt de opmerkingen van de ondertekenaar of de reden voor ondertekening ophalen uit een digitale handtekening in een Word-document. De`Comments` eigendom van de`DigitalSignature` object biedt toegang tot de opmerkingen die de ondertekenaar tijdens het ondertekeningsproces heeft opgegeven.
 
 #### Vraag: Welk type documenten ondersteunt de handtekeningverificatiefunctie in Aspose.Words voor .NET?
 

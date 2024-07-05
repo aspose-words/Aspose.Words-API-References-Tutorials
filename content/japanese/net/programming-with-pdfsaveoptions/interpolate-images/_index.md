@@ -2,56 +2,56 @@
 title: PDF ドキュメント内の画像を補間する
 linktitle: PDF ドキュメント内の画像を補間する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して PDF ドキュメントで画像補間を有効にするためのステップバイステップ ガイド。
+description: Aspose.Words for .NET を使用して PDF ドキュメントで画像補間を有効にする手順ガイド。
 type: docs
 weight: 10
 url: /ja/net/programming-with-pdfsaveoptions/interpolate-images/
 ---
 
-この記事では、Aspose.Words for .NET を使用して PDF ドキュメント機能で画像補間を使用する方法をステップごとに説明します。コードの各部分について詳しく説明します。このチュートリアルの最後には、PDF に変換するときに画像補間を有効にする方法を理解できるようになります。
+この記事では、Aspose.Words for .NET を使用して PDF ドキュメントで画像補間機能を使用する方法について、ステップ バイ ステップで説明します。コードの各部分を詳しく説明します。このチュートリアルの最後には、PDF に変換するときに画像補間を有効にする方法が理解できるようになります。
 
-開始する前に、プロジェクトに Aspose.Words for .NET ライブラリがインストールされ、構成されていることを確認してください。ライブラリとインストール手順は、Aspose Web サイトで見つけることができます。
+開始する前に、プロジェクトに Aspose.Words for .NET ライブラリがインストールされ、構成されていることを確認してください。ライブラリとインストール手順は、Aspose Web サイトで参照できます。
 
-## ステップ 1: ドキュメント ディレクトリを定義する
+## ステップ1: ドキュメントディレクトリを定義する
 
-まず、ドキュメントが配置されているディレクトリへのパスを定義する必要があります。交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントディレクトリへの実際のパスを含めます。
+まず、ドキュメントが保存されているディレクトリへのパスを定義する必要があります。`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ 2: ドキュメントをアップロードする
+## ステップ2: ドキュメントをアップロードする
 
-次に、処理するドキュメントをロードする必要があります。この例では、ドキュメントが「Rendering.docx」という名前で、指定されたドキュメント ディレクトリに配置されていると仮定します。
+次に、処理するドキュメントを読み込む必要があります。この例では、ドキュメントの名前は「Rendering.docx」で、指定されたドキュメント ディレクトリにあると想定しています。
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## ステップ 3: フレーム補間を使用して PDF として保存するためのオプションを構成する
+## ステップ3: フレーム補間を使用してPDFとして保存するためのオプションを設定する
 
-PDF への変換時に画像の補間を有効にするには、`PdfSaveOptions`を設定してオブジェクトを作成します`InterpolateImages`財産を`true`.
+PDFに変換するときに画像の補間を有効にするには、`PdfSaveOptions`オブジェクトを設定することで`InterpolateImages`財産に`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-## ステップ 4: フレーム補間を使用してドキュメントを PDF として保存する
+## ステップ4: フレーム補間を使用してドキュメントをPDFとして保存する
 
-最後に、前に設定した保存オプションを使用してドキュメントを PDF 形式で保存できます。
+最後に、以前に設定した保存オプションを使用して、ドキュメントを PDF 形式で保存できます。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);
 ```
 
-それだけです ！ Aspose.Words for .NET を使用してドキュメントを PDF に変換する際に、画像補間が正常に有効になりました。
+以上です。Aspose.Words for .NET を使用してドキュメントを PDF に変換する際に、画像補間を正常に有効にできました。
 
-### Aspose.Words for .NET を使用した画像補間のソース コードの例
+### Aspose.Words for .NET による画像補間のサンプル ソース コード
 
 
 ```csharp
 
-	//ドキュメントディレクトリへのパス。
+	//ドキュメント ディレクトリへのパス。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -62,21 +62,21 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOption
 ```
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して PDF に変換するときに画像補間を有効にする方法を説明しました。説明されている手順に従うことで、生成された PDF ドキュメント内の画像の視覚的な品質を簡単に向上させることができます。この機能を使用すると、変換された PDF ドキュメントでより滑らかで詳細な画像を取得できます。
+このチュートリアルでは、Aspose.Words for .NET を使用して PDF に変換するときに画像補間を有効にする方法について説明しました。説明されている手順に従うことで、生成された PDF ドキュメント内の画像の視覚的な品質を簡単に向上できます。この機能を使用すると、変換された PDF ドキュメント内の画像がより滑らかで詳細なものになります。
 
 ### よくある質問
 
 #### Q: PDF ドキュメントのフレーム補間とは何ですか?
-A: PDF ドキュメント内の画像の補間とは、ドキュメントを PDF 形式に変換するときに画像の視覚的な品質を向上させるレンダリング技術を指します。画像補間により、生成された PDF ドキュメントの画像がより滑らかで詳細になります。
+A: PDF ドキュメント内の画像の補間とは、ドキュメントを PDF 形式に変換するときに画像の視覚的な品質を向上させるレンダリング技術を指します。画像補間により、生成された PDF ドキュメントの画像はより滑らかで詳細なものになります。
 
-#### Q: Aspose.Words for .NET を使用して PDF に変換するときに画像補間を有効にするにはどうすればよいですか?
+#### Q: Aspose.Words for .NET を使用して PDF に変換するときに、画像補間を有効にするにはどうすればよいでしょうか?
 A: Aspose.Words for .NET を使用して PDF に変換するときに画像補間を有効にするには、次の手順に従います。
 
-のインスタンスを作成します。`Document` Word ドキュメントへのパスを指定するクラス。
+インスタンスを作成する`Document` Word 文書へのパスを指定するクラス。
 
-のインスタンスを作成します。`PdfSaveOptions`クラスを設定して、`InterpolateImages`財産を`true`画像補間を有効にします。
+インスタンスを作成する`PdfSaveOptions`クラスを設定し、`InterpolateImages`財産に`true`画像補間を有効にします。
 
-使用`Save`の方法`Document`保存オプションを指定してドキュメントを PDF 形式で保存するクラス。
+使用`Save`方法の`Document`保存オプションを指定してドキュメントを PDF 形式で保存するクラス。
 
 #### Q: 生成された PDF ドキュメントでフレーム補間が有効になっているかどうかを確認するにはどうすればよいですか?
-A: 生成された PDF ドキュメントでフレーム補間が有効になっているかどうかを確認するには、Adobe Acrobat Reader などの互換性のある PDF ビューアで PDF ファイルを開き、ドキュメント内の画像を調べます。フレーム補間のおかげで、画像がよりスムーズで詳細になっていることがわかります。
+A: 生成された PDF ドキュメントでフレーム補間が有効になっているかどうかを確認するには、Adobe Acrobat Reader などの互換性のある PDF ビューアで PDF ファイルを開き、ドキュメント内の画像を調べます。フレーム補間により、画像がより滑らかで詳細になっていることがわかります。

@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Vraag: Hoe blader je door revisiegroepen in een document in Aspose.Words voor .NET?
 
- EEN: Gebruik de`Groups` eigendom van het document`Revisions` object om de verzameling revisiegroepen op te halen. U kunt vervolgens een lus gebruiken om elke beoordelingsgroep te doorlopen.
+ EEN: Gebruik de`Groups` eigendom van het document`Revisions`object om de verzameling revisiegroepen op te halen. U kunt vervolgens een lus gebruiken om elke beoordelingsgroep te doorlopen.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### Vraag: Hoe krijg ik het revisietype van een revisiegroep in Aspose.Words voor .NET?
 
- EEN: Gebruik de`RevisionType` eigendom van de`RevisionGroup`object om het revisietype van de groep op te halen.
+ EEN: Gebruik de`RevisionType` eigendom van de`RevisionGroup` object om het revisietype van de groep op te halen.
 
 ```csharp
 string revisionType = group.RevisionType;

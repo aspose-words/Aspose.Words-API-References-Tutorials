@@ -16,7 +16,7 @@ Akár kezdő, akár tapasztalt fejlesztő, ezek az oktatóanyagok segítenek tel
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Értékelések elfogadása](./accept-revisions/) | Ismerje meg, hogyan fogadhat el Word-dokumentumok módosításait az Aspose.Words for .NET használatával. |
+| [Változások elfogadása](./accept-revisions/) | Ismerje meg, hogyan fogadhat el Word-dokumentumok módosításait az Aspose.Words for .NET használatával. |
 | [Szerezzen be revíziós típusú szavakat](./get-revision-types/) | Az Aspose.Words for .NET segítségével változatos szavakat kaphat Word-dokumentumban. |
 | [Szerezze be a felülvizsgálati csoportokat](./get-revision-groups/) | Az Aspose.Words for .NET segítségével Word-dokumentumban tekintheti meg a revíziócsoport részleteit. |
 | [Megjegyzések eltávolítása a PDF fájlból](./remove-comments-in-pdf/) | Távolítsa el a megjegyzéseket egy PDF-fájlból az Aspose.Words for .NET segítségével. |

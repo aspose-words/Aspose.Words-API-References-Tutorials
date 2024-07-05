@@ -21,7 +21,7 @@ dokumentumok exportálása kulcsfontosságú szempont a különböző kontextuso
 
 Ezeknek az oktatóanyagoknak a végére olyan ismeretekkel és készségekkel rendelkezik, amelyek segítségével magabiztosan hajthat végre dokumentumátalakítási és -exportálási feladatokat az Aspose.Words for Java használatával. Készüljön fel a dokumentumfeldolgozás egyszerűsítésére és a termelékenység növelésére ezzel a hatékony API-val.
 
-Tehát merüljön el a fent felsorolt oktatóanyagokban, és aknázza ki az Aspose.Words for Java teljes potenciálját a dokumentummal kapcsolatos projektjeiben. Boldog kódolást!
+Tehát merüljön el a fent felsorolt oktatóanyagokban, és aknázza ki az Aspose.Words for Java teljes potenciálját a dokumentumokkal kapcsolatos projektjeiben. Boldog kódolást!
 
  További információkért tekintse meg a[Aspose.Words for Java API dokumentáció](https://reference.aspose.com/words/java/) , és a kezdéshez töltse le a webhelyről[itt](https://releases.aspose.com/words/java/) . Ha bármilyen kérdése van, vagy segítségre van szüksége, forduljon bizalommal hozzánk[támogatói fórum](https://forum.aspose.com/).
 
@@ -39,4 +39,4 @@ Fedezze fel a dokumentumalakzatok erejét az Aspose.Words for Java programban. I
 ### [Vízjelek használata dokumentumokhoz az Aspose.Words for Java programban](./using-watermarks-to-documents/)
 Ismerje meg, hogyan adhat vízjeleket a dokumentumokhoz az Aspose.Words for Java programban. Testreszabhatja a szöveges és képi vízjeleket a professzionális megjelenésű dokumentumokhoz.
 ### [Táblázatok és táblázatstílusok formázása az Aspose.Words for Java programban](./formatting-tables-and-table-styles/)
-Ismerje meg, hogyan formázhat táblázatokat és alkalmazhat táblázatstílusokat az Aspose.Words for Java programban. Fedezze fel a forráskóddal ellátott, lépésről lépésre szóló útmutatókat a hatékony táblázatformázás érdekében. Javítsa dokumentum-elrendezését az Aspose.Words segítségével.
+Ismerje meg, hogyan formázhat táblázatokat és hogyan alkalmazhat táblázatstílusokat az Aspose.Words for Java programban. Fedezze fel a forráskóddal ellátott, lépésenkénti útmutatókat a hatékony táblázatformázás érdekében. Javítsa dokumentum-elrendezését az Aspose.Words segítségével.

@@ -88,7 +88,7 @@ Door deze stappen te volgen, kunt u eenvoudig een nieuwe handtekeningregel in uw
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u een nieuwe handtekeningregel in een Word-document kunt maken en ondertekenen met Aspose.Words voor .NET. Door de aangegeven stappen te volgen, kunt u eenvoudig een handtekeningregel in uw document invoegen, de opties ervan aanpassen en het document ondertekenen met een digitaal certificaat. Door handtekeningregels en digitale handtekeningen aan uw documenten toe te voegen, wordt de authenticiteit en integriteit ervan vergroot, waardoor ze veiliger en betrouwbaarder worden. Aspose.Words voor .NET biedt een krachtige API voor woordenverwerking met handtekeningen en digitale certificaten in Word-documenten, waardoor u het ondertekeningsproces kunt automatiseren en de geldigheid van uw documenten kunt garanderen.
+In deze zelfstudie hebben we geleerd hoe u een nieuwe handtekeningregel in een Word-document kunt maken en ondertekenen met Aspose.Words voor .NET. Door de aangegeven stappen te volgen, kunt u eenvoudig een handtekeningregel in uw document invoegen, de opties ervan aanpassen en het document ondertekenen met een digitaal certificaat. Door handtekeningregels en digitale handtekeningen aan uw documenten toe te voegen, wordt de authenticiteit en integriteit ervan vergroot, waardoor ze veiliger en betrouwbaarder worden. Aspose.Words voor .NET biedt een krachtige API voor woordverwerking met handtekeningen en digitale certificaten in Word-documenten, waardoor u het ondertekeningsproces kunt automatiseren en de geldigheid van uw documenten kunt garanderen.
 
 ### Veelgestelde vragen
 

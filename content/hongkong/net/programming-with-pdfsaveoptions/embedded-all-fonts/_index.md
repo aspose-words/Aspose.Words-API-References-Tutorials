@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
 
-本文提供了有關如何在 Aspose.Words for .NET 的 PDF 文件功能中使用嵌入字體的逐步指南。我們將瀏覽程式碼片段並詳細解釋每個部分。在本教學結束時，您將能夠了解如何使用 Aspose.Words for .NET 在文件中嵌入所有字體並產生帶有嵌入字體的 PDF。
+本文提供了有關如何在 Aspose.Words for .NET 的 PDF 文件功能中使用嵌入字體的逐步指南。我們將瀏覽程式碼片段並詳細解釋每個部分。在本教學結束時，您將能夠了解如何在文件中嵌入所有字體，並使用 Aspose.Words for .NET 產生帶有嵌入字體的 PDF。
 
 在開始之前，請確保您已在專案中安裝並設定了 Aspose.Words for .NET 程式庫。您可以在 Aspose 網站上找到庫和安裝說明。
 

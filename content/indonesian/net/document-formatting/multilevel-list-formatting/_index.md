@@ -2,115 +2,130 @@
 title: Pemformatan Daftar Bertingkat Dalam Dokumen Word
 linktitle: Pemformatan Daftar Bertingkat Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat daftar bertingkat dan menerapkan pemformatan khusus di dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara menguasai pemformatan daftar bertingkat di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurnakan struktur dokumen dengan mudah.
 type: docs
 weight: 10
 url: /id/net/document-formatting/multilevel-list-formatting/
 ---
-Dalam tutorial ini, kami akan menunjukkan cara menggunakan pemformatan daftar bertingkat di fitur dokumen Word dengan Aspose.Words untuk .NET. Ikuti langkah-langkah di bawah ini untuk memahami kode sumber dan menerapkan perubahan.
+## Perkenalan
 
-## Langkah 1: Membuat dan mengonfigurasi dokumen
+Jika Anda seorang pengembang yang ingin mengotomatiskan pembuatan dan pemformatan dokumen Word, Aspose.Words untuk .NET adalah terobosan baru. Hari ini, kita akan mendalami bagaimana Anda bisa menguasai pemformatan daftar bertingkat menggunakan perpustakaan canggih ini. Baik Anda membuat dokumen terstruktur, menguraikan laporan, atau membuat dokumentasi teknis, daftar bertingkat dapat meningkatkan keterbacaan dan pengorganisasian konten Anda.
 
-Untuk memulai, buat dokumen baru dan objek DocumentBuilder terkait. Begini caranya:
+## Prasyarat
+
+Sebelum kita masuk ke detail seluk beluknya, pastikan Anda memiliki semua yang Anda perlukan untuk mengikuti tutorial ini.
+
+1. Lingkungan Pengembangan: Pastikan Anda telah menyiapkan lingkungan pengembangan. Visual Studio adalah pilihan yang bagus.
+2.  Aspose.Words for .NET: Unduh dan instal perpustakaan Aspose.Words for .NET. Kamu bisa mendapatkannya[Di Sini](https://releases.aspose.com/words/net/).
+3.  Lisensi: Dapatkan lisensi sementara jika Anda tidak memiliki lisensi penuh. Mendapatkan[Di Sini](https://purchase.aspose.com/temporary-license/).
+4. Pengetahuan Dasar C#: Keakraban dengan kerangka C# dan .NET akan bermanfaat.
+
+## Impor Namespace
+
+Untuk menggunakan Aspose.Words untuk .NET di proyek Anda, Anda harus mengimpor namespace yang diperlukan. Inilah cara Anda melakukannya:
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
 
-## Langkah 2: Memformat daftar bertingkat
+## Langkah 1: Inisialisasi Dokumen dan Pembuat Anda
 
-Kami sekarang akan menerapkan pemformatan daftar bertingkat menggunakan metode yang tersedia di objek DocumentBuilder. Begini caranya:
-
-```csharp
-builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-
-builder.ListFormat.ListIndent();
-builder.Writeln("Element 2.1");
-builder.Writeln("Element 2.2");
-
-builder.ListFormat.ListIndent();
-builder.Writeln("Element 2.2.1");
-builder.Writeln("Element 2.2.2");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Element 2.3");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Element 3");
-
-builder.ListFormat.RemoveNumbers();
-```
-
-## Langkah 3: Menyimpan dokumen
-
- Setelah memasukkan kolom formulir input teks, simpan dokumen ke lokasi yang diinginkan menggunakan`Save` metode. Pastikan untuk memberikan jalur file yang sesuai:
+Hal pertama yang pertama, mari buat dokumen Word baru dan inisialisasi DocumentBuilder. Kelas DocumentBuilder menyediakan metode untuk menyisipkan konten ke dalam dokumen.
 
 ```csharp
-doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
-```
-
-### Contoh kode sumber untuk Pemformatan Daftar Bertingkat menggunakan Aspose.Words untuk .NET
-
-Berikut adalah kode sumber lengkap untuk fitur pemformatan daftar bertingkat dengan Aspose.Words for .NET:
-
-
-```csharp
-
 // Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Langkah 2: Terapkan Penomoran Default
+
+ Untuk memulai dengan daftar bernomor, Anda menggunakan`ApplyNumberDefault` metode. Ini mengatur format daftar bernomor default.
+
+```csharp
 builder.ListFormat.ApplyNumberDefault();
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+ Di baris ini,`ApplyNumberDefault` memulai daftar bernomor, dan`Writeln` menambahkan item ke daftar.
+
+## Langkah 3: Indentasi untuk Sublevel
+
+ Selanjutnya, untuk membuat sublevel dalam daftar Anda, Anda menggunakan`ListIndent` metode. Metode ini mengindentasi item daftar, menjadikannya sublevel dari item sebelumnya.
+
+```csharp
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2.1");
 builder.Writeln("Item 2.2");
+```
 
+Cuplikan kode ini mengindentasi item, membuat daftar tingkat kedua.
+
+## Langkah 4: Indentasi Lebih Lanjut untuk Level yang Lebih Dalam
+
+Anda dapat terus membuat indentasi untuk membuat level yang lebih dalam dalam daftar Anda. Di sini, kita akan membuat level ketiga.
+
+```csharp
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2.2.1");
 builder.Writeln("Item 2.2.2");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Item 2.3");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Item 3");
-
-builder.ListFormat.RemoveNumbers();
-
-doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
-
 ```
 
-Dengan kode ini Anda akan dapat membuat daftar multi-level dan menerapkan pemformatan yang tepat untuk setiap level menggunakan Aspose.Words untuk .NET.
+Sekarang Anda memiliki daftar tingkat ketiga di bawah "Item 2.2".
 
+## Langkah 5: Berusaha Kembali ke Tingkat yang Lebih Tinggi
+
+ Untuk kembali ke level yang lebih tinggi, gunakan`ListOutdent` metode. Ini memindahkan item kembali ke tingkat daftar sebelumnya.
+
+```csharp
+builder.ListFormat.ListOutdent();
+builder.Writeln("Item 2.3");
+```
+
+Hal ini membawa "Item 2.3" kembali ke tingkat kedua.
+
+## Langkah 6: Hapus Penomoran
+
+Setelah selesai dengan daftar, Anda dapat menghapus penomoran untuk melanjutkan dengan teks biasa atau jenis pemformatan lainnya.
+
+```csharp
+builder.ListFormat.ListOutdent();
+builder.Writeln("Item 3");
+builder.ListFormat.RemoveNumbers();
+```
+
+Cuplikan kode ini melengkapi daftar dan menghentikan penomoran.
+
+## Langkah 7: Simpan Dokumen Anda
+
+Terakhir, simpan dokumen ke direktori yang Anda inginkan.
+
+```csharp
+doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
+```
+
+Ini menyimpan dokumen Anda yang diformat dengan indah dengan daftar bertingkat.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita telah menjelajahi proses pemanfaatan fitur pemformatan daftar bertingkat dalam dokumen Word dengan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang diuraikan, Anda dapat membuat daftar yang terorganisir dengan baik dengan berbagai tingkatan, sehingga meningkatkan struktur dan keterbacaan dokumen Anda.
+Dan itu dia! Anda telah berhasil membuat daftar bertingkat di dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memungkinkan Anda mengotomatiskan tugas pemformatan dokumen yang rumit dengan mudah. Ingat, menguasai alat-alat ini tidak hanya menghemat waktu tetapi juga memastikan konsistensi dan profesionalisme dalam proses pembuatan dokumen Anda.
 
-### FAQ
+## FAQ
 
-#### T: Apa yang dimaksud dengan daftar bertingkat dalam dokumen Word?
+### Bisakah saya menyesuaikan gaya penomoran daftar?
+ Ya, Aspose.Words untuk .NET memungkinkan Anda menyesuaikan gaya penomoran daftar menggunakan`ListTemplate` kelas.
 
-J: Daftar bertingkat dalam dokumen Word adalah daftar hierarki yang memungkinkan Anda mengatur item ke dalam berbagai tingkat sub-item. Ini membantu menyajikan informasi secara terstruktur, sehingga memudahkan pembaca untuk memahami isinya.
+### Bagaimana cara menambahkan poin-poin, bukan angka?
+ Anda dapat menerapkan poin-poin dengan menggunakan`ApplyBulletDefault` metode sebagai gantinya`ApplyNumberDefault`.
 
-#### T: Dapatkah saya menyesuaikan tampilan daftar bertingkat?
+### Apakah mungkin untuk melanjutkan penomoran dari daftar sebelumnya?
+ Ya, Anda dapat melanjutkan penomoran dengan menggunakan`ListFormat.List` properti untuk ditautkan ke daftar yang ada.
 
-A: Ya, Anda dapat menyesuaikan tampilan daftar bertingkat di dokumen Word Anda. Dengan menerapkan gaya yang berbeda, seperti poin-poin, angka, atau huruf, dan menyesuaikan indentasi dan spasi, Anda dapat membuat daftar yang menarik dan terorganisir secara visual.
+### Bagaimana cara mengubah tingkat indentasi secara dinamis?
+ Anda dapat mengubah tingkat indentasi secara dinamis dengan menggunakan`ListIndent` Dan`ListOutdent` metode sesuai kebutuhan.
 
-#### T: Apakah Aspose.Words untuk .NET mendukung opsi pemformatan daftar lainnya?
-
-J: Ya, Aspose.Words untuk .NET menyediakan serangkaian fitur lengkap untuk pemformatan daftar. Ini mendukung berbagai tipe daftar, termasuk daftar berpoin, daftar bernomor, dan daftar bertingkat. Anda dapat memanipulasi format daftar, menambah atau menghapus item, dan menyesuaikan tampilannya.
-
-#### T: Bisakah saya menggunakan Aspose.Words for .NET untuk bekerja dengan elemen dokumen lainnya?
-
-J: Ya, Aspose.Words untuk .NET menawarkan kemampuan ekstensif untuk bekerja dengan berbagai elemen dokumen, seperti paragraf, tabel, gambar, dan lainnya. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram, menyederhanakan tugas pemrosesan dokumen.
+### Bisakah saya membuat daftar bertingkat dalam format dokumen lain seperti PDF?
+Ya, Aspose.Words mendukung penyimpanan dokumen dalam berbagai format termasuk PDF, mempertahankan formatnya.

@@ -2,40 +2,40 @@
 title: コンテンツコントロールの変更
 linktitle: コンテンツコントロールの変更
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書のコンテンツ コントロール内のテキスト、ドロップダウン リスト、画像を変更する方法を学びます。
+description: Aspose.Words for .NET を使用して、Word 文書内のコンテンツ コントロール内のテキスト、ドロップダウン リスト、画像を変更する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-sdt/modify-content-controls/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のさまざまな種類のコンテンツ コントロールを変更する方法について説明します。テキスト、ドロップダウン リストの選択した値を更新したり、コンテンツ コントロール内の画像を置き換えたりできます。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のさまざまな種類のコンテンツ コントロールを変更する方法について説明します。コンテンツ コントロール内のテキスト、ドロップダウン リストの選択値を更新したり、画像を置き換えたりすることができます。
 
 ## 前提条件
-このチュートリアルに従うには、以下が必要です。
+このチュートリアルを実行するには、次のものが必要です。
 
 - Aspose.Words for .NET ライブラリがインストールされています。
-- C# と Word ドキュメントを使用したワード処理の基本的な知識。
+- C# と Word 文書を使用した Words Processing に関する基本的な知識。
 
-## ステップ 1: ドキュメント ディレクトリを設定する
-まず、ドキュメント ディレクトリへのパスを設定します。交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントが置かれているディレクトリへの実際のパスを置き換えます。
+## ステップ1: ドキュメントディレクトリを設定する
+まず、ドキュメントディレクトリへのパスを設定します。`"YOUR DOCUMENT DIRECTORY"`ドキュメントが配置されているディレクトリへの実際のパスを入力します。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ 2: ドキュメントをロードし、コンテンツ コントロールを反復処理する
-を使用して Word 文書をロードします。`Document`コンストラクターを使用して、ドキュメントへのパスをパラメーターとして渡します。を使用して、ドキュメント内のすべての構造化ドキュメント タグを反復処理します。`foreach`ループ。
+## ステップ 2: ドキュメントを読み込み、コンテンツ コントロールを反復処理する
+Word文書を読み込むには、`Document`コンストラクタにドキュメントへのパスをパラメータとして渡します。`foreach`ループ。
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
 {
-    //コンテンツ コントロールのタイプに基づいてアクションを実行します
+    //コンテンツコントロールの種類に基づいてアクションを実行する
 }
 ```
 
-## ステップ 3: プレーン テキスト コンテンツ コントロールを変更する
-タイプのコンテンツ コントロールの場合`SdtType.PlainText`、既存の子をすべて削除し、新しい段落を作成し、目的のテキストを含むランを追加します。
+## ステップ3: プレーンテキストコンテンツコントロールを変更する
+コンテンツコントロールの種類`SdtType.PlainText`既存の子要素をすべて削除し、新しい段落を作成して、目的のテキストを含む実行を追加します。
 
 ```csharp
 case SdtType.PlainText:
@@ -48,8 +48,8 @@ case SdtType.PlainText:
 }
 ```
 
-## ステップ 4: ドロップダウン リスト コンテンツ コントロールを変更する
-タイプのコンテンツ コントロールの場合`SdtType.DropDownList`、選択した値を特定の値に設定して更新します。`SdtListItem`.
+## ステップ4: ドロップダウンリストのコンテンツコントロールを変更する
+コンテンツコントロールの種類`SdtType.DropDownList`選択した値を特定の値に設定して更新します`SdtListItem`.
 
 ```csharp
 case SdtType.DropDownList:
@@ -60,8 +60,8 @@ case SdtType.DropDownList:
 }
 ```
 
-## ステップ 5: 画像コンテンツ コントロールを変更する
-タイプのコンテンツ コントロールの場合`SdtType.Picture`、コンテンツ コントロール内の図形を取得し、その画像を新しい画像に置き換えます。
+## ステップ5: 画像コンテンツコントロールを変更する
+コンテンツコントロールの種類`SdtType.Picture`コンテンツ コントロール内の図形を取得し、その画像を新しい画像に置き換えます。
 
 ```csharp
 case SdtType.Picture:
@@ -75,14 +75,14 @@ case SdtType.Picture:
 }
 ```
 
-## ステップ 6: 変更したドキュメントを保存する
-を使用して、変更したドキュメントを指定されたディレクトリに保存します。`Save`方法。適切なファイル拡張子を付けて、目的のファイル名を指定します。この例では、ドキュメントを「WorkingWithSdt.ModifyContentControls.docx」として保存します。
+## ステップ6: 変更したドキュメントを保存する
+変更したドキュメントを指定されたディレクトリに保存するには、`Save`メソッド。適切なファイル拡張子を持つファイル名を指定します。この例では、ドキュメントを「WorkingWithSdt.ModifyContentControls.docx」として保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ```
 
-### Aspose.Words for .NET を使用したコンテンツ コントロールの変更のソース コード例 
+### Aspose.Words for .NET を使用してコンテンツ コントロールを変更するためのサンプル ソース コード 
 
 ```csharp
 	//ドキュメントディレクトリへのパス
@@ -122,4 +122,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-それでおしまい！ Aspose.Words for .NET を使用して、Word 文書内のさまざまな種類のコンテンツ コントロールを正常に変更できました。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書内のさまざまな種類のコンテンツ コントロールを正常に変更できました。

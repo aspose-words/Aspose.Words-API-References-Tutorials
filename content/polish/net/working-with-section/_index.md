@@ -21,7 +21,7 @@ Postępując zgodnie z tymi samouczkami, będziesz mógł z łatwością zarząd
 | [Dodaj sekcję](./add-section/) | W tym samouczku dowiesz się, jak dodać sekcję do dokumentu programu Word za pomocą Aspose.Words dla .NET. Przewodnik krok po kroku dotyczący struktury dokumentu. |
 | [Usuń sekcję](./delete-section/) | W tym samouczku dowiesz się, jak usunąć określoną sekcję z dokumentu programu Word za pomocą Aspose.Words dla .NET. |
 | [Usuń wszystkie sekcje](./delete-all-sections/) | W tym samouczku dowiesz się, jak usunąć wszystkie sekcje z dokumentu programu Word za pomocą Aspose.Words dla .NET. |
-| [Dołącz treść słowa sekcji](./append-section-content/) | W tym samouczku dowiesz się, jak dodawać treść słowną do określonych sekcji dokumentu programu Word za pomocą Aspose.Words dla .NET.  |
+| [Dołącz treść słowa sekcji](./append-section-content/) | W tym samouczku dowiesz się, jak dodawać zawartość słowną do określonych sekcji dokumentu programu Word za pomocą Aspose.Words dla .NET.  |
 | [Sekcja klonów](./clone-section/) | tym samouczku dowiesz się, jak sklonować sekcję w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Przewodnik krok po kroku. |
 | [Kopiuj sekcję](./copy-section/) | W tym samouczku dowiesz się, jak skopiować sekcję z dokumentu programu Word do innego dokumentu za pomocą Aspose.Words dla .NET. |
 | [Usuń zawartość stopki nagłówka](./delete-header-footer-content/) | W tym samouczku dowiesz się, jak usunąć zawartość nagłówka i stopki z dokumentu programu Word za pomocą Aspose.Words dla .NET.  |

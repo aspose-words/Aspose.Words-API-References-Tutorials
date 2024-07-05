@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Βήμα 2: Δημιουργήστε ένα νέο έγγραφο και σχήμα ομάδας
- Δημιουργήστε μια νέα παρουσία του`Document` τάξη και`GroupShape` αντίρρηση για εργασία με το έγγραφο.
+ Δημιουργήστε μια νέα παρουσία του`Document` τάξη και`GroupShape`αντίρρηση για εργασία με το έγγραφο.
 
 ```csharp
 Document doc = new Document();

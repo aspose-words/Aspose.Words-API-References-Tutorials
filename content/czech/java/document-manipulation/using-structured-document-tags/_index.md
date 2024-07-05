@@ -1,8 +1,8 @@
 ---
-title: Použití značek strukturovaného dokumentu (SDT) v Aspose.Words pro Javu
+title: Používání značek strukturovaného dokumentu (SDT) v Aspose.Words pro Javu
 linktitle: Používání značek strukturovaného dokumentu (SDT)
 second_title: Aspose.Words Java Document Processing API
-description: Naučte se, jak používat Structured Document Tags (SDT) v Aspose.Words for Java, pomocí tohoto komplexního průvodce. Vytvářejte, upravujte a spojujte SDT s vlastními daty XML.
+description: Naučte se, jak používat Structured Document Tags (SDT) v Aspose.Words pro Java s tímto komplexním průvodcem. Vytvářejte, upravujte a spojujte SDT s vlastními daty XML.
 type: docs
 weight: 19
 url: /cs/java/document-manipulation/using-structured-document-tags/

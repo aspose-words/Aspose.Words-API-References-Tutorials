@@ -17,7 +17,7 @@ url: /ko/net/programming-with-shapes/get-actual-shape-bounds-points/
 - C# 및 Word 문서를 사용한 단어 처리에 대한 기본 지식.
 
 ## 1단계: 새 문서 및 DocumentBuilder 만들기
- 새 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder` 문서 작업에 사용할 개체입니다.
+ 새 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder`문서 작업에 사용할 개체입니다.
 
 ```csharp
 Document doc = new Document();

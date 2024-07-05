@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 
@@ -98,7 +98,7 @@ Bằng cách sử dụng Aspose.Words cho .NET, bạn có thể tự động hó
 Aspose.Words for .NET là một thư viện xử lý tài liệu mạnh mẽ cho phép các nhà phát triển tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình trong các ứng dụng .NET. Nó cung cấp một bộ API toàn diện để Xử lý văn bản với các thành phần tài liệu, bao gồm biểu đồ, đoạn văn, bảng, v.v.
 
 #### Q2. Làm cách nào để cài đặt Aspose.Words cho .NET?
-Để cài đặt Aspose.Words cho .NET, bạn có thể sử dụng trình quản lý gói NuGet trong Visual Studio để cài đặt thư viện trực tiếp vào dự án của mình. Chỉ cần tìm kiếm "Apose.Words" trong trình quản lý gói NuGet và cài đặt gói.
+Để cài đặt Aspose.Words cho .NET, bạn có thể sử dụng trình quản lý gói NuGet trong Visual Studio để cài đặt thư viện trực tiếp vào dự án của mình. Chỉ cần tìm kiếm "Aspose.Words" trong trình quản lý gói NuGet và cài đặt gói.
 
 #### Q3. Tôi có thể tùy chỉnh hình thức của biểu đồ vùng không?
 Có, bằng cách sử dụng Aspose.Words cho .NET, bạn có thể tùy chỉnh các khía cạnh khác nhau về hình thức của biểu đồ vùng. Bạn có thể sửa đổi các thuộc tính như tiêu đề biểu đồ, màu chuỗi, nhãn trục và định dạng vùng biểu đồ. Thư viện cung cấp một bộ API phong phú để kiểm soát các thành phần trực quan của biểu đồ và tạo giao diện tùy chỉnh phù hợp với nhu cầu của bạn.

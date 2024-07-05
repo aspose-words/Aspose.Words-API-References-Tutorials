@@ -126,4 +126,4 @@ R: Si bien las expresiones regulares y los grupos capturados ofrecen poderosas c
 
 #### P: ¿Puedo utilizar la función "Reconocer y sustituciones dentro de patrones de reemplazo" con otros idiomas además del inglés?
 
-R: Sí, la función "Reconocer y sustituciones dentro de patrones de reemplazo" en Aspose.Words para .NET se puede usar con idiomas distintos del inglés. Las expresiones regulares son independientes del idioma y se pueden diseñar para que coincidan con patrones específicos en cualquier idioma. Puede ajustar el patrón de expresión regular para adaptarlo al idioma que desee y a los patrones de texto específicos que desee reconocer y sustituir.
+R: Sí, la función "Reconocer y sustituciones dentro de patrones de reemplazo" en Aspose.Words para .NET se puede usar con otros idiomas además del inglés. Las expresiones regulares son independientes del idioma y se pueden diseñar para que coincidan con patrones específicos en cualquier idioma. Puede ajustar el patrón de expresión regular para adaptarlo al idioma que desee y a los patrones de texto específicos que desee reconocer y sustituir.

@@ -67,11 +67,11 @@ textBox.Previous?.BreakForwardLink();
 
 ## Kesimpulan
 
-Selamat! Anda sekarang telah mempelajari cara memutus tautan pengalihan di dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah dalam panduan ini, Anda dapat menyiapkan dokumen, membuat bentuk TextBox, dan memutus tautan pengalihan menggunakan metode yang berbeda.
+Selamat! Anda sekarang telah mempelajari cara memutus tautan pengalihan di dokumen Word menggunakan pustaka Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah dalam panduan ini, Anda dapat menyiapkan dokumen, membuat bentuk TextBox, dan memutus tautan pengalihan menggunakan metode yang berbeda.
 
 ### FAQ untuk tautan maju dalam dokumen Word
 
-#### T: Pustaka apa yang digunakan untuk memutus tautan pengalihan dalam dokumen Word menggunakan Aspose.Words untuk .NET?
+#### T: Pustaka apa yang digunakan untuk memutus tautan pengalihan di dokumen Word menggunakan Aspose.Words untuk .NET?
 
 A: Untuk memutus link pengalihan pada dokumen Word menggunakan Aspose.Words for .NET, pustaka yang digunakan adalah Aspose.Words for .NET.
 

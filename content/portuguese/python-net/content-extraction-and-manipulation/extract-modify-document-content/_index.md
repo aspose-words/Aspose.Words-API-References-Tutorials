@@ -10,7 +10,7 @@ url: /pt/python-net/content-extraction-and-manipulation/extract-modify-document-
 
 ## Introdução ao Aspose.Words para Python
 
-Aspose.Words é uma biblioteca popular de manipulação e geração de documentos que oferece amplos recursos para trabalhar com documentos do Word de forma programática. Sua API Python oferece uma ampla gama de funções para extrair, modificar e manipular conteúdo em documentos do Word.
+Aspose.Words é uma biblioteca popular de manipulação e geração de documentos que oferece amplos recursos para trabalhar com documentos do Word programaticamente. Sua API Python oferece uma ampla gama de funções para extrair, modificar e manipular conteúdo em documentos do Word.
 
 ## Instalação e configuração
 

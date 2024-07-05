@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // 순서가 지정된 목록을 지정합니다.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// 텍스트에 이탈리아어 강조를 지정합니다.
+// 텍스트의 기울임꼴 강조를 지정합니다.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

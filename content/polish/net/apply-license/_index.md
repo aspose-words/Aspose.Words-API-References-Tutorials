@@ -13,6 +13,6 @@ Ta strona zawiera szczegółowy przewodnik dotyczący stosowania licencji w proj
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Zastosuj licencję z pliku](./apply-license-from-file/) | Dowiedz się, jak zastosować licencję z pliku za pomocą Aspose.Words dla .NET.|
-| [Zastosuj licencję ze strumienia](./apply-license-from-stream/) | Dowiedz się, jak zastosować licencję ze strumienia za pomocą Aspose.Words dla .NET.|
-| [Zastosuj licencję licznikową](./apply-metered-license/) | Dowiedz się, jak zastosować licencję licznikową za pomocą Aspose.Words dla .NET. |
+| [Zastosuj licencję z pliku](./apply-license-from-file/) | Dowiedz się, jak zastosować licencję z pliku w Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. Bez wysiłku odblokuj pełny potencjał swojej biblioteki. |
+| [Zastosuj licencję ze strumienia](./apply-license-from-stream/) | Dowiedz się, jak zastosować licencję ze strumienia w Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Odblokuj pełny potencjał Aspose.Words. |
+| [Zastosuj licencję licznikową](./apply-metered-license/) | Dowiedz się, jak zastosować licencję licznikową w Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Proste, elastyczne i ekonomiczne licencjonowanie. |

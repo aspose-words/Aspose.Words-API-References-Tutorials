@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Tạo và tùy chỉnh tài liệu
- Tạo một thể hiện của`Document` lớp và một liên quan`DocumentBuilder` để xây dựng nội dung tài liệu. Sử dụng`Font.EmphasisMark` thuộc tính để đặt kiểu nhấn mạnh phông chữ thành`EmphasisMark.UnderSolidCircle` . Sau đó sử dụng`Write` Và`Writeln` các phương pháp của`DocumentBuilder` để thêm văn bản với phông chữ được chỉ định nhấn mạnh.
+ Tạo một thể hiện của`Document` lớp và một liên kết`DocumentBuilder` để xây dựng nội dung tài liệu. Sử dụng`Font.EmphasisMark` thuộc tính để đặt kiểu nhấn mạnh phông chữ thành`EmphasisMark.UnderSolidCircle` . Sau đó sử dụng`Write` Và`Writeln` các phương pháp của`DocumentBuilder` để thêm văn bản với điểm nhấn phông chữ được chỉ định.
 
 ```csharp
 Document document = new Document();

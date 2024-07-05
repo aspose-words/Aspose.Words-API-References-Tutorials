@@ -10,7 +10,7 @@ url: /nl/java/document-printing/printing-documents-page-setup/
 
 ## Invoering
 
-Het afdrukken van documenten met nauwkeurige pagina-instellingen is van cruciaal belang als het gaat om het maken van professioneel ogende rapporten, facturen of ander gedrukt materiaal. Aspose.Words voor Java vereenvoudigt dit proces voor Java-ontwikkelaars, waardoor ze elk aspect van de pagina-indeling kunnen controleren.
+Het afdrukken van documenten met nauwkeurige pagina-instellingen is van cruciaal belang als het gaat om het maken van professioneel ogende rapporten, facturen of ander gedrukt materiaal. Aspose.Words voor Java vereenvoudigt dit proces voor Java-ontwikkelaars, waardoor ze elk aspect van de pagina-indeling kunnen beheren.
 
 ## Het opzetten van de ontwikkelomgeving
 

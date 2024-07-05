@@ -136,4 +136,4 @@ Sì, Aspose.Words è completamente compatibile con .NET Core, consentendoti di c
 
 ### Dove posso trovare la documentazione per Aspose.Words?
 
- È possibile trovare la documentazione completa per Aspose.Words per .NET.[Qui](https://reference.aspose.com/words/net/).
+ È possibile trovare la documentazione completa per Aspose.Words per .NET[Qui](https://reference.aspose.com/words/net/).

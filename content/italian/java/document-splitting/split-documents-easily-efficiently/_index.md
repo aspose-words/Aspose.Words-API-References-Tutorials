@@ -126,7 +126,7 @@ Aspose.Words per Java fornisce anche funzionalità per combinare nuovamente i do
 
 ## 10. Considerazioni sulle prestazioni
 
-Quando si ha a che fare con documenti di grandi dimensioni, è essenziale considerare l'ottimizzazione delle prestazioni. Aspose.Words
+Quando si ha a che fare con documenti di grandi dimensioni, è essenziale considerare l'ottimizzazione delle prestazioni. Aspose.Parole
 
  per Java è progettato per gestire file di grandi dimensioni in modo efficiente, ma gli sviluppatori possono migliorare ulteriormente le prestazioni seguendo le migliori pratiche.
 
@@ -134,7 +134,7 @@ Quando si ha a che fare con documenti di grandi dimensioni, è essenziale consid
 
 In questa guida, abbiamo esplorato come dividere i documenti in modo semplice ed efficiente utilizzando Aspose.Words per Java. Dividendo documenti di grandi dimensioni in parti più piccole e più gestibili, gli sviluppatori possono lavorare con sezioni specifiche e semplificare le attività di elaborazione dei documenti. Aspose.Words per Java offre vari metodi per dividere i documenti in base a pagine, paragrafi, intestazioni e sezioni, fornendo agli sviluppatori la flessibilità di adattare il processo di divisione alle loro esigenze specifiche.
 
-## 12.Domande frequenti
+## 12. Domande frequenti
 
 ### Q1. Aspose.Words per Java può dividere documenti di diversi formati come DOC e DOCX?
 

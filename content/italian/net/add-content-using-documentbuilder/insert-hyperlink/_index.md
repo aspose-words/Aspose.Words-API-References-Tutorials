@@ -41,7 +41,7 @@ Per iniziare, avvia Visual Studio e crea un nuovo progetto C#. Puoi scegliere un
 
 Installa Aspose.Words per .NET
 
-Successivamente, dovrai installare la libreria Aspose.Words per .NET. È possibile farlo tramite Gestione pacchetti NuGet. È sufficiente fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, selezionare "Gestisci pacchetti NuGet", cercare "Apose.Words" e installarlo.
+Successivamente, dovrai installare la libreria Aspose.Words per .NET. È possibile farlo tramite Gestione pacchetti NuGet. È sufficiente fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, selezionare "Gestisci pacchetti NuGet", cercare "Aspose.Words" e installarlo.
 
 ## Passaggio 2: inizializzare il documento
 
@@ -92,7 +92,7 @@ Ora inseriamo il collegamento ipertestuale vero e proprio. Qui è dove avviene l
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
 ```
 
-In questa riga inseriamo un collegamento ipertestuale con il testo visualizzato "Apose Website" e l'URL "http://www.aspose.com".
+In questa riga inseriamo un collegamento ipertestuale con il testo visualizzato "Aspose Website" e l'URL "http://www.aspose.com".
 
 ## Passaggio 6: cancella la formattazione
 

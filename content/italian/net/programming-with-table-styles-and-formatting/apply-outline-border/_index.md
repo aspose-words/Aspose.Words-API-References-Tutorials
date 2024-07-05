@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Passaggio 5: cancella i bordi della tabella esistente.
+## Passaggio 5: cancella i bordi della tabella esistente
 Per iniziare con un nuovo bordo del contorno, dobbiamo prima cancellare tutti i bordi esistenti dalla tabella. Questo può essere fatto utilizzando il`ClearBorders()` metodo.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Passaggio 7: riempi le celle con un colore di sfondo.
-Per migliorare la presentazione visiva della tabella, possiamo riempire le celle con un colore di sfondo terra.
+## Passaggio 7: riempi le celle con un colore di sfondo
+Per migliorare la presentazione visiva della tabella, possiamo riempire le celle con un colore di sfondo terra
 
 idea. In questo esempio, stiamo usando un colore verde chiaro.
 

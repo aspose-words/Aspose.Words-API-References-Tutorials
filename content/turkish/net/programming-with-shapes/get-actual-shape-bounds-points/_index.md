@@ -17,7 +17,7 @@ Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmaya itiraz edin.
+ Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder`belgeyle çalışmaya itiraz edin.
 
 ```csharp
 Document doc = new Document();

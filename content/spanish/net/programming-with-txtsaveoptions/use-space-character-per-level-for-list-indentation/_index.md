@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-En este ejemplo, creamos un nuevo documento y usamos DocumentBuilder para agregar texto y crear una lista con tres niveles de sangría. Hemos agregado tres elementos a la lista, y cada elemento indica un nivel adicional.
+En este ejemplo, creamos un nuevo documento y usamos DocumentBuilder para agregar texto y crear una lista con tres niveles de sangría. Hemos agregado tres elementos a la lista, y cada elemento tiene una sangría de un nivel adicional.
 
 ## Usar un carácter de espacio por nivel para la sangría de la lista
 

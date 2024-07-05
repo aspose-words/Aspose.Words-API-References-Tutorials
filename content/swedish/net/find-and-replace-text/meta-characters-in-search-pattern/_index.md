@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Steg 4: Infoga en sidbrytning i dokumentet
 
- För att illustrera användningen av en annan metatecken kommer vi att infoga en sidbrytning i dokumentet med hjälp av`InsertBreak` metod med`BreakType.PageBreak` parametrar. Vi flyttar först markören från`DocumentBuilder` till slutet av dokumentet infogar vi sidbrytningen och en ny textrad:
+ För att illustrera användningen av en annan metatecken kommer vi att infoga en sidbrytning i dokumentet med hjälp av`InsertBreak` metod med`BreakType.PageBreak` parameter. Vi flyttar först markören från`DocumentBuilder` till slutet av dokumentet infogar vi sidbrytningen och en ny textrad:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### F: Hur infogar man en sidbrytning i ett dokument med Aspose.Words för .NET?
 
-S: För att illustrera användningen av en annan metatecken kommer vi att infoga en sidbrytning i dokumentet med hjälp av`InsertBreak` metod med`BreakType.PageBreak` parametrar. Vi flyttar först markören från`DocumentBuilder` till slutet av dokumentet infogar vi sidbrytningen och en ny textrad:
+S: För att illustrera användningen av en annan metatecken kommer vi att infoga en sidbrytning i dokumentet med hjälp av`InsertBreak` metod med`BreakType.PageBreak` parameter. Vi flyttar först markören från`DocumentBuilder` till slutet av dokumentet infogar vi sidbrytningen och en ny textrad:
 
 ```csharp
 builder. MoveToDocumentEnd();

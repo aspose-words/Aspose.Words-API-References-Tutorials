@@ -67,4 +67,4 @@ doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 
 此功能對於確保 RTF 文件中正確顯示 Utf-8 字元至關重要。透過配置適當的載入選項，Aspose.Words 能夠正確識別和處理這些字符，有助於保持文字的完整性和品質。
 
-當對需要 Utf-8 編碼支援的特定語言和字元集進行文字處理時，UTF-8 文字辨識尤其重要。使用 Aspose.Words for .NET，您可以輕鬆操作包含 Utf-8 字元的 RTF 文檔，而沒有遺失或損壞的風險。
+當使用需要 Utf-8 編碼支援的特定語言和字元集進行文字處理時，UTF-8 文字辨識尤其重要。使用 Aspose.Words for .NET，您可以輕鬆操作包含 Utf-8 字元的 RTF 文檔，而沒有遺失或損壞的風險。

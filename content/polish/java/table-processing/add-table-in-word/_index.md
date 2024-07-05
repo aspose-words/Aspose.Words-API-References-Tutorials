@@ -115,7 +115,7 @@ public class AddTableInWord {
 
 ## Wniosek
 
-Gratulacje! Pomyślnie dodałeś tabelę do dokumentu programu Word przy użyciu Aspose.Words for Java. Aspose.Words zapewnia solidny i wydajny interfejs API do pracy z dokumentami programu Word, ułatwiając tworzenie, manipulowanie i dostosowywanie tabel i innych elementów w dokumentach.
+Gratulacje! Pomyślnie dodałeś tabelę do dokumentu programu Word przy użyciu Aspose.Words dla Java. Aspose.Words zapewnia solidny i wydajny interfejs API do pracy z dokumentami programu Word, ułatwiając tworzenie, manipulowanie i dostosowywanie tabel i innych elementów w dokumentach.
 
 Postępując zgodnie z tym przewodnikiem krok po kroku, wiesz, jak skonfigurować środowisko programistyczne, utworzyć nowy dokument programu Word, dodać tabelę z wierszami i kolumnami oraz zapisać dokument. Zachęcamy do odkrywania większej liczby funkcji Aspose.Words, aby jeszcze bardziej usprawnić zadania związane z przetwarzaniem dokumentów.
 

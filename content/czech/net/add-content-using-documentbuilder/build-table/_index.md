@@ -19,7 +19,7 @@ Než se pustíme do našeho dobrodružství se stavěním stolů, ujistěte se, 
 - .NET Framework (4.0 nebo vyšší)
 - Aspose.Words pro knihovnu .NET
 
- Pokud ještě nemáte Aspose.Words, můžete snadno[stáhněte si to zde](https://releases.aspose.com/words/net/) . Můžete také začít s a[zkušební verze zdarma](https://releases.aspose.com/) pokud chcete otestovat vody. Pro ty, kteří jsou připraveni se ponořit, můžete[koupit licenci](https://purchase.aspose.com/buy) , nebo pokud potřebujete více času na vyhodnocení, vezměte si a[dočasná licence](https://purchase.aspose.com/temporary-license/).
+ Pokud ještě nemáte Aspose.Words, můžete snadno[stáhněte si jej zde](https://releases.aspose.com/words/net/) . Můžete také začít s a[zkušební verze zdarma](https://releases.aspose.com/) pokud chcete otestovat vody. Pro ty, kteří jsou připraveni se ponořit, můžete[koupit licenci](https://purchase.aspose.com/buy) , nebo pokud potřebujete více času na vyhodnocení, vezměte si a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 
 ## Importovat jmenné prostory
 

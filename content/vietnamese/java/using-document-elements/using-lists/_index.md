@@ -164,7 +164,7 @@ Bằng cách làm theo các bước này, bạn có thể tạo tài liệu vớ
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Tạo danh sách đánh số dựa trên một trong các mẫu danh sách Microsoft Word.
+        // Tạo danh sách đánh số dựa trên một trong các mẫu danh sách Microsoft Word
         //và áp dụng nó cho đoạn hiện tại của trình tạo tài liệu.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Có chín cấp độ trong danh sách này, hãy thử tất cả.
@@ -173,7 +173,7 @@ Bằng cách làm theo các bước này, bạn có thể tạo tài liệu vớ
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Tạo danh sách có dấu đầu dòng dựa trên một trong các mẫu danh sách Microsoft Word.
+        // Tạo danh sách có dấu đầu dòng dựa trên một trong các mẫu danh sách Microsoft Word
         //và áp dụng nó cho đoạn hiện tại của trình tạo tài liệu.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

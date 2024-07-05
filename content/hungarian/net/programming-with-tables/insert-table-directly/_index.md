@@ -92,7 +92,7 @@ cell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 1 Text"));
 row.AppendChild(cell);
 ```
 
-Ebben a részletben létrehozunk egy cellát, a háttérszínét világoskékre állítjuk, és meghatározzuk a szélességét. Ezután adjunk hozzá egy bekezdést és egy futást a cellához a szöveg megtartásához.
+Ebben a részletben létrehozunk egy cellát, a háttérszínét világoskékre állítjuk, és meghatározzuk a szélességét. Ezután hozzáadunk egy bekezdést és egy futást a cellához, hogy megtartsuk a szövegünket.
 
 ## 4. lépés: Sejtek klónozása
 

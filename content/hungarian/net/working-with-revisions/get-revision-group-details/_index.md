@@ -67,7 +67,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan szerezheti be egy Word-dokumentumba
 
 #### K: Hogyan tölthetek be egy dokumentumot az Aspose.Words for .NET-be revíziókkal?
 
- V: Használja a`Document`osztályú Aspose.Words for .NET, hogy egy dokumentumot töltsön be egy változatokat tartalmazó fájlból. Megadhatja a teljes dokumentum elérési utat.
+ V: Használja a`Document` osztályú Aspose.Words for .NET, hogy egy dokumentumot töltsön be egy változatokat tartalmazó fájlból. Megadhatja a teljes dokumentum elérési utat.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### K: Hogyan szerezhetem meg az Aspose.Words for .NET-ben található revíziócsoport részleteit?
 
- V: Menjen végig a dokumentum revízióin egy hurok segítségével, és érje el az egyes változatok tulajdonságait a kívánt részletek eléréséhez. Használhatja a`RevisionType`, `Author`, `DateTime` és`ParentNode` tulajdonságokat, hogy megkapja a revízió típusát, szerzőjét, dátumát és átdolgozott szövegét.
+V: Menjen végig a dokumentum revízióin egy hurok segítségével, és érje el az egyes változatok tulajdonságait a kívánt részletek eléréséhez. Használhatja a`RevisionType`, `Author`, `DateTime` és`ParentNode` tulajdonságokat, hogy megkapja a revízió típusát, szerzőjét, dátumát és átdolgozott szövegét.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### K: Hogyan ellenőrizhető, hogy egy változat egy csoporthoz tartozik-e az Aspose.Words for .NET-ben?
 
- V: Használja a`Group` tulajdona a`Revision` objektum annak ellenőrzésére, hogy egy változat egy csoporthoz tartozik-e. Ha a`Group` ingatlan az`null`ez azt jelenti, hogy a revízió nem tartozik egyik csoporthoz sem.
+ V: Használja a`Group` tulajdona a`Revision` objektum annak ellenőrzésére, hogy egy változat egy csoporthoz tartozik-e. Ha a`Group` ingatlan az`null`, ez azt jelenti, hogy a revízió nem tartozik egyik csoporthoz sem.
 
 ```csharp
 if (revision.Group != null)

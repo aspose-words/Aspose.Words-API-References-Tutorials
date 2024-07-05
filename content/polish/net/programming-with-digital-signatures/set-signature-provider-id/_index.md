@@ -94,7 +94,7 @@ Odp.: Aby ustawić identyfikator dostawcy podpisu dla linii podpisu w dokumencie
 
 #### P: Jak uzyskać dostęp do linii podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
 
- O: Aby uzyskać dostęp do linii podpisu w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz użyć odpowiedniej metody lub właściwości w celu pobrania kształtu linii podpisu ze struktury dokumentu. Można na przykład użyć`GetChild` metodę z odpowiednimi parametrami, aby uzyskać pożądany kształt linii podpisu.
+ Odp.: Aby uzyskać dostęp do linii podpisu w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz użyć odpowiedniej metody lub właściwości w celu pobrania kształtu linii podpisu ze struktury dokumentu. Można na przykład użyć`GetChild` metodę z odpowiednimi parametrami, aby uzyskać pożądany kształt linii podpisu.
 
 #### P: Czy mogę ustawić identyfikator dostawcy podpisu dla wielu wierszy podpisu w dokumencie programu Word?
 

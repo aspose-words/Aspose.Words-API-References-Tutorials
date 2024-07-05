@@ -18,7 +18,7 @@ Aspose.Words สำหรับ Java เป็น Java API ที่มีปร
 
 ก่อนที่เราจะเจาะลึกการใช้ Aspose.Words สำหรับ Java คุณต้องตั้งค่าสภาพแวดล้อมการพัฒนาของคุณก่อน ตรวจสอบให้แน่ใจว่าคุณมีเครื่องมือการพัฒนา Java ที่จำเป็นและติดตั้งไลบรารี Aspose.Words สำหรับ Java แล้ว
 
-## 3.การสร้างเอกสารใหม่
+## 3. การสร้างเอกสารใหม่
 
 เริ่มต้นด้วยการสร้างเอกสาร Word ใหม่โดยใช้ Aspose.Words สำหรับ Java ต่อไปนี้คือวิธีที่คุณสามารถทำได้:
 
@@ -110,7 +110,7 @@ Assert.assertTrue(para.isDeleteRevision());
 // ย่อหน้าการแก้ไขการลบจะถูกลบออกเมื่อเรายอมรับการเปลี่ยนแปลง
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
-Assert.assertEquals(para.getRuns().getCount(), 0); //เป็นที่ว่างเปล่า
+Assert.assertEquals(para.getRuns().getCount(), 0); //คือ Is.Empty
 // การหยุดการติดตามการแก้ไขทำให้ข้อความนี้ปรากฏเป็นข้อความปกติ
 // การแก้ไขจะไม่นับเมื่อมีการเปลี่ยนแปลงเอกสาร
 doc.stopTrackRevisions();

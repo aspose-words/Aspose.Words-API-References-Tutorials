@@ -12,7 +12,7 @@ Ebből az átfogó oktatóanyagból megtudhatja, hogyan fűzhet megjegyzéseket 
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
 Kezdésként hozzon létre egy új dokumentumot a Document osztály használatával, és inicializáljon egy DocumentBuilder objektumot:
@@ -93,7 +93,7 @@ V: Igen, az Aspose.Words for .NET-ben a megjegyzések szövegét formázhatja a 
 
 #### K: Hogyan kérhetem le a dokumentumban található összes megjegyzést?
 
- V: A dokumentumban szereplő összes megjegyzést lekérheti a`Document.Comments` ingatlan.
+ V: A dokumentumban található összes megjegyzést lekérheti a`Document.Comments` ingatlan.
 
 #### K: Törölhetek egy adott megjegyzést az Aspose.Words for .NET-ben?
 

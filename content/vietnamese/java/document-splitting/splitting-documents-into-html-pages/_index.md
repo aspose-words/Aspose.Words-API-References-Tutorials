@@ -65,7 +65,7 @@ Mã này lặp qua các trang và lưu chúng dưới dạng tệp HTML.
 
 Trong hướng dẫn này, chúng tôi đã học cách chia tài liệu Word thành các trang HTML bằng Aspose.Words cho Java. API mạnh mẽ này giúp đơn giản hóa quy trình, giúp bạn dễ dàng làm việc với các tài liệu Word theo chương trình.
 
-Giờ đây, bạn có thể chuyển đổi tài liệu Word của mình thành các trang HTML một cách dễ dàng, giúp chúng có thể truy cập và chia sẻ trực tuyến.
+Giờ đây, bạn có thể dễ dàng chuyển đổi tài liệu Word của mình thành các trang HTML, giúp chúng có thể truy cập và chia sẻ trực tuyến.
 
 ## Câu hỏi thường gặp
 

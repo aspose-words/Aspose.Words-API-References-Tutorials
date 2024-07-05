@@ -37,7 +37,7 @@ string textDoc = "Full stop delimiters:\n" +
                   "3 Fourth list item 3";
 ```
 
-Ebben a lépésben létrehozunk egy szöveges karakterláncot, amely egy listaszámokat és szóközöket tartalmazó szöveges dokumentumot szimulál. Különféle listahatárolókat használunk, például pontot, jobb zárójelet, felsorolásjelet és szóközöket.
+Ebben a lépésben létrehozunk egy szöveges karakterláncot, amely egy listaszámokat és szóközöket tartalmazó szöveges dokumentumot szimulál. Különböző listahatárolókat használunk, például pontot, jobb zárójelet, felsorolásjelet és szóközöket.
 
 ## 3. lépés: A feltöltési beállítások konfigurálása
 

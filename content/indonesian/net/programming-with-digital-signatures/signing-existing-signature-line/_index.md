@@ -114,7 +114,7 @@ J: Untuk menandatangani baris tanda tangan yang ada di dokumen Word menggunakan 
 A: Ya, Anda dapat menyesuaikan tampilan tanda tangan digital pada baris tanda tangan yang ada dengan menyediakan file gambar yang mewakili tanda tangan tersebut. Gambar dapat berupa logo, tanda tangan tulisan tangan, atau representasi grafis lainnya dari tanda tangan tersebut. Anda dapat mengatur`SignatureLineImage` properti dari`SignOptions` kelas ke byte file gambar.
 
 #### T: Bisakah saya menandatangani beberapa baris tanda tangan yang ada di dokumen Word?
- J: Ya, Anda bisa menandatangani beberapa baris tanda tangan yang ada di dokumen Word. Anda harus mengikuti langkah-langkah untuk setiap baris tanda tangan satu per satu, mengatur yang sesuai`SignatureLineId` Dan`SignatureLineImage` nilai-nilai dalam`SignOptions` objek untuk setiap baris tanda tangan.
+ J: Ya, Anda bisa menandatangani beberapa baris tanda tangan yang ada di dokumen Word. Anda harus mengikuti langkah-langkah untuk setiap baris tanda tangan satu per satu, mengatur yang sesuai`SignatureLineId` Dan`SignatureLineImage` nilai-nilai di`SignOptions` objek untuk setiap baris tanda tangan.
 
 #### T: Apa format file gambar untuk tanda tangan digital di baris tanda tangan yang sudah ada?
 

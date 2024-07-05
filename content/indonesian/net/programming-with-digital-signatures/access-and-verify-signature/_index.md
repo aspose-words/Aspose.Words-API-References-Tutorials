@@ -103,7 +103,7 @@ J: Untuk memverifikasi validitas tanda tangan digital di dokumen Word menggunaka
 
 #### T: Bisakah saya mengambil komentar atau alasan penandatanganan dari tanda tangan digital di dokumen Word?
 
-J: Ya, Anda dapat mengambil komentar atau alasan penandatanganan dari tanda tangan digital di dokumen Word. Itu`Comments` properti dari`DigitalSignature` Objek tersebut menyediakan akses ke komentar yang ditentukan oleh penanda tangan selama proses penandatanganan.
+J: Ya, Anda dapat mengambil komentar atau alasan penandatanganan dari tanda tangan digital di dokumen Word. Itu`Comments` properti dari`DigitalSignature` objek menyediakan akses ke komentar yang ditentukan oleh penandatangan selama proses penandatanganan.
 
 #### T: Jenis dokumen apa yang didukung fitur verifikasi tanda tangan di Aspose.Words untuk .NET?
 

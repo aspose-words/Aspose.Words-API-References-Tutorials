@@ -97,4 +97,4 @@ S: Att infoga ett textinkluderingsfält utan dokumentbyggaren påverkar inte dir
 
 #### F: Kan jag anpassa utseendet på textinkluderingsfältet i ett Word-dokument med Aspose.Words för .NET?
 
-S: Textfältsinkluderingen anpassar inte direkt dess utseende i ett Word-dokument. Du kan dock formatera den inkluderade texten med hjälp av styckeegenskaper, teckensnittsegenskaper och andra formateringsobjekt som finns tillgängliga i Aspose.Words för .NET.
+S: Textinkluderingsfältet anpassar inte direkt utseendet i ett Word-dokument. Du kan dock formatera den inkluderade texten med hjälp av styckeegenskaper, teckensnittsegenskaper och andra formateringsobjekt som finns tillgängliga i Aspose.Words för .NET.

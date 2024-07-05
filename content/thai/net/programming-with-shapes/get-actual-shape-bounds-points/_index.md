@@ -17,7 +17,7 @@ url: /th/net/programming-with-shapes/get-actual-shape-bounds-points/
 - ความรู้พื้นฐานเกี่ยวกับ C# และการประมวลผลคำด้วยเอกสาร Word
 
 ## ขั้นตอนที่ 1: สร้างเอกสารใหม่และ DocumentBuilder
- สร้างอินสแตนซ์ใหม่ของ`Document` คลาสและก`DocumentBuilder` คัดค้านการทำงานกับเอกสาร
+ สร้างอินสแตนซ์ใหม่ของ`Document` คลาสและก`DocumentBuilder`คัดค้านการทำงานกับเอกสาร
 
 ```csharp
 Document doc = new Document();

@@ -72,7 +72,7 @@ Az oldalelrendezés gyakran aggodalomra ad okot a dokumentumok kombinálásakor.
 
 fejlécek és láblécek megőrzése az egyesítési folyamat során elengedhetetlen, különösen a szabványos fejlécekkel és láblécekkel rendelkező dokumentumokban. Az Aspose.Words zökkenőmentesen megőrzi ezeket az elemeket.
 
-## Dokumentumszakaszok használata
+## Dokumentumrészek használata
 
 A dokumentumokat gyakran különböző formázású vagy fejlécű szakaszokra osztják. Az Aspose.Words lehetővé teszi ezen szakaszok önálló kezelését, biztosítva a megfelelő elrendezést.
 

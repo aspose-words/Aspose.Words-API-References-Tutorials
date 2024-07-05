@@ -62,7 +62,7 @@ Ezzel véget is értünk az Aspose.Words for .NET-hez készült "Get Merge Field
 
 #### 1. kérdés: Mi az a körlevél az Aspose.Words programban?
 
-Az Aspose.Words levelezőegyesítése egy olyan folyamat, amely külső forrásból (pl. Excel-táblázatból vagy adatbázisból) származó adatokat egyesít egy Word-dokumentum-sablonnal személyre szabott dokumentumok létrehozása érdekében. Ez megkönnyíti a levelek, jelentések és más hasonló dokumentumok automatikus generálását.
+Az Aspose.Words levelezőegyesítése egy olyan folyamat, amely külső forrásból (pl. Excel-táblázatból vagy adatbázisból) származó adatokat egyesít egy Word-dokumentum sablonnal, így személyre szabott dokumentumokat hozhat létre. Ez megkönnyíti a levelek, jelentések és más hasonló dokumentumok automatikus generálását.
 
 #### 2. kérdés: Hogyan kaphatom meg a Word-dokumentumban elérhető körlevél-mezők listáját?
 
@@ -96,7 +96,7 @@ foreach (string fieldName in fieldNames)
 
 #### K: Mi az a körlevél az Aspose.Words programban?
 
-V: Az Aspose.Words körlevél-összevonása egy olyan folyamat, amely egy külső forrásból (pl. Excel-táblázatból vagy adatbázisból) származó adatokat egyesít egy Word dokumentumsablonnal személyre szabott dokumentumok létrehozása érdekében. Ez megkönnyíti a levelek, jelentések és más hasonló dokumentumok automatikus generálását.
+V: Az Aspose.Words körlevél-összevonása egy olyan folyamat, amely külső forrásból (pl. Excel-táblázatból vagy adatbázisból) származó adatokat egyesít egy Word dokumentumsablonnal, így személyre szabott dokumentumokat hozhat létre. Ez megkönnyíti a levelek, jelentések és más hasonló dokumentumok automatikus generálását.
 
 #### K: Hogyan kaphatom meg a Word-dokumentumban elérhető körlevél-mezők listáját?
 

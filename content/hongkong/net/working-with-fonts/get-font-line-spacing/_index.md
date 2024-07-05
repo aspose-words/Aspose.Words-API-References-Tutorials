@@ -61,7 +61,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## 結論
-在本教學中，我們了解如何使用 Aspose.Words for .NET 取得 Word 文件中的字體行間距。字體行距對於控製文字行之間的垂直間距非常重要。請隨意使用此功能來自訂文件中文字的外觀。
+在本教學中，我們了解如何使用 Aspose.Words for .NET 取得 Word 文件中的字體行距。字體行距對於控製文字行之間的垂直間距很重要。請隨意使用此功能來自訂文件中文字的外觀。
 
 ### 常見問題解答
 

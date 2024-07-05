@@ -15,7 +15,7 @@ Aspose.Words voor Python is een bibliotheek met veel functies waarmee ontwikkela
 
 ## Een nieuw document maken
 
-Laten we beginnen met het maken van een nieuw Word-document met Aspose.Words voor Python. Het volgende codefragment laat zien hoe u een nieuw document kunt starten en op een specifieke locatie kunt opslaan:
+Laten we beginnen met het maken van een nieuw Word-document met Aspose.Words voor Python. Het volgende codefragment laat zien hoe u een nieuw document kunt initiëren en op een specifieke locatie kunt opslaan:
 
 ```python
 import aspose.words as aw

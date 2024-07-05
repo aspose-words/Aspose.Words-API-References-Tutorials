@@ -18,7 +18,7 @@ Porównanie dokumentów obejmuje analizę dwóch dokumentów i identyfikację r�
 
 ## Podstawowe porównanie dokumentów
 
- Zacznijmy od podstaw porównywania dokumentów. Posłużymy się dwoma dokumentami,`docA` I`docB`i porównaj je.
+ Zacznijmy od podstaw porównywania dokumentów. Będziemy korzystać z dwóch dokumentów,`docA` I`docB`i porównaj je.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -103,7 +103,7 @@ Porównywanie dokumentów w Aspose.Words for Java to potężna funkcja, którą 
 
 ### Czy mogę porównywać dokumenty o złożonym formatowaniu za pomocą Aspose.Words dla Java?
 
-Tak, Aspose.Words dla Java zapewnia opcje porównywania dokumentów o złożonym formatowaniu. Możesz dostosować porównanie do swoich wymagań.
+Tak, Aspose.Words dla Java udostępnia opcje porównywania dokumentów o złożonym formatowaniu. Możesz dostosować porównanie do swoich wymagań.
 
 ### Czy Aspose.Words dla Java nadaje się do systemów zarządzania dokumentami?
 

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 2: Muat dokumen dan konfigurasikan pengaturan substitusi font
- Selanjutnya, kita akan memuat dokumen menggunakan`Document` kelas dan konfigurasikan pengaturan penggantian font menggunakan`FontSettings` kelas. Kami akan memuat pengaturan fallback font Noto menggunakan`LoadNotoFallbackSettings()` metode.
+ Selanjutnya, kita akan memuat dokumen menggunakan`Document` kelas dan konfigurasikan pengaturan penggantian font menggunakan`FontSettings`kelas. Kami akan memuat pengaturan fallback font Noto menggunakan`LoadNotoFallbackSettings()` metode.
 
 ```csharp
 // Muat dokumen dan konfigurasikan pengaturan substitusi font

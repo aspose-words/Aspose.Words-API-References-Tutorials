@@ -39,7 +39,7 @@ Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
 doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 ```
 
- I detta sista steg sparar vi det resulterande dokumentet i RTF-format med hjälp av`Save` metod och skickar sökvägen till utdatafilen.
+ I detta sista steg sparar vi det resulterande dokumentet i RTF-format med hjälp av`Save` metod och skicka sökvägen till utdatafilen.
 
 Nu kan du köra källkoden för att ladda RTF-dokumentet och korrekt känna igen UTF-8-kodad text. Det resulterande dokumentet kommer att sparas i den angivna katalogen med namnet "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf".
 

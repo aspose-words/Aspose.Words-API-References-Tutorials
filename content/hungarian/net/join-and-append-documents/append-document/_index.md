@@ -91,7 +91,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### 3. Hogyan biztosíthatom a formázás megőrzését a dokumentumok csatolásakor?
 
- Használja a`ImportFormatMode.KeepSourceFormatting` paramétereket a`AppendDocument` módszer a forrásdokumentum formázásának megőrzésére.
+ Használja a`ImportFormatMode.KeepSourceFormatting` paraméter a`AppendDocument` módszer a forrásdokumentum formázásának megőrzésére.
 
 ### 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 

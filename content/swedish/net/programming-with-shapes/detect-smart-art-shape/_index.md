@@ -21,7 +21,7 @@ Innan vi dyker in i detaljerna, låt oss se till att du har allt konfigurerat:
 3. Visual Studio: Alla senaste versioner bör fungera, men den senaste versionen rekommenderas.
 4. .NET Framework: Se till att det är installerat på ditt system.
 
-Redo att börja? Grymt bra! Låt oss hoppa direkt in.
+Redo att komma igång? Grymt bra! Låt oss hoppa direkt in.
 
 ## Importera namnområden
 

@@ -50,7 +50,7 @@ Mã này đặt chế độ bố cục thành "Lưới" và sau đó chỉ đị
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Đặt chế độ bố cục cho một phần cho phép xác định hành vi lưới tài liệu.
-	// Lưu ý rằng tab Lưới Tài liệu sẽ hiển thị trong hộp thoại Thiết lập Trang của MS Word.
+	// Lưu ý rằng tab Lưới tài liệu sẽ hiển thị trong hộp thoại Thiết lập trang của MS Word
 	// nếu bất kỳ ngôn ngữ Châu Á nào được xác định là ngôn ngữ chỉnh sửa.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

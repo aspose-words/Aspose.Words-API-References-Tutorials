@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Paso 5: crear la clase de controlador de advertencias
 
-Para manejar las advertencias de manera efectiva, cree una clase personalizada que implemente la`IWarningCallback` interfaz. Esta clase capturará y registrará cualquier advertencia de sustitución de fuentes.
+ Para manejar las advertencias de manera efectiva, cree una clase personalizada que implemente la`IWarningCallback` interfaz. Esta clase capturará y registrará cualquier advertencia de sustitución de fuentes.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Ahora domina el proceso de manejo de la sustitución de fuentes sin sufijos usan
 
 ### P1: ¿Cómo puedo utilizar fuentes de varios directorios personalizados?
 
- Puedes agregar varios`FolderFontSource` instancias a la`fontSources` enumere y actualice las fuentes de fuentes en consecuencia.
+ Puedes agregar varios`FolderFontSource` instancias a la`fontSources`enumere y actualice las fuentes de fuentes en consecuencia.
 
 ### P2: ¿Dónde puedo descargar una prueba gratuita de Aspose.Words para .NET?
 

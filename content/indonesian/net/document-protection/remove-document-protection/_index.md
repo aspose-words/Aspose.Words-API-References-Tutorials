@@ -91,7 +91,7 @@ J: Untuk menghapus proteksi dokumen menggunakan Aspose.Words for .NET, Anda dapa
 3.  Hubungi`Unprotect` metode`Document` keberatan untuk menghapus perlindungan yang ada dari dokumen. Hal ini dapat dilakukan tanpa kata sandi atau dengan memberikan kata sandi yang benar.
 4.  Simpan dokumen yang tidak dilindungi menggunakan`Save` metode`Document` obyek.
 
-#### T: Bisakah saya menghapus perlindungan dari dokumen Word tanpa kata sandi?
+#### T: Dapatkah saya menghapus perlindungan dari dokumen Word tanpa kata sandi?
 
  J: Ya, Anda dapat menghapus perlindungan dari dokumen Word tanpa kata sandi menggunakan Aspose.Words untuk .NET. Dengan menelepon`Unprotect` metode`Document`objek tanpa memberikan kata sandi, Anda dapat menghapus perlindungan dari dokumen jika sebelumnya dilindungi tanpa kata sandi.
 

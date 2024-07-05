@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -98,7 +98,7 @@ Az Aspose.Words for .NET használatával automatizálhatja a dokumentumok terül
 Az Aspose.Words for .NET egy hatékony dokumentumfeldolgozó könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, módosítását és konvertálását .NET-alkalmazásokban. Átfogó API-készletet biztosít a szövegfeldolgozáshoz dokumentumelemekkel, beleértve diagramokat, bekezdéseket, táblázatokat és sok mást.
 
 #### Q2. Hogyan telepíthetem az Aspose.Words for .NET fájlt?
-Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjével közvetlenül a projektbe telepítheti a könyvtárat. Egyszerűen keresse meg az "Apose.Words" kifejezést a NuGet csomagkezelőben, és telepítse a csomagot.
+Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjével közvetlenül a projektbe telepítheti a könyvtárat. Egyszerűen keresse meg az „Aspose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a csomagot.
 
 #### Q3. Testreszabhatom a területdiagram megjelenését?
 Igen, az Aspose.Words for .NET használatával testreszabhatja a területdiagram megjelenését. Módosíthatja a tulajdonságokat, például a diagram címét, a sorozat színét, a tengelycímkéket és a diagramterület formázását. A könyvtár API-k gazdag készletét kínálja a diagram vizuális elemeinek vezérléséhez és az igényeinek megfelelő testreszabott megjelenés létrehozásához.

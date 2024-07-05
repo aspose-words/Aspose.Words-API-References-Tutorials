@@ -36,7 +36,7 @@ Bu ad alanları, Word belgelerini oluşturmak, değiştirmek ve kaydetmek için 
 
 ## Adım 1: Belge Dizinini Ayarlama
 
-Öncelikle belgelerimizin saklandığı dizini belirtmemiz gerekiyor. Bu Aspose.Words'ün çalışmak istediğimiz dosyaları bulmasına yardımcı olur.
+Öncelikle belgelerimizin saklandığı dizini belirtmemiz gerekiyor. Bu, Aspose.Words'ün çalışmak istediğimiz dosyaları bulmasına yardımcı olur.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -91,7 +91,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 
 ### 3. Belgeleri eklerken formatın korunduğundan nasıl emin olabilirim?
 
- Kullan`ImportFormatMode.KeepSourceFormatting` parametreler`AppendDocument` Kaynak belgenin biçimlendirmesini koruma yöntemi.
+ Kullan`ImportFormatMode.KeepSourceFormatting` parametresi`AppendDocument` Kaynak belgenin biçimlendirmesini koruma yöntemi.
 
 ### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 

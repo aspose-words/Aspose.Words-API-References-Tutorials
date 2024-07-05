@@ -17,7 +17,7 @@ Assurez-vous que vous disposez des conditions préalables suivantes :
 - Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de document où le document de sortie sera enregistré.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique.
+## Étape 2 : Créez un nouveau document et insérez un graphique
 
  Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
 
@@ -98,7 +98,7 @@ En utilisant Aspose.Words pour .NET, vous pouvez automatiser le processus de gé
 Aspose.Words for .NET est une puissante bibliothèque de traitement de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programme dans des applications .NET. Il fournit un ensemble complet d'API pour le traitement de texte avec des éléments de document, notamment des graphiques, des paragraphes, des tableaux, etc.
 
 #### Q2. Comment installer Aspose.Words pour .NET ?
-Pour installer Aspose.Words pour .NET, vous pouvez utiliser le gestionnaire de packages NuGet dans Visual Studio pour installer la bibliothèque directement dans votre projet. Recherchez simplement « Apose.Words » dans le gestionnaire de packages NuGet et installez le package.
+Pour installer Aspose.Words pour .NET, vous pouvez utiliser le gestionnaire de packages NuGet dans Visual Studio pour installer la bibliothèque directement dans votre projet. Recherchez simplement « Aspose.Words » dans le gestionnaire de packages NuGet et installez le package.
 
 #### Q3. Puis-je personnaliser l’apparence du graphique en aires ?
 Oui, en utilisant Aspose.Words pour .NET, vous pouvez personnaliser divers aspects de l’apparence du graphique en aires. Vous pouvez modifier les propriétés telles que le titre du graphique, la couleur de la série, les étiquettes des axes et le formatage de la zone du graphique. La bibliothèque fournit un riche ensemble d'API pour contrôler les éléments visuels du graphique et créer une apparence personnalisée adaptée à vos besoins.

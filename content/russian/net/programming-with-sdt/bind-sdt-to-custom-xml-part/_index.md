@@ -23,7 +23,7 @@ url: /ru/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Шаг 2. Создайте документ и CustomXmlPart.
+## Шаг 2. Создайте документ и CustomXmlPart.
  Создайте новый экземпляр`Document` класс и`CustomXmlPart` для хранения пользовательских XML-данных. Пользовательский XML должен быть в допустимом формате XML. В этом примере мы используем простую строку XML`<root><text>Hello, World!</text></root>`.
 
 ```csharp

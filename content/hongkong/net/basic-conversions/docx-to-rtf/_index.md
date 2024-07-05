@@ -33,7 +33,7 @@ using Aspose.Words;
 首先，您需要設定開發環境。在 IDE 中建立新專案並安裝 Aspose.Words for .NET。
 
 1. 建立新專案：開啟 Visual Studio 並建立一個新的 C# 專案。
-2. 安裝 Aspose.Words for .NET：您可以透過 NuGet 套件管理器搜尋「Apose.Words」來安裝它。
+2. 安裝 Aspose.Words for .NET：您可以透過 NuGet 套件管理器搜尋「Aspose.Words」來安裝它。
 
 ```sh
 Install-Package Aspose.Words

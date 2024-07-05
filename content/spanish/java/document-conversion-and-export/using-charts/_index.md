@@ -135,7 +135,7 @@ Puede formatear etiquetas de datos accediendo al`DataLabels` propiedades de una 
 
 ### ¿Cómo personalizo las propiedades de los ejes en un gráfico?
 
- Puede personalizar las propiedades de los ejes, como tipo, marcas de graduación, etiquetas y más, accediendo a la`ChartAxis` propiedades como`setCategoryType()`, `setCrosses()` , y`setMajorTickMark()`.
+ Puede personalizar las propiedades de los ejes, como el tipo, las marcas de graduación, las etiquetas y más, accediendo a la`ChartAxis` propiedades como`setCategoryType()`, `setCrosses()` , y`setMajorTickMark()`.
 
 ### ¿Cómo puedo crear otros tipos de gráficos como gráficos de dispersión o de áreas?
 

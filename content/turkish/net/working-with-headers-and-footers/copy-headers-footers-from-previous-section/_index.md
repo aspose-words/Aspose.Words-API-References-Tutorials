@@ -131,4 +131,4 @@ Evet, bu eğitimde açıklanan yöntemi kullanarak bir Word belgesindeki herhang
 
 ### S5: Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
 
-Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[indirme sayfası](https://releases.aspose.com/).
+ Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[indirme sayfası](https://releases.aspose.com/).

@@ -72,7 +72,7 @@ Trả lời: Mã được phân tách trong Markdown cải thiện khả năng �
 
 #### Câu hỏi: Sự khác biệt giữa mã được phân cách và thụt lề trong Markdown là gì?
 
-Đáp: Mã được phân tách sử dụng các dấu phân cách cụ thể để bao quanh mã, trong khi mã thụt lề bao gồm việc thụt lề từng dòng mã bằng dấu cách hoặc tab.
+Đáp: Mã được phân cách sử dụng các dấu phân cách cụ thể để bao quanh mã, trong khi mã thụt lề bao gồm việc thụt lề từng dòng mã bằng dấu cách hoặc tab.
 
 #### Câu hỏi: Mã được phân tách trong Markdown có được tất cả trình soạn thảo Markdown hỗ trợ không?
 

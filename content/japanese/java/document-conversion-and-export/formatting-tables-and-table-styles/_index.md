@@ -1,24 +1,24 @@
 ---
 title: Aspose.Words for Java でのテーブルとテーブル スタイルの書式設定
-linktitle: 表と表スタイルの書式設定
+linktitle: 表の書式設定と表スタイル
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java でテーブルをフォーマットし、テーブル スタイルを適用する方法を学びます。ソースコードを含むステップバイステップのガイドを参照して、効果的な表の書式設定を行ってください。 Aspose.Words を使用してドキュメントのレイアウトを強化します。
+description: Aspose.Words for Java でテーブルをフォーマットし、テーブル スタイルを適用する方法を学びます。効果的なテーブル フォーマットのためのソース コードを含むステップ バイ ステップ ガイドを調べます。Aspose.Words を使用してドキュメント レイアウトを強化します。
 type: docs
 weight: 17
 url: /ja/java/document-conversion-and-export/formatting-tables-and-table-styles/
 ---
 
-## Aspose.Words for Java でのテーブルとテーブル スタイルの書式設定の概要
+## Aspose.Words for Java での表の書式設定と表スタイルの概要
 
-表は、文書内の情報を構造化および整理する上で重要な役割を果たします。 Aspose.Words for Java は、表の書式を設定し、表のスタイルを適用して文書の視覚的な魅力を高めるための強力な機能を提供します。このステップバイステップ ガイドでは、Aspose.Words for Java を使用したテーブルの書式設定とテーブル スタイルの適用のさまざまな側面を説明します。
+表は、ドキュメント内の情報を構造化および整理する上で重要な役割を果たします。Aspose.Words for Java は、表の書式設定や表スタイルの適用を行う強力な機能を提供し、ドキュメントの見た目を向上します。このステップ バイ ステップ ガイドでは、Aspose.Words for Java を使用して表を書式設定し、表スタイルを適用するさまざまな側面について説明します。
 
 ## 前提条件
 
-詳細に入る前に、Aspose.Words for Java ライブラリがプロジェクトに統合されていることを確認してください。 Aspose Web サイトからダウンロードできます。[Java 用 Aspose.Words をダウンロード](https://releases.aspose.com/words/java/).
+詳細に入る前に、Aspose.Words for Java ライブラリがプロジェクトに統合されていることを確認してください。Aspose の Web サイトからダウンロードできます。[Aspose.Words for Java をダウンロード](https://releases.aspose.com/words/java/).
 
-## 表と周囲のテキストの間の距離を取得する
+## 表と周囲のテキスト間の距離を取得する
 
-まず、文書内の表と周囲のテキストとの間の距離を取得する方法を見てみましょう。
+まず、ドキュメント内の表と周囲のテキスト間の距離を取得する方法を見てみましょう。
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");
@@ -29,9 +29,9 @@ System.out.println("Distance Right: " + table.getDistanceRight());
 System.out.println("Distance Left: " + table.getDistanceLeft());
 ```
 
-## 表にアウトライン枠を適用する
+## 表にアウトライン罫線を適用する
 
-次のコードを使用して、表をページの中央に配置したり、既存の境界線をクリアしたり、カスタムのアウトライン境界線を設定したりできます。
+次のコードを使用すると、表をページの中央に揃え、既存の境界線をクリアし、カスタムのアウトライン境界線を設定できます。
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");
@@ -45,7 +45,7 @@ table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
 table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
 ```
 
-## 枠線付きの表を作成する
+## 境界線付きの表を作成する
 
 このコード スニペットは、テーブルを作成し、テーブルとそのセルの両方に境界線を設定する方法を示しています。
 
@@ -56,9 +56,9 @@ table.clearBorders();
 table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
 ```
 
-## 行の書式設定を変更する
+## 行の書式を変更する
 
-テーブル内の特定の行の書式設定を変更する方法を学びます。
+テーブル内の特定の行の書式を変更する方法を学習します。
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");
@@ -71,7 +71,7 @@ firstRow.getRowFormat().setAllowBreakAcrossPages(true);
 
 ## 行の書式設定を適用する
 
-この例は、テーブル内の行全体に書式設定を適用する方法を示しています。
+この例では、テーブル内の行全体に書式を適用する方法を示します。
 
 ```java
 Document doc = new Document();
@@ -88,9 +88,9 @@ table.setBottomPadding(30.0);
 builder.writeln("I'm a wonderfully formatted row.");
 ```
 
-## セルのパディングを設定する
+## セルの余白を設定する
 
-テーブル内の個々のセルにパディングを設定する方法を調べます。
+テーブル内の個々のセルにパディングを設定する方法を確認します。
 
 ```java
 Document doc = new Document();
@@ -101,9 +101,9 @@ builder.getCellFormat().setPaddings(30.0, 50.0, 30.0, 50.0);
 builder.writeln("I'm a wonderfully formatted cell.");
 ```
 
-## セルの書式設定を変更する
+## セルの書式を変更する
 
-テーブル内の特定のセルの書式設定を変更する方法を説明します。
+テーブル内の特定のセルの書式を変更する方法について説明します。
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");
@@ -114,26 +114,26 @@ firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
 firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
 ```
 
-## テーブルとセルを異なる枠線で書式設定する
+## 表とセルを異なる境界線で書式設定する
 
-表内の個々のセルに異なる境界線を設定する方法を学びます。
+表内の個々のセルに異なる境界線を設定する方法を学習します。
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 Table table = builder.startTable();
-//テーブルの境界線を設定する
+//表の境界線を設定する
 table.setBorders(LineStyle.SINGLE, 2.0, Color.BLACK);
-//個々のセルにセルのシェーディングを設定する
+//個々のセルのセルの網掛けを設定する
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.RED);
 //セルにコンテンツを追加する
 builder.writeln("Cell #1");
 builder.insertCell();
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
-//次の行のセルの書式設定をクリアします
+//次の行のセルの書式をクリアする
 builder.getCellFormat().clearFormatting();
-//この行の最初のセルに大きな境界線を作成します
+//この行の最初のセルに大きい境界線を作成します
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -155,9 +155,9 @@ table.setTitle("Test title");
 table.setDescription("Test description");
 ```
 
-## ステップ 10: セル間隔を許可する
+## ステップ10: セル間隔を許可する
 
-セル間隔を許可し、テーブルの値を設定します。
+セル間隔を許可し、テーブルのその値を設定します。
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");
@@ -166,9 +166,9 @@ table.setAllowCellSpacing(true);
 table.setCellSpacing(2.0);
 ```
 
-## ステップ 11: スタイルのある表を作成する
+## ステップ11: スタイル付きのテーブルを作成する
 
-事前定義されたスタイルを使用してテーブルを作成します。
+定義済みのスタイルでテーブルを作成します。
 
 ```java
 Document doc = new Document();
@@ -182,9 +182,9 @@ builder.insertCell();
 builder.writeln("Quantity (kg)");
 ```
 
-## ステップ 12: スタイルからセルと行の書式設定を展開する
+## ステップ12: スタイルからセルと行の書式設定を展開する
 
-表のスタイルを展開してセルと行に書式設定を適用する方法を学びます。
+表スタイルを展開してセルと行に書式を適用する方法を学習します。
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");
@@ -195,9 +195,9 @@ doc.expandTableStylesToDirectFormatting();
 Color cellShadingAfter = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
 ```
 
-## ステップ 13: 表スタイルを作成する
+## ステップ13: 表スタイルを作成する
 
-特定の書式設定を使用してカスタム表スタイルを作成します。
+特定の書式でカスタム テーブル スタイルを作成します。
 
 ```java
 Document doc = new Document();
@@ -211,9 +211,9 @@ builder.insertCell();
 builder.writeln("Quantity (kg)");
 ```
 
-## ステップ 14: 条件付き書式を定義する
+## ステップ14: 条件付き書式を定義する
 
-テーブル内の行に条件付き書式設定を適用します。
+表の行に条件付き書式を適用します。
 
 ```java
 Document doc = new Document();
@@ -224,7 +224,7 @@ tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatter
 table.setStyle(tableStyle);
 ```
 
-## ステップ 15: TableCell の書式設定を設定する
+## ステップ15: TableCellの書式設定
 
 個々のセルに特定の書式を設定します。
 
@@ -242,9 +242,9 @@ cellFormat.setBottomPadding(30.0);
 builder.writeln("I'm a wonderfully formatted cell.");
 ```
 
-## ステップ 16: TableRow の書式設定を設定する
+## ステップ16: TableRowの書式設定を設定する
 
-テーブル内の行全体に書式設定を適用します。
+表の行全体に書式を適用します。
 
 ```java
 Document doc = new Document();
@@ -262,26 +262,26 @@ builder.writeln("I'm a wonderfully formatted row.");
 
 ## 結論
 
-Aspose.Words for Java を使用すると、表をフォーマットし、表のスタイルを正確に適用できます。個々のセルの書式設定の変更からカスタムの表スタイルの作成まで、ドキュメントを視覚的に魅力的で整理するためのツールが用意されています。
+Aspose.Words for Java を使用すると、表の書式設定や表スタイルを正確に適用できます。個々のセルの書式設定の変更からカスタム表スタイルの作成まで、ドキュメントを視覚的に魅力的で整理されたものにするためのツールが用意されています。
 
 ## よくある質問
 
-### Aspose.Words for Java をダウンロードするにはどうすればよいですか?
+### Aspose.Words for Java をダウンロードするにはどうすればいいですか?
 
- Aspose.Words for Java は、Aspose Web サイトからダウンロードできます。[Java 用 Aspose.Words をダウンロード](https://releases.aspose.com/words/java/).
+ Aspose.Words for Java は Aspose の Web サイトからダウンロードできます。[Aspose.Words for Java をダウンロード](https://releases.aspose.com/words/java/).
 
-### 表内の個々のセルに異なる枠線を適用できますか?
+### 表内の個々のセルに異なる境界線を適用できますか?
 
-はい、このガイドで説明するように、Aspose.Words for Java を使用してテーブル内の個々のセルに異なる境界線を設定できます。
+はい、このガイドで説明されているように、Aspose.Words for Java を使用して、テーブル内の個々のセルに異なる境界線を設定できます。
 
-### テーブルのタイトルと説明を設定する目的は何ですか?
+### 表のタイトルと説明を設定する目的は何ですか?
 
-表のタイトルと説明を設定すると、文書のアクセシビリティと構成が強化され、読者や支援技術が内容を理解しやすくなります。
+表のタイトルと説明を設定すると、ドキュメントのアクセシビリティと構成が向上し、読者や支援技術がコンテンツを理解しやすくなります。
 
-### テーブル内の特定の行に条件付き書式設定を適用するにはどうすればよいですか?
+### 表内の特定の行に条件付き書式を適用するにはどうすればよいですか?
 
-このガイドで示すように、条件付き書式設定ルールを使用してカスタム テーブル スタイルを定義することにより、テーブル内の特定の行に条件付き書式設定を適用できます。
+このガイドに示すように、条件付き書式設定ルールを使用してカスタム テーブル スタイルを定義することで、テーブル内の特定の行に条件付き書式を適用できます。
 
-### Aspose.Words for Java のドキュメントやリソースはどこで見つけられますか?
+### Aspose.Words for Java の詳細なドキュメントやリソースはどこで入手できますか?
 
-包括的なドキュメントと追加リソースについては、Aspose.Words for Java ドキュメントを参照してください。[Aspose.Words for Java ドキュメント](https://reference.aspose.com/words/java/).
+包括的なドキュメントと追加リソースについては、Aspose.Words for Java のドキュメントをご覧ください。[Aspose.Words for Java ドキュメント](https://reference.aspose.com/words/java/).

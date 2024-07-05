@@ -12,7 +12,7 @@ Neste guia passo a passo, mostraremos como obter os detalhes de um grupo de revi
 
 ## Passo 1: Carregando o documento
 
-O primeiro passo é fazer o upload do documento contendo as revisões.
+primeiro passo é fazer o upload do documento contendo as revisões.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
@@ -20,7 +20,7 @@ Document doc = new Document(MyDir + "Revisions.docx");
 
 ## Etapa 2: navegar pelas revisões
 
-A seguir, percorreremos as revisões presentes no documento e exibiremos seus detalhes, como tipo, autor, data e texto revisado.
+seguir, percorreremos as revisões presentes no documento e exibiremos seus detalhes, como tipo, autor, data e texto revisado.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -67,7 +67,7 @@ Neste tutorial, aprendemos como obter os detalhes de um grupo de revisões em um
 
 #### P: Como carrego um documento com revisões no Aspose.Words for .NET?
 
- R: Use o`Document`classe de Aspose.Words for .NET para carregar um documento de um arquivo contendo revisões. Você pode especificar o caminho completo do documento.
+ R: Use o`Document` classe de Aspose.Words for .NET para carregar um documento de um arquivo contendo revisões. Você pode especificar o caminho completo do documento.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### P: Como obtenho os detalhes de um grupo de revisão no Aspose.Words for .NET?
 
- R: Percorra as revisões do documento usando um loop e acesse as propriedades de cada revisão para obter os detalhes desejados. Você pode usar o`RevisionType`, `Author`, `DateTime` e`ParentNode` propriedades para obter o tipo de revisão, autor, data e texto revisado respectivamente.
+R: Percorra as revisões do documento usando um loop e acesse as propriedades de cada revisão para obter os detalhes desejados. Você pode usar o`RevisionType`, `Author`, `DateTime` e`ParentNode` propriedades para obter o tipo de revisão, autor, data e texto revisado respectivamente.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### P: Como verificar se uma revisão pertence a um grupo no Aspose.Words for .NET?
 
- R: Use o`Group` propriedade do`Revision` objeto para verificar se uma revisão pertence a um grupo. Se o`Group` propriedade é`null`significa que a revisão não pertence a nenhum grupo.
+ R: Use o`Group` propriedade do`Revision` objeto para verificar se uma revisão pertence a um grupo. Se o`Group` propriedade é`null`, significa que a revisão não pertence a nenhum grupo.
 
 ```csharp
 if (revision.Group != null)

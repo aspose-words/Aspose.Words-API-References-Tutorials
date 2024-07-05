@@ -14,7 +14,7 @@ W tym samouczku dowiemy się, jak ustawić preferowane ustawienia szerokości ko
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
 2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
 
-## Krok 2: Tworzenie dokumentu i inicjalizacja generatora dokumentów
+## Krok 2: Tworzenie dokumentu i inicjowanie generatora dokumentów
 Aby rozpocząć przetwarzanie tekstu za pomocą dokumentu i generatora dokumentów, wykonaj następujące kroki:
 
 ```csharp
@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Tutaj używamy narzędzia do tworzenia dokumentów, aby zbudować tabelę z trzema komórkami. Pierwsza komórka ma preferowaną szerokość 40 punktów, druga komórka ma preferowaną szerokość 20% szerokości tabeli, a trzecia komórka ma automatycznie preferowaną szerokość, która się dostosowuje.
+Tutaj używamy narzędzia do tworzenia dokumentów, aby zbudować tabelę z trzema komórkami. Pierwsza komórka ma preferowaną szerokość 40 punktów, druga komórka ma preferowaną szerokość 20% szerokości tabeli, a trzecia komórka ma automatycznie preferowaną szerokość, która dostosowuje się
 
   w zależności od dostępnej przestrzeni.
 

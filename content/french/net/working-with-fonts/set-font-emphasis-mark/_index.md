@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Créer et personnaliser le document
- Créez une instance du`Document` classe et un associé`DocumentBuilder` pour construire le contenu du document. Utilisez le`Font.EmphasisMark` propriété pour définir le style d'accentuation de la police sur`EmphasisMark.UnderSolidCircle` . Utilisez ensuite le`Write` et`Writeln` méthodes du`DocumentBuilder` pour ajouter du texte avec la police spécifiée, souligner.
+ Créez une instance du`Document` classe et un associé`DocumentBuilder` pour construire le contenu du document. Utilisez le`Font.EmphasisMark` propriété pour définir le style d'accentuation de la police sur`EmphasisMark.UnderSolidCircle` . Utilisez ensuite le`Write` et`Writeln` méthodes du`DocumentBuilder` pour ajouter du texte avec l'accentuation de la police spécifiée.
 
 ```csharp
 Document document = new Document();
@@ -59,7 +59,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Conclusion
-Dans ce didacticiel, vous avez appris à définir le style de mise en valeur de la police dans un document Word à l'aide d'Aspose.Words pour .NET. Expérimentez avec différents styles d'accentuation et utilisez cette fonctionnalité pour mettre en évidence des mots ou des expressions dans vos documents.
+Dans ce didacticiel, vous avez appris à définir le style d'accentuation de la police dans un document Word à l'aide d'Aspose.Words pour .NET. Expérimentez avec différents styles d'accentuation et utilisez cette fonctionnalité pour mettre en évidence des mots ou des expressions dans vos documents.
 
 ### FAQ
 

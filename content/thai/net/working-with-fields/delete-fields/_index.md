@@ -105,4 +105,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
    - ใช่ วิธีการที่แสดงไว้ที่นี่กำหนดเป้าหมายเฉพาะช่องเท่านั้น และทำให้เนื้อหาอื่นๆ ไม่เปลี่ยนแปลง
 
 ### ฉันจะหาแหล่งข้อมูลเพิ่มเติมและการสนับสนุนสำหรับ Aspose.Words ได้ที่ไหน
-   -  เยี่ยมชม[Aspose.Words สำหรับเอกสาร .NET API](https://reference.aspose.com/words/net/) และ[ฟอรั่ม Aspose.Words](https://forum.aspose.com/c/words/8)เพื่อขอความช่วยเหลือต่อไป
+   -  เยี่ยมชม[Aspose.Words สำหรับเอกสาร .NET API](https://reference.aspose.com/words/net/) และ[ฟอรั่ม Aspose.Words](https://forum.aspose.com/c/words/8) เพื่อขอความช่วยเหลือต่อไป

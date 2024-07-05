@@ -112,7 +112,7 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 
 ## Extrahování konkrétního obsahu
 
-Někdy může být potřeba extrahovat konkrétní obsah z dokumentu:
+Někdy může být nutné extrahovat konkrétní obsah z dokumentu:
 
 ```python
 target_section = doc.get_child_nodes(aw.NodeType.PARAGRAPH, True)[5:10]

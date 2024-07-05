@@ -17,7 +17,7 @@ Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
 - Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## Adım 2: Yeni bir belge oluşturun ve bir grafik ekleyin.
+## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -94,7 +94,7 @@ Bu, Aspose.Words for .NET kullanarak bir grafikteki veri etiketi sayısını bi�
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 	// Veya biçim kodunu bir kaynak hücreye bağlanacak şekilde ayarlayabilirsiniz.
-	//Bu durumda NumberFormat genel olarak sıfırlanacak ve bir kaynak hücreden devralınacaktır.
+	//bu durumda NumberFormat genel olarak sıfırlanacak ve bir kaynak hücreden devralınacaktır.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
@@ -115,13 +115,13 @@ Aspose.Words for .NET'i kullanarak, güçlü grafik oluşturma yeteneklerini .NE
 Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve kaydetmesine olanak tanıyan, zengin özelliklere sahip bir belge işleme kitaplığıdır. Grafikler ve veri etiketleri de dahil olmak üzere belge öğeleriyle Kelime İşleme için geniş bir özellik yelpazesi sunar.
 
 #### Q2. Aspose.Words for .NET'i nasıl kurabilirim?
-Aspose.Words for .NET'i, Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Apose.Words" ifadesini aramanız ve projenize yüklemeniz yeterlidir.
+Aspose.Words for .NET'i, Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini arayın ve projenize yükleyin.
 
 #### S3. Grafiğin diğer yönlerini Aspose.Words for .NET kullanarak formatlayabilir miyim?
 Evet, Aspose.Words for .NET bir grafiğin çeşitli yönlerini biçimlendirmek için kapsamlı yetenekler sağlar. Veri etiketlerine ek olarak grafik türünü, seri verilerini, eksen özelliklerini, açıklamayı, başlığı, çizim alanını ve grafiğin diğer birçok öğesini özelleştirebilirsiniz. API, grafik görünümü ve biçimlendirme üzerinde ayrıntılı kontrol sunar.
 
 #### S4. Aynı serideki farklı veri etiketlerine farklı sayı formatları uygulayabilir miyim?
-Evet, Aspose.Words for .NET, aynı seri içindeki bireysel veri etiketlerine farklı sayı formatları uygulamanıza olanak tanır. Erişerek`DataLabels` bir seriyle ilişkili koleksiyonu ayarlayabilirsiniz.`FormatCode` İstenilen sayı biçimini belirtmek için her veri etiketinin özelliği. Bu, sayısal değerleri aynı grafik içerisinde farklı formatlarda sunmanıza olanak tanır.
+Evet, Aspose.Words for .NET, aynı seri içindeki bireysel veri etiketlerine farklı sayı formatları uygulamanıza olanak tanır. Erişerek`DataLabels` bir seriyle ilişkili koleksiyonu ayarlayabilirsiniz.`FormatCode` İstenilen sayı biçimini belirtmek için her veri etiketinin özelliği. Bu, sayısal değerleri aynı grafikte farklı formatlarda sunmanıza olanak tanır.
 
 #### S5. Veri etiketleri için özel sayı formatlarını kullanabilir miyim?
  Evet, Aspose.Words for .NET, veri etiketleri için özel sayı formatlarını destekler. İstediğiniz sayı formatını ayarlayarak belirleyebilirsiniz.`FormatCode` bir veri etiketinin özelliğini özel bir biçim koduna dönüştürür. Bu size para birimi simgeleri, tarih biçimleri, yüzde değerleri ve daha fazlası gibi çok çeşitli sayı biçimlerini uygulama esnekliği sağlar.

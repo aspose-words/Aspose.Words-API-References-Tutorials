@@ -16,7 +16,7 @@ url: /zh-hant/net/working-with-fields/delete-fields/
 
 在深入學習本教程之前，請確保您具備以下先決條件：
 
-### 軟體需求
+### 軟體要求
 
 1. Visual Studio：已在您的系統上安裝並設定。
 2.  Aspose.Words for .NET：下載並整合到您的 Visual Studio 專案中。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
@@ -46,7 +46,7 @@ using Aspose.Words;
 如果您尚未在 Visual Studio 專案中新增對 Aspose.Words 的引用，請新增該引用。您可以透過以下方式執行此操作：
    - 在解決方案資源管理器中以滑鼠右鍵按一下您的專案。
    - 選擇“管理 NuGet 套件...”
-   - 搜尋“Apose.Words”並將其安裝到您的專案中。
+   - 搜尋“Aspose.Words”並將其安裝到您的專案中。
 
 ## 第 3 步：準備文件
 

@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Câu hỏi: Làm cách nào để duyệt các nhóm sửa đổi trong tài liệu trong Aspose.Words dành cho .NET?
 
- Đáp: Hãy sử dụng`Groups` thuộc tính của tài liệu`Revisions` object để có được bộ sưu tập các nhóm sửa đổi. Sau đó, bạn có thể sử dụng vòng lặp để lặp qua từng nhóm đánh giá.
+ Đáp: Hãy sử dụng`Groups` thuộc tính của tài liệu`Revisions`object để có được bộ sưu tập các nhóm sửa đổi. Sau đó, bạn có thể sử dụng vòng lặp để lặp qua từng nhóm đánh giá.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### Câu hỏi: Làm cách nào để có được loại bản sửa đổi của nhóm sửa đổi trong Aspose.Words cho .NET?
 
- Đáp: Hãy sử dụng`RevisionType` tài sản của`RevisionGroup`object để có được loại sửa đổi của nhóm.
+ Đáp: Hãy sử dụng`RevisionType` tài sản của`RevisionGroup` object để có được loại sửa đổi của nhóm.
 
 ```csharp
 string revisionType = group.RevisionType;

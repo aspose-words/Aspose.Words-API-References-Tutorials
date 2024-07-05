@@ -58,7 +58,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Present
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-Bu, Aspose.Words for .NET ile bir akışı kullanarak bir OLE nesnesini simge olarak eklemek için kullanılan eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun.
+Bu, Aspose.Words for .NET ile bir akışı kullanarak bir OLE nesnesini simge olarak eklemek için eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun.
 
 ## Çözüm
 

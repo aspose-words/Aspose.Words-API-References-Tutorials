@@ -1,29 +1,29 @@
 ---
-title: 追加のテキスト配置により PDF テキストの配置を改善
-linktitle: 追加のテキスト配置により PDF テキストの配置を改善
+title: 追加のテキスト配置でPDFテキストの配置を改善
+linktitle: 追加のテキスト配置でPDFテキストの配置を改善
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書を PDF に変換するときに、追加のテキスト配置を使用して PDF テキストの配置を改善する方法を学びます。
+description: Aspose.Words for .NET を使用して Word 文書を PDF に変換するときに、追加のテキスト配置を使用して PDF テキストの配置を改善する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-pdfsaveoptions/additional-text-positioning/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して追加のテキスト配置機能を使用して PDF テキストの配置を改善する手順を説明します。この機能を使用すると、Word 文書を PDF に変換するときに追加のテキストの配置を制御できます。以下の手順に従います。
+このチュートリアルでは、Aspose.Words for .NET の追加のテキスト配置機能を使用して PDF テキストの配置を改善する手順を説明します。この機能を使用すると、Word 文書を PDF に変換するときに追加のテキストの配置を制御できます。以下の手順に従ってください。
 
-## ステップ 1: ドキュメントをロードする
+## ステップ1: ドキュメントの読み込み
 
-まず、PDF に変換する Word 文書をアップロードします。
+まず、PDF に変換したい Word 文書をアップロードします。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Word 文書への正しいパスを指定してください。
+Word 文書への正しいパスを必ず指定してください。
 
-## ステップ 2: PDF 変換オプションを設定する
+## ステップ2: PDF変換オプションを設定する
 
-PdfSaveOptions クラスのインスタンスを作成し、追加のテキストの配置を有効にします。
+PdfSaveOptions クラスのインスタンスを作成し、追加のテキスト配置を有効にします。
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { AdditionalTextPositioning = true };
@@ -31,7 +31,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { AdditionalTextPositioning = tr
 
 このオプションは、PDF 内の追加テキストの正確な配置を制御します。
 
-## ステップ 3: ドキュメントを PDF に変換する
+## ステップ3: ドキュメントをPDFに変換する
 
 使用`Save`変換オプションを指定して Word 文書を PDF に変換する方法:
 
@@ -39,16 +39,16 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { AdditionalTextPositioning = tr
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", saveOptions);
 ```
 
-変換された PDF を保存するための正しいパスを指定してください。
+変換した PDF を保存するには、正しいパスを指定してください。
 
-### Aspose.Words for .NET を使用した追加のテキスト配置のソース コード例
+### Aspose.Words for .NET を使用した追加のテキスト配置のサンプル ソース コード
 
-Aspose.Words for .NET で追加のテキスト配置機能を使用するための完全なソース コードを次に示します。
+Aspose.Words for .NET で追加のテキスト配置機能を使用するための完全なソース コードは次のとおりです。
 
 
 ```csharp
 
-	//ドキュメントディレクトリへのパス。
+	//ドキュメント ディレクトリへのパス。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -57,33 +57,33 @@ Aspose.Words for .NET で追加のテキスト配置機能を使用するため�
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", saveOptions);
 
 ```
-これらの手順に従うことで、Aspose.Words for .NET を使用して Word 文書を PDF に変換するときに、追加のテキストの位置を簡単に制御できます。
+これらの手順に従うと、Aspose.Words for .NET を使用して Word 文書を PDF に変換するときに、追加テキストの配置を簡単に制御できます。
 
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用してテキストを追加することで、PDF ファイル内のテキストの位置を改善する方法を説明しました。概要を説明した手順に従うことで、Word 文書を PDF に変換する際に追加テキストの配置を正確に制御できます。 Word 文書への正しいパスを指定し、必要に応じて PDF に変換するオプションを構成してください。
+このチュートリアルでは、Aspose.Words for .NET を使用してテキストを追加することで、PDF ファイル内のテキストの配置を改善する方法について説明しました。説明されている手順に従うことで、Word 文書を PDF に変換するときに、追加テキストの配置を正確に制御できます。Word 文書への正しいパスを指定し、必要に応じて PDF への変換オプションを構成するようにしてください。
 
 ### よくある質問
 
 #### Q: PDF ファイル内の追加のテキスト配置機能とは何ですか?
-A: PDF に追加テキストを配置機能は、Word 文書を PDF に変換するときに追加テキストの正確な配置を制御するのに役立ちます。この機能を有効にすると、PDF ファイル内の追加テキストの正確な位置を指定できます。
+A: 「PDF に追加テキストを配置」機能は、Word 文書を PDF に変換するときに追加テキストの正確な配置を制御するのに役立ちます。この機能を有効にすると、PDF ファイル内の追加テキストの正確な位置を指定できます。
 
-#### Q: Aspose.Words for .NET を使用して、テキストを追加して PDF ファイル内のテキストの位置を改善するにはどうすればよいですか?
-A: Aspose.Words for .NET を使用してテキストを追加して PDF ファイル内のテキストの位置を改善するには、次の手順に従います。
+#### Q: Aspose.Words for .NET を使用して、テキストを追加することで PDF ファイル内のテキストの配置を改善するにはどうすればよいですか?
+A: Aspose.Words for .NET を使用してテキストを追加し、PDF ファイル内のテキストの配置を改善するには、次の手順に従います。
 
-を置き換えて、ドキュメントが配置されているディレクトリ パスを設定します。`"YOUR DOCUMENTS DIRECTORY"`ドキュメントディレクトリの実際のパスに置き換えます。
+ドキュメントが保存されているディレクトリパスを次のように設定します。`"YOUR DOCUMENTS DIRECTORY"`ドキュメント ディレクトリの実際のパスを入力します。
 
- PDF に変換したい Word 文書をロードします。`Document`クラスを指定し、指定したドキュメント ディレクトリ内の Word ドキュメントへのパスを指定します。
+ PDFに変換したいWord文書を読み込み、`Document`クラスを作成し、指定されたドキュメント ディレクトリ内の Word ドキュメントへのパスを指定します。
 
-のインスタンスを作成して、PDF として変換するためのオプションを構成します。`PdfSaveOptions`クラスを有効にして、`AdditionalTextPositioning`正確な値を有効にするオプション 
-PDF ファイル内の追加テキストの位置。
+ PDFに変換するためのオプションを設定するには、`PdfSaveOptions`クラスと有効化`AdditionalTextPositioning`正確な 
+PDF ファイル内の追加テキストの配置。
 
-ドキュメントを PDF 形式で保存するには、`Save`の方法`Document`パスと保存オプションを指定するクラス。
+ドキュメントをPDF形式で保存するには、`Save`方法の`Document`パスと保存オプションを指定するクラス。
 
-#### Q: テキストを追加して PDF ファイル内のテキストの位置を改善すると、どのようなメリットがありますか?
-A: テキストを追加して PDF ファイル内のテキストの位置を改善すると、次のような利点があります。
+#### Q: テキストを追加して PDF ファイル内のテキストの配置を改善する利点は何ですか?
+A: テキストを追加して PDF ファイル内のテキストの配置を改善する利点は次のとおりです。
 
-追加テキストの位置の正確な制御: PDF ファイル内の追加テキストの正確な位置を指定できるため、テキストを正確に配置できます。
+追加テキストの位置の正確な制御: PDF ファイル内の追加テキストの正確な位置を指定できるため、正確なテキスト配置を実現できます。
 
-文書レイアウトの改善: 追加テキストの位置を制御することで、PDF 文書のレイアウトを改善し、より正確で美しい最終結果を実現できます。
+ドキュメント レイアウトの改善: 追加テキストの配置を制御することで、PDF ドキュメントのレイアウトを改善し、より正確で美しい最終結果を実現できます。

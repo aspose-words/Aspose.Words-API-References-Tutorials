@@ -21,6 +21,6 @@ Os tutoriais de proteção de documentos Aspose.Words para .NET guiam você por 
 | [Remover proteção de documentos em documentos do Word](./remove-document-protection/) | Aprenda como remover a proteção em um documento do Word com Aspose.Words for .NET. |
 | [Regiões editáveis irrestritas em documentos do Word](./unrestricted-editable-regions/) | Aprenda como criar áreas editáveis irrestritas em um documento do Word com Aspose.Words for .NET. |
 | [Seção irrestrita em documento do Word](./unrestricted-section/) | Aprenda como definir seções irrestritas em um documento do Word com Aspose.Words for .NET. |
-| [Obtenha o tipo de proteção no documento do Word](./get-protection-type/) | Aprenda como usar a função Obter tipo de proteção em documento do Word do Aspose.Words for .NET para determinar o tipo de proteção de um documento. |
+| [Obtenha o tipo de proteção no documento do Word](./get-protection-type/) | Aprenda como usar a função Obter tipo de proteção no documento do Word do Aspose.Words for .NET para determinar o tipo de proteção de um documento. |
 | [Proteção somente leitura em documento do Word](./read-only-protection/) | Aprenda como proteger seus documentos somente leitura no Word com Aspose.Words for .NET. |
 | [Remover restrição somente leitura](./remove-read-only-restriction/) | Aprenda como remover a restrição somente leitura de um documento do Word com Aspose.Words for .NET. |

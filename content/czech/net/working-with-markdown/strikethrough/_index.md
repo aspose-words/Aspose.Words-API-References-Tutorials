@@ -57,7 +57,7 @@ gratuluji! Nyní jste se naučili, jak použít styl přeškrtnutého textu s As
 
 #### Otázka: Je možné přidat přeškrtnutý text k několika částem textu ve stejném odstavci?
 
- Odpověď: Ano, můžete přidat přeškrtnutý text do více částí textu v jednom odstavci pomocí více.`Run` objektů. Můžete vytvořit více`Run` objekty a nastavte`Font.StrikeThrough`majetek do`true` pro každý objekt přidat přeškrtnutý text do požadovaných částí textu. Poté je můžete přidat do odstavce pomocí`Paragraph.AppendChild(run)` metoda.
+ Odpověď: Ano, můžete přidat přeškrtnutý text do více částí textu v jednom odstavci pomocí více`Run` objektů. Můžete vytvořit více`Run` objekty a nastavte`Font.StrikeThrough`majetek do`true` pro každý objekt přidat přeškrtnutý text do požadovaných částí textu. Poté je můžete přidat do odstavce pomocí`Paragraph.AppendChild(run)` metoda.
 
 #### Otázka: Mohu přidat přeškrtnutý text k textu, který je v tabulce nebo buňce v Aspose.Words?
 

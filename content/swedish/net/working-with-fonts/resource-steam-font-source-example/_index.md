@@ -75,7 +75,7 @@ internal class ResourceSteamFontSource : StreamFontSource
 
 ## Steg 5: Spara dokumentet
 
-Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna. Spara den i ett valfritt format; här sparar vi den som PDF.
+Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna. Spara den i ett valfritt format; här sparar vi den som en PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");

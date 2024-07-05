@@ -123,7 +123,7 @@ public void addJapaneseAsEditingLanguages() throws Exception
 }
 ```
 
-Ngôn ngữ soạn thảo đóng một vai trò quan trọng trong việc xử lý tài liệu. Với Aspose.Words for Java, bạn có thể đặt và tùy chỉnh ngôn ngữ chỉnh sửa cho phù hợp với nhu cầu ngôn ngữ của tài liệu.
+Ngôn ngữ soạn thảo đóng một vai trò quan trọng trong việc xử lý tài liệu. Với Aspose.Words cho Java, bạn có thể đặt và tùy chỉnh ngôn ngữ chỉnh sửa cho phù hợp với nhu cầu ngôn ngữ trong tài liệu của mình.
 
 
 ## Phần kết luận

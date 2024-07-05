@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Krok 2: Pobierz wiersze nadrzędne z zakładek
 
- Używamy`GetAncestor` Metody pobierania wierszy nadrzędnych węzłów początkowego i końcowego zakładki:
+ Używamy`GetAncestor` metody pobierania wierszy nadrzędnych węzłów początkowego i końcowego zakładki:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

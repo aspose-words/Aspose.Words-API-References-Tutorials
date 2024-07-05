@@ -1,18 +1,18 @@
 ---
-title: Aspose.Words for Java でのグラフの使用
+title: Aspose.Words for Java でのチャートの使用
 linktitle: チャートの使用
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java でグラフを作成およびカスタマイズする方法を学びます。データ視覚化のためのグラフの種類、書式設定、軸のプロパティを調べます。
+description: Aspose.Words for Java でグラフを作成し、カスタマイズする方法を学びます。データの視覚化のためのグラフの種類、書式設定、軸のプロパティを調べます。
 type: docs
 weight: 12
 url: /ja/java/document-conversion-and-export/using-charts/
 ---
 
-## Aspose.Words for Java でのグラフの使用の概要
+## Aspose.Words for Java でのチャートの使用の概要
 
-このチュートリアルでは、Aspose.Words for Java を使用してグラフを操作する方法を説明します。さまざまなタイプのグラフの作成方法、軸プロパティのカスタマイズ方法、データ ラベルの書式設定などの方法を学びます。飛び込んでみましょう！
+このチュートリアルでは、Aspose.Words for Java を使用してグラフを操作する方法について説明します。さまざまな種類のグラフの作成方法、軸のプロパティのカスタマイズ方法、データ ラベルの書式設定方法などを学習します。さあ、始めましょう!
 
-## 折れ線グラフの作成
+## 折れ線グラフを作成する
 
 折れ線グラフを作成するには、次のコードを使用します。
 
@@ -37,15 +37,15 @@ series1.getDataLabels().get(0).getNumberFormat().setFormatCode("\"$\"#,##0.00");
 series1.getDataLabels().get(1).getNumberFormat().setFormatCode("dd/mm/yyyy");
 series1.getDataLabels().get(2).getNumberFormat().setFormatCode("0.00%");
 
-//または、フォーマット コードをソース セルにリンクします。
+//または、書式コードをソース セルにリンクします。
 series1.getDataLabels().get(2).getNumberFormat().isLinkedToSource(true);
 
 doc.save("Your Directory Path" + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-## 他の種類のグラフの作成
+## その他の種類のグラフを作成する
 
-同様の手法を使用して、縦棒グラフ、面グラフ、バブルグラフ、散布図などのさまざまなタイプのグラフを作成できます。単純な縦棒グラフを挿入する例を次に示します。
+同様の手法を使用して、縦棒グラフ、面グラフ、バブル グラフ、散布図など、さまざまな種類のグラフを作成できます。以下は、単純な縦棒グラフを挿入する例です。
 
 ```java
 Document doc = new Document();
@@ -64,9 +64,9 @@ chart.getSeries().add("Aspose Series 2", categories, new double[] { 3.0, 4.0 });
 doc.save("Your Directory Path" + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 ```
 
-## 軸のプロパティのカスタマイズ
+## 軸プロパティのカスタマイズ
 
-軸のタイプの変更、目盛の設定、ラベルの書式設定など、軸のプロパティをカスタマイズできます。 XY 軸のプロパティを定義する例を次に示します。
+軸の種類の変更、目盛りの設定、ラベルの書式設定など、軸のプロパティをカスタマイズできます。XY 軸のプロパティを定義する例を次に示します。
 
 ```java
 Document doc = new Document();
@@ -74,7 +74,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.insertChart(ChartType.AREA, 432.0, 252.0);
 Chart chart = shape.getChart();
 
-//デフォルトのシリーズをクリアし、データを追加します。
+//デフォルトのシリーズをクリアしてデータを追加します。
 
 ChartAxis xAxis = chart.getAxisX();
 ChartAxis yAxis = chart.getAxisY();
@@ -100,7 +100,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.DefineXYAxisProperties.docx"
 
 ## データラベルの書式設定
 
-データ ラベルをさまざまな数値形式で書式設定できます。以下に例を示します。
+データ ラベルをさまざまな数値形式でフォーマットできます。次に例を示します。
 
 ```java
 Document doc = new Document();
@@ -108,39 +108,39 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.insertChart(ChartType.COLUMN, 432.0, 252.0);
 Chart chart = shape.getChart();
 
-//デフォルトのシリーズをクリアし、データを追加します。
+//デフォルトのシリーズをクリアしてデータを追加します。
 
 chart.getAxisY().getNumberFormat().setFormatCode("#,##0");
 
 doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-## 追加のグラフのカスタマイズ
+## 追加のチャートカスタマイズ
 
-範囲、ラベル間の間隔単位、グラフ軸の非表示などを調整して、グラフをさらにカスタマイズできます。これらのオプションの詳細については、提供されているコード スニペットを参照してください。
+境界、ラベル間の間隔単位を調整したり、グラフの軸を非表示にしたりすることで、グラフをさらにカスタマイズできます。これらのオプションの詳細については、提供されているコード スニペットを参照してください。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for Java を使用してグラフを操作する方法を検討しました。さまざまな種類のグラフの作成、軸プロパティのカスタマイズ、データ ラベルの書式設定などの方法を学習しました。 Aspose.Words for Java は、データの視覚的表現をドキュメントに追加し、情報の表示方法を強化するための強力なツールを提供します。
+このチュートリアルでは、Aspose.Words for Java を使用してグラフを操作する方法について説明しました。さまざまな種類のグラフの作成方法、軸のプロパティのカスタマイズ方法、データ ラベルの書式設定方法などを学習しました。Aspose.Words for Java には、ドキュメントにデータの視覚的表現を追加して、情報の表示方法を強化するための強力なツールが用意されています。
 
 ## よくある質問
 
-### 複数の系列をグラフに追加するにはどうすればよいですか?
+### グラフに複数のシリーズを追加するにはどうすればよいですか?
 
-を使用して複数の系列をチャートに追加できます。`chart.getSeries().add()`方法。シリーズ名、カテゴリ、データ値を必ず指定してください。
+チャートに複数のシリーズを追加するには、`chart.getSeries().add()`方法。シリーズ名、カテゴリ、データ値を必ず指定してください。
 
-### カスタム数値形式でデータ ラベルを書式設定するにはどうすればよいですか?
+### データ ラベルをカスタム数値形式でフォーマットするにはどうすればよいですか?
 
-データラベルをフォーマットするには、`DataLabels`シリーズのプロパティと目的の形式コードの設定`getNumberFormat().setFormatCode()`.
+データラベルの書式設定は、`DataLabels`シリーズのプロパティと、希望する書式コードの設定`getNumberFormat().setFormatCode()`.
 
-### グラフの軸のプロパティをカスタマイズするにはどうすればよいですか?
+### グラフの軸プロパティをカスタマイズするにはどうすればよいですか?
 
-タイプ、目盛り、ラベルなどの軸のプロパティをカスタマイズするには、`ChartAxis`のようなプロパティ`setCategoryType()`, `setCrosses()` 、 そして`setMajorTickMark()`.
+軸の種類、目盛り、ラベルなどのプロパティをカスタマイズするには、`ChartAxis`次のような特性`setCategoryType()`, `setCrosses()` 、 そして`setMajorTickMark()`.
 
-### 散布図や面グラフなどの他のタイプのグラフを作成するにはどうすればよいですか?
+### 散布図や面グラフなどの他の種類のグラフを作成するにはどうすればいいですか?
 
-適切なグラフを指定することで、さまざまな種類のグラフを作成できます。`ChartType`を使用してチャートを挿入するとき`builder.insertChart(ChartType.TYPE, width, height)`.
+適切な値を指定することで、さまざまなチャートタイプを作成できます。`ChartType`チャートを挿入するときに`builder.insertChart(ChartType.TYPE, width, height)`.
 
-### グラフの軸を非表示にするにはどうすればよいですか?
+### グラフの軸を非表示にするにはどうすればいいですか?
 
-を設定することでグラフの軸を非表示にできます。`setHidden(true)`軸のプロパティ。
+チャートの軸を非表示にするには、`setHidden(true)`軸のプロパティ。

@@ -1,8 +1,8 @@
 ---
-title: Aspose.Words for Java での構造化ドキュメント タグ (SDT) の使用
-linktitle: 構造化文書タグ (SDT) の使用
+title: Aspose.Words for Java で構造化ドキュメント タグ (SDT) を使用する
+linktitle: 構造化ドキュメントタグ (SDT) の使用
 second_title: Aspose.Words Java ドキュメント処理 API
-description: この包括的なガイドでは、Aspose.Words for Java で構造化ドキュメント タグ (SDT) を使用する方法を学習します。 SDT を作成、変更し、カスタム XML データにバインドします。
+description: この包括的なガイドでは、Aspose.Words for Java で構造化ドキュメント タグ (SDT) を使用する方法を学習します。SDT を作成、変更し、カスタム XML データにバインドします。
 type: docs
 weight: 19
 url: /ja/java/document-manipulation/using-structured-document-tags/
@@ -10,21 +10,21 @@ url: /ja/java/document-manipulation/using-structured-document-tags/
 
 ## Aspose.Words for Java での構造化ドキュメント タグ (SDT) の使用の概要
 
-構造化ドキュメント タグ (SDT) は、Aspose.Words for Java の強力な機能で、ドキュメント内で構造化コンテンツを作成および操作できるようになります。この包括的なガイドでは、Aspose.Words for Java での SDT の使用に関するさまざまな側面について説明します。初心者でも経験豊富な開発者でも、この記事では貴重な洞察と実用的な例を見つけることができます。
+構造化ドキュメント タグ (SDT) は、ドキュメント内で構造化コンテンツを作成および操作できる、Aspose.Words for Java の強力な機能です。この包括的なガイドでは、Aspose.Words for Java での SDT の使用に関するさまざまな側面について説明します。初心者でも経験豊富な開発者でも、この記事には貴重な洞察と実用的な例が記載されています。
 
 ## はじめる
 
-詳細に入る前に、環境をセットアップして基本的な SDT を作成しましょう。このセクションでは、次のトピックについて説明します。
+詳細に入る前に、環境を設定して基本的な SDT を作成しましょう。このセクションでは、次のトピックについて説明します。
 
-- 新しいドキュメントの作成
-- 構造化文書タグの追加
-- 文書を保存する
+- 新しいドキュメントを作成する
+- 構造化ドキュメントタグの追加
+- ドキュメントを保存する
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//CHECKBOX タイプの構造化文書タグを作成する
+//CHECKBOXタイプの構造化ドキュメントタグを作成する
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.CHECKBOX, MarkupLevel.INLINE);
 builder.insertNode(sdtCheckBox);
 
@@ -32,16 +32,16 @@ builder.insertNode(sdtCheckBox);
 doc.save("WorkingWithSDT.docx");
 ```
 
-## チェックボックス SDT の現在の状態を確認する
+## チェックボックスSDTの現在の状態を確認する
 
-ドキュメントにチェックボックス SDT を追加したら、その現在の状態をプログラムで確認したい場合があります。これは、ユーザー入力を検証する必要がある場合や、チェックボックスの状態に基づいて特定のアクションを実行する必要がある場合に役立ちます。
+ドキュメントにチェックボックス SDT を追加したら、プログラムで現在の状態を確認したい場合があります。これは、ユーザー入力を検証したり、チェックボックスの状態に基づいて特定のアクションを実行したりする必要がある場合に役立ちます。
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdtCheckBox = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
 if (sdtCheckBox.getSdtType() == SdtType.CHECKBOX) {
-    //チェックボックスがチェックされています
+    //チェックボックスがオンになっています
     sdtCheckBox.setChecked(true);
 }
 
@@ -50,7 +50,7 @@ doc.save("UpdatedDocument.docx");
 
 ## コンテンツコントロールの変更
 
-このセクションでは、ドキュメント内のコンテンツ コントロールを変更する方法を説明します。プレーン テキスト、ドロップダウン リスト、画像の 3 種類のコンテンツ コントロールについて説明します。
+このセクションでは、ドキュメント内のコンテンツ コントロールを変更する方法について説明します。プレーン テキスト、ドロップダウン リスト、画像の 3 種類のコンテンツ コントロールについて説明します。
 
 ### プレーンテキストコンテンツコントロールの変更
 
@@ -78,7 +78,7 @@ Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdtDropDown = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
 if (sdtDropDown.getSdtType() == SdtType.DROP_DOWN_LIST) {
-    //リストから 2 番目の項目を選択します
+    //リストから2番目の項目を選択します
     SdtListItem secondItem = sdtDropDown.getListItems().get(2);
     sdtDropDown.getListItems().setSelectedValue(secondItem);
 }
@@ -94,16 +94,16 @@ StructuredDocumentTag sdtPicture = (StructuredDocumentTag) doc.getChild(NodeType
 Shape shape = (Shape) sdtPicture.getChild(NodeType.SHAPE, 0, true);
 
 if (shape.hasImage()) {
-    //画像を新しいものに置き換えます
+    //画像を新しいものに置き換える
     shape.getImageData().setImage("Watermark.png");
 }
 
 doc.save("ModifiedDocument.docx");
 ```
 
-## ComboBox コンテンツ コントロールの作成
+## コンボボックス コンテンツ コントロールの作成
 
-ComboBox コンテンツ コントロールを使用すると、ユーザーは事前定義されたオプションのリストから選択できます。ドキュメント内に作成しましょう。
+ComboBox コンテンツ コントロールを使用すると、ユーザーは定義済みのオプション リストから選択できます。ドキュメントに 1 つ作成してみましょう。
 
 ```java
 Document doc = new Document();
@@ -116,9 +116,9 @@ doc.getFirstSection().getBody().appendChild(sdtComboBox);
 doc.save("ComboBoxDocument.docx");
 ```
 
-## リッチ テキスト コンテンツ コントロールの操作
+## リッチテキストコンテンツコントロールの操作
 
-リッチ テキスト コンテンツ コントロールは、書式設定されたテキストをドキュメントに追加するのに最適です。作成してその内容を設定しましょう。
+リッチ テキスト コンテンツ コントロールは、ドキュメントに書式設定されたテキストを追加するのに最適です。 リッチ テキスト コンテンツ コントロールを作成して、そのコンテンツを設定してみましょう。
 
 ```java
 Document doc = new Document();
@@ -151,7 +151,7 @@ doc.save("StyledDocument.docx");
 
 ## SDT をカスタム XML データにバインドする
 
-シナリオによっては、動的コンテンツ生成のために SDT をカスタム XML データにバインドする必要がある場合があります。これを達成する方法を見てみましょう。
+シナリオによっては、動的なコンテンツを生成するために、SDT をカスタム XML データにバインドする必要がある場合があります。これを実現する方法を見てみましょう。
 
 ```java
 Document doc = new Document();
@@ -165,7 +165,7 @@ doc.save("CustomXMLBinding.docx");
 
 ## カスタム XML データにマップされた繰り返しセクションを含むテーブルの作成
 
-繰り返しセクションを含む表は、構造化データを表現するのに非常に役立ちます。このようなテーブルを作成し、カスタム XML データにマッピングしてみましょう。
+繰り返しセクションを含むテーブルは、構造化されたデータを表示するのに非常に便利です。このようなテーブルを作成し、カスタム XML データにマップしてみましょう。
 
 ```java
 Document doc = new Document();
@@ -200,9 +200,9 @@ row.appendChild(authorSdt);
 doc.save("RepeatingTableDocument.docx");
 ```
 
-## 複数セクションの構造化文書タグの操作
+## 複数セクション構造化ドキュメントタグの操作
 
-構造化ドキュメント タグは、ドキュメント内の複数のセクションにまたがることができます。このセクションでは、複数セクションの SDT を操作する方法について説明します。
+構造化ドキュメント タグは、ドキュメント内の複数のセクションにまたがることができます。このセクションでは、複数セクションの SDT の操作方法について説明します。
 
 ```java
 Document doc = new Document("MultiSectionDocument.docx");
@@ -217,26 +217,26 @@ doc.save("ModifiedMultiSectionDocument.docx");
 
 ## 結論
 
-Aspose.Words for Java の構造化ドキュメント タグは、ドキュメント内のコンテンツを管理および書式設定するための多彩な方法を提供します。テンプレート、フォーム、動的ドキュメントのいずれを作成する必要がある場合でも、SDT は必要な柔軟性と制御を提供します。この記事で説明されている例とガイドラインに従うことで、SDT の機能を利用してドキュメント処理タスクを強化できます。
+Aspose.Words for Java の構造化ドキュメント タグは、ドキュメント内のコンテンツを管理およびフォーマットするための多目的な方法を提供します。テンプレート、フォーム、または動的ドキュメントのいずれを作成する場合でも、SDT は必要な柔軟性と制御を提供します。この記事で紹介する例とガイドラインに従うことで、SDT のパワーを活用してドキュメント処理タスクを強化できます。
 
 ## よくある質問
 
 ### 構造化ドキュメントタグ (SDT) の目的は何ですか?
 
-構造化ドキュメント タグ (SDT) は、ドキュメント内のコンテンツを整理して書式設定する目的を果たし、テンプレート、フォーム、および構造化ドキュメントの作成を容易にします。
+構造化ドキュメント タグ (SDT) は、ドキュメント内のコンテンツを整理およびフォーマットする目的で使用され、テンプレート、フォーム、構造化ドキュメントの作成が容易になります。
 
-### チェックボックス SDT の現在の状態を確認するにはどうすればよいですか?
+### Checkbox SDT の現在の状態を確認するにはどうすればよいですか?
 
-チェックボックス SDT の現在の状態を確認するには、`setChecked`記事で説明されている方法です。
+チェックボックスSDTの現在の状態を確認するには、`setChecked`記事で説明されている方法。
 
 ### コンテンツ コントロールにスタイルを適用できますか?
 
 はい、コンテンツ コントロールにスタイルを適用して、ドキュメント内の外観をカスタマイズできます。
 
-### SDT をカスタム XML データにバインドすることはできますか?
+### SDT をカスタム XML データにバインドすることは可能ですか?
 
-はい、SDT をカスタム XML データにバインドして、動的なコンテンツ生成とデータ マッピングを可能にすることができます。
+はい、SDT をカスタム XML データにバインドして、動的なコンテンツの生成とデータ マッピングが可能になります。
 
 ### SDT の繰り返しセクションとは何ですか?
 
-SDT の繰り返しセクションを使用すると、動的なデータを含むテーブルを作成でき、マッピングされた XML データに基づいて行を繰り返すことができます。
+SDT の繰り返しセクションを使用すると、マップされた XML データに基づいて行を繰り返すことができる動的なデータを含むテーブルを作成できます。

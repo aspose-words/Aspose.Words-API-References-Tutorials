@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj dokumenty źródłowe i docelowe
 
-Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words.`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
+Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 3: Dołącz dokument źródłowy ze stylami docelowymi
 
- Aby dołączyć dokument źródłowy do dokumentu docelowego podczas stosowania stylów dokumentu docelowego, możesz użyć opcji`AppendDocument` metoda`Document` klasa z`ImportFormatMode.UseDestinationStyles` parametry.
+ Aby dołączyć dokument źródłowy do dokumentu docelowego podczas stosowania stylów dokumentu docelowego, możesz użyć opcji`AppendDocument` metoda`Document` klasa z`ImportFormatMode.UseDestinationStyles` parametr.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);

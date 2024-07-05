@@ -92,7 +92,7 @@ Aspose.Words for Java 簡化了 Word 文件中表單欄位的使用，讓您可�
    您可以透過調整字體大小、顏色和其他格式選項來自訂表單欄位的外觀。
 
 4. ### Aspose.Words for Java 是否有免費試用版？
-   是的，您可以存取 Aspose.Words for Java 的免費試用版。[這裡](https://releases.aspose.com/).
+   是的，您可以免費試用 Aspose.Words for Java[這裡](https://releases.aspose.com/).
 
 5. ### 在哪裡可以獲得 Aspose.Words for Java 的支援？
    如需支援和協助，請訪問[Aspose.Words 論壇](https://forum.aspose.com/).

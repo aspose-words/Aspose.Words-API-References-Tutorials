@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Passaggio 2: crea un nuovo documento e DocumentBuilder
- Crea una nuova istanza di`Document` classe e a`DocumentBuilder` oggetto di lavorare con il documento.
+ Crea una nuova istanza di`Document` classe e a`DocumentBuilder`oggetto di lavorare con il documento.
 
 ```csharp
 Document doc = new Document();
@@ -73,7 +73,7 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-### Esempio di codice sorgente per Date Time Values To Axis utilizzando Aspose.Words per .NET 
+### Codice sorgente di esempio per Date Time Values To Axis utilizzando Aspose.Words per .NET 
 
 ```csharp
 	// Percorso della directory dei documenti
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 	doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-Questo codice di esempio crea un nuovo documento Word, inserisce un istogramma con valori di data e ora sull'asse X e salva il documento nella directory specificata.
+Questo codice di esempio crea un nuovo documento di Word, inserisce un istogramma con valori di data e ora sull'asse X e salva il documento nella directory specificata.
 
 ## Conclusione
 In questo tutorial, hai imparato come aggiungere valori di data e ora all'asse di un grafico utilizzando Aspose.Words per .NET. Seguendo la guida passo passo, puoi creare un grafico, aggiungere valori di data e ora alla serie e configurare l'asse per visualizzare i valori di data e ora in modo accurato. Aspose.Words per .NET fornisce un potente set di funzionalità per l'elaborazione di parole con grafici nei documenti Word, consentendo di rappresentare e visualizzare i dati con valori di data e ora in modo efficace.
@@ -113,7 +113,7 @@ In questo tutorial, hai imparato come aggiungere valori di data e ora all'asse d
 Sì, con Aspose.Words per .NET, puoi aggiungere e visualizzare valori di data e ora sull'asse di un grafico in un documento Word. Aspose.Words fornisce API e funzionalità per lavorare con vari tipi di grafici e personalizzarne l'aspetto, inclusa la gestione dei valori di data e ora sull'asse.
 
 #### Q2. Come posso aggiungere valori di data e ora alle serie di grafici?
- Per aggiungere valori di data e ora alle serie di grafici, è possibile utilizzare il file`Add`metodo delle serie del grafico. Fornire una matrice di valori di data e ora come dati della categoria (asse X), insieme ai valori della serie corrispondente. Ciò consente di tracciare punti dati con valori di data e ora sul grafico.
+ Per aggiungere valori di data e ora alle serie di grafici, è possibile utilizzare il comando`Add`metodo delle serie del grafico. Fornire una matrice di valori di data e ora come dati della categoria (asse X), insieme ai valori della serie corrispondente. Ciò consente di tracciare punti dati con valori di data e ora sul grafico.
 
 #### Q3. Come posso configurare l'asse per visualizzare i valori di data e ora?
- È possibile configurare l'asse del grafico per visualizzare i valori di data e ora impostando le proprietà appropriate. Ad esempio, puoi specificare i valori minimo e massimo per l'asse utilizzando il`Scaling.Minimum` E`Scaling.Maximum` proprietà, rispettivamente. Inoltre, è possibile impostare le unità maggiori e minori per definire l'intervallo e i segni di graduazione per l'asse.
+ È possibile configurare l'asse del grafico per visualizzare i valori di data e ora impostando le proprietà appropriate. Ad esempio, è possibile specificare i valori minimo e massimo per l'asse utilizzando il comando`Scaling.Minimum` E`Scaling.Maximum` proprietà, rispettivamente. Inoltre, è possibile impostare le unità maggiori e minori per definire l'intervallo e i segni di graduazione per l'asse.

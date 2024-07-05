@@ -13,6 +13,6 @@ Den här sidan ger en detaljerad guide om hur man ansöker om en licens i projek
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Tillämpa licens från fil](./apply-license-from-file/) | Lär dig hur du ansöker om en licens från en fil med Aspose.Words för .NET.|
-| [Använd licens från Stream](./apply-license-from-stream/) | Lär dig hur du ansöker om en licens från en stream med Aspose.Words för .NET.|
-| [Tillämpa mätlicens](./apply-metered-license/) | Lär dig hur du ansöker en uppmätt licens med Aspose.Words för .NET. |
+| [Tillämpa licens från fil](./apply-license-from-file/) | Lär dig hur du ansöker om en licens från en fil i Aspose.Words för .NET med vår detaljerade, steg-för-steg-guide. Lås upp hela potentialen i ditt bibliotek utan ansträngning. |
+| [Använd licens från Stream](./apply-license-from-stream/) | Lär dig hur du ansöker om en licens från en stream i Aspose.Words för .NET med denna steg-för-steg-guide. Lås upp den fulla potentialen hos Aspose.Words. |
+| [Tillämpa mätlicens](./apply-metered-license/) | Lär dig hur du ansöker om en uppmätt licens i Aspose.Words för .NET med vår steg-för-steg-guide. Flexibel, kostnadseffektiv licensiering på ett enkelt sätt. |

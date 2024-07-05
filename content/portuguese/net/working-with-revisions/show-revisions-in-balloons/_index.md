@@ -12,7 +12,7 @@ Neste guia passo a passo, mostraremos como mostrar revisões em balões em um do
 
 ## Passo 1: Carregando o documento
 
-O primeiro passo é fazer o upload do documento contendo as revisões.
+primeiro passo é fazer o upload do documento contendo as revisões.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

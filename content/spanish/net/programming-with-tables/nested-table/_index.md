@@ -58,7 +58,7 @@ builder.Writeln("Cell 2 of the inner table");
 builder. EndTable();
 ```
 
-Aquí usamos el generador de documentos para insertar celdas y contenido en la tabla exterior. Luego movemos el cursor del generador de documentos a la primera celda de la tabla exterior y construimos una nueva tabla en el interior insertando celdas y contenido.
+Aquí usamos el generador de documentos para insertar celdas y contenido en la tabla exterior. Luego movemos el cursor del generador de documentos a la primera celda de la tabla exterior y construimos una nueva tabla dentro insertando celdas y contenido.
 
 ## Paso 4: guardar el documento modificado
 Finalmente, necesitamos guardar el documento modificado con la tabla anidada. Utilice el siguiente código:

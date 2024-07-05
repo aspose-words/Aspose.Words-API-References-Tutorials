@@ -148,7 +148,7 @@ Po utworzeniu i dostosowaniu dokumentu nie zapomnij zapisać go za pomocą`doc.s
         builder.write("Aspose.Words Header/Footer Creation Primer.");
         builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
         // Tablicę z dwiema komórkami wykorzystujemy do utworzenia jednej części tekstu w wierszu (z numeracją stron).
-        // Należy wyrównać do lewej, a drugą część tekstu (zgodnie z prawami autorskimi) wyrównać do prawej.
+        // Należy wyrównać do lewej, a drugą część tekstu (zgodnie z prawami autorskimi) do prawej.
         builder.startTable();
         builder.getCellFormat().clearFormatting();
         builder.insertCell();
@@ -172,7 +172,7 @@ Po utworzeniu i dostosowaniu dokumentu nie zapomnij zapisać go za pomocą`doc.s
         currentSection = builder.getCurrentSection();
         pageSetup = currentSection.getPageSetup();
         pageSetup.setOrientation(Orientation.LANDSCAPE);
-        // Ta sekcja nie wymaga innego nagłówka/stopki na pierwszej stronie, wystarczy jedna strona tytułowa w dokumencie,
+        // Ta sekcja nie wymaga innego nagłówka/stopki pierwszej strony, wystarczy jedna strona tytułowa w dokumencie,
         // nagłówek/stopka tej strony została już zdefiniowana w poprzedniej sekcji.
         pageSetup.setDifferentFirstPageHeaderFooter(false);
         // W tej sekcji wyświetlane są nagłówki/stopki z poprzedniej sekcji

@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### D: Come sfogliare i gruppi di revisione in un documento in Aspose.Words per .NET?
 
- R: Usa il`Groups` proprietà del documento`Revisions` oggetto per ottenere la raccolta di gruppi di revisione. È quindi possibile utilizzare un ciclo per scorrere ciascun gruppo di revisione.
+ R: Usa il`Groups` proprietà del documento`Revisions`oggetto per ottenere la raccolta di gruppi di revisione. È quindi possibile utilizzare un ciclo per scorrere ciascun gruppo di revisione.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### D: Come ottenere il tipo di revisione di un gruppo di revisione in Aspose.Words per .NET?
 
- R: Usa il`RevisionType` proprietà del`RevisionGroup`oggetto per ottenere il tipo di revisione del gruppo.
+ R: Usa il`RevisionType` proprietà del`RevisionGroup` oggetto per ottenere il tipo di revisione del gruppo.
 
 ```csharp
 string revisionType = group.RevisionType;

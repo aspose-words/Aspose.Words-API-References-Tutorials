@@ -2,16 +2,16 @@
 title: Word 文書内の無制限の編集可能領域
 linktitle: Word 文書内の無制限の編集可能領域
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内に無制限の編集可能領域を作成する方法を学びます。
+description: Aspose.Words for .NET を使用して、Word 文書に制限のない編集可能な領域を作成する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/document-protection/unrestricted-editable-regions/
 ---
-このチュートリアルでは、Aspose.Words for .NET の無制限の編集可能領域機能を使用する手順を説明します。この機能を使用すると、文書の残りの部分が読み取り専用であっても、コンテンツを制限なく編集できる Word 文書内の領域を定義できます。以下の手順に従います。
+このチュートリアルでは、Aspose.Words for .NET の無制限編集可能領域機能を使用する手順を説明します。この機能を使用すると、ドキュメントの残りの部分が読み取り専用であっても、コンテンツを制限なく編集できる Word ドキュメント内の領域を定義できます。以下の手順に従ってください。
 
-## ステップ 1: 文書の読み込みと保護の設定
+## ステップ1: ドキュメントの読み込みと保護の設定
 
-まず、既存のドキュメントをロードします。
+まず、既存のドキュメントを読み込みます。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,34 +20,34 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 doc.Protect(ProtectionType.ReadOnly, "MyPassword");
 ```
 
-読み取り専用の保護タイプとパスワードを設定してドキュメントを保護します
+読み取り専用保護タイプとパスワードを設定してドキュメントを保護する
 
-## ステップ 2: 編集可能領域の作成
+## ステップ2: 編集可能な領域を作成する
 
-まず、EditableRangeStart オブジェクトと EditableRangeEnd オブジェクトを使用して編集可能領域を作成します。
+まず、EditableRangeStart オブジェクトと EditableRangeEnd オブジェクトを使用して編集可能な領域を作成します。
 
 ```csharp
 EditableRangeStart edRangeStart = builder.StartEditableRange();
-//先ほど作成した EditableRangeStart に対して EditableRange オブジェクトが作成されます。
+//今作成した EditableRangeStart に対して EditableRange オブジェクトが作成されます。
 EditableRange editableRange = edRangeStart.EditableRange;
 
-//編集可能範囲内に何かを入れます。
+//編集範囲内に何かを入れてください。
 builder.Writeln("Paragraph inside first editable range");
 
-//編集可能な範囲は、開始点と終了点がある場合に整形式です。
+//編集可能な範囲は、開始と終了がある場合に適切に形成されます。
 EditableRangeEnd edRangeEnd = builder.EndEditableRange();
 
 ```
 
-## ステップ 3: 編集可能領域の外側にコンテンツを追加する
+## ステップ3: 編集可能領域外にコンテンツを追加する
 
-編集可能領域の外側にコンテンツを追加できますが、その領域は読み取り専用のままになります。
+編集可能な領域外にコンテンツを追加できますが、編集可能な領域は読み取り専用のままです。
 
 ```csharp
 builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
 ```
 
-## ステップ 4: ドキュメントを保存する
+## ステップ4: ドキュメントを保存する
 
 最後に、変更したドキュメントを保存します。
 
@@ -55,14 +55,14 @@ builder.Writeln("This paragraph is outside of all editable areas and cannot be e
 doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 ```
 
-編集可能な領域を含むドキュメントを保存するには、必ず正しいパスとファイル名を指定してください。
+編集可能な領域を含むドキュメントを保存するには、正しいパスとファイル名を指定してください。
 
-### Aspose.Words for .NET を使用した無制限の編集可能領域のソース コードの例
+### Aspose.Words for .NET を使用した無制限編集可能領域のサンプル ソース コード
 
-Aspose.Words for .NET を使用した、無制限の編集可能領域の完全なソース コードを次に示します。
+以下は、Aspose.Words for .NET を使用した無制限の編集可能領域の完全なソース コードです。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 //ドキュメントをアップロードし、読み取り専用にします。
 Document doc = new Document(MyDir + "Document.docx");
@@ -74,13 +74,13 @@ builder.Writeln("Hello world! Since we have set the document's protection level 
 
 //編集可能な範囲を開始します。
 EditableRangeStart edRangeStart = builder.StartEditableRange();
-//先ほど作成した EditableRangeStart に対して EditableRange オブジェクトが作成されます。
+//今作成した EditableRangeStart に対して EditableRange オブジェクトが作成されます。
 EditableRange editableRange = edRangeStart.EditableRange;
 
-//編集可能範囲内に何かを入れます。
+//編集範囲内に何かを入れてください。
 builder.Writeln("Paragraph inside first editable range");
 
-//編集可能な範囲は、開始点と終了点がある場合に整形式です。
+//編集可能な範囲は、開始と終了がある場合に適切に形成されます。
 EditableRangeEnd edRangeEnd = builder.EndEditableRange();
 
 builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
@@ -88,34 +88,34 @@ builder.Writeln("This paragraph is outside any editable ranges, and cannot be ed
 doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 
 ```
-これらの手順に従うと、Aspose.Words for .NET を使用して Word 文書内に無制限の編集可能領域を簡単に作成できます。
+これらの手順に従うと、Aspose.Words for .NET を使用して Word 文書内に無制限の編集可能な領域を簡単に作成できます。
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内に無制限の編集可能領域を作成する方法を学びました。指定された手順に従うことで、ドキュメント内の残りの部分を読み取り専用のままにして、ユーザーがコンテンツを自由に編集できる特定の領域をドキュメント内に定義できます。 Aspose.Words for .NET は、文書の保護とカスタマイズのための強力な機能を提供し、Word 文書の編集機能を制御できるようにします。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内に無制限の編集可能領域を作成する方法を学習しました。提供されている手順に従うことで、文書内の特定の領域を定義し、その領域ではユーザーが自由にコンテンツを編集でき、文書の残りの部分は読み取り専用のままにすることができます。Aspose.Words for .NET は、文書の保護とカスタマイズのための強力な機能を提供し、Word 文書の編集機能を制御できるようにします。
 
-### Word 文書内の制限のない編集可能領域に関する FAQ
+### Word 文書の無制限編集可能領域に関する FAQ
 
-#### Q: Aspose.Words for .NET の無制限の編集可能領域とは何ですか?
+#### Q: Aspose.Words for .NET の無制限編集可能領域とは何ですか?
 
-A: Aspose.Words for .NET の無制限の編集可能領域とは、文書の残りの部分が読み取り専用に設定されている場合でも、コンテンツを制限なく編集できる Word 文書内の領域です。これらの領域は、ドキュメント全体の保護を維持しながら、ユーザーが変更できるドキュメントの特定の部分を定義する方法を提供します。
+A: Aspose.Words for .NET の無制限編集可能領域とは、Word 文書内の領域であり、文書の残りの部分が読み取り専用に設定されている場合でも、コンテンツを制限なく編集できます。これらの領域は、文書全体の保護を維持しながら、ユーザーが変更できる文書の特定の部分を定義する方法を提供します。
 
-#### Q: Aspose.Words for .NET を使用して無制限の編集可能領域を作成するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET を使用して、制限のない編集可能な領域を作成するにはどうすればよいですか?
 
-A: Aspose.Words for .NET を使用して Word 文書内に無制限の編集可能領域を作成するには、次の手順に従います。
-1. を使用して既存のドキュメントをロードします。`Document`クラス。
-2. を使用してドキュメント保護を読み取り専用に設定します。`Protect`の方法`Document`物体。
-3. 使用`DocumentBuilder`クラスを追加して編集可能な範囲を作成します。`EditableRangeStart`オブジェクトと`EditableRangeEnd`物体。
-4. 編集可能な範囲にコンテンツを追加するには、`DocumentBuilder`.
-5. 変更したドキュメントを保存するには、`Save`の方法`Document`物体。
+A: Aspose.Words for .NET を使用して Word 文書に制限のない編集可能な領域を作成するには、次の手順に従います。
+1. 既存のドキュメントをロードするには、`Document`クラス。
+2. ドキュメントの保護を読み取り専用に設定するには、`Protect`方法の`Document`物体。
+3. 使用`DocumentBuilder`クラスを追加して編集可能な範囲を作成します`EditableRangeStart`オブジェクトと`EditableRangeEnd`物体。
+4. 編集可能な範囲内にコンテンツを追加するには、`DocumentBuilder`.
+5. 変更した文書を保存するには、`Save`方法の`Document`物体。
 
-#### Q: Word 文書内に複数の無制限の編集可能領域を設定できますか?
+#### Q: Word 文書内に、制限のない編集可能な領域を複数作成できますか?
 
-A: はい、Word 文書内に複数の無制限の編集可能領域を設定できます。これを実現するには、複数のセットを作成できます。`EditableRangeStart`そして`EditableRangeEnd`を使用したオブジェクト`DocumentBuilder`クラス。オブジェクトの各セットは、ユーザーが制限なくコンテンツを変更できる個別の編集可能領域を定義します。
+A: はい、Word文書内に複数の無制限の編集可能領域を設けることができます。これを実現するには、複数のセットを作成します。`EditableRangeStart`そして`EditableRangeEnd`オブジェクトを使用する`DocumentBuilder`クラス。各オブジェクト セットは、ユーザーが制限なくコンテンツを変更できる個別の編集可能な領域を定義します。
 
-#### Q: 編集可能な領域を相互にネストできますか?
+#### Q: 編集可能な領域を互いにネストすることはできますか?
 
- A: いいえ、Aspose.Words for .NET を使用して編集可能領域を相互にネストすることはできません。各編集可能な領域は、`EditableRangeStart`そして`EditableRangeEnd`ペアは独立している必要があり、別の編集可能な領域内で重複したりネストしたりしてはなりません。ネストされた編集可能領域はサポートされていません。
+ A: いいえ、Aspose.Words for .NETでは編集可能な領域を互いにネストすることはできません。`EditableRangeStart`そして`EditableRangeEnd`ペアは独立している必要があり、重複したり、別の編集可能領域内にネストされたりしてはなりません。ネストされた編集可能領域はサポートされていません。
 
-#### Q: 編集可能領域内のドキュメントから読み取り専用保護を削除できますか?
+#### Q: 編集可能な領域内のドキュメントから読み取り専用保護を削除できますか?
 
-A: いいえ、編集可能領域内のドキュメントから読み取り専用保護を削除することはできません。読み取り専用保護はドキュメント全体に適用され、特定の編集可能領域内で選択的に削除することはできません。編集可能領域の目的は、ドキュメント全体を読み取り専用に保ちながら、コンテンツを変更できるようにすることです。
+A: いいえ、編集可能領域内のドキュメントから読み取り専用保護を削除することはできません。読み取り専用保護はドキュメント全体に適用され、特定の編集可能領域内で選択的に削除することはできません。編集可能領域の目的は、ドキュメント全体を読み取り専用のままにして、コンテンツを変更できるようにすることです。

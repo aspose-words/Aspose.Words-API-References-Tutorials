@@ -84,7 +84,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 ## 結論
 
-在本教學中，我們探索了 Aspose.Words for .NET 的唯讀保護功能，該功能可讓您將 Word 文件設為唯讀以防止未經授權的修改。透過按照提供的步驟操作，您可以輕鬆地對文件套用唯讀保護並增強其安全性。只讀保護透過限制編輯功能來幫助確保文件內容的完整性和準確性。 Aspose.Words for .NET 提供了強大且靈活的 API 來處理文件保護，並支援各種其他功能來自訂和保護您的 Word 文件。
+在本教學中，我們探索了 Aspose.Words for .NET 的唯讀保護功能，該功能可讓您將 Word 文件設定為唯讀以防止未經授權的修改。透過按照提供的步驟操作，您可以輕鬆地對文件套用唯讀保護並增強其安全性。只讀保護透過限制編輯功能來幫助確保文件內容的完整性和準確性。 Aspose.Words for .NET 提供了強大且靈活的 API 來處理文件保護，並支援各種其他功能來自訂和保護您的 Word 文件。
 
 ### Word 文件只讀保護常見問題解答
 

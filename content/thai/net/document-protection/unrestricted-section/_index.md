@@ -75,7 +75,7 @@ builder.Writeln("Section 1. Unprotected.");
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 
-// การป้องกันส่วนจะทำงานเฉพาะเมื่อปิดการป้องกันเอกสาร และอนุญาตให้แก้ไขเฉพาะในช่องแบบฟอร์มเท่านั้น
+// การป้องกันส่วนจะทำงานเฉพาะเมื่อมีการเปิดใช้งานการป้องกันเอกสาร และอนุญาตให้แก้ไขเฉพาะในช่องแบบฟอร์มเท่านั้น
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
 //ตามค่าเริ่มต้น ทุกส่วนจะได้รับการป้องกัน แต่เราสามารถเลือกปิดการป้องกันได้
@@ -101,7 +101,7 @@ doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 #### ถาม: ฉันจะสร้างส่วนที่ไม่จำกัดโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
 
 ตอบ: เมื่อต้องการสร้างส่วนที่ไม่จำกัดในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คุณสามารถทำตามขั้นตอนเหล่านี้:
-1.  สร้างอินสแตนซ์ของ`Document` คลาสและก`DocumentBuilder` วัตถุ วัตถุ
+1.  สร้างอินสแตนซ์ของ`Document` คลาสและก`DocumentBuilder` วัตถุ.
 2.  ใช้`DocumentBuilder` เพื่อเพิ่มเนื้อหาลงในเอกสารและแทรกตัวแบ่งส่วน
 3.  ป้องกันเอกสารโดยใช้`Protect` วิธีการของ`Document` วัตถุ โดยระบุประเภทการป้องกันและรหัสผ่านที่ต้องการ
 4.  ปิดการใช้งานการป้องกันสำหรับส่วนใดส่วนหนึ่งโดยการตั้งค่า`ProtectedForForms` ทรัพย์สินที่เกี่ยวข้อง`Section` วัตถุประสงค์`false`.

@@ -2,7 +2,7 @@
 title: Obtenha o tipo de proteção no documento do Word
 linktitle: Obtenha o tipo de proteção no documento do Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como usar a função Obter tipo de proteção em documento do Word do Aspose.Words for .NET para determinar o tipo de proteção de um documento.
+description: Aprenda como usar a função Obter tipo de proteção no documento do Word do Aspose.Words for .NET para determinar o tipo de proteção de um documento.
 type: docs
 weight: 10
 url: /pt/net/document-protection/get-protection-type/
@@ -50,7 +50,7 @@ Neste artigo, explicamos como usar a função Obter tipo de proteção do Aspose
 
 R: Para recuperar o tipo de proteção de um documento usando Aspose.Words for .NET, você pode seguir estas etapas:
 1.  Carregue o documento usando o`Document` aula.
-2.  Acesse o`ProtectionType` propriedade do`Document` objeto para recuperar o tipo de proteção.
+2.  Acesse o`ProtectionType` propriedade do`Document`objeto para recuperar o tipo de proteção.
 
 #### P: Posso determinar se um documento está protegido para formulários ou campos de formulário usando a propriedade ProtectionType?
 

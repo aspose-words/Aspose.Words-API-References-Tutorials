@@ -18,7 +18,7 @@ url: /zh-hant/net/working-with-markdown/indented-code/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 步驟2：為指定程式碼新增樣式
+## 步驟 2：為縮排程式碼新增樣式
 
 我們將使用以下命令為縮排程式碼新增自訂樣式`Styles.Add`的方法`Document`目的。在此範例中，我們為縮排程式碼建立一個名為「IndentedCode」的樣式。
 
@@ -27,7 +27,7 @@ Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedC
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## 第三步：新增指定程式碼
+## 步驟 3：新增縮排程式碼
 
 現在我們可以使用「IndentedCode」自訂樣式來新增縮排程式碼區塊。
 
@@ -51,7 +51,7 @@ builder.Writeln("This is an indented code");
 
 ### 常見問題解答
 
-#### Q：Markdown 中的指定程式碼是什麼？
+#### Q：Markdown 中的縮排程式碼是什麼？
 
 答：Markdown 中的縮排程式碼是一種用於在 Markdown 文件中顯示程式碼的格式化方法。它包括用空格或製表符縮進每行程式碼。
 

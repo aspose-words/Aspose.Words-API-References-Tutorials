@@ -2,7 +2,7 @@
 title: Wstaw pole Brak
 linktitle: Wstaw pole Brak
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak tworzyć dokumenty za pomocą AUCUN w programie Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak Insérez un champ AUCUN dans vos dokumenty Word przez Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/insert-field-none/

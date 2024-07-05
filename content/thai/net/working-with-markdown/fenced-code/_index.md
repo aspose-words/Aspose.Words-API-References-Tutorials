@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## ขั้นตอนที่ 2: การเพิ่มสไตล์สำหรับโค้ดที่ไม่รั้ว
 
- เราจะเพิ่มสไตล์ที่กำหนดเองสำหรับโค้ดที่ไม่รั้วโดยใช้`Styles.Add` วิธีการของ`Document` วัตถุ วัตถุ ในตัวอย่างนี้ เรากำลังสร้างสไตล์ที่เรียกว่า "FencedCode" สำหรับโค้ดที่ไม่พอใจ
+ เราจะเพิ่มสไตล์ที่กำหนดเองสำหรับโค้ดที่ไม่รั้วโดยใช้`Styles.Add` วิธีการของ`Document` วัตถุ. ในตัวอย่างนี้ เรากำลังสร้างสไตล์ที่เรียกว่า "FencedCode" สำหรับโค้ดที่ไม่พอใจ
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");

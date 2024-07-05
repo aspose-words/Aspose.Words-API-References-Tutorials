@@ -37,7 +37,7 @@ Document doc = new Document(dataDir + "Name_of_document.docx");
 
 ## 3단계: 섹션 반복
 
-Word 문서에는 여러 섹션이 포함될 수 있으며 각 섹션에는 자체 바닥글이 있을 수 있습니다. 바닥글에 도달하려면 문서의 각 섹션을 살펴봐야 합니다.
+Word 문서에는 여러 섹션이 포함될 수 있으며 각 섹션에는 자체 바닥글이 있을 수 있습니다. 바닥글에 도달하려면 문서의 각 섹션을 살펴보아야 합니다.
 
 ```csharp
 foreach (Section section in doc)

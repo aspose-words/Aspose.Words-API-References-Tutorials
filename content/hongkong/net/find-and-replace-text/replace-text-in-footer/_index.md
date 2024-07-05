@@ -43,7 +43,7 @@ FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWho
 
 ## 步驟 4：替換頁腳中的文本
 
-我們使用`Range.Replace`方法在頁腳中執行文字替換。在我們的範例中，我們取代了短語「(C) 2006 Aspose Pty Ltd.」。 “版權所有 (C) 2020，Aspose Pty Ltd.” :
+我們使用`Range.Replace`方法在頁腳中執行文字替換。在我們的範例中，我們取代了短語「(C) 2006 Aspose Pty Ltd.」。 “版權所有 (C) 2020，Aspose Pty Ltd.” ：
 
 ```csharp
 footer

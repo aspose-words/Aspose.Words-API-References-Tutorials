@@ -16,7 +16,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel
 - A projektben telepített .NET Aspose.Words könyvtár
 
 ## 1. lépés: Hozzon létre egy dokumentumot és egy konstruktort
- Először is létrehozunk egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` konstruktor a dokumentum elkészítéséhez.
+ Először létrehozunk egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` konstruktor a dokumentum elkészítéséhez.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## 3. lépés: Új szakasz hozzáadása
- Ha új szakaszt szeretne hozzáadni a dokumentumhoz, létrehozzuk a példányt a`Section` osztályba, és add hozzá a`Sections` a dokumentumok gyűjteménye.
+ Ha új szakaszt szeretne hozzáadni a dokumentumhoz, létrehozzuk a példányt a`Section` osztályba, és add hozzá a`Sections` a dokumentum gyűjteménye.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
@@ -73,7 +73,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### K: Hogyan lehet tartalmat hozzáadni a dokumentumhoz az Aspose.Words for .NET-ben?
 
- V: Ha tartalmat szeretne hozzáadni a dokumentumhoz az Aspose.Words for .NET alkalmazásban, használja a`DocumentBuilder` konstruktőr. Ebben a példában két sornyi szöveget adunk hozzá:
+ V: Ha tartalmat szeretne hozzáadni a dokumentumhoz az Aspose.Words for .NET-ben, használja a`DocumentBuilder` konstruktőr. Ebben a példában két sornyi szöveget adunk hozzá:
 
 ```csharp
 builder. Writen("Hello1");
@@ -82,7 +82,7 @@ builder. Writen("Hello2");
 
 #### K: Hogyan lehet új szakaszt hozzáadni a dokumentumhoz az Aspose.Words for .NET-ben?
 
- V: Ha új szakaszt szeretne hozzáadni a dokumentumhoz az Aspose.Words for .NET-ben, létrehozhat egy példányt a`Section` osztályba, és add hozzá a`Sections` dokumentumok gyűjteménye:
+ V: Ha új szakaszt szeretne hozzáadni a dokumentumhoz az Aspose.Words for .NET-ben, létrehozhat egy példányt a`Section` osztályba, és add hozzá a`Sections` dokumentum gyűjtemény:
 
 ```csharp
 Section sectionToAdd = new Section(doc);

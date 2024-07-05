@@ -171,4 +171,4 @@ doc.save("output.pdf", SaveFormat.PDF);
 
 ## Conclusion
 
-Dans ce guide complet, nous avons exploré le monde fascinant du formatage des tableaux dans les documents à l'aide d'Aspose.Words pour Java. Grâce à ses fonctionnalités robustes et sa flexibilité, vous pouvez faire passer vos compétences en matière de formatage de documents au niveau supérieur. Que vous créiez des rapports, des présentations ou tout autre document impliquant des tableaux, Aspose.Words for Java est votre compagnon de confiance. Alors, allez-y et libérez tout le potentiel du formatage de documents avec Aspose.Words pour Java !
+Dans ce guide complet, nous avons exploré le monde fascinant du formatage des tableaux dans les documents à l'aide d'Aspose.Words pour Java. Grâce à ses fonctionnalités robustes et sa flexibilité, vous pouvez faire passer vos compétences en matière de formatage de documents au niveau supérieur. Que vous créiez des rapports, des présentations ou tout autre document impliquant des tableaux, Aspose.Words for Java est votre compagnon de confiance. Alors, allez-y et libérez tout le potentiel du formatage de documents avec Aspose.Words for Java !

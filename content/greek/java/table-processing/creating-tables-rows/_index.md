@@ -28,7 +28,7 @@ public class TableCreation {
         // Δημιουργήστε ένα νέο Έγγραφο
         Document doc = new Document();
         
-        // Δημιουργήστε έναν πίνακα με 3 σειρές και 3 στήλες.
+        // Δημιουργήστε έναν πίνακα με 3 σειρές και 3 στήλες
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // Συμπληρώστε τα κελιά του πίνακα με δεδομένα

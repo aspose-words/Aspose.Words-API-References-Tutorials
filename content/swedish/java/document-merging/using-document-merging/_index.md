@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words för Java ger Java-utvecklare möjligheten att slå samman Word-dokument utan ansträngning. Genom att följa steg-för-steg-guiden i den här artikeln kan du nu enkelt slå samman dokument, hantera formatering, infoga pauser och hantera konflikter. Med Aspose.Words för Java blir dokumentsammanslagning en sömlös och automatiserad process, vilket sparar värdefull tid och ansträngning.
 
-## 11.Vanliga frågor 
+## 11. Vanliga frågor 
 
 ### Kan jag slå samman dokument med olika format och stilar?
 

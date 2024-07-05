@@ -12,7 +12,7 @@ No mundo do processamento de documentos, a precisão e a estética desempenham u
 
 ## 1. Introdução à Hifenização
 
-hifenização é o processo de quebrar palavras em sílabas e adicionar hífens no final das linhas para melhorar o alinhamento do texto nos documentos. É especialmente importante quando se trata de idiomas que possuem estruturas de palavras complexas.
+hifenização é o processo de quebrar palavras em sílabas e adicionar hífens no final das linhas para melhorar o alinhamento do texto nos documentos. É especialmente importante quando se lida com idiomas que possuem estruturas de palavras complexas.
 
 ## 2. Configurando seu ambiente
 

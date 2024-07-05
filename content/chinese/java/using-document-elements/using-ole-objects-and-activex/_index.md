@@ -2,24 +2,24 @@
 title: 在 Aspose.Words for Java 中使用 OLE 对象和 ActiveX 控件
 linktitle: 使用 OLE 对象和 ActiveX 控件
 second_title: Aspose.Words Java 文档处理 API
-description: 了解如何在 Aspose.Words for Java 中使用 OLE 对象和 ActiveX 控件。轻松创建交互式文档。现在就开始！
+description: 学习在 Aspose.Words for Java 中使用 OLE 对象和 ActiveX 控件。轻松创建交互式文档。立即开始！
 type: docs
 weight: 21
 url: /zh/java/using-document-elements/using-ole-objects-and-activex/
 ---
-在本教程中，我们将探讨如何在 Aspose.Words for Java 中使用 OLE（对象链接和嵌入）对象和 ActiveX 控件。 OLE 对象和 ActiveX 控件是功能强大的工具，允许您通过嵌入或链接外部内容（例如电子表格、多媒体文件或交互式控件）来增强文档。请跟随我们深入研究代码示例并学习如何有效地使用这些功能。
+在本教程中，我们将探索如何在 Aspose.Words for Java 中使用 OLE（对象链接和嵌入）对象和 ActiveX 控件。OLE 对象和 ActiveX 控件是功能强大的工具，可让您通过嵌入或链接外部内容（如电子表格、多媒体文件或交互式控件）来增强文档。跟随我们深入研究代码示例并学习如何有效地使用这些功能。
 
 ### 先决条件
 
-在我们开始之前，请确保您具备以下先决条件：
+在开始之前，请确保您已满足以下先决条件：
 
-1.  Aspose.Words for Java ：确保您的 Java 项目中安装了 Aspose.Words 库。您可以从以下位置下载：[这里](https://releases.aspose.com/words/java/).
+1.  Aspose.Words for Java：确保您的 Java 项目中安装了 Aspose.Words 库。您可以从以下网址下载[这里](https://releases.aspose.com/words/java/).
 
-2. Java 开发环境：您的系统上应该设置有一个有效的 Java 开发环境。
+2. Java 开发环境：您应该在系统上设置一个可运行的 Java 开发环境。
 
 ### 插入 OLE 对象
 
-我们首先将 OLE 对象插入到 Word 文档中。我们将创建一个简单的 Word 文档，然后插入一个表示网页的 OLE 对象。
+首先，让我们将一个 OLE 对象插入到 Word 文档中。我们将创建一个简单的 Word 文档，然后插入一个代表网页的 OLE 对象。
 
 ```java
 string outPath = "Your Output Directory";
@@ -27,7 +27,7 @@ public void insertOleObject() throws Exception
 {
     Document doc = new Document();
     DocumentBuilder builder = new DocumentBuilder(doc);
-    builder.insertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
+    builder.insertOleObject("http://www.aspose.com”，“htmlfile”，true，true，null）；
     doc.save("Your Directory Path" + "WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
 }
 ```
@@ -36,7 +36,7 @@ public void insertOleObject() throws Exception
 
 ### 使用 OlePackage 插入 OLE 对象
 
-接下来，让我们探讨如何使用 OlePackage 插入 OLE 对象。这允许您将外部文件作为 OLE 对象嵌入到文档中。
+接下来，让我们探索如何使用 OlePackage 插入 OLE 对象。这允许您将外部文件作为 OLE 对象嵌入到文档中。
 
 ```java
 @Test
@@ -56,11 +56,11 @@ public void insertOleObjectWithOlePackage() throws Exception
 }
 ```
 
-在此示例中，我们使用 OlePackage 插入 OLE 对象，允许您将外部文件作为嵌入对象包含在内。
+在此示例中，我们使用 OlePackage 插入一个 OLE 对象，允许您将外部文件作为嵌入对象包含在内。
 
 ### 将 OLE 对象作为图标插入
 
-现在，让我们看看如何插入 OLE 对象作为图标。当您想要显示代表嵌入文件的图标时，这非常有用。
+现在，让我们看看如何将 OLE 对象作为图标插入。当您想要显示代表嵌入文件的图标时，这很有用。
 
 ```java
 @Test
@@ -73,11 +73,11 @@ public void insertOleObjectAsIcon() throws Exception
 }
 ```
 
-在此代码中，我们插入一个 OLE 对象作为图标，为嵌入内容提供更具视觉吸引力的表示。
+在此代码中，我们插入一个 OLE 对象作为图标，以提供嵌入内容的更具视觉吸引力的表示。
 
 ### 读取 ActiveX 控件属性
 
-现在，让我们将注意力转向 ActiveX 控件。我们将学习如何读取 Word 文档中 ActiveX 控件的属性。
+现在，让我们将焦点转移到 ActiveX 控件。我们将学习如何在 Word 文档中读取 ActiveX 控件的属性。
 
 ```java
 @Test
@@ -108,27 +108,27 @@ public void readActiveXControlProperties() throws Exception
 }
 ```
 
-在此代码中，我们迭代 Word 文档中的形状、识别 ActiveX 控件并检索它们的属性。
+在此代码中，我们遍历 Word 文档中的形状，识别 ActiveX 控件并检索它们的属性。
 
 ### 结论
 
-恭喜！您已经学习了如何在 Aspose.Words for Java 中使用 OLE 对象和 ActiveX 控件。这些功能为创建动态和交互式文档开辟了无限可能。
+恭喜！您已经学会了如何在 Aspose.Words for Java 中使用 OLE 对象和 ActiveX 控件。这些功能为创建动态和交互式文档开辟了无限可能。
 
 ### 常见问题解答
 
-### Word 文档中 OLE 对象的用途是什么？ 
+### Word 文档中的 OLE 对象的用途是什么？ 
    - OLE 对象允许您在 Word 文档中嵌入或链接外部内容，例如文件或网页。
 
 ### 我可以自定义文档中 OLE 对象的外观吗？ 
    - 是的，您可以自定义 OLE 对象的外观，包括设置图标和文件名。
 
 ### 什么是 ActiveX 控件？它们如何增强我的文档？ 
-   - ActiveX 控件是可以向 Word 文档添加功能的交互式元素，例如表单控件或多媒体播放器。
+   - ActiveX 控件是可以为 Word 文档添加功能的交互式元素，例如表单控件或多媒体播放器。
 
 ### Aspose.Words for Java 适合企业级文档自动化吗？ 
-   - 是的，Aspose.Words for Java 是一个功能强大的库，用于在 Java 应用程序中自动生成和操作文档。
+   - 是的，Aspose.Words for Java 是一个功能强大的库，用于自动生成和处理 Java 应用程序中的文档。
 
 ### 在哪里可以访问 Aspose.Words for Java？ 
-   - 您可以从以下位置下载 Aspose.Words for Java：[这里](https://releases.aspose.com/words/java/).
+   - 您可以从以下位置下载 Aspose.Words for Java[这里](https://releases.aspose.com/words/java/).
 
-立即开始使用 Aspose.Words for Java，释放文档自动化和定制的全部潜力！
+立即开始使用 Aspose.Words for Java 并充分发挥文档自动化和定制的潜力！

@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 3: Konfigurasikan satuan ukuran
 
-Sekarang kita akan mengonversi nilai margin, jarak header dan footer, dll. ke dalam satuan pengukuran yang berbeda. Gunakan kode berikut untuk menentukan nilai dalam satuan pengukuran tertentu:
+Sekarang kita akan mengonversi nilai margin, jarak header dan footer, dll. dalam satuan pengukuran yang berbeda. Gunakan kode berikut untuk menentukan nilai dalam satuan pengukuran tertentu:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Kode ini menggunakan`ConvertUtil` kelas Aspose.Words untuk mengubah nilai yang ditentukan menjadi inci (`InchToPoint` ). Anda juga dapat menggunakan metode konversi lain yang tersedia di`ConvertUtil` kelas untuk mengkonversi nilai ke satuan pengukuran lainnya.
+ Kode ini menggunakan`ConvertUtil` kelas Aspose.Words untuk mengonversi nilai yang ditentukan menjadi inci (`InchToPoint` ). Anda juga dapat menggunakan metode konversi lain yang tersedia di`ConvertUtil` kelas untuk mengonversi nilai ke unit pengukuran lainnya.
 
 ### Contoh kode sumber untuk Konversi Antar Unit Pengukuran menggunakan Aspose.Words untuk .NET
 

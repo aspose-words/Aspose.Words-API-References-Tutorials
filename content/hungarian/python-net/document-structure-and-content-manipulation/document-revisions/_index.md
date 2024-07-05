@@ -12,7 +12,7 @@ dokumentumok átdolgozása és nyomon követése az együttműködésen alapuló
 
 ## Bevezetés a dokumentum-revíziókba
 
-A dokumentum-revíziók magukban foglalják a dokumentumban idővel végrehajtott változások nyomon követését. Ez elengedhetetlen a közös íráshoz, a jogi dokumentumokhoz és a szabályozási megfeleléshez. Az Aspose.Words for Python leegyszerűsíti ezt a folyamatot azáltal, hogy átfogó eszközkészletet biztosít a dokumentumok revízióinak programozott kezelésére.
+A dokumentum-revíziók során nyomon követik a dokumentumban idővel végrehajtott változásokat. Ez elengedhetetlen a közös íráshoz, a jogi dokumentumokhoz és a szabályozási megfeleléshez. Az Aspose.Words for Python leegyszerűsíti ezt a folyamatot azáltal, hogy átfogó eszközkészletet biztosít a dokumentumok revízióinak programozott kezelésére.
 
 ## Az Aspose.Words beállítása a Python számára
 

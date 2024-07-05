@@ -1,6 +1,6 @@
 ---
-title: Comprimeer geen kleine metabestanden
-linktitle: Comprimeer geen kleine metabestanden
+title: Comprimeer kleine metabestanden niet
+linktitle: Comprimeer kleine metabestanden niet
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u Aspose.Words voor .NET kunt gebruiken om de functie Kleine metabestanden niet te comprimeren bij het opslaan van documenten.
 type: docs

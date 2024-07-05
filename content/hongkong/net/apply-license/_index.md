@@ -13,6 +13,6 @@ url: /zh-hant/net/apply-license/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [從文件應用許可證](./apply-license-from-file/) | 了解如何使用 Aspose.Words for .NET 從檔案套用授權。|
-| [從 Stream 應用程式許可證](./apply-license-from-stream/) | 了解如何使用 Aspose.Words for .NET 從串流應用授權。|
-| [申請計量許可證](./apply-metered-license/) | 了解如何使用 Aspose.Words for .NET 應用計量授權。 |
+| [從文件應用許可證](./apply-license-from-file/) | 透過我們詳細的逐步指南，了解如何從 Aspose.Words for .NET 中的檔案應用授權。輕鬆釋放您圖書館的全部潛能。 |
+| [從 Stream 應用程式許可證](./apply-license-from-stream/) | 透過此逐步指南，了解如何從 Aspose.Words for .NET 中的串流應用程式授權。釋放 Aspose.Words 的全部潛力。 |
+| [申請計量許可證](./apply-metered-license/) | 透過我們的逐步指南，了解如何在 Aspose.Words for .NET 中套用計量授權。靈活、經濟高效的許可變得簡單。 |

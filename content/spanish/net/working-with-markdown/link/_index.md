@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Paso 2: insertar un enlace
 
- Podemos insertar un enlace usando el`InsertHyperlink` método del generador de documentos. Necesitamos especificar el texto del enlace, aquí "Apose", así como la URL de destino.
+ Podemos insertar un enlace usando el`InsertHyperlink` método del generador de documentos. Necesitamos especificar el texto del enlace, aquí "Aspose", así como la URL de destino.
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", falso);

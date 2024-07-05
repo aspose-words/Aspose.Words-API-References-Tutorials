@@ -16,7 +16,7 @@ url: /el/net/clone-and-combine-documents/insert-document-at-replace/
 Πριν μεταβούμε στον κώδικα, υπάρχουν μερικά πράγματα που πρέπει να έχετε στη θέση του:
 
 -  Visual Studio: Βεβαιωθείτε ότι έχετε εγκαταστήσει το Visual Studio στον υπολογιστή σας. Εάν δεν το έχετε ακόμα, μπορείτε να το κατεβάσετε από[εδώ](https://visualstudio.microsoft.com/).
--  Aspose.Words για .NET: Θα χρειαστείτε τη βιβλιοθήκη Aspose.Words. Μπορείτε να το πάρετε από το[Aspose website](https://releases.aspose.com/words/net/).
+-  Aspose.Words για .NET: Θα χρειαστείτε τη βιβλιοθήκη Aspose.Words. Μπορείτε να το πάρετε από το[Aspose ιστότοπο](https://releases.aspose.com/words/net/).
 - Βασικές γνώσεις C#: Η βασική κατανόηση της C# και του .NET θα σας βοηθήσει να ακολουθήσετε αυτό το σεμινάριο.
 
 Ωραία, με αυτά που ξεφεύγουν, ας λερώσουμε τα χέρια μας με κάποιο κωδικό!
@@ -164,4 +164,4 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8).
 
 ### Μπορώ να διατηρήσω τη μορφοποίηση του εγγράφου που έχει εισαχθεί;
- Ναι το`NodeImporter`class σάς επιτρέπει να καθορίσετε πώς γίνεται ο χειρισμός της μορφοποίησης κατά την εισαγωγή κόμβων από ένα έγγραφο σε άλλο.
+ Ναι το`NodeImporter` class σάς επιτρέπει να καθορίσετε πώς γίνεται ο χειρισμός της μορφοποίησης κατά την εισαγωγή κόμβων από ένα έγγραφο σε άλλο.

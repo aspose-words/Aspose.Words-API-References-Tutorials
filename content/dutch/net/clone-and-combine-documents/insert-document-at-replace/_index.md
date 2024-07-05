@@ -43,7 +43,7 @@ Eerst moeten we de map opgeven waar onze documenten zijn opgeslagen. Dit is hetz
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het pad naar uw map. Dit is waar uw documenten zullen leven en ademen.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het pad naar uw directory. Dit is waar uw documenten zullen leven en ademen.
 
 ## Stap 2: Laad het hoofddocument
 
@@ -164,4 +164,4 @@ Ja, u kunt de callback-handler aanpassen om meerdere invoegingen af te handelen 
  kunt ondersteuning krijgen door naar de[Aspose.Words-forum](https://forum.aspose.com/c/words/8).
 
 ### Kan ik de opmaak van het ingevoegde document behouden?
- Ja de`NodeImporter`Met class kunt u opgeven hoe de opmaak wordt afgehandeld bij het importeren van knooppunten van het ene document naar het andere.
+ Ja de`NodeImporter` Met class kunt u opgeven hoe de opmaak wordt afgehandeld bij het importeren van knooppunten van het ene document naar het andere.

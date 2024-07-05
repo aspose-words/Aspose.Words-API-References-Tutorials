@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Tworzenie dokumentu
 
-Teraz utwórzmy nowy dokument. Pomyśl o tym jak o przygotowaniu pustego płótna.
+Teraz utwórzmy nowy dokument. Pomyśl o tym jak o przygotowaniu czystego płótna.
 
 ```csharp
 Document doc = new Document();
@@ -53,7 +53,7 @@ Właśnie utworzyliśmy pusty dokument programu Word. Całkiem fajnie, co?
 
 ## Krok 3: Dodawanie treści za pomocą narzędzia DocumentBuilder
 
-### Zainicjuj program DocumentBuilder
+### Zainicjuj program DocumentBuider
 
  Następnie musimy dodać trochę treści do naszego dokumentu. W tym celu użyjemy`DocumentBuilder`To jest jak nasze pióro, które pisze na płótnie.
 

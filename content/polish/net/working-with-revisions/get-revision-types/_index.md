@@ -52,7 +52,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 ## Wniosek
 
-tym samouczku nauczyliśmy się, jak uzyskać typy wersji słów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępowaliśmy zgodnie z instrukcjami, aby załadować dokument, przejrzeć akapity i sprawdzić typy recenzji słownych powiązanych z każdym akapitem. Teraz możesz zastosować tę wiedzę do analizy recenzji słów we własnych dokumentach Word przy użyciu Aspose.Words dla .NET.
+W tym samouczku nauczyliśmy się, jak uzyskać typy wersji słów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępowaliśmy zgodnie z instrukcjami, aby załadować dokument, przejrzeć akapity i sprawdzić typy recenzji słownych powiązanych z każdym akapitem. Teraz możesz zastosować tę wiedzę do analizy recenzji słów we własnych dokumentach Word przy użyciu Aspose.Words dla .NET.
 
 ### Często zadawane pytania dotyczące typów wersji słów
 
@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### P: Jak sprawdzić, czy akapit został przeniesiony (usunięty) w Aspose.Words dla .NET?
 
- O: Użyj akapitu`IsMoveFromRevision` właściwość, aby sprawdzić, czy została przeniesiona (usunięta).
+ O: Użyj akapitu`IsMoveFromRevision`właściwość, aby sprawdzić, czy została przeniesiona (usunięta).
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### P: Jak sprawdzić, czy akapit został przeniesiony (wstawiony) w Aspose.Words dla .NET?
 
- O: Użyj akapitu`IsMoveToRevision`właściwość, aby sprawdzić, czy została przeniesiona (wstawiona).
+ O: Użyj akapitu`IsMoveToRevision` właściwość, aby sprawdzić, czy została przeniesiona (wstawiona).
 
 ```csharp
 if (paragraph.IsMoveToRevision)

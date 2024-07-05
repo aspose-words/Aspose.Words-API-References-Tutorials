@@ -9,7 +9,7 @@ url: /ru/net/programming-with-digital-signatures/sign-document/
 ---
 В этом руководстве мы покажем вам, как использовать функцию подписи документов в Aspose.Words для .NET. Эта функция позволяет подписывать документ Word цифровой подписью с помощью сертификата. Выполните следующие действия:
 
-## Шаг 1. Загрузка сертификата
+## Шаг 1. Загрузка сертификата
 
 Начните с загрузки сертификата подписи с помощью класса CertificateHolder:
 
@@ -50,7 +50,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document
 
 ## Заключение
 
- В этом уроке мы рассмотрели функцию подписи документов в Aspose.Words для .NET. Загрузив сертификат подписи и используя`DigitalSignatureUtil.Sign` метод, мы можем поставить цифровую подпись в документе Word. Подписание документа обеспечивает аутентификацию и гарантирует целостность содержимого документа, что делает его ценной функцией для безопасного и надежного управления документами.
+ В этом руководстве мы рассмотрели функцию подписи документов в Aspose.Words для .NET. Загрузив сертификат подписи и используя`DigitalSignatureUtil.Sign` метод, мы можем поставить цифровую подпись в документе Word. Подписание документа обеспечивает аутентификацию и гарантирует целостность содержимого документа, что делает его ценной функцией для безопасного и надежного управления документами.
 
 ### Часто задаваемые вопросы по подписанному документу Word
 
@@ -60,7 +60,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document
 
 #### Вопрос: Как загрузить сертификат подписи в Aspose.Words для .NET?
 
- О: Чтобы загрузить сертификат подписи в Aspose.Words для .NET, вы можете использовать`CertificateHolder` класс. Создайте экземпляр`CertificateHolder` указав путь к файлу сертификата и связанный с ним пароль. Вот пример:
+ О: Чтобы загрузить сертификат подписи в Aspose.Words для .NET, вы можете использовать`CertificateHolder` сорт. Создайте экземпляр`CertificateHolder` указав путь к файлу сертификата и связанный с ним пароль. Вот пример:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx", "password");
@@ -70,7 +70,7 @@ CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx
 
 #### Вопрос: Как подписать документ Word с помощью Aspose.Words for .NET?
 
- О: Чтобы подписать документ Word с помощью Aspose.Words for .NET, вы можете использовать`DigitalSignatureUtil` класс. Позвоните в`Sign` метод, предоставляющий путь к исходному документу, путь к подписанному документу (выходному файлу) и`CertificateHolder` Объект Object. Вот пример:
+ О: Чтобы подписать документ Word с помощью Aspose.Words for .NET, вы можете использовать`DigitalSignatureUtil` сорт. Позвоните в`Sign` метод, предоставляющий путь к исходному документу, путь к подписанному документу (выходному файлу) и`CertificateHolder` объект. Вот пример:
 
 ```csharp
 DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/document.docx", certHolder);

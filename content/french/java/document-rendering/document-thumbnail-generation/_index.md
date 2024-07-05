@@ -66,7 +66,7 @@ La génération de vignettes de documents à l'aide d'Aspose.Words pour Java off
 
 ### Comment installer Aspose.Words pour Java ?
 
- Pour installer Aspose.Words pour Java, visitez la page de téléchargement.[ici](https://releases.aspose.com/words/java/) et suivez les instructions d'installation fournies.
+ Pour installer Aspose.Words pour Java, visitez la page de téléchargement[ici](https://releases.aspose.com/words/java/) et suivez les instructions d'installation fournies.
 
 ### Puis-je personnaliser la taille de la vignette générée ?
 

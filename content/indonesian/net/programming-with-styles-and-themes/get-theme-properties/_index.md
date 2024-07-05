@@ -36,7 +36,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Langkah 4: Tampilkan properti tema
 
- Pada langkah terakhir ini, kami menampilkan nilai properti tema yang digunakan`Console.WriteLine`. Anda dapat menyesuaikan tampilan sesuai kebutuhan Anda.
+ Pada langkah terakhir ini, kami menampilkan nilai properti tema menggunakan`Console.WriteLine`. Anda dapat menyesuaikan tampilan sesuai kebutuhan Anda.
 
 Anda dapat menjalankan kode sumber untuk mendapatkan properti tema dokumen. Fitur ini memungkinkan Anda mengambil informasi tentang font dan warna yang digunakan dalam tema dokumen, yang dapat berguna untuk penyesuaian atau analisis gaya.
 

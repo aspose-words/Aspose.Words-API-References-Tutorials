@@ -98,7 +98,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
         
 ```
 
-Nu kan du köra källkoden för att ladda textdokumentet som innehåller listnummer med blanksteg och sedan skapa ett .docx-dokument med de upptäckta listorna. Utdatafilen kommer att sparas i den angivna katalogen med namnet "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx".
+Nu kan du köra källkoden för att ladda textdokumentet som innehåller listnummer med blanksteg, och sedan skapa ett .docx-dokument med de upptäckta listorna. Utdatafilen kommer att sparas i den angivna katalogen med namnet "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx".
 
 ## Slutsats
 I den här handledningen utforskade vi funktionen för upptäckt av blankstegsnumrering i Aspose.Words för .NET. Vi lärde oss hur man skapar listor från ett textdokument som innehåller listnummer följt av blanksteg.

@@ -30,7 +30,7 @@ Java로 문서 작업을 할 때 Aspose.Words는 강력하고 다재다능한 �
 // 새 문서 만들기
 Document doc = new Document();
 
-// 3개의 행과 4개의 열로 구성된 테이블을 만듭니다.
+// 행 3개와 열 4개로 구성된 테이블 만들기
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

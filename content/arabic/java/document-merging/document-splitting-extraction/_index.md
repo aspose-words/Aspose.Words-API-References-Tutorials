@@ -110,4 +110,4 @@ String extractedText = doc.getText();
 
 ### أين يمكنني الوصول إلى الوثائق الخاصة بـ Aspose.Words for Java؟
 
- يمكنك العثور على الوثائق الخاصة بـ Aspose.Words لـ Java.[هنا](https://reference.aspose.com/words/java/).
+ يمكنك العثور على الوثائق الخاصة بـ Aspose.Words لـ Java[هنا](https://reference.aspose.com/words/java/).

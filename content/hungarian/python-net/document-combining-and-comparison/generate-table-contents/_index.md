@@ -38,7 +38,7 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
         # Add subheading
 ```
 
-## A tartalomjegyzék létrehozása
+## A Tartalomjegyzék létrehozása
 
 Most, hogy meghatároztuk a címsorainkat és az alcímeinket, készítsük el magát a tartalomjegyzéket. A dokumentum elején létrehozunk egy új részt, és feltöltjük a megfelelő tartalommal.
 

@@ -35,7 +35,7 @@ Ladda först dokumentet som innehåller Office Math-ekvationen som du vill arbet
 Document doc = new Document("Your Directory Path" + "OfficeMath.docx");
 ```
 
-### Öppna Office Math Object
+### Gå till Office Math Object
 
 Låt oss nu komma åt Office Math-objektet i dokumentet:
 

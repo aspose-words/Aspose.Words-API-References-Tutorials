@@ -41,7 +41,7 @@ using Aspose.Words.Tables;
 
 安裝 Aspose.Words for .NET
 
-接下來，您需要安裝 Aspose.Words for .NET 程式庫。您可以透過 NuGet 套件管理器執行此操作。只需在解決方案資源管理器中右鍵單擊您的項目，選擇“管理 NuGet 套件”，搜尋“Apose.Words”並安裝它。
+接下來，您需要安裝 Aspose.Words for .NET 程式庫。您可以透過 NuGet 套件管理器執行此操作。只需在解決方案資源管理器中右鍵單擊您的項目，選擇“管理 NuGet 套件”，搜尋“Aspose.Words”並安裝它。
 
 ## 步驟2：初始化文檔
 
@@ -92,7 +92,7 @@ builder.Font.Underline = Underline.Single;
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com”，錯誤）；
 ```
 
-在此行中，我們插入一個帶有顯示文字「Apose Website」和 URL「http://www.aspose.com」的超連結。
+在這一行中，我們插入一個帶有顯示文字「Aspose Website」和 URL「http://www.aspose.com」的超連結。
 
 ## 第 6 步：清除格式
 
@@ -121,7 +121,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將超連結插入 Word 文件中。這個過程乍一看可能有點技術性，但透過一些練習，您很快就會像專業人士一樣添加超連結。無論您是建立報告、產生自動化文檔，還是只是玩弄一些程式碼，這項技能肯定會派上用場。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將超連結插入 Word 文件中。這個過程乍一看可能有點技術性，但透過一些練習，您很快就會像專業人士一樣添加超連結。無論您是建立報告、產生自動化文檔，還是只是玩弄一些程式碼，這項技能肯定會派上用場。
 
 ## 常見問題解答
 

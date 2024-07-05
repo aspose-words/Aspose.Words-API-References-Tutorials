@@ -21,27 +21,27 @@ Adicionar marcas d'água a documentos pode ser crucial para promover a marca ou 
 // Carregue o documento
 Document doc = new Document("document.docx");
 
-// Crie uma marca d’água
+// Crie uma marca d'água
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(300);
 watermark.setHeight(100);
 
-// Posicione a marca d’água
+// Posicione a marca d'água
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.PAGE);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.PAGE);
 watermark.setWrapType(WrapType.NONE);
 watermark.setVerticalAlignment(VerticalAlignment.CENTER);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
 
-// Insira a marca d’água
+// Insira a marca d'água
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
 // Salve o documento
 doc.save("document_with_watermark.docx");
 ```
 
-### Personalizando marcas d'água
+### Personalizando marcas d’água
 
 Você pode personalizar ainda mais as marcas d'água ajustando a fonte, o tamanho, a cor e a rotação. Essa flexibilidade garante que sua marca d'água corresponda perfeitamente ao estilo do seu documento.
 
@@ -120,7 +120,7 @@ doc.getFirstSection().getPageSetup().setPageWidth(842.0);
 doc.getFirstSection().getPageSetup().setPageHeight(595.0);
 ```
 
-### Qual é a fonte padrão para marcas d'água?
+### Qual é a fonte padrão para marcas d’água?
 
 A fonte padrão para marcas d'água é Calibri com tamanho de fonte 36.
 

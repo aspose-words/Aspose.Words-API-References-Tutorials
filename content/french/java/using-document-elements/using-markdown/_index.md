@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Spécifiez la liste ordonnée.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Précisez l'accent italien pour le texte.
+// Spécifiez l'accentuation italique du texte.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

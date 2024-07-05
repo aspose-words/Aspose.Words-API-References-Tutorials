@@ -74,7 +74,7 @@ builder.Writeln("This is page 1.");
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## Passaggio 6: scrivere contenuto nella seconda pagina
+## Passaggio 6: scrivere il contenuto nella seconda pagina
 
 Dopo aver inserito l'interruzione di pagina, aggiungiamo del contenuto alla seconda pagina.
 

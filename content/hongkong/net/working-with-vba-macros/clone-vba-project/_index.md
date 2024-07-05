@@ -32,7 +32,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## 步驟 3：使用複製的 VBA 專案建立一個新文件。
+## 步驟 3：使用複製的 VBA 專案建立新文檔
 我們將使用空的 VBA 專案建立一個新文檔，並從來源文檔複製 VBA 專案。
 
 ```csharp
@@ -74,7 +74,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaProject.docm");
 答：在從 Word 文件複製 VBA 專案之前，您必須具備 C# 程式語言的應用知識。您還需要在專案中安裝 Aspose.Words for .NET 程式庫。此外，您還需要一個包含要複製的 VBA 專案的 Word 文件。
 
 #### Q：程式碼中如何設定文檔目錄？
- A：在提供的代碼中，需要替換。`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 專案的 Word 文件所在目錄的適當路徑。
+ A：在提供的代碼中，您需要替換`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 專案的 Word 文件所在目錄的適當路徑。
 
 #### Q：如何使用複製的 VBA 專案保存目標文件？
 

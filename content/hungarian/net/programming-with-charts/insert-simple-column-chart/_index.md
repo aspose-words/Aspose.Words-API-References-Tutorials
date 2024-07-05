@@ -2,7 +2,7 @@
 title: Egyszerű oszlopdiagram beszúrása Word dokumentumba
 linktitle: Egyszerű oszlopdiagram beszúrása Word dokumentumba
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan illeszthet be egy egyszerű oszlopdiagramot egy dokumentumba az Aspose.Words for .NET használatával.
+description: Ismerje meg, hogyan szúrhat be egy egyszerű oszlopdiagramot egy dokumentumba az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/programming-with-charts/insert-simple-column-chart/
@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -99,7 +99,7 @@ Az Aspose.Words for .NET használatával automatizálhatja a dokumentumok oszlop
 
 ### GYIK
 
-#### Q1. Mi az oszlopdiagram?
+#### Q1. Mi az az oszlopdiagram?
 Az oszlopdiagram egy olyan típusú diagram, amely változó magasságú függőleges sávok segítségével jeleníti meg az adatokat. Minden oszlop egy kategóriát képvisel, és az oszlop magassága megfelel az adott kategória értékének. Az oszlopdiagramokat általában a különböző kategóriák adatainak összehasonlítására vagy az időbeli változások nyomon követésére használják.
 
 #### Q2. Hozzáadhatok több sorozatot az oszlopdiagramhoz?
@@ -109,7 +109,7 @@ Igen, az Aspose.Words for .NET használatával több sorozatot is hozzáadhat az
 Igen, az Aspose.Words for .NET lehetővé teszi az oszlopdiagram megjelenésének különböző szempontjainak testreszabását. Módosíthatja a tulajdonságokat, például a sorozat színét, a tengelycímkéket, az adatcímkéket és a diagramterület formázását. A könyvtár API-k gazdag készletét kínálja a diagram vizuális elemeinek vezérléséhez és az igényeinek megfelelő testreszabott megjelenés létrehozásához.
 
 #### Q4. Elmenthetem a dokumentumot a beillesztett oszlopdiagrammal különböző formátumokban?
- Igen, az Aspose.Words for .NET lehetővé teszi a dokumentum elmentését a beillesztett oszlopdiagrammal különféle formátumokban, például DOCX, PDF, HTML és egyebekben. Kiválaszthatja a kívánt kimeneti formátumot igényei alapján, és használhatja a`Save` módszere a`Document` objektumot a dokumentum mentéséhez. A beszúrt oszlopdiagram megmarad a mentett dokumentumban.
+ Igen, az Aspose.Words for .NET lehetővé teszi a dokumentum elmentését a beillesztett oszlopdiagrammal különböző formátumokban, például DOCX, PDF, HTML és egyebekben. Kiválaszthatja a kívánt kimeneti formátumot igényei alapján, és használhatja a`Save` módszere a`Document` objektumot a dokumentum mentéséhez. A beszúrt oszlopdiagram megmarad a mentett dokumentumban.
 
 #### Q5. Módosíthatom az oszlopdiagram adatait és megjelenését a beillesztés után?
 Igen, miután beszúrta az oszlopdiagramot a dokumentumba, az Aspose.Words for .NET által biztosított API-k segítségével módosíthatja annak adatait és megjelenését. Frissítheti a sorozatadatokat új kategóriákkal és értékekkel, módosíthatja az oszlopok színét és formázását, testreszabhatja a tengely tulajdonságait, és különféle formázási beállításokat alkalmazhat dinamikus és tetszetős diagramok létrehozásához a Word-dokumentumokban.

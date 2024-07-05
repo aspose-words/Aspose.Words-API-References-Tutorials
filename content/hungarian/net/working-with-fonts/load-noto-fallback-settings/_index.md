@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: Töltse be a dokumentumot, és konfigurálja a betűtípus helyettesítési beállításait
- Ezután betöltjük a dokumentumot a`Document` osztályba, és konfigurálja a betűtípus felülírási beállításait a segítségével`FontSettings` osztály. A Noto font tartalék beállításait a következővel töltjük be`LoadNotoFallbackSettings()` módszer.
+ Ezután betöltjük a dokumentumot a`Document` osztályba, és konfigurálja a betűtípus felülírási beállításait a segítségével`FontSettings`osztály. A Noto font tartalék beállításait a következővel töltjük be`LoadNotoFallbackSettings()` módszer.
 
 ```csharp
 // Töltse be a dokumentumot, és konfigurálja a betűtípus helyettesítési beállításait

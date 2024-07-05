@@ -29,7 +29,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. lépés: Tartsa meg a forrásszámozást importáláskor
+## 3. lépés: Tartsa meg a forrás számozását importáláskor
 
  Ha meg szeretné őrizni a számozott bekezdések számozási formázását a forrásdokumentumból, hozzon létre egy példányt`ImportFormatOptions` és állítsa be`KeepSourceNumbering` nak nek`true` . Használj`NodeImporter` csomópontok importálásához a forrásdokumentumból a céldokumentumba, megadva`ImportFormatMode.KeepSourceFormatting` és a`importFormatOptions`.
 
@@ -59,7 +59,7 @@ foreach (Paragraph srcPara in srcParas)
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-Ezzel befejeződik a forrásdokumentumnak a céldokumentumhoz való hozzáfűzésének megvalósítása, miközben megtartja az eredeti számozási formázást az Aspose.Words for .NET használatával.
+Ezzel befejeződik a forrásdokumentumnak a céldokumentumhoz való hozzáfűzése, miközben megtartja az eredeti számozási formázást az Aspose.Words for .NET használatával.
 
 ### Példa forráskód a Keep Source Numbering használatához az Aspose.Words for .NET használatával 
 

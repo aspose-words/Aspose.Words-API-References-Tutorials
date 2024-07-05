@@ -1,16 +1,16 @@
 ---
-title: 横罫
-linktitle: 横罫
+title: 水平線
+linktitle: 水平線
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET のステップバイステップ ガイドを使用して水平罫線を挿入する方法を学びます。
+description: Aspose.Words for .NET を使用して水平線を挿入する方法をステップバイステップ ガイドで学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/horizontal-rule/
 ---
 
-この例では、Aspose.Words for .NET で水平罫線機能を使用する方法を示します。水平罫線は、文書のセクションを視覚的に区切るために使用されます。
+この例では、Aspose.Words for .NET で水平線機能を使用する方法を説明します。水平線は、ドキュメントのセクションを視覚的に区切るために使用されます。
 
-## ステップ 1: ドキュメント ジェネレーターを使用する
+## ステップ1: ドキュメントジェネレーターの使用
 
 まず、ドキュメント ジェネレーターを使用してドキュメントにコンテンツを追加します。
 
@@ -18,41 +18,41 @@ url: /ja/net/working-with-markdown/horizontal-rule/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## ステップ 2: 横罫線を挿入する
+## ステップ2: 水平線を挿入する
 
-を使用して水平罫線を挿入できます。`InsertHorizontalRule`ドキュメントジェネレーターのメソッド。
+水平線を挿入するには、`InsertHorizontalRule`ドキュメントジェネレーターのメソッド。
 
 ```csharp
 builder. InsertHorizontalRule();
 ```
 
-## Aspose.Words for .NET を使用した水平罫線のサンプル ソース コード
+## Aspose.Words for .NET を使用した水平線のサンプル ソース コード
 
 ```csharp
 //ドキュメント ビルダーを使用してドキュメントにコンテンツを追加します。
 DocumentBuilder builder = new DocumentBuilder();
 
-//横罫線を挿入します。
+//水平線を挿入します。
 builder.InsertHorizontalRule();
 ```
 
-おめでとうございます！これで、Aspose.Words for .NET で水平罫線機能を使用する方法を学習しました。
+おめでとうございます！これで、Aspose.Words for .NET で水平線機能を使用する方法を学習しました。
 
 
 ### よくある質問
 
 #### Q: Markdown で水平ルーラーを作成するにはどうすればよいですか?
 
-A: Markdown で水平ルーラーを作成するには、空の行に次のいずれかの記号を使用できます: 3 つのアスタリスク (\***)、ダッシュ 3 つ (\---)、または 3 つのアンダースコア (\___）。
+A: Markdownで水平ルーラーを作成するには、空白行に次の記号のいずれかを使用します: 3つのアスタリスク(\***）、3つのダッシュ（\---）、または3つのアンダースコア（\___）。
 
 #### Q: Markdown で水平ルーラーの外観をカスタマイズできますか?
 
-A: 標準の Markdown では、水平ルーラーの外観をカスタマイズする方法はありません。ただし、一部の高度な Markdown エディターと拡張機能は追加のカスタマイズ機能を提供します。
+A: 標準の Markdown では、水平ルーラーの外観をカスタマイズする方法はありません。ただし、一部の高度な Markdown エディターと拡張機能では、追加のカスタマイズ機能が提供されています。
 
 #### Q: 水平ルーラーはすべての Markdown エディターでサポートされていますか?
 
-A: はい、ほとんどの一般的な Markdown エディターは水平ルーラーをサポートしています。ただし、特定のベンダーのドキュメントを参照して、それがサポートされていることを確認することが常に最善です。
+A: はい、ほとんどの一般的な Markdown エディターは水平ルーラーをサポートしています。ただし、サポートされているかどうかを確認するには、特定のベンダーのドキュメントを確認することをお勧めします。
 
-#### Q: Markdown では他にどのような要素を作成できますか?
+#### Q: Markdown で他にどのような要素を作成できますか?
 
 A: 水平ルーラーに加えて、Markdown ではタイトル、段落、リスト、リンク、画像、表などを作成できます。

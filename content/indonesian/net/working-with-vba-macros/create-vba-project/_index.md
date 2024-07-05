@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## Langkah 3: Buat modul baru dan tentukan kode sumber makro.
+## Langkah 3: Buat modul baru dan tentukan kode sumber makro
  Kami akan membuat modul baru dengan membuat instance`VbaModule` kelas dan menentukan nama makro, jenis (modul prosedural) dan kode sumber.
 
 ```csharp
@@ -94,7 +94,7 @@ J: Sebelum Anda dapat membuat proyek VBA di dokumen Word, Anda harus memiliki pe
 
 #### Q: Bagaimana cara mengatur direktori dokumen dalam kode?
 
- A: Pada kode yang diberikan, Anda perlu menggantinya.`"YOUR DOCUMENTS DIRECTORY"` dengan jalur yang sesuai ke direktori tempat Anda ingin menyimpan dokumen Word Anda dengan proyek VBA.
+ A: Pada kode yang diberikan, Anda perlu menggantinya`"YOUR DOCUMENTS DIRECTORY"` dengan jalur yang sesuai ke direktori tempat Anda ingin menyimpan dokumen Word Anda dengan proyek VBA.
 
 #### T: Bagaimana cara menentukan kode sumber makro dalam modul VBA?
 

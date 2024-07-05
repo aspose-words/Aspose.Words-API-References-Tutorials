@@ -33,7 +33,7 @@ import com.aspose.words.*;
 
 ## 步驟5：建立一個新的Word文檔
 
-實例化一個新的`Document`物件建立一個新的Word文件。
+實例化一個新的`Document`物件來建立新的 Word 文件。
 
 ```java
 Document doc = new Document();

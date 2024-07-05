@@ -10,7 +10,7 @@ url: /cs/java/document-manipulation/finding-and-replacing-text/
 
 ## Úvod do hledání a nahrazování textu v Aspose.Words pro Javu
 
-Aspose.Words for Java je výkonné Java API, které vám umožňuje pracovat s dokumenty Wordu programově. Jedním z běžných úkolů při práci s dokumenty aplikace Word je hledání a nahrazování textu. Ať už potřebujete aktualizovat zástupné symboly v šablonách nebo provádět složitější textové manipulace, Aspose.Words pro Java vám pomůže efektivně dosáhnout vašich cílů.
+Aspose.Words for Java je výkonné Java API, které vám umožňuje pracovat s dokumenty Wordu programově. Jedním z běžných úkolů při práci s dokumenty aplikace Word je hledání a nahrazování textu. Ať už potřebujete aktualizovat zástupné symboly v šablonách nebo provádět složitější textové manipulace, Aspose.Words pro Java vám může pomoci dosáhnout vašich cílů efektivně.
 
 ## Předpoklady
 
@@ -264,7 +264,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseSubstitutions(true);
 
-// Použijte volby při nahrazování textu vzorem
+// Při nahrazování textu vzorem použijte volby
 doc.getRange().replace(Pattern.compile("([A-z]+) give money to ([A-z]+)"), "$2 take money from $1", options);
 
 // Uložte upravený dokument
@@ -288,11 +288,11 @@ doc.getRange().replace("text-to-replace", "new-string", new FindReplaceOptions()
 doc.save("modified-document.docx");
 ```
 
-V tomto příkladu nahradíme "text-k-replace" za "new-string" v dokumentu.
+V tomto příkladu nahradíme „text-k-replace“ v dokumentu „new-string“.
 
 ## Použití Legacy Order
 
-Při provádění operací hledání a nahrazení můžete použít starší pořadí.
+Při provádění operací hledání a nahrazování můžete použít starší pořadí.
 
 ```java
 // Vložte dokument

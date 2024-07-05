@@ -321,7 +321,7 @@ Tabeller är ett kraftfullt sätt att organisera och presentera data i dina doku
 // Skapa ett nytt dokument
 Document doc = new Document();
 
-// Skapa en tabell med 3 rader och 3 kolumner.
+// Skapa en tabell med 3 rader och 3 kolumner
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

@@ -61,7 +61,7 @@ com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
 tocField.update();
 ```
 
-Powyższy kod tworzy podstawowy spis treści w dokumencie. Można go dodatkowo dostosować, określając poziomy, formatowanie i nie tylko.
+Powyższy kod tworzy podstawowy spis treści w dokumencie. Możesz go dodatkowo dostosować, określając poziomy, formatowanie i nie tylko.
 
 ## Zaawansowane dostosowywanie spisu treści
 
@@ -80,7 +80,7 @@ tocStyle.getFont().setBold(true);
 
 ### W tym określone nagłówki
 
-Możesz wybrać, które nagłówki uwzględnić w spisie treści, określając ich poziom konspektu.
+Możesz wybrać, które nagłówki mają zostać uwzględnione w spisie treści, określając ich poziom konspektu.
 
 ```java
 // Uwzględnij tylko określone nagłówki

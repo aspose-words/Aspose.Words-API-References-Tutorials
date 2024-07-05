@@ -82,7 +82,7 @@ Kompilera och kör din applikation. Om du har ställt in allt korrekt bör du se
 
 ## Slutsats
 
-Att räkna upp underordnade noder i ett Word-dokument med Aspose.Words för .NET är enkelt när du förstår de grundläggande stegen. Genom att initiera dokumentet, komma åt specifika stycken, hämta underordnade noder och iterera genom dem, kan du enkelt manipulera Word-dokument programmässigt. Aspose.Words erbjuder ett robust API för att hantera olika dokumentelement, vilket gör det till ett oumbärligt verktyg för .NET-utvecklare.
+Att räkna upp underordnade noder i ett Word-dokument med Aspose.Words för .NET är enkelt när du förstår de grundläggande stegen. Genom att initiera dokumentet, komma åt specifika stycken, hämta underordnade noder och iterera genom dem kan du enkelt manipulera Word-dokument programmässigt. Aspose.Words erbjuder ett robust API för att hantera olika dokumentelement, vilket gör det till ett oumbärligt verktyg för .NET-utvecklare.
 
  För mer detaljerad dokumentation och avancerad användning, besök[Aspose.Words för .NET API dokumentation](https://reference.aspose.com/words/net/) . Om du behöver ytterligare support, kolla in[supportforum](https://forum.aspose.com/c/words/8).
 

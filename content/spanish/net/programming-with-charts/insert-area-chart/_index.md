@@ -17,7 +17,7 @@ Asegúrese de tener los siguientes requisitos previos:
 - Aspose.Words para la biblioteca .NET instalada. Puede descargarlo utilizando el administrador de paquetes NuGet para instalarlo.
 - Una ruta del directorio de documentos donde se guardará el documento de salida.
 
-## Paso 2: cree un nuevo documento e inserte un gráfico.
+## Paso 2: cree un nuevo documento e inserte un gráfico
 
  Crear un nuevo`Document` objeto y un`DocumentBuilder` para construir el documento.
 
@@ -98,7 +98,7 @@ Al utilizar Aspose.Words para .NET, puede automatizar el proceso de generación 
 Aspose.Words para .NET es una potente biblioteca de procesamiento de documentos que permite a los desarrolladores crear, modificar y convertir documentos de Word mediante programación en aplicaciones .NET. Proporciona un conjunto completo de API para procesamiento de textos con elementos de documentos, incluidos gráficos, párrafos, tablas y más.
 
 #### P2. ¿Cómo instalo Aspose.Words para .NET?
-Para instalar Aspose.Words para .NET, puede usar el administrador de paquetes NuGet en Visual Studio para instalar la biblioteca directamente en su proyecto. Simplemente busque "Apose.Words" en el administrador de paquetes NuGet e instale el paquete.
+Para instalar Aspose.Words para .NET, puede usar el administrador de paquetes NuGet en Visual Studio para instalar la biblioteca directamente en su proyecto. Simplemente busque "Aspose.Words" en el administrador de paquetes NuGet e instale el paquete.
 
 #### P3. ¿Puedo personalizar la apariencia del gráfico de áreas?
 Sí, al utilizar Aspose.Words para .NET, puede personalizar varios aspectos de la apariencia del gráfico de áreas. Puede modificar propiedades como el título del gráfico, el color de la serie, las etiquetas de los ejes y el formato del área del gráfico. La biblioteca proporciona un amplio conjunto de API para controlar los elementos visuales del gráfico y crear una apariencia personalizada que se adapte a sus necesidades.

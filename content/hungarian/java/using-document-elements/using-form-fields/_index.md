@@ -92,7 +92,7 @@ Testreszabhatja az űrlapmezők megjelenését, például beállíthatja a betű
    Testreszabhatja az űrlapmezők megjelenését a betűméret, szín és egyéb formázási beállítások módosításával.
 
 4. ### Elérhető az Aspose.Words for Java ingyenes próbaverziója?
-    Igen, hozzáférhet az Aspose.Words for Java ingyenes próbaverziójához.[itt](https://releases.aspose.com/).
+    Igen, hozzáférhet az Aspose.Words for Java ingyenes próbaverziójához[itt](https://releases.aspose.com/).
 
 5. ### Hol kaphatok támogatást az Aspose.Words for Java-hoz?
     Támogatásért és segítségért látogassa meg a[Aspose.Words fórum](https://forum.aspose.com/).

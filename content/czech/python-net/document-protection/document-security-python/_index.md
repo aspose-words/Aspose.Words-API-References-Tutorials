@@ -18,7 +18,7 @@ Zabezpečení dokumentů se týká praxe ochrany digitálních dokumentů před 
 
 ## 2. Pochopení důležitosti zabezpečení dokumentů
 
-V dnešním propojeném světě je riziko narušení dat a kybernetických útoků vyšší než kdy dříve. Od osobních dokumentů až po podnikové soubory, jakákoli nechráněná data se mohou dostat do nesprávných rukou, což může mít vážné následky. Zabezpečení dokumentů je zásadní pro jednotlivce a podobné organizace, aby se zabránilo únikům dat a aby byly citlivé informace chráněny před ohrožením.
+V dnešním propojeném světě je riziko narušení dat a kybernetických útoků vyšší než kdy dříve. Od osobních dokumentů až po podnikové soubory, jakákoli nechráněná data se mohou dostat do nesprávných rukou, což může mít vážné následky. Zabezpečení dokumentů je nezbytné pro jednotlivce i organizace, aby se zabránilo únikům dat a aby byly citlivé informace chráněny před ohrožením.
 
 ## 3. Úvod do Aspose.Words pro Python
 
@@ -82,7 +82,7 @@ if __name__ == "__main__":
     set_document_password(loaded_document)
 ```
 
-### 6.2 Omezení úprav dokumentů
+### 6.2 Omezení úprav dokumentu
 
 Aspose.Words umožňuje omezit možnosti úprav dokumentu. Můžete určit, které části dokumentu lze upravit a které části zůstanou chráněny.
 

@@ -30,11 +30,11 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-In questo esempio creiamo un nuovo documento e utilizziamo DocumentBuilder per aggiungere testo e creare un elenco con tre livelli di rientro. Abbiamo aggiunto tre elementi all'elenco, ciascuno dei quali indica un livello aggiuntivo.
+In questo esempio creiamo un nuovo documento e utilizziamo DocumentBuilder per aggiungere testo e creare un elenco con tre livelli di rientro. Abbiamo aggiunto tre elementi all'elenco, con ciascun elemento rientrato di un livello aggiuntivo.
 
 ## Utilizzo di uno spazio per livello per il rientro dell'elenco
 
-Una volta aggiunto il contenuto, possiamo ora configurare il rientro degli elenchi utilizzando uno spazio per livello. Per questo utilizziamo la classe TxtSaveOptions e impostiamo la proprietà ListIndentation.Count al numero di livelli di rientro e la proprietà ListIndentation.Character al carattere spazio da utilizzare. Ecco come:
+Una volta aggiunto il contenuto, ora possiamo configurare il rientro degli elenchi utilizzando uno spazio per livello. Per questo utilizziamo la classe TxtSaveOptions e impostiamo la proprietà ListIndentation.Count al numero di livelli di rientro e la proprietà ListIndentation.Character al carattere spazio da utilizzare. Ecco come:
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();

@@ -33,7 +33,7 @@ paragraph = doc.get_first_section().get_body().append_paragraph("Hello, Aspose!"
 doc.save("basic_document.docx")
 ```
 
-ข้อมูลโค้ดนี้เริ่มต้นเอกสารใหม่ โดยเพิ่มย่อหน้าพร้อมข้อความ “Hello, Aspose!” ลงไป และบันทึกเป็น "basic_document.docx"
+ข้อมูลโค้ดนี้เริ่มต้นเอกสารใหม่ โดยเพิ่มย่อหน้าพร้อมข้อความ "Hello, Aspose!" ลงไป และบันทึกเป็น "basic_document.docx"
 
 ## การเพิ่มรูปทรงที่มีสไตล์
 

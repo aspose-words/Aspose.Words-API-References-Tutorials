@@ -165,4 +165,4 @@ shape.setFillColor(Color.GREEN);
 
 ### Jak mogę ułożyć kształty w określonej kolejności?
 
- Kolejność kształtów można kontrolować za pomocą właściwości Z-order. Ustaw`ZOrder` właściwość kształtu służąca do określenia jego położenia na stosie kształtów. Niższe wartości wysyłane są na tył, natomiast wyższe wartości na przód.
+ Kolejność kształtów można kontrolować za pomocą właściwości Z-order. Ustaw`ZOrder` właściwość kształtu służąca do określenia jego położenia na stosie kształtów. Niższe wartości są wysyłane na tył, a wyższe wartości na przód.

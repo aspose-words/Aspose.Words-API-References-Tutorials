@@ -66,7 +66,7 @@ Het genereren van documentminiaturen met Aspose.Words voor Java biedt een naadlo
 
 ### Hoe installeer ik Aspose.Words voor Java?
 
- Bezoek de downloadpagina om Aspose.Words voor Java te installeren.[hier](https://releases.aspose.com/words/java/) en volg de meegeleverde installatie-instructies.
+ Bezoek de downloadpagina om Aspose.Words voor Java te installeren[hier](https://releases.aspose.com/words/java/) en volg de meegeleverde installatie-instructies.
 
 ### Kan ik de grootte van de gegenereerde miniatuur aanpassen?
 

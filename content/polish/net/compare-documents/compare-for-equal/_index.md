@@ -2,75 +2,92 @@
 title: Porównaj dla równości w dokumencie programu Word
 linktitle: Porównaj dla równości w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku wyjaśniający kod źródłowy C# funkcji Compare for Equals do funkcji dokumentu tekstowego za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak porównać dwa dokumenty programu Word pod kątem równości przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby mieć pewność, że Twoje dokumenty są identyczne.
 type: docs
 weight: 10
 url: /pl/net/compare-documents/compare-for-equal/
 ---
-W tym samouczku przeprowadzimy Cię przez proces korzystania z funkcji Porównaj dla równości w dokumencie programu Word w Aspose.Words dla .NET. Wykonaj poniższe kroki, aby zrozumieć kod źródłowy i zastosować zmiany.
+## Wstęp
 
-## Krok 1: Porównanie dokumentów
+Podczas pracy z dokumentami programu Word zapewnienie identyczności dwóch dokumentów może być kluczowym zadaniem. Niezależnie od tego, czy porównujesz różne wersje umowy, sprawdzasz, czy nie ma nieautoryzowanych zmian, czy też sprawdzasz integralność dokumentów, posiadanie zautomatyzowanego sposobu porównywania dokumentów może zaoszczędzić dużo czasu i wysiłku. Aspose.Words dla .NET oferuje solidne rozwiązanie do porównywania dokumentów Word i identyfikowania wszelkich różnic. W tym artykule przeprowadzimy Cię przez proces porównywania dwóch dokumentów programu Word pod kątem równości przy użyciu Aspose.Words dla .NET. 
 
- Aby rozpocząć, załaduj dwa dokumenty do porównania. W tym przykładzie użyjemy`Clone()` metoda tworzenia kopii oryginalnego dokumentu. Oto jak:
+## Warunki wstępne
+
+Zanim zagłębimy się w przewodnik krok po kroku, upewnijmy się, że mamy wszystko, czego potrzebujemy:
+
+1.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Jeśli jeszcze tego nie masz, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Upewnij się, że masz skonfigurowane środowisko programistyczne .NET. Zdecydowanie zaleca się korzystanie z programu Visual Studio.
+3. Przykładowe dokumenty: Przygotuj dwa dokumenty programu Word, które chcesz porównać.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć pracę z Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulowania dokumentami.
+
+```csharp
+using System;
+using Aspose.Words;
+```
+
+## Krok 1: Skonfiguruj swój projekt
+
+Na początek utwórz nowy projekt .NET w preferowanym środowisku programistycznym. Dodaj odwołanie do biblioteki Aspose.Words dla .NET. Jeśli jeszcze go nie zainstalowałeś, możesz to zrobić za pomocą Menedżera pakietów NuGet w programie Visual Studio.
+
+```sh
+Install-Package Aspose.Words
+```
+
+## Krok 2: Załaduj swoje dokumenty
+
+ Następnie musisz załadować dokumenty programu Word, które chcesz porównać. W tym przykładzie założymy, że masz nazwy dwóch dokumentów`Document.docx` I`Document2.docx` znajduje się w katalogu dokumentów.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document docA = new Document(dataDir + "Document.docx");
-Document docB = docA.Clone();
+Document docB = new Document(dataDir + "Document2.docx");
 ```
 
-## Krok 2: Porównanie dokumentów
+## Krok 3: Sklonuj jeden z dokumentów
 
- Będziemy teraz korzystać z`Compare()` metoda porównywania obu dokumentów. Ta metoda zaznaczy zmiany w oryginalnym dokumencie. Oto jak:
+ Aby porównać dokumenty, sklonujesz jeden z nich. Jest to konieczne, ponieważ`Compare` modyfikuje dokument i możesz chcieć zachować oryginalny dokument w niezmienionej formie do innych celów.
 
 ```csharp
-// Porównaj dokumenty
-docA.Compare(docB, "user", DateTime.Now);
-
-// Sprawdź, czy dokumenty są równe
-Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are identical": "Documents are not identical");
+Document docBClone = docB.Clone();
 ```
 
-### Przykładowy kod źródłowy narzędzia Compare For Equal przy użyciu Aspose.Words dla .NET
+## Krok 4: Wykonaj porównanie
 
-Oto kompletny kod źródłowy funkcji Compare for Equals w Aspose.Words dla .NET:
+ Teraz możesz już porównać dokumenty. The`Compare`Metoda ta uwydatni różnice pomiędzy obydwoma dokumentami. Można określić użytkownika, który dokonuje porównania oraz datę porównania.
 
 ```csharp
-
-	Document docA = new Document(MyDir + "Document.docx");
-	Document docB = docA.Clone();
-	
-	// DocA zawiera teraz zmiany w formie poprawek.
-	docA.Compare(docB, "user", DateTime.Now);
-
-	Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
-
+docA.Compare(docBClone, "user", DateTime.Now);
 ```
 
-Za pomocą tego kodu będziesz mógł porównać dwa dokumenty i określić, czy są takie same, używając Aspose.Words dla .NET.
+## Krok 5: Sprawdź, czy są wersje
+
+ Po porównaniu dokumentów możesz sprawdzić`Revisions` kolekcji, aby sprawdzić, czy są jakieś różnice. Jeśli kolekcja jest pusta, dokumenty są identyczne.
+
+```csharp
+Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
+```
 
 ## Wniosek
 
-W tym samouczku omówiliśmy, jak porównywać dokumenty pod kątem równości przy użyciu funkcji Porównaj pod kątem równości w Aspose.Words dla .NET. Porównując dwa dokumenty i analizując wersje, można określić, czy dokumenty mają tę samą treść lub czy są między nimi jakieś różnice. Aspose.Words dla .NET zapewnia potężne możliwości porównywania dokumentów, umożliwiając automatyzację procesu identyfikacji podobieństw i różnic w dokumentach.
+Porównywanie dokumentów Worda pod kątem równości przy użyciu Aspose.Words dla .NET to prosty proces, który może zaoszczędzić sporo czasu i wysiłku. Wykonując czynności opisane w tym przewodniku, możesz szybko zidentyfikować różnice między dokumentami i zapewnić ich integralność. Niezależnie od tego, czy zarządzasz dokumentami prawnymi, dokumentacją techniczną, czy jakimkolwiek innym typem pliku Word, Aspose.Words dla .NET zapewnia narzędzia potrzebne do wydajnego i dokładnego porównywania dokumentów.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jaki jest cel porównywania dokumentów pod kątem równości w Aspose.Words dla .NET?
+### Czy mogę porównywać dokumenty w różnych formatach (np. .docx i .doc)?
+Tak, Aspose.Words dla .NET obsługuje porównywanie dokumentów w różnych formatach.
 
-Odp.: Porównywanie dokumentów pod kątem równości w Aspose.Words dla .NET pozwala określić, czy dwa dokumenty mają tę samą treść. Porównując dokumenty, można stwierdzić, czy są one identyczne, czy też istnieją między nimi różnice.
+### Co się stanie, jeśli w dokumentach zostaną prześledzone zmiany?
+Aspose.Words dla .NET będzie uwzględniać prześledzone zmiany w procesie porównania, co pozwoli Ci zobaczyć wszystkie różnice.
 
-#### P: Jak porównać dwa dokumenty pod kątem równości przy użyciu Aspose.Words dla .NET?
+### Czy można zignorować określone typy zmian, np. formatowanie?
+Tak, możesz dostosować opcje porównania, aby ignorować określone typy zmian.
 
-Odp.: Aby porównać dwa dokumenty pod kątem równości przy użyciu Aspose.Words dla .NET, wykonaj następujące kroki:
-1. Załaduj dwa dokumenty, które chcesz porównać, do oddzielnych obiektów Dokument.
-2.  Użyj`Compare()` metodę na jednym z dokumentów i podaj drugi dokument jako parametr. Metoda ta polega na porównaniu dokumentów i zaznaczeniu zmian w dokumencie oryginalnym.
-3.  Sprawdź`Revisions` własność oryginalnego dokumentu. Jeśli liczba wynosi zero, oznacza to, że dokumenty są identyczne.
+### Jak zapisać porównany dokument z zaznaczonymi wersjami?
+ Możesz zapisać dokument za pomocą`Save` metody, a poprawki zostaną wyróżnione w pliku wyjściowym.
 
-#### P: Czy mogę dostosować proces porównania lub udostępnić określone opcje porównania?
-
-Odp.: Tak, Aspose.Words dla .NET zapewnia różne opcje dostosowywania procesu porównywania. Możesz kontrolować sposób porównywania dokumentów, określać opcje porównania, takie jak metoda porównania, zmiany formatowania lub ignorować określone elementy. Szczegółowe informacje na temat dostosowywania procesu porównania można znaleźć w dokumentacji Aspose.Words dla .NET.
-
-#### P: Czy mogę przeprowadzić bardziej szczegółowe porównanie, aby zidentyfikować konkretne różnice między dokumentami?
-
- Odpowiedź: Tak, możesz przeprowadzić bardziej szczegółowe porównanie, aby zidentyfikować konkretne różnice między dokumentami, iterując po pliku`Revisions` zbiór oryginalnych dokumentów. Każda wersja oznacza zmianę lub różnicę pomiędzy dokumentami. Możesz uzyskać dostęp do szczegółów każdej wersji, takich jak typ zmiany (wstawienie, usunięcie, zmiana formatowania) i zakres dokumentu, którego to dotyczy.
+### Czy Aspose.Words dla .NET obsługuje porównania w językach innych niż angielski?
+Tak, Aspose.Words dla .NET obsługuje porównywanie dokumentów w wielu językach.

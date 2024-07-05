@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-charts/bounds-of-axis/
 ---
 
-W tym samouczku wyjaśniono, jak ustawić granice osi na wykresie za pomocą Aspose.Words dla .NET. Wstawiając wykres, dodając dane serii i konfigurując skalowanie osi, możesz zdefiniować minimalne i maksymalne wartości dla osi.
+W tym samouczku wyjaśniono, jak ustawić granice osi na wykresie za pomocą Aspose.Words dla .NET. Wstawiając wykres, dodając dane serii i konfigurując skalowanie osi, możesz zdefiniować minimalne i maksymalne wartości osi.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Utwórz nowy dokument i narzędzie DocumentBuider
- Utwórz nową instancję`Document` klasa i A`DocumentBuilder` sprzeciwić się pracy z dokumentem.
+ Utwórz nową instancję`Document` klasa i A`DocumentBuilder`sprzeciwić się pracy z dokumentem.
 
 ```csharp
 Document doc = new Document();
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 Otóż to! Pomyślnie ustawiłeś granice osi na wykresie za pomocą Aspose.Words dla .NET.
 
 ## Wniosek
-W tym samouczku nauczyłeś się, jak ustawić granice osi na wykresie za pomocą Aspose.Words dla .NET. Postępując zgodnie z instrukcją krok po kroku możesz wstawić i skonfigurować wykres, dodać dane serii oraz zdefiniować minimalne i maksymalne wartości skalowania osi. Aspose.Words dla .NET zapewnia potężny i elastyczny interfejs API do przetwarzania słów w dokumentach programu Word, umożliwiając łatwe tworzenie dynamicznych i atrakcyjnych wizualnie wykresów.
+tym samouczku nauczyłeś się, jak ustawić granice osi na wykresie za pomocą Aspose.Words dla .NET. Postępując zgodnie z instrukcją krok po kroku, możesz wstawić i skonfigurować wykres, dodać dane serii oraz zdefiniować minimalne i maksymalne wartości skalowania osi. Aspose.Words dla .NET zapewnia potężny i elastyczny interfejs API do przetwarzania słów w dokumentach programu Word, umożliwiając łatwe tworzenie dynamicznych i atrakcyjnych wizualnie wykresów.
 
 
 ### Często zadawane pytania
@@ -95,10 +95,10 @@ W tym samouczku nauczyłeś się, jak ustawić granice osi na wykresie za pomoc�
 Aspose.Words dla .NET to biblioteka, która umożliwia programistom programową pracę z dokumentami programu Word. Zapewnia szeroką gamę funkcji i funkcjonalności do tworzenia, manipulowania i zapisywania dokumentów Word.
 
 #### Pytanie 2. Jak mogę zainstalować Aspose.Words dla .NET?
-Aby zainstalować Aspose.Words dla .NET, możesz użyć menedżera pakietów NuGet w Visual Studio. Po prostu wyszukaj „Apose.Words” w menedżerze pakietów NuGet i zainstaluj go w swoim projekcie.
+Aby zainstalować Aspose.Words dla .NET, możesz użyć menedżera pakietów NuGet w Visual Studio. Po prostu wyszukaj „Aspose.Words” w menedżerze pakietów NuGet i zainstaluj go w swoim projekcie.
 
 #### Pytanie 3. Czy mogę używać Aspose.Words dla .NET z innymi językami programowania?
-Nie, Aspose.Words dla .NET jest specjalnie zaprojektowany dla aplikacji .NET. Współpracuje z językami programowania takimi jak C# i VB.NET.
+Nie, Aspose.Words dla .NET jest specjalnie zaprojektowany dla aplikacji .NET. Współpracuje z językami programowania, takimi jak C# i VB.NET.
 
 #### Pytanie 4. Czy są jakieś inne wymagania wstępne dotyczące korzystania z Aspose.Words dla .NET?
 Oprócz instalacji biblioteki Aspose.Words for .NET powinieneś posiadać podstawową wiedzę z zakresu programowania w C# i przetwarzania tekstu w dokumentach Word. Pomocna będzie także znajomość frameworku .NET.

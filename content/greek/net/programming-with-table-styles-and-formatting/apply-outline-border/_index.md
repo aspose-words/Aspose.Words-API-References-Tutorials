@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Βήμα 5: Διαγράψτε τα υπάρχοντα περιγράμματα πίνακα.
+## Βήμα 5: Διαγράψτε τα υπάρχοντα περιγράμματα πίνακα
 Για να ξεκινήσουμε με ένα νέο περίγραμμα περιγράμματος, πρέπει πρώτα να διαγράψουμε όλα τα υπάρχοντα περιγράμματα από τον πίνακα. Αυτό μπορεί να γίνει χρησιμοποιώντας το`ClearBorders()` μέθοδος.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Βήμα 7: Γεμίστε τα κελιά με ένα χρώμα φόντου.
-Για να βελτιώσουμε την οπτική παρουσίαση του πίνακα, μπορούμε να γεμίσουμε τα κελιά με ένα χρώμα φόντου.
+## Βήμα 7: Γεμίστε τα κελιά με ένα χρώμα φόντου
+Για να βελτιώσουμε την οπτική παρουσίαση του πίνακα, μπορούμε να γεμίσουμε τα κελιά με ένα χρώμα φόντου
 
 ιδέα. Σε αυτό το παράδειγμα, χρησιμοποιούμε ένα ανοιχτό πράσινο χρώμα.
 
@@ -71,7 +71,7 @@ table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-συγχαρητήρια ! Τώρα έχετε εφαρμόσει ένα περίγραμμα περιγράμματος σε έναν πίνακα χρησιμοποιώντας το Aspose.Words για .NET.
+Συγχαρητήρια ! Τώρα έχετε εφαρμόσει ένα περίγραμμα περιγράμματος σε έναν πίνακα χρησιμοποιώντας το Aspose.Words για .NET.
 
 ### Δείγμα πηγαίου κώδικα για Apply Outline Border χρησιμοποιώντας Aspose.Words για .NET 
 

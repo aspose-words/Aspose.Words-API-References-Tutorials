@@ -2,7 +2,7 @@
 title: การประมวลผลคำด้วยตัวเลือก Pclsave
 linktitle: การประมวลผลคำด้วยตัวเลือก Pclsave
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: สำรวจการประมวลผลคำด้วยตัวเลือกการบันทึก PCL ใน Aspose.Words สำหรับ .NET เรียนรู้วิธีแก้ไขและปรับแต่งการบันทึกเอกสาร Word ในรูปแบบ PCL พร้อมบทช่วยสอนทีละขั้นตอนและตัวอย่างโค้ด
+description: สำรวจการประมวลผลคำด้วยตัวเลือกการบันทึก PCL ใน Aspose.Words สำหรับ .NET เรียนรู้วิธีจัดการและปรับแต่งการบันทึกเอกสาร Word ในรูปแบบ PCL ด้วยบทช่วยสอนทีละขั้นตอนและตัวอย่างโค้ด
 type: docs
 weight: 1670
 url: /th/net/programming-with-pclsaveoptions/

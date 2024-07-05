@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## Krok 3: Utwórz nowy moduł i określ kod źródłowy makra.
+## Krok 3: Utwórz nowy moduł i określ kod źródłowy makra
  Stworzymy nowy moduł, tworząc instancję`VbaModule` class i podanie nazwy makra, typu (moduł proceduralny) i kodu źródłowego.
 
 ```csharp
@@ -94,7 +94,7 @@ Odp.: Zanim będzie można utworzyć projekt VBA w dokumencie programu Word, nal
 
 #### P: Jak ustawić katalog dokumentów w kodzie?
 
- Odp.: w podanym kodzie należy wymienić.`"YOUR DOCUMENTS DIRECTORY"` z odpowiednią ścieżką do katalogu, w którym chcesz zapisać dokument Worda z projektem VBA.
+ Odp.: w podanym kodzie należy wymienić`"YOUR DOCUMENTS DIRECTORY"` z odpowiednią ścieżką do katalogu, w którym chcesz zapisać dokument Worda z projektem VBA.
 
 #### P: Jak określić kod źródłowy makra w module VBA?
 

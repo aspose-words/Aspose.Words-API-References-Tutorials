@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Steg 5: Spara dokumentet
 
- När du har infogat formulärfältet för textinmatning sparar du dokumentet på önskad plats med hjälp av`Save` metod. Se till att ange rätt sökväg:
+ När du har infogat formulärfältet för textinmatning sparar du dokumentet på önskad plats med hjälp av`Save`metod. Se till att ange rätt sökväg:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -117,9 +117,9 @@ I den här handledningen lärde vi oss hur man flyttar en nod i ett spårat Word
 
 ### FAQ's
 
-#### F: Hur kan jag aktivera revisionsspårning i ett Aspose.Words för .NET-dokument?
+#### F: Hur kan jag aktivera revisionsspårning i ett Aspose.Words for .NET-dokument?
 
-S: För att aktivera revisionsspårning i ett Aspose.Words för .NET-dokument kan du använda`StartTrackRevisions` metod för`Document` objekt. Denna metod tar som parametrar namnet på författaren till revisionerna och startdatumet för uppföljningen av revisionerna.
+ S: För att aktivera revisionsspårning i ett Aspose.Words för .NET-dokument kan du använda`StartTrackRevisions` metod för`Document` objekt. Denna metod tar som parametrar namnet på författaren till revisionerna och startdatumet för uppföljningen av revisionerna.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

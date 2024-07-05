@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## Krok 3: Odstraňte všechny sekce
- K odstranění všech sekcí z dokumentu použijeme`Clear` metoda`Sections` sbírka dokumentů.
+ K odstranění všech sekcí z dokumentu použijeme`Clear` metoda`Sections` sbírka listiny.
 
 ```csharp
 doc.Sections.Clear();
@@ -85,7 +85,7 @@ doc.AppendChild(new Section(doc));
 
 #### Otázka: Jak odstranit všechny sekce v Aspose.Words pro .NET?
 
- A: Chcete-li odstranit všechny sekce z dokumentu v Aspose.Words pro .NET, můžete použít`Clear` metoda`Sections` sbírka listin:
+ A: Chcete-li odstranit všechny sekce z dokumentu v Aspose.Words pro .NET, můžete použít`Clear` metoda`Sections` sbírka listiny:
 
 ```csharp
 doc.Sections.Clear();

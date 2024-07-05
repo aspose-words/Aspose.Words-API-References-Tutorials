@@ -67,7 +67,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Q: 수정된 문서를 Aspose.Words for .NET에 로드하려면 어떻게 해야 합니까?
 
- 답변:`Document`개정판이 포함된 파일에서 문서를 로드하는 .NET용 Aspose.Words 클래스입니다. 전체 문서 경로를 지정할 수 있습니다.
+ 답변:`Document` 개정판이 포함된 파일에서 문서를 로드하는 .NET용 Aspose.Words 클래스입니다. 전체 문서 경로를 지정할 수 있습니다.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Q: Aspose.Words for .NET에서 개정 그룹의 세부 정보를 어떻게 얻나요?
 
- A: 루프를 사용하여 문서의 개정판을 살펴보고 각 개정판의 속성에 액세스하여 원하는 세부 정보를 얻으세요. 당신은 사용할 수 있습니다`RevisionType`, `Author`, `DateTime` 그리고`ParentNode` 개정 유형, 작성자, 날짜 및 개정된 텍스트를 각각 가져오는 속성입니다.
+A: 루프를 사용하여 문서의 개정판을 살펴보고 각 개정판의 속성에 액세스하여 원하는 세부 정보를 얻으세요. 당신은 사용할 수 있습니다`RevisionType`, `Author`, `DateTime` 그리고`ParentNode` 개정 유형, 작성자, 날짜 및 개정된 텍스트를 각각 가져오는 속성입니다.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Q: 개정판이 Aspose.Words for .NET의 그룹에 속하는지 확인하는 방법은 무엇입니까?
 
- 답변:`Group` 의 재산`Revision` 개정이 그룹에 속하는지 확인하는 개체입니다. 만약`Group` 재산은`null`이는 개정이 어떤 그룹에도 속하지 않음을 의미합니다.
+ 답변:`Group` 의 재산`Revision` 개정이 그룹에 속하는지 확인하는 개체입니다. 만약`Group` 재산은`null`, 이는 개정이 어떤 그룹에도 속하지 않음을 의미합니다.
 
 ```csharp
 if (revision.Group != null)

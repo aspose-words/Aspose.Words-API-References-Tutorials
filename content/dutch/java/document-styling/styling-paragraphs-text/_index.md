@@ -321,7 +321,7 @@ Tabellen zijn een krachtige manier om gegevens in uw documenten te ordenen en pr
 // Maak een nieuw document
 Document doc = new Document();
 
-// Maak een tabel met 3 rijen en 3 kolommen.
+// Maak een tabel met 3 rijen en 3 kolommen
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

@@ -52,7 +52,7 @@ Félicitation ! Vous avez maintenant appris à créer un lien entre deux zones d
 
 ### FAQ pour créer un lien dans Word
 
-#### Q : Quelle est la bibliothèque utilisée pour lier les zones de texte dans Word à l’aide d’Aspose.Words for .NET ?
+#### Q : Quelle est la bibliothèque utilisée pour lier les zones de texte dans Word à l’aide d’Aspose.Words pour .NET ?
 
 R : Pour lier des zones de texte dans Word à l'aide d'Aspose.Words for .NET, la bibliothèque utilisée est Aspose.Words for .NET.
 

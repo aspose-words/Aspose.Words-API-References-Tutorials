@@ -47,7 +47,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 ## Wniosek
 
-tym samouczku nauczyliśmy się, jak uzyskać grupy wersji w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępowaliśmy zgodnie z instrukcjami, aby załadować dokument i przeglądać grupy recenzji, wyświetlając szczegóły, takie jak autor i typ recenzji. Możesz teraz zastosować tę wiedzę do analizy wersji własnego dokumentu programu Word przy użyciu Aspose.Words dla .NET.
+W tym samouczku nauczyliśmy się, jak uzyskać grupy wersji w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępowaliśmy zgodnie z instrukcjami, aby załadować dokument i przeglądać grupy recenzji, wyświetlając szczegóły, takie jak autor i typ recenzji. Możesz teraz zastosować tę wiedzę do analizy wersji własnego dokumentu programu Word przy użyciu Aspose.Words dla .NET.
 
 ### Często zadawane pytania
 
@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### P: Jak przeglądać grupy wersji w dokumencie w Aspose.Words dla .NET?
 
- O: Skorzystaj z`Groups` własność dokumentu`Revisions` obiekt, aby uzyskać kolekcję grup wersji. Następnie możesz użyć pętli, aby przeglądać każdą grupę recenzji.
+ O: Skorzystaj z`Groups` własność dokumentu`Revisions`obiekt, aby uzyskać kolekcję grup wersji. Następnie możesz użyć pętli, aby przeglądać każdą grupę recenzji.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### P: Jak uzyskać typ wersji grupy wersji w Aspose.Words dla .NET?
 
- O: Skorzystaj z`RevisionType` własność`RevisionGroup`obiekt, aby uzyskać typ wersji grupy.
+ O: Skorzystaj z`RevisionType` własność`RevisionGroup` obiekt, aby uzyskać typ wersji grupy.
 
 ```csharp
 string revisionType = group.RevisionType;

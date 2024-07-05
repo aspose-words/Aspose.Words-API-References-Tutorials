@@ -17,7 +17,7 @@ Pastikan Anda memiliki prasyarat berikut:
 - Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
 - Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan.
+## Langkah 2: Buat dokumen baru dan masukkan bagan
 
  Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
 
@@ -94,7 +94,7 @@ Dengan Aspose.Words untuk .NET, Anda memiliki fleksibilitas untuk menyesuaikan b
 ### FAQ
 
 #### Q1. Apa yang dimaksud dengan label sumbu dalam bagan?
-Label sumbu dalam bagan mengacu pada representasi tekstual nilai di sepanjang sumbu horizontal (sumbu X) atau vertikal (sumbu Y) bagan. Label ini membantu mengidentifikasi dan menafsirkan titik data yang diplot pada bagan. Label sumbu memberikan konteks dan memungkinkan pengguna memahami skala dan rentang nilai dalam bagan.
+Label sumbu dalam bagan merujuk pada representasi tekstual nilai di sepanjang sumbu horizontal (sumbu X) atau vertikal (sumbu Y) bagan. Label ini membantu mengidentifikasi dan menafsirkan titik data yang diplot pada bagan. Label sumbu memberikan konteks dan memungkinkan pengguna memahami skala dan rentang nilai dalam diagram.
 
 #### Q2. Bagaimana cara menyesuaikan jarak antar label sumbu?
  Untuk menyesuaikan jarak antar label sumbu dalam bagan menggunakan Aspose.Words untuk .NET, Anda dapat mengakses`AxisX` atau`AxisY` properti bagan dan memodifikasi`TickLabelSpacing` Properti. Dengan mengatur`TickLabelSpacing` ke nilai tertentu, Anda dapat mengontrol satuan interval antara label pada sumbu masing-masing, menyesuaikan jarak sesuai kebutuhan Anda.

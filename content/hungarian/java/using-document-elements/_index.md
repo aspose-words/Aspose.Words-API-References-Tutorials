@@ -46,13 +46,13 @@ Ismerje meg a lábjegyzetek és végjegyzetek hatékony használatát az Aspose.
 ### [Űrlapmezők használata az Aspose.Words for Java programban](./using-form-fields/)
 "Tanulja meg az Aspose.Words for Java használatát űrlapmezőkkel rendelkező interaktív Word-dokumentumok létrehozásához. Kezdje el most!"
 ### [A HarfBuzz használata az Aspose.Words for Java-ban](./using-harfbuzz/)
-Tanulja meg a HarfBuzz használatát az Aspose.Words for Java speciális szövegformázásához. Ezzel a lépésenkénti útmutatóval javíthatja a szövegmegjelenítést összetett szkriptekben.
+Tanulja meg a HarfBuzz használatát az Aspose.Words for Java speciális szövegformázásához. Ezzel a lépésenkénti útmutatóval javíthatja a szöveg megjelenítését összetett szkriptekben.
 ### [Fejlécek és láblécek használata az Aspose.Words for Java-ban](./using-headers-and-footers/)
 Ismerje meg lépésről lépésre a fejlécek és láblécek használatát az Aspose.Words for Java programban. Hozzon létre professzionális dokumentumokat könnyedén.
 ### [Elválasztás használata az Aspose.Words for Java programban](./using-hyphenation/)
 Ezzel az átfogó oktatóanyaggal megtudhatja, hogyan használhatja hatékonyan az elválasztást az Aspose.Words for Java programban. Növelje a dokumentumok olvashatóságát még ma!
 ### [Listák használata az Aspose.Words for Java-ban](./using-lists/)
-Tanulja meg a listák használatát az Aspose.Words for Java programban ezzel a lépésenkénti oktatóanyaggal. Hatékonyan rendszerezze és formázza dokumentumait.
+Tanulja meg a listák használatát az Aspose.Words for Java programban ezzel a lépésről lépésre mutató oktatóanyaggal. Hatékonyan rendszerezze és formázza dokumentumait.
 ### [Markdown használata az Aspose.Words for Java-ban](./using-markdown/)
 Tanulja meg a Markdown használatát az Aspose.Words for Java programban ezzel a lépésről lépésre mutató oktatóanyaggal. Könnyedén hozhat létre, alakíthat ki és menthet Markdown dokumentumokat.
 ### [Csomópontok használata az Aspose.Words for Java-ban](./using-nodes/)

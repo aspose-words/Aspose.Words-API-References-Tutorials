@@ -1,22 +1,22 @@
 ---
 title: Aspose.Words for Java でコンテンツを抽出するためのヘルパー メソッド
-linktitle: コンテンツを抽出するためのヘルパー メソッド
+linktitle: コンテンツ抽出のためのヘルパーメソッド
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用して Word 文書からコンテンツを効率的に抽出する方法を学びます。この包括的なガイドでは、ヘルパー メソッド、カスタム書式設定などについて詳しく説明します。
+description: Aspose.Words for Java を使用して Word 文書からコンテンツを効率的に抽出する方法を学びます。この包括的なガイドで、ヘルパー メソッド、カスタム書式設定などについて説明します。
 type: docs
 weight: 14
 url: /ja/java/document-manipulation/helper-methods-for-extracting-content/
 ---
 
-## Aspose.Words for Java でコンテンツを抽出するためのヘルパー メソッドの概要
+## Aspose.Words for Java でコンテンツを抽出するためのヘルパー メソッドの紹介
 
-Aspose.Words for Java は、開発者が Word ドキュメントをプログラムで操作できるようにする強力なライブラリです。 Word 文書を操作するときの一般的なタスクの 1 つは、文書からコンテンツを抽出することです。この記事では、Aspose.Words for Java を使用してコンテンツを効率的に抽出するためのいくつかのヘルパー メソッドについて説明します。
+Aspose.Words for Java は、開発者が Word 文書をプログラムで操作できるようにする強力なライブラリです。Word 文書を操作する際の一般的なタスクの 1 つは、文書からコンテンツを抽出することです。この記事では、Aspose.Words for Java を使用してコンテンツを効率的に抽出するためのヘルパー メソッドをいくつか紹介します。
 
 ## 前提条件
 
-コード例に入る前に、Aspose.Words for Java がインストールされ、Java プロジェクトに設定されていることを確認してください。からダウンロードできます[ここ](https://releases.aspose.com/words/java/).
+コード例に進む前に、JavaプロジェクトにAspose.Words for Javaがインストールされ、設定されていることを確認してください。ダウンロードはここから行えます。[ここ](https://releases.aspose.com/words/java/).
 
-## ヘルパー方法 1: スタイルごとに段落を抽出する
+## ヘルパーメソッド 1: スタイルによる段落の抽出
 
 ```java
 public static ArrayList<Paragraph> paragraphsByStyleName(Document doc, String styleName) {
@@ -24,7 +24,7 @@ public static ArrayList<Paragraph> paragraphsByStyleName(Document doc, String st
     ArrayList<Paragraph> paragraphsWithStyle = new ArrayList<Paragraph>();
     NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
 
-    //すべての段落を調べて、指定されたスタイルを持つ段落を見つけます。
+    //すべての段落を調べて、指定されたスタイルの段落を見つけます。
     for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
         if (paragraph.getParagraphFormat().getStyle().getName().equals(styleName))
             paragraphsWithStyle.add(paragraph);
@@ -33,20 +33,20 @@ public static ArrayList<Paragraph> paragraphsByStyleName(Document doc, String st
 }
 ```
 
-この方法を使用すると、Word 文書内で特定のスタイルを持つ段落を抽出できます。これは、見出しやブロック引用符など、特定の書式でコンテンツを抽出する場合に便利です。
+この方法を使用すると、Word 文書内の特定のスタイルを持つ段落を抽出できます。これは、見出しやブロック引用など、特定の書式を持つコンテンツを抽出する場合に便利です。
 
-## ヘルパー方法 2: ノードによるコンテンツの抽出
+## ヘルパーメソッド 2: ノードによるコンテンツの抽出
 
 ```java
 public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node endNode, boolean isInclusive) {
-    //まず、このメソッドに渡されたノードが使用可能であることを確認します。
+    //まず、このメソッドに渡されるノードが有効であることを確認します。
     verifyParameterNodes(startNode, endNode);
     
-    //抽出したノードを保存するリストを作成します。
+    //抽出されたノードを格納するリストを作成します。
     ArrayList<Node> nodes = new ArrayList<Node>();
 
-    //いずれかのマーカーがコメント自体を含むコメントの一部である場合、ポインターを移動する必要があります。
-    // CommentRangeEnd ノードの後に見つかった Comment ノードに転送します。
+    //いずれかのマーカーがコメントの一部である場合（コメント自体を含む）、ポインタを移動する必要があります。
+    // CommentRangeEnd ノードの後に見つかったコメント ノードに進みます。
     if (endNode.getNodeType() == NodeType.COMMENT_RANGE_END && isInclusive) {
         Node node = findNextNode(NodeType.COMMENT, endNode.getNextSibling());
         if (node != null)
@@ -57,8 +57,8 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     Node originalStartNode = startNode;
     Node originalEndNode = endNode;
 
-    //ブロックレベルのノード (段落と表) に基づいてコンテンツを抽出します。親ノードをたどってそれらを見つけます。
-    //マーカー ノードがインラインかどうかに応じて、最初と最後のノードのコンテンツを分割します。
+    //ブロック レベルのノード (段落と表) に基づいてコンテンツを抽出します。親ノードをトラバースしてそれらを見つけます。
+    //マーカー ノードがインラインであるかどうかに応じて、最初のノードと最後のノードのコンテンツを分割します。
     startNode = getAncestorInBody(startNode);
     endNode = getAncestorInBody(endNode);
     boolean isExtracting = true;
@@ -66,34 +66,34 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     //ドキュメントから抽出している現在のノード。
     Node currNode = startNode;
 
-    //コンテンツの抽出を開始します。すべてのブロックレベルのノードを処理し、特に最初のノードを分割します
-    //必要に応じて最後のノードも追加されるため、段落の書式設定が保持されます。
-    //この方法は因数分解する必要があるため、通常の抽出よりも少し複雑です。
-    //インラインノード、フィールド、ブックマークなどを使用して抽出する際に便利です。
+    //コンテンツの抽出を開始します。すべてのブロックレベルのノードを処理し、特に最初の
+    //必要に応じて最後のノードを追加して、段落の書式設定が保持されるようにします。
+    //この方法は通常の抽出器よりも少し複雑で、因数分解する必要がある。
+    //インライン ノード、フィールド、ブックマークなどを使用して抽出することで、有用になります。
     while (isExtracting) {
-        //現在のノードとその子のクローンを作成してコピーを取得します。
+        //現在のノードとその子ノードを複製してコピーを取得します。
         Node cloneNode = currNode.deepClone(true);
         boolean isEndingNode = currNode.equals(endNode);
         if (isStartingNode || isEndingNode) {
             //各マーカーを個別に処理する必要があるため、代わりに別のメソッドに渡します。
-            //ノードインデックスを保持するために、最初に End を処理する必要があります。
+            //ノード インデックスを保持するには、最初に終了を処理する必要があります。
             if (isEndingNode) {
-                // !isStartingNode: マーカーが同じノードの場合、ノードを 2 回追加しないでください。
+                // !isStartingNode: マーカーが同じノードである場合は、ノードを 2 回追加しないでください。
                 processMarker(cloneNode, nodes, originalEndNode, currNode, isInclusive,
                         false, !isStartingNode, false);
                 isExtracting = false;
             }
-            //ブロックレベルの開始マーカーと終了マーカーは同じノードである可能性があるため、条件付きは別個にする必要があります。
+            //ブロック レベルの開始マーカーと終了マーカーは同じノードである可能性があるため、条件は分離する必要があります。
             if (isStartingNode) {
                 processMarker(cloneNode, nodes, originalStartNode, currNode, isInclusive,
                         true, true, false);
                 isStartingNode = false;
             }
         } else
-            //ノードは開始マーカーや終了マーカーではありません。単純にコピーをリストに追加します。
+            //ノードは開始マーカーまたは終了マーカーではないので、コピーをリストに追加するだけです。
             nodes.add(cloneNode);
 
-        //次のノードに移動して抽出します。次のノードが null の場合、
+        //次のノードに移動して抽出します。次のノードがnullの場合、
         //残りのコンテンツは別のセクションにあります。
         if (currNode.getNextSibling() == null && isExtracting) {
             //次のセクションに進みます。
@@ -105,7 +105,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
         }
     }
 
-    //インライン ブックマークを使用するモードとの互換性を保つために、次の段落 (空) を追加します。
+    //インライン ブックマーク モードとの互換性を保つために、次の段落 (空) を追加します。
     if (isInclusive && originalEndNode == endNode && !originalEndNode.isComposite())
         includeNextParagraph(endNode, nodes);
 
@@ -114,18 +114,18 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
 }
 ```
 
-このメソッドを使用すると、段落、表、またはその他のブロック レベル要素であるかどうかに関係なく、指定した 2 つのノード間のコンテンツを抽出できます。インライン マーカー、フィールド、ブックマークなどのさまざまなシナリオを処理します。
+このメソッドを使用すると、段落、表、またはその他のブロック レベル要素など、指定された 2 つのノード間のコンテンツを抽出できます。インライン マーカー、フィールド、ブックマークなど、さまざまなシナリオに対応します。
 
-## ヘルパー方法 3: 新しいドキュメントの生成
+## ヘルパーメソッド3: 新しいドキュメントの生成
 
 ```java
 public static Document generateDocument(Document srcDoc, ArrayList<Node> nodes) throws Exception {
     Document dstDoc = new Document();
     
-    //空の文書から最初の段落を削除します。
+    //空のドキュメントから最初の段落を削除します。
     dstDoc.getFirstSection().getBody().removeAllChildren();
     
-    //リストから各ノードを新しいドキュメントにインポートします。ノードの元の形式を維持します。
+    //リストの各ノードを新しいドキュメントにインポートします。ノードの元の書式設定を維持します。
     NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
     for (Node node : nodes) {
         Node importNode = importer.importNode(node, true);
@@ -136,30 +136,30 @@ public static Document generateDocument(Document srcDoc, ArrayList<Node> nodes) 
 }
 ```
 
-このメソッドを使用すると、ソース ドキュメントからノードのリストをインポートして新しいドキュメントを生成できます。ノードの元の書式が保持されるため、特定のコンテンツを含む新しいドキュメントを作成するのに役立ちます。
+この方法を使用すると、ソース ドキュメントからノードのリストをインポートして新しいドキュメントを生成できます。ノードの元の書式設定が保持されるため、特定のコンテンツを含む新しいドキュメントを作成する場合に便利です。
 
 ## 結論
 
-Word 文書からのコンテンツの抽出は、多くの文書処理タスクの重要な部分となる可能性があります。 Aspose.Words for Java は、このプロセスを簡素化する強力なヘルパー メソッドを提供します。スタイルごとに段落を抽出したり、ノード間のコンテンツを抽出したり、新しい文書を生成したりする必要がある場合でも、これらのメソッドは Java アプリケーションで Word 文書を効率的に操作するのに役立ちます。
+Word 文書からコンテンツを抽出することは、多くの文書処理タスクの重要な部分です。Aspose.Words for Java は、このプロセスを簡素化する強力なヘルパー メソッドを提供します。段落をスタイルで抽出したり、ノード間のコンテンツを抽出したり、新しい文書を生成したりする必要がある場合、これらのメソッドは、Java アプリケーションで Word 文書を効率的に操作するのに役立ちます。
 
 ## よくある質問
 
 ### Aspose.Words for Java をインストールするにはどうすればよいですか?
 
- Aspose.Words for Java をインストールするには、Aspose Web サイトからダウンロードできます。訪問[ここ](https://releases.aspose.com/words/java/)最新バージョンを入手するには。
+ Aspose.Words for Javaをインストールするには、AsposeのWebサイトからダウンロードしてください。[ここ](https://releases.aspose.com/words/java/)最新バージョンを入手してください。
 
 ### Word 文書の特定のセクションからコンテンツを抽出できますか?
 
-はい、この記事で説明されている方法を使用して、Word 文書の特定のセクションからコンテンツを抽出できます。抽出するセクションを定義する開始ノードと終了ノードを指定するだけです。
+はい、この記事で説明した方法を使用して、Word 文書の特定のセクションからコンテンツを抽出できます。抽出するセクションを定義する開始ノードと終了ノードを指定するだけです。
 
 ### Aspose.Words for Java は Java 11 と互換性がありますか?
 
-はい、Aspose.Words for Java は Java 11 以降のバージョンと互換性があります。 Java アプリケーションで問題なく使用できます。
+はい、Aspose.Words for Java は Java 11 以降のバージョンと互換性があります。Java アプリケーションで問題なく使用できます。
 
-### 抽出したコンテンツの形式をカスタマイズできますか?
+### 抽出されたコンテンツの書式をカスタマイズできますか?
 
-はい、生成されたドキュメント内のインポートされたノードを変更することで、抽出されたコンテンツの書式設定をカスタマイズできます。 Aspose.Words for Java は、ニーズを満たす広範な書式設定オプションを提供します。
+はい、生成されたドキュメントにインポートされたノードを変更することで、抽出されたコンテンツの書式設定をカスタマイズできます。Aspose.Words for Java には、ニーズを満たすための広範な書式設定オプションが用意されています。
 
-### Aspose.Words for Java のドキュメントと例はどこで入手できますか?
+### Aspose.Words for Java の詳細なドキュメントや例はどこで入手できますか?
 
- Aspose Web サイトでは、Aspose.Words for Java の包括的なドキュメントと例を見つけることができます。訪問[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/)詳細なドキュメントとリソースについては、こちらをご覧ください。
+ Aspose.Words for Javaの包括的なドキュメントとサンプルは、AsposeのWebサイトでご覧いただけます。[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/)詳細なドキュメントとリソースについては、こちらをご覧ください。

@@ -103,7 +103,7 @@ To je vše ! Úspěšně jste zkomprimovali obrázky v dokumentu a vygenerovali 
 
 ## Závěr
 
-V tomto tutoriálu jsme vysvětlili, jak komprimovat obrázky v dokumentu PDF pomocí Aspose.Words for .NET. Podle popsaných kroků můžete snadno zmenšit velikost obrázků v dokumentu PDF a vygenerovat soubor PDF se správnou kompresí obrázků. Použijte funkce komprese obrázků Aspose.Words for .NET k optimalizaci velikosti vašich dokumentů PDF při zachování kvality obrazu.
+V tomto tutoriálu jsme vysvětlili, jak komprimovat obrázky v dokumentu PDF pomocí Aspose.Words for .NET. Podle popsaných kroků můžete snadno zmenšit velikost obrázků v dokumentu PDF a vygenerovat PDF se správnou kompresí obrázků. Použijte funkce komprese obrázků Aspose.Words for .NET k optimalizaci velikosti vašich dokumentů PDF při zachování kvality obrazu.
 
 ### Často kladené otázky
 

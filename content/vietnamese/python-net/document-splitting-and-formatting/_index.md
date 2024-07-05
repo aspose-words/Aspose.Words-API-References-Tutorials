@@ -14,7 +14,7 @@ Chào mừng bạn đến với thế giới của các hướng dẫn Aspose.Wo
 
 ## Tại sao việc chia tách và định dạng tài liệu lại quan trọng
 
-Trong lĩnh vực xử lý tài liệu, khả năng phân chia và định dạng tài liệu là điều tối quan trọng. Tách tài liệu cho phép bạn trích xuất các phần, trang hoặc nội dung cụ thể từ tài liệu, cho phép phân tích và phân phối tập trung hơn. Mặt khác, định dạng đảm bảo rằng tài liệu của bạn hấp dẫn về mặt hình ảnh, nhất quán và phù hợp với nhận dạng thương hiệu của bạn. Cho dù bạn đang làm việc trên các tài liệu pháp lý, báo cáo hay tài liệu giáo dục, việc nắm vững cách phân chia và định dạng tài liệu là điều cần thiết để quản lý tài liệu hiệu quả và hiệu quả.
+Trong lĩnh vực xử lý tài liệu, khả năng phân chia và định dạng tài liệu là điều tối quan trọng. Tách tài liệu cho phép bạn trích xuất các phần, trang hoặc nội dung cụ thể từ tài liệu, cho phép phân tích và phân phối tập trung hơn. Mặt khác, định dạng đảm bảo rằng tài liệu của bạn hấp dẫn về mặt hình ảnh, nhất quán và phù hợp với nhận diện thương hiệu của bạn. Cho dù bạn đang làm việc trên các tài liệu pháp lý, báo cáo hay tài liệu giáo dục, việc nắm vững cách phân chia và định dạng tài liệu là điều cần thiết để quản lý tài liệu hiệu quả và hiệu quả.
 
 ## Bạn sẽ học được gì
 
@@ -36,7 +36,7 @@ Thông qua các hướng dẫn này, bạn sẽ có được những hiểu bi�
 Tìm hiểu cách phân chia và định dạng tài liệu một cách hiệu quả bằng Aspose.Words cho Python. Hướng dẫn này cung cấp hướng dẫn từng bước và ví dụ về mã nguồn.
 ### [Chia tài liệu bằng Trình tạo nội dung một cách chính xác](./divide-documents-content-builder/)
 Phân chia và chinh phục tài liệu của bạn một cách chính xác bằng cách sử dụng Aspose.Words cho Python. Tìm hiểu cách tận dụng Trình tạo nội dung để tổ chức và trích xuất nội dung hiệu quả.
-### [Kết hợp và sao chép tài liệu cho quy trình công việc phức tạp](./combine-clone-documents/)
+### [Kết hợp và sao chép tài liệu cho quy trình làm việc phức tạp](./combine-clone-documents/)
 Tìm hiểu cách kết hợp và sao chép tài liệu một cách hiệu quả bằng Aspose.Words cho Python. Hướng dẫn từng bước với mã nguồn để thao tác tài liệu. Nâng cao quy trình làm việc tài liệu của bạn ngay hôm nay!
 ### [So sánh các phiên bản tài liệu để kiểm soát sửa đổi hiệu quả](./compare-document-versions/)
 Tìm hiểu cách so sánh hiệu quả các phiên bản tài liệu bằng Aspose.Words cho Python. Hướng dẫn từng bước với mã nguồn để kiểm soát sửa đổi. Tăng cường hợp tác và ngăn ngừa lỗi.

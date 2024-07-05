@@ -107,12 +107,12 @@ para.remove();
 // en wordt als revisie in Microsoft Word weergegeven, totdat we alle revisies accepteren of afwijzen.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// De verwijderde revisieparagraaf wordt verwijderd zodra we de wijzigingen accepteren.
+// De paragraaf 'Revisie verwijderen' wordt verwijderd zodra we de wijzigingen accepteren.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //was Is.Leeg
 // Als u het bijhouden van revisies stopt, verschijnt deze tekst als normale tekst.
-// Revisies worden niet meegeteld wanneer het document wordt gewijzigd.
+// Revisies worden niet meegeteld als het document wordt gewijzigd.
 doc.stopTrackRevisions();
 // Bewaar het document.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");

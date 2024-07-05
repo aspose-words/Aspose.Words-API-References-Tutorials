@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## Paso 2: agregar propiedades personalizadas
- A continuación, agregue las propiedades personalizadas deseadas. Por ejemplo, para agregar una propiedad "Empresa" con el valor "Apose", use el`Add` método de la colección CustomDocumentProperties:
+ A continuación, agregue las propiedades personalizadas deseadas. Por ejemplo, para agregar una propiedad "Empresa" con el valor "Aspose", use el`Add` método de la colección CustomDocumentProperties:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ R: Para exportar las propiedades personalizadas de un documento a un documento P
 
  Crear una instancia del`Document` clase.
 
- Agregue las propiedades personalizadas deseadas usando el`CustomDocumentProperties` recopilación. Por ejemplo, utilice el`Add` Método para agregar una propiedad "Empresa" con el valor "Apose".
+ Agregue las propiedades personalizadas deseadas usando el`CustomDocumentProperties` recopilación. Por ejemplo, utilice el`Add` Método para agregar una propiedad "Empresa" con el valor "Aspose".
 
  Crear una instancia del`PdfSaveOptions` clase y especificar cómo exportar propiedades personalizadas utilizando el`CustomPropertiesExport` propiedad. El`PdfCustomPropertiesExport.Standard` value exporta propiedades personalizadas según la configuración predeterminada.
 

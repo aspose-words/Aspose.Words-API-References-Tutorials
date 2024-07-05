@@ -10,7 +10,7 @@ url: /pl/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## Wstęp
 
-Rozszerzenia internetowe stały się integralną częścią nowoczesnych systemów zarządzania dokumentami. Umożliwiają programistom ulepszanie funkcjonalności dokumentów poprzez płynną integrację komponentów internetowych. Aspose.Words, potężny interfejs API do manipulacji dokumentami dla języka Python, zapewnia kompleksowe rozwiązanie do integracji rozszerzeń internetowych z dokumentami.
+Rozszerzenia internetowe stały się integralną częścią nowoczesnych systemów zarządzania dokumentami. Umożliwiają programistom ulepszanie funkcjonalności dokumentów poprzez płynną integrację komponentów internetowych. Aspose.Words, potężny interfejs API do manipulacji dokumentami dla języka Python, zapewnia kompleksowe rozwiązanie do włączania rozszerzeń internetowych do dokumentów.
 
 ## Warunki wstępne
 

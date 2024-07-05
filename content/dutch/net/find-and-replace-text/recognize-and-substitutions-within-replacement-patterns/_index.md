@@ -92,7 +92,7 @@ builder.Write("Jason gives money to Paul.");
 
 #### Vraag: Hoe kan ik tekst zoeken en vervangen met reguliere expressies in Aspose.Words voor .NET?
 
- A: Om tekst te zoeken en te vervangen met behulp van reguliere expressies in Aspose.Words voor .NET, kunt u de`Range.Replace` functioneren samen met een reguliere-expressiepatroon. U kunt een`Regex` object met het gewenste patroon en geef het door aan de`Replace` methode:
+ A: Om tekst te zoeken en te vervangen met reguliere expressies in Aspose.Words voor .NET, kunt u de`Range.Replace` functioneren samen met een reguliere-expressiepatroon. U kunt een`Regex` object met het gewenste patroon en geef het door aan de`Replace` methode:
 
 ```csharp
 Regex regex = new Regex(@"([A-z]+) gives money to ([A-z]+)");
@@ -101,7 +101,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### Vraag: Hoe kan ik vastgelegde groepen gebruiken in het vervangingspatroon tijdens het zoeken en vervangen van tekst in Aspose.Words voor .NET?
 
- A: Om vastgelegde groepen te gebruiken in het vervangingspatroon tijdens het zoeken en vervangen van tekst in Aspose.Words voor .NET, kunt u de`UseSubstitutions` eigendom van de`FindReplaceOptions` voorwerp. Hierdoor kunt u naar de vastgelegde groepen verwijzen met behulp van`$1`, `$2`, enz. in het vervangingspatroon:
+ A: Om vastgelegde groepen te gebruiken in het vervangingspatroon tijdens het zoeken en vervangen van tekst in Aspose.Words voor .NET, kunt u de`UseSubstitutions` eigendom van de`FindReplaceOptions` voorwerp. Hierdoor kunt u naar de vastgelegde groepen verwijzen met behulp van`$1`, `$2`, etc. in het vervangingspatroon:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };

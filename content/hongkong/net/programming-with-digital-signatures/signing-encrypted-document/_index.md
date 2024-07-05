@@ -103,7 +103,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document
 
 #### Q：Aspose.Words for .NET 支援什麼文件格式來簽署加密文件？
 
-答：Aspose.Words for .NET 支援對 DOCX 檔案格式的加密 Word 文件進行簽署。您可以使用以下方式對加密的 DOCX 檔案進行簽名`DigitalSignatureUtil.Sign`方法以及必要的解密密碼和憑證。
+答：Aspose.Words for .NET 支援對 DOCX 檔案格式的加密 Word 文件進行簽署。您可以使用以下方法對加密的 DOCX 檔案進行簽名`DigitalSignatureUtil.Sign`方法以及必要的解密密碼和憑證。
 
 #### Q：簽署加密文件對加密有何影響？
 

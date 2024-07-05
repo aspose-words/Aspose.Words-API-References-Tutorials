@@ -44,7 +44,7 @@ public class DocumentRenderer {
 
 ## الخطوة 3: التقديم إلى HTML
 
-الآن بعد أن قمت بتحميل المستند، فقد حان الوقت لتحويله إلى HTML. يجعل Aspose.Words هذه العملية واضحة ومباشرة:
+الآن بعد أن قمت بتحميل المستند، فقد حان الوقت لتحويله إلى HTML. Aspose.Words يجعل هذه العملية واضحة:
 
 ```java
 import com.aspose.words.HtmlSaveOptions;

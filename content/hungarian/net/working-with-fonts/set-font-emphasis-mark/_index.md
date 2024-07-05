@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-fonts/set-font-emphasis-mark/
 ---
 
-Ebben az oktatóanyagban bemutatjuk, hogyan állíthatja be a betűtípus kiemelési stílusát egy Word-dokumentumban az Aspose.Words for .NET használatával. A betűk kiemelése bizonyos szavak vagy kifejezések kiemelésére szolgál a szövegben.
+Ebben az oktatóanyagban bemutatjuk, hogyan állíthatja be a betűtípus-kiemelés stílusát egy Word-dokumentumban az Aspose.Words for .NET használatával. A betűk kiemelése bizonyos szavak vagy kifejezések kiemelésére szolgál a szövegben.
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: A dokumentum létrehozása és testreszabása
- Hozzon létre egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` a dokumentumtartalom felépítéséhez. Használja a`Font.EmphasisMark` tulajdonság a betűtípus kiemelési stílusának beállításához`EmphasisMark.UnderSolidCircle` . Ezután használja a`Write` és`Writeln` módszerei a`DocumentBuilder` szöveg hozzáadásához a megadott betűtípus kiemelésével.
+ Hozzon létre egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` a dokumentumtartalom felépítéséhez. Használja a`Font.EmphasisMark` tulajdonság a betűk kiemelési stílusának beállításához`EmphasisMark.UnderSolidCircle` . Ezután használja a`Write` és`Writeln` módszerei a`DocumentBuilder` szöveg hozzáadásához a megadott betűk hangsúlyozásával.
 
 ```csharp
 Document document = new Document();
@@ -59,7 +59,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanulta, hogyan állíthatja be a betűtípus kiemelési stílusát egy Word-dokumentumban az Aspose.Words for .NET használatával. Kísérletezzen a különböző hangsúlyozási stílusokkal, és használja ezt a funkciót a szavak vagy kifejezések kiemelésére a dokumentumokban.
+Ebben az oktatóanyagban megtanulta, hogyan állíthatja be a betűk kiemelési stílusát egy Word-dokumentumban az Aspose.Words for .NET használatával. Kísérletezzen a különböző hangsúlyozási stílusokkal, és használja ezt a funkciót a szavak vagy kifejezések kiemelésére a dokumentumokban.
 
 ### GYIK
 

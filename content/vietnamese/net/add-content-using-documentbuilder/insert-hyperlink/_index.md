@@ -41,7 +41,7 @@ Tạo một dự án mới
 
 Cài đặt Aspose.Words cho .NET
 
-Tiếp theo, bạn sẽ cần cài đặt thư viện Aspose.Words for .NET. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet. Chỉ cần nhấp chuột phải vào dự án của bạn trong Solution Explorer, chọn "Quản lý gói NuGet", tìm kiếm "Apose.Words" và cài đặt nó.
+Tiếp theo, bạn sẽ cần cài đặt thư viện Aspose.Words for .NET. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet. Chỉ cần nhấp chuột phải vào dự án của bạn trong Solution Explorer, chọn "Quản lý gói NuGet", tìm kiếm "Aspose.Words" và cài đặt nó.
 
 ## Bước 2: Khởi tạo tài liệu
 
@@ -92,7 +92,7 @@ Bây giờ, hãy chèn siêu liên kết thực tế. Đây là nơi phép thu�
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", sai);
 ```
 
-Trong dòng này, chúng tôi đang chèn một siêu liên kết có văn bản hiển thị "Trang web Apose" và URL "http://www.aspose.com".
+Trong dòng này, chúng tôi đang chèn một siêu liên kết có văn bản hiển thị "Trang web Aspose" và URL "http://www.aspose.com".
 
 ## Bước 6: Xóa định dạng
 

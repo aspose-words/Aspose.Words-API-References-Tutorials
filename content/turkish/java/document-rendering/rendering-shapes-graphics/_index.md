@@ -165,4 +165,4 @@ shape.setFillColor(Color.GREEN);
 
 ### Şekilleri belirli bir sıraya göre nasıl düzenleyebilirim?
 
- Z-düzeni özelliğini kullanarak şekillerin sırasını kontrol edebilirsiniz. Yı kur`ZOrder` Bir şeklin, şekil yığınındaki konumunu belirleyen özelliği. Düşük değerler arkaya gönderilirken, yüksek değerler öne getirilir.
+ Z-düzeni özelliğini kullanarak şekillerin sırasını kontrol edebilirsiniz. Yı kur`ZOrder` Bir şeklin, şekil yığınındaki konumunu belirleyen özelliği. Düşük değerler arkaya, yüksek değerler ise öne gönderilir.

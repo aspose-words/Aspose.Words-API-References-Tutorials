@@ -9,7 +9,7 @@ url: /tr/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Belgelerinizde yazı tiplerinin doğru şekilde görüntülenmemesiyle ilgili sorunlarla karşılaştıysanız yalnız değilsiniz. Yazı tipi ayarlarını yönetmek ve yazı tipi değişiklikleriyle ilgili bildirimler almak sizi birçok baş ağrısından kurtarabilir. Bu kapsamlı bildirim kılavuzunda Aspose.Words for .NET kullanarak yazı tiplerini nasıl kullanacağınızı keşfederek belgelerinizin her zaman en iyi şekilde görünmesini sağlayacağız.
+Belgelerinizde yazı tiplerinin doğru şekilde görüntülenmemesiyle ilgili sorunlarla karşılaştıysanız yalnız değilsiniz. Yazı tipi ayarlarını yönetmek ve yazı tipi değişiklikleriyle ilgili bildirimler almak sizi birçok baş ağrısından kurtarabilir. Bu kapsamlı kılavuzda, Aspose.Words for .NET kullanarak yazı tipi bildirimlerini nasıl ele alacağınızı keşfederek belgelerinizin her zaman en iyi şekilde görünmesini sağlayacağız.
 
 ## Önkoşullar
 

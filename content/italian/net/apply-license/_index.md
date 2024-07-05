@@ -13,6 +13,6 @@ Questa pagina fornisce una guida dettagliata su come applicare una licenza nei p
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Applica licenza da file](./apply-license-from-file/) | Scopri come applicare una licenza da un file utilizzando Aspose.Words per .NET.|
-| [Applica la licenza dallo streaming](./apply-license-from-stream/) | Scopri come applicare una licenza da un flusso utilizzando Aspose.Words per .NET.|
-| [Applicare la licenza a consumo](./apply-metered-license/) | Scopri come applicare una licenza a consumo utilizzando Aspose.Words per .NET. |
+| [Applica licenza da file](./apply-license-from-file/) | Scopri come applicare una licenza da un file in Aspose.Words per .NET con la nostra guida dettagliata passo passo. Sblocca tutto il potenziale della tua libreria senza sforzo. |
+| [Applica la licenza dallo streaming](./apply-license-from-stream/) | Scopri come applicare una licenza da un flusso in Aspose.Words per .NET con questa guida passo passo. Sblocca tutto il potenziale di Aspose.Words. |
+| [Applicare la licenza a consumo](./apply-metered-license/) | Scopri come applicare una licenza a consumo in Aspose.Words per .NET con la nostra guida passo passo. Licenze flessibili ed economiche rese semplici. |

@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Geef de geordende lijst op.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Geef de Italiaanse nadruk op voor de tekst.
+// Geef de cursieve nadruk op voor de tekst.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

@@ -32,7 +32,7 @@ Ezután betöltjük a forrás Word dokumentumot, amely tartalmazza a klónozni k
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## 3. lépés: Hozzon létre egy új dokumentumot a klónozott VBA-projekttel.
+## 3. lépés: Hozzon létre egy új dokumentumot a klónozott VBA-projekttel
 Létrehozunk egy új dokumentumot egy üres VBA-projekttel, és klónozzuk a VBA-projektet a forrásdokumentumból.
 
 ```csharp
@@ -74,7 +74,7 @@ V: A VBA-projekt sokszorosítása abból áll, hogy az összes VBA-kódot átmá
 V: Mielőtt egy VBA-projektet Word-dokumentumból klónozhatna, rendelkeznie kell a C# programozási nyelv gyakorlati ismereteivel. Telepítenie kell az Aspose.Words for .NET könyvtárat is a projektben. Ezenkívül szüksége van egy Word dokumentumra, amely egy klónozni kívánt VBA-projektet tartalmaz.
 
 #### K: Hogyan lehet beállítani a dokumentumkönyvtárat a kódban?
- V: A megadott kódban ki kell cserélni.`"YOUR DOCUMENTS DIRECTORY"` annak a könyvtárnak a megfelelő elérési útjával, ahol a VBA-projektet tartalmazó Word-dokumentum található.
+ V: A megadott kódban ki kell cserélni`"YOUR DOCUMENTS DIRECTORY"` annak a könyvtárnak a megfelelő elérési útjával, ahol a VBA-projektet tartalmazó Word-dokumentum található.
 
 #### K: Hogyan lehet menteni a céldokumentumot klónozott VBA projekttel?
 

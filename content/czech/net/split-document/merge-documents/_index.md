@@ -89,7 +89,7 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## Závěr
 
- A tady to máte! Naučili jste se sloučit dokumenty aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením vašeho prostředí, prováděním jednoduchých sloučení, sloučením s možnostmi uložení, převodem sloučených dokumentů do PDF a vytvořením instance dokumentu ze sloučených dokumentů. Aspose.Words nabízí širokou škálu funkcí, takže nezapomeňte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) odemknout jeho plný potenciál.
+ A tady to máte! Naučili jste se sloučit dokumenty aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením vašeho prostředí, prováděním jednoduchých sloučení, sloučením s možnostmi uložení, převodem sloučených dokumentů do PDF a vytvořením instance dokumentu ze sloučených dokumentů. Aspose.Words nabízí širokou škálu funkcí, takže nezapomeňte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) odemknout svůj plný potenciál.
 
 ## Nejčastější dotazy
 

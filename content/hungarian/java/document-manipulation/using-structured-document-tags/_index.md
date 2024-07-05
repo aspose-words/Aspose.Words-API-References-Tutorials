@@ -118,7 +118,7 @@ doc.save("ComboBoxDocument.docx");
 
 ## A Rich Text Content Control használata
 
-A Rich Text tartalomvezérlők tökéletesek a formázott szövegek hozzáadásához a dokumentumokhoz. Hozzunk létre egyet, és állítsuk be a tartalmát.
+A Rich Text tartalomvezérlők tökéletesek a formázott szövegek dokumentumaihoz való hozzáadásához. Hozzunk létre egyet, és állítsuk be a tartalmát.
 
 ```java
 Document doc = new Document();
@@ -165,7 +165,7 @@ doc.save("CustomXMLBinding.docx");
 
 ## Egyéni XML adatokra leképezett ismétlődő szakaszokat tartalmazó táblázat létrehozása
 
-Az ismétlődő szakaszokat tartalmazó táblázatok rendkívül hasznosak lehetnek strukturált adatok bemutatásához. Hozzunk létre egy ilyen táblázatot, és képezzük le egyéni XML adatokra.
+Az ismétlődő szakaszokat tartalmazó táblázatok rendkívül hasznosak lehetnek strukturált adatok bemutatására. Hozzunk létre egy ilyen táblázatot, és képezzük le egyéni XML adatokra.
 
 ```java
 Document doc = new Document();
@@ -233,7 +233,7 @@ A strukturált dokumentumcímkék (SDT) a dokumentumokon belüli tartalom rendsz
 
 Igen, stílusokat alkalmazhat a tartalomvezérlőkre, hogy testreszabhassa megjelenésüket a dokumentumban.
 
-### Lehetséges az SDT-t egyedi XML-adatokhoz kötni?
+### Lehetséges az SDT-t egyéni XML-adatokhoz kötni?
 
 Igen, az SDT-t egyéni XML-adatokhoz kötheti, lehetővé téve a dinamikus tartalomgenerálást és adatleképezést.
 

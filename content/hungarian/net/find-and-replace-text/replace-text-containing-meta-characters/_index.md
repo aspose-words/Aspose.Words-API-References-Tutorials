@@ -16,16 +16,16 @@ Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogya
 
 ## 1. lépés: Új dokumentum létrehozása
 
- Mielőtt elkezdené használni a metakarakterek szövegcseréjét, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ezt úgy lehet megtenni, hogy a`Document` tárgy:
+ Mielőtt elkezdené használni a metakarakterek szövegcseréjét, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ez megtehető az a. példányosításával`Document` tárgy:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## 2. lépés: Szöveg beszúrása a dokumentumba
+## 2. lépés: Szúrjon be szöveget a dokumentumba
 
- Ha megvan a dokumentumunk, akkor az a segítségével tudunk szöveget beszúrni`DocumentBuilder` tárgy. Példánkban a`Writeln` módszer több bekezdés szövegének különböző szakaszokba történő beillesztésére:
+ Ha megvan a dokumentumunk, szöveget szúrhatunk be az a segítségével`DocumentBuilder` tárgy. Példánkban a`Writeln` módszer több bekezdés szövegének különböző szakaszokba történő beillesztésére:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

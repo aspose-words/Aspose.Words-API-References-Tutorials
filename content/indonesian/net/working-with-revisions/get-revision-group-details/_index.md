@@ -67,7 +67,7 @@ Dalam tutorial ini, kita mempelajari cara mendapatkan detail sekelompok revisi d
 
 #### T: Bagaimana cara memuat dokumen dengan revisi ke Aspose.Words untuk .NET?
 
- J: Gunakan`Document`kelas Aspose.Words untuk .NET untuk memuat dokumen dari file yang berisi revisi. Anda dapat menentukan jalur dokumen lengkap.
+ J: Gunakan`Document` kelas Aspose.Words untuk .NET untuk memuat dokumen dari file yang berisi revisi. Anda dapat menentukan jalur dokumen lengkap.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### T: Bagaimana cara mendapatkan detail grup revisi di Aspose.Words untuk .NET?
 
- J: Telusuri revisi dokumen menggunakan loop dan akses properti setiap revisi untuk mendapatkan detail yang Anda inginkan. Anda dapat menggunakan`RevisionType`, `Author`, `DateTime` Dan`ParentNode` properti untuk mendapatkan masing-masing jenis revisi, penulis, tanggal dan teks revisi.
+J: Telusuri revisi dokumen menggunakan loop dan akses properti setiap revisi untuk mendapatkan detail yang Anda inginkan. Anda dapat menggunakan`RevisionType`, `Author`, `DateTime` Dan`ParentNode` properti untuk mendapatkan masing-masing jenis revisi, penulis, tanggal dan teks revisi.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### T: Bagaimana cara memeriksa apakah suatu revisi termasuk dalam grup di Aspose.Words untuk .NET?
 
- J: Gunakan`Group` properti dari`Revision` objek untuk memeriksa apakah revisi milik grup. Jika`Group` properti adalah`null`artinya revisi tersebut bukan milik kelompok manapun.
+ J: Gunakan`Group` properti dari`Revision` objek untuk memeriksa apakah revisi milik grup. Jika`Group` properti adalah`null`, artinya revisi tersebut bukan milik kelompok manapun.
 
 ```csharp
 if (revision.Group != null)

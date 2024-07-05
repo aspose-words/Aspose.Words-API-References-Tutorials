@@ -9,7 +9,7 @@ url: /id/net/document-protection/unrestricted-editable-regions/
 ---
 Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk menggunakan fitur area yang dapat diedit tidak terbatas di Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menentukan area dalam dokumen Word di mana konten dapat diedit tanpa batasan, meskipun bagian dokumen lainnya bersifat baca-saja. Ikuti langkah-langkah di bawah ini:
 
-## Langkah 1: Memuat dokumen dan mengatur perlindungan
+## Langkah 1: Memuat dokumen dan mengatur proteksi
 
 Mulailah dengan memuat dokumen yang ada:
 

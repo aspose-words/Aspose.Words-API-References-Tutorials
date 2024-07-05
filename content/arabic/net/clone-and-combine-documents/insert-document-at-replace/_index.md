@@ -164,4 +164,4 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 يمكنك الحصول على الدعم من خلال زيارة[منتدى Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### هل يمكنني الاحتفاظ بتنسيق المستند المدرج؟
- نعم`NodeImporter`تتيح لك الفئة تحديد كيفية التعامل مع التنسيق عند استيراد العقد من مستند إلى آخر.
+ نعم`NodeImporter` تتيح لك الفئة تحديد كيفية التعامل مع التنسيق عند استيراد العقد من مستند إلى آخر.

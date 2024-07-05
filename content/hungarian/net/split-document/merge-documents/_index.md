@@ -68,13 +68,13 @@ Ez a kódrészlet egyesíti a dokumentumokat jelszavas védelemmel, biztosítva 
 
 ## 4. lépés: Egyesítés és mentés PDF formátumban
 
-Ha dokumentumokat kell egyesítenie, és az eredményt PDF-ként kell mentenie, az Aspose.Words megkönnyíti:
+Ha dokumentumokat kell egyesítenie, és az eredményt PDF formátumban kell mentenie, az Aspose.Words megkönnyíti:
 
 ```csharp
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Itt összeolvadunk`Document1.docx` és`Document2.docx` és mentse el az eredményt PDF fájlként.
+ Itt összeolvadunk`Document1.docx` és`Document2.docx` és mentse az eredményt PDF fájlként.
 
 ## 5. lépés: Dokumentumpéldány létrehozása egyesített dokumentumokból
 
@@ -103,7 +103,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### 3. Hogyan kezelhetem a különböző formázásokat egyesítés során?
 
- Az Aspose.Words különféle összevonási formátumokat kínál, mint pl`KeepSourceFormatting` és`MergeFormatting` . Utal[API dokumentáció](https://reference.aspose.com/words/net/) részletes útmutatásért.
+ Az Aspose.Words különféle összevonási formátumokat kínál, mint pl`KeepSourceFormatting` és`MergeFormatting` . Utal[API dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.
 
 ### 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 

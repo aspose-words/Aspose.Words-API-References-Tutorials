@@ -32,7 +32,7 @@ Daha sonra klonlamak istediğimiz VBA projesini içeren kaynak Word belgesini y�
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## Adım 3: Klonlanan VBA projesiyle yeni bir belge oluşturun.
+## 3. Adım: Klonlanmış VBA projesiyle yeni bir belge oluşturun
 Boş bir VBA projesiyle yeni bir belge oluşturacağız ve VBA projesini kaynak belgeden kopyalayacağız.
 
 ```csharp
@@ -74,7 +74,7 @@ C: Bir VBA projesinin çoğaltılması, tüm VBA kodunun kaynak Word belgesinden
 C: Bir Word belgesinden bir VBA projesini kopyalamadan önce, C# programlama dili hakkında çalışma bilgisine sahip olmanız gerekir. Ayrıca projenize Aspose.Words for .NET kütüphanesini de kurmanız gerekir. Ayrıca kopyalamak istediğiniz VBA projesini içeren bir Word belgesine de ihtiyacınız var.
 
 #### S: Koddaki belge dizini nasıl ayarlanır?
- C: Sağlanan kodda değiştirmeniz gerekir.`"YOUR DOCUMENTS DIRECTORY"` VBA projesini içeren Word belgenizin bulunduğu dizine uygun yol ile.
+ C: Sağlanan kodda değiştirmeniz gerekir`"YOUR DOCUMENTS DIRECTORY"` VBA projesini içeren Word belgenizin bulunduğu dizine uygun yol ile.
 
 #### S: Hedef belge klonlanmış VBA projesiyle nasıl kaydedilir?
 

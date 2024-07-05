@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## الخطوة 3: حذف كافة الأقسام
- لإزالة جميع الأقسام من المستند، سنستخدم الأمر`Clear` طريقة`Sections` جمع الوثائق.
+ لإزالة جميع الأقسام من المستند، سنستخدم الأمر`Clear` طريقة`Sections` جمع الوثيقة.
 
 ```csharp
 doc.Sections.Clear();
@@ -85,7 +85,7 @@ doc.AppendChild(new Section(doc));
 
 #### س: كيفية إزالة كافة الأقسام في Aspose.Words لـ .NET؟
 
- ج: لإزالة كافة الأقسام من المستند في Aspose.Words لـ .NET، يمكنك استخدام`Clear` طريقة`Sections` جمع الوثائق:
+ ج: لإزالة كافة الأقسام من المستند في Aspose.Words لـ .NET، يمكنك استخدام`Clear` طريقة`Sections` جمع الوثيقة:
 
 ```csharp
 doc.Sections.Clear();

@@ -9,7 +9,7 @@ url: /it/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Se hai mai riscontrato problemi con i caratteri che non vengono visualizzati correttamente nei tuoi documenti, non sei il solo. Gestire le impostazioni dei caratteri e ricevere notifiche sulla sostituzione dei caratteri può farti risparmiare un sacco di mal di testa. In questa guida completa alle notifiche, esploreremo come gestire i caratteri utilizzando Aspose.Words per .NET, assicurando che i tuoi documenti appaiano sempre al meglio.
+Se hai mai riscontrato problemi con i caratteri che non vengono visualizzati correttamente nei tuoi documenti, non sei il solo. Gestire le impostazioni dei caratteri e ricevere notifiche sulla sostituzione dei caratteri può farti risparmiare un sacco di mal di testa. In questa guida completa, esploreremo come gestire le notifiche sui caratteri utilizzando Aspose.Words per .NET, assicurando che i tuoi documenti appaiano sempre al meglio.
 
 ## Prerequisiti
 

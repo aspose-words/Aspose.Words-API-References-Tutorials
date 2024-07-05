@@ -77,7 +77,7 @@ cell2.getCellFormat().setPreferredWidth(200.0);
 
 A formatação é onde a mágica acontece. Aspose.Words for Java oferece uma infinidade de opções para formatar suas tabelas. Vamos explorar algumas tarefas comuns de formatação:
 
-### Ajustando larguras de colunas
+### Ajustando larguras de coluna
 
 Você pode controlar a largura das colunas para garantir que sua tabela tenha uma aparência visualmente atraente. Veja como você pode ajustar as larguras das colunas:
 

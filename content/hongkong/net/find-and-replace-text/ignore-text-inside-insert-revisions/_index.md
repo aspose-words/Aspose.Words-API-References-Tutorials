@@ -44,7 +44,7 @@ builder.Write("Text");
 
 ## 步驟 4：使用「忽略插入修訂內的文字」功能
 
-要在後續操作中忽略插入修訂內的文本，我們可以使用`FindReplaceOptions`對象並設定`IgnoreInserted`財產給`true`:
+要在後續操作中忽略插入修訂內的文本，我們可以使用`FindReplaceOptions`對象並設定`IgnoreInserted`財產給`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -69,7 +69,7 @@ Console.WriteLine(doc.GetText());
 
 ## 步驟 7：更改選項以包含插入修訂
 
-如果我們想在輸出結果中包含插入修訂內的文本，我們可以更改選項以不忽略插入修訂。為此我們將設置`IgnoreInserted`財產給`false`:
+如果我們想在輸出結果中包含插入修訂內的文本，我們可以更改選項以不忽略插入修訂。為此我們將設置`IgnoreInserted`財產給`false`：
 
 ```csharp
 options.IgnoreInserted = false;
@@ -156,7 +156,7 @@ builder.Write("Text");
 
 #### Q：如何忽略 Aspose.Words for .NET 中插入修訂中的文字？
 
-答：要在後續操作中忽略插入修訂內的文本，您可以使用`FindReplaceOptions`對象並設定`IgnoreInserted`財產給`true`:
+答：要在後續操作中忽略插入修訂內的文本，您可以使用`FindReplaceOptions`對象並設定`IgnoreInserted`財產給`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -181,7 +181,7 @@ Console.WriteLine(doc.GetText());
 
 #### Q：如何在 Aspose.Words for .NET 的輸出結果中包含插入修訂？
 
-答：要在輸出結果中包含插入修訂內的文本，您可以變更選項以不忽略插入修訂。為此，您可以設定`IgnoreInserted`的財產`FindReplaceOptions`反對`false`:
+答：要在輸出結果中包含插入修訂內的文本，您可以變更選項以不忽略插入修訂。為此，您可以設定`IgnoreInserted`的財產`FindReplaceOptions`反對`false`：
 
 ```csharp
 options.IgnoreInserted = false;

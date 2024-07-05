@@ -32,7 +32,7 @@ pip install aspose-words
 
 ## Szövegdobozok hozzáadása Word-dokumentumhoz
 
-Kezdjük egy új Word-dokumentum létrehozásával, és adjunk hozzá egy szövegmezőt. Íme egy minta kódrészlet ennek eléréséhez:
+Kezdjük egy új Word-dokumentum létrehozásával, és adjunk hozzá egy szövegmezőt. Íme egy példa kódrészlet ennek eléréséhez:
 
 ```python
 import aspose.words as aw
@@ -98,7 +98,7 @@ Ebben az útmutatóban megvizsgáltuk a vizuális tartalom szövegdobozokkal tö
 
 ### Hogyan lehet átméretezni egy szövegdobozt?
 
- Szövegdoboz átméretezéséhez módosíthatja a szélességi és magassági tulajdonságait a gombbal`width` és`height` attribútumok.
+ A szövegdoboz átméretezéséhez módosíthatja a szélességi és magassági tulajdonságait a gombbal`width` és`height` attribútumokat.
 
 ### Elforgathatom a szövegdobozt?
 
@@ -106,7 +106,7 @@ Ebben az útmutatóban megvizsgáltuk a vizuális tartalom szövegdobozokkal tö
 
 ### Hogyan adhatok szegélyeket egy szövegdobozhoz?
 
- Szegélyeket adhat hozzá a szövegdobozokhoz a`textbox.border` ingatlan és megjelenésének testreszabása.
+ Szegélyeket adhat hozzá a szövegdobozokhoz a`textbox.border` tulajdonság és megjelenésének testreszabása.
 
 ### Beágyazhatok hiperhivatkozásokat egy szövegdobozba?
 

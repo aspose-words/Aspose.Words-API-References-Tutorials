@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Tabellen maken
 
 ```java
-// Maak een tabel met 3 rijen en 4 kolommen.
+// Maak een tabel met 3 rijen en 4 kolommen
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

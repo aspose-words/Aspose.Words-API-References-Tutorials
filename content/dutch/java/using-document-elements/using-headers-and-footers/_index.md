@@ -8,7 +8,7 @@ weight: 16
 url: /nl/java/using-document-elements/using-headers-and-footers/
 ---
 
-In deze uitgebreide handleiding leiden we u door het proces van het werken met kop- en voetteksten in Aspose.Words voor Java. Kop- en voetteksten zijn essentiële elementen bij de documentopmaak, en Aspose.Words biedt krachtige hulpmiddelen om deze te maken en aan te passen aan uw behoeften.
+In deze uitgebreide handleiding leiden we u door het proces van het werken met kop- en voetteksten in Aspose.Words voor Java. Kop- en voetteksten zijn essentiële elementen bij de documentopmaak, en Aspose.Words biedt krachtige tools om deze te maken en aan te passen aan uw behoeften.
 
 Laten we nu eens in detail op elk van deze stappen ingaan.
 

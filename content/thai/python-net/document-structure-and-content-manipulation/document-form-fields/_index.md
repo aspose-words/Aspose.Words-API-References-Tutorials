@@ -23,7 +23,7 @@ url: /th/python-net/document-structure-and-content-manipulation/document-form-fi
    pip install aspose-words
    ```
 
-2. **Import the Library:** นำเข้าไลบรารีลงในสคริปต์ Python ของคุณเพื่อเริ่มใช้ฟังก์ชันต่างๆ
+2. **Import the Library:** นำเข้าไลบรารีในสคริปต์ Python ของคุณเพื่อเริ่มใช้ฟังก์ชันต่างๆ
    
    ```python
    import aspose.words
@@ -44,7 +44,7 @@ url: /th/python-net/document-structure-and-content-manipulation/document-form-fi
 text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
-### ช่องทำเครื่องหมายและ RadioButtons
+### ช่องทำเครื่องหมายและปุ่มตัวเลือก
 
 ช่องทำเครื่องหมายและปุ่มตัวเลือกใช้สำหรับการเลือกแบบปรนัย ต่อไปนี้คือวิธีที่คุณสามารถสร้างได้:
 
@@ -140,7 +140,7 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ช่องป้อนข้อความเป็นวิธีที่ตรงไปตรงมาในการเก็บข้อมูลที่เป็นข้อความ ทำให้เป็นเครื่องมือสำคัญในการรวบรวมข้อมูลตามเอกสาร
 
-### ช่องทำเครื่องหมายและ RadioButtons
+### ช่องทำเครื่องหมายและปุ่มตัวเลือก
 
 ช่องทำเครื่องหมายและปุ่มตัวเลือกเหมาะอย่างยิ่งสำหรับสถานการณ์ที่ต้องมีการเลือกแบบปรนัย ช่องทำเครื่องหมายอนุญาตให้ผู้ใช้เลือกได้หลายตัวเลือก ในขณะที่ปุ่มตัวเลือกจะจำกัดผู้ใช้ไว้เพียงตัวเลือกเดียว
 

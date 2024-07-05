@@ -41,7 +41,7 @@ Para comenzar, inicie Visual Studio y cree un nuevo proyecto de C#. Puede elegir
 
 Instalar Aspose.Words para .NET
 
-continuación, deberá instalar la biblioteca Aspose.Words para .NET. Puede hacer esto a través del Administrador de paquetes NuGet. Simplemente haga clic derecho en su proyecto en el Explorador de soluciones, seleccione "Administrar paquetes NuGet", busque "Apose.Words" e instálelo.
+continuación, deberá instalar la biblioteca Aspose.Words para .NET. Puede hacer esto a través del Administrador de paquetes NuGet. Simplemente haga clic derecho en su proyecto en el Explorador de soluciones, seleccione "Administrar paquetes NuGet", busque "Aspose.Words" e instálelo.
 
 ## Paso 2: Inicializar el documento
 
@@ -92,7 +92,7 @@ Ahora, insertemos el hipervínculo real. ¡Aquí es donde ocurre la magia!
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
 ```
 
-En esta línea, estamos insertando un hipervínculo con el texto para mostrar "Sitio web de Apose" y la URL "http://www.aspose.com".
+En esta línea, estamos insertando un hipervínculo con el texto para mostrar "Sitio web de Aspose" y la URL "http://www.aspose.com".
 
 ## Paso 6: borrar formato
 
@@ -135,7 +135,7 @@ Aspose ofrece una prueba gratuita y licencias temporales, que puede utilizar par
 
 ### ¿Es difícil aprender Aspose.Words para .NET?
 
-¡De nada! Si tiene conocimientos básicos de C# y sigue tutoriales como este, le resultará bastante sencillo de utilizar.
+¡De nada! Si tiene conocimientos básicos de C# y sigue tutoriales como este, le resultará bastante sencillo de usar.
 
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Words para .NET?
 

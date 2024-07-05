@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words for Java umožňuje vývojářům jazyka Java snadno sloučit dokumenty aplikace Word. Podle podrobného průvodce v tomto článku můžete nyní snadno slučovat dokumenty, zpracovávat formátování, vkládat konce a řešit konflikty. S Aspose.Words for Java se slučování dokumentů stává bezproblémovým a automatizovaným procesem, který šetří cenný čas a úsilí.
 
-## 11.Časté dotazy 
+## 11. Nejčastější dotazy 
 
 ### Mohu sloučit dokumenty s různými formáty a styly?
 

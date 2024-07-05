@@ -2,7 +2,7 @@
 title: Wstaw akapit w dokumencie programu Word
 linktitle: Wstaw akapit w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawiać akapity w dokumentach programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym samouczkiem, aby bezproblemowo manipulować dokumentami.
+description: Dowiedz się, jak wstawiać akapity w dokumentach programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym samouczkiem, aby uzyskać płynną manipulację dokumentami.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/insert-paragraph/

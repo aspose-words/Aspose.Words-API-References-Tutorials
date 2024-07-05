@@ -1,6 +1,6 @@
 ---
-title: Ignora il piè di pagina dell'intestazione
-linktitle: Ignora il piè di pagina dell'intestazione
+title: Ignora piè di pagina intestazione
+linktitle: Ignora piè di pagina intestazione
 second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come aggiungere un documento ignorando il contenuto di intestazione e piè di pagina utilizzando Aspose.Words per .NET.
 type: docs

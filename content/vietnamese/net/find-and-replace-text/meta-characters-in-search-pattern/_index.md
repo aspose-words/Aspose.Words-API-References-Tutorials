@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Bước 4: Chèn ngắt trang trong tài liệu
 
- Để minh họa việc sử dụng một siêu ký tự khác, chúng ta sẽ chèn dấu ngắt trang vào tài liệu bằng cách sử dụng`InsertBreak` phương pháp với`BreakType.PageBreak` thông số. Đầu tiên chúng ta di chuyển con trỏ từ`DocumentBuilder` đến cuối tài liệu, sau đó chúng ta chèn ngắt trang và dòng văn bản mới:
+ Để minh họa việc sử dụng một siêu ký tự khác, chúng ta sẽ chèn dấu ngắt trang vào tài liệu bằng cách sử dụng`InsertBreak` phương pháp với`BreakType.PageBreak` tham số. Đầu tiên chúng ta di chuyển con trỏ từ`DocumentBuilder` đến cuối tài liệu, sau đó chúng ta chèn ngắt trang và dòng văn bản mới:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### Câu hỏi: Làm cách nào để chèn dấu ngắt trang trong tài liệu bằng Aspose.Words cho .NET?
 
-Đáp: Để minh họa việc sử dụng một siêu ký tự khác, chúng tôi sẽ chèn dấu ngắt trang vào tài liệu bằng cách sử dụng`InsertBreak` phương pháp với`BreakType.PageBreak` thông số. Đầu tiên chúng ta di chuyển con trỏ từ`DocumentBuilder` đến cuối tài liệu, sau đó chúng ta chèn ngắt trang và dòng văn bản mới:
+Đáp: Để minh họa việc sử dụng một siêu ký tự khác, chúng tôi sẽ chèn dấu ngắt trang vào tài liệu bằng cách sử dụng`InsertBreak` phương pháp với`BreakType.PageBreak` tham số. Đầu tiên chúng ta di chuyển con trỏ từ`DocumentBuilder` đến cuối tài liệu, sau đó chúng ta chèn ngắt trang và dòng văn bản mới:
 
 ```csharp
 builder. MoveToDocumentEnd();

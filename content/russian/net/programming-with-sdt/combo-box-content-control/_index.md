@@ -31,7 +31,7 @@ Document doc = new Document();
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, MarkupLevel.Block);
 ```
 
-## Шаг 3. Добавьте элементы в поле со списком.
+## Шаг 3. Добавьте элементы в поле со списком
  Добавьте элементы в поле со списком, используя`ListItems` собственность`StructuredDocumentTag` Каждый элемент представлен`SdtListItem` объект, который принимает отображаемый текст и значение. В этом примере мы добавляем три элемента в поле со списком.
 
 ```csharp

@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Bước 3: Cấu hình đơn vị đo
 
-Bây giờ chúng ta sẽ chuyển đổi các giá trị cho khoảng cách lề, đầu trang và chân trang, v.v. theo các đơn vị đo lường khác nhau. Sử dụng đoạn mã sau để chỉ định giá trị theo đơn vị đo lường cụ thể:
+Bây giờ chúng ta sẽ chuyển đổi các giá trị về khoảng cách lề, đầu trang và chân trang, v.v. theo các đơn vị đo lường khác nhau. Sử dụng đoạn mã sau để chỉ định giá trị theo đơn vị đo lường cụ thể:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Mã này sử dụng`ConvertUtil` lớp Aspose.Words để chuyển đổi các giá trị được chỉ định thành inch (`InchToPoint` ). Bạn cũng có thể sử dụng các phương pháp chuyển đổi khác có sẵn trong`ConvertUtil` lớp để chuyển đổi giá trị sang đơn vị đo lường khác.
+ Mã này sử dụng`ConvertUtil` lớp Aspose.Words để chuyển đổi các giá trị được chỉ định thành inch (`InchToPoint` ). Bạn cũng có thể sử dụng các phương pháp chuyển đổi khác có sẵn trong`ConvertUtil` lớp để chuyển đổi giá trị sang các đơn vị đo lường khác.
 
 ### Mã nguồn ví dụ về Chuyển đổi giữa các đơn vị đo lường bằng Aspose.Words cho .NET
 

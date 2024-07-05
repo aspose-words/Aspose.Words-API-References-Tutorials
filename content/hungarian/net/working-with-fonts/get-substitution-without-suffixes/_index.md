@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## 5. lépés: Hozza létre a Figyelmeztetéskezelő osztályt
 
- figyelmeztetések hatékony kezeléséhez hozzon létre egy egyéni osztályt, amely megvalósítja a`IWarningCallback` felület. Ez az osztály rögzíti és naplózza a betűtípus helyettesítésére vonatkozó figyelmeztetéseket.
+ A figyelmeztetések hatékony kezeléséhez hozzon létre egy egyéni osztályt, amely megvalósítja a`IWarningCallback` felület. Ez az osztály rögzíti és naplózza a betűtípus helyettesítésére vonatkozó figyelmeztetéseket.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Most már elsajátította a betűtípusok utótagok nélküli helyettesítésén
 
 ### 1. kérdés: Hogyan használhatok betűtípusokat több egyéni könyvtárból?
 
- Többet is hozzáadhat`FolderFontSource` példányok a`fontSources` listázza ki, és ennek megfelelően frissítse a fontforrásokat.
+ Többet is hozzáadhat`FolderFontSource` példányok a`fontSources`listázza ki, és ennek megfelelően frissítse a fontforrásokat.
 
 ### 2. kérdés: Honnan tölthetem le az Aspose.Words for .NET ingyenes próbaverzióját?
 

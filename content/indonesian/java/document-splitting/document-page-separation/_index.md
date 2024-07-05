@@ -30,7 +30,7 @@ Sebelum kita mendalami kodenya, pastikan Anda memiliki prasyarat berikut:
 
 ## Langkah 1: Muat Dokumen
 
-Untuk memulai, kita perlu memuat dokumen yang ingin kita pisahkan halamannya. Inilah cara Anda melakukannya:
+Untuk memulai, kita perlu memuat dokumen yang ingin kita pisahkan menjadi beberapa halaman. Inilah cara Anda melakukannya:
 
 ```java
 // Muat dokumen
@@ -84,7 +84,7 @@ Ya, Aspose.Words mendukung berbagai format dokumen, termasuk DOC, RTF, HTML, dan
 
 Aspose.Words untuk Java adalah perpustakaan komersial, tetapi menawarkan versi uji coba gratis. Anda dapat memeriksa situs web mereka untuk rincian harga dan informasi lisensi.
 
-### Bisakah saya memisahkan halaman gabungan kembali menjadi satu dokumen?
+### Bisakah saya menggabungkan kembali halaman-halaman terpisah menjadi satu dokumen?
 
 Ya, Anda dapat menggabungkan kembali halaman yang terpisah menjadi satu dokumen menggunakan Aspose.Words untuk Java. Lihat dokumentasi untuk instruksi penggabungan.
 

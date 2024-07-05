@@ -107,7 +107,7 @@ para.remove();
 // ve biz tüm revizyonları kabul edene veya reddedene kadar Microsoft Word'de revizyon olarak görüntülenecektir.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Değişiklikleri kabul ettiğimizde silinen revizyon paragrafı kaldırılır.
+// Değişiklikleri kabul ettiğimizde revizyon paragrafını sil kaldırılır.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //Is.Boştu

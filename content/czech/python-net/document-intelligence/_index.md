@@ -23,5 +23,5 @@ Výukové programy se zaměřují na vylepšení pracovních postupů zpracován
 Zvládnutím Document Intelligence pomocí Aspose.Words pro Python mohou vývojáři posílit své možnosti správy dokumentů. Výukové programy poskytují podrobné pokyny, ukázky kódu a praktické příklady, které vývojářům umožňují využít potenciál Document Intelligence pro chytřejší zpracování a správu dokumentů na základě dat. Přijměte tyto výukové programy a přeměňte své dokumenty na cenná aktiva pro vaši firmu.
 
 ## Výukové programy Python Document Intelligence
-### [Master Document Intelligence](./master-document-intelligence/)
+### [Inteligence hlavních dokumentů](./master-document-intelligence/)
 Ovládněte inteligenci dokumentů pomocí Aspose.Words pro Python. Automatizujte pracovní postupy, analyzujte data a efektivně zpracujte dokumenty. Začněte hned!

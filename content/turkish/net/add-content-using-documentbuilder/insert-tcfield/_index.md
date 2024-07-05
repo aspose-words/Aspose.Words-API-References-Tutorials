@@ -93,7 +93,7 @@ Word'deki TC (İçindekiler Tablosu) alanı, İçindekiler Tablonuza eklemek ist
 
 ### 3. Aspose.Words'ü diğer programlama dilleriyle kullanabilir miyim?
 
-Aspose.Words öncelikle C# gibi .NET dillerini destekler ancak Java ve diğer platformlar için versiyonları da mevcuttur.
+Aspose.Words öncelikli olarak C# gibi .NET dillerini destekler ancak Java ve diğer platformlar için versiyonları da mevcuttur.
 
 ### 4. Aspose.Words for .NET kullanımına ilişkin daha fazla örneği nerede bulabilirim?
 

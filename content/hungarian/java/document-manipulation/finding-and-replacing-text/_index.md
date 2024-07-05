@@ -73,7 +73,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreFields(true);
 
-// Szöveg cseréjekor használja a beállításokat
+// Szöveg lecserélésekor használjon opciókat
 doc.getRange().replace("text-to-replace", "new-text", options);
 
 // Mentse el a módosított dokumentumot
@@ -82,7 +82,7 @@ doc.save("modified-document.docx");
 
 Ez akkor hasznos, ha ki akarja zárni a mezőkön belüli szöveget, például az egyesített mezőket, a lecserélésből.
 
-## Szöveg figyelmen kívül hagyása a Változatok törlése belsejében
+## Szöveg figyelmen kívül hagyása a változatok törlésében
 
 Beállíthatja, hogy az Aspose.Words figyelmen kívül hagyja a revíziók törlésén belüli szöveget a keresési és csereműveletek során.
 
@@ -94,7 +94,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreDeleted(true);
 
-// Szöveg cseréjekor használja a beállításokat
+// Szöveg lecserélésekor használjon opciókat
 doc.getRange().replace("text-to-replace", "new-text", options);
 
 // Mentse el a módosított dokumentumot
@@ -115,7 +115,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreInserted(true);
 
-// Szöveg cseréjekor használja a beállításokat
+// Szöveg lecserélésekor használjon opciókat
 doc.getRange().replace("text-to-replace", "new-text", options);
 
 // Mentse el a módosított dokumentumot
@@ -136,7 +136,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceWithHtmlEvaluator(options));
 
-// Szöveg cseréjekor használja a beállításokat
+// Szöveg lecserélésekor használjon opciókat
 doc.getRange().replace("text-to-replace", "new-html-content", options);
 
 // Mentse el a módosított dokumentumot
@@ -205,7 +205,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceTextWithFieldHandler(FieldType.FIELD_MERGE_FIELD));
 
-// Szöveg cseréjekor használja a beállításokat
+// Szöveg lecserélésekor használjon opciókat
 doc.getRange().replace(Pattern.compile("PlaceHolder(\\d+)"), "", options);
 
 // Mentse el a módosított dokumentumot
@@ -214,7 +214,7 @@ doc.save("modified-document.docx");
 
  Ebben a példában a szöveget mezőkre cseréljük, és megadjuk a mező típusát (pl.`FieldType.FIELD_MERGE_FIELD`).
 
-## Csere értékelővel
+## Csere kiértékelővel
 
 Egyéni kiértékelő segítségével dinamikusan meghatározhatja a helyettesítő szöveget.
 
@@ -226,7 +226,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new MyReplaceEvaluator());
 
-// Szöveg cseréjekor használja a beállításokat
+// Szöveg lecserélésekor használjon opciókat
 doc.getRange().replace(Pattern.compile("[s|m]ad"), "", options);
 
 // Mentse el a módosított dokumentumot
@@ -302,7 +302,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseLegacyOrder(true);
 
-// Szöveg cseréjekor használja a beállításokat
+// Szöveg lecserélésekor használjon opciókat
 doc.getRange().replace(Pattern.compile("\\[(.*?)\\]"), "", options);
 
 // Mentse el a módosított dokumentumot
@@ -353,6 +353,6 @@ Igen, használhat reguláris kifejezéseket a szöveg cseréjéhez az Aspose.Wor
 
  Igen, lecserélheti a Word-dokumentum fejlécében és láblécében lévő szöveget. Egyszerűen nyissa meg a megfelelő fejlécet vagy láblécet, és használja a`replace` módszerrel a kívánt`FindReplaceOptions`.
 
-### Mire való a UseLegacyOrder opció?
+### Mire jó a UseLegacyOrder opció?
 
  A`UseLegacyOrder` opció be`FindReplaceOptions` lehetővé teszi az örökölt sorrend használatát a keresési és csereműveletek végrehajtásakor. Ez hasznos lehet bizonyos forgatókönyvekben, amikor az örökölt rendelési viselkedés kívánatos.

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/add-content-using-documentbuilder/insert-check-box-form-field/
 ---
 ## Wstęp
-świecie automatyzacji dokumentów Aspose.Words dla .NET jest potęgą, oferując programistom obszerny zestaw narzędzi do programowego tworzenia, modyfikowania i manipulowania dokumentami Word. Niezależnie od tego, czy pracujesz nad ankietami, formularzami czy jakimkolwiek dokumentem wymagającym interakcji użytkownika, wstawianie pól formularza z polami wyboru jest proste dzięki Aspose.Words dla .NET. W tym obszernym przewodniku przeprowadzimy Cię przez ten proces krok po kroku, upewniając się, że opanujesz tę funkcjonalność jak profesjonalista.
+świecie automatyzacji dokumentów Aspose.Words dla .NET jest potęgą, oferując programistom obszerny zestaw narzędzi do programowego tworzenia, modyfikowania i manipulowania dokumentami Word. Niezależnie od tego, czy pracujesz nad ankietami, formularzami, czy jakimkolwiek dokumentem wymagającym interakcji użytkownika, wstawianie pól formularza z polami wyboru jest proste dzięki Aspose.Words dla .NET. W tym obszernym przewodniku przeprowadzimy Cię przez ten proces krok po kroku, upewniając się, że opanujesz tę funkcjonalność jak profesjonalista.
 
 ## Warunki wstępne
 

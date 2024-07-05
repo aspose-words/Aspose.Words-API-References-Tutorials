@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /hu/net/remove-content/remove-page-breaks/
 ---
-Ebben az oktatóanyagban megvizsgáljuk, hogyan távolíthatjuk el az oldaltöréseket a Word-dokumentumban az Aspose.Words for .NET könyvtár használatával. Az oldaltörések időnként megzavarhatják a dokumentum formázását és elrendezését, és előfordulhat, hogy ezeket programozottan kell eltávolítani. Lépésről lépésre nyújtunk útmutatót, amely segít megérteni a folyamatot és megvalósítani azt saját C# projektjeiben.
+Ebben az oktatóanyagban megvizsgáljuk, hogyan távolíthatjuk el az oldaltöréseket a Word-dokumentumban az Aspose.Words for .NET könyvtár használatával. Az oldaltörések időnként megzavarhatják a dokumentum formázását és elrendezését, és előfordulhat, hogy ezeket programozottan kell eltávolítani. Lépésről lépésre nyújtunk útmutatót, amely segít megérteni a folyamatot, és megvalósítani azt saját C# projektjeiben.
 
 ## Követelmények
 
@@ -57,7 +57,7 @@ foreach (Paragraph para in paragraphs)
 }
 ```
 
-A fenti kódrészlet végighalad a dokumentum összes bekezdésén, és ellenőrzi, hogy minden bekezdés előtt van-e oldaltörés. Ha oldaltörést észlel, az törlődik. Ezután a bekezdésen belüli minden egyes futást ellenőrzi az oldaltörések szempontjából, és eltávolítja azokat.
+A fenti kódrészlet végigfut a dokumentum összes bekezdésén, és ellenőrzi, hogy minden bekezdés előtt van-e oldaltörés. Ha oldaltörést észlel, az törlődik. Ezután a bekezdésen belüli minden egyes futást ellenőrzi az oldaltörések szempontjából, és eltávolítja azokat.
 
 ## 4. lépés: Mentse el a módosított dokumentumot
 

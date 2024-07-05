@@ -348,7 +348,7 @@ Zawsze przeglądaj i testuj swoje dokumenty na różnych urządzeniach i platfor
 
 ## Wniosek
 
-Aspose.Words for Java to potężne narzędzie, które umożliwia programistom Java stylizowanie dokumentów i uwalnianie kreatywności. Niezależnie od tego, czy chcesz utworzyć profesjonalne raporty, atrakcyjne wizualnie listy, czy jakikolwiek inny typ dokumentu, Aspose.Words dla Java Ci pomoże. Eksperymentuj z różnymi stylami, czcionkami i opcjami formatowania, aby tworzyć wspaniałe dokumenty, które pozostawią trwałe wrażenie na odbiorcach.
+Aspose.Words for Java to potężne narzędzie, które umożliwia programistom Java stylizowanie dokumentów i uwalnianie kreatywności. Niezależnie od tego, czy chcesz utworzyć profesjonalne raporty, atrakcyjne wizualnie listy, czy jakikolwiek inny rodzaj dokumentu, Aspose.Words dla Java Ci pomoże. Eksperymentuj z różnymi stylami, czcionkami i opcjami formatowania, aby tworzyć wspaniałe dokumenty, które pozostawią trwałe wrażenie na odbiorcach.
 
 ---
 

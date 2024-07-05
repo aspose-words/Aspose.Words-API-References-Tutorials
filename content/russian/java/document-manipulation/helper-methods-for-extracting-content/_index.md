@@ -58,7 +58,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     Node originalEndNode = endNode;
 
     //Извлекайте контент на основе узлов уровня блока (абзацев и таблиц). Пройдите через родительские узлы, чтобы найти их.
-    // Мы разделим содержимое первого и последнего узлов в зависимости от того, находятся ли узлы-маркеры в сети.
+    // Мы разделим содержимое первого и последнего узлов в зависимости от того, являются ли узлы-маркеры встроенными.
     startNode = getAncestorInBody(startNode);
     endNode = getAncestorInBody(endNode);
     boolean isExtracting = true;
@@ -67,8 +67,8 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     Node currNode = startNode;
 
     // Начните извлекать контент. Обработать все узлы уровня блока и специально разделить первые
-    // и последние узлы, когда это необходимо, чтобы сохранить форматирование абзаца.
-    // Этот метод немного сложнее обычного экстрактора, так как нам нужен множитель
+    // и последние узлы, когда это необходимо, чтобы сохранить форматирование абзацев.
+    // Этот метод немного сложнее, чем обычный экстрактор, поскольку нам нужно учитывать
     // при извлечении с использованием встроенных узлов, полей, закладок и т. д., чтобы сделать его полезным.
     while (isExtracting) {
         // Клонируйте текущий узел и его дочерние элементы, чтобы получить копию.
@@ -76,7 +76,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
         boolean isEndingNode = currNode.equals(endNode);
         if (isStartingNode || isEndingNode) {
             // Нам нужно обрабатывать каждый маркер отдельно, поэтому вместо этого передайте его отдельному методу.
-            // End должен быть обработан сначала для поддержания индексов узлов.
+            // End должен быть обработан сначала, чтобы сохранить индексы узлов.
             if (isEndingNode) {
                 // !isStartingNode: не добавляйте узел дважды, если маркеры являются одним и тем же узлом.
                 processMarker(cloneNode, nodes, originalEndNode, currNode, isInclusive,
@@ -94,7 +94,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
             nodes.add(cloneNode);
 
         // Перейдите к следующему узлу и извлеките его. Если следующий узел равен нулю,
-        // Остальной контент находится в другом разделе.
+        // остальная часть контента находится в другом разделе.
         if (currNode.getNextSibling() == null && isExtracting) {
             // Переход к следующему разделу.
             Section nextSection = (Section) currNode.getAncestor(NodeType.SECTION).getNextSibling();
@@ -105,7 +105,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
         }
     }
 
-    // Для совместимости с режимом с онлайн-закладками добавьте следующий абзац (пустой).
+    // Для совместимости с режимом со встроенными закладками добавьте следующий абзац (пустой).
     if (isInclusive && originalEndNode == endNode && !originalEndNode.isComposite())
         includeNextParagraph(endNode, nodes);
 

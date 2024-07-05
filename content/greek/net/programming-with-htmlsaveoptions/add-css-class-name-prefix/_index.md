@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Αυτός ο κώδικας δημιουργεί μια παρουσία του`HtmlSaveOptions` και σετ`CssStyleSheetType` προς την`CssStyleSheetType.External`για να δημιουργήσετε ένα εξωτερικό φύλλο στυλ CSS και`CssClassNamePrefix` προς την`"pfx_"` στο πρόθεμα`"pfx_"` για να ονομάσει κλάσεις CSS.
+ Αυτός ο κώδικας δημιουργεί μια παρουσία του`HtmlSaveOptions` και σετ`CssStyleSheetType` προς την`CssStyleSheetType.External`για να δημιουργήσετε ένα εξωτερικό φύλλο στυλ CSS και`CssClassNamePrefix` προς την`"pfx_"` στο πρόθεμα`"pfx_"` σε ονόματα κλάσης CSS.
 
 ## Βήμα 4: Μετατροπή και αποθήκευση του εγγράφου σε HTML
 

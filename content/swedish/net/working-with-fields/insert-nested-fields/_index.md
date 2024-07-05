@@ -108,7 +108,7 @@ S: För att infoga kapslade fält i ett Word-dokument med Aspose.Words för .NET
 
 #### F: Vilka är fördelarna med att använda kapslade fält i ett Word-dokument med Aspose.Words för .NET?
 
-S: Att använda kapslade fält ger flera fördelar i ett Word-dokument med Aspose.Words för .NET. Detta ger större flexibilitet i att skapa dynamiska dokumentmallar, genom att tillåta infogning av variabelvärden och beräkningar i kapslade fält. Kapslade fält kan också underlätta automatisk generering av innehåll, som att generera innehållsförteckningar, sidnummer, etc.
+S: Att använda kapslade fält ger flera fördelar i ett Word-dokument med Aspose.Words för .NET. Detta ger större flexibilitet när det gäller att skapa dynamiska dokumentmallar genom att tillåta infogning av variabelvärden och beräkningar i kapslade fält. Kapslade fält kan också underlätta automatisk generering av innehåll, som att generera innehållsförteckningar, sidnummer, etc.
 
 #### F: Kan jag ha kapslade fält på flera nivåer i ett Word-dokument med Aspose.Words för .NET?
 

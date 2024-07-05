@@ -152,7 +152,7 @@ font.setShadow(true);
 font.setEmboss(true);
 ```
 
-## Manipulace se seznamy a tabulkami
+## Práce se seznamy a tabulkami
 
 ### 1. Vytváření číslovaných seznamů a seznamů s odrážkami
 

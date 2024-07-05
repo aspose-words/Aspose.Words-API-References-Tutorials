@@ -56,7 +56,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
 ## Etapa 5: usando expressões regulares para localizar e substituir
 
-Para realizar operações de busca e substituição no texto do documento, utilizaremos expressões regulares. No nosso exemplo, procuraremos todas as ocorrências da letra “e” e as substituiremos por um asterisco “* ". .LÍQUIDO`Regex` classe é usada para isso:
+Para realizar operações de busca e substituição no texto do documento, utilizaremos expressões regulares. No nosso exemplo, procuraremos todas as ocorrências da letra “e” e as substituiremos por um asterisco “* ". .LÍQUIDO`Regex` classe é utilizada para isso:
 
 ```csharp
 Regex regex = new Regex("e");

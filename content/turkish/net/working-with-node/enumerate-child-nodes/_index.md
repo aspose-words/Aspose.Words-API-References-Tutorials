@@ -82,7 +82,7 @@ Uygulamanızı derleyin ve çalıştırın. Her şeyi doğru ayarladıysanız, h
 
 ## Çözüm
 
-Temel adımları anladıktan sonra Aspose.Words for .NET kullanarak bir Word belgesindeki alt düğümleri numaralandırmak çok kolaydır. Belgeyi başlatarak, belirli paragraflara erişerek, alt düğümleri alarak ve bunlar arasında yineleyerek, Word belgelerini programlı bir şekilde kolaylıkla değiştirebilirsiniz. Aspose.Words, çeşitli belge öğelerini yönetmek için güçlü bir API sunarak onu .NET geliştiricileri için vazgeçilmez bir araç haline getiriyor.
+Temel adımları anladıktan sonra Aspose.Words for .NET kullanarak bir Word belgesindeki alt düğümleri numaralandırmak çok kolaydır. Belgeyi başlatarak, belirli paragraflara erişerek, alt düğümleri alarak ve bunlar arasında yineleyerek, Word belgelerini programlı bir şekilde kolaylıkla değiştirebilirsiniz. Aspose.Words, çeşitli belge öğelerini işlemek için güçlü bir API sunarak onu .NET geliştiricileri için vazgeçilmez bir araç haline getiriyor.
 
  Daha ayrıntılı belgeler ve gelişmiş kullanım için şu adresi ziyaret edin:[Aspose.Words for .NET API belgeleri](https://reference.aspose.com/words/net/) . Ek desteğe ihtiyacınız varsa şuraya göz atın:[destek forumları](https://forum.aspose.com/c/words/8).
 

@@ -17,7 +17,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy a következő követelmények
 - Aspose.Words for .NET könyvtár telepítve. A telepítéshez letöltheti a NuGet csomagkezelővel.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
 
  Először is hozzunk létre egy újat`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -108,7 +108,7 @@ Ebből az oktatóanyagból megtanulta, hogyan állíthat be alapértelmezett be�
 Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és mentését .NET-alkalmazások segítségével. Funkciók széles skáláját kínálja a dokumentumelemekkel, beleértve a diagramokat is tartalmazó szövegfeldolgozáshoz.
 
 #### Q2. Hogyan telepíthetem az Aspose.Words for .NET fájlt?
-Az Aspose.Words for .NET telepítéséhez a NuGet csomagkezelő használatával töltse le a Visual Studio alkalmazásban. Egyszerűen keresse meg az „Apose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
+Az Aspose.Words for .NET telepítéséhez a NuGet csomagkezelő használatával töltse le a Visual Studio alkalmazásban. Egyszerűen keresse meg az „Aspose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
 
 #### Q3. Testreszabhatom a diagram egyéb szempontjait az Aspose.Words for .NET használatával?
 Igen, az Aspose.Words for .NET lehetővé teszi a diagramok különböző szempontjainak testreszabását, például a diagram típusát, a tengelycímkéket, a jelmagyarázatot, a diagramterületet és egyebeket. A kívánt megjelenés és viselkedés elérése érdekében elérheti és módosíthatja a diagramobjektum különböző tulajdonságait.
@@ -117,4 +117,4 @@ Igen, az Aspose.Words for .NET lehetővé teszi a diagramok különböző szempo
  Igen, az Aspose.Words for .NET támogatja a diagramot tartalmazó dokumentum mentését különböző formátumokban, beleértve a DOCX, PDF, HTML és egyebeket. Kiválaszthatja az igényeinek megfelelő formátumot, és használhatja a`Save` módszere a`Document` objektumot a dokumentum mentéséhez.
 
 #### Q5. Alkalmazhatom ezeket a technikákat más diagramtípusoknál?
-Igen, az ebben az oktatóanyagban leírt technikák alkalmazhatók az Aspose.Words for .NET által támogatott más diagramtípusokra is. A kulcs az, hogy hozzáférjen a szövegfeldolgozás alatt álló diagramtípushoz tartozó releváns objektumokhoz és tulajdonságokhoz.
+Igen, az ebben az oktatóanyagban leírt technikák alkalmazhatók az Aspose.Words for .NET által támogatott más diagramtípusokra is. A kulcs az, hogy hozzáférjen a szövegfeldolgozáshoz használt diagramtípushoz tartozó releváns objektumokhoz és tulajdonságokhoz.

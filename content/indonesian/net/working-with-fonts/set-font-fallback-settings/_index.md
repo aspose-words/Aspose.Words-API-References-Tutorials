@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Langkah 4: Terapkan Pengaturan Font ke Dokumen
 
- Tetapkan yang dikonfigurasi`FontSettings`ke dokumen. Hal ini memastikan bahwa aturan penggantian font diterapkan saat merender dokumen.
+ Tetapkan yang dikonfigurasi`FontSettings` ke dokumen. Hal ini memastikan bahwa aturan penggantian font diterapkan saat merender dokumen.
 
 ```csharp
 doc.FontSettings = fontSettings;

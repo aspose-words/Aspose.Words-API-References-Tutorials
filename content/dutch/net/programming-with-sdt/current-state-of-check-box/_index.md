@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 	doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-Dat is het! U hebt met succes de huidige status van een inhoudsbesturingselement voor selectievakjes in uw Word-document opgehaald en ingesteld met Aspose.Words voor .NET.
+Dat is het! U hebt met succes de huidige status van een inhoudsbesturingselement voor selectievakjes in uw Word-document opgehaald en ingesteld met behulp van Aspose.Words voor .NET.

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-footnote-and-endnote/set-foot-note-columns/
 ---
 
-I denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att ställa in antalet kolumner för fotnoter i ett Word-dokument. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att ställa in antalet kolumner för fotnoter i ett Word-dokument. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
  För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -31,7 +31,7 @@ doc.FootnoteOptions.Columns = 3;
 
 ## Steg 3: Spara dokumentet
 
-Spara slutligen det ändrade dokumentet:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
@@ -57,7 +57,7 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Hur kan jag konfigurera antalet kolumner för fotnoter i Aspose.Words?
 
- S: För att konfigurera antalet kolumner för fotnoter i Aspose.Words måste du använda`FootnoteOptions` klass och`ColumnsCount` fast egendom. Du kan ställa in den här egenskapen till valfritt antal kolumner du vill.
+S: För att konfigurera antalet kolumner för fotnoter i Aspose.Words måste du använda`FootnoteOptions` klass och`ColumnsCount` fast egendom. Du kan ställa in den här egenskapen till valfritt antal kolumner du vill.
 
 #### F: Vilka är fördelarna med att ställa in fotnotskolumner?
 

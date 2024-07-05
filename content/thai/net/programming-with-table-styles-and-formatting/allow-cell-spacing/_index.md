@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสาร
- ถัดไป คุณต้องโหลดเอกสาร Word ลงในอินสแตนซ์ของ`Document` ชั้นเรียน
+ ถัดไป คุณต้องโหลดเอกสาร Word ลงในอินสแตนซ์ของ`Document` ระดับ.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");

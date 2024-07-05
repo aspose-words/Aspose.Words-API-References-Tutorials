@@ -33,7 +33,7 @@ import com.aspose.words.Document;
 
 public class DocumentCombination {
     public static void main(String[] args) {
-        // Инициализируйте слова Aspose.
+        // Инициализируйте Aspose.Words
         Document doc = new Document();
     }
 }
@@ -41,7 +41,7 @@ public class DocumentCombination {
 
 ## Шаг 2. Загрузите исходные документы
 
-Далее вам нужно будет загрузить исходные документы, которые вы хотите объединить. Вы можете загрузить несколько документов в отдельные экземпляры`Document` класс.
+Далее вам нужно будет загрузить исходные документы, которые вы хотите объединить. Вы можете загрузить несколько документов в отдельные экземпляры`Document` сорт.
 
 ```java
 // Загрузить исходные документы
@@ -58,7 +58,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, Document.ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-## Шаг 4. Сохраните объединенный документ.
+## Шаг 4. Сохраните объединенный документ
 
 Наконец, сохраните объединенный документ в файл.
 
@@ -78,7 +78,7 @@ import com.aspose.words.Document;
 
 public class DocumentCloning {
     public static void main(String[] args) {
-        // Инициализируйте слова Aspose.
+        // Инициализируйте Aspose.Words
         Document doc = new Document("source_document.docx");
     }
 }
@@ -102,7 +102,7 @@ Document sourceDoc = new Document("source_document.docx");
 Document clonedDoc = sourceDoc.deepClone();
 ```
 
-## Шаг 4. Внесите изменения
+## Шаг 4: Внесите изменения
 
 Теперь вы можете внести любые необходимые изменения в клонированный документ.
 
@@ -111,7 +111,7 @@ Document clonedDoc = sourceDoc.deepClone();
 clonedDoc.getFirstSection().getBody().getFirstParagraph().getRuns().get(0).setText("Modified Content");
 ```
 
-## Шаг 5. Сохраните клонированный документ.
+## Шаг 5. Сохраните клонированный документ
 
 Наконец, сохраните клонированный документ в файл.
 

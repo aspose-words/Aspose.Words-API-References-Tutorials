@@ -62,7 +62,7 @@ Tímto končí náš průvodce používáním funkce „Získat názvy polí slo
 
 #### Q1: Co je hromadná korespondence v Aspose.Words?
 
-Hromadná korespondence v Aspose.Words je proces slučování dat z externího zdroje (např. tabulky Excel nebo databáze) se šablonou dokumentu aplikace Word za účelem vytvoření personalizovaných dokumentů. To usnadňuje automatizované generování dopisů, zpráv a dalších podobných dokumentů.
+Hromadná korespondence v Aspose.Words je proces slučování dat z externího zdroje (např. tabulky Excel nebo databáze) se šablonou dokumentu aplikace Word pro vytváření personalizovaných dokumentů. To usnadňuje automatizované generování dopisů, zpráv a dalších podobných dokumentů.
 
 #### Q2: Jak získám seznam polí hromadné korespondence dostupných v dokumentu aplikace Word?
 
@@ -96,7 +96,7 @@ foreach (string fieldName in fieldNames)
 
 #### Otázka: Co je hromadná korespondence v Aspose.Words?
 
-Odpověď: Hromadná korespondence v Aspose.Words je proces slučování dat z externího zdroje (např. tabulky Excel nebo databáze) se šablonou dokumentu Word za účelem vytvoření personalizovaných dokumentů. To usnadňuje automatizované generování dopisů, zpráv a dalších podobných dokumentů.
+Odpověď: Hromadná korespondence v Aspose.Words je proces slučování dat z externího zdroje (např. tabulky Excel nebo databáze) se šablonou dokumentu aplikace Word pro vytváření personalizovaných dokumentů. To usnadňuje automatizované generování dopisů, zpráv a dalších podobných dokumentů.
 
 #### Otázka: Jak získám seznam polí hromadné korespondence dostupných v dokumentu aplikace Word?
 

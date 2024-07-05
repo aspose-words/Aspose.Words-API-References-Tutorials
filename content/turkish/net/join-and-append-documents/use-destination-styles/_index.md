@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: Kaynak Belgeyi Hedef Stilleriyle Ekleme
 
- Hedef belgenin stillerini uygularken kaynak belgeyi hedef belgeye eklemek için`AppendDocument` yöntemi`Document` ile sınıf`ImportFormatMode.UseDestinationStyles` parametreler.
+ Hedef belgenin stillerini uygularken kaynak belgeyi hedef belgeye eklemek için`AppendDocument` yöntemi`Document` ile sınıf`ImportFormatMode.UseDestinationStyles` parametre.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);

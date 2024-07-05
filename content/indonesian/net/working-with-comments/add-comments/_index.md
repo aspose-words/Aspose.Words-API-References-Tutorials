@@ -93,7 +93,7 @@ J: Ya, Anda dapat memformat teks komentar di Aspose.Words untuk .NET menggunakan
 
 #### T: Bagaimana cara mengambil semua komentar yang ada dalam dokumen?
 
- J: Anda dapat mengambil semua komentar yang disajikan dalam dokumen menggunakan`Document.Comments` Properti.
+ J: Anda dapat mengambil semua komentar yang ada dalam dokumen menggunakan`Document.Comments` Properti.
 
 #### T: Dapatkah saya menghapus komentar tertentu di Aspose.Words untuk .NET?
 

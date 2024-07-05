@@ -50,7 +50,7 @@ Deze code stelt de lay-outmodus in op "Raster" en specificeert vervolgens het aa
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Stel de lay-outmodus in voor een sectie waarmee u het gedrag van het documentraster kunt definiëren.
-	// Merk op dat het tabblad Documentraster zichtbaar wordt in het dialoogvenster Pagina-instelling van MS Word.
+	// Merk op dat het tabblad Documentraster zichtbaar wordt in het dialoogvenster Pagina-instelling van MS Word
 	// of een Aziatische taal is gedefinieerd als bewerkingstaal.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

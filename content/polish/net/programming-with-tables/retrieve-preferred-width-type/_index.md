@@ -62,4 +62,4 @@ double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
 ## Wniosek
-W tym samouczku nauczyliśmy się, jak pobrać preferowany typ szerokości i jego wartość z komórki tabeli w dokumencie programu Word za pomocą Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz pobrać te informacje dla określonych komórek w tabelach dokumentów programu Word.
+W tym samouczku nauczyliśmy się, jak pobrać preferowany typ szerokości i jego wartość z komórki tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz pobrać te informacje dla określonych komórek w tabelach dokumentów programu Word.

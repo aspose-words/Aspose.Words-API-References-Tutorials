@@ -13,7 +13,7 @@ Documenten vergelijken is een uitgebreide tutorial over het vergelijken van docu
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Vergelijk voor gelijk in Word-document](./compare-for-equal/) | Stapsgewijze handleiding om de C#-broncode van Compare for Equals uit te leggen in de Word-documentfunctie met Aspose.Words voor .NET. |
-| [Vergelijk opties in Word-document](./compare-options/) | Stapsgewijze handleiding voor het uitleggen van de C#-broncode van de vergelijkingsopties in de Word-documentfunctie met Aspose.Words voor .NET. |
-| [Vergelijkingsdoel in Word-document](./comparison-target/) | Leer de functie Doel vergelijken in Word-documenten van Aspose.Words voor .NET waarmee u documenten kunt vergelijken en een nieuw document kunt genereren met de aangebrachte wijzigingen. |
+| [Vergelijk voor gelijk in Word-document](./compare-for-equal/) | Leer hoe u twee Word-documenten kunt vergelijken op gelijkheid met behulp van Aspose.Words voor .NET. Volg deze stapsgewijze handleiding om ervoor te zorgen dat uw documenten identiek zijn. |
+| [Vergelijk opties in Word-document](./compare-options/) | Leer hoe u Word-documenten kunt vergelijken met Aspose.Words voor .NET met onze stapsgewijze handleiding. Zorg moeiteloos voor documentconsistentie. |
+| [Vergelijkingsdoel in Word-document](./comparison-target/) | Vergelijk moeiteloos Word-documenten met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. Bespaar tijd en verbeter de nauwkeurigheid bij documentvergelijking. |
 | [Vergelijking granulariteit in Word-document](./comparison-granularity/) | Leer hoe u granulariteit kunt vergelijken in de Word-documentfunctie van Aspose.Words voor .NET waarmee documenten karakter voor karakter kunnen worden vergeleken en aangebrachte wijzigingen kunnen worden gerapporteerd. |

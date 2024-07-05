@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-fonts/set-font-fallback-settings/
 ---
 
-Ha olyan dokumentumokkal dolgozik, amelyek különböző szövegelemeket, például különböző nyelveket vagy speciális karaktereket tartalmaznak, alapvető fontosságú, hogy ezek az elemek helyesen jelenjenek meg. Az Aspose.Words for .NET a Font Fallback Settings nevű hatékony funkciót kínálja, amely segít a betűtípusok helyettesítésére vonatkozó szabályok meghatározásában, ha az eredeti betűtípus nem támogat bizonyos karaktereket. Ebben az útmutatóban lépésről lépésre bemutatjuk, hogyan állíthatja be a tartalék betűkészlet-beállításokat az Aspose.Words for .NET használatával.
+Különböző szövegelemeket, például különböző nyelveket vagy speciális karaktereket tartalmazó dokumentumok használatakor elengedhetetlen, hogy ezek az elemek helyesen jelenjenek meg. Az Aspose.Words for .NET a Font Fallback Settings nevű hatékony funkciót kínálja, amely segít a betűtípusok helyettesítésére vonatkozó szabályok meghatározásában, ha az eredeti betűtípus nem támogat bizonyos karaktereket. Ebben az útmutatóban lépésről lépésre bemutatjuk, hogyan állíthatja be a tartalék betűkészlet-beállításokat az Aspose.Words for .NET használatával.
 
 ## Előfeltételek
 
@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## 4. lépés: Alkalmazza a Betűtípus-beállításokat a dokumentumra
 
- Rendelje hozzá a konfigurált`FontSettings` dokumentumhoz. Ez biztosítja, hogy a betűkészlet-visszaállítási szabályok alkalmazásra kerüljenek a dokumentum renderelésekor.
+ Rendelje hozzá a konfigurált`FontSettings` a dokumentumhoz. Ez biztosítja, hogy a betűkészlet-visszaállítási szabályok alkalmazásra kerüljenek a dokumentum renderelésekor.
 
 ```csharp
 doc.FontSettings = fontSettings;

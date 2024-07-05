@@ -35,7 +35,7 @@ url: /ko/python-net/document-structure-and-content-manipulation/
 ### [Word 문서의 구조 및 내용 관리](./document-structure-content/)
 Aspose.Words for Python을 사용하여 Word 문서를 효율적으로 관리하는 방법을 알아보세요. 이 단계별 가이드에서는 문서 구조, 텍스트 조작, 서식 지정, 이미지, 표 등을 다룹니다. 
 ### [Word 문서에서 주석 기능 활용하기](./document-comments/)
-Aspose.Words for Python을 사용하여 Word 문서에서 주석 기능을 활용하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다. 협업을 강화하고 문서 검토를 간소화하세요.
+Aspose.Words for Python을 사용하여 Word 문서에서 주석 기능을 활용하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다. 협업을 강화하고 문서 검토를 간소화합니다.
 ### [Word 문서의 필드 및 데이터 처리](./document-fields/)
 Aspose.Words for Python을 사용하여 Word 문서의 필드와 데이터를 처리하는 방법을 알아보세요. 동적 콘텐츠, 자동화 등에 대한 코드 예제가 포함된 단계별 가이드입니다. 
 ### [Word 문서의 글꼴 및 텍스트 스타일 이해](./document-fonts/)
@@ -49,7 +49,7 @@ Aspose.Words for Python을 사용하여 Word 문서의 머리글과 바닥글을
 ### [Word 문서에서 하이픈 넣기 및 텍스트 흐름 관리](./document-hyphenation/)
 Aspose.Words for Python을 사용하여 Word 문서에서 하이픈 넣기와 텍스트 흐름을 관리하는 방법을 알아보세요. 단계별 예제와 소스 코드를 사용하여 세련되고 독자 친화적인 문서를 만듭니다. 
 ### [Word 문서에서 목록 만들기 및 관리](./document-lists/)
-Aspose.Words Python API를 사용하여 Word 문서에서 목록을 만들고 관리하는 방법을 알아보세요. 목록 형식화, 사용자 정의, 중첩 등에 대한 소스 코드가 포함된 단계별 가이드입니다. 
+Aspose.Words Python API를 사용하여 Word 문서에서 목록을 만들고 관리하는 방법을 알아보세요. 목록 형식 지정, 사용자 정의, 중첩 등에 대한 소스 코드가 포함된 단계별 가이드입니다. 
 ### [Word 문서에서 마크다운 형식 활용](./document-markdown/)
 Aspose.Words for Python을 사용하여 Markdown 서식을 Word 문서에 통합하는 방법을 알아보세요. 동적이고 시각적으로 매력적인 콘텐츠 제작을 위한 코드 예제가 포함된 단계별 가이드입니다. 
 ### [문서 노드 이해 및 탐색](./document-nodes/)

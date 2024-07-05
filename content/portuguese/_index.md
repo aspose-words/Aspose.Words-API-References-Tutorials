@@ -25,7 +25,7 @@ Estes são links para alguns recursos úteis:
 - [Trabalhando com lista](./net/working-with-list/)   
 - [Trabalhando com Markdown](./net/working-with-markdown/)   
 - [Trabalhando com nó](./net/working-with-node/)   
-- [Trabalhando com avaliações](./net/working-with-revisions/)   
+- [Trabalhando com revisões](./net/working-with-revisions/)   
 - [Trabalhando com caixas de texto](./net/working-with-textboxes/)   
 - [Dividir documento](./net/split-document/)   
 - [Adicione conteúdo usando Documentbuilder](./net/add-content-using-documentbuilder/)

@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### Vraag: Hoe controleer ik of een alinea is verplaatst (verwijderd) in Aspose.Words voor .NET?
 
- A: Gebruik een paragraaf`IsMoveFromRevision` eigenschap om te controleren of deze is verplaatst (verwijderd).
+ A: Gebruik een paragraaf`IsMoveFromRevision`eigenschap om te controleren of deze is verplaatst (verwijderd).
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### Vraag: Hoe controleer ik of een alinea is verplaatst (ingevoegd) in Aspose.Words voor .NET?
 
- A: Gebruik een paragraaf`IsMoveToRevision`eigenschap om te controleren of deze is verplaatst (ingevoegd).
+ A: Gebruik een paragraaf`IsMoveToRevision` eigenschap om te controleren of deze is verplaatst (ingevoegd).
 
 ```csharp
 if (paragraph.IsMoveToRevision)

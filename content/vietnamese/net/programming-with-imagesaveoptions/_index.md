@@ -2,7 +2,7 @@
 title: Xử lý từ với tùy chọn lưu hình ảnh
 linktitle: Xử lý từ với tùy chọn lưu hình ảnh
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách lập trình với các tùy chọn lưu hình ảnh trong Aspose.Words cho .NET. Hướng dẫn từng bước với mã mẫu để lưu và thao tác hình ảnh trong tài liệu Word của bạn.
+description: Tìm hiểu cách lập trình với các tùy chọn lưu hình ảnh trong Aspose.Words for .NET. Hướng dẫn từng bước với mã mẫu để lưu và thao tác hình ảnh trong tài liệu Word của bạn.
 type: docs
 weight: 1630
 url: /vi/net/programming-with-imagesaveoptions/

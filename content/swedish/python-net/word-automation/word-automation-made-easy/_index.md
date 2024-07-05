@@ -112,7 +112,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 ## Avancerade ordautomatiseringsfunktioner
 
-Aspose.Words tillhandahåller avancerade funktioner såsom sammanslagning, dokumentkryptering och arbete med bokmärken, hyperlänkar och kommentarer.
+Aspose.Words tillhandahåller avancerade funktioner såsom sammankoppling av brev, dokumentkryptering och arbete med bokmärken, hyperlänkar och kommentarer.
 
 ## Automatisera dokumenthantering
 
@@ -134,7 +134,7 @@ Absolut! Aspose.Words stöder olika format, inklusive DOCX till PDF-konvertering
 Ja, Aspose.Words är designat för att hantera stora volymer dokumentbearbetning effektivt.
 
 ### Stöder Aspose.Words molnbaserad dokumentmanipulation?
-Ja, Aspose.Words kan användas tillsammans med molnplattformar, vilket gör den idealisk för molnbaserade applikationer.
+Ja, Aspose.Words kan användas i kombination med molnplattformar, vilket gör den idealisk för molnbaserade applikationer.
 
 ### Vad är Word Automation, och hur underlättar Aspose.Words det?
 Word Automation involverar programmatisk interaktion med Word-dokument. Aspose.Words för Python förenklar denna process genom att tillhandahålla ett kraftfullt bibliotek med ett brett utbud av funktioner för att skapa, manipulera och bearbeta Word-dokument sömlöst.

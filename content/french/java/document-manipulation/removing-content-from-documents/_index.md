@@ -68,7 +68,7 @@ Ce code supprime tous les types de pieds de page (premier, principal et pair) de
 
 ## Suppression de la table des matières
 
-Les champs de table des matières (TOC) génèrent un tableau dynamique qui répertorie les titres et leurs numéros de page. Pour supprimer une TOC, vous pouvez utiliser le code suivant :
+Les champs de table des matières (TOC) génèrent un tableau dynamique qui répertorie les titres et leurs numéros de page. Pour supprimer une table des matières, vous pouvez utiliser le code suivant :
 
 ```java
 Document doc = new Document("Your Directory Path" + "Table of contents.docx");

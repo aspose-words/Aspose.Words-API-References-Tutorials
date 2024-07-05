@@ -104,11 +104,11 @@ Ja, Aspose.Words voor Java is compatibel met andere Java-bibliotheken, waardoor 
 
 ### V2: Is er een proefversie van Aspose.Words voor Java beschikbaar?
 
- Ja, u krijgt toegang tot een gratis proefversie van Aspose.Words voor Java.[hier](https://releases.aspose.com/).
+ Ja, u krijgt toegang tot een gratis proefversie van Aspose.Words voor Java[hier](https://releases.aspose.com/).
 
 ### V3: Hoe kan ik een tijdelijke licentie krijgen voor Aspose.Words voor Java?
 
- U kunt een tijdelijke licentie verkrijgen voor Aspose.Words voor Java.[hier](https://purchase.aspose.com/temporary-license/).
+ U kunt een tijdelijke licentie verkrijgen voor Aspose.Words voor Java[hier](https://purchase.aspose.com/temporary-license/).
 
 ### V4: Waar kan ik ondersteuning vinden voor Aspose.Words voor Java?
 

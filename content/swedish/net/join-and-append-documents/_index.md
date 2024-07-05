@@ -13,7 +13,7 @@ En annan bra handledning är "Ersätt text i ett dokument", som berättar hur du
 
  Slutligen visar handledningen "Generera en rapport med sammanslagningsdata" hur du skapar dynamiska rapporter genom att slå samman data till en Word-dokumentmall. Du kommer att lära dig hur du använder`MailMerge` klass för att utföra datasammanslagningar från olika källor, såsom tabeller, anpassade objekt eller databaser. Den här handledningen ger dig konkreta exempel och praktiska tips för att skapa anpassade rapporter från en mängd olika data.
 
-Dessa Aspose.Words för .NET-handledningar ger dig värdefulla resurser för att behärska ordbehandling med Word-dokument i dina applikationer, och vägleder dig genom praktiska exempel och steg-för-steg-instruktioner. Oavsett om du behöver kombinera dokument, ersätta text eller skapa rapporter, kommer dessa handledningar hjälpa dig att dra full nytta av de kraftfulla funktionerna i Aspose.Words för .NET.
+Dessa Aspose.Words för .NET-handledningar ger dig värdefulla resurser för att behärska ordbehandling med Word-dokument i dina applikationer, och vägleder dig genom praktiska exempel och steg-för-steg-instruktioner. Oavsett om du behöver kombinera dokument, ersätta text eller generera rapporter, kommer dessa tutorials hjälpa dig att dra full nytta av de kraftfulla funktionerna i Aspose.Words för .NET.
 
  ## Handledningar
 | Titel | Beskrivning |

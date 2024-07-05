@@ -89,7 +89,7 @@ doc.save("FormattedDocument.doc");
 
 ## Phần kết luận
 
-Aspose.Words for Java cung cấp các tính năng mạnh mẽ để làm việc với các trường trong tài liệu của bạn. Bạn có thể thực hiện việc hợp nhất các trường cơ bản, làm việc với các trường có điều kiện, chèn hình ảnh và định dạng bảng một cách dễ dàng. Kết hợp các kỹ thuật này vào quy trình tự động hóa tài liệu của bạn để tạo tài liệu động và tùy chỉnh.
+Aspose.Words for Java cung cấp các tính năng mạnh mẽ để làm việc với các trường trong tài liệu của bạn. Bạn có thể thực hiện việc hợp nhất các trường cơ bản, làm việc với các trường có điều kiện, chèn hình ảnh và định dạng bảng một cách dễ dàng. Kết hợp các kỹ thuật này vào quy trình tự động hóa tài liệu của bạn để tạo các tài liệu động và tùy chỉnh.
 
 ## Câu hỏi thường gặp
 
@@ -119,4 +119,4 @@ Các trường có điều kiện trong Aspose.Words cho Java cho phép bạn t�
 
 ### Aspose.Words cho Java có tương thích với các IDE Java khác nhau không?
 
-Có, Aspose.Words cho Java tương thích với nhiều Môi trường phát triển tích hợp Java (IDE) khác nhau như Eclipse, IntelliJ IDEA và NetBeans. Bạn có thể tích hợp nó vào IDE ưa thích của mình để hợp lý hóa các tác vụ xử lý tài liệu của mình.
+Có, Aspose.Words cho Java tương thích với nhiều Môi trường phát triển tích hợp Java (IDE) khác nhau như Eclipse, IntelliJ IDEA và NetBeans. Bạn có thể tích hợp nó vào IDE ưa thích để hợp lý hóa các tác vụ xử lý tài liệu của mình.

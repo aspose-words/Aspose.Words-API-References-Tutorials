@@ -7,7 +7,7 @@ type: docs
 weight: 20
 url: /vi/java/using-document-elements/using-nodes/
 ---
-Trong hướng dẫn toàn diện này, chúng ta sẽ đi sâu vào thế giới làm việc với các nút trong Aspose.Words cho Java. Các nút là thành phần cơ bản trong cấu trúc của tài liệu và việc hiểu cách thao tác với chúng là rất quan trọng đối với các tác vụ xử lý tài liệu. Chúng ta sẽ khám phá các khía cạnh khác nhau, bao gồm lấy các nút cha, liệt kê các nút con cũng như tạo và thêm các nút đoạn văn.
+Trong hướng dẫn toàn diện này, chúng ta sẽ đi sâu vào thế giới làm việc với các nút trong Aspose.Words cho Java. Các nút là thành phần cơ bản của cấu trúc tài liệu và việc hiểu cách thao tác với chúng là rất quan trọng đối với các tác vụ xử lý tài liệu. Chúng ta sẽ khám phá các khía cạnh khác nhau, bao gồm lấy các nút cha, liệt kê các nút con cũng như tạo và thêm các nút đoạn văn.
 
 ## 1. Giới thiệu
 Aspose.Words for Java là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Các nút đại diện cho các thành phần khác nhau trong tài liệu Word, chẳng hạn như đoạn văn, dòng, phần, v.v. Trong hướng dẫn này, chúng ta sẽ khám phá cách thao tác các nút này một cách hiệu quả.
@@ -112,10 +112,10 @@ Aspose.Words for Java là thư viện Java cho phép các nhà phát triển t�
 Bạn có thể tải xuống và cài đặt Aspose.Words cho Java từ[đây](https://releases.aspose.com/words/java/).
 
 ### Q3. Có bản dùng thử miễn phí không?
- Có, bạn có thể dùng thử miễn phí Aspose.Words cho Java.[đây](https://releases.aspose.com/).
+ Có, bạn có thể dùng thử miễn phí Aspose.Words cho Java[đây](https://releases.aspose.com/).
 
 ### Q4. Tôi có thể lấy giấy phép tạm thời ở đâu?
- Bạn có thể lấy giấy phép tạm thời cho Aspose.Words cho Java.[đây](https://purchase.aspose.com/temporary-license/).
+ Bạn có thể xin giấy phép tạm thời cho Aspose.Words for Java[đây](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. Tôi có thể tìm hỗ trợ cho Aspose.Words cho Java ở đâu?
  Để được hỗ trợ và thảo luận, hãy truy cập[Diễn đàn Aspose.Words cho Java](https://forum.aspose.com/).

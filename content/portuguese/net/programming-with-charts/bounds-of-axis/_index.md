@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Etapa 2: Crie um novo documento e DocumentBuilder
- Crie uma nova instância do`Document` aula e um`DocumentBuilder` objeto para trabalhar com o documento.
+ Crie uma nova instância do`Document` aula e um`DocumentBuilder`objeto para trabalhar com o documento.
 
 ```csharp
 Document doc = new Document();
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 É isso! Você definiu com êxito os limites de um eixo em um gráfico usando Aspose.Words for .NET.
 
 ## Conclusão
-Neste tutorial, você aprendeu como definir os limites de um eixo em um gráfico usando Aspose.Words for .NET. Seguindo o passo a passo, você pode inserir e configurar um gráfico, adicionar dados de séries e definir os valores mínimo e máximo para a escala do eixo. Aspose.Words for .NET fornece uma API poderosa e flexível para processamento de palavras com documentos do Word, permitindo criar gráficos dinâmicos e visualmente atraentes com facilidade.
+Neste tutorial, você aprendeu como definir os limites de um eixo em um gráfico usando Aspose.Words for .NET. Seguindo o passo a passo, você pode inserir e configurar um gráfico, adicionar dados de série e definir os valores mínimo e máximo para a escala do eixo. Aspose.Words for .NET fornece uma API poderosa e flexível para processamento de palavras com documentos do Word, permitindo criar gráficos dinâmicos e visualmente atraentes com facilidade.
 
 
 ### Perguntas frequentes
@@ -95,7 +95,7 @@ Neste tutorial, você aprendeu como definir os limites de um eixo em um gráfico
 Aspose.Words for .NET é uma biblioteca que permite aos desenvolvedores trabalhar com documentos do Word programaticamente. Ele oferece uma ampla gama de recursos e funcionalidades para criar, manipular e salvar documentos do Word.
 
 #### Q2. Como posso instalar o Aspose.Words para .NET?
-Para instalar o Aspose.Words for .NET, você pode usar o gerenciador de pacotes NuGet no Visual Studio. Basta pesquisar “Apose.Words” no gerenciador de pacotes NuGet e instalá-lo em seu projeto.
+Para instalar o Aspose.Words for .NET, você pode usar o gerenciador de pacotes NuGet no Visual Studio. Basta pesquisar “Aspose.Words” no gerenciador de pacotes NuGet e instalá-lo em seu projeto.
 
 #### Q3. Posso usar Aspose.Words for .NET com outras linguagens de programação?
 Não, o Aspose.Words for .NET foi projetado especificamente para aplicativos .NET. Funciona com linguagens de programação como C# e VB.NET.

@@ -17,7 +17,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 - Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
 - Een documentmappad waar het uitvoerdocument wordt opgeslagen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in.
+## Stap 2: Maak een nieuw document en voeg een diagram in
 
  Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
 
@@ -104,7 +104,7 @@ Door een enkele diagramreeks aan te passen, beschikt u over de flexibiliteit om 
 
 ### Veelgestelde vragen
 
-#### Q1. Kan ik meerdere diagramreeksen in een diagram aanpassen?
+#### Q1. Kan ik meerdere diagramseries in een diagram aanpassen?
  Ja, u kunt meerdere grafiekreeksen in een grafiek aanpassen met Aspose.Words voor .NET. Door toegang te krijgen tot de`ChartSeries`objecten in het diagram kunt u meerdere reeksen selecteren en wijzigen op basis van hun indexen of specifieke criteria. Gebruik een lus of individuele toewijzingen om de gewenste eigenschappen voor elke diagramserie te wijzigen. Op deze manier kunt u verschillende aanpassingen toepassen op meerdere series binnen hetzelfde diagram.
 
 #### Vraag 2. Hoe kan ik de naam van een diagramserie wijzigen?
@@ -116,5 +116,5 @@ Het vloeiend maken van diagramreeksen is een visuele verbeteringstechniek waarme
 #### Q4. Hoe kan ik markeringen voor gegevenspunten in een diagramreeks aanpassen?
  Om markeringen voor gegevenspunten in een diagramserie aan te passen met Aspose.Words voor .NET, moet u toegang krijgen tot de`Marker` eigendom van de`ChartSeries` object en wijzig de eigenschappen ervan, zoals`Symbol` En`Size`. Markeringen zijn visuele indicatoren die op de grafiek worden geplaatst om individuele gegevenspunten weer te geven. U kunt kiezen uit een verscheidenheid aan ingebouwde markeringssymbolen en de grootte ervan aanpassen om specifieke gegevenspunten binnen de reeks te markeren of te onderscheiden.
 
-#### Vraag 5. Kan ik kleuren omkeren voor negatieve waarden in een diagramserie?
- Ja, u kunt kleuren voor negatieve waarden in een diagramserie omkeren met behulp van Aspose.Words voor .NET. Door het instellen van de`InvertIfNegative` eigendom van de`ChartSeries` bezwaar tegen`true`worden de kleuren voor gegevenspunten met negatieve waarden omgekeerd, waardoor ze visueel onderscheiden worden van positieve waarden. Deze functie kan handig zijn bij het vergelijken van positieve en negatieve waarden in een diagramserie, waardoor een duidelijk onderscheid tussen de twee ontstaat.
+#### Vraag 5. Kan ik kleuren voor negatieve waarden in een diagramserie omkeren?
+ Ja, u kunt kleuren voor negatieve waarden in een diagramserie omkeren met Aspose.Words voor .NET. Door het instellen van de`InvertIfNegative` eigendom van de`ChartSeries` bezwaar tegen`true`, worden de kleuren voor gegevenspunten met negatieve waarden omgekeerd, waardoor ze visueel onderscheiden worden van positieve waarden. Deze functie kan handig zijn bij het vergelijken van positieve en negatieve waarden in een diagramserie, waardoor een duidelijk onderscheid tussen de twee wordt gemaakt.

@@ -20,7 +20,7 @@ Les notes de bas de page et les notes de fin servent à fournir des informations
 
 2. Gestion des citations : ils fournissent un moyen standardisé de citer des sources, améliorant la crédibilité de votre document et permettant aux lecteurs de vérifier les informations fournies.
 
-3. Présentation concise : au lieu d'inclure de longues explications dans le texte principal, vous pouvez fournir des clarifications et des développements via des notes de bas de page et de fin, en conservant un style d'écriture simplifié.
+3. Présentation concise : au lieu d'inclure de longues explications dans le texte principal, vous pouvez fournir des clarifications et des développements via des notes de bas de page et des notes de fin, en conservant un style d'écriture simplifié.
 
 ## Ajout de notes de bas de page et de notes de fin avec Aspose.Words pour Python
 
@@ -74,7 +74,7 @@ Vous pouvez gérer les notes de bas de page et les notes de fin par programmatio
 - Gardez les notes de bas de page concises et pertinentes
 - Utilisez les notes de fin pour des explications plus détaillées
 - Maintenir un formatage cohérent
-- Vérifiez à nouveau l’exactitude des citations.
+- Vérifiez à nouveau l’exactitude des citations
 
 ## Dépannage des problèmes courants
 

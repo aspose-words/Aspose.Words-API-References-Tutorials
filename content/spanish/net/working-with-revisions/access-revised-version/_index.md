@@ -79,7 +79,7 @@ En este tutorial, aprendimos cómo acceder a la versión revisada de un document
 
 #### P: ¿Cómo cargo un documento con revisiones en Aspose.Words para .NET?
 
- R: Utilice el`Document`clase de Aspose.Words para .NET para cargar un documento desde un archivo que contiene revisiones. Puede especificar la ruta completa del documento.
+ R: Utilice el`Document` clase de Aspose.Words para .NET para cargar un documento desde un archivo que contiene revisiones. Puede especificar la ruta completa del documento.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### P: ¿Cómo busco revisiones de documentos en Aspose.Words para .NET?
 
- R: Utilice un`foreach` bucle para iterar a través de las revisiones presentes en el documento. Puedes usar el`Revisions` propiedad de la`Document` objeto para obtener una colección de todas las revisiones del documento.
+R: Utilice un`foreach` bucle para iterar a través de las revisiones presentes en el documento. Puedes usar el`Revisions` propiedad de la`Document` objeto para obtener una colección de todas las revisiones del documento.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

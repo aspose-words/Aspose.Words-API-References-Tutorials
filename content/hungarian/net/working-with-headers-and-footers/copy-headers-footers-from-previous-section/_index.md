@@ -131,4 +131,4 @@ Igen, a fejléceket és lábléceket másolhatja a Word-dokumentum bármely rés
 
 ### 5. kérdés: Elérhető ingyenes próbaverzió az Aspose.Words for .NET számára?
 
-Igen, letölthet egy ingyenes próbaverziót a webhelyről[letöltési oldal](https://releases.aspose.com/).
+ Igen, letölthet egy ingyenes próbaverziót a webhelyről[letöltési oldal](https://releases.aspose.com/).

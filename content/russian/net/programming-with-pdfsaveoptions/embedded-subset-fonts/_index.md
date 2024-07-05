@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-Вот и все! Вы успешно встроили подмножества шрифтов в документ и создали PDF-файл, содержащий только глифы, используемые в документе, с помощью Aspose.Words для .NET.
+Вот и все ! Вы успешно встроили подмножества шрифтов в документ и создали PDF-файл, содержащий только глифы, используемые в документе, с помощью Aspose.Words для .NET.
 
 ### Пример исходного кода для внедрения подмножеств шрифтов с помощью Aspose.Words для .NET
 

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Шаг 2. Создайте новый документ и DocumentBuilder
- Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder`объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте и настройте фигуру
- Вставьте фигуру в документ с помощью`InsertShape` метод`DocumentBuilder` Объект Object. Установите нужные размеры фигуры.
+ Вставьте фигуру в документ с помощью`InsertShape` метод`DocumentBuilder` объект. Установите нужные размеры фигуры.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);

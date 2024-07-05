@@ -1,6 +1,6 @@
 ---
-title: Aceitar avaliações
-linktitle: Aceitar avaliações
+title: Aceitar revisões
+linktitle: Aceitar revisões
 second_title: API de processamento de documentos Aspose.Words
 description: Aprenda como aceitar revisões em um documento do Word usando Aspose.Words for .NET
 type: docs
@@ -74,7 +74,7 @@ doc.StopTrackRevisions();
 ```
 ## Passo 6: Salvando o documento
 
- Após inserir o campo do formulário de entrada de texto, salve o documento no local desejado usando o`Save` método. Certifique-se de fornecer o caminho de arquivo apropriado:
+ Após inserir o campo do formulário de entrada de texto, salve o documento no local desejado usando o`Save`método. Certifique-se de fornecer o caminho de arquivo apropriado:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// O parágrafo de revisão excluído será removido assim que aceitarmos as alterações.
+// O parágrafo de exclusão de revisão é removido assim que aceitamos as alterações.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

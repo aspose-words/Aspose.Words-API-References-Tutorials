@@ -91,7 +91,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         /// <สรุป>
         /// ตัวจัดการนี้ถูกเรียกสำหรับทุกฟิลด์จดหมายเวียนที่พบในเอกสาร
-        ///สำหรับทุกบันทึกที่พบในแหล่งข้อมูล
+        /// สำหรับทุกบันทึกที่พบในแหล่งข้อมูล
         /// </สรุป>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e) throws Exception
         {
@@ -243,7 +243,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         }
         /// <สรุป>
         /// สิ่งนี้เรียกว่าเมื่อกลไกจัดการจดหมายเวียนพบฟิลด์รูปภาพ:XXX ผสานในเอกสาร
-        ///คุณมีโอกาสที่จะส่งคืนออบเจ็กต์รูปภาพ ชื่อไฟล์ หรือสตรีมที่มีรูปภาพนั้น
+        /// คุณมีโอกาสที่จะส่งคืนออบเจ็กต์รูปภาพ ชื่อไฟล์ หรือสตรีมที่มีรูปภาพนั้น
         /// </สรุป>
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs e) throws Exception
         {
@@ -296,7 +296,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         /// <สรุป>
         /// เรียกทุกช่องผสานที่พบในเอกสาร
-        ///เราสามารถส่งคืนข้อมูลบางส่วนไปยังโปรแกรมจดหมายเวียนหรือดำเนินการอย่างอื่นกับเอกสารได้
+        /// เราสามารถส่งคืนข้อมูลบางส่วนไปยังโปรแกรมจดหมายเวียนหรือดำเนินการอย่างอื่นกับเอกสารได้
         /// ในกรณีนี้ เราแก้ไขการจัดรูปแบบเซลล์
         /// </สรุป>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e)
@@ -326,7 +326,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         private int mRowIdx;
     }
     /// <สรุป>
-    ///คืนค่าเป็นจริงหากค่าเป็นเลขคี่ เท็จถ้าค่าเป็นเลขคู่
+    /// คืนค่าเป็นจริงหากค่าเป็นเลขคี่ เท็จถ้าค่าเป็นเลขคู่
     /// </สรุป>
     private static boolean isOdd(int value)
     {
@@ -357,7 +357,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 
 ยินดีด้วย! คุณได้เรียนรู้วิธีใช้ฟิลด์ใน Aspose.Words สำหรับ Java เพื่อจัดการเอกสาร Word แบบไดนามิก API อันทรงพลังนี้ช่วยให้คุณควบคุมเอกสารของคุณได้อย่างสมบูรณ์ ทำให้เป็นทรัพย์สินที่มีค่าสำหรับนักพัฒนา Java
 
-## 7.คำถามที่พบบ่อย
+## 7. คำถามที่พบบ่อย
 
 ### คำถามที่ 1: ฉันจะดาวน์โหลด Aspose.Words สำหรับ Java ได้ที่ไหน
  คุณสามารถดาวน์โหลด Aspose.Words สำหรับ Java ได้จาก[ที่นี่](https://releases.aspose.com/words/java/).

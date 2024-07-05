@@ -10,7 +10,7 @@ url: /cs/java/document-manipulation/using-styles-and-themes/
 
 ## Úvod do používání stylů a motivů v Aspose.Words pro Javu
 
-V této příručce prozkoumáme, jak pracovat se styly a motivy v Aspose.Words pro Java, abychom vylepšili formátování a vzhled vašich dokumentů. Budeme se zabývat tématy, jako je načítání stylů, kopírování stylů, správa motivů a vkládání oddělovačů stylů. Začněme!
+V této příručce prozkoumáme, jak pracovat se styly a motivy v Aspose.Words pro Java, abychom zlepšili formátování a vzhled vašich dokumentů. Budeme se zabývat tématy, jako je načítání stylů, kopírování stylů, správa motivů a vkládání oddělovačů stylů. Začněme!
 
 ## Načítání stylů
 

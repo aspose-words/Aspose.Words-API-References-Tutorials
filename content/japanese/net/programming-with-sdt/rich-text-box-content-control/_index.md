@@ -2,37 +2,37 @@
 title: リッチテキストボックスコンテンツコントロール
 linktitle: リッチテキストボックスコンテンツコントロール
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内にリッチ テキスト ボックス コンテンツ コントロールを作成し、テキストの書式設定とスタイル設定を可能にする方法を学びます。
+description: Aspose.Words for .NET を使用して、テキストの書式設定とスタイル設定を可能にする、Word 文書にリッチ テキスト ボックス コンテンツ コントロールを作成する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-sdt/rich-text-box-content-control/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内にリッチ テキスト ボックス コンテンツ コントロールを作成する方法を示します。リッチ テキスト ボックスのコンテンツ コントロールを使用すると、ユーザーはさまざまなスタイルと書式設定オプションを使用してテキストを入力し、書式設定することができます。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書にリッチ テキスト ボックス コンテンツ コントロールを作成する方法を説明します。リッチ テキスト ボックス コンテンツ コントロールを使用すると、ユーザーはさまざまなスタイルと書式設定オプションを使用してテキストを入力し、書式設定できます。
 
 ## 前提条件
-このチュートリアルに従うには、以下が必要です。
+このチュートリアルを実行するには、次のものが必要です。
 
 - Aspose.Words for .NET ライブラリがインストールされています。
-- C# と Word ドキュメントを使用したワード処理の基本的な知識。
+- C# と Word 文書を使用した Words Processing に関する基本的な知識。
 
-## ステップ 1: ドキュメント ディレクトリを設定する
-まず、ドキュメント ディレクトリへのパスを設定します。交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントを保存するディレクトリへの実際のパスを指定します。
+## ステップ1: ドキュメントディレクトリを設定する
+まず、ドキュメントディレクトリへのパスを設定します。`"YOUR DOCUMENT DIRECTORY"`ドキュメントを保存するディレクトリへの実際のパスを入力します。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ 2: ドキュメントと StructuredDocumentTag を作成する
-の新しいインスタンスを作成します。`Document`クラスと`StructuredDocumentTag`リッチ テキスト ボックス コンテンツ コントロールを表します。特定`SdtType.RichText`タイプとして、そして`MarkupLevel.Block`マークアップ レベルとして使用して、ブロック レベルのリッチ テキスト ボックスを作成します。
+## ステップ2: ドキュメントとStructuredDocumentTagを作成する
+新しいインスタンスを作成する`Document`クラスと`StructuredDocumentTag`リッチテキストボックスコンテンツコントロールを表すために指定します。`SdtType.RichText`タイプとして`MarkupLevel.Block`ブロックレベルのリッチテキストボックスを作成するには、マークアップレベルとして使用します。
 
 ```csharp
 Document doc = new Document();
 StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichText, MarkupLevel.Block);
 ```
 
-## ステップ 3: リッチ テキスト コンテンツの作成と書式設定
-段落を作成し、リッチ テキスト コンテンツを表すために実行します。テキストと色、フォントなどの書式設定オプションを設定します。
+## ステップ3: リッチテキストコンテンツを作成してフォーマットする
+段落を作成し、実行してリッチ テキスト コンテンツを表します。テキストと、色、フォントなどの書式設定オプションを設定します。
 
 ```csharp
 Paragraph para = new Paragraph(doc);
@@ -42,28 +42,28 @@ run.Font.Color = Color.Green;
 para.Runs.Add(run);
 ```
 
-## ステップ 4: リッチ テキスト コンテンツをコンテンツ コントロールに追加する
-リッチ テキスト コンテンツを含む段落を`ChildNodes`リッチ テキスト ボックス コンテンツ コントロールのコレクション。
+## ステップ4: コンテンツコントロールにリッチテキストコンテンツを追加する
+リッチテキストコンテンツを含む段落を`ChildNodes`リッチ テキスト ボックス コンテンツ コントロールのコレクション。
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);
 ```
 
-## ステップ 5: コンテンツ コントロールをドキュメントに追加する
-リッチ テキスト ボックス コンテンツ コントロールをドキュメントの本文に追加するには、`AppendChild`ドキュメントの最初のセクションの本文のメソッド。
+## ステップ5: コンテンツコントロールをドキュメントに追加する
+リッチテキストボックスコンテンツコントロールをドキュメントの本文に追加するには、`AppendChild`ドキュメントの最初のセクションの本文の方法。
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);
 ```
 
-## ステップ 6: ドキュメントを保存する
-を使用してドキュメントを指定されたディレクトリに保存します。`Save`方法。適切なファイル拡張子を付けて、目的のファイル名を指定します。この例では、ドキュメントを「WorkingWithSdt.RichTextBoxContentControl.docx」として保存します。
+## ステップ6: ドキュメントを保存する
+指定されたディレクトリにドキュメントを保存するには、`Save`メソッド。適切なファイル拡張子を持つファイル名を指定します。この例では、ドキュメントを「WorkingWithSdt.RichTextBoxContentControl.docx」として保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-### Aspose.Words for .NET を使用したリッチ テキスト ボックス コンテンツ コントロールのソース コードの例 
+### Aspose.Words for .NET を使用したリッチ テキスト ボックス コンテンツ コントロールのサンプル ソース コード 
 
 ```csharp
 	//ドキュメントディレクトリへのパス
@@ -81,4 +81,4 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 	doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-それでおしまい！ Aspose.Words for .NET を使用して、Word 文書内にリッチ テキスト ボックス コンテンツ コントロールが正常に作成されました。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書にリッチ テキスト ボックス コンテンツ コントロールを正常に作成できました。

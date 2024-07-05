@@ -2,26 +2,26 @@
 title: 在邮件合并中插入文档
 linktitle: 在邮件合并中插入文档
 second_title: Aspose.Words 文档处理 API
-description: 在此全面的分步教程中，了解如何使用 Aspose.Words for .NET 在邮件合并字段中插入文档。
+description: 在本全面的分步教程中学习如何使用 Aspose.Words for .NET 在邮件合并字段插入文档。
 type: docs
 weight: 10
 url: /zh/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 ## 介绍
 
-欢迎来到 Aspose.Words for .NET 的文档自动化世界！您是否想知道如何在邮件合并操作期间将文档动态插入主文档中的特定字段？嗯，您来对地方了。本教程将指导您逐步完成使用 Aspose.Words for .NET 在邮件合并字段中插入文档的过程。这就像拼图一样，每一块都完美地拼凑到位。那么，让我们深入了解一下吧！
+欢迎使用 Aspose.Words for .NET 进入文档自动化的世界！您是否曾经想过如何在邮件合并操作期间将文档动态插入主文档中的特定字段？好吧，您来对地方了。本教程将逐步指导您使用 Aspose.Words for .NET 在邮件合并字段中插入文档的过程。这就像拼凑一个拼图，每个碎片都完美地拼凑在一起。那么，让我们开始吧！
 
 ## 先决条件
 
-在我们开始之前，请确保您具备以下条件：
+在开始之前，请确保您已准备好以下内容：
 
-1.  Aspose.Words for .NET：您可以[点击这里下载最新版本](https://releases.aspose.com/words/net/)。如果您需要购买许可证，您可以这样做[这里](https://purchase.aspose.com/buy)。或者，您可以获得[临时执照](https://purchase.aspose.com/temporary-license/)或者尝试一下[免费试用](https://releases.aspose.com/).
+1.  Aspose.Words for .NET：您可以[点击这里下载最新版本](https://releases.aspose.com/words/net/)。如果您需要购买许可证，可以这样做[这里](https://purchase.aspose.com/buy)。或者，您可以获得[临时执照](https://purchase.aspose.com/temporary-license/)或者尝试一下[免费试用](https://releases.aspose.com/).
 2. 开发环境：Visual Studio 或任何其他 C# IDE。
 3. C# 基础知识：熟悉 C# 编程将使本教程变得轻而易举。
 
 ## 导入命名空间
 
-首先，您需要导入必要的名称空间。这些就像您项目的构建块。
+首先，您需要导入必要的命名空间。这些命名空间就像项目的构建块。
 
 ```csharp
 using System;
@@ -30,27 +30,27 @@ using Aspose.Words.MailMerging;
 using System.Linq;
 ```
 
-让我们将这个过程分解为可管理的步骤。每一步都将建立在前一步的基础上，从而引导您获得完整的解决方案。
+让我们将这个过程分解成几个可管理的步骤。每个步骤都建立在前一个步骤的基础上，从而为您提供完整的解决方案。
 
-## 第 1 步：设置您的目录
+## 步骤 1：设置目录
 
-在开始插入文档之前，您需要定义文档目录的路径。这是您的文档的存储位置。
+在开始插入文档之前，您需要定义文档目录的路径。这是存储文档的地方。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 第2步：加载主文档
+## 步骤 2：加载主文档
 
-接下来，您将加载主文档。该文档包含将插入其他文档的合并字段。
+接下来，您将加载主文档。此文档包含将插入其他文档的合并字段。
 
 ```csharp
 Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
 ```
 
-## 第三步：设置字段合并回调
+## 步骤3：设置字段合并回调
 
-要处理合并过程，您需要设置一个回调函数。该函数将负责在指定的合并字段中插入文档。
+为了处理合并过程，您需要设置一个回调函数。此函数将负责在指定的合并字段处插入文档。
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
@@ -58,23 +58,23 @@ mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 
 ## 步骤 4：执行邮件合并
 
-现在是执行邮件合并的时候了。这就是奇迹发生的地方。您将指定合并字段以及应在此字段插入的文档。
+现在是时候执行邮件合并了。这就是奇迹发生的地方。您将指定合并字段和应在此字段插入的文档。
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
 ```
 
-## 第 5 步：保存文档
+## 步骤5：保存文档
 
-邮件合并完成后，您将保存修改后的文档。这个新文档将在您想要的位置插入内容。
+邮件合并完成后，您将保存修改后的文档。此新文档将包含您想要插入的内容。
 
 ```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-## 第 6 步：创建回调处理程序
+## 步骤 6：创建回调处理程序
 
-回调处理程序是一个对合并字段进行特殊处理的类。它加载字段值中指定的文档并将其插入到当前合并字段中。
+回调处理程序是针对合并字段进行特殊处理的类。它加载字段值指定的文档并将其插入到当前合并字段中。
 
 ```csharp
 private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
@@ -98,9 +98,9 @@ private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
 }
 ```
 
-## 第7步：插入文档
+## 步骤 7：插入文档
 
-此方法将指定文档插入到当前段落或表格单元格中。
+该方法将指定的文档插入到当前段落或表格单元格中。
 
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
@@ -134,21 +134,21 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## 结论
 
-现在你就拥有了！您已使用 Aspose.Words for .NET 在邮件合并操作期间成功将文档插入到特定字段中。这一强大的功能可以为您节省大量的时间和精力，特别是在处理大量文档时。您可以将其视为拥有一位私人助理，为您处理所有繁重的工作。所以，继续尝试吧。快乐编码！
+就这样！您已成功使用 Aspose.Words for .NET 在邮件合并操作期间将文档插入特定字段。这个强大的功能可以为您节省大量时间和精力，尤其是在处理大量文档时。您可以将其想象为拥有一位私人助理，为您处理所有繁重的工作。所以，请继续尝试。祝您编码愉快！
 
 ## 常见问题解答
 
 ### 我可以在不同的合并字段插入多个文档吗？
-是的你可以。只需在中指定适当的合并字段和相应的文档路径即可`MailMerge.Execute`方法。
+是的，你可以。只需在`MailMerge.Execute`方法。
 
-### 插入文档的格式是否可以与主文档不同？
-绝对地！您可以使用`ImportFormatMode`中的参数`NodeImporter`来控制格式。
+### 是否可以将插入的文档的格式设置为与主文档不同？
+当然可以！您可以使用`ImportFormatMode`参数`NodeImporter`控制格式。
 
 ### 如果合并字段名称是动态的怎么办？
-您可以通过将动态合并字段名称作为参数传递给回调处理程序来处理动态合并字段名称。
+您可以通过将动态合并字段名称作为参数传递给回调处理程序来处理它们。
 
-### 我可以对不同的文件格式使用此方法吗？
+### 我可以将此方法用于不同的文件格式吗？
 是的，Aspose.Words 支持各种文件格式，包括 DOCX、PDF 等。
 
 ### 如何处理文档插入过程中的错误？
-在回调处理程序中实现错误处理以管理可能发生的任何异常。
+在回调处理程序中实现错误处理来管理可能发生的任何异常。

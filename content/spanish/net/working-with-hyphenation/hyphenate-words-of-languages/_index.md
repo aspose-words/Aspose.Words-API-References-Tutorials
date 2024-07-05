@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## Paso 2: Guardar diccionarios de separación de palabras
 
-A continuación, guarde los diccionarios de separación de palabras para los diferentes idiomas que desee procesar. En este ejemplo, registramos diccionarios de inglés americano y alemán suizo:
+A continuación, guarde los diccionarios de separación de palabras para los diferentes idiomas que desea procesar. En este ejemplo, registramos diccionarios de inglés americano y alemán suizo:
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
@@ -51,7 +51,7 @@ Finalmente, guarde el documento modificado:
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Entonces ! Ha procesado con éxito palabras separándolas con guiones en diferentes idiomas en un documento de Word utilizando Aspose.Words para .NET.
+Entonces ! Ha procesado correctamente palabras separándolas con guiones en diferentes idiomas en un documento de Word utilizando Aspose.Words para .NET.
 
 ### Código fuente de muestra para separación de palabras usando Aspose.Words para .NET
 
@@ -79,4 +79,4 @@ R: Para especificar el idioma de silabización en Aspose.Words, debe utilizar lo
 
 #### P: ¿La silabización funciona para todos los idiomas en Aspose.Words?
 
-R: La silabización en Aspose.Words depende de las reglas de silabización específicas del idioma. Aunque Aspose.Words admite una amplia gama de idiomas, es posible que algunos idiomas no sean compatibles o que la silabización no esté disponible para ellos. Consulte la documentación de Aspose.Words para descubrir qué idiomas son compatibles con la silabización.
+R: La silabización en Aspose.Words depende de las reglas de silabización específicas del idioma. Aunque Aspose.Words admite una amplia gama de idiomas, es posible que algunos no lo sean o que la silabización no esté disponible para ellos. Consulte la documentación de Aspose.Words para descubrir qué idiomas son compatibles con la silabización.

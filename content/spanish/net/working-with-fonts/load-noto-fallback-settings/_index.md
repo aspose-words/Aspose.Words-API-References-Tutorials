@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: cargue el documento y configure los ajustes de sustitución de fuentes
- A continuación, cargaremos el documento usando el`Document` clase y configurar los ajustes de anulación de fuente usando el`FontSettings` clase. Cargaremos la configuración alternativa de fuente Noto usando el`LoadNotoFallbackSettings()` método.
+ A continuación, cargaremos el documento usando el`Document` clase y configurar los ajustes de anulación de fuente utilizando el`FontSettings`clase. Cargaremos la configuración alternativa de fuente Noto usando el`LoadNotoFallbackSettings()` método.
 
 ```csharp
 // Cargue el documento y configure los ajustes de sustitución de fuentes

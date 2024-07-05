@@ -18,7 +18,7 @@ I den medföljande koden börjar vi med att skapa en dokumentgenerator.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Steg 2: Infoga IF-fältet.
+## Steg 2: Infoga IF-fältet
 
  Vi använder`InsertField()` metod för att infoga IF-fältet i dokumentet som anger villkoret som ska utvärderas.
 
@@ -36,18 +36,18 @@ Här använde vi villkoret "1=1" som ett exempel, men du kan anpassa villkoret e
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- De`actualResult` Variabeln innehåller resultatet av tillståndsutvärderingen.
+ De`actualResult` variabeln innehåller resultatet av tillståndsutvärderingen.
 
 ### Exempel på källkod för Evaluate IF Condition med Aspose.Words för .NET
 
 ```csharp
-//Skapande av dokumentgeneratorn.
+// Skapande av dokumentgeneratorn.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Infoga OM-fältet i dokumentet.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// Utvärdera IF-villkoret.
+//Utvärdera IF-villkoret.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Visa resultatet av utvärderingen.

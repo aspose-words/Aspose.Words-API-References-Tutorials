@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Προσθήκη με Μετατροπές αριθμού σελίδας
+### Προσθήκη με Μετατροπή αριθμού σελίδας
 
 ```java
 Document srcDoc = new Document("source.docx");

@@ -60,11 +60,11 @@ Nyugodtan használhatja ezt a kódot saját projektjeiben, és módosíthatja sa
 
 #### K: Hogyan tölthető be egy szótagozási szótár egy adott nyelvhez az Aspose.Words-ben?
 
- V: Ha az Aspose.Words-ben egy adott nyelvhez szeretne szótagozási szótárt betölteni, használja a`Hyphenation` osztály és a`LoadDictionary()` módszer. Hozzon létre egy példányt a`Hyphenation` osztályt, és hívja fel a`LoadDictionary()` metódus, amely megadja a szótagozási szótárfájl elérési útját a kívánt nyelvhez. Ez betölti a szótagozási szótárt az Aspose.Words-be.
+ V: Ha az Aspose.Words-ben egy adott nyelvhez szeretne szótagozási szótárt betölteni, használja a`Hyphenation` osztály és a`LoadDictionary()` módszer. Hozzon létre egy példányt a`Hyphenation` osztályt, és hívja fel a`LoadDictionary()` metódus, amely megadja a szótagozási szótárfájl elérési útját a kívánt nyelvhez. Ez betölti a szótagozási szótárt az Aspose.Wordsbe.
 
 #### K: Hol találok szótagozási szótár fájlokat a különböző nyelvekhez?
 
-V: Különféle online forrásokban találhat szótagozási szótár fájlokat különböző nyelvekhez. Ezek a fájlok általában XML vagy TEX formátumúak. Nyílt forráskódú szótagozási szótárakat találhat különböző nyelvekhez a nyelvészeti projekteknek vagy forráskód-tárházaknak szentelt webhelyeken.
+V: Különböző online forrásokban találhat szótagozási szótár fájlokat különböző nyelvekhez. Ezek a fájlok általában XML vagy TEX formátumúak. Nyílt forráskódú szótagozási szótárakat találhat különböző nyelvekhez a nyelvészeti projektekkel foglalkozó webhelyeken vagy forráskód-tárházakban.
 
 #### K: Hogyan alkalmazhatom a betöltött szótagszótárt egy dokumentumra az Aspose.Words programban?
 

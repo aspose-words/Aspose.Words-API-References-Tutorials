@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Ebben a lépésben a listaszámok alapértelmezett formátumát alkalmazzuk a`ApplyNumberDefault()` a listaformázó módszere. Ezután adjunk hozzá három elemet a listánkhoz a dokumentumkészítő segítségével`Writeln()` és`Write()` mód. Használjuk a`ListIndent()` módszer a behúzás növelésére minden szinten.
+Ebben a lépésben a listaszámok alapértelmezett formátumát alkalmazzuk a`ApplyNumberDefault()` a listaformázó módszere. Ezután három elemet adunk a listánkhoz a dokumentumkészítő segítségével`Writeln()` és`Write()` mód. Használjuk a`ListIndent()` módszer a behúzás növelésére minden szinten.
 
 ## 4. lépés: A rögzítési beállítások konfigurálása
 
@@ -47,7 +47,7 @@ saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- Ebben a lépésben konfiguráljuk a dokumentum mentési beállításait. Létrehozunk egy újat`TxtSaveOptions` objektumot és állítsa be a`ListIndentation.Count` tulajdonság 1-re a behúzási szintenkénti tabulátor karakterek számának megadásához. Azt is beállítottuk a`ListIndentation.Character` tulajdonságot a '\t' értékre, hogy megadja, hogy tabulátor karaktereket akarunk használni.
+ Ebben a lépésben konfiguráljuk a dokumentum mentési lehetőségeit. Létrehozunk egy újat`TxtSaveOptions` objektumot és állítsa be a`ListIndentation.Count` tulajdonság 1-re, hogy megadja a tabulátor karakterek számát behúzási szintenként. Azt is beállítottuk a`ListIndentation.Character` tulajdonságot a '\t' értékre, hogy megadja, hogy tabulátor karaktereket akarunk használni.
 
 ## 5. lépés: Mentse el a dokumentumot
 
@@ -55,7 +55,7 @@ saveOptions.ListIndentation.Character = '\t';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- Ebben az utolsó lépésben elmentjük a dokumentumot a megadott mentési opciókkal. Használjuk a`Save()` A dokumentumnak a kimeneti fájl teljes elérési útját átadó módszere és a mentési lehetőségek.
+ Ebben az utolsó lépésben elmentjük a dokumentumot a megadott mentési opciókkal. Használjuk a`Save()` a dokumentumnak a kimeneti fájl teljes elérési útját átadó módszere és a mentési lehetőségek.
 
 
 Most már futtathatja a forráskódot, és létrehozhat egy dokumentumot lista behúzással tabulátor karakterek használatával. A kimeneti fájl a megadott könyvtárba kerül mentésre "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt" néven.
@@ -110,7 +110,7 @@ Ha ezt a funkciót az Aspose.Words for .NET programmal szeretné használni, kö
  Igen, testreszabhatja a tabulátor karakterek számát szintenként a lista behúzásához az érték módosításával`ListIndentation.Count` ingatlan a`TxtSaveOptions` osztály. Minden behúzási szinthez megadhatja a tabulátor karakterek számát.
 
 #### K: Milyen más karaktereket használhatok a lista behúzására az Aspose.Words for .NET-ben?
- A tabulátor karakterek mellett más karaktereket is használhat a lista behúzásához az Aspose.Words for .NET segítségével. Beállíthatja a`ListIndentation.Character` tulajdonság bármely kívánt karakterhez, például szóköz (`' '`), a listák azonosításához.
+ A tabulátor karakterek mellett más karaktereket is használhat a lista behúzásához az Aspose.Words for .NET segítségével. Beállíthatja a`ListIndentation.Character` tulajdonság bármely kívánt karakterhez, például szóköz (`' '`), a behúzó listákhoz.
 
 #### K: Az Aspose.Words for .NET kínál egyéb funkciókat a listák kezeléséhez?
 Igen, az Aspose.Words for .NET számos szolgáltatást kínál a Word-dokumentumok listáinak kezelésére. Létrehozhat számozott vagy felsorolásjeles listákat, behúzási szinteket állíthat be, testreszabhatja a listák stílusát, hozzáadhat listaelemeket stb.

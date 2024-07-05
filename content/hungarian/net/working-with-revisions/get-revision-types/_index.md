@@ -35,7 +35,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 ### Példa forráskód a Revision Types lekéréséhez az Aspose.Words for .NET használatával
 
-Íme a teljes forráskód a revíziótípusok lekéréséhez egy dokumentumban az Aspose.Words for .NET használatával:
+Íme a teljes forráskód, amellyel az Aspose.Words for .NET használatával lekérheti a revíziótípusokat egy dokumentumban:
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### K: Hogyan ellenőrizhető, hogy egy bekezdés át lett-e helyezve (törölve) az Aspose.Words for .NET-ben?
 
- V: Használjon bekezdést`IsMoveFromRevision` tulajdonság ellenőrzésére, hogy át lett-e helyezve (törölve).
+ V: Használjon bekezdést`IsMoveFromRevision`tulajdonság ellenőrzésére, hogy át lett-e helyezve (törölve).
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### K: Hogyan ellenőrizhető, hogy egy bekezdés át lett-e helyezve (beszúrva) az Aspose.Words for .NET-ben?
 
- V: Használjon bekezdést`IsMoveToRevision`tulajdonság ellenőrzésére, hogy áthelyezték-e (beszúrták).
+ V: Használjon bekezdést`IsMoveToRevision` tulajdonság ellenőrzésére, hogy áthelyezték-e (beszúrták).
 
 ```csharp
 if (paragraph.IsMoveToRevision)

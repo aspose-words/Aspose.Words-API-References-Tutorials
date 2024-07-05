@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Etapa 4: aplicar configurações de fonte ao documento
 
- Atribuir o configurado`FontSettings`ao documento. Isso garante que as regras de substituição de fonte sejam aplicadas ao renderizar o documento.
+ Atribuir o configurado`FontSettings` ao documento. Isso garante que as regras de substituição de fonte sejam aplicadas ao renderizar o documento.
 
 ```csharp
 doc.FontSettings = fontSettings;

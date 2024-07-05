@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
 
-在本教學中，我們將引導您完成使用 Aspose.Words for .NET 在 PDF 文件中停用 Windows 字體嵌入來減少 PDF 大小的步驟。透過停用字體嵌入，您可以減少生成的 PDF 文件的大小。請依照以下步驟操作：
+在本教學中，我們將引導您完成使用 Aspose.Words for .NET 在 PDF 文件中停用 Windows 字體嵌入來減少 PDF 大小的步驟。透過停用字體嵌入，您可以減小生成的 PDF 檔案的大小。請依照以下步驟操作：
 
 ## 第 1 步：載入文檔
 

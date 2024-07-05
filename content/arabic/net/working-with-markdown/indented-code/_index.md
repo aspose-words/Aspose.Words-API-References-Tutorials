@@ -18,7 +18,7 @@ url: /ar/net/working-with-markdown/indented-code/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: إضافة التصميم للكود المحدد
+## الخطوة 2: إضافة نمط للتعليمات البرمجية ذات المسافة البادئة
 
 سنضيف نمطًا مخصصًا للرمز ذي المسافة البادئة باستخدام`Styles.Add` طريقة`Document` هدف. في هذا المثال، نقوم بإنشاء نمط يسمى "IndentedCode" للتعليمات البرمجية ذات المسافة البادئة.
 
@@ -27,7 +27,7 @@ Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedC
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## الخطوة 3: إضافة الكود المحدد
+## الخطوة 3: إضافة رمز بمسافة بادئة
 
 يمكننا الآن إضافة كتلة تعليمات برمجية ذات مسافة بادئة باستخدام النمط المخصص "IndentedCode".
 
@@ -51,7 +51,7 @@ builder.Writeln("This is an indented code");
 
 ### الأسئلة الشائعة
 
-#### س: ما هو الكود المحدد في تخفيض السعر؟
+#### س: ما هو رمز المسافة البادئة في Markdown؟
 
 ج: التعليمات البرمجية ذات المسافة البادئة في Markdown هي طريقة تنسيق تُستخدم لعرض التعليمات البرمجية في مستند Markdown. وهو يتألف من وضع مسافة بادئة لكل سطر من التعليمات البرمجية بمسافات أو علامات تبويب.
 

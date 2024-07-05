@@ -9,7 +9,7 @@ url: /cs/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Pokud jste někdy čelili problémům s nesprávným vykreslováním písem ve vašich dokumentech, nejste sami. Správa nastavení písem a přijímání upozornění na nahrazování písem vám může ušetřit spoustu starostí. V tomto komplexním průvodci upozorněním prozkoumáme, jak zacházet s fonty pomocí Aspose.Words for .NET a zajistit, aby vaše dokumenty vždy vypadaly co nejlépe.
+Pokud jste někdy čelili problémům s nesprávným vykreslováním písem ve vašich dokumentech, nejste sami. Správa nastavení písem a přijímání upozornění na nahrazování písem vám může ušetřit spoustu starostí. V tomto obsáhlém průvodci prozkoumáme, jak zacházet s upozorněními na písma pomocí Aspose.Words pro .NET a zajistit, aby vaše dokumenty vždy vypadaly co nejlépe.
 
 ## Předpoklady
 
@@ -18,7 +18,7 @@ Než se pustíme do podrobností, ujistěte se, že máte následující:
 - Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
 -  Aspose.Words for .NET Library: Stáhněte a nainstalujte ji z[oficiální odkaz ke stažení](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Nastavení jako Visual Studio pro psaní a spouštění vašeho kódu.
--  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven k testování nastavení písma.
+-  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven otestovat nastavení písma.
 
 ## Importovat jmenné prostory
 
@@ -89,13 +89,13 @@ doc.FontSettings = fontSettings;
 
 ## Krok 6: Uložte dokument
 
-Nakonec uložte dokument po použití nastavení písma a manipulaci s případnými náhradami písem. Uložte jej ve formátu dle vašeho výběru; zde, uložíme jej jako PDF.
+Nakonec uložte dokument po použití nastavení písma a manipulaci s případnými náhradami písem. Uložte jej ve formátu, který si zvolíte; zde, uložíme jej jako PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ```
 
-Pomocí těchto kroků jste nakonfigurovali aplikaci tak, aby zpracovávala záměny písem elegantně a dostávala upozornění, kdykoli dojde k záměně.
+Provedením těchto kroků jste nakonfigurovali aplikaci tak, aby zpracovávala záměny písem elegantně a dostávala upozornění, kdykoli dojde k záměně.
 
 ## Závěr
 

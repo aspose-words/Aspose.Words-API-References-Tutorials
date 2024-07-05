@@ -72,7 +72,7 @@ builder.InsertHtml(
     "<h1 align='left'>Heading 1 left.</h1>");
 ```
 
-Ten fragment wstawia do dokumentu akapit wyrównany do prawej strony, pogrubiony akapit wyrównany do lewej, element div wyrównany do środka i nagłówek wyrównany do lewej.
+Ten fragment wstawia do dokumentu akapit wyrównany do prawej, pogrubiony akapit wyrównany do lewej, element div wyrównany do środka i nagłówek wyrównany do lewej.
 
 ## Krok 5: Zapisywanie dokumentu
 

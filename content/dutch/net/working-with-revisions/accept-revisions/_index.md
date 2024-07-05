@@ -1,6 +1,6 @@
 ---
-title: Accepteer beoordelingen
-linktitle: Accepteer beoordelingen
+title: Accepteer revisies
+linktitle: Accepteer revisies
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u revisies van een Word-document accepteert met Aspose.Words voor .NET
 type: docs
@@ -74,7 +74,7 @@ doc.StopTrackRevisions();
 ```
 ## Stap 6: Het document opslaan
 
- Nadat u het tekstinvoerformulierveld hebt ingevoegd, slaat u het document op de gewenste locatie op met behulp van de`Save` methode. Zorg ervoor dat u het juiste bestandspad opgeeft:
+ Nadat u het tekstinvoerformulierveld hebt ingevoegd, slaat u het document op de gewenste locatie op met behulp van de`Save`methode. Zorg ervoor dat u het juiste bestandspad opgeeft:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -117,13 +117,13 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// De verwijderde revisieparagraaf wordt verwijderd zodra we de wijzigingen accepteren.
+// De paragraaf 'Revisie verwijderen' wordt verwijderd zodra we de wijzigingen accepteren.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // Als u het bijhouden van revisies stopt, verschijnt deze tekst als normale tekst.
-// Revisies worden niet meegeteld wanneer het document wordt gewijzigd.
+// Revisies worden niet meegeteld als het document wordt gewijzigd.
 doc.StopTrackRevisions();
 
 // Bewaar het document.

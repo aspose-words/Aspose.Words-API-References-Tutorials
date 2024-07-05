@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### Q : Comment vérifier si un paragraphe a été déplacé (supprimé) dans Aspose.Words pour .NET ?
 
- R : Utilisez le texte d'un paragraphe`IsMoveFromRevision` propriété pour vérifier si elle a été déplacée (supprimée).
+ R : Utilisez le texte d'un paragraphe`IsMoveFromRevision`propriété pour vérifier si elle a été déplacée (supprimée).
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### Q : Comment vérifier si un paragraphe a été déplacé (inséré) dans Aspose.Words pour .NET ?
 
- R : Utilisez le texte d'un paragraphe`IsMoveToRevision`propriété pour vérifier si elle a été déplacée (insérée).
+ R : Utilisez le texte d'un paragraphe`IsMoveToRevision` propriété pour vérifier si elle a été déplacée (insérée).
 
 ```csharp
 if (paragraph.IsMoveToRevision)

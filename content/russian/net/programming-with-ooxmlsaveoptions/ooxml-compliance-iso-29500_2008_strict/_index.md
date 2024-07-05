@@ -35,7 +35,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompli
 
  На этом этапе мы настраиваем параметры сохранения OOXML, используя команду`OptimizeFor` и`OoxmlSaveOptions` методы. Оптимизируем совместимость документов для версии Word 2016 с помощью`OptimizeFor`и установите соответствие`Iso29500_2008_Strict` с использованием`Compliance`.
 
-## Шаг 4. Сохранение документа с соблюдением Ooxml ISO 29500_2008_Strict.
+## Шаг 4. Сохранение документа в соответствии со стандартом Ooxml Iso 29500_2008_Strict.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx", saveOptions);

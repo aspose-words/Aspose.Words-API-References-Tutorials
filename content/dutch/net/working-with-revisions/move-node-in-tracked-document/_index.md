@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Stap 5: Het document opslaan
 
- Nadat u het tekstinvoerformulierveld hebt ingevoegd, slaat u het document op de gewenste locatie op met behulp van de`Save` methode. Zorg ervoor dat u het juiste bestandspad opgeeft:
+ Nadat u het tekstinvoerformulierveld hebt ingevoegd, slaat u het document op de gewenste locatie op met behulp van de`Save`methode. Zorg ervoor dat u het juiste bestandspad opgeeft:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ In deze zelfstudie hebben we geleerd hoe u een knooppunt in een bijgehouden Word
 
 #### Vraag: Hoe kan ik het bijhouden van revisies inschakelen in een Aspose.Words voor .NET-document?
 
-A: Om het bijhouden van revisies in een Aspose.Words voor .NET-document in te schakelen, kunt u de`StartTrackRevisions` werkwijze van de`Document` voorwerp. Deze methode neemt als parameters de naam van de auteur van de revisies en de startdatum van de opvolging van de revisies.
+ A: Om het bijhouden van revisies in een Aspose.Words voor .NET-document in te schakelen, kunt u de`StartTrackRevisions` werkwijze van de`Document` voorwerp. Deze methode neemt als parameters de naam van de auteur van de revisies en de startdatum van de opvolging van de revisies.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

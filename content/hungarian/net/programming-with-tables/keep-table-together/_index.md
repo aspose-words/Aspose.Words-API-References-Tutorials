@@ -75,4 +75,4 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan tarthatunk össze egy táblázatot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C#-kódot, megőrizheti a táblázat érintetlenségét, és megakadályozhatja, hogy a dokumentumokban több oldalra oszlana fel. Ezzel a funkcióval jobban szabályozhatja a dokumentumokban lévő táblázatok megjelenését és elrendezését.
+Ebben az oktatóanyagban megtanultuk, hogyan lehet összetartani egy táblázatot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C#-kódot, megőrizheti a táblázat érintetlenségét, és megakadályozhatja, hogy a dokumentumokban több oldalra oszlana fel. Ezzel a funkcióval jobban szabályozhatja a dokumentumokban lévő táblázatok megjelenését és elrendezését.

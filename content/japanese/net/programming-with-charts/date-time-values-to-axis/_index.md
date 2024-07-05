@@ -1,38 +1,38 @@
 ---
-title: チャートの軸に日時値を追加する
-linktitle: チャートの軸に日時値を追加する
+title: グラフの軸に日付と時刻の値を追加する
+linktitle: グラフの軸に日付と時刻の値を追加する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してグラフの軸に日時値を追加する方法を学びます。
+description: Aspose.Words for .NET を使用して、グラフの軸に日付と時刻の値を追加する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-charts/date-time-values-to-axis/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用してグラフの軸に日時値を追加する方法について説明します。
+このチュートリアルでは、Aspose.Words for .NET を使用してグラフの軸に日付と時刻の値を追加する方法について説明します。
 
 ## 前提条件
-このチュートリアルに従うには、以下が必要です。
+このチュートリアルを実行するには、次のものが必要です。
 
 - Aspose.Words for .NET ライブラリがインストールされています。
-- C# と Word ドキュメントを使用したワード処理の基本的な知識。
+- C# と Word 文書を使用した Words Processing に関する基本的な知識。
 
-## ステップ 1: ドキュメント ディレクトリを設定する
-まず、ドキュメント ディレクトリへのパスを設定します。交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントを保存するディレクトリへの実際のパスを指定します。
+## ステップ1: ドキュメントディレクトリを設定する
+まず、ドキュメントディレクトリへのパスを設定します。`"YOUR DOCUMENT DIRECTORY"`ドキュメントを保存するディレクトリへの実際のパスを入力します。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ 2: 新しいドキュメントと DocumentBuilder を作成する
-の新しいインスタンスを作成します。`Document`クラスと`DocumentBuilder`ドキュメントを操作するオブジェクト。
+## ステップ2: 新しいドキュメントとDocumentBuilderを作成する
+新しいインスタンスを作成する`Document`クラスと`DocumentBuilder`ドキュメントを操作するオブジェクト。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ 3: グラフ図形を挿入して構成する
-を使用してグラフ図形をドキュメントに挿入します。`InsertChart`の方法`DocumentBuilder`物体。必要なグラフの種類と寸法を設定します。
+## ステップ3: グラフ図形を挿入して構成する
+チャート図形をドキュメントに挿入するには、`InsertChart`方法の`DocumentBuilder`オブジェクト。希望するグラフの種類と寸法を設定します。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
@@ -40,8 +40,8 @@ Chart chart = shape.Chart;
 chart.Series.Clear();
 ```
 
-## ステップ 4: グラフにデータを追加する
-日時値を含むデータをグラフ シリーズに追加します。
+## ステップ4: グラフにデータを追加する
+日付と時刻の値を含むデータをグラフ シリーズに追加します。
 
 ```csharp
 chart.Series.Add("Aspose Series 1",
@@ -53,8 +53,8 @@ chart.Series.Add("Aspose Series 1",
 	new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
 ```
 
-## ステップ 5: 軸を構成する
-日付時刻値を表示するようにグラフの X 軸を構成します。
+## ステップ5: 軸を構成する
+グラフの X 軸を設定して、日付と時刻の値を表示します。
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
@@ -66,14 +66,14 @@ xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 ```
 
-## ステップ 6: ドキュメントを保存する
-を使用してドキュメントを指定されたディレクトリに保存します。`Save`方法。適切なファイル拡張子を付けて、目的のファイル名を指定します。この例では、ドキュメントを「WorkingWithCharts.DateTimeValuesToAxis.docx」として保存します。
+## ステップ6: ドキュメントを保存する
+指定されたディレクトリにドキュメントを保存するには、`Save`メソッド。適切なファイル拡張子を持つファイル名を指定します。この例では、ドキュメントを「WorkingWithCharts.DateTimeValuesToAxis.docx」として保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-### Aspose.Words for .NET を使用した Date Time Values To Axis のソース コード例 
+### Aspose.Words for .NET を使用して日付時刻値を軸に表示するサンプル ソース コード 
 
 ```csharp
 	//ドキュメントディレクトリへのパス
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 	ChartAxis xAxis = chart.AxisX;
 	xAxis.Scaling.Minimum = new AxisBound(new DateTime(2017, 11, 05).ToOADate());
 	xAxis.Scaling.Maximum = new AxisBound(new DateTime(2017, 12, 03).ToOADate());
-	//大単位を 1 週間に設定し、小単位を 1 日に設定します。
+	//主要単位を週、副次単位を日に設定します。
 	xAxis.MajorUnit = 7;
 	xAxis.MinorUnit = 1;
 	xAxis.MajorTickMark = AxisTickMark.Cross;
@@ -102,18 +102,18 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 	doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-このコード例では、新しい Word ドキュメントを作成し、X 軸に日時値を含む縦棒グラフを挿入し、ドキュメントを指定されたディレクトリに保存します。
+このサンプル コードは、新しい Word 文書を作成し、X 軸に日時値を含む縦棒グラフを挿入し、指定されたディレクトリに文書を保存します。
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用してグラフの軸に日時値を追加する方法を学習しました。ステップバイステップのガイドに従うことで、グラフを作成し、日付時刻値を系列に追加し、日付時刻値を正確に表示するように軸を構成できます。 Aspose.Words for .NET は、Word 文書内のグラフを使用したワード処理用の強力な機能セットを提供し、日付時刻値を使用してデータを効果的に表現および視覚化できるようにします。
+このチュートリアルでは、Aspose.Words for .NET を使用して、グラフの軸に日付時刻値を追加する方法を学習しました。ステップ バイ ステップ ガイドに従うことで、グラフを作成し、系列に日付時刻値を追加し、軸を構成して日付時刻値を正確に表示することができます。Aspose.Words for .NET は、Word 文書のグラフを使用した Words Processing の強力な機能セットを提供し、日付時刻値を使用してデータを効果的に表現および視覚化できるようにします。
 
 ### よくある質問
 
-#### Q1. Aspose.Words for .NET を使用してグラフの軸に日時値を追加できますか?
-はい、Aspose.Words for .NET を使用すると、Word ドキュメントのグラフの軸に日時値を追加して表示できます。 Aspose.Words は、軸上の日時値の処理など、さまざまな種類のグラフを操作し、外観をカスタマイズするための API と機能を提供します。
+#### Q1. Aspose.Words for .NET を使用して、グラフの軸に日付と時刻の値を追加できますか?
+はい、Aspose.Words for .NET を使用すると、Word 文書のグラフの軸に日時値を追加して表示できます。Aspose.Words は、軸上の日時値の処理など、さまざまな種類のグラフを操作して外観をカスタマイズするための API と機能を提供します。
 
-#### Q2.日付時刻値をグラフ シリーズに追加するにはどうすればよいですか?
-日付時刻の値をグラフ シリーズに追加するには、`Add`チャートの系列のメソッド。日時値の配列をカテゴリ (X 軸) データとして、対応する系列値とともに提供します。これにより、日付時刻値を含むデータ ポイントをグラフ上にプロットできます。
+#### Q2. チャート シリーズに日付時刻値を追加するにはどうすればよいですか?
+チャートシリーズに日付時刻値を追加するには、`Add`チャートのシリーズのメソッド。日付時刻値の配列をカテゴリ (X 軸) データとして、対応するシリーズ値とともに提供します。これにより、日付時刻値を持つデータ ポイントをチャートにプロットできます。
 
-#### Q3.日付時刻値を表示するように軸を構成するにはどうすればよいですか?
-適切なプロパティを設定することで、日付時刻値を表示するようにグラフの軸を構成できます。たとえば、次のコマンドを使用して軸の最小値と最大値を指定できます。`Scaling.Minimum`そして`Scaling.Maximum`それぞれのプロパティ。さらに、主単位と副単位を設定して、軸の間隔と目盛りを定義できます。
+#### Q3. 日付と時刻の値を表示するように軸を構成するにはどうすればよいですか?
+適切なプロパティを設定することで、グラフの軸に日付と時刻の値を表示するように設定できます。たとえば、軸の最小値と最大値を指定するには、`Scaling.Minimum`そして`Scaling.Maximum`プロパティをそれぞれ設定します。さらに、主単位と副単位を設定して、軸の間隔と目盛りを定義することもできます。

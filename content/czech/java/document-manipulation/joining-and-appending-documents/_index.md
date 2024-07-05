@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Připojit s Převody čísel stránek
+### Připojit s převodem čísla stránky
 
 ```java
 Document srcDoc = new Document("source.docx");

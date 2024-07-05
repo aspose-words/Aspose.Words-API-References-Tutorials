@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### P: ¿Cómo comprobar si un párrafo se ha movido (eliminado) en Aspose.Words para .NET?
 
- R: Utilice un párrafo`IsMoveFromRevision` propiedad para comprobar si se ha movido (eliminado).
+ R: Utilice un párrafo`IsMoveFromRevision`propiedad para comprobar si se ha movido (eliminado).
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### P: ¿Cómo comprobar si un párrafo se ha movido (insertado) en Aspose.Words para .NET?
 
- R: Utilice un párrafo`IsMoveToRevision`propiedad para comprobar si ha sido movida (insertada).
+ R: Utilice un párrafo`IsMoveToRevision` propiedad para comprobar si ha sido movida (insertada).
 
 ```csharp
 if (paragraph.IsMoveToRevision)

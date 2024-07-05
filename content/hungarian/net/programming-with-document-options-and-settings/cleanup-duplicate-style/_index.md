@@ -66,7 +66,7 @@ Ez az utasítás a tisztítás után fennmaradó stílusok számát jeleníti me
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
-	// A stílusok száma a tisztítás előtt.
+	// Stílusok száma a tisztítás előtt.
 	Console.WriteLine(doc.Styles.Count);
 
 	// Megtisztítja az ismétlődő stílusokat a dokumentumból.

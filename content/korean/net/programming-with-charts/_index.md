@@ -24,7 +24,7 @@ url: /ko/net/programming-with-charts/
 | [거품형 차트 삽입](./insert-bubble-chart/) | Aspose.Words for .NET을 사용하여 문서에 거품형 차트를 삽입하는 방법을 알아보세요. X, Y 및 거품 크기 값을 사용하여 계열 데이터를 추가합니다. |
 | [분산형 차트 삽입](./insert-scatter-chart/) | Aspose.Words for .NET을 사용하여 문서에 분산형 차트를 삽입하는 방법을 알아보세요. X 및 Y 좌표를 사용하여 계열 데이터를 추가합니다. |
 | [XYAxis 속성 정의](./define-xyaxis-properties/) | .NET용 Aspose.Words를 사용하여 차트에서 XY 축 속성을 정의하는 방법을 알아보세요. X 및 Y축에 대한 사용자 정의 옵션이 설명됩니다. |
-| [날짜 시간 값을 축으로](./date-time-values-to-axis/) | Aspose.Words for .NET을 사용하여 차트 축에 날짜 시간 값을 추가하는 방법을 알아보세요. |
+| [날짜 시간 값을 축으로](./date-time-values-to-axis/) | .NET용 Aspose.Words를 사용하여 차트 축에 날짜 시간 값을 추가하는 방법을 알아보세요. |
 | [축의 숫자 형식](./number-format-for-axis/) | .NET용 Aspose.Words를 사용하여 차트 축의 숫자 형식을 설정하는 방법을 알아보세요. |
 | [축의 경계](./bounds-of-axis/) | 축에 표시되는 값의 범위를 제어하는 .NET용 Aspose.Words를 사용하여 차트에서 축의 경계를 설정하는 방법을 알아보세요. |
 | [축의 라벨 사이의 간격 단위](./interval-unit-between-labels-on-axis/) | Aspose.Words for .NET을 사용하여 차트 축의 레이블 사이 간격 단위를 설정하는 방법을 알아보세요. |

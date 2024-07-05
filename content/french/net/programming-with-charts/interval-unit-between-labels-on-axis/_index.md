@@ -17,7 +17,7 @@ Assurez-vous que vous disposez des conditions préalables suivantes :
 - Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de document où le document de sortie sera enregistré.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique.
+## Étape 2 : Créez un nouveau document et insérez un graphique
 
  Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
 
@@ -94,7 +94,7 @@ Avec Aspose.Words pour .NET, vous avez la possibilité de personnaliser divers a
 ### FAQ
 
 #### T1. Que sont les étiquettes des axes dans un graphique ?
-Les étiquettes d'axe dans un graphique font référence à la représentation textuelle des valeurs le long de l'axe horizontal (axe X) ou vertical (axe Y) du graphique. Ces étiquettes aident à identifier et à interpréter les points de données tracés sur le graphique. Les étiquettes des axes fournissent du contexte et permettent aux utilisateurs de comprendre l'échelle et la plage de valeurs dans le graphique.
+Les étiquettes d’axe dans un graphique font référence à la représentation textuelle des valeurs le long de l’axe horizontal (axe X) ou vertical (axe Y) du graphique. Ces étiquettes aident à identifier et à interpréter les points de données tracés sur le graphique. Les étiquettes des axes fournissent un contexte et permettent aux utilisateurs de comprendre l'échelle et la plage de valeurs dans le graphique.
 
 #### Q2. Comment puis-je personnaliser l'espacement entre les étiquettes des axes ?
  Pour personnaliser l'espacement entre les étiquettes des axes dans un graphique à l'aide d'Aspose.Words for .NET, vous pouvez accéder au`AxisX` ou`AxisY` propriété du graphique et modifier la`TickLabelSpacing` propriété. En définissant le`TickLabelSpacing` à une valeur spécifique, vous pouvez contrôler l'unité d'intervalle entre les étiquettes sur l'axe respectif, en ajustant l'espacement en fonction de vos besoins.

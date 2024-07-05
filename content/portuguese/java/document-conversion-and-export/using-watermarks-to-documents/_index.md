@@ -1,6 +1,6 @@
 ---
 title: Usando marcas d’água em documentos em Aspose.Words para Java
-linktitle: Usando marcas d’água em documentos
+linktitle: Usando marcas d'água em documentos
 second_title: API de processamento de documentos Java Aspose.Words
 description: Aprenda como adicionar marcas d'água a documentos em Aspose.Words for Java. Personalize marcas d'água de texto e imagem para obter documentos com aparência profissional.
 type: docs
@@ -20,7 +20,7 @@ Antes de começarmos a adicionar marcas d’água aos documentos, precisamos con
 2. Adicione a biblioteca Aspose.Words for Java ao seu projeto Java.
 3. Importe as classes necessárias em seu código Java.
 
-Agora que configuramos a biblioteca, vamos adicionar marcas d’água.
+Agora que configuramos a biblioteca, vamos adicionar marcas d'água.
 
 ## Adicionando marcas d'água de texto
 
@@ -64,14 +64,14 @@ watermark.setHeight(100.0);
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.CENTER);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.CENTER);
 
-// Adicione a marca d'água ao documento
+// Adicione a marca d’água ao documento
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
 // Salve o documento com a marca d’água
 doc.save("DocumentWithImageWatermark.docx");
 ```
 
-## Personalizando marcas d'água
+## Personalizando marcas d’água
 
 Você pode personalizar marcas d'água ajustando sua aparência e posição. Para marcas d'água de texto, você pode alterar a fonte, o tamanho, a cor e o layout. Para marcas d'água de imagens, você pode modificar seu tamanho e posição conforme demonstrado nos exemplos anteriores.
 
@@ -103,7 +103,7 @@ Neste tutorial, aprendemos como adicionar marcas d'água a documentos usando Asp
 
 ## Perguntas frequentes
 
-### Como posso alterar a fonte de uma marca d’água de texto?
+### Como posso alterar a fonte de uma marca d'água de texto?
 
  Para alterar a fonte de uma marca d'água de texto, modifique o`setFontFamily` propriedade no`TextWatermarkOptions`. Por exemplo:
 

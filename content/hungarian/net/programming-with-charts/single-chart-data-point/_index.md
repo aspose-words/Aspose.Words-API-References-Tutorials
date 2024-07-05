@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 

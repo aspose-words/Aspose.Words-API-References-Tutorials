@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Steg 3: Skaffa formsamlingen och leta efter ändringar.
+## Steg 3: Skaffa formsamlingen och leta efter ändringar
 
 Vi hämtar samlingen av former från dokumentet och kontrollerar de ändringar som är kopplade till varje form.
 

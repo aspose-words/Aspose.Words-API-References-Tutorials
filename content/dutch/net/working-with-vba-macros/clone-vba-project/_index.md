@@ -32,7 +32,7 @@ Vervolgens laden we het Word-brondocument, dat het VBA-project bevat dat we will
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## Stap 3: Maak een nieuw document met het gekloonde VBA-project.
+## Stap 3: Maak een nieuw document met het gekloonde VBA-project
 We zullen een nieuw document maken met een leeg VBA-project en het VBA-project uit het brondocument klonen.
 
 ```csharp
@@ -74,7 +74,7 @@ A: Het dupliceren van een VBA-project bestaat uit het kopiëren van alle VBA-cod
 A: Voordat u een VBA-project uit een Word-document kunt klonen, moet u over praktische kennis van de programmeertaal C# beschikken. U moet ook de Aspose.Words voor .NET-bibliotheek in uw project installeren. U hebt ook een Word-document nodig met daarin een VBA-project dat u wilt klonen.
 
 #### Vraag: Hoe kan ik de documentmap in de code instellen?
- A: In de verstrekte code moet u vervangen.`"YOUR DOCUMENTS DIRECTORY"` met het juiste pad naar de map waar uw Word-document met het VBA-project zich bevindt.
+ A: In de verstrekte code moet u vervangen`"YOUR DOCUMENTS DIRECTORY"` met het juiste pad naar de map waar uw Word-document met het VBA-project zich bevindt.
 
 #### Vraag: Hoe kan ik het bestemmingsdocument opslaan met een gekloond VBA-project?
 

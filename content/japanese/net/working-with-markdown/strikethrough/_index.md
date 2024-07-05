@@ -2,16 +2,16 @@
 title: 取り消し線
 linktitle: 取り消し線
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET のステップバイステップ ガイドで取り消し線テキスト スタイルを適用する方法を学びます。
+description: Aspose.Words for .NET を使用して取り消し線テキスト スタイルを適用する方法をステップ バイ ステップ ガイドで学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/strikethrough/
 ---
 
 
-この例では、Aspose.Words for .NET を使用して取り消し線のテキスト スタイルを適用する方法を説明します。取り消し線のテキストは、テキストが削除されたか、無効になったことを示すために使用されます。
+この例では、Aspose.Words for .NET を使用して取り消し線テキスト スタイルを適用する方法について説明します。取り消し線テキストは、テキストが削除されたか、無効になったことを示すために使用されます。
 
-## ステップ 1: ドキュメント ジェネレーターを使用する
+## ステップ1: ドキュメントジェネレーターの使用
 
 まず、ドキュメント ジェネレーターを使用してドキュメントにコンテンツを追加します。
 
@@ -19,24 +19,24 @@ url: /ja/net/working-with-markdown/strikethrough/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## ステップ 2: 取り消し線のテキスト スタイルを適用する
+## ステップ2: 取り消し線テキストスタイルを適用する
 
-を設定することで取り消し線のテキスト スタイルを有効にします。`StrikeThrough`の財産`Font`に反対する`true`.
+取り消し線テキストスタイルを有効にするには、`StrikeThrough`の財産`Font`反対する`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
 ```
 
-## ステップ 3: 取り消し線テキストを追加する
+## ステップ3: 取り消し線テキストを追加する
 
-ドキュメントジェネレーターを使用して取り消し線テキストを追加できるようになりました。`Writeln`方法。
+ドキュメントジェネレーターの`Writeln`方法。
 
 ```csharp
 builder.Writeln("This text will be StrikeThrough");
 ```
 
 
-### Aspose.Words for .NET を使用した取り消し線テキストのソース コードの例
+### Aspose.Words for .NET を使用した取り消し線テキストのサンプル ソース コード
 
 ```csharp
 //ドキュメント ビルダーを使用してドキュメントにコンテンツを追加します。
@@ -47,18 +47,18 @@ builder.Font.StrikeThrough = true;
 builder.Writeln("This text will be StrikeThrough");
 ```
 
-おめでとうございます！ Aspose.Words for .NET を使用して取り消し線のテキスト スタイルを適用する方法を学習しました。
+おめでとうございます！これで、Aspose.Words for .NET を使用して取り消し線テキスト スタイルを適用する方法を学習しました。
 
 ### よくある質問
 
-#### Q: Aspose.Words に取り消し線テキストを追加するにはどうすればよいですか?
+#### Q: Aspose.Words で取り消し線テキストを追加するにはどうすればよいですか?
 
- A: Aspose.Words に取り消し線テキストを追加するには、`Font.StrikeThrough`の財産`Run`物体。このプロパティを次のように設定できます`true`特定のテキストに取り消し線のテキストを追加します。たとえば、次のように使用できます`run.Font.StrikeThrough=true`に取り消し線のテキストを追加するには、`Run`物体。
+ A: Aspose.Wordsで取り消し線テキストを追加するには、`Font.StrikeThrough`の財産`Run`オブジェクト。このプロパティは次のように設定できます。`true`特定のテキストに取り消し線を追加するには、例えば`run.Font.StrikeThrough=true`取り消し線テキストを追加するには`Run`物体。
 
-#### Q: 同じ段落内の複数のテキストに取り消し線を追加することはできますか?
+#### Q: 同じ段落内の複数のテキストに取り消し線テキストを追加することは可能ですか?
 
- A: はい、複数を使用することで、単一段落内のテキストの複数の部分に取り消し線テキストを追加できます。`Run`オブジェクト。複数作成できます`Run`オブジェクトを設定し、`Font.StrikeThrough`財産を`true`オブジェクトごとに、必要なテキスト部分に取り消し線のテキストを追加します。次に、を使用してそれらを段落に追加できます。`Paragraph.AppendChild(run)`方法。
+ A: はい、複数のツールを使って、1つの段落内の複数のテキスト部分に取り消し線を追加できます。`Run`オブジェクトを複数作成できます`Run`オブジェクトを設定し、`Font.StrikeThrough`財産に`true`各オブジェクトに対して、取り消し線テキストを任意のテキスト部分に追加します。その後、`Paragraph.AppendChild(run)`方法。
 
-#### Q: Aspose.Words のテーブルまたはセル内のテキストに取り消し線のテキストを追加できますか?
+#### Q: Aspose.Words の表またはセル内のテキストに取り消し線テキストを追加できますか?
 
- A: はい、Aspose.Words のテーブルまたはセル内のテキストに取り消し線のテキストを追加できます。適切な方法を使用して目的のセルまたは段落にジャンプし、次に、取り消し線のテキスト書式設定を適用できます。`Font.StrikeThrough`の財産`Run`または`Paragraph`物体。
+ A: はい、Aspose.Wordsの表やセル内のテキストに取り消し線を追加できます。適切な方法を使用して目的のセルまたは段落にジャンプし、`Font.StrikeThrough`の財産`Run`または`Paragraph`物体。

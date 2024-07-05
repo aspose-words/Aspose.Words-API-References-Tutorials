@@ -72,7 +72,7 @@ Ce didacticiel vous a fourni un guide étape par étape sur la façon de détect
 
 #### Comment préciser le répertoire contenant les documents dans lesquels rechercher la signature numérique ?
 
- Pour préciser le répertoire contenant les documents dans lesquels vous souhaitez rechercher la signature numérique, vous devez modifier le`dataDir` variables dans le code. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
+ Pour préciser le répertoire contenant les documents dans lesquels vous souhaitez rechercher la signature numérique, vous devez modifier le`dataDir` variable dans le code. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

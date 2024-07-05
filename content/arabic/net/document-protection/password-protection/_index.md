@@ -75,7 +75,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 #### س: ما هو الغرض من معلمة ProtectionType في أسلوب الحماية؟
 
- ج: ال`ProtectionType` المعلمات في`Protect` تسمح لك طريقة Aspose.Words for .NET بتحديد نوع الحماية المطلوب تطبيقها على المستند. في حالة حماية كلمة المرور، يمكنك تعيين`ProtectionType` ل`NoProtection` للإشارة إلى أن المستند محمي بكلمة مرور.
+ ج: ال`ProtectionType` المعلمة في`Protect` تسمح لك طريقة Aspose.Words for .NET بتحديد نوع الحماية المطلوب تطبيقها على المستند. في حالة حماية كلمة المرور، يمكنك تعيين`ProtectionType` ل`NoProtection` للإشارة إلى أن المستند محمي بكلمة مرور.
 
 #### س: هل يمكنني إزالة الحماية بكلمة مرور من مستند Word باستخدام Aspose.Words لـ .NET؟
 

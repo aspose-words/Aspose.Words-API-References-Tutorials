@@ -11,7 +11,7 @@ Az Aspose.Words for Python oktatóanyagok sorát kínálja, amelyek feljogosítj
 
 ## Python Document API a zökkenőmentes dokumentumkezeléshez
 
-Fedezze fel a Python Document API erejét az Aspose.Words oktatóanyagok segítségével. A fejlesztők megtanulják a Word-dokumentumok programozott létrehozását, módosítását és kezelését. Az API lehetővé teszi a formázási, tartalombeillesztési és dokumentumegyesítési, adatfolyam-kezelési feladatok testreszabását.
+Fedezze fel a Python Document API erejét az Aspose.Words oktatóanyagok segítségével. A fejlesztők megtanulják a Word-dokumentumok programozott létrehozását, módosítását és kezelését. Az API lehetővé teszi a formázás, a tartalombeillesztés és a dokumentumok egyesítésének testreszabását, és egyszerűsíti a dokumentumkezelési feladatokat.
 
 ## Automatizálja a dokumentumfeldolgozást Python segítségével
 

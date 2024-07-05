@@ -77,7 +77,7 @@ Console.WriteLine(table.Rows[2].Cells[3].GetText().Trim());
 
 ## Phần kết luận
 
-Chúc mừng! Bạn vừa học cách di chuyển đến một ô bảng cụ thể trong tài liệu Word bằng Aspose.Words for .NET. Thư viện mạnh mẽ này giúp đơn giản hóa thao tác tài liệu, giúp công việc mã hóa của bạn hiệu quả và thú vị hơn. Cho dù bạn đang làm việc trên các báo cáo phức tạp hay sửa đổi tài liệu đơn giản, Aspose.Words đều cung cấp các công cụ bạn cần.
+Chúc mừng! Bạn vừa học cách di chuyển đến một ô bảng cụ thể trong tài liệu Word bằng Aspose.Words for .NET. Thư viện mạnh mẽ này giúp đơn giản hóa thao tác tài liệu, giúp công việc mã hóa của bạn trở nên hiệu quả và thú vị hơn. Cho dù bạn đang làm việc trên các báo cáo phức tạp hay sửa đổi tài liệu đơn giản, Aspose.Words đều cung cấp các công cụ bạn cần.
 
 ## Câu hỏi thường gặp
 

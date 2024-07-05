@@ -79,7 +79,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 
 ## 결론
 
- 그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에 TC 필드를 삽입하는 방법을 살펴보았습니다. 꽤 간단하죠? 이러한 기술을 사용하면 이제 전문가처럼 Word 문서를 자동화하고 사용자 지정할 수 있습니다. 궁금한 점이 있거나 문제가 발생하면 주저하지 말고[Aspose.Words 문서](https://reference.aspose.com/words/net/) 아니면 그들에게 다가가거나[지원 포럼](https://forum.aspose.com/c/words/8). 즐거운 코딩하세요!
+ 그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에 TC 필드를 삽입하는 방법을 살펴보았습니다. 꽤 간단하죠? 이러한 기술을 사용하면 이제 전문가처럼 Word 문서를 자동화하고 사용자 지정할 수 있습니다. 궁금한 점이 있거나 문제가 발생하면 주저하지 말고[Aspose.Words 문서](https://reference.aspose.com/words/net/) 또는 그 사람에게 연락하세요.[지원 포럼](https://forum.aspose.com/c/words/8). 즐거운 코딩하세요!
 
 ## FAQ
 

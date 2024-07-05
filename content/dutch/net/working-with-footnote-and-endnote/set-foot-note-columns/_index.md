@@ -57,7 +57,7 @@ U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw spec
 
 #### Vraag: Hoe kan ik het aantal kolommen voor voetnoten in Aspose.Words configureren?
 
- A: Om het aantal kolommen voor voetnoten in Aspose.Words te configureren, moet u de`FootnoteOptions` klasse en de`ColumnsCount` eigendom. U kunt deze eigenschap instellen op elk gewenst aantal kolommen.
+A: Om het aantal kolommen voor voetnoten in Aspose.Words te configureren, moet u de`FootnoteOptions` klasse en de`ColumnsCount` eigendom. U kunt deze eigenschap instellen op elk gewenst aantal kolommen.
 
 #### Vraag: Wat zijn de voordelen van het instellen van voetnootkolommen?
 

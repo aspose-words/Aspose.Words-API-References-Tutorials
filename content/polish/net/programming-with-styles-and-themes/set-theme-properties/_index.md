@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- Na tym etapie uzyskujemy dostęp do`Theme` obiekt`Document`obiekt, aby uzyskać motyw dokumentu. Następnie możemy modyfikować właściwości motywu, takie jak czcionki dodatkowe (`MinorFonts.Latin`) i kolory (`Colors.Hyperlink`).
+ Na tym etapie uzyskujemy dostęp do`Theme` przedmiot`Document`obiekt, aby uzyskać motyw dokumentu. Następnie możemy modyfikować właściwości motywu, takie jak czcionki dodatkowe (`MinorFonts.Latin`) i kolory (`Colors.Hyperlink`).
 
 ## Krok 4: Zapisz dokument
 
@@ -67,7 +67,7 @@ Aby skonfigurować środowisko, musisz upewnić się, że masz zainstalowane i s
 
 #### Jak uzyskać dostęp do właściwości motywu i je modyfikować?
 
- Aby uzyskać dostęp do właściwości motywu i je modyfikować, możesz użyć opcji`Theme` obiekt`Document` klasa. Uzyskując dostęp do`Theme` obiektu, możesz modyfikować właściwości, takie jak czcionki dodatkowe (`MinorFonts.Latin`) i kolory (`Colors.Hyperlink`). Przypisz żądane wartości do tych właściwości, aby dostosować motyw swojego dokumentu.
+ Aby uzyskać dostęp do właściwości motywu i je modyfikować, możesz użyć opcji`Theme` przedmiot`Document` klasa. Uzyskując dostęp do`Theme` obiektu, możesz modyfikować właściwości, takie jak czcionki dodatkowe (`MinorFonts.Latin`) i kolory (`Colors.Hyperlink`). Przypisz żądane wartości do tych właściwości, aby dostosować motyw dokumentu.
 
 #### Jakie są zalety ustawiania właściwości motywu w dokumencie programu Word?
 

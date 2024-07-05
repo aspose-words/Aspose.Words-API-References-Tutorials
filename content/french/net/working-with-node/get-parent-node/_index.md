@@ -66,7 +66,7 @@ R : Pour obtenir le nœud parent d'un nœud spécifique, vous pouvez utiliser l
 
 #### Q : Comment vérifier si un nœud a un nœud parent ?
 
- R : Pour vérifier si un nœud a un nœud parent, vous pouvez simplement vérifier si le`parentNode` la propriété du nœud est définie. S'il est défini, cela signifie que le nœud a un nœud parent.
+ R : Pour vérifier si un nœud a un nœud parent, vous pouvez simplement vérifier si le`parentNode` La propriété du nœud est définie. S'il est défini, cela signifie que le nœud a un nœud parent.
 
 #### Q : Pouvons-nous changer le nœud parent d’un nœud ?
 

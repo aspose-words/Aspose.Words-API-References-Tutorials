@@ -78,7 +78,7 @@ public void formFieldsGetByName() throws Exception {
 kunt het uiterlijk van formuliervelden aanpassen, zoals de lettergrootte en kleur, om uw documenten visueel aantrekkelijker en gebruiksvriendelijker te maken.
 
 ## 9. Conclusie
- Aspose.Words voor Java vereenvoudigt het werken met formuliervelden in Word-documenten, waardoor het eenvoudiger wordt om interactieve en dynamische documenten voor uw toepassingen te maken. Ontdek de uitgebreide documentatie op[Aspose.Words API-documentatie](https://reference.aspose.com/words/java/) om meer functies en mogelijkheden te ontdekken.
+ Aspose.Words voor Java vereenvoudigt het werken met formuliervelden in Word-documenten, waardoor het gemakkelijker wordt om interactieve en dynamische documenten voor uw toepassingen te maken. Ontdek de uitgebreide documentatie op[Aspose.Words API-documentatie](https://reference.aspose.com/words/java/) om meer functies en mogelijkheden te ontdekken.
 
 ## Veelgestelde vragen (FAQ's)
 
@@ -92,7 +92,7 @@ kunt het uiterlijk van formuliervelden aanpassen, zoals de lettergrootte en kleu
    U kunt de weergave van formuliervelden aanpassen door de lettergrootte, kleur en andere opmaakopties aan te passen.
 
 4. ### Is er een gratis proefversie beschikbaar voor Aspose.Words voor Java?
-    Ja, u krijgt toegang tot een gratis proefversie van Aspose.Words voor Java.[hier](https://releases.aspose.com/).
+    Ja, u krijgt toegang tot een gratis proefversie van Aspose.Words voor Java[hier](https://releases.aspose.com/).
 
 5. ### Waar kan ik ondersteuning krijgen voor Aspose.Words voor Java?
     Voor ondersteuning en hulp kunt u terecht op de[Aspose.Words-forum](https://forum.aspose.com/).

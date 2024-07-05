@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
-這`Resolution`屬性指定影像的目標解析度和`ResolutionThreshold`此屬性指定最小分辨率，低於該分辨率影像將不會按比例縮小。
+這`Resolution`屬性指定影像的目標解析度和`ResolutionThreshold`屬性指定最小分辨率，低於該分辨率影像將不會按比例縮小。
 
 ## 步驟 3：將文件轉換為 PDF
 
@@ -83,13 +83,13 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 
 透過建立一個實例來配置另存為 PDF 選項`PdfSaveOptions`類別並使用設定影像取樣選項`DownsampleOptions`財產。您可以使用以下命令指定影像的目標分辨率`Resolution`屬性並設定最小解析度閾值，超過該閾值影像將不會使用`ResolutionThreshold`財產。
 
-使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`類別指定路徑和儲存選項。
+使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`指定路徑和儲存選項的類別。
 
 #### Q：透過影像採樣減小 PDF 文件大小有什麼好處？
 答：透過影像採樣減小 PDF 文件大小的好處是：
 
 減少 PDF 文件大小：影像採樣會降低 PDF 文件中影像的分辨率，從而顯著減少 PDF 文件大小。這使得共享和傳輸文件變得容易，尤其是透過電子郵件或線上。
 
-最佳化儲存空間：減少 PDF 檔案的大小有助於優化儲存空間的使用，特別是當您有許多包含高解析度影像的 PDF 檔案時。
+優化儲存空間：縮小 PDF 檔案的大小有助於優化儲存空間的使用，尤其是當您有許多包含高解析度影像的 PDF 檔案時。
 
 效能改進：較小的 PDF 檔案載入速度更快，並且可以在不同裝置上更快地開啟和檢視。

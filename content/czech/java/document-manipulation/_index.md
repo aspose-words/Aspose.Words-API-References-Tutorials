@@ -65,9 +65,9 @@ Přečtěte si, jak odstranit obsah z dokumentů aplikace Word v jazyce Java pom
 ### [Použití záložek v Aspose.Words pro Java](./using-bookmarks/)
 Optimalizujte zpracování dokumentů pomocí Aspose.Words for Java. Naučte se používat záložky pro efektivní navigaci a manipulaci s obsahem v tomto podrobném průvodci.
 ### [Použití rozsahů dokumentů v Aspose.Words pro Java](./using-document-ranges/)
-Manipulace s rozsahem hlavního dokumentu v Aspose.Words pro Javu. Naučte se mazat, extrahovat a formátovat text pomocí tohoto komplexního průvodce.
-### [Použití značek strukturovaného dokumentu (SDT) v Aspose.Words pro Javu](./using-structured-document-tags/)
-Naučte se, jak používat Structured Document Tags (SDT) v Aspose.Words for Java, pomocí tohoto komplexního průvodce. Vytvářejte, upravujte a spojujte SDT s vlastními daty XML.
+Manipulace s rozsahem hlavního dokumentu v Aspose.Words for Java. Naučte se mazat, extrahovat a formátovat text pomocí tohoto komplexního průvodce.
+### [Používání značek strukturovaného dokumentu (SDT) v Aspose.Words pro Javu](./using-structured-document-tags/)
+Naučte se, jak používat Structured Document Tags (SDT) v Aspose.Words pro Java s tímto komplexním průvodcem. Vytvářejte, upravujte a spojujte SDT s vlastními daty XML.
 ### [Použití stylů a motivů v Aspose.Words pro Java](./using-styles-and-themes/)
 Naučte se, jak vylepšit formátování dokumentů pomocí Aspose.Words for Java. Prozkoumejte styly, motivy a další v této komplexní příručce s příklady zdrojového kódu.
 ### [Generování obsahu v Aspose.Words pro Javu](./generating-table-of-contents/)

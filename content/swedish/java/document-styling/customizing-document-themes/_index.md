@@ -120,6 +120,6 @@ Aspose.Words för Java tillhandahåller en uppsättning fördefinierade teman so
 
 ## Slutsats
 
-Anpassning av dokumentteman med Aspose.Words för Java ger dig möjlighet att skapa visuellt tilltalande och konsekventa dokument i dina Java-applikationer. I den här guiden har vi täckt det väsentliga med temaanpassning, inklusive att ändra färger och teckensnitt. Genom att följa de medföljande exemplen och bästa praxis kan du bemästra konsten att anpassa dokumentteman.
+Anpassa dokumentteman med Aspose.Words för Java ger dig möjlighet att skapa visuellt tilltalande och konsekventa dokument i dina Java-applikationer. I den här guiden har vi täckt det väsentliga med temaanpassning, inklusive att ändra färger och teckensnitt. Genom att följa de medföljande exemplen och bästa praxis kan du bemästra konsten att anpassa dokumentteman.
 
 Nu när du har kunskapen och koden till ditt förfogande, gå vidare och förbättra dina Java-dokumentbehandlingsmöjligheter med Aspose.Words. Skapa fantastiska dokument som sticker ut och imponerar på dina användare.

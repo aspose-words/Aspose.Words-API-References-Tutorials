@@ -17,7 +17,7 @@ url: /zh-hant/net/programming-with-charts/insert-column-chart/
 - 已安裝 Aspose.Words for .NET 程式庫。您可以使用 NuGet 套件管理員下載並安裝它。
 - 將儲存輸出文檔的文檔目錄路徑。
 
-## 步驟2：建立一個新文件並插入圖表。
+## 步驟 2：建立一個新文件並插入圖表
 
 創建一個新的`Document`物件和一個`DocumentBuilder`建置文檔。
 

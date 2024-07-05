@@ -126,7 +126,7 @@ Genom att följa dessa steg kan du effektivt hantera PDF-renderingsvarningar i A
 
 ### F1: Kan jag hantera andra typer av varningar med den här metoden?
 
- Ja den`IWarningCallback` Gränssnittet kan hantera olika typer av varningar, inte bara de som är relaterade till PDF-rendering.
+ Ja den`IWarningCallback` gränssnitt kan hantera olika typer av varningar, inte bara de som är relaterade till PDF-rendering.
 
 ### F2: Var kan jag ladda ner en gratis testversion av Aspose.Words för .NET?
 

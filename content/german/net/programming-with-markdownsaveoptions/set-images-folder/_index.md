@@ -1,23 +1,23 @@
 ---
-title: Legen Sie den Bilderordner fest
-linktitle: Legen Sie den Bilderordner fest
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie den Bilderordner beim Exportieren nach Markdown mit Aspose.Words für .NET festlegen. Passen Sie die Platzierung von Bildern für eine bessere Organisation und Integration an.
+title: Bilderordner festlegen
+linktitle: Bilderordner festlegen
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie den Bilderordner beim Exportieren nach Markdown mit Aspose.Words für .NET festlegen. Passen Sie die Platzierung der Bilder für eine bessere Organisation und Integration an.
 type: docs
 weight: 10
 url: /de/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
 
-Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der dabei hilft, den Bildordner für Markdown-Exportoptionen mithilfe der Aspose.Words-Bibliothek für .NET festzulegen. Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in Ihr Projekt eingebunden haben, bevor Sie diesen Code verwenden.
+Hier ist eine Schritt-für-Schritt-Anleitung zur Erklärung des folgenden C#-Quellcodes, der dabei hilft, den Bilderordner für Markdown-Exportoptionen mithilfe der Aspose.Words-Bibliothek für .NET einzurichten. Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in Ihr Projekt aufgenommen haben, bevor Sie diesen Code verwenden.
 
-## Schritt 1: Legen Sie den Pfad zum Dokumentverzeichnis fest
+## Schritt 1: Dokumentverzeichnispfad festlegen
 
 ```csharp
-// Der Pfad zum Dokumentenverzeichnis.
+// Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-Stellen Sie sicher, dass Sie den korrekten Pfad zu Ihrem Dokumentenverzeichnis angeben, in dem sich das Dokument mit den Bildern befindet.
+Geben Sie unbedingt den richtigen Pfad zu Ihrem Dokumentverzeichnis an, in dem sich das Dokument mit den Bildern befindet.
 
 ## Schritt 2: Laden Sie das Dokument mit den Bildern
 
@@ -25,29 +25,29 @@ Stellen Sie sicher, dass Sie den korrekten Pfad zu Ihrem Dokumentenverzeichnis a
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-Wir laden das angegebene Dokument, das die Bilder enthält, die wir exportieren möchten, mit Markdown-Optionen.
+Wir laden das angegebene Dokument, das die Bilder enthält, die wir mit Markdown-Optionen exportieren möchten.
 
-## Schritt 3: Legen Sie den Bilderordner für Markdown-Exportoptionen fest
+## Schritt 3: Bilderordner für Markdown-Exportoptionen festlegen
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
 ```
 
- Wir erstellen eine Instanz von`MarkdownSaveOptions` und legen Sie den Pfad zum Bilderordner mit fest`ImagesFolder` Eigentum. Stellen Sie sicher, dass Sie den richtigen Pfad zu dem Ordner angeben, in dem Sie die exportierten Bilder speichern möchten.
+ Wir erstellen eine Instanz von`MarkdownSaveOptions` und legen Sie den Pfad zum Bilderordner mit dem`ImagesFolder` Eigenschaft. Stellen Sie sicher, dass Sie den richtigen Pfad zu dem Ordner angeben, in dem Sie die exportierten Bilder speichern möchten.
 
-## Schritt 4: Speichern Sie das Dokument mit den Markdown-Exportoptionen
+## Schritt 4: Speichern Sie das Dokument mit Markdown-Exportoptionen
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())
      doc. Save(stream, saveOptions);
 ```
 
-Wir speichern das Dokument mithilfe der angegebenen Markdown-Exportoptionen in einem Speicherstream. Anschließend können Sie den Flow verwenden, um andere Vorgänge auszuführen, beispielsweise das Speichern von Markdown-Inhalten in einer Datei.
+Wir speichern das Dokument in einem Speicherstream unter Verwendung der angegebenen Markdown-Exportoptionen. Anschließend können Sie den Flow verwenden, um andere Vorgänge auszuführen, z. B. das Speichern von Markdown-Inhalten in einer Datei.
 
-### Beispielquellcode zum Festlegen des Bildordners für MarkdownSaveOptions mit Aspose.Words für .NET
+### Beispielquellcode zum Festlegen des Bilderordners für MarkdownSaveOptions mit Aspose.Words für .NET
 
 ```csharp
-// Der Pfad zum Dokumentenverzeichnis.
+// Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 Document doc = new Document(dataDir + "Image bullet points.docx");
@@ -58,4 +58,4 @@ using (MemoryStream stream = new MemoryStream())
      doc. Save(stream, saveOptions);
 ```
 
-Dieser Quellcode zeigt, wie Sie ein Dokument laden, das Bilder enthält, und dann den Bilderordner für Markdown-Exportoptionen festlegen. Unter Verwendung der angegebenen Optionen wird das Dokument dann in einem Speicherstream gespeichert. Dadurch können Sie den Speicherort des Bilderordners beim Exportieren von Markdown-Inhalten anpassen.
+Dieser Quellcode zeigt, wie Sie ein Dokument laden, das Bilder enthält, und dann den Bilderordner für Markdown-Exportoptionen festlegen. Mit den angegebenen Optionen wird das Dokument dann in einem Speicherstream gespeichert. Auf diese Weise können Sie den Speicherort des Bilderordners beim Exportieren von Markdown-Inhalten anpassen.

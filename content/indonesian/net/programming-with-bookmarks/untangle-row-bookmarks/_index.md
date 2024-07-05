@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
 ## Langkah 2: Mengurai Penanda Garis
 
- Kami menggunakan`Untangle` berfungsi untuk mengurai bookmark dari baris. Fungsi ini melakukan tugas khusus untuk meletakkan ujung baris penanda pada baris yang sama dengan permulaan penanda:
+ Kami menggunakan`Untangle` berfungsi untuk mengurai bookmark dari baris. Fungsi ini melakukan tugas khusus untuk meletakkan ujung baris penanda di baris yang sama dengan permulaan penanda:
 
 ```csharp
 Untangle(doc);

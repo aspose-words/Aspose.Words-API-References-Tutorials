@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### S: Aspose.Words for .NET'te bir paragrafın taşınıp taşınmadığı (silindiği) nasıl kontrol edilir?
 
- C: Bir paragraf kullanın`IsMoveFromRevision` taşınıp taşınmadığını (silinip silinmediğini) kontrol etmek için özellik.
+ C: Bir paragraf kullanın`IsMoveFromRevision`taşınıp taşınmadığını (silinip silinmediğini) kontrol etmek için özellik.
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### S: Aspose.Words for .NET'te bir paragrafın taşınıp taşınmadığını (eklendiğini) nasıl kontrol edebilirim?
 
- C: Bir paragraf kullanın`IsMoveToRevision`taşınıp taşınmadığını (eklenip eklenmediğini) kontrol etmek için özellik.
+ C: Bir paragraf kullanın`IsMoveToRevision` taşınıp taşınmadığını (eklenip eklenmediğini) kontrol etmek için özellik.
 
 ```csharp
 if (paragraph.IsMoveToRevision)

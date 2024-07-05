@@ -25,7 +25,7 @@ is_root: true
 - [목록 작업](./net/working-with-list/)   
 - [마크다운 작업](./net/working-with-markdown/)   
 - [노드 작업](./net/working-with-node/)   
-- [리뷰 작업](./net/working-with-revisions/)   
+- [개정 작업](./net/working-with-revisions/)   
 - [텍스트 상자 작업](./net/working-with-textboxes/)   
 - [문서 분할](./net/split-document/)   
 - [Documentbuilder를 사용하여 콘텐츠 추가](./net/add-content-using-documentbuilder/)

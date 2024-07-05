@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words for Java umożliwia programistom Java łatwe łączenie dokumentów programu Word. Postępując zgodnie ze szczegółowym przewodnikiem zawartym w tym artykule, możesz teraz z łatwością łączyć dokumenty, obsługiwać formatowanie, wstawiać przerwy i zarządzać konfliktami. Dzięki Aspose.Words dla Java łączenie dokumentów staje się płynnym i zautomatyzowanym procesem, oszczędzającym cenny czas i wysiłek.
 
-## 11.FAQ 
+## 11. Często zadawane pytania 
 
 ### Czy mogę łączyć dokumenty o różnych formatach i stylach?
 

@@ -83,7 +83,7 @@ Aspose.Words는 DATE, PAGE, MERGEFIELD 등과 같은 다양한 필드 유형을 
 예, Aspose.Words for .NET은 DOCX, DOC, RTF 등과 같은 형식의 필드를 보다 원활하게 변환하고 조작할 수 있습니다.
 
 ### .NET용 Aspose.Words에 대한 포괄적인 문서는 어디서 찾을 수 있나요?
- 자세한 문서와 API 참조가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
+ 자세한 문서 및 API 참조가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
 
 ### .NET용 Aspose.Words에 사용할 수 있는 평가판이 있습니까?
  예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).

@@ -12,7 +12,7 @@ En este tutorial completo, exploraremos cómo usar listas de manera efectiva en 
 
 ## Introducción a Aspose.Words para Java
 
-Antes de comenzar a trabajar con listas, familiaricémonos con Aspose.Words para Java. Esta API proporciona a los desarrolladores las herramientas para crear, modificar y manipular documentos de Word en un entorno Java. Es una solución versátil para tareas que van desde la simple generación de documentos hasta el formato complejo y la gestión de contenido.
+Antes de comenzar a trabajar con listas, familiaricémonos con Aspose.Words para Java. Esta API proporciona a los desarrolladores las herramientas para crear, modificar y manipular documentos de Word en un entorno Java. Es una solución versátil para tareas que van desde la simple generación de documentos hasta el formato complejo y la gestión de contenidos.
 
 ### Configurando su entorno
 
@@ -164,7 +164,7 @@ Si sigue estos pasos, puede crear documentos con niveles de lista personalizados
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Cree una lista numerada basada en una de las plantillas de listas de Microsoft Word.
+        // Cree una lista numerada basada en una de las plantillas de listas de Microsoft Word
         // aplicarlo al párrafo actual del creador de documentos.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Hay nueve niveles en esta lista, probémoslos todos.
@@ -173,7 +173,7 @@ Si sigue estos pasos, puede crear documentos con niveles de lista personalizados
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Cree una lista con viñetas basada en una de las plantillas de listas de Microsoft Word.
+        // Cree una lista con viñetas basada en una de las plantillas de listas de Microsoft Word
         // aplicarlo al párrafo actual del creador de documentos.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

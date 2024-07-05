@@ -21,7 +21,7 @@ Výukové programy se zaměřují na zvýšení efektivity správy dokumentů po
 
 ## Zefektivnění pracovních postupů při zpracování textu
 
-Zvládnutím automatizace slov pomocí Aspose.Words pro Python mohou vývojáři efektivně zefektivnit pracovní postupy zpracování textu. Výukové programy poskytují podrobné pokyny, praktické příklady a ukázky kódu, což umožňuje vývojářům využít plný potenciál automatizace slov v Pythonu pro bezproblémové zpracování a správu dokumentů. Projděte si tyto výukové programy, abyste si zjednodušili úkoly správy dokumentů a zvýšili své možnosti zpracování textu.
+Zvládnutím automatizace slov pomocí Aspose.Words pro Python mohou vývojáři efektivně zefektivnit pracovní postupy zpracování textu. Výukové programy poskytují pokyny krok za krokem, praktické příklady a ukázky kódu, což vývojářům umožňuje využít plný potenciál automatizace slov v Pythonu pro bezproblémové zpracování a správu dokumentů. Projděte si tyto výukové programy, abyste si zjednodušili úkoly správy dokumentů a zvýšili své možnosti zpracování textu.
 
 ## Výukové programy automatizace Wordu v Pythonu
 ### [Snadná automatizace slov](./word-automation-made-easy/)

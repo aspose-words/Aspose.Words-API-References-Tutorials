@@ -1,56 +1,56 @@
 ---
-title: Word 文書内のブックマークされたテキストをコピーする
-linktitle: Word 文書内のブックマークされたテキストをコピーする
+title: Word文書内のブックマークされたテキストをコピーする
+linktitle: Word文書内のブックマークされたテキストをコピーする
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word ドキュメント内のブックマーク テキストを別のドキュメントにコピーする方法を学習します。
+description: Aspose.Words for .NET を使用して、Word 文書内のブックマーク テキストを別の文書にコピーする方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 
-この記事では、Aspose.Words for .NET ライブラリの Copy Bookmarked Text 関数の使用方法を理解するために、上記の C# ソース コードを調べます。この機能を使用すると、特定のブックマークの内容をソース ドキュメントから別のドキュメントにコピーできます。
+この記事では、上記の C# ソース コードを調べて、Aspose.Words for .NET ライブラリの Copy Bookmarked Text 関数の使用方法を理解します。この機能を使用すると、特定のブックマークの内容をソース ドキュメントから別のドキュメントにコピーできます。
 
 ## 前提条件
 
-- C# 言語の基本的な知識。
+- C# 言語に関する基本的な知識。
 - Aspose.Words ライブラリがインストールされた .NET 開発環境。
 
-## ステップ 1: ソースドキュメントのロード
+## ステップ1: ソースドキュメントの読み込み
 
-ブックマークテキストをコピーする前に、ソースドキュメントを`Document`ファイルパスを使用したオブジェクト:
+ブックマークテキストをコピーする前に、ソース文書を`Document`ファイルパスを使用するオブジェクト:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## ステップ 2: ソース ブックマークを取得する
+## ステップ2: ソースブックマークを取得する
 
-私たちが使用するのは、`Bookmarks`ソースドキュメント範囲のプロパティを使用して、コピーしたい特定のブックマークを取得します。
+私たちは`Bookmarks`コピーする特定のブックマークを取得するには、ソース ドキュメント範囲のプロパティを使用します。
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
-## ステップ 3: 宛先ドキュメントの作成
+## ステップ3: 宛先ドキュメントの作成
 
-ブックマークの内容をコピーする宛先ドキュメントとして機能する新しいドキュメントを作成します。
+ブックマークの内容をコピーするための宛先ドキュメントとして機能する新しいドキュメントを作成します。
 
 ```csharp
 Document dstDoc = new Document();
 ```
 
-## ステップ 4: コピー場所の指定
+## ステップ4: コピー場所の指定
 
-コピーしたテキストを追加する場所を指定します。この例では、宛先ドキュメントの最後のセクションの本文の末尾にテキストを追加します。
+コピーしたテキストを追加する場所を指定します。この例では、コピー先ドキュメントの最後のセクションの本文の末尾にテキストを追加します。
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## ステップ 5: ブックマーク テキストをインポートしてコピーする
+## ステップ5: ブックマークテキストをインポートしてコピーする
 
-私たちは、`NodeImporter`ソースドキュメントから宛先ドキュメントにブックマークテキストをインポートしてコピーするオブジェクト:
+私たちは`NodeImporter`ソース ドキュメントから宛先ドキュメントにブックマーク テキストをインポートしてコピーするオブジェクト:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -60,26 +60,26 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-### Aspose.Words for .NET を使用してブックマークされたテキストをコピーするためのソース コードの例
+### Aspose.Words for .NET を使用してブックマークされたテキストをコピーするためのサンプル ソース コード
 
-Aspose.Words for .NET を使用してブックマークからテキストをコピーする方法を示す完全なソース コード例を次に示します。
+以下は、Aspose.Words for .NET を使用してブックマークからテキストをコピーする方法を示す完全なサンプル ソース コードです。
 
 ```csharp
 
-	//ドキュメントディレクトリへのパス。
+	//ドキュメント ディレクトリへのパス。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 
-	//これは、コンテンツをコピーするブックマークです。
+	//これは、内容をコピーするブックマークです。
 	Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 
-	//この文書に追加していきます。
+	//このドキュメントに追加していきます。
 	Document dstDoc = new Document();
 
-	//最後のセクションの本文の最後に追加するとします。
+	//最後のセクションの本文の末尾に追加されるとします。
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
-	//単一のコンテキストを使用せずに複数回インポートすると、多数のスタイルが作成されます。
+	//単一のコンテキストなしで複数回インポートすると、多くのスタイルが作成されます。
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
 
 	AppendBookmarkedText(importer, srcBookmark, dstNode);
@@ -88,13 +88,13 @@ Aspose.Words for .NET を使用してブックマークからテキストをコ�
 
 ```
 
-#### AppendBookmarkedText ソース コード
+#### AppendBookmarkedText ソースコード
 
 ```csharp
 
 private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
         {
-            //これはブックマークの先頭を含む段落です。
+            //これはブックマークの始まりを含む段落です。
             Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
 
             //これはブックマークの終わりを含む段落です。
@@ -104,19 +104,19 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
                 throw new InvalidOperationException(
                     "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 
-            //かなり単純なシナリオに限定してください。
+            //かなり単純なシナリオに限定します。
             if (startPara.ParentNode != endPara.ParentNode)
                 throw new InvalidOperationException(
                     "Start and end paragraphs have different parents, cannot handle this scenario yet.");
 
-            //開始段落から終了段落まで (および終了段落を含む) のすべての段落をコピーしたいのですが、
-            //したがって、停止するノードは終了段落の 1 つ後です。
+            //開始段落から終了段落まで（終了段落も含む）すべての段落をコピーしたいのですが、
+            //したがって、停止するノードは最後の段落の 1 つ後になります。
             Node endNode = endPara.NextSibling;
 
             for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
             {
-                //これにより、現在のノードのコピーが作成され、コンテキストにインポート (有効化) されます。
-                //宛先ドキュメントの。インポートとは、スタイルとリスト識別子を正しく調整することを意味します。
+                //これは現在のノードのコピーを作成し、それをコンテキストにインポート（有効にする）します。
+                //インポートとは、スタイルとリスト識別子を正しく調整することを意味します。
                 Node newNode = importer.ImportNode(curNode, true);
 
                 dstNode.AppendChild(newNode);
@@ -126,50 +126,50 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
 ```
 ## 結論
 
-この記事では、C# ソース コードを調べて、Aspose.Words for .NET からブックマークされたテキストをコピーする関数の使用方法を理解しました。ステップバイステップのガイドに従って、ブックマークの内容をソース文書から別の文書にコピーしました。
+この記事では、C# ソース コードを調べて、Aspose.Words for .NET の「ブックマークされたテキストをコピー」関数の使用方法を理解しました。ステップ バイ ステップ ガイドに従って、ソース ドキュメントから別のドキュメントにブックマークの内容をコピーしました。
 
-### Word 文書内のブックマークされたテキストをコピーする場合の FAQ
+### Word 文書内のブックマークされたテキストをコピーするための FAQ
 
-#### Q: Aspose.Words for .NET の「ブックマーク付きテキストのコピー」機能を使用するための要件は何ですか?
+#### Q: Aspose.Words for .NET の「ブックマーク付きのテキストのコピー」機能を使用するための要件は何ですか?
 
-A: Aspose.Words for .NET の「ブックマーク付きテキストのコピー」機能を使用するには、C# 言語の基本的な知識が必要です。 Aspose.Words ライブラリがインストールされた .NET 開発環境も必要です。
+A: Aspose.Words for .NET の「ブックマーク付きのテキストのコピー」機能を使用するには、C# 言語の基本的な知識が必要です。また、Aspose.Words ライブラリがインストールされた .NET 開発環境も必要です。
 
-#### Q: ソース ドキュメントを Aspose.Words for .NET にロードするにはどうすればよいですか?
+#### Q: ソース ドキュメントを Aspose.Words for .NET に読み込むにはどうすればよいですか?
 
- A: Aspose.Words for .NET でソース ドキュメントをロードするには、`Document`ドキュメントのファイルパスを指定してクラスを作成します。サンプルコードは次のとおりです。
+ A: Aspose.Words for .NETでソースドキュメントを読み込むには、`Document`ドキュメントのファイル パスを指定してクラスを作成します。サンプル コードは次のとおりです。
 
 ```csharp
 Document srcDoc = new Document("path/to/your/document.docx");
 ```
 
-#### Q: Aspose.Words for .NET を使用してソース ドキュメント内の特定のブックマークのコンテンツを取得するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET を使用してソース ドキュメント内の特定のブックマークの内容を取得するにはどうすればよいですか?
 
- A: Aspose.Words for .NET を使用してソース ドキュメント内の特定のブックマークの内容を取得するには、`Bookmarks`ソース ドキュメント範囲のプロパティを使用し、ブックマーク名を使用して特定のブックマークを取得します。サンプルコードは次のとおりです。
+ A: Aspose.Words for .NETを使用してソースドキュメント内の特定のブックマークの内容を取得するには、`Bookmarks`ソース ドキュメント範囲の プロパティを使用し、ブックマーク名を使用して特定のブックマークを取得します。サンプル コードは次のとおりです。
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
 ```
 
-#### Q: Aspose.Words for .NET を使用して、宛先ドキュメント内のブックマーク テキスト コピーの場所を指定するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET を使用して、宛先ドキュメント内のブックマーク テキスト コピーの場所を指定する方法を教えてください。
 
- A: Aspose.Words for .NET を使用してコピー先ドキュメント内のコピーしたブックマーク テキストを追加する場所を指定するには、コピー先ドキュメントの最後のセクションの本文に移動します。使用できます`LastSection`最後のセクションにアクセスするためのプロパティと、`Body`プロパティを使用してそのセクションの本文にアクセスします。サンプルコードは次のとおりです。
+ A: Aspose.Words for .NETを使用してコピーしたブックマークテキストを宛先ドキュメントのどこに追加するかを指定するには、宛先ドキュメントの最後のセクションの本文に移動します。`LastSection`最後のセクションにアクセスするためのプロパティと`Body`プロパティを使用して、そのセクションの本文にアクセスします。サンプル コードは次のとおりです。
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-#### Q: Aspose.Words for .NET を使用して、ブックマーク テキストをソース ドキュメントから宛先ドキュメントにインポートしてコピーするにはどうすればよいですか?
+#### Q: Aspose.Words for .NET を使用して、ソース ドキュメントから宛先ドキュメントにブックマーク テキストをインポートしてコピーするにはどうすればよいですか?
 
- A: Aspose.Words for .NET を使用して、ソース ドキュメントからターゲット ドキュメントにブックマーク テキストをインポートしてコピーするには、`NodeImporter`ソースドキュメント、宛先ドキュメント、保持する書式設定モードを指定するクラス。その後、使用できます`AppendBookmarkedText`宛先ドキュメントにブックマーク テキストを追加するメソッド。サンプルコードは次のとおりです。
+ A: Aspose.Words for .NETを使用して、ソースドキュメントから宛先ドキュメントにブックマークテキストをインポートしてコピーするには、`NodeImporter`クラスは、ソース文書、宛先文書、および保持する書式モードを指定します。その後、`AppendBookmarkedText`メソッドを使用して、宛先ドキュメントにブックマーク テキストを追加します。サンプル コードは次のとおりです。
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
 AppendBookmarkedText(import, srcBookmark, dstNode);
 ```
 
-#### Q: Aspose.Words for .NET を使用してブックマーク テキストをコピーした後、宛先ドキュメントを保存するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET を使用してブックマーク テキストをコピーした後、コピー先のドキュメントを保存するにはどうすればよいですか?
 
-A: Aspose.Words for .NET を使用してブックマークからテキストをコピーした後に宛先ドキュメントを保存するには、`Save`の方法`Document`宛先ファイルのパスを指定するオブジェクト。サンプルコードは次のとおりです。
+A: Aspose.Words for .NETを使用してブックマークからテキストをコピーした後、コピー先のドキュメントを保存するには、`Save`方法の`Document`宛先ファイル パスを指定するオブジェクト。サンプル コードは次のとおりです。
 
 ```csharp
 dstDoc.Save("path/to/your/destination-document.docx");

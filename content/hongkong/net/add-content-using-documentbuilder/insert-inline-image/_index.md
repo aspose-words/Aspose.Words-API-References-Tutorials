@@ -9,7 +9,7 @@ url: /zh-hant/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 ## 介紹
 
-在使用 .NET 應用程式進行文件處理領域，Aspose.Words 作為以程式設計方式操作 Word 文件的強大解決方案脫穎而出。其主要功能之一是能夠輕鬆插入內嵌影像，增強文件的視覺吸引力和功能。本教學深入探討如何利用 Aspose.Words for .NET 將圖片無縫嵌入到 Word 文件中。
+在使用 .NET 應用程式進行文件處理的領域中，Aspose.Words 作為以程式設計方式操作 Word 文件的強大解決方案脫穎而出。其主要功能之一是能夠輕鬆插入內嵌影像，增強文件的視覺吸引力和功能。本教學深入探討如何利用 Aspose.Words for .NET 將圖片無縫嵌入到 Word 文件中。
 
 ## 先決條件
 

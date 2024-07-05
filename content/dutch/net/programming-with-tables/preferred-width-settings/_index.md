@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Hier gebruiken we de documentbuilder om een tabel met drie cellen te bouwen. De eerste cel heeft een voorkeursbreedte van 40 punten, de tweede cel heeft een voorkeursbreedte van 20% van de tabelbreedte en de derde cel heeft een automatische voorkeursbreedte die zich aanpast.
+Hier gebruiken we de documentbuilder om een tabel met drie cellen te bouwen. De eerste cel heeft een voorkeursbreedte van 40 punten, de tweede cel heeft een voorkeursbreedte van 20% van de tabelbreedte en de derde cel heeft een automatische voorkeursbreedte die wordt aangepast
 
   afhankelijk van de beschikbare ruimte.
 

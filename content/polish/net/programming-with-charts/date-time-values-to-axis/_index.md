@@ -2,7 +2,7 @@
 title: Dodaj wartości daty i godziny do osi wykresu
 linktitle: Dodaj wartości daty i godziny do osi wykresu
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodać wartości daty i czasu do osi wykresu za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak dodać wartości daty i godziny do osi wykresu za pomocą Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/programming-with-charts/date-time-values-to-axis/
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Utwórz nowy dokument i narzędzie DocumentBuider
- Utwórz nową instancję`Document` klasa i A`DocumentBuilder` sprzeciwić się pracy z dokumentem.
+ Utwórz nową instancję`Document` klasa i A`DocumentBuilder`sprzeciwić się pracy z dokumentem.
 
 ```csharp
 Document doc = new Document();
@@ -102,18 +102,18 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 	doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-Ten przykładowy kod tworzy nowy dokument Worda, wstawia wykres kolumnowy z wartościami daty i godziny na osi X i zapisuje dokument we wskazanym katalogu.
+Ten przykładowy kod tworzy nowy dokument programu Word, wstawia wykres kolumnowy z wartościami daty i godziny na osi X i zapisuje dokument w określonym katalogu.
 
 ## Wniosek
-tym samouczku nauczyłeś się dodawać wartości daty i godziny do osi wykresu za pomocą Aspose.Words dla .NET. Postępując zgodnie z instrukcją krok po kroku, możesz utworzyć wykres, dodać wartości daty i godziny do serii oraz skonfigurować oś tak, aby dokładnie wyświetlała wartości daty i godziny. Aspose.Words dla .NET zapewnia potężny zestaw funkcji do przetwarzania słów z wykresami w dokumentach Word, umożliwiając efektywne reprezentowanie i wizualizację danych z wartościami daty i godziny.
+tym samouczku nauczyłeś się dodawać wartości daty i godziny do osi wykresu za pomocą Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem, możesz utworzyć wykres, dodać wartości daty i godziny do serii i skonfigurować oś tak, aby dokładnie wyświetlała wartości daty i godziny. Aspose.Words dla .NET zapewnia potężny zestaw funkcji do przetwarzania tekstu z wykresami w dokumentach programu Word, umożliwiając efektywne reprezentowanie i wizualizację danych z wartościami daty i godziny.
 
 ### Często zadawane pytania
 
-#### Pytanie 1. Czy mogę dodać wartości daty i czasu do osi wykresu za pomocą Aspose.Words dla .NET?
-Tak, dzięki Aspose.Words dla .NET możesz dodawać i wyświetlać wartości daty i godziny na osi wykresu w dokumencie Word. Aspose.Words zapewnia interfejsy API i funkcjonalności umożliwiające pracę z różnymi typami wykresów i dostosowywanie ich wyglądu, w tym obsługę wartości daty i godziny na osi.
+#### Pytanie 1. Czy mogę dodać wartości daty i godziny do osi wykresu za pomocą Aspose.Words dla .NET?
+Tak, dzięki Aspose.Words dla .NET możesz dodawać i wyświetlać wartości daty i godziny na osi wykresu w dokumencie programu Word. Aspose.Words zapewnia interfejsy API i funkcje umożliwiające pracę z różnymi typami wykresów i dostosowywanie ich wyglądu, w tym obsługę wartości daty i godziny na osi.
 
 #### Pytanie 2. Jak dodać wartości daty i godziny do serii wykresów?
- Aby dodać wartości daty i godziny do serii wykresów, możesz użyć opcji`Add`metoda szeregów wykresu. Podaj tablicę wartości daty i czasu jako dane kategorii (oś X) wraz z odpowiednimi wartościami serii. Pozwala to na wykreślenie punktów danych z wartościami daty i godziny na wykresie.
+ Aby dodać wartości daty i godziny do serii wykresów, możesz użyć opcji`Add`metoda szeregów wykresu. Podaj tablicę wartości dat i godzin jako dane kategorii (oś X) wraz z odpowiednimi wartościami serii. Umożliwia to wykreślenie na wykresie punktów danych z wartościami daty i godziny.
 
 #### Pytanie 3. Jak skonfigurować oś, aby wyświetlała wartości daty i godziny?
- Możesz skonfigurować oś wykresu tak, aby wyświetlała wartości daty i czasu, ustawiając odpowiednie właściwości. Na przykład możesz określić minimalne i maksymalne wartości osi za pomocą`Scaling.Minimum` I`Scaling.Maximum` właściwości, odpowiednio. Dodatkowo można ustawić jednostki główne i poboczne w celu zdefiniowania odstępu i znaczników osi.
+ Można skonfigurować oś wykresu tak, aby wyświetlała wartości daty i godziny, ustawiając odpowiednie właściwości. Na przykład możesz określić minimalne i maksymalne wartości osi za pomocą`Scaling.Minimum` I`Scaling.Maximum` właściwości, odpowiednio. Dodatkowo można ustawić jednostki główne i poboczne w celu zdefiniowania odstępu i znaczników osi.

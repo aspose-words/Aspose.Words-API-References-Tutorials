@@ -46,7 +46,7 @@ Nakonec můžeme dokument uložit ve formátu PDF pomocí dříve nakonfigurovan
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-To je vše ! Úspěšně jste exportovali záložky záhlaví a zápatí z dokumentu a vygenerovali PDF s příslušnými záložkami pomocí Aspose.Words for .NET.
+To je vše ! Úspěšně jste exportovali záložky záhlaví a zápatí z dokumentu a pomocí Aspose.Words for .NET vygenerovali PDF s příslušnými záložkami.
 
 ### Ukázkový zdrojový kód pro export záložek záhlaví a zápatí pomocí Aspose.Words pro .NET
 

@@ -77,6 +77,6 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 Trả lời: Để chỉ định ngôn ngữ âm tiết trong Aspose.Words, bạn phải sử dụng mã ngôn ngữ thích hợp. Ví dụ: bạn có thể sử dụng "en" cho tiếng Anh, "fr" cho tiếng Pháp, "es" cho tiếng Tây Ban Nha, "de" cho tiếng Đức, v.v. Xem tài liệu Aspose.Words để biết danh sách đầy đủ các mã ngôn ngữ được hỗ trợ.
 
-#### Câu hỏi: Âm tiết có hoạt động với tất cả các ngôn ngữ trong Aspose.Words không?
+#### Câu hỏi: Việc sắp xếp âm tiết có hoạt động với tất cả các ngôn ngữ trong Aspose.Words không?
 
-Trả lời: Âm tiết trong Aspose.Words phụ thuộc vào quy tắc âm tiết dành riêng cho ngôn ngữ. Mặc dù Aspose.Words hỗ trợ nhiều loại ngôn ngữ nhưng một số ngôn ngữ có thể không được hỗ trợ hoặc âm tiết có thể không có sẵn cho chúng. Kiểm tra tài liệu Aspose.Words để tìm hiểu ngôn ngữ nào được hỗ trợ cho việc sắp xếp âm tiết.
+Trả lời: Âm tiết trong Aspose.Words phụ thuộc vào quy tắc âm tiết dành riêng cho ngôn ngữ. Mặc dù Aspose.Words hỗ trợ nhiều ngôn ngữ nhưng một số ngôn ngữ có thể không được hỗ trợ hoặc âm tiết có thể không có sẵn cho chúng. Kiểm tra tài liệu Aspose.Words để tìm hiểu ngôn ngữ nào được hỗ trợ cho việc sắp xếp âm tiết.

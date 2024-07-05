@@ -18,7 +18,7 @@ En el código proporcionado, comenzamos creando un generador de documentos.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Paso 2: inserte el campo SI.
+## Paso 2: Inserta el campo SI
 
  Usamos el`InsertField()` Método para insertar el campo IF en el documento especificando la condición a evaluar.
 
@@ -41,13 +41,13 @@ FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ### Código fuente de muestra para evaluar la condición IF con Aspose.Words para .NET
 
 ```csharp
-//Creación del generador de documentos.
+// Creación del generador de documentos.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Inserte el campo SI en el documento.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// Evalúe la condición SI.
+//Evalúe la condición SI.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Mostrar el resultado de la evaluación.

@@ -30,7 +30,7 @@ Bước đầu tiên trong việc quản lý bảng là tạo chúng. Aspose.Wor
 // Tạo một tài liệu mới
 Document doc = new Document();
 
-// Tạo bảng có 3 hàng và 4 cột.
+// Tạo bảng có 3 hàng và 4 cột
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

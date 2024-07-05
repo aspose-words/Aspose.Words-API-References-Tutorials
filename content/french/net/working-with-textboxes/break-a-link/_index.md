@@ -12,7 +12,7 @@ Aspose.Words for .NET est une bibliothèque puissante qui offre diverses fonctio
 
 ## Étape 1 : Aperçu du code source C#
 
-Le code source C# fourni se concentre sur la fonctionnalité « Break A Link » d'Aspose.Words pour .NET. Il montre comment rompre un lien dans une forme TextBox à l’intérieur d’un document. Le code présente différents scénarios de rupture de liens et fournit des instructions claires sur la manière d'obtenir les résultats souhaités.
+Le code source C# fourni se concentre sur la fonctionnalité « Break A Link » d'Aspose.Words pour .NET. Il montre comment rompre un lien dans une forme TextBox à l'intérieur d'un document. Le code présente différents scénarios de rupture de liens et fournit des instructions claires sur la manière d'obtenir les résultats souhaités.
 
 ## Étape 2 : Configuration du document et création d'une forme TextBox
 

@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Crie uma lista numerada com base em um dos modelos de lista do Microsoft Word.
+// Crie uma lista numerada com base em um dos modelos de lista do Microsoft Word
 // aplique-o ao parágrafo atual do construtor de documentos.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Crie uma lista com marcadores com base em um dos modelos de lista do Microsoft Word.
+// Crie uma lista com marcadores com base em um dos modelos de lista do Microsoft Word
 // aplique-o ao parágrafo atual do construtor de documentos.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 

@@ -91,7 +91,7 @@ builder.Writeln("This is row 2 cell 2");
 builder.EndRow();
 ```
 
- Här ställer vi in höjden på raden och ser till att den förblir fixerad med`HeightRule.Exactly`. Ändringarna av textorienteringen gör att vårt bord sticker ut och ger en touch av unikhet.
+ Här ställer vi in höjden på raden och ser till att den förblir fixerad med`HeightRule.Exactly`. Ändringarna i textorienteringen gör att vårt bord sticker ut och ger en touch av unikhet.
 
 ## Steg 5: Avsluta tabellen
 

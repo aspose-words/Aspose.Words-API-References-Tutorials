@@ -17,7 +17,7 @@ Asegúrese de tener los siguientes requisitos previos:
 - Aspose.Words para la biblioteca .NET instalada. Puede descargarlo utilizando el administrador de paquetes NuGet para instalarlo.
 - Una ruta del directorio de documentos donde se guardará el documento de salida.
 
-## Paso 2: cree un nuevo documento e inserte un gráfico.
+## Paso 2: cree un nuevo documento e inserte un gráfico
 
  Crear un nuevo`Document` objeto y un`DocumentBuilder` para construir el documento.
 
@@ -94,7 +94,7 @@ Esto completa la implementación de formatear la cantidad de etiquetas de datos 
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 	// O puede configurar el código de formato para que se vincule a una celda de origen,
-	//En este caso, NumberFormat se restablecerá a general y se heredará de una celda de origen.
+	//en este caso, NumberFormat se restablecerá a general y se heredará de una celda de origen.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
@@ -105,7 +105,7 @@ En este tutorial, aprendió cómo formatear la cantidad de etiquetas de datos en
 
  Aspose.Words para .NET proporciona una API integral para el procesamiento de palabras con gráficos en documentos de Word, lo que le permite manipular varios aspectos del gráfico, incluidas las etiquetas de datos. Al acceder al`DataLabels` colección asociada con una serie, puede personalizar el formato numérico de las etiquetas de datos individuales.
 
-La API le permite controlar la visualización de valores, establecer diferentes formatos numéricos para cada etiqueta de datos y vincular el formato numérico a una celda de origen. Esta flexibilidad le permite presentar datos numéricos en gráficos con el formato deseado, como símbolos de moneda, formatos de fecha y valores de porcentaje.
+La API le permite controlar la visualización de valores, establecer diferentes formatos de números para cada etiqueta de datos y vincular el formato de número a una celda de origen. Esta flexibilidad le permite presentar datos numéricos en gráficos con el formato deseado, como símbolos de moneda, formatos de fecha y valores de porcentaje.
 
 Al utilizar Aspose.Words para .NET, puede incorporar poderosas capacidades de gráficos en sus aplicaciones .NET y generar documentos de apariencia profesional con gráficos y etiquetas de datos completamente formateados.
 
@@ -115,7 +115,7 @@ Al utilizar Aspose.Words para .NET, puede incorporar poderosas capacidades de gr
 Aspose.Words para .NET es una biblioteca de procesamiento de documentos rica en funciones que permite a los desarrolladores crear, manipular y guardar documentos de Word mediante programación en aplicaciones .NET. Proporciona una amplia gama de funciones para el procesamiento de textos con elementos de documentos, incluidos gráficos y etiquetas de datos.
 
 #### P2. ¿Cómo puedo instalar Aspose.Words para .NET?
-Puede instalar Aspose.Words para .NET descargándolo mediante el administrador de paquetes NuGet en Visual Studio. Simplemente busque "Apose.Words" en el administrador de paquetes NuGet e instálelo en su proyecto.
+Puede instalar Aspose.Words para .NET descargándolo mediante el administrador de paquetes NuGet en Visual Studio. Simplemente busque "Aspose.Words" en el administrador de paquetes NuGet e instálelo en su proyecto.
 
 #### P3. ¿Puedo formatear otros aspectos del gráfico usando Aspose.Words para .NET?
 Sí, Aspose.Words para .NET proporciona amplias capacidades para formatear varios aspectos de un gráfico. Además de las etiquetas de datos, puede personalizar el tipo de gráfico, los datos de la serie, las propiedades de los ejes, la leyenda, el título, el área de trazado y muchos otros elementos del gráfico. La API ofrece un control detallado sobre la apariencia y el formato de los gráficos.

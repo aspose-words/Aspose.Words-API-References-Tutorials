@@ -57,7 +57,7 @@ In questo tutorial, abbiamo visto come utilizzare le opzioni di caricamento con 
 
 #### D: Come posso specificare un carattere predefinito quando carico un documento in Aspose.Words?
 
- R: Per specificare un carattere predefinito quando si carica un documento in Aspose.Words, è possibile utilizzare il file`LoadOptions` classe e impostare il file`DefaultFontName` proprietà al nome del carattere desiderato.
+R: Per specificare un carattere predefinito quando si carica un documento in Aspose.Words, è possibile utilizzare il file`LoadOptions` classe e impostare il file`DefaultFontName` proprietà al nome del carattere desiderato.
 
 #### D: Quali altre impostazioni dei caratteri posso specificare con le opzioni di caricamento in Aspose.Words?
 
@@ -69,4 +69,4 @@ R: Se il carattere predefinito specificato non è disponibile quando il document
 
 #### D: Posso specificare impostazioni di carattere diverse per ciascun documento caricato?
 
- R: Sì, puoi specificare impostazioni di carattere diverse per ciascun documento caricato utilizzando istanze separate del file`LoadOptions` classe e impostando le impostazioni del carattere desiderate per ciascuna istanza. Ciò consente di personalizzare l'aspetto del carattere per ciascun documento in modo indipendente.
+ R: Sì, puoi specificare impostazioni di carattere diverse per ciascun documento caricato utilizzando istanze separate del file`LoadOptions`classe e impostando le impostazioni del carattere desiderate per ciascuna istanza. Ciò consente di personalizzare l'aspetto del carattere per ciascun documento in modo indipendente.

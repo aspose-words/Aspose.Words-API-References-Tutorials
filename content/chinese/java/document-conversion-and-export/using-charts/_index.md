@@ -8,9 +8,9 @@ weight: 12
 url: /zh/java/document-conversion-and-export/using-charts/
 ---
 
-## 在 Aspose.Words for Java 中使用图表简介
+## Aspose.Words for Java 中图表的使用简介
 
-在本教程中，我们将探索如何使用 Aspose.Words for Java 处理图表。您将学习如何创建各种类型的图表、自定义轴属性、设置数据标签格式等。让我们深入了解吧！
+在本教程中，我们将探索如何使用 Aspose.Words for Java 处理图表。您将学习如何创建各种类型的图表、自定义轴属性、格式化数据标签等。让我们开始吧！
 
 ## 创建折线图
 
@@ -26,7 +26,7 @@ chart.getTitle().setText("Data Labels With Different Number Format");
 //删除默认生成的系列。
 chart.getSeries().clear();
 
-//添加带有数据和数据标签的系列。
+//添加包含数据和数据标签的系列。
 ChartSeries series1 = chart.getSeries().add("Aspose Series 1", 
     new String[] { "Category 1", "Category 2", "Category 3" }, 
     new double[] { 2.5, 1.5, 3.5 });
@@ -45,7 +45,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.FormatNumberOfDataLabel.docx
 
 ## 创建其他类型的图表
 
-您可以使用类似的技术创建不同类型的图表，例如柱形图、面积图、气泡图、散点图等。下面是插入简单柱形图的示例：
+您可以使用类似的技术创建不同类型的图表，如柱形图、面积图、气泡图、散点图等。以下是插入简单柱形图的示例：
 
 ```java
 Document doc = new Document();
@@ -66,7 +66,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.InsertSimpleColumnChart.docx
 
 ## 自定义轴属性
 
-您可以自定义轴属性，例如更改轴类型、设置刻度线、格式化标签等。以下是定义 XY 轴属性的示例：
+您可以自定义轴属性，例如更改轴类型、设置刻度标记、设置标签格式等。以下是定义 XY 轴属性的示例：
 
 ```java
 Document doc = new Document();
@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 //将 X 轴更改为类别而不是日期。
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); //以 Y 轴的显示单位（百）测量。
+xAxis.setCrossesAt(3.0); //以 Y 轴的显示单位（百）为单位。
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -98,9 +98,9 @@ yAxis.getScaling().setMaximum(new AxisBound(700.0));
 doc.save("Your Directory Path" + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-## 设置数据标签格式
+## 格式化数据标签
 
-您可以使用不同的数字格式来设置数据标签的格式。这是一个例子：
+您可以使用不同的数字格式来格式化数据标签。以下是示例：
 
 ```java
 Document doc = new Document();
@@ -115,31 +115,31 @@ chart.getAxisY().getNumberFormat().setFormatCode("#,##0");
 doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-## 附加图表定制
+## 额外的图表自定义
 
-您可以通过调整边界、标签之间的间隔单位、隐藏图表轴等来进一步自定义图表。浏览提供的代码片段以了解有关这些选项的更多信息。
+您可以通过调整边界、标签之间的间隔单位、隐藏图表轴等进一步自定义图表。探索提供的代码片段以了解有关这些选项的更多信息。
 
 ## 结论
 
-在本教程中，我们探索了如何使用 Aspose.Words for Java 来处理图表。您已经学习了如何创建各种类型的图表、自定义轴属性、设置数据标签格式等。 Aspose.Words for Java 提供了强大的工具，用于将数据的可视化表示添加到文档中，从而增强您呈现信息的方式。
+在本教程中，我们探索了如何使用 Aspose.Words for Java 处理图表。您已经学习了如何创建各种类型的图表、自定义轴属性、格式化数据标签等。Aspose.Words for Java 提供了强大的工具，可用于将数据的可视化表示添加到您的文档中，从而增强您呈现信息的方式。
 
 ## 常见问题解答
 
 ### 如何向图表添加多个系列？
 
-您可以使用以下命令将多个系列添加到图表中`chart.getSeries().add()`方法。确保指定系列名称、类别和数据值。
+您可以使用`chart.getSeries().add()`方法。请确保指定系列名称、类别和数据值。
 
-### 如何使用自定义数字格式设置数据标签的格式？
+### 如何使用自定义数字格式来格式化数据标签？
 
-您可以通过访问来格式化数据标签`DataLabels`系列的属性并使用设置所需的格式代码`getNumberFormat().setFormatCode()`.
+您可以通过访问`DataLabels`系列的属性并使用设置所需的格式代码`getNumberFormat().setFormatCode()`.
 
 ### 如何自定义图表中的轴属性？
 
-您可以通过访问来自定义轴属性，例如类型、刻度线、标签等`ChartAxis`属性如`setCategoryType()`, `setCrosses()`， 和`setMajorTickMark()`.
+您可以通过访问`ChartAxis`像属性`setCategoryType()`, `setCrosses()`， 和`setMajorTickMark()`.
 
-### 如何创建其他类型的图表，例如散点图或面积图？
+### 如何创建其他类型的图表，如散点图或面积图？
 
-您可以通过指定适当的选项来创建各种图表类型`ChartType`插入图表时使用`builder.insertChart(ChartType.TYPE, width, height)`.
+您可以通过指定适当的`ChartType`插入图表时使用`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### 如何隐藏图表轴？
 

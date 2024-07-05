@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionen "Document Text Direction" med Aspose.Words för .NET. Den här funktionen låter dig ange textriktningen i ett dokument, vilket är särskilt användbart för språk som är skrivna från höger till vänster, som hebreiska eller arabiska.
+den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionen "Document Text Direction" med Aspose.Words för .NET. Den här funktionen låter dig ange textriktningen i ett dokument, vilket är särskilt användbart för språk som skrivs från höger till vänster, som hebreiska eller arabiska.
 
 ## Steg 1: Sätta upp miljön
 
@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- I detta sista steg sparar vi det resulterande dokumentet i .docx-format med hjälp av`Save` metod och skickar sökvägen till utdatafilen.
+ I detta sista steg sparar vi det resulterande dokumentet i .docx-format med hjälp av`Save` metod och skicka sökvägen till utdatafilen.
 
 Nu kan du köra källkoden för att ladda textdokumentet och bestämma textriktningen. Det resulterande dokumentet kommer att sparas i den angivna katalogen med namnet "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
 

@@ -2,7 +2,7 @@
 title: Formulierveld voor selectievakje invoegen in Word-document
 linktitle: Formulierveld voor selectievakje invoegen in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u formuliervelden met selectievakjes in Word-documenten kunt invoegen met behulp van Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. Ideaal voor ontwikkelaars.
+description: Leer hoe u formuliervelden met selectievakjes in Word-documenten kunt invoegen met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. Ideaal voor ontwikkelaars.
 type: docs
 weight: 10
 url: /nl/net/add-content-using-documentbuilder/insert-check-box-form-field/

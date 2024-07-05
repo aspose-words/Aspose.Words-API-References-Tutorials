@@ -17,7 +17,7 @@ Certifique-se de ter os seguintes pré-requisitos:
 - Biblioteca Aspose.Words para .NET instalada. Você pode baixá-lo usando o gerenciador de pacotes NuGet para instalá-lo.
 - Um caminho do diretório do documento onde o documento de saída será salvo.
 
-## Passo 2: Crie um novo documento e insira um gráfico.
+## Passo 2: Crie um novo documento e insira um gráfico
 
  Crie um novo`Document` objeto e um`DocumentBuilder` para construir o documento.
 

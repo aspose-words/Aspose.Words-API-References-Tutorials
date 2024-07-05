@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## Krok 3: Vytvořte nový modul a zadejte zdrojový kód makra.
+## Krok 3: Vytvořte nový modul a zadejte zdrojový kód makra
  Vytvoříme nový modul vytvořením instance`VbaModule` třídy a uvedením názvu makra, typu (procedurálního modulu) a zdrojového kódu.
 
 ```csharp
@@ -94,7 +94,7 @@ A: Než budete moci vytvořit projekt VBA v dokumentu aplikace Word, musíte mí
 
 #### Otázka: Jak nastavit adresář dokumentů v kódu?
 
- Odpověď: V poskytnutém kódu musíte nahradit.`"YOUR DOCUMENTS DIRECTORY"` s příslušnou cestou k adresáři, kam chcete uložit dokument aplikace Word s projektem VBA.
+ Odpověď: V poskytnutém kódu musíte nahradit`"YOUR DOCUMENTS DIRECTORY"` s příslušnou cestou k adresáři, kam chcete uložit dokument aplikace Word s projektem VBA.
 
 #### Otázka: Jak specifikovat zdrojový kód makra v modulu VBA?
 

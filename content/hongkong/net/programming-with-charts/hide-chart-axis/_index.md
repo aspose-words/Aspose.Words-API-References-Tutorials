@@ -17,7 +17,7 @@ url: /zh-hant/net/programming-with-charts/hide-chart-axis/
 - 已安裝 Aspose.Words for .NET 程式庫。您可以使用 NuGet 套件管理員下載並安裝它。
 - 將儲存輸出文檔的文檔目錄路徑。
 
-## 步驟2：建立一個新文件並插入圖表。
+## 步驟 2：建立一個新文件並插入圖表
 
 創建一個新的`Document`物件和一個`DocumentBuilder`建置文檔。
 
@@ -38,7 +38,7 @@ Chart chart = shape.Chart;
 
 ## 步驟 3：將系列資料加入圖表中
 
-將系列資料新增至圖表。在此範例中，我們將新增五個項目及其對應的值。
+將系列數據新增至圖表。在此範例中，我們將新增五個項目及其對應的值。
 
 ```csharp
 chart.Series.Clear();
@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 Aspose.Words for .NET 是一個功能強大的文件處理庫，使開發人員能夠在 .NET 應用程式中以程式設計方式建立、操作和保存 Word 文件。它為文檔元素（包括圖表和圖表軸）的文字處理提供了廣泛的功能。
 
 #### Q2。如何安裝 Aspose.Words for .NET？
-您可以使用 Visual Studio 中的 NuGet 套件管理器下載 Aspose.Words for .NET 來安裝它。只需在 NuGet 套件管理器中搜尋“Apose.Words”並將其安裝到您的專案中即可。
+您可以使用 Visual Studio 中的 NuGet 套件管理器下載 Aspose.Words for .NET 來安裝它。只需在 NuGet 套件管理器中搜尋“Aspose.Words”並將其安裝到您的專案中即可。
 
 #### Q3。我可以隱藏圖表的 X 軸和 Y 軸嗎？
 是的，您可以使用 Aspose.Words for .NET 隱藏圖表的 X 軸和 Y 軸。要隱藏 X 軸，您可以訪問`AxisX`圖表的屬性並設定`Hidden`財產給`true`。同樣，要隱藏 Y 軸，您可以訪問`AxisY`屬性並設定`Hidden`財產給`true`。這允許您從圖表視覺化中刪除兩個軸。

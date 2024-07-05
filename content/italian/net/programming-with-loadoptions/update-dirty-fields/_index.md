@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## Conclusione
 
-In questa guida abbiamo spiegato come caricare un documento aggiornando i campi sporchi utilizzando la libreria Aspose.Words per .NET. Seguendo i passaggi forniti e utilizzando il codice sorgente C# fornito, puoi applicare facilmente questa funzionalità nella tua applicazione C#. L'aggiornamento dei campi sporchi al caricamento del documento mostrerà i valori più recenti nel documento Word.
+In questa guida abbiamo spiegato come caricare un documento aggiornando i campi sporchi utilizzando la libreria Aspose.Words per .NET. Seguendo i passaggi forniti e utilizzando il codice sorgente C# fornito, puoi applicare facilmente questa funzionalità nella tua applicazione C#. I campi sporchi di aggiornamento al caricamento del documento mostreranno i valori più recenti nel documento Word.
 
 
 ### Domande frequenti per l'aggiornamento dei campi sporchi nel documento Word

@@ -96,7 +96,7 @@ builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DO
 ```
 
 ### Specificare i livelli di elenco: 
-Scorri diversi livelli di elenco e aggiungi contenuto.
+Scorri diversi livelli di elenco e aggiungi contenuti.
 
 ```java
 for (int i = 0; i < 9; i++) {
@@ -164,7 +164,7 @@ Seguendo questi passaggi, puoi creare documenti con livelli di elenco personaliz
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Crea un elenco numerato basato su uno dei modelli di elenco di Microsoft Word.
+        // Crea un elenco numerato basato su uno dei modelli di elenco di Microsoft Word
         // applicarlo al paragrafo corrente del generatore di documenti.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Ci sono nove livelli in questo elenco, proviamoli tutti.
@@ -173,7 +173,7 @@ Seguendo questi passaggi, puoi creare documenti con livelli di elenco personaliz
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Crea un elenco puntato basato su uno dei modelli di elenco di Microsoft Word.
+        // Crea un elenco puntato basato su uno dei modelli di elenco di Microsoft Word
         // applicarlo al paragrafo corrente del generatore di documenti.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

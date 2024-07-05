@@ -154,7 +154,7 @@ public void documentTextDirection() throws Exception {
 
 ## Conclusie
 
-In deze handleiding hebben we onderzocht hoe u tekstbestanden kunt laden met Aspose.Words voor Java, lijsten kunt detecteren, met spaties kunt omgaan en de tekstrichting kunt bepalen. Met deze technieken kunt u tekstdocumenten effectief manipuleren in uw Java-toepassingen.
+In deze handleiding hebben we onderzocht hoe u tekstbestanden kunt laden met Aspose.Words voor Java, hoe u lijsten kunt detecteren, hoe u met spaties kunt omgaan en hoe u de tekstrichting kunt bepalen. Met deze technieken kunt u tekstdocumenten effectief manipuleren in uw Java-toepassingen.
 
 ## Veelgestelde vragen
 

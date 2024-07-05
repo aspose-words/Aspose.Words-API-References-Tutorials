@@ -93,7 +93,7 @@ S: Ja, du kan formatera kommentartext i Aspose.Words för .NET med hjälp av de 
 
 #### F: Hur kan jag hämta alla kommentarer som finns i ett dokument?
 
- S: Du kan hämta alla kommentarer som presenteras i ett dokument med hjälp av`Document.Comments` fast egendom.
+ S: Du kan hämta alla kommentarer som finns i ett dokument med hjälp av`Document.Comments` fast egendom.
 
 #### F: Kan jag ta bort en specifik kommentar i Aspose.Words för .NET?
 

@@ -2,34 +2,34 @@
 title: 引用
 linktitle: 引用
 second_title: Aspose.Words 文档处理 API
-description: 了解如何通过 Aspose.Words for .NET 分步指南使用引用。
+description: 了解如何通过 Aspose.Words for .NET 分步指南使用引号。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/quote/
 ---
 
-在此示例中，我们将解释如何使用 Aspose.Words for .NET Quote 的引用功能，通过用特殊边框包围文本部分来突出显示它们。
+在这个例子中，我们将解释如何使用 Aspose.Words for .NET 的引用功能。引用用于通过用特殊边框包围文本部分来突出显示文本部分。
 
-## 第 1 步：使用文档生成器
+## 步骤 1：使用文档生成器
 
-首先，我们将使用文档生成器将内容添加到文档中。
+首先，我们将使用文档生成器向文档添加内容。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 第 2 步：使用默认引文样式
+## 步骤 2：使用默认引用样式
 
-我们将使用名为“引用”的默认段落样式将引用格式应用于文本。
+我们将使用名为“Quote”的默认段落样式将引号格式应用于文本。
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Quote";
 builder.Writeln("Blockquote");
 ```
 
-## 步骤 3：为嵌套级别创建样式
+## 步骤 3：创建嵌套级别的样式
 
-我们可以使用以下命令为嵌套级别创建样式`Styles.Add`的方法`Document`目的。在此示例中，我们创建一个名为“Quote1”的样式来表示嵌套报价级别。
+我们可以使用以下方式创建嵌套级别的样式`Styles.Add`方法`Document`对象。在此示例中，我们创建一个名为“Quote1”的样式来表示嵌套的引用级别。
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
@@ -42,10 +42,10 @@ builder.Writeln("1. Nested blockquote");
 
 
 ```csharp
-//使用文档生成器将内容添加到文档中。
+//使用文档生成器向文档添加内容。
 DocumentBuilder builder = new DocumentBuilder();
 
-//默认情况下，文档存储第一级的块引用样式。
+//默认情况下，文档存储第一级的 blockquote 样式。
 builder.ParagraphFormat.StyleName = "Quote";
 builder.Writeln("Blockquote");
 
@@ -63,16 +63,16 @@ builder.Writeln("1. Nested blockquote");
 
 #### 问：Markdown 中的引用是什么？
 
-答：Markdown 中的引用是一种突出显示其他来源的文本段落或引用著名引用的方法。
+答：Markdown 中的引用是一种突出显示来自其他来源的文本段落或引用名人名言的方式。
 
 #### 问：如何在 Markdown 中使用引号？
 
-答：要在 Markdown 中使用引用，请将引用文本括在尖括号中 (`>`）。引文的每一行必须以 V 形开头。
+答：要在 Markdown 中使用引文，请将引文文本括在尖括号中 (`>`）。引文的每一行都必须以 V 形符号开头。
 
-#### 问：Markdown 引号支持属性吗？
+#### Q：Markdown 引文支持属性吗？
 
-答：Markdown 引用不支持特定属性。它们只是通过引用文本的格式来突出显示。
+A：Markdown 引用不支持指定属性，只是通过引用文本的格式来高亮显示。
 
-#### 问：可以在 Markdown 中嵌入引号吗？
+#### 问：你能在 Markdown 中嵌入引号吗？
 
-答：是的，可以通过添加额外的尖括号（`>`）。
+答：是的，可以在 Markdown 中嵌套引号，只需添加额外的尖括号 (`>`）。

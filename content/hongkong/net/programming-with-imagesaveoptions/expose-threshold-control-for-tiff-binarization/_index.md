@@ -38,7 +38,7 @@ ThresholdForFloydSteinbergDithering = 254
 
 在此步驟中，我們配置映像的備份選項。我們創建一個新的`ImageSaveOptions`指定所需儲存格式的對象，此處「Tiff」表示 TIFF 格式。我們還設定壓縮選項、影像色彩模式和具有指定二值化閾值的 TIFF 二值化方法。
 
-## 第 4 步：備份映像
+## 步驟 4：備份映像
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);

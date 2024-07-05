@@ -1,6 +1,6 @@
 ---
-title: コンテンツへのリンクの構成
-linktitle: コンテンツへのリンクの構成
+title: コンテンツへのリンクの設定
+linktitle: コンテンツへのリンクの設定
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET を使用してドキュメント内のコンテンツへのリンクを設定するためのステップバイステップ ガイド。
 type: docs
@@ -8,13 +8,13 @@ weight: 10
 url: /ja/net/programming-with-document-properties/configuring-link-to-content/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用してコンテンツへのリンクを設定するための C# ソース コードを説明します。この機能を使用すると、ドキュメント内の特定のコンテンツにリンクできます。
+このチュートリアルでは、C# ソース コードを使用して、Aspose.Words for .NET でコンテンツへのリンクを設定する方法を説明します。この機能を使用すると、ドキュメント内の特定のコンテンツにリンクできます。
 
-## ステップ 1: プロジェクトのセットアップ
+## ステップ1: プロジェクトのセットアップ
 
-まず、お気に入りの IDE で新しい C# プロジェクトを作成します。 Aspose.Words for .NET ライブラリがプロジェクトで参照されていることを確認してください。
+まず、お気に入りの IDE で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET ライブラリが参照されていることを確認します。
 
-## ステップ 2: ドキュメントとコンストラクターの作成
+## ステップ2: ドキュメントとコンストラクタの作成
 
 このステップでは、新しいドキュメントを作成し、コンストラクターを初期化します。次のコードを使用します。
 
@@ -23,9 +23,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ 3: ブックマークを作成する
+## ステップ3: ブックマークを作成する
 
-次に、ドキュメント内にブックマークを作成します。次のコードを使用して、内部にテキストを含むブックマークを作成します。
+次に、ドキュメントにブックマークを作成します。次のコードを使用して、テキストを含むブックマークを作成します。
 
 ```csharp
 builder. StartBookmark("MyBookmark");
@@ -35,9 +35,9 @@ builder. EndBookmark("MyBookmark");
 
 このコードは、「MyBookmark」というブックマークを作成し、その中にテキストを追加します。
 
-## ステップ 4: コンテンツ リンクの設定
+## ステップ4: コンテンツリンクの設定
 
-次に、ドキュメントのプロパティを使用してコンテンツへのリンクを設定します。次のコードを使用して、コンテンツへのリンクを追加および取得します。
+次に、ドキュメント プロパティを使用してコンテンツへのリンクを構成します。コンテンツへのリンクを追加および取得するには、次のコードを使用します。
 
 ```csharp
 //ドキュメント内のすべてのカスタム プロパティのリストを取得します。
@@ -53,9 +53,9 @@ string linkSource = customProperty.LinkSource;
 string customPropertyValue = customProperty.Value.ToString();
 ```
 
-このコードは、ブックマーク「MyBookmark」を持つ「Bookmark」というコンテンツ関連のプロパティを追加します。次に、リンク ステータス、リンク ソース、プロパティ値などのコンテンツ関連のプロパティ情報を取得します。
+このコードは、ブックマーク「MyBookmark」に「Bookmark」というコンテンツ関連のプロパティを追加します。次に、リンク ステータス、リンク ソース、プロパティ値などのコンテンツ関連のプロパティ情報を取得します。
 
-### Aspose.Words for .NET を使用してコンテンツへのリンクを構成するためのソース コードの例
+### Aspose.Words for .NET を使用してコンテンツへのリンクを構成するためのサンプル ソース コード
 
 ```csharp
 
@@ -68,7 +68,7 @@ string customPropertyValue = customProperty.Value.ToString();
 
 	//ファイルからすべてのカスタム ドキュメント プロパティのリストを取得します。
 	CustomDocumentProperties customProperties = doc.CustomDocumentProperties;
-	// content プロパティにリンクを追加します。
+	//コンテンツプロパティへのリンクを追加します。
 	DocumentProperty customProperty = customProperties.AddLinkToContent("Bookmark", "MyBookmark");
 	customProperty = customProperties["Bookmark"];
 

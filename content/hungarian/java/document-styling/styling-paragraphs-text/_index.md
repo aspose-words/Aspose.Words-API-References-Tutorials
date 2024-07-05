@@ -321,7 +321,7 @@ A táblázatok hatékony módszert jelentenek az adatok rendszerezésére és be
 // Hozzon létre egy új dokumentumot
 Document doc = new Document();
 
-// Hozzon létre egy táblázatot 3 sorból és 3 oszlopból.
+// Hozzon létre egy táblázatot 3 sorból és 3 oszlopból
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

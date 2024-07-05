@@ -27,7 +27,7 @@ Výukové programy poskytují pevný základ pro vytváření robustních a šk�
 Naučte se zpracování textu s Aspose.Words pro Java. Vytvářejte, upravujte a manipulujte s dokumenty programově. Vylepšete své dovednosti v oblasti zpracování dokumentů ještě dnes.
 ### [Zpracování tabulky](./table-processing/)
 Naučte se Výkonné rozhraní API pro zpracování tabulek pro vývojáře v jazyce Java pomocí Aspose.Word for Java. Vytvářejte, manipulujte a formátujte tabulky v dokumentech aplikace Word. Vylepšete své aplikace pro zpracování dokumentů ještě dnes.
-### [Styling dokumentu](./document-styling/)
+### [Styl dokumentu](./document-styling/)
 Ovládněte styling dokumentů pomocí výukových programů Aspose.Words for Java. Naučte se pokročilé techniky formátování pro vizuálně přitažlivé a efektivní dokumenty. 
 ### [Sloučení dokumentů](./document-merging/)
 Odemkněte potenciál slučování dokumentů v Javě pomocí Aspose.Words! Naučte se efektivní slučování dokumentů, zpracování textu a zpracování dokumentů pomocí podrobných výukových programů. 
@@ -44,7 +44,7 @@ Rozdělte dokumenty snadno pomocí Aspose.Words pro Java! Efektivně rozdělte v
 ### [Revize dokumentu](./document-revision/)
 Zjednodušte revize dokumentů pomocí Aspose.Words pro Java! Sledujte změny, spravujte správu verzí a automatizujte úlohy revizí bez námahy. 
 ### [Načítání a ukládání dokumentu](./document-loading-and-saving/)
-Objevte, jak bez námahy načítat a ukládat dokumenty pomocí Aspose.Words for Java s našimi komplexními výukovými programy. Zlepšete své dovednosti v práci s dokumenty Java ještě dnes!
+Objevte, jak bez námahy načítat a ukládat dokumenty pomocí Aspose.Words for Java s našimi komplexními výukovými programy. Zvyšte své dovednosti v práci s dokumenty Java ještě dnes!
 ### [Manipulace s dokumenty](./document-manipulation/)
 Naučte se, jak efektivně manipulovat s dokumenty pomocí Aspose.Words for Java, pomocí našich obsáhlých výukových programů. Zvyšte své dovednosti v oblasti zpracování dokumentů Java ještě dnes!
 ### [Konverze a export dokumentů](./document-conversion-and-export/)

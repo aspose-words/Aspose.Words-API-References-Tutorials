@@ -13,7 +13,7 @@ Bandingkan Dokumen adalah tutorial komprehensif tentang membandingkan dokumen me
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Bandingkan Untuk Sama Dalam Dokumen Word](./compare-for-equal/) | Panduan langkah demi langkah untuk menjelaskan kode sumber C# Compare for Equals ke dalam fitur dokumen Word dengan Aspose.Words for .NET. |
-| [Bandingkan Opsi Dalam Dokumen Word](./compare-options/) | Panduan langkah demi langkah untuk menjelaskan kode sumber C# dari Opsi Bandingkan di fitur dokumen Word dengan Aspose.Words untuk .NET. |
-| [Target Perbandingan Dalam Dokumen Word](./comparison-target/) | Pelajari membandingkan target dalam fitur dokumen Word Aspose.Words untuk .NET yang memungkinkan Anda membandingkan dokumen dan menghasilkan dokumen baru yang berisi perubahan yang dibuat. |
+| [Bandingkan Untuk Sama Dalam Dokumen Word](./compare-for-equal/) | Pelajari cara membandingkan dua dokumen Word untuk kesetaraan menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah ini untuk memastikan dokumen Anda identik. |
+| [Bandingkan Opsi Dalam Dokumen Word](./compare-options/) | Pelajari cara membandingkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Pastikan konsistensi dokumen dengan mudah. |
+| [Target Perbandingan Dalam Dokumen Word](./comparison-target/) | Bandingkan dokumen Word dengan mudah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Menghemat waktu dan meningkatkan akurasi dalam perbandingan dokumen. |
 | [Granularitas Perbandingan Dalam Dokumen Word](./comparison-granularity/) | Pelajari perbandingan perincian dalam fitur dokumen Word Aspose.Words untuk .NET yang memungkinkan dokumen dibandingkan karakter demi karakter, melaporkan perubahan yang dilakukan. |

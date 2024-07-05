@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-node/typed-access/
 ---
 
-Zde je průvodce krok za krokem vysvětlující zdrojový kód C# níže, který ilustruje, jak používat funkci Typed Access s Aspose.Words pro .NET.
+Zde je podrobný průvodce vysvětlující zdrojový kód C# níže, který ukazuje, jak používat funkci Typed Access s Aspose.Words pro .NET.
 
 ## Krok 1: Importujte potřebné reference
 Než začnete, ujistěte se, že jste do svého projektu naimportovali potřebné reference pro použití Aspose.Words for .NET. To zahrnuje import knihovny Aspose.Words a přidání požadovaných jmenných prostorů do zdrojového souboru.
@@ -83,7 +83,7 @@ Toto je kompletní ukázkový kód pro zadaný přístup k tabulkám pomocí Asp
 
 #### Otázka: Co je typovaný přístup v Node.js?
 
-Odpověď: Typový přístup v Node.js se týká použití konkrétních typů uzlů pro přístup k vlastnostem a hodnotám uzlů v dokumentu XML. Spíše než pomocí obecných vlastností používá typovaný přístup specifické metody pro přístup k určitým typům uzlů, jako jsou textové uzly, uzly prvků, uzly atributů atd.
+Odpověď: Typový přístup v Node.js odkazuje na použití konkrétních typů uzlů pro přístup k vlastnostem a hodnotám uzlů v dokumentu XML. Spíše než pomocí obecných vlastností používá typovaný přístup specifické metody pro přístup k určitým typům uzlů, jako jsou textové uzly, uzly prvků, uzly atributů atd.
 
 #### Otázka: Jak získám přístup k uzlům pomocí zadaného přístupu?
 

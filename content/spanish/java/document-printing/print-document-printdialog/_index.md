@@ -29,7 +29,7 @@ Para comenzar, cree un nuevo proyecto Java en su entorno de desarrollo integrado
 Para utilizar Aspose.Words para Java en su proyecto, siga estos pasos:
 
 - Descargue la biblioteca Aspose.Words para Java del sitio web.
-- Agregue el archivo JAR a la ruta de clases de su proyecto.
+- Agregue el archivo JAR a la ruta de clase de su proyecto.
 
 ## Imprimir un documento con PrintDialog
 

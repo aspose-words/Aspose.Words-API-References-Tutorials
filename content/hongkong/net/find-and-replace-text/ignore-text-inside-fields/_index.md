@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## 步驟 3：使用「忽略欄位內的文字」功能
 
-要在後續操作中忽略字段內的文本，我們可以使用`FindReplaceOptions`對象並設定`IgnoreFields`財產給`true`:
+要在後續操作中忽略字段內的文本，我們可以使用`FindReplaceOptions`對象並設定`IgnoreFields`財產給`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## 第 6 步：更改選項以包含字段
 
-我們在輸出結果中包含欄位內的文本，我們可以更改選項以不忽略欄位。為此我們將設置`IgnoreFields`財產給`false`:
+我們在輸出結果中包含欄位內的文本，我們可以更改選項以不忽略欄位。為此我們將設置`IgnoreFields`財產給`false`：
 
 ```csharp
 options.IgnoreFields = false;
@@ -101,7 +101,7 @@ Console.WriteLine(doc.GetText());
 
 ## 結論
 
-在本文中，我們探索了 C# 原始程式碼，以了解如何使用 Aspose.Words for .NET 中的忽略欄位內文字功能。我們按照逐步指南建立一個文檔，插入一個內部有文字的字段，使用「忽略字段內的文字」功能，使用正規表示式執行搜尋和取代操作，並顯示修改後的文檔。
+在本文中，我們探索了 C# 原始程式碼，以了解如何在 Aspose.Words for .NET 中使用「忽略欄位內的文字」功能。我們按照逐步指南建立一個文檔，插入一個內部有文字的字段，使用「忽略字段內的文字」功能，使用正規表示式執行搜尋和取代操作，並顯示修改後的文檔。
 
 ### 常見問題解答
 
@@ -128,7 +128,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 #### Q：如何忽略 Aspose.Words for .NET 中欄位內的文字？
 
-答：要在後續操作中忽略欄位內的文本，您可以使用`FindReplaceOptions`對象並設定`IgnoreFields`財產給`true`:
+答：要在後續操作中忽略欄位內的文本，您可以使用`FindReplaceOptions`對象並設定`IgnoreFields`財產給`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -153,7 +153,7 @@ Console.WriteLine(doc.GetText());
 
 #### Q：如何在 Aspose.Words for .NET 的輸出結果中包含欄位？
 
-答：要在輸出結果中包含欄位內的文本，您可以變更選項以不忽略欄位。為此，您可以設定`IgnoreFields`的財產`FindReplaceOptions`反對`false`:
+答：要在輸出結果中包含欄位內的文本，您可以變更選項以不忽略欄位。為此，您可以設定`IgnoreFields`的財產`FindReplaceOptions`反對`false`：
 
 ```csharp
 options.IgnoreFields = false;

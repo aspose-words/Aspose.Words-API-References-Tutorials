@@ -34,7 +34,7 @@ Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumköny
 Ezután elkészítjük a beágyazott táblát úgy, hogy cellákat szúrunk be a külső táblába, és hozunk létre egy új táblázatot az első cellában. Használja a következő kódot:
 
 ```csharp
-// Illessze be a külső táblázat első celláját
+// Szúrja be a külső táblázat első celláját
 Cell cell = builder. InsertCell();
 builder.Writeln("Cell 1 of the outer table");
 

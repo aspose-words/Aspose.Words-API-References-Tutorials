@@ -55,7 +55,7 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 
 ## 5단계: 원본 문서를 대상 문서에 추가
 
- 사용`AppendDocument` 소스 형식을 유지하면서 수정된 소스 문서를 대상 문서에 추가하는 대상 문서의 메소드입니다.
+ 사용`AppendDocument` 소스 형식을 유지하면서 수정된 소스 문서를 대상 문서에 추가하는 대상 문서의 메서드입니다.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

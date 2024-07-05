@@ -1,6 +1,6 @@
 ---
-title: 文檔頁分隔
-linktitle: 文檔頁分隔
+title: 文件頁分隔
+linktitle: 文件頁分隔
 second_title: Aspose.Words Java 文件處理 API
 description: 了解如何使用 Aspose.Words for Java 執行文件頁面分隔。此綜合指南提供了高效文件處理的逐步說明和原始程式碼。
 type: docs
@@ -30,7 +30,7 @@ url: /zh-hant/java/document-splitting/document-page-separation/
 
 ## 第 1 步：載入文檔
 
-首先，我們需要載入要分隔頁面的文檔。您可以這樣做：
+首先，我們需要載入要分成頁面的文檔。您可以這樣做：
 
 ```java
 //載入文檔
@@ -84,7 +84,7 @@ for (int i = 0; i < pages.size(); i++) {
 
 Aspose.Words for Java 是一個商業函式庫，但它提供免費試用版。您可以查看他們的網站以獲取定價詳細資訊和許可資訊。
 
-### 我可以將合併頁面分離回單一文件嗎？
+### 我可以將分離的頁面合併回單一文件嗎？
 
 是的，您可以使用 Aspose.Words for Java 將分離的頁面合併回單一文件。有關合併說明，請參閱文件。
 

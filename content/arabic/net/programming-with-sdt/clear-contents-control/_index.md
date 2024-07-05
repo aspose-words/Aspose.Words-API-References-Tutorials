@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.Structu
 ```
 
 ## الخطوة 3: امسح محتويات StructuredDocumentTag
- امسح محتويات SDT باستخدام`Clear` طريقة. يؤدي هذا إلى إزالة أي عقد نصية أو فرعية ضمن عنصر التحكم في المحتوى.
+ امسح محتويات SDT باستخدام`Clear` طريقة. يؤدي هذا إلى إزالة أي عقد نصية أو فرعية ضمن عنصر تحكم المحتوى.
 
 ```csharp
 sdt.Clear();

@@ -85,7 +85,7 @@ A: Chcete-li odstranit komentář v Aspose.Words pro .NET, můžete použít`Com
 
 #### Otázka: Jak mohu získat přístup ke stávajícím komentářům v Aspose.Words for .NET?
 
- Odpověď: Ke stávajícím komentářům v Aspose.Words pro .NET můžete přistupovat pomocí`CommentCollection` vlastnictvím`Document` objekt. To vám umožní procházet všechny komentáře v dokumentu.
+ Odpověď: Ke stávajícím komentářům v Aspose.Words for .NET můžete přistupovat pomocí`CommentCollection` vlastnictvím`Document` objekt. To vám umožní procházet všechny komentáře v dokumentu.
 
 #### Otázka: Mohu upravit text komentáře v Aspose.Words pro .NET?
 

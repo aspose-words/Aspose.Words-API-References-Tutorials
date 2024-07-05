@@ -114,7 +114,7 @@ Bądź na bieżąco, gdy będziemy zagłębiać się w właściwości pól formu
 
 ## Rodzaje pól formularza
 
-Jak widzieliśmy, do przechwytywania danych dostępne są różne typy pól formularzy. W nadchodzących sekcjach szczegółowo omówimy każdy typ, opisując jego tworzenie, dostosowywanie i ekstrakcję danych.
+Jak widzieliśmy, do przechwytywania danych dostępne są różne typy pól formularzy. W nadchodzących sekcjach szczegółowo omówimy każdy typ, opisując jego tworzenie, dostosowywanie i wyodrębnianie danych.
 
 ### Pola wprowadzania tekstu
 
@@ -244,9 +244,9 @@ Aby zainstalować Aspose.Words dla Pythona, użyj następującego polecenia pip:
 pip install aspose-words
 ```
 
-### Czy mogę ustawić domyślne wartości dla pól formularza?
+### Czy mogę ustawić wartości domyślne dla pól formularza?
 
- Tak, możesz ustawić domyślne wartości dla pól formularza korzystając z odpowiednich właściwości. Na przykład, aby ustawić domyślny tekst w polu wprowadzania tekstu, użyj opcji`text` nieruchomość.
+ Tak, możesz ustawić domyślne wartości pól formularza, korzystając z odpowiednich właściwości. Na przykład, aby ustawić domyślny tekst w polu wprowadzania tekstu, użyj opcji`text` nieruchomość.
 
 ### Czy pola formularzy są dostępne dla użytkowników niepełnosprawnych?
 

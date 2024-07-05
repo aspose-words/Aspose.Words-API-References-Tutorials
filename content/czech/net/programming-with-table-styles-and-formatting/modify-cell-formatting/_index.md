@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Krok 3: Přejděte do buňky, kterou chcete upravit
- Chcete-li změnit formátování buňky, musíme přejít na konkrétní buňku v tabulce. Používáme`GetChild()` a`FirstRow.FirstCell` metody pro získání odkazu na první buňku prvního pole.
+ Chcete-li změnit formátování buňky, musíme přejít na konkrétní buňku v tabulce. Používáme`GetChild()` a`FirstRow.FirstCell` metody k získání odkazu na první buňku prvního pole.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

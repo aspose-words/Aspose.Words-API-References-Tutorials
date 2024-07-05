@@ -42,7 +42,7 @@ Console.WriteLine(
 
 kód ellenőrzi, hogy a távol-keleti nyelv azonosítója megegyezik-e a japán nyelvével. Az eredménynek megfelelően egy megfelelő üzenetet jelenít meg.
 
-### Példa forráskód a Japán hozzáadása szerkesztési nyelvként funkcióhoz az Aspose.Words for .NET használatával
+### Példa forráskódra a Japán hozzáadása szerkesztési nyelvként az Aspose.Words for .NET használatával forráskódjához
 
 ```csharp
 

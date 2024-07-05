@@ -51,7 +51,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Здесь,`Document` создает новый экземпляр документа и`DocumentBuilder` Предоставляет нам инструменты для добавления содержимого в документ.
+ Здесь,`Document` создает новый экземпляр документа и`DocumentBuilder` предоставляет нам инструменты для добавления содержимого в документ.
 
 ## Шаг 3: Запустите закладку
 
@@ -81,7 +81,7 @@ builder.Writeln("This is just a fine bookmark.");
 builder.EndBookmark("FineBookmark");
 ```
 
-`EndBookmark` Метод завершает закладку, которую мы начали ранее.
+`EndBookmark` метод завершает закладку, которую мы начали ранее.
 
 ## Шаг 6: Сохраните документ
 

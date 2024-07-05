@@ -32,7 +32,7 @@ import com.aspose.words.*;
 
 public class DocumentJoiner {
     public static void main(String[] args) throws Exception {
-        // เริ่มต้น Aspose
+        // เริ่มต้น Aspose.Words
         License license = new License();
         license.setLicense("Aspose.Words.Java.lic");
     }

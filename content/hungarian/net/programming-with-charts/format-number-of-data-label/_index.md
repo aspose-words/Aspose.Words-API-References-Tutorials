@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -94,7 +94,7 @@ Ezzel befejeződik az adatcímkék számának formázása egy diagramban az Aspo
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 	// Vagy beállíthatja, hogy a formátumkód egy forráscellához legyen kapcsolva,
-	//Ebben az esetben a NumberFormat visszaáll általánosra, és a forráscellából örökli.
+	//ebben az esetben a NumberFormat visszaáll általánosra, és a forráscellából öröklődik.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
@@ -115,7 +115,7 @@ Az Aspose.Words for .NET használatával hatékony diagramkészítési képessé
 Az Aspose.Words for .NET egy funkciókban gazdag dokumentumfeldolgozó könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és mentését .NET-alkalmazásokban. Funkciók széles skáláját kínálja a dokumentumelemekkel, köztük diagramokkal és adatcímkékkel ellátott szövegfeldolgozáshoz.
 
 #### Q2. Hogyan telepíthetem az Aspose.Words for .NET fájlt?
-Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjével töltse le. Egyszerűen keresse meg az „Apose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
+Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjével töltse le. Egyszerűen keresse meg az „Aspose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
 
 #### Q3. Formázhatom a diagram egyéb aspektusait az Aspose.Words for .NET használatával?
 Igen, az Aspose.Words for .NET kiterjedt lehetőségeket biztosít a diagramok különböző aspektusainak formázásához. Az adatcímkéken kívül testreszabhatja a diagram típusát, a sorozat adatait, a tengely tulajdonságait, a jelmagyarázatot, a címet, a diagram területét és sok más elemet. Az API finoman szabályozza a diagram megjelenését és formázását.

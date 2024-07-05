@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-footnote-and-endnote/set-foot-note-columns/
 ---
 
-V tomto podrobném tutoriálu vás provedeme tím, jak používat Aspose.Words pro .NET k nastavení počtu sloupců pro poznámky pod čarou v dokumentu aplikace Word. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+tomto podrobném tutoriálu vás provedeme tím, jak používat Aspose.Words pro .NET k nastavení počtu sloupců pro poznámky pod čarou v dokumentu aplikace Word. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
 
  Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nastavený ve svém vývojovém prostředí. Pokud jste tak neučinili, stáhněte si a nainstalujte knihovnu z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Krok 2: Nastavení sloupců poznámek pod čarou
 
- Dále přejděte na`FootnoteOptions` vlastnost dokumentu a nastavte`Columns` vlastnost k určení počtu sloupců pro poznámky pod čarou. V tomto příkladu jsme jej nastavili na 3 sloupce:
+ Dále přejděte na`FootnoteOptions` vlastnost dokumentu a nastavte`Columns` vlastnost k určení počtu sloupců pro poznámky pod čarou. V tomto příkladu jej nastavíme na 3 sloupce:
 
 ```csharp
 doc.FootnoteOptions.Columns = 3;
@@ -57,7 +57,7 @@ Neváhejte použít tento kód ve svých vlastních projektech a upravit jej pod
 
 #### Otázka: Jak mohu nakonfigurovat počet sloupců pro poznámky pod čarou v Aspose.Words?
 
- A: Chcete-li nakonfigurovat počet sloupců pro poznámky pod čarou v Aspose.Words, musíte použít`FootnoteOptions` třída a`ColumnsCount` vlastnictví. Tuto vlastnost můžete nastavit na libovolný počet sloupců.
+A: Chcete-li nakonfigurovat počet sloupců pro poznámky pod čarou v Aspose.Words, musíte použít`FootnoteOptions` třída a`ColumnsCount` vlastnictví. Tuto vlastnost můžete nastavit na libovolný počet sloupců.
 
 #### Otázka: Jaké jsou výhody nastavení sloupců poznámek pod čarou?
 

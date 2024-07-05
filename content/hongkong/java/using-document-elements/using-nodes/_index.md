@@ -112,10 +112,10 @@ Aspose.Words for Java 是一個 Java 函式庫，可讓開發人員以程式設�
 您可以從以下位置下載並安裝 Aspose.Words for Java：[這裡](https://releases.aspose.com/words/java/).
 
 ### Q3。有免費試用嗎？
-是的，您可以獲得 Aspose.Words for Java 的免費試用版。[這裡](https://releases.aspose.com/).
+是的，您可以免費試用 Aspose.Words for Java[這裡](https://releases.aspose.com/).
 
 ### Q4。我在哪裡可以獲得臨時駕照？
-您可以獲得 Aspose.Words for Java 的臨時授權。[這裡](https://purchase.aspose.com/temporary-license/).
+您可以獲得 Aspose.Words for Java 的臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
 
 ### Q5.在哪裡可以找到對 Aspose.Words for Java 的支援？
 如需支援和討論，請訪問[Aspose.Words for Java 論壇](https://forum.aspose.com/).

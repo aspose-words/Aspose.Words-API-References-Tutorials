@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- De`Resolution` egenskapen anger målupplösningen för bilderna och`ResolutionThreshold`Egenskapen anger den lägsta upplösningen under vilken bilderna inte kommer att skalas ned.
+ De`Resolution` egenskapen anger målupplösningen för bilderna och`ResolutionThreshold`egenskapen anger den lägsta upplösningen under vilken bilderna inte kommer att skalas ned.
 
 ## Steg 3: Konvertera dokument till PDF
 

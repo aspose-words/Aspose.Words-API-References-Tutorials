@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## Steg 3: Ta bort alla avsnitt
- För att ta bort alla avsnitt från dokumentet använder vi`Clear` metod för`Sections` insamling av dokumenten.
+ För att ta bort alla avsnitt från dokumentet använder vi`Clear` metod för`Sections` insamling av dokumentet.
 
 ```csharp
 doc.Sections.Clear();
@@ -85,7 +85,7 @@ doc.AppendChild(new Section(doc));
 
 #### F: Hur tar man bort alla avsnitt i Aspose.Words för .NET?
 
- S: För att ta bort alla avsnitt från dokumentet i Aspose.Words för .NET kan du använda`Clear` metod för`Sections` insamling av dokument:
+ S: För att ta bort alla avsnitt från dokumentet i Aspose.Words för .NET kan du använda`Clear` metod för`Sections` samling av dokumentet:
 
 ```csharp
 doc.Sections.Clear();

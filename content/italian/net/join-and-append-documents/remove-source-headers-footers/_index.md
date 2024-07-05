@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Passaggio 2: caricare i documenti di origine e di destinazione
 
-Successivamente, è necessario caricare i documenti di origine e di destinazione utilizzando Aspose.Words.`Document` classe. Aggiorna i nomi dei file nel file`Document` costruttore in base ai nomi dei documenti.
+Successivamente, è necessario caricare i documenti di origine e di destinazione utilizzando Aspose.Words`Document` classe. Aggiorna i nomi dei file nel file`Document` costruttore in base ai nomi dei documenti.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: rimuovere intestazioni e piè di pagina dalle sezioni del documento di origine
 
- Per rimuovere intestazioni e piè di pagina da ciascuna sezione del documento di origine, puoi scorrere le sezioni utilizzando a`foreach` loop e chiama il file`ClearHeadersFooters` metodo.
+ Per rimuovere intestazioni e piè di pagina da ciascuna sezione del documento di origine, puoi scorrere le sezioni utilizzando a`foreach` loop e chiama il`ClearHeadersFooters` metodo.
 
 ```csharp
 foreach (Section section in srcDoc.Sections)

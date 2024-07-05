@@ -26,7 +26,7 @@ const string html=@"
 ";
 ```
 
-## Βήμα 2: Ορίστε τις επιλογές φόρτωσης HTML
+## Βήμα 2: Ορίστε επιλογές φόρτωσης HTML
 
  Στη συνέχεια, δημιουργούμε ένα`HtmlLoadOptions` αντικείμενο και ορίστε το`PreferredControlType`ιδιοκτησία σε`HtmlControlType.StructuredDocumentTag`. Αυτό λέει στο Aspose.Words να χρησιμοποιεί StructuredDocumentTags για να αναπαριστά την HTML κατά τη φόρτωση.
 

@@ -2,7 +2,7 @@
 title: Insertar documento con el constructor
 linktitle: Insertar documento con el constructor
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a insertar un documento al final de otro documento usando Aspose.Words para .NET.
+description: Aprenda cómo insertar un documento al final de otro documento usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/join-and-append-documents/insert-document-with-builder/

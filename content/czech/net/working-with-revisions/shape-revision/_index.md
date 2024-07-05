@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Krok 3: Získejte kolekci tvarů a zkontrolujte revize.
+## Krok 3: Získejte kolekci tvarů a zkontrolujte revize
 
 Získáme kolekci tvarů z dokumentu a zkontrolujeme revize spojené s každým tvarem.
 

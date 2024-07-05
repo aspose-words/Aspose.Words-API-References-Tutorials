@@ -131,4 +131,4 @@ Sim, você pode copiar cabeçalhos e rodapés entre qualquer seção de um docum
 
 ### Q5: Existe uma avaliação gratuita disponível para Aspose.Words for .NET?
 
-Sim, você pode baixar uma versão de avaliação gratuita no site[página de download](https://releases.aspose.com/).
+ Sim, você pode baixar uma versão de avaliação gratuita no site[página de download](https://releases.aspose.com/).

@@ -34,7 +34,7 @@ using Aspose.Words.Fields;
 
 ## Bước 1: Thiết lập dự án của bạn
 
-Trước khi bắt đầu viết mã, hãy thiết lập dự án của chúng ta. Mở môi trường phát triển của bạn và tạo một dự án .NET mới. Đảm bảo thêm tham chiếu đến thư viện Aspose.Words cho .NET. Nếu bạn đang sử dụng NuGet, bạn có thể dễ dàng cài đặt nó thông qua Bảng điều khiển quản lý gói:
+Trước khi bắt đầu viết mã, hãy thiết lập dự án của chúng ta. Mở môi trường phát triển của bạn và tạo một dự án .NET mới. Đảm bảo thêm tham chiếu đến thư viện Aspose.Words for .NET. Nếu bạn đang sử dụng NuGet, bạn có thể dễ dàng cài đặt nó thông qua Bảng điều khiển quản lý gói:
 
 ```shell
 Install-Package Aspose.Words
@@ -93,7 +93,7 @@ Trường TC (Mục lục) trong Word được sử dụng để đánh dấu c�
 
 ### 3. Tôi có thể sử dụng Aspose.Words với các ngôn ngữ lập trình khác không?
 
-Aspose.Words chủ yếu hỗ trợ các ngôn ngữ .NET như C#, nhưng có các phiên bản dành cho Java và các nền tảng khác.
+Aspose.Words chủ yếu hỗ trợ các ngôn ngữ .NET như C#, nhưng có sẵn các phiên bản cho Java và các nền tảng khác.
 
 ### 4. Tôi có thể tìm thêm ví dụ về cách sử dụng Aspose.Words cho .NET ở đâu?
 

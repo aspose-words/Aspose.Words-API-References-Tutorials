@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### Rejeitando comentários:
+#### Rejeitando revisões:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");

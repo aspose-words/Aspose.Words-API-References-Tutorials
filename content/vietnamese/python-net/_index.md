@@ -11,7 +11,7 @@ Aspose.Words for Python cung cấp một loạt hướng dẫn hỗ trợ các n
 
 ## API tài liệu Python để quản lý tài liệu liền mạch
 
-Khám phá sức mạnh của API Tài liệu Python với các hướng dẫn của Aspose.Words. Các nhà phát triển sẽ học cách tạo, sửa đổi và quản lý tài liệu Word theo chương trình. API cho phép tùy chỉnh định dạng, chèn nội dung và hợp nhất tài liệu, truyền phát các tác vụ quản lý tài liệu.
+Khám phá sức mạnh của API Tài liệu Python với các hướng dẫn của Aspose.Words. Các nhà phát triển sẽ học cách tạo, sửa đổi và quản lý tài liệu Word theo chương trình. API cho phép tùy chỉnh định dạng, chèn nội dung và hợp nhất tài liệu, tinh giản các tác vụ quản lý tài liệu.
 
 ## Tự động xử lý tài liệu bằng Python
 

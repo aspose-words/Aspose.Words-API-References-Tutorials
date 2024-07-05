@@ -1,6 +1,6 @@
 ---
-title: 塞泰克斯標題
-linktitle: 塞泰克斯標題
+title: 固定文字標題
+linktitle: 固定文字標題
 second_title: Aspose.Words 文件處理 API
 description: 透過 Aspose.Words for .NET 逐步指南了解如何使用 Setext 標題來格式化文件。
 type: docs

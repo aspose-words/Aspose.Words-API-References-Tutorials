@@ -164,7 +164,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Microsoft Word 목록 템플릿 중 하나를 기반으로 번호 매기기 목록을 만듭니다.
+        // Microsoft Word 목록 템플릿 중 하나를 기반으로 번호 매기기 목록 만들기
         //문서 작성기의 현재 단락에 적용합니다.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // 이 목록에는 9개의 레벨이 있습니다. 모두 시도해 보겠습니다.
@@ -173,7 +173,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Microsoft Word 목록 템플릿 중 하나를 기반으로 글머리 기호 목록을 만듭니다.
+        // Microsoft Word 목록 템플릿 중 하나를 기반으로 글머리 기호 목록 만들기
         //문서 작성기의 현재 단락에 적용합니다.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

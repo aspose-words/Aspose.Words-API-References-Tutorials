@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionpassword" };
 ```
 
-Ügyeljen arra, hogy a megfelelő visszafejtési jelszót adja meg a titkosított dokumentumhoz.
+Ügyeljen arra, hogy a titkosított dokumentumhoz a megfelelő visszafejtési jelszót adja meg.
 
 ## 2. lépés: A tanúsítvány betöltése
 

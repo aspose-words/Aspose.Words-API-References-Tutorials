@@ -1,20 +1,20 @@
 ---
-title: Fußnotenspalten festlegen
-linktitle: Fußnotenspalten festlegen
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+title: Festlegen von Fußnotenspalten
+linktitle: Festlegen von Fußnotenspalten
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Anzahl der Spalten für Fußnoten in Word-Dokumenten festlegen.
 type: docs
 weight: 10
 url: /de/net/working-with-footnote-and-endnote/set-foot-note-columns/
 ---
 
-In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET die Anzahl der Spalten für Fußnoten in einem Word-Dokument festlegen. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
+In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET die Anzahl der Spalten für Fußnoten in einem Word-Dokument festlegen. Wir erklären den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
- Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie[Aspose.Releases]https://releases.aspose.com/words/net/.
+ Stellen Sie zunächst sicher, dass Sie Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet haben. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie von[[Originaltext von Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Schritt 1: Initialisieren des Dokumentobjekts
 
- Initialisieren Sie zunächst die`Document` Objekt, indem Sie den Pfad zu Ihrem Quelldokument angeben:
+ Initialisieren Sie zunächst den`Document` Objekt, indem Sie den Pfad zu Ihrem Quelldokument angeben:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Schritt 2: Fußnotenspalten festlegen
 
- Als nächstes greifen Sie auf zu`FootnoteOptions` Eigenschaft des Dokuments und legen Sie die fest`Columns` Eigenschaft, um die Anzahl der Spalten für Fußnoten anzugeben. In diesem Beispiel legen wir es auf 3 Spalten fest:
+ Als nächstes greifen Sie auf die`FootnoteOptions` des Dokuments und legen Sie die`Columns` -Eigenschaft, um die Anzahl der Spalten für Fußnoten anzugeben. In diesem Beispiel legen wir sie auf 3 Spalten fest:
 
 ```csharp
 doc.FootnoteOptions.Columns = 3;
@@ -39,7 +39,7 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 
 Das ist es! Sie haben die Anzahl der Spalten für Fußnoten in einem Word-Dokument mit Aspose.Words für .NET erfolgreich festgelegt.
 
-### Beispielquellcode für „Fußnotenspalten festlegen“ mit Aspose.Words für .NET
+### Beispielquellcode zum Festlegen von Fußnotenspalten mit Aspose.Words für .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
@@ -51,21 +51,21 @@ doc.FootnoteOptions.Columns = 3;
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 ```
 
-Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprechend Ihren spezifischen Anforderungen modifizieren.
+Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und ihn entsprechend Ihren spezifischen Anforderungen ändern.
 
-### FAQs
+### Häufig gestellte Fragen
 
 #### F: Wie kann ich die Anzahl der Spalten für Fußnoten in Aspose.Words konfigurieren?
 
- A: Um die Anzahl der Spalten für Fußnoten in Aspose.Words zu konfigurieren, müssen Sie die verwenden`FootnoteOptions` Klasse und die`ColumnsCount` Eigentum. Sie können diese Eigenschaft auf eine beliebige Anzahl von Spalten festlegen.
+A: Um die Anzahl der Spalten für Fußnoten in Aspose.Words zu konfigurieren, müssen Sie den`FootnoteOptions` Klasse und die`ColumnsCount` -Eigenschaft. Sie können diese Eigenschaft auf eine beliebige Anzahl von Spalten festlegen.
 
-#### F: Welche Vorteile bietet die Einrichtung von Fußnotenspalten?
+#### F: Welche Vorteile bietet das Einrichten von Fußnotenspalten?
 
-A: Das Konfigurieren von Fußnotenspalten trägt dazu bei, die Lesbarkeit Ihrer Dokumente zu verbessern, indem Fußnoten strukturierter organisiert werden. Dies erleichtert den Lesern das Lesen und Verstehen des Inhalts.
+A: Durch das Konfigurieren von Fußnotenspalten können Sie die Lesbarkeit Ihrer Dokumente verbessern, indem Sie die Fußnoten strukturierter organisieren. So können Leser den Inhalt leichter lesen und verstehen.
 
-#### F: Ist es möglich, für verschiedene Abschnitte des Dokuments eine unterschiedliche Anzahl von Spalten anzugeben?
+#### F: Ist es möglich, für unterschiedliche Abschnitte des Dokuments eine unterschiedliche Spaltenanzahl anzugeben?
 
-A: Ja, es ist möglich, für verschiedene Abschnitte des Dokuments eine unterschiedliche Anzahl von Spalten anzugeben. Sie können die Abschnittsbearbeitungsmethoden von Aspose.Words verwenden, um spezifische Konfigurationen für jeden Abschnitt zu definieren, einschließlich der Anzahl der Fußnotenspalten.
+A: Ja, es ist möglich, für verschiedene Abschnitte des Dokuments eine unterschiedliche Anzahl von Spalten anzugeben. Sie können die Abschnittsbearbeitungsmethoden von Aspose.Words verwenden, um für jeden Abschnitt spezifische Konfigurationen festzulegen, einschließlich der Anzahl der Fußnotenspalten.
 
 #### F: Werden Fußnotenspalten bei der Konvertierung in andere Dateiformate berücksichtigt?
 
@@ -73,4 +73,4 @@ A: Ja, beim Konvertieren von Dokumenten mit Fußnotenspalten in andere Dateiform
 
 #### F: Kann ich das Erscheinungsbild von Fußnotenspalten anpassen?
 
-A: Ja, Sie können das Erscheinungsbild von Fußnotenspalten mithilfe der in Aspose.Words verfügbaren Formatierungseigenschaften anpassen. Sie können die Spaltenbreite anpassen, Abstände zwischen den Spalten festlegen und nach Bedarf benutzerdefinierte Schriftarten anwenden.
+A: Ja, Sie können das Erscheinungsbild von Fußnotenspalten mithilfe der in Aspose.Words verfügbaren Formatierungseigenschaften anpassen. Sie können Spaltenbreiten anpassen, Abstände zwischen Spalten festlegen und bei Bedarf benutzerdefinierte Schriftstile anwenden.

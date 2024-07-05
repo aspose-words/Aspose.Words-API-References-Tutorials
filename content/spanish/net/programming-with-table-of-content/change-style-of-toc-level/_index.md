@@ -113,7 +113,7 @@ R: Sí, además de cambiar el estilo, puede aplicar varios cambios de formato a 
 
 #### P: ¿Cómo puedo especificar un estilo personalizado para un nivel específico en la tabla de contenido usando Aspose.Words para .NET?
 
- R: Para especificar un estilo personalizado para un nivel específico en la tabla de contenido usando Aspose.Words para .NET, puede crear un nuevo`Style` objeto, configure sus propiedades de acuerdo con el estilo que desee y asígnelo al nivel correspondiente de la tabla de contenido usando el`Styles` propiedad de la`Document` clase. Esto le permite definir un estilo personalizado para un nivel específico según sus requisitos.
+ R: Para especificar un estilo personalizado para un nivel específico en la tabla de contenido usando Aspose.Words para .NET, puede crear un nuevo`Style` objeto, configure sus propiedades de acuerdo con el estilo deseado y asígnelo al nivel correspondiente de la tabla de contenido usando el`Styles` propiedad de la`Document` clase. Esto le permite definir un estilo personalizado para un nivel específico según sus requisitos.
 
 #### P: ¿Puedo cambiar el estilo de la tabla de contenido en un documento de Word existente usando Aspose.Words para .NET?
 

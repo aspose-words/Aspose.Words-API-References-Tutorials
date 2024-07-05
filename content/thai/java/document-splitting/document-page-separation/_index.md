@@ -49,7 +49,7 @@ DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 List<Document> pages = splitter.splitIntoPages();
 ```
 
- ที่`pages` ขณะนี้รายการจะมีเอกสารแยกกัน โดยแต่ละเอกสารแสดงถึงหน้าเดียวของเอกสารต้นฉบับ
+ ที่`pages` ขณะนี้รายการจะมีเอกสารแยกกัน โดยแต่ละเอกสารแทนหน้าเดียวของเอกสารต้นฉบับ
 
 ## ขั้นตอนที่ 3: บันทึกหน้า
 

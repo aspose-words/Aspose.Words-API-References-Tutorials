@@ -13,7 +13,7 @@ Benvenuti nei tutorial di Aspose.Words dedicati all'estrazione e alla manipolazi
 
 ## Il significato dell'estrazione e della manipolazione dei contenuti
 
-Nel mondo odierno basato sui dati, estrarre e manipolare i contenuti dai documenti è un compito fondamentale. Consente alle aziende di semplificare i propri processi, raccogliere approfondimenti e presentare informazioni in modo strutturato. Che tu abbia a che fare con contratti, report, fatture o qualsiasi altro tipo di documento, la possibilità di estrarre e manipolare i contenuti in modo programmatico fa risparmiare tempo, riduce gli errori e migliora la produttività. Aspose.Words fornisce un toolkit completo per realizzare queste attività, rendendolo una risorsa preziosa per gli sviluppatori negli ecosistemi Python e .NET.
+Nel mondo odierno basato sui dati, estrarre e manipolare i contenuti dai documenti è un compito fondamentale. Consente alle aziende di semplificare i propri processi, raccogliere approfondimenti e presentare informazioni in modo strutturato. Che tu abbia a che fare con contratti, report, fatture o qualsiasi altro tipo di documento, la possibilità di estrarre e manipolare i contenuti in modo programmatico fa risparmiare tempo, riduce gli errori e migliora la produttività. Aspose.Words fornisce un kit di strumenti completo per realizzare queste attività, rendendolo una risorsa preziosa per gli sviluppatori negli ecosistemi Python e .NET.
 
 ## Cosa imparerai
 

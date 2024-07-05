@@ -68,7 +68,7 @@ field. Update();
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-W tym przykładzie utworzyliśmy nowy dokument, wstawiliśmy pole AUTHOR, skonfigurowaliśmy nazwisko autora i zapisaliśmy dokument z określoną nazwą pliku.
+W tym przykładzie utworzyliśmy nowy dokument, wstawiliśmy pole AUTHOR, skonfigurowaliśmy nazwisko autora i zapisaliśmy dokument pod określoną nazwą pliku.
 
 Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Wstaw pole AUTOR” w Aspose.Words dla .NET.
 

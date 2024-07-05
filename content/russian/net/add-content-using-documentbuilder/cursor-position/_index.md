@@ -42,7 +42,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Шаг 1. Создайте документ Word
+## Шаг 1. Создание документа Word
 
 ### Инициализируйте документ
 
@@ -102,7 +102,7 @@ builder.MoveTo(doc.FirstSection.Body.Paragraphs[0]);
 builder.Writeln("This is a new paragraph after moving the cursor.");
 ```
 
-## Шаг 4. Сохраните документ
+## Шаг 4: Сохранение документа
 
 Наконец, давайте сохраним наш документ, чтобы увидеть изменения.
 

@@ -36,7 +36,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 Console.WriteLine(info.IsEncrypted);
 ```
 
-Вот и все! Вы успешно проверили, зашифрован ли документ, с помощью Aspose.Words for .NET.
+Вот и все ! Вы успешно проверили, зашифрован ли документ, с помощью Aspose.Words for .NET.
 
 ### Пример исходного кода для проверки зашифрованных документов с помощью Aspose.Words для .NET
 
@@ -58,7 +58,7 @@ Console.WriteLine(info.IsEncrypted);
 
 Определите каталог документов.
 
-Определите формат файла.
+Определить формат файла.
 
 Проверьте, зашифрован ли документ.
 

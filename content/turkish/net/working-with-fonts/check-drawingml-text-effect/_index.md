@@ -72,7 +72,7 @@ C: Aspose.Words ile sağlanan API'yi kullanarak bir Word belgesindeki DrawingML 
 
 #### S: Word belgelerinde yaygın olarak hangi tür DrawingML metin efektleri kullanılır?
 
-C: Word belgelerinde yaygın olarak kullanılan DrawingML metin efektleri türleri arasında gölgeler, yansımalar, parlamalar, degradeler vb. yer alır. Bu efektler, metnin görünümünü ve biçimlendirmesini geliştirmek için uygulanabilir.
+C: Word belgelerinde yaygın olarak kullanılan DrawingML metin efektleri türleri arasında gölgeler, yansımalar, parlamalar, degradeler vb. yer alır. Bu efektler, metnin görünümünü ve biçimlendirmesini iyileştirmek için uygulanabilir.
 
 #### S: Word belgesindeki DrawingML metin efektinin rengini nasıl kontrol edebilirim?
 

@@ -1,14 +1,14 @@
 ---
-title: Aktualisieren Sie Smart Art Drawing
-linktitle: Aktualisieren Sie Smart Art Drawing
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+title: Smart Art-Zeichnung aktualisieren
+linktitle: Smart Art-Zeichnung aktualisieren
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Smart Art-Zeichnung in einem Word-Dokument mit Aspose.Words für .NET aktualisieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-shapes/update-smart-art-drawing/
 ---
 
-In diesem Tutorial wird erklärt, wie Sie die Smart Art-Zeichnung in einem Word-Dokument mit Aspose.Words für .NET aktualisieren. Indem Sie die Formen im Dokument durchlaufen und prüfen, ob sie über Smart Art verfügen, können Sie die Smart Art-Zeichnung aktualisieren, um alle an ihren Daten vorgenommenen Änderungen widerzuspiegeln.
+In diesem Tutorial wird erklärt, wie Sie die Smart Art-Zeichnung in einem Word-Dokument mit Aspose.Words für .NET aktualisieren. Indem Sie die Formen im Dokument durchgehen und prüfen, ob sie über Smart Art verfügen, können Sie die Smart Art-Zeichnung aktualisieren, um alle an ihren Daten vorgenommenen Änderungen widerzuspiegeln.
 
 ## Voraussetzungen
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
@@ -16,22 +16,22 @@ Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 - Aspose.Words für .NET-Bibliothek installiert.
 - Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
-## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
- Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem sich Ihr Dokument befindet.
+## Schritt 1: Einrichten des Dokumentverzeichnisses
+ Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem sich Ihr Dokument befindet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Schritt 2: Laden Sie das Dokument
- Laden Sie das Word-Dokument, das die Smart Art-Zeichnung enthält, mit`Document` Klassenkonstruktor.
+ Laden Sie das Word-Dokument, das die Smart Art-Zeichnung enthält, mit dem`Document` Klassenkonstruktor.
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Schritt 3: Aktualisieren Sie die Smart Art-Zeichnung
- Durchlaufen Sie die Formen im Dokument mithilfe von`GetChildNodes` Methode mit der`NodeType.Shape` Parameter. Überprüfen Sie mithilfe von, ob jede Form über Smart Art verfügt`HasSmartArt` Eigenschaft, und wenn wahr, nennen Sie die`UpdateSmartArtDrawing` Methode zum Aktualisieren der Smart Art-Zeichnung.
+ Iterieren Sie durch die Formen im Dokument mit dem`GetChildNodes` Methode mit dem`NodeType.Shape` Parameter. Überprüfen Sie, ob jede Form Smart Art hat, indem Sie den`HasSmartArt` Eigenschaft, und wenn wahr, rufen Sie die`UpdateSmartArtDrawing` Methode zum Aktualisieren der Smart Art-Zeichnung.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
@@ -40,10 +40,10 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 
-### Beispielquellcode für die Aktualisierung von Smart Art Drawing mit Aspose.Words für .NET 
+### Beispielquellcode zum Aktualisieren von Smart Art Drawing mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "SmartArt.docx");

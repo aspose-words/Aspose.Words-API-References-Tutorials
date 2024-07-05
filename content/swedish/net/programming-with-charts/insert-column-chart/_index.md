@@ -17,7 +17,7 @@ Se till att du har följande förutsättningar:
 - Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den genom att använda NuGet-pakethanteraren för att installera den.
 - En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram.
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
  Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 

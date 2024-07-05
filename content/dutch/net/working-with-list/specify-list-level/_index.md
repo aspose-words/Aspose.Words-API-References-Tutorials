@@ -24,7 +24,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 2: Een genummerde lijst maken en toepassen
 
-Maak vervolgens een genummerde lijst op basis van een van de lijstsjablonen van Microsoft Word en pas deze toe op de huidige alinea in de documentbuilder:
+Maak vervolgens een genummerde lijst op basis van een van de lijstsjablonen van Microsoft Word en pas deze toe op de huidige alinea in de documentbouwer:
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Maak een genummerde lijst op basis van een van de Microsoft Word-lijstsjablonen.
+// Maak een genummerde lijst op basis van een van de Microsoft Word-lijstsjablonen
 //en pas het toe op de huidige paragraaf van de documentbouwer.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Maak een lijst met opsommingstekens op basis van een van de Microsoft Word-lijstsjablonen.
+// Maak een lijst met opsommingstekens op basis van een van de Microsoft Word-lijstsjablonen
 //en pas het toe op de huidige paragraaf van de documentbouwer.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -121,7 +121,7 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### Vraag: Hoe kan ik het lijstniveau opgeven in Aspose.Words?
 
- A: Om het lijstniveau in Aspose.Words te specificeren, moet u een exemplaar van de`List` klasse en geef deze een genummerde lijst. Dan kun je gebruik maken van de`Paragraph.ListFormat.ListLevelNumber` eigenschap om het niveau van elk lijstitem op te geven. U kunt deze lijst aan een sectie van uw document koppelen, zodat de lijstitems het gewenste niveau hebben.
+ A: Om het lijstniveau in Aspose.Words te specificeren, moet u een exemplaar van de`List` klasse en geef deze een genummerde lijst. Dan kunt u gebruik maken van de`Paragraph.ListFormat.ListLevelNumber` eigenschap om het niveau van elk lijstitem op te geven. U kunt deze lijst aan een sectie van uw document koppelen, zodat de lijstitems het gewenste niveau hebben.
 
 #### Vraag: Is het mogelijk om het nummeringsformaat van lijstitems in Aspose.Words te wijzigen?
 

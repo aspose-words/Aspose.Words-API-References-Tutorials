@@ -1,26 +1,26 @@
 ---
-title: リビジョングループの取得
-linktitle: リビジョングループの取得
+title: リビジョングループを取得
+linktitle: リビジョングループを取得
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内のリビジョン グループを取得します。
+description: Aspose.Words for .NET を使用して、Word 文書内のリビジョン グループを取得します。
 type: docs
 weight: 10
 url: /ja/net/working-with-revisions/get-revision-groups/
 ---
 
-このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内のリビジョン グループを取得する方法を説明します。完全なソース コードを提供し、マークダウン出力をフォーマットする方法を示します。
+このステップ バイ ステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内のリビジョン グループを取得する方法について説明します。完全なソース コードを提供し、マークダウン出力をフォーマットする方法を説明します。
 
-## ステップ 1: ドキュメントをロードする
+## ステップ1: ドキュメントの読み込み
 
-最初のステップは、リビジョンを含むドキュメントをアップロードすることです。
+最初のステップは、修正を含むドキュメントをアップロードすることです。
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## ステップ 2: リビジョン グループを参照する
+## ステップ2: リビジョングループを参照する
 
-次に、文書内に存在する改訂グループをループして、作成者、改訂タイプ、改訂テキストなどの詳細を表示します。
+次に、ドキュメント内に存在するリビジョン グループをループし、作成者、リビジョン タイプ、リビジョン テキストなどの詳細を表示します。
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -31,9 +31,9 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 ```
 
 
-### Aspose.Words for .NET を使用したリビジョン グループの取得のソース コード例
+### Aspose.Words for .NET を使用してリビジョン グループを取得するためのサンプル ソース コード
 
-Aspose.Words for .NET を使用してドキュメント内のリビジョン グループを取得するための完全なソース コードを次に示します。
+Aspose.Words for .NET を使用してドキュメント内のリビジョン グループを取得するための完全なソース コードは次のとおりです。
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
@@ -47,13 +47,13 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のリビジョン グループを取得する方法を学びました。手順に従ってドキュメントをロードし、レビュー グループを参照して、作成者やレビュー タイプなどの詳細を表示します。この知識を応用して、Aspose.Words for .NET を使用して独自の Word 文書のリビジョンを分析できるようになりました。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のリビジョン グループを取得する方法を学習しました。手順に従って文書を読み込み、レビュー グループを参照し、作成者やレビュー タイプなどの詳細を表示しました。この知識を適用して、Aspose.Words for .NET を使用して独自の Word 文書のリビジョンを分析できるようになりました。
 
 ### よくある質問
 
-#### Q: Aspose.Words for .NET にドキュメントをアップロードするにはどうすればよいですか?
+#### Q: Aspose.Words for .NET でドキュメントをアップロードするにはどうすればよいですか?
 
- A: を使用してください。`Document`ファイルからドキュメントをロードするための Aspose.Words for .NET のクラス。ドキュメントの完全なパスを指定できます。
+ A:`Document`ファイルからドキュメントを読み込むための Aspose.Words for .NET のクラス。ドキュメントの完全なパスを指定できます。
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -61,18 +61,18 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Q: Aspose.Words for .NET でドキュメント内のリビジョン グループを参照するにはどうすればよいですか?
 
- A: を使用してください。`Groups`ドキュメントのプロパティ`Revisions`リビジョン グループのコレクションを取得するオブジェクト。その後、ループを使用して各レビュー グループをループすることができます。
+ A:`Groups`文書のプロパティ`Revisions`オブジェクトを使用して、リビジョン グループのコレクションを取得します。次に、ループを使用して各レビュー グループをループできます。
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
 {
-     //ここで各レビューグループを処理します
+     //各レビューグループをここで処理します
 }
 ```
 
 #### Q: Aspose.Words for .NET でレビュー グループの作成者を取得するにはどうすればよいですか?
 
- A: を使用してください。`Author`の財産`RevisionGroup`リビジョン グループの作成者を取得するオブジェクト。
+ A:`Author`の財産`RevisionGroup`リビジョン グループの作成者を取得するためのオブジェクト。
 
 ```csharp
 string author = group.Author;
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### Q: Aspose.Words for .NET でリビジョン グループのリビジョン タイプを取得するにはどうすればよいですか?
 
- A: を使用してください。`RevisionType`の財産`RevisionGroup`オブジェクトを使用してグループのリビジョン タイプを取得します。
+ A:`RevisionType`の財産`RevisionGroup`グループのリビジョン タイプを取得するためのオブジェクト。
 
 ```csharp
 string revisionType = group.RevisionType;

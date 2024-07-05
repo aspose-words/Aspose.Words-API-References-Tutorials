@@ -16,7 +16,7 @@ Trong các hướng dẫn này, các nhà phát triển sẽ khám phá cách s�
 
 ## Tăng cường xử lý tài liệu Word
 
-Các hướng dẫn tập trung vào việc nâng cao quy trình xử lý tài liệu văn bản bằng tính năng chuyển đổi tài liệu. Các nhà phát triển sẽ hiểu rõ hơn về chuyển đổi hàng loạt, bảo toàn các thành phần tài liệu và xử lý các lỗi chuyển đổi. Aspose.Words đơn giản hóa các tác vụ chuyển đổi tài liệu phức tạp, khiến nó trở thành một công cụ vô giá cho các nhà phát triển Python.
+Các hướng dẫn tập trung vào việc nâng cao quy trình xử lý tài liệu word bằng tính năng chuyển đổi tài liệu. Các nhà phát triển sẽ hiểu rõ hơn về chuyển đổi hàng loạt, bảo toàn các thành phần tài liệu và xử lý các lỗi chuyển đổi. Aspose.Words đơn giản hóa các tác vụ chuyển đổi tài liệu phức tạp, khiến nó trở thành một công cụ vô giá cho các nhà phát triển Python.
 
 ## Đơn giản hóa việc quản lý tài liệu của bạn
 

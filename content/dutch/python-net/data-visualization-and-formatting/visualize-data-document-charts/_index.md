@@ -10,7 +10,7 @@ url: /nl/python-net/data-visualization-and-formatting/visualize-data-document-ch
 
 ## Invoering
 
-Het visualiseren van data is een krachtige techniek om informatie toegankelijker en begrijpelijker te maken. Grafieken, grafieken en diagrammen bieden een visuele weergave van complexe gegevenssets, waardoor lezers in één oogopslag trends, patronen en inzichten kunnen identificeren.
+Het visualiseren van data is een krachtige techniek om informatie toegankelijker en begrijpelijker te maken. Grafieken, grafieken en diagrammen bieden een visuele weergave van complexe gegevenssets, waardoor lezers trends, patronen en inzichten in één oogopslag kunnen identificeren.
 
 ## Gegevensvisualisatie begrijpen
 

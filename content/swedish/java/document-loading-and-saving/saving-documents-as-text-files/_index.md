@@ -145,9 +145,9 @@ saveOptions.getListIndentation().setCount(1);
 saveOptions.getListIndentation().setCharacter('\t');
 ```
 
-### Är Aspose.Words för Java lämplig för att hantera flerspråkig text?
+### Är Aspose.Words för Java lämplig för hantering av flerspråkig text?
 
-Ja, Aspose.Words för Java är lämplig för hantering av flerspråkig text. Det stöder olika språk och teckenkodningar, vilket gör det till ett mångsidigt val för att arbeta med dokument på olika språk.
+Ja, Aspose.Words för Java är lämplig för hantering av flerspråkig text. Den stöder olika språk och teckenkodningar, vilket gör den till ett mångsidigt val för att arbeta med dokument på olika språk.
 
 ### Hur får jag tillgång till mer dokumentation och resurser för Aspose.Words för Java?
 

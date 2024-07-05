@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Шаг 2. Загрузите исходные и целевые документы
 
-Далее вам необходимо загрузить исходные и целевые документы с помощью Aspose.Words.`Document` класс. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
+Далее вам необходимо загрузить исходные и целевые документы с помощью Aspose.Words.`Document` сорт. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## Шаг 5. Добавьте исходный документ в целевой документ
 
- Теперь вы можете добавить исходный документ к целевому документу, используя команду`InsertDocument` метод`DocumentBuilder` класс. Использовать`ImportFormatMode.UseDestinationStyles` параметр и передать`ImportFormatOptions` объект для поддержания умного стиля поведения.
+ Теперь вы можете добавить исходный документ к целевому документу, используя команду`InsertDocument` метод`DocumentBuilder` сорт. Использовать`ImportFormatMode.UseDestinationStyles` параметр и передать`ImportFormatOptions` объект для поддержания умного стиля поведения.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -62,7 +62,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 
 ## Шаг 6: Сохраните окончательный документ
 
- Наконец, сохраните объединенный документ с включенной функцией Smart Style Behavior, используя`Save` метод`Document` класс.
+ Наконец, сохраните объединенный документ с включенной функцией Smart Style Behavior, используя`Save` метод`Document` сорт.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");

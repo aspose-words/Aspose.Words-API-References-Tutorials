@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Passo 5: Salvando o documento
 
- Após inserir o campo do formulário de entrada de texto, salve o documento no local desejado usando o`Save` método. Certifique-se de fornecer o caminho de arquivo apropriado:
+ Após inserir o campo do formulário de entrada de texto, salve o documento no local desejado usando o`Save`método. Certifique-se de fornecer o caminho de arquivo apropriado:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ Neste tutorial, aprendemos como mover um nó em um documento Word rastreado usan
 
 #### P: Como posso ativar o rastreamento de revisão em um documento Aspose.Words for .NET?
 
-R: Para ativar o rastreamento de revisão em um documento Aspose.Words for .NET, você pode usar o`StartTrackRevisions` método do`Document` objeto. Este método toma como parâmetros o nome do autor das revisões e a data de início do acompanhamento das revisões.
+ R: Para ativar o rastreamento de revisão em um documento Aspose.Words for .NET, você pode usar o`StartTrackRevisions` método do`Document` objeto. Este método toma como parâmetros o nome do autor das revisões e a data de início do acompanhamento das revisões.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

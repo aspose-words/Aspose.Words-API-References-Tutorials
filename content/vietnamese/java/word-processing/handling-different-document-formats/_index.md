@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Tạo bảng
 
 ```java
-// Tạo bảng có 3 hàng và 4 cột.
+// Tạo bảng có 3 hàng và 4 cột
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

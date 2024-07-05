@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/working-with-fonts/get-font-line-spacing/
 ---
-den här handledningen kommer vi att berätta hur du får typsnittets radavstånd i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Teckensnittets radavstånd definierar det vertikala avståndet mellan textraderna. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
+I den här handledningen kommer vi att berätta hur du får typsnittets radavstånd i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Teckensnittets radavstånd definierar det vertikala avståndet mellan textraderna. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
 ## Förutsättningar
 Innan du börjar, se till att du har följande saker:
@@ -61,7 +61,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Slutsats
-den här handledningen såg vi hur man får typsnittets radavstånd i ett Word-dokument med Aspose.Words för .NET. Teckensnittets radavstånd är viktigt för att kontrollera det vertikala avståndet mellan textrader. Använd gärna den här funktionen för att anpassa utseendet på din text i dina dokument.
+I den här handledningen såg vi hur man får typsnittets radavstånd i ett Word-dokument med Aspose.Words för .NET. Teckensnittets radavstånd är viktigt för att kontrollera det vertikala avståndet mellan textrader. Använd gärna den här funktionen för att anpassa utseendet på din text i dina dokument.
 
 ### FAQ's
 

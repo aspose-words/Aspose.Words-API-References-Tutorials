@@ -2,7 +2,7 @@
 title: Sisipkan Bidang Tidak Ada
 linktitle: Sisipkan Bidang Tidak Ada
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat dokumen dengan AUCUN di Word avec Aspose.Words pour .NET.
+description: Pelajari cara memasukkan juara AUCUN dan dokumen Anda Word dengan Aspose.Words untuk .NET.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/insert-field-none/

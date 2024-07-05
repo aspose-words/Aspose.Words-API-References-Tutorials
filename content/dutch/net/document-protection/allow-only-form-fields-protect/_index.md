@@ -107,7 +107,7 @@ A: Ja, u kunt formuliervelden in een beveiligd document invoegen met Aspose.Word
 
  A: Ja, u kunt de documentbeveiliging van een beveiligd document verwijderen met Aspose.Words voor .NET. Om de bescherming te verwijderen, kunt u de`Unprotect` werkwijze van de`Document` klasse en geef het juiste wachtwoord op. Hierdoor wordt de beveiliging opgeheven en kunt u het document onbeperkt bewerken.
 
-#### Vraag: Is het mogelijk om een document met meerdere beveiligingstypes te beveiligen?
+#### Vraag: Is het mogelijk om een document met meerdere beveiligingstypes te beschermen?
 
  A: Nee, met Aspose.Words voor .NET kan slechts één beveiligingstype tegelijk op een document worden toegepast. echter, de`AllowOnlyFormFields` beveiligingstype kan het bewerken van formuliervelden effectief beperken, terwijl andere beveiligingstypen zijn toegestaan, zoals`AllowOnlyComments` of`AllowOnlyRevisions`te combineren met formulierveldbeveiliging.
 

@@ -1,26 +1,26 @@
 ---
 title: Erstellen und Verwalten von Listen in Word-Dokumenten
 linktitle: Erstellen und Verwalten von Listen in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentverwaltungs-API
-description: Erfahren Sie, wie Sie mithilfe der Aspose.Words-Python-API Listen in Word-Dokumenten erstellen und verwalten. Schritt-für-Schritt-Anleitung mit Quellcode für Listenformatierung, Anpassung, Verschachtelung und mehr.
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+description: Erfahren Sie, wie Sie mit der Aspose.Words Python-API Listen in Word-Dokumenten erstellen und verwalten. Schritt-für-Schritt-Anleitung mit Quellcode für Listenformatierung, Anpassung, Verschachtelung und mehr.
 type: docs
 weight: 18
 url: /de/python-net/document-structure-and-content-manipulation/document-lists/
 ---
 
-Listen sind ein grundlegender Bestandteil vieler Dokumente und bieten eine strukturierte und organisierte Möglichkeit, Informationen darzustellen. Mit Aspose.Words für Python können Sie nahtlos Listen in Ihren Word-Dokumenten erstellen und verwalten. In diesem Tutorial führen wir Sie durch den Prozess der Arbeit mit Listen mithilfe der Aspose.Words-Python-API.
+Listen sind ein grundlegender Bestandteil vieler Dokumente und bieten eine strukturierte und organisierte Möglichkeit, Informationen darzustellen. Mit Aspose.Words für Python können Sie nahtlos Listen in Ihren Word-Dokumenten erstellen und verwalten. In diesem Tutorial führen wir Sie durch den Prozess der Arbeit mit Listen mithilfe der Aspose.Words Python-API.
 
 ## Einführung in Listen in Word-Dokumenten
 
-Es gibt zwei Haupttypen von Listen: Listen mit Aufzählungszeichen und nummerierte Listen. Sie ermöglichen eine strukturierte Darstellung von Informationen und erleichtern so das Verständnis für den Leser. Listen steigern auch die optische Attraktivität Ihrer Dokumente.
+Listen gibt es in zwei Haupttypen: Aufzählungslisten und nummerierte Listen. Sie ermöglichen Ihnen, Informationen strukturiert darzustellen, sodass sie für den Leser leichter verständlich sind. Listen verbessern außerdem die visuelle Attraktivität Ihrer Dokumente.
 
 ## Einrichten der Umgebung
 
-Bevor wir uns mit der Erstellung und Verwaltung von Listen befassen, stellen Sie sicher, dass Sie die Aspose.Words for Python-Bibliothek installiert haben. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/python/) . Weitere Informationen finden Sie in der API-Dokumentation unter[dieser Link](https://reference.aspose.com/words/python-net/) für detaillierte Informationen.
+Bevor wir uns mit dem Erstellen und Verwalten von Listen befassen, stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für Python installiert haben. Sie können sie hier herunterladen:[Hier](https://releases.aspose.com/words/python/) . Weitere Informationen finden Sie in der API-Dokumentation unter[dieser Link](https://reference.aspose.com/words/python-net/) für detaillierte Informationen.
 
-## Erstellen von Aufzählungslisten
+## Aufzählungslisten erstellen
 
-Listen mit Aufzählungszeichen werden verwendet, wenn die Reihenfolge der Elemente nicht entscheidend ist. Gehen Sie folgendermaßen vor, um mit Aspose.Words Python eine Aufzählungsliste zu erstellen:
+Aufzählungslisten werden verwendet, wenn die Reihenfolge der Elemente nicht entscheidend ist. Um eine Aufzählungsliste mit Aspose.Words Python zu erstellen, führen Sie diese Schritte aus:
 
 ```python
 # Import the necessary classes
@@ -88,43 +88,43 @@ for text in list_item_texts:
 
 Sie können das Erscheinungsbild Ihrer Listen weiter anpassen, indem Sie Formatierungsoptionen wie Aufzählungszeichenstile, Nummerierungsformate und Ausrichtung anpassen.
 
-## Listenebenen verwalten
+## Verwalten von Listenebenen
 
-Listen können mehrere Ebenen haben, was für die Erstellung verschachtelter Listen nützlich ist. Jede Ebene kann ihr eigenes Formatierungs- und Nummerierungsschema haben.
+Listen können mehrere Ebenen haben, was zum Erstellen verschachtelter Listen nützlich ist. Jede Ebene kann ihr eigenes Formatierungs- und Nummerierungsschema haben.
 
 ## Unterlisten hinzufügen
 
-Unterlisten sind eine leistungsstarke Möglichkeit, Informationen hierarchisch zu organisieren. Mit der Aspose.Words-Python-API können Sie ganz einfach Unterlisten hinzufügen.
+Unterlisten sind eine leistungsstarke Möglichkeit, Informationen hierarchisch zu organisieren. Mit der Aspose.Words Python-API können Sie ganz einfach Unterlisten hinzufügen.
 
 ## Konvertieren von einfachem Text in Listen
 
-Wenn Sie über vorhandenen Text verfügen, den Sie in Listen konvertieren möchten, bietet Aspose.Words Python Methoden zum Parsen und Formatieren des Textes entsprechend.
+Wenn Sie über vorhandenen Text verfügen, den Sie in Listen umwandeln möchten, bietet Aspose.Words Python Methoden zum entsprechenden Parsen und Formatieren des Textes.
 
 ## Listen entfernen
 
-Das Entfernen einer Liste ist genauso wichtig wie das Erstellen einer. Sie können Listen programmgesteuert mithilfe der API entfernen.
+Das Entfernen einer Liste ist genauso wichtig wie das Erstellen einer Liste. Sie können Listen programmgesteuert mithilfe der API entfernen.
 
-## Dokumente speichern und exportieren
+## Speichern und Exportieren von Dokumenten
 
-Nachdem Sie Ihre Listen erstellt und angepasst haben, können Sie das Dokument in verschiedenen Formaten speichern, einschließlich DOCX und PDF.
+Nachdem Sie Ihre Listen erstellt und angepasst haben, können Sie das Dokument in verschiedenen Formaten speichern, darunter DOCX und PDF.
 
 ## Abschluss
 
-In diesem Tutorial haben wir untersucht, wie Sie mithilfe der Aspose.Words-Python-API Listen in Word-Dokumenten erstellen und verwalten. Listen sind für die effektive Organisation und Präsentation von Informationen unerlässlich. Indem Sie die hier beschriebenen Schritte befolgen, können Sie die Struktur und die visuelle Attraktivität Ihrer Dokumente verbessern.
+In diesem Tutorial haben wir untersucht, wie man mit der Aspose.Words Python-API Listen in Word-Dokumenten erstellt und verwaltet. Listen sind für die effektive Organisation und Präsentation von Informationen unerlässlich. Indem Sie die hier beschriebenen Schritte befolgen, können Sie die Struktur und die visuelle Attraktivität Ihrer Dokumente verbessern.
 
 ## FAQs
 
 ### Wie installiere ich Aspose.Words für Python?
- Sie können die Bibliothek herunterladen unter[dieser Link](https://releases.aspose.com/words/python/) und befolgen Sie die Installationsanweisungen in der Dokumentation.
+ Sie können die Bibliothek herunterladen von[dieser Link](https://releases.aspose.com/words/python/) und befolgen Sie die Installationsanweisungen in der Dokumentation.
 
 ### Kann ich den Nummerierungsstil für meine Listen anpassen?
-Absolut! Mit Aspose.Words Python können Sie Nummerierungsformate, Aufzählungszeichenstile und Ausrichtung anpassen, um Ihre Listen an Ihre spezifischen Bedürfnisse anzupassen.
+Auf jeden Fall! Mit Aspose.Words Python können Sie Nummerierungsformate, Aufzählungszeichenstile und Ausrichtung anpassen, um Ihre Listen an Ihre spezifischen Anforderungen anzupassen.
 
 ### Ist es möglich, mit Aspose.Words verschachtelte Listen zu erstellen?
 Ja, Sie können verschachtelte Listen erstellen, indem Sie Ihrer Hauptliste Unterlisten hinzufügen. Dies ist nützlich, um Informationen hierarchisch darzustellen.
 
-### Kann ich meinen bestehenden Klartext in Listen umwandeln?
-Ja, Aspose.Words Python bietet Methoden zum Parsen und Formatieren von reinem Text in Listen, wodurch Sie Ihre Inhalte einfacher strukturieren können.
+### Kann ich meinen vorhandenen Klartext in Listen umwandeln?
+Ja, Aspose.Words Python bietet Methoden zum Parsen und Formatieren von einfachem Text in Listen, wodurch die Strukturierung Ihrer Inhalte vereinfacht wird.
 
 ### Wie kann ich mein Dokument nach dem Erstellen von Listen speichern?
- Sie können Ihr Dokument mit speichern`doc.save()` -Methode und Angabe des gewünschten Ausgabeformats, z. B. DOCX oder PDF.
+ Sie können Ihr Dokument speichern mit dem`doc.save()` Methode und Angabe des gewünschten Ausgabeformats, beispielsweise DOCX oder PDF.

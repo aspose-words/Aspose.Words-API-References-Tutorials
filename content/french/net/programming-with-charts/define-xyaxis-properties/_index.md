@@ -17,7 +17,7 @@ Assurez-vous que vous disposez des conditions préalables suivantes :
 - Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de document où le document de sortie sera enregistré.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique.
+## Étape 2 : Créez un nouveau document et insérez un graphique
 
  Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
 
@@ -141,7 +141,7 @@ En utilisant Aspose.Words pour .NET, vous pouvez intégrer de manière transpare
 Aspose.Words for .NET est une puissante bibliothèque de traitement de documents qui permet aux développeurs de créer, manipuler et enregistrer des documents Word par programme dans des applications .NET. Il offre un large éventail de fonctionnalités pour le traitement de texte avec des éléments de document, notamment des graphiques.
 
 #### Q2. Comment puis-je installer Aspose.Words pour .NET ?
-Vous pouvez installer Aspose.Words pour .NET en le téléchargeant à l'aide du gestionnaire de packages NuGet dans Visual Studio. Recherchez simplement « Apose.Words » dans le gestionnaire de packages NuGet et installez-le dans votre projet.
+Vous pouvez installer Aspose.Words pour .NET en le téléchargeant à l'aide du gestionnaire de packages NuGet dans Visual Studio. Recherchez simplement « Aspose.Words » dans le gestionnaire de packages NuGet et installez-le dans votre projet.
 
 #### Q3. Puis-je personnaliser d’autres aspects du graphique à l’aide d’Aspose.Words for .NET ?
 Oui, Aspose.Words for .NET offre des fonctionnalités étendues pour personnaliser divers aspects d'un graphique. En plus de définir les propriétés des axes, vous pouvez modifier le type de graphique, les séries de données, la légende, le titre, la zone de tracé, les étiquettes de données et de nombreux autres éléments du graphique. L'API offre un contrôle précis sur l'apparence et le comportement des graphiques.

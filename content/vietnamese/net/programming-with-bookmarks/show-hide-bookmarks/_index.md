@@ -126,9 +126,9 @@ Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu c�
 
  Đáp: Để hiển thị lại dấu trang bị ẩn, bạn cần sử dụng cùng một`ShowHideBookmarkedContent` hàm truyền giá trị`true` đối với tham số boolean cho biết hiển thị hay ẩn dấu trang.
 
-#### Câu hỏi: Tôi có thể sử dụng các điều kiện để hiển thị hoặc ẩn dấu trang dựa trên các giá trị trường hợp nhất trong tài liệu không?
+#### Câu hỏi: Tôi có thể sử dụng các điều kiện để hiển thị hoặc ẩn dấu trang dựa trên giá trị trường hợp nhất trong tài liệu không?
 
- Trả lời: Có, bạn có thể sử dụng các điều kiện và hợp nhất các giá trị trường để xác định xem dấu trang sẽ được hiển thị hay ẩn. Bạn có thể tùy chỉnh mã của`ShowHideBookmarkedContent` có tính đến các điều kiện và giá trị thích hợp.
+ Đáp: Có, bạn có thể sử dụng các điều kiện và hợp nhất các giá trị trường để xác định xem dấu trang sẽ được hiển thị hay ẩn. Bạn có thể tùy chỉnh mã của`ShowHideBookmarkedContent` có tính đến các điều kiện và giá trị thích hợp.
 
 #### Hỏi: Làm cách nào tôi có thể xóa dấu trang trong tài liệu Word bằng Aspose.Words cho .NET?
 

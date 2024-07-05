@@ -1,23 +1,23 @@
 ---
 title: Textverarbeitung mit Ooxmlsaveoptions
 linktitle: Textverarbeitung mit Ooxmlsaveoptions
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Lernen Sie die Wortverarbeitung mit OOXML-Speicheroptionen in Aspose.Words für .NET. Umfassende Tutorials und Beispielcode zum Bearbeiten und Anpassen des Speicherns von Word-Dokumenten im OOXML-Format.
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Lernen Sie die Textverarbeitung mit OOXML-Speicheroptionen in Aspose.Words für .NET. Umfassende Tutorials und Beispielcode zum Bearbeiten und Anpassen des Speicherns von Word-Dokumenten im OOXML-Format.
 type: docs
 weight: 1660
 url: /de/net/programming-with-ooxmlsaveoptions/
 ---
-Die Aspose.Words für .NET-Tutorials zur Textverarbeitung mit OOXMLSaveOptions bieten Schritt-für-Schritt-Anleitungen zum Bearbeiten der OOXML-Speicheroptionen in Ihren Dokumenten. Diese Tutorials führen Sie durch die Schritte zum Anpassen der Sicherungseinstellungen, z. B. Abwärtskompatibilität, Bildkomprimierung und Handhabung eingebetteter Schriftarten. Sie erfahren, wie Sie diese Optionen nutzen, um genaue Backup-Ergebnisse zu erzielen, die für Ihre spezifischen Anforderungen optimiert sind.
+Die Aspose.Words für .NET-Tutorials zur Textverarbeitung mit OOXMLSaveOptions bieten schrittweise Anleitungen zum Bearbeiten von OOXML-Speicheroptionen in Ihren Dokumenten. Diese Tutorials führen Sie durch die Schritte zum Anpassen von Sicherungseinstellungen, wie z. B. Abwärtskompatibilität, Bildkomprimierung und eingebettete Schriftartenbehandlung. Sie erfahren, wie Sie diese Optionen verwenden, um genaue, für Ihre spezifischen Anforderungen optimierte Sicherungsergebnisse zu erzielen.
 
- Die Tutorials stellen Ihnen außerdem praktische Codebeispiele zur Verfügung, die die Verwendung der verschiedenen Funktionen von OOXMLSaveOptions veranschaulichen. Sie erfahren, wie Sie beim Erstellen oder Bearbeiten eines Word-Dokuments Speicheroptionen festlegen, indem Sie Methoden wie verwenden`CompatibilityOptions`, `ImageCompression` , Und`ExportFontResources`. Die Tutorials helfen Ihnen zu verstehen, wie sich diese Optionen auf das Ausgabeformat auswirken und die geeigneten Einstellungen für Ihre Projekte auszuwählen.
+ Die Tutorials bieten Ihnen auch praktische Codebeispiele, die die Verwendung der verschiedenen Funktionen von OOXMLSaveOptions veranschaulichen. Sie lernen, wie Sie beim Erstellen oder Bearbeiten eines Word-Dokuments Speicheroptionen angeben, beispielsweise mit folgenden Methoden:`CompatibilityOptions`, `ImageCompression` , Und`ExportFontResources`. Die Tutorials helfen Ihnen zu verstehen, wie sich diese Optionen auf das Ausgabeformat auswirken und helfen Ihnen, die geeigneten Einstellungen für Ihre Projekte auszuwählen.
 
-Ganz gleich, ob Sie Dokumente erstellen möchten, die mit älteren Word-Versionen kompatibel sind, die Dateigröße durch Komprimieren von Bildern reduzieren oder bestimmte Schriftarten einbetten möchten: Aspose.Words für .NET-Tutorials zur Textverarbeitung mit OOXMLSaveOptions führen Sie durch alles. notwendigen Schritte. Sie können die Speicherfunktionen von OOXML voll ausnutzen und professionelle und optimierte Word-Dokumente erstellen.
+Ob Sie Dokumente erstellen möchten, die mit älteren Versionen von Word kompatibel sind, die Dateigröße durch Komprimieren von Bildern reduzieren oder bestimmte Schriftarten einbetten möchten, die Tutorials von Aspose.Words für .NET zur Textverarbeitung mit OOXMLSaveOptions führen Sie durch alle erforderlichen Schritte. Sie können die Speicherfunktionen von OOXML voll ausnutzen und professionelle und optimierte Word-Dokumente erstellen.
 
- ## Tutorials
+ ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Docx mit Passwort verschlüsseln](./encrypt-docx-with-password/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine DOCX-Datei mit einem Passwort verschlüsseln. Vollständiges Tutorial zur Dokumentensicherheit. |
-| [Ooxml-Konformität Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Erfahren Sie, wie Sie beim Speichern von Dokumenten mit Aspose.Words für .NET die Einhaltung von Ooxml ISO 29500_2008_Strict sicherstellen. |
-| [Eigenschaft „Letzte gespeicherte Zeit“ aktualisieren](./update-last-saved-time-property/) | Erfahren Sie, wie Sie die Eigenschaft „Letzte gespeicherte Zeit“ automatisch aktualisieren, wenn Sie ein Dokument mit Aspose.Words für .NET speichern. |
-| [Behalten Sie die alten Kontrollzeichen bei](./keep-legacy-control-chars/) | Erfahren Sie, wie Sie beim Speichern eines Dokuments mit Aspose.Words für .NET alte Steuerzeichen beibehalten. |
-| [Stellen Sie die Komprimierungsstufe ein](./set-compression-level/) | Erfahren Sie, wie Sie die Komprimierungsstufe beim Speichern eines Dokuments mit Aspose.Words für .NET festlegen. |
+| [Docx mit Passwort verschlüsseln](./encrypt-docx-with-password/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine DOCX-Datei mit einem Kennwort verschlüsseln. Vollständiges Tutorial zur Dokumentensicherheit. |
+| [Ooxml-Konformität mit Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Erfahren Sie, wie Sie beim Speichern von Dokumenten mit Aspose.Words für .NET die Einhaltung von Ooxml Iso 29500_2008_Strict sicherstellen. |
+| [Eigenschaft „Zuletzt gespeicherter Zeitpunkt aktualisieren“](./update-last-saved-time-property/) | Erfahren Sie, wie Sie die Eigenschaft „Letzte Speicherzeit“ beim Speichern eines Dokuments mit Aspose.Words für .NET automatisch aktualisieren. |
+| [Behalten Sie die alten Steuerzeichen bei](./keep-legacy-control-chars/) | Erfahren Sie, wie Sie beim Speichern eines Dokuments mit Aspose.Words für .NET alte Steuerzeichen beibehalten. |
+| [Komprimierungsstufe festlegen](./set-compression-level/) | Erfahren Sie, wie Sie die Komprimierungsstufe beim Speichern eines Dokuments mit Aspose.Words für .NET festlegen. |

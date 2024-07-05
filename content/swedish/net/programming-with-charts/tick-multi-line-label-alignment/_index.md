@@ -1,6 +1,6 @@
 ---
-title: Kryssa för Flerradsetikettjustering i ett diagram
-linktitle: Kryssa för Flerradsetikettjustering i ett diagram
+title: Markera Flerlinjeetikettjustering i ett diagram
+linktitle: Markera Flerlinjeetikettjustering i ett diagram
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du justerar etiketter med flera rader i en diagramaxel med Aspose.Words för .NET.
 type: docs
@@ -17,7 +17,7 @@ Se till att du har följande förutsättningar:
 - Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den genom att använda NuGet-pakethanteraren för att installera den.
 - En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram.
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
  Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
@@ -73,7 +73,7 @@ Detta slutför implementeringen av att ställa in etikettjusteringen för flera 
 
 I den här handledningen har du lärt dig hur du ställer in justeringen av etiketter med flera rader i en diagramaxel med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du skapa ett nytt dokument, infoga ett spridningsdiagram, komma åt diagramaxeln och ändra justeringen av bocketiketten.
 
-Aspose.Words för .NET tillhandahåller kraftfulla funktioner för att manipulera diagram i Word-dokument. Tick-etiketter med flera rader är användbara när axeletiketter innehåller lång text som kräver lindning eller uppdelning över flera rader. Genom att ställa in kryssetikettens justering kan du styra den horisontella justeringen av flerradsetiketter inom diagramaxeln, vilket säkerställer optimal presentation och läsbarhet.
+Aspose.Words för .NET tillhandahåller kraftfulla funktioner för att manipulera diagram i Word-dokument. Markera flerradsetiketter är användbara när axeletiketter innehåller lång text som kräver radbrytning eller uppdelning över flera rader. Genom att ställa in kryssetikettens justering kan du styra den horisontella justeringen av flerradsetiketter inom diagramaxeln, vilket säkerställer optimal presentation och läsbarhet.
 
 Genom att anpassa etikettjusteringen för flera rader av markeringar kan du finjustera utseendet på ditt diagram, särskilt när du har att göra med långa eller komplexa etiketter. Genom att justera etiketterna till höger, vänster, centrerat eller justerat kan du uppnå ett balanserat och visuellt tilltalande arrangemang av ticketiketter längs axeln.
 
@@ -82,7 +82,7 @@ Med Aspose.Words för .NET kan du enkelt komma åt och ändra egenskapen för ti
 ### Vanliga frågor
 
 #### Q1. Vad är etiketter med flera rader i en diagramaxel?
-Markera etiketter med flera rader i en diagramaxel hänvisar till axeletiketterna som sträcker sig över flera linjer när etiketttexten är lång eller kräver omslag för att passa inom det tillgängliga utrymmet. Istället för att avkorta etiketttexten eller orsaka visuell rörlighet, delar diagramaxeln automatiskt upp etiketterna i flera rader för att säkerställa läsbarhet. Tick-etiketter med flera rader är särskilt användbara när du hanterar långa kategori- eller värdeetiketter i diagram.
+Markera etiketter med flera rader i en diagramaxel hänvisar till axeletiketter som sträcker sig över flera linjer när etiketttexten är lång eller kräver omslag för att passa inom det tillgängliga utrymmet. Istället för att avkorta etiketttexten eller orsaka visuell rörlighet, delar diagramaxeln automatiskt upp etiketterna i flera rader för att säkerställa läsbarhet. Etiketter med flera rader med markeringar är särskilt användbara när du hanterar långa kategori- eller värdeetiketter i diagram.
 
 #### Q2. Kan jag anpassa justeringen av kryssetiketter i en diagramaxel?
  Ja, du kan anpassa justeringen av kryssetiketter i en diagramaxel med Aspose.Words för .NET. Genom att komma åt`TickLabelAlignment` egendom av`ChartAxis` objekt kan du ställa in önskad justering för bocketiketterna. Justeringsalternativen inkluderar vänster, höger, mitten eller justerad justering. Genom att justera justeringen kan du kontrollera den horisontella placeringen av bocketiketter längs sjökortsaxeln, vilket säkerställer korrekt läsbarhet och visuell presentation.

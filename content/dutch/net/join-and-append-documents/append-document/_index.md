@@ -91,7 +91,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
 
 ### 3. Hoe zorg ik ervoor dat de opmaak behouden blijft bij het toevoegen van documenten?
 
- Gebruik de`ImportFormatMode.KeepSourceFormatting` parameters in de`AppendDocument` methode om de opmaak van het brondocument te behouden.
+ Gebruik de`ImportFormatMode.KeepSourceFormatting` parameter in de`AppendDocument` methode om de opmaak van het brondocument te behouden.
 
 ### 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 

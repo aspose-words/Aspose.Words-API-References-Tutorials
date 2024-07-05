@@ -24,7 +24,7 @@ Mielőtt belemerülnénk a kódba, győződjünk meg arról, hogy mindennel rend
 Először is állítsunk be egy új projektet a Visual Studióban.
 
 1. **Open Visual Studio.**
-2. **Create a New Project:** Lépjen a Fájl > Új > Projekt menüpontra. Válasszon ki egy C# konzolalkalmazást.
+2. **Create a New Project:** Lépjen a Fájl > Új > Projekt menüpontra. Válasszon egy C# konzolalkalmazást.
 3. **Name Your Project:** Adjon értelmes nevet a projektnek, majd kattintson a Létrehozás gombra.
 
 ## 2. lépés: Telepítse az Aspose.Words programot
@@ -32,7 +32,7 @@ Először is állítsunk be egy új projektet a Visual Studióban.
 Az Aspose.Words használatához hozzá kell adnia a projekthez. Ezt a NuGet Package Manager segítségével teheti meg.
 
 1. **Open NuGet Package Manager:** Kattintson a jobb gombbal a projektre a Solution Explorerben, majd válassza a Manage NuGet Packages lehetőséget.
-2. **Search for Aspose.Words:** A NuGet Package Managerben keressen rá az „Apose.Words” kifejezésre.
+2. **Search for Aspose.Words:** A NuGet Package Managerben keressen rá az „Aspose.Words” kifejezésre.
 3. **Install the Package:** Kattintson a Telepítés gombra az Aspose.Words projekthez való hozzáadásához.
 
 ## 3. lépés: Névterek importálása
@@ -107,7 +107,7 @@ Ha követi ezeket a lépéseket, az Aspose.Words for .NET segítségével egysze
 ## GYIK
 
 ### 1. Mi az egyesítési mező?
-Az egyesítési mező egy helyőrző a dokumentumban, amely dinamikusan lecserélhető adatforrásból, például adatbázisból vagy CSV-fájlból származó adatokkal.
+Az egyesítési mező egy olyan helyőrző a dokumentumban, amely dinamikusan lecserélhető adatforrásból, például adatbázisból vagy CSV-fájlból származó adatokkal.
 
 ### 2. Használhatom ingyenesen az Aspose.Words-t?
  Az Aspose.Words ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/). A hosszú távú használathoz licencet kell vásárolnia.
@@ -119,4 +119,4 @@ Az egyesítési mező egy helyőrző a dokumentumban, amely dinamikusan lecseré
 Az Aspose.Words a .NET több verzióját támogatja, beleértve a .NET Framework-et, a .NET Core-t és a .NET Standard-t.
 
 ### 5. Hol találom az Aspose.Words API dokumentációját?
- Az API dokumentáció elérhető.[itt](https://reference.aspose.com/words/net/).
+ Az API dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).

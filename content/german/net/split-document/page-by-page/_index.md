@@ -1,18 +1,18 @@
 ---
-title: Word-Dokument nach Seite aufteilen
-linktitle: Word-Dokument nach Seite aufteilen
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Word-Dokument in einzelne Seiten aufteilen. Diese leistungsstarke API vereinfacht das Aufteilen von Dokumenten und macht es effizient und bequem.
+title: Word-Dokument seitenweise aufteilen
+linktitle: Word-Dokument seitenweise aufteilen
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie ein Word-Dokument mit Aspose.Words für .NET in einzelne Seiten aufteilen. Diese leistungsstarke API vereinfacht das Aufteilen von Dokumenten und macht es effizient und bequem.
 type: docs
 weight: 10
 url: /de/net/split-document/page-by-page/
 ---
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie ein Word-Dokument mithilfe der Dokumentverarbeitungsfunktion von Aspose.Words für .NET in einzelne Seiten aufteilen. Führen Sie die folgenden Schritte aus, um den Quellcode zu verstehen und separate Dokumente für jede Seite zu erhalten.
+In diesem Tutorial zeigen wir Ihnen, wie Sie ein Word-Dokument mithilfe der Dokumentverarbeitungsfunktion von Aspose.Words für .NET in einzelne Seiten aufteilen. Befolgen Sie die nachstehenden Schritte, um den Quellcode zu verstehen und separate Dokumente für jede Seite zu erhalten.
 
-## Schritt 1: Laden des Dokuments
+## Schritt 1: Dokument einlegen
 
-Geben Sie zunächst das Verzeichnis für Ihr Dokument an und laden Sie das Dokument in ein Document-Objekt. Hier ist wie:
+Geben Sie zunächst das Verzeichnis für Ihr Dokument an und laden Sie das Dokument in ein Dokumentobjekt. So geht's:
 
 ```csharp
 // Pfad zum Dokumentenverzeichnis.
@@ -20,9 +20,9 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
 
-## Schritt 2: Aufteilen des Dokuments nach Seiten
+## Schritt 2: Dokumentaufteilung nach Seiten
 
-Jetzt durchlaufen wir jede Seite des Dokuments und teilen das Dokument in einzelne Seiten auf. Hier ist wie:
+Jetzt durchlaufen wir jede Seite des Dokuments und teilen es in einzelne Seiten auf. So geht's:
 
 ```csharp
 int pageCount = doc. PageCount;
@@ -40,7 +40,7 @@ extractedPage.Save(dataDir + $"SplitDocument.PageParPage_{page + 1}.docx");
 Hier ist der vollständige Quellcode für die Page-by-Page-Funktion von Aspose.Words für .NET:
 
 ```csharp
-// Der Pfad zum Dokumentenverzeichnis.
+// Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Big document.docx");
 
@@ -56,30 +56,30 @@ for (int page = 0; page < pageCount; page++)
 
 ```
 
-Mit diesem Code können Sie ein Word-Dokument mit Aspose.Words für .NET in einzelne Seiten aufteilen. Bei Bedarf können Sie auch einzelne Dokumente zusammenführen.
+Mit diesem Code können Sie ein Word-Dokument mithilfe von Aspose.Words für .NET in einzelne Seiten aufteilen. Bei Bedarf können Sie auch einzelne Dokumente zusammenführen.
 
 ## Abschluss
 
-Glückwunsch! Sie haben gelernt, wie Sie ein Word-Dokument mithilfe der Seite-für-Seite-Funktion von Aspose.Words für .NET in einzelne Seiten aufteilen. Indem Sie dem bereitgestellten Quellcode folgen, können Sie jede Seite eines Dokuments extrahieren und als separate Dokumente speichern.
+Herzlichen Glückwunsch! Sie haben gelernt, wie Sie ein Word-Dokument mithilfe der Funktion „Seite für Seite“ von Aspose.Words für .NET in einzelne Seiten aufteilen. Indem Sie dem bereitgestellten Quellcode folgen, können Sie jede Seite eines Dokuments extrahieren und als separate Dokumente speichern.
 
-Das Aufteilen eines Dokuments nach Seiten kann nützlich sein, wenn Sie mit bestimmten Seiten arbeiten oder Inhalte granular verteilen müssen. Aspose.Words für .NET bietet eine leistungsstarke API, die das Aufteilen von Dokumenten vereinfacht und so effizient und bequem macht.
+Das Aufteilen eines Dokuments nach Seiten kann nützlich sein, wenn Sie mit bestimmten Seiten arbeiten oder Inhalte granular verteilen müssen. Aspose.Words für .NET bietet eine leistungsstarke API, die das Aufteilen von Dokumenten vereinfacht und effizient und bequem macht.
 
-Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um Ihre Dokumentverarbeitungsmöglichkeiten zu verbessern und Ihren Arbeitsablauf zu optimieren.
+Erkunden Sie die anderen von Aspose.Words für .NET angebotenen Funktionen, um Ihre Dokumentverarbeitungsfunktionen zu verbessern und Ihren Arbeitsablauf zu optimieren.
 
 ### FAQs
 
 #### Wie kann ich ein Dokument mit Aspose.Words für .NET in mehrere Seiten aufteilen?
 
- Um ein Dokument in mehrere Seiten aufzuteilen, können Sie die verwenden`ExtractPages` Methode der Aspose.Words-API, um den Seitenbereich abzurufen. Durch Angabe der Startseite und der Anzahl der zu extrahierenden Seiten können Sie für jede Seite separate Dokumente erstellen.
+ Um ein Dokument in mehrere Seiten aufzuteilen, können Sie die`ExtractPages` Methode der Aspose.Words-API, um den Seitenbereich abzurufen. Indem Sie die Startseite und die Anzahl der zu extrahierenden Seiten angeben, können Sie für jede Seite separate Dokumente erstellen.
 
-#### Kann ich das Ausgabeformat anpassen, wenn ich ein Dokument nach Seiten aufteile?
+#### Kann ich das Ausgabeformat anpassen, wenn ich ein Dokument seitenweise aufteile?
 
-Ja, Aspose.Words für .NET unterstützt verschiedene Ausgabeformate beim Teilen eines Dokuments nach Seiten. Sie können jede Seite je nach Ihren Anforderungen als separates Dokument in Formaten wie DOCX, PDF, HTML usw. speichern.
+Ja, Aspose.Words für .NET unterstützt verschiedene Ausgabeformate beim Aufteilen eines Dokuments nach Seiten. Sie können jede Seite als separates Dokument in Formaten wie DOCX, PDF, HTML und mehr speichern, je nach Ihren Anforderungen.
 
 #### Kann ich ein Dokument nach einem bestimmten Seitenbereich aufteilen?
 
-Absolut! Mit Aspose.Words für .NET können Sie ein Dokument nach einem bestimmten Seitenbereich aufteilen. Durch Anpassen der Startseite und der Anzahl der zu extrahierenden Seiten können Sie den Seitenbereich für die Aufteilung des Dokuments genau definieren.
+Absolut! Aspose.Words für .NET ermöglicht es Ihnen, ein Dokument nach einem bestimmten Seitenbereich aufzuteilen. Indem Sie die Startseite und die Anzahl der zu extrahierenden Seiten anpassen, können Sie den Seitenbereich für die Aufteilung des Dokuments genau definieren.
 
-#### Ist es möglich, die aufgeteilten Dokumente wieder in einem einzigen Dokument zusammenzuführen?
+#### Ist es möglich, die aufgeteilten Dokumente wieder zu einem einzigen Dokument zusammenzuführen?
 
-Ja, Sie können die geteilten Dokumente mithilfe der von Aspose.Words für .NET bereitgestellten Zusammenführungsfunktion wieder zu einem einzigen Dokument zusammenführen. Durch die Kombination der einzelnen Dokumente können Sie je nach Bedarf das Originaldokument neu erstellen oder ein neues Dokument mit einer anderen Struktur erstellen.
+Ja, Sie können die geteilten Dokumente mithilfe der Zusammenführungsfunktion von Aspose.Words für .NET wieder zu einem einzigen Dokument zusammenführen. Durch die Kombination der einzelnen Dokumente können Sie das Originaldokument wiederherstellen oder je nach Bedarf ein neues Dokument mit einer anderen Struktur erstellen.

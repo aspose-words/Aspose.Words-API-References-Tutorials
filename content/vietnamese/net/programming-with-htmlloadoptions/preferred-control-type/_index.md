@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 #### Câu hỏi: Tính năng "Loại điều khiển ưa thích" trong Aspose.Words dành cho .NET là gì?
 
-Trả lời: Tính năng "Loại điều khiển ưa thích" cho phép bạn chỉ định loại điều khiển ưa thích để thể hiện các thành phần HTML khi tải tài liệu HTML. Nó giúp chọn loại điều khiển thích hợp để thể hiện và xử lý nội dung HTML tốt hơn.
+Trả lời: Tính năng "Loại điều khiển ưa thích" cho phép bạn chỉ định loại điều khiển ưa thích để thể hiện các phần tử HTML khi tải tài liệu HTML. Nó giúp chọn loại điều khiển thích hợp để thể hiện và xử lý nội dung HTML tốt hơn.
 
 #### Câu hỏi: Làm cách nào để đặt loại điều khiển ưa thích khi tải tài liệu HTML?
 

@@ -13,14 +13,14 @@ Basic Conversions leidt u door de basisdocumentconversies met behulp van de Aspo
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Converteer Doc naar Docx](./doc-to-docx/) | Leer hoe u Word-documenten converteert van Doc- naar Docx-indeling met Aspose.Words voor .NET.  |
-| [Converteer Docx naar Rtf](./docx-to-rtf/) | Leer hoe u Word-documenten converteert van Docx naar RTF-indeling met Aspose.Words voor .NET.  |  
-| [Converteer Word-bestand naar PDF](./docx-to-pdf/) | Leer hoe u Word-documenten van Docx naar PDF converteert met Aspose.Words voor .NET. | 
-| [Converteer Docx naar byte](./docx-to-byte/) | Leer hoe u Word-documenten van Docx naar byte-array converteert met Aspose.Words voor .NET. |  
-| [Converteer Docx naar Epub](./docx-to-epub/) | Leer hoe u Word-documenten converteert van Docx naar Epub-indeling met Aspose.Words voor .NET. |
-| [Converteer Docx naar Mhtml en verzend e-mail](./docx-to-mhtml-and-sending-email/) | Leer hoe u Word-documenten converteert van Docx naar MHTML en deze als e-mails verzendt met Aspose.Words en Aspose.Email. |
-| [Converteer Docx-bestand naar Markdown](./docx-to-markdown/) | Leer hoe u Word-documenten converteert van Docx naar Markdown-indeling met Aspose.Words voor .NET. |
-| [Converteer Docx naar Txt](./docx-to-txt/) | Leer hoe u Word-documenten van Docx naar platte tekst (Txt) converteert met Aspose.Words voor .NET. |
-| [Converteer tekstbestand naar Word-document](./txt-to-docx/) | Leer hoe u platte tekstbestanden (Txt) naar Word-documenten (Docx) converteert met Aspose.Words voor .NET. | 
-| [Bewaar pdf als jpeg](./pdf-to-jpeg/) | Leer hoe u PDF-documenten naar JPEG-afbeeldingen converteert met Aspose.Words voor .NET. |
-| [PDF opslaan in Word-formaat (Docx)](./pdf-to-docx/) | Leer hoe u PDF-documenten naar Docx-indeling converteert met Aspose.Words voor .NET.  |
+| [Converteer Doc naar Docx](./doc-to-docx/) | Leer hoe u DOC naar DOCX converteert met Aspose.Words voor .NET. Stapsgewijze handleiding met codevoorbeelden. Ideaal voor ontwikkelaars.  |
+| [Converteer Docx naar Rtf](./docx-to-rtf/) | Leer hoe u DOCX naar RTF converteert met Aspose.Words voor .NET met deze stapsgewijze handleiding. Ideaal voor ontwikkelaars die op zoek zijn naar een efficiënte oplossing.  |  
+| [Converteer Word-bestand naar PDF](./docx-to-pdf/) | Leer met onze gids hoe u eenvoudig Word-bestanden naar PDF kunt converteren met Aspose.Words voor .NET. Perfect voor ontwikkelaars die op zoek zijn naar snelle en betrouwbare documentconversie. | 
+| [Converteer Docx naar byte](./docx-to-byte/) | Leer hoe u Docx naar byte-array in .NET converteert met Aspose.Words voor efficiënte documentverwerking. Stap-voor-stap handleiding inbegrepen. |  
+| [Converteer Docx naar Epub](./docx-to-epub/) | Converteer DOCX eenvoudig naar EPUB met Aspose.Words voor .NET. Volg onze tutorial voor naadloze integratie in uw .NET-applicaties. |
+| [Converteer Docx naar Mhtml en verzend e-mail](./docx-to-mhtml-and-sending-email/) | Leer in deze stapsgewijze handleiding hoe u DOCX naar MHTML converteert en e-mails verzendt met Aspose.Words voor .NET. Verhoog uw productiviteit met eenvoudige automatisering. |
+| [Converteer Docx-bestand naar Markdown](./docx-to-markdown/) | Leer hoe u DOCX-bestanden naar Markdown converteert met Aspose.Words voor .NET. Volg onze gedetailleerde handleiding voor naadloze integratie in uw .NET-applicaties. |
+| [Converteer Docx naar Txt](./docx-to-txt/) | Converteer DOCX naar TXT met Aspose.Words voor .NET met onze stapsgewijze handleiding. Leer hoe u documenten efficiënt en moeiteloos kunt transformeren. |
+| [Converteer tekstbestand naar Word-document](./txt-to-docx/) | Leer hoe u tekstbestanden naar Word-documenten converteert met Aspose.Words voor .NET. Beheer documentconversies efficiënt met onze uitgebreide handleiding. | 
+| [Bewaar pdf als jpeg](./pdf-to-jpeg/) | Converteer PDF's moeiteloos naar JPEG's met Aspose.Words voor .NET. Volg onze gedetailleerde gids met voorbeelden en veelgestelde vragen. Perfect voor ontwikkelaars en liefhebbers. |
+| [PDF opslaan in Word-formaat (Docx)](./pdf-to-docx/) | Leer hoe u een PDF naar een Word-document (Docx) converteert met Aspose.Words voor .NET in deze gedetailleerde, stapsgewijze handleiding. Ideaal voor ontwikkelaars. |

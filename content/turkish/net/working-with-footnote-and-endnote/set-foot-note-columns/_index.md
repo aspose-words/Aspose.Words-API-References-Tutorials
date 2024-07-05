@@ -57,7 +57,7 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel gereksinimlerinize göre değ
 
 #### S: Aspose.Words'te dipnotların sütun sayısını nasıl yapılandırabilirim?
 
- C: Aspose.Words'te dipnotların sütun sayısını yapılandırmak için`FootnoteOptions` sınıf ve`ColumnsCount` mülk. Bu özelliği istediğiniz sayıda sütuna ayarlayabilirsiniz.
+C: Aspose.Words'te dipnotların sütun sayısını yapılandırmak için`FootnoteOptions` sınıf ve`ColumnsCount` mülk. Bu özelliği istediğiniz sayıda sütuna ayarlayabilirsiniz.
 
 #### S: Dipnot sütunları oluşturmanın faydaları nelerdir?
 

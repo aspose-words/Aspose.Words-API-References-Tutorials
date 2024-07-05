@@ -30,7 +30,7 @@ saveOptions.setThresholdForFloydSteinbergDithering((byte) 254);
 doc.save("Your Directory Path" + "ThresholdControlledImage.tiff", saveOptions);
 ```
 
-## ขั้นตอนที่ 2: บันทึกเพจเฉพาะเป็น TIFF หลายหน้า
+## ขั้นตอนที่ 2: บันทึกหน้าเฉพาะเป็น TIFF หลายหน้า
 
 หากต้องการบันทึกหน้าใดหน้าหนึ่งเป็น TIFF หลายหน้า ให้ใช้รหัสต่อไปนี้:
 
@@ -56,7 +56,7 @@ saveOptions.setPixelFormat(ImagePixelFormat.FORMAT_1_BPP_INDEXED);
 doc.save("Your Directory Path" + "1BPPIndexed.png", saveOptions);
 ```
 
-## ขั้นตอนที่ 4: บันทึกหน้าเป็น JPEG พร้อมการปรับแต่ง
+## ขั้นตอนที่ 4: บันทึกเพจเป็น JPEG พร้อมการปรับแต่ง
 
 หากต้องการบันทึกหน้าเฉพาะเป็น JPEG พร้อมตัวเลือกการปรับแต่ง ให้ใช้รหัสนี้:
 

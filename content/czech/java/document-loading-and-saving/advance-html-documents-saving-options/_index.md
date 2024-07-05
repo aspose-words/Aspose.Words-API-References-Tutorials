@@ -2,7 +2,7 @@
 title: Pokročilé možnosti ukládání dokumentů HTML pomocí Aspose.Words Java
 linktitle: Ukládání HTML dokumentů pomocí
 second_title: Aspose.Words Java Document Processing API
-description: V tomto tutoriálu jsme se zabývali různými pokročilými možnostmi ukládání dokumentů HTML pomocí Aspose.Words pro Java. Tyto možnosti vám umožňují vytvářet vysoce kvalitní HTML.
+description: V tomto tutoriálu jsme se zabývali různými pokročilými možnostmi ukládání dokumentů HTML pomocí Aspose.Words pro Java. Tyto možnosti vám umožňují vytvářet vysoce kvalitní HTML
 type: docs
 weight: 16
 url: /cs/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -60,7 +60,7 @@ public void exportResources() throws Exception {
 ```java
 @Test
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    // Fragment kódu se pro stručnost nezobrazuje.
+    // Fragment kódu není pro stručnost zobrazen.
 }
 ```
 
@@ -70,7 +70,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```java
 @Test
 public void convertMetafilesToSvg() throws Exception {
-    // Fragment kódu se pro stručnost nezobrazuje.
+    // Fragment kódu není pro stručnost zobrazen.
 }
 ```
 
@@ -94,7 +94,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```java
 @Test
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    // Fragment kódu se pro stručnost nezobrazuje.
+    // Fragment kódu není pro stručnost zobrazen.
 }
 ```
 
@@ -104,7 +104,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```java
 @Test
 public void resolveFontNames() throws Exception {
-    // Fragment kódu se pro stručnost nezobrazuje.
+    // Fragment kódu není pro stručnost zobrazen.
 }
 ```
 
@@ -114,14 +114,14 @@ public void resolveFontNames() throws Exception {
 ```java
 @Test
 public void exportTextInputFormFieldAsText() throws Exception {
-    // Fragment kódu se pro stručnost nezobrazuje.
+    // Fragment kódu není pro stručnost zobrazen.
 }
 ```
 
 ## 11. Závěr
 tomto tutoriálu jsme prozkoumali pokročilé možnosti ukládání dokumentů HTML, které poskytuje Aspose.Words pro Java. Tyto možnosti vám poskytují jemnou kontrolu nad procesem převodu a umožňují vám vytvářet dokumenty HTML, které se velmi podobají původním dokumentům aplikace Word.
 
-## 12.Časté dotazy
+## 12. Nejčastější dotazy
 Zde jsou některé často kladené otázky o práci s Aspose.Words pro Java a možnosti uložení dokumentu HTML:
 
 ### Q1: Jak mohu převést HTML zpět do formátu Word pomocí Aspose.Words for Java?

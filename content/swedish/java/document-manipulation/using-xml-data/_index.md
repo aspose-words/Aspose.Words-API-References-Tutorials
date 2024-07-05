@@ -46,7 +46,7 @@ doc.getMailMerge().executeWithRegions(pizzaDs);
 doc.save("Your Directory Path" + "NestedMailMerge.docx");
 ```
 
-## Mustaschsyntax med hjälp av dataset
+## Mustaschsyntax med hjälp av DataSet
 
 Följ dessa steg för att utnyttja Mustache-syntaxen med en datauppsättning:
 

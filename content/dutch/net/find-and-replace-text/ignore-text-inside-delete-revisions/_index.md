@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 
-In dit artikel zullen we de bovenstaande C#-broncode onderzoeken om te begrijpen hoe u de functie 'Tekst negeren binnen verwijderingsrevisies' in de Aspose.Words voor .NET-bibliotheek kunt gebruiken. Deze functie is handig als we tekst in verwijderingsrevisies willen negeren bij het verwerken van woorden met documenten.
+In dit artikel zullen we de bovenstaande C#-broncode verkennen om te begrijpen hoe u de functie 'Tekst negeren binnen verwijderingsrevisies' in de Aspose.Words voor .NET-bibliotheek kunt gebruiken. Deze functie is handig als we tekst in verwijderingsrevisies willen negeren bij het verwerken van woorden met documenten.
 
 ## Overzicht van de Aspose.Words voor .NET-bibliotheek
 
@@ -122,7 +122,7 @@ Hier is de volledige voorbeeldbroncode om het gebruik van de functie "Tekst binn
 
 ## Conclusie
 
-In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de functie 'Tekst negeren binnen verwijderingsrevisies' kunt gebruiken in Aspose.Words voor .NET. Deze functie is handig voor het negeren van tekst in verwijderingsrevisies bij het manipuleren van documenten. We volgden een stapsgewijze handleiding om een document te maken, tekst in te voegen, een alinea te verwijderen met revisietracking, de functie 'Tekst negeren binnen revisies verwijderen' toe te passen en zoek- en vervangbewerkingen uit te voeren.
+In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de functie 'Tekst negeren binnen verwijderingsrevisies' kunt gebruiken in Aspose.Words voor .NET. Deze functie is handig voor het negeren van tekst in verwijderingsrevisies bij het manipuleren van documenten. We volgden een stapsgewijze handleiding om een document te maken, tekst in te voegen, een alinea te verwijderen met revisietracering, de functie "Tekst negeren binnen revisies verwijderen" toe te passen en zoek- en vervangbewerkingen uit te voeren.
 
 ### Veelgestelde vragen
 

@@ -1,59 +1,59 @@
 ---
-title: Formularfelder Holen Sie sich eine Sammlung von Formularfeldern
-linktitle: Formularfelder Holen Sie sich eine Sammlung von Formularfeldern
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Formularfeldsammlungen in Word-Dokumenten abrufen und bearbeiten.
+title: Formularfelder Sammlung von Formularfeldern abrufen
+linktitle: Formularfelder Sammlung von Formularfeldern abrufen
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Sammlung von Formularfeldern in Word-Dokumenten abrufen und bearbeiten.
 type: docs
 weight: 10
 url: /de/net/working-with-formfields/form-fields-get-form-fields-collection/
 ---
 
-In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET die Sammlung von Formularfeldern aus einem Word-Dokument abrufen. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
+In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET die Sammlung von Formularfeldern aus einem Word-Dokument abrufen. Wir erklären den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
- Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie[Aspose.Releases]https://releases.aspose.com/words/net/.
+ Stellen Sie zunächst sicher, dass Sie Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet haben. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie von[[Originaltext von Aspose.Releases]https://releases.aspose.com/words/net/.
 
 ## Schritt 1: Initialisieren des Dokumentobjekts
 
- Initialisieren Sie zunächst die`Document` -Objekt, indem Sie den Pfad zu Ihrem Quelldokument angeben, das Formularfelder enthält:
+ Initialisieren Sie zunächst den`Document` Objekt, indem Sie den Pfad zu Ihrem Quelldokument angeben, das die Formularfelder enthält:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## Schritt 2: Abrufen der Formularfeldsammlung
+## Schritt 2: Abrufen der Formularfelder-Sammlung
 
- Als nächstes greifen Sie auf zu`FormFields` Eigentum der`Range` Objekt im Dokument, um die Sammlung von Formularfeldern abzurufen:
+ Als nächstes greifen Sie auf die`FormFields` Eigentum der`Range` Objekt im Dokument, um die Sammlung der Formularfelder abzurufen:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;
 ```
 
- Jetzt haben Sie die Sammlung von Formularfeldern aus dem Word-Dokument im gespeichert`formFields` Variable.
+ Nun haben Sie die Sammlung der Formularfelder aus dem Word-Dokument im`formFields` Variable.
 
-## Schritt 3: Auf die Formularfelder zugreifen und diese bearbeiten
+## Schritt 3: Zugriff auf und Bearbeitung der Formularfelder
 
-Sie können die Formularfeldsammlung durchlaufen und verschiedene Vorgänge für jedes Formularfeld ausführen, z. B. Werte abrufen oder festlegen, Formatierungen ändern oder Informationen extrahieren.
+Sie können die Sammlung der Formularfelder durchlaufen und für jedes Formularfeld verschiedene Vorgänge ausführen, z. B. Werte abrufen oder festlegen, die Formatierung ändern oder Informationen extrahieren.
 
 ```csharp
 foreach (FormField formField in formFields)
 {
-    // Greifen Sie auf jedes Formularfeld zu und bearbeiten Sie es
+    // Zugriff auf jedes Formularfeld und Bearbeitung
     // ...
 }
 ```
 
 ## Schritt 4: Speichern des Dokuments
 
-Abschließend speichern Sie ggf. das geänderte Dokument:
+Speichern Sie abschließend ggf. das geänderte Dokument:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-Das ist es! Sie haben die Sammlung von Formularfeldern mit Aspose.Words für .NET erfolgreich aus einem Word-Dokument abgerufen.
+Das ist es! Sie haben die Sammlung von Formularfeldern erfolgreich aus einem Word-Dokument mit Aspose.Words für .NET abgerufen.
 
-### Beispielquellcode für Formularfelder. Holen Sie sich eine Sammlung von Formularfeldern mit Aspose.Words für .NET
+### Beispielquellcode für Formularfelder. Formularfeldersammlung mit Aspose.Words für .NET abrufen
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -67,25 +67,25 @@ FormFieldCollection formFields = doc.Range.FormFields;
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprechend Ihren spezifischen Anforderungen modifizieren.
+Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und ihn entsprechend Ihren spezifischen Anforderungen ändern.
 
-### FAQs
+### Häufig gestellte Fragen
 
-#### F: Wie kann ich auf die Formularfeldsammlung in Aspose.Words zugreifen?
+#### F: Wie kann ich in Aspose.Words auf die Sammlung der Formularfelder zugreifen?
 
- A: Um auf die Sammlung von Formularfeldern in Aspose.Words zuzugreifen, können Sie die verwenden`Document.FormFields` Eigentum. Diese Eigenschaft gibt die vollständige Sammlung der im Dokument vorhandenen Formularfelder zurück.
+ A: Um auf die Sammlung von Formularfeldern in Aspose.Words zuzugreifen, können Sie das`Document.FormFields` Eigenschaft. Diese Eigenschaft gibt die vollständige Sammlung der im Dokument vorhandenen Formularfelder zurück.
 
-#### F: Wie kann ich Formularfelder durchlaufen und für jedes einzelne Operationen ausführen?
+#### F: Wie kann ich durch die Formularfelder iterieren und für jedes davon Operationen ausführen?
 
- A: Sie können mit a durch Formularfelder iterieren`foreach` Schleife auf der`Document.FormFields` Sammlung. Bei jeder Iteration können Sie auf Eigenschaften zugreifen und bestimmte Vorgänge für das Formularfeld ausführen.
+ A: Sie können Formularfelder durchlaufen mit einem`foreach` Schleife auf der`Document.FormFields` Sammlung. Bei jeder Iteration können Sie auf Eigenschaften zugreifen und bestimmte Vorgänge am Formularfeld ausführen.
 
-#### F: Kann ich die Formularfeldsammlung filtern, um nur bestimmte Feldtypen abzurufen?
+#### F: Kann ich die Sammlung der Formularfelder filtern, um nur bestimmte Feldtypen zu erhalten?
 
-A: Ja, Sie können die Formularfeldsammlung mithilfe geeigneter Bedingungen in Ihrer Iterationsschleife filtern. Sie können beispielsweise den Feldtyp jedes Elements überprüfen und nur Felder bearbeiten, die Ihren Kriterien entsprechen.
+A: Ja, Sie können die Sammlung der Formularfelder mithilfe geeigneter Bedingungen in Ihrer Iterationsschleife filtern. Sie können beispielsweise den Feldtyp jedes Elements überprüfen und nur die Felder bearbeiten, die Ihren Kriterien entsprechen.
 
 #### F: Wie kann ich ein bestimmtes Formularfeld aus der Sammlung entfernen?
 
- A: Um ein bestimmtes Formularfeld aus der Sammlung zu entfernen, können Sie das verwenden`FormField.Remove` Methode, die das Feld angibt, das Sie entfernen möchten. Diese Methode entfernt das Formularfeld aus der Sammlung.
+ A: Um ein bestimmtes Formularfeld aus der Sammlung zu entfernen, können Sie das`FormField.Remove` Methode, die das zu entfernende Feld angibt. Diese Methode entfernt das Formularfeld aus der Sammlung.
 
 #### F: Ist es möglich, die Eigenschaften eines Formularfelds in Aspose.Words zu ändern?
 

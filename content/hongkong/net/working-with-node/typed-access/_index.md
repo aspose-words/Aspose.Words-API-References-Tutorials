@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/working-with-node/typed-access/
 ---
 
-以下是解釋 C# 原始程式碼的逐步指南，說明如何將類型化存取功能與 Aspose.Words for .NET 一起使用。
+以下是解釋 C# 原始程式碼的逐步指南，說明如何將類型化存取功能與 Aspose.Words for .NET 結合使用。
 
 ## 第 1 步：導入必要的參考文獻
 在開始之前，請確保您已將使用 Aspose.Words for .NET 所需的參考匯入到您的專案中。這包括匯入 Aspose.Words 庫並將所需的命名空間新增至來源檔案。

@@ -2,97 +2,121 @@
 title: Összehasonlítási cél a Word dokumentumban
 linktitle: Összehasonlítási cél a Word dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg a cél összehasonlítását az Aspose.Words for .NET Word dokumentum funkciójában, amely lehetővé teszi a dokumentumok összehasonlítását, és a végrehajtott módosításokat tartalmazó új dokumentum létrehozását.
+description: Könnyedén összehasonlíthatja a Word-dokumentumokat az Aspose.Words for .NET használatával ezzel a részletes, lépésről-lépésre szóló útmutatóval. Takarítson meg időt és növelje a dokumentumok összehasonlításának pontosságát.
 type: docs
 weight: 10
 url: /hu/net/compare-documents/comparison-target/
 ---
-Itt található egy lépésről lépésre bemutatott útmutató a C# forráskód leírásához, amely az Aspose.Words for .NET Word dokumentum funkciójában az összehasonlítási célt használja.
+## Bevezetés
 
-## 1. lépés: Bevezetés
+Halihó! Volt már olyan, hogy egy Word-dokumentum két verzióját hasonlította össze, és minden apró változást manuálisan követett? Mintha tűt keresnénk a szénakazalban, igaz? Nos, mi lenne, ha azt mondanám, hogy van egy szuper egyszerű módja ennek az Aspose.Words for .NET használatával? Úgy van! Ezzel a hatékony könyvtárral egy pillanat alatt összehasonlíthatja a Word-dokumentumokat. Ma lépésről lépésre végigvezetem a folyamaton. Készen áll arra, hogy dokumentum-összehasonlító varázslóvá váljon? Merüljünk el!
 
-Az Aspose.Words for .NET célösszehasonlító funkciója lehetővé teszi két dokumentum összehasonlítását, és új dokumentum létrehozását, amely tartalmazza a céldokumentum módosításait. Ez hasznos lehet a dokumentum különböző verziói között végrehajtott változtatások nyomon követéséhez.
+## Előfeltételek
 
-## 2. lépés: A környezet beállítása
+Mielőtt belevágnánk az apróságokba, győződjünk meg arról, hogy mindennel rendelkezünk, ami az induláshoz szükséges:
 
-Mielőtt elkezdené, be kell állítania a fejlesztői környezetet az Aspose.Words for .NET használatához. Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár, és van egy megfelelő C# projekt a kód beágyazásához.
+1.  Aspose.Words for .NET: Szüksége van erre a könyvtárra. Ha még nincs meg, vedd meg onnan[itt](https://releases.aspose.com/words/net/).
+2.  Licenc: Az Aspose.Words teljes potenciáljának kiaknázásához érvényes licencre lesz szüksége. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+3. Fejlesztői környezet: Visual Studio vagy bármely más .NET-kompatibilis IDE.
+4. Alapvető C# ismerete: Ne aggódjon, nem kell profinak lenned, elég egy kis alapismeret.
 
-## 3. lépés: Adja hozzá a szükséges összeállításokat
+## Névterek importálása
 
-Az Aspose.Words for .NET összehasonlító célszolgáltatásának használatához hozzá kell adnia a szükséges összeállításokat a projekthez. Győződjön meg arról, hogy megfelelő hivatkozásokat tartalmaz az Aspose.Words-re a projektben.
+Először is importálnia kell a szükséges névtereket. Ezek olyanok, mint a kulisszák mögötti stáb, amelytől minden gördülékenyen megy.
 
 ```csharp
+using System;
 using Aspose.Words;
+using Aspose.Words.Compare;
 ```
 
-## 4. lépés: Dokumentum inicializálása
+Rendben, most térjünk rá az izgalmas részre – a lépésről lépésre!
 
-Ebben a lépésben két dokumentumot inicializálunk összehasonlítás céljából. Meg kell adnia a könyvtár elérési útját, ahol a dokumentumok találhatók, valamint a forrásdokumentum nevét.
+## 1. lépés: Állítsa be projektjét
+
+Készítsük elő a projektünket. Indítsa el a fejlesztői környezetet, és hozzon létre egy új C# projektet. Nevezd el, ahogy tetszik – a „DocumentComparison” jól hangzik, nem?
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+// Hozzon létre egy új C#-projektet a Visual Studióban
+```
 
-// Az A dokumentum inicializálása az összehasonlításhoz.
+## 2. lépés: Az Aspose.Words for .NET telepítése
+
+Ezután hozzá kell adnia az Aspose.Words fájlt a projekthez. Ezt a NuGet Package Manager segítségével teheti meg. Csak keresse meg az Aspose.Words-t, és telepítse. Könnyű peasy!
+
+```bash
+Install-Package Aspose.Words
+```
+
+## 3. lépés: Töltse be a dokumentumokat
+
+Rendben, ideje betölteni az összehasonlítani kívánt dokumentumokat. Szüksége lesz ezekhez a dokumentumokhoz vezető útvonalakra. Tegyük fel, hogy két dokumentummal rendelkezik:`DocumentA.docx` és`DocumentB.docx`.
+
+```csharp
+// A dokumentumok könyvtárának elérési útja.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document docA = new Document(dataDir + "DocumentA.docx");
+Document docB = new Document(dataDir + "DocumentB.docx");
+```
 
-// Az A dokumentum klónozása a B dokumentum azonos másolatának létrehozásához.
+## 4. lépés: Klónozza a dokumentumot
+
+A klónozás olyan, mintha egy azonos ikerpárt készítenél a dokumentumból. Ez a lépés biztosítja, hogy legyen egy biztonsági másolat, amelyet összehasonlíthat az eredetivel.
+
+```csharp
 Document docB = docA.Clone();
 ```
 
-## 5. lépés: Összehasonlítási beállítások konfigurálása
+## 5. lépés: Állítsa be az összehasonlítási beállításokat
 
-Ebben a lépésben konfiguráljuk az összehasonlítási beállításokat, hogy meghatározzuk az összehasonlítás viselkedését. A lehetőségek között szerepel a formázás figyelmen kívül hagyásának lehetősége, valamint az összehasonlítási cél, amely a Microsoft Word „Dokumentumok összehasonlítása” párbeszédpaneljének „Változások megjelenítése” opciója.
+Most állítsuk be az összehasonlítási lehetőségeket. Figyelmen kívül hagyja a formázást? Talán csak a tartalmi változások érdeklik. A következőképpen állíthatja be:
 
 ```csharp
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
+CompareOptions options = new CompareOptions
+{
+    IgnoreFormatting = true,
+    Target = ComparisonTargetType.New
+};
 ```
 
-## 6. lépés: Dokumentumok összehasonlítása
+## 6. lépés: Hasonlítsa össze a dokumentumokat
 
-Most összehasonlítjuk a dokumentumokat, és létrehozzuk az eredményt egy új dokumentumban.
+És most, a pillanat, amire mindannyian vártunk – a dokumentumok összehasonlítása! Itt történik a varázslat. Az Aspose.Word összehasonlítja a dokumentumokat, és kiemeli a különbségeket.
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
- A`Compare`módszer összehasonlítja az A dokumentumot a B dokumentummal, és elmenti az A dokumentum módosításait. Referenciaként megadhatja a felhasználónevet és az összehasonlítás dátumát.
+## 7. lépés: Mentse el az összehasonlított dokumentumot
 
-### Minta forráskód a Compare Target használatához Aspose.Words for .NET használatával
-
+Végül mentse el az összehasonlított dokumentumot a változtatások kiemeléséhez. Ez a lépés olyan, mintha egy ügyes csomagba csomagolná a munkáját.
 
 ```csharp
-            
-Document docA = new Document(MyDir + "Document.docx");
-Document docB = docA.Clone();
-
-// A Microsoft Word „Változások megjelenítése” opciójához kapcsolódik a „Dokumentumok összehasonlítása” párbeszédpanelen.
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
-
-docA.Compare(docB, "user", DateTime.Now, options);
-            
-        
+docA.Save(dataDir + "ComparedDocument.docx");
 ```
 
 ## Következtetés
 
-Ebben a cikkben megvizsgáltuk az Aspose.Words for .NET diff target funkcióját. Ez a funkció lehetővé teszi két dokumentum összehasonlítását, és egy új dokumentum létrehozását, amely tartalmazza a végrehajtott módosításokat. Ezt a tudást felhasználhatja a dokumentumok különböző verziói közötti változások nyomon követésére.
+Itt van – egyszerű és hatékony módja a Word dokumentumok összehasonlításának az Aspose.Words for .NET használatával! Nincs több manuális összehasonlítás, nincs több fejfájás. Csak néhány sornyi kóddal kiemelheti a különbségeket, és arra összpontosíthat, ami igazán számít. Tehát próbálkozzon vele, és nézze meg, mennyi időt takarít meg.
 
-### GYIK
+## GYIK
 
-#### K: Mi a célja a Comparison Target használatának az Aspose.Words for .NET-ben?
+### Összehasonlíthatom a különböző formátumú dokumentumokat az Aspose.Words használatával?
 
-V: Összehasonlítási cél az Aspose.Words for .NET-ben lehetővé teszi két dokumentum összehasonlítását, és egy új dokumentum létrehozását, amely tartalmazza a céldokumentum módosításait. Ez a funkció a dokumentum különböző verziói között végrehajtott változtatások nyomon követéséhez és a különbségek külön dokumentumban való megjelenítéséhez hasznos.
+Igen, az Aspose.Words zökkenőmentesen tudja kezelni a különböző formátumú dokumentumokat.
 
-#### K: Hogyan használhatom az Összehasonlítási célt az Aspose.Words for .NET-ben?
+### Szükségem van engedélyre az Aspose.Words használatához?
 
-V: A Comparison Target használatához az Aspose.Words for .NET-ben, kövesse az alábbi lépéseket:
-1. Állítsa be fejlesztői környezetét az Aspose.Words könyvtárral.
-2. Adja hozzá a szükséges összeállításokat a projekthez az Aspose.Words hivatkozással.
-3.  Inicializálja az összehasonlítani kívánt dokumentumokat a segítségével`Document` osztály vagy a`DocumentBuilder` osztály.
-4.  Konfigurálja az összehasonlítási beállításokat a létrehozásával`CompareOptions` objektum és beállítás tulajdonságai, mint pl`IgnoreFormatting` és`Target` (például.,`ComparisonTargetType.New` összehasonlítási célhoz).
-5.  Használja a`Compare` módszer az egyik dokumentumon, átadva a másik dokumentumot és a`CompareOptions` objektum paraméterként. Ez a módszer összehasonlítja a dokumentumokat, és elmenti a módosításokat az első dokumentumban.
+Igen, az összes funkció feloldásához érvényes licenc szükséges. Vásárolhat egyet, vagy ideiglenes engedélyt kaphat.
 
-####  K: Mi a célja a`Target` property in the `CompareOptions` class?
+### Mi történik, ha figyelmen kívül hagyom a formázást az összehasonlítási lehetőségeknél?
 
- V: A`Target` ingatlan a`CompareOptions` osztály lehetővé teszi az összehasonlítási cél megadását, amely hasonló a Microsoft Word "Dokumentumok összehasonlítása" párbeszédpaneljének "Változások megjelenítése" opciójához. A cél beállítható`ComparisonTargetType.New` a változások megjelenítéséhez egy új dokumentumban,`ComparisonTargetType.Current` az aktuális dokumentum változásainak megjelenítéséhez, vagy`ComparisonTargetType.Formatting` hogy csak a formázási változások jelenjenek meg.
+Ha figyelmen kívül hagyja a formázást, az összehasonlítás kizárólag a tartalmi változásokra összpontosít, figyelmen kívül hagyva a formázási különbségeket.
+
+### Testreszabhatom az összehasonlítási lehetőségeket?
+
+Teljesen! Az Aspose.Words számos lehetőséget kínál, hogy az összehasonlítást az Ön igényeihez igazítsa.
+
+### Hol találok részletesebb dokumentációt?
+
+ Megtekintheti az átfogó dokumentációt[itt](https://reference.aspose.com/words/net/).

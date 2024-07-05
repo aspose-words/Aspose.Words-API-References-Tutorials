@@ -28,7 +28,7 @@ Na závěr, pokud chcete zvládnout umění vykreslování dokumentů pomocí As
 
  S tímto komplexním průvodcem jste dobře připraveni začít svou cestu do světa vykreslování dokumentů pomocí Aspose.Words for Java. Neváhejte a prozkoumejte dokumentaci Aspose.Words for Java API[tady](https://reference.aspose.com/words/java/) pro podrobné informace. Pokud jste připraveni začít, můžete si stáhnout potřebné zdroje[tady](https://releases.aspose.com/words/java/).
 
- V případě jakýchkoli dotazů, podpory nebo pomoci se můžete vždy obrátit na komunitu a fóra Aspose[tady](https://forum.aspose.com/). Nezapomeňte se podívat na naše další návody a zdroje týkající se produktů Aspose. Šťastné vykreslování!
+ V případě jakýchkoli dotazů, podpory nebo pomoci se můžete vždy obrátit na komunitu a fóra Aspose[tady](https://forum.aspose.com/). Nezapomeňte se podívat na naše další návody a zdroje o produktech Aspose. Šťastné vykreslování!
 
 ## Výukové programy vykreslování dokumentů
 ### [Vykreslování tvarů v Aspose.Words pro Java](./rendering-shapes/)

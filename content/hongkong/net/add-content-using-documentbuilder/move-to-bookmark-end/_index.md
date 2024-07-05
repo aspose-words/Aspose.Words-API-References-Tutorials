@@ -94,7 +94,7 @@ bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEn
 
 ### 實作 MoveToBookmark 方法
 
-現在，讓我們轉到書籤的末尾`MyBookmark1`:
+現在，讓我們轉到書籤的末尾`MyBookmark1`：
 
 ```csharp
 builder.MoveToBookmark("MyBookmark1", false, true);

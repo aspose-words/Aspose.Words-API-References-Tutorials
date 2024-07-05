@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Шаг 2. Загрузите исходные и целевые документы
 
-Далее вам необходимо загрузить исходные и целевые документы с помощью Aspose.Words.`Document` класс. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
+Далее вам необходимо загрузить исходные и целевые документы с помощью Aspose.Words.`Document` сорт. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,15 +44,15 @@ srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 
 ## Шаг 4. Добавьте исходный документ в целевой документ
 
- Теперь вы можете добавить исходный документ к целевому документу, используя команду`AppendDocument` метод`Document` класс.`ImportFormatMode.KeepSourceFormatting` Параметр гарантирует, что исходное форматирование сохраняется во время операции добавления.
+ Теперь вы можете добавить исходный документ к целевому документу, используя команду`AppendDocument` метод`Document` сорт.`ImportFormatMode.KeepSourceFormatting` Параметр гарантирует, что исходное форматирование сохраняется во время операции добавления.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Шаг 5: Сохраните окончательный документ
+## Шаг 5. Сохраните окончательный документ
 
- Наконец, сохраните объединенный документ с включенной функцией «Отсоединить колонтитулы», используя`Save` метод`Document` класс.
+ Наконец, сохраните объединенный документ с включенной функцией «Отсоединить колонтитулы», используя`Save` метод`Document` сорт.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -69,7 +69,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 	// Чтобы остановить это, отсоедините верхние и нижние колонтитулы в исходном документе.
-	// От продолжения верхних и нижних колонтитулов целевого документа.
+	// от продолжения верхних и нижних колонтитулов целевого документа.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");

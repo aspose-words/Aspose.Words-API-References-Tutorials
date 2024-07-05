@@ -66,7 +66,7 @@ Aspose.Words for Java kullanarak belge küçük resmi oluşturma, belgelerin gö
 
 ### Aspose.Words for Java'yı nasıl yüklerim?
 
- Aspose.Words for Java'yı yüklemek için indirme sayfasını ziyaret edin.[Burada](https://releases.aspose.com/words/java/) ve verilen kurulum talimatlarını izleyin.
+ Aspose.Words for Java'yı yüklemek için indirme sayfasını ziyaret edin[Burada](https://releases.aspose.com/words/java/) ve verilen kurulum talimatlarını izleyin.
 
 ### Oluşturulan küçük resmin boyutunu özelleştirebilir miyim?
 

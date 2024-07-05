@@ -9,7 +9,7 @@ url: /sv/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Om du någonsin har stött på problem med att teckensnitt inte återges korrekt i dina dokument, är du inte ensam. Att hantera teckensnittsinställningar och ta emot meddelanden om teckensnittsersättningar kan spara mycket huvudvärk. I den här omfattande meddelandeguiden kommer vi att utforska hur du hanterar typsnitt med Aspose.Words för .NET, vilket säkerställer att dina dokument alltid ser bäst ut.
+Om du någonsin har stött på problem med att teckensnitt inte återges korrekt i dina dokument, är du inte ensam. Att hantera teckensnittsinställningar och ta emot meddelanden om teckensnittsersättningar kan spara mycket huvudvärk. I den här omfattande guiden kommer vi att utforska hur du hanterar teckensnittsaviseringar med Aspose.Words för .NET, vilket säkerställer att dina dokument alltid ser bäst ut.
 
 ## Förutsättningar
 
@@ -89,7 +89,7 @@ doc.FontSettings = fontSettings;
 
 ## Steg 6: Spara dokumentet
 
-Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna och hanterat eventuella teckensnittsersättningar. Spara den i ett valfritt format; här sparar vi den som en PDF.
+Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna och hanterat eventuella teckensnittsersättningar. Spara den i ett valfritt format; här sparar vi den som PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");

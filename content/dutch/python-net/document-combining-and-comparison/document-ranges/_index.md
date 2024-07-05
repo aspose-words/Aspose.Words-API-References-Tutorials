@@ -113,7 +113,7 @@ for section in sections:
 
 ## Omgaan met kop- en voetteksten
 
-Kop- en voetteksten vereisen vaak een verschillende behandeling. Door door deze regio's te navigeren, kunnen we ze effectief aanpassen:
+Kop- en voetteksten vereisen vaak een aparte behandeling. Door door deze regio's te navigeren, kunnen we ze effectief aanpassen:
 
 ```python
 for section in doc.sections:

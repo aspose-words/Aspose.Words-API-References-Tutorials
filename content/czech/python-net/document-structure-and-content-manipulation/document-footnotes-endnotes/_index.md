@@ -74,7 +74,7 @@ Poznámky pod čarou a vysvětlivky můžete spravovat programově:
 - Udržujte poznámky pod čarou stručné a relevantní
 - Pro rozsáhlejší vysvětlení použijte vysvětlivky
 - Udržujte konzistentní formátování
-- Znovu zkontrolujte přesnost citací.
+- Znovu zkontrolujte přesnost citací
 
 ## Odstraňování běžných problémů
 

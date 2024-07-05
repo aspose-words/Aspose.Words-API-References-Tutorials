@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## Adım 3: Yeni bir modül oluşturun ve makro kaynak kodunu belirtin.
+## 3. Adım: Yeni bir modül oluşturun ve makro kaynak kodunu belirtin
  Örnekleme yaparak yeni bir modül oluşturacağız.`VbaModule` sınıf ve makro adını, türünü (prosedür modülü) ve kaynak kodunu belirtme.
 
 ```csharp
@@ -94,7 +94,7 @@ C: Word belgesinde VBA projesi oluşturmadan önce C# programlama dili hakkında
 
 #### S: Koddaki belge dizini nasıl ayarlanır?
 
- C: Sağlanan kodda değiştirmeniz gerekir.`"YOUR DOCUMENTS DIRECTORY"` Word belgenizi VBA projesiyle kaydetmek istediğiniz dizine uygun yol ile.
+ C: Sağlanan kodda değiştirmeniz gerekir`"YOUR DOCUMENTS DIRECTORY"` Word belgenizi VBA projesiyle kaydetmek istediğiniz dizine uygun yol ile.
 
 #### S: VBA modülünde makro kaynak kodu nasıl belirtilir?
 

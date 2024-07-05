@@ -63,7 +63,7 @@ builder.MoveToDocumentEnd();
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-`MoveToDocumentEnd()` Курсор помещается в самый конец, и вы можете добавить больше контента. Очень просто!
+`MoveToDocumentEnd()` помещает курсор в самый конец, готовый к добавлению дополнительного контента. Очень просто!
 
 ## Заключение
 

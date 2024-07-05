@@ -15,7 +15,7 @@ Halihó! Ha valaha is módosítania kellett az oldalbeállításokat egy Word-do
 
 Mielőtt belemerülnénk, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
 
-1. Alapvető C# ismerete: A C# szintaxis és fogalmak ismerete szükséges.
+1. Alapszintű C# ismerete: A C# szintaxis és fogalmak ismerete szükséges.
 2.  Aspose.Words for .NET: Megteheti[töltse le itt](https://releases.aspose.com/words/net/) . Ha csak kipróbálod, a[ingyenes próbaverzió](https://releases.aspose.com/) elérhető.
 3. Visual Studio: Bármelyik legújabb verziónak működnie kell, de a legjobb élmény érdekében a legújabb verzió ajánlott.
 4. .NET-keretrendszer: Győződjön meg arról, hogy telepítve van a rendszerén.
@@ -103,7 +103,7 @@ Az Aspose.Words for .NET egy átfogó programkönyvtár a Word-dokumentumokkal v
 
 ### 3. Hogyan módosíthatom az oldalbeállítás egyéb tulajdonságait?
 
- Az Aspose.Words lehetővé teszi különböző oldalbeállítási tulajdonságok, például tájolás, margók és papírméret módosítását. Utal[API dokumentáció](https://reference.aspose.com/words/net/) részletes útmutatásért.
+ Az Aspose.Words lehetővé teszi különböző oldalbeállítási tulajdonságok, például tájolás, margók és papírméret módosítását. Utal[API dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.
 
 ### 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 

@@ -18,7 +18,7 @@ V poskytnutém kódu začneme vytvořením generátoru dokumentů.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Vložte pole IF.
+## Krok 2: Vložte pole IF
 
  Používáme`InsertField()` metoda pro vložení pole IF do dokumentu určující podmínku k vyhodnocení.
 
@@ -36,18 +36,18 @@ Zde jsme jako příklad použili podmínku "1=1", ale podmínku si můžete při
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- The`actualResult` Proměnná obsahuje výsledek vyhodnocení stavu.
+ The`actualResult` proměnná obsahuje výsledek vyhodnocení stavu.
 
 ### Ukázkový zdrojový kód pro vyhodnocení podmínky IF s Aspose.Words pro .NET
 
 ```csharp
-//Vytvoření generátoru dokumentů.
+// Vytvoření generátoru dokumentů.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Vložte pole IF do dokumentu.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// Vyhodnoťte podmínku IF.
+//Vyhodnoťte podmínku IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Zobrazit výsledek vyhodnocení.

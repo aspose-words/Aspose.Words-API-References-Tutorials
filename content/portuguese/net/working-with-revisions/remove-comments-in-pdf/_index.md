@@ -12,7 +12,7 @@ Neste guia passo a passo, mostraremos como remover comentários em um arquivo PD
 
 ## Passo 1: Carregando o documento
 
-primeiro passo é carregar o documento que contém os comentários.
+O primeiro passo é carregar o documento que contém os comentários.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

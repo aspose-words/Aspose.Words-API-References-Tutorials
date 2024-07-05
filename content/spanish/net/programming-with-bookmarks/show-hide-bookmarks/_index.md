@@ -128,7 +128,7 @@ R: Sí, el código proporcionado funciona con varios formatos de documentos de W
 
 #### P: ¿Puedo usar condiciones para mostrar u ocultar marcadores según los valores de los campos de combinación en el documento?
 
- R: Sí, puede usar condiciones y combinar valores de campos para determinar si un marcador debe mostrarse u ocultarse. Puedes personalizar el código del`ShowHideBookmarkedContent` función para tener en cuenta las condiciones y valores apropiados.
+ R: Sí, puede utilizar condiciones y combinar valores de campos para determinar si un marcador debe mostrarse u ocultarse. Puedes personalizar el código del`ShowHideBookmarkedContent` función para tener en cuenta las condiciones y valores apropiados.
 
 #### P: ¿Cómo puedo eliminar un marcador en un documento de Word usando Aspose.Words para .NET?
 

@@ -8,18 +8,18 @@ weight: 10
 url: /zh/net/working-with-revisions/access-revised-version/
 ---
 
-在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 访问 Word 文档的修订版本。我们将为您提供完整的源代码，并向您展示如何格式化 Markdown 输出。
+在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 访问 Word 文档的修订版本。我们将为您提供完整的源代码并向您展示如何格式化 markdown 输出。
 
-## 第 1 步：加载文档
+## 步骤 1：加载文档
 
-第一步是上传包含修订的文档。
+第一步是上传包含修订内容的文档。
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 doc.UpdateListLabels();
 ```
 
-## 第2步：访问修改后的版本
+## 第 2 步：访问修订版本
 
 我们现在将讨论该文件的修订版本。
 
@@ -27,9 +27,9 @@ doc.UpdateListLabels();
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-## 第 3 步：浏览修订版本
+## 步骤 3：浏览修订版本
 
-接下来，我们将循环浏览文档中存在的修订并显示列表项段落的特定信息。
+接下来，我们将循环遍历文档中现有的修订，并显示列表项段落的具体信息。
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -46,7 +46,7 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
-### 使用 Aspose.Words for .NET 访问修订版本的示例源代码
+### 使用 Aspose.Words for .NET 的 Access Revised Version 示例源代码
 
 以下是使用 Aspose.Words for .NET 访问文档修订版本的完整源代码：
 
@@ -73,13 +73,13 @@ foreach (Revision revision in doc.Revisions)
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 访问 Word 文档的修订版本。通过加载文档、导航到修订版本并浏览修订版本，我们能够获取列表项段落的具体信息。 Aspose.Words for .NET 提供了用于操作 Word 文档的强大功能，包括访问评论。您现在可以利用这些知识，使用 Aspose.Words for .NET 访问您自己的 Word 文档的修订版本。
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 访问 Word 文档的修订版本。通过加载文档、导航到修订版本并浏览修订版本，我们能够获取列表项段落的具体信息。Aspose.Words for .NET 提供了强大的功能来操作 Word 文档，包括访问评论。现在，您可以使用这些知识使用 Aspose.Words for .NET 访问您自己的 Word 文档的修订版本。
 
 ### 常见问题解答
 
-#### 问：如何将经过修订的文档加载到 Aspose.Words for .NET 中？
+#### 问：如何将修订后的文档加载到 Aspose.Words for .NET 中？
 
-答：使用`Document`Aspose.Words for .NET 类从包含修订的文件加载文档。您可以指定完整的文档路径。
+答：使用`Document` Aspose.Words for .NET 类用于从包含修订的文件中加载文档。您可以指定完整的文档路径。
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -87,31 +87,31 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### 问：如何在 Aspose.Words for .NET 中访问文档的修订版本？
 
-答：使用`RevisionsView`的财产`Document`对象访问文档的修订版本。您可以设置的值`RevisionsView`财产给`RevisionsView.Final`显示没有修改的最终版本。
+答：使用`RevisionsView`的财产`Document`对象来访问文档的修订版本。您可以设置`RevisionsView`财产`RevisionsView.Final`显示未经修改的最终版本。
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-#### 问：如何在 Aspose.Words for .NET 中浏览文档修订版本？
+#### 问：如何浏览 Aspose.Words for .NET 中的文档修订？
 
-答：使用一个`foreach`循环以迭代文档中存在的修订。您可以使用`Revisions`的财产`Document`对象获取文档所有修订的集合。
+答：使用`foreach`循环遍历文档中存在的修订。您可以使用`Revisions`的财产`Document`对象来获取文档所有修订的集合。
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     //在这里处理每个修订
+     //在此处理每次修订
 }
 ```
 
-#### 问：如何检查一个段落是否是 Aspose.Words for .NET 中的列表项？
+#### 问：如何检查某个段落是否是 Aspose.Words for .NET 中的列表项？
 
-答：使用`IsListItem`的财产`Paragraph`对象检查段落是否是列表项。这`IsListItem`财产回报`true`如果该段落是列表项，否则返回`false`.
+答：使用`IsListItem`的财产`Paragraph`对象来检查段落是否为列表项。`IsListItem`财产回报`true`如果该段落是列表项，否则返回`false`.
 
 ```csharp
 if (paragraph.IsListItem)
 {
-     //该段落是一个列表项
+     //该段落是列表项
 }
 else
 {

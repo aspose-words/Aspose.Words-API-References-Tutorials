@@ -164,4 +164,4 @@ Ya, Anda dapat memodifikasi pengendali panggilan balik untuk menangani beberapa 
 Anda bisa mendapatkan dukungan dengan mengunjungi[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8).
 
 ### Bisakah saya mempertahankan format dokumen yang disisipkan?
- Ya, itu`NodeImporter`kelas memungkinkan Anda menentukan bagaimana pemformatan ditangani saat mengimpor node dari satu dokumen ke dokumen lainnya.
+ Ya, itu`NodeImporter` kelas memungkinkan Anda menentukan bagaimana pemformatan ditangani saat mengimpor node dari satu dokumen ke dokumen lainnya.

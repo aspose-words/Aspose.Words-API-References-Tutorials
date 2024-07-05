@@ -71,7 +71,7 @@ Ha befejeztük a láblécek eltávolítását, a szerkesztett dokumentumot kül�
 doc.Save(dataDir + "Name_of_modified_document.docx");
 ```
 
-Ne felejtse el megadni a módosított fájl nevét és helyét a "Módosított_dokumentum_neve.docx"-ben.
+Ne felejtse el megadni a módosított fájl nevét és helyét a "Módosított_dokumentum_neve.docx" mezőben.
 
 ### Minta forráskód a láblécek eltávolításához az Aspose.Words for .NET használatával 
 ```csharp

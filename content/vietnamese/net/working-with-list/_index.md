@@ -2,7 +2,7 @@
 title: Xử lý từ với danh sách
 linktitle: Xử lý từ với danh sách
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách làm việc với danh sách trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn chi tiết với các ví dụ về mã.
+description: Tìm hiểu cách làm việc với danh sách trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn chi tiết với các ví dụ về mã.
 type: docs
 weight: 780
 url: /vi/net/working-with-list/

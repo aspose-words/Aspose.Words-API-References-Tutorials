@@ -1,20 +1,20 @@
 ---
 title: Aspose.Words for Java で DocumentBuilder を使用してコンテンツを追加する
-linktitle: DocumentBuilder を使用したコンテンツの追加
+linktitle: DocumentBuilder を使用してコンテンツを追加する
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用したマスター ドキュメント作成。テキスト、表、画像などを追加するためのステップバイステップのガイド。美しい Word ドキュメントを簡単に作成します。
+description: Aspose.Words for Java でドキュメント作成をマスターしましょう。テキスト、表、画像などを追加するためのステップバイステップ ガイド。魅力的な Word ドキュメントを簡単に作成できます。
 type: docs
 weight: 26
 url: /ja/java/document-manipulation/adding-content-using-documentbuilder/
 ---
 
-## Aspose.Words for Java の DocumentBuilder を使用したコンテンツの追加の概要
+## Aspose.Words for Java の DocumentBuilder を使用してコンテンツを追加する方法の紹介
 
-このステップバイステップ ガイドでは、Aspose.Words for Java の DocumentBuilder を使用して、さまざまな種類のコンテンツを Word ドキュメントに追加する方法を説明します。テキスト、表、横罫、フォームフィールド、HTML、ハイパーリンク、目次、インラインおよびフローティング画像、段落などの挿入について説明します。始めましょう！
+このステップバイステップ ガイドでは、Aspose.Words for Java の DocumentBuilder を使用して、さまざまな種類のコンテンツを Word 文書に追加する方法について説明します。テキスト、表、水平線、フォーム フィールド、HTML、ハイパーリンク、目次、インラインおよびフローティング イメージ、段落などの挿入について説明します。さあ、始めましょう!
 
 ## 前提条件
 
-始める前に、Aspose.Words for Java ライブラリがプロジェクトに設定されていることを確認してください。からダウンロードできます[ここ](https://releases.aspose.com/words/java/).
+始める前に、プロジェクトにAspose.Words for Javaライブラリが設定されていることを確認してください。ダウンロードはこちらからできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## テキストの追加
 
@@ -22,7 +22,7 @@ url: /ja/java/document-manipulation/adding-content-using-documentbuilder/
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//単純なテキスト段落を挿入する
+//簡単なテキスト段落を挿入する
 builder.write("This is a simple text paragraph.");
 
 //文書を保存する
@@ -52,13 +52,13 @@ builder.endTable();
 doc.save("path/to/your/document.docx");
 ```
 
-## 横罫線の追加
+## 水平線の追加
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//横罫線を挿入する
+//水平線を挿入する
 builder.insertHorizontalRule();
 
 //文書を保存する
@@ -132,7 +132,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Visit ");
 builder.getFont().setColor(Color.BLUE);
 builder.getFont().setUnderline(Underline.SINGLE);
-builder.insertHyperlink("Aspose Website", "http://www.aspose.com"、false);
+builder.insertHyperlink("Aspose Website", "http://www.aspose.com", 偽);
 builder.getFont().clearFormatting();
 builder.write(" for more information.");
 
@@ -149,7 +149,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 //目次を挿入する
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-//ドキュメントのコンテンツを追加する
+//ドキュメントコンテンツを追加する
 //...
 
 //目次を更新する
@@ -159,7 +159,7 @@ doc.updateFields();
 doc.save("path/to/your/document.docx");
 ```
 
-## 画像を追加する
+## 画像の追加
 
 ### インライン画像
 
@@ -213,27 +213,27 @@ builder.writeln("This is a formatted paragraph.");
 doc.save("path/to/your/document.docx");
 ```
 
-## ステップ 10: カーソルを移動する
+## ステップ10: カーソルを移動する
 
-次のようなさまざまな方法を使用して、ドキュメント内のカーソル位置を制御できます。`moveToParagraph`, `moveToCell`、 もっと。以下に例を示します。
+文書内のカーソル位置は、次のようなさまざまな方法で制御できます。`moveToParagraph`, `moveToCell`など。以下に例を示します。
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//カーソルを特定の段落に移動します
+//カーソルを特定の段落に移動する
 builder.moveToParagraph(2, 0);
 
-//新しいカーソル位置にコンテンツを追加します
+//新しいカーソル位置にコンテンツを追加する
 builder.writeln("This is the 3rd paragraph.");
 ```
 
-これらは、Aspose.Words for Java の DocumentBuilder を使用して実行できる一般的な操作の一部です。より高度な機能とカスタマイズ オプションについては、ライブラリのドキュメントを参照してください。楽しいドキュメント作成を！
+これらは、Aspose.Words for Java の DocumentBuilder を使用して実行できる一般的な操作の一部です。より高度な機能とカスタマイズ オプションについては、ライブラリのドキュメントを参照してください。ドキュメント作成をお楽しみください。
 
 
 ## 結論
 
-この包括的なガイドでは、さまざまな種類のコンテンツを Word ドキュメントに追加する Aspose.Words for Java の DocumentBuilder の機能を検討しました。テキスト、表、横罫、フォームフィールド、HTML、ハイパーリンク、目次、画像、段落、カーソルの動きについて説明しました。
+この包括的なガイドでは、Word 文書にさまざまな種類のコンテンツを追加するための Aspose.Words for Java の DocumentBuilder の機能について説明しました。テキスト、表、水平線、フォーム フィールド、HTML、ハイパーリンク、目次、画像、段落、カーソルの移動について説明しました。
 
 ## よくある質問
 
@@ -243,7 +243,7 @@ A: Aspose.Words for Java は、開発者が Microsoft Word ドキュメントを
 
 ### Q: ドキュメントに目次を追加するにはどうすればよいですか?
 
-A: 目次を追加するには、`DocumentBuilder`目次フィールドを文書に挿入します。コンテンツを追加して目次を作成した後は、必ずドキュメント内のフィールドを更新してください。以下に例を示します。
+A: 目次を追加するには、`DocumentBuilder`ドキュメントに目次フィールドを挿入します。コンテンツを追加した後は、必ずドキュメント内のフィールドを更新して、目次に内容を入力してください。次に例を示します。
 
 ```java
 Document doc = new Document();
@@ -252,7 +252,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 //目次フィールドを挿入する
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-//ドキュメントのコンテンツを追加する
+//ドキュメントコンテンツを追加する
 //...
 
 //目次を更新する
@@ -261,7 +261,7 @@ doc.updateFields();
 
 ### Q: Aspose.Words for Java を使用してドキュメントに画像を挿入するにはどうすればよいですか?
 
- A: 画像は、インラインとフローティングの両方で挿入できます。`DocumentBuilder`。両方の例を次に示します。
+ A: インラインとフローティングの両方の画像を挿入するには、`DocumentBuilder`両方の例を以下に示します。
 
 #### インライン画像:
 
@@ -273,7 +273,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertImage("path/to/your/image.png");
 ```
 
-#### フローティング画像:
+#### フローティングイメージ:
 
 ```java
 Document doc = new Document();
@@ -283,9 +283,9 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN, 100.0, RelativeVerticalPosition.MARGIN, 100.0, 200.0, 100.0, WrapType.SQUARE);
 ```
 
-### Q: コンテンツを追加するときにテキストや段落の書式を設定できますか?
+### Q: コンテンツを追加するときにテキストと段落をフォーマットできますか?
 
- A: はい、次のコマンドを使用してテキストと段落を書式設定できます。`DocumentBuilder`。フォントのプロパティ、段落の配置、インデントなどを設定できます。以下に例を示します。
+ A: はい、テキストや段落の書式設定は`DocumentBuilder`フォントのプロパティ、段落の配置、インデントなどを設定できます。次に例を示します。
 
 ```java
 Document doc = new Document();
@@ -308,19 +308,19 @@ paragraphFormat.setKeepTogether(true);
 builder.writeln("This is a formatted paragraph.");
 ```
 
-### Q: ドキュメント内の特定の場所にカーソルを移動するにはどうすればよいですか?
+### Q: 文書内の特定の場所にカーソルを移動するにはどうすればよいですか?
 
- A: 次のような方法を使用してカーソル位置を制御できます。`moveToParagraph`, `moveToCell`、 もっと。以下に例を示します。
+ A: 次のような方法でカーソルの位置を制御できます。`moveToParagraph`, `moveToCell`など。以下に例を示します。
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//カーソルを特定の段落に移動します
+//カーソルを特定の段落に移動する
 builder.moveToParagraph(2, 0);
 
-//新しいカーソル位置にコンテンツを追加します
+//新しいカーソル位置にコンテンツを追加する
 builder.writeln("This is the 3rd paragraph.");
 ```
 
-これらは、Aspose.Words for Java の DocumentBuilder の使用を開始する際に役立つ、一般的な質問と回答です。さらに質問がある場合、またはさらにサポートが必要な場合は、を参照してください。[ライブラリのドキュメント](https://reference.aspose.com/words/java/)または、Aspose.Words コミュニティやサポート リソースに助けを求めてください。
+これらは、Aspose.Words for JavaのDocumentBuilderを使い始める際に役立つ、よくある質問と回答です。さらに質問がある場合や、さらにサポートが必要な場合は、[図書館の資料](https://reference.aspose.com/words/java/)または、Aspose.Words コミュニティおよびサポート リソースから支援を求めてください。

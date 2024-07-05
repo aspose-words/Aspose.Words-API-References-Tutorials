@@ -18,7 +18,7 @@ url: /ko/net/working-with-fields/evaluate-ifcondition/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2단계: IF 필드를 삽입합니다.
+## 2단계: IF 필드 삽입
 
  우리는`InsertField()` 평가할 조건을 지정하는 문서에 IF 필드를 삽입하는 메서드입니다.
 
@@ -30,7 +30,7 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
 ## 3단계: IF 조건 평가
 
- 그만큼`EvaluateCondition()` 방법은 IF 필드의 상태를 평가하는 데 사용됩니다.
+ 그만큼`EvaluateCondition()` 방법은 IF 필드의 조건을 평가하는 데 사용됩니다.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
@@ -41,13 +41,13 @@ FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ### .NET용 Aspose.Words를 사용하여 IF 조건을 평가하기 위한 샘플 소스 코드
 
 ```csharp
-//문서 생성기 생성.
+// 문서 생성기 생성.
 DocumentBuilder builder = new DocumentBuilder();
 
 // IF 필드를 문서에 삽입합니다.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// IF 조건을 평가합니다.
+//IF 조건을 평가합니다.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // 평가 결과를 표시합니다.

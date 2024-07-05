@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 Συγχαρητήρια! Έχετε μάθει με επιτυχία πώς να αποδίδετε σχήματα στο Aspose.Words για Java. Αυτή η δυνατότητα ανοίγει έναν κόσμο δυνατοτήτων όταν εργάζεστε με έγγραφα του Word μέσω προγραμματισμού.
 
-## 9.Συχνές ερωτήσεις
+## 9. Συχνές ερωτήσεις
 
 ### Ε1: Μπορώ να αποδώσω πολλά σχήματα σε ένα μόνο έγγραφο;
 
@@ -89,7 +89,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### Ε3: Υπάρχουν διαθέσιμες επιλογές αδειοδότησης για το Aspose.Words για Java;
 
- Ναι, μπορείτε να εξερευνήσετε τις επιλογές αδειοδότησης και να αγοράσετε Aspose.Words για Java στο[Aspose website](https://purchase.aspose.com/buy).
+ Ναι, μπορείτε να εξερευνήσετε τις επιλογές αδειοδότησης και να αγοράσετε Aspose.Words για Java στο[Aspose ιστότοπο](https://purchase.aspose.com/buy).
 
 ### Ε4: Μπορώ να δοκιμάσω το Aspose.Words για Java πριν το αγοράσω;
 

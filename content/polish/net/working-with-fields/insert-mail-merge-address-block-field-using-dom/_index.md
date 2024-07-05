@@ -106,7 +106,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### P: Czy mogę dołączyć opcjonalne elementy w polu adresu pocztowego w Aspose.Words dla .NET?
 
- Odp.: Tak, możesz dołączyć opcjonalne elementy w polu adresu pocztowego za pomocą Aspose.Words dla .NET. Możesz zdefiniować elementy opcjonalne za pomocą`FieldAddressBlock.OmitOptional` metoda określająca, czy uwzględnić lub wykluczyć elementy opcjonalne, takie jak nazwa odbiorcy, nazwa firmy itp.
+ Odp.: Tak, możesz dołączyć opcjonalne elementy w polu adresu pocztowego za pomocą Aspose.Words dla .NET. Elementy opcjonalne można zdefiniować za pomocą opcji`FieldAddressBlock.OmitOptional` metoda określająca, czy uwzględnić lub wykluczyć elementy opcjonalne, takie jak nazwa odbiorcy, nazwa firmy itp.
 
 #### P: Czy wstawienie pola adresu pocztowego przy użyciu DOM wpływa na strukturę dokumentu Worda w Aspose.Words dla .NET?
 

@@ -57,7 +57,7 @@ Ebben az oktatóanyagban azt láthattuk, hogyan lehet betöltési beállítások
 
 #### K: Hogyan adhatok meg alapértelmezett betűtípust, amikor betöltünk egy dokumentumot az Aspose.Wordsbe?
 
- V: Alapértelmezett betűtípus megadásához, amikor egy dokumentumot tölt be az Aspose.Words programba, használhatja a`LoadOptions` osztályt, és állítsa be a`DefaultFontName` tulajdonság a kívánt betűtípus nevéhez.
+V: Alapértelmezett betűtípus megadásához, amikor egy dokumentumot tölt be az Aspose.Words programba, használhatja a`LoadOptions` osztályt, és állítsa be a`DefaultFontName` tulajdonság a kívánt betűtípus nevéhez.
 
 #### K: Milyen egyéb betűtípus-beállításokat adhatok meg az Aspose.Words betöltési beállításainál?
 
@@ -69,4 +69,4 @@ V: Ha a megadott alapértelmezett betűtípus nem érhető el, amikor a dokument
 
 #### K: Megadhatok különböző betűtípus-beállításokat minden egyes feltöltött dokumentumhoz?
 
- V: Igen, minden betöltött dokumentumhoz különböző betűtípus-beállításokat adhat meg, ha külön példányokat használ a`LoadOptions` osztályt, és állítsa be a kívánt betűtípus-beállításokat minden egyes példányhoz. Ez lehetővé teszi az egyes dokumentumok betűtípus-megjelenésének önálló testreszabását.
+ V: Igen, minden betöltött dokumentumhoz különböző betűtípus-beállításokat adhat meg, ha külön példányokat használ a`LoadOptions`osztályt, és állítsa be a kívánt betűtípus-beállításokat minden egyes példányhoz. Ez lehetővé teszi az egyes dokumentumok betűtípus-megjelenésének önálló testreszabását.

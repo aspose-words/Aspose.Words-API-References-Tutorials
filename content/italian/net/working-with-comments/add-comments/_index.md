@@ -93,7 +93,7 @@ R: Sì, puoi formattare il testo dei commenti in Aspose.Words per .NET utilizzan
 
 #### D: Come posso recuperare tutti i commenti presenti in un documento?
 
- R: Puoi recuperare tutti i commenti presentati in un documento utilizzando il file`Document.Comments` proprietà.
+ R: Puoi recuperare tutti i commenti presenti in un documento utilizzando il file`Document.Comments` proprietà.
 
 #### D: Posso eliminare un commento specifico in Aspose.Words per .NET?
 

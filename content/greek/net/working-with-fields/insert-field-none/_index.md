@@ -2,7 +2,7 @@
 title: Εισαγωγή πεδίου Κανένα
 linktitle: Εισαγωγή πεδίου Κανένα
 second_title: Aspose.Words Document Processing API
-description: Μάθετε πώς να δημιουργείτε έγγραφα με το AUCUN στο Word avec Aspose.Words pour .NET.
+description: Μάθετε πώς να Insérez un champ AUCUN dans vos έγγραφα Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /el/net/working-with-fields/insert-field-none/

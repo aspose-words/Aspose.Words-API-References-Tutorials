@@ -57,7 +57,7 @@ Grattis! Du har nu lärt dig hur du använder den genomstrukna textstilen med As
 
 #### F: Är det möjligt att lägga till den genomstrukna texten i flera textstycken i samma stycke?
 
- S: Ja, du kan lägga till genomstruken text i flera delar av texten i ett enda stycke genom att använda flera.`Run` föremål. Du kan skapa flera`Run` objekt och ställ in`Font.StrikeThrough`egendom till`true` för varje objekt för att lägga till den genomstrukna texten till de önskade textdelarna. Sedan kan du lägga till dem i stycket med hjälp av`Paragraph.AppendChild(run)` metod.
+ S: Ja, du kan lägga till genomstruken text i flera delar av texten i ett enda stycke genom att använda flera`Run` föremål. Du kan skapa flera`Run` objekt och ställ in`Font.StrikeThrough`egendom till`true` för varje objekt för att lägga till den genomstrukna texten till de önskade textdelarna. Sedan kan du lägga till dem i stycket med hjälp av`Paragraph.AppendChild(run)` metod.
 
 #### F: Kan jag lägga till genomstruken text till text som finns i en tabell eller cell i Aspose.Words?
 

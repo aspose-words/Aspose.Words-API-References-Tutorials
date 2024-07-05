@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Paso 5: guardar el documento
 
- Después de insertar el campo del formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
+ Después de insertar el campo del formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save`método. Asegúrese de proporcionar la ruta de archivo adecuada:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 
 
-### Código fuente de ejemplo para mover nodo en un documento rastreado usando Aspose.Words para .NET
+### Código fuente de ejemplo para mover nodo en documento rastreado usando Aspose.Words para .NET
 
 Aquí está el código fuente completo para mover un nodo en un documento rastreado usando Aspose.Words para .NET:
 
@@ -119,7 +119,7 @@ En este tutorial, aprendimos cómo mover un nodo en un documento de Word con seg
 
 #### P: ¿Cómo puedo habilitar el seguimiento de revisiones en un documento de Aspose.Words para .NET?
 
-R: Para habilitar el seguimiento de revisiones en un documento Aspose.Words para .NET, puede utilizar el`StartTrackRevisions` método de la`Document` objeto. Este método toma como parámetros el nombre del autor de las revisiones y la fecha de inicio del seguimiento de las revisiones.
+ R: Para habilitar el seguimiento de revisiones en un documento Aspose.Words para .NET, puede utilizar el`StartTrackRevisions` método de la`Document` objeto. Este método toma como parámetros el nombre del autor de las revisiones y la fecha de inicio del seguimiento de las revisiones.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

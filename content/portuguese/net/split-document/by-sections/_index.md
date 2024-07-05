@@ -27,7 +27,7 @@ Agora vamos percorrer cada seção do documento e dividi-lo em partes menores, s
 ```csharp
 for (int i = 0; i < doc. Sections. Count; i++)
 {
-// Divida o documento em partes menores, neste caso, separando-o por seções.
+// Divida o documento em partes menores, neste caso, separando-o por seção.
 Section section = doc.Sections[i].Clone();
 
 Document newDoc = new Document();
@@ -87,7 +87,7 @@ Sim, você pode personalizar os critérios de divisão de acordo com suas necess
  Sim, você pode mesclar as seções separadas em um único documento importando e combinando as seções de vários documentos usando o`ImportNode` e`Sections.Add` métodos. Isso permite reverter o processo de divisão e reconstruir o documento original.
 
 #### Q3: Há alguma limitação no número de seções que podem ser divididas usando o recurso "Por Seções"?
-número de seções que podem ser divididas usando o recurso "Por Seções" depende dos recursos do Aspose.Words for .NET e dos recursos de sistema disponíveis. Em geral, ele suporta a divisão de documentos com um grande número de seções, mas documentos extremamente longos ou com um número muito alto de seções podem exigir recursos de sistema e tempo de processamento adicionais.
+número de seções que podem ser divididas usando o recurso "Por Seções" depende dos recursos do Aspose.Words for .NET e dos recursos do sistema disponíveis. Em geral, ele suporta a divisão de documentos com um grande número de seções, mas documentos extremamente longos ou com um número muito alto de seções podem exigir recursos de sistema e tempo de processamento adicionais.
 
 #### Q4: Posso realizar operações específicas em cada seção individual após a divisão?
 Sim, após dividir o documento em seções separadas, você pode realizar operações específicas em cada seção individualmente. Você pode manipular o conteúdo, aplicar formatação, extrair informações específicas ou realizar qualquer outra tarefa de processamento de documentos de acordo com suas necessidades.

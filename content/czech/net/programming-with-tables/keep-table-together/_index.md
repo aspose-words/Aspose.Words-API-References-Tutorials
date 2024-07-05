@@ -75,4 +75,4 @@ Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
 ```
 
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak držet stůl pohromadě v dokumentu aplikace Word pomocí Aspose.Words for .NET. Dodržováním tohoto podrobného průvodce a implementací poskytnutého kódu C# můžete udržet tabulku nedotčenou a zabránit jejímu rozdělení na více stránek ve vašich dokumentech. Tato funkce vám dává větší kontrolu nad vzhledem a rozložením tabulek v dokumentech.
+V tomto tutoriálu jsme se naučili, jak držet stůl pohromadě v dokumentu aplikace Word pomocí Aspose.Words for .NET. Dodržováním tohoto podrobného průvodce a implementací poskytnutého kódu C# můžete zachovat neporušenou tabulku a zabránit jejímu rozdělení na více stránek ve vašich dokumentech. Tato funkce vám dává větší kontrolu nad vzhledem a rozložením tabulek v dokumentech.

@@ -17,7 +17,7 @@ url: /ru/net/programming-with-shapes/get-actual-shape-bounds-points/
 - Базовые знания C# и обработки документов Word.
 
 ## Шаг 1. Создайте новый документ и DocumentBuilder
- Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder`объект для работы с документом.
 
 ```csharp
 Document doc = new Document();

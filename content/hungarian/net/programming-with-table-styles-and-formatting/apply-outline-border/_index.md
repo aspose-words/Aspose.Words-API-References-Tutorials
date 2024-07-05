@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## 5. lépés: Törölje a meglévő táblázatszegélyeket.
+## 5. lépés: Törölje a meglévő táblázatszegélyeket
 Az új vázlatszegély használatához először törölnünk kell az összes meglévő szegélyt a táblázatból. Ezt a`ClearBorders()` módszer.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## 7. lépés: Töltse ki a cellákat háttérszínnel.
-A táblázat vizuális megjelenítésének javítása érdekében a cellákat alapháttérszínnel is kitölthetjük.
+## 7. lépés: Töltse ki a cellákat háttérszínnel
+A táblázat vizuális megjelenítésének javítása érdekében a cellákat alapháttérszínnel is kitölthetjük
 
 ötlet. Ebben a példában világoszöld színt használunk.
 
@@ -90,7 +90,7 @@ Gratulálok ! Az Aspose.Words for .NET segítségével vázlatszegélyt alkalmaz
 	table.SetBorder(BorderType.Right, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
-	// Töltsük fel a cellákat világoszöld egyszínű színnel.
+	// Töltsük meg a cellákat világoszöld egyszínű színnel.
 	table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```

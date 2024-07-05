@@ -172,7 +172,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
 #### D: Come cercare e sostituire utilizzando le espressioni regolari in Aspose.Words per .NET?
 
-R: Per eseguire operazioni di ricerca e sostituzione sul testo del documento, utilizzeremo le espressioni regolari. Nel nostro esempio cercheremo tutte le occorrenze della lettera "e" e le sostituiremo con un asterisco "* ". Utilizzeremo .NET`Regex` lezione per questo:
+R: Per eseguire operazioni di ricerca e sostituzione sul testo del documento, utilizzeremo le espressioni regolari. Nel nostro esempio cercheremo tutte le occorrenze della lettera "e" e le sostituiremo con un asterisco "* ". Utilizzeremo .NET`Regex` classe per questo:
 
 ```csharp
 Regex regex = new Regex("e");

@@ -40,7 +40,7 @@ Pamiętaj, aby określić prawidłowy typ ochrony i ustawić żądane hasło.
 
 ## Krok 4: Wyłączenie ochrony dla określonej sekcji
 
-Domyślnie chronione są wszystkie sekcje, ale można selektywnie wyłączyć ochronę konkretnej sekcji, korzystając z właściwości ProtectedForForms obiektu Sekcja:
+Domyślnie wszystkie sekcje są chronione, ale możesz selektywnie wyłączyć ochronę dla konkretnej sekcji, korzystając z właściwości ProtectedForForms obiektu Sekcja:
 
 ```csharp
 doc.Sections[0].ProtectedForForms = false;
@@ -75,7 +75,7 @@ builder.Writeln("Section 1. Unprotected.");
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 
-// Ochrona sekcji działa tylko wtedy, gdy włączona jest ochrona dokumentów i dozwolona jest tylko edycja w polach formularza.
+// Ochrona sekcji działa tylko wtedy, gdy ochrona dokumentu jest włączona i dozwolona jest tylko edycja w polach formularza.
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
 //Domyślnie chronione są wszystkie sekcje, ale możemy selektywnie wyłączyć ochronę.

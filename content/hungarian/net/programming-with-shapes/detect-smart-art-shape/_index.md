@@ -102,4 +102,4 @@ Támogatást kaphat, ha ellátogat a[Aspose támogatási fórum](https://forum.a
 
 ### 5. Manipulálhatom a SmartArt alakzatokat programozottan?
 
- Igen, az Aspose.Words lehetővé teszi a SmartArt-alakzatok programozott kezelését. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) részletes útmutatásért.
+ Igen, az Aspose.Words lehetővé teszi a SmartArt-alakzatok programozott kezelését. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.

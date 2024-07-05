@@ -246,7 +246,7 @@ pip install aspose-words
 
 ### Posso impostare valori predefiniti per i campi del modulo?
 
- Sì, puoi impostare valori predefiniti per i campi del modulo utilizzando le apposite proprietà. Ad esempio, per impostare il testo predefinito per un campo di immissione testo, utilizzare il comando`text` proprietà.
+ Sì, puoi impostare valori predefiniti per i campi del modulo utilizzando le proprietà appropriate. Ad esempio, per impostare il testo predefinito per un campo di immissione testo, utilizzare il comando`text` proprietà.
 
 ### I campi del modulo sono accessibili agli utenti con disabilità?
 

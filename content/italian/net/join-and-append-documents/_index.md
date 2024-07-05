@@ -36,7 +36,7 @@ Questi tutorial di Aspose.Words per .NET ti forniscono risorse preziose per padr
 | [Inserisci documento con Builder](./insert-document-with-builder/) | Scopri come inserire un documento alla fine di un altro documento utilizzando Aspose.Words per .NET. |
 | [Mantieni la numerazione delle fonti](./keep-source-numbering/) | Scopri come aggiungere un documento preservando la formattazione della numerazione dell'origine in Aspose.Words per .NET. |
 | [Ignora caselle di testo](./ignore-text-boxes/) | Scopri come aggiungere un documento ignorando la formattazione della casella di testo utilizzando Aspose.Words per .NET. |
-| [Ignora il piè di pagina dell'intestazione](./ignore-header-footer/) | Scopri come aggiungere un documento ignorando il contenuto di intestazione e piè di pagina utilizzando Aspose.Words per .NET. |
+| [Ignora piè di pagina intestazione](./ignore-header-footer/) | Scopri come aggiungere un documento ignorando il contenuto di intestazione e piè di pagina utilizzando Aspose.Words per .NET. |
 | [Piè di pagina delle intestazioni dei collegamenti](./link-headers-footers/) | Scopri come collegare intestazioni e piè di pagina mentre unisci e aggiungi documenti Word utilizzando Aspose.Words per .NET. |
 | [Rimuovi i piè di pagina delle intestazioni della fonte](./remove-source-headers-footers/) | Scopri come rimuovere intestazioni e piè di pagina durante l'unione e l'aggiunta di documenti Word utilizzando Aspose.Words per .NET. |
 | [Scollega intestazioni piè di pagina](./unlink-headers-footers/) | Scopri come unire e aggiungere documenti Word scollegando intestazioni e piè di pagina utilizzando Aspose.Words per .NET. |

@@ -10,7 +10,7 @@ url: /ru/java/document-manipulation/adding-content-using-documentbuilder/
 
 ## Введение в добавление контента с помощью DocumentBuilder в Aspose.Words для Java
 
-В этом пошаговом руководстве мы рассмотрим, как использовать Aspose.Words для Java DocumentBuilder для добавления различных типов контента в документ Word. Мы рассмотрим вставку текста, таблиц, горизонтальных линеек, полей форм, HTML, гиперссылок, оглавления, встроенных и плавающих изображений, абзацев и многого другого. Давайте начнем!
+В этом пошаговом руководстве мы рассмотрим, как использовать Aspose.Words для Java DocumentBuilder для добавления различных типов контента в документ Word. Мы рассмотрим вставку текста, таблиц, горизонтальных линеек, полей формы, HTML, гиперссылок, оглавления, встроенных и плавающих изображений, абзацев и многого другого. Давайте начнем!
 
 ## Предварительные условия
 
@@ -167,7 +167,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Вставка онлайн-изображения
+// Вставка встроенного изображения
 builder.insertImage("path/to/your/image.png");
 
 // Сохраните документ
@@ -269,7 +269,7 @@ doc.updateFields();
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Вставка онлайн-изображения
+// Вставка встроенного изображения
 builder.insertImage("path/to/your/image.png");
 ```
 

@@ -13,7 +13,7 @@ Belgeleri Karşılaştır, Aspose.Words for .NET kullanarak belgeleri karşıla�
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Word Belgesinde Eşit Olanları Karşılaştırın](./compare-for-equal/) | Aspose.Words for .NET ile Compare for Equals'ın C# kaynak kodunu word belgesine dönüştürme özelliğini açıklayan adım adım kılavuz. |
-| [Word Belgesindeki Seçenekleri Karşılaştırın](./compare-options/) | Aspose.Words for .NET ile word belgesi özelliğindeki Karşılaştırma Seçenekleri'nin C# kaynak kodunu açıklayan adım adım kılavuz. |
-| [Word Belgesinde Karşılaştırma Hedefi](./comparison-target/) | Aspose.Words for .NET'in belgeleri karşılaştırmanıza ve yapılan değişiklikleri içeren yeni bir belge oluşturmanıza olanak tanıyan word belgesindeki hedef karşılaştırma özelliğini öğrenin. |
+| [Word Belgesinde Eşit Olanları Karşılaştırın](./compare-for-equal/) | Aspose.Words for .NET kullanarak iki Word belgesini eşitlik açısından nasıl karşılaştıracağınızı öğrenin. Belgelerinizin aynı olduğundan emin olmak için bu adım adım kılavuzu izleyin. |
+| [Word Belgesindeki Seçenekleri Karşılaştırın](./compare-options/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerini nasıl karşılaştıracağınızı öğrenin. Belge tutarlılığını zahmetsizce sağlayın. |
+| [Word Belgesinde Karşılaştırma Hedefi](./comparison-target/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerini zahmetsizce karşılaştırın. Belge karşılaştırmasında zamandan tasarruf edin ve doğruluğu artırın. |
 | [Word Belgesinde Karşılaştırma Ayrıntı Düzeyi](./comparison-granularity/) | Aspose.Words for .NET'in, belgelerin karakter karakter karşılaştırılmasına ve yapılan değişikliklerin raporlanmasına olanak tanıyan word belgesindeki ayrıntı karşılaştırma özelliğini öğrenin. |

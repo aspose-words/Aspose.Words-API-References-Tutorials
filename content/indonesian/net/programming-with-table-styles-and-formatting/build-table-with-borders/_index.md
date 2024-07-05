@@ -58,7 +58,7 @@ Selamat! Anda sekarang telah membuat tabel dengan batas khusus menggunakan Aspos
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	//Hapus semua batas yang ada dari tabel.
 	table.ClearBorders();
-	// Tetapkan batas hijau di sekitar dan di dalam tabel.
+	// Tetapkan batas hijau di sekeliling dan di dalam tabel.
 	table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
 ```

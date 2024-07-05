@@ -46,7 +46,7 @@ Ujistěte se, že máte nový nebo existující projekt C# v sadě Visual Studio
 Pokud jste to ještě neudělali, přidejte odkaz na Aspose.Words ve svém projektu sady Visual Studio. Můžete to udělat takto:
    - Klepněte pravým tlačítkem myši na svůj projekt v Průzkumníku řešení.
    - Výběr "Spravovat balíčky NuGet..."
-   - Vyhledání "Apose.Words" a jeho instalace do vašeho projektu.
+   - Vyhledání "Aspose.Words" a jeho instalace do vašeho projektu.
 
 ## Krok 3: Připravte si dokument
 
@@ -105,4 +105,4 @@ Závěrem lze říci, že tento tutoriál poskytuje komplexní návod, jak efekt
    - Ano, zde uvedená metoda konkrétně cílí pouze na pole a ostatní obsah ponechává beze změny.
 
 ### Kde najdu další zdroje a podporu pro Aspose.Words?
-   -  Navštivte[Dokumentace Aspose.Words for .NET API](https://reference.aspose.com/words/net/) a[Fórum Aspose.Words](https://forum.aspose.com/c/words/8)pro další pomoc.
+   -  Navštivte[Dokumentace Aspose.Words for .NET API](https://reference.aspose.com/words/net/) a[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) pro další pomoc.

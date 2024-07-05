@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Di sini kita menggunakan pembuat dokumen untuk membuat tabel dengan tiga sel. Sel pertama memiliki lebar pilihan 40 poin, sel kedua memiliki lebar pilihan 20% dari lebar tabel, dan sel ketiga memiliki lebar pilihan otomatis yang dapat disesuaikan.
+Di sini kita menggunakan pembuat dokumen untuk membuat tabel dengan tiga sel. Sel pertama memiliki lebar pilihan 40 poin, sel kedua memiliki lebar pilihan 20% dari lebar tabel, dan sel ketiga memiliki lebar pilihan otomatis yang menyesuaikan
 
   tergantung pada ruang yang tersedia.
 

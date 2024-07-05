@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## Étape 3 : Créez un nouveau module et spécifiez le code source de la macro.
+## Étape 3 : Créez un nouveau module et spécifiez le code source de la macro
  Nous allons créer un nouveau module en instanciant le`VbaModule` classe et en spécifiant le nom de la macro, le type (module procédural) et le code source.
 
 ```csharp
@@ -94,7 +94,7 @@ R : Avant de pouvoir créer un projet VBA dans un document Word, vous devez avo
 
 #### Q : Comment définir le répertoire des documents dans le code ?
 
- R : Dans le code fourni, vous devez remplacer.`"YOUR DOCUMENTS DIRECTORY"` avec le chemin approprié vers le répertoire dans lequel vous souhaitez enregistrer votre document Word avec le projet VBA.
+ R : Dans le code fourni, vous devez remplacer`"YOUR DOCUMENTS DIRECTORY"` avec le chemin approprié vers le répertoire dans lequel vous souhaitez enregistrer votre document Word avec le projet VBA.
 
 #### Q : Comment spécifier le code source d'une macro dans le module VBA ?
 

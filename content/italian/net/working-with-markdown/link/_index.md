@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Passaggio 2: inserimento di un collegamento
 
- Possiamo inserire un collegamento utilizzando il file`InsertHyperlink` metodo del generatore di documenti. Dobbiamo specificare il testo del collegamento, qui "Apose", nonché l'URL di destinazione.
+ Possiamo inserire un collegamento utilizzando il file`InsertHyperlink` metodo del generatore di documenti. Dobbiamo specificare il testo del collegamento, qui "Aspose", nonché l'URL di destinazione.
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", falso);

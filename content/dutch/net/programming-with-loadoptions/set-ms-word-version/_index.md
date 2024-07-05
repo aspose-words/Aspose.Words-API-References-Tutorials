@@ -70,7 +70,7 @@ A: Ja, met Aspose.Words kunt u een andere versie van MS Word opgeven bij het lad
 
 #### Vraag: Welke voordelen heeft het instellen van de MS Word-versie voor mijn C#-applicatie?
 
-A: Door de MS Word-versie in te stellen, zorgt u ervoor dat het document wordt verwerkt volgens de beoogde opmaak en functies van die specifieke versie, waardoor consistente uitvoer wordt verkregen.
+A: Door de MS Word-versie in te stellen, zorgt u ervoor dat het document wordt verwerkt volgens de beoogde opmaak en kenmerken van die specifieke versie, waardoor consistente uitvoer wordt verkregen.
 
 #### Vraag: Is Aspose.Words beperkt tot het verwerken van alleen DOCX-documenten?
 

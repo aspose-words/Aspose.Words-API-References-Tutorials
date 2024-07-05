@@ -2,7 +2,7 @@
 title: ละเว้นกล่องข้อความ
 linktitle: ละเว้นกล่องข้อความ
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีผนวกเอกสารโดยไม่สนใจการจัดรูปแบบกล่องข้อความโดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีผนวกเอกสารโดยละเว้นการจัดรูปแบบกล่องข้อความโดยใช้ Aspose.Words สำหรับ .NET
 type: docs
 weight: 10
 url: /th/net/join-and-append-documents/ignore-text-boxes/
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## ขั้นตอนที่ 5: บันทึกเอกสารปลายทาง
 
-สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ วัตถุ
+สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");

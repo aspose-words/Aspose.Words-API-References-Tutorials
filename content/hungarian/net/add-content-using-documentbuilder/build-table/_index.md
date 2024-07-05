@@ -35,7 +35,7 @@ Rendben, bontsuk fel kezelhető lépésekre a táblázat létrehozásának folya
 
 ## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
 
- Először is be kell állítanunk a dokumentumunkat és a dokumentumkészítőnket. A`Document` osztály képviseli a Word dokumentumot, és`DocumentBuilder` praktikus eszközünk a tartalom hozzáadásához.
+ Először is be kell állítanunk a dokumentumunkat és a dokumentumkészítőnket. A`Document` osztály képviseli a Word dokumentumot, és`DocumentBuilder` a mi praktikus eszközünk tartalom hozzáadásához.
 
 ```csharp
 Document doc = new Document();

@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 	Document doc = new Document(dataDir + "Document.docx");
 
 	//設定允許定義文件網格行為的部分的佈局模式。
-	//請注意，「文件網格」標籤在 MS Word 的「頁面設定」對話方塊中變成可見。
+	//請注意，「文件網格」標籤在 MS Word 的「頁面設定」對話方塊中變得可見
 	//是否將任何亞洲語言定義為編輯語言。
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

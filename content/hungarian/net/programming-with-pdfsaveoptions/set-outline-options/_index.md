@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
 
-Ez a cikk lépésről lépésre ismerteti, hogyan használhatja a beállított vázlatbeállításokat a metafájlméret funkcióhoz az Aspose.Words for .NET-ben. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megértheti, hogyan állíthat be vázlatbeállításokat egy dokumentumban, és hogyan hozhat létre PDF-et a megfelelő vázlatbeállításokkal.
+Ez a cikk lépésről lépésre ismerteti, hogyan használhatja a beállított vázlatbeállításokat a metafájlméret funkcióhoz az Aspose.Words for .NET-ben. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan állíthat be vázlatbeállításokat egy dokumentumban, és hogyan hozhat létre PDF-et a megfelelő vázlatbeállításokkal.
 
 Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
 
@@ -81,7 +81,7 @@ V: Az Aspose.Words for .NET használatával PDF-dokumentumban a vázlatbeállít
 
  Töltse be a PDF-be konvertálni kívánt dokumentumot a`Document` osztályt, és adja meg a dokumentum elérési útját a megadott dokumentumok könyvtárban.
 
- Konfigurálja a mentés PDF-ként opcióit a példány létrehozásával`PdfSaveOptions` osztályban és a`OutlineOptions` tulajdonság a vázlatbeállítások beállításához. A vázlatban szereplő címsorszintek számát a gombbal adhatja meg`HeadingsOutlineLevels` tulajdonság és a kiterjesztett körvonalszintek száma a segítségével`ExpandedOutlineLevels` ingatlan.
+ Konfigurálja a mentés PDF-ként opcióit a példány létrehozásával`PdfSaveOptions` osztályban és a`OutlineOptions` tulajdonságot a vázlatbeállítások beállításához. A vázlatban szereplő címsorszintek számát a gombbal adhatja meg`HeadingsOutlineLevels` tulajdonság és a kiterjesztett körvonalszintek száma a segítségével`ExpandedOutlineLevels` ingatlan.
 
  Mentse el a dokumentumot PDF formátumban a`Save` módszere a`Document` osztály, amely megadja az elérési utat és a mentési lehetőségeket.
 

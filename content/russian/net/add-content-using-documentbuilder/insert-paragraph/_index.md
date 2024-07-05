@@ -29,7 +29,7 @@ using System.Drawing;
 
 ## Шаг 1. Инициализируйте документ и DocumentBuilder
 
- Начните с настройки документа и инициализации`DocumentBuilder` Объект Object.
+ Начните с настройки документа и инициализации`DocumentBuilder` объект.
 ```csharp
 // Путь к каталогу документов.
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";

@@ -23,7 +23,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## 2. lépés: Töltse be a dokumentumot, és olvassa el a VBA makrókat.
+## 2. lépés: Töltse be a dokumentumot, és olvassa el a VBA makrókat
 Ezután betöltjük a Word dokumentumot, és ellenőrizzük, hogy tartalmaz-e VBA-projektet. Ha a dokumentum VBA-projekttel rendelkezik, akkor a projektben lévő összes modult végigfutjuk, és minden modulhoz megjelenítjük a forráskódot.
 
 ```csharp

@@ -28,7 +28,7 @@ Aspose.Words for Java — это многофункциональная библ
 
 ## Шаг 2. Инициализируйте объект документа
 
- В свой Java-код импортируйте необходимые классы Aspose.Words и инициализируйте новый`Document` Объект Object.
+ В свой Java-код импортируйте необходимые классы Aspose.Words и инициализируйте новый`Document` объект.
 
 ```java
 import com.aspose.words.*;
@@ -42,7 +42,7 @@ public class HTMLToWordConversion {
 
 ## Шаг 3. Загрузите HTML-контент
 
- Затем загрузите HTML-контент, который вы хотите преобразовать в файл.`Document` Объект Object. Вы можете использовать`DocumentBuilder` класс для этой цели.
+ Затем загрузите HTML-контент, который вы хотите преобразовать в файл.`Document` объект. Вы можете использовать`DocumentBuilder` класс для этой цели.
 
 ```java
 DocumentBuilder builder = new DocumentBuilder(doc);

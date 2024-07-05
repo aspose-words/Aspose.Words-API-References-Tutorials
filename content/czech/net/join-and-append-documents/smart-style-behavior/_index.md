@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Načtěte zdrojové a cílové dokumenty
 
-Dále musíte načíst zdrojové a cílové dokumenty pomocí Aspose.Words.`Document` třída. Aktualizujte názvy souborů v`Document` konstruktor podle názvů vašich dokumentů.
+Dále musíte načíst zdrojové a cílové dokumenty pomocí Aspose.Words`Document` třída. Aktualizujte názvy souborů v`Document` konstruktor podle názvů vašich dokumentů.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## Krok 5: Připojte zdrojový dokument k cílovému dokumentu
 
- Nyní můžete připojit zdrojový dokument k cílovému dokumentu pomocí`InsertDocument` metoda`DocumentBuilder` třída. Použijte`ImportFormatMode.UseDestinationStyles` parametry a předat`ImportFormatOptions` objekt zachovat chování chytrého stylu.
+ Nyní můžete připojit zdrojový dokument k cílovému dokumentu pomocí`InsertDocument` metoda`DocumentBuilder` třída. Použijte`ImportFormatMode.UseDestinationStyles` parametr a předat`ImportFormatOptions` objekt zachovat chování chytrého stylu.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

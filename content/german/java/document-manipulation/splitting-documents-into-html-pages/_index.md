@@ -1,25 +1,25 @@
 ---
 title: Aufteilen von Dokumenten in HTML-Seiten in Aspose.Words für Java
 linktitle: Aufteilen von Dokumenten in HTML-Seiten
-second_title: Aspose.Words Java-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für Java Dokumente in HTML-Seiten aufteilen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine nahtlose Dokumentenkonvertierung.
+second_title: Aspose.Words Java-API zur Dokumentverarbeitung
+description: Erfahren Sie, wie Sie mit Aspose.Words für Java Dokumente in HTML-Seiten aufteilen. Folgen Sie unserer Schritt-für-Schritt-Anleitung zur nahtlosen Dokumentkonvertierung.
 type: docs
 weight: 25
 url: /de/java/document-manipulation/splitting-documents-into-html-pages/
 ---
 
-## Einführung in die Aufteilung von Dokumenten in HTML-Seiten in Aspose.Words für Java
+## Einführung in das Aufteilen von Dokumenten in HTML-Seiten in Aspose.Words für Java
 
-In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie mit Aspose.Words für Java Dokumente in HTML-Seiten aufteilen. Aspose.Words ist eine leistungsstarke Java-API für die Arbeit mit Microsoft Word-Dokumenten und bietet umfangreiche Funktionen zur Dokumentbearbeitung, einschließlich der Möglichkeit, Dokumente in verschiedene Formate, einschließlich HTML, zu konvertieren.
+In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie Dokumente mit Aspose.Words für Java in HTML-Seiten aufteilen. Aspose.Words ist eine leistungsstarke Java-API für die Arbeit mit Microsoft Word-Dokumenten und bietet umfangreiche Funktionen zur Dokumentbearbeitung, darunter die Möglichkeit, Dokumente in verschiedene Formate, einschließlich HTML, zu konvertieren.
 
 ## Voraussetzungen
 
 Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-- Java Development Kit (JDK) auf Ihrem System installiert.
--  Aspose.Words für Java-Bibliothek. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/java/).
+- Auf Ihrem System ist Java Development Kit (JDK) installiert.
+-  Aspose.Words für Java-Bibliothek. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/java/).
 
-## Schritt 1: Notwendige Pakete importieren
+## Schritt 1: Erforderliche Pakete importieren
 
 ```java
 import com.aspose.words.*;
@@ -27,7 +27,7 @@ import java.io.*;
 import java.util.ArrayList;
 ```
 
-## Schritt 2: Erstellen Sie eine Methode für die Konvertierung von Word in HTML
+## Schritt 2: Erstellen Sie eine Methode zur Konvertierung von Word in HTML
 
 ```java
 class WordToHtmlConverter
@@ -37,7 +37,7 @@ class WordToHtmlConverter
 }
 ```
 
-## Schritt 3: Wählen Sie Überschriftenabsätze als Themenbeginn aus
+## Schritt 3: Überschriftenabsätze als Themenanfang auswählen
 
 ```java
 private ArrayList<Paragraph> selectTopicStarts()
@@ -54,7 +54,7 @@ private ArrayList<Paragraph> selectTopicStarts()
 }
 ```
 
-## Schritt 4: Fügen Sie Abschnittsumbrüche vor der Überschrift von Absätzen ein
+## Schritt 4: Abschnittsumbrüche vor den Überschriften der Absätze einfügen
 
 ```java
 private void insertSectionBreaks(ArrayList<Paragraph> topicStartParas)
@@ -129,13 +129,13 @@ private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
 }
 ```
 
-Nachdem wir nun die Schritte beschrieben haben, können Sie jeden Schritt in Ihrem Java-Projekt implementieren, um Dokumente mit Aspose.Words für Java in HTML-Seiten aufzuteilen. Mit diesem Verfahren können Sie eine strukturierte HTML-Darstellung Ihrer Dokumente erstellen und diese so zugänglicher und benutzerfreundlicher machen.
+Nachdem wir nun die Schritte skizziert haben, können Sie jeden Schritt in Ihrem Java-Projekt implementieren, um Dokumente mit Aspose.Words für Java in HTML-Seiten aufzuteilen. Mit diesem Prozess können Sie eine strukturierte HTML-Darstellung Ihrer Dokumente erstellen und sie so zugänglicher und benutzerfreundlicher machen.
 
 ## Abschluss
 
-In diesem umfassenden Leitfaden haben wir den Prozess der Aufteilung von Dokumenten in HTML-Seiten mit Aspose.Words für Java behandelt. Wenn Sie die beschriebenen Schritte befolgen, können Sie Word-Dokumente effizient in das HTML-Format konvertieren und so Ihre Inhalte im Web leichter zugänglich machen.
+In diesem umfassenden Handbuch haben wir den Prozess des Aufteilens von Dokumenten in HTML-Seiten mit Aspose.Words für Java behandelt. Indem Sie die beschriebenen Schritte befolgen, können Sie Word-Dokumente effizient in das HTML-Format konvertieren und so Ihre Inhalte im Web besser zugänglich machen.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie installiere ich Aspose.Words für Java?
 
@@ -143,7 +143,7 @@ In diesem umfassenden Leitfaden haben wir den Prozess der Aufteilung von Dokumen
 
 ### Kann ich die HTML-Ausgabe anpassen?
 
- Ja, Sie können die HTML-Ausgabe anpassen, indem Sie die Speicheroptionen im anpassen`HtmlSaveOptions` Klasse. Dadurch können Sie die Formatierung und das Erscheinungsbild der generierten HTML-Dateien steuern.
+ Ja, Sie können die HTML-Ausgabe anpassen, indem Sie die Speicheroptionen im`HtmlSaveOptions` Klasse. Dadurch können Sie die Formatierung und das Erscheinungsbild der generierten HTML-Dateien steuern.
 
 ### Welche Versionen von Microsoft Word werden von Aspose.Words für Java unterstützt?
 
@@ -155,4 +155,4 @@ Aspose.Words für Java kann Bilder im konvertierten HTML verarbeiten, indem es s
 
 ### Gibt es eine Testversion von Aspose.Words für Java?
 
-Ja, Sie können auf der Aspose-Website eine kostenlose Testversion von Aspose.Words für Java anfordern, um die Funktionen und Fähigkeiten zu testen, bevor Sie eine Lizenz erwerben.
+Ja, Sie können von der Aspose-Website eine kostenlose Testversion von Aspose.Words für Java anfordern, um die Funktionen und Fähigkeiten zu testen, bevor Sie eine Lizenz erwerben.

@@ -41,7 +41,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
 ```
 
- ในโค้ดนี้ เราสร้างสตริง HTML และใช้งาน`HtmlLoadOptions` เพื่อระบุว่าเราต้องการปฏิบัติต่อ HTML เหมือนเป็นเอกสารที่มีโครงสร้าง จากนั้นเราจะโหลดเนื้อหา HTML ลงในไฟล์`Document` วัตถุ วัตถุ
+ ในโค้ดนี้ เราสร้างสตริง HTML และใช้งาน`HtmlLoadOptions` เพื่อระบุว่าเราต้องการปฏิบัติต่อ HTML เหมือนเป็นเอกสารที่มีโครงสร้าง จากนั้นเราจะโหลดเนื้อหา HTML ลงในไฟล์`Document` วัตถุ.
 
 ## บันทึกเป็นเอกสาร Word
 

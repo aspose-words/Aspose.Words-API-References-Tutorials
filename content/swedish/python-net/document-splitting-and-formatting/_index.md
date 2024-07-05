@@ -18,10 +18,10 @@ När det gäller dokumentbehandling är förmågan att dela och formatera dokume
 
 ## Vad du kommer att lära dig
 
-I denna handledningsserie kommer du att fördjupa dig i krångligheterna med dokumentdelning och formatering med Aspose.Words för både Python och .NET. Handledningarna täcker ett brett spektrum av ämnen, inklusive:
+I den här handledningsserien kommer du att fördjupa dig i krångligheterna med dokumentdelning och formatering med Aspose.Words för både Python och .NET. Handledningarna täcker ett brett spektrum av ämnen, inklusive:
 
 - Grundläggande dokumentdelning: Lär dig hur du delar upp dokument i avsnitt, sidor eller specifikt innehåll.
-- Avancerade klyvningstekniker: Upptäck avancerade tekniker som villkorlig klyvning och anpassad extraktion.
+- Avancerade klyvningstekniker: Upptäck avancerade tekniker som villkorlig klyvning och skräddarsydd extraktion.
 - Formateringsstilar: Förstå hur du tillämpar och anpassar formateringsstilar för konsekvent dokumentutseende.
 - Sidlayout: Utforska alternativ för att justera sidmarginaler, orientering och layout.
 - Innehållsjustering: Lär dig att justera text, bilder och andra element i dokumentet.

@@ -111,7 +111,7 @@ public void doNotSavePictureBullet() throws Exception {
 
 ## คำถามที่พบบ่อย
 
-### 1. Words for Java เป็นไลบรารี่ฟรีหรือไม่
+### 1. Aspose.Words สำหรับ Java เป็นไลบรารี่ฟรีหรือไม่
 
  ไม่ Aspose.Words สำหรับ Java เป็นไลบรารีเชิงพาณิชย์ คุณสามารถค้นหารายละเอียดใบอนุญาตได้[ที่นี่](https://purchase.aspose.com/buy).
 

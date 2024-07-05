@@ -1,41 +1,41 @@
 ---
-title: フォーマットされたテーブル
-linktitle: フォーマットされたテーブル
+title: フォーマットされた表
+linktitle: フォーマットされた表
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内に書式設定された表を作成する方法を学びます。
+description: Aspose.Words for .NET を使用して Word 文書に書式設定された表を作成する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-tables/formatted-table/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内に書式設定された表を作成する方法を学習します。ステップバイステップのガイドに従ってコードを理解し、この機能を実装していきます。このチュートリアルを終えると、プログラムを使用して Word 文書内にカスタム書式を使用した表を作成できるようになります。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に書式設定された表を作成する方法を学習します。ステップ バイ ステップ ガイドに従ってコードを理解し、この機能を実装します。このチュートリアルの最後には、Word 文書にプログラムでカスタム書式の表を作成できるようになります。
 
-## ステップ 1: プロジェクトのセットアップ
+## ステップ1: プロジェクトのセットアップ
 1. Visual Studio を起動し、新しい C# プロジェクトを作成します。
 2. Aspose.Words for .NET ライブラリへの参照を追加します。
 
-## ステップ 2: ドキュメントの作成とドキュメント ジェネレーターの初期化
-フォーマットされたテーブルの構築を開始するには、新しいドキュメントを作成し、ドキュメント ジェネレーターを初期化する必要があります。次の手順を実行します：
+## ステップ2: ドキュメントの作成とドキュメントジェネレータの初期化
+フォーマットされたテーブルの構築を開始するには、新しいドキュメントを作成し、ドキュメント ジェネレーターを初期化する必要があります。次の手順に従います。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//ドキュメントを作成し、ドキュメント ジェネレーターを初期化する
+//ドキュメントを作成し、ドキュメントジェネレーターを初期化します
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-必ず「YOUR DOCUMENTS DIRECTORY」をドキュメント ディレクトリへの実際のパスに置き換えてください。
+「YOUR DOCUMENTS DIRECTORY」を、ドキュメント ディレクトリへの実際のパスに置き換えてください。
 
-## ステップ 3: フォーマットされたテーブルの構築
-次に、ドキュメント ビルダーが提供するメソッドを使用して、書式設定されたテーブルを作成します。次のコードを使用します。
+## ステップ3: フォーマットされた表の作成
+次に、ドキュメント ビルダーが提供するメソッドを使用して、フォーマットされたテーブルを構築します。次のコードを使用します。
 
 ```csharp
-//アレイの構築を開始する
+//配列の構築を開始する
 Table table = builder. StartTable();
 
-//テーブルヘッダー行の構成
+//表のヘッダー行の構築
 builder. InsertCell();
 table. LeftIndent = 20.0;
 builder.RowFormat.Height = 40.0;
@@ -93,14 +93,14 @@ builder.Write("Content Line 2, Cell 3");
 
 builder. EndRow();
 
-//アレイ構築の終了
+//配列構築の終了
 builder. EndTable();
 ```
 
-ここでは、ドキュメント ビルダーを使用して、段階的にテーブルを作成します。まずは電話することから始めます`StartTable()`テーブルを初期化します。次に、使用します`InsertCell()`セルを挿入し、`Write()`各セルにコンテンツを追加します。また、さまざまな書式設定プロパティを使用して、テーブルの行、セル、テキストの書式設定を定義します。
+ここではドキュメントビルダーを使用して、テーブルを段階的に構築します。まず、`StartTable()`テーブルを初期化します。次に`InsertCell()`セルを挿入し、`Write()`各セルにコンテンツを追加します。また、さまざまな書式設定プロパティを使用して、表の行、セル、テキストの書式を定義します。
 
-## ステップ 4: ドキュメントを保存する
-最後に、書式設定された表を含むドキュメントを保存する必要があります。次のコードを使用します。
+## ステップ4: ドキュメントを保存する
+最後に、フォーマットされた表を含むドキュメントを保存する必要があります。次のコードを使用します。
 
 ```csharp
 //文書を保存する
@@ -109,7 +109,7 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 
 出力ドキュメントの正しいパスとファイル名を必ず指定してください。
 
-### Aspose.Words for .NET を使用したフォーマット済みテーブルのサンプル ソース コード 
+### Aspose.Words for .NET を使用した書式設定された表のサンプル ソース コード 
 
 ```csharp
 	//ドキュメントディレクトリへのパス
@@ -119,7 +119,7 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Table table = builder.StartTable();
 	builder.InsertCell();
-	//テーブル全体の書式設定は、テーブルに少なくとも 1 行が存在した後に適用する必要があります。
+	//テーブル全体の書式設定は、テーブルに少なくとも 1 つの行が存在した後に適用する必要があります。
 	table.LeftIndent = 20.0;
 	//高さを設定し、ヘッダー行の高さルールを定義します。
 	builder.RowFormat.Height = 40.0;
@@ -141,11 +141,11 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 	builder.CellFormat.Width = 100.0;
 	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	//高さをリセットし、テーブル本体に別の高さルールを定義します。
+	//高さをリセットし、テーブル本体に異なる高さルールを定義します。
 	builder.RowFormat.Height = 30.0;
 	builder.RowFormat.HeightRule = HeightRule.Auto;
 	builder.InsertCell();
-	//フォントの書式設定をリセットします。
+	//フォントの書式をリセットします。
 	builder.Font.Size = 12;
 	builder.Font.Bold = false;
 	builder.Write("Row 1, Cell 1 Content");
@@ -169,4 +169,4 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内に書式設定された表を作成する方法を学びました。このステップバイステップ ガイドに従い、提供されている C# コードを実装すると、プログラムを使用して Word 文書内に特定の書式を使用したカスタム表を作成できます。この機能を使用すると、視覚的に魅力的で整理された方法でデータを表示および構造化できます。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に書式設定された表を作成する方法を学習しました。このステップバイステップ ガイドに従い、提供されている C# コードを実装することで、Word 文書に特定の書式でカスタム表をプログラム的に作成できます。この機能を使用すると、視覚的に魅力的で整理された方法でデータを表示および構造化できます。

@@ -31,7 +31,7 @@ Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 
 ## Шаг 2. Настройте фиксированные параметры сохранения HTML.
 
- Чтобы сохранить документ с фиксированным макетом, нам необходимо настроить`HtmlFixedSaveOptions` класс. Мы установим`useTargetMachineFonts`собственность`true` чтобы гарантировать, что шрифты целевой машины используются в выводе HTML:
+ Чтобы сохранить документ с фиксированным макетом, нам необходимо настроить`HtmlFixedSaveOptions` сорт. Мы установим`useTargetMachineFonts`собственность`true` чтобы гарантировать, что шрифты целевой машины используются в выводе HTML:
 
 ```java
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions();

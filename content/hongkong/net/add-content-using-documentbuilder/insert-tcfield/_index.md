@@ -34,7 +34,7 @@ using Aspose.Words.Fields;
 
 ## 第 1 步：設定您的項目
 
-在開始編碼之前，讓我們先設定我們的項目。開啟您的開發環境並建立一個新的 .NET 專案。確保新增對 Aspose.Words for .NET 程式庫的參考。如果您使用 NuGet，則可以透過套件管理器控制台輕鬆安裝它：
+在開始編碼之前，讓我們先設定我們的項目。開啟您的開發環境並建立一個新的.NET 專案。確保新增對 Aspose.Words for .NET 程式庫的參考。如果您使用 NuGet，則可以透過套件管理器控制台輕鬆安裝它：
 
 ```shell
 Install-Package Aspose.Words
@@ -79,7 +79,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 
 ## 結論
 
-現在你就得到它了！我們已經介紹如何使用 Aspose.Words for .NET 將 TC 欄位插入 Word 文件中。這很簡單，對吧？有了這些技能，您現在可以像專業人士一樣自動化和自訂您的 Word 文件。如果您有任何疑問或遇到任何問題，請隨時查看[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或聯絡他們[支援論壇](https://forum.aspose.com/c/words/8)。快樂編碼！
+現在你就擁有了！我們已經介紹如何使用 Aspose.Words for .NET 將 TC 欄位插入 Word 文件中。這很簡單，對吧？有了這些技能，您現在可以像專業人士一樣自動化和自訂您的 Word 文件。如果您有任何疑問或遇到任何問題，請隨時查看[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或聯絡他們[支援論壇](https://forum.aspose.com/c/words/8)。快樂編碼！
 
 ## 常見問題解答
 

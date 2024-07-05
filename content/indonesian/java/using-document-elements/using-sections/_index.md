@@ -94,7 +94,7 @@ Cuplikan kode ini mengkloning bagian dari dokumen yang sudah ada.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami telah membahas dasar-dasar bekerja dengan bagian di Aspose.Words untuk Java. Anda telah mempelajari cara menambah, menghapus, menambahkan, dan mengkloning bagian dalam dokumen Anda. Bagian adalah fitur canggih yang memungkinkan Anda menyesuaikan tata letak dan struktur dokumen Anda secara efisien.
+Dalam tutorial ini, kami telah membahas dasar-dasar bekerja dengan bagian di Aspose.Words untuk Java. Anda telah mempelajari cara menambah, menghapus, menambahkan, dan mengkloning bagian di dokumen Anda. Bagian adalah fitur canggih yang memungkinkan Anda menyesuaikan tata letak dan struktur dokumen Anda secara efisien.
 
 ## Pertanyaan yang Sering Diajukan (FAQ)
 
@@ -104,11 +104,11 @@ Ya, Aspose.Words for Java kompatibel dengan pustaka Java lainnya, sehingga serba
 
 ### Q2: Apakah tersedia versi uji coba Aspose.Words untuk Java?
 
- Ya, Anda dapat mengakses uji coba gratis Aspose.Words untuk Java.[Di Sini](https://releases.aspose.com/).
+ Ya, Anda dapat mengakses uji coba gratis Aspose.Words untuk Java[Di Sini](https://releases.aspose.com/).
 
 ### Q3: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk Java?
 
- Anda bisa mendapatkan lisensi sementara untuk Aspose.Words untuk Java.[Di Sini](https://purchase.aspose.com/temporary-license/).
+ Anda bisa mendapatkan lisensi sementara untuk Aspose.Words untuk Java[Di Sini](https://purchase.aspose.com/temporary-license/).
 
 ### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words untuk Java?
 

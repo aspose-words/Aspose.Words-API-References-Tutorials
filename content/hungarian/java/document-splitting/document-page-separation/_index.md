@@ -30,7 +30,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a következő e
 
 ## 1. lépés: Töltse be a dokumentumot
 
-Kezdésként be kell töltenünk azt a dokumentumot, amelynek oldalait szét akarjuk választani. A következőképpen teheti meg:
+Kezdésként be kell töltenünk azt a dokumentumot, amelyet oldalakra szeretnénk szétválasztani. A következőképpen teheti meg:
 
 ```java
 // Töltse be a dokumentumot
@@ -84,7 +84,7 @@ Igen, az Aspose.Words különféle dokumentumformátumokat támogat, beleértve 
 
 Az Aspose.Words for Java egy kereskedelmi könyvtár, de ingyenes próbaverziót kínál. Megtekintheti webhelyüket az árakkal és az engedélyezéssel kapcsolatos információkért.
 
-### Visszaválaszthatom az egyesített oldalakat egyetlen dokumentumba?
+### Egyesíthetem a különálló oldalakat egyetlen dokumentumba?
 
 Igen, az Aspose.Words for Java segítségével visszaolvaszthatja a szétválasztott oldalakat egyetlen dokumentumba. Az összevonási utasításokat a dokumentációban találja.
 

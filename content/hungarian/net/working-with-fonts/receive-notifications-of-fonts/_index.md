@@ -9,7 +9,7 @@ url: /hu/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Ha valaha is szembesült azzal, hogy a betűtípusok nem jelennek meg megfelelően a dokumentumokban, nincs egyedül. A betűkészlet-beállítások kezelése és a betűtípus-helyettesítésekről szóló értesítések fogadása sok fejfájástól kímélheti meg. Ebben az átfogó értesítési útmutatóban megvizsgáljuk, hogyan kell kezelni a betűtípusokat az Aspose.Words for .NET használatával, így biztosítva, hogy a dokumentumok mindig a legjobban nézzenek ki.
+Ha valaha is szembesült azzal, hogy a betűtípusok nem jelennek meg megfelelően a dokumentumokban, nincs egyedül. A betűkészlet-beállítások kezelése és a betűtípus-helyettesítésekről szóló értesítések fogadása sok fejfájástól kímélheti meg. Ebben az átfogó útmutatóban megvizsgáljuk, hogyan kezelheti a betűtípus-értesítéseket az Aspose.Words for .NET használatával, így biztosítva, hogy a dokumentumok mindig a legjobban nézzenek ki.
 
 ## Előfeltételek
 

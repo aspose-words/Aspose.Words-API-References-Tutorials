@@ -1,6 +1,6 @@
 ---
-title: Использовать источник предупреждения
-linktitle: Использовать источник предупреждения
+title: Использовать источник предупреждений
+linktitle: Использовать источник предупреждений
 second_title: API обработки документов Aspose.Words
 description: Узнайте, как использовать источник предупреждений с Aspose.Words для .NET. Пошаговое руководство.
 type: docs
@@ -12,7 +12,7 @@ url: /ru/net/working-with-markdown/use-warning-source/
 
 ## Шаг 1: Загрузка документа
 
- Мы загрузим существующий документ, содержащий предупреждения, используя`Load` метод`Document` класс.
+ Мы загрузим существующий документ, содержащий предупреждения, используя`Load` метод`Document` сорт.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -28,7 +28,7 @@ WarningInfoCollection warnings = new WarningInfoCollection();
 doc.WarningCallback = warnings;
 ```
 
-## Шаг 4. Сохраните документ.
+## Шаг 4: Сохранение документа
 
 Наконец, мы можем сохранить документ в нужном формате.
 

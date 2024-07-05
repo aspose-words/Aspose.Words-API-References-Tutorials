@@ -93,7 +93,7 @@ R : Pour ajouter un commentaire dans un document Aspose.Words for .NET, vous dev
 
 #### Q : Comment récupérer tous les commentaires présents dans un document ?
 
- R : Vous pouvez récupérer tous les commentaires présentés dans un document en utilisant le`Document.Comments` propriété.
+ R : Vous pouvez récupérer tous les commentaires présents dans un document en utilisant le`Document.Comments` propriété.
 
 #### Q : Puis-je supprimer un commentaire spécifique dans Aspose.Words pour .NET ?
 

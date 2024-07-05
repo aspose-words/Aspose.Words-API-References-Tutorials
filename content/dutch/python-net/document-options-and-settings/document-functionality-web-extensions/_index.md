@@ -10,7 +10,7 @@ url: /nl/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## Invoering
 
-Webextensies zijn een integraal onderdeel geworden van moderne documentbeheersystemen. Ze stellen ontwikkelaars in staat de documentfunctionaliteit te verbeteren door webgebaseerde componenten naadloos te integreren. Aspose.Words, een krachtige documentmanipulatie-API voor Python, biedt een uitgebreide oplossing voor het integreren van webextensies in uw documenten.
+Webextensies zijn een integraal onderdeel geworden van moderne documentbeheersystemen. Ze stellen ontwikkelaars in staat de documentfunctionaliteit te verbeteren door webgebaseerde componenten naadloos te integreren. Aspose.Words, een krachtige documentmanipulatie-API voor Python, biedt een uitgebreide oplossing voor het opnemen van webextensies in uw documenten.
 
 ## Vereisten
 
@@ -133,4 +133,4 @@ Aspose.Words ondersteunt verschillende formaten voor het opslaan van documenten,
 
 ### Is er een manier om de prestaties van webextensies te optimaliseren?
 
-Om de prestaties van webextensies te optimaliseren, minimaliseert u externe verzoeken, gebruikt u asynchroon laden en voert u grondige tests uit op verschillende browsers en apparaten.
+Om de prestaties van webextensies te optimaliseren, externe verzoeken te minimaliseren, asynchroon laden te gebruiken en grondige tests uit te voeren op verschillende browsers en apparaten.

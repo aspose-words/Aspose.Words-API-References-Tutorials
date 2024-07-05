@@ -14,7 +14,7 @@ Documentintelligentie verwijst naar het proces waarbij waardevolle informatie au
 
 ## De betekenis van documentintelligentie in Python
 
-Python is uitgegroeid tot een krachtige en veelzijdige programmeertaal, waardoor het een populaire keuze is voor documentintelligentietaken. De rijke reeks bibliotheken en pakketten, gecombineerd met de eenvoud en leesbaarheid, maken Python een ideale taal voor het uitvoeren van complexe documentverwerkingstaken.
+Python is uitgegroeid tot een krachtige en veelzijdige programmeertaal, waardoor het een populaire keuze is voor documentintelligentietaken. De rijke reeks bibliotheken en pakketten, gecombineerd met de eenvoud en leesbaarheid, maken Python tot een ideale taal voor het afhandelen van complexe documentverwerkingstaken.
 
 ## Aan de slag met Aspose.Words voor Python
 

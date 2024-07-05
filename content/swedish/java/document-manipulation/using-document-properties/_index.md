@@ -97,7 +97,7 @@ public void configuringLinkToContent() throws Exception
 
 Det här kodavsnittet visar hur du skapar ett bokmärke i ditt dokument och lägger till en anpassad dokumentegenskap som länkar till det bokmärket.
 
-## Konvertering mellan måttenheter
+## Konvertering mellan mätenheter
 
 I Aspose.Words för Java kan du enkelt konvertera måttenheter. Här är ett exempel på hur man gör:
 

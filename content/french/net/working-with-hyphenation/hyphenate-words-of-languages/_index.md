@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## Étape 2 : Enregistrer les dictionnaires de césure
 
-Ensuite, enregistrez les dictionnaires de césure pour les différentes langues que vous souhaitez traiter. Dans cet exemple, nous enregistrons des dictionnaires pour l'anglais américain et le suisse allemand :
+Enregistrez ensuite les dictionnaires de césure pour les différentes langues que vous souhaitez traiter. Dans cet exemple, nous enregistrons des dictionnaires pour l'anglais américain et le suisse allemand :
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");

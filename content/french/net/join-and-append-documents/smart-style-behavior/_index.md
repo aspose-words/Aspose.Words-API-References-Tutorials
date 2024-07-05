@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Étape 2 : Charger les documents source et de destination
 
-Ensuite, vous devez charger les documents source et de destination à l'aide de Aspose.Words.`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
+Ensuite, vous devez charger les documents source et de destination à l'aide du Aspose.Words`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## Étape 5 : Ajouter le document source au document de destination
 
- Maintenant, vous pouvez ajouter le document source au document de destination à l'aide du`InsertDocument` méthode du`DocumentBuilder` classe. Utilisez le`ImportFormatMode.UseDestinationStyles` paramètres et passer le`ImportFormatOptions` objet pour maintenir un comportement de style intelligent.
+ Maintenant, vous pouvez ajouter le document source au document de destination à l'aide du`InsertDocument` méthode du`DocumentBuilder` classe. Utilisez le`ImportFormatMode.UseDestinationStyles` paramètre et passer le`ImportFormatOptions` objet pour maintenir un comportement de style intelligent.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

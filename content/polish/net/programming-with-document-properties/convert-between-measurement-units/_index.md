@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Skonfiguruj jednostki miary
 
-Teraz przeliczymy wartości marginesów, odległości nagłówka i stopki itp. w różnych jednostkach miary. Użyj poniższego kodu, aby określić wartości w konkretnych jednostkach miary:
+Teraz przeliczymy wartości marginesów, odległości nagłówka i stopki itp. na różne jednostki miary. Użyj poniższego kodu, aby określić wartości w określonych jednostkach miary:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;

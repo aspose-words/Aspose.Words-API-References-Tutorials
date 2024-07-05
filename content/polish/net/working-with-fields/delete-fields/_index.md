@@ -46,7 +46,7 @@ Upewnij się, że masz nowy lub istniejący projekt C# w Visual Studio, w który
 Jeśli jeszcze tego nie zrobiłeś, dodaj odwołanie do Aspose.Words w projekcie programu Visual Studio. Możesz to zrobić poprzez:
    - Kliknięcie prawym przyciskiem myszy projektu w Eksploratorze rozwiązań.
    - Wybieranie opcji „Zarządzaj pakietami NuGet…”
-   - Wyszukaj „Apose.Words” i zainstaluj go w swoim projekcie.
+   - Wyszukaj „Aspose.Words” i zainstaluj go w swoim projekcie.
 
 ## Krok 3: Przygotuj dokument
 
@@ -105,4 +105,4 @@ Podsumowując, ten samouczek zawiera kompleksowy przewodnik na temat skutecznego
    - Tak, pokazana tutaj metoda dotyczy wyłącznie pól i pozostawia inną treść bez zmian.
 
 ### Gdzie mogę znaleźć więcej zasobów i wsparcia dla Aspose.Words?
-   -  Odwiedzić[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/) i[Forum Aspose.Words](https://forum.aspose.com/c/words/8) celu uzyskania dalszej pomocy.
+   -  Odwiedzić[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/) i[Forum Aspose.Words](https://forum.aspose.com/c/words/8) w celu uzyskania dalszej pomocy.

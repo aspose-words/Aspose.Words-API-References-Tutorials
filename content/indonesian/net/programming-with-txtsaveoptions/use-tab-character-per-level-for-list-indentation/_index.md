@@ -110,7 +110,7 @@ Siapkan lingkungan pengembangan Anda dengan menambahkan referensi yang diperluka
  Ya, Anda dapat menyesuaikan jumlah karakter tab per level untuk indentasi daftar dengan mengubah nilai`ListIndentation.Count` properti di`TxtSaveOptions` kelas. Anda dapat menentukan jumlah karakter tab yang Anda inginkan untuk setiap tingkat indentasi.
 
 #### T: Karakter lain apa yang dapat saya gunakan untuk indentasi daftar dengan Aspose.Words untuk .NET?
- Selain karakter tab, Anda juga dapat menggunakan karakter lain untuk indentasi daftar dengan Aspose.Words untuk .NET. Anda dapat mengatur`ListIndentation.Character` properti ke karakter apa pun yang diinginkan, seperti spasi (`' '`), untuk mengidentifikasi daftar.
+ Selain karakter tab, Anda juga dapat menggunakan karakter lain untuk indentasi daftar dengan Aspose.Words untuk .NET. Anda dapat mengatur`ListIndentation.Character` properti ke karakter apa pun yang diinginkan, seperti spasi (`' '`), untuk membuat indentasi daftar.
 
 #### T: Apakah Aspose.Words untuk .NET menawarkan fitur lain untuk mengelola daftar?
 Ya, Aspose.Words untuk .NET menawarkan banyak fitur untuk mengelola daftar di dokumen Word. Anda dapat membuat daftar bernomor atau berpoin, mengatur tingkat indentasi, mengkustomisasi gaya daftar, menambahkan item daftar, dan banyak lagi.

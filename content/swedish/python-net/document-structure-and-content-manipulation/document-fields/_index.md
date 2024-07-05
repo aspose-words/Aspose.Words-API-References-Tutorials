@@ -69,7 +69,7 @@ builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 
 ## Integrera fält med datakällor
 
-Fält kan länkas till externa datakällor som Excel. Detta tillåter realtidsuppdateringar av fältvärden när datakällan ändras.
+Fält kan länkas till externa datakällor som Excel. Detta möjliggör realtidsuppdateringar av fältvärden när datakällan ändras.
 
 ```python
 builder.insert_field('LINK Excel.Sheet "path_to_excel_file" "Sheet1!A1"')
@@ -115,7 +115,7 @@ Effektiv hantering av fält och data i Word-dokument ger dig möjlighet att skap
 
 ### Hur uppdaterar jag fältvärdena manuellt?
 
- För att uppdatera fältvärdena manuellt, välj fältet och tryck`F9`.
+ För att uppdatera fältvärden manuellt, välj fältet och tryck`F9`.
 
 ### Kan jag använda fält i sidhuvuden och sidfötter?
 

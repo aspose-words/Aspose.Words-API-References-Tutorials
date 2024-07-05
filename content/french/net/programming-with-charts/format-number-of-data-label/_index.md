@@ -17,7 +17,7 @@ Assurez-vous que vous disposez des conditions préalables suivantes :
 - Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de document où le document de sortie sera enregistré.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique.
+## Étape 2 : Créez un nouveau document et insérez un graphique
 
  Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
 
@@ -94,7 +94,7 @@ Ceci termine la mise en œuvre du formatage du nombre d’étiquettes de donnée
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 	// Ou vous pouvez définir le code de format pour qu'il soit lié à une cellule source,
-	//Dans ce cas, NumberFormat sera réinitialisé sur général et hérité d'une cellule source.
+	//dans ce cas, NumberFormat sera réinitialisé sur général et hérité d'une cellule source.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
@@ -115,7 +115,7 @@ En utilisant Aspose.Words pour .NET, vous pouvez intégrer de puissantes fonctio
 Aspose.Words for .NET est une bibliothèque de traitement de documents riche en fonctionnalités qui permet aux développeurs de créer, manipuler et enregistrer des documents Word par programme dans des applications .NET. Il offre un large éventail de fonctionnalités pour le traitement de texte avec des éléments de document, notamment des graphiques et des étiquettes de données.
 
 #### Q2. Comment puis-je installer Aspose.Words pour .NET ?
-Vous pouvez installer Aspose.Words pour .NET en le téléchargeant à l'aide du gestionnaire de packages NuGet dans Visual Studio. Recherchez simplement « Apose.Words » dans le gestionnaire de packages NuGet et installez-le dans votre projet.
+Vous pouvez installer Aspose.Words pour .NET en le téléchargeant à l'aide du gestionnaire de packages NuGet dans Visual Studio. Recherchez simplement « Aspose.Words » dans le gestionnaire de packages NuGet et installez-le dans votre projet.
 
 #### Q3. Puis-je formater d’autres aspects du graphique à l’aide d’Aspose.Words for .NET ?
 Oui, Aspose.Words for .NET offre des fonctionnalités étendues pour formater divers aspects d'un graphique. En plus des étiquettes de données, vous pouvez personnaliser le type de graphique, les données de série, les propriétés des axes, la légende, le titre, la zone de tracé et de nombreux autres éléments du graphique. L'API offre un contrôle précis sur l'apparence et le formatage des graphiques.

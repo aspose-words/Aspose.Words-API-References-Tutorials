@@ -57,7 +57,7 @@ Gefeliciteerd! U hebt nu geleerd hoe u de doorgehaalde tekststijl kunt toepassen
 
 #### Vraag: Is het mogelijk om de doorgestreepte tekst toe te voegen aan verschillende stukken tekst in dezelfde alinea?
 
- A: Ja, u kunt doorgestreepte tekst toevoegen aan meerdere tekstdelen in één alinea door er meerdere te gebruiken.`Run` voorwerpen. Je kunt er meerdere maken`Run` objecten en stel de in`Font.StrikeThrough`eigendom aan`true` voor elk object om de doorgestreepte tekst aan de gewenste tekstdelen toe te voegen. Vervolgens kunt u ze aan de alinea toevoegen met behulp van de`Paragraph.AppendChild(run)` methode.
+ A: Ja, u kunt doorgestreepte tekst toevoegen aan meerdere tekstdelen in één alinea door er meerdere te gebruiken`Run` voorwerpen. Je kunt er meerdere maken`Run` objecten en stel de in`Font.StrikeThrough`eigendom aan`true` voor elk object om de doorgestreepte tekst aan de gewenste tekstdelen toe te voegen. Vervolgens kunt u ze aan de alinea toevoegen met behulp van de`Paragraph.AppendChild(run)` methode.
 
 #### Vraag: Kan ik doorgehaalde tekst toevoegen aan tekst die in een tabel of cel in Aspose.Words staat?
 

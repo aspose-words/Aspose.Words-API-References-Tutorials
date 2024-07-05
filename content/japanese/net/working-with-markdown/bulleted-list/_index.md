@@ -2,7 +2,7 @@
 title: 箇条書きリスト
 linktitle: 箇条書きリスト
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET のステップバイステップ ガイドを使用して箇条書きリストを作成する方法を学びます。
+description: Aspose.Words for .NET を使用して箇条書きリストを作成する方法をステップバイステップ ガイドで学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/bulleted-list/
@@ -10,7 +10,7 @@ url: /ja/net/working-with-markdown/bulleted-list/
 
 このチュートリアルでは、Aspose.Words for .NET を使用して箇条書きリストを作成する方法を説明します。箇条書きリストは、番号を使用せずに項目をリストするために使用されます。
 
-## ステップ 1: ドキュメント ジェネレーターを使用する
+## ステップ1: ドキュメントジェネレーターの使用
 
 まず、ドキュメント ジェネレーターを使用してドキュメントにコンテンツを追加します。
 
@@ -18,41 +18,41 @@ url: /ja/net/working-with-markdown/bulleted-list/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## ステップ 2: デフォルトの箇条書きリストを適用する
+## ステップ2: デフォルトの箇条書きリストを適用する
 
-ドキュメントビルダーの機能を使用して、デフォルトの箇条書きリストを適用できます。`ApplyBulletDefault`方法。
+ドキュメントビルダーの`ApplyBulletDefault`方法。
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## ステップ 3: 箇条書きの形式をカスタマイズする
+## ステップ3: 箇条書きの書式をカスタマイズする
 
-のプロパティにアクセスして箇条書き形式をカスタマイズできます。`ListFormat.List.ListLevels[0]`。この例では、ダッシュ「-」を箇条書きとして使用します。
+箇条書きの書式は、以下のプロパティにアクセスすることでカスタマイズできます。`ListFormat.List.ListLevels[0]`この例では、ダッシュ「-」を箇条書きとして使用します。
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## ステップ 4: リストに項目を追加する
+## ステップ4: リストにアイテムを追加する
 
-これで、ドキュメントビルダーを使用して箇条書きリストに項目を追加できるようになりました。`Writeln`方法。
+ドキュメントビルダーの`Writeln`方法。
 
 ```csharp
 builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## ステップ 5: リストからインデントを削除する
+## ステップ5: リストからインデントを削除する
 
-サブリストを作成したい場合は、`ListFormat.ListIndent()`方法。この例では、アイテム 2a と 2b にサブリストを追加しています。
+サブリストを作成したい場合は、`ListFormat.ListIndent()`方法。この例では、項目 2a と 2b にサブリストを追加します。
 
 ```csharp
 builder.ListFormat.ListIndent();
 builder. Writeln("Element 2a");
 builder.Writeln("Element 2b");
 ```
-### Aspose.Words for .NET を使用した箇条書きリストのソース コード例
+### Aspose.Words for .NET を使用した箇条書きリストのサンプル ソース コード
 
 
 ```csharp
@@ -71,26 +71,26 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-おめでとうございます！ Aspose.Words for .NET を使用して箇条書きリストを作成する方法を学習しました。
+おめでとうございます！これで、Aspose.Words for .NET を使用して箇条書きリストを作成する方法を学習しました。
 
 ### よくある質問
 
 #### Q: Markdown で箇条書きリストを作成するにはどうすればよいですか?
 
-A: Markdown で箇条書きリストを作成するには、各リスト項目を箇条書き記号 (`-`, `*` 、 または`+`)、その後にスペースが続きます。
+A: Markdownで箇条書きリストを作成するには、各リスト項目を箇条書き記号（`-`, `*` 、 または`+`）の後にスペースを入れます。
 
 #### Q: Markdown で箇条書きリストをネストできますか?
 
-A: はい、マークダウンで箇条書きリストをネストするには、ネストされた各リスト項目の前に 4 つのオフセット スペースを追加します。
+A: はい、ネストされた各リスト項目の前に 4 つのオフセットスペースを追加することで、Markdown で箇条書きリストをネストすることができます。
 
-#### Q: 箇条書き記号をカスタマイズするにはどうすればよいですか?
+#### Q: 箇条書き記号をカスタマイズするにはどうすればいいですか?
 
-A: 標準の Markdown では、箇条書き記号が事前に定義されています。ただし、一部の Markdown エディターでは、特定の拡張機能を使用してカスタマイズできます。
+A: 標準の Markdown では、箇条書き記号は事前に定義されています。ただし、一部の Markdown エディターでは、特定の拡張機能を使用して箇条書き記号をカスタマイズできます。
 
 #### Q: Markdown の箇条書きリストはインデントをサポートしていますか?
 
 A: はい、Markdown の箇条書きリストはインデントをサポートしています。スペースまたはタブを使用して左シフトを追加できます。
 
-#### Q: リンクまたはインライン テキストをリスト アイテムに追加できますか?
+#### Q: リスト項目にリンクやインラインテキストを追加できますか?
 
 A: はい、適切な Markdown 構文を使用して、リスト項目にリンクまたはインライン テキストを追加できます。

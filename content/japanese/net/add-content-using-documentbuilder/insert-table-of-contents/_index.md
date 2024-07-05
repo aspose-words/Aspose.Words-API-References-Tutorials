@@ -1,26 +1,26 @@
 ---
-title: Word文書に目次を挿入する
-linktitle: Word文書に目次を挿入する
+title: Word 文書に目次を挿入する
+linktitle: Word 文書に目次を挿入する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word に目次を挿入する方法を学習します。シームレスなドキュメント ナビゲーションについては、ステップバイステップのガイドに従ってください。
+description: Aspose.Words for .NET を使用して Word に目次を挿入する方法を学びます。シームレスなドキュメント ナビゲーションを実現するには、ステップ バイ ステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 ## 導入
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に目次 (TOC) を効率的に追加する方法を学習します。この機能は、長い文書を整理してナビゲートし、読みやすさを向上させ、文書セクションの概要を素早く提供するために不可欠です。
+このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書に目次 (TOC) を効率的に追加する方法を学習します。この機能は、長い文書を整理してナビゲートし、読みやすさを向上させ、文書のセクションの概要をすばやく提供するために不可欠です。
 
 ## 前提条件
 
-始める前に、次のものが揃っていることを確認してください。
+始める前に、次のものがあることを確認してください。
 
-- C# と .NET Framework の基本的な理解。
-- Visual Studio がマシンにインストールされていること。
--  Aspose.Words for .NET ライブラリ。まだインストールしていない場合は、からダウンロードできます[ここ](https://releases.aspose.com/words/net/).
+- C# および .NET フレームワークの基本的な理解。
+- マシンに Visual Studio がインストールされています。
+-  Aspose.Words for .NETライブラリ。まだインストールしていない場合は、ここからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
 
 ## 名前空間のインポート
 
-まず、必要な名前空間を C# プロジェクトにインポートします。
+まず、C# プロジェクトに必要な名前空間をインポートします。
 
 ```csharp
 using Aspose.Words;
@@ -29,37 +29,37 @@ using Aspose.Words.Fields;
 using Aspose.Words.Tables;
 ```
 
-プロセスを明確なステップに分けてみましょう。
+プロセスを明確なステップに分解してみましょう。
 
 ## ステップ 1: Aspose.Words ドキュメントと DocumentBuilder を初期化する
 
-まず、新しい Aspose.Words を初期化します。`Document`オブジェクトと`DocumentBuilder`使用するもの:
+まず、新しいAspose.Wordsを初期化します`Document`オブジェクトと`DocumentBuilder`一緒に働く：
 
 ```csharp
-//ドキュメントとDocumentBuilderの初期化
+// DocumentとDocumentBuilderを初期化する
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ 2: 目次を挿入する
+## ステップ2: 目次を挿入する
 
-ここで、目次を挿入します。`InsertTableOfContents`方法：
+次に、`InsertTableOfContents`方法：
 
 ```csharp
 //目次を挿入
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## ステップ 3: 新しいページでドキュメントのコンテンツを開始する
+## ステップ3: 新しいページでドキュメントコンテンツを開始する
 
-適切な書式設定を確保するには、実際のドキュメントのコンテンツを新しいページで開始します。
+適切な書式設定を確実に行うには、実際のドキュメント コンテンツを新しいページで開始します。
 
 ```csharp
 //改ページを挿入する
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## ステップ 4: 見出しを使用して文書を構成する
+## ステップ4: 見出しを使って文書を構造化する
 
 適切な見出しスタイルを使用してドキュメントのコンテンツを整理します。
 
@@ -89,7 +89,7 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## ステップ 5: 目次を更新して追加する
+## ステップ5: 目次を更新して入力する
 
 ドキュメントの構造を反映するように目次を更新します。
 
@@ -98,9 +98,9 @@ builder.Writeln("Heading 3.3");
 doc.UpdateFields();
 ```
 
-## ステップ 6: ドキュメントを保存する
+## ステップ6: ドキュメントを保存する
 
-最後に、ドキュメントを指定したディレクトリに保存します。
+最後に、ドキュメントを指定されたディレクトリに保存します。
 
 ```csharp
 //文書を保存する
@@ -115,16 +115,16 @@ Aspose.Words for .NET を使用して目次を追加するのは簡単で、ド�
 ## よくある質問
 
 ### 目次の外観をカスタマイズできますか?
-はい、Aspose.Words for .NET API を使用して、目次の外観と動作をカスタマイズできます。
+はい、Aspose.Words for .NET API を使用して目次の外観と動作をカスタマイズできます。
 
 ### Aspose.Words はフィールドの自動更新をサポートしていますか?
-はい、Aspose.Words を使用すると、ドキュメントの変更に基づいて目次などのフィールドを動的に更新できます。
+はい、Aspose.Words では、ドキュメントの変更に基づいて目次などのフィールドを動的に更新できます。
 
 ### 1 つのドキュメントに複数の目次を生成できますか?
-Aspose.Words は、1 つのドキュメント内で異なる設定を持つ複数の目次の生成をサポートしています。
+Aspose.Words は、単一のドキュメント内で異なる設定を持つ複数の目次を生成することをサポートしています。
 
-### Aspose.Words は Microsoft Word のさまざまなバージョンと互換性がありますか?
-はい、Aspose.Words は、さまざまなバージョンの Microsoft Word 形式との互換性を保証します。
+### Aspose.Words はさまざまなバージョンの Microsoft Word と互換性がありますか?
+はい、Aspose.Words はさまざまなバージョンの Microsoft Word 形式との互換性を保証します。
 
-### Aspose.Words に関するその他のヘルプとサポートはどこで入手できますか?
-さらに詳しいサポートが必要な場合は、次のサイトを参照してください。[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)またはチェックしてください[公式ドキュメント](https://reference.aspose.com/words/net/).
+### Aspose.Words に関する詳細なヘルプとサポートはどこで見つかりますか?
+さらに詳しいサポートについては、[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)または、[公式文書](https://reference.aspose.com/words/net/).

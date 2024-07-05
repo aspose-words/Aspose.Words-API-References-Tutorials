@@ -1,6 +1,6 @@
 ---
-title: ลบความคิดเห็นในไฟล์ PDF
-linktitle: ลบความคิดเห็นในไฟล์ PDF
+title: ลบความคิดเห็นในไฟล์ Pdf
+linktitle: ลบความคิดเห็นในไฟล์ Pdf
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: ลบความคิดเห็นในไฟล์ PDF ด้วย Aspose.Words for .NET
 type: docs

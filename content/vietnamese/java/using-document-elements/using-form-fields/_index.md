@@ -92,7 +92,7 @@ Bạn có thể tùy chỉnh giao diện của các trường biểu mẫu, ch�
    Bạn có thể tùy chỉnh giao diện trường biểu mẫu bằng cách điều chỉnh kích thước phông chữ, màu sắc và các tùy chọn định dạng khác.
 
 4. ### Có bản dùng thử miễn phí dành cho Aspose.Words cho Java không?
-    Có, bạn có thể truy cập bản dùng thử miễn phí của Aspose.Words cho Java.[đây](https://releases.aspose.com/).
+    Có, bạn có thể truy cập bản dùng thử miễn phí của Aspose.Words cho Java[đây](https://releases.aspose.com/).
 
 5. ### Tôi có thể nhận hỗ trợ cho Aspose.Words cho Java ở đâu?
     Để được hỗ trợ và trợ giúp, hãy truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/).

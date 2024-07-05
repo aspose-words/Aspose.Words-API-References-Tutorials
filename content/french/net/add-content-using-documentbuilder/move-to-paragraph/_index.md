@@ -62,7 +62,7 @@ builder.MoveToParagraph(2, 0);
 
 Dans cet exemple, nous passons au troisième paragraphe (puisque l'index est de base zéro) et au début de ce paragraphe.
 
-## Étape 4 : Ajouter du texte au paragraphe
+## Étape 4 : ajouter du texte au paragraphe
 
 Maintenant que nous en sommes au paragraphe souhaité, ajoutons du texte. C'est ici que vous pouvez faire preuve de créativité !
 

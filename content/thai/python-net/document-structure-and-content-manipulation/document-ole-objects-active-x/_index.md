@@ -31,7 +31,7 @@ url: /th/python-net/document-structure-and-content-manipulation/document-ole-obj
 import aspose.words as aw
 ```
 
-### ขั้นตอนที่ 2: สร้างเอกสาร Word
+### ขั้นตอนที่ 2: การสร้างเอกสาร Word
 
 สร้างเอกสาร Word ใหม่โดยใช้ Aspose.Words สำหรับ Python:
 
@@ -61,7 +61,7 @@ ole_stream.close()
 import aspose.words as aw
 ```
 
-### ขั้นตอนที่ 2: สร้างเอกสาร Word
+### ขั้นตอนที่ 2: การสร้างเอกสาร Word
 
 สร้างเอกสาร Word ใหม่:
 

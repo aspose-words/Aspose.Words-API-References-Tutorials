@@ -18,7 +18,7 @@ url: /ru/net/add-content-using-documentbuilder/horizontal-rule-format/
 - Visual Studio: установите интегрированную среду разработки Visual Studio для разработки .NET.
 - Aspose.Words для .NET: Загрузите и установите Aspose.Words для .NET с сайта[здесь](https://releases.aspose.com/words/net/).
 - Базовые знания C#: Знакомство с основами языка программирования C#.
--  Класс DocumentBuilder: понимание`DocumentBuilder` класс в Aspose. Words для работы с документами.
+-  Класс DocumentBuilder: понимание`DocumentBuilder` класс в Aspose.Words для манипулирования документами.
 
 ## Импортировать пространства имен
 
@@ -52,7 +52,7 @@ Shape shape = builder.InsertHorizontalRule();
 
 ## Шаг 3. Настройте формат горизонтального правила
 
- Доступ к`HorizontalRuleFormat` Свойство вставленной фигуры для настройки внешнего вида горизонтальной линейки.
+ Доступ к`HorizontalRuleFormat` свойство вставленной фигуры для настройки внешнего вида горизонтальной линейки.
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
@@ -71,7 +71,7 @@ horizontalRuleFormat.NoShade = true;
 
 ## Шаг 4: Сохранить документ
 
- Наконец, сохраните измененный документ, используя`Save` метод`Document` Объект Object.
+ Наконец, сохраните измененный документ, используя`Save` метод`Document` объект.
 
 ```csharp
 builder.Document.Save(dataDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");

@@ -10,7 +10,7 @@ url: /it/net/working-with-hyphenation/hyphenation-callback/
 
 ## introduzione
 
-Ehilà! Ti sei mai trovato intrappolato nelle complessità della formattazione del testo, soprattutto quando hai a che fare con lingue che richiedono la sillabazione? Non sei solo. La sillabazione, sebbene cruciale per il corretto layout del testo, può essere un po’ un grattacapo. Ma indovina un po? Aspose.Words per .NET ti copre le spalle. Questa potente libreria ti consente di gestire la formattazione del testo senza problemi, inclusa la gestione della sillabazione attraverso un meccanismo di callback. Incuriosito? Immergiamoci nel nocciolo della questione di come è possibile implementare un callback di sillabazione utilizzando Aspose.Words per .NET.
+Ehilà! Ti sei mai trovato coinvolto nelle complessità della formattazione del testo, soprattutto quando hai a che fare con lingue che richiedono la sillabazione? Non sei solo. La sillabazione, sebbene cruciale per il corretto layout del testo, può essere un po’ un grattacapo. Ma indovina un po? Aspose.Words per .NET ti copre le spalle. Questa potente libreria ti consente di gestire la formattazione del testo senza problemi, inclusa la gestione della sillabazione attraverso un meccanismo di callback. Incuriosito? Immergiamoci nel nocciolo della questione di come è possibile implementare un callback di sillabazione utilizzando Aspose.Words per .NET.
 
 ## Prerequisiti
 

@@ -12,6 +12,6 @@ A Words Processing with Hyphenation egy átfogó forrás, amely végigvezeti Ön
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Nyelvek szavai kötőjellel](./hyphenate-words-of-languages/) | Tanulja meg, hogyan lehet elválasztani szavakat különböző nyelveken Word-dokumentumokban az Aspose.Words for .NET segítségével. |
+| [Nyelvek szavai kötőjellel](./hyphenate-words-of-languages/) | Ismerje meg, hogyan lehet elválasztani szavakat különböző nyelveken Word-dokumentumokban az Aspose.Words for .NET segítségével. |
 | [Elválasztási szótár betöltése a nyelvhez](./load-hyphenation-dictionary-for-language/) |Ismerje meg, hogyan tölthet be elválasztási szótárt egy adott nyelvhez az Aspose.Words for .NET alkalmazásban. |
 | [Elválasztás visszahívás](./hyphenation-callback/) | Ismerje meg, hogyan használhatja az Aspose.Words for .NET elválasztási visszahívását a szóelválasztás kezelésére. |

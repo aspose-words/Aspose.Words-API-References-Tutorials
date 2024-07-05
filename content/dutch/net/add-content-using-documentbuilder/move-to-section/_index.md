@@ -88,7 +88,7 @@ Aspose.Words voor .NET maakt het ongelooflijk eenvoudig om Word-documenten progr
 Ja, Aspose.Words voor .NET ondersteunt elke .NET-taal, inclusief VB.NET en F#.
 
 ### Is er een gratis proefversie beschikbaar?
- Ja, u kunt toegang krijgen tot een gratis proefperiode van de[gratis proeflink](https://releases.aspose.com/).
+ Ja, u kunt toegang krijgen tot een gratis proefperiode via de[gratis proeflink](https://releases.aspose.com/).
 
 ### Hoe kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
  U kunt ondersteuning krijgen van de[Aspose.Words-forum](https://forum.aspose.com/c/words/8).

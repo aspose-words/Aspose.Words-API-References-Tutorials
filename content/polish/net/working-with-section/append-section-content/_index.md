@@ -2,7 +2,7 @@
 title: Dołącz treść słowa sekcji
 linktitle: Dołącz treść słowa sekcji
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: W tym samouczku dowiesz się, jak dodawać treść słowną do określonych sekcji dokumentu programu Word za pomocą Aspose.Words dla .NET.
+description: W tym samouczku dowiesz się, jak dodawać zawartość słowną do określonych sekcji dokumentu programu Word za pomocą Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-section/append-section-content/
@@ -68,7 +68,7 @@ Section section = doc.Sections[2];
 
  Na tym etapie uzyskujemy dostęp do trzeciej części naszego dokumentu. Pamiętaj, że indeks jest liczony od zera, więc`Sections[2]` odnosi się do części trzeciej.
 
-## Krok 4: Dołączanie treści do sekcji
+## Krok 4: Dołączanie zawartości do sekcji
 
 Dołączmy treść pierwszej sekcji do początku trzeciej sekcji.
 

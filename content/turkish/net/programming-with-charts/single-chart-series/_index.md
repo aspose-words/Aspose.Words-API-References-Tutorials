@@ -17,7 +17,7 @@ Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
 - Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## Adım 2: Yeni bir belge oluşturun ve bir grafik ekleyin.
+## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -117,4 +117,4 @@ Grafik serisi yumuşatma, grafikteki noktaları birleştiren düzgün bir çizgi
  Aspose.Words for .NET kullanarak bir grafik serisindeki veri noktalarına ilişkin işaretçileri özelleştirmek için şu adrese erişmeniz gerekir:`Marker` mülkiyeti`ChartSeries` nesne gibi özelliklerini değiştirin ve değiştirin`Symbol` Ve`Size`. İşaretçiler, ayrı ayrı veri noktalarını temsil etmek üzere grafiğe yerleştirilen görsel göstergelerdir. Çeşitli yerleşik işaretleyici semboller arasından seçim yapabilir ve seri içindeki belirli veri noktalarını vurgulamak veya ayırt etmek için boyutlarını ayarlayabilirsiniz.
 
 #### S5. Bir grafik serisindeki negatif değerlerin renklerini tersine çevirebilir miyim?
- Evet, Aspose.Words for .NET'i kullanarak bir grafik serisindeki negatif değerlerin renklerini tersine çevirebilirsiniz. Ayarlayarak`InvertIfNegative` mülkiyeti`ChartSeries` itiraz etmek`true`Negatif değerli veri noktalarının renkleri ters çevrilerek pozitif değerlerden görsel olarak farklı hale getirilecektir. Bu özellik, bir grafik serisindeki pozitif ve negatif değerleri karşılaştırırken faydalı olabilir ve ikisi arasında net bir ayrım sağlar.
+ Evet, Aspose.Words for .NET'i kullanarak bir grafik serisindeki negatif değerlerin renklerini tersine çevirebilirsiniz. Ayarlayarak`InvertIfNegative` mülkiyeti`ChartSeries` itiraz etmek`true`, negatif değerli veri noktalarının renkleri ters çevrilerek, görsel olarak pozitif değerlerden farklı olmaları sağlanır. Bu özellik, bir grafik serisindeki pozitif ve negatif değerleri karşılaştırırken ikisi arasında net bir ayrım sağlayarak yararlı olabilir.

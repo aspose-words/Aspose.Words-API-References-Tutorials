@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Шаг 2. Загрузите исходные и целевые документы
 
-Далее вам необходимо загрузить исходные и целевые документы с помощью Aspose.Words.`Document` класс. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
+Далее вам необходимо загрузить исходные и целевые документы с помощью Aspose.Words.`Document` сорт. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Шаг 4. Свяжите верхние и нижние колонтитулы с предыдущим разделом
 
- Чтобы связать верхние и нижние колонтитулы исходного документа с предыдущим разделом целевого документа, вы можете использовать команду`LinkToPrevious` метод`HeadersFooters` коллекция. Проходя мимо`true` В качестве параметра вы переопределяете любые существующие верхние и нижние колонтитулы в исходном документе.
+ Чтобы связать верхние и нижние колонтитулы исходного документа с предыдущим разделом целевого документа, вы можете использовать команду`LinkToPrevious` метод`HeadersFooters` коллекция. Проходя мимо`true` в качестве параметра вы переопределяете любые существующие верхние и нижние колонтитулы в исходном документе.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
@@ -52,7 +52,7 @@ srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 
 ## Шаг 5. Добавьте исходный документ в целевой документ
 
- Теперь вы можете добавить исходный документ к целевому документу, используя команду`AppendDocument` метод`Document` класс.`ImportFormatMode.KeepSourceFormatting` Параметр гарантирует, что исходное форматирование сохраняется во время операции добавления.
+ Теперь вы можете добавить исходный документ к целевому документу, используя команду`AppendDocument` метод`Document` сорт.`ImportFormatMode.KeepSourceFormatting` Параметр гарантирует, что исходное форматирование сохраняется во время операции добавления.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -60,7 +60,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Шаг 6: Сохраните окончательный документ
 
- Наконец, сохраните объединенный документ со связанными верхними и нижними колонтитулами, используя команду`Save` метод`Document` класс.
+ Наконец, сохраните объединенный документ со связанными верхними и нижними колонтитулами, используя команду`Save` метод`Document` сорт.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");

@@ -17,7 +17,7 @@ url: /el/java/document-converting/converting-documents-images/
 Πριν βουτήξουμε στο τμήμα κωδικοποίησης, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
 - Περιβάλλον ανάπτυξης Java: Θα πρέπει να έχετε εγκατεστημένο το Java Development Kit (JDK) στο σύστημά σας.
-- Aspose.Words for Java: Κατεβάστε και ρυθμίστε τη βιβλιοθήκη Aspose.Words for Java από το[Aspose website](https://releases.aspose.com/words/java/).
+- Aspose.Words for Java: Κατεβάστε και ρυθμίστε τη βιβλιοθήκη Aspose.Words for Java από το[Aspose ιστότοπο](https://releases.aspose.com/words/java/).
 
 ## Ρύθμιση του έργου Java σας
 

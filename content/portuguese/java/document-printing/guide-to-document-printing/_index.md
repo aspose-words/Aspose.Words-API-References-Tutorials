@@ -183,7 +183,7 @@ Automatizar o processo de impressão de documentos pode ser muito útil no proce
 
 ## Conclusão
 
-Imprimir documentos programaticamente com Aspose.Words for Java abre um mundo de possibilidades para desenvolvedores que trabalham em projetos de processamento de texto e de documentos. O guia passo a passo fornecido neste artigo irá ajudá-lo a começar e liberar todo o potencial da impressão de documentos usando Aspose.Words for Java.
+Imprimir documentos programaticamente com Aspose.Words for Java abre um mundo de possibilidades para desenvolvedores que trabalham em projetos de processamento de texto e documentos. O guia passo a passo fornecido neste artigo irá ajudá-lo a começar e liberar todo o potencial da impressão de documentos usando Aspose.Words for Java.
 
 ## Perguntas frequentes
 

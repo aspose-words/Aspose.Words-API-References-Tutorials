@@ -79,7 +79,7 @@ In deze zelfstudie hebben we geleerd hoe u toegang krijgt tot de herziene versie
 
 #### Vraag: Hoe laad ik een document met revisies in Aspose.Words voor .NET?
 
- EEN: Gebruik de`Document`klasse van Aspose.Words voor .NET om een document te laden vanuit een bestand met revisies. U kunt het volledige documentpad opgeven.
+ EEN: Gebruik de`Document` klasse van Aspose.Words voor .NET om een document te laden vanuit een bestand met revisies. U kunt het volledige documentpad opgeven.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### Vraag: Hoe blader ik door documentrevisies in Aspose.Words voor .NET?
 
- EEN: Gebruik een`foreach` lus om de revisies in het document te doorlopen. U kunt gebruik maken van de`Revisions` eigendom van de`Document` object om een verzameling van alle revisies van het document te krijgen.
+EEN: Gebruik een`foreach` lus om de revisies in het document te doorlopen. U kunt gebruik maken van de`Revisions` eigendom van de`Document` object om een verzameling van alle revisies van het document te krijgen.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

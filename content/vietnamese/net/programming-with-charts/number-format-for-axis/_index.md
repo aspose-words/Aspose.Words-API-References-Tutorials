@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 

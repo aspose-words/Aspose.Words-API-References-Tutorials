@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### Q：如何使用 Aspose.Words for .NET 存取文件中的表格？
 
-答：文件載入後，您可以存取要執行文字取代的表格。在 Aspose.Words for .NET 中，您可以使用`GetChild`方法與`NodeType.Table`參數以獲得所需的表。例如：
+答：文件載入後，您可以存取要執行文字取代的表格。在 Aspose.Words for .NET 中，您可以使用`GetChild`方法與`NodeType.Table`參數來取得所需的表。例如：
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -113,7 +113,7 @@ table.Range.Replace("Carrots", "Eggs", new FindReplaceOptions(FindReplaceDirecti
 table.LastRow.LastCell.Range.Replace("50", "20", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-#### Q：我可以使用正規表示式在 Aspose.Words for .NET 的表格中進行文字取代嗎？
+#### Q：我可以在 Aspose.Words for .NET 中使用正規表示式來取代表格中的文字嗎？
 
 答：是的，您可以使用 Aspose.Words for .NET 在表格中使用正規表示式進行文字取代。透過建構正規表示式模式，您可以執行更高級、更靈活的匹配來替換表中的文字。這使您可以處理複雜的搜尋模式並根據捕獲的群組或模式執行動態替換。
 

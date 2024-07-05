@@ -17,7 +17,7 @@ Pastikan Anda memiliki prasyarat berikut:
 - Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
 - Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan.
+## Langkah 2: Buat dokumen baru dan masukkan bagan
 
  Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
 
@@ -101,7 +101,7 @@ Dengan menggunakan Aspose.Words untuk .NET, Anda dapat dengan mudah menggabungka
 Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang membuat, memanipulasi, dan menyimpan dokumen Word secara terprogram dalam aplikasi .NET. Ini menyediakan berbagai fitur untuk Pemrosesan Kata dengan elemen dokumen, termasuk bagan dan sumbu bagan.
 
 #### Q2. Bagaimana cara menginstal Aspose.Words untuk .NET?
-Anda dapat menginstal Aspose.Words untuk .NET dengan mengunduhnya menggunakan manajer paket NuGet di Visual Studio. Cukup cari "Apose.Words" di manajer paket NuGet dan instal ke proyek Anda.
+Anda dapat menginstal Aspose.Words untuk .NET dengan mengunduhnya menggunakan manajer paket NuGet di Visual Studio. Cukup cari "Aspose.Words" di manajer paket NuGet dan instal ke proyek Anda.
 
 #### Q3. Bisakah saya menyembunyikan sumbu X dan sumbu Y pada grafik?
  Ya, Anda dapat menyembunyikan sumbu X dan sumbu Y pada bagan menggunakan Aspose.Words untuk .NET. Untuk menyembunyikan sumbu X, Anda dapat mengakses`AxisX` properti bagan dan atur`Hidden`properti ke`true` . Demikian pula, untuk menyembunyikan sumbu Y, Anda dapat mengakses`AxisY` properti dan atur`Hidden`properti ke`true`. Hal ini memungkinkan Anda untuk menghapus kedua sumbu dari visualisasi grafik.

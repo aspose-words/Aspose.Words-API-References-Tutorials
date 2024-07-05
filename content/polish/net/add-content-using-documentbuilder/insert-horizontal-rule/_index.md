@@ -53,7 +53,7 @@ Otwórz środowisko programistyczne (takie jak Visual Studio) i utwórz nowy pro
 Document doc = new Document();
 ```
 
-### Zainicjuj program DocumentBuilder
+### Zainicjuj program DocumentBuider
 
  Następnie utwórz instancję`DocumentBuilder` klasa. Ten kreator pomoże nam wstawić elementy do naszego dokumentu.
 

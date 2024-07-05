@@ -26,7 +26,7 @@ doc.save("Your Directory Path" + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## Pemisahan Dokumen berdasarkan Bagian
 
-Cara lain untuk membagi dokumen adalah berdasarkan bagian. Bagian biasanya mewakili bagian dokumen yang berbeda, dan pemisahan berdasarkan bagian dapat berguna untuk membuat dokumen yang lebih kecil dan lebih mudah dikelola.
+Cara lain untuk membagi dokumen adalah berdasarkan bagian. Bagian biasanya mewakili bagian-bagian berbeda dari suatu dokumen, dan pemisahan berdasarkan bagian dapat berguna untuk membuat dokumen yang lebih kecil dan lebih mudah dikelola.
 
 ```java
 // Kode Java untuk membagi dokumen menjadi beberapa bagian menggunakan Aspose.Words for Java
@@ -108,7 +108,7 @@ Ya, Aspose.Words untuk Java sangat cocok untuk bekerja dengan dokumen berukuran 
 
 ### Bisakah saya menggabungkan kembali dokumen yang terpisah dengan Aspose.Words untuk Java?
 
-Sangat. Aspose.Words untuk Java memungkinkan Anda menggabungkan dokumen terpisah dengan lancar, memastikan Anda dapat bekerja dengan bagian individual dan keseluruhan dokumen sesuai kebutuhan.
+Sangat. Aspose.Words untuk Java memungkinkan Anda menggabungkan dokumen terpisah dengan mulus, memastikan Anda dapat bekerja dengan bagian individual dan keseluruhan dokumen sesuai kebutuhan.
 
 ### Di mana saya dapat mengakses Aspose.Words untuk Java dan mulai menggunakannya?
 

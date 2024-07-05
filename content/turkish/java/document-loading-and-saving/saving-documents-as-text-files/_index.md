@@ -147,7 +147,7 @@ saveOptions.getListIndentation().setCharacter('\t');
 
 ### Aspose.Words for Java çok dilli metinleri işlemeye uygun mu?
 
-Evet, Aspose.Words for Java çok dilli metinlerin işlenmesi için uygundur. Çeşitli dilleri ve karakter kodlamalarını destekleyerek farklı dillerdeki belgelerle çalışmak için çok yönlü bir seçimdir.
+Evet, Aspose.Words for Java çok dilli metinlerin işlenmesi için uygundur. Çeşitli dilleri ve karakter kodlamalarını desteklediğinden, farklı dillerdeki belgelerle çalışmak için çok yönlü bir seçimdir.
 
 ### Aspose.Words for Java için daha fazla belge ve kaynağa nasıl erişebilirim?
 

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Stap 2: Maak een nieuw document en DocumentBuilder
- Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder` bezwaar maken tegen het werken met het document.
+ Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder`bezwaar maken tegen het werken met het document.
 
 ```csharp
 Document doc = new Document();

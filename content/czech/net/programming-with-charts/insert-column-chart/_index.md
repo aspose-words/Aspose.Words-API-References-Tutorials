@@ -17,7 +17,7 @@ Ujistěte se, že máte následující předpoklady:
 - Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
 - Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
 
-## Krok 2: Vytvořte nový dokument a vložte graf.
+## Krok 2: Vytvořte nový dokument a vložte graf
 
  Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
 
@@ -74,7 +74,7 @@ tomto tutoriálu jste se naučili, jak vložit sloupcový graf do dokumentu apli
 
 Aspose.Words for .NET poskytuje výkonné rozhraní API pro textové zpracování s grafy v dokumentech aplikace Word. Sloupcové grafy se běžně používají k zobrazení a porovnání dat v různých kategoriích nebo skupinách. S Aspose.Words for .NET můžete snadno vytvářet sloupcové grafy, které efektivně vizualizují vaše data a poskytují cenné informace.
 
-Pomocí Aspose.Words for .NET můžete automatizovat proces generování dokumentů se sloupcovými grafy, čímž ušetříte čas a úsilí při ručním vytváření dokumentů. Knihovna nabízí širokou škálu typů grafů a možností přizpůsobení, což vám umožní vytvářet vizuálně přitažlivé grafy bohaté na data v dokumentech aplikace Word.
+Pomocí Aspose.Words for .NET můžete automatizovat proces generování dokumentů se sloupcovými grafy, což ušetří čas a námahu při ručním vytváření dokumentů. Knihovna nabízí širokou škálu typů grafů a možností přizpůsobení, což vám umožní vytvářet vizuálně přitažlivé grafy bohaté na data v dokumentech aplikace Word.
 
 ### Nejčastější dotazy
 

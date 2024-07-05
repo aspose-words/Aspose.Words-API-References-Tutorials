@@ -1,6 +1,6 @@
 ---
-title: 個人情報の削除
-linktitle: 個人情報の削除
+title: 個人情報を削除する
+linktitle: 個人情報を削除する
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET を使用してドキュメントから個人情報を削除するためのステップバイステップ ガイド。
 type: docs
@@ -8,27 +8,27 @@ weight: 10
 url: /ja/net/programming-with-document-properties/remove-personal-information/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントから個人情報を削除するための C# ソース コードを説明します。この機能を使用すると、作成者識別データなどの機密の個人情報をドキュメントから削除できます。
+このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントから個人情報を削除する C# ソース コードについて説明します。この機能を使用すると、作成者識別データなどの機密性の高い個人情報をドキュメントから削除できます。
 
-## ステップ 1: プロジェクトのセットアップ
+## ステップ1: プロジェクトのセットアップ
 
-まず、お気に入りの IDE で新しい C# プロジェクトを作成します。 Aspose.Words for .NET ライブラリがプロジェクトで参照されていることを確認してください。
+まず、お気に入りの IDE で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET ライブラリが参照されていることを確認します。
 
-## ステップ 2: ドキュメントをロードする
+## ステップ2: ドキュメントの読み込み
 
-このステップでは、個人情報を削除する Word 文書をアップロードします。次のコードを使用してドキュメントをロードします。
+このステップでは、個人情報を削除する Word 文書をアップロードします。次のコードを使用して文書を読み込みます。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInformation = true };
 ```
 
-交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが置かれているディレクトリの実際のパスに置き換えます。
+交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが配置されているディレクトリの実際のパスを入力します。
 
-## ステップ 3: 個人情報を削除する
+## ステップ3: 個人情報を削除する
 
-次に、設定して個人情報の削除を有効にします。`RemovePersonalInformation`財産を`true`。次のコードを使用します。
+ここで、個人情報の削除を有効にするには、`RemovePersonalInformation`財産に`true`次のコードを使用します。
 
 ```csharp
 doc.RemovePersonalInformation = true;
@@ -36,21 +36,21 @@ doc.RemovePersonalInformation = true;
 
 このコードは、文書内の個人情報の削除を有効にします。
 
-## ステップ 4: ドキュメントを保存する
+## ステップ4: ドキュメントを保存する
 
-最後に、個人情報を削除して文書を保存します。次のコードを使用します。
+最後に、個人情報を削除したドキュメントを保存します。次のコードを使用します。
 
 ```csharp
 doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.docx");
 ```
 
-このコードは、個人情報が削除されたドキュメントを新しいファイルに保存します。
+このコードは、個人情報を削除したドキュメントを新しいファイルに保存します。
 
-### Aspose.Words for .NET を使用して個人情報を削除するためのソース コードの例
+### Aspose.Words for .NET を使用して個人情報を削除するサンプル ソース コード
 
 ```csharp
 
-	//ドキュメントディレクトリへのパス。
+	//ドキュメント ディレクトリへのパス。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInformation = true };
 
@@ -58,6 +58,6 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 	
 ```
 
-必ず正しいドキュメント パスを指定してください。`dataDir`変数。
+正しいドキュメントパスを必ず指定してください。`dataDir`変数。
 
 Aspose.Words for .NET を使用してドキュメントから個人情報を削除する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、自分のドキュメントから機密情報を簡単に削除できます。

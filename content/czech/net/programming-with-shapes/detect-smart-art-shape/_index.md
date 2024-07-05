@@ -80,7 +80,7 @@ Nahraďte "X" skutečným počtem obrazců SmartArt v dokumentu.
 
 ## Závěr
 
- tady to máte! Úspěšně jste se naučili, jak detekovat tvary SmartArt v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením prostředí, načítáním dokumentů, zjišťováním tvarů SmartArt a spouštěním kódu. Aspose.Words nabízí širokou škálu funkcí, takže nezapomeňte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) odemknout jeho plný potenciál.
+ tady to máte! Úspěšně jste se naučili, jak detekovat tvary SmartArt v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením prostředí, načítáním dokumentů, zjišťováním tvarů SmartArt a spouštěním kódu. Aspose.Words nabízí širokou škálu funkcí, takže nezapomeňte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) odemknout svůj plný potenciál.
 
 ## Nejčastější dotazy
 

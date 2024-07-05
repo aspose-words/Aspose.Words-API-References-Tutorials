@@ -64,7 +64,7 @@ mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
 ```
 
-## Шаг 5: Сохраните документ
+## Шаг 5: Сохранение документа
 
 После завершения слияния вы сохраните измененный документ. В этот новый документ будет вставлен контент именно там, где вы хотите.
 
@@ -72,7 +72,7 @@ mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Docu
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-## Шаг 6. Создайте обработчик обратного вызова
+## Шаг 6. Создание обработчика обратного вызова
 
 Обработчик обратного вызова — это класс, который выполняет специальную обработку поля слияния. Он загружает документ, указанный в значении поля, и вставляет его в текущее поле слияния.
 
@@ -139,7 +139,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 ## Часто задаваемые вопросы
 
 ### Могу ли я вставить несколько документов в разные поля слияния?
- Да, ты можешь. Просто укажите соответствующие поля слияния и соответствующие пути к документам в`MailMerge.Execute` метод.
+Да, ты можешь. Просто укажите соответствующие поля слияния и соответствующие пути к документам в`MailMerge.Execute` метод.
 
 ### Можно ли отформатировать вставленный документ иначе, чем основной документ?
  Абсолютно! Вы можете использовать`ImportFormatMode` параметр в`NodeImporter` для управления форматированием.

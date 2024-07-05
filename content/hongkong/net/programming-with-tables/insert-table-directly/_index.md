@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/programming-with-tables/insert-table-directly/
 ---
 ## 介紹
-以程式設計方式建立表格可能是一個相當大的挑戰，特別是在處理複雜的文件結構時。但別擔心，我們會為您一一解答！在本指南中，我們將逐步介紹使用 Aspose.Words for .NET 將表格直接插入 Word 文件中的步驟。無論您是經驗豐富的開發人員還是新手，本教學都將幫助您輕鬆掌握流程。
+以程式設計方式建立表格可能是一個相當大的挑戰，尤其是在處理複雜的文件結構時。但別擔心，我們會為您一一解答！在本指南中，我們將逐步介紹使用 Aspose.Words for .NET 將表格直接插入 Word 文件中的步驟。無論您是經驗豐富的開發人員還是新手，本教學都將幫助您輕鬆掌握流程。
 
 ## 先決條件
 
@@ -70,7 +70,7 @@ doc.FirstSection.Body.AppendChild(table);
 ```csharp
 //在這裡，我們可以呼叫 EnsureMinimum 來為我們建立行和單元格。使用這個方法
 //確保指定的節點有效。在這種情況下，有效的表格應至少具有一行和一個儲存格。
-//相反，我們將自己處理行和表的創建。
+//相反，我們將自己處理創建行和表。
 //如果我們在演算法中建立表，這將是最好的方法。
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;

@@ -56,7 +56,7 @@ Låt oss nu jämföra dokumenten med hjälp av metoden Compare för klassen Docu
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- De`Compare` metoden jämför dokument A med dokument B och sparar ändringarna i dokument A. Du kan ange författarens namn och datum för jämförelsen som referens.
+ De`Compare`metoden jämför dokument A med dokument B och sparar ändringarna i dokument A. Du kan ange författarens namn och datum för jämförelsen som referens.
 
 ## Slutsats
 
@@ -80,7 +80,7 @@ builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOpti
 
 ## Slutsats
 
-den här handledningen utforskade vi funktionen Comparison Granularity i Aspose.Words för .NET. Den här funktionen låter dig ange detaljnivån när du jämför dokument. Genom att välja olika granularitetsnivåer kan du utföra detaljerade jämförelser på tecken-, ord- eller blocknivå, beroende på dina specifika krav. Aspose.Words för .NET ger en flexibel och kraftfull dokumentjämförelsefunktion, vilket gör det enkelt att identifiera skillnader i dokument med varierande grad av granularitet.
+I den här handledningen utforskade vi funktionen Comparison Granularity i Aspose.Words för .NET. Den här funktionen låter dig ange detaljnivån när du jämför dokument. Genom att välja olika granularitetsnivåer kan du utföra detaljerade jämförelser på tecken-, ord- eller blocknivå, beroende på dina specifika krav. Aspose.Words för .NET ger en flexibel och kraftfull dokumentjämförelsefunktion, vilket gör det enkelt att identifiera skillnader i dokument med varierande grad av granularitet.
 
 ### FAQ's
 
@@ -95,7 +95,7 @@ S: För att använda Comparison Granularity i Aspose.Words för .NET, följ dess
 2. Lägg till de nödvändiga sammansättningarna till ditt projekt genom att referera till Aspose.Words.
 3.  Skapa de dokument som du vill jämföra med hjälp av`DocumentBuilder` klass.
 4.  Konfigurera jämförelsealternativen genom att skapa en`CompareOptions` objekt och ställa in`Granularity` egenskap till önskad nivå (t.ex.`Granularity.CharLevel` för jämförelse på teckennivå).
-5.  Använd`Compare` metod på ett dokument, passerar det andra dokumentet och`CompareOptions` objekt som parametrar. Denna metod kommer att jämföra dokumenten baserat på den specificerade granulariteten och spara ändringarna i det första dokumentet.
+5.  Använd`Compare`metod på ett dokument, passerar det andra dokumentet och`CompareOptions` objekt som parametrar. Denna metod kommer att jämföra dokumenten baserat på den specificerade granulariteten och spara ändringarna i det första dokumentet.
 
 #### F: Vilka är de tillgängliga nivåerna av jämförelsegranularitet i Aspose.Words för .NET?
 

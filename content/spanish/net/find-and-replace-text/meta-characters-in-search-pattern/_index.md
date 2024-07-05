@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Paso 4: insertar un salto de página en el documento
 
- Para ilustrar el uso de otro metacarácter, insertaremos un salto de página en el documento usando el`InsertBreak` método con el`BreakType.PageBreak` parámetros. Primero movemos el cursor desde el`DocumentBuilder` hasta el final del documento, luego insertamos el salto de página y una nueva línea de texto:
+ Para ilustrar el uso de otro metacarácter, insertaremos un salto de página en el documento usando el`InsertBreak` método con el`BreakType.PageBreak` parámetro. Primero movemos el cursor desde el`DocumentBuilder` hasta el final del documento, luego insertamos el salto de página y una nueva línea de texto:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### P: ¿Cómo insertar un salto de página en un documento usando Aspose.Words para .NET?
 
-R: Para ilustrar el uso de otro metacarácter, insertaremos un salto de página en el documento usando el`InsertBreak` método con el`BreakType.PageBreak` parámetros. Primero movemos el cursor desde el`DocumentBuilder` hasta el final del documento, luego insertamos el salto de página y una nueva línea de texto:
+R: Para ilustrar el uso de otro metacarácter, insertaremos un salto de página en el documento usando el`InsertBreak` método con el`BreakType.PageBreak` parámetro. Primero movemos el cursor desde el`DocumentBuilder` hasta el final del documento, luego insertamos el salto de página y una nueva línea de texto:
 
 ```csharp
 builder. MoveToDocumentEnd();

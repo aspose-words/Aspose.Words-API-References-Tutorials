@@ -49,7 +49,7 @@ doc.startTrackRevisions("John Doe", new Date());
 
 ## 6. Hacer revisiones
 
-Hagamos una revisión añadiendo otro párrafo:
+Hagamos una revisión agregando otro párrafo:
 
 ```java
 para = body.appendParagraph("Paragraph 4. ");
@@ -57,7 +57,7 @@ para = body.appendParagraph("Paragraph 4. ");
 
 ## 7. Aceptación y rechazo de revisiones
 
-Puede aceptar o rechazar revisiones en su documento utilizando Aspose.Words para Java. Las revisiones se pueden administrar fácilmente en Microsoft Word una vez generado el documento.
+Puede aceptar o rechazar revisiones en su documento usando Aspose.Words para Java. Las revisiones se pueden administrar fácilmente en Microsoft Word una vez generado el documento.
 
 ## 8. Detener el seguimiento de revisiones
 
@@ -107,7 +107,7 @@ para.remove();
 // y se mostrará como una revisión en Microsoft Word, hasta que aceptemos o rechacemos todas las revisiones.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// El párrafo de revisión eliminado se elimina una vez que aceptamos los cambios.
+// El párrafo de eliminación de revisión se elimina una vez que aceptamos los cambios.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //estaba vacío

@@ -2,13 +2,13 @@
 title: Options avancées d’enregistrement des documents HTML avec Aspose.Words Java
 linktitle: Enregistrer des documents HTML avec
 second_title: API de traitement de documents Java Aspose.Words
-description: Dans ce didacticiel, nous avons couvert diverses options avancées d'enregistrement de documents HTML avec Aspose.Words pour Java. Ces options vous permettent de créer du HTML de haute qualité.
+description: Dans ce didacticiel, nous avons couvert diverses options avancées d'enregistrement de documents HTML avec Aspose.Words pour Java. Ces options vous permettent de créer du HTML de haute qualité
 type: docs
 weight: 16
 url: /fr/java/document-loading-and-saving/advance-html-documents-saving-options/
 ---
 
-Dans ce didacticiel, nous explorerons les options avancées d'enregistrement de documents HTML fournies par Aspose.Words pour Java. Aspose.Words est une puissante API Java pour travailler avec des documents Word et offre un large éventail de fonctionnalités pour la manipulation et la conversion de documents.
+Dans ce didacticiel, nous explorerons les options avancées d'enregistrement de documents HTML fournies par Aspose.Words pour Java. Aspose.Words est une API Java puissante pour travailler avec des documents Word et offre un large éventail de fonctionnalités pour la manipulation et la conversion de documents.
 
 ## 1. Introduction
 Aspose.Words for Java vous permet de travailler avec des documents Word par programmation. Dans ce didacticiel, nous nous concentrerons sur les options avancées d'enregistrement de documents HTML, qui vous permettent de contrôler la façon dont les documents Word sont convertis en HTML.
@@ -121,14 +121,14 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. Conclusion
 Dans ce didacticiel, nous avons exploré les options avancées d'enregistrement de documents HTML fournies par Aspose.Words pour Java. Ces options vous donnent un contrôle précis sur le processus de conversion, vous permettant de créer des documents HTML qui ressemblent étroitement aux documents Word originaux.
 
-## 12.FAQ
+## 12. FAQ
 Voici quelques questions fréquemment posées sur l’utilisation des options d’enregistrement de documents Aspose.Words pour Java et HTML :
 
 ### Q1 : Comment puis-je reconvertir le HTML au format Word à l'aide d'Aspose.Words pour Java ?
  Pour reconvertir le HTML au format Word, vous pouvez utiliser l'API Aspose.Words`load` méthode pour charger le document HTML puis l'enregistrer au format Word.
 
 ### Q2 : Puis-je personnaliser les styles CSS lors de l'exportation au format HTML ?
- Oui, vous pouvez personnaliser les styles CSS en modifiant les feuilles de style utilisées dans le HTML ou en utilisant l'outil`addCssClassNamePrefix` méthode pour ajouter un préfixe aux noms de classe CSS.
+ Oui, vous pouvez personnaliser les styles CSS en modifiant les feuilles de style utilisées dans le HTML ou en utilisant l'outil`addCssClassNamePrefix` méthode pour ajouter un préfixe aux noms de classes CSS.
 
 ### Q3 : Existe-t-il un moyen d'optimiser la sortie HTML pour l'affichage Web ?
 Oui, vous pouvez optimiser la sortie HTML pour l'affichage Web en configurant des options telles que l'exportation des polices au format Base64 et la conversion des métafichiers en SVG.

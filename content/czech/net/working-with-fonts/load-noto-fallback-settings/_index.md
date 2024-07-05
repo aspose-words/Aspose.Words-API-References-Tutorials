@@ -2,7 +2,7 @@
 title: Načtěte záložní nastavení Noto
 linktitle: Načtěte záložní nastavení Noto
 second_title: Aspose.Words API pro zpracování dokumentů
-description: V tomto kurzu se dozvíte, jak načíst parametry přepisu Noto do dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: V tomto tutoriálu se dozvíte, jak načíst parametry přepisu Noto do dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/load-noto-fallback-settings/
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Načtěte dokument a nakonfigurujte nastavení nahrazování písem
- Dále načteme dokument pomocí`Document` třídy a nakonfigurujte nastavení přepsání písem pomocí`FontSettings` třída. Načteme nastavení záložního písma Noto pomocí`LoadNotoFallbackSettings()` metoda.
+ Dále načteme dokument pomocí`Document` třídy a nakonfigurujte nastavení přepsání písem pomocí`FontSettings`třída. Načteme nastavení záložního písma Noto pomocí`LoadNotoFallbackSettings()` metoda.
 
 ```csharp
 // Načtěte dokument a nakonfigurujte nastavení nahrazování písem

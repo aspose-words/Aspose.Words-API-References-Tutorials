@@ -69,12 +69,12 @@ A lábjegyzeteket és a végjegyzeteket programozottan kezelheti:
 - Lábjegyzetek vagy végjegyzetek átrendezése
 - Lábjegyzetek vagy végjegyzetek kinyerése további feldolgozás céljából
 
-## A lábjegyzetek és végjegyzetek használatának bevált gyakorlatai
+## A lábjegyzetek és a végjegyzetek használatának bevált gyakorlatai
 
 - A lábjegyzetek legyenek tömörek és relevánsak
 - A részletesebb magyarázatokhoz használja a végjegyzeteket
 - Tartsa fenn a következetes formázást
-- Ellenőrizze még egyszer az idézetek pontosságát.
+- Ellenőrizze még egyszer az idézetek pontosságát
 
 ## Gyakori problémák hibaelhárítása
 

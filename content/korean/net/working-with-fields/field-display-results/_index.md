@@ -61,7 +61,7 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // 필드를 업데이트합니다.
 document. UpdateFields();
 
-//현장 결과 표시.
+// 현장 결과 표시.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
@@ -74,11 +74,11 @@ foreach(Field field in document.Range.Fields)
 
 #### Q: Aspose.Words의 결과 표시 필드는 무엇입니까?
 
-A: Aspose.Words의 결과 표시 필드는 Word 문서에서 작업이나 계산의 결과를 표시하는 필드 유형입니다. 예를 들어 결과 표시 필드를 사용하여 여러 값의 합계 또는 수학 공식의 결과를 표시할 수 있습니다.
+A: Aspose.Words의 결과 표시 필드는 Word 문서에서 작업이나 계산의 결과를 표시하는 필드 유형입니다. 예를 들어, 결과 표시 필드를 사용하여 여러 값의 합계나 수학 공식의 결과를 표시할 수 있습니다.
 
 #### Q: Aspose.Words를 사용하여 Word 문서의 결과 표시 필드를 업데이트하는 방법은 무엇입니까?
 
-A: Aspose.Words를 사용하여 Word 문서의 결과 표시 필드를 업데이트하려면 UpdateFields 메서드를 사용할 수 있습니다. 이 방법은 문서를 반복하고 결과 표시 필드를 포함한 모든 필드를 업데이트하여 현재 데이터를 기반으로 값을 다시 계산합니다.
+A: Aspose.Words를 사용하여 Word 문서의 결과 표시 필드를 업데이트하려면 UpdateFields 메서드를 사용할 수 있습니다. 이 메서드는 문서를 반복하고 결과 표시 필드를 포함한 모든 필드를 업데이트하여 현재 데이터를 기반으로 값을 다시 계산합니다.
 
 #### Q: 결과 표시 필드에 표시되는 결과의 형식을 지정할 수 있습니까?
 

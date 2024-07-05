@@ -12,6 +12,6 @@ url: /ko/net/working-with-hyphenation/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [언어의 하이픈 넣기 단어](./hyphenate-words-of-languages/) | Aspose.Words for .NET을 사용하여 Word 문서에서 다양한 언어로 단어에 하이픈을 넣는 방법을 알아보세요. |
+| [언어의 하이픈 넣기 단어](./hyphenate-words-of-languages/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 다양한 언어의 단어에 하이픈을 넣는 방법을 알아보세요. |
 | [언어에 대한 하이픈 넣기 사전 로드](./load-hyphenation-dictionary-for-language/) |Aspose.Words for .NET에서 특정 언어에 대한 하이픈 사전을 로드하는 방법을 알아보세요. |
 | [하이픈 넣기 콜백](./hyphenation-callback/) | .NET용 Aspose.Words에서 하이픈 콜백을 사용하여 단어 하이픈을 처리하는 방법을 알아보세요. |

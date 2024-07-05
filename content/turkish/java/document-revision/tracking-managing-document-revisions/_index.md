@@ -93,7 +93,7 @@ Bir belgenin yeni bir sürümünü oluşturmak için belgenin yeni bir adla veya
 doc.save("MyDocument_v2.docx");
 ```
 
-Bu örnekte, belgenin bir kopyasını " ile kaydediyoruz_v2" son ekini kullanarak bunun yeni bir sürüm olduğunu belirtin. Gerektiğinde farklı sürümler oluşturmak için benzer bir yaklaşım uygulayabilirsiniz.
+Bu örnekte belgenin bir kopyasını "_v2" son ekini kullanarak bunun yeni bir sürüm olduğunu belirtin. Gerektiğinde farklı sürümler oluşturmak için benzer bir yaklaşım uygulayabilirsiniz.
 
 ## SSS (Sık Sorulan Sorular)
 

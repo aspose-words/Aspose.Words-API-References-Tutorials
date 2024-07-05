@@ -139,10 +139,10 @@ Et voila! Vous avez réussi à insérer des documents dans des champs spécifiqu
 ## FAQ
 
 ### Puis-je insérer plusieurs documents dans différents champs de fusion ?
- Oui, vous pouvez. Spécifiez simplement les champs de fusion appropriés et les chemins de documents correspondants dans le`MailMerge.Execute` méthode.
+Oui, vous pouvez. Spécifiez simplement les champs de fusion appropriés et les chemins de documents correspondants dans le`MailMerge.Execute` méthode.
 
 ### Est-il possible de formater le document inséré différemment du document principal ?
- Absolument! Vous pouvez utiliser le`ImportFormatMode` paramètres dans le`NodeImporter` pour contrôler le formatage.
+ Absolument! Vous pouvez utiliser le`ImportFormatMode` paramètre dans le`NodeImporter` pour contrôler le formatage.
 
 ### Que se passe-t-il si le nom du champ de fusion est dynamique ?
 Vous pouvez gérer les noms de champs de fusion dynamiques en les transmettant comme paramètres au gestionnaire de rappel.

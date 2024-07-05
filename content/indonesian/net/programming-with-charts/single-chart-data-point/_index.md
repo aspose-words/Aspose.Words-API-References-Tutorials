@@ -17,7 +17,7 @@ Pastikan Anda memiliki prasyarat berikut:
 - Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
 - Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan.
+## Langkah 2: Buat dokumen baru dan masukkan bagan
 
  Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
 

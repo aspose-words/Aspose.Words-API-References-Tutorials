@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-footnote-and-endnote/set-foot-note-columns/
 ---
 
-W tym samouczku krok po kroku poprowadzimy Cię, jak używać Aspose.Words dla .NET do ustawiania liczby kolumn przypisów w dokumencie programu Word. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+tym samouczku krok po kroku poprowadzimy Cię, jak używać Aspose.Words dla .NET do ustawiania liczby kolumn przypisów w dokumencie programu Word. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
 
  Aby rozpocząć, upewnij się, że masz zainstalowany i skonfigurowany Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
 
@@ -57,7 +57,7 @@ Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go z
 
 #### P: Jak mogę skonfigurować liczbę kolumn przypisów w Aspose.Words?
 
- O: Aby skonfigurować liczbę kolumn przypisów w Aspose.Words, musisz użyć opcji`FootnoteOptions` klasa i`ColumnsCount` nieruchomość. Możesz ustawić tę właściwość na dowolną liczbę kolumn.
+O: Aby skonfigurować liczbę kolumn przypisów w Aspose.Words, musisz użyć opcji`FootnoteOptions` klasa i`ColumnsCount` nieruchomość. Możesz ustawić tę właściwość na dowolną liczbę kolumn.
 
 #### P: Jakie są zalety konfigurowania kolumn przypisów dolnych?
 
@@ -65,7 +65,7 @@ O: Konfigurowanie kolumn przypisów pomaga poprawić czytelność dokumentów po
 
 #### P: Czy można określić różną liczbę kolumn dla różnych sekcji dokumentu?
 
-O: Tak, możliwe jest określenie różnej liczby kolumn dla różnych sekcji dokumentu. Możesz użyć metod manipulacji sekcjami Aspose.Words, aby zdefiniować określone konfiguracje dla każdej sekcji, w tym liczbę kolumn przypisów.
+O: Tak, możliwe jest określenie różnej liczby kolumn dla różnych sekcji dokumentu. Możesz użyć metod manipulacji sekcją Aspose.Words, aby zdefiniować określone konfiguracje dla każdej sekcji, w tym liczbę kolumn przypisów.
 
 #### P: Czy kolumny przypisów są brane pod uwagę podczas konwersji do innych formatów plików?
 

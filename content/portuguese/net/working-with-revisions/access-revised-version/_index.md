@@ -12,7 +12,7 @@ Neste guia passo a passo, mostraremos como acessar a versão revisada de um docu
 
 ## Passo 1: Carregando o documento
 
-O primeiro passo é fazer o upload do documento contendo as revisões.
+primeiro passo é fazer o upload do documento contendo as revisões.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
@@ -79,7 +79,7 @@ Neste tutorial, aprendemos como acessar a versão revisada de um documento do Wo
 
 #### P: Como carrego um documento com revisões no Aspose.Words for .NET?
 
- R: Use o`Document`classe de Aspose.Words for .NET para carregar um documento de um arquivo contendo revisões. Você pode especificar o caminho completo do documento.
+ R: Use o`Document` classe de Aspose.Words for .NET para carregar um documento de um arquivo contendo revisões. Você pode especificar o caminho completo do documento.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### P: Como procuro revisões de documentos no Aspose.Words for .NET?
 
- R: Use um`foreach` loop para iterar pelas revisões presentes no documento. Você pode usar o`Revisions` propriedade do`Document` objeto para obter uma coleção de todas as revisões do documento.
+R: Use um`foreach` loop para iterar pelas revisões presentes no documento. Você pode usar o`Revisions` propriedade do`Document` objeto para obter uma coleção de todas as revisões do documento.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

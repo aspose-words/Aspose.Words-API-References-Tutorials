@@ -81,7 +81,7 @@ builder.Writeln("This is just a fine bookmark.");
 builder.EndBookmark("FineBookmark");
 ```
 
- ที่`EndBookmark` วิธีการนี้จะทำให้บุ๊กมาร์กที่เราเริ่มต้นไว้เสร็จสมบูรณ์
+ ที่`EndBookmark` วิธีการทำให้บุ๊กมาร์กที่เราเริ่มไว้ก่อนหน้านี้สมบูรณ์
 
 ## ขั้นตอนที่ 6: บันทึกเอกสาร
 

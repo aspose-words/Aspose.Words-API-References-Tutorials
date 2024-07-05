@@ -1,18 +1,18 @@
 ---
-title: Seitenbereich von PDF laden
-linktitle: Seitenbereich von PDF laden
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+title: Seitenbereich einer PDF laden
+linktitle: Seitenbereich einer PDF laden
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Laden eines bestimmten PDF-Seitenbereichs mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ---
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET einen bestimmten Seitenbereich aus einem PDF-Dokument laden. Folgen Sie den unteren Schritten:
+In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET einen bestimmten Seitenbereich aus einem PDF-Dokument laden. Folgen Sie den folgenden Schritten:
 
-## Schritt 1: Laden einer Reihe von PDF-Seiten
+## Schritt 1: Einen Bereich von PDF-Seiten laden
 
-Verwenden Sie den folgenden Code, um einen bestimmten Seitenbereich aus einem PDF-Dokument zu laden:
+Um einen bestimmten Seitenbereich aus einem PDF-Dokument zu laden, verwenden Sie folgenden Code:
 
 ```csharp
 // Pfad zum Dokumentenverzeichnis.
@@ -23,25 +23,25 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- In diesem Beispiel laden wir die erste Seite des PDF-Dokuments. Sie können die Werte von ändern`PageIndex` Und`PageCount` auf den gewünschten Seitenbereich.
+ In diesem Beispiel laden wir die erste Seite des PDF-Dokuments. Sie können die Werte von`PageIndex` Und`PageCount` auf den gewünschten Seitenbereich.
 
 ## Schritt 2: Speichern des Dokuments
 
- Abschließend können Sie das Dokument mit dem spezifischen Seitenbereich speichern`Save` Methode:
+ Abschließend können Sie das Dokument mit dem Seitenbereich speichern, indem Sie`Save` Methode:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 ```
 
-Stellen Sie sicher, dass Sie den richtigen Pfad zum Speichern des bearbeiteten Dokuments angeben.
+Geben Sie unbedingt den richtigen Pfad zum Speichern des bearbeiteten Dokuments an.
 
-Das ist alles ! Sie haben nun mit Aspose.Words für .NET einen bestimmten Seitenbereich aus einem PDF-Dokument geladen.
+Das ist alles! Sie haben jetzt mit Aspose.Words für .NET einen bestimmten Seitenbereich aus einem PDF-Dokument geladen.
 
-### Beispielquellcode für „Load Page Range Of Pdf“ mit Aspose.Words für .NET
+### Beispielquellcode zum Laden des Seitenbereichs einer PDF mit Aspose.Words für .NET
 
 ```csharp
 
-	// Der Pfad zum Dokumentenverzeichnis.
+	// Der Pfad zum Dokumentverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
 
@@ -51,7 +51,7 @@ Das ist alles ! Sie haben nun mit Aspose.Words für .NET einen bestimmten Seiten
 	doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
    
 ```
-Denken Sie daran, den korrekten Pfad zum Verzeichnis Ihrer PDF-Dokumente anzugeben.
+Denken Sie daran, den richtigen Pfad zum Verzeichnis Ihrer PDF-Dokumente anzugeben.
 
 
 

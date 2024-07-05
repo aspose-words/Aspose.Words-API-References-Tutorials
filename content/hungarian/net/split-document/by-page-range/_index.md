@@ -82,6 +82,6 @@ Nem, az „Oldaltartomány szerint” funkció nem védett Word-dokumentumokon m
 #### 4. kérdés: Vannak-e korlátozások az „Oldaltartomány szerint” funkcióval kibontható oldalak számára?
 Az "Oldaltartomány szerint" funkcióval kibontható oldalak száma az Aspose.Words for .NET képességeitől és a rendelkezésre álló rendszererőforrásoktól függ. Általában támogatja az oldaltartományok kibontását különböző méretű dokumentumokból, de a rendkívül nagy dokumentumok vagy a nagyon hosszú oldaltartományok további rendszererőforrásokat és feldolgozási időt igényelhetnek.
 
-#### 5. kérdés: Kivonhatok más elemeket a szöveges tartalommal együtt, például képeket vagy táblázatokat az „Oldaltartomány szerint” funkció használatával?
+#### 5. kérdés: Kivonhatok-e más elemeket a szöveges tartalommal együtt, például képeket vagy táblázatokat az „Oldaltartomány szerint” funkció használatával?
 Igen, ha kibont egy oldaltartományt az Aspose.Words for .NET használatával, az tartalmazza a megadott tartományon belüli összes tartalmat, beleértve a szöveget, képeket, táblázatokat és az oldalakon található egyéb elemeket. A kivonatolt tartalom megmarad az új dokumentumban.
 

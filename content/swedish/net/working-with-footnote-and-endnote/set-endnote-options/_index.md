@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Steg 4: Ställa in alternativ för slutnot
 
- Få tillgång till`EndnoteOptions` egenskapen för dokumentet för att ändra slutnotalternativ. I det här exemplet ställer vi in omstartsregeln för att starta om på varje sida och positionen till slutet av avsnittet:
+ Få tillgång till`EndnoteOptions`egenskapen för dokumentet för att ändra slutnotalternativ. I det här exemplet ställer vi in omstartsregeln för att starta om på varje sida och positionen till slutet av avsnittet:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -50,7 +50,7 @@ option.Position = EndnotePosition.EndOfSection;
 
 ## Steg 5: Spara dokumentet
 
-Spara slutligen det ändrade dokumentet:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
@@ -81,7 +81,7 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Hur kan jag utforma slutnoter i Aspose.Words?
 
-S: För att utforma slutnoter i Aspose.Words kan du använda`EndnoteOptions` klass och`SeparatorNoteTextStyle` fast egendom. Du kan ange teckensnittsstil, storlek, färg etc. för slutanteckningar med den här egenskapen.
+ S: För att utforma slutnoter i Aspose.Words kan du använda`EndnoteOptions` klass och`SeparatorNoteTextStyle` fast egendom. Du kan ange teckensnittsstil, storlek, färg etc. för slutanteckningar med den här egenskapen.
 
 #### F: Är det möjligt att anpassa numreringen av slutnoter i ett dokument?
 
@@ -89,7 +89,7 @@ S: För att utforma slutnoter i Aspose.Words kan du använda`EndnoteOptions` kla
 
 #### F: Hur kan jag placera slutnoter i ett dokument?
 
- S: För att placera slutnoter i ett dokument kan du använda`Position` egendom av`EndnoteOptions` klass. Du kan ange om slutanteckningar ska placeras längst ner på varje sida, i slutet av varje avsnitt eller i slutet av dokumentet.
+S: För att placera slutnoter i ett dokument kan du använda`Position` egendom av`EndnoteOptions` klass. Du kan ange om slutanteckningar ska placeras längst ner på varje sida, i slutet av varje avsnitt eller i slutet av dokumentet.
 
 #### F: Kan jag anpassa slutnotens numreringsformat?
 
@@ -97,4 +97,4 @@ S: För att utforma slutnoter i Aspose.Words kan du använda`EndnoteOptions` kla
 
 #### F: Är det möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument?
 
-S: Ja, det är möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument. Använd`RestartRule` egendom av`EndnoteOptions` klass och ställ in den på`RestartContinuous` för att låta numreringen fortsätta mellan avsnitten.
+ S: Ja, det är möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument. Använd`RestartRule` egendom av`EndnoteOptions` klass och ställ in den på`RestartContinuous` för att låta numreringen fortsätta mellan avsnitten.

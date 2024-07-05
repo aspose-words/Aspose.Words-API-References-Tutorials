@@ -68,7 +68,7 @@ Na koniec zapisz dokument z wygenerowaną tabelą w wybranej lokalizacji.
 doc.save(""output.docx"");
 ```
 
-Wykonując te kroki, możesz pomyślnie wygenerować tabelę z DataTable i włączyć ją do aplikacji do przetwarzania dokumentów za pomocą Aspose.Words for Java. Ta bogata w funkcje biblioteka upraszcza zadania związane z przetwarzaniem tabel i tekstu, umożliwiając łatwe tworzenie profesjonalnych i dobrze zorganizowanych dokumentów.
+Wykonując poniższe kroki, możesz pomyślnie wygenerować tabelę z DataTable i włączyć ją do aplikacji do przetwarzania dokumentów przy użyciu Aspose.Words for Java. Ta bogata w funkcje biblioteka upraszcza zadania związane z przetwarzaniem tabel i tekstu, umożliwiając łatwe tworzenie profesjonalnych i dobrze zorganizowanych dokumentów.
 
 ## Wniosek
 

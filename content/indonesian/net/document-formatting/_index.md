@@ -13,12 +13,12 @@ Tutorialnya mencakup berbagai aspek seperti pemformatan teks, paragraf, tabel, g
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Spasi Antara Teks Asia dan Latin Dalam Dokumen Word](./space-between-asian-and-latin-text/) | Pelajari cara menyesuaikan spasi antara teks Asia dan Latin secara otomatis di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Grup Pemutusan Garis Tipografi Asia Dalam Dokumen Word](./asian-typography-line-break-group/) | Pelajari cara menggunakan grup pemisah baris Tipografi Asia di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Pemformatan Paragraf Dalam Dokumen Word](./paragraph-formatting/) | Pelajari cara menerapkan pemformatan khusus ke paragraf Anda di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Pemformatan Daftar Bertingkat Dalam Dokumen Word](./multilevel-list-formatting/) | Pelajari cara membuat daftar bertingkat dan menerapkan pemformatan khusus di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Terapkan Gaya Paragraf Dalam Dokumen Word](./apply-paragraph-style/) | Pelajari cara menerapkan gaya paragraf di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Terapkan Batas Dan Bayangan Pada Paragraf Dalam Dokumen Word](./apply-borders-and-shading-to-paragraph/) | Pelajari cara menerapkan batas dan bayangan pada paragraf di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Ubah Spasi dan Indentasi Paragraf Asia di Dokumen Word](./change-asian-paragraph-spacing-and-indents/) | Pelajari cara mengubah spasi dan indentasi paragraf Asia di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Snap To Grid Di Dokumen Word](./snap-to-grid/) | Panduan langkah demi langkah untuk menjelaskan kode sumber C# Snap to Grid dalam fitur dokumen Word dengan Aspose.Words untuk .NET. |
-| [Dapatkan Pemisah Gaya Paragraf Dalam Dokumen Word](./get-paragraph-style-separator/) | Pelajari cara mendapatkan pemisah gaya paragraf di dokumen Word dengan Aspose.Words untuk .NET. |
+| [Spasi Antara Teks Asia dan Latin Dalam Dokumen Word](./space-between-asian-and-latin-text/) | Pelajari cara menyesuaikan spasi antara teks Asia dan Latin secara otomatis di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang mendetail. |
+| [Grup Pemutusan Garis Tipografi Asia Dalam Dokumen Word](./asian-typography-line-break-group/) | Kuasai jeda baris tipografi Asia dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan ini memberikan tutorial langkah demi langkah untuk pemformatan yang tepat. |
+| [Pemformatan Paragraf Dalam Dokumen Word](./paragraph-formatting/) | Pelajari cara memformat paragraf dalam dokumen Word dengan mudah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. |
+| [Pemformatan Daftar Bertingkat Dalam Dokumen Word](./multilevel-list-formatting/) | Pelajari cara menguasai pemformatan daftar bertingkat di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurnakan struktur dokumen dengan mudah. |
+| [Terapkan Gaya Paragraf Dalam Dokumen Word](./apply-paragraph-style/) | Pelajari cara menerapkan gaya paragraf dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mendapatkan dokumen profesional yang sempurna. |
+| [Terapkan Batas Dan Bayangan Pada Paragraf Dalam Dokumen Word](./apply-borders-and-shading-to-paragraph/) | Terapkan batas dan bayangan pada paragraf di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk menyempurnakan format dokumen Anda. |
+| [Ubah Spasi dan Indentasi Paragraf Asia di Dokumen Word](./change-asian-paragraph-spacing-and-indents/) | Pelajari cara mengubah spasi dan indentasi paragraf Asia di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. |
+| [Snap To Grid Di Dokumen Word](./snap-to-grid/) | Pelajari cara mengaktifkan Snap to Grid di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial mendetail ini mencakup prasyarat, panduan langkah demi langkah, dan FAQ. |
+| [Dapatkan Pemisah Gaya Paragraf Dalam Dokumen Word](./get-paragraph-style-separator/) | Pelajari cara mengidentifikasi dan menangani pemisah gaya paragraf di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang komprehensif ini. |

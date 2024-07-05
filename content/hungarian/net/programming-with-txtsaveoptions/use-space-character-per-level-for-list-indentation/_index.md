@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Ebben a példában új dokumentumot hozunk létre, és a DocumentBuilder segítségével szöveget adunk hozzá, és létrehozunk egy listát három behúzási szinttel. Három elemet adtunk a listához, amelyek mindegyike egy további szintet jelez.
+Ebben a példában új dokumentumot hozunk létre, és a DocumentBuilder segítségével szöveget adunk hozzá, és létrehozunk egy listát három behúzási szinttel. Három elemet adtunk hozzá a listához, mindegyik elem behúzásával egy további szinttel.
 
 ## Egy szóköz használata szintenként a lista behúzásához
 
@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIn
 
 Ebben a példában létrehozzuk a TxtSaveOptions egy példányát, és a ListIndentation.Count tulajdonságot 3-ra állítjuk, jelezve, hogy a listában három behúzási szint található. A ListIndentation.Character tulajdonságot a behúzáshoz használni kívánt szóköz karakterre (' ') is beállítjuk.
 
-### Példa forráskódra az Aspose.Words for .NET "Szintenként egy szóköz karakter használata a lista behúzásához" szolgáltatáshoz
+### Példa forráskódra az Aspose.Words for .NET "Egy szóköz karakter használata szintenként a lista behúzásához" funkcióhoz
 
 Íme az Aspose.Words for .NET "Szintenként egy szóköz használata a lista behúzásához" funkció teljes mintaforráskódja:
 

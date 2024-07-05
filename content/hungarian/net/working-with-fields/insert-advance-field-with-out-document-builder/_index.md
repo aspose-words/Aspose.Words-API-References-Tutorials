@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## 3. lépés: A speciális mezők beszúrása
+## 3. lépés: A speciális mező beszúrása
 
  Használjuk a`AppendField()` módszer egy speciális mező beillesztéséhez a bekezdésbe.
 

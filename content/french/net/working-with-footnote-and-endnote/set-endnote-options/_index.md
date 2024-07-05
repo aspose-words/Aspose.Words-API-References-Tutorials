@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Étape 4 : Définition des options de note de fin
 
- Accéder au`EndnoteOptions` propriété du document pour modifier les options de note de fin. Dans cet exemple, nous définissons la règle de redémarrage pour redémarrer sur chaque page et la position à la fin de la section :
+ Accéder au`EndnoteOptions`propriété du document pour modifier les options de note de fin. Dans cet exemple, nous définissons la règle de redémarrage pour redémarrer sur chaque page et la position à la fin de la section :
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -81,7 +81,7 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Comment puis-je styliser les notes de fin dans Aspose.Words ?
 
-R : Pour styliser les notes de fin dans Aspose.Words, vous pouvez utiliser l'outil`EndnoteOptions` la classe et le`SeparatorNoteTextStyle` propriété. Vous pouvez spécifier le style de police, la taille, la couleur, etc. pour les notes de fin à l'aide de cette propriété.
+ R : Pour styliser les notes de fin dans Aspose.Words, vous pouvez utiliser l'outil`EndnoteOptions` la classe et le`SeparatorNoteTextStyle` propriété. Vous pouvez spécifier le style de police, la taille, la couleur, etc. pour les notes de fin à l'aide de cette propriété.
 
 #### Q : Est-il possible de personnaliser la numérotation des notes de fin dans un document ?
 
@@ -89,7 +89,7 @@ R : Pour styliser les notes de fin dans Aspose.Words, vous pouvez utiliser l'ou
 
 #### Q : Comment puis-je positionner les notes de fin dans un document ?
 
- R : Pour positionner les notes de fin dans un document, vous pouvez utiliser l'outil`Position` propriété du`EndnoteOptions` classe. Vous pouvez spécifier si les notes de fin doivent être placées au bas de chaque page, à la fin de chaque section ou à la fin du document.
+R : Pour positionner les notes de fin dans un document, vous pouvez utiliser l'outil`Position` propriété du`EndnoteOptions` classe. Vous pouvez spécifier si les notes de fin doivent être placées au bas de chaque page, à la fin de chaque section ou à la fin du document.
 
 #### Q : Puis-je personnaliser le format de numérotation des notes de fin ?
 
@@ -97,4 +97,4 @@ R : Pour styliser les notes de fin dans Aspose.Words, vous pouvez utiliser l'ou
 
 #### Q : Est-il possible de continuer à numéroter les notes de fin entre les sections d'un document ?
 
- : Oui, il est possible de continuer à numéroter les notes de fin entre les sections d'un document. Utilisez le`RestartRule` propriété du`EndnoteOptions` classe et réglez-le sur`RestartContinuous` pour permettre à la numérotation de continuer entre les sections.
+ R : Oui, il est possible de continuer à numéroter les notes de fin entre les sections d'un document. Utilisez le`RestartRule` propriété du`EndnoteOptions` classe et réglez-le sur`RestartContinuous` pour permettre à la numérotation de continuer entre les sections.

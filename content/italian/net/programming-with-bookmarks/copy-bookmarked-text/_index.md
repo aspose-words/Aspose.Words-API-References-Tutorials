@@ -136,7 +136,7 @@ R: Per utilizzare la funzione "Copia testo con segnalibri" in Aspose.Words per .
 
 #### D: Come carico un documento sorgente in Aspose.Words per .NET?
 
- R: Per caricare un documento sorgente in Aspose.Words per .NET, è possibile utilizzare il file`Document` class specificando il percorso del file del documento. Ecco un codice di esempio:
+ R: Per caricare un documento sorgente in Aspose.Words per .NET, è possibile utilizzare il file`Document` classe specificando il percorso del file del documento. Ecco un codice di esempio:
 
 ```csharp
 Document srcDoc = new Document("path/to/your/document.docx");

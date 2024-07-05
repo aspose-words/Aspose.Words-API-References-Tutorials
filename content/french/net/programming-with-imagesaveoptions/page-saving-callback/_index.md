@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          // Implémentez vos actions personnalisées ici
          // Vous pouvez accéder aux informations de la page via la propriété "args.PageIndex".
-         // Vous pouvez également modifier les options d'enregistrement pour chaque page individuellement.
+         // Vous pouvez également modifier les options d'enregistrement pour chaque page individuellement
      }
 }
 ```

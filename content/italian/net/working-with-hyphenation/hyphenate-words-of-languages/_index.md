@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-In questo tutorial passo passo ti guideremo su come sillabare le parole in diverse lingue nei documenti Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
+In questo tutorial passo passo, ti guideremo su come sillabare le parole in diverse lingue nei documenti Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
 Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria dal sito ufficiale.
 

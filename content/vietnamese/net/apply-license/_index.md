@@ -13,6 +13,6 @@ Trang này cung cấp hướng dẫn chi tiết về cách áp dụng giấy ph�
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Áp dụng giấy phép từ tập tin](./apply-license-from-file/) | Tìm hiểu cách áp dụng giấy phép từ một tệp bằng Aspose.Words cho .NET.|
-| [Áp dụng giấy phép từ luồng](./apply-license-from-stream/) | Tìm hiểu cách áp dụng giấy phép từ luồng bằng Aspose.Words cho .NET.|
-| [Áp dụng giấy phép đo](./apply-metered-license/) | Tìm hiểu cách áp dụng giấy phép đo bằng cách sử dụng Aspose.Words cho .NET. |
+| [Áp dụng giấy phép từ tập tin](./apply-license-from-file/) | Tìm hiểu cách áp dụng giấy phép từ một tệp trong Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Mở khóa toàn bộ tiềm năng của thư viện của bạn một cách dễ dàng. |
+| [Áp dụng giấy phép từ luồng](./apply-license-from-stream/) | Tìm hiểu cách áp dụng giấy phép từ luồng trong Aspose.Words cho .NET với hướng dẫn từng bước này. Mở khóa toàn bộ tiềm năng của Aspose.Words. |
+| [Áp dụng giấy phép đo](./apply-metered-license/) | Tìm hiểu cách áp dụng giấy phép đo lường trong Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Việc cấp phép linh hoạt, tiết kiệm chi phí được thực hiện đơn giản. |

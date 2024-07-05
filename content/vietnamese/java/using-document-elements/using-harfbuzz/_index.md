@@ -28,7 +28,7 @@ Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có sẵn các đi�
 
 ## Bước 2: Tải tài liệu Word
 
- Trong bước này, chúng tôi sẽ tải một tài liệu Word mẫu mà chúng tôi muốn làm việc. Thay thế`"Your Document Directory"` với đường dẫn thực tế đến tài liệu Word của bạn:
+ Trong bước này, chúng tôi sẽ tải một tài liệu Word mẫu mà chúng tôi muốn làm việc. Thay thế`"Your Document Directory"` với đường dẫn thực tế tới tài liệu Word của bạn:
 
 ```java
 String dataDir = "Your Document Directory";
@@ -58,7 +58,7 @@ doc.save(outPath + "ShapedDocument.pdf");
 string dataDir = "Your Document Directory";
 string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
-// Khi chúng tôi đặt nhà máy tạo hình văn bản, bố cục sẽ bắt đầu sử dụng các tính năng OpenType.
+// Khi chúng tôi đặt nhà máy tạo hình văn bản, bố cục bắt đầu sử dụng các tính năng OpenType.
 // Thuộc tính Instance trả về gói đối tượng BasicTextShaperCache HarfBuzzTextShaperFactory.
 doc.getLayoutOptions().setTextShaperFactory(HarfBuzzTextShaperFactory.getInstance());
 doc.save(outPath + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");

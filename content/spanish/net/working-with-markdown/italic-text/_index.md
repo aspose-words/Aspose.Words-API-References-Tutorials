@@ -1,6 +1,6 @@
 ---
-title: Texto italiano
-linktitle: Texto italiano
+title: Texto en cursiva
+linktitle: Texto en cursiva
 second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda a poner texto en cursiva con Aspose.Words para la guía paso a paso de .NET.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Utilice un generador de documentos para agregar contenido al documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Haz el texto italiano.
+// Pon el texto en cursiva.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

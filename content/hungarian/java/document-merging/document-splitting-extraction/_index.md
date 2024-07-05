@@ -110,4 +110,4 @@ Igen, az Aspose.Words for Java képes szöveget kivonni a beolvasott dokumentumo
 
 ### Hol érhetem el az Aspose.Words for Java dokumentációját?
 
- Az Aspose.Words for Java dokumentációját megtalálja.[itt](https://reference.aspose.com/words/java/).
+ Az Aspose.Words for Java dokumentációját megtalálja[itt](https://reference.aspose.com/words/java/).

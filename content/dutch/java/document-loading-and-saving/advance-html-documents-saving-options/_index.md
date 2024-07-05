@@ -2,7 +2,7 @@
 title: Geavanceerde HTML-documenten Opslaan van opties met Aspose.Words Java
 linktitle: HTML-documenten opslaan met
 second_title: Aspose.Words Java-documentverwerkings-API
-description: In deze zelfstudie hebben we verschillende geavanceerde opties voor het opslaan van HTML-documenten besproken met Aspose.Words voor Java. Met deze opties kunt u HTML van hoge kwaliteit maken.
+description: In deze zelfstudie hebben we verschillende geavanceerde opties voor het opslaan van HTML-documenten besproken met Aspose.Words voor Java. Met deze opties kunt u HTML van hoge kwaliteit maken
 type: docs
 weight: 16
 url: /nl/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -60,7 +60,7 @@ public void exportResources() throws Exception {
 ```java
 @Test
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    // Codefragment wordt vanwege beknoptheid niet weergegeven.
+    // Codefragment niet weergegeven vanwege beknoptheid.
 }
 ```
 
@@ -70,7 +70,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```java
 @Test
 public void convertMetafilesToSvg() throws Exception {
-    // Codefragment wordt vanwege beknoptheid niet weergegeven.
+    // Codefragment niet weergegeven vanwege beknoptheid.
 }
 ```
 
@@ -94,7 +94,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```java
 @Test
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    // Codefragment wordt vanwege beknoptheid niet weergegeven.
+    // Codefragment niet weergegeven vanwege beknoptheid.
 }
 ```
 
@@ -104,7 +104,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```java
 @Test
 public void resolveFontNames() throws Exception {
-    // Codefragment wordt vanwege beknoptheid niet weergegeven.
+    // Codefragment niet weergegeven vanwege beknoptheid.
 }
 ```
 
@@ -114,14 +114,14 @@ public void resolveFontNames() throws Exception {
 ```java
 @Test
 public void exportTextInputFormFieldAsText() throws Exception {
-    // Codefragment wordt vanwege beknoptheid niet weergegeven.
+    // Codefragment niet weergegeven vanwege beknoptheid.
 }
 ```
 
 ## 11. Conclusie
 In deze zelfstudie hebben we de geavanceerde opties voor het opslaan van HTML-documenten onderzocht die Aspose.Words voor Java biedt. Deze opties geven u nauwkeurige controle over het conversieproces, waardoor u HTML-documenten kunt maken die sterk lijken op de originele Word-documenten.
 
-## 12.Veelgestelde vragen
+## 12. Veelgestelde vragen
 Hier vindt u enkele veelgestelde vragen over het werken met Aspose.Words voor opties voor het opslaan van Java- en HTML-documenten:
 
 ### V1: Hoe kan ik HTML terug naar Word-formaat converteren met Aspose.Words voor Java?

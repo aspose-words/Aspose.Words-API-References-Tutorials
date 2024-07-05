@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## ขั้นตอนที่ 5: บันทึกเอกสารที่แก้ไข
 
- บันทึกเอกสารที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ วัตถุ
+ บันทึกเอกสารที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");

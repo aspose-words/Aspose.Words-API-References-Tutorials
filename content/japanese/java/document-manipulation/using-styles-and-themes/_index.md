@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でのスタイルとテーマの使用
 linktitle: スタイルとテーマの使用
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用してドキュメントの書式設定を強化する方法を学びます。ソース コードの例を含むこの包括的なガイドで、スタイル、テーマなどを詳しく調べてください。
+description: Aspose.Words for Java を使用してドキュメントの書式設定を強化する方法を学びます。ソース コードの例を含むこの包括的なガイドで、スタイル、テーマなどを調べます。
 type: docs
 weight: 20
 url: /ja/java/document-manipulation/using-styles-and-themes/
@@ -10,7 +10,7 @@ url: /ja/java/document-manipulation/using-styles-and-themes/
 
 ## Aspose.Words for Java でのスタイルとテーマの使用の概要
 
-このガイドでは、Aspose.Words for Java でスタイルとテーマを操作して、ドキュメントの書式設定と外観を向上させる方法を説明します。スタイルの取得、スタイルのコピー、テーマの管理、スタイル区切り記号の挿入などのトピックについて説明します。始めましょう！
+このガイドでは、Aspose.Words for Java でスタイルとテーマを操作して、ドキュメントの書式設定と外観を強化する方法について説明します。スタイルの取得、スタイルのコピー、テーマの管理、スタイル セパレーターの挿入などのトピックを取り上げます。さあ、始めましょう!
 
 ## スタイルの取得
 
@@ -40,7 +40,7 @@ for (Style style : styles)
 
 ## スタイルのコピー
 
-あるドキュメントから別のドキュメントにスタイルをコピーするには、`copyStylesFromTemplate`以下に示すような方法:
+ある文書から別の文書にスタイルをコピーするには、`copyStylesFromTemplate`方法は以下のとおりです。
 
 ```java
 @Test
@@ -82,9 +82,9 @@ public void setThemeProperties() throws Exception
 
 これらのスニペットは、フォントや色などのテーマのプロパティを取得および変更する方法を示しています。
 
-## スタイル区切り文字の挿入
+## スタイルセパレータの挿入
 
-スタイル区切り記号は、単一の段落内でさまざまなスタイルを適用する場合に便利です。スタイル区切り文字を挿入する方法の例を次に示します。
+スタイル セパレーターは、1 つの段落内で異なるスタイルを適用する場合に便利です。スタイル セパレーターを挿入する方法の例を次に示します。
 
 ```java
 @Test
@@ -100,18 +100,18 @@ public void insertStyleSeparator() throws Exception
     builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
     builder.write("Heading 1");
     builder.insertStyleSeparator();
-    //別のスタイルのテキストを追加します。
+    //別のスタイルでテキストを追加します。
     builder.getParagraphFormat().setStyleName(paraStyle.getName());
     builder.write("This is text with some other formatting ");
     doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 }
 ```
 
-このコードでは、カスタム段落スタイルを作成し、スタイル区切り文字を挿入して同じ段落内でスタイルを切り替えます。
+このコードでは、カスタム段落スタイルを作成し、スタイルセパレーターを挿入して同じ段落内でスタイルを切り替えます。
 
 ## 結論
 
-このガイドでは、Aspose.Words for Java でのスタイルとテーマの操作の基本について説明しました。スタイルの取得とコピー、テーマの管理、スタイル区切り文字の挿入方法を学び、視覚的に魅力的で適切にフォーマットされたドキュメントを作成しました。これらのテクニックを試して、要件に応じてドキュメントをカスタマイズしてください。
+このガイドでは、Aspose.Words for Java でスタイルとテーマを操作する基本について説明しました。スタイルを取得してコピーする方法、テーマを管理する方法、スタイル セパレーターを挿入して、見た目が美しく、書式設定されたドキュメントを作成する方法を学習しました。これらのテクニックを試して、要件に応じてドキュメントをカスタマイズしてください。
 
 
 ## よくある質問
@@ -124,6 +124,6 @@ public void insertStyleSeparator() throws Exception
 
 テーマ オブジェクトのプロパティを変更することで、テーマのプロパティを設定できます。
 
-### スタイル区切り文字を使用して同じ段落内でスタイルを切り替えるにはどうすればよいですか?
+### スタイルセパレーターを使用して同じ段落内でスタイルを切り替えるにはどうすればよいですか?
 
-スタイル区切り文字を挿入するには、`insertStyleSeparator`の方法`DocumentBuilder`クラス。
+スタイルセパレーターを挿入するには、`insertStyleSeparator`方法の`DocumentBuilder`クラス。

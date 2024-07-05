@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## 2단계: 사용자 정의 속성 추가
- 다음으로 원하는 사용자 정의 속성을 추가합니다. 예를 들어, 값이 "Apose"인 "회사" 속성을 추가하려면`Add` CustomDocumentProperties 컬렉션의 메서드:
+ 다음으로 원하는 사용자 정의 속성을 추가합니다. 예를 들어 값이 "Aspose"인 "회사" 속성을 추가하려면`Add` CustomDocumentProperties 컬렉션의 메서드:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ A: .NET용 Aspose.Words를 사용하여 문서의 사용자 정의 속성을 PDF
 
  인스턴스를 생성합니다.`Document` 수업.
 
- 다음을 사용하여 원하는 사용자 정의 속성을 추가합니다.`CustomDocumentProperties` 수집. 예를 들어`Add` 값이 "Apose"인 "회사" 속성을 추가하는 메서드입니다.
+ 다음을 사용하여 원하는 사용자 정의 속성을 추가합니다.`CustomDocumentProperties` 수집. 예를 들어`Add` 값이 "Aspose"인 "회사" 속성을 추가하는 메서드입니다.
 
  인스턴스를 생성합니다.`PdfSaveOptions` 클래스를 사용하여 사용자 정의 속성을 내보내는 방법을 지정합니다.`CustomPropertiesExport` 재산. 그만큼`PdfCustomPropertiesExport.Standard` 값은 기본 설정에 따라 사용자 정의 속성을 내보냅니다.
 

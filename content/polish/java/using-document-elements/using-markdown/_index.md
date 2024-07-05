@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Określ uporządkowaną listę.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Określ akcent włoski w tekście.
+// Określ podkreślenie kursywy w tekście.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

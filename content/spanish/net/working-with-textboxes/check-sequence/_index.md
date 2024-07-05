@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/working-with-textboxes/check-sequence/
 ---
-Esta guía paso a paso explica cómo verificar la secuencia de cuadros de texto en un documento de Word usando la biblioteca Aspose.Words para .NET. Aprenderá cómo configurar el documento, crear una forma de TextBox, acceder a TextBoxes y verificar su posición en la secuencia.
+Esta guía paso a paso explica cómo verificar la secuencia de cuadros de texto en un documento de Word usando la biblioteca Aspose.Words para .NET. Aprenderá cómo configurar el documento, crear una forma de TextBox, acceder a los TextBox y verificar su posición en la secuencia.
 
 ## Paso 1: configurar el documento y crear una forma de cuadro de texto
 

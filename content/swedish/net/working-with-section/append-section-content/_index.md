@@ -116,7 +116,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ## 3. Vilka är huvudfunktionerna i Aspose.Words för .NET?
 
- Aspose.Words för .NET erbjuder ett brett utbud av funktioner, inklusive skapande av dokument, formatering, konvertering och manipulering. Du kan läsa mer om dess möjligheter i[API dokumentation](https://reference.aspose.com/words/net/).
+ Aspose.Words för .NET erbjuder ett brett utbud av funktioner, inklusive skapande av dokument, formatering, konvertering och manipulering. Du kan läsa mer om dess kapacitet i[API dokumentation](https://reference.aspose.com/words/net/).
 
 ## 4. Hur får jag support för Aspose.Words för .NET?
 

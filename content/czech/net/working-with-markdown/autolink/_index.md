@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-markdown/autolink/
 ---
 
-V tomto příkladu vysvětlíme, jak používat funkci "Autolink" s Aspose.Words pro .NET. Tato funkce umožňuje vkládat hypertextové odkazy do dokumentu automaticky.
+V tomto příkladu vysvětlíme, jak používat funkci "Autolink" s Aspose.Words for .NET. Tato funkce umožňuje vkládat hypertextové odkazy do dokumentu automaticky.
 
 ## Krok 1: Použití generátoru dokumentů
 

@@ -1,8 +1,8 @@
 ---
 title: Laden von Textdateien mit Aspose.Words für Java
 linktitle: Laden von Textdateien mit
-second_title: Aspose.Words Java-Dokumentverarbeitungs-API
-description: Nutzen Sie die Leistungsfähigkeit von Aspose.Words für Java. Erfahren Sie, wie Sie Textdokumente laden, Listen verwalten, mit Leerzeichen umgehen und die Textrichtung steuern.
+second_title: Aspose.Words Java-API zur Dokumentverarbeitung
+description: Entfesseln Sie die Leistungsfähigkeit von Aspose.Words für Java. Erfahren Sie, wie Sie Textdokumente laden, Listen verwalten, Leerzeichen handhaben und die Textrichtung steuern.
 type: docs
 weight: 13
 url: /de/java/document-loading-and-saving/loading-text-files/
@@ -10,7 +10,7 @@ url: /de/java/document-loading-and-saving/loading-text-files/
 
 ## Einführung in das Laden von Textdateien mit Aspose.Words für Java
 
-In dieser Anleitung erfahren Sie, wie Sie Textdateien mit Aspose.Words für Java laden und als Word-Dokumente bearbeiten. Wir behandeln verschiedene Aspekte wie das Erkennen von Listen, den Umgang mit Leerzeichen und das Steuern der Textrichtung.
+In dieser Anleitung erfahren Sie, wie Sie Textdateien mit Aspose.Words für Java laden und als Word-Dokumente bearbeiten. Wir behandeln verschiedene Aspekte wie das Erkennen von Listen, den Umgang mit Leerzeichen und die Steuerung der Textrichtung.
 
 ## Schritt 1: Listen erkennen
 
@@ -18,8 +18,8 @@ Um ein Textdokument zu laden und Listen zu erkennen, können Sie die folgenden S
 
 ```java
 // Erstellen Sie ein Klartextdokument in Form einer Zeichenfolge mit Teilen, die als Listen interpretiert werden können.
-// Beim Laden werden die ersten drei Listen immer von Aspose.Words erkannt.
-// Für sie werden nach dem Laden Listenobjekte erstellt.
+// Beim Laden werden die ersten drei Listen immer von Aspose.Words erkannt,
+// und nach dem Laden werden Listenobjekte für sie erstellt.
 final String TEXT_DOC = "Full stop delimiters:\n" +
         "1. First list item 1\n" +
         "2. First list item 2\n" +
@@ -36,8 +36,8 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-//Die vierte Liste mit Leerzeichen zwischen der Listennummer und dem Inhalt des Listenelements,
-// wird nur dann als Liste erkannt, wenn „DetectNumberingWithWhitespaces“ in einem LoadOptions-Objekt auf true gesetzt ist,
+//Die vierte Liste, mit Leerzeichen zwischen der Listennummer und dem Inhalt des Listenelements,
+// wird nur dann als Liste erkannt, wenn "DetectNumberingWithWhitespaces" in einem LoadOptions-Objekt auf true gesetzt ist,
 // um zu vermeiden, dass Absätze, die mit Zahlen beginnen, fälschlicherweise als Listen erkannt werden.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
 {
@@ -48,9 +48,9 @@ Document doc = new Document(new ByteArrayInputStream(TEXT_DOC.getBytes()), loadO
 doc.save("Your Directory Path" + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
 ```
 
- Dieser Code zeigt, wie man ein Textdokument mit verschiedenen Listenformaten lädt und verwendet`DetectNumberingWithWhitespaces` Option zur korrekten Erkennung von Listen.
+ Dieser Code zeigt, wie man ein Textdokument mit verschiedenen Listenformaten lädt und die`DetectNumberingWithWhitespaces` Option zum korrekten Erkennen von Listen.
 
-## Schritt 2: Umgang mit Leerzeichenoptionen
+## Schritt 2: Umgang mit Leerzeichen-Optionen
 
 Um führende und nachfolgende Leerzeichen beim Laden eines Textdokuments zu steuern, können Sie den folgenden Code verwenden:
 
@@ -70,11 +70,11 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- In diesem Beispiel laden wir ein Textdokument und schneiden führende und nachfolgende Leerzeichen mit ab`TxtLeadingSpacesOptions.TRIM` Und`TxtTrailingSpacesOptions.TRIM`.
+ In diesem Beispiel laden wir ein Textdokument und entfernen führende und nachfolgende Leerzeichen mit`TxtLeadingSpacesOptions.TRIM` Und`TxtTrailingSpacesOptions.TRIM`.
 
 ## Schritt 3: Textrichtung steuern
 
-Um beim Laden eines Textdokuments die Textrichtung anzugeben, können Sie den folgenden Code verwenden:
+Um die Textrichtung beim Laden eines Textdokuments festzulegen, können Sie den folgenden Code verwenden:
 
 ```java
 @Test
@@ -97,8 +97,8 @@ Dieser Code setzt die Dokumentrichtung auf automatische Erkennung (`DocumentDire
 ```java
 public void detectNumberingWithWhitespaces() throws Exception {
 	// Erstellen Sie ein Klartextdokument in Form einer Zeichenfolge mit Teilen, die als Listen interpretiert werden können.
-	// Beim Laden werden die ersten drei Listen immer von Aspose.Words erkannt.
-	// Für sie werden nach dem Laden Listenobjekte erstellt.
+	// Beim Laden werden die ersten drei Listen immer von Aspose.Words erkannt,
+	// und nach dem Laden werden Listenobjekte für sie erstellt.
 	final String TEXT_DOC = "Full stop delimiters:\n" +
 			"1. First list item 1\n" +
 			"2. First list item 2\n" +
@@ -115,8 +115,8 @@ public void detectNumberingWithWhitespaces() throws Exception {
 			"1 Fourth list item 1\n" +
 			"2 Fourth list item 2\n" +
 			"3 Fourth list item 3";
-	// Die vierte Liste mit Leerzeichen zwischen der Listennummer und dem Inhalt des Listenelements,
-	// wird nur dann als Liste erkannt, wenn „DetectNumberingWithWhitespaces“ in einem LoadOptions-Objekt auf true gesetzt ist,
+	// Die vierte Liste, mit Leerzeichen zwischen der Listennummer und dem Inhalt des Listenelements,
+	// wird nur dann als Liste erkannt, wenn "DetectNumberingWithWhitespaces" in einem LoadOptions-Objekt auf true gesetzt ist,
 	// um zu vermeiden, dass Absätze, die mit Zahlen beginnen, fälschlicherweise als Listen erkannt werden.
 	TxtLoadOptions loadOptions = new TxtLoadOptions();
 	{
@@ -156,39 +156,39 @@ public void documentTextDirection() throws Exception {
 
 In diesem Handbuch haben wir untersucht, wie Sie Textdateien mit Aspose.Words für Java laden, Listen erkennen, Leerzeichen verarbeiten und die Textrichtung steuern. Mit diesen Techniken können Sie Textdokumente in Ihren Java-Anwendungen effektiv bearbeiten.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Was ist Aspose.Words für Java?
 
-Aspose.Words für Java ist eine leistungsstarke Dokumentverarbeitungsbibliothek, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert in Java-Anwendungen zu erstellen, zu bearbeiten und zu konvertieren. Es bietet zahlreiche Funktionen für die Arbeit mit Text, Tabellen, Bildern und anderen Dokumentelementen.
+Aspose.Words für Java ist eine leistungsstarke Dokumentverarbeitungsbibliothek, mit der Entwickler Word-Dokumente programmgesteuert in Java-Anwendungen erstellen, bearbeiten und konvertieren können. Es bietet eine breite Palette von Funktionen für die Arbeit mit Text, Tabellen, Bildern und anderen Dokumentelementen.
 
 ### Wie kann ich mit Aspose.Words für Java beginnen?
 
 Um mit Aspose.Words für Java zu beginnen, befolgen Sie diese Schritte:
-1. Laden Sie die Aspose.Words für Java-Bibliothek herunter und installieren Sie sie.
-2.  Weitere Informationen finden Sie in der Dokumentation unter[Aspose.Words für Java API-Referenz](https://reference.aspose.com/words/java/)Ausführliche Informationen und Beispiele finden Sie hier.
-3. Erkunden Sie den Beispielcode und die Tutorials, um zu erfahren, wie Sie die Bibliothek effektiv nutzen können.
+1. Laden Sie die Aspose.Words-Bibliothek für Java herunter und installieren Sie sie.
+2.  Weitere Informationen finden Sie in der Dokumentation unter[Aspose.Words für Java API-Referenz](https://reference.aspose.com/words/java/)für detaillierte Informationen und Beispiele.
+3. Sehen Sie sich den Beispielcode und die Tutorials an, um zu erfahren, wie Sie die Bibliothek effektiv nutzen können.
 
 ### Wie lade ich ein Textdokument mit Aspose.Words für Java?
 
- Um ein Textdokument mit Aspose.Words für Java zu laden, können Sie Folgendes verwenden`TxtLoadOptions` Klasse und die`Document` Klasse. Stellen Sie sicher, dass Sie bei Bedarf die entsprechenden Optionen für den Umgang mit Leerzeichen und die Textrichtung angeben. Ein detailliertes Beispiel finden Sie in der Schritt-für-Schritt-Anleitung in diesem Artikel.
+ Um ein Textdokument mit Aspose.Words für Java zu laden, können Sie den`TxtLoadOptions` Klasse und die`Document` Klasse. Stellen Sie sicher, dass Sie bei Bedarf die entsprechenden Optionen für die Handhabung von Leerzeichen und Textrichtung angeben. Ein ausführliches Beispiel finden Sie in der Schritt-für-Schritt-Anleitung in diesem Artikel.
 
 ### Kann ich ein geladenes Textdokument in andere Formate konvertieren?
 
- Ja, mit Aspose.Words für Java können Sie ein geladenes Textdokument in verschiedene Formate konvertieren, darunter DOCX, PDF und mehr. Du kannst den ... benutzen`Document` Klasse, um Konvertierungen durchzuführen. Konvertierungsbeispiele finden Sie in der Dokumentation.
+ Ja, Aspose.Words für Java ermöglicht es Ihnen, ein geladenes Textdokument in verschiedene Formate zu konvertieren, darunter DOCX, PDF und mehr. Sie können das`Document` Klasse zum Durchführen von Konvertierungen. Spezifische Konvertierungsbeispiele finden Sie in der Dokumentation.
 
 ### Wie gehe ich mit Leerzeichen in geladenen Textdokumenten um?
 
- Mit können Sie steuern, wie führende und nachfolgende Leerzeichen in geladenen Textdokumenten behandelt werden`TxtLoadOptions` . Optionen wie`TxtLeadingSpacesOptions` Und`TxtTrailingSpacesOptions`ermöglichen es Ihnen, Räume nach Bedarf zu kürzen oder zu erhalten. Ein Beispiel finden Sie im Abschnitt „Optionen zum Umgang mit Leerzeichen“ in diesem Handbuch.
+ Sie können die Behandlung führender und nachfolgender Leerzeichen in geladenen Textdokumenten steuern mit`TxtLoadOptions` Optionen wie`TxtLeadingSpacesOptions` Und`TxtTrailingSpacesOptions`ermöglicht es Ihnen, Leerzeichen nach Bedarf zu kürzen oder beizubehalten. Ein Beispiel finden Sie im Abschnitt „Behandlung von Leerzeichenoptionen“ in diesem Handbuch.
 
 ### Welche Bedeutung hat die Textrichtung in Aspose.Words für Java?
 
-Die Textrichtung ist für Dokumente mit gemischten Schriftarten oder Sprachen, wie z. B. Hebräisch oder Arabisch, von entscheidender Bedeutung. Aspose.Words für Java bietet Optionen zum Festlegen der Textrichtung und gewährleistet so die ordnungsgemäße Darstellung und Formatierung von Text in diesen Sprachen. Der Abschnitt „Steuern der Textrichtung“ in diesem Handbuch zeigt, wie Sie die Textrichtung festlegen.
+Die Textrichtung ist für Dokumente mit gemischten Schriften oder Sprachen wie Hebräisch oder Arabisch von entscheidender Bedeutung. Aspose.Words für Java bietet Optionen zum Festlegen der Textrichtung, um eine korrekte Darstellung und Formatierung des Textes in diesen Sprachen sicherzustellen. Der Abschnitt „Steuern der Textrichtung“ in diesem Handbuch zeigt, wie Sie die Textrichtung festlegen.
 
-### Wo finde ich weitere Ressourcen und Unterstützung für Aspose.Words für Java?
+### Wo finde ich weitere Ressourcen und Support für Aspose.Words für Java?
 
- Weitere Ressourcen, Dokumentation und Support finden Sie unter[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/). Sie können auch an den Aspose.Words-Community-Foren teilnehmen oder sich an den Aspose-Support wenden, um Hilfe bei bestimmten Problemen oder Anfragen zu erhalten.
+ Weitere Ressourcen, Dokumentation und Support finden Sie im[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/). Sie können auch an den Aspose.Words-Community-Foren teilnehmen oder sich bei bestimmten Problemen oder Anfragen an den Aspose-Support wenden, wenn Sie Hilfe benötigen.
 
 ### Ist Aspose.Words für Java für kommerzielle Projekte geeignet?
 
-Ja, Aspose.Words für Java eignet sich sowohl für persönliche als auch für kommerzielle Projekte. Es bietet Lizenzoptionen für verschiedene Nutzungsszenarien. Lesen Sie unbedingt die Lizenzbedingungen und Preise auf der Aspose-Website, um die geeignete Lizenz für Ihr Projekt auszuwählen.
+Ja, Aspose.Words für Java eignet sich sowohl für private als auch für kommerzielle Projekte. Es bietet Lizenzierungsoptionen für verschiedene Nutzungsszenarien. Lesen Sie unbedingt die Lizenzbedingungen und Preise auf der Aspose-Website, um die passende Lizenz für Ihr Projekt auszuwählen.

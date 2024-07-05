@@ -1,24 +1,24 @@
 ---
 title: Horizontale Zusammenführung
 linktitle: Horizontale Zusammenführung
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Zellen in einer Word-Tabelle horizontal zusammenführen.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/horizontal-merge/
 ---
 
-In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Zellen in einer Tabelle in einem Word-Dokument horizontal zusammenführen. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials werden Sie in der Lage sein, Zellen in Ihren Word-Tabellen programmgesteuert horizontal zusammenzuführen.
+In diesem Tutorial lernen wir, wie man Zellen in einer Tabelle in einem Word-Dokument mit Aspose.Words für .NET horizontal zusammenführt. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials können Sie Zellen in Ihren Word-Tabellen programmgesteuert horizontal zusammenführen.
 
-## Schritt 1: Projekteinrichtung
+## Schritt 1: Projekt-Setup
 1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
-2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
+2. Fügen Sie einen Verweis auf die Aspose.Words-Bibliothek für .NET hinzu.
 
-## Schritt 2: Erstellen des Dokuments und Initialisieren des Dokumentengenerators
-Um die Textverarbeitung mit der Tabelle und den Zellen zu starten, müssen wir ein neues Dokument erstellen und den Dokumentgenerator initialisieren. Folge diesen Schritten:
+## Schritt 2: Erstellen des Dokuments und Initialisieren des Dokumentgenerators
+Um Words Processing mit der Tabelle und den Zellen zu starten, müssen wir ein neues Dokument erstellen und den Dokumentgenerator initialisieren. Folgen Sie diesen Schritten:
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Erstellen Sie das Dokument und initialisieren Sie den Dokumentgenerator
@@ -26,9 +26,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Stellen Sie sicher, dass Sie „IHR DOKUMENTENVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis ersetzen.
+Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ unbedingt durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
 
-## Schritt 3: Aufbau der Tabelle mit horizontaler Zellenverschmelzung
+## Schritt 3: Erstellen der Tabelle mit horizontaler Zellverbindung
 Als Nächstes erstellen wir die Tabelle und wenden die horizontale Zellenzusammenführung mithilfe der von Aspose.Words für .NET bereitgestellten Eigenschaften an. Verwenden Sie den folgenden Code:
 
 ```csharp
@@ -49,10 +49,10 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Hier verwenden wir den Document Builder, um die Tabelle zu erstellen und die Eigenschaften für die horizontale Zusammenführung der Zellen festzulegen. Wir benutzen das`HorizontalMerge` Eigentum der`CellFormat` -Objekt, um den Typ der horizontalen Zusammenführung anzugeben, der auf jede Zelle angewendet werden soll. Benutzen`CellMerge.First` Wir verschmelzen die erste Zelle mit der nächsten, während wir sie verwenden`CellMerge.Previous` Wir verschmelzen die aktuelle Zelle mit der vorherigen Zelle.`CellMerge.None` gibt an, dass die Zelle nicht zusammengeführt werden soll.
+ Hier verwenden wir den Dokumentgenerator, um die Tabelle zu erstellen und die Eigenschaften für die horizontale Zellzusammenführung festzulegen. Wir verwenden den`HorizontalMerge` Eigentum der`CellFormat` Objekt, um den Typ der horizontalen Zusammenführung anzugeben, der auf jede Zelle angewendet werden soll.`CellMerge.First` Wir verschmelzen die erste Zelle mit der nächsten, indem wir`CellMerge.Previous` wir führen die aktuelle Zelle mit der vorherigen Zelle zusammen.`CellMerge.None` gibt an, dass die Zelle nicht zusammengeführt werden soll.
 
 ## Schritt 4: Speichern des geänderten Dokuments
-Schließlich müssen wir das geänderte Dokument mit horizontal zusammengeführten Zellen speichern. Verwenden Sie den folgenden Code:
+Zum Schluss müssen wir das geänderte Dokument mit horizontal zusammengeführten Zellen speichern. Verwenden Sie den folgenden Code:
 
 ```csharp
 doc.Save(data
@@ -60,12 +60,12 @@ doc.Save(data
 Dir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabedokument angeben.
+Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument anzugeben.
 
 ### Beispielquellcode für Horizontal Merge mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -88,4 +88,4 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Zellen in einer Tabelle in einem Word-Dokument horizontal zusammenführt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie die horizontale Zellenzusammenführung in Ihren Word-Tabellen programmgesteuert anwenden. Mit dieser Funktion können Sie komplexere Tabellenlayouts erstellen und Ihre Daten besser organisieren.
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Zellen in einer Tabelle in einem Word-Dokument horizontal zusammenführt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie die horizontale Zellenzusammenführung programmgesteuert in Ihren Word-Tabellen anwenden. Mit dieser Funktion können Sie komplexere Tabellenlayouts erstellen und Ihre Daten besser organisieren.

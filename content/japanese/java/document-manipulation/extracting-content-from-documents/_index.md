@@ -1,29 +1,29 @@
 ---
-title: Aspose.Words for Java でのドキュメントからのコンテンツの抽出
-linktitle: ドキュメントからのコンテンツの抽出
+title: Aspose.Words for Java でドキュメントからコンテンツを抽出する
+linktitle: ドキュメントからコンテンツを抽出する
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用してドキュメントからコンテンツを簡単に抽出する方法を学びます。ステップバイステップのガイドとコードサンプルにより、プロセスが簡素化されます。
+description: Aspose.Words for Java を使用してドキュメントからコンテンツを簡単に抽出する方法を学びます。ステップバイステップのガイドとコード サンプルにより、プロセスが簡素化されます。
 type: docs
 weight: 13
 url: /ja/java/document-manipulation/extracting-content-from-documents/
 ---
 
-## Aspose.Words for Java でのドキュメントからのコンテンツの抽出の概要
+## Aspose.Words for Java でのドキュメントからのコンテンツ抽出の概要
 
-ドキュメント処理の世界では、ドキュメントからコンテンツを抽出することが一般的な要件です。テキスト、表、画像、または特定の文書要素を抽出する必要がある場合でも、Aspose.Words for Java はこのタスクを簡単にする強力なツールを提供します。この包括的なガイドでは、Aspose.Words for Java を使用してドキュメントからコンテンツを抽出するプロセスについて説明します。 
+ドキュメント処理の世界では、ドキュメントからコンテンツを抽出することは一般的な要件です。テキスト、表、画像、または特定のドキュメント要素を抽出する必要がある場合でも、Aspose.Words for Java は、このタスクを簡単に実行できる強力なツールを提供します。この包括的なガイドでは、Aspose.Words for Java を使用してドキュメントからコンテンツを抽出するプロセスを順を追って説明します。 
 
 ## 前提条件
 
-抽出プロセスに入る前に、次の前提条件が満たされていることを確認してください。
+抽出プロセスに進む前に、次の前提条件が満たされていることを確認してください。
 
-1.  Aspose.Words for Java: Java 開発環境に Aspose.Words for Java がインストールされ、セットアップされている必要があります。からダウンロードできます[ここ](https://releases.aspose.com/words/java/).
+1.  Aspose.Words for Java: Java開発環境にAspose.Words for Javaをインストールしてセットアップしておく必要があります。ダウンロードはこちらからできます。[ここ](https://releases.aspose.com/words/java/).
 
-2. コンテンツを抽出するドキュメント: このガイドでは、「Extract content.docx」という名前のサンプル ドキュメントを使用します。同様の文書を抽出できるように準備しておいてください。
+2. コンテンツを抽出するドキュメント: このガイドでは、「Extract content.docx」というサンプル ドキュメントを使用します。抽出用に同様のドキュメントを用意しておいてください。
 
-## ブロックレベルのノード間でのコンテンツの抽出
+## ブロックレベルノード間のコンテンツの抽出
 
 ```java
-//ブロックレベルのノード間でコンテンツを抽出するための Java コード サンプル
+//ブロックレベルノード間のコンテンツを抽出するための Java コードサンプル
 Document doc = new Document("Your Directory Path" + "Extract content.docx");
 Paragraph startPara = (Paragraph) doc.getLastSection().getChild(NodeType.PARAGRAPH, 2, true);
 Table endTable = (Table) doc.getLastSection().getChild(NodeType.TABLE, 0, true);
@@ -109,7 +109,7 @@ System.out.println(node.toString(SaveFormat.TEXT));
 ## DocumentVisitor を使用したコンテンツの抽出
 
 ```java
-//DocumentVisitor を使用してコンテンツを抽出するための Java コード サンプル
+//DocumentVisitor を使用してコンテンツを抽出する Java コード サンプル
 Document doc = new Document("Your Directory Path" + "Absolute position tab.docx");
 MyDocToTxtWriter myConverter = new MyDocToTxtWriter();
 doc.accept(myConverter);
@@ -119,7 +119,7 @@ System.out.println(myConverter.getText());
 ## フィールドを使用したコンテンツの抽出
 
 ```java
-//Field を使用してコンテンツを抽出するための Java コード サンプル
+//フィールドを使用してコンテンツを抽出するための Java コード サンプル
 Document doc = new Document("Your Directory Path" + "Extract content.docx");
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.moveToMergeField("Fullname", false, false);
@@ -150,10 +150,10 @@ for (Field field : doc.getRange().getFields()) {
 }
 ```
 
-## テキストのみを抽出する
+## テキストのみの抽出
 
 ```java
-//テキストのみを抽出する Java コード サンプル
+//テキストのみを抽出するための Java コード サンプル
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertField("MERGEFIELD Field");
@@ -161,7 +161,7 @@ System.out.println("GetText() Result: " + doc.getText());
 System.out.println("ToString() Result: " + doc.toString(SaveFormat.TEXT));
 ```
 
-## スタイルに基づいたコンテンツの抽出
+## スタイルに基づいてコンテンツを抽出する
 
 ```java
 //スタイルに基づいてコンテンツを抽出するための Java コード サンプル
@@ -232,26 +232,26 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ## 結論
 
-おめでとう！ Aspose.Words for Java を使用してドキュメントからコンテンツを抽出する方法を学習しました。このガイドでは、ブロックレベルのノード間のコンテンツ、ブックマーク、コメント範囲、段落などを含むさまざまな抽出手法について説明しました。これで、Java アプリケーションでドキュメント コンテンツの抽出を効率的に処理する準備が整いました。
+おめでとうございます。Aspose.Words for Java を使用してドキュメントからコンテンツを抽出する方法を学習しました。このガイドでは、ブロック レベル ノード、ブックマーク、コメント範囲、段落などの間のコンテンツを含むさまざまな抽出手法について説明しました。これで、Java アプリケーションでドキュメント コンテンツの抽出を効率的に処理できるようになりました。
 
 ## よくある質問
 
 ### 特定のドキュメントセクションからコンテンツを抽出するにはどうすればよいですか?
 
-特定のドキュメント セクションからコンテンツを抽出するには、セクションの開始点と終了点を特定し、適切な Aspose.Words for Java メソッドを使用して、セクション間のコンテンツを抽出します。
+特定のドキュメント セクションからコンテンツを抽出するには、セクションの開始点と終了点を識別し、適切な Aspose.Words for Java メソッドを使用してそれらの間のコンテンツを抽出します。
 
 ### パスワードで保護されたドキュメントからコンテンツを抽出できますか?
 
-はい、Aspose.Words for Java は、パスワードで保護されたドキュメントからコンテンツを抽出する機能を提供します。ドキュメントを開くときにパスワードを入力するには、`Document`クラスコンストラクター。
+はい、Aspose.Words for Javaには、パスワードで保護されたドキュメントからコンテンツを抽出する機能があります。`Document`クラスコンストラクター。
 
-### コンテンツを抽出して、プレーン テキストや HTML などのさまざまな形式で保存するにはどうすればよいですか?
+### コンテンツを抽出して、プレーンテキストや HTML などのさまざまな形式で保存するにはどうすればよいですか?
 
- Aspose.Words for Java を使用して、ドキュメントからコンテンツを抽出し、さまざまな形式で保存できます。コンテンツを抽出した後、`Document`クラスメソッドを使用して、プレーンテキスト、HTML、その他の形式で保存します。
+ Aspose.Words for Javaを使用すると、ドキュメントからコンテンツを抽出し、さまざまな形式で保存できます。コンテンツを抽出した後は、`Document`クラス メソッドを使用して、プレーン テキスト、HTML などの形式で保存します。
 
-### 表や画像などの特定の文書要素からコンテンツを抽出する方法はありますか?
+### 表や画像などの特定のドキュメント要素からコンテンツを抽出する方法はありますか?
 
 はい、Aspose.Words for Java を使用して、表や画像などの特定のドキュメント要素からコンテンツを抽出できます。抽出する要素を特定し、適切な方法を使用してそのコンテンツを抽出します。
 
-### Java アプリケーションのコンテンツ抽出プロセスを自動化するにはどうすればよいですか?
+### Java アプリケーションでコンテンツ抽出プロセスを自動化するにはどうすればよいですか?
 
-Java アプリケーションでのコンテンツ抽出プロセスを自動化するには、このガイドで説明されている手法に基づいてカスタム コードを作成できます。複数のドキュメントを反復処理し、必要に応じてコンテンツを抽出するロジックを実装することもできます。
+Java アプリケーションでコンテンツ抽出プロセスを自動化するには、このガイドで説明されている手法に基づいてカスタム コードを作成します。複数のドキュメントを反復処理し、必要に応じてコンテンツを抽出するロジックを実装することもできます。

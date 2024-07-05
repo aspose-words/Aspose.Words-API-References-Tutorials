@@ -1,17 +1,17 @@
 ---
-title: Ole-Objekt mit Ole-Paket in Word einfügen
-linktitle: Ole-Objekt mit Ole-Paket in Word einfügen
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+title: OLE-Objekt mit OLE-Paket in Word einfügen
+linktitle: OLE-Objekt mit OLE-Paket in Word einfügen
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt mit einem OLE-Paket in ein Dokument einfügen.
 type: docs
 weight: 10
 url: /de/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
 
-Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der zeigt, wie Sie mithilfe von Aspose.Words für .NET ein OLE-Objekt mit einem OLE-Paket in Word einfügen.
+Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, die zeigt, wie mithilfe von Aspose.Words für .NET ein OLE-Objekt mit einem OLE-Paket in Word eingefügt wird.
 
 ## Schritt 1: Importieren Sie die erforderlichen Referenzen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie die erforderlichen Referenzen zur Verwendung von Aspose.Words für .NET in Ihr Projekt importiert haben. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
+Stellen Sie vor dem Beginn sicher, dass Sie die erforderlichen Referenzen importiert haben, um Aspose.Words für .NET in Ihrem Projekt zu verwenden. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
 
 ```csharp
 using Aspose.Words;
@@ -19,16 +19,16 @@ using Aspose.Words.Drawing;
 using System.IO;
 ```
 
-## Schritt 2: Erstellen Sie ein neues Dokument und einen Dokumentengenerator
- In diesem Schritt erstellen wir ein neues Dokument mit`Document` Klasse und einen Dokumentenersteller, der die verwendet`DocumentBuilder` Klasse.
+## Schritt 2: Neues Dokument und Dokumentgenerator erstellen
+ In diesem Schritt erstellen wir ein neues Dokument mit dem`Document` Klasse und einen Dokumentgenerator mit der`DocumentBuilder` Klasse.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 3: Fügen Sie ein OLE-Objekt mit einem OLE-Paket ein
- Nutzen Sie den Dokumentengenerator`InsertOleObject` Methode zum Einfügen eines OLE-Objekts mit einem OLE-Paket in das Dokument. Geben Sie den Datenstrom, den Objekttyp, die Anzeigeoptionen und andere notwendige Einstellungen an.
+## Schritt 3: Einfügen eines OLE-Objekts mit einem OLE-Paket
+ Nutzen Sie den Dokumentgenerator`InsertOleObject` Methode, um ein OLE-Objekt mit einem OLE-Paket in das Dokument einzufügen. Geben Sie den Datenstrom, den Objekttyp, die Anzeigeoptionen und andere erforderliche Einstellungen an.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -42,7 +42,7 @@ using (Stream stream = new MemoryStream(bs))
 ```
 
 ## Schritt 4: Speichern Sie das Dokument
- Verwenden Sie das Dokument`Save` Methode zum Speichern des Dokuments in einer Datei.
+ Verwenden Sie die`Save` Methode, um das Dokument in einer Datei zu speichern.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
@@ -66,17 +66,17 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-Dies ist ein vollständiges Codebeispiel zum Einfügen eines OLE-Objekts mit einem OLE-Paket mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die zuvor beschriebenen Schritte befolgen, um diesen Code in Ihr Projekt zu integrieren.
+Dies ist ein vollständiges Codebeispiel zum Einfügen eines OLE-Objekts mit einem OLE-Paket mit Aspose.Words für .NET. Achten Sie darauf, die erforderlichen Referenzen zu importieren, und befolgen Sie die zuvor beschriebenen Schritte, um diesen Code in Ihr Projekt zu integrieren.
 
 ## Abschluss
 
-Abschließend haben wir eine Schritt-für-Schritt-Anleitung zum Einfügen eines OLE-Objekts in ein Word-Dokument mit einem OLE-Paket mithilfe von Aspose.Words für .NET durchlaufen.
+Abschließend haben wir eine Schritt-für-Schritt-Anleitung zum Einfügen eines OLE-Objekts in ein Word-Dokument mit einem OLE-Paket unter Verwendung von Aspose.Words für .NET durchgearbeitet.
 
-Wenn Sie diese Schritte befolgen, können Sie mit Aspose.Words für .NET erfolgreich OLE-Objekte mit OLE-Paketen in Ihre Word-Dokumente einfügen. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die Anweisungen sorgfältig befolgen, um die gewünschten Ergebnisse zu erzielen.
+Wenn Sie diese Schritte befolgen, können Sie mithilfe von Aspose.Words für .NET erfolgreich OLE-Objekte mit OLE-Paketen in Ihre Word-Dokumente einfügen. Achten Sie darauf, die erforderlichen Referenzen zu importieren, und befolgen Sie die Anweisungen sorgfältig, um die gewünschten Ergebnisse zu erzielen.
 
-### FAQs zum Einfügen eines Ole-Objekts in Word mit einem Ole-Paket
+### FAQs zum Einfügen eines OLE-Objekts in Word mit einem OLE-Paket
 
-#### F: Welche Anmeldeinformationen muss ich importieren, um Aspose.Words für .NET verwenden zu können?
+#### F: Welche Anmeldeinformationen muss ich importieren, um Aspose.Words für .NET zu verwenden?
 
 A: Um Aspose.Words für .NET zu verwenden, müssen Sie die folgenden Referenzen importieren:
 
@@ -86,18 +86,18 @@ using Aspose.Words.Drawing;
 using System.IO;
 ```
 
-#### F: Wie erstelle ich ein neues Dokument und einen Dokumentengenerator?
+#### F: Wie erstelle ich ein neues Dokument und einen Dokumentgenerator?
 
- A: Sie können mit dem ein neues Dokument erstellen`Document` Klasse und einen Dokumentenersteller, der die verwendet`DocumentBuilder` Klasse, wie unten gezeigt:
+ A: Sie können ein neues Dokument erstellen, indem Sie`Document` Klasse und einen Dokumentgenerator mit der`DocumentBuilder` Klasse, wie unten gezeigt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-#### F: Wie füge ich ein OLE-Objekt mit einem OLE-Paket in das Dokument ein?
+#### F: Wie fügt man ein OLE-Objekt mit einem OLE-Paket in das Dokument ein?
 
- A: Benutzen Sie die`InsertOleObject`Methode des Document Builders (`DocumentBuilder`), um ein OLE-Objekt mit einem OLE-Paket in das Dokument einzufügen. Geben Sie den Datenstrom, den Objekttyp, die Anzeigeoptionen und andere notwendige Einstellungen an. Hier ist ein Beispiel :
+ A: Verwenden Sie die`InsertOleObject`Methode des Dokument-Builders (`DocumentBuilder`), um ein OLE-Objekt mit einem OLE-Paket in das Dokument einzufügen. Geben Sie den Datenstrom, den Objekttyp, die Anzeigeoptionen und andere erforderliche Einstellungen an. Hier ist ein Beispiel:
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,15 +112,15 @@ using (Stream stream = new MemoryStream(bs))
 
 #### F: Wie speichere ich das Dokument?
 
- A: Verwenden Sie das Dokument`Save` Methode zum Speichern des Dokuments in einer Datei. Hier ist ein Beispiel :
+ A: Verwenden Sie das Dokument`Save` Methode, um das Dokument in einer Datei zu speichern. Hier ist ein Beispiel:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-#### F: Können Sie ein vollständiges Beispiel für das Einfügen eines OLE-Objekts in ein OLE-Paket mit Aspose.Words für .NET bereitstellen?
+#### F: Können Sie ein vollständiges Beispiel für das Einfügen eines OLE-Objekts mit einem OLE-Paket mit Aspose.Words für .NET bereitstellen?
 
-A: Hier ist ein vollständiger Beispielcode zum Einfügen eines OLE-Objekts mit einem OLE-Paket mithilfe von Aspose.Words für .NET. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die zuvor beschriebenen Schritte befolgen, um diesen Code in Ihr Projekt zu integrieren:
+A: Hier ist ein vollständiger Beispielcode zum Einfügen eines OLE-Objekts mit einem OLE-Paket unter Verwendung von Aspose.Words für .NET. Achten Sie darauf, die erforderlichen Referenzen zu importieren und befolgen Sie die zuvor beschriebenen Schritte, um diesen Code in Ihr Projekt zu integrieren:
 
 ```csharp
 Document doc = new Document();
@@ -138,4 +138,4 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-Damit ist unser Tutorial zum Einfügen eines OLE-Objekts mit einem OLE-Paket in ein Word-Dokument mit Aspose.Words für .NET abgeschlossen. Importieren Sie gerne die notwendigen Referenzen und befolgen Sie die beschriebenen Schritte, um diesen Code in Ihr Projekt zu integrieren. Wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.
+Damit ist unser Tutorial zum Einfügen eines OLE-Objekts mit einem OLE-Paket in ein Word-Dokument mithilfe von Aspose.Words für .NET abgeschlossen. Importieren Sie die erforderlichen Referenzen und befolgen Sie die beschriebenen Schritte, um diesen Code in Ihr Projekt zu integrieren. Wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.

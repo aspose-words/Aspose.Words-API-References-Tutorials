@@ -134,7 +134,7 @@ När du hanterar stora dokument är det viktigt att överväga prestandaoptimeri
 
 den här guiden har vi utforskat hur du enkelt och effektivt delar upp dokument med Aspose.Words för Java. Genom att dela upp stora dokument i mindre, mer hanterbara delar kan utvecklare arbeta med specifika avsnitt och förenkla dokumentbearbetningsuppgifter. Aspose.Words för Java erbjuder olika metoder för att dela upp dokument baserat på sidor, stycken, rubriker och avsnitt, vilket ger utvecklare flexibiliteten att skräddarsy uppdelningsprocessen efter deras specifika behov.
 
-## 12.Vanliga frågor
+## 12. Vanliga frågor
 
 ### Q1. Kan Aspose.Words för Java dela upp dokument i olika format som DOC och DOCX?
 

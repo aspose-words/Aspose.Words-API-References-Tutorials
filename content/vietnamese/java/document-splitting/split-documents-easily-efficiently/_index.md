@@ -134,7 +134,7 @@ Khi xử lý các tài liệu lớn, điều cần thiết là phải xem xét t
 
 Trong hướng dẫn này, chúng tôi đã khám phá cách phân chia tài liệu dễ dàng và hiệu quả bằng cách sử dụng Aspose.Words cho Java. Bằng cách chia các tài liệu lớn thành các phần nhỏ hơn, dễ quản lý hơn, nhà phát triển có thể làm việc với các phần cụ thể và đơn giản hóa các tác vụ xử lý tài liệu. Aspose.Words for Java cung cấp nhiều phương pháp khác nhau để phân chia tài liệu dựa trên các trang, đoạn văn, tiêu đề và phần, cung cấp cho các nhà phát triển sự linh hoạt để điều chỉnh quy trình phân tách theo nhu cầu cụ thể của họ.
 
-## 12.Câu hỏi thường gặp
+## 12. Câu hỏi thường gặp
 
 ### Q1. Aspose.Words cho Java có thể phân chia các tài liệu có định dạng khác nhau như DOC và DOCX không?
 

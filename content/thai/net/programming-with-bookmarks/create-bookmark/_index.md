@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 
 #### ถาม: จะสร้างเอกสารใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: หากต้องการสร้างเอกสารใน Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`Document` ชั้นเรียน นี่คือโค้ดตัวอย่าง:
+ ตอบ: หากต้องการสร้างเอกสารใน Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`Document` ระดับ. นี่คือโค้ดตัวอย่าง:
 
 ```csharp
 Document doc = new Document();

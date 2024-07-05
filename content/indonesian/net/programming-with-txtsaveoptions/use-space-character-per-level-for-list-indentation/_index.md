@@ -11,7 +11,7 @@ Aspose.Words untuk .NET adalah perpustakaan yang kuat untuk membuat, mengedit, d
 
 ## Memahami perpustakaan Aspose.Words
 
-Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fungsi untuk membuat, memodifikasi dan memanipulasi dokumen Word, termasuk pengelolaan daftar dan indentasi.
+Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fungsi untuk membuat, memodifikasi dan memanipulasi dokumen Word, termasuk pengelolaan daftar dan indentasi.
 
 ## Membuat dokumen dan menambahkan konten
 
@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Dalam contoh ini, kita membuat dokumen baru dan menggunakan DocumentBuilder untuk menambahkan teks dan membuat daftar dengan tiga tingkat indentasi. Kami telah menambahkan tiga item ke daftar, dengan setiap item menunjukkan level tambahan.
+Dalam contoh ini, kita membuat dokumen baru dan menggunakan DocumentBuilder untuk menambahkan teks dan membuat daftar dengan tiga tingkat indentasi. Kami telah menambahkan tiga item ke dalam daftar, dengan masing-masing item diindentasi pada level tambahan.
 
 ## Menggunakan satu karakter spasi per level untuk lekukan daftar
 

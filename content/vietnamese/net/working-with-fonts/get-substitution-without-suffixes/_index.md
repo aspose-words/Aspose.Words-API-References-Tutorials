@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Bước 5: Tạo lớp xử lý cảnh báo
 
-Để xử lý cảnh báo một cách hiệu quả, hãy tạo một lớp tùy chỉnh triển khai`IWarningCallback` giao diện. Lớp này sẽ ghi lại và ghi lại mọi cảnh báo thay thế phông chữ.
+ Để xử lý cảnh báo một cách hiệu quả, hãy tạo một lớp tùy chỉnh triển khai`IWarningCallback` giao diện. Lớp này sẽ ghi lại và ghi lại mọi cảnh báo thay thế phông chữ.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Bây giờ bạn đã thành thạo quy trình xử lý việc thay thế phông
 
 ### Câu hỏi 1: Làm cách nào tôi có thể sử dụng phông chữ từ nhiều thư mục tùy chỉnh?
 
- Bạn có thể thêm nhiều`FolderFontSource` các trường hợp để`fontSources` liệt kê và cập nhật các nguồn phông chữ tương ứng.
+ Bạn có thể thêm nhiều`FolderFontSource` các trường hợp để`fontSources`liệt kê và cập nhật các nguồn phông chữ tương ứng.
 
 ### Câu hỏi 2: Tôi có thể tải xuống bản dùng thử miễn phí Aspose.Words cho .NET ở đâu?
 

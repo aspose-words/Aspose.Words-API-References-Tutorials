@@ -59,13 +59,13 @@ public class DocumentMerger {
 
 合併文件時，可能會出現來源文件的樣式和格式衝突的情況。 Aspose.Words for Java 提供了幾種匯入格式模式來處理此類情況：
 
-- `ImportFormatMode.KEEP_SOURCE_FORMATTING`: 
+- `ImportFormatMode.KEEP_SOURCE_FORMATTING`： 
 保留來源文件的格式。
 
-- `ImportFormatMode.USE_DESTINATION_STYLES`: 
+- `ImportFormatMode.USE_DESTINATION_STYLES`： 
 套用目標文檔的樣式。
 
-- `ImportFormatMode.KEEP_DIFFERENT_STYLES`: 
+- `ImportFormatMode.KEEP_DIFFERENT_STYLES`： 
 保留來源文件和目標文件之間不同的樣式。
 
 根據您的合併需求選擇合適的匯入格式模式。
@@ -101,13 +101,13 @@ public class DocumentMerger {
 
 有時，有必要在合併的文檔之間插入分頁符號或分節符號以保持正確的文檔結構。 Aspose.Words 提供了在合併期間插入分隔符號的選項：
 
-- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`:
+- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`：
 合併文檔，沒有任何中斷。
 
-- `doc1.appendDocument(doc2, ImportFormatMode.USE_DESTINATION_STYLES);`: 
+- `doc1.appendDocument(doc2, ImportFormatMode.USE_DESTINATION_STYLES);`： 
 在文件之間插入連續分隔符號。
 
-- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_DIFFERENT_STYLES);`: 
+- `doc1.appendDocument(doc2, ImportFormatMode.KEEP_DIFFERENT_STYLES);`： 
 當文件之間的樣式不同時插入分頁符號。
 
 根據您的特定要求選擇合適的方法。
@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words for Java 讓 Java 開發人員能夠輕鬆合併 Word 文件。透過遵循本文中的逐步指南，現在可以輕鬆合併文件、處理格式、插入分隔符號和管理衝突。借助 Aspose.Words for Java，文件合併成為一個無縫且自動化的過程，節省了寶貴的時間和精力。
 
-## 11.常見問題解答 
+## 11. 常見問題解答 
 
 ### 我可以合併不同格式和樣式的文件嗎？
 

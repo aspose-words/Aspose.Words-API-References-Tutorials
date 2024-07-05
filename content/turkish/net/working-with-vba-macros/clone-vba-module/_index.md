@@ -81,7 +81,7 @@ C: Bir Word belgesinden VBA modülünü klonlamadan önce, C# programlama dili h
 
 #### S: Koddaki belge dizini nasıl ayarlanır?
 
- C: Sağlanan kodda değiştirmeniz gerekir.`"YOUR DOCUMENTS DIRECTORY"` VBA projesini içeren Word belgenizin bulunduğu dizine uygun yol ile.
+ C: Sağlanan kodda değiştirmeniz gerekir`"YOUR DOCUMENTS DIRECTORY"` VBA projesini içeren Word belgenizin bulunduğu dizine uygun yol ile.
 
 #### S: Hedef belge klonlanmış VBA modülüyle nasıl kaydedilir?
 

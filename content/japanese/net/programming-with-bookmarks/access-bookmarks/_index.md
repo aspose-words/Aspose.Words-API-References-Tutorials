@@ -8,25 +8,25 @@ weight: 10
 url: /ja/net/programming-with-bookmarks/access-bookmarks/
 ---
 
-この記事では、上記の C# ソース コードを調べて、Aspose.Words for .NET ライブラリの Access Bookmarks 関数の使用方法を理解します。この機能は、Word 文書内の特定のブックマークへのアクセスを提供します。
+この記事では、上記の C# ソース コードを調べて、Aspose.Words for .NET ライブラリの Access Bookmarks 機能の使用方法を理解します。この機能は、Word 文書内の特定のブックマークへのアクセスを提供します。
 
 ## 前提条件
 
-- C# 言語の基本的な知識。
+- C# 言語に関する基本的な知識。
 - Aspose.Words ライブラリがインストールされた .NET 開発環境。
 
-## ステップ 1: ドキュメントをロードする
+## ステップ1: ドキュメントの読み込み
 
-ブックマークへのアクセスを開始する前に、Aspose.Words for .NET を使用して Word ドキュメントをロードする必要があります。これは、`Document`ドキュメント ファイルのパスを指定するオブジェクト:
+ブックマークにアクセスする前に、Aspose.Words for .NETを使用してWord文書を読み込む必要があります。これは、`Document`ドキュメントファイルパスを指定するオブジェクト:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## ステップ 2: ブックマークへのアクセス
+## ステップ2: ブックマークへのアクセス
 
-ドキュメントがロードされると、ドキュメント内のブックマークにアクセスできるようになります。ブックマークにアクセスするには、インデックスと名前による 2 つの方法があります。
+ドキュメントが読み込まれると、ドキュメント内のブックマークにアクセスできるようになります。ブックマークにアクセスするには、インデックスと名前の 2 つの方法があります。
 
 - インデックスによるアクセス: この例では、インデックス 0 を使用してドキュメントの最初のブックマークにアクセスします。
 
@@ -34,19 +34,19 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 Bookmark bookmark1 = doc.Range.Bookmarks[0];
 ```
 
-- 名前によるアクセス: この例では、「MyBookmark3」という名前を使用して、ドキュメント内の特定のブックマークにアクセスします。
+- 名前によるアクセス: この例では、ドキュメント内の特定のブックマークにアクセスするために「MyBookmark3」という名前を使用します。
 
 ```csharp
 Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
 ```
 
-### Aspose.Words for .NET を使用した Access ブックマークのソース コード例
+### Aspose.Words for .NET を使用した Access ブックマークのサンプル ソース コード
 
-Aspose.Words for .NET を使用してブックマークにアクセスする方法を示す完全なソース コード例を次に示します。
+以下は、Aspose.Words for .NET を使用してブックマークにアクセスする方法を示す完全なサンプル ソース コードです。
 
 ```csharp
 
-	//ドキュメントディレクトリへのパス。
+	//ドキュメント ディレクトリへのパス。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 	
@@ -59,22 +59,22 @@ Aspose.Words for .NET を使用してブックマークにアクセスする方�
 
 ## 結論
 
-この記事では、C# ソース コードを調べて、Aspose.Words for .NET の Access Bookmarks 機能の使用方法を理解しました。ステップバイステップのガイドに従って、ドキュメントをアップロードし、インデックスと名前を使用してブックマークにアクセスしました。
+この記事では、C# ソース コードを調べて、Aspose.Words for .NET のブックマークへのアクセス機能の使用方法を理解しました。ドキュメントをアップロードし、インデックスと名前を使用してブックマークにアクセスするためのステップ バイ ステップ ガイドに従いました。
 
 ### Word 文書のブックマークへのアクセスに関する FAQ
 
-#### Q: Aspose.Words for .NET を使用して Word ドキュメントをアップロードするにはどうすればよいですか?
+#### Q: Aspose.Words for .NET を使用して Word 文書をアップロードするにはどうすればよいですか?
 
- A: Aspose.Words for .NET を使用して Word ドキュメントをロードするには、`Document`ドキュメントのファイル パスを指定してオブジェクトを指定します。サンプルコードは次のとおりです。
+ A: Aspose.Words for .NETを使用してWord文書を読み込むには、`Document`ドキュメントのファイル パスを指定してオブジェクトを作成します。サンプル コードは次のとおりです。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-#### Q: Word 文書内のブックマークにアクセスするにはどうすればよいですか?
+#### Q: Word 文書内のブックマークにアクセスするにはどうすればいいですか?
 
- A: Word 文書内のブックマークにアクセスするには、`Bookmarks`の財産`Range`物体。ブックマークにはインデックスまたは名前でアクセスできます。サンプルコードは次のとおりです。
+ A: Word文書内のブックマークにアクセスするには、`Bookmarks`の財産`Range`オブジェクト。ブックマークにはインデックスまたは名前でアクセスできます。サンプル コードは次のとおりです。
 
 - インデックスによるアクセス:
 
@@ -82,7 +82,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 Bookmark bookmark1 = doc.Range.Bookmarks[0];
 ```
 
-- 名前によるアクセス:
+- 名前でアクセス:
 
 ```csharp
 Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
@@ -94,7 +94,7 @@ A: Aspose.Words for .NET のブックマーク アクセス機能を使用する
 
 #### Q: Word 文書内のブックマークにアクセスする他の方法はありますか?
 
- A: はい、インデックスまたは名前でブックマークにアクセスするだけでなく、ループを使用してドキュメント内のすべてのブックマークをループすることもできます。ドキュメント内のブックマークの総数を取得するには、`Count`の財産`Bookmarks`コレクション。その後、インデックスを使用して各ブックマークにアクセスできます。サンプルコードは次のとおりです。
+ A: はい、インデックスまたは名前でブックマークにアクセスするだけでなく、ループを使用してドキュメント内のすべてのブックマークをループすることもできます。`Count`の財産`Bookmarks`コレクション。その後、インデックスを使用して各ブックマークにアクセスできます。サンプル コードは次のとおりです。
 
 ```csharp
 int bookmarkCount = doc.Range.Bookmarks.Count;
@@ -102,6 +102,6 @@ int bookmarkCount = doc.Range.Bookmarks.Count;
 for (int i = 0; i < bookmarkCount; i++)
 {
      Bookmark bookmark = doc.Range.Bookmarks[i];
-     //ブックマークを使って何かをする...
+     //ブックマークを使って何かしてください...
 }
 ```

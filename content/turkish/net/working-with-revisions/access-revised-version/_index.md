@@ -79,7 +79,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinin revize edilmi�
 
 #### S: Revizyonları olan bir belgeyi Aspose.Words for .NET'e nasıl yüklerim?
 
- C: Kullan`Document`Revizyonları içeren bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirtebilirsiniz.
+ C: Kullan`Document` Revizyonları içeren bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirtebilirsiniz.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### S: Aspose.Words for .NET'te belge revizyonlarına nasıl göz atabilirim?
 
- C: Bir`foreach` Belgede mevcut revizyonlar arasında yineleme yapmak için döngü. Şunu kullanabilirsiniz:`Revisions` mülkiyeti`Document` Belgenin tüm revizyonlarının bir koleksiyonunu almak için itiraz edin.
+C: Bir`foreach` Belgede mevcut revizyonlar arasında yineleme yapmak için döngü. Şunu kullanabilirsiniz:`Revisions` mülkiyeti`Document` Belgenin tüm revizyonlarının bir koleksiyonunu almak için itiraz edin.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

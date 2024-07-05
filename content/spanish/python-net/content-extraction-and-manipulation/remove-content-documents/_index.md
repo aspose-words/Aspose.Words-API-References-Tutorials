@@ -10,7 +10,7 @@ url: /es/python-net/content-extraction-and-manipulation/remove-content-documents
 
 ## Introducción a la eliminación y refinamiento de contenido en documentos de Word
 
-¿Alguna vez te has encontrado en una situación en la que necesitabas eliminar o perfeccionar cierto contenido de un documento de Word? Ya sea que sea creador de contenido, editor o simplemente trabaje con documentos en sus tareas diarias, saber cómo manipular eficientemente el contenido dentro de documentos de Word puede ahorrarle tiempo y esfuerzo valiosos. En este artículo, exploraremos cómo eliminar y perfeccionar el contenido de documentos de Word utilizando la poderosa biblioteca Aspose.Words para Python. Cubriremos varios escenarios y brindaremos orientación paso a paso junto con ejemplos de código fuente.
+¿Alguna vez te has encontrado en una situación en la que necesitabas eliminar o perfeccionar cierto contenido de un documento de Word? Ya sea que sea creador de contenido, editor o simplemente trabaje con documentos en sus tareas diarias, saber cómo manipular eficientemente el contenido dentro de documentos de Word puede ahorrarle tiempo y esfuerzo valiosos. En este artículo, exploraremos cómo eliminar y perfeccionar el contenido de documentos de Word utilizando la potente biblioteca Aspose.Words para Python. Cubriremos varios escenarios y brindaremos orientación paso a paso junto con ejemplos de código fuente.
 
 ## Requisitos previos
 

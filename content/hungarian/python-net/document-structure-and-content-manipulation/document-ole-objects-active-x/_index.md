@@ -21,7 +21,7 @@ Mielőtt belemerülnénk az OLE-objektumok és ActiveX-vezérlők beágyazásáb
 
 ## OLE objektumok beágyazása
 
-Az OLE objektumok lehetővé teszik külső fájlok, például táblázatok vagy prezentációk zökkenőmentes integrálását a Word-dokumentumokba. OLE objektum beágyazásához kövesse az alábbi lépéseket:
+Az OLE-objektumok lehetővé teszik külső fájlok, például táblázatok vagy prezentációk zökkenőmentes integrálását Word-dokumentumaiba. OLE objektum beágyazásához kövesse az alábbi lépéseket:
 
 ### 1. lépés: Szükséges könyvtárak hozzáadása
 

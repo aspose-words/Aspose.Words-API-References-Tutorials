@@ -10,7 +10,7 @@ url: /hu/python-net/document-intelligence/master-document-intelligence/
 
 ## A dokumentumintelligencia megértése
 
-A dokumentumintelligencia arra a folyamatra utal, amelynek során automatikusan kinyernek értékes információkat a dokumentumokból, például szövegeket, metaadatokat, táblázatokat és diagramokat. Ez magában foglalja a dokumentumokon belüli strukturálatlan adatok elemzését, és strukturált és használható formátumokká alakítását. A dokumentumintelligencia lehetővé teszi a szervezetek számára, hogy egyszerűsítsék dokumentum-munkafolyamataikat, javítsák az adatközpontú döntéshozatalt, és javítsák az általános termelékenységet.
+A dokumentumintelligencia arra a folyamatra vonatkozik, amely automatikusan kinyeri a dokumentumokból értékes információkat, például szöveget, metaadatokat, táblázatokat és diagramokat. Ez magában foglalja a dokumentumokon belüli strukturálatlan adatok elemzését, és strukturált és használható formátumokká alakítását. A dokumentumintelligencia lehetővé teszi a szervezetek számára, hogy egyszerűsítsék dokumentum-munkafolyamataikat, javítsák az adatközpontú döntéshozatalt, és javítsák az általános termelékenységet.
 
 ## dokumentumintelligencia jelentősége a Pythonban
 
@@ -219,7 +219,7 @@ print(predicted_label)
 
 ### Dokumentummunkafolyamatok automatizálása
 
-Fedezze fel, hogyan használják a szervezetek a dokumentumintelligenciát az ismétlődő feladatok automatizálására, például a számlafeldolgozásra, a szerződések létrehozására és a jelentéskészítésre.
+Fedezze fel, hogyan használják a szervezetek a dokumentumintelligenciát az ismétlődő feladatok, például a számlafeldolgozás, a szerződések létrehozása és a jelentéskészítés automatizálására.
 
 ```python
 # Implementing document automation using Aspose.Words for Python

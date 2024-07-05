@@ -126,9 +126,9 @@ V: Igen, a mellékelt kód az Aspose.Words által támogatott különféle Word-
 
  V: A rejtett könyvjelző ismételt megjelenítéséhez ugyanazt kell használnia`ShowHideBookmarkedContent` függvény átadja az értéket`true` a logikai paraméterhez, amely jelzi, hogy meg kell-e mutatni vagy el kell rejteni a könyvjelzőt.
 
-#### K: Használhatok feltételeket a könyvjelzők megjelenítésére vagy elrejtésére a dokumentumban szereplő egyesítő mezők értékei alapján?
+#### K: Használhatok feltételeket a könyvjelzők megjelenítésére vagy elrejtésére a dokumentumban lévő egyesítő mezők értékei alapján?
 
- V: Igen, feltételekkel és egyesítheti a mezőértékeket annak meghatározására, hogy egy könyvjelzőt meg kell-e jeleníteni vagy el kell rejteni. Testreszabhatja a kódot`ShowHideBookmarkedContent` függvényében figyelembe kell venni a megfelelő feltételeket és értékeket.
+ V: Igen, feltételekkel és egyesítheti a mezőértékeket annak meghatározására, hogy a könyvjelző megjelenjen-e vagy elrejtve. Testreszabhatja a kódot`ShowHideBookmarkedContent` függvényében figyelembe kell venni a megfelelő feltételeket és értékeket.
 
 #### K: Hogyan törölhetek egy könyvjelzőt egy Word-dokumentumból az Aspose.Words for .NET használatával?
 

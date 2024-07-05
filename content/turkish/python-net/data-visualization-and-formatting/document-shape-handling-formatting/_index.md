@@ -10,7 +10,7 @@ url: /tr/python-net/data-visualization-and-formatting/document-shape-handling-fo
 
 ## giriiş
 
-Modern belgeler yalnızca içerdikleri içerikten ibaret değildir; Görsel çekicilikleri okuyucuların ilgisini çekmede önemli bir rol oynar. Aspose.Words for Python, belgeleri programlı olarak işlemek için güçlü bir araç seti sunarak hedef kitlenizde yankı uyandıracak görsel olarak çarpıcı düzenler oluşturmanıza olanak tanır.
+Modern belgeler yalnızca içerdikleri içerikten ibaret değildir; görsel çekicilikleri okuyucuların ilgisini çekmede önemli bir rol oynar. Aspose.Words for Python, belgeleri programlı olarak işlemek için güçlü bir araç seti sunarak hedef kitlenizde yankı uyandıracak görsel olarak çarpıcı düzenler oluşturmanıza olanak tanır.
 
 ## Ortamın Ayarlanması
 

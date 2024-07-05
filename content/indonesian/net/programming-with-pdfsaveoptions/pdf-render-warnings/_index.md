@@ -126,7 +126,7 @@ Dengan mengikuti langkah-langkah ini, Anda dapat secara efektif menangani pering
 
 ### Q1: Dapatkah saya menangani jenis peringatan lain dengan metode ini?
 
- Ya, itu`IWarningCallback` Antarmukanya dapat menangani berbagai jenis peringatan, tidak hanya yang terkait dengan rendering PDF.
+ Ya, itu`IWarningCallback` antarmuka dapat menangani berbagai jenis peringatan, tidak hanya yang terkait dengan rendering PDF.
 
 ### Q2: Di mana saya dapat mengunduh uji coba gratis Aspose.Words untuk .NET?
 

@@ -67,7 +67,7 @@ In questo tutorial, abbiamo imparato come ottenere i dettagli di un gruppo di re
 
 #### D: Come carico un documento con revisioni in Aspose.Words per .NET?
 
- R: Usa il`Document`classe di Aspose.Words per .NET per caricare un documento da un file contenente revisioni. È possibile specificare il percorso completo del documento.
+ R: Usa il`Document` classe di Aspose.Words per .NET per caricare un documento da un file contenente revisioni. È possibile specificare il percorso completo del documento.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### D: Come posso ottenere i dettagli di un gruppo di revisione in Aspose.Words per .NET?
 
- R: Passa attraverso le revisioni del documento utilizzando un loop e accedi alle proprietà di ciascuna revisione per ottenere i dettagli desiderati. Puoi usare il`RevisionType`, `Author`, `DateTime` E`ParentNode` proprietà per ottenere rispettivamente il tipo di revisione, l'autore, la data e il testo rivisto.
+R: Passa attraverso le revisioni del documento utilizzando un loop e accedi alle proprietà di ciascuna revisione per ottenere i dettagli desiderati. Puoi usare il`RevisionType`, `Author`, `DateTime` E`ParentNode` proprietà per ottenere rispettivamente il tipo di revisione, l'autore, la data e il testo rivisto.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### D: Come verificare se una revisione appartiene a un gruppo in Aspose.Words per .NET?
 
- R: Usa il`Group` proprietà del`Revision` oggetto per verificare se una revisione appartiene a un gruppo. Se la`Group` la proprietà è`null`significa che la revisione non appartiene a nessun gruppo.
+ R: Usa il`Group` proprietà del`Revision` oggetto per verificare se una revisione appartiene a un gruppo. Se la`Group` la proprietà è`null`, significa che la revisione non appartiene a nessun gruppo.
 
 ```csharp
 if (revision.Group != null)

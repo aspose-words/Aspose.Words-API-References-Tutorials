@@ -17,7 +17,7 @@ Asegúrese de tener los siguientes requisitos previos:
 - Aspose.Words para la biblioteca .NET instalada. Puede descargarlo utilizando el administrador de paquetes NuGet para instalarlo.
 - Una ruta del directorio de documentos donde se guardará el documento de salida.
 
-## Paso 2: cree un nuevo documento e inserte un gráfico.
+## Paso 2: cree un nuevo documento e inserte un gráfico
 
  Crear un nuevo`Document` objeto y un`DocumentBuilder` para construir el documento.
 
@@ -38,7 +38,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 ## Paso 3: Establecer la alineación de la etiqueta de marca
 
- Para configurar la alineación de las etiquetas de varias líneas de tick, acceda al`AxisX` propiedad del gráfico y establecer el`TickLabelAlignment` propiedad a la alineación deseada. En este ejemplo, configuramos la alineación en`ParagraphAlignment.Right`.
+ Para configurar la alineación de las etiquetas de varias líneas de marca, acceda al`AxisX` propiedad del gráfico y establecer el`TickLabelAlignment` propiedad a la alineación deseada. En este ejemplo, configuramos la alineación en`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -73,7 +73,7 @@ Esto completa la implementación de configurar la alineación de la etiqueta de 
 
 En este tutorial, aprendió cómo configurar la alineación de etiquetas de varias líneas en un eje de gráfico usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, puede crear un nuevo documento, insertar un gráfico de dispersión, acceder al eje del gráfico y modificar la alineación de la etiqueta de marca.
 
-Aspose.Words para .NET proporciona potentes funciones para manipular gráficos en documentos de Word. Las etiquetas de varias líneas son útiles cuando las etiquetas de los ejes contienen texto largo que requiere ajustarse o dividirse en varias líneas. Al configurar la alineación de la etiqueta de marca, puede controlar la alineación horizontal de las etiquetas de varias líneas dentro del eje del gráfico, lo que garantiza una presentación y legibilidad óptimas.
+Aspose.Words para .NET proporciona potentes funciones para manipular gráficos en documentos de Word. Las etiquetas de marca de varias líneas son útiles cuando las etiquetas de los ejes contienen texto largo que requiere ajustarse o dividirse en varias líneas. Al configurar la alineación de la etiqueta de marca, puede controlar la alineación horizontal de las etiquetas de varias líneas dentro del eje del gráfico, lo que garantiza una presentación y legibilidad óptimas.
 
 Personalizar la alineación de las etiquetas de varias líneas le permite ajustar la apariencia de su gráfico, especialmente cuando se trata de etiquetas largas o complejas. Al alinear las etiquetas a la derecha, izquierda, centro o justificadas, puede lograr una disposición equilibrada y visualmente atractiva de las etiquetas de marca a lo largo del eje.
 
@@ -82,7 +82,7 @@ Con Aspose.Words para .NET, puede acceder y modificar fácilmente la propiedad d
 ### Preguntas frecuentes
 
 #### P1. ¿Qué son las etiquetas de varias líneas en un eje de gráfico?
-Las etiquetas de varias líneas en el eje de un gráfico se refieren a las etiquetas de eje que abarcan varias líneas cuando el texto de la etiqueta es largo o requiere ajuste para caber dentro del espacio disponible. En lugar de truncar el texto de la etiqueta o causar desorden visual, el eje del gráfico divide automáticamente las etiquetas en varias líneas para garantizar la legibilidad. Las etiquetas de marca de varias líneas son particularmente útiles cuando se trata de etiquetas de valores o categorías largas en gráficos.
+Marcar etiquetas de varias líneas en el eje de un gráfico se refiere a las etiquetas de eje que abarcan varias líneas cuando el texto de la etiqueta es largo o requiere ajuste para caber dentro del espacio disponible. En lugar de truncar el texto de la etiqueta o causar desorden visual, el eje del gráfico divide automáticamente las etiquetas en varias líneas para garantizar la legibilidad. Las etiquetas de marca de varias líneas son particularmente útiles cuando se trata de etiquetas de categoría o valor largas en gráficos.
 
 #### P2. ¿Puedo personalizar la alineación de las etiquetas de marca en el eje de un gráfico?
  Sí, puede personalizar la alineación de las etiquetas de marca en el eje de un gráfico utilizando Aspose.Words para .NET. Al acceder al`TickLabelAlignment` propiedad de la`ChartAxis` objeto, puede establecer la alineación deseada para las etiquetas de marca. Las opciones de alineación incluyen alineación izquierda, derecha, central o justificada. Ajustar la alineación le permite controlar la posición horizontal de las etiquetas de marca a lo largo del eje del gráfico, lo que garantiza una legibilidad y presentación visual adecuadas.

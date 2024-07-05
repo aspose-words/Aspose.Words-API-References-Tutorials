@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- 이 코드는 색인을 사용하여 문서의 첫 번째 섹션에 액세스합니다.`0` 해당 범위 내의 모든 텍스트를 삭제합니다.
+ 이 코드는 인덱스를 사용하여 문서의 첫 번째 섹션에 액세스합니다.`0` 해당 범위 내의 모든 텍스트를 삭제합니다.
 
 #### Q: .NET용 Aspose.Words를 사용하여 Word 문서의 여러 범위에서 텍스트를 삭제할 수 있나요?
 

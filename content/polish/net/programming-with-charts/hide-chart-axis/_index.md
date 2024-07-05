@@ -17,7 +17,7 @@ Upewnij się, że masz następujące wymagania wstępne:
 - Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
 - Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres.
+## Krok 2: Utwórz nowy dokument i wstaw wykres
 
  Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
 
@@ -101,7 +101,7 @@ Używając Aspose.Words dla .NET, możesz łatwo włączyć możliwości tworzen
 Aspose.Words dla .NET to potężna biblioteka do przetwarzania dokumentów, która umożliwia programistom programowe tworzenie, manipulowanie i zapisywanie dokumentów programu Word w aplikacjach .NET. Zapewnia szeroką gamę funkcji do przetwarzania tekstu z elementami dokumentu, w tym wykresami i osiami wykresów.
 
 #### Pytanie 2. Jak mogę zainstalować Aspose.Words dla .NET?
-Możesz zainstalować Aspose.Words dla .NET, pobierając go za pomocą menedżera pakietów NuGet w programie Visual Studio. Po prostu wyszukaj „Apose.Words” w menedżerze pakietów NuGet i zainstaluj go w swoim projekcie.
+Możesz zainstalować Aspose.Words dla .NET, pobierając go za pomocą menedżera pakietów NuGet w programie Visual Studio. Po prostu wyszukaj „Aspose.Words” w menedżerze pakietów NuGet i zainstaluj go w swoim projekcie.
 
 #### Pytanie 3. Czy mogę ukryć zarówno oś X, jak i oś Y wykresu?
  Tak, możesz ukryć zarówno oś X, jak i Y wykresu, używając Aspose.Words dla .NET. Aby ukryć oś X, możesz uzyskać dostęp do`AxisX` właściwość wykresu i ustaw`Hidden`własność do`true` . Podobnie, aby ukryć oś Y, możesz uzyskać dostęp do`AxisY` właściwość i ustaw`Hidden`własność do`true`. Dzięki temu można usunąć obie osie z wizualizacji wykresu.

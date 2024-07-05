@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Langkah 3: Dapatkan koleksi bentuk dan periksa revisinya.
+## Langkah 3: Dapatkan koleksi bentuk dan periksa revisinya
 
 Kita akan mendapatkan koleksi bentuk dari dokumen dan memeriksa revisi yang terkait dengan setiap bentuk.
 

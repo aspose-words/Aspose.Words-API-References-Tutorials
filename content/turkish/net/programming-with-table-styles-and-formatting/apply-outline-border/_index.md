@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Adım 5: Mevcut tablo kenarlıklarını silin.
+## 5. Adım: Mevcut tablo kenarlıklarını silin
 Yeni bir anahat kenarlığıyla başlamak için öncelikle mevcut tüm kenarlıkları tablodan silmemiz gerekir. Bu, kullanılarak yapılabilir.`ClearBorders()` yöntem.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Adım 7: Hücreleri arka plan rengiyle doldurun.
-Tablonun görsel sunumunu iyileştirmek için hücreleri zemin arka plan rengiyle doldurabiliriz.
+## Adım 7: Hücreleri arka plan rengiyle doldurun
+Tablonun görsel sunumunu iyileştirmek için hücreleri zemin arka plan rengiyle doldurabiliriz
 
 fikir. Bu örnekte açık yeşil renk kullanıyoruz.
 

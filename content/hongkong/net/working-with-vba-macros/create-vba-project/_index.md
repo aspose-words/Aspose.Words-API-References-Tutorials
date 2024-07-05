@@ -36,7 +36,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## 步驟3：建立一個新模組並指定巨集原始碼。
+## 步驟3：建立一個新模組並指定巨集原始碼
 我們將透過實例化來創建一個新模組`VbaModule`類別並指定巨集名稱、類型（過程模組）和原始碼。
 
 ```csharp
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 #### Q：程式碼中如何設定文檔目錄？
 
- A：提供的代碼中，需要替換。`"YOUR DOCUMENTS DIRECTORY"`輸入要儲存包含 VBA 專案的 Word 文件的目錄的相應路徑。
+ A：在提供的代碼中，您需要替換`"YOUR DOCUMENTS DIRECTORY"`輸入要儲存包含 VBA 專案的 Word 文件的目錄的適當路徑。
 
 #### Q：如何在VBA模組中指定巨集原始碼？
 

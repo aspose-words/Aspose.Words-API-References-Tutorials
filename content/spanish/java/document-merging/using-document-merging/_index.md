@@ -21,7 +21,7 @@ Antes de sumergirnos en la combinación de documentos, asegurémonos de tener As
  Visite los lanzamientos de Aspose (https://releases.aspose.com/words/java) para obtener la última versión de la biblioteca.
 
 ### Agregue la biblioteca Aspose.Words:
- Incluya el archivo JAR Aspose.Words en la ruta de clase de su proyecto Java.
+ Incluya el archivo JAR Aspose.Words en la ruta de clases de su proyecto Java.
 
 ### Inicializar Aspose.Words:
  En su código Java, importe las clases necesarias de Aspose.Words y estará listo para comenzar a fusionar documentos.
@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words para Java brinda a los desarrolladores de Java la capacidad de fusionar documentos de Word sin esfuerzo. Si sigue la guía paso a paso de este artículo, ahora puede fusionar documentos, manejar el formato, insertar saltos y gestionar conflictos con facilidad. Con Aspose.Words para Java, la combinación de documentos se convierte en un proceso automatizado y fluido, lo que ahorra tiempo y esfuerzo valiosos.
 
-## 11.Preguntas frecuentes 
+## 11. Preguntas frecuentes 
 
 ### ¿Puedo fusionar documentos con diferentes formatos y estilos?
 

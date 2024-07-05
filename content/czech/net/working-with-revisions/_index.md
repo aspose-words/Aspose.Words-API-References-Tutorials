@@ -16,7 +16,7 @@ Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy v
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Přijmout recenze](./accept-revisions/) | Naučte se přijímat revize dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Přijmout revize](./accept-revisions/) | Naučte se přijímat revize dokumentu aplikace Word pomocí Aspose.Words for .NET. |
 | [Získejte revizní typy slov](./get-revision-types/) | Získejte typy revizí slov v dokumentu aplikace Word pomocí Aspose.Words pro .NET. |
 | [Získejte skupiny revizí](./get-revision-groups/) | Získejte podrobnosti o skupině revizí v dokumentu aplikace Word pomocí Aspose.Words pro .NET. |
 | [Odebrat komentáře v souboru PDF](./remove-comments-in-pdf/) | Odstraňte komentáře ze souboru PDF pomocí Aspose.Words for .NET. |

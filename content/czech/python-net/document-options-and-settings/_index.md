@@ -32,7 +32,7 @@ V této sérii výukových programů vás provedeme řadou možností a nastaven
 
 Na konci této série budete mít dovednosti vytvářet dobře strukturované, vizuálně přitažlivé dokumenty s přizpůsobeným nastavením, které odpovídá vašim konkrétním požadavkům.
 
-## Výukové programy pro možnosti a nastavení dokumentu
+## Výukové programy Možnosti a nastavení dokumentu
 ### [Pokročilé techniky spojování a připojování dokumentů](./join-append-documents/)
 Naučte se pokročilé techniky pro slučování a připojování dokumentů pomocí Aspose.Words v Pythonu. Podrobný průvodce s příklady kódu.
 ### [Jemné doladění možností dokumentu a nastavení pro efektivitu](./manage-document-options-settings/)

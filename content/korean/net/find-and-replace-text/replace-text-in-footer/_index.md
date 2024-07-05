@@ -117,7 +117,7 @@ HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWholeWordsOnly = false };
 ```
 
-#### Q: .NET용 Aspose.Words를 사용하여 바닥글의 텍스트 교체를 어떻게 수행할 수 있나요?
+#### Q: .NET용 Aspose.Words를 사용하여 바닥글의 텍스트 교체를 어떻게 수행할 수 있습니까?
 
 A: .NET용 Aspose.Words를 사용하여 바닥글에서 텍스트 교체를 수행하려면 다음을 사용할 수 있습니다.`Range.Replace` 바닥글 범위에 대한 메서드입니다. 이 방법을 사용하면 찾을 텍스트와 대체 텍스트를 지정할 수 있습니다. 예는 다음과 같습니다.
 

@@ -2,94 +2,109 @@
 title: Applicare la licenza a consumo
 linktitle: Applicare la licenza a consumo
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come applicare una licenza a consumo utilizzando Aspose.Words per .NET.
+description: Scopri come applicare una licenza a consumo in Aspose.Words per .NET con la nostra guida passo passo. Licenze flessibili ed economiche rese semplici.
 type: docs
 weight: 10
 url: /it/net/apply-license/apply-metered-license/
 ---
+## introduzione
 
-In questo tutorial completo imparerai come applicare una licenza a consumo utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo con istruzioni dettagliate passo dopo passo e forniremo i frammenti di codice C# necessari. Entro la fine di questa guida, sarai in grado di applicare una licenza misurata e sfruttare le funzionalità avanzate di Aspose.Words per le tue esigenze di elaborazione dei documenti.
+Aspose.Words per .NET è una potente libreria che ti consente di lavorare con documenti Word nelle tue applicazioni .NET. Una delle sue caratteristiche principali è la possibilità di applicare una licenza a consumo. Questo modello di licenza è perfetto per le aziende e gli sviluppatori che preferiscono un approccio con pagamento in base al consumo. Con una licenza a consumo paghi solo per ciò che utilizzi, rendendola una soluzione flessibile ed economica. In questa guida ti guideremo attraverso il processo di applicazione di una licenza misurata al tuo progetto Aspose.Words per .NET.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di possedere i seguenti prerequisiti:
-- Aspose.Words per la libreria .NET installata sul tuo sistema.
-- Credenziali valide per le licenze a consumo. 
 
-## Passaggio 1: importa gli spazi dei nomi richiesti
-Per iniziare, importa gli spazi dei nomi necessari nel codice C#. Questi spazi dei nomi contengono le classi e i metodi necessari per l'elaborazione delle parole con Aspose.Words.
+Prima di addentrarci nel codice, assicuriamoci di avere tutto ciò di cui hai bisogno:
+
+1.  Aspose.Words per .NET: se non l'hai già fatto, scarica la libreria da[Sito web Aspose](https://releases.aspose.com/words/net/).
+2. Chiavi di licenza a consumo valide: le chiavi sono necessarie per attivare la licenza a consumo. Puoi ottenerli da[Pagina di acquisto Aspose](https://purchase.aspose.com/buy).
+3. Ambiente di sviluppo: assicurati di avere un ambiente di sviluppo .NET configurato. Visual Studio è una scelta popolare, ma puoi utilizzare qualsiasi IDE che supporti .NET.
+
+## Importa spazi dei nomi
+
+Prima di immergerci nel codice, dobbiamo importare gli spazi dei nomi necessari. Questo è fondamentale in quanto ci consente di accedere alle classi e ai metodi forniti da Aspose.Words.
 
 ```csharp
 using Aspose.Words;
+using Aspose.Words.Metered;
 ```
 
-## Passaggio 2: impostare la chiave di licenza a consumo
-Successivamente, è necessario impostare la chiave di licenza misurata utilizzando il metodo SetMeteredKey della classe Metered. Fornisci le chiavi pubbliche e private misurate come parametri per questo metodo.
+Va bene, analizziamolo. Seguiremo il processo passo dopo passo, così non ti perderai nulla.
+
+## Passaggio 1: inizializzare la classe misurata
+
+ Per prima cosa, dobbiamo creare un'istanza del file`Metered` classe. Questa classe è responsabile dell'impostazione della licenza a consumo.
+
+```csharp
+Metered metered = new Metered();
+```
+
+## Passaggio 2: impostare le chiavi misurate
+
+ Ora che abbiamo il nostro`Metered` Ad esempio, dobbiamo impostare le chiavi misurate. Queste chiavi sono fornite da Aspose e sono univoche per il tuo abbonamento.
+
+```csharp
+metered.SetMeteredKey("your_public_key", "your_private_key");
+```
+
+ Sostituire`"your_public_key"` E`"your_private_key"`con le chiavi effettive che hai ricevuto da Aspose. Questo passaggio indica essenzialmente ad Aspose che desideri utilizzare una licenza a consumo.
+
+## Passaggio 3: carica il documento
+
+ Successivamente, carichiamo un documento Word utilizzando Aspose.Words. Per questo esempio, utilizzeremo un documento denominato`Document.docx`. Assicurati di avere questo documento nella directory del tuo progetto.
+
+```csharp
+Document doc = new Document("Document.docx");
+```
+
+## Passaggio 4: verificare la richiesta di licenza
+
+Per verificare che la licenza sia stata applicata correttamente, eseguiamo un'operazione sul documento. Stamperemo semplicemente il conteggio delle pagine sulla console.
+
+```csharp
+Console.WriteLine(doc.PageCount);
+```
+
+Questo passaggio garantisce che il documento venga caricato ed elaborato utilizzando la licenza a consumo.
+
+## Passaggio 5: gestire le eccezioni
+
+È sempre una buona pratica gestire eventuali eccezioni. Aggiungiamo un blocco try-catch al nostro codice per gestire gli errori con garbo.
 
 ```csharp
 try
 {
     Metered metered = new Metered();
-    metered.SetMeteredKey("*", "*");
-}
-catch (Exception e)
-{
-    Console.WriteLine("\nThere was an error setting the license: " + e.Message);
-}
-```
+    metered.SetMeteredKey("your_public_key", "your_private_key");
 
-## Passaggio 3: caricare ed elaborare i documenti
-Ora che hai impostato la licenza a consumo, puoi caricare ed elaborare i documenti utilizzando Aspose.Words. Nel seguente frammento di codice, carichiamo un documento denominato "Document.docx" ed eseguiamo una semplice operazione di stampa del conteggio delle pagine.
-
-```csharp
-try
-{
-    Document doc = new Document(MyDir + "Document.docx");
-    Console.WriteLine(doc.PageCount);
-}
-catch (Exception e)
-{
-    Console.WriteLine("\nThere was an error setting the license: " + e.Message);
-}
-```
-
-### Esempio di codice sorgente per applicare la licenza a consumo utilizzando Aspose.Words per .NET
-Ecco il codice sorgente completo per applicare una licenza misurata utilizzando Aspose.Words per .NET:
-
-```csharp
-try
-{
-    Metered metered = new Metered();
-    metered.SetMeteredKey("*", "*");
-
-    Document doc = new Document(MyDir + "Document.docx");
+    Document doc = new Document("Document.docx");
 
     Console.WriteLine(doc.PageCount);
 }
 catch (Exception e)
 {
-    Console.WriteLine("\nThere was an error setting the license: " + e.Message);
+    Console.WriteLine("There was an error setting the license: " + e.Message);
 }
 ```
+
+Ciò garantisce che se qualcosa va storto, riceverai un messaggio di errore significativo anziché l'arresto anomalo dell'applicazione.
 
 ## Conclusione
-Congratulazioni! Hai imparato con successo come applicare una licenza a consumo utilizzando Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, ora puoi sfruttare le funzionalità avanzate di Aspose.Words per le tue attività di elaborazione dei documenti.
 
-Ora puoi impostare con sicurezza la licenza a consumo, caricare ed elaborare documenti e sfruttare tutto il potenziale di Aspose.Words per creare, modificare e manipolare documenti Word a livello di codice.
+il gioco è fatto! Applicare una licenza a consumo in Aspose.Words per .NET è semplice una volta suddivisa in passaggi gestibili. Questo modello di licenza offre flessibilità e risparmi sui costi, rendendolo una scelta eccellente per molti sviluppatori. Ricorda, la chiave è impostare correttamente le chiavi a consumo e gestire eventuali eccezioni che potrebbero verificarsi. Buona programmazione!
 
-### Domande frequenti
+## Domande frequenti
 
-#### D: Come posso applicare una licenza pay-per-use in Aspose.Words per .NET?
+### Cos'è una licenza a consumo?
+Una licenza misurata è un modello a consumo in cui paghi solo per l'utilizzo effettivo della libreria Aspose.Words per .NET, offrendo flessibilità ed efficienza dei costi.
 
-R: Per applicare una licenza con pagamento in base al consumo in Aspose.Words per .NET, seguire i passaggi indicati nel tutorial.
+### Dove posso ottenere le mie chiavi di licenza a consumo?
+ È possibile ottenere le chiavi di licenza a consumo da[Pagina di acquisto Aspose](https://purchase.aspose.com/buy).
 
-#### D: Quali sono i vantaggi dell'utilizzo di una licenza pay-per-use in Aspose.Words per .NET?
+### Posso utilizzare una licenza a consumo con qualsiasi progetto .NET?
+Sì, puoi utilizzare una licenza a consumo con qualsiasi progetto .NET che utilizza la libreria Aspose.Words per .NET.
 
-R: I vantaggi dell'utilizzo di una licenza con pagamento in base al consumo in Aspose.Words per .NET includono una gestione dei costi più efficiente e una maggiore flessibilità.
+### Cosa succede se le chiavi di licenza a consumo non sono corrette?
+Se le chiavi non sono corrette, la licenza non verrà applicata e l'applicazione genererà un'eccezione. Assicurati di gestire le eccezioni per ottenere un messaggio di errore chiaro.
 
-#### D: Come posso verificare l'utilizzo della mia licenza con pagamento in base al consumo in Aspose.Words per .NET?
-
-R: Puoi controllare l'utilizzo della licenza con pagamento in base al consumo in Aspose.Words per .NET utilizzando il metodo appropriato menzionato nel tutorial.
-
-#### D: Posso utilizzare una licenza normale con Aspose.Words per .NET invece di una licenza con pagamento in base al consumo?
-
-R: Sì, puoi utilizzare una licenza normale con Aspose.Words per .NET, se lo desideri.
+### Come posso verificare che la licenza a consumo sia applicata correttamente?
+Puoi verificare la licenza a consumo eseguendo qualsiasi operazione su un documento Word (come stampare il conteggio delle pagine) e assicurandoti che venga eseguita senza errori di licenza.

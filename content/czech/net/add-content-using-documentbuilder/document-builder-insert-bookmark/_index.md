@@ -103,7 +103,7 @@ tady to máte! Úspěšně jste vložili záložku do dokumentu aplikace Word po
 Záložka v dokumentu aplikace Word je značka nebo zástupný symbol, který můžete použít k rychlému přechodu na konkrétní místa v dokumentu.
 
 ### Mohu přidat více záložek do jednoho dokumentu?
-Ano, můžete přidat více záložek. Jen se ujistěte, že každá záložka má jedinečný název.
+Ano, můžete přidat více záložek. Ujistěte se, že každá záložka má jedinečný název.
 
 ### Jak mohu programově přejít na záložku?
  Můžete použít`Document.Range.Bookmarks` kolekce pro navigaci nebo manipulaci se záložkami programově.

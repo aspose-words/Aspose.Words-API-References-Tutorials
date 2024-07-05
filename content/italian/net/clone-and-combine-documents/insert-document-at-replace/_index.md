@@ -164,4 +164,4 @@ Sì, puoi modificare il gestore di callback per gestire più inserimenti eseguen
 Puoi ottenere supporto visitando il[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Posso mantenere la formattazione del documento inserito?
- Sì, il`NodeImporter`La classe consente di specificare come viene gestita la formattazione durante l'importazione di nodi da un documento a un altro.
+ Sì, il`NodeImporter` La classe consente di specificare come viene gestita la formattazione durante l'importazione di nodi da un documento a un altro.

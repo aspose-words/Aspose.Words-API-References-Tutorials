@@ -23,7 +23,7 @@ url: /vi/net/working-with-fields/
 | [Chèn trường hợp nhất bằng DOM](./insert-merge-field-using-dom/) | Tìm hiểu cách chèn trường hợp nhất trường tùy chỉnh vào tài liệu Word của bạn bằng Aspose.Words cho .NET. |
 | [Chèn trường khối địa chỉ phối thư bằng DOM](./insert-mail-merge-address-block-field-using-dom/) | Tìm hiểu cách Chèn trường khối địa chỉ trộn thư vào tài liệu Word của bạn bằng Aspose.Words cho .NET. |
 | [Chèn FieldIncludeText mà không cần Trình tạo tài liệu](./insert-field-include-text-without-document-builder/) | Tìm hiểu cách chèn trường FieldIncludeText vào tài liệu Word của bạn bằng Aspose.Words for .NET. |
-| [Chèn trường Không có](./insert-field-none/) | Tìm hiểu cách tạo tài liệu bằng AUCUN trong Word avec Aspose.Words pour .NET. |
+| [Chèn trường Không có](./insert-field-none/) | Tìm hiểu cách Insérez un champ AUCUN dans vos tài liệu Word với Aspose.Words pour .NET. |
 | [Chèn trường](./insert-field/) | Tìm hiểu cách Chèn trường vào tài liệu Word của bạn bằng Aspose.Words cho .NET. Cá nhân hóa tài liệu của bạn với các trường động. |
 | [Chèn trường bằng cách sử dụng Trình tạo trường](./insert-field-using-field-builder/) | Tìm hiểu cách Chèn trường tùy chỉnh vào tài liệu Word của bạn bằng Aspose.Words cho .NET. |
 | [Chèn trường tác giả](./insert-author-field/) | Tìm hiểu cách Chèn trường TÁC GIẢ vào tài liệu Word của bạn bằng Aspose.Words cho .NET. Chỉ định tên tác giả để cá nhân hóa tài liệu của bạn. |

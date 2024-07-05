@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Krok 5: Uložení dokumentu
 
- Po vložení pole formuláře pro zadání textu uložte dokument na požadované místo pomocí`Save` metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
+ Po vložení textového pole formuláře uložte dokument na požadované místo pomocí`Save`metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ V tomto tutoriálu jsme se naučili, jak přesunout uzel ve sledovaném dokument
 
 #### Otázka: Jak mohu povolit sledování revizí v dokumentu Aspose.Words for .NET?
 
-A: Chcete-li povolit sledování revizí v dokumentu Aspose.Words for .NET, můžete použít`StartTrackRevisions` metoda`Document` objekt. Tato metoda bere jako parametry jméno autora revizí a datum zahájení sledování revizí.
+ A: Chcete-li povolit sledování revizí v dokumentu Aspose.Words for .NET, můžete použít`StartTrackRevisions` metoda`Document` objekt. Tato metoda bere jako parametry jméno autora revizí a datum zahájení sledování revizí.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

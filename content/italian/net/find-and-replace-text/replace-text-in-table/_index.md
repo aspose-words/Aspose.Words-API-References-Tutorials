@@ -78,7 +78,7 @@ In questo articolo, abbiamo esplorato il codice sorgente C# per capire come util
 
 #### D: Qual è la funzionalità "Sostituisci testo nella tabella" in Aspose.Words per .NET?
 
-R: La funzionalità "Sostituisci testo nella tabella" in Aspose.Words per .NET consente di trovare e sostituire testo specifico all'interno di una tabella in un documento di Word. Ti consente di individuare parole, frasi o schemi specifici all'interno di una tabella e sostituirli con il contenuto desiderato.
+R: La funzione "Sostituisci testo nella tabella" in Aspose.Words per .NET consente di trovare e sostituire testo specifico all'interno di una tabella in un documento di Word. Ti consente di individuare parole, frasi o schemi specifici all'interno di una tabella e sostituirli con il contenuto desiderato.
 
 #### D: Come posso caricare un documento Word utilizzando Aspose.Words per .NET?
 
@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### D: Come posso accedere a una tabella in un documento utilizzando Aspose.Words per .NET?
 
-R: Una volta caricato il documento, puoi accedere alla tabella in cui desideri eseguire la sostituzione del testo. In Aspose.Words per .NET, puoi utilizzare il file`GetChild` metodo con il`NodeType.Table` parametri per ottenere la tabella desiderata. Per esempio:
+R: Una volta caricato il documento, puoi accedere alla tabella in cui desideri eseguire la sostituzione del testo. In Aspose.Words per .NET, puoi utilizzare il file`GetChild` metodo con il`NodeType.Table` parametro per ottenere la tabella desiderata. Per esempio:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

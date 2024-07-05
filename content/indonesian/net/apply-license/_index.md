@@ -13,6 +13,6 @@ Halaman ini memberikan panduan mendetail tentang cara menerapkan lisensi dalam p
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Terapkan Lisensi Dari File](./apply-license-from-file/) | Pelajari cara menerapkan lisensi dari file menggunakan Aspose.Words untuk .NET.|
-| [Terapkan Lisensi Dari Aliran](./apply-license-from-stream/) | Pelajari cara menerapkan lisensi dari aliran menggunakan Aspose.Words untuk .NET.|
-| [Terapkan Lisensi Terukur](./apply-metered-license/) | Pelajari cara menerapkan lisensi terukur menggunakan Aspose.Words untuk .NET. |
+| [Terapkan Lisensi Dari File](./apply-license-from-file/) | Pelajari cara menerapkan lisensi dari file di Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang mendetail. Buka potensi penuh perpustakaan Anda dengan mudah. |
+| [Terapkan Lisensi Dari Aliran](./apply-license-from-stream/) | Pelajari cara menerapkan lisensi dari aliran di Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Buka potensi penuh Aspose.Words. |
+| [Terapkan Lisensi Terukur](./apply-metered-license/) | Pelajari cara menerapkan lisensi terukur di Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Lisensi yang fleksibel dan hemat biaya menjadi sederhana. |

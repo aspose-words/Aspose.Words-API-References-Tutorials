@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 Gratulálunk! Sikeresen megtanulta, hogyan kell alakzatokat renderelni az Aspose.Words for Java programban. Ez a lehetőség a lehetőségek világát nyitja meg a Word-dokumentumok programozása során.
 
-## 9.GYIK
+## 9. GYIK
 
 ### 1. kérdés: Renderelhetek több alakzatot egyetlen dokumentumban?
 
@@ -95,7 +95,7 @@ Igen, az Aspose.Words for Java a dokumentumformátumok széles skáláját támo
 
  Biztosan! Hozzáférhet az Aspose.Words for Java ingyenes próbaverziójához a[Aspose.Releases](https://releases.aspose.com/).
 
-### 5. kérdés: Hol kérhetek támogatást, vagy hol tehetek fel kérdéseket az Aspose.Words for Java programmal kapcsolatban?
+### 5. kérdés: Hol kérhetek támogatást, vagy hol tehetek fel kérdéseket az Aspose.Words for Java-val kapcsolatban?
 
  Ha kérdése vagy támogatása van, keresse fel a[Aspose.Words for Java fórum](https://forum.aspose.com/).
 

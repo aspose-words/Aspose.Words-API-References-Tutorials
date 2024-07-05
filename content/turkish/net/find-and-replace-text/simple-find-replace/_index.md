@@ -16,7 +16,7 @@ Bu makalede, Aspose.Words for .NET kütüphanesindeki Basit Metin Bul ve Değiş
 
 ## Adım 1: Yeni Bir Belge Oluşturma
 
- Basit bulma ve değiştirmeyi kullanmaya başlamadan önce Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmamız gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` nesne:
+ Basit bul ve değiştir özelliğini kullanmaya başlamadan önce Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmamız gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` nesne:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

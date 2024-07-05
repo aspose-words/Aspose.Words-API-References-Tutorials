@@ -57,7 +57,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo in ba
 
 #### D: Come posso configurare il numero di colonne per le note a piè di pagina in Aspose.Words?
 
- R: Per configurare il numero di colonne per le note a piè di pagina in Aspose.Words, è necessario utilizzare il file`FootnoteOptions` classe e il`ColumnsCount` proprietà. Puoi impostare questa proprietà su qualsiasi numero di colonne desideri.
+R: Per configurare il numero di colonne per le note a piè di pagina in Aspose.Words, è necessario utilizzare il file`FootnoteOptions` classe e il`ColumnsCount` proprietà. Puoi impostare questa proprietà su qualsiasi numero di colonne desideri.
 
 #### D: Quali sono i vantaggi derivanti dall'impostazione delle colonne delle note a piè di pagina?
 
@@ -65,7 +65,7 @@ R: La configurazione delle colonne delle note a piè di pagina aiuta a migliorar
 
 #### D: È possibile specificare un numero diverso di colonne per le diverse sezioni del documento?
 
-R: Sì, è possibile specificare un numero diverso di colonne per le diverse sezioni del documento. È possibile utilizzare i metodi di manipolazione della sezione Aspose.Words per definire configurazioni specifiche per ciascuna sezione, incluso il numero di colonne di note a piè di pagina.
+R: Sì, è possibile specificare un numero diverso di colonne per le diverse sezioni del documento. È possibile utilizzare i metodi di manipolazione della sezione Aspose.Words per definire configurazioni specifiche per ciascuna sezione, incluso il numero di colonne delle note a piè di pagina.
 
 #### D: Le colonne delle note a piè di pagina vengono prese in considerazione durante la conversione in altri formati di file?
 

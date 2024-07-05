@@ -117,7 +117,7 @@ options.setFontFamily("Times New Roman");
 
 ### Je možné vodoznak otočit?
 
- Ano, vodoznak můžete otočit nastavením`setRotation` nemovitost v`Shape` objekt. Kladné hodnoty otočí vodoznak po směru hodinových ručiček a záporné hodnoty proti směru hodinových ručiček.
+ Ano, vodoznak můžete otočit nastavením`setRotation` nemovitost v`Shape` objekt. Kladné hodnoty otáčejí vodoznak po směru hodinových ručiček a záporné hodnoty proti směru hodinových ručiček.
 
 ### Jak mohu udělat vodoznak poloprůhledný?
 
@@ -125,4 +125,4 @@ options.setFontFamily("Times New Roman");
 
 ### Mohu přidat vodoznaky do určitých částí dokumentu?
 
-Ano, vodoznaky můžete přidat do určitých částí dokumentu procházením částí a přidáním vodoznaku do požadovaných částí.
+Ano, vodoznaky můžete přidat do konkrétních částí dokumentu procházením částí a přidáním vodoznaku do požadovaných částí.

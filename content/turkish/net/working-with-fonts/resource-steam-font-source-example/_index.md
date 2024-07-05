@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-fonts/resource-steam-font-source-example/
 ---
 
-.NET'te belgelerle çalışıyorsanız ve Aspose.Words kullanıyorsanız yazı tipi kaynaklarını yönetmek, belgelerinizin beklendiği gibi görünmesini sağlamanın önemli bir unsuru olabilir. Aspose.Words, kaynak akışlarını kullanmak da dahil olmak üzere yazı tiplerini kullanmanın güçlü bir yolunu sunar. Bu kılavuzda Aspose.Words for .NET ile bir kaynak akışını yazı tipi kaynağı olarak kullanmayı anlatacağız. Hadi dalalım!
+.NET'te belgelerle çalışıyorsanız ve Aspose.Words kullanıyorsanız yazı tipi kaynaklarını yönetmek, belgelerinizin beklendiği gibi görünmesini sağlamanın önemli bir unsuru olabilir. Aspose.Words, kaynak akışlarını kullanmak da dahil olmak üzere yazı tiplerini kullanmanın güçlü bir yolunu sunar. Bu kılavuzda Aspose.Words for .NET ile kaynak akışını yazı tipi kaynağı olarak kullanmayı anlatacağız. Hadi dalalım!
 
 ## Önkoşullar
 

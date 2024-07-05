@@ -114,7 +114,7 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 #### Câu hỏi: Tôi có thể tìm thêm thông tin và ví dụ về cách sử dụng biểu thức chính quy trong Aspose.Words cho .NET ở đâu?
 
-Trả lời: Để biết thêm thông tin và ví dụ về cách sử dụng biểu thức chính quy trong Aspose.Words cho .NET, bạn có thể tham khảo[Aspose.Words cho tài liệu tham khảo API .NET](https://reference.aspose.com/words/net/). Tài liệu này cung cấp các giải thích chi tiết và ví dụ mã cho các tình huống khác nhau liên quan đến biểu thức chính quy và thao tác văn bản trong Aspose.Words cho .NET.
+Trả lời: Để biết thêm thông tin và ví dụ về cách sử dụng biểu thức chính quy trong Aspose.Words cho .NET, bạn có thể tham khảo[Aspose.Words cho tài liệu tham khảo API .NET](https://reference.aspose.com/words/net/). Tài liệu này cung cấp các giải thích chi tiết và ví dụ mã cho các tình huống khác nhau liên quan đến biểu thức chính quy và thao tác văn bản trong Aspose.Words for .NET.
 
 #### Câu hỏi: Tôi có thể thao tác các khía cạnh khác của tài liệu dựa trên các nhóm đã thu thập trong quá trình tìm kiếm và thay thế văn bản không?
 

@@ -1,18 +1,18 @@
 ---
 title: Bestellliste
 linktitle: Bestellliste
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET eine geordnete Liste erstellen.
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Erfahren Sie in der Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET geordnete Listen erstellen.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/ordered-list/
 ---
 
-In diesem Beispiel erklären wir, wie Sie die Funktionalität geordneter Listen mit Aspose.Words für .NET verwenden. Mit der geordneten Liste können Sie Elemente der Reihe nach mit Nummern organisieren.
+In diesem Beispiel erklären wir, wie Sie die Funktion „Sortierte Liste“ mit Aspose.Words für .NET verwenden. Mit geordneten Listen können Sie Elemente sequenziell mit Zahlen organisieren.
 
-## Schritt 1: Verwendung eines Dokumentengenerators
+## Schritt 1: Einen Dokumentgenerator verwenden
 
-Zuerst verwenden wir einen Dokumentengenerator, um ein neues Dokument zu erstellen.
+Zuerst verwenden wir einen Dokumentgenerator, um ein neues Dokument zu erstellen.
 
 ```csharp
 Document doc = new Document();
@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 2: Anwenden des geordneten Listenformats
 
- Wir werden das geordnete Listenformat mit dem Document Builder anwenden`ApplyBulletDefault`Methode. Wir können das Nummerierungsformat auch anpassen, indem wir zu den Listenebenen gehen und das gewünschte Format festlegen.
+ Wir wenden das geordnete Listenformat mithilfe des Dokumentgenerators an.`ApplyBulletDefault`Methode. Wir können das Nummerierungsformat auch anpassen, indem wir zu den Listenebenen gehen und das gewünschte Format festlegen.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
@@ -31,7 +31,7 @@ builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
 
 ## Schritt 3: Elemente zur Liste hinzufügen
 
- Mithilfe des Dokumentengenerators können wir Elemente zur Liste hinzufügen`Writeln` Methode.
+ Wir können Elemente zur Liste hinzufügen, indem wir den Dokumentgenerator verwenden`Writeln` Methode.
 
 ```csharp
 builder. Writen("Element 1");
@@ -40,7 +40,7 @@ builder. Writen("Element 2");
 
 ## Schritt 4: Liste einrücken
 
- Wir können die Liste mithilfe des Dokumentgenerators einrücken`ListIndent` Methode.
+ Wir können die Liste einrücken, indem wir den Dokumentgenerator verwenden`ListIndent` Methode.
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -52,7 +52,7 @@ builder.Writeln("Item 2b");
 
 Abschließend können wir das Dokument im gewünschten Format speichern.
 
-### Beispielquellcode für eine geordnete Liste mit Aspose.Words für .NET
+### Beispielquellcode für geordnete Liste mit Aspose.Words für .NET
 
 ```csharp
 Document doc = new Document();
@@ -71,27 +71,27 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Funktion für geordnete Listen mit Aspose.Words für .NET verwenden.
+Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Funktion „geordnete Liste“ mit Aspose.Words für .NET verwenden.
 
 
-### FAQs
+### Häufig gestellte Fragen
 
 #### F: Wie erstelle ich eine geordnete Liste in Markdown?
 
-A: Um eine geordnete Liste in Markdown zu erstellen, beginnen Sie jedes Listenelement mit einer Zahl gefolgt von einem Punkt (`1.`, `2.`, `3.`), gefolgt von einem Leerzeichen.
+A: Um eine geordnete Liste in Markdown zu erstellen, beginnen Sie jedes Listenelement mit einer Nummer, gefolgt von einem Punkt (`1.`, `2.`, `3.`), gefolgt von einem Leerzeichen.
 
 #### F: Können wir geordnete Listen in Markdown verschachteln?
 
-A: Ja, es ist möglich, geordnete Listen in Markdown zu verschachteln, indem vor jedem verschachtelten Listenelement vier versetzte Leerzeichen hinzugefügt werden.
+A: Ja, es ist möglich, geordnete Listen in Markdown zu verschachteln, indem Sie vor jedem verschachtelten Listenelement vier versetzte Leerzeichen hinzufügen.
 
 #### F: Wie kann ich die Nummerierung geordneter Listen anpassen?
 
-A: Im Standard-Markdown wird die geordnete Listennummerierung automatisch generiert. Bei einigen Markdown-Editoren können Sie es jedoch mithilfe bestimmter Erweiterungen anpassen.
+A: In Standard-Markdown wird die geordnete Listennummerierung automatisch generiert. Einige Markdown-Editoren ermöglichen jedoch die Anpassung mithilfe bestimmter Erweiterungen.
 
-#### F: Unterstützen geordnete Listen in Markdown die Einrückung?
+#### F: Unterstützen geordnete Listen in Markdown Einrückungen?
 
-A: Ja, geordnete Listen in Markdown unterstützen die Einrückung. Sie können eine Linksverschiebung mithilfe von Leerzeichen oder Tabulatoren hinzufügen.
+A: Ja, geordnete Listen in Markdown unterstützen Einrückungen. Sie können mit Leerzeichen oder Tabulatoren eine Linksverschiebung hinzufügen.
 
-#### F: Können Links oder Inline-Text zu Listenelementen hinzugefügt werden?
+#### F: Können zu Listenelementen Links oder Inline-Text hinzugefügt werden?
 
-A: Ja, Sie können mithilfe der entsprechenden Markdown-Syntax Links oder Inline-Text zu Listenelementen hinzufügen.
+A: Ja, Sie können mit der entsprechenden Markdown-Syntax Links oder Inline-Text zu Listenelementen hinzufügen.

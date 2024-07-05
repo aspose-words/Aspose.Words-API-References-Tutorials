@@ -105,7 +105,7 @@ header = doc.get_first_section().get_headers_footers().get_by_header_footer_type
 header.get_paragraphs().add("Header content")
 ```
 
-## Přidání hypertextových odkazů
+## Přidávání hypertextových odkazů
 
  Hypertextové odkazy lze přidat pomocí`insert_hyperlink` metoda:
 

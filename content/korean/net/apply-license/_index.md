@@ -13,6 +13,6 @@ url: /ko/net/apply-license/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [파일에서 라이센스 적용](./apply-license-from-file/) | .NET용 Aspose.Words를 사용하여 파일에서 라이선스를 적용하는 방법을 알아보세요.|
-| [스트림에서 라이선스 적용](./apply-license-from-stream/) | .NET용 Aspose.Words를 사용하여 스트림에서 라이선스를 적용하는 방법을 알아보세요.|
-| [계량 라이센스 적용](./apply-metered-license/) | .NET용 Aspose.Words를 사용하여 계량 라이선스를 적용하는 방법을 알아보세요. |
+| [파일에서 라이센스 적용](./apply-license-from-file/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words의 파일에서 라이선스를 적용하는 방법을 알아보세요. 손쉽게 라이브러리의 잠재력을 최대한 활용해 보세요. |
+| [스트림에서 라이선스 적용](./apply-license-from-stream/) | 이 단계별 가이드를 통해 Aspose.Words for .NET의 스트림에서 라이선스를 적용하는 방법을 알아보세요. Aspose.Words의 잠재력을 최대한 활용하세요. |
+| [계량 라이센스 적용](./apply-metered-license/) | 단계별 가이드를 통해 Aspose.Words for .NET에서 계량 라이선스를 적용하는 방법을 알아보세요. 유연하고 비용 효율적인 라이선싱이 간편해졌습니다. |

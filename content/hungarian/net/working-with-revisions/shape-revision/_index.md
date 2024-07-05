@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## 3. lépés: Szerezze be az alakzatgyűjteményt, és ellenőrizze a revíziókat.
+## 3. lépés: Szerezze be az alakzatgyűjteményt, és ellenőrizze a revíziókat
 
 Lekérjük az alakzatok gyűjteményét a dokumentumból, és ellenőrizzük az egyes alakzatokhoz tartozó változatokat.
 

@@ -181,7 +181,7 @@ doc1.compare(doc2, "comparison_result.docx");
 
 ### كيف أضبط حجم الصفحة على A4؟
 
- لتعيين حجم الصفحة على A4، يمكنك استخدام`PageSetup` فئة وحدد حجم الورق على النحو التالي:
+ لتعيين حجم الصفحة على A4، يمكنك استخدام`PageSetup` الفئة وحدد حجم الورق كما يلي:
 
 ```java
 Document doc = new Document();

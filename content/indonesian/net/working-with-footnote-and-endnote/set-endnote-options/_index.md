@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Langkah 4: Mengatur Opsi Catatan Akhir
 
- Akses`EndnoteOptions` properti dokumen untuk mengubah opsi catatan akhir. Dalam contoh ini, kami menetapkan aturan mulai ulang untuk memulai ulang pada setiap halaman dan posisinya di akhir bagian:
+ Akses`EndnoteOptions`properti dokumen untuk mengubah opsi catatan akhir. Dalam contoh ini, kami menetapkan aturan restart untuk memulai ulang pada setiap halaman dan posisinya di akhir bagian:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -81,7 +81,7 @@ Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasiny
 
 #### T: Bagaimana cara menata gaya catatan akhir di Aspose.Words?
 
-J: Untuk menata catatan akhir di Aspose.Words, Anda dapat menggunakan`EndnoteOptions` kelas dan`SeparatorNoteTextStyle` Properti. Anda dapat menentukan gaya font, ukuran, warna, dll. untuk catatan akhir menggunakan properti ini.
+ J: Untuk menata catatan akhir di Aspose.Words, Anda dapat menggunakan`EndnoteOptions` kelas dan`SeparatorNoteTextStyle` Properti. Anda dapat menentukan gaya font, ukuran, warna, dll. untuk catatan akhir menggunakan properti ini.
 
 #### T: Apakah mungkin untuk menyesuaikan penomoran catatan akhir dalam dokumen?
 
@@ -89,7 +89,7 @@ J: Untuk menata catatan akhir di Aspose.Words, Anda dapat menggunakan`EndnoteOpt
 
 #### T: Bagaimana cara memposisikan catatan akhir dalam dokumen?
 
- J: Untuk memposisikan catatan akhir dalam dokumen, Anda dapat menggunakan`Position` properti dari`EndnoteOptions` kelas. Anda dapat menentukan apakah catatan akhir harus ditempatkan di bagian bawah setiap halaman, di akhir setiap bagian, atau di akhir dokumen.
+J: Untuk memposisikan catatan akhir dalam dokumen, Anda dapat menggunakan`Position` properti dari`EndnoteOptions` kelas. Anda dapat menentukan apakah catatan akhir harus ditempatkan di bagian bawah setiap halaman, di akhir setiap bagian, atau di akhir dokumen.
 
 #### T: Dapatkah saya menyesuaikan format penomoran catatan akhir?
 
@@ -97,4 +97,4 @@ J: Untuk menata catatan akhir di Aspose.Words, Anda dapat menggunakan`EndnoteOpt
 
 #### T: Apakah mungkin untuk melanjutkan penomoran catatan akhir antar bagian dokumen?
 
-J: Ya, dimungkinkan untuk melanjutkan penomoran catatan akhir antar bagian dokumen. Menggunakan`RestartRule` properti dari`EndnoteOptions` kelas dan atur ke`RestartContinuous` untuk memungkinkan penomoran berlanjut antar bagian.
+ J: Ya, dimungkinkan untuk melanjutkan penomoran catatan akhir antar bagian dokumen. Menggunakan`RestartRule` properti dari`EndnoteOptions` kelas dan atur ke`RestartContinuous` untuk memungkinkan penomoran berlanjut antar bagian.

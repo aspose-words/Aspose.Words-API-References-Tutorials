@@ -1,6 +1,6 @@
 ---
-title: Testo italiano
-linktitle: Testo italiano
+title: Testo corsivo
+linktitle: Testo corsivo
 second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come scrivere il testo in corsivo con Aspose.Words per .NET Guida passo passo.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Utilizza un generatore di documenti per aggiungere contenuto al documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Rendi il testo in italiano.
+// Rendi il testo in corsivo.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

@@ -13,6 +13,6 @@ Deze pagina biedt een gedetailleerde handleiding over het toepassen van een lice
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Licentie uit bestand toepassen](./apply-license-from-file/) | Leer hoe u een licentie van een bestand toepast met Aspose.Words voor .NET.|
-| [Licentie van stream toepassen](./apply-license-from-stream/) | Leer hoe u een licentie van een stream toepast met Aspose.Words voor .NET.|
-| [Pas een gemeten licentie toe](./apply-metered-license/) | Leer hoe u een gemeten licentie toepast met Aspose.Words voor .NET. |
+| [Licentie uit bestand toepassen](./apply-license-from-file/) | Leer hoe u een licentie toepast op een bestand in Aspose.Words voor .NET met onze gedetailleerde, stapsgewijze handleiding. Ontgrendel moeiteloos het volledige potentieel van uw bibliotheek. |
+| [Licentie van stream toepassen](./apply-license-from-stream/) | Leer hoe u een licentie van een stream in Aspose.Words voor .NET toepast met deze stapsgewijze handleiding. Ontgrendel het volledige potentieel van Aspose.Words. |
+| [Pas een gemeten licentie toe](./apply-metered-license/) | Leer hoe u een gemeten licentie toepast in Aspose.Words voor .NET met onze stapsgewijze handleiding. Flexibele, kosteneffectieve licentieverlening eenvoudig gemaakt. |

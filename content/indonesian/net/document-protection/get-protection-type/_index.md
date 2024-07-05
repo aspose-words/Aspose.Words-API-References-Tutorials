@@ -50,7 +50,7 @@ Dalam artikel ini, kami menjelaskan cara menggunakan fungsi Dapatkan Jenis Perli
 
 J: Untuk mengambil jenis proteksi dokumen menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
 1.  Muat dokumen menggunakan`Document` kelas.
-2.  Akses`ProtectionType` properti dari`Document` objek untuk mengambil jenis perlindungan.
+2.  Akses`ProtectionType` properti dari`Document`objek untuk mengambil jenis perlindungan.
 
 #### T: Dapatkah saya menentukan apakah suatu dokumen dilindungi untuk formulir atau bidang formulir menggunakan properti ProtectionType?
 

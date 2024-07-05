@@ -2,7 +2,7 @@
 title: A diagram adatcímkéjének testreszabása
 linktitle: A diagram adatcímkéjének testreszabása
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan adhat hozzá és testreszabhat adatcímkéket diagramokhoz az Aspose.Words for .NET használatával, hogy további információkat nyújtson az adatpontokról.
+description: Ismerje meg, hogyan adhat hozzá és testreszabhat adatcímkéket egy diagramhoz az Aspose.Words for .NET használatával, hogy további információkat nyújtson az adatpontokról.
 type: docs
 weight: 10
 url: /hu/net/programming-with-charts/chart-data-label/
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
- Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder` tiltakozik a dokumentummal való munkavégzésre.
+ Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder`tiltakozik a dokumentummal való munkavégzésre.
 
 ```csharp
 Document doc = new Document();

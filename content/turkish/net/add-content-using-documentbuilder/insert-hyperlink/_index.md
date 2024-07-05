@@ -41,7 +41,7 @@ Başlamak için Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun. K
 
 Aspose.Words for .NET'i yükleyin
 
-Daha sonra Aspose.Words for .NET kitaplığını yüklemeniz gerekecek. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz. Çözüm Gezgini'nde projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin, "Apose.Words" ifadesini arayın ve yükleyin.
+Daha sonra Aspose.Words for .NET kitaplığını yüklemeniz gerekecek. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz. Çözüm Gezgini'nde projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin, "Aspose.Words" ifadesini arayın ve yükleyin.
 
 ## Adım 2: Belgeyi Başlatın
 
@@ -92,7 +92,7 @@ Köprüyü Ekle
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 ```
 
-Bu satıra, "Apose Web Sitesi" görünen metnini ve "http://www.aspose.com" URL'sini içeren bir köprü ekliyoruz.
+Bu satıra, "Aspose Web Sitesi" görünen metnini ve "http://www.aspose.com" URL'sini içeren bir köprü ekliyoruz.
 
 ## Adım 6: Biçimlendirmeyi Temizle
 

@@ -117,7 +117,7 @@ A fusão de macros Aspose.Words para Python e VBA oferece uma porta de entrada p
  Você pode baixar a versão mais recente do Aspose.Words for Python em[Aspor site](https://releases.aspose.com/words/python/).
 
 ### Posso usar macros VBA com outros aplicativos do Microsoft Office?
-Sim, as macros VBA podem ser usadas em vários aplicativos do Microsoft Office, incluindo Excel e PowerPoint.
+Sim, as macros VBA podem ser utilizadas em vários aplicativos do Microsoft Office, incluindo Excel e PowerPoint.
 
 ### Há algum risco de segurança associado ao uso de macros VBA?
 Embora as macros VBA possam aprimorar a automação, elas também podem representar riscos de segurança se não forem usadas com cuidado. Certifique-se sempre de que as macros sejam de fontes confiáveis e considere a implementação de medidas de segurança.

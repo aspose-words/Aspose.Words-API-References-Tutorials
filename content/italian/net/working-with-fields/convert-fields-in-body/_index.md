@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 
 ## Conclusione
 
-Padroneggiare l'arte di manipolare i campi dei documenti utilizzando Aspose.Words per .NET consente agli sviluppatori di automatizzare i flussi di lavoro dei documenti in modo efficiente. Sia che si tratti di convertire i campi in testo semplice o di gestire tipi di campi più complessi, Aspose.Words semplifica queste attività con la sua API intuitiva e un robusto set di funzionalità, garantendo una perfetta integrazione nelle applicazioni .NET.
+Padroneggiare l'arte di manipolare i campi dei documenti utilizzando Aspose.Words per .NET consente agli sviluppatori di automatizzare i flussi di lavoro dei documenti in modo efficiente. Che si tratti di convertire i campi in testo semplice o di gestire tipi di campi più complessi, Aspose.Words semplifica queste attività con la sua API intuitiva e un robusto set di funzionalità, garantendo una perfetta integrazione nelle applicazioni .NET.
 
 ## Domande frequenti (FAQ)
 
@@ -83,7 +83,7 @@ Aspose.Words supporta vari tipi di campi come DATE, PAGE, MERGEFIELD e altri, co
 Sì, Aspose.Words per .NET può convertire e manipolare campi in formati come DOCX, DOC, RTF e altri senza problemi.
 
 ### Dove posso trovare la documentazione completa per Aspose.Words per .NET?
- Sono disponibili documentazione dettagliata e riferimenti API.[Qui](https://reference.aspose.com/words/net/).
+ Sono disponibili documentazione dettagliata e riferimenti API[Qui](https://reference.aspose.com/words/net/).
 
 ### È disponibile una versione di prova per Aspose.Words per .NET?
  Sì, puoi scaricare una versione di prova gratuita da[Qui](https://releases.aspose.com/).

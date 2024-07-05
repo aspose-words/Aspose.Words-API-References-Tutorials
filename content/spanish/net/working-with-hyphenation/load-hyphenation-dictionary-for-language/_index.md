@@ -64,12 +64,12 @@ Siéntase libre de utilizar este código en sus propios proyectos y modificarlo 
 
 #### P: ¿Dónde puedo encontrar archivos de diccionario de silabización para diferentes idiomas?
 
-R: Puede encontrar archivos de diccionario de silabización para diferentes idiomas en varios recursos en línea. Estos archivos suelen estar en formato XML o TEX. Puede encontrar diccionarios de silabización de código abierto para diferentes idiomas en sitios web dedicados a proyectos de lingüística o repositorios de código fuente.
+R: Puede encontrar archivos de diccionario de silabización para diferentes idiomas en varios recursos en línea. Estos archivos suelen estar en formato XML o TEX. Puede encontrar diccionarios de silabización de código abierto para diferentes idiomas en sitios web dedicados a proyectos lingüísticos o repositorios de código fuente.
 
 #### P: ¿Cómo puedo aplicar el diccionario silábico cargado a un documento en Aspose.Words?
 
 R: Para aplicar el diccionario de silabización cargado a un documento en Aspose.Words, necesita iterar sobre las palabras en el documento y usar el`Hyphenate()` método de la`Hyphenation` clase para conseguir la silabización de las palabras. Luego puede formatear las palabras con sílabas según sea necesario, por ejemplo agregando guiones entre sílabas.
 
-#### P: ¿Qué idiomas se admiten para la silabización en Aspose.Words?
+#### P: ¿Qué idiomas son compatibles con la silabización en Aspose.Words?
 
 R: Aspose.Words admite la silabización en varios idiomas, incluidos inglés, francés, español, alemán, italiano, holandés, ruso, portugués, sueco, noruego, danés, finlandés, polaco, checo y muchos más. Consulte la documentación de Aspose.Words para obtener la lista completa de idiomas admitidos para la silabización.

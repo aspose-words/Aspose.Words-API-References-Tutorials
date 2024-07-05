@@ -20,7 +20,7 @@ url: /ru/python-net/word-automation/word-automation-made-easy/
 
 Aspose.Words — популярная библиотека, упрощающая работу с документами Word на Python. Для начала вам необходимо установить библиотеку в вашей системе.
 
-### Установка AsposeWords.
+### Установка Aspose.Words
 
 Чтобы установить Aspose.Words для Python, выполните следующие действия:
 
@@ -54,7 +54,7 @@ paragraph = doc.get_child_nodes(aw.NodeType.PARAGRAPH, True).add("Hello, this is
 
 ## Форматирование документа
 
-Форматирование необходимо для того, чтобы сделать наши документы визуально интересными и структурированными. Aspose.Words позволяет нам применять различные параметры форматирования.
+Форматирование необходимо для того, чтобы сделать наши документы визуально привлекательными и структурированными. Aspose.Words позволяет нам применять различные параметры форматирования.
 
 ```python
 # Apply bold formatting to the first paragraph
@@ -90,7 +90,7 @@ paragraph = doc.get_child_nodes(aw.NodeType.PARAGRAPH, True).add(shape)
 
 ## Управление разделами документа
 
-Aspose.Words позволяет нам разделить наши документы на разделы, каждый со своими свойствами.
+Aspose.Words позволяет нам разделить наши документы на разделы, каждый из которых имеет свои собственные свойства.
 
 ```python
 # Add a new section to the document

@@ -1,43 +1,43 @@
 ---
-title: Word ドキュメントで Vba プロジェクトを作成する
-linktitle: Word ドキュメントで Vba プロジェクトを作成する
+title: Word 文書で VBA プロジェクトを作成する
+linktitle: Word 文書で VBA プロジェクトを作成する
 second_title: Aspose.Words ドキュメント処理 API
-description: このチュートリアルでは、Aspose.Words for .NET を使用して Word ドキュメント内に VBA プロジェクトを作成する方法を学びます。
+description: このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に VBA プロジェクトを作成する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-vba-macros/create-vba-project/
 ---
 
-このチュートリアルでは、.NET 用の Aspose.Words ライブラリを使用して Word ドキュメント内に VBA プロジェクトを作成する方法を説明します。 VBA プロジェクトを作成すると、カスタム VBA コードを Word 文書に追加できます。 .NET プロジェクトのコードを理解して実装できるように、段階的に説明します。
+このチュートリアルでは、.NET 用の Aspose.Words ライブラリを使用して Word 文書に VBA プロジェクトを作成する方法を説明します。VBA プロジェクトを作成すると、Word 文書にカスタム VBA コードを追加できます。.NET プロジェクトでコードを理解して実装できるように、手順を追って説明します。
 
 ## 前提条件
 始める前に、次のものが揃っていることを確認してください。
-- C# プログラミング言語に関する実践的な知識
+- C#プログラミング言語の実用的な知識
 - プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
 
-## ステップ 1: ドキュメント ディレクトリを定義する
-まず、Word 文書の場所へのディレクトリ パスを設定する必要があります。交換する`"YOUR DOCUMENT DIRECTORY"`コード内で適切なパスを指定します。
+## ステップ1: ドキュメントディレクトリを定義する
+まず、Word文書の場所にディレクトリパスを設定する必要があります。`"YOUR DOCUMENT DIRECTORY"`コード内に適切なパスを追加します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## ステップ 2: 新しい VBA ドキュメントとプロジェクトを作成する
-次に、インスタンス化して新しいドキュメントを作成します。`Document`クラスと空の VBA プロジェクトをインスタンス化して、`VbaProject`クラス。
+## ステップ2: 新しいVBAドキュメントとプロジェクトを作成する
+次に、インスタンス化して新しいドキュメントを作成します。`Document`クラスと空のVBAプロジェクトをインスタンス化して`VbaProject`クラス。
 
 ```csharp
 //新しいドキュメントを作成する
 Document doc = new Document();
 
-//新しい VBA プロジェクトを作成する
+//新しいVBAプロジェクトを作成する
 VbaProject project = new VbaProject();
 project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## ステップ 3: 新しいモジュールを作成し、マクロ ソース コードを指定します。
-をインスタンス化して新しいモジュールを作成します。`VbaModule`クラスを指定し、マクロ名、タイプ (手続き型モジュール)、およびソース コードを指定します。
+## ステップ3: 新しいモジュールを作成し、マクロのソースコードを指定する
+インスタンス化して新しいモジュールを作成します。`VbaModule`クラスとマクロ名、タイプ (手続き型モジュール)、ソース コードを指定します。
 
 ```csharp
 //新しいモジュールを作成する
@@ -46,12 +46,12 @@ module.Name = "AsposeModule";
 module.Type = VbaModuleType.ProceduralModule;
 module.SourceCode = "New Source Code";
 
-//モジュールを VBA プロジェクトに追加します
+//VBAプロジェクトにモジュールを追加する
 doc.VbaProject.Modules.Add(module);
 ```
 
-## ステップ 4: ドキュメントを保存する
-最後に、VBA プロジェクトを作成したドキュメントをファイルに保存します。
+## ステップ4: ドキュメントを保存する
+最後に、VBA プロジェクトが作成されたドキュメントをファイルに保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
@@ -80,26 +80,26 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して Word ドキュメント内に VBA プロジェクトを作成する方法を説明しました。 VBA プロジェクトを作成すると、Word 文書に VBA コードを追加してカスタマイズできます。この機能を自由に使用して、タスクを自動化したり、Word 文書にカスタム機能を追加したりできます。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に VBA プロジェクトを作成する方法を説明しました。VBA プロジェクトを作成すると、Word 文書に VBA コードを追加してカスタマイズできます。この機能を使用して、タスクを自動化したり、Word 文書にカスタム機能を追加したりすることができます。
 
 ### よくある質問
 
-#### Q: Word 文書内の VBA プロジェクトとは何ですか?
+#### Q: Word 文書の VBA プロジェクトとは何ですか?
 
-A: Word 文書内の VBA プロジェクトは、タスクの自動化、カスタム機能の追加、または Word 文書内での特定の操作の実行に使用できるコードを含む VBA モジュールのコレクションです。
+A: Word 文書内の VBA プロジェクトは、Word 文書内でタスクを自動化したり、カスタム機能を追加したり、特定の操作を実行したりするために使用できるコードを含む VBA モジュールのコレクションです。
 
 #### Q: Word 文書で VBA プロジェクトを作成するための前提条件は何ですか?
 
-A: Word 文書で VBA プロジェクトを作成するには、C# プログラミング言語に関する実践的な知識が必要です。 Aspose.Words for .NET ライブラリをプロジェクトにインストールする必要もあります。
+A: Word 文書で VBA プロジェクトを作成するには、C# プログラミング言語の実用的な知識が必要です。また、プロジェクトに Aspose.Words for .NET ライブラリをインストールする必要があります。
 
-#### Q: コード内でドキュメント ディレクトリを設定するにはどうすればよいですか?
+#### Q: コード内でドキュメントディレクトリを設定するにはどうすればいいですか?
 
- A: 提供されているコードを置き換える必要があります。`"YOUR DOCUMENTS DIRECTORY"` Word 文書を VBA プロジェクトとともに保存するディレクトリへの適切なパスを指定します。
+ A: 提供されたコードでは、`"YOUR DOCUMENTS DIRECTORY"` VBA プロジェクトを含む Word 文書を保存するディレクトリへの適切なパスを指定します。
 
 #### Q: VBA モジュールでマクロ ソース コードを指定するにはどうすればよいですか?
 
- A: VBA モジュールでマクロのソース コードを指定するには、`SourceCode`の財産`VbaModule`クラスに VBA コードを含む文字列を割り当てます。
+ A: VBAモジュールでマクロのソースコードを指定するには、`SourceCode`の財産`VbaModule` VBA コードを含む文字列を割り当てることでクラスを作成します。
 
 #### Q: Word 文書内の VBA プロジェクトに複数の VBA モジュールを追加できますか?
 
-A: はい、複数の VBA モジュールをインスタンス化することで、Word 文書内の VBA プロジェクトに複数の VBA モジュールを追加できます。`VbaModule`オブジェクトを作成し、それらを`Modules`のコレクション`VbaProject`物体。これにより、VBA コードをさまざまなモジュールに編成して、管理と再利用が容易になります。
+A: はい、複数のVBAモジュールをインスタンス化することで、Word文書内のVBAプロジェクトに複数のVBAモジュールを追加できます。`VbaModule`オブジェクトを追加して`Modules`コレクションの`VbaProject`オブジェクト。これにより、VBA コードをさまざまなモジュールに整理して、管理と再利用を向上させることができます。

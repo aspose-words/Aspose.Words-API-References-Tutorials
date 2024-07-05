@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passaggio 3: passare al paragrafo desiderato
 
- Ecco dove avviene la magia. Ci sposteremo al paragrafo desiderato utilizzando il`MoveToParagraph` metodo. Questo metodo accetta due parametri: l'indice del paragrafo e la posizione del carattere all'interno di quel paragrafo.
+ Ecco dove avviene la magia. Passeremo al paragrafo desiderato utilizzando il`MoveToParagraph` metodo. Questo metodo accetta due parametri: l'indice del paragrafo e la posizione del carattere all'interno di quel paragrafo.
 
 ```csharp
 builder.MoveToParagraph(2, 0);

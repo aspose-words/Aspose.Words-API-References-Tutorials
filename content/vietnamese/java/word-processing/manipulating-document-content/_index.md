@@ -20,7 +20,7 @@ Trước khi đi sâu vào chi tiết cụ thể về thao tác nội dung tài 
    
     Bắt đầu bằng cách tải xuống Aspose.Words cho Java từ liên kết tải xuống:[Aspose.Words cho Java Tải xuống](https://releases.aspose.com/words/java/). Cài đặt nó theo tài liệu được cung cấp.
 
-2. Tham khảo API
+2. Tham chiếu API
    
    Làm quen với API Aspose.Words cho Java bằng cách khám phá tài liệu:[Aspose.Words để tham khảo API Java](https://reference.aspose.com/words/java/). Tài nguyên này sẽ là người hướng dẫn bạn trong suốt cuộc hành trình này.
 

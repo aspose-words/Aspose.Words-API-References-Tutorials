@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.WarningCallback = substitutionWarningHandler;
 ```
 
-## Étape 3 : ajouter des sources de polices personnalisées
+## Étape 3 : Ajouter des sources de polices personnalisées
 
 Dans cette étape, nous ajouterons des sources de polices personnalisées pour garantir qu'Aspose.Words puisse localiser et utiliser les polices appropriées. Ceci est particulièrement utile si vous avez des polices spécifiques stockées dans des répertoires personnalisés.
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Étape 5 : Créer la classe de gestionnaire d’avertissements
 
-Pour gérer efficacement les avertissements, créez une classe personnalisée qui implémente le`IWarningCallback` interface. Cette classe capturera et enregistrera tous les avertissements de substitution de police.
+ Pour gérer efficacement les avertissements, créez une classe personnalisée qui implémente le`IWarningCallback` interface. Cette classe capturera et enregistrera tous les avertissements de substitution de police.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Vous maîtrisez désormais le processus de gestion de la substitution de polices
 
 ### Q1 : Comment puis-je utiliser les polices de plusieurs répertoires personnalisés ?
 
- Vous pouvez en ajouter plusieurs`FolderFontSource` instances à la`fontSources` répertoriez et mettez à jour les sources de polices en conséquence.
+ Vous pouvez en ajouter plusieurs`FolderFontSource` instances à la`fontSources`répertoriez et mettez à jour les sources de polices en conséquence.
 
 ### Q2 : Où puis-je télécharger un essai gratuit d'Aspose.Words pour .NET ?
 

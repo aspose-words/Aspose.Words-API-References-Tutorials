@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: สร้างเอกสารใหม่และ DocumentBuilder
- สร้างอินสแตนซ์ใหม่ของ`Document` คลาสและก`DocumentBuilder` คัดค้านการทำงานกับเอกสาร
+ สร้างอินสแตนซ์ใหม่ของ`Document` คลาสและก`DocumentBuilder`คัดค้านการทำงานกับเอกสาร
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 3: แทรกและกำหนดค่ารูปร่าง
- แทรกรูปร่างลงในเอกสารโดยใช้`InsertShape` วิธีการของ`DocumentBuilder` วัตถุ วัตถุ กำหนดขนาดรูปร่างที่ต้องการ
+ แทรกรูปร่างลงในเอกสารโดยใช้`InsertShape` วิธีการของ`DocumentBuilder` วัตถุ. กำหนดขนาดรูปร่างที่ต้องการ
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);

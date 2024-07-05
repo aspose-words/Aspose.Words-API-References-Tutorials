@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## Çözüm
 
-Bu kılavuzda, .NET için Aspose.Words kütüphanesini kullanarak kirli alanları güncelleyerek bir belgenin nasıl yükleneceğini anlattık. Verilen adımları takip ederek ve verilen C# kaynak kodunu kullanarak bu işlevselliği C# uygulamanıza kolayca uygulayabilirsiniz. Belge yükündeki Kirli alanları güncelle, Word belgenizdeki en son değerleri gösterecektir.
+Bu kılavuzda, .NET için Aspose.Words kütüphanesini kullanarak kirli alanları güncelleyerek bir belgenin nasıl yükleneceğini anlattık. Verilen adımları takip ederek ve verilen C# kaynak kodunu kullanarak bu işlevselliği C# uygulamanıza kolayca uygulayabilirsiniz. Belge yüklemesindeki Kirli alanları güncelleme, Word belgenizdeki en son değerleri görüntüler.
 
 
 ### Word belgesindeki kirli alanların güncellenmesine ilişkin SSS'ler

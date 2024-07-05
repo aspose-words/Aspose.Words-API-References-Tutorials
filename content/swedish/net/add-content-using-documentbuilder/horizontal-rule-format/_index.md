@@ -9,7 +9,7 @@ url: /sv/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
 ## Introduktion
 
-När det gäller .NET-utveckling kan det vara en skrämmande uppgift att manipulera och formatera Word-dokument programmatiskt. Lyckligtvis tillhandahåller Aspose.Words för .NET en robust lösning som ger utvecklare möjlighet att automatisera dokumentskapande, redigering och hantering med lätthet. Den här artikeln går in på en av de viktigaste funktionerna: infoga horisontella regler i Word-dokument. Oavsett om du är en erfaren utvecklare eller precis har börjat med Aspose.Words, kommer att bemästra denna förmåga att förbättra din dokumentgenereringsprocess.
+När det gäller .NET-utveckling kan det vara en skrämmande uppgift att manipulera och formatera Word-dokument programmatiskt. Lyckligtvis tillhandahåller Aspose.Words för .NET en robust lösning som ger utvecklare möjlighet att automatisera dokumentskapande, redigering och hantering med lätthet. Den här artikeln fördjupar sig i en av de väsentliga funktionerna: infoga horisontella regler i Word-dokument. Oavsett om du är en erfaren utvecklare eller precis har börjat med Aspose.Words, kommer att bemästra denna förmåga att förbättra din dokumentgenereringsprocess.
 
 ## Förutsättningar
 
@@ -96,4 +96,4 @@ Ja, du kan anpassa olika aspekter som justering, bredd, höjd, färg och skuggni
 Ja, Aspose.Words används flitigt i företagsmiljöer för sina robusta dokumenthanteringsmöjligheter.
 
 ### Var kan jag få support för Aspose.Words för .NET?
- För support och samhällsengagemang, besök[Aspose.Words forum](https://forum.aspose.com/c/words/8).
+ För stöd och samhällsengagemang, besök[Aspose.Words forum](https://forum.aspose.com/c/words/8).

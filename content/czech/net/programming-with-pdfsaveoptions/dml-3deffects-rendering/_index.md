@@ -55,7 +55,7 @@ Ujistěte se, že jste zadali správnou cestu pro uložení převedeného PDF.
 	 
 ```
 
-Pomocí následujících kroků můžete snadno povolit vykreslování 3D DML efektů při převodu do PDF pomocí Aspose.Words for .NET.
+Pomocí těchto kroků můžete snadno povolit vykreslování 3D DML efektů při převodu do PDF pomocí Aspose.Words for .NET.
 
 ## Závěr
 

@@ -128,7 +128,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool sh
 
 #### Q：我可以使用條件根據文件中的合併欄位值顯示或隱藏書籤嗎？
 
-答：是的，您可以使用條件和合併欄位值來確定是否應顯示或隱藏書籤。您可以自訂程式碼`ShowHideBookmarkedContent`函數考慮適當的條件和值。
+答：是的，您可以使用條件和合併欄位值來確定是否應顯示或隱藏書籤。您可以自訂以下程式碼`ShowHideBookmarkedContent`函數考慮適當的條件和值。
 
 #### Q：如何使用 Aspose.Words for .NET 刪除 Word 文件中的書籤？
 

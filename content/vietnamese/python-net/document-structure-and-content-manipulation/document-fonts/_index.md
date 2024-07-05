@@ -29,7 +29,7 @@ Kích thước phông chữ xác định sự nổi bật trực quan của văn
 
 ### Kiểu phông chữ
 
-Kiểu phông chữ thêm điểm nhấn cho văn bản. Văn bản in đậm biểu thị tầm quan trọng, trong khi văn bản in nghiêng thường biểu thị định nghĩa hoặc thuật ngữ nước ngoài. Việc gạch chân cũng có thể làm nổi bật những điểm chính.
+Kiểu phông chữ thêm điểm nhấn cho văn bản. Văn bản in đậm biểu thị tầm quan trọng, trong khi văn bản in nghiêng thường biểu thị một định nghĩa hoặc thuật ngữ nước ngoài. Việc gạch chân cũng có thể làm nổi bật những điểm chính.
 
 ## Màu văn bản và đánh dấu
 

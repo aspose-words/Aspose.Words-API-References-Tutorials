@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Itt a dokumentumkészítővel három cellát tartalmazó táblázatot készítünk. Az első cella preferált szélessége 40 pont, a második cella szélessége a táblázat szélességének 20%-a, a harmadik cella pedig automatikusan beállítható.
+Itt a dokumentumkészítővel három cellát tartalmazó táblázatot készítünk. Az első cella preferált szélessége 40 pont, a második cella preferált szélessége a táblázat szélességének 20%-a, a harmadik cellának pedig automatikus preferált szélessége van, amely beállítja
 
   a rendelkezésre álló helytől függően.
 

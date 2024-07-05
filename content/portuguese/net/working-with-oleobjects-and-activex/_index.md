@@ -10,7 +10,7 @@ url: /pt/net/working-with-oleobjects-and-activex/
 
 Os tutoriais do Aspose.Words para .NET sobre processamento de palavras com objetos OLE e ActiveX orientam você nos vários recursos e técnicas para manipular efetivamente objetos OLE e ActiveX em seus documentos do Word. Nestes tutoriais, você aprenderá como inserir, fazer check-out, atualizar e excluir objetos OLE e ActiveX, como gráficos, planilhas e controles ActiveX, em seus documentos do Word. Você também aprenderá como personalizar a aparência e o comportamento desses objetos, bem como lidar com erros e exceções relacionados a objetos OLE e ActiveX.
 
-Esses tutoriais fornecem uma abordagem prática passo a passo para processamento de palavras com objetos OLE e ActiveX no Aspose.Words for .NET. Você aprenderá como manipular esses objetos usando as diferentes classes e métodos fornecidos pela biblioteca Aspose.Words. Os exemplos de código claros e comentados ajudarão você a compreender e praticar os conceitos apresentados. Com esse conhecimento, você poderá explorar totalmente a funcionalidade dos objetos OLE e ActiveX em seus documentos Word, agregando interatividade e riqueza visual a eles.
+Esses tutoriais fornecem uma abordagem prática passo a passo para processamento de palavras com objetos OLE e ActiveX no Aspose.Words for .NET. Você aprenderá como manipular esses objetos usando as diferentes classes e métodos fornecidos pela biblioteca Aspose.Words. Os exemplos de código claros e comentados ajudarão você a compreender e praticar os conceitos apresentados. Com esse conhecimento, você poderá explorar totalmente a funcionalidade dos objetos OLE e ActiveX em seus documentos Word, agregando-lhes interatividade e riqueza visual.
 
  ## Tutoriais
 | Título | Descrição |

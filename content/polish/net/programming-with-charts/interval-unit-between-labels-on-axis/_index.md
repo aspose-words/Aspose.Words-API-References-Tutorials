@@ -17,7 +17,7 @@ Upewnij się, że masz następujące wymagania wstępne:
 - Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
 - Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres.
+## Krok 2: Utwórz nowy dokument i wstaw wykres
 
  Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
 
@@ -94,7 +94,7 @@ Dzięki Aspose.Words dla .NET masz możliwość dostosowania różnych aspektów
 ### Często zadawane pytania
 
 #### Pytanie 1. Co to są etykiety osi na wykresie?
-Etykiety osi na wykresie odnoszą się do tekstowej reprezentacji wartości wzdłuż osi poziomej (oś X) lub pionowej (oś Y) wykresu. Etykiety te pomagają zidentyfikować i zinterpretować punkty danych naniesione na wykres. Etykiety osi zapewniają kontekst i pozwalają użytkownikom zrozumieć skalę i zakres wartości na wykresie.
+Etykiety osi na wykresie odnoszą się do tekstowej reprezentacji wartości wzdłuż osi poziomej (oś X) lub pionowej (oś Y). Etykiety te pomagają zidentyfikować i zinterpretować punkty danych naniesione na wykres. Etykiety osi zapewniają kontekst i pozwalają użytkownikom zrozumieć skalę i zakres wartości na wykresie.
 
 #### Pytanie 2. Jak mogę dostosować odstępy między etykietami osi?
  Aby dostosować odstępy między etykietami osi na wykresie za pomocą Aspose.Words dla .NET, możesz uzyskać dostęp do`AxisX` Lub`AxisY` właściwość wykresu i zmodyfikuj`TickLabelSpacing` nieruchomość. Ustawiając`TickLabelSpacing` do określonej wartości, możesz kontrolować jednostkę odstępu pomiędzy etykietami na odpowiedniej osi, dostosowując odstępy zgodnie ze swoimi wymaganiami.

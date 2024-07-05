@@ -124,7 +124,7 @@ R : Oui, la fonction Déchiffrer les signets de ligne modifie le document origin
 
 #### Q : Comment puis-je identifier les signets de ligne dans mon document Word ?
 
-R : Les signets de lignes sont généralement utilisés dans les tableaux pour marquer des sections spécifiques. Vous pouvez identifier les signets de lignes en parcourant les signets dans le document et en vérifiant si les signets se trouvent dans les lignes du tableau.
+R : Les signets de ligne sont généralement utilisés dans les tableaux pour marquer des sections spécifiques. Vous pouvez identifier les signets de lignes en parcourant les signets dans le document et en vérifiant si les signets se trouvent dans les lignes du tableau.
 
 #### Q : Est-il possible de démêler les signets de lignes dans les tableaux non adjacents ?
 

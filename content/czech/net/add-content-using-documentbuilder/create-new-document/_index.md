@@ -1,6 +1,6 @@
 ---
-title: Vytvořte nový dokument aplikace Word
-linktitle: Vytvořte nový dokument aplikace Word
+title: Vytvořit nový dokument aplikace Word
+linktitle: Vytvořit nový dokument aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se vytvářet dokumenty aplikace Word pomocí Aspose.Words for .NET. Tento průvodce vás krok za krokem provede celým procesem a usnadní automatizaci dokumentů.
 type: docs
@@ -103,4 +103,4 @@ Můžete vytvářet a manipulovat s formáty DOC, DOCX, PDF, HTML a mnoha dalš�
 
 ### Kde najdu další dokumentaci a příklady?
 
- Podívejte se na[Aspose.Words pro .NET dokumentaci](https://reference.aspose.com/words/net/) pro další příklady a podrobné návody.
+ Podívejte se na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) pro další příklady a podrobné návody.

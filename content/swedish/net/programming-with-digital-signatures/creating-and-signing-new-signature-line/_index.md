@@ -105,7 +105,7 @@ S: För att skapa en signaturrad i ett Word-dokument med Aspose.Words för .NET,
 
 #### F: Kan jag anpassa signaturradsalternativen, som namn, titel och datum?
 
- S: Ja, du kan anpassa signaturradsalternativen. De`SignatureLineOptions` klass tillhandahåller egenskaper för att ställa in önskade alternativ, som t.ex`Signer`, `SignerTitle`, `ShowDate`, etc. Du kan ändra dessa egenskaper innan du infogar signaturraden.
+ S: Ja, du kan anpassa signaturlinjealternativen. De`SignatureLineOptions` klass tillhandahåller egenskaper för att ställa in önskade alternativ, som t.ex`Signer`, `SignerTitle`, `ShowDate`, etc. Du kan ändra dessa egenskaper innan du infogar signaturraden.
 
 #### F: Hur kan jag signera dokumentet efter att ha skapat en signaturrad?
 

@@ -57,7 +57,7 @@ Selamat! Anda sekarang telah mempelajari cara menerapkan gaya teks coretan denga
 
 #### Q: Apakah mungkin untuk menambahkan teks yang dicoret ke beberapa bagian teks dalam paragraf yang sama?
 
- J: Ya, Anda dapat menambahkan teks yang dicoret ke beberapa bagian teks dalam satu paragraf dengan menggunakan beberapa bagian.`Run` objek. Anda dapat membuat banyak`Run` objek dan atur`Font.StrikeThrough`properti ke`true` untuk setiap objek untuk menambahkan teks yang dicoret ke bagian teks yang diinginkan. Kemudian Anda dapat menambahkannya ke paragraf menggunakan`Paragraph.AppendChild(run)` metode.
+ J: Ya, Anda dapat menambahkan teks yang dicoret ke beberapa bagian teks dalam satu paragraf dengan menggunakan beberapa bagian`Run` objek. Anda dapat membuat banyak`Run` objek dan atur`Font.StrikeThrough`properti ke`true` untuk setiap objek untuk menambahkan teks yang dicoret ke bagian teks yang diinginkan. Kemudian Anda dapat menambahkannya ke paragraf menggunakan`Paragraph.AppendChild(run)` metode.
 
 #### T: Bisakah saya menambahkan teks yang dicoret ke teks yang ada di tabel atau sel di Aspose.Words?
 

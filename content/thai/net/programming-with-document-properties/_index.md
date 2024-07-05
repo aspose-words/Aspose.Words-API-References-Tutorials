@@ -17,7 +17,7 @@ url: /th/net/programming-with-document-properties/
 | ชื่อ | คำอธิบาย |
 | --- | --- |
 | [รับตัวแปร](./get-variables/) | คำแนะนำทีละขั้นตอนในการดึงข้อมูลตัวแปรเอกสารด้วย Aspose.Words สำหรับ .NET |
-| [แจกแจงคุณสมบัติ](./enumerate-properties/) | คำแนะนำทีละขั้นตอนในการแจงนับคุณสมบัติเอกสารด้วย Aspose.Words สำหรับ .NET |
+| [แจกแจงคุณสมบัติ](./enumerate-properties/) | คำแนะนำทีละขั้นตอนในการแจงนับคุณสมบัติของเอกสารด้วย Aspose.Words สำหรับ .NET |
 | [เพิ่มคุณสมบัติเอกสารแบบกำหนดเอง](./add-custom-document-properties/) | คำแนะนำทีละขั้นตอนในการเพิ่มคุณสมบัติแบบกำหนดเองให้กับเอกสารด้วย Aspose.Words สำหรับ .NET |
 | [ลบคุณสมบัติเอกสารแบบกำหนดเอง](./remove-custom-document-properties/) | คำแนะนำทีละขั้นตอนในการลบคุณสมบัติแบบกำหนดเองออกจากเอกสารด้วย Aspose.Words สำหรับ .NET |
 | [ลบข้อมูลส่วนบุคคล](./remove-personal-information/) | คำแนะนำทีละขั้นตอนในการลบข้อมูลส่วนบุคคลออกจากเอกสารด้วย Aspose.Words for .NET |

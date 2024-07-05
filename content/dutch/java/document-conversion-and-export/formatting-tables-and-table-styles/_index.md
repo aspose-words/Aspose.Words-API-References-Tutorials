@@ -262,7 +262,7 @@ builder.writeln("I'm a wonderfully formatted row.");
 
 ## Conclusie
 
-Met Aspose.Words voor Java kunt u tabellen opmaken en tabelstijlen nauwkeurig toepassen. Van het aanpassen van de individuele celopmaak tot het maken van aangepaste tabelstijlen: u beschikt over de hulpmiddelen om uw documenten visueel aantrekkelijk en overzichtelijk te maken.
+Met Aspose.Words voor Java kunt u tabellen opmaken en tabelstijlen nauwkeurig toepassen. Van het wijzigen van de individuele celopmaak tot het maken van aangepaste tabelstijlen: u beschikt over de hulpmiddelen om uw documenten visueel aantrekkelijk en georganiseerd te maken.
 
 ## Veelgestelde vragen
 

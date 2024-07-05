@@ -1,18 +1,18 @@
 ---
-title: Lizenz anwenden
-linktitle: Lizenz anwenden
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+title: Lizenz beantragen
+linktitle: Lizenz beantragen
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erhalten Sie Schritt-für-Schritt-Anleitungen zum Anwenden einer Aspose.Words-Lizenz in Ihren .NET-Projekten. Befolgen Sie die Schritte, um die volle Funktionalität der Aspose.Words-Bibliothek zu aktivieren.
 type: docs
 weight: 10
 url: /de/net/apply-license/
 ---
 
-Auf dieser Seite finden Sie eine detaillierte Anleitung zum Anwenden einer Lizenz in Projekten mit Aspose.Words für .NET. In diesem Tutorial wird Schritt für Schritt erklärt, wie Sie mit einer Lizenz alle Funktionen von Aspose.Words aktivieren. Es stellt außerdem Beispielcode zur Veranschaulichung des Lizenzierungsprozesses bereit. Befolgen Sie diese Anleitung, um die Lizenz anzuwenden und die leistungsstarke Aspose.Words-Bibliothek in Ihren .NET-Anwendungen optimal zu nutzen.
+Auf dieser Seite finden Sie eine ausführliche Anleitung zum Anwenden einer Lizenz in Projekten mit Aspose.Words für .NET. Dieses Tutorial erklärt Schritt für Schritt, wie Sie mithilfe einer Lizenz alle Funktionen von Aspose.Words aktivieren. Es enthält auch Beispielcode zur Veranschaulichung des Lizenzierungsprozesses. Folgen Sie dieser Anleitung, um eine Lizenz anzuwenden und das Beste aus der leistungsstarken Aspose.Words-Bibliothek in Ihren .NET-Anwendungen herauszuholen.
 
- ## Tutorials
+ ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Lizenz aus Datei anwenden](./apply-license-from-file/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Lizenz aus einer Datei anwenden.|
-| [Lizenz aus Stream anwenden](./apply-license-from-stream/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Lizenz aus einem Stream anwenden.|
-| [Wenden Sie eine Metered-Lizenz an](./apply-metered-license/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine getaktete Lizenz anwenden. |
+| [Lizenz aus Datei anwenden](./apply-license-from-file/) | Erfahren Sie mit unserer detaillierten Schritt-für-Schritt-Anleitung, wie Sie eine Lizenz aus einer Datei in Aspose.Words für .NET anwenden. Schöpfen Sie mühelos das volle Potenzial Ihrer Bibliothek aus. |
+| [Lizenz vom Stream anwenden](./apply-license-from-stream/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie eine Lizenz aus einem Stream in Aspose.Words für .NET anwenden. Schöpfen Sie das volle Potenzial von Aspose.Words aus. |
+| [Gemessene Lizenz anwenden](./apply-metered-license/) | Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie in Aspose.Words für .NET eine mengengeregelte Lizenz anwenden. Flexible, kostengünstige Lizenzierung leicht gemacht. |

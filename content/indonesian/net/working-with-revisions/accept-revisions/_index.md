@@ -1,6 +1,6 @@
 ---
-title: Terima Ulasan
-linktitle: Terima Ulasan
+title: Terima Revisi
+linktitle: Terima Revisi
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara menerima revisi dokumen Word menggunakan Aspose.Words untuk .NET
 type: docs
@@ -74,7 +74,7 @@ doc.StopTrackRevisions();
 ```
 ## Langkah 6: Menyimpan dokumen
 
- Setelah memasukkan kolom formulir input teks, simpan dokumen ke lokasi yang diinginkan menggunakan`Save` metode. Pastikan untuk memberikan jalur file yang sesuai:
+ Setelah memasukkan kolom formulir input teks, simpan dokumen ke lokasi yang diinginkan menggunakan`Save`metode. Pastikan untuk memberikan jalur file yang sesuai:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Paragraf revisi yang dihapus akan dihapus setelah kami menerima perubahan.
+// Paragraf revisi penghapusan dihapus setelah kami menerima perubahan.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

@@ -85,7 +85,7 @@ W tym artykule omówiliśmy, jak drukować dokumenty z niestandardowymi ustawien
 
 Tak, Aspose.Words for Java obsługuje szeroką gamę formatów dokumentów, w tym DOCX, DOC, RTF i inne.
 
-### Czy mogę drukować na określonej drukarce?
+### Czy mogę drukować na konkretnej drukarce?
 
  pewnością! Możesz określić konkretną drukarkę za pomocą opcji`setPrintService` metodę i zapewnienie pożądanego`PrintService` obiekt.
 

@@ -92,7 +92,7 @@ Tato příručka vám ukázala, jak číst vlastnosti ovládacích prvků Active
 
 #### Otázka: Jaký je první krok ke čtení vlastností ovládacích prvků ActiveX v souboru aplikace Word?
 
- A: Prvním krokem je inicializace`Document` objekt načtením dokumentu aplikace Word obsahující ovládací prvky ActiveX. Nezapomeňte vyměnit`MyDir` se skutečnou cestou k adresáři obsahujícímu dokument.
+ Odpověď: Prvním krokem je inicializace`Document` objekt načtením dokumentu aplikace Word obsahující ovládací prvky ActiveX. Nezapomeňte vyměnit`MyDir` se skutečnou cestou k adresáři obsahujícímu dokument.
 
 #### Otázka: Jak dostanu ovládací prvky ActiveX do dokumentu?
 

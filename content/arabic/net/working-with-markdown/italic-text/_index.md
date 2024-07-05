@@ -1,6 +1,6 @@
 ---
-title: النص الإيطالي
-linktitle: النص الإيطالي
+title: نص مائل
+linktitle: نص مائل
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
 description: تعرف على كيفية جعل النص مائلًا باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // استخدم منشئ المستندات لإضافة محتوى إلى المستند.
 DocumentBuilder builder = new DocumentBuilder();
 
-// اجعل النص إيطاليًا.
+// اجعل النص مائلًا.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

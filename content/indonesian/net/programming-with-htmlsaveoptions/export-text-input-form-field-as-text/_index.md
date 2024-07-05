@@ -27,7 +27,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Langkah 3: Mengonfigurasi opsi cadangan HTML
 
-Sekarang kita akan mengonfigurasi opsi penyimpanan HTML untuk mengekspor bidang formulir input teks sebagai teks biasa. Gunakan kode berikut:
+Sekarang kita akan mengonfigurasi opsi penyimpanan HTML untuk mengekspor bidang formulir masukan teks sebagai teks biasa. Gunakan kode berikut:
 
 ```csharp
 string imagesDir = Path. Combine(ArtifactsDir, "Images");
@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Kode ini membuat sebuah instance dari`HtmlSaveOptions`dan mengatur`ExportTextInputFormFieldAsText` pilihan untuk`true` untuk mengekspor bidang formulir masukan teks sebagai teks biasa. Selain itu, ini menentukan folder tempat gambar yang diekstraksi akan disimpan.
+ Kode ini membuat sebuah instance dari`HtmlSaveOptions`dan mengatur`ExportTextInputFormFieldAsText` pilihan untuk`true` untuk mengekspor bidang formulir input teks sebagai teks biasa. Selain itu, ini menentukan folder tempat gambar yang diekstraksi akan disimpan.
 
 ## Langkah 4: Mengonversi dan menyimpan dokumen ke HTML
 

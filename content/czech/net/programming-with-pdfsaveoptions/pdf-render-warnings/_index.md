@@ -126,7 +126,7 @@ Dodržením těchto kroků můžete efektivně zpracovat varování vykreslován
 
 ### Q1: Mohu touto metodou zpracovat jiné typy varování?
 
- Ano,`IWarningCallback` Rozhraní zvládne různé typy varování, nejen ta, která se týkají vykreslování PDF.
+ Ano,`IWarningCallback` rozhraní dokáže zpracovat různé typy varování, nejen ty související s vykreslováním PDF.
 
 ### Q2: Kde si mohu stáhnout bezplatnou zkušební verzi Aspose.Words pro .NET?
 

@@ -45,7 +45,7 @@ builder.InsertHyphenation();
 
 ## Steg 4: Spara dokumentet
 
-Spara slutligen det ändrade dokumentet:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
@@ -79,4 +79,4 @@ S: För att specificera språket i Aspose.Words måste du använda lämpliga spr
 
 #### F: Fungerar stavning för alla språk i Aspose.Words?
 
-S: Syllabisering i Aspose.Words beror på språkspecifika regler för syllabisering. Även om Aspose.Words stöder ett brett utbud av språk, kanske vissa språk inte stöds eller så är stavning inte tillgänglig för dem. Kontrollera Aspose.Words-dokumentationen för att ta reda på vilka språk som stöds för syllabisering.
+S: Syllabisering i Aspose.Words beror på språkspecifika regler för syllabisering. Även om Aspose.Words stöder ett brett spektrum av språk, kanske vissa språk inte stöds eller så är stavning inte tillgänglig för dem. Kontrollera Aspose.Words-dokumentationen för att ta reda på vilka språk som stöds för syllabisering.

@@ -17,7 +17,7 @@ url: /zh-hant/net/programming-with-charts/insert-simple-column-chart/
 - 已安裝 Aspose.Words for .NET 程式庫。您可以使用 NuGet 套件管理員下載並安裝它。
 - 將儲存輸出文檔的文檔目錄路徑。
 
-## 步驟2：建立一個新文件並插入圖表。
+## 步驟 2：建立一個新文件並插入圖表
 
 創建一個新的`Document`物件和一個`DocumentBuilder`建置文檔。
 
@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 
 在本教學中，您學習如何使用 Aspose.Words for .NET 將簡單的長條圖插入 Word 文件中。透過遵循逐步指南並使用提供的原始程式碼，您可以建立一個新文件、插入長條圖、新增多個包含類別和對應值的系列，並使用圖表儲存文件。
 
-Aspose.Words for .NET 為 Word 文件中的圖表進行文字處理提供了強大且靈活的 API。簡單的長條圖是表示和比較不同類別資料的有效方法。使用 Aspose.Words for .NET，您可以輕鬆建立具有自訂資料的長條圖，新增多個系列進行視覺比較，並根據您的要求自訂圖表的外觀。
+Aspose.Words for .NET 為 Word 文件中的圖表進行文字處理提供了強大且靈活的 API。簡單的長條圖是表示和比較不同類別資料的有效方法。使用 Aspose.Words for .NET，您可以輕鬆建立具有自訂資料的長條圖、新增多個系列進行視覺比較，並根據您的要求自訂圖表的外觀。
 
 透過使用 Aspose.Words for .NET，您可以自動產生具有長條圖的文件的過程，從而節省手動文件建立的時間和精力。該庫提供了多種圖表類型，包括簡單的長條圖，並提供了各種自訂選項來自訂圖表的外觀以滿足您的需求。
 

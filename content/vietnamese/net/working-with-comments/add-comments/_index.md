@@ -93,7 +93,7 @@ Trả lời: Có, bạn có thể định dạng văn bản nhận xét trong As
 
 #### Câu hỏi: Làm cách nào tôi có thể truy xuất tất cả nhận xét có trong tài liệu?
 
- Trả lời: Bạn có thể truy xuất tất cả các nhận xét được trình bày trong tài liệu bằng cách sử dụng`Document.Comments` tài sản.
+ Trả lời: Bạn có thể truy xuất tất cả các nhận xét có trong tài liệu bằng cách sử dụng`Document.Comments` tài sản.
 
 #### Câu hỏi: Tôi có thể xóa nhận xét cụ thể trong Aspose.Words dành cho .NET không?
 

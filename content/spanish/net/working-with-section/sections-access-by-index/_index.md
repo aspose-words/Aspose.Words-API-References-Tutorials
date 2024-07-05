@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### P: ¿Cómo cambio la configuración de la sección en Aspose.Words para .NET?
 
- R: Para modificar la configuración de una sección, puede usar las propiedades de la sección.`PageSetup`objeto. En este ejemplo, cambiaremos los márgenes, la distancia del encabezado y pie de página y el espaciado de las columnas de texto.
+ R: Para modificar la configuración de una sección, puede usar las propiedades de la sección`PageSetup`objeto. En este ejemplo, cambiaremos los márgenes, la distancia del encabezado y pie de página y el espaciado de las columnas de texto.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm

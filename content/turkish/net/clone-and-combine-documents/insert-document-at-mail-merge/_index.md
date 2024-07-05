@@ -139,10 +139,10 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 ## SSS'ler
 
 ### Farklı birleştirme alanlarına birden fazla belge ekleyebilir miyim?
- Evet yapabilirsin. Uygun birleştirme alanlarını ve karşılık gelen belge yollarını belirtmeniz yeterlidir.`MailMerge.Execute` yöntem.
+Evet yapabilirsin. Uygun birleştirme alanlarını ve karşılık gelen belge yollarını belirtmeniz yeterlidir.`MailMerge.Execute` yöntem.
 
 ### Eklenen belgeyi ana belgeden farklı biçimlendirmek mümkün müdür?
- Kesinlikle! Şunu kullanabilirsiniz:`ImportFormatMode` parametreler`NodeImporter` biçimlendirmeyi kontrol etmek için.
+ Kesinlikle! Şunu kullanabilirsiniz:`ImportFormatMode` parametresi`NodeImporter` biçimlendirmeyi kontrol etmek için.
 
 ### Birleştirme alanı adı dinamikse ne olur?
 Dinamik birleştirme alanı adlarını, geri çağırma işleyicisine parametre olarak ileterek işleyebilirsiniz.

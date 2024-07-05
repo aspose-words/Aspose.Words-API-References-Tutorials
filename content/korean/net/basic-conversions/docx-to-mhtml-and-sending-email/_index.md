@@ -2,109 +2,100 @@
 title: Docx를 Mhtml로 변환하고 이메일 보내기
 linktitle: Docx를 Mhtml로 변환하고 이메일 보내기
 second_title: Aspose.Words 문서 처리 API
-description: Word 문서를 Docx에서 MHTML로 변환하고 Aspose.Words 및 Aspose.Email을 사용하여 이메일로 보내는 방법을 알아보세요. 단계별 튜토리얼.
+description: 이 단계별 가이드에서 DOCX를 MHTML로 변환하고 .NET용 Aspose.Words를 사용하여 이메일을 보내는 방법을 알아보세요. 간편한 자동화로 생산성을 높이세요.
 type: docs
 weight: 10
 url: /ko/net/basic-conversions/docx-to-mhtml-and-sending-email/
 ---
+## 소개
 
-이 단계별 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Docx 형식의 Word 문서를 MHTML로 변환하고 Aspose.Email을 사용하여 이메일로 보내는 방법을 안내합니다. 제공된 C# 소스 코드를 설명하고 이를 자신의 프로젝트에 구현하는 방법을 보여 드리겠습니다.
+오늘날의 디지털 시대에는 문서를 한 형식에서 다른 형식으로 변환하고 이메일을 통해 보내는 것이 일반적인 작업입니다. 이 문서에서는 DOCX 파일을 MHTML 형식으로 변환한 다음 Aspose.Words for .NET을 사용하여 이메일로 보내는 과정을 안내합니다. 각 단계를 자세하고 따라하기 쉬운 가이드로 나누어 처음부터 끝까지 프로세스를 이해할 수 있도록 해드립니다. 뛰어들어보자!
 
- 시작하려면 개발 환경에 .NET용 Aspose.Words 및 Aspose.Email 라이브러리가 모두 설치 및 설정되어 있는지 확인하세요. 아직 수행하지 않은 경우 다음에서 라이브러리를 다운로드하여 설치하십시오.[Aspose.릴리스](https://releases.aspose.com/words/net/).
+## 전제조건
 
-## 1단계: 문서 개체 초기화
+시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
- 먼저, 초기화`Document`Docx 형식의 소스 문서 경로가 있는 객체:
+1. .NET용 Aspose.Words: 다음에서 .NET용 Aspose.Words 라이브러리를 다운로드하고 설치하세요.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
+2.  .NET용 Aspose.Email: 다음에서 .NET용 Aspose.Email 라이브러리를 다운로드하고 설치하세요.[Aspose 릴리스 페이지](https://releases.aspose.com/email/net/).
+3. .NET Framework: 컴퓨터에 .NET Framework가 설치되어 있는지 확인하세요.
+4. SMTP 서버: 이메일을 보내려면 SMTP 서버에 접근해야 합니다.
+
+## 네임스페이스 가져오기
+
+프로젝트에서 Aspose.Words 및 Aspose.Email을 사용하려면 필요한 네임스페이스를 가져와야 합니다. C# 파일 상단에 다음 using 지시문을 추가합니다.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Email;
+using Aspose.Email.Mime;
+using Aspose.Email.Clients.Smtp;
 ```
 
-## 2단계: MHTML 형식으로 문서 저장
+각 부분을 명확하게 이해할 수 있도록 프로세스를 여러 단계로 나누어 보겠습니다.
 
- 다음으로 문서를`Stream` MHTML 형식의 개체:
+## 1단계: DOCX 문서 로드
+
+ 먼저 변환하려는 DOCX 문서를 로드해야 합니다. 사용`Document` DOCX 파일을 로드하기 위한 Aspose.Words의 클래스입니다.
+
+```csharp
+// 문서 디렉터리의 경로입니다.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Document.docx");
+```
+
+## 2단계: 문서를 MHTML로 저장
+
+ 다음으로 로드된 문서를 MHTML 파일로 저장합니다. 이 작업은 다음을 사용하여 수행됩니다.`Save` 의 방법`Document` 수업.
 
 ```csharp
 Stream stream = new MemoryStream();
 doc.Save(stream, SaveFormat.Mhtml);
-```
 
-## 3단계: 스트림 되감기
-
-Aspose.Email은 처음부터 스트림을 읽어야 하므로 스트림을 처음으로 되감습니다.
-
-```csharp
+// Aspose.Email이 읽을 수 있도록 스트림을 처음으로 되감습니다.
 stream.Position = 0;
 ```
 
-## 4단계: Aspose.Email MIME 메시지 생성
+## 3단계: 이메일 메시지 작성
 
- 만들기`MailMessage` 다음을 사용하여 스트림의 객체`MhtmlLoadOptions`:
+이제 Aspose.Email을 사용하여 MHTML 스트림에서 전자 메일 메시지를 만듭니다. 당신은`MailMessage` 이를 위해 수업을 합니다.
 
 ```csharp
+// 스트림에서 Aspose.Email MIME 이메일 메시지를 생성합니다.
 MailMessage message = MailMessage.Load(stream, new MhtmlLoadOptions());
 message.From = "your_from@email.com";
 message.To = "your_to@email.com";
 message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 ```
 
-보낸 사람, 받는 사람, 제목 등 메시지 속성을 자유롭게 사용자 정의하세요.
+## 4단계: 이메일 보내기
 
-## 5단계: 이메일 보내기
-
- Aspose.Email을 사용하세요`SmtpClient` 이메일을 보내려면:
+ 마지막으로 SMTP 클라이언트를 사용하여 이메일을 보냅니다. SMTP 서버 세부 정보로 SMTP 클라이언트를 구성하고`Send` 메시지를 보내는 방법.
 
 ```csharp
+// Aspose.Email을 사용하여 메시지를 보냅니다.
 SmtpClient client = new SmtpClient();
 client.Host = "your_smtp.com";
 client.Send(message);
 ```
 
-올바른 SMTP 서버 호스트 주소를 제공했는지 확인하십시오.
+## 결론
 
-그게 다야! Docx 형식의 Word 문서를 MHTML로 성공적으로 변환하고 Aspose.Words for .NET 및 Aspose.Email을 사용하여 이메일로 보냈습니다.
+축하해요! DOCX 문서를 MHTML로 성공적으로 변환하고 .NET용 Aspose.Words를 사용하여 이메일을 통해 보냈습니다. 이 프로세스에는 문서 로드, MHTML로 변환, 전자 메일 메시지 생성 및 SMTP 클라이언트를 사용하여 보내는 작업이 포함됩니다. 이러한 단계를 통해 애플리케이션에서 문서 변환 및 이메일 전송을 쉽게 자동화할 수 있습니다.
 
-### Mhtml로 Docx의 예제 소스 코드 및 .NET용 Aspose.Words를 사용하여 이메일 보내기
+## FAQ
 
-```csharp
+### 이 방법을 사용하여 다른 문서 형식을 변환할 수 있습니까?
+예, Aspose.Words는 다양한 형식을 지원하며 DOC, DOCX, RTF 등과 같은 문서를 MHTML로 변환할 수 있습니다.
 
-	// Document doc = new Document(MyDir + "Document.docx");
+### 이메일에 첨부파일을 어떻게 추가하나요?
+ 당신은 사용할 수 있습니다`Attachments` 의 재산`MailMessage`이메일에 첨부 파일을 추가하는 수업입니다.
 
-	Stream stream = new MemoryStream();
-	doc.Save(stream, SaveFormat.Mhtml);
+### Aspose.Words는 .NET Core와 호환됩니까?
+예, Aspose.Words는 .NET Core와 호환됩니다. .NET Core 애플리케이션에서도 사용할 수 있습니다.
 
-	//Aspose.Email이 읽을 수 있도록 스트림을 처음으로 되감습니다.
-	stream.Position = 0;
+### Aspose.Words 및 Aspose.Email에 대한 라이선스가 필요합니까?
+ 예, 두 라이브러리 모두 라이선스가 필요합니다. 임시면허를 발급받으실 수 있습니다.[구매 페이지 제안](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
 
-	// 스트림에서 Aspose.Email MIME 이메일 메시지를 생성합니다.
-	MailMessage message = MailMessage.Load(stream, new MhtmlLoadOptions());
-	message.From = "your_from@email.com";
-	message.To = "your_to@email.com";
-	message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
-
-	// Aspose.Email을 사용하여 메시지를 보냅니다.
-	SmtpClient client = new SmtpClient();
-	client.Host = "your_smtp.com";
-	client.Send(message);
-	
-```
-
-자신의 프로젝트에서 이 코드를 자유롭게 사용하고 특정 요구 사항에 따라 수정하십시오.
-
-### 자주 묻는 질문
-
-#### DOCX 파일을 MHTML로 변환하는 방법은 무엇입니까?
-
-DOCX 파일을 MHTML로 변환하려면 이 기능을 제공하는 소프트웨어 도구나 라이브러리를 사용할 수 있습니다. Aspose.Words for .NET은 이러한 변환을 위한 신뢰할 수 있는 옵션입니다. 라이브러리 API를 사용하여 DOCX 파일을 로드하고 MHTML 형식으로 저장할 수 있습니다.
-
-#### MHTML 파일을 첨부하여 이메일을 보내려면 어떻게 해야 합니까?
-
-MHTML 파일을 첨부 파일로 포함하여 이메일을 보내려면 .NET의 System.Net.Mail과 같은 이메일 전송 관련 라이브러리나 도구를 사용할 수 있습니다. 이메일 메시지를 작성하고 수신자, 제목 및 내용을 지정한 다음 메시지를 보내기 전에 MHTML 파일을 메시지에 첨부 파일로 추가해야 합니다.
-
-#### 이메일 변환 및 전송 프로세스의 제한 사항은 무엇입니까?
-
-이메일 변환 및 전송 프로세스의 제한은 사용 중인 특정 도구에 따라 다릅니다. 일부 도구에는 파일 크기, 보안 설정 또는 지원되는 이메일 프로토콜과 관련된 제한이 있을 수 있습니다. 요구 사항에 맞는 도구를 선택하고 구현할 때 이러한 제한 사항을 고려하는 것이 중요합니다.
-
-#### Aspose는 DOCX에서 MHTML로의 변환 및 이메일 전송을 위한 신뢰할 수 있는 도구입니까?
-
-예, Aspose.Words for .NET은 DOCX에서 MHTML로의 변환 및 이메일 전송을 위한 신뢰할 수 있는 도구입니다. 성능과 품질로 인해 개발자와 전문가가 널리 사용합니다. 이 도구는 포괄적인 문서, 고급 기능 및 전용 기술 지원을 제공하므로 이러한 작업에 권장되는 선택입니다.
+### 추가 문서는 어디서 찾을 수 있나요?
+ Aspose.Words에 대한 자세한 문서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/) Aspose.Email의 경우[여기](https://reference.aspose.com/email/net/).

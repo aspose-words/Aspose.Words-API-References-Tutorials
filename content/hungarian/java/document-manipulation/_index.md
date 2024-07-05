@@ -71,12 +71,12 @@ Ebből az átfogó útmutatóból megtudhatja, hogyan használhatja a strukturá
 ### [Stílusok és témák használata az Aspose.Words for Java programban](./using-styles-and-themes/)
 Ismerje meg, hogyan javíthatja a dokumentumok formázását az Aspose.Words for Java segítségével. Fedezze fel a stílusokat, témákat és egyebeket ebben a forráskód-példákat tartalmazó átfogó útmutatóban.
 ### [Tartalomjegyzék létrehozása az Aspose.Words for Java programban](./generating-table-of-contents/)
-Ismerje meg, hogyan hozhat létre és testre szabhatja a tartalomjegyzéket (TOC) az Aspose.Words for Java használatával. Rendezett és professzionális dokumentumokat készíthet könnyedén.
+Ismerje meg, hogyan hozhat létre és szabhat testre tartalomjegyzéket (TOC) az Aspose.Words for Java használatával. Rendezett és professzionális dokumentumokat készíthet könnyedén.
 ### [Dokumentumok védelme az Aspose.Words for Java programban](./protecting-documents/)
-Ismerje meg, hogyan védheti meg Java Word dokumentumait az Aspose.Words for Java segítségével. Védje meg adatait jelszóval és még sok mással.
+Ismerje meg, hogyan védheti meg Java Word dokumentumait az Aspose.Words for Java segítségével. Védje adatait jelszóval és még sok mással.
 ### [Dokumentumok felosztása oldalakra az Aspose.Words for Java programban](./splitting-documents-into-pages/)
 Ismerje meg, hogyan oszthat fel dokumentumokat oldalakra az Aspose.Words for Java használatával. Lépésről lépésre útmutató forráskóddal a hatékony dokumentumfeldolgozás érdekében.
-### [Dokumentumok felosztása az Aspose.Words for Java-ban](./splitting-documents/)
+### [Dokumentumok felosztása az Aspose.Words for Java programban](./splitting-documents/)
 Ismerje meg, hogyan oszthat fel hatékonyan dokumentumokat az Aspose.Words for Java programban. Fedezze fel a címsorok, szakaszok és oldaltartományok technikáit.
 ### [Dokumentumok felosztása HTML oldalakra az Aspose.Words for Java programban](./splitting-documents-into-html-pages/)
 Ismerje meg, hogyan oszthat fel dokumentumokat HTML-oldalakra az Aspose.Words for Java segítségével. Kövesse lépésenkénti útmutatónkat a zökkenőmentes dokumentumátalakításhoz.

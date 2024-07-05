@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/working-with-fonts/font-settings-default-instance/
 ---
 
-Welkom bij deze uitgebreide tutorial over het beheren van lettertype-instellingen met Aspose.Words voor .NET. Als u ooit problemen heeft ondervonden bij het omgaan met lettertypen in uw documenten, begeleidt deze handleiding u door alles wat u moet weten om lettertypen effectief aan te passen en te beheren. Laten we erin duiken!
+Welkom bij deze uitgebreide tutorial over het beheren van lettertype-instellingen met Aspose.Words voor .NET. Als u ooit problemen heeft ondervonden met het omgaan met lettertypen in uw documenten, begeleidt deze handleiding u door alles wat u moet weten om lettertypen effectief aan te passen en te beheren. Laten we erin duiken!
 
 ## Vereisten
 

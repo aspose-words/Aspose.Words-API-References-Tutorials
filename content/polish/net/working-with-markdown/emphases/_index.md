@@ -59,7 +59,7 @@ builder. Write(".");
 
 ```
 
-## Krok 4: Zapisywanie dokumentu
+## Krok 4: Zapisanie dokumentu
 
  Wreszcie możemy zapisać dokument w żądanym formacie. W tym przykładzie używamy`.md` rozszerzenie formatu Markdown.
 

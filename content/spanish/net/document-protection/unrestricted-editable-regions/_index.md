@@ -106,7 +106,7 @@ R: Para crear regiones editables sin restricciones en un documento de Word usand
 2.  Configure la protección del documento en solo lectura usando el`Protect` método de la`Document` objeto.
 3.  Utilizar el`DocumentBuilder` clase para crear un rango editable agregando un`EditableRangeStart` objeto y un`EditableRangeEnd` objeto.
 4.  Agregue contenido dentro del rango editable usando el`DocumentBuilder`.
-5.  Guarde el documento modificado usando el`Save` método de la`Document` objeto.
+5.  Guarde el documento modificado utilizando el`Save` método de la`Document` objeto.
 
 #### P: ¿Puedo tener varias regiones editables sin restricciones en un documento de Word?
 

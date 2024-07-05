@@ -28,7 +28,7 @@ public class TableCreation {
         // Créer un nouveau document
         Document doc = new Document();
         
-        // Créez un tableau avec 3 lignes et 3 colonnes.
+        // Créer un tableau avec 3 lignes et 3 colonnes
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // Remplir les cellules du tableau avec des données

@@ -74,7 +74,7 @@ Ja, Aspose.Words voor .NET ondersteunt het splitsen van een document in verschil
 
 #### Kan ik meerdere documenten tegelijk splitsen?
 
-Ja, u kunt het splitsingsproces op meerdere documenten tegelijk toepassen door een verzameling documenten te doorlopen en de splitsingscode voor elk document afzonderlijk uit te voeren. Hierdoor kunt u meerdere documenten efficiënt verwerken en voor elk document afzonderlijke secties genereren.
+Ja, u kunt het splitsingsproces tegelijkertijd op meerdere documenten toepassen door een verzameling documenten te doorlopen en de splitsingscode voor elk document afzonderlijk uit te voeren. Hierdoor kunt u meerdere documenten efficiënt verwerken en voor elk document afzonderlijke secties genereren.
 
 #### Hoe kan ik de secties weer samenvoegen tot één document?
 

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 2. Загрузите документ для рендеринга
- Затем вы можете загрузить документ для рендеринга, используя`Document` класс. Обязательно укажите правильный путь к документу.
+ Затем вы можете загрузить документ для рендеринга, используя`Document` сорт. Обязательно укажите правильный путь к документу.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -37,7 +37,7 @@ fontSettings.SetFontsSources(updatedFontSources);
 ```
 
 ## Шаг 4. Примените настройки шрифта
- Далее вам необходимо применить настройки шрифта к вашему документу, используя`FontSettings` собственность`Document` класс.
+ Далее вам необходимо применить настройки шрифта к вашему документу, используя`FontSettings` собственность`Document` сорт.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -46,7 +46,7 @@ doc.FontSettings = fontSettings;
 ## Шаг 5. Сохраните визуализированный документ.
 Наконец, вы можете сохранить визуализированный документ в файл, выполнив
 
-   используя`Save()` метод`Document` класс. Обязательно укажите правильный путь и имя файла.
+   используя`Save()` метод`Document` сорт. Обязательно укажите правильный путь и имя файла.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Добавьте новый источник папки, который будет указывать Aspose.Words искать шрифты в следующей папке.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-// Добавьте пользовательскую папку, содержащую наши шрифты, в список существующих источников шрифтов.
+//Добавьте пользовательскую папку, содержащую наши шрифты, в список существующих источников шрифтов.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 
 #### Вопрос: Как проверить папки шрифтов, определенные в Aspose.Words?
 
- Чтобы проверить папки шрифтов, определенные в Aspose Words, вы можете использовать команду.`GetFolders` метод`Fonts` class, чтобы получить список настроенных папок шрифтов.
+ Чтобы проверить папки шрифтов, определенные в Aspose.Words, вы можете использовать`GetFolders` метод`Fonts` class, чтобы получить список настроенных папок шрифтов.
 
 #### Вопрос: Имеют ли пользовательские шрифты папок приоритет над системными шрифтами в Aspose.Words?
 

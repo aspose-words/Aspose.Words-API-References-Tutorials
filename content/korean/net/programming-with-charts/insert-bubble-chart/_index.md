@@ -17,7 +17,7 @@ url: /ko/net/programming-with-charts/insert-bubble-chart/
 - .NET 라이브러리용 Aspose.Words가 설치되었습니다. NuGet 패키지 관리자를 사용하여 다운로드하여 설치할 수 있습니다.
 - 출력 문서가 저장될 문서 디렉터리 경로입니다.
 
-## 2단계: 새 문서를 만들고 차트를 삽입합니다.
+## 2단계: 새 문서 만들기 및 차트 삽입
 
  새로 만들기`Document` 객체와`DocumentBuilder` 문서를 작성합니다.
 

@@ -46,7 +46,7 @@ builder.Font.Bold = true;
 builder.Writeln("This text will be Bold");  
 ```
 
-συγχαρητήρια ! Τώρα μάθατε πώς να γράφετε έντονους χαρακτήρες με το Aspose.Words για .NET.
+Συγχαρητήρια ! Τώρα μάθατε πώς να γράφετε έντονους χαρακτήρες με το Aspose.Words για .NET.
 
 
 ### Συχνές ερωτήσεις

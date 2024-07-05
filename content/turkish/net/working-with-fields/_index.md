@@ -23,7 +23,7 @@ Bu, Aspose.Words for .NET kütüphanesini kullanarak Word belgelerindeki alanlar
 | [DOM Kullanarak Birleştirme Alanı Ekle](./insert-merge-field-using-dom/) | Aspose.Words for .NET ile özel alan birleştirme alanlarını Word belgelerinize nasıl ekleyeceğinizi öğrenin. |
 | [DOM Kullanarak Adres Mektup Birleştirme Adres Bloğu Alanı Ekleme](./insert-mail-merge-address-block-field-using-dom/) | Aspose.Words for .NET ile Word belgelerinize adres-mektup birleştirme adresi bloğu alanını nasıl ekleyeceğinizi öğrenin. |
 | [Belge Oluşturucu Olmadan FieldIncludeText Ekle](./insert-field-include-text-without-document-builder/) | Aspose.Words for .NET ile Word belgelerinize FieldIncludeText alanını nasıl ekleyeceğinizi öğrenin. |
-| [Alan Ekle Yok](./insert-field-none/) | Word avec Aspose.Words pour .NET'te AUCUN ile nasıl belge oluşturacağınızı öğrenin. |
+| [Alan Ekle Yok](./insert-field-none/) | Word ve Aspose.Words belgelerine .NET'e nasıl şampiyon AUCUN ekleyeceğinizi öğrenin. |
 | [Alan Ekle](./insert-field/) | Aspose.Words for .NET ile Word belgelerinize nasıl alan ekleyeceğinizi öğrenin. Dokümanlarınızı dinamik alanlarla kişiselleştirin. |
 | [Field Builder'ı Kullanarak Alan Ekle](./insert-field-using-field-builder/) | Aspose.Words for .NET ile Word belgelerinize özel alanları nasıl ekleyeceğinizi öğrenin. |
 | [Yazar Alanı Ekle](./insert-author-field/) | Aspose.Words for .NET ile Word belgelerinize YAZAR alanını nasıl ekleyeceğinizi öğrenin. Belgelerinizi kişiselleştirmek için yazarın adını belirtin. |

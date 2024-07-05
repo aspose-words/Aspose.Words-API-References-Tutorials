@@ -41,7 +41,7 @@ using Aspose.Words.Tables;
 
 Εγκαταστήστε το Aspose.Words για .NET
 
-Στη συνέχεια, θα χρειαστεί να εγκαταστήσετε τη βιβλιοθήκη Aspose.Words για .NET. Μπορείτε να το κάνετε αυτό μέσω του NuGet Package Manager. Απλώς κάντε δεξί κλικ στο έργο σας στην Εξερεύνηση λύσεων, επιλέξτε "Manage NuGet Packages", αναζητήστε το "Apose.Words" και εγκαταστήστε το.
+Στη συνέχεια, θα χρειαστεί να εγκαταστήσετε τη βιβλιοθήκη Aspose.Words για .NET. Μπορείτε να το κάνετε αυτό μέσω του NuGet Package Manager. Απλώς κάντε δεξί κλικ στο έργο σας στην Εξερεύνηση λύσεων, επιλέξτε "Manage NuGet Packages", αναζητήστε το "Aspose.Words" και εγκαταστήστε το.
 
 ## Βήμα 2: Αρχικοποιήστε το έγγραφο
 
@@ -92,7 +92,7 @@ builder.Font.Underline = Underline.Single;
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 ```
 
-Σε αυτή τη γραμμή, εισάγουμε έναν υπερσύνδεσμο με το εμφανιζόμενο κείμενο "Apose Website" και τη διεύθυνση URL "http://www.aspose.com".
+Σε αυτή τη γραμμή, εισάγουμε έναν υπερσύνδεσμο με το εμφανιζόμενο κείμενο "Aspose Website" και τη διεύθυνση URL "http://www.aspose.com".
 
 ## Βήμα 6: Διαγραφή μορφοποίησης
 
@@ -139,7 +139,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση για το Aspose.Words για .NET;
 
- Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση για το[Aspose website](https://reference.aspose.com/words/net/).
+ Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση για το[Aspose ιστότοπο](https://reference.aspose.com/words/net/).
 
 ### Μπορώ να προσθέσω άλλους τύπους περιεχομένου σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET;
 

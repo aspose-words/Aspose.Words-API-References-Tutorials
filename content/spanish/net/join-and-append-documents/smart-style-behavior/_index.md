@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## Paso 5: agregue el documento de origen al documento de destino
 
- Ahora, puede adjuntar el documento de origen al documento de destino utilizando el`InsertDocument` método de la`DocumentBuilder` clase. Utilizar el`ImportFormatMode.UseDestinationStyles` parámetros y pasar el`ImportFormatOptions` objeto para mantener un comportamiento de estilo inteligente.
+ Ahora, puede adjuntar el documento de origen al documento de destino utilizando el`InsertDocument` método de la`DocumentBuilder` clase. Utilizar el`ImportFormatMode.UseDestinationStyles` parámetro y pasar el`ImportFormatOptions` objeto para mantener un comportamiento de estilo inteligente.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

@@ -79,7 +79,7 @@ End Sub
 
 ## Batch Memproses Banyak Dokumen
 
-Aspose.Words Python dikombinasikan dengan makro VBA memungkinkan Anda memproses banyak dokumen dalam mode batch. Hal ini sangat berguna untuk skenario yang memerlukan otomatisasi dokumen berskala besar.
+Aspose.Words Python dikombinasikan dengan makro VBA memungkinkan Anda memproses banyak dokumen dalam mode batch. Hal ini sangat berguna untuk skenario yang memerlukan otomatisasi dokumen skala besar.
 
 ```vba
 Sub BatchProcessDocuments()

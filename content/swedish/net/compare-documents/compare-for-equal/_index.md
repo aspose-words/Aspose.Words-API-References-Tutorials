@@ -2,75 +2,92 @@
 title: Jämför för lika i Word-dokument
 linktitle: Jämför för lika i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Steg-för-steg-guide för att förklara C#-källkoden för Compare for Equals i Word-dokumentfunktionen med Aspose.Words för .NET.
+description: Lär dig hur du jämför två Word-dokument för jämlikhet med Aspose.Words för .NET. Följ denna steg-för-steg-guide för att säkerställa att dina dokument är identiska.
 type: docs
 weight: 10
 url: /sv/net/compare-documents/compare-for-equal/
 ---
-I den här handledningen kommer vi att gå igenom hur du använder funktionen Compare for Equal in a word-dokument med Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och tillämpa ändringarna.
+## Introduktion
 
-## Steg 1: Dokumentjämförelse
+När du arbetar med Word-dokument kan det vara en avgörande uppgift att se till att två dokument är identiska. Oavsett om du jämför olika versioner av ett kontrakt, letar efter obehöriga ändringar eller validerar dokumentintegritet, kan ett automatiserat sätt att jämföra dokument spara mycket tid och ansträngning. Aspose.Words för .NET erbjuder en robust lösning för att jämföra Word-dokument och identifiera eventuella skillnader. I den här artikeln guidar vi dig genom processen att jämföra två Word-dokument för jämlikhet med Aspose.Words för .NET. 
 
- Börja med att ladda två dokument för att jämföra. I det här exemplet kommer vi att använda`Clone()` metod för att skapa en kopia av originaldokumentet. Här är hur:
+## Förutsättningar
+
+Innan vi dyker in i steg-för-steg-guiden, låt oss se till att vi har allt vi behöver:
+
+1.  Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Om du inte har det än så kan du[ladda ner den här](https://releases.aspose.com/words/net/).
+2. Utvecklingsmiljö: Se till att du har en .NET-utvecklingsmiljö inrättad. Visual Studio rekommenderas starkt.
+3. Exempeldokument: Ha två Word-dokument redo som du vill jämföra.
+
+## Importera namnområden
+
+För att komma igång med Aspose.Words för .NET måste du importera de nödvändiga namnrymden. Dessa namnutrymmen ger åtkomst till de klasser och metoder som krävs för dokumentmanipulation.
 
 ```csharp
-// Sökväg till dokumentkatalogen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+```
+
+## Steg 1: Konfigurera ditt projekt
+
+Börja med att skapa ett nytt .NET-projekt i din föredragna utvecklingsmiljö. Lägg till en referens till Aspose.Words for .NET-biblioteket. Om du inte har installerat det än kan du göra det via NuGet Package Manager i Visual Studio.
+
+```sh
+Install-Package Aspose.Words
+```
+
+## Steg 2: Ladda dina dokument
+
+ Därefter måste du ladda de Word-dokument du vill jämföra. I det här exemplet antar vi att du har två namngivna dokument`Document.docx` och`Document2.docx` finns i din dokumentkatalog.
+
+```csharp
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document docA = new Document(dataDir + "Document.docx");
-Document docB = docA.Clone();
+Document docB = new Document(dataDir + "Document2.docx");
 ```
 
-## Steg 2: Dokumentjämförelse
+## Steg 3: Klona ett av dokumenten
 
- Vi kommer nu att använda`Compare()` metod för att jämföra de två dokumenten. Denna metod kommer att markera ändringarna i originaldokumentet. Här är hur:
+ För att jämföra dokumenten klona du ett av dem. Detta är nödvändigt eftersom`Compare` metoden ändrar dokumentet och du kanske vill behålla originaldokumentet oförändrat för andra ändamål.
 
 ```csharp
-// Jämför dokumenten
-docA.Compare(docB, "user", DateTime.Now);
-
-// Kontrollera om dokumenten är lika
-Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are identical": "Documents are not identical");
+Document docBClone = docB.Clone();
 ```
 
-### Exempel på källkod för Compare For Equal med Aspose.Words för .NET
+## Steg 4: Utför jämförelsen
 
-Här är den fullständiga källkoden för funktionen Compare for Equals med Aspose.Words för .NET:
+ Nu är du redo att jämföra dokumenten. De`Compare`metod kommer att belysa skillnaderna mellan de två dokumenten. Du kan ange användaren som utför jämförelsen och datum för jämförelsen.
 
 ```csharp
-
-	Document docA = new Document(MyDir + "Document.docx");
-	Document docB = docA.Clone();
-	
-	// DocA innehåller nu ändringar som revisioner.
-	docA.Compare(docB, "user", DateTime.Now);
-
-	Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
-
+docA.Compare(docBClone, "user", DateTime.Now);
 ```
 
-Med den här koden kommer du att kunna jämföra två dokument och avgöra om de är lika med Aspose.Words för .NET.
+## Steg 5: Kontrollera om det finns ändringar
+
+ Efter att ha jämfört dokumenten kan du kontrollera`Revisions` samling för att se om det finns några skillnader. Om samlingen är tom är dokumenten identiska.
+
+```csharp
+Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
+```
 
 ## Slutsats
 
-I den här handledningen undersökte vi hur man jämför dokument för jämlikhet med hjälp av funktionen Compare for Equal i Aspose.Words för .NET. Genom att jämföra två dokument och analysera revisionerna kan du avgöra om dokumenten har samma innehåll eller om det finns några skillnader mellan dem. Aspose.Words för .NET tillhandahåller kraftfulla dokumentjämförelsefunktioner, vilket gör att du kan automatisera processen för att identifiera dokumentlikheter och skillnader.
+Att jämföra Word-dokument för jämställdhet med Aspose.Words för .NET är en enkel process som kan spara mycket tid och ansträngning. Genom att följa stegen som beskrivs i den här guiden kan du snabbt identifiera skillnader mellan dokument och säkerställa deras integritet. Oavsett om du hanterar juridiska dokument, teknisk dokumentation eller någon annan typ av Word-fil, tillhandahåller Aspose.Words för .NET de verktyg du behöver för effektiv och korrekt jämförelse av dokument.
 
-### FAQ's
+## Vanliga frågor
 
-#### F: Vad är syftet med att jämföra dokument för jämställdhet i Aspose.Words för .NET?
+### Kan jag jämföra dokument med olika format (t.ex. .docx och .doc)?
+Ja, Aspose.Words för .NET stöder jämförelse av dokument i olika format.
 
-S: Genom att jämföra dokument för jämlikhet i Aspose.Words för .NET kan du identifiera om två dokument har samma innehåll. Genom att jämföra dokumenten kan du avgöra om de är identiska eller om det finns några skillnader mellan dem.
+### Vad händer om dokumenten har spårat ändringar?
+Aspose.Words för .NET kommer att inkludera spårade ändringar i jämförelseprocessen, så att du kan se alla skillnader.
 
-#### F: Hur jämför jag två dokument för jämställdhet med Aspose.Words för .NET?
+### Är det möjligt att ignorera specifika typer av ändringar, som formatering?
+Ja, du kan anpassa jämförelsealternativen för att ignorera vissa typer av ändringar.
 
-S: För att jämföra två dokument för jämställdhet med Aspose.Words för .NET, följ dessa steg:
-1. Ladda de två dokument som du vill jämföra till separata dokumentobjekt.
-2.  Använd`Compare()` metod på ett av dokumenten och ange det andra dokumentet som parameter. Denna metod jämför dokumenten och markerar ändringarna i originaldokumentet.
-3.  Kolla`Revisions` originalhandlingens egendom. Om antalet är noll betyder det att dokumenten är identiska.
+### Hur kan jag spara det jämförda dokumentet med ändringarna markerade?
+ Du kan spara dokumentet med hjälp av`Save` metod, och revisionerna kommer att markeras i utdatafilen.
 
-#### F: Kan jag anpassa jämförelseprocessen eller tillhandahålla specifika jämförelsealternativ?
-
-S: Ja, Aspose.Words för .NET erbjuder olika alternativ för att anpassa jämförelseprocessen. Du kan styra hur dokumenten jämförs, ange jämförelsealternativ som jämförelsemetod, formateringsändringar eller ignorera specifika element. Se Aspose.Words för .NET-dokumentationen för detaljerad information om hur du anpassar jämförelseprocessen.
-
-#### F: Kan jag göra en mer detaljerad jämförelse för att identifiera specifika skillnader mellan dokument?
-
- S: Ja, du kan göra en mer detaljerad jämförelse för att identifiera specifika skillnader mellan dokument genom att iterera genom`Revisions` insamling av originalhandlingarna. Varje revision representerar en ändring eller skillnad mellan dokumenten. Du kan komma åt detaljerna för varje revision, såsom typ av ändring (infogning, radering, formateringsändring) och det berörda området för dokumentet.
+### Stöder Aspose.Words för .NET jämförelse på andra språk än engelska?
+Ja, Aspose.Words för .NET stöder dokumentjämförelse på flera språk.

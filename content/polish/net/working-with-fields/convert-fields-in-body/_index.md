@@ -83,7 +83,7 @@ Aspose.Words obsługuje różne typy pól, takie jak DATE, PAGE, MERGEFIELD i in
 Tak, Aspose.Words dla .NET może bezproblemowo konwertować i manipulować polami w różnych formatach, takich jak DOCX, DOC, RTF i innych.
 
 ### Gdzie mogę znaleźć obszerną dokumentację Aspose.Words dla .NET?
- Dostępna jest szczegółowa dokumentacja i odniesienia do API.[Tutaj](https://reference.aspose.com/words/net/).
+ Dostępna jest szczegółowa dokumentacja i odniesienia do API[Tutaj](https://reference.aspose.com/words/net/).
 
 ### Czy dostępna jest wersja próbna Aspose.Words dla .NET?
  Tak, możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.aspose.com/).

@@ -41,7 +41,7 @@ Chcete-li začít, spusťte Visual Studio a vytvořte nový projekt C#. Pro jedn
 
 Nainstalujte Aspose.Words for .NET
 
-Dále budete muset nainstalovat knihovnu Aspose.Words for .NET. Můžete to udělat pomocí Správce balíčků NuGet. Jednoduše klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení, vyberte „Spravovat balíčky NuGet“, vyhledejte „Apose.Words“ a nainstalujte jej.
+Dále budete muset nainstalovat knihovnu Aspose.Words for .NET. Můžete to udělat pomocí Správce balíčků NuGet. Jednoduše klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení, vyberte „Spravovat balíčky NuGet“, vyhledejte „Aspose.Words“ a nainstalujte jej.
 
 ## Krok 2: Inicializujte dokument
 
@@ -92,7 +92,7 @@ Nyní vložíme skutečný hypertextový odkaz. Tady se děje kouzlo!
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", nepravda);
 ```
 
-Do tohoto řádku vkládáme hypertextový odkaz se zobrazovaným textem „Webové stránky Apose“ a URL „http://www.aspose.com“.
+Do tohoto řádku vkládáme hypertextový odkaz se zobrazovaným textem „Web Aspose“ a URL „http://www.aspose.com“.
 
 ## Krok 6: Vymažte formátování
 

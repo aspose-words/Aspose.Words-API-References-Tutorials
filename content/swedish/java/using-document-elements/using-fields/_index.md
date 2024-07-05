@@ -357,7 +357,7 @@ Källkod för Class HandleMergeField
 
 Grattis! Du har lärt dig hur du använder fält i Aspose.Words för Java för att manipulera Word-dokument dynamiskt. Detta kraftfulla API ger dig fullständig kontroll över dina dokument, vilket gör det till en värdefull tillgång för Java-utvecklare.
 
-## 7.Vanliga frågor
+## 7. Vanliga frågor
 
 ### F1: Var kan jag ladda ner Aspose.Words för Java?
  Du kan ladda ner Aspose.Words för Java från[här](https://releases.aspose.com/words/java/).

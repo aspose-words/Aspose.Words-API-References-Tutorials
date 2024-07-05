@@ -73,7 +73,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 
 ### Voorbeeldbroncode voor het vervangen van tekst met metatekens met behulp van Aspose.Words voor .NET
 
-Hier is de volledige voorbeeldbroncode om het gebruik van tekstvervanging met metatekens met Aspose.Words voor .NET te demonstreren:
+Hier is de volledige voorbeeldbroncode om het gebruik van tekstvervanging met metatekens te demonstreren met Aspose.Words voor .NET:
 
 ```csharp
 

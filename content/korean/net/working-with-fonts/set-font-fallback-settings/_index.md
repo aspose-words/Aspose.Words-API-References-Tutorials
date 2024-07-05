@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## 4단계: 문서에 글꼴 설정 적용
 
- 구성된 할당`FontSettings`문서에. 이렇게 하면 문서를 렌더링할 때 글꼴 대체 규칙이 적용됩니다.
+ 구성된 할당`FontSettings` 문서에. 이렇게 하면 문서를 렌더링할 때 글꼴 대체 규칙이 적용됩니다.
 
 ```csharp
 doc.FontSettings = fontSettings;

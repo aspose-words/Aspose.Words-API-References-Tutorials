@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Přidejte nový zdroj složky, který dá Aspose.Words pokyn k hledání písem v následující složce.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-// Přidejte vlastní složku, která obsahuje naše písma, do seznamu existujících zdrojů písem.
+//Přidejte vlastní složku, která obsahuje naše písma, do seznamu existujících zdrojů písem.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

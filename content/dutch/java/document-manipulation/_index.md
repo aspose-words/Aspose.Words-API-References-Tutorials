@@ -21,7 +21,7 @@ Aspose.Words voor Java is een krachtige en veelzijdige API waarmee ontwikkelaars
 
 ### Installatie en configuratie
 
-De eerste stap op weg naar een professionele documentmanipulatie is het opzetten van Aspose.Words voor Java. Onze uitgebreide tutorial leidt u door het installatieproces, zodat u de API binnen een mum van tijd operationeel heeft.
+De eerste stap op weg naar een professionele documentmanipulatie is het opzetten van Aspose.Words voor Java. Onze uitgebreide tutorial begeleidt u door het installatieproces, zodat u de API binnen een mum van tijd operationeel heeft.
 
 ### Documenten maken en wijzigen
 

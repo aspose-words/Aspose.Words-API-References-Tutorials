@@ -103,7 +103,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### 3. Hogyan formázhatom másképp a táblázatokat?
 
-Testreszabhatja a táblázat formázását az Aspose.Words által biztosított különböző módszerekkel. Ellenőrizd a[API dokumentáció](https://reference.aspose.com/words/net/) részletes útmutatásért.
+Testreszabhatja a táblázat formázását az Aspose.Words által biztosított különböző módszerekkel. Ellenőrizd a[API dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.
 
 ### 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 

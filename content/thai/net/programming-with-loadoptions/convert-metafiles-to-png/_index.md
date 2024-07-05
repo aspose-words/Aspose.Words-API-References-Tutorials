@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 // พาธไปยังไดเร็กทอรีเอกสารของคุณ
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// กำหนดค่าตัวเลือกการโหลดด้วยคุณสมบัติ “แปลง Metafiles เป็น PNG”
+// กำหนดค่าตัวเลือกการโหลดด้วยคุณสมบัติ "แปลง Metafiles เป็น PNG"
 LoadOptions loadOptions = new LoadOptions { ConvertMetafilesToPng = true };
 
 // โหลดเอกสารด้วยตัวเลือกที่ระบุ

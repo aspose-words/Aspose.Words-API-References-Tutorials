@@ -20,7 +20,7 @@ Uygulamaya geçmeden önce MS Word belgelerinin yapısını anlamak çok önemli
 
 ## Doğru Python Kütüphanesini Seçmek
 
-Python kullanarak Word belgeleri oluşturma hedefimize ulaşmak için güvenilir ve zengin özelliklere sahip bir kitaplığa ihtiyacımız var. Bu görev için popüler seçeneklerden biri "Apose.Words for Python" kütüphanesidir. Kolay ve verimli belge manipülasyonuna olanak tanıyan sağlam bir API seti sağlar. Projemiz için bu kütüphaneyi nasıl kuracağımızı ve kullanabileceğimizi keşfedelim.
+Python kullanarak Word belgeleri oluşturma hedefimize ulaşmak için güvenilir ve zengin özelliklere sahip bir kitaplığa ihtiyacımız var. Bu görev için popüler seçeneklerden biri "Aspose.Words for Python" kütüphanesidir. Kolay ve verimli belge manipülasyonuna olanak tanıyan sağlam bir API seti sağlar. Projemiz için bu kütüphaneyi nasıl kuracağımızı ve kullanabileceğimizi keşfedelim.
 
 ## Python için Aspose.Words'ün Kurulumu
 

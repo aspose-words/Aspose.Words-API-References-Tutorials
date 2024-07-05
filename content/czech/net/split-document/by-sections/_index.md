@@ -76,7 +76,7 @@ V tomto tutoriálu jsme prozkoumali funkci Rozdělit dokument podle sekcí Aspos
 
 Použití funkce Rozdělit dokument podle oddílů může být výhodné, když potřebujete manipulovat nebo analyzovat konkrétní části dokumentu, jako jsou kapitoly, oddíly nebo jiné oddíly. Aspose.Words for .NET poskytuje spolehlivé a přímočaré řešení pro oddělování sekcí a umožňuje efektivní zpracování dokumentů.
 
-Neváhejte a prozkoumejte další výkonné funkce nabízené Aspose.Words pro .NET, abyste zlepšili své možnosti zpracování dokumentů a zefektivnili svůj pracovní postup.
+Neváhejte a prozkoumejte další výkonné funkce, které nabízí Aspose.Words for .NET, abyste zlepšili své možnosti zpracování dokumentů a zefektivnili svůj pracovní postup.
 
 ### Nejčastější dotazy
 

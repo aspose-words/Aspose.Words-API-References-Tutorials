@@ -136,13 +136,13 @@ In questo esempio, apriamo un documento con una tabella e uniamo i campi, impost
 
 ## Conclusione
 
-In questo tutorial hai imparato come utilizzare le opzioni di pulizia in Aspose.Words per Java per manipolare e pulire i documenti durante il processo di stampa unione. Queste opzioni forniscono un controllo capillare sulla pulizia dei documenti, consentendoti di creare facilmente documenti raffinati e personalizzati.
+In questo tutorial hai imparato come utilizzare le opzioni di pulizia in Aspose.Words per Java per manipolare e ripulire i documenti durante il processo di stampa unione. Queste opzioni forniscono un controllo capillare sulla pulizia dei documenti, consentendoti di creare facilmente documenti raffinati e personalizzati.
 
 ## Domande frequenti
 
 ### Quali sono le opzioni di pulizia in Aspose.Words per Java?
 
-Le opzioni di pulizia in Aspose.Words per Java sono impostazioni che consentono di controllare vari aspetti della pulizia dei documenti durante il processo di stampa unione. Ti consentono di rimuovere elementi non necessari come paragrafi vuoti, aree inutilizzate e altro, garantendo che il tuo documento finale sia ben strutturato e rifinito.
+Le opzioni di pulizia in Aspose.Words per Java sono impostazioni che consentono di controllare vari aspetti della pulizia dei documenti durante il processo di stampa unione. Ti consentono di rimuovere elementi non necessari come paragrafi vuoti, aree inutilizzate e altro, assicurando che il tuo documento finale sia ben strutturato e rifinito.
 
 ### Come posso rimuovere i paragrafi vuoti dal mio documento?
 

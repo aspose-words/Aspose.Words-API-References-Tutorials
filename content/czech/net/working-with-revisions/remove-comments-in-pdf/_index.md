@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-revisions/remove-comments-in-pdf/
 ---
 
-V tomto podrobném průvodci vám řekneme, jak odstranit komentáře v souboru PDF pomocí Aspose.Words for .NET. Poskytneme vám kompletní zdrojový kód a ukážeme vám, jak formátovat výstup markdown.
+tomto podrobném průvodci vám řekneme, jak odstranit komentáře v souboru PDF pomocí Aspose.Words for .NET. Poskytneme vám kompletní zdrojový kód a ukážeme vám, jak formátovat výstup markdown.
 
 ## Krok 1: Načtení dokumentu
 

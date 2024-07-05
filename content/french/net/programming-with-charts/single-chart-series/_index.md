@@ -17,7 +17,7 @@ Assurez-vous que vous disposez des conditions préalables suivantes :
 - Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de document où le document de sortie sera enregistré.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique.
+## Étape 2 : Créez un nouveau document et insérez un graphique
 
  Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
 
@@ -116,5 +116,5 @@ Le lissage des séries de graphiques est une technique d'amélioration visuelle 
 #### Q4. Comment puis-je personnaliser les marqueurs pour les points de données dans une série de graphiques ?
  Pour personnaliser les marqueurs des points de données dans une série de graphiques à l'aide d'Aspose.Words for .NET, vous devez accéder au`Marker` propriété du`ChartSeries` objet et modifier ses propriétés telles que`Symbol` et`Size`. Les marqueurs sont des indicateurs visuels placés sur le graphique pour représenter des points de données individuels. Vous pouvez choisir parmi une variété de symboles de marqueurs intégrés et ajuster leur taille pour mettre en évidence ou différencier des points de données spécifiques au sein de la série.
 
-#### Q5. Puis-je inverser les couleurs des valeurs négatives dans une série de graphiques ?
- Oui, vous pouvez inverser les couleurs des valeurs négatives dans une série de graphiques à l'aide d'Aspose.Words pour .NET. En définissant le`InvertIfNegative` propriété du`ChartSeries` s'opposer à`true`, les couleurs des points de données avec des valeurs négatives seront inversées, les rendant visuellement distinctes des valeurs positives. Cette fonctionnalité peut être utile lors de la comparaison de valeurs positives et négatives dans une série de graphiques, offrant une différenciation claire entre les deux.
+#### Q5. Puis-je inverser les couleurs des valeurs négatives dans une série de graphiques ?
+ Oui, vous pouvez inverser les couleurs des valeurs négatives dans une série de graphiques à l'aide d'Aspose.Words for .NET. En définissant le`InvertIfNegative` propriété du`ChartSeries` s'opposer à`true`, les couleurs des points de données avec des valeurs négatives seront inversées, ce qui les distinguera visuellement des valeurs positives. Cette fonctionnalité peut être utile lors de la comparaison de valeurs positives et négatives dans une série de graphiques, permettant ainsi une différenciation claire entre les deux.

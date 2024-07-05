@@ -155,4 +155,4 @@ Aspose.Words voor Java kan afbeeldingen in de geconverteerde HTML verwerken door
 
 ### Is er een proefversie van Aspose.Words voor Java beschikbaar?
 
-Ja, u kunt een gratis proefversie van Aspose.Words voor Java aanvragen via de Aspose-website om de functies en mogelijkheden ervan te evalueren voordat u een licentie aanschaft.
+Ja, u kunt een gratis proefversie van Aspose.Words voor Java aanvragen op de Aspose-website om de functies en mogelijkheden ervan te evalueren voordat u een licentie aanschaft.

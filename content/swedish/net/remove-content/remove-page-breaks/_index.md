@@ -19,7 +19,7 @@ Innan vi börjar, se till att du har följande:
 
 ## Steg 1: Konfigurera miljön
 
-För att komma igång, skapa ett nytt C#-projekt i din föredragna utvecklingsmiljö. Se till att Aspose.Words för .NET-biblioteket är korrekt refererat till i ditt projekt.
+För att komma igång, skapa ett nytt C#-projekt i din föredragna utvecklingsmiljö. Se till att Aspose.Words för .NET-biblioteket är korrekt refererat i ditt projekt.
 
 ## Steg 2: Ladda dokumentet
 

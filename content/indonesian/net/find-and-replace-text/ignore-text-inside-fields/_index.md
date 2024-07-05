@@ -159,7 +159,7 @@ Console.WriteLine(doc.GetText());
 options.IgnoreFields = false;
 ```
 
-#### T: Bagaimana cara menampilkan dokumen yang dimodifikasi dengan kolom di Aspose.Words untuk .NET?
+#### T: Bagaimana cara menampilkan dokumen yang dimodifikasi dengan bidang di Aspose.Words untuk .NET?
 
 J: Setelah mengubah opsi untuk menyertakan kolom, Anda dapat melakukan pencarian dan mengganti lagi untuk mendapatkan hasil dengan teks di dalam kolom yang disertakan:
 

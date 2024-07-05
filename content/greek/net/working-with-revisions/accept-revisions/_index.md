@@ -1,6 +1,6 @@
 ---
-title: Αποδοχή κριτικών
-linktitle: Αποδοχή κριτικών
+title: Αποδοχή αναθεωρήσεων
+linktitle: Αποδοχή αναθεωρήσεων
 second_title: Aspose.Words Document Processing API
 description: Μάθετε πώς να αποδέχεστε αναθεωρήσεις σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET
 type: docs
@@ -74,7 +74,7 @@ doc.StopTrackRevisions();
 ```
 ## Βήμα 6: Αποθήκευση του εγγράφου
 
- Αφού εισαγάγετε το πεδίο φόρμας εισαγωγής κειμένου, αποθηκεύστε το έγγραφο στην επιθυμητή θέση χρησιμοποιώντας το`Save` μέθοδος. Φροντίστε να παρέχετε την κατάλληλη διαδρομή αρχείου:
+ Αφού εισαγάγετε το πεδίο φόρμας εισαγωγής κειμένου, αποθηκεύστε το έγγραφο στην επιθυμητή θέση χρησιμοποιώντας το`Save`μέθοδος. Φροντίστε να παρέχετε την κατάλληλη διαδρομή αρχείου:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Η διαγραμμένη παράγραφος αναθεώρησης καταργείται μόλις αποδεχθούμε τις αλλαγές.
+// Η παράγραφος διαγραφής αναθεώρησης καταργείται μόλις αποδεχθούμε τις αλλαγές.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

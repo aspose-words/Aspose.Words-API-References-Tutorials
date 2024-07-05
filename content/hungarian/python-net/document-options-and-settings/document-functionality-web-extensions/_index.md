@@ -10,7 +10,7 @@ url: /hu/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## Bevezetés
 
-A webbővítmények a modern dokumentumkezelő rendszerek szerves részévé váltak. Lehetővé teszik a fejlesztők számára, hogy a webalapú összetevők zökkenőmentes integrálásával javítsák a dokumentumok funkcionalitását. Az Aspose.Words, a Python hatékony dokumentumkezelési API átfogó megoldást kínál a webbővítmények dokumentumaiba való integrálására.
+A webbővítmények a modern dokumentumkezelő rendszerek szerves részévé váltak. Lehetővé teszik a fejlesztők számára, hogy a webalapú összetevők zökkenőmentes integrálásával javítsák a dokumentumok funkcionalitását. Az Aspose.Words, a Python hatékony dokumentumkezelési API átfogó megoldást kínál a webbővítmények dokumentumaiba való beépítésére.
 
 ## Előfeltételek
 

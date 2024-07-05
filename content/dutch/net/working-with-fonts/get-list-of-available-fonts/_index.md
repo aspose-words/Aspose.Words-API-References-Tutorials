@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Voeg een nieuwe mapbron toe die Aspose.Words de opdracht geeft om in de volgende map naar lettertypen te zoeken.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// Voeg de aangepaste map die onze lettertypen bevat toe aan de lijst met bestaande lettertypebronnen.
+//Voeg de aangepaste map die onze lettertypen bevat toe aan de lijst met bestaande lettertypebronnen.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ A: Ja, u kunt de lijst met lettertypen die beschikbaar zijn in Aspose.Words filt
 
 #### Vraag: Hoe kan ik de lijst met beschikbare lettertypen in mijn Word-documenten gebruiken?
 
- A: Om de lijst met lettertypen te gebruiken die beschikbaar zijn in uw Word-documenten, kunt u door de lijst bladeren en de juiste lettertypen selecteren met behulp van de methoden en eigenschappen van de`FontSettings` klasse in Aspose.Words.
+A: Om de lijst met lettertypen te gebruiken die beschikbaar zijn in uw Word-documenten, kunt u door de lijst bladeren en de juiste lettertypen selecteren met behulp van de methoden en eigenschappen van de`FontSettings` klasse in Aspose.Words.

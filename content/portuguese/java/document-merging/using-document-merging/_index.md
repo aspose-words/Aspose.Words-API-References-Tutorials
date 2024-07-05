@@ -2,7 +2,7 @@
 title: Usando mesclagem de documentos
 linktitle: Usando mesclagem de documentos
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda a mesclar documentos do Word perfeitamente usando Aspose.Words for Java. Combine, formate e lide com conflitos de maneira eficiente em apenas algumas etapas. Comece agora!
+description: Aprenda a mesclar documentos do Word perfeitamente usando Aspose.Words para Java. Combine, formate e lide com conflitos de maneira eficiente em apenas algumas etapas. Comece agora!
 type: docs
 weight: 10
 url: /pt/java/document-merging/using-document-merging/

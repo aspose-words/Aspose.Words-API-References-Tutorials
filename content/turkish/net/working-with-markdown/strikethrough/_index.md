@@ -57,7 +57,7 @@ Tebrikler! Artık üstü çizili metin stilini Aspose.Words for .NET ile nasıl 
 
 #### S: Üstü çizili metni aynı paragraftaki birkaç metin parçasına eklemek mümkün mü?
 
- C: Evet, birden çok öğeyi kullanarak tek bir paragrafta metnin birden çok bölümüne üstü çizili metin ekleyebilirsiniz.`Run` nesneler. Birden fazla oluşturabilirsiniz`Run` nesneleri ayarlayın ve`Font.StrikeThrough`mülkiyet`true` Her nesne için üstü çizili metni istenen metin bölümlerine eklemek için. Daha sonra bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.
+ C: Evet, tek bir paragrafta metnin birden çok bölümüne birden çok satır kullanarak üstü çizili metin ekleyebilirsiniz.`Run` nesneler. Birden fazla oluşturabilirsiniz`Run` nesneleri ayarlayın ve`Font.StrikeThrough`mülkiyet`true` Her nesne için üstü çizili metni istenen metin bölümlerine eklemek için. Daha sonra bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.
 
 #### S: Aspose.Words'te bir tablo veya hücredeki metne üstü çizili metin ekleyebilir miyim?
 

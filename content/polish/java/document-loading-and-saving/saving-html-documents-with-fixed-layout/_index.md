@@ -2,7 +2,7 @@
 title: Zapisywanie dokumentów HTML ze stałym układem w Aspose.Words dla Java
 linktitle: Zapisywanie dokumentów HTML ze stałym układem
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak zapisywać dokumenty HTML ze stałym układem w Aspose.Words dla Java. Postępuj zgodnie z naszym przewodnikiem krok po kroku dotyczącym płynnego formatowania dokumentów.
+description: Dowiedz się, jak zapisywać dokumenty HTML ze stałym układem w Aspose.Words dla Java. Postępuj zgodnie z naszym przewodnikiem krok po kroku dotyczącym bezproblemowego formatowania dokumentów.
 type: docs
 weight: 15
 url: /pl/java/document-loading-and-saving/saving-html-documents-with-fixed-layout/

@@ -23,7 +23,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek
 
 ## Hozzon létre egy új Java projektet
 
-Kezdjük egy új Java projekt létrehozásával az Ön által preferált IDE-ben. Nevezheti úgy, ahogy akarja. Ez a projekt szolgál majd munkaterületünkként meghatározott dokumentumoldalak nyomtatásához.
+Kezdjük egy új Java projekt létrehozásával az Ön által preferált IDE-ben. Nevezheted, ahogy akarod. Ez a projekt szolgál majd munkaterületünkként meghatározott dokumentumoldalak nyomtatásához.
 
 ## Adja hozzá az Aspose.Words Dependency-t
 

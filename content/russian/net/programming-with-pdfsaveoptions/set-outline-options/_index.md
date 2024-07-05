@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Шаг 3. Настройте параметры сохранения в формате PDF с помощью параметров плана.
 
-Чтобы установить параметры структуры в сгенерированном PDF-файле, нам необходимо настроить`PdfSaveOptions` Объект Object. Мы можем установить количество уровней структуры заголовка (`HeadingsOutlineLevels`) и количество расширенных уровней структуры (`ExpandedOutlineLevels`).
+Чтобы установить параметры структуры в сгенерированном PDF-файле, нам необходимо настроить`PdfSaveOptions` объект. Мы можем установить количество уровней структуры заголовка (`HeadingsOutlineLevels`) и количество расширенных уровней структуры (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -46,7 +46,7 @@ saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-Вот и все! Вы успешно установили параметры структуры в документе и создали PDF-файл с соответствующими параметрами структуры, используя Aspose.Words для .NET.
+Вот и все ! Вы успешно установили параметры структуры в документе и создали PDF-файл с соответствующими параметрами структуры, используя Aspose.Words для .NET.
 
 ### Пример исходного кода для установки параметров плана в соответствии с размером метафайла с помощью Aspose.Words для .NET
 

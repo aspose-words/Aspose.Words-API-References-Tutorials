@@ -52,7 +52,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 ## Závěr
 
-tomto tutoriálu jsme se naučili, jak získat typy revizí slov v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupovali jsme podle kroků k načtení dokumentu, procházení odstavců a kontrole typů slovních recenzí spojených s každým odstavcem. Nyní můžete tyto znalosti použít k analýze slovních recenzí ve vašich vlastních dokumentech aplikace Word pomocí Aspose.Words for .NET.
+V tomto tutoriálu jsme se naučili, jak získat typy revizí slov v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupovali jsme podle kroků k načtení dokumentu, procházení odstavců a kontrole typů slovních recenzí spojených s každým odstavcem. Nyní můžete tyto znalosti použít k analýze slovních recenzí ve vašich vlastních dokumentech aplikace Word pomocí Aspose.Words for .NET.
 
 ### Časté dotazy pro získání revizních typů slov
 
@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### Otázka: Jak zkontrolovat, zda byl odstavec přesunut (smazán) v Aspose.Words pro .NET?
 
- A: Použijte odstavce`IsMoveFromRevision` vlastnost zkontrolovat, zda byla přesunuta (smazána).
+ A: Použijte odstavce`IsMoveFromRevision`vlastnost zkontrolovat, zda byla přesunuta (smazána).
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### Otázka: Jak zkontrolovat, zda byl odstavec přesunut (vložen) v Aspose.Words pro .NET?
 
- A: Použijte odstavce`IsMoveToRevision`vlastnost zkontrolovat, zda byla přesunuta (vložena).
+ A: Použijte odstavce`IsMoveToRevision` vlastnost zkontrolovat, zda byla přesunuta (vložena).
 
 ```csharp
 if (paragraph.IsMoveToRevision)

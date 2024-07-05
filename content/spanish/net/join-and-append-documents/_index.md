@@ -33,7 +33,7 @@ Estos tutoriales de Aspose.Words para .NET le brindan recursos valiosos para dom
 | [Actualizar diseño de página](./update-page-layout/) | Aprenda cómo actualizar el diseño de la página al unir y agregar documentos de Word usando Aspose.Words para .NET. |
 | [Usar estilos de destino](./use-destination-styles/) | Aprenda a unir y anexar documentos de Word mientras aplica estilos de documento de destino utilizando Aspose.Words para .NET. |
 | [Comportamiento de estilo inteligente](./smart-style-behavior/) | Aprenda cómo mantener un comportamiento de estilo inteligente al unir y agregar documentos de Word usando Aspose.Words para .NET. |
-| [Insertar documento con el constructor](./insert-document-with-builder/) | Aprenda a insertar un documento al final de otro documento usando Aspose.Words para .NET. |
+| [Insertar documento con el constructor](./insert-document-with-builder/) | Aprenda cómo insertar un documento al final de otro documento usando Aspose.Words para .NET. |
 | [Mantener la numeración de fuentes](./keep-source-numbering/) | Aprenda cómo adjuntar un documento conservando el formato de numeración de origen en Aspose.Words para .NET. |
 | [Ignorar cuadros de texto](./ignore-text-boxes/) | Aprenda cómo adjuntar un documento ignorando el formato del cuadro de texto usando Aspose.Words para .NET. |
 | [Ignorar encabezado y pie de página](./ignore-header-footer/) | Aprenda cómo adjuntar un documento ignorando el contenido del encabezado y pie de página usando Aspose.Words para .NET. |

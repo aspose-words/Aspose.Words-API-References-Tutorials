@@ -60,7 +60,7 @@ Ahora, muevamos el cursor al final del documento. Es como colocar el bolígrafo 
 builder.MoveToDocumentEnd();
 ```
 
- Este comando mueve el`DocumentBuilder` cursor hasta el final del documento, preparándonos para los siguientes pasos.
+ Este comando mueve el`DocumentBuilder` cursor hasta el final del documento, preparándonos para los próximos pasos.
 
 ## Paso 4: pasar al campo Combinar
 

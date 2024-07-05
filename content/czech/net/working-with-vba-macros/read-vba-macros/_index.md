@@ -23,7 +23,7 @@ Než začnete, ujistěte se, že máte následující položky:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Krok 2: Načtěte dokument a přečtěte si makra VBA.
+## Krok 2: Načtěte dokument a přečtěte si makra VBA
 Dále načteme dokument Word a zkontrolujeme, zda obsahuje projekt VBA. Pokud má dokument projekt VBA, projdeme všechny moduly v projektu a zobrazíme zdrojový kód každého modulu.
 
 ```csharp

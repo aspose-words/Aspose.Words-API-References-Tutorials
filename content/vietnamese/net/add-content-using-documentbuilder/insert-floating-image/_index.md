@@ -40,7 +40,7 @@ Hãy chia nhỏ quá trình chèn hình ảnh nổi vào tài liệu Word thành
 1. Mở Visual Studio và tạo một dự án mới.
 2. Chọn "Ứng dụng Console (.NET Core)" và nhấp vào "Tiếp theo".
 3. Đặt tên cho dự án của bạn và chọn một vị trí để lưu nó. Nhấp vào "Tạo."
-4. Cài đặt Aspose.Words cho .NET thông qua Trình quản lý gói NuGet. Nhấp chuột phải vào dự án của bạn trong Solution Explorer, chọn "Quản lý gói NuGet" và tìm kiếm "Apose.Words". Cài đặt phiên bản mới nhất.
+4. Cài đặt Aspose.Words cho .NET thông qua Trình quản lý gói NuGet. Nhấp chuột phải vào dự án của bạn trong Solution Explorer, chọn "Quản lý gói NuGet" và tìm kiếm "Aspose.Words". Cài đặt phiên bản mới nhất.
 
 ## Bước 2: Khởi tạo Document và DocumentBuilder
 

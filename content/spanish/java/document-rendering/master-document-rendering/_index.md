@@ -138,7 +138,7 @@ doc.save("output.pdf", SaveFormat.PDF);
 // Renderizar a XPS
 doc.save("output.xps", SaveFormat.XPS);
 
-// Renderizar a imágenes
+// Renderizar en imágenes
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
 saveOptions.setResolution(300);
 doc.save("output.png", saveOptions);

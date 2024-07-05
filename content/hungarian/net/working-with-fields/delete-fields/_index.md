@@ -46,7 +46,7 @@ Győződjön meg arról, hogy van egy új vagy meglévő C#-projektje a Visual S
 Ha még nem tette meg, adjon hozzá hivatkozást az Aspose.Words-re a Visual Studio projektben. Ezt a következőképpen teheti meg:
    - Kattintson a jobb gombbal a projektre a Solution Explorerben.
    - A "NuGet-csomagok kezelése..." kiválasztása
-   - Az "Apose.Words" keresése és telepítése a projektbe.
+   - Az "Aspose.Words" keresése és telepítése a projektbe.
 
 ## 3. lépés: Készítse elő a dokumentumot
 
@@ -105,4 +105,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
    - Igen, az itt bemutatott módszer csak a mezőket célozza meg, és a többi tartalmat változatlanul hagyja.
 
 ### Hol találok további forrásokat és támogatást az Aspose.Words számára?
-   -  Meglátogatni a[Aspose.Words .NET API dokumentációhoz](https://reference.aspose.com/words/net/) és a[Aspose.Words fórum](https://forum.aspose.com/c/words/8)további segítségért.
+   -  Meglátogatni a[Aspose.Words .NET API dokumentációhoz](https://reference.aspose.com/words/net/) és a[Aspose.Words fórum](https://forum.aspose.com/c/words/8) további segítségért.

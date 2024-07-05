@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Lägg till med sidnummerkonverteringar
+### Lägg till med sidnummerkonvertering
 
 ```java
 Document srcDoc = new Document("source.docx");

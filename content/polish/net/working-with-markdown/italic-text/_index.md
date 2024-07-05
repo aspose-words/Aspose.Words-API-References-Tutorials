@@ -1,6 +1,6 @@
 ---
-title: Tekst włoski
-linktitle: Tekst włoski
+title: Tekst kursywą
+linktitle: Tekst kursywą
 second_title: Aspose.Words API do przetwarzania dokumentów
 description: Dowiedz się, jak pisać kursywą za pomocą Aspose.Words for .NET Przewodnik krok po kroku.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Użyj narzędzia do tworzenia dokumentów, aby dodać treść do dokumentu.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Utwórz tekst w języku włoskim.
+// Ustaw tekst kursywą.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

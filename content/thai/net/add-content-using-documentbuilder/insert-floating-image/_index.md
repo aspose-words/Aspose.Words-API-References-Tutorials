@@ -22,7 +22,7 @@ url: /th/net/add-content-using-documentbuilder/insert-floating-image/
 
 ## นำเข้าเนมสเปซ
 
-หากต้องการใช้ Aspose.Words ในโปรเจ็กต์ของคุณ คุณต้องนำเข้าเนมสเปซที่จำเป็น ทำได้โดยการเพิ่มบรรทัดต่อไปนี้ที่ด้านบนของไฟล์ C# ของคุณ:
+หากต้องการใช้ Aspose.Words ในโปรเจ็กต์ของคุณ คุณจะต้องนำเข้าเนมสเปซที่จำเป็น ทำได้โดยการเพิ่มบรรทัดต่อไปนี้ที่ด้านบนของไฟล์ C# ของคุณ:
 
 ```csharp
 using Aspose.Words;
@@ -40,7 +40,7 @@ using Aspose.Words.Drawing;
 1. เปิด Visual Studio และสร้างโครงการใหม่
 2. เลือก "แอปคอนโซล (.NET Core)" และคลิก "ถัดไป"
 3. ตั้งชื่อโครงการของคุณและเลือกสถานที่ที่จะบันทึก คลิก "สร้าง"
-4. ติดตั้ง Aspose.Words สำหรับ .NET ผ่าน NuGet Package Manager คลิกขวาที่โปรเจ็กต์ของคุณใน Solution Explorer เลือก “จัดการแพ็คเกจ NuGet” และค้นหา “Aspose.Words” ติดตั้งเวอร์ชันล่าสุด
+4. ติดตั้ง Aspose.Words สำหรับ .NET ผ่าน NuGet Package Manager คลิกขวาที่โปรเจ็กต์ของคุณใน Solution Explorer เลือก "จัดการแพ็คเกจ NuGet" และค้นหา "Aspose.Words" ติดตั้งเวอร์ชันล่าสุด
 
 ## ขั้นตอนที่ 2: เริ่มต้นเอกสารและ DocumentBuilder
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 ความหมายของแต่ละพารามิเตอร์มีดังนี้:
-- `imagePath`เส้นทางไปยังไฟล์ภาพของคุณ
+- `imagePath`เส้นทางไปยังไฟล์รูปภาพของคุณ
 - `RelativeHorizontalPosition.Margin`: ตำแหน่งแนวนอนสัมพันธ์กับระยะขอบ
 - `100`: ออฟเซ็ตแนวนอนจากระยะขอบ (เป็นพอยต์)
 - `RelativeVerticalPosition.Margin`: ตำแหน่งแนวตั้งสัมพันธ์กับระยะขอบ

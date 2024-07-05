@@ -225,7 +225,7 @@ Las etiquetas de documentos estructurados en Aspose.Words para Java proporcionan
 
 Las etiquetas de documentos estructurados (SDT) sirven para organizar y formatear el contenido dentro de los documentos, lo que facilita la creación de plantillas, formularios y documentos estructurados.
 
-### ¿Cómo puedo verificar el estado actual de un SDT de casilla de verificación?
+### ¿Cómo puedo comprobar el estado actual de un SDT de casilla de verificación?
 
  Puede verificar el estado actual de un SDT de casilla de verificación usando el`setChecked` método, como se demuestra en el artículo.
 

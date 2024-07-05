@@ -26,7 +26,7 @@ Door deze tutorials te volgen, kunt u de functies voor tabelmanipulatie van Aspo
 | [Geneste tabel](./nested-table/) | Leer hoe u een geneste tabel in een Word-document maakt met Aspose.Words voor .NET. |
 | [Combineer rijen](./combine-rows/) | Leer hoe u tabelrijen in een Word-document combineert met Aspose.Words voor .NET. |
 | [Tabel splitsen](./split-table/) | Leer hoe u een tabel in een Word-document kunt splitsen met Aspose.Words voor .NET. |
-| [Rijopmaak Schakel het splitsen van pagina's uit](./row-format-disable-break-across-pages/) | Leer hoe u regeleinde voor een tabel op meerdere pagina's in een Word-document kunt uitschakelen met Aspose.Words voor .NET. |
+| [Rijopmaak Schakel het verdelen over pagina's uit](./row-format-disable-break-across-pages/) | Leer hoe u regeleinde voor een tabel op meerdere pagina's in een Word-document kunt uitschakelen met Aspose.Words voor .NET. |
 | [Houd de tafel bij elkaar](./keep-table-together/) | Leer hoe u een tabel bij elkaar houdt in een Word-document met Aspose.Words voor .NET. |
 | [Verticaal samenvoegen](./vertical-merge/) | Leer hoe u cellen in een tabel in een Word-document verticaal kunt samenvoegen met Aspose.Words voor .NET. |
 | [Horizontaal samenvoegen](./horizontal-merge/) | Leer hoe u cellen in een Word-tabel horizontaal samenvoegt met Aspose.Words voor .NET. |

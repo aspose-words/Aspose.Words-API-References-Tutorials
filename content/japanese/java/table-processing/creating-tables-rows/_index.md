@@ -1,22 +1,22 @@
 ---
-title: ドキュメント内にテーブルと行を作成する
-linktitle: ドキュメント内にテーブルと行を作成する
+title: ドキュメントに表と行を作成する
+linktitle: ドキュメントに表と行を作成する
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用してドキュメント内にテーブルと行を作成する方法を学びます。ソース コードと FAQ を含むこの包括的なガイドに従ってください。
+description: Aspose.Words for Java を使用してドキュメントに表と行を作成する方法を学びます。ソース コードと FAQ を含むこの包括的なガイドに従ってください。
 type: docs
 weight: 12
 url: /ja/java/table-processing/creating-tables-rows/
 ---
 
 ## 導入
-ドキュメント内にテーブルと行を作成することはドキュメント処理の基本的な側面ですが、Aspose.Words for Java を使用すると、このタスクがこれまでより簡単になります。このステップバイステップ ガイドでは、Aspose.Words for Java を利用してドキュメント内にテーブルと行を作成する方法を説明します。レポートの作成、請求書の生成、構造化データの表示が必要なドキュメントの作成など、このガイドはすべてをカバーします。
+ドキュメントにテーブルと行を作成することは、ドキュメント処理の基本的な側面であり、Aspose.Words for Java を使用すると、このタスクがこれまで以上に簡単になります。このステップ バイ ステップ ガイドでは、Aspose.Words for Java を使用してドキュメントにテーブルと行を作成する方法について説明します。レポートの作成、請求書の生成、または構造化されたデータの表示を必要とするドキュメントの作成など、どのような場合でも、このガイドが役立ちます。
 
 ## 舞台設定
-核心的な詳細に入る前に、Aspose.Words for Java を使用するために必要なセットアップがあることを確認してください。ライブラリをダウンロードしてインストールしていることを確認してください。まだダウンロードしていない場合は、ダウンロード リンクを見つけてください。[ここ](https://releases.aspose.com/words/java/).
+細かい詳細に入る前に、Aspose.Words for Javaを使用するために必要な設定があることを確認しましょう。ライブラリをダウンロードしてインストールしてください。まだインストールしていない場合は、ダウンロードリンクをご覧ください。[ここ](https://releases.aspose.com/words/java/).
 
 ## テーブルの構築
 ### テーブルの作成
-まず、文書内に表を作成しましょう。次に、簡単なコード スニペットを示します。
+まず、ドキュメントに表を作成しましょう。次に、開始するための簡単なコード スニペットを示します。
 
 ```java
 //必要なクラスをインポートする
@@ -28,10 +28,10 @@ public class TableCreation {
         //新しいドキュメントを作成する
         Document doc = new Document();
         
-        // 3行3列のテーブルを作成します。
+        // 3行3列の表を作成する
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
-        //表のセルにデータを入力します
+        //表のセルにデータを入力する
         for (Row row : table.getRows()) {
             for (Cell cell : row.getCells()) {
                 cell.getFirstParagraph().appendChild(new Run(doc, "Sample Text"));
@@ -44,25 +44,25 @@ public class TableCreation {
 }
 ```
 
-このコード スニペットでは、3 行 3 列の単純なテーブルを作成し、各セルに「サンプル テキスト」というテキストを入力します。
+このコード スニペットでは、3 行 3 列のシンプルなテーブルを作成し、各セルに「サンプル テキスト」というテキストを入力します。
 
-### テーブルにヘッダーを追加する
-テーブルへのヘッダーの追加は、多くの場合、より適切に整理するために必要です。それを達成する方法は次のとおりです。
+### 表にヘッダーを追加する
+整理しやすくするために、テーブルにヘッダーを追加することが必要なことがよくあります。その方法は次のとおりです。
 
 ```java
-//テーブルにヘッダーを追加する
+//表にヘッダーを追加する
 Row headerRow = table.getRows().get(0);
 headerRow.getRowFormat().setHeadingFormat(true);
 
-//ヘッダーセルにデータを入力します
+//ヘッダーセルに入力する
 for (int i = 0; i < table.getColumns().getCount(); i++) {
     Cell cell = headerRow.getCells().get(i);
     cell.getFirstParagraph().appendChild(new Run(doc, "Header " + (i + 1)));
 }
 ```
 
-### テーブルスタイルの変更
-ドキュメントの美しさに合わせて表のスタイルをカスタマイズできます。
+### 表スタイルの変更
+ドキュメントの美観に合わせて表のスタイルをカスタマイズできます。
 
 ```java
 //定義済みの表スタイルを適用する
@@ -71,10 +71,10 @@ table.setStyleIdentifier(StyleIdentifier.MEDIUM_GRID_1_ACCENT_1);
 
 ## 行の操作
 ### 行の挿入
-さまざまなデータを扱う場合、行を動的に追加することが不可欠です。テーブルに行を挿入する方法は次のとおりです。
+変化するデータを扱う場合、行を動的に追加することが不可欠です。テーブルに行を挿入する方法は次のとおりです。
 
 ```java
-//特定の位置 (最初の行の後など) に新しい行を挿入します。
+//特定の位置に新しい行を挿入する（例：最初の行の後）
 Row newRow = new Row(doc);
 table.getRows().insertAfter(newRow, table.getRows().get(0));
 ```
@@ -83,39 +83,39 @@ table.getRows().insertAfter(newRow, table.getRows().get(0));
 テーブルから不要な行を削除するには、次のコードを使用できます。
 
 ```java
-//特定の行（2行目など）を削除します。
+//特定の行（例：2行目）を削除する
 table.getRows().removeAt(1);
 ```
 
 ## よくある質問
 ### テーブルの境界線の色を設定するにはどうすればよいですか?
-テーブルの境界線の色を設定するには、`Table`クラスの`setBorders`方法。以下に例を示します。
+テーブルの境界線の色を設定するには、`Table`クラスの`setBorders`方法。次に例を示します。
 ```java
 table.setBorders(Color.BLUE, LineStyle.SINGLE, 1.0);
 ```
 
 ### 表内のセルを結合できますか?
-はい、次のコマンドを使用してテーブル内のセルを結合できます。`Cell`クラスの`getCellFormat().setHorizontalMerge`方法。例：
+はい、表内のセルを結合するには、`Cell`クラスの`getCellFormat().setHorizontalMerge`方法。例:
 ```java
 Cell firstCell = table.getRows().get(0).getCells().get(0);
 firstCell.getCellFormat().setHorizontalMerge(CellMerge.FIRST);
 ```
 
-### 文書に目次を追加するにはどうすればよいですか?
-目次を追加するには、Aspose.Words for Java を使用できます。`DocumentBuilder`クラス。基本的な例を次に示します。
+### ドキュメントに目次を追加するにはどうすればよいですか?
+目次を追加するには、Aspose.Words for Javaの`DocumentBuilder`クラス。基本的な例を次に示します。
 ```java
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-### データベースからテーブルにデータをインポートすることはできますか?
-はい、データベースからデータをインポートし、ドキュメント内の表にデータを追加できます。データベースからデータをフェッチし、Aspose.Words for Java を使用してテーブルに挿入する必要があります。
+### データベースからテーブルにデータをインポートすることは可能ですか?
+はい、データベースからデータをインポートし、ドキュメント内のテーブルにデータを入力できます。データベースからデータを取得し、Aspose.Words for Java を使用してテーブルに挿入する必要があります。
 
-### 表のセル内のテキストを書式設定するにはどうすればよいですか?
-表のセル内のテキストを書式設定するには、`Run`オブジェクトを作成し、必要に応じて書式設定を適用します。たとえば、フォント サイズやスタイルを変更します。
+### 表のセル内のテキストをフォーマットするにはどうすればよいですか?
+表のセル内のテキストを書式設定するには、`Run`オブジェクトを編集し、必要に応じて書式を適用します。たとえば、フォント サイズやスタイルを変更します。
 
-### ドキュメントを別の形式にエクスポートできますか?
- Aspose.Words for Java を使用すると、DOCX、PDF、HTML などのさまざまな形式でドキュメントを保存できます。使用`Document.save`メソッドを使用して希望の形式を指定します。
+### ドキュメントを別の形式でエクスポートできますか?
+ Aspose.Words for Javaでは、DOCX、PDF、HTMLなど、さまざまな形式で文書を保存できます。`Document.save`希望する形式を指定する方法。
 
 ## 結論
-Aspose.Words for Java を使用してドキュメント内にテーブルと行を作成することは、ドキュメント自動化のための強力な機能です。この包括的なガイドで提供されているソース コードとガイダンスを使用すると、Java アプリケーションで Aspose.Words for Java の可能性を活用する準備が整います。レポート、ドキュメント、プレゼンテーションのいずれを作成している場合でも、コード スニペットを作成するだけで構造化データをプレゼンテーションできます。
+Aspose.Words for Java を使用してドキュメントにテーブルと行を作成すると、ドキュメントの自動化に強力な機能を使用できます。この包括的なガイドで提供されているソース コードとガイダンスを使用すると、Java アプリケーションで Aspose.Words for Java の潜在能力を活用できるようになります。レポート、ドキュメント、プレゼンテーションのいずれを作成する場合でも、構造化されたデータのプレゼンテーションはコード スニペットで実現できます。

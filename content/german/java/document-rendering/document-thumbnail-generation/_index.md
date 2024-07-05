@@ -1,24 +1,24 @@
 ---
-title: Erstellung von Miniaturansichten von Dokumenten
-linktitle: Erstellung von Miniaturansichten von Dokumenten
-second_title: Aspose.Words Java-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für Java Dokument-Miniaturansichten generieren. Verbessern Sie das Benutzererlebnis mit visuellen Vorschauen.
+title: Dokument-Miniaturansichten erstellen
+linktitle: Dokument-Miniaturansichten erstellen
+second_title: Aspose.Words Java-API zur Dokumentverarbeitung
+description: Erfahren Sie, wie Sie mit Aspose.Words für Java Miniaturansichten von Dokumenten erstellen. Verbessern Sie das Benutzererlebnis mit visuellen Vorschauen.
 type: docs
 weight: 11
 url: /de/java/document-rendering/document-thumbnail-generation/
 ---
 
-## Einführung in die Erstellung von Miniaturansichten von Dokumenten
+## Einführung in die Generierung von Dokument-Miniaturansichten
 
-Bei der Generierung von Miniaturansichten eines Dokuments wird eine visuelle Miniaturdarstellung eines Dokuments erstellt, die häufig als Vorschaubild angezeigt wird. Es ermöglicht Benutzern, den Inhalt eines Dokuments schnell zu beurteilen, ohne es vollständig öffnen zu müssen.
+Bei der Generierung von Dokumentminiaturen wird eine visuelle Miniaturdarstellung eines Dokuments erstellt, die häufig als Vorschaubild angezeigt wird. So können Benutzer den Inhalt eines Dokuments schnell beurteilen, ohne es vollständig öffnen zu müssen.
 
 ## Voraussetzungen
 
-Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor wir uns in den Code vertiefen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 - Java-Entwicklungsumgebung: Stellen Sie sicher, dass Java auf Ihrem System installiert ist.
 -  Aspose.Words für Java: Laden Sie Aspose.Words für Java von der Website herunter und installieren Sie es[Hier](https://releases.aspose.com/words/java/).
-- Integrierte Entwicklungsumgebung (IDE): Sie können jede beliebige Java-IDE Ihrer Wahl verwenden, beispielsweise Eclipse oder IntelliJ IDEA.
+- Integrierte Entwicklungsumgebung (IDE): Sie können jede Java-IDE Ihrer Wahl verwenden, beispielsweise Eclipse oder IntelliJ IDEA.
 
 ## Schritt 1: Einrichten Ihrer Entwicklungsumgebung
 
@@ -33,40 +33,40 @@ In diesem Schritt lernen wir, wie man ein Word-Dokument mit Aspose.Words für Ja
 Document doc = new Document("sample.docx");
 ```
 
-## Schritt 3: Miniaturansichten des Dokuments erstellen
+## Schritt 3: Erstellen von Dokument-Miniaturansichten
 
-Lassen Sie uns nun in den Prozess der Erstellung von Miniaturansichten aus dem geladenen Dokument eintauchen.
+Lassen Sie uns nun in den Prozess der Miniaturbildgenerierung aus dem geladenen Dokument eintauchen.
 
 ```java
-// Java-Code zum Generieren einer Miniaturansicht eines Dokuments
+// Java-Code zum Generieren einer Dokument-Miniaturansicht
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
 ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
 doc.save(stream, options);
 ```
 
-## Schritt 4: Anpassen der Miniaturansicht
+## Schritt 4: Anpassen des Miniaturbild-Erscheinungsbilds
 
-Sie können das Erscheinungsbild Ihrer Miniaturansichten an das Design und die Anforderungen Ihrer Anwendung anpassen. Dazu gehört das Festlegen von Abmessungen, Qualität und Hintergrundfarbe.
+Sie können das Erscheinungsbild Ihrer Miniaturansichten an das Design und die Anforderungen Ihrer Anwendung anpassen. Dazu gehört das Einstellen von Abmessungen, Qualität und Hintergrundfarbe.
 
 ## Schritt 5: Miniaturansichten speichern
 
-Sobald Sie das Miniaturbild erstellt haben, können Sie es an Ihrem bevorzugten Ort speichern.
+Sobald Sie das Miniaturbild erstellt haben, können Sie es am gewünschten Ort speichern.
 
 ```java
-// Java-Code zum Speichern der generierten Miniaturansicht
+// Java-Code zum Speichern des generierten Miniaturbilds
 FileOutputStream outputStream = new FileOutputStream("thumbnail.png");
 stream.writeTo(outputStream);
 ```
 
 ## Abschluss
 
-Die Erstellung von Miniaturansichten von Dokumenten mit Aspose.Words für Java bietet eine nahtlose Möglichkeit, die Benutzererfahrung Ihrer Anwendung durch die Bereitstellung optisch ansprechender Vorschauen von Dokumenten zu verbessern. Dies kann besonders in Dokumentenmanagementsystemen, Content-Plattformen und E-Commerce-Websites von Nutzen sein.
+Die Generierung von Dokumentminiaturen mit Aspose.Words für Java bietet eine nahtlose Möglichkeit, das Benutzererlebnis Ihrer Anwendung durch optisch ansprechende Dokumentvorschauen zu verbessern. Dies kann insbesondere in Dokumentenverwaltungssystemen, Inhaltsplattformen und E-Commerce-Websites von Nutzen sein.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie installiere ich Aspose.Words für Java?
 
- Um Aspose.Words für Java zu installieren, besuchen Sie die Download-Seite.[Hier](https://releases.aspose.com/words/java/) und befolgen Sie die mitgelieferten Installationsanweisungen.
+ Um Aspose.Words für Java zu installieren, besuchen Sie die Download-Seite[Hier](https://releases.aspose.com/words/java/) und befolgen Sie die bereitgestellten Installationsanweisungen.
 
 ### Kann ich die Größe des generierten Miniaturbilds anpassen?
 
@@ -78,8 +78,8 @@ Ja, Aspose.Words für Java unterstützt verschiedene Dokumentformate, darunter D
 
 ### Gibt es Lizenzanforderungen für die Verwendung von Aspose.Words für Java?
 
-Ja, Aspose.Words für Java erfordert eine gültige Lizenz für die kommerzielle Nutzung. Eine Lizenz erhalten Sie auf der Aspose-Website.
+Ja, Aspose.Words für Java erfordert für die kommerzielle Nutzung eine gültige Lizenz. Sie können eine Lizenz von der Aspose-Website erhalten.
 
 ### Wo finde ich zusätzliche Dokumentation für Aspose.Words für Java?
 
- Eine umfassende Dokumentation und API-Referenzen finden Sie auf der Dokumentationsseite zu Aspose.Words für Java[Hier](https://reference.aspose.com/words/java/).
+ Ausführliche Dokumentation und API-Referenzen finden Sie auf der Dokumentationsseite von Aspose.Words für Java.[Hier](https://reference.aspose.com/words/java/).

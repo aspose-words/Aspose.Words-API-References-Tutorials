@@ -28,7 +28,7 @@ public class TableCreation {
         // Buat Dokumen baru
         Document doc = new Document();
         
-        // Buat tabel dengan 3 baris dan 3 kolom.
+        // Buat tabel dengan 3 baris dan 3 kolom
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // Isi sel tabel dengan data

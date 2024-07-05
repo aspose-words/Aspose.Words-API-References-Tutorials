@@ -79,7 +79,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Вопрос: Как загрузить документ с исправлениями в Aspose.Words for .NET?
 
- А: Используйте`Document`класс Aspose.Words для .NET, содержащий загрузку документа из редакций файла. Вы можете указать полный путь к документу.
+ А: Используйте`Document` класс Aspose.Words для .NET для загрузки документа из файла, содержащего версии. Вы можете указать полный путь к документу.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### Вопрос: Как просмотреть версии документов в Aspose.Words for .NET?
 
- А: Используйте`foreach` цикл для перебора редакций, присутствующих в документе. Вы можете использовать`Revisions` собственность`Document` объект, чтобы получить коллекцию всех редакций документа.
+А: Используйте`foreach` цикл для перебора редакций, присутствующих в документе. Вы можете использовать`Revisions` собственность`Document` объект, чтобы получить коллекцию всех редакций документа.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

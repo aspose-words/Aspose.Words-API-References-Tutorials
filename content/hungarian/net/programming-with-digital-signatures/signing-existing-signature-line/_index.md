@@ -114,7 +114,7 @@ V: Egy Word-dokumentumban lévő meglévő aláírási sor aláírásához az As
 V: Igen, testreszabhatja a digitális aláírás megjelenését egy meglévő aláírási sorban az aláírást reprezentáló képfájl megadásával. A kép lehet logó, kézzel írt aláírás vagy az aláírás bármely más grafikus ábrázolása. Beállíthatja a`SignatureLineImage` tulajdona a`SignOptions` osztályt a képfájl bájtjaira.
 
 #### K: Aláírhatok több meglévő aláírási sort egy Word-dokumentumban?
- V: Igen, aláírhat több meglévő aláírási sort egy Word-dokumentumban. Minden aláírási sorhoz külön-külön kell követni a lépéseket, beállítva a megfelelőt`SignatureLineId` és`SignatureLineImage` értékek a`SignOptions` objektumot minden aláírási sorhoz.
+ V: Igen, aláírhat több meglévő aláírási sort egy Word-dokumentumban. Minden aláírási sorhoz külön-külön kell követni a lépéseket, beállítva a megfelelőt`SignatureLineId` és`SignatureLineImage` értékek a`SignOptions` objektum minden aláírási sorhoz.
 
 #### K: Milyen formátumú legyen a képfájl a digitális aláíráshoz egy meglévő aláírási sorban?
 

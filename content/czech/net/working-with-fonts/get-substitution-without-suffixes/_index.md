@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Krok 5: Vytvořte třídu Warning Handler
 
-Chcete-li efektivně zpracovávat varování, vytvořte vlastní třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zachytí a zaprotokoluje všechna varování o záměně písem.
+ Chcete-li efektivně zpracovávat varování, vytvořte vlastní třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zachytí a zaprotokoluje všechna varování o záměně písem.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Nyní jste zvládli proces nahrazování písem bez přípon pomocí Aspose.Word
 
 ### Q1: Jak mohu používat písma z více vlastních adresářů?
 
- Můžete přidat více`FolderFontSource` instance k`fontSources` seznam a odpovídajícím způsobem aktualizujte zdroje písem.
+ Můžete přidat více`FolderFontSource` instance k`fontSources`seznam a odpovídajícím způsobem aktualizujte zdroje písem.
 
 ### Q2: Kde si mohu stáhnout bezplatnou zkušební verzi Aspose.Words pro .NET?
 
@@ -116,7 +116,7 @@ Nyní jste zvládli proces nahrazování písem bez přípon pomocí Aspose.Word
 
 ### Q4: Kde mohu získat podporu pro Aspose.Words?
 
- Pro podporu navštivte stránku[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).
+ Pro podporu navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Q5: Je možné zakoupit dočasnou licenci?
 

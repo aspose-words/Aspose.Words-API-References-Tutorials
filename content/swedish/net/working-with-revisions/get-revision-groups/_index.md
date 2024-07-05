@@ -47,7 +47,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 ## Slutsats
 
-den här handledningen lärde vi oss hur man hämtar revisionsgrupperna i ett Word-dokument med Aspose.Words för .NET. Vi följde stegen för att ladda dokumentet och bläddra i granskningsgrupperna och visa detaljer som författare och recensionstyp. Du kan nu tillämpa denna kunskap för att analysera revisioner av ditt eget Word-dokument med Aspose.Words för .NET.
+I den här handledningen lärde vi oss hur man hämtar revisionsgrupperna i ett Word-dokument med Aspose.Words för .NET. Vi följde stegen för att ladda dokumentet och bläddra i granskningsgrupperna och visa detaljer som författare och recensionstyp. Du kan nu tillämpa denna kunskap för att analysera revisioner av ditt eget Word-dokument med Aspose.Words för .NET.
 
 ### FAQ's
 
@@ -61,12 +61,12 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Hur bläddrar man i revisionsgrupper i ett dokument i Aspose.Words för .NET?
 
- A: Använd`Groups` handlingens egendom`Revisions` objekt för att få samlingen av revisionsgrupper. Du kan sedan använda en loop för att gå igenom varje granskningsgrupp.
+ A: Använd`Groups` handlingens egendom`Revisions`objekt för att få samlingen av revisionsgrupper. Du kan sedan använda en loop för att gå igenom varje granskningsgrupp.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
 {
-     // Bearbeta varje granskningsgrupp här
+     // Behandla varje granskningsgrupp här
 }
 ```
 
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### F: Hur får man revisionstypen för en revisionsgrupp i Aspose.Words för .NET?
 
- A: Använd`RevisionType` egendom av`RevisionGroup`objekt för att få gruppens revisionstyp.
+ A: Använd`RevisionType` egendom av`RevisionGroup` objekt för att få gruppens revisionstyp.
 
 ```csharp
 string revisionType = group.RevisionType;

@@ -34,7 +34,7 @@ builder. InsertCell();
 ```
 
 ## Krok 4: Ustaw formatowanie komórek
- Teraz możemy ustawić formatowanie komórek, uzyskując dostęp do pliku`CellFormat` obiekt`DocumentBuilder` obiekt. Możemy ustawić szerokość komórki i marginesy (dopełnienia) za pomocą odpowiednich właściwości.
+ Teraz możemy ustawić formatowanie komórek, uzyskując dostęp do pliku`CellFormat` przedmiot`DocumentBuilder` obiekt. Możemy ustawić szerokość komórki i marginesy (dopełnienia) za pomocą odpowiednich właściwości.
 
 ```csharp
 CellFormat cellFormat = builder. CellFormat;

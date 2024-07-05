@@ -18,7 +18,7 @@ Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto a
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Passaggio 2: aggiungi uno stile per il codice specificato
+## Passaggio 2: aggiungi uno stile per il codice rientrato
 
 Aggiungeremo uno stile personalizzato per il codice rientrato utilizzando il file`Styles.Add` metodo del`Document` oggetto. In questo esempio, stiamo creando uno stile chiamato "IndentedCode" per il codice rientrato.
 
@@ -27,7 +27,7 @@ Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedC
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Passaggio 3: aggiungi il codice specificato
+## Passaggio 3: aggiungi il codice rientrato
 
 Ora possiamo aggiungere un blocco di codice rientrato utilizzando lo stile personalizzato "IndentedCode".
 
@@ -51,7 +51,7 @@ Congratulazioni! Ora hai imparato come utilizzare la funzionalità del codice ri
 
 ### Domande frequenti
 
-#### D: Qual è il codice specificato in Markdown?
+#### D: Cos'è il codice rientrato in Markdown?
 
 R: Il codice rientrato in Markdown è un metodo di formattazione utilizzato per visualizzare il codice in un documento Markdown. Consiste nel rientrare ogni riga di codice con spazi o tabulazioni.
 

@@ -72,7 +72,7 @@ builder.writeln("Item 2")
 
 ## Afbeeldingen en vormen invoegen
 
-Beeldmateriaal vergroot de aantrekkelijkheid van documenten. Voeg afbeeldingen en vormen toe met behulp van deze coderegels:
+Beeldmateriaal vergroot de aantrekkingskracht van documenten. Voeg afbeeldingen en vormen toe met behulp van deze coderegels:
 
 ```python
 builder.insert_image("image.jpg")

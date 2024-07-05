@@ -85,7 +85,7 @@ doc.built_in_document_properties["LastModifiedBy"] = "Automated Process"
 
 ## Ochrona poufnych informacji w metadanych
 
-Metadane mogą czasem zawierać informacje wrażliwe. Aby zapewnić prywatność danych, możesz usunąć określone właściwości:
+Metadane mogą czasami zawierać informacje wrażliwe. Aby zapewnić prywatność danych, możesz usunąć określone właściwości:
 
 ```python
 # Remove sensitive metadata properties

@@ -23,7 +23,7 @@ Ini adalah sumber daya komprehensif untuk mempelajari cara bekerja dengan bidang
 | [Sisipkan Bidang Gabungan Menggunakan DOM](./insert-merge-field-using-dom/) | Pelajari cara menyisipkan bidang gabungan bidang khusus ke dalam dokumen Word Anda dengan Aspose.Words untuk .NET. |
 | [Masukkan Bidang Blok Alamat Gabungan Surat Menggunakan DOM](./insert-mail-merge-address-block-field-using-dom/) | Pelajari cara Menyisipkan bidang blok alamat gabungan surat ke dalam dokumen Word Anda dengan Aspose.Words untuk .NET. |
 | [Sisipkan FieldIncludeText Tanpa Pembuat Dokumen](./insert-field-include-text-without-document-builder/) | Pelajari cara menyisipkan bidang FieldIncludeText di dokumen Word Anda dengan Aspose.Words untuk .NET. |
-| [Sisipkan Bidang Tidak Ada](./insert-field-none/) | Pelajari cara membuat dokumen dengan AUCUN di Word avec Aspose.Words pour .NET. |
+| [Sisipkan Bidang Tidak Ada](./insert-field-none/) | Pelajari cara memasukkan juara AUCUN dan dokumen Anda Word dengan Aspose.Words untuk .NET. |
 | [Sisipkan Bidang](./insert-field/) | Pelajari cara Menyisipkan bidang ke dalam dokumen Word Anda dengan Aspose.Words untuk .NET. Personalisasikan dokumen Anda dengan bidang dinamis. |
 | [Sisipkan Bidang Menggunakan Pembuat Bidang](./insert-field-using-field-builder/) | Pelajari cara Menyisipkan bidang khusus ke dalam dokumen Word Anda dengan Aspose.Words untuk .NET. |
 | [Sisipkan Bidang Penulis](./insert-author-field/) | Pelajari cara Menyisipkan bidang AUTHOR di dokumen Word Anda dengan Aspose.Words untuk .NET. Tentukan nama penulis untuk mempersonalisasi dokumen Anda. |

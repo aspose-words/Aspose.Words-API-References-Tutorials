@@ -8,7 +8,7 @@ weight: 10
 url: /ru/net/programming-with-shapes/add-corners-snipped/
 ---
 
- В этом руководстве объясняется, как добавить фигуру с обрезанными углами в документ Word с помощью Aspose.Words для .NET. Обрезанные углы можно настроить и вставить с помощью`InsertShape` метод.
+ В этом руководстве объясняется, как добавить фигуру с обрезанными углами в документ Word с помощью Aspose.Words для .NET. Форму обрезанных углов можно настроить и вставить с помощью`InsertShape` метод.
 
 ## Предварительные условия
 Чтобы следовать этому руководству, вам необходимо иметь следующее:
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Шаг 2. Создайте новый документ и DocumentBuilder
- Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder`объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 
 ```
 
-Вот и все! Вы успешно добавили форму со срезанными углами в документ Word с помощью Aspose.Words для .NET.
+Вот и все! Вы успешно добавили форму с обрезанными углами в документ Word с помощью Aspose.Words для .NET.

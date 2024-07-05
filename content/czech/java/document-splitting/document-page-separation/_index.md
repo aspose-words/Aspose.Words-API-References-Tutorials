@@ -30,7 +30,7 @@ Než se ponoříme do kódu, ujistěte se, že máte splněny následující př
 
 ## Krok 1: Vložte dokument
 
-Chcete-li začít, musíme načíst dokument, který chceme oddělit stránky. Můžete to udělat takto:
+Nejprve musíme načíst dokument, který chceme rozdělit na stránky. Můžete to udělat takto:
 
 ```java
 // Vložte dokument
@@ -84,7 +84,7 @@ Ano, Aspose.Words podporuje různé formáty dokumentů, včetně DOC, RTF, HTML
 
 Aspose.Words for Java je komerční knihovna, ale nabízí bezplatnou zkušební verzi. Podrobnosti o cenách a licenčních informacích najdete na jejich webových stránkách.
 
-### Mohu oddělit sloučené stránky zpět do jednoho dokumentu?
+### Mohu sloučit oddělené stránky zpět do jednoho dokumentu?
 
 Ano, oddělené stránky můžete sloučit zpět do jednoho dokumentu pomocí Aspose.Words for Java. Pokyny pro slučování naleznete v dokumentaci.
 

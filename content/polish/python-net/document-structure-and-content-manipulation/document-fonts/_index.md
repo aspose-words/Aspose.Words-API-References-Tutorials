@@ -29,7 +29,7 @@ Rozmiary czcionek określają wizualną widoczność tekstu. Tekst nagłówka ma
 
 ### Style czcionek
 
-Style czcionek podkreślają tekst. Pogrubiony tekst wskazuje na znaczenie, podczas gdy tekst kursywą często wskazuje definicję lub termin obcy. Podkreślenie może również podkreślić kluczowe punkty.
+Style czcionek podkreślają tekst. Pogrubiony tekst oznacza znaczenie, podczas gdy tekst zapisany kursywą często wskazuje definicję lub termin obcy. Podkreślenie może również podkreślić kluczowe punkty.
 
 ## Kolor tekstu i wyróżnianie
 

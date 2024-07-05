@@ -32,7 +32,7 @@ Per prima cosa, configuriamo un nuovo progetto in Visual Studio.
 Per utilizzare Aspose.Words, devi aggiungerlo al tuo progetto. Questa operazione può essere eseguita tramite Gestione pacchetti NuGet.
 
 1. **Open NuGet Package Manager:** Fai clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, quindi seleziona Gestisci pacchetti NuGet.
-2. **Search for Aspose.Words:** In Gestione pacchetti NuGet cercare "Apose.Words".
+2. **Search for Aspose.Words:** In Gestione pacchetti NuGet cercare "Aspose.Words".
 3. **Install the Package:** Fai clic su Installa per aggiungere Aspose.Words al tuo progetto.
 
 ## Passaggio 3: importare gli spazi dei nomi
@@ -119,4 +119,4 @@ Un campo di unione è un segnaposto in un documento che può essere sostituito d
 Aspose.Words supporta più versioni di .NET, inclusi .NET Framework, .NET Core e .NET Standard.
 
 ### 5. Dove posso trovare la documentazione API per Aspose.Words?
- La documentazione dell'API è disponibile.[Qui](https://reference.aspose.com/words/net/).
+ La documentazione dell'API è disponibile[Qui](https://reference.aspose.com/words/net/).

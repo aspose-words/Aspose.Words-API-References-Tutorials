@@ -164,4 +164,4 @@ Oui, vous pouvez modifier le gestionnaire de rappel pour gérer plusieurs insert
 Vous pouvez obtenir de l'aide en visitant le[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Puis-je conserver la mise en forme du document inséré ?
- Oui le`NodeImporter`La classe vous permet de spécifier la manière dont le formatage est géré lors de l'importation de nœuds d'un document à un autre.
+ Oui le`NodeImporter` La classe vous permet de spécifier la manière dont le formatage est géré lors de l'importation de nœuds d'un document à un autre.

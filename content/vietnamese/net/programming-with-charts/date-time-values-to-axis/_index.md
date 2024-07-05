@@ -8,7 +8,7 @@ weight: 10
 url: /vi/net/programming-with-charts/date-time-values-to-axis/
 ---
 
-Hướng dẫn này giải thích cách thêm giá trị ngày giờ vào trục của biểu đồ bằng Aspose.Words cho .NET.
+Hướng dẫn này giải thích cách thêm các giá trị ngày giờ vào trục của biểu đồ bằng Aspose.Words for .NET.
 
 ## Điều kiện tiên quyết
 Để làm theo hướng dẫn này, bạn cần có những điều sau:
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tạo Tài liệu mới và DocumentBuilder
- Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder` đối tượng làm việc với tài liệu.
+ Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder`đối tượng làm việc với tài liệu.
 
 ```csharp
 Document doc = new Document();
@@ -73,7 +73,7 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-### Mã nguồn mẫu cho Date Time Values To Axis sử dụng Aspose.Words for .NET 
+### Mã nguồn ví dụ cho Giá trị ngày giờ theo trục bằng cách sử dụng Aspose.Words cho .NET 
 
 ```csharp
 	// Đường dẫn đến thư mục tài liệu của bạn
@@ -105,15 +105,15 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 Mã ví dụ này tạo một tài liệu Word mới, chèn biểu đồ cột với các giá trị ngày giờ trên trục X và lưu tài liệu vào thư mục đã chỉ định.
 
 ## Phần kết luận
-Trong hướng dẫn này, bạn đã học cách thêm các giá trị ngày giờ vào trục của biểu đồ bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước, bạn có thể tạo biểu đồ, thêm giá trị ngày giờ vào chuỗi và định cấu hình trục để hiển thị chính xác các giá trị ngày giờ. Aspose.Words for .NET cung cấp một bộ tính năng mạnh mẽ cho Xử lý văn bản với các biểu đồ trong tài liệu Word, cho phép bạn biểu diễn và trực quan hóa dữ liệu với các giá trị ngày giờ một cách hiệu quả.
+Trong hướng dẫn này, bạn đã học cách thêm các giá trị ngày giờ vào trục của biểu đồ bằng Aspose.Words for .NET. Bằng cách làm theo hướng dẫn từng bước, bạn có thể tạo biểu đồ, thêm giá trị ngày giờ vào chuỗi và đặt cấu hình trục để hiển thị chính xác giá trị ngày giờ. Aspose.Words for .NET cung cấp một bộ tính năng mạnh mẽ để Xử lý văn bản với các biểu đồ trong tài liệu Word, cho phép bạn trình bày và trực quan hóa dữ liệu với các giá trị ngày giờ một cách hiệu quả.
 
 ### Câu hỏi thường gặp
 
 #### Q1. Tôi có thể thêm giá trị ngày giờ vào trục của biểu đồ bằng Aspose.Words cho .NET không?
-Có, với Aspose.Words for .NET, bạn có thể thêm và hiển thị các giá trị ngày giờ trên trục của biểu đồ trong tài liệu Word. Aspose.Words cung cấp các API và chức năng để hoạt động với nhiều loại biểu đồ khác nhau và tùy chỉnh giao diện của chúng, bao gồm cả việc xử lý các giá trị ngày giờ trên trục.
+Có, với Aspose.Words for .NET, bạn có thể thêm và hiển thị các giá trị ngày giờ trên trục của biểu đồ trong tài liệu Word. Aspose.Words cung cấp API và chức năng để hoạt động với nhiều loại biểu đồ khác nhau và tùy chỉnh giao diện của chúng, bao gồm cả việc xử lý các giá trị ngày giờ trên trục.
 
 #### Q2. Làm cách nào để thêm giá trị ngày giờ vào chuỗi biểu đồ?
- Để thêm giá trị ngày giờ vào chuỗi biểu đồ, bạn có thể sử dụng`Add`phương pháp của chuỗi biểu đồ. Cung cấp một mảng các giá trị ngày giờ dưới dạng dữ liệu danh mục (trục X), cùng với các giá trị chuỗi tương ứng. Điều này cho phép bạn vẽ các điểm dữ liệu với các giá trị ngày giờ trên biểu đồ.
+ Để thêm các giá trị ngày giờ vào chuỗi biểu đồ, bạn có thể sử dụng`Add`phương pháp của chuỗi biểu đồ. Cung cấp một mảng các giá trị ngày giờ dưới dạng dữ liệu danh mục (trục X), cùng với các giá trị chuỗi tương ứng. Điều này cho phép bạn vẽ các điểm dữ liệu với các giá trị ngày giờ trên biểu đồ.
 
 #### Q3. Làm cách nào tôi có thể định cấu hình trục để hiển thị giá trị ngày giờ?
  Bạn có thể định cấu hình trục của biểu đồ để hiển thị các giá trị ngày giờ bằng cách đặt các thuộc tính thích hợp. Ví dụ: bạn có thể chỉ định giá trị tối thiểu và tối đa cho trục bằng cách sử dụng`Scaling.Minimum` Và`Scaling.Maximum` các thuộc tính tương ứng. Ngoài ra, bạn có thể đặt đơn vị chính và đơn vị phụ để xác định khoảng và dấu đánh dấu cho trục.

@@ -30,7 +30,7 @@ Pamiętaj, aby zastąpić „Hyperlinks.docx” nazwą własnego pliku.
 
 ## Krok 3: Przeglądaj pola dokumentu
 
- Używamy A`foreach`pętla, aby przeglądać wszystkie pola obecne w dokumencie.
+ Używamy A`foreach` pętla, aby przeglądać wszystkie pola obecne w dokumencie.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Pobierz 
 
 #### P: Jak mogę wstawić pole do dokumentu programu Word przy użyciu Aspose.Words dla .NET?
 
- Odp.: Aby wstawić pole do dokumentu programu Word za pomocą Aspose.Words dla .NET, możesz użyć metody`DocumentBuilder.InsertField` metoda określająca odpowiedni kod pola. Możesz na przykład użyć`builder.InsertField("MERGEFIELD CustomerName")` aby wstawić pole scalania do dokumentu.
+ Odp.: Aby wstawić pole do dokumentu programu Word za pomocą Aspose.Words dla .NET, możesz użyć metody`DocumentBuilder.InsertField` metoda określająca odpowiedni kod pola. Możesz na przykład użyć`builder.InsertField("MERGEFIELD CustomerName")` , aby wstawić pole scalania do dokumentu.
 
 #### P: Jak mogę zaktualizować pola w dokumencie przy użyciu Aspose.Words dla .NET?
 
- Odp.: Aby zaktualizować pola dokumentu za pomocą Aspose.Words dla .NET, możesz użyć`Document.UpdateFields` metoda. Spowoduje to aktualizację wszystkich pól obecnych w dokumencie, takich jak pola scalania, pola daty itp.
+ Odp.: Aby zaktualizować pola dokumentu za pomocą Aspose.Words dla .NET, możesz użyć`Document.UpdateFields`metoda. Spowoduje to aktualizację wszystkich pól obecnych w dokumencie, takich jak pola scalania, pola daty itp.
 
 #### P: Jak mogę pobrać wartość określonego pola w Aspose.Words dla .NET?
 

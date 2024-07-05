@@ -41,7 +41,7 @@ using Aspose.Words.Tables;
 
 قم بتثبيت Aspose.Words لـ .NET
 
-بعد ذلك، ستحتاج إلى تثبيت Aspose.Words لمكتبة .NET. يمكنك القيام بذلك عبر NuGet Package Manager. ما عليك سوى النقر بزر الماوس الأيمن على مشروعك في Solution Explorer، وتحديد "إدارة حزم NuGet"، والبحث عن "Apose.Words"، وتثبيته.
+بعد ذلك، ستحتاج إلى تثبيت Aspose.Words لمكتبة .NET. يمكنك القيام بذلك عبر NuGet Package Manager. ما عليك سوى النقر بزر الماوس الأيمن على مشروعك في Solution Explorer، وتحديد "إدارة حزم NuGet"، والبحث عن "Aspose.Words"، وتثبيته.
 
 ## الخطوة 2: تهيئة المستند
 
@@ -92,7 +92,7 @@ builder.Font.Underline = Underline.Single;
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com"، خطأ)؛
 ```
 
-في هذا السطر، نقوم بإدخال ارتباط تشعبي مع نص العرض "Apose Website" وعنوان URL "http://www.aspose.com".
+في هذا السطر، نقوم بإدخال رابط تشعبي مع نص العرض "Aspose Website" وعنوان URL "http://www.aspose.com".
 
 ## الخطوة 6: مسح التنسيق
 

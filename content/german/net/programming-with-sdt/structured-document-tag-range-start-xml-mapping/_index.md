@@ -1,14 +1,14 @@
 ---
-title: Strukturierter Dokument-Tag-Bereich, Start-XML-Zuordnung
-linktitle: Strukturierter Dokument-Tag-Bereich, Start-XML-Zuordnung
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mithilfe von Aspose.Words für .NET eine XML-Zuordnung für den Tag-Bereichsanfang eines strukturierten Dokuments in einem Word-Dokument einrichten.
+title: Strukturiertes Dokument Tag-Bereich Start Xml Mapping
+linktitle: Strukturiertes Dokument Tag-Bereich Start Xml Mapping
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die XML-Zuordnung für den Beginn eines strukturierten Dokument-Tagbereichs in einem Word-Dokument einrichten.
 type: docs
 weight: 10
 url: /de/net/programming-with-sdt/structured-document-tag-range-start-xml-mapping/
 ---
 
-In diesem Tutorial wird erläutert, wie Sie mithilfe von Aspose.Words für .NET eine XML-Zuordnung für den Tag-Bereichsanfang eines strukturierten Dokuments in einem Word-Dokument einrichten. Mit der XML-Zuordnung können Sie bestimmte Teile einer XML-Datenquelle innerhalb des Inhaltssteuerelements anzeigen.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET eine XML-Zuordnung für den Beginn eines strukturierten Dokument-Tagbereichs in einem Word-Dokument einrichten. Mithilfe der XML-Zuordnung können Sie bestimmte Teile einer XML-Datenquelle innerhalb des Inhaltssteuerelements anzeigen.
 
 ## Voraussetzungen
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
@@ -16,15 +16,15 @@ Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 - Aspose.Words für .NET-Bibliothek installiert.
 - Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
-## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
- Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem sich Ihr Dokument befindet.
+## Schritt 1: Einrichten des Dokumentverzeichnisses
+ Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem sich Ihr Dokument befindet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Schritt 2: Laden Sie das Dokument und erstellen Sie einen XML-Teil
- Laden Sie das Word-Dokument mit`Document` Konstruktor, der den Pfad zum Dokument als Parameter übergibt. Erstellen Sie einen XML-Teil, der die Daten enthält, die Sie im strukturierten Dokument-Tag anzeigen möchten.
+## Schritt 2: Laden Sie das Dokument und erstellen Sie den XML-Teil
+ Laden Sie das Word-Dokument mit dem`Document` Konstruktor, wobei der Pfad zum Dokument als Parameter übergeben wird. Erstellen Sie einen XML-Teil, der die Daten enthält, die Sie innerhalb des strukturierten Dokumenttags anzeigen möchten.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -33,8 +33,8 @@ string xmlPartContent = "<root><text>Text element #1</text><text>Text element #2
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add(xmlPartId, xmlPartContent);
 ```
 
-## Schritt 3: Legen Sie die XML-Zuordnung für das strukturierte Dokument-Tag fest
-Rufen Sie den Tag-Bereich des strukturierten Dokuments ab dem Dokument ab. Legen Sie dann mithilfe eines XPath-Ausdrucks die XML-Zuordnung für das Tag des strukturierten Dokuments fest, um einen bestimmten Teil des benutzerdefinierten XML-Teils anzuzeigen.
+## Schritt 3: XML-Mapping für strukturiertes Dokument-Tag festlegen
+Rufen Sie den Bereich des strukturierten Dokumenttags ab, beginnend beim Dokument. Legen Sie dann die XML-Zuordnung für den strukturierten Dokumenttag fest, um mithilfe eines XPath-Ausdrucks einen bestimmten Teil des benutzerdefinierten XML-Teils anzuzeigen.
 
 ```csharp
 StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
@@ -42,16 +42,16 @@ sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 ```
 
 ## Schritt 4: Speichern Sie das Dokument
- Speichern Sie das geänderte Dokument mit im angegebenen Verzeichnis`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx“.
+ Speichern Sie das geänderte Dokument im angegebenen Verzeichnis mit dem`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
 ```
 
-### Beispielquellcode für Structured Document Tag Range Start XML Mapping mit Aspose.Words für .NET 
+### Beispielquellcode für Structured Document Tag Range Start Xml Mapping mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -69,4 +69,4 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
 ```
 
-Das ist es! Sie haben die XML-Zuordnung für den Beginn eines strukturierten Dokument-Tag-Bereichs in Ihrem Word-Dokument mit Aspose.Words für .NET erfolgreich eingerichtet.
+Das ist es! Sie haben mit Aspose.Words für .NET erfolgreich die XML-Zuordnung für einen strukturierten Dokument-Tagbereichsanfang in Ihrem Word-Dokument eingerichtet.

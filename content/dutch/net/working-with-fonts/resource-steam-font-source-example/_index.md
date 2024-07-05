@@ -73,7 +73,7 @@ internal class ResourceSteamFontSource : StreamFontSource
 }
 ```
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Sla ten slotte het document op nadat u de lettertype-instellingen hebt toegepast. Bewaar het in een formaat naar keuze; hier slaan we het op als PDF.
 

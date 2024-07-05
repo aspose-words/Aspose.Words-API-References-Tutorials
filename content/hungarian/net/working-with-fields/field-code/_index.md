@@ -30,7 +30,7 @@ Feltétlenül cserélje ki a „Hyperlinks.docx” fájlt a saját fájl nevére
 
 ## 3. lépés: Tallózás a dokumentummezők között
 
- Használjuk a`foreach`hurok a dokumentumban található összes mező áthaladásához.
+ Használjuk a`foreach` hurok a dokumentumban található összes mező áthaladásához.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Ezzel véget is értünk az Aspose.Words for .NET "Mezőkód lekérése" funkci�
 
 #### K: Hogyan illeszthetek be mezőt egy Word dokumentumba az Aspose.Words for .NET használatával?
 
- V: Ha egy mezőt Word-dokumentumba szeretne beszúrni az Aspose.Words for .NET használatával, használja a`DocumentBuilder.InsertField` módszer, amely megadja a megfelelő mezőkódot. Például használhatja`builder.InsertField("MERGEFIELD CustomerName")`összevonási mező beszúrásához a dokumentumba.
+ V: Ha egy mezőt Word-dokumentumba szeretne beszúrni az Aspose.Words for .NET használatával, használja a`DocumentBuilder.InsertField` módszer, amely megadja a megfelelő mezőkódot. Például használhatja`builder.InsertField("MERGEFIELD CustomerName")` összevonási mező beszúrásához a dokumentumba.
 
 #### K: Hogyan frissíthetem a dokumentum mezőit az Aspose.Words for .NET használatával?
 
- V: A dokumentummezők Aspose.Words for .NET használatával frissítéséhez használhatja a`Document.UpdateFields` módszer. Ez frissíti a dokumentumban lévő összes mezőt, például az egyesített mezőket, a dátummezőket stb.
+ V: A dokumentummezők Aspose.Words for .NET használatával frissítéséhez használhatja a`Document.UpdateFields`módszer. Ez frissíti a dokumentumban lévő összes mezőt, például az egyesített mezőket, a dátummezőket stb.
 
 #### K: Hogyan kérhetem le egy adott mező értékét az Aspose.Words for .NET-ben?
 

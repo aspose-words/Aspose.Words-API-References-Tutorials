@@ -38,7 +38,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Present
 ```
 
 ## Paso 4: guarde el documento
- Utilice el documento`Save` Método para guardar el documento en un archivo.
+ Utilice el documento`Save` método para guardar el documento en un archivo.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
@@ -88,7 +88,7 @@ A. Para crear un nuevo documento y generador de documentos, puede seguir estos p
 ```csharp
 Document doc = new Document();
 ```
- Utilizar el`DocumentBuilder`clase para crear un generador de documentos asociado con el documento creado previamente:
+ Utilizar el`DocumentBuilder`clase para crear un generador de documentos asociado con el documento creado anteriormente:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

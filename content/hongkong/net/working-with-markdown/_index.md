@@ -14,7 +14,7 @@ url: /zh-hant/net/working-with-markdown/
 | 標題 | 描述 |
 | --- | --- |
 | [加粗字體](./bold-text/) | 了解如何使用 Aspose.Words for .NET 逐步指南將文字加粗。 |
-| [義大利文文字](./italic-text/) | 了解如何使用 Aspose.Words for .NET 逐步指南將文字設定為斜體。 |
+| [斜體文本](./italic-text/) | 了解如何使用 Aspose.Words for .NET 逐步指南將文字設定為斜體。 |
 | [刪除線](./strikethrough/) | 了解如何使用 Aspose.Words for .NET 逐步指南套用刪除線文字樣式。 |
 | [內聯程式碼](./inline-code/) | 了解如何使用 Aspose.Words for .NET 逐步指南內嵌程式碼。 |
 | [自動連結](./autolink/) | 了解如何使用 Aspose.Words for .NET 逐步指南插入自動連結。 |
@@ -22,7 +22,7 @@ url: /zh-hant/net/working-with-markdown/
 | [影像](./image/) | 了解如何使用 Aspose.Words for .NET 逐步指南插入和自訂映像。 |
 | [水平線](./horizontal-rule/) | 了解如何使用 Aspose.Words for .NET 逐步指南插入水平線。 |
 | [標題](./heading/) | 了解如何透過 Aspose.Words for .NET 逐步指南使用標題。 |
-| [塞泰克斯標題](./setext-heading/) | 透過 Aspose.Words for .NET 逐步指南了解如何使用 Setext 標題來格式化文件。 |
+| [固定文字標題](./setext-heading/) | 透過 Aspose.Words for .NET 逐步指南了解如何使用 Setext 標題來格式化文件。 |
 | [縮排程式碼](./indented-code/) | 了解如何透過 Aspose.Words for .NET 逐步指南使用縮排程式碼。 |
 | [圍欄代碼](./fenced-code/) | 了解如何透過 Aspose.Words for .NET 逐步指南使用隔離程式碼功能。 |
 | [引用](./quote/) | 了解如何透過 Aspose.Words for .NET 逐步指南使用參考。 |

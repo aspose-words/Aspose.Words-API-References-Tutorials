@@ -24,14 +24,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Töltse be a dokumentumot, és töltse le a többrészes címkéket
- Töltse be a Word dokumentumot a`Document` konstruktor, paraméterként átadva a dokumentum elérési útját. Az összes strukturált dokumentumcímke-tartomány kezdőcsomópontjának lekérése a dokumentumban a következővel:`GetChildNodes` módszer.
+ Töltse be a Word dokumentumot a`Document` konstruktor, paraméterként átadva a dokumentum elérési útját. Az összes strukturált dokumentumcímke-tartomány kezdőcsomópontjának lekérése a dokumentumban a`GetChildNodes` módszer.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
 NodeCollection tags = doc.GetChildNodes(NodeType.StructuredDocumentTagRangeStart, true);
 ```
 
-## 3. lépés: A több szakaszból álló címkék feldolgozása
+## 3. lépés: A többrészes címkék feldolgozása
 Iteráljon a strukturált dokumentumcímke-tartomány kezdőcsomópontjainak gyűjteményén keresztül. Ebben a példában egyszerűen kinyomtatjuk az egyes címkék címét a konzolra. Igényei szerint további feldolgozást végezhet.
 
 ```csharp
