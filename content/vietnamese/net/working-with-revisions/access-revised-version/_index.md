@@ -79,7 +79,7 @@ Trong hướng dẫn này, chúng ta đã học cách truy cập phiên bản s�
 
 #### Câu hỏi: Làm cách nào để tải tài liệu có bản sửa đổi vào Aspose.Words cho .NET?
 
- Đáp: Hãy sử dụng`Document`lớp Aspose.Words dành cho .NET để tải tài liệu từ một tệp có chứa các bản sửa đổi. Bạn có thể chỉ định đường dẫn tài liệu đầy đủ.
+ Đáp: Hãy sử dụng`Document` lớp Aspose.Words dành cho .NET để tải tài liệu từ một tệp có chứa các bản sửa đổi. Bạn có thể chỉ định đường dẫn tài liệu đầy đủ.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### Câu hỏi: Làm cách nào để duyệt các bản sửa đổi tài liệu trong Aspose.Words cho .NET?
 
- Đáp: Hãy sử dụng một`foreach` vòng lặp để lặp qua các sửa đổi có trong tài liệu. Bạn có thể dùng`Revisions` tài sản của`Document` object để có được một bộ sưu tập tất cả các phiên bản của tài liệu.
+Đáp: Hãy sử dụng một`foreach` vòng lặp để lặp qua các sửa đổi có trong tài liệu. Bạn có thể dùng`Revisions` tài sản của`Document` object để có được một bộ sưu tập tất cả các phiên bản của tài liệu.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

@@ -1,28 +1,28 @@
 ---
-title: Legen Sie die Schriftartformatierung fest
-linktitle: Legen Sie die Schriftartformatierung fest
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Schriftartformatierung in Word-Dokumenten festlegen und attraktive Dokumente erstellen.
+title: Schriftformatierung festlegen
+linktitle: Schriftformatierung festlegen
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Schriftformatierung in Word-Dokumenten festlegen und attraktive Dokumente erstellen.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/set-font-formatting/
 ---
-In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET die Schriftartformatierung in einem Word-Dokument festlegen. Sie erfahren, wie Sie Stile wie Fettdruck, Farbe, Kursivschrift, Schriftart, Größe, Abstand und Unterstreichung anwenden.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET die Schriftformatierung in einem Word-Dokument festlegen. Sie lernen, wie Sie Stile wie Fettdruck, Farbe, Kursivschrift, Schriftart, Größe, Abstand und Unterstreichung anwenden.
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
-- Grundkenntnisse der Programmiersprache C#
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente verfügen:
+- Gute Kenntnisse der Programmiersprache C#
 - Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
-## Schritt 1: Definieren Sie das Dokumentenverzeichnis
-Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+## Schritt 1: Dokumentverzeichnis festlegen
+Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Erstellen und formatieren Sie das Dokument
- Erstellen Sie eine Instanz von`Document` Klasse und die`DocumentBuilder`Klasse zum Erstellen des Dokuments. Benutzen Sie die`Font` Eigentum der`DocumentBuilder` , um auf die Eigenschaften der Schriftartformatierung zuzugreifen.
+ Erstellen Sie eine Instanz des`Document` Klasse und die`DocumentBuilder`Klasse, um das Dokument zu erstellen. Verwenden Sie die`Font` Eigentum der`DocumentBuilder` um auf die Schriftformatierungseigenschaften zuzugreifen.
 
 ```csharp
 Document doc = new Document();
@@ -39,16 +39,16 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## Schritt 3: Speichern Sie das Dokument
- Benutzen Sie die`Save` Methode zum Speichern des Dokuments mit der angewendeten Schriftartformatierung. Ersetzen`"WorkingWithFonts.SetFontFormatting.docx"` mit dem gewünschten Dateinamen.
+ Verwenden Sie die`Save` Methode, um das Dokument mit der angewendeten Schriftformatierung zu speichern. Ersetzen Sie`"WorkingWithFonts.SetFontFormatting.docx"` durch den gewünschten Dateinamen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ```
 
-### Beispielquellcode zum Festlegen der Schriftartformatierung mit Aspose.Words für .NET 
+### Beispielquellcode zum Festlegen der Schriftformatierung mit Aspose.Words für .NET 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -67,26 +67,26 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ```
 
 ## Abschluss
-Herzlichen Glückwunsch! Sie wissen jetzt, wie Sie mit Aspose.Words für .NET die Schriftartformatierung in einem Word-Dokument festlegen. Sie können weitere Schriftartformatierungsoptionen erkunden und personalisierte und attraktive Word-Dokumente erstellen.
+Herzlichen Glückwunsch! Sie wissen jetzt, wie Sie mit Aspose.Words für .NET die Schriftformatierung in einem Word-Dokument festlegen. Sie können weitere Optionen zur Schriftformatierung erkunden und personalisierte und attraktive Word-Dokumente erstellen.
 
-### FAQs
+### Häufig gestellte Fragen
 
-#### F: Wie kann ich mit Aspose.Words den Fettdruck auf eine Schriftart in einem Word-Dokument anwenden?
+#### F: Wie kann ich mit Aspose.Words den Fettstil auf eine Schriftart in einem Word-Dokument anwenden?
 
-A: Um den Fettstil mit Aspose.Words auf eine Schriftart in einem Word-Dokument anzuwenden, können Sie mithilfe der API zur gewünschten Schriftart navigieren und deren Stil auf „Fett“ festlegen. Dadurch wird der Fettdruck auf die angegebene Schriftart angewendet.
+A: Um den Fettstil mit Aspose.Words auf eine Schriftart in einem Word-Dokument anzuwenden, können Sie die API verwenden, um zur gewünschten Schriftart zu navigieren und ihren Stil auf „fett“ einzustellen. Dadurch wird der Fettstil auf die angegebene Schriftart angewendet.
 
-#### F: Ist es möglich, mit Aspose.Words die Kursivschrift auf einen bestimmten Textteil in einem Word-Dokument anzuwenden?
+#### F: Ist es mit Aspose.Words möglich, einen bestimmten Textteil in einem Word-Dokument kursiv zu formatieren?
 
-A: Ja, mit Aspose.Words können Sie den Kursivstil auf einen bestimmten Textteil in einem Word-Dokument anwenden. Über die API können Sie den gewünschten Textbereich auswählen und dessen Stil auf „kursiv“ setzen.
+A: Ja, mit Aspose.Words können Sie den Kursivstil auf einen bestimmten Textteil in einem Word-Dokument anwenden. Sie können die API verwenden, um den gewünschten Textbereich auszuwählen und seinen Stil auf „kursiv“ einzustellen.
 
-#### F: Wie kann ich die Schriftfarbe in einem Word-Dokument mit Aspose.Words ändern?
+#### F: Wie kann ich mit Aspose.Words die Schriftfarbe in einem Word-Dokument ändern?
 
-A: Um die Schriftfarbe in einem Word-Dokument mit Aspose.Words zu ändern, können Sie über die API auf die gewünschte Schriftart zugreifen und deren Farbe auf die gewünschte Farbe einstellen. Dadurch wird die Schriftfarbe im Dokument geändert.
+A: Um die Schriftfarbe in einem Word-Dokument mit Aspose.Words zu ändern, können Sie über die API auf die gewünschte Schriftart zugreifen und ihre Farbe auf die gewünschte Farbe einstellen. Dadurch wird die Schriftfarbe im Dokument geändert.
 
 #### F: Ist es möglich, die Schriftgröße in einem Word-Dokument mit Aspose.Words zu ändern?
 
-A: Ja, Sie können die Schriftgröße in einem Word-Dokument mit Aspose.Words ändern. Über die API können Sie auf die Schriftart zugreifen und deren Größe je nach Bedarf in Punkten oder Skalierungspunkten festlegen.
+A: Ja, Sie können die Schriftgröße in einem Word-Dokument mit Aspose.Words ändern. Über die API können Sie auf die Schriftart zugreifen und ihre Größe je nach Bedarf in Punkten oder Skalenpunkten festlegen.
 
-#### F: Kann ich in einem Word-Dokument mehrere Schriftformate wie Fett und Kursiv auf denselben Text anwenden?
+#### F: Kann ich auf denselben Text in einem Word-Dokument mehrere Schriftformate anwenden, etwa Fett und Kursiv?
 
-A: Ja, mit Aspose.Words können Sie mehrere Schriftformate wie Fett und Kursiv auf denselben Text in einem Word-Dokument anwenden. Sie können die API verwenden, um die verschiedenen gewünschten Schriftarten für verschiedene Textteile festzulegen.
+A: Ja, mit Aspose.Words können Sie mehrere Schriftformate, wie Fett und Kursiv, auf denselben Text in einem Word-Dokument anwenden. Sie können die API verwenden, um die gewünschten Schriftstile für verschiedene Teile des Textes festzulegen.

@@ -41,7 +41,7 @@ Starta genom att starta Visual Studio och skapa ett nytt C#-projekt. Du kan väl
 
 Installera Aspose.Words för .NET
 
-Därefter måste du installera Aspose.Words for .NET-biblioteket. Du kan göra detta via NuGet Package Manager. Högerklicka helt enkelt på ditt projekt i Solution Explorer, välj "Hantera NuGet-paket", sök efter "Apose.Words" och installera det.
+Därefter måste du installera Aspose.Words for .NET-biblioteket. Du kan göra detta via NuGet Package Manager. Högerklicka helt enkelt på ditt projekt i Solution Explorer, välj "Hantera NuGet-paket", sök efter "Aspose.Words" och installera det.
 
 ## Steg 2: Initiera dokumentet
 
@@ -92,7 +92,7 @@ Låt oss nu infoga den faktiska hyperlänken. Det är här magin händer!
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 ```
 
-På den här raden infogar vi en hyperlänk med visningstexten "Apose Website" och URL:en "http://www.aspose.com".
+På den här raden infogar vi en hyperlänk med visningstexten "Aspose Website" och URL:en "http://www.aspose.com".
 
 ## Steg 6: Rensa formatering
 

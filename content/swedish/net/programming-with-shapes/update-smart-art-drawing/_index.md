@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Steg 3: Uppdatera den smarta konstritningen
- Iterera genom formerna i dokumentet med hjälp av`GetChildNodes` metod med`NodeType.Shape` parametrar. Kontrollera om varje form har Smart Art med hjälp av`HasSmartArt` egendom, och om det är sant, ring till`UpdateSmartArtDrawing` metod för att uppdatera Smart Art-ritningen.
+ Iterera genom formerna i dokumentet med hjälp av`GetChildNodes` metod med`NodeType.Shape` parameter. Kontrollera om varje form har Smart Art med hjälp av`HasSmartArt` egendom, och om det är sant, ring till`UpdateSmartArtDrawing` metod för att uppdatera Smart Art-ritningen.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

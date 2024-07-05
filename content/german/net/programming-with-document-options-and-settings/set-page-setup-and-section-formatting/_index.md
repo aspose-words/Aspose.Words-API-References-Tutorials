@@ -1,18 +1,18 @@
 ---
-title: Legen Sie die Seiteneinrichtung und die Abschnittsformatierung fest
-linktitle: Legen Sie die Seiteneinrichtung und die Abschnittsformatierung fest
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+title: Seiteneinrichtung und Abschnittsformatierung festlegen
+linktitle: Seiteneinrichtung und Abschnittsformatierung festlegen
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Einrichten des Layouts und der Abschnittsformatierung eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-document-options-and-settings/set-page-setup-and-section-formatting/
 ---
 
-In diesem Tutorial führen wir Sie durch den C#-Quellcode, um das Layout und die Abschnittsformatierung mit Aspose.Words für .NET einzurichten. Mit dieser Funktion können Sie die Seitenausrichtung, die Ränder und das Papierformat festlegen.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode, um Layout und Abschnittsformatierung mit Aspose.Words für .NET einzurichten. Mit dieser Funktion können Sie Seitenausrichtung, Ränder und Papiergröße festlegen.
 
-## Schritt 1: Projekteinrichtung
+## Schritt 1: Projekt-Setup
 
-Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Bibliothek Aspose.Words für .NET verwiesen wird.
 
 ## Schritt 2: Erstellen des Dokuments
 
@@ -25,11 +25,11 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ersetzen`"YOUR DOCUMENTS DIRECTORY"` mit dem tatsächlichen Pfad des Verzeichnisses, in dem Sie das Dokument speichern möchten.
+ Ersetzen`"YOUR DOCUMENTS DIRECTORY"` durch den tatsächlichen Pfad des Verzeichnisses, in dem Sie das Dokument speichern möchten.
 
 ## Schritt 3: Layout einrichten und Dokument speichern
 
-Jetzt konfigurieren wir das Dokumentlayout. Verwenden Sie den folgenden Code, um Ausrichtung, Ränder und Papiergröße festzulegen:
+Konfigurieren wir nun das Dokumentlayout. Verwenden Sie den folgenden Code, um die Ausrichtung, Ränder und Papiergröße festzulegen:
 
 ```csharp
 builder.PageSetup.Orientation = Orientation.Landscape;
@@ -45,7 +45,7 @@ Dieser Code stellt die Seitenausrichtung auf Querformat, den linken Rand auf 50 
 
 ```csharp
 
-	// Der Pfad zum Dokumentenverzeichnis.
+	// Der Pfad zum Dokumentverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -58,6 +58,6 @@ Dieser Code stellt die Seitenausrichtung auf Querformat, den linken Rand auf 50 
   
 ```
 
-Stellen Sie sicher, dass Sie den richtigen Pfad zu dem Verzeichnis angeben, in dem Sie das Dokument speichern möchten`dataDir` Variable.
+Geben Sie unbedingt den korrekten Pfad zum Verzeichnis an, in dem Sie das Dokument speichern möchten.`dataDir` Variable.
 
-Sie haben jetzt erfahren, wie Sie das Layout und die Abschnittsformatierung eines Dokuments mit Aspose.Words für .NET konfigurieren. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie das Layout und die Formatierung Ihrer eigenen Dokumente ganz einfach anpassen.
+Sie haben nun gelernt, wie Sie das Layout und die Abschnittsformatierung eines Dokuments mit Aspose.Words für .NET konfigurieren. Indem Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie das Layout und die Formatierung Ihrer eigenen Dokumente ganz einfach anpassen.

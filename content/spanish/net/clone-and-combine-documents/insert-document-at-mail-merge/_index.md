@@ -139,10 +139,10 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 ## Preguntas frecuentes
 
 ### ¿Puedo insertar varios documentos en diferentes campos de combinación?
- Sí tu puedes. Simplemente especifique los campos de combinación apropiados y las rutas de documento correspondientes en el`MailMerge.Execute` método.
+Sí tu puedes. Simplemente especifique los campos de combinación apropiados y las rutas de documento correspondientes en el`MailMerge.Execute` método.
 
 ### ¿Es posible formatear el documento insertado de manera diferente al documento principal?
- ¡Absolutamente! Puedes usar el`ImportFormatMode` parámetros en el`NodeImporter` para controlar el formato.
+ ¡Absolutamente! Puedes usar el`ImportFormatMode` parámetro en el`NodeImporter` para controlar el formato.
 
 ### ¿Qué pasa si el nombre del campo de combinación es dinámico?
 Puede manejar nombres de campos de combinación dinámicos pasándolos como parámetros al controlador de devolución de llamada.

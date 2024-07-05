@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ¡Felicidades! Ha aprendido con éxito cómo representar formas en Aspose.Words para Java. Esta capacidad abre un mundo de posibilidades al trabajar con documentos de Word mediante programación.
 
-## 9.Preguntas frecuentes
+## 9. Preguntas frecuentes
 
 ### P1: ¿Puedo representar varias formas en un solo documento?
 

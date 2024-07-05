@@ -88,9 +88,9 @@ doc.protect(ProtectionType.READ_ONLY, "my_password");
 doc.save("protected_document.docx", SaveFormat.DOCX);
 ```
 
-## Personalizando marcas d'água
+## Personalizando marcas d’água
 
-Adicione um toque profissional aos seus documentos com marcas d'água personalizadas. Mostraremos como criar e aplicar marcas d'água perfeitamente.
+Adicione um toque profissional aos seus documentos com marcas d’água personalizadas. Mostraremos como criar e aplicar marcas d'água perfeitamente.
 
 ```java
 // Adicione uma marca d'água ao documento

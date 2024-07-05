@@ -39,7 +39,7 @@ Document doc = new Document(dataDir + "Dirty field.docx", loadOptions);
 // พาธไปยังไดเร็กทอรีเอกสารของคุณ
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// กำหนดค่าตัวเลือกการโหลดด้วยคุณสมบัติ "อัปเดตช่องสกปรก"
+// กำหนดค่าตัวเลือกการโหลดด้วยคุณสมบัติ "อัปเดตฟิลด์สกปรก"
 LoadOptions loadOptions = new LoadOptions { UpdateDirtyFields = true };
 
 // โหลดเอกสารโดยการอัปเดตฟิลด์สกปรก

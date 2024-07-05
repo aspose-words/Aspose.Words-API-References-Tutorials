@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Шаг 2. Создайте новый документ и DocumentBuilder
- Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder`объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Шаг 6. Вставьте фигуру в документ
- Вставьте фигуру водяного знака в документ, используя`InsertNode` метод`DocumentBuilder` Объект Object. Расположите фигуру с помощью`MoveTo` метод, чтобы поместить его после последнего запуска в документе.
+ Вставьте фигуру водяного знака в документ, используя`InsertNode` метод`DocumentBuilder` объект. Расположите фигуру с помощью`MoveTo` метод, чтобы поместить его после последнего запуска в документе.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

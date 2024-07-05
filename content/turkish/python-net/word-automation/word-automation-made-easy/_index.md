@@ -143,7 +143,7 @@ Word Otomasyonu, Word belgeleriyle programlı olarak etkileşim kurmayı içerir
 Evet, Aspose.Words for Python, Windows, macOS ve Linux dahil olmak üzere çeşitli işletim sistemleriyle uyumlu olduğundan farklı geliştirme ortamları için çok yönlüdür.
 
 ### Aspose.Words karmaşık belge formatlarını yönetebilir mi?
-Kesinlikle! Aspose.Words, görsel olarak çekici belgeler oluşturmak için stilleri, yazı tiplerini, renkleri ve diğer formatlama seçeneklerini uygulamanıza olanak tanıyan kapsamlı belge formatlama desteği sunar.
+Kesinlikle! Aspose.Words, belge biçimlendirmesi için kapsamlı destek sunarak görsel olarak çekici belgeler oluşturmak için stilleri, yazı tiplerini, renkleri ve diğer biçimlendirme seçeneklerini uygulamanıza olanak tanır.
 
 ### Aspose.Words, tablo oluşturmayı ve değiştirmeyi otomatikleştirir
 Evet, Aspose.Words program aracılığıyla satır ve hücre oluşturmanıza, satır ve hücre eklemenize ve tablolara format uygulamanıza olanak tanıyarak tablo yönetimini basitleştirir.

@@ -132,7 +132,7 @@ public void addJapaneseAsEditingLanguages() throws Exception
 
 ## الأسئلة الشائعة
 
-### كيف يمكنني تحسين مستند لإصدار Word معين؟
+### كيف يمكنني تحسين مستند لإصدار Word محدد؟
 
  لتحسين مستند لإصدار Word محدد، استخدم`optimizeFor` الطريقة وتحديد الإصدار المطلوب. على سبيل المثال، لتحسين Word 2016:
 

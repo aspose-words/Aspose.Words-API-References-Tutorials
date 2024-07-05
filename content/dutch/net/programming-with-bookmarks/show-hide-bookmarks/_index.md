@@ -126,7 +126,7 @@ A: Ja, de meegeleverde code werkt met verschillende Word-documentformaten die wo
 
  A: Om een verborgen bladwijzer opnieuw te tonen, moet u dezelfde gebruiken`ShowHideBookmarkedContent` functie die de waarde doorgeeft`true` voor de Booleaanse parameter die aangeeft of de bladwijzer moet worden weergegeven of verborgen.
 
-#### Vraag: Kan ik voorwaarden gebruiken om bladwijzers te tonen of te verbergen op basis van samenvoegveldwaarden in het document?
+#### Vraag: Kan ik voorwaarden gebruiken om bladwijzers weer te geven of te verbergen op basis van samenvoegveldwaarden in het document?
 
  A: Ja, u kunt voorwaarden gebruiken en veldwaarden samenvoegen om te bepalen of een bladwijzer moet worden weergegeven of verborgen. U kunt de code van de`ShowHideBookmarkedContent` functie om rekening te houden met de juiste omstandigheden en waarden.
 

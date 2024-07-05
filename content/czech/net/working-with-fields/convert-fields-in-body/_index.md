@@ -83,7 +83,7 @@ Aspose.Words podporuje různé typy polí jako DATE, PAGE, MERGEFIELD a další,
 Ano, Aspose.Words for .NET dokáže bez problémů převádět a manipulovat s poli napříč formáty jako DOCX, DOC, RTF a další.
 
 ### Kde najdu komplexní dokumentaci k Aspose.Words pro .NET?
- K dispozici je podrobná dokumentace a reference API.[tady](https://reference.aspose.com/words/net/).
+ K dispozici je podrobná dokumentace a reference API[tady](https://reference.aspose.com/words/net/).
 
 ### Je k dispozici zkušební verze pro Aspose.Words pro .NET?
  Ano, můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.aspose.com/).

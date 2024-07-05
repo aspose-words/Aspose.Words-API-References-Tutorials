@@ -1,6 +1,6 @@
 ---
-title: Exportar fontes como base 64
-linktitle: Exportar fontes como base 64
+title: Exportar fontes como Base 64
+linktitle: Exportar fontes como Base 64
 second_title: API de processamento de documentos Aspose.Words
 description: Guia passo a passo para exportar fontes de base 64 ao salvar um documento com Aspose.Words for .NET.
 type: docs

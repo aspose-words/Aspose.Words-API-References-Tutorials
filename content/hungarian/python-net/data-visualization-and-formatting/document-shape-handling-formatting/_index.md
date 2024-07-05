@@ -10,7 +10,7 @@ url: /hu/python-net/data-visualization-and-formatting/document-shape-handling-fo
 
 ## Bevezetés
 
-modern dokumentumok nem csak a bennük található tartalomról szólnak; Vizuális vonzerejük jelentős szerepet játszik az olvasók megnyerésében. Az Aspose.Words for Python hatékony eszközkészletet kínál a dokumentumok programozott kezeléséhez, lehetővé téve, hogy vizuálisan feltűnő elrendezéseket hozzon létre, amelyek rezonálnak a közönségével.
+modern dokumentumok nem csak a bennük található tartalomról szólnak; vizuális vonzerejük jelentős szerepet játszik az olvasók megnyerésében. Az Aspose.Words for Python hatékony eszközkészletet kínál a dokumentumok programozott kezeléséhez, lehetővé téve, hogy vizuálisan feltűnő elrendezéseket hozzon létre, amelyek rezonálnak a közönségével.
 
 ## A környezet beállítása
 

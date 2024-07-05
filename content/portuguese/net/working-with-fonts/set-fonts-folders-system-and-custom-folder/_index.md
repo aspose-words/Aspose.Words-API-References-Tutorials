@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Adicione uma nova fonte de pasta que instruirá Aspose.Words a pesquisar fontes na seguinte pasta.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-// Adicione a pasta personalizada que contém nossas fontes à lista de fontes de fontes existentes.
+//Adicione a pasta personalizada que contém nossas fontes à lista de fontes de fontes existentes.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

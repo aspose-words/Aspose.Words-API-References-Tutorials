@@ -2,7 +2,7 @@
 title: Zaawansowane opcje zapisywania dokumentów HTML w Aspose.Words Java
 linktitle: Zapisywanie dokumentów HTML za pomocą
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: W tym samouczku omówiliśmy różne zaawansowane opcje zapisywania dokumentów HTML za pomocą Aspose.Words dla Java. Opcje te umożliwiają tworzenie wysokiej jakości kodu HTML.
+description: W tym samouczku omówiliśmy różne zaawansowane opcje zapisywania dokumentów HTML za pomocą Aspose.Words dla Java. Opcje te umożliwiają tworzenie wysokiej jakości kodu HTML
 type: docs
 weight: 16
 url: /pl/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. Wniosek
 tym samouczku zbadaliśmy zaawansowane opcje zapisywania dokumentów HTML udostępniane przez Aspose.Words dla Java. Opcje te zapewniają szczegółową kontrolę nad procesem konwersji, umożliwiając tworzenie dokumentów HTML bardzo przypominających oryginalne dokumenty programu Word.
 
-## 12.FAQ
+## 12. Często zadawane pytania
 Oto kilka często zadawanych pytań na temat pracy z Aspose.Words dla opcji zapisywania dokumentów Java i HTML:
 
 ### P1: Jak mogę przekonwertować HTML z powrotem do formatu Word przy użyciu Aspose.Words dla Java?

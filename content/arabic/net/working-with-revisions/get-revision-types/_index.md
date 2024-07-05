@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### س: كيف يمكن التحقق من نقل فقرة (حذفها) في Aspose.Words لـ .NET؟
 
- ج: استخدم فقرة`IsMoveFromRevision` الخاصية للتحقق مما إذا تم نقلها (حذفها).
+ ج: استخدم فقرة`IsMoveFromRevision`الخاصية للتحقق مما إذا تم نقلها (حذفها).
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### س: كيف يمكن التحقق من نقل فقرة (إدراجها) في Aspose.Words لـ .NET؟
 
- ج: استخدم فقرة`IsMoveToRevision`الخاصية للتحقق مما إذا تم نقلها (إدراجها).
+ ج: استخدم فقرة`IsMoveToRevision` الخاصية للتحقق مما إذا تم نقلها (إدراجها).
 
 ```csharp
 if (paragraph.IsMoveToRevision)

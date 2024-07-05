@@ -17,7 +17,7 @@ url: /ko/java/document-converting/converting-documents-images/
 코딩 부분을 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
 - Java 개발 환경: 시스템에 JDK(Java Development Kit)가 설치되어 있어야 합니다.
-- Aspose.Words for Java: 다음에서 Aspose.Words for Java 라이브러리를 다운로드하고 설정하세요.[Aspose 웹 사이트](https://releases.aspose.com/words/java/).
+- Aspose.Words for Java: 다음에서 Aspose.Words for Java 라이브러리를 다운로드하고 설정하세요.[Aspose 웹사이트](https://releases.aspose.com/words/java/).
 
 ## Java 프로젝트 설정
 

@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Den här koden kommer åt den första delen av dokumentet med hjälp av indexet.`0` och tar bort all text inom det intervallet.
+ Den här koden kommer åt den första delen av dokumentet med hjälp av indexet`0` och tar bort all text inom det intervallet.
 
 #### F: Kan jag ta bort text från flera intervall i ett Word-dokument med Aspose.Words för .NET?
 

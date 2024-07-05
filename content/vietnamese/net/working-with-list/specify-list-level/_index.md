@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Tạo danh sách đánh số dựa trên một trong các mẫu danh sách Microsoft Word.
+// Tạo danh sách đánh số dựa trên một trong các mẫu danh sách Microsoft Word
 //và áp dụng nó cho đoạn hiện tại của trình tạo tài liệu.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Tạo danh sách có dấu đầu dòng dựa trên một trong các mẫu danh sách Microsoft Word.
+// Tạo danh sách có dấu đầu dòng dựa trên một trong các mẫu danh sách Microsoft Word
 //và áp dụng nó cho đoạn hiện tại của trình tạo tài liệu.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 

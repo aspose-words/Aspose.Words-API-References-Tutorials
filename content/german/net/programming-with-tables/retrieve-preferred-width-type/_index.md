@@ -1,7 +1,7 @@
 ---
-title: Rufen Sie den bevorzugten Breitentyp ab
-linktitle: Rufen Sie den bevorzugten Breitentyp ab
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+title: Bevorzugten Breitentyp abrufen
+linktitle: Bevorzugten Breitentyp abrufen
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den Typ und den bevorzugten Breitenwert einer Zelle in einer Word-Tabelle abrufen.
 type: docs
 weight: 10
@@ -10,34 +10,34 @@ url: /de/net/programming-with-tables/retrieve-preferred-width-type/
 
 In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET den bevorzugten Breitentyp und seinen Wert aus einer Tabellenzelle in einem Word-Dokument abrufen. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials können Sie den bevorzugten Breitentyp (absolut, relativ oder automatisch) und seinen Wert für eine bestimmte Zelle in Ihren Word-Dokumenttabellen abrufen.
 
-## Schritt 1: Projekteinrichtung
+## Schritt 1: Projekt-Setup
 1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
-2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
+2. Fügen Sie einen Verweis auf die Aspose.Words-Bibliothek für .NET hinzu.
 
-## Schritt 2: Laden des Dokuments
-Gehen Sie folgendermaßen vor, um die Textverarbeitung mit dem Dokument zu starten:
+## Schritt 2: Dokument einlegen
+Um die Textverarbeitung mit dem Dokument zu starten, führen Sie diese Schritte aus:
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Laden Sie das Dokument
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-Stellen Sie sicher, dass Sie „IHR DOKUMENTENVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis ersetzen und den korrekten Dateinamen angeben.
+Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis und geben Sie den richtigen Dateinamen an.
 
 ## Schritt 3: Abrufen des bevorzugten Breitentyps und -werts
-Als Nächstes rufen wir den bevorzugten Breitentyp und seinen Wert für eine bestimmte Tabellenzelle ab. Verwenden Sie den folgenden Code:
+Als Nächstes ermitteln wir den bevorzugten Breitentyp und dessen Wert für eine bestimmte Tabellenzelle. Verwenden Sie den folgenden Code:
 
 ```csharp
-// Rufen Sie die Tabelle ab
+// Abrufen der Tabelle
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
 // Automatische Tischanpassung aktivieren
 table. AllowAutoFit = true;
 
-// Rufen Sie die erste Zelle der ersten Zeile ab
+// Abrufen der ersten Zelle der ersten Zeile
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Rufen Sie den bevorzugten Breitentyp und seinen Wert ab
@@ -45,12 +45,12 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-Hier verwenden wir das Dokument, um die erste Tabelle abzurufen, und aktivieren dann die automatische Tabellenanpassung mit`AllowAutoFit` Eigentum. Dann rufen wir die erste Zelle der ersten Zeile der Tabelle ab. Aus dieser Zelle können wir den bevorzugten Breitentyp mit abrufen`PreferredWidth.Type` Eigentum und sein Wert mit dem`PreferredWidth.Value` Eigentum.
+Hier verwenden wir das Dokument, um die erste Tabelle abzurufen. Anschließend aktivieren wir die automatische Tabellenanpassung mit dem`AllowAutoFit` Eigenschaft. Dann holen wir uns die erste Zelle der ersten Zeile der Tabelle. Aus dieser Zelle können wir den bevorzugten Breitentyp mit dem`PreferredWidth.Type` Eigentum und dessen Wert mit der`PreferredWidth.Value` Eigentum.
 
-### Beispielquellcode für „Bevorzugten Breitentyp abrufen“ mit Aspose.Words für .NET 
+### Beispielquellcode zum Abrufen des bevorzugten Breitentyps mit Aspose.Words für .NET 
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

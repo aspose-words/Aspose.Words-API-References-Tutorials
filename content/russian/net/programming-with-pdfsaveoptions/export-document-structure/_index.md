@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
 ```
 
-Вот и все! Вы успешно экспортировали структуру документа и создали PDF-файл со структурой документа, видимой с помощью Aspose.Words для .NET.
+Вот и все ! Вы успешно экспортировали структуру документа и создали PDF-файл со структурой документа, видимой с помощью Aspose.Words для .NET.
 
 ### Пример исходного кода для экспорта структуры документа с помощью Aspose.Words для .NET
 
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", save
 			string dataDir = "YOUR DOCUMENT DIRECTORY";
             Document doc = new Document(dataDir + "Paragraphs.docx");
 
-            // Размер файла увеличится, и структура будет видна в навигационной панели «Содержимое».
+            // Размер файла увеличится, а структура будет видна в навигационной панели «Содержимое».
             // Adobe Acrobat Pro при редактировании PDF-файла.
             PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
 

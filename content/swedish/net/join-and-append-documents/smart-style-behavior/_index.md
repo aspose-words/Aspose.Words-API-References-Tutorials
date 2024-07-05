@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Ladda käll- och måldokumenten
 
-Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words.`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
+Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## Steg 5: Bifoga källdokumentet till destinationsdokumentet
 
- Nu kan du lägga till källdokumentet till måldokumentet med hjälp av`InsertDocument` metod för`DocumentBuilder` klass. Använd`ImportFormatMode.UseDestinationStyles` parametrar och passera`ImportFormatOptions` objekt för att upprätthålla smart stilbeteende.
+ Nu kan du lägga till källdokumentet till måldokumentet med hjälp av`InsertDocument` metod för`DocumentBuilder` klass. Använd`ImportFormatMode.UseDestinationStyles` parameter och skicka`ImportFormatOptions` objekt för att upprätthålla smart stilbeteende.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

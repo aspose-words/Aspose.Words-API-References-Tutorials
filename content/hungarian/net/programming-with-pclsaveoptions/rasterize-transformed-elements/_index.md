@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
 
-Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok létrehozására, kezelésére és konvertálására C#-alkalmazásokban. Az Aspose.Words által kínált szolgáltatások közé tartozik az átalakított elemek raszterizálásának lehetősége a dokumentumok különböző formátumokba konvertálásakor. Ebben az útmutatóban bemutatjuk, hogyan használhatja az Aspose.Words for .NET C# forráskódját az átalakított elemek raszterezésének letiltásához, amikor egy dokumentumot PCL formátumba konvertál.
+Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok létrehozására, kezelésére és konvertálására C#-alkalmazásokban. Az Aspose.Words által kínált szolgáltatások közé tartozik az átalakított elemek raszterizálásának lehetősége a dokumentumok különböző formátumokba konvertálásakor. Ebben az útmutatóban bemutatjuk, hogyan használhatja az Aspose.Words for .NET C# forráskódját az átalakított elemek raszterizálásának letiltásához, amikor egy dokumentumot PCL formátumba konvertál.
 
 ## Az Aspose.Words könyvtár megértése
 

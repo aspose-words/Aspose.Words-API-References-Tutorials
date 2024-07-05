@@ -53,7 +53,7 @@ doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011
 
 In dit codefragment voeren we de samenvoegbewerking uit en geven we een DateTime-waarde op voor het veld 'Datum2'.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 Sla het gewijzigde document op in een bestand met behulp van de Save-methode van de Document-klasse:
 
 ```csharp

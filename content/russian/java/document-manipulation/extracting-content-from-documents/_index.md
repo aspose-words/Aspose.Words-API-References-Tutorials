@@ -82,7 +82,7 @@ dstDoc.save("Your Directory Path" + "ExtractContent.ExtractContentBetweenParagra
 ## Извлечение содержимого между стилями абзацев
 
 ```java
-// Пример кода Java для извлечения содержимого между стилями абзацев
+// Пример кода Java для извлечения содержимого между стилями абзаца
 Document doc = new Document("Your Directory Path" + "Extract content.docx");
 ArrayList<Paragraph> parasStyleHeading1 = ExtractContentHelper.paragraphsByStyleName(doc, "Heading 1");
 ArrayList<Paragraph> parasStyleHeading3 = ExtractContentHelper.paragraphsByStyleName(doc, "Heading 3");

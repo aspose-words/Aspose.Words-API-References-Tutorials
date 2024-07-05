@@ -1,34 +1,34 @@
 ---
-title: カスタムドキュメントプロパティの追加
-linktitle: カスタムドキュメントプロパティの追加
+title: カスタムドキュメントプロパティを追加する
+linktitle: カスタムドキュメントプロパティを追加する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してカスタム プロパティをドキュメントに追加するためのステップバイステップ ガイド。
+description: Aspose.Words for .NET を使用してドキュメントにカスタム プロパティを追加するためのステップ バイ ステップ ガイド。
 type: docs
 weight: 10
 url: /ja/net/programming-with-document-properties/add-custom-document-properties/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用してカスタム プロパティをドキュメントに追加するための C# ソース コードを説明します。この機能を使用すると、ドキュメントにカスタム情報を追加できます。
+このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントにカスタム プロパティを追加するための C# ソース コードについて説明します。この機能を使用すると、ドキュメントにカスタム情報を追加できます。
 
-## ステップ 1: プロジェクトのセットアップ
+## ステップ1: プロジェクトのセットアップ
 
-まず、お気に入りの IDE で新しい C# プロジェクトを作成します。 Aspose.Words for .NET ライブラリがプロジェクトで参照されていることを確認してください。
+まず、お気に入りの IDE で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET ライブラリが参照されていることを確認します。
 
-## ステップ 2: ドキュメントをロードする
+## ステップ2: ドキュメントの読み込み
 
-このステップでは、カスタム プロパティを追加する Word 文書を読み込みます。次のコードを使用してドキュメントをロードします。
+この手順では、カスタム プロパティを追加する Word 文書を読み込みます。次のコードを使用して文書を読み込みます。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
-交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが置かれているディレクトリの実際のパスに置き換えます。
+交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが配置されているディレクトリの実際のパスを入力します。
 
-## ステップ 3: カスタム プロパティを追加する
+## ステップ3: カスタムプロパティを追加する
 
-次に、カスタム プロパティをドキュメントに追加しましょう。次のコードを使用してプロパティを追加します。
+次に、ドキュメントにカスタム プロパティを追加してみましょう。プロパティを追加するには、次のコードを使用します。
 
 ```csharp
 CustomDocumentProperties customDocumentProperties = doc.CustomDocumentProperties;
@@ -42,13 +42,13 @@ customDocumentProperties.Add("Authorized Revision", doc.BuiltInDocumentPropertie
 customDocumentProperties.Add("Authorized Amount", 123.45);
 ```
 
-このコードは、まず「Authorized」プロパティがカスタム プロパティにすでに存在するかどうかを確認します。存在する場合、プロセスは中断されます。それ以外の場合は、カスタム プロパティがドキュメントに追加されます。
+このコードは、まずカスタム プロパティに「承認済み」プロパティが既に存在するかどうかを確認します。存在する場合、プロセスは中断されます。存在しない場合、カスタム プロパティがドキュメントに追加されます。
 
-### Aspose.Words for .NET を使用してカスタム ドキュメント プロパティを追加するソース コードの例
+### Aspose.Words for .NET を使用してカスタム ドキュメント プロパティを追加するためのサンプル ソース コード
 
 ```csharp
 
-	//ドキュメントディレクトリへのパス。
+	//ドキュメント ディレクトリへのパス。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx");
 
@@ -64,6 +64,6 @@ customDocumentProperties.Add("Authorized Amount", 123.45);
 
 ```
 
-必ず正しいドキュメント パスを指定してください。`dataDir`変数。
+正しいドキュメントパスを必ず指定してください。`dataDir`変数。
 
-Aspose.Words for .NET を使用してドキュメントにカスタム プロパティを追加する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、独自のカスタム プロパティをドキュメントに簡単に追加できます。
+Aspose.Words for .NET を使用してドキュメントにカスタム プロパティを追加する方法を学習しました。このチュートリアルで提供されるステップ バイ ステップ ガイドに従うことで、独自のカスタム プロパティをドキュメントに簡単に追加できます。

@@ -47,7 +47,7 @@ Apri il tuo ambiente di sviluppo (come Visual Studio) e crea un nuovo progetto C
 
 ### Crea un nuovo documento
 
- Nel file del programma principale, inizia creando una nuova istanza di`Document`classe. Questa sarà la nostra tela bianca.
+ Nel file di programma principale, inizia creando una nuova istanza di`Document`classe. Questa sarà la nostra tela bianca.
 
 ```csharp
 Document doc = new Document();

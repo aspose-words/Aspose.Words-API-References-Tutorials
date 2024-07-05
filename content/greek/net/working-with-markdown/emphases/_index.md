@@ -67,7 +67,7 @@ builder. Write(".");
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-συγχαρητήρια ! Τώρα μάθατε πώς να χρησιμοποιείτε έμφαση με το Aspose.Words για .NET.
+Συγχαρητήρια ! Τώρα μάθατε πώς να χρησιμοποιείτε έμφαση με το Aspose.Words για .NET.
 
 ### Παράδειγμα πηγαίου κώδικα για Emphases χρησιμοποιώντας Aspose.Words για .NET
 

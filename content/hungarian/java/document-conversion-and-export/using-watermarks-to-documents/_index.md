@@ -18,7 +18,7 @@ Mielőtt elkezdenénk vízjeleket adni a dokumentumokhoz, be kell állítanunk a
 
 1.  Az Aspose.Words for Java letöltése innen[itt](https://releases.aspose.com/words/java/).
 2. Adja hozzá az Aspose.Words for Java könyvtárat a Java projekthez.
-3. Importálja a szükséges osztályokat a Java kódjába.
+3. Importálja a szükséges osztályokat a Java kódba.
 
 Most, hogy a könyvtárat beállítottuk, folytassuk a vízjelek hozzáadásával.
 
@@ -117,7 +117,7 @@ options.setFontFamily("Times New Roman");
 
 ### Lehetséges a vízjel elforgatása?
 
- Igen, elforgathatja a vízjelet a beállításával`setRotation` ingatlan a`Shape` tárgy. A pozitív értékek az óramutató járásával megegyező irányba, a negatív értékek pedig az óramutató járásával ellentétes irányba forgatják el a vízjelet.
+ Igen, elforgathatja a vízjelet a beállításával`setRotation` ingatlan a`Shape` tárgy. A pozitív értékek az óramutató járásával megegyező, a negatív értékek pedig az óramutató járásával ellentétes irányba forgatják el a vízjelet.
 
 ### Hogyan lehet a vízjelet félig átlátszóvá tenni?
 

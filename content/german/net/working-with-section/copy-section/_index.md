@@ -1,35 +1,35 @@
 ---
-title: Abschnitt kopieren
-linktitle: Abschnitt kopieren
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+title: Abschnitt „Kopieren“
+linktitle: Abschnitt „Kopieren“
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET einen Abschnitt aus einem Word-Dokument in ein anderes Dokument kopieren.
 type: docs
 weight: 10
 url: /de/net/working-with-section/copy-section/
 ---
 
-In diesem Tutorial erklären wir, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET einen Abschnitt aus einem Word-Dokument in ein anderes Dokument kopieren. Durch das Kopieren eines Abschnitts können Sie einen bestimmten Abschnitt von einem Quelldokument in ein Zieldokument übertragen. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
+In diesem Tutorial erklären wir, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET einen Abschnitt aus einem Word-Dokument in ein anderes Dokument kopieren. Durch das Kopieren eines Abschnitts können Sie einen bestimmten Abschnitt aus einem Quelldokument in ein Zieldokument übertragen. Wir führen Sie Schritt für Schritt durch, damit Sie den Code verstehen und in Ihrem .NET-Projekt implementieren können.
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
-- Grundkenntnisse der Programmiersprache C#
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente verfügen:
+- Gute Kenntnisse der Programmiersprache C#
 - Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
-- Ein Quelldokument, das den Abschnitt enthält, den Sie kopieren möchten
+- Ein Quelldokument, das den zu kopierenden Abschnitt enthält
 - Ein leeres Zieldokument, in das Sie den Abschnitt kopieren möchten
 
-## Schritt 1: Definieren Sie das Dokumentenverzeichnis
- Zuerst müssen Sie den Verzeichnispfad festlegen, in dem sich Ihre Dokumente befinden. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+## Schritt 1: Dokumentverzeichnis festlegen
+ Zuerst müssen Sie den Verzeichnispfad festlegen, in dem sich Ihre Dokumente befinden. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Quell- und Zieldokumente laden
- Als Nächstes laden wir das Quelldokument in eine Instanz von`Document` Klasse aufgerufen`srcDoc` . Wir werden auch eine leere Instanz von erstellen`Document` Klasse aufgerufen`dstDoc` für das Zieldokument.
+ Als nächstes laden wir das Quelldokument in eine Instanz des`Document` Klasse namens`srcDoc` . Wir erstellen außerdem eine leere Instanz des`Document` Klasse namens`dstDoc` für das Zieldokument.
 
 ```csharp
-// Laden Sie das Quelldokument
+// Laden des Quelldokuments
 Document srcDoc = new Document(dataDir + "Document.docx");
 
 // Erstellen Sie ein leeres Zieldokument
@@ -37,10 +37,10 @@ Document dstDoc = new Document();
 ```
 
 ## Schritt 3: Kopieren Sie den Abschnitt in das Zieldokument
- Um den Abschnitt vom Quelldokument in das Zieldokument zu kopieren, verwenden wir die`ImportNode`Methode zum Importieren des Quellabschnitts und Hinzufügen zum Zieldokument.
+ Um den Abschnitt aus dem Quelldokument in das Zieldokument zu kopieren, verwenden wir den`ImportNode`Methode, um den Quellabschnitt zu importieren und ihn dem Zieldokument hinzuzufügen.
 
 ```csharp
-// Holen Sie sich den Quellabschnitt
+// Abschnitt „Quelle abrufen“
 Section sourceSection = srcDoc.Sections[0];
 
 // Kopieren Sie den Abschnitt in das Zieldokument
@@ -48,7 +48,7 @@ Section newSection = (Section)dstDoc.ImportNode(sourceSection, true);
 dstDoc.Sections.Add(newSection);
 ```
 
-## Schritt 4: Speichern Sie das Zieldokument
+## Schritt 4: Zieldokument speichern
 Abschließend speichern wir das Zieldokument mit dem kopierten Abschnitt in einer Datei.
 
 ```csharp
@@ -59,7 +59,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document.docx");
@@ -72,33 +72,33 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET einen Abschnitt aus einem Word-Dokument in ein anderes Dokument kopiert. Durch das Kopieren von Abschnitten können Sie bestimmte Abschnitte einfach von einem Quelldokument in ein Zieldokument übertragen. Fühlen Sie sich frei, diese Methode zu verwenden, um Abschnitte Ihrer Dokumente effizient zu organisieren und zu bearbeiten.
+In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET einen Abschnitt aus einem Word-Dokument in ein anderes Dokument kopiert. Durch das Kopieren von Abschnitten können Sie bestimmte Abschnitte problemlos von einem Quelldokument in ein Zieldokument übertragen. Verwenden Sie diese Methode, um Abschnitte Ihrer Dokumente effizient zu organisieren und zu bearbeiten.
 
-### FAQs
+### Häufig gestellte Fragen
 
-#### F: Was sind die Voraussetzungen, um mit Aspose.Words für .NET einen Abschnitt aus einem Word-Dokument in ein anderes Dokument zu kopieren?
+#### F: Was sind die Voraussetzungen für das Kopieren eines Abschnitts aus einem Word-Dokument in ein anderes Dokument mit Aspose.Words für .NET?
 
-A: Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
-- Grundkenntnisse der Programmiersprache C#
+A: Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Gegenstände verfügen:
+- Gute Kenntnisse der Programmiersprache C#
 - Die in Ihrem Projekt installierte Aspose.Words for .NET-Bibliothek
-- Ein Quelldokument, das den Abschnitt enthält, den Sie kopieren möchten
+- Ein Quelldokument, das den zu kopierenden Abschnitt enthält
 - Ein leeres Zieldokument, in das Sie den Abschnitt kopieren möchten
 
 #### F: Wie lege ich das Dokumentverzeichnis in Aspose.Words für .NET fest?
 
- A: Um den Pfad zu dem Verzeichnis festzulegen, das Ihre Dokumente enthält, müssen Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad. So geht's:
+ A: Um den Pfad zum Verzeichnis mit Ihren Dokumenten festzulegen, müssen Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad. So geht's:
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 #### F: Wie lade ich Quell- und Zieldokumente in Aspose.Words für .NET?
 
-A: Um das Quelldokument in eine Instanz von zu laden`Document` Klasse aufgerufen`srcDoc` und erstellen Sie eine leere Instanz von`Document` Klasse aufgerufen`dstDoc` Für das Zieldokument können Sie den folgenden Code verwenden:
+A: Um das Quelldokument in eine Instanz des`Document` Klasse namens`srcDoc` und erstellen Sie eine leere Instanz des`Document` Klasse namens`dstDoc` Für das Zieldokument können Sie den folgenden Code verwenden:
 
 ```csharp
-// Laden Sie das Quelldokument
+// Laden des Quelldokuments
 Document srcDoc = new Document(dataDir + "Document.docx");
 
 // Erstellen Sie ein leeres Zieldokument
@@ -107,10 +107,10 @@ Document dstDoc = new Document();
 
 #### F: Wie kopiere ich in Aspose.Words für .NET einen Abschnitt vom Quelldokument in das Zieldokument?
 
-A: Um den Abschnitt vom Quelldokument in das Zieldokument zu kopieren, können Sie den folgenden Code verwenden:
+A: Um den Abschnitt aus dem Quelldokument in das Zieldokument zu kopieren, können Sie den folgenden Code verwenden:
 
 ```csharp
-// Holen Sie sich den Quellabschnitt
+// Abschnitt „Quelle abrufen“
 Section sourceSection = srcDoc.Sections[0];
 
 // Kopieren Sie den Abschnitt in das Zieldokument

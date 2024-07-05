@@ -126,7 +126,7 @@ Az alábbi lépések követésével hatékonyan kezelheti a PDF-megjelenítési 
 
 ### 1. kérdés: Kezelhetek más típusú figyelmeztetéseket ezzel a módszerrel?
 
- Igen, a`IWarningCallback` A felület különféle típusú figyelmeztetéseket tud kezelni, nem csak a PDF-megjelenítéssel kapcsolatosakat.
+ Igen, a`IWarningCallback` felület különféle típusú figyelmeztetéseket képes kezelni, nem csak a PDF-megjelenítéssel kapcsolatosakat.
 
 ### 2. kérdés: Honnan tölthetem le az Aspose.Words for .NET ingyenes próbaverzióját?
 

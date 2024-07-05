@@ -104,7 +104,7 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
                 throw new InvalidOperationException(
                     "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 
-            // Korlátozzuk magunkat egy ésszerűen egyszerű forgatókönyvre.
+            // Korlátozzuk magunkat egy meglehetősen egyszerű forgatókönyvre.
             if (startPara.ParentNode != endPara.ParentNode)
                 throw new InvalidOperationException(
                     "Start and end paragraphs have different parents, cannot handle this scenario yet.");

@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Bước 5: Lưu tài liệu
 
- Sau khi chèn trường biểu mẫu nhập văn bản, hãy lưu tài liệu vào vị trí mong muốn bằng cách sử dụng`Save` phương pháp. Đảm bảo cung cấp đường dẫn tệp thích hợp:
+ Sau khi chèn trường biểu mẫu nhập văn bản, hãy lưu tài liệu vào vị trí mong muốn bằng cách sử dụng`Save`phương pháp. Đảm bảo cung cấp đường dẫn tệp thích hợp:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ Trong hướng dẫn này, chúng ta đã học cách di chuyển một nút tro
 
 #### Câu hỏi: Làm cách nào tôi có thể bật tính năng theo dõi sửa đổi trong tài liệu Aspose.Words for .NET?
 
-Trả lời: Để bật tính năng theo dõi sửa đổi trong tài liệu Aspose.Words for .NET, bạn có thể sử dụng`StartTrackRevisions` phương pháp của`Document` sự vật. Phương pháp này lấy tham số là tên tác giả của các bản sửa đổi và ngày bắt đầu theo dõi các bản sửa đổi.
+ Trả lời: Để bật tính năng theo dõi sửa đổi trong tài liệu Aspose.Words for .NET, bạn có thể sử dụng`StartTrackRevisions` phương pháp của`Document` sự vật. Phương pháp này lấy tham số là tên tác giả của các bản sửa đổi và ngày bắt đầu theo dõi các bản sửa đổi.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

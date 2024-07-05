@@ -75,13 +75,13 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET'teki belge metni yönü özelliğini inceledik. Özellikle İbranice veya Arapça gibi sağdan sola yazılan dillerde bir belgedeki metnin yönünün nasıl belirleneceğini öğrendik.
+Bu eğitimde Aspose.Words for .NET'teki belge metni yönü özelliğini inceledik. Özellikle İbranice veya Arapça gibi sağdan sola yazılan dillerde, bir belgedeki metnin yönünü nasıl belirleyeceğimizi öğrendik.
 
 Bu özellik, metnin çok dilli belgelerde doğru şekilde görüntülenmesini sağlamak için gereklidir. Aspose.Words, uygun yükleme seçeneklerini kullanarak metnin yönünü otomatik olarak algılayabilir ve bunu belgeye uygulayabilir.
 
 Aspose.Words ile belgelerinizdeki metnin yönünü kolayca değiştirebilir, kullanıcılara sorunsuz ve sezgisel bir okuma deneyimi sunabilirsiniz.
 
-Bu özelliğin özellikle belirli metin yönü gerektiren dillerle Kelime İşleme yaparken kullanışlı olduğunu unutmamak önemlidir. Aspose.Words, belgelerinizdeki metnin yönünü yönetmek için güçlü araçlar sağlayarak bu görevi kolaylaştırır.
+Bu özelliğin özellikle belirli metin yönü gerektiren dillerde Kelime İşleme yaparken kullanışlı olduğunu unutmamak önemlidir. Aspose.Words, belgelerinizdeki metnin yönünü yönetmek için güçlü araçlar sağlayarak bu görevi kolaylaştırır.
 
 Belgelerinizde istediğiniz sonuçları elde etmek için otomatik metin yönünü ayarlama gibi uygun yükleme seçeneklerini kullanmayı unutmayın.
 

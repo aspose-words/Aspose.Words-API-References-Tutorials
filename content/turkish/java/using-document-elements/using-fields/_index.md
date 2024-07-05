@@ -84,7 +84,7 @@ Object[] fieldValues = {
 doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
-HandleMergeField Sınıfının kaynak kodu
+Class HandleMergeField'ın kaynak kodu
 
 ```java
     private static class HandleMergeField implements IFieldMergingCallback
@@ -357,7 +357,7 @@ HandleMergeField Sınıfının kaynak kodu
 
 Tebrikler! Word belgelerini dinamik olarak değiştirmek için Aspose.Words for Java'daki alanların nasıl kullanılacağını öğrendiniz. Bu güçlü API, belgeleriniz üzerinde tam kontrol sahibi olmanızı sağlar ve bu da onu Java geliştiricileri için değerli bir varlık haline getirir.
 
-## 7.SSS
+## 7. SSS
 
 ### S1: Aspose.Words for Java'yı nereden indirebilirim?
  Aspose.Words for Java'yı şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).

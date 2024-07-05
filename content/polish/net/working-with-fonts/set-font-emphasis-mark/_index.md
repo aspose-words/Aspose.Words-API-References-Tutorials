@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-fonts/set-font-emphasis-mark/
 ---
 
-W tym samouczku pokażemy, jak ustawić styl podkreślenia czcionki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Podkreślenie czcionki służy do wyróżniania określonych słów lub fraz w tekście.
+W tym samouczku pokażemy, jak ustawić styl wyróżnienia czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET. Podkreślenie czcionki służy do wyróżniania określonych słów lub fraz w tekście.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Utwórz i dostosuj dokument
- Utwórz instancję`Document` klasa i powiązana`DocumentBuilder` do tworzenia treści dokumentu. Użyj`Font.EmphasisMark` właściwość, na którą chcesz ustawić styl podkreślenia czcionki`EmphasisMark.UnderSolidCircle` . Następnie użyj`Write` I`Writeln` metody`DocumentBuilder` aby dodać tekst z podkreśleniem określonej czcionki.
+ Utwórz instancję`Document` klasa i powiązana`DocumentBuilder` do tworzenia treści dokumentu. Użyj`Font.EmphasisMark` właściwość, na którą chcesz ustawić styl wyróżnienia czcionki`EmphasisMark.UnderSolidCircle` . Następnie użyj`Write` I`Writeln` metody`DocumentBuilder` , aby dodać tekst z określonym wyróżnieniem czcionki.
 
 ```csharp
 Document document = new Document();
@@ -59,7 +59,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Wniosek
-W tym samouczku nauczyłeś się, jak ustawić styl podkreślenia czcionki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Eksperymentuj z różnymi stylami wyróżniania i korzystaj z tej funkcji, aby wyróżniać słowa lub frazy w dokumentach.
+W tym samouczku nauczyłeś się, jak ustawić styl wyróżnienia czcionki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Eksperymentuj z różnymi stylami wyróżniania i korzystaj z tej funkcji, aby wyróżniać słowa lub frazy w dokumentach.
 
 ### Często zadawane pytania
 
@@ -81,4 +81,4 @@ Odp.: Tak, możesz dodać znaki akcentujące do określonej części tekstu w do
 
 #### P: Czy znaki akcentujące można dostosować do moich potrzeb?
 
-Odp.: Tak, znaki akcentujące można dostosować do swoich potrzeb za pomocą Aspose.Words. Możesz dostosować właściwości stylu znaków akcentujących, takie jak kolor, rozmiar, rodzaj linii i inne, aby dopasować je do preferencji formatowania.
+Odp.: Tak, znaki akcentu można dostosować do swoich potrzeb za pomocą Aspose.Words. Możesz dostosować właściwości stylu znaków akcentujących, takie jak kolor, rozmiar, rodzaj linii i inne, aby dopasować je do preferencji formatowania.

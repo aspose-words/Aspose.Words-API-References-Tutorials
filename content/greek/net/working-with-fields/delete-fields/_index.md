@@ -46,7 +46,7 @@ using Aspose.Words;
 Εάν δεν το έχετε κάνει ήδη, προσθέστε μια αναφορά στο Aspose.Words στο έργο σας στο Visual Studio. Μπορείτε να το κάνετε αυτό με:
    - Κάνοντας δεξί κλικ στο έργο σας στο Solution Explorer.
    - Επιλέγοντας "Διαχείριση πακέτων NuGet..."
-   - Αναζήτηση για "Apose.Words" και εγκατάστασή του στο έργο σας.
+   - Αναζήτηση για "Aspose.Words" και εγκατάστασή του στο έργο σας.
 
 ## Βήμα 3: Προετοιμάστε το έγγραφό σας
 
@@ -105,4 +105,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
    - Ναι, η μέθοδος που εμφανίζεται εδώ στοχεύει συγκεκριμένα μόνο πεδία και αφήνει αμετάβλητο το άλλο περιεχόμενο.
 
 ### Πού μπορώ να βρω περισσότερους πόρους και υποστήριξη για το Aspose.Words;
-   -  Επισκέψου το[Aspose.Words για τεκμηρίωση API .NET](https://reference.aspose.com/words/net/) και το[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8)για περαιτέρω βοήθεια.
+   -  Επισκέψου το[Aspose.Words για τεκμηρίωση API .NET](https://reference.aspose.com/words/net/) και το[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8) για περαιτέρω βοήθεια.

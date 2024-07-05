@@ -61,7 +61,7 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // Cập nhật các trường.
 document. UpdateFields();
 
-//Hiển thị kết quả hiện trường.
+// Hiển thị kết quả hiện trường.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
@@ -78,7 +78,7 @@ Trả lời: Trường hiển thị kết quả trong Aspose.Words là một lo�
 
 #### Câu hỏi: Làm cách nào để cập nhật trường hiển thị kết quả trong tài liệu Word bằng Aspose.Words?
 
-Trả lời: Để cập nhật trường hiển thị kết quả trong tài liệu Word bằng Aspose.Words, bạn có thể sử dụng phương thức UpdateFields. Phương thức này lặp qua tài liệu và cập nhật tất cả các trường, bao gồm các trường hiển thị kết quả, tính toán lại giá trị dựa trên dữ liệu hiện tại.
+Trả lời: Để cập nhật trường hiển thị kết quả trong tài liệu Word bằng Aspose.Words, bạn có thể sử dụng phương thức UpdateFields. Phương thức này lặp qua tài liệu và cập nhật tất cả các trường, bao gồm các trường hiển thị kết quả, tính toán lại các giá trị dựa trên dữ liệu hiện tại.
 
 #### Câu hỏi: Tôi có thể định dạng kết quả được hiển thị theo trường hiển thị kết quả không?
 

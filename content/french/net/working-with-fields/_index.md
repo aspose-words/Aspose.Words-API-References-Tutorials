@@ -23,7 +23,7 @@ Il s'agit d'une ressource complète pour apprendre à utiliser les champs dans l
 | [Insérer un champ de fusion à l'aide de DOM](./insert-merge-field-using-dom/) | Découvrez comment insérer des champs de fusion de champs personnalisés dans vos documents Word avec Aspose.Words pour .NET. |
 | [Insérer un champ de bloc d'adresse de fusion et publipostage à l'aide de DOM](./insert-mail-merge-address-block-field-using-dom/) | Découvrez comment insérer un champ de bloc d'adresse de fusion et publipostage dans vos documents Word avec Aspose.Words pour .NET. |
 | [Insérer FieldIncludeText sans Document Builder](./insert-field-include-text-without-document-builder/) | Découvrez comment insérer un champ FieldIncludeText dans vos documents Word avec Aspose.Words pour .NET. |
-| [Insérer un champ Aucun](./insert-field-none/) | Apprenez à créer des documents avec AUCUN dans Word avec Aspose.Words pour .NET. |
+| [Insérer un champ Aucun](./insert-field-none/) | Apprenez à Insérez un champ AUCUN dans vos documents Word avec Aspose.Words pour .NET. |
 | [Insérer un champ](./insert-field/) | Découvrez comment insérer un champ dans vos documents Word avec Aspose.Words pour .NET. Personnalisez vos documents avec des champs dynamiques. |
 | [Insérer un champ à l'aide du générateur de champs](./insert-field-using-field-builder/) | Découvrez comment insérer des champs personnalisés dans vos documents Word avec Aspose.Words pour .NET. |
 | [Insérer un champ d'auteur](./insert-author-field/) | Découvrez comment insérer un champ AUTEUR dans vos documents Word avec Aspose.Words pour .NET. Précisez le nom de l'auteur pour personnaliser vos documents. |

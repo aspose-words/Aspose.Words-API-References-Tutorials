@@ -30,7 +30,7 @@ Se você deseja formatar texto com fontes diferentes, definir regras de substitu
 | [Definir pastas de fontes em várias pastas](./set-fonts-folders-multiple-folders/) | Guia passo a passo para definir várias pastas de fontes ao renderizar um documento usando Aspose.Words for .NET. |
 | [Definir sistema de pastas de fontes e pasta personalizada](./set-fonts-folders-system-and-custom-folder/) | Guia passo a passo para configurar pastas de sistema e de fontes personalizadas ao renderizar um documento usando Aspose.Words for .NET. |
 | [Definir pastas de fontes com prioridade](./set-fonts-folders-with-priority/) | Guia passo a passo para definir pastas de fontes com prioridade ao renderizar um documento usando Aspose.Words for .NET. |
-| [Definir pasta de fontes True Type](./set-true-type-fonts-folder/) | Guia passo a passo para definir a pasta de fontes true type ao renderizar um documento usando Aspose.Words for .NET. |
+| [Definir pasta de fontes True Type](./set-true-type-fonts-folder/) | Guia passo a passo para definir a pasta de fontes True Type ao renderizar um documento usando Aspose.Words for .NET. |
 | [Especifique a fonte padrão ao renderizar](./specify-default-font-when-rendering/) | Guia passo a passo para especificar a fonte padrão ao renderizar um documento usando Aspose.Words for .NET. |
 | [Configurações de fonte com opções de carregamento](./font-settings-with-load-options/) | Neste tutorial, aprenda como carregar um documento do Word com opções de carregamento personalizadas e configurações de fonte correspondentes.|
 | [Definir pasta de fontes](./set-fonts-folder/) | Aprenda como definir o diretório de fontes no Aspose.Words for .NET e garantir a disponibilidade das fontes usadas em seus documentos. |

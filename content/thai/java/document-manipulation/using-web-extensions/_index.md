@@ -61,7 +61,7 @@ doc.save("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskP
 
 ## การดึงข้อมูลบานหน้าต่างงาน
 
-หากต้องการดึงข้อมูลเกี่ยวกับบานหน้าต่างการอ้างอิงงานในเอกสาร คุณสามารถวนซ้ำและเข้าถึงได้:
+หากต้องการดึงข้อมูลเกี่ยวกับบานหน้าต่างงานในเอกสาร คุณสามารถวนซ้ำและเข้าถึงข้อมูลอ้างอิงได้:
 
 ```java
 doc = new Document("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");

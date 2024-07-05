@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Ở đây chúng tôi sử dụng trình tạo tài liệu để xây dựng một bảng có ba ô. Ô đầu tiên có chiều rộng ưu tiên là 40 điểm, ô thứ hai có chiều rộng ưu tiên là 20% chiều rộng của bảng và ô thứ ba có chiều rộng ưu tiên tự động điều chỉnh.
+Ở đây chúng tôi sử dụng trình tạo tài liệu để xây dựng một bảng có ba ô. Ô đầu tiên có chiều rộng ưu tiên là 40 điểm, ô thứ hai có chiều rộng ưu tiên là 20% chiều rộng của bảng và ô thứ ba có chiều rộng ưu tiên tự động điều chỉnh
 
   tùy thuộc vào không gian có sẵn.
 

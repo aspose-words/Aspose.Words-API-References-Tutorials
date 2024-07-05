@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-revisions/remove-comments-in-pdf/
 ---
 
-I den här steg-för-steg-guiden kommer vi att berätta hur du tar bort kommentarer i en PDF-fil med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
+den här steg-för-steg-guiden kommer vi att berätta hur du tar bort kommentarer i en PDF-fil med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
 
 ## Steg 1: Ladda dokumentet
 
@@ -27,7 +27,7 @@ Vi kommer att konfigurera layoutalternativet för att dölja kommentarer när PD
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 ```
 
-## Steg 3: Spara dokumentet som en PDF
+## Steg 3: Spara dokumentet som PDF
 
 Slutligen kommer vi att spara dokumentet i PDF-format genom att ta bort kommentarerna.
 

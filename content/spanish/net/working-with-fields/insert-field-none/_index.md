@@ -2,7 +2,7 @@
 title: Insertar campo Ninguno
 linktitle: Insertar campo Ninguno
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a crear documentos con AUCUN en Word con Aspose.Words para .NET.
+description: Aprenda a insertar un campeón AUCUN en sus documentos Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/insert-field-none/

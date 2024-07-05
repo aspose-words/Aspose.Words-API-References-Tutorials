@@ -46,7 +46,7 @@ Certifique-se de ter um projeto C# novo ou existente no Visual Studio onde você
 Se ainda não o fez, adicione uma referência a Aspose.Words em seu projeto do Visual Studio. Você pode fazer isso:
    - Clique com o botão direito em seu projeto no Solution Explorer.
    - Selecionando "Gerenciar pacotes NuGet..."
-   - Procurando por "Apose.Words" e instalando-o em seu projeto.
+   - Procurando por "Aspose.Words" e instalando-o em seu projeto.
 
 ## Etapa 3: prepare seu documento
 
@@ -105,4 +105,4 @@ Concluindo, este tutorial forneceu um guia completo sobre como remover campos de
    - Sim, o método mostrado aqui visa especificamente apenas os campos e deixa o restante do conteúdo inalterado.
 
 ### Onde posso encontrar mais recursos e suporte para Aspose.Words?
-   -  Visite a[Documentação da API Aspose.Words para .NET](https://reference.aspose.com/words/net/) e a[Fórum Aspose.Words](https://forum.aspose.com/c/words/8)Para obter mais assistência.
+   -  Visite a[Documentação da API Aspose.Words para .NET](https://reference.aspose.com/words/net/) e a[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) Para obter mais assistência.

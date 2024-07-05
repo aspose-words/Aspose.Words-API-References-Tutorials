@@ -8,7 +8,7 @@ weight: 10
 url: /th/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
 
-บทความนี้ให้คำแนะนำทีละขั้นตอนเกี่ยวกับวิธีลดขนาด PDF ด้วยฟีเจอร์ปรับขนาดฟอนต์ wmf ให้เป็นขนาด metafile ด้วย Aspose.Words สำหรับ .NET เราจะอธิบายโค้ดแต่ละส่วนโดยละเอียด ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถเข้าใจวิธีเปิดหรือปิดใช้งานการปรับขนาดแบบอักษร WMF เมื่อแปลงเป็น PDF
+บทความนี้ให้คำแนะนำทีละขั้นตอนเกี่ยวกับวิธีลดขนาด PDF ด้วยฟีเจอร์ปรับขนาดฟอนต์ wmf ให้เป็นขนาด metafile ด้วย Aspose.Words สำหรับ .NET เราจะอธิบายโค้ดแต่ละส่วนอย่างละเอียด ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถเข้าใจวิธีเปิดหรือปิดใช้งานการปรับขนาดแบบอักษร WMF เมื่อแปลงเป็น PDF
 
 ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งและกำหนดค่าไลบรารี Aspose.Words สำหรับ .NET ในโปรเจ็กต์ของคุณแล้ว คุณสามารถดูไลบรารีและคำแนะนำในการติดตั้งได้จากเว็บไซต์ Aspose
 
@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกการเรนเดอร์ metafile
 
- หากต้องการเปิดใช้งานหรือปิดใช้งานการปรับขนาดแบบอักษร WMF เป็นขนาด metafile เราจำเป็นต้องกำหนดค่า`MetafileRenderingOptions` วัตถุ วัตถุ ในตัวอย่างนี้ เราปิดใช้งานการปรับขนาดแบบอักษรโดยการตั้งค่า`ScaleWmfFontsToMetafileSize`ทรัพย์สินเพื่อ`false`.
+ หากต้องการเปิดใช้งานหรือปิดใช้งานการปรับขนาดแบบอักษร WMF เป็นขนาด metafile เราจำเป็นต้องกำหนดค่า`MetafileRenderingOptions` วัตถุ. ในตัวอย่างนี้ เราปิดใช้งานการปรับขนาดแบบอักษรโดยการตั้งค่า`ScaleWmfFontsToMetafileSize`ทรัพย์สินเพื่อ`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -55,7 +55,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = met
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-นั่นคือทั้งหมด! คุณได้เปิดใช้งานหรือปิดใช้งานการปรับขนาดฟอนต์ WMF เป็นขนาดเมตาไฟล์สำเร็จแล้วเมื่อทำการแปลง
+นั่นคือทั้งหมดที่ ! คุณได้เปิดใช้งานหรือปิดใช้งานการปรับขนาดฟอนต์ WMF เป็นขนาดเมตาไฟล์สำเร็จแล้วเมื่อทำการแปลง
 
 เอกสาร PDF โดยใช้ Aspose.Words สำหรับ .NET
 

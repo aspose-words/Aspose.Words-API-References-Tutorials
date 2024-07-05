@@ -26,5 +26,5 @@ Ha követi ezeket az oktatóanyagokat, akkor képes lesz hatékonyan kezelni a k
 | [Könyvjelzők elrejtése a Word-dokumentumban](./show-hide-bookmarks/) | Ismerje meg, hogyan jeleníthet meg vagy rejthet el egy adott könyvjelzőt Word-dokumentumban az Aspose.Words for .NET használatával. |
 | [Könyvjelzővel ellátott tartalom elrejtése a Word-dokumentumban](./show-hide-bookmarked-content/) | Ismerje meg, hogyan jeleníthet meg vagy rejthet el könyvjelzőket a Word-dokumentumban az Aspose.Words for .NET segítségével. |
 | [Oldja ki a sor könyvjelzőit a Word dokumentumban](./untangle-row-bookmarks/) | Ismerje meg, hogyan bonthatja ki a beágyazott soros könyvjelzőket a Word dokumentumban, és távolíthat el bizonyos sorokat anélkül, hogy ez más könyvjelzőket érintene. |
-| [Kibontani a Word dokumentumban](./untangle/) | Ismerje meg, hogyan bonthatja ki a Word dokumentumba ágyazott könyvjelzőit a szomszédos táblázatsorokban az Aspose.Words for .NET segítségével. |
+| [Kibontani a Word dokumentumban](./untangle/) | Tanulja meg, hogyan bonthatja ki a Word dokumentumba ágyazott könyvjelzőit a szomszédos táblázatsorokban az Aspose.Words for .NET segítségével. |
 | [Sor törlése könyvjelzővel a Word dokumentumban](./delete-row-by-bookmark/) | Ismerje meg, hogyan törölhet táblázatsort egy adott könyvjelző alapján a Word dokumentumban az Aspose.Words for .NET használatával. |

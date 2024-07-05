@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Nastavte adresář písem
- Vytvořte instanci souboru`FontSettings` třídy a použijte`SetFontsFolder` metoda k určení adresáře obsahujícího fonty. Nahradit`"Fonts"` s názvem aktuálního adresáře fontů.
+ Vytvořte instanci souboru`FontSettings` třídy a použijte`SetFontsFolder` metoda k určení adresáře obsahujícího fonty. Nahradit`"Fonts"` s názvem aktuálního adresáře písem.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

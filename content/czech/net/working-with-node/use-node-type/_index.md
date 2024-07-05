@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## Krok 3: Získejte typ uzlu dokumentu
- K získání typu uzlu dokumentu použijeme`NodeType` vlastnictví.
+ K získání typu uzlu dokumentu používáme`NodeType` vlastnictví.
 
 ```csharp
 NodeType type = doc.NodeType;

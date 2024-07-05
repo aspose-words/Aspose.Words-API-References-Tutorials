@@ -41,7 +41,7 @@ doc.Unprotect("newPassword");
 
 ## 步驟 4：儲存不加保護的文檔
 
-最後，使用 Document 物件的 Save() 方法來保存不受保護的文檔：
+最後，使用 Document 物件的 Save() 方法來儲存不受保護的文件：
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");

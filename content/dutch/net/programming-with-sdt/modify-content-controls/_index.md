@@ -60,7 +60,7 @@ case SdtType.DropDownList:
 }
 ```
 
-## Stap 5: Pas het beeldinhoudsbeheer aan
+## Stap 5: Wijzig het beeldinhoudsbeheer
  Voor inhoudsbesturingselementen van het type`SdtType.Picture`, haal de vorm binnen het inhoudsbesturingselement op en vervang de afbeelding door een nieuwe.
 
 ```csharp

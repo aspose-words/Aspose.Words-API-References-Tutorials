@@ -15,7 +15,7 @@ In deze tutorials onderzoeken ontwikkelaars hoe ze Aspose.Words voor Python kunn
 
 ## Verbeter de documentbeveiliging
 
-De tutorials zijn gericht op het versterken van documentbeveiliging met Python-documentbeveiligingsfuncties. Ontwikkelaars krijgen inzicht in watermerken, digitale handtekeningen en redactie van inhoud. Door technieken voor documentbeveiliging onder de knie te krijgen, kunnen ontwikkelaars de workflows voor de verwerking van tekstdocumenten en documentbeheer verbeteren, waardoor het vertrouwen in hun documentgerelateerde activiteiten wordt vergroot.
+De tutorials zijn gericht op het versterken van documentbeveiliging met Python-documentbeveiligingsfuncties. Ontwikkelaars krijgen inzicht in watermerken, digitale handtekeningen en redactie van inhoud. Door technieken voor documentbeveiliging onder de knie te krijgen, kunnen ontwikkelaars de workflows voor tekstdocumentverwerking en documentbeheer verbeteren, waardoor het vertrouwen in hun documentgerelateerde activiteiten wordt vergroot.
 
 ## Verbeter uw documentbeheer
 

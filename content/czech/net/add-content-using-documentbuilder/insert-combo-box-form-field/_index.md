@@ -101,7 +101,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx"
 
 ## Závěr
 
-A tady to máte! Úspěšně jste vložili pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET. Vidíš, nebylo to tak těžké, že? Pomocí těchto jednoduchých kroků můžete vytvářet interaktivní a dynamické dokumenty, které jistě zaujmou. Takže jděte do toho a vyzkoušejte to. Kdo ví, možná cestou objevíte i nějaké nové triky. Šťastné kódování!
+A tady to máte! Úspěšně jste vložili pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET. Vidíš, nebylo to tak těžké, že? Pomocí těchto jednoduchých kroků můžete vytvářet interaktivní a dynamické dokumenty, které jistě zaujmou. Takže do toho a vyzkoušejte to. Kdo ví, možná cestou objevíte i nějaké nové triky. Šťastné kódování!
 
 ## FAQ
 

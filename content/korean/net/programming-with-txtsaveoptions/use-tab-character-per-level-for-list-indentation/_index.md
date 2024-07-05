@@ -110,7 +110,7 @@ Aspose.Words for .NET의 "목록 들여쓰기를 위해 수준당 하나의 탭 
  예, 목록 들여쓰기에 대한 수준당 탭 문자 수를 사용자 정의할 수 있습니다.`ListIndentation.Count` 에 있는 재산`TxtSaveOptions` 수업. 각 들여쓰기 수준에 대해 원하는 탭 문자 수를 지정할 수 있습니다.
 
 #### Q: .NET용 Aspose.Words에서 목록 들여쓰기에 사용할 수 있는 다른 문자는 무엇입니까?
- 탭 문자 외에도 Aspose.Words for .NET을 사용하여 목록 들여쓰기에 다른 문자를 사용할 수도 있습니다. 당신은 설정할 수 있습니다`ListIndentation.Character` 속성을 공백(`' '`), 목록 식별용입니다.
+ 탭 문자 외에도 Aspose.Words for .NET을 사용하여 목록 들여쓰기에 다른 문자를 사용할 수도 있습니다. 당신은 설정할 수 있습니다`ListIndentation.Character` 속성을 공백(`' '`), 들여쓰기 목록의 경우.
 
 #### Q: Aspose.Words for .NET은 목록 관리를 위한 다른 기능을 제공합니까?
 예, Aspose.Words for .NET은 Word 문서의 목록을 관리하기 위한 많은 기능을 제공합니다. 번호 매기기 또는 글머리 기호 목록을 생성하고, 들여쓰기 수준을 설정하고, 목록 스타일을 사용자 정의하고, 목록 항목을 추가하는 등의 작업을 수행할 수 있습니다.

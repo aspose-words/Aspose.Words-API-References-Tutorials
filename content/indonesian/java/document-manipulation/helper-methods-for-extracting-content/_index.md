@@ -83,7 +83,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
                         false, !isStartingNode, false);
                 isExtracting = false;
             }
-            //Persyaratan harus dipisahkan karena penanda awal dan akhir tingkat blok mungkin merupakan simpul yang sama.
+            //Persyaratan harus dipisahkan karena penanda awal dan akhir tingkat blok mungkin merupakan node yang sama.
             if (isStartingNode) {
                 processMarker(cloneNode, nodes, originalStartNode, currNode, isInclusive,
                         true, true, false);

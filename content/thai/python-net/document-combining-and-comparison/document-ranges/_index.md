@@ -65,7 +65,7 @@ for table in doc.get_child_nodes(NodeType.TABLE, True):
     # Your code to work with tables goes here
 ```
 
-## การค้นหาและการจำลองข้อความ
+## การค้นหาและการแทนที่ข้อความ
 
 เพื่อนำทางและแก้ไขข้อความ เราสามารถใช้ฟังก์ชันการค้นหาและแทนที่:
 

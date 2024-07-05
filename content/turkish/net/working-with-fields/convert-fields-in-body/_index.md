@@ -17,7 +17,7 @@ url: /tr/net/working-with-fields/convert-fields-in-body/
 Aspose.Words for .NET kullanarak bir belgenin gövdesindeki alanları dönüştürme eğitimine dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
 - Visual Studio: .NET geliştirme için yüklendi ve yapılandırıldı.
--  Aspose.Words for .NET: Visual Studio projenize indirilir ve başvurulur. adresinden alabilirsiniz[Burada](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: İndirilir ve Visual Studio projenize başvurulur. adresinden alabilirsiniz[Burada](https://releases.aspose.com/words/net/).
 - Temel C# Bilgisi: Sağlanan kod parçacıklarını anlamak ve değiştirmek için C# programlama diline aşinalık.
 
 ## Ad Alanlarını İçe Aktar
@@ -83,7 +83,7 @@ Aspose.Words, DATE, PAGE, MERGEFIELD ve daha fazlası gibi çeşitli alan türle
 Evet, Aspose.Words for .NET, alanları DOCX, DOC, RTF gibi formatlarda ve daha sorunsuz bir şekilde dönüştürebilir ve işleyebilir.
 
 ### Aspose.Words for .NET'in kapsamlı belgelerini nerede bulabilirim?
- Ayrıntılı belgeler ve API referansları mevcuttur.[Burada](https://reference.aspose.com/words/net/).
+ Ayrıntılı belgeler ve API referansları mevcuttur[Burada](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET'in deneme sürümü mevcut mu?
  Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).

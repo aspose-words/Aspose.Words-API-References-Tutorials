@@ -26,7 +26,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 
 ## Eliminazione di un intervallo di documenti
 
-Un caso d'uso comune per gli intervalli di documenti è l'eliminazione di contenuto specifico. Supponiamo che tu voglia rimuovere il contenuto della prima sezione del tuo documento. Puoi ottenere questo risultato utilizzando il seguente codice:
+Un caso d'uso comune per gli intervalli di documenti è l'eliminazione di contenuti specifici. Supponiamo che tu voglia rimuovere il contenuto della prima sezione del tuo documento. Puoi ottenere questo risultato utilizzando il seguente codice:
 
 ```java
 doc.getSections().get(0).getRange().delete();

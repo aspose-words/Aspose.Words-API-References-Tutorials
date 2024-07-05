@@ -123,6 +123,6 @@ Voetnoten verschijnen onderaan de pagina, terwijl eindnoten aan het einde van ee
 Ja, u kunt de opmaak van voetnoten en eindnoten aanpassen met Aspose.Words voor Java.
 
 ### 4. Zijn voetnoten en eindnoten belangrijk bij de documentopmaak?
-Ja, voetnoten en eindnoten zijn essentieel voor het verstrekken van referenties en aanvullende informatie in documenten.
+Ja, voetnoten en eindnoten zijn essentieel voor het verstrekken van verwijzingen en aanvullende informatie in documenten.
 
 Ontdek gerust meer functies van Aspose.Words voor Java en verbeter uw mogelijkheden voor het maken van documenten. Veel codeerplezier!

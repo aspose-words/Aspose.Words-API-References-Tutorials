@@ -35,7 +35,7 @@ Aspose.Words é independente de plataforma, o que significa que funciona perfeit
 
 ## Conversão de documentos usando Aspose.Words para Java
 
-Vamos percorrer um guia passo a passo sobre como utilizar o recurso de conversão de documentos do Aspose.Words for Java. Neste exemplo, converteremos um documento Word em PDF.
+Vamos percorrer um guia passo a passo sobre como utilizar o recurso de conversão de documentos do Aspose.Words para Java. Neste exemplo, converteremos um documento Word em PDF.
 
 ## Etapa 1: Configurando o Ambiente
 

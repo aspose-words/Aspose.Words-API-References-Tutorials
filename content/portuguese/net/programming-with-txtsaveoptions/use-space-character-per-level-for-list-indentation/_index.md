@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Neste exemplo, criamos um novo documento e usamos o DocumentBuilder para adicionar texto e criar uma lista com três níveis de recuo. Adicionamos três itens à lista, e cada item indica um nível adicional.
+Neste exemplo, criamos um novo documento e usamos o DocumentBuilder para adicionar texto e criar uma lista com três níveis de recuo. Adicionamos três itens à lista, com cada item recuado em um nível adicional.
 
 ## Usando um caractere de espaço por nível para recuo da lista
 

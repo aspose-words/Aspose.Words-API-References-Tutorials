@@ -82,7 +82,7 @@ Aspose.Words for Java je výkonný nástroj pro tisk a vykreslování dokumentů
 
 ### Je Aspose.Words for Java vhodný pro rozsáhlé zpracování dokumentů?
 
-Ano, Aspose.Words for Java je navržena pro malé i velké zpracování dokumentů, takže je univerzální volbou pro různé aplikace.
+Ano, Aspose.Words for Java je navržen pro malé i velké zpracování dokumentů, což z něj činí univerzální volbu pro různé aplikace.
 
 ### Kde najdu další příklady a dokumentaci?
 

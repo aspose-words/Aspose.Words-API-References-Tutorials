@@ -112,4 +112,4 @@ R : Pour appliquer une protection en lecture seule à un document Word à l'aide
 
 #### Q : Les utilisateurs peuvent-ils contourner la protection en lecture seule dans un document Word ?
 
-R : La protection en lecture seule dans un document Word vise à décourager et à empêcher les modifications accidentelles ou non autorisées. Bien qu'il offre un certain niveau de protection, il peut être contourné par les utilisateurs disposant de connaissances techniques ou d'autorisations de modification suffisantes. Cependant, la protection en lecture seule a un effet dissuasif et contribue à maintenir l'intégrité du document.
+R : La protection en lecture seule dans un document Word vise à décourager et à empêcher les modifications accidentelles ou non autorisées. Bien qu'il offre un certain niveau de protection, il peut être contourné par les utilisateurs disposant de connaissances techniques ou d'autorisations de modification suffisantes. Cependant, la protection en lecture seule a un effet dissuasif et contribue à maintenir l’intégrité du document.

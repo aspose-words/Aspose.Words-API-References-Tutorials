@@ -65,7 +65,7 @@ Adicionar marcas d'água de imagem envolve um processo semelhante:
 
 1. Carregue a imagem para a marca d'água.
 2. Crie um objeto de marca d'água de imagem.
-3. Adicione a marca d’água da imagem ao documento.
+3. Adicione a marca d'água da imagem ao documento.
 
 ```python
 # Load the image for the watermark
@@ -100,7 +100,7 @@ section = doc.sections[0]
 section.watermark = watermark
 ```
 
-## Criando marcas d'água transparentes
+## Criando marcas d’água transparentes
 
 Para criar uma marca d'água transparente, ajuste o nível de transparência:
 

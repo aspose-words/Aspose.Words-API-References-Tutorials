@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 2. Загрузите существующий документ
- Далее вам необходимо загрузить существующий документ Word в экземпляр`Document` класс.
+ Далее вам необходимо загрузить существующий документ Word в экземпляр`Document` сорт.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");

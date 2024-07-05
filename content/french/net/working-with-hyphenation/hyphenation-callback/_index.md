@@ -19,7 +19,7 @@ Avant de nous salir les mains avec le code, assurons-nous que vous disposez de t
 1.  Aspose.Words for .NET : assurez-vous de disposer de la bibliothèque. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
 2. IDE : Un environnement de développement comme Visual Studio.
 3. Connaissance de base de C# : Compréhension de C# et du framework .NET.
-4. Dictionnaires de césure : dictionnaires de césure pour les langues que vous envisagez d'utiliser.
+4. Dictionnaires de césure : dictionnaires de césure pour les langues que vous prévoyez d'utiliser.
 5.  Licence Aspose : une licence Aspose valide. Vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) si vous n'en avez pas.
 
 ## Importer des espaces de noms
@@ -50,7 +50,7 @@ catch (Exception e)
 
  Ici, nous créons une instance de notre rappel personnalisé et l'attribuons à`Hyphenation.Callback`.
 
-## Étape 2 : Définir le chemin du document
+## Étape 2 : définir le chemin du document
 
 Ensuite, nous devons définir le répertoire dans lequel nos documents sont stockés. Ceci est crucial car nous allons charger et enregistrer des documents à partir de ce chemin.
 

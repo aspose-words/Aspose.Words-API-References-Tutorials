@@ -71,7 +71,7 @@ Para configurar o ambiente, você precisa garantir que o Aspose.Words for .NET e
 
 #### Quais são os benefícios de definir propriedades de tema em um documento do Word?
 
-Definir propriedades de tema em um documento do Word permite que você personalize a aparência do seu documento para corresponder ao estilo ou marca desejado. Ao alterar as fontes secundárias e as cores do tema, você pode obter consistência visual em vários documentos e criar uma aparência profissional e coesa.
+Definir propriedades de tema em um documento do Word permite que você personalize a aparência do seu documento para corresponder ao estilo ou marca desejada. Ao alterar as fontes secundárias e as cores do tema, você pode obter consistência visual em vários documentos e criar uma aparência profissional e coesa.
 
 #### Posso aplicar temas diferentes a seções diferentes de um documento?
 

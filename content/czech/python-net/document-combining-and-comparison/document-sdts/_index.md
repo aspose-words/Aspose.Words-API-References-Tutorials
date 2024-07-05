@@ -19,7 +19,7 @@ Využití SDT nabízí několik výhod, včetně:
 - Konzistence: SDT zajišťují, že obsah odpovídá standardizovanému formátu, čímž se předchází nekonzistentnosti formátování.
 - Automatizace: Pomocí SDT můžete automatizovat generování dokumentů, což usnadňuje vytváření šablon a sestav.
 - Ověření dat: SDT mohou vynutit pravidla ověřování dat, snížit chyby a zachovat integritu dat.
-- Dynamický obsah: SDT umožňují vkládání dynamického obsahu, který se automaticky aktualizuje, jako je datum a časová razítka.
+- Dynamický obsah: SDT umožňují vkládání dynamického obsahu, který se automaticky aktualizuje, jako je datum a čas.
 - Snadná spolupráce: Spolupracovníci se mohou soustředit na obsah, aniž by měnili strukturu dokumentu.
 
 ## Začínáme s Aspose.Words pro Python
@@ -117,7 +117,7 @@ SDT nabízejí různé možnosti přizpůsobení, jako je změna stylů písma, 
 
 Pokročilé techniky zahrnují vnořené SDT, vlastní vazbu dat XML a zpracování událostí spojených s SDT. Tyto techniky umožňují složité struktury dokumentů a interaktivnější uživatelské zkušenosti.
 
-## Osvědčené postupy pro používání SDT
+## Doporučené postupy pro používání SDT
 
 Při používání SDT dodržujte tyto osvědčené postupy:
 

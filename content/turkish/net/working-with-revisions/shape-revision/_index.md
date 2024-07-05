@@ -39,7 +39,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Adım 3: Şekil koleksiyonunu alın ve düzeltmeleri kontrol edin.
+## 3. Adım: Şekil koleksiyonunu alın ve düzeltmeleri kontrol edin
 
 Belgeden şekil koleksiyonunu alacağız ve her şekille ilişkili düzeltmeleri kontrol edeceğiz.
 
@@ -54,7 +54,7 @@ Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 Assert.True(shapes[1].IsInsertRevision);
 ```
 
-## Adım 4: Şekil Taşıma Revizyonlarını Kontrol Etme
+## 4. Adım: Şekil Taşıma Revizyonlarını Kontrol Etme
 
 Şekil değiştirme revizyonlarını içeren mevcut bir belgeyi yükleyeceğiz ve ilgili revizyonları kontrol edeceğiz.
 

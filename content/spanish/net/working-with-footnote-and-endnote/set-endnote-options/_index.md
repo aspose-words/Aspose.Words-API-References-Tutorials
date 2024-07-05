@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Paso 4: configurar las opciones de las notas finales
 
- Acceder al`EndnoteOptions` Propiedad del documento para modificar las opciones de las notas finales. En este ejemplo, configuramos la regla de reinicio para reiniciar en cada página y la posición al final de la sección:
+ Acceder al`EndnoteOptions`Propiedad del documento para modificar las opciones de las notas finales. En este ejemplo, configuramos la regla de reinicio para reiniciar en cada página y la posición al final de la sección:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -81,7 +81,7 @@ No dude en utilizar este código en sus propios proyectos y modificarlo según s
 
 #### P: ¿Cómo puedo aplicar estilo a las notas finales en Aspose.Words?
 
-R: Para aplicar estilo a las notas finales en Aspose.Words, puede utilizar el`EndnoteOptions` clase y el`SeparatorNoteTextStyle` propiedad. Puede especificar el estilo, tamaño, color, etc. de fuente para las notas finales utilizando esta propiedad.
+ R: Para aplicar estilo a las notas finales en Aspose.Words, puede utilizar el`EndnoteOptions` clase y el`SeparatorNoteTextStyle` propiedad. Puede especificar el estilo, tamaño, color, etc. de fuente para las notas finales utilizando esta propiedad.
 
 #### P: ¿Es posible personalizar la numeración de las notas finales en un documento?
 
@@ -89,7 +89,7 @@ R: Para aplicar estilo a las notas finales en Aspose.Words, puede utilizar el`En
 
 #### P: ¿Cómo puedo colocar notas al final en un documento?
 
- R: Para colocar notas finales en un documento, puede utilizar el`Position` propiedad de la`EndnoteOptions` clase. Puede especificar si las notas finales deben colocarse al final de cada página, al final de cada sección o al final del documento.
+R: Para colocar notas finales en un documento, puede utilizar el`Position` propiedad de la`EndnoteOptions` clase. Puede especificar si las notas finales deben colocarse al final de cada página, al final de cada sección o al final del documento.
 
 #### P: ¿Puedo personalizar el formato de numeración de las notas al final?
 
@@ -97,4 +97,4 @@ R: Para aplicar estilo a las notas finales en Aspose.Words, puede utilizar el`En
 
 #### P: ¿Es posible continuar con la numeración de notas al final entre secciones de un documento?
 
-R: Sí, es posible continuar con la numeración de notas al final entre secciones de un documento. Utilizar el`RestartRule` propiedad de la`EndnoteOptions` clase y configúrelo en`RestartContinuous` para permitir que la numeración continúe entre secciones.
+ R: Sí, es posible continuar con la numeración de notas al final entre secciones de un documento. Utilizar el`RestartRule` propiedad de la`EndnoteOptions` clase y configúrelo en`RestartContinuous` para permitir que la numeración continúe entre secciones.

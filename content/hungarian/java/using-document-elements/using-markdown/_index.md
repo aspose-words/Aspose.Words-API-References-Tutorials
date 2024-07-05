@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // Adja meg a rendezett listát.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Adja meg a szöveg olasz nyelvű hangsúlyát.
+// Adja meg a szöveg dőlt betűs hangsúlyát.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);
@@ -178,7 +178,7 @@ Ebben az oktatóanyagban a Markdown használatának alapjait ismertetjük az Asp
    Igen, az Aspose.Words for Java segítségével konvertálhatja a Markdown dokumentumokat Word dokumentumokká és fordítva.
 
 ### Ingyenesen használható az Aspose.Words for Java? 
-    Az Aspose.Words for Java kereskedelmi termék, használatához licenc szükséges. Engedélyt szerezhetsz innen[itt](https://purchase.aspose.com/buy).
+    Az Aspose.Words for Java kereskedelmi termék, használatához licenc szükséges. Engedélyt szerezhet be[itt](https://purchase.aspose.com/buy).
 
 ### Vannak oktatóanyagok vagy dokumentációk az Aspose.Words for Java számára? 
     Igen, átfogó oktatóanyagokat és dokumentációt talál a[Aspose.Words for Java API dokumentáció](https://reference.aspose.com/words/java/).

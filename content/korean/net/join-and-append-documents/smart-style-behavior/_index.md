@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## 5단계: 원본 문서를 대상 문서에 추가
 
- 이제 다음을 사용하여 소스 문서를 대상 문서에 추가할 수 있습니다.`InsertDocument` 의 방법`DocumentBuilder` 수업. 사용`ImportFormatMode.UseDestinationStyles` 매개변수를 전달하고`ImportFormatOptions` 스마트 스타일 동작을 유지하는 개체입니다.
+ 이제 다음을 사용하여 소스 문서를 대상 문서에 추가할 수 있습니다.`InsertDocument` 의 방법`DocumentBuilder` 수업. 사용`ImportFormatMode.UseDestinationStyles` 매개 변수를 전달하고`ImportFormatOptions` 스마트 스타일 동작을 유지하는 개체입니다.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 
 #### Q: Aspose.Words에서 각주 열 수를 어떻게 구성합니까?
 
- A: Aspose.Words에서 각주 열 수를 구성하려면 다음을 사용해야 합니다.`FootnoteOptions` 수업과`ColumnsCount` 재산. 이 속성을 원하는 만큼의 열로 설정할 수 있습니다.
+A: Aspose.Words에서 각주 열 수를 구성하려면 다음을 사용해야 합니다.`FootnoteOptions` 수업과`ColumnsCount` 재산. 이 속성을 원하는 만큼의 열로 설정할 수 있습니다.
 
 #### Q: 각주 열을 설정하면 어떤 이점이 있나요?
 

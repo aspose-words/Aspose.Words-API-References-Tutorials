@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /hu/net/programming-with-loadoptions/skip-pdf-images/
 ---
-Ha szövegfeldolgozást végez PDF-dokumentumokkal egy C#-alkalmazásban, előfordulhat, hogy teljesítmény- vagy tárhelykezelési okokból ki kell hagynia a PDF-képek betöltését. A .NET Aspose.Words könyvtárával könnyedén kihagyhatja a PDF-képek betöltését a PdfLoadOptions betöltési beállításaival. Ebben a lépésenkénti útmutatóban végigvezetjük, hogyan használhatja az Aspose.Words for .NET C# forráskódot PDF-dokumentumok betöltésére úgy, hogy kihagyja a PDF-képek betöltését a PdfLoadOptions betöltési beállításaival.
+Ha szövegfeldolgozást végez PDF-dokumentumokkal egy C#-alkalmazásban, előfordulhat, hogy teljesítmény- vagy tárhelykezelési okokból ki kell hagynia a PDF-képek betöltését. A .NET Aspose.Words könyvtárával könnyedén kihagyhatja a PDF-képek betöltését a PdfLoadOptions betöltési beállításaival. Ebben a részletes útmutatóban végigvezetjük, hogyan használhatja az Aspose.Words for .NET C# forráskódot PDF-dokumentumok betöltésére úgy, hogy kihagyja a PDF-képek betöltését a PdfLoadOptions betöltési beállításaival.
 
 ## Az Aspose.Words könyvtár megértése
 
@@ -68,7 +68,7 @@ V: A PDF-képek betöltésének kihagyása több okból is előnyös lehet. Jele
 
 V: A PDF-képek átugrása nem befolyásolja a betöltött dokumentum elrendezését vagy megjelenését. Az átugrott képekkel társított tartalom, például a szöveges fedvények vagy megjegyzések azonban továbbra is megmarad és a szokásos módon betöltődik.
 
-#### K: A PDF képek átugrása minden PDF dokumentumhoz megfelelő?
+#### K: A PDF-képek átugrása minden PDF-dokumentumhoz megfelelő?
 
 V: A PDF-képek átugrása olyan esetekben a legalkalmasabb, amikor a képek nem nélkülözhetetlenek az alkalmazás elsődleges funkcióihoz. Jól működik azoknál az alkalmazásoknál, amelyek elsősorban szöveges tartalommal foglalkoznak, vagy nem igényelnek képkezelést.
 

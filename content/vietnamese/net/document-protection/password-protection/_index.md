@@ -75,7 +75,7 @@ Trả lời: Để áp dụng bảo vệ bằng mật khẩu cho tài liệu Wor
 
 #### Câu hỏi: Mục đích của tham số ProtectionType trong phương thức Protect là gì?
 
- Đáp: Cái`ProtectionType` các thông số trong`Protect` phương thức Aspose.Words for .NET cho phép bạn chỉ định loại bảo vệ sẽ được áp dụng cho tài liệu. Trong trường hợp bảo vệ bằng mật khẩu, bạn sẽ đặt`ProtectionType` ĐẾN`NoProtection` để chỉ ra rằng tài liệu được bảo vệ bằng mật khẩu.
+ Đáp: Cái`ProtectionType` tham số trong`Protect` phương thức Aspose.Words for .NET cho phép bạn chỉ định loại bảo vệ sẽ được áp dụng cho tài liệu. Trong trường hợp bảo vệ bằng mật khẩu, bạn sẽ đặt`ProtectionType` ĐẾN`NoProtection` để chỉ ra rằng tài liệu được bảo vệ bằng mật khẩu.
 
 #### Câu hỏi: Tôi có thể xóa bảo vệ bằng mật khẩu khỏi tài liệu Word bằng Aspose.Words cho .NET không?
 

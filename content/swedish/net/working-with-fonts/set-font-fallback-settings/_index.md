@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-fonts/set-font-fallback-settings/
 ---
 
-När du arbetar med dokument som innehåller olika textelement, såsom olika språk eller specialtecken, är det avgörande att se till att dessa element visas korrekt. Aspose.Words för .NET erbjuder en kraftfull funktion som kallas Font Fallback Settings, som hjälper till att definiera regler för att ersätta teckensnitt när det ursprungliga teckensnittet inte stöder vissa tecken. I den här guiden kommer vi att undersöka hur du ställer in Font Fallback Settings med Aspose.Words för .NET i en steg-för-steg handledning.
+När du arbetar med dokument som innehåller olika textelement, till exempel olika språk eller specialtecken, är det avgörande att se till att dessa element visas korrekt. Aspose.Words för .NET erbjuder en kraftfull funktion som kallas Font Fallback Settings, som hjälper till att definiera regler för att ersätta teckensnitt när det ursprungliga teckensnittet inte stöder vissa tecken. I den här guiden kommer vi att undersöka hur du ställer in Font Fallback Settings med Aspose.Words för .NET i en steg-för-steg handledning.
 
 ## Förutsättningar
 
@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Steg 4: Tillämpa teckensnittsinställningar på dokumentet
 
- Tilldela den konfigurerade`FontSettings`till dokumentet. Detta säkerställer att reservreglerna för teckensnitt tillämpas när dokumentet renderas.
+ Tilldela den konfigurerade`FontSettings` till dokumentet. Detta säkerställer att reservreglerna för teckensnitt tillämpas när dokumentet renderas.
 
 ```csharp
 doc.FontSettings = fontSettings;

@@ -2,97 +2,121 @@
 title: Mục tiêu so sánh trong tài liệu Word
 linktitle: Mục tiêu so sánh trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu tính năng so sánh mục tiêu trong tài liệu word của Aspose.Words cho .NET cho phép bạn so sánh các tài liệu và tạo một tài liệu mới chứa các thay đổi đã thực hiện.
+description: Dễ dàng so sánh các tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Tiết kiệm thời gian và nâng cao độ chính xác trong việc so sánh tài liệu.
 type: docs
 weight: 10
 url: /vi/net/compare-documents/comparison-target/
 ---
-Dưới đây là hướng dẫn từng bước để giải thích mã nguồn C# bên dưới, mã này sử dụng mục tiêu so sánh trong chức năng tài liệu word của Aspose.Words cho .NET.
+## Giới thiệu
 
-## Bước 1: Giới thiệu
+Này! Bạn đã bao giờ thấy mình so sánh hai phiên bản của tài liệu Word và theo dõi thủ công từng thay đổi nhỏ chưa? Giống như mò kim đáy bể phải không? Chà, điều gì sẽ xảy ra nếu tôi nói với bạn rằng có một cách cực kỳ dễ dàng để thực hiện việc đó bằng Aspose.Words cho .NET? Đúng rồi! Thư viện mạnh mẽ này cho phép bạn so sánh các tài liệu Word trong tích tắc. Hôm nay, tôi sẽ hướng dẫn bạn từng bước thực hiện quy trình. Sẵn sàng để trở thành một thuật sĩ so sánh tài liệu? Hãy đi sâu vào!
 
-Tính năng so sánh mục tiêu của Aspose.Words cho .NET cho phép bạn so sánh hai tài liệu và tạo một tài liệu mới chứa các thay đổi được thực hiện đối với tài liệu đích. Điều này có thể hữu ích để theo dõi những thay đổi được thực hiện giữa các phiên bản khác nhau của tài liệu.
+## Điều kiện tiên quyết
 
-## Bước 2: Thiết lập môi trường
+Trước khi chúng ta đi sâu vào vấn đề chi tiết, hãy đảm bảo bạn có mọi thứ bạn cần để bắt đầu:
 
-Trước khi bắt đầu, bạn cần thiết lập môi trường phát triển của mình để hoạt động với Aspose.Words cho .NET. Đảm bảo bạn đã cài đặt thư viện Aspose.Words và có dự án C# phù hợp để nhúng mã vào.
+1.  Aspose.Words for .NET: Bạn cần thư viện này. Nếu bạn chưa có nó, hãy lấy nó từ[đây](https://releases.aspose.com/words/net/).
+2.  Giấy phép: Bạn sẽ cần giấy phép hợp lệ để phát huy toàn bộ tiềm năng của Aspose.Words. Bạn có thể mua một cái[đây](https://purchase.aspose.com/buy) hoặc lấy giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
+3. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
+4. Kiến thức cơ bản về C#: Đừng lo lắng, bạn không cần phải là dân chuyên nghiệp, chỉ cần hiểu biết cơ bản là đủ.
 
-## Bước 3: Thêm các cụm lắp ráp cần thiết
+## Nhập không gian tên
 
-Để sử dụng tính năng mục tiêu so sánh của Aspose.Words cho .NET, bạn phải thêm các tập hợp cần thiết vào dự án của mình. Đảm bảo bạn có tài liệu tham khảo thích hợp về Aspose.Words trong dự án của mình.
+Trước tiên, bạn cần nhập các không gian tên cần thiết. Họ giống như đội ngũ hậu trường giúp mọi việc diễn ra suôn sẻ.
 
 ```csharp
+using System;
 using Aspose.Words;
+using Aspose.Words.Compare;
 ```
 
-## Bước 4: Khởi tạo tài liệu
+Được rồi, bây giờ chúng ta hãy đi vào phần thú vị – hướng dẫn từng bước!
 
-Ở bước này, chúng ta sẽ khởi tạo hai tài liệu để so sánh. Bạn phải chỉ định đường dẫn thư mục nơi chứa tài liệu của bạn cũng như tên của tài liệu nguồn.
+## Bước 1: Thiết lập dự án của bạn
+
+Hãy chuẩn bị sẵn sàng dự án của chúng ta. Hãy khởi động môi trường phát triển của bạn và tạo một dự án C# mới. Đặt tên nó là gì bạn thích – "DocumentComparison" nghe hay phải không?
+
+```csharp
+// Tạo dự án C# mới trong Visual Studio
+```
+
+## Bước 2: Cài đặt Aspose.Words cho .NET
+
+Tiếp theo, bạn cần thêm Aspose.Words vào dự án của mình. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet. Chỉ cần tìm kiếm Aspose.Words và cài đặt nó. Dễ như ăn bánh!
+
+```bash
+Install-Package Aspose.Words
+```
+
+## Bước 3: Tải tài liệu của bạn
+
+Được rồi, đã đến lúc tải tài liệu bạn muốn so sánh. Bạn sẽ cần đường dẫn đến những tài liệu này. Giả sử bạn có hai tài liệu:`DocumentA.docx` Và`DocumentB.docx`.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// Khởi tạo tài liệu A để so sánh.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document docA = new Document(dataDir + "DocumentA.docx");
+Document docB = new Document(dataDir + "DocumentB.docx");
+```
 
-// Sao chép tài liệu A để tạo một bản sao giống hệt tài liệu B.
+## Bước 4: Sao chép tài liệu
+
+Nhân bản giống như tạo một bản sao giống hệt tài liệu của bạn. Bước này đảm bảo bạn có bản sao lưu để so sánh với bản gốc.
+
+```csharp
 Document docB = docA.Clone();
 ```
 
-## Bước 5: Cấu hình các tùy chọn so sánh
+## Bước 5: Đặt tùy chọn so sánh
 
-Trong bước này, chúng tôi sẽ định cấu hình các tùy chọn so sánh để chỉ định hành vi so sánh. Các tùy chọn bao gồm khả năng bỏ qua định dạng, cũng như mục tiêu so sánh, đó là tùy chọn "Hiển thị các thay đổi trong" trong hộp thoại "So sánh Tài liệu" của Microsoft Word.
+Bây giờ, hãy cấu hình các tùy chọn so sánh. Bạn có muốn bỏ qua định dạng? Có thể bạn chỉ quan tâm đến những thay đổi về nội dung. Đây là cách bạn có thể thiết lập nó:
 
 ```csharp
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
+CompareOptions options = new CompareOptions
+{
+    IgnoreFormatting = true,
+    Target = ComparisonTargetType.New
+};
 ```
 
-## Bước 6: So sánh tài liệu
+## Bước 6: So sánh các tài liệu
 
-Bây giờ chúng ta sẽ so sánh các tài liệu và tạo ra kết quả trong một tài liệu mới.
+Và bây giờ, khoảnh khắc mà tất cả chúng ta đang chờ đợi – so sánh các tài liệu! Đây là nơi phép thuật xảy ra. Aspose.Words sẽ so sánh các tài liệu và nêu bật những điểm khác biệt.
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
- Các`Compare`phương pháp so sánh tài liệu A với tài liệu B và lưu các thay đổi vào tài liệu A. Bạn có thể chỉ định tên người dùng và ngày so sánh để tham khảo.
+## Bước 7: Lưu tài liệu so sánh
 
-### Mã nguồn mẫu cho So sánh mục tiêu bằng Aspose.Words cho .NET
-
+Cuối cùng, lưu tài liệu so sánh để xem những thay đổi được đánh dấu. Bước này giống như gói công việc của bạn trong một gói gọn gàng.
 
 ```csharp
-            
-Document docA = new Document(MyDir + "Document.docx");
-Document docB = docA.Clone();
-
-// Liên quan đến tùy chọn "Hiển thị các thay đổi trong" của Microsoft Word trong hộp thoại "So sánh Tài liệu".
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
-
-docA.Compare(docB, "user", DateTime.Now, options);
-            
-        
+docA.Save(dataDir + "ComparedDocument.docx");
 ```
 
 ## Phần kết luận
 
-Trong bài viết này, chúng tôi đã khám phá tính năng mục tiêu khác của Aspose.Words cho .NET. Tính năng này cho phép bạn so sánh hai tài liệu và tạo một tài liệu mới chứa những thay đổi đã thực hiện. Bạn có thể sử dụng kiến thức này để theo dõi những thay đổi giữa các phiên bản khác nhau của tài liệu.
+Vậy là bạn đã có nó - một cách đơn giản và hiệu quả để so sánh các tài liệu Word bằng Aspose.Words cho .NET! Không còn so sánh thủ công, không còn đau đầu nữa. Chỉ với một vài dòng mã, bạn có thể làm nổi bật sự khác biệt và tập trung vào những gì thực sự quan trọng. Vì vậy, hãy tiếp tục, thử và xem bạn tiết kiệm được bao nhiêu thời gian.
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Mục đích của việc sử dụng Mục tiêu so sánh trong Aspose.Words cho .NET là gì?
+### Tôi có thể so sánh các tài liệu có định dạng khác nhau bằng Aspose.Words không?
 
-Đáp: Mục tiêu so sánh trong Aspose.Words dành cho .NET cho phép bạn so sánh hai tài liệu và tạo một tài liệu mới chứa những thay đổi được thực hiện đối với tài liệu đích. Tính năng này hữu ích để theo dõi các thay đổi được thực hiện giữa các phiên bản khác nhau của tài liệu và trực quan hóa sự khác biệt trong một tài liệu riêng biệt.
+Có, Aspose.Words có thể xử lý liền mạch các tài liệu có định dạng khác nhau.
 
-#### Câu hỏi: Làm cách nào để sử dụng Mục tiêu so sánh trong Aspose.Words cho .NET?
+### Tôi có cần giấy phép để sử dụng Aspose.Words không?
 
-Trả lời: Để sử dụng Mục tiêu so sánh trong Aspose.Words cho .NET, hãy làm theo các bước sau:
-1. Thiết lập môi trường phát triển của bạn với thư viện Aspose.Words.
-2. Thêm các tập hợp cần thiết vào dự án của bạn bằng cách tham khảo Aspose.Words.
-3.  Khởi tạo các tài liệu mà bạn muốn so sánh bằng cách sử dụng`Document` lớp học hoặc`DocumentBuilder` lớp học.
-4.  Định cấu hình các tùy chọn so sánh bằng cách tạo một`CompareOptions` đối tượng và các thuộc tính cài đặt như`IgnoreFormatting` Và`Target` (ví dụ.,`ComparisonTargetType.New` cho mục tiêu so sánh).
-5.  Sử dụng`Compare` phương pháp trên một tài liệu, chuyển tài liệu khác và`CompareOptions` đối tượng làm tham số. Phương pháp này sẽ so sánh các tài liệu và lưu các thay đổi trong tài liệu đầu tiên.
+Có, để mở khóa tất cả các tính năng, bạn cần có giấy phép hợp lệ. Bạn có thể mua một cái hoặc nhận được giấy phép tạm thời.
 
-####  Hỏi: Mục đích của việc này là gì?`Target` property in the `CompareOptions` class?
+### Điều gì xảy ra nếu tôi bỏ qua định dạng trong các tùy chọn so sánh?
 
- Đáp: Cái`Target` tài sản ở`CompareOptions` lớp cho phép bạn chỉ định mục tiêu so sánh, tương tự như tùy chọn "Hiển thị các thay đổi trong" trong hộp thoại "So sánh Tài liệu" của Microsoft Word. Mục tiêu có thể được đặt thành`ComparisonTargetType.New` để hiển thị những thay đổi trong một tài liệu mới,`ComparisonTargetType.Current` để hiển thị những thay đổi trong tài liệu hiện tại, hoặc`ComparisonTargetType.Formatting` để chỉ hiển thị các thay đổi định dạng.
+Nếu bạn bỏ qua định dạng, việc so sánh sẽ chỉ tập trung vào những thay đổi về nội dung, bỏ qua mọi khác biệt về định dạng.
+
+### Tôi có thể tùy chỉnh thêm các tùy chọn so sánh không?
+
+Tuyệt đối! Aspose.Words cung cấp nhiều tùy chọn khác nhau để điều chỉnh so sánh theo nhu cầu của bạn.
+
+### Tôi có thể tìm tài liệu chi tiết hơn ở đâu?
+
+ Bạn có thể kiểm tra tài liệu toàn diện[đây](https://reference.aspose.com/words/net/).

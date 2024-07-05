@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## Steg 2: Lägg till anpassade egenskaper
- Lägg sedan till önskade anpassade egenskaper. Till exempel, för att lägga till en "Company"-egenskap med värdet "Apose", använd`Add` metod för CustomDocumentProperties-samlingen:
+ Lägg sedan till önskade anpassade egenskaper. Till exempel, för att lägga till en "Company"-egenskap med värdet "Aspose", använd`Add` metod för CustomDocumentProperties-samlingen:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ S: För att exportera ett dokuments anpassade egenskaper till ett PDF-dokument m
 
  Skapa en instans av`Document` klass.
 
- Lägg till önskade anpassade egenskaper med hjälp av`CustomDocumentProperties` samling. Använd till exempel`Add` metod för att lägga till en "Company"-egenskap med värdet "Apose".
+ Lägg till önskade anpassade egenskaper med hjälp av`CustomDocumentProperties` samling. Använd till exempel`Add` metod för att lägga till en "Company"-egenskap med värdet "Aspose".
 
  Skapa en instans av`PdfSaveOptions` klass och ange hur man exporterar anpassade egenskaper med hjälp av`CustomPropertiesExport` fast egendom. De`PdfCustomPropertiesExport.Standard` värde exporterar anpassade egenskaper enligt standardinställningar.
 

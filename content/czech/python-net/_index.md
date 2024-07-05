@@ -11,7 +11,7 @@ Aspose.Words pro Python nabízí řadu výukových programů, které umožňují
 
 ## Python Document API pro bezproblémovou správu dokumentů
 
-Prozkoumejte sílu Python Document API pomocí výukových programů Aspose.Words. Vývojáři se naučí vytvářet, upravovat a spravovat dokumenty Wordu programově. API umožňuje přizpůsobení formátování, vkládání obsahu a slučování dokumentů, streamování úloh správy dokumentů.
+Prozkoumejte sílu Python Document API pomocí výukových programů Aspose.Words. Vývojáři se naučí vytvářet, upravovat a spravovat dokumenty Wordu programově. Rozhraní API umožňuje přizpůsobení formátování, vkládání obsahu a slučování dokumentů, což zjednodušuje úlohy správy dokumentů.
 
 ## Automatizujte zpracování dokumentů pomocí Pythonu
 

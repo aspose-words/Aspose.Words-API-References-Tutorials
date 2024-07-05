@@ -10,7 +10,7 @@ url: /zh-hant/java/document-manipulation/joining-and-appending-documents/
 
 ## Aspose.Words for Java 中連接和附加文件簡介
 
-在本教學中，我們將探索如何使用 Aspose.Words for Java 函式庫加入和追加文件。您將學習如何無縫合併多個文檔，同時保留格式和結構。
+在本教學中，我們將探索如何使用 Aspose.Words for Java 函式庫加入和附加文件。您將學習如何無縫合併多個文檔，同時保留格式和結構。
 
 ## 先決條件
 

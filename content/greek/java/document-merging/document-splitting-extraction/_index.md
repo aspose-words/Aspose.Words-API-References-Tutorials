@@ -110,4 +110,4 @@ String extractedText = doc.getText();
 
 ### Πού μπορώ να έχω πρόσβαση στην τεκμηρίωση για το Aspose.Words για Java;
 
- Μπορείτε να βρείτε την τεκμηρίωση για το Aspose.Words για Java.[εδώ](https://reference.aspose.com/words/java/).
+ Μπορείτε να βρείτε την τεκμηρίωση για το Aspose.Words για Java[εδώ](https://reference.aspose.com/words/java/).

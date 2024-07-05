@@ -101,7 +101,7 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ### Valores padrão e formatação
 
-Você pode preencher previamente os campos do formulário com valores padrão e formatá-los de acordo:
+Você pode preencher previamente os campos do formulário com valores padrão e formatá-los adequadamente:
 
 ```python
 text_input_field.text = "John Doe"

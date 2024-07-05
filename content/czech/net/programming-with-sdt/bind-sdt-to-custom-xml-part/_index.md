@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Krok 3: Přidejte do dokumentu StructuredDocumentTag (SDT).
- Přidat`StructuredDocumentTag` do dokumentu, aby sloužil jako kontrola obsahu. Zadejte`SdtType` tak jako`PlainText` a`MarkupLevel` tak jako`Block` vytvořit SDT na úrovni bloku.
+ Přidat`StructuredDocumentTag` do dokumentu, aby sloužil jako kontrola obsahu. Určete`SdtType` tak jako`PlainText` a`MarkupLevel` tak jako`Block` vytvořit SDT na úrovni bloku.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
@@ -40,7 +40,7 @@ doc.FirstSection.Body.AppendChild(sdt);
 ```
 
 ## Krok 4: Nastavte mapování XML pro SDT
- Mapujte SDT na`CustomXmlPart` pomocí`SetMapping` metoda`XmlMapping` vlastnictví. Určete`CustomXmlPart` , výraz XPath k nalezení požadovaného uzlu XML a v případě potřeby předponu jmenného prostoru. V tomto příkladu mapujeme SDT na`/root[1]/text[1]`.
+ Mapujte SDT na`CustomXmlPart` pomocí`SetMapping` metoda`XmlMapping` vlastnictví. Určete`CustomXmlPart` , výraz XPath k nalezení požadovaného uzlu XML a v případě potřeby předponu oboru názvů. V tomto příkladu mapujeme SDT na`/root[1]/text[1]`.
 
 ```csharp
 sdt.XmlMapping.SetMapping(xmlPart, "/root[1]/text[1]", "");
@@ -53,7 +53,7 @@ sdt.XmlMapping.SetMapping(xmlPart, "/root[1]/text[1]", "");
 doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 ```
 
-### Příklad zdrojového kódu pro Bind Sd Tto Custom Xml Part pomocí Aspose.Words for .NET 
+### Příklad zdrojového kódu pro Bind Sd Tto Custom Xml Part pomocí Aspose.Words pro .NET 
 
 ```csharp
 	// Cesta k vašemu adresáři dokumentů

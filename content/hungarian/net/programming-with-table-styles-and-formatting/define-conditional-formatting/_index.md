@@ -59,7 +59,7 @@ table.Style = tableStyle;
 ## 6. lépés: Mentse el a módosított dokumentumot
 Végül mentse a módosított dokumentumot fájlba. Kiválaszthat egy nevet és
 
-  megfelelő hely a kimeneti dokumentum számára.
+  megfelelő helyet a kimeneti dokumentum számára.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");

@@ -2,7 +2,7 @@
 title: Получить стили документа в Word
 linktitle: Получить стили документа в Word
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как получить стили документов в Word с помощью Aspose.Words для .NET. Полное руководство по изменению стилей ваших документов.
+description: Узнайте, как получить стили документов в Word с помощью Aspose.Words для .NET. Полное руководство по управлению стилями ваших документов.
 type: docs
 weight: 10
 url: /ru/net/programming-with-styles-and-themes/access-styles/
@@ -20,7 +20,7 @@ url: /ru/net/programming-with-styles-and-themes/access-styles/
 Document doc = new Document();
 ```
 
- На этом этапе мы создаем новый пустой`Document` Объект Object.
+ На этом этапе мы создаем новый пустой`Document` объект.
 
 ## Шаг 3. Доступ к коллекции стилей.
 
@@ -91,7 +91,7 @@ foreach (Style style in styles)
 #### Как я могу получить доступ к стилям в документе Word с помощью Aspose.Words для .NET?
 
 Чтобы получить доступ к стилям в документе Word, выполните следующие действия:
-1.  Создать новый`Document` Объект Object.
+1.  Создать новый`Document` объект.
 2.  Получить`StyleCollection` путем доступа к`Styles` свойство документа.
 3. Перебирайте стили, используя цикл для доступа и обработки каждого стиля по отдельности.
 

@@ -12,7 +12,7 @@ Neste guia passo a passo, mostraremos como obter os grupos de revisão em um doc
 
 ## Passo 1: Carregando o documento
 
-O primeiro passo é fazer o upload do documento contendo as revisões.
+primeiro passo é fazer o upload do documento contendo as revisões.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
@@ -20,7 +20,7 @@ Document doc = new Document(MyDir + "Revisions.docx");
 
 ## Etapa 2: navegar pelos grupos de revisão
 
-A seguir, percorreremos os grupos de revisão presentes no documento e exibiremos seus detalhes, como autor, tipo de revisão e texto revisado.
+seguir, percorreremos os grupos de revisão presentes no documento e exibiremos seus detalhes, como autor, tipo de revisão e texto revisado.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### P: Como navegar por grupos de revisão em um documento no Aspose.Words for .NET?
 
- R: Use o`Groups` propriedade do documento`Revisions` objeto para obter a coleção de grupos de revisão. Você pode então usar um loop para percorrer cada grupo de revisão.
+ R: Use o`Groups` propriedade do documento`Revisions`objeto para obter a coleção de grupos de revisão. Você pode então usar um loop para percorrer cada grupo de revisão.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### P: Como obter o tipo de revisão de um grupo de revisão no Aspose.Words for .NET?
 
- R: Use o`RevisionType` propriedade do`RevisionGroup`object para obter o tipo de revisão do grupo.
+ R: Use o`RevisionType` propriedade do`RevisionGroup` object para obter o tipo de revisão do grupo.
 
 ```csharp
 string revisionType = group.RevisionType;

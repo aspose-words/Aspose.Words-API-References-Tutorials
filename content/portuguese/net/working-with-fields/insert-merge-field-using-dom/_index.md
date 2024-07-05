@@ -32,7 +32,7 @@ Primeiramente, vamos configurar um novo projeto no Visual Studio.
 Para usar o Aspose.Words, você precisa adicioná-lo ao seu projeto. Isso pode ser feito por meio do Gerenciador de pacotes NuGet.
 
 1. **Open NuGet Package Manager:** Clique com o botão direito do mouse em seu projeto no Solution Explorer e selecione Gerenciar pacotes NuGet.
-2. **Search for Aspose.Words:** No Gerenciador de Pacotes NuGet, pesquise "Apose.Words".
+2. **Search for Aspose.Words:** No Gerenciador de Pacotes NuGet, pesquise "Aspose.Words".
 3. **Install the Package:** Clique em Instalar para adicionar Aspose.Words ao seu projeto.
 
 ## Etapa 3: importar namespaces
@@ -119,4 +119,4 @@ Um campo de mesclagem é um espaço reservado em um documento que pode ser subst
 Aspose.Words oferece suporte a várias versões do .NET, incluindo .NET Framework, .NET Core e .NET Standard.
 
 ### 5. Onde posso encontrar a documentação da API do Aspose.Words?
- A documentação da API está disponível.[aqui](https://reference.aspose.com/words/net/).
+ A documentação da API está disponível[aqui](https://reference.aspose.com/words/net/).

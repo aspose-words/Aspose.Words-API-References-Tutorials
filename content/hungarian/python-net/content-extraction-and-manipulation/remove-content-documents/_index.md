@@ -2,7 +2,7 @@
 title: Tartalmak eltávolítása és finomítása a Word dokumentumokban
 linktitle: Tartalmak eltávolítása és finomítása a Word dokumentumokban
 second_title: Aspose.Words Python Document Management API
-description: Tanulja meg, hogyan távolíthat el és finomíthat hatékonyan tartalmat Word-dokumentumokból az Aspose.Words for Python segítségével. Lépésről lépésre, forráskód-példákkal.
+description: Tanulja meg, hogyan távolíthat el és finomíthat hatékonyan tartalmat Word-dokumentumokból az Aspose.Words for Python segítségével. Lépésről lépésre útmutató forráskód-példákkal.
 type: docs
 weight: 13
 url: /hu/python-net/content-extraction-and-manipulation/remove-content-documents/
@@ -162,7 +162,7 @@ Igen, használhat reguláris kifejezéseket a keresési és csereműveletekhez. 
 
 ### Lehetséges nyomon követett változtatásokkal dolgozni?
 
-Teljesen! Az Aspose.Words lehetővé teszi a nyomon követett változtatások engedélyezését és kezelését a Word-dokumentumokban, megkönnyítve az együttműködést és a szerkesztést.
+Teljesen! Az Aspose.Words lehetővé teszi a nyomon követett módosítások engedélyezését és kezelését a Word-dokumentumokban, megkönnyítve az együttműködést és a szerkesztést.
 
 ### Hogyan tudom elmenteni a módosított dokumentumot?
 

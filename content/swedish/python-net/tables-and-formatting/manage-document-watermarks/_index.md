@@ -121,7 +121,7 @@ doc.save(output_path)
 
 ## Slutsats
 
-Att lägga till vattenstämplar i dina dokument med Aspose.Words för Python är en enkel process som förbättrar ditt innehålls visuella tilltalande och varumärke. Oavsett om det är text- eller bildvattenstämplar har du flexibiliteten att anpassa deras utseende och placering efter dina önskemål.
+Att lägga till vattenstämplar i dina dokument med Aspose.Words för Python är en enkel process som förbättrar ditt innehålls visuella dragningskraft och varumärke. Oavsett om det är text- eller bildvattenstämplar har du flexibiliteten att anpassa deras utseende och placering efter dina önskemål.
 
 ## Vanliga frågor
 
@@ -143,6 +143,6 @@ Absolut! Du kan rotera textens vattenstämpel genom att ställa in egenskapen ro
 
 ### Är Aspose.Words för Python lämplig för både Windows och Linux?
 
-Ja, Aspose.Words för Python är kompatibel med både Windows- och Linux-miljöer.
+Ja, Aspose.Words för Python är kompatibelt med både Windows- och Linux-miljöer.
 
  För mer information och omfattande API-referenser, besök Aspose.Words-dokumentationen:[Aspose.Words för Python API-referenser](https://reference.aspose.com/words/python-net/)

@@ -57,7 +57,7 @@ Parabéns! Agora você aprendeu como aplicar o estilo de texto tachado com Aspos
 
 #### P: É possível adicionar texto tachado a vários trechos de texto no mesmo parágrafo?
 
- R: Sim, você pode adicionar texto tachado a várias partes do texto em um único parágrafo usando vários.`Run` objetos. Você pode criar vários`Run` objetos e definir o`Font.StrikeThrough`propriedade para`true` para cada objeto para adicionar o texto tachado às partes de texto desejadas. Então você pode adicioná-los ao parágrafo usando o`Paragraph.AppendChild(run)` método.
+ R: Sim, você pode adicionar texto tachado a várias partes do texto em um único parágrafo usando vários`Run` objetos. Você pode criar vários`Run` objetos e definir o`Font.StrikeThrough`propriedade para`true` para cada objeto para adicionar o texto tachado às partes de texto desejadas. Então você pode adicioná-los ao parágrafo usando o`Paragraph.AppendChild(run)` método.
 
 #### P: Posso adicionar texto tachado ao texto que está em uma tabela ou célula no Aspose.Words?
 

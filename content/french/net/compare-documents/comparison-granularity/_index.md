@@ -9,7 +9,7 @@ url: /fr/net/compare-documents/comparison-granularity/
 ---
 Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité Comparer la granularité dans un document Word d'Aspose.Words pour .NET.
 
-## Étape 1 : Présentation
+## Étape 1 : Introduction
 
 La fonctionnalité Compare Granularity d'Aspose.Words for .NET vous permet de comparer des documents au niveau des caractères. Cela signifie que chaque personnage sera comparé et que les modifications seront signalées en conséquence.
 
@@ -56,7 +56,7 @@ Comparons maintenant les documents à l'aide de la méthode Compare de la classe
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- Le`Compare` La méthode compare le document A avec le document B et enregistre les modifications apportées au document A. Vous pouvez spécifier le nom de l'auteur et la date de comparaison pour référence.
+ Le`Compare`La méthode compare le document A avec le document B et enregistre les modifications apportées au document A. Vous pouvez spécifier le nom de l'auteur et la date de comparaison pour référence.
 
 ## Conclusion
 
@@ -95,7 +95,7 @@ R : Pour utiliser la granularité de comparaison dans Aspose.Words for .NET, pr
 2. Ajoutez les assemblys nécessaires à votre projet en faisant référence à Aspose.Words.
 3.  Créez les documents que vous souhaitez comparer à l'aide de l'outil`DocumentBuilder` classe.
 4.  Configurez les options de comparaison en créant un`CompareOptions` objet et en définissant le`Granularity` propriété au niveau souhaité (par exemple,`Granularity.CharLevel` pour une comparaison au niveau des personnages).
-5.  Utilisez le`Compare` méthode sur un document, en passant l'autre document et le`CompareOptions` objet comme paramètres. Cette méthode comparera les documents en fonction de la granularité spécifiée et enregistrera les modifications dans le premier document.
+5.  Utilisez le`Compare`méthode sur un document, en passant l'autre document et le`CompareOptions` objet comme paramètres. Cette méthode comparera les documents en fonction de la granularité spécifiée et enregistrera les modifications dans le premier document.
 
 #### Q : Quels sont les niveaux de granularité de comparaison disponibles dans Aspose.Words pour .NET ?
 

@@ -2,7 +2,7 @@
 title: Použití uzlů v Aspose.Words pro Javu
 linktitle: Pomocí uzlů
 second_title: Aspose.Words Java Document Processing API
-description: Naučte se manipulovat s uzly v Aspose.Words pro Java pomocí tohoto podrobného návodu. Odemkněte výkon zpracování dokumentů.
+description: Naučte se manipulovat s uzly v Aspose.Words pro Java pomocí tohoto podrobného tutoriálu. Odemkněte výkon zpracování dokumentů.
 type: docs
 weight: 20
 url: /cs/java/using-document-elements/using-nodes/
@@ -112,10 +112,10 @@ Aspose.Words for Java je knihovna Java, která umožňuje vývojářům vytvář
 Aspose.Words for Java si můžete stáhnout a nainstalovat z[tady](https://releases.aspose.com/words/java/).
 
 ### Q3. Je k dispozici bezplatná zkušební verze?
- Ano, můžete získat bezplatnou zkušební verzi Aspose.Words for Java.[tady](https://releases.aspose.com/).
+ Ano, můžete získat bezplatnou zkušební verzi Aspose.Words for Java[tady](https://releases.aspose.com/).
 
 ### Q4. Kde mohu získat dočasnou licenci?
- Můžete získat dočasnou licenci pro Aspose.Words for Java.[tady](https://purchase.aspose.com/temporary-license/).
+ Můžete získat dočasnou licenci pro Aspose.Words for Java[tady](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. Kde najdu podporu pro Aspose.Words pro Java?
  Pro podporu a diskuse navštivte[Aspose.Words for Java forum](https://forum.aspose.com/).

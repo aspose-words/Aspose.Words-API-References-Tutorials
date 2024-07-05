@@ -10,18 +10,18 @@ url: /zh/java/document-revision/comparing-document-versions/
 
 ## 介绍
 
-文档比较涉及分析文档的两个或多个版本以识别差异和相似之处。 Aspose.Words for Java 提供了有效执行此任务的工具。在本指南中，我们将引导您完成从设置开发环境到保存比较文档的整个过程。
+文档比较涉及分析文档的两个或多个版本以识别差异和相似之处。Aspose.Words for Java 提供了高效执行此任务的工具。在本指南中，我们将引导您完成整个过程，从设置开发环境到保存比较的文档。
 
-## 设置您的开发环境
+## 设置你的开发环境
 
-在我们深入进行文档比较之前，您需要设置开发环境。确保您已安装 Aspose.Words for Java。您可以从网站下载[这里](https://releases.aspose.com/words/java/).
+在深入研究文档比较之前，您需要设置开发环境。确保已安装 Aspose.Words for Java。您可以从网站下载[这里](https://releases.aspose.com/words/java/).
 
-## 装载文件
+## 加载文档
 
-要比较文档版本，您首先需要加载要分析的文档。 Aspose.Words for Java 凭借其强大的文档加载功能使这一切变得简单。
+要比较文档版本，首先需要加载要分析的文档。Aspose.Words for Java 强大的文档加载功能让这一过程变得简单。
 
 ```java
-//加载原始文档
+//装入原始文档
 Document originalDocument = new Document("original.docx");
 
 //加载修改后的文档
@@ -40,7 +40,7 @@ comparer.compare();
 
 ## 识别变化
 
-比较后，必须确定两个文档之间所做的更改。 Aspose.Words for Java 帮助我们检索此信息。
+比较之后，必须确定两个文档之间所做的更改。Aspose.Words for Java 可帮助我们检索此信息。
 
 ```java
 //获取变更列表
@@ -49,44 +49,44 @@ List<DocumentChange> changes = comparer.getChanges();
 
 ## 应用更改
 
-确定更改后，您可以选择有选择地或一次性将其全部应用到其中一份文档。
+一旦确定了更改，您可以选择有选择地或一次性将它们应用于其中一个文档。
 
 ```java
 //将更改应用于原始文档
 comparer.applyChangesToOriginalDocument();
 ```
 
-## 保存比较文档
+## 保存比较的文档
 
-应用更改后，需要保存比较的文档以供进一步使用。
+应用更改后，就可以保存比较的文档以供进一步使用。
 
 ```java
-//保存比较文档
+//保存比较的文档
 originalDocument.save("compared_document.docx");
 ```
 
 ## 结论
 
-在许多情况下，比较文档版本是一项关键任务，Aspose.Words for Java 简化了这一过程。借助其强大的 API，您可以高效地加载、比较、识别更改、应用它们并保存比较的文档。本指南提供了整个过程的分步演练。
+在许多情况下，比较文档版本是一项关键任务，而 Aspose.Words for Java 简化了此过程。借助其强大的 API，您可以高效地加载、比较、识别更改、应用更改并保存比较的文档。本指南提供了整个过程的分步演练。
 
 ## 常见问题解答
 
-### Aspose.Words for Java 在识别更改方面的准确度如何？
+### Aspose.Words for Java 识别变化的准确度如何？
 
-Aspose.Words for Java 在识别文档版本之间的更改方面非常准确。它使用先进的算法来确保精度。
+Aspose.Words for Java 在识别文档版本之间的变化方面非常准确。它使用先进的算法来确保准确性。
 
-### 我可以自定义将更改应用于文档的方式吗？
+### 我可以自定义对文档应用更改的方式吗？
 
 是的，您可以根据您的具体要求自定义应用更改的方式。
 
-### 使用 Aspose.Words for Java 比较的文档大小是否有限制？
+### 使用 Aspose.Words for Java 进行比较的文档大小是否有限制？
 
-Aspose.Words for Java 可以处理不同大小的文档，使其适合小型和大型比较。
+Aspose.Words for Java 可以处理不同大小的文档，适合小规模和大规模的比较。
 
-### Aspose.Words for Java 是否支持除 DOCX 之外的其他文档格式？
+### Aspose.Words for Java 除了支持 DOCX 之外还支持其他文档格式吗？
 
 是的，Aspose.Words for Java 支持各种文档格式，包括 DOC、RTF、HTML 等。
 
-### 在哪里可以访问 Aspose.Words for Java 文档？
+### 我可以在哪里访问 Aspose.Words for Java 文档？
 
-您可以在以下位置找到 Aspose.Words for Java 的综合文档：[这里](https://reference.aspose.com/words/java/).
+您可以在以下位置找到有关 Aspose.Words for Java 的全面文档[这里](https://reference.aspose.com/words/java/).

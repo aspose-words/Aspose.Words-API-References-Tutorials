@@ -134,15 +134,15 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Conclusione
 
-il gioco è fatto! Hai inserito con successo documenti in campi specifici durante un'operazione di stampa unione utilizzando Aspose.Words per .NET. Questa potente funzionalità può farti risparmiare un sacco di tempo e fatica, soprattutto quando hai a che fare con grandi volumi di documenti. Consideralo come avere un assistente personale che si prende cura di tutto il lavoro pesante per te. Quindi, vai avanti e provalo. Buona programmazione!
+E il gioco è fatto! Hai inserito con successo documenti in campi specifici durante un'operazione di stampa unione utilizzando Aspose.Words per .NET. Questa potente funzionalità può farti risparmiare un sacco di tempo e fatica, soprattutto quando hai a che fare con grandi volumi di documenti. Consideralo come avere un assistente personale che si prende cura di tutto il lavoro pesante per te. Quindi, vai avanti e provalo. Buona programmazione!
 
 ## Domande frequenti
 
 ### Posso inserire più documenti in diversi campi di unione?
- Si, puoi. È sufficiente specificare i campi di unione appropriati e i percorsi dei documenti corrispondenti nel file`MailMerge.Execute` metodo.
+Si, puoi. È sufficiente specificare i campi di unione appropriati e i percorsi dei documenti corrispondenti nel file`MailMerge.Execute` metodo.
 
 ### È possibile formattare il documento inserito diversamente dal documento principale?
- Assolutamente! Puoi usare il`ImportFormatMode` parametri nel`NodeImporter` per controllare la formattazione.
+ Assolutamente! Puoi usare il`ImportFormatMode` parametro nel`NodeImporter` per controllare la formattazione.
 
 ### Cosa succede se il nome del campo di unione è dinamico?
 È possibile gestire i nomi dei campi di unione dinamici passandoli come parametri al gestore di callback.

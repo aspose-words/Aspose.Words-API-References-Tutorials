@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Βήμα 3: Εισαγωγή των σύνθετων πεδίων
+## Βήμα 3: Εισαγωγή του σύνθετου πεδίου
 
  Χρησιμοποιούμε το`AppendField()` μέθοδο για την εισαγωγή ενός προηγμένου πεδίου στην παράγραφο.
 

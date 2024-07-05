@@ -72,7 +72,7 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 
 ### Contoh kode sumber untuk Kolom Tabel Bookmark menggunakan Aspose.Words untuk .NET
 
-Berikut ini contoh kode sumber lengkap untuk mendemonstrasikan pembuatan bookmark pada kolom tabel menggunakan Aspose.Words untuk .NET:
+Berikut adalah contoh lengkap kode sumber untuk mendemonstrasikan pembuatan bookmark pada kolom tabel menggunakan Aspose.Words untuk .NET:
 
 ```csharp
 

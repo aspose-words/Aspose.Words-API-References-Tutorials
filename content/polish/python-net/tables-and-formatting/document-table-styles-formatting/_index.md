@@ -68,7 +68,7 @@ Aby tworzyć i wstawiać tabele do dokumentów za pomocą Aspose.Words dla Pytho
         cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
     ```
 
-2. Dopełnienie komórek: Dodaj dopełnienie do komórek, aby poprawić odstępy.
+2. Dopełnienie komórek: Dodaj dopełnienie komórek, aby poprawić odstępy.
 
     ```python
     for row in table.rows:
@@ -145,7 +145,7 @@ Dostosuj wymiary wierszy i kolumn, aby uzyskać zrównoważony układ tabeli:
 
 Popraw wygląd tabeli, dodając obramowania i cieniowanie:
 
-1. Obramowania: dostosuj obramowania tabel i komórek.
+1. Obramowania: Dostosuj obramowania tabel i komórek.
 
     ```python
     table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
@@ -232,7 +232,7 @@ Gdy tabela będzie już gotowa, możesz ją wyeksportować do różnych formató
 
 ## Wniosek
 
-Aspose.Words dla Pythona oferuje kompleksowy zestaw narzędzi do tworzenia, stylizowania i formatowania tabel dokumentów. Wykonując czynności opisane w tym artykule, możesz skutecznie zarządzać tabelami w swoich dokumentach, dostosowywać ich wygląd i eksportować do różnych formatów. Wykorzystaj moc Aspose.Words, aby ulepszyć prezentacje swoich dokumentów i zapewnić czytelnikom jasne, atrakcyjne wizualnie informacje.
+Aspose.Words dla Pythona oferuje kompleksowy zestaw narzędzi do tworzenia, stylizowania i formatowania tabel dokumentów. Wykonując czynności opisane w tym artykule, możesz efektywnie zarządzać tabelami w dokumentach, dostosowywać ich wygląd i eksportować do różnych formatów. Wykorzystaj moc Aspose.Words, aby ulepszyć prezentacje swoich dokumentów i zapewnić czytelnikom jasne, atrakcyjne wizualnie informacje.
 
 ## Często zadawane pytania
 

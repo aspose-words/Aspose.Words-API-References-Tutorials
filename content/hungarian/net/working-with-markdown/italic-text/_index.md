@@ -1,6 +1,6 @@
 ---
-title: Olasz szöveg
-linktitle: Olasz szöveg
+title: Dőlt szöveg
+linktitle: Dőlt szöveg
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan írhat dőlt szöveget az Aspose.Words for .NET segítségével Lépésről lépésre.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Használjon dokumentumkészítőt, hogy tartalmat adjon a dokumentumhoz.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Olaszítsd a szöveget.
+// Legyen dőlt szöveg.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

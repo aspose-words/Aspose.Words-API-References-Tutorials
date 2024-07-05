@@ -2,7 +2,7 @@
 title: Nhận thông tin chi tiết về nhóm sửa đổi
 linktitle: Nhận thông tin chi tiết về nhóm sửa đổi
 second_title: API xử lý tài liệu Aspose.Words
-description: Nhận thông tin chi tiết về nhóm sửa đổi trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Nhận thông tin chi tiết về nhóm sửa đổi trong tài liệu Word bằng Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/get-revision-group-details/
@@ -67,7 +67,7 @@ Trong hướng dẫn này, chúng ta đã tìm hiểu cách lấy thông tin chi
 
 #### Câu hỏi: Làm cách nào để tải tài liệu có bản sửa đổi vào Aspose.Words cho .NET?
 
- Đáp: Hãy sử dụng`Document`lớp Aspose.Words dành cho .NET để tải tài liệu từ một tệp có chứa các bản sửa đổi. Bạn có thể chỉ định đường dẫn tài liệu đầy đủ.
+ Đáp: Hãy sử dụng`Document` lớp Aspose.Words dành cho .NET để tải tài liệu từ một tệp có chứa các bản sửa đổi. Bạn có thể chỉ định đường dẫn tài liệu đầy đủ.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Câu hỏi: Làm cách nào để có được thông tin chi tiết về nhóm sửa đổi trong Aspose.Words cho .NET?
 
- Đáp: Xem qua các bản sửa đổi của tài liệu bằng cách sử dụng vòng lặp và truy cập các thuộc tính của từng bản sửa đổi để có được thông tin chi tiết bạn muốn. Bạn có thể dùng`RevisionType`, `Author`, `DateTime` Và`ParentNode` Properties để lấy loại sửa đổi, tác giả, ngày tháng và văn bản sửa đổi tương ứng.
+Đáp: Xem qua các bản sửa đổi của tài liệu bằng cách sử dụng vòng lặp và truy cập các thuộc tính của từng bản sửa đổi để có được thông tin chi tiết bạn muốn. Bạn có thể dùng`RevisionType`, `Author`, `DateTime` Và`ParentNode` Properties để lấy loại sửa đổi, tác giả, ngày tháng và văn bản sửa đổi tương ứng.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Hỏi: Làm cách nào để kiểm tra xem bản sửa đổi có thuộc về một nhóm trong Aspose.Words cho .NET không?
 
- Đáp: Hãy sử dụng`Group` tài sản của`Revision` đối tượng để kiểm tra xem bản sửa đổi có thuộc về một nhóm hay không. Nếu`Group` tài sản là`null`điều đó có nghĩa là bản sửa đổi không thuộc về bất kỳ nhóm nào.
+ Đáp: Hãy sử dụng`Group` tài sản của`Revision` đối tượng để kiểm tra xem bản sửa đổi có thuộc về một nhóm hay không. Nếu`Group` tài sản là`null`, điều đó có nghĩa là bản sửa đổi không thuộc về bất kỳ nhóm nào.
 
 ```csharp
 if (revision.Group != null)

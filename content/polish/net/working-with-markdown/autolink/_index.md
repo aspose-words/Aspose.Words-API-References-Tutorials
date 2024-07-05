@@ -34,7 +34,7 @@ Jako link możemy także wstawić adres e-mail, korzystając z przedrostka „ma
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
-## Krok 4: Zapisywanie dokumentu
+## Krok 4: Zapisanie dokumentu
 
 Wreszcie możemy zapisać dokument w żądanym formacie.
 

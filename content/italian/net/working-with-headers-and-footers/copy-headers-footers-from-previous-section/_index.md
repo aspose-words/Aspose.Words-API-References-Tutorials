@@ -131,4 +131,4 @@ Sì, puoi copiare intestazioni e piè di pagina tra qualsiasi sezione di un docu
 
 ### Q5: È disponibile una prova gratuita per Aspose.Words per .NET?
 
-Sì, puoi scaricare una versione di prova gratuita da[pagina di download](https://releases.aspose.com/).
+ Sì, puoi scaricare una versione di prova gratuita da[pagina di download](https://releases.aspose.com/).

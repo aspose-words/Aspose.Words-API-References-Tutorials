@@ -18,7 +18,7 @@ Trong mã được cung cấp, chúng tôi bắt đầu bằng cách tạo trìn
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Bước 2: Chèn trường IF.
+## Bước 2: Chèn trường IF
 
  Chúng tôi sử dụng`InsertField()` phương pháp chèn trường IF vào tài liệu chỉ định điều kiện cần đánh giá.
 
@@ -36,18 +36,18 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- Các`actualResult` Biến chứa kết quả của việc đánh giá điều kiện.
+ Các`actualResult` biến chứa kết quả của việc đánh giá điều kiện.
 
 ### Mã nguồn mẫu để đánh giá điều kiện IF với Aspose.Words cho .NET
 
 ```csharp
-//Tạo trình tạo tài liệu.
+// Tạo trình tạo tài liệu.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Chèn trường IF vào tài liệu.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// Đánh giá điều kiện IF.
+//Đánh giá điều kiện IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Hiển thị kết quả đánh giá.

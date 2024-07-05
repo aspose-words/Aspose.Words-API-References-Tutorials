@@ -72,7 +72,7 @@ Sinta-se à vontade para explorar mais recursos do Aspose.Words for .NET para ap
 
 #### Como posso recuperar as fontes primárias e secundárias do tema de um documento?
 
- Você pode acessar as fontes primárias e secundárias do tema de um documento usando o botão`MajorFonts` e`MinorFonts` propriedades do`Theme` objeto, respectivamente. Essas propriedades fornecem acesso aos nomes das fontes utilizadas no tema do documento para diferentes idiomas ou regiões.
+ Você pode acessar as fontes primárias e secundárias do tema de um documento usando o botão`MajorFonts` e`MinorFonts` propriedades do`Theme` objeto, respectivamente. Essas propriedades fornecem acesso aos nomes das fontes usadas no tema do documento para diferentes idiomas ou regiões.
 
 #### Posso obter as cores de destaque usadas no tema de um documento?
 

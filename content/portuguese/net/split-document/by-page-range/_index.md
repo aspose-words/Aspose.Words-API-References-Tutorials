@@ -73,14 +73,14 @@ Sinta-se à vontade para explorar outros recursos poderosos oferecidos pelo Aspo
 #### P1: Posso extrair páginas não consecutivas usando o recurso "Por intervalo de páginas"?
  Sim, você pode extrair páginas não consecutivas especificando o intervalo de páginas desejado. Por exemplo, se quiser extrair as páginas 1, 3 e 5, você pode definir o intervalo de páginas como`1,3,5` no`ExtractPages` função.
 
-#### P2: É possível extrair um intervalo de páginas específico de vários documentos simultaneamente?
+#### Q2: É possível extrair um intervalo de páginas específico de vários documentos simultaneamente?
  Sim, você pode aplicar o recurso “Por intervalo de páginas” a vários documentos. Basta carregar cada documento individualmente e extrair o intervalo de páginas desejado usando o`ExtractPages` função. Você pode então salvar as páginas extraídas de cada documento separadamente.
 
 #### P3: Posso extrair intervalos de páginas de documentos Word criptografados ou protegidos por senha?
 Não, o recurso “Por intervalo de páginas” funciona em documentos do Word desprotegidos. Se um documento estiver criptografado ou protegido por senha, você precisará fornecer a senha correta e remover a proteção antes de extrair o intervalo de páginas desejado.
 
 #### P4: Há alguma limitação quanto ao número de páginas que podem ser extraídas usando o recurso "Por intervalo de páginas"?
-O número de páginas que podem ser extraídas usando o recurso "Por intervalo de páginas" depende dos recursos do Aspose.Words for .NET e dos recursos de sistema disponíveis. Em geral, ele suporta a extração de intervalos de páginas de documentos de vários tamanhos, mas documentos extremamente grandes ou intervalos de páginas muito longos podem exigir recursos de sistema e tempo de processamento adicionais.
+O número de páginas que podem ser extraídas usando o recurso "Por intervalo de páginas" depende dos recursos do Aspose.Words for .NET e dos recursos do sistema disponíveis. Em geral, ele suporta a extração de intervalos de páginas de documentos de vários tamanhos, mas documentos extremamente grandes ou intervalos de páginas muito longos podem exigir recursos de sistema e tempo de processamento adicionais.
 
 #### P5: Posso extrair outros elementos junto com o conteúdo do texto, como imagens ou tabelas, usando o recurso "Por intervalo de páginas"?
 Sim, quando você extrai um intervalo de páginas usando Aspose.Words for .NET, ele inclui todo o conteúdo dentro do intervalo especificado, incluindo texto, imagens, tabelas e outros elementos presentes nessas páginas. O conteúdo extraído será preservado no novo documento.

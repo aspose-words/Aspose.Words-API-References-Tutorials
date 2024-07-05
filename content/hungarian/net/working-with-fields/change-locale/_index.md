@@ -12,7 +12,7 @@ Ebben az oktatóanyagban végigvezetjük a Word-dokumentumok nyelv- és terület
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Hozzon létre egy dokumentumot és a DocumentBuildert
 Kezdésként hozzon létre egy példányt a Document osztályból és egy DocumentBuilder objektumból:

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Stap 2: Maak het document en pas het aan
- Maak een exemplaar van de`Document` klasse en een geassocieerde`DocumentBuilder` om de documentinhoud op te bouwen. Gebruik de`Font.EmphasisMark` eigenschap om de nadrukstijl van het lettertype in te stellen`EmphasisMark.UnderSolidCircle` . Gebruik dan de`Write` En`Writeln` methoden van de`DocumentBuilder` om tekst toe te voegen met de nadruk op het opgegeven lettertype.
+ Maak een exemplaar van de`Document` klasse en een geassocieerde`DocumentBuilder` om de documentinhoud op te bouwen. Gebruik de`Font.EmphasisMark` eigenschap waarop u de nadrukstijl van het lettertype wilt instellen`EmphasisMark.UnderSolidCircle` . Gebruik dan de`Write` En`Writeln` methoden van de`DocumentBuilder` om tekst toe te voegen met de opgegeven nadruk op het lettertype.
 
 ```csharp
 Document document = new Document();

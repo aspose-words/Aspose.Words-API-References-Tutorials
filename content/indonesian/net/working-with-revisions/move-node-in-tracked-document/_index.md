@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Langkah 5: Menyimpan dokumen
 
- Setelah memasukkan kolom formulir input teks, simpan dokumen ke lokasi yang diinginkan menggunakan`Save` metode. Pastikan untuk memberikan jalur file yang sesuai:
+ Setelah memasukkan kolom formulir input teks, simpan dokumen ke lokasi yang diinginkan menggunakan`Save`metode. Pastikan untuk memberikan jalur file yang sesuai:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ Dalam tutorial ini, kita mempelajari cara memindahkan node dalam dokumen Word ya
 
 #### T: Bagaimana cara mengaktifkan pelacakan revisi dalam dokumen Aspose.Words for .NET?
 
-J: Untuk mengaktifkan pelacakan revisi dalam dokumen Aspose.Words for .NET, Anda dapat menggunakan`StartTrackRevisions` metode`Document` obyek. Metode ini mengambil parameter nama pembuat revisi dan tanggal mulai tindak lanjut revisi.
+ J: Untuk mengaktifkan pelacakan revisi dalam dokumen Aspose.Words for .NET, Anda dapat menggunakan`StartTrackRevisions` metode`Document` obyek. Metode ini mengambil parameter nama pembuat revisi dan tanggal mulai tindak lanjut revisi.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

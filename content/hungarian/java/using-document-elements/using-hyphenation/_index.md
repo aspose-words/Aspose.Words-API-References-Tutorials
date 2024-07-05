@@ -12,7 +12,7 @@ A dokumentumfeldolgozás világában a precizitás és az esztétika létfontoss
 
 ## 1. Bevezetés az elválasztásba
 
-Az elválasztás az a folyamat, amikor a szavakat szótagokra bontják, és kötőjeleket adnak a sorok végére, hogy javítsák a szöveg igazítását a dokumentumokban. Ez különösen fontos olyan nyelvek esetében, amelyek összetett szószerkezettel rendelkeznek.
+Az elválasztás az a folyamat, amikor a szavakat szótagokra bontják, és kötőjeleket adnak a sorok végére, hogy javítsák a szöveg igazítását a dokumentumokban. Ez különösen fontos, ha bonyolult szószerkezettel rendelkező nyelvekkel foglalkozunk.
 
 ## 2. A környezet beállítása
 

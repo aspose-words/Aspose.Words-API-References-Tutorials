@@ -63,6 +63,6 @@ J: Jika bookmark yang ditentukan tidak ada dalam dokumen, cuplikan kode akan men
 
  J: Perpustakaan Aspose.Words adalah perpustakaan komersial, dan Anda mungkin memerlukan lisensi yang valid untuk menggunakannya dalam proyek Anda. Anda dapat mengunjungi[Aspose.Words untuk referensi .NET API](https://reference.aspose.com/words/net/) untuk mempelajari lebih lanjut tentang opsi lisensi dan harga mereka.
 
-#### T: Bisakah saya menghapus baris dari tabel di bagian tertentu pada dokumen Word?
+#### T: Dapatkah saya menghapus baris dari tabel di bagian tertentu pada dokumen Word?
 
 J: Ya, Anda bisa menghapus baris dari tabel di bagian tertentu dokumen Word. Anda dapat mengubah cuplikan kode yang disediakan untuk menargetkan bagian tertentu dengan menggunakan rentang atau bookmark yang sesuai dalam bagian tersebut.

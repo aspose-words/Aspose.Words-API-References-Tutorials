@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Footer.docx");
 
 ## Шаг 2. Доступ к нижнему колонтитулу
 
- После загрузки документа нам нужно получить доступ к нижнему колонтитулу, чтобы выполнить замену текста. В нашем примере мы используем`HeadersFooters` Свойство первого раздела документа для получения коллекции верхних и нижних колонтитулов. Далее мы выбираем основной нижний колонтитул с помощью`HeaderFooterType.FooterPrimary` индекс:
+ После загрузки документа нам нужно получить доступ к нижнему колонтитулу, чтобы выполнить замену текста. В нашем примере мы используем`HeadersFooters` свойство первого раздела документа для получения коллекции верхних и нижних колонтитулов. Далее мы выбираем основной нижний колонтитул с помощью`HeaderFooterType.FooterPrimary` индекс:
 
 ```csharp
 HeaderFooterCollection headersFooters = doc.FirstSection.HeadersFooters;
@@ -35,7 +35,7 @@ HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 
 ## Шаг 3. Настройте параметры поиска и замены
 
- Теперь мы настроим параметры поиска и замены, используя`FindReplaceOptions` Объект Object. В нашем примере мы установили`MatchCase` к`false` игнорировать регистр при поиске и`FindWholeWordsOnly` к`false` чтобы разрешить поиск и замену частей слов:
+ Теперь мы настроим параметры поиска и замены, используя`FindReplaceOptions` объект. В нашем примере мы установили`MatchCase` к`false` игнорировать регистр при поиске и`FindWholeWordsOnly` к`false` чтобы разрешить поиск и замену частей слов:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWholeWordsOnly = false };
@@ -102,7 +102,7 @@ Document doc = new Document(dataDir + "Footer.docx");
 
 #### Вопрос: Как получить доступ к нижнему колонтитулу документа в Aspose.Words for .NET?
 
- О: После загрузки документа вы можете получить доступ к нижнему колонтитулу для замены текста. В Aspose.Words для .NET вы можете использовать`HeadersFooters` Свойство первого раздела документа для получения коллекции верхних и нижних колонтитулов. Затем вы можете выбрать основной нижний колонтитул, используя`HeaderFooterType.FooterPrimary` индекс:
+ О: После загрузки документа вы можете получить доступ к нижнему колонтитулу для замены текста. В Aspose.Words для .NET вы можете использовать`HeadersFooters` свойство первого раздела документа для получения коллекции верхних и нижних колонтитулов. Затем вы можете выбрать основной нижний колонтитул, используя`HeaderFooterType.FooterPrimary` индекс:
 
 ```csharp
 HeaderFooterCollection headersFooters = doc.FirstSection.HeadersFooters;

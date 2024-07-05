@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## 結論
 
-在本教學中，我們探索了 Aspose.Words for .NET 中的文件文字方向功能。我們學習如何指定文件中文字的方向，特別是對於從右向左書寫的語言，例如希伯來語或阿拉伯語。
+在本教學中，我們探索了 Aspose.Words for .NET 中的文件文字方向功能。我們學習如何指定文件中文字的方向，特別是對於從右到左書寫的語言，例如希伯來語或阿拉伯語。
 
 此功能對於確保文字在多語言文件中正確顯示至關重要。透過使用適當的載入選項，Aspose.Words 可以自動偵測文字的方向並將其套用到文件。
 

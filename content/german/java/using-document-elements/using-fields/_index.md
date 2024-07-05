@@ -1,26 +1,26 @@
 ---
 title: Verwenden von Feldern in Aspose.Words für Java
 linktitle: Verwenden von Feldern
-second_title: Aspose.Words Java-Dokumentverarbeitungs-API
-description: Erfahren Sie in diesem Schritt-für-Schritt-Tutorial, wie Sie Aspose.Words für Java-Felder effektiv nutzen. Erstellen Sie ganz einfach dynamische Word-Dokumente.
+second_title: Aspose.Words Java-API zur Dokumentverarbeitung
+description: Erfahren Sie in diesem Schritt-für-Schritt-Tutorial, wie Sie Aspose.Words für Java-Felder effektiv nutzen. Erstellen Sie mühelos dynamische Word-Dokumente.
 type: docs
 weight: 11
 url: /de/java/using-document-elements/using-fields/
 ---
 
-In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie Felder in Aspose.Words für Java verwenden, um Dokumente einfach zu bearbeiten. Aspose.Words für Java ist eine leistungsstarke API, die Ihnen die programmgesteuerte Arbeit mit Word-Dokumenten ermöglicht und Ihnen die volle Kontrolle über deren Inhalt und Formatierung gibt.
+In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie Felder in Aspose.Words für Java verwenden, um Dokumente ganz einfach zu bearbeiten. Aspose.Words für Java ist eine leistungsstarke API, mit der Sie programmgesteuert mit Word-Dokumenten arbeiten können und dabei die volle Kontrolle über deren Inhalt und Formatierung haben.
 
 ## 1. Einleitung
 
-Aspose.Words für Java ist ein unverzichtbares Werkzeug für jeden, der mit Word-Dokumenten in Java-Anwendungen arbeitet. Felder sind Platzhalter, die dynamische Daten in Ihrem Dokument speichern können. Dieses Tutorial zeigt Ihnen, wie Sie effektiv mit Feldern arbeiten.
+Aspose.Words für Java ist ein unverzichtbares Tool für alle, die mit Word-Dokumenten in Java-Anwendungen arbeiten. Felder sind Platzhalter, die dynamische Daten in Ihrem Dokument speichern können. Dieses Tutorial zeigt Ihnen, wie Sie effektiv mit Feldern arbeiten.
 
 ## 2. Einrichten Ihrer Umgebung
 
- Bevor Sie beginnen, stellen Sie sicher, dass Aspose.Words für Java installiert ist. Sie können es herunterladen unter[Hier](https://releases.aspose.com/words/java/). Stellen Sie außerdem sicher, dass auf Ihrem System Java und eine integrierte Entwicklungsumgebung (IDE) wie Eclipse oder IntelliJ IDEA installiert sind.
+ Bevor Sie beginnen, stellen Sie sicher, dass Sie Aspose.Words für Java installiert haben. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/java/)Stellen Sie außerdem sicher, dass auf Ihrem System Java und eine integrierte Entwicklungsumgebung (IDE) wie Eclipse oder IntelliJ IDEA installiert sind.
 
 ## 3. Laden eines Word-Dokuments
 
-In Ihrer Java-Anwendung müssen Sie das Word-Dokument laden, mit dem Sie arbeiten möchten. Hier ist ein Codeausschnitt, um Ihnen den Einstieg zu erleichtern:
+Sie müssen in Ihrer Java-Anwendung das Word-Dokument laden, mit dem Sie arbeiten möchten. Hier ist ein Code-Schnipsel, der Ihnen den Einstieg erleichtert:
 
 ```java
 string dataDir = "Your Document Directory";
@@ -30,15 +30,15 @@ Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 
  Ersetzen`"Your Document Directory"` Und`"Your Output Directory"` mit den entsprechenden Pfaden.
 
-## 4. Anpassen des Seriendrucks
+## 4. Serienbrieffunktion anpassen
 
-Aspose.Words für Java bietet hervorragende Unterstützung für Serienbriefvorgänge. Sie können den Serienbriefprozess anpassen, indem Sie einen Serienbrief-Ereignishandler einrichten. So geht's:
+Aspose.Words für Java bietet hervorragende Unterstützung für Serienbriefvorgänge. Sie können den Serienbriefvorgang anpassen, indem Sie einen Serienbrief-Ereignishandler einrichten. So geht's:
 
 ```java
-// Richten Sie den Mail-Merge-Ereignishandler ein, um die benutzerdefinierten Arbeiten auszuführen.
+// Richten Sie einen Serienbrief-Ereignishandler ein, um die benutzerdefinierte Arbeit durchzuführen.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
 
-// Schneiden Sie nachgestellte und führende Leerzeichen bei Serienbriefwerten ab.
+// Entfernen Sie am Ende und am Anfang der Serienbriefwerte vorhandene Leerzeichen.
 doc.getMailMerge().setTrimWhitespaces(false);
 
 String[] fieldNames = {
@@ -69,9 +69,9 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 string dataDir = "Your Document Directory";
 string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
-// Richten Sie den Mail-Merge-Ereignishandler ein, um die benutzerdefinierten Arbeiten auszuführen.
+// Richten Sie einen Serienbrief-Ereignishandler ein, um die benutzerdefinierte Arbeit durchzuführen.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
-// Schneiden Sie nachgestellte und führende Leerzeichen bei Serienbriefwerten ab.
+// Entfernen Sie am Ende und am Anfang der Serienbriefwerte vorhandene Leerzeichen.
 doc.getMailMerge().setTrimWhitespaces(false);
 String[] fieldNames = {
 	"RecipientName", "SenderName", "FaxNumber", "PhoneNumber",
@@ -90,17 +90,17 @@ Quellcode der Klasse HandleMergeField
     private static class HandleMergeField implements IFieldMergingCallback
     {
         /// <Zusammenfassung>
-        /// Dieser Handler wird für jedes im Dokument gefundene Serienbrieffeld aufgerufen.
+        /// Dieser Handler wird für jedes Serienbrieffeld aufgerufen, das im Dokument gefunden wird.
         /// für jeden in der Datenquelle gefundenen Datensatz.
         /// </summary>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e) throws Exception
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // Wir haben beschlossen, dass alle booleschen Werte als Kontrollkästchen-Formularfelder ausgegeben werden sollen.
+            // Wir haben entschieden, dass alle Booleschen Werte als Kontrollkästchen-Formularfelder ausgegeben werden sollen.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
-                // Bewegen Sie den „Cursor“ zum aktuellen Zusammenführungsfeld.
+                // Bewegen Sie den „Cursor“ zum aktuellen Seriendruckfeld.
                 mBuilder.moveToMergeField(e.getFieldName());
                 String checkBoxName = MessageFormat.format("{0}{1}", e.getFieldName(), e.getRecordIndex());
                 mBuilder.insertCheckBox(checkBoxName, (Boolean) e.getFieldValue(), 0);
@@ -203,19 +203,19 @@ Quellcode der Klasse HandleMergeField
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Fügen Sie ein MERGEFIELD ein, das in einem IF-Feld verschachtelt ist.
+        // Fügen Sie ein MERGEFIELD ein, das in ein IF-Feld verschachtelt ist.
         // Da die IF-Feldanweisung falsch ist, wird das Ergebnis des inneren MERGEFIELD nicht angezeigt.
-        //und das MERGEFIELD empfängt während eines Seriendrucks keine Daten.
+        //und das MERGEFIELD empfängt während eines Serienbriefvorgangs keine Daten.
         FieldIf fieldIf = (FieldIf)builder.insertField(" IF 1 = 2 ");
         builder.moveTo(fieldIf.getSeparator());
         builder.insertField(" MERGEFIELD  FullName ");
-        // Wir können MERGEFIELDs immer noch in IF-Feldern mit falscher Aussage zählen, wenn wir dieses Flag auf true setzen.
+        // Wir können MERGEFIELDs weiterhin in IF-Feldern mit falschen Aussagen zählen, wenn wir dieses Flag auf „true“ setzen.
         doc.getMailMerge().setUnconditionalMergeFieldsAndRegions(true);
         DataTable dataTable = new DataTable();
         dataTable.getColumns().add("FullName");
         dataTable.getRows().add("James Bond");
         doc.getMailMerge().execute(dataTable);
-        // Das Ergebnis wird im Dokument nicht sichtbar sein, da das IF-Feld falsch ist.
+        // Das Ergebnis wird im Dokument nicht angezeigt, da das WENN-Feld falsch ist.
         // aber das innere MERGEFIELD hat tatsächlich Daten empfangen.
         doc.save("Your Directory Path" + "WorkingWithFields.MailMergeAndConditionalField.docx");
     }
@@ -242,14 +242,14 @@ Quellcode der Klasse HandleMergeField
             // Nichts tun.
         }
         /// <Zusammenfassung>
-        /// Dies wird aufgerufen, wenn die Mail-Merge-Engine auf das Serienbrieffeld „Image:XXX“ im Dokument stößt.
+        /// Dies wird aufgerufen, wenn das Seriendruckmodul im Dokument auf das Seriendruckfeld „Bild:XXX“ stößt.
         /// Sie haben die Möglichkeit, ein Bildobjekt, einen Dateinamen oder einen Stream zurückzugeben, der das Bild enthält.
         /// </summary>
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs e) throws Exception
         {
-            // Der Feldwert ist ein Byte-Array. Wandeln Sie ihn einfach um und erstellen Sie einen Stream darauf.
+            // Der Feldwert ist ein Byte-Array. Konvertieren Sie ihn einfach und erstellen Sie einen Stream darauf.
             ByteArrayInputStream imageStream = new ByteArrayInputStream((byte[]) e.getFieldValue());
-            // Jetzt ruft die Mail-Merge-Engine das Bild aus dem Stream ab.
+            // Jetzt ruft die Serienbrief-Engine das Bild aus dem Stream ab.
             e.setImageStream(imageStream);
         }
     }
@@ -295,9 +295,9 @@ Quellcode der Klasse HandleMergeField
     private static class HandleMergeFieldAlternatingRows implements IFieldMergingCallback
     {
         /// <Zusammenfassung>
-        /// Wird für jedes im Dokument gefundene Zusammenführungsfeld aufgerufen.
-        /// Wir können entweder einige Daten an die Serienbrief-Engine zurückgeben oder etwas anderes mit dem Dokument tun.
-        /// In diesem Fall ändern wir die Zellformatierung.
+        /// Wird für jedes im Dokument gefundene Seriendruckfeld aufgerufen.
+        /// Wir können entweder einige Daten an die Serienbrief-Engine zurückgeben oder etwas anderes mit dem Dokument machen.
+        /// In diesem Fall ändern wir die Zellenformatierung.
         /// </summary>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e)
         {
@@ -309,7 +309,7 @@ Quellcode der Klasse HandleMergeField
                 Color rowColor = isOdd(mRowIdx) 
                     ? new Color((213), (227), (235)) 
                     : new Color((242), (242), (242));
-                //Im Moment gibt es keine Möglichkeit, Zelleigenschaften für die gesamte Zeile festzulegen, daher müssen wir über alle Zellen in der Zeile iterieren.
+                //Da es derzeit keine Möglichkeit gibt, Zelleneigenschaften für die gesamte Zeile festzulegen, müssen wir über alle Zellen in der Zeile iterieren.
                 for (int colIdx = 0; colIdx < 4; colIdx++)
                 {
                     mBuilder.moveToCell(0, mRowIdx, colIdx, 0);
@@ -326,7 +326,7 @@ Quellcode der Klasse HandleMergeField
         private int mRowIdx;
     }
     /// <Zusammenfassung>
-    /// Gibt true zurück, wenn der Wert ungerade ist; false, wenn der Wert gerade ist.
+    /// Gibt „true“ zurück, wenn der Wert ungerade ist, und „false“, wenn der Wert gerade ist.
     /// </summary>
     private static boolean isOdd(int value)
     {
@@ -334,7 +334,7 @@ Quellcode der Klasse HandleMergeField
     }
     /// <Zusammenfassung>
     /// DataTable erstellen und mit Daten füllen.
-    /// Im wirklichen Leben sollte diese Datentabelle aus einer Datenbank gefüllt werden.
+    /// Im wirklichen Leben sollte diese DataTable aus einer Datenbank gefüllt werden.
     /// </summary>
     private DataTable getSuppliersDataTable()
     {
@@ -355,24 +355,24 @@ Quellcode der Klasse HandleMergeField
 
 ## 6. Fazit
 
-Glückwunsch! Sie haben gelernt, wie Sie Felder in Aspose.Words für Java verwenden, um Word-Dokumente dynamisch zu bearbeiten. Diese leistungsstarke API gibt Ihnen die vollständige Kontrolle über Ihre Dokumente und macht sie zu einem wertvollen Vorteil für Java-Entwickler.
+Herzlichen Glückwunsch! Sie haben gelernt, wie Sie Felder in Aspose.Words für Java verwenden, um Word-Dokumente dynamisch zu bearbeiten. Diese leistungsstarke API gibt Ihnen die vollständige Kontrolle über Ihre Dokumente und ist somit ein wertvolles Hilfsmittel für Java-Entwickler.
 
-## 7.FAQs
+## 7. Häufig gestellte Fragen
 
 ### F1: Wo kann ich Aspose.Words für Java herunterladen?
  Sie können Aspose.Words für Java herunterladen von[Hier](https://releases.aspose.com/words/java/).
 
 ### F2: Wie kann ich eine temporäre Lizenz für Aspose.Words für Java erhalten?
- Eine temporäre Lizenz erhalten Sie bei[Hier](https://purchase.aspose.com/temporary-license/).
+ Eine vorläufige Lizenz erhalten Sie bei[Hier](https://purchase.aspose.com/temporary-license/).
 
-### F3: Wo erhalte ich Unterstützung für Aspose.Words für Java?
+### F3: Wo erhalte ich Support für Aspose.Words für Java?
  Für Unterstützung können Sie das Aspose.Words-Forum besuchen[Hier](https://forum.aspose.com/).
 
 ### F4: Ist Aspose.Words für Java für die Verarbeitung von HTML-Inhalten in Word-Dokumenten geeignet?
-Ja, Aspose.Words für Java bietet hervorragende Unterstützung für die Verarbeitung von HTML-Inhalten in Word-Dokumenten.
+Ja, Aspose.Words für Java bietet hervorragende Unterstützung für die Handhabung von HTML-Inhalten in Word-Dokumenten.
 
-### F5: Kann ich Aspose.Words für Java kostenlos nutzen?
- Aspose.Words für Java ist ein kommerzielles Produkt, aber Sie können seine Funktionen mit einer kostenlosen Testversion erkunden[Hier](https://releases.aspose.com/).
+### F5: Kann ich Aspose.Words für Java kostenlos verwenden?
+ Aspose.Words für Java ist ein kommerzielles Produkt, aber Sie können seine Funktionen mit einer kostenlosen Testversion erkunden.[Hier](https://releases.aspose.com/).
 
 Beginnen Sie noch heute mit Aspose.Words für Java und übernehmen Sie die Kontrolle über Ihre Word-Dokumente wie nie zuvor!
 

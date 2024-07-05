@@ -23,7 +23,7 @@ url: /ko/net/working-with-fields/
 | [DOM을 사용하여 병합 필드 삽입](./insert-merge-field-using-dom/) | .NET용 Aspose.Words를 사용하여 Word 문서에 사용자 정의 필드 병합 필드를 삽입하는 방법을 알아보세요. |
 | [DOM을 사용하여 메일 병합 주소 블록 필드 삽입](./insert-mail-merge-address-block-field-using-dom/) | .NET용 Aspose.Words를 사용하여 Word 문서에 메일 병합 주소 블록 필드를 삽입하는 방법을 알아보세요. |
 | [문서 작성기 없이 FieldIncludeText 삽입](./insert-field-include-text-without-document-builder/) | .NET용 Aspose.Words를 사용하여 Word 문서에 FieldIncludeText 필드를 삽입하는 방법을 알아보세요. |
-| [필드 삽입 없음](./insert-field-none/) | Word 및 Aspose에서 AUCUN을 사용하여 문서를 만드는 방법을 알아보세요. Words는 .NET을 따릅니다. |
+| [필드 삽입 없음](./insert-field-none/) | AUCUN dans vos 문서 Word 및 Aspose.Words pour .NET을 소개하는 방법을 알아보세요. |
 | [필드 삽입](./insert-field/) | .NET용 Aspose.Words를 사용하여 Word 문서에 필드를 삽입하는 방법을 알아보세요. 동적 필드로 문서를 개인화하세요. |
 | [필드 빌더를 사용하여 필드 삽입](./insert-field-using-field-builder/) | .NET용 Aspose.Words를 사용하여 Word 문서에 사용자 정의 필드를 삽입하는 방법을 알아보세요. |
 | [작성자 필드 삽입](./insert-author-field/) | .NET용 Aspose.Words를 사용하여 Word 문서에 AUTHOR 필드를 삽입하는 방법을 알아보세요. 문서를 개인화하려면 작성자 이름을 지정하세요. |

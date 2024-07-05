@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 Grattis! Du har framgångsrikt lärt dig hur man renderar former i Aspose.Words för Java. Denna förmåga öppnar upp en värld av möjligheter när du arbetar med Word-dokument programmatiskt.
 
-## 9.Vanliga frågor
+## 9. Vanliga frågor
 
 ### F1: Kan jag rendera flera former i ett enda dokument?
 

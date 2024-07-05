@@ -83,13 +83,13 @@ Ez egy teljes mintakód az Aspose.Words for .NET tábláihoz való gépelt hozz�
 
 #### K: Mit jelent a gépelt hozzáférés a Node.js-ben?
 
-V: A Node.js-ben beírt hozzáférés bizonyos csomóponttípusok használatát jelenti az XML-dokumentum csomópont tulajdonságainak és értékeinek eléréséhez. Az általános tulajdonságok használata helyett a típusos hozzáférés speciális módszereket használ bizonyos csomóponttípusokhoz, például szövegcsomópontokhoz, elemcsomópontokhoz, attribútumcsomópontokhoz stb.
+V: A Node.js-ben beírt hozzáférés meghatározott csomóponttípusok használatát jelenti az XML-dokumentum csomópont tulajdonságainak és értékeinek eléréséhez. Az általános tulajdonságok használata helyett a típusos hozzáférés speciális módszereket használ bizonyos csomóponttípusokhoz, például szövegcsomópontokhoz, elemcsomópontokhoz, attribútumcsomópontokhoz stb.
 
 #### K: Hogyan férhetek hozzá a csomópontokhoz gépelt hozzáféréssel?
 
  V: Ha a Node.js fájlban gépelt hozzáféréssel szeretne hozzáférni a csomópontokhoz, az elérni kívánt csomópont típusától függően meghatározott módszereket használhat. Használhatja például a`getElementsByTagName` módszer egy adott típusú összes csomópont eléréséhez, a`getAttribute` metódus az attribútum értékének eléréséhez stb.
 
-#### K: Milyen előnyei vannak a gépelt hozzáférésnek a gépeletlen hozzáféréssel szemben?
+#### K: Milyen előnyei vannak a gépelt hozzáférésnek a nem gépelt hozzáféréssel szemben?
 
 V: A gépelt hozzáférésnek számos előnye van a nem gépelt hozzáféréssel szemben. Először is, lehetővé teszi a csomópontokhoz való hozzáférés pontosabbá tételét, megkönnyítve ezzel az XML-dokumentum csomópontjainak kezelését és kezelését. Ezenkívül a típusos hozzáférés nagyobb biztonságot nyújt azáltal, hogy elkerüli a típushibákat a csomópont tulajdonságainak és értékeinek elérésekor.
 

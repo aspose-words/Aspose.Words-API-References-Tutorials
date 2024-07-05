@@ -1,8 +1,8 @@
 ---
-title: ドキュメントの追加
-linktitle: ドキュメントの追加
+title: ドキュメントを追加
+linktitle: ドキュメントを追加
 second_title: Aspose.Words ドキュメント処理 API
-description: この包括的なステップバイステップ ガイドで、Aspose.Words for .NET を使用して Word ドキュメントを追加する方法を学びましょう。ドキュメントのワークフローを自動化するのに最適です。
+description: この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書を追加する方法を説明します。ドキュメント ワークフローの自動化に最適です。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/append-document/
@@ -10,22 +10,22 @@ url: /ja/net/join-and-append-documents/append-document/
 
 ## 導入
 
-ちょっと、そこ！元の書式をそのまま維持したまま、2 つの Word 文書を 1 つに結合する必要があったことがありますか?レポートを編集している場合でも、広範なプロジェクト ドキュメントを作成している場合でも、単にドキュメント管理を合理化しようとしている場合でも、Aspose.Words for .NET を使用すると作業が大幅に楽になります。このチュートリアルでは、Aspose.Words for .NET を使用して、ある Word ドキュメントを別の Word ドキュメントに追加する方法を、各手順を詳しく説明していきます。このガイドを終える頃には、プロのようにドキュメントを結合できるようになります。
+こんにちは! 元の書式をそのままに、2 つの Word 文書を 1 つに結合したいと思ったことはありませんか? レポートをコンパイルする場合でも、広範なプロジェクト ドキュメントを作成する場合でも、または単にドキュメント管理を合理化しようとする場合でも、Aspose.Words for .NET を使用すると作業がずっと簡単になります。このチュートリアルでは、Aspose.Words for .NET を使用して 1 つの Word 文書を別の Word 文書に追加する方法を、各手順を詳細に説明しながら説明します。このガイドを読み終える頃には、プロのように文書を結合できるようになります。
 
 ## 前提条件
 
-核心部分に入る前に、必要なものがすべて揃っていることを確認してください。
+細かい点に入る前に、必要なものがすべて揃っているかどうか確認しましょう。
 
-1. C# の基本知識: C# の構文と概念に精通している必要があります。
-2.  Aspose.Words for .NET: ダウンロードしてください[ここ](https://releases.aspose.com/words/net/) 。探索するだけの場合は、次から始めることができます。[無料トライアル](https://releases.aspose.com/).
-3. Visual Studio: 最新バージョンであればどれでも動作しますが、最新バージョンをお勧めします。
-4. .NET Framework: システムにインストールされていることを確認してください。
+1. C# の基礎知識: C# の構文と概念に精通している必要があります。
+2.  Aspose.Words for .NET: ダウンロード[ここ](https://releases.aspose.com/words/net/)探索だけなら、[無料トライアル](https://releases.aspose.com/).
+3. Visual Studio: 最新バージョンであればどれでも動作しますが、最新バージョンが推奨されます。
+4. .NET Framework: システムにインストールされていることを確認します。
 
-準備は万端ですか？素晴らしい！飛び込みましょう。
+準備はできましたか? 素晴らしい! さあ始めましょう。
 
 ## 名前空間のインポート
 
-Aspose.Words for .NET の使用を開始するには、必要な名前空間をインポートする必要があります。このステップにより、必要なすべてのクラスとメソッドに確実にアクセスできるようになります。
+Aspose.Words for .NET の使用を開始するには、必要な名前空間をインポートする必要があります。この手順により、必要なすべてのクラスとメソッドにアクセスできるようになります。
 
 ```csharp
 using System;
@@ -34,50 +34,50 @@ using Aspose.Words;
 
 これらの名前空間は、Word 文書の作成、操作、保存に不可欠です。
 
-## ステップ 1: ドキュメント ディレクトリのセットアップ
+## ステップ1: ドキュメントディレクトリの設定
 
-まず、ドキュメントが保存されているディレクトリを指定する必要があります。これは、Aspose.Words が作業したいファイルを見つけるのに役立ちます。
+まず、ドキュメントが保存されているディレクトリを指定する必要があります。これにより、Aspose.Words は操作するファイルを見つけやすくなります。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントへの実際のパスを含めます。
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントへの実際のパスを入力します。
 
-## ステップ 2: ソースドキュメントと宛先ドキュメントのロード
+## ステップ2: ソースドキュメントと宛先ドキュメントの読み込み
 
-次に、ソースドキュメント (追加されるドキュメント) と宛先ドキュメント (ソースが追加されるドキュメント) をロードします。
+次に、ソース ドキュメント (追加するドキュメント) と宛先ドキュメント (ソースが追加されるドキュメント) を読み込みます。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-ここでは 2 つを初期化します`Document`オブジェクト。`srcDoc`ソース文書を表し、`dstDoc`宛先ドキュメントを表します。
+ここでは2つの`Document`オブジェクト。`srcDoc`ソース文書を表し、`dstDoc`宛先ドキュメントを表します。
 
-## ステップ 3: ソースドキュメントを宛先ドキュメントに追加する
+## ステップ3: ソース文書を宛先文書に追加する
 
-ここからがエキサイティングな部分です。元の書式をそのまま維持しながら、ソース ドキュメントを宛先ドキュメントに追加します。
+ここで、興味深い部分、つまり、元の書式をそのまま維持しながらソース ドキュメントを宛先ドキュメントに追加します。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-このステップでは、`AppendDocument` つのドキュメントを結合する方法。の`ImportFormatMode.KeepSourceFormatting`パラメータにより、ソース文書の書式設定が確実に保持されます。
+このステップでは、`AppendDocument`2つの文書を結合する方法。`ImportFormatMode.KeepSourceFormatting`パラメータにより、ソース ドキュメントの書式が保持されます。
 
-## ステップ 4: 結合したドキュメントを保存する
+## ステップ4: 結合したドキュメントを保存する
 
-ドキュメントを追加した後の最後のステップは、結合されたドキュメントを新しい名前で保存することです。
+ドキュメントを追加した後、最後の手順として、結合したドキュメントを新しい名前で保存します。
 
 ```csharp
 dstDoc.Save(dataDir + "AppendedDocument.docx");
 ```
 
-ここでは、追加されたコンテンツが含まれていることを示す、わかりやすいファイル名を付けて追加されたドキュメントを保存します。
+ここでは、追加されたコンテンツが含まれていることを示す説明的なファイル名で追加されたドキュメントを保存します。
 
 ## 結論
 
-そして、それができました！ Aspose.Words for .NET を使用して、ある Word ドキュメントを別の Word ドキュメントに追加する方法を学習しました。このチュートリアルでは、環境のセットアップ、ドキュメントのロード、ソースの書式を維持したままのドキュメントの別のドキュメントへの追加、結合されたドキュメントの保存について説明しました。 Aspose.Words は幅広い機能を提供するため、必ず調べてください。[APIドキュメント](https://reference.aspose.com/words/net/)その可能性を最大限に引き出すために。
+これで完了です。Aspose.Words for .NET を使用して Word 文書を別の文書に追加する方法を学習しました。このチュートリアルでは、環境の設定、文書の読み込み、元の書式を維持したまま文書を別の文書に追加する方法、結合した文書を保存する方法について説明しました。Aspose.Words にはさまざまな機能がありますので、ぜひ詳細を確認してください。[APIドキュメント](https://reference.aspose.com/words/net/)その潜在能力を最大限に引き出すために。
 
 ## よくある質問
 
@@ -85,18 +85,18 @@ dstDoc.Save(dataDir + "AppendedDocument.docx");
 
 Aspose.Words for .NET は、開発者が Word ドキュメントをプログラムで作成、操作、変換できるようにする強力なライブラリです。ドキュメント関連のタスクを自動化するのに最適です。
 
-### 2. Aspose.Words for .NET は無料で使用できますか?
+### 2. Aspose.Words for .NET を無料で使用できますか?
 
- Aspose.Words for .NET を試すことができます。[無料トライアル](https://releases.aspose.com/)。長期間使用するには、ライセンスを購入する必要があります。
+ Aspose.Words for .NETを試すには、[無料トライアル](https://releases.aspose.com/)長期使用にはライセンスを購入する必要があります。
 
-### 3. ドキュメントを追加するときに書式が確実に保持されるようにするにはどうすればよいですか?
+### 3. ドキュメントを追加するときに書式設定が保持されるようにするにはどうすればよいですか?
 
-使用`ImportFormatMode.KeepSourceFormatting`のパラメータ`AppendDocument`ソースドキュメントの書式設定を保存するメソッド。
+使用`ImportFormatMode.KeepSourceFormatting`パラメータの`AppendDocument`ソース ドキュメントの書式を保持する方法。
 
 ### 4. Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
 
-にアクセスしてサポートを受けることができます。[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8).
+サポートを受けるには、[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8).
 
-### 5. 異なる形式のドキュメントを追加できますか?
+### 5. 異なる形式の文書を追加できますか?
 
 はい、Aspose.Words はさまざまな形式をサポートしており、DOCX、DOC、RTF などのさまざまな形式のドキュメントを追加できます。

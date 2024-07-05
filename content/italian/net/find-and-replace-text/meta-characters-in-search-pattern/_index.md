@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Passaggio 4: inserimento di un'interruzione di pagina nel documento
 
- Per illustrare l'uso di un altro metacarattere, inseriremo un'interruzione di pagina nel documento utilizzando il`InsertBreak` metodo con il`BreakType.PageBreak` parametri. Per prima cosa spostiamo il cursore da`DocumentBuilder` alla fine del documento, quindi inseriamo l'interruzione di pagina e una nuova riga di testo:
+ Per illustrare l'uso di un altro metacarattere, inseriremo un'interruzione di pagina nel documento utilizzando il`InsertBreak` metodo con il`BreakType.PageBreak` parametro. Per prima cosa spostiamo il cursore da`DocumentBuilder` alla fine del documento, quindi inseriamo l'interruzione di pagina e una nuova riga di testo:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### D: Come inserire un'interruzione di pagina in un documento utilizzando Aspose.Words per .NET?
 
-R: Per illustrare l'uso di un altro metacarattere, inseriremo un'interruzione di pagina nel documento utilizzando il`InsertBreak` metodo con il`BreakType.PageBreak` parametri. Per prima cosa spostiamo il cursore da`DocumentBuilder` alla fine del documento, quindi inseriamo l'interruzione di pagina e una nuova riga di testo:
+R: Per illustrare l'uso di un altro metacarattere, inseriremo un'interruzione di pagina nel documento utilizzando il`InsertBreak` metodo con il`BreakType.PageBreak` parametro. Per prima cosa spostiamo il cursore da`DocumentBuilder` alla fine del documento, quindi inseriamo l'interruzione di pagina e una nuova riga di testo:
 
 ```csharp
 builder. MoveToDocumentEnd();

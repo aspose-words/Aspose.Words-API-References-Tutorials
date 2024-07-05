@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Belgeyi yükleyin ve yazı tipi değiştirme ayarlarını yapılandırın
- Daha sonra belgeyi kullanarak yükleyeceğiz.`Document` kullanarak yazı tipi geçersiz kılma ayarlarını sınıflandırın ve yapılandırın.`FontSettings` sınıf. Noto yazı tipi geri dönüş ayarlarını kullanarak yükleyeceğiz.`LoadNotoFallbackSettings()` yöntem.
+ Daha sonra belgeyi kullanarak yükleyeceğiz.`Document` kullanarak yazı tipi geçersiz kılma ayarlarını sınıflandırın ve yapılandırın.`FontSettings`sınıf. Noto yazı tipi geri dönüş ayarlarını kullanarak yükleyeceğiz.`LoadNotoFallbackSettings()` yöntem.
 
 ```csharp
 // Belgeyi yükleyin ve yazı tipi değiştirme ayarlarını yapılandırın
@@ -67,7 +67,7 @@ C: Noto yazı tipi değiştirme ayarlarını Aspose.Words ile bir Word belgesine
 
 #### S: Word belgelerinde Noto yazı tiplerini kullanmak tutarlı metin görselleştirmesi sağlar mı?
 
-C: Evet, Word belgelerinde Noto yazı tiplerini kullanmak tutarlı metin görselleştirmesi sağlar. Noto yazı tipleri, birçok dili ve karakteri destekleyecek şekilde tasarlanmış olup, gerekli yazı tipleri mevcut olmadığında bile tutarlı bir görünümün korunmasına yardımcı olur.
+C: Evet, Word belgelerinde Noto yazı tiplerini kullanmak tutarlı metin görselleştirmesi sağlar. Noto yazı tipleri birçok dili ve karakteri destekleyecek şekilde tasarlanmıştır; gerekli yazı tipleri mevcut olmadığında bile tutarlı bir görünümün korunmasına yardımcı olur.
 
 #### S: Noto yazı tipleri ücretsiz mi?
 

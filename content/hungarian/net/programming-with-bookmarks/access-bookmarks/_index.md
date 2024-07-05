@@ -17,7 +17,7 @@ Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogya
 
 ## 1. lépés: A dokumentum betöltése
 
- Mielőtt hozzáférnénk a könyvjelzőkhöz, be kell töltenünk egy Word dokumentumot az Aspose.Words for .NET segítségével. Ez megtehető az a. példányosításával`Document` a dokumentum fájl elérési útját meghatározó objektum:
+ Mielőtt hozzáférnénk a könyvjelzőkhöz, be kell töltenünk egy Word dokumentumot az Aspose.Words for .NET segítségével. Ezt úgy lehet megtenni, hogy a`Document` a dokumentum fájl elérési útját meghatározó objektum:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 ## 2. lépés: Hozzáférés a könyvjelzőkhöz
 
-dokumentum betöltése után elérhetjük a dokumentumban lévő könyvjelzőket. A könyvjelzőket kétféleképpen érheti el: index és név alapján.
+A dokumentum betöltése után elérhetjük a dokumentumban lévő könyvjelzőket. A könyvjelzőket kétféleképpen érheti el: index és név alapján.
 
 - Hozzáférés index alapján: Példánkban a 0 indexet használjuk a dokumentum első könyvjelzőjének eléréséhez:
 

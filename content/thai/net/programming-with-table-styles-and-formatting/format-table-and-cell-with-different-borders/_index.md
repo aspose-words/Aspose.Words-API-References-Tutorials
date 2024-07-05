@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 	builder.Writeln("Cell #1");
 	builder.InsertCell();
-	// ระบุเฉดสีของเซลล์อื่นสำหรับเซลล์ที่สอง
+	// ระบุการแรเงาเซลล์อื่นสำหรับเซลล์ที่สอง
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 	builder.Writeln("Cell #2");
 	builder.EndRow();

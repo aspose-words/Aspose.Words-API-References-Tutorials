@@ -33,7 +33,7 @@ doc.save("output.pdf", saveOptions);
 
 ## การควบคุมตัวเลือกการบันทึก PDF
 
- คุณสามารถควบคุมตัวเลือกการบันทึก PDF ต่างๆ ได้โดยใช้`PdfSaveOptions` ชั้นเรียน ตัวอย่างเช่น คุณสามารถตั้งชื่อที่แสดงสำหรับเอกสาร PDF ได้ดังนี้:
+ คุณสามารถควบคุมตัวเลือกการบันทึก PDF ต่างๆ ได้โดยใช้`PdfSaveOptions` ระดับ. ตัวอย่างเช่น คุณสามารถตั้งชื่อที่แสดงสำหรับเอกสาร PDF ได้ดังนี้:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -81,7 +81,7 @@ saveOptions.setImageCompression(PdfImageCompression.JPEG);
 doc.save("output.pdf", saveOptions);
 ```
 
-## อัปเดตคุณสมบัติการพิมพ์ครั้งล่าสุด
+## การอัปเดตคุณสมบัติการพิมพ์ครั้งล่าสุด
 
 หากต้องการอัปเดตคุณสมบัติ "พิมพ์ล่าสุด" ใน PDF ให้ใช้:
 

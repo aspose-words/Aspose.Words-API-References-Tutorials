@@ -93,7 +93,7 @@ O: Tak, możesz sformatować tekst komentarza w Aspose.Words dla .NET, korzystaj
 
 #### P: Jak mogę odzyskać wszystkie komentarze znajdujące się w dokumencie?
 
- Odp.: Możesz pobrać wszystkie komentarze zawarte w dokumencie za pomocą`Document.Comments` nieruchomość.
+ Odp.: Możesz pobrać wszystkie komentarze znajdujące się w dokumencie za pomocą`Document.Comments` nieruchomość.
 
 #### P: Czy mogę usunąć konkretny komentarz w Aspose.Words dla .NET?
 

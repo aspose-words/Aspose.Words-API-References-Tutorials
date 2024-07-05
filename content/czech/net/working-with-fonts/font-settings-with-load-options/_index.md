@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fonts/font-settings-with-load-options/
 ---
-tomto tutoriálu vám ukážeme, jak používat možnosti načítání s nastavením písma v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Volby načítání umožňují zadat další nastavení při načítání dokumentu, včetně nastavení písma. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+V tomto tutoriálu vám ukážeme, jak používat možnosti načítání s nastavením písma v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Volby načítání umožňují zadat další nastavení při načítání dokumentu, včetně nastavení písma. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
 
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující položky:
@@ -51,13 +51,13 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
 ## Závěr
-tomto tutoriálu jsme viděli, jak používat možnosti načítání s nastavením písma v dokumentu aplikace Word s Aspose.Words pro .NET. Volby načítání umožňují přizpůsobit načítání dokumentu zadáním dalších nastavení, včetně nastavení písma. Neváhejte použít tuto funkci k přizpůsobení načítání dokumentů vašim konkrétním potřebám.
+V tomto tutoriálu jsme viděli, jak používat možnosti načítání s nastavením písma v dokumentu aplikace Word s Aspose.Words pro .NET. Volby načítání umožňují přizpůsobit načítání dokumentu zadáním dalších nastavení, včetně nastavení písma. Neváhejte použít tuto funkci k přizpůsobení načítání dokumentů vašim konkrétním potřebám.
 
 ### FAQ
 
 #### Otázka: Jak mohu určit výchozí písmo při načítání dokumentu do Aspose.Words?
 
- A: Chcete-li určit výchozí písmo při načítání dokumentu v Aspose.Words, můžete použít`LoadOptions` třídu a nastavte`DefaultFontName` vlastnost na název požadovaného písma.
+A: Chcete-li určit výchozí písmo při načítání dokumentu v Aspose.Words, můžete použít`LoadOptions` třídu a nastavte`DefaultFontName` vlastnost na název požadovaného písma.
 
 #### Otázka: Jaká další nastavení písma mohu určit pomocí možností načítání v Aspose.Words?
 
@@ -69,4 +69,4 @@ Odpověď: Pokud zadané výchozí písmo není dostupné, když je dokument na�
 
 #### Otázka: Mohu zadat různá nastavení písma pro každý nahraný dokument?
 
- Odpověď: Ano, můžete určit různá nastavení písma pro každý načtený dokument pomocí samostatných instancí souboru`LoadOptions` třídy a nastavení požadovaného nastavení písma pro každou instanci. To vám umožní přizpůsobit vzhled písma pro každý dokument nezávisle.
+ Odpověď: Ano, můžete určit různá nastavení písma pro každý načtený dokument pomocí samostatných instancí souboru`LoadOptions`třídy a nastavení požadovaného nastavení písma pro každou instanci. To vám umožní přizpůsobit vzhled písma pro každý dokument nezávisle.

@@ -93,7 +93,7 @@ R: Para eliminar la protección de documentos usando Aspose.Words para .NET, pue
 
 #### P: ¿Puedo eliminar la protección de un documento de Word sin contraseña?
 
- R: Sí, puede eliminar la protección de un documento de Word sin contraseña usando Aspose.Words para .NET. llamando al`Unprotect` método de la`Document`objeto sin proporcionar una contraseña, puede eliminar la protección del documento si anteriormente estaba protegido sin contraseña.
+ R: Sí, puede eliminar la protección de un documento de Word sin contraseña utilizando Aspose.Words para .NET. llamando al`Unprotect` método de la`Document`objeto sin proporcionar una contraseña, puede eliminar la protección del documento si anteriormente estaba protegido sin contraseña.
 
 #### P: ¿Cómo puedo eliminar la protección de un documento de Word con contraseña?
 

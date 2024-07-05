@@ -17,7 +17,7 @@ Assicurati di avere i seguenti prerequisiti:
 - Aspose.Words per la libreria .NET installata. È possibile scaricarlo utilizzando Gestione pacchetti NuGet per installarlo.
 - Un percorso della directory del documento in cui verrà salvato il documento di output.
 
-## Passaggio 2: crea un nuovo documento e inserisci un grafico.
+## Passaggio 2: crea un nuovo documento e inserisci un grafico
 
  Creane uno nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 
@@ -141,7 +141,7 @@ Utilizzando Aspose.Words per .NET, puoi integrare perfettamente le funzionalità
 Aspose.Words per .NET è una potente libreria di elaborazione documenti che consente agli sviluppatori di creare, manipolare e salvare documenti Word a livello di codice nelle applicazioni .NET. Fornisce un'ampia gamma di funzionalità per l'elaborazione di parole con elementi di documenti, inclusi i grafici.
 
 #### Q2. Come posso installare Aspose.Words per .NET?
-È possibile installare Aspose.Words per .NET scaricandolo utilizzando il gestore pacchetti NuGet in Visual Studio. Cerca semplicemente "Apose.Words" nel gestore pacchetti NuGet e installalo nel tuo progetto.
+È possibile installare Aspose.Words per .NET scaricandolo utilizzando il gestore pacchetti NuGet in Visual Studio. Cerca semplicemente "Aspose.Words" nel gestore pacchetti NuGet e installalo nel tuo progetto.
 
 #### Q3. Posso personalizzare altri aspetti del grafico utilizzando Aspose.Words per .NET?
 Sì, Aspose.Words per .NET offre ampie funzionalità per personalizzare vari aspetti di un grafico. Oltre a definire le proprietà degli assi, puoi modificare il tipo di grafico, le serie di dati, la legenda, il titolo, l'area del tracciato, le etichette dei dati e molti altri elementi del grafico. L'API offre un controllo capillare sull'aspetto e sul comportamento del grafico.
@@ -153,4 +153,4 @@ Sì, Aspose.Words per .NET offre ampie funzionalità per personalizzare vari asp
 Sì, Aspose.Words per .NET ti consente di salvare il documento contenente il grafico in vari formati, come DOCX, PDF, HTML e altro. Puoi scegliere il formato appropriato in base alle tue esigenze e utilizzare il file`Save` metodo del`Document` oggetto per salvare il documento.
 
 #### Q6. Posso applicare queste tecniche a più grafici in un documento?
- Sì, puoi applicare queste tecniche a più grafici in un documento ripetendo i passaggi necessari per ciascun grafico. Puoi creare file separati`Chart` E`ChartAxis` oggetti per ciascun grafico e personalizzarne le proprietà di conseguenza. Aspose.Words per .NET fornisce il supporto completo per l'elaborazione di parole con più grafici in un unico documento.
+ Sì, puoi applicare queste tecniche a più grafici in un documento ripetendo i passaggi necessari per ciascun grafico. Puoi creare file separati`Chart` E`ChartAxis` oggetti per ogni grafico e personalizzarne le proprietà di conseguenza. Aspose.Words per .NET fornisce il supporto completo per l'elaborazione di parole con più grafici in un unico documento.

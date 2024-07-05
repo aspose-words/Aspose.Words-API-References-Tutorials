@@ -48,7 +48,7 @@ Aspose.Words를 사용하면 변환 프로세스 중에 머리글, 바닥글 및
 
 ### 전제조건
 
-Python용 Aspose.Words를 설치하기 전에 시스템에 Python이 설치되어 있어야 합니다. Aspose.Releases(https://releases.aspose.com/words/python/) 설치 지침을 따르세요.
+Python용 Aspose.Words를 설치하기 전에 시스템에 Python이 설치되어 있어야 합니다. Aspose.Releases(https://releases.aspose.com/words/python/) 설치 지침을 따르십시오.
 
 ### 설치 단계
 

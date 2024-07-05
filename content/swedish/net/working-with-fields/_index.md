@@ -23,7 +23,7 @@ Det här är en omfattande resurs för att lära dig hur man arbetar med fält i
 | [Infoga sammanslagningsfält med DOM](./insert-merge-field-using-dom/) | Lär dig hur du infogar anpassade sammanslagningsfält i dina Word-dokument med Aspose.Words för .NET. |
 | [Infoga Mail Merge Address Block Field med DOM](./insert-mail-merge-address-block-field-using-dom/) | Lär dig hur du infogar ett blockeringsfält för e-postsammanslagning i dina Word-dokument med Aspose.Words för .NET. |
 | [Infoga FieldIncludeText utan dokumentbyggare](./insert-field-include-text-without-document-builder/) | Lär dig hur du infogar ett FieldIncludeText-fält i dina Word-dokument med Aspose.Words för .NET. |
-| [Infoga fält Inget](./insert-field-none/) | Lär dig hur du skapar dokument med AUCUN i Word med Aspose.Words för .NET. |
+| [Infoga fält Inget](./insert-field-none/) | Lär dig hur du lägger in en mästare AUCUN i dokumenten Word avec Aspose.Words för .NET. |
 | [Infoga fält](./insert-field/) | Lär dig hur du infogar ett fält i dina Word-dokument med Aspose.Words för .NET. Anpassa dina dokument med dynamiska fält. |
 | [Infoga fält med Field Builder](./insert-field-using-field-builder/) | Lär dig hur du infogar anpassade fält i dina Word-dokument med Aspose.Words för .NET. |
 | [Infoga författarefält](./insert-author-field/) | Lär dig hur du infogar ett AUTHOR-fält i dina Word-dokument med Aspose.Words för .NET. Ange författarens namn för att anpassa dina dokument. |
@@ -35,6 +35,6 @@ Det här är en omfattande resurs för att lära dig hur man arbetar med fält i
 | [Fältvisningsresultat](./field-display-results/) | Steg för steg guide för att visa fältresultat i dina Word-dokument med Aspose.Words för .NET. |
 | [Utvärdera IF tillstånd](./evaluate-ifcondition/) | Steg för steg guide för att utvärdera IF-villkoret i dina Word-dokument med Aspose.Words för .NET. |
 | [Konvertera fält i stycke](./convert-fields-in-paragraph/) | Konvertera IF-fält till vanlig text i ett stycke med Aspose.Words för .NET. |
-| [Konvertera fält i dokument](./convert-fields-in-document/) | Steg-för-steg-guide för att konvertera dokumentfält till text med Aspose.Words för .NET. |
+| [Konvertera fält i dokument](./convert-fields-in-document/) | Steg-för-steg guide för att konvertera dokumentfält till text med Aspose.Words för .NET. |
 | [Konvertera fält i kroppen](./convert-fields-in-body/) | Lär dig hur du använder Aspose.Words för .NET för att konvertera sidfält till text i brödtexten i ett Word-dokument. |
 | [Ändra språk](./change-locale/) | Lär dig hur du ändrar språk för datum- och nummerformatering i Word-dokument med Aspose.Words för .NET. |

@@ -25,7 +25,7 @@ import aspose.words
 
 ## Pochopení maker VBA a jejich role
 
-Makra jazyka VBA nebo makra Visual Basic for Applications jsou skripty, které umožňují automatizaci aplikací sady Microsoft Office. Tato makra lze použít k provádění široké škály úkolů, od jednoduchých změn formátování až po komplexní extrakci a manipulaci s daty.
+Makra VBA nebo makra Visual Basic for Applications jsou skripty, které umožňují automatizaci v aplikacích Microsoft Office. Tato makra lze použít k provádění široké škály úkolů, od jednoduchých změn formátování až po komplexní extrakci dat a manipulaci s nimi.
 
 ## Integrace Aspose.Words Python s makry VBA
 

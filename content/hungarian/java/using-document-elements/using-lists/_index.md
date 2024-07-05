@@ -2,7 +2,7 @@
 title: Listák használata az Aspose.Words for Java-ban
 linktitle: Listák használata
 second_title: Aspose.Words Java Document Processing API
-description: Tanulja meg a listák használatát az Aspose.Words for Java programban ezzel a lépésenkénti oktatóanyaggal. Hatékonyan rendszerezze és formázza dokumentumait.
+description: Tanulja meg a listák használatát az Aspose.Words for Java programban ezzel a lépésről lépésre mutató oktatóanyaggal. Hatékonyan rendszerezze és formázza dokumentumait.
 type: docs
 weight: 18
 url: /hu/java/using-document-elements/using-lists/
@@ -78,7 +78,7 @@ Ezen lépések követésével dokumentumokat hozhat létre listákkal, amelyek m
 
 ## Listaszintek megadása
 
-Az Aspose.Words for Java lehetővé teszi listaszintek megadását, ami különösen akkor hasznos, ha különböző listaformátumokra van szüksége a dokumentumban. Nézzük meg, hogyan kell ezt megtenni:
+Az Aspose.Words for Java lehetővé teszi listaszintek megadását, ami különösen akkor hasznos, ha különböző listaformátumokra van szüksége a dokumentumban. Vizsgáljuk meg, hogyan kell ezt megtenni:
 
 ### A dokumentum inicializálása: 
 Hozzon létre egy új dokumentumobjektumot.
@@ -164,7 +164,7 @@ Ezeket a lépéseket követve egyéni listaszintű dokumentumokat hozhat létre,
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Hozzon létre egy számozott listát az egyik Microsoft Word listasablon alapján.
+        // Hozzon létre egy számozott listát az egyik Microsoft Word listasablon alapján
         //és alkalmazza a dokumentumkészítő aktuális bekezdésére.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Kilenc szint található ebben a listában, próbáljuk ki mindegyiket.
@@ -173,7 +173,7 @@ Ezeket a lépéseket követve egyéni listaszintű dokumentumokat hozhat létre,
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Hozzon létre egy felsorolásjeles listát a Microsoft Word listasablonjainak egyike alapján.
+        // Hozzon létre egy felsorolásjeles listát a Microsoft Word listasablonjainak egyike alapján
         //és alkalmazza a dokumentumkészítő aktuális bekezdésére.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

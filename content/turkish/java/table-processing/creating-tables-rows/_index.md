@@ -28,7 +28,7 @@ public class TableCreation {
         // Yeni bir Belge oluştur
         Document doc = new Document();
         
-        // 3 satır ve 3 sütundan oluşan bir tablo oluşturun.
+        // 3 satır ve 3 sütundan oluşan bir tablo oluşturun
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // Tablo hücrelerini verilerle doldurma

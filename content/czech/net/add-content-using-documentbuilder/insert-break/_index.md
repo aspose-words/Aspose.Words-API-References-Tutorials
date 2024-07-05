@@ -15,7 +15,7 @@ Nazdárek! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Tato v�
 
 Než se pustíme do kódu, ujistěte se, že máme vše, co potřebujeme:
 
-1.  Aspose.Words for .NET Library: Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/) . Pokud jste v Aspose noví, možná budete chtít začít s a[zkušební verze zdarma](https://releases.aspose.com/).
+1.  Aspose.Words for .NET Library: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) . Pokud jste v Aspose noví, možná budete chtít začít s a[zkušební verze zdarma](https://releases.aspose.com/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 3. .NET Framework: Ujistěte se, že máte nainstalované rozhraní .NET Framework.
 4. Základní znalost C#: Tento tutoriál předpokládá, že jste obeznámeni s programováním v C#.

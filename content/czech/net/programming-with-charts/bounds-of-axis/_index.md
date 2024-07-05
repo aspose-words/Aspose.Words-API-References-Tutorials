@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Vytvořte nový dokument a DocumentBuilder
- Vytvořte novou instanci souboru`Document` třída a a`DocumentBuilder` objekt pracovat s dokumentem.
+ Vytvořte novou instanci souboru`Document` třída a a`DocumentBuilder`objekt pracovat s dokumentem.
 
 ```csharp
 Document doc = new Document();
@@ -83,10 +83,10 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 	doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-je to! Úspěšně jste nastavili hranice osy v grafu pomocí Aspose.Words for .NET.
+A je to! Úspěšně jste nastavili hranice osy v grafu pomocí Aspose.Words for .NET.
 
 ## Závěr
-V tomto tutoriálu jste se naučili, jak nastavit hranice osy v grafu pomocí Aspose.Words pro .NET. Podle podrobného průvodce můžete vkládat a konfigurovat graf, přidávat data sérií a definovat minimální a maximální hodnoty pro změnu měřítka os. Aspose.Words for .NET poskytuje výkonné a flexibilní rozhraní API pro zpracování textu s dokumenty aplikace Word, které vám umožňuje snadno vytvářet dynamické a vizuálně přitažlivé grafy.
+tomto tutoriálu jste se naučili, jak nastavit hranice osy v grafu pomocí Aspose.Words pro .NET. Podle podrobného průvodce můžete vložit a nakonfigurovat graf, přidat data řad a definovat minimální a maximální hodnoty pro měřítko os. Aspose.Words for .NET poskytuje výkonné a flexibilní rozhraní API pro zpracování textu s dokumenty aplikace Word, které vám umožňuje snadno vytvářet dynamické a vizuálně přitažlivé grafy.
 
 
 ### Nejčastější dotazy
@@ -95,7 +95,7 @@ V tomto tutoriálu jste se naučili, jak nastavit hranice osy v grafu pomocí As
 Aspose.Words for .NET je knihovna, která umožňuje vývojářům pracovat s dokumenty Wordu programově. Poskytuje širokou škálu funkcí a funkcí pro vytváření, manipulaci a ukládání dokumentů aplikace Word.
 
 #### Q2. Jak mohu nainstalovat Aspose.Words pro .NET?
-Chcete-li nainstalovat Aspose.Words for .NET, můžete použít správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Apose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
+Chcete-li nainstalovat Aspose.Words for .NET, můžete použít správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Aspose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
 
 #### Q3. Mohu používat Aspose.Words pro .NET s jinými programovacími jazyky?
 Ne, Aspose.Words for .NET je speciálně navržen pro aplikace .NET. Pracuje s programovacími jazyky jako C# a VB.NET.

@@ -28,7 +28,7 @@ public class TableCreation {
         // 새 문서 만들기
         Document doc = new Document();
         
-        // 3개의 행과 3개의 열로 구성된 테이블을 만듭니다.
+        // 행 3개와 열 3개로 구성된 테이블 만들기
         Table table = doc.getSections().get(0).getBody().appendTable(3, 3);
         
         // 테이블 셀을 데이터로 채웁니다.

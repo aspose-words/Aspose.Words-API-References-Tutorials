@@ -18,7 +18,7 @@ url: /th/net/add-content-using-documentbuilder/horizontal-rule-format/
 - Visual Studio: ติดตั้ง Visual Studio IDE สำหรับการพัฒนา .NET
 - Aspose.Words สำหรับ .NET: ดาวน์โหลดและติดตั้ง Aspose.Words สำหรับ .NET จาก[ที่นี่](https://releases.aspose.com/words/net/).
 - ความรู้พื้นฐาน C#: ความคุ้นเคยกับพื้นฐานภาษาการเขียนโปรแกรม C#
--  คลาส DocumentBuilder: ความเข้าใจเกี่ยวกับ`DocumentBuilder` คลาสใน Aspose คำสำหรับการจัดการเอกสาร
+-  คลาส DocumentBuilder: ความเข้าใจเกี่ยวกับ`DocumentBuilder` คลาสใน Aspose.Words สำหรับการจัดการเอกสาร
 
 ## นำเข้าเนมสเปซ
 
@@ -71,7 +71,7 @@ horizontalRuleFormat.NoShade = true;
 
 ## ขั้นตอนที่ 4: บันทึกเอกสาร
 
- สุดท้าย ให้บันทึกเอกสารที่แก้ไขโดยใช้ไฟล์`Save` วิธีการของ`Document` วัตถุ วัตถุ
+ สุดท้าย ให้บันทึกเอกสารที่แก้ไขโดยใช้ไฟล์`Save` วิธีการของ`Document` วัตถุ.
 
 ```csharp
 builder.Document.Save(dataDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");

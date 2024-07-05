@@ -45,7 +45,7 @@ doc.print("printerName");
 
 ## Dokumentumok renderelése
 
-A dokumentumok renderelése elengedhetetlen, ha különböző formátumokba, például PDF-be, XPS-be vagy képekbe kell konvertálnia őket. Az Aspose.Words for Java kiterjedt megjelenítési lehetőségeket kínál. A dokumentumot PDF formátumba a következőképpen lehet renderelni:
+A dokumentumok renderelése elengedhetetlen, ha különböző formátumokba, például PDF-be, XPS-be vagy képekbe kell konvertálnia őket. Az Aspose.Words for Java kiterjedt megjelenítési lehetőségeket kínál. A következőképpen tud dokumentumot PDF formátumba renderelni:
 
 ```java
 // Rendelje le a dokumentumot PDF formátumban
@@ -60,7 +60,7 @@ Az Aspose.Words for Java lehetővé teszi a nyomtatás és a megjelenítés kül
 
 ## Dokumentumformátumok kezelése
 
-Az Aspose.Words for Java a dokumentumformátumok széles skáláját támogatja, beleértve a DOC, DOCX, RTF, HTML és egyebeket. Különböző formátumú dokumentumokat tölthet be, és különféle kimeneti formátumokban mentheti el, így sokoldalúan használható dokumentumfeldolgozási igényeihez.
+Az Aspose.Words for Java a dokumentumformátumok széles skáláját támogatja, beleértve a DOC, DOCX, RTF, HTML és egyebeket. Különböző formátumú dokumentumokat tölthet be, és különféle kimeneti formátumokba mentheti, így sokoldalúan használható dokumentumfeldolgozási igényeihez.
 
 ## Következtetés
 

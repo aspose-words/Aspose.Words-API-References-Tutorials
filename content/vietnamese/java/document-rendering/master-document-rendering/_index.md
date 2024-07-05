@@ -132,7 +132,7 @@ Khi bạn đã xử lý và sửa đổi tài liệu, đã đến lúc hiển th
 Để hiển thị một tài liệu, bạn cần sử dụng phương thức lưu của lớp Tài liệu và chỉ định định dạng đầu ra mong muốn.
 
 ```java
-// Kết xuất sang PDF
+// Kết xuất thành PDF
 doc.save("output.pdf", SaveFormat.PDF);
 
 // Kết xuất sang XPS
@@ -215,7 +215,7 @@ Nắm vững cách kết xuất tài liệu là điều cần thiết để xây
 
 ## Câu hỏi thường gặp
 
-### Sự khác biệt giữa hiển thị tài liệu và xử lý tài liệu là gì?
+### Sự khác biệt giữa kết xuất tài liệu và xử lý tài liệu là gì?
 
 Kết xuất tài liệu liên quan đến việc chuyển đổi tài liệu điện tử thành dạng trình bày trực quan để người dùng xem, chỉnh sửa hoặc in, trong khi xử lý tài liệu bao gồm các tác vụ như trộn thư, chuyển đổi và bảo vệ.
 
@@ -233,4 +233,4 @@ Aspose.Words cho phép bạn áp dụng bảo vệ bằng mật khẩu cho các 
 
 ### Aspose.Words có thể hiển thị tài liệu bằng nhiều ngôn ngữ không?
 
-Có, Aspose.Words hỗ trợ hiển thị tài liệu bằng nhiều ngôn ngữ khác nhau và xử lý văn bản với các mã hóa ký tự khác nhau một cách liền mạch.
+Có, Aspose.Words hỗ trợ hiển thị tài liệu bằng nhiều ngôn ngữ khác nhau và xử lý liền mạch văn bản với các mã hóa ký tự khác nhau.

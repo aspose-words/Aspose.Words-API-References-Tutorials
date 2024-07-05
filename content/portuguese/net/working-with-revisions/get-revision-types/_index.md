@@ -12,7 +12,7 @@ Neste guia passo a passo, mostraremos como obter as revisões dos tipos de palav
 
 ## Passo 1: Carregando o documento
 
-O primeiro passo é fazer o upload do documento contendo as revisões.
+primeiro passo é fazer o upload do documento contendo as revisões.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### P: Como verificar se um parágrafo foi movido (excluído) no Aspose.Words for .NET?
 
- R: Use um parágrafo`IsMoveFromRevision` propriedade para verificar se ela foi movida (excluída).
+ R: Use um parágrafo`IsMoveFromRevision`propriedade para verificar se ela foi movida (excluída).
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### P: Como verificar se um parágrafo foi movido (inserido) no Aspose.Words for .NET?
 
- R: Use um parágrafo`IsMoveToRevision`propriedade para verificar se ela foi movida (inserida).
+ R: Use um parágrafo`IsMoveToRevision` propriedade para verificar se ela foi movida (inserida).
 
 ```csharp
 if (paragraph.IsMoveToRevision)

@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Bước 3: Thêm hình mờ văn bản với các tùy chọn cụ thể
 
- Chúng ta sẽ tạo một thể hiện của`TextWatermarkOptions` class và đặt các tùy chọn mong muốn cho hình mờ văn bản.
+ Chúng ta sẽ tạo một thể hiện của`TextWatermarkOptions`class và đặt các tùy chọn mong muốn cho hình mờ văn bản.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

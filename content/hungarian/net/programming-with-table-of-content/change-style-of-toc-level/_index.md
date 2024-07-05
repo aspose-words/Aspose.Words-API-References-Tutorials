@@ -109,7 +109,7 @@ Ez a kód "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx" néven menti 
 
 #### K: Alkalmazhatok más formázási változtatásokat a tartalomjegyzékben az Aspose.Words for .NET használatával?
 
-V: Igen, a stílus megváltoztatása mellett különféle formázási módosításokat is alkalmazhat a tartalomjegyzékben az Aspose.Words for .NET segítségével. Például módosíthatja a betűméretet, színt, igazítást, vagy további formázási tulajdonságokat adhat hozzá a tartalomjegyzék megjelenésének javításához.
+V: Igen, a stílus megváltoztatása mellett különféle formázási módosításokat is alkalmazhat a tartalomjegyzékben az Aspose.Words for .NET segítségével. Például módosíthatja a betűméretet, a színt, az igazítást, vagy további formázási tulajdonságokat adhat hozzá a tartalomjegyzék megjelenésének javításához.
 
 #### K: Hogyan adhatok meg egyéni stílust a tartalomjegyzék egy adott szintjéhez az Aspose.Words for .NET használatával?
 

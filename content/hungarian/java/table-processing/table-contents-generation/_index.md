@@ -105,7 +105,7 @@ Azáltal, hogy a TOC generálást egy módszerbe foglalja, könnyen beépítheti
 
 ## GYIK
 
-### Hogyan frissíthetek egy meglévő TOC-t?
+### Hogyan frissíthetek egy meglévő tartalomjegyzéket?
 
 A dokumentumban meglévő tartalomjegyzék frissítéséhez egyszerűen kattintson rá a jobb gombbal, és válassza a "Mező frissítése" lehetőséget. Az Aspose.Words for Java frissíti a tartalomjegyzéket a dokumentum fejlécében bekövetkezett változások alapján.
 

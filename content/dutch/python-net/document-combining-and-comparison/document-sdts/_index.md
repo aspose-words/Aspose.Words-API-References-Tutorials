@@ -67,7 +67,7 @@ Het toevoegen van SDT's aan een document omvat een paar eenvoudige stappen:
    doc.get_first_section().get_body().append_child(sdt)
    ```
 
-## Werken met SDT-inhoudsbesturingselementen
+## Werken met SDT-inhoudscontroles
 
 Met SDT-inhoudsbesturingselementen kunnen gebruikers met het document communiceren. Laten we een aantal algemene inhoudsbesturingselementen verkennen:
 

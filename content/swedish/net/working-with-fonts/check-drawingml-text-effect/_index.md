@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Ladda dokumentet och kontrollera texteffekterna
-Därefter laddar vi Word-dokumentet och kommer åt samlingen av körningar (teckensekvenser) i första stycket i dokumentets brödtext. Därefter kontrollerar vi om några specifika DrawingML-texteffekter tillämpas på teckensnittet för den första körningen.
+Därefter laddar vi Word-dokumentet och kommer åt samlingen av körningar (teckensekvenser) i det första stycket i dokumentets brödtext. Därefter kontrollerar vi om några specifika DrawingML-texteffekter tillämpas på teckensnittet för den första körningen.
 
 ```csharp
 // Ladda dokumentet

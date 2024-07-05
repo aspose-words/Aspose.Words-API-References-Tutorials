@@ -22,7 +22,7 @@ Document clone = doc.deepClone();
 clone.save("Your Directory Path" + "CloneAndCombineDocuments.CloningDocument.docx");
 ```
 
-Deze code maakt een diepe kloon van het originele document en slaat het op als een nieuw bestand.
+Deze code maakt een diepe kloon van het originele document en slaat dit op als een nieuw bestand.
 
 ## Stap 2: Documenten invoegen op vervangingspunten
 

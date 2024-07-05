@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### Vraag: Hoe kan ik toegang krijgen tot een tabel in een document met Aspose.Words voor .NET?
 
-A: Zodra het document is geladen, heeft u toegang tot de tabel waarin u tekstvervanging wilt uitvoeren. In Aspose.Words voor .NET kunt u de`GetChild` methode met de`NodeType.Table` parameters om de gewenste tabel te verkrijgen. Bijvoorbeeld:
+A: Zodra het document is geladen, heeft u toegang tot de tabel waarin u tekstvervanging wilt uitvoeren. In Aspose.Words voor .NET kunt u de`GetChild` methode met de`NodeType.Table` parameter om de gewenste tabel te verkrijgen. Bijvoorbeeld:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

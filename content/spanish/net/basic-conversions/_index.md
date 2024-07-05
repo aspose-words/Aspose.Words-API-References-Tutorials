@@ -13,14 +13,14 @@ Conversiones básicas lo guía a través de las conversiones básicas de documen
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Convertir documento a Docx](./doc-to-docx/) | Aprenda cómo convertir documentos de Word de formato Doc a Docx usando Aspose.Words para .NET.  |
-| [Convertir Docx A Rtf](./docx-to-rtf/) | Aprenda a convertir documentos de Word de formato Docx a RTF usando Aspose.Words para .NET.  |  
-| [Convertir archivo de Word a PDF](./docx-to-pdf/) | Aprenda a convertir documentos de Word de Docx a PDF usando Aspose.Words para .NET. | 
-| [Convertir Docx a byte](./docx-to-byte/) | Aprenda a convertir documentos de Word de Docx a una matriz de bytes usando Aspose.Words para .NET. |  
-| [Convertir Docx A Epub](./docx-to-epub/) | Aprenda a convertir documentos de Word de formato Docx a Epub usando Aspose.Words para .NET. |
-| [Convertir Docx a Mhtml y enviar correo electrónico](./docx-to-mhtml-and-sending-email/) | Aprenda cómo convertir documentos de Word de Docx a MHTML y enviarlos como correos electrónicos usando Aspose.Words y Aspose.Email. |
-| [Convertir archivo Docx a Markdown](./docx-to-markdown/) | Aprenda cómo convertir documentos de Word de formato Docx a Markdown usando Aspose.Words para .NET. |
-| [Convertir Docx A Texto](./docx-to-txt/) | Aprenda a convertir documentos de Word de Docx a texto sin formato (Txt) usando Aspose.Words para .NET. |
-| [Convertir archivo de texto a documento de Word](./txt-to-docx/) | Aprenda a convertir archivos de texto sin formato (Txt) a documentos de Word (Docx) usando Aspose.Words para .NET. | 
-| [Guardar Pdf como Jpeg](./pdf-to-jpeg/) | Aprenda a convertir documentos PDF a imágenes JPEG usando Aspose.Words para .NET. |
-| [Guardar PDF en formato Word (Docx)](./pdf-to-docx/) | Aprenda a convertir documentos PDF a formato Docx usando Aspose.Words para .NET.  |
+| [Convertir documento a Docx](./doc-to-docx/) | Aprenda cómo convertir DOC a DOCX usando Aspose.Words para .NET. Guía paso a paso con ejemplos de código. Perfecto para desarrolladores.  |
+| [Convertir Docx A Rtf](./docx-to-rtf/) | Aprenda cómo convertir DOCX a RTF usando Aspose.Words para .NET con esta guía paso a paso. Ideal para desarrolladores que buscan una solución eficiente.  |  
+| [Convertir archivo de Word a PDF](./docx-to-pdf/) | Aprenda cómo convertir fácilmente archivos de Word a PDF usando Aspose.Words para .NET con nuestra guía. Perfecto para desarrolladores que buscan una conversión de documentos rápida y confiable. | 
+| [Convertir Docx a byte](./docx-to-byte/) | Aprenda cómo convertir Docx a una matriz de bytes en .NET usando Aspose.Words para un procesamiento eficiente de documentos. Guía paso a paso incluida. |  
+| [Convertir Docx A Epub](./docx-to-epub/) | Convierta DOCX a EPUB fácilmente con Aspose.Words para .NET. Siga nuestro tutorial para una integración perfecta en sus aplicaciones .NET. |
+| [Convertir Docx a Mhtml y enviar correo electrónico](./docx-to-mhtml-and-sending-email/) | Aprenda cómo convertir DOCX a MHTML y enviar correos electrónicos usando Aspose.Words para .NET en esta guía paso a paso. Aumente su productividad con una sencilla automatización. |
+| [Convertir archivo Docx a Markdown](./docx-to-markdown/) | Aprenda cómo convertir archivos DOCX a Markdown usando Aspose.Words para .NET. Siga nuestra guía detallada para una integración perfecta en sus aplicaciones .NET. |
+| [Convertir Docx A Texto](./docx-to-txt/) | Convierta DOCX a TXT usando Aspose.Words para .NET con nuestra guía paso a paso. Aprenda a transformar documentos de manera eficiente y sin esfuerzo. |
+| [Convertir archivo de texto a documento de Word](./txt-to-docx/) | Aprenda a convertir archivos de texto a documentos de Word usando Aspose.Words para .NET. Administre eficientemente las conversiones de documentos con nuestra guía completa. | 
+| [Guardar Pdf como Jpeg](./pdf-to-jpeg/) | Convierta archivos PDF a JPEG sin esfuerzo utilizando Aspose.Words para .NET. Siga nuestra guía detallada con ejemplos y preguntas frecuentes. Perfecto para desarrolladores y entusiastas. |
+| [Guardar PDF en formato Word (Docx)](./pdf-to-docx/) | Aprenda cómo convertir un PDF a un documento de Word (Docx) usando Aspose.Words para .NET en esta guía detallada paso a paso. Perfecto para desarrolladores. |

@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          //在此實施您的自訂操作
          //您可以透過「args.PageIndex」屬性存取頁面訊息
-         //您也可以單獨變更每個頁面的儲存選項。
+         //您也可以單獨更改每個頁面的儲存選項
      }
 }
 ```

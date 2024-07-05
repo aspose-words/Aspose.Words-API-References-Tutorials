@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-Dans ce didacticiel, nous explorerons le code source C# fourni pour la fonctionnalité « Direction du texte du document » avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de spécifier le sens du texte dans un document, ce qui est particulièrement utile pour les langues qui s'écrivent de droite à gauche, comme l'hébreu ou l'arabe.
+Dans ce didacticiel, nous explorerons le code source C# fourni pour la fonctionnalité « Direction du texte du document » avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de spécifier le sens du texte dans un document, ce qui est particulièrement utile pour les langues écrites de droite à gauche, comme l'hébreu ou l'arabe.
 
 ## Étape 1 : Configuration de l'environnement
 
@@ -75,13 +75,13 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons exploré la fonctionnalité de direction du texte du document dans Aspose.Words pour .NET. Nous avons appris à préciser le sens du texte dans un document, notamment pour les langues qui s'écrivent de droite à gauche, comme l'hébreu ou l'arabe.
+Dans ce didacticiel, nous avons exploré la fonctionnalité de direction du texte du document dans Aspose.Words pour .NET. Nous avons appris à spécifier le sens du texte dans un document, en particulier pour les langues qui s'écrivent de droite à gauche, comme l'hébreu ou l'arabe.
 
 Cette fonctionnalité est essentielle pour garantir que le texte s'affiche correctement dans les documents multilingues. En utilisant les options de chargement appropriées, Aspose.Words peut détecter automatiquement la direction du texte et l'appliquer au document.
 
 Avec Aspose.Words, vous pouvez facilement manipuler la direction du texte dans vos documents, offrant ainsi une expérience de lecture fluide et intuitive aux utilisateurs.
 
-Il est important de noter que cette fonctionnalité est particulièrement utile lors du traitement de texte avec des langues qui nécessitent une direction de texte spécifique. Aspose.Words facilite cette tâche en fournissant des outils puissants pour gérer le sens du texte dans vos documents.
+Il est important de noter que cette fonctionnalité est particulièrement utile lors du traitement de texte avec des langues nécessitant une direction de texte spécifique. Aspose.Words facilite cette tâche en fournissant des outils puissants pour gérer le sens du texte dans vos documents.
 
 N'oubliez pas d'utiliser les options de chargement appropriées, telles que la définition de la direction automatique du texte, pour obtenir les résultats souhaités dans vos documents.
 

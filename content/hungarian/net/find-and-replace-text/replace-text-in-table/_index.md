@@ -34,7 +34,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 ## 3. lépés: Hajtsa végre a szövegcserét
 
- Most használjuk a`Range.Replace` metódus a szövegcsere végrehajtásához a tömbben. Példánkban a "Sárgarépa" szó minden előfordulását a "Tojás" szóra cseréljük a következővel`FindReplaceOptions` opcióval a`FindReplaceDirection.Forward` keresési irány. Ezenkívül az „50” értéket „20”-ra cseréljük a táblázat utolsó sorának utolsó cellájában:
+ Most használjuk a`Range.Replace` módszer a szövegcsere végrehajtására a tömbben. Példánkban a "Sárgarépa" szó minden előfordulását a "Tojás" szóra cseréljük a következővel`FindReplaceOptions` opcióval a`FindReplaceDirection.Forward` keresési irány. Ezenkívül az „50” értéket „20”-ra cseréljük a táblázat utolsó sorának utolsó cellájában:
 
 ```csharp
 table.Range.Replace("Carrots", "Eggs", new FindReplaceOptions(FindReplaceDirection.Forward));
@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### K: Hogyan érhetek el egy táblázatot egy dokumentumban az Aspose.Words for .NET használatával?
 
-V: A dokumentum betöltése után hozzáférhet ahhoz a táblázathoz, ahol szövegcserét szeretne végrehajtani. Az Aspose.Words for .NET programban használhatja a`GetChild` módszerrel a`NodeType.Table` paramétereket, hogy megkapja a kívánt táblázatot. Például:
+V: A dokumentum betöltése után hozzáférhet ahhoz a táblázathoz, ahol szövegcserét szeretne végrehajtani. Az Aspose.Words for .NET programban használhatja a`GetChild` módszerrel a`NodeType.Table` paramétert, hogy megkapja a kívánt táblát. Például:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

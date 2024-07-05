@@ -72,7 +72,7 @@ Hướng dẫn này đã cung cấp cho bạn hướng dẫn từng bước về
 
 #### Làm cách nào để chỉ định thư mục chứa tài liệu cần tìm kiếm chữ ký số?
 
- Để chỉ định thư mục chứa tài liệu mà bạn muốn tìm kiếm chữ ký số, bạn phải sửa đổi`dataDir` các biến trong mã. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+ Để chỉ định thư mục chứa tài liệu mà bạn muốn tìm kiếm chữ ký số, bạn phải sửa đổi`dataDir` biến trong mã. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

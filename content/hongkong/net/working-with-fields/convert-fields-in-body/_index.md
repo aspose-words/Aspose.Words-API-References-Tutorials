@@ -83,7 +83,7 @@ Aspose.Words 支援各種欄位類型，如 DATE、PAGE、MERGEFIELD 等，讓�
 是的，Aspose.Words for .NET 可以跨 DOCX、DOC、RTF 等格式無縫地轉換和操作欄位。
 
 ### 在哪裡可以找到 Aspose.Words for .NET 的綜合文件？
-提供詳細的文件和 API 參考。[這裡](https://reference.aspose.com/words/net/).
+提供詳細的文件和 API 參考[這裡](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET 有試用版嗎？
 是的，您可以從以下位置下載免費試用版[這裡](https://releases.aspose.com/).

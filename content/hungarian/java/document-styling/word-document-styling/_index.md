@@ -70,7 +70,7 @@ builder.insertShape(ShapeType.RECTANGLE, 100, 100);
 
 ### 4. A dokumentum mentése
 
-A dokumentum tartalom hozzáadása után mentse el a kívánt formátumban, például DOCX vagy PDF.
+Miután hozzáadta a tartalmat a dokumentumhoz, mentse el a kívánt formátumban, például DOCX vagy PDF.
 
 ```java
 doc.save("output.docx");
@@ -310,7 +310,7 @@ builder.writeln("Header content goes here");
 
 ### 3. Vízjelek és hátterek hozzáadása
 
-Vízjelek vagy hátterek hozzáadásához használja az Alakzat osztályt.
+Vízjelek vagy hátterek hozzáadásához használja a Shape osztályt.
 
 ```java
 import com.aspose.words.Shape;

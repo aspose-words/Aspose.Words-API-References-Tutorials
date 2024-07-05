@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Krok 3: Dodaj tekstowy znak wodny z określonymi opcjami
 
- Stworzymy instancję`TextWatermarkOptions` class i ustaw żądane opcje tekstowego znaku wodnego.
+ Stworzymy instancję`TextWatermarkOptions`class i ustaw żądane opcje tekstowego znaku wodnego.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

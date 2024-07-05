@@ -136,7 +136,7 @@ V tomto příkladu otevřeme dokument s tabulkou a slučovacími poli, nastavím
 
 ## Závěr
 
-V tomto kurzu jste se naučili, jak používat možnosti čištění v Aspose.Words for Java k manipulaci a čištění dokumentů během procesu hromadné korespondence. Tyto možnosti poskytují jemnou kontrolu nad čištěním dokumentů, což vám umožní snadno vytvářet leštěné a přizpůsobené dokumenty.
+V tomto kurzu jste se naučili, jak používat možnosti čištění v Aspose.Words pro Java k manipulaci a čištění dokumentů během procesu hromadné korespondence. Tyto možnosti poskytují jemnou kontrolu nad čištěním dokumentů, což vám umožní snadno vytvářet leštěné a přizpůsobené dokumenty.
 
 ## FAQ
 
@@ -158,7 +158,7 @@ Možnosti čištění v Aspose.Words for Java jsou nastavení, která vám umož
 
 ###  Co se stane, když nastavím`REMOVE_CONTAINING_FIELDS` option?
 
- Nastavení`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` Tato možnost odebere z dokumentu během procesu hromadné korespondence celé slučovací pole, včetně odstavce, který obsahuje. To je užitečné, když chcete odstranit slučovací pole a související text.
+ Nastavení`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` možnost odebere z dokumentu během procesu hromadné korespondence celé slučovací pole, včetně odstavce, který obsahuje. To je užitečné, když chcete odstranit slučovací pole a související text.
 
 ### Jak mohu z dokumentu odstranit nepoužívaná slučovací pole?
 

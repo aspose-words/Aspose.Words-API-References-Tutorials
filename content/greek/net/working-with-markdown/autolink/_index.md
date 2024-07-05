@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Βήμα 2: Εισαγωγή υπερσυνδέσμου
 
- Μπορούμε να εισάγουμε έναν υπερσύνδεσμο χρησιμοποιώντας το`InsertHyperlink` μέθοδο δημιουργίας εγγράφων. Καθορίζουμε τη διεύθυνση URL και το κείμενο που θα εμφανιστεί για τον σύνδεσμο.
+ Μπορούμε να εισάγουμε έναν υπερσύνδεσμο χρησιμοποιώντας το`InsertHyperlink` μέθοδος δημιουργίας εγγράφων. Καθορίζουμε τη διεύθυνση URL και το κείμενο που θα εμφανιστεί για τον σύνδεσμο.
 
 ```csharp
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
@@ -51,7 +51,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
 
-συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη δυνατότητα "Autolink" με το Aspose.Words για .NET.
+Συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη δυνατότητα "Autolink" με το Aspose.Words για .NET.
 
 
 ### Συχνές ερωτήσεις

@@ -8,7 +8,7 @@ weight: 23
 url: /id/java/document-manipulation/splitting-documents-into-pages/
 ---
 
-Jika Anda bekerja dengan pemrosesan dokumen di Java, Aspose.Words for Java adalah API canggih yang dapat membantu Anda membagi dokumen menjadi halaman terpisah secara efisien. Dalam tutorial langkah demi langkah ini, kami akan memandu Anda melalui proses pemisahan dokumen menggunakan kode sumber yang disediakan. Di akhir tutorial ini, Anda akan dapat membagi dokumen dengan mudah, sehingga meningkatkan kemampuan manajemen dokumen Anda.
+Jika Anda bekerja dengan pemrosesan dokumen di Java, Aspose.Words for Java adalah API canggih yang dapat membantu Anda membagi dokumen menjadi beberapa halaman terpisah secara efisien. Dalam tutorial langkah demi langkah ini, kami akan memandu Anda melalui proses pemisahan dokumen menggunakan kode sumber yang disediakan. Di akhir tutorial ini, Anda akan dapat membagi dokumen dengan mudah, sehingga meningkatkan kemampuan manajemen dokumen Anda.
 
 ## 1. Perkenalan
 
@@ -677,7 +677,7 @@ Untuk menambahkan Aspose.Words untuk Java ke proyek Anda, ikuti langkah-langkah 
 
 ### Bisakah saya membagi dokumen dalam format lain, seperti PDF atau DOCX?
 
-Tidak, panduan ini secara khusus mencakup pemisahan dokumen dalam format DOC menggunakan Aspose.Words untuk Java. Jika Anda perlu membagi dokumen dalam format lain, Anda mungkin perlu menjelajahi pustaka atau alat lain yang mendukung format tersebut.
+Tidak, panduan ini secara khusus mencakup pemisahan dokumen dalam format DOC menggunakan Aspose.Words untuk Java. Jika Anda perlu membagi dokumen dalam format lain, Anda mungkin perlu menjelajahi perpustakaan atau alat lain yang mendukung format tersebut.
 
 ### Apakah Aspose.Words untuk Java merupakan perpustakaan gratis?
 

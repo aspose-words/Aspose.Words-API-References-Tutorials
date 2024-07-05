@@ -1,98 +1,122 @@
 ---
 title: Vergleichsziel im Word-Dokument
 linktitle: Vergleichsziel im Word-Dokument
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Lernen Sie die Zielvergleichsfunktion in Word-Dokumenten von Aspose.Words für .NET kennen, mit der Sie Dokumente vergleichen und ein neues Dokument mit den vorgenommenen Änderungen erstellen können.
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Vergleichen Sie Word-Dokumente mühelos mit Aspose.Words für .NET mit dieser detaillierten Schritt-für-Schritt-Anleitung. Sparen Sie Zeit und verbessern Sie die Genauigkeit beim Dokumentvergleich.
 type: docs
 weight: 10
 url: /de/net/compare-documents/comparison-target/
 ---
-Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der das Vergleichsziel in der Word-Dokumentfunktionalität von Aspose.Words für .NET verwendet.
+## Einführung
 
-## Schritt 1: Einführung
+Hallo! Haben Sie schon einmal zwei Versionen eines Word-Dokuments verglichen und jede kleine Änderung manuell nachverfolgt? Das ist wie die Suche nach der Nadel im Heuhaufen, oder? Was wäre, wenn ich Ihnen sagen würde, dass es mit Aspose.Words für .NET eine super einfache Möglichkeit gibt, dies zu tun? Ganz genau! Mit dieser leistungsstarken Bibliothek können Sie Word-Dokumente im Handumdrehen vergleichen. Heute werde ich Sie Schritt für Schritt durch den Prozess führen. Sind Sie bereit, ein Zauberer für den Dokumentenvergleich zu werden? Dann legen wir los!
 
-Mit der Zielvergleichsfunktion von Aspose.Words für .NET können Sie zwei Dokumente vergleichen und ein neues Dokument erstellen, das die am Zieldokument vorgenommenen Änderungen enthält. Dies kann nützlich sein, um Änderungen zu verfolgen, die zwischen verschiedenen Versionen eines Dokuments vorgenommen wurden.
+## Voraussetzungen
 
-## Schritt 2: Einrichten der Umgebung
+Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie für den Einstieg benötigen:
 
-Bevor Sie beginnen, müssen Sie Ihre Entwicklungsumgebung für die Arbeit mit Aspose.Words für .NET einrichten. Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben und über ein geeignetes C#-Projekt zum Einbetten des Codes verfügen.
+1.  Aspose.Words für .NET: Sie benötigen diese Bibliothek. Wenn Sie sie noch nicht haben, holen Sie sie sich hier[Hier](https://releases.aspose.com/words/net/).
+2.  Eine Lizenz: Sie benötigen eine gültige Lizenz, um das volle Potenzial von Aspose.Words auszuschöpfen. Sie können eine kaufen[Hier](https://purchase.aspose.com/buy) oder holen Sie sich eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
+3. Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
+4. Grundkenntnisse in C#: Keine Sorge, Sie müssen kein Profi sein, ein gewisses Grundverständnis reicht aus.
 
-## Schritt 3: Erforderliche Baugruppen hinzufügen
+## Namespaces importieren
 
-Um die Vergleichszielfunktion von Aspose.Words für .NET nutzen zu können, müssen Sie Ihrem Projekt die erforderlichen Assemblys hinzufügen. Stellen Sie sicher, dass Ihr Projekt über die richtigen Verweise auf Aspose.Words verfügt.
+Als Erstes müssen Sie die erforderlichen Namespaces importieren. Diese sind sozusagen die Backstage-Crew, die dafür sorgt, dass alles reibungslos läuft.
 
 ```csharp
+using System;
 using Aspose.Words;
+using Aspose.Words.Compare;
 ```
 
-## Schritt 4: Dokumentinitialisierung
+Gut, kommen wir jetzt zum spannenden Teil – der Schritt-für-Schritt-Anleitung!
 
-In diesem Schritt initialisieren wir zwei Dokumente zum Vergleich. Sie müssen den Verzeichnispfad angeben, in dem sich Ihre Dokumente befinden, sowie den Namen des Quelldokuments.
+## Schritt 1: Richten Sie Ihr Projekt ein
+
+Bereiten wir unser Projekt vor. Starten Sie Ihre Entwicklungsumgebung und erstellen Sie ein neues C#-Projekt. Geben Sie ihm einen beliebigen Namen – „DocumentComparison“ klingt doch gut, oder?
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+// Erstellen eines neuen C#-Projekts in Visual Studio
+```
 
-// Initialisierung des zu vergleichenden Dokuments A.
+## Schritt 2: Installieren Sie Aspose.Words für .NET
+
+Als nächstes müssen Sie Aspose.Words zu Ihrem Projekt hinzufügen. Sie können dies über den NuGet Package Manager tun. Suchen Sie einfach nach Aspose.Words und installieren Sie es. Kinderleicht!
+
+```bash
+Install-Package Aspose.Words
+```
+
+## Schritt 3: Laden Sie Ihre Dokumente
+
+Okay, es ist Zeit, die Dokumente zu laden, die Sie vergleichen möchten. Sie benötigen die Pfade zu diesen Dokumenten. Nehmen wir an, Sie haben zwei Dokumente:`DocumentA.docx` Und`DocumentB.docx`.
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document docA = new Document(dataDir + "DocumentA.docx");
+Document docB = new Document(dataDir + "DocumentB.docx");
+```
 
-// Klonen Sie Dokument A, um eine identische Kopie von Dokument B zu erstellen.
+## Schritt 4: Klonen Sie das Dokument
+
+Das Klonen ist wie das Erstellen eines identischen Zwillings Ihres Dokuments. Dieser Schritt stellt sicher, dass Sie eine Sicherungskopie haben, die Sie mit dem Original vergleichen können.
+
+```csharp
 Document docB = docA.Clone();
 ```
 
-## Schritt 5: Vergleichsoptionen konfigurieren
+## Schritt 5: Vergleichsoptionen festlegen
 
-In diesem Schritt konfigurieren wir die Vergleichsoptionen, um das Verhalten des Vergleichs festzulegen. Zu den Optionen gehören die Möglichkeit, Formatierungen zu ignorieren, sowie das Vergleichsziel, bei dem es sich um die Option „Änderungen anzeigen in“ im Dialogfeld „Dokumente vergleichen“ von Microsoft Word handelt.
+Konfigurieren wir nun die Vergleichsoptionen. Möchten Sie die Formatierung ignorieren? Vielleicht sind Sie nur an Inhaltsänderungen interessiert. So können Sie es einrichten:
 
 ```csharp
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
+CompareOptions options = new CompareOptions
+{
+    IgnoreFormatting = true,
+    Target = ComparisonTargetType.New
+};
 ```
 
-## Schritt 6: Dokumentenvergleich
+## Schritt 6: Vergleichen Sie die Dokumente
 
-Jetzt vergleichen wir die Dokumente und generieren das Ergebnis in einem neuen Dokument.
+Und jetzt der Moment, auf den wir alle gewartet haben – das Vergleichen der Dokumente! Hier geschieht die Magie. Aspose.Words vergleicht die Dokumente und hebt die Unterschiede hervor.
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
- Der`Compare`Die Methode vergleicht Dokument A mit Dokument B und speichert die Änderungen an Dokument A. Sie können den Benutzernamen und das Datum des Vergleichs als Referenz angeben.
+## Schritt 7: Speichern des verglichenen Dokuments
 
-### Beispielquellcode für Compare Target mit Aspose.Words für .NET
-
+Speichern Sie abschließend das verglichene Dokument, um die hervorgehobenen Änderungen anzuzeigen. Mit diesem Schritt verpacken Sie Ihre Arbeit in ein ordentliches Paket.
 
 ```csharp
-            
-Document docA = new Document(MyDir + "Document.docx");
-Document docB = docA.Clone();
-
-// Bezieht sich auf die Microsoft Word-Option „Änderungen anzeigen in“ im Dialogfeld „Dokumente vergleichen“.
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
-
-docA.Compare(docB, "user", DateTime.Now, options);
-            
-        
+docA.Save(dataDir + "ComparedDocument.docx");
 ```
 
 ## Abschluss
 
-In diesem Artikel haben wir die Diff-Zielfunktion von Aspose.Words für .NET untersucht. Mit dieser Funktion können Sie zwei Dokumente vergleichen und ein neues Dokument erstellen, das die vorgenommenen Änderungen enthält. Mit diesem Wissen können Sie Änderungen zwischen verschiedenen Versionen Ihrer Dokumente nachverfolgen.
+Da haben Sie es – eine einfache und effektive Möglichkeit, Word-Dokumente mit Aspose.Words für .NET zu vergleichen! Keine manuellen Vergleiche mehr, keine Kopfschmerzen mehr. Mit nur wenigen Codezeilen können Sie Unterschiede hervorheben und sich auf das Wesentliche konzentrieren. Probieren Sie es also aus und sehen Sie, wie viel Zeit Sie sparen.
 
-### FAQs
+## Häufig gestellte Fragen
 
-#### F: Was ist der Zweck der Verwendung des Vergleichsziels in Aspose.Words für .NET?
+### Kann ich mit Aspose.Words Dokumente mit unterschiedlichen Formaten vergleichen?
 
-A: Mit dem Vergleichsziel in Aspose.Words für .NET können Sie zwei Dokumente vergleichen und ein neues Dokument erstellen, das die am Zieldokument vorgenommenen Änderungen enthält. Diese Funktion ist nützlich, um zwischen verschiedenen Versionen eines Dokuments vorgenommene Änderungen zu verfolgen und die Unterschiede in einem separaten Dokument zu visualisieren.
+Ja, Aspose.Words kann Dokumente mit unterschiedlichen Formaten nahtlos verarbeiten.
 
-#### F: Wie verwende ich das Vergleichsziel in Aspose.Words für .NET?
+### Benötige ich eine Lizenz, um Aspose.Words zu verwenden?
 
-A: Um das Vergleichsziel in Aspose.Words für .NET zu verwenden, führen Sie die folgenden Schritte aus:
-1. Richten Sie Ihre Entwicklungsumgebung mit der Aspose.Words-Bibliothek ein.
-2. Fügen Sie Ihrem Projekt die erforderlichen Assemblys hinzu, indem Sie auf Aspose.Words verweisen.
-3.  Initialisieren Sie die Dokumente, die Sie vergleichen möchten, mit`Document` Klasse oder die`DocumentBuilder` Klasse.
-4.  Konfigurieren Sie die Vergleichsoptionen, indem Sie eine erstellen`CompareOptions` Objekt- und Einstellungseigenschaften wie`IgnoreFormatting` Und`Target` (z.B.,`ComparisonTargetType.New` für Vergleichsziel).
-5.  Benutzen Sie die`Compare` Methode für ein Dokument, Übergabe des anderen Dokuments und der`CompareOptions` Objekt als Parameter. Bei dieser Methode werden die Dokumente verglichen und die Änderungen im ersten Dokument gespeichert.
+Ja, um alle Funktionen freizuschalten, benötigen Sie eine gültige Lizenz. Sie können eine kaufen oder eine temporäre Lizenz erwerben.
 
-####  F: Was ist der Zweck des`Target` property in the `CompareOptions` class?
+### Was passiert, wenn ich die Formatierung in den Vergleichsoptionen ignoriere?
 
- A: Die`Target` Eigentum in der`CompareOptions` Mit der Klasse können Sie das Vergleichsziel angeben, ähnlich der Option „Änderungen anzeigen in“ im Dialogfeld „Dokumente vergleichen“ von Microsoft Word. Das Ziel kann auf eingestellt werden`ComparisonTargetType.New` um Änderungen in einem neuen Dokument anzuzeigen,`ComparisonTargetType.Current` um Änderungen im aktuellen Dokument anzuzeigen, oder`ComparisonTargetType.Formatting` um nur Formatierungsänderungen anzuzeigen.
+Wenn Sie die Formatierung ignorieren, konzentriert sich der Vergleich ausschließlich auf Inhaltsänderungen und ignoriert etwaige Formatierungsunterschiede.
+
+### Kann ich die Vergleichsoptionen weiter anpassen?
+
+Auf jeden Fall! Aspose.Words bietet eine Vielzahl von Optionen, um den Vergleich an Ihre Bedürfnisse anzupassen.
+
+### Wo finde ich ausführlichere Dokumentation?
+
+ Sie können die ausführliche Dokumentation einsehen[Hier](https://reference.aspose.com/words/net/).

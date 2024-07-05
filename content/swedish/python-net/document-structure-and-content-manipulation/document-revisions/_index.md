@@ -71,7 +71,7 @@ comparison.save("comparison_result.docx")
 
 ## Hantera kommentarer och anteckningar
 
-Samarbetspartner kan lägga till kommentarer och kommentarer till ett dokument. Du kan programmässigt hantera dessa element:
+Samarbetspartner kan lägga till kommentarer och kommentarer till ett dokument. Du kan hantera dessa element programmatiskt:
 
 ```python
 comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")

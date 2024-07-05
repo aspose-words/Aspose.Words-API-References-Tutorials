@@ -128,7 +128,7 @@ Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu c�
 
 #### Câu hỏi: Chức năng "Bỏ qua văn bản bên trong Xóa bản sửa đổi" trong Aspose.Words dành cho .NET là gì?
 
-Trả lời: Chức năng "Bỏ qua văn bản bên trong xóa bản sửa đổi" trong Aspose.Words cho .NET cho phép bạn chỉ định xem có nên bỏ qua văn bản bên trong các bản sửa đổi xóa trong một số thao tác nhất định hay không, chẳng hạn như tìm và thay thế văn bản. Khi tính năng này được bật, văn bản đã xóa bên trong các bản sửa đổi sẽ không được xem xét trong quá trình hoạt động.
+Trả lời: Chức năng "Bỏ qua văn bản bên trong xóa bản sửa đổi" trong Aspose.Words dành cho .NET cho phép bạn chỉ định xem có nên bỏ qua văn bản bên trong các bản sửa đổi xóa trong một số thao tác nhất định hay không, chẳng hạn như tìm và thay thế văn bản. Khi tính năng này được bật, văn bản đã xóa bên trong các bản sửa đổi sẽ không được xem xét trong quá trình hoạt động.
 
 #### Câu hỏi: Aspose.Words dành cho .NET là gì?
 

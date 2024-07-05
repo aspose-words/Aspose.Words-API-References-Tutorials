@@ -1,8 +1,8 @@
 ---
-title: जावा के लिए Aspose.Words में दस्तावेज़ों से छवियाँ सहेजना
+title: Java के लिए Aspose.Words में दस्तावेज़ों से छवियाँ सहेजना
 linktitle: दस्तावेज़ों से छवियाँ सहेजना
-second_title: Aspose.Words जावा दस्तावेज़ प्रोसेसिंग एपीआई
-description: हमारे व्यापक चरण-दर-चरण मार्गदर्शिका के साथ जावा के लिए Aspose.Words का उपयोग करके दस्तावेज़ों से छवियों को सहेजना सीखें। प्रारूप, संपीड़न और बहुत कुछ अनुकूलित करें।
+second_title: Aspose.Words जावा दस्तावेज़ प्रसंस्करण एपीआई
+description: हमारे विस्तृत चरण-दर-चरण गाइड के साथ Java के लिए Aspose.Words का उपयोग करके दस्तावेज़ों से छवियों को सहेजना सीखें। प्रारूप, संपीड़न और बहुत कुछ अनुकूलित करें।
 type: docs
 weight: 17
 url: /hi/java/document-loading-and-saving/saving-images-from-documents/
@@ -10,15 +10,15 @@ url: /hi/java/document-loading-and-saving/saving-images-from-documents/
 
 ## जावा के लिए Aspose.Words में दस्तावेज़ों से छवियाँ सहेजने का परिचय
 
-इस ट्यूटोरियल में, हम यह पता लगाएंगे कि Java के लिए Aspose.Words का उपयोग करके दस्तावेज़ों से छवियों को कैसे सहेजा जाए। हम छवि बचत के लिए विभिन्न परिदृश्यों और अनुकूलन विकल्पों को कवर करेंगे। यह मार्गदर्शिका स्रोत कोड उदाहरणों के साथ चरण-दर-चरण निर्देश प्रदान करती है।
+इस ट्यूटोरियल में, हम जावा के लिए Aspose.Words का उपयोग करके दस्तावेज़ों से छवियों को सहेजने का तरीका जानेंगे। हम छवि सहेजने के लिए विभिन्न परिदृश्यों और अनुकूलन विकल्पों को कवर करेंगे। यह गाइड स्रोत कोड उदाहरणों के साथ चरण-दर-चरण निर्देश प्रदान करता है।
 
 ## आवश्यक शर्तें
 
- शुरू करने से पहले, सुनिश्चित करें कि आपके प्रोजेक्ट में Aspose.Words for Java लाइब्रेरी एकीकृत है। आप इसे यहां से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/).
+ शुरू करने से पहले, सुनिश्चित करें कि आपके प्रोजेक्ट में Aspose.Words for Java लाइब्रेरी एकीकृत है। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/).
 
-## चरण 1: थ्रेसहोल्ड नियंत्रण के साथ छवियों को TIFF के रूप में सहेजना
+## चरण 1: थ्रेशोल्ड नियंत्रण के साथ छवियों को TIFF के रूप में सहेजना
 
-थ्रेशोल्ड नियंत्रण के साथ छवियों को TIFF प्रारूप के रूप में सहेजने के लिए, इन चरणों का पालन करें:
+थ्रेसहोल्ड नियंत्रण के साथ छवियों को TIFF प्रारूप में सहेजने के लिए, इन चरणों का पालन करें:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -30,7 +30,7 @@ saveOptions.setThresholdForFloydSteinbergDithering((byte) 254);
 doc.save("Your Directory Path" + "ThresholdControlledImage.tiff", saveOptions);
 ```
 
-## चरण 2: एक विशिष्ट पृष्ठ को मल्टीपेज टीआईएफएफ के रूप में सहेजना
+## चरण 2: किसी विशिष्ट पृष्ठ को मल्टीपेज TIFF के रूप में सहेजना
 
 किसी विशिष्ट पृष्ठ को बहुपृष्ठ TIFF के रूप में सहेजने के लिए, निम्नलिखित कोड का उपयोग करें:
 
@@ -43,9 +43,9 @@ saveOptions.setResolution(160f);
 doc.save("Your Directory Path" + "SpecificPageMultipage.tiff", saveOptions);
 ```
 
-## चरण 3: छवियों को 1 बीपीपी अनुक्रमित पीएनजी के रूप में सहेजना
+## चरण 3: छवियों को 1 BPP अनुक्रमित PNG के रूप में सहेजना
 
-छवियों को 1 बीपीपी अनुक्रमित पीएनजी के रूप में सहेजने के लिए, इन चरणों का पालन करें:
+छवियों को 1 BPP अनुक्रमित PNG के रूप में सहेजने के लिए, इन चरणों का पालन करें:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -56,9 +56,9 @@ saveOptions.setPixelFormat(ImagePixelFormat.FORMAT_1_BPP_INDEXED);
 doc.save("Your Directory Path" + "1BPPIndexed.png", saveOptions);
 ```
 
-## चरण 4: अनुकूलन के साथ पेज को JPEG के रूप में सहेजना
+## चरण 4: अनुकूलन के साथ पृष्ठ को JPEG के रूप में सहेजना
 
-अनुकूलन विकल्पों के साथ किसी विशिष्ट पृष्ठ को JPEG के रूप में सहेजने के लिए, इस कोड का उपयोग करें:
+किसी विशिष्ट पृष्ठ को अनुकूलन विकल्पों के साथ JPEG के रूप में सहेजने के लिए, इस कोड का उपयोग करें:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -72,7 +72,7 @@ doc.save("Your Directory Path" + "CustomizedJPEG.jpeg", options);
 
 ## चरण 5: पेज सेविंग कॉलबैक का उपयोग करना
 
-आप पृष्ठ बचत को अनुकूलित करने के लिए कॉलबैक का उपयोग कर सकते हैं। यहाँ एक उदाहरण है:
+आप पेज सेविंग को कस्टमाइज़ करने के लिए कॉलबैक का उपयोग कर सकते हैं। यहाँ एक उदाहरण दिया गया है:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -90,7 +90,7 @@ private static class HandlePageSavingCallback implements IPageSavingCallback {
 }
 ```
 
-## जावा के लिए Aspose.Words में दस्तावेज़ों से छवियाँ सहेजने के लिए संपूर्ण स्रोत कोड
+## जावा के लिए Aspose.Words में दस्तावेज़ों से छवियों को सहेजने के लिए पूर्ण स्रोत कोड
 
 ```java
 public void exposeThresholdControlForTiffBinarization() throws Exception
@@ -133,14 +133,14 @@ public void getJpegPageRange() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
-	// किसी दस्तावेज़ के केवल पहले पृष्ठ को परिवर्तित करने के लिए "पेजसेट" को "0" पर सेट करें।
+	// किसी दस्तावेज़ के केवल प्रथम पृष्ठ को परिवर्तित करने के लिए "PageSet" को "0" पर सेट करें।
 	options.setPageSet(new PageSet(0));
-	// छवि की चमक और कंट्रास्ट बदलें।
-	// दोनों 0-1 पैमाने पर हैं और डिफ़ॉल्ट रूप से 0.5 पर हैं।
+	// छवि की चमक और कंट्रास्ट बदलें.
+	// दोनों 0-1 स्केल पर हैं और डिफ़ॉल्ट रूप से 0.5 पर हैं।
 	options.setImageBrightness(0.3f);
 	options.setImageContrast(0.7f);
-	// क्षैतिज रिज़ॉल्यूशन बदलें.
-	// 96dpi के रिज़ॉल्यूशन के लिए इन गुणों का डिफ़ॉल्ट मान 96.0 है।
+	// क्षैतिज रिज़ोल्यूशन बदलें.
+	// इन गुणों के लिए डिफ़ॉल्ट मान 96.0 है, जिसका रिज़ॉल्यूशन 96dpi है।
 	options.setHorizontalResolution(72f);
 	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
 }
@@ -165,13 +165,13 @@ private static class HandlePageSavingCallback implements IPageSavingCallback
 
 ## निष्कर्ष
 
-आपने जावा के लिए Aspose.Words का उपयोग करके दस्तावेज़ों से छवियों को सहेजना सीख लिया है। ये उदाहरण छवि बचत के लिए प्रारूप, संपीड़न और कॉलबैक उपयोग सहित विभिन्न अनुकूलन विकल्पों को प्रदर्शित करते हैं। जावा की शक्तिशाली क्षमताओं के लिए Aspose.Words के साथ अधिक संभावनाएं तलाशें।
+आपने सीखा है कि Java के लिए Aspose.Words का उपयोग करके दस्तावेज़ों से छवियों को कैसे सहेजा जाता है। ये उदाहरण छवि सहेजने के लिए विभिन्न अनुकूलन विकल्पों को प्रदर्शित करते हैं, जिसमें प्रारूप, संपीड़न और कॉलबैक उपयोग शामिल हैं। Java की शक्तिशाली क्षमताओं के लिए Aspose.Words के साथ और अधिक संभावनाओं का पता लगाएं।
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
-### जावा के लिए Aspose.Words के साथ सहेजते समय मैं छवि प्रारूप कैसे बदलूं?
+### मैं Aspose.Words for Java के साथ सहेजते समय छवि प्रारूप कैसे बदलूं?
 
- आप वांछित प्रारूप निर्दिष्ट करके छवि प्रारूप को बदल सकते हैं`ImageSaveOptions` . उदाहरण के लिए, पीएनजी के रूप में सहेजने के लिए, उपयोग करें`SaveFormat.PNG` जैसा कि कोड में दिखाया गया है:
+ आप इच्छित प्रारूप निर्दिष्ट करके छवि प्रारूप बदल सकते हैं`ImageSaveOptions` उदाहरण के लिए, PNG के रूप में सहेजने के लिए, उपयोग करें`SaveFormat.PNG` जैसा कि कोड में दिखाया गया है:
 
 ```java
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
@@ -179,38 +179,38 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
 
 ### क्या मैं TIFF छवियों के लिए संपीड़न सेटिंग्स को अनुकूलित कर सकता हूँ?
 
-हाँ, आप TIFF छवि संपीड़न सेटिंग्स को अनुकूलित कर सकते हैं। उदाहरण के लिए, संपीड़न विधि को CCITT_3 पर सेट करने के लिए, निम्नलिखित कोड का उपयोग करें:
+हां, आप TIFF इमेज कम्प्रेशन सेटिंग को कस्टमाइज़ कर सकते हैं। उदाहरण के लिए, कम्प्रेशन विधि को CCITT_3 पर सेट करने के लिए, निम्न कोड का उपयोग करें:
 
 ```java
 saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 ```
 
-### मैं किसी दस्तावेज़ से एक विशिष्ट पृष्ठ को एक अलग छवि के रूप में कैसे सहेज सकता हूँ?
+### मैं किसी दस्तावेज़ से किसी विशिष्ट पृष्ठ को अलग छवि के रूप में कैसे सहेज सकता हूँ?
 
- किसी विशिष्ट पृष्ठ को छवि के रूप में सहेजने के लिए, इसका उपयोग करें`setPageSet`विधि में`ImageSaveOptions` . उदाहरण के लिए, केवल प्रथम पृष्ठ को सहेजने के लिए, सेट करें`PageSet` को`new PageSet(0)`.
+ किसी विशिष्ट पृष्ठ को छवि के रूप में सहेजने के लिए, का उपयोग करें`setPageSet`विधि में`ImageSaveOptions` उदाहरण के लिए, केवल पहला पेज सहेजने के लिए, सेट करें`PageSet` को`new PageSet(0)`.
 
 ```java
-saveOptions.setPageSet(new PageSet(0)); // प्रथम पृष्ठ को छवि के रूप में सहेजें
+saveOptions.setPageSet(new PageSet(0)); // पहले पृष्ठ को छवि के रूप में सहेजें
 ```
 
-### सहेजते समय मैं JPEG छवियों पर कस्टम सेटिंग्स कैसे लागू करूं?
+### मैं JPEG छवियों को सहेजते समय उन पर कस्टम सेटिंग्स कैसे लागू करूँ?
 
-आप इसका उपयोग करके JPEG छवियों पर कस्टम सेटिंग्स लागू कर सकते हैं`ImageSaveOptions`. चमक, कंट्रास्ट और रिज़ॉल्यूशन जैसे गुणों को समायोजित करें। उदाहरण के लिए, चमक को 0.3 और कंट्रास्ट को 0.7 में बदलने के लिए, इस कोड का उपयोग करें:
+आप JPEG छवियों पर कस्टम सेटिंग्स लागू कर सकते हैं`ImageSaveOptions`. चमक, कंट्रास्ट और रिज़ॉल्यूशन जैसे गुणों को समायोजित करें। उदाहरण के लिए, चमक को 0.3 और कंट्रास्ट को 0.7 में बदलने के लिए, इस कोड का उपयोग करें:
 
 ```java
 options.setImageBrightness(0.3f);
 options.setImageContrast(0.7f);
 ```
 
-### मैं छवि बचत को अनुकूलित करने के लिए कॉलबैक का उपयोग कैसे कर सकता हूं?
+### मैं छवि सहेजने को अनुकूलित करने के लिए कॉलबैक का उपयोग कैसे कर सकता हूं?
 
- छवि बचत को अनुकूलित करने के लिए कॉलबैक का उपयोग करने के लिए, सेट करें`PageSavingCallback` में`ImageSaveOptions` . एक क्लास बनाएं जो इसे लागू करे`IPageSavingCallback` इंटरफ़ेस और ओवरराइड करें`pageSaving` तरीका।
+ छवि सहेजने को अनुकूलित करने के लिए कॉलबैक का उपयोग करने के लिए, सेट करें`PageSavingCallback` में`ImageSaveOptions` एक ऐसा वर्ग बनाएं जो कार्यान्वित करता है`IPageSavingCallback` इंटरफ़ेस और ओवरराइड`pageSaving` तरीका।
 
 ```java
 imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
 ```
 
- फिर, एक क्लास बनाएं जो इसे लागू करे`IPageSavingCallback` इंटरफ़ेस और फ़ाइल नाम और स्थान को अनुकूलित करें`pageSaving` तरीका।
+ फिर, एक वर्ग बनाएं जो कार्यान्वित करता है`IPageSavingCallback` इंटरफ़ेस और फ़ाइल नाम और स्थान को अनुकूलित करें`pageSaving` तरीका।
 
 ```java
 private static class HandlePageSavingCallback implements IPageSavingCallback {

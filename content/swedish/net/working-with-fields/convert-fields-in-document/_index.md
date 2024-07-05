@@ -2,7 +2,7 @@
 title: Konvertera fält i dokument
 linktitle: Konvertera fält i dokument
 second_title: Aspose.Words Document Processing API
-description: Steg-för-steg-guide för att konvertera dokumentfält till text med Aspose.Words för .NET.
+description: Steg-för-steg guide för att konvertera dokumentfält till text med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/convert-fields-in-document/

@@ -67,7 +67,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir grup rev
 
 #### S: Revizyonları olan bir belgeyi Aspose.Words for .NET'e nasıl yüklerim?
 
- C: Kullan`Document`Revizyonları içeren bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirtebilirsiniz.
+ C: Kullan`Document` Revizyonları içeren bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirtebilirsiniz.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### S: Aspose.Words for .NET'te bir revizyon grubunun ayrıntılarını nasıl edinebilirim?
 
- C: Bir döngü kullanarak belgenin revizyonlarını gözden geçirin ve istediğiniz ayrıntıları elde etmek için her revizyonun özelliklerine erişin. Şunu kullanabilirsiniz:`RevisionType`, `Author`, `DateTime` Ve`ParentNode` sırasıyla revizyon türünü, yazarı, tarihi ve revize edilen metni almak için özellikler.
+C: Bir döngü kullanarak belgenin revizyonlarını gözden geçirin ve istediğiniz ayrıntıları elde etmek için her revizyonun özelliklerine erişin. Şunu kullanabilirsiniz:`RevisionType`, `Author`, `DateTime` Ve`ParentNode` sırasıyla revizyon türünü, yazarı, tarihi ve revize edilen metni almak için özellikler.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### S: Aspose.Words for .NET'te bir revizyonun bir gruba ait olup olmadığı nasıl kontrol edilir?
 
- C: Kullan`Group` mülkiyeti`Revision` Bir revizyonun bir gruba ait olup olmadığını kontrol etmek için nesne. Eğer`Group` mülkiyet`null`revizyonun herhangi bir gruba ait olmadığı anlamına gelir.
+ C: Kullan`Group` mülkiyeti`Revision` Bir revizyonun bir gruba ait olup olmadığını kontrol etmek için nesne. Eğer`Group` mülkiyet`null`, revizyonun herhangi bir gruba ait olmadığı anlamına gelir.
 
 ```csharp
 if (revision.Group != null)

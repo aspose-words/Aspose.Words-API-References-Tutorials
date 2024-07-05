@@ -47,7 +47,7 @@ dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, i
 
 ## Шаг 5. Сохраните целевой документ.
 
-Наконец, сохраните измененный целевой документ, используя команду`Save` метод`Document` Объект Object.
+Наконец, сохраните измененный целевой документ, используя команду`Save` метод`Document` объект.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");

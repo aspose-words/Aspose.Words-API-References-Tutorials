@@ -10,7 +10,7 @@ url: /zh-hant/python-net/document-options-and-settings/document-functionality-we
 
 ## 介紹
 
-Web 擴充功能已成為現代文件管理系統不可或缺的一部分。它們允許開發人員透過無縫整合基於 Web 的元件來增強文件功能。 Aspose.Words 是一個強大的 Python 文件操作 API，提供了將 Web 擴充功能整合到文件中的全面解決方案。
+Web 擴充功能已成為現代文件管理系統不可或缺的一部分。它們允許開發人員透過無縫整合基於 Web 的元件來增強文件功能。 Aspose.Words 是一個強大的 Python 文件操作 API，提供了將 Web 擴充功能合併到文件中的全面解決方案。
 
 ## 先決條件
 

@@ -52,7 +52,7 @@ Node section = doc.FirstChild;
 Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
-To jest kompletny przykład kodu pozwalający uzyskać węzeł nadrzędny określonego węzła za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać kroki opisane wcześniej, aby zintegrować ten kod ze swoim projektem.
+To jest kompletny przykład kodu pozwalający uzyskać węzeł nadrzędny określonego węzła za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać opisane wcześniej kroki, aby zintegrować ten kod ze swoim projektem.
 
 ### Często zadawane pytania
 

@@ -2,7 +2,7 @@
 title: Získejte skupiny revizí
 linktitle: Získejte skupiny revizí
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Získejte skupiny revizí v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Získejte skupiny revizí v dokumentu aplikace Word pomocí Aspose.Words pro .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-revisions/get-revision-groups/
@@ -47,7 +47,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 ## Závěr
 
-tomto tutoriálu jsme se naučili, jak získat skupiny revizí v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupovali jsme podle kroků k načtení dokumentu a procházení skupin recenzí, přičemž jsme zobrazili podrobnosti, jako je autor a typ recenze. Nyní můžete tyto znalosti použít k analýze revizí vašeho vlastního dokumentu Word pomocí Aspose.Words for .NET.
+V tomto tutoriálu jsme se naučili, jak získat skupiny revizí v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupovali jsme podle kroků k načtení dokumentu a procházení skupin recenzí, přičemž jsme zobrazili podrobnosti, jako je autor a typ recenze. Nyní můžete tyto znalosti použít k analýze revizí vašeho vlastního dokumentu Word pomocí Aspose.Words for .NET.
 
 ### FAQ
 
@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Otázka: Jak procházet skupiny revizí v dokumentu v Aspose.Words for .NET?
 
- A: Použijte`Groups` vlastnost dokumentu`Revisions` objekt k získání kolekce skupin revizí. Poté můžete použít smyčku k procházení každou skupinou recenzí.
+ A: Použijte`Groups` vlastnost dokumentu`Revisions`objekt k získání kolekce skupin revizí. Poté můžete použít smyčku k procházení každou skupinou recenzí.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### Otázka: Jak získat typ revize skupiny revizí v Aspose.Words pro .NET?
 
- A: Použijte`RevisionType` vlastnictvím`RevisionGroup`objekt, abyste získali typ revize skupiny.
+ A: Použijte`RevisionType` vlastnictvím`RevisionGroup` objekt, abyste získali typ revize skupiny.
 
 ```csharp
 string revisionType = group.RevisionType;

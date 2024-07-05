@@ -18,7 +18,7 @@ No código fornecido, começamos criando um gerador de documentos.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Passo 2: Insira o campo IF.
+## Etapa 2: insira o campo IF
 
  Nós usamos o`InsertField()` método para inserir o campo IF no documento especificando a condição a ser avaliada.
 
@@ -36,18 +36,18 @@ Aqui usamos a condição "1=1" como exemplo, mas você pode personalizar a condi
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- O`actualResult` A variável contém o resultado da avaliação da condição.
+ O`actualResult` variável contém o resultado da avaliação da condição.
 
 ### Exemplo de código-fonte para avaliar a condição IF com Aspose.Words para .NET
 
 ```csharp
-//Criação do gerador de documentos.
+// Criação do gerador de documentos.
 DocumentBuilder builder = new DocumentBuilder();
 
 // Insira o campo IF no documento.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// Avalie a condição IF.
+//Avalie a condição IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Exibir o resultado da avaliação.

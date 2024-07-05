@@ -23,7 +23,7 @@ Jest to kompleksowe źródło wiedzy umożliwiające naukę pracy z polami w dok
 | [Wstaw pole scalania za pomocą DOM](./insert-merge-field-using-dom/) | Dowiedz się, jak wstawiać niestandardowe pola scalania pól do dokumentów programu Word za pomocą Aspose.Words dla .NET. |
 | [Wstaw pole bloku adresu korespondencji seryjnej przy użyciu modelu DOM](./insert-mail-merge-address-block-field-using-dom/) | Dowiedz się, jak wstawić pole bloku adresu korespondencji seryjnej do dokumentów programu Word za pomocą Aspose.Words dla .NET. |
 | [Wstaw FieldIncludeText bez narzędzia do tworzenia dokumentów](./insert-field-include-text-without-document-builder/) | Dowiedz się, jak wstawić pole FieldIncludeText do dokumentów programu Word za pomocą Aspose.Words dla .NET. |
-| [Wstaw pole Brak](./insert-field-none/) | Dowiedz się, jak tworzyć dokumenty za pomocą AUCUN w programie Word za pomocą Aspose.Words dla .NET. |
+| [Wstaw pole Brak](./insert-field-none/) | Dowiedz się, jak Insérez un champ AUCUN dans vos dokumenty Word przez Aspose.Words dla .NET. |
 | [Wstaw pole](./insert-field/) | Dowiedz się, jak wstawić pole do dokumentów programu Word za pomocą Aspose.Words dla .NET. Personalizuj swoje dokumenty za pomocą pól dynamicznych. |
 | [Wstaw pole za pomocą narzędzia do tworzenia pól](./insert-field-using-field-builder/) | Dowiedz się, jak wstawiać niestandardowe pola do dokumentów programu Word za pomocą Aspose.Words dla .NET. |
 | [Wstaw pole autora](./insert-author-field/) | Dowiedz się, jak wstawić pole AUTOR w dokumentach programu Word za pomocą Aspose.Words dla .NET. Podaj nazwisko autora, aby spersonalizować swoje dokumenty. |

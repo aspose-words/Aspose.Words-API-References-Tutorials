@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-fileformat/detect-document-signatures/
 ---
 
-Ez a cikk lépésről lépésre bemutatja a Digital Signature on Word dokumentumészlelési funkciójának használatát az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan lehet felismerni a digitális aláírásokat egy dokumentumban.
+Ez a cikk lépésről lépésre ismerteti a Digital Signature on Word-dokumentum észlelési szolgáltatásának használatát az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan lehet felismerni a digitális aláírásokat egy dokumentumban.
 
 Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
 
@@ -72,7 +72,7 @@ Ez az oktatóanyag lépésről lépésre bemutatja, hogyan észlelheti a digitá
 
 #### Hogyan lehet megadni azt a könyvtárat, amely a digitális aláírást keresendő dokumentumokat tartalmazza?
 
- A digitális aláírást keresni kívánt dokumentumokat tartalmazó könyvtár megadásához módosítania kell a`dataDir` változók a kódban. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+ A digitális aláírást keresni kívánt dokumentumokat tartalmazó könyvtár megadásához módosítania kell a`dataDir` változó a kódban. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

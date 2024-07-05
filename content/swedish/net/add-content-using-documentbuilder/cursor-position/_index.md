@@ -2,7 +2,7 @@
 title: Markörposition i Word-dokument
 linktitle: Markörposition i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du hanterar markörpositioner i Word-dokument med Aspose.Words för .NET med denna detaljerade steg-för-steg-guide. Perfekt för .NET-utvecklare.
+description: Lär dig hur du hanterar markörpositioner i Word-dokument med Aspose.Words för .NET med denna detaljerade, steg-för-steg-guide. Perfekt för .NET-utvecklare.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/cursor-position/
@@ -136,4 +136,4 @@ Ja, Aspose.Words är helt kompatibelt med .NET Core, vilket gör att du kan bygg
 
 ### Var kan jag hitta dokumentationen för Aspose.Words?
 
- Du kan hitta omfattande dokumentation för Aspose.Words för .NET.[här](https://reference.aspose.com/words/net/).
+ Du kan hitta omfattande dokumentation för Aspose.Words för .NET[här](https://reference.aspose.com/words/net/).

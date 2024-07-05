@@ -10,7 +10,7 @@ url: /fr/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## Introduction
 
-Les extensions Web sont devenues partie intégrante des systèmes modernes de gestion de documents. Ils permettent aux développeurs d'améliorer les fonctionnalités des documents en intégrant de manière transparente des composants Web. Aspose.Words, une puissante API de manipulation de documents pour Python, fournit une solution complète pour intégrer des extensions Web dans vos documents.
+Les extensions Web sont devenues partie intégrante des systèmes modernes de gestion de documents. Ils permettent aux développeurs d'améliorer les fonctionnalités des documents en intégrant de manière transparente des composants Web. Aspose.Words, une puissante API de manipulation de documents pour Python, fournit une solution complète pour incorporer des extensions Web dans vos documents.
 
 ## Conditions préalables
 
@@ -101,7 +101,7 @@ Après avoir incorporé les extensions Web et apporté les modifications nécess
 document.save("output.docx", aspose.words.SaveFormat.DOCX)
 ```
 
-## Conseils pour l'optimisation des performances
+## Conseils pour l’optimisation des performances
 
 Pour garantir des performances optimales lors de l'utilisation d'extensions Web, tenez compte des conseils suivants :
 

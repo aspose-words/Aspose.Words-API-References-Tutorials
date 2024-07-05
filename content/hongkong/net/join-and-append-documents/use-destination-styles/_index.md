@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 第 2 步：載入來源文檔和目標文檔
 
-接下來，您需要使用 Aspose.Words 載入來源文件和目標文件。`Document`班級。更新檔名`Document`根據您的文檔名稱建構函數。
+接下來，您需要使用 Aspose.Words 來載入來源文檔和目標文檔`Document`班級。更新檔名`Document`根據您的文檔名稱建構函數。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 步驟 3：附加帶有目標樣式的來源文檔
 
-若要在套用目標文檔的樣式時將來源文檔附加到目標文檔，您可以使用`AppendDocument`的方法`Document`類與`ImportFormatMode.UseDestinationStyles`參數。
+若要在套用目標文檔的樣式時將來源文檔附加到目標文檔，您可以使用`AppendDocument`的方法`Document`類與`ImportFormatMode.UseDestinationStyles`範圍。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);

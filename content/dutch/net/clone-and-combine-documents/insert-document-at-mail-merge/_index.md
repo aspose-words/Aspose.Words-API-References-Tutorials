@@ -139,10 +139,10 @@ En daar heb je het! U hebt met succes documenten in specifieke velden ingevoegd 
 ## Veelgestelde vragen
 
 ### Kan ik meerdere documenten in verschillende samenvoegvelden invoegen?
- Ja, dat kan. Geef eenvoudigweg de juiste samenvoegvelden en bijbehorende documentpaden op in het`MailMerge.Execute` methode.
+Ja, dat kan. Geef eenvoudigweg de juiste samenvoegvelden en bijbehorende documentpaden op in het`MailMerge.Execute` methode.
 
 ### Is het mogelijk om het ingevoegde document anders op te maken dan het hoofddocument?
- Absoluut! U kunt gebruik maken van de`ImportFormatMode` parameters in de`NodeImporter` om de opmaak te controleren.
+ Absoluut! U kunt gebruik maken van de`ImportFormatMode` parameter in de`NodeImporter` om de opmaak te controleren.
 
 ### Wat moet ik doen als de samenvoegveldnaam dynamisch is?
 U kunt dynamische samenvoegveldnamen afhandelen door ze als parameters door te geven aan de callback-handler.

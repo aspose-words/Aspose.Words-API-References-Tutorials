@@ -54,7 +54,7 @@ foreach (Revision revision in doc.Revisions)
 Document doc = new Document(MyDir + "Revisions.docx");
 doc.UpdateListLabels();
 
-// Váltson a dokumentum felülvizsgált verziójára.
+// Váltson át a dokumentum felülvizsgált verziójára.
 doc.RevisionsView = RevisionsView.Final;
 
 foreach (Revision revision in doc.Revisions)
@@ -73,13 +73,13 @@ foreach (Revision revision in doc.Revisions)
 
 ## Következtetés
 
-Ebben az oktatóanyagban megtanultuk, hogyan lehet elérni egy Word-dokumentum átdolgozott verzióját az Aspose.Words for .NET használatával. A dokumentum betöltésével, a javított verzióra való navigálással és a revíziók böngészésével konkrét információkat kaphattunk a listaelemeknek minősülő bekezdésekről. Az Aspose.Words for .NET hatékony szolgáltatásokat kínál a Word-dokumentumok kezeléséhez, beleértve a véleményekhez való hozzáférést. Ezt a tudást most felhasználhatja saját Word-dokumentumai átdolgozott verziójához az Aspose.Words for .NET használatával.
+Ebben az oktatóanyagban megtanultuk, hogyan lehet elérni egy Word-dokumentum átdolgozott verzióját az Aspose.Words for .NET használatával. A dokumentum betöltésével, a javított verzióra navigálással és a revíziók böngészésével konkrét információkat kaphattunk a listaelemeknek minősülő bekezdésekről. Az Aspose.Words for .NET hatékony szolgáltatásokat kínál a Word-dokumentumok kezeléséhez, beleértve a véleményekhez való hozzáférést. Ezt a tudást most felhasználhatja saját Word-dokumentumai átdolgozott verziójához az Aspose.Words for .NET használatával.
 
 ### GYIK
 
 #### K: Hogyan tölthetek be egy dokumentumot az Aspose.Words for .NET-be revíziókkal?
 
- V: Használja a`Document`osztályú Aspose.Words for .NET, hogy egy dokumentumot töltsön be egy változatokat tartalmazó fájlból. Megadhatja a teljes dokumentum elérési utat.
+ V: Használja a`Document` osztályú Aspose.Words for .NET, hogy egy dokumentumot töltsön be egy változatokat tartalmazó fájlból. Megadhatja a teljes dokumentum elérési utat.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### K: Hogyan böngészhetek a dokumentumok változatai között az Aspose.Words for .NET-ben?
 
- V: Használja a`foreach` ciklus a dokumentumban található változatok iterálásához. Használhatja a`Revisions` tulajdona a`Document` objektumot a dokumentum összes változatának gyűjteményéhez.
+V: Használja a`foreach` ciklus a dokumentumban található változatok iterálásához. Használhatja a`Revisions` tulajdona a`Document` objektumot a dokumentum összes változatának gyűjteményéhez.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

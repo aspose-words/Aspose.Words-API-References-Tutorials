@@ -118,7 +118,7 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Étape 7 : ajouter du contenu et des sauts de page
+## Étape 7 : Ajouter du contenu et des sauts de page
 
 Accédez à la fin du document, ajoutez un saut de page et créez une nouvelle section avec des paramètres de page différents.
 

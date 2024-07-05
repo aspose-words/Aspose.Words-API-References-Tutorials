@@ -107,7 +107,7 @@ para.remove();
 // och kommer att visas som en version i Microsoft Word tills vi accepterar eller avvisar alla versioner.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Det raderade revisionsstycket tas bort när vi accepterar ändringar.
+// Raderingsrevisionsparagrafen tas bort när vi accepterar ändringar.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //var Is.Empty
@@ -139,6 +139,6 @@ Ja, du kan använda Aspose.Words för Java för att spåra revisioner i befintli
 
 ### 5. Var kan jag hitta stöd för Aspose.Words för Java?
 
- För eventuella frågor eller problem kan du besöka[Aspose.Words för Java supportforum](https://forum.aspose.com/).
+ För frågor eller problem kan du besöka[Aspose.Words för Java supportforum](https://forum.aspose.com/).
 
 Kom igång med Aspose.Words för Java idag och effektivisera dina dokumenthanteringsprocesser.

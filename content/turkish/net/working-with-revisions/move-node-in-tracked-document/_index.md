@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Adım 5: Belgeyi kaydetme
 
- Metin giriş formu alanını ekledikten sonra, belgeyi kullanarak belgeyi istediğiniz konuma kaydedin.`Save` yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
+ Metin giriş formu alanını ekledikten sonra, belgeyi kullanarak belgeyi istediğiniz konuma kaydedin.`Save`yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak izlenen bir Word belgesindeki bir 
 
 #### S: Bir Aspose.Words for .NET belgesinde revizyon takibini nasıl etkinleştirebilirim?
 
-C: Bir Aspose.Words for .NET belgesinde revizyon takibini etkinleştirmek için`StartTrackRevisions` yöntemi`Document` nesne. Bu yöntemde revizyon yazarının adı ve revizyon takibinin başlangıç tarihi parametre olarak alınır.
+ C: Bir Aspose.Words for .NET belgesinde revizyon takibini etkinleştirmek için`StartTrackRevisions` yöntemi`Document` nesne. Bu yöntemde revizyon yazarının adı ve revizyon takibinin başlangıç tarihi parametre olarak alınır.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

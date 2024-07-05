@@ -40,7 +40,7 @@ Kayan bir görüntüyü bir Word belgesine ekleme sürecini yönetilebilir adım
 1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 2. "Konsol Uygulaması (.NET Core)" seçeneğini seçin ve "İleri"ye tıklayın.
 3. Projenize bir ad verin ve kaydedileceği konumu seçin. "Oluştur"u tıklayın.
-4. Aspose.Words for .NET'i NuGet Paket Yöneticisi aracılığıyla yükleyin. Solution Explorer'da projenize sağ tıklayın, "NuGet Paketlerini Yönetin"i seçin ve "Apose.Words"u arayın. En son sürümü yükleyin.
+4. Aspose.Words for .NET'i NuGet Paket Yöneticisi aracılığıyla yükleyin. Solution Explorer'da projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin ve "Aspose.Words"u arayın. En son sürümü yükleyin.
 
 ## Adım 2: Document ve DocumentBuilder'ı başlatın
 

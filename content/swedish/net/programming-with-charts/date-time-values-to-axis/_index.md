@@ -1,6 +1,6 @@
 ---
-title: Lägg till datum och tid värden till axeln i ett diagram
-linktitle: Lägg till datum och tid värden till axeln i ett diagram
+title: Lägg till datum och tid till axeln i ett diagram
+linktitle: Lägg till datum och tid till axeln i ett diagram
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till datum och tid värden till axeln i ett diagram med Aspose.Words för .NET.
 type: docs
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Steg 2: Skapa ett nytt dokument och DocumentBuilder
- Skapa en ny instans av`Document` klass och a`DocumentBuilder` objekt för att arbeta med dokumentet.
+ Skapa en ny instans av`Document` klass och a`DocumentBuilder`objekt för att arbeta med dokumentet.
 
 ```csharp
 Document doc = new Document();
@@ -53,7 +53,7 @@ chart.Series.Add("Aspose Series 1",
 	new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
 ```
 
-## Steg 5: Konfigurera Axis
+## Steg 5: Konfigurera axeln
 Konfigurera X-axeln för diagrammet för att visa datum och tid.
 
 ```csharp
@@ -102,18 +102,18 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 	doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-Den här exempelkoden skapar ett nytt Word-dokument, infogar ett kolumndiagram med datum och tidsvärden på X-axeln och sparar dokumentet i den angivna katalogen.
+Den här exempelkoden skapar ett nytt Word-dokument, infogar ett kolumndiagram med datum- och tidsvärden på X-axeln och sparar dokumentet i den angivna katalogen.
 
 ## Slutsats
-den här handledningen har du lärt dig hur du lägger till datum och tid värden till axeln i ett diagram med Aspose.Words för .NET. Genom att följa den steg-för-steg-guiden kan du skapa ett diagram, lägga till datum och tid värden till serien och konfigurera axeln för att visa datum och tid värden korrekt. Aspose.Words för .NET tillhandahåller en kraftfull uppsättning funktioner för ordbehandling med diagram i Word-dokument, så att du kan representera och visualisera data med datum och tid värden effektivt.
+den här handledningen har du lärt dig hur du lägger till datum och tid värden till axeln i ett diagram med Aspose.Words för .NET. Genom att följa den steg-för-steg-guiden kan du skapa ett diagram, lägga till datum och tidsvärden till serien och konfigurera axeln för att visa datum och tidsvärden korrekt. Aspose.Words för .NET tillhandahåller en kraftfull uppsättning funktioner för ordbehandling med diagram i Word-dokument, så att du effektivt kan representera och visualisera data med datum och tidsvärden.
 
 ### Vanliga frågor
 
 #### Q1. Kan jag lägga till datum och tid värden till axeln i ett diagram med Aspose.Words för .NET?
-Ja, med Aspose.Words för .NET kan du lägga till och visa datum och tid värden på axeln av ett diagram i ett Word-dokument. Aspose.Words tillhandahåller API:er och funktioner för att arbeta med olika diagramtyper och anpassa deras utseende, inklusive hantering av datum och tidsvärden på axeln.
+Ja, med Aspose.Words för .NET kan du lägga till och visa datum och tid värden på axeln i ett diagram i ett Word-dokument. Aspose.Words tillhandahåller API:er och funktioner för att arbeta med olika diagramtyper och anpassa deras utseende, inklusive hantering av datum och tidsvärden på axeln.
 
-#### Q2. Hur lägger jag till datum och tid värden till diagramserien?
- För att lägga till datum och tid värden till diagramserien kan du använda`Add`metoden för diagrammets serie. Ange en matris av datum och tid värden som kategoridata (X-axel) tillsammans med motsvarande serievärden. Detta låter dig plotta datapunkter med datum och tidsvärden i diagrammet.
+#### Q2. Hur lägger jag till datum- och tidsvärden i diagramserien?
+ För att lägga till datum och tid värden till diagramserien kan du använda`Add`metoden för diagrammets serie. Ange en matris med datum- och tidsvärden som kategoridata (X-axel) tillsammans med motsvarande serievärden. Detta gör att du kan plotta datapunkter med datum och tidsvärden i diagrammet.
 
 #### Q3. Hur kan jag konfigurera axeln för att visa datum och tid?
- Du kan konfigurera diagrammets axel för att visa datum och tid genom att ställa in lämpliga egenskaper. Till exempel kan du ange lägsta och högsta värden för axeln med hjälp av`Scaling.Minimum` och`Scaling.Maximum` respektive fastigheter. Dessutom kan du ställa in de stora och små enheterna för att definiera intervall och bockmarkeringar för axeln.
+ Du kan konfigurera diagrammets axel för att visa datum och tid genom att ställa in lämpliga egenskaper. Till exempel kan du ange minimi- och maxvärden för axeln med hjälp av`Scaling.Minimum` och`Scaling.Maximum` respektive fastigheter. Dessutom kan du ställa in de stora och små enheterna för att definiera intervall och bockmarkeringar för axeln.

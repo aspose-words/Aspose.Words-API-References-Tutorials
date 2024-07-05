@@ -10,11 +10,11 @@ url: /zh/net/programming-with-document-properties/get-variables/
 
 在本教程中，我们将引导您完成 C# 源代码，以使用 Aspose.Words for .NET 从文档中检索变量。此功能允许您访问文档中定义的变量。
 
-## 第 1 步：项目设置
+## 步骤 1：项目设置
 
 首先，在您最喜欢的 IDE 中创建一个新的 C# 项目。确保您的项目中引用了 Aspose.Words for .NET 库。
 
-## 第 2 步：加载文档
+## 步骤 2：加载文档
 
 在此步骤中，我们将加载要从中检索变量的 Word 文档。使用以下代码加载文档：
 
@@ -24,9 +24,9 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-代替`"YOUR DOCUMENTS DIRECTORY"`与文档所在目录的实际路径。
+代替`"YOUR DOCUMENTS DIRECTORY"`与文档所在目录的实际路径一致。
 
-## 第 3 步：检索变量
+## 步骤 3：检索变量
 
 现在我们将检索文档中定义的变量。使用以下代码：
 
@@ -49,7 +49,7 @@ foreach(KeyValuePair<string, string> entry in doc.Variables)
 Console.WriteLine("\nThe document contains the following variables:\n" + variables);
 ```
 
-此代码迭代文档变量中的每个键值对并检索每个变量的名称和值。然后将变量连接起来以显示每个变量的信息。
+此代码迭代文档变量中的每个键值对，并检索每个变量的名称和值。然后将变量连接起来以显示每个变量的信息。
 
 ### 使用 Aspose.Words for .NET 获取变量的示例源代码
 
@@ -79,6 +79,6 @@ Console.WriteLine("\nThe document contains the following variables:\n" + variabl
 
 ```
 
-请务必在中指定正确的文档路径`dataDir`多变的。
+确保在`dataDir`多变的。
 
-您现在已经学习了如何使用 Aspose.Words for .NET 从文档中检索变量。通过遵循本教程中提供的分步指南，您可以轻松访问和查看您自己的文档中的变量。
+您现在已经了解了如何使用 Aspose.Words for .NET 从文档中检索变量。通过遵循本教程中提供的分步指南，您可以轻松地从自己的文档中访问和查看变量。

@@ -34,7 +34,7 @@ builder.Writeln("sad mad bad");
 
 ## Krok 3: Nahraďte provázkem
 
- Používáme`Range.Replace`metoda k nahrazení textu řetězcem. V našem příkladu nahradíme všechny výskyty slova "smutný" slovem "špatný" pomocí`FindReplaceOptions` možnost s`FindReplaceDirection.Forward` směr hledání:
+ Používáme`Range.Replace`metoda pro nahrazení textu řetězcem. V našem příkladu nahradíme všechny výskyty slova "smutný" slovem "špatný" pomocí`FindReplaceOptions` možnost s`FindReplaceDirection.Forward` směr hledání:
 
 ```csharp
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));

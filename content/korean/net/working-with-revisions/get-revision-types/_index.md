@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### Q: Aspose.Words for .NET에서 단락이 이동(삭제)되었는지 확인하는 방법은 무엇입니까?
 
- A: 단락을 사용하세요`IsMoveFromRevision` 속성이 이동(삭제)되었는지 확인합니다.
+ A: 단락을 사용하세요`IsMoveFromRevision`속성이 이동(삭제)되었는지 확인합니다.
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### Q: Aspose.Words for .NET에서 단락이 이동(삽입)되었는지 확인하는 방법은 무엇입니까?
 
- A: 단락을 사용하세요`IsMoveToRevision`이동(삽입)되었는지 확인하는 속성입니다.
+ A: 단락을 사용하세요`IsMoveToRevision` 이동(삽입)되었는지 확인하는 속성입니다.
 
 ```csharp
 if (paragraph.IsMoveToRevision)

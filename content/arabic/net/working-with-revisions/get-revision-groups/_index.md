@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### س: كيفية استعراض مجموعات المراجعة في مستند في Aspose.Words لـ .NET؟
 
- ج: استخدم`Groups` خاصية الوثيقة`Revisions` كائن للحصول على مجموعة من مجموعات المراجعة. يمكنك بعد ذلك استخدام حلقة للتنقل خلال كل مجموعة مراجعة.
+ ج: استخدم`Groups` خاصية الوثيقة`Revisions`كائن للحصول على مجموعة من مجموعات المراجعة. يمكنك بعد ذلك استخدام حلقة للتنقل خلال كل مجموعة مراجعة.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### س: كيف يمكن الحصول على نوع المراجعة لمجموعة المراجعة في Aspose.Words لـ .NET؟
 
- ج: استخدم`RevisionType` ملكية`RevisionGroup`كائن للحصول على نوع المراجعة للمجموعة.
+ ج: استخدم`RevisionType` ملكية`RevisionGroup` كائن للحصول على نوع المراجعة للمجموعة.
 
 ```csharp
 string revisionType = group.RevisionType;

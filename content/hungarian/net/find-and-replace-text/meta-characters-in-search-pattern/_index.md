@@ -16,16 +16,16 @@ Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogya
 
 ## 1. lépés: Új dokumentum létrehozása
 
- Mielőtt elkezdené a metakarakterek használatát a keresési mintában, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ez megtehető az a. példányosításával`Document` tárgy:
+ Mielőtt elkezdené a metakarakterek használatát a keresési mintában, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ezt úgy lehet megtenni, hogy a`Document` tárgy:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## 2. lépés: Szöveg beszúrása a dokumentumba
+## 2. lépés: Szúrjon be szöveget a dokumentumba
 
- Ha megvan a dokumentumunk, akkor az a segítségével tudunk szöveget beszúrni`DocumentBuilder` tárgy. Példánkban a`Writeln` és`Write` kétsoros szöveg beszúrásának módjai:
+ Ha megvan a dokumentumunk, szöveget szúrhatunk be az a segítségével`DocumentBuilder` tárgy. Példánkban a`Writeln` és`Write` kétsoros szöveg beszúrásának módjai:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -35,7 +35,7 @@ builder.Writeln("This is line 2");
 
 ## 3. lépés: Keresse meg és cserélje ki a szöveget metakarakterekre
 
- Most a`Range.Replace` funkcióval kereshet és cserélhet szöveget speciális metakaraktereket tartalmazó keresési mintával. Példánkban az "Ez az 1. sor és a pEz a 2. sor" kifejezést a "Ez a sor lecserélve" kifejezésre cseréljük a`&p` a bekezdéstörést jelentő metakarakter:
+ Most a`Range.Replace` funkcióval kereshet és cserélhet szöveget speciális metakaraktereket tartalmazó keresési mintával. Példánkban az "Ez az 1. sor és a pEz a 2. sor" kifejezést a "Ez a sor lecserélve" kifejezésre cseréljük a`&p` a bekezdéstörést jelző metakarakter:
 
 ```csharp
 doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## 4. lépés: Oldaltörés beszúrása a dokumentumba
 
- Egy másik metakarakter használatának szemléltetésére oldaltörést szúrunk be a dokumentumba a segítségével`InsertBreak` módszerrel a`BreakType.PageBreak` paramétereket. Először mozgatjuk a kurzort a`DocumentBuilder` a dokumentum végére, majd beillesztjük az oldaltörést és egy új szövegsort:
+ Egy másik metakarakter használatának szemléltetésére oldaltörést szúrunk be a dokumentumba a segítségével`InsertBreak` módszerrel a`BreakType.PageBreak` paraméter. Először mozgatjuk a kurzort a`DocumentBuilder` a dokumentum végére, majd beillesztjük az oldaltörést és egy új szövegsort:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -54,7 +54,7 @@ builder.Writeln("This is line 2");
 
 ## 5. lépés: Keressen és cseréljen másik metakarakterre
 
- Most újabb keresést hajtunk végre, és a cserét a`&m` metakarakter, amely egy oldaltörést jelent. Az "Ez az 1. sor és az mEz a 2. sor" kifejezést a következőre cseréljük: "Az oldaltörést új szöveg helyettesíti." :
+ Most egy újabb keresést hajtunk végre, és a helyettesítést a`&m` metakarakter, amely egy oldaltörést jelent. Az "Ez az 1. sor és mEz a 2. sor" kifejezést a következőre cseréljük: "Az oldaltörést új szöveg helyettesíti." :
 
 ```csharp
 doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
@@ -114,7 +114,7 @@ V: Az Aspose.Words for .NET Meta Characters In Search Pattern funkciója lehető
 
 #### K: Hogyan lehet új dokumentumot létrehozni az Aspose.Words for .NET-ben?
 
- V: Mielőtt metakaraktereket használna a keresési sablonban, létre kell hoznia egy új dokumentumot az Aspose.Words for .NET használatával. Ez megtehető az a. példányosításával`Document` tárgy. Íme egy mintakód egy új dokumentum létrehozásához:
+ V: Mielőtt metakaraktereket használna a keresési sablonban, létre kell hoznia egy új dokumentumot az Aspose.Words for .NET használatával. Ezt úgy lehet megtenni, hogy a`Document` tárgy. Íme egy mintakód egy új dokumentum létrehozásához:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -133,7 +133,7 @@ builder.Writeln("This is line 2");
 
 #### K: Hogyan lehet szöveget metakarakterekkel keresni és helyettesíteni egy dokumentumban az Aspose.Words for .NET használatával?
 
- V: Szöveg metakarakterekkel való kereséséhez és helyettesítéséhez használja a`Range.Replace` módszer. Példánkban az "Ez az 1. sor és a pEz a 2. sor" kifejezést a "Ez a sor lecserélve" kifejezésre cseréljük a`&p` a bekezdéstörést jelentő metakarakter:
+ V: Szöveg metakarakterekkel való kereséséhez és helyettesítéséhez használja a`Range.Replace` módszer. Példánkban az "Ez az 1. sor és a pEz a 2. sor" kifejezést a "Ez a sor lecserélve" kifejezésre cseréljük a`&p` a bekezdéstörést jelző metakarakter:
 
 ```csharp
 doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### K: Hogyan lehet oldaltörést beszúrni egy dokumentumba az Aspose.Words for .NET használatával?
 
-V: Egy másik metakarakter használatának szemléltetésére oldaltörést szúrunk be a dokumentumba a segítségével`InsertBreak` módszerrel a`BreakType.PageBreak` paramétereket. Először mozgatjuk a kurzort a`DocumentBuilder` a dokumentum végére, majd beillesztjük az oldaltörést és egy új szövegsort:
+V: Egy másik metakarakter használatának szemléltetésére oldaltörést szúrunk be a dokumentumba a segítségével`InsertBreak` módszerrel a`BreakType.PageBreak` paraméter. Először mozgatjuk a kurzort a`DocumentBuilder` a dokumentum végére, majd beillesztjük az oldaltörést és egy új szövegsort:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -152,7 +152,7 @@ builder.Writeln("This is line 2");
 
 #### K: Hogyan kereshet és cserélhet le egy másik metakaraktert egy dokumentumban az Aspose.Words for .NET használatával?
 
- V: Most újabb keresést hajtunk végre, és a helyettesítést a`&m` metakarakter, amely egy oldaltörést jelent. Az "Ez az 1. sor és az mEz a 2. sor" kifejezést a következőre cseréljük: "Az oldaltörést új szöveg helyettesíti." :
+ V: Most újabb keresést hajtunk végre, és a helyettesítést a`&m` metakarakter, amely egy oldaltörést jelent. Az "Ez az 1. sor és mEz a 2. sor" kifejezést a következőre cseréljük: "Az oldaltörést új szöveg helyettesíti." :
 
 ```csharp
 doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");

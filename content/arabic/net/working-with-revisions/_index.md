@@ -16,7 +16,7 @@ url: /ar/net/working-with-revisions/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [قبول التقييمات](./accept-revisions/) | تعرف على كيفية قبول المراجعات على مستند Word باستخدام Aspose.Words لـ .NET. |
+| [قبول المراجعات](./accept-revisions/) | تعرف على كيفية قبول المراجعات على مستند Word باستخدام Aspose.Words لـ .NET. |
 | [الحصول على أنواع المراجعة من الكلمات](./get-revision-types/) | احصل على أنواع مراجعة الكلمات في مستند Word باستخدام Aspose.Words لـ .NET. |
 | [الحصول على مجموعات المراجعة](./get-revision-groups/) | احصل على تفاصيل مجموعة المراجعة في مستند Word باستخدام Aspose.Words لـ .NET. |
 | [إزالة التعليقات في ملف PDF](./remove-comments-in-pdf/) | قم بإزالة التعليقات في ملف PDF باستخدام Aspose.Words لـ .NET. |

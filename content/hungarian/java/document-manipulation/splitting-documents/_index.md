@@ -1,5 +1,5 @@
 ---
-title: Dokumentumok felosztása az Aspose.Words for Java-ban
+title: Dokumentumok felosztása az Aspose.Words for Java programban
 linktitle: Dokumentumok felosztása
 second_title: Aspose.Words Java Document Processing API
 description: Ismerje meg, hogyan oszthat fel hatékonyan dokumentumokat az Aspose.Words for Java programban. Fedezze fel a címsorok, szakaszok és oldaltartományok technikáit.

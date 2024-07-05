@@ -23,7 +23,7 @@ url: /th/net/working-with-fields/
 | [แทรกเขตข้อมูลผสานโดยใช้ DOM](./insert-merge-field-using-dom/) | เรียนรู้วิธีแทรกฟิลด์ผสานฟิลด์แบบกำหนดเองลงในเอกสาร Word ของคุณด้วย Aspose.Words for .NET |
 | [แทรกฟิลด์บล็อกที่อยู่จดหมายเวียนโดยใช้ DOM](./insert-mail-merge-address-block-field-using-dom/) | เรียนรู้วิธีแทรกฟิลด์บล็อกที่อยู่จดหมายเวียนลงในเอกสาร Word ของคุณด้วย Aspose.Words สำหรับ .NET |
 | [แทรก FieldIncludeText โดยไม่มีตัวสร้างเอกสาร](./insert-field-include-text-without-document-builder/) | เรียนรู้วิธีแทรกฟิลด์ FieldIncludeText ในเอกสาร Word ของคุณด้วย Aspose.Words สำหรับ .NET |
-| [แทรกฟิลด์ไม่มี](./insert-field-none/) | เรียนรู้วิธีป้อน AUCUN เดียวในเอกสาร Word ของคุณด้วย Aspose.Words for .NET |
+| [แทรกฟิลด์ ไม่มี](./insert-field-none/) | เรียนรู้วิธีInsérez un champ AUCUN และเอกสาร Word avec Aspose.Words สำหรับ .NET |
 | [แทรกฟิลด์](./insert-field/) | เรียนรู้วิธีแทรกฟิลด์ลงในเอกสาร Word ของคุณด้วย Aspose.Words for .NET ปรับแต่งเอกสารของคุณด้วยฟิลด์ไดนามิก |
 | [แทรกฟิลด์โดยใช้ตัวสร้างฟิลด์](./insert-field-using-field-builder/) | เรียนรู้วิธีแทรกฟิลด์ที่กำหนดเองลงในเอกสาร Word ของคุณด้วย Aspose.Words สำหรับ .NET |
 | [แทรกฟิลด์ผู้เขียน](./insert-author-field/) | เรียนรู้วิธีแทรกฟิลด์ AUTHOR ในเอกสาร Word ของคุณด้วย Aspose.Words for .NET ระบุชื่อผู้เขียนเพื่อปรับแต่งเอกสารของคุณ |

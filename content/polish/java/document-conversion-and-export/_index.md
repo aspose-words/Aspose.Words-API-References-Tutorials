@@ -31,7 +31,7 @@ Generuj niestandardowe etykiety z kodami kreskowymi w Aspose.Words dla Java. Dow
 ### [Korzystanie z generowania kodów kreskowych w Aspose.Words dla Java](./using-barcode-generation/)
 Dowiedz się, jak generować niestandardowe kody kreskowe w Javie przy użyciu Aspose.Words dla Java. Przewodnik krok po kroku z kodem źródłowym do generowania kodów kreskowych. Ulepsz automatyzację dokumentów dzięki Aspose.Words.
 ### [Korzystanie z wykresów w Aspose.Words dla Java](./using-charts/)
-Dowiedz się, jak tworzyć i dostosowywać wykresy w Aspose.Words dla Java. Przeglądaj typy wykresów, formatowanie i właściwości osi do wizualizacji danych.
+Dowiedz się, jak tworzyć i dostosowywać wykresy w Aspose.Words dla Java. Przeglądaj typy wykresów, formatowanie i właściwości osi na potrzeby wizualizacji danych.
 ### [Korzystanie z obiektów matematycznych pakietu Office w Aspose.Words dla języka Java](./using-office-math-objects/)
 Odblokuj moc równań matematycznych w dokumentach za pomocą Aspose.Words dla Java. Naucz się bez wysiłku manipulować i wyświetlać obiekty pakietu Office Math.
 ### [Używanie kształtów dokumentów w Aspose.Words dla Java](./using-document-shapes/)

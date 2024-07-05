@@ -321,7 +321,7 @@ Bảng là một cách mạnh mẽ để sắp xếp và trình bày dữ liệu
 // Tạo một tài liệu mới
 Document doc = new Document();
 
-// Tạo bảng có 3 hàng và 3 cột.
+// Tạo bảng có 3 hàng và 3 cột
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));

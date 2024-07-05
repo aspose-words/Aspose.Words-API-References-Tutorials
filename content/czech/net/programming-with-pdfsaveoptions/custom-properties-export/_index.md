@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## Krok 2: Přidejte vlastní vlastnosti
- Dále přidejte požadované uživatelské vlastnosti. Chcete-li například přidat vlastnost "Společnost" s hodnotou "Apose", použijte`Add` metoda kolekce CustomDocumentProperties:
+ Dále přidejte požadované uživatelské vlastnosti. Chcete-li například přidat vlastnost "Společnost" s hodnotou "Aspose", použijte`Add` metoda kolekce CustomDocumentProperties:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ Odpověď: Chcete-li exportovat uživatelské vlastnosti dokumentu do dokumentu 
 
  Vytvořte instanci souboru`Document` třída.
 
- Přidejte požadované uživatelské vlastnosti pomocí`CustomDocumentProperties` sbírka. Použijte například`Add` metoda pro přidání vlastnosti "Společnost" s hodnotou "Apose".
+ Přidejte požadované uživatelské vlastnosti pomocí`CustomDocumentProperties` sbírka. Použijte například`Add` metoda pro přidání vlastnosti "Společnost" s hodnotou "Aspose".
 
  Vytvořte instanci souboru`PdfSaveOptions` třídy a určete, jak exportovat uživatelské vlastnosti pomocí`CustomPropertiesExport` vlastnictví. The`PdfCustomPropertiesExport.Standard` value exportuje uživatelské vlastnosti podle výchozího nastavení.
 

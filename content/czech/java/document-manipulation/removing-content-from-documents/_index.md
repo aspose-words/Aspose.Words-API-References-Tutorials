@@ -47,7 +47,7 @@ for (int i = doc.getSections().getCount() - 2; i >= 0; i--) {
 
 Tento kód prochází sekcemi v opačném pořadí, kombinuje obsah aktuální sekce s poslední a poté odstraňuje zkopírovanou sekci.
 
-## Odebrání zápatí
+## Odstranění zápatí
 
 Zápatí v dokumentech aplikace Word často obsahují čísla stránek, data nebo jiné informace. Pokud je potřebujete odstranit, můžete použít následující kód:
 

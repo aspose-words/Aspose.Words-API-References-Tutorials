@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Steg 2: Skapa ett nytt dokument och DocumentBuilder
- Skapa en ny instans av`Document` klass och a`DocumentBuilder` objekt för att arbeta med dokumentet.
+ Skapa en ny instans av`Document` klass och a`DocumentBuilder`objekt för att arbeta med dokumentet.
 
 ```csharp
 Document doc = new Document();
@@ -50,7 +50,7 @@ chart.Series.Add("Aspose Series 1",
 ```
 
 ## Steg 5: Ställ in gränserna för axeln
- Konfigurera skalningen av Y-axeln genom att ställa in lägsta och högsta värden med hjälp av`Scaling.Minimum` och`Scaling.Maximum` axelns egenskaper.
+ Konfigurera skalningen av Y-axeln genom att ställa in lägsta och maximala värden med hjälp av`Scaling.Minimum` och`Scaling.Maximum` axelns egenskaper.
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 Det är allt! Du har framgångsrikt angett gränserna för en axel i ett diagram med Aspose.Words för .NET.
 
 ## Slutsats
-I den här handledningen har du lärt dig hur du ställer in gränserna för en axel i ett diagram med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden kan du infoga och konfigurera ett diagram, lägga till seriedata och definiera minimi- och maxvärden för axelskalningen. Aspose.Words för .NET tillhandahåller ett kraftfullt och flexibelt API för ordbehandling med Word-dokument, så att du enkelt kan skapa dynamiska och visuellt tilltalande diagram.
+den här handledningen har du lärt dig hur du ställer in gränserna för en axel i ett diagram med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden kan du infoga och konfigurera ett diagram, lägga till seriedata och definiera minimi- och maxvärden för axelskalningen. Aspose.Words för .NET tillhandahåller ett kraftfullt och flexibelt API för ordbehandling med Word-dokument, så att du enkelt kan skapa dynamiska och visuellt tilltalande diagram.
 
 
 ### Vanliga frågor
@@ -95,7 +95,7 @@ I den här handledningen har du lärt dig hur du ställer in gränserna för en 
 Aspose.Words för .NET är ett bibliotek som låter utvecklare arbeta med Word-dokument programmatiskt. Den tillhandahåller ett brett utbud av funktioner och funktioner för att skapa, manipulera och spara Word-dokument.
 
 #### Q2. Hur kan jag installera Aspose.Words för .NET?
-För att installera Aspose.Words för .NET kan du använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Apose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
+För att installera Aspose.Words för .NET kan du använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Aspose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
 
 #### Q3. Kan jag använda Aspose.Words för .NET med andra programmeringsspråk?
 Nej, Aspose.Words för .NET är speciellt designat för .NET-applikationer. Det fungerar med programmeringsspråk som C# och VB.NET.

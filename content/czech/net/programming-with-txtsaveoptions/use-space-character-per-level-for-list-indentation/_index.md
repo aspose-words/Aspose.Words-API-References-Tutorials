@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-V tomto příkladu vytvoříme nový dokument a pomocí DocumentBuilder přidáme text a vytvoříme seznam se třemi úrovněmi odsazení. Do seznamu jsme přidali tři položky, přičemž každá položka označuje další úroveň.
+V tomto příkladu vytvoříme nový dokument a pomocí DocumentBuilder přidáme text a vytvoříme seznam se třemi úrovněmi odsazení. Do seznamu jsme přidali tři položky, přičemž každá položka byla odsazena o další úroveň.
 
 ## Použití jednoho znaku mezery na úroveň pro odsazení seznamu
 
@@ -91,7 +91,7 @@ namespace Example
 
 ## Závěr
 
-této příručce jsme vysvětlili, jak používat Aspose.Words pro .NET k použití funkce "Použít jeden znak mezery na úroveň pro odsazení seznamu". Podle uvedených kroků a pomocí poskytnutého zdrojového kódu C# můžete snadno nakonfigurovat odsazení seznamů v dokumentech aplikace Word pomocí jedné mezery na úroveň. Aspose.Words nabízí obrovskou flexibilitu a výkon pro textové zpracování s formátováním textu a správou seznamů, což vám umožňuje vytvářet dobře strukturované dokumenty ve vaší aplikaci C#.
+této příručce jsme vysvětlili, jak pomocí Aspose.Words for .NET použít funkcionalitu „Použít jeden znak mezery na úroveň pro odsazení seznamu“. Podle uvedených kroků a pomocí poskytnutého zdrojového kódu C# můžete snadno nakonfigurovat odsazení seznamů v dokumentech aplikace Word pomocí jedné mezery na úroveň. Aspose.Words nabízí obrovskou flexibilitu a výkon pro textové zpracování s formátováním textu a správou seznamů, což vám umožňuje vytvářet dobře strukturované dokumenty ve vaší aplikaci C#.
 
 ### Často kladené otázky
 

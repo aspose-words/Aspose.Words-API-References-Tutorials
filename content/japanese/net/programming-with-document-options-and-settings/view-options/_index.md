@@ -8,27 +8,27 @@ weight: 10
 url: /ja/net/programming-with-document-options-and-settings/view-options/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して表示オプションを構成するための C# ソース コードを説明します。この機能を使用すると、ドキュメントの表示モードとズーム レベルをカスタマイズできます。
+このチュートリアルでは、C# ソース コードを使用して Aspose.Words for .NET の表示オプションを構成する方法について説明します。この機能を使用すると、ドキュメントの表示モードとズーム レベルをカスタマイズできます。
 
-## ステップ 1: プロジェクトのセットアップ
+## ステップ1: プロジェクトのセットアップ
 
-まず、お気に入りの IDE で新しい C# プロジェクトを作成します。 Aspose.Words for .NET ライブラリがプロジェクトで参照されていることを確認してください。
+まず、お気に入りの IDE で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET ライブラリが参照されていることを確認します。
 
-## ステップ 2: ドキュメントをロードする
+## ステップ2: ドキュメントの読み込み
 
-このステップでは、表示オプションを構成する Word 文書を読み込みます。次のコードを使用してドキュメントをロードします。
+この手順では、表示オプションを構成する Word 文書を読み込みます。次のコードを使用して文書を読み込みます。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが置かれているディレクトリの実際のパスに置き換えます。
+交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが配置されているディレクトリの実際のパスを入力します。
 
-## ステップ 3: 表示オプションの構成
+## ステップ3: 表示オプションの設定
 
-次に、ドキュメントの表示オプションを構成します。次のコードを使用して、表示モードとズーム レベルを設定します。
+次に、ドキュメントの表示オプションを設定します。次のコードを使用して、表示モードとズーム レベルを設定します。
 
 ```csharp
 doc.ViewOptions.ViewType = ViewType.PageLayout;
@@ -39,11 +39,11 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
 
 このコードは、表示モードを「PageLayout」に設定し、ズーム レベルを 50% に設定します。
 
-### Aspose.Words for .NET を使用した表示オプションのソース コード例
+### Aspose.Words for .NET を使用したビュー オプションのサンプル ソース コード
 
 ```csharp
 
-	//ドキュメントディレクトリへのパス。
+	//ドキュメント ディレクトリへのパス。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 	
@@ -54,6 +54,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
     
 ```
 
-必ず正しいドキュメント パスを指定してください。`dataDir`変数。
+正しいドキュメントパスを必ず指定してください。`dataDir`変数。
 
-Aspose.Words for .NET を使用してドキュメント表示オプションを構成する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、独自のドキュメントの表示を簡単にカスタマイズできます。
+Aspose.Words for .NET を使用してドキュメントの表示オプションを構成する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、独自のドキュメントの表示を簡単にカスタマイズできます。

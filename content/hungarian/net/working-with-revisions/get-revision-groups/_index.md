@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### K: Hogyan böngészhet a revíziócsoportok között egy dokumentumban az Aspose.Words for .NET-ben?
 
- V: Használja a`Groups` a dokumentum tulajdonsága`Revisions` objektumot a revíziócsoportok gyűjteményének lekéréséhez. Ezután egy hurkot használhat az egyes áttekintési csoportok áttekintésére.
+ V: Használja a`Groups` a dokumentum tulajdonsága`Revisions`objektumot a revíziócsoportok gyűjteményének lekéréséhez. Ezután egy hurkot használhat az egyes áttekintési csoportok áttekintésére.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### K: Hogyan szerezhető be egy revíziócsoport revíziótípusa az Aspose.Words for .NET-ben?
 
- V: Használja a`RevisionType` tulajdona a`RevisionGroup`objektumot a csoport revíziótípusának lekéréséhez.
+ V: Használja a`RevisionType` tulajdona a`RevisionGroup` objektumot a csoport revíziótípusának lekéréséhez.
 
 ```csharp
 string revisionType = group.RevisionType;

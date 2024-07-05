@@ -164,7 +164,7 @@ En suivant ces étapes, vous pouvez créer des documents avec des niveaux de lis
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Créez une liste numérotée basée sur l'un des modèles de liste Microsoft Word.
+        // Créez une liste numérotée basée sur l'un des modèles de liste Microsoft Word
         //et appliquez-le au paragraphe actuel du générateur de documents.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Il y a neuf niveaux dans cette liste, essayons-les tous.
@@ -173,7 +173,7 @@ En suivant ces étapes, vous pouvez créer des documents avec des niveaux de lis
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Créez une liste à puces basée sur l'un des modèles de liste Microsoft Word.
+        // Créez une liste à puces basée sur l'un des modèles de liste Microsoft Word
         //et appliquez-le au paragraphe actuel du générateur de documents.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

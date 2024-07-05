@@ -86,7 +86,7 @@ Per creare e inserire tabelle nei documenti utilizzando Aspose.Words per Python,
 
 ## Tabelle di styling con Aspose.Words
 
-Aspose.Words for Python fornisce una gamma di opzioni di stile per rendere le tue tabelle visivamente accattivanti:
+Aspose.Words per Python fornisce una gamma di opzioni di stile per rendere le tue tabelle visivamente accattivanti:
 
 1. Stili tabella: applica stili tabella predefiniti per ottenere un aspetto professionale.
 

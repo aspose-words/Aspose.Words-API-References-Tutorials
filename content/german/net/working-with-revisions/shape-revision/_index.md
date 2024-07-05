@@ -1,7 +1,7 @@
 ---
 title: Formrevision
 linktitle: Formrevision
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Überarbeiten Sie Formen in einem Word-Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -10,7 +10,7 @@ url: /de/net/working-with-revisions/shape-revision/
 
 In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Änderungen an Formen in einem Word-Dokument vornehmen. Wir stellen Ihnen den vollständigen Quellcode zur Verfügung und zeigen Ihnen, wie Sie die Markdown-Ausgabe formatieren.
 
-## Schritt 1: Dokument erstellen und Formen hinzufügen
+## Schritt 1: Erstellen des Dokuments und Hinzufügen von Formen
 
 Der erste Schritt besteht darin, ein neues Dokument zu erstellen und Formen hinzuzufügen.
 
@@ -25,7 +25,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Schritt 2: Überarbeitungen verfolgen und eine weitere Form hinzufügen
+## Schritt 2: Revisionen verfolgen und eine weitere Form hinzufügen
 
 Wir aktivieren die Revisionsverfolgung und fügen eine weitere Form hinzu.
 
@@ -39,9 +39,9 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Schritt 3: Holen Sie sich die Formensammlung und prüfen Sie, ob Änderungen vorliegen.
+## Schritt 3: Holen Sie sich die Shape-Sammlung und prüfen Sie, ob es Änderungen gibt
 
-Wir rufen die Formensammlung aus dem Dokument ab und überprüfen die mit jeder Form verbundenen Revisionen.
+Wir holen die Sammlung der Formen aus dem Dokument und überprüfen die mit jeder Form verknüpften Revisionen.
 
 ```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
@@ -56,7 +56,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 ## Schritt 4: Überprüfen der Formverschiebungsrevisionen
 
-Wir werden ein vorhandenes Dokument laden, das Formverschiebungsrevisionen enthält, und die zugehörigen Revisionen überprüfen.
+Wir laden ein vorhandenes Dokument, das Revisionen der Formverschiebung enthält, und überprüfen die zugehörigen Revisionen.
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");
@@ -73,7 +73,7 @@ Assert. False(shapes[1].IsMoveToRevision);
 
 ### Beispielquellcode für Shape Revision mit Aspose.Words für .NET
 
-Hier ist der vollständige Quellcode zum Überarbeiten von Formen in einem Dokument mit Aspose.Words für .NET:
+Hier ist der vollständige Quellcode zum Bearbeiten von Formen in einem Dokument mit Aspose.Words für .NET:
 
 ```csharp
 Document doc = new Document();
@@ -86,7 +86,7 @@ shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-// Beginnen Sie mit der Nachverfolgung von Revisionen und fügen Sie dann eine weitere Form ein.
+// Beginnen Sie mit der Revisionsverfolgung und fügen Sie dann eine weitere Form ein.
 doc.StartTrackRevisions("John Doe");
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
@@ -94,42 +94,42 @@ shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-// Rufen Sie die Formensammlung des Dokuments ab, die nur die beiden von uns hinzugefügten Formen enthält.
+// Holen Sie sich die Formsammlung des Dokuments, die nur die beiden von uns hinzugefügten Formen enthält.
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
 Assert.AreEqual(2, shapes.Count);
 
 // Entfernen Sie die erste Form.
 shapes[0].Remove();
 
-// Da wir diese Form während der Nachverfolgung der Änderungen entfernt haben, gilt die Form als gelöschte Revision.
+// Da wir diese Form entfernt haben, während die Änderungen nachverfolgt wurden, zählt die Form als gelöschte Revision.
 Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
 Assert.True(shapes[0].IsDeleteRevision);
 
-// Und wir haben beim Verfolgen von Änderungen eine weitere Form eingefügt, sodass diese Form als Einfügungsrevision zählt.
+// Und wir haben beim Nachverfolgen der Änderungen eine weitere Form eingefügt, sodass diese Form als eingefügte Revision zählt.
 Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 Assert.True(shapes[1].IsInsertRevision);
 
-// Das Dokument verfügt über eine Form, die verschoben wurde, aber Überarbeitungen der Formverschiebung enthalten zwei Instanzen dieser Form.
-// Eine davon ist die Form am Ankunftsziel und die andere die Form an ihrem ursprünglichen Standort.
+// Das Dokument enthält eine Form, die verschoben wurde, bei Revisionen durch Formverschiebung gibt es jedoch zwei Instanzen dieser Form.
+// Eine davon ist die Form am Zielort und die andere die Form an ihrem ursprünglichen Standort.
 doc = new Document(MyDir + "Revision shape.docx");
 
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
 Assert.AreEqual(2, shapes.Count);
 
-// Dies ist der Schritt zur Überarbeitung, auch die Form an ihrem Zielort.
+// Dies ist der Übergang zur Überarbeitung und zugleich die Form an ihrem Zielort.
 Assert.False(shapes[0].IsMoveFromRevision);
 Assert.True(shapes[0].IsMoveToRevision);
 
-// Dies ist die Verschiebung von der Revision, bei der es sich um die Form an ihrer ursprünglichen Position handelt.
+// Dies ist die Verschiebung von der Revision, bei der sich die Form an ihrer ursprünglichen Position befindet.
 Assert.True(shapes[1].IsMoveFromRevision);
 Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## Abschluss
 
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Überarbeitungen an Formen in einem Word-Dokument vornimmt. Durch Befolgen der Schritte zum Erstellen des Dokuments, Aktivieren der Revisionsverfolgung, Überprüfen der mit jeder Form verknüpften Revisionen und Überprüfen der Revisionen zum Verschieben der Formen konnten wir die Revisionen erfolgreich verwalten. Aspose.Words für .NET bietet eine leistungsstarke API für die Textverarbeitung mit Rezensionen und Formularen in Word-Dokumenten.
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Überarbeitungen an Formen in einem Word-Dokument vornimmt. Indem wir die Schritte zum Erstellen des Dokuments, Aktivieren der Überarbeitungsverfolgung, Überprüfen der mit jeder Form verknüpften Überarbeitungen und Überprüfen der Überarbeitungen zum Verschieben der Formen befolgten, konnten wir die Überarbeitungen erfolgreich verwalten. Aspose.Words für .NET bietet eine leistungsstarke API für die Textverarbeitung mit Überprüfungen und Formularen in Word-Dokumenten.
 
-### FAQs
+### Häufig gestellte Fragen
 
 #### F: Wie kann ich in Aspose.Words für .NET ein neues Dokument erstellen und Formen hinzufügen?
 
@@ -148,15 +148,15 @@ doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
 #### F: Wie aktiviere ich die Revisionsverfolgung in Aspose.Words für .NET?
 
- A: Um die Revisionsverfolgung in Aspose.Words für .NET zu aktivieren, können Sie die verwenden`StartTrackRevisions` Methode der`Document` Objekt. Diese Methode verwendet den Namen des Autors der Revisionen als Parameter:
+ A: Um die Revisionsverfolgung in Aspose.Words für .NET zu aktivieren, können Sie den`StartTrackRevisions` Methode der`Document` Objekt. Diese Methode verwendet den Namen des Autors der Revisionen als Parameter:
 
 ```csharp
 doc.StartTrackRevisions("John Doe");
 ```
 
-#### F: Wie kann ich die Revisionen überprüfen, die jeder Form in einem Aspose.Words für .NET-Dokument zugeordnet sind?
+#### F: Wie kann ich die Revisionen überprüfen, die mit jeder Form in einem Aspose.Words-Dokument für .NET verknüpft sind?
 
-A: Um die Revisionen zu überprüfen, die jeder Form in einem Aspose.Words für .NET-Dokument zugeordnet sind, können Sie die Formensammlung des Dokuments mithilfe von abrufen`GetChildNodes` Methode mit der`NodeType.Shape` Knotentyp. Dann können Sie auf die einzelnen Formen zugreifen`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , Und`IsMoveToRevision` Eigenschaften, um zu bestimmen, welcher Revisionstyp mit der Form verknüpft ist:
+A: Um die Revisionen zu überprüfen, die mit jeder Form in einem Aspose.Words für .NET-Dokument verknüpft sind, können Sie die Sammlung der Formen des Dokuments mithilfe des`GetChildNodes` Methode mit dem`NodeType.Shape` Knotentyp. Dann können Sie auf die einzelnen Formen zugreifen`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , Und`IsMoveToRevision` Eigenschaften, um zu bestimmen, welcher Revisionstyp mit der Form verknüpft ist:
 
 ```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
@@ -169,9 +169,9 @@ Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 Assert.True(shapes[1].IsInsertRevision);
 ```
 
-#### F: Wie kann ich in einem Aspose.Words für .NET-Dokument nach Verschiebungsrevisionen von Formen suchen?
+#### F: Wie kann ich in einem Aspose.Words-Dokument für .NET nach Verschiebungsrevisionen von Formen suchen?
 
- A: Um nach Formverschiebungsrevisionen in einem Aspose.Words für .NET-Dokument zu suchen, können Sie ein vorhandenes Dokument laden, das Formverschiebungsrevisionen enthält. Dann können Sie auf die einzelnen Formen zugreifen`IsMoveFromRevision` Und`IsMoveToRevision` Eigenschaften, um festzustellen, ob es verschoben wird und wenn ja, von wo und wohin:
+ A: Um in einem Aspose.Words für .NET-Dokument nach Formverschiebungsrevisionen zu suchen, können Sie ein vorhandenes Dokument laden, das Formverschiebungsrevisionen enthält. Dann können Sie auf die Formverschiebungsrevisionen der einzelnen Formen zugreifen.`IsMoveFromRevision` Und`IsMoveToRevision` Eigenschaften, um zu bestimmen, ob es verschoben wird und wenn ja, von wo und wohin:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

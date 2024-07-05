@@ -56,7 +56,7 @@ Nyní porovnejme dokumenty pomocí metody Compare třídy Document. Změny budou
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- The`Compare` metoda porovná dokument A s dokumentem B a uloží změny do dokumentu A. Pro referenci můžete zadat jméno autora a datum porovnání.
+ The`Compare`metoda porovná dokument A s dokumentem B a uloží změny do dokumentu A. Pro referenci můžete zadat jméno autora a datum porovnání.
 
 ## Závěr
 
@@ -80,7 +80,7 @@ builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOpti
 
 ## Závěr
 
-tomto tutoriálu jsme prozkoumali funkci Comparison Granularity Aspose.Words for .NET. Tato funkce umožňuje určit úroveň podrobností při porovnávání dokumentů. Výběrem různých úrovní podrobnosti můžete provádět podrobná srovnání na úrovni znaků, slov nebo bloků v závislosti na vašich konkrétních požadavcích. Aspose.Words for .NET poskytuje flexibilní a výkonnou možnost porovnávání dokumentů, což usnadňuje identifikaci rozdílů v dokumentech s různou úrovní granularity.
+V tomto tutoriálu jsme prozkoumali funkci Comparison Granularity Aspose.Words for .NET. Tato funkce umožňuje určit úroveň podrobností při porovnávání dokumentů. Výběrem různých úrovní podrobnosti můžete provádět podrobná srovnání na úrovni znaků, slov nebo bloků v závislosti na vašich konkrétních požadavcích. Aspose.Words for .NET poskytuje flexibilní a výkonnou možnost porovnávání dokumentů, což usnadňuje identifikaci rozdílů v dokumentech s různou úrovní granularity.
 
 ### FAQ
 
@@ -95,7 +95,7 @@ Odpověď: Chcete-li použít srovnávací granularitu v Aspose.Words pro .NET, 
 2. Přidejte potřebné sestavy do svého projektu odkazem na Aspose.Words.
 3.  Vytvořte dokumenty, které chcete porovnat pomocí`DocumentBuilder` třída.
 4.  Nakonfigurujte možnosti porovnání vytvořením a`CompareOptions` objekt a nastavení`Granularity` vlastnost na požadovanou úroveň (např.`Granularity.CharLevel` pro srovnání na úrovni postav).
-5.  Použijte`Compare` metoda na jednom dokumentu, předání druhého dokumentu a`CompareOptions` objekt jako parametry. Tato metoda porovná dokumenty na základě zadané granularity a uloží změny v prvním dokumentu.
+5.  Použijte`Compare`metoda na jednom dokumentu, předání druhého dokumentu a`CompareOptions` objekt jako parametry. Tato metoda porovná dokumenty na základě zadané granularity a uloží změny v prvním dokumentu.
 
 #### Otázka: Jaké jsou dostupné úrovně granularity porovnání v Aspose.Words pro .NET?
 

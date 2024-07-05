@@ -1,48 +1,48 @@
 ---
 title: Lesezeichendaten im Word-Dokument aktualisieren
 linktitle: Lesezeichendaten aktualisieren
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Aspose.Words-Lesezeichendatenaktualisierung in der Word-Dokumentfunktion für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-In diesem Tutorial gehen wir eine Schritt-für-Schritt-Anleitung durch, um die Funktion „Lesezeichendaten in Word-Dokument aktualisieren“ von Aspose.Words für .NET zu verstehen und zu implementieren. Mit dieser Funktion können Sie den Inhalt und die Eigenschaften von Lesezeichen in einem Word-Dokument mithilfe von C#-Quellcode aktualisieren.
+In diesem Tutorial werden wir Schritt für Schritt durch die Funktion „Lesezeichendaten in Word-Dokument aktualisieren“ von Aspose.Words für .NET geführt und implementiert. Mit dieser Funktion können Sie den Inhalt und die Eigenschaften von Lesezeichen in einem Word-Dokument mithilfe von C#-Quellcode aktualisieren.
 
 ## Anforderungen
 
-Bevor Sie mit dem Tutorial fortfahren, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor Sie mit dem Lernprogramm fortfahren, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 - Aspose.Words für .NET-Bibliothek installiert
 - Grundkenntnisse der Programmiersprache C#
 - Visual Studio oder eine andere kompatible IDE
 
-## Schritt 1: Laden Sie das Dokument
+## Schritt 1: Dokument einlegen
 
-In diesem Schritt laden wir das Word-Dokument, das die Lesezeichen enthält, die wir aktualisieren möchten. Angenommen, Sie haben das Dokument in einem bestimmten Verzeichnis gespeichert, verwenden Sie den folgenden Code, um das Dokument zu laden:
+In diesem Schritt laden wir das Word-Dokument, das die Lesezeichen enthält, die wir aktualisieren möchten. Vorausgesetzt, Sie haben das Dokument in einem bestimmten Verzeichnis gespeichert, verwenden Sie den folgenden Code, um das Dokument zu laden:
 
 ```csharp
-// Der Pfad zum Dokumentenverzeichnis.
+// Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Verzeichnispfad, in dem sich Ihr Dokument befindet.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Verzeichnispfad, in dem sich Ihr Dokument befindet.
 
-## Schritt 2: Greifen Sie auf das Lesezeichen zu
+## Schritt 2: Zugriff auf das Lesezeichen
 
-Um die Lesezeichendaten zu aktualisieren, müssen wir zunächst auf das spezifische Lesezeichen im Dokument zugreifen. Jedem Lesezeichen ist ein eindeutiger Name zugeordnet. Verwenden Sie den folgenden Code, um auf ein Lesezeichen mit dem Namen „MyBookmark1“ zuzugreifen:
+Um die Lesezeichendaten zu aktualisieren, müssen wir zunächst auf das jeweilige Lesezeichen im Dokument zugreifen. Jedem Lesezeichen ist ein eindeutiger Name zugeordnet. Verwenden Sie den folgenden Code, um auf ein Lesezeichen mit dem Namen „MyBookmark1“ zuzugreifen:
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks["MyBookmark1"];
 ```
 
-Stellen Sie sicher, dass der Name des Lesezeichens mit dem Namen in Ihrem Dokument übereinstimmt. Sie können es entsprechend Ihren Anforderungen ändern.
+Stellen Sie sicher, dass der Lesezeichenname mit dem in Ihrem Dokument übereinstimmt. Sie können ihn nach Bedarf ändern.
 
-## Schritt 3: Lesezeicheneigenschaften und -inhalte aktualisieren
+## Schritt 3: Lesezeicheneigenschaften und -inhalt aktualisieren
 
-Sobald Sie auf das Lesezeichen zugegriffen haben, können Sie dessen Eigenschaften und Inhalt aktualisieren. Im folgenden Codeausschnitt aktualisieren wir den Namen und Text des Lesezeichens:
+Sobald Sie auf das Lesezeichen zugegriffen haben, können Sie dessen Eigenschaften und Inhalt aktualisieren. Im folgenden Codeausschnitt aktualisieren wir den Namen und den Text des Lesezeichens:
 
 ```csharp
 string name = bookmark.Name;
@@ -56,7 +56,7 @@ Sie können den Lesezeichennamen und den neuen Text nach Ihren Wünschen anpasse
 
 ## Schritt 4: Speichern Sie das aktualisierte Dokument
 
-Nachdem Sie die Lesezeichendaten aktualisiert haben, müssen Sie das geänderte Dokument speichern. Verwenden Sie den folgenden Code, um das Dokument zu speichern:
+Nach dem Aktualisieren der Lesezeichendaten müssen Sie das geänderte Dokument speichern. Verwenden Sie den folgenden Code, um das Dokument zu speichern:
 
 ```csharp
 doc.Save(dataDir + "UpdatedDocument.docx");
@@ -64,11 +64,11 @@ doc.Save(dataDir + "UpdatedDocument.docx");
 
 Dieser Code speichert das geänderte Dokument unter dem Namen „UpdatedDocument.docx“ im selben Verzeichnis wie das Originaldokument.
 
-### Beispielquellcode für die Aktualisierung von Lesezeichendaten mit Aspose.Words für .NET
+### Beispielquellcode zum Aktualisieren von Lesezeichendaten mit Aspose.Words für .NET
 
 ```csharp
 
-	// Der Pfad zum Dokumentenverzeichnis.
+	// Der Pfad zum Dokumentverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 
@@ -82,26 +82,26 @@ Dieser Code speichert das geänderte Dokument unter dem Namen „UpdatedDocument
 
 ```
 
- Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Verzeichnispfad, in dem sich Ihr Dokument befindet.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Verzeichnispfad, in dem sich Ihr Dokument befindet.
 
 ## Abschluss
 
-Glückwunsch! Sie haben erfolgreich gelernt, wie Sie Lesezeichendaten mit Aspose.Words für .NET aktualisieren. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, sollten Sie nun in der Lage sein, diese Funktion in Ihre C#-Anwendungen zu integrieren und Lesezeichen in Word-Dokumenten programmgesteuert zu bearbeiten.
+Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, wie Sie Lesezeichendaten mit Aspose.Words für .NET aktualisieren. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, sollten Sie nun in der Lage sein, diese Funktion in Ihre C#-Anwendungen zu integrieren und Lesezeichen in Word-Dokumenten programmgesteuert zu bearbeiten.
 
 ### FAQs zum Aktualisieren von Lesezeichendaten in Word-Dokumenten
 
-#### F: Funktioniert die Funktion zum Aktualisieren von Lesezeichendaten nur mit Lesezeichen in Word-Dokumenten?
+#### F: Funktioniert die Funktion „Lesezeichendaten aktualisieren“ nur mit Lesezeichen in Word-Dokumenten?
 
-A: Ja, die Funktion „Lesezeichendaten aktualisieren“ wurde speziell für Lesezeichen in Word-Dokumenten entwickelt. Damit können Sie den Inhalt und die Eigenschaften von Lesezeichen in einem Word-Dokument aktualisieren.
+A: Ja, die Funktion „Lesezeichendaten aktualisieren“ ist speziell für Lesezeichen in Word-Dokumenten konzipiert. Sie können damit den Inhalt und die Eigenschaften von Lesezeichen in einem Word-Dokument aktualisieren.
 
 #### F: Kann ich außer Text auch andere Lesezeicheneigenschaften aktualisieren?
 
- A: Ja, zusätzlich zum Text können Sie auch andere Lesezeicheneigenschaften aktualisieren, z. B. den Lesezeichennamen, den Lesezeichenbereich usw. Verwenden Sie die entsprechenden Eigenschaften des`Bookmark` Objekt, um die gewünschten Eigenschaften zu aktualisieren.
+ A: Ja, neben Text können Sie auch andere Lesezeicheneigenschaften aktualisieren, wie z. B. Lesezeichenname, Lesezeichenbereich usw. Verwenden Sie die entsprechenden Eigenschaften des`Bookmark` Objekt, um die gewünschten Eigenschaften zu aktualisieren.
 
 #### F: Kann ich mehrere Lesezeichen im selben Dokument aktualisieren?
 
-A: Ja, Sie können mehrere Lesezeichen im selben Dokument aktualisieren, indem Sie die Zugriffs- und Aktualisierungsschritte für jedes Lesezeichen wiederholen. Stellen Sie sicher, dass Sie für jedes Lesezeichen, das Sie aktualisieren möchten, eindeutige Lesezeichennamen verwenden.
+A: Ja, Sie können mehrere Lesezeichen im selben Dokument aktualisieren, indem Sie die Schritte zum Zugreifen und Aktualisieren für jedes Lesezeichen wiederholen. Achten Sie darauf, für jedes Lesezeichen, das Sie aktualisieren möchten, eindeutige Lesezeichennamen zu verwenden.
 
-#### F: Verändert die Funktion „Lesezeichendaten aktualisieren“ das Originaldokument?
+#### F: Ändert die Funktion „Lesezeichendaten aktualisieren“ das Originaldokument?
 
-A: Ja, die Funktion zur Aktualisierung der Lesezeichendaten ändert das Originaldokument, indem sie die Eigenschaften und den Inhalt der Lesezeichen aktualisiert. Speichern Sie unbedingt eine Kopie des Originaldokuments, bevor Sie diese Funktion anwenden.
+A: Ja, die Funktion zur Aktualisierung von Lesezeichendaten ändert das Originaldokument, indem sie die Eigenschaften und Inhalte des Lesezeichens aktualisiert. Speichern Sie unbedingt eine Kopie des Originaldokuments, bevor Sie diese Funktion anwenden.

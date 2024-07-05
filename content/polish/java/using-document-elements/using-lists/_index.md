@@ -164,7 +164,7 @@ Wykonując poniższe kroki, możesz tworzyć dokumenty z niestandardowymi poziom
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Utwórz listę numerowaną w oparciu o jeden z szablonów list Microsoft Word.
+        // Utwórz listę numerowaną w oparciu o jeden z szablonów list Microsoft Word
         // zastosuj go do bieżącego akapitu kreatora dokumentu.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Na tej liście jest dziewięć poziomów, wypróbujmy je wszystkie.
@@ -173,7 +173,7 @@ Wykonując poniższe kroki, możesz tworzyć dokumenty z niestandardowymi poziom
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Utwórz listę punktowaną w oparciu o jeden z szablonów list programu Microsoft Word.
+        // Utwórz listę punktowaną w oparciu o jeden z szablonów list programu Microsoft Word
         // zastosuj go do bieżącego akapitu kreatora dokumentu.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

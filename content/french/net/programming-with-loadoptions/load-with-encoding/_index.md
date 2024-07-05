@@ -59,7 +59,7 @@ R : Le codage fait référence à la méthode de représentation des caractères
 
 #### Q : Quel est le rôle de LoadOptions dans le chargement de documents texte avec encodage dans Aspose.Words ?
 
-R : LoadOptions dans Aspose.Words pour .NET permet aux développeurs de spécifier l'encodage souhaité lors du chargement de documents texte, garantissant ainsi que le contenu est lu et traité correctement.
+R : LoadOptions dans Aspose.Words pour .NET permet aux développeurs de spécifier l'encodage souhaité lors du chargement de documents texte, garantissant ainsi que le contenu est lu et traité correctement.
 
 #### Q : Puis-je utiliser un codage différent de UTF-7 lors du chargement de documents texte ?
 

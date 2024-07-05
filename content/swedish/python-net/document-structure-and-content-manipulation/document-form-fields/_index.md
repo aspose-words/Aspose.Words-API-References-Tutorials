@@ -46,7 +46,7 @@ text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeTyp
 
 ### Kryssrutor och radioknappar
 
-Kryssrutor och alternativknappar används för flervalsval. Så här kan du skapa dem:
+Kryssrutor och alternativknappar används för flervalsval. Så här skapar du dem:
 
 ```python
 # Create a checkbox form field
@@ -207,7 +207,7 @@ Rullgardinslistor effektiviserar processen att välja alternativ från en förde
 
 ### Datumväljare
 
-Datumväljare förenklar processen att fånga datum från användare. De tillhandahåller ett användarvänligt gränssnitt för att välja datum, vilket minskar risken för inmatningsfel. För att skapa ett datumväljarformulär, använd följande kod:
+Datumväljare förenklar processen att fånga datum från användare. De tillhandahåller ett användarvänligt gränssnitt för att välja datum, vilket minskar risken för inmatningsfel. Använd följande kod för att skapa ett datumväljarformulär:
 
 ```python
 # Create a date picker form field

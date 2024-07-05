@@ -32,7 +32,7 @@ Na początek skonfigurujmy nowy projekt w Visual Studio.
 Aby używać Aspose.Words, musisz dodać go do swojego projektu. Można to zrobić za pomocą Menedżera pakietów NuGet.
 
 1. **Open NuGet Package Manager:** Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań, a następnie wybierz opcję Zarządzaj pakietami NuGet.
-2. **Search for Aspose.Words:** W Menedżerze pakietów NuGet wyszukaj „Apose.Words”.
+2. **Search for Aspose.Words:** W Menedżerze pakietów NuGet wyszukaj „Aspose.Words”.
 3. **Install the Package:** Kliknij Zainstaluj, aby dodać Aspose.Words do swojego projektu.
 
 ## Krok 3: Importuj przestrzenie nazw
@@ -119,4 +119,4 @@ Pole scalania to element zastępczy w dokumencie, który można dynamicznie zast
 Aspose.Words obsługuje wiele wersji .NET, w tym .NET Framework, .NET Core i .NET Standard.
 
 ### 5. Gdzie mogę znaleźć dokumentację API dla Aspose.Words?
- Dostępna jest dokumentacja API.[Tutaj](https://reference.aspose.com/words/net/).
+ Dostępna jest dokumentacja API[Tutaj](https://reference.aspose.com/words/net/).

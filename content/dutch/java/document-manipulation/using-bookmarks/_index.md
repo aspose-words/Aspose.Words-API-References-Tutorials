@@ -57,7 +57,7 @@ bookmark.setText("This is new bookmarked text.");
 
 ## Stap 4: Werken met tekst met bladwijzers
 
-U kunt tekst met een bladwijzer kopiëren en deze aan een ander document toevoegen. Hier is hoe:
+U kunt tekst met een bladwijzer kopiëren en aan een ander document toevoegen. Hier is hoe:
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");

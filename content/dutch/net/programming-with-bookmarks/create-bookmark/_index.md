@@ -92,7 +92,7 @@ Hier is de volledige voorbeeldbroncode om te demonstreren hoe u bladwijzers maak
 
 ## Conclusie
 
-In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de Create Bookmark-functie van Aspose.Words voor .NET kunt gebruiken. We hebben een stapsgewijze handleiding gevolgd voor het maken van bladwijzers in een document en het opgeven van bladwijzervoorbeeldniveaus in een uitgevoerd PDF-bestand.
+In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de functie Bladwijzer maken van Aspose.Words voor .NET kunt gebruiken. We hebben een stapsgewijze handleiding gevolgd voor het maken van bladwijzers in een document en het opgeven van bladwijzervoorbeeldniveaus in een uitgevoerd PDF-bestand.
 
 ### Veelgestelde vragen
 

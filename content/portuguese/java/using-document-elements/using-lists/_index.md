@@ -164,7 +164,7 @@ Seguindo essas etapas, você pode criar documentos com níveis de lista personal
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Crie uma lista numerada com base em um dos modelos de lista do Microsoft Word.
+        // Crie uma lista numerada com base em um dos modelos de lista do Microsoft Word
         // aplique-o ao parágrafo atual do construtor de documentos.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Existem nove níveis nesta lista, vamos experimentar todos eles.
@@ -173,7 +173,7 @@ Seguindo essas etapas, você pode criar documentos com níveis de lista personal
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Crie uma lista com marcadores com base em um dos modelos de lista do Microsoft Word.
+        // Crie uma lista com marcadores com base em um dos modelos de lista do Microsoft Word
         // aplique-o ao parágrafo atual do construtor de documentos.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

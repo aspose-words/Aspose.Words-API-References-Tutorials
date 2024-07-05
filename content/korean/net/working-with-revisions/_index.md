@@ -16,7 +16,7 @@ url: /ko/net/working-with-revisions/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [리뷰 수락](./accept-revisions/) | .NET용 Aspose.Words를 사용하여 Word 문서의 수정본을 수락하는 방법을 알아보세요. |
+| [개정판 수락](./accept-revisions/) | .NET용 Aspose.Words를 사용하여 Word 문서의 수정본을 수락하는 방법을 알아보세요. |
 | [단어의 개정 유형 가져오기](./get-revision-types/) | .NET용 Aspose.Words를 사용하여 Word 문서의 단어 개정 유형을 가져옵니다. |
 | [개정 그룹 가져오기](./get-revision-groups/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 개정 그룹 세부 정보를 가져옵니다. |
 | [PDF 파일에서 주석 제거](./remove-comments-in-pdf/) | .NET용 Aspose.Words를 사용하여 PDF 파일에서 주석을 제거합니다. |

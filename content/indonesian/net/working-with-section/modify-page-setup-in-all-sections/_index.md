@@ -9,7 +9,7 @@ url: /id/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 ## Perkenalan
 
-Hai! Jika Anda pernah perlu mengubah pengaturan halaman di beberapa bagian dalam dokumen Word, Anda berada di tempat yang tepat. Dalam tutorial ini, saya akan memandu Anda melalui proses menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memungkinkan Anda mengontrol hampir setiap aspek dokumen Word secara terprogram, menjadikannya alat bantu bagi pengembang. Jadi, ambillah secangkir kopi, dan mari kita mulai perjalanan langkah demi langkah untuk menguasai modifikasi pengaturan halaman!
+Hai! Jika Anda perlu mengubah pengaturan halaman di beberapa bagian dalam dokumen Word, Anda berada di tempat yang tepat. Dalam tutorial ini, saya akan memandu Anda melalui proses menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memungkinkan Anda mengontrol hampir setiap aspek dokumen Word secara terprogram, menjadikannya alat bantu bagi pengembang. Jadi, ambillah secangkir kopi, dan mari kita mulai perjalanan langkah demi langkah untuk menguasai modifikasi pengaturan halaman!
 
 ## Prasyarat
 

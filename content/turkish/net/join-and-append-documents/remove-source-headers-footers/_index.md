@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Adım 6: Son Belgeyi Kaydedin
 
- Son olarak, birleştirilmiş belgeyi, Kaynak Üstbilgileri Altbilgilerini Kaldır özelliği etkinleştirilerek kaydedin.`Save` yöntemi`Document` sınıf.
+ Son olarak, birleştirilen belgeyi, Kaynak Üstbilgileri Altbilgilerini Kaldır özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");

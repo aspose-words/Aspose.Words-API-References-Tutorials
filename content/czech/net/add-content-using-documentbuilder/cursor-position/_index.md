@@ -128,7 +128,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### Jak přesunu kurzor na konkrétní buňku tabulky?
 
- Kurzor na buňku tabulky můžete přesunout pomocí`builder.MoveToCell` určující index tabulky, index řádku a index buňky.
+ Kurzor můžete přesunout na buňku tabulky pomocí`builder.MoveToCell` určující index tabulky, index řádku a index buňky.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
 
@@ -136,4 +136,4 @@ Ano, Aspose.Words je plně kompatibilní s .NET Core, což vám umožňuje vytv�
 
 ### Kde najdu dokumentaci k Aspose.Words?
 
- Můžete najít komplexní dokumentaci pro Aspose.Words pro .NET.[tady](https://reference.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci pro Aspose.Words pro .NET[tady](https://reference.aspose.com/words/net/).

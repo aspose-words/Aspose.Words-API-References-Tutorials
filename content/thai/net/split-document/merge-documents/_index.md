@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ขั้นตอนที่ 2: ผสานอย่างง่าย
 
- มาเริ่มกันง่ายๆผสานกัน เราจะรวมเอกสารสองฉบับเป็นเอกสารเดียวโดยใช้`Merger.Merge` วิธี.
+ เริ่มต้นด้วยการรวมง่ายๆ เราจะรวมเอกสารสองฉบับเป็นเอกสารเดียวโดยใช้`Merger.Merge` วิธี.
 
 ```csharp
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
@@ -76,7 +76,7 @@ Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx",
 
  ที่นี่เราผสานกัน`Document1.docx` และ`Document2.docx` และบันทึกผลลัพธ์เป็นไฟล์ PDF
 
-## ขั้นตอนที่ 5: สร้างอินสแตนซ์เอกสารจากเอกสารที่ผสาน
+## ขั้นตอนที่ 5: การสร้างอินสแตนซ์เอกสารจากเอกสารที่ผสาน
 
 บางครั้ง คุณอาจต้องการทำงานกับเอกสารที่ผสานเพิ่มเติมก่อนที่จะบันทึก คุณสามารถสร้าง`Document` อินสแตนซ์จากเอกสารที่รวม:
 

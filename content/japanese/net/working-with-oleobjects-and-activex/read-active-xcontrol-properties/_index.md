@@ -1,6 +1,6 @@
 ---
-title: Word ファイルからアクティブな XControl プロパティを読み取る
-linktitle: Word ファイルからアクティブな XControl プロパティを読み取る
+title: Word ファイルから Active XControl プロパティを読み取る
+linktitle: Word ファイルから Active XControl プロパティを読み取る
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET を使用して、Word ファイル内の ActiveX コントロールのプロパティを読み取ります。
 type: docs
@@ -8,19 +8,19 @@ weight: 10
 url: /ja/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
 
-このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word ファイル内の ActiveX コントロールのプロパティを読み取る方法を説明します。完全なソース コードを提供し、マークダウン出力をフォーマットする方法を示します。
+このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word ファイル内の ActiveX コントロールのプロパティを読み取る方法を説明します。完全なソース コードを提供し、マークダウン出力をフォーマットする方法を説明します。
 
-## ステップ 1: ドキュメントの初期化
+## ステップ1: ドキュメントの初期化
 
-最初のステップは、`Document` ActiveX コントロールを含む Word 文書をロードしてオブジェクトを取得します。必ず交換してください`MyDir`ドキュメントを含むディレクトリへの実際のパスを使用します。
+最初のステップは、`Document` ActiveXコントロールを含むWord文書をロードしてオブジェクトを作成します。`MyDir`ドキュメントを含むディレクトリへの実際のパスを指定します。
 
 ```csharp
 Document doc = new Document(MyDir + "ActiveX controls.docx");
 ```
 
-## ステップ 2: ActiveX コントロールを回復する
+## ステップ2: ActiveXコントロールを回復する
 
-このステップでは、それぞれを繰り返し実行します。`Shape`ドキュメントの ActiveX コントロールを取得し、そのプロパティを読み取ります。
+このステップでは、それぞれを反復処理します`Shape`ドキュメントの ActiveX コントロールを取得し、そのプロパティを読み取ります。
 
 ```csharp
 string properties = "";
@@ -49,9 +49,9 @@ properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes
 Console.WriteLine("\n" + properties);
 ```
 
-### Aspose.Words for .NET を使用した Read Active XControl Properties のソース コード例
+### Aspose.Words for .NET を使用して Active XControl プロパティを読み取るためのサンプル ソース コード
 
-Aspose.Words for .NET を使用して ActiveX コントロールのプロパティを読み取るための完全なソース コードを次に示します。
+以下は、Aspose.Words for .NET を使用して ActiveX コントロールのプロパティを読み取るための完全なソース コードです。
 
 ```csharp
 	Document doc = new Document(MyDir + "ActiveX controls.docx");
@@ -84,24 +84,24 @@ Aspose.Words for .NET を使用して ActiveX コントロールのプロパテ�
 
 ## 結論
 
-このガイドでは、Aspose.Words for .NET を使用して Word ファイル内の ActiveX コントロールのプロパティを読み取る方法を説明しました。説明されている手順に従うことで、ドキュメントを初期化し、ActiveX コントロールを取得し、そのプロパティを読み取ることができます。提供されているサンプル コードを開始点として使用し、特定のニーズに合わせてカスタマイズします。
+このガイドでは、Aspose.Words for .NET を使用して Word ファイル内の ActiveX コントロールのプロパティを読み取る方法について説明しました。説明されている手順に従うことで、ドキュメントを初期化し、ActiveX コントロールを取得してそのプロパティを読み取ることができます。提供されているサンプル コードを開始点として使用し、特定のニーズに合わせてカスタマイズしてください。
 
-ActiveX コントロールのプロパティを読み取ると、これらのコントロールを含む Word ファイルから重要な情報を抽出できます。 Aspose.Words for .NET は、ActiveX コントロールを使用した文書処理とドキュメント処理の自動化のための強力な機能を提供します。
+ActiveX コントロールのプロパティを読み取ることで、これらのコントロールを含む Word ファイルから重要な情報を抽出できます。Aspose.Words for .NET は、ActiveX コントロールを使用した Words 処理とドキュメント処理の自動化のための強力な機能を提供します。
 
 ### よくある質問
 
-#### Q: Word ファイル内の ActiveX コントロールのプロパティを読み取る最初の手順は何ですか?
+#### Q: Word ファイル内の ActiveX コントロールのプロパティを読み取るための最初の手順は何ですか?
 
- A: 最初のステップは、`Document` ActiveX コントロールを含む Word 文書をロードしてオブジェクトを取得します。必ず交換してください`MyDir`ドキュメントを含むディレクトリへの実際のパスを使用します。
+ A: 最初のステップは、`Document` ActiveXコントロールを含むWord文書をロードしてオブジェクトを作成します。`MyDir`ドキュメントを含むディレクトリへの実際のパスを指定します。
 
-#### Q: ActiveX コントロールをドキュメントに取り込むにはどうすればよいですか?
+#### Q: ActiveX コントロールをドキュメントに組み込むにはどうすればよいですか?
 
- A: ActiveX コントロールを取得するには、それぞれを反復処理する必要があります。`Shape`ドキュメントの内容を確認し、それが ActiveX コントロールであるかどうかを確認します。使用`OleFormat`の財産`Shape`にアクセスするには`OleControl`オブジェクトを取得し、必要なプロパティを取得します。
+ A: ActiveXコントロールを取得するには、各コントロールを反復処理する必要があります。`Shape`ドキュメントのActiveXコントロールであるかどうかを確認します。`OleFormat`の所有物`Shape`アクセスするには`OleControl`オブジェクトを作成して必要なプロパティを取得します。
 
 #### Q: ActiveX コントロールのどのプロパティを読み取ることができますか?
 
-A: キャプション、値、有効または無効の状態、タイプ、コントロールに関連付けられた childNodes など、ActiveX コントロールのさまざまなプロパティを読み取ることができます。
+A: ActiveX コントロールのキャプション、値、有効または無効の状態、タイプ、コントロールに関連付けられた childNodes など、さまざまなプロパティを読み取ることができます。
 
-#### Q: ドキュメント内の ActiveX コントロールの総数を取得するにはどうすればよいですか?
+#### Q: ドキュメント内の ActiveX コントロールの合計数を取得するにはどうすればよいですか?
 
- A: ドキュメント内の ActiveX コントロールの総数を取得するには、`GetChildNodes`の方法`Document`を指定するオブジェクト`NodeType.Shape`タイプと子ノードを含みます。
+ A: ドキュメント内のActiveXコントロールの総数を取得するには、`GetChildNodes`方法の`Document`指定するオブジェクト`NodeType.Shape`タイプと子ノードを含みます。

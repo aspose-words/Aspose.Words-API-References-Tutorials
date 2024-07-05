@@ -70,6 +70,6 @@ J: Anda dapat menemukan file kamus suku kata untuk berbagai bahasa di berbagai s
 
 J: Untuk menerapkan kamus suku kata yang dimuat ke dokumen di Aspose.Words, Anda perlu mengulangi kata-kata dalam dokumen dan menggunakan`Hyphenate()` metode`Hyphenation` kelas untuk mendapatkan suku kata dari kata-kata tersebut. Anda kemudian dapat memformat kata-kata yang diberi suku kata sesuai kebutuhan, misalnya dengan menambahkan tanda hubung di antara suku kata.
 
-#### T: Bahasa apa saja yang didukung untuk silabisasi di Aspose.Words?
+#### T: Bahasa apa saja yang didukung untuk penyusunan suku kata di Aspose.Words?
 
 J: Aspose.Words mendukung silabisasi untuk berbagai bahasa termasuk Inggris, Prancis, Spanyol, Jerman, Italia, Belanda, Rusia, Portugis, Swedia, Norwegia, Denmark, Finlandia, Polandia, Ceko, dan banyak lagi. Periksa dokumentasi Aspose.Words untuk daftar lengkap bahasa yang didukung untuk silabisasi.

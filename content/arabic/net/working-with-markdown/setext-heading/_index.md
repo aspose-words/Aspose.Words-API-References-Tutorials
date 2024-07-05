@@ -1,6 +1,6 @@
 ---
-title: عنوان سيتكس
-linktitle: عنوان سيتكس
+title: عنوان النص
+linktitle: عنوان النص
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
 description: تعرف على كيفية استخدام عناوين Setext لتنسيق مستنداتك باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
 type: docs

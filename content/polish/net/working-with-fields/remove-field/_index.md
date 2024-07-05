@@ -34,7 +34,7 @@ Field field = doc.Range.Fields[0];
 field. Remove();
 ```
 
-## Krok 4: Zapisywanie dokumentu
+## Krok 4: Zapisanie dokumentu
 
  Na koniec nazywamy`Save()` metoda zapisania zmodyfikowanego dokumentu.
 
@@ -71,9 +71,9 @@ Wykonaj poniższe kroki, aby usunąć określone pole w dokumencie za pomocą As
 
  Odp.: Tak, możliwe jest usunięcie tylko niektórych pól w dokumencie Word za pomocą Aspose.Words dla .NET. Możesz filtrować pola do usunięcia, korzystając z określonych kryteriów, takich jak nazwa pola lub inne odpowiednie właściwości. Następnie możesz usunąć odpowiednie pola za pomocą`FieldStart.Remove` metoda.
 
-#### P: Jak mogę sprawdzić, czy pole zostało pomyślnie usunięte w dokumencie programu Word za pomocą Aspose.Words dla .NET?
+#### P: Jak mogę sprawdzić, czy pole zostało pomyślnie usunięte w dokumencie Word za pomocą Aspose.Words dla .NET?
 
- Odp.: Aby sprawdzić, czy pole zostało pomyślnie usunięte w dokumencie Word za pomocą Aspose.Words dla .NET, możesz użyć`Document.Range.Fields.Contains` metoda sprawdzająca, czy pole po usunięciu nadal występuje w dokumencie.
+ Odp.: Aby sprawdzić, czy pole zostało pomyślnie usunięte w dokumencie Word za pomocą Aspose.Words dla .NET, możesz użyć`Document.Range.Fields.Contains` metoda sprawdzenia, czy pole po usunięciu nadal występuje w dokumencie.
 
 #### P: Jakie są konsekwencje usunięcia pola w dokumencie Word za pomocą Aspose.Words dla .NET?
 

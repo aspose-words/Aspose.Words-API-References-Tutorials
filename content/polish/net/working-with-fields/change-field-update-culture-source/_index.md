@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## Wniosek
-Gratulacje! Pomyślnie nauczyłeś się zmieniać źródło kultury aktualizacji pola w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz teraz kontrolować kulturę używaną do formatowania daty podczas operacji aktualizacji pól i korespondencji seryjnej. Dostosuj źródło kultury zgodnie ze swoimi wymaganiami, aby zapewnić dokładną i spójną datę.
+Gratulacje! Pomyślnie nauczyłeś się zmieniać źródło kultury aktualizacji pola w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i wykorzystując dostarczony kod źródłowy, możesz teraz kontrolować kulturę używaną do formatowania daty podczas operacji aktualizacji pól i korespondencji seryjnej. Dostosuj źródło kultury zgodnie ze swoimi wymaganiami, aby zapewnić dokładną i spójną datę.
 
 ### Często zadawane pytania
 

@@ -26,11 +26,11 @@ Innan vi dyker in i koden, se till att du har följande förutsättningar på pl
 
 2. Lägg till Aspose.Words Library:
 
-   Lägg till Aspose.Words for Java-biblioteket till ditt projekt. Du kan göra detta genom att inkludera JAR-filen i ditt projekts byggsökväg.
+   Lägg till Aspose.Words for Java-biblioteket till ditt projekt. Du kan göra detta genom att inkludera JAR-filen i ditt projekts byggväg.
 
 ## Steg 1: Ladda dokumentet
 
-För att börja måste vi ladda dokumentet som vi vill separera sidor. Så här kan du göra det:
+Till att börja med måste vi ladda dokumentet som vi vill dela upp på sidor. Så här kan du göra det:
 
 ```java
 // Ladda dokumentet
@@ -49,7 +49,7 @@ DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 List<Document> pages = splitter.splitIntoPages();
 ```
 
- De`pages` Listan kommer nu att innehålla separata dokument, som var och en representerar en enda sida i originaldokumentet.
+ De`pages` listan kommer nu att innehålla separata dokument, som var och en representerar en enda sida i originaldokumentet.
 
 ## Steg 3: Spara sidorna
 
@@ -84,7 +84,7 @@ Ja, Aspose.Words stöder olika dokumentformat, inklusive DOC, RTF, HTML och mer.
 
 Aspose.Words för Java är ett kommersiellt bibliotek, men det erbjuder en gratis testversion. Du kan kolla deras hemsida för prisinformation och licensinformation.
 
-### Kan jag separerade sammanfogningssidor tillbaka till ett enda dokument?
+### Kan jag slå ihop separerade sidor tillbaka till ett enda dokument?
 
 Ja, du kan slå samman de separerade sidorna tillbaka till ett enda dokument med Aspose.Words för Java. Se dokumentationen för sammanslagningsinstruktioner.
 

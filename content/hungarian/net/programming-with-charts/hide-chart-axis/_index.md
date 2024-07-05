@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -101,7 +101,7 @@ Az Aspose.Words for .NET használatával könnyen beépítheti a diagramkészít
 Az Aspose.Words for .NET egy hatékony dokumentumfeldolgozó könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és mentését .NET-alkalmazásokban. Funkciók széles skáláját kínálja a dokumentumelemekkel, köztük diagramokkal és diagramtengelyekkel végzett szövegfeldolgozáshoz.
 
 #### Q2. Hogyan telepíthetem az Aspose.Words for .NET fájlt?
-Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjével töltse le. Egyszerűen keresse meg az „Apose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
+Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjével töltse le. Egyszerűen keresse meg az „Aspose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
 
 #### Q3. Elrejthetem a diagram X- és Y-tengelyét is?
  Igen, az Aspose.Words for .NET segítségével elrejtheti a diagram X- és Y-tengelyét is. Az X-tengely elrejtéséhez elérheti a`AxisX` a diagram tulajdonságát, és állítsa be a`Hidden`tulajdonát`true` . Hasonlóképpen, az Y tengely elrejtéséhez elérheti a`AxisY` tulajdonság és állítsa be a`Hidden`tulajdonát`true`. Ez lehetővé teszi mindkét tengely eltávolítását a diagram megjelenítéséből.
@@ -110,7 +110,7 @@ Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjé
 Igen, az Aspose.Words for .NET használatával elrejtése után újra megjelenítheti a diagram tengelyét. Egy rejtett tengely megjelenítéséhez egyszerűen állítsa be a`Hidden` a megfelelő tulajdonsága`AxisX` vagy`AxisY` tiltakozni`false`. Ezzel a tengely ismét láthatóvá válik a diagramon.
 
 #### Q5. Testreszabhatom a diagram tengelyének egyéb tulajdonságait?
- Igen, az Aspose.Words for .NET lehetővé teszi a diagram tengelyének különféle tulajdonságainak testreszabását, például a tengely címét, címkéit, vonalszínét stb. A hozzáféréssel a`AxisX` és`AxisY` A diagram tulajdonságait módosíthatja, pl`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, és sokan mások. Ezzel finoman szabályozhatja a diagram tengelyének megjelenését és viselkedését.
+ Igen, az Aspose.Words for .NET lehetővé teszi a diagram tengelyének különböző tulajdonságainak testreszabását, például a tengely címét, címkéit, vonalszínét és egyebeket. A hozzáféréssel a`AxisX` és`AxisY` A diagram tulajdonságait módosíthatja, pl`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, és sokan mások. Ezzel finoman szabályozhatja a diagram tengelyének megjelenését és viselkedését.
 
 #### Q6. Elmenthetem a diagramot a rejtett tengellyel különböző fájlformátumokban?
  Igen, az Aspose.Words for .NET lehetővé teszi, hogy a diagramot rejtett tengellyel tartalmazó dokumentumot különféle fájlformátumokba mentse, például DOCX, PDF, HTML stb. Kiválaszthatja a kívánt kimeneti formátumot igényei alapján, és használhatja a`Save` módszere a`Document` objektumot a dokumentum mentéséhez. A rejtett tengely a mentett dokumentumban megmarad.

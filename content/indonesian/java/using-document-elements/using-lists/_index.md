@@ -164,7 +164,7 @@ Dengan mengikuti langkah-langkah ini, Anda bisa membuat dokumen dengan tingkat d
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Buat daftar bernomor berdasarkan salah satu templat daftar Microsoft Word.
+        // Buat daftar bernomor berdasarkan salah satu templat daftar Microsoft Word
         //dan menerapkannya pada paragraf pembuat dokumen saat ini.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Ada sembilan level dalam daftar ini, mari kita coba semuanya.
@@ -173,7 +173,7 @@ Dengan mengikuti langkah-langkah ini, Anda bisa membuat dokumen dengan tingkat d
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Buat daftar berpoin berdasarkan salah satu templat daftar Microsoft Word.
+        // Buat daftar berpoin berdasarkan salah satu templat daftar Microsoft Word
         //dan menerapkannya pada paragraf pembuat dokumen saat ini.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

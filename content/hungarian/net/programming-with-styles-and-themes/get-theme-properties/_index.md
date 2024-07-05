@@ -36,7 +36,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## 4. lépés: Jelenítse meg a téma tulajdonságait
 
- Ebben az utolsó lépésben megjelenítjük a tématulajdonságok értékeit a használatával`Console.WriteLine`. A kijelzőt igényei szerint alakíthatja.
+ Ebben az utolsó lépésben a tématulajdonságok értékeit jelenítjük meg a segítségével`Console.WriteLine`. A kijelzőt igényei szerint alakíthatja.
 
 A forráskód futtatásával lekérheti a dokumentum tématulajdonságait. Ez a funkció lehetővé teszi a dokumentum témájában használt betűtípusokkal és színekkel kapcsolatos információk lekérését, amelyek hasznosak lehetnek a stílus testreszabásához vagy elemzéséhez.
 
@@ -72,7 +72,7 @@ Nyugodtan fedezze fel az Aspose.Words for .NET további funkcióit, hogy javíts
 
 #### Hogyan kérhetem le egy dokumentum témájának elsődleges és másodlagos betűtípusát?
 
- A dokumentum témájának elsődleges és másodlagos betűtípusait a következővel érheti el`MajorFonts` és`MinorFonts` tulajdonságai a`Theme` objektum, ill. Ezek a tulajdonságok hozzáférést biztosítanak a dokumentum témájában használt betűtípusnevekhez a különböző nyelveken vagy régiókban.
+ A dokumentum témájának elsődleges és másodlagos betűtípusait a következővel érheti el`MajorFonts` és`MinorFonts` tulajdonságai a`Theme` objektum, ill. Ezek a tulajdonságok hozzáférést biztosítanak a dokumentum témájában használt betűtípusnevekhez a különböző nyelvekhez vagy régiókhoz.
 
 #### Megkaphatom a dokumentum témájában használt hangsúlyos színeket?
 

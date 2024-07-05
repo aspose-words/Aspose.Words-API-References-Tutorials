@@ -76,7 +76,7 @@ R : La signature de documents dans Aspose.Words pour .NET fait référence au p
 
 #### Q : Comment puis-je signer un document Word crypté à l'aide d'Aspose.Words pour .NET ?
 
-R : Pour signer un document Word crypté à l'aide d'Aspose.Words pour .NET, vous devez fournir le mot de passe de décryptage ainsi que le certificat de signature. Suivez ces étapes:
+R : Pour signer un document Word crypté à l'aide d'Aspose.Words for .NET, vous devez fournir le mot de passe de décryptage ainsi que le certificat de signature. Suivez ces étapes:
 1.  Définissez le mot de passe de décryptage dans le`SignOptions` objet.
 2.  Chargez le certificat de signature à l'aide du`CertificateHolder` classe.
 3.  Utilisez le`DigitalSignatureUtil.Sign` méthode pour signer le document crypté, en fournissant les paramètres nécessaires.

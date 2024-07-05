@@ -69,9 +69,9 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 #### Вопрос: Как применить защиту паролем к документу Word с помощью Aspose.Words for .NET?
 
 О: Чтобы применить защиту паролем к документу Word с помощью Aspose.Words for .NET, вы можете выполнить следующие действия:
-1.  Создайте экземпляр`Document` класс.
+1.  Создайте экземпляр`Document` сорт.
 2.  Использовать`Protect` метод`Document` объект, указав пароль и желаемый`ProtectionType` . Для защиты паролем установите`ProtectionType` к`NoProtection`.
-3.  Сохраните защищенный документ с помощью`Save` метод`Document` Объект Object.
+3.  Сохраните защищенный документ с помощью`Save` метод`Document` объект.
 
 #### Вопрос. Каково назначение параметра ProtectionType в методе Protect?
 

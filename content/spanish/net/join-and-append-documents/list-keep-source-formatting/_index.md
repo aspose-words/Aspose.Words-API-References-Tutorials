@@ -74,4 +74,4 @@ Aquí está el código fuente completo de la función Mantener formato de códig
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-¡Eso es todo! Ha implementado con éxito la función Mantener formato de origen de lista utilizando Aspose.Words para .NET. El documento final contendrá el contenido combinado conservando el formato de lista del documento fuente.
+¡Eso es todo! Ha implementado con éxito la función Listar mantener formato de origen utilizando Aspose.Words para .NET. El documento final contendrá el contenido combinado conservando el formato de lista del documento fuente.

@@ -33,7 +33,7 @@ using Aspose.Words;
 Đầu tiên, bạn cần thiết lập môi trường phát triển của mình. Tạo một dự án mới trong IDE của bạn và cài đặt Aspose.Words cho .NET.
 
 1. Tạo một dự án mới: Mở Visual Studio và tạo một dự án C# mới.
-2. Cài đặt Aspose.Words cho .NET: Bạn có thể cài đặt nó thông qua Trình quản lý gói NuGet bằng cách tìm kiếm "Apose.Words".
+2. Cài đặt Aspose.Words cho .NET: Bạn có thể cài đặt nó thông qua Trình quản lý gói NuGet bằng cách tìm kiếm "Aspose.Words".
 
 ```sh
 Install-Package Aspose.Words
@@ -61,7 +61,7 @@ using (Stream stream = File.OpenRead(dataDir + "Document.docx"))
 
 ## Bước 4: Chuyển đổi DOCX sang RTF
 
-Sau khi tải tài liệu, đã đến lúc chuyển đổi nó sang định dạng RTF. Chúng tôi lưu tài liệu vào một`MemoryStream`.
+ Sau khi tải tài liệu, đã đến lúc chuyển đổi nó sang định dạng RTF. Chúng tôi lưu tài liệu vào một`MemoryStream`.
 
 ```csharp
 MemoryStream dstStream = new MemoryStream();

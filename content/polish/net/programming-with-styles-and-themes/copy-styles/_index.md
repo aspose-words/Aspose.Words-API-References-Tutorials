@@ -31,7 +31,7 @@ target. CopyStylesFromTemplate(doc);
 
  Na tym etapie używamy`CopyStylesFromTemplate` metoda kopiowania stylów z dokumentu źródłowego (`doc`) do dokumentu docelowego (`target`).
 
-## Krok 4: Zapisywanie dokumentu
+## Krok 4: Zapisanie dokumentu
 
 ```csharp
 doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");

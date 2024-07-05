@@ -2,13 +2,13 @@
 title: Nyelvek szavai kötőjellel
 linktitle: Nyelvek szavai kötőjellel
 second_title: Aspose.Words Document Processing API
-description: Tanulja meg, hogyan lehet elválasztani szavakat különböző nyelveken Word-dokumentumokban az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan lehet elválasztani szavakat különböző nyelveken Word-dokumentumokban az Aspose.Words for .NET segítségével.
 type: docs
 weight: 10
 url: /hu/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-Ebben a lépésről lépésre bemutatott oktatóanyagban bemutatjuk, hogyan kötőjelezhet el szavakat különböző nyelveken Word dokumentumokban az Aspose.Words for .NET segítségével. Elmagyarázzuk a mellékelt C# forráskódot, és megmutatjuk, hogyan implementálhatja azt saját projektjeibe.
+Ebben a lépésről lépésre bemutatott oktatóanyagban bemutatjuk, hogyan kötőjelezhet el szavakat különböző nyelveken Word-dokumentumokban az Aspose.Words for .NET használatával. Elmagyarázzuk a mellékelt C# forráskódot, és megmutatjuk, hogyan implementálhatja azt saját projektjeibe.
 
 A kezdéshez győződjön meg arról, hogy az Aspose.Words for .NET telepítve van és konfigurálva van a fejlesztői környezetben. Ha még nem tette meg, töltse le és telepítse a könyvtárat a hivatalos webhelyről.
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## 2. lépés: Elválasztási szótárak mentése
 
-Ezután mentse el a feldolgozni kívánt különböző nyelvek elválasztási szótárait. Ebben a példában az amerikai angol és a svájci német szótárait regisztráljuk:
+Ezután mentse el az elválasztási szótárakat a feldolgozni kívánt különböző nyelvekhez. Ebben a példában az amerikai angol és a svájci német szótárait regisztráljuk:
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
@@ -51,7 +51,7 @@ Végül mentse el a módosított dokumentumot:
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Így ! Sikeresen feldolgozta a szavakat az Aspose.Words for .NET használatával különböző nyelveken elválasztó szavak elválasztásával egy Word-dokumentumban.
+Így ! Sikeresen feldolgozta a szavakat az Aspose.Words for .NET segítségével, különböző nyelveken elválasztó szavakkal egy Word-dokumentumban.
 
 ### Minta forráskód a szó elválasztásához az Aspose.Words for .NET használatával
 
@@ -79,4 +79,4 @@ V: Az Aspose.Words szótagozási nyelvének megadásához a megfelelő nyelvi k�
 
 #### K: Az Aspose.Words összes nyelvén működik a szótagosítás?
 
-V: Az Aspose.Words szótagosítása a nyelvspecifikus szótagképzési szabályoktól függ. Bár az Aspose.Words nyelvek széles skáláját támogatja, előfordulhat, hogy egyes nyelvek nem támogatottak, vagy előfordulhat, hogy a szótagosítás nem elérhető számukra. Tekintse meg az Aspose.Words dokumentációját, hogy megtudja, mely nyelveken támogatott a szótagosítás.
+V: Az Aspose.Words szótagosítása a nyelvspecifikus szótagképzési szabályoktól függ. Bár az Aspose.Words nyelvek széles skáláját támogatja, előfordulhat, hogy egyes nyelvek nem támogatottak, vagy előfordulhat, hogy a szótagozás nem érhető el számukra. Tekintse meg az Aspose.Words dokumentációját, hogy megtudja, mely nyelveken támogatott a szótagosítás.

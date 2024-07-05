@@ -30,7 +30,7 @@ De eerste stap bij het beheren van tabellen is het maken ervan. Aspose.Words maa
 // Maak een nieuw document
 Document doc = new Document();
 
-// Maak een tabel met 3 rijen en 4 kolommen.
+// Maak een tabel met 3 rijen en 4 kolommen
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

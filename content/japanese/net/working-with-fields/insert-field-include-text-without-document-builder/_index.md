@@ -1,24 +1,24 @@
 ---
-title: ドキュメントビルダーを使用せずにフィールドにテキストを含める挿入
+title: ドキュメント ビルダーを使用せずにテキストを含むフィールドを挿入する
 linktitle: ドキュメント ビルダーを使用せずに FieldIncludeText を挿入する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書に FieldIncludeText フィールドを挿入する方法を学びます。
+description: Aspose.Words for .NET を使用して Word 文書に FieldIncludeText フィールドを挿入する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
 
-ここでは、Aspose.Words for .NET の「FieldIncludeText フィールドの挿入」機能を使用する、以下の C# ソース コードを説明するステップバイステップ ガイドを示します。望ましい結果を得るために、各ステップを慎重に実行してください。
+ここでは、Aspose.Words for .NET の「FieldIncludeText フィールドの挿入」機能を使用する以下の C# ソース コードを説明するステップ バイ ステップ ガイドを示します。目的の結果を得るには、各手順を慎重に実行してください。
 
-## ステップ 1: ドキュメント ディレクトリのセットアップ
+## ステップ1: ドキュメントディレクトリの設定
 
-提供されたコードでは、ドキュメントのディレクトリを指定する必要があります。 「YOUR DOCUMENT DIRECTORY」という値を、ドキュメント ディレクトリへの適切なパスに置き換えます。
+提供されたコードでは、ドキュメントのディレクトリを指定する必要があります。値「YOUR DOCUMENT DIRECTORY」をドキュメント ディレクトリへの適切なパスに置き換えます。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## ステップ 2: ドキュメントと段落を作成する
+## ステップ2: 文書と段落を作成する
 
 まず、新しいドキュメントを作成し、段落を初期化します。
 
@@ -27,9 +27,9 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## ステップ 3: FieldIncludeText フィールドの挿入
+## ステップ3: FieldIncludeTextフィールドを挿入する
 
-私たちが使用するのは、`AppendField()`メソッドを使用して、FieldIncludeText フィールドを段落に挿入します。
+私たちは`AppendField()`段落に FieldIncludeText フィールドを挿入するメソッド。
 
 ```csharp
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
@@ -42,7 +42,7 @@ fieldIncludeText.BookmarkName = "bookmark";
 fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
 ```
 
-次に、文書の本文に段落を追加します。
+次に、ドキュメントの本文に段落を追加します。
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
@@ -57,7 +57,7 @@ fieldIncludeText.Update();
 ### Aspose.Words for .NET を使用して FieldIncludeText フィールドを挿入するためのソース コードの例
 
 ```csharp
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 //ドキュメントと段落を作成します。
@@ -77,24 +77,24 @@ fieldIncludeText.Update();
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-この例では、新しいドキュメントを作成し、段落を初期化し、ブックマーク名とソース ファイル名を指定する FieldIncludeTexten を挿入し、指定したファイル名でドキュメントを保存しました。
+この例では、新しいドキュメントを作成し、段落を初期化し、ブックマーク名とソース ファイル名を指定する FieldIncludeTexten を挿入し、指定されたファイル名でドキュメントを保存しました。
 
-これで、Aspose.Words for .NET での「FieldIncludeText の挿入」機能の使用に関するガイドは終了です。
+これで、Aspose.Words for .NET の「FieldIncludeText の挿入」機能の使用に関するガイドは終了です。
 
 ### よくある質問
 
-#### Q: Aspose.Words for .NET のテキスト挿入フィールドのソース ファイルを指定するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET のテキスト包含フィールドのソース ファイルを指定するにはどうすればよいですか?
 
- A: Aspose.Words for .NET のテキスト挿入フィールドのソース ファイルを指定するには、`FieldIncludeText.SourceFullName`プロパティを使用してソース ファイルのフル パスを設定します。ソース ファイルがアクセス可能であり、テキスト挿入フィールドに含めたいコンテンツが含まれていることを確認してください。
+ A: Aspose.Words for .NETのテキスト包含フィールドのソースファイルを指定するには、`FieldIncludeText.SourceFullName`プロパティを使用して、ソース ファイルの完全なパスを設定します。ソース ファイルがアクセス可能であり、テキスト包含フィールドに含めるコンテンツが含まれていることを確認します。
 
-#### Q: Aspose.Words for .NET のテキスト挿入フィールドにマクロのテキストを含めることはできますか?
+#### Q: Aspose.Words for .NET のテキスト包含フィールドにマクロからのテキストを含めることはできますか?
 
- A: はい、Aspose.Words for .NET を使用すると、マクロのテキストをテキスト挿入フィールドに含めることができます。使用できます`FieldIncludeText.IncludeText`プロパティを使用して、フィールドに内容を含めるマクロの名前を指定します。
+ A: はい、Aspose.Words for .NETのテキスト挿入フィールドにマクロのテキストを挿入することができます。`FieldIncludeText.IncludeText`フィールドに含める内容のマクロの名前を指定するプロパティ。
 
 #### Q: ドキュメント ビルダーを使用せずにテキスト インクルード フィールドを挿入すると、Aspose.Words for .NET を使用した Word ドキュメントの構造に影響しますか?
 
-A: ドキュメント ビルダーを使用せずにテキスト インクルード フィールドを挿入しても、Word 文書の構造には直接影響しません。ただし、ドキュメントのコンテンツに新しいフィールド要素が追加されます。必要に応じて既存の要素を追加、削除、または変更することで、ドキュメントの構造を操作できます。
+A: ドキュメント ビルダーを使用せずにテキスト インクルード フィールドを挿入しても、Word ドキュメントの構造に直接影響はありません。ただし、ドキュメント コンテンツに新しいフィールド要素が追加されます。必要に応じて既存の要素を追加、削除、または変更することで、ドキュメント構造を操作できます。
 
-#### Q: Aspose.Words for .NET を使用して、Word 文書内のテキスト挿入フィールドの外観をカスタマイズできますか?
+#### Q: Aspose.Words for .NET を使用して Word 文書内のテキスト包含フィールドの外観をカスタマイズできますか?
 
-A: テキスト フィールドを含めても、Word 文書内の外観は直接カスタマイズされません。ただし、段落プロパティ、フォント プロパティ、および Aspose.Words for .NET で利用可能なその他の書式設定オブジェクトを使用して、含まれるテキストを書式設定することができます。
+A: テキスト挿入フィールドは、Word 文書内での外観を直接カスタマイズするものではありません。ただし、段落プロパティ、フォント プロパティ、および Aspose.Words for .NET で使用できるその他の書式設定オブジェクトを使用して、挿入テキストを書式設定できます。

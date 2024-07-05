@@ -17,7 +17,7 @@ Assicurati di avere i seguenti prerequisiti:
 - Aspose.Words per la libreria .NET installata. È possibile scaricarlo utilizzando Gestione pacchetti NuGet per installarlo.
 - Un percorso della directory del documento in cui verrà salvato il documento di output.
 
-## Passaggio 2: crea un nuovo documento e inserisci un grafico.
+## Passaggio 2: crea un nuovo documento e inserisci un grafico
 
  Creane uno nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 
@@ -72,7 +72,7 @@ Ciò completa l'implementazione dell'inserimento di un grafico a dispersione uti
 
 In questo tutorial, hai imparato come inserire un grafico a dispersione in un documento Word utilizzando Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, puoi creare un nuovo documento, inserire un grafico a dispersione, aggiungere dati di serie con le coordinate X e Y e salvare il documento con il grafico.
 
-Aspose.Words per .NET fornisce un'API completa per l'elaborazione delle parole con grafici nei documenti Word. I grafici a dispersione sono utili per visualizzare e analizzare i dati con due variabili numeriche. Con Aspose.Words per .NET, puoi creare facilmente grafici a dispersione che rappresentano la relazione tra i valori X e Y e identificare modelli o tendenze nei dati.
+Aspose.Words per .NET fornisce un'API completa per l'elaborazione delle parole con grafici nei documenti Word. I grafici a dispersione sono utili per visualizzare e analizzare i dati con due variabili numeriche. Con Aspose.Words per .NET, puoi facilmente creare grafici a dispersione che rappresentano la relazione tra i valori X e Y e identificare modelli o tendenze nei dati.
 
 Utilizzando Aspose.Words per .NET, puoi automatizzare il processo di generazione di documenti con grafici a dispersione, risparmiando tempo e fatica nella creazione manuale di documenti. La libreria offre un'ampia gamma di tipi di grafici, inclusi i grafici a dispersione, e fornisce varie opzioni di personalizzazione per personalizzare l'aspetto del grafico in base alle proprie esigenze.
 

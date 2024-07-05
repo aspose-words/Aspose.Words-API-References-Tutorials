@@ -77,4 +77,4 @@ O: W standardowym Markdown tabele nie oferują bezpośredniej obsługi stylów C
 
 #### P: Czy w komórkach tabeli w Markdown możemy dodawać linki lub tekst w formacie inline?
 
-O: Tak, możesz dodawać łącza lub tekst osadzony do komórek tabeli w Markdown, używając odpowiedniej składni Markdown.
+Odp.: Tak, możesz dodawać łącza lub tekst osadzony do komórek tabeli w Markdown, używając odpowiedniej składni Markdown.

@@ -17,7 +17,7 @@ Se till att du har följande förutsättningar:
 - Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den genom att använda NuGet-pakethanteraren för att installera den.
 - En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram.
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
  Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
@@ -72,7 +72,7 @@ Detta slutför implementeringen av att infoga ett punktdiagram med Aspose.Words 
 
 I den här handledningen har du lärt dig hur du infogar ett punktdiagram i ett Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du skapa ett nytt dokument, infoga ett punktdiagram, lägga till seriedata med X- och Y-koordinater och spara dokumentet med diagrammet.
 
-Aspose.Words för .NET tillhandahåller ett omfattande API för ordbehandling med diagram i Word-dokument. Spridningsdiagram är användbara för att visualisera och analysera data med två numeriska variabler. Med Aspose.Words för .NET kan du enkelt skapa spridningsdiagram som representerar förhållandet mellan X- och Y-värden och identifiera mönster eller trender i datan.
+Aspose.Words för .NET tillhandahåller ett omfattande API för ordbehandling med diagram i Word-dokument. Spridningsdiagram är användbara för att visualisera och analysera data med två numeriska variabler. Med Aspose.Words för .NET kan du enkelt skapa spridningsdiagram som representerar förhållandet mellan X- och Y-värden och identifierar mönster eller trender i datan.
 
 Genom att använda Aspose.Words för .NET kan du automatisera processen att generera dokument med punktdiagram, vilket sparar tid och ansträngning vid manuell dokumentskapande. Biblioteket erbjuder ett brett utbud av diagramtyper, inklusive punktdiagram, och erbjuder olika anpassningsalternativ för att skräddarsy diagrammets utseende efter dina behov.
 

@@ -123,7 +123,7 @@ public void addJapaneseAsEditingLanguages() throws Exception
 }
 ```
 
-編輯語言在文件處理中起著至關重要的作用。使用Aspose.Words for Java，您可以設定和自訂編輯語言以滿足文件的語言需求。
+編輯語言在文件處理中起著至關重要的作用。使用 Aspose.Words for Java，您可以設定和自訂編輯語言以滿足文件的語言需求。
 
 
 ## 結論

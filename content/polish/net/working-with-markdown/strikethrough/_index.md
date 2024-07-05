@@ -57,7 +57,7 @@ Gratulacje! Nauczyłeś się teraz, jak zastosować styl przekreślonego tekstu 
 
 #### P: Czy można dodać przekreślony tekst do kilku fragmentów tekstu w tym samym akapicie?
 
- Odp.: Tak, możesz dodać przekreślony tekst do wielu części tekstu w jednym akapicie, używając opcji wielokrotnych.`Run` obiekty. Możesz utworzyć wiele`Run` obiektów i ustaw`Font.StrikeThrough`własność do`true` dla każdego obiektu, aby dodać przekreślony tekst do żądanych części tekstu. Następnie możesz dodać je do akapitu za pomocą`Paragraph.AppendChild(run)` metoda.
+ Odp.: Tak, możesz dodać przekreślony tekst do wielu części tekstu w jednym akapicie, używając opcji wielokrotnych`Run` obiekty. Możesz utworzyć wiele`Run` obiektów i ustaw`Font.StrikeThrough`własność do`true` dla każdego obiektu, aby dodać przekreślony tekst do żądanych części tekstu. Następnie możesz dodać je do akapitu za pomocą`Paragraph.AppendChild(run)` metoda.
 
 #### P: Czy mogę dodać przekreślony tekst do tekstu znajdującego się w tabeli lub komórce w Aspose.Words?
 

@@ -59,7 +59,7 @@ builder.writeln("In this tutorial, we will explore how to use the Content Builde
 
 ## การแบ่งเอกสารเพื่อความแม่นยำ
 
-มาถึงฟังก์ชันหลักแล้ว โดยการแบ่งเอกสารออกเป็นส่วนๆ เราจะใช้ Content Builder เพื่อแทรกตัวแบ่งส่วน
+มาถึงฟังก์ชันหลักแล้ว โดยการแบ่งเอกสารออกเป็นส่วนต่างๆ เราจะใช้ Content Builder เพื่อแทรกตัวแบ่งส่วน
 
 ```python
 # Insert a section break

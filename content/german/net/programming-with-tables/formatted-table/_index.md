@@ -1,24 +1,24 @@
 ---
 title: Formatierte Tabelle
 linktitle: Formatierte Tabelle
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine formatierte Tabelle in einem Word-Dokument erstellen.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/formatted-table/
 ---
 
-In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET eine formatierte Tabelle in einem Word-Dokument erstellen. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials werden Sie in der Lage sein, programmgesteuert Tabellen mit benutzerdefinierter Formatierung in Ihren Word-Dokumenten zu erstellen.
+In diesem Tutorial lernen wir, wie man mit Aspose.Words für .NET eine formatierte Tabelle in einem Word-Dokument erstellt. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials können Sie Tabellen mit benutzerdefinierter Formatierung programmgesteuert in Ihren Word-Dokumenten erstellen.
 
-## Schritt 1: Projekteinrichtung
+## Schritt 1: Projekt-Setup
 1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
-2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
+2. Fügen Sie einen Verweis auf die Aspose.Words-Bibliothek für .NET hinzu.
 
-## Schritt 2: Erstellen des Dokuments und Initialisieren des Dokumentengenerators
-Um mit dem Aufbau der formatierten Tabelle zu beginnen, müssen wir ein neues Dokument erstellen und den Dokumentgenerator initialisieren. Folge diesen Schritten:
+## Schritt 2: Erstellen des Dokuments und Initialisieren des Dokumentgenerators
+Um mit dem Erstellen der formatierten Tabelle zu beginnen, müssen wir ein neues Dokument erstellen und den Dokumentgenerator initialisieren. Folgen Sie diesen Schritten:
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Erstellen Sie das Dokument und initialisieren Sie den Dokumentgenerator
@@ -26,13 +26,13 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Stellen Sie sicher, dass Sie „IHR DOKUMENTENVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis ersetzen.
+Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ unbedingt durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
 
 ## Schritt 3: Erstellen der formatierten Tabelle
-Als Nächstes erstellen wir die formatierte Tabelle mit den vom Document Builder bereitgestellten Methoden. Verwenden Sie den folgenden Code:
+Als Nächstes erstellen wir die formatierte Tabelle mit den vom Dokument-Generator bereitgestellten Methoden. Verwenden Sie den folgenden Code:
 
 ```csharp
-// Beginnen Sie mit dem Aufbau des Arrays
+// Beginnen Sie mit der Array-Konstruktion
 Table table = builder. StartTable();
 
 // Aufbau der Tabellenkopfzeile
@@ -93,26 +93,26 @@ builder.Write("Content Line 2, Cell 3");
 
 builder. EndRow();
 
-// Ende des Array-Aufbaus
+// Ende der Array-Konstruktion
 builder. EndTable();
 ```
 
- Hier verwenden wir den Document Builder, um die Tabelle Schritt für Schritt aufzubauen. Wir beginnen mit einem Anruf`StartTable()` um die Tabelle zu initialisieren. Dann verwenden wir`InsertCell()` Zellen einfügen und`Write()` um Inhalt zu jeder Zelle hinzuzufügen. Wir verwenden auch verschiedene Formatierungseigenschaften, um die Formatierung von Tabellenzeilen, Zellen und Text zu definieren.
+ Hier verwenden wir den Dokumentgenerator, um die Tabelle Schritt für Schritt aufzubauen. Wir beginnen mit dem Aufruf`StartTable()` um die Tabelle zu initialisieren. Dann verwenden wir`InsertCell()` zum Einfügen von Zellen und`Write()` um jeder Zelle Inhalt hinzuzufügen. Wir verwenden auch verschiedene Formatierungseigenschaften, um die Formatierung von Tabellenzeilen, Zellen und Text zu definieren.
 
 ## Schritt 4: Speichern Sie das Dokument
-Schließlich müssen wir das Dokument mit der formatierten Tabelle speichern. Verwenden Sie den folgenden Code:
+Zum Schluss müssen wir das Dokument mit der formatierten Tabelle speichern. Verwenden Sie den folgenden Code:
 
 ```csharp
-// Speichern Sie das Dokument
+// Speichern des Dokuments
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabedokument angeben.
+Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument anzugeben.
 
-### Beispielquellcode für eine formatierte Tabelle mit Aspose.Words für .NET 
+### Beispielquellcode für formatierte Tabelle mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -131,7 +131,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 	builder.Font.Bold = true;
 	builder.CellFormat.Width = 100.0;
 	builder.Write("Header Row,\n Cell 1");
-	// Wir müssen die Breite dieser Zelle nicht angeben, da sie von der vorherigen Zelle geerbt wird.
+	// Wir müssen die Breite dieser Zelle nicht angeben, da sie von der vorherigen Zelle übernommen wird.
 	builder.InsertCell();
 	builder.Write("Header Row,\n Cell 2");
 	builder.InsertCell();
@@ -145,7 +145,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 	builder.RowFormat.Height = 30.0;
 	builder.RowFormat.HeightRule = HeightRule.Auto;
 	builder.InsertCell();
-	// Schriftartformatierung zurücksetzen.
+	// Schriftformatierung zurücksetzen.
 	builder.Font.Size = 12;
 	builder.Font.Bold = false;
 	builder.Write("Row 1, Cell 1 Content");
@@ -169,4 +169,4 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET eine formatierte Tabelle in einem Word-Dokument erstellt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie benutzerdefinierte Tabellen mit spezifischer Formatierung in Ihren Word-Dokumenten programmgesteuert erstellen. Mit dieser Funktion können Sie Ihre Daten optisch ansprechend und organisiert präsentieren und strukturieren.
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET eine formatierte Tabelle in einem Word-Dokument erstellt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie programmgesteuert benutzerdefinierte Tabellen mit spezifischer Formatierung in Ihren Word-Dokumenten erstellen. Mit dieser Funktion können Sie Ihre Daten auf optisch ansprechende und organisierte Weise präsentieren und strukturieren.

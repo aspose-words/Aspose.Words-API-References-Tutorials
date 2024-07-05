@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
  W tym przykładzie ładujemy pierwszą stronę dokumentu PDF. Możesz zmienić wartości`PageIndex` I`PageCount` do żądanego zakresu stron.
 
-## Krok 2: Zapisywanie dokumentu
+## Krok 2: Zapisanie dokumentu
 
  Na koniec możesz zapisać dokument zawierający określony zakres stron za pomocą`Save` metoda:
 

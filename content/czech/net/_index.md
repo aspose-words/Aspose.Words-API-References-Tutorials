@@ -4,7 +4,7 @@ linktitle: Aspose.Words for .NET výukové programy
 type: docs
 weight: 10
 url: /cs/net/
-description: "Výukové programy API a úryvky kódu Aspose.Words pro .NET, které zahrnují vytváření, úpravy, konverzi, tisk a mnoho dalších funkcí využívajících zpracování dokumentů Word"
+description: "Výukové programy API a úryvky kódu Aspose.Words for .NET, které zahrnují vytváření, úpravy, konverzi, tisk a mnoho dalších funkcí pro zpracování dokumentů Word"
 is_root: true
 ---
 
@@ -17,7 +17,7 @@ is_root: true
 | [Povolit funkce OpenType](./enable-opentype-features/) | Přečtěte si, jak povolit funkce OpenType v dokumentech aplikace Word pomocí Aspose.Words pro .NET. Výukové programy vás provedou kroky k aktivaci pokročilých funkcí písem OpenType. |  
 | [Zpracování textu s komentáři](./working-with-comments/) | Prozkoumejte funkce správy komentářů v dokumentech aplikace Word pomocí Aspose.Words pro .NET. Naučte se přidávat, mazat, vyhledávat a formátovat komentáře pomocí výukových programů krok za krokem. |  
 | [Zpracování slov s poli](./working-with-fields/) | Komplexní zdroj pro zpracování textu s poli v dokumentech aplikace Word pomocí Aspose.Words pro .NET. Návody, příklady a podrobná vysvětlení. |  
-| [Zpracování slov s písmy](./working-with-fonts/) | Výukové programy Zpracování textu s písmy vás naučí pracovat s písmy ve Wordu pomocí Aspose.Words pro .NET. Formátování, nahrazování, upozornění a další. |  
+| [Zpracování slov s písmy](./working-with-fonts/) | Výukové programy Zpracování textu s písmy vás naučí, jak pracovat s písmy ve Wordu pomocí Aspose.Words pro .NET. Formátování, nahrazování, upozornění a další. |  
 | [Zpracování slov s poznámkou pod čarou a vysvětlivkou](./working-with-footnote-and-endnote/) | Naučte se pracovat s poznámkami pod čarou a vysvětlivkami v dokumentech aplikace Word pomocí Aspose.Words for .NET. Podrobné návody a praktické příklady. |  
 | [Zpracování slov pomocí FormFields](./working-with-formfields/) | Naučte se pracovat s poli formuláře v dokumentech aplikace Word pomocí Aspose.Words for .NET. Podrobné konzultace s příklady kódu. |  
 | [Zpracování textu se záhlavím a zápatím](./working-with-headers-and-footers/) |Naučte se pracovat se záhlavím a zápatím v dokumentech aplikace Word pomocí Aspose.Words for .NET. Kompletní návody a praktické příklady. |  

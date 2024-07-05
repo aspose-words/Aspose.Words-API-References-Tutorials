@@ -25,7 +25,7 @@ Zde jsou odkazy na některé užitečné zdroje:
 - [Práce se Seznamem](./net/working-with-list/)   
 - [Práce s Markdown](./net/working-with-markdown/)   
 - [Práce s Node](./net/working-with-node/)   
-- [Práce s recenzemi](./net/working-with-revisions/)   
+- [Práce s revizemi](./net/working-with-revisions/)   
 - [Práce s textovými poli](./net/working-with-textboxes/)   
 - [Rozdělit dokument](./net/split-document/)   
 - [Přidejte obsah pomocí Documentbuilderu](./net/add-content-using-documentbuilder/)
@@ -44,7 +44,7 @@ Tato komplexní sbírka výukových programů poskytuje podrobné pokyny, jak ef
 Zde jsou odkazy na některé užitečné zdroje:
 - [Zpracování textu](./java/word-processing/)  
 - [Zpracování tabulky](./java/table-processing/)
-- [Styling dokumentu](./java/document-styling/)
+- [Styl dokumentu](./java/document-styling/)
 - [Sloučení dokumentů](./java/document-merging/)
 - [Konverze dokumentu](./java/document-converting/)
 - [Tisk dokumentů](./java/document-printing/)

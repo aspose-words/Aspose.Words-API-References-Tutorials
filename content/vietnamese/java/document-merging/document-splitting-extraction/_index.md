@@ -110,4 +110,4 @@ Có, Aspose.Words for Java có thể trích xuất văn bản từ các tài li�
 
 ### Tôi có thể truy cập tài liệu về Aspose.Words cho Java ở đâu?
 
- Bạn có thể tìm tài liệu về Aspose.Words for Java.[đây](https://reference.aspose.com/words/java/).
+ Bạn có thể tìm tài liệu về Aspose.Words for Java[đây](https://reference.aspose.com/words/java/).

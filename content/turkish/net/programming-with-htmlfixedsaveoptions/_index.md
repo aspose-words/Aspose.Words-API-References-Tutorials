@@ -2,7 +2,7 @@
 title: Htmlfixedsaveoptions ile Kelime İşleme
 linktitle: Htmlfixedsaveoptions ile Kelime İşleme
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'te sabit HTML kaydetme seçenekleriyle nasıl programlanacağını öğrenin. Eğiticiler, sabit düzen ve gömülü görüntülere sahip HTML belgeleri oluşturmak için farklı özellikler konusunda size rehberlik eder.
+description: Aspose.Words for .NET'te sabit HTML kaydetme seçenekleriyle nasıl programlanacağını öğrenin. Eğiticiler, sabit düzende ve gömülü görüntülerle HTML belgeleri oluşturmak için farklı özellikler konusunda size rehberlik eder.
 type: docs
 weight: 1610
 url: /tr/net/programming-with-htmlfixedsaveoptions/

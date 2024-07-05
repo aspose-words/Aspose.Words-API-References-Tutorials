@@ -18,7 +18,7 @@ Avant d'entrer dans les détails du suivi et de la gestion des révisions de doc
 
 ### Qu’est-ce qu’Aspose.Words pour Java ?
 
-Aspose.Words for Java est une bibliothèque Java robuste et riche en fonctionnalités qui permet aux développeurs de travailler avec des documents Word par programmation. Il offre la possibilité de créer, modifier, convertir et manipuler facilement des documents Word. Avec son ensemble complet de fonctionnalités, c'est l'outil parfait pour la gestion des révisions de documents.
+Aspose.Words for Java est une bibliothèque Java robuste et riche en fonctionnalités qui permet aux développeurs de travailler avec des documents Word par programme. Il offre la possibilité de créer, modifier, convertir et manipuler facilement des documents Word. Avec son ensemble complet de fonctionnalités, c'est l'outil parfait pour la gestion des révisions de documents.
 
 ### Installation d'Aspose.Words pour Java
 

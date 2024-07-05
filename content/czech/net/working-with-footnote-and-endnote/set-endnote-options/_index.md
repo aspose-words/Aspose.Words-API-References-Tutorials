@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Krok 4: Nastavení možností Endnote
 
- Přístup k`EndnoteOptions` vlastnost dokumentu upravit možnosti vysvětlivky. V tomto příkladu jsme nastavili pravidlo restartu tak, aby se restartovalo na každé stránce a na pozici na konec sekce:
+ Přístup k`EndnoteOptions`vlastnost dokumentu upravit možnosti vysvětlivky. V tomto příkladu jsme nastavili pravidlo restartu tak, aby se restartovalo na každé stránce a na pozici na konec sekce:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -81,7 +81,7 @@ Neváhejte použít tento kód ve svých vlastních projektech a upravit jej pod
 
 #### Otázka: Jak mohu stylovat vysvětlivky v Aspose.Words?
 
-A: Chcete-li stylovat vysvětlivky v Aspose.Words, můžete použít`EndnoteOptions` třída a`SeparatorNoteTextStyle` vlastnictví. Pomocí této vlastnosti můžete určit styl písma, velikost, barvu atd. pro vysvětlivky.
+ A: Chcete-li stylovat vysvětlivky v Aspose.Words, můžete použít`EndnoteOptions` třída a`SeparatorNoteTextStyle` vlastnictví. Pomocí této vlastnosti můžete určit styl písma, velikost, barvu atd. pro vysvětlivky.
 
 #### Otázka: Je možné přizpůsobit číslování vysvětlivek v dokumentu?
 
@@ -89,7 +89,7 @@ A: Chcete-li stylovat vysvětlivky v Aspose.Words, můžete použít`EndnoteOpti
 
 #### Otázka: Jak mohu umístit vysvětlivky v dokumentu?
 
- Odpověď: Chcete-li umístit vysvětlivky do dokumentu, můžete použít`Position` vlastnictvím`EndnoteOptions` třída. Můžete určit, zda mají být vysvětlivky umístěny na konec každé stránky, na konec každé sekce nebo na konec dokumentu.
+Odpověď: Chcete-li umístit vysvětlivky do dokumentu, můžete použít`Position` vlastnictvím`EndnoteOptions` třída. Můžete určit, zda mají být vysvětlivky umístěny na konec každé stránky, na konec každé sekce nebo na konec dokumentu.
 
 #### Otázka: Mohu přizpůsobit formát číslování vysvětlivky?
 
@@ -97,4 +97,4 @@ A: Chcete-li stylovat vysvětlivky v Aspose.Words, můžete použít`EndnoteOpti
 
 #### Otázka: Je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu?
 
-Odpověď: Ano, je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu. Použijte`RestartRule` vlastnictvím`EndnoteOptions` třídu a nastavte ji na`RestartContinuous` aby číslování pokračovalo mezi sekcemi.
+ Odpověď: Ano, je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu. Použijte`RestartRule` vlastnictvím`EndnoteOptions` třídu a nastavte ji na`RestartContinuous` aby číslování pokračovalo mezi sekcemi.

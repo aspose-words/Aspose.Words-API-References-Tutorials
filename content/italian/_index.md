@@ -25,7 +25,7 @@ Questi sono i link ad alcune risorse utili:
 - [Lavorare con la lista](./net/working-with-list/)   
 - [Lavorare con Markdown](./net/working-with-markdown/)   
 - [Lavorare con Node](./net/working-with-node/)   
-- [Lavorare con le recensioni](./net/working-with-revisions/)   
+- [Lavorare con le revisioni](./net/working-with-revisions/)   
 - [Lavorare con le caselle di testo](./net/working-with-textboxes/)   
 - [Documento diviso](./net/split-document/)   
 - [Aggiungi contenuto utilizzando Documentbuilder](./net/add-content-using-documentbuilder/)
@@ -62,7 +62,7 @@ Questi sono i link ad alcune risorse utili:
 
 ## Esercitazioni sulla gestione dei documenti Aspose.Words per Python
 {{% alert color="primary" %}}
-Questi tutorial offrono una guida passo passo su come lavorare con i documenti Microsoft Word a livello di codice, inclusa la creazione, la manipolazione e varie funzionalità di sicurezza come la crittografia e la protezione tramite password. Con l'aiuto di questa risorsa, gli sviluppatori possono implementare in modo efficiente le funzionalità di elaborazione dei documenti nelle loro applicazioni Python utilizzando Aspose.Words, migliorando la produttività e garantendo la sicurezza dei documenti. 
+Questi tutorial offrono una guida passo passo su come lavorare con i documenti di Microsoft Word a livello di codice, inclusa la creazione, la manipolazione e varie funzionalità di sicurezza dei documenti come la crittografia e la protezione tramite password. Con l'aiuto di questa risorsa, gli sviluppatori possono implementare in modo efficiente le funzionalità di elaborazione dei documenti nelle loro applicazioni Python utilizzando Aspose.Words, migliorando la produttività e garantendo la sicurezza dei documenti. 
 {{% /alert %}}
 
 Questi sono i link ad alcune risorse utili:

@@ -73,13 +73,13 @@ foreach (Revision revision in doc.Revisions)
 
 ## Slutsats
 
-I den här handledningen lärde vi oss hur man kommer åt den reviderade versionen av ett Word-dokument med Aspose.Words för .NET. Genom att ladda dokumentet, navigera till den reviderade versionen och bläddra igenom revisionerna kunde vi få specifik information för stycken som är listobjekt. Aspose.Words för .NET erbjuder kraftfulla funktioner för att manipulera Word-dokument, inklusive tillgång till recensioner. Du kan nu använda denna kunskap för att komma åt den reviderade versionen av dina egna Word-dokument med Aspose.Words för .NET.
+den här handledningen lärde vi oss hur man kommer åt den reviderade versionen av ett Word-dokument med Aspose.Words för .NET. Genom att ladda dokumentet, navigera till den reviderade versionen och bläddra igenom revisionerna kunde vi få specifik information för stycken som är listobjekt. Aspose.Words för .NET erbjuder kraftfulla funktioner för att manipulera Word-dokument, inklusive tillgång till recensioner. Du kan nu använda denna kunskap för att komma åt den reviderade versionen av dina egna Word-dokument med Aspose.Words för .NET.
 
 ### FAQ's
 
 #### F: Hur laddar jag ett dokument med ändringar i Aspose.Words för .NET?
 
- A: Använd`Document`klass av Aspose.Words för .NET för att ladda ett dokument från en fil som innehåller revisioner. Du kan ange hela dokumentsökvägen.
+ A: Använd`Document` klass av Aspose.Words för .NET för att ladda ett dokument från en fil som innehåller revisioner. Du kan ange hela dokumentsökvägen.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### F: Hur bläddrar jag i dokumentrevisioner i Aspose.Words för .NET?
 
- A: Använd a`foreach` loop för att iterera genom de versioner som finns i dokumentet. Du kan använda`Revisions` egendom av`Document` objekt för att få en samling av alla versioner av dokumentet.
+A: Använd a`foreach` loop för att iterera genom de versioner som finns i dokumentet. Du kan använda`Revisions` egendom av`Document` objekt för att få en samling av alla versioner av dokumentet.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

@@ -88,7 +88,7 @@ builder.Writeln("This is the 3rd paragraph.");
  전적으로! 텍스트, 이미지, 표 등을 삽입할 수 있습니다.`DocumentBuilder` 수업.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
- 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ### 더 자세한 문서는 어디서 찾을 수 있나요?
  자세한 문서를 찾을 수 있습니다[여기](https://reference.aspose.com/words/net/).

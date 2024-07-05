@@ -34,7 +34,7 @@ if (Directory.Exists(pre97Dir) == false)
 Directory.CreateDirectory(pre97Dir);
 ```
 
-## Шаг 2. Просмотрите файлы
+## Шаг 2. Просмотр файлов
 
  Затем мы используем`GetFiles` метод`Directory` class, чтобы получить список файлов в указанном каталоге. Мы также используем`Where`предложение для исключения определенного файла с именем «Поврежденный документ.docx».
 
@@ -66,7 +66,7 @@ break;
 LoadFormat.Docx box:
 Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
 break;
-// ...Добавьте дела для других поддерживаемых форматов документов.
+// ... Добавьте дела для других поддерживаемых форматов документов.
 LoadFormat.Unknown case:
 Console.WriteLine("\tFormat in
 
@@ -97,7 +97,7 @@ break;
 }
 ```
 
-Вот и все! Вы успешно определили формат различных файлов документов, используя Aspose.Words для .NET.
+Вот и все ! Вы успешно определили формат различных файлов документов, используя Aspose.Words для .NET.
 
 ### Пример исходного кода для определения формата файла с помощью Aspose.Words для .NET
 
@@ -215,7 +215,7 @@ break;
 
 #### Какие форматы документов поддерживает Aspose.Words for .NET?
 
-Aspose.Words for .NET поддерживает различные форматы документов, включая документы Microsoft Word 97-2003 (DOC), шаблоны (DOT), документы Office Open XML WordprocessingML (DOCX), документы Office Open XML WordprocessingML с макросами (DOCM), Office Open Шаблоны XML WordprocessingML без макросов (DOTX), шаблоны Office Open OpenDocument Text (OTT), документы MS Word 6 или Word 95 и неизвестные форматы документов.
+Aspose.Words для .NET поддерживает различные форматы документов, включая документы Microsoft Word 97-2003 (DOC), шаблоны (DOT), документы Office Open XML WordprocessingML (DOCX), документы Office Open XML WordprocessingML с макросами (DOCM), Office Open Шаблоны XML WordprocessingML без макросов (DOTX), шаблоны Office Open XML WordprocessingML с макросами (DOTM), документы Flat OPC, документы RTF, документы Microsoft Word 2003 WordprocessingML, документы HTML, документы MHTML (веб-архив), документы OpenDocument Text (ODT), Шаблоны OpenDocument Text (OTT), документы MS Word 6 или Word 95 и неизвестные форматы документов.
 
 #### Как обращаться с зашифрованными файлами документов во время определения формата?
 

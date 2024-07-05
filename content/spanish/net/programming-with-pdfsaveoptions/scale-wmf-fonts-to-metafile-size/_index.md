@@ -83,7 +83,7 @@ un documento PDF usando Aspose.Words para .NET.
 
 ## Conclusión
 
-En este tutorial, explicamos cómo habilitar o deshabilitar el cambio de tamaño de las fuentes WMF al tamaño de metarchivo en un documento PDF usando Aspose.Words para .NET. Si sigue los pasos descritos, podrá controlar fácilmente si se debe cambiar el tamaño de las fuentes WMF para que coincidan con el tamaño del metarchivo al convertirlas a un documento PDF. Esto puede ayudarle a reducir el tamaño del archivo PDF generado y mejorar el rendimiento de renderizado. Asegúrese de especificar la ruta correcta a sus documentos y configurar las opciones de representación del metarchivo según sea necesario.
+En este tutorial, explicamos cómo habilitar o deshabilitar el cambio de tamaño de las fuentes WMF al tamaño de metarchivo en un documento PDF usando Aspose.Words para .NET. Si sigue los pasos descritos, puede controlar fácilmente si se debe cambiar el tamaño de las fuentes WMF para que coincidan con el tamaño del metarchivo al convertirlas a un documento PDF. Esto puede ayudarle a reducir el tamaño del archivo PDF generado y mejorar el rendimiento de renderizado. Asegúrese de especificar la ruta correcta a sus documentos y configurar las opciones de representación del metarchivo según sea necesario.
 
 ### Preguntas frecuentes
 

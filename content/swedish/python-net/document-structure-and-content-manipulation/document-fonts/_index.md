@@ -29,7 +29,7 @@ Teckenstorlekar avgör textens visuella framträdande plats. Rubriktext har vanl
 
 ### Teckensnittsstilar
 
-Teckensnittsstilar lägger till betoning på texten. Fet text indikerar betydelse, medan kursiv text ofta indikerar en definition eller främmande term. Understrykning kan också markera viktiga punkter.
+Teckensnittsstilar lägger till betoning på texten. Fet text betyder betydelse, medan kursiv text ofta indikerar en definition eller främmande term. Understrykning kan också markera viktiga punkter.
 
 ## Textfärg och markering
 

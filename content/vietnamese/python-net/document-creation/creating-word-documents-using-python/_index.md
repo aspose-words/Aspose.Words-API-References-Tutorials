@@ -20,7 +20,7 @@ Trước khi đi sâu vào việc triển khai, điều quan trọng là phải 
 
 ## Chọn đúng thư viện Python
 
-Để hoàn thành mục tiêu tạo tài liệu Word bằng Python, chúng tôi cần một thư viện đáng tin cậy và giàu tính năng. Một trong những lựa chọn phổ biến cho nhiệm vụ này là thư viện "Apose.Words for Python". Nó cung cấp một bộ API mạnh mẽ cho phép thao tác tài liệu dễ dàng và hiệu quả. Hãy khám phá cách thiết lập và sử dụng thư viện này cho dự án của chúng tôi.
+Để hoàn thành mục tiêu tạo tài liệu Word bằng Python, chúng tôi cần một thư viện đáng tin cậy và giàu tính năng. Một trong những lựa chọn phổ biến cho nhiệm vụ này là thư viện "Aspose.Words for Python". Nó cung cấp một bộ API mạnh mẽ cho phép thao tác tài liệu dễ dàng và hiệu quả. Hãy khám phá cách thiết lập và sử dụng thư viện này cho dự án của chúng tôi.
 
 ## Cài đặt Aspose.Words cho Python
 

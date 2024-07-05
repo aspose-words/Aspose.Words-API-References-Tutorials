@@ -20,7 +20,7 @@ url: /zh-hant/python-net/document-creation/creating-word-documents-using-python/
 
 ## 選擇正確的 Python 庫
 
-為了實現使用 Python 產生 Word 文件的目標，我們需要一個可靠且功能豐富的函式庫。此任務的流行選擇之一是“Apose.Words for Python”庫。它提供了一組強大的 API，可以輕鬆有效地進行文件操作。讓我們探討如何為我們的專案設定和使用這個函式庫。
+為了實現使用 Python 產生 Word 文件的目標，我們需要一個可靠且功能豐富的函式庫。此任務的流行選擇之一是“Aspose.Words for Python”庫。它提供了一組強大的 API，可以輕鬆有效地進行文件操作。讓我們探討如何為我們的專案設定和使用這個函式庫。
 
 ## 安裝 Aspose.Words for Python
 

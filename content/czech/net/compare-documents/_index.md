@@ -13,7 +13,7 @@ Porovnat dokumenty je komplexní návod na porovnávání dokumentů pomocí Asp
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Porovnat pro stejné v dokumentu aplikace Word](./compare-for-equal/) | Podrobný průvodce vysvětlením zdrojového kódu C# funkce Compare for Equals do funkce dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Porovnat možnosti v dokumentu aplikace Word](./compare-options/) | Podrobný průvodce vysvětlující zdrojový kód C# možností porovnání ve funkci dokumentu aplikace Word s Aspose.Words pro .NET. |
-| [Srovnání Cíl V dokumentu Word](./comparison-target/) | Naučte se funkci porovnat cíl ve wordovém dokumentu Aspose.Words for .NET, která vám umožní porovnávat dokumenty a generovat nový dokument obsahující provedené změny. |
+| [Porovnat pro stejné v dokumentu aplikace Word](./compare-for-equal/) | Naučte se, jak porovnat dva dokumenty aplikace Word pro dosažení rovnosti pomocí Aspose.Words for .NET. Postupujte podle tohoto podrobného průvodce a ujistěte se, že jsou vaše dokumenty identické. |
+| [Porovnat možnosti v dokumentu aplikace Word](./compare-options/) | Naučte se porovnávat dokumenty aplikace Word pomocí Aspose.Words for .NET pomocí našeho podrobného průvodce. Zajistěte konzistenci dokumentu bez námahy. |
+| [Srovnání Cíl V dokumentu Word](./comparison-target/) | Pomocí tohoto podrobného podrobného průvodce můžete snadno porovnávat dokumenty aplikace Word pomocí Aspose.Words for .NET. Ušetřete čas a zvyšte přesnost při porovnávání dokumentů. |
 | [Srovnání zrnitosti V dokumentu Word](./comparison-granularity/) | Naučte se srovnávat granularitu ve funkci dokumentu Word aplikace Aspose.Words for .NET, která umožňuje porovnávat dokumenty znak po znaku a hlásit provedené změny. |

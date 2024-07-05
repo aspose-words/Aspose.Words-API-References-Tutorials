@@ -57,7 +57,7 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Câu hỏi: Làm cách nào tôi có thể định cấu hình số cột cho chú thích cuối trang trong Aspose.Words?
 
- Trả lời: Để định cấu hình số cột cho chú thích cuối trang trong Aspose.Words, bạn cần sử dụng`FootnoteOptions` lớp học và`ColumnsCount` tài sản. Bạn có thể đặt thuộc tính này thành bất kỳ số cột nào bạn muốn.
+Trả lời: Để định cấu hình số cột cho chú thích cuối trang trong Aspose.Words, bạn cần sử dụng`FootnoteOptions` lớp học và`ColumnsCount` tài sản. Bạn có thể đặt thuộc tính này thành bất kỳ số cột nào bạn muốn.
 
 #### Hỏi: Lợi ích của việc thiết lập cột chú thích cuối trang là gì?
 

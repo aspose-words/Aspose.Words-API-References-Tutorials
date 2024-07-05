@@ -67,7 +67,7 @@ Om de omgeving in te stellen, moet u ervoor zorgen dat Aspose.Words voor .NET in
 
 #### Hoe kan ik thema-eigenschappen openen en wijzigen?
 
- Om thema-eigenschappen te openen en te wijzigen, kunt u de`Theme` voorwerp van de`Document` klas. Door toegang te krijgen tot de`Theme` object, kunt u eigenschappen wijzigen, zoals secundaire lettertypen (`MinorFonts.Latin`) en kleuren (`Colors.Hyperlink`). Wijs de gewenste waarden toe aan deze eigenschappen om het thema van uw document aan te passen.
+ Om thema-eigenschappen te openen en te wijzigen, kunt u de`Theme` voorwerp van de`Document` klas. Door toegang te krijgen tot de`Theme` object, kunt u eigenschappen wijzigen, zoals secundaire lettertypen (`MinorFonts.Latin`) en kleuren (`Colors.Hyperlink`). Wijs de gewenste waarden aan deze eigenschappen toe om het thema van uw document aan te passen.
 
 #### Wat zijn de voordelen van het instellen van thema-eigenschappen in een Word-document?
 

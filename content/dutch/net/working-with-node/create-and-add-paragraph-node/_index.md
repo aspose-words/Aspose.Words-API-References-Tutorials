@@ -74,7 +74,7 @@ A: Een alineaknooppunt in een XML-document wordt gebruikt om een alinea tekst we
 
 #### Vraag: Hoe maak ik een alineaknooppunt in Node.js?
 
- A: Om een alineaknooppunt in Node.js te maken, kunt u de`createElement` werkwijze van de`Document` object om een nieuw element te maken met de naam "paragraaf". Dan kun je gebruik maken van de`createTextNode` methode om een tekstknooppunt te maken dat de inhoud van de alinea bevat.
+ A: Om een alineaknooppunt in Node.js te maken, kunt u de`createElement` werkwijze van de`Document` object om een nieuw element te maken met de naam "paragraaf". Dan kunt u gebruik maken van de`createTextNode` methode om een tekstknooppunt te maken dat de inhoud van de alinea bevat.
 
 #### Vraag: Hoe voeg ik een alineaknooppunt toe aan een bestaand XML-document?
 

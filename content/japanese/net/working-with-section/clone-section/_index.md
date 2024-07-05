@@ -2,41 +2,41 @@
 title: クローンセクション
 linktitle: クローンセクション
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内のセクションのクローンを作成する方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書内のセクションを複製する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-section/clone-section/
 ---
 
-このチュートリアルでは、.NET 用の Aspose.Words ライブラリを使用して Word ドキュメントのセクションのクローンを作成する方法を説明します。セクションのクローンを作成すると、既存のセクションの同一のコピーが作成されます。 .NET プロジェクトのコードを理解して実装できるように、段階的に説明します。
+このチュートリアルでは、.NET 用の Aspose.Words ライブラリを使用して Word 文書のセクションを複製する方法を説明します。セクションを複製すると、既存のセクションと同一のコピーが作成されます。.NET プロジェクトでコードを理解して実装できるように、手順を追って説明します。
 
 ## 前提条件
 始める前に、次のものが揃っていることを確認してください。
-- C# プログラミング言語に関する実践的な知識
+- C#プログラミング言語の実用的な知識
 - プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
-- クローンを作成するセクションを含む Word 文書
+- 複製したいセクションを含むWord文書
 
-## ステップ 1: ドキュメント ディレクトリを定義する
-まず、Word 文書の場所へのディレクトリ パスを設定する必要があります。交換する`"YOUR DOCUMENT DIRECTORY"`コード内で適切なパスを指定します。
+## ステップ1: ドキュメントディレクトリを定義する
+まず、Word文書の場所にディレクトリパスを設定する必要があります。`"YOUR DOCUMENT DIRECTORY"`コード内に適切なパスを追加します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## ステップ 2: ドキュメントをロードし、セクションのクローンを作成する
-次に、Word 文書を`Document`クラス。次に、`Clone`ドキュメントの最初のセクションを複製するメソッド。
+## ステップ2: ドキュメントを読み込み、セクションを複製する
+次に、Word文書を`Document`クラスを使用します。`Clone`ドキュメントの最初のセクションを複製するメソッド。
 
 ```csharp
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document(dataDir + "Document.docx");
 
-//セクションのクローンを作成する
+//セクションを複製する
 Section cloneSection = doc.Sections[0].Clone();
 ```
 
 
-### Aspose.Words for .NET を使用したクローン セクションのサンプル ソース コード 
+### Aspose.Words for .NET を使用した Clone Section のサンプル ソース コード 
 
 ```csharp
 
@@ -49,27 +49,27 @@ Section cloneSection = doc.Sections[0].Clone();
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して Word ドキュメントのセクションのクローンを作成する方法を説明しました。セクションのクローン作成を使用すると、ドキュメント内の既存のセクションの同一のコピーを作成できます。プロジェクトでこのクローン機能を自由にカスタマイズして使用して、ドキュメントのセクションを効率的に操作および編集できます。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のセクションを複製する方法を説明しました。セクションの複製を使用すると、文書内の既存のセクションの同一のコピーを作成できます。プロジェクトでこの複製機能を自由にカスタマイズして使用し、文書のセクションを効率的に操作および編集してください。
 
 ### よくある質問
 
-#### Q: Aspose.Words for .NET でドキュメント ディレクトリを設定するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET でドキュメント ディレクトリを設定するにはどうすればいいですか?
 
- A: Word 文書を含むディレクトリへのパスを設定するには、以下を置き換える必要があります。`"YOUR DOCUMENT DIRECTORY"`コード内で適切なパスを指定します。その方法は次のとおりです。
+ A: Word文書を含むディレクトリへのパスを設定するには、`"YOUR DOCUMENT DIRECTORY"`コードに適切なパスを追加します。方法は次のとおりです。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-#### Q: Aspose.Words for .NET でドキュメントをロードしてセクションをクローンするにはどうすればよいですか?
+#### Q: Aspose.Words for .NET でドキュメントを読み込み、セクションを複製するにはどうすればよいですか?
 
- A: Word 文書を`Document`クラスを作成し、ドキュメントの最初のセクションをクローンするには、次のコードを使用できます。
+ A: Word文書を`Document`クラスを作成してドキュメントの最初のセクションを複製するには、次のコードを使用できます。
 
 ```csharp
-//ドキュメントをロードする
+//ドキュメントを読み込む
 Document doc = new Document(dataDir + "Document.docx");
 
-//セクションのクローンを作成する
+//セクションを複製する
 Section cloneSection = doc.Sections[0].Clone();
 ```

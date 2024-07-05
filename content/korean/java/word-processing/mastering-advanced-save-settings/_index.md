@@ -220,7 +220,7 @@ Document doc = new Document("document.docx");
 doc.save("document.pdf", SaveFormat.PDF);
 ```
 
-### Aspose.Words for Java는 배치 문서 생성에 적합합니까?
+### Aspose.Words for Java는 일괄 문서 생성에 적합합니까?
 
 네, Aspose.Words for Java는 일괄 문서 생성에 적합하여 대규모 문서 제작에 효율적입니다.
 

@@ -48,7 +48,7 @@ DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 
 ## ขั้นตอนที่ 4: เปิดใช้งานคุณสมบัติ "อย่าบันทึกสัญลักษณ์แสดงหัวข้อย่อย"
 
-ในการเปิดใช้งานคุณลักษณะ "Do Not Save Picture Bullet" เราได้กำหนดค่าตัวเลือกการบันทึกโดยตั้งค่า SavePictureBullet เป็น false แล้ว เพื่อให้แน่ใจว่าหัวข้อย่อยรูปภาพจะไม่ถูกบันทึกลงในเอกสารขั้นสุดท้าย
+หากต้องการเปิดใช้งานฟีเจอร์ "Do Not Save Picture Bullet" เราได้กำหนดค่าตัวเลือกการบันทึกโดยตั้งค่า SavePictureBullet เป็น false แล้ว เพื่อให้แน่ใจว่าหัวข้อย่อยรูปภาพจะไม่ถูกบันทึกลงในเอกสารขั้นสุดท้าย
 
 ## ขั้นตอนที่ 5: บันทึกเอกสาร
 
@@ -69,7 +69,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // โหลดเอกสารด้วยสัญลักษณ์แสดงหัวข้อย่อยรูปภาพ
 Document doc = new Document(dataDir + "Image bullet points.docx");
 
-// กำหนดค่าตัวเลือกการบันทึกด้วยฟีเจอร์ "อย่าบันทึกรูปภาพ Bullet"
+// กำหนดค่าตัวเลือกการบันทึกด้วยคุณสมบัติ "Do Not Save Picture Bullet"
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 
 // บันทึกเอกสารด้วยตัวเลือกที่ระบุ

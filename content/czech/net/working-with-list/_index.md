@@ -13,6 +13,6 @@ Zpracování textu se seznamy je komplexní zdroj, který vás provede textovým
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Seznam restartů v každé sekci](./restart-list-at-each-section/)  | Naučte se, jak obnovit číslovaný seznam pro každou sekci v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Seznam restartů v každé sekci](./restart-list-at-each-section/)  | Naučte se, jak obnovit číslovaný seznam pro každou sekci v dokumentu Word pomocí Aspose.Words for .NET. |
 | [Zadejte úroveň seznamu](./specify-list-level/) | Naučte se, jak určit úroveň seznamu v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
 | [Restartovat číslo seznamu](./restart-list-number/) | Naučte se resetovat číslo seznamu v dokumentu aplikace Word pomocí Aspose.Words for .NET. |

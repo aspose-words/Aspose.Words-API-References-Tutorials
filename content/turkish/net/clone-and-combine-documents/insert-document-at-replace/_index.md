@@ -164,4 +164,4 @@ Evet, bir belge koleksiyonu üzerinde yineleme yaparak geri arama işleyicisini 
 adresini ziyaret ederek destek alabilirsiniz.[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
 
 ### Eklenen belgenin formatını koruyabilir miyim?
- Evet`NodeImporter`class, düğümleri bir belgeden diğerine aktarırken biçimlendirmenin nasıl işleneceğini belirtmenize olanak tanır.
+ Evet`NodeImporter` class, düğümleri bir belgeden diğerine aktarırken biçimlendirmenin nasıl işleneceğini belirtmenize olanak tanır.

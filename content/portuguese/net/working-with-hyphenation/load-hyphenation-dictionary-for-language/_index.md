@@ -70,6 +70,6 @@ R: Você pode encontrar arquivos de dicionário de silabização para diferentes
 
 R: Para aplicar o dicionário de silabização carregado a um documento no Aspose.Words, você precisa iterar sobre as palavras do documento e usar o`Hyphenate()` método do`Hyphenation` classe para obter a silabização das palavras. Você pode então formatar as palavras silabizadas conforme necessário, por exemplo, adicionando hífens entre as sílabas.
 
-#### P: Quais idiomas são suportados para silabização no Aspose.Words?
+#### P: Quais idiomas são suportados para silabização em Aspose.Words?
 
 R: Aspose.Words suporta silabização para vários idiomas, incluindo inglês, francês, espanhol, alemão, italiano, holandês, russo, português, sueco, norueguês, dinamarquês, finlandês, polonês, tcheco e muitos mais. Verifique a documentação do Aspose.Words para obter a lista completa de idiomas suportados para silabização.

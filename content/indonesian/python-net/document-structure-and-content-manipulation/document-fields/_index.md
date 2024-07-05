@@ -16,7 +16,7 @@ Dokumen Microsoft Word sering kali memerlukan konten dinamis seperti tanggal, pe
 
 ## Memahami Bidang Dokumen Word
 
-Bidang adalah tempat penampung dalam dokumen yang menampilkan data secara dinamis. Mereka dapat digunakan untuk berbagai tujuan seperti menampilkan tanggal saat ini, referensi silang konten, atau melakukan perhitungan.
+Bidang adalah tempat penampung dalam dokumen yang menampilkan data secara dinamis. Mereka dapat digunakan untuk berbagai tujuan seperti menampilkan tanggal saat ini, referensi silang konten, atau melakukan penghitungan.
 
 ## Memasukkan Bidang Sederhana
 
@@ -41,7 +41,7 @@ builder.insert_field('DATE \\@ "dd/MM/yyyy"')
 
 ## Menggabungkan Bidang Numerik dan Terhitung
 
-Bidang numerik dapat digunakan untuk penghitungan otomatis. Misalnya, untuk membuat kolom yang menghitung jumlah dua angka:
+Bidang numerik dapat digunakan untuk perhitungan otomatis. Misalnya, untuk membuat kolom yang menghitung jumlah dua angka:
 
 ```python
 builder.insert_field('= 5 + 3')

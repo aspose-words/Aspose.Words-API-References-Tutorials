@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Étape 4 : appliquer les paramètres de police au document
 
- Attribuer le configuré`FontSettings`au document. Cela garantit que les règles de remplacement des polices sont appliquées lors du rendu du document.
+ Attribuer le configuré`FontSettings` au document. Cela garantit que les règles de remplacement des polices sont appliquées lors du rendu du document.
 
 ```csharp
 doc.FontSettings = fontSettings;

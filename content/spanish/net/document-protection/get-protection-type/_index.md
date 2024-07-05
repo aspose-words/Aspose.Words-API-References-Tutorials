@@ -50,7 +50,7 @@ En este artículo, explicamos cómo utilizar la función Obtener tipo de protecc
 
 R: Para recuperar el tipo de protección de un documento usando Aspose.Words para .NET, puede seguir estos pasos:
 1.  Cargue el documento usando el`Document` clase.
-2.  Acceder al`ProtectionType` propiedad de la`Document` objeto para recuperar el tipo de protección.
+2.  Acceder al`ProtectionType` propiedad de la`Document`objeto para recuperar el tipo de protección.
 
 #### P: ¿Puedo determinar si un documento está protegido para formularios o campos de formulario utilizando la propiedad ProtectionType?
 

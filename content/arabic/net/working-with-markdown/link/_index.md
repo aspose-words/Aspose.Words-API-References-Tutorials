@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## الخطوة 2: إدراج رابط
 
- يمكننا إدراج رابط باستخدام`InsertHyperlink` طريقة مولد الوثيقة. نحتاج إلى تحديد نص الرابط، هنا "Apose"، بالإضافة إلى عنوان URL المقصود.
+ يمكننا إدراج رابط باستخدام`InsertHyperlink` طريقة مولد الوثيقة. نحتاج إلى تحديد نص الرابط، هنا "Aspose"، بالإضافة إلى عنوان URL المقصود.
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com"، خطأ)؛

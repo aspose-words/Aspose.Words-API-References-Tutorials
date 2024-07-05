@@ -134,7 +134,7 @@ Nagyméretű dokumentumok kezelésekor elengedhetetlen a teljesítmény optimali
 
 Ebben az útmutatóban megvizsgáltuk, hogyan lehet egyszerűen és hatékonyan felosztani dokumentumokat az Aspose.Words for Java használatával. A nagy dokumentumok kisebb, jobban kezelhető részekre osztásával a fejlesztők meghatározott részekkel dolgozhatnak, és leegyszerűsíthetik a dokumentumfeldolgozási feladatokat. Az Aspose.Words for Java különféle módszereket kínál a dokumentumok oldalak, bekezdések, címsorok és szakaszok alapján történő felosztására, így a fejlesztők rugalmasan hozzáigazíthatják a felosztási folyamatot sajátos igényeikhez.
 
-## 12.GYIK
+## 12. GYIK
 
 ### Q1. Az Aspose.Words for Java feloszthatja a különböző formátumú dokumentumokat, például DOC és DOCX?
 

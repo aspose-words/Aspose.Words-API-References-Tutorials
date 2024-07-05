@@ -79,7 +79,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### س: كيف يمكنني تحميل مستند يحتوي على مراجعات إلى Aspose.Words لـ .NET؟
 
- ج: استخدم`Document`فئة Aspose.Words لـ .NET لتحميل مستند من ملف يحتوي على مراجعات. يمكنك تحديد مسار المستند بالكامل.
+ ج: استخدم`Document` فئة Aspose.Words لـ .NET لتحميل مستند من ملف يحتوي على مراجعات. يمكنك تحديد مسار المستند بالكامل.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### س: كيف يمكنني استعراض مراجعات المستندات في Aspose.Words لـ .NET؟
 
- ج: استخدم أ`foreach` حلقة للتكرار من خلال المراجعات الموجودة في المستند. يمكنك استخدام ال`Revisions` ملكية`Document` كائن للحصول على مجموعة من كافة مراجعات المستند.
+ج: استخدم أ`foreach` حلقة للتكرار من خلال المراجعات الموجودة في المستند. يمكنك استخدام ال`Revisions` ملكية`Document` كائن للحصول على مجموعة من كافة مراجعات المستند.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

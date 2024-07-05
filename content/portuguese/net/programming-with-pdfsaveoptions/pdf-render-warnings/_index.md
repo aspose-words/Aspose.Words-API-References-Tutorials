@@ -126,7 +126,7 @@ Seguindo essas etapas, você pode lidar com eficácia com avisos de renderizaç�
 
 ### Q1: Posso lidar com outros tipos de avisos com este método?
 
- Sim o`IWarningCallback` A interface pode lidar com vários tipos de avisos, não apenas aqueles relacionados à renderização de PDF.
+ Sim o`IWarningCallback` interface pode lidar com vários tipos de avisos, não apenas aqueles relacionados à renderização de PDF.
 
 ### Q2: Onde posso baixar uma avaliação gratuita do Aspose.Words for .NET?
 

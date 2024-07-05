@@ -46,7 +46,7 @@ Pastikan Anda memiliki proyek C# baru atau yang sudah ada di Visual Studio tempa
 Jika Anda belum melakukannya, tambahkan referensi ke Aspose.Words di proyek Visual Studio Anda. Anda dapat melakukannya dengan:
    - Klik kanan pada proyek Anda di Solution Explorer.
    - Memilih "Kelola Paket NuGet..."
-   - Mencari "Apose.Words" dan menginstalnya ke proyek Anda.
+   - Mencari "Aspose.Words" dan menginstalnya ke proyek Anda.
 
 ## Langkah 3: Siapkan Dokumen Anda
 
@@ -105,4 +105,4 @@ Kesimpulannya, tutorial ini telah memberikan panduan komprehensif tentang cara m
    - Ya, metode yang ditampilkan di sini secara khusus hanya menargetkan bidang dan tidak mengubah konten lainnya.
 
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk Aspose.Words?
-   -  Mengunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/) dan itu[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8)untuk bantuan selanjutnya.
+   -  Mengunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/) dan itu[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8) untuk bantuan selanjutnya.

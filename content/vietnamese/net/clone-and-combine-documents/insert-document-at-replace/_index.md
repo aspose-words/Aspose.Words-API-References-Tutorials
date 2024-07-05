@@ -164,4 +164,4 @@ Có, bạn có thể sửa đổi trình xử lý gọi lại để xử lý nhi
 Bạn có thể nhận được hỗ trợ bằng cách truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Tôi có thể giữ nguyên định dạng của tài liệu được chèn không?
- Vâng`NodeImporter`lớp cho phép bạn chỉ định cách xử lý định dạng khi nhập các nút từ tài liệu này sang tài liệu khác.
+ Vâng`NodeImporter` lớp cho phép bạn chỉ định cách xử lý định dạng khi nhập các nút từ tài liệu này sang tài liệu khác.

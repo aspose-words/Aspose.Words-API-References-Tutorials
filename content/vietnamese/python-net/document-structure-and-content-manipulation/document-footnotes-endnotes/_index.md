@@ -74,7 +74,7 @@ Bạn có thể quản lý chú thích cuối trang và chú thích cuối chư�
 - Giữ chú thích ngắn gọn và có liên quan
 - Sử dụng chú thích cuối để giải thích sâu hơn
 - Duy trì định dạng nhất quán
-- Kiểm tra kỹ các trích dẫn để đảm bảo độ chính xác.
+- Kiểm tra kỹ các trích dẫn để đảm bảo độ chính xác
 
 ## Khắc phục sự cố thường gặp
 

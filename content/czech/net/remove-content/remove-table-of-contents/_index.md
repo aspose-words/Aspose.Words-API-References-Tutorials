@@ -63,7 +63,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 ```
 
 Zde je to, co se děje:
-- `doc.Range.Fields`: Toto zpřístupní všechna pole v dokumentu.
+- `doc.Range.Fields`: Tím získáte přístup ke všem polím v dokumentu.
 - `.Where(f => f.Type == FieldType.FieldTOC)`: Toto filtruje pole tak, aby se nacházela pouze ta, která jsou obsahem.
 - `.ToList().ForEach(f => f.Remove())`: Toto převede filtrovaná pole na seznam a každé z nich odstraní.
 

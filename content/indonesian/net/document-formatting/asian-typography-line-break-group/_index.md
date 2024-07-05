@@ -2,76 +2,102 @@
 title: Grup Pemutusan Garis Tipografi Asia Dalam Dokumen Word
 linktitle: Grup Pemutusan Garis Tipografi Asia Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan grup pemisah baris Tipografi Asia di dokumen Word dengan Aspose.Words untuk .NET.
+description: Kuasai jeda baris tipografi Asia dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan ini memberikan tutorial langkah demi langkah untuk pemformatan yang tepat.
 type: docs
 weight: 10
 url: /id/net/document-formatting/asian-typography-line-break-group/
 ---
-Dalam tutorial ini, kami akan menunjukkan kepada Anda cara menggunakan grup pemisah baris Tipografi Asia dalam fitur dokumen Word dengan Aspose.Words untuk .NET. Ikuti langkah-langkah di bawah ini untuk memahami kode sumber dan menerapkan perubahan pemformatan.
+## Perkenalan
 
-## Langkah 1: Memuat dokumen
+Pernah bertanya-tanya bagaimana cara menyempurnakan tipografi dokumen Word Anda? Terutama ketika berhadapan dengan bahasa-bahasa Asia, nuansa jeda baris dan pemformatan bisa jadi cukup rumit. Tapi jangan khawatir, kami siap membantu Anda! Dalam panduan komprehensif ini, kami mendalami bagaimana Anda dapat mengontrol jeda baris tipografi Asia di dokumen Word menggunakan Aspose.Words untuk .NET. Baik Anda seorang pengembang berpengalaman atau baru memulai, tutorial langkah demi langkah ini akan memandu Anda melalui semua yang perlu Anda ketahui. Siap membuat dokumen Anda terlihat sempurna? Mari kita mulai!
 
-Untuk memulai, tentukan direktori untuk dokumen Anda dan muat dokumen yang berisi tipografi Asia ke dalam objek Dokumen. Begini caranya:
+## Prasyarat
+
+Sebelum kita masuk ke detail seluk beluknya, ada beberapa hal yang perlu Anda siapkan. Inilah yang Anda perlukan:
+
+- Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika Anda belum melakukannya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Anda memerlukan lingkungan pengembangan seperti Visual Studio.
+- Pengetahuan Dasar C#: Meskipun kami akan menjelaskan semuanya, pemahaman dasar tentang C# akan bermanfaat.
+- Dokumen Word dengan Tipografi Asia: Miliki dokumen Word yang menyertakan tipografi Asia. Ini akan menjadi file kerja kami.
+
+Punya segalanya? Besar! Mari lanjutkan ke penyiapan proyek Anda.
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini penting untuk mengakses fitur yang kita perlukan dari perpustakaan Aspose.Words. Buka proyek Anda dan tambahkan arahan penggunaan berikut di bagian atas file kode Anda:
+
+```csharp
+using System;
+using Aspose.Words;
+```
+
+## Langkah 1: Muat Dokumen Word Anda
+
+Mari kita mulai dengan memuat dokumen Word yang ingin Anda kerjakan. Dokumen ini harus menyertakan beberapa tipografi Asia, yang akan kami modifikasi.
 
 ```csharp
 // Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Asian typography.docx");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Asian typography.docx");
 ```
 
-## Langkah 2: Pengaturan Tipografi Asia
+## Langkah 2: Akses Format Paragraf
 
-Kami sekarang akan mengkonfigurasi pengaturan tipografi Asia untuk paragraf pertama dokumen. Begini caranya:
+Selanjutnya, kita perlu mengakses format paragraf paragraf pertama di dokumen Anda. Di sinilah kita akan membuat penyesuaian yang diperlukan pada pengaturan tipografi.
 
 ```csharp
 ParagraphFormat format = doc.FirstSection.Body.Paragraphs[0].ParagraphFormat;
-format. FarEastLineBreakControl = false;
-format. WordWrap = true;
-format. HangingPunctuation = false;
 ```
 
-## Langkah 3: Menyimpan dokumen
+## Langkah 3: Nonaktifkan Kontrol Pemutusan Jalur Timur Jauh
 
- Setelah memasukkan kolom formulir input teks, simpan dokumen ke lokasi yang diinginkan menggunakan`Save` metode. Pastikan untuk memberikan jalur file yang sesuai:
+Sekarang, kita akan menonaktifkan kontrol pemutusan garis Timur Jauh. Pengaturan ini menentukan bagaimana teks dibungkus dalam bahasa-bahasa Asia, dan mematikannya memberi Anda kontrol lebih besar terhadap pemformatan.
+
+```csharp
+format.FarEastLineBreakControl = false;
+```
+
+## Langkah 4: Aktifkan Bungkus Kata
+
+Untuk memastikan teks Anda terbungkus dengan benar, Anda harus mengaktifkan bungkus kata. Ini akan memungkinkan teks mengalir secara alami ke baris berikutnya tanpa jeda yang canggung.
+
+```csharp
+format.WordWrap = true;
+```
+
+## Langkah 5: Nonaktifkan Tanda Baca Gantung
+
+Tanda baca yang menggantung terkadang dapat mengganggu alur teks, terutama pada tipografi Asia. Menonaktifkannya memastikan tampilan dokumen Anda lebih bersih.
+
+```csharp
+format.HangingPunctuation = false;
+```
+
+## Langkah 6: Simpan Dokumen
+
+Terakhir, setelah melakukan semua penyesuaian ini, saatnya menyimpan dokumen Anda. Ini akan menerapkan semua perubahan format yang kami buat.
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 ```
 
-### Contoh kode sumber untuk Grup Pemutus Garis Tipografi Asia menggunakan Aspose.Words untuk .NET
-
-Berikut kode sumber lengkap fitur Asian Typography Line Break Group dengan Aspose.Words for .NET:
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Asian typography.docx");
-
-	ParagraphFormat format = doc.FirstSection.Body.Paragraphs[0].ParagraphFormat;
-	format.FarEastLineBreakControl = false;
-	format.WordWrap = true;
-	format.HangingPunctuation = false;
-
-	doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
-	
-```
-Dengan kode ini Anda akan dapat menerapkan grup pemisah baris Tipografi Asia menggunakan Aspose.Words untuk .NET.
-
 ## Kesimpulan
 
- Dalam tutorial ini, kita menjelajahi fitur "Grup Pemutus Garis Tipografi Asia" di Aspose.Words untuk .NET. Dengan mengkonfigurasi`FarEastLineBreakControl`, `WordWrap` , Dan`HangingPunctuation` properti dari`ParagraphFormat`, kami dapat mengontrol perilaku putusnya garis untuk tipografi Asia di dokumen Word. Fitur ini berguna untuk menangani karakter Asia dan memastikan jeda baris dan pembungkusan kata yang tepat dalam dokumen dengan konten bahasa campuran.
+Dan itu dia! Hanya dengan beberapa baris kode, Anda telah menguasai seni mengontrol jeda baris tipografi Asia di dokumen Word menggunakan Aspose.Words untuk .NET. Alat canggih ini memungkinkan Anda melakukan penyesuaian yang tepat, memastikan dokumen Anda terlihat profesional dan halus. Baik Anda sedang mempersiapkan laporan, presentasi, atau dokumen apa pun yang menyertakan teks Asia, langkah-langkah ini akan membantu Anda mempertahankan pemformatan yang sempurna. 
 
-### FAQ
+## FAQ
 
-#### T: Apa yang dimaksud dengan fitur "Grup Pemutus Garis Tipografi Asia" di Aspose.Words untuk .NET?
+### Apa yang dimaksud dengan kontrol pemutusan jalur Timur Jauh?
+Kontrol jeda baris Timur Jauh adalah pengaturan yang mengatur cara teks dibungkus dalam bahasa-bahasa Asia, memastikan pemformatan dan keterbacaan yang tepat.
 
-J: Fitur "Grup Pemutus Garis Tipografi Asia" di Aspose.Words untuk .NET memungkinkan Anda mengontrol perilaku pemutusan garis untuk tipografi Asia di dokumen Word. Secara khusus, ini mempengaruhi bagaimana garis dipecah dan dibungkus ketika berhadapan dengan karakter Asia dalam paragraf.
+### Mengapa saya harus menonaktifkan tanda baca gantung?
+Menonaktifkan tanda baca gantung membantu menjaga tampilan tetap bersih dan profesional, terutama pada dokumen dengan tipografi Asia.
 
-#### T: Bagaimana cara mengaktifkan "Grup Pemutus Garis Tipografi Asia" di Aspose.Words untuk .NET?
+### Bisakah saya menerapkan pengaturan ini ke beberapa paragraf?
+Ya, Anda dapat mengulang seluruh paragraf dalam dokumen dan menerapkan pengaturan ini sesuai kebutuhan.
 
- J: Untuk mengaktifkan "Grup Pemutus Garis Tipografi Asia", Anda perlu mengonfigurasi`FarEastLineBreakControl`, `WordWrap` , Dan`HangingPunctuation` properti dari`ParagraphFormat` untuk paragraf yang relevan dalam dokumen Anda. Pengaturan`FarEastLineBreakControl` ke`false` memastikan bahwa karakter Asia diperlakukan serupa dengan karakter Latin terkait pemutusan baris.`WordWrap` mulai`true` mengaktifkan pembungkusan kata untuk tipografi Asia, dan`HangingPunctuation` mulai`false` mencegah tanda baca menggantung di teks Asia.
+### Apakah saya perlu menggunakan Visual Studio untuk ini?
+Meskipun Visual Studio direkomendasikan, Anda dapat menggunakan lingkungan pengembangan apa pun yang mendukung C# dan .NET.
 
-#### T: Dapatkah saya menerapkan "Grup Pemutus Garis Tipografi Asia" pada paragraf tertentu dalam dokumen?
-
-J: Ya, Anda dapat menerapkan pengaturan "Grup Pemutus Garis Tipografi Asia" ke paragraf tertentu dalam dokumen Word. Dalam kode contoh, pengaturan diterapkan pada paragraf pertama dokumen. Anda dapat menyesuaikan kode untuk menargetkan paragraf lain sesuai kebutuhan dengan mengaksesnya melalui`Paragraphs` kumpulan bagian yang relevan dalam dokumen.
+### Di mana saya dapat menemukan lebih banyak sumber daya tentang Aspose.Words untuk .NET?
+ Anda dapat menemukan dokumentasi yang komprehensif[Di Sini](https://reference.aspose.com/words/net/) , dan untuk pertanyaan apa pun, forum dukungan sangat membantu[Di Sini](https://forum.aspose.com/c/words/8).

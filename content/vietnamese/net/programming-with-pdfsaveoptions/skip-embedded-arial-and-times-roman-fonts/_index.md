@@ -90,6 +90,6 @@ Khả năng tương thích tốt hơn: Bằng cách sử dụng các phông ch�
 #### Câu hỏi: Hậu quả của việc tắt tính năng nhúng phông chữ Arial và Times Roman trong tài liệu PDF là gì?
 Trả lời: Hậu quả của việc tắt tính năng nhúng phông chữ Arial và Times Roman trong tài liệu PDF như sau:
 
-Hình thức khác: Nếu phông chữ Arial và Times Roman không có sẵn trên hệ thống nơi tệp PDF được mở thì các phông chữ thay thế sẽ được sử dụng, điều này có thể dẫn đến hình thức khác với dự định.
+Hình thức khác: Nếu phông chữ Arial và Times Roman không có sẵn trên hệ thống nơi tệp PDF được mở, các phông chữ thay thế sẽ được sử dụng, điều này có thể dẫn đến hình thức khác với dự định.
 
 Vấn đề về khả năng đọc: Phông chữ thay thế được sử dụng có thể không dễ đọc như phông chữ gốc, điều này có thể ảnh hưởng đến khả năng đọc của tài liệu.

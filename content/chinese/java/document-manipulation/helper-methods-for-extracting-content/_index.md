@@ -1,8 +1,8 @@
 ---
-title: 在 Aspose.Words for Java 中提取内容的辅助方法
+title: Aspose.Words for Java 中提取内容的辅助方法
 linktitle: 提取内容的辅助方法
 second_title: Aspose.Words Java 文档处理 API
-description: 了解如何使用 Aspose.Words for Java 从 Word 文档中高效提取内容。在这份综合指南中探索帮助器方法、自定义格式等。
+description: 了解如何使用 Aspose.Words for Java 从 Word 文档中高效提取内容。在此综合指南中探索辅助方法、自定义格式等。
 type: docs
 weight: 14
 url: /zh/java/document-manipulation/helper-methods-for-extracting-content/
@@ -10,13 +10,13 @@ url: /zh/java/document-manipulation/helper-methods-for-extracting-content/
 
 ## Aspose.Words for Java 中提取内容的辅助方法简介
 
-Aspose.Words for Java 是一个功能强大的库，允许开发人员以编程方式处理 Word 文档。使用 Word 文档时的一项常见任务是从中提取内容。在本文中，我们将探索一些使用 Aspose.Words for Java 有效提取内容的辅助方法。
+Aspose.Words for Java 是一个功能强大的库，允许开发人员以编程方式处理 Word 文档。处理 Word 文档时，一项常见任务是从中提取内容。在本文中，我们将探索一些使用 Aspose.Words for Java 高效提取内容的辅助方法。
 
 ## 先决条件
 
-在我们深入研究代码示例之前，请确保您已在 Java 项目中安装并设置了 Aspose.Words for Java。您可以从以下位置下载：[这里](https://releases.aspose.com/words/java/).
+在深入研究代码示例之前，请确保您已在 Java 项目中安装并设置了 Aspose.Words for Java。您可以从以下位置下载[这里](https://releases.aspose.com/words/java/).
 
-## 辅助方法1：按样式提取段落
+## 辅助方法 1：按样式提取段落
 
 ```java
 public static ArrayList<Paragraph> paragraphsByStyleName(Document doc, String styleName) {
@@ -33,70 +33,70 @@ public static ArrayList<Paragraph> paragraphsByStyleName(Document doc, String st
 }
 ```
 
-您可以使用此方法提取 Word 文档中具有特定样式的段落。当您想要提取具有特定格式的内容（例如标题或块引号）时，这非常有用。
+您可以使用此方法提取 Word 文档中具有特定样式的段落。当您想要提取具有特定格式的内容（例如标题或块引用）时，这种方法非常有用。
 
-## 辅助方法2：通过节点提取内容
+## 辅助方法 2：按节点提取内容
 
 ```java
 public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node endNode, boolean isInclusive) {
-    //首先，检查传递给此方法的节点是否有效。
+    //首先，检查传递给此方法的节点是否可以有效使用。
     verifyParameterNodes(startNode, endNode);
     
     //创建一个列表来存储提取的节点。
     ArrayList<Node> nodes = new ArrayList<Node>();
 
-    //如果任一标记是评论的一部分，包括评论本身，我们需要移动指针
-    //转发到 CommentRangeEnd 节点之后找到的 Comment 节点。
+    //如果任一标记是注释的一部分（包括注释本身），则我们需要移动指针
+    //转发到在 CommentRangeEnd 节点之后找到的注释节点。
     if (endNode.getNodeType() == NodeType.COMMENT_RANGE_END && isInclusive) {
         Node node = findNextNode(NodeType.COMMENT, endNode.getNextSibling());
         if (node != null)
             endNode = node;
     }
     
-    //保留传递给此方法的原始节点的记录，以便在需要时分割标记节点。
+    //保留传递给此方法的原始节点的记录，以便在需要时拆分标记节点。
     Node originalStartNode = startNode;
     Node originalEndNode = endNode;
 
-    //基于块级节点（段落和表格）提取内容。遍历父节点来找到它们。
-    //我们将根据标记节点是否内联来分割第一个和最后一个节点的内容。
+    //根据块级节点（段落和表格）提取内容。遍历父节点来找到它们。
+    //我们将根据标记节点是否内联来拆分第一个和最后一个节点的内容。
     startNode = getAncestorInBody(startNode);
     endNode = getAncestorInBody(endNode);
     boolean isExtracting = true;
     boolean isStartingNode = true;
-    //我们从文档中提取的当前节点。
+    //我们正在从文档中提取的当前节点。
     Node currNode = startNode;
 
-    //开始提取内容。处理所有块级节点并专门分割第一个
-    //需要时添加最后一个节点，以便保留段落格式。
-    //这种方法比常规提取器稍微复杂一些，因为我们需要考虑因素
-    //使用内联节点、字段、书签等进行提取，使其有用。
+    //开始提取内容。处理所有块级节点，并特别拆分第一个
+    //并在需要时结束节点，以便保留段落格式。
+    //这种方法比常规提取器稍微复杂一些，因为我们需要考虑
+    //使用内联节点、字段、书签等进行提取，以使其有用。
     while (isExtracting) {
-        //克隆当前节点及其子节点以获得副本。
+        //克隆当前节点及其子节点以获取副本。
         Node cloneNode = currNode.deepClone(true);
         boolean isEndingNode = currNode.equals(endNode);
         if (isStartingNode || isEndingNode) {
             //我们需要单独处理每个标记，因此将其传递给单独的方法。
-            //应首先处理End以保留节点索引。
+            //应首先处理结束以保留节点索引。
             if (isEndingNode) {
-                // !isStartingNode：如果标记是同一节点，则不要添加节点两次。
+                // !isStartingNode：如果标记是同一个节点，则不要添加两次节点。
                 processMarker(cloneNode, nodes, originalEndNode, currNode, isInclusive,
                         false, !isStartingNode, false);
                 isExtracting = false;
             }
-            //条件需要分开，因为块级开始和结束标记可能是同一节点。
+            //条件需要分开，因为块级开始和结束标记可能是同一个节点。
             if (isStartingNode) {
                 processMarker(cloneNode, nodes, originalStartNode, currNode, isInclusive,
                         true, true, false);
                 isStartingNode = false;
             }
         } else
-            //节点不是开始或结束标记，只需将副本添加到列表中即可。
+            //节点不是开始或结束标记，只需将副本添加到列表中。
             nodes.add(cloneNode);
 
-        //移动到下一个节点并将其提取。如果下一个节点为空，
-        //其余内容可以在不同的部分中找到。
+        //移动到下一个节点并提取它。如果下一个节点为空，
+        //其余内容位于不同的部分。
         if (currNode.getNextSibling() == null && isExtracting) {
-            //转到下一部分。
+            //移至下一部分。
             Section nextSection = (Section) currNode.getAncestor(NodeType.SECTION).getNextSibling();
             currNode = nextSection.getBody().getFirstChild();
         } else {
@@ -114,7 +114,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
 }
 ```
 
-此方法允许您提取两个指定节点之间的内容，无论它们是段落、表格还是任何其他块级元素。它处理各种场景，包括内联标记、字段和书签。
+此方法允许您提取两个指定节点之间的内容，无论它们是段落、表格还是任何其他块级元素。它可处理各种场景，包括内联标记、字段和书签。
 
 ## 辅助方法 3：生成新文档
 
@@ -122,7 +122,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
 public static Document generateDocument(Document srcDoc, ArrayList<Node> nodes) throws Exception {
     Document dstDoc = new Document();
     
-    //从空文档中删除第一段。
+    //从空文档中删除第一个段落。
     dstDoc.getFirstSection().getBody().removeAllChildren();
     
     //将列表中的每个节点导入到新文档中。保留节点的原始格式。
@@ -136,11 +136,11 @@ public static Document generateDocument(Document srcDoc, ArrayList<Node> nodes) 
 }
 ```
 
-此方法允许您通过从源文档导入节点列表来生成新文档。它保留了节点的原始格式，这使得它对于创建具有特定内容的新文档非常有用。
+此方法允许您通过从源文档导入节点列表来生成新文档。它保留了节点的原始格式，因此对于创建具有特定内容的新文档非常有用。
 
 ## 结论
 
-从 Word 文档中提取内容可能是许多文档处理任务的关键部分。 Aspose.Words for Java 提供了强大的帮助器方法来简化此过程。无论您需要按样式、节点之间的内容提取段落，还是生成新文档，这些方法都将帮助您在 Java 应用程序中高效地处理 Word 文档。
+从 Word 文档中提取内容是许多文档处理任务的关键部分。Aspose.Words for Java 提供了强大的辅助方法来简化此过程。无论您需要按样式提取段落、节点之间的内容还是生成新文档，这些方法都可以帮助您在 Java 应用程序中高效处理 Word 文档。
 
 ## 常见问题解答
 
@@ -150,16 +150,16 @@ public static Document generateDocument(Document srcDoc, ArrayList<Node> nodes) 
 
 ### 我可以从 Word 文档的特定部分提取内容吗？
 
-是的，您可以使用本文中提到的方法从 Word 文档的特定部分提取内容。只需指定定义要提取的部分的开始和结束节点即可。
+是的，您可以使用本文中提到的方法从 Word 文档的特定部分提取内容。只需指定定义要提取的部分的起始和结束节点即可。
 
 ### Aspose.Words for Java 与 Java 11 兼容吗？
 
-是的，Aspose.Words for Java 与 Java 11 及更高版本兼容。您可以在 Java 应用程序中使用它，不会出现任何问题。
+是的，Aspose.Words for Java 与 Java 11 及更高版本兼容。您可以在 Java 应用程序中使用它而不会出现任何问题。
 
 ### 我可以自定义提取内容的格式吗？
 
-是的，您可以通过修改生成文档中导入的节点来自定义提取内容的格式。 Aspose.Words for Java 提供了广泛的格式化选项来满足您的需求。
+是的，您可以通过修改生成的文档中导入的节点来自定义提取内容的格式。Aspose.Words for Java 提供了广泛的格式化选项来满足您的需求。
 
-### 在哪里可以找到 Aspose.Words for Java 的更多文档和示例？
+### 在哪里可以找到有关 Aspose.Words for Java 的更多文档和示例？
 
-您可以在 Aspose 网站上找到 Aspose.Words for Java 的综合文档和示例。访问[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/)获取详细的文档和资源。
+您可以在 Aspose 网站上找到 Aspose.Words for Java 的全面文档和示例。请访问[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/)以获取详细的文档和资源。

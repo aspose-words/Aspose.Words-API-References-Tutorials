@@ -93,4 +93,4 @@ J: Aspose.Words mendukung berbagai format konversi dalam bidang, termasuk format
 
 #### T: Bagaimana cara memperbarui bidang konversi di dokumen Word dengan Aspose.Words?
 
-J: Untuk memperbarui bidang konversi di dokumen Word dengan Aspose.Words, Anda dapat menggunakan metode UpdateFields. Metode ini menelusuri dokumen dan memperbarui semua bidang, termasuk bidang konversi, menghitung ulang nilai berdasarkan data saat ini.
+J: Untuk memperbarui bidang konversi di dokumen Word dengan Aspose.Words, Anda dapat menggunakan metode UpdateFields. Metode ini mengulang dokumen dan memperbarui semua bidang, termasuk bidang konversi, menghitung ulang nilai berdasarkan data saat ini.

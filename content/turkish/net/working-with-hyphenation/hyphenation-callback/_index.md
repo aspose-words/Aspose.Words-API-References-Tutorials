@@ -19,7 +19,7 @@ Kodlarla elimizi kirletmeden önce ihtiyacınız olan her şeye sahip olduğunuz
 1.  Aspose.Words for .NET: Kitaplığa sahip olduğunuzdan emin olun. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
 2. IDE: Visual Studio gibi bir geliştirme ortamı.
 3. Temel C# Bilgisi: C# ve .NET çerçevesinin anlaşılması.
-4. Tireleme Sözlükleri: Kullanmayı planladığınız dillere yönelik Tireleme sözlükleri.
+4. Tireleme Sözlükleri: Kullanmayı planladığınız diller için tireleme sözlükleri.
 5.  Aspose Lisansı: Geçerli bir Aspose lisansı. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) eğer sende yoksa.
 
 ## Ad Alanlarını İçe Aktar

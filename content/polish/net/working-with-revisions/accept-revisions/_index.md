@@ -1,6 +1,6 @@
 ---
-title: Zaakceptuj recenzje
-linktitle: Zaakceptuj recenzje
+title: Zaakceptuj poprawki
+linktitle: Zaakceptuj poprawki
 second_title: Aspose.Words API do przetwarzania dokumentów
 description: Dowiedz się, jak akceptować poprawki w dokumencie programu Word za pomocą Aspose.Words dla .NET
 type: docs
@@ -74,7 +74,7 @@ doc.StopTrackRevisions();
 ```
 ## Krok 6: Zapisywanie dokumentu
 
- Po wstawieniu pola formularza wprowadzania tekstu zapisz dokument w wybranej lokalizacji za pomocą przycisku`Save` metoda. Upewnij się, że podałeś odpowiednią ścieżkę pliku:
+ Po wstawieniu pola formularza wprowadzania tekstu zapisz dokument w wybranej lokalizacji za pomocą przycisku`Save`metoda. Upewnij się, że podałeś odpowiednią ścieżkę pliku:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Usunięty akapit dotyczący wersji zostanie usunięty po zaakceptowaniu zmian.
+// Akapit dotyczący usunięcia wersji zostanie usunięty po zaakceptowaniu zmian.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

@@ -128,7 +128,7 @@ A: Ya, kode yang diberikan berfungsi dengan berbagai format dokumen Word yang di
 
 #### T: Dapatkah saya menggunakan ketentuan untuk menampilkan atau menyembunyikan bookmark berdasarkan nilai bidang gabungan dalam dokumen?
 
- J: Ya, Anda dapat menggunakan kondisi dan menggabungkan nilai bidang untuk menentukan apakah bookmark harus ditampilkan atau disembunyikan. Anda dapat menyesuaikan kodenya`ShowHideBookmarkedContent` berfungsi dengan memperhatikan kondisi dan nilai yang sesuai.
+ J: Ya, Anda dapat menggunakan ketentuan dan menggabungkan nilai bidang untuk menentukan apakah bookmark harus ditampilkan atau disembunyikan. Anda dapat menyesuaikan kodenya`ShowHideBookmarkedContent` berfungsi dengan memperhatikan kondisi dan nilai yang sesuai.
 
 #### T: Bagaimana cara menghapus penanda di dokumen Word menggunakan Aspose.Words untuk .NET?
 

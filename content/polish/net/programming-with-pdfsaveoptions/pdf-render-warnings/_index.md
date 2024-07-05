@@ -126,7 +126,7 @@ Wykonując poniższe kroki, możesz skutecznie obsługiwać ostrzeżenia o rende
 
 ### P1: Czy za pomocą tej metody mogę obsługiwać inne typy ostrzeżeń?
 
- Tak`IWarningCallback` Interfejs obsługuje różnego rodzaju ostrzeżenia, nie tylko te związane z renderowaniem plików PDF.
+ Tak`IWarningCallback` interfejs może obsługiwać różnego rodzaju ostrzeżenia, nie tylko te związane z renderowaniem plików PDF.
 
 ### P2: Gdzie mogę pobrać bezpłatną wersję próbną Aspose.Words dla .NET?
 

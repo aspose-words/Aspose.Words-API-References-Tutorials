@@ -110,4 +110,4 @@ Sì, Aspose.Words per Java può estrarre testo da documenti scansionati con funz
 
 ### Dove posso accedere alla documentazione per Aspose.Words per Java?
 
- È possibile trovare la documentazione per Aspose.Words per Java.[Qui](https://reference.aspose.com/words/java/).
+ È possibile trovare la documentazione per Aspose.Words per Java[Qui](https://reference.aspose.com/words/java/).

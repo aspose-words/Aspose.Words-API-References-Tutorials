@@ -32,7 +32,7 @@ url: /zh-hant/net/working-with-fields/insert-merge-field-using-dom/
 要使用Aspose.Words，您需要將其新增至您的專案。這可以透過 NuGet 套件管理器來完成。
 
 1. **Open NuGet Package Manager:**在解決方案資源管理器中以滑鼠右鍵按一下您的項目，然後選擇「管理 NuGet 套件」。
-2. **Search for Aspose.Words:**在 NuGet 套件管理器中，搜尋「Apose.Words」。
+2. **Search for Aspose.Words:**在 NuGet 套件管理器中，搜尋「Aspose.Words」。
 3. **Install the Package:**按一下「安裝」將 Aspose.Words 新增至您的專案中。
 
 ## 第 3 步：導入命名空間
@@ -119,4 +119,4 @@ doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 Aspose.Words 支援多個版本的 .NET，包括 .NET Framework、.NET Core 和 .NET Standard。
 
 ### 5. 在哪裡可以找到Aspose.Words的API文件？
- API 文件可用。[這裡](https://reference.aspose.com/words/net/).
+ API 文件可用[這裡](https://reference.aspose.com/words/net/).

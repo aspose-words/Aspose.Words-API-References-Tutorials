@@ -12,6 +12,6 @@ Przetwarzanie słów z dzieleniem wyrazów to wszechstronne źródło informacji
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Dziel wyrazy w językach](./hyphenate-words-of-languages/) | Dowiedz się, jak dzielić wyrazy w różnych językach w dokumentach programu Word za pomocą Aspose.Words dla .NET. |
+| [Dziel wyrazy w językach](./hyphenate-words-of-languages/) | Dowiedz się, jak dzielić słowa w różnych językach w dokumentach programu Word przy użyciu Aspose.Words dla .NET. |
 | [Załaduj słownik dzielenia wyrazów dla języka](./load-hyphenation-dictionary-for-language/) |Dowiedz się, jak załadować słownik dzielenia wyrazów dla określonego języka w Aspose.Words dla .NET. |
 | [Wywołanie zwrotne dzielenia](./hyphenation-callback/) | Dowiedz się, jak używać wywołania zwrotnego dzielenia wyrazów w Aspose.Words dla .NET do obsługi dzielenia wyrazów. |

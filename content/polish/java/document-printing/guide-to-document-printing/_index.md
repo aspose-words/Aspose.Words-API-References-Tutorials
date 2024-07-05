@@ -183,7 +183,7 @@ Automatyzacja procesu drukowania dokumentów może być bardzo przydatna w przyp
 
 ## Wniosek
 
-Programowe drukowanie dokumentów za pomocą Aspose.Words dla Java otwiera świat możliwości dla programistów pracujących nad projektami związanymi z przetwarzaniem tekstu i przetwarzaniem dokumentów. Przewodnik krok po kroku zawarty w tym artykule pomoże Ci rozpocząć i uwolnić pełny potencjał drukowania dokumentów za pomocą Aspose.Words dla Java.
+Programowe drukowanie dokumentów za pomocą Aspose.Words dla Java otwiera świat możliwości dla programistów pracujących nad projektami przetwarzania tekstu i przetwarzania dokumentów. Przewodnik krok po kroku zawarty w tym artykule pomoże Ci rozpocząć i uwolnić pełny potencjał drukowania dokumentów za pomocą Aspose.Words dla Java.
 
 ## Często zadawane pytania
 

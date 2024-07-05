@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-tomto tutoriálu prozkoumáme zdrojový kód C# poskytovaný pro funkci "Document Text Direction" s Aspose.Words for .NET. Tato funkce umožňuje určit směr textu v dokumentu, což je užitečné zejména pro jazyky, které se píší zprava doleva, jako je hebrejština nebo arabština.
+tomto tutoriálu prozkoumáme zdrojový kód C# poskytovaný pro funkci "Document Text Direction" s Aspose.Words for .NET. Tato funkce umožňuje určit směr textu v dokumentu, což je užitečné zejména pro jazyky, které jsou psány zprava doleva, jako je hebrejština nebo arabština.
 
 ## Krok 1: Nastavení prostředí
 
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## Závěr
 
-V tomto tutoriálu jsme prozkoumali funkci směrování textu dokumentu v Aspose.Words pro .NET. Naučili jsme se, jak určit směr textu v dokumentu, zejména pro jazyky, které se píší zprava doleva, jako je hebrejština nebo arabština.
+V tomto tutoriálu jsme prozkoumali funkci směrování textu dokumentu v Aspose.Words pro .NET. Naučili jsme se, jak určit směr textu v dokumentu, zejména u jazyků, které se píší zprava doleva, jako je hebrejština nebo arabština.
 
 Tato funkce je nezbytná pro zajištění správného zobrazení textu ve vícejazyčných dokumentech. Pomocí vhodných možností načítání může Aspose.Words automaticky detekovat směr textu a aplikovat jej na dokument.
 
@@ -87,4 +87,4 @@ Nezapomeňte použít vhodné možnosti načítání, jako je nastavení automat
 
 Aspose.Words for .NET nabízí mnoho pokročilých funkcí pro manipulaci a generování dokumentů. Dalším prozkoumáním dokumentace a příkladů poskytovaných Aspose.Words budete moci plně využít možnosti této výkonné knihovny.
 
-Neváhejte tedy integrovat směr textu dokumentu do svých projektů Aspose.Words for .NET a využít jeho výhod k vytváření atraktivních a vysoce kvalitních vícejazyčných dokumentů.
+Neváhejte tedy integrovat směr textu dokumentu do svých projektů Aspose.Words for .NET a využijte jeho výhod k vytváření atraktivních a vysoce kvalitních vícejazyčných dokumentů.

@@ -52,7 +52,7 @@ Resolution = 160
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOptions);
 ```
 
- I det här sista steget sparar vi det angivna sidintervallet i TIFF-format med hjälp av`Save` metod och skickar sökvägen till utdatafilen med`.tiff` tillägg, tillsammans med de angivna sparalternativen .
+ I detta sista steg sparar vi det angivna sidintervallet i TIFF-format med hjälp av`Save` metod och skickar sökvägen till utdatafilen med`.tiff` tillägg, tillsammans med de angivna sparalternativen .
 
 Nu kan du köra källkoden för att hämta ett visst antal sidor från ditt dokument och spara dem som en TIFF-fil. De resulterande filerna kommer att sparas i den angivna katalogen med namnen "WorkingWithImageSaveOptions.MultipageTiff.tiff" för hela dokumentet och "WorkingWithImageSaveOptions.GetTiffPageRange.tiff" för det angivna sidintervallet.
 

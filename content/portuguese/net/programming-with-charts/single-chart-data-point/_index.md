@@ -17,7 +17,7 @@ Certifique-se de ter os seguintes pré-requisitos:
 - Biblioteca Aspose.Words para .NET instalada. Você pode baixá-lo usando o gerenciador de pacotes NuGet para instalá-lo.
 - Um caminho do diretório do documento onde o documento de saída será salvo.
 
-## Passo 2: Crie um novo documento e insira um gráfico.
+## Passo 2: Crie um novo documento e insira um gráfico
 
  Crie um novo`Document` objeto e um`DocumentBuilder` para construir o documento.
 
@@ -115,7 +115,7 @@ A personalização de pontos de dados individuais oferece flexibilidade para enf
  Para alterar o símbolo do marcador para um ponto de dados em um gráfico usando Aspose.Words for .NET, você precisa acessar o`Marker` propriedade do`ChartDataPoint` objeto e definir o`Symbol` propriedade para o símbolo do marcador desejado. Os símbolos marcadores representam a forma ou ícone usado para representar cada ponto de dados no gráfico. Você pode escolher entre uma variedade de símbolos de marcadores integrados, como círculo, quadrado, diamante, triângulo, estrela e muito mais.
 
 #### Q3. Posso ajustar o tamanho de um marcador de ponto de dados?
- Sim, você pode ajustar o tamanho de um marcador de ponto de dados em um gráfico usando Aspose.Words for .NET. Acesse o`Marker` propriedade do`ChartDataPoint` objeto e definir o`Size`propriedade para o tamanho de marcador desejado. O tamanho do marcador normalmente é especificado em pontos, onde um valor maior representa um tamanho maior do marcador. Ajustar o tamanho do marcador permite enfatizar pontos de dados específicos ou diferenciá-los com base em sua importância.
+ Sim, você pode ajustar o tamanho de um marcador de ponto de dados em um gráfico usando Aspose.Words for .NET. Acesse o`Marker` propriedade do`ChartDataPoint` objeto e definir o`Size`propriedade para o tamanho do marcador desejado. O tamanho do marcador normalmente é especificado em pontos, onde um valor maior representa um tamanho maior do marcador. Ajustar o tamanho do marcador permite enfatizar pontos de dados específicos ou diferenciá-los com base em sua importância.
 
 #### Q4. Que outras propriedades posso modificar para um ponto de dados?
 Aspose.Words for .NET fornece uma variedade de propriedades que você pode modificar para um ponto de dados em um gráfico. Algumas das propriedades comumente modificadas incluem o símbolo do marcador, tamanho do marcador, cor do marcador, visibilidade do rótulo de dados, explosão, inversão se negativo e muito mais. Essas propriedades permitem personalizar a aparência, o comportamento e a interatividade de pontos de dados individuais, permitindo criar gráficos personalizados de acordo com seus requisitos específicos.

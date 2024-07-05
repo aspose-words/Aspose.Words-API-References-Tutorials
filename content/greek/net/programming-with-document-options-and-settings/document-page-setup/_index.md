@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Ρυθμίστε τη λειτουργία διάταξης για μια ενότητα που επιτρέπει τον καθορισμό της συμπεριφοράς του πλέγματος εγγράφων.
-	// Σημειώστε ότι η καρτέλα Document Grid γίνεται ορατή στο παράθυρο διαλόγου Page Setup του MS Word.
+	// Σημειώστε ότι η καρτέλα Document Grid γίνεται ορατή στο παράθυρο διαλόγου Page Setup του MS Word
 	// εάν κάποια ασιατική γλώσσα ορίζεται ως γλώσσα επεξεργασίας.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

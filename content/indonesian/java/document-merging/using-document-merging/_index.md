@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words untuk Java memberdayakan pengembang Java dengan kemampuan untuk menggabungkan dokumen Word dengan mudah. Dengan mengikuti panduan langkah demi langkah dalam artikel ini, kini Anda dapat menggabungkan dokumen, menangani pemformatan, menyisipkan jeda, dan mengelola konflik dengan mudah. Dengan Aspose.Words untuk Java, penggabungan dokumen menjadi proses yang lancar dan otomatis, menghemat waktu dan tenaga yang berharga.
 
-## 11.FAQ 
+## 11. Pertanyaan Umum 
 
 ### Bisakah saya menggabungkan dokumen dengan format dan gaya berbeda?
 

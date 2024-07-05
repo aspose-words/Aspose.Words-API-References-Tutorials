@@ -2,7 +2,7 @@
 title: Převod dokumentů na obrázky
 linktitle: Převod dokumentů na obrázky
 second_title: Aspose.Words Java Document Processing API
-description: Naučte se převádět dokumenty na obrázky pomocí Aspose.Words for Java. Podrobný průvodce pro vývojáře Java.
+description: Naučte se převádět dokumenty na obrázky pomocí Aspose.Words for Java. Podrobný průvodce pro vývojáře v Javě.
 type: docs
 weight: 14
 url: /cs/java/document-converting/converting-documents-images/

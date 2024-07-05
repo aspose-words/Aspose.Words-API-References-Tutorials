@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Stap 5: Wis bestaande tabelranden.
+## Stap 5: Wis bestaande tabelranden
 Om met een nieuwe omtrekrand te beginnen, moeten we eerst alle bestaande randen uit de tabel wissen. Dit kan gedaan worden met behulp van de`ClearBorders()` methode.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Stap 7: Vul de cellen met een achtergrondkleur.
-Om de visuele presentatie van de tabel te verbeteren, kunnen we de cellen vullen met een grondachtergrondkleur.
+## Stap 7: Vul de cellen met een achtergrondkleur
+Om de visuele presentatie van de tabel te verbeteren, kunnen we de cellen vullen met een grondachtergrondkleur
 
 idee. In dit voorbeeld gebruiken we een lichtgroene kleur.
 

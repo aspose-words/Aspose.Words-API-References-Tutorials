@@ -64,7 +64,7 @@ W tym samouczku zbadaliśmy funkcjonalność ustawiania poziomu kompresji podcza
 
  The`OoxmlSaveOptions` class zapewnia elastyczność kontrolowania poziomu kompresji poprzez ustawienie`CompressionLevel` właściwość do odpowiedniej wartości, np`SuperFast`. Pozwala to uzyskać właściwą równowagę pomiędzy rozmiarem pliku i szybkością tworzenia kopii zapasowych, w zależności od konkretnych potrzeb.
 
-Korzystanie z kompresji może być korzystne, gdy trzeba zmniejszyć rozmiar generowanych plików, szczególnie w przypadku dużych dokumentów. Może to ułatwić przechowywanie, udostępnianie i przesyłanie dokumentów.
+Korzystanie z kompresji może być korzystne, gdy trzeba zmniejszyć rozmiar generowanych plików, zwłaszcza w przypadku dużych dokumentów. Może to ułatwić przechowywanie, udostępnianie i przesyłanie dokumentów.
 
 Aspose.Words dla .NET oferuje szereg zaawansowanych opcji i funkcji do manipulacji dokumentami. Korzystając z odpowiednich opcji tworzenia kopii zapasowych, możesz dostosować proces generowania dokumentów i zoptymalizować wydajność swojej aplikacji.
 

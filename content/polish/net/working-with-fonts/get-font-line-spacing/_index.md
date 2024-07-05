@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fonts/get-font-line-spacing/
 ---
-tym samouczku pokażemy, jak uzyskać odstępy między wierszami czcionki w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Odstęp między wierszami czcionki określa pionowy odstęp między wierszami tekstu. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+W tym samouczku pokażemy, jak uzyskać odstępy między wierszami czcionki w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Odstęp między wierszami czcionki określa pionowy odstęp między wierszami tekstu. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -61,7 +61,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Wniosek
-tym samouczku widzieliśmy, jak uzyskać odstępy między wierszami czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET. Odstępy między wierszami czcionki są ważne przy kontrolowaniu odstępów w pionie między wierszami tekstu. Możesz skorzystać z tej funkcji, aby dostosować wygląd tekstu w dokumentach.
+W tym samouczku widzieliśmy, jak uzyskać odstępy między wierszami czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET. Odstępy między wierszami czcionki są ważne przy kontrolowaniu odstępów w pionie między wierszami tekstu. Możesz skorzystać z tej funkcji, aby dostosować wygląd tekstu w dokumentach.
 
 ### Często zadawane pytania
 

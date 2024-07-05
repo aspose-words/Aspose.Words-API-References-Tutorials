@@ -17,7 +17,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet:
 - Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
 - Een documentmappad waar het uitvoerdocument wordt opgeslagen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in.
+## Stap 2: Maak een nieuw document en voeg een diagram in
 
  Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
 
@@ -94,7 +94,7 @@ Hiermee is de implementatie voltooid van het opmaken van het aantal gegevenslabe
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 	// Of u kunt de opmaakcode instellen zodat deze aan een broncel wordt gekoppeld,
-	//In dit geval wordt NumberFormat opnieuw ingesteld op algemeen en overgenomen van een broncel.
+	//in dit geval wordt NumberFormat opnieuw ingesteld op algemeen en overgenomen van een broncel.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
@@ -115,13 +115,13 @@ Door Aspose.Words voor .NET te gebruiken, kunt u krachtige grafiekmogelijkheden 
 Aspose.Words voor .NET is een veelzijdige bibliotheek voor documentverwerking waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, manipuleren en opslaan in .NET-toepassingen. Het biedt een breed scala aan functies voor tekstverwerking met documentelementen, waaronder grafieken en gegevenslabels.
 
 #### Vraag 2. Hoe kan ik Aspose.Words voor .NET installeren?
-kunt Aspose.Words voor .NET installeren door het te downloaden met behulp van NuGet-pakketbeheer in Visual Studio. Zoek eenvoudigweg naar "Apose.Words" in de NuGet-pakketbeheerder en installeer het in uw project.
+kunt Aspose.Words voor .NET installeren door het te downloaden met behulp van NuGet-pakketbeheer in Visual Studio. Zoek eenvoudigweg naar "Aspose.Words" in de NuGet-pakketbeheerder en installeer het in uw project.
 
 #### Q3. Kan ik andere aspecten van het diagram opmaken met Aspose.Words voor .NET?
 Ja, Aspose.Words voor .NET biedt uitgebreide mogelijkheden voor het opmaken van verschillende aspecten van een diagram. Naast gegevenslabels kunt u het diagramtype, reeksgegevens, aseigenschappen, legenda, titel, plotgebied en vele andere elementen van het diagram aanpassen. De API biedt fijnmazige controle over het uiterlijk en de opmaak van diagrammen.
 
 #### Q4. Kan ik verschillende getalformaten toepassen op verschillende gegevenslabels in dezelfde serie?
-Ja, met Aspose.Words voor .NET kunt u verschillende getalformaten toepassen op individuele gegevenslabels binnen dezelfde reeks. Door toegang te krijgen tot de`DataLabels` collectie die aan een serie is gekoppeld, kunt u de`FormatCode` eigenschap van elk gegevenslabel om het gewenste getalformaat op te geven. Hierdoor kunt u numerieke waarden in verschillende formaten binnen hetzelfde diagram presenteren.
+Ja, met Aspose.Words voor .NET kunt u verschillende getalnotaties toepassen op individuele gegevenslabels binnen dezelfde reeks. Door toegang te krijgen tot de`DataLabels` collectie die aan een serie is gekoppeld, kunt u de`FormatCode` eigenschap van elk gegevenslabel om het gewenste getalformaat op te geven. Hierdoor kunt u numerieke waarden in verschillende formaten binnen hetzelfde diagram presenteren.
 
 #### Vraag 5. Kan ik aangepaste getalnotaties gebruiken voor gegevenslabels?
  Ja, Aspose.Words voor .NET ondersteunt aangepaste getalnotaties voor gegevenslabels. U kunt het gewenste getalformaat opgeven door de`FormatCode` eigenschap van een gegevenslabel naar een aangepaste formaatcode. Dit geeft u de flexibiliteit om een breed scala aan getalnotaties toe te passen, zoals valutasymbolen, datumnotaties, percentagewaarden en meer.

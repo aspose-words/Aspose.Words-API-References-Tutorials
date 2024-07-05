@@ -17,7 +17,7 @@ Certifique-se de ter os seguintes pré-requisitos:
 - Biblioteca Aspose.Words para .NET instalada. Você pode baixá-lo usando o gerenciador de pacotes NuGet para instalá-lo.
 - Um caminho do diretório do documento onde o documento de saída será salvo.
 
-## Passo 2: Crie um novo documento e insira um gráfico.
+## Passo 2: Crie um novo documento e insira um gráfico
 
  Crie um novo`Document` objeto e um`DocumentBuilder` para construir o documento.
 
@@ -107,7 +107,7 @@ Aspose.Words for .NET oferece suporte a uma ampla variedade de códigos de forma
 
 - `0` ou`#` - Exibe o número sem casas decimais.
 - `0.00` ou`#.00` - Exibe o número com duas casas decimais.
-- `#,##0` Exibe o número com milhares de separadores.
+- `#,##0` Exibe o número com separadores de milhares.
 - `"€"0.00` - Exibe o número com o símbolo da moeda Euro e duas casas decimais.
 - `"%"0` - Exibe o número como uma porcentagem.
 

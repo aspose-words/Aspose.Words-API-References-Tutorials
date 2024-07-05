@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## 4. lépés: A végjegyzet beállításainak megadása
 
- Hozzáférés a`EndnoteOptions` a dokumentum tulajdonsága a végjegyzet beállításainak módosításához. Ebben a példában az újraindítási szabályt úgy állítjuk be, hogy minden oldalon újrainduljon, a pozíciót pedig a szakasz végén:
+ Hozzáférés a`EndnoteOptions` dokumentum tulajdonsága a végjegyzet beállításainak módosításához. Ebben a példában az újraindítási szabályt úgy állítjuk be, hogy minden oldalon újrainduljon, a pozíciót pedig a szakasz végén:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -56,7 +56,7 @@ Végül mentse el a módosított dokumentumot:
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-Ez az! Sikeresen beállította a végjegyzet beállításait egy Word-dokumentumban az Aspose.Words for .NET használatával.
+Ez az! Sikeresen beállította a végjegyzetbeállításokat egy Word-dokumentumban az Aspose.Words for .NET használatával.
 
 ### Példa a Set Endnote Options for Aspose.Words for .NET forráskódjához
 
@@ -81,7 +81,7 @@ Nyugodtan használja ezt a kódot saját projektjeiben, és módosítsa saját i
 
 #### K: Hogyan formázhatom a végjegyzeteket az Aspose.Words-ben?
 
-V: Az Aspose.Words végjegyzeteinek stílusozásához használhatja a`EndnoteOptions` osztály és a`SeparatorNoteTextStyle` ingatlan. Ezzel a tulajdonsággal megadhatja a betűtípust, -méretet, -színt stb. a végjegyzetekhez.
+ V: Az Aspose.Words végjegyzeteinek stílusozásához használhatja a`EndnoteOptions` osztály és a`SeparatorNoteTextStyle` ingatlan. Ezzel a tulajdonsággal megadhatja a betűtípust, -méretet, -színt stb. a végjegyzetekhez.
 
 #### K: Testreszabható a végjegyzetek számozása egy dokumentumban?
 
@@ -89,7 +89,7 @@ V: Az Aspose.Words végjegyzeteinek stílusozásához használhatja a`EndnoteOpt
 
 #### K: Hogyan helyezhetem el a végjegyzeteket egy dokumentumban?
 
- V: A végjegyzetek dokumentumban való elhelyezéséhez használhatja a`Position` tulajdona a`EndnoteOptions` osztály. Megadhatja, hogy a végjegyzetek az egyes oldalak aljára, az egyes szakaszok végére vagy a dokumentum végére kerüljenek-e.
+V: A végjegyzetek dokumentumban való elhelyezéséhez használhatja a`Position` tulajdona a`EndnoteOptions` osztály. Megadhatja, hogy a végjegyzetek az egyes oldalak aljára, az egyes szakaszok végére vagy a dokumentum végére kerüljenek-e.
 
 #### K: Testreszabhatom a végjegyzet számozási formátumát?
 
@@ -97,4 +97,4 @@ V: Az Aspose.Words végjegyzeteinek stílusozásához használhatja a`EndnoteOpt
 
 #### K: Folytatni lehet a végjegyzetek számozását a dokumentum szakaszai között?
 
-V: Igen, folytatható a végjegyzetek számozása a dokumentum szakaszai között. Használja a`RestartRule` tulajdona a`EndnoteOptions` osztályba, és állítsa be`RestartContinuous` hogy a számozás folytatódjon a szakaszok között.
+ V: Igen, folytatható a végjegyzetek számozása a dokumentum szakaszai között. Használja a`RestartRule` tulajdona a`EndnoteOptions` osztályba, és állítsa be`RestartContinuous` hogy a számozás folytatódjon a szakaszok között.

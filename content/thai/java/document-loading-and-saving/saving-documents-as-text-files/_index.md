@@ -37,7 +37,7 @@ builder.writeln("مرحبا بالعالم!");
 
 ## ขั้นตอนที่ 2: กำหนดตัวเลือกการบันทึกข้อความ
 
-ต่อไปเราต้องกำหนดตัวเลือกการบันทึกข้อความที่ระบุวิธีการบันทึกเอกสารเป็นไฟล์ข้อความ เราสามารถกำหนดการตั้งค่าต่างๆ ได้ เช่น การเพิ่มเครื่องหมาย bidi การระบุรายการ และอื่นๆ ลองดูสองตัวอย่าง:
+ต่อไปเราต้องกำหนดตัวเลือกการบันทึกข้อความที่ระบุวิธีการบันทึกเอกสารเป็นไฟล์ข้อความ เราสามารถกำหนดการตั้งค่าต่างๆ ได้ เช่น การเพิ่มเครื่องหมาย bidi การเยื้องรายการ และอื่นๆ ลองดูสองตัวอย่าง:
 
 ### ตัวอย่างที่ 1: การเพิ่มเครื่องหมาย Bidi
 
@@ -47,7 +47,7 @@ saveOptions.setAddBidiMarks(true);
 doc.save("output.txt", saveOptions);
 ```
 
- ในตัวอย่างนี้ เราสร้าง a`TxtSaveOptions` วัตถุและตั้งค่า`AddBidiMarks`ทรัพย์สินเพื่อ`true` หากต้องการรวมเครื่องหมาย bidi ในเอาต์พุตข้อความ
+ ในตัวอย่างนี้ เราสร้าง a`TxtSaveOptions` วัตถุและตั้งค่า`AddBidiMarks`ทรัพย์สินเพื่อ`true` เพื่อรวมเครื่องหมาย bidi ในเอาต์พุตข้อความ
 
 ### ตัวอย่างที่ 2: การใช้อักขระแท็บสำหรับการเยื้องรายการ
 
@@ -58,7 +58,7 @@ saveOptions.getListIndentation().setCharacter('\t');
 doc.save("output.txt", saveOptions);
 ```
 
-ที่นี่ เรากำหนดค่าตัวเลือกการบันทึกเพื่อใช้อักขระแท็บเพื่อระบุรายการด้วยการนับ 1
+ที่นี่ เรากำหนดค่าตัวเลือกการบันทึกเพื่อใช้อักขระแท็บสำหรับการเยื้องรายการด้วยการนับ 1
 
 ## ขั้นตอนที่ 3: บันทึกเอกสารเป็นข้อความ
 
@@ -89,7 +89,7 @@ doc.save("output.txt", saveOptions);
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // สร้างรายการที่มีการระบุตัวตนสามระดับ
+        // สร้างรายการที่มีการเยื้องสามระดับ
         builder.getListFormat().applyNumberDefault();
         builder.writeln("Item 1");
         builder.getListFormat().listIndent();
@@ -106,7 +106,7 @@ doc.save("output.txt", saveOptions);
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // สร้างรายการที่มีการระบุตัวตนสามระดับ
+        // สร้างรายการที่มีการเยื้องสามระดับ
         builder.getListFormat().applyNumberDefault();
         builder.writeln("Item 1");
         builder.getListFormat().listIndent();
@@ -135,7 +135,7 @@ TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.setAddBidiMarks(true);
 ```
 
-### ฉันสามารถปรับแต่งการระบุอักขระรายการได้หรือไม่
+### ฉันสามารถปรับแต่งอักขระการเยื้องรายการได้หรือไม่
 
  ใช่ คุณสามารถปรับแต่งอักขระการเยื้องรายการได้โดยการกำหนดค่า`ListIndentation` ทรัพย์สินของ`TxtSaveOptions`- ตัวอย่างเช่น เมื่อต้องการใช้อักขระแท็บสำหรับการเยื้องรายการ คุณสามารถทำสิ่งต่อไปนี้:
 

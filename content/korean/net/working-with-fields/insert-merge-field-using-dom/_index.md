@@ -17,7 +17,7 @@ url: /ko/net/working-with-fields/insert-merge-field-using-dom/
 1. **Basic Knowledge of C#:** C# 프로그래밍에 익숙해야 합니다.
 2. **Visual Studio Installed:** 컴퓨터에 Visual Studio 또는 기타 C# IDE가 설치되어 있는지 확인하세요.
 3. **Aspose.Words for .NET:** 다음에서 최신 버전의 Aspose.Words for .NET을 다운로드하여 설치하세요.[릴리스](https://releases.aspose.com/words/net/).
-4. **Valid License:** 자격증이 없어도 자격증을 취득할 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+4. **Valid License:** 자격증이 없어도 자격증을 취득할 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ## 1단계: 프로젝트 설정
 
@@ -32,7 +32,7 @@ url: /ko/net/working-with-fields/insert-merge-field-using-dom/
 Aspose.Words를 사용하려면 프로젝트에 추가해야 합니다. 이는 NuGet 패키지 관리자를 통해 수행할 수 있습니다.
 
 1. **Open NuGet Package Manager:** 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 NuGet 패키지 관리를 선택합니다.
-2. **Search for Aspose.Words:** NuGet 패키지 관리자에서 "Apose.Words"를 검색합니다.
+2. **Search for Aspose.Words:** NuGet 패키지 관리자에서 "Aspose.Words"를 검색합니다.
 3. **Install the Package:** 설치를 클릭하여 Aspose.Words를 프로젝트에 추가하세요.
 
 ## 3단계: 네임스페이스 가져오기
@@ -119,4 +119,4 @@ doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 Aspose.Words는 .NET Framework, .NET Core 및 .NET Standard를 포함하여 여러 버전의 .NET을 지원합니다.
 
 ### 5. Aspose.Words에 대한 API 문서는 어디에서 찾을 수 있나요?
- API 문서를 사용할 수 있습니다.[여기](https://reference.aspose.com/words/net/).
+ API 문서를 사용할 수 있습니다[여기](https://reference.aspose.com/words/net/).

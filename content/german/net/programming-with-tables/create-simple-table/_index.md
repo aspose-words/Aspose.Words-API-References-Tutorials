@@ -1,24 +1,24 @@
 ---
-title: Erstellen Sie eine einfache Tabelle
-linktitle: Erstellen Sie eine einfache Tabelle
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+title: Einfache Tabelle erstellen
+linktitle: Einfache Tabelle erstellen
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine einfache Tabelle in einem Word-Dokument erstellen.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/create-simple-table/
 ---
 
-In diesem Tutorial lernen wir, wie man mit Aspose.Words für .NET eine einfache Tabelle in einem Word-Dokument erstellt. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials werden Sie in der Lage sein, benutzerdefinierte Tabellen in Ihren Word-Dokumenten programmgesteuert zu erstellen.
+In diesem Tutorial lernen wir, wie man mit Aspose.Words für .NET eine einfache Tabelle in einem Word-Dokument erstellt. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials können Sie programmgesteuert benutzerdefinierte Tabellen in Ihren Word-Dokumenten erstellen.
 
-## Schritt 1: Projekteinrichtung
+## Schritt 1: Projekt-Setup
 1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
-2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
+2. Fügen Sie einen Verweis auf die Aspose.Words-Bibliothek für .NET hinzu.
 
-## Schritt 2: Erstellen des Dokuments und Initialisieren des Dokumentengenerators
-Um mit dem Aufbau der Tabelle zu beginnen, müssen wir ein neues Dokument erstellen und den Document Builder initialisieren. Folge diesen Schritten:
+## Schritt 2: Erstellen des Dokuments und Initialisieren des Dokumentgenerators
+Um mit dem Erstellen der Tabelle zu beginnen, müssen wir ein neues Dokument erstellen und den Dokumentgenerator initialisieren. Folgen Sie diesen Schritten:
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Erstellen Sie das Dokument und initialisieren Sie den Dokumentgenerator
@@ -26,20 +26,20 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Stellen Sie sicher, dass Sie „IHR DOKUMENTENVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis ersetzen.
+Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ unbedingt durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
 
-## Schritt 3: Aufbau des Arrays
-Als Nächstes erstellen wir die Tabelle mit den vom Document Builder bereitgestellten Methoden. Verwenden Sie den folgenden Code:
+## Schritt 3: Erstellen des Arrays
+Als Nächstes erstellen wir die Tabelle mit den vom Dokument-Generator bereitgestellten Methoden. Verwenden Sie den folgenden Code:
 
 ```csharp
-// Beginnen Sie mit dem Aufbau des Arrays
+// Beginnen Sie mit der Array-Konstruktion
 builder. StartTable();
 
-// Bau der ersten Zelle der ersten Reihe
+// Aufbau der ersten Zelle der ersten Reihe
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 1.");
 
-// Bau der zweiten Zelle der ersten Reihe
+// Aufbau der zweiten Zelle der ersten Reihe
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
@@ -50,18 +50,18 @@ builder. EndRow();
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 2.");
 
-// Bau der zweiten Zelle der zweiten Reihe
+// Aufbau der zweiten Zelle der zweiten Reihe
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 2.");
 
 // Rufen Sie die nächste Methode auf, um die zweite Zeile zu beenden
 builder. EndRow();
 
-// Zeigt an, dass der Bau des Tisches abgeschlossen ist
+// Hinweis, dass der Bau des Tisches abgeschlossen ist
 builder. EndTable();
 ```
 
- Hier verwenden wir den Document Builder, um die Tabelle Schritt für Schritt aufzubauen. Wir beginnen mit einem Anruf`StartTable()` um die Tabelle zu initialisieren, dann verwenden`InsertCell()` Zellen einfügen und`Write()` um Inhalt zu jeder Zelle hinzuzufügen. Wir benützen auch`EndRow()` um eine Zeile zu beenden und eine neue Zeile zu beginnen. Zum Schluss rufen wir an`EndTable()` um anzuzeigen, dass die Tabellenkonstruktion abgeschlossen ist.
+ Hier verwenden wir den Dokumentgenerator, um die Tabelle Schritt für Schritt aufzubauen. Wir beginnen mit dem Aufruf`StartTable()` um die Tabelle zu initialisieren, dann verwenden Sie`InsertCell()` zum Einfügen von Zellen und`Write()` um jeder Zelle Inhalt hinzuzufügen. Wir verwenden auch`EndRow()` um eine Zeile zu beenden und eine neue Zeile zu beginnen. Schließlich rufen wir`EndTable()` um anzuzeigen, dass der Tabellenaufbau abgeschlossen ist.
 
 ## Schritt 4: Speichern Sie das Dokument
 Schließlich müssen wir sparen
@@ -69,16 +69,16 @@ Schließlich müssen wir sparen
   das Dokument mit der erstellten Tabelle. Verwenden Sie den folgenden Code:
 
 ```csharp
-// Speichern Sie das Dokument
+// Speichern des Dokuments
 doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```
 
-Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabedokument angeben.
+Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument anzugeben.
 
 ### Beispielquellcode zum Erstellen einer einfachen Tabelle mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -87,7 +87,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 	builder.StartTable();
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 1 Content.");
-	// Bauen Sie die zweite Zelle.
+	// Baue die zweite Zelle.
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 2 Content.");
 	// Rufen Sie die folgende Methode auf, um die Zeile zu beenden und eine neue Zeile zu beginnen.
@@ -95,14 +95,14 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 	// Bauen Sie die erste Zelle der zweiten Reihe.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 1 Content");
-	// Bauen Sie die zweite Zelle.
+	// Baue die zweite Zelle.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Signalisieren Sie, dass wir mit dem Aufbau der Tabelle fertig sind.
+	//Signal, dass wir mit dem Erstellen der Tabelle fertig sind.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET eine einfache Tabelle in einem Word-Dokument erstellt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie benutzerdefinierte Tabellen in Ihren Word-Dokumenten programmgesteuert erstellen. Mit dieser Funktion können Sie Ihre Daten strukturiert und übersichtlich formatieren und organisieren.
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET eine einfache Tabelle in einem Word-Dokument erstellt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie programmgesteuert benutzerdefinierte Tabellen in Ihren Word-Dokumenten erstellen. Mit dieser Funktion können Sie Ihre Daten strukturiert und übersichtlich formatieren und organisieren.

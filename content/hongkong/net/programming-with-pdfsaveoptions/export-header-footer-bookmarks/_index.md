@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", 
 
 透過建立一個實例來配置另存為 PDF 選項`PdfSaveOptions`類別並設定適當的頁首和頁尾書籤選項。
 
-使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`類別指定路徑和儲存選項。
+使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`指定路徑和儲存選項的類別。
 
 ### Q：將頁首和頁尾書籤匯出到 PDF 文件有什麼好處？
 答：將頁首和頁尾書籤匯出至 PDF 文件的優點是：

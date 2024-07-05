@@ -57,7 +57,7 @@ Dalam tutorial ini, kita melihat cara menggunakan opsi pemuatan dengan pengatura
 
 #### T: Bagaimana cara menentukan font default saat memuat dokumen ke Aspose.Words?
 
- A: Untuk menentukan font default saat memuat dokumen di Aspose.Words, Anda dapat menggunakan`LoadOptions` kelas dan atur`DefaultFontName` properti ke nama font yang diinginkan.
+A: Untuk menentukan font default saat memuat dokumen di Aspose.Words, Anda dapat menggunakan`LoadOptions` kelas dan atur`DefaultFontName` properti ke nama font yang diinginkan.
 
 #### T: Pengaturan font apa lagi yang dapat saya tentukan dengan opsi pemuatan di Aspose.Words?
 
@@ -69,4 +69,4 @@ A: Jika font default yang ditentukan tidak tersedia saat dokumen dimuat di Aspos
 
 #### T: Dapatkah saya menentukan pengaturan font yang berbeda untuk setiap dokumen yang diunggah?
 
- J: Ya, Anda dapat menentukan pengaturan font yang berbeda untuk setiap dokumen yang dimuat dengan menggunakan contoh terpisah dari`LoadOptions` kelas dan mengatur pengaturan font yang diinginkan untuk setiap instance. Ini memungkinkan Anda menyesuaikan tampilan font untuk setiap dokumen secara mandiri.
+ J: Ya, Anda dapat menentukan pengaturan font yang berbeda untuk setiap dokumen yang dimuat dengan menggunakan contoh terpisah dari`LoadOptions`kelas dan mengatur pengaturan font yang diinginkan untuk setiap instance. Ini memungkinkan Anda menyesuaikan tampilan font untuk setiap dokumen secara mandiri.

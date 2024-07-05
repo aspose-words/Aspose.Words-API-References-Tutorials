@@ -75,7 +75,7 @@ builder.Writeln("This is just a fine bookmark.");
 
 ## Adım 5: Yer İşaretini Sonlandırın
 
-İçeriğimizi ekledikten sonra yer işaretini kapatmamız gerekiyor. Bu Aspose.Words'e yer iminin nerede bittiğini söyler.
+İçeriğimizi ekledikten sonra yer imini kapatmamız gerekiyor. Bu Aspose.Words'e yer iminin nerede bittiğini söyler.
 
 ```csharp
 builder.EndBookmark("FineBookmark");

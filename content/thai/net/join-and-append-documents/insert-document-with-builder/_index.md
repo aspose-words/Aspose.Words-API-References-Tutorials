@@ -8,7 +8,7 @@ weight: 10
 url: /th/net/join-and-append-documents/insert-document-with-builder/
 ---
 
- บทช่วยสอนนี้จะอธิบายวิธีใช้ Aspose.Words สำหรับ .NET เพื่อแทรกเอกสารลงในเอกสารอื่นโดยใช้`DocumentBuilder` ชั้นเรียน ซอร์สโค้ดที่ให้มาสาธิตวิธีการแทรกเอกสารที่ส่วนท้ายของเอกสารอื่นโดยยังคงรักษาการจัดรูปแบบต้นฉบับไว้
+ บทช่วยสอนนี้จะอธิบายวิธีใช้ Aspose.Words สำหรับ .NET เพื่อแทรกเอกสารลงในเอกสารอื่นโดยใช้`DocumentBuilder` ระดับ. ซอร์สโค้ดที่ให้มาสาธิตวิธีการแทรกเอกสารที่ส่วนท้ายของเอกสารอื่นโดยยังคงรักษาการจัดรูปแบบต้นฉบับไว้
 
 ## ขั้นตอนที่ 1: ตั้งค่าโครงการ
 
@@ -56,7 +56,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## ขั้นตอนที่ 6: บันทึกเอกสารที่แก้ไข
 
-สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ วัตถุ
+สุดท้าย ให้บันทึกเอกสารปลายทางที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");

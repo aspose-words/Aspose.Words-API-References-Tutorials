@@ -107,7 +107,7 @@ para.remove();
 // i będzie wyświetlana jako wersja w programie Microsoft Word, dopóki nie zaakceptujemy lub odrzucimy wszystkich wersji.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Usunięty akapit dotyczący wersji zostanie usunięty po zaakceptowaniu zmian.
+// Akapit dotyczący usunięcia wersji zostanie usunięty po zaakceptowaniu zmian.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //był Jest.Pusty

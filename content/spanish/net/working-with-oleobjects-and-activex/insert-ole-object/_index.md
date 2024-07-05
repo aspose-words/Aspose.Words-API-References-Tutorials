@@ -34,7 +34,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", verdadero, verdade
 ```
 
 ## Paso 4: guarde el documento
- Utilice el documento`Save` Método para guardar el documento en un archivo.
+ Utilice el documento`Save` método para guardar el documento en un archivo.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", verdadero, verdade
 
 #### P: ¿Cómo guardar el documento?
 
- R: Utilice el documento`Save` método para guardar el documento en un archivo. Aquí hay un ejemplo :
+ R: Utilice el documento`Save` Método para guardar el documento en un archivo. Aquí hay un ejemplo :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

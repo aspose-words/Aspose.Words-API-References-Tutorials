@@ -44,7 +44,7 @@ Document doc = new Document(dataDir + "SampleDocument.docx");
 doc.getLayoutOptions().setTextShaperFactory(HarfBuzzTextShaperFactory.getInstance());
 ```
 
-## Шаг 4. Сохраните документ
+## Шаг 4: Сохранение документа
 
  Теперь, когда мы настроили формирование текста HarfBuzz, мы можем сохранить документ. Заменять`"Your Output Directory"` с желаемым выходным каталогом и именем файла:
 

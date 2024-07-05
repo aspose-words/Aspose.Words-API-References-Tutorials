@@ -65,7 +65,7 @@ Berikut adalah contoh lengkap kode sumber untuk mengilustrasikan penggunaan keco
 
 ## Kesimpulan
 
-Dalam artikel ini, kami menjelajahi kode sumber C# untuk memahami cara menggunakan fitur Kenali Dan Substitusi Dalam Pola Penggantian Aspose.Words untuk .NET. Kami mengikuti panduan langkah demi langkah untuk membuat dokumen, menyisipkan teks, melakukan pencarian dan penggantian menggunakan ekspresi reguler dan pola substitusi berdasarkan grup yang ditangkap, dan memanipulasi dokumen.
+Dalam artikel ini, kami menjelajahi kode sumber C# untuk memahami cara menggunakan fitur Kenali Dan Substitusi Dalam Pola Penggantian Aspose.Words untuk .NET. Kami mengikuti panduan langkah demi langkah untuk membuat dokumen, menyisipkan teks, melakukan pencarian dan penggantian menggunakan ekspresi reguler dan pola substitusi berdasarkan grup yang diambil, dan memanipulasi dokumen.
 
 ### FAQ
 
@@ -124,6 +124,6 @@ J: Ya, Anda dapat memanipulasi aspek lain dari dokumen berdasarkan grup yang dia
 
 J: Meskipun ekspresi reguler dan grup yang diambil menawarkan kemampuan canggih untuk pencarian dan penggantian teks di Aspose.Words untuk .NET, penting untuk mempertimbangkan kompleksitas dan implikasi kinerja. Ekspresi reguler yang sangat kompleks dan sejumlah besar grup yang ditangkap dapat memengaruhi performa. Disarankan untuk menguji dan mengoptimalkan ekspresi reguler untuk kasus penggunaan spesifik Anda guna memastikan manipulasi dokumen yang efisien.
 
-#### Q: Dapatkah saya menggunakan fitur "Kenali Dan Substitusi Dalam Pola Penggantian" dengan bahasa selain bahasa Inggris?
+#### Q: Bisakah saya menggunakan fitur "Kenali dan Substitusi dalam Pola Penggantian" dengan bahasa selain bahasa Inggris?
 
-A: Ya, fitur "Kenali Dan Substitusi Dalam Pola Penggantian" di Aspose.Words for .NET dapat digunakan dengan bahasa selain bahasa Inggris. Ekspresi reguler tidak bergantung pada bahasa dan dapat dibuat untuk mencocokkan pola tertentu dalam bahasa apa pun. Anda dapat menyesuaikan pola ekspresi reguler agar sesuai dengan bahasa yang Anda inginkan dan pola teks spesifik yang ingin Anda kenali dan gantikan.
+A: Ya, fitur "Kenali Dan Substitusi Dalam Pola Penggantian" di Aspose.Words untuk .NET dapat digunakan dengan bahasa selain bahasa Inggris. Ekspresi reguler tidak bergantung pada bahasa dan dapat dibuat untuk mencocokkan pola tertentu dalam bahasa apa pun. Anda dapat menyesuaikan pola ekspresi reguler agar sesuai dengan bahasa yang Anda inginkan dan pola teks spesifik yang ingin Anda kenali dan gantikan.

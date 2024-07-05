@@ -17,7 +17,7 @@ Assicurati di avere i seguenti prerequisiti:
 - Aspose.Words per la libreria .NET installata. È possibile scaricarlo utilizzando Gestione pacchetti NuGet per installarlo.
 - Un percorso della directory del documento in cui verrà salvato il documento di output.
 
-## Passaggio 2: crea un nuovo documento e inserisci un grafico.
+## Passaggio 2: crea un nuovo documento e inserisci un grafico
 
  Creane uno nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 
@@ -89,12 +89,12 @@ In questo tutorial, hai imparato come impostare il formato numerico per un asse 
 
 Aspose.Words per .NET fornisce potenti funzionalità per personalizzare l'aspetto dei grafici nei documenti di Word. Impostando il formato numerico per le etichette degli assi, puoi controllare il modo in cui vengono visualizzati i numeri, incluse opzioni come cifre decimali, separatori delle migliaia, simboli di valuta e altro. Ciò consente di presentare i dati numerici in modo chiaro e significativo.
 
-Con Aspose.Words per .NET, hai la flessibilità di formattare vari aspetti del grafico, comprese le etichette degli assi. Impostando il formato numerico per l'asse, è possibile garantire coerenza e migliorare la leggibilità del grafico, facilitando l'interpretazione dei valori rappresentati da parte degli utenti.
+Con Aspose.Words per .NET, hai la flessibilità di formattare vari aspetti del grafico, comprese le etichette degli assi. Impostando il formato numerico per l'asse, è possibile garantire la coerenza e migliorare la leggibilità del grafico, facilitando l'interpretazione dei valori rappresentati da parte degli utenti.
 
 ### Domande frequenti
 
 #### Q1. Qual è il formato numerico di un asse in un grafico?
-Il formato numerico di un asse in un grafico si riferisce alla formattazione applicata ai valori numerici visualizzati sull'asse. Ti consente di controllare come vengono presentati i numeri, comprese opzioni come cifre decimali, separatori delle migliaia, simboli di valuta, segni di percentuale e altro. Impostando il formato numerico, è possibile personalizzare l'aspetto dei dati numerici nel grafico in base alle proprie esigenze specifiche.
+Il formato numerico per un asse in un grafico si riferisce alla formattazione applicata ai valori numerici visualizzati sull'asse. Ti consente di controllare come vengono presentati i numeri, comprese opzioni come cifre decimali, separatori delle migliaia, simboli di valuta, segni di percentuale e altro. Impostando il formato numerico, è possibile personalizzare l'aspetto dei dati numerici nel grafico in base alle proprie esigenze specifiche.
 
 #### Q2. Come posso impostare il formato numerico per le etichette degli assi?
  Per impostare il formato numerico per le etichette degli assi in un grafico utilizzando Aspose.Words per .NET, è possibile accedere a`AxisY` proprietà del grafico e impostare il file`NumberFormat.FormatCode`proprietà al codice del formato desiderato. Il codice del formato segue la sintassi dei modelli di formattazione numerica standard e determina la modalità di visualizzazione dei numeri. Ad esempio, puoi utilizzare "#,##0.00" per visualizzare i numeri con due cifre decimali e separatori delle migliaia.
@@ -107,7 +107,7 @@ Aspose.Words per .NET supporta un'ampia gamma di codici di formato numerico che 
 
 - `0` O`#` - Visualizza il numero senza cifre decimali.
 - `0.00` O`#.00` - Visualizza il numero con due cifre decimali.
-- `#,##0` Visualizza il numero con migliaia di separatori.
+- `#,##0` Visualizza il numero con separatori di migliaia.
 - `"€"0.00` - Visualizza il numero con il simbolo della valuta Euro e due cifre decimali.
 - `"%"0` - Visualizza il numero come percentuale.
 

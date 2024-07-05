@@ -120,7 +120,7 @@ dstDoc.Sections.Add(newSection);
 
 #### P: Jak zapisać dokument docelowy ze skopiowaną sekcją w Aspose.Words dla .NET?
 
-Odp.: Na koniec możesz zapisać dokument docelowy zawierający skopiowaną sekcję do pliku, używając następującego kodu:
+O: Na koniec możesz zapisać dokument docelowy zawierający skopiowaną sekcję do pliku, używając następującego kodu:
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");

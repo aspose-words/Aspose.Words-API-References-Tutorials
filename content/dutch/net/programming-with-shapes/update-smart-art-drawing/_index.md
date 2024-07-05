@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Stap 3: Update de Smart Art-tekening
- Doorloop de vormen in het document met behulp van de`GetChildNodes` methode met de`NodeType.Shape` parameters. Controleer of elke vorm Smart Art heeft met behulp van de`HasSmartArt` eigendom, en indien waar, bel dan de`UpdateSmartArtDrawing` methode om de Smart Art-tekening bij te werken.
+ Doorloop de vormen in het document met behulp van de`GetChildNodes` methode met de`NodeType.Shape` parameter. Controleer of elke vorm Smart Art heeft met behulp van de`HasSmartArt` eigendom, en indien waar, bel dan de`UpdateSmartArtDrawing` methode om de Smart Art-tekening bij te werken.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

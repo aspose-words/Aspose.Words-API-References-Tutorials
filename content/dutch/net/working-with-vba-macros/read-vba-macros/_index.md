@@ -23,7 +23,7 @@ Zorg ervoor dat u over de volgende items beschikt voordat u begint:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Stap 2: Laad het document en lees de VBA-macro's.
+## Stap 2: Laad het document en lees de VBA-macro's
 Vervolgens laden we het Word-document en controleren of het een VBA-project bevat. Als het document een VBA-project heeft, doorlopen we alle modules in het project en tonen we de broncode voor elke module.
 
 ```csharp

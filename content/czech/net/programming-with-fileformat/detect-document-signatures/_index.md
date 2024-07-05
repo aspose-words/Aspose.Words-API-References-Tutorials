@@ -72,7 +72,7 @@ Tento tutoriál vám poskytl krok za krokem průvodce, jak detekovat digitální
 
 #### Jak určit adresář obsahující dokumenty, ve kterých se má hledat digitální podpis?
 
- Chcete-li zadat adresář obsahující dokumenty, ve kterých chcete hledat digitální podpis, musíte upravit`dataDir` proměnné v kódu. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+ Chcete-li zadat adresář obsahující dokumenty, ve kterých chcete hledat digitální podpis, musíte upravit`dataDir` proměnná v kódu. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

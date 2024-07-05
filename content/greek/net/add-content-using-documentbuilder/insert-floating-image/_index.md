@@ -40,7 +40,7 @@ using Aspose.Words.Drawing;
 1. Ανοίξτε το Visual Studio και δημιουργήστε ένα νέο έργο.
 2. Επιλέξτε "Console App (.NET Core)" και κάντε κλικ στο "Next".
 3. Ονομάστε το έργο σας και επιλέξτε μια τοποθεσία για να το αποθηκεύσετε. Κάντε κλικ στο "Δημιουργία".
-4. Εγκαταστήστε το Aspose.Words για .NET μέσω του NuGet Package Manager. Κάντε δεξί κλικ στο έργο σας στην Εξερεύνηση λύσεων, επιλέξτε "Manage NuGet Packages" και αναζητήστε το "Apose.Words". Εγκαταστήστε την πιο πρόσφατη έκδοση.
+4. Εγκαταστήστε το Aspose.Words για .NET μέσω του NuGet Package Manager. Κάντε δεξί κλικ στο έργο σας στην Εξερεύνηση λύσεων, επιλέξτε "Manage NuGet Packages" και αναζητήστε "Aspose.Words". Εγκαταστήστε την πιο πρόσφατη έκδοση.
 
 ## Βήμα 2: Αρχικοποιήστε το Document και το DocumentBuilder
 

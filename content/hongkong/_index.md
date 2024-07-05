@@ -10,7 +10,7 @@ is_root: true
 
 ## .NET 的 Aspose.Words 文件處理教學課程
 {{% alert color="primary" %}}
-這些教學課程提供了有關如何以程式設計方式處理 Microsoft Word 文件的清晰詳細的說明，涵蓋了廣泛的功能。從文件建立和編輯等簡單任務到郵件合併、文件轉換和文件加密等更高級的功能，開發人員可以找到實際範例和程式碼片段以在其專案中實現。透過遵循這些教程，.NET 開發人員可以透過強大的文件處理功能增強其應用程序，確保在其軟體解決方案中高效、無縫地處理 Word 文件。 
+這些教學課程提供了有關如何以程式設計方式使用 Microsoft Word 文件的清晰詳細的說明，涵蓋了廣泛的功能。從文件建立和編輯等簡單任務到郵件合併、文件轉換和文件加密等更高級的功能，開發人員可以找到實際範例和程式碼片段以在其專案中實現。透過遵循這些教程，.NET 開發人員可以透過強大的文件處理功能增強其應用程序，確保在其軟體解決方案中高效、無縫地處理 Word 文件。 
 {{% /alert %}}
 
 這些是一些有用資源的連結：
@@ -25,7 +25,7 @@ is_root: true
 - [使用清單](./net/working-with-list/)   
 - [使用 Markdown](./net/working-with-markdown/)   
 - [使用節點](./net/working-with-node/)   
-- [處理評論](./net/working-with-revisions/)   
+- [使用修訂](./net/working-with-revisions/)   
 - [使用文字框](./net/working-with-textboxes/)   
 - [拆分文檔](./net/split-document/)   
 - [使用 Documentbuilder 新增內容](./net/add-content-using-documentbuilder/)
@@ -62,7 +62,7 @@ is_root: true
 
 ## Python 的 Aspose.Words 文件管理教學課程
 {{% alert color="primary" %}}
-這些教學課程提供如何以程式設計方式使用 Microsoft Word 文件的逐步指導，包括文件建立、操作以及加密和密碼保護等各種安全功能。借助此資源，開發人員可以使用 Aspose.Words 在其 Python 應用程式中有效地實現文件處理功能，從而提高工作效率並確保文件安全。 
+這些教學課程提供如何以程式設計方式使用 Microsoft Word 文件的逐步指導，包括文件建立、操作以及加密和密碼保護等各種安全功能。借助該資源，開發人員可以使用 Aspose.Words 在其 Python 應用程式中有效地實現文件處理功能，從而提高工作效率並確保文件安全。 
 {{% /alert %}}
 
 這些是一些有用資源的連結：

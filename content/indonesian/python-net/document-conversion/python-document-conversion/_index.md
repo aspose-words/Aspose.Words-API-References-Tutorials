@@ -207,7 +207,7 @@ for filename in input_files:
 
 Oleh
 
- Menggabungkan kekuatan Python dan Aspose.Words, Anda dapat mengotomatiskan konversi dokumen secara massal, meningkatkan produktivitas dan efisiensi.
+ menggabungkan kekuatan Python dan Aspose.Words, Anda dapat mengotomatiskan konversi dokumen secara massal, meningkatkan produktivitas dan efisiensi.
 
 #### Contoh:
 

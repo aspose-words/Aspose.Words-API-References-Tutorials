@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## 5. lépés: A dokumentum mentése
 
- A szövegbeviteli űrlapmező beszúrása után mentse a dokumentumot a kívánt helyre a gombbal`Save` módszer. Ügyeljen arra, hogy megadja a megfelelő fájl elérési utat:
+ A szövegbeviteli űrlapmező beszúrása után mentse a dokumentumot a kívánt helyre a gombbal`Save`módszer. Ügyeljen arra, hogy megadja a megfelelő fájl elérési utat:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -89,7 +89,7 @@ builder.Writeln("Paragraph 6");
 Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 
-// Kezdje el a változatok követését.
+// Kezdje el a revíziók követését.
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 // Verziókat generál, amikor egy csomópontot egyik helyről a másikra helyez át.
@@ -119,7 +119,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan helyezhet át egy csomópontot egy 
 
 #### K: Hogyan engedélyezhetem a revíziókövetést egy Aspose.Words for .NET dokumentumban?
 
-V: Ha engedélyezni szeretné a revíziókövetést egy Aspose.Words for .NET dokumentumban, használja a`StartTrackRevisions` módszere a`Document` tárgy. Ez a módszer a revíziók szerzőjének nevét és a revíziók nyomon követésének kezdő dátumát veszi paraméterként.
+ V: Ha engedélyezni szeretné a revíziókövetést egy Aspose.Words for .NET dokumentumban, használja a`StartTrackRevisions` módszere a`Document` tárgy. Ez a módszer a revíziók szerzőjének nevét és a revíziók nyomon követésének kezdő dátumát veszi paraméterként.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

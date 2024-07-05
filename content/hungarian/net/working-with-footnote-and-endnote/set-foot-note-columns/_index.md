@@ -57,7 +57,7 @@ Nyugodtan használja ezt a kódot saját projektjeiben, és módosítsa saját i
 
 #### K: Hogyan konfigurálhatom az Aspose.Words lábjegyzeteinek oszlopainak számát?
 
- V: Az Aspose.Words lábjegyzeteinek oszlopszámának konfigurálásához használja a`FootnoteOptions` osztály és a`ColumnsCount` ingatlan. Ezt a tulajdonságot tetszőleges számú oszlopra állíthatja be.
+V: Az Aspose.Words lábjegyzeteinek oszlopszámának konfigurálásához használja a`FootnoteOptions` osztály és a`ColumnsCount` ingatlan. Ezt a tulajdonságot tetszőleges számú oszlopra állíthatja be.
 
 #### K: Milyen előnyei vannak a lábjegyzetoszlopok beállításának?
 

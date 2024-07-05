@@ -101,7 +101,7 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ### Valeurs par défaut et formatage
 
-Vous pouvez pré-remplir les champs du formulaire avec des valeurs par défaut et les formater en conséquence :
+Vous pouvez pré-remplir les champs du formulaire avec des valeurs par défaut et les formater en conséquence :
 
 ```python
 text_input_field.text = "John Doe"
@@ -244,7 +244,7 @@ Pour installer Aspose.Words pour Python, utilisez la commande pip suivante :
 pip install aspose-words
 ```
 
-### Puis-je définir des valeurs par défaut pour les champs de formulaire ?
+### Puis-je définir des valeurs par défaut pour les champs de formulaire ?
 
  Oui, vous pouvez définir des valeurs par défaut pour les champs de formulaire à l'aide des propriétés appropriées. Par exemple, pour définir le texte par défaut d'un champ de saisie de texte, utilisez l'option`text` propriété.
 

@@ -18,7 +18,7 @@ Najpierw użyjemy generatora dokumentów, aby dodać treść do naszego dokument
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Dodaj styl dla określonego kodu
+## Krok 2: Dodaj styl dla wciętego kodu
 
 Dodamy niestandardowy styl dla wciętego kodu za pomocą`Styles.Add` metoda`Document` obiekt. W tym przykładzie tworzymy styl o nazwie „IndentedCode” dla kodu z wcięciem.
 
@@ -27,7 +27,7 @@ Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedC
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Krok 3: Dodaj określony kod
+## Krok 3: Dodaj wcięty kod
 
 Teraz możemy dodać blok kodu z wcięciem, używając niestandardowego stylu „IndentedCode”.
 
@@ -51,7 +51,7 @@ Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji kodu z wcięciami w
 
 ### Często zadawane pytania
 
-#### P: Jaki jest określony kod w Markdown?
+#### P: Co to jest kod z wcięciem w Markdown?
 
 Odp.: Kod z wcięciem w Markdown to metoda formatowania używana do wyświetlania kodu w dokumencie Markdown. Polega na wcięciu każdej linii kodu spacjami lub tabulatorami.
 

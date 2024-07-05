@@ -15,7 +15,7 @@ Nazdárek! Takže jste pracovali s dokumenty Word a potřebujete způsob, jak ry
 
 Než se po hlavě ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Toto je magický nástroj, který budeme používat. Můžeš[stáhněte si to zde](https://releases.aspose.com/words/net/) nebo chytit a[zkušební verze zdarma](https://releases.aspose.com/).
+1.  Aspose.Words for .NET: Toto je magický nástroj, který budeme používat. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/) nebo chytit a[zkušební verze zdarma](https://releases.aspose.com/).
 2. Vývojové prostředí .NET: Visual Studio je dobrá volba.
 3. Základní znalost C#: Nebojte se, nemusíte být kouzelník, ale trocha znalosti vám hodně pomůže.
 
@@ -63,7 +63,7 @@ builder.MoveToDocumentEnd();
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-`MoveToDocumentEnd()` umístí kurzor na úplný konec, abyste mohli přidat další obsah. Snadno!
+`MoveToDocumentEnd()` umístí kurzor na úplný konec, abyste mohli přidat další obsah. Snadno peasy!
 
 ## Závěr
 

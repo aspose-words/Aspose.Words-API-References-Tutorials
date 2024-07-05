@@ -2,7 +2,7 @@
 title: Aggiorna la proprietà dell'ultimo tempo salvato
 linktitle: Aggiorna la proprietà dell'ultimo tempo salvato
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come aggiornare automaticamente la proprietà Last Saved Time quando salvi un documento con Aspose.Words per .NET.
+description: Scopri come aggiornare automaticamente la proprietà Ultimo salvataggio quando salvi un documento con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/

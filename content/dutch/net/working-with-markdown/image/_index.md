@@ -73,4 +73,4 @@ Gefeliciteerd! U hebt nu geleerd hoe u de afbeeldingenfunctie kunt gebruiken met
 
 #### Vraag: Hoe kan ik de ene afbeelding vervangen door een andere in Aspose.Words?
 
- A: Om de ene afbeelding door een andere te vervangen in Aspose.Words, kunt u de`Replace` werkwijze van de`Shape` klas. Deze methode neemt als parameter de`Shape` object van de afbeelding die moet worden vervangen en de`Shape` voorwerp van de nieuwe afbeelding.
+ A: Om de ene afbeelding door een andere te vervangen in Aspose.Words, kunt u de`Replace` werkwijze van de`Shape` klas. Deze methode neemt als parameter de`Shape` object van de afbeelding die moet worden vervangen en de`Shape` object van de nieuwe afbeelding.

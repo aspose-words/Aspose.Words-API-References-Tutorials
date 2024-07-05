@@ -33,7 +33,7 @@ using Aspose.Words;
 Nejprve musíte nastavit vývojové prostředí. Vytvořte nový projekt ve svém IDE a nainstalujte Aspose.Words for .NET.
 
 1. Vytvoření nového projektu: Otevřete Visual Studio a vytvořte nový projekt C#.
-2. Instalace Aspose.Words pro .NET: Můžete ji nainstalovat přes NuGet Package Manager vyhledáním „Apose.Words“.
+2. Instalace Aspose.Words for .NET: Můžete ji nainstalovat přes NuGet Package Manager vyhledáním „Apose.Words“.
 
 ```sh
 Install-Package Aspose.Words
@@ -41,7 +41,7 @@ Install-Package Aspose.Words
 
 ## Krok 2: Inicializujte adresář dokumentů
 
-Dále musíme určit adresář, kde se nachází váš soubor DOCX. Ten bude použit ke čtení souboru DOCX a uložení převedeného souboru RTF.
+Dále musíme určit adresář, kde se nachází váš soubor DOCX. To bude použito ke čtení souboru DOCX a uložení převedeného souboru RTF.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -61,7 +61,7 @@ using (Stream stream = File.OpenRead(dataDir + "Document.docx"))
 
 ## Krok 4: Převeďte DOCX na RTF
 
-Po načtení dokumentu je čas jej převést do formátu RTF. Dokument uložíme do a`MemoryStream`.
+ Po načtení dokumentu je čas jej převést do formátu RTF. Dokument uložíme do a`MemoryStream`.
 
 ```csharp
 MemoryStream dstStream = new MemoryStream();

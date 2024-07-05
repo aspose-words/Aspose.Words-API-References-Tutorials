@@ -8,13 +8,13 @@ weight: 10
 url: /zh/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/
 ---
 
-在本教程中，我们将引导您完成 C# 源代码，以使用 Aspose.Words for .NET 将俄语设置为默认编辑语言。此功能允许您设置加载文档时的默认语言。
+在本教程中，我们将引导您完成 C# 源代码，使用 Aspose.Words for .NET 将俄语设置为默认编辑语言。此功能允许您在加载文档时设置默认语言。
 
-## 第 1 步：项目设置
+## 步骤 1：项目设置
 
 首先，在您最喜欢的 IDE 中创建一个新的 C# 项目。确保您的项目中引用了 Aspose.Words for .NET 库。
 
-## 第 2 步：加载文档
+## 步骤 2：加载文档
 
 在此步骤中，我们将加载要将俄语设置为默认编辑语言的 Word 文档。使用以下代码加载文档：
 
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 ```
 
-代替`"YOUR DOCUMENTS DIRECTORY"`与文档所在目录的实际路径。
+代替`"YOUR DOCUMENTS DIRECTORY"`与文档所在目录的实际路径一致。
 
 ## 步骤 3：检查默认语言
 
@@ -41,7 +41,7 @@ Console.WriteLine(
 		: "The document default language was set to another than Russian language originally, so it is not overridden.");
 ```
 
-该代码检查语言 ID 是否与俄语匹配。根据结果，显示相应的消息。
+代码检查语言ID是否与俄语匹配。根据结果显示相应的消息。
 
 ### 使用 Aspose.Words for .NET 将俄语设置为默认编辑语言的示例源代码
 
@@ -62,6 +62,6 @@ Console.WriteLine(
 
 ```
 
-请务必在中指定正确的文档路径`dataDir`多变的。
+确保在`dataDir`多变的。
 
-您现在已经了解了如何使用 Aspose.Words for .NET 将俄语设置为文档的默认编辑语言。按照步骤指南进行操作
+现在，您已经学会了如何使用 Aspose.Words for .NET 将俄语设置为文档的默认编辑语言。按照步骤指南

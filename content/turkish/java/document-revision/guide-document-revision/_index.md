@@ -37,7 +37,7 @@ Belge revizyonuna geçmeden önce geliştirme ortamınızda Aspose.Words for Jav
 
 1.  Aspose.Words for Java'yı indirin:[Aspose.Release'ler](https://releases.aspose.com/words/java/) ve Java kitaplığını indirin.
 
-2. Aspose.Words'ü Projenize Ekleyin: İndirilen paketi çıkartın ve Aspose.Words JAR dosyasını Java projenizin derleme yoluna ekleyin.
+2. Aspose.Words'ü Projenize Ekleyin: İndirilen paketi çıkarın ve Aspose.Words JAR dosyasını Java projenizin derleme yoluna ekleyin.
 
 3. Lisans Alın: Kitaplığı üretim ortamlarında kullanmak için Aspose'tan geçerli bir lisans alın.
 
@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### İncelemelerin Reddedilmesi:
+#### Düzeltmelerin Reddedilmesi:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");
@@ -151,7 +151,7 @@ Biçimlendirme revizyonları yazı tipi stilleri, girinti, hizalama ve diğer d�
 
 ### 4.3 Yorumlar ve Takip Edilen Değişiklikler
 
-Ortak çalışanlar geri bildirim ve öneri sağlamak için sıklıkla yorumları kullanır. Takip edilen değişiklikler ise belgede yapılan değişikliklerin kaydını tutar. Aspose.Words, yorumları ve takip edilen değişiklikleri programlı bir şekilde yönetmenize olanak tanır.
+Ortak çalışanlar geri bildirim ve öneri sağlamak için sıklıkla yorumları kullanır. Takip edilen değişiklikler ise belgede yapılan değişikliklerin kaydını tutar. Aspose.Words, yorumları ve takip edilen değişiklikleri programlı bir şekilde yönetmenize olanak sağlar.
 
 ### 4.4 Gelişmiş Revizyon İşleme
 

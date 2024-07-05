@@ -58,7 +58,7 @@ for shape in doc.get_child_nodes(doc.is_shape, True):
 
 ## Správa formátování
 
-Zachování formátování během extrakce:
+Zachování formátování při extrakci:
 
 ```python
 for run in doc.get_child_nodes(doc.is_run, True):

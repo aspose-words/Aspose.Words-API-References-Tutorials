@@ -32,7 +32,7 @@ url: /el/net/working-with-fields/insert-merge-field-using-dom/
 Για να χρησιμοποιήσετε το Aspose.Words, πρέπει να το προσθέσετε στο έργο σας. Αυτό μπορεί να γίνει μέσω του NuGet Package Manager.
 
 1. **Open NuGet Package Manager:** Κάντε δεξί κλικ στο έργο σας στην Εξερεύνηση λύσεων και, στη συνέχεια, επιλέξτε Διαχείριση πακέτων NuGet.
-2. **Search for Aspose.Words:** Στο NuGet Package Manager, αναζητήστε το "Apose.Words".
+2. **Search for Aspose.Words:** Στο NuGet Package Manager, αναζητήστε "Aspose.Words".
 3. **Install the Package:** Κάντε κλικ στην επιλογή Εγκατάσταση για να προσθέσετε το Aspose.Words στο έργο σας.
 
 ## Βήμα 3: Εισαγωγή χώρων ονομάτων
@@ -119,4 +119,4 @@ doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 Το Aspose.Words υποστηρίζει πολλές εκδόσεις του .NET, συμπεριλαμβανομένων των .NET Framework, .NET Core και .NET Standard.
 
 ### 5. Πού μπορώ να βρω την τεκμηρίωση του API για το Aspose.Words;
- Η τεκμηρίωση API είναι διαθέσιμη.[εδώ](https://reference.aspose.com/words/net/).
+ Η τεκμηρίωση API είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).

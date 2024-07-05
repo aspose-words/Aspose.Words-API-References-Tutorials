@@ -46,7 +46,7 @@ Se till att du har ett nytt eller befintligt C#-projekt i Visual Studio där du 
 Om du inte redan har gjort det, lägg till en referens till Aspose.Words i ditt Visual Studio-projekt. Du kan göra detta genom att:
    - Högerklicka på ditt projekt i Solution Explorer.
    - Välj "Hantera NuGet-paket..."
-   - Söker efter "Apose.Words" och installerar det i ditt projekt.
+   - Söker efter "Aspose.Words" och installerar det i ditt projekt.
 
 ## Steg 3: Förbered ditt dokument
 
@@ -80,7 +80,7 @@ Denna loop itererar bakåt genom fältsamlingen för att undvika problem med att
 
 ## Steg 6: Spara det ändrade dokumentet
 
-Spara dokumentet efter att du har tagit bort fälten:
+Spara dokumentet efter att du tagit bort fälten:
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
@@ -105,4 +105,4 @@ Sammanfattningsvis har denna handledning gett en omfattande guide om hur man eff
    - Ja, metoden som visas här riktar sig specifikt endast till fält och lämnar annat innehåll oförändrat.
 
 ### Var kan jag hitta fler resurser och support för Aspose.Words?
-   -  Besök[Aspose.Words för .NET API dokumentation](https://reference.aspose.com/words/net/) och den[Aspose.Words forum](https://forum.aspose.com/c/words/8)för vidare hjälp.
+   -  Besök[Aspose.Words för .NET API dokumentation](https://reference.aspose.com/words/net/) och den[Aspose.Words forum](https://forum.aspose.com/c/words/8) för vidare hjälp.

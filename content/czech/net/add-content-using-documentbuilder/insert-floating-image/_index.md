@@ -40,7 +40,7 @@ Nejprve vytvořte nový projekt C# v sadě Visual Studio. Pro jednoduchost si m�
 1. Otevřete Visual Studio a vytvořte nový projekt.
 2. Vyberte „Console App (.NET Core)“ a klikněte na „Další“.
 3. Pojmenujte svůj projekt a vyberte umístění pro jeho uložení. Klikněte na „Vytvořit“.
-4. Nainstalujte Aspose.Words for .NET přes NuGet Package Manager. Klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení, vyberte „Spravovat balíčky NuGet“ a vyhledejte „Apose.Words“. Nainstalujte nejnovější verzi.
+4. Nainstalujte Aspose.Words for .NET přes NuGet Package Manager. Klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení, vyberte "Spravovat balíčky NuGet" a vyhledejte "Aspose.Words." Nainstalujte nejnovější verzi.
 
 ## Krok 2: Inicializujte Document a DocumentBuilder
 

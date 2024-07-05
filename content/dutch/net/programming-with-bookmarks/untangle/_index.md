@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Stap 2: Haal bovenliggende rijen op uit bladwijzers
 
- Wij gebruiken de`GetAncestor` Methoden om de bovenliggende rijen van de begin- en eindknooppunten van de bladwijzer op te halen:
+ Wij gebruiken de`GetAncestor` methoden om de bovenliggende rijen van de begin- en eindknooppunten van de bladwijzer op te halen:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

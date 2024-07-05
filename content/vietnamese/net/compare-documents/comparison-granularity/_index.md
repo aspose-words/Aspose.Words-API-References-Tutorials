@@ -56,7 +56,7 @@ Bây giờ hãy so sánh các tài liệu bằng phương thức Compare của l
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- Các`Compare` phương pháp so sánh tài liệu A với tài liệu B và lưu các thay đổi vào tài liệu A. Bạn có thể chỉ định tên tác giả và ngày so sánh để tham khảo.
+ Các`Compare`phương pháp so sánh tài liệu A với tài liệu B và lưu các thay đổi vào tài liệu A. Bạn có thể chỉ định tên tác giả và ngày so sánh để tham khảo.
 
 ## Phần kết luận
 
@@ -95,7 +95,7 @@ Trả lời: Để sử dụng Độ chi tiết so sánh trong Aspose.Words cho 
 2. Thêm các tập hợp cần thiết vào dự án của bạn bằng cách tham khảo Aspose.Words.
 3.  Tạo các tài liệu mà bạn muốn so sánh bằng cách sử dụng`DocumentBuilder` lớp học.
 4.  Định cấu hình các tùy chọn so sánh bằng cách tạo một`CompareOptions` đối tượng và thiết lập`Granularity` thuộc tính đến mức mong muốn (ví dụ:`Granularity.CharLevel` để so sánh cấp độ nhân vật).
-5.  Sử dụng`Compare` phương pháp trên một tài liệu, chuyển tài liệu khác và`CompareOptions` đối tượng làm tham số. Phương pháp này sẽ so sánh các tài liệu dựa trên mức độ chi tiết được chỉ định và lưu các thay đổi trong tài liệu đầu tiên.
+5.  Sử dụng`Compare`phương pháp trên một tài liệu, chuyển tài liệu khác và`CompareOptions` đối tượng làm tham số. Phương pháp này sẽ so sánh các tài liệu dựa trên mức độ chi tiết được chỉ định và lưu các thay đổi trong tài liệu đầu tiên.
 
 #### Câu hỏi: Mức độ chi tiết so sánh có sẵn trong Aspose.Words cho .NET là gì?
 

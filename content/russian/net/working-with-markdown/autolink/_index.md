@@ -34,7 +34,7 @@ builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", fals
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
-## Шаг 4. Сохраните документ.
+## Шаг 4: Сохранение документа
 
 Наконец, мы можем сохранить документ в нужном формате.
 

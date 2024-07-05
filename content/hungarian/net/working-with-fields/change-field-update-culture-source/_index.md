@@ -12,7 +12,7 @@ Ebben az oktatóanyagban végigvezetjük a Word-dokumentumok mezőfrissítési k
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Hozzon létre egy dokumentumot és a DocumentBuildert
 Kezdésként hozzon létre egy példányt a Document osztályból és egy DocumentBuilder objektumból:
@@ -23,7 +23,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: Tartalom beszúrása meghatározott nyelvi beállítással
+## 2. lépés: Tartalom beszúrása adott területi beállítással
 Ezután állítsa be a nyelvet németre, és szúrjon be dátumformátumú mezőket:
 
 ```csharp

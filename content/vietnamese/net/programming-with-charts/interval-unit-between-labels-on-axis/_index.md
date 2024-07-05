@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 
@@ -94,7 +94,7 @@ Với Aspose.Words for .NET, bạn có thể linh hoạt tùy chỉnh các khía
 ### Câu hỏi thường gặp
 
 #### Q1. Nhãn trục trong biểu đồ là gì?
-Nhãn trục trong biểu đồ đề cập đến cách biểu thị bằng văn bản của các giá trị dọc theo trục ngang (trục X) hoặc trục dọc (trục Y) của biểu đồ. Các nhãn này giúp xác định và giải thích các điểm dữ liệu được vẽ trên biểu đồ. Nhãn trục cung cấp ngữ cảnh và cho phép người dùng hiểu tỷ lệ và phạm vi giá trị trong biểu đồ.
+Nhãn trục trong biểu đồ đề cập đến cách trình bày bằng văn bản của các giá trị dọc theo trục ngang (trục X) hoặc trục dọc (trục Y) của biểu đồ. Các nhãn này giúp xác định và giải thích các điểm dữ liệu được vẽ trên biểu đồ. Nhãn trục cung cấp ngữ cảnh và cho phép người dùng hiểu tỷ lệ và phạm vi giá trị trong biểu đồ.
 
 #### Q2. Làm cách nào tôi có thể tùy chỉnh khoảng cách giữa các nhãn trục?
  Để tùy chỉnh khoảng cách giữa các nhãn trục trong biểu đồ bằng Aspose.Words cho .NET, bạn có thể truy cập vào`AxisX` hoặc`AxisY` thuộc tính của biểu đồ và sửa đổi`TickLabelSpacing` tài sản. Bằng cách thiết lập`TickLabelSpacing` đến một giá trị cụ thể, bạn có thể kiểm soát đơn vị khoảng cách giữa các nhãn trên trục tương ứng, điều chỉnh khoảng cách theo yêu cầu của mình.

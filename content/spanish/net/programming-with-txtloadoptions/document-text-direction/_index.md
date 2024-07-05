@@ -81,7 +81,7 @@ Esta característica es esencial para garantizar que el texto se muestre correct
 
 Con Aspose.Words, puede manipular fácilmente la dirección del texto en sus documentos, brindando una experiencia de lectura fluida e intuitiva para los usuarios.
 
-Es importante señalar que esta función es especialmente útil cuando se procesan palabras con idiomas que requieren una dirección de texto específica. Aspose.Words facilita esta tarea al proporcionar potentes herramientas para gestionar la dirección del texto en sus documentos.
+Es importante tener en cuenta que esta función es especialmente útil cuando se procesan palabras con idiomas que requieren una dirección de texto específica. Aspose.Words facilita esta tarea al proporcionar potentes herramientas para gestionar la dirección del texto en sus documentos.
 
 Recuerde utilizar las opciones de carga adecuadas, como configurar la dirección automática del texto, para obtener los resultados que desea en sus documentos.
 

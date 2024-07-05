@@ -1,6 +1,6 @@
 ---
-title: İncelemeleri Kabul Et
-linktitle: İncelemeleri Kabul Et
+title: Düzeltmeleri Kabul Et
+linktitle: Düzeltmeleri Kabul Et
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonları nasıl kabul edeceğinizi öğrenin
 type: docs
@@ -74,7 +74,7 @@ doc.StopTrackRevisions();
 ```
 ## Adım 6: Belgeyi kaydetme
 
- Metin giriş formu alanını ekledikten sonra, belgeyi kullanarak belgeyi istediğiniz konuma kaydedin.`Save` yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
+ Metin giriş formu alanını ekledikten sonra, belgeyi kullanarak belgeyi istediğiniz konuma kaydedin.`Save`yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Değişiklikleri kabul ettiğimizde silinen revizyon paragrafı kaldırılır.
+// Değişiklikleri kabul ettiğimizde revizyon paragrafını sil kaldırılır.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

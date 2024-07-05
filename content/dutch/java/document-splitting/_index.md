@@ -12,7 +12,7 @@ Het splitsen van documenten is een cruciaal aspect van tekstverwerking en docume
 
 ## Efficiënt documenten splitsen
 
-In deze tutorials verkennen ontwikkelaars verschillende technieken voor het efficiënt splitsen van documenten met behulp van Aspose.Words voor Java. Ze leren hoe ze documenten kunnen opsplitsen op paginabereik, aantal alinea's of zelfs aangepaste criteria. Aspose.Words biedt een flexibele API om complexe splitsingsscenario's af te handelen, zodat ontwikkelaars het proces kunnen afstemmen op hun unieke documentbeheerbehoeften.
+In deze tutorials verkennen ontwikkelaars verschillende technieken voor het efficiënt splitsen van documenten met behulp van Aspose.Words voor Java. Ze leren hoe ze documenten kunnen opsplitsen op basis van paginabereik, aantal alinea's of zelfs aangepaste criteria. Aspose.Words biedt een flexibele API om complexe splitsingsscenario's af te handelen, zodat ontwikkelaars het proces kunnen afstemmen op hun unieke documentbeheerbehoeften.
 
 ## Automatiseer het splitsen van documenten
 

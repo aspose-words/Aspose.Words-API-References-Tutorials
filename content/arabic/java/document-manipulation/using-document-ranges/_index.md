@@ -18,7 +18,7 @@ url: /ar/java/document-manipulation/using-document-ranges/
 
 ## إنشاء مستند
 
-لنبدأ بإنشاء كائن مستند. في هذا المثال، سنستخدم نموذج مستند يسمى "Document.docx".
+لنبدأ بإنشاء كائن مستند. في هذا المثال، سنستخدم نموذج مستند يسمى "Document.docx."
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");

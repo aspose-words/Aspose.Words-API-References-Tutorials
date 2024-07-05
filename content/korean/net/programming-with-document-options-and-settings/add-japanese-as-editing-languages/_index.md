@@ -42,7 +42,7 @@ Console.WriteLine(
 
 코드는 극동 언어 ID가 일본어 ID와 일치하는지 확인합니다. 결과에 따라 해당 메시지가 표시됩니다.
 
-### .NET용 Aspose.Words를 사용하여 일본어를 편집 언어로 추가하기 위한 예제 소스 코드
+### .NET용 Aspose.Words를 사용하여 편집 언어로 일본어 추가에 대한 예제 소스 코드
 
 ```csharp
 

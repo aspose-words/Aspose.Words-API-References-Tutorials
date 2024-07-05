@@ -73,7 +73,7 @@ builder.InsertCheckBox("CheckBox", true, true, 0);
 Låt oss bryta ner det här:
 - `"CheckBox"`: Detta är namnet på kryssrutans formulärfält.
 - `true`: Detta anger att kryssrutan är markerad som standard.
-- `true`: Den här parametern ställer in om kryssrutan ska markeras som en boolean.
+- `true`: Denna parameter ställer in om kryssrutan ska markeras som en boolean.
 - `0` : Denna parameter anger storleken på kryssrutan.`0` betyder standardstorlek.
 
 ## Steg 5: Spara dokumentet

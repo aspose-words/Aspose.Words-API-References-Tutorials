@@ -170,7 +170,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 
 #### Q：建立新的簽名行並設定提供者 ID 後如何儲存修改後的文件？
 
-答：建立新的簽名行並設定提供者 ID 後，要儲存修改後的文檔，可以使用`Save`的方法`Document`目的。指定儲存文件的正確路徑和檔案名稱。
+答：要在建立新簽名行並設定提供者 ID 後儲存修改後的文檔，您可以使用`Save`的方法`Document`目的。指定儲存文件的正確路徑和檔案名稱。
 
 #### Q：Aspose.Words for .NET 支援什麼檔案格式來建立和簽署簽章行？
 

@@ -2,7 +2,7 @@
 title: Sao chép văn bản được đánh dấu trong tài liệu Word
 linktitle: Sao chép văn bản được đánh dấu trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách sao chép văn bản dấu trang trong tài liệu word sang tài liệu khác bằng Aspose.Words for .NET.
+description: Tìm hiểu cách sao chép văn bản dấu trang trong tài liệu word sang tài liệu khác bằng Aspose.Words cho .NET.
 type: docs
 weight: 10
 url: /vi/net/programming-with-bookmarks/copy-bookmarked-text/

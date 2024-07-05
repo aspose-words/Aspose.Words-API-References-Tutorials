@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. lépés: Szúrjon be hiperhivatkozásokat megtisztított Uri-val
 
- Használja a`InsertHyperlink` módszere a`DocumentBuilder` objektum hiperhivatkozások beszúrásához a dokumentumba. Az Uri-t a következővel kell kihagyni`Uri.EscapeUriString` funkció a formázási hibák elkerülése érdekében.
+ Használja a`InsertHyperlink` módszere a`DocumentBuilder` objektumot a hiperhivatkozások dokumentumba való beillesztéséhez. Az Uri-t a következővel kell kiszabadítani`Uri.EscapeUriString` funkció a formázási hibák elkerülése érdekében.
 
 ```csharp
 builder.InsertHyperlink("Testlink",

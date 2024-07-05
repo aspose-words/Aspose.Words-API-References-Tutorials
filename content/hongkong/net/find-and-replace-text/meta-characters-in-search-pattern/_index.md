@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## 步驟 4：在文件中插入分頁符
 
-為了說明另一個元字元的使用，我們將使用以下命令在文件中插入分頁符`InsertBreak`方法與`BreakType.PageBreak`參數。我們首先將遊標從`DocumentBuilder`到文件末尾，然後插入分頁符號和新的文字行：
+為了說明另一個元字元的使用，我們將使用以下命令在文件中插入分頁符`InsertBreak`方法與`BreakType.PageBreak`範圍。我們首先將遊標從`DocumentBuilder`到文件末尾，然後插入分頁符號和新的文字行：
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -54,7 +54,7 @@ builder.Writeln("This is line 2");
 
 ## 步驟 5：尋找並替換為另一個元字符
 
-現在我們將執行另一次搜尋並使用`&m`表示分頁符號的元字元。我們將短語“這是第 1 行&m這是第 2 行”替換為“分頁符號已替換為新文字”。 :
+現在我們將執行另一次搜尋並使用`&m`表示分頁符號的元字元。我們將短語“這是第 1 行&m這是第 2 行”替換為“分頁符號已替換為新文字”。 ：
 
 ```csharp
 doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### Q：如何使用 Aspose.Words for .NET 在文件中插入分頁符號？
 
-答：為了說明另一個元字元的使用，我們將使用以下命令在文件中插入分頁符號：`InsertBreak`方法與`BreakType.PageBreak`參數。我們首先將遊標從`DocumentBuilder`到文件末尾，然後插入分頁符號和新的文字行：
+答：為了說明另一個元字元的使用，我們將使用以下命令在文件中插入分頁符號：`InsertBreak`方法與`BreakType.PageBreak`範圍。我們首先將遊標從`DocumentBuilder`到文件末尾，然後插入分頁符號和新的文字行：
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -152,7 +152,7 @@ builder.Writeln("This is line 2");
 
 #### Q：如何使用 Aspose.Words for .NET 在文件中搜尋並替換為另一個元字元？
 
-答：我們現在將使用以下命令執行另一次搜尋和替換`&m`表示分頁符號的元字元。我們將短語“這是第 1 行&m這是第 2 行”替換為“分頁符號已替換為新文字”。 :
+答：我們現在將使用以下命令執行另一次搜尋和替換`&m`表示分頁符號的元字元。我們將短語“這是第 1 行&m這是第 2 行”替換為“分頁符號已替換為新文字”。 ：
 
 ```csharp
 doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");

@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// قم بتعيين وضع التخطيط لقسم يسمح بتحديد سلوك شبكة المستند.
-	// لاحظ أن علامة التبويب "شبكة المستند" تصبح مرئية في مربع حوار "إعداد الصفحة" في برنامج MS Word.
+	// لاحظ أن علامة التبويب "شبكة المستند" تصبح مرئية في مربع حوار "إعداد الصفحة" في برنامج MS Word
 	// إذا تم تعريف أي لغة آسيوية على أنها لغة تحرير.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

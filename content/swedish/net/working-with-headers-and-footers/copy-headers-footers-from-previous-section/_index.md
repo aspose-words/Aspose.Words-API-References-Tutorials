@@ -131,4 +131,4 @@ Ja, du kan kopiera sidhuvuden och sidfötter mellan alla avsnitt i ett Word-doku
 
 ### F5: Finns det en gratis testversion tillgänglig för Aspose.Words för .NET?
 
-Ja, du kan ladda ner en gratis testversion från[nedladdningssida](https://releases.aspose.com/).
+ Ja, du kan ladda ner en gratis testversion från[nedladdningssida](https://releases.aspose.com/).

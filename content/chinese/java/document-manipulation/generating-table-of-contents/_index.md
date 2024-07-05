@@ -2,23 +2,23 @@
 title: 在 Aspose.Words for Java 中生成目录
 linktitle: 生成目录
 second_title: Aspose.Words Java 文档处理 API
-description: 了解如何使用 Aspose.Words for Java 生成和自定义目录 (TOC)。轻松创建有组织且专业的文档。
+description: 了解如何使用 Aspose.Words for Java 生成和自定义目录 (TOC)。轻松创建有条理且专业的文档。
 type: docs
 weight: 21
 url: /zh/java/document-manipulation/generating-table-of-contents/
 ---
 
-## 在 Aspose.Words for Java 中生成目录的简介
+## Aspose.Words for Java 中生成目录的简介
 
-在本教程中，我们将引导您完成使用 Aspose.Words for Java 生成目录 (TOC) 的过程。 TOC 是创建有组织的文档的一个重要功能。我们将介绍如何自定义目录的外观和布局。
+在本教程中，我们将引导您完成使用 Aspose.Words for Java 生成目录 (TOC) 的过程。TOC 是创建有组织的文档的关键功能。我们将介绍如何自定义 TOC 的外观和布局。
 
 ## 先决条件
 
-开始之前，请确保您已在 Java 项目中安装并设置了 Aspose.Words for Java。
+在开始之前，请确保您已经在 Java 项目中安装并设置了 Aspose.Words for Java。
 
-## 第 1 步：创建一个新文档
+## 步骤 1：创建新文档
 
-首先，让我们创建一个要使用的新文档。
+首先，让我们创建一个新的文档来使用。
 
 ```java
 Document doc = new Document();
@@ -32,21 +32,21 @@ Document doc = new Document();
 doc.getStyles().getByStyleIdentifier(StyleIdentifier.TOC_1).getFont().setBold(true);
 ```
 
-## 第 3 步：将内容添加到文档中
+## 步骤 3：向文档添加内容
 
 您可以将内容添加到文档中。此内容将用于生成目录。
 
-## 第 4 步：生成目录
+## 步骤 4：生成目录
 
-要生成目录，请在文档中的所需位置插入目录字段。该字段将根据文档中的标题和样式自动填充。
+要生成目录，请在文档中的所需位置插入目录字段。此字段将根据文档中的标题和样式自动填充。
 
 ```java
-//在文档中的所需位置插入目录字段。
+//在文档的所需位置插入目录字段。
 FieldToc fieldToc = new FieldToc();
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(fieldToc);
 ```
 
-## 第 5 步：保存文档
+## 步骤 5：保存文档
 
 最后，将文档与目录一起保存。
 
@@ -56,7 +56,7 @@ doc.save("your_output_path_here");
 
 ## 自定义目录中的制表位
 
-您还可以自定义目录中的制表位来控制页码的布局。以下是更改制表位的方法：
+您还可以自定义目录中的制表位，以控制页码的布局。更改制表位的方法如下：
 
 ```java
 Document doc = new Document("Table of contents.docx");
@@ -66,13 +66,13 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
     if (para.getParagraphFormat().getStyle().getStyleIdentifier() >= StyleIdentifier.TOC_1 &&
         para.getParagraphFormat().getStyle().getStyleIdentifier() <= StyleIdentifier.TOC_9)
     {
-        //获取本段中使用的第一个选项卡，该选项卡对齐页码。
+        //获取此段落中使用的第一个选项卡，用于对齐页码。
         TabStop tab = para.getParagraphFormat().getTabStops().get(0);
         
-        //取下旧标签。
+        //删除旧标签。
         para.getParagraphFormat().getTabStops().removeByPosition(tab.getPosition());
         
-        //在修改的位置（例如，向左 50 个单位）插入新选项卡。
+        //在修改的位置（例如左侧 50 个单位）插入新标签。
         para.getParagraphFormat().getTabStops().add(tab.getPosition() - 50.0, tab.getAlignment(), tab.getLeader());
     }
 }
@@ -80,23 +80,23 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
 doc.save("output.docx");
 ```
 
-现在，您的文档中有一个自定义的目录，其中包含用于页码对齐的调整制表位。
+现在，您的文档中已经有了自定义的目录，并且制表位已调整以便页码对齐。
 
 
 ## 结论
 
-在本教程中，我们探讨了如何使用 Aspose.Words for Java（一个用于处理 Word 文档的强大库）生成目录 (TOC)。结构良好的目录对于组织和导航冗长的文档至关重要，Aspose.Words 提供了轻松创建和自定义目录的工具。
+在本教程中，我们探索了如何使用 Aspose.Words for Java（一个用于处理 Word 文档的强大库）生成目录 (TOC)。结构良好的目录对于组织和浏览冗长的文档至关重要，而 Aspose.Words 提供了轻松创建和自定义目录的工具。
 
 ## 常见问题解答
 
 ### 如何更改目录条目的格式？
 
-您可以使用以下命令修改与 TOC 级别关联的样式`doc.getStyles().getByStyleIdentifier(StyleIdentifier.TOC_X)`，其中 X 是 TOC 水平。
+您可以使用以下方式修改与目录级别相关的样式`doc.getStyles().getByStyleIdentifier(StyleIdentifier.TOC_X)`，其中 X 是 TOC 级别。
 
-### 如何向我的目录添加更多级别？
+### 如何为我的目录添加更多级别？
 
 要在目录中包含更多级别，您可以修改目录字段并指定所需的级别数。
 
 ### 我可以更改特定目录条目的制表位位置吗？
 
-是的，如上面的代码示例所示，您可以通过迭代段落并相应地修改制表位来更改特定目录条目的制表位位置。
+是的，如上面的代码示例所示，您可以通过遍历段落并相应地修改制表位来更改特定目录条目的制表位位置。

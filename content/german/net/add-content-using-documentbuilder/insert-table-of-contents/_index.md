@@ -1,22 +1,22 @@
 ---
 title: Inhaltsverzeichnis in Word-Dokument einfügen
 linktitle: Inhaltsverzeichnis in Word-Dokument einfügen
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis in Word einfügen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine nahtlose Dokumentennavigation.
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis in Word einfügen. Folgen Sie unserer Schritt-für-Schritt-Anleitung für eine nahtlose Dokumentnavigation.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 ## Einführung
-In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET effizient ein Inhaltsverzeichnis (TOC) zu Ihren Word-Dokumenten hinzufügen. Diese Funktion ist für die Organisation und Navigation in langen Dokumenten unerlässlich, verbessert die Lesbarkeit und bietet einen schnellen Überblick über Dokumentabschnitte.
+In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET effizient ein Inhaltsverzeichnis (TOC) zu Ihren Word-Dokumenten hinzufügen. Diese Funktion ist wichtig, um lange Dokumente zu organisieren und darin zu navigieren, die Lesbarkeit zu verbessern und einen schnellen Überblick über Dokumentabschnitte zu bieten.
 
 ## Voraussetzungen
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-- Grundlegendes Verständnis von C# und .NET Framework.
+- Grundlegende Kenntnisse von C# und .NET Framework.
 - Visual Studio ist auf Ihrem Computer installiert.
--  Aspose.Words für .NET-Bibliothek. Wenn Sie es noch nicht installiert haben, können Sie es hier herunterladen[Hier](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET-Bibliothek. Wenn Sie es noch nicht installiert haben, können Sie es hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
 
 ## Namespaces importieren
 
@@ -31,9 +31,9 @@ using Aspose.Words.Tables;
 
 Lassen Sie uns den Prozess in klare Schritte unterteilen:
 
-## Schritt 1: Initialisieren Sie das Aspose.Words-Dokument und den DocumentBuilder
+## Schritt 1: Initialisieren Sie Aspose.Words Document und DocumentBuilder
 
- Initialisieren Sie zunächst ein neues Aspose.Words`Document` Objekt und a`DocumentBuilder` arbeiten mit:
+ Initialisieren Sie zunächst ein neues Aspose.Words`Document` Objekt und ein`DocumentBuilder` arbeiten mit:
 
 ```csharp
 // Initialisieren Sie Document und DocumentBuilder
@@ -41,21 +41,21 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 2: Fügen Sie das Inhaltsverzeichnis ein
+## Schritt 2: Inhaltsverzeichnis einfügen
 
- Fügen Sie nun das Inhaltsverzeichnis mit ein`InsertTableOfContents` Methode:
+ Fügen Sie nun das Inhaltsverzeichnis ein mit dem`InsertTableOfContents` Methode:
 
 ```csharp
 // Inhaltsverzeichnis einfügen
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## Schritt 3: Dokumentinhalt auf einer neuen Seite starten
+## Schritt 3: Dokumentinhalt auf einer neuen Seite beginnen
 
-Um eine ordnungsgemäße Formatierung sicherzustellen, beginnen Sie den eigentlichen Dokumentinhalt auf einer neuen Seite:
+Um eine korrekte Formatierung zu gewährleisten, beginnen Sie den eigentlichen Dokumentinhalt auf einer neuen Seite:
 
 ```csharp
-// Fügen Sie einen Seitenumbruch ein
+// Einfügen eines Seitenumbruchs
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
@@ -89,42 +89,42 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## Schritt 5: Aktualisieren und füllen Sie das Inhaltsverzeichnis
+## Schritt 5: Inhaltsverzeichnis aktualisieren und ausfüllen
 
 Aktualisieren Sie das Inhaltsverzeichnis, um die Dokumentstruktur widerzuspiegeln:
 
 ```csharp
-// Aktualisieren Sie die Felder des Inhaltsverzeichnisses
+// Aktualisieren der Inhaltsverzeichnisfelder
 doc.UpdateFields();
 ```
 
 ## Schritt 6: Speichern Sie das Dokument
 
-Speichern Sie abschließend Ihr Dokument in einem angegebenen Verzeichnis:
+Speichern Sie Ihr Dokument abschließend in einem angegebenen Verzeichnis:
 
 ```csharp
-// Speichern Sie das Dokument
+// Speichern des Dokuments
 string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
 ## Abschluss
 
-Das Hinzufügen eines Inhaltsverzeichnisses mit Aspose.Words für .NET ist unkompliziert und verbessert die Benutzerfreundlichkeit Ihrer Dokumente erheblich. Wenn Sie diese Schritte befolgen, können Sie komplexe Dokumente effizient organisieren und durch sie navigieren.
+Das Hinzufügen eines Inhaltsverzeichnisses mit Aspose.Words für .NET ist unkompliziert und verbessert die Benutzerfreundlichkeit Ihrer Dokumente erheblich. Indem Sie diese Schritte befolgen, können Sie komplexe Dokumente effizient organisieren und darin navigieren.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Kann ich das Erscheinungsbild des Inhaltsverzeichnisses anpassen?
-Ja, Sie können das Erscheinungsbild und Verhalten des Inhaltsverzeichnisses mithilfe von Aspose.Words für .NET-APIs anpassen.
+Ja, Sie können das Erscheinungsbild und Verhalten des Inhaltsverzeichnisses mit Aspose.Words für .NET-APIs anpassen.
 
-### Unterstützt Aspose.Words die automatische Aktualisierung von Feldern?
-Ja, mit Aspose.Words können Sie Felder wie das Inhaltsverzeichnis dynamisch basierend auf Dokumentänderungen aktualisieren.
+### Unterstützt Aspose.Words das automatische Aktualisieren von Feldern?
+Ja, Aspose.Words ermöglicht Ihnen, Felder wie das Inhaltsverzeichnis dynamisch basierend auf Dokumentänderungen zu aktualisieren.
 
 ### Kann ich mehrere Inhaltsverzeichnisse in einem einzigen Dokument erstellen?
-Aspose.Words unterstützt die Generierung mehrerer Inhaltsverzeichnisse mit unterschiedlichen Einstellungen in einem einzigen Dokument.
+Aspose.Words unterstützt die Generierung mehrerer Inhaltsverzeichnisse mit unterschiedlichen Einstellungen innerhalb eines einzelnen Dokuments.
 
 ### Ist Aspose.Words mit verschiedenen Versionen von Microsoft Word kompatibel?
-Ja, Aspose.Words gewährleistet die Kompatibilität mit verschiedenen Versionen von Microsoft Word-Formaten.
+Ja, Aspose.Words stellt die Kompatibilität mit verschiedenen Versionen von Microsoft Word-Formaten sicher.
 
 ### Wo finde ich weitere Hilfe und Unterstützung für Aspose.Words?
-Weitere Unterstützung finden Sie unter[Aspose.Words-Forum](https://forum.aspose.com/c/words/8) oder schauen Sie sich die an[offizielle Dokumentation](https://reference.aspose.com/words/net/).
+Weitere Hilfe erhalten Sie im[Aspose.Words Forum](https://forum.aspose.com/c/words/8) oder schauen Sie sich die[amtliche Dokumentation](https://reference.aspose.com/words/net/).

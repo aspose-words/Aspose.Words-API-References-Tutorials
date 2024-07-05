@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Шаг 5. Сохраните измененный документ.
 
- Сохраните измененный документ с помощью`Save` метод`Document` Объект Object.
+ Сохраните измененный документ, используя`Save` метод`Document` объект.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");

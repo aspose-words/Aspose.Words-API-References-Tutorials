@@ -55,7 +55,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Cela configure notre document et nous prépare à commencer à le construire.
 
-## Étape 3 : insérer un champ TC
+## Étape 3 : Insérer un champ TC
 
 Maintenant, voici la partie amusante. Nous allons insérer un champ TC dans notre document. Le champ TC est utilisé pour marquer les entrées d'une table des matières.
 
@@ -79,7 +79,7 @@ Boom! Vous venez de créer un document Word avec un champ TC. C'est génial à q
 
 ## Conclusion
 
- Et voila! Nous avons expliqué comment insérer un champ TC dans un document Word à l'aide d'Aspose.Words pour .NET. C'est assez simple, non ? Grâce à ces compétences, vous pouvez désormais automatiser et personnaliser vos documents Word comme un pro. Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à consulter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou contactez-les[forum d'entraide](https://forum.aspose.com/c/words/8). Bon codage !
+ Et voila! Nous avons expliqué comment insérer un champ TC dans un document Word à l'aide d'Aspose.Words pour .NET. C'est assez simple, non ? Grâce à ces compétences, vous pouvez désormais automatiser et personnaliser vos documents Word comme un pro. Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à consulter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou contactez leur[forum d'entraide](https://forum.aspose.com/c/words/8). Bon codage !
 
 ## FAQ
 
@@ -93,7 +93,7 @@ Un champ TC (Table des matières) dans Word est utilisé pour marquer les entré
 
 ### 3. Puis-je utiliser Aspose.Words avec d’autres langages de programmation ?
 
-Aspose.Words prend principalement en charge les langages .NET comme C#, mais il existe des versions disponibles pour Java et d'autres plates-formes.
+Aspose.Words prend principalement en charge les langages .NET comme C#, mais des versions sont disponibles pour Java et d'autres plates-formes.
 
 ### 4. Où puis-je trouver d'autres exemples d'utilisation d'Aspose.Words pour .NET ?
 

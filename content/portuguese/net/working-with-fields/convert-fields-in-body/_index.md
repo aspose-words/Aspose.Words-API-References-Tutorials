@@ -74,7 +74,7 @@ Dominar a arte de manipular campos de documentos usando Aspose.Words for .NET pe
 ## Perguntas frequentes (FAQ)
 
 ### O que são campos de documento no Aspose.Words for .NET?
-Os campos do documento em Aspose.Words são espaços reservados que podem armazenar e exibir dados dinâmicos, como datas, números de página e cálculos.
+Os campos do documento em Aspose.Words são espaços reservados que podem armazenar e exibir dados dinâmicos, como datas, números de páginas e cálculos.
 
 ### Como posso lidar com diferentes tipos de campos no Aspose.Words for .NET?
 Aspose.Words oferece suporte a vários tipos de campos como DATE, PAGE, MERGEFIELD e muito mais, permitindo que os desenvolvedores os manipulem programaticamente.
@@ -83,7 +83,7 @@ Aspose.Words oferece suporte a vários tipos de campos como DATE, PAGE, MERGEFIE
 Sim, Aspose.Words for .NET pode converter e manipular campos em formatos como DOCX, DOC, RTF e muito mais.
 
 ### Onde posso encontrar documentação abrangente para Aspose.Words for .NET?
- Documentação detalhada e referências de API estão disponíveis.[aqui](https://reference.aspose.com/words/net/).
+ Documentação detalhada e referências de API estão disponíveis[aqui](https://reference.aspose.com/words/net/).
 
 ### Existe uma versão de teste disponível para Aspose.Words for .NET?
  Sim, você pode baixar uma versão de avaliação gratuita em[aqui](https://releases.aspose.com/).

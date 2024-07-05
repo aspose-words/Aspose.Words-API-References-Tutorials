@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Βήμα 2: Εισαγωγή συνδέσμου
 
- Μπορούμε να εισάγουμε έναν σύνδεσμο χρησιμοποιώντας το`InsertHyperlink` μέθοδο δημιουργίας εγγράφων. Πρέπει να καθορίσουμε το κείμενο του συνδέσμου, εδώ "Apose", καθώς και τη διεύθυνση URL προορισμού.
+ Μπορούμε να εισάγουμε έναν σύνδεσμο χρησιμοποιώντας το`InsertHyperlink` μέθοδο δημιουργίας εγγράφων. Πρέπει να καθορίσουμε το κείμενο του συνδέσμου, εδώ "Aspose", καθώς και τη διεύθυνση URL προορισμού.
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
@@ -36,7 +36,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Εισαγωγή συνδέσμου.
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
-συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη δυνατότητα συνδέσμων με το Aspose.Words για .NET.
+Συγχαρητήρια ! Τώρα έχετε μάθει πώς να χρησιμοποιείτε τη δυνατότητα συνδέσμων με το Aspose.Words για .NET.
 
 
 ### Συχνές ερωτήσεις

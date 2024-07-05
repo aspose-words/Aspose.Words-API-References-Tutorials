@@ -24,7 +24,7 @@ Met Aspose.Words voor Java kunt u in een handomdraai dynamische documenten maken
 
 ## Verbeter uw vaardigheden op het gebied van documentverwerking
 
-Door deze tutorials te volgen leert u niet alleen de basisprincipes van het manipuleren van documentelementen, maar duikt u ook diep in geavanceerde onderwerpen zoals stijl, documentbeveiliging, samenvoegen en meer. De hier opgedane kennis stelt u in staat om zelfs de meest complexe documentverwerkingstaken met gemak aan te pakken.
+Door deze tutorials te volgen leert u niet alleen de basisprincipes van het manipuleren van documentelementen, maar duikt u ook diep in geavanceerde onderwerpen zoals stijl, documentbeveiliging, samenvoegen en meer. Met de kennis die u hier opdoet, kunt u zelfs de meest complexe documentverwerkingstaken met gemak uitvoeren.
 
 ## Begin vandaag
 

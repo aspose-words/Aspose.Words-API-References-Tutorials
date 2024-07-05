@@ -2,112 +2,131 @@
 title: So sánh các tùy chọn trong tài liệu Word
 linktitle: So sánh các tùy chọn trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước giải thích mã nguồn C# của tính năng Compare Options trong tài liệu word với Aspose.Words for .NET.
+description: Tìm hiểu cách so sánh các tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Đảm bảo tính nhất quán của tài liệu một cách dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/compare-documents/compare-options/
 ---
-Trong hướng dẫn này, chúng tôi sẽ giải thích cách sử dụng tính năng Tùy chọn so sánh trong tài liệu word với Aspose.Words cho .NET. Hãy làm theo các bước bên dưới để hiểu mã nguồn và áp dụng các thay đổi.
+## Giới thiệu
 
-## Bước 1: So sánh tài liệu với các tùy chọn tùy chỉnh
+Xin chào các bạn đam mê công nghệ! Bạn đã bao giờ cần so sánh hai tài liệu Word để kiểm tra sự khác biệt chưa? Có thể bạn đang làm việc trên một dự án hợp tác và cần đảm bảo tính nhất quán trên nhiều phiên bản. Chà, hôm nay, chúng ta sẽ đi sâu vào thế giới Aspose.Words dành cho .NET để chỉ cho bạn chính xác cách so sánh các tùy chọn trong tài liệu Word. Hướng dẫn này không chỉ nói về viết mã mà còn tìm hiểu quy trình một cách thú vị, hấp dẫn và chi tiết. Vì vậy, hãy lấy đồ uống yêu thích của bạn và bắt đầu!
 
- Để bắt đầu, hãy tải hai tài liệu để so sánh. Trong ví dụ này, chúng ta sẽ sử dụng`Clone()` phương pháp tạo bản sao của tài liệu gốc. Đây là cách thực hiện:
+## Điều kiện tiên quyết
+
+Trước khi bắt tay vào viết mã, hãy đảm bảo rằng chúng ta có mọi thứ mình cần. Dưới đây là danh sách kiểm tra nhanh:
+
+1.  Aspose.Words for .NET Library: Bạn cần cài đặt thư viện Aspose.Words for .NET. Nếu bạn chưa làm như vậy, bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Bất kỳ môi trường phát triển C# nào như Visual Studio đều có thể thực hiện được thủ thuật này.
+3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về lập trình C# sẽ rất hữu ích.
+4. Tài liệu Word mẫu: Hai tài liệu Word mà bạn muốn so sánh.
+
+Nếu bạn đã sẵn sàng với tất cả những điều này, hãy chuyển sang nhập các không gian tên cần thiết!
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words cho .NET một cách hiệu quả, chúng ta cần nhập một vài không gian tên. Đây là đoạn mã để làm điều đó:
 
 ```csharp
-Document docA = new Document(MyDir + "Document.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Comparing;
+```
+
+Các không gian tên này cung cấp tất cả các lớp và phương thức mà chúng ta cần để thao tác và so sánh các tài liệu Word.
+
+Bây giờ, hãy chia nhỏ quá trình so sánh các tùy chọn trong tài liệu Word thành các bước đơn giản, dễ hiểu.
+
+## Bước 1: Thiết lập dự án của bạn
+
+Trước tiên, hãy thiết lập dự án của chúng ta trong Visual Studio.
+
+1. Tạo một dự án mới: Mở Visual Studio và tạo dự án Console App (.NET Core) mới.
+2. Thêm thư viện Aspose.Words: Bạn có thể thêm thư viện Aspose.Words cho .NET thông qua Trình quản lý gói NuGet. Chỉ cần tìm kiếm "Aspose.Words" và cài đặt nó.
+
+## Bước 2: Khởi tạo tài liệu
+
+Bây giờ, chúng ta cần khởi tạo tài liệu Word của mình. Đây là những tập tin chúng tôi sẽ so sánh.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+Document docA = new Document(dataDir + "Document.docx");
 Document docB = docA.Clone();
 ```
 
-## Bước 2: Cấu hình các tùy chọn so sánh
+Trong đoạn trích này:
+- Chúng tôi chỉ định thư mục nơi tài liệu của chúng tôi được lưu trữ.
+- Chúng tôi tải tài liệu đầu tiên (`docA`).
+-  Chúng tôi nhân bản`docA` để tạo ra`docB`. Bằng cách này, chúng ta có hai tài liệu giống hệt nhau để làm việc.
 
- Bây giờ chúng ta sẽ cấu hình các tùy chọn so sánh bằng cách tạo một`CompareOptions` đối tượng và thiết lập các thuộc tính khác nhau nếu cần. Đây là cách thực hiện:
+## Bước 3: Cấu hình các tùy chọn so sánh
+
+Tiếp theo, chúng tôi thiết lập các tùy chọn sẽ chỉ ra cách thực hiện so sánh.
 
 ```csharp
 CompareOptions options = new CompareOptions
 {
-IgnoreFormatting = true,
-IgnoreHeadersAndFooters = true,
-IgnoreCaseChanges = true,
-IgnoreTables = true,
-IgnoreFields = true,
-IgnoreComments = true,
-IgnoreTextboxes=true,
-IgnoreFootnotes=true
+	IgnoreFormatting = true,
+	IgnoreHeadersAndFooters = true,
+	IgnoreCaseChanges = true,
+	IgnoreTables = true,
+	IgnoreFields = true,
+	IgnoreComments = true,
+	IgnoreTextboxes = true,
+	IgnoreFootnotes = true
 };
 ```
 
-## Bước 3: So sánh tài liệu với các tùy chọn tùy chỉnh
+Đây là những gì mỗi tùy chọn thực hiện:
+- IgnoreFormatting: Bỏ qua mọi thay đổi về định dạng.
+- IgnoreHeadersAndFooters: Bỏ qua những thay đổi ở đầu trang và chân trang.
+- IgnoreCaseChanges: Bỏ qua các thay đổi về kiểu chữ trong văn bản.
+- IgnoreTables: Bỏ qua những thay đổi trong bảng.
+- IgnoreFields: Bỏ qua những thay đổi trong các trường.
+- IgnoreComments: Bỏ qua những thay đổi trong bình luận.
+- IgnoreTextboxes: Bỏ qua những thay đổi trong hộp văn bản.
+- IgnoreFootnotes: Bỏ qua những thay đổi ở chú thích cuối trang.
 
- Bây giờ chúng ta sẽ sử dụng`Compare()` phương pháp chuyển các tùy chọn tùy chỉnh để so sánh hai tài liệu. Phương pháp này sẽ đánh dấu những thay đổi trong tài liệu gốc. Đây là cách thực hiện:
+## Bước 4: So sánh tài liệu
+
+Bây giờ chúng ta đã thiết lập xong các tài liệu và tùy chọn, hãy so sánh chúng.
 
 ```csharp
-// So sánh tài liệu với các tùy chọn tùy chỉnh
 docA.Compare(docB, "user", DateTime.Now, options);
-
-// Kiểm tra xem các tài liệu có bằng nhau không
-Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal": "Documents are not equal");
 ```
 
-### Mã nguồn ví dụ cho Tùy chọn so sánh bằng Aspose.Words cho .NET
+Trong dòng này:
+-  Chúng tôi so sánh`docA` với`docB`.
+- Chúng tôi chỉ định tên người dùng ("người dùng") và ngày giờ hiện tại.
 
-Đây là mã nguồn hoàn chỉnh cho tính năng Tùy chọn so sánh với Aspose.Words cho .NET:
+## Bước 5: Kiểm tra và hiển thị kết quả
+
+Cuối cùng, chúng ta kiểm tra kết quả so sánh và hiển thị xem các tài liệu có bằng nhau hay không.
 
 ```csharp
-
-	Document docA = new Document(MyDir + "Document.docx");
-	Document docB = docA.Clone();
-
-	CompareOptions options = new CompareOptions
-	{
-		IgnoreFormatting = true,
-		IgnoreHeadersAndFooters = true,
-		IgnoreCaseChanges = true,
-		IgnoreTables = true,
-		IgnoreFields = true,
-		IgnoreComments = true,
-		IgnoreTextboxes = true,
-		IgnoreFootnotes = true
-	};
-
-	docA.Compare(docB, "user", DateTime.Now, options);
-
-	Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
-
+Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-Với mã này, bạn có thể so sánh hai tài liệu bằng các tùy chọn tùy chỉnh để bỏ qua các thành phần cụ thể khi so sánh với Aspose.Words cho .NET.
+ Nếu như`docA.Revisions.Count` bằng 0, nghĩa là không có sự khác biệt giữa các tài liệu. Mặt khác, nó chỉ ra rằng có một số khác biệt.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã học cách sử dụng Tùy chọn so sánh trong Aspose.Words cho .NET để tùy chỉnh quy trình so sánh khi so sánh hai tài liệu. Bằng cách chỉ định các tùy chọn khác nhau, bạn có thể bỏ qua các yếu tố cụ thể và làm cho quá trình so sánh trở nên linh hoạt hơn. Tính năng này cho phép bạn kiểm soát tốt hơn quá trình so sánh, điều chỉnh nó theo yêu cầu cụ thể của bạn. Aspose.Words for .NET cung cấp khả năng so sánh tài liệu mạnh mẽ, giúp dễ dàng xác định sự khác biệt giữa các tài liệu trong khi bỏ qua một số thành phần nhất định nếu cần.
+Và bạn có nó rồi đấy! Bạn đã so sánh thành công hai tài liệu Word bằng Aspose.Words cho .NET. Quá trình này có thể là cứu cánh thực sự khi bạn đang làm việc trong các dự án lớn và cần đảm bảo tính nhất quán và chính xác. Hãy nhớ rằng điều quan trọng là phải thiết lập các tùy chọn so sánh một cách cẩn thận để điều chỉnh việc so sánh phù hợp với nhu cầu cụ thể của bạn. Chúc mừng mã hóa!
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Mục đích của việc sử dụng Tùy chọn so sánh trong Aspose.Words cho .NET là gì?
+### Tôi có thể so sánh nhiều hơn hai tài liệu cùng một lúc không?  
+Aspose.Words for .NET so sánh hai tài liệu cùng một lúc. Để so sánh nhiều tài liệu, bạn có thể thực hiện theo từng cặp.
 
-Đáp: Các tùy chọn so sánh trong Aspose.Words for .NET cho phép bạn tùy chỉnh quá trình so sánh khi so sánh hai tài liệu. Với các tùy chọn này, bạn có thể chỉ định những thành phần nào cần bỏ qua trong quá trình so sánh, chẳng hạn như thay đổi định dạng, đầu trang và chân trang, bảng, trường, nhận xét, hộp văn bản và chú thích cuối trang.
+### Làm cách nào để bỏ qua những thay đổi trong hình ảnh?  
+ Bạn có thể cấu hình`CompareOptions` để bỏ qua các yếu tố khác nhau, nhưng việc bỏ qua hình ảnh đặc biệt yêu cầu xử lý tùy chỉnh.
 
-#### Câu hỏi: Làm cách nào để sử dụng Tùy chọn so sánh trong Aspose.Words cho .NET?
+### Tôi có thể nhận được báo cáo chi tiết về sự khác biệt không?  
+Có, Aspose.Words cung cấp thông tin sửa đổi chi tiết mà bạn có thể truy cập theo chương trình.
 
-Trả lời: Để sử dụng Tùy chọn so sánh trong Aspose.Words cho .NET, hãy làm theo các bước sau:
-1. Tải hai tài liệu mà bạn muốn so sánh vào các đối tượng Tài liệu riêng biệt.
-2.  Sử dụng`Clone()` phương pháp tạo bản sao của tài liệu gốc.
-3.  Tạo một`CompareOptions` đối tượng và thiết lập các thuộc tính của nó để tùy chỉnh quá trình so sánh. Bạn có thể chỉ định những yếu tố nào cần bỏ qua trong quá trình so sánh.
-4.  Sử dụng`Compare()` phương pháp trên một trong các tài liệu và chuyển tài liệu kia và`CompareOptions` đối tượng làm tham số. Phương pháp này sẽ so sánh các tài liệu dựa trên các tùy chọn được chỉ định và đánh dấu những thay đổi trong tài liệu gốc.
-5.  Kiểm tra`Revisions` thuộc tính của tài liệu gốc. Nếu số lượng bằng 0, điều đó có nghĩa là các tài liệu giống hệt nhau, có tính đến các tùy chọn đã chỉ định.
+### Có thể so sánh các tài liệu được bảo vệ bằng mật khẩu?  
+Có, nhưng trước tiên bạn cần mở khóa tài liệu bằng mật khẩu thích hợp.
 
-#### Hỏi: Các tùy chọn phổ biến có sẵn trong CompareOptions là gì?
-
-Đáp: Các tùy chọn phổ biến có sẵn trong CompareOptions bao gồm:
-- `IgnoreFormatting`: Bỏ qua những thay đổi về định dạng.
-- `IgnoreHeadersAndFooters`: Bỏ qua những thay đổi ở đầu trang và chân trang.
-- `IgnoreCaseChanges`: Bỏ qua các thay đổi về kiểu chữ (chữ hoa/chữ thường).
-- `IgnoreTables`: Bỏ qua những thay đổi trong bảng.
-- `IgnoreFields`: Bỏ qua những thay đổi trong các trường.
-- `IgnoreComments`: Bỏ qua những thay đổi trong nhận xét.
-- `IgnoreTextboxes`Bỏ qua những thay đổi trong hộp văn bản.
-- `IgnoreFootnotes`: Bỏ qua những thay đổi ở chú thích cuối trang.
-
-#### Câu hỏi: Tôi có thể sử dụng các tùy chọn tùy chỉnh cho các thành phần cụ thể trong quá trình so sánh tài liệu không?
-
- Đáp: Có, bạn có thể sử dụng các tùy chọn tùy chỉnh cho các thành phần cụ thể trong quá trình so sánh tài liệu. Bằng cách thiết lập các thuộc tính của`CompareOptions` đối tượng tương ứng, bạn có thể chọn yếu tố nào cần bỏ qua và yếu tố nào cần xem xét trong quá trình so sánh.
+### Tôi có thể tìm thêm ví dụ và tài liệu ở đâu?  
+ Bạn có thể tìm thêm ví dụ và tài liệu chi tiết về[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/).

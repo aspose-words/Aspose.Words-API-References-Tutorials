@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Passaggio 5: salvataggio del documento
 
- Dopo aver inserito il campo del modulo di immissione del testo, salvare il documento nella posizione desiderata utilizzando il file`Save` metodo. Assicurati di fornire il percorso file appropriato:
+ Dopo aver inserito il campo del modulo di immissione del testo, salvare il documento nella posizione desiderata utilizzando il file`Save`metodo. Assicurati di fornire il percorso file appropriato:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ In questo tutorial, abbiamo imparato come spostare un nodo in un documento Word 
 
 #### D: Come posso abilitare il monitoraggio delle revisioni in un documento Aspose.Words per .NET?
 
-R: Per abilitare il monitoraggio delle revisioni in un documento Aspose.Words per .NET, è possibile utilizzare il file`StartTrackRevisions` metodo del`Document` oggetto. Questo metodo prende come parametri il nome dell'autore delle revisioni e la data di inizio del follow-up delle revisioni.
+ R: Per abilitare il monitoraggio delle revisioni in un documento Aspose.Words per .NET, è possibile utilizzare il file`StartTrackRevisions` metodo del`Document` oggetto. Questo metodo prende come parametri il nome dell'autore delle revisioni e la data di inizio del follow-up delle revisioni.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

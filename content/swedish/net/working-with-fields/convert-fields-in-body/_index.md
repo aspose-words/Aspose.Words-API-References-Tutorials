@@ -65,7 +65,7 @@ Spara det ändrade dokumentet efter att ha konverterat fälten:
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
- Justera`"WorkingWithFields.ConvertFieldsInBody.docx"` för att ange önskad sökväg för utdatafilen.
+ Justera`"WorkingWithFields.ConvertFieldsInBody.docx"` för att ange den önskade sökvägen för utdatafilen.
 
 ## Slutsats
 
@@ -83,7 +83,7 @@ Aspose.Words stöder olika fälttyper som DATE, PAGE, MERGEFIELD och mer, vilket
 Ja, Aspose.Words för .NET kan konvertera och manipulera fält över format som DOCX, DOC, RTF och mer sömlöst.
 
 ### Var kan jag hitta omfattande dokumentation för Aspose.Words för .NET?
- Detaljerad dokumentation och API-referenser finns tillgängliga.[här](https://reference.aspose.com/words/net/).
+ Detaljerad dokumentation och API-referenser finns tillgängliga[här](https://reference.aspose.com/words/net/).
 
 ### Finns det en testversion tillgänglig för Aspose.Words för .NET?
  Ja, du kan ladda ner en gratis testversion från[här](https://releases.aspose.com/).

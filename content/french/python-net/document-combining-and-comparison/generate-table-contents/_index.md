@@ -14,7 +14,7 @@ Une table des matières fournit un aperçu de la structure d'un document, permet
 
 ## Configuration de l'environnement
 
- Avant de commencer, assurez-vous que Aspose.Words pour Python est installé. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/python/). De plus, assurez-vous d'avoir un exemple de document Word que vous souhaitez améliorer avec une table des matières.
+ Avant de commencer, assurez-vous que Aspose.Words pour Python est installé. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/python/). De plus, assurez-vous de disposer d'un exemple de document Word que vous souhaitez améliorer avec une table des matières.
 
 ## Chargement d'un document
 
@@ -136,7 +136,7 @@ Pour définir des sous-sous-titres, utilisez les styles de paragraphe approprié
 
 ### Puis-je modifier la taille de la police des entrées de la table des matières ?
 
-Absolument! Personnalisez le style « Entrées de la table des matières » en ajustant sa taille de police et d'autres attributs de formatage pour qu'ils correspondent à l'esthétique de votre document.
+Absolument! Personnalisez le style « Entrée de la table des matières » en ajustant sa taille de police et d'autres attributs de formatage pour qu'ils correspondent à l'esthétique de votre document.
 
 ### Est-il possible de générer une table des matières pour des documents existants ?
 

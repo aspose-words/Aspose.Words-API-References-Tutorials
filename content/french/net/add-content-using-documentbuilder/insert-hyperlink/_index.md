@@ -41,7 +41,7 @@ Pour commencer, lancez Visual Studio et créez un nouveau projet C#. Vous pouvez
 
 Installer Aspose.Words pour .NET
 
-Ensuite, vous devrez installer la bibliothèque Aspose.Words for .NET. Vous pouvez le faire via NuGet Package Manager. Faites simplement un clic droit sur votre projet dans l'Explorateur de solutions, sélectionnez « Gérer les packages NuGet », recherchez « Apose.Words » et installez-le.
+Ensuite, vous devrez installer la bibliothèque Aspose.Words for .NET. Vous pouvez le faire via NuGet Package Manager. Faites simplement un clic droit sur votre projet dans l'Explorateur de solutions, sélectionnez « Gérer les packages NuGet », recherchez « Aspose.Words » et installez-le.
 
 ## Étape 2 : initialiser le document
 
@@ -92,7 +92,7 @@ Maintenant, insérons le lien hypertexte réel. C'est ici que la magie opère !
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", faux);
 ```
 
-Dans cette ligne, nous insérons un lien hypertexte avec le texte affiché « Apose Website » et l'URL « http://www.aspose.com ».
+Dans cette ligne, nous insérons un lien hypertexte avec le texte affiché « Aspose Website » et l'URL « http://www.aspose.com ».
 
 ## Étape 6 : Effacer le formatage
 

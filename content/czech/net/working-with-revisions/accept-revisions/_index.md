@@ -1,6 +1,6 @@
 ---
-title: Přijmout recenze
-linktitle: Přijmout recenze
+title: Přijmout revize
+linktitle: Přijmout revize
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se přijímat revize dokumentu aplikace Word pomocí Aspose.Words for .NET
 type: docs
@@ -74,7 +74,7 @@ doc.StopTrackRevisions();
 ```
 ## Krok 6: Uložení dokumentu
 
- Po vložení pole formuláře pro zadání textu uložte dokument na požadované místo pomocí`Save` metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
+ Po vložení textového pole formuláře uložte dokument na požadované místo pomocí`Save`metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Smazaný odstavec revize je odstraněn, jakmile přijmeme změny.
+// Jakmile přijmeme změny, odstavec pro odstranění revize je odstraněn.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

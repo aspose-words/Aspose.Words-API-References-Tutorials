@@ -25,7 +25,7 @@ No geral, os tutoriais de mesclagem de documentos usando Aspose.Words para Java 
 ## Tutoriais de mesclagem de documentos
 
 ### [Usando mesclagem de documentos](./using-document-merging/)
-Aprenda a mesclar documentos do Word perfeitamente usando Aspose.Words for Java. Combine, formate e lide com conflitos de maneira eficiente em apenas algumas etapas. Comece agora!
+Aprenda a mesclar documentos do Word perfeitamente usando Aspose.Words para Java. Combine, formate e lide com conflitos de maneira eficiente em apenas algumas etapas. Comece agora!
 ### [Combinando e clonando documentos](./combining-cloning-documents/)
 Aprenda como combinar e clonar documentos sem esforço em Java usando Aspose.Words. Este guia passo a passo cobre tudo que você precisa saber.
 ### [Unindo e Anexando Documentos](./joining-appending-documents/)

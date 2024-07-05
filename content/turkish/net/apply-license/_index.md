@@ -13,6 +13,6 @@ Bu sayfada Aspose.Words for .NET kullanılarak projelerde lisansın nasıl uygul
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Lisansı Dosyadan Uygula](./apply-license-from-file/) | Aspose.Words for .NET kullanarak bir dosyadan nasıl lisans uygulayacağınızı öğrenin.|
-| [Lisansı Akıştan Uygula](./apply-license-from-stream/) | Aspose.Words for .NET kullanarak bir akıştan nasıl lisans uygulayacağınızı öğrenin.|
-| [Ölçülü Lisansı Uygula](./apply-metered-license/) | Aspose.Words for .NET'i kullanarak ölçülü lisansı nasıl uygulayacağınızı öğrenin. |
+| [Lisansı Dosyadan Uygula](./apply-license-from-file/) | Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET'teki bir dosyadan nasıl lisans uygulayacağınızı öğrenin. Kitaplığınızın tüm potansiyelini zahmetsizce ortaya çıkarın. |
+| [Lisansı Akıştan Uygula](./apply-license-from-stream/) | Bu adım adım kılavuzla Aspose.Words for .NET'teki bir akıştan nasıl lisans uygulayacağınızı öğrenin. Aspose.Words'ün tüm potansiyelini ortaya çıkarın. |
+| [Ölçülü Lisansı Uygula](./apply-metered-license/) | Adım adım kılavuzumuzla Aspose.Words for .NET'te ölçülü lisansın nasıl uygulanacağını öğrenin. Esnek, uygun maliyetli lisanslama basitleştirildi. |

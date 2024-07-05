@@ -117,7 +117,7 @@ options.setFontFamily("Times New Roman");
 
 ### Est-il possible de faire pivoter un filigrane ?
 
- Oui, vous pouvez faire pivoter un filigrane en définissant le`setRotation` propriété dans le`Shape` objet. Les valeurs positives font pivoter le filigrane dans le sens des aiguilles d'une montre et les valeurs négatives le font tourner dans le sens inverse des aiguilles d'une montre.
+ Oui, vous pouvez faire pivoter un filigrane en définissant le`setRotation` propriété dans le`Shape` objet. Les valeurs positives font pivoter le filigrane dans le sens des aiguilles d’une montre et les valeurs négatives le font pivoter dans le sens inverse des aiguilles d’une montre.
 
 ### Comment puis-je rendre un filigrane semi-transparent ?
 

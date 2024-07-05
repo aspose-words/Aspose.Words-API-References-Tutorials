@@ -53,7 +53,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
- Här initierar vi två`Document` föremål.`srcDoc` representerar källdokumentet och`dstDoc` representerar måldokumentet.
+ Här initierar vi två`Document` föremål.`srcDoc` representerar källdokumentet, och`dstDoc` representerar måldokumentet.
 
 ## Steg 3: Bifoga källdokumentet till destinationsdokumentet
 
@@ -91,7 +91,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ### 3. Hur säkerställer jag att formateringen bevaras när jag lägger till dokument?
 
- Använd`ImportFormatMode.KeepSourceFormatting` parametrar i`AppendDocument` metod för att bevara formateringen av källdokumentet.
+ Använd`ImportFormatMode.KeepSourceFormatting` parametern i`AppendDocument` metod för att bevara formateringen av källdokumentet.
 
 ### 4. Hur får jag support för Aspose.Words för .NET?
 

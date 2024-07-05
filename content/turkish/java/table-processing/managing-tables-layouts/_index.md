@@ -30,7 +30,7 @@ Tabloları yönetmenin ilk adımı onları oluşturmaktır. Aspose.Words bunu in
 // Yeni bir Belge oluştur
 Document doc = new Document();
 
-// 3 satır ve 4 sütundan oluşan bir tablo oluşturun.
+// 3 satır ve 4 sütundan oluşan bir tablo oluşturun
 Table table = doc.getBuilder().startTable();
 for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 4; j++) {

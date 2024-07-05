@@ -1,6 +1,6 @@
 ---
-title: CloneSection
-linktitle: CloneSection
+title: ส่วนโคลน
+linktitle: ส่วนโคลน
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: เรียนรู้วิธีโคลนส่วนในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
 type: docs
@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสารและคัดลอกส่วน
- ต่อไปเราจะโหลดเอกสาร Word ลงในอินสแตนซ์ของ`Document` ชั้นเรียน จากนั้นเราจะใช้`Clone` วิธีการโคลนส่วนแรกของเอกสาร
+ ต่อไปเราจะโหลดเอกสาร Word ลงในอินสแตนซ์ของ`Document` ระดับ. จากนั้นเราจะใช้`Clone` วิธีการโคลนส่วนแรกของเอกสาร
 
 ```csharp
 // โหลดเอกสาร

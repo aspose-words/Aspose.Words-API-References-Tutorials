@@ -57,7 +57,7 @@ Dans ce didacticiel, nous avons vu comment utiliser les options de chargement av
 
 #### Q : Comment puis-je spécifier une police par défaut lors du chargement d'un document dans Aspose.Words ?
 
- R : Pour spécifier une police par défaut lors du chargement d'un document dans Aspose.Words, vous pouvez utiliser l'option`LoadOptions` classe et définir le`DefaultFontName` propriété au nom de la police souhaitée.
+ : Pour spécifier une police par défaut lors du chargement d'un document dans Aspose.Words, vous pouvez utiliser l'option`LoadOptions` classe et définir le`DefaultFontName` propriété au nom de la police souhaitée.
 
 #### Q : Quels autres paramètres de police puis-je spécifier avec les options de chargement dans Aspose.Words ?
 
@@ -65,8 +65,8 @@ Dans ce didacticiel, nous avons vu comment utiliser les options de chargement av
 
 #### Q : Que se passe-t-il si la police par défaut spécifiée n'est pas disponible lors du chargement du document ?
 
-: Si la police par défaut spécifiée n'est pas disponible lorsque le document est chargé dans Aspose.Words, une police de remplacement sera utilisée pour afficher le texte dans le document. Cela peut entraîner une légère différence d’apparence par rapport à la police d’origine.
+R : Si la police par défaut spécifiée n'est pas disponible lorsque le document est chargé dans Aspose.Words, une police de remplacement sera utilisée pour afficher le texte dans le document. Cela peut entraîner une légère différence d’apparence par rapport à la police d’origine.
 
 #### Q : Puis-je spécifier des paramètres de police différents pour chaque document téléchargé ?
 
- R : Oui, vous pouvez spécifier différents paramètres de police pour chaque document chargé en utilisant des instances distinctes du`LoadOptions` classe et en définissant les paramètres de police souhaités pour chaque instance. Cela vous permet de personnaliser indépendamment l’apparence de la police de chaque document.
+ R : Oui, vous pouvez spécifier différents paramètres de police pour chaque document chargé en utilisant des instances distinctes du`LoadOptions`classe et en définissant les paramètres de police souhaités pour chaque instance. Cela vous permet de personnaliser indépendamment l’apparence de la police de chaque document.

@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Vložení odkazu
 
- Můžeme vložit odkaz pomocí`InsertHyperlink` metoda generátoru dokumentů. Musíme zadat text odkazu, zde „Apose“, a také cílovou adresu URL.
+ Můžeme vložit odkaz pomocí`InsertHyperlink` metoda generátoru dokumentů. Musíme zadat text odkazu, zde „Aspose“, a také cílovou adresu URL.
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", nepravda);

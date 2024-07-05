@@ -1,27 +1,27 @@
 ---
-title: サフィックスなしで置換を取得
-linktitle: サフィックスなしで置換を取得
+title: 接尾辞なしで置換を取得する
+linktitle: 接尾辞なしで置換を取得する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET でサフィックスなしのフォント置換を管理する方法を学習します。ステップバイステップのガイドに従って、ドキュメントを常に完璧に見せることができます。
+description: Aspose.Words for .NET でサフィックスなしでフォントの置換を管理する方法を学びます。ステップ バイ ステップ ガイドに従って、ドキュメントが常に完璧に表示されるようにしてください。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-Aspose.Words for .NET を使用したフォント置換の管理に関するこの包括的なガイドへようこそ。文書内でフォントが正しく表示されないことに悩んだことがあるなら、ここが正しい場所です。このチュートリアルでは、サフィックスのないフォント置換を効率的に処理するための段階的なプロセスを説明します。始めましょう！
+Aspose.Words for .NET を使用してフォント置換を管理する包括的なガイドへようこそ。ドキュメントにフォントが正しく表示されないことに悩んだことがあるなら、このガイドはまさにうってつけです。このチュートリアルでは、サフィックスなしでフォント置換を効率的に処理するための手順を段階的に説明します。さあ、始めましょう!
 
 ## 前提条件
 
-チュートリアルに入る前に、次のものが揃っていることを確認してください。
+チュートリアルに進む前に、次のものを用意してください。
 
-- C# の基本知識: C# プログラミングを理解すると、手順に従って実装することが容易になります。
--  Aspose.Words for .NET ライブラリ: からライブラリをダウンロードしてインストールします。[ダウンロードリンク](https://releases.aspose.com/words/net/).
-- 開発環境: Visual Studio などの開発環境をセットアップして、コードを作成して実行します。
-- サンプルドキュメント: サンプルドキュメント (例:`Rendering.docx`) このチュートリアルで使用します。
+- C# の基礎知識: C# プログラミングを理解すると、手順を理解して実装しやすくなります。
+-  Aspose.Words for .NETライブラリ: ライブラリを以下のサイトからダウンロードしてインストールします。[ダウンロードリンク](https://releases.aspose.com/words/net/).
+- 開発環境: コードを記述して実行するために、Visual Studio などの開発環境をセットアップします。
+- サンプル文書: サンプル文書（例:`Rendering.docx`) を使用します。
 
 ## 名前空間のインポート
 
-まず、Aspose.Words が提供するクラスとメソッドにアクセスするために必要な名前空間をインポートする必要があります。
+まず、Aspose.Words によって提供されるクラスとメソッドにアクセスするために必要な名前空間をインポートする必要があります。
 
 ```csharp
 using Aspose.Words;
@@ -30,18 +30,18 @@ using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
-## ステップ 1: ドキュメント ディレクトリを定義する
+## ステップ1: ドキュメントディレクトリを定義する
 
-まず、ドキュメントが存在するディレクトリを指定します。これは、作業したいドキュメントを見つけるのに役立ちます。
+まず、ドキュメントが保存されているディレクトリを指定します。これにより、作業するドキュメントを見つけやすくなります。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ 2: 置換警告ハンドラーを設定する
+## ステップ2: 置換警告ハンドラを設定する
 
-次に、ドキュメント処理中にフォントの置換が発生するたびに通知する警告ハンドラーを設定する必要があります。これは、フォントの問題を検出して処理するために非常に重要です。
+次に、ドキュメント処理中にフォントの置換が発生するたびに通知する警告ハンドラーを設定する必要があります。これは、フォントの問題を検出して処理するために重要です。
 
 ```csharp
 DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
@@ -49,9 +49,9 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.WarningCallback = substitutionWarningHandler;
 ```
 
-## ステップ 3: カスタム フォント ソースを追加する
+## ステップ3: カスタムフォントソースを追加する
 
-この手順では、Aspose.Words が正しいフォントを見つけて使用できるようにするために、カスタム フォント ソースを追加します。これは、特定のフォントをカスタム ディレクトリに保存している場合に特に便利です。
+この手順では、カスタム フォント ソースを追加して、Aspose.Words が正しいフォントを見つけて使用できるようにします。これは、カスタム ディレクトリに特定のフォントが保存されている場合に特に便利です。
 
 ```csharp
 List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
@@ -64,10 +64,10 @@ FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
 ```
 
 このコードでは:
-- 現在のフォント ソースを取得し、新しいフォント ソースを追加します。`FolderFontSource`カスタム フォント ディレクトリを指します (`C:\\MyFonts\\`）。
-- 次に、この新しいリストでフォント ソースを更新します。
+- 現在のフォントソースを取得し、新しいフォントを追加します`FolderFontSource`カスタムフォントディレクトリ（`C:\\MyFonts\\`）。
+- 次に、この新しいリストを使用してフォント ソースを更新します。
 
-## ステップ 4: ドキュメントを保存する
+## ステップ4: ドキュメントを保存する
 
 最後に、フォント置換設定を適用した後、ドキュメントを保存します。このチュートリアルでは、PDF として保存します。
 
@@ -75,7 +75,7 @@ FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
 doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 ```
 
-## ステップ 5: 警告ハンドラー クラスを作成する
+## ステップ5: 警告ハンドラクラスを作成する
 
 警告を効果的に処理するには、`IWarningCallback`インターフェース。このクラスは、フォント置換の警告をキャプチャしてログに記録します。
 
@@ -93,31 +93,31 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 このクラスでは:
-- の`Warning`このメソッドは、フォントの置換に関連する警告をキャプチャします。
-- の`FontWarnings`コレクションには、さらなる検査またはログ記録のためにこれらの警告が保存されます。
+- の`Warning`メソッドは、フォントの置換に関連する警告をキャプチャします。
+- の`FontWarnings`コレクションには、さらに検査したりログに記録したりするためにこれらの警告が保存されます。
 
 ## 結論
 
-これで、Aspose.Words for .NET を使用してサフィックスなしのフォント置換を処理するプロセスをマスターできました。この知識により、システムで使用可能なフォントに関係なく、ドキュメントが意図した外観を維持できるようになります。 Aspose.Words の機能を最大限に活用するには、さまざまな設定とソースを試し続けてください。
+これで、Aspose.Words for .NET を使用してサフィックスなしでフォントの置換を処理するプロセスを習得できました。この知識があれば、システムで使用できるフォントに関係なく、ドキュメントが意図した外観を維持できるようになります。さまざまな設定とソースを試して、Aspose.Words のパワーを最大限に活用してください。
 
 ## よくある質問
 
 ### Q1: 複数のカスタム ディレクトリのフォントを使用するにはどうすればよいですか?
 
-複数追加することもできます`FolderFontSource`インスタンスへの`fontSources`フォント ソースをリストし、それに応じて更新します。
+複数追加できます`FolderFontSource`インスタンスに`fontSources`それに応じてフォント ソースをリストし、更新します。
 
-### Q2: Aspose.Words for .NET の無料トライアルはどこでダウンロードできますか?
+### Q2: Aspose.Words for .NET の無料試用版はどこからダウンロードできますか?
 
-無料トライアル版は次からダウンロードできます。[Asposeの無料トライアルページ](https://releases.aspose.com/).
+無料トライアルは以下からダウンロードできます。[Aspose 無料トライアルページ](https://releases.aspose.com/).
 
-###  Q3: を使用して複数の種類の警告を処理できますか?`IWarningCallback`?
+###  Q3: 複数の種類の警告を処理できますか？`IWarningCallback`?
 
-はい`IWarningCallback`インターフェイスを使用すると、フォントの置換だけでなく、さまざまな種類の警告を処理できます。
+はい`IWarningCallback`インターフェースを使用すると、フォントの置換だけでなく、さまざまな種類の警告を処理できます。
 
 ### Q4: Aspose.Words のサポートはどこで受けられますか?
 
-サポートについては、次のサイトにアクセスしてください。[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8).
+サポートについては、[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8).
 
-### Q5: 一時ライセンスを購入することはできますか?
+### Q5: 一時ライセンスを購入することは可能ですか？
 
-はい、次のサイトから一時ライセンスを取得できます。[一時ライセンスのページ](https://purchase.aspose.com/temporary-license/).
+はい、臨時免許証は取得できます。[一時ライセンスページ](https://purchase.aspose.com/temporary-license/).

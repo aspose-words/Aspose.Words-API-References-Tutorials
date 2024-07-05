@@ -29,7 +29,7 @@ Os tamanhos das fontes determinam o destaque visual do texto. O texto do título
 
 ### Estilos de fonte
 
-Os estilos de fonte adicionam ênfase ao texto. O texto em negrito indica importância, enquanto o texto em itálico geralmente indica uma definição ou termo estrangeiro. O sublinhado também pode destacar pontos-chave.
+Os estilos de fonte adicionam ênfase ao texto. O texto em negrito significa importância, enquanto o texto em itálico geralmente indica uma definição ou termo estrangeiro. O sublinhado também pode destacar pontos-chave.
 
 ## Cor e realce do texto
 

@@ -23,7 +23,7 @@ Dit is een uitgebreide bron voor het leren werken met velden in Word-documenten 
 | [Samenvoegveld invoegen met DOM](./insert-merge-field-using-dom/) | Leer hoe u aangepaste samenvoegvelden voor velden invoegt in uw Word-documenten met Aspose.Words voor .NET. |
 | [Voeg een samenvoegadresblokveld in met behulp van DOM](./insert-mail-merge-address-block-field-using-dom/) | Leer hoe u een adresblokveld voor samenvoegen kunt invoegen in uw Word-documenten met Aspose.Words voor .NET. |
 | [FieldIncludeText invoegen zonder Document Builder](./insert-field-include-text-without-document-builder/) | Leer hoe u een FieldIncludeText-veld invoegt in uw Word-documenten met Aspose.Words voor .NET. |
-| [Veld invoegen Geen](./insert-field-none/) | Leer hoe u documenten kunt maken met AUCUN in Word met Aspose.Words voor .NET. |
+| [Veld invoegen Geen](./insert-field-none/) | Leer hoe u een kampioen AUCUN in uw documenten kunt plaatsen met Aspose.Words voor .NET. |
 | [Veld invoegen](./insert-field/) | Leer hoe u een veld in uw Word-documenten kunt invoegen met Aspose.Words voor .NET. Personaliseer uw documenten met dynamische velden. |
 | [Veld invoegen met Field Builder](./insert-field-using-field-builder/) | Leer hoe u aangepaste velden in uw Word-documenten kunt invoegen met Aspose.Words voor .NET. |
 | [Auteurveld invoegen](./insert-author-field/) | Leer hoe u een AUTEUR-veld in uw Word-documenten invoegt met Aspose.Words voor .NET. Geef de naam van de auteur op om uw documenten te personaliseren. |

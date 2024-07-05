@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- det här steget skapar vi en ny`Document` objekt och tillhörande`DocumentBuilder` objekt.
+ det här steget skapar vi en ny`Document` objekt och en tillhörande`DocumentBuilder` objekt.
 
 ## Steg 3: Skapa och konfigurera den anpassade stilen
 

@@ -101,7 +101,7 @@ Aqui está o exemplo de código-fonte completo para demonstrar o uso da função
 
 ## Conclusão
 
-Neste artigo, exploramos o código-fonte C# para entender como usar a função Ignore Text Inside Fields em Aspose.Words for .NET. Seguimos um guia passo a passo para criar um documento, inserir um campo com texto dentro, usar a função Ignorar texto dentro dos campos, realizar operações de pesquisa e substituição por expressões regulares e exibir o documento modificado.
+Neste artigo, exploramos o código-fonte C# para entender como usar a função Ignore Text Inside Fields em Aspose.Words for .NET. Seguimos um passo a passo para criar um documento, inserir um campo com texto dentro, usar a função Ignorar texto dentro dos campos, realizar operações de pesquisa e substituição por expressões regulares e exibir o documento modificado.
 
 ### Perguntas frequentes
 

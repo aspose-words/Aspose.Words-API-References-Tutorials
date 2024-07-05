@@ -79,7 +79,7 @@ Boom! Hai appena creato un documento Word con un campo TC. Quanto è fantastico?
 
 ## Conclusione
 
- E il gioco è fatto! Abbiamo illustrato come inserire un campo TC in un documento Word utilizzando Aspose.Words per .NET. È piuttosto semplice, vero? Con queste competenze, ora puoi automatizzare e personalizzare i tuoi documenti Word come un professionista. Se hai domande o riscontri problemi, non esitare a consultare il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o contattarli[Forum di assistenza](https://forum.aspose.com/c/words/8). Buona programmazione!
+ E il gioco è fatto! Abbiamo illustrato come inserire un campo TC in un documento Word utilizzando Aspose.Words per .NET. È piuttosto semplice, vero? Con queste competenze, ora puoi automatizzare e personalizzare i tuoi documenti Word come un professionista. Se hai domande o riscontri problemi, non esitare a consultare il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o contattare il loro[Forum di assistenza](https://forum.aspose.com/c/words/8). Buona programmazione!
 
 ## Domande frequenti
 

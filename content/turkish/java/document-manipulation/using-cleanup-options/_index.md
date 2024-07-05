@@ -158,7 +158,7 @@ Aspose.Words for Java'daki temizleme seçenekleri, adres-mektup birleştirme iş
 
 ###  Ayarladığımda ne olur?`REMOVE_CONTAINING_FIELDS` option?
 
- ayarlamak`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` Bu seçenek, adres-mektup birleştirme işlemi sırasında, içerdiği paragraf da dahil olmak üzere birleştirme alanının tamamını belgeden kaldıracaktır. Bu, birleştirme alanlarını ve bunlarla ilişkili metinleri ortadan kaldırmak istediğinizde kullanışlıdır.
+ ayarlamak`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` seçeneği, adres-mektup birleştirme işlemi sırasında, içerdiği paragraf da dahil olmak üzere birleştirme alanının tamamını belgeden kaldıracaktır. Bu, birleştirme alanlarını ve bunlarla ilişkili metinleri ortadan kaldırmak istediğinizde kullanışlıdır.
 
 ### Kullanılmayan birleştirme alanlarını belgemden nasıl kaldırabilirim?
 

@@ -50,7 +50,7 @@ Bu kod, düzen modunu "Izgara" olarak ayarlar ve ardından satır başına karak
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Belge ızgara davranışını tanımlamaya izin veren bir bölüm için düzen modunu ayarlayın.
-	// Belge Izgarası sekmesinin MS Word'ün Sayfa Yapısı iletişim kutusunda görünür hale geldiğini unutmayın.
+	// MS Word'ün Sayfa Yapısı iletişim kutusunda Belge Izgarası sekmesinin görünür hale geldiğini unutmayın.
 	// Herhangi bir Asya dili düzenleme dili olarak tanımlanmışsa.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

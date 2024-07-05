@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Q: Aspose.Words for .NET에서 문서의 개정 그룹을 어떻게 찾아보나요?
 
- 답변:`Groups` 문서의 속성`Revisions` 개정 그룹 컬렉션을 가져오는 개체입니다. 그런 다음 루프를 사용하여 각 검토 그룹을 반복할 수 있습니다.
+ 답변:`Groups` 문서의 속성`Revisions`개정 그룹 컬렉션을 가져오는 개체입니다. 그런 다음 루프를 사용하여 각 검토 그룹을 반복할 수 있습니다.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### Q: Aspose.Words for .NET에서 개정 그룹의 개정 유형을 얻는 방법은 무엇입니까?
 
- 답변:`RevisionType` 의 재산`RevisionGroup`그룹의 개정 유형을 가져오는 개체입니다.
+ 답변:`RevisionType` 의 재산`RevisionGroup` 그룹의 개정 유형을 가져오는 개체입니다.
 
 ```csharp
 string revisionType = group.RevisionType;

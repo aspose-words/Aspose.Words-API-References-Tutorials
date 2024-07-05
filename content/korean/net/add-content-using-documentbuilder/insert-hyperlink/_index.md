@@ -17,7 +17,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-hyperlink/
 코드를 살펴보기 전에 준비해야 할 몇 가지 사항이 있습니다.
 
 1. Visual Studio: 컴퓨터에 Visual Studio가 설치되어 있는지 확인하세요. 아직 없으시다면, 다음에서 다운로드하실 수 있습니다.[여기](https://visualstudio.microsoft.com/).
-2.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 필요합니다. 에서 받으실 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/) . 아직 구매할 준비가 되지 않았다면 다음을 이용하세요.[무료 시험판](https://releases.aspose.com/) 또는 요청[임시 면허증](https://purchase.aspose.com/temporary-license/).
+2.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 필요합니다. 에서 받으실 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/) . 아직 구매할 준비가 되지 않았다면 다음을 이용하세요.[무료 시험판](https://releases.aspose.com/) 또는 요청[임시면허](https://purchase.aspose.com/temporary-license/).
 3. C#에 대한 기본 지식: C# 프로그래밍에 조금이라도 익숙해지면 큰 도움이 됩니다. C#을 처음 사용하는 경우에도 걱정하지 마세요. 이 튜토리얼은 모든 단계를 안내합니다.
 
 ## 네임스페이스 가져오기
@@ -41,7 +41,7 @@ using Aspose.Words.Tables;
 
 .NET용 Aspose.Words 설치
 
-다음으로 Aspose.Words for .NET 라이브러리를 설치해야 합니다. NuGet 패키지 관리자를 통해 이 작업을 수행할 수 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 "NuGet 패키지 관리"를 선택한 다음 "Apose.Words"를 검색하고 설치하면 됩니다.
+다음으로 Aspose.Words for .NET 라이브러리를 설치해야 합니다. NuGet 패키지 관리자를 통해 이 작업을 수행할 수 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 "NuGet 패키지 관리"를 선택한 다음 "Aspose.Words"를 검색하고 설치하면 됩니다.
 
 ## 2단계: 문서 초기화
 
@@ -92,7 +92,7 @@ builder.Font.Underline = Underline.Single;
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", 거짓);
 ```
 
-이 줄에는 표시 텍스트 "Apose Website"와 URL "http://www.aspose.com"이 포함된 하이퍼링크를 삽입합니다.
+이 줄에는 표시 텍스트 "Aspose Website"와 URL "http://www.aspose.com"이 포함된 하이퍼링크를 삽입합니다.
 
 ## 6단계: 서식 지우기
 
@@ -139,7 +139,7 @@ Aspose는 라이브러리를 평가하는 데 사용할 수 있는 무료 평가
 
 ### .NET용 Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
 
- 다음에서 포괄적인 문서를 찾을 수 있습니다.[Aspose 웹 사이트](https://reference.aspose.com/words/net/).
+ 다음에서 포괄적인 문서를 찾을 수 있습니다.[Aspose 웹사이트](https://reference.aspose.com/words/net/).
 
 ### .NET용 Aspose.Words를 사용하여 Word 문서에 다른 유형의 콘텐츠를 추가할 수 있나요?
 

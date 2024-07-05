@@ -23,4 +23,4 @@ Az Aspose.Words for .NET dokumentumvédelmi oktatóanyaga gyakorlati példákon 
 | [Korlátlan szakasz a Word dokumentumban](./unrestricted-section/) | Ismerje meg, hogyan határozhat meg korlátlan szakaszokat egy Word-dokumentumban az Aspose.Words for .NET segítségével. |
 | [Védelem típusának lekérése Word dokumentumban](./get-protection-type/) | Ismerje meg, hogyan használhatja az Aspose.Words for .NET védelmi típusát a Word dokumentumban a dokumentum védelmi típusának meghatározására. |
 | [Csak olvasási védelem a Word dokumentumban](./read-only-protection/) | Ismerje meg, hogyan védheti meg írásvédett Word-dokumentumait az Aspose.Words for .NET segítségével. |
-| [Távolítsa el a Csak olvasható korlátozást](./remove-read-only-restriction/) | Ismerje meg, hogyan távolíthatja el a csak olvasható korlátozást egy Word-dokumentumból az Aspose.Words for .NET segítségével. |
+| [Távolítsa el a Csak olvasási korlátozást](./remove-read-only-restriction/) | Ismerje meg, hogyan távolíthatja el a csak olvasható korlátozást egy Word-dokumentumból az Aspose.Words for .NET segítségével. |

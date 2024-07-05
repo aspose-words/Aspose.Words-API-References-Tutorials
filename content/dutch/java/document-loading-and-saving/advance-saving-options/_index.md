@@ -42,7 +42,7 @@ doc.save("Your Directory Path" + "EncryptedDocument.docx", saveOptions);
 
 ## Kleine metabestanden niet comprimeren
 
-Metabestanden zijn essentieel in Word-documenten, maar het is misschien niet verstandig om kleine bestanden te comprimeren. Hier ziet u hoe u dit kunt bereiken:
+Metabestanden zijn essentieel in Word-documenten, maar het is misschien niet verstandig om kleine bestanden te comprimeren. Hier leest u hoe u dit kunt bereiken:
 
 ```java
 @Test
@@ -56,7 +56,7 @@ public void doNotCompressSmallMetafiles() throws Exception {
 }
 ```
 
-## Vermijd het opslaan van opsommingstekens
+## Het vermijden van het opslaan van opsommingstekens
 
 Opsommingstekens kunnen opvallend zijn, maar misschien wilt u ze uitsluiten. Hier is hoe:
 

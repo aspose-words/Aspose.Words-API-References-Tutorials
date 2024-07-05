@@ -57,7 +57,7 @@ No dude en utilizar este código en sus propios proyectos y modificarlo según s
 
 #### P: ¿Cómo puedo configurar el número de columnas para las notas al pie en Aspose.Words?
 
- R: Para configurar el número de columnas para las notas al pie en Aspose.Words, debe utilizar el`FootnoteOptions` clase y el`ColumnsCount` propiedad. Puede establecer esta propiedad en cualquier número de columnas que desee.
+R: Para configurar el número de columnas para las notas al pie en Aspose.Words, debe utilizar el`FootnoteOptions` clase y el`ColumnsCount` propiedad. Puede establecer esta propiedad en cualquier número de columnas que desee.
 
 #### P: ¿Cuáles son los beneficios de configurar columnas de notas al pie?
 

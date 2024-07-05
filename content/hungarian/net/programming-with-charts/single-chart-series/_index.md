@@ -17,7 +17,7 @@ Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 - Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
 - Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot.
+## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
 
  Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
 
@@ -117,4 +117,4 @@ Egyetlen diagramsorozat testreszabása rugalmasságot biztosít bizonyos adatok 
  Egy diagramsorozat adatpontjainak markereinek testreszabásához az Aspose.Words for .NET használatával hozzá kell férnie a`Marker` tulajdona a`ChartSeries` objektumot, és módosítsa annak tulajdonságait, mint pl`Symbol` és`Size`. A jelölők a diagramon elhelyezett vizuális mutatók, amelyek az egyes adatpontokat ábrázolják. Számos beépített jelölőszimbólum közül választhat, és beállíthatja azok méretét, hogy kiemelje vagy megkülönböztethesse a sorozaton belüli egyes adatpontokat.
 
 #### Q5. Megfordíthatom a negatív értékek színeit egy diagramsorozatban?
- Igen, megfordíthatja a negatív értékek színeit egy diagramsorozatban az Aspose.Words for .NET használatával. Beállításával a`InvertIfNegative` tulajdona a`ChartSeries` tiltakozni`true`, a negatív értékű adatpontok színei megfordulnak, így vizuálisan elkülönülnek a pozitív értékektől. Ez a funkció hasznos lehet egy diagramsorozat pozitív és negatív értékeinek összehasonlításakor, egyértelmű különbséget biztosítva a kettő között.
+ Igen, megfordíthatja a negatív értékek színeit egy diagramsorozatban az Aspose.Words for .NET használatával. Beállításával a`InvertIfNegative` tulajdona a`ChartSeries` tiltakozni`true`, a negatív értékű adatpontok színei megfordulnak, így vizuálisan elkülönülnek a pozitív értékektől. Ez a funkció hasznos lehet egy diagramsorozat pozitív és negatív értékeinek összehasonlításakor, egyértelmű különbségtételt biztosítva a kettő között.

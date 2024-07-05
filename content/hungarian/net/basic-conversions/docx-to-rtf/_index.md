@@ -33,7 +33,7 @@ using Aspose.Words;
 Először is be kell állítania a fejlesztői környezetet. Hozzon létre egy új projektet az IDE-ben, és telepítse az Aspose.Words for .NET programot.
 
 1. Új projekt létrehozása: Nyissa meg a Visual Studio-t, és hozzon létre egy új C#-projektet.
-2. Az Aspose.Words for .NET telepítése: A NuGet Package Manageren keresztül telepítheti az „Apose.Words” kifejezésre keresve.
+2. Az Aspose.Words for .NET telepítése: A NuGet Package Manageren keresztül telepítheti az „Aspose.Words” kifejezésre keresve.
 
 ```sh
 Install-Package Aspose.Words
@@ -61,7 +61,7 @@ using (Stream stream = File.OpenRead(dataDir + "Document.docx"))
 
 ## 4. lépés: Alakítsa át a DOCX-et RTF-re
 
- dokumentum betöltése után ideje átalakítani RTF formátumba. A dokumentumot a`MemoryStream`.
+ A dokumentum betöltése után ideje átalakítani RTF formátumba. A dokumentumot a`MemoryStream`.
 
 ```csharp
 MemoryStream dstStream = new MemoryStream();

@@ -52,7 +52,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
 
 ## 5. lépés: Reguláris kifejezések használata kereséshez és cseréhez
 
-A dokumentumszöveg keresési műveleteinek és cseréjének végrehajtásához reguláris kifejezéseket használunk. Példánkban megkeressük az "e" betű összes előfordulását, és csillagra cseréljük őket* .NET-et fogunk használni`Regex` osztály ehhez:
+A dokumentumszöveg keresési műveleteinek és cseréjének végrehajtásához reguláris kifejezéseket használunk. Példánkban megkeressük az "e" betű összes előfordulását, és csillagra cseréljük őket* ". NET-et fogunk használni`Regex` osztály ehhez:
 
 ```csharp
 Regex regex = new Regex("e");

@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
 
-Dans ce didacticiel, nous vous guiderons à travers le code source C# pour exporter les informations aller-retour à partir d'un document avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'inclure des informations aller-retour dans le fichier HTML exporté, facilitant ainsi la récupération des modifications apportées au document d'origine.
+Dans ce didacticiel, nous vous guiderons à travers le code source C# pour exporter les informations aller-retour à partir d'un document avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'inclure des informations aller-retour dans le fichier HTML exporté, ce qui facilite la récupération des modifications apportées au document d'origine.
 
 ## Étape 1 : Configuration du projet
 

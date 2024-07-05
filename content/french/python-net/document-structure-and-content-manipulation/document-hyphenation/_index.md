@@ -98,7 +98,7 @@ Aspose.Words vous permet de justifier ou d'aligner votre texte en fonction de vo
 
 ## Gestion des veuves et des orphelins
 
-Les veuves (une seule ligne en haut d'une page) et les orphelines (une seule ligne en bas) peuvent perturber le flux de votre document. Utilisez des options pour prévenir ou contrôler les veuves et les orphelins.
+Les veuves (une seule ligne en haut d'une page) et les orphelins (une seule ligne en bas) peuvent perturber le flux de votre document. Utilisez des options pour prévenir ou contrôler les veuves et les orphelins.
 
 ## Conclusion
 

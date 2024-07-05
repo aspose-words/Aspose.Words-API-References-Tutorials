@@ -58,7 +58,7 @@ Pamiętaj, aby zastąpić „KATALOG TWOICH DOKUMENTÓW” katalogiem swoich dok
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy funkcję ochrony hasłem w Aspose.Words dla .NET, która pozwala chronić dokumenty programu Word za pomocą hasła. Postępując zgodnie z podanymi krokami, możesz łatwo zabezpieczyć swoje dokumenty hasłem i zapewnić ich poufność. Ochrona hasłem to skuteczny sposób na ograniczenie nieautoryzowanego dostępu do wrażliwych informacji. Aspose.Words dla .NET zapewnia niezawodny i prosty interfejs API do obsługi ochrony dokumentów i obsługuje różne inne funkcje zwiększające bezpieczeństwo i integralność dokumentów.
+W tym samouczku zbadaliśmy funkcję ochrony hasłem w Aspose.Words dla .NET, która pozwala chronić dokumenty programu Word hasłem. Postępując zgodnie z podanymi krokami, możesz łatwo zabezpieczyć swoje dokumenty hasłem i zapewnić ich poufność. Ochrona hasłem to skuteczny sposób na ograniczenie nieautoryzowanego dostępu do wrażliwych informacji. Aspose.Words dla .NET zapewnia niezawodny i prosty interfejs API do obsługi ochrony dokumentów i obsługuje różne inne funkcje zwiększające bezpieczeństwo i integralność dokumentów.
 
 ### Często zadawane pytania dotyczące ochrony hasłem w dokumencie Word
 
@@ -75,7 +75,7 @@ Odp.: Aby zastosować ochronę hasłem do dokumentu programu Word za pomocą Asp
 
 #### P: Jaki jest cel parametru ProtectionType w metodzie Protect?
 
- O:`ProtectionType` parametry w`Protect` Metoda Aspose.Words dla .NET pozwala określić rodzaj ochrony, która ma zostać zastosowana do dokumentu. W przypadku ochrony hasłem należy ustawić opcję`ProtectionType` Do`NoProtection` aby wskazać, że dokument jest chroniony hasłem.
+ O:`ProtectionType` parametr w`Protect` Metoda Aspose.Words dla .NET pozwala określić rodzaj ochrony, która ma zostać zastosowana do dokumentu. W przypadku ochrony hasłem należy ustawić opcję`ProtectionType` Do`NoProtection` aby wskazać, że dokument jest chroniony hasłem.
 
 #### P: Czy mogę usunąć ochronę hasłem z dokumentu Word przy użyciu Aspose.Words dla .NET?
 

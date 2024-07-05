@@ -18,7 +18,7 @@ Prima di immergerci nel tutorial, assicuriamoci di avere tutto ciò di cui hai b
 
 1. Conoscenza di base di C#: dovresti avere dimestichezza con la sintassi e i concetti di C#.
 2.  Aspose.Words per .NET: scaricalo[Qui](https://releases.aspose.com/words/net/) . Se non sei pronto per l'acquisto, puoi iniziare con a[prova gratuita](https://releases.aspose.com/).
-3. Visual Studio: funzionerà qualsiasi versione recente, ma è consigliabile utilizzare la versione più recente.
+3. Visual Studio: funzionerà qualsiasi versione recente, ma si consiglia di utilizzare la versione più recente.
 4. .NET Framework: assicurati che sia installato sul tuo computer.
 
 Pronti per iniziare? Grande! Iniziamo importando gli spazi dei nomi necessari.

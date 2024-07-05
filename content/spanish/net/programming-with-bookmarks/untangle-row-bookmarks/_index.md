@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 
-En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función Untangle Row Bookmarks en la biblioteca Aspose.Words para .NET. Esta función permite colocar los finales de los marcadores de líneas en la misma línea que el comienzo de los marcadores.
+En este artículo, exploraremos el código fuente de C# anterior para comprender cómo utilizar la función Untangle Row Bookmarks en la biblioteca Aspose.Words para .NET. Esta función permite colocar los finales de los marcadores de líneas en la misma línea que el comienzo de los marcadores.
 
 ## Requisitos previos
 

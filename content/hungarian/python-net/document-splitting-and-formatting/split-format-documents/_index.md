@@ -95,6 +95,6 @@ document.sections.remove(section_to_remove)
 ```
 
 ## Következtetés
-Az Aspose.Words for Python átfogó eszközkészletet biztosít a dokumentumok hatékony felosztásához és formázásához az Ön igényei szerint. Az oktatóanyagban ismertetett lépések követésével és a mellékelt forráskód-példák felhasználásával zökkenőmentesen kezelheti dokumentumait és professzionálisan bemutathatja azokat.
+Az Aspose.Words for Python átfogó eszközkészletet biztosít a dokumentumok hatékony felosztásához és formázásához az Ön igényei szerint. Az ebben az oktatóanyagban vázolt lépések követésével és a mellékelt forráskód-példák felhasználásával zökkenőmentesen kezelheti dokumentumait és professzionálisan bemutathatja azokat.
 
 Ebben az oktatóanyagban bemutattuk a dokumentumok felosztásának és formázásának alapjait, és megoldásokat kínáltunk a gyakori kérdésekre. Most Önön a sor, hogy felfedezze és kísérletezzen az Aspose.Words for Python képességeivel, hogy tovább javítsa dokumentumkezelési munkafolyamatát.

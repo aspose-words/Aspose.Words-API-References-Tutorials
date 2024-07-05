@@ -36,7 +36,7 @@ import com.aspose.words.FieldOptions;
 Document doc = new Document("Field sample - BARCODE.docx");
 ```
 
-## Streepjescodegenerator instellen
+## Stel Barcodegenerator in
 
  Stel een aangepaste barcodegenerator in met behulp van de`FieldOptions` klas. In dit voorbeeld gaan we ervan uit dat u een`CustomBarcodeGenerator`klasse om de streepjescode te genereren. Vervangen`CustomBarcodeGenerator` met uw werkelijke logica voor het genereren van streepjescodes:
 

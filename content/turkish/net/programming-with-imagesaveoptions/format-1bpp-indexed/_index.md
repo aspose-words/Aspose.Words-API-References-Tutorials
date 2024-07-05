@@ -1,6 +1,6 @@
 ---
-title: 1Bpp Dizine Alınmış Biçim
-linktitle: 1Bpp Dizine Alınmış Biçim
+title: 1Bpp Dizine Alınmış Format
+linktitle: 1Bpp Dizine Alınmış Format
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile indekslenmiş görüntüleri 1 bpp'lik formatta nasıl formatlayacağınızı öğrenin. Düşük renk derinliğine sahip görüntüler için eğitimi tamamlayın.
 type: docs

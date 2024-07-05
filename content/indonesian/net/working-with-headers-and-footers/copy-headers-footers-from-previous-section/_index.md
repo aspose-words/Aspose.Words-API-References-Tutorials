@@ -131,4 +131,4 @@ Ya, Anda bisa menyalin header dan footer di antara bagian mana pun dalam dokumen
 
 ### Q5: Apakah tersedia uji coba gratis untuk Aspose.Words untuk .NET?
 
-Ya, Anda dapat mengunduh uji coba gratis dari[Unduh Halaman](https://releases.aspose.com/).
+ Ya, Anda dapat mengunduh uji coba gratis dari[Unduh Halaman](https://releases.aspose.com/).

@@ -114,7 +114,7 @@ Het efficiënt beheren van woordafbreking en tekststroom is essentieel voor het 
 
 ### Kan ik handmatig bepalen waar een woord eindigt?
 
-Ja, u kunt handmatig een koppelteken invoegen op het gewenste breekpunt om woordafbrekingen te beheren.
+Ja, u kunt handmatig een koppelteken invoegen op het gewenste breekpunt om woordafbrekingen te bepalen.
 
 ### Hoe kan ik de regelafstand aanpassen voor een betere leesbaarheid?
 

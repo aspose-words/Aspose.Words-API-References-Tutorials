@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ขั้นตอนที่ 2: โหลดเอกสาร
 
- โหลดเอกสารของคุณลงใน Aspose.Words`Document` วัตถุ วัตถุ ซึ่งช่วยให้คุณสามารถจัดการเอกสารโดยทางโปรแกรมได้
+ โหลดเอกสารของคุณลงใน Aspose.Words`Document` วัตถุ. ซึ่งช่วยให้คุณสามารถจัดการเอกสารโดยทางโปรแกรมได้
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

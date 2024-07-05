@@ -17,7 +17,7 @@ Assurez-vous que vous disposez des conditions préalables suivantes :
 - Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
 - Un chemin de répertoire de document où le document de sortie sera enregistré.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique.
+## Étape 2 : Créez un nouveau document et insérez un graphique
 
  Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
 
@@ -107,7 +107,7 @@ Aspose.Words for .NET prend en charge une large gamme de codes de format numéri
 
 - `0` ou`#` - Affiche le nombre sans décimales.
 - `0.00` ou`#.00` - Affiche le nombre avec deux décimales.
-- `#,##0` Affiche le nombre avec des milliers de séparateurs.
+- `#,##0` Affiche le nombre avec des séparateurs de milliers.
 - `"€"0.00` - Affiche le numéro avec le symbole monétaire de l'euro et deux décimales.
 - `"%"0` - Affiche le nombre sous forme de pourcentage.
 

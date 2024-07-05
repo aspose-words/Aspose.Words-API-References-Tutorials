@@ -36,7 +36,7 @@ builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 
 ## Stap 4: Items aan de lijst toevoegen
 
- Nu kunnen we items toevoegen aan de lijst met opsommingstekens met behulp van de documentbuilder`Writeln` methode.
+ Nu kunnen we items toevoegen aan de lijst met opsommingstekens met behulp van de documentbouwer`Writeln` methode.
 
 ```csharp
 builder. Writen("Element 1");

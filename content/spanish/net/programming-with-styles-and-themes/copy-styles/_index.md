@@ -39,7 +39,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 
 En este último paso guardamos el documento fuente con los estilos copiados en un archivo.
 
-Ahora puede ejecutar el código fuente para copiar estilos de un documento de origen a un documento de destino. Esta función le permite mantener la coherencia del estilo en varios documentos, lo que facilita la gestión de la apariencia y el formato de sus documentos.
+Ahora puede ejecutar el código fuente para copiar estilos de un documento de origen a un documento de destino. Esta característica le permite mantener la coherencia del estilo en varios documentos, lo que facilita la gestión de la apariencia y el formato de sus documentos.
 
 ### Código fuente de muestra para copiar estilos usando Aspose.Words para .NET 
 

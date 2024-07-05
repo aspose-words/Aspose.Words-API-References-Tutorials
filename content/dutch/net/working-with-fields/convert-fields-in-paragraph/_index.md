@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 
 #### Vraag: Wat is een conversieveld in Aspose.Words?
 
-A: Een conversieveld in Aspose.Words is een type veld dat een waarde of expressie omzet naar een ander formaat of gegevenstype. U kunt een conversieveld bijvoorbeeld gebruiken om een datum naar een specifiek formaat, een getal naar tekst, te converteren of andere typen conversies uit te voeren.
+A: Een conversieveld in Aspose.Words is een type veld dat een waarde of expressie omzet naar een ander formaat of gegevenstype. U kunt een conversieveld bijvoorbeeld gebruiken om een datum naar een specifiek formaat, een getal naar tekst, te converteren of andere soorten conversies uit te voeren.
 
 #### Vraag: Hoe voeg ik een conversieveld in een alinea in met Aspose.Words?
 

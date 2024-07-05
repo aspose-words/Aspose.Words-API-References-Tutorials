@@ -1,6 +1,6 @@
 ---
-title: แทรกวัตถุแรกในเอกสาร Word เป็นไอคอน
-linktitle: แทรกวัตถุแรกในเอกสาร Word เป็นไอคอน
+title: แทรกวัตถุ Ole ในเอกสาร Word เป็นไอคอน
+linktitle: แทรกวัตถุ Ole ในเอกสาร Word เป็นไอคอน
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: เรียนรู้วิธีแทรกวัตถุ OLE ในเอกสาร word เป็นไอคอนด้วย Aspose.Words สำหรับ .NET
 type: docs
@@ -18,8 +18,8 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## ขั้นตอนที่ 2: สร้างเอกสารและตัวสร้างเอกสารใหม่
- ในขั้นตอนนี้ เราจะสร้างเอกสารใหม่โดยใช้`Document` คลาสและตัวสร้างเอกสารโดยใช้`DocumentBuilder` ชั้นเรียน
+## ขั้นตอนที่ 2: สร้างเอกสารและเครื่องมือสร้างเอกสารใหม่
+ ในขั้นตอนนี้ เราจะสร้างเอกสารใหม่โดยใช้`Document` คลาสและตัวสร้างเอกสารโดยใช้`DocumentBuilder` ระดับ.
 
 ```csharp
 Document doc = new Document();
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### ถาม จะสร้างเอกสารและตัวสร้างเอกสารใหม่ใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: คุณสามารถสร้างเอกสารใหม่โดยใช้ไฟล์`Document` คลาสและตัวสร้างเอกสารโดยใช้`DocumentBuilder` ชั้นเรียน นี่คือตัวอย่าง:
+ ตอบ: คุณสามารถสร้างเอกสารใหม่โดยใช้ไฟล์`Document` คลาสและตัวสร้างเอกสารโดยใช้`DocumentBuilder` ระดับ. นี่คือตัวอย่าง:
 
 ```csharp
 Document doc = new Document();

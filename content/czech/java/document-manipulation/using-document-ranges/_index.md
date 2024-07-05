@@ -2,7 +2,7 @@
 title: Použití rozsahů dokumentů v Aspose.Words pro Java
 linktitle: Použití rozsahů dokumentů
 second_title: Aspose.Words Java Document Processing API
-description: Manipulace s rozsahem hlavního dokumentu v Aspose.Words pro Javu. Naučte se mazat, extrahovat a formátovat text pomocí tohoto komplexního průvodce.
+description: Manipulace s rozsahem hlavního dokumentu v Aspose.Words for Java. Naučte se mazat, extrahovat a formátovat text pomocí tohoto komplexního průvodce.
 type: docs
 weight: 18
 url: /cs/java/document-manipulation/using-document-ranges/

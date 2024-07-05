@@ -117,7 +117,7 @@ options.setFontFamily("Times New Roman");
 
 ### Filigranı döndürmek mümkün mü?
 
- Evet, filigranı ayarlayarak döndürebilirsiniz.`setRotation` içindeki mülk`Shape` nesne. Pozitif değerler filigranı saat yönünde döndürür, negatif değerler ise saat yönünün tersine döndürür.
+ Evet, filigranı ayarlayarak döndürebilirsiniz.`setRotation` içindeki mülk`Shape` nesne. Pozitif değerler filigranı saat yönünde, negatif değerler ise saat yönünün tersine döndürür.
 
 ### Bir filigranı nasıl yarı şeffaf hale getirebilirim?
 

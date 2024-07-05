@@ -13,12 +13,12 @@ De tutorial behandelt verschillende aspecten, zoals het opmaken van tekst, aline
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Ruimte tussen Aziatische en Latijnse tekst in Word-document](./space-between-asian-and-latin-text/) | Leer hoe u de ruimte tussen Aziatische en Latijnse tekst in een Word-document automatisch kunt aanpassen met Aspose.Words voor .NET. |
-| [Aziatische typografie lijnbreukgroep in Word-document](./asian-typography-line-break-group/) | Leer hoe u de Aziatische typografie-regeleindegroep in een Word-document kunt gebruiken met Aspose.Words voor .NET. |
-| [Alinea-opmaak in Word-document](./paragraph-formatting/) | Leer hoe u aangepaste opmaak toepast op uw alinea's in een Word-document met Aspose.Words voor .NET. |
-| [Lijstopmaak op meerdere niveaus in Word-document](./multilevel-list-formatting/) | Leer hoe u een lijst met meerdere niveaus maakt en aangepaste opmaak toepast in een Word-document met Aspose.Words voor .NET. |
-| [Pas alineastijl toe in Word-document](./apply-paragraph-style/) | Leer hoe u een alineastijl toepast in een Word-document met Aspose.Words voor .NET. |
-| [Randen en arcering toepassen op alinea's in Word-document](./apply-borders-and-shading-to-paragraph/) | Leer hoe u randen en arcering toepast op een alinea in een Word-document met Aspose.Words voor .NET. |
-| [Wijzig de Aziatische alinea-afstand en inspringingen in een Word-document](./change-asian-paragraph-spacing-and-indents/) | Leer hoe u de Aziatische alinea-afstand en inspringingen in een Word-document kunt wijzigen met Aspose.Words voor .NET. |
-| [Uitlijnen op raster in Word-document](./snap-to-grid/) | Stapsgewijze handleiding om de C#-broncode van Snap to Grid in Word-documentfunctie uit te leggen met Aspose.Words voor .NET. |
-| [Haal het scheidingsteken voor alineastijlen op in een Word-document](./get-paragraph-style-separator/) | Leer hoe u het alineastijlscheidingsteken in een Word-document kunt krijgen met Aspose.Words voor .NET. |
+| [Ruimte tussen Aziatische en Latijnse tekst in Word-document](./space-between-asian-and-latin-text/) | Leer hoe u de ruimte tussen Aziatische en Latijnse tekst in Word-documenten automatisch kunt aanpassen met Aspose.Words voor .NET met onze gedetailleerde, stapsgewijze handleiding. |
+| [Aziatische typografie lijnbreukgroep in Word-document](./asian-typography-line-break-group/) | Beheers Aziatische typografische regeleinden in Word-documenten met Aspose.Words voor .NET. Deze handleiding biedt een stapsgewijze zelfstudie voor nauwkeurige opmaak. |
+| [Alinea-opmaak in Word-document](./paragraph-formatting/) | Leer hoe u moeiteloos alinea's in Word-documenten kunt opmaken met Aspose.Words voor .NET met onze stapsgewijze handleiding. |
+| [Lijstopmaak op meerdere niveaus in Word-document](./multilevel-list-formatting/) | Leer hoe u lijstopmaak op meerdere niveaus in Word-documenten onder de knie krijgt met behulp van Aspose.Words voor .NET met onze stapsgewijze handleiding. Verbeter moeiteloos de documentstructuur. |
+| [Pas alineastijl toe in Word-document](./apply-paragraph-style/) | Leer hoe u alineastijlen toepast in een Word-document met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor een verzorgd, professioneel document. |
+| [Randen en arcering toepassen op alinea's in Word-document](./apply-borders-and-shading-to-paragraph/) | Pas randen en arcering toe op alinea's in Word-documenten met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om uw documentopmaak te verbeteren. |
+| [Wijzig de Aziatische alinea-afstand en inspringingen in een Word-document](./change-asian-paragraph-spacing-and-indents/) | Leer hoe u de Aziatische alinea-afstand en inspringingen in Word-documenten kunt wijzigen met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze handleiding. |
+| [Uitlijnen op raster in Word-document](./snap-to-grid/) | Leer hoe u Uitlijnen op raster kunt inschakelen in Word-documenten met behulp van Aspose.Words voor .NET. Deze gedetailleerde zelfstudie behandelt de vereisten, stapsgewijze handleiding en veelgestelde vragen. |
+| [Haal het scheidingsteken voor alineastijlen op in een Word-document](./get-paragraph-style-separator/) | Leer hoe u alineastijlscheidingstekens in Word-documenten kunt identificeren en gebruiken met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze zelfstudie. |

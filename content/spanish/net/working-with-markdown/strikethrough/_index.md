@@ -57,7 +57,7 @@ builder.Writeln("This text will be StrikeThrough");
 
 #### P: ¿Es posible agregar texto tachado a varios fragmentos de texto en el mismo párrafo?
 
- R: Sí, puedes agregar texto tachado a varias partes del texto en un solo párrafo usando múltiples.`Run` objetos. Puedes crear múltiples`Run` objetos y establecer el`Font.StrikeThrough`propiedad a`true` para cada objeto para agregar el texto tachado a las partes de texto deseadas. Luego puedes agregarlos al párrafo usando el`Paragraph.AppendChild(run)` método.
+ R: Sí, puedes agregar texto tachado a varias partes del texto en un solo párrafo usando múltiples`Run` objetos. Puedes crear múltiples`Run` objetos y establecer el`Font.StrikeThrough`propiedad a`true` para cada objeto para agregar el texto tachado a las partes de texto deseadas. Luego puedes agregarlos al párrafo usando el`Paragraph.AppendChild(run)` método.
 
 #### P: ¿Puedo agregar texto tachado al texto que está en una tabla o celda en Aspose.Words?
 

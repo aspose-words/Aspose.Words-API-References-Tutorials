@@ -136,4 +136,4 @@ Có, Aspose.Words hoàn toàn tương thích với .NET Core, cho phép bạn x�
 
 ### Tôi có thể tìm tài liệu về Aspose.Words ở đâu?
 
- Bạn có thể tìm thấy tài liệu toàn diện về Aspose.Words for .NET.[đây](https://reference.aspose.com/words/net/).
+ Bạn có thể tìm thấy tài liệu toàn diện về Aspose.Words for .NET[đây](https://reference.aspose.com/words/net/).

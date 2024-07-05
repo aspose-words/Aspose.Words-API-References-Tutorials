@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Etapa 2: carregue o documento e defina as configurações de substituição de fonte
- A seguir, carregaremos o documento usando o`Document` classe e defina as configurações de substituição de fonte usando o`FontSettings` aula. Carregaremos as configurações de fallback da fonte Noto usando o`LoadNotoFallbackSettings()` método.
+ A seguir, carregaremos o documento usando o`Document` classe e defina as configurações de substituição de fonte usando o`FontSettings`aula. Carregaremos as configurações de fallback da fonte Noto usando o`LoadNotoFallbackSettings()` método.
 
 ```csharp
 // Carregue o documento e defina as configurações de substituição de fonte

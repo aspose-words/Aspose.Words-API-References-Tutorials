@@ -41,8 +41,8 @@ Section section = doc.Sections[0];
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm
 section.PageSetup.RightMargin = 90; // 3,17 cm
-section.PageSetup.TopMargin = 72; // 2,54 centimetri
-section.PageSetup.BottomMargin = 72; // 2,54 centimetri
+section.PageSetup.TopMargin = 72; // 2,54 cm
+section.PageSetup.BottomMargin = 72; // 2,54 cm
 section.PageSetup.HeaderDistance = 35.4; // 1,25 cm
 section.PageSetup.FooterDistance = 35.4; // 1,25 cm
 section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm
@@ -95,13 +95,13 @@ Section section = doc.Sections[0];
 
 #### D: Come posso modificare le impostazioni della sezione in Aspose.Words per .NET?
 
- R: Per modificare le impostazioni di una sezione, puoi utilizzare le proprietà della sezione.`PageSetup`oggetto. In questo esempio, stiamo modificando i margini, la distanza dell'intestazione e del piè di pagina e la spaziatura delle colonne di testo.
+ R: Per modificare le impostazioni di una sezione, puoi utilizzare le proprietà della sezione`PageSetup`oggetto. In questo esempio, stiamo modificando i margini, la distanza dell'intestazione e del piè di pagina e la spaziatura delle colonne di testo.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm
 section.PageSetup.RightMargin = 90; // 3,17 cm
-section.PageSetup.TopMargin = 72; // 2,54 centimetri
-section.PageSetup.BottomMargin = 72; // 2,54 centimetri
+section.PageSetup.TopMargin = 72; // 2,54 cm
+section.PageSetup.BottomMargin = 72; // 2,54 cm
 section.PageSetup.HeaderDistance = 35.4; // 1,25 cm
 section.PageSetup.FooterDistance = 35.4; // 1,25 cm
 section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm

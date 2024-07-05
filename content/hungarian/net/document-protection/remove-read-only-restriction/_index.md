@@ -1,6 +1,6 @@
 ---
-title: Távolítsa el a Csak olvasható korlátozást
-linktitle: Távolítsa el a Csak olvasható korlátozást
+title: Távolítsa el a Csak olvasási korlátozást
+linktitle: Távolítsa el a Csak olvasási korlátozást
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan távolíthatja el a csak olvasható korlátozást egy Word-dokumentumból az Aspose.Words for .NET segítségével.
 type: docs

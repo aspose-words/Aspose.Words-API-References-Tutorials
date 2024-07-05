@@ -36,7 +36,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Paso 4: mostrar las propiedades del tema
 
- En este paso final, mostramos los valores de propiedad del tema usando`Console.WriteLine`. Puedes adaptar la pantalla según tus necesidades.
+ En este paso final, mostramos los valores de las propiedades del tema usando`Console.WriteLine`. Puedes adaptar la pantalla según tus necesidades.
 
 Puede ejecutar el código fuente para obtener las propiedades del tema de un documento. Esta función le permite recuperar información sobre las fuentes y los colores utilizados en el tema de un documento, lo que puede resultar útil para la personalización o el análisis de estilos.
 

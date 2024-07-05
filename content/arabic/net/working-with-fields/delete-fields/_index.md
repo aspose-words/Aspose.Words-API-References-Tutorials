@@ -46,7 +46,7 @@ using Aspose.Words;
 إذا لم تكن قد قمت بذلك بالفعل، قم بإضافة مرجع إلى Aspose.Words في مشروع Visual Studio الخاص بك. يمكنك القيام بذلك عن طريق:
    - النقر بزر الماوس الأيمن على مشروعك في Solution Explorer.
    - تحديد "إدارة حزم NuGet..."
-   - البحث عن "Apose.Words" وتثبيته في مشروعك.
+   - البحث عن "Aspose.Words" وتثبيته في مشروعك.
 
 ## الخطوة 3: قم بإعداد المستند الخاص بك
 
@@ -105,4 +105,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
    - نعم، الطريقة الموضحة هنا تستهدف الحقول فقط وتترك المحتويات الأخرى دون تغيير.
 
 ### أين يمكنني العثور على المزيد من الموارد والدعم لـ Aspose.Words؟
-   -  قم بزيارة[Aspose.Words لوثائق .NET API](https://reference.aspose.com/words/net/) و ال[منتدى Aspose.Words](https://forum.aspose.com/c/words/8)لمزيد من المساعدة.
+   -  قم بزيارة[Aspose.Words لوثائق .NET API](https://reference.aspose.com/words/net/) و ال[منتدى Aspose.Words](https://forum.aspose.com/c/words/8) لمزيد من المساعدة.

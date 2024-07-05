@@ -46,7 +46,7 @@ table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
 ```
 
-συγχαρητήρια ! Έχετε πλέον δημιουργήσει έναν πίνακα με προσαρμοσμένα περιγράμματα χρησιμοποιώντας το Aspose.Words για .NET.
+Συγχαρητήρια ! Έχετε πλέον δημιουργήσει έναν πίνακα με προσαρμοσμένα περιγράμματα χρησιμοποιώντας το Aspose.Words για .NET.
 
 ### Δείγμα πηγαίου κώδικα για Build Table With Borders χρησιμοποιώντας Aspose.Words για .NET 
 

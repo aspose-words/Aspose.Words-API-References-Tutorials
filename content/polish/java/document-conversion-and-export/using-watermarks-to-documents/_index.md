@@ -117,7 +117,7 @@ options.setFontFamily("Times New Roman");
 
 ### Czy można obrócić znak wodny?
 
- Tak, możesz obrócić znak wodny, ustawiając opcję`setRotation` nieruchomość w`Shape` obiekt. Wartości dodatnie obracają znak wodny zgodnie z ruchem wskazówek zegara, a wartości ujemne obracają go w kierunku przeciwnym do ruchu wskazówek zegara.
+ Tak, możesz obrócić znak wodny, ustawiając opcję`setRotation` nieruchomość w`Shape` obiekt. Wartości dodatnie obracają znak wodny w kierunku zgodnym z ruchem wskazówek zegara, a wartości ujemne obracają go w kierunku przeciwnym do ruchu wskazówek zegara.
 
 ### Jak ustawić półprzezroczysty znak wodny?
 

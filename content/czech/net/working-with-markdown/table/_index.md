@@ -2,7 +2,7 @@
 title: Stůl
 linktitle: Stůl
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se vytvořit tabulku pomocí Aspose.Words for .NET Podrobný průvodce.
+description: Naučte se, jak vytvořit tabulku pomocí Aspose.Words for .NET Podrobný průvodce.
 type: docs
 weight: 10
 url: /cs/net/working-with-markdown/table/

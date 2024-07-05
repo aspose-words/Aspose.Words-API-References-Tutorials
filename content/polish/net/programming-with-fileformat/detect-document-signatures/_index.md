@@ -72,7 +72,7 @@ Ten samouczek zawiera przewodnik krok po kroku dotyczący wykrywania podpisu cyf
 
 #### Jak określić katalog zawierający dokumenty, w których należy szukać podpisu cyfrowego?
 
- Aby określić katalog zawierający dokumenty, w których chcesz wyszukiwać podpis cyfrowy, musisz zmodyfikować plik`dataDir` zmienne w kodzie. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+ Aby określić katalog zawierający dokumenty, w których chcesz wyszukiwać podpis cyfrowy, musisz zmodyfikować plik`dataDir` zmienna w kodzie. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

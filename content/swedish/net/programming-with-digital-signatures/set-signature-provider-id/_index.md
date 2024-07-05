@@ -102,7 +102,7 @@ S: För att ställa in signaturleverantörens ID för en signaturrad i ett Word-
 
 #### F: Vad är syftet med signaturleverantörens ID i ett Word-dokument?
 
-S: Signaturleverantörens ID i ett Word-dokument har till syfte att identifiera den enhet eller organisation som ansvarar för att skapa och hantera den digitala signaturen. Det hjälper till att fastställa äktheten och trovärdigheten för den digitala signaturen genom att associera den med en specifik leverantör.
+S: Signaturleverantörens ID i ett Word-dokument tjänar till att identifiera den enhet eller organisation som ansvarar för att skapa och hantera den digitala signaturen. Det hjälper till att fastställa äktheten och trovärdigheten för den digitala signaturen genom att associera den med en specifik leverantör.
 
 #### F: Vilken typ av digitala certifikat kan användas för att ställa in signaturleverantörens ID i ett Word-dokument?
 

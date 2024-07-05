@@ -50,7 +50,7 @@ Este código define o modo de layout como "Grade" e especifica o número de cara
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Defina o modo de layout de uma seção permitindo definir o comportamento da grade do documento.
-	// Observe que a guia Grade do documento fica visível na caixa de diálogo Configuração de página do MS Word.
+	// Observe que a guia Grade do documento fica visível na caixa de diálogo Configuração de página do MS Word
 	// se algum idioma asiático for definido como idioma de edição.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

@@ -54,7 +54,7 @@ signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 
 Zorg ervoor dat u de juiste provider-ID voor uw gebruiksscenario opgeeft.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Sla het gewijzigde document op:
 
@@ -178,4 +178,4 @@ A: Aspose.Words voor .NET ondersteunt het maken en ondertekenen van handtekening
 
 #### Vraag: Kan ik de provider-ID of andere opties van een handtekeningregel wijzigen nadat deze is ondertekend?
 
-A: Zodra een handtekeningregel is ondertekend, wordt deze onderdeel van de inhoud van het document en kan deze niet afzonderlijk worden gewijzigd. Voor elke wijziging aan de handtekeningregel, zoals het wijzigen van de provider-ID of andere opties, moet de bestaande handtekening worden verwijderd en moet een nieuwe handtekeningregel worden gemaakt.
+A: Zodra een handtekeningregel is ondertekend, wordt deze onderdeel van de inhoud van het document en kan deze niet afzonderlijk worden gewijzigd. Voor eventuele wijzigingen aan de handtekeningregel, zoals het wijzigen van de provider-ID of andere opties, moet de bestaande handtekening worden verwijderd en moet een nieuwe handtekeningregel worden gemaakt.

@@ -9,7 +9,7 @@ url: /fr/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Si vous avez déjà rencontré des problèmes de polices qui ne s'affichent pas correctement dans vos documents, vous n'êtes pas seul. La gestion des paramètres de police et la réception de notifications sur les substitutions de polices peuvent vous éviter bien des maux de tête. Dans ce guide de notification complet, nous explorerons comment gérer les polices à l'aide d'Aspose.Words for .NET, afin de garantir que vos documents soient toujours à leur meilleur.
+Si vous avez déjà rencontré des problèmes de polices qui ne s'affichent pas correctement dans vos documents, vous n'êtes pas seul. La gestion des paramètres de police et la réception de notifications sur les substitutions de polices peuvent vous éviter bien des maux de tête. Dans ce guide complet, nous explorerons comment gérer les notifications de polices à l'aide d'Aspose.Words for .NET, garantissant ainsi que vos documents soient toujours à leur meilleur.
 
 ## Conditions préalables
 

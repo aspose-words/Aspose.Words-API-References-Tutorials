@@ -21,7 +21,7 @@ Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 3. Visual Studio: każda najnowsza wersja będzie działać, ale zalecana jest najnowsza wersja.
 4. .NET Framework: Upewnij się, że jest zainstalowany w twoim systemie.
 
-Mam wszystko? Świetnie! Przejdźmy do zabawnej części.
+Mam wszystko? Świetnie! Przejdźmy do przyjemniejszej części.
 
 ## Importuj przestrzenie nazw
 

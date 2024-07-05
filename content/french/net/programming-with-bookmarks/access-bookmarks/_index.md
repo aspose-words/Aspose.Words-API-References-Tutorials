@@ -17,7 +17,7 @@ Dans cet article, nous explorerons le code source C# ci-dessus pour comprendre c
 
 ## Étape 1 : Chargement du document
 
- Avant de commencer à accéder aux signets, nous devons charger un document Word à l'aide d'Aspose.Words for .NET. Cela peut être fait en instanciant un`Document` objet spécifiant le chemin du fichier du document :
+ Avant de commencer à accéder aux signets, nous devons charger un document Word à l'aide d'Aspose.Words pour .NET. Cela peut être fait en instanciant un`Document` objet spécifiant le chemin du fichier du document :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

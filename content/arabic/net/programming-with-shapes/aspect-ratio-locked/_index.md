@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## الخطوة 2: إنشاء مستند جديد وDocumentBuilder
- إنشاء مثيل جديد لـ`Document` فئة و أ`DocumentBuilder` كائن للعمل مع الوثيقة.
+ إنشاء مثيل جديد لـ`Document` فئة و أ`DocumentBuilder`كائن للعمل مع الوثيقة.
 
 ```csharp
 Document doc = new Document();

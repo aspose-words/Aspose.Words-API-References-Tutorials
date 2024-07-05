@@ -117,7 +117,7 @@ Per garantire un processo di conversione dei documenti fluido ed efficiente, pre
 Quando si ha a che fare con un numero elevato di documenti, potrebbero verificarsi errori durante il processo di conversione. Implementare una corretta gestione delle eccezioni per identificare e risolvere questi problemi con garbo.
 
 ## Garanzia di qualità: 
-Prima di distribuire la funzionalità di conversione dei documenti in un ambiente di produzione, testare accuratamente il processo di conversione con vari tipi e dimensioni di documenti per verificare l'accuratezza e la fedeltà dell'output.
+Prima di implementare la funzionalità di conversione dei documenti in un ambiente di produzione, testare accuratamente il processo di conversione con vari tipi e dimensioni di documenti per verificare l'accuratezza e la fedeltà dell'output.
 
 ## Conclusione
 

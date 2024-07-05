@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 恭喜！您已經成功學習如何在 Aspose.Words for Java 中渲染形狀。當以程式方式處理 Word 文件時，此功能開啟了一個充滿可能性的世界。
 
-## 9.常見問題解答
+## 9. 常見問題解答
 
 ### Q1：我可以在一個文件中渲染多個形狀嗎？
 

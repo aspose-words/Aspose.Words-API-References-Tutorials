@@ -101,7 +101,7 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ### Varsayılan Değerler ve Biçimlendirme
 
-Form alanlarını varsayılan değerlerle önceden doldurabilir ve buna göre biçimlendirebilirsiniz:
+Form alanlarını varsayılan değerlerle önceden doldurabilir ve bunları buna göre biçimlendirebilirsiniz:
 
 ```python
 text_input_field.text = "John Doe"

@@ -2,7 +2,7 @@
 title: Helyezze be a tartalomjegyzéket a Word dokumentumba
 linktitle: Helyezze be a tartalomjegyzéket a Word dokumentumba
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan szúrhat be tartalomjegyzéket a Wordbe az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat a zökkenőmentes dokumentumnavigáció érdekében.
+description: Ismerje meg, hogyan illeszthet be tartalomjegyzéket a Wordbe az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat a zökkenőmentes dokumentumnavigáció érdekében.
 type: docs
 weight: 10
 url: /hu/net/add-content-using-documentbuilder/insert-table-of-contents/

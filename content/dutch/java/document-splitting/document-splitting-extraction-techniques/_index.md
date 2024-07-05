@@ -8,7 +8,7 @@ weight: 14
 url: /nl/java/document-splitting/document-splitting-extraction-techniques/
 ---
 
-In de wereld van documentmanipulatie en -extractie onderscheidt Aspose.Words voor Java zich als een krachtig hulpmiddel. Deze uitgebreide handleiding leidt u door de essentiële stappen voor het splitsen en extraheren van documenten met Aspose.Words voor Java. Of u nu een doorgewinterde ontwikkelaar bent of net begint met deze bibliotheek, deze stapsgewijze handleiding met broncodevoorbeelden helpt u de kunst van documentmanipulatie onder de knie te krijgen.
+In de wereld van documentmanipulatie en -extractie onderscheidt Aspose.Words voor Java zich als een krachtig hulpmiddel. Deze uitgebreide handleiding leidt u door de essentiële stappen voor het splitsen en extraheren van documenten met Aspose.Words voor Java. Of u nu een doorgewinterde ontwikkelaar bent of net begint met deze bibliotheek, deze stapsgewijze handleiding met broncodevoorbeelden helpt u de kunst van het documentmanipuleren onder de knie te krijgen.
 
 ## Invoering
 

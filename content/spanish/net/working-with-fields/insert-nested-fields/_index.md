@@ -108,7 +108,7 @@ R: Para insertar campos anidados en un documento de Word usando Aspose.Words par
 
 #### P: ¿Cuáles son los beneficios de utilizar campos anidados en un documento de Word con Aspose.Words para .NET?
 
-R: El uso de campos anidados ofrece varias ventajas en un documento de Word con Aspose.Words para .NET. Esto permite una mayor flexibilidad en la creación de plantillas de documentos dinámicas, al permitir la inserción de valores variables y cálculos en campos anidados. Los campos anidados también pueden facilitar la generación automatizada de contenido, como generar tablas de contenido, números de página, etc.
+R: El uso de campos anidados ofrece varias ventajas en un documento de Word con Aspose.Words para .NET. Esto permite una mayor flexibilidad en la creación de plantillas de documentos dinámicos, al permitir la inserción de valores variables y cálculos en campos anidados. Los campos anidados también pueden facilitar la generación automatizada de contenido, como generar tablas de contenido, números de página, etc.
 
 #### P: ¿Puedo tener campos anidados de varios niveles en un documento de Word con Aspose.Words para .NET?
 

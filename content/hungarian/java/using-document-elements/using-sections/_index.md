@@ -104,11 +104,11 @@ Igen, az Aspose.Words for Java kompatibilis más Java könyvtárakkal, így soko
 
 ### 2. kérdés: Elérhető az Aspose.Words for Java próbaverziója?
 
- Igen, hozzáférhet az Aspose.Words for Java ingyenes próbaverziójához.[itt](https://releases.aspose.com/).
+ Igen, hozzáférhet az Aspose.Words for Java ingyenes próbaverziójához[itt](https://releases.aspose.com/).
 
 ### 3. kérdés: Hogyan szerezhetek ideiglenes licencet az Aspose.Words for Java számára?
 
- Az Aspose.Words for Java számára ideiglenes licencet szerezhet.[itt](https://purchase.aspose.com/temporary-license/).
+ Az Aspose.Words for Java számára ideiglenes licencet szerezhet[itt](https://purchase.aspose.com/temporary-license/).
 
 ### 4. kérdés: Hol találok támogatást az Aspose.Words for Java számára?
 

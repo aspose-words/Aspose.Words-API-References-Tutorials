@@ -114,7 +114,7 @@ E aí está! Uma maneira simples, mas poderosa de manipular a posição do curso
 
 ## Conclusão
 
-isso é um embrulho! Exploramos como gerenciar as posições do cursor em documentos do Word com Aspose.Words for .NET. Desde a configuração do seu projeto até a manipulação do cursor e a adição de texto, agora você tem uma base sólida para construir. Continue experimentando e veja quais outros recursos interessantes você pode descobrir nesta biblioteca robusta. Boa codificação!
+isso é um embrulho! Exploramos como gerenciar as posições do cursor em documentos do Word com Aspose.Words for .NET. Desde a configuração do seu projeto até a manipulação do cursor e adição de texto, agora você tem uma base sólida para construir. Continue experimentando e veja quais outros recursos interessantes você pode descobrir nesta biblioteca robusta. Boa codificação!
 
 ## Perguntas frequentes
 
@@ -136,4 +136,4 @@ Sim, Aspose.Words é totalmente compatível com .NET Core, permitindo construir 
 
 ### Onde posso encontrar a documentação do Aspose.Words?
 
- Você pode encontrar documentação abrangente para Aspose.Words for .NET.[aqui](https://reference.aspose.com/words/net/).
+ Você pode encontrar documentação abrangente para Aspose.Words for .NET[aqui](https://reference.aspose.com/words/net/).

@@ -1,29 +1,29 @@
 ---
-title: Aspose.Words for Java でのドキュメントの印刷
-linktitle: 文書を印刷する
+title: Aspose.Words for Java でドキュメントを印刷する
+linktitle: 文書の印刷
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用してドキュメントを印刷する方法を学びます。 Java アプリケーションでシームレスに印刷するためのステップバイステップのガイド。
+description: Aspose.Words for Java を使用してドキュメントを印刷する方法を学びます。Java アプリケーションでシームレスに印刷するためのステップバイステップ ガイドです。
 type: docs
 weight: 10
 url: /ja/java/printing-documents/printing-documents/
 ---
 
-Aspose.Words for Java を使用してドキュメントを印刷したい場合は、ここが正しい場所です。このステップバイステップ ガイドでは、提供されたソース コードを使用して、Aspose.Words for Java でドキュメントを印刷するプロセスについて説明します。
+Aspose.Words for Java を使用してドキュメントを印刷したい場合は、ここが最適な場所です。このステップ バイ ステップ ガイドでは、提供されているソース コードを使用して、Aspose.Words for Java でドキュメントを印刷するプロセスについて説明します。
 
 ## 導入
 
-ドキュメントの印刷は、多くのアプリケーションで一般的なタスクです。 Aspose.Words for Java は、Word ドキュメントを操作するための強力な API (印刷機能など) を提供します。このチュートリアルでは、Word 文書を印刷するプロセスを段階的に説明します。
+ドキュメントの印刷は、多くのアプリケーションで一般的なタスクです。Aspose.Words for Java は、印刷機能を含む Word ドキュメントを操作するための強力な API を提供します。このチュートリアルでは、Word ドキュメントを印刷するプロセスを段階的に説明します。
 
-## 環境のセットアップ
+## 環境の設定
 
-コードに入る前に、次の前提条件が満たされていることを確認してください。
+コードに進む前に、次の前提条件が満たされていることを確認してください。
 
-- Java 開発キット (JDK) がインストールされている
+- Java開発キット（JDK）がインストールされている
 - Aspose.Words for Java ライブラリがダウンロードされ、プロジェクトに追加されました
 
-## ドキュメントをロードする
+## ドキュメントの読み込み
 
-まず、印刷する Word 文書をロードする必要があります。交換する`"Your Document Directory"`ドキュメントへのパスと`"Your Output Directory"`目的の出力ディレクトリを指定します。
+まず、印刷したいWord文書を読み込む必要があります。`"Your Document Directory"`ドキュメントへのパスと`"Your Output Directory"`希望する出力ディレクトリを指定します。
 
 ```java
 string dataDir = "Your Document Directory";
@@ -38,16 +38,16 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```java
 //ドキュメントを印刷するための印刷ジョブを作成します。
 PrinterJob pj = PrinterJob.getPrinterJob();
-//ドキュメント内のページ数を使用して属性セットを初期化します。
+//ドキュメント内のページ数で属性セットを初期化します。
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
-//プリンター設定を他のパラメーターとともに印刷ドキュメントに渡します。
+//プリンター設定を他のパラメータとともに印刷ドキュメントに渡します。
 MultipagePrintDocument awPrintDoc = new MultipagePrintDocument(doc, 4, true, attributes);
 ```
 
-## 文書を印刷する
+## 文書の印刷
 
-印刷ジョブの設定が完了したので、今度はドキュメントを印刷します。次のコード スニペットは、ドキュメントを印刷ジョブに関連付け、印刷プロセスを開始します。
+印刷ジョブの設定が完了したので、ドキュメントを印刷します。次のコード スニペットは、ドキュメントを印刷ジョブに関連付け、印刷プロセスを開始します。
 
 ```java
 //印刷ジョブを使用して印刷するドキュメントを渡します。
@@ -60,16 +60,16 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 //ドキュメントを印刷するための印刷ジョブを作成します。
 PrinterJob pj = PrinterJob.getPrinterJob();
-//ドキュメント内のページ数を使用して属性セットを初期化します。
+//ドキュメント内のページ数で属性セットを初期化します。
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
-//プリンター設定を他のパラメーターとともに印刷ドキュメントに渡します。
+//プリンター設定を他のパラメータとともに印刷ドキュメントに渡します。
 MultipagePrintDocument awPrintDoc = new MultipagePrintDocument(doc, 4, true, attributes);
 //印刷ジョブを使用して印刷するドキュメントを渡します。
 pj.setPrintable(awPrintDoc);
 pj.print();
 ```
-MultipagePrintDocumentのソースコード
+MultipagePrintDocument のソースコード
 ```java
 class MultipagePrintDocument implements Printable
 {
@@ -77,9 +77,9 @@ class MultipagePrintDocument implements Printable
     private final int mPagesPerSheet;
     private final boolean mPrintPageBorders;
     private final AttributeSet mAttributeSet;
-    /// <概要>
+    /// <要約>
     //カスタム PrintDocument クラスのコンストラクター。
-    // / </概要>
+    // / </要約>
     public MultipagePrintDocument(Document document, int pagesPerSheet, boolean printPageBorders,
                                   AttributeSet attributes) {
         if (document == null)
@@ -95,43 +95,43 @@ class MultipagePrintDocument implements Printable
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
         Dimension thumbCount = getThumbCount(mPagesPerSheet, pf);
-        //次にレンダリングされるページのインデックスを計算します。
+        //次にレンダリングされるページインデックスを計算します。
         int pagesOnCurrentSheet = (int) (page * (thumbCount.getWidth() * thumbCount.getHeight()));
-        //ページ インデックスが合計ページ範囲を超える場合は、何もありません。
-        //さらにレンダリングする必要があります。
+        //ページインデックスがページ範囲全体より大きい場合は何も起こりません
+        //レンダリングするものがさらにあります。
         if (pagesOnCurrentSheet > (toPage - fromPage))
             return Printable.NO_SUCH_PAGE;
         //各サムネイル プレースホルダーのサイズをポイント単位で計算します。
         Point2D.Float thumbSize = new Point2D.Float((float) (pf.getImageableWidth() / thumbCount.getWidth()),
                 (float) (pf.getImageableHeight() / thumbCount.getHeight()));
-        //この用紙に印刷される最初のページの番号を計算します。
+        //この紙に印刷される最初のページ番号を計算します。
         int startPage = pagesOnCurrentSheet + fromPage;
-        //この用紙に印刷する最後のページの番号を選択します。
+        //この用紙に印刷する最後のページ番号を選択します。
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //保存されている現在のページから計算されたページまで、選択したページをループします。
+        //保存された現在のページから計算されたページまで選択したページをループします
         //最後のページ。
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             //列と行のインデックスを計算します。
             int rowIdx = (int) Math.floor((pageIndex - startPage) / thumbCount.getWidth());
             int columnIdx = (int) Math.floor((pageIndex - startPage) % thumbCount.getWidth());
-            //サムネイルの位置をワールド座標 (この場合はポイント) で定義します。
+            //サムネイルの位置をワールド座標（この場合はポイント）で定義します。
             float thumbLeft = columnIdx * thumbSize.x;
             float thumbTop = rowIdx * thumbSize.y;
             try {
                 //左と上の開始位置を計算します。
                 int leftPos = (int) (thumbLeft + pf.getImageableX());
                 int topPos = (int) (thumbTop + pf.getImageableY());
-                //計算された座標を使用して、ドキュメント ページを Graphics オブジェクトにレンダリングします。
-                //サムネイルのプレースホルダーのサイズ。
-                //有用な戻り値は、ページがレンダリングされたスケールです。
+                //計算された座標を使用してドキュメントページをGraphicsオブジェクトにレンダリングします。
+                //およびサムネイル プレースホルダーのサイズ。
+                //便利な戻り値は、ページがレンダリングされたスケールです。
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                //ページの境界線を描画します (ページのサムネイルはサムネイルよりも小さい場合があります)
+                //ページの境界線を描画します（ページのサムネイルはサムネイルより小さくなる場合があります）
                 //プレースホルダーのサイズ)。
                 if (mPrintPageBorders) {
                     //ページの実際の 100% サイズをポイント単位で取得します。
                     Point2D.Float pageSize = mDocument.getPageInfo(pageIndex).getSizeInPoints();
-                    //既知の倍率を使用して、拡大縮小されたページの周囲に境界線を描画します。
+                    //既知のスケール係数を使用して、拡大縮小されたページの周囲に境界線を描画します。
                     g.setColor(Color.black);
                     g.drawRect(leftPos, topPos, (int) (pageSize.x * scale), (int) (pageSize.y * scale));
                     //サムネイル プレースホルダーの周囲に境界線を描きます。
@@ -139,7 +139,7 @@ class MultipagePrintDocument implements Printable
                     g.drawRect(leftPos, topPos, (int) thumbSize.x, (int) thumbSize.y);
                 }
             } catch (Exception e) {
-                //レンダリング中にエラーが発生した場合は、何もしません。
+                //レンダリング中にエラーが発生した場合は何も行いません。
                 //レンダリング中にエラーが発生した場合、空白のページが描画されます。
             }
         }
@@ -147,8 +147,8 @@ class MultipagePrintDocument implements Printable
     }
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
-        //シート上の列と行の数を定義します。
-        //横向きの紙。
+        //シート上の列数と行数を定義します。
+        //横長の用紙です。
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -182,7 +182,7 @@ class MultipagePrintDocument implements Printable
 
 ## 結論
 
-おめでとう！ Aspose.Words for Java を使用して Word 文書を正常に印刷できました。このステップバイステップのガイドは、ドキュメントの印刷を Java アプリケーションにシームレスに統合するのに役立ちます。
+おめでとうございます。Aspose.Words for Java を使用して Word 文書を正常に印刷できました。このステップ バイ ステップ ガイドは、文書の印刷を Java アプリケーションにシームレスに統合するのに役立ちます。
 
 ## よくある質問
 
@@ -192,20 +192,20 @@ class MultipagePrintDocument implements Printable
 
 ### Q2: Aspose.Words for Java はバッチ印刷に適していますか?
 
-絶対に！ Aspose.Words for Java は、バッチ印刷タスクに適しています。同様のコードを使用して、ドキュメントのリストを反復処理し、1 つずつ印刷できます。
+もちろんです! Aspose.Words for Java はバッチ印刷タスクに最適です。ドキュメントのリストを反復処理し、同様のコードを使用して 1 つずつ印刷できます。
 
-### Q3: 印刷エラーや例外はどのように処理すればよいですか?
+### Q3: 印刷エラーや例外をどのように処理すればよいですか?
 
-印刷プロセス中に発生する可能性のある例外には対処する必要があります。例外の処理については、Aspose.Words for Java のドキュメントを確認してください。
+印刷プロセス中に発生する可能性のある例外をすべて処理する必要があります。例外の処理方法については、Aspose.Words for Java のドキュメントを参照してください。
 
 ### Q4: 印刷設定をさらにカスタマイズできますか?
 
-はい、特定の要件に合わせて印刷設定をカスタマイズできます。利用可能な印刷オプションの詳細については、Aspose.Words for Java ドキュメントを参照してください。
+はい、特定の要件に合わせて印刷設定をカスタマイズできます。使用可能な印刷オプションの詳細については、Aspose.Words for Java のドキュメントを参照してください。
 
-### Q5: Aspose.Words for Java に関するヘルプとサポートはどこで入手できますか?
+### Q5: Aspose.Words for Java に関する詳細なヘルプやサポートはどこで受けられますか?
 
-追加のサポートと支援が必要な場合は、次のサイトにアクセスしてください。[Aspose.Words for Java フォーラム](https://forum.aspose.com/).
+追加のサポートと支援については、[Aspose.Words for Java フォーラム](https://forum.aspose.com/).
 
 ---
 
-Aspose.Words for Java を使用してドキュメントを印刷する方法を学習したので、Java アプリケーションにこの機能の実装を開始できます。コーディングを楽しんでください!
+Aspose.Words for Java を使用してドキュメントを印刷する方法を学習したので、Java アプリケーションにこの機能を実装し始めることができます。コーディングを楽しんでください!

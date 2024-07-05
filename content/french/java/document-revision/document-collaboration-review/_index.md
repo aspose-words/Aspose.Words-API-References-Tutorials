@@ -14,7 +14,7 @@ Aspose.Words for Java est une bibliothèque Java puissante et polyvalente qui pe
 
 ## Configuration d'Aspose.Words pour Java
 
-Avant de nous plonger dans la collaboration et la révision de documents, commençons par configurer Aspose.Words for Java dans votre projet. Suivez ces étapes simples :
+Avant de nous plonger dans la collaboration et la révision de documents, commençons par configurer Aspose.Words pour Java dans votre projet. Suivez ces étapes simples :
 
 1.  Téléchargez Aspose.Words pour Java : vous pouvez télécharger la bibliothèque à partir de[ici](https://releases.aspose.com/words/java/).
 
@@ -26,11 +26,11 @@ Maintenant que Aspose.Words pour Java est configuré, passons à la collaboratio
 
 ## Collaboration documentaire
 
-La collaboration est essentielle lorsque plusieurs membres de l’équipe travaillent sur le même document. Aspose.Words for Java fournit des fonctionnalités qui facilitent la collaboration de manière transparente.
+La collaboration est essentielle lorsque plusieurs membres de l'équipe travaillent sur le même document. Aspose.Words for Java fournit des fonctionnalités qui facilitent la collaboration de manière transparente.
 
 ## Étape 1 : Partager le document
 
-Pour démarrer la collaboration, partagez le document avec les membres de votre équipe. Vous pouvez utiliser diverses plateformes de partage de fichiers ou le courrier électronique pour distribuer le document.
+Pour démarrer la collaboration, partagez le document avec les membres de votre équipe. Vous pouvez utiliser diverses plateformes de partage de fichiers ou par courrier électronique pour distribuer le document.
 
 ## Étape 2 : suivi des modifications
 

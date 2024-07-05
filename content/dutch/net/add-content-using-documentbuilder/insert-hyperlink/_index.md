@@ -41,7 +41,7 @@ Start om te beginnen Visual Studio op en maak een nieuw C#-project. Voor de eenv
 
 Installeer Aspose.Words voor .NET
 
-Vervolgens moet u de Aspose.Words voor .NET-bibliotheek installeren. U kunt dit doen via NuGet Package Manager. Klik eenvoudig met de rechtermuisknop op uw project in de Solution Explorer, selecteer "NuGet-pakketten beheren", zoek naar "Apose.Words" en installeer het.
+Vervolgens moet u de Aspose.Words voor .NET-bibliotheek installeren. U kunt dit doen via NuGet Package Manager. Klik eenvoudig met de rechtermuisknop op uw project in de Solution Explorer, selecteer "NuGet-pakketten beheren", zoek naar "Aspose.Words" en installeer het.
 
 ## Stap 2: Initialiseer het document
 
@@ -92,7 +92,7 @@ Laten we nu de daadwerkelijke hyperlink invoegen. Dit is waar de magie gebeurt!
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 ```
 
-In deze regel voegen we een hyperlink in met de weergavetekst "Apose Website" en de URL "http://www.aspose.com".
+In deze regel voegen we een hyperlink in met de weergavetekst "Aspose Website" en de URL "http://www.aspose.com".
 
 ## Stap 6: Wis de opmaak
 

@@ -17,7 +17,7 @@ url: /el/python-net/document-structure-and-content-manipulation/document-vba-mac
 
 ## Ξεκινώντας με το Aspose.Words για Python
 
-Για να ξεκινήσετε αυτό το ταξίδι αυτοματισμού, πρέπει να έχετε εγκατεστημένο το Aspose.Words for Python. Μπορείτε να το κατεβάσετε από το[Aspose website](https://releases.aspose.com/words/python/). Μόλις εγκατασταθεί, μπορείτε να ξεκινήσετε το έργο Python και να εισαγάγετε τις απαραίτητες λειτουργικές μονάδες.
+Για να ξεκινήσετε αυτό το ταξίδι αυτοματισμού, πρέπει να έχετε εγκατεστημένο το Aspose.Words for Python. Μπορείτε να το κατεβάσετε από το[Aspose ιστότοπο](https://releases.aspose.com/words/python/). Μόλις εγκατασταθεί, μπορείτε να ξεκινήσετε το έργο Python και να εισαγάγετε τις απαραίτητες λειτουργικές μονάδες.
 
 ```python
 import aspose.words
@@ -114,7 +114,7 @@ End Sub
 ## Συχνές ερωτήσεις
 
 ### Πώς μπορώ να εγκαταστήσω το Aspose.Words για Python;
- Μπορείτε να κάνετε λήψη της πιο πρόσφατης έκδοσης του Aspose.Words για Python από το[Aspose website](https://releases.aspose.com/words/python/).
+ Μπορείτε να κάνετε λήψη της πιο πρόσφατης έκδοσης του Aspose.Words για Python από το[Aspose ιστότοπο](https://releases.aspose.com/words/python/).
 
 ### Μπορώ να χρησιμοποιήσω μακροεντολές VBA με άλλες εφαρμογές του Microsoft Office;
 Ναι, οι μακροεντολές VBA μπορούν να χρησιμοποιηθούν σε διάφορες εφαρμογές του Microsoft Office, συμπεριλαμβανομένων του Excel και του PowerPoint.

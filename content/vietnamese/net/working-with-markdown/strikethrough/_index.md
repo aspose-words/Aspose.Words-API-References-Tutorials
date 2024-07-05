@@ -57,7 +57,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách áp dụng kiểu văn bản
 
 #### Hỏi: Có thể thêm văn bản gạch ngang vào nhiều đoạn văn bản trong cùng một đoạn không?
 
- Đáp: Có, bạn có thể thêm văn bản gạch ngang vào nhiều phần văn bản trong một đoạn bằng cách sử dụng nhiều phần.`Run` các đối tượng. Bạn có thể tạo nhiều`Run` các đối tượng và thiết lập`Font.StrikeThrough`tài sản để`true` để mỗi đối tượng thêm văn bản gạch ngang vào các phần văn bản mong muốn. Sau đó, bạn có thể thêm chúng vào đoạn văn bằng cách sử dụng`Paragraph.AppendChild(run)` phương pháp.
+ Đáp: Có, bạn có thể thêm văn bản gạch ngang vào nhiều phần văn bản trong một đoạn văn bằng cách sử dụng nhiều`Run` các đối tượng. Bạn có thể tạo nhiều`Run` các đối tượng và thiết lập`Font.StrikeThrough`tài sản để`true` để mỗi đối tượng thêm văn bản gạch ngang vào các phần văn bản mong muốn. Sau đó, bạn có thể thêm chúng vào đoạn văn bằng cách sử dụng`Paragraph.AppendChild(run)` phương pháp.
 
 #### Câu hỏi: Tôi có thể thêm văn bản gạch ngang vào văn bản trong bảng hoặc ô trong Aspose.Words không?
 

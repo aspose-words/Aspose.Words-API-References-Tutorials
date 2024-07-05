@@ -56,7 +56,7 @@ Laten we nu de documenten vergelijken met behulp van de Compare-methode van de D
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- De`Compare` methode vergelijkt document A met document B en slaat de wijzigingen in document A op. U kunt ter referentie de naam van de auteur en de vergelijkingsdatum opgeven.
+ De`Compare`methode vergelijkt document A met document B en slaat de wijzigingen in document A op. U kunt ter referentie de naam van de auteur en de vergelijkingsdatum opgeven.
 
 ## Conclusie
 
@@ -95,7 +95,7 @@ A: Volg deze stappen om de granulariteit van vergelijkingen in Aspose.Words voor
 2. Voeg de benodigde samenstellingen toe aan uw project door te verwijzen naar Aspose.Words.
 3.  Maak de documenten die u wilt vergelijken met behulp van de`DocumentBuilder` klas.
 4.  Configureer de vergelijkingsopties door een`CompareOptions` object en het instellen van de`Granularity` woning op het gewenste niveau brengen (bijv.`Granularity.CharLevel` voor vergelijking op tekenniveau).
-5.  Gebruik de`Compare` methode op het ene document, het andere document doorgeven en de`CompareOptions` object als parameters. Deze methode vergelijkt de documenten op basis van de opgegeven granulariteit en slaat de wijzigingen op in het eerste document.
+5.  Gebruik de`Compare`methode op het ene document, het andere document doorgeven en de`CompareOptions` object als parameters. Deze methode vergelijkt de documenten op basis van de opgegeven granulariteit en slaat de wijzigingen op in het eerste document.
 
 #### Vraag: Wat zijn de beschikbare niveaus van vergelijkingsgranulariteit in Aspose.Words voor .NET?
 

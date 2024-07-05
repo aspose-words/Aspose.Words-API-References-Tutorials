@@ -12,7 +12,7 @@ Ha Java-alapú dokumentumfeldolgozással dolgozik, az Aspose.Words for Java egy 
 
 ## 1. Bemutatkozás
 
-Az Aspose.Words for Java egy Java könyvtár, amely lehetővé teszi a Word dokumentumok programozott kezelését. Az egyik gyakori feladat a dokumentum különálló oldalakra való felosztása, amely különféle célokra, például archiválásra, nyomtatásra vagy dokumentumfeldolgozásra hasznos lehet.
+Az Aspose.Words for Java egy Java könyvtár, amely lehetővé teszi a Word dokumentumok programozott kezelését. Az egyik gyakori feladat a dokumentum különálló oldalakra való felosztása, amely különféle célokra hasznos lehet, például archiváláshoz, nyomtatáshoz vagy dokumentumfeldolgozáshoz.
 
 ## 2. Előfeltételek
 
@@ -26,7 +26,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a következő e
 A kezdéshez állítsa be fejlesztői környezetét az alábbiak szerint:
 
 - Hozzon létre egy Java-projektet a kívánt integrált fejlesztőkörnyezetben (IDE).
-- Adja hozzá az Aspose.Words for Java könyvtárat a projekthez. Hivatkozhat a[dokumentáció](https://reference.aspose.com/words/java/) részletes útmutatásért.
+- Adja hozzá az Aspose.Words for Java könyvtárat a projekthez. Hivatkozhat a[dokumentáció](https://reference.aspose.com/words/java/) részletes utasításokért.
 
 ## 4. A forráskód megértése
 
@@ -98,12 +98,12 @@ private Document getDocument() {
 	return pageNumberFinder.getDocument();
 }
 /// <összefoglaló>
-/// Lekéri egy oldal dokumentumát.
+/// Beolvassa egy oldal dokumentumát.
 /// </summary>
 /// <param name="pageIndex">
 /// 1 alapú oldal indexe.
 /// </param>
-/// <visszatér>
+/// <visszaad>
 /// A <see cref="Dokumentum"/>.
 /// </returns>
 public Document getDocumentOfPage(int pageIndex) throws Exception {
@@ -118,7 +118,7 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 /// <param name="endIndex">
 /// 1 alapú záróoldal indexe.
 /// </param>
-/// <visszatér>
+/// <visszaad>
 /// A <see cref="Dokumentum"/>.
 /// </returns>
 public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exception {
@@ -160,7 +160,7 @@ public Document getDocument()
 /// <param name="node">
 /// A csomópont.
 /// </param>
-/// <visszatér>
+/// <visszaad>
 /// Oldalmutató.
 /// </returns>
 public int getPage(Node node) throws Exception {
@@ -174,7 +174,7 @@ public int getPage(Node node) throws Exception {
 /// <param name="node">
 /// A csomópont.
 /// </param>
-/// <visszatér>
+/// <visszaad>
 /// Oldalmutató.
 /// </returns>
 public int getPageEnd(Node node) throws Exception {
@@ -188,7 +188,7 @@ public int getPageEnd(Node node) throws Exception {
 /// <param name="node">
 /// A csomópont.
 /// </param>
-/// <visszatér>
+/// <visszaad>
 /// Oldalmutató.
 /// </returns>
 public int pageSpan(Node node) throws Exception {
@@ -206,7 +206,7 @@ public int pageSpan(Node node) throws Exception {
 /// <param name="nodeType">
 /// A csomópont típusa.
 /// </param>
-/// <visszatér>
+/// <visszaad>
 /// A <see cref="IList{T}"/>.
 /// </returns>
 public ArrayList<Node> retrieveAllNodesOnPages(int startPage, int endPage, /*NodeType*/int nodeType) throws Exception
@@ -662,7 +662,7 @@ private static void removePageBreak(Run run)
 
 ## Következtetés
 
-Most már megtanulta, hogyan lehet egy dokumentumot külön oldalakra osztani az Aspose.Words for Java segítségével. Ez az útmutató átfogó, lépésről lépésre bemutatott oktatóanyagot tartalmaz forráskód-példákkal. Tovább szabhatja és kibővítheti ezt a kódot, hogy megfeleljen a dokumentumokkal végzett munka során felmerülő speciális követelményeknek.
+Most megtanulta, hogyan lehet egy dokumentumot külön oldalakra osztani az Aspose.Words for Java segítségével. Ez az útmutató egy átfogó, lépésről lépésre bemutatott oktatóanyagot tartalmaz forráskód-példákkal. Tovább szabhatja és kibővítheti ezt a kódot, hogy megfeleljen a dokumentumokkal végzett munka során felmerülő speciális követelményeknek.
 Biztosan! Adjunk hozzá egy GYIK részt az útmutatónkhoz, amely az Aspose.Words for Java használatával oldalakra bontja a dokumentumokat.
 
 ## GYIK

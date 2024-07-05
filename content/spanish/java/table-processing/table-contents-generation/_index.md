@@ -115,7 +115,7 @@ Sí, puedes generar múltiples TOC en un solo documento. Utilice diferentes cód
 
 ### ¿Aspose.Words para Java es adecuado tanto para documentos pequeños como grandes?
 
-¡Absolutamente! Aspose.Words para Java es versátil y puede manejar documentos de distintos tamaños, desde pequeños informes hasta novelas extensas.
+¡Absolutamente! Aspose.Words para Java es versátil y puede manejar documentos de diferentes tamaños, desde pequeños informes hasta novelas extensas.
 
 ### ¿Puedo personalizar la apariencia de mis entradas TOC?
 

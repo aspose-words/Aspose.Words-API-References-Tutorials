@@ -75,7 +75,7 @@ builder.Writeln("Section 1. Unprotected.");
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 
-// Защита раздела работает только тогда, когда защита документа отключена и разрешено только редактирование в полях формы.
+// Защита раздела работает только при включенной защите документа и разрешено только редактирование в полях формы.
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
 //По умолчанию все разделы защищены, но мы можем выборочно отключить защиту.
@@ -101,7 +101,7 @@ doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 #### Вопрос: Как я могу создавать неограниченные разделы, используя Aspose.Words для .NET?
 
 О: Чтобы создать неограниченные разделы в документе Word с помощью Aspose.Words for .NET, вы можете выполнить следующие действия:
-1.  Создайте экземпляр`Document` класс и`DocumentBuilder` Объект Object.
+1.  Создайте экземпляр`Document` класс и`DocumentBuilder` объект.
 2.  Использовать`DocumentBuilder` для добавления содержимого в документ и вставки разрывов разделов.
 3.  Защитите документ с помощью`Protect` метод`Document` объект, указав желаемый тип защиты и пароль.
 4.  Отключите защиту определенного раздела, установив параметр`ProtectedForForms` собственность соответствующего`Section` Возражать`false`.

@@ -97,4 +97,4 @@ document.sections.remove(section_to_remove)
 ## Závěr
 Aspose.Words pro Python poskytuje komplexní sadu nástrojů pro efektivní rozdělení a formátování dokumentů podle vašich potřeb. Dodržováním kroků popsaných v tomto kurzu a využitím poskytnutých příkladů zdrojového kódu můžete bez problémů spravovat své dokumenty a prezentovat je profesionálně.
 
-tomto tutoriálu jsme probrali základy rozdělování a formátování dokumentů a poskytli řešení běžných otázek. Nyní je řada na vás, abyste prozkoumali a experimentovali s možnostmi Aspose.Words pro Python, abyste dále vylepšili pracovní postup správy dokumentů.
+tomto tutoriálu jsme probrali základy rozdělování a formátování dokumentů a poskytli řešení běžných otázek. Nyní je řada na vás, abyste prozkoumali a experimentovali s možnostmi Aspose.Words pro Python, abyste dále zlepšili svůj pracovní postup správy dokumentů.

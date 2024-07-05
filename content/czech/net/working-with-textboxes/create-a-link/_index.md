@@ -50,7 +50,7 @@ if (textBox1.IsValidLinkTarget(textBox2))
 
 gratuluji! Nyní jste se naučili, jak vytvořit propojení mezi dvěma textovými poli v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Pomocí tohoto podrobného průvodce jste byli schopni nastavit dokument, vytvořit tvary textových polí, získat přístup k textovým polím, zkontrolovat platnost cíle odkazu a nakonec vytvořit samotný odkaz.
 
-### Časté dotazy k vytvoření odkazu ve Wordu
+### Nejčastější dotazy k vytvoření odkazu ve Wordu
 
 #### Otázka: Jaká knihovna se používá k propojení textových polí ve Wordu pomocí Aspose.Words for .NET?
 

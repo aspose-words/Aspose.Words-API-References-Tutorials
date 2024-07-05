@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Steg 3: Lägg till textvattenstämpel med specifika alternativ
 
- Vi kommer att skapa en instans av`TextWatermarkOptions` klass och ställ in önskade alternativ för textens vattenstämpel.
+ Vi kommer att skapa en instans av`TextWatermarkOptions`klass och ställ in önskade alternativ för textens vattenstämpel.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

@@ -10,7 +10,7 @@ url: /cs/java/document-loading-and-saving/loading-and-saving-html-documents/
 
 ## Úvod do načítání a ukládání dokumentů HTML pomocí Aspose.Words pro Javu
 
-V tomto článku prozkoumáme, jak načíst a uložit dokumenty HTML pomocí knihovny Aspose.Words for Java. Aspose.Words je výkonné Java API, které vám umožňuje pracovat s dokumenty aplikace Word a poskytuje různé funkce pro práci s různými formáty dokumentů, včetně HTML. Provedeme vás procesem krok za krokem, včetně příkladů zdrojového kódu.
+V tomto článku prozkoumáme, jak načíst a uložit dokumenty HTML pomocí knihovny Aspose.Words for Java. Aspose.Words je výkonné Java API, které vám umožňuje pracovat s dokumenty Wordu a poskytuje různé funkce pro práci s různými formáty dokumentů, včetně HTML. Provedeme vás procesem krok za krokem, včetně příkladů zdrojového kódu.
 
 ## Předpoklady
 

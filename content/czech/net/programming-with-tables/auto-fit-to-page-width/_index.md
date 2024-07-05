@@ -1,6 +1,6 @@
 ---
-title: Automatické přizpůsobení oknu
-linktitle: Automatické přizpůsobení oknu
+title: Automaticky Přizpůsobit Oknu
+linktitle: Automaticky Přizpůsobit Oknu
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak automaticky přizpůsobit tabulky šířce stránky v dokumentech Word pomocí Aspose.Words for .NET s tímto komplexním průvodcem krok za krokem. Ideální pro automatizaci pracovního toku dokumentů.
 type: docs

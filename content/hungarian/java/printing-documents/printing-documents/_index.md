@@ -192,7 +192,7 @@ Gratulálunk! Sikeresen kinyomtatott egy Word-dokumentumot az Aspose.Words for J
 
 ### 2. kérdés: Az Aspose.Words for Java alkalmas kötegelt nyomtatásra?
 
-Teljesen! Az Aspose.Words for Java kiválóan alkalmas kötegelt nyomtatási feladatokra. Iterálhatja a dokumentumok listáját, és egyenként nyomtathatja ki őket hasonló kóddal.
+Teljesen! Az Aspose.Words for Java kiválóan alkalmas kötegelt nyomtatási feladatokra. Ismételheti a dokumentumok listáját, és egyenként nyomtathatja ki őket hasonló kóddal.
 
 ### 3. kérdés: Hogyan kezelhetem a nyomtatási hibákat vagy kivételeket?
 

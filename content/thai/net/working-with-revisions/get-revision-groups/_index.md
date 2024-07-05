@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### ถาม: จะเรียกดูกลุ่มการแก้ไขในเอกสารใน Aspose.Words for .NET ได้อย่างไร
 
- ตอบ: ใช้`Groups` คุณสมบัติของเอกสาร`Revisions` วัตถุเพื่อรับการรวบรวมกลุ่มการแก้ไข จากนั้นคุณสามารถใช้การวนซ้ำเพื่อวนซ้ำกลุ่มการตรวจทานแต่ละกลุ่มได้
+ ตอบ: ใช้`Groups` คุณสมบัติของเอกสาร`Revisions`วัตถุเพื่อรับการรวบรวมกลุ่มการแก้ไข จากนั้นคุณสามารถใช้การวนซ้ำเพื่อวนซ้ำกลุ่มการตรวจทานแต่ละกลุ่มได้
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### ถาม: จะรับประเภทการแก้ไขของกลุ่มการแก้ไขใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: ใช้`RevisionType` ทรัพย์สินของ`RevisionGroup`วัตถุเพื่อรับประเภทการแก้ไขของกลุ่ม
+ ตอบ: ใช้`RevisionType` ทรัพย์สินของ`RevisionGroup` วัตถุเพื่อรับประเภทการแก้ไขของกลุ่ม
 
 ```csharp
 string revisionType = group.RevisionType;

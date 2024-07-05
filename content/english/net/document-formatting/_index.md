@@ -13,12 +13,12 @@ The tutorial covers various aspects such as formatting text, paragraphs, tables,
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Space Between Asian And Latin Text In Word Document](./space-between-asian-and-latin-text/) | Learn how to automatically adjust the space between Asian and Latin text in word document with Aspose.Words for .NET. |
-| [Asian Typography Line Break Group In Word Document](./asian-typography-line-break-group/) | Learn how to use Asian Typography line break group in word document with Aspose.Words for .NET. |
-| [Paragraph Formatting In Word Document](./paragraph-formatting/) | Learn how to apply custom formatting to your paragraphs in word document with Aspose.Words for .NET. |
-| [Multilevel List Formatting In Word Document](./multilevel-list-formatting/) | Learn how to create a multilevel list and apply custom formatting in word document with Aspose.Words for .NET. |
-| [Apply Paragraph Style In Word Document](./apply-paragraph-style/) | Learn how to apply a paragraph style in word document using Aspose.Words for .NET. |
-| [Apply Borders And Shading To Paragraph In Word Document](./apply-borders-and-shading-to-paragraph/) | Learn how to apply borders and shading to a paragraph in word document with Aspose.Words for .NET. |
-| [Change Asian Paragraph Spacing And Indents In Word Document](./change-asian-paragraph-spacing-and-indents/) | Learn how to change Asian paragraph spacing and indents in word document with Aspose.Words for .NET. |
-| [Snap To Grid In Word Document](./snap-to-grid/) | Step by step guide to explain C# source code of Snap to Grid in word document feature with Aspose.Words for .NET. |
-| [Get Paragraph Style Separator In Word Document](./get-paragraph-style-separator/) | Learn how to get the paragraph style separator in word document with Aspose.Words for .NET. |
+| [Space Between Asian And Latin Text In Word Document](./space-between-asian-and-latin-text/) | Learn how to automatically adjust space between Asian and Latin text in Word documents using Aspose.Words for .NET with our detailed, step-by-step guide. |
+| [Asian Typography Line Break Group In Word Document](./asian-typography-line-break-group/) | Master Asian typography line breaks in Word documents using Aspose.Words for .NET. This guide provides a step-by-step tutorial for precise formatting. |
+| [Paragraph Formatting In Word Document](./paragraph-formatting/) | Learn how to effortlessly format paragraphs in Word documents using Aspose.Words for .NET with our step-by-step guide. |
+| [Multilevel List Formatting In Word Document](./multilevel-list-formatting/) | Learn how to master multilevel list formatting in Word documents using Aspose.Words for .NET with our step-by-step guide. Enhance document structure effortlessly. |
+| [Apply Paragraph Style In Word Document](./apply-paragraph-style/) | Learn how to apply paragraph styles in a Word document using Aspose.Words for .NET. Follow our step-by-step guide for a polished, professional document. |
+| [Apply Borders And Shading To Paragraph In Word Document](./apply-borders-and-shading-to-paragraph/) | Apply borders and shading to paragraphs in Word documents using Aspose.Words for .NET. Follow our step-by-step guide to enhance your document formatting. |
+| [Change Asian Paragraph Spacing And Indents In Word Document](./change-asian-paragraph-spacing-and-indents/) | Learn how to change Asian paragraph spacing and indents in Word documents using Aspose.Words for .NET with this comprehensive, step-by-step guide. |
+| [Snap To Grid In Word Document](./snap-to-grid/) | Learn how to enable Snap to Grid in Word documents using Aspose.Words for .NET. This detailed tutorial covers prerequisites, step-by-step guide, and FAQs. |
+| [Get Paragraph Style Separator In Word Document](./get-paragraph-style-separator/) | Learn how to identify and handle paragraph style separators in Word documents using Aspose.Words for .NET with this comprehensive, step-by-step tutorial. |

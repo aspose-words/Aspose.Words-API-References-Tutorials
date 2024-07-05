@@ -41,7 +41,7 @@ builder. EndTable();
 ```
 
 ## 4. Adım: Bir tablo stili oluşturun
- Artık tablo stilini kullanarak bir tablo stili oluşturabiliriz.`TableStyle` sınıf ve`Add()` belgeden yöntem`s `Styles koleksiyonu. Stilin kenarlıklar, kenar boşlukları ve dolgular gibi özelliklerini tanımlarız.
+ Artık aşağıdaki komutu kullanarak bir tablo stili oluşturabiliriz.`TableStyle` sınıf ve`Add()` belgeden yöntem`s `Styles koleksiyonu. Stilin kenarlıklar, kenar boşlukları ve dolgular gibi özelliklerini tanımlarız.
 
 ```csharp
 TableStyle tableStyle = (TableStyle)doc.Styles.Add(StyleType.Table, "MyTableStyle1");

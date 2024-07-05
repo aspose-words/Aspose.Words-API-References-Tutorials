@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 
 W tym samouczku zbadaliśmy funkcjonalność pobierania zakresu stron JPEG za pomocą Aspose.Words dla .NET. Dowiedzieliśmy się, jak konwertować określony zakres stron dokumentu na obrazy w formacie JPEG, dostosowując jednocześnie opcje zapisywania.
 
-Ta funkcja jest przydatna, gdy chcesz wyodrębnić określone strony z dokumentu i zapisać je jako obrazy JPEG. Możesz także dostosować jasność, kontrast i rozdzielczość poziomą obrazów, aby uzyskać spersonalizowane rezultaty.
+Ta funkcja jest przydatna, gdy chcesz wyodrębnić określone strony z dokumentu i zapisać je jako obrazy JPEG. Można także dostosować jasność, kontrast i rozdzielczość poziomą obrazów, aby uzyskać spersonalizowane rezultaty.
 
 Aspose.Words dla .NET oferuje szeroką gamę zaawansowanych funkcji do manipulowania i generowania dokumentów. Uzyskanie zakresu stron w formacie JPEG jest jednym z wielu potężnych narzędzi, jakie udostępnia.
 

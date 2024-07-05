@@ -1,6 +1,6 @@
 ---
-title: 이탈리아어 텍스트
-linktitle: 이탈리아어 텍스트
+title: 기울임꼴 텍스트
+linktitle: 기울임꼴 텍스트
 second_title: Aspose.Words 문서 처리 API
 description: .NET용 Aspose.Words 단계별 가이드를 통해 기울임꼴 텍스트를 만드는 방법을 알아보세요.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // 문서 빌더를 사용하여 문서에 콘텐츠를 추가합니다.
 DocumentBuilder builder = new DocumentBuilder();
 
-// 텍스트를 이탈리아어로 만듭니다.
+// 텍스트를 기울임꼴로 만듭니다.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

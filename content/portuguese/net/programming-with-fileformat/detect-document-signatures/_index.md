@@ -72,7 +72,7 @@ Este tutorial forneceu um guia passo a passo sobre como detectar assinatura digi
 
 #### Como especificar o diretório que contém os documentos onde procurar a assinatura digital?
 
- Para especificar o diretório que contém os documentos nos quais deseja pesquisar a assinatura digital, você deve modificar o arquivo`dataDir` variáveis no código. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório de documentos.
+ Para especificar o diretório que contém os documentos nos quais deseja pesquisar a assinatura digital, você deve modificar o arquivo`dataDir` variável no código. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

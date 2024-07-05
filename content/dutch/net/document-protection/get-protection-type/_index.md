@@ -50,7 +50,7 @@ In dit artikel hebben we uitgelegd hoe u de functie Get Protection Type van Aspo
 
 A: Om het beveiligingstype van een document op te halen met Aspose.Words voor .NET, kunt u deze stappen volgen:
 1.  Laad het document met behulp van de`Document` klas.
-2.  Toegang krijgen tot`ProtectionType` eigendom van de`Document` object om het beveiligingstype op te halen.
+2.  Toegang krijgen tot`ProtectionType` eigendom van de`Document`object om het beveiligingstype op te halen.
 
 #### Vraag: Kan ik bepalen of een document is beveiligd voor formulieren of formuliervelden met behulp van de eigenschap ProtectionType?
 

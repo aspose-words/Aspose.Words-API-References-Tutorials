@@ -61,7 +61,7 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // Velden bijwerken.
 document. UpdateFields();
 
-//Weergave van veldresultaten.
+// Weergave van veldresultaten.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
@@ -74,11 +74,11 @@ Hiermee is onze handleiding voor het gebruik van de functie "Veldresultaten weer
 
 #### Vraag: Wat is een resultaatweergaveveld in Aspose.Words?
 
-A: Een resultaatweergaveveld in Aspose.Words is een type veld dat het resultaat van een bewerking of berekening in een Word-document weergeeft. Een resultaatweergaveveld kan bijvoorbeeld worden gebruikt om de som van meerdere waarden of het resultaat van een wiskundige formule weer te geven.
+A: Een resultaatweergaveveld in Aspose.Words is een type veld dat het resultaat van een bewerking of berekening in een Word-document weergeeft. Een resultaatweergaveveld kan bijvoorbeeld worden gebruikt om de som van verschillende waarden of het resultaat van een wiskundige formule weer te geven.
 
 #### Vraag: Hoe kan ik een resultaatweergaveveld in een Word-document bijwerken met Aspose.Words?
 
-A: Om een resultaatweergaveveld in een Word-document bij te werken met Aspose.Words, kunt u de UpdateFields-methode gebruiken. Deze methode doorloopt het document en werkt alle velden bij, inclusief velden voor resultaatweergave, waarbij waarden opnieuw worden berekend op basis van de huidige gegevens.
+A: Om een resultaatweergaveveld in een Word-document bij te werken met Aspose.Words, kunt u de UpdateFields-methode gebruiken. Deze methode loopt door het document en werkt alle velden bij, inclusief velden voor de weergave van resultaten, waarbij de waarden opnieuw worden berekend op basis van de huidige gegevens.
 
 #### Vraag: Kan ik het resultaat dat wordt weergegeven in een resultaatweergaveveld opmaken?
 

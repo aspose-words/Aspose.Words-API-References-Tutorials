@@ -232,7 +232,7 @@ Ha elkészült a táblázat, exportálhatja különféle formátumokba, példáu
 
 ## Következtetés
 
-Az Aspose.Words for Python átfogó eszköztárat kínál dokumentumtáblázatok létrehozásához, stílusához és formázásához. A cikkben ismertetett lépések követésével hatékonyan kezelheti a dokumentumok táblázatait, testreszabhatja megjelenésüket, és exportálhatja azokat különböző formátumokba. Használja ki az Aspose.Word erejét, hogy javítsa dokumentumbemutatóit, és világos, tetszetős információkat biztosítson olvasóinak.
+Az Aspose.Words for Python átfogó eszköztárat kínál dokumentumtáblázatok létrehozásához, stílusához és formázásához. A cikkben ismertetett lépések követésével hatékonyan kezelheti a dokumentumok táblázatait, testreszabhatja megjelenésüket, és exportálhatja azokat különböző formátumokba. Használja ki az Aspose.Words erejét, hogy javítsa dokumentumbemutatóit, és világos, tetszetős információkat biztosítson olvasóinak.
 
 ## GYIK
 

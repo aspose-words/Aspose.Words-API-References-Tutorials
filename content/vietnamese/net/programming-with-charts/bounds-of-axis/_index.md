@@ -8,7 +8,7 @@ weight: 10
 url: /vi/net/programming-with-charts/bounds-of-axis/
 ---
 
-Hướng dẫn này giải thích cách đặt giới hạn của một trục trong biểu đồ bằng Aspose.Words cho .NET. Bằng cách chèn biểu đồ, thêm dữ liệu chuỗi và định cấu hình chia tỷ lệ trục, bạn có thể xác định giá trị tối thiểu và tối đa cho trục.
+Hướng dẫn này giải thích cách đặt giới hạn của một trục trong biểu đồ bằng Aspose.Words cho .NET. Bằng cách chèn biểu đồ, thêm dữ liệu chuỗi và định cấu hình tỷ lệ trục, bạn có thể xác định giá trị tối thiểu và tối đa cho trục.
 
 ## Điều kiện tiên quyết
 Để làm theo hướng dẫn này, bạn cần có những điều sau:
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tạo Tài liệu mới và DocumentBuilder
- Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder` đối tượng làm việc với tài liệu.
+ Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder`đối tượng làm việc với tài liệu.
 
 ```csharp
 Document doc = new Document();
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 Đó là nó! Bạn đã đặt thành công giới hạn của một trục trong biểu đồ bằng Aspose.Words for .NET.
 
 ## Phần kết luận
-Trong hướng dẫn này, bạn đã học cách đặt giới hạn của một trục trong biểu đồ bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước, bạn có thể chèn và định cấu hình biểu đồ, thêm dữ liệu chuỗi cũng như xác định giá trị tối thiểu và tối đa cho tỷ lệ trục. Aspose.Words for .NET cung cấp API mạnh mẽ và linh hoạt để Xử lý văn bản bằng tài liệu Word, cho phép bạn tạo các biểu đồ động và hấp dẫn trực quan một cách dễ dàng.
+Trong hướng dẫn này, bạn đã học cách đặt giới hạn của một trục trong biểu đồ bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước, bạn có thể chèn và đặt cấu hình biểu đồ, thêm dữ liệu chuỗi cũng như xác định giá trị tối thiểu và tối đa cho tỷ lệ trục. Aspose.Words for .NET cung cấp API mạnh mẽ và linh hoạt để Xử lý văn bản bằng tài liệu Word, cho phép bạn tạo các biểu đồ động và hấp dẫn trực quan một cách dễ dàng.
 
 
 ### Câu hỏi thường gặp
@@ -95,7 +95,7 @@ Trong hướng dẫn này, bạn đã học cách đặt giới hạn của mộ
 Aspose.Words for .NET là một thư viện cho phép các nhà phát triển làm việc với các tài liệu Word theo chương trình. Nó cung cấp nhiều tính năng và chức năng để tạo, thao tác và lưu tài liệu Word.
 
 #### Q2. Làm cách nào tôi có thể cài đặt Aspose.Words cho .NET?
-Để cài đặt Aspose.Words cho .NET, bạn có thể sử dụng trình quản lý gói NuGet trong Visual Studio. Chỉ cần tìm kiếm "Apose.Words" trong trình quản lý gói NuGet và cài đặt nó vào dự án của bạn.
+Để cài đặt Aspose.Words cho .NET, bạn có thể sử dụng trình quản lý gói NuGet trong Visual Studio. Chỉ cần tìm kiếm "Aspose.Words" trong trình quản lý gói NuGet và cài đặt nó vào dự án của bạn.
 
 #### Q3. Tôi có thể sử dụng Aspose.Words cho .NET với các ngôn ngữ lập trình khác không?
 Không, Aspose.Words for .NET được thiết kế riêng cho các ứng dụng .NET. Nó hoạt động với các ngôn ngữ lập trình như C# và VB.NET.

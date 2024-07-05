@@ -25,7 +25,7 @@ Ini adalah tautan ke beberapa sumber yang bermanfaat:
 - [Bekerja dengan Daftar](./net/working-with-list/)   
 - [Bekerja dengan penurunan harga](./net/working-with-markdown/)   
 - [Bekerja dengan Node.js](./net/working-with-node/)   
-- [Bekerja dengan Ulasan](./net/working-with-revisions/)   
+- [Bekerja dengan Revisi](./net/working-with-revisions/)   
 - [Bekerja dengan Kotak Teks](./net/working-with-textboxes/)   
 - [Pisahkan Dokumen](./net/split-document/)   
 - [Tambahkan Konten Menggunakan Pembuat Dokumen](./net/add-content-using-documentbuilder/)

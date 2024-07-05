@@ -12,7 +12,7 @@ Ebből az átfogó oktatóanyagból megtudhatja, hogyan rögzítheti a megjegyz�
 
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Aspose.Words for .NET könyvtár telepítve van a rendszerére.
+- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
 ## 1. lépés: Hozzon létre egy új dokumentumot és adjon hozzá szöveget
 Kezdésként hozzon létre egy új dokumentumot a Dokumentum osztály segítségével, és adja hozzá a kívánt szöveget:

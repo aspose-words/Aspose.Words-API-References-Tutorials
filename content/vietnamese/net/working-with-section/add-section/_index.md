@@ -16,7 +16,7 @@ Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
 - Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
 
 ## Bước 1: Tạo tài liệu và hàm tạo
- Đầu tiên, chúng ta sẽ tạo một thể hiện của`Document` lớp và một liên quan`DocumentBuilder` constructor để xây dựng tài liệu.
+ Đầu tiên, chúng ta sẽ tạo một thể hiện của`Document` lớp và một liên kết`DocumentBuilder` constructor để xây dựng tài liệu.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## Bước 3: Thêm phần mới
- Để thêm một phần mới vào tài liệu, chúng ta sẽ tạo một thể hiện của`Section` lớp và thêm nó vào`Sections` việc thu thập tài liệu.
+ Để thêm một phần mới vào tài liệu, chúng ta sẽ tạo một thể hiện của`Section` lớp và thêm nó vào`Sections` việc sưu tầm tài liệu.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
@@ -64,7 +64,7 @@ Trong hướng dẫn này, chúng ta đã biết cách thêm phần mới vào t
 
 #### Câu hỏi: Làm cách nào để tạo tài liệu và hàm tạo mới trong Aspose.Words cho .NET?
 
- Đáp: Để tạo một tài liệu và hàm tạo mới trong Aspose.Words cho .NET, bạn có thể sử dụng đoạn mã sau. Ở đây chúng ta tạo một thể hiện của`Document` lớp và một liên quan`DocumentBuilder` hàm tạo để xây dựng tài liệu:
+ Đáp: Để tạo một tài liệu và hàm tạo mới trong Aspose.Words cho .NET, bạn có thể sử dụng đoạn mã sau. Ở đây chúng ta tạo một thể hiện của`Document` lớp và một liên kết`DocumentBuilder` hàm tạo để xây dựng tài liệu:
 
 ```csharp
 Document doc = new Document();

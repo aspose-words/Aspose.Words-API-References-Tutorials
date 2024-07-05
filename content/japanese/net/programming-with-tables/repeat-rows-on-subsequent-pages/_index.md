@@ -2,42 +2,42 @@
 title: 後続のページで行を繰り返す
 linktitle: 後続のページで行を繰り返す
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書の後続のページで表の行を繰り返す方法を学びます。
+description: Aspose.Words for .NET を使用して、Word 文書内の後続のページで表の行を繰り返す方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書の後続のページで表の行を繰り返す方法を学習します。ステップバイステップのガイドに従ってコードを理解し、この機能を実装していきます。このチュートリアルを終えると、Word 文書内の表の後続ページで繰り返す行を指定できるようになります。
+このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書の以降のページで表の行を繰り返す方法を学習します。ステップ バイ ステップ ガイドに従ってコードを理解し、この機能を実装します。このチュートリアルの最後には、Word 文書の表の以降のページで繰り返す行を指定できるようになります。
 
-## ステップ 1: プロジェクトのセットアップ
+## ステップ1: プロジェクトのセットアップ
 1. Visual Studio を起動し、新しい C# プロジェクトを作成します。
 2. Aspose.Words for .NET ライブラリへの参照を追加します。
 
-## ステップ 2: ドキュメントの作成とドキュメント ジェネレーターの初期化
-ドキュメントおよびドキュメント ジェネレーターを使用して Word Processing を開始するには、次の手順に従います。
+## ステップ2: ドキュメントの作成とドキュメントジェネレータの初期化
+ドキュメントとドキュメント ジェネレーターを使用して Words Processing を開始するには、次の手順に従います。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//書類作成
+//ドキュメント作成
 Document doc = new Document();
 
-//ドキュメントジェネレーターを初期化する
+//ドキュメントジェネレータを初期化する
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-必ず「YOUR DOCUMENTS DIRECTORY」をドキュメント ディレクトリへの実際のパスに置き換えてください。
+「YOUR DOCUMENTS DIRECTORY」を、ドキュメント ディレクトリへの実際のパスに置き換えてください。
 
-## ステップ 3: 繰り返し行を含むテーブルを構築する
-次に、後続のページに繰り返し行を含むテーブルを作成します。次のコードを使用します。
+## ステップ3: 繰り返し行を含むテーブルの構築
+次に、後続のページで行が繰り返されるテーブルを構築します。次のコードを使用します。
 
 ```csharp
-//テーブルの始まり
+//表の始まり
 builder. StartTable();
 
-// 1行目のパラメータ（ヘッダ行）の設定
+//最初の行のパラメータ（ヘッダー行）の設定
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
@@ -47,7 +47,7 @@ builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
 
-//1行目の2番目のセルを挿入
+//最初の行の2番目のセルを挿入します
 builder. InsertCell();
 builder.Writeln("Header line 2");
 builder. EndRow();
@@ -56,7 +56,7 @@ builder. EndRow();
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 
-//ループして次の行にセルを挿入します
+//次の行にセルを挿入するループ
 for (int i = 0; i < 50; i++)
 {
 builder. InsertCell();
@@ -67,16 +67,16 @@ builder.Write("Text column 2");
 builder. EndRow();
 }
 
-//テーブルの終わり
+//表の終わり
 builder. EndTable();
 ```
 
-ここでは、ドキュメント ビルダーを使用して、2 つのヘッダー行と複数のデータ行を含むテーブルを作成します。の`RowFormat.HeadingFormat`パラメータは、後続のページで繰り返されるヘッダー行をマークするために使用されます。
+ここでは、ドキュメントビルダーを使用して、2つのヘッダー行と複数のデータ行を持つテーブルを作成します。`RowFormat.HeadingFormat`パラメータは、後続のページで繰り返されるヘッダー行をマークするために使用されます。
 
-## ステップ 4: 変更したドキュメントを保存する
+## ステップ4: 変更したドキュメントを保存する
 ついに米国
 
-  表の後続のページにヘッダー行が繰り返されるように変更したドキュメントを保存する必要があります。次のコードを使用します。
+  ヘッダー行を表の後続のページに繰り返して変更したドキュメントを保存する必要があります。次のコードを使用します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 
 出力ドキュメントの正しいパスとファイル名を必ず指定してください。
 
-### Aspose.Words for .NET を使用した後続のページで行を繰り返すサンプル ソース コード 
+### Aspose.Words for .NET を使用して後続のページで行を繰り返すサンプル ソース コード 
 
 ```csharp
 //ドキュメントディレクトリへのパス
@@ -117,4 +117,4 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書の後続のページで表の行を繰り返す方法を学習しました。このステップバイステップ ガイドに従い、提供されている C# コードを実装すると、Word 文書内で特定のニーズに応じて繰り返す行を指定できます。
+このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書の以降のページで表の行を繰り返す方法を学習しました。このステップ バイ ステップ ガイドに従い、提供されている C# コードを実装することで、Word 文書で特定のニーズに応じて繰り返す行を指定できます。

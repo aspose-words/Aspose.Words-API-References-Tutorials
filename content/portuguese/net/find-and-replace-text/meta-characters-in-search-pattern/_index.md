@@ -43,7 +43,7 @@ doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 
 ## Passo 4: Inserindo uma quebra de página no documento
 
- Para ilustrar o uso de outro metacaractere, inseriremos uma quebra de página no documento usando o comando`InsertBreak` método com o`BreakType.PageBreak` parâmetros. Primeiro movemos o cursor do`DocumentBuilder` ao final do documento, inserimos a quebra de página e uma nova linha de texto:
+ Para ilustrar o uso de outro metacaractere, inseriremos uma quebra de página no documento usando o comando`InsertBreak` método com o`BreakType.PageBreak` parâmetro. Primeiro movemos o cursor do`DocumentBuilder` ao final do documento, inserimos a quebra de página e uma nova linha de texto:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -141,7 +141,7 @@ doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
 
 #### P: Como inserir uma quebra de página em um documento usando Aspose.Words for .NET?
 
-R: Para ilustrar o uso de outro metacaractere, inseriremos uma quebra de página no documento usando o`InsertBreak` método com o`BreakType.PageBreak` parâmetros. Primeiro movemos o cursor do`DocumentBuilder` ao final do documento, inserimos a quebra de página e uma nova linha de texto:
+R: Para ilustrar o uso de outro metacaractere, inseriremos uma quebra de página no documento usando o`InsertBreak` método com o`BreakType.PageBreak` parâmetro. Primeiro movemos o cursor do`DocumentBuilder` ao final do documento, inserimos a quebra de página e uma nova linha de texto:
 
 ```csharp
 builder. MoveToDocumentEnd();

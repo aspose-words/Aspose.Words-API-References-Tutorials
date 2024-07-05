@@ -164,7 +164,7 @@ Bu adımları izleyerek, belgelerinizdeki listelerin biçimlendirmesini kontrol 
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Microsoft Word liste şablonlarından birine dayalı numaralandırılmış bir liste oluşturun.
+        // Microsoft Word liste şablonlarından birine dayalı numaralandırılmış bir liste oluşturun
         //ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Bu listede dokuz seviye var, hepsini deneyelim.
@@ -173,7 +173,7 @@ Bu adımları izleyerek, belgelerinizdeki listelerin biçimlendirmesini kontrol 
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Microsoft Word liste şablonlarından birini temel alan madde işaretli bir liste oluşturun.
+        // Microsoft Word liste şablonlarından birini temel alan madde işaretli bir liste oluşturun
         //ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

@@ -158,7 +158,7 @@ Thuộc tính tài liệu đóng một vai trò quan trọng trong việc quản
 
 ### Mục đích của việc liên kết đến nội dung trong tài liệu là gì?
 
-Liên kết đến nội dung trong tài liệu cho phép bạn tạo các tham chiếu động đến các phần cụ thể của tài liệu. Điều này có thể hữu ích cho việc tạo tài liệu tương tác hoặc tham khảo chéo giữa các phần.
+Liên kết đến nội dung trong tài liệu cho phép bạn tạo các tham chiếu động tới các phần cụ thể của tài liệu. Điều này có thể hữu ích cho việc tạo tài liệu tương tác hoặc tham khảo chéo giữa các phần.
 
 ### Làm cách nào tôi có thể chuyển đổi giữa các đơn vị đo lường khác nhau trong Aspose.Words cho Java?
 

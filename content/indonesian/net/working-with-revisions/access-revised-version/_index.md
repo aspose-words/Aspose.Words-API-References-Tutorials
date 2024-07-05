@@ -79,7 +79,7 @@ Dalam tutorial ini, kita mempelajari cara mengakses versi revisi dokumen Word me
 
 #### T: Bagaimana cara memuat dokumen dengan revisi ke Aspose.Words untuk .NET?
 
- J: Gunakan`Document`kelas Aspose.Words untuk .NET untuk memuat dokumen dari file yang berisi revisi. Anda dapat menentukan jalur dokumen lengkap.
+ J: Gunakan`Document` kelas Aspose.Words untuk .NET untuk memuat dokumen dari file yang berisi revisi. Anda dapat menentukan jalur dokumen lengkap.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### T: Bagaimana cara menelusuri revisi dokumen di Aspose.Words untuk .NET?
 
- J: Gunakan a`foreach` loop untuk mengulangi revisi yang ada dalam dokumen. Anda dapat menggunakan`Revisions` properti dari`Document` keberatan untuk mendapatkan kumpulan semua revisi dokumen.
+J: Gunakan a`foreach` loop untuk mengulangi revisi yang ada dalam dokumen. Anda dapat menggunakan`Revisions` properti dari`Document` keberatan untuk mendapatkan kumpulan semua revisi dokumen.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

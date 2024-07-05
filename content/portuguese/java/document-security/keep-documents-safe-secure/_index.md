@@ -26,7 +26,7 @@ Antes de nos aprofundarmos nos aspectos técnicos, vamos entender os conceitos f
  Converta o conteúdo do documento em um formato embaralhado usando algoritmos de criptografia, tornando-o indecifrável sem a chave de descriptografia correta.
 - #### Assinaturas digitais:
  Anexe assinaturas digitais para verificar a autenticidade e integridade do documento.
-- #### Marca d'água:
+- #### Marca d’água:
  Sobreponha marcas d'água visíveis ou invisíveis para indicar propriedade ou confidencialidade.
 - #### Redação:
  Remova permanentemente informações confidenciais do documento.
@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 A marca d'água pode ajudar a proteger a confidencialidade do seu documento e indicar seu status. Aspose.Words for Java oferece recursos de marca d'água fáceis de usar:
 
 ```java
-// Adicione uma marca d'água visível
+// Adicione uma marca d’água visível
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);
@@ -216,4 +216,4 @@ Neste guia passo a passo, exploramos a importância da segurança dos documentos
    Não, Aspose.Words não oferece recursos de recuperação de senha. Certifique-se de manter suas senhas seguras.
 
 ### Posso personalizar a aparência das marcas d’água?
-   Sim, você pode personalizar totalmente a aparência das marcas d’água, incluindo texto, fonte, cor, tamanho e rotação.
+   Sim, você pode personalizar totalmente a aparência das marcas d'água, incluindo texto, fonte, cor, tamanho e rotação.

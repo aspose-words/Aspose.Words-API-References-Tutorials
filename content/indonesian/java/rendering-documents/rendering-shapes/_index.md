@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 Selamat! Anda telah berhasil mempelajari cara merender bentuk di Aspose.Words untuk Java. Kemampuan ini membuka banyak kemungkinan saat bekerja dengan dokumen Word secara terprogram.
 
-## 9.FAQ
+## 9. FAQ
 
 ### Q1: Bisakah saya merender beberapa bentuk dalam satu dokumen?
 

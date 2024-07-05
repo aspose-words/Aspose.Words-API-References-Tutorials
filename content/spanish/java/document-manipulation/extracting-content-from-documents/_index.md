@@ -18,7 +18,7 @@ Antes de sumergirnos en el proceso de extracción, asegúrese de cumplir con los
 
 1.  Aspose.Words para Java: debe tener Aspose.Words para Java instalado y configurado en su entorno de desarrollo Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
 
-2. Un documento del que extraer contenido: para esta guía, usaremos un documento de muestra llamado "Extraer contenido.docx". Asegúrese de tener un documento similar listo para su extracción.
+2. Un documento del que extraer contenido: para esta guía, usaremos un documento de muestra llamado "Extraer contenido.docx". Asegúrese de tener un documento similar listo para la extracción.
 
 ## Extracción de contenido entre nodos a nivel de bloque
 

@@ -10,7 +10,7 @@ url: /pl/net/working-with-hyphenation/hyphenation-callback/
 
 ## Wstęp
 
-No hej! Czy kiedykolwiek byłeś zaplątany w zawiłości formatowania tekstu, szczególnie w przypadku języków wymagających dzielenia wyrazów? Nie jesteś sam. Dzielenie wyrazów, choć kluczowe dla prawidłowego układu tekstu, może przyprawiać o ból głowy. Ale zgadnij co? Aspose.Words dla .NET Cię wspiera. Ta potężna biblioteka umożliwia płynne zarządzanie formatowaniem tekstu, w tym obsługę dzielenia wyrazów poprzez mechanizm wywołania zwrotnego. Zaintrygowany? Zanurzmy się w sedno tego, jak zaimplementować wywołanie zwrotne polegające na dzieleniu wyrazów przy użyciu Aspose.Words dla .NET.
+No hej! Czy kiedykolwiek miałeś trudności z formatowaniem tekstu, szczególnie w przypadku języków wymagających dzielenia wyrazów? Nie jesteś sam. Dzielenie wyrazów, choć kluczowe dla prawidłowego układu tekstu, może przyprawiać o ból głowy. Ale zgadnij co? Aspose.Words dla .NET Cię wspiera. Ta potężna biblioteka umożliwia płynne zarządzanie formatowaniem tekstu, w tym obsługę dzielenia wyrazów poprzez mechanizm wywołania zwrotnego. Zaintrygowany? Zanurzmy się w sedno tego, jak zaimplementować wywołanie zwrotne polegające na dzieleniu wyrazów przy użyciu Aspose.Words dla .NET.
 
 ## Warunki wstępne
 
@@ -19,8 +19,8 @@ Zanim zabrudzimy sobie ręce kodem, upewnijmy się, że mamy wszystko, czego pot
 1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
 2. IDE: środowisko programistyczne, takie jak Visual Studio.
 3. Podstawowa znajomość C#: Zrozumienie C# i frameworku .NET.
-4. Słowniki dzielenia wyrazów: Słowniki dzielenia wyrazów dla języków, których planujesz używać.
-5.  Licencja Aspose: Ważna licencja Aspose. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli go nie masz.
+4. Słowniki dzielenia wyrazów: słowniki dzielenia wyrazów dla języków, których planujesz używać.
+5.  Licencja Aspose: Ważna licencja Aspose. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli go nie masz.
 
 ## Importuj przestrzenie nazw
 

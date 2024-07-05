@@ -2,17 +2,17 @@
 title: Word 文書のヘッダーとフッターの操作
 linktitle: Word 文書のヘッダーとフッターの操作
 second_title: Aspose.Words Python ドキュメント管理 API
-description: Aspose.Words for Python を使用して Word ドキュメントのヘッダーとフッターを操作する方法を学びます。カスタマイズ、追加、削除などのためのソース コードを含むステップバイステップのガイド。今すぐドキュメントの書式設定を強化してください。
+description: Aspose.Words for Python を使用して Word 文書のヘッダーとフッターを操作する方法を学びます。カスタマイズ、追加、削除などを行うためのソース コード付きのステップ バイ ステップ ガイド。今すぐ文書の書式設定を強化しましょう。
 type: docs
 weight: 16
 url: /ja/python-net/document-structure-and-content-manipulation/document-headers-footers/
 ---
-Word 文書のヘッダーとフッターは、コンテンツにコンテキスト、ブランド化、追加情報を提供する上で重要な役割を果たします。 Aspose.Words for Python API を使用してこれらの要素を操作すると、ドキュメントの外観と機能が大幅に向上します。このステップバイステップ ガイドでは、Aspose.Words for Python を使用してヘッダーとフッターを操作する方法を説明します。
+Word 文書のヘッダーとフッターは、コンテンツにコンテキスト、ブランド、および追加情報を提供する上で重要な役割を果たします。Aspose.Words for Python API を使用してこれらの要素を操作すると、文書の外観と機能を大幅に強化できます。このステップ バイ ステップ ガイドでは、Aspose.Words for Python を使用してヘッダーとフッターを操作する方法について説明します。
 
 
-## Aspose.Words for Python の入門
+## Python 用 Aspose.Words を使い始める
 
-ヘッダーとフッターの操作に入る前に、Aspose.Words for Python をセットアップする必要があります。次の手順を実行します：
+ヘッダーとフッターの操作を始める前に、Aspose.Words for Python を設定する必要があります。次の手順に従います。
 
 1. インストール: pip を使用して Aspose.Words for Python をインストールします。
 
@@ -26,7 +26,7 @@ pip install aspose-words
 import aspose.words
 ```
 
-## 単純なヘッダーとフッターの追加
+## シンプルなヘッダーとフッターの追加
 
 Word 文書に基本的なヘッダーとフッターを追加するには、次の手順に従います。
 
@@ -56,7 +56,7 @@ footer_run = footer_paragraph.runs.add()
 footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
 ```
 
-4. ドキュメントの保存: ヘッダーとフッターを含むドキュメントを保存します。
+4. ドキュメントの保存: ヘッダーとフッターを付けてドキュメントを保存します。
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -64,7 +64,7 @@ doc.save("document_with_header_footer.docx")
 
 ## ヘッダーとフッターのコンテンツのカスタマイズ
 
-画像、テーブル、動的フィールドを追加することで、ヘッダーとフッターのコンテンツをカスタマイズできます。例えば：
+画像、表、動的フィールドを追加して、ヘッダーとフッターのコンテンツをカスタマイズできます。例:
 
 1. 画像の追加: ヘッダーまたはフッターに画像を挿入します。
 
@@ -73,7 +73,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. テーブルの追加: 表形式の情報を得るためにテーブルを組み込みます。
+2. テーブルの追加: 表形式の情報にテーブルを組み込みます。
 
 ```python
 footer_table = footer.add_table(1, 2)
@@ -87,11 +87,11 @@ footer_table.rows[0].cells[1].text = "All rights reserved."
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
 ```
 
-## 奇数ページと偶数ページで異なるヘッダーとフッター
+## 奇数ページと偶数ページに異なるヘッダーとフッターを設定する
 
-奇数ページと偶数ページに異なるヘッダーとフッターを作成すると、ドキュメントにプロフェッショナルな雰囲気を加えることができます。その方法は次のとおりです。
+奇数ページと偶数ページに異なるヘッダーとフッターを作成すると、ドキュメントにプロフェッショナルな雰囲気を加えることができます。手順は次のとおりです。
 
-1. 奇数ページと偶数ページのレイアウトの設定: 奇数ページと偶数ページで異なるヘッダーとフッターを許可するようにレイアウトを定義します。
+1. 奇数ページと偶数ページのレイアウトの設定: 奇数ページと偶数ページで異なるヘッダーとフッターを許可するレイアウトを定義します。
 
 ```python
 section = doc.sections[0]
@@ -123,7 +123,7 @@ header.clear_content()
 footer.clear_content()
 ```
 
-2. 異なるヘッダー/フッターの無効化: 必要に応じて、奇数ページと偶数ページの異なるヘッダーとフッターを無効にします。
+2. 異なるヘッダー/フッターを無効にする: 必要に応じて、奇数ページと偶数ページで異なるヘッダーとフッターを無効にします。
 
 ```python
 section.page_setup.different_first_page_header_footer = False
@@ -136,18 +136,18 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ヘッダーとフッターのコンテンツにアクセスするには、`headers_footers`ドキュメントのセクションのプロパティ。
 
-### ヘッダーやフッターに画像を追加できますか?
+### ヘッダーとフッターに画像を追加できますか?
 
-はい、次のコマンドを使用してヘッダーとフッターに画像を追加できます。`add_picture`方法。
+はい、ヘッダーとフッターに画像を追加することができます。`add_picture`方法。
 
-### 奇数ページと偶数ページで異なるヘッダーを使用することは可能ですか?
+### 奇数ページと偶数ページに異なるヘッダーを設定することは可能ですか?
 
-もちろん、適切な設定を有効にすることで、奇数ページと偶数ページに異なるヘッダーとフッターを作成できます。
+はい、適切な設定を有効にすることで、奇数ページと偶数ページに異なるヘッダーとフッターを作成できます。
 
 ### 特定のページからヘッダーとフッターを削除できますか?
 
-はい、ヘッダーとフッターの内容をクリアして効果的に削除できます。
+はい、ヘッダーとフッターの内容をクリアして、効果的に削除することができます。
 
-### Aspose.Words for Python について詳しくはどこで学べますか?
+### Aspose.Words for Python について詳しくはどこで知ることができますか?
 
-さらに詳細なドキュメントと例については、次のサイトを参照してください。[Aspose.Words for Python API リファレンス](https://reference.aspose.com/words/python-net/).
+より詳細なドキュメントと例については、[Aspose.Words for Python API リファレンス](https://reference.aspose.com/words/python-net/).

@@ -104,7 +104,7 @@ Ez a kódsor a dokumentumot "AddContentUsingDocumentBuilder.MoveToHeadersFooters
 ## GYIK
 
 ### Mi az Aspose.Words for .NET?
-Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, módosítását és konvertálását C# használatával.
+Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott, C# használatával történő létrehozását, módosítását és konvertálását.
 
 ### Hozzáadhatok képeket a fejlécekhez és láblécekhez?
  Igen, a fejlécekhez és láblécekhez képeket adhat hozzá a`DocumentBuilder.InsertImage` módszer.

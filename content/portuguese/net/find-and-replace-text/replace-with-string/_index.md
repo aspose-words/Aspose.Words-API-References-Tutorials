@@ -105,7 +105,7 @@ doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forw
 
 #### P: Posso realizar a substituição de texto com distinção entre maiúsculas e minúsculas com a função "Replace With String" no Aspose.Words for .NET?
 
-R: Sim, por padrão, a função "Replace With String" no Aspose.Words for .NET diferencia maiúsculas de minúsculas. Isso significa que ele substituirá apenas o texto que corresponda exatamente à string especificada em termos de maiúsculas e minúsculas. Se desejar realizar uma substituição sem distinção entre maiúsculas e minúsculas, você pode modificar o texto a ser substituído e a sequência de substituição para ter o mesmo caso ou pode usar outras técnicas, como expressões regulares.
+R: Sim, por padrão, a função "Replace With String" no Aspose.Words for .NET diferencia maiúsculas de minúsculas. Isso significa que ele substituirá apenas o texto que corresponda exatamente à string especificada em termos de maiúsculas e minúsculas. Se desejar realizar uma substituição sem distinção entre maiúsculas e minúsculas, você pode modificar o texto a ser substituído e a sequência de substituição para ter o mesmo caso, ou pode usar outras técnicas, como expressões regulares.
 
 #### P: Posso substituir várias ocorrências de uma string em um documento usando a função "Replace With String" no Aspose.Words for .NET?
 

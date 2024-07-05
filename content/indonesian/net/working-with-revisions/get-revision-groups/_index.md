@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### T: Bagaimana cara menelusuri grup revisi dalam dokumen di Aspose.Words untuk .NET?
 
- J: Gunakan`Groups` milik dokumen`Revisions` objek untuk mendapatkan koleksi kelompok revisi. Anda kemudian dapat menggunakan loop untuk mengulang setiap grup ulasan.
+ J: Gunakan`Groups` milik dokumen`Revisions`objek untuk mendapatkan koleksi kelompok revisi. Anda kemudian dapat menggunakan loop untuk mengulang setiap grup ulasan.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### T: Bagaimana cara mendapatkan tipe revisi grup revisi di Aspose.Words untuk .NET?
 
- J: Gunakan`RevisionType` properti dari`RevisionGroup`objek untuk mendapatkan tipe revisi grup.
+ J: Gunakan`RevisionType` properti dari`RevisionGroup` objek untuk mendapatkan tipe revisi grup.
 
 ```csharp
 string revisionType = group.RevisionType;

@@ -13,6 +13,6 @@ Tato stránka poskytuje podrobného průvodce, jak použít licenci v projektech
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Použít licenci ze souboru](./apply-license-from-file/) | Naučte se, jak použít licenci ze souboru pomocí Aspose.Words for .NET.|
-| [Použít licenci ze streamu](./apply-license-from-stream/) | Přečtěte si, jak použít licenci ze streamu pomocí Aspose.Words for .NET.|
-| [Použít měřenou licenci](./apply-metered-license/) | Přečtěte si, jak použít měřenou licenci pomocí Aspose.Words for .NET. |
+| [Použít licenci ze souboru](./apply-license-from-file/) | Naučte se, jak použít licenci ze souboru v Aspose.Words pro .NET pomocí našeho podrobného průvodce krok za krokem. Odemkněte plný potenciál své knihovny bez námahy. |
+| [Použít licenci ze streamu](./apply-license-from-stream/) | Naučte se, jak použít licenci ze streamu v Aspose.Words pro .NET pomocí tohoto podrobného průvodce. Odemkněte plný potenciál Aspose.Words. |
+| [Použít měřenou licenci](./apply-metered-license/) | Naučte se, jak použít měřenou licenci v Aspose.Words pro .NET pomocí našeho podrobného průvodce. Flexibilní a nákladově efektivní licencování je jednoduché. |

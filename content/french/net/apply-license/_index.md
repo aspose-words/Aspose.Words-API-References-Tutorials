@@ -13,6 +13,6 @@ Cette page fournit un guide détaillé sur la façon d'appliquer une licence dan
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Appliquer la licence à partir du fichier](./apply-license-from-file/) | Découvrez comment appliquer une licence à partir d'un fichier à l'aide d'Aspose.Words pour .NET.|
-| [Appliquer une licence à partir du flux](./apply-license-from-stream/) | Découvrez comment appliquer une licence à partir d'un flux à l'aide d'Aspose.Words pour .NET.|
-| [Appliquer une licence limitée](./apply-metered-license/) | Découvrez comment appliquer une licence limitée à l'aide d'Aspose.Words pour .NET. |
+| [Appliquer la licence à partir du fichier](./apply-license-from-file/) | Découvrez comment appliquer une licence à partir d'un fichier dans Aspose.Words for .NET avec notre guide détaillé étape par étape. Libérez tout le potentiel de votre bibliothèque sans effort. |
+| [Appliquer une licence à partir du flux](./apply-license-from-stream/) | Découvrez comment appliquer une licence à partir d'un flux dans Aspose.Words for .NET avec ce guide étape par étape. Libérez tout le potentiel d’Aspose.Words. |
+| [Appliquer une licence limitée](./apply-metered-license/) | Découvrez comment appliquer une licence limitée dans Aspose.Words pour .NET avec notre guide étape par étape. Des licences flexibles et économiques simplifiées. |

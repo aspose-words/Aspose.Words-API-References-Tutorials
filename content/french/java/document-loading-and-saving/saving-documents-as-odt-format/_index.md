@@ -10,7 +10,7 @@ url: /fr/java/document-loading-and-saving/saving-documents-as-odt-format/
 
 ## Introduction à l'enregistrement de documents au format ODT dans Aspose.Words pour Java
 
-Dans cet article, nous verrons comment enregistrer des documents au format ODT (Open Document Text) à l'aide d'Aspose.Words pour Java. ODT est un format de document standard ouvert populaire utilisé par diverses suites bureautiques, notamment OpenOffice et LibreOffice. En enregistrant les documents au format ODT, vous pouvez garantir la compatibilité avec ces progiciels.
+Dans cet article, nous verrons comment enregistrer des documents au format ODT (Open Document Text) à l'aide d'Aspose.Words pour Java. ODT est un format de document standard ouvert populaire utilisé par diverses suites bureautiques, notamment OpenOffice et LibreOffice. En enregistrant les documents au format ODT, vous pouvez assurer la compatibilité avec ces progiciels.
 
 ## Conditions préalables
 

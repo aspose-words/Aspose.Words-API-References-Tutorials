@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### P: Jak zmienić ustawienia sekcji w Aspose.Words dla .NET?
 
- O: Aby zmodyfikować ustawienia sekcji, możesz skorzystać z właściwości sekcji.`PageSetup`obiekt. W tym przykładzie zmieniamy marginesy, odległość nagłówka i stopki oraz odstępy między kolumnami tekstu.
+ O: Aby zmodyfikować ustawienia sekcji, możesz skorzystać z właściwości sekcji`PageSetup`obiekt. W tym przykładzie zmieniamy marginesy, odległość nagłówka i stopki oraz odstępy między kolumnami tekstu.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm

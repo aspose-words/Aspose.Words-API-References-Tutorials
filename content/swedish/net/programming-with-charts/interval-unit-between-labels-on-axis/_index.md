@@ -17,7 +17,7 @@ Se till att du har följande förutsättningar:
 - Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den genom att använda NuGet-pakethanteraren för att installera den.
 - En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram.
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
  Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
@@ -94,7 +94,7 @@ Med Aspose.Words för .NET har du flexibiliteten att anpassa olika aspekter av d
 ### Vanliga frågor
 
 #### Q1. Vad är axeletiketter i ett diagram?
-Axeletiketter i ett diagram hänvisar till den textmässiga representationen av värden längs diagrammets horisontella (X-axel) eller vertikala (Y-axel) axel. Dessa etiketter hjälper till att identifiera och tolka datapunkterna som plottas på diagrammet. Axeletiketter ger sammanhang och tillåter användare att förstå skalan och värdeintervallet i diagrammet.
+Axeletiketter i ett diagram hänvisar till den textmässiga representationen av värden längs diagrammets horisontella (X-axel) eller vertikala (Y-axel) axel. Dessa etiketter hjälper till att identifiera och tolka datapunkterna som plottas på diagrammet. Axeletiketter ger sammanhang och låter användare förstå skalan och intervallet för värden i diagrammet.
 
 #### Q2. Hur kan jag anpassa avståndet mellan axeletiketter?
  För att anpassa avståndet mellan axeletiketter i ett diagram med Aspose.Words för .NET kan du komma åt`AxisX` eller`AxisY` egenskapen för diagrammet och ändra`TickLabelSpacing` fast egendom. Genom att ställa in`TickLabelSpacing` till ett specifikt värde kan du styra intervallenheten mellan etiketterna på respektive axel och justera avståndet efter dina krav.

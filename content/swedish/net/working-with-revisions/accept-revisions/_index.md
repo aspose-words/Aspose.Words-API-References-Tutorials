@@ -1,6 +1,6 @@
 ---
-title: Acceptera recensioner
-linktitle: Acceptera recensioner
+title: Acceptera revisioner
+linktitle: Acceptera revisioner
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du accepterar ändringar av ett Word-dokument med Aspose.Words för .NET
 type: docs
@@ -74,7 +74,7 @@ doc.StopTrackRevisions();
 ```
 ## Steg 6: Spara dokumentet
 
- När du har infogat formulärfältet för textinmatning sparar du dokumentet på önskad plats med hjälp av`Save` metod. Se till att ange rätt sökväg:
+ När du har infogat formulärfältet för textinmatning sparar du dokumentet på önskad plats med hjälp av`Save`metod. Se till att ange rätt sökväg:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// Det raderade revisionsstycket tas bort när vi accepterar ändringar.
+// Raderingsrevisionsparagrafen tas bort när vi accepterar ändringar.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

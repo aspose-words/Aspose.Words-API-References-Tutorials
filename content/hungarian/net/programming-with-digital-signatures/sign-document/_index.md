@@ -50,13 +50,13 @@ Az alábbi lépések követésével egyszerűen aláírhat egy Word-dokumentumot
 
 ## Következtetés
 
- Ebben az oktatóanyagban megvizsgáltuk az Aspose.Words for .NET dokumentum-aláírási funkcióját. Az aláíró tanúsítvány betöltésével és a`DigitalSignatureUtil.Sign` módszerrel tudunk digitálisan aláírni egy Word dokumentumot. A dokumentum-aláírás hitelesítést biztosít, és biztosítja a dokumentum tartalmának integritását, így a biztonságos és megbízható dokumentumkezelés értékes funkciója.
+ Ebben az oktatóanyagban megvizsgáltuk az Aspose.Words for .NET dokumentum-aláírási funkcióját. Aláíró tanúsítvány betöltésével és a`DigitalSignatureUtil.Sign` módszerrel tudunk digitálisan aláírni egy Word dokumentumot. A dokumentum-aláírás hitelesítést biztosít, és biztosítja a dokumentum tartalmának integritását, így a biztonságos és megbízható dokumentumkezelés értékes funkciója.
 
 ### GYIK a jelszavas dokumentumhoz
 
 #### K: Mi az a dokumentum-aláírás az Aspose.Words for .NET-ben?
 
-V: Dokumentum-aláírás az Aspose.Words for .NET-ben egy Word-dokumentum tanúsítvány segítségével történő digitális aláírásának folyamatára utal. Ez a funkció digitális aláírást ad a dokumentumhoz, amely hitelességet, integritást és a dokumentum tartalmának visszautasítását biztosítja.
+V: Dokumentum-aláírás az Aspose.Words for .NET-ben egy Word-dokumentum tanúsítvány segítségével történő digitális aláírásának folyamatára utal. Ez a funkció digitális aláírást ad a dokumentumhoz, amely hitelességet, integritást és a dokumentum tartalmának letagadhatatlanságát biztosítja.
 
 #### K: Hogyan tölthetem be az aláíró tanúsítványt az Aspose.Words for .NET-be?
 
@@ -88,7 +88,7 @@ V: Az Aspose.Words for .NET programban történő dokumentum-aláírásához ér
 
 #### K: Milyen fájlformátumot támogat az Aspose.Words for .NET a dokumentumok aláírásához?
 
- V: Az Aspose.Words for .NET támogatja a Word dokumentumok DOCX fájlformátumú aláírását. A DOCX fájlokat aláírhatja a`DigitalSignatureUtil` osztályt és a megfelelő bizonyítványt.
+ V: Az Aspose.Words for .NET támogatja a Word dokumentumok DOCX fájlformátumú aláírását. A DOCX fájlokat a`DigitalSignatureUtil` osztályt és a megfelelő bizonyítványt.
 
 #### K: Aláírhatok több Word-dokumentumot ugyanazzal a tanúsítvánnyal?
 

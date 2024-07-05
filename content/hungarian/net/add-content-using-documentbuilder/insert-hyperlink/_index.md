@@ -41,7 +41,7 @@ A kezdéshez indítsa el a Visual Studio-t, és hozzon létre egy új C#-projekt
 
 Telepítse az Aspose.Words for .NET programot
 
-Ezután telepítenie kell az Aspose.Words for .NET könyvtárat. Ezt a NuGet Package Manager segítségével teheti meg. Egyszerűen kattintson a jobb gombbal a projektre a Solution Explorerben, válassza a „NuGet-csomagok kezelése” lehetőséget, keresse meg az „Apose.Words” kifejezést, és telepítse.
+Ezután telepítenie kell az Aspose.Words for .NET könyvtárat. Ezt a NuGet Package Manager segítségével teheti meg. Egyszerűen kattintson a jobb gombbal a projektre a Solution Explorerben, válassza a „NuGet-csomagok kezelése” lehetőséget, keresse meg az „Aspose.Words” kifejezést, és telepítse.
 
 ## 2. lépés: Inicializálja a dokumentumot
 
@@ -92,7 +92,7 @@ Most pedig illesszük be a tényleges hiperhivatkozást. Itt történik a varáz
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 ```
 
-Ebbe a sorba beszúrunk egy hiperhivatkozást az „Apose Website” szöveggel és a „http://www.aspose.com” URL-lel.
+Ebben a sorban egy hiperhivatkozást szúrunk be az „Aspose Website” szöveggel és a „http://www.aspose.com” URL-lel.
 
 ## 6. lépés: Formázás törlése
 

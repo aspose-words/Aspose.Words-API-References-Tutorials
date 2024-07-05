@@ -29,7 +29,7 @@ Ukuran font menentukan keterlihatan visual teks. Teks judul biasanya memiliki uk
 
 ### Gaya Font
 
-Gaya font menambah penekanan pada teks. Teks tebal menunjukkan pentingnya, sedangkan teks miring sering kali menunjukkan definisi atau istilah asing. Menggarisbawahi juga dapat menyoroti poin-poin penting.
+Gaya font menambah penekanan pada teks. Teks tebal menandakan pentingnya, sedangkan teks miring sering kali menunjukkan definisi atau istilah asing. Menggarisbawahi juga dapat menyoroti poin-poin penting.
 
 ## Warna dan Sorotan Teks
 

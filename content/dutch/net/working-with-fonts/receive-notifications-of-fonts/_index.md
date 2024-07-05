@@ -9,7 +9,7 @@ url: /nl/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Als u ooit problemen heeft ondervonden waarbij lettertypen niet correct werden weergegeven in uw documenten, bent u niet de enige. Het beheren van lettertype-instellingen en het ontvangen van meldingen over lettertypevervangingen kan u veel kopzorgen besparen. In deze uitgebreide notificatiegids onderzoeken we hoe u met lettertypen kunt omgaan met Aspose.Words voor .NET, zodat uw documenten er altijd op hun best uitzien.
+Als u ooit problemen heeft ondervonden waarbij lettertypen niet correct werden weergegeven in uw documenten, bent u niet de enige. Het beheren van lettertype-instellingen en het ontvangen van meldingen over lettertypevervangingen kan u veel kopzorgen besparen. In deze uitgebreide handleiding onderzoeken we hoe u met lettertypemeldingen omgaat met Aspose.Words voor .NET, zodat uw documenten er altijd op hun best uitzien.
 
 ## Vereisten
 

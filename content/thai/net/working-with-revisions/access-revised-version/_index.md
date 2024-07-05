@@ -79,7 +79,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### ถาม: ฉันจะโหลดเอกสารที่มีการแก้ไขลงใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: ใช้`Document`คลาสของ Aspose.Words สำหรับ .NET ที่มีไว้เพื่อโหลดเอกสารจากการแก้ไขไฟล์ คุณสามารถระบุเส้นทางเอกสารแบบเต็มได้
+ ตอบ: ใช้`Document` คลาสของ Aspose.Words สำหรับ .NET เพื่อโหลดเอกสารจากไฟล์ที่มีการแก้ไข คุณสามารถระบุเส้นทางเอกสารแบบเต็มได้
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### ถาม: ฉันจะเรียกดูการแก้ไขเอกสารใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: ใช้`foreach` วนซ้ำเพื่อวนซ้ำการแก้ไขที่มีอยู่ในเอกสาร คุณสามารถใช้`Revisions` ทรัพย์สินของ`Document` คัดค้านการรับชุดการแก้ไขเอกสารทั้งหมด
+ตอบ: ใช้`foreach` วนซ้ำเพื่อวนซ้ำการแก้ไขที่มีอยู่ในเอกสาร คุณสามารถใช้`Revisions` ทรัพย์สินของ`Document` คัดค้านการรับชุดการแก้ไขเอกสารทั้งหมด
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

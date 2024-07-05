@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2단계: 링크 삽입
 
- 다음을 사용하여 링크를 삽입할 수 있습니다.`InsertHyperlink` 문서 생성기의 방법. 여기서는 "Apose"라는 링크 텍스트와 대상 URL을 지정해야 합니다.
+ 다음을 사용하여 링크를 삽입할 수 있습니다.`InsertHyperlink` 문서 생성기의 방법. 여기서는 "Aspose"라는 링크 텍스트와 대상 URL을 지정해야 합니다.
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", 거짓);

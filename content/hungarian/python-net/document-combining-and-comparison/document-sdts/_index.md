@@ -113,7 +113,7 @@ Az SDT-k felhasználhatók dokumentumautomatizálási forgatókönyvekhez. Létr
 
 Az SDT-k különféle testreszabási lehetőségeket kínálnak, például a betűstílusok, színek és viselkedés megváltoztatását. Beállíthat például egy helyőrző szöveget, amely útmutatást ad a felhasználóknak az SDT-k kitöltésekor.
 
-## Speciális technikák SDT-kkel
+## Fejlett technikák SDT-kkel
 
 A fejlett technikák magukban foglalják a beágyazott SDT-ket, az egyéni XML-adat-összerendelést és az SDT-kkel társított események kezelését. Ezek a technikák bonyolult dokumentumstruktúrákat és interaktívabb felhasználói élményt tesznek lehetővé.
 

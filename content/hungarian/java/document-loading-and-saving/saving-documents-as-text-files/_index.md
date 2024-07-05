@@ -47,7 +47,7 @@ saveOptions.setAddBidiMarks(true);
 doc.save("output.txt", saveOptions);
 ```
 
- Ebben a példában létrehozunk a`TxtSaveOptions` objektumot és állítsa be a`AddBidiMarks`tulajdonát`true` hogy a szövegkimenetben kétirányú jelek szerepeljenek.
+ Ebben a példában létrehozunk egy`TxtSaveOptions` objektumot és állítsa be a`AddBidiMarks`tulajdonát`true` hogy a szövegkimenetben kétirányú jelek szerepeljenek.
 
 ### 2. példa: Tabulátor használata a lista behúzásához
 

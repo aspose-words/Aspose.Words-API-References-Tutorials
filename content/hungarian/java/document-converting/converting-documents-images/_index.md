@@ -50,7 +50,7 @@ public class DocumentToImageConverter {
 }
 ```
 
- Ebben a kódrészletben betöltünk egy Word dokumentum mintát, inicializáljuk`ImageSaveOptions`, adja meg a kimeneti formátumot PNG-ként, majd mentse el a dokumentumot képként.
+ Ebben a kódrészletben betöltünk egy minta Word dokumentumot, inicializáljuk`ImageSaveOptions`, adja meg a kimeneti formátumot PNG-ként, majd mentse el a dokumentumot képként.
 
 ## Képkonverzió testreszabása
 

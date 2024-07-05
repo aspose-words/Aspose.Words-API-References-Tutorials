@@ -12,6 +12,6 @@ Clone And Combine Documents oktatóanyagokat kínál a dokumentumok Aspose.Words
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Word dokumentum klónozása](./cloning-document/) | Ismerje meg, hogyan klónozhat Word-dokumentumot az Aspose.Words for .NET használatával. |
+| [Word dokumentum klónozása](./cloning-document/) | Lépésről lépésre szóló útmutatónkból megtudhatja, hogyan klónozhat könnyedén Word-dokumentumot az Aspose.Words for .NET használatával. Kezdőknek és tapasztalt fejlesztőknek egyaránt tökéletes. |
 | [Helyezze be a dokumentumot a Csere pontnál](./insert-document-at-replace/) | Részletes, lépésenkénti útmutatónkból megtudhatja, hogyan lehet zökkenőmentesen beilleszteni egy Word-dokumentumot a másikba az Aspose.Words for .NET segítségével. Tökéletes azoknak a fejlesztőknek, akik egyszerűsíteni szeretnék a dokumentumfeldolgozást. |
 | [Dokumentum beszúrása a körlevélbe](./insert-document-at-mail-merge/) | Ebben az átfogó, lépésenkénti oktatóanyagban megtudhatja, hogyan lehet dokumentumokat beszúrni a körlevél mezőkbe az Aspose.Words for .NET használatával. |

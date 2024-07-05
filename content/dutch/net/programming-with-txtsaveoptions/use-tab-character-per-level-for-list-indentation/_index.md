@@ -47,7 +47,7 @@ saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- In deze stap configureren we de opties voor het opslaan van het document. Wij creëren een nieuwe`TxtSaveOptions` bezwaar maken en instellen`ListIndentation.Count` eigenschap op 1 om het aantal tabtekens per inspringniveau op te geven. Wij hebben ook de`ListIndentation.Character` eigenschap naar '\t' om aan te geven dat we tabtekens willen gebruiken.
+ In deze stap configureren we de opties voor het opslaan van het document. Wij creëren een nieuwe`TxtSaveOptions` bezwaar maken en instellen`ListIndentation.Count` eigenschap op 1 om het aantal tabtekens per inspringniveau op te geven. Wij stellen ook de`ListIndentation.Character` eigenschap naar '\t' om aan te geven dat we tabtekens willen gebruiken.
 
 ## Stap 5: Sla het document op
 
@@ -110,7 +110,7 @@ Stel uw ontwikkelomgeving in door de benodigde referenties toe te voegen en de j
  Ja, u kunt het aantal tabtekens per niveau voor het inspringen van de lijst aanpassen door de waarde van de`ListIndentation.Count` eigendom in de`TxtSaveOptions` klas. U kunt voor elk inspringingsniveau het gewenste aantal tabtekens opgeven.
 
 #### Vraag: Welke andere tekens kan ik gebruiken voor het inspringen van lijsten met Aspose.Words voor .NET?
- Naast tabtekens kunt u met Aspose.Words voor .NET ook andere tekens gebruiken voor het inspringen van lijsten. U kunt de`ListIndentation.Character` eigenschap naar elk gewenst teken, zoals spatie (`' '`), voor het identificeren van lijsten.
+ Naast tabtekens kunt u met Aspose.Words voor .NET ook andere tekens gebruiken voor het inspringen van lijsten. U kunt de`ListIndentation.Character` eigenschap naar elk gewenst teken, zoals spatie (`' '`), voor het inspringen van lijsten.
 
 #### Vraag: Biedt Aspose.Words voor .NET nog andere functies voor het beheren van lijsten?
 Ja, Aspose.Words voor .NET biedt veel functies voor het beheren van lijsten in Word-documenten. U kunt genummerde lijsten of lijsten met opsommingstekens maken, inspringingsniveaus instellen, de stijl van lijsten aanpassen, lijstitems toevoegen en meer.

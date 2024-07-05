@@ -39,7 +39,7 @@ System.out.println("Processing document: " + fileName + "." + extensionName);
 Document doc = new Document(docName);
 ```
 
-- เราแยกชื่อฐานและนามสกุลออกจากเอกสารอินพุต
+- เราแยกชื่อฐานและนามสกุลของเอกสารอินพุต
 - เราโหลดเอกสารโดยใช้ Aspose.Words สำหรับ Java
 
 ## 5. การแยกเอกสารทีละขั้นตอน
@@ -86,7 +86,7 @@ class DocumentPageSplitter
 private PageNumberFinder pageNumberFinder;
 /// <สรุป>
 /// เตรียมใช้งานอินสแตนซ์ใหม่ของคลาส <see cref="DocumentPageSplitter"/>
-/// วิธีนี้จะแบ่งเอกสารออกเป็นส่วนๆ เพื่อให้แต่ละหน้าเริ่มต้นและสิ้นสุดที่ส่วนของขอบเขต
+/// วิธีนี้จะแบ่งเอกสารออกเป็นส่วนๆ เพื่อให้แต่ละหน้าเริ่มต้นและสิ้นสุดที่ขอบเขตของส่วน
 /// แนะนำว่าอย่าแก้ไขเอกสารในภายหลัง
 /// </สรุป>
 /// <param name="source">เอกสารต้นฉบับ</param>
@@ -98,13 +98,13 @@ private Document getDocument() {
 	return pageNumberFinder.getDocument();
 }
 /// <สรุป>
-///รับเอกสารของเพจ
+/// รับเอกสารของหน้า
 /// </สรุป>
 /// <ชื่อพารามิเตอร์="pageIndex">
 /// ดัชนีตาม 1 ของหน้า
-///</พารามิเตอร์>
+/// </พารามิเตอร์>
 /// <การส่งคืน>
-///<ดูcref="เอกสาร"/>
+/// <ดู cref="Document"/>
 /// </ผลตอบแทน>
 public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
@@ -114,12 +114,12 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 /// </สรุป>
 //<ชื่อพารามิเตอร์="startIndex">
 /// ดัชนีฐาน 1 ของหน้าเริ่มต้น
-///</พารามิเตอร์>
+/// </พารามิเตอร์>
 /// <ชื่อพารามิเตอร์="endIndex">
 /// ดัชนีฐาน 1 ของหน้าสุดท้าย
-///</พารามิเตอร์>
+/// </พารามิเตอร์>
 /// <การส่งคืน>
-///<ดูcref="เอกสาร"/>
+/// <ดู cref="Document"/>
 /// </ผลตอบแทน>
 public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exception {
 	Document result = (Document) getDocument().deepClone(false);
@@ -158,8 +158,8 @@ public Document getDocument()
 /// ดึงดัชนีฐาน 1 ของหน้าที่โหนดเริ่มต้น
 /// </สรุป>
 /// <ชื่อพารามิเตอร์="โหนด">
-///โหนด
-///</พารามิเตอร์>
+/// โหนด
+/// </พารามิเตอร์>
 /// <การส่งคืน>
 ///ดัชนีหน้า
 /// </ผลตอบแทน>
@@ -172,8 +172,8 @@ public int getPage(Node node) throws Exception {
 /// ดึงดัชนีฐาน 1 ของหน้าที่โหนดสิ้นสุด
 /// </สรุป>
 /// <ชื่อพารามิเตอร์="โหนด">
-///โหนด
-///</พารามิเตอร์>
+/// โหนด
+/// </พารามิเตอร์>
 /// <การส่งคืน>
 ///ดัชนีหน้า
 /// </ผลตอบแทน>
@@ -186,8 +186,8 @@ public int getPageEnd(Node node) throws Exception {
 //ส่งคืนจำนวนเพจที่โหนดที่ระบุครอบคลุม ส่งคืน 1 หากโหนดอยู่ภายในหนึ่งหน้า
 /// </สรุป>
 /// <ชื่อพารามิเตอร์="โหนด">
-///โหนด
-///</พารามิเตอร์>
+/// โหนด
+/// </พารามิเตอร์>
 /// <การส่งคืน>
 ///ดัชนีหน้า
 /// </ผลตอบแทน>
@@ -195,19 +195,19 @@ public int pageSpan(Node node) throws Exception {
 	return getPageEnd(node) - getPage(node) + 1;
 }
 /// <สรุป>
-///ส่งคืนรายการโหนดที่มีอยู่ในที่ใดก็ได้ในหน้าที่ระบุหรือหน้าที่ตรงกับประเภทโหนดที่ระบุ
+/// ส่งคืนรายการโหนดที่มีอยู่ในที่ใดก็ได้บนเพจที่ระบุหรือเพจที่ตรงกับประเภทโหนดที่ระบุ
 /// </สรุป>
 /// <ชื่อพารามิเตอร์="startPage">
-///หน้าเริ่มต้น.
-///</พารามิเตอร์>
+/// หน้าเริ่มต้น.
+/// </พารามิเตอร์>
 /// <ชื่อพารามิเตอร์="endPage">
 ///หน้าสุดท้าย.
-///</พารามิเตอร์>
+/// </พารามิเตอร์>
 /// <ชื่อพารามิเตอร์="nodeType">
-///ประเภทโหนด
-///</พารามิเตอร์>
+/// ประเภทโหนด
+/// </พารามิเตอร์>
 /// <การส่งคืน>
-///<see cref="IList{T}"/>.
+/// <ดู cref="IList{T}"/>
 /// </ผลตอบแทน>
 public ArrayList<Node> retrieveAllNodesOnPages(int startPage, int endPage, /*NodeType*/int nodeType) throws Exception
 {
@@ -261,14 +261,14 @@ public void splitNodesAcrossPages() throws Exception
 /// สิ่งนี้ถูกเรียกโดย <see cref="SectionSplitter"/> เพื่ออัปเดตหมายเลขหน้าของโหนดแยก
 /// </สรุป>
 /// <ชื่อพารามิเตอร์="โหนด">
-///โหนด
-///</พารามิเตอร์>
+/// โหนด
+/// </พารามิเตอร์>
 /// <ชื่อพารามิเตอร์="startPage">
-///หน้าเริ่มต้น.
-///</พารามิเตอร์>
+/// หน้าเริ่มต้น.
+/// </พารามิเตอร์>
 /// <ชื่อพารามิเตอร์="endPage">
 ///หน้าสุดท้าย.
-///</พารามิเตอร์>
+/// </พารามิเตอร์>
 void addPageNumbersForNode(Node node, int startPage, int endPage)
 {
 	if (startPage > 0)
@@ -344,7 +344,7 @@ private static String[] reverseWord(String str) {
 }
 /// <สรุป>
 /// แยกข้อความของการรันที่ระบุออกเป็นสองรัน
-///แทรกการรันใหม่หลังจากการรันที่ระบุ
+/// แทรกการรันใหม่หลังจากการรันที่ระบุ
 /// </สรุป>
 private void splitRun(Run run, int position)
 {
@@ -373,7 +373,7 @@ public static PageNumberFinder create(Document document) throws Exception
 }
 }
 /// <สรุป>
-/// แยกเอกสารออกเป็นหลายส่วนเพื่อให้แต่ละหน้าเริ่มต้นและสิ้นสุดที่ส่วนของขอบเขต
+/// แยกเอกสารออกเป็นหลายส่วนเพื่อให้แต่ละหน้าเริ่มต้นและสิ้นสุดที่ขอบเขตของส่วน
 /// </สรุป>
 class SectionSplitter extends DocumentVisitor
 {
@@ -458,7 +458,7 @@ public int visitParagraphEnd(Paragraph paragraph) throws Exception {
 	for (Node cloneNode : splitComposite(paragraph))
 	{
 		Paragraph clonePara = (Paragraph) cloneNode;
-		// ลบหมายเลขรายการออกจากย่อหน้าที่คัดลอก แต่ปล่อยให้ดัชนีเหมือนเดิม
+		// ลบหมายเลขรายการออกจากย่อหน้าที่คัดลอก แต่ปล่อยให้การเยื้องเหมือนเดิม
 		// เนื่องจากย่อหน้าควรจะเป็นส่วนหนึ่งของรายการก่อนหน้า
 		if (paragraph.isListItem())
 		{

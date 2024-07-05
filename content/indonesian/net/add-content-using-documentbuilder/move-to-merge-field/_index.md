@@ -60,7 +60,7 @@ Sekarang, mari gerakkan kursor ke akhir dokumen. Ini seperti meletakkan pena And
 builder.MoveToDocumentEnd();
 ```
 
- Perintah ini memindahkan`DocumentBuilder` kursor ke akhir dokumen, mempersiapkan kita untuk langkah selanjutnya.
+ Perintah ini menggerakkan`DocumentBuilder` kursor ke akhir dokumen, mempersiapkan kita untuk langkah selanjutnya.
 
 ## Langkah 4: Pindah ke Bidang Gabungan
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /hu/net/programming-with-loadoptions/warning-callback/
 ---
-Amikor Word-dokumentumokat dolgoz fel egy C#-alkalmazásban, hasznos lehet, ha tisztában van a dokumentum betöltésekor megjelenő figyelmeztetésekkel. A .NET Aspose.Words könyvtárával egyszerűen megadhat egy visszahívási funkciót, amely kezeli a figyelmeztetéseket a dokumentum betöltése közben a LoadOptions betöltési beállításaival. Ebben a részletes útmutatóban végigvezetjük, hogyan használhatja az Aspose.Words for .NET C# forráskódot a dokumentum betöltéséhez a LoadOptions betöltési beállításait használó figyelmeztetések visszahívási funkciójával.
+Amikor Word-dokumentumokat dolgoz fel egy C#-alkalmazásban, hasznos lehet tudni a dokumentum betöltésekor megjelenő figyelmeztetéseket. A .NET Aspose.Words könyvtárával egyszerűen megadhat egy visszahívási funkciót, amely kezeli a figyelmeztetéseket a dokumentum betöltése közben a LoadOptions betöltési beállításaival. Ebben a részletes útmutatóban végigvezetjük, hogyan használhatja az Aspose.Words for .NET C# forráskódot a dokumentum betöltéséhez a LoadOptions betöltési beállításait használó figyelmeztetések visszahívási funkciójával.
 
 ## Az Aspose.Words könyvtár megértése
 

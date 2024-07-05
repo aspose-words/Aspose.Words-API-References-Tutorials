@@ -2,7 +2,7 @@
 title: Bir Grafikte Eksen Sınırları
 linktitle: Bir Grafikte Eksen Sınırları
 second_title: Aspose.Words Belge İşleme API'si
-description: Eksen üzerinde görüntülenen değer aralığını kontrol eden Aspose.Words for .NET'i kullanarak bir grafikte bir eksenin sınırlarını nasıl ayarlayacağınızı öğrenin.
+description: Aspose.Words for .NET kullanarak eksende görüntülenen değer aralığını kontrol ederek bir grafikte eksenin sınırlarını nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/bounds-of-axis/
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmaya itiraz edin.
+ Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder`belgeyle çalışmaya itiraz edin.
 
 ```csharp
 Document doc = new Document();
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 Bu kadar! Aspose.Words for .NET'i kullanarak bir grafikteki eksenin sınırlarını başarıyla ayarladınız.
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET'i kullanarak bir grafikte eksenin sınırlarını nasıl ayarlayacağınızı öğrendiniz. Adım adım kılavuzu takip ederek bir grafik ekleyip yapılandırabilir, seri verileri ekleyebilir ve eksen ölçeklendirmesi için minimum ve maksimum değerleri tanımlayabilirsiniz. Aspose.Words for .NET, Word belgeleriyle Kelime İşleme için güçlü ve esnek bir API sunarak kolaylıkla dinamik ve görsel olarak çekici grafikler oluşturmanıza olanak tanır.
+Bu eğitimde Aspose.Words for .NET'i kullanarak bir grafikte eksenin sınırlarını nasıl ayarlayacağınızı öğrendiniz. Adım adım kılavuzu izleyerek bir grafik ekleyip yapılandırabilir, seri verileri ekleyebilir ve eksen ölçeklendirmesi için minimum ve maksimum değerleri tanımlayabilirsiniz. Aspose.Words for .NET, Word belgeleriyle Kelime İşleme için güçlü ve esnek bir API sunarak kolaylıkla dinamik ve görsel olarak çekici grafikler oluşturmanıza olanak tanır.
 
 
 ### SSS
@@ -95,10 +95,10 @@ Bu eğitimde Aspose.Words for .NET'i kullanarak bir grafikte eksenin sınırlar�
 Aspose.Words for .NET, geliştiricilerin Word belgeleriyle programlı olarak çalışmasına olanak tanıyan bir kütüphanedir. Word belgelerini oluşturmak, değiştirmek ve kaydetmek için çok çeşitli özellikler ve işlevler sağlar.
 
 #### Q2. Aspose.Words for .NET'i nasıl kurabilirim?
-Aspose.Words for .NET'i yüklemek için Visual Studio'daki NuGet paket yöneticisini kullanabilirsiniz. NuGet paket yöneticisinde "Apose.Words" ifadesini aramanız ve projenize yüklemeniz yeterlidir.
+Aspose.Words for .NET'i yüklemek için Visual Studio'daki NuGet paket yöneticisini kullanabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini arayın ve projenize yükleyin.
 
 #### S3. Aspose.Words for .NET'i diğer programlama dilleriyle birlikte kullanabilir miyim?
-Hayır, Aspose.Words for .NET, özellikle .NET uygulamaları için tasarlanmıştır. C# ve VB.NET gibi programlama dilleri ile çalışır.
+Hayır, Aspose.Words for .NET, özellikle .NET uygulamaları için tasarlanmıştır. C# ve VB.NET gibi programlama dilleriyle çalışır.
 
 #### S4. Aspose.Words for .NET'i kullanmanın başka önkoşulları var mı?
 Aspose.Words for .NET kütüphanesini kurmanın yanı sıra, C# programlama ve Word belgeleriyle Kelime İşleme konusunda temel bilgiye sahip olmanız gerekir. .NET framework'üne aşina olmak da faydalı olacaktır.

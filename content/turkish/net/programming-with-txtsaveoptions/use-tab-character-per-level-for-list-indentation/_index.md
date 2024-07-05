@@ -2,7 +2,7 @@
 title: Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan
 linktitle: Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'te sekme karakterleri içeren girinti listeleri özelliğini nasıl kullanacağınızı öğrenin. Bu güçlü özellikle zamandan tasarruf edin ve iş akışınızı iyileştirin.
+description: Aspose.Words for .NET'te sekme karakterleri içeren girinti listeleri özelliğini nasıl kullanacağınızı öğrenin. Bu güçlü özellikle zamandan tasarruf edin ve iş akışınızı geliştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
@@ -110,7 +110,7 @@ Gerekli referansları ekleyerek ve uygun ad alanlarını içe aktararak gelişti
  Evet, liste girintisi için düzey başına sekme karakterlerinin sayısını, değerini değiştirerek özelleştirebilirsiniz.`ListIndentation.Count` içindeki mülk`TxtSaveOptions` sınıf. Her girinti düzeyi için istediğiniz sekme karakterlerinin sayısını belirtebilirsiniz.
 
 #### S: Aspose.Words for .NET'te liste girintisi için başka hangi karakterleri kullanabilirim?
- Aspose.Words for .NET ile sekme karakterlerinin yanı sıra liste girintisi için başka karakterler de kullanabilirsiniz. Ayarlayabilirsiniz`ListIndentation.Character` özelliği, boşluk ( gibi) istenen herhangi bir karaktere`' '`), listeleri tanımlamak için.
+ Aspose.Words for .NET ile sekme karakterlerinin yanı sıra liste girintisi için başka karakterler de kullanabilirsiniz. Ayarlayabilirsiniz`ListIndentation.Character` özelliği, boşluk ( gibi) istenen herhangi bir karaktere`' '`), listeleri girintilemek için.
 
 #### S: Aspose.Words for .NET listeleri yönetmek için başka özellikler sunuyor mu?
 Evet, Aspose.Words for .NET, Word belgelerindeki listeleri yönetmek için birçok özellik sunar. Numaralandırılmış veya madde işaretli listeler oluşturabilir, girinti düzeylerini ayarlayabilir, listelerin stilini özelleştirebilir, liste öğeleri ekleyebilir ve daha fazlasını yapabilirsiniz.

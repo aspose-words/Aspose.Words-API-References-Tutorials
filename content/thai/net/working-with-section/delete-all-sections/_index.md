@@ -1,6 +1,6 @@
 ---
-title: ลบทุกส่วน
-linktitle: ลบทุกส่วน
+title: ลบส่วนทั้งหมด
+linktitle: ลบส่วนทั้งหมด
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: ในบทช่วยสอนนี้ เรียนรู้วิธีลบส่วนทั้งหมดออกจากเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
 type: docs

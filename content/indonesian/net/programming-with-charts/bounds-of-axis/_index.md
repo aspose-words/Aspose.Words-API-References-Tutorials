@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Langkah 2: Buat Dokumen Baru dan DocumentBuilder
- Buat instance baru dari`Document` kelas dan a`DocumentBuilder` keberatan untuk bekerja dengan dokumen tersebut.
+ Buat instance baru dari`Document` kelas dan a`DocumentBuilder`keberatan untuk bekerja dengan dokumen tersebut.
 
 ```csharp
 Document doc = new Document();
@@ -95,7 +95,7 @@ Dalam tutorial ini, Anda telah mempelajari cara mengatur batas sumbu dalam bagan
 Aspose.Words for .NET adalah perpustakaan yang memungkinkan pengembang bekerja dengan dokumen Word secara terprogram. Ini menyediakan berbagai fitur dan fungsi untuk membuat, memanipulasi, dan menyimpan dokumen Word.
 
 #### Q2. Bagaimana cara menginstal Aspose.Words untuk .NET?
-Untuk menginstal Aspose.Words untuk .NET, Anda dapat menggunakan manajer paket NuGet di Visual Studio. Cukup cari "Apose.Words" di manajer paket NuGet dan instal ke proyek Anda.
+Untuk menginstal Aspose.Words untuk .NET, Anda dapat menggunakan manajer paket NuGet di Visual Studio. Cukup cari "Aspose.Words" di manajer paket NuGet dan instal ke proyek Anda.
 
 #### Q3. Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
 Tidak, Aspose.Words untuk .NET dirancang khusus untuk aplikasi .NET. Ia bekerja dengan bahasa pemrograman seperti C# dan VB.NET.

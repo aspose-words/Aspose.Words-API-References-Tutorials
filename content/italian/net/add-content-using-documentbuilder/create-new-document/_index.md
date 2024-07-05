@@ -51,7 +51,7 @@ Document doc = new Document();
 
 Abbiamo appena creato un documento Word vuoto. Abbastanza bello, eh?
 
-## Passaggio 3: aggiunta di contenuto con DocumentBuilder
+## Passaggio 3: aggiunta di contenuti con DocumentBuilder
 
 ### Inizializza DocumentBuilder
 

@@ -98,7 +98,7 @@ Az Aspose.Words for Python különféle szakasztörés-típusokat biztosít, pé
 Igen, a Content Builder modul segítségével különböző formázásokat, stílusokat és betűtípusokat alkalmazhat az egyes szakaszokhoz.
 
 ### Az Aspose.Words alkalmas jelentések készítésére?
-Teljesen! Az Aspose.Words for Python alkalmazást széles körben használják különféle típusú jelentések és dokumentumok pontos formázással történő előállítására.
+Teljesen! Az Aspose.Words for Python alkalmazást széles körben használják különféle jelentések és dokumentumok pontos formázással történő előállítására.
 
 ### Hol érhetem el a dokumentációt és a letöltéseket?
  Meglátogatni a[Aspose.Words for Python dokumentáció](https://reference.aspose.com/words/python-net/) és töltse le a könyvtárat innen[Aspose.Words Python kiadások](https://releases.aspose.com/words/python/).

@@ -8,7 +8,7 @@ weight: 25
 url: /fr/java/printing-documents/
 ---
 
-Si vous souhaitez exploiter la puissance d'Aspose.Words for Java pour imprimer des documents de manière transparente, vous êtes au bon endroit. Dans ce guide complet, nous vous présenterons une variété de didacticiels qui vous permettront de créer, formater et personnaliser vos solutions d'impression de documents Java. 
+Si vous souhaitez exploiter la puissance d'Aspose.Words pour Java pour imprimer des documents de manière transparente, vous êtes au bon endroit. Dans ce guide complet, nous vous présenterons une variété de didacticiels qui vous permettront de créer, formater et personnaliser vos solutions d'impression de documents Java. 
 
 ## Pourquoi Aspose.Words pour Java ?
 

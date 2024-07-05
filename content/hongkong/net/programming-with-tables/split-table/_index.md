@@ -94,4 +94,4 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
 ## 結論
-在本教學中，我們學習如何使用 Aspose.Words for .NET 分割 Word 文件中的表格。透過遵循本逐步指南並實現提供的 C# 程式碼，您可以輕鬆地從 Word 文件中的某一行拆分錶格。
+在本教學中，我們學習如何使用 Aspose.Words for .NET 分割 Word 文件中的表格。透過遵循本逐步指南並實作提供的 C# 程式碼，您可以輕鬆地從 Word 文件中的某一行分割表格。

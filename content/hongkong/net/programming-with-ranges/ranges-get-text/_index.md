@@ -67,7 +67,7 @@ Console.WriteLine(text);
 
 #### Q：Aspose.Words for .NET 中「範圍取得 Word 文件中的文字」功能的用途是什麼？
 
-答：Aspose.Words for .NET 中的「範圍取得 Word 文件中的文字」功能可讓您擷取 Word 文件特定範圍中包含的文字。它提供了存取和檢索所需範圍內的文字內容的能力，例如部分、段落或其他自訂範圍。
+答：Aspose.Words for .NET 中的「範圍取得 Word 文件中的文字」功能可讓您擷取包含在 Word 文件的特定範圍內的文字。它提供了存取和檢索所需範圍內的文字內容的能力，例如部分、段落或其他自訂範圍。
 
 #### Q：什麼是 Aspose.Words for .NET？
 

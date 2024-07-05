@@ -1,18 +1,18 @@
 ---
-title: Bearbeiten von Kopf- und Fußzeilen in Word-Dokumenten
-linktitle: Bearbeiten von Kopf- und Fußzeilen in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentverwaltungs-API
+title: Kopf- und Fußzeilen in Word-Dokumenten bearbeiten
+linktitle: Kopf- und Fußzeilen in Word-Dokumenten bearbeiten
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie Kopf- und Fußzeilen in Word-Dokumenten mit Aspose.Words für Python bearbeiten. Schritt-für-Schritt-Anleitung mit Quellcode zum Anpassen, Hinzufügen, Entfernen und mehr. Verbessern Sie jetzt die Formatierung Ihres Dokuments!
 type: docs
 weight: 16
 url: /de/python-net/document-structure-and-content-manipulation/document-headers-footers/
 ---
-Kopf- und Fußzeilen in Word-Dokumenten spielen eine entscheidende Rolle bei der Bereitstellung von Kontext, Branding und zusätzlichen Informationen zu Ihren Inhalten. Die Bearbeitung dieser Elemente mithilfe der Aspose.Words for Python-API kann das Erscheinungsbild und die Funktionalität Ihrer Dokumente erheblich verbessern. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie mit Aspose.Words für Python mit Kopf- und Fußzeilen arbeiten.
+Kopf- und Fußzeilen in Word-Dokumenten spielen eine entscheidende Rolle, wenn es darum geht, Ihren Inhalten Kontext, Branding und zusätzliche Informationen zu verleihen. Die Bearbeitung dieser Elemente mithilfe der Aspose.Words für Python-API kann das Erscheinungsbild und die Funktionalität Ihrer Dokumente erheblich verbessern. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie mit Kopf- und Fußzeilen mithilfe von Aspose.Words für Python arbeiten.
 
 
 ## Erste Schritte mit Aspose.Words für Python
 
-Bevor Sie sich mit der Bearbeitung von Kopf- und Fußzeilen befassen, müssen Sie Aspose.Words für Python einrichten. Folge diesen Schritten:
+Bevor Sie sich in die Kopf- und Fußzeilenbearbeitung vertiefen, müssen Sie Aspose.Words für Python einrichten. Folgen Sie diesen Schritten:
 
 1. Installation: Installieren Sie Aspose.Words für Python mit pip.
 
@@ -28,15 +28,15 @@ import aspose.words
 
 ## Hinzufügen einer einfachen Kopf- und Fußzeile
 
-Gehen Sie folgendermaßen vor, um Ihrem Word-Dokument eine einfache Kopf- und Fußzeile hinzuzufügen:
+Um Ihrem Word-Dokument eine einfache Kopf- und Fußzeile hinzuzufügen, führen Sie die folgenden Schritte aus:
 
-1. Erstellen eines Dokuments: Erstellen Sie ein neues Word-Dokument mit Aspose.Words.
+1. Erstellen eines Dokuments: Erstellen Sie mit Aspose.Words ein neues Word-Dokument.
 
 ```python
 doc = aspose.words.Document()
 ```
 
-2.  Kopf- und Fußzeile hinzufügen: Verwenden Sie die`sections` Eigenschaft des Dokuments, um auf Abschnitte zuzugreifen. Dann nutzen Sie die`headers_footers` Eigenschaft zum Hinzufügen von Kopf- und Fußzeilen.
+2.  Hinzufügen von Kopf- und Fußzeilen: Verwenden Sie die`sections` Eigenschaft des Dokuments, um auf Abschnitte zuzugreifen. Verwenden Sie dann die`headers_footers` Eigenschaft zum Hinzufügen von Kopf- und Fußzeilen.
 
 ```python
 section = doc.sections[0]
@@ -44,7 +44,7 @@ header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
 footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Inhalte hinzufügen: Fügen Sie Inhalte zur Kopf- und Fußzeile hinzu.
+3. Inhalt hinzufügen: Fügen Sie der Kopf- und Fußzeile Inhalt hinzu.
 
 ```python
 header_paragraph = header.paragraphs.add()
@@ -64,7 +64,7 @@ doc.save("document_with_header_footer.docx")
 
 ## Anpassen von Kopf- und Fußzeileninhalten
 
-Sie können den Inhalt der Kopf- und Fußzeile anpassen, indem Sie Bilder, Tabellen und dynamische Felder hinzufügen. Zum Beispiel:
+Sie können den Inhalt der Kopf- und Fußzeile anpassen, indem Sie Bilder, Tabellen und dynamische Felder hinzufügen. Beispiel:
 
 1. Bilder hinzufügen: Fügen Sie Bilder in die Kopf- oder Fußzeile ein.
 
@@ -81,7 +81,7 @@ footer_table.rows[0].cells[0].text = "Copyright © 2023"
 footer_table.rows[0].cells[1].text = "All rights reserved."
 ```
 
-3. Dynamische Felder: Verwenden Sie dynamische Felder für die automatische Dateneinfügung.
+3. Dynamische Felder: Verwenden Sie dynamische Felder zum automatischen Einfügen von Daten.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -89,9 +89,9 @@ footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE
 
 ## Unterschiedliche Kopf- und Fußzeilen für ungerade und gerade Seiten
 
-Durch das Erstellen unterschiedlicher Kopf- und Fußzeilen für ungerade und gerade Seiten können Sie Ihren Dokumenten eine professionelle Note verleihen. Hier ist wie:
+Durch das Erstellen unterschiedlicher Kopf- und Fußzeilen für gerade und ungerade Seiten können Sie Ihren Dokumenten einen professionellen Touch verleihen. So geht's:
 
-1. Ungerades und gerades Seitenlayout festlegen: Definieren Sie das Layout, um unterschiedliche Kopf- und Fußzeilen für ungerade und gerade Seiten zu ermöglichen.
+1. Festlegen des Seitenlayouts für gerade und ungerade Seiten: Definieren Sie das Layout, um unterschiedliche Kopf- und Fußzeilen für gerade und ungerade Seiten zuzulassen.
 
 ```python
 section = doc.sections[0]
@@ -99,7 +99,7 @@ section.page_setup.different_first_page_header_footer = True
 section.page_setup.odd_and_even_pages_header_footer = True
 ```
 
-2. Kopf- und Fußzeilen hinzufügen: Fügen Sie Kopf- und Fußzeilen für die erste Seite, ungerade Seiten und gerade Seiten hinzu.
+2. Kopf- und Fußzeilen hinzufügen: Fügen Sie Kopf- und Fußzeilen für die erste Seite, die ungeraden Seiten und die geraden Seiten hinzu.
 
 ```python
 header_first = section.headers_footers[aspose.words.HeaderFooterType.HEADER_FIRST]
@@ -110,7 +110,7 @@ header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
 
-3. Nach Bedarf anpassen: Passen Sie jede Kopf- und Fußzeile entsprechend Ihren Anforderungen an.
+3. Nach Bedarf anpassen: Passen Sie jede Kopf- und Fußzeile Ihren Anforderungen entsprechend an.
 
 ## Kopf- und Fußzeilen entfernen
 
@@ -134,20 +134,20 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### Wie greife ich auf Kopf- und Fußzeileninhalte zu?
 
- Um auf den Inhalt von Kopf- und Fußzeilen zuzugreifen, verwenden Sie die`headers_footers` Eigenschaft des Abschnitts des Dokuments.
+ Um auf Kopf- und Fußzeileninhalte zuzugreifen, verwenden Sie das`headers_footers` Eigenschaft des Dokumentabschnitts.
 
-### Kann ich Bilder zu Kopf- und Fußzeilen hinzufügen?
+### Kann ich Kopf- und Fußzeilen Bilder hinzufügen?
 
- Ja, Sie können mit dem Bilder zu Kopf- und Fußzeilen hinzufügen`add_picture` Methode.
+ Ja, Sie können Bilder zu Kopf- und Fußzeilen hinzufügen, indem Sie`add_picture` Methode.
 
-### Ist es möglich, unterschiedliche Kopfzeilen für ungerade und gerade Seiten zu haben?
+### Ist es möglich, unterschiedliche Kopfzeilen für gerade und ungerade Seiten zu haben?
 
-Sie können auf jeden Fall unterschiedliche Kopf- und Fußzeilen für ungerade und gerade Seiten erstellen, indem Sie die entsprechenden Einstellungen aktivieren.
+Natürlich können Sie für gerade und ungerade Seiten unterschiedliche Kopf- und Fußzeilen erstellen, indem Sie die entsprechenden Einstellungen aktivieren.
 
 ### Kann ich Kopf- und Fußzeilen von bestimmten Seiten entfernen?
 
-Ja, Sie können den Inhalt von Kopf- und Fußzeilen löschen, um diese effektiv zu entfernen.
+Ja, Sie können den Inhalt von Kopf- und Fußzeilen löschen, um sie effektiv zu entfernen.
 
 ### Wo kann ich mehr über Aspose.Words für Python erfahren?
 
-Ausführlichere Dokumentation und Beispiele finden Sie unter[Aspose.Words für Python-API-Referenz](https://reference.aspose.com/words/python-net/).
+Ausführlichere Dokumentation und Beispiele finden Sie im[Aspose.Words für Python API-Referenz](https://reference.aspose.com/words/python-net/).

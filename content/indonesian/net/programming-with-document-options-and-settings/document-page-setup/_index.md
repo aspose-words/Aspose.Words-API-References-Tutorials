@@ -50,7 +50,7 @@ Kode ini menyetel mode tata letak ke "Kisi" dan kemudian menentukan jumlah karak
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Atur mode tata letak untuk bagian yang memungkinkan untuk menentukan perilaku kisi dokumen.
-	// Perhatikan bahwa tab Document Grid menjadi terlihat dalam dialog Page Setup MS Word.
+	// Perhatikan bahwa tab Document Grid menjadi terlihat dalam dialog Page Setup MS Word
 	// jika ada bahasa Asia yang didefinisikan sebagai bahasa penyuntingan.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

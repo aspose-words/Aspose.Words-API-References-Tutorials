@@ -107,10 +107,10 @@ Funkcja ta jest niezwykle przydatna przy przetwarzaniu dokumentów zawierającyc
 
 Korzystanie z tej funkcji może zaoszczędzić czas i poprawić efektywność przepływu pracy. Możesz łatwo wyodrębnić informacje z dokumentów tekstowych i przekształcić je w dokumenty o dobrze zorganizowanej strukturze z odpowiednimi listami.
 
-Pamiętaj, aby wziąć pod uwagę opcje ładowania, takie jak skonfigurowanie wykrywania wybierania białych znaków, aby osiągnąć pożądane wyniki.
+Pamiętaj, aby wziąć pod uwagę opcje ładowania, takie jak skonfigurowanie wykrywania wybierania białych znaków, aby osiągnąć pożądane rezultaty.
 
 Aspose.Words dla .NET oferuje wiele zaawansowanych funkcji do manipulowania i generowania dokumentów. Dalsze zapoznawanie się z dokumentacją i przykładami dostarczonymi przez Aspose.Words umożliwi pełne wykorzystanie możliwości tej potężnej biblioteki.
 
-Nie wahaj się zatem zintegrować wykrywania numerowania białych znaków ze swoimi projektami Aspose.Words for .NET i skorzystaj z jego zalet, aby tworzyć dobrze zorganizowane i czytelne dokumenty.
+Nie wahaj się zatem zintegrować wykrywania numerowania białych znaków ze swoimi projektami Aspose.Words for .NET i wykorzystaj jego zalety do tworzenia dobrze ustrukturyzowanych i czytelnych dokumentów.
 
 

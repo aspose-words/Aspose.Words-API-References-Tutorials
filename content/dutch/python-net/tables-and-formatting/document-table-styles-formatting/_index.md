@@ -141,7 +141,7 @@ Verfijn de rij- en kolomafmetingen voor een evenwichtige tabelindeling:
     table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
     ```
 
-## Randen en arcering aan tabellen toevoegen
+## Randen en arcering toevoegen aan tabellen
 
 Verbeter het uiterlijk van de tabel door randen en arcering toe te voegen:
 

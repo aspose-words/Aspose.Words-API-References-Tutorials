@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## الخطوة 5: حفظ الوثيقة
 
- بعد إدراج حقل نموذج إدخال النص، احفظ المستند في الموقع المطلوب باستخدام الزر`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ بعد إدراج حقل نموذج إدخال النص، احفظ المستند في الموقع المطلوب باستخدام الزر`Save`طريقة. تأكد من توفير مسار الملف المناسب:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 #### س: كيف يمكنني تمكين تتبع المراجعة في مستند Aspose.Words for .NET؟
 
-ج: لتمكين تعقب المراجعة في مستند Aspose.Words for .NET، يمكنك استخدام`StartTrackRevisions` طريقة`Document` هدف. تأخذ هذه الطريقة كمعلمات اسم مؤلف المراجعات وتاريخ بدء متابعة المراجعات.
+ ج: لتمكين تعقب المراجعة في مستند Aspose.Words for .NET، يمكنك استخدام`StartTrackRevisions` طريقة`Document` هدف. تأخذ هذه الطريقة كمعلمات اسم مؤلف المراجعات وتاريخ بدء متابعة المراجعات.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

@@ -1,6 +1,6 @@
 ---
-title: Documentstijlen ophalen in Word
-linktitle: Documentstijlen ophalen in Word
+title: Krijg documentstijlen in Word
+linktitle: Krijg documentstijlen in Word
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u documentstijlen in Word kunt verkrijgen met Aspose.Words voor .NET. Volledige tutorial om de stijlen van uw documenten te manipuleren.
 type: docs
@@ -52,7 +52,7 @@ foreach(Style style in styles)
 
  In deze laatste stap doorlopen we elke stijl in de collectie met behulp van een`foreach` lus. We geven de naam van elke stijl weer op de console en voegen ze samen met komma's voor een betere leesbaarheid.
 
-Nu kunt u de broncode uitvoeren om toegang te krijgen tot stijlen in een document en hun namen weer te geven in de console. Deze functie kan handig zijn voor het analyseren van stijlen in een document, het uitvoeren van specifieke bewerkingen op bepaalde stijlen of voor het verkrijgen van eenvoudigweg informatie over beschikbare stijlen.
+Nu kunt u de broncode uitvoeren om toegang te krijgen tot stijlen in een document en hun namen weer te geven in de console. Deze functie kan handig zijn voor het analyseren van stijlen in een document, het uitvoeren van specifieke bewerkingen op bepaalde stijlen of het verkrijgen van eenvoudigweg informatie over beschikbare stijlen.
 
 ### Voorbeeldbroncode voor Access Styles met Aspose.Words voor .NET 
 ```csharp

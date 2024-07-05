@@ -10,7 +10,7 @@ url: /vi/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## Giới thiệu
 
-Tiện ích mở rộng web đã trở thành một phần không thể thiếu trong hệ thống quản lý tài liệu hiện đại. Chúng cho phép các nhà phát triển nâng cao chức năng tài liệu bằng cách tích hợp liền mạch các thành phần dựa trên web. Aspose.Words, API thao tác tài liệu mạnh mẽ dành cho Python, cung cấp giải pháp toàn diện để tích hợp các tiện ích mở rộng web vào tài liệu của bạn.
+Tiện ích mở rộng web đã trở thành một phần không thể thiếu trong hệ thống quản lý tài liệu hiện đại. Chúng cho phép các nhà phát triển nâng cao chức năng tài liệu bằng cách tích hợp liền mạch các thành phần dựa trên web. Aspose.Words, API thao tác tài liệu mạnh mẽ dành cho Python, cung cấp giải pháp toàn diện để kết hợp các tiện ích mở rộng web vào tài liệu của bạn.
 
 ## Điều kiện tiên quyết
 

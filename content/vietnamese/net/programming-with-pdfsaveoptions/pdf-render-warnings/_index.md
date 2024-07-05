@@ -126,7 +126,7 @@ Bằng cách làm theo các bước này, bạn có thể xử lý hiệu quả 
 
 ### Câu hỏi 1: Tôi có thể xử lý các loại cảnh báo khác bằng phương pháp này không?
 
- Vâng`IWarningCallback` Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ những loại liên quan đến hiển thị PDF.
+ Vâng`IWarningCallback` Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ những loại cảnh báo liên quan đến hiển thị PDF.
 
 ### Câu hỏi 2: Tôi có thể tải xuống bản dùng thử miễn phí Aspose.Words cho .NET ở đâu?
 

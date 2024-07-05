@@ -149,7 +149,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // İçindekiler tablosu ekleme
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-// Belge içeriği ekleyin
+// Belge içeriği ekle
 // ...
 
 // İçindekiler tablosunu güncelleyin
@@ -252,7 +252,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // İçindekiler alanı ekleme
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-// Belge içeriği ekleyin
+// Belge içeriği ekle
 // ...
 
 // İçindekiler tablosunu güncelleyin
@@ -310,7 +310,7 @@ builder.writeln("This is a formatted paragraph.");
 
 ### S: İmleci belge içinde belirli bir konuma nasıl taşıyabilirim?
 
- C: İmleç konumunu aşağıdaki gibi yöntemleri kullanarak kontrol edebilirsiniz:`moveToParagraph`, `moveToCell`ve dahası. İşte bir örnek:
+ C: Aşağıdaki yöntemleri kullanarak imleç konumunu kontrol edebilirsiniz:`moveToParagraph`, `moveToCell`ve dahası. İşte bir örnek:
 
 ```java
 Document doc = new Document();

@@ -55,7 +55,7 @@ section.ClearContent();
 ```
 
 ## Conclusão
-Neste tutorial, vimos como excluir conteúdo de uma seção específica de um documento do Word usando Aspose.Words for .NET. A remoção de conteúdo de uma seção permite redefinir ou remover conteúdo específico dessa seção. Sinta-se à vontade para personalizar e usar esse recurso de acordo com suas necessidades específicas.
+Neste tutorial, vimos como excluir conteúdo de uma seção específica de um documento Word usando Aspose.Words for .NET. A remoção de conteúdo de uma seção permite redefinir ou remover conteúdo específico dessa seção. Sinta-se à vontade para personalizar e usar esse recurso de acordo com suas necessidades específicas.
 
 ### Perguntas frequentes
 

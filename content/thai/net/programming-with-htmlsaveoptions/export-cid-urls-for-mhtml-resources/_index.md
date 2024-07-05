@@ -37,7 +37,7 @@ ExportCidUrlsForMhtmlResources = true
 };
 ```
 
- รหัสนี้สร้างอินสแตนซ์ของ`HtmlSaveOptions` ด้วยรูปแบบการบันทึกที่ตั้งค่าเป็น MHTML นอกจากนี้ยังเปิดใช้งานการส่งออก CID URL ของทรัพยากร MHTML โดยการตั้งค่า`ExportCidUrlsForMhtmlResources` ถึง`true`.
+ รหัสนี้สร้างอินสแตนซ์ของ`HtmlSaveOptions` โดยกำหนดรูปแบบการบันทึกเป็น MHTML นอกจากนี้ยังเปิดใช้งานการส่งออก CID URL ของทรัพยากร MHTML โดยการตั้งค่า`ExportCidUrlsForMhtmlResources` ถึง`true`.
 
 ## ขั้นตอนที่ 4: การแปลงและบันทึกเอกสารเป็น MHTML
 

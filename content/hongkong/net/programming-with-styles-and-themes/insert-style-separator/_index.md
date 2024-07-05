@@ -102,7 +102,7 @@ Aspose.Words for .NET 提供了強大的 API 來管理文件中的樣式。您�
 
 #### 如何插入樣式分隔符號？
 
-若要插入樣式分隔符，您可以使用`InsertStyleSeparator`的方法`DocumentBuilder`目的。此方法插入一個分隔符，標記上一個段落樣式的結束和下一個段落樣式的開始。
+若要插入樣式分隔符，您可以使用`InsertStyleSeparator`的方法`DocumentBuilder`目的。此方法插入一個分隔符，標記上一個段落樣式的結尾和下一個段落樣式的開始。
 
 #### 如何將不同的樣式套用至文字的不同部分？
 
@@ -110,4 +110,4 @@ Aspose.Words for .NET 提供了強大的 API 來管理文件中的樣式。您�
 
 #### 我可以將文件儲存為不同的格式嗎？
 
-是的，您可以將文件儲存為 Aspose.Words for .NET 支援的各種格式。這`Save`的方法`Document`物件可讓您指定輸出檔案格式，例如 DOCX、PDF、HTML 等。根據您的要求選擇適當的格式。
+是的，您可以將文件儲存為 Aspose.Words for .NET 支援的各種格式。這`Save`的方法`Document`物件可讓您指定輸出檔案格式，例如 DOCX、PDF、HTML 等。根據您的要求選擇合適的格式。

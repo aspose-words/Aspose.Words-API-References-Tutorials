@@ -1,6 +1,6 @@
 ---
-title: Вставьте первый объект в документ Word
-linktitle: Вставьте первый объект в документ Word
+title: Вставить объект Ole в документ Word
+linktitle: Вставить объект Ole в документ Word
 second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставить объект OLE в документ Word с помощью Aspose.Words для .NET.
 type: docs
@@ -19,7 +19,7 @@ using Aspose.Words.Drawing;
 ```
 
 ## Шаг 2. Создайте новый документ и генератор документов.
- На этом этапе мы создадим новый документ, используя`Document` класс и построитель документов с использованием`DocumentBuilder` класс.
+ На этом этапе мы создадим новый документ, используя`Document` класс и построитель документов с использованием`DocumentBuilder` сорт.
 
 ```csharp
 Document doc = new Document();

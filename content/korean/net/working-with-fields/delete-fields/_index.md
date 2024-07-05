@@ -16,7 +16,7 @@ url: /ko/net/working-with-fields/delete-fields/
 
 이 튜토리얼을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
-### 소프트웨어 요구 사항
+### 소프트웨어 요구사항
 
 1. Visual Studio: 시스템에 설치 및 구성됩니다.
 2.  .NET용 Aspose.Words: Visual Studio 프로젝트에 다운로드되어 통합되었습니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
@@ -46,7 +46,7 @@ using Aspose.Words;
 아직 추가하지 않았다면 Visual Studio 프로젝트에 Aspose.Words에 대한 참조를 추가하세요. 다음 방법으로 이를 수행할 수 있습니다.
    - 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭합니다.
    - "NuGet 패키지 관리..." 선택
-   - "Apose.Words"를 검색하여 프로젝트에 설치합니다.
+   - "Aspose.Words"를 검색하여 프로젝트에 설치합니다.
 
 ## 3단계: 문서 준비
 
@@ -105,4 +105,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
    - 예, 여기에 표시된 방법은 구체적으로 필드만 대상으로 하며 다른 콘텐츠는 변경되지 않은 상태로 둡니다.
 
 ### Aspose.Words에 대한 추가 리소스와 지원은 어디서 찾을 수 있나요?
-   -  방문하다[.NET API 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 그리고[Aspose.Words 포럼](https://forum.aspose.com/c/words/8)추가 지원을 위해.
+   -  방문하다[.NET API 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 그리고[Aspose.Words 포럼](https://forum.aspose.com/c/words/8) 추가 지원을 위해.

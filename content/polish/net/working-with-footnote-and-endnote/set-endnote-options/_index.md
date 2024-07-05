@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Krok 4: Ustawianie opcji przypisu końcowego
 
- Uzyskać dostęp do`EndnoteOptions` właściwość dokumentu, aby zmodyfikować opcje przypisu końcowego. W tym przykładzie ustawiamy regułę ponownego uruchamiania na każdej stronie i pozycję na końcu sekcji:
+ Uzyskać dostęp do`EndnoteOptions`właściwość dokumentu, aby zmodyfikować opcje przypisu końcowego. W tym przykładzie ustawiamy regułę ponownego uruchamiania na każdej stronie i pozycję na końcu sekcji:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -81,7 +81,7 @@ Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go z
 
 #### P: Jak mogę nadać styl przypisom końcowym w Aspose.Words?
 
-O: Aby nadać styl przypisom końcowym w Aspose.Words, możesz użyć metody`EndnoteOptions` klasa i`SeparatorNoteTextStyle` nieruchomość. Za pomocą tej właściwości możesz określić styl czcionki, rozmiar, kolor itp. dla przypisów końcowych.
+ O: Aby nadać styl przypisom końcowym w Aspose.Words, możesz użyć metody`EndnoteOptions` klasa i`SeparatorNoteTextStyle` nieruchomość. Za pomocą tej właściwości możesz określić styl czcionki, rozmiar, kolor itp. dla przypisów końcowych.
 
 #### P: Czy można dostosować numerację przypisów końcowych w dokumencie?
 
@@ -89,7 +89,7 @@ O: Aby nadać styl przypisom końcowym w Aspose.Words, możesz użyć metody`End
 
 #### P: Jak mogę umieścić przypisy końcowe w dokumencie?
 
- Odp.: Aby rozmieścić przypisy końcowe w dokumencie, możesz użyć opcji`Position` własność`EndnoteOptions` klasa. Możesz określić, czy przypisy końcowe mają być umieszczane na dole każdej strony, na końcu każdej sekcji, czy na końcu dokumentu.
+Odp.: Aby rozmieścić przypisy końcowe w dokumencie, możesz użyć opcji`Position` własność`EndnoteOptions` klasa. Możesz określić, czy przypisy końcowe mają być umieszczane na dole każdej strony, na końcu każdej sekcji, czy na końcu dokumentu.
 
 #### P: Czy mogę dostosować format numeracji przypisów końcowych?
 
@@ -97,4 +97,4 @@ O: Aby nadać styl przypisom końcowym w Aspose.Words, możesz użyć metody`End
 
 #### P: Czy można kontynuować numerowanie przypisów końcowych pomiędzy sekcjami dokumentu?
 
-Odpowiedź: Tak, możliwe jest kontynuowanie numerowania przypisów końcowych pomiędzy sekcjami dokumentu. Użyj`RestartRule` własność`EndnoteOptions` class i ustaw ją na`RestartContinuous` aby umożliwić kontynuację numeracji pomiędzy sekcjami.
+ Odpowiedź: Tak, możliwe jest kontynuowanie numerowania przypisów końcowych pomiędzy sekcjami dokumentu. Użyj`RestartRule` własność`EndnoteOptions` class i ustaw ją na`RestartContinuous` aby umożliwić kontynuację numeracji pomiędzy sekcjami.

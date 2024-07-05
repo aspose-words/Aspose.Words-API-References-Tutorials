@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## Krok 5: Vymažte existující okraje tabulky.
+## Krok 5: Vymažte existující okraje tabulky
 Chcete-li začít s novým ohraničením obrysu, musíme nejprve vymazat všechna existující ohraničení z tabulky. To lze provést pomocí`ClearBorders()` metoda.
 
 ```csharp
@@ -55,8 +55,8 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Krok 7: Vyplňte buňky barvou pozadí.
-Pro zlepšení vizuální prezentace tabulky můžeme buňky vyplnit základní barvou pozadí.
+## Krok 7: Vyplňte buňky barvou pozadí
+Pro zlepšení vizuální prezentace tabulky můžeme buňky vyplnit základní barvou pozadí
 
 idea. V tomto příkladu používáme světle zelenou barvu.
 

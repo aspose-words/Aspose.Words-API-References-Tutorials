@@ -106,7 +106,7 @@ Menghapus daftar sama pentingnya dengan membuat daftar. Anda dapat menghapus daf
 
 ## Menyimpan dan Mengekspor Dokumen
 
-Setelah membuat dan menyesuaikan daftar, Anda dapat menyimpan dokumen dalam berbagai format, termasuk DOCX dan PDF.
+Setelah Anda membuat dan menyesuaikan daftar, Anda dapat menyimpan dokumen dalam berbagai format, termasuk DOCX dan PDF.
 
 ## Kesimpulan
 

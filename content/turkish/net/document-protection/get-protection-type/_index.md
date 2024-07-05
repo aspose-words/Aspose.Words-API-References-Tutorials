@@ -50,7 +50,7 @@ Bu yazımızda bir belgenin koruma tipini belirlemek için Aspose.Words for .NET
 
 C: Aspose.Words for .NET kullanarak bir belgenin koruma tipini almak için şu adımları takip edebilirsiniz:
 1.  Belgeyi kullanarak yükleyin`Document` sınıf.
-2.  Erişmek`ProtectionType` mülkiyeti`Document` koruma türünü almak için nesne.
+2.  Erişmek`ProtectionType` mülkiyeti`Document`koruma türünü almak için nesne.
 
 #### S: ProtectionType özelliğini kullanarak bir belgenin formlar için mi yoksa form alanları için mi korunduğunu belirleyebilir miyim?
 

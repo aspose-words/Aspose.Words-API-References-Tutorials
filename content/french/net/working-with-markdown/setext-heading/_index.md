@@ -1,6 +1,6 @@
 ---
-title: Rubrique Setex
-linktitle: Rubrique Setex
+title: Titre du texte
+linktitle: Titre du texte
 second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser les en-têtes Setext pour formater vos documents avec le guide étape par étape d'Aspose.Words for .NET.
 type: docs

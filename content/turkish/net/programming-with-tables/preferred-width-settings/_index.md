@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Burada üç hücreli bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz. Birinci hücrenin tercih edilen genişliği 40 noktadır, ikinci hücrenin tercih edilen genişliği masa genişliğinin %20'sidir ve üçüncü hücrenin ayarlanan otomatik tercih edilen genişliği vardır.
+Burada üç hücreli bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz. İlk hücrenin tercih edilen genişliği 40 noktadır, ikinci hücrenin tercih edilen genişliği masa genişliğinin %20'sidir ve üçüncü hücrenin otomatik olarak ayarlanan tercih edilen genişliği vardır.
 
   mevcut alana bağlı olarak.
 

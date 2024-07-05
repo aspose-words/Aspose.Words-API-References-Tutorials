@@ -72,4 +72,4 @@ A: Om het geladen syllabiseringswoordenboek toe te passen op een document in Asp
 
 #### Vraag: Welke talen worden ondersteund voor syllabisatie in Aspose.Words?
 
-A: Aspose.Words ondersteunt syllabisatie voor meerdere talen, waaronder Engels, Frans, Spaans, Duits, Italiaans, Nederlands, Russisch, Portugees, Zweeds, Noors, Deens, Fins, Pools, Tsjechisch en nog veel meer. Bekijk de Aspose.Words-documentatie voor de volledige lijst met ondersteunde talen voor syllabisatie.
+A: Aspose.Words ondersteunt syllabisatie voor meerdere talen, waaronder Engels, Frans, Spaans, Duits, Italiaans, Nederlands, Russisch, Portugees, Zweeds, Noors, Deens, Fins, Pools, Tsjechisch en nog veel meer. Raadpleeg de Aspose.Words-documentatie voor de volledige lijst met ondersteunde talen voor syllabisatie.

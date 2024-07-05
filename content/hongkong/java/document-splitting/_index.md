@@ -29,7 +29,7 @@ url: /zh-hant/java/document-splitting/
 透過我們將文件分割為多個文件的逐步指南來釋放 Aspose.Words for Java 的強大功能。取得專家見解和原始碼範例。
 ### [將文檔拆分為 HTML 頁面](./splitting-documents-into-html-pages/)
 了解如何使用 Aspose.Words for Java 將 Word 文件拆分為 HTML 頁面。我們帶有原始程式碼的逐步指南使該過程變得簡單且有效率。立即開始轉換您的文件！
-### [文檔頁分隔](./document-page-separation/)
+### [文件頁分隔](./document-page-separation/)
 了解如何使用 Aspose.Words for Java 執行文件頁面分隔。此綜合指南提供了高效文件處理的逐步說明和原始程式碼。
 ### [按頁面擷取文檔內容](./extracting-document-content-pages/)
 了解如何使用 Aspose.Words for Java 按頁面擷取文件內容。這個帶有原始程式碼的逐步指南將使您立即成為專家。

@@ -18,14 +18,14 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 2. Загрузите документ для рендеринга
- Далее вам необходимо загрузить документ для рендеринга, используя`Document` класс. Обязательно укажите правильный путь к документу.
+ Далее вам необходимо загрузить документ для рендеринга, используя`Document` сорт. Обязательно укажите правильный путь к документу.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Шаг 3. Установите шрифт по умолчанию.
- Теперь вы можете указать шрифт по умолчанию, который будет использоваться при рендеринге, создав экземпляр`FontSettings` класс и установка`DefaultFontName` собственность`DefaultFontSubstitution` возражать против`DefaultFontSubstitution` Объект Object`SubstitutionSettings` из`FontSettings`.
+ Теперь вы можете указать шрифт по умолчанию, который будет использоваться при рендеринге, создав экземпляр`FontSettings` класс и установка`DefaultFontName` собственность`DefaultFontSubstitution` возражать против`DefaultFontSubstitution` объект`SubstitutionSettings` из`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -34,7 +34,7 @@ doc.FontSettings = fontSettings;
 ```
 
 ## Шаг 4. Сохраните визуализированный документ.
- Наконец, вы можете сохранить визуализированный документ в файл, используя команду`Save()` метод`Document` класс. Обязательно укажите правильный путь и имя файла.
+ Наконец, вы можете сохранить визуализированный документ в файл, используя команду`Save()` метод`Document` сорт. Обязательно укажите правильный путь и имя файла.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");

@@ -30,7 +30,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 Zorg ervoor dat u "UW DOCUMENTENMAP" vervangt door het daadwerkelijke pad naar uw documentenmap. Zorg er ook voor dat het document de tabel bevat waarvan u de positie wilt verkrijgen.
 
-## Stap 3: Eigenschappen voor arraypositionering verkrijgen
+## Stap 3: Eigenschappen voor arraypositionering ophalen
 Vervolgens controleren we het positioneringstype van de array en verkrijgen we de juiste positioneringseigenschappen. Gebruik de volgende code:
 
 ```csharp

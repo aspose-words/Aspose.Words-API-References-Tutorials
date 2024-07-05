@@ -97,7 +97,7 @@ Kode sumber Kelas HandleMergeField
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // Kami memutuskan bahwa kami ingin semua nilai boolean ditampilkan sebagai bidang formulir kotak centang.
+            // Kami memutuskan bahwa kami ingin semua nilai boolean dikeluarkan sebagai bidang formulir kotak centang.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
                 // Pindahkan "kursor" ke bidang gabungan saat ini.
@@ -357,7 +357,7 @@ Kode sumber Kelas HandleMergeField
 
 Selamat! Anda telah mempelajari cara menggunakan bidang di Aspose.Words untuk Java untuk memanipulasi dokumen Word secara dinamis. API canggih ini memberi Anda kendali penuh atas dokumen Anda, menjadikannya aset berharga bagi pengembang Java.
 
-## 7.FAQ
+## 7. Pertanyaan Umum
 
 ### Q1: Di mana saya dapat mengunduh Aspose.Words untuk Java?
  Anda dapat mengunduh Aspose.Words untuk Java dari[Di Sini](https://releases.aspose.com/words/java/).

@@ -27,7 +27,7 @@ Dopo aver caricato il documento, è possibile utilizzare la proprietà Protectio
 ProtectionType protectionType = doc.ProtectionType;
 ```
 
-### Codice sorgente di esempio per il tipo di protezione Get utilizzando Aspose.Words per .NET
+### Codice sorgente di esempio per il tipo Ottieni protezione utilizzando Aspose.Words per .NET
 
 Ecco il codice sorgente completo per la funzione Ottieni tipo di protezione utilizzando Aspose.Words per .NET:
 
@@ -50,7 +50,7 @@ In questo articolo, abbiamo spiegato come utilizzare la funzione Ottieni tipo di
 
 R: Per recuperare il tipo di protezione di un documento utilizzando Aspose.Words per .NET, puoi seguire questi passaggi:
 1.  Caricare il documento utilizzando`Document` classe.
-2.  Accedi al`ProtectionType` proprietà del`Document` oggetto per recuperare il tipo di protezione.
+2.  Accedi al`ProtectionType` proprietà del`Document`oggetto per recuperare il tipo di protezione.
 
 #### D: Posso determinare se un documento è protetto per moduli o campi modulo utilizzando la proprietà ProtectionType?
 

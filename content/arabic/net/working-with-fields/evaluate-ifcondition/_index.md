@@ -18,9 +18,9 @@ url: /ar/net/working-with-fields/evaluate-ifcondition/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: أدخل حقل IF.
+## الخطوة 2: أدخل حقل IF
 
- نحن نستخدم ال`InsertField()` طريقة لإدراج حقل IF في المستند الذي يحدد الشرط المراد تقييمه.
+ نحن نستخدم ال`InsertField()` طريقة لإدراج حقل IF في المستند الذي يحدد الشرط المطلوب تقييمه.
 
 ```csharp
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
@@ -36,18 +36,18 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- ال`actualResult` يحتوي المتغير على نتيجة تقييم الحالة.
+ ال`actualResult` المتغير يحتوي على نتيجة تقييم الحالة.
 
 ### نموذج التعليمات البرمجية المصدر لتقييم حالة IF باستخدام Aspose.Words لـ .NET
 
 ```csharp
-//إنشاء منشئ المستندات.
+// إنشاء منشئ المستندات.
 DocumentBuilder builder = new DocumentBuilder();
 
 // أدخل الحقل IF في المستند.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// تقييم حالة IF.
+//تقييم حالة IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // عرض نتيجة التقييم.

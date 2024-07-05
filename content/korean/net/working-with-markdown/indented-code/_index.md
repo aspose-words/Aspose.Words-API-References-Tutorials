@@ -18,7 +18,7 @@ url: /ko/net/working-with-markdown/indented-code/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2단계: 지정된 코드에 대한 스타일 추가
+## 2단계: 들여쓰기된 코드에 스타일 추가
 
 다음을 사용하여 들여쓰기된 코드에 대한 사용자 정의 스타일을 추가하겠습니다.`Styles.Add` 의 방법`Document` 물체. 이 예에서는 들여쓰기된 코드에 대해 "IndentedCode"라는 스타일을 만듭니다.
 
@@ -27,7 +27,7 @@ Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedC
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## 3단계: 지정된 코드 추가
+## 3단계: 들여쓰기된 코드 추가
 
 이제 "IndentedCode" 사용자 정의 스타일을 사용하여 들여쓰기된 코드 블록을 추가할 수 있습니다.
 
@@ -51,7 +51,7 @@ builder.Writeln("This is an indented code");
 
 ### FAQ
 
-#### Q: Markdown에서 지정된 코드는 무엇입니까?
+#### Q: Markdown에서 들여쓰기된 코드란 무엇입니까?
 
 A: Markdown의 들여쓰기 코드는 Markdown 문서에 코드를 표시하는 데 사용되는 서식 지정 방법입니다. 공백이나 탭을 사용하여 각 코드 줄을 들여쓰기하는 것으로 구성됩니다.
 

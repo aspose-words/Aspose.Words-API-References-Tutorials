@@ -10,7 +10,7 @@ url: /es/net/working-with-hyphenation/hyphenation-callback/
 
 ## Introducción
 
-¡Hola! ¿Alguna vez te has visto enredado en las complejidades del formato de texto, especialmente cuando se trata de idiomas que requieren separación de palabras? No estás solo. La separación de sílabas, si bien es crucial para el diseño adecuado del texto, puede ser un dolor de cabeza. ¿Pero adivina que? Aspose.Words para .NET te respalda. Esta poderosa biblioteca le permite administrar el formato de texto sin problemas, incluido el manejo de la separación de palabras a través de un mecanismo de devolución de llamada. ¿Intrigado? Profundicemos en el meollo de la cuestión de cómo implementar una devolución de llamada con separación de palabras utilizando Aspose.Words para .NET.
+¡Hola! ¿Alguna vez se ha visto enredado en las complejidades del formato de texto, especialmente cuando se trata de idiomas que requieren separación de palabras? No estás solo. La separación de sílabas, si bien es crucial para el diseño adecuado del texto, puede ser un dolor de cabeza. ¿Pero adivina que? Aspose.Words para .NET te respalda. Esta poderosa biblioteca le permite administrar el formato de texto sin problemas, incluido el manejo de la separación de palabras a través de un mecanismo de devolución de llamada. ¿Intrigado? Profundicemos en el meollo de la cuestión de cómo implementar una devolución de llamada con separación de palabras utilizando Aspose.Words para .NET.
 
 ## Requisitos previos
 

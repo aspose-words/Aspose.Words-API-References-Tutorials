@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Buat daftar bernomor berdasarkan salah satu templat daftar Microsoft Word.
+// Buat daftar bernomor berdasarkan salah satu templat daftar Microsoft Word
 //dan menerapkannya pada paragraf pembuat dokumen saat ini.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Buat daftar berpoin berdasarkan salah satu templat daftar Microsoft Word.
+// Buat daftar berpoin berdasarkan salah satu templat daftar Microsoft Word
 //dan menerapkannya pada paragraf pembuat dokumen saat ini.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 

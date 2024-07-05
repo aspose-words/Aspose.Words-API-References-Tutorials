@@ -88,7 +88,7 @@ Nakonec dokument uložte. I v případě, že byl dokument vykreslen dříve, bu
 doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 ```
 
-Pomocí těchto kroků jste nakonfigurovali aplikaci tak, aby zpracovávala záměny písem elegantně a dostávala upozornění, kdykoli dojde k záměně.
+Provedením těchto kroků jste nakonfigurovali aplikaci tak, aby zpracovávala záměny písem elegantně a dostávala upozornění, kdykoli dojde k záměně.
 
 ## Závěr
 

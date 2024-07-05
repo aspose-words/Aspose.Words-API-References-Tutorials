@@ -126,7 +126,7 @@ Bu adımları izleyerek Aspose.Words for .NET'te PDF oluşturma uyarılarını e
 
 ### S1: Bu yöntemle diğer uyarı türlerini işleyebilir miyim?
 
- Evet`IWarningCallback` Arayüz, yalnızca PDF oluşturmayla ilgili uyarıları değil, çeşitli türdeki uyarıları da işleyebilir.
+ Evet`IWarningCallback` arayüz yalnızca PDF oluşturmayla ilgili uyarıları değil, çeşitli türdeki uyarıları da işleyebilir.
 
 ### S2: Aspose.Words for .NET'in ücretsiz deneme sürümünü nereden indirebilirim?
 

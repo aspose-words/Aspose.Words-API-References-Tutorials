@@ -67,7 +67,7 @@ Chcete-li nastavit prostředí, musíte se ujistit, že máte Aspose.Words for .
 
 #### Jak získám přístup a upravím vlastnosti motivu?
 
- Chcete-li získat přístup a upravit vlastnosti motivu, můžete použít`Theme` objekt`Document` třída. Přístupem k`Theme` objektu, můžete upravit vlastnosti, jako jsou sekundární písma (`MinorFonts.Latin`) a barvy (`Colors.Hyperlink`). Přiřaďte požadované hodnoty těmto vlastnostem, abyste přizpůsobili téma svého dokumentu.
+ Chcete-li získat přístup a upravit vlastnosti motivu, můžete použít`Theme` objekt`Document` třída. Přístupem k`Theme` objektu, můžete upravit vlastnosti, jako jsou sekundární písma (`MinorFonts.Latin`) a barvy (`Colors.Hyperlink`). Přiřaďte těmto vlastnostem požadované hodnoty, abyste přizpůsobili motiv dokumentu.
 
 #### Jaké jsou výhody nastavení vlastností motivu v dokumentu aplikace Word?
 

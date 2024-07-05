@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Passaggio 4: applica le impostazioni dei caratteri al documento
 
- Assegnare il configurato`FontSettings`al documento. Ciò garantisce che le regole di fallback dei caratteri vengano applicate durante il rendering del documento.
+ Assegnare il configurato`FontSettings` al documento. Ciò garantisce che le regole di fallback dei caratteri vengano applicate durante il rendering del documento.
 
 ```csharp
 doc.FontSettings = fontSettings;

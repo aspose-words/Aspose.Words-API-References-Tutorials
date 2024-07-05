@@ -9,7 +9,7 @@ url: /pl/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Jeśli kiedykolwiek miałeś problemy z nieprawidłowym renderowaniem czcionek w dokumentach, nie jesteś sam. Zarządzanie ustawieniami czcionek i otrzymywanie powiadomień o zamianach czcionek może zaoszczędzić wielu kłopotów. W tym obszernym przewodniku po powiadomieniach zbadamy, jak obsługiwać czcionki za pomocą Aspose.Words dla .NET, zapewniając, że Twoje dokumenty zawsze będą wyglądać najlepiej.
+Jeśli kiedykolwiek miałeś problemy z nieprawidłowym renderowaniem czcionek w dokumentach, nie jesteś sam. Zarządzanie ustawieniami czcionek i otrzymywanie powiadomień o zamianach czcionek może zaoszczędzić wielu kłopotów. W tym obszernym przewodniku przyjrzymy się, jak obsługiwać powiadomienia o czcionkach za pomocą Aspose.Words dla .NET, zapewniając, że Twoje dokumenty zawsze będą wyglądać najlepiej.
 
 ## Warunki wstępne
 

@@ -25,7 +25,7 @@ Dit zijn links naar enkele nuttige bronnen:
 - [Werken met Lijst](./net/working-with-list/)   
 - [Werken met Markdown](./net/working-with-markdown/)   
 - [Werken met Node](./net/working-with-node/)   
-- [Werken met beoordelingen](./net/working-with-revisions/)   
+- [Werken met revisies](./net/working-with-revisions/)   
 - [Werken met tekstvakken](./net/working-with-textboxes/)   
 - [Document splitsen](./net/split-document/)   
 - [Inhoud toevoegen met Documentbuilder](./net/add-content-using-documentbuilder/)

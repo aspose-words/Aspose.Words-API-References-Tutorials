@@ -1,6 +1,6 @@
 ---
-title: Kabarcık Grafiğini Word Belgesine Ekle
-linktitle: Kabarcık Grafiğini Word Belgesine Ekle
+title: Kabarcık Grafiği Word Belgesine Ekle
+linktitle: Kabarcık Grafiği Word Belgesine Ekle
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET kullanarak bir belgeye nasıl kabarcık grafiği ekleyeceğinizi öğrenin. X, Y ve kabarcık boyutu değerlerine sahip seri verilerini ekleyin.
 type: docs
@@ -17,7 +17,7 @@ Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
 - Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## Adım 2: Yeni bir belge oluşturun ve bir grafik ekleyin.
+## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 

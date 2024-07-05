@@ -98,7 +98,7 @@ Az elemzett dokumentumok gyorsítótárazásával szükségtelenné válik az is
 
 ### 3. Többszálú
 
-Használja a többszálas megoldást több dokumentum betöltésének párhuzamosításához, ezzel tovább növelve a teljesítményt.
+Használja a többszálas megoldást több dokumentum betöltésének párhuzamosításához, ami tovább növeli a teljesítményt.
 
 ### 4. Dokumentumtömörítés
 

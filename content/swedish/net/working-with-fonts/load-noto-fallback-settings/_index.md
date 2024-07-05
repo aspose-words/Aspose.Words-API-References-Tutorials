@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Ladda dokumentet och konfigurera inställningar för teckensnittsersättning
- Därefter laddar vi dokumentet med hjälp av`Document` klass och konfigurera inställningarna för teckensnittsåsidosättning med hjälp av`FontSettings` klass. Vi kommer att ladda Noto-typsnittets reservinställningar med hjälp av`LoadNotoFallbackSettings()` metod.
+ Därefter laddar vi dokumentet med hjälp av`Document` klass och konfigurera inställningarna för teckensnittsåsidosättning med hjälp av`FontSettings`klass. Vi kommer att ladda Noto-typsnittets reservinställningar med hjälp av`LoadNotoFallbackSettings()` metod.
 
 ```csharp
 // Ladda dokumentet och konfigurera inställningar för teckensnittsersättning
@@ -67,7 +67,7 @@ S: För att ladda Noto-fontersättningsinställningar i ett Word-dokument med As
 
 #### F: Säkerställer användningen av Noto-teckensnitt för ersättning i Word-dokument en konsekvent textvisualisering?
 
-S: Ja, att använda Noto-teckensnitt för ersättning i Word-dokument säkerställer konsekvent textvisualisering. Noto-teckensnitt är designade för att stödja många språk och tecken, vilket hjälper till att upprätthålla ett konsekvent utseende även när nödvändiga teckensnitt inte är tillgängliga.
+S: Ja, att använda Noto-teckensnitt för ersättning i Word-dokument säkerställer konsekvent textvisualisering. Noto-teckensnitt är designade för att stödja många språk och tecken, vilket hjälper till att bibehålla ett konsekvent utseende även när de nödvändiga typsnitten inte är tillgängliga.
 
 #### F: Är Noto-teckensnitt gratis?
 
@@ -75,4 +75,4 @@ S: Ja, Noto-teckensnitt är gratis och med öppen källkod. De kan laddas ner oc
 
 #### F: Gör användningen av Noto-teckensnitt mina Word-dokument mer tillgängliga?
 
-S: Ja, att använda Noto-teckensnitt för ersättning i Word-dokument hjälper till att göra dina dokument mer tillgängliga. Noto-teckensnitt stöder många språk och tecken, vilket säkerställer bättre läsbarhet och förståelse för användare som ser dina dokument på olika språk.
+S: Ja, att använda Noto-teckensnitt för ersättning i Word-dokument hjälper till att göra dina dokument mer tillgängliga. Noto-teckensnitt stöder många språk och tecken, vilket säkerställer bättre läsbarhet och förståelse för användare som tittar på dina dokument på olika språk.

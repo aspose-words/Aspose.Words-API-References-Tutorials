@@ -9,7 +9,7 @@ url: /pl/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
 W tym samouczku przeprowadzimy Cię przez kolejne kroki korzystania z funkcji weryfikacji dostępu i podpisu w Aspose.Words dla .NET. Ta funkcja umożliwia dostęp do podpisów cyfrowych w dokumencie programu Word i sprawdzanie ich ważności. Wykonaj poniższe kroki:
 
-## Krok 1: Ładowanie dokumentu i uzyskiwanie dostępu do podpisów
+## Krok 1: Ładowanie dokumentu i dostęp do podpisów
 
 Zacznij od przesłania dokumentu zawierającego podpisy cyfrowe:
 
@@ -67,7 +67,7 @@ Wykonując te kroki, będziesz mógł łatwo uzyskać dostęp do podpisów cyfro
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy funkcję uzyskiwania dostępu i weryfikowania podpisów cyfrowych w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Wykonując podane kroki, możesz łatwo załadować dokument, uzyskać dostęp do jego podpisów cyfrowych i zweryfikować ich ważność. Możliwość dostępu do podpisów cyfrowych i ich weryfikacji umożliwia zapewnienie integralności i autentyczności dokumentów programu Word. Aspose.Words dla .NET oferuje potężny interfejs API do przetwarzania tekstu z podpisami cyfrowymi, pozwalający zautomatyzować proces weryfikacji i zwiększyć bezpieczeństwo dokumentów.
+W tym samouczku zbadaliśmy funkcję uzyskiwania dostępu i weryfikowania podpisów cyfrowych w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z podanymi instrukcjami, możesz łatwo załadować dokument, uzyskać dostęp do jego podpisów cyfrowych i zweryfikować ich ważność. Możliwość dostępu do podpisów cyfrowych i ich weryfikacji umożliwia zapewnienie integralności i autentyczności dokumentów programu Word. Aspose.Words dla .NET oferuje potężny interfejs API do przetwarzania tekstu z podpisami cyfrowymi, pozwalający zautomatyzować proces weryfikacji i zwiększyć bezpieczeństwo dokumentów.
 
 ### Często zadawane pytania
 
@@ -79,7 +79,7 @@ Odp.: Podpisy cyfrowe w dokumencie programu Word to podpisy elektroniczne umożl
 
 Odp.: Aby uzyskać dostęp do podpisów cyfrowych w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz wykonać następujące kroki:
 1.  Załaduj dokument za pomocą`Document` class i określ ścieżkę do pliku dokumentu.
-2.  Użyj pętli, aby iterować po`DigitalSignatures` zbieranie dokumentów. Każda iteracja reprezentuje podpis cyfrowy.
+2.  Użyj pętli, aby iterować po`DigitalSignatures` zebranie dokumentu. Każda iteracja reprezentuje podpis cyfrowy.
 
 #### P: Do jakich informacji mogę uzyskać dostęp dzięki podpisowi cyfrowemu w dokumencie programu Word?
 
@@ -97,13 +97,13 @@ Odp.: Za pomocą podpisu cyfrowego w dokumencie programu Word można uzyskać do
 #### P: Jak mogę zweryfikować ważność podpisów cyfrowych w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
 
 Odp.: Aby zweryfikować ważność podpisów cyfrowych w dokumencie programu Word przy użyciu Aspose.Words dla .NET, możesz wykonać następujące kroki:
-1.  Uzyskać dostęp do`DigitalSignatures` zbieranie dokumentów.
+1.  Uzyskać dostęp do`DigitalSignatures` zebranie dokumentu.
 2.  Iteruj po każdym`DigitalSignature` obiekt w kolekcji.
 3.  Użyj`IsValid` własność`DigitalSignature` obiekt, aby sprawdzić, czy podpis jest ważny.
 
 #### P: Czy mogę odzyskać komentarze osoby podpisującej lub powód podpisania z podpisu cyfrowego w dokumencie programu Word?
 
-Odpowiedź: Tak, możesz pobrać komentarze osoby podpisującej lub powód podpisania z podpisu cyfrowego w dokumencie programu Word. The`Comments` własność`DigitalSignature` Obiekt umożliwia dostęp do komentarzy podanych przez osobę podpisującą w procesie podpisywania.
+Odpowiedź: Tak, możesz pobrać komentarze osoby podpisującej lub powód podpisania z podpisu cyfrowego w dokumencie programu Word. The`Comments` własność`DigitalSignature` obiekt zapewnia dostęp do komentarzy określonych przez osobę podpisującą w procesie podpisywania.
 
 #### P: Jakiego rodzaju dokumenty obsługuje funkcja weryfikacji podpisu w Aspose.Words dla .NET?
 

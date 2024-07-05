@@ -143,7 +143,7 @@ footer_paragraph = footer.append_paragraph("Footer text")
 from aspose.words import Hyperlink
 
 # Add a hyperlink
-hyperlink = paragraph.append_hyperlink("https://www.example.com”，“點擊這裡”）
+hyperlink = paragraph.append_hyperlink("https://www.example.com”，“點擊此處”）
 
 # Add a bookmark
 bookmark = paragraph.range.bookmarks.add("section1")
@@ -182,7 +182,7 @@ for data in dataset:
 
 ## 結論
 
-在本文中，我們探討了 Aspose.Words Python 管理 Word 文件結構和內容的功能。您已經學習如何安裝庫、建立、格式化和修改文檔，以及添加圖像、表格和超連結等各種元素。透過利用 Aspose.Words 的強大功能，您可以簡化文件管理並自動產生複雜的報告、合約等。
+在本文中，我們探討了 Aspose.Words Python 管理 Word 文件結構和內容的功能。您已經學習如何安裝庫、建立、格式化和修改文檔，以及添加各種元素，例如圖像、表格和超連結。透過利用 Aspose.Words 的強大功能，您可以簡化文件管理並自動產生複雜的報告、合約等。
 
 ## 常見問題解答
 

@@ -11,7 +11,7 @@ Samouczki Aspose.Words dla .NET dotyczące przetwarzania słów za pomocą OOXML
 
  Samouczki zawierają także praktyczne przykłady kodu ilustrujące użycie różnych funkcji OOXMLSaveOptions. Dowiesz się, jak określić opcje zapisu podczas tworzenia lub edytowania dokumentu programu Word, korzystając z metod takich jak`CompatibilityOptions`, `ImageCompression` , I`ExportFontResources`. Samouczki pomogą Ci zrozumieć, jak te opcje wpływają na format wyjściowy i wybrać odpowiednie ustawienia dla swoich projektów.
 
-Niezależnie od tego, czy chcesz tworzyć dokumenty kompatybilne ze starszymi wersjami programu Word, zmniejszać rozmiar pliku poprzez kompresję obrazów, czy osadzać określone czcionki, samouczki Aspose.Words dla .NET dotyczące przetwarzania słów z opcją OOXMLSaveOptions przeprowadzą Cię przez to wszystko. niezbędne kroki. Będziesz mógł w pełni wykorzystać funkcje zapisywania OOXML i tworzyć profesjonalne i zoptymalizowane dokumenty Word.
+Niezależnie od tego, czy chcesz tworzyć dokumenty kompatybilne ze starszymi wersjami programu Word, zmniejszać rozmiar pliku poprzez kompresję obrazów, czy osadzać określone czcionki, samouczki Aspose.Words dla .NET dotyczące przetwarzania słów z OOXMLSaveOptions przeprowadzą Cię przez to wszystko. niezbędne kroki. Będziesz mógł w pełni wykorzystać funkcje zapisywania OOXML i tworzyć profesjonalne i zoptymalizowane dokumenty Word.
 
  ## Poradniki
 | Tytuł | Opis |

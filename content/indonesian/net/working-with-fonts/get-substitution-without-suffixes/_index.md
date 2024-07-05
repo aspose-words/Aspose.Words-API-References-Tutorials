@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Langkah 5: Buat Kelas Penangan Peringatan
 
-Untuk menangani peringatan secara efektif, buat kelas khusus yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan menangkap dan mencatat peringatan penggantian font apa pun.
+ Untuk menangani peringatan secara efektif, buat kelas khusus yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan menangkap dan mencatat peringatan penggantian font apa pun.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Anda sekarang telah menguasai proses penanganan substitusi font tanpa sufiks men
 
 ### Q1: Bagaimana cara menggunakan font dari beberapa direktori khusus?
 
- Anda dapat menambahkan banyak`FolderFontSource` contoh ke`fontSources` daftar dan perbarui sumber font yang sesuai.
+ Anda dapat menambahkan banyak`FolderFontSource` contoh ke`fontSources`daftar dan perbarui sumber font yang sesuai.
 
 ### Q2: Di mana saya dapat mengunduh uji coba gratis Aspose.Words untuk .NET?
 

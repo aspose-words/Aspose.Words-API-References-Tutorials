@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- ในขั้นตอนนี้ เราจะเริ่มต้นเอกสารใหม่และก`DocumentBuilder` วัตถุ วัตถุ ที่`DocumentBuilder` เป็นเครื่องมือของคุณในการสร้างเอกสาร
+ ในขั้นตอนนี้ เราจะเริ่มต้นเอกสารใหม่และก`DocumentBuilder` วัตถุ. ที่`DocumentBuilder` เป็นเครื่องมือของคุณในการสร้างเอกสาร
 
 ## ขั้นตอนที่ 2: แทรกเขตข้อมูลผสาน
 

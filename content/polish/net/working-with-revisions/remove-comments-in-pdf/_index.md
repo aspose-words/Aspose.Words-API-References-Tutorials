@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-revisions/remove-comments-in-pdf/
 ---
 
-W tym przewodniku krok po kroku powiemy Ci, jak usunąć komentarze z pliku PDF za pomocą Aspose.Words dla .NET. Dostarczymy Ci pełny kod źródłowy i pokażemy, jak sformatować wynik przeceny.
+tym przewodniku krok po kroku powiemy Ci, jak usunąć komentarze z pliku PDF za pomocą Aspose.Words dla .NET. Dostarczymy Ci pełny kod źródłowy i pokażemy, jak sformatować wynik przeceny.
 
 ## Krok 1: Ładowanie dokumentu
 

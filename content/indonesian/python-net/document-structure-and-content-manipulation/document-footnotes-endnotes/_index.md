@@ -74,7 +74,7 @@ Anda dapat mengelola catatan kaki dan catatan akhir secara terprogram dengan:
 - Buat catatan kaki singkat dan relevan
 - Gunakan catatan akhir untuk penjelasan yang lebih luas
 - Pertahankan pemformatan yang konsisten
-- Periksa kembali keakuratan kutipannya.
+- Periksa kembali keakuratan kutipannya
 
 ## Memecahkan Masalah Umum
 

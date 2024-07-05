@@ -2,7 +2,7 @@
 title: Tengely határai Egy Chartban
 linktitle: Tengely határai Egy Chartban
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan állíthatja be egy tengely határait egy diagramon az Aspose.Words for .NET segítségével, amely szabályozza a tengelyen megjelenített értéktartományt.
+description: Ismerje meg, hogyan állíthatja be egy tengely határait egy diagramon az Aspose.Words for .NET segítségével, amely a tengelyen megjelenített értéktartományt szabályozza.
 type: docs
 weight: 10
 url: /hu/net/programming-with-charts/bounds-of-axis/
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
- Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder` tiltakozik a dokumentummal való munkavégzésre.
+ Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder`tiltakozik a dokumentummal való munkavégzésre.
 
 ```csharp
 Document doc = new Document();
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 Ez az! Sikeresen beállította egy diagram tengelyének határait az Aspose.Words for .NET segítségével.
 
 ## Következtetés
-Ebben az oktatóanyagban megtanulta, hogyan állíthatja be a tengelyek határait egy diagramon az Aspose.Words for .NET használatával. A lépésenkénti útmutatót követve beszúrhat és konfigurálhat diagramot, sorozatadatokat adhat hozzá, valamint meghatározhatja a tengelyméretezés minimális és maximális értékét. Az Aspose.Words for .NET hatékony és rugalmas API-t biztosít Word-dokumentumokkal végzett szövegfeldolgozáshoz, amely lehetővé teszi dinamikus és tetszetős diagramok egyszerű létrehozását.
+Ebben az oktatóanyagban megtanulta, hogyan állíthatja be a tengelyek határait egy diagramon az Aspose.Words for .NET használatával. A lépésenkénti útmutatót követve beszúrhat és konfigurálhat diagramot, sorozatadatokat adhat hozzá, és meghatározhatja a tengelyméretezés minimális és maximális értékét. Az Aspose.Words for .NET hatékony és rugalmas API-t biztosít Word-dokumentumokkal végzett szövegfeldolgozáshoz, amely lehetővé teszi dinamikus és tetszetős diagramok egyszerű létrehozását.
 
 
 ### GYIK
@@ -95,10 +95,10 @@ Ebben az oktatóanyagban megtanulta, hogyan állíthatja be a tengelyek határai
 Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi a fejlesztők számára, hogy programozottan dolgozzanak Word-dokumentumokkal. Szolgáltatások és funkciók széles skáláját kínálja a Word dokumentumok létrehozásához, kezeléséhez és mentéséhez.
 
 #### Q2. Hogyan telepíthetem az Aspose.Words for .NET fájlt?
-Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjét használhatja. Egyszerűen keresse meg az „Apose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
+Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjét használhatja. Egyszerűen keresse meg az „Aspose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
 
 #### Q3. Használhatom az Aspose.Words for .NET-et más programozási nyelvekkel?
 Nem, az Aspose.Words for .NET kifejezetten .NET-alkalmazásokhoz készült. Olyan programozási nyelvekkel működik, mint a C# és a VB.NET.
 
 #### Q4. Vannak egyéb előfeltételei az Aspose.Words for .NET használatának?
-Az Aspose.Words for .NET könyvtár telepítése mellett alapvető ismeretekkel kell rendelkeznie a C# programozásról és a Word-dokumentumokkal végzett szövegfeldolgozásról. A .NET keretrendszer ismerete is hasznos lesz.
+Az Aspose.Words for .NET könyvtár telepítése mellett alapszintű ismeretekkel kell rendelkeznie a C# programozásról és a Word-dokumentumokkal végzett szövegfeldolgozásról. A .NET keretrendszer ismerete is hasznos lesz.

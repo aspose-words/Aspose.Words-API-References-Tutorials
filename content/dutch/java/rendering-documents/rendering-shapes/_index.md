@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 Gefeliciteerd! Je hebt met succes geleerd hoe je vormen kunt weergeven in Aspose.Words voor Java. Deze mogelijkheid opent een wereld aan mogelijkheden bij het programmatisch werken met Word-documenten.
 
-## 9.Veelgestelde vragen
+## 9. Veelgestelde vragen
 
 ### V1: Kan ik meerdere vormen in één document weergeven?
 

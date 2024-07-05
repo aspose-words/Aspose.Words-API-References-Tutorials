@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Etapa 2: obter linhas principais dos favoritos
 
- Nós usamos o`GetAncestor` Métodos para recuperar as linhas pai dos nós inicial e final do marcador:
+ Nós usamos o`GetAncestor` métodos para recuperar as linhas pai dos nós inicial e final do marcador:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));

@@ -17,7 +17,7 @@ Ujistěte se, že máte následující předpoklady:
 - Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
 - Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
 
-## Krok 2: Vytvořte nový dokument a vložte graf.
+## Krok 2: Vytvořte nový dokument a vložte graf
 
  Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
 
@@ -51,7 +51,7 @@ series1.HasDataLabels = true;
 
 ## Krok 4: Přizpůsobte formát čísel štítků dat
 
- Chcete-li formátovat počet datových štítků, přejděte na`DataLabels` kolekce spojená se sérií.
+ Chcete-li formátovat počet datových štítků, přejděte na`DataLabels` kolekce spojená se seriálem.
 
 ```csharp
 series1.DataLabels.ShowValue = true;
@@ -70,7 +70,7 @@ V tomto příkladu jsme pro každý datový štítek nastavili různé formáty 
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-Tím je dokončena implementace formátování počtu datových štítků v grafu pomocí Aspose.Words for .NET.
+Tím je dokončena implementace formátování počtu štítků dat v grafu pomocí Aspose.Words for .NET.
 
 ### Příklad zdrojového kódu pro štítek Format Number Of Data pomocí Aspose.Words for .NET 
 
@@ -115,13 +115,13 @@ Pomocí Aspose.Words for .NET můžete do svých aplikací .NET začlenit výkon
 Aspose.Words for .NET je knihovna pro zpracování dokumentů s bohatými funkcemi, která umožňuje vývojářům vytvářet, manipulovat a ukládat dokumenty Word programově v aplikacích .NET. Poskytuje širokou škálu funkcí pro textové zpracování s prvky dokumentu, včetně grafů a datových štítků.
 
 #### Q2. Jak mohu nainstalovat Aspose.Words pro .NET?
-Aspose.Words for .NET můžete nainstalovat stažením pomocí správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Apose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
+Aspose.Words for .NET můžete nainstalovat stažením pomocí správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Aspose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
 
 #### Q3. Mohu formátovat další aspekty grafu pomocí Aspose.Words for .NET?
 Ano, Aspose.Words for .NET poskytuje rozsáhlé možnosti pro formátování různých aspektů grafu. Kromě popisků dat můžete přizpůsobit typ grafu, data řady, vlastnosti os, legendu, nadpis, oblast vykreslování a mnoho dalších prvků grafu. Rozhraní API nabízí jemnou kontrolu nad vzhledem a formátováním grafu.
 
 #### Q4. Mohu použít různé formáty čísel na různé štítky dat ve stejné řadě?
-Ano, Aspose.Words for .NET umožňuje použít různé formáty čísel na jednotlivé štítky dat v rámci stejné řady. Přístupem k`DataLabels` kolekce přidružená k sérii, můžete nastavit`FormatCode` vlastnost každého datového štítku k určení požadovaného formátu čísla. To vám umožní prezentovat číselné hodnoty v různých formátech ve stejném grafu.
+Ano, Aspose.Words for .NET umožňuje použít různé formáty čísel na jednotlivé štítky dat v rámci stejné řady. Přístupem k`DataLabels` kolekce přidružená k sérii, můžete nastavit`FormatCode` vlastnost každého datového štítku k určení požadovaného formátu čísla. To vám umožní prezentovat číselné hodnoty v různých formátech v rámci stejného grafu.
 
 #### Q5. Mohu pro datové štítky použít vlastní číselné formáty?
  Ano, Aspose.Words for .NET podporuje vlastní číselné formáty pro štítky dat. Požadovaný formát čísla můžete určit nastavením`FormatCode` vlastnost datového štítku na kód vlastního formátu. To vám dává flexibilitu při použití široké škály formátů čísel, jako jsou symboly měn, formáty data, procentuální hodnoty a další.

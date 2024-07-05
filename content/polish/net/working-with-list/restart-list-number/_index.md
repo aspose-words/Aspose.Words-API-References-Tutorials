@@ -116,7 +116,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
  O: Aby ponownie rozpocząć numerację listy w Aspose.Words, możesz użyć opcji`ListRestartAtNumber` metoda`List` klasa. Metoda ta pozwala na ustawienie nowej wartości wybierania, od której lista ma zostać wznowiona. Możesz na przykład użyć`list.ListRestartAtNumber(1)` aby wznowić numerację od 1.
 
-#### P: Czy można dostosować prefiks i sufiks wznowionej numeracji list w Aspose.Words?
+#### P: Czy można dostosować przedrostek i przyrostek ponownie uruchamianej numeracji list w Aspose.Words?
 
  O: Tak, możesz dostosować przedrostek i przyrostek ponownie uruchomionej numeracji list w Aspose.Words. The`ListLevel` klasa oferuje właściwości takie jak`ListLevel.NumberPrefix` I`ListLevel.NumberSuffix`które pozwalają określić przedrostek i przyrostek dla każdego poziomu na liście. Możesz użyć tych właściwości, aby dostosować przedrostek i przyrostek zgodnie z potrzebami.
 
@@ -124,7 +124,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
  O: Aby określić konkretną wartość liczbową, od której lista powinna zostać ponownie uruchomiona, możesz użyć opcji`ListRestartAtNumber` metoda przekazująca żądaną wartość jako argument. Na przykład, aby wznowić numerację od 5, możesz użyć`list.ListRestartAtNumber(5)`.
 
-#### P: Czy można zrestartować wielopoziomową numerację list w Aspose.Words?
+#### P: Czy można ponownie uruchomić wielopoziomową numerację list w Aspose.Words?
 
  O: Tak, Aspose.Words obsługuje ponowne numerowanie wielu poziomów list. Można zastosować`ListRestartAtNumber` na każdym poziomie listy, aby indywidualnie ponownie rozpocząć numerację. Możesz na przykład użyć`list.Levels[0].ListRestartAtNumber(1)` aby zrestartować pierwszy poziom listy od 1, i`list.Levels[1].ListRestartAtNumber(1)` aby zrestartować listę drugiego poziomu, zaczynając od 1 i tak dalej.
 

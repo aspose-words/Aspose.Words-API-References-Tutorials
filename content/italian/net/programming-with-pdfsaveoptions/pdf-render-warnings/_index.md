@@ -126,7 +126,7 @@ Seguendo questi passaggi, puoi gestire in modo efficace gli avvisi di rendering 
 
 ### Q1: posso gestire altri tipi di avvisi con questo metodo?
 
- Sì, il`IWarningCallback` L'interfaccia può gestire vari tipi di avvisi, non solo quelli relativi al rendering del PDF.
+ Sì, il`IWarningCallback` l'interfaccia può gestire vari tipi di avvisi, non solo quelli relativi al rendering del PDF.
 
 ### Q2: Dove posso scaricare una versione di prova gratuita di Aspose.Words per .NET?
 

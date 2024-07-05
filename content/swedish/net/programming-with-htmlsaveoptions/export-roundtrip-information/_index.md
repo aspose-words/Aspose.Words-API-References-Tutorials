@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
 
-I den här handledningen går vi igenom C#-källkoden för att exportera information om tur och retur från ett dokument med Aspose.Words för .NET. Den här funktionen låter dig inkludera information tur och retur i den exporterade HTML-filen, vilket gör det lättare att hämta ändringar som gjorts i originaldokumentet.
+I den här handledningen går vi igenom C#-källkoden för att exportera information om tur och retur från ett dokument med Aspose.Words för .NET. Denna funktion låter dig inkludera information tur och retur i den exporterade HTML-filen, vilket gör det lättare att hämta ändringar som gjorts i originaldokumentet.
 
 ## Steg 1: Projektinställning
 

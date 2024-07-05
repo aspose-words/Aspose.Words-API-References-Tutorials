@@ -1,6 +1,6 @@
 ---
-title: Kierunek Setex
-linktitle: Kierunek Setex
+title: Nagłówek setekstu
+linktitle: Nagłówek setekstu
 second_title: Aspose.Words API do przetwarzania dokumentów
 description: Dowiedz się, jak używać nagłówków Setext do formatowania dokumentów za pomocą Aspose.Words dla .NET Przewodnik krok po kroku.
 type: docs

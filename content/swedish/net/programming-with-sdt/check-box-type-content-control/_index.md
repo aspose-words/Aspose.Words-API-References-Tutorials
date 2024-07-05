@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Steg 2: Skapa en Document and DocumentBuilder
- Skapa en ny instans av`Document` klass och a`DocumentBuilder` att bygga dokumentets innehåll.
+ Skapa en ny instans av`Document` klass och a`DocumentBuilder` för att bygga dokumentets innehåll.
 
 ```csharp
 Document doc = new Document();

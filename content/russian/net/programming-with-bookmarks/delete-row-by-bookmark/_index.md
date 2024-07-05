@@ -23,7 +23,7 @@ url: /ru/net/programming-with-bookmarks/delete-row-by-bookmark/
 Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## Шаг 2. Удалите строку таблицы.
+## Шаг 2. Удаление строки таблицы
 
  Мы используем`GetAncestor` метод получения`Row` введите родительский элемент закладки. Далее мы используем`Remove` метод удаления строки таблицы:
 

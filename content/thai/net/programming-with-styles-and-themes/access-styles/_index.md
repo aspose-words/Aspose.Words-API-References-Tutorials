@@ -2,7 +2,7 @@
 title: รับสไตล์เอกสารใน Word
 linktitle: รับสไตล์เอกสารใน Word
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีรับสไตล์เอกสารใน Word ด้วย Aspose.Words สำหรับ .NET บทช่วยสอนฉบับสมบูรณ์เพื่อปรับเปลี่ยนสไตล์ของเอกสารของคุณ
+description: เรียนรู้วิธีรับสไตล์เอกสารใน Word ด้วย Aspose.Words สำหรับ .NET บทช่วยสอนฉบับสมบูรณ์เพื่อจัดการสไตล์ของเอกสารของคุณ
 type: docs
 weight: 10
 url: /th/net/programming-with-styles-and-themes/access-styles/
@@ -20,7 +20,7 @@ url: /th/net/programming-with-styles-and-themes/access-styles/
 Document doc = new Document();
 ```
 
- ในขั้นตอนนี้เราจะสร้างช่องว่างใหม่`Document` วัตถุ วัตถุ
+ ในขั้นตอนนี้เราจะสร้างช่องว่างใหม่`Document` วัตถุ.
 
 ## ขั้นตอนที่ 3: การเข้าถึงคอลเลกชันสไตล์
 
@@ -91,7 +91,7 @@ foreach (Style style in styles)
 #### ฉันจะเข้าถึงสไตล์ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
 
 ในการเข้าถึงสไตล์ในเอกสาร Word ให้ทำตามขั้นตอนเหล่านี้:
-1.  สร้างใหม่`Document` วัตถุ วัตถุ
+1.  สร้างใหม่`Document` วัตถุ.
 2.  ดึงข้อมูล`StyleCollection` โดยเข้าไปที่`Styles` คุณสมบัติของเอกสาร
 3. วนซ้ำสไตล์ต่างๆ โดยใช้ลูปเพื่อเข้าถึงและประมวลผลแต่ละสไตล์แยกกัน
 

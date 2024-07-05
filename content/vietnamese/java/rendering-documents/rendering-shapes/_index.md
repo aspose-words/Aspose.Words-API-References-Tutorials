@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 Chúc mừng! Bạn đã học thành công cách hiển thị hình dạng trong Aspose.Words cho Java. Khả năng này mở ra nhiều khả năng khi làm việc với tài liệu Word theo chương trình.
 
-## 9.Câu hỏi thường gặp
+## 9. Câu hỏi thường gặp
 
 ### Câu hỏi 1: Tôi có thể hiển thị nhiều hình dạng trong một tài liệu không?
 

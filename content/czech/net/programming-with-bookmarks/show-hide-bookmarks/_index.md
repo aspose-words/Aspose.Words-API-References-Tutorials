@@ -128,7 +128,7 @@ Odpověď: Ano, poskytnutý kód funguje s různými formáty dokumentů Word po
 
 #### Otázka: Mohu použít podmínky k zobrazení nebo skrytí záložek na základě hodnot slučovacích polí v dokumentu?
 
- Odpověď: Ano, můžete použít podmínky a sloučit hodnoty polí k určení, zda se má záložka zobrazit nebo skrýt. Kód si můžete přizpůsobit`ShowHideBookmarkedContent` funkce zohlednit vhodné podmínky a hodnoty.
+ Odpověď: Ano, můžete použít podmínky a sloučit hodnoty polí k určení, zda má být záložka zobrazena nebo skryta. Kód si můžete přizpůsobit`ShowHideBookmarkedContent` funkce zohlednit vhodné podmínky a hodnoty.
 
 #### Otázka: Jak mohu odstranit záložku v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 

@@ -56,7 +56,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
 ## Krok 5: Použití regulárních výrazů pro hledání a nahrazování
 
-K provádění operací vyhledávání a nahrazování v textu dokumentu použijeme regulární výrazy. V našem příkladu vyhledáme všechny výskyty písmene "e" a nahradíme je hvězdičkou "* ". .SÍŤ`Regex` k tomu se používá třída:
+K provádění operací vyhledávání a nahrazování v textu dokumentu použijeme regulární výrazy. V našem příkladu vyhledáme všechny výskyty písmene "e" a nahradíme je hvězdičkou "* ". .SÍŤ`Regex` třída se k tomu používá:
 
 ```csharp
 Regex regex = new Regex("e");

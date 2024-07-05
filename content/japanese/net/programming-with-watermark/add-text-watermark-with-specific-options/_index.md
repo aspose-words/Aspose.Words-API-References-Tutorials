@@ -1,16 +1,16 @@
 ---
-title: 特定のオプションを使用してテキスト透かしを追加する
-linktitle: 特定のオプションを使用してテキスト透かしを追加する
+title: 特定のオプションでテキスト透かしを追加する
+linktitle: 特定のオプションでテキスト透かしを追加する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、特定のオプションを使用してテキストの透かしを追加する方法を学びます。ステップバイステップのガイド。
+description: Aspose.Words for .NET を使用して、特定のオプションでテキスト透かしを追加する方法を学習します。ステップ バイ ステップ ガイド。
 type: docs
 weight: 10
 url: /ja/net/programming-with-watermark/add-text-watermark-with-specific-options/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用して特定のオプションを使用してテキストの透かしを追加する方法を説明します。テキスト透かしは、文書が下書きであること、機密であることなどを示すために文書に重ねて表示されるテキストです。
+このチュートリアルでは、Aspose.Words for .NET を使用して、特定のオプションでテキスト透かしを追加する方法について説明します。テキスト透かしは、ドキュメントが下書きや機密文書であることを示すためにドキュメントに重ねて表示されるテキストです。
 
-## ステップ 1: ドキュメント ジェネレーターを使用する
+## ステップ1: ドキュメントジェネレーターの使用
 
 まず、ドキュメント ジェネレーターを使用してドキュメントにコンテンツを追加します。
 
@@ -18,7 +18,7 @@ url: /ja/net/programming-with-watermark/add-text-watermark-with-specific-options
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ 2: ドキュメントをロードする
+## ステップ2: ドキュメントの読み込み
 
 ドキュメント パスを使用して既存のドキュメントを読み込みます。
 
@@ -26,9 +26,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## ステップ 3: 特定のオプションを使用してテキストの透かしを追加する
+## ステップ3: 特定のオプションでテキスト透かしを追加する
 
-のインスタンスを作成します。`TextWatermarkOptions`クラスを開き、テキストの透かしに必要なオプションを設定します。
+インスタンスを作成します`TextWatermarkOptions`クラスを選択し、テキスト透かしの必要なオプションを設定します。
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()
@@ -43,19 +43,19 @@ IsSemitrasparent = false
 doc.Watermark.SetText("Test", options);
 ```
 
-## ステップ 4: ドキュメントを保存する
+## ステップ4: ドキュメントを保存する
 
-最後に、テキスト透かしを追加してドキュメントを保存できます。
+最後に、テキスト透かしを追加したドキュメントを保存できます。
 
 ```csharp
 	doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");
 ```
 
-### Aspose.Words for .NET で特定のオプションを使用してテキスト透かしを追加するソース コードの例
+### Aspose.Words for .NET を使用して特定のオプションでテキスト透かしを追加するためのサンプル ソース コード
 
 ```csharp
 
-	//ドキュメントディレクトリへのパス。
+	//ドキュメント ディレクトリへのパス。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Document.docx");
 
@@ -74,5 +74,5 @@ doc.Watermark.SetText("Test", options);
 	
 ```
 
-おめでとうございます！ Aspose.Words for .NET を使用して、特定のオプションを使用してテキストの透かしを追加する方法を学習しました。
+おめでとうございます！Aspose.Words for .NET を使用して、特定のオプションでテキスト透かしを追加する方法を学習しました。
 

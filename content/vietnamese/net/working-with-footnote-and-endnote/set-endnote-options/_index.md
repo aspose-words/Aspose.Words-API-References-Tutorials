@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Bước 4: Thiết lập tùy chọn Endnote
 
- Truy cập`EndnoteOptions` thuộc tính của tài liệu để sửa đổi các tùy chọn chú thích cuối. Trong ví dụ này, chúng tôi đặt quy tắc khởi động lại để khởi động lại trên mỗi trang và vị trí ở cuối phần:
+ Truy cập`EndnoteOptions`thuộc tính của tài liệu để sửa đổi các tùy chọn chú thích cuối. Trong ví dụ này, chúng tôi đặt quy tắc khởi động lại để khởi động lại trên mỗi trang và vị trí ở cuối phần:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -81,7 +81,7 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Câu hỏi: Làm cách nào tôi có thể tạo kiểu cho chú thích cuối trong Aspose.Words?
 
-Đáp: Để tạo kiểu cho chú thích cuối trong Aspose.Words, bạn có thể sử dụng`EndnoteOptions` lớp học và`SeparatorNoteTextStyle` tài sản. Bạn có thể chỉ định kiểu phông chữ, kích thước, màu sắc, v.v. cho chú thích bằng thuộc tính này.
+ Đáp: Để tạo kiểu cho chú thích cuối trong Aspose.Words, bạn có thể sử dụng`EndnoteOptions` lớp học và`SeparatorNoteTextStyle` tài sản. Bạn có thể chỉ định kiểu phông chữ, kích thước, màu sắc, v.v. cho chú thích bằng thuộc tính này.
 
 #### Hỏi: Có thể tùy chỉnh cách đánh số chú thích cuối trong tài liệu không?
 
@@ -89,7 +89,7 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Câu hỏi: Làm cách nào tôi có thể định vị chú thích cuối trong tài liệu?
 
- Đáp: Để định vị chú thích cuối trong tài liệu, bạn có thể sử dụng`Position` tài sản của`EndnoteOptions` lớp học. Bạn có thể chỉ định nên đặt chú thích cuối ở cuối mỗi trang, ở cuối mỗi phần hay ở cuối tài liệu.
+Đáp: Để định vị chú thích cuối trong tài liệu, bạn có thể sử dụng`Position` tài sản của`EndnoteOptions` lớp học. Bạn có thể chỉ định nên đặt chú thích cuối ở cuối mỗi trang, ở cuối mỗi phần hay ở cuối tài liệu.
 
 #### Hỏi: Tôi có thể tùy chỉnh định dạng đánh số chú thích cuối trang không?
 
@@ -97,4 +97,4 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Câu hỏi: Có thể tiếp tục đánh số chú thích cuối giữa các phần của tài liệu không?
 
-Đáp: Có, có thể tiếp tục đánh số chú thích cuối giữa các phần của tài liệu. Sử dụng`RestartRule` tài sản của`EndnoteOptions` lớp và đặt nó thành`RestartContinuous` để cho phép đánh số tiếp tục giữa các phần.
+ Đáp: Có, có thể tiếp tục đánh số chú thích cuối giữa các phần của tài liệu. Sử dụng`RestartRule` tài sản của`EndnoteOptions` lớp và đặt nó thành`RestartContinuous` để cho phép đánh số tiếp tục giữa các phần.

@@ -110,7 +110,7 @@ builder.Writeln("This is a new paragraph after moving the cursor.");
 doc.Save("ManipulatedDocument.docx");
 ```
 
-現在你就得到它了！使用 Aspose.Words for .NET 來操作 Word 文件中遊標位置的簡單且強大的方法。
+現在你就擁有了！使用 Aspose.Words for .NET 來操作 Word 文件中遊標位置的簡單且強大的方法。
 
 ## 結論
 
@@ -136,4 +136,4 @@ Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員使�
 
 ### 在哪裡可以找到 Aspose.Words 的文檔？
 
-您可以找到 Aspose.Words for .NET 的綜合文件。[這裡](https://reference.aspose.com/words/net/).
+您可以找到 Aspose.Words for .NET 的綜合文檔[這裡](https://reference.aspose.com/words/net/).

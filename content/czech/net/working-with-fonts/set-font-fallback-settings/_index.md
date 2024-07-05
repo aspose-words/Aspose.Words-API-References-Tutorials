@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Krok 4: Použijte nastavení písma na dokument
 
- Přiřadit nakonfigurované`FontSettings` dokumentu. Tím je zajištěno, že se při vykreslování dokumentu použijí záložní pravidla pro písmo.
+ Přiřadit nakonfigurované`FontSettings` k dokumentu. Tím je zajištěno, že se při vykreslování dokumentu použijí záložní pravidla pro písmo.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -92,7 +92,7 @@ Zde je příklad toho, jak by měl vypadat váš soubor XML definující pravidl
 
 ## Závěr
 
-Pomocí následujících kroků můžete efektivně nastavit a používat nastavení Obnovení písma v Aspose.Words for .NET. Tím zajistíte, že vaše dokumenty zobrazí všechny znaky správně, i když původní písmo určité znaky nepodporuje. Implementace těchto nastavení výrazně zvýší kvalitu a čitelnost vašich dokumentů.
+Pomocí následujících kroků můžete efektivně nastavit a používat nastavení Font Fallback v Aspose.Words for .NET. Tím zajistíte, že vaše dokumenty zobrazí všechny znaky správně, i když původní písmo určité znaky nepodporuje. Implementace těchto nastavení výrazně zvýší kvalitu a čitelnost vašich dokumentů.
 
 ## Nejčastější dotazy
 

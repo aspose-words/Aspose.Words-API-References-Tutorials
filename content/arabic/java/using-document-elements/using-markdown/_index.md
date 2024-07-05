@@ -125,7 +125,7 @@ builder.insertHorizontalRule();
 // تحديد القائمة المطلوبة.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// حدد التركيز الإيطالي للنص.
+// تحديد التركيز المائل للنص.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

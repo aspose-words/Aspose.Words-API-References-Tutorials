@@ -30,7 +30,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Trong ví dụ này, chúng tôi tạo một tài liệu mới và sử dụng DocumentBuilder để thêm văn bản và tạo danh sách có ba cấp độ thụt lề. Chúng tôi đã thêm ba mục vào danh sách, mỗi mục chỉ ra một cấp độ bổ sung.
+Trong ví dụ này, chúng tôi tạo một tài liệu mới và sử dụng DocumentBuilder để thêm văn bản và tạo danh sách có ba cấp độ thụt lề. Chúng tôi đã thêm ba mục vào danh sách, với mỗi mục được thụt vào một cấp độ bổ sung.
 
 ## Sử dụng một ký tự khoảng trắng cho mỗi cấp độ để thụt lề danh sách
 

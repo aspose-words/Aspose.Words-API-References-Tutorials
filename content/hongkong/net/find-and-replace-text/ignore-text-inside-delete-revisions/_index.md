@@ -48,7 +48,7 @@ doc.StopTrackRevisions();
 
 ## 步驟 4：套用「忽略刪除修訂內的文字」功能
 
-現在我們已經透過刪除段落準備了文檔，我們可以使用以下命令啟用「忽略刪除修訂內的文字」功能`FindReplaceOptions`目的。我們將設定`IgnoreDeleted`財產給`true`:
+現在我們已經透過刪除段落準備了文檔，我們可以使用以下命令啟用「忽略刪除修訂內的文字」功能`FindReplaceOptions`目的。我們將設定`IgnoreDeleted`財產給`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -56,7 +56,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
 ## 步驟 5：使用正規表示式進行尋找和替換
 
-為了對文件文字執行搜尋和取代操作，我們將使用正規表示式。在我們的範例中，我們將搜尋所有出現的字母“e”並將其替換為星號“* 「。 。網`Regex`類別用於此目的：
+為了對文件文字執行搜尋和取代操作，我們將使用正規表示式。在我們的範例中，我們將搜尋所有出現的字母“e”並將其替換為星號“* 「。 。網`Regex`為此使用了類別：
 
 ```csharp
 Regex regex = new Regex("e");
@@ -73,7 +73,7 @@ Console.WriteLine(doc.GetText());
 
 ## 步驟 7：修改選項以包含已刪除的文本
 
-如果我們想在輸出結果中包含已刪除的文本，我們可以更改選項以不忽略已刪除的文本。為此我們將設置`IgnoreDeleted`財產給`false`:
+如果我們想在輸出結果中包含已刪除的文本，我們可以更改選項以不忽略已刪除的文本。為此我們將設置`IgnoreDeleted`財產給`false`：
 
 ```csharp
 options. IgnoreDeleted = false;
@@ -164,7 +164,7 @@ doc.StopTrackRevisions();
 
 #### Q：如何在 Aspose.Words for .NET 中啟用「忽略刪除修訂內的文字」功能？
 
-答：現在我們已經透過刪除段落準備好了文檔，我們可以使用以下命令啟用「忽略刪除修訂內的文字」功能：`FindReplaceOptions`目的。我們將設定`IgnoreDeleted`財產給`true`:
+答：現在我們已經透過刪除段落準備好了文檔，我們可以使用以下命令啟用「忽略刪除修訂內的文字」功能：`FindReplaceOptions`目的。我們將設定`IgnoreDeleted`財產給`true`：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
@@ -189,7 +189,7 @@ Console.WriteLine(doc.GetText());
 
 #### Q：如何在 Aspose.Words for .NET 的輸出結果中包含刪除的文字？
 
-答：如果我們想在輸出結果中包含已刪除的文本，我們可以更改選項以不忽略已刪除的文本。為此，我們將設置`IgnoreDeleted`財產給`false`:
+答：如果我們想在輸出結果中包含已刪除的文本，我們可以更改選項以不忽略已刪除的文本。為此，我們將設置`IgnoreDeleted`財產給`false`：
 
 ```csharp
 options. IgnoreDeleted = false;

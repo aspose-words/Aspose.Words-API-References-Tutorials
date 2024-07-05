@@ -2,7 +2,7 @@
 title: Добавить раздел
 linktitle: Добавить раздел
 second_title: API обработки документов Aspose.Words
-description: В этом уроке вы узнаете, как добавить раздел в документ Word с помощью Aspose.Words для .NET. Пошаговое руководство по структуре вашего документа.
+description: В этом уроке вы узнаете, как добавить раздел в документ Word с помощью Aspose.Words для .NET. Пошаговое руководство по структурированию вашего документа.
 type: docs
 weight: 10
 url: /ru/net/working-with-section/add-section/

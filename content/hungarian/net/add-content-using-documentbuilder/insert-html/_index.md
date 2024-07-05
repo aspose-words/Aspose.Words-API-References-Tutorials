@@ -82,7 +82,7 @@ Végül, de nem utolsósorban elmentjük a dokumentumunkat a megadott könyvtár
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-És megvan! Az Aspose.Words for .NET használatával HTML-kódot szúrt be egy Word-dokumentumba. Pacsi!
+És megvan! Az Aspose.Words for .NET segítségével HTML-kódot szúrt be egy Word-dokumentumba. Pacsi!
 
 ## Következtetés
 

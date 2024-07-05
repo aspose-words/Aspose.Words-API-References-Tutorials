@@ -1,6 +1,6 @@
 ---
-title: Accès dactylographié
-linktitle: Accès dactylographié
+title: Accès tapé
+linktitle: Accès tapé
 second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment utiliser l'accès typé pour manipuler des tables dans Aspose.Words for .NET.
 type: docs
@@ -87,7 +87,7 @@ R : L'accès typé dans Node.js fait référence à l'utilisation de types de n
 
 #### Q : Comment accéder aux nœuds à l’aide d’un accès typé ?
 
- R : Pour accéder aux nœuds à l'aide d'un accès typé dans Node.js, vous pouvez utiliser des méthodes spécifiques en fonction du type de nœud auquel vous souhaitez accéder. Par exemple, vous pouvez utiliser le`getElementsByTagName` méthode pour accéder à tous les nœuds d'un type spécifique, le`getAttribute` méthode pour accéder à la valeur d’un attribut, etc.
+ R : Pour accéder aux nœuds à l'aide d'un accès typé dans Node.js, vous pouvez utiliser des méthodes spécifiques en fonction du type de nœud auquel vous souhaitez accéder. Par exemple, vous pouvez utiliser le`getElementsByTagName` méthode pour accéder à tous les nœuds d'un type spécifique, le`getAttribute` méthode pour accéder à la valeur d'un attribut, etc.
 
 #### Q : Quels sont les avantages de l’accès typé par rapport à l’accès non typé ?
 

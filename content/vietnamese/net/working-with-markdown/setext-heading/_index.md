@@ -1,6 +1,6 @@
 ---
-title: Tiêu đề Setex
-linktitle: Tiêu đề Setex
+title: Tiêu đề văn bản
+linktitle: Tiêu đề văn bản
 second_title: API xử lý tài liệu Aspose.Words
 description: Tìm hiểu cách sử dụng tiêu đề Setext để định dạng tài liệu của bạn với hướng dẫn từng bước Aspose.Words for .NET.
 type: docs

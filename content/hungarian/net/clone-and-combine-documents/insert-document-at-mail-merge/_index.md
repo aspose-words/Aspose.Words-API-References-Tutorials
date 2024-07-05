@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: A fő dokumentum betöltése
 
-Ezután töltse be a fő dokumentumot. Ez a dokumentum tartalmazza azokat az egyesítési mezőket, amelyekbe más dokumentumokat is beillesztenek.
+Ezután töltse be a fő dokumentumot. Ez a dokumentum tartalmazza azokat az egyesítési mezőket, amelyekbe más dokumentumok kerülnek beszúrásra.
 
 ```csharp
 Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
@@ -66,7 +66,7 @@ mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Docu
 
 ## 5. lépés: A dokumentum mentése
 
-A körlevél-összevonás befejezése után elmenti a módosított dokumentumot. Ebben az új dokumentumban ott lesz a beszúrt tartalom, ahol szeretné.
+körlevél-összevonás befejezése után elmenti a módosított dokumentumot. Ebben az új dokumentumban ott lesz a beszúrt tartalom, ahol szeretné.
 
 ```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
@@ -139,12 +139,12 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 ## GYIK
 
 ### Beszúrhatok több dokumentumot különböző egyesítési mezőkbe?
- Igen tudsz. Egyszerűen adja meg a megfelelő egyesítési mezőket és a megfelelő dokumentumútvonalakat a`MailMerge.Execute` módszer.
+Igen tudsz. Egyszerűen adja meg a megfelelő egyesítési mezőket és a megfelelő dokumentumútvonalakat a`MailMerge.Execute` módszer.
 
 ### Lehetséges a beillesztett dokumentumot a fő dokumentumtól eltérően formázni?
- Teljesen! Használhatja a`ImportFormatMode` paramétereket a`NodeImporter` a formázás szabályozásához.
+ Teljesen! Használhatja a`ImportFormatMode` paraméter a`NodeImporter` a formázás szabályozásához.
 
-### Mi van, ha az egyesítési mező neve dinamikus?
+### Mi a teendő, ha az egyesítési mező neve dinamikus?
 A dinamikus egyesítési mezőneveket úgy kezelheti, hogy paraméterként adja át őket a visszahíváskezelőnek.
 
 ### Használhatom ezt a módszert különböző fájlformátumokkal?

@@ -2,7 +2,7 @@
 title: 在 Aspose.Words for Java 中使用文件範圍
 linktitle: 使用文件範圍
 second_title: Aspose.Words Java 文件處理 API
-description: 掌握 Aspose.Words for Java 中的文件範圍操作。透過這份綜合指南學習刪除、擷取和格式化文字。
+description: 掌握 Aspose.Words for Java 中的文件範圍操作。透過這份綜合指南學習如何刪除、擷取和格式化文字。
 type: docs
 weight: 18
 url: /zh-hant/java/document-manipulation/using-document-ranges/

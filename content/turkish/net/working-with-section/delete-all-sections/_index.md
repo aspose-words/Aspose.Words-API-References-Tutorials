@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## 3. Adım: Tüm bölümleri silin
- Belgedeki tüm bölümleri kaldırmak için şunu kullanacağız:`Clear` yöntemi`Sections` belgelerin toplanması.
+ Belgedeki tüm bölümleri kaldırmak için şunu kullanacağız:`Clear` yöntemi`Sections` belgenin toplanması.
 
 ```csharp
 doc.Sections.Clear();
@@ -85,7 +85,7 @@ doc.AppendChild(new Section(doc));
 
 #### S: Aspose.Words for .NET'teki tüm bölümler nasıl kaldırılır?
 
- C: Aspose.Words for .NET'te belgedeki tüm bölümleri kaldırmak için şu komutu kullanabilirsiniz:`Clear` yöntemi`Sections` belgelerin toplanması:
+ C: Aspose.Words for .NET'te belgedeki tüm bölümleri kaldırmak için şu komutu kullanabilirsiniz:`Clear` yöntemi`Sections` belgenin toplanması:
 
 ```csharp
 doc.Sections.Clear();

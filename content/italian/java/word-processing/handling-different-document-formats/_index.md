@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Creazione di tabelle
 
 ```java
-// Crea una tabella con 3 righe e 4 colonne.
+// Crea una tabella con 3 righe e 4 colonne
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

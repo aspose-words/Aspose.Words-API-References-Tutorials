@@ -134,15 +134,15 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Conclusão
 
-aí está! Você inseriu documentos com êxito em campos específicos durante uma operação de mala direta usando Aspose.Words for .NET. Esse recurso poderoso pode economizar muito tempo e esforço, especialmente ao lidar com grandes volumes de documentos. Pense nisso como ter um assistente pessoal que cuida de todo o trabalho pesado para você. Então, vá em frente e experimente. Boa codificação!
+E aí está! Você inseriu documentos com êxito em campos específicos durante uma operação de mala direta usando Aspose.Words for .NET. Esse recurso poderoso pode economizar muito tempo e esforço, especialmente ao lidar com grandes volumes de documentos. Pense nisso como ter um assistente pessoal que cuida de todo o trabalho pesado para você. Então, vá em frente e experimente. Boa codificação!
 
 ## Perguntas frequentes
 
 ### Posso inserir vários documentos em diferentes campos de mesclagem?
- Sim você pode. Basta especificar os campos de mesclagem apropriados e os caminhos de documento correspondentes no campo`MailMerge.Execute` método.
+Sim você pode. Basta especificar os campos de mesclagem apropriados e os caminhos de documento correspondentes no campo`MailMerge.Execute` método.
 
 ### É possível formatar o documento inserido de forma diferente do documento principal?
- Absolutamente! Você pode usar o`ImportFormatMode` parâmetros no`NodeImporter` para controlar a formatação.
+ Absolutamente! Você pode usar o`ImportFormatMode` parâmetro no`NodeImporter` para controlar a formatação.
 
 ### E se o nome do campo de mesclagem for dinâmico?
 Você pode manipular nomes de campos de mesclagem dinâmica passando-os como parâmetros para o manipulador de retorno de chamada.

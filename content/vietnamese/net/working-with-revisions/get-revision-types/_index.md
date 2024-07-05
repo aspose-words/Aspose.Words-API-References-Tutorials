@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### Hỏi: Làm cách nào để kiểm tra xem một đoạn văn đã được di chuyển (xóa) trong Aspose.Words cho .NET chưa?
 
- A: Sử dụng một đoạn văn`IsMoveFromRevision` tài sản để kiểm tra xem nó đã được di chuyển (xóa) chưa.
+ A: Sử dụng một đoạn văn`IsMoveFromRevision`tài sản để kiểm tra xem nó đã được di chuyển (xóa) chưa.
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### Hỏi: Làm cách nào để kiểm tra xem một đoạn văn đã được di chuyển (chèn) trong Aspose.Words cho .NET chưa?
 
- A: Sử dụng một đoạn văn`IsMoveToRevision`thuộc tính để kiểm tra xem nó đã được di chuyển (chèn) chưa.
+ A: Sử dụng một đoạn văn`IsMoveToRevision` thuộc tính để kiểm tra xem nó đã được di chuyển (chèn) chưa.
 
 ```csharp
 if (paragraph.IsMoveToRevision)

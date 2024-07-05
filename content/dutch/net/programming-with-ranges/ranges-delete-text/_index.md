@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Deze code geeft toegang tot het eerste gedeelte van het document met behulp van de index.`0` en verwijdert alle tekst binnen dat bereik.
+ Deze code geeft toegang tot het eerste gedeelte van het document met behulp van de index`0` en verwijdert alle tekst binnen dat bereik.
 
 #### Vraag: Kan ik tekst uit meerdere bereiken in een Word-document verwijderen met Aspose.Words voor .NET?
 

@@ -75,7 +75,7 @@ internal class ResourceSteamFontSource : StreamFontSource
 
 ## Krok 5: Zapisz dokument
 
-Na koniec zapisz dokument po zastosowaniu ustawień czcionki. Zapisz go w wybranym przez siebie formacie; tutaj zapiszemy go w formacie PDF.
+Na koniec zapisz dokument po zastosowaniu ustawień czcionki. Zapisz go w wybranym formacie; tutaj zapiszemy go w formacie PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");

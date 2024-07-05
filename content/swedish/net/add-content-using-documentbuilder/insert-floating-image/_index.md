@@ -40,7 +40,7 @@ Skapa först ett nytt C#-projekt i Visual Studio. Du kan välja en konsolapp fö
 1. Öppna Visual Studio och skapa ett nytt projekt.
 2. Välj "Console App (.NET Core)" och klicka på "Nästa".
 3. Namnge ditt projekt och välj en plats för att spara det. Klicka på "Skapa".
-4. Installera Aspose.Words för .NET via NuGet Package Manager. Högerklicka på ditt projekt i Solution Explorer, välj "Hantera NuGet-paket" och sök efter "Apose.Words." Installera den senaste versionen.
+4. Installera Aspose.Words för .NET via NuGet Package Manager. Högerklicka på ditt projekt i Solution Explorer, välj "Hantera NuGet-paket" och sök efter "Aspose.Words." Installera den senaste versionen.
 
 ## Steg 2: Initiera Document and DocumentBuilder
 
@@ -132,7 +132,7 @@ Att infoga en flytande bild i ett Word-dokument med Aspose.Words för .NET är e
 
  Du kan justera`RelativeHorizontalPosition`, `RelativeVerticalPosition`, och offset parametrar för att placera bilden efter behov.
 
-### Vilka andra radbrytningstyper finns tillgängliga för bilder?
+### Vilka andra typer av omslag finns tillgängliga för bilder?
 
  Aspose.Words stöder olika inpackningstyper som t.ex`Inline`, `TopBottom`, `Tight`, `Through`, och mer. Du kan välja den som bäst passar din dokumentlayout.
 

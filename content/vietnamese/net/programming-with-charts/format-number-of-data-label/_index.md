@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 	// Hoặc bạn có thể đặt mã định dạng để được liên kết với ô nguồn,
-	//Trong trường hợp này NumberFormat sẽ được đặt lại thành chung và được kế thừa từ ô nguồn.
+	//trong trường hợp này NumberFormat sẽ được đặt lại thành chung và được kế thừa từ ô nguồn.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
@@ -115,7 +115,7 @@ Bằng cách sử dụng Aspose.Words cho .NET, bạn có thể kết hợp các
 Aspose.Words for .NET là thư viện xử lý tài liệu giàu tính năng cho phép các nhà phát triển tạo, thao tác và lưu tài liệu Word theo chương trình trong các ứng dụng .NET. Nó cung cấp nhiều tính năng cho Xử lý văn bản với các thành phần tài liệu, bao gồm biểu đồ và nhãn dữ liệu.
 
 #### Q2. Làm cách nào tôi có thể cài đặt Aspose.Words cho .NET?
-Bạn có thể cài đặt Aspose.Words cho .NET bằng cách tải xuống bằng cách sử dụng trình quản lý gói NuGet trong Visual Studio. Chỉ cần tìm kiếm "Apose.Words" trong trình quản lý gói NuGet và cài đặt nó vào dự án của bạn.
+Bạn có thể cài đặt Aspose.Words cho .NET bằng cách tải xuống bằng cách sử dụng trình quản lý gói NuGet trong Visual Studio. Chỉ cần tìm kiếm "Aspose.Words" trong trình quản lý gói NuGet và cài đặt nó vào dự án của bạn.
 
 #### Q3. Tôi có thể định dạng các khía cạnh khác của biểu đồ bằng Aspose.Words cho .NET không?
 Có, Aspose.Words for .NET cung cấp các khả năng mở rộng để định dạng các khía cạnh khác nhau của biểu đồ. Ngoài nhãn dữ liệu, bạn có thể tùy chỉnh loại biểu đồ, dữ liệu chuỗi, thuộc tính trục, chú giải, tiêu đề, vùng ô và nhiều thành phần khác của biểu đồ. API cung cấp khả năng kiểm soát chi tiết về hình thức và định dạng biểu đồ.

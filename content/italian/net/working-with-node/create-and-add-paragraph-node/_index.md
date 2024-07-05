@@ -78,7 +78,7 @@ R: Un nodo di paragrafo in un documento XML viene utilizzato per rappresentare u
 
 #### D: Come aggiungere un nodo di paragrafo a un documento XML esistente?
 
- R: Per aggiungere un nodo di paragrafo a un documento XML esistente, puoi utilizzare il file`appendChild`metodo per aggiungere il nodo del paragrafo come figlio di un altro elemento nel documento XML. Ad esempio, puoi aggiungerlo come figlio dell'elemento radice del documento.
+ R: Per aggiungere un nodo di paragrafo a un documento XML esistente, puoi utilizzare il file`appendChild`metodo per aggiungere il nodo del paragrafo come figlio di un altro elemento nel documento XML. Ad esempio, puoi aggiungerlo come figlio dell'elemento root del documento.
 
 #### D: Come definire il contenuto di un nodo di paragrafo?
 

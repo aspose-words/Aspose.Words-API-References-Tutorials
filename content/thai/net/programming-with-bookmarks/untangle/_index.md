@@ -28,7 +28,7 @@ foreach(Bookmark bookmark in doc.Range.Bookmarks)
 
 ## ขั้นตอนที่ 2: รับแถวพาเรนต์จากบุ๊กมาร์ก
 
- เราใช้`GetAncestor` วิธีการดึงข้อมูลแถวพาเรนต์ของโหนดเริ่มต้นและสิ้นสุดของบุ๊กมาร์ก:
+ เราใช้`GetAncestor` วิธีการดึงข้อมูลแถวพาเรนต์ของโหนดเริ่มต้นและจุดสิ้นสุดของบุ๊กมาร์ก:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
@@ -57,7 +57,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
 		// หากพบว่าทั้งสองแถวไม่เป็นไร และบุ๊กมาร์กเริ่มต้นและสิ้นสุดอยู่ในแถวที่อยู่ติดกัน
-		// ย้ายโหนดสิ้นสุดของบุ๊กมาร์กไปยังจุดสิ้นสุดของย่อหน้าสุดท้ายในเซลล์สุดท้ายของแถวบนสุด
+		// ย้ายโหนดสิ้นสุดบุ๊กมาร์กไปยังจุดสิ้นสุดของย่อหน้าสุดท้ายในเซลล์สุดท้ายของแถวบนสุด
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 	}

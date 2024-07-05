@@ -2,7 +2,7 @@
 title: Veld invoegen Geen
 linktitle: Veld invoegen Geen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u documenten kunt maken met AUCUN in Word met Aspose.Words voor .NET.
+description: Leer hoe u een kampioen AUCUN in uw documenten kunt plaatsen met Aspose.Words voor .NET.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/insert-field-none/

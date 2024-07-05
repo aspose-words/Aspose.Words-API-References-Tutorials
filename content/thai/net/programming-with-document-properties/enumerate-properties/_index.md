@@ -2,7 +2,7 @@
 title: แจกแจงคุณสมบัติ
 linktitle: แจกแจงคุณสมบัติ
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: คำแนะนำทีละขั้นตอนในการแจงนับคุณสมบัติเอกสารด้วย Aspose.Words สำหรับ .NET
+description: คำแนะนำทีละขั้นตอนในการแจงนับคุณสมบัติของเอกสารด้วย Aspose.Words สำหรับ .NET
 type: docs
 weight: 10
 url: /th/net/programming-with-document-properties/enumerate-properties/

@@ -2,7 +2,7 @@
 title: 插入欄位 無
 linktitle: 插入欄位 無
 second_title: Aspose.Words 文件處理 API
-description: 了解如何在 Word avec Aspose.Words pour .NET 中使用 AUCUN 建立文件。
+description: 了解如何在 .NET 的 Word 和 Aspose.Words 文件中贏得 AUCUN 冠軍。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fields/insert-field-none/

@@ -45,7 +45,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.FormatNumberOfDataLabel.docx
 
 ## 建立其他類型的圖表
 
-您可以使用類似的技術來建立不同類型的圖表，例如長條圖、面積圖、氣泡圖、散點圖等。下面是插入簡單長條圖的範例：
+您可以使用類似的技術建立不同類型的圖表，例如長條圖、面積圖、氣泡圖、散點圖等。下面是插入簡單長條圖的範例：
 
 ```java
 Document doc = new Document();

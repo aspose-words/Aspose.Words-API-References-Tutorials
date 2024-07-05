@@ -17,7 +17,7 @@ Efektivní formátování dokumentu přesahuje pouhé předávání obsahu; upou
 
 Písma a styly textu jsou vizuální reprezentací tónu a důrazu vašeho obsahu. Správná volba písma může vyvolat emoce a zlepšit celkový uživatelský zážitek. Styl textu, jako je tučný text nebo text psaný kurzívou, pomáhá při zdůrazňování důležitých bodů, díky čemuž je obsah lépe skenovatelný a poutavý.
 
-## Základy písem
+## Základy písma
 
 ### Rodiny písem
 

@@ -66,7 +66,7 @@ Nezapomeňte nahradit "dataDir" cestou adresáře k vašim dokumentům.
 // Cesta k adresáři vašich dokumentů
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Vložte dokument s odrážkami obrázků
+// Vložte dokument s obrázkovými odrážkami
 Document doc = new Document(dataDir + "Image bullet points.docx");
 
 // Nakonfigurujte možnosti uložení pomocí funkce „Neukládat obrázkové odrážky“.

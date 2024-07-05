@@ -57,7 +57,7 @@ In deze tutorial hebben we gezien hoe je laadopties met lettertype-instellingen 
 
 #### Vraag: Hoe kan ik een standaardlettertype opgeven bij het laden van een document in Aspose.Words?
 
- A: Om een standaardlettertype op te geven bij het laden van een document in Aspose.Words, kunt u de`LoadOptions` klasse en stel de`DefaultFontName` eigenschap toe aan de naam van het gewenste lettertype.
+A: Om een standaardlettertype op te geven bij het laden van een document in Aspose.Words, kunt u de`LoadOptions` klasse en stel de`DefaultFontName` eigenschap toe aan de naam van het gewenste lettertype.
 
 #### Vraag: Welke andere lettertype-instellingen kan ik opgeven met laadopties in Aspose.Words?
 
@@ -69,4 +69,4 @@ A: Als het opgegeven standaardlettertype niet beschikbaar is wanneer het documen
 
 #### Vraag: Kan ik voor elk geüpload document verschillende lettertype-instellingen opgeven?
 
- A: Ja, u kunt voor elk geladen document verschillende lettertype-instellingen opgeven door afzonderlijke exemplaren van het`LoadOptions` class en het instellen van de gewenste lettertype-instellingen voor elke instantie. Hierdoor kunt u de weergave van het lettertype voor elk document afzonderlijk aanpassen.
+ A: Ja, u kunt voor elk geladen document verschillende lettertype-instellingen opgeven door afzonderlijke exemplaren van het`LoadOptions`class en het instellen van de gewenste lettertype-instellingen voor elke instantie. Hierdoor kunt u de weergave van het lettertype voor elk document afzonderlijk aanpassen.

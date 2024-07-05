@@ -81,7 +81,7 @@ R: Antes de clonar um módulo VBA de um documento do Word, você deve ter conhec
 
 #### P: Como definir o diretório do documento no código?
 
- R: No código fornecido, você precisa substituir.`"YOUR DOCUMENTS DIRECTORY"` com o caminho apropriado para o diretório onde está localizado o documento do Word que contém o projeto VBA.
+ R: No código fornecido, você precisa substituir`"YOUR DOCUMENTS DIRECTORY"` com o caminho apropriado para o diretório onde está localizado o documento do Word que contém o projeto VBA.
 
 #### P: Como salvar o documento de destino com módulo VBA clonado?
 

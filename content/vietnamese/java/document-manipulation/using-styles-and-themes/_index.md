@@ -111,7 +111,7 @@ Trong mã này, chúng tôi tạo kiểu đoạn tùy chỉnh và chèn dấu t�
 
 ## Phần kết luận
 
-Hướng dẫn này trình bày những kiến thức cơ bản về cách làm việc với các kiểu và chủ đề trong Aspose.Words for Java. Bạn đã học cách truy xuất và sao chép kiểu, quản lý chủ đề và chèn dấu phân cách kiểu để tạo tài liệu có định dạng đẹp và hấp dẫn trực quan. Hãy thử nghiệm những kỹ thuật này để tùy chỉnh tài liệu theo yêu cầu của bạn.
+Hướng dẫn này trình bày những kiến thức cơ bản về cách làm việc với các kiểu và chủ đề trong Aspose.Words cho Java. Bạn đã học cách truy xuất và sao chép kiểu, quản lý chủ đề và chèn dấu phân cách kiểu để tạo tài liệu có định dạng đẹp và hấp dẫn trực quan. Hãy thử nghiệm những kỹ thuật này để tùy chỉnh tài liệu theo yêu cầu của bạn.
 
 
 ## Câu hỏi thường gặp

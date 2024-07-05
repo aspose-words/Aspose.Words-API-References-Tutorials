@@ -1,6 +1,6 @@
 ---
-title: قبول التقييمات
-linktitle: قبول التقييمات
+title: قبول المراجعات
+linktitle: قبول المراجعات
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
 description: تعرف على كيفية قبول المراجعات على مستند Word باستخدام Aspose.Words لـ .NET
 type: docs
@@ -74,7 +74,7 @@ doc.StopTrackRevisions();
 ```
 ## الخطوة 6: حفظ الوثيقة
 
- بعد إدراج حقل نموذج إدخال النص، احفظ المستند في الموقع المطلوب باستخدام الزر`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ بعد إدراج حقل نموذج إدخال النص، احفظ المستند في الموقع المطلوب باستخدام الزر`Save`طريقة. تأكد من توفير مسار الملف المناسب:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -117,7 +117,7 @@ para.Remove();
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 
-// تتم إزالة فقرة المراجعة المحذوفة بمجرد قبول التغييرات.
+// تتم إزالة فقرة حذف المراجعة بمجرد قبول التغييرات.
 doc.AcceptAllRevisions();
 Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);

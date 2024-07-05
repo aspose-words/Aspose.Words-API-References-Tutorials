@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ขั้นตอนที่ 2: โหลดเอกสารต้นทางและปลายทาง
 
-ถัดไป คุณต้องโหลดเอกสารต้นทางและปลายทางโดยใช้ Aspose.Words`Document` ชั้นเรียน อัพเดตชื่อไฟล์ใน`Document` ตัวสร้างตามชื่อเอกสารของคุณ
+ถัดไป คุณต้องโหลดเอกสารต้นทางและปลายทางโดยใช้ Aspose.Words`Document` ระดับ. อัพเดตชื่อไฟล์ใน`Document` ตัวสร้างตามชื่อเอกสารของคุณ
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## ขั้นตอนที่ 4: ปิดใช้งานการตั้งค่า "LinkToPrevious" สำหรับ HeadersFooters
 
-แม้ว่าหลังจากล้างส่วนหัวและส่วนท้ายออกจากเอกสารต้นฉบับแล้ว ยังมีความเป็นไปได้ที่การตั้งค่า "LinkToPrevious" สำหรับ`HeadersFooters` ยังสามารถตั้งค่าได้ เพื่อหลีกเลี่ยงพฤติกรรมนี้ คุณต้องตั้งค่าอย่างชัดเจน`false` สำหรับภาคแรก`HeadersFooters` คุณสมบัติ.
+แม้ว่าหลังจากการล้างส่วนหัวและส่วนท้ายจากเอกสารต้นฉบับแล้ว ยังมีความเป็นไปได้ที่การตั้งค่า "LinkToPrevious" สำหรับ`HeadersFooters` ยังสามารถตั้งค่าได้ เพื่อหลีกเลี่ยงพฤติกรรมนี้ คุณต้องตั้งค่าอย่างชัดเจน`false` สำหรับภาคแรก`HeadersFooters` คุณสมบัติ.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -55,7 +55,7 @@ srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 
 ## ขั้นตอนที่ 5: ผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทาง
 
- ตอนนี้คุณสามารถผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทางได้โดยใช้`AppendDocument` วิธีการของ`Document` ชั้นเรียน ที่`ImportFormatMode.KeepSourceFormatting` พารามิเตอร์ช่วยให้แน่ใจว่าการจัดรูปแบบต้นฉบับจะถูกรักษาไว้ระหว่างการดำเนินการผนวก
+ ตอนนี้คุณสามารถผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทางได้โดยใช้`AppendDocument` วิธีการของ`Document` ระดับ. ที่`ImportFormatMode.KeepSourceFormatting` พารามิเตอร์ช่วยให้มั่นใจได้ว่าการจัดรูปแบบต้นฉบับจะถูกรักษาไว้ระหว่างการดำเนินการผนวก
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## ขั้นตอนที่ 6: บันทึกเอกสารขั้นสุดท้าย
 
- สุดท้าย ให้บันทึกเอกสารที่ผสานโดยเปิดใช้งานคุณลักษณะ Remove Source Headers Footers โดยใช้`Save` วิธีการของ`Document` ชั้นเรียน
+ สุดท้าย ให้บันทึกเอกสารที่ผสานโดยเปิดใช้งานคุณลักษณะ Remove Source Headers Footers โดยใช้`Save` วิธีการของ`Document` ระดับ.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");

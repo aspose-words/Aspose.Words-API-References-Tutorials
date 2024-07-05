@@ -92,7 +92,7 @@ Możesz dostosować wygląd pól formularzy, na przykład dostosowując rozmiar 
    Możesz dostosować wygląd pola formularza, dostosowując rozmiar czcionki, kolor i inne opcje formatowania.
 
 4. ### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla Java?
-    Tak, możesz uzyskać dostęp do bezpłatnej wersji próbnej Aspose.Words dla Java.[Tutaj](https://releases.aspose.com/).
+    Tak, możesz uzyskać dostęp do bezpłatnej wersji próbnej Aspose.Words dla Java[Tutaj](https://releases.aspose.com/).
 
 5. ### Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words dla Java?
     Aby uzyskać wsparcie i pomoc, odwiedź stronę[Forum Aspose.Words](https://forum.aspose.com/).

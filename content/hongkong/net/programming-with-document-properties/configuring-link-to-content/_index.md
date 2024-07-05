@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/programming-with-document-properties/configuring-link-to-content/
 ---
 
-在本教程中，我們將引導您完成 C# 原始程式碼，以使用 Aspose.Words for .NET 設定內容連結。此功能可讓您連結到文件中的特定內容。
+在本教學中，我們將引導您完成 C# 原始程式碼，以使用 Aspose.Words for .NET 設定內容連結。此功能可讓您連結到文件中的特定內容。
 
 ## 第 1 步：項目設置
 

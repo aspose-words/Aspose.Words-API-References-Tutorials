@@ -1,26 +1,26 @@
 ---
-title: Aspose.Words for Java での文書図形の使用
-linktitle: 文書の形状の使用
+title: Aspose.Words for Java でドキュメント シェイプを使用する
+linktitle: ドキュメントシェイプの使用
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java の文書図形の力を解き放ちます。ステップバイステップの例を使用して、視覚的に魅力的なドキュメントを作成する方法を学びます。
+description: Aspose.Words for Java のドキュメント シェイプのパワーを解き放ちます。ステップ バイ ステップの例を使用して、視覚的に魅力的なドキュメントを作成する方法を学びます。
 type: docs
 weight: 14
 url: /ja/java/document-conversion-and-export/using-document-shapes/
 ---
 
-## Aspose.Words for Java でのドキュメント図形の使用の概要
+## Aspose.Words for Java でのドキュメント シェイプの使用の概要
 
-この包括的なガイドでは、Aspose.Words for Java のドキュメント シェイプの世界を詳しく説明します。図形は、視覚的に魅力的でインタラクティブなドキュメントを作成する場合に不可欠な要素です。吹き出し、ボタン、画像、透かしを追加する必要がある場合でも、Aspose.Words for Java はそれを効率的に行うためのツールを提供します。ソース コードの例を使用して、これらの形状の使用方法を段階的に見てみましょう。
+この包括的なガイドでは、Aspose.Words for Java のドキュメント シェイプの世界を詳しく見ていきます。視覚的に魅力的でインタラクティブなドキュメントを作成する場合、シェイプは不可欠な要素です。吹き出し、ボタン、画像、透かしなどを追加する必要がある場合、Aspose.Words for Java にはそれを効率的に行うためのツールが用意されています。ソース コードの例を使用して、これらのシェイプの使用方法を段階的に見ていきましょう。
 
-## ドキュメントの図形の使用を開始する
+## ドキュメントシェイプを使い始める
 
-コードに入る前に、環境をセットアップしましょう。 Aspose.Words for Java がプロジェクトに統合されていることを確認してください。まだダウンロードしていない場合は、Aspose Web サイトからダウンロードできます。[Java 用 Aspose.Words をダウンロード](https://releases.aspose.com/words/java/)
+コードに入る前に、環境を設定しましょう。プロジェクトにAspose.Words for Javaが統合されていることを確認してください。まだ統合されていない場合は、AsposeのWebサイトからダウンロードできます。[Aspose.Words for Java をダウンロード](https://releases.aspose.com/words/java/)
 
-## ドキュメントへの図形の追加
+## ドキュメントに図形を追加する
 
-### GroupShape の挿入
+### グループシェイプの挿入
 
-あ`GroupShape`複数の図形をグループ化できます。を作成して挿入する方法は次のとおりです。`GroupShape`:
+あ`GroupShape`複数の図形をグループ化することができます。ここでは、図形を作成して挿入する方法を説明します。`GroupShape`:
 
 ```java
 Document doc = new Document();
@@ -52,7 +52,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 
 ### テキストボックス図形の挿入
 
-テキスト ボックスの図形を挿入するには、`insertShape`以下の例に示すようなメソッドです。
+テキストボックス図形を挿入するには、`insertShape`以下の例に示す方法を使用します。
 
 ```java
 Document doc = new Document();
@@ -73,11 +73,11 @@ saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-## 形状プロパティの操作
+## 図形のプロパティの操作
 
 ### アスペクト比の管理
 
-図形のアスペクト比をロックするかどうかを制御できます。シェイプのアスペクト比のロックを解除する方法は次のとおりです。
+図形のアスペクト比をロックするかどうかを制御できます。図形のアスペクト比をロック解除する方法は次のとおりです。
 
 ```java
 Document doc = new Document();
@@ -91,7 +91,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AspectRatioLocked.docx");
 
 ### 表のセルに図形を配置する
 
-表のセル内に図形を配置する必要がある場合は、次のコードを使用してこれを実現できます。
+テーブル セル内に図形を配置する必要がある場合は、次のコードを使用してこれを実現できます。
 
 ```java
 Document doc = new Document();
@@ -114,7 +114,7 @@ builder.endTable();
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.PAGE);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.PAGE);
-watermark.isLayoutInCell(true); //図形をセル内に配置する場合は、表のセルの外側に図形を表示します。
+watermark.isLayoutInCell(true); //図形をセル内に配置した場合は、表のセルの外側に図形を表示します。
 watermark.setWidth(300.0);
 watermark.setHeight(70.0);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
@@ -135,9 +135,9 @@ doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2010);
 doc.save("Your Directory Path" + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-## SmartArt シェイプの操作
+## SmartArt 図形の操作
 
-### SmartArt シェイプの検出
+### SmartArt 図形の検出
 
 次のコードを使用して、ドキュメント内の SmartArt 図形を検出できます。
 
@@ -148,9 +148,9 @@ int count = (int) shapes.stream().filter(s -> s.hasSmartArt()).count();
 System.out.println("The document has " + count + " shapes with SmartArt.");
 ```
 
-### SmartArt 図面の更新
+### SmartArt 描画の更新
 
-ドキュメント内の SmartArt 図面を更新するには、次のコードを使用します。
+ドキュメント内の SmartArt 描画を更新するには、次のコードを使用します。
 
 ```java
 Document doc = new Document("Your Directory Path" + "SmartArt.docx");
@@ -162,26 +162,26 @@ for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true)) {
 
 ## 結論
 
-このガイドでは、Aspose.Words for Java のドキュメント シェイプの世界について説明しました。ドキュメントにさまざまな図形を追加し、そのプロパティを操作し、SmartArt 図形を操作する方法を学習しました。この知識があれば、視覚的に魅力的でインタラクティブなドキュメントを簡単に作成できます。
+このガイドでは、Aspose.Words for Java のドキュメント シェイプの世界について説明しました。ドキュメントにさまざまなシェイプを追加する方法、シェイプのプロパティを操作する方法、SmartArt シェイプを操作する方法を学習しました。この知識があれば、視覚的に魅力的でインタラクティブなドキュメントを簡単に作成できます。
 
 ## よくある質問
 
 ### Aspose.Words for Java とは何ですか?
 
-Aspose.Words for Java は、開発者が Word ドキュメントをプログラムで作成、変更、変換できるようにする Java ライブラリです。さまざまな形式のドキュメントを操作するための幅広い機能とツールを提供します。
+Aspose.Words for Java は、開発者がプログラムで Word 文書を作成、変更、変換できるようにする Java ライブラリです。さまざまな形式の文書を操作するための幅広い機能とツールを提供します。
 
-### Aspose.Words for Java をダウンロードするにはどうすればよいですか?
+### Aspose.Words for Java をダウンロードするにはどうすればいいですか?
 
-次のリンクに従って、Aspose Web サイトから Aspose.Words for Java をダウンロードできます。[Java 用 Aspose.Words をダウンロード](https://releases.aspose.com/words/java/)
+次のリンクから Aspose.Words for Java を Aspose Web サイトからダウンロードできます。[Aspose.Words for Java をダウンロード](https://releases.aspose.com/words/java/)
 
 ### ドキュメントシェイプを使用する利点は何ですか?
 
-ドキュメントの図形により、ドキュメントに視覚的な要素とインタラクティブ性が追加され、ドキュメントがより魅力的で有益なものになります。図形を使用すると、吹き出し、ボタン、画像、透かしなどを作成でき、全体的なユーザー エクスペリエンスが向上します。
+ドキュメント シェイプは、ドキュメントに視覚的な要素とインタラクティブ性を追加し、より魅力的で有益なドキュメントを作成します。シェイプを使用すると、吹き出し、ボタン、画像、透かしなどを作成して、全体的なユーザー エクスペリエンスを向上させることができます。
 
 ### 図形の外観をカスタマイズできますか?
 
-はい、サイズ、位置、回転、塗りつぶしの色などのプロパティを調整することで、図形の外観をカスタマイズできます。 Aspose.Words for Java には、形状をカスタマイズするための広範なオプションが用意されています。
+はい、サイズ、位置、回転、塗りつぶし色などのプロパティを調整することで、図形の外観をカスタマイズできます。Aspose.Words for Java には、図形をカスタマイズするための幅広いオプションが用意されています。
 
 ### Aspose.Words for Java は SmartArt と互換性がありますか?
 
-はい、Aspose.Words for Java は SmartArt 図形をサポートしているため、ドキュメント内の複雑な図やグラフィックを操作できます。
+はい、Aspose.Words for Java は SmartArt 図形をサポートしており、ドキュメント内で複雑な図やグラフィックを操作できます。

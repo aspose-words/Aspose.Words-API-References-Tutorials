@@ -38,7 +38,7 @@ Paragraph para = new Paragraph(doc);
 Section section = doc.LastSection;
 ```
 
-## Krok 5: Přidejte uzel odstavce do dokumentu
+## Krok 5: Přidejte do dokumentu uzel odstavce
  Nyní, když máme sekci dokumentu, můžeme přidat uzel odstavce do sekce pomocí`AppendChild` metoda na sekci`Body` vlastnictví.
 
 ```csharp

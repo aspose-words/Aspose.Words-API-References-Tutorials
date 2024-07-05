@@ -20,7 +20,7 @@ Document doc = new Document(MyDir + "Revisions.docx");
 
 ## Paso 2: buscar revisiones
 
-A continuación, recorreremos las revisiones presentes en el documento y mostraremos sus detalles, como tipo, autor, fecha y texto revisado.
+continuación, recorreremos las revisiones presentes en el documento y mostraremos sus detalles, como tipo, autor, fecha y texto revisado.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -67,7 +67,7 @@ En este tutorial, aprendimos cómo obtener los detalles de un grupo de revisione
 
 #### P: ¿Cómo cargo un documento con revisiones en Aspose.Words para .NET?
 
- R: Utilice el`Document`clase de Aspose.Words para .NET para cargar un documento desde un archivo que contiene revisiones. Puede especificar la ruta completa del documento.
+ R: Utilice el`Document` clase de Aspose.Words para .NET para cargar un documento desde un archivo que contiene revisiones. Puede especificar la ruta completa del documento.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### P: ¿Cómo obtengo los detalles de un grupo de revisión en Aspose.Words para .NET?
 
- R: Revise las revisiones del documento mediante un bucle y acceda a las propiedades de cada revisión para obtener los detalles que desea. Puedes usar el`RevisionType`, `Author`, `DateTime` y`ParentNode` propiedades para obtener el tipo de revisión, autor, fecha y texto revisado respectivamente.
+R: Revise las revisiones del documento mediante un bucle y acceda a las propiedades de cada revisión para obtener los detalles que desea. Puedes usar el`RevisionType`, `Author`, `DateTime` y`ParentNode` propiedades para obtener el tipo de revisión, autor, fecha y texto revisado respectivamente.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### P: ¿Cómo comprobar si una revisión pertenece a un grupo en Aspose.Words para .NET?
 
- R: Utilice el`Group` propiedad de la`Revision` objeto para comprobar si una revisión pertenece a un grupo. Si el`Group` la propiedad es`null`significa que la revisión no pertenece a ningún grupo.
+ R: Utilice el`Group` propiedad de la`Revision` objeto para comprobar si una revisión pertenece a un grupo. Si el`Group` la propiedad es`null`, significa que la revisión no pertenece a ningún grupo.
 
 ```csharp
 if (revision.Group != null)

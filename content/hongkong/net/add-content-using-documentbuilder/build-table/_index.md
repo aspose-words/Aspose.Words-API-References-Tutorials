@@ -56,7 +56,7 @@ table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 
 透過使用`StartTable`，我們告訴 Aspose.Words 我們將要建立一個表格。這`InsertCell`方法添加第一個單元格，並且`AutoFit`確保我們的列具有固定寬度。
 
-## 步驟 3：設定第一行的格式
+## 第 3 步：設定第一行的格式
 
 讓我們透過添加一些文字並將其垂直居中對齊來為第一行增添趣味。
 
@@ -115,7 +115,7 @@ doc.Save("YourDirectoryPath/AddContentUsingDocumentBuilder.BuildTable.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了表格。本教學將引導您完成從初始化文件到保存最終產品的每個步驟。有了 Aspose.Words，就有無限的可能性。無論您是建立報告、發票或任何其他文檔，您現在都可以根據自己的喜好設定表格格式和自訂表格。
+現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了表格。本教學將引導您完成從初始化文件到保存最終產品的每個步驟。有了 Aspose.Words，就有無限的可能性。無論您是建立報告、發票或任何其他文檔，您現在都可以根據自己的喜好設定表格格式和自訂表格。
 
 請記住，熟能生巧。因此，請毫不猶豫地嘗試不同的表格格式和樣式。快樂編碼！
 

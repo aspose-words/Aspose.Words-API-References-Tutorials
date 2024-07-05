@@ -2,36 +2,54 @@
 title: Lisansı Dosyadan Uygula
 linktitle: Lisansı Dosyadan Uygula
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir dosyadan nasıl lisans uygulayacağınızı öğrenin.
+description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET'teki bir dosyadan nasıl lisans uygulayacağınızı öğrenin. Kitaplığınızın tüm potansiyelini zahmetsizce ortaya çıkarın.
 type: docs
 weight: 10
 url: /tr/net/apply-license/apply-license-from-file/
 ---
-
 ## giriiş
-Bu eğitimde, Aspose.Words for .NET kütüphanesini kullanarak bir dosyadan lisans uygulama sürecinde size rehberlik edeceğiz. Aspose.Words, Word belgelerini programlı olarak oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan güçlü bir belge işleme kütüphanesidir. Aspose.Words'ün tüm işlevlerini kullanabilmek için geçerli bir lisansa başvurmanız gerekir. C# dilindeki bir dosyadan yükleyerek bir lisansın nasıl uygulanacağını göstereceğiz.
+
+Selam! Aspose.Words for .NET dünyasına dalıyorsanız, sizi bir ziyafet bekliyor. Bu güçlü kitaplık, Word belgelerini programlı olarak oluşturmanıza, düzenlemenize ve dönüştürmenize olanak tanır. Ancak başlamadan önce, bir dosyanın tüm potansiyelini açığa çıkarmak için bir dosyanın lisansını nasıl uygulayacağınızı bilmek önemlidir. Bu kılavuzda, lisans kurulumunuzu hızlı ve verimli bir şekilde yapabilmenizi sağlamak için size süreç boyunca adım adım yol göstereceğiz.
 
 ## Önkoşullar
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-- Aspose.Words for .NET kütüphanesi sisteminizde kuruludur.
-- Aspose.Words için geçerli bir lisans dosyası. 
 
-## Adım 1: Aspose.Words Ad Alanını İçe Aktarın
-Başlamak için Aspose.Words ad alanını C# kodunuza aktarmanız gerekir. Bu ad alanı, Word belgeleriyle Kelime İşleme için gereken tüm sınıfları ve yöntemleri sağlar.
+En ince ayrıntılara dalmadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1.  Aspose.Words for .NET Kütüphanesi: Buradan indirebilirsiniz.[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
+2.  Geçerli Aspose Lisans Dosyası: Henüz bir lisansınız yoksa, şu adresten ücretsiz deneme sürümünü edinebilirsiniz:[Burada](https://releases.aspose.com/) veya şuradan bir tane satın alın[Burada](https://purchase.aspose.com/buy).
+3. Geliştirme Ortamı: Visual Studio benzeri bir IDE.
+4. Temel C# Anlayışı: Bu, kod örneklerini takip etmenize yardımcı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Lisansı uygulamaya başlamadan önce projenize gerekli ad alanlarını içe aktarmanız gerekir. İşte bunu nasıl yapacağınız:
 
 ```csharp
 using Aspose.Words;
+using System;
 ```
 
-## Adım 2: Lisans Nesnesini Başlatın
-Daha sonra Aspose.Words lisansını ayarlamak için kullanılacak Lisans nesnesini başlatmanız gerekir. Lisans nesnesini başlatmak için aşağıdaki kodu ekleyin:
+Pekala, şimdi süreci yönetilebilir adımlara ayıralım.
+
+## 1. Adım: Projenizi Kurun
+
+Öncelikle projenizi oluşturmanız gerekiyor. IDE'nizi açın ve yeni bir C# projesi oluşturun. Projenizde Aspose.Words kütüphanesinin referans alındığından emin olun. Henüz eklemediyseniz NuGet Paket Yöneticisi aracılığıyla bunu yapabilirsiniz.
+
+```shell
+Install-Package Aspose.Words
+```
+
+## Adım 2: Lisans Nesnesi Oluşturun
+
+Daha sonra bir lisans nesnesi oluşturmanız gerekecek. Bu nesne, lisansı Aspose.Words kütüphanesine uygulamak için kullanılacaktır.
 
 ```csharp
 License license = new License();
 ```
 
-## 3. Adım: Lisansı Dosyadan Ayarlayın
-Lisansı bir dosyadan ayarlamak için License nesnesinin SetLicense yöntemini kullanın. Parametre olarak lisans dosyanızın yolunu belirtin. Bu yöntem, lisansı yürütülebilir dosyaya ve Aspose.Words.dll'ye göre çeşitli konumlardan ayarlamaya çalışır.
+## 3. Adım: Lisansı Ayarlayın
+
+ Şimdi en önemli kısım geliyor: lisansı ayarlamak. Lisans dosyanızın yolunu belirtmeniz gerekecektir. Bu, kullanılarak yapılabilir.`SetLicense` yöntemi`License` sınıf. Olası hataları ele almak için bunu bir try-catch bloğuna sarın.
 
 ```csharp
 try
@@ -45,49 +63,38 @@ catch (Exception e)
 }
 ```
 
-## 4. Adım: Lisans Ayarını veya Hatayı Ele Alın
-Lisansı ayarladıktan sonra gereksinimlerinize göre lisans seti veya hata senaryolarını yönetebilirsiniz. Yukarıdaki kod parçasında lisans başarıyla ayarlandığında bir başarı mesajı görüntülüyoruz. Bir hata varsa istisnayı yakalarız ve bir hata mesajı görüntüleriz.
+## 4. Adım: Lisansı Doğrulayın
 
-Artık lisansı Aspose.Words for .NET kullanarak bir dosyadan başarıyla uyguladınız. Kitaplığın tüm işlevlerini kullanarak belge işleme görevlerinize devam edebilirsiniz.
-
-### Aspose.Words for .NET kullanarak Lisansı Dosyadan Uygulamak için Örnek Kaynak Kodu
-Aspose.Words for .NET kullanarak bir dosyadan lisans uygulamak için gereken kaynak kodun tamamı burada:
+ Lisansı ayarladıktan sonra doğru şekilde uygulandığını doğrulamak iyi bir fikirdir. Bunu kontrol ederek yapabilirsiniz`IsLicensed` mülkiyeti`License` sınıf.
 
 ```csharp
-License license = new License();
-
-//Bu satır, yürütülebilir dosyaya ve Aspose.Words.dll'ye göre çeşitli konumlardan bir lisans ayarlamaya çalışır.
-// Bir akıştan lisans yüklemek için ek aşırı yüklemeyi de kullanabilirsiniz; bu kullanışlıdır,
-// örneğin lisans yerleşik bir kaynak olarak depolandığında.
-try
+if (license.IsLicensed)
 {
-    license.SetLicense("Aspose.Words.lic");
-    Console.WriteLine("License set successfully.");
+    Console.WriteLine("License is active.");
 }
-catch (Exception e)
+else
 {
-    Console.WriteLine("\nThere was an error setting the license: " + e.Message);
+    Console.WriteLine("License is not active.");
 }
 ```
 
 ## Çözüm
 
-Eğiticilere SSS eklemek, kullanıcıların öğrenme deneyimini büyük ölçüde artırır. Sık sorulan soruları ele alır, kullanıcı katılımını artırır ve şüphelerin ve yanlış anlamaların açıklığa kavuşturulmasına yardımcı olur. Eğiticilere SSS'ler ekleyerek,
+İşte buyur! Aspose.Words for .NET'teki bir dosyadan lisansı başarıyla uyguladınız. Bu, Aspose.Words'ün sunduğu tüm özellik ve işlevlerin kilidini açmak için önemli bir adımdır. Lisans setiniz ile artık Word belgelerini herhangi bir sınırlama olmadan oluşturabilir ve değiştirebilirsiniz.
 
-### SSS'ler
+## SSS'ler
 
-#### S: Aspose.Words for .NET'in lisans belgelerini nerede bulabilirim?
+### Lisans ayarlamazsam ne olur?  
+Bir lisans ayarlamazsanız Aspose.Words, filigranlı belgeler ve sınırlı işlevsellik gibi sınırlamalara sahip olan değerlendirme modunda çalışacaktır.
 
- C: Aspose'un lisans belgelerini bulabilirsiniz. .NET için kelimeler[API referansları](https://reference.aspose.com/words/net/). Belgelerde, lisansların dosyalardan uygulanması da dahil olmak üzere, lisansların uygulanmasına ilişkin ayrıntılı talimatlar ve örnekler verilmektedir.
+### Bir akıştan lisans kullanabilir miyim?  
+ Evet, lisans dosyası kaynak olarak katıştırılmışsa lisansı bir akıştan yükleyebilirsiniz. Kullan`SetLicense` bir akışı kabul eden yöntem.
 
-#### S: Aspose.Words for .NET lisans dosyaları için hangi dosya formatlarını destekliyor?
+### Lisans dosyamı nereye yerleştirmeliyim?  
+Lisans dosyanızı yürütülebilir dosyanızla aynı dizine veya uygulamanızın erişebileceği herhangi bir yola yerleştirebilirsiniz.
 
-C: Aspose.Words for .NET, XML formatındaki lisans dosyalarını destekler. Lisans dosyanızın Aspose.Words for .NET tarafından tanınan uygun XML formatında olduğundan emin olun.
+### Geçici lisansı nasıl alabilirim?  
+ Geçici lisansı adresinden alabilirsiniz.[Web sitesi](https://purchase.aspose.com/temporary-license/) 30 gün boyunca geçerlidir.
 
-#### S: Aspose.Words for .NET'te program aracılığıyla lisans başvurusunda bulunabilir miyim?
-
- C: Evet, Aspose.Words for .NET'te programlı olarak lisans başvurusunda bulunabilirsiniz. kullanarak`License` sınıf ve onun`SetLicense` yöntemiyle, bir lisansı doğrudan kodunuzdan uygulayabilirsiniz.
-
-#### S: Aspose.Words for .NET'te lisans başvurusunda bulunmazsam ne olur?
-
-C: Aspose.Words for .NET'te lisans başvurusunda bulunmazsanız kütüphane değerlendirme modunda çalışacaktır. Değerlendirme modunda oluşturulan belgelere belirli sınırlamalar ve filigranlar getirilebilir. Bu sınırlamaları kaldırmak için geçerli bir lisansa başvurmanız önerilir.
+### Lisans dosyası makineye özel mi?  
+Hayır, lisans dosyası belirli bir makineye bağlı değildir. Lisans sözleşmesi koşulları dahilinde olduğu sürece herhangi bir makinede kullanabilirsiniz.

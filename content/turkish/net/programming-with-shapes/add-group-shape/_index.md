@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Yeni Bir Belge ve GroupShape Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve`GroupShape` belgeyle çalışmaya itiraz edin.
+ Yeni bir örneğini oluşturun`Document` sınıf ve`GroupShape`belgeyle çalışmaya itiraz edin.
 
 ```csharp
 Document doc = new Document();

@@ -131,4 +131,4 @@ Ja, u kunt kop- en voetteksten kopiëren tussen alle secties in een Word-documen
 
 ### V5: Is er een gratis proefversie beschikbaar voor Aspose.Words voor .NET?
 
-Ja, u kunt een gratis proefversie downloaden van de[downloadpagina](https://releases.aspose.com/).
+ Ja, u kunt een gratis proefversie downloaden van de[downloadpagina](https://releases.aspose.com/).

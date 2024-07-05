@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Aqui usamos o construtor de documentos para construir uma tabela com três células. A primeira célula tem uma largura preferencial de 40 pontos, a segunda célula tem uma largura preferencial de 20% da largura da tabela e a terceira célula tem uma largura preferencial automática que se ajusta.
+Aqui usamos o construtor de documentos para construir uma tabela com três células. A primeira célula tem uma largura preferencial de 40 pontos, a segunda célula tem uma largura preferencial de 20% da largura da tabela e a terceira célula tem uma largura preferencial automática que se ajusta
 
   dependendo do espaço disponível.
 

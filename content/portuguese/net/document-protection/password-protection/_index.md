@@ -75,7 +75,7 @@ R: Para aplicar proteção por senha a um documento do Word usando Aspose.Words 
 
 #### P: Qual é a finalidade do parâmetro ProtectionType no método Protect?
 
- R: O`ProtectionType` parâmetros no`Protect` O método Aspose.Words for .NET permite especificar o tipo de proteção a ser aplicada ao documento. No caso de proteção por senha, você definiria o`ProtectionType` para`NoProtection` para indicar que o documento está protegido por senha.
+ R: O`ProtectionType` parâmetro no`Protect` O método Aspose.Words for .NET permite especificar o tipo de proteção a ser aplicada ao documento. No caso de proteção por senha, você definiria o`ProtectionType` para`NoProtection` para indicar que o documento está protegido por senha.
 
 #### P: Posso remover a proteção por senha de um documento do Word usando Aspose.Words for .NET?
 

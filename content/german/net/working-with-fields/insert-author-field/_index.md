@@ -1,60 +1,60 @@
 ---
 title: Autorenfeld einfügen
 linktitle: Autorenfeld einfügen
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein AUTHOR-Feld in Ihre Word-Dokumente einfügen. Geben Sie den Namen des Autors an, um Ihre Dokumente zu personalisieren.
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein AUTOR-Feld in Ihre Word-Dokumente einfügen. Geben Sie den Namen des Autors an, um Ihre Dokumente zu personalisieren.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/insert-author-field/
 ---
 
 
-Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der die Funktion „Ein AUTHOR-Feld einfügen“ von Aspose.Words für .NET verwendet. Stellen Sie sicher, dass Sie jeden Schritt sorgfältig befolgen, um die gewünschten Ergebnisse zu erzielen.
+Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes unten, der die Funktion „AUTHOR-Feld einfügen“ von Aspose.Words für .NET verwendet. Befolgen Sie jeden Schritt sorgfältig, um die gewünschten Ergebnisse zu erzielen.
 
-## Schritt 1: Einrichten des Dokumentenverzeichnisses
+## Schritt 1: Einrichten des Dokumentverzeichnisses
 
-Im bereitgestellten Code müssen Sie das Verzeichnis Ihrer Dokumente angeben. Ersetzen Sie den Wert „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad zu Ihrem Dokumentenverzeichnis.
+Im angegebenen Code müssen Sie das Verzeichnis Ihrer Dokumente angeben. Ersetzen Sie den Wert „IHR DOKUMENTVERZEICHNIS“ durch den entsprechenden Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Schritt 2: Dokument und Absatz erstellen
+## Schritt 2: Erstellen des Dokuments und des Absatzes
 
-Wir beginnen damit, ein neues Dokument zu erstellen und den ersten Absatz abzurufen.
+Wir beginnen mit der Erstellung eines neuen Dokuments und dem Abrufen des ersten Absatzes.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Schritt 3: Fügen Sie das Feld AUTOR ein
+## Schritt 3: Feld AUTOR einfügen
 
- Wir benutzen das`AppendField()` Methode zum Einfügen eines AUTHOR-Felds in den Absatz.
+ Wir benutzen das`AppendField()` Methode, um ein AUTOR-Feld in den Absatz einzufügen.
 
 ```csharp
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);
 ```
 
- Anschließend konfigurieren wir die Felder`AuthorName` -Eigenschaft, um den Namen des Autors anzugeben.
+ Anschließend konfigurieren wir die`AuthorName` -Eigenschaft, um den Namen des Autors anzugeben.
 
 ```csharp
 field. AuthorName = "Test1";
 ```
 
- Abschließend nennen wir die`Update()` Methode zum Aktualisieren des Felds.
+ Schließlich nennen wir die`Update()` Methode zum Aktualisieren des Felds.
 
 ```csharp
 field. Update();
 ```
 
-### Beispiel des Quellcodes zum Einfügen eines AUTHOR-Feldes mit Aspose.Words für .NET
+### Beispiel des Quellcodes zum Einfügen eines AUTHOR-Felds mit Aspose.Words für .NET
 
 ```csharp
-// Der Pfad zum Dokumentenverzeichnis.
+// Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Dokumentenerstellung.
+// Dokumenterstellung.
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
@@ -68,11 +68,11 @@ field. Update();
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-In diesem Beispiel haben wir ein neues Dokument erstellt, ein AUTHOR-Feld eingefügt, den Autorennamen konfiguriert und das Dokument unter einem angegebenen Dateinamen gespeichert.
+In diesem Beispiel haben wir ein neues Dokument erstellt, ein AUTOR-Feld eingefügt, den Autorennamen konfiguriert und das Dokument unter einem angegebenen Dateinamen gespeichert.
 
-Damit ist unser Leitfaden zur Verwendung der Funktion „Autorenfeld einfügen“ mit Aspose.Words für .NET abgeschlossen.
+Damit schließen wir unsere Anleitung zur Verwendung der Funktion „AUTHOR-Feld einfügen“ mit Aspose.Words für .NET ab.
 
-### FAQs
+### Häufig gestellte Fragen
 
 #### F: Was ist ein Autorenfeld in Aspose.Words?
 
@@ -80,12 +80,12 @@ A: Ein Autorenfeld in Aspose.Words ist ein spezielles Feld, das den Namen des Au
 
 #### F: Wie aktualisiere ich das Autorenfeld in einem Word-Dokument mit Aspose.Words?
 
-A: Das Feld „Autor“ in einem Word-Dokument kann aktualisiert werden, um den Namen des aktuellen Autors anzuzeigen. Hierzu können Sie die in der Document-Klasse verfügbare UpdateFields-Methode verwenden. Diese Methode aktualisiert alle Felder im Dokument, einschließlich des Feldes „Autor“.
+A: Das Autorenfeld in einem Word-Dokument kann aktualisiert werden, um den Namen des aktuellen Autors anzuzeigen. Hierzu können Sie die in der Document-Klasse verfügbare Methode UpdateFields verwenden. Diese Methode aktualisiert alle Felder im Dokument, einschließlich des Autorenfelds.
 
 #### F: Ist es möglich, das Format des Autorenfelds in einem Word-Dokument anzupassen?
 
-A: Ja, es ist möglich, das Format des Autorenfelds in einem Word-Dokument anzupassen. Standardmäßig wird im Feld „Autor“ lediglich der Name des Autors angezeigt. Sie können jedoch mithilfe der in Aspose.Words verfügbaren Formatierungsoptionen zusätzliche Informationen wie Datum und Uhrzeit der Änderung hinzufügen.
+A: Ja, es ist möglich, das Format des Autorfelds in einem Word-Dokument anzupassen. Standardmäßig zeigt das Autorfeld einfach den Namen des Autors an. Sie können jedoch mithilfe der in Aspose.Words verfügbaren Formatierungsoptionen zusätzliche Informationen wie Datum und Uhrzeit der Änderung hinzufügen.
 
-#### F: Reagiert das Feld „Autor“ auf spätere Änderungen des Autorennamens?
+#### F: Ist das Autorenfeld sensibel gegenüber späteren Änderungen des Autorennamens?
 
-A: Ja, das Feld „Autor“ reagiert empfindlich auf spätere Änderungen des Autorennamens. Wenn Sie den Namen des Autors in den Dokumenteigenschaften ändern, wird das Feld „Autor“ beim Aktualisieren der Dokumentfelder automatisch mit dem neuen Namen aktualisiert.
+A: Ja, das Autorenfeld reagiert empfindlich auf nachträgliche Änderungen des Autorennamens. Wenn Sie den Autorennamen in den Dokumenteigenschaften ändern, wird das Autorenfeld beim Aktualisieren von Dokumentfeldern automatisch mit dem neuen Namen aktualisiert.

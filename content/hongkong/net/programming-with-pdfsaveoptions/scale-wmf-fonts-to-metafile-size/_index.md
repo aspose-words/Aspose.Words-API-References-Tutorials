@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 
 透過建立一個實例來配置另存為 PDF 選項`PdfSaveOptions`類別並使用先前配置的圖元檔案渲染選項。
 
-使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`類別指定路徑和儲存選項。
+使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`指定路徑和儲存選項的類別。
 
 #### Q：在 PDF 文件中將 WMF 字體大小調整為圖元檔案大小有什麼好處？
 答：在 PDF 文件中將 WMF 字體大小調整為圖元文件大小的優點是：

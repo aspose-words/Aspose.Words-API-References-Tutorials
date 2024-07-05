@@ -2,7 +2,7 @@
 title: 언어의 하이픈 넣기 단어
 linktitle: 언어의 하이픈 넣기 단어
 second_title: Aspose.Words 문서 처리 API
-description: Aspose.Words for .NET을 사용하여 Word 문서에서 다양한 언어로 단어에 하이픈을 넣는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에서 다양한 언어의 단어에 하이픈을 넣는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-hyphenation/hyphenate-words-of-languages/
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## 2단계: 하이픈 넣기 사전 저장
 
-다음으로, 처리하려는 다양한 언어에 대한 하이픈 사전을 저장하세요. 이 예에서는 미국 영어와 스위스 독일어에 대한 사전을 등록합니다.
+다음으로, 처리하려는 다양한 언어에 대한 하이픈 넣기 사전을 저장하세요. 이 예에서는 미국 영어와 스위스 독일어에 대한 사전을 등록합니다.
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
@@ -51,7 +51,7 @@ builder.InsertHyphenation();
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-그래서 ! Aspose.Words for .NET을 사용하여 Word 문서에서 다양한 언어로 단어에 하이픈을 넣어 성공적으로 단어를 처리했습니다.
+그래서 ! Aspose.Words for .NET을 사용하여 Word 문서에서 다양한 언어로 단어에 하이픈을 넣어 성공적으로 처리했습니다.
 
 ### .NET용 Aspose.Words를 사용한 단어 하이픈 넣기용 샘플 소스 코드
 
@@ -77,6 +77,6 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 
 A: Aspose.Words에서 음절 언어를 지정하려면 적절한 언어 코드를 사용해야 합니다. 예를 들어 영어에는 "en", 프랑스어에는 "fr", 스페인어에는 "es", 독일어에는 "de" 등을 사용할 수 있습니다. 지원되는 언어 코드의 전체 목록은 Aspose.Words 설명서를 참조하세요.
 
-#### Q: Aspose.Words의 모든 언어에서 음절 구분이 작동하나요?
+#### Q: Aspose.Words의 모든 언어에 대해 음절 구분이 작동합니까?
 
-A: Aspose.Words의 음절 표기는 언어별 음절 표기 규칙에 따라 다릅니다. Aspose.Words는 다양한 언어를 지원하지만 일부 언어는 지원되지 않거나 음절 표기가 불가능할 수 있습니다. Aspose.Words 문서를 확인하여 음절화에 지원되는 언어를 알아보세요.
+A: Aspose.Words의 음절 표기는 언어별 음절 표기 규칙에 따라 다릅니다. Aspose.Words는 다양한 언어를 지원하지만 일부 언어는 지원되지 않거나 음절을 사용하지 못할 수 있습니다. Aspose.Words 문서를 확인하여 음절화에 지원되는 언어를 알아보세요.

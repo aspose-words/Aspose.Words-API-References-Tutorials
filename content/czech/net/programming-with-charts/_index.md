@@ -24,7 +24,7 @@ Pomocí těchto výukových programů budete moci vylepšit své dokumenty Word 
 | [Vložit bublinový graf](./insert-bubble-chart/) | Naučte se vložit bublinový graf do dokumentu pomocí Aspose.Words for .NET. Přidejte data série s hodnotami X, Y a velikosti bublin. |
 | [Vložit bodový graf](./insert-scatter-chart/) | Naučte se vložit bodový graf do dokumentu pomocí Aspose.Words for .NET. Přidejte data série se souřadnicemi X a Y. |
 | [Definujte vlastnosti XYAxis](./define-xyaxis-properties/) | Naučte se definovat vlastnosti osy XY v grafu pomocí Aspose.Words for .NET. Jsou ukázány možnosti přizpůsobení pro osy X a Y. |
-| [Datum Čas Hodnoty k ose](./date-time-values-to-axis/) | Naučte se přidávat hodnoty data a času na osu grafu pomocí Aspose.Words for .NET. |
+| [Datum Čas Hodnoty To Axis](./date-time-values-to-axis/) | Naučte se, jak přidat hodnoty data a času na osu grafu pomocí Aspose.Words for .NET. |
 | [Formát čísla pro osu](./number-format-for-axis/) | Naučte se, jak nastavit formát čísla pro osu v grafu pomocí Aspose.Words for .NET. |
 | [Hranice Osy](./bounds-of-axis/) | Naučte se, jak nastavit hranice osy v grafu pomocí Aspose.Words for .NET ovládající rozsah hodnot zobrazených na ose. |
 | [Jednotka intervalu mezi štítky na ose](./interval-unit-between-labels-on-axis/) | Naučte se, jak nastavit jednotku intervalu mezi štítky na ose grafu pomocí Aspose.Words for .NET. |

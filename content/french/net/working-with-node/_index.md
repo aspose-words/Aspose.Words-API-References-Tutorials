@@ -18,5 +18,5 @@ Pour travailler avec des nœuds dans Aspose.Words pour .NET, les développeurs p
 | [Obtenir le nœud parent](./get-parent-node/) | Découvrez comment obtenir le nœud parent d'un élément spécifique avec Aspose.Words pour .NET. |
 | [Document du propriétaire](./owner-document/) | Découvrez comment utiliser le document propriétaire dans Aspose.Words pour .NET. |
 | [Énumérer les nœuds enfants](./enumerate-child-nodes/) | Découvrez comment énumérer les nœuds enfants dans un paragraphe avec Aspose.Words for .NET. |
-| [Accès dactylographié](./typed-access/) | Découvrez comment utiliser l'accès typé pour manipuler des tables dans Aspose.Words for .NET. |
+| [Accès tapé](./typed-access/) | Découvrez comment utiliser l'accès typé pour manipuler des tables dans Aspose.Words for .NET. |
 | [Créer et ajouter un nœud de paragraphe](./create-and-add-paragraph-node/) | Créez et ajoutez un nœud de paragraphe à vos documents Word avec Aspose.Words pour .NET. |

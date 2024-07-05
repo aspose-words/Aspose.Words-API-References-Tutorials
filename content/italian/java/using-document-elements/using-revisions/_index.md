@@ -107,7 +107,7 @@ para.remove();
 // e verrà visualizzato come revisione in Microsoft Word, finché non accetteremo o rifiuteremo tutte le revisioni.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Il paragrafo di revisione eliminato viene rimosso una volta accettate le modifiche.
+// Il paragrafo di revisione di eliminazione viene rimosso una volta accettate le modifiche.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //era È.Vuoto

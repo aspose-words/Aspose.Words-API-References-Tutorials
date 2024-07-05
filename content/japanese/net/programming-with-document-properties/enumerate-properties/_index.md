@@ -2,33 +2,33 @@
 title: プロパティを列挙する
 linktitle: プロパティを列挙する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメント プロパティを列挙するためのステップバイステップ ガイド。
+description: Aspose.Words for .NET を使用してドキュメント プロパティを列挙するためのステップ バイ ステップ ガイド。
 type: docs
 weight: 10
 url: /ja/net/programming-with-document-properties/enumerate-properties/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメント プロパティを列挙するための C# ソース コードを説明します。この機能を使用すると、ドキュメントの組み込みプロパティとカスタム プロパティにアクセスできます。
+このチュートリアルでは、Aspose.Words for .NET を使用してドキュメント プロパティを列挙する C# ソース コードについて説明します。この機能を使用すると、ドキュメントの組み込みプロパティとカスタム プロパティにアクセスできます。
 
-## ステップ 1: プロジェクトのセットアップ
+## ステップ1: プロジェクトのセットアップ
 
-まず、お気に入りの IDE で新しい C# プロジェクトを作成します。 Aspose.Words for .NET ライブラリがプロジェクトで参照されていることを確認してください。
+まず、お気に入りの IDE で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET ライブラリが参照されていることを確認します。
 
-## ステップ 2: ドキュメントをロードする
+## ステップ2: ドキュメントの読み込み
 
-このステップでは、プロパティを一覧表示する Word 文書を読み込みます。次のコードを使用してドキュメントをロードします。
+この手順では、プロパティを一覧表示する Word 文書を読み込みます。次のコードを使用して文書を読み込みます。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
-交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが置かれているディレクトリの実際のパスに置き換えます。
+交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが配置されているディレクトリの実際のパスを入力します。
 
-## ステップ 3: プロパティを列挙する
+## ステップ3: プロパティの列挙
 
-次に、ドキュメント プロパティ (組み込みプロパティとカスタム プロパティの両方) をリストしてみましょう。次のコードを使用します。
+次に、組み込みプロパティとカスタム プロパティの両方を含むドキュメント プロパティを一覧表示します。次のコードを使用します。
 
 ```csharp
 Console.WriteLine("1. Document name: {0}", doc.OriginalFileName);
@@ -43,13 +43,13 @@ foreach(DocumentProperty prop in doc.CustomDocumentProperties)
 Console.WriteLine("{0}:{1}", prop.Name, prop.Value);
 ```
 
-このコードはドキュメント名を表示し、次に組み込みプロパティとカスタム プロパティをリストし、それらの名前と値を表示します。
+このコードはドキュメント名を表示し、組み込みプロパティとカスタム プロパティの名前と値を一覧表示します。
 
-### Aspose.Words for .NET を使用したプロパティの列挙のソース コード例
+### Aspose.Words for .NET を使用したプロパティの列挙のサンプル ソース コード
 
 ```csharp
 
-	//ドキュメントディレクトリへのパス。
+	//ドキュメント ディレクトリへのパス。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx");
 	
@@ -66,7 +66,7 @@ Console.WriteLine("{0}:{1}", prop.Name, prop.Value);
 		
 ```
 
-必ず正しいドキュメント パスを指定してください。`dataDir`変数。
+正しいドキュメントパスを必ず指定してください。`dataDir`変数。
 
-Aspose.Words for .NET を使用してドキュメント プロパティを列挙する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、独自のドキュメントのプロパティに簡単にアクセスして表示できます。
+Aspose.Words for .NET を使用してドキュメント プロパティを列挙する方法を学習しました。このチュートリアルで提供されるステップ バイ ステップ ガイドに従うことで、独自のドキュメントのプロパティに簡単にアクセスして表示できます。
 

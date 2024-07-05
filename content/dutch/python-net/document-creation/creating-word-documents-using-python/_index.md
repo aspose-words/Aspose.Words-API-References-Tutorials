@@ -20,7 +20,7 @@ Voordat we ons verdiepen in de implementatie, is het cruciaal om de structuur va
 
 ## De juiste Python-bibliotheek selecteren
 
-Om ons doel te bereiken: het genereren van Word-documenten met Python, hebben we een betrouwbare en veelzijdige bibliotheek nodig. Een van de populaire keuzes voor deze taak is de bibliotheek "Apose.Words for Python". Het biedt een robuuste set API's die eenvoudige en efficiënte documentmanipulatie mogelijk maken. Laten we eens kijken hoe we deze bibliotheek voor ons project kunnen opzetten en gebruiken.
+Om ons doel te bereiken: het genereren van Word-documenten met Python, hebben we een betrouwbare en veelzijdige bibliotheek nodig. Een van de populaire keuzes voor deze taak is de bibliotheek "Aspose.Words for Python". Het biedt een robuuste set API's die eenvoudige en efficiënte documentmanipulatie mogelijk maken. Laten we eens kijken hoe we deze bibliotheek voor ons project kunnen opzetten en gebruiken.
 
 ## Aspose.Words voor Python installeren
 
@@ -131,7 +131,7 @@ def add_table_to_document():
 
 In deze uitgebreide handleiding hebben we onderzocht hoe u MS Word-documenten kunt maken met behulp van Python met behulp van de Aspose.Words-bibliotheek. We hebben verschillende aspecten behandeld, waaronder het opzetten van de omgeving, het maken van een leeg document, het toevoegen van inhoud, het toepassen van opmaak en het opnemen van tabellen. Door de voorbeelden te volgen en gebruik te maken van de mogelijkheden van de Aspose.Words-bibliotheek, kunt u nu op efficiënte wijze dynamische en aangepaste Word-documenten genereren in uw Python-toepassingen.
 
-Gewapend met deze kennis beschikt u nu over de tools om het genereren van Word-documenten met Python te automatiseren, waardoor u kostbare tijd en moeite bespaart. Veel plezier met coderen en documentcreatie!
+Gewapend met deze kennis beschikt u nu over de tools om het genereren van Word-documenten met Python te automatiseren, waardoor u kostbare tijd en moeite bespaart. Veel codeer- en documentcreatieplezier!
 
 ## Veelgestelde vragen (FAQ's) 
 

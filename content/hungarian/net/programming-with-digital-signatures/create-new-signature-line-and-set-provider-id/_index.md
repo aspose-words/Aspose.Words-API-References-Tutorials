@@ -19,7 +19,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: Az aláírási sor opcióinak beállítása
+## 2. lépés: Az aláírási sor beállításainak megadása
 
 Hozzon létre egy példányt a SignatureLineOptions osztályból, és állítsa be a kívánt beállításokat:
 

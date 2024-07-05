@@ -43,7 +43,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- In questo passaggio creerai una nuova istanza del file`Document` classe e il`DocumentBuilder` classe. IL`dataDir` La variabile viene utilizzata per specificare la directory in cui si desidera salvare il documento.
+ In questo passaggio creerai una nuova istanza di`Document` classe e il`DocumentBuilder` classe. IL`dataDir` La variabile viene utilizzata per specificare la directory in cui si desidera salvare il documento.
 
 ## Passaggio 2: configurare l'impostazione della pagina
 

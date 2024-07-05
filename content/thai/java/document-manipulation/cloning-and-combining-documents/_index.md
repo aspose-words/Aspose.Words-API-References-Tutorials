@@ -26,7 +26,7 @@ clone.save("Your Directory Path" + "CloneAndCombineDocuments.CloningDocument.doc
 
 ## ขั้นตอนที่ 2: การแทรกเอกสารที่จุดแทนที่
 
-คุณสามารถแทรกเอกสาร ณ จุดเปลี่ยนเฉพาะในเอกสารอื่นได้ ต่อไปนี้คือวิธีที่คุณสามารถทำได้:
+คุณสามารถแทรกเอกสารที่จุดแทนที่เฉพาะในเอกสารอื่นได้ ต่อไปนี้คือวิธีที่คุณสามารถทำได้:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
@@ -39,7 +39,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtR
 
  ในตัวอย่างนี้ เราใช้ a`FindReplaceOptions` วัตถุเพื่อระบุตัวจัดการการเรียกกลับสำหรับการแทนที่ ที่`InsertDocumentAtReplaceHandler` คลาสจัดการตรรกะการแทรก
 
-## ขั้นตอนที่ 3: การแทรกเอกสารลงในบุ๊กมาร์ก
+## ขั้นตอนที่ 3: การแทรกเอกสารที่บุ๊กมาร์ก
 
 หากต้องการแทรกเอกสารที่บุ๊กมาร์กเฉพาะในเอกสารอื่น คุณสามารถใช้รหัสต่อไปนี้:
 

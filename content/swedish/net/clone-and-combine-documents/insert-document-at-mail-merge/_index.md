@@ -139,10 +139,10 @@ Och där har du det! Du har framgångsrikt infogat dokument i specifika fält un
 ## FAQ's
 
 ### Kan jag infoga flera dokument i olika sammanslagningsfält?
- Jo det kan du. Ange helt enkelt lämpliga sammanslagningsfält och motsvarande dokumentsökvägar i`MailMerge.Execute` metod.
+Jo det kan du. Ange helt enkelt lämpliga sammanslagningsfält och motsvarande dokumentsökvägar i`MailMerge.Execute` metod.
 
 ### Är det möjligt att formatera det infogade dokumentet annorlunda än huvuddokumentet?
- Absolut! Du kan använda`ImportFormatMode` parametrar i`NodeImporter` för att styra formateringen.
+ Absolut! Du kan använda`ImportFormatMode` parametern i`NodeImporter` för att styra formateringen.
 
 ### Vad händer om sammanslagningsfältets namn är dynamiskt?
 Du kan hantera dynamiska sammanslagningsfältnamn genom att skicka dem som parametrar till återuppringningshanteraren.

@@ -71,7 +71,7 @@ builder.InsertCell();
 builder.Writeln("Cell #3");
 ```
 
- Bu adımda bir tablo başlatıyoruz, hücreleri ekliyoruz ve her hücreye bir miktar metin ekliyoruz.`AutoFit` yöntemi, tablonun genişliğini sayfa genişliğine uyacak şekilde ayarlamak için kullanılır.
+ Bu adımda bir tablo başlatıyoruz, hücreleri ekliyoruz ve her hücreye bir miktar metin ekliyoruz.`AutoFit` yöntemi, tablonun genişliğini sayfa genişliğine sığacak şekilde ayarlamak için kullanılır.
 
 ## Adım 4: Belgeyi Kaydetme
 

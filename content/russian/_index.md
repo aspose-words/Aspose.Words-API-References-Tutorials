@@ -44,7 +44,7 @@ is_root: true
 Это ссылки на некоторые полезные ресурсы:
 - [Текстовый процессор](./java/word-processing/)  
 - [Обработка таблиц](./java/table-processing/)
-- [Оформление документа](./java/document-styling/)
+- [Стилизация документа](./java/document-styling/)
 - [Объединение документов](./java/document-merging/)
 - [Конвертация документов](./java/document-converting/)
 - [Печать документов](./java/document-printing/)

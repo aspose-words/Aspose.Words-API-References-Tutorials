@@ -17,7 +17,7 @@ url: /th/net/add-content-using-documentbuilder/move-to-bookmark-end/
 
 -  Visual Studio: คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://visualstudio.microsoft.com/).
 -  Aspose.Words สำหรับ .NET: คว้ามันมาจาก[ลิ้งค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
--  ใบอนุญาต Aspose ที่ถูกต้อง: คุณสามารถรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/) ถ้าคุณไม่มี
+-  ใบอนุญาต Aspose.Words ที่ถูกต้อง: คุณสามารถรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/) ถ้าคุณไม่มี
 
 และแน่นอนว่าความรู้พื้นฐานเกี่ยวกับ C# และ .NET จะช่วยได้มาก
 
@@ -89,8 +89,8 @@ bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEn
 ```
 
 - `bookmarkName`: ชื่อของบุ๊กมาร์กที่คุณต้องการนำทางไป
-- `isBookmarkStart` :หากตั้งค่าเป็น`true`ย้ายไปที่จุดเริ่มต้นของบุ๊กมาร์ก
-- `isBookmarkEnd` :หากตั้งค่าเป็น`true`ย้ายไปที่ส่วนท้ายของบุ๊กมาร์ก
+- `isBookmarkStart` : หากตั้งค่าเป็น`true`ย้ายไปที่จุดเริ่มต้นของบุ๊กมาร์ก
+- `isBookmarkEnd` : หากตั้งค่าเป็น`true`ย้ายไปที่ส่วนท้ายของบุ๊กมาร์ก
 
 ### ใช้วิธี MoveToBookmark
 
@@ -120,7 +120,7 @@ builder.Writeln("This is a bookmark.");
 doc.Save(dataDir + "UpdatedBookmarks.docx");
 ```
 
- ตอนนี้คุณสามารถเปิดเอกสารที่อัปเดตแล้วและดูข้อความ "นี่คือที่คั่นหน้า" ทันทีหลังจากที่`MyBookmark1`.
+ ตอนนี้คุณสามารถเปิดเอกสารที่อัปเดตแล้วและดูข้อความ "นี่คือบุ๊กมาร์ก" ทันทีหลังจากที่`MyBookmark1`.
 
 ## บทสรุป
 

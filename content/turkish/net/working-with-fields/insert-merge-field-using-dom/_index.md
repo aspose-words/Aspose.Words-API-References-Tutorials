@@ -32,7 +32,7 @@ Koda dalmadan önce, bu eğitimle birlikte takip etmeniz gereken her şeye sahip
 Aspose.Words'ü kullanmak için projenize eklemeniz gerekir. Bu NuGet Paket Yöneticisi aracılığıyla yapılabilir.
 
 1. **Open NuGet Package Manager:** Solution Explorer'da projenize sağ tıklayın ve ardından NuGet Paketlerini Yönet'i seçin.
-2. **Search for Aspose.Words:** NuGet Paket Yöneticisi'nde "Apose.Words" ifadesini arayın.
+2. **Search for Aspose.Words:** NuGet Paket Yöneticisi'nde "Aspose.Words" ifadesini arayın.
 3. **Install the Package:** Aspose.Words'ü projenize eklemek için Kur'a tıklayın.
 
 ## 3. Adım: Ad Alanlarını İçe Aktarın
@@ -119,4 +119,4 @@ Birleştirme alanı, bir belgedeki, veritabanı veya CSV dosyası gibi bir veri 
 Aspose.Words, .NET Framework, .NET Core ve .NET Standard dahil olmak üzere birden fazla .NET sürümünü destekler.
 
 ### 5. Aspose.Words'ün API belgelerini nerede bulabilirim?
- API belgeleri mevcuttur.[Burada](https://reference.aspose.com/words/net/).
+ API belgeleri mevcut[Burada](https://reference.aspose.com/words/net/).

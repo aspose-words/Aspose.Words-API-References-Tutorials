@@ -32,7 +32,7 @@ Hal pertama yang pertama, mari kita siapkan proyek baru di Visual Studio.
 Untuk menggunakan Aspose.Words, Anda perlu menambahkannya ke proyek Anda. Ini dapat dilakukan melalui Manajer Paket NuGet.
 
 1. **Open NuGet Package Manager:** Klik kanan proyek Anda di Solution Explorer, lalu pilih Kelola Paket NuGet.
-2. **Search for Aspose.Words:** Di Manajer Paket NuGet, cari "Apose.Words".
+2. **Search for Aspose.Words:** Di Manajer Paket NuGet, cari "Aspose.Words".
 3. **Install the Package:** Klik Instal untuk menambahkan Aspose.Words ke proyek Anda.
 
 ## Langkah 3: Impor Namespace
@@ -119,4 +119,4 @@ Bidang gabungan adalah tempat penampung dalam dokumen yang bisa diganti secara d
 Aspose.Words mendukung beberapa versi .NET, termasuk .NET Framework, .NET Core, dan .NET Standard.
 
 ### 5. Di mana saya dapat menemukan dokumentasi API untuk Aspose.Words?
- Dokumentasi API tersedia.[Di Sini](https://reference.aspose.com/words/net/).
+ Dokumentasi API tersedia[Di Sini](https://reference.aspose.com/words/net/).

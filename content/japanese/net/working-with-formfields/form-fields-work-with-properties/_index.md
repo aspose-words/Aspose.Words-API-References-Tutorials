@@ -1,27 +1,27 @@
 ---
-title: フォームフィールドのプロパティの操作
-linktitle: フォームフィールドのプロパティの操作
+title: フォームフィールドはプロパティと連携する
+linktitle: フォームフィールドはプロパティと連携する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word ドキュメントのフォーム フィールド プロパティを操作する方法を学びます。
+description: Aspose.Words for .NET を使用して Word 文書内のフォーム フィールド プロパティを操作する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-formfields/form-fields-work-with-properties/
 ---
 
-このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のフォーム フィールド プロパティを操作する方法を説明します。提供されている C# ソース コードについて説明し、それを独自のプロジェクトに実装する方法を示します。
+このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のフォーム フィールド プロパティを操作する方法について説明します。提供されている C# ソース コードについて説明し、独自のプロジェクトに実装する方法を示します。
 
-開始するには、Aspose.Words for .NET が開発環境にインストールされ、セットアップされていることを確認してください。まだ行っていない場合は、からライブラリをダウンロードしてインストールします。[Aspose.Releases]https://releases.aspose.com/words/net/。
+始めるには、開発環境にAspose.Words for .NETがインストールされ、セットアップされていることを確認してください。まだインストールされていない場合は、次の場所からライブラリをダウンロードしてインストールしてください。[Aspose.Releases]https://releases.aspose.com/words/net/.
 
-## ステップ 1: ドキュメント オブジェクトの初期化
+## ステップ1: ドキュメントオブジェクトの初期化
 
-まず、初期化します`Document`フォームフィールドを含むソースドキュメントへのパスを指定して、オブジェクトをオブジェクトに追加します。
+まず、`Document`フォーム フィールドを含むソース ドキュメントへのパスを指定してオブジェクトを作成します。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## ステップ 2: フォームフィールドへのアクセス
+## ステップ2: フォームフィールドにアクセスする
 
 次に、ドキュメントのフォーム フィールド コレクションから特定のフォーム フィールドを取得します。この例では、インデックス 3 のフォーム フィールドにアクセスします。
 
@@ -29,18 +29,18 @@ Document doc = new Document(dataDir + "Form fields.docx");
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## ステップ 3: フォームフィールドのプロパティを使用したワードプロセッシング
+## ステップ3: フォームフィールドプロパティを使用したワード処理
 
-フォームフィールドのタイプに基づいて、フォームフィールドのさまざまなプロパティを操作できます。この例では、フォームフィールドのタイプが次であるかどうかを確認します。`FieldType.FieldFormTextInput`そしてそれを設定します`Result`それに応じてプロパティ:
+フォームフィールドのさまざまなプロパティを、そのタイプに基づいて操作できます。この例では、フォームフィールドのタイプが`FieldType.FieldFormTextInput`そしてその`Result`それに応じてプロパティ:
 
 ```csharp
 if (formField.Type == FieldType.FieldFormTextInput)
     formField.Result = "My name is " + formField.Name;
 ```
 
-他のプロパティを自由に探索し、特定の要件に基づいてさまざまな操作を実行してください。
+他のプロパティを自由に調べて、特定の要件に基づいてさまざまな操作を実行してください。
 
-## ステップ 4: ドキュメントを保存する
+## ステップ4: ドキュメントを保存する
 
 最後に、変更したドキュメントを保存します。
 
@@ -48,9 +48,9 @@ if (formField.Type == FieldType.FieldFormTextInput)
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-それでおしまい！ Aspose.Words for .NET を使用して Word 文書のフォーム フィールド プロパティを正常に操作できました。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書内のフォーム フィールド プロパティを正常に操作できました。
 
-### Aspose.Words for .NET を使用したフォーム フィールドのプロパティの操作のソース コード例
+### Aspose.Words for .NET を使用してフォーム フィールドのプロパティを操作するためのサンプル ソース コード
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -67,22 +67,22 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 
 ### よくある質問
 
-#### Q: Aspose.Words のフォーム フィールドの名前を変更するにはどうすればよいですか?
+#### Q: Aspose.Words でフォーム フィールドの名前を変更するにはどうすればよいですか?
 
- A: Aspose.Words のフォーム フィールドの名前を変更するには、`FormField.Name`プロパティを作成し、新しい値を割り当てます。
+ A: Aspose.Wordsでフォームフィールドの名前を変更するには、`FormField.Name`プロパティを作成し、新しい値を割り当てます。
 
-#### Q: フォームフィールドのデフォルト値を変更することはできますか?
+#### Q: フォーム フィールドのデフォルト値を変更することは可能ですか?
 
- A: はい、Aspose.Words のフォーム フィールドのデフォルト値を変更できます。使用`FormField.Result`プロパティを使用して新しいデフォルトを指定します。
+ A: はい、Aspose.Wordsのフォームフィールドのデフォルト値を変更することは可能です。`FormField.Result`新しいデフォルトを指定するプロパティ。
 
 #### Q: Aspose.Words の日付フォーム フィールドの形式を変更するにはどうすればよいですか?
 
- A: Aspose.Words の日付フォーム フィールドの形式を変更するには、`FormField.TextFormat`プロパティを選択し、新しい日付形式を割り当てます。たとえば、「dd/MM/yyyy」を使用すると、日付を日/月/年の形式で表示できます。
+ A: Aspose.Wordsの日付フォームフィールドのフォーマットを変更するには、`FormField.TextFormat`プロパティを作成し、新しい日付形式を割り当てます。たとえば、「dd/MM/yyyy」を使用して、日付を日/月/年の形式で表示できます。
 
 #### Q: Aspose.Words のドロップダウン フォーム フィールドからオプションのリストを取得できますか?
 
- A: はい、Aspose.Words のドロップダウン フォーム フィールドのオプションのリストを取得するには、`FormField.DropDownItems`財産。必要に応じて、このプロパティにアクセスしてオプションのリストを取得し、追加の操作を実行できます。
+ A: はい、Aspose.Wordsのドロップダウンフォームフィールドのオプションリストを取得するには、`FormField.DropDownItems`プロパティ。このプロパティにアクセスして、必要に応じて追加の操作を実行するためのオプションのリストを取得できます。
 
 #### Q: Aspose.Words のフォーム フィールドからすべてのプロパティを削除するにはどうすればよいですか?
 
- A: Aspose.Words のフォーム フィールドからすべてのプロパティを削除するには、`FormField.Clear`すべてのフォームフィールドのプロパティをクリアするメソッド。
+ A: Aspose.Wordsのフォームフィールドからすべてのプロパティを削除するには、`FormField.Clear`すべてのフォーム フィールドのプロパティをクリアするメソッド。

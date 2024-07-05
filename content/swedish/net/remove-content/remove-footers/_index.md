@@ -37,7 +37,7 @@ Se till att ersätta "Namn_på_dokument.docx" med det faktiska namnet på ditt d
 
 ## Steg 3: Iterera genom sektioner
 
-Ett Word-dokument kan innehålla flera avsnitt och varje avsnitt kan ha sina egna sidfötter. Vi måste gå igenom varje avsnitt i dokumentet för att komma till sidfötterna.
+Ett Word-dokument kan innehålla flera avsnitt och varje avsnitt kan ha sina egna sidfötter. Vi måste gå igenom varje del av dokumentet för att komma till sidfötterna.
 
 ```csharp
 foreach (Section section in doc)

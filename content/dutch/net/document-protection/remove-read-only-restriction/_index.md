@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/document-protection/remove-read-only-restriction/
 ---
-In deze zelfstudie leiden we u door de stappen om Aspose.Words te gebruiken voor het verwijderen van alleen-lezen beperkingen in .NET. Met deze functie kunt u de alleen-lezenbeperking van een Word-document verwijderen om het bewerkbaar te maken. Volg onderstaande stappen:
+In deze zelfstudie leiden we u door de stappen om Aspose.Words te gebruiken voor het verwijderen van de functie voor het verwijderen van alleen-lezen beperkingen in .NET. Met deze functie kunt u de alleen-lezenbeperking van een Word-document verwijderen om het bewerkbaar te maken. Volg onderstaande stappen:
 
 ## Stap 1: Het document aanmaken en de beveiliging instellen
 

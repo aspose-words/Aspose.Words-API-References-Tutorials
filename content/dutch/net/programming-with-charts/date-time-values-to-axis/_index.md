@@ -2,13 +2,13 @@
 title: Voeg datum-tijdwaarden toe aan de as van een diagram
 linktitle: Voeg datum-tijdwaarden toe aan de as van een diagram
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u datum-tijdwaarden kunt toevoegen aan de as van een diagram met Aspose.Words voor .NET.
+description: Leer hoe u datum-tijdwaarden aan de as van een diagram toevoegt met Aspose.Words voor .NET.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/date-time-values-to-axis/
 ---
 
-In deze tutorial wordt uitgelegd hoe u datum-tijdwaarden aan de as van een diagram kunt toevoegen met behulp van Aspose.Words voor .NET.
+In deze zelfstudie wordt uitgelegd hoe u datum-tijdwaarden aan de as van een diagram kunt toevoegen met behulp van Aspose.Words voor .NET.
 
 ## Vereisten
 Om deze tutorial te volgen, heb je het volgende nodig:
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Stap 2: Maak een nieuw document en DocumentBuilder
- Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder` bezwaar maken tegen het werken met het document.
+ Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder`bezwaar maken tegen het werken met het document.
 
 ```csharp
 Document doc = new Document();
@@ -102,10 +102,10 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 	doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-Deze voorbeeldcode maakt een nieuw Word-document, voegt een kolomdiagram met datum-tijdwaarden in op de X-as en slaat het document op in de opgegeven map.
+Met deze voorbeeldcode wordt een nieuw Word-document gemaakt, wordt een kolomdiagram met datum-tijdwaarden op de X-as ingevoegd en wordt het document in de opgegeven map opgeslagen.
 
 ## Conclusie
-In deze zelfstudie hebt u geleerd hoe u datum-tijdwaarden aan de as van een diagram kunt toevoegen met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen, kunt u een diagram maken, datum-tijdwaarden aan de reeks toevoegen en de as configureren om de datum-tijdwaarden nauwkeurig weer te geven. Aspose.Words voor .NET biedt een krachtige reeks functies voor woordenverwerking met grafieken in Word-documenten, waardoor u gegevens effectief kunt weergeven en visualiseren met datum-tijdwaarden.
+In deze zelfstudie hebt u geleerd hoe u datum-tijdwaarden kunt toevoegen aan de as van een diagram met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen, kunt u een diagram maken, datum-tijdwaarden aan de reeks toevoegen en de as configureren om de datum-tijdwaarden nauwkeurig weer te geven. Aspose.Words voor .NET biedt een krachtige reeks functies voor woordenverwerking met grafieken in Word-documenten, waardoor u gegevens effectief kunt weergeven en visualiseren met datum-tijdwaarden.
 
 ### Veelgestelde vragen
 
@@ -113,7 +113,7 @@ In deze zelfstudie hebt u geleerd hoe u datum-tijdwaarden aan de as van een diag
 Ja, met Aspose.Words voor .NET kunt u datum-tijdwaarden toevoegen en weergeven op de as van een diagram in een Word-document. Aspose.Words biedt API's en functionaliteiten om met verschillende diagramtypen te werken en hun uiterlijk aan te passen, inclusief het verwerken van datum-tijdwaarden op de as.
 
 #### Vraag 2. Hoe voeg ik datum-tijdwaarden toe aan de diagramserie?
- Om datum-tijdwaarden aan de diagramserie toe te voegen, kunt u de`Add`methode van de serie van het diagram. Geef een reeks datum-tijdwaarden op als categoriegegevens (X-as), samen met de bijbehorende reekswaarden. Hiermee kunt u gegevenspunten met datum-tijdwaarden in de grafiek plotten.
+ Als u datum-tijdwaarden aan de diagramserie wilt toevoegen, kunt u de`Add`methode van de serie van het diagram. Geef een matrix met datum-tijdwaarden op als categoriegegevens (X-as), samen met de bijbehorende reekswaarden. Hiermee kunt u gegevenspunten met datum-tijdwaarden in het diagram plotten.
 
 #### Q3. Hoe kan ik de as configureren om datum-tijdwaarden weer te geven?
  U kunt de as van het diagram configureren om datum-tijdwaarden weer te geven door de juiste eigenschappen in te stellen. U kunt bijvoorbeeld de minimum- en maximumwaarden voor de as opgeven met behulp van de`Scaling.Minimum` En`Scaling.Maximum` eigenschappen, respectievelijk. Bovendien kunt u de hoofd- en secundaire eenheden instellen om het interval en de maatstreepjes voor de as te definiëren.

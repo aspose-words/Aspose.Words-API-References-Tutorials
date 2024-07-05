@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## الخطوة 2: إنشاء مستند جديد وشكل المجموعة
- إنشاء مثيل جديد لـ`Document` الطبقة و`GroupShape` كائن للعمل مع الوثيقة.
+ إنشاء مثيل جديد لـ`Document` الطبقة و`GroupShape`كائن للعمل مع الوثيقة.
 
 ```csharp
 Document doc = new Document();

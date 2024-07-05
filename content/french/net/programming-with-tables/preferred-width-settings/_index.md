@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Ici, nous utilisons le générateur de documents pour créer un tableau avec trois cellules. La première cellule a une largeur préférée de 40 points, la deuxième cellule a une largeur préférée de 20 % de la largeur du tableau et la troisième cellule a une largeur préférée automatique qui s'ajuste.
+Ici, nous utilisons le générateur de documents pour créer un tableau avec trois cellules. La première cellule a une largeur préférée de 40 points, la deuxième cellule a une largeur préférée de 20 % de la largeur du tableau et la troisième cellule a une largeur préférée automatique qui s'ajuste
 
   en fonction de l'espace disponible.
 

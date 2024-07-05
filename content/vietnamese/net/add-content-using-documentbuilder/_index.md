@@ -8,7 +8,7 @@ weight: 1460
 url: /vi/net/add-content-using-documentbuilder/
 ---
 
-Thêm nội dung bằng DocumentBuilder là tài nguyên toàn diện hướng dẫn bạn quy trình thêm nội dung vào tài liệu Word bằng lớp DocumentBuilder từ thư viện Aspose.Words cho .NET. Hướng dẫn từng bước cung cấp cho bạn hướng dẫn từng bước, ví dụ mã toàn diện và giải thích từng bước về cách tạo đoạn văn, chèn văn bản, định dạng văn bản, thêm hình ảnh, bảng, v.v. Hơn nữa. Tài nguyên này rất cần thiết cho các nhà phát triển muốn tự động hóa việc tạo tài liệu Word bằng Aspose.Words cho .NET và dễ dàng thêm nội dung tùy chỉnh để đáp ứng nhu cầu cụ thể của họ.
+Thêm nội dung bằng DocumentBuilder là tài nguyên toàn diện hướng dẫn bạn quy trình thêm nội dung vào tài liệu Word bằng lớp DocumentBuilder từ thư viện Aspose.Words cho .NET. Hướng dẫn từng bước cung cấp cho bạn hướng dẫn từng bước, ví dụ mã toàn diện và giải thích từng bước về cách tạo đoạn văn, chèn văn bản, định dạng văn bản, thêm hình ảnh, bảng, v.v. Hơn thế nữa. Tài nguyên này rất cần thiết cho các nhà phát triển muốn tự động hóa việc tạo tài liệu Word bằng Aspose.Words cho .NET và dễ dàng thêm nội dung tùy chỉnh để đáp ứng nhu cầu cụ thể của họ.
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |

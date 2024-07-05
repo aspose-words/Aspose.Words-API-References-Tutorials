@@ -2,7 +2,7 @@
 title: Opsi Penyimpanan Dokumen HTML Tingkat Lanjut dengan Aspose.Words Java
 linktitle: Menyimpan Dokumen HTML dengan
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Dalam tutorial ini, kami telah membahas berbagai opsi penyimpanan dokumen HTML tingkat lanjut dengan Aspose.Words untuk Java. Opsi ini memberdayakan Anda untuk membuat HTML berkualitas tinggi.
+description: Dalam tutorial ini, kami telah membahas berbagai opsi penyimpanan dokumen HTML tingkat lanjut dengan Aspose.Words untuk Java. Opsi ini memberdayakan Anda untuk membuat HTML berkualitas tinggi
 type: docs
 weight: 16
 url: /id/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -121,7 +121,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ## 11. Kesimpulan
 Dalam tutorial ini, kita menjelajahi opsi penyimpanan dokumen HTML tingkat lanjut yang disediakan oleh Aspose.Words untuk Java. Opsi ini memberi Anda kendali penuh atas proses konversi, memungkinkan Anda membuat dokumen HTML yang sangat mirip dengan dokumen Word asli.
 
-## 12.FAQ
+## 12. Pertanyaan Umum
 Berikut adalah beberapa pertanyaan umum tentang bekerja dengan opsi penyimpanan dokumen Aspose.Words untuk Java dan HTML:
 
 ### Q1: Bagaimana cara mengonversi HTML kembali ke format Word menggunakan Aspose.Words untuk Java?

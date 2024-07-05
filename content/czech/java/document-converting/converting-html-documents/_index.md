@@ -58,7 +58,7 @@ Nyní, když jste načetli obsah HTML, můžete jej uložit jako dokument aplika
 doc.save("output.docx");
 ```
 
-## Krok 5: Ošetřete výjimky
+## Krok 5: Řešení výjimek
 
 Nezapomeňte zpracovat výjimky, které mohou nastat během procesu převodu. Je dobrým zvykem používat pro zpracování chyb bloky try-catch.
 

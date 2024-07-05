@@ -40,7 +40,7 @@ Először hozzon létre egy új C#-projektet a Visual Studióban. Az egyszerűs�
 1. Nyissa meg a Visual Studio-t, és hozzon létre egy új projektet.
 2. Válassza a „Konzolalkalmazás (.NET Core)” lehetőséget, majd kattintson a „Tovább” gombra.
 3. Nevezze el a projektet, és válassza ki a mentési helyet. Kattintson a "Létrehozás" gombra.
-4. Telepítse az Aspose.Words for .NET programot a NuGet Package Manager segítségével. Kattintson a jobb gombbal a projektre a Solution Explorerben, válassza a „NuGet-csomagok kezelése” lehetőséget, és keressen rá az „Apose.Words” kifejezésre. Telepítse a legújabb verziót.
+4. Telepítse az Aspose.Words for .NET programot a NuGet Package Manager segítségével. Kattintson a jobb gombbal a projektre a Solution Explorerben, válassza a „NuGet-csomagok kezelése” lehetőséget, és keressen rá az „Aspose.Words” kifejezésre. Telepítse a legújabb verziót.
 
 ## 2. lépés: Inicializálja a dokumentumot és a DocumentBuildert
 

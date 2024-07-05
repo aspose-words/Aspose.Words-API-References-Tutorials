@@ -52,7 +52,7 @@ foreach(Style style in styles)
 
  En este paso final, recorremos cada estilo de la colección usando un`foreach` bucle. Mostramos el nombre de cada estilo en la consola, concatenándolos con comas para una mejor lectura.
 
-Ahora puede ejecutar el código fuente para acceder a los estilos de un documento y mostrar sus nombres en la consola. Esta función puede resultar útil para analizar estilos en un documento, realizar operaciones específicas en estilos particulares o simplemente obtener información sobre estilos disponibles.
+Ahora puede ejecutar el código fuente para acceder a los estilos de un documento y mostrar sus nombres en la consola. Esta característica puede resultar útil para analizar estilos en un documento, realizar operaciones específicas en estilos particulares o simplemente obtener información sobre estilos disponibles.
 
 ### Código fuente de muestra para estilos de acceso usando Aspose.Words para .NET 
 ```csharp

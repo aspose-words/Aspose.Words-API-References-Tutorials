@@ -110,7 +110,7 @@ Configure su entorno de desarrollo agregando las referencias necesarias e import
  Sí, puede personalizar el número de caracteres de tabulación por nivel para la sangría de la lista cambiando el valor de`ListIndentation.Count` propiedad en el`TxtSaveOptions` clase. Puede especificar la cantidad de caracteres de tabulación que desea para cada nivel de sangría.
 
 #### P: ¿Qué otros caracteres puedo usar para la sangría de listas con Aspose.Words para .NET?
- Además de los caracteres de tabulación, también puede utilizar otros caracteres para la sangría de la lista con Aspose.Words para .NET. Puedes configurar el`ListIndentation.Character` propiedad a cualquier carácter deseado, como el espacio (`' '`), para identificar listas.
+ Además de los caracteres de tabulación, también puede utilizar otros caracteres para la sangría de la lista con Aspose.Words para .NET. Puedes configurar el`ListIndentation.Character` propiedad a cualquier carácter deseado, como el espacio (`' '`), para sangrar listas.
 
 #### P: ¿Aspose.Words para .NET ofrece otras funciones para administrar listas?
 Sí, Aspose.Words para .NET ofrece muchas funciones para administrar listas en documentos de Word. Puede crear listas numeradas o con viñetas, establecer niveles de sangría, personalizar el estilo de las listas, agregar elementos de lista y más.

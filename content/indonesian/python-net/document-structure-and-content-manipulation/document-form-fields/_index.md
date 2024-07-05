@@ -232,7 +232,7 @@ Menguasai bidang formulir dan pengambilan data di dokumen Word adalah keterampil
 
 Dalam panduan ini, kita telah menjelajahi dasar-dasar bidang formulir, jenis bidang formulir, mengatur properti, dan menyesuaikan perilakunya. Kami juga telah membahas praktik terbaik untuk desain formulir dan menawarkan wawasan dalam mengoptimalkan formulir dokumen untuk mesin pencari.
 
-Dengan memanfaatkan kekuatan Aspose.Words untuk Python, Anda dapat membuat dokumen yang tidak hanya menangkap data secara efektif namun juga meningkatkan keterlibatan pengguna dan menyederhanakan alur kerja pemrosesan data. Sekarang, Anda siap memulai perjalanan Anda untuk menjadi ahli bidang formulir dan pengambilan data di dokumen Word.
+Dengan memanfaatkan kekuatan Aspose.Words untuk Python, Anda dapat membuat dokumen yang tidak hanya menangkap data secara efektif namun juga meningkatkan keterlibatan pengguna dan menyederhanakan alur kerja pemrosesan data. Sekarang, Anda siap memulai perjalanan Anda untuk menjadi ahli bidang formulir dan pengambilan data dalam dokumen Word.
 
 ## FAQ
 
@@ -246,7 +246,7 @@ pip install aspose-words
 
 ### Bisakah saya menetapkan nilai default untuk bidang formulir?
 
- Ya, Anda dapat menetapkan nilai default untuk bidang formulir menggunakan properti yang sesuai. Misalnya, untuk menyetel teks default pada kolom input teks, gunakan`text` Properti.
+ Ya, Anda bisa mengatur nilai default untuk bidang formulir menggunakan properti yang sesuai. Misalnya, untuk menyetel teks default pada kolom input teks, gunakan`text` Properti.
 
 ### Apakah kolom formulir dapat diakses oleh pengguna penyandang disabilitas?
 

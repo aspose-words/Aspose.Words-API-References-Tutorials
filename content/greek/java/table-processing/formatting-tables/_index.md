@@ -135,7 +135,7 @@ cell1.appendChild(nestedTable);
 table.setStyleIdentifier(StyleIdentifier.LIGHT_SHADING_ACCENT_1);
 ```
 
-## Συχνές Ερωτήσεις (Συχνές Ερωτήσεις)
+## Συχνές Ερωτήσεις (FAQ)
 
 ### Πώς μπορώ να αλλάξω το χρώμα φόντου ενός κελιού πίνακα;
 

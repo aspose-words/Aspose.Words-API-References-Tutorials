@@ -207,7 +207,7 @@ for filename in input_files:
 
 Qua
 
- Kết hợp sức mạnh của Python và Aspose.Words, bạn có thể tự động hóa việc chuyển đổi hàng loạt tài liệu, nâng cao năng suất và hiệu quả.
+ kết hợp sức mạnh của Python và Aspose.Words, bạn có thể tự động hóa việc chuyển đổi hàng loạt tài liệu, nâng cao năng suất và hiệu quả.
 
 #### Ví dụ:
 

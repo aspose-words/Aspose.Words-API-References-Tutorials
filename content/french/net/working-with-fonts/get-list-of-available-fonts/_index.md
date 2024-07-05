@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Ajoutez une nouvelle source de dossier qui demandera à Aspose.Words de rechercher les polices dans le dossier suivant.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// Ajoutez le dossier personnalisé contenant nos polices à la liste des sources de polices existantes.
+//Ajoutez le dossier personnalisé contenant nos polices à la liste des sources de polices existantes.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ R : Oui, vous pouvez filtrer la liste des polices disponibles dans Aspose.Words 
 
 #### Q : Comment puis-je utiliser la liste des polices disponibles dans mes documents Word ?
 
- R : Pour utiliser la liste des polices disponibles dans vos documents Word, vous pouvez parcourir la liste et sélectionner les polices appropriées à l'aide des méthodes et propriétés du`FontSettings` classe dans Aspose.Words.
+ : Pour utiliser la liste des polices disponibles dans vos documents Word, vous pouvez parcourir la liste et sélectionner les polices appropriées à l'aide des méthodes et propriétés du`FontSettings` classe dans Aspose.Words.

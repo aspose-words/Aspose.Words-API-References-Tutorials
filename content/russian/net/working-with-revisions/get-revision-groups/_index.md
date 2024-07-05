@@ -31,9 +31,9 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 ```
 
 
-### Пример исходного кода для получения групп ревизий с помощью Aspose.Words для .NET
+### Пример исходного кода для получения групп редакций с помощью Aspose.Words для .NET
 
-Вот полный исходный код для получения групп ревизий в документе с помощью Aspose.Words для .NET:
+Вот полный исходный код для получения групп редакций в документе с помощью Aspose.Words для .NET:
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Вопрос: Как просмотреть группы редакций в документе в Aspose.Words for .NET?
 
- А: Используйте`Groups` свойство документа`Revisions` объект, чтобы получить коллекцию групп редакций. Затем вы можете использовать цикл для обхода каждой группы отзывов.
+ А: Используйте`Groups` свойство документа`Revisions`объект, чтобы получить коллекцию групп редакций. Затем вы можете использовать цикл для обхода каждой группы отзывов.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### Вопрос: Как получить тип ревизии группы ревизий в Aspose.Words для .NET?
 
- А: Используйте`RevisionType` собственность`RevisionGroup`объект, чтобы получить тип редакции группы.
+ А: Используйте`RevisionType` собственность`RevisionGroup` объект, чтобы получить тип редакции группы.
 
 ```csharp
 string revisionType = group.RevisionType;

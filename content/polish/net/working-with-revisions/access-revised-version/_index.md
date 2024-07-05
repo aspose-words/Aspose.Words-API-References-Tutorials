@@ -73,13 +73,13 @@ foreach (Revision revision in doc.Revisions)
 
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak uzyskać dostęp do poprawionej wersji dokumentu programu Word za pomocą Aspose.Words dla .NET. Ładując dokument, przechodząc do poprawionej wersji i przeglądając poprawki, mogliśmy uzyskać szczegółowe informacje na temat akapitów będących pozycjami listy. Aspose.Words dla .NET oferuje zaawansowane funkcje do manipulowania dokumentami Word, w tym dostęp do recenzji. Możesz teraz wykorzystać tę wiedzę, aby uzyskać dostęp do poprawionej wersji własnych dokumentów programu Word za pomocą Aspose.Words dla .NET.
+tym samouczku nauczyliśmy się, jak uzyskać dostęp do poprawionej wersji dokumentu programu Word za pomocą Aspose.Words dla .NET. Ładując dokument, przechodząc do poprawionej wersji i przeglądając poprawki, mogliśmy uzyskać szczegółowe informacje na temat akapitów będących pozycjami listy. Aspose.Words dla .NET oferuje zaawansowane funkcje do manipulowania dokumentami Word, w tym dostęp do recenzji. Możesz teraz wykorzystać tę wiedzę, aby uzyskać dostęp do poprawionej wersji własnych dokumentów programu Word za pomocą Aspose.Words dla .NET.
 
 ### Często zadawane pytania
 
 #### P: Jak załadować dokument z wersjami do Aspose.Words dla .NET?
 
- O: Skorzystaj z`Document`klasa Aspose.Words dla .NET, aby załadować dokument z pliku zawierającego poprawki. Można określić pełną ścieżkę dokumentu.
+ O: Skorzystaj z`Document` klasa Aspose.Words dla .NET, aby załadować dokument z pliku zawierającego poprawki. Można określić pełną ścieżkę dokumentu.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### P: Jak przeglądać wersje dokumentów w Aspose.Words dla .NET?
 
- Odp.: użyj a`foreach` pętla do iteracji po wersjach znajdujących się w dokumencie. Możesz skorzystać z`Revisions` własność`Document` obiekt, aby uzyskać kolekcję wszystkich wersji dokumentu.
+Odp.: użyj a`foreach` pętla do iteracji po wersjach znajdujących się w dokumencie. Możesz skorzystać z`Revisions` własność`Document` obiekt, aby uzyskać kolekcję wszystkich wersji dokumentu.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

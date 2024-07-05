@@ -2,7 +2,7 @@
 title: Wykorzystanie mocy zakładek w dokumentach
 linktitle: Wykorzystanie mocy zakładek w dokumentach
 second_title: Aspose.Words API do zarządzania dokumentami w języku Python
-description: Dowiedz się, jak wykorzystać moc zakładek dokumentów za pomocą Aspose.Words dla Pythona. Twórz, zarządzaj i poruszaj się po zakładkach, korzystając z przewodników krok po kroku i przykładów kodu.
+description: Dowiedz się, jak wykorzystać moc zakładek dokumentów przy użyciu Aspose.Words dla Pythona. Twórz, zarządzaj i poruszaj się po zakładkach, korzystając z przewodników krok po kroku i przykładów kodu.
 type: docs
 weight: 11
 url: /pl/python-net/document-combining-and-comparison/document-bookmarks/
@@ -120,7 +120,7 @@ Gdy lepiej zaznajomisz się z zakładkami, możesz poznać zaawansowane techniki
 
 ## Wniosek
 
-Zakładki dokumentów to nieocenione narzędzia umożliwiające efektywną nawigację i zarządzanie dużymi dokumentami. Dzięki interfejsowi API Aspose.Words for Python masz możliwość bezproblemowej integracji funkcji związanych z zakładkami ze swoimi aplikacjami, dzięki czemu zadania przetwarzania dokumentów stają się płynniejsze i usprawnione.
+Zakładki dokumentów to nieocenione narzędzia umożliwiające efektywną nawigację i zarządzanie dużymi dokumentami. Dzięki interfejsowi API Aspose.Words for Python masz możliwość bezproblemowej integracji funkcji związanych z zakładkami ze swoimi aplikacjami, dzięki czemu przetwarzanie dokumentów staje się płynniejsze i usprawnione.
 
 ## Często zadawane pytania
 

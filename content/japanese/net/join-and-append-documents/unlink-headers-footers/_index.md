@@ -1,66 +1,66 @@
 ---
-title: ヘッダーとフッターのリンクを解除する
-linktitle: ヘッダーとフッターのリンクを解除する
+title: ヘッダーとフッターのリンクを解除
+linktitle: ヘッダーとフッターのリンクを解除
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してヘッダーとフッターのリンクを解除しながら、Word ドキュメントを結合および追加する方法を学びます。
+description: Aspose.Words for .NET を使用して、ヘッダーとフッターのリンクを解除しながら Word 文書を結合および追加する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/unlink-headers-footers/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET のヘッダー フッターのリンク解除機能を使用するプロセスを説明します。この機能を使用すると、ソース文書からヘッダーとフッターのリンクを解除しながら、Word 文書を結合および追加できます。
+このチュートリアルでは、Aspose.Words for .NET のヘッダーとフッターのリンク解除機能を使用する手順を説明します。この機能を使用すると、ソース ドキュメントからヘッダーとフッターのリンクを解除しながら、Word ドキュメントを結合および追加できます。
 
 ## 前提条件
 
-始める前に、以下のものがあることを確認してください。
+始める前に、次のものがあることを確認してください。
 
-1. Aspose.Words for .NET がインストールされています。 Aspose Web サイトからダウンロードするか、NuGet 経由でインストールできます。
+1. Aspose.Words for .NET がインストールされています。Aspose Web サイトからダウンロードするか、NuGet 経由でインストールできます。
 2. Visual Studio またはその他の C# 開発環境。
 
-## ステップ 1: ドキュメント ディレクトリを初期化する
+## ステップ1: ドキュメントディレクトリを初期化する
 
-まず、ドキュメント ディレクトリへのパスを設定する必要があります。の値を変更します。`dataDir`変数をドキュメントが配置されているパスに設定します。
+まず、ドキュメントディレクトリへのパスを設定する必要があります。`dataDir`ドキュメントが保存されているパスへの変数。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ 2: ソースドキュメントと宛先ドキュメントをロードする
+## ステップ2: ソースドキュメントと宛先ドキュメントを読み込む
 
-次に、Aspose.Words を使用してソース ドキュメントと宛先ドキュメントをロードする必要があります。`Document`クラス。ファイル名を更新します。`Document`ドキュメント名に従ってコンストラクターを作成します。
+次に、Aspose.Wordsを使用してソースドキュメントと宛先ドキュメントをロードする必要があります。`Document`クラス。`Document`ドキュメント名に応じてコンストラクターを作成します。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## ステップ 3: ソースドキュメント内のヘッダーとフッターのリンクを解除する
+## ステップ3: ソース文書のヘッダーとフッターのリンクを解除する
 
-ソースドキュメントのヘッダーとフッターのリンクを解除して、宛先ドキュメントのヘッダーとフッターを続行しないようにするには、`LinkToPrevious`の財産`HeadersFooters`ソースドキュメントの最初のセクションにあるコレクションを`false`.
+ソース文書のヘッダーとフッターをリンク解除して、宛先文書のヘッダーとフッターを継承しないようにするには、`LinkToPrevious`の財産`HeadersFooters`ソース文書の最初のセクションのコレクション`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## ステップ 4: ソースドキュメントを宛先ドキュメントに追加する
+## ステップ4: ソースドキュメントを宛先ドキュメントに追加する
 
-これで、`AppendDocument`の方法`Document`クラス。の`ImportFormatMode.KeepSourceFormatting`パラメータを使用すると、追加操作中にソースの書式設定が確実に保持されます。
+これで、ソース文書を宛先文書に追加することができます。`AppendDocument`方法の`Document`クラス。`ImportFormatMode.KeepSourceFormatting`パラメータにより、追加操作中にソースの書式が保持されます。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## ステップ 5: 最終ドキュメントを保存する
+## ステップ5: 最終文書を保存する
 
-最後に、ヘッダーとフッターのリンクを解除する機能を有効にして、結合されたドキュメントを保存します。`Save`の方法`Document`クラス。
+最後に、ヘッダーとフッターのリンク解除機能を有効にして結合した文書を保存します。`Save`方法の`Document`クラス。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-### Aspose.Words for .NET を使用したヘッダー フッターのリンク解除のソース コード例
+### Aspose.Words for .NET を使用してヘッダーとフッターのリンクを解除するサンプル ソース コード
 
-Aspose.Words for .NET を使用した C# の「ヘッダー フッターのリンク解除」機能の完全なソース コードは次のとおりです。
+以下は、Aspose.Words for .NET を使用した C# の「ヘッダーとフッターのリンク解除」機能の完全なソース コードです。
 
 ```csharp
 	//ドキュメントディレクトリへのパス
@@ -68,11 +68,11 @@ Aspose.Words for .NET を使用した C# の「ヘッダー フッターのリ�
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//これを防ぐには、ソースドキュメント内のヘッダーとフッターのリンクを解除します。
-	//宛先ドキュメントのヘッダーとフッターを継続しないようにします。
+	//これを止めるには、ソース文書のヘッダーとフッターのリンクを解除してください。
+	//宛先ドキュメントのヘッダーとフッターを続行しないようにします。
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-それでおしまい！ Aspose.Words for .NET を使用して、ヘッダー フッターのリンク解除機能を正常に実装しました。最終的なドキュメントには、ソースドキュメントのヘッダーとフッターが宛先ドキュメントからリンク解除された、マージされたコンテンツが含まれます。
+これで完了です。Aspose.Words for .NET を使用して、ヘッダーとフッターのリンク解除機能を正常に実装しました。最終的なドキュメントには、ソース ドキュメントのヘッダーとフッターがターゲット ドキュメントからリンク解除された、結合されたコンテンツが含まれます。

@@ -13,7 +13,7 @@ Os tutoriais cobrem os fundamentos do processamento de palavras com seções, in
 
 Os tutoriais também se concentram na exclusão e modificação de seções existentes. Você aprenderá como excluir seções específicas, reorganizar seções, alterar configurações de layout e realizar outras operações avançadas para adaptar seus documentos do Word às suas necessidades específicas.
 
-Seguindo estes tutoriais, você poderá gerenciar seções em seus documentos do Word com facilidade usando Aspose.Words for .NET. Se você deseja criar novos documentos, modificar documentos existentes ou personalizar seções, estes tutoriais fornecerão o conhecimento e as habilidades necessárias para realizar essas tarefas com êxito.
+Seguindo estes tutoriais, você poderá gerenciar seções em seus documentos do Word com facilidade usando Aspose.Words for .NET. Se você deseja criar novos documentos, modificar documentos existentes ou personalizar seções, estes tutoriais fornecerão o conhecimento e as habilidades necessárias para realizar essas tarefas com sucesso.
 
  ## Tutoriais
 | Título | Descrição |

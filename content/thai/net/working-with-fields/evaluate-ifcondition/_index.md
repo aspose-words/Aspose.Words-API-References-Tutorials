@@ -41,13 +41,13 @@ FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ### ตัวอย่างซอร์สโค้ดสำหรับประเมินเงื่อนไข IF ด้วย Aspose.Words สำหรับ .NET
 
 ```csharp
-//การสร้างตัวสร้างเอกสาร
+// การสร้างตัวสร้างเอกสาร
 DocumentBuilder builder = new DocumentBuilder();
 
 // แทรกฟิลด์ IF ลงในเอกสาร
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// ประเมินเงื่อนไข IF
+//ประเมินเงื่อนไข IF
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // แสดงผลการประเมิน

@@ -1,6 +1,6 @@
 ---
-title: แทรก HTML ลงในเอกสาร Word
-linktitle: แทรก HTML ลงในเอกสาร Word
+title: แทรก Html ในเอกสาร Word
+linktitle: แทรก Html ในเอกสาร Word
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: เรียนรู้วิธีแทรก HTML ลงในเอกสาร Word ได้อย่างราบรื่นโดยใช้ Aspose.Words สำหรับ .NET พร้อมบทช่วยสอนแบบละเอียดทีละขั้นตอนของเรา เหมาะสำหรับนักพัฒนา
 type: docs
@@ -44,9 +44,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
  แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงที่คุณต้องการบันทึกเอกสารของคุณ
 
-## ขั้นตอนที่ 2: สร้างเอกสารใหม่
+## ขั้นตอนที่ 2: การสร้างเอกสารใหม่
 
- ต่อไป เราจะสร้างอินสแตนซ์ใหม่ของ`Document` ชั้นเรียน นี่แสดงถึงเอกสาร Word ของเรา
+ ต่อไป เราจะสร้างอินสแตนซ์ใหม่ของ`Document` ระดับ. นี่แสดงถึงเอกสาร Word ของเรา
 
 ```csharp
 Document doc = new Document();
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## ขั้นตอนที่ 3: การเริ่มต้น DocumentBuilder
 
-ในการแทรก HTML เราจะต้องได้รับความช่วยเหลือจาก`DocumentBuilder` ชั้นเรียน คลาสที่มีประโยชน์นี้ทำให้ง่ายต่อการเพิ่มเนื้อหาลงในเอกสารของเรา
+ในการแทรก HTML เราจะต้องได้รับความช่วยเหลือจาก`DocumentBuilder` ระดับ. คลาสที่มีประโยชน์นี้ทำให้ง่ายต่อการเพิ่มเนื้อหาลงในเอกสารของเรา
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

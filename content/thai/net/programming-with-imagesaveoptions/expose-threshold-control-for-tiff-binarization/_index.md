@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /th/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
 ---
-ในบทช่วยสอนนี้ เราจะสำรวจซอร์สโค้ด C# ที่ให้มาสำหรับฟีเจอร์ “TIFF Binarization Threshold Control Exposure” ด้วย Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณควบคุมเกณฑ์การแบ่งไบนารีเมื่อแปลงเอกสารเป็นรูปแบบ TIFF
+ในบทช่วยสอนนี้ เราจะสำรวจซอร์สโค้ด C# ที่ให้มาสำหรับฟีเจอร์ "TIFF Binarization Threshold Control Exposure" ด้วย Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณควบคุมเกณฑ์การแบ่งไบนารีเมื่อแปลงเอกสารเป็นรูปแบบ TIFF
 
 ## ขั้นตอนที่ 1: การตั้งค่าสภาพแวดล้อม
 

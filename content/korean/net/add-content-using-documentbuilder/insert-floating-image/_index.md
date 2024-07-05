@@ -40,7 +40,7 @@ using Aspose.Words.Drawing;
 1. Visual Studio를 열고 새 프로젝트를 만듭니다.
 2. "콘솔 앱(.NET Core)"을 선택하고 "다음"을 클릭합니다.
 3. 프로젝트 이름을 지정하고 저장할 위치를 선택하세요. "만들기"를 클릭하세요.
-4. NuGet 패키지 관리자를 통해 .NET용 Aspose.Words를 설치합니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 "NuGet 패키지 관리"를 선택한 다음 "Apose.Words"를 검색하세요. 최신 버전을 설치하세요.
+4. NuGet 패키지 관리자를 통해 .NET용 Aspose.Words를 설치합니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 "NuGet 패키지 관리"를 선택한 다음 "Aspose.Words"를 검색하세요. 최신 버전을 설치하세요.
 
 ## 2단계: 문서 및 DocumentBuilder 초기화
 

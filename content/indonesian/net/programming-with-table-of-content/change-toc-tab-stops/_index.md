@@ -11,7 +11,7 @@ Aspose.Words untuk .NET adalah perpustakaan yang kuat untuk membuat, mengedit, d
 
 ## Memahami perpustakaan Aspose.Words
 
-Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk mengubah tab daftar isi.
+Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk mengubah tab daftar isi.
 
 ## Memuat dokumen yang berisi daftar isi
 
@@ -120,7 +120,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 
 Dalam kode ini, perulangan mengulangi setiap paragraf dalam dokumen. Jika sebuah paragraf memiliki gaya TOC, paragraf tersebut mengakses perhentian tab pertama yang digunakan dalam paragraf tersebut, menghapusnya, dan menambahkan perhentian tab baru dengan posisi yang diubah.
 
-#### T: Bisakah saya mengubah tab untuk beberapa tingkatan di daftar isi menggunakan Aspose.Words untuk .NET?
+#### T: Bisakah saya mengubah tab untuk beberapa level di daftar isi menggunakan Aspose.Words untuk .NET?
 
 A: Ya, Anda dapat mengubah tab untuk beberapa tingkatan di daftar isi menggunakan Aspose.Words untuk .NET. Dengan mengulangi setiap paragraf dan memeriksa gaya TOC, Anda dapat memodifikasi tab untuk setiap level satu per satu. Anda dapat mengakses tingkat daftar isi yang diinginkan dan menyesuaikan perhentian tab.
 

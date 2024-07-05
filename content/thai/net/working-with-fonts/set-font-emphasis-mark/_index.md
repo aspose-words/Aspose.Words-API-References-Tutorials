@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: สร้างและปรับแต่งเอกสาร
- สร้างอินสแตนซ์ของ`Document` ชั้นเรียนและที่เกี่ยวข้อง`DocumentBuilder` เพื่อสร้างเนื้อหาเอกสาร ใช้`Font.EmphasisMark` คุณสมบัติเพื่อตั้งค่าสไตล์การเน้นแบบอักษร`EmphasisMark.UnderSolidCircle` - จากนั้นใช้`Write` และ`Writeln` วิธีการของ`DocumentBuilder` เมื่อต้องการเพิ่มข้อความโดยเน้นแบบอักษรที่ระบุ
+ สร้างอินสแตนซ์ของ`Document` ชั้นเรียนและที่เกี่ยวข้อง`DocumentBuilder` เพื่อสร้างเนื้อหาเอกสาร ใช้`Font.EmphasisMark` คุณสมบัติเพื่อตั้งค่าสไตล์การเน้นแบบอักษร`EmphasisMark.UnderSolidCircle` - จากนั้นใช้`Write` และ`Writeln` วิธีการของ`DocumentBuilder` เพื่อเพิ่มข้อความโดยเน้นแบบอักษรที่ระบุ
 
 ```csharp
 Document document = new Document();

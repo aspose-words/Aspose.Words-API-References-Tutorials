@@ -164,4 +164,4 @@ Sí, puede modificar el controlador de devolución de llamada para manejar múlt
 Puede obtener soporte visitando el[Foro Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### ¿Puedo conservar el formato del documento insertado?
- Sí el`NodeImporter`La clase le permite especificar cómo se maneja el formato al importar nodos de un documento a otro.
+ Sí el`NodeImporter` La clase le permite especificar cómo se maneja el formato al importar nodos de un documento a otro.

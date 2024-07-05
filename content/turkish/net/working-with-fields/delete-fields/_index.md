@@ -46,7 +46,7 @@ Aspose.Words for .NET'i entegre ettiğiniz Visual Studio'da yeni veya mevcut bir
 Henüz yapmadıysanız Visual Studio projenize Aspose.Words'e bir referans ekleyin. Bunu şu şekilde yapabilirsiniz:
    - Solution Explorer'da projenize sağ tıklayın.
    - "NuGet Paketlerini Yönet..." seçiliyor
-   - "Apose.Words" ifadesini arama ve projenize yükleme.
+   - "Aspose.Words" ifadesini arayın ve projenize yükleyin.
 
 ## 3. Adım: Belgenizi Hazırlayın
 
@@ -105,4 +105,4 @@ Sonuç olarak, bu eğitimde Aspose.Words for .NET kullanılarak Word belgelerind
    - Evet, burada gösterilen yöntem özellikle yalnızca alanları hedefler ve diğer içerikleri değiştirmeden bırakır.
 
 ### Aspose.Words için daha fazla kaynağı ve desteği nerede bulabilirim?
-   -  Ziyaret edin[Aspose.Words for .NET API belgeleri](https://reference.aspose.com/words/net/) ve[Aspose.Words forumu](https://forum.aspose.com/c/words/8)Daha fazla yardım için.
+   -  Ziyaret edin[Aspose.Words for .NET API belgeleri](https://reference.aspose.com/words/net/) ve[Aspose.Words forumu](https://forum.aspose.com/c/words/8) Daha fazla yardım için.

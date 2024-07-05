@@ -73,7 +73,7 @@ In deze zelfstudie hebben we geleerd hoe u meerdere lettertypemappen kunt instel
 
 #### Vraag: Heeft het instellen van meerdere lettertypemappen invloed op alle documenten die worden verwerkt met Aspose.Words?
 
-A: Ja, het instellen van meerdere lettertypemappen heeft invloed op alle documenten die worden verwerkt met Aspose.Words. Nadat u de lettertypemappen hebt gedefinieerd, gebruikt Aspose.Words deze locaties om in alle documenten naar lettertypen te zoeken.
+A: Ja, het instellen van meerdere lettertypemappen heeft invloed op alle documenten die worden verwerkt met Aspose.Words. Nadat u de lettertypemappen hebt gedefinieerd, gebruikt Aspose.Words deze locaties om naar lettertypen in alle documenten te zoeken.
 
 #### Vraag: Hoeveel lettertypemappen kan ik definiëren in Aspose.Words?
 

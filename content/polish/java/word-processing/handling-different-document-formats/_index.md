@@ -92,7 +92,7 @@ builder.insertImage("image.jpg");
 ### Tworzenie tabel
 
 ```java
-// Utwórz tabelę z 3 wierszami i 4 kolumnami.
+// Utwórz tabelę z 3 wierszami i 4 kolumnami
 Table table = doc.getSections().get(0).getBody().insertTable(3, 4);
 ```
 

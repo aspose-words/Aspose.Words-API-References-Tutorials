@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Étape 3 : Ajouter un filigrane de texte avec des options spécifiques
 
- Nous allons créer une instance du`TextWatermarkOptions` classe et définissez les options souhaitées pour le filigrane de texte.
+ Nous allons créer une instance du`TextWatermarkOptions`classe et définissez les options souhaitées pour le filigrane de texte.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

@@ -1,6 +1,6 @@
 ---
-title: การปฏิบัติตามข้อกำหนด Ooxml ISO 29500_2008_Strict
-linktitle: การปฏิบัติตามข้อกำหนด Ooxml ISO 29500_2008_Strict
+title: การปฏิบัติตามข้อกำหนด Ooxml Iso 29500_2008_Strict
+linktitle: การปฏิบัติตามข้อกำหนด Ooxml Iso 29500_2008_Strict
 second_title: Aspose.Words API การประมวลผลเอกสาร
 description: เรียนรู้วิธีตรวจสอบให้แน่ใจว่า Ooxml Iso 29500_2008_Strict เป็นไปตามข้อกำหนดเมื่อบันทึกเอกสารด้วย Aspose.Words สำหรับ .NET
 type: docs
@@ -35,7 +35,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompli
 
  ในขั้นตอนนี้ เรากำหนดค่าตัวเลือกการบันทึก OOXML โดยใช้`OptimizeFor` และ`OoxmlSaveOptions` วิธีการ เราปรับความเข้ากันได้ของเอกสารให้เหมาะสมสำหรับเวอร์ชัน Word 2016 โดยใช้`OptimizeFor`และกำหนดการปฏิบัติตาม`Iso29500_2008_Strict` โดยใช้`Compliance`.
 
-## ขั้นตอนที่ 4: บันทึกเอกสารด้วย Ooxml ISO 29500_2008_การปฏิบัติตามข้อกำหนดที่เข้มงวด
+## ขั้นตอนที่ 4: บันทึกเอกสารด้วย Ooxml Iso 29500_2008_การปฏิบัติตามข้อกำหนดที่เข้มงวด
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx", saveOptions);

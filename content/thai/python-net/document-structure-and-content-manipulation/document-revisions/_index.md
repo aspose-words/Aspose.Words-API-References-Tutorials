@@ -22,7 +22,7 @@ url: /th/python-net/document-structure-and-content-manipulation/document-revisio
 import asposewords
 ```
 
-## กำลังโหลดและแสดงเอกสาร
+## การโหลดและการแสดงเอกสาร
 
 หากต้องการทำงานกับเอกสาร คุณต้องโหลดเอกสารนั้นลงในแอปพลิเคชัน Python ของคุณก่อน ใช้ข้อมูลโค้ดต่อไปนี้เพื่อโหลดเอกสารและแสดงเนื้อหา:
 
@@ -48,7 +48,7 @@ run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
-## การพิจารณาและยอมรับการแก้ไข
+## การตรวจสอบและการยอมรับการแก้ไข
 
 หากต้องการตรวจทานการแก้ไขในเอกสาร ให้วนซ้ำคอลเลกชันการแก้ไขและแสดง:
 

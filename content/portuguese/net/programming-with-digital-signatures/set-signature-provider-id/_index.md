@@ -87,7 +87,7 @@ R: Um ID de provedor de assinatura em um documento do Word é um identificador e
 
 R: Para definir o ID do provedor de assinatura para uma linha de assinatura em um documento do Word usando Aspose.Words for .NET, você pode seguir estas etapas:
 1.  Carregue o documento usando o`Document` class e especifique o caminho para o arquivo do documento.
-2.  Acesse a linha de assinatura usando o método ou propriedade apropriada. Por exemplo, você pode usar`GetChild` método para recuperar a forma da linha de assinatura.
+2.  Acesse a linha de assinatura usando o método ou propriedade apropriado. Por exemplo, você pode usar`GetChild` método para recuperar a forma da linha de assinatura.
 3. Recupere o ID do provedor da linha de assinatura.
 4.  Crie uma instância do`SignOptions` classe e definir o`ProviderId` propriedade ao ID do provedor recuperado.
 5.  Use o`DigitalSignatureUtil.Sign` método para assinar o documento, fornecendo os parâmetros necessários incluindo o`SignOptions` objeto.

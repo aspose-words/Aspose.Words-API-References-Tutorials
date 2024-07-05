@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// Нам нужно включить KeepWithNext для каждого абзаца таблицы, чтобы он не разбивался по странице.
-	// За исключением последних абзацев в последней строке таблицы.
+	// кроме последних абзацев в последней строке таблицы.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

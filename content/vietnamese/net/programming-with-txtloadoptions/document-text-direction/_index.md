@@ -8,7 +8,7 @@ weight: 10
 url: /vi/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-Trong hướng dẫn này, chúng ta sẽ khám phá mã nguồn C# được cung cấp cho tính năng "Hướng văn bản tài liệu" với Aspose.Words cho .NET. Tính năng này cho phép bạn chỉ định hướng của văn bản trong tài liệu, điều này đặc biệt hữu ích với các ngôn ngữ được viết từ phải sang trái, chẳng hạn như tiếng Do Thái hoặc tiếng Ả Rập.
+Trong hướng dẫn này, chúng ta sẽ khám phá mã nguồn C# được cung cấp cho tính năng "Hướng văn bản tài liệu" với Aspose.Words cho .NET. Tính năng này cho phép bạn chỉ định hướng của văn bản trong tài liệu, điều này đặc biệt hữu ích cho các ngôn ngữ được viết từ phải sang trái, chẳng hạn như tiếng Do Thái hoặc tiếng Ả Rập.
 
 ## Bước 1: Thiết lập môi trường
 

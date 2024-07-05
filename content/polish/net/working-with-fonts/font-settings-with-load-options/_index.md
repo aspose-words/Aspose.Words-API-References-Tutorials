@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fonts/font-settings-with-load-options/
 ---
-tym samouczku pokażemy, jak używać opcji ładowania z ustawieniami czcionek w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Opcje ładowania umożliwiają określenie dodatkowych ustawień podczas ładowania dokumentu, w tym ustawień czcionki. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+W tym samouczku pokażemy, jak używać opcji ładowania z ustawieniami czcionek w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Opcje ładowania umożliwiają określenie dodatkowych ustawień podczas ładowania dokumentu, w tym ustawień czcionki. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -51,13 +51,13 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
 ## Wniosek
-tym samouczku widzieliśmy, jak używać opcji ładowania z ustawieniami czcionek w dokumencie programu Word za pomocą Aspose.Words dla .NET. Opcje ładowania umożliwiają dostosowanie ładowania dokumentu poprzez określenie dodatkowych ustawień, w tym ustawień czcionki. Możesz skorzystać z tej funkcji, aby dostosować ładowanie dokumentów do swoich konkretnych potrzeb.
+W tym samouczku widzieliśmy, jak używać opcji ładowania z ustawieniami czcionek w dokumencie programu Word za pomocą Aspose.Words dla .NET. Opcje ładowania umożliwiają dostosowanie ładowania dokumentu poprzez określenie dodatkowych ustawień, w tym ustawień czcionki. Możesz skorzystać z tej funkcji, aby dostosować ładowanie dokumentów do swoich konkretnych potrzeb.
 
 ### Często zadawane pytania
 
 #### P: Jak mogę określić domyślną czcionkę podczas ładowania dokumentu do Aspose.Words?
 
- O: Aby określić domyślną czcionkę podczas ładowania dokumentu w Aspose.Words, możesz użyć`LoadOptions` klasę i ustaw`DefaultFontName` właściwość na nazwę żądanej czcionki.
+O: Aby określić domyślną czcionkę podczas ładowania dokumentu w Aspose.Words, możesz użyć`LoadOptions` klasę i ustaw`DefaultFontName` właściwość na nazwę żądanej czcionki.
 
 #### P: Jakie inne ustawienia czcionek mogę określić za pomocą opcji ładowania w Aspose.Words?
 
@@ -69,4 +69,4 @@ Odp.: Jeśli określona czcionka domyślna nie jest dostępna, gdy dokument jest
 
 #### P: Czy mogę określić inne ustawienia czcionki dla każdego przesłanego dokumentu?
 
- Odp.: Tak, możesz określić różne ustawienia czcionki dla każdego załadowanego dokumentu, używając oddzielnych instancji metody`LoadOptions` class i ustawienie żądanych ustawień czcionki dla każdej instancji. Dzięki temu możesz dostosować wygląd czcionki dla każdego dokumentu niezależnie.
+ Odp.: Tak, możesz określić różne ustawienia czcionki dla każdego załadowanego dokumentu, używając oddzielnych instancji metody`LoadOptions`class i ustawienie żądanych ustawień czcionki dla każdej instancji. Dzięki temu możesz dostosować wygląd czcionki dla każdego dokumentu niezależnie.

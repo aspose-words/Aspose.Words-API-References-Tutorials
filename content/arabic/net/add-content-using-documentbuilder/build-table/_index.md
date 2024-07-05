@@ -35,7 +35,7 @@ using Aspose.Words.Tables;
 
 ## الخطوة 1: تهيئة المستند وDocumentBuilder
 
- أولاً، نحتاج إلى إعداد منشئ المستندات والمستندات الخاص بنا. ال`Document` يمثل الفصل مستند Word، و`DocumentBuilder` هي أداتنا المفيدة لإضافة المحتوى إليها.
+ أولاً، نحتاج إلى إعداد أداة إنشاء المستندات والمستندات الخاصة بنا. ال`Document` يمثل الفصل مستند Word، و`DocumentBuilder` هي أداتنا المفيدة لإضافة المحتوى إليها.
 
 ```csharp
 Document doc = new Document();

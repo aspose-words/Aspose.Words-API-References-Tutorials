@@ -30,7 +30,7 @@ saveOptions.setThresholdForFloydSteinbergDithering((byte) 254);
 doc.save("Your Directory Path" + "ThresholdControlledImage.tiff", saveOptions);
 ```
 
-## Шаг 2. Сохраните определенную страницу в многостраничном формате TIFF.
+## Шаг 2. Сохранение определенной страницы в многостраничном формате TIFF
 
 Чтобы сохранить определенную страницу в виде многостраничного TIFF, используйте следующий код:
 
@@ -56,7 +56,7 @@ saveOptions.setPixelFormat(ImagePixelFormat.FORMAT_1_BPP_INDEXED);
 doc.save("Your Directory Path" + "1BPPIndexed.png", saveOptions);
 ```
 
-## Шаг 4. Сохраните страницу в формате JPEG с настройкой
+## Шаг 4. Сохранение страницы в формате JPEG с настройкой
 
 Чтобы сохранить определенную страницу в формате JPEG с возможностью настройки, используйте этот код:
 

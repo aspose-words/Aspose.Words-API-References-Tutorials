@@ -41,7 +41,7 @@ EditableRangeEnd edRangeEnd = builder.EndEditableRange();
 
 ## 步驟 3：在可編輯區域之外新增內容
 
-您可以在可編輯區域之外添加內容，該區域將保持唯讀狀態：
+您可以在可編輯區域之外新增內容，該區域將保持唯讀狀態：
 
 ```csharp
 builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");

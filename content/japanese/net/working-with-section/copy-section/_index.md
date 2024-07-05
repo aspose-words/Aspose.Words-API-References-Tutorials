@@ -1,61 +1,61 @@
 ---
-title: セクションのコピー
-linktitle: セクションのコピー
+title: セクションをコピー
+linktitle: セクションをコピー
 second_title: Aspose.Words ドキュメント処理 API
-description: このチュートリアルでは、Aspose.Words for .NET を使用して Word ドキュメントから別のドキュメントにセクションをコピーする方法を学びます。
+description: このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のセクションを別の文書にコピーする方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-section/copy-section/
 ---
 
-このチュートリアルでは、.NET 用の Aspose.Words ライブラリを使用して、Word ドキュメントから別のドキュメントにセクションをコピーする方法を説明します。セクションをコピーすると、特定のセクションをソース ドキュメントから宛先ドキュメントに転送できます。 .NET プロジェクトのコードを理解して実装できるように、段階的に説明します。
+このチュートリアルでは、.NET 用の Aspose.Words ライブラリを使用して、Word 文書のセクションを別の文書にコピーする方法について説明します。セクションをコピーすると、ソース ドキュメントの特定のセクションをコピー先のドキュメントに転送できます。.NET プロジェクトでコードを理解して実装できるように、手順を追って説明します。
 
 ## 前提条件
 始める前に、次のものが揃っていることを確認してください。
-- C# プログラミング言語に関する実践的な知識
+- C#プログラミング言語の実用的な知識
 - プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
-- コピーするセクションを含むソース文書
+- コピーしたいセクションを含むソース文書
 - セクションをコピーする空の宛先ドキュメント
 
-## ステップ 1: ドキュメント ディレクトリを定義する
-まず、ドキュメントが配置されている場所へのディレクトリ パスを設定する必要があります。交換する`"YOUR DOCUMENT DIRECTORY"`コード内で適切なパスを指定します。
+## ステップ1: ドキュメントディレクトリを定義する
+まず、ドキュメントが保存されているディレクトリパスを設定する必要があります。`"YOUR DOCUMENT DIRECTORY"`コード内に適切なパスを追加します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## ステップ 2: ソースドキュメントと宛先ドキュメントをロードする
-次に、ソースドキュメントをインスタンスにロードします。`Document`というクラス`srcDoc`。の空のインスタンスも作成します。`Document`というクラス`dstDoc`宛先ドキュメントの場合。
+## ステップ2: ソースドキュメントと宛先ドキュメントを読み込む
+次に、ソースドキュメントを`Document`クラスと呼ばれる`srcDoc`空のインスタンスも作成します。`Document`クラスと呼ばれる`dstDoc`宛先ドキュメント用。
 
 ```csharp
-//ソースドキュメントをロードします
+//ソースドキュメントを読み込む
 Document srcDoc = new Document(dataDir + "Document.docx");
 
 //空の宛先ドキュメントを作成する
 Document dstDoc = new Document();
 ```
 
-## ステップ 3: セクションを宛先ドキュメントにコピーする
-セクションをソース文書から宛先文書にコピーするには、`ImportNode`ソースセクションをインポートして宛先ドキュメントに追加するメソッド。
+## ステップ3: セクションをコピー先のドキュメントにコピーする
+ソース文書から宛先文書にセクションをコピーするには、`ImportNode`ソース セクションをインポートし、それを宛先ドキュメントに追加するメソッド。
 
 ```csharp
 //ソースセクションを取得する
 Section sourceSection = srcDoc.Sections[0];
 
-//セクションを宛先ドキュメントにコピーします
+//セクションをコピー先のドキュメントにコピーします
 Section newSection = (Section)dstDoc.ImportNode(sourceSection, true);
 dstDoc.Sections.Add(newSection);
 ```
 
-## ステップ 4: 宛先ドキュメントを保存する
+## ステップ4: 宛先ドキュメントを保存する
 最後に、コピーしたセクションを含む宛先ドキュメントをファイルに保存します。
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 ```
 
-### Aspose.Words for .NET を使用したコピー セクションのサンプル ソース コード 
+### Aspose.Words for .NET を使用したセクションのコピーのサンプル ソース コード 
 
 ```csharp
 
@@ -72,55 +72,55 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して Word ドキュメントから別のドキュメントにセクションをコピーする方法を説明しました。セクションをコピーすると、特定のセクションをソース文書から宛先文書に簡単に転送できます。この方法を自由に使用して、ドキュメントのセクションを効率的に整理および操作できます。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のセクションを別の文書にコピーする方法を説明しました。セクションをコピーすると、ソース文書の特定のセクションをコピー先の文書に簡単に転送できます。この方法を使用して、文書のセクションを効率的に整理および操作してください。
 
 ### よくある質問
 
-#### Q: Aspose.Words for .NET を使用して Word 文書から別の文書にセクションをコピーするための前提条件は何ですか?
+#### Q: Aspose.Words for .NET を使用して Word 文書のセクションを別の文書にコピーするための前提条件は何ですか?
 
 A: 始める前に、次のものが揃っていることを確認してください。
-- C# プログラミング言語に関する実践的な知識
-- プロジェクトにインストールされている Aspose.Words for .NET ライブラリ
-- コピーするセクションを含むソース文書
+- C#プログラミング言語の実用的な知識
+- プロジェクトにインストールされた Aspose.Words for .NET ライブラリ
+- コピーしたいセクションを含むソース文書
 - セクションをコピーする空の宛先ドキュメント
 
-#### Q: Aspose.Words for .NET でドキュメント ディレクトリを設定するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET でドキュメント ディレクトリを設定するにはどうすればいいですか?
 
- A: ドキュメントを含むディレクトリへのパスを設定するには、以下を置き換える必要があります。`"YOUR DOCUMENT DIRECTORY"`コード内で適切なパスを指定します。その方法は次のとおりです。
+ A: ドキュメントを含むディレクトリへのパスを設定するには、`"YOUR DOCUMENT DIRECTORY"`コードに適切なパスを追加します。方法は次のとおりです。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-#### Q: Aspose.Words for .NET でソース ドキュメントと宛先ドキュメントをロードするにはどうすればよいですか?
+#### Q: Aspose.Words for .NET でソース ドキュメントと宛先ドキュメントを読み込む方法を教えてください。
 
-A: ソースドキュメントを`Document`というクラス`srcDoc`の空のインスタンスを作成します。`Document`というクラス`dstDoc`宛先ドキュメントには、次のコードを使用できます。
+A: ソースドキュメントを`Document`クラスと呼ばれる`srcDoc`空のインスタンスを作成し、`Document`クラスと呼ばれる`dstDoc`宛先ドキュメントの場合は、次のコードを使用できます。
 
 ```csharp
-//ソースドキュメントをロードします
+//ソースドキュメントを読み込む
 Document srcDoc = new Document(dataDir + "Document.docx");
 
 //空の宛先ドキュメントを作成する
 Document dstDoc = new Document();
 ```
 
-#### Q: Aspose.Words for .NET でソース ドキュメントからコピー先ドキュメントにセクションをコピーするにはどうすればよいですか?
+#### Q: Aspose.Words for .NET でソース ドキュメントから宛先ドキュメントにセクションをコピーするにはどうすればよいですか?
 
-A: セクションをソースドキュメントからコピー先ドキュメントにコピーするには、次のコードを使用できます。
+A: ソース ドキュメントから宛先ドキュメントにセクションをコピーするには、次のコードを使用できます。
 
 ```csharp
 //ソースセクションを取得する
 Section sourceSection = srcDoc.Sections[0];
 
-//セクションを宛先ドキュメントにコピーします
+//セクションをコピー先のドキュメントにコピーします
 Section newSection = (Section)dstDoc.ImportNode(sourceSection, true);
 dstDoc.Sections.Add(newSection);
 ```
 
-#### Q: Aspose.Words for .NET でセクションをコピーした宛先ドキュメントを保存するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET でコピーしたセクションを含む宛先ドキュメントを保存するにはどうすればよいですか?
 
-A: 最後に、次のコードを使用して、コピーされたセクションを含む宛先ドキュメントをファイルに保存できます。
+A: 最後に、次のコードを使用して、コピーしたセクションを含む宛先ドキュメントをファイルに保存できます。
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");

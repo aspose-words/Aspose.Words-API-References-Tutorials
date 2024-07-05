@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Muat Dokumen Sumber dan Tujuan
 
-Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words.`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
+Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -54,7 +54,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 
 ## Langkah 5: Tambahkan Dokumen Sumber ke Dokumen Tujuan
 
- Sekarang, Anda dapat menambahkan dokumen sumber ke dokumen tujuan menggunakan`InsertDocument` metode`DocumentBuilder` kelas. Menggunakan`ImportFormatMode.UseDestinationStyles` parameter dan lulus`ImportFormatOptions` objek untuk mempertahankan perilaku gaya cerdas.
+ Sekarang, Anda dapat menambahkan dokumen sumber ke dokumen tujuan menggunakan`InsertDocument` metode`DocumentBuilder` kelas. Menggunakan`ImportFormatMode.UseDestinationStyles` parameter dan lewati`ImportFormatOptions` objek untuk mempertahankan perilaku gaya cerdas.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

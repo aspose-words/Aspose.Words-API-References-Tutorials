@@ -14,7 +14,7 @@ Woordenverwerking met Markdown biedt een uitgebreide bron voor het leren werken 
 | Titel | Beschrijving |
 | --- | --- |
 | [Vetgedrukte tekst](./bold-text/) | Leer hoe u tekst vetgedrukt maakt met Aspose.Words voor .NET Stapsgewijze handleiding. |
-| [Italiaanse tekst](./italic-text/) | Leer hoe u tekst cursief maakt met Aspose.Words voor .NET Stapsgewijze handleiding. |
+| [Cursieve tekst](./italic-text/) | Leer hoe u tekst cursief maakt met Aspose.Words voor .NET Stapsgewijze handleiding. |
 | [Doorhalen](./strikethrough/) | Leer hoe u de doorgehaalde tekststijl toepast met Aspose.Words voor .NET Stapsgewijze handleiding. |
 | [Inline-code](./inline-code/) | Leer hoe u code inline kunt plaatsen met Aspose.Words voor .NET Stapsgewijze handleiding. |
 | [Automatische koppeling](./autolink/) | Leer hoe u autolink invoegt met Aspose.Words voor .NET Stapsgewijze handleiding. |
@@ -22,7 +22,7 @@ Woordenverwerking met Markdown biedt een uitgebreide bron voor het leren werken 
 | [Afbeelding](./image/) | Leer hoe u een afbeelding kunt invoegen en aanpassen met Aspose.Words voor .NET Stapsgewijze handleiding. |
 | [Horizontale regel](./horizontal-rule/) | Leer hoe u een horizontale regel invoegt met Aspose.Words voor .NET Stapsgewijze handleiding. |
 | [Rubriek](./heading/) | Leer hoe u koptekst gebruikt met Aspose.Words voor .NET Stapsgewijze handleiding. |
-| [Setex-rubriek](./setext-heading/) | Leer hoe u Setext-koppen kunt gebruiken om uw documenten op te maken met Aspose.Words voor .NET Stapsgewijze handleiding. |
+| [Setext-kop](./setext-heading/) | Leer hoe u Setext-koppen kunt gebruiken om uw documenten op te maken met Aspose.Words voor .NET Stapsgewijze handleiding. |
 | [Ingesprongen code](./indented-code/) | Leer hoe u ingesprongen code kunt gebruiken met Aspose.Words voor .NET Stapsgewijze handleiding. |
 | [Omheinde code](./fenced-code/) | Leer hoe u de afgeschermde codefunctie gebruikt met Aspose.Words voor .NET Stapsgewijze handleiding. |
 | [Citaat](./quote/) | Leer hoe u offertes gebruikt met Aspose.Words voor .NET Stapsgewijze handleiding. |

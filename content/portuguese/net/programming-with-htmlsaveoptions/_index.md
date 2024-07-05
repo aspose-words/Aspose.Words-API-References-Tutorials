@@ -17,7 +17,7 @@ Se você deseja converter documentos do Word em HTML para exibição na Web, inc
 | Título | Descrição |
 | --- | --- |
 | [Exportar informações de ida e volta](./export-roundtrip-information/) | Guia passo a passo para exportar informações de ida e volta ao salvar um documento como HTML com Aspose.Words for .NET. |
-| [Exportar fontes como base 64](./export-fonts-as-base-64/) | Guia passo a passo para exportar fontes de base 64 ao salvar um documento com Aspose.Words for .NET. |
+| [Exportar fontes como Base 64](./export-fonts-as-base-64/) | Guia passo a passo para exportar fontes de base 64 ao salvar um documento com Aspose.Words for .NET. |
 | [Exportar recursos](./export-resources/) | Guia passo a passo para exportar recursos de documentos ao salvar como HTML com Aspose.Words for .NET. |
 | [Converter metarquivos em Emf ou Wmf](./convert-metafiles-to-emf-or-wmf/) | Guia passo a passo para converter metarquivos para formatos EMF ou WMF ao converter um documento para HTML com Aspose.Words for .NET. |
 | [Converter metarquivos em SVG](./convert-metafiles-to-svg/) | Guia passo a passo para converter metarquivos para o formato SVG ao converter um documento para HTML com Aspose.Words for .NET. |

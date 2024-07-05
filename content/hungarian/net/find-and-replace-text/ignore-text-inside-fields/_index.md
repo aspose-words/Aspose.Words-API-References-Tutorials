@@ -16,7 +16,7 @@ Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogya
 
 ## 1. lépés: Új dokumentum létrehozása
 
- Mielőtt elkezdené manipulálni a mezőkön belüli szöveget, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ezt úgy lehet megtenni, hogy a`Document` tárgy:
+ Mielőtt elkezdené manipulálni a mezőkön belüli szöveget, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ez megtehető az a. példányosításával`Document` tárgy:
 
 ```csharp
 Document doc = new Document();
@@ -41,7 +41,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 
 ## 4. lépés: Reguláris kifejezések használata kereséshez és cseréhez
 
-A dokumentum szövegén végzett keresési és csereműveletek végrehajtásához reguláris kifejezéseket használunk. Példánkban megkeressük az "e" betű összes előfordulását, és csillagra cseréljük őket* .NET-et fogunk használni`Regex` osztály ehhez:
+A dokumentum szövegén végzett keresési és csereműveletek végrehajtásához reguláris kifejezéseket használunk. Példánkban megkeressük az "e" betű összes előfordulását, és csillagra cseréljük őket* ". NET-et fogunk használni`Regex` osztály ehhez:
 
 ```csharp
 Regex regex = new Regex("e");

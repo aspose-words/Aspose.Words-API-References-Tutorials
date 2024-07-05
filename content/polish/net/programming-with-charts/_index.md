@@ -24,12 +24,12 @@ Dzięki tym samouczkom będziesz mógł ulepszyć swoje dokumenty Word, dodając
 | [Wstaw wykres bąbelkowy](./insert-bubble-chart/) | Dowiedz się, jak wstawić wykres bąbelkowy do dokumentu za pomocą Aspose.Words dla .NET. Dodaj dane serii z wartościami X, Y i rozmiarem bąbelka. |
 | [Wstaw wykres punktowy](./insert-scatter-chart/) | Dowiedz się, jak wstawić wykres punktowy do dokumentu za pomocą Aspose.Words dla .NET. Dodaj dane serii ze współrzędnymi X i Y. |
 | [Zdefiniuj właściwości osi XY](./define-xyaxis-properties/) | Dowiedz się, jak zdefiniować właściwości osi XY na wykresie za pomocą Aspose.Words dla .NET. Pokazano opcje dostosowywania osi X i Y. |
-| [Data i godzina Wartości do osi](./date-time-values-to-axis/) | Dowiedz się, jak dodać wartości daty i czasu do osi wykresu za pomocą Aspose.Words dla .NET. |
+| [Wartości daty i godziny do osi](./date-time-values-to-axis/) | Dowiedz się, jak dodać wartości daty i godziny do osi wykresu za pomocą Aspose.Words dla .NET. |
 | [Format liczb dla osi](./number-format-for-axis/) | Dowiedz się, jak ustawić format liczb dla osi na wykresie za pomocą Aspose.Words dla .NET. |
 | [Granice osi](./bounds-of-axis/) | Dowiedz się, jak ustawić granice osi na wykresie za pomocą Aspose.Words dla .NET kontrolującego zakres wartości wyświetlanych na osi. |
 | [Jednostka odstępu między etykietami na osi](./interval-unit-between-labels-on-axis/) | Dowiedz się, jak ustawić jednostkę odstępu między etykietami na osi wykresu za pomocą Aspose.Words dla .NET. |
 | [Ukryj oś wykresu](./hide-chart-axis/) | Dowiedz się, jak ukryć oś wykresu w dokumencie za pomocą Aspose.Words dla .NET. Ukryj oś, aby uzyskać czystszy i bardziej skupiony widok wykresu. |
-| [Zaznacz opcję Wyrównanie etykiet wieloliniowych](./tick-multi-line-label-alignment/) | Dowiedz się, jak wyrównywać wieloliniowe etykiety znaczników na osi wykresu za pomocą Aspose.Words dla .NET. |
+| [Zaznacz opcję Wyrównanie etykiety wieloliniowej](./tick-multi-line-label-alignment/) | Dowiedz się, jak wyrównywać wieloliniowe etykiety znaczników na osi wykresu za pomocą Aspose.Words dla .NET. |
 | [Etykieta danych wykresu](./chart-data-label/) | Dowiedz się, jak dodawać i dostosowywać etykiety danych na wykresie za pomocą Aspose.Words dla .NET, aby zapewnić dodatkowe informacje o punktach danych. |
 | [Domyślne opcje etykiet danych](./default-options-for-data-labels/) | Dowiedz się, jak ustawić domyślne opcje etykiet danych na wykresie za pomocą Aspose.Words dla .NET. |
 | [Punkt danych pojedynczego wykresu](./single-chart-data-point/) | Dowiedz się, jak dostosować pojedynczy punkt danych na wykresie za pomocą Aspose.Words dla .NET. |

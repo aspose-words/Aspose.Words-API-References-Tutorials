@@ -30,11 +30,11 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-In dit voorbeeld maken we een nieuw document en gebruiken we de DocumentBuilder om tekst toe te voegen en een lijst te maken met drie inspringingsniveaus. We hebben drie items aan de lijst toegevoegd, waarbij elk item een extra niveau aangeeft.
+In dit voorbeeld maken we een nieuw document en gebruiken we de DocumentBuilder om tekst toe te voegen en een lijst te maken met drie inspringingsniveaus. We hebben drie items aan de lijst toegevoegd, waarbij elk item een extra niveau heeft ingesprongen.
 
 ## Gebruik één spatie per niveau voor het inspringen van de lijst
 
-Zodra de inhoud is toegevoegd, kunnen we nu de inspringing van de lijsten configureren met één spatie per niveau. Hiervoor gebruiken we de klasse TxtSaveOptions en stellen we de eigenschap ListIndentation.Count in op het aantal inspringingsniveaus en de eigenschap ListIndentation.Character op het spatieteken dat moet worden gebruikt. Hier is hoe:
+Nadat de inhoud is toegevoegd, kunnen we nu de inspringing van de lijsten configureren met één spatie per niveau. Hiervoor gebruiken we de klasse TxtSaveOptions en stellen we de eigenschap ListIndentation.Count in op het aantal inspringingsniveaus en de eigenschap ListIndentation.Character op het spatieteken dat moet worden gebruikt. Hier is hoe:
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();

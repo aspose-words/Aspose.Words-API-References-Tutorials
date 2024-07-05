@@ -59,7 +59,7 @@ builder.Writeln("Auto-size cell. The size of this cell is calculated from the pr
 builder. EndTable();
 ```
 
-Εδώ χρησιμοποιούμε το εργαλείο δημιουργίας εγγράφων για να δημιουργήσουμε έναν πίνακα με τρία κελιά. Το πρώτο κελί έχει ένα προτιμώμενο πλάτος 40 σημείων, το δεύτερο κελί έχει ένα προτιμώμενο πλάτος 20% του πλάτους του πίνακα και το τρίτο κελί έχει ένα αυτόματο προτιμώμενο πλάτος που προσαρμόζεται.
+Εδώ χρησιμοποιούμε το εργαλείο δημιουργίας εγγράφων για να δημιουργήσουμε έναν πίνακα με τρία κελιά. Το πρώτο κελί έχει προτιμώμενο πλάτος 40 σημείων, το δεύτερο κελί έχει προτιμώμενο πλάτος 20% του πλάτους του πίνακα και το τρίτο κελί έχει ένα αυτόματο προτιμώμενο πλάτος που προσαρμόζεται
 
   ανάλογα με τον διαθέσιμο χώρο.
 
@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 	builder.Writeln("Cell at 20% width");
-	// Εισαγάγετε ένα κελί σε αυτόματο μέγεθος.
+	// Εισαγάγετε ένα κελί αυτόματου μεγέθους.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;

@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z danych XML w Aspose.Words dla Java
+title: Używanie danych XML w Aspose.Words dla Java
 linktitle: Korzystanie z danych XML
 second_title: Aspose.Words API przetwarzania dokumentów Java
 description: Odblokuj moc Aspose.Words dla Java. Naucz się obsługi danych XML, korespondencji seryjnej i składni wąsów dzięki samouczkom krok po kroku.

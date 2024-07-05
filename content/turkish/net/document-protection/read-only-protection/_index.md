@@ -112,4 +112,4 @@ C: Evet, Aspose.Words for .NET'i kullanarak salt okunur korumayı bir Word belge
 
 #### S: Kullanıcılar bir Word belgesinde salt okunur korumayı atlayabilir mi?
 
-C: Bir Word belgesindeki salt okunur korumanın amacı, yanlışlıkla veya yetkisiz olarak yapılan değişiklikleri caydırmak ve önlemektir. Belirli bir düzeyde koruma sağlamakla birlikte, yeterli teknik bilgiye veya düzenleme izinlerine sahip kullanıcılar tarafından bypass edilebilir. Ancak salt okunur koruma caydırıcı olur ve belgenin bütünlüğünün korunmasına yardımcı olur.
+C: Bir Word belgesindeki salt okunur korumanın amacı, yanlışlıkla veya yetkisiz olarak yapılan değişiklikleri caydırmak ve önlemektir. Belirli bir düzeyde koruma sağlamakla birlikte, yeterli teknik bilgiye veya düzenleme izinlerine sahip kullanıcılar tarafından bypass edilebilmektedir. Ancak salt okunur koruma caydırıcı olur ve belgenin bütünlüğünün korunmasına yardımcı olur.

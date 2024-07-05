@@ -40,7 +40,7 @@ Maak eerst een nieuw C#-project in Visual Studio. Voor de eenvoud kunt u een con
 1. Open Visual Studio en maak een nieuw project.
 2. Selecteer 'Console-app (.NET Core)' en klik op 'Volgende'.
 3. Geef uw project een naam en kies een locatie om het op te slaan. Klik op 'Maken'.
-4. Installeer Aspose.Words voor .NET via NuGet Package Manager. Klik met de rechtermuisknop op uw project in de Solution Explorer, selecteer 'NuGet-pakketten beheren' en zoek naar 'Apose.Words'. Installeer de nieuwste versie.
+4. Installeer Aspose.Words voor .NET via NuGet Package Manager. Klik met de rechtermuisknop op uw project in de Solution Explorer, selecteer 'NuGet-pakketten beheren' en zoek naar 'Aspose.Words'. Installeer de nieuwste versie.
 
 ## Stap 2: Initialiseer Document en DocumentBuilder
 
@@ -100,7 +100,7 @@ Dit is wat elke parameter betekent:
 - `100`: De hoogte van de afbeelding (in punten).
 - `WrapType.Square`: De tekstterugloopstijl rond de afbeelding.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Sla het document ten slotte op de gewenste locatie op.
 

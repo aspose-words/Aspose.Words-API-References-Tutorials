@@ -56,7 +56,7 @@ Most hasonlítsuk össze a dokumentumokat a Dokumentum osztály Összehasonlít�
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- A`Compare` módszer összehasonlítja az A dokumentumot a B dokumentummal, és elmenti az A dokumentum módosításait. Referenciaként megadhatja a szerző nevét és az összehasonlítás dátumát.
+ A`Compare`módszer összehasonlítja az A dokumentumot a B dokumentummal, és elmenti az A dokumentum módosításait. Referenciaként megadhatja a szerző nevét és az összehasonlítás dátumát.
 
 ## Következtetés
 
@@ -95,7 +95,7 @@ V: Az Aspose.Words for .NET-ben a Comparison Granularity használatához kövess
 2. Adja hozzá a szükséges összeállításokat a projekthez az Aspose.Words hivatkozással.
 3.  A segítségével hozza létre az összehasonlítani kívánt dokumentumokat`DocumentBuilder` osztály.
 4.  Konfigurálja az összehasonlítási beállításokat a létrehozásával`CompareOptions` objektum és beállítás a`Granularity` tulajdonság a kívánt szintre (pl.`Granularity.CharLevel` karakterszintű összehasonlításhoz).
-5.  Használja a`Compare` módszer az egyik dokumentumon, átadva a másik dokumentumot és a`CompareOptions` objektum paraméterként. Ez a módszer összehasonlítja a dokumentumokat a megadott részletesség alapján, és elmenti a módosításokat az első dokumentumban.
+5.  Használja a`Compare`módszer az egyik dokumentumon, átadva a másik dokumentumot és a`CompareOptions` objektum paraméterként. Ez a módszer összehasonlítja a dokumentumokat a megadott részletesség alapján, és elmenti a módosításokat az első dokumentumban.
 
 #### K: Milyen szintek érhetők el az Aspose.Words for .NET-ben az Összehasonlítási részletességnek?
 

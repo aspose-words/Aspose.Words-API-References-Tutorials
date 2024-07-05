@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để 
 - Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
 - Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ.
+## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
 
  Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
 
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 
 Trong hướng dẫn này, bạn đã học cách chèn biểu đồ phân tán vào tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, bạn có thể tạo tài liệu mới, chèn biểu đồ phân tán, thêm dữ liệu chuỗi với tọa độ X và Y và lưu tài liệu cùng với biểu đồ.
 
-Aspose.Words for .NET cung cấp API toàn diện cho Xử lý văn bản với các biểu đồ trong tài liệu Word. Biểu đồ tán xạ rất hữu ích cho việc hiển thị và phân tích dữ liệu với hai biến số. Với Aspose.Words cho .NET, bạn có thể dễ dàng tạo biểu đồ phân tán thể hiện mối quan hệ giữa giá trị X và Y cũng như xác định các mẫu hoặc xu hướng trong dữ liệu.
+Aspose.Words for .NET cung cấp API toàn diện cho Xử lý văn bản với các biểu đồ trong tài liệu Word. Biểu đồ tán xạ rất hữu ích cho việc hiển thị và phân tích dữ liệu với hai biến số. Với Aspose.Words for .NET, bạn có thể dễ dàng tạo biểu đồ phân tán thể hiện mối quan hệ giữa các giá trị X và Y cũng như xác định các mẫu hoặc xu hướng trong dữ liệu.
 
 Bằng cách sử dụng Aspose.Words cho .NET, bạn có thể tự động hóa quá trình tạo tài liệu bằng biểu đồ phân tán, tiết kiệm thời gian và công sức khi tạo tài liệu thủ công. Thư viện cung cấp nhiều loại biểu đồ, bao gồm biểu đồ phân tán và cung cấp nhiều tùy chọn tùy chỉnh khác nhau để điều chỉnh giao diện của biểu đồ theo nhu cầu của bạn.
 

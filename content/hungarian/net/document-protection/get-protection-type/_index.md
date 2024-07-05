@@ -50,7 +50,7 @@ Ebben a cikkben elmagyaráztuk, hogyan használható az Aspose.Words for .NET v�
 
 V: Egy dokumentum védelmi típusának lekéréséhez az Aspose.Words for .NET használatával, kövesse az alábbi lépéseket:
 1.  Töltse be a dokumentumot a gombbal`Document` osztály.
-2.  Hozzáférés a`ProtectionType` tulajdona a`Document` objektumot a védelmi típus lekéréséhez.
+2.  Hozzáférés a`ProtectionType` tulajdona a`Document`objektumot a védelmi típus lekéréséhez.
 
 #### K: Meghatározhatom, hogy egy dokumentum védett-e az űrlapok vagy űrlapmezők számára a ProtectionType tulajdonság használatával?
 

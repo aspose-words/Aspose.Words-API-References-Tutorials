@@ -63,7 +63,7 @@ pip install aspose-words
 
 3. بمجرد اكتمال التثبيت، يمكنك البدء في استخدام Aspose.Words في مشاريع Python الخاصة بك.
 
-## إجراء تحويلات المستندات
+## تنفيذ تحويل الوثيقة
 
 ### تحويل الوورد إلى PDF
 
@@ -99,7 +99,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 بصرف النظر عن Word وPDF، يدعم Aspose.Words for Python تنسيقات المستندات المختلفة، بما في ذلك HTML وTXT وEPUB والمزيد.
 
-## تخصيص تحويلات المستندات
+## تخصيص تحويل المستندات
 
 ### تطبيق التنسيق والتصميم
 
@@ -173,7 +173,7 @@ doc.styles.default_font.size = 12
 doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ```
 
-## أتمتة تحويلات المستندات
+## أتمتة تحويل المستندات
 
 ### كتابة نصوص بايثون للأتمتة
 

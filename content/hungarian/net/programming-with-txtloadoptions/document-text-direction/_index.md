@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-Ebben az oktatóanyagban az Aspose.Words for .NET-hez tartozó „Dokumentumszöveg-irány” funkcióhoz biztosított C#-forráskódot fogjuk felfedezni. Ezzel a funkcióval megadhatja a szöveg irányát a dokumentumban, ami különösen hasznos a jobbról balra írt nyelveknél, például héberül vagy arabul.
+Ebben az oktatóanyagban az Aspose.Words for .NET-hez tartozó „Dokumentumszöveg-irány” funkcióhoz biztosított C#-forráskódot fogjuk felfedezni. Ez a funkció lehetővé teszi a szöveg irányának megadását a dokumentumban, ami különösen hasznos a jobbról balra írt nyelveknél, például héberül vagy arabul.
 
 ## 1. lépés: A környezet beállítása
 
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## Következtetés
 
-Ebben az oktatóanyagban megvizsgáltuk az Aspose.Words for .NET dokumentumszöveg-irányító funkcióját. Megtanultuk, hogyan kell megadni a szöveg irányát egy dokumentumban, különösen a jobbról balra írt nyelvek esetében, mint például a héber vagy az arab.
+Ebben az oktatóanyagban megvizsgáltuk az Aspose.Words for .NET dokumentumszöveg-irányító funkcióját. Megtanultuk, hogyan kell megadni a szöveg irányát egy dokumentumban, különösen a jobbról balra írt nyelveknél, például héberül vagy arabul.
 
 Ez a funkció elengedhetetlen annak biztosításához, hogy a szöveg helyesen jelenjen meg a többnyelvű dokumentumokban. A megfelelő betöltési beállítások használatával az Aspose.Words automatikusan felismeri a szöveg irányát, és alkalmazza azt a dokumentumra.
 

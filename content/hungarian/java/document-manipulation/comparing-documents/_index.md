@@ -107,7 +107,7 @@ Igen, az Aspose.Words for Java lehetőséget biztosít a bonyolult formázású 
 
 ### Az Aspose.Words for Java alkalmas dokumentumkezelő rendszerekhez?
 
-Teljesen. Az Aspose.Words for Java dokumentum-összehasonlítási szolgáltatásai kiválóan alkalmassá teszik olyan dokumentumkezelő rendszerekben, ahol a verziókezelés és a változáskövetés döntő fontosságú.
+Teljesen. Az Aspose.Words for Java dokumentum-összehasonlítási funkciói kiválóan alkalmassá teszik olyan dokumentumkezelő rendszerekben, ahol a verziókezelés és a változáskövetés döntő fontosságú.
 
 ### Vannak korlátai a dokumentumok összehasonlításának az Aspose.Words for Java programban?
 

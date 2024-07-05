@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสารที่จะแสดงผล
- จากนั้นคุณสามารถโหลดเอกสารเพื่อแสดงผลโดยใช้`Document` ชั้นเรียน อย่าลืมระบุเส้นทางเอกสารที่ถูกต้อง
+ จากนั้นคุณสามารถโหลดเอกสารเพื่อแสดงผลโดยใช้`Document` ระดับ. อย่าลืมระบุเส้นทางเอกสารที่ถูกต้อง
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -37,7 +37,7 @@ fontSettings.SetFontsSources(updatedFontSources);
 ```
 
 ## ขั้นตอนที่ 4: ใช้การตั้งค่าแบบอักษร
- ถัดไป คุณจะต้องใช้การตั้งค่าแบบอักษรกับเอกสารของคุณโดยใช้`FontSettings` ทรัพย์สินของ`Document` ชั้นเรียน
+ ถัดไป คุณจะต้องใช้การตั้งค่าแบบอักษรกับเอกสารของคุณโดยใช้`FontSettings` ทรัพย์สินของ`Document` ระดับ.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -46,7 +46,7 @@ doc.FontSettings = fontSettings;
 ## ขั้นตอนที่ 5: บันทึกเอกสารที่แสดงผล
 สุดท้าย คุณสามารถบันทึกเอกสารที่แสดงผลลงในไฟล์ได้
 
-   ใช้`Save()` วิธีการของ`Document` ชั้นเรียน อย่าลืมระบุเส้นทางและชื่อไฟล์ที่ถูกต้อง
+   ใช้`Save()` วิธีการของ`Document` ระดับ. อย่าลืมระบุเส้นทางและชื่อไฟล์ที่ถูกต้อง
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // เพิ่มแหล่งที่มาของโฟลเดอร์ใหม่ซึ่งจะสั่งให้ Aspose.Words ค้นหาแบบอักษรในโฟลเดอร์ต่อไปนี้
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-// เพิ่มโฟลเดอร์ที่กำหนดเองซึ่งมีแบบอักษรของเราลงในรายการแหล่งแบบอักษรที่มีอยู่
+//เพิ่มโฟลเดอร์ที่กำหนดเองซึ่งมีแบบอักษรของเราลงในรายการแหล่งแบบอักษรที่มีอยู่
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 
 #### ถาม: ฉันจะตรวจสอบโฟลเดอร์แบบอักษรที่กำหนดไว้ใน Aspose.Words ได้อย่างไร
 
- หากต้องการตรวจสอบโฟลเดอร์แบบอักษรที่กำหนดไว้ใน Aspose คุณสามารถใช้ไฟล์`GetFolders` วิธีการของ`Fonts` คลาสเพื่อรับรายการโฟลเดอร์ฟอนต์ที่กำหนดค่าไว้
+ หากต้องการตรวจสอบโฟลเดอร์แบบอักษรที่กำหนดไว้ใน Aspose.Words คุณสามารถใช้ไฟล์`GetFolders` วิธีการของ`Fonts` คลาสเพื่อรับรายการโฟลเดอร์ฟอนต์ที่กำหนดค่าไว้
 
 #### ถาม: แบบอักษรของโฟลเดอร์แบบกำหนดเองมีความสำคัญมากกว่าแบบอักษรของระบบใน Aspose.Words หรือไม่
 

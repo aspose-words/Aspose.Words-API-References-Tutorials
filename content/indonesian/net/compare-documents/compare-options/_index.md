@@ -2,112 +2,131 @@
 title: Bandingkan Opsi Dalam Dokumen Word
 linktitle: Bandingkan Opsi Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk menjelaskan kode sumber C# dari Opsi Bandingkan di fitur dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara membandingkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Pastikan konsistensi dokumen dengan mudah.
 type: docs
 weight: 10
 url: /id/net/compare-documents/compare-options/
 ---
-Dalam tutorial ini, kami akan menjelaskan cara menggunakan fitur Bandingkan Opsi di dokumen Word dengan Aspose.Words untuk .NET. Ikuti langkah-langkah di bawah ini untuk memahami kode sumber dan menerapkan perubahan.
+## Perkenalan
 
-## Langkah 1: Bandingkan dokumen dengan opsi khusus
+Halo, rekan-rekan pecinta teknologi! Pernahkah Anda perlu membandingkan dua dokumen Word untuk memeriksa perbedaannya? Mungkin Anda sedang mengerjakan proyek kolaboratif dan perlu memastikan konsistensi di berbagai versi. Nah, hari ini, kita mendalami dunia Aspose.Words untuk .NET guna menunjukkan kepada Anda cara yang tepat untuk membandingkan opsi dalam dokumen Word. Tutorial ini bukan hanya tentang menulis kode tetapi memahami prosesnya dengan cara yang menyenangkan, menarik, dan mendetail. Jadi, ambil minuman favorit Anda, dan mari kita mulai!
 
- Untuk memulai, muat dua dokumen untuk dibandingkan. Dalam contoh ini, kita akan menggunakan`Clone()` metode untuk membuat salinan dokumen asli. Begini caranya:
+## Prasyarat
+
+Sebelum kita mengotori kode, pastikan kita memiliki semua yang kita butuhkan. Berikut daftar periksa singkatnya:
+
+1.  Aspose.Words untuk .NET Library: Anda harus menginstal perpustakaan Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan C# apa pun seperti Visual Studio akan berhasil.
+3. Pengetahuan Dasar C#: Pemahaman mendasar tentang pemrograman C# akan sangat membantu.
+4. Contoh Dokumen Word: Dua dokumen Word yang ingin Anda bandingkan.
+
+Jika Anda sudah siap dengan semua ini, mari beralih ke mengimpor namespace yang diperlukan!
+
+## Impor Namespace
+
+Untuk menggunakan Aspose.Words untuk .NET secara efektif, kita perlu mengimpor beberapa namespace. Berikut cuplikan kode untuk melakukan itu:
 
 ```csharp
-Document docA = new Document(MyDir + "Document.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Comparing;
+```
+
+Namespace ini menyediakan semua kelas dan metode yang kita perlukan untuk memanipulasi dan membandingkan dokumen Word.
+
+Sekarang, mari kita uraikan proses membandingkan opsi dalam dokumen Word menjadi langkah-langkah sederhana dan mudah dicerna.
+
+## Langkah 1: Siapkan Proyek Anda
+
+Hal pertama yang pertama, mari kita siapkan proyek kita di Visual Studio.
+
+1. Buat Proyek Baru: Buka Visual Studio dan buat proyek Aplikasi Konsol baru (.NET Core).
+2. Tambahkan Perpustakaan Aspose.Words: Anda dapat menambahkan perpustakaan Aspose.Words untuk .NET melalui NuGet Package Manager. Cukup cari "Aspose.Words" dan instal.
+
+## Langkah 2: Inisialisasi Dokumen
+
+Sekarang, kita perlu menginisialisasi dokumen Word kita. Ini adalah file yang akan kami bandingkan.
+
+```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+Document docA = new Document(dataDir + "Document.docx");
 Document docB = docA.Clone();
 ```
 
-## Langkah 2: Mengonfigurasi opsi perbandingan
+Dalam cuplikan ini:
+- Kami menentukan direktori tempat dokumen kami disimpan.
+- Kami memuat dokumen pertama (`docA`).
+-  Kami mengkloning`docA` untuk membuat`docB`. Dengan cara ini, kita memiliki dua dokumen identik untuk dikerjakan.
 
- Kami sekarang akan mengkonfigurasi opsi perbandingan dengan membuat a`CompareOptions` objek dan mengatur berbagai properti sesuai kebutuhan. Begini caranya:
+## Langkah 3: Konfigurasikan Opsi Bandingkan
+
+Selanjutnya, kami menyiapkan opsi yang akan menentukan cara perbandingan dilakukan.
 
 ```csharp
 CompareOptions options = new CompareOptions
 {
-IgnoreFormatting = true,
-IgnoreHeadersAndFooters = true,
-IgnoreCaseChanges = true,
-IgnoreTables = true,
-IgnoreFields = true,
-IgnoreComments = true,
-IgnoreTextboxes=true,
-IgnoreFootnotes=true
+	IgnoreFormatting = true,
+	IgnoreHeadersAndFooters = true,
+	IgnoreCaseChanges = true,
+	IgnoreTables = true,
+	IgnoreFields = true,
+	IgnoreComments = true,
+	IgnoreTextboxes = true,
+	IgnoreFootnotes = true
 };
 ```
 
-## Langkah 3: Bandingkan dokumen dengan opsi khusus
+Inilah yang dilakukan setiap opsi:
+- IgnoreFormatting: Mengabaikan perubahan format apa pun.
+- IgnoreHeadersAndFooters: Mengabaikan perubahan pada header dan footer.
+- IgnoreCaseChanges: Mengabaikan perubahan huruf besar-kecil dalam teks.
+- IgnoreTables: Mengabaikan perubahan dalam tabel.
+- IgnoreFields: Mengabaikan perubahan pada kolom.
+- IgnoreComments: Mengabaikan perubahan dalam komentar.
+- IgnoreTextboxes: Mengabaikan perubahan di kotak teks.
+- IgnoreFootnotes: Mengabaikan perubahan pada catatan kaki.
 
- Kami sekarang akan menggunakan`Compare()` metode meneruskan opsi khusus untuk membandingkan kedua dokumen. Cara ini akan menandai perubahan pada dokumen asli. Begini caranya:
+## Langkah 4: Bandingkan Dokumen
+
+Sekarang kita sudah menyiapkan dokumen dan opsi, mari kita bandingkan.
 
 ```csharp
-// Bandingkan dokumen dengan opsi khusus
 docA.Compare(docB, "user", DateTime.Now, options);
-
-// Periksa apakah dokumennya sama
-Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal": "Documents are not equal");
 ```
 
-### Contoh kode sumber untuk Bandingkan Opsi menggunakan Aspose.Words untuk .NET
+Di baris ini:
+-  Kami membandingkan`docA` dengan`docB`.
+- Kami menentukan nama pengguna ("pengguna") dan tanggal dan waktu saat ini.
 
-Berikut source code lengkap fitur Compare Options dengan Aspose.Words for .NET:
+## Langkah 5: Periksa dan Tampilkan Hasil
+
+Terakhir, kami memeriksa hasil perbandingan dan menampilkan apakah dokumen-dokumen tersebut sama atau tidak.
 
 ```csharp
-
-	Document docA = new Document(MyDir + "Document.docx");
-	Document docB = docA.Clone();
-
-	CompareOptions options = new CompareOptions
-	{
-		IgnoreFormatting = true,
-		IgnoreHeadersAndFooters = true,
-		IgnoreCaseChanges = true,
-		IgnoreTables = true,
-		IgnoreFields = true,
-		IgnoreComments = true,
-		IgnoreTextboxes = true,
-		IgnoreFootnotes = true
-	};
-
-	docA.Compare(docB, "user", DateTime.Now, options);
-
-	Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
-
+Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-Dengan kode ini Anda dapat membandingkan dua dokumen menggunakan opsi khusus untuk mengabaikan elemen tertentu saat membandingkan dengan Aspose.Words untuk .NET.
+ Jika`docA.Revisions.Count` adalah nol, berarti tidak ada perbedaan antar dokumen. Jika tidak, hal ini menunjukkan adanya beberapa perbedaan.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita mempelajari cara menggunakan Opsi Bandingkan di Aspose.Words untuk .NET untuk menyesuaikan proses perbandingan saat membandingkan dua dokumen. Dengan menentukan opsi berbeda, Anda dapat mengabaikan elemen tertentu dan membuat proses perbandingan lebih fleksibel. Fitur ini memungkinkan Anda memiliki kontrol lebih besar terhadap proses perbandingan, menyesuaikannya dengan kebutuhan spesifik Anda. Aspose.Words untuk .NET memberikan kemampuan perbandingan dokumen yang kuat, sehingga memudahkan untuk mengidentifikasi perbedaan antara dokumen sambil mengabaikan elemen tertentu sesuai kebutuhan.
+Dan itu dia! Anda telah berhasil membandingkan dua dokumen Word menggunakan Aspose.Words untuk .NET. Proses ini bisa menjadi penyelamat nyata ketika Anda mengerjakan proyek besar dan perlu memastikan konsistensi dan akurasi. Ingat, kuncinya adalah menyiapkan opsi perbandingan dengan hati-hati untuk menyesuaikan perbandingan dengan kebutuhan spesifik Anda. Selamat membuat kode!
 
-### FAQ
+## FAQ
 
-#### T: Apa tujuan menggunakan Opsi Bandingkan di Aspose.Words untuk .NET?
+### Bisakah saya membandingkan lebih dari dua dokumen sekaligus?  
+Aspose.Words untuk .NET membandingkan dua dokumen sekaligus. Untuk membandingkan beberapa dokumen, Anda dapat melakukannya secara berpasangan.
 
-J: Opsi Bandingkan di Aspose.Words untuk .NET memungkinkan Anda menyesuaikan proses perbandingan saat membandingkan dua dokumen. Dengan opsi ini, Anda bisa menentukan elemen mana yang akan diabaikan selama perbandingan, seperti perubahan format, header dan footer, tabel, bidang, komentar, kotak teks, dan catatan kaki.
+### Bagaimana cara mengabaikan perubahan pada gambar?  
+ Anda dapat mengonfigurasi`CompareOptions` untuk mengabaikan berbagai elemen, tetapi mengabaikan gambar secara khusus memerlukan penanganan khusus.
 
-#### T: Bagaimana cara menggunakan Opsi Bandingkan di Aspose.Words untuk .NET?
+### Bisakah saya mendapatkan laporan rinci tentang perbedaannya?  
+Ya, Aspose.Words memberikan informasi revisi terperinci yang dapat Anda akses secara terprogram.
 
-J: Untuk menggunakan Opsi Bandingkan di Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
-1. Muat dua dokumen yang ingin Anda bandingkan ke dalam objek Dokumen terpisah.
-2.  Menggunakan`Clone()` metode untuk membuat salinan dokumen asli.
-3.  Membuat`CompareOptions` objek dan atur propertinya untuk menyesuaikan proses perbandingan. Anda dapat menentukan elemen mana yang diabaikan selama perbandingan.
-4.  Menggunakan`Compare()` metode pada salah satu dokumen dan meneruskan dokumen lainnya dan`CompareOptions` objek sebagai parameter. Cara ini akan membandingkan dokumen berdasarkan opsi yang ditentukan dan menandai perubahan pada dokumen asli.
-5.  Periksalah`Revisions` milik dokumen asli. Jika hitungannya nol, berarti dokumennya identik, dengan mempertimbangkan opsi yang ditentukan.
+### Apakah mungkin untuk membandingkan dokumen yang dilindungi kata sandi?  
+Ya, tetapi Anda perlu membuka kunci dokumen terlebih dahulu menggunakan kata sandi yang sesuai.
 
-#### T: Apa saja opsi umum yang tersedia di CompareOptions?
-
-J: Opsi umum yang tersedia di CompareOptions meliputi:
-- `IgnoreFormatting`: Mengabaikan perubahan format.
-- `IgnoreHeadersAndFooters`: Mengabaikan perubahan pada header dan footer.
-- `IgnoreCaseChanges`: Mengabaikan perubahan huruf besar/kecil.
-- `IgnoreTables`: Mengabaikan perubahan dalam tabel.
-- `IgnoreFields`: Mengabaikan perubahan pada kolom.
-- `IgnoreComments`: Mengabaikan perubahan dalam komentar.
-- `IgnoreTextboxes`Mengabaikan perubahan di kotak teks.
-- `IgnoreFootnotes`: Mengabaikan perubahan pada catatan kaki.
-
-#### T: Dapatkah saya menggunakan opsi khusus untuk elemen tertentu selama perbandingan dokumen?
-
- J: Ya, Anda dapat menggunakan opsi khusus untuk elemen tertentu selama perbandingan dokumen. Dengan mengatur properti dari`CompareOptions` objek yang sesuai, Anda dapat memilih elemen mana yang diabaikan dan mana yang dipertimbangkan selama perbandingan.
+### Di mana saya dapat menemukan lebih banyak contoh dan dokumentasi?  
+ Anda dapat menemukan lebih banyak contoh dan dokumentasi terperinci di[Aspose.Words untuk Dokumentasi .NET](https://reference.aspose.com/words/net/).

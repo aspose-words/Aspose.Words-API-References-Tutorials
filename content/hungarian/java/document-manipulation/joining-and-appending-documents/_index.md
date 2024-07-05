@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Hozzáfűzése oldalszám-konverziókkal
+### Hozzáfűzés oldalszám-konverzióval
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -132,7 +132,7 @@ Az Aspose.Words for Java rugalmas és hatékony eszközöket biztosít a dokumen
 
 ### Mi az a Smart Style viselkedés?
 
- A Smart Style Behavior segít megőrizni a konzisztens stílusokat a dokumentumok csatolásakor. Használd vele`ImportFormatOptions` a jobb eredmények érdekében.
+ A Smart Style Behavior segít megőrizni a konzisztens stílusokat a dokumentumok csatolásakor. Használd vele`ImportFormatOptions` jobb eredmények érdekében.
 
 ### Hogyan kezelhetem a szövegdobozokat dokumentumok csatolásakor?
 

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tạo Tài liệu mới và DocumentBuilder
- Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder` đối tượng làm việc với tài liệu.
+ Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder`đối tượng làm việc với tài liệu.
 
 ```csharp
 Document doc = new Document();
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 Đó là nó! Bạn đã thêm và tùy chỉnh thành công nhãn dữ liệu trong biểu đồ bằng Aspose.Words for .NET.
 
 ## Phần kết luận
-Trong hướng dẫn này, bạn đã học cách thêm và tùy chỉnh nhãn dữ liệu trong biểu đồ bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước, bạn có thể chèn biểu đồ, truy cập bộ sưu tập nhãn dữ liệu và sửa đổi các thuộc tính để tùy chỉnh hình thức của nhãn dữ liệu. Aspose.Words for .NET cung cấp một API mạnh mẽ để Xử lý Từ bằng các tài liệu và biểu đồ Word, cho phép bạn tạo các biểu đồ mang tính thông tin và hấp dẫn trực quan với các nhãn dữ liệu tùy chỉnh.
+Trong hướng dẫn này, bạn đã học cách thêm và tùy chỉnh nhãn dữ liệu trong biểu đồ bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước, bạn có thể chèn biểu đồ, truy cập bộ sưu tập nhãn dữ liệu và sửa đổi các thuộc tính để tùy chỉnh giao diện của nhãn dữ liệu. Aspose.Words for .NET cung cấp một API mạnh mẽ để Xử lý Từ bằng các tài liệu và biểu đồ Word, cho phép bạn tạo các biểu đồ mang tính thông tin và hấp dẫn trực quan với các nhãn dữ liệu tùy chỉnh.
 
 ### Câu hỏi thường gặp
 

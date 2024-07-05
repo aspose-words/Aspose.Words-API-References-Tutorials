@@ -2,112 +2,131 @@
 title: Porovnat možnosti v dokumentu aplikace Word
 linktitle: Porovnat možnosti v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce vysvětlující zdrojový kód C# možností porovnání ve funkci dokumentu aplikace Word s Aspose.Words pro .NET.
+description: Naučte se porovnávat dokumenty aplikace Word pomocí Aspose.Words for .NET pomocí našeho podrobného průvodce. Zajistěte konzistenci dokumentu bez námahy.
 type: docs
 weight: 10
 url: /cs/net/compare-documents/compare-options/
 ---
-tomto tutoriálu vysvětlíme, jak používat možnosti porovnání v dokumentu aplikace Word s Aspose.Words pro .NET. Chcete-li porozumět zdrojovému kódu a použít změny, postupujte podle následujících kroků.
+## Úvod
 
-## Krok 1: Porovnejte dokumenty s vlastními možnostmi
+Ahoj, kolegové tech nadšenci! Potřebovali jste někdy porovnat dva dokumenty aplikace Word, abyste zjistili rozdíly? Možná pracujete na společném projektu a potřebujete zajistit konzistenci napříč více verzemi. No, dnes se ponoříme do světa Aspose.Words pro .NET, abychom vám ukázali, jak přesně porovnávat možnosti v dokumentu aplikace Word. Tento tutoriál není jen o psaní kódu, ale o porozumění procesu zábavným, poutavým a podrobným způsobem. Takže si vezměte svůj oblíbený nápoj a můžeme začít!
 
- Chcete-li začít, načtěte dva dokumenty k porovnání. V tomto příkladu použijeme`Clone()` způsob vytvoření kopie původního dokumentu. Zde je postup:
+## Předpoklady
+
+Než si ušpiníme ruce kódem, ujistěte se, že máme vše, co potřebujeme. Zde je rychlý kontrolní seznam:
+
+1.  Knihovna Aspose.Words for .NET: Musíte mít nainstalovanou knihovnu Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Postačí jakékoli vývojové prostředí C#, jako je Visual Studio.
+3. Základní znalost C#: Základní znalost programování v C# bude užitečná.
+4. Ukázkové dokumenty aplikace Word: Dva dokumenty aplikace Word, které chcete porovnat.
+
+Pokud jste na to všechno připraveni, přejděme k importu potřebných jmenných prostorů!
+
+## Importovat jmenné prostory
+
+Abychom mohli Aspose.Words for .NET efektivně používat, musíme importovat několik jmenných prostorů. Zde je fragment kódu, jak to udělat:
 
 ```csharp
-Document docA = new Document(MyDir + "Document.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Comparing;
+```
+
+Tyto jmenné prostory poskytují všechny třídy a metody, které potřebujeme k manipulaci a porovnávání dokumentů aplikace Word.
+
+Nyní si rozeberme proces porovnávání možností v dokumentu aplikace Word do jednoduchých, stravitelných kroků.
+
+## Krok 1: Nastavte svůj projekt
+
+Nejprve nastavíme náš projekt ve Visual Studiu.
+
+1. Vytvoření nového projektu: Otevřete Visual Studio a vytvořte nový projekt Console App (.NET Core).
+2. Přidat knihovnu Aspose.Words: Knihovnu Aspose.Words for .NET můžete přidat pomocí Správce balíčků NuGet. Stačí vyhledat "Aspose.Words" a nainstalovat.
+
+## Krok 2: Inicializujte dokumenty
+
+Nyní musíme inicializovat naše dokumenty Word. Toto jsou soubory, které budeme porovnávat.
+
+```csharp
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+Document docA = new Document(dataDir + "Document.docx");
 Document docB = docA.Clone();
 ```
 
-## Krok 2: Konfigurace možností porovnání
+V tomto úryvku:
+- Určíme adresář, kde jsou uloženy naše dokumenty.
+- Načteme první dokument (`docA`).
+-  Klonujeme`docA` vytvořit`docB`. Tímto způsobem máme dva stejné dokumenty, se kterými můžeme pracovat.
 
- Nyní nakonfigurujeme možnosti porovnání vytvořením a`CompareOptions` objekt a nastavení různých vlastností podle potřeby. Zde je postup:
+## Krok 3: Nakonfigurujte možnosti porovnání
+
+Dále nastavíme možnosti, které budou určovat, jak bude porovnání provedeno.
 
 ```csharp
 CompareOptions options = new CompareOptions
 {
-IgnoreFormatting = true,
-IgnoreHeadersAndFooters = true,
-IgnoreCaseChanges = true,
-IgnoreTables = true,
-IgnoreFields = true,
-IgnoreComments = true,
-IgnoreTextboxes=true,
-IgnoreFootnotes=true
+	IgnoreFormatting = true,
+	IgnoreHeadersAndFooters = true,
+	IgnoreCaseChanges = true,
+	IgnoreTables = true,
+	IgnoreFields = true,
+	IgnoreComments = true,
+	IgnoreTextboxes = true,
+	IgnoreFootnotes = true
 };
 ```
 
-## Krok 3: Porovnejte dokumenty s vlastními možnostmi
+Co každá možnost dělá:
+- IgnoreFormatting: Ignoruje všechny změny formátování.
+- IgnoreHeadersAndFooters: Ignoruje změny v záhlaví a zápatí.
+- IgnoreCaseChanges: Ignoruje změny velkých a malých písmen v textu.
+- IgnoreTables: Ignoruje změny v tabulkách.
+- IgnoreFields: Ignoruje změny v polích.
+- IgnoreComments: Ignoruje změny v komentářích.
+- IgnoreTextboxes: Ignoruje změny v textových polích.
+- IgnoreFootnotes: Ignoruje změny v poznámkách pod čarou.
 
- Nyní použijeme`Compare()` metoda předávání vlastních možností pro porovnání dvou dokumentů. Tato metoda označí změny v původním dokumentu. Zde je postup:
+## Krok 4: Porovnejte dokumenty
+
+Nyní, když máme nastavené dokumenty a možnosti, pojďme je porovnat.
 
 ```csharp
-// Porovnejte dokumenty s vlastními možnostmi
 docA.Compare(docB, "user", DateTime.Now, options);
-
-// Zkontrolujte, zda jsou dokumenty stejné
-Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal": "Documents are not equal");
 ```
 
-### Příklad zdrojového kódu pro možnosti porovnání pomocí Aspose.Words pro .NET
+V tomto řádku:
+-  Srovnáváme`docA` s`docB`.
+- Uvádíme uživatelské jméno ("uživatel") a aktuální datum a čas.
 
-Zde je úplný zdrojový kód funkce Porovnat možnosti s Aspose.Words pro .NET:
+## Krok 5: Kontrola a zobrazení výsledků
+
+Nakonec zkontrolujeme výsledky porovnání a zobrazíme, zda jsou dokumenty stejné nebo ne.
 
 ```csharp
-
-	Document docA = new Document(MyDir + "Document.docx");
-	Document docB = docA.Clone();
-
-	CompareOptions options = new CompareOptions
-	{
-		IgnoreFormatting = true,
-		IgnoreHeadersAndFooters = true,
-		IgnoreCaseChanges = true,
-		IgnoreTables = true,
-		IgnoreFields = true,
-		IgnoreComments = true,
-		IgnoreTextboxes = true,
-		IgnoreFootnotes = true
-	};
-
-	docA.Compare(docB, "user", DateTime.Now, options);
-
-	Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
-
+Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-S tímto kódem můžete porovnat dva dokumenty pomocí vlastních možností ignorovat specifické prvky při porovnávání s Aspose.Words pro .NET.
+ Li`docA.Revisions.Count` je nula, znamená to, že mezi dokumenty nejsou žádné rozdíly. Jinak to naznačuje, že existují určité rozdíly.
 
 ## Závěr
 
-tomto tutoriálu jsme se naučili, jak používat možnosti porovnání v Aspose.Words pro .NET k přizpůsobení procesu porovnání při porovnávání dvou dokumentů. Zadáním různých možností můžete ignorovat konkrétní prvky a učinit proces porovnávání flexibilnějším. Tato funkce vám umožňuje mít větší kontrolu nad procesem porovnání a přizpůsobit jej vašim konkrétním požadavkům. Aspose.Words for .NET poskytuje výkonné možnosti porovnávání dokumentů, což usnadňuje identifikaci rozdílů mezi dokumenty, přičemž podle potřeby ignoruje určité prvky.
+A tady to máte! Úspěšně jste porovnali dva dokumenty aplikace Word pomocí Aspose.Words for .NET. Tento proces může být skutečným zachráncem, když pracujete na velkých projektech a potřebujete zajistit konzistenci a přesnost. Pamatujte, že klíčem je pečlivě nastavit možnosti porovnání, aby bylo srovnání přizpůsobeno vašim konkrétním potřebám. Šťastné kódování!
 
-### FAQ
+## FAQ
 
-#### Otázka: Jaký je účel použití Možnosti porovnání v Aspose.Words pro .NET?
+### Mohu porovnat více než dva dokumenty najednou?  
+Aspose.Words for .NET porovnává dva dokumenty najednou. Chcete-li porovnat více dokumentů, můžete to udělat párově.
 
-Odpověď: Možnosti porovnání v Aspose.Words pro .NET vám umožňují přizpůsobit proces porovnání při porovnávání dvou dokumentů. Pomocí těchto voleb můžete určit, které prvky se mají během porovnávání ignorovat, jako jsou změny formátování, záhlaví a zápatí, tabulky, pole, komentáře, textová pole a poznámky pod čarou.
+### Jak mohu ignorovat změny v obrázcích?  
+ Můžete nakonfigurovat`CompareOptions` ignorovat různé prvky, ale ignorování obrázků konkrétně vyžaduje vlastní manipulaci.
 
-#### Otázka: Jak mohu použít možnosti porovnání v Aspose.Words pro .NET?
+### Mohu získat podrobnou zprávu o rozdílech?  
+Ano, Aspose.Words poskytuje podrobné informace o revizi, ke kterým můžete přistupovat programově.
 
-A: Chcete-li použít možnosti porovnání v Aspose.Words pro .NET, postupujte takto:
-1. Vložte dva dokumenty, které chcete porovnat, do samostatných objektů dokumentu.
-2.  Použijte`Clone()` způsob vytvoření kopie původního dokumentu.
-3.  Vytvořit`CompareOptions` objekt a nastavte jeho vlastnosti pro přizpůsobení procesu porovnávání. Můžete určit, které prvky se mají během porovnávání ignorovat.
-4.  Použijte`Compare()` metoda na jednom z dokumentů a předat druhý dokument a`CompareOptions` objekt jako parametry. Tato metoda porovná dokumenty na základě zadaných možností a označí změny v původním dokumentu.
-5.  Zkontrolovat`Revisions` vlastnost původního dokumentu. Pokud je počet nula, znamená to, že dokumenty jsou s ohledem na zadané možnosti totožné.
+### Je možné porovnat dokumenty chráněné heslem?  
+Ano, ale musíte nejprve odemknout dokumenty pomocí příslušného hesla.
 
-#### Otázka: Jaké jsou běžné možnosti dostupné v CompareOptions?
-
-Odpověď: Mezi běžné možnosti dostupné v CompareOptions patří:
-- `IgnoreFormatting`: Ignoruje změny ve formátování.
-- `IgnoreHeadersAndFooters`: Ignoruje změny v záhlaví a zápatí.
-- `IgnoreCaseChanges`: Ignoruje změny velkých a malých písmen (velká/malá písmena).
-- `IgnoreTables`: Ignoruje změny v tabulkách.
-- `IgnoreFields`: Ignoruje změny v polích.
-- `IgnoreComments`: Ignoruje změny v komentářích.
-- `IgnoreTextboxes`Ignoruje změny v textových polích.
-- `IgnoreFootnotes`: Ignoruje změny v poznámkách pod čarou.
-
-#### Otázka: Mohu použít vlastní možnosti pro konkrétní prvky během porovnávání dokumentů?
-
- Odpověď: Ano, během porovnávání dokumentů můžete použít vlastní volby pro konkrétní prvky. Nastavením vlastností`CompareOptions` podle toho si můžete vybrat, které prvky ignorovat a které vzít v úvahu při porovnávání.
+### Kde najdu další příklady a dokumentaci?  
+ Další příklady a podrobnou dokumentaci naleznete na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/).

@@ -107,7 +107,7 @@ para.remove();
 // وسيتم عرضه كمراجعة في برنامج Microsoft Word، حتى نقبل جميع المراجعات أو نرفضها.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// تتم إزالة فقرة المراجعة المحذوفة بمجرد قبول التغييرات.
+// تتم إزالة فقرة حذف المراجعة بمجرد قبول التغييرات.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //كان فارغا

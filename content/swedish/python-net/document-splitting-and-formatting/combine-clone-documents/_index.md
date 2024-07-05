@@ -38,7 +38,7 @@ dst_doc.save("combined_document.docx")
 
 ### Metod 2: Använd Document.append_document()
 
- Aspose.Words erbjuder också en bekväm metod`append_document()` för att kombinera dokument:
+ Aspose.Words ger också en bekväm metod`append_document()` för att kombinera dokument:
 
 ```python
 import aspose.words as aw

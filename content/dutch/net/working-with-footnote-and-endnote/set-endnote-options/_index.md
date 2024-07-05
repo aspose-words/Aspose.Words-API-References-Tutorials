@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Stap 4: Eindnootopties instellen
 
- Toegang krijgen tot`EndnoteOptions` eigenschap van het document om de eindnootopties te wijzigen. In dit voorbeeld stellen we de herstartregel in op herstarten op elke pagina en de positie aan het einde van de sectie:
+ Toegang krijgen tot`EndnoteOptions`eigenschap van het document om de eindnootopties te wijzigen. In dit voorbeeld stellen we de herstartregel in op herstarten op elke pagina en de positie aan het einde van de sectie:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -81,7 +81,7 @@ U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw spec
 
 #### Vraag: Hoe kan ik eindnoten opmaken in Aspose.Words?
 
-A: Om eindnoten op te maken in Aspose.Words, kunt u de`EndnoteOptions` klasse en de`SeparatorNoteTextStyle` eigendom. Met deze eigenschap kunt u de letterstijl, grootte, kleur, enz. voor eindnoten opgeven.
+ A: Om eindnoten op te maken in Aspose.Words, kunt u de`EndnoteOptions` klasse en de`SeparatorNoteTextStyle` eigendom. Met deze eigenschap kunt u de letterstijl, grootte, kleur, enz. voor eindnoten opgeven.
 
 #### Vraag: Is het mogelijk om de nummering van eindnoten in een document aan te passen?
 
@@ -89,7 +89,7 @@ A: Om eindnoten op te maken in Aspose.Words, kunt u de`EndnoteOptions` klasse en
 
 #### Vraag: Hoe kan ik eindnoten in een document plaatsen?
 
- A: Om eindnoten in een document te plaatsen, kunt u de`Position` eigendom van de`EndnoteOptions` klas. U kunt opgeven of eindnoten onderaan elke pagina, aan het einde van elke sectie of aan het einde van het document moeten worden geplaatst.
+A: Om eindnoten in een document te plaatsen, kunt u de`Position` eigendom van de`EndnoteOptions` klas. U kunt opgeven of eindnoten onderaan elke pagina, aan het einde van elke sectie of aan het einde van het document moeten worden geplaatst.
 
 #### Vraag: Kan ik het nummeringsformaat van de eindnoten aanpassen?
 
@@ -97,4 +97,4 @@ A: Om eindnoten op te maken in Aspose.Words, kunt u de`EndnoteOptions` klasse en
 
 #### Vraag: Is het mogelijk om de eindnootnummering tussen secties van een document voort te zetten?
 
-A: Ja, het is mogelijk om de eindnootnummering tussen secties van een document voort te zetten. Gebruik de`RestartRule` eigendom van de`EndnoteOptions` klasse en stel deze in`RestartContinuous` om de nummering tussen secties door te laten gaan.
+ A: Ja, het is mogelijk om de eindnootnummering tussen secties van een document voort te zetten. Gebruik de`RestartRule` eigendom van de`EndnoteOptions` klasse en stel deze in`RestartContinuous` om de nummering tussen secties door te laten gaan.

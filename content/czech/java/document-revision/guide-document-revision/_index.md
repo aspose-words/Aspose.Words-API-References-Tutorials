@@ -21,7 +21,7 @@ Revize dokumentu se týká procesu provádění změn v dokumentu, ať už jde o
 
 Revize dokumentu hraje zásadní roli při zajišťování přesnosti, konzistence a kvality informací prezentovaných v dokumentu. V nastaveních spolupráce umožňuje členům týmu navrhovat úpravy, žádat o schválení a bezproblémově začlenit zpětnou vazbu. Tento iterativní proces nakonec vede k vyleštěnému a bezchybnému dokumentu.
 
-### 1.3 Problémy při nakládání s revizemi dokumentů
+### 1.3 Výzvy při nakládání s revizemi dokumentů
 
 Správa revizí dokumentů může být náročná, zejména při práci s velkými dokumenty nebo s více přispěvateli. Sledování změn, řešení konfliktů a údržba historie verzí jsou úkoly, které mohou být časově náročné a náchylné k chybám.
 
@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### Odmítnutí recenzí:
+#### Odmítnutí revizí:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");

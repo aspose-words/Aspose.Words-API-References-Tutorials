@@ -57,7 +57,7 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Comment puis-je configurer le nombre de colonnes pour les notes de bas de page dans Aspose.Words ?
 
- R : Pour configurer le nombre de colonnes pour les notes de bas de page dans Aspose.Words, vous devez utiliser le`FootnoteOptions` la classe et le`ColumnsCount` propriété. Vous pouvez définir cette propriété sur le nombre de colonnes souhaité.
+R : Pour configurer le nombre de colonnes pour les notes de bas de page dans Aspose.Words, vous devez utiliser le`FootnoteOptions` la classe et le`ColumnsCount` propriété. Vous pouvez définir cette propriété sur le nombre de colonnes souhaité.
 
 #### Q : Quels sont les avantages de la configuration de colonnes de notes de bas de page ?
 

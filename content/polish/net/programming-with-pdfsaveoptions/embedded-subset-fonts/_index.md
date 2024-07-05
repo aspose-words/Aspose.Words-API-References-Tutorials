@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-To wszystko ! Pomyślnie osadziłeś podzbiory czcionek w dokumencie i wygenerowałeś plik PDF zawierający tylko glify użyte w dokumencie za pomocą Aspose.Words dla .NET.
+To wszystko ! Pomyślnie osadziłeś podzestawy czcionek w dokumencie i wygenerowałeś plik PDF zawierający tylko glify użyte w dokumencie za pomocą Aspose.Words dla .NET.
 
 ### Przykładowy kod źródłowy do osadzania podzbiorów czcionek w Aspose.Words dla .NET
 

@@ -50,7 +50,7 @@ Ez a kód „Rács”-ra állítja az elrendezési módot, majd megadja a soronk
 	Document doc = new Document(dataDir + "Document.docx");
 
 	// Állítsa be egy szakasz elrendezési módját, amely lehetővé teszi a dokumentumrács viselkedésének meghatározását.
-	// Vegye figyelembe, hogy a Dokumentumrács fül láthatóvá válik az MS Word Oldalbeállítás párbeszédpaneljén.
+	// Vegye figyelembe, hogy a Dokumentumrács fül láthatóvá válik az MS Word Oldalbeállítás párbeszédpaneljén
 	// ha valamelyik ázsiai nyelvet szerkesztőnyelvként határozzuk meg.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;

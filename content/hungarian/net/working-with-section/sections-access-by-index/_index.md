@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### K: Hogyan módosíthatom a szakaszbeállításokat az Aspose.Words for .NET-ben?
 
- V: Egy szakasz beállításainak módosításához használhatja a szakasz tulajdonságait.`PageSetup`tárgy. Ebben a példában megváltoztatjuk a margókat, a fejléc és lábléc távolságát, valamint a szöveg oszlopközét.
+ V: Egy szakasz beállításainak módosításához használhatja a szakasz tulajdonságait`PageSetup`tárgy. Ebben a példában megváltoztatjuk a margókat, a fejléc és lábléc távolságát, valamint a szöveg oszlopközét.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm

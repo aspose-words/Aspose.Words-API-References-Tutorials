@@ -88,7 +88,7 @@ Siga estas etapas para renomear campos de mesclagem em seu documento usando Aspo
 
 #### P: Como posso renomear campos mesclados em um documento do Word usando Aspose.Words for .NET?
 
- R: Para renomear campos mesclados em um documento do Word usando Aspose.Words for .NET, você pode percorrer os campos do documento usando o`FieldMergingArgs` classe e use o`FieldMergingArgs.FieldName` método para renomear campos.
+ R: Para renomear campos mesclados em um documento do Word usando Aspose.Words for .NET, você pode percorrer os campos do documento usando o`FieldMergingArgs` classe e use o`FieldMergingArgs.FieldName` método para renomear o campo.
 
 #### P: É possível renomear apenas alguns campos mesclados em um documento do Word com Aspose.Words for .NET?
 

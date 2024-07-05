@@ -75,7 +75,7 @@ A: Om wachtwoordbeveiliging toe te passen op een Word-document met Aspose.Words 
 
 #### Vraag: Wat is het doel van de parameter ProtectionType in de Protect-methode?
 
- EEN: De`ProtectionType` parameters in de`Protect` Met de Aspose.Words-methode voor .NET kunt u het type beveiliging opgeven dat op het document moet worden toegepast. In het geval van wachtwoordbeveiliging stelt u de`ProtectionType` naar`NoProtection` om aan te geven dat het document met een wachtwoord is beveiligd.
+ EEN: De`ProtectionType` parameter in de`Protect` Met de Aspose.Words-methode voor .NET kunt u het type beveiliging opgeven dat op het document moet worden toegepast. In het geval van wachtwoordbeveiliging stelt u de`ProtectionType` naar`NoProtection` om aan te geven dat het document met een wachtwoord is beveiligd.
 
 #### Vraag: Kan ik de wachtwoordbeveiliging van een Word-document verwijderen met Aspose.Words voor .NET?
 

@@ -141,7 +141,7 @@ Aspose.Words for Python, Word belgelerini zahmetsizce değiştirmenizi ve deği�
 
 Evet, Aspose.Words for Python API'sini kullanarak kalın, renk ve yazı tipi boyutu gibi metin formatlarını değiştirebilirsiniz.
 
-### Belgedeki belirli bir metni değiştirmek mümkün mü?
+### Belgedeki belirli bir metni değiştirmek mümkün müdür?
 
  Elbette kullanabilirsiniz`replace` Belgedeki belirli metni değiştirme yöntemi.
 

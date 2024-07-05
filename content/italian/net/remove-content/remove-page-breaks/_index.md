@@ -61,7 +61,7 @@ Lo snippet di codice sopra scorre tutti i paragrafi del documento e controlla se
 
 ## Passaggio 4: salvataggio del documento modificato
 
-Dopo aver rimosso le interruzioni di pagina, dobbiamo salvare il documento modificato. Il codice seguente mostra come salvare il documento modificato in una posizione specifica:
+Dopo aver rimosso le interruzioni di pagina, dobbiamo salvare il documento modificato. Il codice seguente illustra come salvare il documento modificato in una posizione specifica:
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

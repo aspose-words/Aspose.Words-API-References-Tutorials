@@ -2,115 +2,130 @@
 title: Định dạng danh sách đa cấp trong tài liệu Word
 linktitle: Định dạng danh sách đa cấp trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tạo danh sách nhiều cấp độ và áp dụng định dạng tùy chỉnh trong tài liệu word với Aspose.Words for .NET.
+description: Tìm hiểu cách nắm vững định dạng danh sách đa cấp trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Nâng cao cấu trúc tài liệu một cách dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/document-formatting/multilevel-list-formatting/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách sử dụng tính năng định dạng danh sách đa cấp trong tài liệu word với Aspose.Words cho .NET. Hãy làm theo các bước bên dưới để hiểu mã nguồn và áp dụng các thay đổi.
+## Giới thiệu
 
-## Bước 1: Tạo và cấu hình tài liệu
+Nếu bạn là nhà phát triển đang tìm cách tự động hóa việc tạo và định dạng tài liệu Word thì Aspose.Words for .NET là một công cụ thay đổi cuộc chơi. Hôm nay, chúng ta sẽ đi sâu vào cách bạn có thể nắm vững cách định dạng danh sách đa cấp bằng cách sử dụng thư viện mạnh mẽ này. Cho dù bạn đang tạo tài liệu có cấu trúc, phác thảo báo cáo hay tạo tài liệu kỹ thuật, danh sách đa cấp có thể nâng cao khả năng đọc và tổ chức nội dung của bạn.
 
-Để bắt đầu, hãy tạo một tài liệu mới và đối tượng DocumentBuilder liên quan. Đây là cách thực hiện:
+## Điều kiện tiên quyết
+
+Trước khi chúng ta đi vào chi tiết quan trọng, hãy đảm bảo bạn có mọi thứ bạn cần để làm theo hướng dẫn này.
+
+1. Môi trường phát triển: Đảm bảo bạn đã thiết lập môi trường phát triển. Visual Studio là một lựa chọn tuyệt vời.
+2.  Aspose.Words for .NET: Tải xuống và cài đặt thư viện Aspose.Words for .NET. Bạn có thể lấy nó[đây](https://releases.aspose.com/words/net/).
+3.  Giấy phép: Lấy giấy phép tạm thời nếu bạn không có giấy phép đầy đủ. Hiểu rồi[đây](https://purchase.aspose.com/temporary-license/).
+4. Kiến thức cơ bản về C#: Làm quen với C# và .NET framework sẽ có lợi.
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words cho .NET trong dự án của bạn, bạn sẽ cần nhập các vùng tên cần thiết. Đây là cách bạn làm điều đó:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
 
-## Bước 2: Định dạng danh sách đa cấp
+## Bước 1: Khởi tạo tài liệu và trình tạo của bạn
 
-Bây giờ chúng ta sẽ áp dụng định dạng danh sách đa cấp bằng cách sử dụng các phương thức có sẵn trong đối tượng DocumentBuilder. Đây là cách thực hiện:
-
-```csharp
-builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-
-builder.ListFormat.ListIndent();
-builder.Writeln("Element 2.1");
-builder.Writeln("Element 2.2");
-
-builder.ListFormat.ListIndent();
-builder.Writeln("Element 2.2.1");
-builder.Writeln("Element 2.2.2");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Element 2.3");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Element 3");
-
-builder.ListFormat.RemoveNumbers();
-```
-
-## Bước 3: Lưu tài liệu
-
- Sau khi chèn trường biểu mẫu nhập văn bản, hãy lưu tài liệu vào vị trí mong muốn bằng cách sử dụng`Save` phương pháp. Đảm bảo cung cấp đường dẫn tệp thích hợp:
+Trước tiên, hãy tạo một tài liệu Word mới và khởi tạo DocumentBuilder. Lớp DocumentBuilder cung cấp các phương thức để chèn nội dung vào tài liệu.
 
 ```csharp
-doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
-```
-
-### Mã nguồn mẫu cho Định dạng danh sách đa cấp bằng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh cho tính năng định dạng danh sách đa cấp với Aspose.Words cho .NET:
-
-
-```csharp
-
 // Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Bước 2: Áp dụng đánh số mặc định
+
+ Để bắt đầu với một danh sách được đánh số, bạn sử dụng`ApplyNumberDefault` phương pháp. Điều này thiết lập định dạng danh sách được đánh số mặc định.
+
+```csharp
 builder.ListFormat.ApplyNumberDefault();
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+ Trong những dòng này,`ApplyNumberDefault` bắt đầu danh sách được đánh số và`Writeln` thêm các mục vào danh sách.
+
+## Bước 3: Thụt lề cho cấp độ phụ
+
+ Tiếp theo, để tạo các cấp độ con trong danh sách của mình, bạn sử dụng`ListIndent` phương pháp. Phương thức này thụt lề mục danh sách, biến nó thành cấp độ con của mục trước đó.
+
+```csharp
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2.1");
 builder.Writeln("Item 2.2");
+```
 
+Đoạn mã này thụt lề các mục, tạo danh sách cấp hai.
+
+## Bước 4: Thụt lề sâu hơn để có mức độ sâu hơn
+
+Bạn có thể tiếp tục thụt lề để tạo các cấp độ sâu hơn trong danh sách của mình. Ở đây, chúng ta sẽ tạo cấp độ thứ ba.
+
+```csharp
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2.2.1");
 builder.Writeln("Item 2.2.2");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Item 2.3");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Item 3");
-
-builder.ListFormat.RemoveNumbers();
-
-doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
-
 ```
 
-Với mã này, bạn sẽ có thể tạo danh sách nhiều cấp và áp dụng định dạng phù hợp cho từng cấp bằng cách sử dụng Aspose.Words for .NET.
+Bây giờ bạn có danh sách cấp ba trong "Mục 2.2".
 
+## Bước 5: Nhô ra để trở về cấp độ cao hơn
+
+ Để quay lại cấp độ cao hơn, hãy sử dụng`ListOutdent` phương pháp. Thao tác này sẽ di chuyển mục trở lại cấp danh sách trước đó.
+
+```csharp
+builder.ListFormat.ListOutdent();
+builder.Writeln("Item 2.3");
+```
+
+Điều này đưa "Mục 2.3" trở lại cấp độ thứ hai.
+
+## Bước 6: Xóa đánh số
+
+Sau khi hoàn tất danh sách của mình, bạn có thể xóa đánh số để tiếp tục với văn bản thông thường hoặc một loại định dạng khác.
+
+```csharp
+builder.ListFormat.ListOutdent();
+builder.Writeln("Item 3");
+builder.ListFormat.RemoveNumbers();
+```
+
+Đoạn mã này hoàn thành danh sách và dừng đánh số.
+
+## Bước 7: Lưu tài liệu của bạn
+
+Cuối cùng, lưu tài liệu vào thư mục bạn muốn.
+
+```csharp
+doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
+```
+
+Điều này sẽ lưu tài liệu được định dạng đẹp mắt của bạn với danh sách đa cấp.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã khám phá quy trình sử dụng tính năng định dạng danh sách đa cấp trong tài liệu Word với Aspose.Words cho .NET. Bằng cách làm theo các bước đã nêu, bạn có thể tạo danh sách được tổ chức tốt với nhiều cấp độ, nâng cao cấu trúc và khả năng đọc tài liệu của mình.
+Và bạn có nó rồi đấy! Bạn đã tạo thành công danh sách đa cấp trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này cho phép bạn tự động hóa các tác vụ định dạng tài liệu phức tạp một cách dễ dàng. Hãy nhớ rằng, việc thành thạo các công cụ này không chỉ giúp tiết kiệm thời gian mà còn đảm bảo tính nhất quán và chuyên nghiệp trong quá trình tạo tài liệu của bạn.
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Hỏi: Danh sách đa cấp trong tài liệu Word là gì?
+### Tôi có thể tùy chỉnh kiểu đánh số danh sách không?
+ Có, Aspose.Words for .NET cho phép bạn tùy chỉnh kiểu đánh số danh sách bằng cách sử dụng`ListTemplate` lớp học.
 
-Trả lời: Danh sách nhiều cấp trong tài liệu Word là danh sách phân cấp cho phép bạn sắp xếp các mục thành nhiều cấp độ mục phụ khác nhau. Nó giúp trình bày thông tin một cách có cấu trúc, giúp người đọc dễ hiểu nội dung hơn.
+### Làm cách nào để thêm dấu đầu dòng thay vì số?
+ Bạn có thể áp dụng các dấu đầu dòng bằng cách sử dụng`ApplyBulletDefault` phương pháp thay vì`ApplyNumberDefault`.
 
-#### Câu hỏi: Tôi có thể tùy chỉnh giao diện của danh sách đa cấp không?
+### Có thể tiếp tục đánh số từ danh sách trước đó không?
+ Có, bạn có thể tiếp tục đánh số bằng cách sử dụng`ListFormat.List` thuộc tính để liên kết đến một danh sách hiện có.
 
-Trả lời: Có, bạn có thể tùy chỉnh giao diện của danh sách đa cấp trong tài liệu Word của mình. Bằng cách áp dụng các kiểu khác nhau, chẳng hạn như dấu đầu dòng, số hoặc chữ cái, đồng thời điều chỉnh thụt lề và khoảng cách, bạn có thể tạo một danh sách có tổ chức và hấp dẫn về mặt trực quan.
+### Làm cách nào để thay đổi mức thụt lề một cách linh hoạt?
+ Bạn có thể tự động thay đổi mức độ thụt lề bằng cách sử dụng`ListIndent` Và`ListOutdent` các phương pháp khi cần thiết.
 
-#### Câu hỏi: Aspose.Words for .NET có hỗ trợ các tùy chọn định dạng danh sách khác không?
-
-Đáp: Có, Aspose.Words for .NET cung cấp một bộ tính năng toàn diện để định dạng danh sách. Nó hỗ trợ nhiều loại danh sách khác nhau, bao gồm danh sách có dấu đầu dòng, danh sách được đánh số và danh sách đa cấp. Bạn có thể thao tác định dạng danh sách, thêm hoặc xóa các mục và tùy chỉnh giao diện của chúng.
-
-#### Câu hỏi: Tôi có thể sử dụng Aspose.Words cho .NET để làm việc với các thành phần tài liệu khác không?
-
-Đáp: Có, Aspose.Words for .NET cung cấp các khả năng mở rộng để làm việc với nhiều thành phần tài liệu khác nhau, chẳng hạn như đoạn văn, bảng, hình ảnh, v.v. Nó cho phép bạn tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình, hợp lý hóa các tác vụ xử lý tài liệu.
+### Tôi có thể tạo danh sách đa cấp ở các định dạng tài liệu khác như PDF không?
+Có, Aspose.Words hỗ trợ lưu tài liệu ở nhiều định dạng khác nhau bao gồm PDF, duy trì định dạng.

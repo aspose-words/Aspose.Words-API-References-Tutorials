@@ -25,7 +25,7 @@ Det här är länkar till några användbara resurser:
 - [Arbeta med List](./net/working-with-list/)   
 - [Jobbar med Markdown](./net/working-with-markdown/)   
 - [Arbeta med Node](./net/working-with-node/)   
-- [Arbeta med recensioner](./net/working-with-revisions/)   
+- [Arbeta med revisioner](./net/working-with-revisions/)   
 - [Arbeta med textboxar](./net/working-with-textboxes/)   
 - [Dela dokument](./net/split-document/)   
 - [Lägg till innehåll med Documentbuilder](./net/add-content-using-documentbuilder/)
@@ -62,7 +62,7 @@ Det här är länkar till några användbara resurser:
 
 ## Handledning för Aspose.Words Dokumenthantering för Python
 {{% alert color="primary" %}}
-Dessa handledningar ger steg-för-steg-vägledning om hur du arbetar med Microsoft Word-dokument programmatiskt, inklusive skapande av dokument, manipulering och olika säkerhetsfunktioner som kryptering och lösenordsskydd. Med hjälp av denna resurs kan utvecklare effektivt implementera dokumentbehandlingsfunktioner i sina Python-applikationer med Aspose.Words, vilket ökar produktiviteten och säkerställer dokumentsäkerhet. 
+Dessa handledningar erbjuder steg-för-steg-vägledning om hur du arbetar med Microsoft Word-dokument programmatiskt, inklusive skapande av dokument, manipulering och olika säkerhetsfunktioner som kryptering och lösenordsskydd. Med hjälp av denna resurs kan utvecklare effektivt implementera dokumentbehandlingsfunktioner i sina Python-applikationer med Aspose.Words, vilket ökar produktiviteten och säkerställer dokumentsäkerhet. 
 {{% /alert %}}
 
 Det här är länkar till några användbara resurser:

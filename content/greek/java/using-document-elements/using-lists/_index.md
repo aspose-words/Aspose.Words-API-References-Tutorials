@@ -164,7 +164,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Δημιουργήστε μια αριθμημένη λίστα με βάση ένα από τα πρότυπα λίστας του Microsoft Word.
+        // Δημιουργήστε μια αριθμημένη λίστα με βάση ένα από τα πρότυπα λίστας του Microsoft Word
         //και εφαρμόστε το στην τρέχουσα παράγραφο του εργαλείου δημιουργίας εγγράφων.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Υπάρχουν εννέα επίπεδα σε αυτή τη λίστα, ας τα δοκιμάσουμε όλα.
@@ -173,7 +173,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Δημιουργήστε μια λίστα με κουκκίδες με βάση ένα από τα πρότυπα λίστας του Microsoft Word.
+        // Δημιουργήστε μια λίστα με κουκκίδες με βάση ένα από τα πρότυπα λίστας του Microsoft Word
         //και εφαρμόστε το στην τρέχουσα παράγραφο του εργαλείου δημιουργίας εγγράφων.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

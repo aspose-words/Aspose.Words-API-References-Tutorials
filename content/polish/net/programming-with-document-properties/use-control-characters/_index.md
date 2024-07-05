@@ -35,6 +35,6 @@ string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 	string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 
 ```
- Możesz użyć powyższego kodu we własnym projekcie, zastępując plik`text` string z własnym tekstem zawierającym znaki kontrolne.
+ Możesz użyć powyższego kodu we własnym projekcie, zastępując plik`text` string z własnym tekstem zawierającym znaki sterujące.
 
 Nauczyłeś się teraz, jak używać znaków kontrolnych w Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem zawartym w tym samouczku, możesz łatwo manipulować znakami kontrolnymi we własnych aplikacjach.

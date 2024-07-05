@@ -77,7 +77,7 @@ System.out.println(text);
 // Φορτώστε το έγγραφο προέλευσης
 Document doc = new Document("input.docx");
 
-// Δημιουργήστε ένα εργαλείο εξαγωγής εικόνας
+// Δημιουργήστε έναν εξαγωγέα εικόνας
 ImageExtractor extractor = new ImageExtractor(doc);
 
 // Εξαγωγή εικόνων από το έγγραφο

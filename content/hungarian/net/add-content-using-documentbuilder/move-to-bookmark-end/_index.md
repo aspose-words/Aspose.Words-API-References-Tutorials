@@ -142,7 +142,7 @@ Tessék, itt van! Most tanulta meg, hogyan lehet egy Word-dokumentumban a könyv
 
 ### 4. Hogyan szerezhetek ideiglenes licencet az Aspose.Words számára?
 
- Ideiglenes engedélyt kaphat a[Aspose honlapja](https://purchase.aspose.com/temporary-license/).
+ Ideiglenes jogosítványt kaphat a[Aspose honlapja](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Az Aspose.Words for .NET ingyenes?
 

@@ -164,7 +164,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        //根據 Microsoft Word 清單範本之一建立編號清單。
+        //根據 Microsoft Word 清單範本之一建立編號列表
         //並將其應用於文件生成器的當前段落。
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         //此列表中有九個級別，讓我們全部嘗試一下。
@@ -173,7 +173,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        //根據 Microsoft Word 清單範本之一建立項目符號清單。
+        //基於 Microsoft Word 清單範本之一建立項目符號列表
         //並將其應用於文件生成器的當前段落。
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)

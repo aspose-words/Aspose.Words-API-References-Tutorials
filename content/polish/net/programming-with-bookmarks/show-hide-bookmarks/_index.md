@@ -126,9 +126,9 @@ Odp.: Tak, dostarczony kod działa z różnymi formatami dokumentów Word obsłu
 
  Odp.: Aby ponownie wyświetlić ukrytą zakładkę, musisz jej użyć`ShowHideBookmarkedContent` funkcja przekazująca wartość`true` dla parametru logicznego wskazującego, czy pokazać, czy ukryć zakładkę.
 
-#### P: Czy mogę użyć warunków, aby pokazać lub ukryć zakładki na podstawie wartości pól scalania w dokumencie?
+#### P: Czy mogę używać warunków, aby pokazywać lub ukrywać zakładki na podstawie wartości pól scalania w dokumencie?
 
- Odp.: Tak, możesz użyć warunków i scalić wartości pól, aby określić, czy zakładka powinna być pokazana, czy ukryta. Możesz dostosować kod pliku`ShowHideBookmarkedContent` funkcję uwzględniającą odpowiednie warunki i wartości.
+ O: Tak, możesz użyć warunków i wartości pól scalających, aby określić, czy zakładka ma być pokazana, czy ukryta. Możesz dostosować kod pliku`ShowHideBookmarkedContent` funkcję uwzględniającą odpowiednie warunki i wartości.
 
 #### P: Jak mogę usunąć zakładkę w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
 

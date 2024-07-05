@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### إلحاق بتحويلات رقم الصفحة
+### إلحاق مع تحويل رقم الصفحة
 
 ```java
 Document srcDoc = new Document("source.docx");

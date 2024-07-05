@@ -97,4 +97,4 @@ A: Het invoegen van een tekstinvoegveld zonder de documentbuilder heeft geen dir
 
 #### Vraag: Kan ik de weergave van het tekstinvoegveld in een Word-document aanpassen met Aspose.Words voor .NET?
 
-A: Door het opnemen van tekstvelden wordt de weergave ervan in een Word-document niet rechtstreeks aangepast. U kunt de opgenomen tekst echter opmaken met behulp van de alinea-eigenschappen, lettertype-eigenschappen en andere opmaakobjecten die beschikbaar zijn in Aspose.Words voor .NET.
+A: Het tekstopnameveld past de weergave ervan in een Word-document niet rechtstreeks aan. U kunt de opgenomen tekst echter opmaken met behulp van de alinea-eigenschappen, lettertype-eigenschappen en andere opmaakobjecten die beschikbaar zijn in Aspose.Words voor .NET.

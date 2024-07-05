@@ -131,4 +131,4 @@ Ano, můžete kopírovat záhlaví a zápatí mezi libovolnými oddíly v dokume
 
 ### Q5: Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
 
-Ano, můžete si stáhnout bezplatnou zkušební verzi z[stránka ke stažení](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi z[stránka ke stažení](https://releases.aspose.com/).

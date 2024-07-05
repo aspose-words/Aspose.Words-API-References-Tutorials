@@ -73,7 +73,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Sisipkan kolom formulir masukan teks
+// Sisipkan kolom formulir input teks
 builder.insertTextInput("TextInput", TextFormFieldType.REGULAR, "", "Default text", 0);
 
 // Simpan dokumennya

@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Ladda käll- och måldokumenten
 
-Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words.`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
+Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Bifoga källdokumentet med destinationsstilar
 
- För att lägga till källdokumentet till måldokumentet samtidigt som du tillämpar måldokumentets format, kan du använda`AppendDocument` metod för`Document` klass med`ImportFormatMode.UseDestinationStyles` parametrar.
+ För att lägga till källdokumentet till måldokumentet samtidigt som du tillämpar måldokumentets format, kan du använda`AppendDocument` metod för`Document` klass med`ImportFormatMode.UseDestinationStyles` parameter.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);

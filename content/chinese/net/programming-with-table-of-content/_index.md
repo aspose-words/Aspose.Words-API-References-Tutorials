@@ -1,20 +1,20 @@
 ---
-title: 使用目录进行文字处理
-linktitle: 使用目录进行文字处理
+title: 带目录的文字处理
+linktitle: 带目录的文字处理
 second_title: Aspose.Words 文档处理 API
-description: 探索 Aspose.Words for .NET 中的 TOC 编程。通过分步教程和 C# 代码示例，了解如何在 Word 文档中创建和操作目录。
+description: 探索 Aspose.Words for .NET 中的 TOC 编程。通过分步教程和 C# 代码示例了解如何在 Word 文档中创建和操作目录。
 type: docs
 weight: 1420
 url: /zh/net/programming-with-table-of-content/
 ---
-有关带有目录的文字处理的 Aspose.Words for .NET 教程将引导您完成在 Word 文档中操作和自定义目录的步骤。您将学习如何创建、更新和自定义目录以有效地组织文档的内容。
+Aspose.Words for .NET 教程“使用目录进行文字处理”将引导您完成操作和自定义 Word 文档中的目录的步骤。您将学习如何创建、更新和自定义目录以有效地组织文档内容。
 
-这些教程提供了分步代码示例，并清楚地解释了如何使用 Aspose.Words for .NET 功能来处理目录。您将学习如何添加标题级别、指定格式样式、自定义目录的外观和行为以及管理自动更新。
+这些教程提供了分步代码示例和清晰的解释，说明如何使用 Aspose.Words for .NET 功能处理目录。您将学习如何添加标题级别、指定格式样式、自定义目录的外观和行为以及管理自动更新。
 
-无论您是初学者还是经验丰富的开发人员，这些教程都将帮助您掌握使用 Aspose.Words for .NET 在 Word 文档中创建和维护专业目录的高级技术。通过这些全面且信息丰富的教程，改进文档的组织并让用户更轻松地导航。
+无论您是初学者还是经验丰富的开发人员，这些教程都将帮助您掌握使用 Aspose.Words for .NET 在 Word 文档中创建和维护专业目录的高级技术。使用这些全面且内容丰富的教程，改善文档的组织并使用户导航更轻松。
 
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [更改 Word 文档中的目录样式](./change-style-of-toc-level/) | 了解如何使用 Aspose.Words for .NET 轻松更改 Word 文档中目录级别的样式。 |
+| [在 Word 文档中更改目录样式](./change-style-of-toc-level/) | 了解如何使用 Aspose.Words for .NET 轻松更改 Word 文档中目录级别的样式。 |
 | [更改 Word 文档中的目录制表位](./change-toc-tab-stops/) | 了解如何使用 Aspose.Words for .NET 更改 Word 文档中的目录选项卡。 |

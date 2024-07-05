@@ -41,7 +41,7 @@ Para começar, inicie o Visual Studio e crie um novo projeto C#. Você pode esco
 
 Instale Aspose.Words para .NET
 
-Em seguida, você precisará instalar a biblioteca Aspose.Words for .NET. Você pode fazer isso por meio do Gerenciador de pacotes NuGet. Basta clicar com o botão direito do mouse em seu projeto no Solution Explorer, selecionar "Gerenciar pacotes NuGet", pesquisar "Apose.Words" e instalá-lo.
+Em seguida, você precisará instalar a biblioteca Aspose.Words for .NET. Você pode fazer isso por meio do Gerenciador de pacotes NuGet. Basta clicar com o botão direito do mouse em seu projeto no Solution Explorer, selecionar "Gerenciar pacotes NuGet", pesquisar "Aspose.Words" e instalá-lo.
 
 ## Etapa 2: inicializar o documento
 
@@ -92,7 +92,7 @@ Agora, vamos inserir o hiperlink real. É aqui que a mágica acontece!
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
 ```
 
-Nesta linha, estamos inserindo um hiperlink com o texto de exibição “Apose Website” e a URL “http://www.aspose.com”.
+Nesta linha, estamos inserindo um hiperlink com o texto de exibição “Aspose Website” e a URL “http://www.aspose.com”.
 
 ## Etapa 6: limpar formatação
 

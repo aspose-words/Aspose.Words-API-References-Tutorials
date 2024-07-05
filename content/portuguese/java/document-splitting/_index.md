@@ -34,4 +34,4 @@ Aprenda como realizar a separação de páginas do documento usando Aspose.Words
 ### [Extraindo o conteúdo do documento por páginas](./extracting-document-content-pages/)
 Aprenda como extrair o conteúdo do documento por páginas usando Aspose.Words for Java. Este guia passo a passo com código-fonte tornará você um especialista rapidamente.
 ### [Técnicas de divisão e extração de documentos](./document-splitting-extraction-techniques/)
-Aprenda a divisão e extração de documentos usando Aspose.Words para Java. Guia passo a passo com código fonte para manipulação eficiente. Desbloqueie o poder do Aspose
+Aprenda a divisão e extração de documentos usando Aspose.Words para Java. Guia passo a passo com código-fonte para manipulação eficiente. Desbloqueie o poder do Aspose

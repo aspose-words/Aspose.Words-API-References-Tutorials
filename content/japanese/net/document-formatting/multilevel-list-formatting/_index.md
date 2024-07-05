@@ -2,115 +2,130 @@
 title: Word 文書での複数レベルのリストの書式設定
 linktitle: Word 文書での複数レベルのリストの書式設定
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して複数レベルのリストを作成し、Word 文書にカスタム書式設定を適用する方法を学びます。
+description: Aspose.Words for .NET を使用して Word 文書のマルチレベル リストの書式設定を習得する方法を、ステップ バイ ステップ ガイドで学習します。ドキュメント構造を簡単に強化できます。
 type: docs
 weight: 10
 url: /ja/net/document-formatting/multilevel-list-formatting/
 ---
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書機能のマルチレベル リストの書式設定を使用する方法を説明します。以下の手順に従ってソース コードを理解し、変更を適用します。
+## 導入
 
-## ステップ 1: ドキュメントの作成と構成
+Word 文書の作成と書式設定を自動化したい開発者にとって、Aspose.Words for .NET は画期的なツールです。今日は、この強力なライブラリを使用して、マルチレベル リストの書式設定をマスターする方法について詳しく説明します。構造化文書の作成、レポートのアウトライン作成、技術文書の生成など、マルチレベル リストを使用すると、コンテンツの読みやすさと整理性が向上します。
 
-まず、新しいドキュメントと関連する DocumentBuilder オブジェクトを作成します。その方法は次のとおりです。
+## 前提条件
+
+細かい詳細に入る前に、このチュートリアルを実行するために必要なものがすべて揃っていることを確認しましょう。
+
+1. 開発環境: 開発環境が設定されていることを確認してください。Visual Studio は最適な選択肢です。
+2.  Aspose.Words for .NET: Aspose.Words for .NETライブラリをダウンロードしてインストールします。[ここ](https://releases.aspose.com/words/net/).
+3. ライセンス: フルライセンスを持っていない場合は、一時ライセンスを取得してください。取得する[ここ](https://purchase.aspose.com/temporary-license/).
+4. 基本的な C# の知識: C# と .NET フレームワークに精通していると有利です。
+
+## 名前空間のインポート
+
+プロジェクトで Aspose.Words for .NET を使用するには、必要な名前空間をインポートする必要があります。手順は次のとおりです。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
 
-## ステップ 2: マルチレベルリストのフォーマットを設定する
+## ステップ1: ドキュメントとビルダーを初期化する
 
-次に、DocumentBuilder オブジェクトで使用できるメソッドを使用して、マルチレベルのリストの書式設定を適用します。その方法は次のとおりです。
-
-```csharp
-builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-
-builder.ListFormat.ListIndent();
-builder.Writeln("Element 2.1");
-builder.Writeln("Element 2.2");
-
-builder.ListFormat.ListIndent();
-builder.Writeln("Element 2.2.1");
-builder.Writeln("Element 2.2.2");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Element 2.3");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Element 3");
-
-builder.ListFormat.RemoveNumbers();
-```
-
-## ステップ 3: ドキュメントを保存する
-
-テキスト入力フォームフィールドを挿入した後、`Save`方法。必ず適切なファイル パスを指定してください。
+まず最初に、新しい Word 文書を作成し、DocumentBuilder を初期化します。DocumentBuilder クラスは、文書にコンテンツを挿入するためのメソッドを提供します。
 
 ```csharp
-doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
-```
-
-### Aspose.Words for .NET を使用したマルチレベル リストのフォーマットのソース コード例
-
-Aspose.Words for .NET を使用したマルチレベル リストの書式設定機能の完全なソース コードを次に示します。
-
-
-```csharp
-
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## ステップ2: デフォルトの番号付けを適用する
+
+番号付きリストを開始するには、`ApplyNumberDefault`メソッド。これにより、デフォルトの番号付きリストの書式が設定されます。
+
+```csharp
 builder.ListFormat.ApplyNumberDefault();
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+これらの行では、`ApplyNumberDefault`番号付きリストを開始し、`Writeln`リストに項目を追加します。
+
+## ステップ3: サブレベルのインデント
+
+次に、リスト内にサブレベルを作成するには、`ListIndent`メソッド。このメソッドはリスト項目をインデントし、前の項目のサブレベルにします。
+
+```csharp
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2.1");
 builder.Writeln("Item 2.2");
+```
 
+このコード スニペットは項目をインデントし、第 2 レベルのリストを作成します。
+
+## ステップ4: より深いレベルにインデントする
+
+インデントを続けると、リスト内にさらに深いレベルを作成できます。ここでは、3 番目のレベルを作成します。
+
+```csharp
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2.2.1");
 builder.Writeln("Item 2.2.2");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Item 2.3");
-
-builder.ListFormat.ListOutdent();
-builder.Writeln("Item 3");
-
-builder.ListFormat.RemoveNumbers();
-
-doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
-
 ```
 
-このコードを使用すると、Aspose.Words for .NET を使用してマルチレベルのリストを作成し、各レベルに適切な書式設定を適用できます。
+これで、「項目 2.2」の下に第 3 レベルのリストが作成されました。
 
+## ステップ5: アウトデントして上位レベルに戻る
+
+より高いレベルに戻るには、`ListOutdent`メソッド。これにより、アイテムが前のリスト レベルに戻ります。
+
+```csharp
+builder.ListFormat.ListOutdent();
+builder.Writeln("Item 2.3");
+```
+
+これにより、「項目 2.3」が 2 番目のレベルに戻ります。
+
+## ステップ6: 番号を削除する
+
+リストの作成が完了したら、番号を削除して、通常のテキストまたは別の種類の書式設定を続行できます。
+
+```csharp
+builder.ListFormat.ListOutdent();
+builder.Writeln("Item 3");
+builder.ListFormat.RemoveNumbers();
+```
+
+このコード スニペットはリストを完了し、番号付けを停止します。
+
+## ステップ7: ドキュメントを保存する
+
+最後に、ドキュメントを目的のディレクトリに保存します。
+
+```csharp
+doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
+```
+
+これにより、複数レベルのリストを含む美しくフォーマットされたドキュメントが保存されます。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書でマルチレベル リストの書式設定機能を利用するプロセスについて説明しました。概要を示した手順に従うことで、複数のレベルでよく整理されたリストを作成し、ドキュメントの構造と読みやすさを向上させることができます。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書にマルチレベル リストを作成できました。この強力なライブラリを使用すると、複雑な文書の書式設定タスクを簡単に自動化できます。これらのツールを習得すると、時間を節約できるだけでなく、文書生成プロセスの一貫性と専門性が確保されることを忘れないでください。
 
-### よくある質問
+## よくある質問
 
-#### Q: Word 文書の複数レベルのリストとは何ですか?
+### リストの番号付けスタイルをカスタマイズできますか?
+はい、Aspose.Words for .NETでは、リストの番号付けスタイルをカスタマイズできます。`ListTemplate`クラス。
 
-A: Word 文書のマルチレベル リストは、項目をさまざまなレベルのサブ項目に整理できる階層リストです。情報を構造化して表示するのに役立ち、読者が内容を理解しやすくなります。
+### 数字の代わりに箇条書きを追加するにはどうすればよいですか?
+箇条書きを適用するには、`ApplyBulletDefault`方法の代わりに`ApplyNumberDefault`.
 
-#### Q: マルチレベルリストの外観をカスタマイズできますか?
+### 以前のリストから番号を続けて付けることは可能ですか?
+はい、番号付けを続けるには、`ListFormat.List`既存のリストにリンクするプロパティ。
 
-A: はい、Word 文書内の複数レベルのリストの外観をカスタマイズできます。箇条書き、数字、文字などのさまざまなスタイルを適用し、インデントや間隔を調整することで、視覚的に魅力的で整理されたリストを作成できます。
+### インデント レベルを動的に変更するにはどうすればよいですか?
+インデントレベルを動的に変更するには、`ListIndent`そして`ListOutdent`必要に応じて方法を選択します。
 
-#### Q: Aspose.Words for .NET は他のリスト書式設定オプションをサポートしていますか?
-
-A: はい、Aspose.Words for .NET は、リストの書式設定のための包括的な機能セットを提供します。箇条書きリスト、番号付きリスト、マルチレベルリストなど、さまざまなタイプのリストをサポートしています。リストの書式設定を操作したり、項目を追加または削除したり、外観をカスタマイズしたりできます。
-
-#### Q: Aspose.Words for .NET を使用して他のドキュメント要素を操作できますか?
-
-A: はい、Aspose.Words for .NET は、段落、表、画像などのさまざまなドキュメント要素を操作するための広範な機能を提供します。 Word 文書をプログラムで作成、変更、変換できるため、文書処理タスクが合理化されます。
+### PDF などの他のドキュメント形式で複数レベルのリストを作成できますか?
+はい、Aspose.Words は書式を維持しながら、PDF を含むさまざまな形式でのドキュメントの保存をサポートしています。

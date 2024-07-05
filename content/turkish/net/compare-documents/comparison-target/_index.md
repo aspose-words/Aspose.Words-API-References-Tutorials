@@ -2,97 +2,121 @@
 title: Word Belgesinde Karşılaştırma Hedefi
 linktitle: Word Belgesinde Karşılaştırma Hedefi
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'in belgeleri karşılaştırmanıza ve yapılan değişiklikleri içeren yeni bir belge oluşturmanıza olanak tanıyan word belgesindeki hedef karşılaştırma özelliğini öğrenin.
+description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerini zahmetsizce karşılaştırın. Belge karşılaştırmasında zamandan tasarruf edin ve doğruluğu artırın.
 type: docs
 weight: 10
 url: /tr/net/compare-documents/comparison-target/
 ---
-Aşağıda Aspose.Words for .NET'in word belgesi işlevselliğindeki karşılaştırma hedefini kullanan C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır.
+## giriiş
 
-## Adım 1: Giriş
+Selam! Hiç kendinizi bir Word belgesinin iki versiyonunu karşılaştırırken ve her küçük değişikliği manuel olarak takip ederken buldunuz mu? Samanlıkta iğne aramaya benziyor değil mi? Peki ya size bunu Aspose.Words for .NET kullanarak yapmanın çok kolay bir yolu olduğunu söylesem? Bu doğru! Bu güçlü kitaplık, Word belgelerini anında karşılaştırmanıza olanak tanır. Bugün size bu süreci adım adım anlatacağım. Belge karşılaştırma sihirbazı olmaya hazır mısınız? Hadi dalalım!
 
-Aspose.Words for .NET'in hedefi karşılaştırma özelliği, iki belgeyi karşılaştırmanıza ve hedef belgede yapılan değişiklikleri içeren yeni bir belge oluşturmanıza olanak tanır. Bu, bir belgenin farklı sürümleri arasında yapılan değişiklikleri izlemek için yararlı olabilir.
+## Önkoşullar
 
-## 2. Adım: Ortamı ayarlama
+İşin özüne geçmeden önce, başlamak için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-Başlamadan önce geliştirme ortamınızı Aspose.Words for .NET ile çalışacak şekilde ayarlamanız gerekir. Aspose.Words kütüphanesinin kurulu olduğundan ve kodu gömmek için uygun bir C# projesine sahip olduğunuzdan emin olun.
+1.  Aspose.Words for .NET: Bu kütüphaneye ihtiyacınız var. Henüz sahip değilseniz, buradan alın[Burada](https://releases.aspose.com/words/net/).
+2.  Lisans: Aspose.Words'ün tüm potansiyelini açığa çıkarmak için geçerli bir lisansa ihtiyacınız olacak. Bir tane satın alabilirsin[Burada](https://purchase.aspose.com/buy) veya geçici lisans alın[Burada](https://purchase.aspose.com/temporary-license/).
+3. Geliştirme Ortamı: Visual Studio veya herhangi bir .NET uyumlu IDE.
+4. Temel C# Bilgisi: Endişelenmeyin, profesyonel olmanıza gerek yok, sadece biraz temel bilgi yeterli olacaktır.
 
-## Adım 3: Gerekli Montajları Ekleyin
+## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET'in karşılaştırma hedefi özelliğini kullanmak için gerekli derlemeleri projenize eklemelisiniz. Projenizde Aspose.Words'e doğru referansların bulunduğundan emin olun.
+Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bunlar her şeyin yolunda gitmesini sağlayan sahne arkası ekibi gibidir.
 
 ```csharp
+using System;
 using Aspose.Words;
+using Aspose.Words.Compare;
 ```
 
-## Adım 4: Belge Başlatma
+Pekala, şimdi heyecan verici kısma geçelim: adım adım kılavuza!
 
-Bu adımda karşılaştırma için iki belgeyi başlatacağız. Kaynak belgenin adının yanı sıra belgelerinizin bulunduğu dizin yolunu da belirtmeniz gerekir.
+## 1. Adım: Projenizi Kurun
+
+Projemizi hazırlayalım. Geliştirme ortamınızı harekete geçirin ve yeni bir C# projesi oluşturun. İstediğiniz ismi verin; "DocumentComparison" kulağa hoş geliyor, değil mi?
+
+```csharp
+// Visual Studio'da yeni bir C# projesi oluşturma
+```
+
+## Adım 2: Aspose.Words for .NET'i yükleyin
+
+Daha sonra Aspose.Words'ü projenize eklemeniz gerekiyor. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz. Aspose.Words'ü arayın ve yükleyin. Basit!
+
+```bash
+Install-Package Aspose.Words
+```
+
+## 3. Adım: Belgelerinizi Yükleyin
+
+Tamam, karşılaştırmak istediğiniz belgeleri yükleme zamanı. Bu belgelere giden yollara ihtiyacınız olacak. İki belgeniz olduğunu varsayalım:`DocumentA.docx` Ve`DocumentB.docx`.
 
 ```csharp
 // Belgeler dizininin yolu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// Karşılaştırma için A belgesinin başlatılması.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document docA = new Document(dataDir + "DocumentA.docx");
+Document docB = new Document(dataDir + "DocumentB.docx");
+```
 
-// B belgesinin aynı kopyasını oluşturmak için A belgesini kopyalayın.
+## Adım 4: Belgeyi Klonlayın
+
+Klonlama, belgenizin özdeş bir ikizini oluşturmak gibidir. Bu adım, orijinalle karşılaştırabileceğiniz bir yedek kopyaya sahip olmanızı sağlar.
+
+```csharp
 Document docB = docA.Clone();
 ```
 
-## Adım 5: Karşılaştırma Seçeneklerini Yapılandırma
+## Adım 5: Karşılaştırma Seçeneklerini Ayarlayın
 
-Bu adımda karşılaştırmanın davranışını belirlemek için karşılaştırma seçeneklerini yapılandıracağız. Seçenekler arasında biçimlendirmeyi göz ardı etme özelliğinin yanı sıra, Microsoft Word'ün "Belgeleri Karşılaştır" iletişim kutusundaki "Değişiklikleri göster" seçeneği olan karşılaştırma hedefi de bulunur.
+Şimdi karşılaştırma seçeneklerini yapılandıralım. Biçimlendirmeyi yoksaymak mı istiyorsunuz? Belki yalnızca içerik değişiklikleriyle ilgileniyorsunuzdur. Bunu nasıl ayarlayabileceğiniz aşağıda açıklanmıştır:
 
 ```csharp
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
+CompareOptions options = new CompareOptions
+{
+    IgnoreFormatting = true,
+    Target = ComparisonTargetType.New
+};
 ```
 
-## Adım 6: Belge Karşılaştırması
+## Adım 6: Belgeleri Karşılaştırın
 
-Şimdi belgeleri karşılaştırıp sonucu yeni bir belgede oluşturacağız.
+Ve şimdi, hepimizin beklediği an geldi; belgelerin karşılaştırılması! Sihir yapılan yer burasıdır. Aspose.Words belgeleri karşılaştıracak ve farklılıkları vurgulayacaktır.
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
-`Compare`yöntemi, A belgesini B belgesiyle karşılaştırır ve değişiklikleri A belgesine kaydeder. Referans için kullanıcı adını ve karşılaştırma tarihini belirleyebilirsiniz.
+## Adım 7: Karşılaştırılan Belgeyi Kaydedin
 
-### Aspose.Words for .NET kullanarak Hedefi Karşılaştır için örnek kaynak kodu
-
+Son olarak, vurgulanan değişiklikleri görmek için karşılaştırılan belgeyi kaydedin. Bu adım, çalışmanızı düzgün bir pakete sarmak gibidir.
 
 ```csharp
-            
-Document docA = new Document(MyDir + "Document.docx");
-Document docB = docA.Clone();
-
-// "Belgeleri Karşılaştır" iletişim kutusundaki Microsoft Word "Değişiklikleri göster" seçeneğiyle ilgilidir.
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
-
-docA.Compare(docB, "user", DateTime.Now, options);
-            
-        
+docA.Save(dataDir + "ComparedDocument.docx");
 ```
 
 ## Çözüm
 
-Bu yazıda Aspose.Words for .NET'in fark hedefi özelliğini inceledik. Bu özellik, iki belgeyi karşılaştırmanıza ve yapılan değişiklikleri içeren yeni bir belge oluşturmanıza olanak tanır. Bu bilgiyi belgelerinizin farklı sürümleri arasındaki değişiklikleri izlemek için kullanabilirsiniz.
+İşte karşınızda: Aspose.Words for .NET kullanarak Word belgelerini karşılaştırmanın basit ve etkili bir yolu! Artık manuel karşılaştırma yok, baş ağrısı yok. Yalnızca birkaç satır kodla farklılıkları vurgulayabilir ve gerçekten önemli olana odaklanabilirsiniz. Öyleyse devam edin, deneyin ve ne kadar zaman tasarruf ettiğinizi görün.
 
-### SSS'ler
+## SSS'ler
 
-#### S: Aspose.Words for .NET'te Karşılaştırma Hedefini kullanmanın amacı nedir?
+### Aspose.Words'ü kullanarak farklı formatlardaki belgeleri karşılaştırabilir miyim?
 
-C: Aspose.Words for .NET'teki Karşılaştırma Hedefi, iki belgeyi karşılaştırmanıza ve hedef belgede yapılan değişiklikleri içeren yeni bir belge oluşturmanıza olanak tanır. Bu özellik, bir belgenin farklı sürümleri arasında yapılan değişiklikleri izlemek ve farklılıkları ayrı bir belgede görselleştirmek için kullanışlıdır.
+Evet, Aspose.Words farklı formatlardaki belgeleri sorunsuz bir şekilde işleyebilir.
 
-#### S: Aspose.Words for .NET'te Karşılaştırma Hedefini nasıl kullanırım?
+### Aspose.Words'ü kullanmak için lisansa ihtiyacım var mı?
 
-C: Aspose.Words for .NET'te Karşılaştırma Hedefini kullanmak için şu adımları izleyin:
-1. Aspose.Words kütüphanesiyle geliştirme ortamınızı kurun.
-2. Aspose.Words'e başvurarak gerekli derlemeleri projenize ekleyin.
-3.  Karşılaştırmak istediğiniz belgeleri kullanarak başlatın.`Document` sınıf veya`DocumentBuilder` sınıf.
-4.  Karşılaştırma seçeneklerini bir`CompareOptions` gibi nesne ve ayar özellikleri`IgnoreFormatting` Ve`Target` (Örneğin.,`ComparisonTargetType.New` karşılaştırma hedefi için).
-5.  Kullan`Compare` yöntemi bir belge üzerinde, diğer belgeyi aktararak ve`CompareOptions` parametre olarak nesne. Bu yöntem belgeleri karşılaştıracak ve değişiklikleri ilk belgeye kaydedecektir.
+Evet, tüm özelliklerin kilidini açmak için geçerli bir lisansa ihtiyacınız var. Bir tane satın alabilir veya geçici bir lisans alabilirsiniz.
 
-####  Soru: Programın amacı nedir?`Target` property in the `CompareOptions` class?
+### Karşılaştırma seçeneklerinde biçimlendirmeyi göz ardı edersem ne olur?
 
- C:`Target` içindeki mülk`CompareOptions` class, Microsoft Word'ün "Belgeleri Karşılaştır" iletişim kutusundaki "Değişiklikleri göster" seçeneğine benzeyen karşılaştırma hedefini belirtmenize olanak tanır. Hedef şu şekilde ayarlanabilir:`ComparisonTargetType.New` yeni bir belgedeki değişiklikleri göstermek için,`ComparisonTargetType.Current` Geçerli belgedeki değişiklikleri göstermek için veya`ComparisonTargetType.Formatting` yalnızca biçimlendirme değişikliklerini göstermek için.
+Biçimlendirmeyi göz ardı ederseniz, karşılaştırma yalnızca içerik değişikliklerine odaklanacak ve biçimlendirme farklılıklarını göz ardı edecektir.
+
+### Karşılaştırma seçeneklerini daha da özelleştirebilir miyim?
+
+Kesinlikle! Aspose.Words, karşılaştırmayı ihtiyaçlarınıza göre uyarlamanız için çeşitli seçenekler sunar.
+
+### Daha ayrıntılı belgeleri nerede bulabilirim?
+
+ Kapsamlı belgelere göz atabilirsiniz[Burada](https://reference.aspose.com/words/net/).

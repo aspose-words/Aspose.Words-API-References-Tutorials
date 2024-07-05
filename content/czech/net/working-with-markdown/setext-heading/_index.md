@@ -1,6 +1,6 @@
 ---
-title: Nadpis Setex
-linktitle: Nadpis Setex
+title: Nadpis setextu
+linktitle: Nadpis setextu
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se používat záhlaví Setext k formátování dokumentů pomocí Aspose.Words for .NET Podrobný průvodce.
 type: docs

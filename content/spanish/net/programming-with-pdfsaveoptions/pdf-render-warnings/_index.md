@@ -126,7 +126,7 @@ Si sigue estos pasos, podrá manejar eficazmente las advertencias de representac
 
 ### P1: ¿Puedo manejar otros tipos de advertencias con este método?
 
- Sí el`IWarningCallback` La interfaz puede manejar varios tipos de advertencias, no sólo aquellas relacionadas con la representación de PDF.
+ Sí el`IWarningCallback` La interfaz puede manejar varios tipos de advertencias, no solo aquellas relacionadas con la representación de PDF.
 
 ### P2: ¿Dónde puedo descargar una prueba gratuita de Aspose.Words para .NET?
 

@@ -112,10 +112,10 @@ Aspose.Words voor Java is een Java-bibliotheek waarmee ontwikkelaars Word-docume
  kunt Aspose.Words voor Java downloaden en installeren vanaf[hier](https://releases.aspose.com/words/java/).
 
 ### Q3. Is er een gratis proefversie beschikbaar?
- Ja, u kunt Aspose.Words voor Java gratis uitproberen.[hier](https://releases.aspose.com/).
+ Ja, u kunt Aspose.Words voor Java gratis uitproberen[hier](https://releases.aspose.com/).
 
 ### Q4. Waar kan ik een tijdelijke licentie krijgen?
- U kunt een tijdelijke licentie verkrijgen voor Aspose.Words voor Java.[hier](https://purchase.aspose.com/temporary-license/).
+ U kunt een tijdelijke licentie verkrijgen voor Aspose.Words voor Java[hier](https://purchase.aspose.com/temporary-license/).
 
 ### Vraag 5. Waar kan ik ondersteuning vinden voor Aspose.Words voor Java?
  Voor ondersteuning en discussies kunt u terecht op de[Aspose.Words voor Java-forum](https://forum.aspose.com/).

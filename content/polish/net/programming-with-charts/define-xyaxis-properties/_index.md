@@ -17,7 +17,7 @@ Upewnij się, że masz następujące wymagania wstępne:
 - Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
 - Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres.
+## Krok 2: Utwórz nowy dokument i wstaw wykres
 
  Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
 
@@ -141,7 +141,7 @@ Używając Aspose.Words dla .NET, możesz bezproblemowo zintegrować możliwośc
 Aspose.Words dla .NET to potężna biblioteka do przetwarzania dokumentów, która umożliwia programistom programowe tworzenie, manipulowanie i zapisywanie dokumentów programu Word w aplikacjach .NET. Zapewnia szeroką gamę funkcji do przetwarzania tekstu z elementami dokumentu, w tym wykresami.
 
 #### Pytanie 2. Jak mogę zainstalować Aspose.Words dla .NET?
-Możesz zainstalować Aspose.Words dla .NET, pobierając go za pomocą menedżera pakietów NuGet w programie Visual Studio. Po prostu wyszukaj „Apose.Words” w menedżerze pakietów NuGet i zainstaluj go w swoim projekcie.
+Możesz zainstalować Aspose.Words dla .NET, pobierając go za pomocą menedżera pakietów NuGet w programie Visual Studio. Po prostu wyszukaj „Aspose.Words” w menedżerze pakietów NuGet i zainstaluj go w swoim projekcie.
 
 #### Pytanie 3. Czy mogę dostosować inne aspekty wykresu za pomocą Aspose.Words dla .NET?
 Tak, Aspose.Words dla .NET zapewnia szerokie możliwości dostosowywania różnych aspektów wykresu. Oprócz definiowania właściwości osi można modyfikować typ wykresu, serie danych, legendę, tytuł, obszar wykresu, etykiety danych i wiele innych elementów wykresu. Interfejs API zapewnia szczegółową kontrolę nad wyglądem i zachowaniem wykresów.

@@ -52,7 +52,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 ## Slutsats
 
-den här handledningen lärde vi oss hur man får de typer av ordrevisioner i ett Word-dokument med Aspose.Words för .NET. Vi följde stegen för att ladda dokumentet, gå igenom styckena och kontrollera vilka typer av ordrecensioner som är kopplade till varje stycke. Nu kan du tillämpa denna kunskap för att analysera ordrecensioner i dina egna Word-dokument med Aspose.Words för .NET.
+I den här handledningen lärde vi oss hur man får de typer av ordrevisioner i ett Word-dokument med Aspose.Words för .NET. Vi följde stegen för att ladda dokumentet, gå igenom styckena och kontrollera vilka typer av ordrecensioner som är kopplade till varje stycke. Nu kan du tillämpa denna kunskap för att analysera ordrecensioner i dina egna Word-dokument med Aspose.Words för .NET.
 
 ### Vanliga frågor för att få versionstyper av ord
 
@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### F: Hur kontrollerar jag om ett stycke har flyttats (raderats) i Aspose.Words för .NET?
 
- A: Använd ett stycke`IsMoveFromRevision` egendom för att kontrollera om den har flyttats (raderad).
+ A: Använd ett stycke`IsMoveFromRevision`egendom för att kontrollera om den har flyttats (raderad).
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### F: Hur kontrollerar man om ett stycke har flyttats (infogats) i Aspose.Words för .NET?
 
- A: Använd ett stycke`IsMoveToRevision`egenskap för att kontrollera om den har flyttats (infogad).
+ A: Använd ett stycke`IsMoveToRevision` egenskap för att kontrollera om den har flyttats (infogad).
 
 ```csharp
 if (paragraph.IsMoveToRevision)

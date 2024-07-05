@@ -97,4 +97,4 @@ C: Belge oluşturucu olmadan bir metin içerme alanı eklemek, Word belgesinin y
 
 #### S: Aspose.Words for .NET ile bir Word belgesindeki metin ekleme alanının görünümünü özelleştirebilir miyim?
 
-C: Metin alanının eklenmesi, Word belgesindeki görünümünü doğrudan özelleştirmez. Ancak, Aspose.Words for .NET'te bulunan paragraf özelliklerini, yazı tipi özelliklerini ve diğer biçimlendirme nesnelerini kullanarak dahil edilen metni biçimlendirebilirsiniz.
+C: Metin ekleme alanı, Word belgesindeki görünümünü doğrudan özelleştirmez. Ancak, Aspose.Words for .NET'te bulunan paragraf özelliklerini, yazı tipi özelliklerini ve diğer biçimlendirme nesnelerini kullanarak dahil edilen metni biçimlendirebilirsiniz.

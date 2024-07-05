@@ -155,4 +155,4 @@ Aspose.Words for Java 可以透過將轉換後的 HTML 中的圖片儲存為與 
 
 ### 是否有 Aspose.Words for Java 的試用版？
 
-是的，您可以從 Aspose 網站要求 Aspose.Words for Java 的免費試用版，以在購買授權之前評估其特性和功能。
+是的，您可以在購買授權之前從 Aspose 網站請求 Aspose.Words for Java 的免費試用版來評估其特性和功能。

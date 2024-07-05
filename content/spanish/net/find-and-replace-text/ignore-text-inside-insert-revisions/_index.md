@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 
-En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función Ignorar texto dentro de insertar revisiones en la biblioteca Aspose.Words para .NET. Esta característica es útil cuando queremos ignorar el texto dentro de las revisiones de inserción mientras manipulamos documentos.
+En este artículo, exploraremos el código fuente de C# anterior para comprender cómo utilizar la función Ignorar texto dentro de insertar revisiones en la biblioteca Aspose.Words para .NET. Esta característica es útil cuando queremos ignorar el texto dentro de las revisiones de inserción mientras manipulamos documentos.
 
 ## Requisitos previos
 

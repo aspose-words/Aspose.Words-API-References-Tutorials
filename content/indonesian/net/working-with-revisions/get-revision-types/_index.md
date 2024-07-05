@@ -78,7 +78,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 #### T: Bagaimana cara memeriksa apakah paragraf telah dipindahkan (dihapus) di Aspose.Words untuk .NET?
 
- A: Gunakan paragraf`IsMoveFromRevision` properti untuk memeriksa apakah sudah dipindahkan (dihapus).
+ A: Gunakan paragraf`IsMoveFromRevision`properti untuk memeriksa apakah sudah dipindahkan (dihapus).
 
 ```csharp
 if (paragraph. IsMove
@@ -91,7 +91,7 @@ FromRevision)
 
 #### T: Bagaimana cara memeriksa apakah paragraf telah dipindahkan (dimasukkan) di Aspose.Words untuk .NET?
 
- A: Gunakan paragraf`IsMoveToRevision`properti untuk memeriksa apakah sudah dipindahkan (dimasukkan).
+ A: Gunakan paragraf`IsMoveToRevision` properti untuk memeriksa apakah sudah dipindahkan (dimasukkan).
 
 ```csharp
 if (paragraph.IsMoveToRevision)

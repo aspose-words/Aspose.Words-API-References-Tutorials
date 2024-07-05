@@ -2,15 +2,15 @@
 title: インデントされたコード
 linktitle: インデントされたコード
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET のステップバイステップ ガイドでインデントされたコードを使用する方法を学びます。
+description: Aspose.Words for .NET でインデントされたコードを使用する方法をステップバイステップ ガイドで学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/indented-code/
 ---
 
-この例では、Aspose.Words for .NET でインデント コード機能を使用する方法を説明します。インデントされたコードは、特定の書式設定でコードのブロックを視覚的に表現するために使用されます。
+この例では、Aspose.Words for .NET でインデントされたコード機能を使用する方法について説明します。インデントされたコードは、特定の書式でコード ブロックを視覚的に表現するために使用されます。
 
-## ステップ 1: ドキュメント ジェネレーターを使用する
+## ステップ1: ドキュメントジェネレーターの使用
 
 まず、ドキュメント ジェネレーターを使用してドキュメントにコンテンツを追加します。
 
@@ -18,24 +18,24 @@ url: /ja/net/working-with-markdown/indented-code/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## ステップ 2: 指定されたコードのスタイルを追加する
+## ステップ2: インデントされたコードにスタイルを追加する
 
-を使用して、インデントされたコードのカスタム スタイルを追加します。`Styles.Add`の方法`Document`物体。この例では、インデントされたコード用に「IndentedCode」というスタイルを作成します。
+インデントされたコードにカスタムスタイルを追加するには、`Styles.Add`方法の`Document`オブジェクト。この例では、インデントされたコード用の「IndentedCode」というスタイルを作成しています。
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## ステップ 3: 指定されたコードを追加する
+## ステップ3: インデントされたコードを追加する
 
-これで、「IndentedCode」カスタム スタイルを使用してインデントされたコード ブロックを追加できるようになりました。
+これで、「IndentedCode」カスタム スタイルを使用してインデントされたコード ブロックを追加できます。
 
 ```csharp
 builder.Writeln("This is an indented code block");
 ```
 
-### Aspose.Words for .NET を使用したインデントされたコードのソース コード例
+### Aspose.Words for .NET を使用したインデントされたコードのサンプル ソース コード
 
 ```csharp
 //ドキュメント ビルダーを使用してドキュメントにコンテンツを追加します。
@@ -46,14 +46,14 @@ builder.ParagraphFormat.Style = indentedCode;
 builder.Writeln("This is an indented code");
 ```
 
-おめでとうございます！これで、Aspose.Words for .NET でインデントされたコード機能を使用する方法を学習しました。
+おめでとうございます。これで、Aspose.Words for .NET でインデントされたコード機能を使用する方法を学習しました。
 
 
 ### よくある質問
 
-#### Q:Markdownで指定するコードとは何ですか?
+#### Q: Markdown のインデントされたコードとは何ですか?
 
-A: Markdown のインデント コードは、Markdown ドキュメント内のコードを表示するために使用される書式設定方法です。これは、コードの各行をスペースまたはタブでインデントすることで構成されます。
+A: Markdown のインデントされたコードは、Markdown ドキュメントでコードを表示するために使用される書式設定方法です。コードの各行をスペースまたはタブでインデントします。
 
 #### Q: Markdown でインデントされたコードを使用するにはどうすればよいですか?
 
@@ -61,11 +61,11 @@ A: Markdown でインデントされたコードを使用するには、コー�
 
 #### Q: Markdown でインデントされたコードの利点は何ですか?
 
-A: Markdown のコードをインデントすると、コードの可読性が向上し、読者が理解しやすくなります。
+A: Markdown でインデントされたコードにより、コードの読みやすさが向上し、読者が理解しやすくなります。
 
 #### Q: Markdown のインデントされたコードとコード ブロックの違いは何ですか?
 
-A: インデントされたコードはテキストに挿入される小さなコード スニペットに使用され、コード ブロックは大きなコード部分を別の形式で表示するために使用されます。
+A: インデントされたコードはテキストに挿入される小さなコードスニペットに使用され、コードブロックは大きなコード部分を別の形式で表示するために使用されます。
 
 #### Q: Markdown のインデントされたコードはすべての Markdown エディターでサポートされていますか?
 

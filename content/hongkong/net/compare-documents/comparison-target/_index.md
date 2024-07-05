@@ -2,97 +2,121 @@
 title: Word文件中的比較目標
 linktitle: Word文件中的比較目標
 second_title: Aspose.Words 文件處理 API
-description: 了解 Aspose.Words for .NET 的 Word 文件功能中的比較目標，該功能可讓您比較文件並產生包含所做變更的新文件。
+description: 使用 Aspose.Words for .NET 與這份詳細的逐步指南輕鬆比較 Word 文件。節省時間並提高文件比較的準確性。
 type: docs
 weight: 10
 url: /zh-hant/net/compare-documents/comparison-target/
 ---
-以下是解釋下面 C# 原始程式碼的逐步指南，該程式碼使用 Aspose.Words for .NET 的 Word 文件功能中的比較目標。
+## 介紹
 
-## 第 1 步：簡介
+嘿！您是否曾經發現過比較 Word 文件的兩個版本並手動追蹤每一個微小的變化？這就像大海撈針一樣，對吧？好吧，如果我告訴你有一個超級簡單的方法可以使用 Aspose.Words for .NET 來實現這一點呢？這是正確的！這個強大的程式庫可讓您快速比較 Word 文件。今天，我將逐步引導您完成整個過程。準備好成為文件比較嚮導了嗎？讓我們深入了解吧！
 
-Aspose.Words for .NET 的比較目標功能可讓您比較兩個文件並產生一個包含對目標文件所做變更的新文件。這對於追蹤文件的不同版本之間所做的更改非常有用。
+## 先決條件
 
-## 第2步：設定環境
+在我們深入討論細節之前，讓我們確保您已具備開始使用所需的一切：
 
-在開始之前，您需要設定開發環境以使用 Aspose.Words for .NET。確保您已安裝 Aspose.Words 庫並擁有合適的 C# 專案來嵌入程式碼。
+1.  Aspose.Words for .NET：您需要這個函式庫。如果您還沒有，請從[這裡](https://releases.aspose.com/words/net/).
+2. 授權：您需要有效的授權才能釋放 Aspose.Words 的全部潛力。你可以買一個[這裡](https://purchase.aspose.com/buy)或獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
+3. 開發環境：Visual Studio 或任何其他 .NET 相容 IDE。
+4. C# 基礎知識：不用擔心，您不需要成為專業人士，只需了解一些基本知識即可。
 
-## 第 3 步：新增所需的程序集
+## 導入命名空間
 
-若要使用 Aspose.Words for .NET 的比較目標功能，您必須將必要的組件新增至專案。確保您的專案中有對 Aspose.Words 的正確引用。
+首先，您需要匯入必要的名稱空間。他們就像後台工作人員一樣，讓一切順利進行。
 
 ```csharp
+using System;
 using Aspose.Words;
+using Aspose.Words.Compare;
 ```
 
-## 第四步：文檔初始化
+好吧，現在讓我們進入令人興奮的部分——逐步指南！
 
-在這一步驟中，我們將初始化兩個文件以進行比較。您必須指定文件所在的目錄路徑以及來源文件的名稱。
+## 第 1 步：設定您的項目
+
+讓我們準備好我們的專案。啟動您的開發環境並建立一個新的 C# 專案。隨意命名－「DocumentComparison」聽起來不錯，不是嗎？
+
+```csharp
+//在 Visual Studio 中建立一個新的 C# 項目
+```
+
+## 步驟 2：安裝 Aspose.Words for .NET
+
+接下來，您需要將 Aspose.Words 新增到您的專案中。您可以透過 NuGet 套件管理器執行此操作。只需搜尋 Aspose.Words 並安裝它。十分簡單！
+
+```bash
+Install-Package Aspose.Words
+```
+
+## 第 3 步：載入您的文檔
+
+好的，是時候載入您想要比較的文檔了。您將需要這些文件的路徑。假設您有兩個文件：`DocumentA.docx`和`DocumentB.docx`.
 
 ```csharp
 //文檔目錄的路徑。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-//初始化要比較的文件 A。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document docA = new Document(dataDir + "DocumentA.docx");
+Document docB = new Document(dataDir + "DocumentB.docx");
+```
 
-//複製文件 A 以建立文件 B 的相同副本。
+## 第 4 步：克隆文檔
+
+克隆就像製作文件的同卵雙胞胎。此步驟可確保您擁有備份副本以與原始副本進行比較。
+
+```csharp
 Document docB = docA.Clone();
 ```
 
-## 第 5 步：配置比較選項
+## 第 5 步：設定比較選項
 
-在此步驟中，我們將配置比較選項以指定比較的行為。選項包括忽略格式的功能以及比較目標，即 Microsoft Word 的「比較文件」對話方塊中的「顯示變更」選項。
+現在，讓我們配置比較選項。您想忽略格式嗎？也許您只對內容變更感興趣。設定方法如下：
 
 ```csharp
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
+CompareOptions options = new CompareOptions
+{
+    IgnoreFormatting = true,
+    Target = ComparisonTargetType.New
+};
 ```
 
-## 第六步：文件比較
+## 第 6 步：比較文檔
 
-現在我們將比較文件並在新文件中產生結果。
+現在，我們一直在等待的時刻 - 比較文件！這就是奇蹟發生的地方。 Aspose.Words 將比較文件並反白顯示差異。
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
-這`Compare`方法將文件 A 與文件 B 進行比較，並將變更儲存至文件 A。
+## 步驟7：儲存比較文檔
 
-### 使用 Aspose.Words for .NET 比較目標的範例原始程式碼
-
+最後，儲存比較的文件以查看突出顯示的變更。這一步就像把你的工作包裝在一個整齊的包裹裡。
 
 ```csharp
-            
-Document docA = new Document(MyDir + "Document.docx");
-Document docB = docA.Clone();
-
-//與 Microsoft Word「比較文件」對話方塊中的「顯示變更」選項相關。
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
-
-docA.Compare(docB, "user", DateTime.Now, options);
-            
-        
+docA.Save(dataDir + "ComparedDocument.docx");
 ```
 
 ## 結論
 
-在本文中，我們探討了 Aspose.Words for .NET 的 diff 目標功能。此功能可讓您比較兩個文件並產生包含所做變更的新文件。您可以使用這些知識來追蹤文件不同版本之間的變更。
+現在您已經有了 – 使用 Aspose.Words for .NET 比較 Word 文件的簡單而有效的方法！不再需要手動比較，不再令人頭痛。只需幾行程式碼，您就可以突出顯示差異並專注於真正重要的事情。因此，請繼續嘗試一下，看看您可以節省多少時間。
 
-### 常見問題解答
+## 常見問題解答
 
-#### Q：在 Aspose.Words for .NET 中使用比較目標的目的為何？
+### 我可以使用 Aspose.Words 比較不同格式的文件嗎？
 
-答：Aspose.Words for .NET 中的比較目標可讓您比較兩個文件並產生一個包含對目標文件所做更改的新文件。此功能對於追蹤文件不同版本之間所做的更改以及可視化單獨文件中的差異非常有用。
+是的，Aspose.Words 可以無縫處理不同格式的文件。
 
-#### Q：如何在 Aspose.Words for .NET 中使用比較目標？
+### 我需要許可證才能使用 Aspose.Words 嗎？
 
-答：若要在 Aspose.Words for .NET 中使用比較目標，請依照下列步驟操作：
-1. 使用 Aspose.Words 函式庫設定您的開發環境。
-2. 透過引用 Aspose.Words 將必要的程式集新增到您的專案中。
-3. 使用以下命令初始化要比較的文檔`Document`類或`DocumentBuilder`班級。
-4. 透過建立一個來配置比較選項`CompareOptions`物件並設定屬性，例如`IgnoreFormatting`和`Target`（例如。，`ComparisonTargetType.New`為比較目標）。
-5. 使用`Compare`一個文檔上的方法，傳遞另一個文檔和`CompareOptions`對像作為參數。此方法將比較文件並將變更保存在第一個文件中。
+是的，要解鎖所有功能，您需要有效的許可證。您可以購買一個或獲得臨時許可證。
 
-####  Q：這樣做的目的是什麼`Target` property in the `CompareOptions` class?
+### 如果我忽略比較選項中的格式，會發生什麼事？
 
-答： 的`Target`財產在`CompareOptions`類別可讓您指定比較目標，這類似於 Microsoft Word 的「比較文件」對話方塊中的「顯示變更」選項。目標可以設定為`ComparisonTargetType.New`顯示新文件中的更改，`ComparisonTargetType.Current`顯示目前文件中的更改，或`ComparisonTargetType.Formatting`僅顯示格式變更。
+如果忽略格式，比較將僅關注內容更改，忽略任何格式差異。
+
+### 我可以進一步自訂比較選項嗎？
+
+絕對地！ Aspose.Words 提供了多種選項來根據您的需求自訂比較。
+
+### 在哪裡可以找到更詳細的文件？
+
+您可以查看全面的文檔[這裡](https://reference.aspose.com/words/net/).

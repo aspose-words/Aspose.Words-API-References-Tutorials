@@ -74,7 +74,7 @@ Puede administrar notas al pie y notas finales mediante programación mediante:
 - Mantenga las notas a pie de página concisas y relevantes
 - Utilice notas finales para explicaciones más extensas
 - Mantener un formato consistente
-- Vuelva a verificar la exactitud de las citas.
+- Verifique las citas para verificar su exactitud
 
 ## Solución de problemas comunes
 

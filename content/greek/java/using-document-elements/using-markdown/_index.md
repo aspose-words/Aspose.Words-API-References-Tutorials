@@ -120,12 +120,12 @@ builder.getParagraphFormat().setStyleName("Heading 1");
 builder.writeln("Heading 1");
 // Επαναφέρετε τα στυλ από την προηγούμενη παράγραφο για να μην συνδυάζονται στυλ μεταξύ παραγράφων.
 builder.getParagraphFormat().setStyleName("Normal");
-// Εισαγάγετε οριζόντιο κανόνα.
+// Εισαγάγετε τον οριζόντιο κανόνα.
 builder.insertHorizontalRule();
 // Καθορίστε τη λίστα με την παραγγελία.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
-// Προσδιορίστε την ιταλική έμφαση για το κείμενο.
+// Καθορίστε την πλάγια έμφαση για το κείμενο.
 builder.getFont().setItalic(true);
 builder.writeln("Italic Text");
 builder.getFont().setItalic(false);

@@ -30,7 +30,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára.
 
-## 3. lépés: A táblázat felépítése ismételt sorokkal
+## 3. lépés: A táblázat felépítése ismétlődő sorokkal
 Ezután elkészítünk egy táblázatot a következő oldalakon ismétlődő sorokkal. Használja a következő kódot:
 
 ```csharp

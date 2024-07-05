@@ -13,7 +13,7 @@ Compare Documents är en omfattande handledning om att jämföra dokument med As
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Jämför för lika i Word-dokument](./compare-for-equal/) | Steg-för-steg-guide för att förklara C#-källkoden för Compare for Equals i Word-dokumentfunktionen med Aspose.Words för .NET. |
-| [Jämför alternativ i Word-dokument](./compare-options/) | Steg-för-steg-guide för att förklara C#-källkoden för funktionen Jämför alternativ i Word-dokument med Aspose.Words för .NET. |
-| [Jämförelsemål i Word-dokument](./comparison-target/) | Lär dig jämför mål i word-dokumentfunktionen i Aspose.Words för .NET som låter dig jämföra dokument och generera ett nytt dokument som innehåller de ändringar som gjorts. |
+| [Jämför för lika i Word-dokument](./compare-for-equal/) | Lär dig hur du jämför två Word-dokument för jämlikhet med Aspose.Words för .NET. Följ denna steg-för-steg-guide för att säkerställa att dina dokument är identiska. |
+| [Jämför alternativ i Word-dokument](./compare-options/) | Lär dig hur du jämför Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Säkerställ dokumentkonsistens utan ansträngning. |
+| [Jämförelsemål i Word-dokument](./comparison-target/) | Jämför enkelt Word-dokument med Aspose.Words för .NET med denna detaljerade steg-för-steg-guide. Spara tid och förbättra noggrannheten i dokumentjämförelse. |
 | [Jämförelsegranularitet i Word-dokument](./comparison-granularity/) | Lär dig jämför granularitet i Word-dokumentfunktionen i Aspose.Words för .NET som gör att dokument kan jämföras tecken för tecken, och rapporterar gjorda ändringar. |

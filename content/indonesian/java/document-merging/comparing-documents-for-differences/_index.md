@@ -69,7 +69,7 @@ Membandingkan perbedaan dokumen menggunakan Aspose.Words untuk Java adalah prose
 
 ### Bagaimana cara menginstal Aspose.Words untuk Java?
 
- Untuk menginstal Aspose.Words untuk Java, kunjungi halaman download.[Di Sini](https://releases.aspose.com/words/java/) dan ikuti petunjuk instalasi yang diberikan.
+ Untuk menginstal Aspose.Words untuk Java, kunjungi halaman download[Di Sini](https://releases.aspose.com/words/java/) dan ikuti petunjuk instalasi yang diberikan.
 
 ### Bisakah saya membandingkan dokumen dengan format berbeda, seperti DOCX dan PDF?
 

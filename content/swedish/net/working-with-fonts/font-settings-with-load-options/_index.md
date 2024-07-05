@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/working-with-fonts/font-settings-with-load-options/
 ---
-den här handledningen kommer vi att visa dig hur du använder laddningsalternativ med teckensnittsinställningar i ett Word-dokument med Aspose.Words-biblioteket för .NET. Med laddningsalternativ kan du ange ytterligare inställningar när du laddar ett dokument, inklusive teckensnittsinställningar. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
+I den här handledningen kommer vi att visa dig hur du använder laddningsalternativ med teckensnittsinställningar i ett Word-dokument med Aspose.Words-biblioteket för .NET. Med laddningsalternativ kan du ange ytterligare inställningar när du laddar ett dokument, inklusive teckensnittsinställningar. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
 ## Förutsättningar
 Innan du börjar, se till att du har följande saker:
@@ -51,13 +51,13 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
 ## Slutsats
-den här handledningen såg vi hur man använder laddningsalternativ med teckensnittsinställningar i ett Word-dokument med Aspose.Words för .NET. Med laddningsalternativ kan du anpassa dokumentladdningen genom att ange ytterligare inställningar, inklusive teckensnittsinställningar. Använd gärna den här funktionen för att skräddarsy dokumentladdning efter dina specifika behov.
+I den här handledningen såg vi hur man använder laddningsalternativ med teckensnittsinställningar i ett Word-dokument med Aspose.Words för .NET. Med laddningsalternativ kan du anpassa dokumentladdningen genom att ange ytterligare inställningar, inklusive teckensnittsinställningar. Använd gärna den här funktionen för att skräddarsy dokumentladdning efter dina specifika behov.
 
 ### FAQ's
 
 #### F: Hur kan jag ange ett standardteckensnitt när jag laddar ett dokument i Aspose.Words?
 
- S: För att ange ett standardteckensnitt när du laddar ett dokument i Aspose.Words kan du använda`LoadOptions` klass och ställ in`DefaultFontName` egenskap till namnet på det önskade teckensnittet.
+S: För att ange ett standardteckensnitt när du laddar ett dokument i Aspose.Words kan du använda`LoadOptions` klass och ställ in`DefaultFontName` egenskap till namnet på det önskade teckensnittet.
 
 #### F: Vilka andra teckensnittsinställningar kan jag ange med laddningsalternativ i Aspose.Words?
 
@@ -69,4 +69,4 @@ S: Om det angivna standardteckensnittet inte är tillgängligt när dokumentet l
 
 #### F: Kan jag ange olika teckensnittsinställningar för varje uppladdat dokument?
 
- S: Ja, du kan ange olika teckensnittsinställningar för varje laddat dokument genom att använda separata instanser av`LoadOptions` klass och ställ in önskade teckensnittsinställningar för varje instans. Detta gör att du kan anpassa teckensnittets utseende för varje dokument oberoende.
+ S: Ja, du kan ange olika teckensnittsinställningar för varje laddat dokument genom att använda separata instanser av`LoadOptions`klass och ställ in önskade teckensnittsinställningar för varje instans. Detta gör att du kan anpassa teckensnittets utseende för varje dokument oberoende.

@@ -16,7 +16,7 @@ Czy kiedykolwiek znalazłeś się w sytuacji, w której musiałeś usunąć lub 
 
 Zanim zajmiemy się wdrażaniem, upewnij się, że masz następujące elementy:
 
-- Python zainstalowany w twoim systemie
+- Python zainstalowany w Twoim systemie
 - Podstawowa znajomość programowania w języku Python
 - Zainstalowana biblioteka Aspose.Words dla Pythona
 

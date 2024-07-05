@@ -1,6 +1,6 @@
 ---
-title: Предупреждения при рендеринге PDF
-linktitle: Предупреждения при рендеринге PDF
+title: Предупреждения при рендеринге PDF-файлов
+linktitle: Предупреждения при рендеринге PDF-файлов
 second_title: API обработки документов Aspose.Words
 description: Узнайте, как обрабатывать предупреждения при рендеринге PDF в Aspose.Words для .NET. Это подробное руководство гарантирует правильную обработку и сохранение ваших документов.
 type: docs
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Шаг 2. Загрузите документ
 
- Загрузите свой документ в Aspose.Words.`Document` Объект Object. Этот шаг позволяет работать с документом программно.
+ Загрузите свой документ в Aspose.Words.`Document` объект. Этот шаг позволяет работать с документом программно.
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with image.docx");

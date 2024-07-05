@@ -2,25 +2,25 @@
 title: Aspose.Words for Java でのリビジョンの使用
 linktitle: リビジョンの使用
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java のリビジョンを効率的に使用する方法を学びます。開発者向けのステップバイステップのガイド。ドキュメント管理を最適化します。
+description: Aspose.Words for Java のリビジョンを効率的に使用する方法を学習します。開発者向けのステップバイステップ ガイド。ドキュメント管理を最適化します。
 type: docs
 weight: 22
 url: /ja/java/using-document-elements/using-revisions/
 ---
 
-Java 開発者がドキュメントの操作を検討しており、リビジョン管理を実装する必要がある場合、Aspose.Words for Java はリビジョンを効果的に管理するための強力なツール セットを提供します。このチュートリアルでは、Aspose.Words for Java でのリビジョンの使用方法を段階的に説明します。 
+ドキュメントを操作し、リビジョン管理を実装する必要がある Java 開発者の場合、Aspose.Words for Java には、リビジョンを効果的に管理するのに役立つ強力なツール セットが用意されています。このチュートリアルでは、Aspose.Words for Java でリビジョンを使用する方法を段階的に説明します。 
 
-## 1. Aspose.Words for Java の概要
+## 1. Aspose.Words for Java の紹介
 
-Aspose.Words for Java は、Microsoft Word を必要とせずに Word ドキュメントを作成、変更、操作できる堅牢な Java API です。これは、ドキュメント内でリビジョンを実装する必要がある場合に特に便利です。
+Aspose.Words for Java は、Microsoft Word を必要とせずに Word ドキュメントを作成、変更、操作できる強力な Java API です。ドキュメント内で修正を実装する必要がある場合に特に便利です。
 
-## 2. 開発環境のセットアップ
+## 2. 開発環境の設定
 
-Aspose.Words for Java の使用に入る前に、開発環境をセットアップする必要があります。必要な Java 開発ツールと Aspose.Words for Java ライブラリがインストールされていることを確認してください。
+Aspose.Words for Java の使用を開始する前に、開発環境を設定する必要があります。必要な Java 開発ツールと Aspose.Words for Java ライブラリがインストールされていることを確認してください。
 
-## 3. 新しいドキュメントの作成
+## 3. 新しいドキュメントを作成する
 
-まずは、Aspose.Words for Java を使用して新しい Word ドキュメントを作成しましょう。その方法は次のとおりです。
+まず、Aspose.Words for Java を使用して新しい Word 文書を作成しましょう。手順は次のとおりです。
 
 ```java
 string outPath = "Your Output Directory";
@@ -29,9 +29,9 @@ Body body = doc.getFirstSection().getBody();
 Paragraph para = body.getFirstParagraph();
 ```
 
-## 4. ドキュメントへのコンテンツの追加
+## 4. ドキュメントにコンテンツを追加する
 
-空のドキュメントが完成したので、そこにコンテンツを追加できます。この例では、3 つの段落を追加します。
+空白のドキュメントができたので、コンテンツを追加できます。この例では、3 つの段落を追加します。
 
 ```java
 para.appendChild(new Run(doc, "Paragraph 1. "));
@@ -39,15 +39,15 @@ body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
 ```
 
-## 5. リビジョン追跡の開始
+## 5. リビジョントラッキングの開始
 
-ドキュメントのリビジョンを追跡するには、次のコードを使用できます。
+ドキュメント内の変更を追跡するには、次のコードを使用できます。
 
 ```java
 doc.startTrackRevisions("John Doe", new Date());
 ```
 
-## 6. 修正の実施
+## 6. 修正を行う
 
 別の段落を追加して修正してみましょう。
 
@@ -55,9 +55,9 @@ doc.startTrackRevisions("John Doe", new Date());
 para = body.appendParagraph("Paragraph 4. ");
 ```
 
-## 7. 改訂の承認と拒否
+## 7. 修正の承認と拒否
 
-Aspose.Words for Java を使用して、ドキュメントのリビジョンを承認または拒否できます。ドキュメントの生成後、改訂は Microsoft Word で簡単に管理できます。
+Aspose.Words for Java を使用して、ドキュメントの修正を承認または拒否できます。ドキュメントの生成後、Microsoft Word で修正を簡単に管理できます。
 
 ## 8. リビジョン追跡の停止
 
@@ -67,7 +67,7 @@ Aspose.Words for Java を使用して、ドキュメントのリビジョンを�
 doc.stopTrackRevisions();
 ```
 
-## 9. 文書の保存
+## 9. ドキュメントを保存する
 
 最後に、ドキュメントを保存します。
 
@@ -77,9 +77,9 @@ doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
 
 ## 10. 結論
 
-このチュートリアルでは、Aspose.Words for Java でのリビジョンの使用の基本について説明しました。ドキュメントの作成、コンテンツの追加、リビジョン追跡の開始と停止、ドキュメントの保存の方法を学習しました。
+このチュートリアルでは、Aspose.Words for Java でのリビジョンの使用の基本について説明しました。ドキュメントの作成方法、コンテンツの追加方法、リビジョンの追跡の開始と停止方法、ドキュメントの保存方法を学習しました。
 
-これで、Aspose.Words for Java を使用して Java アプリケーションのリビジョンを効果的に管理するために必要なツールが手に入りました。
+Aspose.Words for Java を使用して、Java アプリケーションのリビジョンを効果的に管理するために必要なツールが手に入りました。
 
 ## 完全なソースコード
 ```java
@@ -91,9 +91,9 @@ Paragraph para = body.getFirstParagraph();
 para.appendChild(new Run(doc, "Paragraph 1. "));
 body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
-// つの段落がありますが、いずれのタイプの改訂としても登録されていません
-//リビジョンの追跡中にドキュメント内のコンテンツを追加または削除すると、
-//それらは文書内にそのように表示され、承認または拒否できます。
+//3つの段落がありますが、いずれも修正として登録されていません
+//改訂を追跡しながら文書内のコンテンツを追加/削除すると、
+//これらはドキュメント内にそのように表示され、承認/拒否することができます。
 doc.startTrackRevisions("John Doe", new Date());
 //この段落はリビジョンであり、それに応じて「IsInsertRevision」フラグが設定されます。
 para = body.appendParagraph("Paragraph 4. ");
@@ -103,18 +103,18 @@ ParagraphCollection paragraphs = body.getParagraphs();
 Assert.assertEquals(4, paragraphs.getCount());
 para = paragraphs.get(2);
 para.remove();
-//リビジョンを追跡しているため、段落は文書内にまだ存在しており、「IsDeleteRevision」が設定されています。
-//すべてのリビジョンが承認または拒否されるまで、Microsoft Word ではリビジョンとして表示されます。
+//リビジョンを追跡しているので、段落はまだ文書内に存在し、「IsDeleteRevision」が設定されます。
+//すべての修正が承認または拒否されるまで、Microsoft Word に修正として表示されます。
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-//削除された改訂段落は、変更を受け入れると削除されます。
+//変更を承認すると、削除リビジョンの段落は削除されます。
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
-Assert.assertEquals(para.getRuns().getCount(), 0); //Is.Emptyでした
+Assert.assertEquals(para.getRuns().getCount(), 0); //空でした
 //リビジョンの追跡を停止すると、このテキストは通常のテキストとして表示されます。
 //ドキュメントが変更された場合、リビジョンはカウントされません。
 doc.stopTrackRevisions();
-//文書を保存します。
+//ドキュメントを保存します。
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
   
 ```
@@ -127,18 +127,18 @@ doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
 
 ### 2. Aspose.Words for Java は Microsoft Word のすべてのバージョンと互換性がありますか?
 
-はい、Aspose.Words for Java は、さまざまなバージョンの Microsoft Word と互換性があるように設計されています。
+はい、Aspose.Words for Java はさまざまなバージョンの Microsoft Word と互換性があるように設計されています。
 
-### 3. 既存の Word 文書のリビジョンを追跡できますか?
+### 3. 既存の Word 文書の変更履歴を追跡できますか?
 
-はい、Aspose.Words for Java を使用して、既存の Word ドキュメントのリビジョンを追跡できます。
+はい、Aspose.Words for Java を使用して、既存の Word 文書の変更を追跡できます。
 
-### 4. Aspose.Words for Java を使用するためのライセンス要件はありますか?
+### 4. Aspose.Words for Java を使用するにはライセンス要件がありますか?
 
-はい、プロジェクトで Aspose.Words for Java を使用するにはライセンスを取得する必要があります。あなたはできる[ここからライセンスにアクセスしてください](https://purchase.aspose.com/buy).
+はい、プロジェクトでAspose.Words for Javaを使用するにはライセンスを取得する必要があります。[ライセンスはこちらから入手できます](https://purchase.aspose.com/buy).
 
-### 5. Aspose.Words for Java のサポートはどこで見つけられますか?
+### 5. Aspose.Words for Java のサポートはどこで受けられますか?
 
-ご質問や問題がある場合は、次のサイトにアクセスしてください。[Aspose.Words for Java サポート フォーラム](https://forum.aspose.com/).
+ご質問やご不明な点がございましたら、[Aspose.Words for Java サポート フォーラム](https://forum.aspose.com/).
 
-今すぐ Aspose.Words for Java を使い始めて、ドキュメント管理プロセスを合理化してください。
+今すぐ Aspose.Words for Java を使い始めて、ドキュメント管理プロセスを効率化しましょう。

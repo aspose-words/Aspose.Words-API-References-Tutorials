@@ -22,7 +22,7 @@ is_root: true
 | [Xử lý từ với FormFields](./working-with-formfields/) | Tìm hiểu cách làm việc với các trường biểu mẫu trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn chi tiết với các ví dụ về mã. |  
 | [Xử lý từ với đầu trang và chân trang](./working-with-headers-and-footers/) |Tìm hiểu cách làm việc với đầu trang và chân trang trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn đầy đủ và ví dụ thực tế. |  
 | [Xử lý từ có dấu gạch nối](./working-with-hyphenation/) | Tìm hiểu cách quản lý dấu gạch nối từ trong tài liệu Word bằng Aspose.Words cho .NET. Bao gồm hướng dẫn đầy đủ và ví dụ thực tế. |  
-| [Xử lý từ với danh sách](./working-with-list/) | Tìm hiểu cách làm việc với danh sách trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn chi tiết với các ví dụ về mã. |  
+| [Xử lý từ với danh sách](./working-with-list/) | Tìm hiểu cách làm việc với danh sách trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn chi tiết với các ví dụ về mã. |  
 | [Xử lý từ với Markdown](./working-with-markdown/) | Tìm hiểu cách làm việc với cú pháp Markdown trong tài liệu Word bằng Aspose.Words cho .NET với các hướng dẫn từng bước và ví dụ thực hành này. |  
 | [Xử lý từ bằng nút](./working-with-node/) | Tìm hiểu cách làm việc với các nút trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn chi tiết với các ví dụ về mã. |  
 | [Xử lý từ với OleObjects và ActiveX](./working-with-oleobjects-and-activex/) | Tìm hiểu cách làm việc với các đối tượng OLE và ActiveX trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn chi tiết với các ví dụ về mã. |  

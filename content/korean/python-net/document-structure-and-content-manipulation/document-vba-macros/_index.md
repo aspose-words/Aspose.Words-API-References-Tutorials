@@ -17,7 +17,7 @@ url: /ko/python-net/document-structure-and-content-manipulation/document-vba-mac
 
 ## Python용 Aspose.Words 시작하기
 
-이 자동화 여정을 시작하려면 Python용 Aspose.Words가 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/python/). 설치가 완료되면 Python 프로젝트를 시작하고 필요한 모듈을 가져올 수 있습니다.
+이 자동화 여정을 시작하려면 Python용 Aspose.Words가 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/python/). 설치가 완료되면 Python 프로젝트를 시작하고 필요한 모듈을 가져올 수 있습니다.
 
 ```python
 import aspose.words
@@ -114,10 +114,10 @@ Python용 Aspose.Words와 VBA 매크로의 융합은 Word 문서의 고급 자�
 ## 자주 묻는 질문
 
 ### Python용 Aspose.Words를 어떻게 설치하나요?
- Python용 Aspose.Words의 최신 버전은 다음 사이트에서 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/python/).
+ Python용 Aspose.Words의 최신 버전은 다음 사이트에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/python/).
 
 ### 다른 Microsoft Office 응용프로그램에서 VBA 매크로를 사용할 수 있습니까?
-예, VBA 매크로는 Excel 및 PowerPoint를 포함한 다양한 Microsoft Office 응용 프로그램에서 사용할 수 있습니다.
+예, VBA 매크로는 Excel 및 PowerPoint를 포함한 다양한 Microsoft Office 응용 프로그램에서 활용될 수 있습니다.
 
 ### VBA 매크로 사용과 관련된 보안 위험이 있습니까?
 VBA 매크로는 자동화를 향상시킬 수 있지만 주의 깊게 사용하지 않으면 보안 위험을 초래할 수도 있습니다. 매크로가 신뢰할 수 있는 소스에서 제공되었는지 항상 확인하고 보안 조치 구현을 고려하세요.

@@ -17,7 +17,7 @@ url: /ko/net/programming-with-charts/default-options-for-data-labels/
 - .NET 라이브러리용 Aspose.Words가 설치되었습니다. NuGet 패키지 관리자를 사용하여 다운로드하여 설치할 수 있습니다.
 - 출력 문서가 저장될 문서 디렉터리 경로입니다.
 
-## 2단계: 새 문서를 만들고 차트를 삽입합니다.
+## 2단계: 새 문서 만들기 및 차트 삽입
 
  먼저 새로 만들어 보겠습니다.`Document` 객체와`DocumentBuilder` 문서를 작성합니다.
 
@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 Aspose.Words for .NET은 개발자가 .NET 애플리케이션을 사용하여 프로그래밍 방식으로 Word 문서를 생성, 조작 및 저장할 수 있도록 하는 라이브러리입니다. 차트를 포함한 문서 요소로 단어 처리를 위한 광범위한 기능을 제공합니다.
 
 #### Q2. .NET용 Aspose.Words를 어떻게 설치하나요?
-Visual Studio에서 NuGet 패키지 관리자를 사용하여 .NET용 Aspose.Words를 다운로드하여 설치할 수 있습니다. NuGet 패키지 관리자에서 "Apose.Words"를 검색하여 프로젝트에 설치하기만 하면 됩니다.
+Visual Studio에서 NuGet 패키지 관리자를 사용하여 .NET용 Aspose.Words를 다운로드하여 설치할 수 있습니다. NuGet 패키지 관리자에서 "Aspose.Words"를 검색하여 프로젝트에 설치하기만 하면 됩니다.
 
 #### Q3. .NET용 Aspose.Words를 사용하여 차트의 다른 측면을 사용자 정의할 수 있나요?
 예, Aspose.Words for .NET을 사용하면 차트 유형, 축 레이블, 범례, 플롯 영역 등과 같은 차트의 다양한 측면을 사용자 정의할 수 있습니다. 차트 개체의 다양한 속성에 액세스하고 수정하여 원하는 모양과 동작을 얻을 수 있습니다.

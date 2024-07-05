@@ -17,7 +17,7 @@ url: /zh-hant/python-net/document-structure-and-content-manipulation/document-ol
 
 - Python環境搭建
 - Aspose.Words for Python 函式庫已安裝
-- 對Word文檔結構有基本的了解
+- 對Word文檔結構的基本了解
 
 ## 嵌入 OLE 對象
 

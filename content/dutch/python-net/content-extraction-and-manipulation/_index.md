@@ -29,7 +29,7 @@ Tijdens deze tutorials duik je in de kernconcepten en technieken van inhoudsextr
 
 Aan het einde van deze zelfstudies beschikt u over de kennis om met gemak diverse taken voor het manipuleren van documentinhoud uit te voeren. U krijgt inzicht in de best practices voor het extraheren en manipuleren van inhoud, zodat u ervoor kunt zorgen dat uw documentverwerkingsworkflows efficiënt, nauwkeurig en afgestemd op uw specifieke behoeften zijn.
 
-## Tutorials voor extractie en manipulatie van inhoud
+## Tutorials voor het extraheren en manipuleren van inhoud
 ### [Inhoud uit Word-documenten extraheren en wijzigen](./extract-modify-document-content/)
 Leer hoe u inhoud in Word-documenten kunt extraheren en wijzigen met Aspose.Words voor Python. Stap-voor-stap handleiding met broncode.
 ### [Efficiënte inhoudextractie in Word-documenten](./document-content-extraction/)

@@ -18,7 +18,7 @@ Bảo mật tài liệu đề cập đến việc thực hành bảo vệ tài l
 
 ## 2. Hiểu tầm quan trọng của việc bảo mật tài liệu
 
-Trong thế giới kết nối ngày nay, nguy cơ vi phạm dữ liệu và tấn công mạng cao hơn bao giờ hết. Từ tài liệu cá nhân đến tập tin công ty, mọi dữ liệu không được bảo vệ đều có thể rơi vào tay kẻ xấu, dẫn đến hậu quả nghiêm trọng. Bảo mật tài liệu là điều cần thiết đối với các cá nhân cũng như các tổ chức để ngăn chặn rò rỉ dữ liệu và bảo vệ thông tin nhạy cảm khỏi bị xâm phạm.
+Trong thế giới kết nối ngày nay, nguy cơ vi phạm dữ liệu và tấn công mạng cao hơn bao giờ hết. Từ tài liệu cá nhân đến tập tin công ty, mọi dữ liệu không được bảo vệ đều có thể rơi vào tay kẻ xấu, dẫn đến hậu quả nghiêm trọng. Bảo mật tài liệu là điều cần thiết đối với các cá nhân và tổ chức để ngăn chặn rò rỉ dữ liệu và bảo vệ thông tin nhạy cảm khỏi bị xâm phạm.
 
 ## 3. Giới thiệu Aspose.Words cho Python
 

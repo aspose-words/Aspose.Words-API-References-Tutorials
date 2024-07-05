@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Etapa 5: Crie a classe do manipulador de avisos
 
-Para lidar com avisos de forma eficaz, crie uma classe personalizada que implemente o`IWarningCallback` interface. Esta classe irá capturar e registrar quaisquer avisos de substituição de fonte.
+ Para lidar com avisos de forma eficaz, crie uma classe personalizada que implemente o`IWarningCallback` interface. Esta classe irá capturar e registrar quaisquer avisos de substituição de fonte.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Agora você dominou o processo de manipulação de substituição de fontes sem 
 
 ### P1: Como posso usar fontes de vários diretórios personalizados?
 
- Você pode adicionar vários`FolderFontSource` instâncias para o`fontSources` liste e atualize as fontes de fonte de acordo.
+ Você pode adicionar vários`FolderFontSource` instâncias para o`fontSources`liste e atualize as fontes de fonte de acordo.
 
 ### Q2: Onde posso baixar uma avaliação gratuita do Aspose.Words for .NET?
 

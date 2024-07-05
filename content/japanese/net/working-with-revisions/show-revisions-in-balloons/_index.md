@@ -1,27 +1,27 @@
 ---
-title: リビジョンをバルーンで表示
-linktitle: リビジョンをバルーンで表示
+title: バルーンで変更履歴を表示
+linktitle: バルーンで変更履歴を表示
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してバルーン内にリビジョンを表示します。
+description: Aspose.Words for .NET を使用して、バルーン内にリビジョンを表示します。
 type: docs
 weight: 10
 url: /ja/net/working-with-revisions/show-revisions-in-balloons/
 ---
 
-このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書のバルーンにリビジョンを表示する方法を説明します。完全なソース コードを提供し、マークダウン出力をフォーマットする方法を示します。
+このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書のバルーンにリビジョンを表示する方法を説明します。完全なソース コードを提供し、マークダウン出力の書式設定方法を説明します。
 
-## ステップ 1: ドキュメントをロードする
+## ステップ1: ドキュメントの読み込み
 
-最初のステップは、リビジョンを含むドキュメントをアップロードすることです。
+最初のステップは、修正を含むドキュメントをアップロードすることです。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## ステップ 2: レビュー表示オプションを構成する
+## ステップ2: レビュー表示オプションを設定する
 
-リビジョンがバルーン内に表示されるように表示オプションを設定します。
+バルーン内にリビジョンが表示されるように表示オプションを設定します。
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
@@ -29,35 +29,35 @@ doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
 ```
 
-## ステップ 3: ドキュメントを PDF 形式で保存する
+## ステップ3: ドキュメントをPDF形式で保存する
 
-最後に、バルーン内に表示されているリビジョンを含むドキュメントを PDF として保存します。
+最後に、バルーン内に表示された変更内容とともにドキュメントを PDF として保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
-## マークダウン出力形式
+## Markdown出力形式
 
-読みやすさを向上させるために、出力をマークダウンでフォーマットすることができます。例えば ：
+読みやすさを向上させるために、出力をマークダウン形式でフォーマットすることができます。例:
 
 ```markdown
 - Revisions are Showed in bubbles with revision bars on the right side.
 ```
 
-### Aspose.Words for .NET を使用したバルーン内のリビジョンの表示のソース コード例
+### Aspose.Words for .NET を使用してバルーンでリビジョンを表示するサンプル ソース コード
 
-Aspose.Words for .NET を使用してドキュメント内のバルーンにリビジョンを表示する完全なソース コードを次に示します。
+Aspose.Words for .NET を使用してドキュメント内のバルーンに変更履歴を表示するための完全なソース コードは次のとおりです。
 
 ```csharp
-//ドキュメントディレクトリへのパス。
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";	
 Document doc = new Document(MyDir + "Revisions.docx");
 
-//リビジョンをインラインで挿入し、バルーン内のリビジョンを削除およびフォーマットしてレンダリングします。
+//リビジョンの挿入をインラインでレンダリングし、リビジョンの削除とフォーマットをバルーンで表示します。
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-//ページの右側にリビジョン バーをレンダリングします。
+//ページの右側にリビジョン バーを表示します。
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
 
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
@@ -65,22 +65,22 @@ doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のバルーンにリビジョンを表示する方法を学びました。適切な表示オプションを使用することで、右側にリビジョン バーを備えたバブル内にリビジョンを表示することができました。 Aspose.Words for .NET は、リビジョン管理など、Word ドキュメントを操作するための強力な機能を多数提供します。この知識を利用して、Aspose.Words for .NET を使用して独自の Word 文書のバルーンにリビジョンを表示できるようになりました。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のバルーンにリビジョンを表示する方法を学習しました。適切な表示オプションを使用することで、右側にリビジョン バーがあるバブルにリビジョンを表示できるようになりました。Aspose.Words for .NET には、リビジョン管理など、Word 文書を操作するための強力な機能が多数用意されています。この知識を活用して、Aspose.Words for .NET を使用して独自の Word 文書のバルーンにリビジョンを表示できます。
 
 
 ### よくある質問
 
-#### Q: Aspose.Words for .NET にドキュメントをアップロードするにはどうすればよいですか?
+#### Q: Aspose.Words for .NET でドキュメントをアップロードするにはどうすればよいですか?
 
- A: を使用してください。`Document`ファイルからドキュメントをロードするための Aspose.Words for .NET のクラス。ドキュメントの完全なパスを指定できます。
+ A:`Document`ファイルからドキュメントを読み込むための Aspose.Words for .NET のクラス。ドキュメントの完全なパスを指定できます。
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
 ```
 
-#### Q: Aspose.Words for .NET を使用してバルーン内にリビジョンを表示するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET を使用してバルーンにリビジョンを表示するにはどうすればよいですか?
 
- A: を使用してください。`ShowInBalloons`の財産`RevisionOptions`オブジェクトを使用して、バルーン内のリビジョンの表示を設定します。このプロパティを設定できるのは、`ShowInBalloons.FormatAndDelete`削除および書式設定のリビジョンをバルーン内に表示します。
+ A:`ShowInBalloons`の財産`RevisionOptions`オブジェクトを使用して、バルーン内のリビジョンの表示を設定します。このプロパティは`ShowInBalloons.FormatAndDelete`削除および書式設定の変更をバルーンで表示します。
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
@@ -88,7 +88,7 @@ doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelet
 
 #### Q: Aspose.Words for .NET を使用してドキュメントを PDF 形式で保存するにはどうすればよいですか?
 
- A: を使用してください。`Save`の方法`Document`オブジェクトを使用してドキュメントを PDF 形式で保存します。 「.pdf」拡張子を付けた完全な宛先パスを指定する必要があります。
+ A:`Save`方法の`Document`オブジェクトを使用して、ドキュメントを PDF 形式で保存します。「.pdf」拡張子付きの完全な保存先パスを指定する必要があります。
 
 ```csharp
 doc.Save("path/to/destination/document.pdf");

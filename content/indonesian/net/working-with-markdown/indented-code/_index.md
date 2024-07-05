@@ -18,7 +18,7 @@ Pertama, kita akan menggunakan pembuat dokumen untuk menambahkan konten ke dokum
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Langkah 2: Tambahkan gaya untuk kode tertentu
+## Langkah 2: Tambahkan gaya untuk kode yang menjorok ke dalam
 
 Kami akan menambahkan gaya khusus untuk kode indentasi menggunakan`Styles.Add` metode`Document` obyek. Dalam contoh ini, kita membuat gaya yang disebut "IndentedCode" untuk kode yang diindentasi.
 
@@ -27,7 +27,7 @@ Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedC
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## Langkah 3: Tambahkan kode yang ditentukan
+## Langkah 3: Tambahkan kode yang menjorok ke dalam
 
 Sekarang kita dapat menambahkan blok kode indentasi menggunakan gaya kustom "IndentedCode".
 
@@ -51,7 +51,7 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fitur kode indentasi d
 
 ### FAQ
 
-#### T: Apa yang dimaksud dengan kode tertentu dalam Markdown?
+#### T: Apa yang dimaksud dengan kode indentasi di Markdown?
 
 A: Kode indentasi dalam Markdown adalah metode pemformatan yang digunakan untuk menampilkan kode dalam dokumen Markdown. Ini terdiri dari mengindentasi setiap baris kode dengan spasi atau tab.
 
@@ -65,7 +65,7 @@ J: Kode yang menjorok ke dalam di Markdown meningkatkan keterbacaan kode dan mem
 
 #### T: Apa perbedaan antara kode indentasi dan blok kode di Markdown?
 
-J: Kode berindentasi digunakan untuk cuplikan kode kecil yang disisipkan ke dalam teks, sedangkan blok kode digunakan untuk menampilkan potongan kode yang lebih besar dalam format terpisah.
+J: Kode berindentasi digunakan untuk cuplikan kode kecil yang disisipkan ke dalam teks, sedangkan blok kode digunakan untuk menampilkan potongan kode lebih besar dalam format terpisah.
 
 #### T: Apakah kode yang menjorok ke dalam Markdown didukung oleh semua editor Markdown?
 

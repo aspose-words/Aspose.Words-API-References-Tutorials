@@ -36,7 +36,7 @@ Zamierzamy włączyć śledzenie wersji w dokumencie.
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 ```
 
-## Krok 3: Przenieś węzeł
+## Krok 3: Przesuń węzeł
 
 Podczas generowania wersji przesuniemy węzeł (akapit) z jednej pozycji na drugą.
 
@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Krok 5: Zapisanie dokumentu
 
- Po wstawieniu pola formularza wprowadzania tekstu zapisz dokument w wybranej lokalizacji za pomocą przycisku`Save` metoda. Upewnij się, że podałeś odpowiednią ścieżkę pliku:
+ Po wstawieniu pola formularza wprowadzania tekstu zapisz dokument w wybranej lokalizacji za pomocą przycisku`Save`metoda. Upewnij się, że podałeś odpowiednią ścieżkę pliku:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ W tym samouczku nauczyliśmy się, jak przenosić węzeł w śledzonym dokumenci
 
 #### P: Jak mogę włączyć śledzenie wersji w dokumencie Aspose.Words dla .NET?
 
-O: Aby włączyć śledzenie wersji w dokumencie Aspose.Words dla .NET, możesz użyć opcji`StartTrackRevisions` metoda`Document` obiekt. Metoda ta przyjmuje jako parametry imię i nazwisko autora wersji oraz datę rozpoczęcia monitorowania wersji.
+ O: Aby włączyć śledzenie wersji w dokumencie Aspose.Words dla .NET, możesz użyć opcji`StartTrackRevisions` metoda`Document` obiekt. Metoda ta przyjmuje jako parametry imię i nazwisko autora wersji oraz datę rozpoczęcia monitorowania wersji.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## الخطوة 5: إنشاء فئة معالج التحذير
 
-للتعامل مع التحذيرات بشكل فعال، قم بإنشاء فئة مخصصة تنفذ`IWarningCallback` واجهه المستخدم. ستقوم هذه الفئة بالتقاط وتسجيل أي تحذيرات لاستبدال الخط.
+ للتعامل مع التحذيرات بشكل فعال، قم بإنشاء فئة مخصصة تنفذ`IWarningCallback` واجهه المستخدم. ستقوم هذه الفئة بالتقاط وتسجيل أي تحذيرات لاستبدال الخط.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 
 ### س1: كيف يمكنني استخدام الخطوط من عدة دلائل مخصصة؟
 
- يمكنك إضافة متعددة`FolderFontSource` الحالات إلى`fontSources` قائمة وتحديث مصادر الخطوط وفقا لذلك.
+ يمكنك إضافة متعددة`FolderFontSource` الحالات إلى`fontSources`قائمة وتحديث مصادر الخطوط وفقا لذلك.
 
 ### س2: أين يمكنني تنزيل نسخة تجريبية مجانية من Aspose.Words لـ .NET؟
 

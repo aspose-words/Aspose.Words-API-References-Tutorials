@@ -32,7 +32,7 @@ Laten we eerst een nieuw project opzetten in Visual Studio.
 Om Aspose.Words te gebruiken, moet u het aan uw project toevoegen. Dit kan gedaan worden via NuGet Package Manager.
 
 1. **Open NuGet Package Manager:** Klik met de rechtermuisknop op uw project in de Solution Explorer en selecteer vervolgens NuGet-pakketten beheren.
-2. **Search for Aspose.Words:** Zoek in NuGet Package Manager naar "Apose.Words".
+2. **Search for Aspose.Words:** Zoek in NuGet Package Manager naar "Aspose.Words".
 3. **Install the Package:** Klik op Installeren om Aspose.Words aan uw project toe te voegen.
 
 ## Stap 3: Naamruimten importeren
@@ -119,4 +119,4 @@ Een samenvoegveld is een tijdelijke aanduiding in een document die dynamisch kan
 Aspose.Words ondersteunt meerdere versies van .NET, waaronder .NET Framework, .NET Core en .NET Standard.
 
 ### 5. Waar kan ik de API-documentatie voor Aspose.Words vinden?
- De API-documentatie is beschikbaar.[hier](https://reference.aspose.com/words/net/).
+ De API-documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).

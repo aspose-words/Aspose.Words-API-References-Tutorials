@@ -77,7 +77,7 @@ I Aspose.Words kan ett dokument delas upp i sidor. Varje sida representerar en d
 ### Extrahera text från en specifik sida
 
 ```java
-// Ange sidnumret (nollbaserat index)
+// Ange sidnummer (nollbaserat index)
 int pageNumber = 0;
 
 // Extrahera text från den angivna sidan
@@ -104,7 +104,7 @@ for (int i = 0; i < pageCount; i++) {
 
 ### Formatering och styling av text
 
-Du kan använda formatering och stil på den extraherade texten, precis som du skulle göra med all annan text i Java. Till exempel, för att göra text fetstil:
+Du kan använda formatering och stil på den extraherade texten, precis som du skulle göra med all annan text i Java. För att till exempel göra text fetstil:
 
 ```java
 // Skapa en DocumentBuilder

@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Microsoft Word 목록 템플릿 중 하나를 기반으로 번호 매기기 목록을 만듭니다.
+// Microsoft Word 목록 템플릿 중 하나를 기반으로 번호 매기기 목록 만들기
 //문서 작성기의 현재 단락에 적용합니다.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Microsoft Word 목록 템플릿 중 하나를 기반으로 글머리 기호 목록을 만듭니다.
+// Microsoft Word 목록 템플릿 중 하나를 기반으로 글머리 기호 목록 만들기
 //문서 작성기의 현재 단락에 적용합니다.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 

@@ -1,7 +1,7 @@
 ---
 title: Formatieren von Tabellen und Tabellenstilen in Aspose.Words für Java
 linktitle: Formatieren von Tabellen und Tabellenstilen
-second_title: Aspose.Words Java-Dokumentverarbeitungs-API
+second_title: Aspose.Words Java-API zur Dokumentverarbeitung
 description: Erfahren Sie, wie Sie Tabellen formatieren und Tabellenstile in Aspose.Words für Java anwenden. Entdecken Sie Schritt-für-Schritt-Anleitungen mit Quellcode für eine effektive Tabellenformatierung. Verbessern Sie Ihr Dokumentlayout mit Aspose.Words.
 type: docs
 weight: 17
@@ -10,15 +10,15 @@ url: /de/java/document-conversion-and-export/formatting-tables-and-table-styles/
 
 ## Einführung in die Formatierung von Tabellen und Tabellenstilen in Aspose.Words für Java
 
-Tabellen spielen eine entscheidende Rolle bei der Strukturierung und Organisation von Informationen in Dokumenten. Aspose.Words für Java bietet leistungsstarke Funktionen zum Formatieren von Tabellen und Anwenden von Tabellenstilen, um die visuelle Attraktivität Ihrer Dokumente zu verbessern. In dieser Schritt-für-Schritt-Anleitung untersuchen wir verschiedene Aspekte der Formatierung von Tabellen und der Anwendung von Tabellenstilen mit Aspose.Words für Java.
+Tabellen spielen eine entscheidende Rolle bei der Strukturierung und Organisation von Informationen in Dokumenten. Aspose.Words für Java bietet leistungsstarke Funktionen zum Formatieren von Tabellen und Anwenden von Tabellenstilen, um die visuelle Attraktivität Ihrer Dokumente zu verbessern. In dieser Schritt-für-Schritt-Anleitung untersuchen wir verschiedene Aspekte des Formatierens von Tabellen und Anwendens von Tabellenstilen mit Aspose.Words für Java.
 
 ## Voraussetzungen
 
-Bevor wir uns mit den Details befassen, stellen Sie sicher, dass Sie die Aspose.Words for Java-Bibliothek in Ihr Projekt integriert haben. Sie können es von der Aspose-Website herunterladen:[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/java/).
+Bevor wir in die Details eintauchen, stellen Sie sicher, dass Sie die Aspose.Words für Java-Bibliothek in Ihr Projekt integriert haben. Sie können sie von der Aspose-Website herunterladen:[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/java/).
 
-## Ermitteln Sie den Abstand zwischen der Tabelle und dem umgebenden Text
+## Abstand zwischen Tabelle und umgebendem Text ermitteln
 
-Lassen Sie uns zunächst untersuchen, wie Sie den Abstand zwischen einer Tabelle und dem umgebenden Text in einem Dokument ermitteln.
+Sehen wir uns zunächst an, wie Sie den Abstand zwischen einer Tabelle und dem umgebenden Text in einem Dokument abrufen können.
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");
@@ -29,9 +29,9 @@ System.out.println("Distance Right: " + table.getDistanceRight());
 System.out.println("Distance Left: " + table.getDistanceLeft());
 ```
 
-## Wenden Sie einen Umrissrahmen auf eine Tabelle an
+## Anwenden einer Gliederungsgrenze auf eine Tabelle
 
-Mit diesem Code können Sie eine Tabelle an der Mitte der Seite ausrichten, vorhandene Ränder löschen und einen benutzerdefinierten Umrissrahmen festlegen:
+Mit diesem Code können Sie eine Tabelle in der Seitenmitte ausrichten, vorhandene Rahmen löschen und einen benutzerdefinierten Gliederungsrahmen festlegen:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");
@@ -45,7 +45,7 @@ table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
 table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
 ```
 
-## Erstellen Sie eine Tabelle mit Rändern
+## Erstellen Sie eine Tabelle mit Rahmen
 
 Dieser Codeausschnitt zeigt, wie Sie eine Tabelle erstellen und Rahmen für die Tabelle und ihre Zellen festlegen:
 
@@ -56,7 +56,7 @@ table.clearBorders();
 table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
 ```
 
-## Ändern Sie die Zeilenformatierung
+## Zeilenformatierung ändern
 
 Erfahren Sie, wie Sie die Formatierung einer bestimmten Zeile in einer Tabelle ändern:
 
@@ -71,7 +71,7 @@ firstRow.getRowFormat().setAllowBreakAcrossPages(true);
 
 ## Zeilenformatierung anwenden
 
-Dieses Beispiel zeigt, wie Formatierung auf eine ganze Zeile in einer Tabelle angewendet wird:
+Dieses Beispiel zeigt, wie Sie die Formatierung auf eine ganze Zeile einer Tabelle anwenden:
 
 ```java
 Document doc = new Document();
@@ -88,9 +88,9 @@ table.setBottomPadding(30.0);
 builder.writeln("I'm a wonderfully formatted row.");
 ```
 
-## Zellauffüllung festlegen
+## Zellenpolster festlegen
 
-Erfahren Sie, wie Sie den Abstand für einzelne Zellen in einer Tabelle festlegen:
+Erfahren Sie, wie Sie die Innenabstände für einzelne Zellen in einer Tabelle festlegen:
 
 ```java
 Document doc = new Document();
@@ -101,7 +101,7 @@ builder.getCellFormat().setPaddings(30.0, 50.0, 30.0, 50.0);
 builder.writeln("I'm a wonderfully formatted cell.");
 ```
 
-## Ändern Sie die Zellformatierung
+## Zellenformatierung ändern
 
 Erfahren Sie, wie Sie die Formatierung einer bestimmten Zelle in einer Tabelle ändern:
 
@@ -114,26 +114,26 @@ firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
 firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
 ```
 
-## Formatieren Sie Tabelle und Zelle mit unterschiedlichen Rändern
+## Tabelle und Zelle mit unterschiedlichen Rändern formatieren
 
-Erfahren Sie, wie Sie unterschiedliche Ränder für einzelne Zellen in einer Tabelle festlegen:
+Erfahren Sie, wie Sie für einzelne Zellen in einer Tabelle unterschiedliche Rahmen festlegen:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 Table table = builder.startTable();
-// Legen Sie die Tischränder fest
+// Festlegen der Tabellenränder
 table.setBorders(LineStyle.SINGLE, 2.0, Color.BLACK);
-// Legen Sie die Zellschattierung für einzelne Zellen fest
+// Festlegen der Zellenschattierung für einzelne Zellen
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.RED);
-// Fügen Sie Inhalt zu den Zellen hinzu
+// Hinzufügen von Inhalten zu den Zellen
 builder.writeln("Cell #1");
 builder.insertCell();
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
 // Zellenformatierung für die nächste Zeile löschen
 builder.getCellFormat().clearFormatting();
-// Erstellen Sie größere Ränder für die erste Zelle dieser Zeile
+// Größere Ränder für die erste Zelle dieser Zeile erstellen
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -144,7 +144,7 @@ builder.getCellFormat().clearFormatting();
 builder.writeln("Cell #4");
 ```
 
-## Legen Sie den Tabellentitel und die Beschreibung fest
+## Tabellentitel und -beschreibung festlegen
 
 Fügen Sie Ihrer Tabelle einen Titel und eine Beschreibung hinzu:
 
@@ -155,9 +155,9 @@ table.setTitle("Test title");
 table.setDescription("Test description");
 ```
 
-## Schritt 10: Zellabstand zulassen
+## Schritt 10: Zellenabstand zulassen
 
-Erlauben Sie den Zellenabstand und legen Sie seinen Wert für eine Tabelle fest:
+Lassen Sie den Zellenabstand zu und legen Sie seinen Wert für eine Tabelle fest:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Tables.docx");
@@ -166,7 +166,7 @@ table.setAllowCellSpacing(true);
 table.setCellSpacing(2.0);
 ```
 
-## Schritt 11: Erstellen Sie einen Tisch mit Stil
+## Schritt 11: Bauen Sie einen Tisch mit Stil
 
 Erstellen Sie eine Tabelle mit einem vordefinierten Stil:
 
@@ -182,7 +182,7 @@ builder.insertCell();
 builder.writeln("Quantity (kg)");
 ```
 
-## Schritt 12: Erweitern Sie die Formatierung für Zellen und Zeilen unter „Stil“.
+## Schritt 12: Erweitern Sie die Formatierung auf Zellen und Zeilen aus dem Stil
 
 Erfahren Sie, wie Sie Tabellenstile erweitern, um Formatierungen auf Zellen und Zeilen anzuwenden:
 
@@ -197,7 +197,7 @@ Color cellShadingAfter = firstCell.getCellFormat().getShading().getBackgroundPat
 
 ## Schritt 13: Erstellen Sie einen Tabellenstil
 
-Erstellen Sie einen benutzerdefinierten Tabellenstil mit spezifischer Formatierung:
+Erstellen Sie einen benutzerdefinierten Tabellenstil mit bestimmter Formatierung:
 
 ```java
 Document doc = new Document();
@@ -213,7 +213,7 @@ builder.writeln("Quantity (kg)");
 
 ## Schritt 14: Bedingte Formatierung definieren
 
-Wenden Sie bedingte Formatierung auf Zeilen in einer Tabelle an:
+Wenden Sie eine bedingte Formatierung auf Zeilen in einer Tabelle an:
 
 ```java
 Document doc = new Document();
@@ -224,9 +224,9 @@ tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatter
 table.setStyle(tableStyle);
 ```
 
-## Schritt 15: Legen Sie die TableCell-Formatierung fest
+## Schritt 15: Tabellenzellenformatierung festlegen
 
-Legen Sie spezifische Formatierungen für einzelne Zellen fest:
+Legen Sie für einzelne Zellen spezifische Formatierungen fest:
 
 ```java
 Document doc = new Document();
@@ -242,9 +242,9 @@ cellFormat.setBottomPadding(30.0);
 builder.writeln("I'm a wonderfully formatted cell.");
 ```
 
-## Schritt 16: TableRow-Formatierung festlegen
+## Schritt 16: Tabellenzeilenformatierung festlegen
 
-Wenden Sie die Formatierung auf ganze Zeilen in einer Tabelle an:
+Formatierung auf ganze Zeilen in einer Tabelle anwenden:
 
 ```java
 Document doc = new Document();
@@ -262,26 +262,26 @@ builder.writeln("I'm a wonderfully formatted row.");
 
 ## Abschluss
 
-Mit Aspose.Words für Java können Sie Tabellen präzise formatieren und Tabellenstile anwenden. Von der Änderung der Formatierung einzelner Zellen bis hin zur Erstellung benutzerdefinierter Tabellenstile verfügen Sie über die Tools, mit denen Sie Ihre Dokumente optisch ansprechend und organisiert gestalten können.
+Mit Aspose.Words für Java können Sie Tabellen formatieren und Tabellenstile präzise anwenden. Von der Änderung der Formatierung einzelner Zellen bis hin zur Erstellung benutzerdefinierter Tabellenstile verfügen Sie über die Tools, um Ihre Dokumente optisch ansprechend und übersichtlich zu gestalten.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie lade ich Aspose.Words für Java herunter?
 
  Sie können Aspose.Words für Java von der Aspose-Website herunterladen:[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/java/).
 
-### Kann ich einzelne Zellen innerhalb einer Tabelle unterschiedlich umranden?
+### Kann ich einzelnen Zellen einer Tabelle unterschiedliche Rahmen zuweisen?
 
-Ja, Sie können mit Aspose.Words für Java unterschiedliche Rahmen für einzelne Zellen innerhalb einer Tabelle festlegen, wie in diesem Handbuch gezeigt.
+Ja, Sie können mit Aspose.Words für Java unterschiedliche Ränder für einzelne Zellen in einer Tabelle festlegen, wie in diesem Handbuch gezeigt.
 
-### Was ist der Zweck, einen Tabellentitel und eine Beschreibung festzulegen?
+### Welchen Zweck hat das Festlegen eines Tabellentitels und einer Tabellenbeschreibung?
 
-Das Festlegen eines Tabellentitels und einer Tabellenbeschreibung verbessert die Zugänglichkeit und Organisation Ihres Dokuments und erleichtert Lesern und unterstützenden Technologien das Verständnis des Inhalts.
+Durch das Festlegen eines Tabellentitels und einer Tabellenbeschreibung verbessern Sie die Zugänglichkeit und Organisation Ihres Dokuments und erleichtern Lesern und unterstützenden Technologien das Verständnis des Inhalts.
 
-### Wie kann ich bedingte Formatierung auf bestimmte Zeilen in einer Tabelle anwenden?
+### Wie kann ich eine bedingte Formatierung auf bestimmte Zeilen in einer Tabelle anwenden?
 
-Sie können bedingte Formatierung auf bestimmte Zeilen in einer Tabelle anwenden, indem Sie benutzerdefinierte Tabellenstile mit Regeln für bedingte Formatierung definieren, wie in diesem Handbuch gezeigt.
+Sie können bedingte Formatierung auf bestimmte Zeilen in einer Tabelle anwenden, indem Sie benutzerdefinierte Tabellenstile mit Regeln zur bedingten Formatierung definieren, wie in diesem Handbuch gezeigt.
 
 ### Wo finde ich weitere Dokumentation und Ressourcen für Aspose.Words für Java?
 
- Eine umfassende Dokumentation und zusätzliche Ressourcen finden Sie in der Dokumentation zu Aspose.Words für Java:[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/).
+ Umfassende Dokumentation und zusätzliche Ressourcen finden Sie in der Dokumentation zu Aspose.Words für Java:[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/).

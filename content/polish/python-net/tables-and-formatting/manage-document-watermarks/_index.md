@@ -8,7 +8,7 @@ weight: 10
 url: /pl/python-net/tables-and-formatting/manage-document-watermarks/
 ---
 
-Znaki wodne służą jako subtelny, ale efektowny element w dokumentach, dodając warstwę profesjonalizmu i estetyki. Dzięki Aspose.Words dla Pythona możesz łatwo tworzyć i formatować znaki wodne, aby poprawić atrakcyjność wizualną swoich dokumentów. Ten samouczek poprowadzi Cię krok po kroku przez proces dodawania znaków wodnych do dokumentów przy użyciu interfejsu API Aspose.Words dla Pythona.
+Znaki wodne służą jako subtelny, ale efektowny element w dokumentach, dodając warstwę profesjonalizmu i estetyki. Dzięki Aspose.Words dla Pythona możesz łatwo tworzyć i formatować znaki wodne, aby poprawić atrakcyjność wizualną swoich dokumentów. Ten samouczek poprowadzi Cię krok po kroku przez proces dodawania znaków wodnych do dokumentów za pomocą interfejsu API Aspose.Words dla Pythona.
 
 ## Wprowadzenie do znaków wodnych w dokumentach
 

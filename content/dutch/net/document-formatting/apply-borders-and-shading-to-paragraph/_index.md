@@ -2,40 +2,77 @@
 title: Randen en arcering toepassen op alinea's in Word-document
 linktitle: Randen en arcering toepassen op alinea's in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u randen en arcering toepast op een alinea in een Word-document met Aspose.Words voor .NET.
+description: Pas randen en arcering toe op alinea's in Word-documenten met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om uw documentopmaak te verbeteren.
 type: docs
 weight: 10
 url: /nl/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
-In deze zelfstudie laten we u zien hoe u randen en arcering toepast op een alinea in een Word-document met behulp van de functionaliteit van Aspose.Words voor .NET. Volg de onderstaande stappen om de broncode te begrijpen en opmaakwijzigingen toe te passen.
+## Invoering
 
-## Stap 1: Het document aanmaken en configureren
+Hallo daar, heb je je ooit afgevraagd hoe je je Word-documenten kunt laten opvallen met mooie randen en schaduwen? Nou, je bent op de juiste plek! Vandaag duiken we in de wereld van Aspose.Words voor .NET om onze paragrafen op te fleuren. Stel u voor dat uw document er met slechts een paar regels code net zo strak uitziet als het werk van een professionele ontwerper. klaar om te beginnen? Laten we gaan!
 
-Maak om te beginnen een nieuw document en een bijbehorend DocumentBuilder-object. Hier is hoe:
+## Vereisten
+
+Voordat we onze mouwen opstropen en in coderen duiken, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben. Hier is uw snelle checklist:
+
+-  Aspose.Words voor .NET: deze bibliotheek moet geïnstalleerd zijn. Je kunt het downloaden van de[Aspose-website](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Visual Studio of een andere IDE die .NET ondersteunt.
+- Basiskennis van C#: net genoeg om de codefragmenten te begrijpen en aan te passen.
+- Een geldige licentie: Ofwel a[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) of een gekocht exemplaar[Stel](https://purchase.aspose.com/buy).
+
+## Naamruimten importeren
+
+Voordat we in de code springen, moeten we ervoor zorgen dat we de benodigde naamruimten in ons project hebben geïmporteerd. Dit maakt alle coole functies van Aspose.Words voor ons toegankelijk.
 
 ```csharp
-// Pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+using Aspose.Words.Drawing;
+using System.Drawing;
+```
+
+Laten we het proces nu in hapklare stappen opsplitsen. Elke stap heeft een kop en een gedetailleerde uitleg. Klaar? Laten we gaan!
+
+## Stap 1: Stel uw documentenmap in
+
+Allereerst hebben we een plek nodig om ons prachtig opgemaakte document op te slaan. Laten we het pad naar uw documentmap instellen.
+
+```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ In deze map wordt uw definitieve document opgeslagen. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad op uw machine.
+
+## Stap 2: Maak een nieuw document en DocumentBuilder
+
+ Vervolgens moeten we een nieuw document maken en een`DocumentBuilder` voorwerp. De`DocumentBuilder` is onze toverstaf waarmee we het document kunnen manipuleren.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 2: Randconfiguratie
+ De`Document` object vertegenwoordigt ons hele Word-document, en de`DocumentBuilder` helpt ons inhoud toe te voegen en op te maken.
 
-Laten we nu de alinearanden configureren door de randstijl voor elke zijde op te geven. Hier is hoe:
+## Stap 3: Definieer alinearanden
+
+Laten we nu een aantal stijlvolle randen aan onze paragraaf toevoegen. We definiëren de afstand tot de tekst en stellen verschillende randstijlen in.
 
 ```csharp
 BorderCollection borders = builder.ParagraphFormat.Borders;
-borders. DistanceFromText = 20;
+borders.DistanceFromText = 20;
 borders[BorderType.Left].LineStyle = LineStyle.Double;
 borders[BorderType.Right].LineStyle = LineStyle.Double;
 borders[BorderType.Top].LineStyle = LineStyle.Double;
 borders[BorderType.Bottom].LineStyle = LineStyle.Double;
 ```
 
-## Stap 3: Infill-installatie
+Hier stellen we een afstand van 20 punten in tussen de tekst en de randen. De randen aan alle zijden (links, rechts, boven, onder) zijn ingesteld op dubbele lijnen. Zin, toch?
 
-We gaan nu de alinea-opvulling configureren door de textuur en de opvulkleuren op te geven. Hier is hoe:
+## Stap 4: Pas arcering toe op de alinea
+
+Randen zijn geweldig, maar laten we een stapje verder gaan met wat schaduw. We gebruiken een diagonaal kruispatroon met een mix van kleuren om onze alinea te laten opvallen.
 
 ```csharp
 Shading shading = builder.ParagraphFormat.Shading;
@@ -44,70 +81,45 @@ shading.BackgroundPatternColor = System.Drawing.Color.LightCoral;
 shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 ```
 
-## Stap 4: Voeg inhoud toe
+In deze stap hebben we een diagonale kruistextuur toegepast met licht koraal als achtergrondkleur en licht zalm als voorgrondkleur. Het is alsof je je paragraaf in merkkleding kleedt!
 
-We gaan wat opgemaakte inhoud aan de paragraaf toevoegen. Hier is hoe:
+## Stap 5: Voeg tekst toe aan de alinea
+
+Wat is een alinea zonder tekst? Laten we een voorbeeldzin toevoegen om onze opmaak in actie te zien.
 
 ```csharp
-builder.Write("I'm a formatted paragraph with a double border and a nice shading.");
+builder.Write("I'm a formatted paragraph with double border and nice shading.");
 ```
 
-## Stap 3: Het document opslaan
+Deze regel voegt onze tekst in het document in. Eenvoudig, maar nu verpakt in een stijlvol kader en een schaduwrijke achtergrond.
 
- Nadat u het tekstinvoerformulierveld hebt ingevoegd, slaat u het document op de gewenste locatie op met behulp van de`Save` methode. Zorg ervoor dat u het juiste bestandspad opgeeft:
+## Stap 6: Sla het document op
+
+Eindelijk is het tijd om ons werk te redden. Laten we het document opslaan in de opgegeven map met een beschrijvende naam.
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ```
 
-### Voorbeeldbroncode voor het toepassen van randen en arcering op alinea's met Aspose.Words voor .NET
-
-Hier is de volledige broncode voor de functie Randen en arcering toepassen op alinea met Aspose.Words voor .NET:
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	BorderCollection borders = builder.ParagraphFormat.Borders;
-	borders.DistanceFromText = 20;
-	borders[BorderType.Left].LineStyle = LineStyle.Double;
-	borders[BorderType.Right].LineStyle = LineStyle.Double;
-	borders[BorderType.Top].LineStyle = LineStyle.Double;
-	borders[BorderType.Bottom].LineStyle = LineStyle.Double;
-
-	Shading shading = builder.ParagraphFormat.Shading;
-	shading.Texture = TextureIndex.TextureDiagonalCross;
-	shading.BackgroundPatternColor = System.Drawing.Color.LightCoral;
-	shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
-
-	builder.Write("I'm a formatted paragraph with double border and nice shading.");
-	
-	doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
-
-```
+ Hiermee wordt ons document met de naam opgeslagen`DocumentFormatting.ApplyBordersAndShadingToParagraph.doc` in de map die we eerder hebben opgegeven.
 
 ## Conclusie
 
- In deze zelfstudie hebben we geleerd hoe u randen en arcering kunt toepassen op een alinea in een Word-document met behulp van Aspose.Words voor .NET. Door de alinea's te configureren`Borders` En`Shading` eigenschappen konden we de randstijl, lijnkleur en vulkleur voor de alinea instellen. Aspose.Words voor .NET biedt krachtige opmaakmogelijkheden om het uiterlijk van alinea's aan te passen en de visuele weergave van uw documenten te verbeteren.
+En daar heb je het! Met slechts een paar regels code hebben we een eenvoudige alinea omgezet in een visueel aantrekkelijk stukje inhoud. Aspose.Words voor .NET maakt het ongelooflijk eenvoudig om professioneel ogende opmaak aan uw documenten toe te voegen. Of u nu een rapport, een brief of een ander document voorbereidt, deze trucs zullen u helpen een geweldige indruk te maken. Dus ga uw gang, probeer het uit en zie hoe uw documenten tot leven komen!
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Hoe pas ik randen en arcering toe op een alinea in een Word-document met Aspose.Words voor .NET?
+### Kan ik voor elke rand verschillende lijnstijlen gebruiken?  
+ Absoluut! Met Aspose.Words voor .NET kunt u elke rand afzonderlijk aanpassen. Stel gewoon de`LineStyle` voor elk randtype, zoals weergegeven in de handleiding.
 
-A: Volg deze stappen om randen en arcering toe te passen op een alinea in een Word-document met Aspose.Words voor .NET:
-1.  Maak een nieuw document en a`DocumentBuilder` voorwerp.
-2.  Configureer de alinearanden door naar het bestand te gaan`Borders` eigendom van de`ParagraphFormat` en het instellen van de randstijl voor elke zijde.
-3. Configureer de alinea-opvulling door naar het bestand te gaan`Shading` eigendom van de`ParagraphFormat` en het specificeren van de textuur en opvulkleuren.
-4.  Voeg inhoud toe aan de alinea met behulp van de`Write` werkwijze van de`DocumentBuilder`.
-5.  Sla het document op met behulp van de`Save` methode.
+### Welke andere schaduwtexturen zijn beschikbaar?  
+ Er zijn verschillende texturen die u kunt gebruiken, zoals effen, horizontale strepen, verticale strepen en meer. Controleer de[Documentatie aanvragen](https://reference.aspose.com/words/net/) voor een volledige lijst.
 
-#### Vraag: Hoe stel ik de randstijl in voor elke zijde van de alinea?
+### Hoe kan ik de randkleur wijzigen?  
+ U kunt de randkleur instellen met behulp van de`Color` eigendom voor elke grens. Bijvoorbeeld,`borders[BorderType.Left].Color = Color.Red;`.
 
- A: Om de randstijl voor elke zijde van de alinea in te stellen, kunt u toegang krijgen tot de`Borders` eigendom van de`ParagraphFormat` en stel de`LineStyle` eigendom voor ieder`BorderType` (bijv.`BorderType.Left`, `BorderType.Right`, `BorderType.Top`, `BorderType.Bottom` ). U kunt verschillende lijnstijlen opgeven, zoals`LineStyle.Single`, `LineStyle.Double`, `LineStyle.Dotted`, enz.
+### Is het mogelijk om randen en arcering toe te passen op een specifiek deel van de tekst?  
+ Ja, u kunt randen en arcering toepassen op specifieke tekstgedeelten met behulp van de`Run` voorwerp binnen de`DocumentBuilder`.
 
-#### Vraag: Hoe geef ik de textuur en opvulkleuren op voor de alinea-arcering?
-
- A: Om de textuur en opvulkleuren voor de alinea-arcering op te geven, kunt u toegang krijgen tot het`Shading` eigendom van de`ParagraphFormat` en stel de`Texture` eigenschap naar een gewenste textuurindex (bijv.`TextureIndex.TextureDiagonalCross` ). U kunt ook de`BackgroundPatternColor` En`ForegroundPatternColor` eigenschappen naar de gewenste kleuren met behulp van de`System.Drawing.Color` klas.
+### Kan ik dit proces voor meerdere alinea's automatiseren?  
+Zeker! U kunt door uw alinea's lopen en dezelfde instellingen voor randen en arcering programmatisch toepassen.

@@ -135,4 +135,4 @@ Sì, i campi possono essere nidificati l'uno nell'altro per creare contenuti din
 
 ## Accedi a più risorse
 
- Per informazioni più dettagliate ed esempi di codice, visitare il[Aspose.Words per riferimento API Python](https://reference.aspose.com/words/python-net/) . Per scaricare l'ultima versione della libreria, visitare il[Pagina di download di Aspose.Words per Python](https://releases.aspose.com/words/python/).
+ Per informazioni più dettagliate ed esempi di codice, visitare il sito[Aspose.Words per riferimento API Python](https://reference.aspose.com/words/python-net/) . Per scaricare l'ultima versione della libreria, visitare il[Pagina di download di Aspose.Words per Python](https://releases.aspose.com/words/python/).

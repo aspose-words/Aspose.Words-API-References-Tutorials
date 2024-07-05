@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Шаг 2. Создайте новый документ и DocumentBuilder
- Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder`объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте и настройте фигуру диаграммы
- Вставьте фигуру диаграммы в документ, используя`InsertChart` метод`DocumentBuilder` Объект Object. Установите желаемый тип и размеры диаграммы.
+ Вставьте фигуру диаграммы в документ, используя`InsertChart` метод`DocumentBuilder` объект. Установите желаемый тип и размеры диаграммы.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);

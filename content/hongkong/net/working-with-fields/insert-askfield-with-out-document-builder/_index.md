@@ -73,7 +73,7 @@ field. Update();
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-在此範例中，我們建立了一個新文檔，在不使用 DocumentBuilder 的情況下插入了 ASK 字段，配置了該字段的各種屬性，並使用指定的文件名稱保存了該文檔。
+在此範例中，我們建立了一個新文檔，在不使用 DocumentBuilder 的情況下插入了 ASK 字段，配置了該字段的各種屬性，並使用指定的文件名稱保存了文檔。
 
 關於使用 Aspose.Words for .NET 的「插入 ASK 欄位而不使用 DocumentBuilder」功能的指南到此結束。
 

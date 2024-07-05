@@ -61,13 +61,13 @@ foreach (Revision revision in doc.Revisions)
 
 ## Závěr
 
-tomto tutoriálu jsme se naučili, jak získat podrobnosti o skupině revizí v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pomocí smyčky a příslušných vlastností jsme byli schopni zobrazit podrobnosti, jako je typ revize, autor, datum a revidovaný text. Aspose.Words for .NET nabízí mnoho výkonných funkcí pro manipulaci s dokumenty Word, včetně správy revizí. Nyní můžete tyto znalosti použít k získání podrobností o skupině revizí do vašich vlastních dokumentů aplikace Word pomocí Aspose.Words for .NET.
+V tomto tutoriálu jsme se naučili, jak získat podrobnosti o skupině revizí v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pomocí smyčky a příslušných vlastností jsme byli schopni zobrazit podrobnosti, jako je typ revize, autor, datum a revidovaný text. Aspose.Words for .NET nabízí mnoho výkonných funkcí pro manipulaci s dokumenty Word, včetně správy revizí. Nyní můžete tyto znalosti použít k získání podrobností o skupině revizí do vašich vlastních dokumentů aplikace Word pomocí Aspose.Words for .NET.
 
 ### FAQ
 
 #### Otázka: Jak načtu dokument s revizemi do Aspose.Words pro .NET?
 
- A: Použijte`Document`třídy Aspose.Words for .NET k načtení dokumentu ze souboru obsahujícího revize. Můžete zadat úplnou cestu dokumentu.
+ A: Použijte`Document` třídy Aspose.Words for .NET k načtení dokumentu ze souboru obsahujícího revize. Můžete zadat úplnou cestu dokumentu.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Otázka: Jak získám podrobnosti o skupině revizí v Aspose.Words for .NET?
 
- Odpověď: Projděte revize dokumentu pomocí smyčky a otevřete vlastnosti každé revize, abyste získali požadované podrobnosti. Můžete použít`RevisionType`, `Author`, `DateTime` a`ParentNode` vlastnosti, abyste získali typ revize, autora, datum a revidovaný text.
+Odpověď: Projděte revize dokumentu pomocí smyčky a otevřete vlastnosti každé revize, abyste získali požadované podrobnosti. Můžete použít`RevisionType`, `Author`, `DateTime` a`ParentNode` vlastnosti, abyste získali typ revize, autora, datum a revidovaný text.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Otázka: Jak zkontrolovat, zda revize patří do skupiny v Aspose.Words pro .NET?
 
- A: Použijte`Group` vlastnictvím`Revision` objekt pro kontrolu, zda revize patří do skupiny. Pokud`Group` majetek je`null`to znamená, že revize nepatří do žádné skupiny.
+ A: Použijte`Group` vlastnictvím`Revision` objekt pro kontrolu, zda revize patří do skupiny. Pokud`Group` majetek je`null`, to znamená, že revize nepatří do žádné skupiny.
 
 ```csharp
 if (revision.Group != null)

@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. lépés: Hivatkozás beszúrása
 
- A hivatkozást a`InsertHyperlink` a dokumentumgenerátor módszere. Meg kell adnunk a link szövegét, itt az "Apose"-t, valamint a cél URL-t.
+ A hivatkozás segítségével beszúrhatunk egy hivatkozást`InsertHyperlink` a dokumentumgenerátor módszere. Meg kell adnunk a link szövegét, itt az "Aspose", valamint a cél URL-t.
 
 ```csharp
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);

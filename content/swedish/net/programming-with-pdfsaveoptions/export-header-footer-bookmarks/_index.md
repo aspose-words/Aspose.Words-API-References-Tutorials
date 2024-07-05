@@ -66,7 +66,7 @@ Det är allt ! Du har framgångsrikt exporterat sidhuvuden och sidfotsbokmärken
 
 ## Slutsats
 
-den här handledningen förklarade vi hur man exporterar sidhuvuden och sidfotsbokmärken från ett Word-dokument till ett PDF-dokument med Aspose.Words för .NET. Exporterade bokmärken möjliggör enkel navigering och snabb referens till motsvarande sidhuvuden och sidfötter i det genererade PDF-dokumentet. Följ stegen som beskrivs för att exportera sidhuvuden och sidfötter från ett dokument och generera en PDF med lämpliga bokmärken med Aspose.Words för .NET. Var noga med att ange rätt sökväg till dina dokument och konfigurera sparaalternativ efter behov.
+den här handledningen förklarade vi hur man exporterar sidhuvuden och sidfotsbokmärken från ett Word-dokument till ett PDF-dokument med Aspose.Words för .NET. Exporterade bokmärken möjliggör enkel navigering och snabb referens till motsvarande sidhuvuden och sidfötter i det genererade PDF-dokumentet. Följ stegen som beskrivs för att exportera sidhuvuden och sidfotsbokmärken från ett dokument och generera en PDF med lämpliga bokmärken med Aspose.Words för .NET. Var noga med att ange rätt sökväg till dina dokument och konfigurera sparaalternativ efter behov.
 
 ### Vanliga frågor
 

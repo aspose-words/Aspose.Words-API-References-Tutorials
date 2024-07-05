@@ -72,7 +72,7 @@ Neváhejte a prozkoumejte další funkce Aspose.Words pro .NET, abyste zlepšili
 
 #### Jak mohu načíst primární a sekundární písma motivu dokumentu?
 
- K primárnímu a sekundárnímu písmu motivu dokumentu můžete přistupovat pomocí`MajorFonts` a`MinorFonts` vlastnosti`Theme` objekt, resp. Tyto vlastnosti poskytují přístup k názvům písem použitých v motivu dokumentu pro různé jazyky nebo oblasti.
+ K primárnímu a sekundárnímu písmu motivu dokumentu můžete přistupovat pomocí`MajorFonts` a`MinorFonts` vlastnosti`Theme` objekt, resp. Tyto vlastnosti poskytují přístup k názvům písem používaných v motivu dokumentu pro různé jazyky nebo oblasti.
 
 #### Mohu získat zvýrazňující barvy použité v motivu dokumentu?
 

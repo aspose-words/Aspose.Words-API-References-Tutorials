@@ -69,7 +69,7 @@ dokumentumok közötti különbségek összehasonlítása az Aspose.Words for Ja
 
 ### Hogyan telepíthetem az Aspose.Words for Java programot?
 
- Az Aspose.Words for Java telepítéséhez látogasson el a letöltési oldalra.[itt](https://releases.aspose.com/words/java/) és kövesse a mellékelt telepítési utasításokat.
+ Az Aspose.Words for Java telepítéséhez látogasson el a letöltési oldalra[itt](https://releases.aspose.com/words/java/) és kövesse a mellékelt telepítési utasításokat.
 
 ### Összehasonlíthatom a különböző formátumú dokumentumokat, mint például a DOCX és a PDF?
 

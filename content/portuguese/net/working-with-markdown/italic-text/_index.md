@@ -1,6 +1,6 @@
 ---
-title: Texto italiano
-linktitle: Texto italiano
+title: Texto em itálico
+linktitle: Texto em itálico
 second_title: API de processamento de documentos Aspose.Words
 description: Aprenda como colocar texto em itálico com o guia passo a passo do Aspose.Words for .NET.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Use um construtor de documentos para adicionar conteúdo ao documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Torne o texto italiano.
+// Deixe o texto em itálico.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

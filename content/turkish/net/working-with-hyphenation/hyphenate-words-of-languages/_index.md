@@ -51,7 +51,7 @@ Son olarak değiştirilen belgeyi kaydedin:
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Bu yüzden ! Aspose.Words for .NET kullanarak bir Word belgesinde farklı dillerdeki kelimeleri tireleyerek başarılı bir şekilde işlediniz.
+Bu yüzden ! Aspose.Words for .NET'i kullanarak bir Word belgesinde farklı dillerdeki kelimeleri tireleyerek başarılı bir şekilde işlediniz.
 
 ### Aspose.Words for .NET kullanarak sözcük tireleme için örnek kaynak kodu
 
@@ -79,4 +79,4 @@ C: Aspose.Words'te heceleme dilini belirlemek için uygun dil kodlarını kullan
 
 #### S: Aspose.Words'te heceleme tüm dillerde çalışıyor mu?
 
-C: Aspose.Words'te heceleme, dile özgü heceleme kurallarına bağlıdır. Aspose.Words çok çeşitli dilleri desteklese de bazı diller desteklenmeyebilir veya heceleme onlar için mevcut olmayabilir. Heceleme için hangi dillerin desteklendiğini öğrenmek için Aspose.Words belgelerine bakın.
+C: Aspose.Words'te heceleme, dile özgü heceleme kurallarına bağlıdır. Aspose.Words çok çeşitli dilleri desteklese de, bazı diller desteklenmeyebilir veya bunlar için heceleme mevcut olmayabilir. Heceleme için hangi dillerin desteklendiğini öğrenmek için Aspose.Words belgelerine bakın.

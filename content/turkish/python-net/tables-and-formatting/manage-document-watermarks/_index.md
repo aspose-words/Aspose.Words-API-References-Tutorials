@@ -2,7 +2,7 @@
 title: Belge Estetiği İçin Filigran Oluşturma ve Biçimlendirme
 linktitle: Belge Estetiği İçin Filigran Oluşturma ve Biçimlendirme
 second_title: Aspose.Words Python Doküman Yönetimi API'si
-description: Aspose.Words for Python'u kullanarak belgelerde filigran oluşturmayı ve biçimlendirmeyi öğrenin. Metin ve resim filigranları eklemek için kaynak kodunu içeren adım adım kılavuz. Bu eğitimle belgenizin estetiğini geliştirin.
+description: Aspose.Words for Python'u kullanarak belgelerde filigranların nasıl oluşturulacağını ve biçimlendirileceğini öğrenin. Metin ve resim filigranları eklemek için kaynak kodunu içeren adım adım kılavuz. Bu eğitimle belgenizin estetiğini geliştirin.
 type: docs
 weight: 10
 url: /tr/python-net/tables-and-formatting/manage-document-watermarks/

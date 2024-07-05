@@ -32,7 +32,7 @@ Seguendo questi tutorial, sarai in grado di sfruttare appieno le funzionalità d
 | [Unione orizzontale](./horizontal-merge/) | Scopri come unire orizzontalmente le celle in una tabella di Word con Aspose.Words per .NET. |
 | [Converti in celle unite orizzontalmente](./convert-to-horizontally-merged-cells/) | Scopri come convertire le celle della tabella in celle unite orizzontalmente in un documento Word con Aspose.Words per .NET. |
 | [Ripeti le righe nelle pagine successive](./repeat-rows-on-subsequent-pages/) | Scopri come ripetere le righe della tabella nelle pagine successive in un documento Word con Aspose.Words per .NET. |
-| [Adatta automaticamente alla larghezza della pagina](./auto-fit-to-page-width/) | Scopri come adattare automaticamente una tabella alla larghezza della pagina in un documento Word con Aspose.Words per .NET. |
+| [Adattamento automatico alla larghezza della pagina](./auto-fit-to-page-width/) | Scopri come adattare automaticamente una tabella alla larghezza della pagina in un documento Word con Aspose.Words per .NET. |
 | [Impostazioni di larghezza preferite](./preferred-width-settings/) | Scopri come impostare le larghezze delle celle della tabella preferite in un documento Word con Aspose.Words per .NET. |
 | [Recupera il tipo di larghezza preferito](./retrieve-preferred-width-type/) | Scopri come recuperare il tipo e il valore di larghezza preferito di una cella in una tabella di Word con Aspose.Words per .NET. |
 | [Ottieni la posizione del tavolo](./get-table-position/) | Scopri come ottenere la posizione di una tabella in un documento Word con Aspose.Words per .NET. |

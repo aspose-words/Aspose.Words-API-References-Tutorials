@@ -136,4 +136,4 @@ Igen, az Aspose.Words teljes mértékben kompatibilis a .NET Core-al, lehetővé
 
 ### Hol találom az Aspose.Words dokumentációját?
 
- Az Aspose.Words for .NET-hez átfogó dokumentációt talál.[itt](https://reference.aspose.com/words/net/).
+ Az Aspose.Words for .NET-hez átfogó dokumentációt talál[itt](https://reference.aspose.com/words/net/).

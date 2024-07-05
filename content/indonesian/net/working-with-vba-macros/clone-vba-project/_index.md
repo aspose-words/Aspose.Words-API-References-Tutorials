@@ -32,7 +32,7 @@ Selanjutnya, kita akan memuat dokumen sumber Word, yang berisi proyek VBA yang i
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## Langkah 3: Buat dokumen baru dengan proyek VBA yang dikloning.
+## Langkah 3: Buat dokumen baru dengan proyek VBA yang dikloning
 Kami akan membuat dokumen baru dengan proyek VBA kosong dan mengkloning proyek VBA dari dokumen sumber.
 
 ```csharp
@@ -74,7 +74,7 @@ J: Menduplikasi proyek VBA terdiri dari menyalin semua kode VBA dari dokumen sum
 J: Sebelum Anda dapat mengkloning proyek VBA dari dokumen Word, Anda harus memiliki pengetahuan tentang bahasa pemrograman C#. Anda juga perlu menginstal perpustakaan Aspose.Words untuk .NET di proyek Anda. Selain itu, Anda memerlukan dokumen Word yang berisi proyek VBA yang ingin Anda tiru.
 
 #### Q: Bagaimana cara mengatur direktori dokumen dalam kode?
- A: Dalam kode yang diberikan, Anda perlu mengganti.`"YOUR DOCUMENTS DIRECTORY"` dengan jalur yang sesuai ke direktori tempat dokumen Word Anda yang berisi proyek VBA berada.
+ A: Dalam kode yang diberikan, Anda perlu mengganti`"YOUR DOCUMENTS DIRECTORY"` dengan jalur yang sesuai ke direktori tempat dokumen Word Anda yang berisi proyek VBA berada.
 
 #### Q: Bagaimana cara menyimpan dokumen tujuan dengan proyek VBA yang dikloning?
 

@@ -67,7 +67,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Q：如何將經過修訂的文件載入到 Aspose.Words for .NET 中？
 
-答：使用`Document`Aspose.Words for .NET 類別從包含修訂的檔案載入文件。您可以指定完整的文檔路徑。
+答：使用`Document` Aspose.Words for .NET 類別從包含修訂的檔案載入文件。您可以指定完整的文檔路徑。
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");

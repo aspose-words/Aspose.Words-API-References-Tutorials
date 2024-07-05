@@ -17,7 +17,7 @@ url: /el/net/programming-with-shapes/get-actual-shape-bounds-points/
 - Βασικές γνώσεις C# και Επεξεργασία λέξεων με έγγραφα Word.
 
 ## Βήμα 1: Δημιουργήστε ένα νέο Document and DocumentBuilder
- Δημιουργήστε μια νέα παρουσία του`Document` τάξη και α`DocumentBuilder` αντίρρηση για εργασία με το έγγραφο.
+ Δημιουργήστε μια νέα παρουσία του`Document` τάξη και α`DocumentBuilder`αντίρρηση για εργασία με το έγγραφο.
 
 ```csharp
 Document doc = new Document();

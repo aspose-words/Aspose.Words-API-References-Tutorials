@@ -22,7 +22,7 @@ url: /th/net/programming-with-sdt/
 | [การควบคุมเนื้อหากล่องคำสั่งผสม](./combo-box-content-control/) | เรียนรู้วิธีสร้าง การควบคุมเนื้อหากล่องคำสั่งผสม ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET |
 | [การควบคุมเนื้อหากล่องข้อความแบบ Rich](./rich-text-box-content-control/) | เรียนรู้วิธีสร้างการควบคุมเนื้อหากล่องข้อความแบบ Rich Text ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ซึ่งเปิดใช้งานการจัดรูปแบบและสไตล์ข้อความ |
 | [ตั้งค่าสีควบคุมเนื้อหา](./set-content-control-color/) | เรียนรู้วิธีตั้งค่าสีของตัวควบคุมเนื้อหาในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เพื่อปรับแต่งลักษณะที่ปรากฏ |
-| [ล้างเนื้อหาการควบคุม](./clear-contents-control/) | เรียนรู้วิธีล้างเนื้อหาของตัวควบคุมในเอกสาร Word โดยใช้ Aspose.Words for .NET |
+| [การควบคุมเนื้อหาที่ชัดเจน](./clear-contents-control/) | เรียนรู้วิธีล้างเนื้อหาของตัวควบคุมในเอกสาร Word โดยใช้ Aspose.Words for .NET |
 | [ผูก SDT กับส่วน Xml แบบกำหนดเอง](./bind-sdt-to-custom-xml-part/) | เรียนรู้วิธีผูก SDT กับส่วน Xml แบบกำหนดเองโดยใช้ Aspose.Words สำหรับ .NET |
 | [ตั้งค่ารูปแบบการควบคุมเนื้อหา](./set-content-control-style/) | เรียนรู้วิธีตั้งค่าสไตล์ของการควบคุมเนื้อหาในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET โดยใช้การจัดรูปแบบที่สอดคล้องกัน |
 | [การสร้างส่วนการทำซ้ำตารางที่แมปกับส่วน Xml ที่กำหนดเอง](./creating-table-repeating-section-mapped-to-custom-xml-part/) | เรียนรู้วิธีสร้างตารางด้วยส่วนที่ซ้ำกันซึ่งแมปกับ CustomXmlPart ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET |

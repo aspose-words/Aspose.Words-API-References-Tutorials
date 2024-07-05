@@ -79,7 +79,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Q: 수정된 문서를 Aspose.Words for .NET에 로드하려면 어떻게 해야 합니까?
 
- 답변:`Document`개정판이 포함된 파일에서 문서를 로드하는 .NET용 Aspose.Words 클래스입니다. 전체 문서 경로를 지정할 수 있습니다.
+ 답변:`Document` 개정판이 포함된 파일에서 문서를 로드하는 .NET용 Aspose.Words 클래스입니다. 전체 문서 경로를 지정할 수 있습니다.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### Q: .NET용 Aspose.Words에서 문서 개정판을 어떻게 찾아볼 수 있나요?
 
- 답변:`foreach` 문서에 있는 개정판을 반복하는 루프입니다. 당신은 사용할 수 있습니다`Revisions` 의 재산`Document` 문서의 모든 개정판 모음을 가져오는 개체입니다.
+답변:`foreach` 문서에 있는 개정판을 반복하는 루프입니다. 당신은 사용할 수 있습니다`Revisions` 의 재산`Document` 문서의 모든 개정판 모음을 가져오는 개체입니다.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

@@ -18,7 +18,7 @@ url: /zh-hant/java/document-security/document-encryption-decryption/
 在我們開始之前，請確保您具備以下條件：
 
 - [Java 開發工具包 (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html)安裝。
-- [Aspose.Words for Java](https://products.aspose.com/words/java)圖書館。您可以從以下位置下載：[這裡](https://downloads.aspose.com/words/java).
+- [Aspose.Words for Java](https://products.aspose.com/words/java)圖書館.您可以從以下位置下載：[這裡](https://downloads.aspose.com/words/java).
 
 ## 第 1 步：建立 Java 項目
 

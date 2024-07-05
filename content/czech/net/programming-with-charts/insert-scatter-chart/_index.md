@@ -17,7 +17,7 @@ Ujistěte se, že máte následující předpoklady:
 - Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
 - Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
 
-## Krok 2: Vytvořte nový dokument a vložte graf.
+## Krok 2: Vytvořte nový dokument a vložte graf
 
  Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
 
@@ -72,7 +72,7 @@ Tím je implementace vkládání bodového grafu pomocí Aspose.Words pro .NET d
 
 V tomto tutoriálu jste se naučili, jak vložit bodový graf do dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle podrobného průvodce a pomocí poskytnutého zdrojového kódu můžete vytvořit nový dokument, vložit bodový graf, přidat data sérií se souřadnicemi X a Y a uložit dokument s grafem.
 
-Aspose.Words for .NET poskytuje komplexní rozhraní API pro zpracování textu s grafy v dokumentech aplikace Word. Bodové grafy jsou užitečné pro vizualizaci a analýzu dat se dvěma číselnými proměnnými. S Aspose.Words for .NET můžete snadno vytvářet bodové grafy, které představují vztah mezi hodnotami X a Y a identifikovat vzory nebo trendy v datech.
+Aspose.Words for .NET poskytuje komplexní rozhraní API pro zpracování textu s grafy v dokumentech aplikace Word. Bodové grafy jsou užitečné pro vizualizaci a analýzu dat se dvěma číselnými proměnnými. S Aspose.Words for .NET můžete snadno vytvářet bodové grafy, které představují vztah mezi hodnotami X a Y a identifikují vzory nebo trendy v datech.
 
 Pomocí Aspose.Words for .NET můžete automatizovat proces generování dokumentů s bodovými grafy, čímž ušetříte čas a úsilí při ručním vytváření dokumentů. Knihovna nabízí širokou škálu typů grafů, včetně bodových grafů, a poskytuje různé možnosti přizpůsobení pro přizpůsobení vzhledu grafu vašim potřebám.
 

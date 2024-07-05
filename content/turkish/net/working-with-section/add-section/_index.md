@@ -32,7 +32,7 @@ builder.Writeln("Hello2");
 ```
 
 ## 3. Adım: Yeni bir bölüm ekleyin
- Belgeye yeni bir bölüm eklemek için aşağıdaki bölümün bir örneğini oluşturacağız:`Section` sınıfa ekleyin ve`Sections` belgelerin toplanması.
+ Belgeye yeni bir bölüm eklemek için aşağıdaki bölümün bir örneğini oluşturacağız:`Section` sınıfa ekleyin ve`Sections` belgenin toplanması.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
@@ -82,7 +82,7 @@ builder. Writen("Hello2");
 
 #### S: Aspose.Words for .NET'te belgeye yeni bölüm nasıl eklenir?
 
- C: Aspose.Words for .NET'te belgeye yeni bir bölüm eklemek için aşağıdaki bölümün bir örneğini oluşturabilirsiniz:`Section` sınıfa ekleyin ve`Sections` belgelerin toplanması:
+ C: Aspose.Words for .NET'te belgeye yeni bir bölüm eklemek için aşağıdaki bölümün bir örneğini oluşturabilirsiniz:`Section` sınıfa ekleyin ve`Sections` belgenin toplanması:
 
 ```csharp
 Section sectionToAdd = new Section(doc);

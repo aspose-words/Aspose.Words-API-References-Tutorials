@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 #### F: Hur kan jag komma åt en tabell i ett dokument med Aspose.Words för .NET?
 
-S: När dokumentet har laddats kan du komma åt tabellen där du vill utföra textersättning. I Aspose.Words för .NET kan du använda`GetChild` metod med`NodeType.Table` parametrar för att få önskad tabell. Till exempel:
+S: När dokumentet har laddats kan du komma åt tabellen där du vill utföra textersättning. I Aspose.Words för .NET kan du använda`GetChild` metod med`NodeType.Table` parameter för att få önskad tabell. Till exempel:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

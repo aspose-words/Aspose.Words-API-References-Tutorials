@@ -1,35 +1,35 @@
 ---
-title: Aspose.Words for Java での RTF ロード オプションの構成
-linktitle: RTF ロード オプションの構成
+title: Aspose.Words for Java での RTF 読み込みオプションの構成
+linktitle: RTF ロード オプションの設定
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java での RTF ロード オプションの構成。 RTF ドキュメント内の UTF-8 テキストを認識する方法を学びます。コード例を含むステップバイステップのガイド。
+description: Aspose.Words for Java で RTF 読み込みオプションを構成します。RTF ドキュメント内の UTF-8 テキストを認識する方法を学びます。コード例を使用したステップバイステップ ガイド。
 type: docs
 weight: 12
 url: /ja/java/document-loading-and-saving/configuring-rtf-load-options/
 ---
 
-## Aspose.Words for Java での RTF ロード オプションの構成の概要
+## Aspose.Words for Java での RTF 読み込みオプションの構成の概要
 
-このガイドでは、Aspose.Words for Java を使用して RTF ロード オプションを構成する方法を説明します。 RTF (リッチ テキスト フォーマット) は、Aspose.Words でロードして操作できる一般的なドキュメント形式です。特定のオプションに焦点を当てます。`RecognizeUtf8Text`これにより、RTF ドキュメント内の UTF-8 エンコードされたテキストを認識するかどうかを制御できます。
+このガイドでは、Aspose.Words for Javaを使用してRTF読み込みオプションを構成する方法について説明します。RTF（リッチテキスト形式）は、Aspose.Wordsで読み込み、操作できる一般的なドキュメント形式です。ここでは、特定のオプションに焦点を当てます。`RecognizeUtf8Text`これにより、RTF ドキュメント内の UTF-8 でエンコードされたテキストを認識するかどうかを制御できます。
 
 ## 前提条件
 
-始める前に、Aspose.Words for Java ライブラリがプロジェクトに統合されていることを確認してください。からダウンロードできます。[Webサイト](https://releases.aspose.com/words/java/).
+始める前に、Aspose.Words for Javaライブラリがプロジェクトに統合されていることを確認してください。[Webサイト](https://releases.aspose.com/words/java/).
 
-## ステップ 1: RTF ロード オプションのセットアップ
+## ステップ1: RTF読み込みオプションの設定
 
-まず、インスタンスを作成する必要があります。`RtfLoadOptions`をクリックし、必要なオプションを設定します。この例では、`RecognizeUtf8Text` UTF-8 エンコードされたテキストを認識するオプション:
+まず、インスタンスを作成する必要があります`RtfLoadOptions`必要なオプションを設定します。この例では、`RecognizeUtf8Text` UTF-8 でエンコードされたテキストを認識するオプション:
 
 ```java
 RtfLoadOptions loadOptions = new RtfLoadOptions();
 loadOptions.setRecognizeUtf8Text(true);
 ```
 
-ここ、`loadOptions`の例です`RtfLoadOptions`を使用しました。`setRecognizeUtf8Text` UTF-8 テキスト認識を有効にするメソッド。
+ここ、`loadOptions`は、`RtfLoadOptions` 、そして私たちは`setRecognizeUtf8Text`UTF-8 テキスト認識を有効にする方法。
 
-## ステップ 2: RTF ドキュメントのロード
+## ステップ2: RTFドキュメントの読み込み
 
-読み込みオプションを設定したので、指定されたオプションを使用して RTF ドキュメントを読み込むことができます。この例では、「UTF-8characters.rtf」という名前のドキュメントを特定のディレクトリからロードします。
+ロード オプションを設定したので、指定したオプションを使用して RTF ドキュメントをロードできます。この例では、特定のディレクトリから「UTF-8 characters.rtf」という名前のドキュメントをロードします。
 
 ```java
 Document doc = new Document("Your Directory Path" + "UTF-8 characters.rtf", loadOptions);
@@ -37,7 +37,7 @@ Document doc = new Document("Your Directory Path" + "UTF-8 characters.rtf", load
 
 必ず交換してください`"Your Directory Path"`ドキュメント ディレクトリへの適切なパスを指定します。
 
-## ステップ 3: ドキュメントを保存する
+## ステップ3: ドキュメントを保存する
 
 RTF ドキュメントを読み込んだ後、Aspose.Words を使用してさまざまな操作を実行できます。完了したら、次のコードを使用して変更したドキュメントを保存します。
 
@@ -45,9 +45,9 @@ RTF ドキュメントを読み込んだ後、Aspose.Words を使用してさま
 doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 ```
 
-交換する`"Your Directory Path"`変更したドキュメントを保存するパスに置き換えます。
+交換する`"Your Directory Path"`変更したドキュメントを保存するパスを入力します。
 
-## Aspose.Words for Java で RTF ロード オプションを構成するための完全なソース コード
+## Aspose.Words for Java で RTF 読み込みオプションを構成するための完全なソース コード
 
 ```java
 RtfLoadOptions loadOptions = new RtfLoadOptions();
@@ -60,22 +60,22 @@ doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rt
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for Java で RTF ロード オプションを構成する方法を学習しました。具体的には、`RecognizeUtf8Text` RTF ドキュメント内の UTF-8 エンコードされたテキストを処理するオプション。この機能を使用すると、さまざまなテキスト エンコーディングを使用できるようになり、ドキュメント処理タスクの柔軟性が向上します。
+このチュートリアルでは、Aspose.Words for JavaでRTF読み込みオプションを構成する方法を学びました。具体的には、`RecognizeUtf8Text` RTF ドキュメント内の UTF-8 でエンコードされたテキストを処理するオプション。この機能を使用すると、さまざまなテキスト エンコードを使用できるようになり、ドキュメント処理タスクの柔軟性が向上します。
 
 ## よくある質問
 
-### UTF-8 テキスト認識を無効にするにはどうすればよいですか?
+### UTF-8 テキスト認識を無効にするにはどうすればいいですか?
 
- UTF-8 テキスト認識を無効にするには、単に`RecognizeUtf8Text`というオプション`false`を設定するとき`RtfLoadOptions`。これは呼び出すことで実行できます`setRecognizeUtf8Text(false)`.
+ UTF-8テキスト認識を無効にするには、`RecognizeUtf8Text`オプション`false`設定時に`RtfLoadOptions`これを行うには、`setRecognizeUtf8Text(false)`.
 
-### RtfLoadOptions では他にどのようなオプションが利用可能ですか?
+### RtfLoadOptions で利用できる他のオプションは何ですか?
 
- RtfLoadOptions は、RTF ドキュメントのロード方法を構成するためのさまざまなオプションを提供します。一般的に使用されるオプションには次のようなものがあります。`setPassword`パスワードで保護された文書の場合、`setLoadFormat` RTF ファイルをロードするときに形式を指定します。
+ RtfLoadOptionsは、RTF文書の読み込み方法を設定するためのさまざまなオプションを提供します。よく使用されるオプションには次のようなものがあります。`setPassword`パスワードで保護された文書や`setLoadFormat`RTF ファイルを読み込むときの形式を指定します。
 
-### これらのオプションを使用してドキュメントをロードした後、ドキュメントを変更できますか?
+### これらのオプションを使用してドキュメントを読み込んだ後に、ドキュメントを変更できますか?
 
-はい、指定したオプションを使用してドキュメントをロードした後、ドキュメントにさまざまな変更を加えることができます。 Aspose.Words は、ドキュメントのコンテンツ、書式設定、構造を操作するための幅広い機能を提供します。
+はい、指定されたオプションを使用してドキュメントを読み込んだ後、ドキュメントに対してさまざまな変更を実行できます。Aspose.Words は、ドキュメントのコンテンツ、書式設定、構造を操作するための幅広い機能を提供します。
 
-### Aspose.Words for Java に関する詳細情報はどこで入手できますか?
+### Aspose.Words for Java の詳細情報はどこで入手できますか?
 
-を参照できます。[Aspose.Words for Java ドキュメント](https://reference.aspose.com/words/java/)包括的な情報、API リファレンス、ライブラリの使用例については、こちらをご覧ください。
+参照するには[Aspose.Words for Java ドキュメント](https://reference.aspose.com/words/java/)包括的な情報、API リファレンス、およびライブラリの使用例については、こちらをご覧ください。

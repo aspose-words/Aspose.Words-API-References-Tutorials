@@ -1,6 +1,6 @@
 ---
-title: Infoga områdesdiagram i ett Word-dokument
-linktitle: Infoga områdesdiagram i ett Word-dokument
+title: Infoga Ytdiagram i ett Word-dokument
+linktitle: Infoga Ytdiagram i ett Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar ett områdesdiagram i ett dokument med Aspose.Words för .NET. Lägg till seriedata och spara dokumentet med diagrammet.
 type: docs
@@ -17,7 +17,7 @@ Se till att du har följande förutsättningar:
 - Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den genom att använda NuGet-pakethanteraren för att installera den.
 - En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram.
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
  Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
@@ -98,7 +98,7 @@ Genom att använda Aspose.Words för .NET kan du automatisera processen att gene
 Aspose.Words för .NET är ett kraftfullt dokumentbehandlingsbibliotek som gör det möjligt för utvecklare att skapa, ändra och konvertera Word-dokument programmatiskt i .NET-applikationer. Den tillhandahåller en omfattande uppsättning API:er för ordbehandling med dokumentelement, inklusive diagram, stycken, tabeller och mer.
 
 #### Q2. Hur installerar jag Aspose.Words för .NET?
-För att installera Aspose.Words för .NET kan du använda NuGet-pakethanteraren i Visual Studio för att installera biblioteket direkt i ditt projekt. Sök helt enkelt efter "Apose.Words" i NuGet-pakethanteraren och installera paketet.
+För att installera Aspose.Words för .NET kan du använda NuGet-pakethanteraren i Visual Studio för att installera biblioteket direkt i ditt projekt. Sök helt enkelt efter "Aspose.Words" i NuGet-pakethanteraren och installera paketet.
 
 #### Q3. Kan jag anpassa utseendet på områdesdiagrammet?
 Ja, med Aspose.Words för .NET kan du anpassa olika aspekter av ytdiagrammets utseende. Du kan ändra egenskaper som diagramtitel, seriefärg, axeletiketter och diagramområdesformatering. Biblioteket tillhandahåller en rik uppsättning API:er för att kontrollera de visuella elementen i diagrammet och skapa ett anpassat utseende som passar dina behov.

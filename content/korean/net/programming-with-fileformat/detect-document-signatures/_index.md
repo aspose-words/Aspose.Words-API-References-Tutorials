@@ -72,7 +72,7 @@ if (info.HasDigitalSignature)
 
 #### 디지털 서명을 검색할 문서가 포함된 디렉터리를 지정하는 방법은 무엇입니까?
 
- 디지털 서명을 검색하려는 문서가 포함된 디렉토리를 지정하려면`dataDir` 코드의 변수. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 디지털 서명을 검색하려는 문서가 포함된 디렉토리를 지정하려면`dataDir` 코드의 변수입니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

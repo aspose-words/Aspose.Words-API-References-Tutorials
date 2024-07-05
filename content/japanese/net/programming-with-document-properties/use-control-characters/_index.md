@@ -8,13 +8,13 @@ weight: 10
 url: /ja/net/programming-with-document-properties/use-control-characters/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET で制御文字を使用するための C# ソース コードを説明します。この機能を使用すると、テキスト内の制御文字を操作できます。
+このチュートリアルでは、Aspose.Words for .NET で制御文字を使用するための C# ソース コードについて説明します。この機能を使用すると、テキスト内の制御文字を操作できます。
 
-## ステップ 1: プロジェクトのセットアップ
+## ステップ1: プロジェクトのセットアップ
 
-まず、お気に入りの IDE で新しい C# プロジェクトを作成します。 Aspose.Words for .NET ライブラリがプロジェクトで参照されていることを確認してください。
+まず、お気に入りの IDE で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET ライブラリが参照されていることを確認します。
 
-## ステップ 2: 制御文字の使用
+## ステップ2: 制御文字の使用
 
 このステップでは、テキスト内で制御文字を使用します。次のコードを使用します。
 
@@ -24,9 +24,9 @@ const string text = "test\r";
 string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 ```
 
-このコードは、`text`制御文字「\r」（改行）を含む文字列で、`Replace`制御文字「\r\n」（改行）に置き換える方法です。行の後に改行が続きます)。
+このコードは、`text`制御文字「\r」（改行）を含む文字列で、`Replace`メソッドを使用して、これを制御文字 "\r\n" (改行) に置き換えます。行の後に改行が続きます。
 
-### Aspose.Words for .NET を使用した制御文字の使用のソース コード例
+### Aspose.Words for .NET を使用して制御文字を使用するためのサンプル ソース コード
 
 ```csharp
 
@@ -35,6 +35,6 @@ string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 	string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 
 ```
-上記のコードを独自のプロジェクトで使用するには、`text`制御文字を含む独自のテキストを含む文字列。
+上記のコードを自分のプロジェクトで使用するには、`text`制御文字を含む独自のテキストを含む文字列。
 
 これで、Aspose.Words for .NET で制御文字を使用する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、独自のアプリケーションで制御文字を簡単に操作できます。

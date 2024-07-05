@@ -78,7 +78,7 @@ Assert. False(shapes[1].IsMoveToRevision);
 ```csharp
 Document doc = new Document();
 
-//Вставьте встроенную форму без отслеживания изменений.
+//Вставьте встроенную фигуру без отслеживания изменений.
 Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
@@ -148,7 +148,7 @@ doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
 #### Вопрос: Как включить отслеживание версий в Aspose.Words для .NET?
 
- О: Чтобы включить отслеживание версий в Aspose.Words для .NET, вы можете использовать`StartTrackRevisions` метод`Document` Объект Object. Этот метод принимает имя автора ревизий в качестве параметра:
+ О: Чтобы включить отслеживание версий в Aspose.Words для .NET, вы можете использовать`StartTrackRevisions` метод`Document` объект. Этот метод принимает имя автора ревизий в качестве параметра:
 
 ```csharp
 doc.StartTrackRevisions("John Doe");

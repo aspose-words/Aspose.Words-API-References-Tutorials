@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 4. Получение целевой формы
 
-На этом этапе мы получим целевую фигуру из документа. Эта фигура будет той, которую мы хотим визуализировать.
+На этом этапе мы получим целевую фигуру из документа. Эта форма будет той, которую мы хотим визуализировать.
 
 ```java
 Shape shape = (Shape) doc.getChild(NodeType.SHAPE, 0, true);
@@ -93,9 +93,9 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### Вопрос 4: Могу ли я попробовать Aspose.Words для Java перед покупкой?
 
- Конечно! Вы можете получить доступ к бесплатной пробной версии Aspose.Words для Java на сайте[Релизы.](https://releases.aspose.com/).
+ Конечно! Вы можете получить доступ к бесплатной пробной версии Aspose.Words для Java на сайте[Aspose.Релизы](https://releases.aspose.com/).
 
-### Вопрос 5: Где я могу обратиться за поддержкой или задать вопросы об Aspose.Words для Java?
+### Вопрос 5: Где я могу получить поддержку или задать вопросы об Aspose.Words для Java?
 
  По любым вопросам или поддержке посетите[Форум Aspose.Words для Java](https://forum.aspose.com/).
 

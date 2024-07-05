@@ -79,7 +79,7 @@ S: Digitala signaturer i ett Word-dokument är elektroniska signaturer som ger e
 
 S: För att komma åt digitala signaturer i ett Word-dokument med Aspose.Words för .NET kan du följa dessa steg:
 1.  Ladda dokumentet med hjälp av`Document` klass och ange sökvägen till dokumentfilen.
-2.  Använd en slinga för att iterera genom`DigitalSignatures` insamling av dokumenten. Varje iteration representerar en digital signatur.
+2.  Använd en slinga för att iterera genom`DigitalSignatures` insamling av dokumentet. Varje iteration representerar en digital signatur.
 
 #### F: Vilken information kan jag komma åt från en digital signatur i ett Word-dokument?
 
@@ -97,13 +97,13 @@ S: Från en digital signatur i ett Word-dokument kan du komma åt olika informat
 #### F: Hur kan jag verifiera giltigheten av digitala signaturer i ett Word-dokument med Aspose.Words för .NET?
 
 S: För att verifiera giltigheten av digitala signaturer i ett Word-dokument med Aspose.Words för .NET kan du följa dessa steg:
-1.  Få tillgång till`DigitalSignatures` insamling av dokumenten.
+1.  Få tillgång till`DigitalSignatures` insamling av dokumentet.
 2.  Iterera genom varje`DigitalSignature` föremål i samlingen.
 3.  Använd`IsValid` egendom av`DigitalSignature` objekt för att kontrollera om signaturen är giltig.
 
 #### F: Kan jag hämta undertecknarens kommentarer eller anledning till undertecknandet från en digital signatur i ett Word-dokument?
 
-S: Ja, du kan hämta undertecknarens kommentarer eller anledning till signering från en digital signatur i ett Word-dokument. De`Comments` egendom av`DigitalSignature` Objektet ger tillgång till kommentarerna som anges av undertecknaren under signeringsprocessen.
+S: Ja, du kan hämta undertecknarens kommentarer eller anledning till signering från en digital signatur i ett Word-dokument. De`Comments` egendom av`DigitalSignature` objekt ger tillgång till kommentarerna som anges av undertecknaren under signeringsprocessen.
 
 #### F: Vilken typ av dokument stöder signaturverifieringsfunktionen i Aspose.Words för .NET?
 

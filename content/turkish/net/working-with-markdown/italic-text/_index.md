@@ -1,6 +1,6 @@
 ---
-title: İtalyanca Metin
-linktitle: İtalyanca Metin
+title: İtalik Metin
+linktitle: İtalik Metin
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET ile metni italik yapmayı öğrenin. Adım adım kılavuz.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Belgeye içerik eklemek için belge oluşturucuyu kullanın.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Metni İtalyanca yapın.
+// Metni italik yapın.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

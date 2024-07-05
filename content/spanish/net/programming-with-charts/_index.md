@@ -26,7 +26,7 @@ Con estos tutoriales, podrá mejorar sus documentos de Word agregando gráficos 
 | [Definir propiedades del eje XYA](./define-xyaxis-properties/) | Aprenda a definir las propiedades del eje XY en un gráfico usando Aspose.Words para .NET. Se demuestran las opciones de personalización para los ejes X e Y. |
 | [Valores de fecha y hora al eje](./date-time-values-to-axis/) | Aprenda a agregar valores de fecha y hora al eje de un gráfico usando Aspose.Words para .NET. |
 | [Formato de número para eje](./number-format-for-axis/) | Aprenda a configurar el formato numérico para un eje en un gráfico usando Aspose.Words para .NET. |
-| [Límites del eje](./bounds-of-axis/) | Aprenda a establecer los límites de un eje en un gráfico usando Aspose.Words para .NET controlando el rango de valores que se muestran en el eje. |
+| [Límites del eje](./bounds-of-axis/) | Aprenda a establecer los límites de un eje en un gráfico usando Aspose.Words para .NET controlando el rango de valores mostrados en el eje. |
 | [Unidad de intervalo entre etiquetas en el eje](./interval-unit-between-labels-on-axis/) | Aprenda a configurar la unidad de intervalo entre etiquetas en el eje de un gráfico usando Aspose.Words para .NET. |
 | [Ocultar eje del gráfico](./hide-chart-axis/) | Aprenda a ocultar el eje del gráfico en un documento usando Aspose.Words para .NET. Oculte el eje para una visualización del gráfico más limpia y enfocada. |
 | [Marque Alineación de etiquetas de varias líneas](./tick-multi-line-label-alignment/) | Aprenda a alinear etiquetas de varias líneas en el eje de un gráfico usando Aspose.Words para .NET. |

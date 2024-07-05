@@ -11,7 +11,7 @@ Aspose.Words untuk .NET adalah perpustakaan yang kuat untuk membuat, mengedit, d
 
 ## Memahami perpustakaan Aspose.Words
 
-Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk menghapus teks dalam rentang tertentu.
+Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk menghapus teks dalam rentang tertentu.
 
 ## Memuat dokumen Word
 
@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
- Kode ini mengakses bagian pertama dokumen menggunakan indeks.`0` dan menghapus semua teks dalam rentang itu.
+ Kode ini mengakses bagian pertama dokumen menggunakan indeks`0` dan menghapus semua teks dalam rentang itu.
 
 #### T: Dapatkah saya menghapus teks dari beberapa rentang dalam dokumen Word menggunakan Aspose.Words untuk .NET?
 

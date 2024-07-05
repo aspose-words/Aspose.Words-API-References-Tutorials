@@ -117,7 +117,7 @@ Pour garantir un processus de conversion de documents fluide et efficace, tenez 
 Lorsque vous traitez un grand nombre de documents, des erreurs peuvent survenir lors du processus de conversion. Mettez en œuvre une gestion appropriée des exceptions pour identifier et résoudre ces problèmes avec élégance.
 
 ## Assurance qualité: 
-Avant de déployer la fonctionnalité de conversion de documents dans un environnement de production, testez minutieusement le processus de conversion avec différents types et tailles de documents pour vérifier l'exactitude et la fidélité du résultat.
+Avant de déployer la fonctionnalité de conversion de documents dans un environnement de production, testez minutieusement le processus de conversion avec différents types et tailles de documents pour vérifier l'exactitude et la fidélité de la sortie.
 
 ## Conclusion
 

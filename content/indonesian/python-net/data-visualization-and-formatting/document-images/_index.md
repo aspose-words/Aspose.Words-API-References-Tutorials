@@ -44,7 +44,7 @@ shape = doc.pages[0].shapes.add_remote_image("https://contoh.com/image.jpg", 100
 
 ## Menyesuaikan Ukuran dan Penempatan Gambar
 
-Mengontrol ukuran dan penempatan gambar memastikan gambar melengkapi konten Anda dengan lancar.
+Mengontrol ukuran dan penempatan gambar memastikan gambar melengkapi konten Anda dengan mulus.
 
 ```python
 # Set image size
@@ -157,7 +157,7 @@ Aspose.Words mendukung ekspor dokumen ke berbagai format, termasuk PDF, DOCX, HT
 
 ### Apakah Aspose.Words cocok untuk aplikasi web dan desktop?
 
-Sangat! Aspose.Words dapat diintegrasikan dengan mulus ke dalam aplikasi web dan desktop untuk menghasilkan dokumen dengan gambar multimedia.
+Sangat! Aspose.Words dapat diintegrasikan dengan mulus ke dalam aplikasi web dan desktop untuk menghasilkan dokumen dengan gambar media yang kaya.
 
 ### Bagaimana cara memastikan ukuran file dokumen saya tidak terlalu besar?
 

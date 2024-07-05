@@ -1,31 +1,31 @@
 ---
-title: リビジョンを挿入内のテキストを無視
-linktitle: リビジョンを挿入内のテキストを無視
+title: 内部のテキストを無視する リビジョンを挿入する
+linktitle: 内部のテキストを無視する リビジョンを挿入する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET の「挿入リビジョン内のテキストを無視」機能を使用して、Word 文書内の挿入リビジョンを操作する方法を説明します。
+description: Aspose.Words for .NET の「挿入リビジョン内のテキストを無視」機能を使用して、Word 文書内の挿入リビジョンを操作する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 
-この記事では、上記の C# ソース コードを調べて、Aspose.Words for .NET ライブラリの [Insert Revisions 内のテキストを無視] 関数の使用方法を理解します。この機能は、ドキュメントの操作中に挿入リビジョン内のテキストを無視したい場合に便利です。
+この記事では、上記の C# ソース コードを調べて、Aspose.Words for .NET ライブラリの Ignore Text Inside Insert Revisions 機能の使用方法を理解します。この機能は、ドキュメントの操作中に挿入リビジョン内のテキストを無視する場合に便利です。
 
 ## 前提条件
 
-- C# 言語の基本的な知識。
+- C# 言語に関する基本的な知識。
 - Aspose.Words ライブラリがインストールされた .NET 開発環境。
 
-## ステップ 1: 新しいドキュメントの作成
+## ステップ1: 新しいドキュメントを作成する
 
-挿入リビジョン内のテキストの操作を開始する前に、Aspose.Words for .NET を使用して新しいドキュメントを作成する必要があります。これは、`Document`物体：
+挿入リビジョン内のテキストを操作する前に、Aspose.Words for .NETを使用して新しいドキュメントを作成する必要があります。これは、`Document`物体：
 
 ```csharp
 Document doc = new Document();
 ```
 
-## ステップ 2: リビジョン追跡を使用してテキストを挿入する
+## ステップ2: 変更履歴付きのテキストを挿入する
 
-ドキュメントを取得したら、`DocumentBuilder`物体。たとえば、リビジョン追跡を使用して「挿入」テキストを挿入するには、`StartTrackRevisions`, `Writeln`そして`StopTrackRevisions`メソッド:
+文書ができたら、`DocumentBuilder`オブジェクト。たとえば、リビジョントラッキング付きの「挿入済み」テキストを挿入するには、`StartTrackRevisions`, `Writeln`そして`StopTrackRevisions`方法:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -34,50 +34,50 @@ builder.Writeln("Inserted");
 doc.StopTrackRevisions();
 ```
 
-## ステップ 3: 未レビューのテキストを挿入する
+## ステップ3: 未確認のテキストを挿入する
 
-リビジョン追跡付きのテキストに加えて、`DocumentBuilder`物体。たとえば、「Text」というテキストを修正せずに挿入するには、`Write`方法：
+改訂履歴付きのテキストに加えて、`DocumentBuilder`オブジェクト。たとえば、「Text」というテキストを修正せずに挿入するには、`Write`方法：
 
 ```csharp
 builder.Write("Text");
 ```
 
-## ステップ 4: リビジョン挿入機能内のテキストを無視するの使用
+## ステップ4: 挿入リビジョン内のテキストを無視する機能を使用する
 
-後続の操作で挿入リビジョン内のテキストを無視するには、`FindReplaceOptions`オブジェクトを設定して、`IgnoreInserted`財産を`true`:
+以降の操作で挿入リビジョン内のテキストを無視するには、`FindReplaceOptions`オブジェクトを設定し、`IgnoreInserted`財産に`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
 ```
 
-## ステップ 5: 検索と置換に正規表現を使用する
+## ステップ5: 検索と置換に正規表現を使用する
 
-文書テキストの検索操作と置換を実行するには、正規表現を使用します。この例では、文字「e」が出現するすべての文字を検索し、アスタリスク「」に置き換えます。*".NET を使用します。`Regex`このクラス:
+文書テキストの検索と置換を実行するには、正規表現を使用します。この例では、文字「e」のすべての出現を検索し、アスタリスク「*「.NETの`Regex`このクラス:
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## ステップ 6: 変更されたドキュメント出力の表示
+## ステップ6: 変更されたドキュメント出力の表示
 
-検索と置換を適用した後、ドキュメントの変更されたコンテンツを表示できます。`GetText`方法：
+検索と置換を適用した後、`GetText`方法：
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## ステップ 7: リビジョンの挿入を含めるようにオプションを変更する
+## ステップ 7: 挿入リビジョンを含めるようにオプションを変更する
 
-出力結果に挿入リビジョン内のテキストを含めたい場合は、挿入リビジョンを無視しないようにオプションを変更できます。このために、`IgnoreInserted`財産を`false`:
+挿入リビジョン内のテキストを出力結果に含めたい場合は、挿入リビジョンを無視しないようにオプションを変更することができます。そのためには、`IgnoreInserted`財産に`false`:
 
 ```csharp
 options.IgnoreInserted = false;
 ```
 
-## ステップ 8: リビジョンを挿入して変更されたドキュメントを表示する
+## ステップ 8: 修正を挿入して変更されたドキュメントを表示する
 
-オプションを変更した後、検索と置換を再度実行して、挿入リビジョン内のテキストを含む結果を取得できます。
+オプションを変更した後、再度検索と置換を実行して、挿入リビジョン内のテキストが含まれた結果を取得できます。
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
@@ -85,9 +85,9 @@ Console.WriteLine(doc.GetText());
 ```
 
 
-### Aspose.Words for .NET を使用したリビジョンの挿入内のテキストを無視するソース コードの例
+### Aspose.Words for .NET を使用して、挿入リビジョン内のテキストを無視するサンプル ソース コード
 
-以下は、Aspose.Words for .NET での Ignore Text Inside Insert Revisions 関数の使用を示す完全なサンプル ソース コードです。
+以下は、Aspose.Words for .NET で「挿入リビジョン内のテキストを無視」機能を使用する方法を示す完全なサンプル ソース コードです。
 
 
 ```csharp
@@ -95,12 +95,12 @@ Console.WriteLine(doc.GetText());
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	//リビジョンを追跡してテキストを挿入します。
+	//追跡リビジョン付きのテキストを挿入します。
 	doc.StartTrackRevisions("author", DateTime.Now);
 	builder.Writeln("Inserted");
 	doc.StopTrackRevisions();
 
-	//改訂されていないテキストを挿入します。
+	//修正されていないテキストを挿入します。
 	builder.Write("Text");
 
 	FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -119,25 +119,25 @@ Console.WriteLine(doc.GetText());
 
 ## 結論
 
-この記事では、C# ソース コードを調べて、Aspose.Words for .NET の [リビジョンの挿入] 内のテキストを無視する機能の使用方法を理解しました。ステップバイステップのガイドに従い、ドキュメントを作成し、リビジョンを追跡するテキストと未改訂のテキストを挿入し、リビジョンの挿入機能内のテキストを無視する機能を使用し、正規表現を使用した検索と置換操作を実行し、変更されたドキュメントを表示しました。
+この記事では、C# ソース コードを調べて、Aspose.Words for .NET の Ignore Text Inside Insert Revisions 機能の使用方法を理解しました。ドキュメントの作成、追跡リビジョン付きテキストと未修正テキストの挿入、Ignore Text Inside Insert Revisions 機能の使用、正規表現を使用した検索および置換操作の実行、変更されたドキュメントの表示について、ステップ バイ ステップ ガイドに従いました。
 
 ### よくある質問
 
-#### Q: Aspose.Words for .NET の「リビジョンの挿入内のテキストを無視」機能とは何ですか?
+#### Q: Aspose.Words for .NET の「挿入リビジョン内のテキストを無視する」機能とは何ですか?
 
-A: Aspose.Words for .NET の「挿入リビジョン内のテキストを無視」機能を使用すると、テキストの検索や置換などの特定の操作中に、挿入リビジョン内のテキストを無視するかどうかを指定できます。この機能が有効な場合、挿入リビジョン内のテキストは操作中に考慮されません。
+A: Aspose.Words for .NET の「挿入リビジョン内のテキストを無視」機能を使用すると、テキストの検索や置換などの特定の操作中に挿入リビジョン内のテキストを無視するかどうかを指定できます。この機能を有効にすると、操作中に挿入リビジョン内のテキストは考慮されません。
 
 #### Q: Aspose.Words for .NET を使用して新しいドキュメントを作成するにはどうすればよいですか?
 
- A: Aspose.Words for .NET を使用して新しいドキュメントを作成するには、`Document`物体。新しいドキュメントを作成する C# コードの例を次に示します。
+ A: Aspose.Words for .NETを使用して新しいドキュメントを作成するには、`Document`オブジェクト。新しいドキュメントを作成する C# コードの例を次に示します。
 
 ```csharp
 Document doc = new Document();
 ```
 
-#### Q: Aspose.Words for .NET でリビジョン追跡を使用してテキストを挿入するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET でリビジョン追跡付きのテキストを挿入するにはどうすればよいですか?
 
-A: ドキュメントを作成したら、`DocumentBuilder`物体。たとえば、リビジョン追跡を使用して「挿入」テキストを挿入するには、`StartTrackRevisions`, `Writeln` 、 そして`StopTrackRevisions`メソッド:
+A: 文書ができたら、`DocumentBuilder`オブジェクト。たとえば、リビジョン追跡機能付きで「挿入済み」テキストを挿入するには、`StartTrackRevisions`, `Writeln` 、 そして`StopTrackRevisions`方法:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -148,7 +148,7 @@ doc.StopTrackRevisions();
 
 #### Q: Aspose.Words for .NET に未修正のテキストを挿入するにはどうすればよいですか?
 
- A: リビジョン追跡付きのテキストに加えて、`DocumentBuilder`物体。たとえば、「Text」というテキストを修正せずに挿入するには、`Write`方法：
+ A: 修正履歴のあるテキストに加えて、`DocumentBuilder`オブジェクト。たとえば、「テキスト」というテキストを修正せずに挿入するには、`Write`方法：
 
 ```csharp
 builder.Write("Text");
@@ -156,7 +156,7 @@ builder.Write("Text");
 
 #### Q: Aspose.Words for .NET で挿入リビジョン内のテキストを無視するにはどうすればよいですか?
 
- A: 後続の操作中に挿入リビジョン内のテキストを無視するには、`FindReplaceOptions`オブジェクトを設定して、`IgnoreInserted`財産を`true`:
+ A: 以降の操作で挿入リビジョン内のテキストを無視するには、`FindReplaceOptions`オブジェクトを設定し、`IgnoreInserted`財産に`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -164,16 +164,16 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
 
 #### Q: Aspose.Words for .NET で正規表現を使用して検索と置換を実行するにはどうすればよいですか?
 
- A: 正規表現を使用してドキュメントのテキストに対して検索および置換操作を実行するには、.NET`Regex`クラス。たとえば、文字「e」が出現するすべての文字を検索し、アスタリスク「」に置き換えます。* 」を作成できます。`Regex`オブジェクトを使用して、`Replace`方法：
+ A: 正規表現を使用して文書のテキストを検索および置換するには、.NETを使用します。`Regex`クラス。たとえば、文字「e」のすべての出現を検索し、それらをアスタリスク「* 「」を作成することができます`Regex`オブジェクトとそれを使用して`Replace`方法：
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-#### Q: Aspose.Words for .NET でドキュメントの変更された出力を表示するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET でドキュメントの変更された出力を表示するにはどうすればよいでしょうか?
 
- A: 検索および置換操作を適用した後、`GetText`方法：
+ A: 検索と置換操作を適用した後、`GetText`方法：
 
 ```csharp
 Console.WriteLine(doc.GetText());
@@ -181,15 +181,15 @@ Console.WriteLine(doc.GetText());
 
 #### Q: Aspose.Words for .NET の出力結果に挿入リビジョンを含めるにはどうすればよいですか?
 
- A: 出力結果に挿入リビジョン内のテキストを含めるには、挿入リビジョンを無視しないようにオプションを変更できます。このために、次のように設定できます。`IgnoreInserted`の財産`FindReplaceOptions`に反対する`false`:
+ A: 挿入リビジョン内のテキストを出力結果に含めるには、挿入リビジョンを無視しないようにオプションを変更します。そのためには、`IgnoreInserted`の財産`FindReplaceOptions`反対する`false`:
 
 ```csharp
 options.IgnoreInserted = false;
 ```
 
-#### Q: Aspose.Words for .NET で、リビジョンを挿入して変更されたドキュメントを表示するにはどうすればよいですか?
+#### Q: Aspose.Words for .NET で、挿入リビジョンを含む変更されたドキュメントを表示するにはどうすればよいでしょうか?
 
-A: 挿入リビジョンを含めるようにオプションを変更した後、再度検索と置換を実行して、挿入リビジョン内のテキストを含む結果を取得できます。
+A: 挿入リビジョンを含めるようにオプションを変更した後、再度検索と置換を実行して、挿入リビジョン内のテキストが含まれた結果を取得できます。
 
 ```csharp
 doc.Range.Replace(regex, "*", options);

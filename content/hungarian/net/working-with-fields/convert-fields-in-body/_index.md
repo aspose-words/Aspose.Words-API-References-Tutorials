@@ -83,7 +83,7 @@ Az Aspose.Words különféle mezőtípusokat támogat, például a DATE, PAGE, M
 Igen, az Aspose.Words for .NET zökkenőmentesen képes konvertálni és kezelni a mezőket olyan formátumok között, mint a DOCX, DOC, RTF és még sok más.
 
 ### Hol találom az Aspose.Words for .NET átfogó dokumentációját?
- Részletes dokumentáció és API hivatkozások állnak rendelkezésre.[itt](https://reference.aspose.com/words/net/).
+ Részletes dokumentáció és API hivatkozások állnak rendelkezésre[itt](https://reference.aspose.com/words/net/).
 
 ### Elérhető az Aspose.Words for .NET próbaverziója?
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[itt](https://releases.aspose.com/).

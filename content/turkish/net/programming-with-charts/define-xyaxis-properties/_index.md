@@ -17,7 +17,7 @@ Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 - Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
 - Çıktı belgesinin kaydedileceği belge dizini yolu.
 
-## Adım 2: Yeni bir belge oluşturun ve bir grafik ekleyin.
+## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
 
  Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
@@ -141,7 +141,7 @@ Aspose.Words for .NET'i kullanarak grafik oluşturma ve özelleştirme yetenekle
 Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgelerini programlı olarak oluşturmasına, yönetmesine ve kaydetmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır. Grafikler de dahil olmak üzere belge öğeleriyle Kelime İşleme için geniş bir özellik yelpazesi sunar.
 
 #### Q2. Aspose.Words for .NET'i nasıl kurabilirim?
-Aspose.Words for .NET'i, Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Apose.Words" ifadesini aramanız ve projenize yüklemeniz yeterlidir.
+Aspose.Words for .NET'i, Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini arayın ve projenize yükleyin.
 
 #### S3. Aspose.Words for .NET'i kullanarak grafiğin diğer yönlerini özelleştirebilir miyim?
 Evet, Aspose.Words for .NET bir grafiğin çeşitli yönlerini özelleştirmek için kapsamlı yetenekler sağlar. Eksen özelliklerini tanımlamanın yanı sıra grafik türünü, veri serisini, açıklamayı, başlığı, çizim alanını, veri etiketlerini ve grafiğin diğer birçok öğesini değiştirebilirsiniz. API, grafiğin görünümü ve davranışı üzerinde ayrıntılı kontrol sunar.

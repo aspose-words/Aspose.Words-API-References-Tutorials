@@ -181,7 +181,7 @@ public class DocumentMerger {
 
 Aspose.Words voor Java geeft Java-ontwikkelaars de mogelijkheid om moeiteloos Word-documenten samen te voegen. Door de stapsgewijze handleiding in dit artikel te volgen, kunt u nu eenvoudig documenten samenvoegen, de opmaak afhandelen, pauzes invoegen en conflicten beheren. Met Aspose.Words voor Java wordt het samenvoegen van documenten een naadloos en geautomatiseerd proces, waardoor kostbare tijd en moeite worden bespaard.
 
-## 11.Veelgestelde vragen 
+## 11. Veelgestelde vragen 
 
 ### Kan ik documenten met verschillende formaten en stijlen samenvoegen?
 
@@ -203,7 +203,7 @@ Aspose.Words voor Java geeft Java-ontwikkelaars de mogelijkheid om moeiteloos Wo
 
     Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
 
-### Behoudt Aspose.Words de oorspronkelijke opmaak van samengevoegde documenten?
+### Behoudt Aspose.Words de originele opmaak van samengevoegde documenten?
 
     Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
 

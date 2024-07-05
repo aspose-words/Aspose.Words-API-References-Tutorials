@@ -32,7 +32,7 @@ Za prvé, pojďme nastavit nový projekt ve Visual Studiu.
 Chcete-li používat Aspose.Words, musíte je přidat do svého projektu. To lze provést pomocí Správce balíčků NuGet.
 
 1. **Open NuGet Package Manager:** Klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení a poté vyberte Spravovat balíčky NuGet.
-2. **Search for Aspose.Words:** Ve Správci balíčků NuGet vyhledejte „Apose.Words“.
+2. **Search for Aspose.Words:** Ve Správci balíčků NuGet vyhledejte „Aspose.Words“.
 3. **Install the Package:** Klepnutím na Instalovat přidáte Aspose.Words do svého projektu.
 
 ## Krok 3: Import jmenných prostorů
@@ -119,4 +119,4 @@ Slučovací pole je zástupný symbol v dokumentu, který lze dynamicky nahradit
 Aspose.Words podporuje několik verzí .NET, včetně .NET Framework, .NET Core a .NET Standard.
 
 ### 5. Kde najdu dokumentaci API pro Aspose.Words?
- K dispozici je dokumentace API.[tady](https://reference.aspose.com/words/net/).
+ K dispozici je dokumentace API[tady](https://reference.aspose.com/words/net/).

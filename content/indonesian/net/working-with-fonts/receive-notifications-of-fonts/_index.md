@@ -9,7 +9,7 @@ url: /id/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Jika Anda pernah menghadapi masalah dengan font yang tidak ditampilkan dengan benar di dokumen Anda, Anda tidak sendirian. Mengelola pengaturan font dan menerima pemberitahuan tentang penggantian font dapat menyelamatkan Anda dari banyak sakit kepala. Dalam panduan pemberitahuan komprehensif ini, kita akan mempelajari cara menangani font menggunakan Aspose.Words untuk .NET, memastikan dokumen Anda selalu terlihat terbaik.
+Jika Anda pernah menghadapi masalah dengan font yang tidak ditampilkan dengan benar di dokumen Anda, Anda tidak sendirian. Mengelola pengaturan font dan menerima pemberitahuan tentang penggantian font dapat menyelamatkan Anda dari banyak sakit kepala. Dalam panduan komprehensif ini, kita akan mempelajari cara menangani pemberitahuan font menggunakan Aspose.Words untuk .NET, memastikan dokumen Anda selalu terlihat terbaik.
 
 ## Prasyarat
 

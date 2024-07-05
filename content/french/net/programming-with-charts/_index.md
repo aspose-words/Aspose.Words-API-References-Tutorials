@@ -24,7 +24,7 @@ Avec ces didacticiels, vous pourrez améliorer vos documents Word en ajoutant de
 | [Insérer un graphique à bulles](./insert-bubble-chart/) | Découvrez comment insérer un graphique à bulles dans un document à l'aide d'Aspose.Words pour .NET. Ajoutez des données de série avec des valeurs X, Y et de taille de bulle. |
 | [Insérer un graphique à nuages de points](./insert-scatter-chart/) | Découvrez comment insérer un nuage de points dans un document à l'aide d'Aspose.Words pour .NET. Ajoutez des données de série avec les coordonnées X et Y. |
 | [Définir les propriétés de l'axe XYA](./define-xyaxis-properties/) | Découvrez comment définir les propriétés de l'axe XY dans un graphique à l'aide d'Aspose.Words for .NET. Les options de personnalisation pour les axes X et Y sont démontrées. |
-| [Valeurs date-heure vers l'axe](./date-time-values-to-axis/) | Découvrez comment ajouter des valeurs date/heure à l'axe d'un graphique à l'aide d'Aspose.Words for .NET. |
+| [Valeurs de date et d'heure sur l'axe](./date-time-values-to-axis/) | Découvrez comment ajouter des valeurs date/heure à l’axe d’un graphique à l’aide d’Aspose.Words for .NET. |
 | [Format numérique pour l'axe](./number-format-for-axis/) | Découvrez comment définir le format numérique d'un axe dans un graphique à l'aide d'Aspose.Words pour .NET. |
 | [Limites de l'axe](./bounds-of-axis/) | Découvrez comment définir les limites d'un axe dans un graphique à l'aide d'Aspose.Words for .NET contrôlant la plage de valeurs affichées sur l'axe. |
 | [Unité d'intervalle entre les étiquettes sur l'axe](./interval-unit-between-labels-on-axis/) | Découvrez comment définir l'unité d'intervalle entre les étiquettes sur l'axe d'un graphique à l'aide d'Aspose.Words pour .NET. |

@@ -131,4 +131,4 @@ Tak, możesz kopiować nagłówki i stopki pomiędzy dowolnymi sekcjami dokument
 
 ### P5: Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
 
-Tak, możesz pobrać bezpłatną wersję próbną ze strony[strona pobierania](https://releases.aspose.com/).
+ Tak, możesz pobrać bezpłatną wersję próbną ze strony[strona pobierania](https://releases.aspose.com/).

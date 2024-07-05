@@ -12,7 +12,7 @@ url: /th/net/working-with-markdown/use-warning-source/
 
 ## ขั้นตอนที่ 1: กำลังโหลดเอกสาร
 
- เราจะโหลดเอกสารที่มีอยู่ซึ่งมีคำเตือนโดยใช้`Load` วิธีการของ`Document` ชั้นเรียน
+ เราจะโหลดเอกสารที่มีอยู่ซึ่งมีคำเตือนโดยใช้`Load` วิธีการของ`Document` ระดับ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

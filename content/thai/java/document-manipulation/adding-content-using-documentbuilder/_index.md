@@ -167,7 +167,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกรูปภาพออนไลน์
+// แทรกรูปภาพในบรรทัด
 builder.insertImage("path/to/your/image.png");
 
 // บันทึกเอกสาร
@@ -269,7 +269,7 @@ doc.updateFields();
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกรูปภาพออนไลน์
+// แทรกรูปภาพในบรรทัด
 builder.insertImage("path/to/your/image.png");
 ```
 

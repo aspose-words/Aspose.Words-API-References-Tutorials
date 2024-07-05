@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### F: Hur ändrar jag sektionsinställningar i Aspose.Words för .NET?
 
- S: För att ändra inställningarna för en sektion kan du använda egenskaperna för sektionen.`PageSetup`objekt. I det här exemplet ändrar vi marginalerna, sidhuvudet och sidfotens avstånd och avståndet mellan textkolumner.
+ S: För att ändra inställningarna för en sektion kan du använda egenskaperna för sektionen`PageSetup`objekt. I det här exemplet ändrar vi marginalerna, sidhuvudet och sidfotens avstånd och avståndet mellan textkolumner.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm

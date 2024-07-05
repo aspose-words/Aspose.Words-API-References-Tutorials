@@ -95,7 +95,7 @@ Section section = doc.Sections[0];
 
 #### Otázka: Jak změním nastavení sekce v Aspose.Words pro .NET?
 
- A: Chcete-li upravit nastavení sekce, můžete použít vlastnosti sekce.`PageSetup`objekt. V tomto příkladu měníme okraje, vzdálenost záhlaví a zápatí a mezery mezi sloupci textu.
+ A: Chcete-li upravit nastavení sekce, můžete použít vlastnosti sekce`PageSetup`objekt. V tomto příkladu měníme okraje, vzdálenost záhlaví a zápatí a mezery mezi sloupci textu.
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm

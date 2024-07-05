@@ -32,7 +32,7 @@ builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 ## Шаг 3. Спецификация уровня списка
 
- Используйте конструктор документов`ListLevelNumber` Свойство для указания уровня списка и добавления текста в абзац:
+ Используйте конструктор документов`ListLevelNumber` свойство, позволяющее указать уровень списка и добавить текст в абзац:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -80,7 +80,7 @@ builder. ListFormat. List = null;
 builder.Document.Save(dataDir + "SpecifyListLevel.docx");
 ```
 
-Так! Вы успешно указали уровень списка в документе Word, используя Aspose.Words для .NET.
+Так ! Вы успешно указали уровень списка в документе Word, используя Aspose.Words для .NET.
 
 ### Пример исходного кода для указания уровня списка
 
@@ -125,7 +125,7 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### Вопрос: Можно ли изменить формат нумерации элементов списка в Aspose.Words?
 
- О: Да, вы можете изменить формат нумерации элементов списка в Aspose.Words.`ListLevel` класс предлагает для этого несколько свойств, таких как`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, и т. д. Эти свойства можно использовать для установки формата нумерации элементов списка, например арабских цифр, римских цифр, букв и т. д.
+ О: Да, вы можете изменить формат нумерации элементов списка в Aspose.Words.`ListLevel` класс предлагает для этого несколько свойств, таких как`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`и т. д. Эти свойства можно использовать для установки формата нумерации элементов списка, например арабских цифр, римских цифр, букв и т. д.
 
 #### Вопрос: Могу ли я добавить дополнительные уровни к нумерованному списку в Aspose.Words?
 

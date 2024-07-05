@@ -233,4 +233,4 @@ Aspose.Words vám umožňuje použít ochranu heslem na renderované dokumenty, 
 
 ### Může Aspose.Words vykreslovat dokumenty ve více jazycích?
 
-Ano, Aspose.Words podporuje vykreslování dokumentů v různých jazycích a bezproblémově zpracovává text s různými kódováními znaků.
+Ano, Aspose.Words podporuje vykreslování dokumentů v různých jazycích a bezproblémově zpracovává text s různým kódováním znaků.

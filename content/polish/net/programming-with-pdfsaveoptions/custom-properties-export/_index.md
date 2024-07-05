@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## Krok 2: Dodaj właściwości niestandardowe
- Następnie dodaj żądane właściwości niestandardowe. Na przykład, aby dodać właściwość „Firma” o wartości „Apose”, użyj metody`Add` metoda kolekcji CustomDocumentProperties:
+ Następnie dodaj żądane właściwości niestandardowe. Na przykład, aby dodać właściwość „Firma” o wartości „Aspose”, użyj metody`Add` metoda kolekcji CustomDocumentProperties:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -83,7 +83,7 @@ O: Aby wyeksportować niestandardowe właściwości dokumentu do dokumentu PDF p
 
  Utwórz instancję`Document` klasa.
 
- Dodaj żądane właściwości niestandardowe za pomocą`CustomDocumentProperties` kolekcja. Na przykład użyj`Add` metodę dodania właściwości „Firma” o wartości „Apose”.
+ Dodaj żądane właściwości niestandardowe za pomocą`CustomDocumentProperties` kolekcja. Na przykład użyj`Add` metodę dodania właściwości „Firma” o wartości „Aspose”.
 
  Utwórz instancję`PdfSaveOptions` klasę i określ sposób eksportowania właściwości niestandardowych za pomocą pliku`CustomPropertiesExport` nieruchomość. The`PdfCustomPropertiesExport.Standard` wartość eksportuje właściwości niestandardowe zgodnie z ustawieniami domyślnymi.
 

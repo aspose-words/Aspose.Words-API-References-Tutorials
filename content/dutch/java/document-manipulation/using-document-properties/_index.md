@@ -140,7 +140,7 @@ In dit voorbeeld vervangen we de regelterugloop (`\r`) met een harde return gevo
 
 ## Conclusie
 
-Documenteigenschappen spelen een belangrijke rol bij het effectief beheren en organiseren van uw documenten in Aspose.Words voor Java. Of u nu werkt met ingebouwde eigenschappen, aangepaste eigenschappen of het gebruik van stuurtekens, u beschikt over een reeks hulpmiddelen om uw mogelijkheden voor documentbeheer te verbeteren.
+Documenteigenschappen spelen een belangrijke rol bij het effectief beheren en organiseren van uw documenten in Aspose.Words voor Java. Of u nu werkt met ingebouwde eigenschappen, aangepaste eigenschappen of het gebruik van besturingstekens, u beschikt over een reeks hulpmiddelen om uw mogelijkheden voor documentbeheer te verbeteren.
 
 ## Veelgestelde vragen
 

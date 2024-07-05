@@ -2,7 +2,7 @@
 title: Accéder et vérifier la signature dans un document Word
 linktitle: Accéder et vérifier la signature dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment accéder et vérifier les signatures numériques dans un document Word avec Aspose.Words pour .NET.
+description: Découvrez comment accéder et vérifier les signatures numériques dans un document Word avec Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-digital-signatures/access-and-verify-signature/
@@ -79,7 +79,7 @@ Dans ce didacticiel, nous avons exploré la fonctionnalité d'accès et de véri
 
 R : Pour accéder aux signatures numériques dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez suivre ces étapes :
 1.  Chargez le document à l'aide du`Document` classe et spécifiez le chemin d’accès au fichier de document.
-2.  Utilisez une boucle pour parcourir le`DigitalSignatures` collecte des documents. Chaque itération représente une signature numérique.
+2.  Utilisez une boucle pour parcourir le`DigitalSignatures` collecte du document. Chaque itération représente une signature numérique.
 
 #### Q : À quelles informations puis-je accéder à partir d’une signature numérique dans un document Word ?
 
@@ -97,7 +97,7 @@ R : À partir d'une signature numérique dans un document Word, vous pouvez acc�
 #### Q : Comment puis-je vérifier la validité des signatures numériques dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
 R : Pour vérifier la validité des signatures numériques dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez suivre ces étapes :
-1.  Accéder au`DigitalSignatures` collecte des documents.
+1.  Accéder au`DigitalSignatures` collecte du document.
 2.  Parcourez chacun`DigitalSignature` objet dans la collection.
 3.  Utilisez le`IsValid` propriété du`DigitalSignature` objet pour vérifier si la signature est valide.
 

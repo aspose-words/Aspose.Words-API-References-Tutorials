@@ -2,97 +2,109 @@
 title: تنسيق الفقرة في مستند Word
 linktitle: تنسيق الفقرة في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية تطبيق التنسيق المخصص على فقراتك في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية تنسيق الفقرات بسهولة في مستندات Word باستخدام Aspose.Words لـ .NET من خلال دليلنا التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/document-formatting/paragraph-formatting/
 ---
-في هذا البرنامج التعليمي، سنرشدك إلى كيفية استخدام تنسيق الفقرة في ميزة مستند Word مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم الكود المصدري وتطبيق التغييرات.
+## مقدمة
 
-## الخطوة 1: إنشاء وتكوين المستند
+هل وجدت نفسك عالقًا في معركة لا تنتهي مع تنسيق مستند Word؟ انت لست وحدك. لقد مررنا جميعًا بهذه المشكلة، حيث عبثنا بإعدادات الفقرة، لينتهي بنا الأمر بمستند يبدو أشبه بلغز الصور المقطوعة أكثر من كونه تقريرًا احترافيًا. لكن خمن ماذا؟ هناك حل سحري لجميع مشاكل التنسيق لديك – Aspose.Words for .NET. تخيل أن لديك أداة يمكنها تنسيق فقراتك بالطريقة التي تريدها تمامًا، دون المتاعب المعتادة. يبدو حالمة، أليس كذلك؟ حسنًا، استعد لأننا على وشك التعمق في عالم تنسيق الفقرات باستخدام Aspose.Words for .NET، مما يجعل مستنداتك تبدو مصقولة واحترافية باستخدام بضعة أسطر فقط من التعليمات البرمجية.
 
-للبدء، قم بإنشاء مستند جديد وكائن DocumentBuilder مرتبط. إليك الطريقة:
+## المتطلبات الأساسية
+
+قبل أن نبدأ في مغامرة التنسيق هذه، فلنجهز مجموعة الأدوات الخاصة بنا. إليك ما ستحتاج إليه:
+
+1.  Aspose.Words لـ .NET: قم بتنزيله[هنا](https://releases.aspose.com/words/net/).
+2. Visual Studio: محرر التعليمات البرمجية الموثوق به.
+3. .NET Framework: تأكد من تثبيته.
+4. المعرفة الأساسية لـ C#: لا تقلق، لست بحاجة إلى أن تكون معالجًا، فقط بعض الفهم الأساسي سيفي بالغرض.
+
+حصلت على كل شيء؟ عظيم! هيا لنذهب.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، فلنستورد مساحات الأسماء الضرورية. هذا يشبه إعداد المسرح قبل حدوث السحر.
 
 ```csharp
-// المسار إلى دليل المستندات.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using System;
+using Aspose.Words;
+using Aspose.Words.Paragraphs;
 ```
 
-## الخطوة الثانية: تنسيق الفقرة
+الآن بعد أن تم إعداد المسرح، دعنا ننتقل إلى الجزء المثير - الدليل خطوة بخطوة.
 
-سنقوم الآن بتطبيق التنسيق على الفقرة باستخدام الخصائص المتوفرة في كائن ParagraphFormat الخاص بكائن DocumentBuilder. إليك الطريقة:
+## الخطوة 1: تهيئة المستند و DocumentBuilder
 
-```csharp
-ParagraphFormat paragraphFormat = builder.ParagraphFormat;
-paragraphFormat.Alignment = ParagraphAlignment.Center;
-paragraphFormat. LeftIndent = 50;
-paragraphFormat. RightIndent = 50;
-paragraphFormat. SpaceAfter = 25;
-```
-
-## الخطوة 3: حفظ الوثيقة
-
- بعد إدراج حقل نموذج إدخال النص، احفظ المستند في الموقع المطلوب باستخدام الزر`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+قبل أن نبدأ التنسيق، نحتاج إلى مستند للعمل معه. فكر في هذه الخطوة على أنها إنشاء لوحة قماشية فارغة لتحفتك الفنية.
 
 ```csharp
-builder.Writeln(
-	"I'm a very nice formatted paragraph. I'm intended to demonstrate how the left and right indents affect word wrapping.");
-builder.Writeln(
-	"I'm another nice formatted paragraph. I'm intended to demonstrate how the space after paragraph looks like.");
-
-doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
-```
-
-### مثال على التعليمات البرمجية المصدر لتنسيق الفقرة باستخدام Aspose.Words لـ .NET
-
-فيما يلي الكود المصدري الكامل لميزة تنسيق الفقرة باستخدام Aspose.Words for .NET:
-
-
-```csharp
-
 // المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+في مقتطف الشفرة هذا، نقوم بتهيئة مستند جديد وDocumentBuilder. يشبه DocumentBuilder عصاك السحرية لإنشاء المحتوى وتنسيقه.
+
+## الخطوة 2: تعيين تنسيق الفقرة
+
+الآن دعنا ننتقل إلى التنسيق الفعلي. وهنا يبدأ السحر الحقيقي.
+
+```csharp
 ParagraphFormat paragraphFormat = builder.ParagraphFormat;
 paragraphFormat.Alignment = ParagraphAlignment.Center;
 paragraphFormat.LeftIndent = 50;
 paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
-
-builder.Writeln(
-	"I'm a very nice formatted paragraph. I'm intended to demonstrate how the left and right indents affect word wrapping.");
-builder.Writeln(
-	"I'm another nice formatted paragraph. I'm intended to demonstrate how the space after paragraph looks like.");
-
-doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
-
 ```
 
-باستخدام هذا الرمز، ستتمكن من تطبيق تنسيقات مختلفة على فقراتك باستخدام Aspose.Words for .NET.
+ نحن نقوم بتكوين`ParagraphFormat`ملكيات. دعونا نحلل ما تفعله كل خاصية:
+- محاذاة: لتوسيط الفقرة.
+- LeftIndent: يضبط المسافة البادئة اليسرى على 50 نقطة.
+- RightIndent: يضبط المسافة البادئة اليمنى على 50 نقطة.
+- SpaceAfter: إضافة 25 نقطة مسافة بعد الفقرة.
 
+## الخطوة 3: إضافة نص إلى المستند
+
+بعد أن قمنا بالتنسيق، حان الوقت لإضافة بعض النص. هذا مثل الرسم على القماش الخاص بك.
+
+```csharp
+builder.Writeln(
+    "I'm a very nicely formatted paragraph. I'm intended to demonstrate how the left and right indents affect word wrapping.");
+builder.Writeln(
+    "I'm another nicely formatted paragraph. I'm intended to demonstrate how the space after the paragraph looks like.");
+```
+
+هنا، نقوم بإضافة فقرتين من النص. لاحظ كيفية تطبيق التنسيق على كلتا الفقرتين تلقائيًا.
+
+## الخطوة 4: احفظ المستند
+
+أخيرًا وليس آخرًا، دعونا نحفظ مستندنا المنسق بشكل جميل.
+
+```csharp
+doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
+```
+
+وفويلا! يتم حفظ المستند الخاص بك بالتنسيق المحدد. الحق سهلة؟
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، استكشفنا عملية استخدام ميزة تنسيق الفقرة في مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات الموضحة، يمكنك تنسيق فقراتك بشكل فعال، وضبط محاذاتها، والمسافات البادئة، والتباعد لإنشاء مستندات جذابة بصريًا وجيدة التنظيم.
+لا يجب أن يكون تنسيق الفقرات في مستند Word مهمة شاقة. مع Aspose.Words for .NET، لديك أداة قوية تحت تصرفك لجعل مستنداتك تبدو احترافية ومصقولة دون عناء. سواء أكان الأمر يتعلق بتعيين المسافات البادئة أو المحاذاة أو التباعد، فإن Aspose.Words يتعامل مع كل ذلك مثل المحترفين. لذا، تفضل وقم بتجربتها - قم بتحويل لعبة تنسيق المستندات الخاصة بك اليوم!
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: ما هو تنسيق الفقرة في مستند Word؟
+### ما هو Aspose.Words لـ .NET؟
+Aspose.Words for .NET عبارة عن واجهة برمجة تطبيقات قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتحريرها وتنسيقها برمجيًا باستخدام .NET.
 
-ج: يشير تنسيق الفقرة إلى التخصيص المرئي للفقرات الفردية في مستند Word. ويتضمن تعديلات على المحاذاة والمسافات البادئة وتباعد الأسطر والعناصر الأسلوبية الأخرى لتحسين مظهر المحتوى وسهولة قراءته.
+### كيف يمكنني تثبيت Aspose.Words لـ .NET؟
+ يمكنك تنزيل Aspose.Words لـ .NET من[هنا](https://releases.aspose.com/words/net/).
 
-#### س: هل يمكنني تطبيق تنسيق مختلف على فقرات مختلفة في نفس المستند؟
+### هل يمكنني تجربة Aspose.Words لـ .NET مجانًا؟
+ نعم، يمكنك الحصول على نسخة تجريبية مجانية[هنا](https://releases.aspose.com/).
 
- ج: نعم، يمكنك تطبيق تنسيقات مختلفة على فقرات مختلفة داخل نفس المستند. باستخدام`ParagraphFormat` الكائن وضبط خصائصه، يمكنك تخصيص مظهر كل فقرة بشكل مستقل.
+### هل من الممكن تطبيق تنسيق أكثر تعقيدًا باستخدام Aspose.Words لـ .NET؟
+قطعاً! يدعم Aspose.Words for .NET نطاقًا واسعًا من خيارات التنسيق، مما يسمح بتخطيطات المستندات المعقدة والمفصلة للغاية.
 
-#### س: هل يدعم Aspose.Words for .NET خيارات تنسيق النص الأخرى؟
-
-ج: نعم، يوفر Aspose.Words for .NET دعمًا شاملاً لتنسيق النص. يتضمن ميزات لتعديل أنماط الخطوط وأحجامها وألوانها وسمات النص الأخرى المتنوعة. يمكنك تحسين التمثيل المرئي للنص في مستندات Word الخاصة بك برمجياً.
-
-#### س: هل يتوافق Aspose.Words for .NET مع تنسيقات المستندات الأخرى؟
-
-ج: نعم، يدعم Aspose.Words for .NET تنسيقات المستندات المختلفة، بما في ذلك DOCX وDOC وRTF وHTML والمزيد. فهو يوفر واجهات برمجة تطبيقات قوية للعمل مع أنواع مختلفة من المستندات، مما يسمح لك بتحويل المستندات ومعالجتها وإنشائها بكفاءة.
+### أين يمكنني العثور على مزيد من الوثائق التفصيلية والدعم؟
+ يمكنك الوصول إلى الوثائق التفصيلية[هنا](https://reference.aspose.com/words/net/) وطلب الدعم[هنا](https://forum.aspose.com/c/words/8).

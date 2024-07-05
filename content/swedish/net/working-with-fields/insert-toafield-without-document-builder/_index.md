@@ -78,7 +78,7 @@ doc.FirstSection.Body.AppendChild(para);
 fieldToa.Update();
 ```
 
-### Källkodsexempel för TOA-fältinfogning utan Document Builder med Aspose.Words för .NET
+### Källkodsexempel för infogning av TOA-fält utan Document Builder med Aspose.Words för .NET
 
 ```csharp
 Document doc = new Document();

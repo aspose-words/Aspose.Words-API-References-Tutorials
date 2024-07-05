@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fonts/get-font-line-spacing/
 ---
-tomto tutoriálu vám řekneme, jak získat řádkování písma v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Řádkování písma definuje vertikální mezeru mezi řádky textu. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+V tomto tutoriálu vám řekneme, jak získat řádkování písma v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Řádkování písma definuje vertikální mezeru mezi řádky textu. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
 
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující položky:
@@ -61,7 +61,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Závěr
-tomto tutoriálu jsme viděli, jak získat řádkování písma v dokumentu aplikace Word pomocí Aspose.Words pro .NET. Řádkování písma je důležité pro ovládání vertikálních mezer mezi řádky textu. Neváhejte použít tuto funkci k přizpůsobení vzhledu textu v dokumentech.
+V tomto tutoriálu jsme viděli, jak získat řádkování písma v dokumentu aplikace Word pomocí Aspose.Words pro .NET. Řádkování písma je důležité pro ovládání vertikálních mezer mezi řádky textu. Neváhejte použít tuto funkci k přizpůsobení vzhledu textu v dokumentech.
 
 ### FAQ
 

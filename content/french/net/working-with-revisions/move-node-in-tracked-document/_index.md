@@ -62,7 +62,7 @@ doc.StopTrackRevisions();
 
 ## Étape 5 : Sauvegarde du document
 
- Après avoir inséré le champ du formulaire de saisie de texte, enregistrez le document à l'emplacement souhaité à l'aide du`Save` méthode. Assurez-vous de fournir le chemin de fichier approprié :
+ Après avoir inséré le champ du formulaire de saisie de texte, enregistrez le document à l'emplacement souhaité à l'aide du`Save`méthode. Assurez-vous de fournir le chemin de fichier approprié :
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -119,7 +119,7 @@ Dans ce didacticiel, nous avons appris à déplacer un nœud dans un document Wo
 
 #### Q : Comment puis-je activer le suivi des révisions dans un document Aspose.Words for .NET ?
 
-R : Pour activer le suivi des révisions dans un document Aspose.Words for .NET, vous pouvez utiliser l'outil`StartTrackRevisions` méthode du`Document` objet. Cette méthode prend en paramètres le nom de l'auteur des révisions et la date de début du suivi des révisions.
+ R : Pour activer le suivi des révisions dans un document Aspose.Words for .NET, vous pouvez utiliser l'outil`StartTrackRevisions` méthode du`Document` objet. Cette méthode prend en paramètres le nom de l'auteur des révisions et la date de début du suivi des révisions.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));

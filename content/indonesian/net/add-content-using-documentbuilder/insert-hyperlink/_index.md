@@ -22,7 +22,7 @@ Sebelum kita mendalami kodenya, ada beberapa hal yang perlu Anda siapkan:
 
 ## Impor Namespace
 
-Hal pertama yang pertama, Anda harus mengimpor namespace yang diperlukan dalam proyek C# Anda. Ini penting untuk mengakses fungsionalitas Aspose.Words.
+Hal pertama yang pertama, Anda harus mengimpor namespace yang diperlukan dalam proyek C# Anda. Ini penting untuk mengakses fungsi Aspose.Words.
 
 ```csharp
 using System;
@@ -41,7 +41,7 @@ Untuk memulai, jalankan Visual Studio dan buat proyek C# baru. Anda dapat memili
 
 Instal Aspose.Words untuk .NET
 
-Selanjutnya, Anda harus menginstal perpustakaan Aspose.Words untuk .NET. Anda dapat melakukan ini melalui Manajer Paket NuGet. Cukup klik kanan proyek Anda di Solution Explorer, pilih "Kelola Paket NuGet", cari "Apose.Words", dan instal.
+Selanjutnya, Anda harus menginstal perpustakaan Aspose.Words untuk .NET. Anda dapat melakukan ini melalui Manajer Paket NuGet. Cukup klik kanan proyek Anda di Solution Explorer, pilih "Kelola Paket NuGet", cari "Aspose.Words", dan instal.
 
 ## Langkah 2: Inisialisasi Dokumen
 
@@ -92,7 +92,7 @@ Sekarang, mari masukkan hyperlink yang sebenarnya. Ini adalah dimana keajaiban t
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", salah);
 ```
 
-Di baris ini, kami menyisipkan hyperlink dengan teks tampilan "Situs Web Apose" dan URL "http://www.aspose.com".
+Di baris ini, kami menyisipkan hyperlink dengan teks tampilan "Aspose Website" dan URL "http://www.aspose.com".
 
 ## Langkah 6: Hapus Pemformatan
 

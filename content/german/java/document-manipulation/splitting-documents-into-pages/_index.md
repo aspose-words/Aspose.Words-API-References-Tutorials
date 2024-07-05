@@ -1,24 +1,24 @@
 ---
 title: Aufteilen von Dokumenten in Seiten in Aspose.Words für Java
-linktitle: Dokumente in Seiten aufteilen
-second_title: Aspose.Words Java-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Java in Seiten aufteilen. Schritt-für-Schritt-Anleitung mit Quellcode für eine effiziente Dokumentenverarbeitung.
+linktitle: Aufteilen von Dokumenten in Seiten
+second_title: Aspose.Words Java-API zur Dokumentverarbeitung
+description: Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Java in Seiten aufteilen. Schritt-für-Schritt-Anleitung mit Quellcode für eine effiziente Dokumentverarbeitung.
 type: docs
 weight: 23
 url: /de/java/document-manipulation/splitting-documents-into-pages/
 ---
 
-Wenn Sie mit der Dokumentverarbeitung in Java arbeiten, ist Aspose.Words für Java eine leistungsstarke API, die Ihnen dabei helfen kann, Dokumente effizient in separate Seiten aufzuteilen. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch den Prozess der Aufteilung von Dokumenten mithilfe des bereitgestellten Quellcodes. Am Ende dieses Tutorials werden Sie in der Lage sein, Dokumente problemlos aufzuteilen und so Ihre Funktionen zur Dokumentenverwaltung zu verbessern.
+Wenn Sie mit der Dokumentenverarbeitung in Java arbeiten, ist Aspose.Words für Java eine leistungsstarke API, mit der Sie Dokumente effizient in einzelne Seiten aufteilen können. In diesem Schritt-für-Schritt-Tutorial führen wir Sie mithilfe des bereitgestellten Quellcodes durch den Prozess des Aufteilens von Dokumenten. Am Ende dieses Tutorials können Sie Dokumente problemlos aufteilen und so Ihre Dokumentenverwaltungsfunktionen verbessern.
 
 ## 1. Einleitung
 
-Aspose.Words für Java ist eine Java-Bibliothek, mit der Sie Word-Dokumente programmgesteuert bearbeiten können. Eine häufige Aufgabe besteht darin, ein Dokument in einzelne Seiten aufzuteilen, was für verschiedene Zwecke nützlich sein kann, beispielsweise zum Archivieren, Drucken oder Bearbeiten von Dokumenten.
+Aspose.Words für Java ist eine Java-Bibliothek, mit der Sie Word-Dokumente programmgesteuert bearbeiten können. Eine häufige Aufgabe ist das Aufteilen eines Dokuments in einzelne Seiten, was für verschiedene Zwecke nützlich sein kann, z. B. zum Archivieren, Drucken oder zur Dokumentverarbeitung.
 
 ## 2. Voraussetzungen
 
-Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor wir uns in den Code vertiefen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-- Java Development Kit (JDK) auf Ihrem System installiert.
+- Auf Ihrem System ist Java Development Kit (JDK) installiert.
 -  Aspose.Words für Java-Bibliothek, die Sie herunterladen können[Hier](https://releases.aspose.com/words/java/).
 
 ## 3. Einrichten Ihrer Umgebung
@@ -26,11 +26,11 @@ Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Vora
 Richten Sie zunächst Ihre Entwicklungsumgebung wie folgt ein:
 
 - Erstellen Sie ein Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE).
-- Fügen Sie Ihrem Projekt die Aspose.Words for Java-Bibliothek hinzu. Sie können sich auf die beziehen[Dokumentation](https://reference.aspose.com/words/java/) für detaillierte Anweisungen.
+- Fügen Sie Ihrem Projekt die Bibliothek Aspose.Words für Java hinzu. Weitere Informationen finden Sie unter[Dokumentation](https://reference.aspose.com/words/java/) für detaillierte Anweisungen.
 
 ## 4. Den Quellcode verstehen
 
-Der von Ihnen bereitgestellte Quellcode dient dazu, ein Dokument in separate Seiten aufzuteilen. Lassen Sie uns die Schlüsselkomponenten aufschlüsseln:
+Der von Ihnen bereitgestellte Quellcode ist dafür gedacht, ein Dokument in einzelne Seiten aufzuteilen. Lassen Sie uns die wichtigsten Komponenten aufschlüsseln:
 
 ```java
 String fileName = FilenameUtils.getBaseName(docName);
@@ -50,15 +50,15 @@ Document doc = new Document(docName);
 Document doc = new Document(docName);
 ```
 
- In diesem Schritt laden wir das Eingabedokument in ein`Document` Objekt, das es uns ermöglicht, mit dem Inhalt des Dokuments zu arbeiten.
+ In diesem Schritt laden wir das Eingabedokument in ein`Document` Objekt, das uns ermöglicht, mit dem Inhalt des Dokuments zu arbeiten.
 
-### 5.2. Initialisieren des DocumentPageSplitter
+### 5.2. Initialisieren des DocumentPageSplitters
 
 ```java
 DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 ```
 
- Wir initialisieren a`DocumentPageSplitter` Objekt mit unserem geladenen Dokument. Diese Klasse wird von Aspose.Words für Java bereitgestellt und hilft uns, das Dokument in Seiten aufzuteilen.
+ Wir initialisieren eine`DocumentPageSplitter` Objekt mit unserem geladenen Dokument. Diese Klasse wird von Aspose.Words für Java bereitgestellt und hilft uns, das Dokument in Seiten aufzuteilen.
 
 ### 5.3. Jede Seite speichern
 
@@ -69,11 +69,11 @@ for (int page = 1; page <= doc.getPageCount(); page++) {
 }
 ```
 
-In diesem Schritt durchlaufen wir jede Seite des Dokuments und speichern es als separates Dokument. Sie können den Verzeichnispfad angeben, in dem die geteilten Seiten gespeichert werden.
+In diesem Schritt durchlaufen wir jede Seite des Dokuments und speichern sie als separates Dokument. Sie können den Verzeichnispfad angeben, in dem die aufgeteilten Seiten gespeichert werden.
 
 ## 6. Ausführen des Codes
 
-Um diesen Code erfolgreich auszuführen, stellen Sie sicher, dass Sie Ihre Umgebung eingerichtet und die Aspose.Words for Java-Bibliothek zu Ihrem Projekt hinzugefügt haben. Führen Sie dann den Code aus, und Ihr Dokument wird in einzelne Seiten aufgeteilt.
+Um diesen Code erfolgreich auszuführen, stellen Sie sicher, dass Sie Ihre Umgebung eingerichtet und die Bibliothek Aspose.Words für Java zu Ihrem Projekt hinzugefügt haben. Führen Sie dann den Code aus, und Ihr Dokument wird in einzelne Seiten aufgeteilt.
 
 ## DocumentPageSplitter-Quellcode
 
@@ -86,7 +86,7 @@ class DocumentPageSplitter
 private PageNumberFinder pageNumberFinder;
 /// <Zusammenfassung>
 /// Initialisiert eine neue Instanz der Klasse <see cref="DocumentPageSplitter"/>.
-/// Diese Methode unterteilt das Dokument in Abschnitte, sodass jede Seite an einer Abschnittsgrenze beginnt und endet.
+/// Diese Methode teilt das Dokument in Abschnitte auf, sodass jede Seite an einer Abschnittsgrenze beginnt und endet.
 /// Es wird empfohlen, das Dokument nachträglich nicht zu ändern.
 /// </summary>
 /// <param name="source">Quelldokument</param>
@@ -100,11 +100,11 @@ private Document getDocument() {
 /// <Zusammenfassung>
 /// Ruft das Dokument einer Seite ab.
 /// </summary>
-/// <param name="pageIndex">
+/// <param name="Seitenindex">
 /// 1-basierter Index einer Seite.
 /// </param>
-/// <returns>
-/// Das <see cref="Document"/>.
+/// <Rückgabe>
+/// Das <see cref="Dokument"/>.
 /// </returns>
 public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
@@ -113,13 +113,13 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 /// Ruft das Dokument eines Seitenbereichs ab.
 /// </summary>
 //<param name="startIndex">
-///1-basierter Index der Startseite.
+/// 1-basierter Index der Startseite.
 /// </param>
 /// <param name="endIndex">
 /// 1-basierter Index der Endseite.
 /// </param>
-/// <returns>
-/// Das <see cref="Document"/>.
+/// <Rückgabe>
+/// Das <see cref="Dokument"/>.
 /// </returns>
 public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exception {
 	Document result = (Document) getDocument().deepClone(false);
@@ -135,8 +135,8 @@ public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exce
 /// </summary>
 class PageNumberFinder
 {
-// Ordnet den Knoten einer Start-/Endseitennummer zu.
-// Dies wird verwendet, um die vom Collector bereitgestellten Basisseitenzahlen zu überschreiben, wenn das Dokument geteilt wird.
+// Ordnet den Knoten den Start-/Endseitenzahlen zu.
+// Dies wird verwendet, um die vom Collector bereitgestellten Basisseitenzahlen beim Aufteilen des Dokuments zu überschreiben.
 private Map<Node, Integer> nodeStartPageLookup = new HashMap<>();
 private Map<Node, Integer> nodeEndPageLookup = new HashMap<>();
 private LayoutCollector collector;
@@ -145,7 +145,7 @@ private Map<Integer, ArrayList<Node>> reversePageLookup;
 /// <Zusammenfassung>
 /// Initialisiert eine neue Instanz der Klasse <see cref="PageNumberFinder"/>.
 /// </summary>
-/// <param name="collector">Eine Collector-Instanz, die über Layoutmodelldatensätze für das Dokument verfügt.</param>
+/// <param name="collector">Eine Collector-Instanz, die Layoutmodell-Datensätze für das Dokument enthält.</param>
 public PageNumberFinder(LayoutCollector collector)
 {
 	this.collector = collector;
@@ -157,10 +157,10 @@ public Document getDocument()
 /// <Zusammenfassung>
 /// Ruft den 1-basierten Index einer Seite ab, auf der der Knoten beginnt.
 /// </summary>
-/// <param name="node">
+/// <param name="Knoten">
 /// Der Knoten.
 /// </param>
-/// <returns>
+/// <Rückgabe>
 /// Seitenindex.
 /// </returns>
 public int getPage(Node node) throws Exception {
@@ -171,10 +171,10 @@ public int getPage(Node node) throws Exception {
 /// <Zusammenfassung>
 /// Ruft den 1-basierten Index einer Seite ab, auf der der Knoten endet.
 /// </summary>
-/// <param name="node">
+/// <param name="Knoten">
 /// Der Knoten.
 /// </param>
-/// <returns>
+/// <Rückgabe>
 /// Seitenindex.
 /// </returns>
 public int getPageEnd(Node node) throws Exception {
@@ -183,31 +183,31 @@ public int getPageEnd(Node node) throws Exception {
 		: collector.getEndPageIndex(node);
 }
 /// <Zusammenfassung>
-//Gibt zurück, wie viele Seiten der angegebene Knoten umfasst. Gibt 1 zurück, wenn der Knoten auf einer Seite enthalten ist.
+//Gibt zurück, über wie viele Seiten sich der angegebene Knoten erstreckt. Gibt 1 zurück, wenn der Knoten auf einer Seite liegt.
 /// </summary>
-/// <param name="node">
+/// <param name="Knoten">
 /// Der Knoten.
 /// </param>
-/// <returns>
+/// <Rückgabe>
 /// Seitenindex.
 /// </returns>
 public int pageSpan(Node node) throws Exception {
 	return getPageEnd(node) - getPage(node) + 1;
 }
 /// <Zusammenfassung>
-/// Gibt eine Liste von Knoten zurück, die irgendwo auf der angegebenen Seite oder Seiten enthalten sind und dem angegebenen Knotentyp entsprechen.
+/// Gibt eine Liste von Knoten zurück, die irgendwo auf der angegebenen Seite oder den angegebenen Seiten enthalten sind und dem angegebenen Knotentyp entsprechen.
 /// </summary>
-/// <param name="startPage">
+/// <param name="Startseite">
 /// Die Startseite.
 /// </param>
 /// <param name="endPage">
 /// Die letzte Seite.
 /// </param>
-/// <param name="nodeType">
+/// <param name="Knotentyp">
 /// Der Knotentyp.
 /// </param>
-/// <returns>
-/// Das <see cref="IList{T}"/>.
+/// <Rückgabe>
+/// Die <see cref="IList{T}"/>.
 /// </returns>
 public ArrayList<Node> retrieveAllNodesOnPages(int startPage, int endPage, /*NodeType*/int nodeType) throws Exception
 {
@@ -241,7 +241,7 @@ public ArrayList<Node> retrieveAllNodesOnPages(int startPage, int endPage, /*Nod
 	return pageNodes;
 }
 /// <Zusammenfassung>
-/// Teilt Knoten, die auf zwei oder mehr Seiten erscheinen, in separate Knoten auf, sodass sie immer noch auf die gleiche Weise angezeigt werden
+/// Teilt Knoten, die über zwei oder mehr Seiten hinweg erscheinen, in separate Knoten auf, so dass sie immer noch auf die gleiche Weise erscheinen
 /// werden aber nicht mehr auf einer Seite angezeigt.
 /// </summary>
 public void splitNodesAcrossPages() throws Exception
@@ -254,16 +254,16 @@ public void splitNodesAcrossPages() throws Exception
 		}
 	}
 	clearCollector();
-	// Besuchen Sie alle zusammengesetzten Elemente, die möglicherweise auf mehrere Seiten aufgeteilt sind, und teilen Sie sie in separate Knoten auf.
+	// Besuchen Sie alle möglicherweise auf mehrere Seiten verteilten Komposite und teilen Sie sie in separate Knoten auf.
 	collector.getDocument().accept(new SectionSplitter(this));
 }
 /// <Zusammenfassung>
-/// Dies wird von <see cref="SectionSplitter"/> aufgerufen, um die Seitenzahlen der geteilten Knoten zu aktualisieren.
+/// Dies wird von <see cref="SectionSplitter"/> aufgerufen, um die Seitennummern der geteilten Knoten zu aktualisieren.
 /// </summary>
-/// <param name="node">
+/// <param name="Knoten">
 /// Der Knoten.
 /// </param>
-/// <param name="startPage">
+/// <param name="Startseite">
 /// Die Startseite.
 /// </param>
 /// <param name="endPage">
@@ -290,10 +290,10 @@ private void checkPageListsPopulated() throws Exception {
 		return;
 	}
 	reversePageLookup = new HashMap<Integer, ArrayList<Node>>();
-	// Fügen Sie jeden Knoten einer Liste hinzu, die die auf jeder Seite gefundenen Knoten darstellt.
+	// Fügen Sie jeden Knoten zu einer Liste hinzu, die die auf jeder Seite gefundenen Knoten darstellt.
 	for (Node node : (Iterable<Node>) collector.getDocument().getChildNodes(NodeType.ANY, true))
 	{
-		//Kopf-/Fußzeilen folgen den Abschnitten und werden nicht einzeln geteilt.
+		//Kopf-/Fußzeilen folgen den Abschnitten und sind nicht in sich selbst unterteilt.
 		if (isHeaderFooterType(node))
 		{
 			continue;
@@ -403,7 +403,7 @@ public int visitSmartTagStart(SmartTag smartTag) throws Exception {
 public int visitSectionStart(Section section) throws Exception {
 	Section previousSection = (Section) section.getPreviousSibling();
 	// Wenn es einen vorherigen Abschnitt gibt, versuchen Sie, alle verknüpften Kopf- und Fußzeilen zu kopieren.
-	// Andernfalls werden sie nicht in einem extrahierten Dokument angezeigt, wenn der vorherige Abschnitt fehlt.
+	// Andernfalls erscheinen sie nicht in einem extrahierten Dokument, wenn der vorherige Abschnitt fehlt.
 	if (previousSection != null)
 	{
 		HeaderFooterCollection previousHeaderFooters = previousSection.getHeadersFooters();
@@ -446,7 +446,7 @@ public int visitTableEnd(Table table) throws Exception {
 	return VisitorAction.CONTINUE;
 }
 public int visitParagraphEnd(Paragraph paragraph) throws Exception {
-	// Wenn der Absatz nur einen Abschnittsumbruch enthält, fügen Sie einen falschen Einlauf hinzu.
+	// Wenn der Absatz nur einen Abschnittsumbruch enthält, fügen Sie einen falschen „run into“ hinzu.
 	if (paragraph.isEndOfSection() && paragraph.getChildNodes().getCount() == 1 &&
 		"\f".equals(paragraph.getChildNodes().get(0).getText()))
 	{
@@ -458,15 +458,15 @@ public int visitParagraphEnd(Paragraph paragraph) throws Exception {
 	for (Node cloneNode : splitComposite(paragraph))
 	{
 		Paragraph clonePara = (Paragraph) cloneNode;
-		// Entfernen Sie die Listennummerierung aus dem geklonten Absatz, lassen Sie jedoch den Einzug unverändert
-		// da der Absatz vorher Teil des Artikels sein sollte.
+		// Entfernen Sie die Listennummerierung aus dem geklonten Absatz, lassen Sie den Einzug jedoch unverändert
+		// da der Absatz Teil des vorherigen Punkts sein soll.
 		if (paragraph.isListItem())
 		{
 			double textPosition = clonePara.getListFormat().getListLevel().getTextPosition();
 			clonePara.getListFormat().removeNumbers();
 			clonePara.getParagraphFormat().setLeftIndent(textPosition);
 		}
-		// Setzen Sie den Abstand geteilter Absätze in Tabellen zurück, da zusätzliche Abstände dazu führen können, dass diese anders aussehen.
+		// Setzen Sie den Abstand geteilter Absätze in Tabellen zurück, da zusätzlicher Abstand dazu führen kann, dass sie anders aussehen.
 		if (paragraph.isInCell())
 		{
 			clonePara.getParagraphFormat().setSpaceBefore(0.0);
@@ -534,7 +534,7 @@ private Iterable<Node> findChildSplitPositions(CompositeNode node) throws Except
 			pageNumberFinder.addPageNumbersForNode(childNode, pageNum, pageNum);
 		}
 	}
-	// Teilen Sie Verbundstoffe rückwärts auf, damit die geklonten Knoten in der richtigen Reihenfolge eingefügt werden.
+	// Teilen Sie Verbundwerkstoffe rückwärts auf, sodass die geklonten Knoten in der richtigen Reihenfolge eingefügt werden.
 	Collections.reverse(splitList);
 	return splitList;
 }
@@ -562,7 +562,7 @@ private CompositeNode splitCompositeAtNode(CompositeNode baseNode, Node targetNo
 	}
 	else
 	{
-		// Wenn es sich um eine Zeile handelt, müssen wir Dummy-Zellen für die geklonte Zeile hinzufügen.
+		// Wenn wir mit einer Zeile arbeiten, müssen wir Dummyzellen für die geklonte Zeile hinzufügen.
 		int targetPageNum = pageNumberFinder.getPage(targetNode);
 		Node[] childNodes = baseNode.getChildNodes().toArray();
 		for (Node childNode : childNodes)
@@ -591,7 +591,7 @@ private CompositeNode splitCompositeAtNode(CompositeNode baseNode, Node targetNo
 	// Fügen Sie den geteilten Knoten nach dem Original ein.
 	baseNode.getParentNode().insertAfter(cloneNode, baseNode);
 	// Aktualisieren Sie die neuen Seitenzahlen des Basisknotens und des geklonten Knotens, einschließlich seiner Nachkommen.
-	// Dies wird nur eine einzelne Seite sein, da der geklonte Verbund auf eine Seite aufgeteilt wird.
+	// Dies wird nur eine einzelne Seite sein, da die geklonte Zusammenstellung auf eine Seite aufgeteilt wird.
 	int currentEndPageNum = pageNumberFinder.getPageEnd(baseNode);
 	pageNumberFinder.addPageNumbersForNode(baseNode, currentPageNum, currentEndPageNum - 1);
 	pageNumberFinder.addPageNumbersForNode(cloneNode, currentEndPageNum, currentEndPageNum);
@@ -662,14 +662,14 @@ private static void removePageBreak(Run run)
 
 ## Abschluss
 
-Sie haben jetzt gelernt, wie Sie mit Aspose.Words für Java ein Dokument in separate Seiten aufteilen. Dieses Handbuch bietet eine umfassende Schritt-für-Schritt-Anleitung mit Quellcode-Beispielen. Sie können diesen Code weiter anpassen und erweitern, um Ihren spezifischen Anforderungen bei der Arbeit mit Dokumenten gerecht zu werden.
+Sie haben nun gelernt, wie Sie ein Dokument mit Aspose.Words für Java in einzelne Seiten aufteilen. Dieses Handbuch bietet eine umfassende Schritt-für-Schritt-Anleitung mit Quellcodebeispielen. Sie können diesen Code weiter anpassen und erweitern, um ihn Ihren spezifischen Anforderungen bei der Arbeit mit Dokumenten anzupassen.
 Sicherlich! Fügen wir unserem Leitfaden zum Aufteilen von Dokumenten in Seiten mit Aspose.Words für Java einen FAQ-Abschnitt hinzu.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie füge ich Aspose.Words für Java zu meinem Projekt hinzu?
 
-Um Aspose.Words für Java zu Ihrem Projekt hinzuzufügen, führen Sie die folgenden Schritte aus:
+Um Aspose.Words für Java zu Ihrem Projekt hinzuzufügen, folgen Sie diesen Schritten:
 
 1.  Laden Sie die Aspose.Words für Java-Bibliothek herunter von[Hier](https://releases.aspose.com/words/java/).
 2. Fügen Sie die heruntergeladene JAR-Datei zum Klassenpfad Ihres Projekts hinzu.
@@ -677,20 +677,20 @@ Um Aspose.Words für Java zu Ihrem Projekt hinzuzufügen, führen Sie die folgen
 
 ### Kann ich Dokumente in andere Formate wie PDF oder DOCX aufteilen?
 
-Nein, in dieser Anleitung geht es speziell um die Aufteilung von Dokumenten im DOC-Format mit Aspose.Words für Java. Wenn Sie Dokumente in andere Formate aufteilen müssen, müssen Sie möglicherweise andere Bibliotheken oder Tools erkunden, die diese Formate unterstützen.
+Nein, dieses Handbuch behandelt speziell das Aufteilen von Dokumenten im DOC-Format mit Aspose.Words für Java. Wenn Sie Dokumente in anderen Formaten aufteilen müssen, müssen Sie möglicherweise andere Bibliotheken oder Tools erkunden, die diese Formate unterstützen.
 
 ### Ist Aspose.Words für Java eine kostenlose Bibliothek?
 
- Nein, Aspose.Words für Java ist keine kostenlose Bibliothek. Es handelt sich um ein kommerzielles Produkt mit einer Lizenzgebühr. Sie können die besuchen[Aspose.Words für Java-Preisseite](https://purchase.aspose.com/words/java) Weitere Informationen zu Lizenz- und Preisdetails finden Sie hier.
+ Nein, Aspose.Words für Java ist keine kostenlose Bibliothek. Es ist ein kommerzielles Produkt mit einer Lizenzgebühr. Sie können die[Aspose.Words für Java-Preisseite](https://purchase.aspose.com/words/java) für weitere Informationen zu Lizenzierung und Preisen.
 
-### Kann ich Dokumente in benutzerdefinierte Seitengrößen und -formate aufteilen?
+### Kann ich Dokumente in benutzerdefinierte Seitengrößen und Formate aufteilen?
 
-Ja, Sie können die Seitengrößen und -formate der geteilten Dokumente anpassen, indem Sie die Seiteneinrichtungseigenschaften in Aspose.Words für Java ändern. Weitere Informationen zum Anpassen der Seiteneinstellungen an Ihre Anforderungen finden Sie in der Aspose.Words-Dokumentation.
+Ja, Sie können die Seitengrößen und -formate der geteilten Dokumente anpassen, indem Sie die Seiteneinrichtungseigenschaften in Aspose.Words für Java ändern. Weitere Informationen zum Anpassen der Seiteneinstellungen entsprechend Ihren Anforderungen finden Sie in der Aspose.Words-Dokumentation.
 
-### Gibt es Einschränkungen hinsichtlich der Anzahl der Seiten, die geteilt werden können?
+### Gibt es Beschränkungen hinsichtlich der Anzahl der Seiten, die aufgeteilt werden können?
 
-Aspose.Words für Java legt keine besonderen Beschränkungen hinsichtlich der Anzahl der Seiten fest, die Sie teilen können. Bedenken Sie jedoch, dass sehr große Dokumente möglicherweise mehr Speicher und Verarbeitungszeit benötigen. Achten Sie bei der Arbeit mit großen Dokumenten auf die Systemressourcen.
+Aspose.Words für Java legt keine spezifischen Beschränkungen für die Anzahl der Seiten fest, die Sie aufteilen können. Bedenken Sie jedoch, dass sehr große Dokumente möglicherweise mehr Speicher und Verarbeitungszeit benötigen. Achten Sie bei der Arbeit mit großen Dokumenten auf die Systemressourcen.
 
-### Wie kann ich beim Teilen von Dokumenten mit Kopf- und Fußzeilen umgehen?
+### Wie kann ich beim Aufteilen von Dokumenten mit Kopf- und Fußzeilen umgehen?
 
-Kopf- und Fußzeilen können beim Teilen von Dokumenten mithilfe der Aspose.Words for Java-Bibliothek verarbeitet werden. Sie können Kopf- und Fußzeileninhalte aus dem Originaldokument in die geteilten Dokumente kopieren und so sicherstellen, dass sie korrekt erhalten bleiben. Möglicherweise müssen Sie diesen Prozess entsprechend Ihren spezifischen Kopf- und Fußzeilenanforderungen anpassen.
+Kopf- und Fußzeilen können beim Aufteilen von Dokumenten mithilfe der Bibliothek Aspose.Words für Java verarbeitet werden. Sie können Kopf- und Fußzeileninhalte aus dem Originaldokument in die aufgeteilten Dokumente kopieren und dabei sicherstellen, dass sie korrekt erhalten bleiben. Möglicherweise müssen Sie diesen Prozess basierend auf Ihren spezifischen Kopf- und Fußzeilenanforderungen anpassen.

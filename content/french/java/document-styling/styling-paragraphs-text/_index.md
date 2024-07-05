@@ -321,7 +321,7 @@ Les tableaux constituent un moyen puissant d’organiser et de présenter les do
 // Créer un nouveau document
 Document doc = new Document();
 
-// Créez un tableau avec 3 lignes et 3 colonnes.
+// Créer un tableau avec 3 lignes et 3 colonnes
 Table table = new Table(doc);
 table.ensureMinimum();
 table.getRows().add(new Row(doc));
@@ -427,6 +427,6 @@ pageSetup.setBottomMargin(72); // Marge inférieure en points
 
 ## Conclusion
 
-Dans ce guide complet, nous avons exploré les puissantes capacités d'Aspose.Words pour Java pour styliser les paragraphes et le texte des documents. Vous avez appris à créer, formater et améliorer vos documents par programmation, depuis la manipulation de texte de base jusqu'aux fonctionnalités avancées. Aspose.Words for Java permet aux développeurs d'automatiser efficacement les tâches de formatage de documents. Continuez à pratiquer et à expérimenter différentes fonctionnalités pour maîtriser le style de document avec Aspose.Words pour Java.
+Dans ce guide complet, nous avons exploré les puissantes capacités d'Aspose.Words pour Java pour styliser les paragraphes et le texte des documents. Vous avez appris à créer, formater et améliorer vos documents par programmation, depuis la manipulation de texte de base jusqu'aux fonctionnalités avancées. Aspose.Words for Java permet aux développeurs d'automatiser efficacement les tâches de formatage de documents. Continuez à pratiquer et à expérimenter différentes fonctionnalités pour maîtriser le style de document avec Aspose.Words for Java.
 
 Maintenant que vous savez parfaitement comment styliser des paragraphes et du texte dans des documents à l'aide d'Aspose.Words pour Java, vous êtes prêt à créer des documents magnifiquement formatés et adaptés à vos besoins spécifiques. Bon codage !

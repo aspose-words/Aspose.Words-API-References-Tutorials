@@ -46,7 +46,7 @@ Bây giờ, hãy tiến hành quy trình từng bước để xóa các trườn
 Nếu bạn chưa có, hãy thêm tham chiếu đến Aspose.Words trong dự án Visual Studio của bạn. Bạn có thể làm điều này bằng cách:
    - Nhấp chuột phải vào dự án của bạn trong Solution Explorer.
    - Chọn "Quản lý gói NuGet ..."
-   - Tìm kiếm "Apose.Words" và cài đặt nó vào dự án của bạn.
+   - Tìm kiếm "Aspose.Words" và cài đặt nó vào dự án của bạn.
 
 ## Bước 3: Chuẩn bị tài liệu của bạn
 
@@ -105,4 +105,4 @@ Tóm lại, hướng dẫn này đã cung cấp hướng dẫn toàn diện về
    - Có, phương pháp hiển thị ở đây chỉ nhắm mục tiêu cụ thể vào các trường và không thay đổi nội dung khác.
 
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho Aspose.Words ở đâu?
-   -  Tham quan[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/) và[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8)để được hỗ trợ.
+   -  Tham quan[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/) và[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.

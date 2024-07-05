@@ -27,13 +27,13 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: A fő könyvjelző létrehozása
 
- Használjuk a`StartBookmark` módszer a fő könyvjelző elindításához és a`EndBookmark` módszer a befejezésére. Közben szöveget és egyéb könyvjelzőket is hozzáadhatunk:
+ Használjuk a`StartBookmark` módszer a fő könyvjelző elindításához és a`EndBookmark` módszer a megszüntetésére. Közben szöveget és egyéb könyvjelzőket is hozzáadhatunk:
 
 ```csharp
 builder. StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
 
-// Adjon hozzá további könyvjelzőket vagy szöveget itt.
+// Adjon hozzá további könyvjelzőket vagy szöveget.
 
 builder. EndBookmark("My Bookmark");
 ```

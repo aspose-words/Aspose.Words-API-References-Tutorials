@@ -33,7 +33,7 @@ doc.AppendChild(new Section(doc));
 ```
 
 ## Etapa 3: excluir todas as seções
- Para remover todas as seções do documento, usaremos o`Clear` método do`Sections` coleta dos documentos.
+ Para remover todas as seções do documento, usaremos o`Clear` método do`Sections` coleta do documento.
 
 ```csharp
 doc.Sections.Clear();
@@ -85,7 +85,7 @@ doc.AppendChild(new Section(doc));
 
 #### P: Como remover todas as seções do Aspose.Words for .NET?
 
- R: Para remover todas as seções do documento no Aspose.Words for .NET, você pode usar o`Clear` método do`Sections` coleta dos documentos:
+ R: Para remover todas as seções do documento no Aspose.Words for .NET, você pode usar o`Clear` método do`Sections` coleta do documento:
 
 ```csharp
 doc.Sections.Clear();

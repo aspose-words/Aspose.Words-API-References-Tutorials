@@ -77,7 +77,7 @@ J: Untuk menerapkan gaya tebal pada font di dokumen Word menggunakan Aspose.Word
 
 #### T: Apakah mungkin menerapkan gaya miring ke bagian teks tertentu di dokumen Word dengan Aspose.Words?
 
-J: Ya, dengan Aspose.Words Anda bisa menerapkan gaya miring ke bagian teks tertentu di dokumen Word. Anda dapat menggunakan API untuk memilih rentang teks yang diinginkan dan mengatur gayanya menjadi "miring".
+J: Ya, dengan Aspose.Words Anda dapat menerapkan gaya miring ke bagian teks tertentu dalam dokumen Word. Anda dapat menggunakan API untuk memilih rentang teks yang diinginkan dan mengatur gayanya menjadi "miring".
 
 #### T: Bagaimana cara mengubah warna font di dokumen Word menggunakan Aspose.Words?
 

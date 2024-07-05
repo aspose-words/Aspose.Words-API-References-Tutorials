@@ -2,13 +2,13 @@
 title: Dziel wyrazy w językach
 linktitle: Dziel wyrazy w językach
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dzielić wyrazy w różnych językach w dokumentach programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak dzielić słowa w różnych językach w dokumentach programu Word przy użyciu Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-W tym samouczku krok po kroku poprowadzimy Cię, jak dzielić wyrazy w różnych językach w dokumentach programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+W tym samouczku krok po kroku poprowadzimy Cię, jak dzielić słowa w różnych językach w dokumentach programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
 
 Aby rozpocząć, upewnij się, że masz zainstalowane i skonfigurowane Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z oficjalnej strony.
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## Krok 2: Zapisywanie słowników dzielenia wyrazów
 
-Następnie zapisz słowniki dzielenia wyrazów dla różnych języków, które chcesz przetworzyć. W tym przykładzie rejestrujemy słowniki dla amerykańskiego angielskiego i szwajcarskiego niemieckiego:
+Następnie zapisz słowniki dzielenia wyrazów dla różnych języków, które chcesz przetwarzać. W tym przykładzie rejestrujemy słowniki dla amerykańskiego angielskiego i szwajcarskiego niemieckiego:
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
@@ -51,7 +51,7 @@ Na koniec zapisz zmodyfikowany dokument:
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Więc ! Pomyślnie przetworzyłeś słowa, dzieląc je w różnych językach w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+Więc ! Pomyślnie przetworzyłeś słowa, dzieląc je w różnych językach w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
 
 ### Przykładowy kod źródłowy do dzielenia wyrazów przy użyciu Aspose.Words dla .NET
 

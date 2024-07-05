@@ -56,7 +56,7 @@ Confrontiamo ora i documenti utilizzando il metodo Compare della classe Document
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- IL`Compare` confronta il documento A con il documento B e salva le modifiche nel documento A. È possibile specificare il nome dell'autore e la data del confronto come riferimento.
+ IL`Compare`confronta il documento A con il documento B e salva le modifiche nel documento A. È possibile specificare il nome dell'autore e la data del confronto come riferimento.
 
 ## Conclusione
 
@@ -95,7 +95,7 @@ R: Per utilizzare la granularità del confronto in Aspose.Words per .NET, attene
 2. Aggiungi gli assembly necessari al tuo progetto facendo riferimento ad Aspose.Words.
 3.  Crea i documenti che desideri confrontare utilizzando il file`DocumentBuilder` classe.
 4.  Configura le opzioni di confronto creando un file`CompareOptions` oggetto e impostando il`Granularity` proprietà al livello desiderato (ad esempio,`Granularity.CharLevel` per il confronto a livello di carattere).
-5.  Usa il`Compare` metodo su un documento, passando l'altro documento e il`CompareOptions` oggetto come parametri. Questo metodo confronterà i documenti in base alla granularità specificata e salverà le modifiche nel primo documento.
+5.  Usa il`Compare`metodo su un documento, passando l'altro documento e il`CompareOptions` oggetto come parametri. Questo metodo confronterà i documenti in base alla granularità specificata e salverà le modifiche nel primo documento.
 
 #### D: Quali sono i livelli disponibili di granularità di confronto in Aspose.Words per .NET?
 

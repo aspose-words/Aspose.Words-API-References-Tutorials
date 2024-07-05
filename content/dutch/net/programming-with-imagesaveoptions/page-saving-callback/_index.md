@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          // Implementeer hier uw aangepaste acties
          // U kunt pagina-informatie openen via de eigenschap "args.PageIndex".
-         // U kunt de opslagopties ook voor elke pagina afzonderlijk wijzigen.
+         // U kunt de opslagopties ook voor elke pagina afzonderlijk wijzigen
      }
 }
 ```

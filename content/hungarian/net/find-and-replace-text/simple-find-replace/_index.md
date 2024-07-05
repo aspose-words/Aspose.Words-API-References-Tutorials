@@ -23,9 +23,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## 2. lépés: Szöveg beszúrása a dokumentumba
+## 2. lépés: Szúrjon be szöveget a dokumentumba
 
- Ha megvan a dokumentumunk, akkor az a segítségével tudunk szöveget beszúrni`DocumentBuilder` tárgy. Példánkban a`Writeln` módszer a "Hello_CustomerName_":
+ Ha megvan a dokumentumunk, szöveget szúrhatunk be az a segítségével`DocumentBuilder` tárgy. Példánkban a`Writeln` módszer a "Hello_CustomerName_":
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

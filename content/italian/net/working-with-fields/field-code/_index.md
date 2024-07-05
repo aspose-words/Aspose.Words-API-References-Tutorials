@@ -30,7 +30,7 @@ Assicurati di sostituire "Hyperlinks.docx" con il nome del tuo file.
 
 ## Passaggio 3: sfoglia i campi del documento
 
- Usiamo a`foreach`loop per scorrere tutti i campi presenti nel documento.
+ Usiamo a`foreach` loop per scorrere tutti i campi presenti nel documento.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Questo conclude la nostra guida sull'utilizzo della funzione "Ottieni codice cam
 
 #### D: Come posso inserire un campo in un documento Word utilizzando Aspose.Words per .NET?
 
- R: Per inserire un campo in un documento Word utilizzando Aspose.Words per .NET, è possibile utilizzare il file`DocumentBuilder.InsertField` metodo specificando il codice di campo appropriato. Ad esempio, puoi usare`builder.InsertField("MERGEFIELD CustomerName")`per inserire un campo unione nel documento.
+ R: Per inserire un campo in un documento Word utilizzando Aspose.Words per .NET, è possibile utilizzare il file`DocumentBuilder.InsertField` metodo specificando il codice di campo appropriato. Ad esempio, puoi usare`builder.InsertField("MERGEFIELD CustomerName")` per inserire un campo unione nel documento.
 
 #### D: Come posso aggiornare i campi in un documento utilizzando Aspose.Words per .NET?
 
- R: Per aggiornare i campi del documento utilizzando Aspose.Words per .NET, è possibile utilizzare il file`Document.UpdateFields` metodo. Ciò aggiornerà tutti i campi presenti nel documento, come campi di unione, campi data, ecc.
+ R: Per aggiornare i campi del documento utilizzando Aspose.Words per .NET, è possibile utilizzare il file`Document.UpdateFields`metodo. Ciò aggiornerà tutti i campi presenti nel documento, come campi di unione, campi data, ecc.
 
 #### D: Come posso recuperare il valore di un campo specifico in Aspose.Words per .NET?
 

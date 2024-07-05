@@ -49,7 +49,7 @@ int cellIndex = row.IndexOf(row.Cells[4]);
 Console.WriteLine("\nCell index is " + cellIndex);
 ```
 
- Här använder vi`GetChildNodes` metod för att få alla tabeller i dokumentet. Då använder vi`IndexOf` för att hitta indexet för den specifika tabellen i samlingen av alla tabeller. På samma sätt använder vi`IndexOf` för att hitta indexet för den sista raden i tabellen, och`IndexOf` inuti en rad för att hitta indexet för en specifik cell.
+ Här använder vi`GetChildNodes` metod för att hämta alla tabeller i dokumentet. Då använder vi`IndexOf` för att hitta indexet för den specifika tabellen i samlingen av alla tabeller. På samma sätt använder vi`IndexOf` för att hitta indexet för den sista raden i tabellen, och`IndexOf` inuti en rad för att hitta indexet för en specifik cell.
 
 ### Exempel på källkod för att hitta index med Aspose.Words för .NET 
 

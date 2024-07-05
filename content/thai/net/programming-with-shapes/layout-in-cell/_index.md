@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: สร้างเอกสารใหม่และ DocumentBuilder
- สร้างอินสแตนซ์ใหม่ของ`Document` คลาสและก`DocumentBuilder` คัดค้านการทำงานกับเอกสาร
+ สร้างอินสแตนซ์ใหม่ของ`Document` คลาสและก`DocumentBuilder`คัดค้านการทำงานกับเอกสาร
 
 ```csharp
 Document doc = new Document();
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## ขั้นตอนที่ 6: แทรกรูปร่างลงในเอกสาร
- แทรกรูปร่างลายน้ำลงในเอกสารโดยใช้`InsertNode` วิธีการของ`DocumentBuilder` วัตถุ วัตถุ วางตำแหน่งรูปร่างโดยใช้`MoveTo` วิธีการวางหลังจากการรันครั้งสุดท้ายในเอกสาร
+ แทรกรูปร่างลายน้ำลงในเอกสารโดยใช้`InsertNode` วิธีการของ`DocumentBuilder` วัตถุ. วางตำแหน่งรูปร่างโดยใช้`MoveTo` วิธีการวางหลังจากการรันครั้งสุดท้ายในเอกสาร
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;

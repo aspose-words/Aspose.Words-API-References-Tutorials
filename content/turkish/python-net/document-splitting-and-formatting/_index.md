@@ -34,7 +34,7 @@ Bu eğitimler boyunca pratik bilgiler edinecek, kaynak kodu örneklerine erişec
 ## Belge Bölme ve Biçimlendirme Eğitimleri
 ### [Verimli Belge Bölme ve Biçimlendirme Stratejileri](./split-format-documents/)
 Aspose.Words for Python'u kullanarak belgeleri verimli bir şekilde nasıl böleceğinizi ve biçimlendireceğinizi öğrenin. Bu eğitimde adım adım rehberlik ve kaynak kodu örnekleri sağlanmaktadır.
-### [Hassasiyet için İçerik Oluşturucu ile Belgeleri Bölme](./divide-documents-content-builder/)
+### [Hassasiyet İçin İçerik Oluşturucuyla Belgeleri Bölme](./divide-documents-content-builder/)
 Aspose.Words for Python'u kullanarak belgelerinizi hassas bir şekilde bölün ve yönetin. Verimli içerik çıkarma ve düzenleme için İçerik Oluşturucu'dan nasıl yararlanacağınızı öğrenin.
 ### [Karmaşık İş Akışları için Belgeleri Birleştirme ve Klonlama](./combine-clone-documents/)
 Aspose.Words for Python'u kullanarak belgeleri verimli bir şekilde nasıl birleştireceğinizi ve kopyalayacağınızı öğrenin. Belge işleme için kaynak kodu içeren adım adım kılavuz. Belge iş akışlarınızı bugün yükseltin!

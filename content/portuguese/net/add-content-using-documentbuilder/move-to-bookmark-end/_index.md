@@ -88,7 +88,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
 ```
 
-- `bookmarkName`: o nome do favorito para o qual você deseja navegar.
+- `bookmarkName`: o nome do marcador para o qual você deseja navegar.
 - `isBookmarkStart` : Se definido como`true`, vai para o início do marcador.
 - `isBookmarkEnd` : Se definido como`true`, vai para o final do marcador.
 

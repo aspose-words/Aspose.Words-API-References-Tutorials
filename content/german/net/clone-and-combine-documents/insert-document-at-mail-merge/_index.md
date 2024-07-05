@@ -1,7 +1,7 @@
 ---
-title: Dokument beim Seriendruck einfügen
-linktitle: Dokument beim Seriendruck einfügen
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+title: Dokument bei Seriendruck einfügen
+linktitle: Dokument bei Seriendruck einfügen
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie in diesem umfassenden Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET Dokumente in Seriendruckfelder einfügen.
 type: docs
 weight: 10
@@ -9,19 +9,19 @@ url: /de/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 ## Einführung
 
-Willkommen in der Welt der Dokumentenautomatisierung mit Aspose.Words für .NET! Haben Sie sich jemals gefragt, wie Sie während eines Seriendruckvorgangs Dokumente dynamisch in bestimmte Felder innerhalb eines Hauptdokuments einfügen können? Dann sind Sie hier genau richtig. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess des Einfügens von Dokumenten in Serienbrieffelder mit Aspose.Words für .NET. Es ist, als würde man ein Puzzle zusammensetzen, bei dem jedes Teil perfekt zusammenpasst. Also, lasst uns eintauchen!
+Willkommen in der Welt der Dokumentenautomatisierung mit Aspose.Words für .NET! Haben Sie sich schon einmal gefragt, wie Sie während eines Seriendruckvorgangs Dokumente dynamisch in bestimmte Felder innerhalb eines Hauptdokuments einfügen können? Dann sind Sie hier richtig. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess des Einfügens von Dokumenten in Seriendruckfelder mit Aspose.Words für .NET. Es ist wie das Zusammensetzen eines Puzzles, bei dem jedes Teil perfekt an seinen Platz passt. Also, legen wir los!
 
 ## Voraussetzungen
 
-Bevor wir beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-1.  Aspose.Words für .NET: Das können Sie[Laden Sie die neueste Version hier](https://releases.aspose.com/words/net/) . Wenn Sie eine Lizenz erwerben müssen, können Sie dies tun[Hier](https://purchase.aspose.com/buy) . Alternativ erhalten Sie eine[temporäre Lizenz](https://purchase.aspose.com/temporary-license/) oder probieren Sie es mit einem aus[Kostenlose Testphase](https://releases.aspose.com/).
+1.  Aspose.Words für .NET: Sie können[Laden Sie die neueste Version hier](https://releases.aspose.com/words/net/) Wenn Sie eine Lizenz erwerben müssen, können Sie dies tun[Hier](https://purchase.aspose.com/buy) Alternativ können Sie ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder probieren Sie es mit einem[Kostenlose Testphase](https://releases.aspose.com/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere C#-IDE.
 3. Grundkenntnisse in C#: Wenn Sie mit der C#-Programmierung vertraut sind, wird dieses Tutorial zum Kinderspiel.
 
 ## Namespaces importieren
 
-Als Erstes müssen Sie die erforderlichen Namespaces importieren. Dies sind sozusagen die Bausteine Ihres Projekts.
+Als Erstes müssen Sie die erforderlichen Namespaces importieren. Diese sind sozusagen die Bausteine Ihres Projekts.
 
 ```csharp
 using System;
@@ -42,23 +42,23 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Laden des Hauptdokuments
 
-Als Nächstes laden Sie das Hauptdokument. Dieses Dokument enthält die Zusammenführungsfelder, in die andere Dokumente eingefügt werden.
+Als Nächstes laden Sie das Hauptdokument. Dieses Dokument enthält die Seriendruckfelder, in die andere Dokumente eingefügt werden.
 
 ```csharp
 Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
 ```
 
-## Schritt 3: Festlegen des Rückrufs für die Feldzusammenführung
+## Schritt 3: Festlegen des Callbacks für die Feldzusammenführung
 
-Um den Zusammenführungsprozess abzuwickeln, müssen Sie eine Rückruffunktion festlegen. Diese Funktion ist für das Einfügen von Dokumenten in die angegebenen Zusammenführungsfelder verantwortlich.
+Um den Zusammenführungsprozess abzuwickeln, müssen Sie eine Rückruffunktion festlegen. Diese Funktion ist für das Einfügen von Dokumenten in die angegebenen Seriendruckfelder verantwortlich.
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 ```
 
-## Schritt 4: Ausführen des Seriendrucks
+## Schritt 4: Serienbrief ausführen
 
-Jetzt ist es an der Zeit, den Serienbrief auszuführen. Hier geschieht die Magie. Sie geben das Zusammenführungsfeld und das Dokument an, das in dieses Feld eingefügt werden soll.
+Jetzt ist es an der Zeit, den Seriendruck auszuführen. Hier geschieht die Magie. Sie geben das Seriendruckfeld und das Dokument an, das in dieses Feld eingefügt werden soll.
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
@@ -66,7 +66,7 @@ mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Docu
 
 ## Schritt 5: Speichern des Dokuments
 
-Nachdem der Seriendruck abgeschlossen ist, speichern Sie das geänderte Dokument. In diesem neuen Dokument wird der Inhalt genau dort eingefügt, wo Sie ihn haben möchten.
+Nachdem der Serienbrief abgeschlossen ist, speichern Sie das geänderte Dokument. In diesem neuen Dokument wird der eingefügte Inhalt genau dort angezeigt, wo Sie ihn haben möchten.
 
 ```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
@@ -74,7 +74,7 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc")
 
 ## Schritt 6: Erstellen des Callback-Handlers
 
-Der Callback-Handler ist eine Klasse, die eine spezielle Verarbeitung für das Zusammenführungsfeld durchführt. Es lädt das im Feldwert angegebene Dokument und fügt es in das aktuelle Seriendruckfeld ein.
+Der Callback-Handler ist eine Klasse, die spezielle Verarbeitungen für das Seriendruckfeld vornimmt. Er lädt das im Feldwert angegebene Dokument und fügt es in das aktuelle Seriendruckfeld ein.
 
 ```csharp
 private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
@@ -134,21 +134,21 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben während eines Seriendruckvorgangs mit Aspose.Words für .NET erfolgreich Dokumente in bestimmte Felder eingefügt. Diese leistungsstarke Funktion kann Ihnen eine Menge Zeit und Mühe ersparen, insbesondere beim Umgang mit großen Dokumentenmengen. Stellen Sie sich das so vor, als hätten Sie einen persönlichen Assistenten, der Ihnen die ganze schwere Arbeit abnimmt. Probieren Sie es einfach aus. Viel Spaß beim Codieren!
+Und da haben Sie es! Sie haben während eines Serienbriefvorgangs mit Aspose.Words für .NET erfolgreich Dokumente in bestimmte Felder eingefügt. Diese leistungsstarke Funktion kann Ihnen eine Menge Zeit und Mühe sparen, insbesondere bei der Arbeit mit großen Dokumentmengen. Stellen Sie es sich so vor, als hätten Sie einen persönlichen Assistenten, der Ihnen die ganze schwere Arbeit abnimmt. Probieren Sie es also einfach aus. Viel Spaß beim Programmieren!
 
-## FAQs
+## Häufig gestellte Fragen
 
-### Kann ich mehrere Dokumente in verschiedene Zusammenführungsfelder einfügen?
- Ja, du kannst. Geben Sie einfach die entsprechenden Zusammenführungsfelder und entsprechenden Dokumentpfade im an`MailMerge.Execute` Methode.
+### Kann ich mehrere Dokumente in verschiedene Seriendruckfelder einfügen?
+Ja, das ist möglich. Geben Sie einfach die entsprechenden Seriendruckfelder und die entsprechenden Dokumentpfade im`MailMerge.Execute` Methode.
 
-### Ist es möglich, das eingefügte Dokument anders als das Hauptdokument zu formatieren?
- Absolut! Du kannst den ... benutzen`ImportFormatMode` Parameter in der`NodeImporter` um die Formatierung zu steuern.
+### Ist es möglich, das eingefügte Dokument anders zu formatieren als das Hauptdokument?
+ Auf jeden Fall! Sie können die`ImportFormatMode` Parameter im`NodeImporter` um die Formatierung zu steuern.
 
-### Was passiert, wenn der Name des Zusammenführungsfelds dynamisch ist?
-Sie können dynamische Zusammenführungsfeldnamen verarbeiten, indem Sie sie als Parameter an den Callback-Handler übergeben.
+### Was passiert, wenn der Name des Seriendruckfelds dynamisch ist?
+Sie können dynamische Seriendruckfeldnamen verarbeiten, indem Sie sie als Parameter an den Rückrufhandler übergeben.
 
 ### Kann ich diese Methode mit verschiedenen Dateiformaten verwenden?
 Ja, Aspose.Words unterstützt verschiedene Dateiformate, darunter DOCX, PDF und mehr.
 
-### Wie gehe ich mit Fehlern beim Einfügen des Dokuments um?
-Implementieren Sie die Fehlerbehandlung in Ihrem Callback-Handler, um eventuell auftretende Ausnahmen zu verwalten.
+### Wie gehe ich mit Fehlern beim Einfügen von Dokumenten um?
+Implementieren Sie eine Fehlerbehandlung in Ihrem Rückrufhandler, um alle auftretenden Ausnahmen zu verwalten.

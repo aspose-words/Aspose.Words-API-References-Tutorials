@@ -18,7 +18,7 @@ url: /zh-hant/net/working-with-fields/evaluate-ifcondition/
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 步驟 2：插入 IF 欄位。
+## 步驟 2：插入 IF 字段
 
 我們使用`InsertField()`方法將 IF 欄位插入指定要評估的條件的文件中。
 
@@ -36,7 +36,7 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-這`actualResult`此變數包含條件評估的結果。
+這`actualResult`變數包含條件評估的結果。
 
 ### 使用 Aspose.Words for .NET 評估 IF 條件的範例原始碼
 

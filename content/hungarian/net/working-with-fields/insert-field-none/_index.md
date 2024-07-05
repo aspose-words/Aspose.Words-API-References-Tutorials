@@ -2,7 +2,7 @@
 title: Mező beszúrása Nincs
 linktitle: Mező beszúrása Nincs
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan hozhat létre dokumentumokat az AUCUN segítségével a Word avec Aspose.Words pour .NET-ben.
+description: Ismerje meg, hogyan lehet Insérez un champ AUCUN dans vos dokumentumok Word a Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /hu/net/working-with-fields/insert-field-none/
@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Írja be a NINCS mezőt.
+// Illessze be a NINCS mezőt.
 FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, false);
 
 doc.Save(dataDir + "InsertionFieldNone.docx");

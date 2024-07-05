@@ -8,7 +8,7 @@ weight: 14
 url: /pl/python-net/document-structure-and-content-manipulation/document-footnotes-endnotes/
 ---
 
-Przypisy dolne i końcowe to istotne elementy dokumentów programu Word, które umożliwiają podanie dodatkowych informacji lub odniesień bez zakłócania głównego przepływu treści. Narzędzia te są powszechnie używane w pisaniu akademickim, zawodowym, a nawet kreatywnym, aby zwiększyć przejrzystość i wiarygodność Twojej pracy. W tym przewodniku dowiemy się, jak efektywnie używać przypisów dolnych i końcowych w dokumentach programu Word za pomocą interfejsu API Aspose.Words dla języka Python.
+Przypisy dolne i końcowe to istotne elementy dokumentów programu Word, które umożliwiają podanie dodatkowych informacji lub odnośników bez zakłócania głównego przepływu treści. Narzędzia te są powszechnie używane w pisaniu akademickim, zawodowym, a nawet kreatywnym, aby zwiększyć przejrzystość i wiarygodność Twojej pracy. W tym przewodniku dowiemy się, jak efektywnie używać przypisów dolnych i końcowych w dokumentach programu Word za pomocą interfejsu API Aspose.Words dla języka Python.
 
 ## Wprowadzenie do przypisów dolnych i końcowych
 
@@ -74,7 +74,7 @@ Przypisami dolnymi i końcowymi możesz programowo zarządzać poprzez:
 - Przypisy powinny być zwięzłe i istotne
 - Bardziej szczegółowe wyjaśnienia można znaleźć w przypisach końcowych
 - Zachowaj spójne formatowanie
-- Dokładnie sprawdź cytaty pod kątem dokładności.
+- Dokładnie sprawdź cytaty pod kątem dokładności
 
 ## Rozwiązywanie typowych problemów
 

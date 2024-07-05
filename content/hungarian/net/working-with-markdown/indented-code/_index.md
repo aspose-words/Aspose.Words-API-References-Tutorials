@@ -18,7 +18,7 @@ Először egy dokumentumgenerátort fogunk használni, hogy tartalmat adjunk a d
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. lépés: Adjon hozzá stílust a megadott kódhoz
+## 2. lépés: Adjon hozzá stílust a behúzott kódhoz
 
 Egyéni stílust adunk hozzá a behúzott kódhoz a segítségével`Styles.Add` módszere a`Document` tárgy. Ebben a példában létrehozunk egy "IndentedCode" nevű stílust a behúzott kódhoz.
 
@@ -27,7 +27,7 @@ Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedC
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## 3. lépés: Adja meg a megadott kódot
+## 3. lépés: Adjon hozzá behúzott kódot
 
 Most hozzáadhatunk egy behúzott kódblokkot az "IndentedCode" egyéni stílus használatával.
 
@@ -51,7 +51,7 @@ Gratulálok ! Most megtanulta, hogyan kell használni a behúzott kód funkciót
 
 ### GYIK
 
-#### K: Mi a megadott kód a Markdownban?
+#### K: Mi az a behúzott kód a Markdownban?
 
 V: A Markdown behúzott kódja egy formázási módszer, amelyet a Markdown dokumentumban lévő kód megjelenítésére használnak. Ez abból áll, hogy minden kódsort szóközökkel vagy tabulátorokkal behúz.
 

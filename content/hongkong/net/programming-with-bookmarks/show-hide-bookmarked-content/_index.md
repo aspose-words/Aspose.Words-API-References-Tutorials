@@ -21,7 +21,7 @@ url: /zh-hant/net/programming-with-bookmarks/show-hide-bookmarked-content/
 3. Visual Studio：任何最新版本都可以使用，但建議使用最新版本。
 4. .NET Framework：確保您的電腦上已安裝它。
 
-準備好開始了嗎？偉大的！讓我們先導入必要的名稱空間。
+準備好開始了嗎？偉大的！讓我們先導入必要的命名空間。
 
 ## 導入命名空間
 
@@ -60,7 +60,7 @@ builder.Write("This is some text after the bookmark.");
 
 在這裡，我們在書籤內容之前和之後添加一些文字。這`StartBookmark`和`EndBookmark`方法定義書籤的邊界。
 
-## 第 3 步：插入條件字段
+## 步驟 3：插入條件字段
 
 為了控制添加書籤的內容的可見性，我們將使用條件欄位。此欄位將檢查條件並相應地顯示或隱藏內容。
 
@@ -142,7 +142,7 @@ Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員以�
 
 ### 2. 我可以免費使用Aspose.Words for .NET嗎？
 
-您可以嘗試使用 Aspose.Words for .NET[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
+您可以使用 Aspose.Words for .NET 嘗試[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
 
 ### 3. 如何修改書籤的其他屬性？
 

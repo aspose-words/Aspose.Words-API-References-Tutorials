@@ -72,7 +72,7 @@ Utforska gärna fler funktioner i Aspose.Words för .NET för att förbättra di
 
 #### Hur kan jag hämta de primära och sekundära teckensnitten för ett dokuments tema?
 
- Du kan komma åt de primära och sekundära teckensnitten för ett dokuments tema genom att använda`MajorFonts` och`MinorFonts` egenskaper hos`Theme` objekt, respektive. Dessa egenskaper ger tillgång till teckensnittsnamnen som används i dokumentets tema för olika språk eller regioner.
+ Du kan komma åt de primära och sekundära teckensnitten för ett dokuments tema genom att använda`MajorFonts` och`MinorFonts` egenskaper hos`Theme` objekt, respektive. Dessa egenskaper ger åtkomst till teckensnittsnamnen som används i dokumentets tema för olika språk eller regioner.
 
 #### Kan jag få accentfärgerna som används i ett dokuments tema?
 

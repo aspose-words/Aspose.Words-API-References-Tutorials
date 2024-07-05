@@ -120,7 +120,7 @@ Với Aspose.Words, bạn có thể dễ dàng tạo báo cáo động bằng c�
 
 Tự động hóa việc tạo hóa đơn bằng cách hợp nhất dữ liệu khách hàng, thông tin sản phẩm và chi tiết giá cả vào mẫu hóa đơn được thiết kế sẵn.
 
-### 7.3 Trộn Thư
+### 7.3 Trộn thư
 
 Thực hiện các thao tác trộn thư để cá nhân hóa thư, phong bì và nhãn cho việc gửi thư số lượng lớn.
 

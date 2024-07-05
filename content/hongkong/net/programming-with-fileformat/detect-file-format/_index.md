@@ -215,7 +215,7 @@ break;
 
 #### Aspose.Words for .NET 支援哪些文件格式？
 
-Aspose.Words for .NET 支援多種文件格式，包含Microsoft Word 97-2003 文件(DOC)、範本(DOT)、Office Open XML WordprocessingML 文件(DOCX)、帶有巨集的Office Open XML WordprocessingML 文件(DOCM)、 Office Open不含巨集的XML WordprocessingML 範本(DOTX)、帶有巨集的Office Open XML WordprocessingML 範本(DOTM)、Flat OPC 文件、RTF 文件、Microsoft Word 2003 WordprocessingML 文件、HTML 文件、MHTML（Web 存檔）文件、OpenDocument (ODT) 文件、 OpenDocument 文字 (OTT) 範本、MS Word 6 或 Word 95 文件以及未知文件格式。
+Aspose.Words for .NET 支援多種文件格式，包括Microsoft Word 97-2003 文件(DOC)、範本(DOT)、Office Open XML WordprocessingML 文件(DOCX)、帶有巨集的Office Open XML WordprocessingML 文件(DOCM)、 Office Open不含巨集的XML WordprocessingML 範本(DOTX)、帶有巨集的Office Open XML WordprocessingML 範本(DOTM)、Flat OPC 文件、RTF 文件、Microsoft Word 2003 WordprocessingML 文件、HTML 文件、MHTML（Web 存檔）文件、OpenDocument (ODT) 文件、 OpenDocument 文字 (OTT) 範本、MS Word 6 或 Word 95 文件以及未知文件格式。
 
 #### 格式偵測時如何處理加密文件檔案？
 

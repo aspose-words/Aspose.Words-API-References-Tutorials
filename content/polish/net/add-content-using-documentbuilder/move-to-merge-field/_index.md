@@ -72,7 +72,7 @@ builder.MoveToField(field, true);
 
 To polecenie przesuwa kursor bezpośrednio za polem scalania. To jak przejście bezpośrednio do zakładki w książce.
 
-## Krok 5: Sprawdź położenie kursora
+## Krok 5: Sprawdź pozycję kursora
 
 Ważne jest, aby sprawdzić, czy nasz kursor rzeczywiście znajduje się tam, gdzie chcemy. Potraktuj to jako ponowne sprawdzenie swojej pracy.
 

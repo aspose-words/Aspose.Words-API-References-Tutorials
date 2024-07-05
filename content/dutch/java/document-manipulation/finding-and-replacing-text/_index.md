@@ -38,7 +38,7 @@ builder.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 doc.save("modified-document.docx");
 ```
 
- In dit voorbeeld laden we een Word-document, maken we een`DocumentBuilder` en gebruik de`replace` methode om "oude tekst" te vinden en te vervangen door "nieuwe tekst" in het document.
+ In dit voorbeeld laden we een Word-document, maken een`DocumentBuilder` en gebruik de`replace` methode om "oude tekst" te vinden en te vervangen door "nieuwe tekst" in het document.
 
 ## Reguliere expressies gebruiken
 

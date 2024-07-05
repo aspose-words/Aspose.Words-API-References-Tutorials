@@ -134,7 +134,7 @@ Saat menangani dokumen berukuran besar, penting untuk mempertimbangkan optimalis
 
 Dalam panduan ini, kita telah mempelajari cara membagi dokumen dengan mudah dan efisien menggunakan Aspose.Words untuk Java. Dengan membagi dokumen besar menjadi bagian-bagian yang lebih kecil dan lebih mudah dikelola, pengembang dapat bekerja dengan bagian tertentu dan menyederhanakan tugas pemrosesan dokumen. Aspose.Words untuk Java menawarkan berbagai metode untuk membagi dokumen berdasarkan halaman, paragraf, judul, dan bagian, memberikan fleksibilitas kepada pengembang untuk menyesuaikan proses pemisahan dengan kebutuhan spesifik mereka.
 
-## 12.FAQ
+## 12. Pertanyaan Umum
 
 ### Q1. Bisakah Aspose.Words untuk Java membagi dokumen dengan format berbeda seperti DOC dan DOCX?
 

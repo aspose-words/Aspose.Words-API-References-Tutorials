@@ -24,7 +24,7 @@ Aspose.Words는 Python에서 Word 문서 작업을 단순화하는 인기 있는
 
 Python용 Aspose.Words를 설치하려면 다음 단계를 따르세요.
 
-1. 컴퓨터에 Python이 설치되어 있는지 확인하세요.
+1. 컴퓨터에 Python이 설치되어 있는지 확인하십시오.
 2. Aspose.Words for Python 패키지를 다운로드하세요.
 3. pip를 사용하여 패키지를 설치합니다.
 
@@ -149,7 +149,7 @@ Word 자동화에는 Word 문서와 프로그래밍 방식으로 상호 작용�
 예, Aspose.Words는 행과 셀을 생성, 추가하고 테이블에 프로그래밍 방식으로 서식을 적용할 수 있도록 하여 테이블 관리를 단순화합니다.
 
 ### Aspose.Words는 문서에 이미지 삽입을 지원합니까?
-A6: 예, Aspose.Words for Python을 사용하면 Word 문서에 이미지를 쉽게 삽입하여 생성된 문서의 시각적 측면을 향상시킬 수 있습니다.
+A6: 예, Aspose.Words for Python을 사용하여 Word 문서에 이미지를 쉽게 삽입하여 생성된 문서의 시각적 측면을 향상시킬 수 있습니다.
 
 ### Aspose.Words를 사용하여 Word 문서를 다른 파일 형식으로 내보낼 수 있나요?
 전적으로! Aspose.Words는 PDF, DOCX, RTF, HTML 등 다양한 내보내기 파일 형식을 지원하여 다양한 요구에 맞는 유연성을 제공합니다.

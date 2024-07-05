@@ -93,7 +93,7 @@ C: Evet, Aspose.Words for .NET'te mevcut formatlama özelliklerini kullanarak yo
 
 #### S: Bir belgede bulunan tüm yorumları nasıl alabilirim?
 
- C: Bir belgede sunulan tüm yorumları aşağıdaki komutu kullanarak alabilirsiniz:`Document.Comments` mülk.
+ C: Bir belgede bulunan tüm yorumları aşağıdaki komutu kullanarak alabilirsiniz:`Document.Comments` mülk.
 
 #### S: Aspose.Words for .NET'te belirli bir yorumu silebilir miyim?
 

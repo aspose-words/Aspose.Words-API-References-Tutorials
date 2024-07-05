@@ -160,7 +160,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 #### Vraag: Hoe kan ik bladwijzertekst importeren en kopiëren van het brondocument naar het doeldocument met Aspose.Words voor .NET?
 
- A: Om bladwijzertekst te importeren en kopiëren van een brondocument naar een doeldocument met behulp van Aspose.Words voor .NET, kunt u de`NodeImporter` klasse die het brondocument, het doeldocument en de te behouden opmaakmodus specificeert. Dan kun je gebruik maken van de`AppendBookmarkedText` methode om de bladwijzertekst toe te voegen aan het doeldocument. Hier is een voorbeeldcode:
+ A: Om bladwijzertekst te importeren en kopiëren van een brondocument naar een doeldocument met behulp van Aspose.Words voor .NET, kunt u de`NodeImporter` klasse die het brondocument, het doeldocument en de te behouden opmaakmodus specificeert. Dan kunt u gebruik maken van de`AppendBookmarkedText` methode om de bladwijzertekst toe te voegen aan het doeldocument. Hier is een voorbeeldcode:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);

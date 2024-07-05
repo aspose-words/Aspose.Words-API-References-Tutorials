@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- O`Resolution` propriedade especifica a resolução alvo das imagens e o`ResolutionThreshold` propriedade especifica a resolução mínima abaixo da qual as imagens não serão reduzidas.
+ O`Resolution` propriedade especifica a resolução alvo das imagens e o`ResolutionThreshold`propriedade especifica a resolução mínima abaixo da qual as imagens não serão reduzidas.
 
 ## Passo 3: Converter Documento em PDF
 

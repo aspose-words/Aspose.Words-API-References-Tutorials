@@ -1,38 +1,38 @@
 ---
 title: Übergeordneten Knoten abrufen
 linktitle: Übergeordneten Knoten abrufen
-second_title: Aspose.Words-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den übergeordneten Knoten eines bestimmten Elements abrufen.
+second_title: Aspose.Words Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den übergeordneten Knoten eines bestimmten Elements erhalten.
 type: docs
 weight: 10
 url: /de/net/working-with-node/get-parent-node/
 ---
 
-Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der zeigt, wie Sie mit Aspose.Words für .NET den übergeordneten Knoten abrufen.
+Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, die veranschaulicht, wie der übergeordnete Knoten mit Aspose.Words für .NET abgerufen wird.
 
 ## Schritt 1: Importieren Sie die erforderlichen Referenzen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie die erforderlichen Referenzen zur Verwendung von Aspose.Words für .NET in Ihr Projekt importiert haben. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
+Stellen Sie vor dem Beginn sicher, dass Sie die erforderlichen Referenzen importiert haben, um Aspose.Words für .NET in Ihrem Projekt zu verwenden. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Nodes;
 ```
 
-## Schritt 2: Erstellen Sie ein neues Dokument
- In diesem Schritt erstellen wir ein neues Dokument mit`Document` Klasse.
+## Schritt 2: Neues Dokument erstellen
+ In diesem Schritt erstellen wir ein neues Dokument mit dem`Document` Klasse.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## Schritt 3: Greifen Sie auf den übergeordneten Knoten zu
-Um den übergeordneten Knoten eines bestimmten Knotens zu erhalten, müssen wir zuerst auf diesen Knoten zugreifen. In diesem Beispiel greifen wir auf den ersten untergeordneten Knoten des Dokuments zu, bei dem es sich normalerweise um einen Abschnitt handelt.
+## Schritt 3: Zugriff auf den übergeordneten Knoten
+Um den übergeordneten Knoten eines bestimmten Knotens abzurufen, müssen wir zuerst auf diesen Knoten zugreifen. In diesem Beispiel greifen wir auf den ersten untergeordneten Knoten des Dokuments zu, bei dem es sich normalerweise um einen Abschnitt handelt.
 
 ```csharp
 Node section = doc.FirstChild;
 ```
 
-## Schritt 4: Überprüfen Sie den übergeordneten Knoten
+## Schritt 4: Überprüfen des übergeordneten Knotens
 Da wir nun den spezifischen Knoten haben, können wir prüfen, ob sein übergeordneter Knoten mit dem Dokument selbst übereinstimmt. In diesem Beispiel vergleichen wir den übergeordneten Knoten mit dem Dokument mithilfe des Gleichheitsoperators (`==`) und zeigen Sie das Ergebnis an.
 
 ```csharp
@@ -52,9 +52,9 @@ Node section = doc.FirstChild;
 Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
-Dies ist ein vollständiges Codebeispiel zum Abrufen des übergeordneten Knotens eines bestimmten Knotens mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die zuvor beschriebenen Schritte befolgen, um diesen Code in Ihr Projekt zu integrieren.
+Dies ist ein vollständiges Codebeispiel zum Abrufen des übergeordneten Knotens eines bestimmten Knotens mit Aspose.Words für .NET. Achten Sie darauf, die erforderlichen Referenzen zu importieren, und befolgen Sie die zuvor beschriebenen Schritte, um diesen Code in Ihr Projekt zu integrieren.
 
-### FAQs
+### Häufig gestellte Fragen
 
 #### F: Was ist der übergeordnete Knoten in Node.js?
 
@@ -62,16 +62,16 @@ A: Der übergeordnete Knoten in Node.js bezieht sich auf den nächsthöheren Kno
 
 #### F: Wie erhalte ich den übergeordneten Knoten eines bestimmten Knotens?
 
-A: Um den übergeordneten Knoten eines bestimmten Knotens abzurufen, können Sie verwenden`parentNode` Eigenschaft des Knotens. Diese Eigenschaft gibt den übergeordneten Knoten des aktuellen Knotens zurück.
+A: Um den übergeordneten Knoten eines bestimmten Knotens abzurufen, können Sie den`parentNode` Eigenschaft des Knotens. Diese Eigenschaft gibt den übergeordneten Knoten des aktuellen Knotens zurück.
 
 #### F: Wie kann ich überprüfen, ob ein Knoten einen übergeordneten Knoten hat?
 
- A: Um zu überprüfen, ob ein Knoten einen übergeordneten Knoten hat, können Sie einfach prüfen, ob der`parentNode` Die Eigenschaft des Knotens ist festgelegt. Wenn festgelegt, bedeutet dies, dass der Knoten einen übergeordneten Knoten hat.
+ A: Um zu prüfen, ob ein Knoten einen übergeordneten Knoten hat, können Sie einfach prüfen, ob der`parentNode` Eigenschaft des Knotens festgelegt ist. Wenn festgelegt, bedeutet dies, dass der Knoten einen übergeordneten Knoten hat.
 
 #### F: Können wir den übergeordneten Knoten eines Knotens ändern?
 
- A: In den meisten Fällen wird der übergeordnete Knoten eines Knotens durch die Struktur des XML-Dokuments bestimmt und kann nicht direkt geändert werden. Sie können einen Knoten jedoch mit bestimmten Methoden auf einen anderen Knoten verschieben, z`appendChild` oder`insertBefore`.
+ A: In den meisten Fällen wird der übergeordnete Knoten eines Knotens durch die Struktur des XML-Dokuments bestimmt und kann nicht direkt geändert werden. Sie können einen Knoten jedoch mithilfe bestimmter Methoden in einen anderen Knoten verschieben, z. B.`appendChild` oder`insertBefore`.
 
-#### F: Wie kann ich die Hierarchie der übergeordneten Knoten durchsuchen?
+#### F: Wie durchsuche ich die Hierarchie der übergeordneten Knoten?
 
- A: Um die Hierarchie der übergeordneten Knoten zu durchlaufen, können Sie mithilfe von von einem bestimmten Knoten aus iterieren`parentNode` -Eigenschaft, bis Sie den Stammknoten des Dokuments erreichen.
+ A: Um die Hierarchie der übergeordneten Knoten zu durchlaufen, können Sie von einem bestimmten Knoten aus iterieren, indem Sie`parentNode` -Eigenschaft, bis Sie den Stammknoten des Dokuments erreichen.

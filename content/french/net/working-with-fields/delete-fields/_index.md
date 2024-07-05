@@ -46,7 +46,7 @@ Assurez-vous de disposer d'un projet C# nouveau ou existant dans Visual Studio d
 Si vous ne l'avez pas déjà fait, ajoutez une référence à Aspose.Words dans votre projet Visual Studio. Vous pouvez le faire en :
    - Cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions.
    - En sélectionnant « Gérer les packages NuGet… »
-   - Recherchez "Apose.Words" et installez-le dans votre projet.
+   - Recherchez "Aspose.Words" et installez-le dans votre projet.
 
 ## Étape 3 : Préparez votre document
 
@@ -105,4 +105,4 @@ En conclusion, ce didacticiel a fourni un guide complet sur la façon de supprim
    - Oui, la méthode présentée ici cible spécifiquement uniquement les champs et laisse les autres contenus inchangés.
 
 ### Où puis-je trouver plus de ressources et d’assistance pour Aspose.Words ?
-   -  Visiter le[Aspose.Words pour la documentation de l'API .NET](https://reference.aspose.com/words/net/) et le[Forum Aspose.Words](https://forum.aspose.com/c/words/8)Pour plus d'aide.
+   -  Visiter le[Aspose.Words pour la documentation de l'API .NET](https://reference.aspose.com/words/net/) et le[Forum Aspose.Words](https://forum.aspose.com/c/words/8) Pour plus d'aide.

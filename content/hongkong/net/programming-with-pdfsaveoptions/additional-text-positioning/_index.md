@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
 透過建立一個實例來配置轉換為 PDF 的選項`PdfSaveOptions`類別並啟用`AdditionalTextPositioning`啟用精確選項 
 PDF 檔案中附加文字的位置。
 
-使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`類別指定路徑和儲存選項。
+使用以下命令將文件儲存為 PDF 格式`Save`的方法`Document`指定路徑和儲存選項的類別。
 
 #### Q：透過新增附加文字來改善 PDF 檔案中文字的位置有什麼好處？
 答：透過添加附加文字來改善 PDF 文件中文字的位置的好處是：

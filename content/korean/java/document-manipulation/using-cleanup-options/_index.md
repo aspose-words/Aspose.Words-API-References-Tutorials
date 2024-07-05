@@ -158,7 +158,7 @@ Aspose.Words for Java의 정리 옵션은 메일 병합 프로세스 중 문서 
 
 ###  설정하면 어떻게 되나요?`REMOVE_CONTAINING_FIELDS` option?
 
- 설정`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` 이 옵션은 메일 병합 프로세스 중에 포함된 단락을 포함하여 전체 병합 필드를 문서에서 제거합니다. 이는 병합 필드와 관련 텍스트를 제거하려는 경우에 유용합니다.
+ 설정`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` 옵션은 메일 병합 프로세스 중에 포함된 단락을 포함하여 전체 병합 필드를 문서에서 제거합니다. 이는 병합 필드와 관련 텍스트를 제거하려는 경우에 유용합니다.
 
 ### 내 문서에서 사용하지 않는 병합 필드를 제거하려면 어떻게 해야 합니까?
 

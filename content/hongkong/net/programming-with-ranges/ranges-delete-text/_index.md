@@ -89,7 +89,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Sections[0].Range.Delete();
 ```
 
-此程式碼使用索引存取文件的第一部分。`0`並刪除該範圍內的所有文字。
+此程式碼使用索引存取文件的第一部分`0`並刪除該範圍內的所有文字。
 
 #### Q：我可以使用 Aspose.Words for .NET 從 Word 文件中的多個範圍中刪除文字嗎？
 

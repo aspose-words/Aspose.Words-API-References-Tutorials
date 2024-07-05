@@ -43,7 +43,7 @@ para.ParagraphFormat.KeepWithNext = true;
 }
 ```
 
-Ở đây, chúng tôi lặp qua từng ô trong bảng và bật tùy chọn "KeepWithNext" cho từng đoạn trong ô ngoại trừ các đoạn cuối của hàng cuối cùng trong bảng.
+Ở đây, chúng tôi lặp qua từng ô trong bảng và bật tùy chọn "KeepWithNext" cho từng đoạn trong ô ngoại trừ các đoạn cuối cùng của hàng cuối cùng trong bảng.
 
 ## Bước 4: Lưu tài liệu đã sửa đổi
 Cuối cùng, chúng ta cần lưu tài liệu đã sửa đổi với bảng được giữ cùng nhau. Sử dụng mã sau đây:

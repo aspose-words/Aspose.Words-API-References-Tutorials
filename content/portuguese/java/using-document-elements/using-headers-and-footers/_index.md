@@ -177,7 +177,7 @@ Depois de criar e personalizar seu documento, não esqueça de salvá-lo usando 
         pageSetup.setDifferentFirstPageHeaderFooter(false);
         // Esta seção exibe cabeçalhos/rodapés da seção anterior
         // por padrão, chame currentSection.HeadersFooters.LinkToPrevious(false) para cancelar a largura desta página
-        // é diferente para a nova seção e, portanto, precisamos definir larguras de células diferentes para uma tabela de rodapé.
+        // é diferente para a nova seção e, portanto, precisamos definir larguras de célula diferentes para uma tabela de rodapé.
         currentSection.getHeadersFooters().linkToPrevious(false);
         // Se quisermos usar o conjunto de cabeçalho/rodapé já existente para esta seção.
         // Mas com algumas pequenas modificações, pode ser conveniente copiar cabeçalhos/rodapés

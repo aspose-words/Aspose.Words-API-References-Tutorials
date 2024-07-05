@@ -12,7 +12,7 @@ Zajištění bezpečnosti dokumentů je při zpracování textu a dokumentů prv
 
 ## Implementace ochrany dokumentů
 
-Tyto výukové programy se ponoří do technik implementace ochrany dokumentů pomocí Aspose.Words for Java. Vývojáři prozkoumají, jak nastavit ochranu heslem, omezit úpravy dokumentů, formátování a extrakci obsahu. Aspose.Words poskytuje flexibilní možnosti přizpůsobení úrovní ochrany, zajišťuje, aby dokumenty zůstaly v bezpečí a zároveň umožňovaly oprávněným uživatelům přístup a úpravy obsahu.
+Tyto výukové programy se ponoří do technik implementace ochrany dokumentů pomocí Aspose.Words for Java. Vývojáři prozkoumají, jak nastavit ochranu heslem, omezit úpravy dokumentů, formátování a extrakci obsahu. Aspose.Words poskytuje flexibilní možnosti přizpůsobení úrovní ochrany, čímž zajišťuje, že dokumenty zůstávají v bezpečí a zároveň umožňuje oprávněným uživatelům přístup a úpravy obsahu.
 
 ## Šifrování a digitální podpisy
 

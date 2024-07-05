@@ -77,7 +77,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ยินดีด้วย! คุณได้เรียนรู้วิธีเรนเดอร์รูปร่างใน Aspose.Words สำหรับ Java เรียบร้อยแล้ว ความสามารถนี้เปิดโลกแห่งความเป็นไปได้เมื่อทำงานกับเอกสาร Word โดยทางโปรแกรม
 
-## 9.คำถามที่พบบ่อย
+## 9. คำถามที่พบบ่อย
 
 ### คำถามที่ 1: ฉันสามารถแสดงรูปร่างหลายรูปแบบในเอกสารฉบับเดียวได้หรือไม่
 
@@ -93,7 +93,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### คำถามที่ 4: ฉันสามารถลองใช้ Aspose.Words สำหรับ Java ก่อนซื้อได้หรือไม่
 
- แน่นอน! คุณสามารถเข้าถึง Aspose.Words สำหรับ Java รุ่นทดลองใช้ฟรีได้ที่[กำหนด](https://releases.aspose.com/).
+ แน่นอน! คุณสามารถเข้าถึง Aspose.Words สำหรับ Java รุ่นทดลองใช้ฟรีได้ที่[กำหนดเผยแพร่](https://releases.aspose.com/).
 
 ### คำถามที่ 5: ฉันจะขอรับการสนับสนุนหรือถามคำถามเกี่ยวกับ Aspose.Words สำหรับ Java ได้ที่ไหน
 

@@ -107,7 +107,7 @@ para.remove();
 // dan akan ditampilkan sebagai revisi di Microsoft Word, hingga kami menerima atau menolak semua revisi.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Paragraf revisi yang dihapus akan dihapus setelah kami menerima perubahan.
+// Paragraf revisi penghapusan dihapus setelah kami menerima perubahan.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //adalah Is.Kosong

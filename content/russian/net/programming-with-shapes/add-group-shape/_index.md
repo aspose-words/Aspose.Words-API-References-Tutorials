@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Шаг 2. Создайте новый документ и GroupShape.
- Создайте новый экземпляр`Document` класс и`GroupShape` объект для работы с документом.
+ Создайте новый экземпляр`Document` класс и`GroupShape`объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Шаг 3. Создайте и добавьте фигуры в GroupShape
- Создавайте отдельные фигуры, например`accentBorderShape` и`actionButtonShape` используя`Shape` класс. Настройте их свойства по своему желанию. Добавьте эти фигуры в`groupShape` Объект Object.
+ Создавайте отдельные фигуры, например`accentBorderShape` и`actionButtonShape` используя`Shape` сорт. Настройте их свойства по своему желанию. Добавьте эти фигуры в`groupShape` объект.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };

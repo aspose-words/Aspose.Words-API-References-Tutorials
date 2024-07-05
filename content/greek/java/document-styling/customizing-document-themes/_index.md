@@ -87,7 +87,7 @@ theme.getFonts().setMinor(ThemeFontLanguage.Latin, "Verdana");
 doc.save("customized_fonts.docx");
 ```
 
-## Συχνές Ερωτήσεις (Συχνές Ερωτήσεις)
+## Συχνές Ερωτήσεις (FAQ)
 
 ### Πώς μπορώ να εφαρμόσω ένα προσαρμοσμένο θέμα σε ένα υπάρχον έγγραφο;
 

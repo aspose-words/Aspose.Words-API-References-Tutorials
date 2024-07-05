@@ -32,7 +32,7 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- Các`Resolution` thuộc tính chỉ định độ phân giải mục tiêu của hình ảnh và`ResolutionThreshold`Thuộc tính chỉ định độ phân giải tối thiểu mà dưới đó hình ảnh sẽ không bị thu nhỏ lại.
+ Các`Resolution` thuộc tính chỉ định độ phân giải mục tiêu của hình ảnh và`ResolutionThreshold`thuộc tính chỉ định độ phân giải tối thiểu mà dưới đó hình ảnh sẽ không bị thu nhỏ.
 
 ## Bước 3: Chuyển đổi tài liệu sang PDF
 

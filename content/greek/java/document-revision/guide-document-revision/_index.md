@@ -110,7 +110,7 @@ doc.acceptAllRevisions();
 doc.save("path/to/modified/document.docx");
 ```
 
-#### Απόρριψη κριτικών:
+#### Απόρριψη αναθεωρήσεων:
 
 ```java
 Document doc = new Document("path/to/your/document.docx");

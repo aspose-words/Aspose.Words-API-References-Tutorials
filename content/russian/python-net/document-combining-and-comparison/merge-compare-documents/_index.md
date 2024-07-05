@@ -47,7 +47,7 @@ doc2 = Document("document2.docx")
 doc1.append_document(doc2, DocumentImportFormatMode.KEEP_SOURCE_FORMATTING)
 ```
 
-## Сохраните объединенный документ
+## Сохранение объединенного документа
 
 Сохраните объединенный документ в новый файл:
 

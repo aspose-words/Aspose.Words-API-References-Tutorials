@@ -1,14 +1,14 @@
 ---
 title: Layout in Zelle
 linktitle: Layout in Zelle
-second_title: Aspose.Words-Dokumentverarbeitungs-API
+second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Form innerhalb einer Tabellenzelle in einem Word-Dokument anordnen.
 type: docs
 weight: 10
 url: /de/net/programming-with-shapes/layout-in-cell/
 ---
 
-In diesem Tutorial wird erklärt, wie Sie mit Aspose.Words für .NET eine Form innerhalb einer Tabellenzelle in einem Word-Dokument anordnen. Durch Anpassen der Formeigenschaften und Verwendung der Layoutoptionen können Sie die Positionierung und das Erscheinungsbild der Form innerhalb der Zelle steuern.
+In diesem Tutorial wird erklärt, wie Sie mit Aspose.Words für .NET eine Form innerhalb einer Tabellenzelle in einem Word-Dokument anordnen. Indem Sie die Formeigenschaften anpassen und die Layoutoptionen verwenden, können Sie die Positionierung und das Erscheinungsbild der Form innerhalb der Zelle steuern.
 
 ## Voraussetzungen
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
@@ -16,15 +16,15 @@ Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 - Aspose.Words für .NET-Bibliothek installiert.
 - Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
-## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
- Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
+## Schritt 1: Einrichten des Dokumentverzeichnisses
+ Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Schritt 2: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
- Erstellen Sie eine neue Instanz von`Document` Klasse und a`DocumentBuilder` Objekt, um mit dem Dokument zu arbeiten.
+## Schritt 2: Neues Dokument und DocumentBuilder erstellen
+ Erstellen Sie eine neue Instanz des`Document` Klasse und eine`DocumentBuilder`Objekt, um mit dem Dokument zu arbeiten.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Schritt 3: Erstellen Sie die Tabelle
- Benutzen Sie die`StartTable`, `EndTable`, `InsertCell` , Und`Write` Methoden der`DocumentBuilder`Objekt zum Erstellen einer Tabelle. Stellen Sie die gewünschte Zeilenhöhe und Höhenregel mit ein`RowFormat` Eigenschaften.
+ Verwenden Sie die`StartTable`, `EndTable`, `InsertCell` , Und`Write` Methoden der`DocumentBuilder`Objekt, um eine Tabelle zu erstellen. Stellen Sie die gewünschte Zeilenhöhe und Höhenregel mit dem`RowFormat` Eigenschaften.
 
 ```csharp
 builder.StartTable();
@@ -47,8 +47,8 @@ for (int i = 0; i < 31; i++)
 builder.EndTable();
 ```
 
-## Schritt 4: Erstellen und formatieren Sie die Form
- Ein ... kreieren`Shape` Objekt und konfigurieren Sie seine Eigenschaften, um das Wasserzeichen zu definieren. Legen Sie mithilfe von fest, welche Form innerhalb einer Zelle angeordnet werden soll`IsLayoutInCell` Eigentum.
+## Schritt 4: Erstellen und Formatieren der Form
+ Ein ... kreieren`Shape` Objekt und konfigurieren Sie seine Eigenschaften, um das Wasserzeichen zu definieren. Legen Sie die Form fest, die in einer Zelle angeordnet werden soll, mithilfe der`IsLayoutInCell` Eigentum.
 
 ```csharp
 Shape watermark = new Shape(doc, ShapeType.TextPlainText)
@@ -65,7 +65,7 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 ```
 
 ## Schritt 5: Passen Sie die Form an
- Passen Sie das Erscheinungsbild und den Text der Wasserzeichenform an, indem Sie Eigenschaften wie festlegen`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, usw.
+ Passen Sie das Aussehen und den Text der Wasserzeichenform an, indem Sie Eigenschaften festlegen wie`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, usw.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Schritt 6: Fügen Sie die Form in das Dokument ein
- Fügen Sie die Wasserzeichenform mit in das Dokument ein`InsertNode` Methode der`DocumentBuilder` Objekt. Positionieren Sie die Form mit dem`MoveTo` Methode, um es nach der letzten Ausführung im Dokument zu platzieren.
+ Fügen Sie die Wasserzeichenform mit dem`InsertNode` Methode der`DocumentBuilder` Objekt. Positionieren Sie die Form mit dem`MoveTo` Methode, um es nach dem letzten Lauf im Dokument zu platzieren.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -86,7 +86,7 @@ builder.InsertNode(watermark);
 ```
 
 ## Schritt 7: Speichern Sie das Dokument
- Speichern Sie das Dokument mit im angegebenen Verzeichnis`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithShapes.LayoutInCell.docx“.
+ Speichern Sie das Dokument im angegebenen Verzeichnis mit dem`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithShapes.LayoutInCell.docx“.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
@@ -98,7 +98,7 @@ doc
 ### Beispielquellcode für Layout In Cell mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	// Pfad zu Ihrem Dokumentverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

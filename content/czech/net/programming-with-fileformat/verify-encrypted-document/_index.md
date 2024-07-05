@@ -1,6 +1,6 @@
 ---
-title: Ověřte šifrovaný dokument Word
-linktitle: Ověřte šifrovaný dokument Word
+title: Ověřte zašifrovaný dokument aplikace Word
+linktitle: Ověřte zašifrovaný dokument aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Podrobný průvodce ověřením, že dokument aplikace Word je zašifrován pomocí Aspose.Words for .NET.
 type: docs

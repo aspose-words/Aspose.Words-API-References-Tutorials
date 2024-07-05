@@ -1,6 +1,6 @@
 ---
-title: Italiaanse tekst
-linktitle: Italiaanse tekst
+title: Cursieve tekst
+linktitle: Cursieve tekst
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u tekst cursief maakt met Aspose.Words voor .NET Stapsgewijze handleiding.
 type: docs
@@ -34,7 +34,7 @@ builder.Writeln("This text will be in italics");
 // Gebruik een documentbuilder om inhoud aan het document toe te voegen.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Maak de tekst Italiaans.
+// Maak de tekst cursief.
 builder.Font.Italic = true;
 builder.Writeln("This text will be Italic");
 ```

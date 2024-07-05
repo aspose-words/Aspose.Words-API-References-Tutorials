@@ -30,7 +30,7 @@ Se till att ersätta "Hyperlinks.docx" med namnet på din egen fil.
 
 ## Steg 3: Bläddra i dokumentfält
 
- Vi använder a`foreach`loop till loop genom alla fält som finns i dokumentet.
+ Vi använder a`foreach` loop till loop genom alla fält som finns i dokumentet.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,11 +69,11 @@ Detta avslutar vår guide om hur du använder funktionen "Hämta fältkod" med A
 
 #### F: Hur kan jag infoga ett fält i ett Word-dokument med Aspose.Words för .NET?
 
- S: För att infoga ett fält i ett Word-dokument med Aspose.Words för .NET, kan du använda`DocumentBuilder.InsertField` metod som anger lämplig fältkod. Du kan till exempel använda`builder.InsertField("MERGEFIELD CustomerName")`för att infoga ett sammanfogningsfält i dokumentet.
+ S: För att infoga ett fält i ett Word-dokument med Aspose.Words för .NET, kan du använda`DocumentBuilder.InsertField` metod som anger lämplig fältkod. Du kan till exempel använda`builder.InsertField("MERGEFIELD CustomerName")` för att infoga ett sammanfogningsfält i dokumentet.
 
 #### F: Hur kan jag uppdatera fält i ett dokument med Aspose.Words för .NET?
 
- S: För att uppdatera dokumentfält med Aspose.Words för .NET kan du använda`Document.UpdateFields` metod. Detta kommer att uppdatera alla fält som finns i dokumentet, såsom sammanfogningsfält, datumfält, etc.
+ S: För att uppdatera dokumentfält med Aspose.Words för .NET kan du använda`Document.UpdateFields`metod. Detta kommer att uppdatera alla fält som finns i dokumentet, såsom sammanfogningsfält, datumfält, etc.
 
 #### F: Hur kan jag hämta värdet för ett specifikt fält i Aspose.Words för .NET?
 

@@ -81,7 +81,7 @@ A: Voordat u een VBA-module uit een Word-document kunt klonen, moet u praktische
 
 #### Vraag: Hoe kan ik de documentmap in de code instellen?
 
- A: In de verstrekte code moet u vervangen.`"YOUR DOCUMENTS DIRECTORY"` met het juiste pad naar de map waar uw Word-document met het VBA-project zich bevindt.
+ A: In de verstrekte code moet u vervangen`"YOUR DOCUMENTS DIRECTORY"` met het juiste pad naar de map waar uw Word-document met het VBA-project zich bevindt.
 
 #### Vraag: Hoe kan ik een bestemmingsdocument opslaan met een gekloonde VBA-module?
 

@@ -17,7 +17,7 @@ Upewnij się, że masz następujące wymagania wstępne:
 - Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
 - Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres.
+## Krok 2: Utwórz nowy dokument i wstaw wykres
 
  Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
 
@@ -107,7 +107,7 @@ Aspose.Words dla .NET obsługuje szeroką gamę kodów formatu liczb, których m
 
 - `0` Lub`#` - Wyświetla liczbę bez miejsc po przecinku.
 - `0.00` Lub`#.00` - Wyświetla liczbę z dwoma miejscami po przecinku.
-- `#,##0` Wyświetla liczbę z tysiącami separatorów.
+- `#,##0` Wyświetla liczbę z separatorami tysięcy.
 - `"€"0.00` - Wyświetla liczbę z symbolem waluty euro i dwoma miejscami po przecinku.
 - `"%"0` - Wyświetla liczbę jako procent.
 

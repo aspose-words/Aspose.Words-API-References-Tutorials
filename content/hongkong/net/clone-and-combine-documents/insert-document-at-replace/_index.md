@@ -104,7 +104,7 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
 
 在這裡，我們載入要插入的文檔，然後呼叫輔助方法來執行插入。
 
-## 第 6 步：定義插入文檔方法
+## 步驟 6：定義插入文件方法
 
 我們的最後一個難題是在指定位置實際插入文件的方法。
 
@@ -147,7 +147,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## 結論
 
-現在你就得到它了！使用 Aspose.Words for .NET 將一個文件插入另一個文件的綜合指南。透過執行這些步驟，您可以輕鬆地自動執行文件組裝和操作任務。無論您是要建立文件管理系統還是只是需要簡化文件處理工作流程，Aspose.Words 都是您值得信賴的助手。
+現在你就擁有了！使用 Aspose.Words for .NET 將一個文件插入另一個文件的綜合指南。透過執行這些步驟，您可以輕鬆地自動執行文件組裝和操作任務。無論您是要建立文件管理系統還是只是需要簡化文件處理工作流程，Aspose.Words 都是您值得信賴的助手。
 
 ## 常見問題解答
 

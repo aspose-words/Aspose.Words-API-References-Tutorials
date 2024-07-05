@@ -73,13 +73,13 @@ foreach (Revision revision in doc.Revisions)
 
 ## Závěr
 
-V tomto tutoriálu jsme se naučili, jak získat přístup k revidované verzi dokumentu aplikace Word pomocí Aspose.Words for .NET. Načtením dokumentu, přechodem na revidovanou verzi a procházením revizí jsme byli schopni získat konkrétní informace pro odstavce, které jsou položkami seznamu. Aspose.Words for .NET nabízí výkonné funkce pro manipulaci s dokumenty aplikace Word, včetně přístupu k recenzím. Nyní můžete tyto znalosti využít k přístupu k revidované verzi svých vlastních dokumentů Word pomocí Aspose.Words for .NET.
+tomto tutoriálu jsme se naučili, jak získat přístup k revidované verzi dokumentu aplikace Word pomocí Aspose.Words for .NET. Načtením dokumentu, přechodem na revidovanou verzi a procházením revizí jsme byli schopni získat konkrétní informace pro odstavce, které jsou položkami seznamu. Aspose.Words for .NET nabízí výkonné funkce pro manipulaci s dokumenty aplikace Word, včetně přístupu k recenzím. Nyní můžete tyto znalosti využít k přístupu k revidované verzi svých vlastních dokumentů Word pomocí Aspose.Words for .NET.
 
 ### FAQ
 
 #### Otázka: Jak načtu dokument s revizemi do Aspose.Words pro .NET?
 
- A: Použijte`Document`třídy Aspose.Words for .NET k načtení dokumentu ze souboru obsahujícího revize. Můžete zadat úplnou cestu dokumentu.
+ A: Použijte`Document` třídy Aspose.Words for .NET k načtení dokumentu ze souboru obsahujícího revize. Můžete zadat úplnou cestu dokumentu.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### Otázka: Jak mohu procházet revize dokumentů v Aspose.Words pro .NET?
 
- A: Použijte a`foreach` smyčka pro iteraci revizí přítomných v dokumentu. Můžete použít`Revisions` vlastnictvím`Document` objekt k získání kolekce všech revizí dokumentu.
+A: Použijte a`foreach` smyčka pro iteraci revizí přítomných v dokumentu. Můžete použít`Revisions` vlastnictvím`Document` objekt k získání kolekce všech revizí dokumentu.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

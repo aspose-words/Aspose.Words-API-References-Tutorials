@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Langkah 2: Buat Dokumen Baru dan DocumentBuilder
- Buat instance baru dari`Document` kelas dan a`DocumentBuilder` keberatan untuk bekerja dengan dokumen tersebut.
+ Buat instance baru dari`Document` kelas dan a`DocumentBuilder`keberatan untuk bekerja dengan dokumen tersebut.
 
 ```csharp
 Document doc = new Document();
@@ -73,7 +73,7 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-### Contoh kode sumber Nilai Tanggal Waktu Ke Sumbu menggunakan Aspose.Words untuk .NET 
+### Contoh kode sumber untuk Nilai Tanggal Waktu Ke Sumbu menggunakan Aspose.Words untuk .NET 
 
 ```csharp
 	// Jalur ke direktori dokumen Anda
@@ -105,15 +105,15 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 Kode contoh ini membuat dokumen Word baru, menyisipkan bagan kolom dengan nilai tanggal waktu pada sumbu X, dan menyimpan dokumen ke direktori yang ditentukan.
 
 ## Kesimpulan
-Dalam tutorial ini, Anda telah mempelajari cara menambahkan nilai tanggal waktu ke sumbu bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah, Anda dapat membuat bagan, menambahkan nilai tanggal waktu ke rangkaian, dan mengonfigurasi sumbu untuk menampilkan nilai tanggal waktu secara akurat. Aspose.Words for .NET menyediakan serangkaian fitur canggih untuk Pemrosesan Kata dengan bagan di dokumen Word, memungkinkan Anda mewakili dan memvisualisasikan data dengan nilai tanggal dan waktu secara efektif.
+Dalam tutorial ini, Anda telah mempelajari cara menambahkan nilai tanggal waktu ke sumbu bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah, Anda dapat membuat bagan, menambahkan nilai tanggal waktu ke rangkaian, dan mengonfigurasi sumbu untuk menampilkan nilai tanggal waktu secara akurat. Aspose.Words untuk .NET menyediakan serangkaian fitur canggih untuk Pemrosesan Kata dengan bagan di dokumen Word, memungkinkan Anda mewakili dan memvisualisasikan data dengan nilai tanggal dan waktu secara efektif.
 
 ### FAQ
 
 #### Q1. Bisakah saya menambahkan nilai tanggal waktu ke sumbu bagan menggunakan Aspose.Words untuk .NET?
-Ya, dengan Aspose.Words untuk .NET, Anda dapat menambahkan dan menampilkan nilai tanggal waktu pada sumbu bagan di dokumen Word. Aspose.Words menyediakan API dan fungsionalitas untuk bekerja dengan berbagai jenis bagan dan menyesuaikan tampilannya, termasuk menangani nilai tanggal dan waktu pada sumbu.
+Ya, dengan Aspose.Words untuk .NET, Anda dapat menambahkan dan menampilkan nilai tanggal waktu pada sumbu bagan di dokumen Word. Aspose.Words menyediakan API dan fungsionalitas untuk bekerja dengan berbagai tipe bagan dan menyesuaikan tampilannya, termasuk menangani nilai tanggal dan waktu pada sumbu.
 
 #### Q2. Bagaimana cara menambahkan nilai tanggal waktu ke rangkaian bagan?
- Untuk menambahkan nilai tanggal waktu ke rangkaian bagan, Anda dapat menggunakan`Add`metode rangkaian grafik. Menyediakan array nilai tanggal waktu sebagai data kategori (sumbu X), bersama dengan nilai seri yang sesuai. Ini memungkinkan Anda untuk memplot titik data dengan nilai tanggal dan waktu pada grafik.
+ Untuk menambahkan nilai tanggal waktu ke rangkaian bagan, Anda dapat menggunakan`Add`metode rangkaian grafik. Berikan array nilai tanggal waktu sebagai data kategori (sumbu X), bersama dengan nilai rangkaian yang sesuai. Hal ini memungkinkan Anda untuk memplot titik data dengan nilai tanggal dan waktu pada grafik.
 
 #### Q3. Bagaimana cara mengonfigurasi sumbu untuk menampilkan nilai tanggal dan waktu?
  Anda dapat mengonfigurasi sumbu bagan untuk menampilkan nilai tanggal dan waktu dengan mengatur properti yang sesuai. Misalnya, Anda dapat menentukan nilai minimum dan maksimum untuk sumbu menggunakan`Scaling.Minimum` Dan`Scaling.Maximum` properti, masing-masing. Selain itu, Anda dapat mengatur satuan mayor dan minor untuk menentukan interval dan tanda centang untuk sumbu.

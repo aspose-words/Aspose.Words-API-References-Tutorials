@@ -33,7 +33,7 @@ print(doc.get_text())
 
 ## 啟用追蹤更改
 
-要啟用文件的追蹤更改，您需要設定`TrackRevisions`財產給`True`:
+要啟用文件的追蹤更改，您需要設定`TrackRevisions`財產給`True`：
 
 ```python
 doc.track_revisions = True
@@ -127,6 +127,6 @@ Aspose.Words for Python 簡化了文件修訂和追蹤、增強協作並確保�
 
 是的，當您使用 Aspose.Words 將文件轉換為不同格式時，修訂記錄會保留。
 
-### 如何以程式方式接受或拒絕修訂？
+### 如何以程式設計方式接受或拒絕修訂？
 
 您可以迭代修訂集合並使用 Aspose.Words 的 API 函數以程式設計方式接受或拒絕每個修訂。

@@ -2,7 +2,7 @@
 title: 在 Aspose.Words for Java 中使用文档属性
 linktitle: 使用文档属性
 second_title: Aspose.Words Java 文档处理 API
-description: 使用 Aspose.Words for Java 优化文档管理。在这个综合教程中学习如何使用文档属性、添加自定义元数据等。
+description: 使用 Aspose.Words for Java 优化文档管理。在此综合教程中学习如何使用文档属性、添加自定义元数据等。
 type: docs
 weight: 32
 url: /zh/java/document-manipulation/using-document-properties/
@@ -10,7 +10,7 @@ url: /zh/java/document-manipulation/using-document-properties/
 
 ## 文档属性简介
 
-文档属性是任何文档的重要组成部分。它们提供有关文档本身的附加信息，例如标题、作者、主题、关键字等。在 Aspose.Words for Java 中，您可以操作内置和自定义文档属性。
+文档属性是任何文档的重要组成部分。它们提供有关文档本身的其他信息，例如其标题、作者、主题、关键字等。在 Aspose.Words for Java 中，您可以操作内置和自定义文档属性。
 
 ## 枚举文档属性
 
@@ -53,11 +53,11 @@ public void addCustomDocumentProperties() throws Exception
 }
 ```
 
-此代码片段演示了如何添加自定义文档属性，包括布尔值、字符串、日期、修订号和数值。
+此代码片段演示了如何添加自定义文档属性，包括布尔值、字符串、日期、修订号和数字值。
 
 ## 删除文档属性
 
-要删除特定文档属性，可以使用以下代码：
+要删除特定的文档属性，可以使用以下代码：
 
 ```java
 @Test
@@ -72,7 +72,7 @@ public void removeCustomDocumentProperties() throws Exception
 
 ## 配置内容链接
 
-在某些情况下，您可能希望在文档中创建链接。您可以这样做：
+在某些情况下，您可能希望在文档中创建链接。具体操作如下：
 
 ```java
 @Test
@@ -95,11 +95,11 @@ public void configuringLinkToContent() throws Exception
 }
 ```
 
-此代码段演示了如何在文档中创建书签并添加链接到该书签的自定义文档属性。
+此代码片段演示了如何在文档中创建书签并添加链接到该书签的自定义文档属性。
 
 ## 测量单位之间的转换
 
-在Aspose.Words for Java中，您可以轻松转换测量单位。以下是如何执行此操作的示例：
+在 Aspose.Words for Java 中，您可以轻松转换测量单位。以下是如何操作的示例：
 
 ```java
 @Test
@@ -109,7 +109,7 @@ public void convertBetweenMeasurementUnits() throws Exception
     DocumentBuilder builder = new DocumentBuilder(doc);
     PageSetup pageSetup = builder.getPageSetup();
 
-    //设置页边距（以英寸为单位）。
+    //以英寸为单位设置边距。
     pageSetup.setTopMargin(ConvertUtil.inchToPoint(1.0));
     pageSetup.setBottomMargin(ConvertUtil.inchToPoint(1.0));
     pageSetup.setLeftMargin(ConvertUtil.inchToPoint(1.5));
@@ -119,11 +119,11 @@ public void convertBetweenMeasurementUnits() throws Exception
 }
 ```
 
-此代码片段通过将各种边距和距离（以英寸为单位）转换为点来设置它们。
+此代码片段通过将各种边距和距离转换为点来设置以英寸为单位的各种边距和距离。
 
 ## 使用控制字符
 
-处理文本时控制字符很有用。以下是替换文本中控制字符的方法：
+控制字符在处理文本时非常有用。以下是如何替换文本中的控制字符：
 
 ```java
 @Test
@@ -131,12 +131,12 @@ public void useControlCharacters()
 {
     final String TEXT = "test\r";
 
-    //将“\r”控制字符替换为“\r\n”。
+    //用“\r\n”替换“\r”控制字符。
     String replace = TEXT.replace(ControlChar.CR, ControlChar.CR_LF);
 }
 ```
 
-在此示例中，我们替换回车符 (`\r`），回车后跟换行符（`\r\n`）。
+在此示例中，我们将回车符 (`\r`）以回车符结尾，然后按换行符（`\r\n`）。
 
 ## 结论
 
@@ -146,20 +146,20 @@ public void useControlCharacters()
 
 ### 如何访问内置文档属性？
 
-要访问 Aspose.Words for Java 中的内置文档属性，您可以使用`getBuiltInDocumentProperties`方法上的`Document`目的。此方法返回您可以迭代的内置属性的集合。
+要访问 Aspose.Words for Java 中的内置文档属性，您可以使用`getBuiltInDocumentProperties`方法`Document`对象。此方法返回一个可以迭代的内置属性集合。
 
 ### 我可以向文档添加自定义文档属性吗？
 
-是的，您可以使用以下命令将自定义文档属性添加到文档中：`CustomDocumentProperties`收藏。您可以使用各种数据类型定义自定义属性，包括字符串、布尔值、日期和数值。
+是的，您可以使用`CustomDocumentProperties`集合。您可以定义具有各种数据类型的自定义属性，包括字符串、布尔值、日期和数值。
 
 ### 如何删除特定的自定义文档属性？
 
-要删除特定的自定义文档属性，您可以使用`remove`方法上的`CustomDocumentProperties`集合，将要删除的属性的名称作为参数传递。
+要删除特定的自定义文档属性，您可以使用`remove`方法`CustomDocumentProperties`集合，将要删除的属性的名称作为参数传递。
 
-### 链接到文档内容的目的是什么？
+### 链接到文档内的内容的目的是什么？
 
-链接到文档中的内容允许您创建对文档特定部分的动态引用。这对于创建交互式文档或各部分之间的交叉引用非常有用。
+通过链接到文档中的内容，您可以创建对文档特定部分的动态引用。这对于创建交互式文档或各部分之间的交叉引用非常有用。
 
-### 如何在 Aspose.Words for Java 中的不同测量单位之间进行转换？
+### 如何在 Aspose.Words for Java 中在不同的测量单位之间进行转换？
 
-您可以使用 Aspose.Words for Java 在不同的测量单位之间进行转换`ConvertUtil`班级。它提供了将英寸转换为点、点转换为厘米等单位的方法。
+您可以使用 Aspose.Words for Java 中的不同测量单位进行转换`ConvertUtil`类。它提供了将英寸转换为点、将点转换为厘米等单位的方法。

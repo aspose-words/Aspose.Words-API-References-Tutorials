@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Załaduj dokument i skonfiguruj ustawienia zastępowania czcionek
- Następnie załadujemy dokument za pomocą metody`Document` class i skonfiguruj ustawienia zastępowania czcionek za pomocą`FontSettings` klasa. Załadujemy ustawienia zastępczej czcionki Noto za pomocą pliku`LoadNotoFallbackSettings()` metoda.
+ Następnie załadujemy dokument za pomocą metody`Document` class i skonfiguruj ustawienia zastępowania czcionek za pomocą`FontSettings`klasa. Załadujemy ustawienia zastępczej czcionki Noto za pomocą pliku`LoadNotoFallbackSettings()` metoda.
 
 ```csharp
 // Załaduj dokument i skonfiguruj ustawienia zastępowania czcionek

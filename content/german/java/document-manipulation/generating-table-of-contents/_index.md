@@ -1,44 +1,44 @@
 ---
 title: Generieren eines Inhaltsverzeichnisses in Aspose.Words für Java
 linktitle: Inhaltsverzeichnis erstellen
-second_title: Aspose.Words Java-Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für Java ein Inhaltsverzeichnis (TOC) generieren und anpassen. Erstellen Sie mühelos organisierte und professionelle Dokumente.
+second_title: Aspose.Words Java-API zur Dokumentverarbeitung
+description: Erfahren Sie, wie Sie mit Aspose.Words für Java Inhaltsverzeichnisse (TOC) erstellen und anpassen. Erstellen Sie mühelos organisierte und professionelle Dokumente.
 type: docs
 weight: 21
 url: /de/java/document-manipulation/generating-table-of-contents/
 ---
 
-## Einführung in die Generierung von Inhaltsverzeichnissen in Aspose.Words für Java
+## Einführung in die Generierung eines Inhaltsverzeichnisses in Aspose.Words für Java
 
-In diesem Tutorial führen wir Sie durch den Prozess der Erstellung eines Inhaltsverzeichnisses (TOC) mit Aspose.Words für Java. Das Inhaltsverzeichnis ist eine entscheidende Funktion für die Erstellung organisierter Dokumente. Wir besprechen, wie Sie das Erscheinungsbild und Layout des Inhaltsverzeichnisses anpassen.
+In diesem Tutorial führen wir Sie durch den Prozess der Generierung eines Inhaltsverzeichnisses (TOC) mit Aspose.Words für Java. Das Inhaltsverzeichnis ist eine wichtige Funktion zum Erstellen organisierter Dokumente. Wir zeigen Ihnen, wie Sie das Erscheinungsbild und Layout des Inhaltsverzeichnisses anpassen können.
 
 ## Voraussetzungen
 
-Bevor Sie beginnen, stellen Sie sicher, dass Aspose.Words für Java in Ihrem Java-Projekt installiert und eingerichtet ist.
+Stellen Sie vor dem Beginn sicher, dass Aspose.Words für Java in Ihrem Java-Projekt installiert und eingerichtet ist.
 
-## Schritt 1: Erstellen Sie ein neues Dokument
+## Schritt 1: Neues Dokument erstellen
 
-Erstellen wir zunächst ein neues Dokument, mit dem wir arbeiten können.
+Lassen Sie uns zunächst ein neues Dokument zum Arbeiten erstellen.
 
 ```java
 Document doc = new Document();
 ```
 
-## Schritt 2: Anpassen der Inhaltsverzeichnisse
+## Schritt 2: Inhaltsverzeichnisse anpassen
 
-Um das Erscheinungsbild Ihres Inhaltsverzeichnisses anzupassen, können Sie die damit verbundenen Stile ändern. In diesem Beispiel machen wir die Inhaltsverzeichniseinträge der ersten Ebene fett.
+Um das Erscheinungsbild Ihres Inhaltsverzeichnisses anzupassen, können Sie die damit verbundenen Stile ändern. In diesem Beispiel werden die Inhaltsverzeichniseinträge der ersten Ebene fett dargestellt.
 
 ```java
 doc.getStyles().getByStyleIdentifier(StyleIdentifier.TOC_1).getFont().setBold(true);
 ```
 
-## Schritt 3: Fügen Sie Ihrem Dokument Inhalte hinzu
+## Schritt 3: Fügen Sie Ihrem Dokument Inhalt hinzu
 
-Sie können Ihre Inhalte zum Dokument hinzufügen. Dieser Inhalt wird zur Generierung des Inhaltsverzeichnisses verwendet.
+Sie können dem Dokument Ihren Inhalt hinzufügen. Dieser Inhalt wird zum Generieren des Inhaltsverzeichnisses verwendet.
 
-## Schritt 4: Generieren Sie das Inhaltsverzeichnis
+## Schritt 4: Inhaltsverzeichnis generieren
 
-Um das Inhaltsverzeichnis zu generieren, fügen Sie an der gewünschten Stelle in Ihrem Dokument ein Inhaltsverzeichnisfeld ein. Dieses Feld wird automatisch basierend auf den Überschriften und Stilen in Ihrem Dokument ausgefüllt.
+Um das Inhaltsverzeichnis zu generieren, fügen Sie an der gewünschten Stelle in Ihrem Dokument ein Inhaltsverzeichnisfeld ein. Dieses Feld wird automatisch basierend auf den Überschriften und Formatvorlagen in Ihrem Dokument ausgefüllt.
 
 ```java
 // Fügen Sie an der gewünschten Stelle in Ihrem Dokument ein Inhaltsverzeichnisfeld ein.
@@ -66,13 +66,13 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
     if (para.getParagraphFormat().getStyle().getStyleIdentifier() >= StyleIdentifier.TOC_1 &&
         para.getParagraphFormat().getStyle().getStyleIdentifier() <= StyleIdentifier.TOC_9)
     {
-        //Rufen Sie den ersten in diesem Absatz verwendeten Tabulator auf, der die Seitenzahlen ausrichtet.
+        //Holen Sie sich den ersten in diesem Absatz verwendeten Tabulator, der die Seitenzahlen ausrichtet.
         TabStop tab = para.getParagraphFormat().getTabStops().get(0);
         
         // Entfernen Sie die alte Lasche.
         para.getParagraphFormat().getTabStops().removeByPosition(tab.getPosition());
         
-        // Fügen Sie einen neuen Tab an einer geänderten Position ein (z. B. 50 Einheiten nach links).
+        // Fügt einen neuen Tabulator an geänderter Position ein (z. B. 50 Einheiten weiter links).
         para.getParagraphFormat().getTabStops().add(tab.getPosition() - 50.0, tab.getAlignment(), tab.getLeader());
     }
 }
@@ -80,22 +80,22 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
 doc.save("output.docx");
 ```
 
-Jetzt haben Sie in Ihrem Dokument ein benutzerdefiniertes Inhaltsverzeichnis mit angepassten Tabstopps für die Ausrichtung der Seitenzahlen.
+Jetzt haben Sie in Ihrem Dokument ein individuelles Inhaltsverzeichnis mit angepassten Tabstopps zur Seitenzahlausrichtung.
 
 
 ## Abschluss
 
-In diesem Tutorial haben wir untersucht, wie Sie mit Aspose.Words für Java, einer leistungsstarken Bibliothek für die Arbeit mit Word-Dokumenten, ein Inhaltsverzeichnis (TOC) erstellen. Ein gut strukturiertes Inhaltsverzeichnis ist für die Organisation und Navigation in langen Dokumenten unerlässlich, und Aspose.Words bietet die Tools zum mühelosen Erstellen und Anpassen von Inhaltsverzeichnissen.
+In diesem Tutorial haben wir untersucht, wie man mit Aspose.Words für Java, einer leistungsstarken Bibliothek für die Arbeit mit Word-Dokumenten, ein Inhaltsverzeichnis (TOC) erstellt. Ein gut strukturiertes Inhaltsverzeichnis ist für die Organisation und Navigation langer Dokumente unerlässlich, und Aspose.Words bietet die Tools zum mühelosen Erstellen und Anpassen von Inhaltsverzeichnissen.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie ändere ich die Formatierung von Inhaltsverzeichniseinträgen?
 
- Sie können die den Inhaltsverzeichnisebenen zugeordneten Stile mit ändern`doc.getStyles().getByStyleIdentifier(StyleIdentifier.TOC_X)`, wobei X der TOC-Wert ist.
+ Sie können die den Inhaltsverzeichnisebenen zugeordneten Stile ändern mit`doc.getStyles().getByStyleIdentifier(StyleIdentifier.TOC_X)`, wobei X der TOC-Level ist.
 
 ### Wie kann ich meinem Inhaltsverzeichnis weitere Ebenen hinzufügen?
 
-Um mehr Ebenen in Ihr Inhaltsverzeichnis aufzunehmen, können Sie das Feld „Inhaltsverzeichnis“ ändern und die gewünschte Anzahl an Ebenen angeben.
+Um weitere Ebenen in Ihr Inhaltsverzeichnis aufzunehmen, können Sie das Inhaltsverzeichnisfeld ändern und die gewünschte Anzahl Ebenen angeben.
 
 ### Kann ich die Tabstopppositionen für bestimmte Inhaltsverzeichniseinträge ändern?
 

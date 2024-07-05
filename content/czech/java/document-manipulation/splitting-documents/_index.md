@@ -110,6 +110,6 @@ Ano, Aspose.Words for Java se dobře hodí pro práci s velkými dokumenty. Posk
 
 Absolutně. Aspose.Words for Java umožňuje bezproblémové slučování rozdělených dokumentů a zajišťuje, že můžete pracovat jak s jednotlivými částmi, tak s celým dokumentem podle potřeby.
 
-### Kde mohu získat přístup k Aspose.Words for Java a začít jej používat?
+### Kde mohu získat přístup k Aspose.Words for Java a začít je používat?
 
  Aspose.Words for Java si můžete stáhnout z webu Aspose. Začněte dnes návštěvou[Aspose.Words for Java ke stažení](https://releases.aspose.com/words/java/).

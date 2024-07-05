@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## 3. Adım: Gelişmiş alanları ekleme
+## 3. Adım: Gelişmiş alanı ekleme
 
  biz kullanıyoruz`AppendField()` paragrafa gelişmiş alan ekleme yöntemi.
 

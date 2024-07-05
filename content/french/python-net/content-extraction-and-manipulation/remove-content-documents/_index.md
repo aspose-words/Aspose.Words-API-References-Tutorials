@@ -14,7 +14,7 @@ Vous êtes-vous déjà retrouvé dans une situation où vous deviez supprimer ou
 
 ## Conditions préalables
 
-Avant de nous lancer dans la mise en œuvre, assurez-vous d'avoir mis en place les éléments suivants :
+Avant de nous lancer dans la mise en œuvre, assurez-vous que les éléments suivants sont en place :
 
 - Python installé sur votre système
 - Compréhension de base de la programmation Python

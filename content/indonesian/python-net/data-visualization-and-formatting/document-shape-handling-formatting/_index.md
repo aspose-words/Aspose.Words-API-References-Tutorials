@@ -10,7 +10,7 @@ url: /id/python-net/data-visualization-and-formatting/document-shape-handling-fo
 
 ## Perkenalan
 
-Dokumen modern bukan hanya tentang konten yang dikandungnya; Daya tarik visual mereka memainkan peran penting dalam menarik pembaca. Aspose.Words untuk Python menawarkan perangkat canggih untuk memanipulasi dokumen secara terprogram, memungkinkan Anda membuat tata letak yang menarik secara visual dan sesuai dengan audiens Anda.
+Dokumen modern bukan hanya tentang konten yang dikandungnya; daya tarik visual mereka memainkan peran penting dalam menarik pembaca. Aspose.Words untuk Python menawarkan perangkat canggih untuk memanipulasi dokumen secara terprogram, memungkinkan Anda membuat tata letak yang menarik secara visual dan sesuai dengan audiens Anda.
 
 ## Menyiapkan Lingkungan
 

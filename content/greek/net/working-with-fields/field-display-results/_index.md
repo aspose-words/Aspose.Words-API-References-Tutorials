@@ -61,7 +61,7 @@ Document document = new Document(dataDir + "Miscellaneous fields.docx");
 // Ενημέρωση πεδίων.
 document. UpdateFields();
 
-//Εμφάνιση αποτελεσμάτων πεδίου.
+// Εμφάνιση αποτελεσμάτων πεδίου.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```

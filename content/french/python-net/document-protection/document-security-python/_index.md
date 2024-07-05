@@ -18,7 +18,7 @@ La sécurité des documents fait référence à la pratique consistant à proté
 
 ## 2. Comprendre l'importance de la sécurité des documents
 
-Dans le monde interconnecté d’aujourd’hui, le risque de violations de données et de cyberattaques est plus élevé que jamais. Des documents personnels aux fichiers d’entreprise, toutes les données non protégées pourraient tomber entre de mauvaises mains, entraînant de graves conséquences. La sécurité des documents est essentielle pour les individus comme pour les organisations afin d'éviter les fuites de données et de protéger les informations sensibles contre la compromission.
+Dans le monde interconnecté d’aujourd’hui, le risque de violations de données et de cyberattaques est plus élevé que jamais. Des documents personnels aux fichiers d’entreprise, toutes les données non protégées pourraient tomber entre de mauvaises mains, entraînant de graves conséquences. La sécurité des documents est essentielle pour les individus et les organisations afin d'éviter les fuites de données et de protéger les informations sensibles contre la compromission.
 
 ## 3. Introduction à Aspose.Words pour Python
 

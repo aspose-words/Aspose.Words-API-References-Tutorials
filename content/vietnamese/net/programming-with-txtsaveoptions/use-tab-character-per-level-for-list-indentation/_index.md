@@ -110,7 +110,7 @@ Thiết lập môi trường phát triển của bạn bằng cách thêm các t
  Có, bạn có thể tùy chỉnh số lượng ký tự tab theo cấp độ để thụt lề danh sách bằng cách thay đổi giá trị của`ListIndentation.Count` tài sản ở`TxtSaveOptions` lớp học. Bạn có thể chỉ định số lượng ký tự tab bạn muốn cho mỗi cấp độ thụt lề.
 
 #### Câu hỏi: Tôi có thể sử dụng những ký tự nào khác để thụt lề danh sách với Aspose.Words cho .NET?
- Ngoài các ký tự tab, bạn cũng có thể sử dụng các ký tự khác để thụt lề danh sách với Aspose.Words cho .NET. Bạn có thể thiết lập`ListIndentation.Character` thuộc tính cho bất kỳ ký tự mong muốn nào, chẳng hạn như dấu cách (`' '`), để xác định danh sách.
+ Ngoài các ký tự tab, bạn cũng có thể sử dụng các ký tự khác để thụt lề danh sách với Aspose.Words cho .NET. Bạn có thể thiết lập`ListIndentation.Character` thuộc tính cho bất kỳ ký tự mong muốn nào, chẳng hạn như dấu cách (`' '`), để thụt lề danh sách.
 
 #### Câu hỏi: Aspose.Words for .NET có cung cấp bất kỳ tính năng nào khác để quản lý danh sách không?
 Có, Aspose.Words for .NET cung cấp nhiều tính năng để quản lý danh sách trong tài liệu Word. Bạn có thể tạo danh sách được đánh số hoặc đánh dấu đầu dòng, đặt mức thụt lề, tùy chỉnh kiểu danh sách, thêm mục danh sách, v.v.

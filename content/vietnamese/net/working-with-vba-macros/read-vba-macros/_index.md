@@ -23,7 +23,7 @@ Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Bước 2: Tải tài liệu và đọc macro VBA.
+## Bước 2: Tải tài liệu và đọc macro VBA
 Tiếp theo, chúng ta sẽ tải tài liệu Word và kiểm tra xem nó có chứa dự án VBA hay không. Nếu tài liệu có dự án VBA, chúng tôi sẽ lặp qua tất cả các mô-đun trong dự án và hiển thị mã nguồn cho từng mô-đun.
 
 ```csharp

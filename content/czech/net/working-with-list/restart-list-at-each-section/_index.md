@@ -2,7 +2,7 @@
 title: Seznam restartů v každé sekci
 linktitle: Seznam restartů v každé sekci
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak obnovit číslovaný seznam pro každou sekci v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak obnovit číslovaný seznam pro každou sekci v dokumentu Word pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-list/restart-list-at-each-section/

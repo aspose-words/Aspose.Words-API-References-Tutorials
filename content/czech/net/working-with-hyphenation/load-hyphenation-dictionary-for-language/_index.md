@@ -64,7 +64,7 @@ Neváhejte použít tento kód ve svých vlastních projektech a upravit jej tak
 
 #### Otázka: Kde najdu soubory slabikačního slovníku pro různé jazyky?
 
-Odpověď: Na různých online zdrojích můžete najít soubory sylabizačního slovníku pro různé jazyky. Tyto soubory jsou obvykle ve formátu XML nebo TEX. Slovníky slabikářů s otevřeným zdrojovým kódem pro různé jazyky můžete najít na webových stránkách věnovaných lingvistickým projektům nebo úložištích zdrojového kódu.
+Odpověď: Soubory slovníků slabikářů pro různé jazyky můžete najít na různých online zdrojích. Tyto soubory jsou obvykle ve formátu XML nebo TEX. Na webech věnovaných lingvistickým projektům nebo na úložištích zdrojového kódu můžete najít open source slabikářské slovníky pro různé jazyky.
 
 #### Otázka: Jak mohu použít načtený slabičný slovník na dokument v Aspose.Words?
 
@@ -72,4 +72,4 @@ Odpověď: Chcete-li použít načtený slovník slabikáře na dokument v Aspos
 
 #### Otázka: Jaké jazyky jsou podporovány pro slabikování v Aspose.Words?
 
-Odpověď: Aspose.Words podporuje sylabizaci pro více jazyků včetně angličtiny, francouzštiny, španělštiny, němčiny, italštiny, holandštiny, ruštiny, portugalštiny, švédštiny, norštiny, dánštiny, finštiny, polštiny, češtiny a mnoha dalších. Úplný seznam podporovaných jazyků pro slabikování najdete v dokumentaci Aspose.Words.
+Odpověď: Aspose.Words podporuje slabikování pro více jazyků včetně angličtiny, francouzštiny, španělštiny, němčiny, italštiny, holandštiny, ruštiny, portugalštiny, švédštiny, norštiny, dánštiny, finštiny, polštiny, češtiny a mnoha dalších. Úplný seznam podporovaných jazyků pro slabikování najdete v dokumentaci Aspose.Words.

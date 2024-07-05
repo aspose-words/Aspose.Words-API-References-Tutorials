@@ -146,7 +146,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### 3. Hogyan módosíthatom a könyvjelző egyéb tulajdonságait?
 
- Az Aspose.Words lehetővé teszi a könyvjelzők különféle tulajdonságainak, például szövegének és helyének a kezelését. Utal[API dokumentáció](https://reference.aspose.com/words/net/) részletes útmutatásért.
+ Az Aspose.Words lehetővé teszi a könyvjelző különféle tulajdonságainak, például a szövegének és a helyének kezelését. Utal[API dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.
 
 ### 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 

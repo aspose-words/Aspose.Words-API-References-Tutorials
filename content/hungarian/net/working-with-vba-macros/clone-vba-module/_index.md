@@ -81,7 +81,7 @@ V: Mielőtt klónozhatna egy VBA-modult egy Word-dokumentumból, rendelkeznie ke
 
 #### K: Hogyan lehet beállítani a dokumentumkönyvtárat a kódban?
 
- V: A megadott kódban ki kell cserélni.`"YOUR DOCUMENTS DIRECTORY"` annak a könyvtárnak a megfelelő elérési útjával, ahol a VBA-projektet tartalmazó Word-dokumentum található.
+ V: A megadott kódban ki kell cserélni`"YOUR DOCUMENTS DIRECTORY"` annak a könyvtárnak a megfelelő elérési útjával, ahol a VBA-projektet tartalmazó Word-dokumentum található.
 
 #### K: Hogyan lehet elmenteni a céldokumentumot klónozott VBA-modullal?
 

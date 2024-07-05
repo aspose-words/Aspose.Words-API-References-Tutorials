@@ -44,7 +44,7 @@ builder. MoveTo(para);
 FieldAddressBlock field = (FieldAddressBlock)builder.InsertField(FieldType.FieldAddressBlock, false);
 ```
 
-จากนั้นเรากำหนดค่าคุณสมบัติของฟิลด์บล็อกที่อยู่โดยระบุตัวเลือกที่เหมาะสม เช่น การรวมชื่อประเทศ/ภูมิภาค การจัดรูปแบบที่อยู่ตามประเทศ/ภูมิภาค ชื่อประเทศ/ภูมิภาคที่ยกเว้น รูปแบบชื่อและที่อยู่ และตัวระบุภาษา
+จากนั้นเรากำหนดค่าคุณสมบัติของฟิลด์บล็อกที่อยู่โดยระบุตัวเลือกที่เหมาะสม เช่น การรวมชื่อประเทศ/ภูมิภาค การจัดรูปแบบที่อยู่ตามประเทศ/ภูมิภาค ยกเว้นชื่อประเทศ/ภูมิภาค รูปแบบชื่อและที่อยู่ และตัวระบุภาษา
 
 ```csharp
 field.IncludeCountryOrRegionName = "1";
@@ -75,7 +75,7 @@ builder. MoveTo(para);
 
 FieldAddressBlock field = (FieldAddressBlock) builder.InsertField(FieldType.FieldAddressBlock, false);
 
-// { แอดเดรสบล็อก\c1" }
+// { บล็อกที่อยู่ \\c 1" }
 field.IncludeCountryOrRegionName = "1";
 
 // { บล็อกที่อยู่ \\c 1 \\d" }
@@ -98,7 +98,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### ถาม: ฉันจะปรับแต่งรูปแบบของที่อยู่ทางไปรษณีย์ในเอกสาร Word ด้วย Aspose.Words for .NET ได้อย่างไร
 
- ตอบ: คุณสามารถปรับแต่งรูปแบบของที่อยู่ทางไปรษณีย์ในเอกสาร Word ด้วย Aspose.Words for .NET ได้โดยใช้คุณสมบัติของ`FieldAddressBlock`วัตถุ วัตถุ คุณสามารถตั้งค่าตัวเลือกการจัดรูปแบบ เช่น สไตล์ที่อยู่ ตัวคั่น รายการเสริม ฯลฯ เพื่อให้ได้รูปแบบที่ต้องการ
+ ตอบ: คุณสามารถปรับแต่งรูปแบบของที่อยู่ทางไปรษณีย์ในเอกสาร Word ด้วย Aspose.Words for .NET ได้โดยใช้คุณสมบัติของ`FieldAddressBlock`วัตถุ. คุณสามารถตั้งค่าตัวเลือกการจัดรูปแบบ เช่น สไตล์ที่อยู่ ตัวคั่น รายการเสริม ฯลฯ เพื่อให้ได้รูปแบบที่ต้องการ
 
 #### ถาม: ฉันจะระบุแหล่งข้อมูลสำหรับฟิลด์ที่อยู่ทางไปรษณีย์ใน Aspose.Words สำหรับ .NET ได้อย่างไร
 

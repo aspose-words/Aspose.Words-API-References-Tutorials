@@ -23,7 +23,7 @@ url: /ru/net/working-with-fields/
 | [Вставьте поле слияния с помощью DOM](./insert-merge-field-using-dom/) | Узнайте, как вставлять поля слияния настраиваемых полей в документы Word с помощью Aspose.Words для .NET. |
 | [Вставьте поле блока адреса слияния почты с помощью DOM](./insert-mail-merge-address-block-field-using-dom/) | Узнайте, как вставить поле блока адреса слияния почты в документы Word с помощью Aspose.Words для .NET. |
 | [Вставка FieldIncludeText без построителя документов](./insert-field-include-text-without-document-builder/) | Узнайте, как вставить поле FieldIncludeText в документы Word с помощью Aspose.Words для .NET. |
-| [Вставить поле: нет](./insert-field-none/) | Узнайте, как ввести один AUCUN в документы Word с помощью Aspose.Words для .NET. |
+| [Вставить поле Нет](./insert-field-none/) | Узнайте, как создать чемпион AUCUN в документах Word с Aspose.Words для .NET. |
 | [Вставить поле](./insert-field/) | Узнайте, как вставить поле в документы Word с помощью Aspose.Words для .NET. Персонализируйте свои документы с помощью динамических полей. |
 | [Вставка поля с помощью построителя полей](./insert-field-using-field-builder/) | Узнайте, как вставлять настраиваемые поля в документы Word с помощью Aspose.Words для .NET. |
 | [Вставить поле автора](./insert-author-field/) | Узнайте, как вставить поле AUTHOR в документы Word с помощью Aspose.Words для .NET. Укажите имя автора, чтобы персонализировать ваши документы. |

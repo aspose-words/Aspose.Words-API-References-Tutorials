@@ -46,7 +46,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
      {
          // Implementa qui le tue azioni personalizzate
          // È possibile accedere alle informazioni sulla pagina tramite la proprietà "args.PageIndex".
-         // Puoi anche modificare le opzioni di salvataggio per ciascuna pagina individualmente.
+         // Puoi anche modificare le opzioni di salvataggio per ciascuna pagina individualmente
      }
 }
 ```
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 ## Conclusione
 
-In questo tutorial, abbiamo esplorato la funzionalità di callback di salvataggio della pagina con le opzioni di salvataggio delle immagini Aspose.Words per .NET. Abbiamo imparato come eseguire azioni personalizzate quando si salva ciascuna pagina di un documento come immagine.
+In questo tutorial, abbiamo esplorato la funzionalità di callback di salvataggio della pagina con le opzioni di salvataggio delle immagini Aspose.Words per .NET. Abbiamo imparato come eseguire azioni personalizzate quando si salva ogni pagina di un documento come immagine.
 
 Questa funzione è utile quando si desidera eseguire operazioni specifiche su ciascuna pagina durante la conversione in immagini. È possibile accedere alle informazioni della pagina e utilizzarle per personalizzare le opzioni di backup o eseguire altre elaborazioni specifiche della pagina.
 

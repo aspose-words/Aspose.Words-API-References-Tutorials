@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Шаг 2. Загрузите документ
 
- Загрузите свой документ в Aspose.Words.`Document` Объект Object. Это позволяет вам манипулировать документом программно.
+ Загрузите свой документ в Aspose.Words.`Document` объект. Это позволяет вам манипулировать документом программно.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -29,7 +29,7 @@ builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
 builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
 ```
 
-## 3. lépés: Elemek hozzáadása a listához
+## 3. lépés: Tételek hozzáadása a listához
 
  A listához tételeket a dokumentumgenerátor segítségével tudunk felvenni`Writeln` módszer.
 

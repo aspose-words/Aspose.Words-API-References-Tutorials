@@ -68,7 +68,7 @@ for run in doc.get_child_nodes(doc.is_run, True):
     print("Font Size:", font.size)
 ```
 
-## Gestion des tableaux et des listes
+## Gestion des tables et des listes
 
 Extraction des données du tableau :
 

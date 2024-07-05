@@ -34,7 +34,7 @@ Se till att du har rätt ordboksfil i din datakatalog.
 
 ## Steg 3: Spara det ändrade dokumentet
 
-Spara slutligen det ändrade dokumentet:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
@@ -64,7 +64,7 @@ Använd gärna den här koden i dina egna projekt och modifiera den för att pas
 
 #### F: Var kan jag hitta ordbokfiler för olika språk?
 
-S: Du kan hitta ordbokfiler för olika språk på olika onlineresurser. Dessa filer är vanligtvis i XML- eller TEX-format. Du kan hitta lexikon för öppen källkod för olika språk på webbplatser dedikerade till lingvistiska projekt eller källkodsförråd.
+S: Du kan hitta ordbokfiler för olika språk på olika onlineresurser. Dessa filer är vanligtvis i XML- eller TEX-format. Du kan hitta lexikon för öppen källkod för olika språk på webbplatser dedikerade till lingvistiska projekt eller källkodsarkiv.
 
 #### F: Hur kan jag tillämpa den inlästa stavelseordboken på ett dokument i Aspose.Words?
 
@@ -72,4 +72,4 @@ S: För att tillämpa den laddade ordboken för stavning på ett dokument i Aspo
 
 #### F: Vilka språk stöds för stavning i Aspose.Words?
 
-S: Aspose.Words stöder stavning för flera språk, inklusive engelska, franska, spanska, tyska, italienska, holländska, ryska, portugisiska, svenska, norska, danska, finska, polska, tjeckiska och många fler. Kontrollera Aspose.Words-dokumentationen för hela listan över språk som stöds för stavning.
+S: Aspose.Words stöder stavning för flera språk inklusive engelska, franska, spanska, tyska, italienska, holländska, ryska, portugisiska, svenska, norska, danska, finska, polska, tjeckiska och många fler. Se Aspose.Words-dokumentationen för den fullständiga listan över språk som stöds för stavning.

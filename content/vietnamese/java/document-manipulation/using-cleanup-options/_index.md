@@ -96,7 +96,7 @@ doc.getMailMerge().execute(new String[] { "FullName", "Company", "Address", "Add
 doc.save("WorkingWithCleanupOptions.RemoveUnusedFields.docx");
 ```
 
-Trong ví dụ này, chúng tôi mở một tài liệu có các trường phối, đặt các tùy chọn dọn dẹp để loại bỏ các trường không sử dụng và thực hiện phối thư với dữ liệu. Sau khi hợp nhất, mọi trường không sử dụng sẽ bị xóa khỏi tài liệu.
+Trong ví dụ này, chúng tôi mở tài liệu có các trường phối, đặt tùy chọn dọn dẹp để xóa các trường không sử dụng và thực hiện phối thư với dữ liệu. Sau khi hợp nhất, mọi trường không sử dụng sẽ bị xóa khỏi tài liệu.
 
 ## Bước 5: Xóa các trường chứa
 
@@ -158,7 +158,7 @@ Tùy chọn dọn dẹp trong Aspose.Words cho Java là các cài đặt cho ph�
 
 ###  Điều gì xảy ra khi tôi đặt`REMOVE_CONTAINING_FIELDS` option?
 
- Thiết lập`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` Tùy chọn này sẽ xóa toàn bộ trường phối, bao gồm cả đoạn chứa nó, khỏi tài liệu trong quá trình phối thư. Điều này hữu ích khi bạn muốn loại bỏ các trường hợp nhất và văn bản liên quan của chúng.
+ Thiết lập`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` tùy chọn sẽ xóa toàn bộ trường phối, bao gồm cả đoạn chứa nó, khỏi tài liệu trong quá trình phối thư. Điều này hữu ích khi bạn muốn loại bỏ các trường hợp nhất và văn bản liên quan của chúng.
 
 ### Làm cách nào để xóa các trường hợp nhất không sử dụng khỏi tài liệu của tôi?
 

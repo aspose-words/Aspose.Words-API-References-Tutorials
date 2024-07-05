@@ -62,7 +62,7 @@ doc.Protect(ProtectionType.NoProtection);
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 ```
 
-Bằng cách làm theo các bước này, bạn có thể dễ dàng loại bỏ hạn chế chỉ đọc khỏi tài liệu Word bằng Aspose.Words cho .NET.
+Bằng cách làm theo các bước này, bạn có thể dễ dàng loại bỏ hạn chế chỉ đọc khỏi tài liệu Word bằng Aspose.Words for .NET.
 
 
 ## Phần kết luận

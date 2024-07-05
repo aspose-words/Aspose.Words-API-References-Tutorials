@@ -111,7 +111,7 @@ A: Aspose.Words for .NET의 서명 확인 기능은 DOCX 파일 형식을 사용
 
 #### Q: Aspose.Words for .NET을 사용하여 Word 문서에 있는 디지털 서명의 인증서 세부 정보에 어떻게 액세스할 수 있나요?
 
- A: .NET용 Aspose.Words를 사용하여 Word 문서에서 디지털 서명의 인증서 세부 정보에 액세스하려면`CertificateHolder` 의 재산`DigitalSignature` 물체. 로부터`CertificateHolder` 개체 이름, 발급자 이름 등 인증서의 다양한 세부 정보를 검색할 수 있습니다.
+ A: Aspose.Words for .NET을 사용하여 Word 문서에 있는 디지털 서명의 인증서 세부 정보에 액세스하려면`CertificateHolder` 의 재산`DigitalSignature` 물체. 로부터`CertificateHolder` 개체 이름, 발급자 이름 등 인증서의 다양한 세부 정보를 검색할 수 있습니다.
 
 #### Q: Aspose.Words for .NET을 사용하여 Word 문서에서 디지털 서명의 표시 또는 처리를 사용자 정의할 수 있습니까?
 

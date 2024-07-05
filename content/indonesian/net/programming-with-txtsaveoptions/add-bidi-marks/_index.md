@@ -12,7 +12,7 @@ Aspose.Words untuk .NET adalah perpustakaan yang kuat untuk membuat, mengedit, d
 
 ## Memahami perpustakaan Aspose.Words
 
-Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk menambahkan tanda Bidi.
+Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk menambahkan tanda Bidi.
 
 ## Membuat dokumen dan menambahkan konten
 
@@ -86,7 +86,7 @@ Anda dapat menambahkan tanda Bidi ke dokumen Word dengan mengikuti langkah-langk
 
  Simpan dokumen yang bertanda Bidi dengan menggunakan`Save` metode`Document` kelas.
 
-#### Q: Apakah Aspose.Words mendukung banyak bahasa untuk menambahkan tanda Bidi?
+#### T: Apakah Aspose.Words mendukung banyak bahasa untuk menambahkan tanda Bidi?
 Ya, Aspose.Words mendukung banyak bahasa untuk menambahkan tanda Bidi. Anda dapat menambahkan tanda Bidi ke teks dalam berbagai bahasa, seperti Inggris, Ibrani, dan Arab, menggunakan Aspose.Words untuk .NET.
 
 #### Q: Apakah ada opsi tambahan untuk menyimpan dokumen bertanda Bidi?

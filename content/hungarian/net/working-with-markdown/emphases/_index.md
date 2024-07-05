@@ -113,11 +113,11 @@ V: A Markdown használatával szöveg kiemeléséhez egyszerűen vegye körül a
 
 #### K: Kombinálhatunk-e különböző kiemeléseket ugyanabban a szövegben?
 
- V: Igen, lehetséges a különböző kiemelések kombinálása ugyanabban a szövegben. Például félkövér és dőlt betűvel szedhet egy szót mindkettő használatával`**` és`*` a szó körül.
+ V: Igen, lehetséges a különböző kiemelések kombinálása ugyanabban a szövegben. Például félkövér és dőlt betűvel szedhet egy szót, ha mindkettőt használja`**` és`*` a szó körül.
 
 #### K: Milyen kiemelési lehetőségek állnak rendelkezésre a Markdown alkalmazásban?
 
-V: A Markdownban elérhető kiemelési lehetőségek dőlt betűvel vannak szedve (`*` vagy`_`), félkövér (`**` vagy`__`), és áthúzva (`~~`).
+V: A Markdownban elérhető kiemelési lehetőségek dőlt (`*` vagy`_`), félkövér (`**` vagy`__`), és áthúzva (`~~`).
 
 #### K: Hogyan kezelhetem azokat az eseteket, amikor a szöveg a Markdown által kiemelésre használt speciális karaktereket tartalmaz?
 

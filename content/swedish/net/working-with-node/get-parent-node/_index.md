@@ -25,7 +25,7 @@ using Aspose.Words.Nodes;
 Document doc = new Document();
 ```
 
-## Steg 3: Gå till föräldranoden
+## Steg 3: Gå till föräldernoden
 För att få föräldernoden för en specifik nod måste vi först komma åt den noden. I det här exemplet kommer vi åt dokumentets första underordnade nod, som vanligtvis är ett avsnitt.
 
 ```csharp

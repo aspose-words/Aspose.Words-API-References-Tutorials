@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Aspose.Words가 다음 폴더에서 글꼴을 검색하도록 지시하는 새 폴더 소스를 추가합니다.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// 기존 글꼴 소스 목록에 글꼴이 포함된 사용자 정의 폴더를 추가합니다.
+//기존 글꼴 소스 목록에 글꼴이 포함된 사용자 정의 폴더를 추가합니다.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ A: 예, 특정 기준을 사용하여 Aspose.Words에서 사용 가능한 글꼴
 
 #### Q: 내 Word 문서에서 사용 가능한 글꼴 목록을 어떻게 사용할 수 있나요?
 
- A: Word 문서에서 사용할 수 있는 글꼴 목록을 사용하려면 목록을 탐색하고 해당 글꼴의 메서드와 속성을 사용하여 적절한 글꼴을 선택할 수 있습니다.`FontSettings` Aspose.Words의 클래스입니다.
+A: Word 문서에서 사용할 수 있는 글꼴 목록을 사용하려면 목록을 탐색하고 해당 글꼴의 메서드와 속성을 사용하여 적절한 글꼴을 선택할 수 있습니다.`FontSettings` Aspose.Words의 클래스입니다.

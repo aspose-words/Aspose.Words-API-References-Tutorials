@@ -2,7 +2,7 @@
 title: Redakcja dokumentów i ochrona danych
 linktitle: Redakcja dokumentów i ochrona danych
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak zabezpieczyć swoje dokumenty i redagować poufne dane za pomocą Aspose.Words dla Java. Przewodnik krok po kroku z kodem źródłowym.
+description: Dowiedz się, jak zabezpieczyć swoje dokumenty i redagować wrażliwe dane za pomocą Aspose.Words dla Java. Przewodnik krok po kroku z kodem źródłowym.
 type: docs
 weight: 14
 url: /pl/java/document-security/document-redaction-data-protection/

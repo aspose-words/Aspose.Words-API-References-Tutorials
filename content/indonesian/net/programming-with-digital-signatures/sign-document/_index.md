@@ -82,7 +82,7 @@ Pastikan Anda memberikan jalur yang benar untuk dokumen sumber dan dokumen yang 
 
 J: Penandatanganan dokumen berfungsi sebagai metode untuk memastikan keaslian dan integritas suatu dokumen. Dengan menandatangani dokumen secara digital, Anda dapat memberikan bukti asal-usulnya, memverifikasi bahwa isinya tidak diubah, dan menetapkan non-penyangkalan. Penandatanganan dokumen biasanya digunakan untuk dokumen hukum, keuangan, dan sensitif.
 
-#### T: Dapatkah saya menggunakan sertifikat apa pun untuk penandatanganan dokumen di Aspose.Words untuk .NET?
+#### T: Bisakah saya menggunakan sertifikat apa pun untuk penandatanganan dokumen di Aspose.Words untuk .NET?
 
 J: Untuk penandatanganan dokumen di Aspose.Words untuk .NET, Anda perlu menggunakan sertifikat X.509 yang valid. Sertifikat ini dapat diperoleh dari otoritas sertifikat (CA) tepercaya atau sertifikat yang ditandatangani sendiri dapat digunakan untuk tujuan pengujian.
 

@@ -39,7 +39,7 @@ System.out.println("Processing document: " + fileName + "." + extensionName);
 Document doc = new Document(docName);
 ```
 
-- Мы извлекаем базовое имя и расширение из входного документа.
+- Мы извлекаем базовое имя и расширение входного документа.
 - Мы загружаем документ с помощью Aspose.Words для Java.
 
 ## 5. Разделение документов шаг за шагом
@@ -60,7 +60,7 @@ DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 
  Мы инициализируем`DocumentPageSplitter` объект с нашим загруженным документом. Этот класс предоставляется Aspose.Words для Java и помогает нам разделить документ на страницы.
 
-### 5.3. Сохраняйте каждую страницу
+### 5.3. Сохранение каждой страницы
 
 ```java
 for (int page = 1; page <= doc.getPageCount(); page++) {
@@ -86,7 +86,7 @@ class DocumentPageSplitter
 private PageNumberFinder pageNumberFinder;
 /// <сводка>
 /// Инициализирует новый экземпляр класса <see cref="DocumentPageSplitter"/>.
-/// Этот метод разбивает документ на разделы, так что каждая страница начинается и заканчивается в граничном разделе.
+/// Этот метод разбивает документ на разделы, так что каждая страница начинается и заканчивается на границе раздела.
 /// После этого документ не рекомендуется изменять.
 /// </сводка>
 /// <param name="source">Исходный документ</param>
@@ -98,13 +98,13 @@ private Document getDocument() {
 	return pageNumberFinder.getDocument();
 }
 /// <сводка>
-///Получает документ страницы.
+/// Получает документ страницы.
 /// </сводка>
 /// <param name="pageIndex">
-/// Индекс страницы на основе 1.
-///</парам>
+/// индекс страницы на основе 1.
+/// </парам>
 /// <возвращается>
-/// <см. Cref="Документ"/>.
+/// <см. cref="Документ"/>.
 /// </возврат>
 public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
@@ -114,12 +114,12 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 /// </сводка>
 //<param name="startIndex">
 /// Индекс стартовой страницы на основе 1.
-///</парам>
+/// </парам>
 /// <param name="endIndex">
 /// Индекс конечной страницы на основе 1.
-///</парам>
+/// </парам>
 /// <возвращается>
-/// <см. Cref="Документ"/>.
+/// <см. cref="Документ"/>.
 /// </возврат>
 public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exception {
 	Document result = (Document) getDocument().deepClone(false);
@@ -158,8 +158,8 @@ public Document getDocument()
 /// Получает индекс страницы, отсчитываемый от 1, с которой начинается узел.
 /// </сводка>
 /// <имя параметра="узел">
-///Узел.
-///</парам>
+/// Узел.
+/// </парам>
 /// <возвращается>
 /// Индекс страницы.
 /// </возврат>
@@ -172,8 +172,8 @@ public int getPage(Node node) throws Exception {
 /// Получает индекс страницы, отсчитываемый от 1, на которой заканчивается узел.
 /// </сводка>
 /// <имя параметра="узел">
-///Узел.
-///</парам>
+/// Узел.
+/// </парам>
 /// <возвращается>
 /// Индекс страницы.
 /// </возврат>
@@ -186,8 +186,8 @@ public int getPageEnd(Node node) throws Exception {
 //Возвращает количество страниц, охватываемых указанным узлом. Возвращает 1, если узел содержится на одной странице.
 /// </сводка>
 /// <имя параметра="узел">
-///Узел.
-///</парам>
+/// Узел.
+/// </парам>
 /// <возвращается>
 /// Индекс страницы.
 /// </возврат>
@@ -195,19 +195,19 @@ public int pageSpan(Node node) throws Exception {
 	return getPageEnd(node) - getPage(node) + 1;
 }
 /// <сводка>
-///Возвращает список узлов, содержащихся в любом месте указанной страницы или страниц, соответствующих указанному типу узла.
+/// Возвращает список узлов, содержащихся в любом месте указанной страницы или страниц, соответствующих указанному типу узла.
 /// </сводка>
 /// <param name="startPage">
 /// Стартовая страница.
-///</парам>
+/// </парам>
 /// <param name="endPage">
-///Конечная страница.
-///</парам>
+/// Конечная страница.
+/// </парам>
 /// <param name="nodeType">
-///Тип узла.
-///</парам>
+/// Тип узла.
+/// </парам>
 /// <возвращается>
-///The <see cref="IList{T}"/>.
+/// <see cref="IList{T}"/>.
 /// </возврат>
 public ArrayList<Node> retrieveAllNodesOnPages(int startPage, int endPage, /*NodeType*/int nodeType) throws Exception
 {
@@ -242,7 +242,7 @@ public ArrayList<Node> retrieveAllNodesOnPages(int startPage, int endPage, /*Nod
 }
 /// <сводка>
 /// Разделяет узлы, которые появляются на двух или более страницах, на отдельные узлы, чтобы они по-прежнему выглядели одинаково.
-///но больше не появляются на странице.
+/// но больше не появляются на странице.
 /// </сводка>
 public void splitNodesAcrossPages() throws Exception
 {
@@ -261,14 +261,14 @@ public void splitNodesAcrossPages() throws Exception
 /// Это вызывается <see cref="SectionSplitter"/> для обновления номеров страниц разделенных узлов.
 /// </сводка>
 /// <имя параметра="узел">
-///Узел.
-///</парам>
+/// Узел.
+/// </парам>
 /// <param name="startPage">
 /// Стартовая страница.
-///</парам>
+/// </парам>
 /// <param name="endPage">
-///Конечная страница.
-///</парам>
+/// Конечная страница.
+/// </парам>
 void addPageNumbersForNode(Node node, int startPage, int endPage)
 {
 	if (startPage > 0)
@@ -344,7 +344,7 @@ private static String[] reverseWord(String str) {
 }
 /// <сводка>
 /// Разбивает текст указанного прогона на два прогона.
-///Вставляет новый запуск сразу после указанного запуска.
+/// Вставляет новый запуск сразу после указанного запуска.
 /// </сводка>
 private void splitRun(Run run, int position)
 {
@@ -373,7 +373,7 @@ public static PageNumberFinder create(Document document) throws Exception
 }
 }
 /// <сводка>
-/// Разделяет документ на несколько разделов, так что каждая страница начинается и заканчивается в граничном разделе.
+/// Разделяет документ на несколько разделов, так что каждая страница начинается и заканчивается на границе раздела.
 /// </сводка>
 class SectionSplitter extends DocumentVisitor
 {
@@ -458,7 +458,7 @@ public int visitParagraphEnd(Paragraph paragraph) throws Exception {
 	for (Node cloneNode : splitComposite(paragraph))
 	{
 		Paragraph clonePara = (Paragraph) cloneNode;
-		// Удалите нумерацию списка из клонированного абзаца, но оставьте индекс прежним.
+		// Удалите нумерацию списка из клонированного абзаца, но оставьте отступ прежним.
 		// поскольку абзац должен быть частью предыдущего пункта.
 		if (paragraph.isListItem())
 		{

@@ -55,7 +55,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 // Tieni presente che questa impostazione sovrascriverà qualsiasi origine di caratteri predefinita ricercata per impostazione predefinita. Ora verranno cercate solo queste cartelle
-// caratteri durante il rendering o l'incorporamento di caratteri. Per aggiungere una fonte di carattere aggiuntiva mantenendo le fonti di carattere di sistema, utilizzare sia FontSettings.GetFontSources che
+// caratteri durante il rendering o l'incorporamento di caratteri. Per aggiungere un'origine di caratteri aggiuntiva mantenendo le origini di caratteri di sistema, utilizzare sia FontSettings.GetFontSources che
 // FontSettings.SetFontSources invece.
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 doc.FontSettings = fontSettings;

@@ -2,98 +2,139 @@
 title: انطباق على الشبكة في مستند Word
 linktitle: انطباق على الشبكة في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لشرح كود مصدر C# الخاص بميزة Snap to Grid في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية تمكين Snap to Grid في مستندات Word باستخدام Aspose.Words لـ .NET. يغطي هذا البرنامج التعليمي التفصيلي المتطلبات الأساسية، ودليل خطوة بخطوة، والأسئلة الشائعة.
 type: docs
 weight: 10
 url: /ar/net/document-formatting/snap-to-grid/
 ---
-في هذا البرنامج التعليمي، سنرشدك إلى كيفية استخدام ميزة Snap to Grid في مستند Word مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم الكود المصدري وتطبيق التغييرات.
+## مقدمة
 
-## الخطوة 1: إنشاء وتكوين المستند
+عند العمل مع مستندات Word، يعد الحفاظ على تخطيط متسق ومنظم أمرًا بالغ الأهمية، خاصة عند التعامل مع التنسيق المعقد أو المحتوى متعدد اللغات. إحدى الميزات المفيدة التي يمكن أن تساعد في تحقيق ذلك هي وظيفة "Snap to Grid". في هذا البرنامج التعليمي، سنتعمق في كيفية تمكين Snap to Grid واستخدامه في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
 
-للبدء، قم بإنشاء مستند جديد وكائن DocumentBuilder مرتبط. إليك الطريقة:
+## المتطلبات الأساسية
+
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
+
+-  Aspose.Words لمكتبة .NET: يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
+- بيئة التطوير: Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة مع .NET.
+- المعرفة الأساسية بـ C#: إن فهم أساسيات برمجة C# سيساعدك على متابعة الأمثلة.
+-  Aspose License: بينما يمكن الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/)، فإن استخدام الترخيص الكامل سيضمن الوصول إلى جميع الميزات دون قيود.
+
+## استيراد مساحات الأسماء
+
+للبدء، تحتاج إلى استيراد مساحات الأسماء الضرورية. يتيح لك هذا استخدام وظائف مكتبة Aspose.Words في مشروعك.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System;
+```
+
+دعنا نحلل عملية تمكين Snap to Grid في مستند Word خطوة بخطوة. ستتضمن كل خطوة عنوانًا وشرحًا تفصيليًا.
+
+## الخطوة 1: قم بإعداد مشروعك
+
+أولاً، تحتاج إلى إعداد مشروع .NET الخاص بك وتضمين مكتبة Aspose.Words.
+
+إعداد المشروع
+
+1. إنشاء مشروع جديد:
+   - افتح فيجوال ستوديو.
+   - قم بإنشاء مشروع جديد لتطبيق Console (.NET Framework).
+
+2. تثبيت Aspose.Words:
+   - افتح مدير حزم NuGet (الأدوات > مدير حزم NuGet > إدارة حزم NuGet للحل).
+   - ابحث عن "Aspose.Words" وقم بتثبيته.
 
 ```csharp
 // المسار إلى دليل المستندات.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ يقوم هذا السطر بإعداد الدليل حيث سيتم حفظ المستندات الخاصة بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى الدليل الخاص بك.
+
+## الخطوة 2: تهيئة المستند و DocumentBuilder
+
+ بعد ذلك، تحتاج إلى إنشاء مستند Word جديد وتهيئة الملف`DocumentBuilder`فئة، مما يساعد في بناء الوثيقة.
+
+إنشاء مستند جديد
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: محاذاة الشبكة
+- `Document doc = new Document();` يقوم بإنشاء مستند Word جديد.
+- `DocumentBuilder builder = new DocumentBuilder(doc);` تهيئة DocumentBuilder بالمستند الذي تم إنشاؤه.
 
-سنقوم الآن بتطبيق محاذاة الشبكة على فقرة معينة والخط المستخدم في الفقرة. إليك الطريقة:
+## الخطوة 3: تمكين Snap to Grid للفقرات
+
+الآن، دعنا نقوم بتمكين Snap to Grid لفقرة داخل المستند الخاص بك.
+
+تحسين تخطيط الفقرة
 
 ```csharp
-// تمكين محاذاة الشبكة للفقرة
-Paragraph by = doc.FirstSection.Body.FirstParagraph;
+// قم بتحسين التخطيط عند الكتابة بالأحرف الآسيوية.
+Paragraph par = doc.FirstSection.Body.FirstParagraph;
 par.ParagraphFormat.SnapToGrid = true;
+```
 
-// كتابة النص في الفقرة
-builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" +
-                 "tempor incident ut labore et dolore magna aliqua.");
+- `Paragraph par = doc.FirstSection.Body.FirstParagraph;` استرداد الفقرة الأولى من الوثيقة.
+- `par.ParagraphFormat.SnapToGrid = true;` لتمكين ميزة Snap to Grid للفقرة، مما يضمن محاذاة النص مع الشبكة.
 
-// تمكين محاذاة الشبكة للخط المستخدم في الفقرة
+## الخطوة 4: إضافة محتوى إلى المستند
+
+دعونا نضيف بعض المحتوى النصي إلى المستند لنرى كيف تعمل ميزة Snap to Grid عمليًا.
+
+كتابة النص
+
+```csharp
+builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+```
+
+- `builder.Writeln("Lorem ipsum dolor sit amet...");` يكتب النص المحدد في المستند، مع تطبيق الإعداد Snap to Grid.
+
+## الخطوة 5: تمكين Snap to Grid للخطوط
+
+بالإضافة إلى ذلك، يمكنك تمكين Snap to Grid للخطوط الموجودة في الفقرة للحفاظ على محاذاة الأحرف المتسقة.
+
+إعداد خط Snap على الشبكة
+
+```csharp
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-## الخطوة 3: حفظ الوثيقة
+- `par.Runs[0].Font.SnapToGrid = true;`يضمن محاذاة الخط المستخدم في الفقرة مع الشبكة.
 
- بعد إدراج حقل نموذج إدخال النص، احفظ المستند في الموقع المطلوب باستخدام الزر`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+## الخطوة 6: احفظ المستند
+
+وأخيرًا، احفظ المستند في الدليل المحدد.
+
+حفظ الوثيقة
 
 ```csharp
 doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لـ Snap To Grid باستخدام Aspose.Words لـ .NET
-
-فيما يلي الكود المصدري الكامل لميزة Snap to Grid مع Aspose.Words for .NET:
-
-```csharp
-
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// قم بتحسين التخطيط عند الكتابة بالأحرف الآسيوية.
-	Paragraph par = doc.FirstSection.Body.FirstParagraph;
-	par.ParagraphFormat.SnapToGrid = true;
-
-	builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod " +
-					"tempor incididunt ut labore et dolore magna aliqua.");
-	
-	par.Runs[0].Font.SnapToGrid = true;
-
-	doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
-
-```
-
-باستخدام هذا الرمز، ستتمكن من محاذاة النص الخاص بك مع الشبكة وتحسين مظهر مستندك باستخدام Aspose.Words for .NET.
-
+- `doc.Save(dataDir + "Paragraph.SnapToGrid.docx");` يحفظ المستند بالاسم المحدد في الدليل المعين.
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، استكشفنا عملية استخدام ميزة Snap to Grid في مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات الموضحة، يمكنك تمكين محاذاة الشبكة للفقرات والخطوط، مما يضمن تخطيط مستند جذابًا ومنظمًا بشكل جيد.
+باتباع هذه الخطوات، تكون قد نجحت في تمكين Snap to Grid في مستند Word باستخدام Aspose.Words for .NET. تساعد هذه الميزة في الحفاظ على تخطيط أنيق ومنظم، وتكون مفيدة بشكل خاص عند التعامل مع هياكل المستندات المعقدة أو المحتوى متعدد اللغات.
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: ما هو Snap to Grid في مستند Word؟
+### ما هي ميزة Snap to Grid؟
+يقوم Snap to Grid بمحاذاة النص والعناصر مع شبكة محددة مسبقًا، مما يضمن تنسيقًا متسقًا ومنظمًا للمستندات.
 
-ج: إن Snap to Grid عبارة عن ميزة في مستندات Word تعمل على محاذاة الكائنات، مثل النصوص والصور، إلى نظام الشبكة. ويضمن ذلك تحديد موضع دقيق ومحاذاة أنيقة، وهو أمر مفيد بشكل خاص عند التعامل مع التخطيطات المعقدة أو الأحرف الآسيوية.
+### هل يمكنني استخدام Snap to Grid لأقسام معينة فقط؟
+نعم، يمكنك تمكين Snap to Grid لفقرات أو أقسام معينة داخل المستند.
 
-#### س: كيف يعمل Snap to Grid على تحسين مظهر المستند؟
+### هل الترخيص مطلوب لاستخدام Aspose.Words؟
+نعم، بينما يمكنك استخدام ترخيص مؤقت للتقييم، فمن المستحسن الحصول على ترخيص كامل للوصول الكامل.
 
-ج: يعمل Snap to Grid على تحسين مظهر المستند عن طريق الحفاظ على محاذاة متسقة للكائنات. فهو يمنع النص والعناصر الأخرى من الظهور بشكل غير صحيح أو متداخل، مما يؤدي إلى تخطيط احترافي ومصقول.
+### هل يؤثر Snap to Grid على أداء المستند؟
+لا، لا يؤثر تمكين Snap to Grid بشكل كبير على أداء المستند.
 
-#### س: هل يمكنني تطبيق Snap to Grid على فقرات أو خطوط معينة في المستند الخاص بي؟
-
- ج: نعم، يمكنك تطبيق Snap to Grid على فقرات أو خطوط محددة في مستندك. من خلال تمكين`ParagraphFormat.SnapToGrid` و`Font.SnapToGrid` الخصائص، يمكنك التحكم في محاذاة الشبكة على أساس كل فقرة أو لكل خط.
-
-#### س: هل Aspose.Words for .NET هو الحل الوحيد لـ Snap to Grid في مستندات Word؟
-
-ج: يعد Aspose.Words for .NET أحد الحلول المتاحة لتنفيذ Snap to Grid في مستندات Word. توجد طرق وأدوات أخرى، لكن Aspose.Words for .NET يوفر واجهات برمجة تطبيقات وميزات قوية للعمل مع مستندات Word برمجيًا.
-
-#### س: هل يمكنني استخدام Aspose.Words لـ .NET للعمل مع ميزات المستندات الأخرى؟
-
-ج: نعم، يقدم Aspose.Words for .NET نطاقًا واسعًا من الميزات للعمل مع مستندات Word. يتضمن وظائف لمعالجة النص وتخطيط الصفحة والجداول والصور والمزيد. يمكنك إنشاء مستندات Word وتعديلها وتحويلها باستخدام Aspose.Words لـ .NET.
+### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words لـ .NET؟
+ قم بزيارة[توثيق](https://reference.aspose.com/words/net/)للحصول على معلومات وأمثلة مفصلة.

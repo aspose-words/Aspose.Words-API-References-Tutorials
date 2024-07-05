@@ -2,97 +2,121 @@
 title: Vergelijkingsdoel in Word-document
 linktitle: Vergelijkingsdoel in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer de functie Doel vergelijken in Word-documenten van Aspose.Words voor .NET waarmee u documenten kunt vergelijken en een nieuw document kunt genereren met de aangebrachte wijzigingen.
+description: Vergelijk moeiteloos Word-documenten met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. Bespaar tijd en verbeter de nauwkeurigheid bij documentvergelijking.
 type: docs
 weight: 10
 url: /nl/net/compare-documents/comparison-target/
 ---
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, die gebruikmaakt van het vergelijkingsdoel in de Word-documentfunctionaliteit van Aspose.Words voor .NET.
+## Invoering
 
-## Stap 1: Introductie
+Hallo daar! Heb je ooit twee versies van een Word-document vergeleken en elke kleine wijziging handmatig bijgehouden? Het is als zoeken naar een speld in een hooiberg, toch? Nou, wat als ik je vertelde dat er een supereenvoudige manier is om het te doen met Aspose.Words voor .NET? Dat is juist! Met deze krachtige bibliotheek kunt u Word-documenten in een handomdraai vergelijken. Vandaag ga ik je stap voor stap door het proces leiden. Klaar om een documentvergelijkingswizard te worden? Laten we erin duiken!
 
-Met de doelvergelijkingsfunctie van Aspose.Words voor .NET kunt u twee documenten vergelijken en een nieuw document genereren met de wijzigingen die in het doeldocument zijn aangebracht. Dit kan handig zijn voor het bijhouden van wijzigingen tussen verschillende versies van een document.
+## Vereisten
 
-## Stap 2: De omgeving instellen
+Voordat we dieper ingaan op de kern van de zaak, moeten we ervoor zorgen dat u alles heeft wat u nodig heeft om aan de slag te gaan:
 
-Voordat u begint, moet u uw ontwikkelomgeving instellen om met Aspose.Words voor .NET te werken. Zorg ervoor dat de Aspose.Words-bibliotheek is geïnstalleerd en dat u over een geschikt C#-project beschikt waarin u de code kunt insluiten.
+1.  Aspose.Words voor .NET: je hebt deze bibliotheek nodig. Als je het nog niet hebt, pak het dan uit[hier](https://releases.aspose.com/words/net/).
+2.  Een licentie: je hebt een geldige licentie nodig om het volledige potentieel van Aspose.Words te benutten. Je kunt er een kopen[hier](https://purchase.aspose.com/buy) of vraag een tijdelijke licentie aan[hier](https://purchase.aspose.com/temporary-license/).
+3. Ontwikkelomgeving: Visual Studio of een andere .NET-compatibele IDE.
+4. Basiskennis van C#: Maak je geen zorgen, je hoeft geen professional te zijn, een beetje basiskennis is voldoende.
 
-## Stap 3: Voeg de vereiste assemblages toe
+## Naamruimten importeren
 
-Als u de vergelijkingsdoelfunctie van Aspose.Words voor .NET wilt gebruiken, moet u de benodigde samenstellingen aan uw project toevoegen. Zorg ervoor dat u de juiste verwijzingen naar Aspose.Words in uw project hebt.
+Allereerst moet u de benodigde naamruimten importeren. Dit is een soort backstagecrew die ervoor zorgt dat alles soepel verloopt.
 
 ```csharp
+using System;
 using Aspose.Words;
+using Aspose.Words.Compare;
 ```
 
-## Stap 4: Documentinitialisatie
+Oké, laten we nu naar het spannende gedeelte gaan: de stapsgewijze handleiding!
 
-In deze stap initialiseren we twee documenten ter vergelijking. U moet het mappad opgeven waar uw documenten zich bevinden, evenals de naam van het brondocument.
+## Stap 1: Stel uw project in
+
+Laten we ons project klaarmaken. Start uw ontwikkelomgeving en maak een nieuw C#-project. Noem het hoe je maar wilt – "DocumentComparison" klinkt goed, nietwaar?
 
 ```csharp
-// Pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+// Maak een nieuw C#-project in Visual Studio
+```
 
-// Initialisatie van document A om te vergelijken.
+## Stap 2: Installeer Aspose.Words voor .NET
+
+Vervolgens moet u Aspose.Words aan uw project toevoegen. U kunt dit doen via NuGet Package Manager. Zoek gewoon naar Aspose.Words en installeer het. Makkelijk!
+
+```bash
+Install-Package Aspose.Words
+```
+
+## Stap 3: Laad uw documenten
+
+Oké, tijd om de documenten te laden die je wilt vergelijken. U hebt de paden naar deze documenten nodig. Laten we aannemen dat u twee documenten heeft:`DocumentA.docx` En`DocumentB.docx`.
+
+```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document docA = new Document(dataDir + "DocumentA.docx");
+Document docB = new Document(dataDir + "DocumentB.docx");
+```
 
-// Kloon document A om een identieke kopie van document B te maken.
+## Stap 4: Kloon het document
+
+Klonen is hetzelfde als het maken van een identieke tweeling van uw document. Deze stap zorgt ervoor dat u een reservekopie heeft die u kunt vergelijken met het origineel.
+
+```csharp
 Document docB = docA.Clone();
 ```
 
-## Stap 5: Vergelijkingsopties configureren
+## Stap 5: Vergelijkingsopties instellen
 
-In deze stap zullen we de vergelijkingsopties configureren om het gedrag van de vergelijking te specificeren. Opties omvatten de mogelijkheid om de opmaak te negeren, evenals het vergelijkingsdoel, de optie "Wijzigingen weergeven in" in het dialoogvenster "Documenten vergelijken" van Microsoft Word.
+Laten we nu de vergelijkingsopties configureren. Wilt u de opmaak negeren? Misschien bent u alleen geïnteresseerd in inhoudelijke wijzigingen. Zo kun je het instellen:
 
 ```csharp
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
+CompareOptions options = new CompareOptions
+{
+    IgnoreFormatting = true,
+    Target = ComparisonTargetType.New
+};
 ```
 
-## Stap 6: Documentvergelijking
+## Stap 6: Vergelijk de documenten
 
-Nu gaan we de documenten vergelijken en het resultaat in een nieuw document genereren.
+En nu, het moment waar we allemaal op hebben gewacht: het vergelijken van de documenten! Dit is waar de magie gebeurt. Aspose.Words vergelijkt de documenten en benadrukt de verschillen.
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
- De`Compare`methode vergelijkt document A met document B en slaat de wijzigingen in document A op. U kunt ter referentie de gebruikersnaam en de vergelijkingsdatum opgeven.
+## Stap 7: Sla het vergeleken document op
 
-### Voorbeeldbroncode voor Compare Target met Aspose.Words voor .NET
-
+Sla ten slotte het vergeleken document op om de wijzigingen gemarkeerd te zien. Deze stap is alsof u uw werk in een nette verpakking verpakt.
 
 ```csharp
-            
-Document docA = new Document(MyDir + "Document.docx");
-Document docB = docA.Clone();
-
-// Heeft betrekking op de Microsoft Word-optie 'Wijzigingen weergeven in' in het dialoogvenster 'Documenten vergelijken'.
-CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
-
-docA.Compare(docB, "user", DateTime.Now, options);
-            
-        
+docA.Save(dataDir + "ComparedDocument.docx");
 ```
 
 ## Conclusie
 
-In dit artikel hebben we de diff-doelfunctie van Aspose.Words voor .NET onderzocht. Met deze functie kunt u twee documenten vergelijken en een nieuw document genereren met de aangebrachte wijzigingen. U kunt deze kennis gebruiken om wijzigingen tussen verschillende versies van uw documenten bij te houden.
+Daar heb je het: een eenvoudige en effectieve manier om Word-documenten te vergelijken met Aspose.Words voor .NET! Geen handmatige vergelijkingen meer, geen kopzorgen meer. Met slechts een paar regels code kunt u verschillen benadrukken en u concentreren op wat er echt toe doet. Dus ga je gang, probeer het eens en kijk hoeveel tijd je bespaart.
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is het doel van het gebruik van Comparison Target in Aspose.Words voor .NET?
+### Kan ik documenten met verschillende formaten vergelijken met Aspose.Words?
 
-A: Met Vergelijkingsdoel in Aspose.Words voor .NET kunt u twee documenten vergelijken en een nieuw document genereren met de wijzigingen die in het doeldocument zijn aangebracht. Deze functie is handig voor het bijhouden van wijzigingen tussen verschillende versies van een document en het visualiseren van de verschillen in een afzonderlijk document.
+Ja, Aspose.Words kan documenten met verschillende formaten naadloos verwerken.
 
-#### Vraag: Hoe gebruik ik Comparison Target in Aspose.Words voor .NET?
+### Heb ik een licentie nodig om Aspose.Words te gebruiken?
 
-A: Volg deze stappen om Comparison Target in Aspose.Words voor .NET te gebruiken:
-1. Richt uw ontwikkelomgeving in met de Aspose.Words-bibliotheek.
-2. Voeg de benodigde samenstellingen toe aan uw project door te verwijzen naar Aspose.Words.
-3.  Initialiseer de documenten die u wilt vergelijken met behulp van de`Document` klasse of de`DocumentBuilder` klas.
-4.  Configureer de vergelijkingsopties door een`CompareOptions` object- en instellingseigenschappen zoals`IgnoreFormatting` En`Target` (bijv.`ComparisonTargetType.New` voor vergelijkingsdoel).
-5.  Gebruik de`Compare` methode op het ene document, het andere document doorgeven en de`CompareOptions` object als parameters. Deze methode vergelijkt de documenten en slaat de wijzigingen in het eerste document op.
+Ja, om alle functies te ontgrendelen heeft u een geldige licentie nodig. U kunt er een kopen of een tijdelijke licentie krijgen.
 
-####  Vraag: Wat is het doel van de`Target` property in the `CompareOptions` class?
+### Wat gebeurt er als ik de opmaak in de vergelijkingsopties negeer?
 
- EEN: De`Target` eigendom in de`CompareOptions` Met class kunt u het vergelijkingsdoel opgeven, dat vergelijkbaar is met de optie "Wijzigingen weergeven in" in het dialoogvenster "Documenten vergelijken" van Microsoft Word. Het doel kan worden ingesteld op`ComparisonTargetType.New` om wijzigingen in een nieuw document weer te geven,`ComparisonTargetType.Current` om wijzigingen in het huidige document weer te geven, of`ComparisonTargetType.Formatting` om alleen opmaakwijzigingen weer te geven.
+Als u de opmaak negeert, zal de vergelijking zich uitsluitend richten op inhoudswijzigingen, waarbij eventuele opmaakverschillen worden genegeerd.
+
+### Kan ik de vergelijkingsopties verder aanpassen?
+
+Absoluut! Aspose.Words biedt verschillende opties om de vergelijking aan te passen aan uw behoeften.
+
+### Waar kan ik meer gedetailleerde documentatie vinden?
+
+ U kunt de uitgebreide documentatie bekijken[hier](https://reference.aspose.com/words/net/).

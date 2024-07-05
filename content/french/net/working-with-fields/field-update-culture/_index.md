@@ -77,7 +77,7 @@ Ceci conclut notre guide sur l'utilisation de la fonctionnalité « Mettre à j
 
 #### Q : Quelle est la culture de mise à jour des champs dans Aspose.Words ?
 
-: La culture de mise à jour des champs dans Aspose.Words fait référence à la culture utilisée pour formater et mettre à jour les valeurs des champs dans un document Word. La culture détermine la manière dont les nombres, les dates et autres données sont présentés dans les champs lorsqu'ils sont mis à jour.
+R : La culture de mise à jour des champs dans Aspose.Words fait référence à la culture utilisée pour formater et mettre à jour les valeurs des champs dans un document Word. La culture détermine la manière dont les nombres, les dates et autres données sont présentés dans les champs lorsqu'ils sont mis à jour.
 
 #### Q : Comment définir la culture de mise à jour des champs dans un document Word avec Aspose.Words ?
 

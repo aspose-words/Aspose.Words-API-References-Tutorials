@@ -84,7 +84,7 @@ Console.WriteLine("\n" + properties);
 
 ## Phần kết luận
 
-Hướng dẫn này đã chỉ cho bạn cách đọc các thuộc tính của điều khiển ActiveX trong tệp Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được mô tả, bạn có thể khởi tạo tài liệu, truy xuất các điều khiển ActiveX và đọc các thuộc tính của chúng. Hãy sử dụng mã mẫu được cung cấp làm điểm bắt đầu và tùy chỉnh mã đó theo nhu cầu cụ thể của bạn.
+Hướng dẫn này đã chỉ cho bạn cách đọc các thuộc tính của điều khiển ActiveX trong tệp Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được mô tả, bạn có thể khởi tạo tài liệu, truy xuất các điều khiển ActiveX và đọc các thuộc tính của chúng. Sử dụng mã mẫu được cung cấp làm điểm bắt đầu và tùy chỉnh mã đó theo nhu cầu cụ thể của bạn.
 
 Việc đọc các thuộc tính của điều khiển ActiveX cho phép bạn trích xuất thông tin quan trọng từ tệp Word có chứa các điều khiển này. Aspose.Words for .NET cung cấp các tính năng mạnh mẽ để Xử lý Từ với các điều khiển ActiveX và tự động hóa quá trình xử lý tài liệu của bạn.
 

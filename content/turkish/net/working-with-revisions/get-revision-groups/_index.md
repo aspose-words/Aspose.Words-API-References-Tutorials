@@ -61,7 +61,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### S: Aspose.Words for .NET'te bir belgedeki revizyon gruplarına nasıl göz atılır?
 
- C: Kullan`Groups` belgenin özelliği`Revisions` revizyon gruplarının koleksiyonunu almak için nesne. Daha sonra her inceleme grubunda döngü oluşturmak için bir döngü kullanabilirsiniz.
+ C: Kullan`Groups` belgenin özelliği`Revisions`revizyon gruplarının koleksiyonunu almak için nesne. Daha sonra her inceleme grubunda döngü oluşturmak için bir döngü kullanabilirsiniz.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### S: Aspose.Words for .NET'te bir revizyon grubunun revizyon tipini nasıl edinebilirim?
 
- C: Kullan`RevisionType` mülkiyeti`RevisionGroup`Grubun revizyon türünü almak için nesne.
+ C: Kullan`RevisionType` mülkiyeti`RevisionGroup` Grubun revizyon türünü almak için nesne.
 
 ```csharp
 string revisionType = group.RevisionType;

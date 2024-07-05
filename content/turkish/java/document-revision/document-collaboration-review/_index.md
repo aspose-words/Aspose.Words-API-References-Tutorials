@@ -30,7 +30,7 @@ Birden fazla ekip üyesinin aynı belge üzerinde çalıştığı durumlarda iş
 
 ## 1. Adım: Belgeyi Paylaşma
 
-İşbirliğini başlatmak için belgeyi ekip üyelerinizle paylaşın. Belgeyi dağıtmak için çeşitli dosya paylaşım platformlarını veya e-postayı kullanabilirsiniz.
+İşbirliğine başlamak için belgeyi ekip üyelerinizle paylaşın. Belgeyi dağıtmak için çeşitli dosya paylaşım platformlarını veya e-postayı kullanabilirsiniz.
 
 ## 2. Adım: Değişiklikleri İzleme
 

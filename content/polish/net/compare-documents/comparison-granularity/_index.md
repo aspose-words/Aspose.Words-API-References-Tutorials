@@ -56,7 +56,7 @@ Porównajmy teraz dokumenty za pomocą metody Compare klasy Document. Zmiany zos
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- The`Compare` metoda porównuje dokument A z dokumentem B i zapisuje zmiany w dokumencie A. Można podać nazwisko autora i datę porównania w celach informacyjnych.
+ The`Compare`metoda porównuje dokument A z dokumentem B i zapisuje zmiany w dokumencie A. Można podać nazwisko autora i datę porównania w celach informacyjnych.
 
 ## Wniosek
 
@@ -80,7 +80,7 @@ builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOpti
 
 ## Wniosek
 
-tym samouczku zbadaliśmy funkcję ziarnistości porównania w Aspose.Words dla .NET. Ta funkcja pozwala określić poziom szczegółowości podczas porównywania dokumentów. Wybierając różne poziomy szczegółowości, możesz przeprowadzać szczegółowe porównania na poziomie znaku, słowa lub bloku, w zależności od konkretnych wymagań. Aspose.Words dla .NET zapewnia elastyczną i wydajną funkcję porównywania dokumentów, ułatwiając identyfikację różnic w dokumentach o różnym poziomie szczegółowości.
+W tym samouczku zbadaliśmy funkcję ziarnistości porównania w Aspose.Words dla .NET. Ta funkcja pozwala określić poziom szczegółowości podczas porównywania dokumentów. Wybierając różne poziomy szczegółowości, możesz przeprowadzać szczegółowe porównania na poziomie znaku, słowa lub bloku, w zależności od konkretnych wymagań. Aspose.Words dla .NET zapewnia elastyczną i wydajną funkcję porównywania dokumentów, ułatwiając identyfikację różnic w dokumentach o różnym poziomie szczegółowości.
 
 ### Często zadawane pytania
 
@@ -95,7 +95,7 @@ O: Aby użyć szczegółowości porównania w Aspose.Words dla .NET, wykonaj nas
 2. Dodaj niezbędne zespoły do swojego projektu, odwołując się do Aspose.Words.
 3.  Utwórz dokumenty, które chcesz porównać, korzystając z narzędzia`DocumentBuilder` klasa.
 4.  Skonfiguruj opcje porównania, tworząc plik`CompareOptions` obiekt i ustawienie`Granularity` właściwość do pożądanego poziomu (np.`Granularity.CharLevel` dla porównania na poziomie postaci).
-5.  Użyj`Compare` metodę na jednym dokumencie, przekazując drugi dokument i`CompareOptions` obiekt jako parametry. Ta metoda porówna dokumenty na podstawie określonej szczegółowości i zapisze zmiany w pierwszym dokumencie.
+5.  Użyj`Compare`metodę na jednym dokumencie, przekazując drugi dokument i`CompareOptions` obiekt jako parametry. Ta metoda porówna dokumenty na podstawie określonej szczegółowości i zapisze zmiany w pierwszym dokumencie.
 
 #### P: Jakie są dostępne poziomy szczegółowości porównania w Aspose.Words dla .NET?
 

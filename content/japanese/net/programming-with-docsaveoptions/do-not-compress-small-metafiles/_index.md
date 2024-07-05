@@ -1,32 +1,32 @@
 ---
-title: 小さなメタファイルを圧縮しないでください
-linktitle: 小さなメタファイルを圧縮しないでください
+title: 小さなメタファイルを圧縮しない
+linktitle: 小さなメタファイルを圧縮しない
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、ドキュメントを保存するときに小さなメタファイルを圧縮しない機能を有効にする方法について説明します。
+description: Aspose.Words for .NET を使用して、ドキュメントを保存するときに「小さなメタファイルを圧縮しない」機能を有効にする方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 
-ドキュメント内のメタデータの圧縮は、C# アプリケーションでファイルを文書処理する場合の一般的な機能です。ただし、品質を維持するために、小さなファイルのメタデータを圧縮しないことが必要な場合があります。このステップバイステップ ガイドでは、Aspose.Words for .NET の C# ソース コードを使用して、ドキュメント保存オプションの [小さなメタファイルを圧縮しない] 機能を有効にする方法を説明します。
+ドキュメント内のメタデータを圧縮することは、C# アプリケーションでファイルを処理する際の一般的な機能です。ただし、品質を維持するために、小さなファイルのメタデータを圧縮しない必要がある場合があります。このステップバイステップ ガイドでは、Aspose.Words for .NET の C# ソース コードを使用して、ドキュメント保存オプションで「小さなメタファイルを圧縮しない」機能を有効にする方法を説明します。
 
-## Aspose.Words ライブラリについて
+## Aspose.Words ライブラリを理解する
 
-コードに入る前に、.NET 用の Aspose.Words ライブラリを理解することが重要です。 Aspose.Words は、.NET を含むさまざまなプラットフォームで Word ドキュメントを作成、編集、変換、保護するための強力なライブラリです。テキストの挿入、書式設定の変更、セクションの追加など、ドキュメントを操作するための多くの機能を提供します。
+コードに進む前に、.NET 用の Aspose.Words ライブラリを理解することが重要です。Aspose.Words は、.NET を含むさまざまなプラットフォームで Word 文書を作成、編集、変換、保護するための強力なライブラリです。テキストの挿入、書式の変更、セクションの追加など、文書を操作するための多くの機能を提供します。
 
-## ステップ 1: ドキュメント ディレクトリを設定する
+## ステップ1: ドキュメントディレクトリを設定する
 
-最初のステップは、ドキュメントを保存するディレクトリを定義することです。完全なディレクトリ パスを指定する必要があります。例えば ：
+最初のステップは、ドキュメントを保存するディレクトリを定義することです。完全なディレクトリ パスを指定する必要があります。例:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-必ず「YOUR DOCUMENTS DIRECTORY」をドキュメント ディレクトリへの実際のパスに置き換えてください。
+「YOUR DOCUMENTS DIRECTORY」を、ドキュメント ディレクトリへの実際のパスに置き換えてください。
 
-## ステップ 2: セクションとテキストを挿入する
+## ステップ2: セクションとテキストを挿入する
 
-その後、ドキュメントにセクションやテキストを挿入できます。 Aspose.Words が提供する DocumentBuilder クラスを使用して、ドキュメントのコンテンツを構築します。簡単な例を次に示します。
+次に、ドキュメントにセクションとテキストを挿入します。Aspose.Words が提供する DocumentBuilder クラスを使用して、ドキュメントのコンテンツを構築します。簡単な例を次に示します。
 
 ```csharp
 Document doc = new Document();
@@ -34,13 +34,13 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
-この例では、新しい空のドキュメントを作成し、DocumentBuilder を使用してテキスト行を追加します。
+この例では、新しい空白のドキュメントを作成し、DocumentBuilder を使用してテキストの行を追加します。
 
-## ステップ 3: セットアップ オプション
+## ステップ3: セットアップオプション
 
 '登録
 
-次に、ドキュメントの保存オプションを設定しましょう。 DocSaveOptions クラスを使用して保存設定を指定します。例えば ：
+次に、ドキュメントの保存オプションを設定しましょう。保存設定を指定するには、DocSaveOptions クラスを使用します。例:
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions();
@@ -48,19 +48,19 @@ DocSaveOptions saveOptions = new DocSaveOptions();
 
 この例では、保存オプションを設定するために新しい DocSaveOptions オブジェクトを作成しています。
 
-## ステップ 4: 「小さなメタファイルを圧縮しない」機能を有効にする
+## ステップ4: 「小さなメタファイルを圧縮しない」機能を有効にする
 
-「小さなメタファイルを圧縮しない」機能を有効にするには、`Compliance` DocSaveOptions オブジェクトのプロパティを値に設定します。`PdfCompliance.PdfA1a`。その方法は次のとおりです。
+「小さなメタファイルを圧縮しない」機能を有効にするには、`Compliance` DocSaveOptionsオブジェクトのプロパティを値に設定する`PdfCompliance.PdfA1a`方法は次のとおりです。
 
 ```csharp
 saveOptions.Compliance = PdfCompliance.PdfA1a;
 ```
 
-この構成により、ドキュメントの保存時に小さなファイルのメタデータが圧縮されなくなります。
+この構成により、ドキュメントを保存するときに小さなファイルのメタデータが圧縮されなくなります。
 
-## ステップ 5: ドキュメントを保存する
+## ステップ5: ドキュメントを保存する
 
-最後に、次のコマンドを使用してドキュメントを保存できます。`Save` Document クラスのメソッド。ファイルへのフルパスと任意のファイル名を指定します。例えば ：
+最後に、`Save` Document クラスのメソッド。ファイルへのフルパスと希望のファイル名を指定します。例:
 
 ```csharp
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
@@ -68,7 +68,7 @@ doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 
 必ず「dataDir」をドキュメント ディレクトリへのパスに置き換えてください。
 
-### Aspose.Words for .NET を使用した、小さなメタファイルを圧縮しない機能を備えた DocSaveOptions のソース コード例
+### Aspose.Words for .NET を使用した DocSaveOptions の DonCompress Small Metafiles 機能のサンプル ソース コード
 
 ```csharp
 //ドキュメントディレクトリへのパス
@@ -79,14 +79,14 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 
-//「小さなメタファイルを圧縮しない」機能で保存オプションを構成する
+//「小さなメタファイルを圧縮しない」機能を使用して保存オプションを構成する
 DocSaveOptions saveOptions = new DocSaveOptions();
 saveOptions.Compliance = PdfCompliance.PdfA1a;
 
-//指定したオプションを使用してドキュメントを保存します
+//指定されたオプションでドキュメントを保存します
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 ```
 
 ## 結論
 
-このガイドでは、.NET 用の Aspose.Words ライブラリを使用して、ドキュメントを保存するときに「小さなメタファイルを圧縮しない」機能を有効にする方法について説明しました。提供された手順に従い、提供された C# ソース コードを使用すると、この機能を C# アプリケーションに簡単に適用できます。非圧縮の小さなファイルのメタデータを保存することは、ドキュメントの品質と整合性を維持するために重要です。
+このガイドでは、.NET 用の Aspose.Words ライブラリを使用して、ドキュメントを保存するときに「小さなメタファイルを圧縮しない」機能を有効にする方法について説明しました。提供されている手順に従い、提供されている C# ソース コードを使用すると、この機能を C# アプリケーションに簡単に適用できます。圧縮されていない小さなファイルのメタデータを保持することは、ドキュメントの品質と整合性を維持するために重要です。

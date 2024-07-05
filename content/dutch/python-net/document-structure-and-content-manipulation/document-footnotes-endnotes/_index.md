@@ -74,7 +74,7 @@ U kunt voetnoten en eindnoten programmatisch beheren door:
 - Houd voetnoten beknopt en relevant
 - Gebruik eindnoten voor uitgebreidere uitleg
 - Zorg voor een consistente opmaak
-- Controleer citaten nogmaals op nauwkeurigheid.
+- Controleer citaten nogmaals op nauwkeurigheid
 
 ## Veelvoorkomende problemen oplossen
 

@@ -97,4 +97,4 @@ Odp.: Wstawienie pola zawierającego tekst bez narzędzia do tworzenia dokument�
 
 #### P: Czy mogę dostosować wygląd pola włączenia tekstu w dokumencie programu Word za pomocą Aspose.Words dla .NET?
 
-Odp.: Dołączenie pola tekstowego nie powoduje bezpośredniego dostosowania jego wyglądu w dokumencie programu Word. Można jednak sformatować dołączony tekst, korzystając z właściwości akapitu, właściwości czcionki i innych obiektów formatujących dostępnych w Aspose.Words dla .NET.
+Odp.: Pole włączenia tekstu nie dostosowuje bezpośrednio jego wyglądu w dokumencie programu Word. Można jednak sformatować dołączony tekst, korzystając z właściwości akapitu, właściwości czcionki i innych obiektów formatujących dostępnych w Aspose.Words dla .NET.

@@ -17,7 +17,7 @@ Innan vi börjar, se till att du har följande krav på plats:
 - Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den med NuGet-pakethanteraren för att installera den.
 - En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram.
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
  Låt oss först skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
@@ -108,7 +108,7 @@ I den här handledningen har du lärt dig hur du ställer in standardalternativ 
 Aspose.Words för .NET är ett bibliotek som gör det möjligt för utvecklare att skapa, manipulera och spara Word-dokument programmatiskt med hjälp av .NET-applikationer. Den tillhandahåller ett brett utbud av funktioner för ordbehandling med dokumentelement, inklusive diagram.
 
 #### Q2. Hur kan jag installera Aspose.Words för .NET?
-Du kan installera Aspose.Words för .NET genom att ladda ner det genom att använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Apose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
+Du kan installera Aspose.Words för .NET genom att ladda ner det genom att använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Aspose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
 
 #### Q3. Kan jag anpassa andra aspekter av diagrammet med Aspose.Words för .NET?
 Ja, Aspose.Words för .NET låter dig anpassa olika aspekter av ett diagram, såsom diagramtyp, axeletiketter, förklaring, plotområde och mer. Du kan komma åt och ändra olika egenskaper för diagramobjektet för att uppnå önskat utseende och beteende.
