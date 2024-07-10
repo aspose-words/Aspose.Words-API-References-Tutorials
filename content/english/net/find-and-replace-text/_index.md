@@ -16,14 +16,14 @@ Whether you need to replace specific words, update text templates, or customize 
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Simple Text Find And Replace In Word](./simple-find-replace/) | Learn how to perform a simple text find and replace in a Word document using Aspose.Words for .NET. |
-| [Meta Characters In Search Pattern](./meta-characters-in-search-pattern/) | Learn how to use metacharacters in the search pattern with Aspose.Words for .NET to manipulate Word documents. |
-| [Word Replace Text Containing Meta Characters](./replace-text-containing-meta-characters/) | Learn how to word replace text containing metacharacters in Word documents using Aspose.Words for .NET. |
-| [Ignore Text Inside Fields](./ignore-text-inside-fields/) | Learn how to use the "Ignore Text Inside Fields" feature of Aspose.Words for .NET. |
-| [Ignore Text Inside Delete Revisions](./ignore-text-inside-delete-revisions/) | Learn how to use the "Ignore Text Inside Delete Revisions" feature of Aspose.Words for .NET. |
-| [Ignore Text Inside Insert Revisions](./ignore-text-inside-insert-revisions/) | Learn how to use the "Ignore Text Inside Insert Revisions" feature of Aspose.Words for .NET to manipulate insert revisions in Word documents. |
-| [Replace Text In Footer](./replace-text-in-footer/) | Learn how to replace text in the footer of Word documents using Aspose.Words for .NET. |
-| [Replace With Regex](./replace-with-regex/) | Learn how to perform regular expression based text replacement in a Word document with Aspose.Words for .NET. |
-| [Recognize And Substitutions Within Replacement Patterns](./recognize-and-substitutions-within-replacement-patterns/) | Learn how to use replacement patterns with recognitions and substitutions in Aspose.Words for .NET to manipulate Word documents. |
-| [Replace With String](./replace-with-string/) | Learn how to replace text with a string in a Word document with Aspose.Words for .NET. |
-| [Replace Text In Table](./replace-text-in-table/) | Learn how to replace text in a table in a Word document using Aspose.Words for .NET. |
+| [Simple Text Find And Replace In Word](./simple-find-replace/) | Learn how to effortlessly find and replace text in Word documents using Aspose.Words for .NET. Step-by-step guide included. |
+| [Meta Characters In Search Pattern](./meta-characters-in-search-pattern/) | Learn how to use meta characters in search patterns with Aspose.Words for .NET in this detailed, step-by-step guide. Optimize your document processing. |
+| [Word Replace Text Containing Meta Characters](./replace-text-containing-meta-characters/) | Learn how to replace text containing meta characters in Word documents using Aspose.Words for .NET. Follow our detailed, engaging tutorial for seamless text manipulation. |
+| [Ignore Text Inside Fields](./ignore-text-inside-fields/) | Learn how to manipulate text inside fields in Word documents using Aspose.Words for .NET. This tutorial provides step-by-step guidance with practical examples. |
+| [Ignore Text Inside Delete Revisions](./ignore-text-inside-delete-revisions/) | Learn how to handle tracked revisions in Word documents using Aspose.Words for .NET. Master document automation with this comprehensive tutorial. |
+| [Ignore Text Inside Insert Revisions](./ignore-text-inside-insert-revisions/) | Learn how to manage document revisions effectively with Aspose.Words for .NET. Discover techniques to ignore text inside insert revisions for streamlined editing. |
+| [Replace Text In Footer](./replace-text-in-footer/) | Learn how to replace text in the footer of a Word document using Aspose.Words for .NET. Follow this guide to master text replacement with detailed examples. |
+| [Replace With Regex](./replace-with-regex/) | Learn how to use regex for find and replace in Word documents with Aspose.Words for .NET. Follow our detailed, step-by-step guide to master text manipulation. |
+| [Recognize And Substitutions Within Replacement Patterns](./recognize-and-substitutions-within-replacement-patterns/) | Learn how to recognize and substitute text within replacement patterns using Aspose.Words for .NET. Step-by-step guide with detailed examples. |
+| [Replace With String](./replace-with-string/) | Learn how to replace strings in Word documents using Aspose.Words for .NET with this step-by-step guide. Perfect for developers looking to automate document editing. |
+| [Replace Text In Table](./replace-text-in-table/) | Effortlessly replace text in Word table using Aspose.Words for .NET with this detailed, step-by-step guide. |
