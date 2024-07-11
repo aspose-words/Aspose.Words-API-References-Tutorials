@@ -2,93 +2,105 @@
 title: Create & Customize Chart Using Shape
 linktitle: Create & Customize Chart Using Shape
 second_title: Aspose.Words Document Processing API
-description: Learn how to create and customize a chart using a shape in a Word document using Aspose.Words for .NET.
+description: Learn how to create and customize charts in Word documents using Aspose.Words for .NET with this step-by-step guide. Perfect for data visualization.
 type: docs
 weight: 10
 url: /net/programming-with-charts/create-chart-using-shape/
 ---
+## Introduction
 
-This tutorial explains how to create a chart using a shape in a Word document using Aspose.Words for .NET.
+Creating and customizing charts in your documents is a crucial skill in today's data-driven world. Charts can help to visualize data, making complex information more digestible. Aspose.Words for .NET is a powerful library that allows you to create and manipulate Word documents programmatically. In this tutorial, we'll walk you through the process of creating and customizing a line chart using Aspose.Words for .NET. By the end of this guide, you'll be able to create professional-looking charts with ease.
 
 ## Prerequisites
-To follow this tutorial, you need to have the following:
 
-- Aspose.Words for .NET library installed.
-- Basic knowledge of C# and Words Processing with Word documents.
+Before diving into the code, make sure you have the following:
 
-## Step 1: Set up the Document Directory
-Start by setting up the path to your document directory. Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to the directory where you want to save the document.
+- Aspose.Words for .NET Library: You can download it [here](https://releases.aspose.com/words/net/).
+- Visual Studio: Any version that supports .NET.
+- Basic Knowledge of C#: Understanding the basics of C# will help you follow along with the tutorial.
+
+## Import Namespaces
+
+To get started, you need to import the necessary namespaces. This step is essential as it allows you to use the classes and methods provided by Aspose.Words for .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
 ```
 
-## Step 2: Create a New Document and DocumentBuilder
-Create a new instance of the `Document` class and a `DocumentBuilder` object to work with the document.
+## Step 1: Create a New Document
+
+First, you need to create a new Word document. This document will serve as the canvas for your chart.
 
 ```csharp
+// Path to your document directory
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Step 3: Insert and Configure a Chart Shape
-Insert a chart shape into the document using the `InsertChart` method of the `DocumentBuilder` object. Set the desired chart type and dimensions.
+## Step 2: Insert a Chart
+
+Next, you will insert a line chart into the document. The `DocumentBuilder.InsertChart` method is used for this purpose.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Step 4: Customize the Chart
-Customize the chart by modifying various properties such as the chart title and legend.
+## Step 3: Customize the Chart Title
+
+Customizing the chart title can help to provide context for the data being displayed. You can show the title and set its text using the following code:
 
 ```csharp
 chart.Title.Show = true;
 chart.Title.Text = "Line Chart Title";
 chart.Title.Overlay = false;
+// Please note if null or empty value is specified as title text, auto-generated title will be shown.
+```
+
+## Step 4: Adjust the Legend Position
+
+The legend helps to identify different data series in your chart. You can customize its position and overlay settings like this:
+
+```csharp
 chart.Legend.Position = LegendPosition.Left;
 chart.Legend.Overlay = true;
 ```
 
 ## Step 5: Save the Document
-Save the document to the specified directory using the `Save` method. Provide the desired filename with the appropriate file extension. In this example, we save the document as "WorkingWithCharts.CreateChartUsingShape.docx".
+
+Finally, you need to save the document. This step ensures that all your changes are written to the file.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ```
 
-### Example source code for Create Chart Using Shape using Aspose.Words for .NET 
-
-```csharp
-	// Path to your document directory 
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Show = true;
-	chart.Title.Text = "Line Chart Title";
-	chart.Title.Overlay = false;
-	// Please note if null or empty value is specified as title text, auto generated title will be shown.
-	chart.Legend.Position = LegendPosition.Left;
-	chart.Legend.Overlay = true;
-	doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
-```
-
-That's it! You have successfully created a chart using a shape in a Word document using Aspose.Words for .NET.
-
 ## Conclusion
-In this tutorial, you have learned how to create a chart using a shape in a Word document using Aspose.Words for .NET. By following the step-by-step guide, you can insert and configure a chart shape, customize its appearance, and save the document. Aspose.Words for .NET provides a comprehensive set of features for Words Processing with Word documents and charts, enabling you to create professional-looking and visually appealing charts directly in your .NET applications.
 
-### FAQs
+In this tutorial, we covered how to create and customize a line chart in a Word document using Aspose.Words for .NET. By following the step-by-step guide, you can now create visually appealing charts that effectively communicate your data. Aspose.Words for .NET offers a wide range of customization options, allowing you to tailor charts to your specific needs.
 
-#### Q1. Can I create charts in a Word document using Aspose.Words for .NET?
-Yes, with Aspose.Words for .NET, you can create charts in a Word document programmatically. Aspose.Words provides APIs and functionalities to insert various types of charts, customize their appearance, and manipulate chart data.
+## FAQ's
 
-#### Q2. What chart types are supported by Aspose.Words for .NET?
-Aspose.Words for .NET supports a wide range of chart types, including line charts, bar charts, pie charts, area charts, scatter charts, and more. You can choose the appropriate chart type based on your data and visualization requirements.
+### Can I use Aspose.Words for .NET to create other types of charts?
 
-#### Q3. Can I customize the appearance of the created chart?
-Yes, you can customize the appearance of the created chart using Aspose.Words for .NET. You can modify properties such as chart title, legend position, data labels, axis labels, colors, and other visual elements to meet your specific design and formatting needs.
+Yes, Aspose.Words for .NET supports various chart types, including bar charts, pie charts, and more. You can explore the documentation [here](https://reference.aspose.com/words/net/) for more details.
+
+### How can I try Aspose.Words for .NET before purchasing?
+
+You can download a free trial version from [here](https://releases.aspose.com/). This allows you to test the library and its features before making a purchase.
+
+### Is there a way to get support if I encounter issues?
+
+Absolutely. You can access support through the Aspose community forums [here](https://forum.aspose.com/c/words/8). The community and Aspose staff are very responsive.
+
+### How do I buy a license for Aspose.Words for .NET?
+
+You can purchase a license directly from the Aspose website [here](https://purchase.aspose.com/buy). There are various licensing options to fit different needs.
+
+### What if I need a temporary license for a short-term project?
+
+Aspose offers temporary licenses, which you can request [here](https://purchase.aspose.com/temporary-license/).
 
