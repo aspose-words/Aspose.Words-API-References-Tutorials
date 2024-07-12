@@ -1,6 +1,6 @@
 ---
-title: Mengekstrak dan Memodifikasi Konten dalam Dokumen Word
-linktitle: Mengekstrak dan Memodifikasi Konten dalam Dokumen Word
+title: Mengekstrak dan Memodifikasi Konten di Dokumen Word
+linktitle: Mengekstrak dan Memodifikasi Konten di Dokumen Word
 second_title: API Manajemen Dokumen Aspose.Words Python
 description: Pelajari cara mengekstrak dan mengubah konten dalam dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber.
 type: docs

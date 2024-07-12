@@ -58,6 +58,6 @@ Den här koden ställer in sidorienteringen till liggande, vänstermarginalen ti
   
 ```
 
-Var noga med att ange rätt sökväg till katalogen där du vill spara dokumentet i`dataDir` variabel.
+ Var noga med att ange rätt sökväg till katalogen där du vill spara dokumentet i`dataDir` variabel.
 
 Du har nu lärt dig hur du konfigurerar layouten och sektionsformateringen av ett dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i den här handledningen kan du enkelt anpassa layouten och formateringen av dina egna dokument.

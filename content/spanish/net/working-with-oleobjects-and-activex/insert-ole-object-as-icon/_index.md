@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### P. ¿Cómo guardar el documento con el objeto OLE insertado como icono?
 
- R: Utilice el documento`Save` Método para guardar el documento en un archivo. Aquí hay un ejemplo :
+ R: Utilice el documento`Save` método para guardar el documento en un archivo. Aquí hay un ejemplo :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

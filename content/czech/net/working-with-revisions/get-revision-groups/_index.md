@@ -2,7 +2,7 @@
 title: Získejte skupiny revizí
 linktitle: Získejte skupiny revizí
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Získejte skupiny revizí v dokumentu aplikace Word pomocí Aspose.Words pro .NET.
+description: Získejte skupiny revizí v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-revisions/get-revision-groups/

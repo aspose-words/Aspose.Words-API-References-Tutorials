@@ -1,6 +1,6 @@
 ---
-title: 輸出往復情報
-linktitle: 輸出往復情報
+title: 輸出ラウンドトリップ情報
+linktitle: 輸出ラウンドトリップ情報
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET を使用してドキュメントを HTML として保存するときにラウンドトリップ情報をエクスポートするためのステップバイステップ ガイド。
 type: docs

@@ -43,7 +43,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Здесь мы определяем каталог, в котором будет сохранен наш документ, создаем новый документ и инициализируем DocumentBuilder. DocumentBuilder — наш основной инструмент для добавления контента в документ.
+Здесь мы определяем каталог, в котором будет сохранен наш документ, создаем новый документ и инициализируем DocumentBuilder. DocumentBuilder — наш основной инструмент для добавления содержимого в документ.
 
 ## Шаг 2. Настройка форматирования абзацев
 
@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Установив`AddSpaceBetweenFarEastAndAlpha` и`AddSpaceBetweenFarEastAndDigit` к`true`, мы сообщаем Aspose.Words автоматически регулировать расстояние между азиатскими символами и латинскими буквами или цифрами.
+ Установив`AddSpaceBetweenFarEastAndAlpha`и`AddSpaceBetweenFarEastAndDigit` к`true`, мы сообщаем Aspose.Words автоматически регулировать расстояние между азиатскими символами и латинскими буквами или цифрами.
 
 ## Шаг 3. Добавление текста в документ
 

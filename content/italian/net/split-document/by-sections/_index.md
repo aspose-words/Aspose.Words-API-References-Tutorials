@@ -84,7 +84,7 @@ Sentiti libero di esplorare altre potenti funzionalità offerte da Aspose.Words 
 Sì, puoi personalizzare i criteri di suddivisione in base alle tue specifiche esigenze. Oltre alle interruzioni di sezione, puoi dividere il documento in base ad altri elementi come intestazioni, segnalibri o contenuti specifici utilizzando le varie funzionalità e metodi forniti da Aspose.Words per .NET.
 
 #### Q2: È possibile unire nuovamente le sezioni in un unico documento?
- Sì, puoi unire nuovamente le sezioni separate in un unico documento importando e combinando le sezioni di più documenti utilizzando il file`ImportNode` E`Sections.Add` metodi. Ciò consente di invertire il processo di suddivisione e ricostruire il documento originale.
+ Sì, puoi unire nuovamente le sezioni separate in un unico documento importando e combinando le sezioni di più documenti utilizzando il file`ImportNode`E`Sections.Add` metodi. Ciò consente di invertire il processo di suddivisione e ricostruire il documento originale.
 
 #### Q3: Esistono limitazioni al numero di sezioni che possono essere divise utilizzando la funzione "Per sezioni"?
 Il numero di sezioni che possono essere divise utilizzando la funzione "Per sezioni" dipende dalle capacità di Aspose.Words per .NET e dalle risorse di sistema disponibili. In generale, supporta la suddivisione di documenti con un numero elevato di sezioni, ma documenti estremamente lunghi o un numero molto elevato di sezioni potrebbero richiedere risorse di sistema e tempi di elaborazione aggiuntivi.

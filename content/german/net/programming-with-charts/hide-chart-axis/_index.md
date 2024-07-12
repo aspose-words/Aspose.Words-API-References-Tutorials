@@ -2,24 +2,39 @@
 title: Diagrammachsen in einem Word-Dokument ausblenden
 linktitle: Diagrammachsen in einem Word-Dokument ausblenden
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie die Diagrammachsen in einem Dokument mit Aspose.Words für .NET ausblenden. Blenden Sie die Achsen aus, um eine übersichtlichere und fokussiertere Diagrammanzeige zu erhalten.
+description: Erfahren Sie in unserem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET die Diagrammachsen in einem Word-Dokument ausblenden.
 type: docs
 weight: 10
 url: /de/net/programming-with-charts/hide-chart-axis/
 ---
+## Einführung
 
-In diesem Tutorial wird erklärt, wie Sie mit Aspose.Words für .NET die Diagrammachsen in einem Dokument ausblenden. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, Seriendaten hinzufügen und die Diagrammachsen ausblenden.
+Beim Erstellen dynamischer und optisch ansprechender Word-Dokumente müssen häufig Diagramme und Grafiken eingefügt werden. In einem solchen Szenario kann es erforderlich sein, die Diagrammachsen für eine übersichtlichere Darstellung auszublenden. Aspose.Words für .NET bietet eine umfassende und benutzerfreundliche API für solche Aufgaben. Dieses Tutorial führt Sie durch die Schritte zum Ausblenden einer Diagrammachse in einem Word-Dokument mit Aspose.Words für .NET.
 
-## Schritt 1: Einrichten des Projekts
+## Voraussetzungen
 
-Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor wir mit dem Tutorial beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Aspose.Words für die .NET-Bibliothek installiert. Sie können sie mit dem NuGet-Paketmanager herunterladen und installieren.
-- Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
+-  Aspose.Words für .NET: Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Jede IDE, die .NET-Entwicklung unterstützt, z. B. Visual Studio.
+- .NET Framework: Stellen Sie sicher, dass .NET Framework auf Ihrem Computer installiert ist.
+- Grundkenntnisse in C#: Vertrautheit mit der Programmiersprache C# ist von Vorteil.
 
-## Schritt 2: Neues Dokument erstellen und Diagramm einfügen
+## Namespaces importieren
 
- Erstelle eine neue`Document` Objekt und ein`DocumentBuilder` um das Dokument zu erstellen.
+Um mit Aspose.Words für .NET arbeiten zu können, müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren. So können Sie das tun:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Lassen Sie uns den Prozess in einfache, leicht zu befolgende Schritte unterteilen.
+
+## Schritt 1: Initialisieren Sie das Dokument und den DocumentBuilder
+
+Der erste Schritt umfasst das Erstellen eines neuen Word-Dokuments und das Initialisieren des DocumentBuilder-Objekts.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -29,88 +44,78 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Fügen Sie als nächstes ein Diagramm in das Dokument ein, indem Sie`InsertChart` Methode der`DocumentBuilder`. In diesem Beispiel fügen wir ein Säulendiagramm ein.
+ In diesem Schritt definieren wir den Pfad, in dem das Dokument gespeichert wird. Anschließend erstellen wir einen neuen`Document` Objekt und ein`DocumentBuilder` Objekt, um mit dem Erstellen unseres Dokuments zu beginnen.
+
+## Schritt 2: Einfügen eines Diagramms
+
+ Als nächstes fügen wir ein Diagramm in das Dokument ein, mit dem`DocumentBuilder` Objekt.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Schritt 3: Seriendaten zum Diagramm hinzufügen
+ Hier fügen wir ein Säulendiagramm mit angegebenen Dimensionen ein.`InsertChart` Methode gibt einen`Shape` Objekt, das das Diagramm enthält.
 
-Fügen Sie dem Diagramm Reihendaten hinzu. In diesem Beispiel fügen wir fünf Elemente und ihre entsprechenden Werte hinzu.
+## Schritt 3: Vorhandene Serien löschen
+
+Bevor wir dem Diagramm neue Daten hinzufügen, müssen wir alle vorhandenen Reihen löschen.
 
 ```csharp
 chart.Series.Clear();
+```
+
+Dieser Schritt stellt sicher, dass alle Standarddaten im Diagramm entfernt werden und Platz für die neuen Daten gemacht wird, die wir als Nächstes hinzufügen.
+
+## Schritt 4: Seriendaten hinzufügen
+
+Fügen wir nun dem Diagramm unsere eigene Datenreihe hinzu.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Schritt 4: Die Diagrammachse ausblenden
+In diesem Schritt fügen wir eine Serie mit dem Titel „Aspose Series 1“ mit entsprechenden Kategorien und Werten hinzu.
 
- Um die Diagrammachse auszublenden, rufen Sie das`AxisY` des Diagramms und legen Sie die`Hidden`Eigentum an`true`.
+## Schritt 5: Y-Achse ausblenden
+
+ Um die Y-Achse des Diagramms auszublenden, setzen wir einfach die`Hidden` Eigenschaft der Y-Achse auf`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-In diesem Beispiel verbergen wir die Y-Achse des Diagramms.
+Diese Codezeile verbirgt die Y-Achse und macht sie im Diagramm unsichtbar.
 
-## Schritt 5: Speichern Sie das Dokument
+## Schritt 6: Speichern Sie das Dokument
 
- Speichern Sie das Dokument abschließend im angegebenen Verzeichnis mit dem`Save` Methode der`Document` Objekt.
+Speichern Sie das Dokument abschließend im angegebenen Verzeichnis.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-Damit ist die Implementierung zum Ausblenden der Diagrammachsen mit Aspose.Words für .NET abgeschlossen.
-
-### Beispielquellcode zum Ausblenden der Diagrammachsen mit Aspose.Words für .NET 
-
-```csharp
-	// Pfad zu Ihrem Dokumentverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Hidden = true;
-	doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
-```
+Dieser Befehl speichert das Word-Dokument mit dem Diagramm im angegebenen Pfad.
 
 ## Abschluss
 
-In diesem Tutorial haben Sie gelernt, wie Sie die Diagrammachse in einem Word-Dokument mit Aspose.Words für .NET ausblenden. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie ein Diagramm erstellen, Seriendaten hinzufügen und die Diagrammachse ausblenden, um den gewünschten visuellen Effekt zu erzielen.
+Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET eine Diagrammachse in einem Word-Dokument ausblenden. Diese leistungsstarke Bibliothek erleichtert die programmgesteuerte Bearbeitung von Word-Dokumenten. Wenn Sie diese Schritte befolgen, können Sie mit minimalem Aufwand benutzerdefinierte und professionell aussehende Dokumente erstellen.
 
- Aspose.Words für .NET bietet eine umfassende API für die Textverarbeitung mit Diagrammen in Word-Dokumenten, mit der Sie verschiedene Aspekte des Diagramms bearbeiten können, einschließlich der Achseneigenschaften. Durch den Zugriff auf die`AxisY` des Diagramms können Sie die Y-Achse ausblenden, um sie aus der Diagrammvisualisierung zu entfernen.
+## Häufig gestellte Fragen
 
-Das Ausblenden der Diagrammachse kann nützlich sein, wenn Sie sich auf die Diagrammdaten konzentrieren möchten, ohne von den Achsenlinien und Beschriftungen abgelenkt zu werden. Dadurch wirkt das Diagramm klarer und minimalistischer.
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke API zum Erstellen, Bearbeiten, Konvertieren und Bearbeiten von Word-Dokumenten innerhalb von .NET-Anwendungen.
 
-Durch die Verwendung von Aspose.Words für .NET können Sie problemlos Diagrammfunktionen in Ihre .NET-Anwendungen integrieren und professionell aussehende Dokumente mit benutzerdefinierten Diagrammen und ausgeblendeten Diagrammachsen erstellen.
+### Kann ich sowohl die X- als auch die Y-Achse in einem Diagramm ausblenden?
+ Ja, Sie können beide Achsen ausblenden, indem Sie die`Hidden` Eigentum beider`AxisX`Und`AxisY` Zu`true`.
 
-### FAQs
+### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?
+ Ja, Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/).
 
-#### F1. Was ist Aspose.Words für .NET?
-Aspose.Words für .NET ist eine leistungsstarke Dokumentverarbeitungsbibliothek, mit der Entwickler Word-Dokumente programmgesteuert in .NET-Anwendungen erstellen, bearbeiten und speichern können. Es bietet eine breite Palette von Funktionen für die Textverarbeitung mit Dokumentelementen, einschließlich Diagrammen und Diagrammachsen.
+### Wo finde ich weitere Dokumentation?
+ Eine ausführliche Dokumentation finden Sie auf der Aspose.Words for .NET[Hier](https://reference.aspose.com/words/net/).
 
-#### F2. Wie kann ich Aspose.Words für .NET installieren?
-Sie können Aspose.Words für .NET installieren, indem Sie es mithilfe des NuGet-Paketmanagers in Visual Studio herunterladen. Suchen Sie einfach im NuGet-Paketmanager nach „Aspose.Words“ und installieren Sie es in Ihrem Projekt.
-
-#### F3. Kann ich sowohl die X-Achse als auch die Y-Achse eines Diagramms ausblenden?
- Ja, Sie können sowohl die X-Achse als auch die Y-Achse eines Diagramms mit Aspose.Words für .NET ausblenden. Um die X-Achse auszublenden, können Sie auf die`AxisX` des Diagramms und legen Sie die`Hidden`Eigentum an`true` Um die Y-Achse auszublenden, können Sie auf die`AxisY` und legen Sie die`Hidden`Eigentum an`true`. Dadurch können Sie beide Achsen aus der Diagrammvisualisierung entfernen.
-
-#### F4. Kann ich die Achse nach dem Ausblenden wieder anzeigen?
-Ja, Sie können die Diagrammachse wieder anzeigen, nachdem Sie sie mit Aspose.Words für .NET ausgeblendet haben. Um eine ausgeblendete Achse anzuzeigen, setzen Sie einfach die`Hidden` Eigentum des entsprechenden`AxisX` oder`AxisY` Einwände erheben gegen`false`. Dadurch wird die Achse im Diagramm wieder sichtbar.
-
-#### F5. Kann ich andere Eigenschaften der Diagrammachsen anpassen?
- Ja, Aspose.Words für .NET ermöglicht Ihnen die Anpassung verschiedener Eigenschaften der Diagrammachsen, wie Achsentitel, Beschriftungen, Linienfarbe und mehr. Durch den Zugriff auf die`AxisX` Und`AxisY` Eigenschaften des Diagramms können Sie Eigenschaften ändern wie`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`und viele andere. Dadurch erhalten Sie eine feine Kontrolle über das Aussehen und Verhalten der Diagrammachsen.
-
-#### F6. Kann ich das Diagramm mit der ausgeblendeten Achse in verschiedenen Dateiformaten speichern?
- Ja, Aspose.Words für .NET ermöglicht es Ihnen, das Dokument mit dem Diagramm mit einer ausgeblendeten Achse in verschiedenen Dateiformaten wie DOCX, PDF, HTML und mehr zu speichern. Sie können das gewünschte Ausgabeformat entsprechend Ihren Anforderungen auswählen und das`Save` Methode der`Document` Objekt, um das Dokument zu speichern. Die ausgeblendete Achse bleibt im gespeicherten Dokument erhalten.
+### Wie kann ich Support für Aspose.Words für .NET erhalten?
+ Sie können Unterstützung von der Aspose-Community erhalten[Hier](https://forum.aspose.com/c/words/8).

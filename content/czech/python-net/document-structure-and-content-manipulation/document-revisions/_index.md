@@ -22,7 +22,7 @@ Revize dokumentu zahrnují sledování změn provedených v dokumentu v průběh
 import asposewords
 ```
 
-## Načítání a zobrazení dokumentu
+## Načtení a zobrazení dokumentu
 
 Chcete-li pracovat s dokumentem, musíte jej nejprve načíst do aplikace Python. K načtení dokumentu a zobrazení jeho obsahu použijte následující fragment kódu:
 
@@ -60,7 +60,7 @@ for revision in revisions:
 
 ## Porovnání různých verzí
 
-Aspose.Words vám umožňuje porovnat dva dokumenty a vizualizovat rozdíly mezi nimi:
+Aspose.Words umožňuje porovnat dva dokumenty a vizualizovat rozdíly mezi nimi:
 
 ```python
 doc1 = asposewords.Document("document_v1.docx")

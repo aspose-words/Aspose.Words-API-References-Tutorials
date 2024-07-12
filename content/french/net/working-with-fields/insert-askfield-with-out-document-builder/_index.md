@@ -73,7 +73,7 @@ field. Update();
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-Dans cet exemple, nous avons créé un nouveau document, inséré un champ ASK sans utiliser DocumentBuilder, configuré les différentes propriétés du champ et enregistré le document avec un nom de fichier spécifié.
+Dans cet exemple, nous avons créé un nouveau document, inséré un champ ASK sans utiliser DocumentBuilder, configuré les différentes propriétés du champ et enregistré le document sous un nom de fichier spécifié.
 
 Ceci conclut notre guide sur l'utilisation de la fonctionnalité « Insérer un champ ASK sans DocumentBuilder » avec Aspose.Words pour .NET.
 

@@ -2,93 +2,87 @@
 title: Word Belgesine Dağılım Grafiği Ekleme
 linktitle: Word Belgesine Dağılım Grafiği Ekleme
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir belgeye dağılım grafiğini nasıl ekleyeceğinizi öğrenin. X ve Y koordinatlarıyla seri verilerini ekleyin.
+description: Aspose.Words for .NET ile Word'e nasıl dağılım grafiği ekleyeceğinizi öğrenin. Görsel veri temsillerini belgelerinize entegre etmek için kolay adımlar.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/insert-scatter-chart/
 ---
+## giriiş
 
-Bu eğitimde Aspose.Words for .NET'in bir belgeye dağılım grafiği eklemek için nasıl kullanılacağı açıklanmaktadır. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve belgenin nasıl kaydedileceğini gösterir.
+Bu eğitimde, Word belgenize dağılım grafiği eklemek için Aspose.Words for .NET'ten nasıl yararlanacağınızı öğreneceksiniz. Dağılım grafikleri, iki değişkene dayalı veri noktalarını etkili bir şekilde görüntüleyebilen, belgelerinizi daha ilgi çekici ve bilgilendirici hale getiren güçlü görsel araçlardır.
 
-## 1. Adım: Projeyi ayarlayın
+## Önkoşullar
 
-Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Aspose.Words for .NET ile dağılım grafikleri oluşturmaya başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
-- Çıktı belgesinin kaydedileceği belge dizini yolu.
+1.  Aspose.Words for .NET Kurulumu: Aspose.Words for .NET'i şu adresten indirip yükleyin:[Burada](https://releases.aspose.com/words/net/).
+   
+2. Temel C# Bilgisi: C# programlama dili ve .NET çerçevesine aşinalık faydalı olacaktır.
 
-## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
+## Ad Alanlarını İçe Aktar
 
- Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
+Başlamak için C# projenize gerekli ad alanlarını içe aktarmanız gerekir:
 
 ```csharp
-// Belge dizininizin yolu
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+```
 
+Şimdi Aspose.Words for .NET kullanarak Word belgenize dağılım grafiği ekleme sürecini inceleyelim:
+
+## Adım 1: Document'ı ve DocumentBuilder'ı başlatın
+
+ İlk olarak, yeni bir örneğini başlatın.`Document` sınıf ve`DocumentBuilder` belgenizi oluşturmaya başlamak için sınıf.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Daha sonra şunu kullanın:`InsertChart` yöntemi`DocumentBuilder` Belgeye bir dağılım grafiği eklemek için.
+## Adım 2: Dağılım Tablosunu Ekleyin
+
+ Kullan`InsertChart` yöntemi`DocumentBuilder` Belgeye bir dağılım grafiği eklemek için sınıf.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. Adım: Grafiğe seri verilerini ekleyin
+## 3. Adım: Grafiğe Veri Serisi Ekleme
 
-Grafiğe seri verileri ekleyin. Bu örnekte iki grup X ve Y koordinatı ekleyeceğiz.
+Şimdi dağılım grafiğinize veri serileri ekleyin. Bu örnek, belirli veri noktalarına sahip bir serinin eklenmesini gösterir.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## 4. Adım: Belgeyi kaydedin
+## Adım 4: Belgeyi Kaydedin
 
- Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
+ Son olarak, değiştirilen belgeyi kullanarak istediğiniz konuma kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanarak dağılım grafiği ekleme işlemini tamamlar.
-
-### Aspose.Words for .NET kullanarak Dağılım Grafiği Ekleme için örnek kaynak kodu 
-
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
-	doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
-```
-
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine dağılım grafiğinin nasıl ekleneceğini öğrendiniz. Adım adım kılavuzu takip ederek ve verilen kaynak kodunu kullanarak yeni bir belge oluşturabilir, dağılım grafiği ekleyebilir, X ve Y koordinatlarıyla seri verileri ekleyebilir ve belgeyi grafikle birlikte kaydedebilirsiniz.
+Tebrikler! Aspose.Words for .NET'i kullanarak Word belgenize dağılım grafiğini nasıl ekleyeceğinizi başarıyla öğrendiniz. Dağılım grafikleri veri ilişkilerini görselleştirmek için mükemmel araçlardır ve Aspose.Words ile netliği ve anlayışı geliştirmek için bunları belgelerinizle zahmetsizce entegre edebilirsiniz.
 
-Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için kapsamlı bir API sağlar. Dağılım grafikleri, iki sayısal değişkenli verileri görselleştirmek ve analiz etmek için kullanışlıdır. Aspose.Words for .NET ile X ve Y değerleri arasındaki ilişkiyi temsil eden dağılım grafiklerini kolayca oluşturabilir ve verilerdeki kalıpları veya eğilimleri tanımlayabilirsiniz.
+## SSS'ler
 
-Aspose.Words for .NET'i kullanarak, dağılım grafikleriyle belge oluşturma sürecini otomatikleştirebilir, manuel belge oluşturmada zamandan ve emekten tasarruf edebilirsiniz. Kitaplık, dağılım grafikleri de dahil olmak üzere çok çeşitli grafik türleri sunar ve grafiğin görünümünü ihtiyaçlarınıza göre uyarlamak için çeşitli özelleştirme seçenekleri sunar.
+### Aspose.Words'ü kullanarak dağılım grafiğinin görünümünü özelleştirebilir miyim?
+Evet, Aspose.Words renkler, eksenler ve etiketler gibi grafik özelliklerinin kapsamlı şekilde kişiselleştirilmesine olanak tanır.
 
-### SSS
+### Aspose.Words Microsoft Word'ün farklı sürümleriyle uyumlu mu?
+Aspose.Words, Microsoft Word'ün çeşitli sürümlerini destekleyerek platformlar arasında uyumluluk sağlar.
 
-#### S1. Dağılım grafiği nedir?
-Dağılım grafiği, iki sayısal değişken arasındaki ilişkiyi görüntüleyen bir grafik türüdür. Bir değişkenin X ekseninde ve diğer değişkenin Y ekseninde temsil edildiği bir koordinat ızgarası üzerinde çizilen bir dizi noktadan oluşur. Dağılım grafikleri, iki veri noktası kümesi arasındaki kalıpları, korelasyonları veya eğilimleri tanımlamak için kullanılır.
+### Aspose.Words diğer grafik türleri için destek sağlıyor mu?
+Evet, Aspose.Words çubuk grafikler, çizgi grafikler ve pasta grafikler de dahil olmak üzere çok çeşitli grafik türlerini destekler.
 
-#### Q2. Dağılım grafiğine birden fazla seri ekleyebilir miyim?
-Evet, Aspose.Words for .NET'i kullanarak dağılım grafiğine birden fazla seri ekleyebilirsiniz. Her seri, ilgili X ve Y koordinatlarıyla birlikte bir dizi veri noktasını temsil eder. Birden fazla seri ekleyerek aynı dağılım grafiğindeki farklı veri kümelerini karşılaştırıp analiz edebilir, verilerinizin kapsamlı bir görünümünü sağlayabilirsiniz.
+### Dağılım grafiğindeki verileri programlı olarak dinamik olarak güncelleyebilir miyim?
+Kesinlikle Aspose.Words API çağrılarını kullanarak grafik verilerini dinamik olarak güncelleyebilirsiniz.
 
-#### S3. Dağılım grafiğinin görünümünü özelleştirebilir miyim?
-Evet, Aspose.Words for .NET'i kullanarak dağılım grafiğinin görünümünün çeşitli yönlerini özelleştirebilirsiniz. Seri rengi, işaretçi şekli, eksen etiketleri ve grafik alanı formatlaması gibi özellikleri değiştirebilirsiniz. Kitaplık, grafiğin görsel öğelerini kontrol etmek ve ihtiyaçlarınıza uygun özelleştirilmiş bir görünüm oluşturmak için zengin bir API seti sağlar.
-
-#### S4. Dağılım grafiğinin eklendiği belgeyi farklı formatlarda kaydedebilir miyim?
-Evet, Aspose.Words for .NET, belgeyi eklenen dağılım grafiğiyle birlikte DOCX, PDF, HTML ve daha fazlası gibi çeşitli formatlarda kaydetmenize olanak tanır. Gereksinimlerinize göre istediğiniz çıktı formatını seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne. Eklenen dağılım grafiği kaydedilen belgede korunacaktır.
-
-#### S5. Dağılım grafiğini ekledikten sonra verilerini ve görünümünü değiştirebilir miyim?
-Evet, dağılım grafiğini belgeye ekledikten sonra Aspose.Words for .NET tarafından sağlanan API'leri kullanarak verilerini ve görünümünü değiştirebilirsiniz. Seri verilerini yeni X ve Y koordinatlarıyla güncelleyebilir, işaretçi şekillerini ve renklerini değiştirebilir, eksen özelliklerini özelleştirebilir ve Word belgelerinizde dinamik ve etkileşimli grafikler oluşturmak için biçimlendirme seçeneklerini uygulayabilirsiniz.
+### Aspose.Words için nereden daha fazla yardım veya destek alabilirim?
+ Daha fazla yardım için şu adresi ziyaret edin:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).

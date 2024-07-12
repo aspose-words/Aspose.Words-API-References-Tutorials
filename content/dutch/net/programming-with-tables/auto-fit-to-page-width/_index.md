@@ -89,7 +89,7 @@ Nadat u de code hebt geschreven, voert u deze uit in Visual Studio. Uw document 
 
 ## Conclusie
 
- En daar heb je het! U hebt met succes geleerd hoe u tabellen automatisch kunt aanpassen aan de paginabreedte in Word-documenten met behulp van Aspose.Words voor .NET. In deze zelfstudie werd het instellen van uw omgeving, het maken en opmaken van tabellen en het opslaan van het document besproken. Aspose.Words biedt een overvloed aan functies, dus zorg ervoor dat u de[API-documentatie](https://reference.aspose.com/words/net/) om zijn mogelijkheden ten volle te benutten.
+ En daar heb je het! U hebt met succes geleerd hoe u tabellen automatisch kunt aanpassen aan de paginabreedte in Word-documenten met behulp van Aspose.Words voor .NET. In deze zelfstudie werd het instellen van uw omgeving, het maken en opmaken van tabellen en het opslaan van het document behandeld. Aspose.Words biedt een overvloed aan functies, dus zorg ervoor dat u de[API-documentatie](https://reference.aspose.com/words/net/) om zijn mogelijkheden ten volle te benutten.
 
 ## Veelgestelde vragen
 
@@ -103,7 +103,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
 
 ### 3. Hoe kan ik tabellen anders opmaken?
 
- kunt de tabelopmaak aanpassen met behulp van verschillende methoden van Aspose.Words. Controleer de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
+ U kunt de tabelopmaak aanpassen met behulp van verschillende methoden van Aspose.Words. Controleer de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
 
 ### 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 

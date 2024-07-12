@@ -2,7 +2,7 @@
 title: Membagi Dokumen dengan Pembuat Konten untuk Presisi
 linktitle: Membagi Dokumen dengan Pembuat Konten untuk Presisi
 second_title: API Manajemen Dokumen Aspose.Words Python
-description: Bagilah dan taklukkan dokumen Anda dengan presisi menggunakan Aspose.Words untuk Python. Pelajari cara memanfaatkan Pembuat Konten untuk ekstraksi dan pengorganisasian konten secara efisien.
+description: Bagilah dan taklukkan dokumen Anda dengan presisi menggunakan Aspose.Words untuk Python. Pelajari cara memanfaatkan Pembuat Konten untuk ekstraksi dan pengorganisasian konten yang efisien.
 type: docs
 weight: 11
 url: /id/python-net/document-splitting-and-formatting/divide-documents-content-builder/

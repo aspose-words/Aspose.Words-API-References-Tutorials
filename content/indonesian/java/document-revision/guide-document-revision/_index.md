@@ -23,7 +23,7 @@ Revisi dokumen berperan penting dalam memastikan keakuratan, konsistensi, dan ku
 
 ### 1.3 Tantangan Penanganan Revisi Dokumen
 
-Mengelola revisi dokumen dapat menjadi sebuah tantangan, terutama ketika berhadapan dengan dokumen berukuran besar atau banyak kontributor. Melacak perubahan, menyelesaikan konflik, dan memelihara riwayat versi adalah tugas yang memakan waktu dan rentan terhadap kesalahan.
+Mengelola revisi dokumen dapat menjadi tantangan, terutama ketika berhadapan dengan dokumen berukuran besar atau banyak kontributor. Melacak perubahan, menyelesaikan konflik, dan memelihara riwayat versi adalah tugas yang memakan waktu dan rentan terhadap kesalahan.
 
 ### 1.4 Memperkenalkan Aspose.Words untuk Java
 

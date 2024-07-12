@@ -7,98 +7,118 @@ type: docs
 weight: 10
 url: /es/net/programming-with-charts/bounds-of-axis/
 ---
+## Introducción
 
-Este tutorial explica cómo establecer los límites de un eje en un gráfico usando Aspose.Words para .NET. Al insertar un gráfico, agregar datos de series y configurar la escala del eje, puede definir los valores mínimo y máximo para el eje.
+¿Está buscando crear documentos profesionales con gráficos en .NET? ¡Estás en el lugar correcto! Esta guía lo guiará a través del proceso de uso de Aspose.Words para .NET para establecer los límites del eje en un gráfico. Desglosaremos cada paso para asegurarnos de que pueda seguirlo fácilmente, incluso si es nuevo en la biblioteca. Entonces, ¡sumergámonos y comencemos!
 
 ## Requisitos previos
-Para seguir este tutorial, necesita tener lo siguiente:
 
-- Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y procesamiento de textos con documentos Word.
+Antes de comenzar, asegúrese de tener lo siguiente:
 
-## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
+-  Aspose.Words para .NET: puedes[descargar](https://releases.aspose.com/words/net/) la última versión o utilizar una[prueba gratis](https://releases.aspose.com/).
+- .NET Framework: asegúrese de tener .NET instalado en su sistema.
+- IDE: un entorno de desarrollo como Visual Studio.
+
+Una vez que tengas todo listo, podemos pasar a los siguientes pasos.
+
+## Importar espacios de nombres
+
+Para comenzar, deberá importar los espacios de nombres necesarios. Estos le permitirán acceder a la biblioteca Aspose.Words y sus funciones de gráficos.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+## Paso 1: configure su directorio de documentos
+
+Lo primero es lo primero, debe configurar el directorio donde se guardará su documento. Este es un paso simple pero crucial para organizar sus archivos.
+
+```csharp
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Paso 2: cree un nuevo documento y DocumentBuilder
- Crear una nueva instancia del`Document` clase y un`DocumentBuilder`objeto de trabajar con el documento.
+## Paso 2: cree un nuevo documento
+
+A continuación, cree un nuevo objeto de documento. Este documento servirá como contenedor para su gráfico.
 
 ```csharp
 Document doc = new Document();
+```
+
+## Paso 3: Inicialice el Generador de documentos
+
+La clase DocumentBuilder proporciona una forma rápida y sencilla de crear documentos. Inicialícelo con su documento.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 3: insertar y configurar un gráfico
- Inserte un gráfico en el documento usando el`InsertChart` método de la`DocumentBuilder` objeto. Establezca el tipo de gráfico y las dimensiones que desee.
+## Paso 4: insertar un gráfico
+
+Ahora es el momento de insertar un gráfico en su documento. En este ejemplo, usaremos un gráfico de columnas.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Paso 4: agregar datos de la serie
-Borre cualquier serie existente en el gráfico y agregue datos de nuevas series. En este ejemplo, agregamos una serie con etiquetas "Elemento 1" a "Elemento 5" y los valores correspondientes.
+## Paso 5: borrar series existentes
+
+Para asegurarse de comenzar desde cero, borre cualquier serie existente del gráfico.
 
 ```csharp
 chart.Series.Clear();
+```
+
+## Paso 6: agregar datos al gráfico
+
+Aquí, agregamos datos al gráfico. Esto incluye especificar el nombre de la serie y los puntos de datos.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Paso 5: establecer los límites del eje
- Configure la escala del eje Y estableciendo los valores mínimo y máximo usando el`Scaling.Minimum` y`Scaling.Maximum` propiedades del eje.
+## Paso 7: establecer los límites del eje
+
+Establecer los límites del eje Y garantiza que el gráfico tenga la escala correcta.
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
 chart.AxisY.Scaling.Maximum = new AxisBound(6);
 ```
 
-## Paso 6: guarde el documento
- Guarde el documento en el directorio especificado utilizando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithCharts.BoundsOfAxis.docx".
+## Paso 8: guarde el documento
+
+Finalmente, guarde su documento en el directorio especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-### Código fuente de ejemplo para Bounds Of Axis usando Aspose.Words para .NET 
-
-```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Scaling.Minimum = new AxisBound(0);
-	chart.AxisY.Scaling.Maximum = new AxisBound(6);
-	doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
-```
-
-¡Eso es todo! Ha establecido con éxito los límites de un eje en un gráfico utilizando Aspose.Words para .NET.
+¡Y eso es! Ha creado con éxito un documento con un gráfico utilizando Aspose.Words para .NET. 
 
 ## Conclusión
-En este tutorial, aprendió cómo establecer los límites de un eje en un gráfico usando Aspose.Words para .NET. Siguiendo la guía paso a paso, puede insertar y configurar un gráfico, agregar datos de series y definir los valores mínimo y máximo para la escala del eje. Aspose.Words para .NET proporciona una API potente y flexible para el procesamiento de textos con documentos de Word, lo que le permite crear gráficos dinámicos y visualmente atractivos con facilidad.
 
+Con Aspose.Words para .NET, puede crear y manipular gráficos en sus documentos fácilmente. Esta guía paso a paso le ha mostrado cómo establecer los límites del eje en un gráfico, haciendo que su presentación de datos sea más precisa y profesional. Ya sea que esté generando informes, presentaciones o cualquier otro documento, Aspose.Words proporciona las herramientas que necesita.
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 
-#### P1. ¿Qué es Aspose.Words para .NET?
-Aspose.Words para .NET es una biblioteca que permite a los desarrolladores trabajar con documentos de Word mediante programación. Proporciona una amplia gama de características y funcionalidades para crear, manipular y guardar documentos de Word.
+### ¿Qué es Aspose.Words para .NET?
+Aspose.Words para .NET es una biblioteca que le permite crear, modificar y convertir documentos de Word mediante programación utilizando el marco .NET.
 
-#### P2. ¿Cómo puedo instalar Aspose.Words para .NET?
-Para instalar Aspose.Words para .NET, puede utilizar el administrador de paquetes NuGet en Visual Studio. Simplemente busque "Aspose.Words" en el administrador de paquetes NuGet e instálelo en su proyecto.
+### ¿Cómo configuro Aspose.Words para .NET?
+ Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/) y siga las instrucciones de instalación proporcionadas.
 
-#### P3. ¿Puedo utilizar Aspose.Words para .NET con otros lenguajes de programación?
-No, Aspose.Words para .NET está diseñado específicamente para aplicaciones .NET. Funciona con lenguajes de programación como C# y VB.NET.
+### ¿Puedo utilizar Aspose.Words gratis?
+ Sí, puedes usar un[prueba gratis](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/).
 
-#### P4. ¿Existen otros requisitos previos para utilizar Aspose.Words para .NET?
-Además de instalar la biblioteca Aspose.Words para .NET, debe tener conocimientos básicos de programación en C# y procesamiento de textos con documentos de Word. También será útil estar familiarizado con el marco .NET.
+### ¿Dónde puedo encontrar documentación para Aspose.Words para .NET?
+ La documentación detallada está disponible.[aquí](https://reference.aspose.com/words/net/).
+
+### ¿Cómo puedo obtener soporte para Aspose.Words?
+ Puedes visitar el[Foro de soporte](https://forum.aspose.com/c/words/8) para asistencia.

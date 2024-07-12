@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Stap 4: Cel invoegen en naar rijopmaak gaan
-Nu kunnen we een cel in de tabel invoegen en toegang krijgen tot de rijopmaak voor die cel met behulp van de documentbouwer`InsertCell()` En`RowFormat` methoden.
+Nu kunnen we een cel in de tabel invoegen en toegang krijgen tot de rijopmaak voor die cel met behulp van de documentbouwer`InsertCell()`En`RowFormat` methoden.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Stap 5: Stel de rijhoogte in
- Om de rijhoogte in te stellen, gebruiken we de`Height` En`HeightRule` eigenschappen van het rijformaat. In dit voorbeeld stellen we een rijhoogte van 100 punten in en gebruiken we de`Exactly` regel.
+ Om de rijhoogte in te stellen, gebruiken we de`Height`En`HeightRule` eigenschappen van het rijformaat. In dit voorbeeld stellen we een rijhoogte van 100 punten in en gebruiken we de`Exactly` regel.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Stap 6: Definieer de tabelopmaak
- Sommige opmaakeigenschappen kunnen in de tabel zelf worden ingesteld en worden op alle tabelrijen toegepast. In dit voorbeeld stellen we de eigenschappen van de tabelmarge in met behulp van de`LeftPadding`, `RightPadding`, `TopPadding` En`BottomPadding` eigenschappen.
+ Sommige opmaakeigenschappen kunnen in de tabel zelf worden ingesteld en worden op alle tabelrijen toegepast. In dit voorbeeld stellen we de eigenschappen van de tabelmarge in met behulp van de`LeftPadding`, `RightPadding`, `TopPadding`En`BottomPadding` eigenschappen.
 
 ```csharp
 table. LeftPadding = 30;

@@ -58,6 +58,6 @@ Ce code définira l'orientation de la page sur paysage, la marge gauche sur 50 e
   
 ```
 
-Assurez-vous de spécifier le chemin correct vers le répertoire dans lequel vous souhaitez enregistrer le document dans le`dataDir` variable.
+ Assurez-vous de spécifier le chemin correct vers le répertoire dans lequel vous souhaitez enregistrer le document dans le`dataDir` variable.
 
 Vous avez maintenant appris à configurer la mise en page et le formatage des sections d'un document à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape fourni dans ce didacticiel, vous pouvez facilement personnaliser la mise en page et le formatage de vos propres documents.

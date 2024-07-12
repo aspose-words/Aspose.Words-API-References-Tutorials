@@ -2,24 +2,38 @@
 title: Tartsa meg a forrásszámozást
 linktitle: Tartsa meg a forrásszámozást
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan fűzhet hozzá egy dokumentumot, miközben megőrzi a forrásszámozás formázását az Aspose.Words for .NET-ben.
+description: Ismerje meg, hogyan importálhat dokumentumokat a formázás megőrzése mellett az Aspose.Words for .NET használatával. Útmutató lépésről lépésre kódpéldákkal.
 type: docs
 weight: 10
 url: /hu/net/join-and-append-documents/keep-source-numbering/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan lehet forrásdokumentumot hozzáfűzni a céldokumentumhoz, miközben megőrzi a számozott bekezdések eredeti számozási formázását az Aspose.Words for .NET használatával.
+ Amikor az Aspose.Words for .NET programmal dolgozik, a dokumentumok egyik forrásból a másikba importálása a formázás megőrzése mellett hatékonyan kezelhető a`NodeImporter` osztály. Ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton.
 
-## 1. lépés: Állítsa be a projektet
+## Előfeltételek
 
-Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
+- A Visual Studio telepítve van a gépedre.
+-  Az Aspose.Words for .NET telepítve van. Ha nem, töltsd le innen[itt](https://releases.aspose.com/words/net/).
+- C# és .NET programozási alapismeretek.
 
--  Aspose.Words for .NET könyvtár telepítve. Letöltheti innen[Aspose.Releases]https://releases.aspose.com/words/net/ vagy használja a NuGet csomagkezelőt a telepítéséhez.
-- Egy dokumentumkönyvtár elérési útja, ahová a forrás és a cél dokumentumok mentésre kerülnek.
+## Névterek importálása
 
-## 2. lépés: Hozza létre a cél- és forrásdokumentumot
+Először foglalja bele a szükséges névtereket a projektbe:
 
- Példányok létrehozása a`Document` a cél- és forrásdokumentumokhoz.
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+## 1. lépés: Állítsa be projektjét
+
+Kezdje egy új C#-projekt létrehozásával a Visual Studióban, és telepítse az Aspose.Words-t a NuGet Package Manager segítségével.
+
+## 2. lépés: Inicializálja a dokumentumokat
+Hozzon létre példányokat a forrásból (`srcDoc`) és a rendeltetési hely (`dstDoc`) dokumentumokat.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -29,18 +43,17 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. lépés: Tartsa meg a forrás számozását importáláskor
-
- Ha meg szeretné őrizni a számozott bekezdések számozási formázását a forrásdokumentumból, hozzon létre egy példányt`ImportFormatOptions` és állítsa be`KeepSourceNumbering` nak nek`true` . Használj`NodeImporter` csomópontok importálásához a forrásdokumentumból a céldokumentumba, megadva`ImportFormatMode.KeepSourceFormatting` és a`importFormatOptions`.
+## 3. lépés: Az importálási beállítások konfigurálása
+Állítsa be az importálási beállításokat a forrásformázás megtartásához, beleértve a számozott bekezdéseket is.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
+	importFormatOptions);
 ```
 
-## 4. lépés: Importáljon és fűzzen hozzá bekezdéseket
-
- Ismételje meg a forrásdokumentum bekezdéseit, és importálja az egyes bekezdéseket a céldokumentumba a segítségével`importer`. Az importált csomópontok hozzáfűzése a céldokumentum törzséhez.
+## 4. lépés: Bekezdések importálása
+Ismételje meg a bekezdéseket a forrásdokumentumban, és importálja azokat a céldokumentumba.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -51,33 +64,30 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## 5. lépés: Mentse el a módosított dokumentumot
-
- Mentse el a módosított dokumentumot a`Save` módszere a`Document` tárgy.
+## 5. lépés: Mentse el a dokumentumot
+Mentse az egyesített dokumentumot a kívánt helyre.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-Ezzel befejeződik a forrásdokumentumnak a céldokumentumhoz való hozzáfűzése, miközben megtartja az eredeti számozási formázást az Aspose.Words for .NET használatával.
+## Következtetés
 
-### Példa forráskód a Keep Source Numbering használatához az Aspose.Words for .NET használatával 
+ Összefoglalva, az Aspose.Words for .NET használata dokumentumok importálására a formázás megőrzése mellett egyszerű`NodeImporter` osztály. Ez a módszer biztosítja, hogy a dokumentumok zökkenőmentesen megőrizzék eredeti megjelenésüket és szerkezetüket.
 
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## GYIK
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Tartsa meg a forráslista formázását számozott bekezdések importálásakor.
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, false);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
-```
+### Importálhatok dokumentumokat különböző formázási stílusokkal?
+ Igen, a`NodeImporter` osztály támogatja a dokumentumok importálását változatos formázási stílusokkal.
+
+### Mi a teendő, ha a dokumentumaim összetett táblázatokat és képeket tartalmaznak?
+Az Aspose.Words for .NET összetett struktúrákat, például táblázatokat és képeket kezel az importálási műveletek során.
+
+### Az Aspose.Words kompatibilis a .NET összes verziójával?
+Az Aspose.Words támogatja a .NET Framework és a .NET Core verziókat a zökkenőmentes integráció érdekében.
+
+### Hogyan kezelhetem a hibákat a dokumentumimportálás során?
+Használjon try-catch blokkokat az importálási folyamat során esetlegesen előforduló kivételek kezelésére.
+
+### Hol találhatok részletesebb dokumentációt az Aspose.Words for .NET-ről?
+ Meglátogatni a[dokumentáció](https://reference.aspose.com/words/net/) átfogó útmutatókért és API-referenciákért.

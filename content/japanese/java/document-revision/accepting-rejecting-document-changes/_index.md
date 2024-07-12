@@ -10,7 +10,7 @@ url: /ja/java/document-revision/accepting-rejecting-document-changes/
 
 ## Aspose.Words for Java の紹介
 
-Aspose.Words for Java は、Java 開発者が Word 文書を簡単に作成、操作、変換できるようにする強力なライブラリです。その主な機能の 1 つは、文書の変更を処理する機能であり、共同で文書を編集するための貴重なツールとなっています。
+Aspose.Words for Java は、Java 開発者が Word 文書を簡単に作成、操作、変換できるようにする強力なライブラリです。その主な機能の 1 つは、文書の変更を処理する機能であり、共同文書編集に非常に役立つツールとなっています。
 
 ## ドキュメントの変更を理解する
 

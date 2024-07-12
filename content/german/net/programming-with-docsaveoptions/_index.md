@@ -2,7 +2,7 @@
 title: Textverarbeitung mit Docsaveoptions
 linktitle: Textverarbeitung mit Docsaveoptions
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Speicheroptionen für Word-Dokumente anpassen. Die Tutorials führen Sie durch die verschiedenen verfügbaren Optionen wie Dateiformat, Komprimierung und Kennwortschutz.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Speicheroptionen für Word-Dokumente anpassen. Die Tutorials führen Sie durch die verschiedenen verfügbaren Optionen, wie Dateiformat, Komprimierung und Kennwortschutz.
 type: docs
 weight: 1600
 url: /de/net/programming-with-docsaveoptions/
@@ -16,6 +16,6 @@ In diesen Tutorials lernen Sie die besten Vorgehensweisen zum Speichern Ihrer Do
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Dokument mit Passwort verschlüsseln](./encrypt-document-with-password/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Dokumente mit einem Kennwort verschlüsseln.  |
-| [Kleine Metadateien nicht komprimieren](./do-not-compress-small-metafiles/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Funktion „Kleine Metadateien nicht komprimieren“ beim Speichern von Dokumenten aktivieren. |
-| [Bildaufzählungszeichen nicht speichern](./do-not-save-picture-bullet/) | Erfahren Sie, wie Sie das Speichern von Bildaufzählungszeichen in Word-Dokumenten mit Aspose.Words für .NET deaktivieren. |
+| [Dokument mit Passwort verschlüsseln](./encrypt-document-with-password/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET ein Dokument mit einem Kennwort verschlüsseln. Schützen Sie Ihre vertraulichen Informationen mühelos. |
+| [Kleine Metadateien nicht komprimieren](./do-not-compress-small-metafiles/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET sicherstellen, dass kleine Metadateien in Word-Dokumenten nicht komprimiert werden und so ihre Qualität und Integrität erhalten bleibt. Schritt-für-Schritt-Anleitung enthalten. |
+| [Bildaufzählungszeichen nicht speichern](./do-not-save-picture-bullet/) | Erfahren Sie mit unserer Schritt-für-Schritt-Anleitung, wie Sie Bildaufzählungszeichen in Aspose.Words für .NET handhaben. Vereinfachen Sie die Dokumentenverwaltung und erstellen Sie mühelos professionelle Word-Dokumente. |

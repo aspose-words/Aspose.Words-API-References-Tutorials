@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-document-properties/convert-between-measurement-units/
 ---
 
-tomto tutoriálu vás provedeme zdrojovým kódem C# pro převod mezi měrnými jednotkami pomocí Aspose.Words for .NET. Tato funkce umožňuje zadat okraje, vzdálenosti záhlaví a zápatí atd. v různých měrných jednotkách.
+V tomto tutoriálu vás provedeme zdrojovým kódem C# pro převod mezi měrnými jednotkami pomocí Aspose.Words for .NET. Tato funkce umožňuje zadat okraje, vzdálenosti záhlaví a zápatí atd. v různých měrných jednotkách.
 
 ## Krok 1: Nastavení projektu
 
@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Tento kód používá`ConvertUtil` třídy Aspose.Words pro převod zadaných hodnot na palce (`InchToPoint` ). Můžete také použít jiné metody převodu dostupné v`ConvertUtil` třídy pro převod hodnot na jiné měrné jednotky.
+ Tento kód používá`ConvertUtil` třídy Aspose.Words pro převod zadaných hodnot na palce (`InchToPoint`). Můžete také použít jiné metody převodu dostupné v`ConvertUtil` třídy pro převod hodnot na jiné měrné jednotky.
 
 ### Příklad zdrojového kódu pro Convert Between Measurement Units pomocí Aspose.Words for .NET
 

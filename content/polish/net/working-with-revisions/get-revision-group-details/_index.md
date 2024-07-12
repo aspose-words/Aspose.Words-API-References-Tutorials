@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### P: Jak uzyskać szczegółowe informacje na temat grupy wersji w Aspose.Words dla .NET?
 
-O: Przeglądaj wersje dokumentu za pomocą pętli i uzyskaj dostęp do właściwości każdej wersji, aby uzyskać żądane szczegóły. Możesz skorzystać z`RevisionType`, `Author`, `DateTime` I`ParentNode` właściwości, aby uzyskać odpowiednio typ wersji, autora, datę i poprawiony tekst.
+O: Przeglądaj wersje dokumentu za pomocą pętli i uzyskaj dostęp do właściwości każdej wersji, aby uzyskać żądane szczegóły. Możesz skorzystać z`RevisionType`, `Author`, `DateTime`I`ParentNode` właściwości, aby uzyskać odpowiednio typ wersji, autora, datę i poprawiony tekst.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

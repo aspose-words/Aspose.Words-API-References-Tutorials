@@ -8,11 +8,11 @@ weight: 10
 url: /zh/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-欢迎阅读本指南，了解如何使用 Aspose.Words for .NET 管理字体替换。如果您曾经为文档中字体无法正确显示而苦恼，那么您来对地方了。本教程将逐步指导您如何高效处理无后缀的字体替换。让我们开始吧！
+欢迎阅读本指南，了解如何使用 Aspose.Words for .NET 管理字体替换。如果您曾为文档中字体无法正确显示而苦恼，那么您来对地方了。本教程将逐步指导您如何高效处理无后缀的字体替换。让我们开始吧！
 
 ## 先决条件
 
-在深入学习本教程之前，请确保您已具备以下条件：
+在深入学习本教程之前，请确保您已准备好以下内容：
 
 - C# 基础知识：了解 C# 编程将使遵循和执行步骤变得更容易。
 -  Aspose.Words for .NET Library：从以下网址下载并安装该库[下载链接](https://releases.aspose.com/words/net/).

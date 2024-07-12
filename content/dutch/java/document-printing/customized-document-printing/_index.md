@@ -91,7 +91,7 @@ Absoluut! Aspose.Words voor Java is uitgerust om complexe documenten met gemak t
 
 ### Hoe kan ik problemen met het afdrukken van documenten oplossen?
 
-Als u problemen ondervindt bij het afdrukken van documenten, raadpleegt u de Aspose.Words voor Java-documentatie voor hulp bij het oplossen van problemen.
+Als u problemen ondervindt bij het afdrukken van documenten, raadpleeg dan de Aspose.Words voor Java-documentatie voor hulp bij het oplossen van problemen.
 
 ### Is er een proefversie van Aspose.Words voor Java beschikbaar?
 

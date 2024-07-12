@@ -75,7 +75,7 @@ A: Aspose.Words voor .NET is een krachtige bibliotheek voor woordenverwerking me
 
 #### Vraag: Hoe laad ik een Word-document met Aspose.Words voor .NET?
 
-A: Om een Word-document te laden met Aspose.Words voor .NET, kunt u de`Document` klasse en zijn constructor. U moet het bestandspad of de stroom van het document als parameter opgeven. Hier is een voorbeeld:
+ A: Om een Word-document te laden met Aspose.Words voor .NET, kunt u de`Document` klasse en zijn constructor. U moet het bestandspad of de stroom van het document als parameter opgeven. Hier is een voorbeeld:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
@@ -113,6 +113,6 @@ A: Ja, de functionaliteit "Bereiken tekst verwijderen in Word-document" in Aspos
 
 A: Wanneer u de functionaliteit 'Bereiken tekst in Word-document verwijderen' gebruikt, is het belangrijk ervoor te zorgen dat u zich op de juiste bereiken richt voor verwijdering. Er moet voor worden gezorgd dat er niet per ongeluk onbedoelde inhoud wordt verwijderd. Houd bovendien rekening met de impact op de documentopmaak en -structuur na de verwijdering, aangezien andere elementen dienovereenkomstig kunnen verschuiven of aanpassen.
 
-#### Q:. Kan ik tekstinhoud binnen specifieke alinea's of andere aangepaste bereiken verwijderen met behulp van de functionaliteit 'Bereiken tekst in Word-document verwijderen' in Aspose.Words voor .NET?
+#### Q:. Kan ik tekstinhoud binnen specifieke alinea's of andere aangepaste bereiken verwijderen met behulp van de functionaliteit "Bereiken tekst in Word-document verwijderen" in Aspose.Words voor .NET?
 
 A: Ja, u kunt tekstinhoud binnen specifieke alinea's of andere aangepaste bereiken verwijderen met behulp van de functionaliteit "Bereiken tekst verwijderen in Word-document" in Aspose.Words voor .NET. U kunt toegang krijgen tot het gewenste bereik binnen de structuur van het document (zoals secties, alinea's of tabellen) en de`Delete` methode om de tekstinhoud binnen dat bereik te verwijderen.

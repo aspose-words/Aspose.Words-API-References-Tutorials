@@ -2,120 +2,133 @@
 title: Nieograniczone edytowalne regiony w dokumencie programu Word
 linktitle: Nieograniczone edytowalne regiony w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak tworzyć nieograniczone obszary edytowalne w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak tworzyć nieograniczone edytowalne regiony w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/document-protection/unrestricted-editable-regions/
 ---
-W tym samouczku przeprowadzimy Cię przez kolejne etapy korzystania z funkcji nieograniczonej edycji obszarów Aspose.Words dla .NET. Ta funkcja umożliwia definiowanie obszarów w dokumencie programu Word, w których zawartość może być edytowana bez ograniczeń, nawet jeśli pozostała część dokumentu jest przeznaczona tylko do odczytu. Wykonaj poniższe kroki:
+## Wstęp
 
-## Krok 1: Załaduj dokument i ustaw ochronę
+Jeśli kiedykolwiek chciałeś chronić dokument programu Word, ale nadal zezwalać na edycję niektórych jego części, jesteś we właściwym miejscu! Ten przewodnik przeprowadzi Cię przez proces konfigurowania nieograniczonych edytowalnych regionów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Omówimy wszystko, od wymagań wstępnych po szczegółowe kroki, aby zapewnić płynne działanie. Gotowy? Zanurzmy się!
 
-Zacznij od załadowania istniejącego dokumentu:
+## Warunki wstępne
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
-Chroń dokument, ustawiając typ ochrony i hasło tylko do odczytu
+1.  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz go[Tutaj](https://releases.aspose.com/words/net/).
+2.  Ważna licencja Aspose: Możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio: każda najnowsza wersja powinna działać poprawnie.
+4. Podstawowa znajomość C# i .NET: Pomoże Ci to w podążaniu za kodem.
 
-## Krok 2: Tworzenie obszaru edytowalnego
+Teraz, gdy już wszystko gotowe, przejdźmy do zabawnej części!
 
-Zacznij od utworzenia obszaru edytowalnego przy użyciu obiektów EditableRangeStart i EditableRangeEnd:
+## Importuj przestrzenie nazw
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Dla obiektu EditableRangeStart, który właśnie utworzyliśmy, tworzony jest obiekt EditableRange.
-EditableRange editableRange = edRangeStart.EditableRange;
-
-// Umieść coś w zakresie edytowalnym.
-builder.Writeln("Paragraph inside first editable range");
-
-// Zakres edytowalny jest dobrze utworzony, jeśli ma początek i koniec.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## Krok 3: Dodaj treść poza obszarami edytowalnymi
-
-Możesz dodać treść poza obszarami edytowalnymi, które pozostaną tylko do odczytu:
+Aby rozpocząć korzystanie z Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw. Oto jak możesz to zrobić:
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## Krok 4: Zapisz dokument
+## Krok 1: Konfiguracja projektu
 
-Na koniec zapisz zmodyfikowany dokument:
+Na początek utwórzmy nowy projekt C# w Visual Studio.
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. Otwórz program Visual Studio: Zacznij od otwarcia programu Visual Studio i utworzenia nowego projektu aplikacji konsolowej.
+2. Zainstaluj Aspose.Words: Użyj Menedżera pakietów NuGet, aby zainstalować Aspose.Words. Można to zrobić, uruchamiając następującą komendę w konsoli Menedżera pakietów:
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-Pamiętaj, aby podać poprawną ścieżkę i nazwę pliku, aby zapisać dokument z obszarami edytowalnymi.
+## Krok 2: Ładowanie dokumentu
 
-### Przykładowy kod źródłowy dla nieograniczonych edytowalnych regionów przy użyciu Aspose.Words dla .NET
+Teraz załadujmy dokument, który chcesz chronić. Upewnij się, że masz gotowy dokument programu Word w swoim katalogu.
 
-Oto kompletny kod źródłowy nieograniczonych obszarów edytowalnych przy użyciu Aspose.Words dla .NET:
+1. Ustaw katalog dokumentów: Zdefiniuj ścieżkę do katalogu dokumentów.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  Załaduj dokument: Użyj`Document` class, aby załadować dokument programu Word.
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-// Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Prześlij dokument i ustaw go jako tylko do odczytu.
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Krok 3: Ochrona dokumentu
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+Następnie ustawimy dokument jako tylko do odczytu. Dzięki temu bez hasła nie będzie można dokonać żadnych zmian.
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1.  Zainicjuj DocumentBuilder: Utwórz instancję`DocumentBuilder` w celu wprowadzenia zmian w dokumencie.
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. Ustaw poziom ochrony: Chroń dokument za pomocą hasła.
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. Dodaj tekst tylko do odczytu: Wstaw tekst, który będzie tylko do odczytu.
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-// Rozpocznij edytowalny zakres.
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Dla obiektu EditableRangeStart, który właśnie utworzyliśmy, tworzony jest obiekt EditableRange.
-EditableRange editableRange = edRangeStart.EditableRange;
+## Krok 4: Tworzenie edytowalnych zakresów
 
-// Umieść coś w zakresie edytowalnym.
-builder.Writeln("Paragraph inside first editable range");
+Tutaj dzieje się magia. Utworzymy w dokumencie sekcje, które można edytować pomimo ogólnej ochrony tylko do odczytu.
 
-// Zakres edytowalny jest dobrze utworzony, jeśli ma początek i koniec.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. Rozpocznij edytowalny zakres: Określ początek edytowalnego zakresu.
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2.  Utwórz obiekt zakresu edytowalnego: An`EditableRange` obiekt zostanie utworzony automatycznie.
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. Wstaw tekst do edycji: Dodaj tekst w edytowalnym zakresie.
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## Krok 5: Zamknięcie zakresu edytowalnego
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+Zakres edytowalny nie jest kompletny bez końca. Dodajmy to dalej.
 
-```
-Wykonując poniższe kroki, możesz łatwo utworzyć nieograniczone obszary do edycji w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+1. Zakończ edytowalny zakres: Określ koniec edytowalnego zakresu.
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. Dodaj tekst tylko do odczytu poza zakresem: Wstaw tekst poza edytowalnym zakresem, aby zademonstrować ochronę.
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## Krok 6: Zapisywanie dokumentu
+
+Na koniec zapiszmy dokument z zastosowaną ochroną i edytowalnymi regionami.
+
+1.  Zapisz dokument: Użyj`Save` metoda zapisania zmodyfikowanego dokumentu.
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## Wniosek
-W tym samouczku nauczyliśmy się, jak tworzyć nieograniczone edytowalne regiony w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Wykonując podane kroki, możesz zdefiniować określone obszary w dokumencie, w których użytkownicy będą mogli swobodnie edytować treść, pozostawiając resztę dokumentu w trybie tylko do odczytu. Aspose.Words dla .NET oferuje zaawansowane funkcje ochrony i dostosowywania dokumentów, zapewniając kontrolę nad możliwościami edycji dokumentów Word.
 
-### Często zadawane pytania dotyczące nieograniczonych edytowalnych regionów w dokumencie Word
+masz to! Pomyślnie utworzyłeś nieograniczone edytowalne regiony w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta funkcja jest niezwykle przydatna w środowiskach współpracy, w których niektóre części dokumentu muszą pozostać niezmienione, a inne można edytować. 
 
-#### P: Jakie są nieograniczone edytowalne regiony w Aspose.Words dla .NET?
+ Eksperymentuj z bardziej złożonymi scenariuszami i różnymi poziomami ochrony, aby jak najlepiej wykorzystać Aspose.Words. Jeśli masz jakieś pytania lub napotkasz problemy, nie wahaj się i sprawdź[dokumentacja](https://reference.aspose.com/words/net/) lub skontaktuj się z nami[wsparcie](https://forum.aspose.com/c/words/8).
 
-O: Nieograniczone edytowalne regiony w Aspose.Words for .NET to obszary w dokumencie Word, w których zawartość może być edytowana bez żadnych ograniczeń, nawet jeśli reszta dokumentu jest ustawiona jako tylko do odczytu. Regiony te umożliwiają zdefiniowanie określonych części dokumentu, które użytkownicy mogą modyfikować, zachowując jednocześnie ogólną ochronę dokumentu.
+## Często zadawane pytania
 
-#### P: Jak mogę utworzyć nieograniczone edytowalne regiony za pomocą Aspose.Words dla .NET?
+### Czy mogę mieć wiele edytowalnych regionów w jednym dokumencie?
+Tak, możesz utworzyć wiele edytowalnych regionów, rozpoczynając i kończąc edytowalne zakresy w różnych częściach dokumentu.
 
-Odp.: Aby utworzyć nieograniczone edytowalne regiony w dokumencie programu Word przy użyciu Aspose.Words dla .NET, możesz wykonać następujące kroki:
-1.  Załaduj istniejący dokument za pomocą`Document` klasa.
-2.  Ustaw ochronę dokumentu na tylko do odczytu za pomocą`Protect` metoda`Document` obiekt.
-3.  Użyj`DocumentBuilder` class, aby utworzyć edytowalny zakres, dodając klasę`EditableRangeStart` obiekt i`EditableRangeEnd` obiekt.
-4.  Dodaj zawartość w edytowalnym zakresie za pomocą`DocumentBuilder`.
-5.  Zapisz zmodyfikowany dokument za pomocą`Save` metoda`Document` obiekt.
+### Jakie inne typy ochrony są dostępne w Aspose.Words?
+Aspose.Words obsługuje różne typy ochrony, takie jakAllowOnlyComments,AllowOnlyFormFields i NoProtection.
 
-#### P: Czy mogę mieć wiele nieograniczonych edytowalnych regionów w dokumencie programu Word?
+### Czy można usunąć ochronę z dokumentu?
+ Tak, możesz usunąć ochronę za pomocą`Unprotect` metodę i podaniu prawidłowego hasła.
 
-Odp.: Tak, w dokumencie programu Word możesz mieć wiele nieograniczonych edytowalnych regionów. Aby to osiągnąć, możesz utworzyć wiele zestawów`EditableRangeStart` I`EditableRangeEnd` obiekty za pomocą`DocumentBuilder` klasa. Każdy zestaw obiektów będzie definiował oddzielny region edytowalny, w którym użytkownicy będą mogli modyfikować zawartość bez żadnych ograniczeń.
+### Czy mogę określić różne hasła dla różnych sekcji?
+Nie, ochrona na poziomie dokumentu stosuje jedno hasło dla całego dokumentu.
 
-#### P: Czy mogę zagnieżdżać edytowalne regiony jeden w drugim?
-
- O: Nie, nie można zagnieżdżać edytowalnych regionów w sobie przy użyciu Aspose.Words dla .NET. Każdy edytowalny region zdefiniowany przez plik`EditableRangeStart` I`EditableRangeEnd` para powinna być niezależna i nie może nakładać się na siebie ani być zagnieżdżona w innym edytowalnym regionie. Zagnieżdżone regiony edytowalne nie są obsługiwane.
-
-#### P: Czy mogę usunąć zabezpieczenie tylko do odczytu z dokumentu znajdującego się w edytowalnym regionie?
-
-O: Nie, nie można usunąć zabezpieczenia tylko do odczytu z dokumentu znajdującego się w obszarze edytowalnym. Ochrona tylko do odczytu dotyczy całego dokumentu i nie można jej selektywnie usunąć w obrębie określonych edytowalnych regionów. Celem edytowalnych regionów jest umożliwienie modyfikacji treści przy jednoczesnym zachowaniu całego dokumentu w trybie tylko do odczytu.
+### Jak ubiegać się o licencję na Aspose.Words?
+Możesz zastosować licencję, ładując ją z pliku lub strumienia. Sprawdź dokumentację, aby poznać szczegółowe kroki.

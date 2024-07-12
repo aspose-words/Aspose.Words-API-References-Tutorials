@@ -84,7 +84,7 @@ Yorum çözünürlüğü, bir belgedeki geri bildirimin izlenmesine ve yönetilm
 
 #### S: Aspose.Words for .NET'te çözümlenen bir yoruma nasıl yanıt eklerim?
 
- C: Son belgede çözümlenen yorumlar varsayılan olarak gizlense de, çözümlenen bir yoruma yine de yanıt ekleyebilirsiniz.`Comment.AddReply`Yanıt metnini ve onu nereye eklemek istediğinizi belirten yöntem.
+ C: Çözümlenen yorumlar nihai belgede varsayılan olarak gizlenmiş olsa da, çözümlenen bir yoruma yine de yanıt ekleyebilirsiniz.`Comment.AddReply`Yanıt metnini ve onu nereye eklemek istediğinizi belirten yöntem.
 
 #### S: Aspose.Words for .NET'te çözümlenen yorumları nasıl görüntüleyebilirim?
 

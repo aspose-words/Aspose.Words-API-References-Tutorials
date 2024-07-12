@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Bước 2: Tạo một tài liệu mới
 
- Được rồi, hãy bắt đầu bằng việc tạo một tài liệu Word mới. Chúng tôi sẽ sử dụng`Document` Và`DocumentBuilder` các lớp từ Aspose.Words để bắt đầu mọi việc.
+ Được rồi, hãy bắt đầu bằng việc tạo một tài liệu Word mới. Chúng tôi sẽ sử dụng`Document`Và`DocumentBuilder` các lớp từ Aspose.Words để bắt đầu mọi việc.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.

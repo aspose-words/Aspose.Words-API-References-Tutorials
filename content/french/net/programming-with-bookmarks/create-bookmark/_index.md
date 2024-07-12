@@ -2,196 +2,135 @@
 title: Créer un signet dans un document Word
 linktitle: Créer un signet dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment créer des signets dans un document Word et spécifier les niveaux d'aperçu des signets dans un PDF à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment créer des signets dans des documents Word à l'aide d'Aspose.Words for .NET avec ce guide détaillé étape par étape. Parfait pour la navigation et l’organisation des documents.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/create-bookmark/
 ---
+## Introduction
 
-Dans cet article, nous explorerons le code source C# ci-dessus pour comprendre comment utiliser la fonction Créer un signet dans la bibliothèque Aspose.Words pour .NET. Cette fonctionnalité vous permet de créer des signets dans un document et de spécifier des niveaux d'aperçu des signets dans un fichier PDF de sortie.
+La création de signets dans un document Word peut changer la donne, surtout lorsque vous souhaitez naviguer sans effort dans des documents volumineux. Aujourd'hui, nous allons parcourir le processus de création de signets à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous guidera étape par étape, vous assurant de comprendre chaque partie du processus. Alors, allons-y !
 
 ## Conditions préalables
 
-- Connaissance de base du langage C#.
-- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+Avant de commencer, vous devez disposer des éléments suivants :
 
-## Étape 1 : Création du document et du générateur
+1.  Aspose.Words pour la bibliothèque .NET : téléchargez et installez à partir de[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : Visual Studio ou tout autre environnement de développement .NET.
+3. Connaissance de base de C# : Compréhension des concepts de base de la programmation C#.
 
- Avant de créer des signets, nous devons créer un document et un générateur de documents à l'aide du`Document` et`DocumentBuilder` objets:
+## Importer des espaces de noms
+
+Pour travailler avec Aspose.Words for .NET, vous devez importer les espaces de noms nécessaires :
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Étape 1 : configurer le document et DocumentBuilder
+
+Initialiser le document
+
+Tout d'abord, nous devons créer un nouveau document et initialiser le`DocumentBuilder`. C'est le point de départ pour ajouter du contenu et des signets à votre document.
+
+```csharp
+// Le chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Étape 2 : Création du signet principal
+ Explication : Le`Document` l'objet est votre toile. Le`DocumentBuilder` est comme votre stylo, qui vous permet d'écrire du contenu et de créer des signets dans le document.
 
- Nous utilisons le`StartBookmark` méthode pour démarrer un signet principal et le`EndBookmark` méthode pour y mettre fin. Entre les deux, nous pouvons ajouter du texte et d'autres signets :
+## Étape 2 : créer le signet principal
+
+Démarrer et terminer le signet principal
+
+Pour créer un signet, vous devez spécifier les points de début et de fin. Ici, nous allons créer un signet nommé « Mon signet ».
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-// Ajoutez plus de signets ou de texte ici.
-
-builder. EndBookmark("My Bookmark");
 ```
 
-## Étape 3 : Création de signets imbriqués
+ Explication : Le`StartBookmark` la méthode marque le début du signet, et`Writeln` ajoute du texte dans le signet.
 
- Nous pouvons également créer des signets imbriqués dans un signet principal. Nous utilisons le même`StartBookmark` et`EndBookmark` méthodes pour créer et mettre fin aux signets imbriqués :
+## Étape 3 : Créer un signet imbriqué
+
+Ajouter un signet imbriqué à l'intérieur du signet principal
+
+Vous pouvez imbriquer des signets dans d’autres signets. Ici, nous ajoutons « Signet imbriqué » dans « Mon signet ».
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## Étape 4 : Spécification des niveaux d'aperçu des signets dans le fichier PDF de sortie
+ Explication : L'imbrication des signets permet une organisation du contenu plus structurée et hiérarchique. Le`EndBookmark` La méthode ferme le signet actuel.
 
- Nous utilisons le`PdfSaveOptions` objet pour spécifier les niveaux d’aperçu des signets dans le fichier PDF de sortie. Nous utilisons le`BookmarksOutlineLevels` propriété
+## Étape 4 : ajouter du texte en dehors du signet imbriqué
 
-  pour ajouter des signets principaux et des signets imbriqués avec leurs niveaux respectifs :
+Continuer à ajouter du contenu
+
+Après le signet imbriqué, nous pouvons continuer à ajouter du contenu dans le signet principal.
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+Explication : Cela garantit que le signet principal englobe à la fois le signet imbriqué et le texte supplémentaire.
+
+## Étape 5 : Configurer les options d'enregistrement PDF
+
+Configurer les options d'enregistrement PDF pour les signets
+
+Lors de l'enregistrement du document au format PDF, nous pouvons configurer des options pour inclure des signets.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+ Explication : Le`PdfSaveOptions` La classe vous permet de spécifier comment le document doit être enregistré au format PDF. Le`BookmarksOutlineLevels` La propriété définit la hiérarchie des signets dans le PDF.
+
+## Étape 6 : Enregistrez le document
+
+Enregistrez le document au format PDF
+
+Enfin, enregistrez le document avec les options spécifiées.
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### Exemple de code source pour créer un signet à l'aide d'Aspose.Words pour .NET
-
-Voici l'exemple complet de code source pour démontrer la création de signets à l'aide d'Aspose.Words pour .NET :
-
-```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+ Explication : Le`Save` La méthode enregistre le document dans le format et l'emplacement spécifiés. Le PDF inclura désormais les signets que nous avons créés.
 
 ## Conclusion
 
-Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Créer un signet d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour créer des signets dans un document et spécifier les niveaux d'aperçu des signets dans un fichier PDF de sortie.
+La création de signets dans un document Word à l'aide d'Aspose.Words pour .NET est simple et extrêmement utile pour la navigation et l'organisation des documents. Que vous génériez des rapports, créiez des livres électroniques ou gériez des documents volumineux, les signets vous simplifient la vie. Suivez les étapes décrites dans ce didacticiel et vous aurez un PDF marqué de favoris prêt en un rien de temps.
 
-### FAQ
+## FAQ
 
-#### Q : Quelles sont les conditions préalables pour utiliser la fonction « Créer des favoris » dans Aspose.Words for .NET ?
+### Puis-je créer plusieurs signets à différents niveaux ?
 
-: Pour utiliser la fonction « Créer des favoris » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+Absolument! Vous pouvez créer autant de signets que nécessaire et définir leurs niveaux hiérarchiques lors de l'enregistrement du document au format PDF.
 
-#### Q : Comment créer un document dans Aspose.Words pour .NET ?
+### Comment mettre à jour le texte d'un favori ?
 
- R : Pour créer un document dans Aspose.Words for .NET, vous pouvez utiliser le`Document` classe. Voici un exemple de code :
+ Vous pouvez accéder au signet en utilisant`DocumentBuilder.MoveToBookmark` puis mettez à jour le texte.
 
-```csharp
-Document doc = new Document();
-```
+### Est-il possible de supprimer un favori ?
 
-#### Q : Comment créer un signet principal dans un document à l'aide d'Aspose.Words pour .NET ?
+ Oui, vous pouvez supprimer un favori en utilisant le`Bookmarks.Remove` en spécifiant le nom du signet.
 
- R : Pour créer un signet principal dans un document à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`StartBookmark` méthode pour démarrer le signet, ajouter du texte ou d'autres signets à l'intérieur, puis utiliser la` EndBookmark` pour y mettre fin. Voici un exemple de code :
+### Puis-je créer des signets dans d’autres formats que PDF ?
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+Oui, Aspose.Words prend en charge les signets dans différents formats, notamment DOCX, HTML et EPUB.
 
-#### Q : Comment créer un signet imbriqué dans un signet principal à l'aide d'Aspose.Words pour .NET ?
+### Comment puis-je m'assurer que les favoris apparaissent correctement dans le PDF ?
 
- R : Pour créer un signet imbriqué dans un signet principal à l'aide d'Aspose.Words for .NET, vous pouvez utiliser le même`StartBookmark` et`EndBookmark` méthodes pour démarrer et terminer le signet imbriqué. Voici un exemple de code :
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### Q : Comment spécifier les niveaux d'aperçu des signets dans un PDF de sortie à l'aide d'Aspose.Words pour .NET ?
-
- R : Pour spécifier les niveaux d'aperçu des signets dans un PDF de sortie à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`PdfSaveOptions` la classe et le`BookmarksOutlineLevels` propriété. Vous pouvez ajouter des signets principaux et des signets imbriqués avec leurs niveaux respectifs. Voici un exemple de code :
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### Q : Comment enregistrer un document après avoir créé des signets à l'aide d'Aspose.Words for .NET ?
-
- R : Pour enregistrer un document après avoir créé des signets à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Save` méthode du`Document` objet spécifiant le chemin du fichier de destination. Voici un exemple de code :
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### Q : Comment spécifier les niveaux d'aperçu des signets dans un PDF de sortie à l'aide d'Aspose.Words pour .NET ?
-
- R : Pour spécifier les niveaux d'aperçu des signets dans un PDF de sortie à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`PdfSaveOptions` la classe et le`BookmarksOutlineLevels` propriété. Vous pouvez ajouter des signets principaux et des signets imbriqués avec leurs niveaux respectifs. Voici un exemple de code :
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### Q : Comment créer des signets imbriqués dans un signet principal à l'aide d'Aspose.Words pour .NET ?
-
- R : Pour créer des signets imbriqués dans un signet principal à l'aide d'Aspose.Words for .NET, vous pouvez utiliser le même`StartBookmark` et`EndBookmark` méthodes pour démarrer et terminer les signets imbriqués. Assurez-vous de spécifier le signet parent comme paramètre lors de l'appel du`StartBookmark` méthode. Voici un exemple de code :
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### Q : Comment ajouter du texte dans un signet à l'aide d'Aspose.Words pour .NET ?
-
- R : Pour ajouter du texte dans un signet à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Write` méthode du`DocumentBuilder`objet spécifiant le texte à ajouter. Voici un exemple de code :
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### Q : Comment créer un signet principal dans un document à l'aide d'Aspose.Words pour .NET ?
-
- R : Pour créer un signet principal dans un document à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`StartBookmark` méthode pour démarrer le signet et le`EndBookmark` méthode pour y mettre fin. Voici un exemple de code :
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+ Assurez-vous de définir le`BookmarksOutlineLevels` correctement dans le`PdfSaveOptions`. Cela garantit que les signets sont inclus dans le plan du PDF.

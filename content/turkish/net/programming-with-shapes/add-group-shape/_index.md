@@ -17,14 +17,14 @@ Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Yeni Bir Belge ve GroupShape Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve`GroupShape`belgeyle çalışmaya itiraz edin.
+ Yeni bir örneğini oluşturun`Document` sınıf ve`GroupShape` belgeyle çalışmaya itiraz edin.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Adım 3: GroupShape'e Şekiller Oluşturun ve Ekleyin
- Gibi bireysel şekiller oluşturun`accentBorderShape` Ve`actionButtonShape` kullanmak`Shape` sınıf. Özelliklerini istediğiniz gibi özelleştirin. Bu şekilleri şuraya ekleyin:`groupShape` nesne.
+ Gibi bireysel şekiller oluşturun`accentBorderShape`Ve`actionButtonShape` kullanmak`Shape` sınıf. Özelliklerini istediğiniz gibi özelleştirin. Bu şekilleri şuraya ekleyin:`groupShape` nesne.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Adım 4: GroupShape için Boyutları Ayarlayın
- Genişliği, yüksekliği ve koordinat boyutunu ayarlayın.`groupShape`.
+Genişliği, yüksekliği ve koordinat boyutunu ayarlayın.`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## Adım 6: Belgeyi Kaydedin
- Belgeyi kullanarak belirtilen dizine kaydedin.`Save`yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithShapes.AddGroupShape.docx" olarak kaydediyoruz.
+ Belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithShapes.AddGroupShape.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

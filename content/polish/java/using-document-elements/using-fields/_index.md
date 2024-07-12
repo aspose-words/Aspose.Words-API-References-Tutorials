@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Zastępować`"Your Document Directory"` I`"Your Output Directory"` z odpowiednimi ścieżkami.
+ Zastępować`"Your Document Directory"`I`"Your Output Directory"` z odpowiednimi ścieżkami.
 
 ## 4. Dostosowywanie korespondencji seryjnej
 

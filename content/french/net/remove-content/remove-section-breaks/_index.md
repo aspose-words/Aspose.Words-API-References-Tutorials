@@ -32,7 +32,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 ```
 
 ## Étape 3 : Supprimer les sauts de section
-Pour supprimer les sauts de section, nous allons parcourir toutes les sections en commençant par la section qui précède la dernière et en passant à la première section. Dans la boucle, nous ajouterons le contenu de chaque section au début de la dernière section, puis supprimerons la section copiée.
+Pour supprimer les sauts de section, nous parcourrons toutes les sections en commençant par la section qui précède la dernière et en passant à la première section. Dans la boucle, nous ajouterons le contenu de chaque section au début de la dernière section, puis supprimerons la section copiée.
 
 ```csharp
 // Parcourez toutes les sections en commençant par la section qui précède la dernière et en passant à la première section.

@@ -12,7 +12,7 @@ Jika Anda ingin menyempurnakan tampilan visual dokumen Anda dan membuat keluaran
 
 ## Perkenalan
 
-Aspose.Words untuk Java adalah perpustakaan canggih yang memungkinkan pengembang Java membuat, mengedit, mengonversi, dan memproses dokumen Word secara terprogram. Ia menawarkan serangkaian fitur ekstensif, termasuk penataan gaya dokumen, yang memungkinkan pengguna menyesuaikan tampilan dokumen mereka hingga ke detail terkecil. Baik Anda ingin membuat laporan, faktur, surat, atau jenis dokumen lainnya, Aspose.Words untuk Java menyediakan alat untuk membuat dokumen Anda menarik secara visual dan profesional.
+Aspose.Words for Java adalah perpustakaan canggih yang memungkinkan pengembang Java membuat, mengedit, mengonversi, dan memproses dokumen Word secara terprogram. Ia menawarkan serangkaian fitur ekstensif, termasuk penataan gaya dokumen, yang memungkinkan pengguna menyesuaikan tampilan dokumen mereka hingga ke detail terkecil. Baik Anda ingin membuat laporan, faktur, surat, atau jenis dokumen lainnya, Aspose.Words untuk Java menyediakan alat untuk membuat dokumen Anda menarik secara visual dan profesional.
 
 ## Memulai dengan Aspose.Words untuk Java
 

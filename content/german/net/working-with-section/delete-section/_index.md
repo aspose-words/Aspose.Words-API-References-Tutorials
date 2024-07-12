@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/working-with-section/delete-section/
 ---
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET einen bestimmten Abschnitt eines Word-Dokuments löschen. Das Löschen eines Abschnitts kann nützlich sein, um bestimmte Teile Ihres Dokuments neu anzuordnen oder zu löschen. Wir führen Sie Schritt für Schritt durch den Code, damit Sie ihn in Ihrem .NET-Projekt verstehen und implementieren können.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET einen bestimmten Abschnitt eines Word-Dokuments löschen. Das Löschen eines Abschnitts kann nützlich sein, um bestimmte Teile Ihres Dokuments neu anzuordnen oder zu löschen. Wir führen Sie Schritt für Schritt durch, damit Sie den Code verstehen und in Ihrem .NET-Projekt implementieren können.
 
 ## Voraussetzungen
 Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente verfügen:

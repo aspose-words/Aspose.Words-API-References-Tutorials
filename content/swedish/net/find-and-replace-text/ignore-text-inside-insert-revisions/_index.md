@@ -2,196 +2,94 @@
 title: Ignorera text inuti Infoga ändringar
 linktitle: Ignorera text inuti Infoga ändringar
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du använder funktionen "Ignorera text inuti infoga versioner" i Aspose.Words för .NET för att manipulera infogningsrevisioner i Word-dokument.
+description: Lär dig hur du hanterar dokumentrevisioner effektivt med Aspose.Words för .NET. Upptäck tekniker för att ignorera text i infogningsversioner för strömlinjeformad redigering.
 type: docs
 weight: 10
 url: /sv/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
+## Introduktion
 
-I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder Ignore Text Inside Insert Revisions-funktionen i Aspose.Words for .NET-biblioteket. Den här funktionen är användbar när vi vill ignorera text i infogningsrevisioner medan vi manipulerar dokument.
+I den här omfattande guiden kommer vi att fördjupa oss i att använda Aspose.Words för .NET för att hantera dokumentrevisioner effektivt. Oavsett om du är en utvecklare eller en teknikentusiast, kan du effektivisera dina dokumentbearbetningsarbetsflöden om du förstår hur man ignorerar text i infogade ändringar. Denna handledning kommer att utrusta dig med nödvändiga färdigheter för att utnyttja Aspose.Words kraftfulla funktioner för att hantera dokumentrevideringar sömlöst.
 
 ## Förutsättningar
 
-- Grundläggande kunskaper i C#-språket.
-- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
+Innan du dyker in i handledningen, se till att du har följande förutsättningar på plats:
+- Visual Studio installerat på din dator.
+- Aspose.Words för .NET-bibliotek integrerat i ditt projekt.
+- Grundläggande kunskaper i C# programmeringsspråk och .NET framework.
 
-## Steg 1: Skapa ett nytt dokument
+## Importera namnområden
 
- Innan vi börjar manipulera text i infogningsversioner måste vi skapa ett nytt dokument med Aspose.Words för .NET. Detta kan göras genom att instansiera en`Document` objekt:
-
+Börja med att inkludera de nödvändiga namnrymden i ditt C#-projekt:
 ```csharp
-Document doc = new Document();
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using System;
+using System.Text.RegularExpressions;
 ```
 
-## Steg 2: Infoga text med revisionsspårning
+## Steg 1: Skapa ett nytt dokument och börja spåra revisioner
 
- När vi har ett dokument kan vi infoga text med revisionsspårning med hjälp av en`DocumentBuilder`objekt. Till exempel, för att infoga texten "Infogad" med revisionsspårning, kan vi använda`StartTrackRevisions`, `Writeln` och`StopTrackRevisions` metoder:
-
+Initiera först ett nytt dokument och börja spåra revisioner:
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// Börja spåra revisioner
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted");
+builder.Writeln("Inserted"); //Infoga text med spårningsrevisioner
 doc.StopTrackRevisions();
 ```
 
-## Steg 3: Infoga ogranskad text
+## Steg 2: Infoga icke-reviderad text
 
- Förutom text med revisionsspårning kan vi även infoga oreviderad text med hjälp av`DocumentBuilder` objekt. Till exempel, för att infoga texten "Text" utan revision, kan vi använda`Write` metod:
-
+Infoga sedan text i dokumentet utan att spåra revisioner:
 ```csharp
 builder.Write("Text");
 ```
 
-## Steg 4: Använd funktionen Ignorera text inuti Infoga ändringar
+## Steg 3: Ignorera infogad text med hjälp av FindReplaceOptions
 
- För att ignorera text inuti infoga revisioner på efterföljande operationer kan vi använda a`FindReplaceOptions` objekt och ställ in`IgnoreInserted`egendom till`true`:
-
+Konfigurera nu FindReplaceOptions för att ignorera infogade revisioner:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-```
 
-## Steg 5: Använda reguljära uttryck för att söka och ersätta
-
-För att utföra sökoperationer och ersätta dokumenttexten kommer vi att använda reguljära uttryck. I vårt exempel kommer vi att söka efter alla förekomster av bokstaven "e" och ersätta dem med en asterisk "* ". Vi kommer att använda .NET`Regex` klass för detta:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Steg 6: Visa den modifierade dokumentutgången
+## Steg 4: Skriv ut dokumenttext
 
- Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
-
+Visa dokumenttexten efter att ha ignorerat infogade versioner:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## Steg 7: Ändra alternativ för att inkludera infogningsrevisioner
+## Steg 5: Återställ alternativet Ignorera infod text
 
-Om vi vill inkludera texten inuti infogningsrevisionerna i utdataresultatet, kan vi ändra alternativen för att inte ignorera infogningsrevisionerna. För detta kommer vi att ställa in`IgnoreInserted`egendom till`false`:
-
+För att återställa ignorering av infod text, ändra FindReplaceOptions:
 ```csharp
 options.IgnoreInserted = false;
-```
-
-## Steg 8: Visa det ändrade dokumentet med infogningsrevisioner
-
-Efter att ha ändrat alternativen kan vi utföra sökningen och ersätta igen för att få resultatet med texten inuti insättningsrevisionerna:
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-
-### Exempel på källkod för Ignorera text inuti Infoga versioner med Aspose.Words för .NET
-
-Här är den fullständiga källkoden för att demonstrera användningen av funktionen Ignorera text inuti infoga ändringar med Aspose.Words för .NET:
-
-
-```csharp
-       
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Infoga text med spårningsrevisioner.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	builder.Writeln("Inserted");
-	doc.StopTrackRevisions();
-
-	// Infoga icke-reviderad text.
-	builder.Write("Text");
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreInserted = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-   
 ```
 
 ## Slutsats
 
-den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Ignorera text inuti infoga ändringar i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att skapa ett dokument, infoga text med spårningsrevisioner och oreviderad text, använda funktionen Ignorera text inuti Infoga revisioner, utföra sökning och ersätta operationer med reguljära uttryck och visa det ändrade dokumentet.
+Att bemästra tekniken att ignorera text inuti infogningsrevisioner med Aspose.Words för .NET förbättrar dina dokumentredigeringsmöjligheter. Genom att följa dessa steg kan du effektivt hantera revisioner i dina dokument, vilket säkerställer tydlighet och precision i dina textbearbetningsuppgifter.
 
-### FAQ's
+## FAQ's
 
-#### F: Vad är funktionen "Ignorera text inuti infoga ändringar" i Aspose.Words för .NET?
+### Hur kan jag börja spåra revisioner i ett Word-dokument med Aspose.Words för .NET?
+ För att börja spåra revisioner, använd`doc.StartTrackRevisions(author, date)` metod.
 
-S: Funktionen "Ignorera text inuti infogningsrevisioner" i Aspose.Words för .NET låter dig ange om texten inuti infogningsrevisioner ska ignoreras under vissa operationer, som att hitta och ersätta text. När den här funktionen är aktiverad, beaktas inte texten i bilagans versioner under drift.
+### Vad är fördelen med att ignorera infogad text i dokumentrevideringar?
+Att ignorera infogad text hjälper till att behålla fokus på kärninnehållet samtidigt som dokumentändringar hanteras effektivt.
 
-#### F: Hur kan jag skapa ett nytt dokument med Aspose.Words för .NET?
+### Kan jag återställa ignorerad infogat text till originalet i Aspose.Words för .NET?
+Ja, du kan återställa ignorerad infogat text med lämpliga inställningar för FindReplaceOptions.
 
- S: För att skapa ett nytt dokument med Aspose.Words för .NET kan du instansiera en`Document` objekt. Här är ett exempel på C#-kod för att skapa ett nytt dokument:
+### Var kan jag hitta mer dokumentation om Aspose.Words för .NET?
+ Besök[Aspose.Words för .NET-dokumentation](https://reference.aspose.com/words/net/) för detaljerade guider och API-referenser.
 
-```csharp
-Document doc = new Document();
-```
-
-#### F: Hur kan jag infoga text med revisionsspårning i Aspose.Words för .NET?
-
-S: När du har ett dokument kan du infoga text med revisionsspårning med hjälp av en`DocumentBuilder` objekt. Till exempel, för att infoga texten "Infogad" med revisionsspårning, kan du använda`StartTrackRevisions`, `Writeln` , och`StopTrackRevisions` metoder:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted");
-doc.StopTrackRevisions();
-```
-
-#### F: Hur kan jag infoga oreviderad text i Aspose.Words för .NET?
-
- S: Förutom text med revisionsspårning kan du också infoga oreviderad text med hjälp av`DocumentBuilder` objekt. Till exempel, för att infoga texten "Text" utan revidering, kan du använda`Write` metod:
-
-```csharp
-builder.Write("Text");
-```
-
-#### F: Hur kan jag ignorera text i infogningsversioner i Aspose.Words för .NET?
-
- S: För att ignorera text i infogningsrevisioner under efterföljande operationer, kan du använda a`FindReplaceOptions` objekt och ställ in`IgnoreInserted`egendom till`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-```
-
-#### F: Hur kan jag söka och ersätta med reguljära uttryck i Aspose.Words för .NET?
-
- S: För att utföra sök- och ersättningsoperationer på texten i dokumentet med hjälp av reguljära uttryck, kan du använda .NET`Regex` klass. Till exempel, för att söka efter alla förekomster av bokstaven "e" och ersätta dem med en asterisk "* ", kan du skapa en`Regex` objekt och använd det med`Replace` metod:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### F: Hur kan jag se den modifierade utdata från dokumentet i Aspose.Words för .NET?
-
- S: Efter att ha tillämpat sök- och ersättningsoperationer kan du se det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### F: Hur kan jag inkludera insättningsrevisionerna i utdataresultatet i Aspose.Words för .NET?
-
- S: För att inkludera texten i infogningsrevisionerna i utdataresultatet, kan du ändra alternativen för att inte ignorera infogningsrevisionerna. För detta kan du ställa in`IgnoreInserted` egendom av`FindReplaceOptions` invända mot`false`:
-
-```csharp
-options.IgnoreInserted = false;
-```
-
-#### F: Hur kan jag visa det modifierade dokumentet med insättningsversionerna i Aspose.Words för .NET?
-
-S: Efter att ha ändrat alternativen för att inkludera infogningsrevisioner kan du utföra sökningen och ersätta igen för att få resultatet med texten inuti infogningsrevisionerna:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Finns det ett communityforum för att diskutera Aspose.Words för .NET-relaterade frågor?
+ Ja, du kan besöka[Aspose.Words forum](https://forum.aspose.com/c/words/8) för samhällsstöd och diskussioner.

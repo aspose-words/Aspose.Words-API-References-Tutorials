@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Tambahkan folder baru sumber yang akan menginstruksikan Aspose.Words untuk mencari font di folder berikut.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Tambahkan folder khusus yang berisi font kami ke daftar sumber font yang ada.
+// Tambahkan folder khusus yang berisi font kami ke daftar sumber font yang ada.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã trình bày cách sử dụng Aspose.Words cho .NET để thay đổi các tab trong mục lục của tài liệu Word bằng mã nguồn C# được cung cấp. Bằng cách làm theo các bước được cung cấp, bạn có thể dễ dàng tùy chỉnh các tab mục lục trong tài liệu Word trong ứng dụng C# của mình. Aspose.Words mang đến sự linh hoạt và sức mạnh to lớn để làm việc với các kiểu và định dạng tài liệu của bạn, cho phép bạn tạo các tài liệu Word hấp dẫn và chuyên nghiệp.
+Trong hướng dẫn này, chúng tôi đã trình bày cách sử dụng Aspose.Words cho .NET để thay đổi các tab trong mục lục của tài liệu Word bằng mã nguồn C# được cung cấp. Bằng cách làm theo các bước được cung cấp, bạn có thể dễ dàng tùy chỉnh các tab mục lục trong tài liệu Word trong ứng dụng C# của mình. Aspose.Words cung cấp tính linh hoạt và sức mạnh to lớn để làm việc với các kiểu và định dạng tài liệu của bạn, cho phép bạn tạo các tài liệu Word hấp dẫn và chuyên nghiệp.
 
 ### Câu hỏi thường gặp về thay đổi điểm dừng tab toc trong tài liệu word
 

@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Paso 4: inserta la celda y ve al formato de fila
-Ahora podemos insertar una celda en la tabla y acceder al formato de fila para esa celda usando el generador de documentos.`InsertCell()` y`RowFormat` métodos.
+Ahora podemos insertar una celda en la tabla y acceder al formato de fila para esa celda usando el generador de documentos.`InsertCell()`y`RowFormat` métodos.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Paso 5: establecer la altura de la fila
- Para establecer la altura de la fila, utilizamos el`Height` y`HeightRule` propiedades del formato de fila. En este ejemplo, establecemos una altura de fila de 100 puntos y usamos el`Exactly` regla.
+ Para establecer la altura de la fila, utilizamos el`Height`y`HeightRule` propiedades del formato de fila. En este ejemplo, establecemos una altura de fila de 100 puntos y usamos el`Exactly` regla.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Paso 6: definir el formato de la tabla
- Algunas propiedades de formato se pueden configurar en la propia tabla y se aplican a todas las filas de la tabla. En este ejemplo, configuramos las propiedades del margen de la tabla usando el`LeftPadding`, `RightPadding`, `TopPadding` y`BottomPadding` propiedades.
+ Algunas propiedades de formato se pueden configurar en la propia tabla y se aplican a todas las filas de la tabla. En este ejemplo, configuramos las propiedades del margen de la tabla usando el`LeftPadding`, `RightPadding`, `TopPadding`y`BottomPadding` propiedades.
 
 ```csharp
 table. LeftPadding = 30;

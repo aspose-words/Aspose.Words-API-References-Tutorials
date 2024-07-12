@@ -21,7 +21,7 @@ Prima di immergerci nei dettagli, assicuriamoci di aver impostato tutto:
 3. Visual Studio: qualsiasi versione recente dovrebbe funzionare, ma si consiglia la versione più recente.
 4. .NET Framework: assicurati che sia installato sul tuo sistema.
 
-Pronti per iniziare? Eccezionale! Saltiamo subito dentro.
+Pronto per iniziare? Eccezionale! Saltiamo subito dentro.
 
 ## Importa spazi dei nomi
 

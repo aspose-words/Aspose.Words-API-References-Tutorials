@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: caricare il documento e configurare le impostazioni di sostituzione dei caratteri
- Successivamente, caricheremo il documento utilizzando il file`Document` classe e configurare le impostazioni di sostituzione dei caratteri utilizzando il file`FontSettings`classe. Caricheremo le impostazioni di fallback dei caratteri Noto utilizzando il file`LoadNotoFallbackSettings()` metodo.
+ Successivamente, caricheremo il documento utilizzando il file`Document` classe e configurare le impostazioni di sostituzione dei caratteri utilizzando il file`FontSettings` classe. Caricheremo le impostazioni di fallback dei caratteri Noto utilizzando il file`LoadNotoFallbackSettings()` metodo.
 
 ```csharp
 // Caricare il documento e configurare le impostazioni di sostituzione dei caratteri

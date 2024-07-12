@@ -82,7 +82,7 @@ Pamiętaj, aby określić poprawną ścieżkę i nazwę pliku dokumentu wyjścio
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// To wywołanie jest ważne, aby utworzyć zagnieżdżoną tabelę w pierwszej tabeli.
-	// Bez tego wywołania komórki wstawione poniżej zostaną dołączone do tabeli zewnętrznej.
+	//Bez tego wywołania komórki wstawione poniżej zostaną dołączone do tabeli zewnętrznej.
 	builder.EndTable();
 	// Przejdź do pierwszej komórki tabeli zewnętrznej.
 	builder.MoveTo(cell.FirstParagraph);

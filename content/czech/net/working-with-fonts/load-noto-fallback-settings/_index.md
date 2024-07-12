@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Načtěte dokument a nakonfigurujte nastavení nahrazování písem
- Dále načteme dokument pomocí`Document` třídy a nakonfigurujte nastavení přepsání písem pomocí`FontSettings`třída. Načteme nastavení záložního písma Noto pomocí`LoadNotoFallbackSettings()` metoda.
+ Dále načteme dokument pomocí`Document` třídy a nakonfigurujte nastavení přepsání písem pomocí`FontSettings` třída. Načteme nastavení záložního písma Noto pomocí`LoadNotoFallbackSettings()` metoda.
 
 ```csharp
 // Načtěte dokument a nakonfigurujte nastavení nahrazování písem

@@ -9,7 +9,7 @@ url: /id/java/document-styling/styling-paragraphs-text/
 ---
 ## Perkenalan
 
-Dalam hal memanipulasi dan memformat dokumen secara terprogram di Java, Aspose.Words for Java adalah pilihan utama di kalangan pengembang. API canggih ini memungkinkan Anda membuat, mengedit, dan menata paragraf dan teks dalam dokumen Anda dengan mudah. Dalam panduan komprehensif ini, kami akan memandu Anda melalui proses penataan paragraf dan teks menggunakan Aspose.Words untuk Java. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan langkah demi langkah dengan kode sumber ini akan membekali Anda dengan pengetahuan dan keterampilan yang dibutuhkan untuk menguasai pemformatan dokumen. Ayo selami!
+Dalam hal memanipulasi dan memformat dokumen secara terprogram di Java, Aspose.Words for Java adalah pilihan utama di kalangan pengembang. API canggih ini memungkinkan Anda membuat, mengedit, dan menata paragraf dan teks dalam dokumen Anda dengan mudah. Dalam panduan komprehensif ini, kami akan memandu Anda melalui proses penataan paragraf dan teks menggunakan Aspose.Words untuk Java. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan langkah demi langkah dengan kode sumber ini akan membekali Anda dengan pengetahuan dan keterampilan yang diperlukan untuk menguasai pemformatan dokumen. Ayo selami!
 
 ## Memahami Aspose.Words untuk Java
 

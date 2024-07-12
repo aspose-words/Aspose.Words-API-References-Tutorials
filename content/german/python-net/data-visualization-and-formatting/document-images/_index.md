@@ -1,7 +1,7 @@
 ---
 title: Wirkung von Dokumenten mit Rich Media-Bildern steigern
 linktitle: Wirkung von Dokumenten mit Rich Media-Bildern steigern
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Verbessern Sie die Wirkung Ihres Dokuments mit Rich-Media-Bildern mithilfe von Aspose.Words für Python. Erfahren Sie Schritt für Schritt, wie Sie Bilder einfügen, formatieren und optimieren.
 type: docs
 weight: 11
@@ -14,7 +14,7 @@ In einer Welt, in der die Aufmerksamkeitsspanne immer kürzer wird und Informati
 
 ## Die Rolle von Rich Media-Bildern verstehen
 
-Rich-Media-Bilder umfassen verschiedene Arten visueller Inhalte, wie etwa Fotos, Diagramme, Infografiken und Tabellen. Sie können verwendet werden, um Konzepte zu veranschaulichen, Kontext bereitzustellen, Daten zu präsentieren und Emotionen hervorzurufen. Durch die Einbindung von Bildern in Ihre Dokumente können Sie langweilige und monotone Texte in spannende Erzählungen verwandeln, die bei Ihren Lesern Anklang finden.
+Rich-Media-Bilder umfassen verschiedene Arten visueller Inhalte, wie etwa Fotos, Diagramme, Infografiken und Tabellen. Sie können verwendet werden, um Konzepte zu veranschaulichen, Kontext bereitzustellen, Daten zu präsentieren und Emotionen hervorzurufen. Durch die Einbindung von Bildern in Ihre Dokumente können Sie langweilige und monotone Texte in ansprechende Erzählungen verwandeln, die bei Ihren Lesern Anklang finden.
 
 ## Erste Schritte mit Aspose.Words für Python
 
@@ -106,7 +106,7 @@ doc.save("document.pdf", aw.SaveFormat.PDF)
 
 ## Integration mit Web- und mobilen Apps
 
-Sie können Aspose.Words in Ihre Web- und Mobilanwendungen integrieren, um dynamische Dokumente mit Rich-Media-Bildern zu erstellen.
+Sie können Aspose.Words in Ihre Web- und Mobilanwendungen integrieren, um dynamische Dokumente mit Rich-Media-Bildern zu generieren.
 
 ```python
 # Integrate with a web app framework
@@ -131,7 +131,7 @@ Rich-Media-Bilder erleichtern die Kommunikation, indem sie komplexe Ideen verein
 
 - Wählen Sie Bilder aus, die zur Botschaft Ihres Inhalts passen.
 - Entscheiden Sie sich für qualitativ hochwertige Bilder, die relevant und klar sind.
-- Berücksichtigen Sie bei der Platzierung der Bilder einen optimalen Bildfluss.
+- Berücksichtigen Sie bei der Platzierung der Bilder einen optimalen Fluss.
 
 ## Überlegungen zur Leistung
 

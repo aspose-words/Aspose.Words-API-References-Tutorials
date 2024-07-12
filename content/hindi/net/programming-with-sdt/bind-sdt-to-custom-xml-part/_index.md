@@ -17,7 +17,7 @@ url: /hi/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 - C# और XML का बुनियादी ज्ञान.
 
 ## चरण 1: दस्तावेज़ निर्देशिका सेट करें
- अपने दस्तावेज़ निर्देशिका का पथ सेट करके आरंभ करें।`"YOUR DOCUMENT DIRECTORY"` उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
+ अपने दस्तावेज़ निर्देशिका का पथ सेट करके आरंभ करें।`"YOUR DOCUMENT DIRECTORY"`उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -68,4 +68,4 @@ doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 	doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 ```
 
-बस! आपने Aspose.Words for .NET का उपयोग करके अपने Word दस्तावेज़ में एक SDT को CustomXmlPart से सफलतापूर्वक जोड़ दिया है।
+बस! आपने .NET के लिए Aspose.Words का उपयोग करके अपने Word दस्तावेज़ में एक CustomXmlPart से SDT को सफलतापूर्वक जोड़ दिया है।

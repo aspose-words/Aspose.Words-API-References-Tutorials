@@ -73,7 +73,7 @@ internal class ResourceSteamFontSource : StreamFontSource
 }
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte het document op nadat u de lettertype-instellingen hebt toegepast. Bewaar het in een formaat naar keuze; hier slaan we het op als PDF.
 
@@ -99,7 +99,7 @@ U hebt nu het proces van het gebruik van een bronstroom als lettertypebron onder
 
 ###  Vraag 3: Kan ik andere soorten waarschuwingen verwerken?`IWarningCallback`?
 
- Ja de`IWarningCallback` interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
+ Ja de`IWarningCallback`interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
 
 ### V4: Waar kan ik ondersteuning vinden voor Aspose.Words?
 

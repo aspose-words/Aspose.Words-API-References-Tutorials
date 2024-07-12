@@ -2,49 +2,67 @@
 title: गंतव्य शैलियों का उपयोग सूची
 linktitle: गंतव्य शैलियों का उपयोग सूची
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words का उपयोग करके गंतव्य दस्तावेज़ की सूची शैलियों को संरक्षित करते हुए Word दस्तावेज़ों को जोड़ना और जोड़ना सीखें।
+description: Aspose.Words for .NET के साथ दस्तावेज़ सूचियों को सहजता से मर्ज और प्रबंधित करना सीखें। कुशल दस्तावेज़ एकीकरण के लिए हमारे चरण-दर-चरण ट्यूटोरियल का पालन करें।
 type: docs
 weight: 10
 url: /hi/net/join-and-append-documents/list-use-destination-styles/
 ---
+## परिचय
 
-यह ट्यूटोरियल आपको .NET के लिए Aspose.Words की सूची उपयोग गंतव्य शैलियाँ सुविधा का उपयोग करने की प्रक्रिया के माध्यम से मार्गदर्शन करेगा। यह सुविधा आपको गंतव्य दस्तावेज़ की सूची शैलियों का उपयोग करते हुए Word दस्तावेज़ों को जोड़ने और जोड़ने की अनुमति देती है।
+लगातार स्टाइलिंग बनाए रखते हुए दस्तावेज़ों को एकीकृत करना चुनौतीपूर्ण हो सकता है, खासकर सूचियों के साथ। .NET के लिए Aspose.Words इन जटिलताओं को प्रबंधित करने के लिए मजबूत उपकरण प्रदान करता है, यह सुनिश्चित करता है कि आपके दस्तावेज़ अपनी स्वरूपण अखंडता को बनाए रखें। यह ट्यूटोरियल आपको एक पॉलिश अंतिम उत्पाद के लिए गंतव्य शैलियों का उपयोग करके सूचियों के साथ दस्तावेज़ों को मर्ज करने की प्रक्रिया के माध्यम से मार्गदर्शन करेगा।
 
 ## आवश्यक शर्तें
 
-आरंभ करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
+इस ट्यूटोरियल में आगे बढ़ने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
+- आपके मशीन पर Visual Studio स्थापित है.
+- Aspose.Words for .NET लाइब्रेरी आपके प्रोजेक्ट में एकीकृत है।
+- C# प्रोग्रामिंग भाषा की बुनियादी समझ।
 
-1. Aspose.Words for .NET इंस्टॉल किया गया है। आप इसे Aspose वेबसाइट से डाउनलोड कर सकते हैं या NuGet के माध्यम से इंस्टॉल कर सकते हैं।
-2. विजुअल स्टूडियो या कोई अन्य C# विकास वातावरण।
+## नामस्थान आयात करें
 
-## चरण 1: दस्तावेज़ निर्देशिकाएँ आरंभ करें
-
- सबसे पहले, आपको अपने दस्तावेज़ निर्देशिका का पथ सेट करना होगा।`dataDir` चर को उस पथ पर जोड़ें जहां आपके दस्तावेज़ स्थित हैं.
+Aspose.Words कार्यक्षमताओं का लाभ उठाने के लिए आवश्यक नामस्थानों को आयात करके प्रारंभ करें:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
+
+आइये इस प्रक्रिया को स्पष्ट चरणों में विभाजित करें:
+
+## चरण 1: दस्तावेज़ पथ सेट करें
+
+सुनिश्चित करें कि आपने वह निर्देशिका पथ परिभाषित किया है जहां आपके दस्तावेज़ स्थित हैं:
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+```
+
+ प्रतिस्थापित करें`"YOUR_DOCUMENT_DIRECTORY_PATH"` वास्तविक निर्देशिका पथ के साथ जहां आपके दस्तावेज़ संग्रहीत हैं।
 
 ## चरण 2: स्रोत और गंतव्य दस्तावेज़ लोड करें
 
-इसके बाद, आपको Aspose.Words का उपयोग करके स्रोत और गंतव्य दस्तावेज़ों को लोड करना होगा`Document` क्लास में फ़ाइल नाम अपडेट करें.`Document` अपने दस्तावेज़ के नाम के अनुसार कन्स्ट्रक्टर का चयन करें।
+Aspose.Words का उपयोग करके स्रोत और गंतव्य दस्तावेज़ लोड करें:
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+Document srcDoc = new Document(dataDir + "DocumentSource.docx");
+Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
 ```
 
-## चरण 3: स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ के बाद जारी रखने के लिए सेट करें
+ समायोजित करना`"DocumentSource.docx"`और`"DocumentDestination.docx"` अपने वास्तविक फ़ाइल नामों के साथ.
 
- यह सुनिश्चित करने के लिए कि स्रोत दस्तावेज़ की सामग्री गंतव्य दस्तावेज़ के अंत के बाद भी जारी रहे, आपको सेट करना होगा`SectionStart` स्रोत दस्तावेज़ में पहले खंड की संपत्ति`SectionStart.Continuous`.
+## चरण 3: स्रोत दस्तावेज़ के लिए अनुभाग प्रारंभ सेट करें
+
+दस्तावेज़ों का सुचारू रूप से विलय सुनिश्चित करने के लिए, स्रोत दस्तावेज़ का अनुभाग प्रारंभ सेट करें:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## चरण 4: सूची स्वरूपण संभालें
+यह सेटिंग दस्तावेज़ों के बीच निरंतरता बनाए रखने में मदद करती है।
 
-सूची स्वरूपण को संभालने के लिए, आप स्रोत दस्तावेज़ में प्रत्येक पैराग्राफ़ को दोहराएँगे और जाँचेंगे कि क्या यह एक सूची आइटम है। यदि यह है, तो आप गंतव्य दस्तावेज़ में मौजूदा सूचियों के साथ सूची आईडी की तुलना करेंगे। यदि समान आईडी वाली कोई सूची मौजूद है, तो आप स्रोत दस्तावेज़ में सूची की एक प्रतिलिपि बनाएंगे और कॉपी की गई सूची का उपयोग करने के लिए पैराग्राफ़ के सूची प्रारूप को अपडेट करेंगे।
+## चरण 4: सूची एकीकरण प्रबंधित करें
+
+सूची आइटम को संभालने के लिए स्रोत दस्तावेज़ में पैराग्राफ़ों के माध्यम से पुनरावृत्ति करें:
 
 ```csharp
 Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -54,9 +72,11 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
     if (para.IsListItem)
     {
         int listId = para.ListFormat.List.ListId;
+
         if (dstDoc.Lists.GetListByListId(listId) != null)
         {
             Aspose.Words.Lists.List currentList;
+
             if (newLists.ContainsKey(listId))
             {
                 currentList = newLists[listId];
@@ -66,73 +86,42 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
                 currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
                 newLists.Add(listId, currentList);
             }
+
             para.ListFormat.List = currentList;
         }
     }
 }
 ```
 
+यह कोड खंड यह सुनिश्चित करता है कि स्रोत दस्तावेज़ की सूचियाँ गंतव्य दस्तावेज़ में निर्बाध रूप से एकीकृत हो जाएं, तथा उनका मूल स्वरूप बरकरार रहे।
+
 ## चरण 5: स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ में जोड़ें
 
- अब, आप स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ में जोड़ सकते हैं`AppendDocument` की विधि`Document` वर्ग.`ImportFormatMode.UseDestinationStyles` पैरामीटर यह सुनिश्चित करता है कि गंतव्य दस्तावेज़ की सूची शैलियों का उपयोग परिशिष्ट ऑपरेशन के दौरान किया जाता है।
+संशोधित स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ में मर्ज करें:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## चरण 6: अंतिम दस्तावेज़ सहेजें
+यह आदेश गंतव्य शैलियों को संरक्षित करते हुए दस्तावेजों को समेकित करता है।
 
-अंत में, मर्ज किए गए दस्तावेज़ को सूची उपयोग गंतव्य शैलियाँ सुविधा सक्षम करके सहेजें`Save` की विधि`Document` कक्षा।
+## निष्कर्ष
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+इन चरणों का पालन करके, आप Aspose.Words for .NET का उपयोग करके दस्तावेज़ों के बीच सूचियों को प्रभावी ढंग से प्रबंधित और मर्ज कर सकते हैं। यह दृष्टिकोण सुनिश्चित करता है कि आपका अंतिम दस्तावेज़ सुसंगत स्टाइलिंग और स्वरूपण बनाए रखता है, जिससे समग्र दस्तावेज़ प्रबंधन दक्षता में वृद्धि होती है।
 
-### .NET के लिए Aspose.Words का उपयोग करके सूची गंतव्य शैलियों के उपयोग के लिए उदाहरण स्रोत कोड 
+## अक्सर पूछे जाने वाले प्रश्न
 
-.NET के लिए Aspose.Words का उपयोग करके C# में "सूची उपयोग गंतव्य शैलियाँ" सुविधा के लिए पूर्ण स्रोत कोड यहां दिया गया है:
+### मैं .NET के लिए Aspose.Words का उपयोग करके नेस्टेड सूचियों को कैसे संभाल सकता हूं?
+Aspose.Words दस्तावेज़ नोड्स के माध्यम से पुनरावृत्ति और सूची संरचनाओं की जांच करके नेस्टेड सूचियों को प्रबंधित करने के तरीके प्रदान करता है।
 
+### दस्तावेज़ विलय में गंतव्य शैलियों का उपयोग करने के क्या लाभ हैं?
+गंतव्य शैलियाँ मर्ज किए गए दस्तावेज़ों में प्रारूपण में एकरूपता बनाए रखने में मदद करती हैं, जिससे एक पेशेवर रूप सुनिश्चित होता है।
 
-```csharp
-	// आपके दस्तावेज़ निर्देशिका का पथ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### क्या Aspose.Words क्रॉस-प्लेटफॉर्म दस्तावेज़ विलय का समर्थन करता है?
+हां, Aspose.Words विंडोज और लिनक्स वातावरण सहित विभिन्न प्लेटफार्मों पर दस्तावेज़ विलय का समर्थन करता है।
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ के अंत के ठीक बाद जारी रखने के लिए सेट करें।
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// बनाई गई सूचियों पर नज़र रखें।
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			// जाँच करें कि क्या गंतव्य दस्तावेज़ में पहले से ही इस आईडी वाली सूची मौजूद है। अगर ऐसा है, तो यह हो सकता है
-			// दो सूचियों को एक साथ चलाने का कारण बनें। इसके बजाय स्रोत दस्तावेज़ में सूची की एक प्रतिलिपि बनाएँ।
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				// इस आईडी के लिए एक नई कॉपी की गई सूची पहले से मौजूद है, संग्रहीत सूची पुनः प्राप्त करें,
-				// और इसे वर्तमान पैराग्राफ पर उपयोग करें.
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					// इस सूची की एक प्रति दस्तावेज़ में जोड़ें और बाद में संदर्भ के लिए संग्रहीत करें।
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				// इस पैराग्राफ की सूची को कॉपी की गई सूची पर सेट करें.
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	// स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ के अंत में जोड़ें.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### क्या मैं दस्तावेज़ विलय के दौरान सूची स्वरूपण को अनुकूलित कर सकता हूँ?
+Aspose.Words सूची स्वरूपण के व्यापक अनुकूलन की अनुमति देता है, जिससे अनुरूप दस्तावेज़ एकीकरण समाधान संभव हो पाता है।
 
-बस! आपने .NET के लिए Aspose.Words का उपयोग करके सूची उपयोग गंतव्य शैलियाँ सुविधा को सफलतापूर्वक लागू कर दिया है। अंतिम दस्तावेज़ में गंतव्य दस्तावेज़ से सूची शैलियों के साथ मर्ज की गई सामग्री शामिल होगी।
+### मैं Aspose.Words के साथ उन्नत दस्तावेज़ प्रबंधन पर अधिक संसाधन कहां पा सकता हूं?
+ अन्वेषण करना[Aspose.Words दस्तावेज़ीकरण](https://reference.aspose.com/words/net/) व्यापक गाइड और एपीआई संदर्भ के लिए.

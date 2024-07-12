@@ -99,7 +99,7 @@ Artık Aspose.Words for .NET ile kaynak akışını yazı tipi kaynağı olarak 
 
 ###  S3: Diğer uyarı türlerini şununla işleyebilir miyim?`IWarningCallback`?
 
- Evet`IWarningCallback` arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
+ Evet`IWarningCallback`arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
 
 ### S4: Aspose.Words desteğini nerede bulabilirim?
 

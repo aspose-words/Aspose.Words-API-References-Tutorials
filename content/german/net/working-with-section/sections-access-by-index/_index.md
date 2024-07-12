@@ -74,7 +74,7 @@ In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET auf Abs
 
 #### F: Wie lege ich das Dokumentverzeichnis in Aspose.Words für .NET fest?
 
- A: Um den Pfad zum Verzeichnis mit Ihren Dokumenten festzulegen, müssen Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad. So geht's:
+A: Um den Pfad zum Verzeichnis mit Ihren Dokumenten festzulegen, müssen Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad. So geht's:
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis

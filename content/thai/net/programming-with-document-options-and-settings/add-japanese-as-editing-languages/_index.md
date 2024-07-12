@@ -21,7 +21,7 @@ url: /th/net/programming-with-document-options-and-settings/add-japanese-as-edit
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// ตั้งค่ากำหนดภาษาที่จะใช้เมื่อโหลดเอกสาร
+//ตั้งค่ากำหนดภาษาที่จะใช้เมื่อโหลดเอกสาร
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";

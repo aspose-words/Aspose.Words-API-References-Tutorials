@@ -58,6 +58,6 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 	
 ```
 
-正しいドキュメントパスを必ず指定してください。`dataDir`変数。
+必ず正しいドキュメントパスを指定してください。`dataDir`変数。
 
 Aspose.Words for .NET を使用してドキュメントから個人情報を削除する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、自分のドキュメントから機密情報を簡単に削除できます。

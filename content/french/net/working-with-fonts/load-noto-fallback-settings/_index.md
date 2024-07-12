@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Chargez le document et configurez les paramètres de substitution de police
- Ensuite, nous chargerons le document en utilisant le`Document` classe et configurez les paramètres de remplacement de police à l'aide de la`FontSettings`classe. Nous allons charger les paramètres de secours de la police Noto en utilisant le`LoadNotoFallbackSettings()` méthode.
+ Ensuite, nous chargerons le document en utilisant le`Document` classe et configurez les paramètres de remplacement de police à l'aide de la`FontSettings` classe. Nous allons charger les paramètres de secours de la police Noto en utilisant le`LoadNotoFallbackSettings()` méthode.
 
 ```csharp
 // Chargez le document et configurez les paramètres de substitution de police
@@ -65,9 +65,9 @@ Dans ce didacticiel, nous avons vu comment charger les paramètres de substituti
 
 R : Pour charger les paramètres de substitution de police Noto dans un document Word avec Aspose.Words, vous devez d'abord télécharger les polices Noto à partir de la source officielle. Vous pouvez ensuite utiliser l'API Aspose.Words pour charger ces polices dans le document et les configurer pour les remplacer si nécessaire.
 
-#### : L'utilisation des polices Noto pour la substitution dans les documents Word garantit-elle une visualisation cohérente du texte ?
+#### Q : L'utilisation des polices Noto pour la substitution dans les documents Word garantit-elle une visualisation cohérente du texte ?
 
-R : Oui, l'utilisation des polices Noto pour la substitution dans les documents Word garantit une visualisation cohérente du texte. Les polices Noto sont conçues pour prendre en charge de nombreuses langues et caractères, contribuant ainsi à conserver une apparence cohérente même lorsque les polices requises ne sont pas disponibles.
+: Oui, l'utilisation des polices Noto pour la substitution dans les documents Word garantit une visualisation cohérente du texte. Les polices Noto sont conçues pour prendre en charge de nombreuses langues et caractères, contribuant ainsi à conserver une apparence cohérente même lorsque les polices requises ne sont pas disponibles.
 
 #### Q : Les polices Noto sont-elles gratuites ?
 

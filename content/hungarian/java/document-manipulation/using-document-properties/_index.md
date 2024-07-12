@@ -34,7 +34,7 @@ Ez a kód megjeleníti a dokumentum nevét és a beépített tulajdonságait, be
 
 ### Egyedi tulajdonságok
 
-Az egyéni dokumentumtulajdonságok kezeléséhez a következő kódrészletet használhatja:
+Az egyéni dokumentumtulajdonságok kezeléséhez használhatja a következő kódrészletet:
 
 ```java
 @Test
@@ -144,7 +144,7 @@ dokumentum tulajdonságai jelentős szerepet játszanak a dokumentumok hatékony
 
 ## GYIK
 
-### Hogyan érhetem el a beépített dokumentum tulajdonságait?
+### Hogyan érhetem el a beépített dokumentumtulajdonságokat?
 
  Az Aspose.Words for Java beépített dokumentumtulajdonságainak eléréséhez használja a`getBuiltInDocumentProperties` módszer a`Document` tárgy. Ez a metódus beépített tulajdonságok gyűjteményét adja vissza, amelyeken keresztül ismételhet.
 

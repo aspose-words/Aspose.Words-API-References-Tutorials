@@ -39,7 +39,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/
 ### [处理 Word 文档中的字段和数据](./document-fields/)
 了解如何使用 Aspose.Words for Python 处理 Word 文档中的字段和数据。分步指南，其中包含动态内容、自动化等的代码示例。 
 ### [了解 Word 文档中的字体和文本样式](./document-fonts/)
-探索 Word 文档中的字体和文本样式世界。了解如何使用 Aspose.Words for Python 增强可读性和视觉吸引力。包含分步示例的综合指南。
+探索 Word 文档中的字体和文本样式。了解如何使用 Aspose.Words for Python 增强可读性和视觉吸引力。包含分步示例的综合指南。
 ### [探索 Word 文档中的脚注和尾注](./document-footnotes-endnotes/)
 探索如何使用 Aspose.Words for Python 在 Word 文档中有效使用脚注和尾注。学习以编程方式添加、自定义和管理这些元素。 
 ### [掌握 Word 文档中的表单字段和数据捕获](./document-form-fields/)

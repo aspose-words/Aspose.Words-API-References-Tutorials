@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Zastępować`"your_public_key"` I`"your_private_key"` rzeczywistymi kluczami, które otrzymałeś od Aspose. Ten krok zasadniczo mówi Aspose, że chcesz użyć licencji licznikowej.
+ Zastępować`"your_public_key"`I`"your_private_key"` rzeczywistymi kluczami, które otrzymałeś od Aspose. Ten krok zasadniczo mówi Aspose, że chcesz użyć licencji licznikowej.
 
 ## Krok 3: Załaduj swój dokument
 
@@ -101,7 +101,7 @@ Licencja licznikowa to model płatności zgodnie z rzeczywistym użyciem, w któ
  Klucze licencyjne taryfowe można uzyskać w witrynie[Strona zakupu Aspose](https://purchase.aspose.com/buy).
 
 ### Czy mogę używać licencji taryfowej w dowolnym projekcie .NET?
-Tak, możesz używać licencji taryfowej z dowolnym projektem .NET, który wykorzystuje bibliotekę Aspose.Words dla .NET.
+Tak, możesz używać licencji taryfowej w dowolnym projekcie .NET korzystającym z biblioteki Aspose.Words dla .NET.
 
 ### Co się stanie, jeśli mierzone klucze licencyjne będą nieprawidłowe?
 Jeśli klucze są nieprawidłowe, licencja nie zostanie zastosowana, a aplikacja zgłosi wyjątek. Upewnij się, że obsługujesz wyjątki, aby uzyskać wyraźny komunikat o błędzie.

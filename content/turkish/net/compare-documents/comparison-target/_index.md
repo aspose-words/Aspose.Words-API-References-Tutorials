@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## 3. Adım: Belgelerinizi Yükleyin
 
-Tamam, karşılaştırmak istediğiniz belgeleri yükleme zamanı. Bu belgelere giden yollara ihtiyacınız olacak. İki belgeniz olduğunu varsayalım:`DocumentA.docx` Ve`DocumentB.docx`.
+Tamam, karşılaştırmak istediğiniz belgeleri yükleme zamanı. Bu belgelere giden yollara ihtiyacınız olacak. İki belgeniz olduğunu varsayalım:`DocumentA.docx`Ve`DocumentB.docx`.
 
 ```csharp
 // Belgeler dizininin yolu.

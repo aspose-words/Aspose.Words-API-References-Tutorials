@@ -18,7 +18,7 @@ Aspose.Words für Java ist ein Game-Changer, wenn es um die programmgesteuerte A
 
 ### Einrichten Ihrer Entwicklungsumgebung
 
-Bevor wir mit Aspose.Words für Java arbeiten können, müssen wir unsere Entwicklungsumgebung einrichten. Befolgen Sie diese Schritte:
+Bevor wir mit Aspose.Words für Java arbeiten können, müssen wir unsere Entwicklungsumgebung einrichten. Folgen Sie diesen Schritten:
 
 1. Installieren Sie Java: Wenn Sie Java nicht installiert haben, laden Sie die neueste Version von der Website herunter und installieren Sie sie.
 
@@ -80,7 +80,7 @@ In Aspose.Words kann ein Dokument in Seiten unterteilt werden. Jede Seite stellt
 // Seitenzahl angeben (nullbasierter Index)
 int pageNumber = 0;
 
-// Extrahieren Sie Text aus der angegebenen Seite
+// Text aus der angegebenen Seite extrahieren
 PageInfo pageInfo = doc.getPageInfo(pageNumber);
 String pageText = doc.extractText(pageInfo);
 ```

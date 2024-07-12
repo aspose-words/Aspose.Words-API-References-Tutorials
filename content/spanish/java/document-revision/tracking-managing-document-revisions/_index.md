@@ -103,7 +103,7 @@ En este ejemplo, guardamos una copia del documento con el "_v2" para indicar que
 
 ### ¿Puedo aceptar o rechazar revisiones mediante programación?
 
- Sí, puede aceptar o rechazar revisiones utilizando Aspose.Words para Java. Utilice el`acceptAllRevisions` y`rejectAllRevisions` Métodos para gestionar las revisiones.
+ Sí, puede aceptar o rechazar revisiones utilizando Aspose.Words para Java. Utilice el`acceptAllRevisions`y`rejectAllRevisions` Métodos para gestionar las revisiones.
 
 ### ¿Es posible crear varias versiones de un documento?
 

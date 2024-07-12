@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Manipulieren von Word-Dokumenten in einer C#-Anwendung. Zu den von Aspose.Words angebotenen Funktionen gehört die Möglichkeit, die in einem Inhaltsverzeichnis eines Word-Dokuments verwendeten Registerkarten zu ändern. In dieser Anleitung zeigen wir Ihnen, wie Sie mit dem C#-Quellcode von Aspose.Words für .NET Registerkarten im Inhaltsverzeichnis eines Dokuments ändern können.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Manipulieren von Word-Dokumenten in einer C#-Anwendung. Zu den von Aspose.Words angebotenen Funktionen gehört die Möglichkeit, die in einem Inhaltsverzeichnis eines Word-Dokuments verwendeten Registerkarten zu ändern. In dieser Anleitung zeigen wir Ihnen, wie Sie mit dem C#-Quellcode von Aspose.Words für .NET die Registerkarten im Inhaltsverzeichnis eines Dokuments ändern.
 
 ## Die Aspose.Words-Bibliothek verstehen
 

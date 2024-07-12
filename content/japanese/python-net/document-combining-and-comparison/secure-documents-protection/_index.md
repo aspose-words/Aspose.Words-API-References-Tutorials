@@ -47,7 +47,7 @@ protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
 protection.set_editing_groups(["Editors"])
 ```
 
-## 文書コンテンツの暗号化
+## 文書の内容を暗号化する
 
 ドキュメントの内容を暗号化するとセキュリティが強化されます。
 

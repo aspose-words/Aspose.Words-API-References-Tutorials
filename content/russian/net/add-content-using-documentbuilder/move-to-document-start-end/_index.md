@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Здесь мы создаем экземпляр`Document` и`DocumentBuilder` . Думать о`Document` как пустой документ Word и`DocumentBuilder` как твоя ручка.
+ Здесь мы создаем экземпляр`Document`и`DocumentBuilder` . Думать о`Document` как пустой документ Word и`DocumentBuilder` как твоя ручка.
 
 ## Шаг 2. Перейдите в начало документа.
 

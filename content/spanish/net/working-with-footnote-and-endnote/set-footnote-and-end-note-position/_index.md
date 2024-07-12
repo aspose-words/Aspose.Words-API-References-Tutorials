@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Paso 2: Configuración de la posición de las notas al pie y al final
 
- A continuación, acceda al`FootnoteOptions` y`EndnoteOptions`propiedades del documento para establecer la posición de las notas al pie y al final. En este ejemplo, configuramos la posición de las notas al pie debajo del texto y la posición de las notas al final al final de la sección:
+ A continuación, acceda al`FootnoteOptions`y`EndnoteOptions`propiedades del documento para establecer la posición de las notas al pie y al final. En este ejemplo, configuramos la posición de las notas al pie debajo del texto y la posición de las notas al final al final de la sección:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

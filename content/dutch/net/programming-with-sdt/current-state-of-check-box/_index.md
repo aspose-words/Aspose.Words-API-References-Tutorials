@@ -41,7 +41,7 @@ if (sdtCheckBox.SdtType == SdtType.Checkbox)
 ```
 
 ## Stap 4: Sla het document op
- Sla het gewijzigde document op in de opgegeven map met behulp van de`Save`methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.CurrentStateOfCheckBox.docx".
+ Sla het gewijzigde document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.CurrentStateOfCheckBox.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 	doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-Dat is het! U hebt met succes de huidige status van een inhoudsbesturingselement voor selectievakjes in uw Word-document opgehaald en ingesteld met behulp van Aspose.Words voor .NET.
+Dat is het! U hebt met succes de huidige status van een inhoudsbesturingselement voor selectievakjes in uw Word-document opgehaald en ingesteld met Aspose.Words voor .NET.

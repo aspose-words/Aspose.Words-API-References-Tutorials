@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Schritt 2: Laden Sie das Dokument und durchlaufen Sie die Inhaltssteuerelemente
- Laden Sie das Word-Dokument mit dem`Document`Konstruktor, wobei der Pfad zum Dokument als Parameter übergeben wird. Iterieren Sie über alle strukturierten Dokument-Tags im Dokument mit einem`foreach` Schleife.
+ Laden Sie das Word-Dokument mit dem`Document` Konstruktor, wobei der Pfad zum Dokument als Parameter übergeben wird. Iterieren Sie über alle strukturierten Dokument-Tags im Dokument mit einem`foreach` Schleife.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Schritt 6: Speichern Sie das geänderte Dokument
- Speichern Sie das geänderte Dokument im angegebenen Verzeichnis mit dem`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithSdt.ModifyContentControls.docx“.
+ Speichern Sie das geänderte Dokument im angegebenen Verzeichnis mit dem`Save`Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithSdt.ModifyContentControls.docx“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

@@ -71,7 +71,7 @@ builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 builder.Write("Header for all other pages");
 ```
 
- I det här steget använder vi`MoveToHeaderFooter` metod för att navigera till önskat sidhuvud eller sidfot. De`Write` Metoden används sedan för att lägga till text i dessa avsnitt.
+ I det här steget använder vi`MoveToHeaderFooter` metod för att navigera till önskat sidhuvud eller sidfot. De`Write` Metoden används sedan för att lägga till text till dessa avsnitt.
 
 ## Steg 4: Lägg till innehåll i dokumenttexten
 
@@ -89,7 +89,7 @@ Här lägger vi till text i dokumentet och infogar en sidbrytning för att skapa
 
 ## Steg 5: Spara dokumentet
 
-Slutligen, spara dokumentet i den angivna katalogen.
+Slutligen sparar du dokumentet i den angivna katalogen.
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
@@ -115,5 +115,5 @@ Aspose.Words för .NET är ett bibliotek som gör det möjligt för utvecklare a
 ### Hur skapar jag mer komplexa layouter i sidhuvuden och sidfötter?
 Du kan använda tabeller, bilder och olika formateringsalternativ från Aspose.Words för att skapa komplexa layouter.
 
-### Var kan jag hitta fler exempel och handledning?
+### Var kan jag hitta fler exempel och tutorials?
  Kolla in[dokumentation](https://reference.aspose.com/words/net/) och den[supportforum](https://forum.aspose.com/c/words/8) för fler exempel och samhällsstöd.

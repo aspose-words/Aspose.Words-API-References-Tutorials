@@ -17,14 +17,14 @@ Para seguir este tutorial, você precisa ter o seguinte:
 - Conhecimento básico de C# e processamento de palavras com documentos Word.
 
 ## Etapa 1: configurar o diretório de documentos
- Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório onde você deseja salvar o documento.
+ Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real para o diretório onde você deseja salvar o documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Etapa 2: Crie um novo documento e DocumentBuilder
- Crie uma nova instância do`Document` aula e um`DocumentBuilder`objeto para trabalhar com o documento.
+ Crie uma nova instância do`Document` aula e um`DocumentBuilder` objeto para trabalhar com o documento.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 ```
 
 ## Etapa 4: salve o documento
- Salve o documento no diretório especificado usando o`Save` método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithShapes.AddCornersSnipped.docx".
+ Salve o documento no diretório especificado usando o`Save`método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithShapes.AddCornersSnipped.docx".
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)

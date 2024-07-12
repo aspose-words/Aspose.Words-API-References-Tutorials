@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### Q: 수정본을 생성하지 않고 추적된 문서에서 노드를 이동하려면 어떻게 해야 합니까?
 
- A: 수정본을 생성하지 않고 추적된 문서에서 노드를 이동하려는 경우 다음을 사용할 수 있습니다.`Remove` 그리고`InsertAfter` 또는`InsertBefore` 방법`Node` 물체. 예를 들어, 다른 단락 뒤로 단락을 이동하려면 다음 코드를 사용할 수 있습니다.
+ A: 수정본을 생성하지 않고 추적된 문서에서 노드를 이동하려는 경우 다음을 사용할 수 있습니다.`Remove`그리고`InsertAfter` 또는`InsertBefore` 방법`Node` 물체. 예를 들어, 다른 단락 뒤로 단락을 이동하려면 다음 코드를 사용할 수 있습니다.
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
@@ -136,7 +136,7 @@ nodeToMove.Remove();
 document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
 ```
 
-#### Q: .NET 문서용 Aspose.Words에서 개정 추적을 어떻게 중지할 수 있습니까?
+#### Q: .NET 문서용 Aspose.Words에서 개정 추적을 어떻게 중지할 수 있나요?
 
  A: .NET용 Aspose.Words 문서에서 개정 추적을 중지하려면 다음을 사용할 수 있습니다.`StopTrackRevisions` 의 방법`Document` 물체.
 

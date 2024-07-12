@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Stap 2: Maak een nieuw document
 
- Oké, laten we beginnen met het maken van een nieuw Word-document. Wij gebruiken de`Document` En`DocumentBuilder` lessen van Aspose.Words om dingen op gang te krijgen.
+ Oké, laten we beginnen met het maken van een nieuw Word-document. Wij gebruiken de`Document`En`DocumentBuilder` lessen van Aspose.Words om dingen op gang te krijgen.
 
 ```csharp
 // Het pad naar de documentenmap.

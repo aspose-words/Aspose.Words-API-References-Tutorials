@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: agregar secciones al documento
 
-A continuación, agregaremos algunas secciones a nuestro documento. Cada sección contendrá algo de texto e insertaremos saltos de sección entre ellas.
+continuación, agregaremos algunas secciones a nuestro documento. Cada sección contendrá algo de texto e insertaremos saltos de sección entre ellas.
 
 ```csharp
 builder.Write("Section 1");
@@ -116,7 +116,7 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
 
 ## 3. ¿Cuáles son las características principales de Aspose.Words para .NET?
 
- Aspose.Words para .NET ofrece una amplia gama de funciones que incluyen creación, formato, conversión y manipulación de documentos. Puede leer más sobre sus capacidades en el[Documentación API](https://reference.aspose.com/words/net/).
+Aspose.Words para .NET ofrece una amplia gama de funciones que incluyen creación, formato, conversión y manipulación de documentos. Puede leer más sobre sus capacidades en el[Documentación API](https://reference.aspose.com/words/net/).
 
 ## 4. ¿Cómo obtengo soporte para Aspose.Words para .NET?
 

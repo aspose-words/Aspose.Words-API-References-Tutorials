@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIn
 
 ### Aspose.Words for .NET の「リストのインデントにレベルごとに 1 つのスペース文字を使用する」機能のサンプル ソース コード
 
-以下は、Aspose.Words for .NET の「リストのインデントにレベルごとに 1 つのスペース文字を使用する」機能の完全なサンプル ソース コードです。
+以下は、Aspose.Words for .NET の「リストのインデントにはレベルごとに 1 つのスペース文字を使用する」機能の完全なサンプル ソース コードです。
 
 ```csharp
 
@@ -101,7 +101,7 @@ Aspose.Words for .NET は、C# アプリケーションで Word 文書を作成�
 #### Q: Aspose.Words for .NET でリストのインデントにレベルごとに 1 つのスペースを使用するにはどうすればよいでしょうか?
 次の手順に従って、リストのインデントにレベルごとに 1 つのスペースを使用できます。
 
-新しいドキュメントを作成するには、`Document`クラス。
+新しい文書を作成するには、`Document`クラス。
 
 使用`DocumentBuilder`クラスを使用してドキュメントにコンテンツを追加し、複数レベルのインデントを持つリストを作成します。
 

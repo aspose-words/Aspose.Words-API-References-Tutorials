@@ -2,114 +2,125 @@
 title: Csak olvasási védelem a Word dokumentumban
 linktitle: Csak olvasási védelem a Word dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan védheti meg írásvédett Word-dokumentumait az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan védheti meg Word-dokumentumait az Aspose.Words for .NET használatával csak olvasható védelem alkalmazásával. Kövesse lépésenkénti útmutatónkat.
 type: docs
 weight: 10
 url: /hu/net/document-protection/read-only-protection/
 ---
-Ebben az oktatóanyagban végigvezetjük az Aspose.Words for .NET írásvédett funkciójának használatához szükséges lépéseken. Ez a funkció lehetővé teszi, hogy egy Word-dokumentumot csak olvashatóvá tegye, hogy megakadályozza a jogosulatlan módosításokat. Kövesse az alábbi lépéseket:
+## Bevezetés
 
-## 1. lépés: A dokumentum létrehozása és a védelem alkalmazása
+A Word-dokumentumok kezelését illetően előfordulhat, hogy írásvédettvé kell tenni őket a tartalom védelme érdekében. Legyen szó fontos információk megosztásáról a véletlen szerkesztések kockázata nélkül, vagy a jogi dokumentumok integritásának biztosításáról, az írásvédett védelem értékes szolgáltatás. Ebben az oktatóanyagban megvizsgáljuk, hogyan valósíthat meg írásvédett védelmet egy Word-dokumentumban az Aspose.Words for .NET használatával. Minden lépésen részletesen, lebilincselő módon végigvezetjük Önt, így biztosítva, hogy könnyen követhesse a lépést.
 
-Először hozzon létre egy példányt a Document osztályból és egy DocumentBuilder objektumból:
+## Előfeltételek
+
+Mielőtt belemerülnénk a kódba, meg kell felelnie néhány előfeltételnek:
+
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words for .NET könyvtár. Letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: Hozzon létre egy fejlesztői környezetet telepített .NET-tel. A Visual Studio jó választás.
+3. A C# alapvető ismerete: Ez az oktatóanyag feltételezi, hogy rendelkezik a C# programozás alapvető ismereteivel.
+
+## Névterek importálása
+
+Először is győződjön meg arról, hogy a szükséges névtereket importálta. Ez döntő fontosságú, mivel lehetővé teszi számunkra, hogy hozzáférjünk a szükséges osztályokhoz és metódusokhoz az Aspose.Words for .NET-ből.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 2. lépés: Írjon tartalmat a dokumentumba
-Használja a DocumentBuilder objektumot, hogy tartalmat írjon a dokumentumba:
+## 1. lépés: Állítsa be a dokumentumot
+
+Ebben a lépésben létrehozunk egy új dokumentumot és egy dokumentumkészítőt. Ez képezi működésünk alapját.
 
 ```csharp
-builder.Write("Open document as read-only");
-```
-
-## 3. lépés: Állítsa be a jelszót, és tegye csak olvashatóvá a dokumentumot
-
-Állítson be jelszót a dokumentumhoz a WriteProtection objektum SetPassword() tulajdonságával:
-
-```csharp
-doc.WriteProtection.SetPassword("MyPassword");
-```
-
-Feltétlenül cserélje ki a „MyPassword”-t a ténylegesen használni kívánt jelszóra.
-
-## 4. lépés: Alkalmazza a csak olvasható dokumentumot
-
-Tegye a dokumentumot csak olvashatóvá a ReadOnlyRecommended tulajdonság igaz értékre állításával:
-
-```csharp
-doc.WriteProtection.ReadOnlyRecommended = true;
-```
-
-## 5. lépés: Alkalmazza a csak olvasható védelmet, és mentse a dokumentumot
-
-Végül alkalmazzon írásvédett védelmet a Dokumentum objektum Protect() metódusával:
-
-```csharp
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-```
-
-Ügyeljen arra, hogy a megfelelő elérési utat és fájlnevet adja meg a védett dokumentum mentéséhez.
-
-### Példa forráskód a Csak olvasható védelemhez az Aspose.Words for .NET használatával
-
-Íme a teljes forráskód az Aspose.Words for .NET-hez csak olvasható védelemhez:
-
-```csharp
-
 // A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
+// Írjon szöveget a dokumentumba.
 builder.Write("Open document as read-only");
-
-// Adjon meg egy legfeljebb 15 karakter hosszú jelszót.
-doc.WriteProtection.SetPassword("MyPassword");
-
-// Tegye a dokumentumot csak olvashatóvá.
-doc.WriteProtection.ReadOnlyRecommended = true;
-
-// Alkalmazzon írásvédelmet csak olvashatóként.
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-
 ```
 
-Az alábbi lépések követésével könnyedén megvédheti dokumentumait
+Magyarázat:
+
+- Kezdjük azzal, hogy meghatározzuk a könyvtár elérési útját, ahová a dokumentumot menteni kell.
+-  Egy új`Document` objektum létrejön, és a`DocumentBuilder` kapcsolódik hozzá.
+- Az építő segítségével egy egyszerű szövegsort adunk a dokumentumhoz.
+
+## 2. lépés: Állítsa be az írásvédelmi jelszót
+
+Ezután be kell állítanunk egy jelszót az írásvédelemhez. Ez a jelszó legfeljebb 15 karakter hosszú lehet.
+
+```csharp
+//Adjon meg egy legfeljebb 15 karakter hosszú jelszót.
+doc.WriteProtection.SetPassword("MyPassword");
+```
+
+Magyarázat:
+
+-  A`SetPassword` módszert hívják a`WriteProtection` a dokumentum tulajdonsága.
+- Megadunk egy jelszót (jelszó ebben az esetben), amely a védelem eltávolításához szükséges.
+
+## 3. lépés: Engedélyezze a csak olvasható ajánlást
+
+Ebben a lépésben a dokumentumot csak olvashatóvá tesszük. Ez azt jelenti, hogy a dokumentum megnyitásakor felszólítja a felhasználót, hogy nyissa meg csak olvasható módban.
+
+```csharp
+// Legyen a dokumentum írásvédett.
+doc.WriteProtection.ReadOnlyRecommended = true;
+```
+
+Magyarázat:
+
+-  A`ReadOnlyRecommended` tulajdonság értékre van állítva`true`.
+- Ez arra kéri a felhasználókat, hogy csak olvasható módban nyissa meg a dokumentumot, bár dönthetnek úgy, hogy figyelmen kívül hagyják az ajánlást.
+
+## 4. lépés: Alkalmazza az írásvédettséget
+
+Végül a csak olvasható védelmet alkalmazzuk a dokumentumra. Ez a lépés érvényesíti a védelmet.
+
+```csharp
+// Alkalmazzon írásvédelmet csak olvashatóként.
+doc.Protect(ProtectionType.ReadOnly);
+```
+
+Magyarázat:
+
+-  A`Protect` metódust hívják meg a dokumentumon`ProtectionType.ReadOnly` mint az érv.
+- Ez a módszer az írásvédettséget kényszeríti ki, megakadályozva a dokumentum jelszó nélküli módosítását.
+
+## 5. lépés: Mentse el a dokumentumot
+
+Az utolsó lépés a dokumentum mentése az alkalmazott védelmi beállításokkal.
+
+```csharp
+// Mentse el a védett dokumentumot.
+doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
+```
+
+Magyarázat:
+
+-  A`Save` metódus kerül meghívásra a dokumentumon, megadva a fájl elérési útját és nevét.
+- A dokumentum mentése csak olvasható védelem mellett történik.
 
 ## Következtetés
 
-Ebben az oktatóanyagban megvizsgáltuk az Aspose.Words for .NET csak olvasható védelmi funkcióját, amely lehetővé teszi a Word-dokumentumok írásvédettvé tételét az illetéktelen módosítások elkerülése érdekében. A megadott lépések követésével egyszerűen csak olvasható védelmet alkalmazhat dokumentumaira, és fokozhatja azok biztonságát. Az írásvédett védelem a szerkesztési lehetőségek korlátozásával segíti a dokumentum tartalmának integritását és pontosságát. Az Aspose.Words for .NET hatékony és rugalmas API-t biztosít a dokumentumvédelem kezelésére, és számos egyéb szolgáltatást is támogat a Word-dokumentumok testreszabásához és biztonságossá tételéhez.
+És megvan! Sikeresen létrehozott egy írásvédett Word-dokumentumot az Aspose.Words for .NET használatával. Ez a funkció biztosítja, hogy a dokumentum tartalma sértetlen és változatlan maradjon, és további biztonsági réteget biztosít. Akár bizalmas információkat, akár jogi dokumentumokat oszt meg, az írásvédett védelem elengedhetetlen eszköz a dokumentumkezelési arzenáljában.
 
-### GYIK az írásvédett Word dokumentumban
+## GYIK
 
-#### K: Mi az a csak olvasható védelem az Aspose.Words for .NET-ben?
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, módosítását, konvertálását és védelmét C# vagy más .NET-nyelvek használatával.
 
-V: Az Aspose.Words for .NET csak olvasható védelme egy olyan szolgáltatás, amely lehetővé teszi egy Word-dokumentum írásvédettvé tételét, megakadályozva a jogosulatlan módosításokat. Ha egy dokumentum írásvédettre van állítva, a felhasználók megnyithatják és megtekinthetik a dokumentumot, de nem módosíthatják annak tartalmát.
+### Eltávolíthatom az írásvédettséget egy dokumentumról?
+ Igen, eltávolíthatja a csak olvasható védelmet a`Unprotect` módszert és a helyes jelszó megadását.
 
-#### K: Hogyan alkalmazhatok írásvédett Word-dokumentumot az Aspose.Words for .NET használatával?
+### dokumentumban beállított jelszó titkosítva van?
+Igen, az Aspose.Words titkosítja a jelszót, hogy biztosítsa a védett dokumentum biztonságát.
 
-V: Ha csak olvasható védelmet szeretne alkalmazni egy Word-dokumentumra az Aspose.Words for .NET használatával, kövesse az alábbi lépéseket:
-1.  Hozzon létre egy példányt a`Document` osztály és a`DocumentBuilder` tárgy.
-2.  Használja a`DocumentBuilder` tartalmat írni a dokumentumba.
-3.  Állítson be jelszót a dokumentumhoz a segítségével`SetPassword` módszere a`WriteProtection` tárgy.
-4.  Állítsa be a`ReadOnlyRecommended` tulajdona a`WriteProtection` tiltakozni`true` hogy javasoljuk a dokumentum írásvédettként való megnyitását.
-5.  Alkalmazza a csak olvasható védelmet a`Protect` módszere a`Document` objektum, megadva a`ProtectionType` mint`ReadOnly`.
-6.  Mentse el a védett dokumentumot a`Save` módszere a`Document` tárgy.
+### Alkalmazhatok más típusú védelmet az Aspose.Words for .NET használatával?
+Igen, az Aspose.Words for .NET különféle típusú védelmet támogat, beleértve a megjegyzések engedélyezését, az űrlapok kitöltését vagy a változások követését.
 
-#### K: Eltávolíthatom az írásvédett védelmet egy Word-dokumentumból az Aspose.Words for .NET használatával?
-
-V: Igen, az Aspose.Words for .NET segítségével eltávolíthatja a Word-dokumentum írásvédettségét. Ehhez használhatja a`Unprotect` módszere a`Document` osztályt, amely eltávolít minden meglévő védelmet a dokumentumból.
-
-#### K: Beállíthatok más jelszót az írásvédett védelemhez egy Word-dokumentumban?
-
- V: Nem, az Aspose.Words for .NET csak olvasható védelme nem teszi lehetővé, hogy külön jelszót állítson be kifejezetten az írásvédett védelemhez. A segítségével beállított jelszó`SetPassword` módszere a`WriteProtection` Az objektum az általános dokumentumvédelemre vonatkozik, beleértve a csak olvasási és írási és olvasási védelmet is.
-
-#### K: A felhasználók megkerülhetik a csak olvasható védelmet egy Word-dokumentumban?
-
-V: A Word dokumentumok írásvédettségének célja, hogy megakadályozza és megakadályozza a véletlen vagy jogosulatlan módosításokat. Bár bizonyos szintű védelmet nyújt, a kellő műszaki ismeretekkel vagy szerkesztési jogosultsággal rendelkező felhasználók megkerülhetik. Az írásvédett védelem azonban visszatartó erőként szolgál, és segít megőrizni a dokumentum sértetlenségét.
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
+ Igen, letölthet egy ingyenes próbaverziót a webhelyről[Az Aspose kiadási oldala](https://releases.aspose.com/).

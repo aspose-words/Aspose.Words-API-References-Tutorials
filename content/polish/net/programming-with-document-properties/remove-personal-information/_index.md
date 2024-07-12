@@ -36,7 +36,7 @@ doc.RemovePersonalInformation = true;
 
 Ten kod aktywuje usunięcie danych osobowych z dokumentu.
 
-## Krok 4: Zapisanie dokumentu
+## Krok 4: Zapisywanie dokumentu
 
 Na koniec zapiszemy dokument z usuniętymi danymi osobowymi. Użyj następującego kodu:
 

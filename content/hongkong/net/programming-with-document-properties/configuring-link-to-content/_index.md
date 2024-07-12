@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/programming-with-document-properties/configuring-link-to-content/
 ---
 
-在本教學中，我們將引導您完成 C# 原始程式碼，以使用 Aspose.Words for .NET 設定內容連結。此功能可讓您連結到文件中的特定內容。
+在本教程中，我們將引導您完成 C# 原始程式碼，以使用 Aspose.Words for .NET 設定內容連結。此功能可讓您連結到文件中的特定內容。
 
 ## 第 1 步：項目設置
 
@@ -53,7 +53,7 @@ string linkSource = customProperty.LinkSource;
 string customPropertyValue = customProperty.Value.ToString();
 ```
 
-此程式碼會新增一個名為「Bookmark」的與內容相關的屬性，其中書籤為「MyBookmark」。然後，它檢索與內容相關的屬性訊息，例如連結狀態、連結來源和屬性值。
+此程式碼新增了一個名為「Bookmark」的與內容相關的屬性，其中書籤為「MyBookmark」。然後，它檢索與內容相關的屬性訊息，例如連結狀態、連結來源和屬性值。
 
 ### 使用 Aspose.Words for .NET 設定內容連結的範例原始碼
 

@@ -76,7 +76,7 @@ Ha ezt a funkciót az Aspose.Words for .NET-hez szeretné használni, kövesse a
 Nem, ez a funkció nem módosítja magának a dokumentumnak a tartalmát. Csak a dokumentum címének az ablak címsorában való megjelenítését érinti, ha azt PDF-dokumentumként nyitják meg. A dokumentum tartalma változatlan marad.
 
 #### K: Testreszabható az ablak címsorában megjelenő dokumentum címe?
- Igen, személyre szabhatja az ablak címsorában megjelenő dokumentumcímet a`Document.Title` a dokumentum tulajdonságait, mielőtt PDF-be konvertálná. A kívánt címet egy karakterlánc segítségével állíthatja be. Felhívás előtt feltétlenül állítsa be a címet`Save` PDF formátumba konvertálás módja.
+ Igen, testreszabhatja az ablak címsorában megjelenő dokumentumcímet a`Document.Title` a dokumentum tulajdonságait, mielőtt PDF-be konvertálná. A kívánt címet egy karakterlánc segítségével állíthatja be. Felhívás előtt feltétlenül állítsa be a címet`Save` PDF formátumba konvertálás módja.
 
 #### K: Milyen egyéb kimeneti formátumokat támogat az Aspose.Words a dokumentumok konvertálásához?
 Az Aspose.Words for .NET számos kimeneti formátumot támogat a dokumentumok konvertálásához, mint például a PDF, XPS, HTML, EPUB, MOBI, kép (JPEG, PNG, BMP, TIFF, GIF) és még sok más. még mások. Kiválaszthatja a megfelelő kimeneti formátumot sajátos igényei szerint.

@@ -17,14 +17,14 @@ Para seguir este tutorial, você precisa ter o seguinte:
 - Conhecimento básico de C# e processamento de palavras com documentos Word.
 
 ## Etapa 1: configurar o diretório de documentos
- Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório onde você deseja salvar o documento.
+ Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real para o diretório onde você deseja salvar o documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Etapa 2: crie um novo documento e GroupShape
- Crie uma nova instância do`Document` classe e`GroupShape`objeto para trabalhar com o documento.
+ Crie uma nova instância do`Document` classe e`GroupShape` objeto para trabalhar com o documento.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Etapa 3: criar e adicionar formas ao GroupShape
- Crie formas individuais, como`accentBorderShape` e`actionButtonShape` usando o`Shape` aula. Personalize suas propriedades conforme desejado. Anexe essas formas ao`groupShape` objeto.
+ Crie formas individuais, como`accentBorderShape`e`actionButtonShape` usando o`Shape` aula. Personalize suas propriedades conforme desejado. Anexe essas formas ao`groupShape` objeto.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Etapa 4: definir dimensões para GroupShape
- Defina a largura, a altura e o tamanho das coordenadas para o`groupShape`.
+Defina a largura, a altura e o tamanho das coordenadas para o`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## Etapa 6: salve o documento
- Salve o documento no diretório especificado usando o`Save`método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithShapes.AddGroupShape.docx".
+ Salve o documento no diretório especificado usando o`Save` método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithShapes.AddGroupShape.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

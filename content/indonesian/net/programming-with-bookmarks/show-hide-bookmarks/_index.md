@@ -2,138 +2,153 @@
 title: Tampilkan Sembunyikan Bookmark Di Dokumen Word
 linktitle: Tampilkan Sembunyikan Bookmark Di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menampilkan atau menyembunyikan bookmark tertentu di dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menampilkan atau menyembunyikan bookmark secara dinamis di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk pengembang.
 type: docs
 weight: 10
 url: /id/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## Perkenalan
 
-Pada artikel ini, kita akan menjelajahi kode sumber C# di atas untuk memahami cara menggunakan fungsi Tampilkan Sembunyikan Bookmark di pustaka Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menampilkan atau menyembunyikan bookmark tertentu di dokumen Word.
+Pernahkah Anda merasa perlu menyembunyikan atau menampilkan bagian tertentu dari dokumen Word Anda secara dinamis? Nah, Anda beruntung! Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah mengelola visibilitas konten yang ditandai di dokumen Anda. Tutorial ini akan memandu Anda melalui proses menampilkan dan menyembunyikan bookmark di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan menguraikan kodenya selangkah demi selangkah, jadi apakah Anda seorang pengembang berpengalaman atau pemula, panduan ini akan mudah diikuti.
 
 ## Prasyarat
 
-- Pengetahuan dasar bahasa C#.
-- Lingkungan pengembangan .NET dengan perpustakaan Aspose.Words diinstal.
+Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
 
-## Langkah 1: Memuat dokumen
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Jika belum, Anda dapat mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: IDE seperti Visual Studio.
+3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan bermanfaat.
+4. Dokumen Word: Contoh dokumen Word dengan penanda.
 
- Kami menggunakan`Document` kelas untuk memuat dokumen yang ada dari file:
+## Impor Namespace
+
+Sebelum memulai dengan kode, Anda perlu mengimpor namespace yang diperlukan. Tambahkan yang berikut ini di awal file C# Anda:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## Langkah 1: Muat Dokumen Anda
+
+Hal pertama yang pertama, Anda perlu memuat dokumen Word yang berisi bookmark. Inilah cara Anda melakukannya:
+
+```csharp
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## Langkah 2: Tampilkan atau sembunyikan bookmark tertentu
+### Penjelasan
 
- Kami menggunakan`ShowHideBookmarkedContent` berfungsi untuk menampilkan atau menyembunyikan penanda tertentu dalam dokumen. Fungsi ini mengambil parameter dokumen, nama bookmark, dan boolean untuk menunjukkan apakah akan menampilkan atau menyembunyikan bookmark:
+- dataDir: Ini adalah jalur direktori tempat dokumen Word Anda berada.
+-  Dokumen dokumen: Ini menginisialisasi instance baru dari`Document` kelas dengan file yang Anda tentukan.
+
+## Langkah 2: Tampilkan atau Sembunyikan Konten yang Ditandai
+
+Selanjutnya, kita akan menentukan metode untuk menampilkan atau menyembunyikan konten yang di-bookmark. Berikut cara lengkapnya:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{MERGEFIELD bookmark}" = "benar" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### Penjelasan
+
+- Bookmark bm: Mengambil bookmark dari dokumen.
+- Pembuat DocumentBuilder: Membantu dalam menavigasi dan memodifikasi dokumen.
+- Bidang bidang: Menyisipkan bidang IF untuk memeriksa kondisi bookmark.
+- Node currentNode: Melintasi node untuk menemukan bidang awal dan akhir.
+
+## Langkah 3: Jalankan Fungsi Tampilkan/Sembunyikan
+
+ Sekarang, Anda perlu menelepon`ShowHideBookmarkedContent` metode, meneruskan dokumen, nama bookmark, dan tanda visibilitas:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## Langkah 3: Menyimpan dokumen yang dimodifikasi
+### Penjelasan
 
- Kami menggunakan`Save` metode untuk menyimpan dokumen yang dimodifikasi ke file:
+- doc: Objek dokumen Anda.
+- "MyBookmark1": Nama bookmark yang ingin Anda tampilkan/sembunyikan.
+- false: Bendera visibilitas (benar untuk ditampilkan, salah untuk disembunyikan).
+
+## Langkah 4: Simpan Dokumen Anda
+
+Terakhir, simpan dokumen yang dimodifikasi:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### Contoh kode sumber untuk Tampilkan Sembunyikan Bookmark menggunakan Aspose.Words untuk .NET
+### Penjelasan
 
-Berikut adalah contoh lengkap kode sumber untuk menunjukkan menampilkan atau menyembunyikan bookmark tertentu menggunakan Aspose.Words untuk .NET:
+- dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx": Jalur dan nama dokumen baru tempat perubahan akan disimpan.
 
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### Kode sumber ShowHideBookmarkedContent
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {IF "{MERGEFIELD bookmark}" = "benar" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## Kesimpulan
 
-Dalam artikel ini, kami menjelajahi kode sumber C# untuk memahami cara menggunakan fitur Tampilkan Sembunyikan Bookmark Aspose.Words untuk .NET. Kami mengikuti panduan langkah demi langkah untuk menampilkan atau menyembunyikan bookmark tertentu dalam dokumen.
+Dan itu dia! Anda telah berhasil mempelajari cara menampilkan dan menyembunyikan bookmark di dokumen Word menggunakan Aspose.Words untuk .NET. Teknik ini bisa sangat berguna untuk menghasilkan dokumen dengan konten bersyarat secara dinamis.
 
-### FAQ untuk menampilkan sembunyikan bookmark di dokumen Word
+## FAQ
 
-#### T: Dapatkah saya menampilkan atau menyembunyikan beberapa penanda dalam dokumen yang sama?
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram.
 
-J: Ya, Anda dapat menampilkan atau menyembunyikan beberapa penanda dalam dokumen yang sama dengan mengulangi langkah 2 dan 3 untuk setiap penanda yang ingin Anda proses.
+### Bagaimana cara mendapatkan Aspose.Words untuk .NET?
+ Anda dapat mengunduh Aspose.Words untuk .NET dari[Di Sini](https://releases.aspose.com/words/net/). Uji coba gratis juga tersedia.
 
-#### T: Apakah kode yang diberikan berfungsi dengan format dokumen Word lainnya, seperti .doc atau .docm?
+### Bisakah saya menggunakan metode ini untuk jenis bookmark lainnya?
+Ya, metode ini dapat diadaptasi untuk mengelola visibilitas setiap bookmark di dokumen Word Anda.
 
-A: Ya, kode yang diberikan berfungsi dengan berbagai format dokumen Word yang didukung oleh Aspose.Words, seperti .doc dan .docm. Pastikan untuk menggunakan nama file dan jalur yang benar saat memuat dan menyimpan dokumen.
+### Bagaimana jika dokumen saya tidak berisi penanda yang ditentukan?
+Jika bookmark tidak ada, metode ini akan menimbulkan kesalahan. Pastikan bookmark ada sebelum mencoba menampilkan/menyembunyikannya.
 
-#### T: Bagaimana cara menampilkan kembali bookmark tersembunyi?
-
- J: Untuk menampilkan kembali bookmark tersembunyi, Anda perlu menggunakan yang sama`ShowHideBookmarkedContent` fungsi meneruskan nilai`true` untuk parameter boolean yang menunjukkan apakah akan menampilkan atau menyembunyikan bookmark.
-
-#### T: Dapatkah saya menggunakan ketentuan untuk menampilkan atau menyembunyikan bookmark berdasarkan nilai bidang gabungan dalam dokumen?
-
- J: Ya, Anda dapat menggunakan ketentuan dan menggabungkan nilai bidang untuk menentukan apakah bookmark harus ditampilkan atau disembunyikan. Anda dapat menyesuaikan kodenya`ShowHideBookmarkedContent` berfungsi dengan memperhatikan kondisi dan nilai yang sesuai.
-
-#### T: Bagaimana cara menghapus penanda di dokumen Word menggunakan Aspose.Words untuk .NET?
-
- J: Untuk menghapus bookmark di dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`RemoveBookmarks` metode`Document` kelas. Berikut ini contoh kodenya:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### Bagaimana saya bisa mendapatkan dukungan jika saya mengalami masalah?
+ Anda bisa mendapatkan dukungan dari komunitas Aspose[Di Sini](https://forum.aspose.com/c/words/8).

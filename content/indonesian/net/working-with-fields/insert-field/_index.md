@@ -51,7 +51,7 @@ builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-Dalam contoh ini, kami membuat dokumen baru, menginisialisasi DocumentBuilder, lalu menyisipkan bidang gabungan dengan nama bidang "MyFieldName" dan format penggabungan. Dokumen tersebut kemudian disimpan dengan nama file tertentu.
+Dalam contoh ini, kami membuat dokumen baru, menginisialisasi DocumentBuilder, lalu menyisipkan kolom gabungan dengan nama kolom "MyFieldName" dan format penggabungan. Dokumen tersebut kemudian disimpan dengan nama file tertentu.
 
 Ini menyimpulkan panduan kami tentang penggunaan fitur "Sisipkan Bidang" dengan Aspose.Words untuk .NET.
 
@@ -82,7 +82,7 @@ J: Word menawarkan beragam tipe bidang yang bisa Anda gunakan dalam dokumen Anda
 - Perhitungan: melakukan perhitungan matematis menggunakan rumus.
 - Teks Pengisi: Menghasilkan teks acak untuk mengisi dokumen Anda.
 
-#### T: Dapatkah saya mengkustomisasi tampilan bidang di Word?
+#### T: Bisakah saya mengkustomisasi tampilan bidang di Word?
 
 J: Ya, Anda bisa mengkustomisasi tampilan bidang di Word dengan menggunakan opsi pemformatan yang tersedia. Misalnya, Anda dapat mengubah font, ukuran, warna, dan gaya teks dalam suatu bidang. Anda juga dapat menerapkan efek pemformatan seperti huruf tebal, miring, dan garis bawah.
   

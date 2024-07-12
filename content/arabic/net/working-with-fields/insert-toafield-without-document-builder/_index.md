@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### س: كيفية تخصيص مظهر حقل TOA المدرج في مستند Word باستخدام Aspose.Words لـ .NET؟
 
-ج: يمكنك تخصيص مظهر حقل TOA المدرج باستخدام خصائص ملف`FieldTOA` كائن لتحديد خيارات التنسيق.
+ ج: يمكنك تخصيص مظهر حقل TOA المدرج باستخدام خصائص ملف`FieldTOA` كائن لتحديد خيارات التنسيق.
 
 #### س: هل يمكنني إضافة حقول TOA متعددة في مستند Word واحد باستخدام Aspose.Words لـ .NET؟
 

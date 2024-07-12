@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## 7. lépés: Adjon hozzá tartalmat a cellákhoz
- Most a cellákhoz adhatunk tartalmat a`Writeln()` és`InsertCell()` a dokumentumkészítő módszerei. Ebben a példában hozzáadjuk a „Cikk” és a „Mennyiség (
+ Most a cellákhoz adhatunk tartalmat a`Writeln()`és`InsertCell()` a dokumentumkészítő módszerei. Ebben a példában hozzáadjuk a „Cikk” és a „Mennyiség (
 
 kg)" és a megfelelő adatok.
 

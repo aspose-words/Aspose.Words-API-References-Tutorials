@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. ¿Puedo ir al inicio de un marcador en lugar del final?
 
- ¡Absolutamente! Simplemente configura el`isBookmarkStart` parámetro a`true` y`isBookmarkEnd` a`false` en el`MoveToBookmark` método.
+ ¡Absolutamente! Simplemente configura el`isBookmarkStart` parámetro a`true`y`isBookmarkEnd` a`false` en el`MoveToBookmark` método.
 
 ### 2. ¿Qué pasa si el nombre de mi marcador es incorrecto?
 

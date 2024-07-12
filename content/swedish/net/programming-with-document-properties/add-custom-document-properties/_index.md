@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-document-properties/add-custom-document-properties/
 ---
 
-den här handledningen går vi igenom C#-källkoden för att lägga till anpassade egenskaper till ett dokument med Aspose.Words för .NET. Denna funktion låter dig lägga till anpassad information till dokumentet.
+I den här handledningen går vi igenom C#-källkoden för att lägga till anpassade egenskaper till ett dokument med Aspose.Words för .NET. Denna funktion låter dig lägga till anpassad information till dokumentet.
 
 ## Steg 1: Projektinställning
 

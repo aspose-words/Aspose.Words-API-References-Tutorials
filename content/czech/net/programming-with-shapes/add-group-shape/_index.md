@@ -17,14 +17,14 @@ Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 - Základní znalost C# a Word Processing s dokumenty Word.
 
 ## Krok 1: Nastavte adresář dokumentů
- Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři, kam chcete dokument uložit.
+ Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou k adresáři, kam chcete dokument uložit.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Vytvořte nový dokument a GroupShape
- Vytvořte novou instanci souboru`Document` třída a`GroupShape`objekt pracovat s dokumentem.
+ Vytvořte novou instanci souboru`Document` třída a`GroupShape` objekt pracovat s dokumentem.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Krok 3: Vytvořte a přidejte tvary do GroupShape
- Vytvářejte jednotlivé tvary jako např`accentBorderShape` a`actionButtonShape` za použití`Shape` třída. Upravte jejich vlastnosti podle potřeby. Připojte tyto tvary k`groupShape` objekt.
+ Vytvářejte jednotlivé tvary jako např`accentBorderShape`a`actionButtonShape` za použití`Shape` třída. Upravte jejich vlastnosti podle potřeby. Připojte tyto tvary k`groupShape` objekt.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Krok 4: Nastavte rozměry pro GroupShape
- Nastavte šířku, výšku a velikost souřadnic pro`groupShape`.
+Nastavte šířku, výšku a velikost souřadnic pro`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## Krok 6: Uložte dokument
- Uložte dokument do určeného adresáře pomocí`Save`metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu uložíme dokument jako "WorkingWithShapes.AddGroupShape.docx".
+ Uložte dokument do určeného adresáře pomocí`Save` metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu uložíme dokument jako "WorkingWithShapes.AddGroupShape.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

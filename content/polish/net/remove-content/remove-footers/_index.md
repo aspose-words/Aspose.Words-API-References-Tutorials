@@ -27,7 +27,7 @@ string dataDir = "PATH_TO_YOUR_DOCUMENT_DIRECTORY";
 
 ## Krok 2: Załaduj dokument
 
-Pierwszym krokiem jest załadowanie dokumentu do obiektu typu Document. Umożliwi to dostęp i manipulowanie zawartością dokumentu.
+Pierwszym krokiem jest załadowanie dokumentu do obiektu typu Dokument. Umożliwi to dostęp i manipulowanie zawartością dokumentu.
 
 ```csharp
 Document doc = new Document(dataDir + "Name_of_document.docx");

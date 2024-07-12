@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmb
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-以上です。Aspose.Words for .NET を使用して、Arial および Times Roman フォントを埋め込まずに PDF を生成できました。
+以上です。Aspose.Words for .NET を使用して、Arial および Times Roman フォントを埋め込まずに PDF を正常に生成できました。
 
 ### Aspose.Words for .NET を使用して、メタファイル サイズで埋め込まれた Arial および Times Roman フォントをスキップするサンプル ソース コード
 
@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 ### よくある質問
 
 #### Q: PDF ドキュメントで Arial および Times Roman フォントの埋め込みを無効にするとは何ですか? また、それが重要なのはなぜですか?
-A: PDF ドキュメントへの Arial および Times Roman フォントの埋め込みを無効にすると、生成された PDF ファイルにこれらのフォントが含まれなくなります。これは、PDF リーダー システムで既に一般的に使用されているフォントが含まれないようにすることで、PDF ファイルのサイズを縮小する上で重要です。また、さまざまなデバイスやプラットフォーム間で PDF ドキュメントの互換性と外観の一貫性を保つことにも役立ちます。
+A: PDF ドキュメントへの Arial および Times Roman フォントの埋め込みを無効にすると、生成された PDF ファイルにこれらのフォントが含まれなくなります。これは、PDF リーダー システムで既に一般的に使用されているフォントが含まれないようにすることで、PDF ファイルのサイズを縮小する上で重要です。また、さまざまなデバイスやプラットフォーム間で PDF ドキュメントの互換性が向上し、外観が一貫していることも保証できます。
 
 #### Q: Aspose.Words for .NET を設定して、Arial および Times Roman フォントを PDF ドキュメントに埋め込まないようにするにはどうすればよいですか?
 A: Aspose.Words for .NET を構成して、Arial および Times Roman フォントを PDF ドキュメントに埋め込まないようにするには、次の手順に従います。
@@ -90,6 +90,6 @@ PDF ファイル サイズの縮小: Arial や Times Roman などの一般的な
 #### Q: PDF ドキュメントで Arial フォントと Times Roman フォントの埋め込みを無効にすると、どのような影響がありますか?
 A: PDF ドキュメントで Arial および Times Roman フォントの埋め込みを無効にすると、次のような結果になります。
 
-異なる外観: PDF を開いたシステムで Arial フォントと Times Roman フォントが使用できない場合は、代替フォントが使用されるため、意図した外観と異なる可能性があります。
+異なる外観: PDF を開いたシステムで Arial および Times Roman フォントが使用できない場合は、代替フォントが使用されるため、意図した外観と異なる可能性があります。
 
 読みやすさの問題: 使用される代替フォントは元のフォントほど読みやすくない場合があり、ドキュメントの読みやすさに影響する可能性があります。

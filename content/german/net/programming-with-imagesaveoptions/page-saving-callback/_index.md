@@ -87,6 +87,6 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 In diesem Tutorial haben wir die Rückruffunktion zum Speichern von Seiten mit den Bildspeicheroptionen von Aspose.Words für .NET untersucht. Wir haben gelernt, wie man benutzerdefinierte Aktionen ausführt, wenn jede Seite eines Dokuments als Bild gespeichert wird.
 
-Diese Funktion ist nützlich, wenn Sie beim Konvertieren in Bilder auf jeder Seite bestimmte Vorgänge ausführen möchten. Sie können auf Seiteninformationen zugreifen und diese verwenden, um Sicherungsoptionen anzupassen oder andere seitenspezifische Verarbeitungen durchzuführen.
+Diese Funktion ist nützlich, wenn Sie bei der Konvertierung in Bilder auf jeder Seite bestimmte Vorgänge ausführen möchten. Sie können auf Seiteninformationen zugreifen und diese verwenden, um Sicherungsoptionen anzupassen oder andere seitenspezifische Verarbeitungen durchzuführen.
 
 Aspose.Words für .NET bietet eine umfangreiche Palette an erweiterten Funktionen zur Dokumentbearbeitung und -erstellung. Die Seite speichern-Erinnerung ist eines von vielen leistungsstarken Tools, mit denen Sie den Vorgang zum Speichern von Seiten in Bildern anpassen können.

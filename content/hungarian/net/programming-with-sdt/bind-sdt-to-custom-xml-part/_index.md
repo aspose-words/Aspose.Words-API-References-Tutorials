@@ -17,7 +17,7 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és XML alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

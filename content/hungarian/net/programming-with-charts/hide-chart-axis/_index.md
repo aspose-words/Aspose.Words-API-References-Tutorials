@@ -2,24 +2,39 @@
 title: Diagram tengelyének elrejtése egy Word dokumentumban
 linktitle: Diagram tengelyének elrejtése egy Word dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan rejtheti el a diagram tengelyét egy dokumentumban az Aspose.Words for .NET használatával. A tengely elrejtése tisztább és fókuszáltabb diagrammegjelenítéshez.
+description: Részletes, lépésenkénti oktatóanyagunkból megtudhatja, hogyan rejtheti el a diagram tengelyét egy Word-dokumentumban az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/programming-with-charts/hide-chart-axis/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan használható az Aspose.Words for .NET a diagram tengelyének elrejtéséhez a dokumentumban. A mellékelt forráskód bemutatja a diagram létrehozását, a sorozatadatok hozzáadását és a diagram tengelyének elrejtését.
+A dinamikus és tetszetős Word-dokumentumok létrehozása gyakran diagramok és grafikonok beépítésével jár. Az egyik ilyen forgatókönyv megkövetelheti a diagram tengelyének elrejtését a tisztább megjelenítés érdekében. Az Aspose.Words for .NET átfogó és könnyen használható API-t biztosít az ilyen feladatokhoz. Ez az oktatóanyag végigvezeti a diagramtengelyek Word-dokumentumban való elrejtésének lépésein az Aspose.Words for .NET használatával.
 
-## 1. lépés: Állítsa be a projektet
+## Előfeltételek
 
-Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+Mielőtt belevágnánk az oktatóanyagba, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 
-- Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
-- Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
+-  Aspose.Words for .NET: Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: Bármely IDE, amely támogatja a .NET fejlesztést, például a Visual Studio.
+- .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer telepítve van a számítógépen.
+- Alapszintű C# ismerete: A C# programozási nyelv ismerete előnyt jelent.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+## Névterek importálása
 
- Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
+Az Aspose.Words for .NET használatához importálnia kell a szükséges névtereket a projektbe. A következőképpen teheti meg:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Bontsuk le a folyamatot egyszerű, könnyen követhető lépésekre.
+
+## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
+
+Az első lépés egy új Word-dokumentum létrehozása és a DocumentBuilder objektum inicializálása.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -29,88 +44,78 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ezután szúrjon be egy diagramot a dokumentumba a gombbal`InsertChart` módszere a`DocumentBuilder`. Ebben a példában egy oszlopdiagramot szúrunk be.
+ Ebben a lépésben meghatározzuk a dokumentum mentési útvonalát. Ezután létrehozunk egy újat`Document` tárgy és a`DocumentBuilder` tiltakozik a dokumentumunk elkészítésének megkezdése ellen.
+
+## 2. lépés: Helyezzen be egy diagramot
+
+ Ezután beszúrunk egy diagramot a dokumentumba a`DocumentBuilder` tárgy.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. lépés: Adja hozzá a sorozatadatokat a diagramhoz
+ Ide beszúrunk egy oszlopdiagramot meghatározott méretekkel. A`InsertChart` metódus visszaadja a`Shape` objektum, amely tartalmazza a diagramot.
 
-Sorozatadatok hozzáadása a diagramhoz. Ebben a példában öt elemet és a hozzájuk tartozó értékeket adunk hozzá.
+## 3. lépés: Törölje a meglévő sorozatokat
+
+Mielőtt új adatokat adnánk a diagramhoz, törölnünk kell minden meglévő sorozatot.
 
 ```csharp
 chart.Series.Clear();
+```
+
+Ez a lépés biztosítja, hogy minden alapértelmezett adatot eltávolítsunk a diagramból, így helyet adunk a következő új adatoknak.
+
+## 4. lépés: Sorozatadatok hozzáadása
+
+Most adjuk hozzá saját adatsorainkat a diagramhoz.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## 4. lépés: A diagram tengelyének elrejtése
+Ebben a lépésben hozzáadunk egy „Aspose Series 1” nevű sorozatot a megfelelő kategóriákkal és értékekkel.
 
- A diagram tengelyének elrejtéséhez nyissa meg a`AxisY` a diagram tulajdonságát, és állítsa be a`Hidden`tulajdonát`true`.
+## 5. lépés: Az Y-tengely elrejtése
+
+ A diagram Y tengelyének elrejtéséhez egyszerűen beállítjuk a`Hidden` az Y tengely tulajdonsága, hogy`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-Ebben a példában elrejtjük a diagram Y tengelyét.
+Ez a kódsor elrejti az Y tengelyt, így láthatatlan a diagramon.
 
-## 5. lépés: Mentse el a dokumentumot
+## 6. lépés: Mentse el a dokumentumot
 
- Végül mentse a dokumentumot a megadott könyvtárba a`Save` módszere a`Document` tárgy.
+Végül mentse a dokumentumot a megadott könyvtárba.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-Ezzel befejeződik a diagram tengelyének elrejtése az Aspose.Words for .NET használatával.
-
-### Példa forráskód a diagramtengely elrejtéséhez az Aspose.Words for .NET használatával 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Hidden = true;
-	doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
-```
+Ez a parancs elmenti a Word dokumentumot a diagrammal a megadott elérési útra.
 
 ## Következtetés
 
-Ebből az oktatóanyagból megtanulta, hogyan rejtheti el a diagram tengelyét egy Word-dokumentumban az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével és a mellékelt forráskód használatával diagramot hozhat létre, sorozatadatokat adhat hozzá, és elrejtheti a diagram tengelyét a kívánt vizuális hatás elérése érdekében.
+Gratulálunk! Sikeresen megtanulta, hogyan rejthet el diagramtengelyt egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony könyvtár megkönnyíti a Word-dokumentumok programozott kezelését. Ezeket a lépéseket követve minimális erőfeszítéssel személyre szabott és professzionális megjelenésű dokumentumokat hozhat létre.
 
- Az Aspose.Words for .NET átfogó API-t biztosít a Word-dokumentumokban lévő diagramokkal a szövegfeldolgozáshoz, amely lehetővé teszi a diagram különböző aspektusainak kezelését, beleértve a tengely tulajdonságait. A hozzáféréssel a`AxisY` a diagram tulajdonságát, elrejtheti az Y tengelyt, hogy eltávolítsa a diagram megjelenítéséből.
+## GYIK
 
-A diagram tengelyének elrejtése akkor lehet hasznos, ha a diagramadatokra szeretne fókuszálni anélkül, hogy a tengelyvonalak és címkék elterelnék a figyelmet. Tisztább és minimalista megjelenést biztosít a diagramnak.
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony API Word dokumentumok létrehozására, szerkesztésére, konvertálására és manipulálására .NET alkalmazásokon belül.
 
-Az Aspose.Words for .NET használatával könnyen beépítheti a diagramkészítési képességeket .NET-alkalmazásaiba, és professzionális megjelenésű dokumentumokat hozhat létre testreszabott diagramokkal és rejtett diagramtengelyekkel.
+### Elrejthetem az X és az Y tengelyt is egy diagramban?
+ Igen, mindkét tengelyt elrejtheti a`Hidden` mindkettő tulajdona`AxisX`és`AxisY` nak nek`true`.
 
-### GYIK
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
+ Igen, ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/).
 
-#### Q1. Mi az Aspose.Words for .NET?
-Az Aspose.Words for .NET egy hatékony dokumentumfeldolgozó könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és mentését .NET-alkalmazásokban. Funkciók széles skáláját kínálja a dokumentumelemekkel, köztük diagramokkal és diagramtengelyekkel végzett szövegfeldolgozáshoz.
+### Hol találok további dokumentációt?
+ Részletes dokumentációt találhat az Aspose.Words for .NET webhelyen[itt](https://reference.aspose.com/words/net/).
 
-#### Q2. Hogyan telepíthetem az Aspose.Words for .NET fájlt?
-Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjével töltse le. Egyszerűen keresse meg az „Aspose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
-
-#### Q3. Elrejthetem a diagram X- és Y-tengelyét is?
- Igen, az Aspose.Words for .NET segítségével elrejtheti a diagram X- és Y-tengelyét is. Az X-tengely elrejtéséhez elérheti a`AxisX` a diagram tulajdonságát, és állítsa be a`Hidden`tulajdonát`true` . Hasonlóképpen, az Y tengely elrejtéséhez elérheti a`AxisY` tulajdonság és állítsa be a`Hidden`tulajdonát`true`. Ez lehetővé teszi mindkét tengely eltávolítását a diagram megjelenítéséből.
-
-#### Q4. Elrejtése után újra megmutathatom a tengelyt?
-Igen, az Aspose.Words for .NET használatával elrejtése után újra megjelenítheti a diagram tengelyét. Egy rejtett tengely megjelenítéséhez egyszerűen állítsa be a`Hidden` a megfelelő tulajdonsága`AxisX` vagy`AxisY` tiltakozni`false`. Ezzel a tengely ismét láthatóvá válik a diagramon.
-
-#### Q5. Testreszabhatom a diagram tengelyének egyéb tulajdonságait?
- Igen, az Aspose.Words for .NET lehetővé teszi a diagram tengelyének különböző tulajdonságainak testreszabását, például a tengely címét, címkéit, vonalszínét és egyebeket. A hozzáféréssel a`AxisX` és`AxisY` A diagram tulajdonságait módosíthatja, pl`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, és sokan mások. Ezzel finoman szabályozhatja a diagram tengelyének megjelenését és viselkedését.
-
-#### Q6. Elmenthetem a diagramot a rejtett tengellyel különböző fájlformátumokban?
- Igen, az Aspose.Words for .NET lehetővé teszi, hogy a diagramot rejtett tengellyel tartalmazó dokumentumot különféle fájlformátumokba mentse, például DOCX, PDF, HTML stb. Kiválaszthatja a kívánt kimeneti formátumot igényei alapján, és használhatja a`Save` módszere a`Document` objektumot a dokumentum mentéséhez. A rejtett tengely a mentett dokumentumban megmarad.
+### Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
+ Támogatást kaphat az Aspose közösségtől[itt](https://forum.aspose.com/c/words/8).

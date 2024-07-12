@@ -85,7 +85,7 @@ Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go z
 
 #### P: Czy można dostosować numerację przypisów końcowych w dokumencie?
 
- O: Tak, istnieje możliwość dostosowania numeracji przypisów końcowych w dokumencie. Możesz skorzystać z`RestartRule` I`NumberStyle` właściwości`EndnoteOptions` class, aby zdefiniować określone reguły ponownego uruchamiania i style numerowania.
+ O: Tak, istnieje możliwość dostosowania numeracji przypisów końcowych w dokumencie. Możesz skorzystać z`RestartRule`I`NumberStyle` właściwości`EndnoteOptions` class, aby zdefiniować określone reguły ponownego uruchamiania i style numerowania.
 
 #### P: Jak mogę umieścić przypisy końcowe w dokumencie?
 

@@ -60,7 +60,7 @@ public void exportResources() throws Exception {
 ```java
 @Test
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    // 간결성을 위해 코드 조각은 표시되지 않습니다.
+    // 간결성을 위해 코드 조각은 표시되지 않았습니다.
 }
 ```
 
@@ -70,7 +70,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```java
 @Test
 public void convertMetafilesToSvg() throws Exception {
-    // 간결성을 위해 코드 조각은 표시되지 않습니다.
+    // 간결성을 위해 코드 조각은 표시되지 않았습니다.
 }
 ```
 
@@ -94,7 +94,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```java
 @Test
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    // 간결성을 위해 코드 조각은 표시되지 않습니다.
+    // 간결성을 위해 코드 조각은 표시되지 않았습니다.
 }
 ```
 
@@ -104,7 +104,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```java
 @Test
 public void resolveFontNames() throws Exception {
-    // 간결성을 위해 코드 조각은 표시되지 않습니다.
+    // 간결성을 위해 코드 조각은 표시되지 않았습니다.
 }
 ```
 
@@ -114,7 +114,7 @@ public void resolveFontNames() throws Exception {
 ```java
 @Test
 public void exportTextInputFormFieldAsText() throws Exception {
-    // 간결성을 위해 코드 조각은 표시되지 않습니다.
+    // 간결성을 위해 코드 조각은 표시되지 않았습니다.
 }
 ```
 

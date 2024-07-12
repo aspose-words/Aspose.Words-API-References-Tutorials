@@ -1,7 +1,7 @@
 ---
 title: Zusammenführen und Vergleichen von Dokumenten in Word
 linktitle: Zusammenführen und Vergleichen von Dokumenten in Word
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Mit Aspose.Words für Python können Sie Word-Dokumente mühelos zusammenführen und vergleichen. Erfahren Sie, wie Sie Dokumente bearbeiten, Unterschiede hervorheben und Aufgaben automatisieren.
 type: docs
 weight: 10
@@ -64,7 +64,7 @@ source_doc = Document("source_document.docx")
 modified_doc = Document("modified_document.docx")
 ```
 
-## Vergleichen von Dokumenten
+## Dokumente vergleichen
 
 Vergleichen Sie das Quelldokument mit dem geänderten Dokument:
 

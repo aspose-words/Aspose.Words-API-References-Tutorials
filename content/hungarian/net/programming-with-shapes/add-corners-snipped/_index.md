@@ -17,14 +17,14 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
- Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder`tiltakozik a dokumentummal való munkavégzésre.
+ Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder` tiltakozik a dokumentummal való munkavégzésre.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 ```
 
 ## 4. lépés: Mentse el a dokumentumot
- Mentse a dokumentumot a megadott könyvtárba a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithShapes.AddCornersSnipped.docx" néven mentjük.
+ Mentse a dokumentumot a megadott könyvtárba a`Save`módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithShapes.AddCornersSnipped.docx" néven mentjük.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)

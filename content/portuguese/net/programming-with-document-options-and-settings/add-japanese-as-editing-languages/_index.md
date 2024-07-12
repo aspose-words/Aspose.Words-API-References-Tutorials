@@ -21,7 +21,7 @@ Nesta etapa carregaremos o documento Word que não contém um idioma de edição
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// Defina as preferências de idioma que serão usadas ao carregar o documento.
+//Defina as preferências de idioma que serão usadas ao carregar o documento.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -40,7 +40,7 @@ Console.WriteLine(
 		: "The document default FarEast language was set to another than Japanese language originally, so it is not overridden.");
 ```
 
-código verifica se o ID do idioma do Extremo Oriente corresponde ao japonês. De acordo com o resultado, exibe uma mensagem correspondente.
+O código verifica se o ID do idioma do Extremo Oriente corresponde ao japonês. De acordo com o resultado, exibe uma mensagem correspondente.
 
 ### Exemplo de código-fonte para adicionar japonês como idiomas de edição usando Aspose.Words for .NET
 

@@ -85,7 +85,7 @@ Parabéns! Você acabou de aprender como passar para uma célula específica da 
  Sim, especificando o índice da tabela correto no`MoveToCell` método, você pode navegar para qualquer célula em qualquer tabela do documento.
 
 ### Como lidar com células que abrangem várias linhas ou colunas?
- Você pode usar o`RowSpan` e`ColSpan` propriedades do`Cell` classe para gerenciar células mescladas.
+ Você pode usar o`RowSpan`e`ColSpan` propriedades do`Cell` classe para gerenciar células mescladas.
 
 ### É possível formatar o texto dentro da célula?
  Absolutamente! Usar`DocumentBuilder` métodos como`Font.Size`, `Font.Bold`e outros para formatar seu texto.

@@ -75,7 +75,7 @@ case SdtType.Picture:
 }
 ```
 
-## 步骤 6：保存修改后的文档
+## 步骤6：保存修改后的文档
 使用将修改后的文档保存到指定目录`Save`方法。提供所需的文件名和适当的文件扩展名。在此示例中，我们将文档保存为“WorkingWithSdt.ModifyContentControls.docx”。
 
 ```csharp

@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Itt a könyvjelzővel ellátott tartalom előtt és után szöveget adunk hozzá. A`StartBookmark` és`EndBookmark` metódusok határozzák meg a könyvjelző határait.
+ Itt a könyvjelzővel ellátott tartalom előtt és után szöveget adunk hozzá. A`StartBookmark`és`EndBookmark` metódusok határozzák meg a könyvjelző határait.
 
 ## 3. lépés: Feltételes mező beszúrása
 

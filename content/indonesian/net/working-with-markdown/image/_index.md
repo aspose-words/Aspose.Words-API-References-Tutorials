@@ -65,7 +65,7 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fitur gambar dengan As
 
 #### T: Bagaimana cara mengubah ukuran gambar di Aspose.Words?
 
- A: Untuk mengubah ukuran gambar di Aspose.Words, Anda dapat menggunakan`Width` Dan`Height` properti dari`Shape` obyek.
+ A: Untuk mengubah ukuran gambar di Aspose.Words, Anda dapat menggunakan`Width`Dan`Height` properti dari`Shape` obyek.
 
 #### T: Dapatkah saya menerapkan filter pada gambar di Aspose.Words?
 

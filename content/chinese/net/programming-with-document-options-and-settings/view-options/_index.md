@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-document-options-and-settings/view-options/
 ---
 
-在本教程中，我们将引导您完成使用 Aspose.Words for .NET 配置显示选项的 C# 源代码。此功能允许您自定义文档中的查看模式和缩放级别。
+在本教程中，我们将引导您使用 C# 源代码使用 Aspose.Words for .NET 配置显示选项。此功能允许您自定义文档中的查看模式和缩放级别。
 
 ## 步骤 1：项目设置
 

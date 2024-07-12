@@ -14,9 +14,9 @@ mai rohanó világban a feladatok automatizálása elengedhetetlenné vált a ha
 
 ## A Word automatizálás megértése
 
-A Word automatizálás magában foglalja a programozást a Microsoft Word dokumentumokkal való interakcióhoz kézi beavatkozás nélkül. Ez lehetővé teszi számunkra, hogy dinamikusan hozzunk létre dokumentumokat, hajtsunk végre különféle szöveg- és formázási műveleteket, valamint értékes adatokat nyerjünk ki a meglévő dokumentumokból.
+A Word automatizálás magában foglalja a programozást a Microsoft Word dokumentumokkal való interakcióhoz kézi beavatkozás nélkül. Ez lehetővé teszi számunkra, hogy dinamikusan hozzunk létre dokumentumokat, hajtsunk végre különféle szöveges és formázási műveleteket, valamint értékes adatokat nyerjünk ki a meglévő dokumentumokból.
 
-## Az Aspose.Words for Python használatának megkezdése
+## Az Aspose.Words for Python használatának első lépései
 
 Az Aspose.Words egy népszerű könyvtár, amely leegyszerűsíti a Word-dokumentumokkal való munkát Pythonban. A kezdéshez telepítenie kell a könyvtárat a rendszerére.
 
@@ -110,7 +110,7 @@ Miután befejeztük a munkát a dokumentummal, különböző formátumokba menth
 doc.save("output.docx", aw.SaveFormat.DOCX)
 ```
 
-## Speciális Word-automatizálási szolgáltatások
+## Speciális Word automatizálási szolgáltatások
 
 Az Aspose.Words olyan fejlett funkciókat kínál, mint a körlevél, a dokumentumtitkosítás, valamint a könyvjelzők, hivatkozások és megjegyzések kezelése.
 

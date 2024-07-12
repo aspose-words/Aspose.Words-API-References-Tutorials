@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Étape 4 : Insérez une cellule et accédez au format de ligne
-Nous pouvons maintenant insérer une cellule dans le tableau et accéder au format de ligne de cette cellule à l'aide du générateur de documents.`InsertCell()` et`RowFormat` méthodes.
+Nous pouvons maintenant insérer une cellule dans le tableau et accéder au format de ligne de cette cellule à l'aide du générateur de documents.`InsertCell()`et`RowFormat` méthodes.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Étape 5 : Définir la hauteur des lignes
- Pour définir la hauteur de la ligne, nous utilisons le`Height` et`HeightRule` propriétés du format de ligne. Dans cet exemple, nous définissons une hauteur de ligne de 100 points et utilisons le`Exactly` règle.
+ Pour définir la hauteur de la ligne, nous utilisons le`Height`et`HeightRule` propriétés du format de ligne. Dans cet exemple, nous définissons une hauteur de ligne de 100 points et utilisons le`Exactly` règle.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Étape 6 : Définir le formatage du tableau
- Certaines propriétés de formatage peuvent être définies sur le tableau lui-même et sont appliquées à toutes les lignes du tableau. Dans cet exemple, nous définissons les propriétés de marge du tableau à l'aide du`LeftPadding`, `RightPadding`, `TopPadding` et`BottomPadding` propriétés.
+ Certaines propriétés de formatage peuvent être définies sur le tableau lui-même et sont appliquées à toutes les lignes du tableau. Dans cet exemple, nous définissons les propriétés de marge du tableau à l'aide du`LeftPadding`, `RightPadding`, `TopPadding`et`BottomPadding` propriétés.
 
 ```csharp
 table. LeftPadding = 30;
@@ -58,7 +58,7 @@ table. TopPadding = 30;
 table. BottomPadding = 30;
 ```
 
-## Étape 7 : ajouter du contenu à la ligne
+## Étape 7 : Ajouter du contenu à la ligne
 Maintenant nous pouvons
 
  Nous allons ajouter du contenu à la ligne en utilisant les méthodes du constructeur de document. Dans cet exemple, nous utilisons le`Writeln()` méthode pour ajouter du texte à la ligne.

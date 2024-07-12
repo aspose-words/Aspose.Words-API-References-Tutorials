@@ -85,7 +85,7 @@ doc.getMailMerge().executeWithRegions(dataTable);
 doc.save("FormattedDocument.doc");
 ```
 
-此代码根据以下条件对表格中的行进行格式化，并交替显示颜色：`CompanyName`场地。
+此代码根据以下条件对表格中的行进行格式化，并使用交替颜色`CompanyName`场地。
 
 ## 结论
 

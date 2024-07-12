@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-document-options-and-settings/view-options/
 ---
 
-tomto tutoriálu vás provedeme zdrojovým kódem C# pro konfiguraci možností zobrazení pomocí Aspose.Words pro .NET. Tato funkce umožňuje přizpůsobit režim zobrazení a úroveň přiblížení v dokumentu.
+V tomto tutoriálu vás provedeme zdrojovým kódem C# pro konfiguraci možností zobrazení pomocí Aspose.Words pro .NET. Tato funkce umožňuje přizpůsobit režim zobrazení a úroveň přiblížení v dokumentu.
 
 ## Krok 1: Nastavení projektu
 

@@ -68,7 +68,7 @@ Aspose.Words for Java を使用すると、Java でドキュメントを画像�
 ### ドキュメントの特定のページを画像に変換できますか?
 はい、ページ範囲を指定するには、`setPageCount`そして`setPageIndex`方法`ImageSaveOptions`特定のページを画像に変換します。
 
-### Aspose.Words for Java はバッチドキュメント変換に適していますか?
+### Aspose.Words for Java はバッチ ドキュメント変換に適していますか?
 もちろんです! Aspose.Words for Java を使用すると、複数のドキュメントを効率的に一括して画像に変換できます。
 
 ### ドキュメントを他のどの形式に変換できますか?

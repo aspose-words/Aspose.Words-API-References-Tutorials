@@ -34,7 +34,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSep
 
 Létrehozunk egy új HtmlFixedSaveOptions objektumot, és a SaveFontFaceCssSeparately tulajdonságot false értékre állítjuk, hogy az összes CSS-szabályt egyetlen fájlba írhassuk.
 
-## Javítva a HTML dokumentum átalakítás
+## Javított HTML dokumentum konvertálás
 
 Most, hogy konfiguráltuk a mentési beállításokat, folytathatjuk a dokumentum konvertálását rögzített HTML-re. A Dokumentum osztály Mentés metódusával mentheti a konvertált dokumentumot rögzített HTML formátumba a mentési beállítások megadásával. Íme egy példa:
 

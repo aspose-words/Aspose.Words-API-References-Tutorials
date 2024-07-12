@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Načtěte dokument a iterujte ovládací prvky obsahu
- Načtěte dokument aplikace Word pomocí`Document`konstruktor, předá cestu k dokumentu jako parametr. Iterujte všechny tagy strukturovaného dokumentu v dokumentu pomocí a`foreach` smyčka.
+ Načtěte dokument aplikace Word pomocí`Document` konstruktor, předá cestu k dokumentu jako parametr. Iterujte všechny tagy strukturovaného dokumentu v dokumentu pomocí a`foreach` smyčka.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Krok 6: Uložte upravený dokument
- Uložte upravený dokument do zadaného adresáře pomocí`Save` metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu dokument uložíme jako „WorkingWithSdt.ModifyContentControls.docx“.
+ Uložte upravený dokument do zadaného adresáře pomocí`Save`metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu dokument uložíme jako „WorkingWithSdt.ModifyContentControls.docx“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
@@ -122,4 +122,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-je to! Úspěšně jste upravili různé typy ovládacích prvků obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+A je to! Úspěšně jste upravili různé typy ovládacích prvků obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET.

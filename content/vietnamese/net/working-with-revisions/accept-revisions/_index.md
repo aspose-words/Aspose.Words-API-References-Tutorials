@@ -2,7 +2,7 @@
 title: Chấp nhận sửa đổi
 linktitle: Chấp nhận sửa đổi
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chấp nhận bản sửa đổi đối với tài liệu Word bằng Aspose.Words for .NET
+description: Tìm hiểu cách chấp nhận bản sửa đổi đối với tài liệu Word bằng Aspose.Words cho .NET
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/accept-revisions/
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Giải pháp 2:
 
- Đáp: Bạn cũng có thể kích hoạt tính năng theo dõi sửa đổi bằng cách sử dụng`Document` hàm tạo chấp nhận`trackRevisions` Và`author` thông số.
+ Đáp: Bạn cũng có thể kích hoạt tính năng theo dõi sửa đổi bằng cách sử dụng`Document` hàm tạo chấp nhận`trackRevisions`Và`author` thông số.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

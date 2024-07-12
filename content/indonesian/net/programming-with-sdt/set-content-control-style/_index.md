@@ -40,7 +40,7 @@ sdt.Style = style;
 ```
 
 ## Langkah 4: Simpan Dokumen
- Simpan dokumen yang dimodifikasi ke direktori yang ditentukan menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.SetContentControlStyle.docx".
+ Simpan dokumen yang dimodifikasi ke direktori yang ditentukan menggunakan`Save`metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.SetContentControlStyle.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");

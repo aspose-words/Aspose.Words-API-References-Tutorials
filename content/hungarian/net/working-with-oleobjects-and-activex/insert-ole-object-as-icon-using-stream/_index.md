@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. Ha be szeretné ágyazni a kódot egy OLE objektumnak egy adatfolyamból ikonként való beillesztéséhez a projektbe, kövesse az alábbi lépéseket:
 -  Importálja a szükséges referenciákat a megfelelő hozzáadásával`using` nyilatkozatok.
--  Hozzon létre egy új dokumentumot és egy dokumentumkészítőt a`Document` és`DocumentBuilder` osztályok.
+-  Hozzon létre egy új dokumentumot és egy dokumentumkészítőt a`Document`és`DocumentBuilder` osztályok.
 - Használja a kódot az OLE objektum adatfolyamból való ikonként történő beszúrásához.
 -  Mentse el a dokumentumot a`Save` módszert a megfelelő célútvonallal.
 

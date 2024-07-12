@@ -50,7 +50,7 @@ Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
 
 ## 步骤3：设置字段合并回调
 
-为了处理合并过程，您需要设置一个回调函数。此函数将负责在指定的合并字段处插入文档。
+要处理合并过程，您需要设置一个回调函数。此函数将负责在指定的合并字段处插入文档。
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
@@ -134,7 +134,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## 结论
 
-就这样！您已成功使用 Aspose.Words for .NET 在邮件合并操作期间将文档插入特定字段。这个强大的功能可以为您节省大量时间和精力，尤其是在处理大量文档时。您可以将其想象为拥有一位私人助理，为您处理所有繁重的工作。所以，请继续尝试。祝您编码愉快！
+就这样！您已成功使用 Aspose.Words for .NET 在邮件合并操作期间将文档插入特定字段。这个强大的功能可以为您节省大量时间和精力，尤其是在处理大量文档时。您可以将其想象为拥有一位私人助理，为您处理所有繁重的工作。所以，继续尝试吧。祝您编码愉快！
 
 ## 常见问题解答
 

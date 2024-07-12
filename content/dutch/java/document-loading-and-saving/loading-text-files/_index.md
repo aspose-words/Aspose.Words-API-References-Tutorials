@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- In dit voorbeeld laden we een tekstdocument en knippen voorloop- en volgspaties af met behulp van`TxtLeadingSpacesOptions.TRIM` En`TxtTrailingSpacesOptions.TRIM`.
+ In dit voorbeeld laden we een tekstdocument en knippen voorloop- en volgspaties af met behulp van`TxtLeadingSpacesOptions.TRIM`En`TxtTrailingSpacesOptions.TRIM`.
 
 ## Stap 3: Tekstrichting regelen
 
@@ -154,7 +154,7 @@ public void documentTextDirection() throws Exception {
 
 ## Conclusie
 
-In deze handleiding hebben we onderzocht hoe u tekstbestanden kunt laden met Aspose.Words voor Java, hoe u lijsten kunt detecteren, hoe u met spaties kunt omgaan en hoe u de tekstrichting kunt bepalen. Met deze technieken kunt u tekstdocumenten effectief manipuleren in uw Java-toepassingen.
+In deze handleiding hebben we onderzocht hoe u tekstbestanden kunt laden met Aspose.Words voor Java, lijsten kunt detecteren, met spaties kunt omgaan en de tekstrichting kunt bepalen. Met deze technieken kunt u tekstdocumenten effectief manipuleren in uw Java-toepassingen.
 
 ## Veelgestelde vragen
 
@@ -179,7 +179,7 @@ Volg deze stappen om aan de slag te gaan met Aspose.Words voor Java:
 
 ### Hoe ga ik om met spaties in geladen tekstdocumenten?
 
- U kunt bepalen hoe voorloop- en volgspaties in geladen tekstdocumenten worden verwerkt met behulp van`TxtLoadOptions` . Opties zoals`TxtLeadingSpacesOptions` En`TxtTrailingSpacesOptions`Hiermee kunt u ruimtes indien nodig inkorten of behouden. Raadpleeg het gedeelte "Opties voor omgaan met spaties" in deze handleiding voor een voorbeeld.
+ U kunt bepalen hoe voorloop- en volgspaties in geladen tekstdocumenten worden verwerkt met behulp van`TxtLoadOptions` . Opties zoals`TxtLeadingSpacesOptions`En`TxtTrailingSpacesOptions`Hiermee kunt u ruimtes indien nodig inkorten of behouden. Raadpleeg het gedeelte "Opties voor omgaan met spaties" in deze handleiding voor een voorbeeld.
 
 ### Wat is de betekenis van tekstrichting in Aspose.Words voor Java?
 

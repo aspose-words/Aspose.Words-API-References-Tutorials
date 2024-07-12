@@ -9,7 +9,7 @@ url: /pt/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Se você já enfrentou problemas com fontes que não eram renderizadas corretamente em seus documentos, você não está sozinho. Gerenciar configurações de fontes e receber notificações sobre substituições de fontes pode evitar muitas dores de cabeça. Neste guia completo, exploraremos como lidar com notificações de fontes usando Aspose.Words for .NET, garantindo que seus documentos tenham sempre a melhor aparência.
+Se você já enfrentou problemas com fontes que não eram renderizadas corretamente em seus documentos, você não está sozinho. Gerenciar configurações de fontes e receber notificações sobre substituições de fontes pode evitar muitas dores de cabeça. Neste guia completo, exploraremos como lidar com notificações de fontes usando Aspose.Words for .NET, garantindo que seus documentos sempre tenham a melhor aparência.
 
 ## Pré-requisitos
 
@@ -113,7 +113,7 @@ Não, você só pode especificar uma fonte padrão para substituição. No entan
 
 ###  Q3: Posso lidar com outros tipos de avisos com`IWarningCallback`?
 
- Sim o`IWarningCallback` interface pode lidar com vários tipos de avisos, não apenas com substituição de fontes.
+ Sim o`IWarningCallback`interface pode lidar com vários tipos de avisos, não apenas com substituição de fontes.
 
 ### Q4: Onde posso encontrar suporte para Aspose.Words?
 

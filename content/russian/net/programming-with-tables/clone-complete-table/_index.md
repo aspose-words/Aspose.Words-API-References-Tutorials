@@ -37,7 +37,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 // Клонировать массив
 Table tableClone = (Table)table.Clone(true);
 
-// Вставьте клонированную таблицу в документ после оригинала.
+//Вставьте клонированную таблицу в документ после оригинала.
 table.ParentNode.InsertAfter(tableClone, table);
 
 // Вставьте пустой абзац между двумя таблицами
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 	// Клонируйте таблицу и вставьте ее в документ после оригинала.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	//Вставьте пустой абзац между двумя таблицами,
+	// Вставьте пустой абзац между двумя таблицами,
 	// или же они будут объединены в один при сохранении, это связано с проверкой документа.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

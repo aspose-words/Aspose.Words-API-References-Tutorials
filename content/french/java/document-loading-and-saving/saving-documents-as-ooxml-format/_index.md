@@ -162,7 +162,7 @@ public void setCompressionLevel() throws Exception
 
 ## Conclusion
 
-Dans ce guide complet, nous avons expliqué comment enregistrer des documents au format OOXML à l'aide d'Aspose.Words pour Java. Que vous ayez besoin de chiffrer vos documents avec des mots de passe, d'assurer la conformité à des normes OOXML spécifiques, de mettre à jour les propriétés du document, de conserver les caractères de contrôle hérités ou d'ajuster les niveaux de compression, Aspose.Words fournit un ensemble d'outils polyvalents pour répondre à vos besoins.
+Dans ce guide complet, nous avons expliqué comment enregistrer des documents au format OOXML à l'aide d'Aspose.Words pour Java. Que vous ayez besoin de chiffrer vos documents avec des mots de passe, d'assurer la conformité à des normes OOXML spécifiques, de mettre à jour les propriétés du document, de conserver les caractères de contrôle hérités ou d'ajuster les niveaux de compression, Aspose.Words fournit un ensemble polyvalent d'outils pour répondre à vos besoins.
 
 ## FAQ
 
@@ -172,7 +172,7 @@ Pour supprimer la protection par mot de passe d'un document protégé par mot de
 
 ### Puis-je définir des propriétés personnalisées lors de l'enregistrement d'un document au format OOXML ?
 
- Oui, vous pouvez définir des propriétés personnalisées pour un document avant de l'enregistrer au format OOXML. Utilisez le`BuiltInDocumentProperties` et`CustomDocumentProperties` classes pour définir diverses propriétés telles que l'auteur, le titre, les mots-clés et les propriétés personnalisées.
+ Oui, vous pouvez définir des propriétés personnalisées pour un document avant de l'enregistrer au format OOXML. Utilisez le`BuiltInDocumentProperties`et`CustomDocumentProperties` classes pour définir diverses propriétés telles que l'auteur, le titre, les mots-clés et les propriétés personnalisées.
 
 ### Quel est le niveau de compression par défaut lors de l'enregistrement d'un document au format OOXML ?
 

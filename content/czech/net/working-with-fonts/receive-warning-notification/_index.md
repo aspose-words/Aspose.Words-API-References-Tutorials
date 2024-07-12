@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Aktualizujte rozvržení stránky
 
- Zavolej`UpdatePageLayout` metoda. Tím se vykreslí dokument v paměti a zachytí se všechna varování, která se vyskytnou během vykreslování.
+ Zavolej`UpdatePageLayout`metoda. Tím se vykreslí dokument v paměti a zachytí se všechna varování, která se vyskytnou během vykreslování.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ Ne, můžete zadat pouze jedno výchozí písmo pro nahrazení. Můžete však n
 
 ###  Q3: Mohu zpracovat jiné typy varování pomocí`IWarningCallback`?
 
- Ano,`IWarningCallback` rozhraní zvládne různé typy varování, nejen náhradu písem.
+ Ano,`IWarningCallback`rozhraní zvládne různé typy varování, nejen náhradu písem.
 
 ### Q4: Kde najdu podporu pro Aspose.Words?
 

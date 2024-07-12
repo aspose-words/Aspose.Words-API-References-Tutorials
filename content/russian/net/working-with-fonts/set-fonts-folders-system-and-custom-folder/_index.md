@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Добавьте новый источник папки, который будет указывать Aspose.Words искать шрифты в следующей папке.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Добавьте пользовательскую папку, содержащую наши шрифты, в список существующих источников шрифтов.
+// Добавьте пользовательскую папку, содержащую наши шрифты, в список существующих источников шрифтов.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

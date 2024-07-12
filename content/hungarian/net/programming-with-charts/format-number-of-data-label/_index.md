@@ -2,34 +2,58 @@
 title: Formátum Adatcímke száma Egy diagramon
 linktitle: Formátum Adatcímke száma Egy diagramon
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan formázhatja a diagramon lévő adatcímkék számát az Aspose.Words for .NET segítségével. Egyszerűen testreszabhatja az adatcímkék számformátumait.
+description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan formázhat adatcímkéket diagramokban az Aspose.Words for .NET használatával. Javítsa Word-dokumentumait könnyedén.
 type: docs
 weight: 10
 url: /hu/net/programming-with-charts/format-number-of-data-label/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan használható az Aspose.Words for .NET a diagramon lévő adatcímkék számának formázásához. A mellékelt forráskód bemutatja, hogyan hozhat létre diagramot, hogyan adhat hozzá sorozatadatokat, és hogyan szabhatja testre az adatcímkék számformátumát.
+A vonzó és informatív dokumentumok létrehozása gyakran magában foglalja a jól formázott adatcímkéket tartalmazó diagramok beépítését. Ha Ön .NET-fejlesztő, aki kifinomult diagramokkal szeretné bővíteni Word-dokumentumait, az Aspose.Words for .NET egy fantasztikus könyvtár, amely segít elérni ezt. Ez az oktatóanyag lépésről lépésre végigvezeti a számcímkék diagramon történő formázásán az Aspose.Words for .NET használatával.
 
-## 1. lépés: Állítsa be a projektet
+## Előfeltételek
 
-Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+Mielőtt belemerülne a kódba, meg kell felelnie néhány előfeltételnek:
 
-- Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
-- Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words for .NET könyvtár. Ha még nem telepítette, megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: Be kell állítania egy .NET fejlesztői környezetet. A Visual Studio erősen ajánlott.
+- Alapvető C# ismerete: A C# programozás ismerete elengedhetetlen, mivel ez az oktatóanyag a C# kód írását és megértését foglalja magában.
+-  Ideiglenes licenc: Az Aspose.Words korlátozás nélküli használatához beszerezheti a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+Most pedig nézzük meg a számcímkék diagramon való formázásának lépésről lépésre történő folyamatát.
 
- Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
+## Névterek importálása
+
+Először is importálnunk kell a szükséges névtereket az Aspose.Words for .NET használatához. Adja hozzá a következő sorokat a C# fájl tetejéhez:
 
 ```csharp
-// A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## 1. lépés: Állítsa be a dokumentumkönyvtárat
+
+Mielőtt elkezdené kezelni a Word-dokumentumot, meg kell adnia azt a könyvtárat, ahová a dokumentumot menteni fogja. Ez elengedhetetlen a későbbi mentési művelethez.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+
+## 2. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
+
+ A következő lépés egy új inicializálása`Document` és a`DocumentBuilder` . A`DocumentBuilder` egy segítő osztály, amely lehetővé teszi a dokumentum tartalmának felépítését.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ezután szúrjon be egy diagramot a dokumentumba a gombbal`InsertChart` módszere a`DocumentBuilder`. Ebben a példában beszúrunk egy vonaldiagramot.
+## 3. lépés: Szúrjon be egy diagramot a dokumentumba
+
+ Most szúrjunk be egy diagramot a dokumentumba a`DocumentBuilder`. Ebben az oktatóanyagban egy vonaldiagramot használunk példaként.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,94 +61,74 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## 3. lépés: Adja hozzá a sorozatadatokat a diagramhoz
+Itt beszúrunk egy vonaldiagramot meghatározott szélességgel és magassággal, és beállítjuk a diagram címét.
 
-Sorozatadatok hozzáadása a diagramhoz. Ebben a példában három kategóriát és a hozzájuk tartozó értékeket adunk hozzá.
+## 4. lépés: Alapértelmezett sorozat törlése és új sorozat hozzáadása
+
+Alapértelmezés szerint a diagramnak néhány előre generált sorozata lesz. Ezeket törölnünk kell, és hozzá kell adnunk saját sorozatunkat konkrét adatpontokkal.
 
 ```csharp
+// Alapértelmezett generált sorozat törlése.
 chart.Series.Clear();
+
+// Új sorozat hozzáadása egyéni adatpontokkal.
 ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-    new string[] { "Category 1", "Category 2", "Category 3" }, 
-    new double[] { 2.5, 1.5, 3.5 });
-series1.HasDataLabels = true;
+	new string[] { "Category 1", "Category 2", "Category 3" }, 
+	new double[] { 2.5, 1.5, 3.5 });
 ```
 
-## 4. lépés: Az adatcímkék számformátumának testreszabása
+## 5. lépés: Engedélyezze az adatcímkéket
 
- Az adatcímkék számának formázásához nyissa meg a`DataLabels` sorozathoz kapcsolódó gyűjtemény.
+Az adatcímkék diagramon való megjelenítéséhez engedélyeznünk kell őket a sorozatunkban.
 
 ```csharp
+series1.HasDataLabels = true;
 series1.DataLabels.ShowValue = true;
-series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-Ebben a példában minden adatcímkéhez különböző számformátumokat állítunk be. Az első adatcímke pénznemként, a második dátumként, a harmadik százalékként van formázva.
+## 6. lépés: Formázza meg az adatcímkéket
 
-## 5. lépés: Mentse el a dokumentumot
+Ennek az oktatóanyagnak a lényege az adatcímkék formázása. Minden adatcímkére külön-külön különböző számformátumokat alkalmazhatunk.
 
- Végül mentse a dokumentumot a megadott könyvtárba a`Save` módszere a`Document` tárgy.
+```csharp
+series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Pénznem formátuma
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Dátum formátum
+series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Százalékos formátum
+```
+
+ Ezenkívül összekapcsolhatja az adatcímke formátumát egy forráscellával. Ha linkeljük, a`NumberFormat` vissza lesz állítva általánosra, és a forráscellából öröklődik.
+
+```csharp
+series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
+```
+
+## 7. lépés: Mentse el a dokumentumot
+
+Végül mentse a dokumentumot a megadott könyvtárba.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-Ezzel befejeződik az adatcímkék számának formázása egy diagramban az Aspose.Words for .NET használatával.
-
-### Példa forráskódra a Format Number Of Data Labelhez az Aspose.Words for .NET használatával 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Text = "Data Labels With Different Number Format";
-	// Alapértelmezett generált sorozat törlése.
-	chart.Series.Clear();
-	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-		new string[] { "Category 1", "Category 2", "Category 3" }, 
-		new double[] { 2.5, 1.5, 3.5 });
-	series1.HasDataLabels = true;
-	series1.DataLabels.ShowValue = true;
-	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// Vagy beállíthatja, hogy a formátumkód egy forráscellához legyen kapcsolva,
-	//ebben az esetben a NumberFormat visszaáll általánosra, és a forráscellából öröklődik.
-	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
-	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
-```
+Ez elmenti a dokumentumot a megadott néven, és biztosítja a formázott adatcímkékkel ellátott diagram megőrzését.
 
 ## Következtetés
 
-Ebben az oktatóanyagban megtanulta, hogyan kell formázni az adatcímkék számát egy diagramon az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével és a mellékelt forráskód használatával diagramot hozhat létre, sorozatadatokat adhat hozzá, és igényei szerint testreszabhatja az adatcímkék számformátumát.
+Az adatcímkék diagramon való formázása az Aspose.Words for .NET használatával nagymértékben javíthatja Word-dokumentumai olvashatóságát és professzionalizmusát. A lépésenkénti útmutató követésével most már képesnek kell lennie diagram létrehozására, adatsorok hozzáadására és az adatcímkék igényeinek megfelelő formázására. Az Aspose.Words for .NET egy hatékony eszköz, amely lehetővé teszi a Word-dokumentumok széles körű testreszabását és automatizálását, így a .NET-fejlesztők számára felbecsülhetetlen értékű eszköz.
 
- Az Aspose.Words for .NET átfogó API-t biztosít a Word-dokumentumokban lévő diagramokkal a szövegfeldolgozáshoz, amely lehetővé teszi a diagram különböző aspektusainak, köztük az adatcímkék kezelését. A hozzáféréssel a`DataLabels` sorozathoz társított gyűjtemény, testreszabhatja az egyes adatcímkék számformátumát.
+## GYIK
 
-Az API lehetővé teszi az értékek megjelenítésének szabályozását, az egyes adatcímkékhez különböző számformátumok beállítását, valamint a számformátum forráscellához való kapcsolását. Ez a rugalmasság lehetővé teszi, hogy diagramokban numerikus adatokat jelenítsen meg a kívánt formázással, például pénznem szimbólumokkal, dátumformátumokkal és százalékértékekkel.
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok programozott, C# használatával történő létrehozásához, kezeléséhez és konvertálásához.
 
-Az Aspose.Words for .NET használatával hatékony diagramkészítési képességeket építhet be .NET-alkalmazásaiba, és professzionális megjelenésű dokumentumokat hozhat létre teljesen formázott diagramokkal és adatcímkékkel.
+### Formázhatok más típusú diagramokat az Aspose.Words for .NET segítségével?
+Igen, az Aspose.Words for .NET számos diagramtípust támogat, beleértve a sávot, oszlopot, kört és egyebeket.
 
-### GYIK
+### Hogyan szerezhetek ideiglenes licencet az Aspose.Words for .NET-hez?
+ Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
-#### Q1. Mi az Aspose.Words for .NET?
-Az Aspose.Words for .NET egy funkciókban gazdag dokumentumfeldolgozó könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és mentését .NET-alkalmazásokban. Funkciók széles skáláját kínálja a dokumentumelemekkel, köztük diagramokkal és adatcímkékkel ellátott szövegfeldolgozáshoz.
+### Lehetséges adatcímkéket kapcsolni a forráscellákhoz az Excelben?
+Igen, csatolhat adatcímkéket a forráscellákhoz, lehetővé téve a számformátum öröklését a forráscellából.
 
-#### Q2. Hogyan telepíthetem az Aspose.Words for .NET fájlt?
-Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjével töltse le. Egyszerűen keresse meg az „Aspose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
-
-#### Q3. Formázhatom a diagram egyéb aspektusait az Aspose.Words for .NET használatával?
-Igen, az Aspose.Words for .NET kiterjedt lehetőségeket biztosít a diagramok különböző aspektusainak formázásához. Az adatcímkéken kívül testreszabhatja a diagram típusát, a sorozat adatait, a tengely tulajdonságait, a jelmagyarázatot, a címet, a diagram területét és sok más elemet. Az API finoman szabályozza a diagram megjelenését és formázását.
-
-#### Q4. Alkalmazhatok különböző számformátumokat ugyanabban a sorozatban lévő különböző adatcímkékre?
-Igen, az Aspose.Words for .NET lehetővé teszi, hogy különböző számformátumokat alkalmazzon ugyanazon a sorozaton belüli egyedi adatcímkékre. A hozzáféréssel a`DataLabels` sorozathoz társított gyűjtemény, beállíthatja a`FormatCode` minden adatcímke tulajdonsága a kívánt számformátum megadásához. Ez lehetővé teszi számértékek megjelenítését különböző formátumokban ugyanazon a diagramon belül.
-
-#### Q5. Használhatok egyéni számformátumokat az adatcímkékhez?
- Igen, az Aspose.Words for .NET támogatja az adatcímkék egyéni számformátumait. A kívánt számformátum beállításával megadhatja a`FormatCode` egy adatcímke tulajdonsága egyéni formátumkódhoz. Ez rugalmasságot biztosít számformátumok széles skálájának alkalmazásához, például pénznemszimbólumok, dátumformátumok, százalékértékek stb.
-
-#### Q6. Elmenthetem a diagramot formázott adatcímkékkel különböző formátumokban?
-Igen, az Aspose.Words for .NET lehetővé teszi a diagramot tartalmazó dokumentum mentését formázott adatcímkékkel különféle formátumokban, például DOCX, PDF, HTML stb. Kiválaszthatja az igényeinek megfelelő formátumot, és használhatja a`Save` módszere a`Document` objektumot a dokumentum mentéséhez. A formázott adatcímkék a mentett dokumentumban megmaradnak.
+### Hol találhatok részletesebb dokumentációt az Aspose.Words for .NET-hez?
+ Átfogó dokumentációt találhat[itt](https://reference.aspose.com/words/net/).

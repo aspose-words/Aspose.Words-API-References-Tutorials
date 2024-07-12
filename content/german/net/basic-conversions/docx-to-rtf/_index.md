@@ -70,7 +70,7 @@ doc.Save(dstStream, SaveFormat.Rtf);
 
 ## Schritt 5: Speichern Sie das RTF-Dokument
 
-Zum Schluss müssen wir das konvertierte RTF-Dokument im angegebenen Verzeichnis speichern. Stellen Sie sicher, dass Sie die Streamposition vor dem Speichern wieder auf Null zurücksetzen.
+Zum Schluss müssen wir das konvertierte RTF-Dokument im angegebenen Verzeichnis speichern. Stellen Sie sicher, dass Sie die Streamposition vor dem Speichern auf Null zurücksetzen.
 
 ```csharp
 dstStream.Position = 0;

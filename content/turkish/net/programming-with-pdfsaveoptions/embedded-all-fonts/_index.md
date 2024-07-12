@@ -89,7 +89,7 @@ C: Yazı tiplerini bir PDF belgesine yerleştirmenin faydaları şunlardır:
 
 Tutarlı belge görünümü sağlayın: Gömülü yazı tipleri, sistemde mevcut yazı tipleri ne olursa olsun belgenin tam olarak tasarlandığı gibi görüntülenmesini sağlar.
 
-Biçimlendirmenin korunması: Gömülü yazı tipleri belgenin biçimlendirmesini ve düzenini korur, yazı tipi değişikliklerini ve görünüm farklılıklarını ortadan kaldırır.
+Biçimlendirmenin korunması: Gömülü yazı tipleri, belgenin biçimlendirmesini ve düzenini koruyarak yazı tipi değişikliklerini ve görünüm farklılıklarını ortadan kaldırır.
 
 Geliştirilmiş okunabilirlik: Yazı tiplerini gömmek belgenin daha iyi okunabilirliğini sağlar çünkü orijinal yazı tipleri mevcut olmasa bile belirtilen yazı tipleri metni görüntülemek için kullanılır.
 

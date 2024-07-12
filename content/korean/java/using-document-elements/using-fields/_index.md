@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- 바꾸다`"Your Document Directory"` 그리고`"Your Output Directory"` 적절한 경로로.
+ 바꾸다`"Your Document Directory"`그리고`"Your Output Directory"` 적절한 경로로.
 
 ## 4. 메일 병합 사용자 정의
 

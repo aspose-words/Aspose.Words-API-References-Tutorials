@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- في هذا المقتطف، نحدد المسار إلى الدليل حيث سيتم حفظ مستندنا وتهيئة ملف جديد`Document` و`DocumentBuilder` مثال.
+ في هذا المقتطف، نحدد المسار إلى الدليل حيث سيتم حفظ مستندنا وتهيئة ملف جديد`Document`و`DocumentBuilder` مثال.
 
 ## الخطوة 3: كتابة النص الأولي
 

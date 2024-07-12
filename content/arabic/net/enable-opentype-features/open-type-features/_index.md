@@ -2,75 +2,111 @@
 title: فتح ميزات النوع
 linktitle: فتح ميزات النوع
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words لـ .NET
+description: تعرف على كيفية تمكين ميزات OpenType في مستندات Word باستخدام Aspose.Words لـ .NET من خلال هذا الدليل المفصل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/enable-opentype-features/open-type-features/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي الشامل، ستتعلم كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET. سنرشدك خلال العملية ونزودك بمقتطفات التعليمات البرمجية اللازمة لـ C#. بحلول نهاية هذا الدليل، ستكون قادرًا على العمل باستخدام ميزات Open Type في مستندات Word الخاصة بك.
+هل أنت مستعد للتعمق في عالم ميزات OpenType باستخدام Aspose.Words for .NET؟ استعدوا، لأننا على وشك الشروع في رحلة ممتعة لن تؤدي إلى تحسين مستندات Word الخاصة بكم فحسب، بل ستجعلكم أيضًا خبراء في Aspose.Words. هيا بنا نبدأ!
 
 ## المتطلبات الأساسية
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
-- Aspose.Words لمكتبة .NET المثبتة على نظامك.
 
-## الخطوة 1: قم بتحميل المستند
-للبدء، قم بتحميل المستند باستخدام فئة المستند:
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
+
+1.  Aspose.Words لـ .NET: يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
+2. .NET Framework: تأكد من تثبيت إصدار متوافق من .NET Framework.
+3. Visual Studio: بيئة تطوير متكاملة (IDE) للبرمجة.
+4. المعرفة الأساسية بـ C#: يفترض هذا البرنامج التعليمي أن لديك فهمًا أساسيًا لبرمجة C#.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، ستحتاج إلى استيراد مساحات الأسماء الضرورية للوصول إلى الوظائف التي يوفرها Aspose.Words لـ .NET. وإليك كيف يمكنك القيام بذلك:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Shaping.HarfBuzz;
+```
+
+الآن، دعونا نقسم المثال إلى خطوات متعددة بتنسيق دليل خطوة بخطوة.
+
+## الخطوة 1: قم بإعداد مشروعك
+
+### إنشاء مشروع جديد
+
+افتح Visual Studio وقم بإنشاء مشروع C# جديد. أطلق عليها اسمًا ذا معنى مثل "OpenTypeFeaturesDemo". سيكون هذا بمثابة ملعبنا لتجربة ميزات OpenType.
+
+### إضافة Aspose.Words مرجع
+
+لاستخدام Aspose.Words، تحتاج إلى إضافته إلى مشروعك. يمكنك القيام بذلك عبر NuGet Package Manager:
+
+1. انقر بزر الماوس الأيمن على مشروعك في Solution Explorer.
+2. حدد "إدارة حزم NuGet".
+3. ابحث عن "Aspose.Words" وقم بتثبيته.
+
+## الخطوة 2: قم بتحميل المستند الخاص بك
+
+### تحديد دليل المستندات
+
+قم بإنشاء متغير سلسلة للاحتفاظ بالمسار إلى دليل المستند الخاص بك. هذا هو المكان الذي يتم فيه تخزين مستند Word الخاص بك.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي حيث يوجد المستند الخاص بك.
+
+### تحميل الوثيقة
+
+الآن، قم بتحميل المستند الخاص بك باستخدام Aspose.Words:
+
+```csharp
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 ```
 
-## الخطوة 2: تمكين ميزات النوع المفتوح
-لتمكين ميزات Open Type، قم بتعيين خاصية TextShaperFactory الخاصة بفئة LayoutOptions إلى مثيل مصنع تشكيل النص المطلوب. في هذا المثال، نستخدم HarfBuzzTextShaperFactory:
+يفتح سطر التعليمات البرمجية هذا المستند المحدد حتى نتمكن من معالجته.
+
+## الخطوة 3: تمكين ميزات OpenType
+
+ HarfBuzz هو محرك تشكيل نص مفتوح المصدر يعمل بسلاسة مع Aspose.Words. لتمكين ميزات OpenType، نحتاج إلى تعيين`TextShaperFactory` ملكية`LayoutOptions` هدف.
 
 ```csharp
-doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
+doc.LayoutOptions.TextShaperFactory = HarfBuzzTextShaperFactory.Instance;
 ```
 
-## الخطوة 3: احفظ المستند
-بعد تمكين ميزات Open Type، احفظ المستند بتنسيق الإخراج المطلوب، مثل PDF:
+يضمن مقتطف الكود هذا أن مستندك يستخدم HarfBuzz لتشكيل النص، مما يتيح ميزات OpenType المتقدمة.
+
+## الخطوة 4: احفظ المستند الخاص بك
+
+وأخيرًا، احفظ المستند المعدل بصيغة PDF لترى نتائج عملك.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-### مثال على كود المصدر لميزات الكتابة المفتوحة باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لاستخدام ميزات Open Type في Aspose.Words لـ .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "OpenType text shaping.docx");
-
-doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
-
-doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
-```
+يقوم سطر التعليمات البرمجية هذا بحفظ المستند بتنسيق PDF، متضمنًا ميزات OpenType التي تم تمكينها بواسطة HarfBuzz.
 
 ## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words لـ .NET. باتباع الدليل الموضح خطوة بخطوة واستخدام كود المصدر المقدم، يمكنك الآن العمل مع ميزات Open Type في مستندات Word الخاصة بك.
 
-توفر ميزات Open Type إمكانات محسنة للطباعة وتشكيل النص، مما يسمح لك بإنشاء مستندات جذابة بصريًا وذات مظهر احترافي. قم بتجربة مصانع مختلفة لتشكيل النص واستكشف إمكانيات ميزات Open Type في مشاريعك.
+وهناك لديك! لقد نجحت في تمكين ميزات OpenType في مستند Word الخاص بك باستخدام Aspose.Words لـ .NET. باتباع هذه الخطوات، يمكنك فتح إمكانات الطباعة المتقدمة، مما يضمن أن تبدو مستنداتك احترافية ومصقولة.
 
-### الأسئلة الشائعة
+لكن لا تتوقف هنا! اكتشف المزيد من ميزات Aspose.Words وشاهد كيف يمكنك تحسين مستنداتك بشكل أكبر. تذكر أن الممارسة تؤدي إلى الكمال، لذا استمر في التجربة والتعلم.
 
-#### س: كيف يمكنني تمكين ميزات OpenType في Aspose.Words لـ .NET؟
+## الأسئلة الشائعة
 
-ج: لتمكين ميزات OpenType في Aspose.Words لـ .NET، يتعين عليك اتباع الخطوات المذكورة في البرنامج التعليمي.
+### ما هي ميزات OpenType؟
+تتضمن ميزات OpenType إمكانات مطبعية متقدمة مثل الحروف المركبة، وتقنين الأحرف، والمجموعات الأسلوبية التي تعمل على تحسين مظهر النص في المستندات.
 
-#### س: ما هي ميزات OpenType المدعومة في Aspose.Words لـ .NET؟
+### لماذا نستخدم HarfBuzz مع Aspose.Words؟
+HarfBuzz هو محرك تشكيل نص مفتوح المصدر يوفر دعمًا قويًا لميزات OpenType، مما يعزز جودة الطباعة في مستنداتك.
 
-ج: يدعم Aspose.Words for .NET العديد من ميزات OpenType، مثل الحروف المركبة، وتنوعات الحروف الرسومية، والبدائل السياقية، والمزيد.
+### هل يمكنني استخدام محركات أخرى لتشكيل النص مع Aspose.Words؟
+نعم، يدعم Aspose.Words محركات مختلفة لتشكيل النص. ومع ذلك، يوصى بشدة باستخدام HarfBuzz نظرًا لدعمه الشامل لميزات OpenType.
 
-#### س: كيف يمكنني التحقق مما إذا كانت ميزة OpenType مدعومة في خط معين؟
+### هل Aspose.Words متوافق مع جميع إصدارات .NET؟
+ يدعم Aspose.Words إصدارات .NET المختلفة، بما في ذلك .NET Framework و.NET Core و.NET Standard. افحص ال[توثيق](https://reference.aspose.com/words/net/) للحصول على معلومات التوافق التفصيلية.
 
-ج: يمكنك التحقق مما إذا كانت ميزة OpenType مدعومة في خط معين باستخدام ملف`Font.OpenTypeFeatures` الطريقة في Aspose.Words لـ .NET.
-
-#### س: ما هي ميزات تنسيق النص الأخرى التي يدعمها Aspose.Words for .NET؟
-
-ج: بصرف النظر عن ميزات OpenType، يدعم Aspose.Words for .NET أيضًا ميزات تنسيق النص الأخرى مثل تنسيق الفقرات وإنشاء الجداول وإضافة الصور وما إلى ذلك.
-
-#### س: هل يمكنني استخدام ميزات OpenType في كافة إصدارات Aspose.Words لـ .NET؟
-
-ج: يتم دعم ميزات OpenType في الإصدارات الأحدث من Aspose.Words لـ .NET. تأكد من أنك تستخدم إصدارًا متوافقًا للاستفادة من هذه الميزات.
+### كيف يمكنني تجربة Aspose.Words قبل الشراء؟
+ يمكنك تنزيل نسخة تجريبية مجانية من[موقع أسبوز](https://releases.aspose.com/) وطلب ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).

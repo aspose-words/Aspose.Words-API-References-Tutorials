@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Dieser Code verwendet die`ConvertUtil` Klasse von Aspose.Words zum Umrechnen der angegebenen Werte in Zoll (`InchToPoint` ). Sie können auch andere Konvertierungsmethoden verwenden, die im`ConvertUtil` Klasse zum Umrechnen von Werten in andere Maßeinheiten.
+ Dieser Code verwendet die`ConvertUtil` Klasse von Aspose.Words zum Umrechnen der angegebenen Werte in Zoll (`InchToPoint`). Sie können auch andere Konvertierungsmethoden verwenden, die im`ConvertUtil` Klasse zum Umrechnen von Werten in andere Maßeinheiten.
 
 ### Beispielquellcode zum Konvertieren zwischen Maßeinheiten mit Aspose.Words für .NET
 

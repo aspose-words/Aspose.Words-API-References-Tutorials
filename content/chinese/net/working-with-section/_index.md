@@ -27,4 +27,4 @@ url: /zh/net/working-with-section/
 | [删除页眉页脚内容](./delete-header-footer-content/) | 在本教程中，学习如何使用 Aspose.Words for .NET 从 Word 文档中删除页眉和页脚内容。  |
 | [删除部分内容](./delete-section-content/) | 在本教程中，学习如何使用 Aspose.Words for .NET 从 Word 文档的特定部分删除内容。 |
 | [修改所有部分的 Word 页面设置](./modify-page-setup-in-all-sections/) | 在本教程中，学习如何使用 Aspose.Words for .NET 修改 Word 文档所有部分的 Word 页面设置。 |
-| [按索引访问部分](./sections-access-by-index/) | 在本教程中，学习如何通过索引访问 Word 文档的各个部分并使用 Aspose.Words for .NET 更改其设置。 |
+| [按索引访问部分](./sections-access-by-index/) | 在本教程中，了解如何通过索引访问 Word 文档的各个部分并使用 Aspose.Words for .NET 更改其设置。 |

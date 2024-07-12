@@ -2,7 +2,7 @@
 title: ドキュメントノードの理解とナビゲーション
 linktitle: ドキュメントノードの理解とナビゲーション
 second_title: Aspose.Words Python ドキュメント管理 API
-description: Aspose.Words for Python を使用して Word ドキュメントを操作する方法を学びます。このステップ バイ ステップ ガイドでは、読み込み、書式設定、表、画像などについて説明します。今すぐドキュメント処理スキルを高めましょう。
+description: Aspose.Words for Python を使用して Word 文書を操作する方法を学びます。このステップ バイ ステップ ガイドでは、読み込み、書式設定、表、画像などについて説明します。今すぐドキュメント処理スキルを高めましょう。
 type: docs
 weight: 20
 url: /ja/python-net/document-structure-and-content-manipulation/document-nodes/
@@ -28,7 +28,7 @@ doc = aw.Document("input.docx")
 doc.save("output.docx")
 ```
 
-## ドキュメントツリーのナビゲーション
+## ドキュメントツリーのナビゲート
 
 ドキュメントはノードのツリーとして構造化されており、各ノードは段落、表、画像などの要素を表します。このツリーをナビゲートすることは、ドキュメントの操作に不可欠です。
 
@@ -183,7 +183,7 @@ doc.encrypt(aw.EncryptionType.STANDARD, "password")
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for Python を使用して Word 文書をプログラムで操作および強化するための基本を学習しました。文書の読み込みと保存から、文書ツリーのナビゲート、段落、書式設定、表などの操作まで、文書操作の強固な基礎が身につきました。
+このチュートリアルでは、Aspose.Words for Python を使用して Word 文書をプログラムで操作および強化するための基本事項を学習しました。文書の読み込みと保存から、文書ツリーのナビゲート、段落、書式設定、表などの操作まで、文書操作の強固な基礎が身につきました。
 
 ## よくある質問
 

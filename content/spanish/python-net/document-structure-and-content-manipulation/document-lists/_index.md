@@ -2,7 +2,7 @@
 title: Crear y administrar listas en documentos de Word
 linktitle: Crear y administrar listas en documentos de Word
 second_title: API de gestión de documentos Aspose.Words Python
-description: Aprenda a crear y administrar listas en documentos de Word usando la API Aspose.Words Python. Guía paso a paso con código fuente para formatear listas, personalizarlas, anidarlas y más.
+description: Aprenda a crear y administrar listas en documentos de Word utilizando la API Aspose.Words Python. Guía paso a paso con código fuente para formatear, personalizar, anidar y más listas.
 type: docs
 weight: 18
 url: /es/python-net/document-structure-and-content-manipulation/document-lists/

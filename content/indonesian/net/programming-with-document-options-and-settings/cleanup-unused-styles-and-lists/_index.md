@@ -75,7 +75,7 @@ Petunjuk ini menunjukkan jumlah gaya dan daftar yang tersisa setelah pembersihan
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//Membersihkan gaya dan daftar yang tidak digunakan dari dokumen bergantung pada CleanupOptions yang diberikan.
+	// Membersihkan gaya dan daftar yang tidak digunakan dari dokumen bergantung pada CleanupOptions yang diberikan.
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 

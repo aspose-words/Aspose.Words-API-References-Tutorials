@@ -62,7 +62,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan kell megadni az alapértelmezett be
 
 #### K: Hogyan adhatok meg alapértelmezett betűtípust az Aspose.Words PDF-formátumba konvertálásakor?
 
- V: Az Aspose.Words PDF-be konvertálásakor alapértelmezett betűtípus megadásához használhatja a`PdfOptions` osztályt, és állítsa be a`DefaultFontName` tulajdonság a kívánt betűtípus nevéhez.
+ V: Az Aspose.Words PDF-be konvertálásakor alapértelmezett betűtípus megadásához használhatja a`PdfOptions` osztályt, és állítsa be a`DefaultFontName`tulajdonság a kívánt betűtípus nevéhez.
 
 #### K: Mi a teendő, ha az alapértelmezett betűtípus nem érhető el a PDF-be konvertáláskor?
 

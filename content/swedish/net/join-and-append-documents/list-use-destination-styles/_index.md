@@ -2,49 +2,67 @@
 title: Lista Använd destinationsstilar
 linktitle: Lista Använd destinationsstilar
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du går med i och lägger till Word-dokument samtidigt som du bevarar måldokumentets liststilar med Aspose.Words för .NET.
+description: Lär dig hur du slår samman och hanterar dokumentlistor sömlöst med Aspose.Words för .NET. Följ vår steg-för-steg handledning för effektiv dokumentintegration.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/list-use-destination-styles/
 ---
+## Introduktion
 
-Denna handledning guidar dig genom processen att använda funktionen Listanvändning av destinationsstilar i Aspose.Words för .NET. Med den här funktionen kan du ansluta och lägga till Word-dokument samtidigt som du använder liststilarna för måldokumentet.
+Att integrera dokument med bibehållen konsekvent stil kan vara utmanande, särskilt med listor. Aspose.Words för .NET tillhandahåller robusta verktyg för att hantera dessa komplexiteter, vilket säkerställer att dina dokument behåller sin formateringsintegritet. Denna handledning guidar dig genom processen att sammanfoga dokument med listor, med hjälp av målstilar för en polerad slutprodukt.
 
 ## Förutsättningar
 
-Innan du börjar, se till att du har följande:
+Innan du dyker in i den här handledningen, se till att du har följande:
+- Visual Studio installerat på din dator.
+- Aspose.Words för .NET-bibliotek integrerat i ditt projekt.
+- Grundläggande förståelse för programmeringsspråket C#.
 
-1. Aspose.Words för .NET installerat. Du kan ladda ner den från Asposes webbplats eller installera den via NuGet.
-2. Visual Studio eller någon annan C#-utvecklingsmiljö.
+## Importera namnområden
 
-## Steg 1: Initiera dokumentkatalogerna
-
- Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Steg 2: Ladda käll- och måldokumenten
-
-Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
+Börja med att importera de nödvändiga namnrymden för att utnyttja Aspose.Words-funktionerna:
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
 
-## Steg 3: Ställ in källdokumentet på att fortsätta efter måldokumentet
+Låt oss dela upp processen i tydliga steg:
 
- För att säkerställa att innehållet från källdokumentet fortsätter efter slutet av måldokumentet måste du ställa in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.Continuous`.
+## Steg 1: Ställ in dokumentsökvägar
+
+Se till att du har definierat katalogsökvägen där dina dokument finns:
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+```
+
+ Byta ut`"YOUR_DOCUMENT_DIRECTORY_PATH"` med den faktiska katalogsökvägen där dina dokument lagras.
+
+## Steg 2: Ladda käll- och måldokument
+
+Ladda käll- och måldokumenten med Aspose.Words:
+
+```csharp
+Document srcDoc = new Document(dataDir + "DocumentSource.docx");
+Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+```
+
+ Justera`"DocumentSource.docx"`och`"DocumentDestination.docx"` med dina faktiska filnamn.
+
+## Steg 3: Ställ in avsnittsstart för källdokument
+
+För att säkerställa att dokumenten smälter samman smidigt, ställ in avsnittsstarten för källdokumentet:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Steg 4: Hantera listformatering
+Den här inställningen hjälper till att upprätthålla kontinuitet mellan dokumenten.
 
-För att hantera listformatering går du igenom varje stycke i källdokumentet och kontrollerar om det är ett listobjekt. Om så är fallet kommer du att jämföra list-ID:t med de befintliga listorna i måldokumentet. Om det finns en lista med samma ID kommer du att skapa en kopia av listan i källdokumentet och uppdatera styckets listformat för att använda den kopierade listan.
+## Steg 4: Hantera listintegrering
+
+Iterera genom stycken i källdokumentet för att hantera listobjekt:
 
 ```csharp
 Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -54,9 +72,11 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
     if (para.IsListItem)
     {
         int listId = para.ListFormat.List.ListId;
+
         if (dstDoc.Lists.GetListByListId(listId) != null)
         {
             Aspose.Words.Lists.List currentList;
+
             if (newLists.ContainsKey(listId))
             {
                 currentList = newLists[listId];
@@ -66,73 +86,42 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
                 currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
                 newLists.Add(listId, currentList);
             }
+
             para.ListFormat.List = currentList;
         }
     }
 }
 ```
 
-## Steg 5: Bifoga källdokumentet till destinationsdokumentet
+Detta kodsegment säkerställer att listor från källdokumentet integreras sömlöst i måldokumentet och behåller sin ursprungliga formatering.
 
- Nu kan du lägga till källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. De`ImportFormatMode.UseDestinationStyles` parametern säkerställer att måldokumentets liststilar används under tilläggsoperationen.
+## Steg 5: Bifoga källdokument till destinationsdokument
+
+Slå samman det ändrade källdokumentet till måldokumentet:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## Steg 6: Spara det slutliga dokumentet
+Det här kommandot konsoliderar dokumenten samtidigt som målstilar bevaras.
 
-Spara slutligen det sammanslagna dokumentet med funktionen Listanvänd destinationsstilar aktiverad med hjälp av`Save` metod för`Document` klass.
+## Slutsats
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+Genom att följa dessa steg kan du effektivt hantera och slå samman listor mellan dokument med Aspose.Words för .NET. Detta tillvägagångssätt säkerställer att ditt slutliga dokument bibehåller konsekvent stil och formatering, vilket förbättrar den övergripande effektiviteten i dokumenthanteringen.
 
-### Exempel på källkod för List Use Destination Styles med Aspose.Words för .NET 
+## FAQ's
 
-Här är den fullständiga källkoden för funktionen "List Use Destination Styles" i C# med Aspose.Words för .NET:
+### Hur kan jag hantera kapslade listor med Aspose.Words för .NET?
+Aspose.Words tillhandahåller metoder för att hantera kapslade listor genom att iterera genom dokumentnoder och kontrollera liststrukturer.
 
+### Vilka är fördelarna med att använda målstilar vid dokumentsammanslagning?
+Destinationsstilar hjälper till att upprätthålla enhetlighet i formateringen över sammanslagna dokument, vilket säkerställer ett professionellt utseende.
 
-```csharp
-	// Sökväg till din dokumentkatalog
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Stöder Aspose.Words sammanslagning av dokument över flera plattformar?
+Ja, Aspose.Words stöder dokumentsammanslagning över olika plattformar, inklusive Windows- och Linux-miljöer.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Ställ in källdokumentet att fortsätta direkt efter slutet av måldokumentet.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// Håll koll på listorna som skapas.
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			// Kontrollera om måldokumentet redan innehåller en lista med detta ID. Om det gör det, så kan detta
-			// få de två listorna att köras tillsammans. Skapa istället en kopia av listan i källdokumentet.
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				// En nyligen kopierad lista finns redan för detta ID, hämta den lagrade listan,
-				// och använd den på det aktuella stycket.
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					// Lägg till en kopia av den här listan i dokumentet och spara den för senare referens.
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				// Ställ in listan för detta stycke till den kopierade listan.
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	// Lägg till källdokumentet i slutet av måldokumentet.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### Kan jag anpassa listformateringen under dokumentsammanslagning?
+Aspose.Words tillåter omfattande anpassning av listformatering, vilket möjliggör skräddarsydda lösningar för dokumentintegrering.
 
-Det är allt! Du har framgångsrikt implementerat funktionen Listanvänd destinationsstilar med Aspose.Words för .NET. Det slutliga dokumentet kommer att innehålla det sammanslagna innehållet med liststilarna från måldokumentet.
+### Var kan jag hitta fler resurser om avancerad dokumenthantering med Aspose.Words?
+ Utforska[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) för omfattande guider och API-referenser.

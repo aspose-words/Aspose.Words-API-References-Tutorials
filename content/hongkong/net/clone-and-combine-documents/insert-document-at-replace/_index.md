@@ -9,7 +9,7 @@ url: /zh-hant/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## 介紹
 
-嘿，文檔大師！您是否曾經發現自己陷入了程式碼困境，試圖找出如何將一個 Word 文件無縫插入到另一個文件中？不要害怕，因為今天我們將深入了解 Aspose.Words for .NET 的世界，讓這項任務變得輕而易舉。我們將詳細介紹如何使用這個強大的程式庫在尋找和取代操作期間的特定點插入文件。準備好成為 Aspose.Words 嚮導了嗎？讓我們開始吧！
+嘿，文檔大師！您是否曾經發現自己陷入了程式碼困境，試圖找出如何將一個 Word 文件無縫插入到另一個文件中？別擔心，因為今天我們將深入了解 Aspose.Words for .NET 的世界，讓這項任務變得輕而易舉。我們將詳細介紹如何使用這個強大的程式庫在尋找和取代操作期間的特定點插入文件。準備好成為 Aspose.Words 嚮導了嗎？讓我們開始吧！
 
 ## 先決條件
 
@@ -147,7 +147,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## 結論
 
-現在你就擁有了！使用 Aspose.Words for .NET 將一個文件插入另一個文件的綜合指南。透過執行這些步驟，您可以輕鬆地自動執行文件組裝和操作任務。無論您是要建立文件管理系統還是只是需要簡化文件處理工作流程，Aspose.Words 都是您值得信賴的助手。
+現在你就得到它了！使用 Aspose.Words for .NET 將一個文件插入另一個文件的綜合指南。透過執行這些步驟，您可以輕鬆地自動執行文件組裝和操作任務。無論您是要建立文件管理系統還是只是需要簡化文件處理工作流程，Aspose.Words 都是您值得信賴的助手。
 
 ## 常見問題解答
 

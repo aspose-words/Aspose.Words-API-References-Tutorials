@@ -112,7 +112,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ### Használhatok különböző vonalstílusokat minden szegélyhez?  
  Teljesen! Az Aspose.Words for .NET lehetővé teszi az egyes szegélyek egyéni testreszabását. Csak állítsd be a`LineStyle` minden szegélytípushoz az útmutatóban látható módon.
 
-### Milyen egyéb árnyékoló textúrák állnak rendelkezésre?  
+### Milyen más árnyékoló textúrák állnak rendelkezésre?  
  Számos textúra használható, például tömör, vízszintes csík, függőleges csík stb. Ellenőrizd a[Aspose dokumentáció](https://reference.aspose.com/words/net/) a teljes listáért.
 
 ### Hogyan tudom megváltoztatni a keret színét?  

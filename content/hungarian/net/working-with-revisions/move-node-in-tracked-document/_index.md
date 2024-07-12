@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### K: Hogyan helyezhetek át egy csomópontot egy nyomon követett dokumentumban revíziók generálása nélkül?
 
- V: Ha egy nyomon követett dokumentumban szeretne áthelyezni egy csomópontot revíziók generálása nélkül, használhatja a`Remove` és`InsertAfter` vagy`InsertBefore` módszerei a`Node` tárgy. Például egy bekezdés másik bekezdés utáni áthelyezéséhez a következő kódot használhatja:
+ V: Ha egy nyomon követett dokumentumban szeretne áthelyezni egy csomópontot revíziók generálása nélkül, használhatja a`Remove`és`InsertAfter` vagy`InsertBefore` módszerei a`Node` tárgy. Például egy bekezdés másik bekezdés utáni áthelyezéséhez a következő kódot használhatja:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

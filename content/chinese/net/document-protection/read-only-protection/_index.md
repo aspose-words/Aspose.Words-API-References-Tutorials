@@ -2,114 +2,125 @@
 title: Word 文档中的只读保护
 linktitle: Word 文档中的只读保护
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 保护 Word 文档中的只读内容。
+description: 了解如何使用 Aspose.Words for .NET 应用只读保护来保护您的 Word 文档。请按照我们的分步指南进行操作。
 type: docs
 weight: 10
 url: /zh/net/document-protection/read-only-protection/
 ---
-在本教程中，我们将指导您完成使用 Aspose.Words for .NET 的只读保护功能的步骤。此功能允许您将 Word 文档设为只读，以防止未经授权的修改。请按照以下步骤操作：
+## 介绍
 
-## 步骤 1：创建文档并应用保护
+在管理 Word 文档时，有时您需要将其设为只读以保护其内容。无论是为了共享重要信息而避免意外编辑的风险，还是为了确保法律文件的完整性，只读保护都是一项有价值的功能。在本教程中，我们将探讨如何使用 Aspose.Words for .NET 在 Word 文档中实现只读保护。我们将以详细、引人入胜的方式引导您完成每个步骤，确保您可以轻松跟进。
 
-首先创建 Document 类和 DocumentBuilder 对象的实例：
+## 先决条件
+
+在深入研究代码之前，您需要满足一些先决条件：
+
+1.  Aspose.Words for .NET：确保已安装 Aspose.Words for .NET 库。您可以从[Aspose 发布页面](https://releases.aspose.com/words/net/).
+2. 开发环境：安装.NET，搭建开发环境，Visual Studio 是个不错的选择。
+3. 对 C# 的基本了解：本教程假设您对 C# 编程有基本的了解。
+
+## 导入命名空间
+
+首先，确保已导入必要的命名空间。这至关重要，因为它允许我们从 Aspose.Words for .NET 访问所需的类和方法。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 步骤 2：将内容写入文档
-使用 DocumentBuilder 对象将内容写入文档：
+## 步骤 1：设置文档
+
+在此步骤中，我们将创建一个新文档和一个文档生成器。这构成了我们操作的基础。
 
 ```csharp
-builder.Write("Open document as read-only");
-```
-
-## 步骤 3：设置密码并使文档只读
-
-使用 WriteProtection 对象的 SetPassword() 属性为文档设置密码：
-
-```csharp
-doc.WriteProtection.SetPassword("MyPassword");
-```
-
-确保将“MyPassword”替换为您要使用的实际密码。
-
-## 步骤 4：应用只读文档
-
-通过将 ReadOnlyRecommended 属性设置为 true，使文档变为只读：
-
-```csharp
-doc.WriteProtection.ReadOnlyRecommended = true;
-```
-
-## 步骤 5：应用只读保护并保存文档
-
-最后，使用 Document 对象的 Protect() 方法应用只读保护：
-
-```csharp
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-```
-
-确保指定正确的路径和文件名来保存受保护的文档。
-
-### 使用 Aspose.Words for .NET 进行只读保护的示例源代码
-
-以下是使用 Aspose.Words for .NET 进行只读保护的完整源代码：
-
-```csharp
-
 //文档目录的路径。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
+//在文档中写入一些文本。
 builder.Write("Open document as read-only");
-
-//输入最多 15 个字符的密码。
-doc.WriteProtection.SetPassword("MyPassword");
-
-//将文档设为只读。
-doc.WriteProtection.ReadOnlyRecommended = true;
-
-//应用只读写保护。
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-
 ```
 
-通过遵循以下步骤，您可以轻松保护您的文档
+解释：
+
+- 我们首先定义保存文档的目录路径。
+- 一个新的`Document`对象被创建，并且`DocumentBuilder`与之相关。
+- 使用构建器，我们向文档中添加一行简单的文本。
+
+## 步骤2：设置写保护密码
+
+接下来，我们需要设置写保护密码。此密码最多可包含 15 个字符。
+
+```csharp
+//输入最多 15 个字符的密码。
+doc.WriteProtection.SetPassword("MyPassword");
+```
+
+解释：
+
+- 这`SetPassword`方法被调用于`WriteProtection`文档的属性。
+- 我们提供了一个密码（在本例中为“MyPassword”），该密码是解除保护所必需的。
+
+## 步骤 3：启用只读建议
+
+在此步骤中，我们将文档设置为只读推荐。这意味着当打开文档时，它将提示用户以只读模式打开它。
+
+```csharp
+//建议将文档设为只读。
+doc.WriteProtection.ReadOnlyRecommended = true;
+```
+
+解释：
+
+- 这`ReadOnlyRecommended`属性设置为`true`.
+- 这将提示用户以只读模式打开文档，但他们可以选择忽略建议。
+
+## 步骤 4：应用只读保护
+
+最后，我们对文档应用只读保护。此步骤可强制执行保护。
+
+```csharp
+//应用只读写保护。
+doc.Protect(ProtectionType.ReadOnly);
+```
+
+解释：
+
+- 这`Protect`方法在文档上调用`ProtectionType.ReadOnly`作为论据。
+- 此方法强制执行只读保护，防止在没有密码的情况下对文档进行任何修改。
+
+## 步骤 5：保存文档
+
+最后一步是使用应用的保护设置保存文档。
+
+```csharp
+//保存受保护的文档。
+doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
+```
+
+解释：
+
+- 这`Save`在文档上调用方法，指定文件的路径和名称。
+- 文档以只读保护方式保存。
 
 ## 结论
 
-在本教程中，我们探索了 Aspose.Words for .NET 的只读保护功能，该功能允许您将 Word 文档设为只读以防止未经授权的修改。按照提供的步骤，您可以轻松地对文档应用只读保护并增强其安全性。只读保护通过限制编辑功能来帮助确保文档内容的完整性和准确性。Aspose.Words for .NET 提供了强大而灵活的 API 来处理文档保护，并支持各种其他功能来自定义和保护您的 Word 文档。
+就这样！您已成功使用 Aspose.Words for .NET 创建了受只读保护的 Word 文档。此功能可确保您的文档内容保持完整且不被更改，从而提供额外的安全保障。无论您共享的是敏感信息还是法律文件，只读保护都是您文档管理工具库中必不可少的工具。
 
-### Word 文档中只读保护的常见问题解答
+## 常见问题解答
 
-#### 问：Aspose.Words for .NET 中的只读保护是什么？
+### 什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个功能强大的库，允许开发人员使用 C# 或其他 .NET 语言以编程方式创建、修改、转换和保护 Word 文档。
 
-答：Aspose.Words for .NET 中的只读保护功能可让您将 Word 文档设为只读，以防止未经授权的修改。当文档设置为只读时，用户可以打开和查看文档，但不能对其内容进行任何更改。
+### 我可以删除文档的只读保护吗？
+是的，你可以使用`Unprotect`方法并提供正确的密码。
 
-#### 问：如何使用 Aspose.Words for .NET 对 Word 文档应用只读保护？
+### 文档中设置的密码是加密的吗？
+是的，Aspose.Words 对密码进行加密以确保受保护文档的安全。
 
-答：要使用 Aspose.Words for .NET 对 Word 文档应用只读保护，您可以按照以下步骤操作：
-1. 创建一个实例`Document`类和一个`DocumentBuilder`目的。
-2. 使用`DocumentBuilder`将内容写入文档。
-3. 使用`SetPassword`方法`WriteProtection`目的。
-4. 设置`ReadOnlyRecommended`的财产`WriteProtection`反对`true`建议以只读方式打开文档。
-5. 使用应用只读保护`Protect`方法`Document`对象，指定`ProtectionType`作为`ReadOnly`.
-6. 使用保存受保护的文档`Save`方法`Document`目的。
+### 我可以使用 Aspose.Words for .NET 应用其他类型的保护吗？
+是的，Aspose.Words for .NET 支持各种类型的保护，包括仅允许评论、填写表格或跟踪更改。
 
-#### 问：我可以使用 Aspose.Words for .NET 从 Word 文档中删除只读保护吗？
-
-答：是的，您可以使用 Aspose.Words for .NET 删除 Word 文档的只读保护。为此，您可以使用`Unprotect`方法`Document`类，它将删除文档中所有现有的保护。
-
-#### 问：我可以为 Word 文档的只读保护设置不同的密码吗？
-
-答：不可以，Aspose.Words for .NET 中的只读保护不允许您专门为只读保护设置单独的密码。使用`SetPassword`方法`WriteProtection`对象适用于整体文档保护，包括只读保护和读写保护。
-
-#### 问：用户能否绕过 Word 文档中的只读保护？
-
-答：Word 文档中的只读保护旨在阻止和防止意外或未经授权的修改。虽然它提供了一定程度的保护，但具有足够技术知识或编辑权限的用户可以绕过它。不过，只读保护可以起到威慑作用，并有助于维护文档的完整性。
+### Aspose.Words for .NET 有免费试用版吗？
+是的，你可以从[Aspose 发布页面](https://releases.aspose.com/).

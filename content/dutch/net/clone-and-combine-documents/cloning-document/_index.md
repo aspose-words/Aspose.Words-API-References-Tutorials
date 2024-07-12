@@ -35,7 +35,7 @@ Simpel, toch? Laten we nu verder gaan met het spannende gedeelte: een document k
 Allereerst moet u uw project in Visual Studio instellen. Als u al een project gereed heeft, kunt u deze stap overslaan. Zo niet, volg dan:
 
 1. Open Visual Studio: Start Visual Studio en maak een nieuw C# Console App-project.
-2.  Geef uw project een naam: geef uw project een betekenisvolle naam. Zoiets als`CloneWordDocumentDemo` zal ik doen.
+2.  Geef uw project een naam: Geef uw project een betekenisvolle naam. Zoiets als`CloneWordDocumentDemo` zal ik doen.
 3.  Voeg Aspose.Words toe Referentie: Klik met de rechtermuisknop op uw project in de Solution Explorer, kies`Manage NuGet Packages` en zoek naar`Aspose.Words`. Installeer het.
 
 ## Stap 2: Bereid uw omgeving voor

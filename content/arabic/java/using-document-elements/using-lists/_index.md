@@ -2,7 +2,7 @@
 title: استخدام القوائم في Aspose.Words لـ Java
 linktitle: استخدام القوائم
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعلم كيفية استخدام القوائم في Aspose.Words for Java من خلال هذا البرنامج التعليمي خطوة بخطوة. تنظيم وتنسيق المستندات الخاصة بك بشكل فعال.
+description: تعرّف على كيفية استخدام القوائم في Aspose.Words for Java من خلال هذا البرنامج التعليمي خطوة بخطوة. تنظيم وتنسيق المستندات الخاصة بك بشكل فعال.
 type: docs
 weight: 18
 url: /ar/java/using-document-elements/using-lists/
@@ -123,7 +123,7 @@ for (int i = 0; i < 9; i++) {
 ```
 
 ### تنسيق قائمة التوقف: 
-لإيقاف تنسيق القائمة، قم بتعيين القائمة إلى قيمة خالية.
+لإيقاف تنسيق القائمة، قم بتعيين القائمة إلى قيمة فارغة.
 
 ```java
 builder.getListFormat().setList(null);
@@ -224,7 +224,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
  يمكنك تنزيل Aspose.Words for Java من[هنا](https://releases.aspose.com/words/java/) واتبع تعليمات التثبيت في الوثائق.
 
 ### هل يمكنني تخصيص تنسيق ترقيم القوائم؟
-نعم، يوفر Aspose.Words for Java خيارات شاملة لتخصيص تنسيقات ترقيم القوائم. يمكنك الرجوع إلى وثائق API للحصول على التفاصيل.
+نعم، يوفر Aspose.Words for Java خيارات شاملة لتخصيص تنسيقات ترقيم القائمة. يمكنك الرجوع إلى وثائق API للحصول على التفاصيل.
 
 ### هل Aspose.Words for Java متوافق مع أحدث معايير مستندات Word؟
 نعم، يمكنك تكوين Aspose.Words لـ Java ليتوافق مع معايير مستندات Word المختلفة، بما في ذلك ISO 29500.

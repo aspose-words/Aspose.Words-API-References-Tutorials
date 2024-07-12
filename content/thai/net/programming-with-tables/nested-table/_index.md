@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// การเรียกนี้มีความสำคัญต่อการสร้างตารางที่ซ้อนกันภายในตารางแรก
-	// หากไม่มีการเรียกนี้ เซลล์ที่แทรกด้านล่างจะถูกต่อท้ายตารางด้านนอก
+	//หากไม่มีการเรียกนี้ เซลล์ที่แทรกด้านล่างจะถูกต่อท้ายตารางด้านนอก
 	builder.EndTable();
 	// ย้ายไปยังเซลล์แรกของตารางด้านนอก
 	builder.MoveTo(cell.FirstParagraph);

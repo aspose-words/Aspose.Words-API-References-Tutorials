@@ -57,7 +57,7 @@ builder.Writeln("This text will be Bold");
 
 #### 问：是否可以将同一段文字加粗？
 
-答：是的，您可以使用多个`Run`对象。您可以创建多个`Run`对象并设置`Font.Bold`财产`true`为每个对象加粗所需的文本部分。然后，您可以使用`Paragraph.AppendChild(run)`方法。
+答：是的，您可以使用多个`Run`对象。您可以创建多个`Run`对象并设置`Font.Bold`财产`true`为每个对象添加所需的文本部分。然后，您可以使用`Paragraph.AppendChild(run)`方法。
 
 #### 问：我可以加粗 Aspose.Words 中表格或单元格中的文本吗？
 

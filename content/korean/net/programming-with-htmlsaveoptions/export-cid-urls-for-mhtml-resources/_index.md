@@ -8,7 +8,7 @@ weight: 10
 url: /ko/net/programming-with-htmlsaveoptions/export-cid-urls-for-mhtml-resources/
 ---
 
-이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 MHTML 리소스에 대한 CID URL을 내보내는 C# 소스 코드를 안내합니다. 이 기능을 사용하면 문서를 MHTML 형식으로 저장할 때 MHTML 리소스의 CID URL을 내보낼 수 있습니다.
+이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 MHTML 리소스에 대한 CID URL을 내보내는 C# 소스 코드를 안내합니다. 이 기능을 사용하면 문서를 MHTML 형식으로 저장할 때 MHTML 리소스의 CID URL을 내보낼 수 있습니다.
 
 ## 1단계: 프로젝트 설정
 

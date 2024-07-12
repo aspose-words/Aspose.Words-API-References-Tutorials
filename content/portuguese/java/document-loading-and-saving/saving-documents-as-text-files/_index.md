@@ -62,7 +62,7 @@ Aqui, configuramos as opções de salvamento para usar um caractere de tabulaç�
 
 ## Etapa 3: salve o documento como texto
 
-Agora que definimos as opções para salvar texto, podemos salvar o documento como um arquivo de texto. O código a seguir demonstra como fazer isso:
+Agora que definimos as opções de salvamento de texto, podemos salvar o documento como um arquivo de texto. O código a seguir demonstra como fazer isso:
 
 ```java
 doc.save("output.txt", saveOptions);

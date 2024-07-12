@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Dans cet extrait, nous définissons le chemin d'accès au répertoire dans lequel notre document sera enregistré et initialisons un nouveau`Document` et`DocumentBuilder` exemple.
+ Dans cet extrait, nous définissons le chemin d'accès au répertoire dans lequel notre document sera enregistré et initialisons un nouveau`Document`et`DocumentBuilder` exemple.
 
 ## Étape 3 : Rédigez le texte initial
 

@@ -35,7 +35,7 @@ using System.Drawing;
 
 ## 步骤 1：设置文档目录
 
-首先，我们需要一个地方来保存我们格式精美的文档。让我们设置文档目录的路径。
+首先，我们需要一个地方来保存我们格式优美的文档。让我们设置文档目录的路径。
 
 ```csharp
 //文档目录的路径。
@@ -81,7 +81,7 @@ shading.BackgroundPatternColor = System.Drawing.Color.LightCoral;
 shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 ```
 
-在此步骤中，我们应用了斜十字纹理，浅珊瑚色为背景色，浅鲑鱼色为前景色。这就像给您的段落穿上名牌服装一样！
+在此步骤中，我们应用了斜十字纹理，以浅珊瑚色作为背景色，浅鲑鱼色作为前景色。这就像给您的段落穿上名牌服装一样！
 
 ## 步骤 5：向段落添加文本
 

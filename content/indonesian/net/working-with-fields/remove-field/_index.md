@@ -65,7 +65,7 @@ Ikuti langkah-langkah berikut untuk menghapus bidang tertentu di dokumen Anda me
 
 #### T: Bagaimana cara menghapus bidang dalam dokumen Word menggunakan Aspose.Words untuk .NET?
 
- J: Untuk menghapus bidang dalam dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menelusuri bidang dalam dokumen menggunakan`FieldStart` kelas dan gunakan`FieldStart.Remove`metode untuk menghapus bidang tersebut.
+ J: Untuk menghapus bidang dalam dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menelusuri bidang dalam dokumen menggunakan`FieldStart` kelas dan gunakan`FieldStart.Remove` metode untuk menghapus bidang tersebut.
 
 #### T: Apakah mungkin untuk menghapus hanya bidang tertentu dalam dokumen Word dengan Aspose.Words untuk .NET?
 

@@ -82,7 +82,7 @@ doc.save("modified-document.docx");
 
 Detta är användbart när du vill utesluta att text i fält, till exempel sammanslagningsfält, ersätts.
 
-## Ignorera text inuti Ta bort revisioner
+## Ignorera text inuti Ta bort versioner
 
 Du kan konfigurera Aspose.Words att ignorera text i raderingsversioner under sök- och ersättningsoperationer.
 

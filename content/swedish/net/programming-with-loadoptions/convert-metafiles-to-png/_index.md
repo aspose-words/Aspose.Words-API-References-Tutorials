@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 
 ## Slutsats
 
-I den här guiden förklarade vi hur man laddar ett dokument med konvertering av metafiler till PNG-bilder med hjälp av Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Konvertering av metafiler till PNG säkerställer bättre kompatibilitet och korrekt rendering av dokument.
+den här guiden förklarade vi hur man laddar ett dokument med konvertering av metafiler till PNG-bilder med hjälp av Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Konvertering av metafiler till PNG säkerställer bättre kompatibilitet och korrekt rendering av dokument.
 
 
 ### FAQ's

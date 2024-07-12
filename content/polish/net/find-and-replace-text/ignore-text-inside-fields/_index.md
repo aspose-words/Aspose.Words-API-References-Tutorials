@@ -2,168 +2,95 @@
 title: Ignoruj tekst w polach
 linktitle: Ignoruj tekst w polach
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak korzystać z funkcji „Ignoruj tekst w polach” w Aspose.Words dla .NET.
+description: Dowiedz się, jak manipulować tekstem wewnątrz pól w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ten samouczek zawiera wskazówki krok po kroku z praktycznymi przykładami.
 type: docs
 weight: 10
 url: /pl/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-W tym artykule omówimy powyższy kod źródłowy C#, aby zrozumieć, jak używać funkcji Ignoruj tekst wewnątrz pól w bibliotece Aspose.Words dla .NET. Funkcja ta jest przydatna, gdy podczas manipulacji dokumentami chcemy zignorować tekst znajdujący się w polach.
+## Wstęp
+
+W tym samouczku zagłębimy się w manipulowanie tekstem w polach w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Aspose.Words zapewnia niezawodne funkcje przetwarzania dokumentów, umożliwiając programistom efektywną automatyzację zadań. W tym miejscu skupimy się na ignorowaniu tekstu wewnątrz pól, co jest częstym wymaganiem w scenariuszach automatyzacji dokumentów.
 
 ## Warunki wstępne
 
-- Podstawowa znajomość języka C#.
-- Środowisko programistyczne .NET z zainstalowaną biblioteką Aspose.Words.
+Zanim zaczniemy, upewnij się, że masz następującą konfigurację:
+- Program Visual Studio zainstalowany na Twoim komputerze.
+- Biblioteka Aspose.Words dla .NET zintegrowana z Twoim projektem.
+- Podstawowa znajomość programowania w C# i środowisku .NET.
 
-## Krok 1: Tworzenie nowego dokumentu
+## Importuj przestrzenie nazw
 
- Zanim zaczniemy manipulować tekstem w polach, musimy utworzyć nowy dokument za pomocą Aspose.Words dla .NET. Można to zrobić poprzez utworzenie instancji a`Document` obiekt:
-
+Aby rozpocząć, uwzględnij niezbędne przestrzenie nazw w swoim projekcie C#:
 ```csharp
-Document doc = new Document();
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.FindReplace;
+using System;
+using System.Text.RegularExpressions;
 ```
 
-## Krok 2: Wstawienie pola z tekstem w środku
+## Krok 1: Utwórz nowy dokument i konstruktor
 
- Gdy już mamy dokument, możemy wstawić pole zawierające tekst w środku za pomocą a`DocumentBuilder` obiekt. Na przykład, aby wstawić pole „INCLUDETEXT” z tekstem „Tekst w polu”, możemy użyć`InsertField` metoda:
-
+ Najpierw zainicjuj nowy dokument programu Word i a`DocumentBuilder`obiekt ułatwiający budowę dokumentu:
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## Krok 2: Wstaw pole z tekstem
+
+ Użyj`InsertField` metoda`DocumentBuilder` aby dodać pole zawierające tekst:
+```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## Krok 3: Korzystanie z funkcji Ignoruj tekst w polach
+## Krok 3: Zignoruj tekst w polach
 
- Aby zignorować tekst wewnątrz pól podczas kolejnych operacji, możemy użyć a`FindReplaceOptions` obiekt i ustaw`IgnoreFields`własność do`true`:
-
+ Aby manipulować tekstem, ignorując zawartość pól, użyj`FindReplaceOptions` z`IgnoreFields` właściwość ustawiona na`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
-## Krok 4: Używanie wyrażeń regularnych do wyszukiwania i zamiany
+## Krok 4: Wykonaj zamianę tekstu
 
-Aby wykonać operacje wyszukiwania i zamiany na tekście dokumentu, użyjemy wyrażeń regularnych. W naszym przykładzie wyszukamy wszystkie wystąpienia litery „e” i zastąpimy je gwiazdką „* „. Użyjemy .NET`Regex` klasa do tego:
-
+Używaj wyrażeń regularnych do zastępowania tekstu. Tutaj zastępujemy wystąpienia litery „e” gwiazdką „*' w całym zakresie dokumentu:
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Krok 5: Wyświetlanie zmodyfikowanego wydruku dokumentu
+## Krok 5: Wyprowadź zmodyfikowany tekst dokumentu
 
- Po zastosowaniu wyszukiwania i zamiany możemy wyświetlić zmienioną treść dokumentu za pomocą`GetText` metoda:
-
+Pobierz i wydrukuj zmodyfikowany tekst, aby zweryfikować dokonane zamiany:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## Krok 6: Zmiana opcji w celu uwzględnienia pól
+## Krok 6: Dołącz tekst w polach
 
- uwzględniamy tekst wewnątrz pól w wyniku wyjściowym, możemy zmienić opcje, aby nie ignorować pól. W tym celu ustawimy`IgnoreFields`własność do`false`:
-
+ Aby przetwarzać tekst wewnątrz pól, zresetuj opcję`IgnoreFields`własność do`false` i ponownie wykonaj operację wymiany:
 ```csharp
 options.IgnoreFields = false;
-```
-
-## Krok 7: Wyświetlenie zmodyfikowanego dokumentu wraz z polami
-
-Po zmianie opcji możemy ponownie przeprowadzić wyszukiwanie i zamianę, aby otrzymać wynik z tekstem znajdującym się w zawartych polach:
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-### Przykładowy kod źródłowy opcji Ignoruj tekst w polach przy użyciu Aspose.Words dla .NET
-
-Oto pełny przykładowy kod źródłowy demonstrujący użycie funkcji Ignore Text Inside Fields w Aspose.Words dla .NET:
-
-```csharp
-    
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Wstaw pole z tekstem w środku.
-	builder.InsertField("INCLUDETEXT", "Text in field");
-	
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-	
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreFields = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-  
 ```
 
 ## Wniosek
 
-W tym artykule zbadaliśmy kod źródłowy C#, aby zrozumieć, jak używać funkcji Ignoruj tekst wewnątrz pól w Aspose.Words dla .NET. Postępowaliśmy zgodnie z instrukcją krok po kroku, jak utworzyć dokument, wstawić pole z tekstem w środku, skorzystać z funkcji Ignoruj tekst w polach, wykonać operacje wyszukiwania i zamiany za pomocą wyrażeń regularnych oraz wyświetlić zmodyfikowany dokument.
+W tym samouczku omówiliśmy, jak manipulować tekstem w polach w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ta funkcja jest niezbędna w scenariuszach, w których zawartość pola wymaga specjalnej obsługi podczas programowego przetwarzania dokumentów.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jaka jest funkcja „Ignoruj tekst w polach” w Aspose.Words dla .NET?
+### Jak obsługiwać zagnieżdżone pola w dokumentach programu Word?
+Zagnieżdżonymi polami można zarządzać poprzez rekurencyjne nawigowanie po zawartości dokumentu za pomocą interfejsu API Aspose.Words.
 
-Odp.: Funkcja „Ignoruj tekst w polach” w Aspose.Words dla .NET pozwala określić, czy tekst wewnątrz pól powinien być ignorowany podczas niektórych operacji, takich jak wyszukiwanie i zastępowanie tekstu. Gdy ta funkcja jest włączona, tekst wewnątrz pól nie jest uwzględniany podczas operacji.
+### Czy mogę zastosować logikę warunkową do selektywnego zastępowania tekstu?
+Tak, Aspose.Words umożliwia implementację logiki warunkowej przy użyciu FindReplaceOptions do kontrolowania zastępowania tekstu w oparciu o określone kryteria.
 
-#### P: Jak mogę utworzyć nowy dokument za pomocą Aspose.Words dla .NET?
+### Czy Aspose.Words jest kompatybilny z aplikacjami .NET Core?
+Tak, Aspose.Words obsługuje .NET Core, zapewniając kompatybilność między platformami dla potrzeb automatyzacji dokumentów.
 
- Odp.: Aby utworzyć nowy dokument za pomocą Aspose.Words dla .NET, możesz utworzyć instancję pliku`Document` obiekt. Oto przykład kodu C# umożliwiającego utworzenie nowego dokumentu:
+### Gdzie mogę znaleźć więcej przykładów i zasobów dotyczących Aspose.Words?
+ Odwiedzać[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) obszerne przewodniki, odniesienia do API i przykłady kodu.
 
-```csharp
-Document doc = new Document();
-```
-
-#### P: Jak mogę wstawić pole z tekstem do dokumentu przy użyciu Aspose.Words dla .NET?
-
- Odp.: Gdy już masz dokument, możesz wstawić pole z tekstem, używając a`DocumentBuilder` obiekt. Na przykład, aby wstawić pole „INCLUDETEXT” z tekstem „Tekst w polu”, możesz użyć`InsertField` metoda:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.InsertField("INCLUDETEXT", "Text in field");
-```
-
-#### P: Jak mogę zignorować tekst wewnątrz pól w Aspose.Words dla .NET?
-
- Odp.: Aby zignorować tekst wewnątrz pól podczas kolejnych operacji, możesz użyć a`FindReplaceOptions` obiekt i ustaw`IgnoreFields`własność do`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-```
-
-#### P: Jak mogę przeprowadzić wyszukiwanie i zamianę przy użyciu wyrażeń regularnych w Aspose.Words dla .NET?
-
- Odp.: Aby wykonać operacje wyszukiwania i zamieniania tekstu dokumentu przy użyciu wyrażeń regularnych, możesz użyć platformy .NET`Regex` klasa. Na przykład, aby wyszukać wszystkie wystąpienia litery „e” i zastąpić je gwiazdką „* ", możesz utworzyć plik`Regex` obiekt i użyj go z`Replace` metoda:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### P: Jak mogę wyświetlić zmodyfikowane dane wyjściowe dokumentu w Aspose.Words dla .NET?
-
- Odp.: Po zastosowaniu operacji wyszukiwania i zamiany możesz wyświetlić zmienioną treść dokumentu za pomocą`GetText` metoda:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### P: Jak mogę uwzględnić pola w wynikach wyjściowych w Aspose.Words dla .NET?
-
- O: Aby uwzględnić tekst wewnątrz pól w wynikach wyjściowych, możesz zmienić opcje tak, aby pola nie były ignorowane. W tym celu możesz ustawić`IgnoreFields` własność`FindReplaceOptions` oponować`false`:
-
-```csharp
-options.IgnoreFields = false;
-```
-
-#### P: Jak mogę wyświetlić zmodyfikowany dokument z polami w Aspose.Words dla .NET?
-
-Odp.: Po zmianie opcji uwzględniających pola możesz ponownie przeprowadzić wyszukiwanie i zamianę, aby uzyskać wynik zawierający tekst znajdujący się wewnątrz pól:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Jak mogę uzyskać pomoc techniczną dla Aspose.Words?
+ Aby uzyskać pomoc techniczną, odwiedź stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) gdzie możesz zamieszczać swoje zapytania i kontaktować się ze społecznością.

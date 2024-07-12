@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## 4. lépés: Szúrjon be cellát, és lépjen a sorformátumra
-Most beszúrhatunk egy cellát a táblázatba, és elérhetjük az adott cella sorformátumát a dokumentumkészítő segítségével`InsertCell()` és`RowFormat` mód.
+Most beszúrhatunk egy cellát a táblázatba, és elérhetjük az adott cella sorformátumát a dokumentumkészítő segítségével`InsertCell()`és`RowFormat` mód.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## 5. lépés: Állítsa be a sor magasságát
- A sormagasság beállításához használjuk a`Height` és`HeightRule` a sorformátum tulajdonságait. Ebben a példában 100 pontos sormagasságot állítunk be, és a`Exactly` szabály.
+ A sormagasság beállításához használjuk a`Height`és`HeightRule` a sorformátum tulajdonságait. Ebben a példában 100 pontos sormagasságot állítunk be, és a`Exactly` szabály.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## 6. lépés: Határozza meg a táblázat formázását
- Egyes formázási tulajdonságok magán a táblázaton állíthatók be, és az összes táblázatsorra vonatkoznak. Ebben a példában a táblázat margó tulajdonságait a segítségével állítjuk be`LeftPadding`, `RightPadding`, `TopPadding` és`BottomPadding` tulajdonságait.
+ Egyes formázási tulajdonságok magán a táblázaton állíthatók be, és az összes táblázatsorra vonatkoznak. Ebben a példában a táblázat margó tulajdonságait a segítségével állítjuk be`LeftPadding`, `RightPadding`, `TopPadding`és`BottomPadding` tulajdonságait.
 
 ```csharp
 table. LeftPadding = 30;

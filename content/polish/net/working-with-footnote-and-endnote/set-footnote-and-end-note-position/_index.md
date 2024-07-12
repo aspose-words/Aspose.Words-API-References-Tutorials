@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Krok 2: Ustawianie pozycji przypisu dolnego i przypisu końcowego
 
- Następnie uzyskaj dostęp do`FootnoteOptions` I`EndnoteOptions`właściwości dokumentu, aby ustawić położenie przypisów dolnych i końcowych. W tym przykładzie ustawiamy położenie przypisów pod tekstem, a położenie przypisów końcowych na końcu sekcji:
+ Następnie uzyskaj dostęp do`FootnoteOptions`I`EndnoteOptions`właściwości dokumentu, aby ustawić położenie przypisów dolnych i końcowych. W tym przykładzie ustawiamy położenie przypisów pod tekstem, a położenie przypisów końcowych na końcu sekcji:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

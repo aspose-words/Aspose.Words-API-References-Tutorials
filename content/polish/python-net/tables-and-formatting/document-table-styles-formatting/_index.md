@@ -39,7 +39,7 @@ Aby tworzyć i wstawiać tabele do dokumentów za pomocą Aspose.Words dla Pytho
     table = builder.start_table()
     ```
 
-2.  Wstaw dane: Dodaj dane do tabeli, korzystając z kreatora`insert_cell` I`write` metody.
+2.  Wstaw dane: Dodaj dane do tabeli, korzystając z kreatora`insert_cell`I`write` metody.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Aby tworzyć i wstawiać tabele do dokumentów za pomocą Aspose.Words dla Pytho
 
 ## Stosowanie podstawowego formatowania tabeli
 
- Podstawowe formatowanie tabeli można osiągnąć za pomocą metod dostarczonych przez`Table` I`Cell` zajęcia. Oto jak możesz poprawić wygląd swojego stołu:
+ Podstawowe formatowanie tabeli można osiągnąć za pomocą metod dostarczonych przez`Table`I`Cell` zajęcia. Oto jak możesz poprawić wygląd swojego stołu:
 
 1. Ustaw szerokość kolumn: Dostosuj szerokość kolumn, aby zapewnić prawidłowe wyrównanie i atrakcyjność wizualną.
 
@@ -68,7 +68,7 @@ Aby tworzyć i wstawiać tabele do dokumentów za pomocą Aspose.Words dla Pytho
         cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
     ```
 
-2. Dopełnienie komórek: Dodaj dopełnienie komórek, aby poprawić odstępy.
+2. Dopełnienie komórek: Dodaj dopełnienie do komórek, aby poprawić odstępy.
 
     ```python
     for row in table.rows:
@@ -232,7 +232,7 @@ Gdy tabela będzie już gotowa, możesz ją wyeksportować do różnych formató
 
 ## Wniosek
 
-Aspose.Words dla Pythona oferuje kompleksowy zestaw narzędzi do tworzenia, stylizowania i formatowania tabel dokumentów. Wykonując czynności opisane w tym artykule, możesz efektywnie zarządzać tabelami w dokumentach, dostosowywać ich wygląd i eksportować do różnych formatów. Wykorzystaj moc Aspose.Words, aby ulepszyć prezentacje swoich dokumentów i zapewnić czytelnikom jasne, atrakcyjne wizualnie informacje.
+Aspose.Words dla Pythona oferuje kompleksowy zestaw narzędzi do tworzenia, stylizacji i formatowania tabel dokumentów. Wykonując czynności opisane w tym artykule, możesz efektywnie zarządzać tabelami w dokumentach, dostosowywać ich wygląd i eksportować do różnych formatów. Wykorzystaj moc Aspose.Words, aby ulepszyć prezentacje swoich dokumentów i zapewnić czytelnikom jasne, atrakcyjne wizualnie informacje.
 
 ## Często zadawane pytania
 

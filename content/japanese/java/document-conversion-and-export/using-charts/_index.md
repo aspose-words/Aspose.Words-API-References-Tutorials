@@ -127,9 +127,9 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### グラフに複数のシリーズを追加するにはどうすればよいですか?
 
-チャートに複数のシリーズを追加するには、`chart.getSeries().add()`方法。シリーズ名、カテゴリ、データ値を必ず指定してください。
+複数のシリーズをチャートに追加するには、`chart.getSeries().add()`方法。シリーズ名、カテゴリ、データ値を必ず指定してください。
 
-### データ ラベルをカスタム数値形式でフォーマットするにはどうすればよいですか?
+### カスタム数値形式でデータ ラベルをフォーマットするにはどうすればよいですか?
 
 データラベルの書式設定は、`DataLabels`シリーズのプロパティと、希望する書式コードの設定`getNumberFormat().setFormatCode()`.
 

@@ -2,138 +2,153 @@
 title: Word 文書のブックマークを表示/非表示
 linktitle: Word 文書のブックマークを表示/非表示
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書内の特定のブックマークを表示または非表示にする方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書内のブックマークを動的に表示または非表示にする方法を、ステップバイステップ ガイドで学習します。開発者に最適です。
 type: docs
 weight: 10
 url: /ja/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## 導入
 
-この記事では、上記の C# ソース コードを調べて、Aspose.Words for .NET ライブラリのブックマークの表示/非表示機能の使用方法を理解します。この機能を使用すると、Word 文書内の特定のブックマークを表示または非表示にすることができます。
+Word 文書の特定の部分を動的に表示または非表示にしたいと思ったことはありませんか? 幸運です! Aspose.Words for .NET を使用すると、文書内のブックマークされたコンテンツの表示を簡単に管理できます。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のブックマークを表示および非表示にする手順を説明します。コードを段階的に説明していくので、熟練した開発者でも初心者でも、このガイドは簡単に理解できます。
 
 ## 前提条件
 
-- C# 言語に関する基本的な知識。
-- Aspose.Words ライブラリがインストールされた .NET 開発環境。
+コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
 
-## ステップ1: ドキュメントの読み込み
+1.  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされていることを確認してください。インストールされていない場合はダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio のような IDE。
+3. C# の基礎知識: C# プログラミングに精通していると有利です。
+4. Word 文書: ブックマーク付きのサンプル Word 文書。
 
-私たちは`Document`ファイルから既存のドキュメントを読み込むクラス:
+## 名前空間のインポート
+
+コードを開始する前に、必要な名前空間をインポートする必要があります。C# ファイルの先頭に次のコードを追加します。
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## ステップ1: ドキュメントを読み込む
+
+まず最初に、ブックマークを含む Word 文書を読み込む必要があります。手順は次のとおりです。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## ステップ2: 特定のブックマークを表示または非表示にする
+### 説明
 
-私たちは`ShowHideBookmarkedContent`ドキュメント内の特定のブックマークを表示または非表示にする関数。この関数は、ドキュメント、ブックマークの名前、およびブックマークを表示するか非表示にするかを示すブール値をパラメータとして受け取ります。
+- dataDir: これは Word 文書が保存されているディレクトリ パスです。
+- ドキュメントdoc: これは、`Document`指定したファイルを持つクラス。
+
+## ステップ2: ブックマークしたコンテンツを表示または非表示にする
+
+次に、ブックマークされたコンテンツを表示または非表示にするメソッドを定義します。完全なメソッドは次のとおりです。
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{MERGEFIELD ブックマーク}" = "true" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### 説明
+
+- ブックマーク bm: ドキュメントからブックマークを取得します。
+- DocumentBuilder ビルダー: ドキュメントのナビゲーションと変更に役立ちます。
+- フィールド フィールド: ブックマークの条件を確認するための IF フィールドを挿入します。
+- ノード currentNode: ノードをトラバースしてフィールドの開始と終了を見つけます。
+
+## ステップ3: 表示/非表示機能を実行する
+
+さて、あなたは`ShowHideBookmarkedContent`メソッドにドキュメント、ブックマーク名、および可視性フラグを渡します。
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## ステップ3: 変更したドキュメントを保存する
+### 説明
 
-私たちは`Save`変更されたドキュメントをファイルに保存する方法:
+- doc: ドキュメント オブジェクト。
+- 「MyBookmark1」: 表示/非表示にするブックマークの名前。
+- false: 可視性フラグ (表示の場合は true、非表示の場合は false)。
+
+## ステップ4: ドキュメントを保存する
+
+最後に、変更したドキュメントを保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### Aspose.Words for .NET を使用したブックマークの表示/非表示のサンプル ソース コード
+### 説明
 
-以下は、Aspose.Words for .NET を使用して特定のブックマークを表示または非表示にする方法を示す完全なサンプル ソース コードです。
+- dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx": 変更が保存される新しいドキュメントのパスと名前。
 
-```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### ShowHideBookmarkedContent ソースコード
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            //{IF "{MERGEFIELD ブックマーク}" = "true" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## 結論
 
-この記事では、C# ソース コードを調べて、Aspose.Words for .NET のブックマークの表示/非表示機能の使用方法を理解しました。ドキュメント内の特定のブックマークを表示または非表示にするには、ステップ バイ ステップ ガイドに従いました。
+これで完了です。Aspose.Words for .NET を使用して Word 文書でブックマークを表示および非表示にする方法を学習しました。この手法は、条件付きコンテンツを含む文書を動的に生成する場合に非常に役立ちます。
 
-### Word 文書のブックマークの表示/非表示に関する FAQ
+## よくある質問
 
-#### Q: 同じドキュメント内で複数のブックマークを表示または非表示にできますか?
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、開発者がプログラムによって Word ドキュメントを作成、変更、変換できるようにする強力なドキュメント処理ライブラリです。
 
-A: はい、処理するブックマークごとに手順 2 と 3 を繰り返すことで、同じドキュメント内の複数のブックマークを表示または非表示にすることができます。
+### Aspose.Words for .NET を入手するにはどうすればよいですか?
+ Aspose.Words for .NETは以下からダウンロードできます。[ここ](https://releases.aspose.com/words/net/)無料トライアルもございます。
 
-#### Q: 提供されたコードは、.doc や .docm などの他の Word 文書形式でも機能しますか?
+### この方法は他の種類のブックマークにも使用できますか?
+はい、この方法は、Word 文書内のブックマークの可視性を管理するために使用できます。
 
-A: はい、提供されているコードは、.doc や .docm など、Aspose.Words でサポートされているさまざまな Word ドキュメント形式で動作します。ドキュメントを読み込みおよび保存するときには、正しいファイル名とパスを使用するようにしてください。
+### ドキュメントに指定されたブックマークが含まれていない場合はどうなりますか?
+ブックマークが存在しない場合、メソッドはエラーをスローします。ブックマークを表示/非表示にする前に、ブックマークが存在することを確認してください。
 
-#### Q: 非表示のブックマークを再度表示するにはどうすればよいですか?
-
- A: 非表示のブックマークを再度表示するには、同じ`ShowHideBookmarkedContent`値を渡す関数`true`ブックマークを表示するか非表示にするかを示すブール型パラメータ。
-
-#### Q: 条件を使用して、ドキュメント内のマージ フィールドの値に基づいてブックマークを表示または非表示にできますか?
-
- A: はい、条件とマージフィールド値を使用して、ブックマークを表示するか非表示にするかを決定できます。`ShowHideBookmarkedContent`適切な条件と値を考慮する機能。
-
-#### Q: Aspose.Words for .NET を使用して Word 文書内のブックマークを削除するにはどうすればよいですか?
-
- A: Aspose.Words for .NETを使用してWord文書内のブックマークを削除するには、`RemoveBookmarks`方法の`Document`クラス。サンプルコードは次のとおりです。
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### 問題が発生した場合、どうすればサポートを受けることができますか?
+ Asposeコミュニティからサポートを受けることができます[ここ](https://forum.aspose.com/c/words/8).

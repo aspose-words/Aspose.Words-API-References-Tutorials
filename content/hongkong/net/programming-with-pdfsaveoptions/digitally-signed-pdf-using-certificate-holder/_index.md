@@ -30,7 +30,7 @@ builder.Writeln("Test Signed PDF.");
 
 您可以根據需要新增其他內容項目。
 
-## 步驟 3：設定 PDF 儲存選項
+## 第 3 步：設定 PDF 儲存選項
 
 建立 PdfSaveOptions 類別的實例並指定數位簽章詳細資料：
 
@@ -53,7 +53,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-確保指定正確的路徑來保存經過數位簽署的 PDF。
+確保指定正確的路徑來保存數位簽章的 PDF。
 
 透過執行以下步驟，您可以使用 Aspose.Words for .NET 輕鬆建立具有憑證的數位簽章 PDF。
 

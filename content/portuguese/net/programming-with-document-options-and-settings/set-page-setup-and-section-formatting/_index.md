@@ -58,6 +58,6 @@ Este código definirá a orientação da página como paisagem, a margem esquerd
   
 ```
 
-Certifique-se de especificar o caminho correto para o diretório onde deseja salvar o documento no`dataDir` variável.
+ Certifique-se de especificar o caminho correto para o diretório onde deseja salvar o documento no`dataDir` variável.
 
 Agora você aprendeu como configurar o layout e a formatação de seção de um documento usando Aspose.Words for .NET. Seguindo o guia passo a passo fornecido neste tutorial, você pode personalizar facilmente o layout e a formatação de seus próprios documentos.

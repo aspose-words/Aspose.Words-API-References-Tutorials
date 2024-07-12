@@ -2,204 +2,86 @@
 title: Szöveg figyelmen kívül hagyása a Változatok törlése alatt
 linktitle: Szöveg figyelmen kívül hagyása a Változatok törlése alatt
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a változatok törlése közben" funkciójának használatát.
+description: Ismerje meg, hogyan kezelheti a nyomon követett változatokat a Word dokumentumokban az Aspose.Words for .NET használatával. Sajátítsa el a dokumentumautomatizálást ezzel az átfogó oktatóanyaggal.
 type: docs
 weight: 10
 url: /hu/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
+## Bevezetés
 
-Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogyan használható az Aspose.Words for .NET könyvtár "Szöveg figyelmen kívül hagyása a változatok törlése alatt" funkciója. Ez a funkció akkor hasznos, ha figyelmen kívül akarjuk hagyni a szöveget a törlési revíziókon belül, amikor szövegfeldolgozást végez a dokumentumokkal.
+A .NET fejlesztés területén az Aspose.Words a Microsoft Word dokumentumokkal való programozott munkavégzés robusztus könyvtáraként tűnik ki. Akár tapasztalt fejlesztő, akár csak most kezdi, az Aspose.Words képességeinek elsajátítása jelentősen javíthatja a Word-dokumentumok hatékony kezelésének, létrehozásának és kezelésének képességét. Ez az oktatóanyag belemerül annak egyik hatékony funkciójába: a dokumentumokon belüli nyomon követett változatok kezelésébe az Aspose.Words for .NET használatával.
 
-## Az Aspose.Words for .NET könyvtár áttekintése
+## Előfeltételek
 
-Mielőtt belemerülnénk a kód részleteibe, engedjék meg, hogy röviden bemutassam az Aspose.Words for .NET könyvtárat. Ez egy hatékony könyvtár, amely lehetővé teszi Word dokumentumok létrehozását, módosítását és konvertálását .NET alkalmazásokban. Számos fejlett funkciót kínál a dokumentumokkal végzett szövegfeldolgozáshoz, beleértve a revíziókezelést.
+Mielőtt belemerülne ebbe az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételekkel rendelkezik:
+- C# programozási nyelv alapismerete.
+- A Visual Studio telepítve van a rendszerére.
+-  Aspose.Words for .NET könyvtár integrálva a projektbe. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- Hozzáférés az Aspose.Words for .NET-hez[dokumentáció](https://reference.aspose.com/words/net/) referenciaként.
 
-## A "Szöveg figyelmen kívül hagyása a változatok törlése alatt" funkció megértése
+## Névterek importálása
 
-Az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a verzió törlésein belül" funkciója lehetővé teszi annak megadását, hogy a törlési változatokon belüli szöveget figyelmen kívül kell-e hagyni bizonyos műveletek során, például szöveg keresése és cseréje során. Ha ez a funkció engedélyezve van, a revíziókon belüli törölt szövegeket a rendszer nem veszi figyelembe a műveletek során.
+Kezdje azzal, hogy importálja a szükséges névtereket a projektbe:
+```csharp
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+## 1. lépés: Hozzon létre egy új dokumentumot és szúrjon be szöveget
 
-## 1. lépés: Új dokumentum létrehozása az Aspose.Words for .NET használatával
-
- Mielőtt elkezdené manipulálni a szöveget egy dokumentumban, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Megtehető az a. példányosításával`Document` tárgy:
-
+ Először inicializáljon egy új példányt`Document` és a`DocumentBuilder` a dokumentum elkészítésének megkezdéséhez:
 ```csharp
 Document doc = new Document();
-```
-
-## 2. lépés: Nem felülvizsgált szöveg beszúrása a dokumentumba
-
- Ha megvan a dokumentumunk, az a segítségével beszúrhatunk még nem ellenőrzött szöveget`DocumentBuilder` tárgy. Például a "Törölt szöveg" szöveg beszúrásához használhatjuk a`Writeln` és`Write` mód:
-
-```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. Writen("Deleted");
-builder. Write("Text");
 ```
 
-## 3. lépés: Eltávolít egy bekezdést a módosítások nyomon követésével
+## 2. lépés: Szöveg beszúrása és módosítások nyomon követése
 
-"Szöveg figyelmen kívül hagyása a változatok törlése alatt" funkció használatának szemléltetésére a verziókövetéssel törölünk egy bekezdést a dokumentumból. Ez lehetővé teszi számunkra, hogy meglássuk, hogyan befolyásolja ez a funkció a későbbi műveleteket.
-
+Szöveget illeszthet be a dokumentumba, és nyomon követheti a revíziókat a revíziókövetés elindításával és leállításával:
 ```csharp
+builder.Writeln("Deleted");
+builder.Write("Text");
+
 doc.StartTrackRevisions("author", DateTime.Now);
 doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## 4. lépés: A "Szöveg figyelmen kívül hagyása a változatok törlése alatt" funkció alkalmazása
+## 3. lépés: Cserélje ki a szöveget reguláris kifejezésekkel
 
- Most, hogy elkészítettük dokumentumunkat egy bekezdés törlésével, egy`FindReplaceOptions` tárgy. Beállítjuk a`IgnoreDeleted`tulajdonát`true`:
-
+A szöveg manipulálásához reguláris kifejezéseket használhat adott minták megkeresésére és cseréjére:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
 
-## 5. lépés: Reguláris kifejezések használata a kereséshez és a cseréhez
-
-A dokumentum szövegén végzett keresési és csereműveletek végrehajtásához reguláris kifejezéseket használunk. Példánkban megkeressük az "e" betű összes előfordulását, és csillagra cseréljük őket* ". .HÁLÓ`Regex` osztályt használják erre:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
-```
 
-## 6. lépés: A módosított dokumentum kimenet megjelenítése
-
- A keresés és csere alkalmazása után a dokumentum megváltozott tartalmát a segítségével tudjuk megjeleníteni`GetText` módszer:
-
-```csharp
 Console.WriteLine(doc.GetText());
-```
 
-## 7. lépés: Módosítsa a beállításokat a törölt szövegek felvételéhez
-
- Ha törölt szöveget szeretnénk belefoglalni a kimeneti eredménybe, módosíthatjuk a beállításokat, hogy ne hagyjuk figyelmen kívül a törölt szöveget. Ehhez beállítjuk a`IgnoreDeleted`tulajdonát`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-## 8. lépés: A módosított dokumentum kiadása törölt szöveggel
-
-Az opciók módosítása után végre tudjuk hajtani a keresést és a cserét, hogy az eredményt a törölt szöveggel együtt kapjuk meg:
-
-```csharp
+options.IgnoreDeleted = false;
 doc.Range.Replace(regex, "*", options);
+
 Console.WriteLine(doc.GetText());
-```
-
-### Példa forráskód az Aspose.Words for .NET-hez használt szöveg figyelmen kívül hagyása a törlésen belüli változatokhoz
-
-Íme a teljes minta forráskód, amely bemutatja az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a módosításokon belül" funkciójának használatát:
-
-```csharp
-        
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Nem átdolgozott szöveg beszúrása.
-	builder.Writeln("Deleted");
-	builder.Write("Text");
-
-	// Távolítsa el az első bekezdést a követési változatokkal.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	doc.FirstSection.Body.FirstParagraph.Remove();
-	doc.StopTrackRevisions();
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreDeleted = false;
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-    
 ```
 
 ## Következtetés
 
-Ebben a cikkben megvizsgáltuk a C# forráskódot, hogy megértsük, hogyan használható az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a módosításokon belül" funkciójában. Ez a funkció akkor hasznos, ha a dokumentumok kezelésekor figyelmen kívül hagyja a törlési változatokon belüli szöveget. Lépésről lépésre követtük a dokumentum létrehozását, szöveg beszúrását, bekezdés törlését revíziókövetéssel, a "Szöveg figyelmen kívül hagyása a változatok törlése közben" funkciót, valamint keresési és csereműveleteket.
+A Word dokumentumok nyomon követett változatainak elsajátítása az Aspose.Words for .NET segítségével lehetővé teszi a fejlesztők számára a dokumentumszerkesztési feladatok hatékony automatizálását. Átfogó API-jának és robusztus funkcióinak kihasználásával zökkenőmentesen integrálhatja a revíziókezelést az alkalmazásaiba, növelve a termelékenységet és a dokumentumkezelési képességeket.
 
-### GYIK
+## GYIK
 
-#### K: Mi az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a módosításokon belül" funkciója?
+### Mik azok a nyomon követett változatok a Word dokumentumokban?
+Word-dokumentumok nyomon követett változatai a dokumentumokon végrehajtott módosításokra utalnak, amelyek mások számára láthatók a jelöléssel, amelyeket gyakran közös szerkesztésre és áttekintésre használnak.
 
-V: Az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a módosításokon belül" funkciója lehetővé teszi annak megadását, hogy a törlési változatokon belüli szöveget figyelmen kívül kell-e hagyni bizonyos műveletek során, például szöveg keresése és cseréje során. Ha ez a funkció engedélyezve van, a revíziókon belüli törölt szövegeket a rendszer nem veszi figyelembe a műveletek során.
+### Hogyan integrálhatom az Aspose.Words for .NET-et a Visual Studio projektembe?
+Az Aspose.Words for .NET integrálásához töltse le a könyvtárat az Aspose webhelyéről, és hivatkozzon rá a Visual Studio projektben.
 
-#### K: Mi az Aspose.Words for .NET?
+### Visszaállíthatom a nyomon követett változatokat programozottan az Aspose.Words for .NET használatával?
+Igen, programozottan kezelheti és visszaállíthatja a nyomon követett revíziókat az Aspose.Words for .NET segítségével, amely lehetővé teszi a dokumentumszerkesztési munkafolyamatok pontos vezérlését.
 
-V: Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok létrehozására, szerkesztésére és .NET-alkalmazásokká való konvertálására. Számos fejlett funkciót kínál a dokumentumokkal végzett szövegfeldolgozáshoz, beleértve a revíziókezelést.
+### Alkalmas-e az Aspose.Words for .NET nagyméretű, nyomon követett változatú dokumentumok kezelésére?
+Az Aspose.Words for .NET nagyméretű dokumentumok hatékony kezelésére van optimalizálva, beleértve a kiterjedt nyomon követett változatokat is.
 
-#### K: Hogyan lehet új dokumentumot létrehozni az Aspose.Words for .NET-ben?
-
- V: Mielőtt elkezdené manipulálni a szöveget egy dokumentumban, létre kell hoznia egy új dokumentumot az Aspose.Words for .NET használatával. Ezt úgy lehet megtenni, hogy a`Document` tárgy. Íme egy mintakód egy új dokumentum létrehozásához:
-
-```csharp
-Document doc = new Document();
-```
-
-#### K: Hogyan lehet szerkesztetlen szöveget beszúrni egy dokumentumba az Aspose.Words for .NET használatával?
-
- V: Ha már rendelkezik egy dokumentummal, az a segítségével beszúrhat még nem ellenőrzött szöveget`DocumentBuilder` tárgy. Például a "Törölt szöveg" szöveg beszúrásához használhatja a`Writeln` és`Write` mód:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writen("Deleted");
-builder.Write("Text");
-```
-
-#### K: Hogyan törölhetek egy bekezdést az Aspose.Words for .NET-ben revíziókövetéssel?
-
-V: A "Szöveg figyelmen kívül hagyása a változatok törlése alatt" funkció használatának szemléltetésére a felülvizsgálat követésével törölünk egy bekezdést a dokumentumból. Ez lehetővé teszi számunkra, hogy meglássuk, hogyan befolyásolja ez a funkció a további műveleteket.
-
-```csharp
-doc.StartTrackRevisions("author", DateTime.Now);
-doc.FirstSection.Body.FirstParagraph.Remove();
-doc.StopTrackRevisions();
-```
-
-#### K: Hogyan lehet engedélyezni a "Szöveg figyelmen kívül hagyása a módosításokon belül" funkciót az Aspose.Words for .NET-ben?
-
- V: Most, hogy elkészítettük dokumentumunkat egy bekezdés törlésével, egy`FindReplaceOptions` tárgy. Beállítjuk a`IgnoreDeleted`tulajdonát`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
-
-#### K: Hogyan lehet keresni és cserélni reguláris kifejezések használatával az Aspose.Words for .NET-ben?
-
-V: A dokumentum szövegén végzett keresési és csereműveletek végrehajtásához reguláris kifejezéseket használunk. Példánkban megkeressük az "e" betű összes előfordulását, és csillagra cseréljük őket* A .NET-et fogjuk használni`Regex` osztály ehhez:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### K: Hogyan tekintheti meg a megváltozott dokumentumtartalmat az Aspose.Words for .NET-ben?
-
-V: A keresés és csere alkalmazása után a dokumentum megváltozott tartalmát a segítségével tudjuk megjeleníteni`GetText` módszer:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### K: Hogyan lehet törölt szöveget belefoglalni az Aspose.Words for .NET kimeneti eredményébe?
-
- V: Ha törölt szöveget szeretnénk belefoglalni a kimeneti eredménybe, módosíthatjuk a beállításokat, hogy ne hagyjuk figyelmen kívül a törölt szöveget. Ehhez beállítjuk a`IgnoreDeleted`tulajdonát`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-#### K: Hogyan lehet megjeleníteni a szerkesztett dokumentumot törölt szöveggel az Aspose.Words for .NET-ben?
-
-V: Az opciók módosítása után új keresést végezhetünk, és lecserélhetjük, hogy az eredményt a törölt szöveggel kapjuk meg:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Hol találok további forrásokat és támogatást az Aspose.Words for .NET-hez?
+Megtekintheti az átfogó dokumentációt, és támogatást kérhet az Aspose.Words for .NET közösségétől a címen[Aspose.Words Forum](https://forum.aspose.com/c/words/8).

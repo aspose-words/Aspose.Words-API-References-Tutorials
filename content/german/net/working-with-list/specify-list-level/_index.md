@@ -110,7 +110,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Auf diese Weise können Sie die Listenformatierung stoppen.
+// Auf diese Weise können Sie die Listenformatierung beenden.
 builder.ListFormat.List = null;
 
 builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");

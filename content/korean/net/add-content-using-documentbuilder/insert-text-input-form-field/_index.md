@@ -18,7 +18,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-text-input-form-field/
 1.  .NET 라이브러리용 Aspose.Words: .NET 라이브러리용 Aspose.Words가 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 통합 개발 환경(IDE)입니다.
 3. C#에 대한 기본 이해: C# 프로그래밍 언어 및 .NET 프레임워크에 대한 지식.
-4.  임시 라이선스(선택 사항): Aspose.Words를 평가하는 경우[임시면허](https://purchase.aspose.com/temporary-license/) 제한을 피하기 위해.
+4.  임시 라이선스(선택 사항): Aspose.Words를 평가하는 경우[임시 면허증](https://purchase.aspose.com/temporary-license/) 제한을 피하기 위해.
 
 ## 네임스페이스 가져오기
 

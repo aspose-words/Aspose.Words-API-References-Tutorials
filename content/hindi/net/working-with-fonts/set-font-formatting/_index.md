@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## चरण 2: दस्तावेज़ बनाएँ और फ़ॉर्मेट करें
- इसका एक उदाहरण बनाएं`Document` वर्ग और`DocumentBuilder`दस्तावेज़ बनाने के लिए क्लास का उपयोग करें।`Font` की संपत्ति`DocumentBuilder` फ़ॉन्ट स्वरूपण गुणों तक पहुँचने के लिए.
+ इसका एक उदाहरण बनाएं`Document` वर्ग और`DocumentBuilder` दस्तावेज़ बनाने के लिए क्लास का उपयोग करें।`Font` की संपत्ति`DocumentBuilder`फ़ॉन्ट स्वरूपण गुणों तक पहुँचने के लिए.
 
 ```csharp
 Document doc = new Document();

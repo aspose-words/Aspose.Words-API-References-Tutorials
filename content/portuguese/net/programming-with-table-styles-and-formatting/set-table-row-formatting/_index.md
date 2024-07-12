@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## Passo 7: Conclua a tabela e salve o documento
 Em
 
- final, terminamos de criar a tabela usando o`EndRow()` e`EndTable()` método, então salvamos o documento modificado em um arquivo.
+ final, terminamos de criar a tabela usando o`EndRow()`e`EndTable()` método, então salvamos o documento modificado em um arquivo.
 
 ```csharp
 builder. EndRow();

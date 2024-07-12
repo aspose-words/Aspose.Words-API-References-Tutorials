@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Activar el ajuste automático de la mesa
 table. AllowAutoFit = true;
 
-// Recuperar la primera celda de la primera fila.
+//Recuperar la primera celda de la primera fila.
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Recuperar el tipo de ancho preferido y su valor
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-Aquí usamos el documento para buscar la primera tabla, luego habilitamos el ajuste automático de la tabla con el`AllowAutoFit` propiedad. Luego recuperamos la primera celda de la primera fila de la tabla. Desde esta celda, podemos recuperar el tipo de ancho preferido con el`PreferredWidth.Type` propiedad y su valor con el`PreferredWidth.Value` propiedad.
+ Aquí usamos el documento para buscar la primera tabla, luego habilitamos el ajuste automático de la tabla con el`AllowAutoFit` propiedad. Luego recuperamos la primera celda de la primera fila de la tabla. Desde esta celda, podemos recuperar el tipo de ancho preferido con el`PreferredWidth.Type` propiedad y su valor con el`PreferredWidth.Value` propiedad.
 
 ### Código fuente de muestra para recuperar el tipo de ancho preferido usando Aspose.Words para .NET 
 

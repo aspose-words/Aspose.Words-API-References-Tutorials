@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Zrób coś z kodem pola i wynikiem.
+     //Zrób coś z kodem pola i wynikiem.
 }
 ```
 
@@ -73,7 +73,7 @@ Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Pobierz 
 
 #### P: Jak mogę zaktualizować pola w dokumencie przy użyciu Aspose.Words dla .NET?
 
- Odp.: Aby zaktualizować pola dokumentu za pomocą Aspose.Words dla .NET, możesz użyć`Document.UpdateFields`metoda. Spowoduje to aktualizację wszystkich pól obecnych w dokumencie, takich jak pola scalania, pola daty itp.
+ Odp.: Aby zaktualizować pola dokumentu za pomocą Aspose.Words dla .NET, możesz użyć`Document.UpdateFields` metoda. Spowoduje to aktualizację wszystkich pól obecnych w dokumencie, takich jak pola scalania, pola daty itp.
 
 #### P: Jak mogę pobrać wartość określonego pola w Aspose.Words dla .NET?
 

@@ -17,7 +17,7 @@ url: /el/java/document-converting/converting-documents-images/
 Πριν βουτήξουμε στο τμήμα κωδικοποίησης, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
 - Περιβάλλον ανάπτυξης Java: Θα πρέπει να έχετε εγκατεστημένο το Java Development Kit (JDK) στο σύστημά σας.
-- Aspose.Words for Java: Κατεβάστε και ρυθμίστε τη βιβλιοθήκη Aspose.Words for Java από το[Aspose ιστότοπο](https://releases.aspose.com/words/java/).
+- Aspose.Words for Java: Κατεβάστε και ρυθμίστε τη βιβλιοθήκη Aspose.Words for Java από το[Aspose website](https://releases.aspose.com/words/java/).
 
 ## Ρύθμιση του έργου Java σας
 
@@ -66,7 +66,7 @@ public class DocumentToImageConverter {
  Για να ορίσετε την ανάλυση της εικόνας, χρησιμοποιήστε το`setResolution` μέθοδος για`ImageSaveOptions` και καθορίστε την επιθυμητή ανάλυση σε κουκκίδες ανά ίντσα (DPI).
 
 ### Μπορώ να μετατρέψω συγκεκριμένες σελίδες του εγγράφου σε εικόνες;
- Ναι, μπορείτε να καθορίσετε ένα εύρος σελίδων χρησιμοποιώντας το`setPageCount` και`setPageIndex` μεθόδους της`ImageSaveOptions` για να μετατρέψετε συγκεκριμένες σελίδες σε εικόνες.
+ Ναι, μπορείτε να καθορίσετε ένα εύρος σελίδων χρησιμοποιώντας το`setPageCount`και`setPageIndex` μεθόδους της`ImageSaveOptions` για να μετατρέψετε συγκεκριμένες σελίδες σε εικόνες.
 
 ### Είναι το Aspose.Words για Java κατάλληλο για μαζική μετατροπή εγγράφων;
 Απολύτως! Μπορείτε να χρησιμοποιήσετε το Aspose.Words για Java για να μετατρέψετε αποτελεσματικά πολλαπλά έγγραφα σε εικόνες.

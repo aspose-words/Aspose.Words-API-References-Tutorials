@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Langkah 7: Tambahkan konten ke sel
- Sekarang kita dapat menambahkan konten ke sel menggunakan`Writeln()` Dan`InsertCell()` metode pembuat dokumen. Dalam contoh ini, kita menambahkan header untuk "Item" dan "Quantity (
+ Sekarang kita dapat menambahkan konten ke sel menggunakan`Writeln()`Dan`InsertCell()` metode pembuat dokumen. Dalam contoh ini, kita menambahkan header untuk "Item" dan "Quantity (
 
 kg)" dan data terkait.
 

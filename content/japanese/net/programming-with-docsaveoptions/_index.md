@@ -16,6 +16,6 @@ DocSaveOptions を使用した Words Processing に関する Aspose.Words for .N
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [パスワードで文書を暗号化する](./encrypt-document-with-password/) | Aspose.Words for .NET を使用してドキュメントをパスワードで暗号化する方法を学習します。  |
-| [小さなメタファイルを圧縮しない](./do-not-compress-small-metafiles/) | Aspose.Words for .NET を使用して、ドキュメントを保存するときに「小さなメタファイルを圧縮しない」機能を有効にする方法を学習します。 |
-| [画像を保存しない](./do-not-save-picture-bullet/) | Aspose.Words for .NET を使用して、Word 文書内の画像の箇条書きの保存を無効にする方法を学習します。 |
+| [パスワードで文書を暗号化する](./encrypt-document-with-password/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用してドキュメントをパスワードで暗号化する方法を学習します。機密情報を簡単に保護します。 |
+| [小さなメタファイルを圧縮しない](./do-not-compress-small-metafiles/) | Aspose.Words for .NET を使用して、Word 文書内の小さなメタファイルが圧縮されず、品質と整合性が維持されるようにする方法を学びます。ステップバイステップのガイドが含まれています。 |
+| [画像を保存しない](./do-not-save-picture-bullet/) | ステップバイステップ ガイドで、Aspose.Words for .NET で画像の箇条書きを処理する方法を学びます。ドキュメント管理を簡素化し、プロフェッショナルな Word ドキュメントを簡単に作成します。 |

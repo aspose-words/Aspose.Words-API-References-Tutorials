@@ -85,4 +85,4 @@ R: Antes de poder clonar un módulo VBA desde un documento de Word, debe tener c
 
 #### P: ¿Cómo guardar el documento de destino con el módulo VBA clonado?
 
- R: Para guardar el documento de destino con el módulo VBA clonado, puede utilizar el`Save` método de la`Document` clase especificando la ruta de destino deseada y el nombre de archivo.
+ R: Para guardar el documento de destino con el módulo VBA clonado, puede utilizar el`Save` método de la`Document` clase especificando la ruta de destino deseada y el nombre del archivo.

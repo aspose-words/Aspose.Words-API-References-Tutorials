@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Lägg till en ny mappkälla som instruerar Aspose.Words att söka efter typsnitt i följande mapp.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Lägg till den anpassade mappen som innehåller våra typsnitt till listan över befintliga teckensnittskällor.
+// Lägg till den anpassade mappen som innehåller våra typsnitt till listan över befintliga teckensnittskällor.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

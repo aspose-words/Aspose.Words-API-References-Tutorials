@@ -54,6 +54,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpel
 
 ```
 
-正しいドキュメントパスを必ず指定してください。`dataDir`変数。
+必ず正しいドキュメントパスを指定してください。`dataDir`変数。
 
 Aspose.Words for .NET を使用して、ドキュメント内の文法エラーやスペルエラーの表示を有効にする方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、自分のドキュメントでこの機能を簡単に有効にすることができます。

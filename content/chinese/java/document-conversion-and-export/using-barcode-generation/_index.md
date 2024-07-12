@@ -8,7 +8,7 @@ weight: 11
 url: /zh/java/document-conversion-and-export/using-barcode-generation/
 ---
 
-## Aspose.Words for Java 中条形码生成的使用简介
+## 在 Aspose.Words for Java 中使用条形码生成的简介
 
 在文档处理和自动化领域，Aspose.Words for Java 是一个多功能且功能强大的库。本文将指导您完成使用 Aspose.Words for Java 生成条形码的过程。我们将逐步探索如何将条形码生成功能整合到您的 Java 应用程序中。那么，让我们开始吧！
 
@@ -44,7 +44,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
 ```
 
-## 将文档保存为 PDF
+## 将文档另存为 PDF
 
 最后，将修改后的文档保存为 PDF 或您喜欢的格式。替换`"WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf"`使用您想要的输出文件路径：
 

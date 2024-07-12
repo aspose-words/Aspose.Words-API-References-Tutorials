@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Krok 3: Uzyskaj odległość między tabelą a otaczającym ją tekstem
- Aby uzyskać odległość między tabelą a otaczającym ją tekstem, musimy uzyskać dostęp do tabeli w dokumencie za pomocą`GetChild()` metoda i`NodeType.Table` nieruchomość. Możemy następnie wyświetlić różne odległości, korzystając z właściwości tablicy`DistanceTop`, `DistanceBottom`, `DistanceRight` I`DistanceLeft`.
+ Aby uzyskać odległość między tabelą a otaczającym ją tekstem, musimy uzyskać dostęp do tabeli w dokumencie za pomocą`GetChild()` metoda i`NodeType.Table` nieruchomość. Możemy następnie wyświetlić różne odległości, korzystając z właściwości tablicy`DistanceTop`, `DistanceBottom`, `DistanceRight`I`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

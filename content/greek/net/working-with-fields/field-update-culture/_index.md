@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Βήμα 3: Εισαγωγή του πεδίου ώρας
 
- Χρησιμοποιούμε το`InsertField()` μέθοδο για την εισαγωγή ενός πεδίου χρόνου στο έγγραφο.
+ Χρησιμοποιούμε το`InsertField()`μέθοδο για την εισαγωγή ενός πεδίου χρόνου στο έγγραφο.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

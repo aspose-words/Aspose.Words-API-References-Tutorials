@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2단계: 문서 로드 및 섹션 복제
- 다음으로 Word 문서를`Document` 수업. 그런 다음`Clone` 문서의 첫 번째 섹션을 복제하는 방법입니다.
+ 다음으로 Word 문서를`Document` 수업. 그런 다음`Clone`문서의 첫 번째 섹션을 복제하는 방법입니다.
 
 ```csharp
 // 문서를 로드하세요

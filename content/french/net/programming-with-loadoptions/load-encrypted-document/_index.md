@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Charger un document crypté avec le mot de passe spécifié
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Enregistrez un document crypté avec un nouveau mot de passe
+//Enregistrez un document crypté avec un nouveau mot de passe
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
@@ -61,7 +61,7 @@ R : Les documents Word cryptés sont des fichiers qui ont été protégés par 
 
 R : Aspose.Words for .NET fournit les outils et fonctionnalités nécessaires pour charger des documents Word cryptés en spécifiant le mot de passe correct, garantissant ainsi un accès sécurisé aux fichiers protégés.
 
-#### Q : Puis-je changer le mot de passe d'un document crypté à l'aide d'Aspose.Words ?
+#### : Puis-je changer le mot de passe d'un document crypté à l'aide d'Aspose.Words ?
 
 R : Absolument ! Aspose.Words vous permet d'enregistrer des documents cryptés avec un nouveau mot de passe, vous offrant ainsi la possibilité de mettre à jour le mot de passe si nécessaire.
 

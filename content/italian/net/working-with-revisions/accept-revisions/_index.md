@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Soluzione 2:
 
- R: Puoi anche abilitare il monitoraggio delle revisioni utilizzando il file`Document` costruttore che accetta`trackRevisions` E`author` parametri.
+ R: Puoi anche abilitare il monitoraggio delle revisioni utilizzando il file`Document` costruttore che accetta`trackRevisions`E`author` parametri.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

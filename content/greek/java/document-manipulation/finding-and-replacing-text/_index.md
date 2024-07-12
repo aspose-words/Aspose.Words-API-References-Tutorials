@@ -319,7 +319,7 @@ doc.save("modified-document.docx");
 // Φορτώστε το έγγραφο
 Document doc = new Document("your-document.docx");
 
-// Αποκτήστε έναν συγκεκριμένο πίνακα (π.χ. τον πρώτο πίνακα)
+// Λάβετε έναν συγκεκριμένο πίνακα (π.χ. τον πρώτο πίνακα)
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 
 // Χρησιμοποιήστε το FindReplaceOptions για να αντικαταστήσετε το κείμενο στον πίνακα

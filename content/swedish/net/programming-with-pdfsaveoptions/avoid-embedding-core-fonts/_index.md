@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
 
-I den här handledningen går vi igenom stegen för hur du minskar PDF-filstorleken genom att inte bädda in kärnteckensnitt med Aspose.Words för .NET. Den här funktionen låter dig styra om grundläggande typsnitt som Arial, Times New Roman, etc. måste bäddas in i PDF:en när du konverterar ett Word-dokument. Följ stegen nedan:
+I den här handledningen går vi igenom stegen för hur du minskar PDF-filstorleken genom att inte bädda in kärnteckensnitt med Aspose.Words för .NET. Denna funktion låter dig styra om grundläggande typsnitt som Arial, Times New Roman, etc. måste bäddas in i PDF:en när du konverterar ett Word-dokument. Följ stegen nedan:
 
 ## Steg 1: Ladda dokumentet
 

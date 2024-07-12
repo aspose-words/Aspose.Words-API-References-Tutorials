@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 ## 结论
 
-通过遵循本分步指南，您已经学会了如何使用 Aspose.Words for .NET 中的“首选控件类型”功能在加载 HTML 文档时指定所需的控件类型。设置`PreferredControlType`财产`HtmlControlType.StructuredDocumentTag`允许 Aspose.Words 使用 StructuredDocumentTags (SDT) 来更好地表示和处理 HTML 内容。您还可以探索其他控件类型以满足您的特定要求。使用此功能有助于确保使用 Aspose.Words 准确高效地处理 C# 应用程序中的 HTML 文档。
+通过遵循本分步指南，您已经学会了如何使用 Aspose.Words for .NET 中的“首选控件类型”功能在加载 HTML 文档时指定所需的控件类型。设置`PreferredControlType`财产`HtmlControlType.StructuredDocumentTag`允许 Aspose.Words 使用 StructuredDocumentTags (SDT) 来更好地表示和处理 HTML 内容。您还可以探索其他控件类型以满足您的特定需求。使用此功能有助于确保使用 Aspose.Words 准确高效地处理 C# 应用程序中的 HTML 文档。
 
 ### Word 文档中首选控件类型的常见问题解答
 

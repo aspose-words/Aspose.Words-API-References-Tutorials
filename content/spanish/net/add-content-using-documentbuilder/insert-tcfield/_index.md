@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Paso 2: cree un nuevo documento
 
- Muy bien, comencemos creando un nuevo documento de Word. Usaremos el`Document` y`DocumentBuilder` clases de Aspose.Words para poner las cosas en marcha.
+ Muy bien, comencemos creando un nuevo documento de Word. Usaremos el`Document`y`DocumentBuilder` clases de Aspose.Words para poner las cosas en marcha.
 
 ```csharp
 // La ruta al directorio de documentos.

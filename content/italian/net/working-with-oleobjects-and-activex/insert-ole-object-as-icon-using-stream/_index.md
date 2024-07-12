@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. Per incorporare il codice per inserire un oggetto OLE come icona da uno stream nel tuo progetto, procedi nel seguente modo:
 -  Importa i riferimenti necessari aggiungendo quelli appropriati`using` dichiarazioni.
--  Crea un nuovo documento e un generatore di documenti utilizzando il file`Document` E`DocumentBuilder` classi.
+-  Crea un nuovo documento e un generatore di documenti utilizzando il file`Document`E`DocumentBuilder` classi.
 - Utilizzare il codice per inserire l'oggetto OLE come icona da un flusso.
 -  Salvare il documento utilizzando il file`Save` metodo con il percorso di destinazione appropriato.
 

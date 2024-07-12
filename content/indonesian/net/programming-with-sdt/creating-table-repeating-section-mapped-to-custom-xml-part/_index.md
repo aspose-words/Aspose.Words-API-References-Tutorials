@@ -17,7 +17,7 @@ Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Langkah 4: Buat Tabel dan Struktur Tabel
- Mulailah membuat tabel menggunakan`StartTable` metode`DocumentBuilder` . Tambahkan sel tabel dan konten menggunakan`InsertCell` Dan`Write` metode.
+ Mulailah membuat tabel menggunakan`StartTable` metode`DocumentBuilder` . Tambahkan sel tabel dan konten menggunakan`InsertCell`Dan`Write` metode.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Membuat`Row`untuk mewakili setiap item di bagian berulang dan menambahkannya ke item bagian berulang.
+ Membuat`Row` untuk mewakili setiap item di bagian berulang dan menambahkannya ke item bagian berulang.
 
 ```csharp
 Row row = new Row(doc);

@@ -8,7 +8,7 @@ weight: 15
 url: /id/java/using-document-elements/using-harfbuzz/
 ---
 
-Aspose.Words for Java adalah API canggih yang memungkinkan pengembang bekerja dengan dokumen Word dalam aplikasi Java. Ini menyediakan berbagai fitur untuk memanipulasi dan menghasilkan dokumen Word, termasuk pembentukan teks. Dalam tutorial langkah demi langkah ini, kita akan mempelajari cara menggunakan HarfBuzz untuk pembentukan teks di Aspose.Words untuk Java.
+Aspose.Words for Java adalah API canggih yang memungkinkan pengembang bekerja dengan dokumen Word di aplikasi Java. Ini menyediakan berbagai fitur untuk memanipulasi dan menghasilkan dokumen Word, termasuk pembentukan teks. Dalam tutorial langkah demi langkah ini, kita akan mempelajari cara menggunakan HarfBuzz untuk pembentukan teks di Aspose.Words untuk Java.
 
 ## Pengantar HarfBuzz
 
@@ -66,7 +66,7 @@ doc.save(outPath + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita telah mempelajari cara menggunakan HarfBuzz untuk pembentukan teks di Aspose.Words untuk Java. Dengan mengikuti langkah-langkah ini, Anda dapat meningkatkan kemampuan pemrosesan dokumen Word dan memastikan rendering skrip dan bahasa yang rumit dengan benar.
+Dalam tutorial ini, kita telah mempelajari cara menggunakan HarfBuzz untuk pembentukan teks di Aspose.Words untuk Java. Dengan mengikuti langkah-langkah ini, Anda dapat meningkatkan kemampuan pemrosesan dokumen Word dan memastikan rendering skrip dan bahasa yang kompleks dengan benar.
 
 ## FAQ
 

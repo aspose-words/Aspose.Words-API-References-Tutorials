@@ -49,7 +49,7 @@ Most, hogy a projekt be van állítva, töltsük be a Word dokumentumot, amellye
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2.  A dokumentum betöltése: Használja a`Document` osztályt az Aspose.Words-ből a dokumentum betöltéséhez.
+2.  A dokumentum betöltése: Használja a`Document` osztályt az Aspose.Word-ből a dokumentum betöltéséhez.
 
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");
@@ -76,7 +76,7 @@ A dokumentum betöltése után itt az ideje, hogy ismételje meg a bekezdéseket
 
 ## 4. lépés: Futtassa a kódot
 
-Most futtassuk le a kódot, és nézzük meg működés közben.
+Most pedig futtassuk le a kódot, és nézzük meg működés közben.
 
 1. Építés és futtatás: Építse fel projektjét, és futtassa. Ha minden megfelelően van beállítva, akkor a "Separator Found!" kinyomtatva a konzolon a dokumentum minden stíluselválasztójához.
 

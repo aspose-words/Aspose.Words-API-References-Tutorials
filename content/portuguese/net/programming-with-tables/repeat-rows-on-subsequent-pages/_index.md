@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Insira a primeira célula da primeira linha
+//Insira a primeira célula da primeira linha
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Aqui usamos o construtor de documentos para construir uma tabela com duas linhas de cabeçalho e várias linhas de dados. O`RowFormat.HeadingFormat`parâmetros são usados para marcar linhas de cabeçalho que devem ser repetidas nas páginas subsequentes.
+ Aqui usamos o construtor de documentos para construir uma tabela com duas linhas de cabeçalho e várias linhas de dados. O`RowFormat.HeadingFormat` parâmetros são usados para marcar linhas de cabeçalho que devem ser repetidas nas páginas subsequentes.
 
 ## Passo 4: Salvando o documento modificado
 Finalmente EUA

@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Etapa 7: adicionar conteúdo às células
- Agora podemos adicionar conteúdo às células usando o`Writeln()` e`InsertCell()` métodos do construtor de documentos. Neste exemplo, adicionamos os cabeçalhos para "Item" e "Quantidade (
+ Agora podemos adicionar conteúdo às células usando o`Writeln()`e`InsertCell()` métodos do construtor de documentos. Neste exemplo, adicionamos os cabeçalhos para "Item" e "Quantidade (
 
 kg)" e os dados correspondentes.
 

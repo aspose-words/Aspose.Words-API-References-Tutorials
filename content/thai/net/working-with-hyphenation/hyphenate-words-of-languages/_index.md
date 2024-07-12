@@ -53,7 +53,7 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 
 ดังนั้น ! คุณประมวลผลคำได้สำเร็จด้วยการใส่ยติภังค์ในภาษาต่างๆ ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
 
-### ตัวอย่างซอร์สโค้ดสำหรับการยัติภังค์คำโดยใช้ Aspose.Words สำหรับ .NET
+### ตัวอย่างซอร์สโค้ดสำหรับการใส่ยัติภังค์คำโดยใช้ Aspose.Words สำหรับ .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

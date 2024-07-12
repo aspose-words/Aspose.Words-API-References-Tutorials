@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: carica il documento e clona la sezione
- Successivamente, caricheremo il documento Word in un'istanza del file`Document` classe. Utilizzeremo quindi il file`Clone` metodo per clonare la prima sezione del documento.
+ Successivamente, caricheremo il documento Word in un'istanza del file`Document` classe. Utilizzeremo quindi il file`Clone`metodo per clonare la prima sezione del documento.
 
 ```csharp
 // Caricare il documento

@@ -70,7 +70,7 @@ builder.Writeln("Text with InlineCode style with 3 backtick");
 
 #### Q: Aspose.Words에서 인라인 코드 글꼴이나 색상을 지정할 수 있나요?
 
- A: 예, Aspose.Words에서 인라인 코드의 글꼴이나 색상을 지정할 수 있습니다. 당신은 사용할 수 있습니다`Font.Name` 그리고`Font.Color` 의 속성`Run` 인라인 코드의 글꼴과 색상을 설정하는 개체입니다. 예를 들어 다음을 사용할 수 있습니다.`run.Font.Name = "Courier New"` 인라인 코드의 글꼴을 지정하고`run.Font.Color = Color.Blue`색상을 지정합니다.
+ A: 예, Aspose.Words에서 인라인 코드의 글꼴이나 색상을 지정할 수 있습니다. 당신은 사용할 수 있습니다`Font.Name`그리고`Font.Color` 의 속성`Run` 인라인 코드의 글꼴과 색상을 설정하는 개체입니다. 예를 들어 다음을 사용할 수 있습니다.`run.Font.Name = "Courier New"` 인라인 코드의 글꼴을 지정하고`run.Font.Color = Color.Blue`색상을 지정합니다.
 
 #### Q: 다른 텍스트 요소가 포함된 단락에 인라인 코드를 사용할 수 있습니까?
 

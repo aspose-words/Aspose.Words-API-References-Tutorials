@@ -2,68 +2,127 @@
 title: Ignorovat záhlaví zápatí
 linktitle: Ignorovat záhlaví zápatí
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak připojit dokument a přitom ignorovat obsah záhlaví a zápatí pomocí Aspose.Words for .NET.
+description: tomto podrobném průvodci se dozvíte, jak sloučit dokumenty aplikace Word a přitom ignorovat záhlaví a zápatí pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/ignore-header-footer/
 ---
+## Úvod
 
-Tento tutoriál vysvětluje, jak používat Aspose.Words pro .NET k připojení dokumentu při ignorování obsahu záhlaví a zápatí. Poskytnutý zdrojový kód ukazuje, jak nastavit možnosti formátu importu pro vyloučení záhlaví a zápatí během procesu přidávání.
+Slučování dokumentů aplikace Word může být někdy trochu složité, zvláště když chcete zachovat některé části nedotčené a ignorovat jiné, jako jsou záhlaví a zápatí. Naštěstí Aspose.Words pro .NET poskytuje elegantní způsob, jak to zvládnout. V tomto tutoriálu vás provedu procesem krok za krokem a zajistím, že porozumíte každé části. Zachováme to lehké, konverzační a poutavé, stejně jako chatování s přítelem. Připraveni? Pojďme se ponořit!
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Ujistěte se, že máte následující předpoklady:
+Než začneme, ujistěte se, že máme vše, co potřebujeme:
 
--  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose.Releases]https://releases.aspose.com/words/net/ nebo k instalaci použijte správce balíčků NuGet.
-- Cesta k adresáři dokumentů, kde jsou umístěny zdrojové a cílové dokumenty.
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Visual Studio: Každá nejnovější verze by měla fungovat.
+- Základní porozumění C#: Nebojte se, provedu vás kódem.
+- Dva dokumenty Word: Jeden bude připojen k druhému.
 
-## Krok 2: Otevřete zdrojové a cílové dokumenty
+## Importovat jmenné prostory
 
- Otevřete zdrojové a cílové dokumenty pomocí`Document` konstruktor třídy. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů.
+Nejprve musíme importovat potřebné jmenné prostory do našeho projektu C#. To je zásadní, protože nám to umožňuje používat třídy a metody Aspose.Words bez neustálého odkazování na celý jmenný prostor.
 
 ```csharp
-// Cesta k vašemu adresáři dokumentů
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Krok 1: Nastavte svůj projekt
+
+### Vytvořit nový projekt
+
+Začněme vytvořením nového projektu Console App ve Visual Studiu.
+
+1. Otevřete Visual Studio.
+2. Vyberte "Vytvořit nový projekt".
+3. Vyberte „Console App (.NET Core)“.
+4. Pojmenujte svůj projekt a klikněte na „Vytvořit“.
+
+### Nainstalujte Aspose.Words for .NET
+
+Dále musíme do našeho projektu přidat Aspose.Words for .NET. Můžete to udělat pomocí Správce balíčků NuGet:
+
+1. Klepněte pravým tlačítkem myši na svůj projekt v Průzkumníku řešení.
+2. Vyberte „Spravovat balíčky NuGet“.
+3. Vyhledejte "Aspose.Words" a nainstalujte jej.
+
+## Krok 2: Vložte své dokumenty
+
+Nyní, když je náš projekt nastaven, načteme dokumenty Wordu, které chceme sloučit. Pro účely tohoto tutoriálu je budeme nazývat „Document source.docx“ a „Northwind traders.docx“.
+
+Zde je návod, jak je načíst pomocí Aspose.Words:
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDocument = new Document(dataDir + "Document source.docx");
 Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Nastavte možnosti formátu importu
+Tento fragment kódu nastaví cestu k adresáři dokumentů a načte dokumenty do paměti.
 
- Vytvořte instanci souboru`ImportFormatOptions` třídu a nastavte`IgnoreHeaderFooter`majetek do`false`. To zajistí, že obsah záhlaví a zápatí bude zahrnut během procesu přidávání.
+## Krok 3: Nakonfigurujte možnosti importu
+
+Před sloučením dokumentů musíme nastavit možnosti importu. Tento krok je zásadní, protože nám umožňuje určit, že chceme ignorovat záhlaví a zápatí.
+
+Zde je kód pro konfiguraci možností importu:
 
 ```csharp
-ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
+ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
-## Krok 4: Připojte zdrojový dokument k cílovému dokumentu
+ Nastavením`IgnoreHeaderFooter` na`true`, říkáme Aspose.Words, aby ignorovala záhlaví a zápatí během procesu sloučení.
 
- Použijte`AppendDocument` způsob cílového dokumentu pro připojení zdrojového dokumentu. Složit`ImportFormatMode.KeepSourceFormatting`jako druhý parametr a možnosti formátu importu jako třetí parametr.
+## Krok 4: Sloučení dokumentů
+
+S našimi načtenými dokumenty a nakonfigurovanými možnostmi importu je čas dokumenty sloučit.
+
+Jak na to:
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## Krok 5: Uložte cílový dokument
+Tento řádek kódu připojí zdrojový dokument k cílovému dokumentu, přičemž zachová zdrojové formátování a ignoruje záhlaví a zápatí.
 
-Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+## Krok 5: Uložte sloučený dokument
+
+Nakonec musíme sloučený dokument uložit. 
+
+Zde je kód pro uložení sloučeného dokumentu:
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ```
 
-Tím je dokončena implementace připojení dokumentu při ignorování obsahu záhlaví a zápatí pomocí Aspose.Words for .NET.
+Tím se sloučený dokument uloží do zadaného adresáře s názvem "JoinAndAppendDocuments.IgnoreHeaderFooter.docx".
 
-### Příklad zdrojového kódu pro Ignorovat záhlaví zápatí pomocí Aspose.Words pro .NET 
+## Závěr
 
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+A tady to máte! Úspěšně jste sloučili dva dokumenty aplikace Word a ignorovali jste jejich záhlaví a zápatí pomocí Aspose.Words for .NET. Tato metoda je užitečná pro různé úlohy správy dokumentů, kde je klíčová údržba konkrétních částí dokumentu.
 
-	Document srcDocument = new Document(dataDir + "Document source.docx");
-	Document dstDocument = new Document(dataDir + "Northwind traders.docx");
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
-	dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
-	dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
-```
+Práce s Aspose.Words pro .NET může výrazně zefektivnit vaše pracovní postupy při zpracování dokumentů. Pamatujte, že pokud se někdy zaseknete nebo budete potřebovat další informace, vždy se můžete podívat na[dokumentace](https://reference.aspose.com/words/net/).
+
+## FAQ
+
+### Mohu ignorovat další části dokumentu kromě záhlaví a zápatí?
+
+Ano, Aspose.Words poskytuje různé možnosti přizpůsobení procesu importu, včetně ignorování různých sekcí a formátování.
+
+### Je možné ponechat záhlaví a zápatí namísto jejich ignorování?
+
+ Absolutně. Jednoduše nastavit`IgnoreHeaderFooter` na`false` v`ImportFormatOptions`.
+
+### Potřebuji licenci k používání Aspose.Words pro .NET?
+
+ Ano, Aspose.Words for .NET je komerční produkt. Můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) nebo zakoupit licenci[tady](https://purchase.aspose.com/buy).
+
+### Mohu pomocí této metody sloučit více než dva dokumenty?
+
+ Ano, můžete připojit více dokumentů ve smyčce opakováním`AppendDocument` metoda pro každý další dokument.
+
+### Kde najdu další příklady a dokumentaci pro Aspose.Words pro .NET?
+
+ Kompletní dokumentaci a příklady naleznete na[Aspose webové stránky](https://reference.aspose.com/words/net/).

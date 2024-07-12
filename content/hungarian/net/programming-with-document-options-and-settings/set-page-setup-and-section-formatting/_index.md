@@ -58,6 +58,6 @@ Ez a kód az oldal tájolását fekvőre állítja, a bal margót 50-re, a papí
   
 ```
 
-Ügyeljen arra, hogy megadja annak a könyvtárnak a megfelelő elérési útját, ahová a dokumentumot menteni szeretné`dataDir` változó.
+ Ügyeljen arra, hogy megadja annak a könyvtárnak a megfelelő elérési útját, ahová a dokumentumot menteni szeretné`dataDir` változó.
 
 Most megtanulta, hogyan konfigurálhatja a dokumentumok elrendezését és szakaszformázását az Aspose.Words for .NET használatával. Az oktatóanyagban található lépésenkénti útmutató követésével könnyedén testreszabhatja saját dokumentumai elrendezését és formázását.

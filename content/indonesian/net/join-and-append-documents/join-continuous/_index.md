@@ -2,70 +2,104 @@
 title: Bergabunglah dengan Berkelanjutan
 linktitle: Bergabunglah dengan Berkelanjutan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggabungkan dua dokumen secara terus-menerus sambil mempertahankan pemformatan menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menggabungkan dua dokumen Word dengan lancar menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk penggabungan dokumen yang lancar dan efisien.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/join-continuous/
 ---
+## Perkenalan
 
-Tutorial ini menjelaskan cara menggabungkan dua dokumen secara terus menerus menggunakan Aspose.Words for .NET. Kode sumber yang disediakan menunjukkan cara menambahkan dokumen ke akhir dokumen lain sambil mempertahankan format aslinya.
+Apakah Anda ingin menggabungkan dua dokumen Word menjadi satu dengan mulus tanpa jeda? Aspose.Words untuk .NET menawarkan cara fantastis untuk mencapai hal ini dengan menggunakan fitur Continuous Section Break. Tutorial ini akan memandu Anda langkah demi langkah melalui proses tersebut, memastikan Anda dapat dengan mudah menggabungkan dokumen tanpa kesulitan. Ayo selami!
 
-## Langkah 1: Siapkan proyek
+## Prasyarat
 
-Pastikan Anda memiliki prasyarat berikut:
+Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
 
--  Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mengunduhnya dari[Aspose.Releases]https://releases.aspose.com/words/net/ atau gunakan manajer paket NuGet untuk menginstalnya.
-- Jalur direktori dokumen tempat dokumen sumber dan tujuan berada.
+-  Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduh dan instal[Aspose.Kata-kata untuk .NET](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Anda dapat menggunakan Visual Studio atau lingkungan pengembangan .NET lainnya.
+- Contoh Dokumen: Siapkan dua dokumen Word yang ingin Anda gabungkan.
 
-## Langkah 2: Buka dokumen sumber dan tujuan
+## Impor Namespace
 
- Buka dokumen sumber dan tujuan menggunakan`Document` konstruktor kelas. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+Untuk menggunakan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan dalam proyek Anda. Inilah cara Anda melakukannya:
+
+```csharp
+using Aspose.Words;
+```
+
+Sekarang, mari kita bagi contoh ini menjadi beberapa langkah agar lebih jelas.
+
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+Pertama, kita perlu menyiapkan direktori tempat dokumen Anda disimpan. Ini akan memungkinkan kode kita menemukan file yang ingin kita gabungkan.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Anda disimpan.
+
+## Langkah 2: Muat Dokumen Sumber dan Tujuan
+
+Selanjutnya, kita akan memuat dokumen sumber dan tujuan ke dalam program kita. Ini adalah dua dokumen yang ingin Anda gabungkan.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Langkah 3: Siapkan permulaan bagian berkelanjutan
+Pastikan nama file dan jalurnya cocok dengan file sebenarnya yang ingin Anda gunakan.
 
-Untuk membuat dokumen sumber muncul tepat setelah isi dokumen tujuan, atur`SectionStart` properti bagian pertama dalam dokumen sumber ke`SectionStart.Continuous`.
+## Langkah 3: Tetapkan Bagian Mulai sebagai Berkelanjutan
+
+ Untuk membuat isi dokumen sumber muncul tepat setelah dokumen tujuan, kita perlu mengaturnya`SectionStart` properti bagian pertama dalam dokumen sumber ke`Continuous`.
 
 ```csharp
+// Membuat dokumen muncul tepat setelah isi dokumen tujuan.
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Langkah 4: Tambahkan dokumen sumber
+Hal ini memastikan tidak ada jeda antar dokumen saat digabungkan.
 
- Tambahkan dokumen sumber ke dokumen tujuan menggunakan`AppendDocument` metode`Document` kelas. Atur mode format impor ke`ImportFormatMode.KeepSourceFormatting` untuk mempertahankan gaya asli dari dokumen sumber.
+## Langkah 4: Tambahkan Dokumen Sumber
+
+Sekarang, kita menambahkan dokumen sumber ke dokumen tujuan. Langkah ini memastikan bahwa konten dari dokumen sumber ditambahkan ke akhir dokumen tujuan.
 
 ```csharp
+// Tambahkan dokumen sumber menggunakan gaya asli yang ditemukan di dokumen sumber.
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Langkah 5: Simpan dokumen yang dimodifikasi
+ Menggunakan`ImportFormatMode.KeepSourceFormatting` memastikan bahwa pemformatan dari dokumen sumber dipertahankan dalam dokumen gabungan akhir.
 
-Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
+## Langkah 5: Simpan Dokumen yang Digabung
+
+Terakhir, kami menyimpan dokumen gabungan ke direktori yang ditentukan. Ini menyelesaikan proses penggabungan dokumen.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```
 
-Ini menyelesaikan implementasi penggabungan dua dokumen secara terus menerus menggunakan Aspose.Words untuk .NET.
+Pastikan jalur dan nama file sesuai dengan kebutuhan Anda.
 
-### Contoh kode sumber untuk Gabung Berkelanjutan menggunakan Aspose.Words untuk .NET 
+## Kesimpulan
 
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Dan itu dia! Hanya dengan beberapa baris kode, Anda telah berhasil menggabungkan dua dokumen Word menjadi satu dokumen berkelanjutan menggunakan Aspose.Words untuk .NET. Proses ini tidak hanya sederhana namun juga sangat efisien, memastikan dokumen Anda mempertahankan format aslinya.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Jadikan dokumen muncul tepat setelah isi dokumen tujuan.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// Tambahkan dokumen sumber menggunakan gaya asli yang ditemukan di dokumen sumber.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
-```
+## FAQ
+
+### Bisakah saya menggabungkan lebih dari dua dokumen?
+Ya, Anda dapat mengulangi proses menggabungkan beberapa dokumen dengan memuat dokumen tambahan dan menambahkannya secara berurutan.
+
+### Apakah format aslinya akan dipertahankan?
+ Ya, menggunakan`ImportFormatMode.KeepSourceFormatting` memastikan bahwa pemformatan dari dokumen sumber dipertahankan.
+
+### Apakah Aspose.Words untuk .NET kompatibel dengan .NET Core?
+Ya, Aspose.Words untuk .NET kompatibel dengan .NET Framework dan .NET Core.
+
+### Bisakah saya menggabungkan dokumen dengan pengaturan halaman berbeda?
+Ya, tapi Anda mungkin perlu menyesuaikan properti pengaturan halaman untuk memastikan penggabungan yang mulus.
+
+### Di mana saya bisa mendapatkan dukungan jika saya mengalami masalah?
+ Anda bisa mendapatkan dukungan dari forum komunitas Aspose[Di Sini](https://forum.aspose.com/c/words/8).

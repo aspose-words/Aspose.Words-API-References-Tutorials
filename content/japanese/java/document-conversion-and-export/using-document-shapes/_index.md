@@ -14,13 +14,13 @@ url: /ja/java/document-conversion-and-export/using-document-shapes/
 
 ## ドキュメントシェイプを使い始める
 
-コードに入る前に、環境を設定しましょう。プロジェクトにAspose.Words for Javaが統合されていることを確認してください。まだ統合されていない場合は、AsposeのWebサイトからダウンロードできます。[Aspose.Words for Java をダウンロード](https://releases.aspose.com/words/java/)
+コードに進む前に、環境を設定しましょう。プロジェクトにAspose.Words for Javaが統合されていることを確認してください。まだ統合されていない場合は、AsposeのWebサイトからダウンロードできます。[Aspose.Words for Java をダウンロード](https://releases.aspose.com/words/java/)
 
 ## ドキュメントに図形を追加する
 
 ### グループシェイプの挿入
 
-あ`GroupShape`複数の図形をグループ化することができます。ここでは、図形を作成して挿入する方法を説明します。`GroupShape`:
+あ`GroupShape`複数の図形をグループ化することができます。グループを作成して挿入する方法は次のとおりです。`GroupShape`:
 
 ```java
 Document doc = new Document();
@@ -52,7 +52,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 
 ### テキストボックス図形の挿入
 
-テキストボックス図形を挿入するには、`insertShape`以下の例に示す方法を使用します。
+テキストボックス図形を挿入するには、`insertShape`以下の例に示すように、メソッドを使用します。
 
 ```java
 Document doc = new Document();

@@ -31,7 +31,7 @@ Teraz, gdy skonfigurowaliśmy opcje ładowania, możemy załadować dokument za 
 Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 ```
 
-W tym przykładzie ładujemy dokument „Zakodowany w UTF-7.txt” znajdujący się w katalogu dokumentów, korzystając z określonych opcji ładowania.
+tym przykładzie ładujemy dokument „Zakodowany w UTF-7.txt” znajdujący się w katalogu dokumentów, korzystając z określonych opcji ładowania.
 
 ### Przykładowy kod źródłowy dla LoadOptions z funkcją „Load With Encoding” przy użyciu Aspose.Words dla .NET
 
@@ -48,7 +48,7 @@ Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 
 ## Wniosek
 
-tym przewodniku wyjaśniliśmy, jak załadować dokument tekstowy z określonym kodowaniem przy użyciu biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Ładowanie dokumentów tekstowych z odpowiednim kodowaniem zapewnia poprawne i dokładne odczytanie treści w Twojej aplikacji.
+W tym przewodniku wyjaśniliśmy, jak załadować dokument tekstowy z określonym kodowaniem przy użyciu biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Ładowanie dokumentów tekstowych z odpowiednim kodowaniem zapewnia poprawne i dokładne odczytanie treści w Twojej aplikacji.
 
 
 ### Często zadawane pytania

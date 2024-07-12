@@ -30,7 +30,7 @@ A lo largo de esta serie de tutoriales, lo guiaremos a través de una variedad d
 - Protección de documentos: aprenda cómo proteger documentos con permisos y protección con contraseña.
 - Exportación y conversión: explore opciones para exportar documentos a varios formatos y plataformas.
 
-Al final de esta serie, poseerá las habilidades para crear documentos visualmente atractivos y bien estructurados con configuraciones personalizadas que se alineen con sus requisitos específicos.
+Al final de esta serie, poseerá las habilidades para crear documentos bien estructurados y visualmente atractivos con configuraciones personalizadas que se alineen con sus requisitos específicos.
 
 ## Tutoriales de configuración y opciones de documentos
 ### [Técnicas avanzadas para unir y anexar documentos](./join-append-documents/)
@@ -38,6 +38,6 @@ Aprenda técnicas avanzadas para fusionar y agregar documentos usando Aspose.Wor
 ### [Ajuste de las opciones y configuraciones del documento para lograr eficiencia](./manage-document-options-settings/)
 Aprenda cómo manipular eficientemente documentos de Word usando Aspose.Words para Python. Guía paso a paso con código fuente.
 ### [Propiedades de documentos y gestión de metadatos](./document-properties-metadata/)
-Aprenda a administrar las propiedades y los metadatos de los documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente.
+Aprenda a administrar las propiedades y los metadatos de los documentos usando Aspose.Words para Python. Guía paso a paso con código fuente.
 ### [Ampliación de la funcionalidad del documento con extensiones web](./document-functionality-web-extensions/)
 Aprenda cómo ampliar la funcionalidad de los documentos con extensiones web usando Aspose.Words para Python. Guía paso a paso con código fuente para una integración perfecta.

@@ -158,7 +158,7 @@ Aspose.Words for .NET 是一个功能强大的库，用于以编程方式操作 
 是的，您可以修改回调处理程序，通过迭代文档集合来处理多个插入。
 
 ### 有免费试用吗？
-当然！你可以从下载免费试用版[这里](https://releases.aspose.com/).
+当然！你可以从[这里](https://releases.aspose.com/).
 
 ### 如何获得 Aspose.Words 的支持？
 您可以通过访问获得支持[Aspose.Words 论坛](https://forum.aspose.com/c/words/8).

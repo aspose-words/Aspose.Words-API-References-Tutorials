@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Passaggio 3: aggiorna il layout della pagina
 
- Chiama il`UpdatePageLayout` metodo. Ciò esegue il rendering del documento in memoria e acquisisce eventuali avvisi che si verificano durante il rendering.
+ Chiama il`UpdatePageLayout`metodo. Ciò esegue il rendering del documento in memoria e acquisisce eventuali avvisi che si verificano durante il rendering.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ No, puoi specificare solo un carattere predefinito per la sostituzione. Tuttavia
 
 ###  Q3: Posso gestire altri tipi di avvisi con`IWarningCallback`?
 
- Sì, il`IWarningCallback` l'interfaccia può gestire vari tipi di avvisi, non solo la sostituzione dei caratteri.
+ Sì, il`IWarningCallback`l'interfaccia può gestire vari tipi di avvisi, non solo la sostituzione dei caratteri.
 
 ### Q4: Dove posso trovare supporto per Aspose.Words?
 

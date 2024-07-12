@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. 북마크의 끝 부분이 아닌 시작 부분으로 이동할 수 있나요?
 
- 전적으로! 그냥 설정하세요`isBookmarkStart` 매개변수`true` 그리고`isBookmarkEnd` 에게`false` 에서`MoveToBookmark` 방법.
+ 전적으로! 그냥 설정하세요`isBookmarkStart` 매개변수`true`그리고`isBookmarkEnd` 에게`false` 에서`MoveToBookmark` 방법.
 
 ### 2. 북마크 이름이 올바르지 않으면 어떻게 되나요?
 

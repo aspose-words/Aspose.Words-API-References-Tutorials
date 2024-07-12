@@ -2,120 +2,133 @@
 title: Aree modificabili illimitate nel documento Word
 linktitle: Aree modificabili illimitate nel documento Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come creare aree modificabili senza restrizioni in un documento Word con Aspose.Words per .NET.
+description: Scopri come creare aree modificabili senza restrizioni in un documento Word utilizzando Aspose.Words per .NET con questa guida passo passo completa.
 type: docs
 weight: 10
 url: /it/net/document-protection/unrestricted-editable-regions/
 ---
-In questo tutorial, ti guideremo attraverso i passaggi per utilizzare la funzionalità delle aree modificabili senza restrizioni di Aspose.Words per .NET. Questa funzionalità consente di definire aree in un documento di Word in cui il contenuto può essere modificato senza restrizioni, anche se il resto del documento è di sola lettura. Seguire i passaggi seguenti:
+## introduzione
 
-## Passaggio 1: caricamento del documento e impostazione della protezione
+Se hai sempre desiderato proteggere un documento Word ma consentire comunque che alcune parti siano modificabili, sei nel posto giusto! Questa guida ti guiderà attraverso il processo di impostazione di aree modificabili senza restrizioni in un documento Word utilizzando Aspose.Words per .NET. Copriremo tutto, dai prerequisiti ai passaggi dettagliati, assicurandoti un'esperienza fluida. Pronto? Immergiamoci!
 
-Inizia caricando il documento esistente:
+## Prerequisiti
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+Prima di iniziare, assicurati di avere quanto segue:
 
-Proteggi il documento impostando il tipo di protezione e la password di sola lettura
+1.  Aspose.Words per .NET: se non l'hai già fatto, scaricalo[Qui](https://releases.aspose.com/words/net/).
+2.  Una licenza Aspose valida: puoi ottenere una licenza temporanea[Qui](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio: qualsiasi versione recente dovrebbe funzionare correttamente.
+4. Conoscenza di base di C# e .NET: questo ti aiuterà a seguire il codice.
 
-## Passaggio 2: creazione di un'area modificabile
+Ora che è tutto pronto, passiamo alla parte divertente!
 
-Inizia creando un'area modificabile utilizzando gli oggetti EditableRangeStart e EditableRangeEnd:
+## Importa spazi dei nomi
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Viene creato un oggetto EditableRange per EditableRangeStart appena creato.
-EditableRange editableRange = edRangeStart.EditableRange;
-
-// Inserisci qualcosa all'interno dell'intervallo modificabile.
-builder.Writeln("Paragraph inside first editable range");
-
-// Un intervallo modificabile è ben formato se ha un inizio e una fine.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## Passaggio 3: aggiungi contenuti al di fuori delle aree modificabili
-
-Puoi aggiungere contenuti al di fuori delle aree modificabili, che rimarranno di sola lettura:
+Per iniziare a utilizzare Aspose.Words per .NET, dovrai importare gli spazi dei nomi necessari. Ecco come puoi farlo:
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## Passaggio 4: salva il documento
+## Passaggio 1: impostazione del progetto
 
-Infine, salva il documento modificato:
+Per prima cosa, creiamo un nuovo progetto C# in Visual Studio.
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. Apri Visual Studio: inizia aprendo Visual Studio e creando un nuovo progetto di app console.
+2. Installare Aspose.Words: utilizzare Gestione pacchetti NuGet per installare Aspose.Words. Puoi farlo eseguendo il comando seguente nella Console di gestione pacchetti:
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-Assicurati di specificare il percorso e il nome file corretti per salvare il documento con aree modificabili.
+## Passaggio 2: caricamento del documento
 
-### Codice sorgente di esempio per regioni modificabili senza restrizioni utilizzando Aspose.Words per .NET
+Ora carichiamo il documento che desideri proteggere. Assicurati di avere un documento Word pronto nella tua directory.
 
-Ecco il codice sorgente completo per le aree modificabili senza restrizioni utilizzando Aspose.Words per .NET:
+1. Imposta la directory dei documenti: definisce il percorso della directory dei documenti.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  Caricare il documento: utilizzare il file`Document` class per caricare il tuo documento Word.
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-// Il percorso della directory dei documenti.
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Carica un documento e rendilo di sola lettura.
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Passaggio 3: protezione del documento
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+Successivamente, imposteremo il documento in sola lettura. Ciò garantirà che nessuna modifica possa essere apportata senza la password.
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1.  Inizializza DocumentBuilder: crea un'istanza di`DocumentBuilder` per apportare modifiche al documento.
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. Imposta livello di protezione: protegge il documento utilizzando una password.
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. Aggiungi testo di sola lettura: inserisci il testo che sarà di sola lettura.
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-// Inizia un intervallo modificabile.
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Viene creato un oggetto EditableRange per EditableRangeStart appena creato.
-EditableRange editableRange = edRangeStart.EditableRange;
+## Passaggio 4: creazione di intervalli modificabili
 
-// Inserisci qualcosa all'interno dell'intervallo modificabile.
-builder.Writeln("Paragraph inside first editable range");
+Ecco dove avviene la magia. Creeremo sezioni nel documento che possono essere modificate nonostante la protezione generale di sola lettura.
 
-// Un intervallo modificabile è ben formato se ha un inizio e una fine.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. Inizio intervallo modificabile: definire l'inizio dell'intervallo modificabile.
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2.  Crea oggetto intervallo modificabile: An`EditableRange` l'oggetto verrà creato automaticamente.
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. Inserisci testo modificabile: aggiungi testo all'interno dell'intervallo modificabile.
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## Passaggio 5: chiusura dell'intervallo modificabile
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+Un intervallo modificabile non è completo senza fine. Aggiungiamolo dopo.
 
-```
-Seguendo questi passaggi, puoi facilmente creare aree modificabili senza restrizioni nel tuo documento Word con Aspose.Words per .NET.
+1. Fine intervallo modificabile: definire la fine dell'intervallo modificabile.
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. Aggiungi testo di sola lettura fuori dall'intervallo: inserisci testo fuori dall'intervallo modificabile per dimostrare la protezione.
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## Passaggio 6: salvataggio del documento
+
+Infine, salviamo il documento con la protezione applicata e le aree modificabili.
+
+1.  Salvare il documento: utilizzare il file`Save` metodo per salvare il documento modificato.
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come creare aree modificabili senza restrizioni in un documento Word utilizzando Aspose.Words per .NET. Seguendo i passaggi forniti, puoi definire aree specifiche all'interno del documento in cui gli utenti possono modificare liberamente il contenuto mantenendo il resto del documento di sola lettura. Aspose.Words per .NET offre potenti funzionalità per la protezione e la personalizzazione dei documenti, fornendoti il controllo sulle capacità di modifica dei tuoi documenti Word.
 
-### Domande frequenti sulle aree modificabili senza restrizioni nel documento Word
+il gioco è fatto! Hai creato con successo aree modificabili senza restrizioni in un documento Word utilizzando Aspose.Words per .NET. Questa funzionalità è incredibilmente utile per gli ambienti collaborativi in cui alcune parti di un documento devono rimanere invariate mentre altre possono essere modificate. 
 
-#### D: Quali sono le aree modificabili senza restrizioni in Aspose.Words per .NET?
+ Sperimenta scenari più complessi e diversi livelli di protezione per ottenere il massimo da Aspose.Words. Se hai domande o riscontri problemi, non esitare a consultare il[documentazione](https://reference.aspose.com/words/net/) o contattare[supporto](https://forum.aspose.com/c/words/8).
 
-R: Le aree modificabili senza restrizioni in Aspose.Words per .NET sono aree all'interno di un documento Word in cui il contenuto può essere modificato senza alcuna restrizione, anche se il resto del documento è impostato come di sola lettura. Queste aree forniscono un modo per definire parti specifiche del documento che gli utenti possono modificare mantenendo la protezione generale del documento.
+## Domande frequenti
 
-#### D: Come posso creare regioni modificabili senza restrizioni utilizzando Aspose.Words per .NET?
+### Posso avere più aree modificabili in un unico documento?
+Sì, puoi creare più aree modificabili iniziando e terminando gli intervalli modificabili in parti diverse del documento.
 
-R: Per creare aree modificabili senza restrizioni in un documento Word utilizzando Aspose.Words per .NET, puoi seguire questi passaggi:
-1.  Caricare il documento esistente utilizzando il file`Document` classe.
-2.  Imposta la protezione del documento su sola lettura utilizzando il file`Protect` metodo del`Document` oggetto.
-3.  Usa il`DocumentBuilder` classe per creare un intervallo modificabile aggiungendo un file`EditableRangeStart` oggetto e un`EditableRangeEnd` oggetto.
-4.  Aggiungi contenuto all'interno dell'intervallo modificabile utilizzando il file`DocumentBuilder`.
-5.  Salvare il documento modificato utilizzando il file`Save` metodo del`Document` oggetto.
+### Quali altri tipi di protezione sono disponibili in Aspose.Words?
+Aspose.Words supporta vari tipi di protezione come EnableOnlyComments, EnableOnlyFormFields e NoProtection.
 
-#### D: Posso avere più aree modificabili senza restrizioni in un documento Word?
+### È possibile rimuovere la protezione da un documento?
+ Sì, puoi rimuovere la protezione utilizzando il file`Unprotect` metodo e fornendo la password corretta.
 
-R: Sì, puoi avere più aree modificabili senza restrizioni in un documento Word. Per raggiungere questo obiettivo, è possibile creare più set di`EditableRangeStart` E`EditableRangeEnd` oggetti utilizzando il`DocumentBuilder` classe. Ogni set di oggetti definirà un'area modificabile separata in cui gli utenti potranno modificare il contenuto senza alcuna restrizione.
+### Posso specificare password diverse per sezioni diverse?
+No, la protezione a livello di documento applica un'unica password per l'intero documento.
 
-#### D: Posso annidare regioni modificabili l'una nell'altra?
-
- R: No, non è possibile annidare regioni modificabili l'una nell'altra utilizzando Aspose.Words per .NET. Ciascuna regione modificabile definita da un`EditableRangeStart` E`EditableRangeEnd` la coppia deve essere indipendente e non sovrapporsi o essere nidificata all'interno di un'altra regione modificabile. Le aree modificabili nidificate non sono supportate.
-
-#### D: Posso rimuovere la protezione di sola lettura dal documento all'interno di un'area modificabile?
-
-R: No, non è possibile rimuovere la protezione di sola lettura dal documento all'interno di un'area modificabile. La protezione di sola lettura viene applicata all'intero documento e non può essere rimossa selettivamente all'interno di specifiche aree modificabili. Lo scopo delle aree modificabili è consentire la modifica del contenuto mantenendo il documento complessivo di sola lettura.
+### Come posso applicare una licenza per Aspose.Words?
+È possibile applicare una licenza caricandola da un file o da un flusso. Controlla la documentazione per i passaggi dettagliati.

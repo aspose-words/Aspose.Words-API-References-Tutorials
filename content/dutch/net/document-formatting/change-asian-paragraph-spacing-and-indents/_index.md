@@ -77,7 +77,7 @@ format.LineUnitAfter = 10;  // ParagraphFormat.SpaceAfter wordt bijgewerkt
 
 Door de regeleenheid ervoor en erna in te stellen op respectievelijk 5 en 10 eenheden, zorgt u ervoor dat er voldoende ruimte tussen de alinea's is, waardoor het document beter leesbaar wordt.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte moeten we, nadat we al deze aanpassingen hebben aangebracht, het gewijzigde document opslaan.
 

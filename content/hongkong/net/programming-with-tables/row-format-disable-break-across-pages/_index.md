@@ -34,7 +34,7 @@ Document doc = new Document(dataDir + "Table spanning two pages.docx");
 //檢索表
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
-//停用表中所有行的換行符
+//禁用表中所有行的換行符
 foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```

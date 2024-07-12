@@ -68,6 +68,6 @@ if (textBox1.IsValidLinkTarget(textBox2))
 
 答：是的，使用 .NET 的 Aspose.Words 函式庫，可以在不同元素（例如段落、表格、圖像等）之間建立連結。
 
-#### Q：使用 Aspose.Words for .NET 還可以在 Word 中的文字方塊中新增哪些其他功能？
+#### Q：使用 Aspose.Words for .NET 也可以為 Word 中的文字方塊新增哪些其他功能？
 
 答：使用 Aspose.Words for .NET，您可以為文字方塊新增許多其他功能，例如文字格式設定、新增圖像、變更樣式等。

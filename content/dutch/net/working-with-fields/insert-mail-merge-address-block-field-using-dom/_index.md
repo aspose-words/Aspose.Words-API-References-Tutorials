@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### Vraag: Hoe kan ik de brongegevens voor het postadresveld in Aspose.Words voor .NET opgeven?
 
- A: Om de brongegevens voor het postadresveld in Aspose.Words voor .NET op te geven, kunt u de`FieldAddressBlock.StartAddress` En`FieldAddressBlock.EndAddress` eigenschappen. Deze eigenschappen worden gebruikt om de adresbereiken in de externe gegevensbron te definiëren, zoals een CSV-bestand, database, enz.
+ A: Om de brongegevens voor het postadresveld in Aspose.Words voor .NET op te geven, kunt u de`FieldAddressBlock.StartAddress`En`FieldAddressBlock.EndAddress` eigenschappen. Deze eigenschappen worden gebruikt om de adresbereiken in de externe gegevensbron te definiëren, zoals een CSV-bestand, database, enz.
 
 #### Vraag: Kan ik optionele elementen opnemen in het postadresveld met Aspose.Words voor .NET?
 

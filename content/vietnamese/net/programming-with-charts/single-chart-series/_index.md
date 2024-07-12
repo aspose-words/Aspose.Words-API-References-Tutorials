@@ -2,119 +2,123 @@
 title: Tùy chỉnh chuỗi biểu đồ đơn trong biểu đồ
 linktitle: Tùy chỉnh chuỗi biểu đồ đơn trong biểu đồ
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tùy chỉnh chuỗi biểu đồ đơn lẻ trong biểu đồ bằng Aspose.Words for .NET.
+description: Tìm hiểu cách tùy chỉnh chuỗi biểu đồ đơn lẻ trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để có trải nghiệm liền mạch.
 type: docs
 weight: 10
 url: /vi/net/programming-with-charts/single-chart-series/
 ---
+## Giới thiệu
 
-Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để tùy chỉnh chuỗi biểu đồ đơn lẻ trong biểu đồ. Mã nguồn được cung cấp trình bày cách tạo biểu đồ, truy cập các chuỗi cụ thể và sửa đổi các thuộc tính của chúng.
+Này! Bạn đã bao giờ muốn làm nổi bật tài liệu Word của mình bằng một số biểu đồ hấp dẫn chưa? Vâng, bạn đang ở đúng nơi! Hôm nay, chúng ta sẽ đi sâu vào thế giới Aspose.Words dành cho .NET để tùy chỉnh các chuỗi biểu đồ đơn lẻ trong biểu đồ. Cho dù bạn là một chuyên gia dày dạn kinh nghiệm hay chỉ mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn từng bước toàn bộ quá trình. Vì vậy, hãy thắt dây an toàn và bắt đầu lập biểu đồ!
 
-## Bước 1: Thiết lập dự án
+## Điều kiện tiên quyết
 
-Đảm bảo rằng bạn có các điều kiện tiên quyết sau:
+Trước khi bắt đầu, hãy đảm bảo rằng chúng ta có mọi thứ mình cần. Dưới đây là danh sách kiểm tra nhanh:
 
-- Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
-- Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
+1.  Thư viện Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+2. Visual Studio: Bất kỳ phiên bản gần đây nào cũng có thể thực hiện được thủ thuật này.
+3. Hiểu biết cơ bản về C#: Không có gì quá cầu kỳ, chỉ cần những kiến thức cơ bản là đủ.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
+## Nhập không gian tên
 
- Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
+Trước tiên, chúng ta cần nhập các không gian tên cần thiết. Điều này giống như việc chuẩn bị sân khấu trước một buổi biểu diễn lớn.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Bước 1: Thiết lập tài liệu của bạn
+
+Hãy bắt đầu bằng cách thiết lập một tài liệu Word mới. Đây là nơi tất cả các phép thuật sẽ xảy ra.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Đường dẫn đến thư mục tài liệu của bạn
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tiếp theo, sử dụng`InsertChart` phương pháp của`DocumentBuilder` để chèn biểu đồ đường vào tài liệu.
+## Bước 2: Chèn biểu đồ
+
+Tiếp theo, chúng tôi sẽ chèn biểu đồ dạng đường vào tài liệu của mình. Hãy coi điều này giống như việc thêm một khung vẽ nơi chúng ta sẽ vẽ kiệt tác của mình.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Bước 3: Truy cập và tùy chỉnh chuỗi biểu đồ
+## Bước 3: Truy cập chuỗi biểu đồ
 
- Để sửa đổi chuỗi biểu đồ đơn lẻ, bạn cần truy cập vào`ChartSeries` các đối tượng của biểu đồ.
+Bây giờ, hãy truy cập vào chuỗi biểu đồ. Đây là nơi chúng ta sẽ bắt đầu tùy chỉnh.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
 ChartSeries series1 = chart.Series[1];
+```
 
+## Bước 4: Đổi tên chuỗi biểu đồ
+
+Hãy đặt cho chuỗi biểu đồ của chúng ta một số cái tên có ý nghĩa nhé. Điều này giống như dán nhãn cho cọ vẽ của bạn trước khi bắt đầu vẽ.
+
+```csharp
 series0.Name = "Chart Series Name 1";
 series1.Name = "Chart Series Name 2";
+```
 
+## Bước 5: Làm mịn các đường kẻ
+
+Bạn muốn những đường nét đó trông mịn màng và bóng mượt? Hãy thực hiện điều đó bằng cách sử dụng spline Catmull-Rom.
+
+```csharp
 series0.Smooth = true;
 series1.Smooth = true;
+```
 
+## Bước 6: Xử lý các giá trị âm
+
+Đôi khi, dữ liệu có thể âm. Hãy đảm bảo biểu đồ của chúng ta xử lý việc đó một cách khéo léo.
+
+```csharp
 series0.InvertIfNegative = true;
+```
+
+## Bước 7: Tùy chỉnh điểm đánh dấu
+
+Điểm đánh dấu giống như những chấm nhỏ trên đường kẻ của chúng ta. Hãy làm cho chúng nổi bật.
+
+```csharp
 series0.Marker.Symbol = MarkerSymbol.Circle;
 series0.Marker.Size = 15;
-
 series1.Marker.Symbol = MarkerSymbol.Star;
 series1.Marker.Size = 10;
 ```
 
-## Bước 4: Lưu tài liệu
+## Bước 8: Lưu tài liệu của bạn
 
- Cuối cùng, lưu tài liệu vào thư mục đã chỉ định bằng cách sử dụng lệnh`Save` phương pháp của`Document` sự vật.
+Cuối cùng, hãy lưu tài liệu của chúng tôi. Đây là nơi chúng tôi ngưỡng mộ công việc của mình.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 ```
 
-Điều này hoàn tất việc triển khai tùy chỉnh một chuỗi biểu đồ bằng Aspose.Words cho .NET.
-
-### Mã nguồn mẫu cho Chuỗi biểu đồ đơn sử dụng Aspose.Words for .NET 
-
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = chart.Series[0];
-	ChartSeries series1 = chart.Series[1];
-	series0.Name = "Chart Series Name 1";
-	series1.Name = "Chart Series Name 2";
-	// Bạn cũng có thể chỉ định xem đường nối các điểm trên biểu đồ có được làm mịn hay không bằng cách sử dụng các đường nối Catmull-Rom.
-	series0.Smooth = true;
-	series1.Smooth = true;
-	// Chỉ định xem theo mặc định, phần tử cha có đảo ngược màu của nó hay không nếu giá trị âm.
-	series0.InvertIfNegative = true;
-	series0.Marker.Symbol = MarkerSymbol.Circle;
-	series0.Marker.Size = 15;
-	series1.Marker.Symbol = MarkerSymbol.Star;
-	series1.Marker.Size = 10;
-	doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
-```
-
 ## Phần kết luận
 
-Trong hướng dẫn này, bạn đã học cách tùy chỉnh một chuỗi biểu đồ trong biểu đồ bằng Aspose.Words for .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, bạn có thể tạo tài liệu mới, chèn biểu đồ đường, truy cập chuỗi biểu đồ cụ thể và sửa đổi thuộc tính của chúng để đạt được tùy chỉnh mong muốn.
+Và bạn có nó rồi đấy! Bạn đã tùy chỉnh thành công một chuỗi biểu đồ trong tài liệu Word bằng Aspose.Words for .NET. Khá tuyệt phải không? Đây chỉ là đỉnh của tảng băng trôi; còn rất nhiều điều bạn có thể làm với Aspose.Words. Vì vậy, hãy tiếp tục thử nghiệm và tạo ra những tài liệu tuyệt vời!
 
-Aspose.Words for .NET cung cấp các tính năng mạnh mẽ để thao tác biểu đồ trong tài liệu Word. Bằng cách truy cập vào từng chuỗi biểu đồ riêng lẻ, bạn có thể áp dụng các sửa đổi cụ thể để tùy chỉnh giao diện và hành vi của chúng. Điều này cho phép bạn thay đổi tên chuỗi, cho phép làm mịn đường biểu đồ, tùy chỉnh điểm đánh dấu cho điểm dữ liệu, đảo ngược màu cho giá trị âm, v.v. để nâng cao khả năng trình bày trực quan cho biểu đồ của bạn.
+## Câu hỏi thường gặp
 
-Việc tùy chỉnh một chuỗi biểu đồ giúp bạn linh hoạt làm nổi bật dữ liệu cụ thể hoặc nhấn mạnh các xu hướng cụ thể trong biểu đồ của mình. Với Aspose.Words for .NET, bạn có thể dễ dàng truy cập và sửa đổi các thuộc tính chuỗi biểu đồ, cho phép bạn tạo các biểu đồ giàu thông tin và hấp dẫn về mặt trực quan trong tài liệu Word của mình.
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ cho phép bạn tạo, chỉnh sửa, chuyển đổi và thao tác với tài liệu Word theo chương trình.
 
-### Câu hỏi thường gặp
+### Tôi có thể sử dụng Aspose.Words miễn phí không?
+ Có, bạn có thể bắt đầu bằng một[dùng thử miễn phí](https://releases.aspose.com/).
 
-#### Q1. Tôi có thể tùy chỉnh nhiều chuỗi biểu đồ trong một biểu đồ không?
- Có, bạn có thể tùy chỉnh nhiều chuỗi biểu đồ trong biểu đồ bằng Aspose.Words for .NET. Bằng cách truy cập vào`ChartSeries`các đối tượng trong biểu đồ, bạn có thể chọn và sửa đổi nhiều chuỗi dựa trên chỉ số hoặc tiêu chí cụ thể của chúng. Sử dụng vòng lặp hoặc các bài tập riêng lẻ để sửa đổi các thuộc tính mong muốn cho từng chuỗi biểu đồ. Bằng cách này, bạn có thể áp dụng các tùy chỉnh khác nhau cho nhiều chuỗi trong cùng một biểu đồ.
+### Làm cách nào để nhận được hỗ trợ cho Aspose.Words?
+ Bạn có thể nhận được hỗ trợ từ cộng đồng Aspose trên[diễn đàn](https://forum.aspose.com/c/words/8).
 
-#### Q2. Làm cách nào để thay đổi tên của một chuỗi biểu đồ?
- Để thay đổi tên của chuỗi biểu đồ trong biểu đồ bằng Aspose.Words cho .NET, bạn cần truy cập vào`Name` tài sản của`ChartSeries` đối tượng và đặt nó thành tên mong muốn. Tên chuỗi thường được hiển thị trong chú giải biểu đồ hoặc nhãn dữ liệu, cung cấp nhãn mô tả cho chuỗi. Bằng cách sửa đổi tên chuỗi, bạn có thể cung cấp các tên có ý nghĩa phản ánh dữ liệu được biểu thị bằng mỗi chuỗi.
+### Có thể tùy chỉnh các loại biểu đồ khác?
+Tuyệt đối! Aspose.Words hỗ trợ nhiều loại biểu đồ khác nhau như biểu đồ thanh, hình tròn và biểu đồ phân tán.
 
-#### Q3. Làm mịn chuỗi biểu đồ là gì?
-Làm mịn chuỗi biểu đồ là một kỹ thuật nâng cao hình ảnh cho phép bạn tạo một đường thẳng nối các điểm trên biểu đồ. Nó áp dụng một thuật toán làm mịn, chẳng hạn như các đường trục Catmull-Rom, để nội suy giữa các điểm dữ liệu và tạo ra một đường cong trực quan đẹp mắt. Để bật làm mịn chuỗi trong biểu đồ bằng Aspose.Words cho .NET, hãy truy cập`Smooth` tài sản của`ChartSeries` đối tượng và đặt nó thành`true`. Làm mịn có thể hữu ích để hiển thị các xu hướng hoặc mẫu trong dữ liệu có biến động không đều.
-
-#### Q4. Làm cách nào tôi có thể tùy chỉnh điểm đánh dấu cho các điểm dữ liệu trong chuỗi biểu đồ?
- Để tùy chỉnh điểm đánh dấu cho các điểm dữ liệu trong chuỗi biểu đồ bằng Aspose.Words cho .NET, bạn cần truy cập vào`Marker` tài sản của`ChartSeries` đối tượng và sửa đổi các thuộc tính của nó như`Symbol` Và`Size`. Điểm đánh dấu là các chỉ báo trực quan được đặt trên biểu đồ để thể hiện các điểm dữ liệu riêng lẻ. Bạn có thể chọn từ nhiều ký hiệu đánh dấu tích hợp sẵn và điều chỉnh kích thước của chúng để làm nổi bật hoặc phân biệt các điểm dữ liệu cụ thể trong chuỗi.
-
-#### Q5. Tôi có thể đảo ngược màu cho các giá trị âm trong chuỗi biểu đồ không?
- Có, bạn có thể đảo ngược màu cho các giá trị âm trong chuỗi biểu đồ bằng Aspose.Words for .NET. Bằng cách thiết lập`InvertIfNegative` tài sản của`ChartSeries` chủ đề`true`, màu sắc của các điểm dữ liệu có giá trị âm sẽ bị đảo ngược, khiến chúng khác biệt về mặt trực quan với các giá trị dương. Tính năng này có thể hữu ích khi so sánh các giá trị dương và âm trong một chuỗi biểu đồ, cung cấp sự khác biệt rõ ràng giữa hai giá trị này.
+### Tôi có thể tìm thêm tài liệu ở đâu?
+ Kiểm tra[tài liệu](https://reference.aspose.com/words/net/) để biết thêm hướng dẫn và ví dụ chi tiết.

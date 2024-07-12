@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 ```
 
 ## Conclusie
-Gefeliciteerd! U hebt met succes geleerd hoe u reactieantwoorden in een Word-document kunt toevoegen en verwijderen met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu reacties op reacties beheren en aanpassen aan uw vereisten.
+Gefeliciteerd! U hebt met succes geleerd hoe u reactieantwoorden in een Word-document kunt toevoegen en verwijderen met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu reacties op reacties beheren en deze aanpassen aan uw vereisten.
 
 Reactieantwoorden maken gezamenlijke discussies en feedback binnen een document mogelijk. Experimenteer met verschillende antwoordauteurs, initialen, datums en teksten om de samenwerking en communicatie binnen uw documenten te verbeteren.
 

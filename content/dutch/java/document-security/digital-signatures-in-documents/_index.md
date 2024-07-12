@@ -81,7 +81,7 @@ Een digitale handtekening is een cryptografische techniek die de authenticiteit 
 
 ### Kan ik een zelfondertekend certificaat gebruiken voor digitale handtekeningen?
 
-Ja, u kunt een zelfondertekend certificaat gebruiken, maar dit biedt mogelijk niet hetzelfde vertrouwensniveau als een certificaat van een vertrouwde certificeringsinstantie (CA).
+Ja, u kunt een zelfondertekend certificaat gebruiken, maar het biedt mogelijk niet hetzelfde vertrouwensniveau als een certificaat van een vertrouwde certificeringsinstantie (CA).
 
 ### Is Aspose.Words voor Java compatibel met andere documentformaten?
 

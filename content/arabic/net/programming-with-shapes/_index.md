@@ -23,5 +23,5 @@ url: /ar/net/programming-with-shapes/
 | [إضافة زوايا مقطوعة](./add-corners-snipped/) | تعرف على كيفية إضافة شكل بزوايا مقصوصة إلى مستند Word باستخدام Aspose.Words لـ .NET. |
 | [احصل على نقاط حدود الشكل الفعلية](./get-actual-shape-bounds-points/) | تعرف على كيفية استرداد الحدود الفعلية للشكل بالنقاط (وحدة القياس) في مستند Word باستخدام Aspose.Words for .NET. |
 | [مرساة عمودية](./vertical-anchor/) | تعرف على كيفية وضع الشكل عموديًا داخل المستند باستخدام ميزة الارتساء الرأسي في Aspose.Words for .NET.|
-| [كشف الشكل الفني الذكي](./detect-smart-art-shape/) | تعرف على كيفية اكتشاف أشكال Smart Art في مستند Word باستخدام Aspose.Words لـ .NET، وتحديد التمثيلات الرسومية. |
+| [كشف الشكل الفني الذكي](./detect-smart-art-shape/) | تعرف على كيفية اكتشاف أشكال Smart Art في مستند Word باستخدام Aspose.Words for .NET، وتحديد التمثيلات الرسومية. |
 | [تحديث الرسم الفني الذكي](./update-smart-art-drawing/) | تعرف على كيفية تحديث رسم Smart Art في مستند Word باستخدام Aspose.Words لـ .NET. |

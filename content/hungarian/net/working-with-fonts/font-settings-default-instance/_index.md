@@ -17,7 +17,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
 - Alapvető C# ismerete: A C# programozás ismerete segít a lépések megértésében és zökkenőmentes végrehajtásában.
 -  Aspose.Words for .NET Library: Töltse le és telepítse az Aspose.Words for .NET programot a[letöltési link](https://releases.aspose.com/words/net/).
 - Fejlesztési környezet: Megfelelő környezet, például a Visual Studio a kód írásához és végrehajtásához.
--  Dokumentumminta: Egy mintadokumentum (pl.`Rendering.docx`) a betűtípus-beállítások alkalmazásához.
+- Dokumentumminta: Egy mintadokumentum (pl.`Rendering.docx`) a betűtípus-beállítások alkalmazásához.
 
 ## Névterek importálása
 
@@ -55,7 +55,7 @@ Ebben a példában:
 
 ## 3. lépés: Töltse be a dokumentumot
 
-Ha beállította a fontforrásokat, a következő lépés a dokumentum betöltése egy Aspose.Words fájlba`Document` tárgy. Ez lehetővé teszi a dokumentum kezelését és végül mentését.
+ Ha beállította a fontforrásokat, a következő lépés a dokumentum betöltése egy Aspose.Words fájlba`Document`tárgy. Ez lehetővé teszi a dokumentum kezelését és végül mentését.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Gratulálunk! Elsajátította a betűtípus-beállítások kezelésének alapjai
 
 ### 1. kérdés: Használhatok betűtípusokat több egyéni mappából?
 
- Igen, több is megadható`FolderFontSource`példányok a`SetFontsSources` módszer a különböző mappákból származó betűtípusok felvételére.
+ Igen, több is megadható`FolderFontSource` példányok a`SetFontsSources` módszer a különböző mappákból származó betűtípusok felvételére.
 
 ### 2. kérdés: Hogyan szerezhetem be az Aspose.Words .NET ingyenes próbaverzióját?
 

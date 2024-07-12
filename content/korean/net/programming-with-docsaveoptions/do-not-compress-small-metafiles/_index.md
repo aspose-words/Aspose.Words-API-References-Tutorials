@@ -2,91 +2,104 @@
 title: 작은 메타파일을 압축하지 마세요
 linktitle: 작은 메타파일을 압축하지 마세요
 second_title: Aspose.Words 문서 처리 API
-description: 문서를 저장할 때 작은 메타파일 압축 안 함 기능을 활성화하기 위해 .NET용 Aspose.Words를 사용하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 Word 문서의 작은 메타파일이 압축되지 않도록 하고 품질과 무결성을 유지하는 방법을 알아보세요. 단계별 가이드가 포함되어 있습니다.
 type: docs
 weight: 10
 url: /ko/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
+## 소개
 
-문서의 메타데이터를 압축하는 것은 C# 애플리케이션에서 파일을 단어 처리할 때 일반적인 기능입니다. 그러나 품질을 유지하기 위해 작은 파일의 메타데이터를 압축하지 않아도 될 수 있습니다. 이 단계별 가이드에서는 .NET용 Aspose.Words의 C# 소스 코드를 사용하여 문서 저장 옵션에서 "작은 메타파일 압축 안 함" 기능을 활성화하는 방법을 보여줍니다.
+문서 처리 영역에서 파일 저장 방법을 최적화하면 파일의 품질과 유용성을 크게 향상시킬 수 있습니다. Aspose.Words for .NET은 Word 문서를 정확하게 저장할 수 있도록 다양한 기능을 제공합니다. 이러한 기능 중 하나는 "작은 메타파일을 압축하지 않음" 옵션입니다. 이 튜토리얼에서는 이 기능을 활용하여 Word 문서에서 메타파일의 무결성을 유지하는 과정을 안내합니다. 뛰어들어보자!
 
-## Aspose.Words 라이브러리 이해
+## 전제조건
 
-코드를 살펴보기 전에 .NET용 Aspose.Words 라이브러리를 이해하는 것이 중요합니다. Aspose.Words는 .NET을 포함한 다양한 플랫폼에서 Word 문서를 생성, 편집, 변환 및 보호하는 강력한 라이브러리입니다. 텍스트 삽입, 서식 변경, 섹션 추가 등과 같은 문서 조작을 위한 다양한 기능을 제공합니다.
+시작하기 전에 다음 사항이 있는지 확인하세요.
 
-## 1단계: 문서 디렉터리 설정
+-  .NET용 Aspose.Words: 다음에서 최신 버전을 다운로드하고 설치하세요.[여기](https://releases.aspose.com/words/net/).
+- 개발 환경: Visual Studio 또는 기타 호환 가능한 IDE.
+- C#에 대한 기본 이해: C# 프로그래밍 언어 및 .NET 프레임워크에 대한 지식.
+-  Aspose 라이선스: Aspose.Words의 잠재력을 최대한 활용하려면[특허](https://purchase.aspose.com/buy) . 다음을 사용할 수도 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
-첫 번째 단계는 문서를 저장할 디렉터리를 정의하는 것입니다. 전체 디렉터리 경로를 지정해야 합니다. 예를 들어 :
+## 네임스페이스 가져오기
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-"YOUR DOCUMENTS DIRECTORY"를 문서 디렉토리의 실제 경로로 바꾸십시오.
-
-## 2단계: 섹션 및 텍스트 삽입
-
-그런 다음 문서에 섹션과 텍스트를 삽입할 수 있습니다. Aspose.Words에서 제공하는 DocumentBuilder 클래스를 사용하여 문서 콘텐츠를 빌드하세요. 다음은 간단한 예입니다.
+프로젝트에서 Aspose.Words를 사용하려면 필요한 네임스페이스를 가져와야 합니다. 코드 파일 시작 부분에 다음 줄을 추가합니다.
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Text added to a document.");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-이 예에서는 새 빈 문서를 만든 다음 DocumentBuilder를 사용하여 텍스트 줄을 추가합니다.
+이제 Aspose.Words for .NET의 "작은 메타파일 압축 안 함" 기능을 사용하는 프로세스를 분석해 보겠습니다. 쉽게 따라할 수 있도록 각 단계를 자세히 설명하겠습니다.
 
-## 3단계: 설정 옵션
+## 1단계: 문서 디렉토리 설정
 
-'등록
-
-이제 문서의 저장 옵션을 구성해 보겠습니다. DocSaveOptions 클래스를 사용하여 저장 설정을 지정합니다. 예를 들어 :
-
-```csharp
-DocSaveOptions saveOptions = new DocSaveOptions();
-```
-
-이 예에서는 저장 옵션을 설정하기 위해 새 DocSaveOptions 개체를 만듭니다.
-
-## 4단계: "작은 메타파일을 압축하지 않음" 기능 활성화
-
- "작은 메타파일을 압축하지 않음" 기능을 활성화하려면 다음을 설정해야 합니다.`Compliance` DocSaveOptions 개체의 속성을 값으로`PdfCompliance.PdfA1a`. 방법은 다음과 같습니다.
-
-```csharp
-saveOptions.Compliance = PdfCompliance.PdfA1a;
-```
-
-이 구성을 사용하면 문서를 저장할 때 작은 파일 메타데이터가 압축되지 않습니다.
-
-## 5단계: 문서 저장
-
-마지막으로 다음을 사용하여 문서를 저장할 수 있습니다.`Save` Document 클래스의 메소드 파일의 전체 경로와 원하는 파일 이름을 지정합니다. 예를 들어 :
-
-```csharp
-doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
-```
-
-"dataDir"을 문서 디렉토리 경로로 바꾸십시오.
-
-### .NET용 Aspose.Words를 사용하여 작은 메타파일을 압축하지 않음 기능을 갖춘 DocSaveOptions의 예제 소스 코드
+먼저 문서를 저장할 디렉터리를 지정해야 합니다. 이는 파일 경로를 효과적으로 관리하는 데 중요합니다.
 
 ```csharp
 // 문서 디렉터리 경로
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
-// 일부 텍스트가 포함된 두 섹션을 삽입합니다.
+ 바꾸다`"YOUR DOCUMENTS DIRECTORY"` 문서를 저장하려는 실제 경로를 사용하십시오.
+
+## 2단계: 새 문서 만들기
+
+다음으로 새 문서와 문서 작성기를 만들어 문서에 콘텐츠를 추가합니다.
+
+```csharp
+// 새 문서 만들기
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
+```
 
+ 여기서는`Document` 물건과 용도`DocumentBuilder` 텍스트를 추가하려면 그만큼`Writeln` 메서드는 문서에 텍스트 줄을 추가합니다.
+
+## 3단계: 저장 옵션 구성
+
+ 이제 "작은 메타파일 압축 안 함" 기능을 사용하도록 저장 옵션을 구성합니다. 이 작업은 다음을 사용하여 수행됩니다.`DocSaveOptions` 수업.
+
+```csharp
 // "작은 메타파일을 압축하지 않음" 기능으로 저장 옵션 구성
 DocSaveOptions saveOptions = new DocSaveOptions();
 saveOptions.Compliance = PdfCompliance.PdfA1a;
+```
 
+ 이 단계에서는`DocSaveOptions` 그리고 설정`Compliance`재산`PdfCompliance.PdfA1a`. 이렇게 하면 문서가 PDF/A-1a 표준을 준수하게 됩니다.
+
+## 4단계: 문서 저장
+
+마지막으로 작은 메타파일이 압축되지 않도록 지정된 옵션을 사용하여 문서를 저장합니다.
+
+```csharp
 // 지정된 옵션으로 문서를 저장합니다.
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 ```
 
+ 여기서는`Save` 의 방법`Document` 문서를 저장하는 클래스입니다. 경로에는 디렉터리와 파일 이름 "DocumentWithDoNotCompressMetafiles.pdf"가 포함됩니다.
+
 ## 결론
 
-이 가이드에서는 문서를 저장할 때 "작은 메타파일을 압축하지 않음" 기능을 활성화하기 위해 .NET용 Aspose.Words 라이브러리를 사용하는 방법을 설명했습니다. 제공된 단계를 따르고 제공된 C# 소스 코드를 사용하면 C# 애플리케이션에 이 기능을 쉽게 적용할 수 있습니다. 압축되지 않은 작은 파일 메타데이터를 보존하는 것은 문서 품질과 무결성을 유지하는 데 중요할 수 있습니다.
+다음 단계를 수행하면 Word 문서의 작은 메타파일이 압축되지 않고 품질과 무결성이 유지되도록 할 수 있습니다. Aspose.Words for .NET은 문서 처리 요구 사항을 사용자 정의할 수 있는 강력한 도구를 제공하므로 Word 문서로 작업하는 개발자에게 귀중한 자산이 됩니다.
+
+## FAQ
+
+### "작은 메타파일을 압축하지 않음" 기능을 사용해야 하는 이유는 무엇입니까?
+
+이 기능을 사용하면 문서에서 작은 메타파일의 품질과 세부 정보를 유지하는 데 도움이 되며 이는 전문적이고 고품질 출력에 중요합니다.
+
+### 이 기능을 다른 파일 형식과 함께 사용할 수 있나요?
+
+예, Aspose.Words for .NET을 사용하면 다양한 파일 형식에 대한 저장 옵션을 구성하여 문서 처리의 유연성을 보장할 수 있습니다.
+
+### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
+
+ 평가용 라이선스 없이 .NET용 Aspose.Words를 사용할 수 있지만 전체 기능을 잠금 해제하려면 라이선스가 필요합니다. 라이센스를 취득하실 수 있습니다[여기](https://purchase.aspose.com/buy) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+
+### 내 문서가 PDF/A 표준을 준수하는지 어떻게 확인할 수 있나요?
+
+ Aspose.Words for .NET을 사용하면 다음과 같은 규정 준수 옵션을 설정할 수 있습니다.`PdfCompliance.PdfA1a` 귀하의 문서가 특정 표준을 충족하는지 확인하십시오.
+
+### .NET용 Aspose.Words에 대한 자세한 정보는 어디서 찾을 수 있나요?
+
+ 포괄적인 문서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/) , 최신 버전을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).

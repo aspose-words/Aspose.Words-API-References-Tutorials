@@ -59,7 +59,7 @@ for change in comparison.changes:
 
 ## 変更の承認または拒否
 
-個々の変更を承認するか拒否するかを選択できます。
+個々の変更を承認または拒否することを選択できます。
 
 ```python
 change = comparison.changes[0]

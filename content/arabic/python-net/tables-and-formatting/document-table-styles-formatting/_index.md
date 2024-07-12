@@ -39,7 +39,7 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
     table = builder.start_table()
     ```
 
-2.  إدراج البيانات: قم بإضافة البيانات إلى الجدول باستخدام أداة الإنشاء`insert_cell` و`write` طُرق.
+2.  إدراج البيانات: قم بإضافة البيانات إلى الجدول باستخدام أداة الإنشاء`insert_cell`و`write` طُرق.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 
 ## تطبيق تنسيق الجدول الأساسي
 
- يمكن تحقيق التنسيق الأساسي للجدول باستخدام الطرق التي يوفرها`Table` و`Cell` الطبقات. إليك كيفية تحسين مظهر طاولتك:
+ يمكن تحقيق التنسيق الأساسي للجدول باستخدام الطرق التي يوفرها`Table`و`Cell` الطبقات. إليك كيفية تحسين مظهر طاولتك:
 
 1. تعيين عرض الأعمدة: اضبط عرض الأعمدة لضمان المحاذاة الصحيحة والجاذبية البصرية.
 

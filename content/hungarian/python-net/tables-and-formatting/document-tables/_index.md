@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Fejlécek és láblécek hozzáadása a táblázatokhoz:
 
- A táblázatok számára előnyös lehet olyan fejléc és lábléc, amely kontextust vagy további információkat biztosít. Fejléceket és lábléceket adhat hozzá a táblázatokhoz a`Table.title` és`Table.description` tulajdonságait.
+ A táblázatok számára előnyös lehet olyan fejléc és lábléc, amely kontextust vagy további információkat biztosít. Fejléceket és lábléceket adhat hozzá a táblázatokhoz a`Table.title`és`Table.description` tulajdonságait.
 
 ```python
 # Set table title (header)

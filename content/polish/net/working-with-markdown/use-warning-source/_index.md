@@ -28,7 +28,7 @@ WarningInfoCollection warnings = new WarningInfoCollection();
 doc.WarningCallback = warnings;
 ```
 
-## Krok 4: Zapisanie dokumentu
+## Krok 4: Zapisywanie dokumentu
 
 Wreszcie możemy zapisać dokument w żądanym formacie.
 

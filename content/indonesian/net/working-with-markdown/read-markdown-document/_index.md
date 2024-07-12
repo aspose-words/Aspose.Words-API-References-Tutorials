@@ -69,7 +69,7 @@ J: Ya, beberapa Markdown di perpustakaan .NET menawarkan opsi penyesuaian saat m
 
 #### T: Apa saja pustaka .NET yang direkomendasikan untuk memanipulasi dokumen Markdown?
 
- J: Pustaka .NET yang direkomendasikan untuk memanipulasi dokumen Markdown adalah`Markdig` Dan`CommonMark.NET`. Mereka menawarkan fleksibilitas luar biasa dan dukungan penuh untuk fitur penurunan harga.
+ J: Pustaka .NET yang direkomendasikan untuk memanipulasi dokumen Markdown adalah`Markdig`Dan`CommonMark.NET`. Mereka menawarkan fleksibilitas luar biasa dan dukungan penuh untuk fitur penurunan harga.
 
 #### T: Bagaimana cara menangani kesalahan saat membaca dokumen Markdown?
 

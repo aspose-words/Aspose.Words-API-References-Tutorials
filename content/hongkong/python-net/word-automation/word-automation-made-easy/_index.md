@@ -112,7 +112,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 ## 進階 Word 自動化功能
 
-Aspose.Words 提供了高級功能，例如郵件合併、文件加密以及使用書籤、超連結和註釋。
+Aspose.Words 提供高級功能，例如郵件合併、文件加密以及使用書籤、超連結和註釋。
 
 ## 自動化文件處理
 
@@ -133,7 +133,7 @@ Aspose.Words 提供了高級功能，例如郵件合併、文件加密以及使�
 ### Aspose.Words 適合自動化大型文件處理任務嗎？
 是的，Aspose.Words 旨在高效處理大量文件。
 
-### Aspose.Words 是否支援基於雲端的文件操作？
+### Aspose.Words 支援基於雲端的文件操作嗎？
 是的，Aspose.Words 可以與雲端平台結合使用，使其成為基於雲端的應用程式的理想選擇。
 
 ### 什麼是 Word Automation，Aspose.Words 如何促進它？
@@ -154,7 +154,7 @@ A6：是的，您可以使用 Aspose.Words for Python 輕鬆地將圖片插入 W
 ### 我可以使用 Aspose.Words 將 Word 文件匯出為不同的文件格式嗎？
 絕對地！ Aspose.Words支援多種檔案格式匯出，包括PDF、DOCX、RTF、HTML等，為不同需求提供彈性。
 
-### Aspose.Words 適合自動郵件合併作業嗎？
+### Aspose.Words 適合自動化郵件合併作業嗎？
 是的，Aspose.Words 支援郵件合併功能，可讓您將不同來源的資料合併到 Word 範本中，從而簡化產生個人化文件的過程。
 
 ### Aspose.Words 是否提供文件加密的安全功能？

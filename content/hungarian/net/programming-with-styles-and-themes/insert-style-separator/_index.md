@@ -94,7 +94,7 @@ Ne felejtse el menteni a dokumentumot a stíluselválasztó beillesztése után.
 
 #### Hogyan állíthatom be a környezetet stíluselválasztó beszúrására egy dokumentumba az Aspose.Words for .NET használatával?
 
-környezet beállításához gondoskodnia kell arról, hogy az Aspose.Words for .NET telepítve legyen és konfigurálva legyen a fejlesztői környezetben. Ez magában foglalja a szükséges hivatkozások hozzáadását és a megfelelő névterek importálását az Aspose.Words API eléréséhez.
+A környezet beállításához gondoskodnia kell arról, hogy az Aspose.Words for .NET telepítve legyen és konfigurálva legyen a fejlesztői környezetben. Ez magában foglalja a szükséges hivatkozások hozzáadását és a megfelelő névterek importálását az Aspose.Words API eléréséhez.
 
 #### Hogyan hozhatok létre és konfigurálhatok egyéni stílust?
 
@@ -106,8 +106,8 @@ környezet beállításához gondoskodnia kell arról, hogy az Aspose.Words for 
 
 #### Hogyan alkalmazhatok különböző stílusokat a szöveg különböző szakaszaira?
 
- Különböző stílusokat alkalmazhat a szöveg különböző szakaszaira a`ParagraphFormat.StyleName` tulajdona a`DocumentBuilder`tárgy. Szövegírás előtt beállíthatja a stílus nevét a kívánt stílusra, és az ezt követő szöveget ennek megfelelően formázza a rendszer.
+Különböző stílusokat alkalmazhat a szöveg különböző szakaszaira a`ParagraphFormat.StyleName` tulajdona a`DocumentBuilder` tárgy. Szövegírás előtt beállíthatja a stílus nevét a kívánt stílusra, és az ezt követő szöveget ennek megfelelően formázza a rendszer.
 
-#### Menthetem a dokumentumot különböző formátumokban?
+#### Elmenthetem a dokumentumot különböző formátumokban?
 
  Igen, a dokumentumot az Aspose.Words for .NET által támogatott különféle formátumokban mentheti. A`Save` módszere a`Document` Az objektum lehetővé teszi a kimeneti fájlformátum megadását, például DOCX, PDF, HTML stb. Válassza ki a megfelelő formátumot az Ön igényei szerint.

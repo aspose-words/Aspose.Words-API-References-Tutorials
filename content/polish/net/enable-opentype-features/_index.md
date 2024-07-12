@@ -12,4 +12,4 @@ Dowiedz się, jak włączyć funkcje OpenType w dokumentach programu Word za pom
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Funkcje typu otwartego](./open-type-features/) | Dowiedz się, jak włączyć i używać funkcji typu otwartego w Aspose.Words dla .NET |
+| [Funkcje typu otwartego](./open-type-features/) | Dowiedz się, jak włączyć funkcje OpenType w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku. |

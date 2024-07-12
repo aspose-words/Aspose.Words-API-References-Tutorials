@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### P: ¿Cómo puedo mover un nodo en un documento rastreado sin generar revisiones?
 
- R: Si desea mover un nodo en un documento rastreado sin generar revisiones, puede usar el`Remove` y`InsertAfter` o`InsertBefore` métodos de la`Node` objeto. Por ejemplo, para mover un párrafo tras otro, puede utilizar el siguiente código:
+ R: Si desea mover un nodo en un documento rastreado sin generar revisiones, puede usar el`Remove`y`InsertAfter` o`InsertBefore` métodos de la`Node` objeto. Por ejemplo, para mover un párrafo tras otro, puede utilizar el siguiente código:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

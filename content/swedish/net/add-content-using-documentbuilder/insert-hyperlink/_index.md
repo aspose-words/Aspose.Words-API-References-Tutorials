@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- I det här utdraget definierar vi sökvägen till katalogen där vårt dokument ska sparas och initierar en ny`Document` och`DocumentBuilder` exempel.
+ I det här utdraget definierar vi sökvägen till katalogen där vårt dokument ska sparas och initierar en ny`Document`och`DocumentBuilder` exempel.
 
 ## Steg 3: Skriv inledande text
 

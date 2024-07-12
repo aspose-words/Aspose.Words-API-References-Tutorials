@@ -214,7 +214,7 @@ doc.save("modified-document.docx");
 
  Ebben a példában a szöveget mezőkre cseréljük, és megadjuk a mező típusát (pl.`FieldType.FIELD_MERGE_FIELD`).
 
-## Csere kiértékelővel
+## Csere értékelővel
 
 Egyéni kiértékelő segítségével dinamikusan meghatározhatja a helyettesítő szöveget.
 

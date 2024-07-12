@@ -2,7 +2,7 @@
 title: Vložit plovoucí obrázek do dokumentu aplikace Word
 linktitle: Vložit plovoucí obrázek do dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vložit plovoucí obrázek do dokumentu aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. Ideální pro vylepšení vašich dokumentů.
+description: Naučte se, jak vložit plovoucí obrázek do dokumentu aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem. Ideální pro vylepšení vašich dokumentů.
 type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-floating-image/

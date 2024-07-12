@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Stap 3: Ga naar de regel die u wilt wijzigen
- Om de opmaak van een tabelrij te wijzigen, moeten we naar de specifieke rij in de tabel navigeren. Wij gebruiken de`GetChild()` En`FirstRow` methoden om de verwijzing naar de eerste rij van de tabel te verkrijgen.
+ Om de opmaak van een tabelrij te wijzigen, moeten we naar de specifieke rij in de tabel navigeren. Wij gebruiken de`GetChild()`En`FirstRow` methoden om de verwijzing naar de eerste rij van de tabel te verkrijgen.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

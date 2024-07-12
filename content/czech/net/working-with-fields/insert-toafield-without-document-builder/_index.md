@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### Otázka: Jak upravit vzhled pole TOA vloženého do dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
-Odpověď: Vzhled vloženého pole TOA můžete přizpůsobit pomocí vlastností`FieldTOA` objekt k určení možností formátování.
+ Odpověď: Vzhled vloženého pole TOA můžete přizpůsobit pomocí vlastností`FieldTOA` objekt k určení možností formátování.
 
 #### Otázka: Mohu přidat více polí TOA do jednoho dokumentu aplikace Word pomocí Aspose.Words for .NET?
 

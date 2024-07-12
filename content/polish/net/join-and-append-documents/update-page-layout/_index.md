@@ -2,89 +2,120 @@
 title: Zaktualizuj układ strony
 linktitle: Zaktualizuj układ strony
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zaktualizować układ strony podczas łączenia i dołączania dokumentów programu Word za pomocą Aspose.Words dla .NET.
+description: Bez wysiłku aktualizuj układ strony w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/update-page-layout/
 ---
+## Wstęp
 
-Ten samouczek poprowadzi Cię przez proces korzystania z funkcji Aktualizuj układ strony w Aspose.Words dla .NET. Ta funkcja zapewnia prawidłową aktualizację układu strony podczas łączenia i dołączania dokumentów programu Word.
+Programowa aktualizacja układu strony dokumentu programu Word może zmienić zasady gry, szczególnie podczas pracy z dynamicznym generowaniem treści lub automatyzacją dokumentów. Aspose.Words dla .NET zapewnia solidny sposób obsługi tych zadań. W tym samouczku zajmiemy się aktualizacją układu strony dokumentu programu Word za pomocą Aspose.Words dla .NET. Zapnij pasy i przygotuj się na szczegółowy przewodnik krok po kroku, który ułatwi Ci życie!
 
 ## Warunki wstępne
 
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
+Zanim przejdziemy do kolejnych kroków, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1. Zainstalowano Aspose.Words dla .NET. Możesz pobrać go ze strony Aspose lub zainstalować za pomocą NuGet.
-2. Visual Studio lub dowolne inne środowisko programistyczne C#.
+1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Można go pobrać z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE obsługujące platformę .NET.
+3. Podstawowa znajomość języka C#: Pomocne będzie zrozumienie podstaw języka C#.
 
-## Krok 1: Zainicjuj katalogi dokumentów
+## Importuj przestrzenie nazw
 
- Najpierw musisz ustawić ścieżkę do katalogu dokumentów. Zmodyfikuj wartość`dataDir` zmienną na ścieżkę, w której znajdują się Twoje dokumenty.
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu. Umożliwia to dostęp do funkcjonalności biblioteki Aspose.Words.
+
+```csharp
+using Aspose.Words;
+```
+
+## Krok 1: Konfiguracja projektu
+
+### Utwórz nowy projekt
+
+Zacznij od utworzenia nowego projektu w Visual Studio. Dla uproszczenia wybierz aplikację konsolową.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Krok 2: Załaduj dokumenty źródłowe i docelowe
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` ze ścieżką do dokumentów.
 
-Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
+### Dodaj Aspose.Words dla .NET
+
+Następnie dodaj do swojego projektu bibliotekę Aspose.Words for .NET. Możesz to zrobić za pomocą Menedżera pakietów NuGet.
+
+```csharp
+Install-Package Aspose.Words
+```
+
+## Krok 2: Ładowanie dokumentu źródłowego
+
+Teraz załadujmy dokument źródłowy do Twojego projektu.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
+```
+
+Ten kod inicjuje dokument źródłowy, który chcesz dołączyć do innego dokumentu.
+
+## Krok 3: Ładowanie dokumentu docelowego
+
+Następnie załaduj dokument docelowy, do którego zostanie dołączony dokument źródłowy.
+
+```csharp
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Zaktualizuj układ strony dla dokumentu docelowego
+## Krok 4: Aktualizacja układu strony
 
- Aby mieć pewność, że układ strony zostanie poprawnie zaktualizowany przed dołączeniem dokumentu źródłowego, możesz wywołać metodę`UpdatePageLayout` metodę w dokumencie docelowym.
+Przed dołączeniem dokumentu źródłowego należy koniecznie zaktualizować układ strony dokumentu docelowego. Dzięki temu wszelkie zmiany wprowadzone po dołączeniu dokumentu źródłowego zostaną odzwierciedlone w renderowanym wyniku.
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## Krok 4: Dołącz dokument źródłowy do dokumentu docelowego
+## Krok 5: Dołączenie dokumentu źródłowego
 
- Teraz możesz dołączyć dokument źródłowy do dokumentu docelowego za pomocą`AppendDocument` metoda`Document` klasa. The`ImportFormatMode.KeepSourceFormatting` Parametr gwarantuje, że formatowanie źródłowe zostanie zachowane podczas operacji dołączania.
+Teraz dołącz dokument źródłowy do dokumentu docelowego, upewniając się, że formatowanie źródłowe pozostaje nienaruszone.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Krok 5: Ponownie zaktualizuj układ strony
+### Krok 6: Finalizowanie aktualizacji układu strony
 
- Po dołączeniu dokumentu źródłowego należy wywołać metodę`UpdatePageLayout`ponownie w dokumencie docelowym, aby upewnić się, że wszelkie zmiany wprowadzone po operacji dołączania zostaną odzwierciedlone w renderowanym wyniku.
+#### Zaktualizuj ponownie układ strony
+
+Aby mieć pewność, że dołączony dokument będzie poprawnie wyświetlany na wydruku, ponownie zaktualizuj układ strony.
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## Krok 6: Zapisz dokument końcowy
+## Krok 7: Zapisywanie dokumentu końcowego
 
- Na koniec zapisz scalony dokument z włączoną funkcją Aktualizuj układ strony za pomocą`Save` metoda`Document` klasa.
+Na koniec zapisz zaktualizowany dokument w określonym katalogu.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 ```
 
-### Przykładowy kod źródłowy aktualizacji układu strony przy użyciu Aspose.Words dla .NET
+## Wniosek
 
-Oto pełny kod źródłowy funkcji „Aktualizuj układ strony” w języku C# przy użyciu Aspose.Words dla .NET:
+Masz to! Wykonując poniższe kroki, możesz skutecznie zaktualizować układ strony dokumentu programu Word za pomocą Aspose.Words dla .NET. Ta potężna biblioteka upraszcza manipulowanie dokumentami, dzięki czemu wykonywanie złożonych zadań staje się dziecinnie proste.
 
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Często zadawane pytania
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Jeśli dokument docelowy jest renderowany do formatu PDF, obrazu itp.
-	// lub UpdatePageLayout jest wywoływany przed dokumentem źródłowym. jest dołączony,
-	// wówczas wszelkie zmiany wprowadzone później nie zostaną odzwierciedlone w renderowanym wyniku
-	dstDoc.UpdatePageLayout();
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	// Aby zmiany zostały zaktualizowane do renderowanych danych wyjściowych, należy ponownie wywołać funkcję UpdatePageLayout.
-	// Jeśli nie zostanie wywołany ponownie, dołączony dokument nie pojawi się w wynikach następnego renderowania.
-	dstDoc.UpdatePageLayout();
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
-```
+### Dlaczego muszę dwukrotnie aktualizować układ strony?
+Aktualizacja układu strony przed i po dołączeniu gwarantuje, że wszystkie zmiany zostaną odzwierciedlone w ostatecznym wyrenderowanym wyniku.
 
-Otóż to! Pomyślnie zaimplementowałeś funkcję Aktualizuj układ strony przy użyciu Aspose.Words dla .NET. Ostateczny dokument będzie zawierał scaloną treść z poprawnie zaktualizowanym układem strony.
+### Czy mogę załączyć wiele dokumentów za jednym razem?
+Tak, możesz dołączyć wiele dokumentów, powtarzając proces dołączania dla każdego dokumentu.
+
+### A co jeśli chcę zachować formatowanie dokumentu docelowego?
+ Używać`ImportFormatMode.UseDestinationStyles` zamiast`ImportFormatMode.KeepSourceFormatting`.
+
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
+ Aspose.Words dla .NET wymaga licencji. Możesz zacząć od A[bezpłatna wersja próbna](https://releases.aspose.com/) lub uzyskaj[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
+
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+ Odwiedzić[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) aby uzyskać bardziej szczegółowe informacje.

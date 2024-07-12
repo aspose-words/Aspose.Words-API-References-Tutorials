@@ -43,7 +43,7 @@ Die Ausgabe kann zur besseren Lesbarkeit in Markdown formatiert werden. Beispiel
 - Comments are hidden in the generated PDF.
 ```
 
-### Beispielquellcode zum Entfernen von Kommentaren in PDF mit Aspose.Words für .NET
+### Beispielquellcode zum Entfernen von Kommentaren in PDFs mit Aspose.Words für .NET
 
 Hier ist der vollständige Quellcode zum Entfernen von Kommentaren in einer PDF-Datei mit Aspose.Words für .NET:
 

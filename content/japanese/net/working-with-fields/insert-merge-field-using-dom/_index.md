@@ -17,7 +17,7 @@ url: /ja/net/working-with-fields/insert-merge-field-using-dom/
 1. **Basic Knowledge of C#:** C# プログラミングに慣れている必要があります。
 2. **Visual Studio Installed:**マシンに Visual Studio またはその他の C# IDE がインストールされていることを確認してください。
 3. **Aspose.Words for .NET:** Aspose.Words for .NETの最新バージョンを以下のサイトからダウンロードしてインストールしてください。[リリース](https://releases.aspose.com/words/net/).
-4. **Valid License:**免許証をお持ちでない場合は、[一時ライセンス](https://purchase.aspose.com/temporary-license/)評価のため。
+4. **Valid License:**免許証を持っていない場合は、[一時ライセンス](https://purchase.aspose.com/temporary-license/)評価のため。
 
 ## ステップ1: プロジェクトの設定
 

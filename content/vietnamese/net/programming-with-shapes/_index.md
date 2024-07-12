@@ -16,7 +16,7 @@ Bằng cách sử dụng Aspose.Words cho .NET và làm theo các hướng dẫn
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Thêm hình dạng nhóm](./add-group-shape/) | Tìm hiểu cách thêm hình dạng nhóm có nhiều hình dạng vào tài liệu Word bằng Aspose.Words cho .NET. |
+| [Thêm hình dạng nhóm](./add-group-shape/) | Tìm hiểu cách thêm hình dạng nhóm có nhiều hình dạng vào tài liệu Word bằng Aspose.Words for .NET. |
 | [Chèn hình dạng](./insert-shape/) | Tìm hiểu cách chèn hình vào tài liệu Word bằng Aspose.Words cho .NET. |
 | [Tỷ lệ khung hình đã bị khóa](./aspect-ratio-locked/) | Tìm hiểu cách khóa hoặc mở khóa tỷ lệ khung hình của hình dạng trong tài liệu Word bằng Aspose.Words for .NET. |
 | [Bố cục trong ô](./layout-in-cell/) | Tìm hiểu cách bố trí hình dạng trong ô bảng trong tài liệu Word bằng Aspose.Words cho .NET. |

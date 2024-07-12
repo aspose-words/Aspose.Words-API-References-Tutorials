@@ -18,7 +18,7 @@ Perbandingan dokumen melibatkan analisis dua dokumen dan mengidentifikasi perbed
 
 ## Perbandingan Dokumen Dasar
 
- Mari kita mulai dengan dasar-dasar perbandingan dokumen. Kami akan menggunakan dua dokumen,`docA` Dan`docB`, dan bandingkan.
+ Mari kita mulai dengan dasar-dasar perbandingan dokumen. Kami akan menggunakan dua dokumen,`docA`Dan`docB`, dan bandingkan.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-Dalam cuplikan kode ini, kami memuat dua dokumen,`docA` Dan`docB` , lalu gunakan`compare` metode untuk membandingkannya. Kami menetapkan penulis sebagai "pengguna", dan perbandingan dilakukan. Terakhir, kami memeriksa apakah ada revisi yang menunjukkan perbedaan antar dokumen.
+Dalam cuplikan kode ini, kami memuat dua dokumen,`docA`Dan`docB` , lalu gunakan`compare` metode untuk membandingkannya. Kami menetapkan penulis sebagai "pengguna", dan perbandingan dilakukan. Terakhir, kami memeriksa apakah ada revisi yang menunjukkan perbedaan antar dokumen.
 
 ## Menyesuaikan Perbandingan dengan Opsi
 

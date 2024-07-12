@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3단계: 표와 주변 텍스트 사이의 거리 확인
- 표와 주변 텍스트 사이의 거리를 얻으려면 다음을 사용하여 문서의 표에 액세스해야 합니다.`GetChild()` 방법과`NodeType.Table` 재산. 그런 다음 배열 속성을 사용하여 다양한 거리를 표시할 수 있습니다.`DistanceTop`, `DistanceBottom`, `DistanceRight` 그리고`DistanceLeft`.
+ 표와 주변 텍스트 사이의 거리를 얻으려면 다음을 사용하여 문서의 표에 액세스해야 합니다.`GetChild()` 방법과`NodeType.Table` 재산. 그런 다음 배열 속성을 사용하여 다양한 거리를 표시할 수 있습니다.`DistanceTop`, `DistanceBottom`, `DistanceRight`그리고`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

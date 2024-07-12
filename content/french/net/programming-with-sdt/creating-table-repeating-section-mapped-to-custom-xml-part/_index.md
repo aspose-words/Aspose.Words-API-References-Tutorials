@@ -17,7 +17,7 @@ Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 - Connaissance de base de C# et du traitement de mots avec des documents Word.
 
 ## Étape 1 : configurer le répertoire de documents
- Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
+ Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Étape 4 : Créer une table et une structure de table
- Commencez à créer un tableau en utilisant le`StartTable` méthode du`DocumentBuilder` . Ajoutez des cellules et du contenu au tableau à l'aide de l'outil`InsertCell` et`Write` méthodes.
+ Commencez à créer un tableau en utilisant le`StartTable` méthode du`DocumentBuilder` . Ajoutez des cellules et du contenu au tableau à l'aide de l'outil`InsertCell`et`Write` méthodes.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Créer un`Row`pour représenter chaque élément de la section répétitive et l'ajouter à l'élément de la section répétitive.
+ Créer un`Row` pour représenter chaque élément de la section répétitive et l'ajouter à l'élément de la section répétitive.
 
 ```csharp
 Row row = new Row(doc);

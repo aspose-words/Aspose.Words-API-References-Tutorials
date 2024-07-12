@@ -2,7 +2,7 @@
 title: Word दस्तावेज़ में Chm फ़ाइलें लोड करें
 linktitle: Word दस्तावेज़ में Chm फ़ाइलें लोड करें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words के साथ Word दस्तावेज़ में CHM फ़ाइलों को लोड करना सीखें।
+description: .NET के लिए Aspose.Words के साथ वर्ड दस्तावेज़ में CHM फ़ाइलों को लोड करना सीखें।
 type: docs
 weight: 10
 url: /hi/net/programming-with-loadoptions/load-chm/
@@ -15,7 +15,7 @@ url: /hi/net/programming-with-loadoptions/load-chm/
 
 ## लोडिंग विकल्प कॉन्फ़िगर करना
 
-पहला कदम हमारी CHM फ़ाइल के लिए लोड विकल्पों को कॉन्फ़िगर करना है। लोडिंग पैरामीटर निर्दिष्ट करने के लिए LoadOptions क्लास का उपयोग करें। हमारे मामले में, हमें एन्कोडिंग प्रॉपर्टी को CHM फ़ाइलों के लिए उपयुक्त एन्कोडिंग पर सेट करना होगा, आमतौर पर "windows-1251"। इसे करने का तरीका यहां बताया गया है:
+पहला कदम हमारी CHM फ़ाइल के लिए लोड विकल्पों को कॉन्फ़िगर करना है। लोडिंग पैरामीटर निर्दिष्ट करने के लिए LoadOptions क्लास का उपयोग करें। हमारे मामले में, हमें CHM फ़ाइलों के लिए उपयुक्त एन्कोडिंग के लिए Encoding प्रॉपर्टी सेट करने की आवश्यकता है, आमतौर पर "windows-1251"। इसे करने का तरीका यहां बताया गया है:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding. GetEncoding("windows-1251") };

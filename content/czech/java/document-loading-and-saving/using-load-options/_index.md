@@ -204,7 +204,7 @@ V tomto tutoriálu jsme se ponořili do různých aspektů práce s možnostmi n
 
  Ano, tvary můžete převést na objekty Office Math pomocí`loadOptions.setConvertShapeToOfficeMath(true)`.
 
-### Jak určím verzi MS Word pro načítání dokumentu?
+### Jak určím verzi MS Word pro načítání dokumentů?
 
  Použití`loadOptions.setMswVersion(MsWordVersion.WORD_2010)` specifikovat verzi MS Word pro načítání dokumentu.
 

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Nastavte složky písem s prioritou
- Potom můžete nastavit prioritu složek písem pomocí`FontSettings` třída a`SetFontsSources()`metoda. Pomocí instancí můžete určit více zdrojů písem`SystemFontSource` a`FolderFontSource`. V tomto příkladu jsme definovali dva zdroje písem: výchozí systémový zdroj písem a vlastní složku písem s prioritou 1.
+ Potom můžete nastavit prioritu složek písem pomocí`FontSettings` třída a`SetFontsSources()`metoda. Pomocí instancí můžete určit více zdrojů písem`SystemFontSource`a`FolderFontSource`. V tomto příkladu jsme definovali dva zdroje písem: výchozí systémový zdroj písem a vlastní složku písem s prioritou 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

@@ -23,7 +23,7 @@ A hifenização garante que seu documento tenha uma aparência profissional e vi
 
 ### Hifenização manual
 
-Em alguns casos, você pode querer controlar manualmente onde uma palavra é quebrada para obter um design ou ênfase específico. Isso pode ser feito inserindo um hífen no ponto de interrupção desejado.
+Em alguns casos, você pode querer controlar manualmente onde uma palavra é quebrada para obter um design ou ênfase específica. Isso pode ser feito inserindo um hífen no ponto de interrupção desejado.
 
 ### Hifenização Automática
 

@@ -94,7 +94,7 @@ field. Update();
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-tomto příkladu jsme vytvořili nový dokument, vložili konce stránek, přesunuli kurzor do zápatí a pak do zápatí vložili vnořené pole.
+V tomto příkladu jsme vytvořili nový dokument, vložili konce stránek, přesunuli kurzor do zápatí a pak do zápatí vložili vnořené pole.
 
 ### FAQ
 
@@ -112,11 +112,11 @@ Odpověď: Použití vnořených polí nabízí několik výhod v dokumentu apli
 
 #### Otázka: Mohu mít víceúrovňová vnořená pole v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
- Odpověď: Ano, je možné mít víceúrovňová vnořená pole v dokumentu aplikace Word pomocí Aspose.Words for .NET. Můžete vytvořit složité hierarchie vnořených polí pomocí`FieldStart.NextSibling` metoda pro přidání podřízených polí k existujícím nadřazeným polím.
+Odpověď: Ano, je možné mít víceúrovňová vnořená pole v dokumentu aplikace Word pomocí Aspose.Words for .NET. Můžete vytvořit složité hierarchie vnořených polí pomocí`FieldStart.NextSibling` metoda pro přidání podřízených polí k existujícím nadřazeným polím.
 
 #### Otázka: Jak mohu upravit vlastnosti vnořených polí v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
- Odpověď: Chcete-li upravit vlastnosti vnořených polí v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete přistupovat k odpovídajícím`FieldStart`objektů a podle potřeby upravovat jejich vlastnosti. Můžete nastavit možnosti formátování, hodnoty, výpočty atd. vnořených polí, abyste dosáhli požadovaného výsledku.
+ Odpověď: Chcete-li upravit vlastnosti vnořených polí v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete přistupovat k odpovídajícím`FieldStart` objektů a podle potřeby upravovat jejich vlastnosti. Můžete nastavit možnosti formátování, hodnoty, výpočty atd. vnořených polí, abyste dosáhli požadovaného výsledku.
 
 #### Otázka: Ovlivňuje vkládání vnořených polí výkon dokumentu Word s Aspose.Words pro .NET?
 

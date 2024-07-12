@@ -2,74 +2,86 @@
 title: Word 문서에서 보호 유형 가져오기
 linktitle: Word 문서에서 보호 유형 가져오기
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words의 Word 문서 기능으로 보호 유형 가져오기를 사용하여 문서의 보호 유형을 결정하는 방법을 알아보세요.
+description: Aspose.Words for .NET을 사용하여 Word 문서의 보호 유형을 확인하는 방법을 알아보세요. 단계별 가이드, 코드 예제 및 FAQ가 포함되어 있습니다.
 type: docs
 weight: 10
 url: /ko/net/document-protection/get-protection-type/
 ---
-.NET용 Aspose.Words의 보호 유형 가져오기 기능에 대한 C# 소스 코드를 설명하는 이 단계별 가이드에 오신 것을 환영합니다. 이 문서에서는 이 강력한 기능을 사용하여 문서의 보호 유형을 결정하는 방법을 보여 드리겠습니다. 파일의 기밀성과 무결성을 보장하려면 문서 보호가 필수적입니다. Aspose.Words for .NET을 통합하고 보호 유형 가져오기 기능을 사용하는 데 필요한 단계를 안내해 드리겠습니다.
+## 소개
 
-## 1단계: 문서 로드
+안녕하세요! 프로그래밍 방식으로 Word 문서의 보호 유형을 확인하는 방법이 궁금하신가요? 민감한 데이터를 보호하고 있거나 문서 상태가 궁금하다면 보호 유형을 얻는 방법을 아는 것이 매우 편리할 수 있습니다. 오늘은 Word 문서 작업을 쉽게 만들어주는 강력한 라이브러리인 Aspose.Words for .NET을 사용하는 프로세스를 살펴보겠습니다. 버클을 채우고 뛰어들어 보세요!
 
-보호 유형 가져오기 기능을 사용하는 첫 번째 단계는 작업하려는 문서를 업로드하는 것입니다. Aspose.Words for .NET에서 제공하는 Document 클래스를 사용하여 이 작업을 수행할 수 있습니다. 다음은 파일에서 문서를 로드하는 샘플 코드입니다.
+## 전제조건
+
+코딩 부분으로 넘어가기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
+
+1.  .NET 라이브러리용 Aspose.Words: 아직 설치하지 않았다면 다운로드하여 설치하세요.[.NET 라이브러리용 Aspose.Words](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio와 같은 IDE.
+3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 따라가는 데 도움이 됩니다.
+
+## 네임스페이스 가져오기
+
+코딩을 시작하기 전에 필요한 네임스페이스를 가져와야 합니다. 이렇게 하면 Aspose.Words에서 제공하는 모든 클래스와 메서드에 액세스할 수 있습니다.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
+using System;
+using Aspose.Words;
 ```
 
-문서 파일의 올바른 경로를 지정하십시오.
+## 단계별 가이드
 
-## 2단계: 보호 유형 검색
+프로세스를 간단하고 따르기 쉬운 단계로 나누어 보겠습니다. 각 단계는 작업의 특정 부분을 안내하여 모든 것을 명확하게 이해할 수 있도록 합니다.
 
-문서가 업로드된 후 Document 개체의 ProtectionType 속성을 사용하여 문서에 적용된 보호 유형을 검색할 수 있습니다. 방법은 다음과 같습니다.
+## 1단계: 프로젝트 설정
+
+가장 먼저 Visual Studio에서 C# 프로젝트를 설정합니다. 방법은 다음과 같습니다.
+
+1. 새 프로젝트 만들기: Visual Studio를 열고 파일 > 새로 만들기 > 프로젝트로 이동한 후 콘솔 앱(.NET Core 또는 .NET Framework)을 선택합니다.
+2. Aspose.Words 설치: 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 "NuGet 패키지 관리"를 선택한 다음 "Aspose.Words"를 검색하여 설치합니다.
+
+## 2단계: 문서 로드
+
+ 이제 프로젝트가 설정되었으므로 확인하려는 Word 문서를 로드해 보겠습니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서의 실제 경로와 함께.
+
+```csharp
+// 문서 디렉터리 경로
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Document.docx");
+```
+
+## 3단계: 보호 유형 가져오기
+
+이곳이 바로 마법이 일어나는 곳입니다! Aspose.Words를 사용하여 문서의 보호 유형을 검색합니다.
 
 ```csharp
 ProtectionType protectionType = doc.ProtectionType;
 ```
 
-### .NET용 Aspose.Words를 사용하여 보호 유형 가져오기에 대한 예제 소스 코드
+## 4단계: 보호 유형 표시
 
-다음은 .NET용 Aspose.Words를 사용하는 보호 유형 가져오기 기능의 전체 소스 코드입니다.
+마지막으로 콘솔에 보호 유형을 표시해 보겠습니다. 이는 문서의 현재 보호 상태를 이해하는 데 도움이 됩니다.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
-ProtectionType protectionType = doc.ProtectionType;
+Console.WriteLine("The protection type of the document is: " + protectionType);
 ```
 
 ## 결론
 
-이 기사에서는 Aspose.Words for .NET의 보호 유형 가져오기 기능을 사용하여 문서의 보호 유형을 결정하는 방법을 설명했습니다. 설명된 단계를 따르면 이 기능을 자신의 C# 프로젝트에 쉽게 통합하고 보호된 문서를 효율적으로 조작할 수 있습니다. .NET용 Aspose.Words는 뛰어난 유연성을 제공합니다.
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서의 보호 유형을 성공적으로 검색했습니다. 이는 문서의 보안을 적절하게 유지하거나 감사 목적으로 사용하는 데 매우 유용할 수 있습니다. Aspose.Words는 Word 문서를 쉽게 조작하는 데 도움이 되는 수많은 다른 기능을 제공한다는 것을 기억하세요. 한번 시도해 보시고 즐거운 코딩을 즐겨보세요!
 
-### FAQ
+## FAQ
 
-#### Q: .NET용 Aspose.Words의 ProtectionType 속성은 무엇입니까?
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 프로그래밍 방식으로 Word 문서를 생성, 편집, 변환 및 조작할 수 있는 강력한 라이브러리입니다.
 
- 답:`ProtectionType` Aspose.Words for .NET의 속성은 Word 문서에 적용되는 보호 유형을 결정할 수 있는 기능입니다. 문서가 주석, 개정, 양식 또는 기타 유형의 제한 사항에 대해 보호되는지 여부와 같은 문서 보호 수준에 대한 정보를 제공합니다.
+### Aspose.Words를 무료로 사용할 수 있나요?
+ 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) , 그러나 전체 기능을 사용하려면 라이센스를 구입해야 합니다. 확인해 보세요[구매 옵션](https://purchase.aspose.com/buy).
 
-#### Q: .NET용 Aspose.Words를 사용하여 문서의 보호 유형을 어떻게 검색할 수 있나요?
+### Aspose.Words는 어떤 보호 유형을 감지할 수 있나요?
+Aspose.Words는 NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments 및 AllowOnlyFormFields와 같은 다양한 보호 유형을 감지할 수 있습니다.
 
-A: .NET용 Aspose.Words를 사용하여 문서의 보호 유형을 검색하려면 다음 단계를 따르세요.
-1.  다음을 사용하여 문서를 로드합니다.`Document` 수업.
-2.  액세스`ProtectionType` 의 재산`Document`보호 유형을 검색하는 개체입니다.
+### 문제가 발생하면 어떻게 지원을 받을 수 있나요?
+ 문제가 있는 경우[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도와주기 위해.
 
-#### Q: ProtectionType 속성을 사용하여 문서가 양식 또는 양식 필드에 대해 보호되는지 확인할 수 있습니까?
-
- A: 예, 다음을 사용하여 문서가 양식 또는 양식 필드에 대해 보호되는지 확인할 수 있습니다.`ProtectionType` .NET용 Aspose.Words의 속성입니다. 보호 유형이 다음으로 설정된 경우`AllowOnlyFormFields`, 이는 문서가 보호되어 있으며 양식 필드만 편집할 수 있음을 나타냅니다.
-
-#### Q: ProtectionType 속성은 어떤 다른 보호 유형을 반환할 수 있습니까?
-
- 답:`ProtectionType` .NET용 Aspose.Words의 속성은 다음을 포함한 다양한 보호 유형을 반환할 수 있습니다.
-- `NoProtection`: 문서가 보호되지 않습니다.
-- `AllowOnlyRevisions`: 문서가 보호되어 수정만 가능합니다.
-- `AllowOnlyComments`: 문서가 보호되어 있어 댓글만 추가할 수 있습니다.
-- `AllowOnlyFormFields`: 문서가 보호되어 있으며 양식 필드만 편집할 수 있습니다.
-- `ReadOnly`: 문서가 보호되어 있으며 읽기 전용으로 설정되어 있습니다.
-
-#### Q: ProtectionType 속성을 사용하여 문서의 보호 유형을 수정할 수 있습니까?
-
- 답: 아니요,`ProtectionType`.NET용 Aspose.Words의 속성은 읽기 전용 속성입니다. 문서의 현재 보호 유형을 검색할 수 있지만 보호 유형을 수정하는 직접적인 방법은 제공하지 않습니다. 보호 유형을 수정하려면 다음에서 사용 가능한 다른 방법과 속성을 사용해야 합니다.`Document` 같은 수업`Protect` 또는`Unprotect`.
-
-#### Q: 동시에 여러 보호 유형으로 문서를 보호할 수 있나요?
-
-A: 아니요, .NET용 Aspose.Words에서는 한 번에 하나의 보호 유형만 문서에 적용할 수 있습니다. 그러나 보호를 활성화하고, 한 유형을 설정하고, 보호를 비활성화한 다음 다른 유형으로 다시 활성화하여 다양한 보호 유형을 결합할 수 있습니다.
-
+### Aspose.Words는 .NET Core와 호환됩니까?
+예, Aspose.Words는 .NET Framework 및 .NET Core와 모두 호환됩니다.

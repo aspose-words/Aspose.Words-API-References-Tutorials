@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: imposta la priorità sulle cartelle dei caratteri
- Quindi puoi impostare le cartelle dei caratteri con priorità utilizzando il file`FontSettings` classe e il`SetFontsSources()`metodo. È possibile specificare più origini di caratteri utilizzando istanze di`SystemFontSource` E`FolderFontSource`. In questo esempio, abbiamo definito due origini di caratteri: l'origine di caratteri di sistema predefinita e una cartella di caratteri personalizzata con priorità 1.
+ Quindi puoi impostare le cartelle dei caratteri con priorità utilizzando il file`FontSettings` classe e il`SetFontsSources()`metodo. È possibile specificare più origini di caratteri utilizzando istanze di`SystemFontSource`E`FolderFontSource`. In questo esempio, abbiamo definito due origini di caratteri: l'origine di caratteri di sistema predefinita e una cartella di caratteri personalizzata con priorità 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

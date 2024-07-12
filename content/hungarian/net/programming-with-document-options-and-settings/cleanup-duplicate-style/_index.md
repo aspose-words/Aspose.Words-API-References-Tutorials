@@ -49,7 +49,7 @@ doc. Cleanup(options);
 
 ## 5. lépés: Tisztítás után számolja meg a stílusokat
 
-A tisztítás elvégzése után újra megszámoljuk a stílusok számát, hogy ellenőrizzük, nem csökkent-e. Használja a következő kódot az új stílusok számának megjelenítéséhez:
+tisztítás elvégzése után újra megszámoljuk a stílusok számát, hogy ellenőrizzük, nem csökkent-e. Használja a következő kódot az új stílusok számának megjelenítéséhez:
 
 ```csharp
 Console.WriteLine(doc.Styles.Count);
@@ -66,14 +66,14 @@ Ez az utasítás a tisztítás után fennmaradó stílusok számát jeleníti me
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
-	// Stílusok száma a tisztítás előtt.
+	// A stílusok száma a tisztítás előtt.
 	Console.WriteLine(doc.Styles.Count);
 
 	// Megtisztítja az ismétlődő stílusokat a dokumentumból.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	// stílusok száma a tisztítás után csökkent.
+	// A stílusok száma a tisztítás után csökkent.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

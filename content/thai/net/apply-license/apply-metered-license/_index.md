@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- แทนที่`"your_public_key"` และ`"your_private_key"`ด้วยกุญแจจริงที่คุณได้รับจาก Aspose ขั้นตอนนี้จะบอก Aspose เป็นหลักว่าคุณต้องการใช้ใบอนุญาตแบบคิดค่าบริการตามปริมาณข้อมูล
+ แทนที่`"your_public_key"`และ`"your_private_key"`ด้วยกุญแจจริงที่คุณได้รับจาก Aspose ขั้นตอนนี้จะบอก Aspose เป็นหลักว่าคุณต้องการใช้ใบอนุญาตแบบคิดค่าบริการตามปริมาณข้อมูล
 
 ## ขั้นตอนที่ 3: โหลดเอกสารของคุณ
 

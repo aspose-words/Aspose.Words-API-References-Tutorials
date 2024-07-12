@@ -29,7 +29,7 @@ Pod koniec tych samouczków będziesz wyposażony w umiejętności płynnego ł�
 
 ## Samouczki dotyczące łączenia i porównywania dokumentów
 ### [Łączenie i porównywanie dokumentów w programie Word](./merge-compare-documents/)
-Łącz i porównuj dokumenty programu Word bez wysiłku, korzystając z Aspose.Words dla Pythona. Dowiedz się, jak manipulować dokumentami, podkreślać różnice i automatyzować zadania.
+Łącz i porównuj dokumenty programu Word bez wysiłku, korzystając z Aspose.Words dla języka Python. Dowiedz się, jak manipulować dokumentami, podkreślać różnice i automatyzować zadania.
 ### [Wykorzystanie mocy zakładek w dokumentach](./document-bookmarks/)
 Dowiedz się, jak wykorzystać moc zakładek dokumentów przy użyciu Aspose.Words dla Pythona. Twórz, zarządzaj i poruszaj się po zakładkach, korzystając z przewodników krok po kroku i przykładów kodu.
 ### [Nawigowanie zakresami dokumentów w celu precyzyjnej edycji](./document-ranges/)

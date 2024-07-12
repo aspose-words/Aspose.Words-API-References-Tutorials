@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でのドキュメントの書式設定
 linktitle: ドキュメントの書式設定
 second_title: Aspose.Words Java ドキュメント処理 API
-description: 弊社の総合ガイドで、Aspose.Words for Java でのドキュメントの書式設定の技術を習得してください。強力な機能を調べて、ドキュメント処理スキルを強化してください。
+description: 包括的なガイドで、Aspose.Words for Java でのドキュメントの書式設定の技術を学習します。強力な機能を調べて、ドキュメント処理スキルを強化します。
 type: docs
 weight: 29
 url: /ja/java/document-manipulation/formatting-documents/
@@ -74,7 +74,7 @@ doc.save("ParagraphFormatting.docx");
 
 ## 多段階リストの書式設定
 
-複数レベルのリストを作成することは、ドキュメントの書式設定でよく必要なことです。Aspose.Words for Java を使用すると、このタスクが簡単になります。
+複数レベルのリストを作成することは、ドキュメントの書式設定でよく必要になります。Aspose.Words for Java を使用すると、このタスクが簡単になります。
 
 ```java
 Document doc = new Document();
@@ -179,6 +179,6 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 はい、Aspose.Words for Java は、ドキュメント内の複数レベルのリストの作成と書式設定に優れたサポートを提供します。
 
-### アジア言語のテキストの段落間隔を最適化するにはどうすればよいでしょうか?
+### アジア言語のテキストの段落間隔を最適化するにはどうすればよいですか?
 
 Aspose.Words for Java の関連設定を調整することで、アジア言語のテキストの段落間隔を微調整できます。

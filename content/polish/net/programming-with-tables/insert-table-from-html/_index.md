@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-tables/insert-table-from-html/
 ---
 
-W tym samouczku nauczymy się, jak wstawić tabelę do dokumentu Word z HTML za pomocą Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł programowo wstawiać tabele z HTML do dokumentów programu Word.
+tym samouczku nauczymy się, jak wstawić tabelę do dokumentu Word z HTML za pomocą Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł programowo wstawiać tabele z HTML do dokumentów programu Word.
 
 ## Krok 1: Konfiguracja projektu
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.

@@ -18,7 +18,7 @@ url: /ko/java/document-manipulation/comparing-documents/
 
 ## 기본 문서 비교
 
- 문서 비교의 기본부터 시작해 보겠습니다. 우리는 두 개의 문서를 사용할 것입니다.`docA` 그리고`docB`, 비교해보세요.
+ 문서 비교의 기본부터 시작해 보겠습니다. 우리는 두 개의 문서를 사용할 것입니다.`docA`그리고`docB`, 비교해보세요.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-이 코드 조각에서는 두 개의 문서를 로드합니다.`docA` 그리고`docB` 을 선택한 다음`compare` 비교하는 방법입니다. 작성자를 "사용자"로 지정하고 비교를 수행합니다. 마지막으로 문서 간의 차이점을 나타내는 개정 사항이 있는지 확인합니다.
+이 코드 조각에서는 두 개의 문서를 로드합니다.`docA`그리고`docB` 을 선택한 다음`compare` 비교하는 방법입니다. 작성자를 "사용자"로 지정하고 비교를 수행합니다. 마지막으로 문서 간의 차이점을 나타내는 개정 사항이 있는지 확인합니다.
 
 ## 옵션으로 비교 사용자 정의
 
@@ -93,7 +93,7 @@ builderA.getDocument().compare(builderB.getDocument(), "author", new Date(), com
 
 ## 결론
 
-Aspose.Words for Java의 문서 비교는 다양한 문서 처리 시나리오에 사용할 수 있는 강력한 기능입니다. 광범위한 사용자 정의 옵션을 통해 특정 요구 사항에 맞게 비교 프로세스를 맞춤화하여 Java 개발 툴킷의 귀중한 도구로 만들 수 있습니다.
+Aspose.Words for Java의 문서 비교는 다양한 문서 처리 시나리오에 사용할 수 있는 강력한 기능입니다. 광범위한 사용자 정의 옵션을 통해 특정 요구 사항에 맞게 비교 프로세스를 맞춤화하여 Java 개발 툴킷의 귀중한 도구로 활용할 수 있습니다.
 
 ## FAQ
 

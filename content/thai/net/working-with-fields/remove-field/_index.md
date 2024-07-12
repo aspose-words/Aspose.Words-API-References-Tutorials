@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 
 #### ถาม: ฉันจะลบฟิลด์ในเอกสาร Word โดยใช้ Aspose.Words for .NET ได้อย่างไร
 
- ตอบ: หากต้องการลบฟิลด์ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คุณสามารถวนซ้ำฟิลด์ในเอกสารโดยใช้`FieldStart` คลาสและใช้`FieldStart.Remove`วิธีการลบฟิลด์
+ ตอบ: หากต้องการลบฟิลด์ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คุณสามารถวนซ้ำฟิลด์ในเอกสารโดยใช้`FieldStart` คลาสและใช้`FieldStart.Remove` วิธีการลบฟิลด์
 
 #### ถาม: เป็นไปได้ไหมที่จะลบเฉพาะบางฟิลด์ในเอกสาร Word ด้วย Aspose.Words for .NET
 

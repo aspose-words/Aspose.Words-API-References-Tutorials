@@ -7,98 +7,118 @@ type: docs
 weight: 10
 url: /ja/net/programming-with-charts/bounds-of-axis/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してグラフの軸の境界を設定する方法について説明します。グラフを挿入し、系列データを追加し、軸のスケーリングを構成することで、軸の最小値と最大値を定義できます。
+.NET でグラフを使用したプロフェッショナルなドキュメントを作成したいとお考えですか? まさにうってつけのガイドです! このガイドでは、Aspose.Words for .NET を使用してグラフの軸の境界を設定する手順を説明します。ライブラリを初めて使用する場合でも簡単に理解できるように、各手順を詳しく説明します。それでは、早速始めましょう!
 
 ## 前提条件
-このチュートリアルを実行するには、次のものが必要です。
 
-- Aspose.Words for .NET ライブラリがインストールされています。
-- C# と Word 文書を使用した Words Processing に関する基本的な知識。
+始める前に、以下のものを用意してください。
 
-## ステップ1: ドキュメントディレクトリを設定する
-まず、ドキュメントディレクトリへのパスを設定します。`"YOUR DOCUMENT DIRECTORY"`ドキュメントを保存するディレクトリへの実際のパスを入力します。
+-  Aspose.Words for .NET: 次のようなことができます[ダウンロード](https://releases.aspose.com/words/net/)最新バージョンを使用するか、[無料トライアル](https://releases.aspose.com/).
+- .NET Framework: システムに .NET がインストールされていることを確認してください。
+- IDE: Visual Studio のような開発環境。
+
+すべての準備が整ったら、次のステップに進むことができます。
+
+## 名前空間のインポート
+
+まず、必要な名前空間をインポートする必要があります。これにより、Aspose.Words ライブラリとそのチャート機能にアクセスできるようになります。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+## ステップ1: ドキュメントディレクトリを設定する
+
+まず最初に、ドキュメントを保存するディレクトリを設定する必要があります。これは簡単なステップですが、ファイルを整理するためには非常に重要です。
+
+```csharp
+//ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ2: 新しいドキュメントとDocumentBuilderを作成する
-新しいインスタンスを作成する`Document`クラスと`DocumentBuilder`ドキュメントを操作するオブジェクト。
+## ステップ2: 新しいドキュメントを作成する
+
+次に、新しいドキュメント オブジェクトを作成します。このドキュメントは、チャートのコンテナーとして機能します。
 
 ```csharp
 Document doc = new Document();
+```
+
+## ステップ3: ドキュメントビルダーを初期化する
+
+DocumentBuilder クラスは、ドキュメントをすばやく簡単に作成する方法を提供します。ドキュメントで初期化します。
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ3: グラフを挿入して構成する
-ドキュメントにグラフを挿入するには、`InsertChart`方法の`DocumentBuilder`オブジェクト。希望するグラフの種類と寸法を設定します。
+## ステップ4: グラフを挿入する
+
+次に、ドキュメントにグラフを挿入します。この例では、縦棒グラフを使用します。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## ステップ4: シリーズデータを追加する
-グラフ内の既存のシリーズをクリアし、新しいシリーズ データを追加します。この例では、「アイテム 1」から「アイテム 5」までのラベルと対応する値を持つシリーズを追加します。
+## ステップ5: 既存のシリーズをクリアする
+
+最初からやり直すには、チャートから既存のシリーズをすべてクリアします。
 
 ```csharp
 chart.Series.Clear();
+```
+
+## ステップ6: グラフにデータを追加する
+
+ここでは、チャートにデータを追加します。これには、シリーズ名とデータ ポイントの指定が含まれます。
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## ステップ5: 軸の境界を設定する
-Y軸のスケーリングを設定するには、`Scaling.Minimum`そして`Scaling.Maximum`軸のプロパティ。
+## ステップ7: 軸の境界を設定する
+
+軸の境界を設定すると、グラフのスケールが正しく設定されます。
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
 chart.AxisY.Scaling.Maximum = new AxisBound(6);
 ```
 
-## ステップ6: ドキュメントを保存する
-指定されたディレクトリにドキュメントを保存するには、`Save`メソッド。適切なファイル拡張子を持つファイル名を指定します。この例では、ドキュメントを「WorkingWithCharts.BoundsOfAxis.docx」として保存します。
+## ステップ8: ドキュメントを保存する
+
+最後に、ドキュメントを指定されたディレクトリに保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-### Aspose.Words for .NET を使用した Bounds Of Axis のサンプル ソース コード 
-
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Scaling.Minimum = new AxisBound(0);
-	chart.AxisY.Scaling.Maximum = new AxisBound(6);
-	doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
-```
-
-これで完了です。Aspose.Words for .NET を使用して、グラフの軸の境界を正常に設定できました。
+これで完了です。Aspose.Words for .NET を使用してグラフ付きのドキュメントを正常に作成できました。 
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用してグラフの軸の境界を設定する方法を学習しました。ステップ バイ ステップ ガイドに従うことで、グラフを挿入して構成し、系列データを追加し、軸のスケーリングの最小値と最大値を定義できます。Aspose.Words for .NET は、Word ドキュメントの Words Processing 用の強力で柔軟な API を提供し、動的で視覚的に魅力的なグラフを簡単に作成できます。
 
+Aspose.Words for .NET を使用すると、ドキュメント内でグラフを簡単に作成および操作できます。このステップ バイ ステップ ガイドでは、グラフの軸の境界を設定し、データのプレゼンテーションをより正確かつプロフェッショナルにする方法を説明しました。レポート、プレゼンテーション、またはその他のドキュメントを作成する場合でも、Aspose.Words は必要なツールを提供します。
 
-### よくある質問
+## よくある質問
 
-#### Q1. Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、開発者が Word 文書をプログラムで操作できるようにするライブラリです。Word 文書を作成、操作、保存するための幅広い機能を提供します。
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、.NET フレームワークを使用してプログラムで Word 文書を作成、変更、変換できるライブラリです。
 
-#### Q2. Aspose.Words for .NET をインストールするにはどうすればよいですか?
-Aspose.Words for .NET をインストールするには、Visual Studio の NuGet パッケージ マネージャーを使用できます。NuGet パッケージ マネージャーで「Aspose.Words」を検索し、プロジェクトにインストールするだけです。
+### Aspose.Words for .NET をセットアップするにはどうすればよいですか?
+ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/)提供されているインストール手順に従ってください。
 
-#### Q3. Aspose.Words for .NET を他のプログラミング言語で使用できますか?
-いいえ、Aspose.Words for .NET は .NET アプリケーション専用に設計されています。C# や VB.NET などのプログラミング言語で動作します。
+### Aspose.Words を無料で使用できますか?
+はい、[無料トライアル](https://releases.aspose.com/)または[一時ライセンス](https://purchase.aspose.com/temporary-license/).
 
-#### Q4. Aspose.Words for .NET を使用するためのその他の前提条件はありますか?
-Aspose.Words for .NET ライブラリをインストールすることに加えて、C# プログラミングと Word 文書での Words Processing に関する基本的な知識も必要です。.NET フレームワークの知識も役立ちます。
+### Aspose.Words for .NET のドキュメントはどこにありますか?
+詳細なドキュメントが利用可能[ここ](https://reference.aspose.com/words/net/).
+
+### Aspose.Words のサポートを受けるにはどうすればよいですか?
+訪問することができます[サポートフォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。

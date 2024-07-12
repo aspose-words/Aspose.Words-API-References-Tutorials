@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Trong đoạn mã này, chúng tôi đang xác định đường dẫn đến thư mục nơi tài liệu của chúng tôi sẽ được lưu và khởi tạo một địa chỉ mới`Document` Và`DocumentBuilder` ví dụ.
+ Trong đoạn mã này, chúng tôi đang xác định đường dẫn đến thư mục nơi tài liệu của chúng tôi sẽ được lưu và khởi tạo một địa chỉ mới`Document`Và`DocumentBuilder` ví dụ.
 
 ## Bước 3: Viết văn bản ban đầu
 

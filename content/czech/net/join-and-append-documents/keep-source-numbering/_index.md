@@ -2,24 +2,38 @@
 title: Udržujte číslování zdrojů
 linktitle: Udržujte číslování zdrojů
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Zjistěte, jak připojit dokument při zachování formátování zdrojového číslování v Aspose.Words for .NET.
+description: Naučte se importovat dokumenty při zachování formátování pomocí Aspose.Words for .NET. Podrobný průvodce s příklady kódu.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/keep-source-numbering/
 ---
+## Úvod
 
-Tento tutoriál vysvětluje, jak připojit zdrojový dokument k cílovému dokumentu při zachování původního formátování číslování číslovaných odstavců pomocí Aspose.Words for .NET.
+ Při práci s Aspose.Words for .NET lze import dokumentů z jednoho zdroje do druhého při zachování formátování efektivně zvládnout pomocí`NodeImporter` třída. Tento tutoriál vás provede procesem krok za krokem.
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Ujistěte se, že máte následující předpoklady:
+Než začnete, ujistěte se, že máte následující:
+- Visual Studio nainstalované na vašem počítači.
+-  Aspose.Words for .NET nainstalován. Pokud ne, stáhněte si jej z[tady](https://releases.aspose.com/words/net/).
+- Základní znalost programování v C# a .NET.
 
--  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose.Releases]https://releases.aspose.com/words/net/ nebo k instalaci použijte správce balíčků NuGet.
-- Cesta k adresáři dokumentů, kam budou uloženy zdrojové a cílové dokumenty.
+## Importovat jmenné prostory
 
-## Krok 2: Vytvořte cílové a zdrojové dokumenty
+Nejprve do projektu zahrňte potřebné jmenné prostory:
 
- Vytvořit instance`Document` pro cílové a zdrojové dokumenty.
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+## Krok 1: Nastavte svůj projekt
+
+Začněte vytvořením nového projektu C# v sadě Visual Studio a nainstalujte Aspose.Words prostřednictvím NuGet Package Manager.
+
+## Krok 2: Inicializujte dokumenty
+Vytvořte instance zdroje (`srcDoc`) a cíl (`dstDoc`) dokumenty.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
@@ -29,18 +43,17 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Při importu ponechte číslování zdrojů
-
- Chcete-li zachovat formátování číslování číslovaných odstavců ze zdrojového dokumentu, vytvořte instanci`ImportFormatOptions` a nastavit`KeepSourceNumbering` na`true` . Použijte a`NodeImporter` pro import uzlů ze zdrojového dokumentu do cílového dokumentu s uvedením`ImportFormatMode.KeepSourceFormatting` a`importFormatOptions`.
+## Krok 3: Nakonfigurujte možnosti importu
+Nastavte možnosti importu pro zachování formátování zdroje, včetně číslovaných odstavců.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
+	importFormatOptions);
 ```
 
-## Krok 4: Importujte a přidejte odstavce
-
- Procházejte odstavce ve zdrojovém dokumentu a importujte každý odstavec do cílového dokumentu pomocí`importer`. Připojte importované uzly k tělu cílového dokumentu.
+## Krok 4: Import odstavců
+Procházejte odstavce ve zdrojovém dokumentu a importujte je do cílového dokumentu.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -51,33 +64,30 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Krok 5: Uložte upravený dokument
-
- Uložte upravený dokument pomocí`Save` metoda`Document` objekt.
+## Krok 5: Uložte dokument
+Uložte sloučený dokument do požadovaného umístění.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-Tím je dokončena implementace připojení zdrojového dokumentu k cílovému dokumentu při zachování původního formátování číslování pomocí Aspose.Words for .NET.
+## Závěr
 
-### Příklad zdrojového kódu pro Keep Source Numbering pomocí Aspose.Words for .NET 
+ Závěrem lze říci, že použití Aspose.Words pro .NET k importu dokumentů při zachování formátování je jednoduché s`NodeImporter` třída. Tato metoda zajišťuje bezproblémové zachování původního vzhledu a struktury dokumentů.
 
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Při importu číslovaných odstavců dodržujte formátování seznamu zdrojů.
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, false);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
-```
+### Mohu importovat dokumenty s různými styly formátování?
+ Ano,`NodeImporter` třída podporuje import dokumentů s různými styly formátování.
+
+### Co když moje dokumenty obsahují složité tabulky a obrázky?
+Aspose.Words for .NET zpracovává složité struktury, jako jsou tabulky a obrázky, během operací importu.
+
+### Je Aspose.Words kompatibilní se všemi verzemi .NET?
+Aspose.Words podporuje verze .NET Framework a .NET Core pro bezproblémovou integraci.
+
+### Jak mohu řešit chyby při importu dokumentu?
+Použijte bloky try-catch ke zpracování výjimek, které mohou nastat během procesu importu.
+
+### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?
+ Navštivte[dokumentace](https://reference.aspose.com/words/net/) pro komplexní průvodce a reference API.

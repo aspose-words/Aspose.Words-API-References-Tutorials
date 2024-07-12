@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// पहली पंक्ति का पहला सेल डालें
+//पहली पंक्ति का पहला सेल डालें
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- यहां हम दो हेडर पंक्तियों और कई डेटा पंक्तियों वाली एक तालिका बनाने के लिए दस्तावेज़ बिल्डर का उपयोग करते हैं।`RowFormat.HeadingFormat`पैरामीटर्स का उपयोग हेडर पंक्तियों को चिह्नित करने के लिए किया जाता है जिन्हें आगामी पृष्ठों पर दोहराया जाना चाहिए।
+ यहां हम दो हेडर पंक्तियों और कई डेटा पंक्तियों वाली एक तालिका बनाने के लिए दस्तावेज़ बिल्डर का उपयोग करते हैं।`RowFormat.HeadingFormat` पैरामीटर्स का उपयोग हेडर पंक्तियों को चिह्नित करने के लिए किया जाता है जिन्हें आगामी पृष्ठों पर दोहराया जाना चाहिए।
 
 ## चरण 4: संशोधित दस्तावेज़ को सहेजना
 अंततः यू.एस.

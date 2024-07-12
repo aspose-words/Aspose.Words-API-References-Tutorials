@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. Adım: Zaman alanını ekleme
 
- biz kullanıyoruz`InsertField()` Belgeye zaman alanı ekleme yöntemi.
+ biz kullanıyoruz`InsertField()`Belgeye zaman alanı ekleme yöntemi.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

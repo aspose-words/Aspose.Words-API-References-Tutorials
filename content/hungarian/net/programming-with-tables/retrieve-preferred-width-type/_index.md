@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Aktiválja az automatikus asztal beállítást
 table. AllowAutoFit = true;
 
-// Az első sor első cellájának lekérése
+//Az első sor első cellájának lekérése
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Keresse meg a kívánt szélességtípust és annak értékét
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-Itt a dokumentumot használjuk az első táblázat lekérésére, majd engedélyezzük az automatikus táblázatillesztést a`AllowAutoFit` ingatlan. Ezután lekérjük a táblázat első sorának első celláját. Ebből a cellából lekérhetjük a kívánt szélességtípust a`PreferredWidth.Type` ingatlan és annak értéke a`PreferredWidth.Value` ingatlan.
+ Itt a dokumentumot használjuk az első táblázat lekérésére, majd engedélyezzük az automatikus táblázatillesztést a`AllowAutoFit` ingatlan. Ezután lekérjük a táblázat első sorának első celláját. Ebből a cellából lekérhetjük a kívánt szélességtípust a`PreferredWidth.Type` ingatlan és annak értéke a`PreferredWidth.Value` ingatlan.
 
 ### Minta forráskód a Retrieve Preferred Width Type funkcióhoz az Aspose.Words for .NET használatával 
 

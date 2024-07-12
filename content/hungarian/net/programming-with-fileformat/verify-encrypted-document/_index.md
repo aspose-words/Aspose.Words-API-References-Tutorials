@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## 3. lépés: Ellenőrizze, hogy a dokumentum titkosítva van-e
 
- Használjuk a`IsEncrypted` tulajdona a`FileFormatInfo`objektumot, hogy ellenőrizze, hogy a dokumentum titkosítva van-e. Ez a tulajdonság visszatér`true` ha a dokumentum titkosított, ellenkező esetben visszatér`false`. Az eredményt megjelenítjük a konzolon.
+ Használjuk a`IsEncrypted` tulajdona a`FileFormatInfo` objektumot, hogy ellenőrizze, hogy a dokumentum titkosítva van-e. Ez a tulajdonság visszatér`true` ha a dokumentum titkosított, ellenkező esetben visszatér`false`. Az eredményt megjelenítjük a konzolon.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -54,7 +54,7 @@ Ez minden ! Sikeresen ellenőrizte, hogy egy dokumentum titkosítva van-e az Asp
 
 ### K: Milyen lépésekkel ellenőrizheti a titkosított Word-dokumentumot?
 
-A titkosított Word-dokumentum ellenőrzésének lépései a következők:
+titkosított Word-dokumentum ellenőrzésének lépései a következők:
 
 Határozza meg a dokumentumkönyvtárat.
 
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### K: Hogyan lehet felismerni a fájlformátumot?
- Használhatja a`DetectFileFormat` módszere a`FileFormatUtil`osztály a fájlformátum információinak észleléséhez. A következő példában feltételezzük, hogy a titkosított dokumentum neve "Encrypted.docx", és a megadott dokumentumkönyvtárban található:
+ Használhatja a`DetectFileFormat` módszere a`FileFormatUtil` osztály a fájlformátum információinak észleléséhez. A következő példában feltételezzük, hogy a titkosított dokumentum neve "Encrypted.docx", és a megadott dokumentumkönyvtárban található:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### K: Hogyan ellenőrizhető, hogy a dokumentum titkosított-e?
- Használhatja a`IsEncrypted` tulajdona a`FileFormatInfo`objektumot, hogy ellenőrizze, hogy a dokumentum titkosítva van-e. Ez a tulajdonság visszatér`true` ha a dokumentum titkosított, ellenkező esetben visszatér`false`. Az eredmény megjelenik a konzolon:
+ Használhatja a`IsEncrypted` tulajdona a`FileFormatInfo` objektumot, hogy ellenőrizze, hogy a dokumentum titkosítva van-e. Ez a tulajdonság visszatér`true` ha a dokumentum titkosított, ellenkező esetben visszatér`false`. Az eredmény megjelenik a konzolon:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

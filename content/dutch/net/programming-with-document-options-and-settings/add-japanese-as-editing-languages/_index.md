@@ -21,7 +21,7 @@ In deze stap laden we het Word-document dat geen standaard bewerkingstaal bevat 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// Stel de taalvoorkeuren in die worden gebruikt bij het laden van het document.
+//Stel de taalvoorkeuren in die worden gebruikt bij het laden van het document.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";

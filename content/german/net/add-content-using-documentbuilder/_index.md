@@ -13,7 +13,7 @@ url: /de/net/add-content-using-documentbuilder/
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Neues Word-Dokument erstellen](./create-new-document/) | Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET erstellen. Diese Schritt-für-Schritt-Anleitung führt Sie durch den Prozess und macht die Dokumentautomatisierung einfach. |
+| [Neues Word-Dokument erstellen](./create-new-document/) | Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET erstellen. Diese Schritt-für-Schritt-Anleitung führt Sie durch den Prozess und macht die Dokumentenautomatisierung einfach. |
 | [Dokument-Generator: Lesezeichen in Word-Dokument einfügen](./document-builder-insert-bookmark/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Lesezeichen in Word-Dokumente einfügen. Perfekt für die Dokumentenautomatisierung. |
 | [Tabelle im Word-Dokument erstellen](./build-table/) | Erfahren Sie in diesem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument erstellen. Perfekt für Anfänger und Profis gleichermaßen. |
 | [Horizontale Linie in Word-Dokument einfügen](./insert-horizontal-rule/) | Erfahren Sie in unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET eine horizontale Linie in Word-Dokumente einfügen. Perfekt für C#-Entwickler. |

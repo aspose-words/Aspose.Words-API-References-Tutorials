@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Hier verwenden wir eine Bedingung, um zu prüfen, ob das Array vom Typ float ist. Wenn ja, drucken wir die`RelativeHorizontalAlignment` Und`RelativeVerticalAlignment` Eigenschaften, um die relative horizontale und vertikale Ausrichtung der Tabelle zu erhalten. Andernfalls drucken wir die`Alignment` Eigenschaft, um die Array-Ausrichtung zu erhalten.
+ Hier verwenden wir eine Bedingung, um zu prüfen, ob das Array vom Typ float ist. Wenn ja, drucken wir die`RelativeHorizontalAlignment`Und`RelativeVerticalAlignment` Eigenschaften, um die relative horizontale und vertikale Ausrichtung der Tabelle zu erhalten. Andernfalls drucken wir die`Alignment` Eigenschaft, um die Array-Ausrichtung zu erhalten.
 
 ### Beispielquellcode für Get Table Position mit Aspose.Words für .NET 
 

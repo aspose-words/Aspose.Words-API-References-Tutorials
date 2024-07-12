@@ -17,7 +17,7 @@ Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,14 +43,14 @@ para.Runs.Add(run);
 ```
 
 ## Langkah 4: Tambahkan Konten Teks Kaya ke Kontrol Konten
-Tambahkan paragraf dengan konten teks kaya ke`ChildNodes` kumpulan kontrol konten kotak teks kaya.
+ Tambahkan paragraf dengan konten teks kaya ke`ChildNodes` kumpulan kontrol konten kotak teks kaya.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);
 ```
 
 ## Langkah 5: Tambahkan Kontrol Konten ke Dokumen
- Tambahkan kontrol konten kotak teks kaya ke badan dokumen dengan menggunakan`AppendChild` metode isi bagian pertama dokumen.
+ Tambahkan kontrol konten kotak teks kaya ke isi dokumen dengan menggunakan`AppendChild` metode isi bagian pertama dokumen.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);

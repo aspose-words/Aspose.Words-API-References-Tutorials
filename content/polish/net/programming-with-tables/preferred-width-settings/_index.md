@@ -103,4 +103,4 @@ Pamiętaj, aby określić poprawną ścieżkę i nazwę pliku dokumentu wyjścio
 ```
 
 ## Wniosek
-W tym samouczku nauczyliśmy się, jak ustawić preferowane ustawienia szerokości komórek tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz dostosować szerokość komórek tabeli do swoich konkretnych potrzeb w dokumentach programu Word.
+tym samouczku nauczyliśmy się, jak ustawić preferowane ustawienia szerokości komórek tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz dostosować szerokość komórek tabeli do swoich konkretnych potrzeb w dokumentach programu Word.

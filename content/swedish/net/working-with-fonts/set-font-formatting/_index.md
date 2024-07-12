@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Skapa och formatera dokumentet
- Skapa en instans av`Document` klass och`DocumentBuilder`klass för att bygga dokumentet. Använd`Font` egendom av`DocumentBuilder` för att komma åt egenskaper för teckensnittsformatering.
+ Skapa en instans av`Document` klass och`DocumentBuilder` klass för att bygga dokumentet. Använd`Font` egendom av`DocumentBuilder`för att komma åt egenskaper för teckensnittsformatering.
 
 ```csharp
 Document doc = new Document();

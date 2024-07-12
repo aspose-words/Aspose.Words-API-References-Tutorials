@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-document-options-and-settings/add-japanese-as-editing-languages/
 ---
 
-den här handledningen tar vi dig steg för steg för att förstå och implementera funktionen för att lägga till japanska som redigeringsspråk med Aspose.Words för .NET. Med den här funktionen kan du ställa in språkinställningar när du laddar ett dokument och lägga till japanska som redigeringsspråk.
+I den här handledningen tar vi dig steg för steg för att förstå och implementera funktionen för att lägga till japanska som redigeringsspråk med Aspose.Words för .NET. Med den här funktionen kan du ställa in språkinställningar när du laddar ett dokument och lägga till japanska som redigeringsspråk.
 
 ## Steg 1: Projektinställning
 
@@ -21,7 +21,7 @@ I det här steget kommer vi att ladda Word-dokumentet som inte innehåller ett s
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// Ställ in de språkinställningar som ska användas när dokumentet laddas.
+//Ställ in de språkinställningar som ska användas när dokumentet laddas.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";

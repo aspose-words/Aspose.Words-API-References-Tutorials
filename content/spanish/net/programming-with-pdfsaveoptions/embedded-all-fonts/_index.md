@@ -68,7 +68,7 @@ En este tutorial, aprendimos cómo incrustar todas las fuentes en un documento P
 ### Preguntas frecuentes
 
 #### P: ¿Qué es incrustar fuentes en un documento PDF y por qué es importante?
-R: Incrustar fuentes en un documento PDF es el proceso de incluir todas las fuentes utilizadas en el documento en el propio archivo PDF. Esto garantiza que las fuentes especificadas en el documento estarán disponibles y se mostrarán correctamente, incluso si las fuentes no están instaladas en el sistema donde se abre el PDF. La incrustación de fuentes es importante para preservar el aspecto y el formato del documento, asegurando que las fuentes se representen de manera consistente en diferentes dispositivos y plataformas.
+R: Incrustar fuentes en un documento PDF es el proceso de incluir todas las fuentes utilizadas en el documento en el propio archivo PDF. Esto garantiza que las fuentes especificadas en el documento estarán disponibles y se mostrarán correctamente, incluso si las fuentes no están instaladas en el sistema donde se abre el PDF. La incrustación de fuentes es importante para preservar la apariencia y el formato del documento, asegurando que las fuentes se representen de manera consistente en diferentes dispositivos y plataformas.
 
 #### P: ¿Cómo puedo incrustar todas las fuentes en un documento PDF usando Aspose.Words para .NET?
 R: Para incrustar todas las fuentes en un documento PDF usando Aspose.Words para .NET, siga estos pasos:

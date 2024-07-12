@@ -121,7 +121,7 @@ Aspose.Words for Javaの無料トライアルを入手できます[ここ](https
 
 ### 3. Aspose.Words for Java のサポートはどこで受けられますか?
 
-サポートやコミュニティのディスカッションについては、[Aspose.Words for Java フォーラム](https://forum.aspose.com/).
+サポートとコミュニティの議論については、[Aspose.Words for Java フォーラム](https://forum.aspose.com/).
 
 ### 4. Aspose.Words for Java を他の Java ライブラリと一緒に使用できますか?
 

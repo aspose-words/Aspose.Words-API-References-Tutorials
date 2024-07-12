@@ -65,7 +65,7 @@ Hãy làm theo các bước sau để xóa một trường cụ thể trong tài
 
 #### Câu hỏi: Làm cách nào tôi có thể xóa một trường trong tài liệu Word bằng Aspose.Words cho .NET?
 
- Trả lời: Để xóa một trường trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể lặp qua các trường trong tài liệu bằng cách sử dụng lệnh`FieldStart` lớp và sử dụng`FieldStart.Remove`phương pháp để loại bỏ trường.
+ Trả lời: Để xóa một trường trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể lặp qua các trường trong tài liệu bằng cách sử dụng lệnh`FieldStart` lớp và sử dụng`FieldStart.Remove` phương pháp để loại bỏ trường.
 
 #### Câu hỏi: Có thể chỉ xóa một số trường nhất định trong tài liệu Word bằng Aspose.Words cho .NET không?
 

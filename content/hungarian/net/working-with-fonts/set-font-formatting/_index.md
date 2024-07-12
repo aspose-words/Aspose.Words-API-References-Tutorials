@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: A dokumentum létrehozása és formázása
- Hozzon létre egy példányt a`Document` osztály és a`DocumentBuilder`osztályt a dokumentum elkészítéséhez. Használja a`Font` tulajdona a`DocumentBuilder` a betűtípus formázási tulajdonságainak eléréséhez.
+ Hozzon létre egy példányt a`Document` osztály és a`DocumentBuilder` osztályt a dokumentum elkészítéséhez. Használja a`Font` tulajdona a`DocumentBuilder` betűtípus formázási tulajdonságainak eléréséhez.
 
 ```csharp
 Document doc = new Document();

@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Bước 2: Tải tài liệu của bạn
 
- Tiếp theo, bạn sẽ cần tải các tài liệu Word mà bạn muốn so sánh. Trong ví dụ này, chúng tôi giả sử bạn có hai tài liệu có tên`Document.docx` Và`Document2.docx` nằm trong thư mục tài liệu của bạn.
+ Tiếp theo, bạn sẽ cần tải các tài liệu Word mà bạn muốn so sánh. Trong ví dụ này, chúng tôi giả sử bạn có hai tài liệu có tên`Document.docx`Và`Document2.docx` nằm trong thư mục tài liệu của bạn.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.

@@ -22,7 +22,7 @@ Aspose.Words for .NET の表スタイルと書式設定による Words 処理に
 | [行の書式を変更する](./modify-row-formatting/) | Aspose.Words for .NET を使用してテーブル行の書式を変更するためのステップバイステップ ガイド。 |
 | [行の書式設定を適用する](./apply-row-formatting/) | Aspose.Words for .NET を使用してテーブルに行の書式設定を適用するためのステップ バイ ステップ ガイド。 |
 | [セルの余白を設定する](./set-cell-padding/) | Aspose.Words for .NET を使用して表のセルの余白を設定する手順ガイド。 |
-| [セルの書式を変更する](./modify-cell-formatting/) | Aspose.Words for .NET を使用してテーブル内のセルの書式設定を変更するためのステップ バイ ステップ ガイド。 |
+| [セルの書式を変更する](./modify-cell-formatting/) | Aspose.Words for .NET を使用してテーブル内のセルの書式を変更するためのステップ バイ ステップ ガイド。 |
 | [表とセルを異なる境界線で書式設定する](./format-table-and-cell-with-different-borders/) | Aspose.Words for .NET を使用して、異なる境界線でテーブルとセルをフォーマットするためのステップ バイ ステップ ガイド。 |
 | [テーブルのタイトルと説明を設定する](./set-table-title-and-description/) | Aspose.Words for .NET を使用して表のタイトルと説明を設定する手順ガイド。 |
 | [セル間隔を許可する](./allow-cell-spacing/) | Aspose.Words for .NET を使用してセルの間隔を調整するためのステップ バイ ステップ ガイド。 |

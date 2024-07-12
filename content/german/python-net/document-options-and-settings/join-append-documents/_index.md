@@ -1,7 +1,7 @@
 ---
 title: Fortgeschrittene Techniken zum Zusammenfügen und Anhängen von Dokumenten
 linktitle: Fortgeschrittene Techniken zum Zusammenfügen und Anhängen von Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erlernen Sie fortgeschrittene Techniken zum Zusammenführen und Anhängen von Dokumenten mit Aspose.Words in Python. Schritt-für-Schritt-Anleitung mit Codebeispielen.
 type: docs
 weight: 10
@@ -62,11 +62,11 @@ existing_doc.save("updated_document.docx")
 
 ## Formatierung und Stil
 
-Beim Zusammenfügen oder Anhängen von Dokumenten ist die Einhaltung einer einheitlichen Formatierung und Stilistik von entscheidender Bedeutung. Aspose.Words stellt sicher, dass die Formatierung des zusammengeführten Inhalts erhalten bleibt.
+Beim Zusammenfügen oder Anhängen von Dokumenten ist die Einhaltung einer einheitlichen Formatierung und Gestaltung von entscheidender Bedeutung. Aspose.Words stellt sicher, dass die Formatierung des zusammengeführten Inhalts erhalten bleibt.
 
 ## Seitenlayout verwalten
 
-Beim Zusammenführen von Dokumenten ist das Seitenlayout häufig ein Problem. Mit Aspose.Words können Sie Seitenumbrüche, Ränder und Ausrichtung steuern, um das gewünschte Layout zu erreichen.
+Beim Zusammenführen von Dokumenten ist das Seitenlayout oft ein Problem. Mit Aspose.Words können Sie Seitenumbrüche, Ränder und Ausrichtung steuern, um das gewünschte Layout zu erreichen.
 
 ## Umgang mit Kopf- und Fußzeilen
 

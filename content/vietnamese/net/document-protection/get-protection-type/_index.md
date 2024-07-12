@@ -2,74 +2,86 @@
 title: Nhận loại bảo vệ trong tài liệu Word
 linktitle: Nhận loại bảo vệ trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách sử dụng chức năng Nhận loại bảo vệ trong tài liệu word của Aspose.Words cho .NET để xác định loại bảo vệ của tài liệu.
+description: Tìm hiểu cách kiểm tra loại bảo vệ của tài liệu Word bằng Aspose.Words cho .NET. Bao gồm hướng dẫn từng bước, ví dụ về mã và Câu hỏi thường gặp.
 type: docs
 weight: 10
 url: /vi/net/document-protection/get-protection-type/
 ---
-Chào mừng bạn đến với hướng dẫn từng bước giải thích mã nguồn C# cho tính năng Nhận loại bảo vệ của Aspose.Words cho .NET. Trong bài viết này, chúng tôi sẽ hướng dẫn bạn cách sử dụng tính năng mạnh mẽ này để xác định loại bảo vệ của tài liệu. Bảo vệ tài liệu là điều cần thiết để đảm bảo tính bảo mật và toàn vẹn cho các tệp của bạn. Chúng tôi sẽ hướng dẫn bạn các bước cần thiết để tích hợp Aspose.Words cho .NET và sử dụng tính năng Nhận loại bảo vệ.
+## Giới thiệu
 
-## Bước 1: Tải tài liệu
+Này! Bạn đã bao giờ tự hỏi làm cách nào để kiểm tra loại bảo vệ tài liệu Word của mình theo chương trình chưa? Cho dù bạn đang bảo mật dữ liệu nhạy cảm hay chỉ tò mò về trạng thái của tài liệu, việc biết cách nhận loại bảo vệ có thể cực kỳ hữu ích. Hôm nay, chúng ta sẽ hướng dẫn quy trình sử dụng Aspose.Words for .NET, một thư viện mạnh mẽ giúp làm việc với tài liệu Word trở nên dễ dàng. Hãy thắt dây an toàn và cùng lao vào!
 
-Bước đầu tiên để sử dụng tính năng Nhận loại bảo vệ là tải tài liệu bạn muốn làm việc lên. Bạn có thể thực hiện việc này bằng cách sử dụng lớp Tài liệu do Aspose.Words cung cấp cho .NET. Đây là mã mẫu để tải tài liệu từ một tệp:
+## Điều kiện tiên quyết
+
+Trước khi chuyển sang phần mã hóa, hãy đảm bảo bạn có mọi thứ mình cần:
+
+1.  Aspose.Words for .NET Library: Nếu bạn chưa có, hãy tải xuống và cài đặt[Thư viện Aspose.Words cho .NET](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Một IDE như Visual Studio.
+3. Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ giúp bạn theo dõi.
+
+## Nhập không gian tên
+
+Trước khi bắt đầu viết mã, bạn cần nhập các không gian tên cần thiết. Điều này đảm bảo bạn có quyền truy cập vào tất cả các lớp và phương thức do Aspose.Words cung cấp.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
+using System;
+using Aspose.Words;
 ```
 
-Đảm bảo chỉ định đường dẫn chính xác tới tệp tài liệu của bạn.
+## Hướng dẫn từng bước một
 
-## Bước 2: Truy xuất Loại bảo vệ
+Hãy chia nhỏ quy trình thành các bước đơn giản, dễ thực hiện. Mỗi bước sẽ hướng dẫn bạn thực hiện một phần cụ thể của nhiệm vụ, đảm bảo bạn hiểu mọi thứ một cách rõ ràng.
 
-Sau khi tài liệu được tải lên, bạn có thể sử dụng thuộc tính ProtectionType của đối tượng Document để truy xuất kiểu bảo vệ được áp dụng cho tài liệu. Đây là cách bạn có thể làm điều đó:
+## Bước 1: Thiết lập dự án của bạn
+
+Trước tiên, hãy thiết lập dự án C# của bạn trong Visual Studio. Đây là cách thực hiện:
+
+1. Tạo một dự án mới: Mở Visual Studio, đi tới Tệp > Mới > Dự án và chọn Ứng dụng bảng điều khiển (.NET Core hoặc .NET Framework).
+2. Cài đặt Aspose.Words: Nhấp chuột phải vào dự án của bạn trong Solution Explorer, chọn "Quản lý gói NuGet", tìm kiếm "Aspose.Words" và cài đặt nó.
+
+## Bước 2: Tải tài liệu của bạn
+
+ Bây giờ dự án của bạn đã được thiết lập, hãy tải tài liệu Word mà bạn muốn kiểm tra. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến tài liệu của bạn.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Document.docx");
+```
+
+## Bước 3: Nhận loại bảo vệ
+
+Đây là nơi phép thuật xảy ra! Chúng tôi sẽ truy xuất loại bảo vệ của tài liệu bằng Aspose.Words.
 
 ```csharp
 ProtectionType protectionType = doc.ProtectionType;
 ```
 
-### Mã nguồn mẫu cho loại bảo vệ nhận bằng Aspose.Words cho .NET
+## Bước 4: Hiển thị Loại bảo vệ
 
-Đây là mã nguồn hoàn chỉnh cho hàm Get Protection Type bằng Aspose.Words cho .NET:
+Cuối cùng, hãy hiển thị loại bảo vệ trong bảng điều khiển. Điều này giúp bạn hiểu được trạng thái bảo vệ hiện tại của tài liệu của bạn.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
-ProtectionType protectionType = doc.ProtectionType;
+Console.WriteLine("The protection type of the document is: " + protectionType);
 ```
 
 ## Phần kết luận
 
-Trong bài viết này, chúng tôi đã giải thích cách sử dụng chức năng Nhận loại bảo vệ của Aspose.Words cho .NET để xác định loại bảo vệ của tài liệu. Bằng cách làm theo các bước được mô tả, bạn sẽ có thể dễ dàng tích hợp chức năng này vào các dự án C# của riêng mình và thao tác hiệu quả với các tài liệu được bảo vệ. Aspose.Words for .NET mang đến sự linh hoạt tuyệt vời
+Và bạn có nó rồi đấy! Bạn đã truy xuất thành công loại bảo vệ của tài liệu Word bằng Aspose.Words cho .NET. Điều này có thể cực kỳ hữu ích để đảm bảo tài liệu của bạn được bảo mật đúng cách hoặc chỉ dành cho mục đích kiểm tra. Hãy nhớ rằng, Aspose.Words cung cấp rất nhiều tính năng khác có thể giúp bạn thao tác tài liệu Word một cách dễ dàng. Hãy dùng thử và chúc bạn viết mã vui vẻ!
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Thuộc tính ProtectionType trong Aspose.Words dành cho .NET là gì?
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ cho phép bạn tạo, chỉnh sửa, chuyển đổi và thao tác với tài liệu Word theo chương trình.
 
- Đáp: Cái`ProtectionType` thuộc tính trong Aspose.Words for .NET là một tính năng cho phép bạn xác định loại bảo vệ được áp dụng cho tài liệu Word. Nó cung cấp thông tin về mức độ bảo vệ tài liệu, chẳng hạn như liệu tài liệu có được bảo vệ cho các nhận xét, sửa đổi, biểu mẫu hoặc các loại hạn chế khác hay không.
+### Tôi có thể sử dụng Aspose.Words miễn phí không?
+ Bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) , nhưng để có đầy đủ chức năng, bạn sẽ cần phải mua giấy phép. Kiểm tra[tùy chọn mua hàng](https://purchase.aspose.com/buy).
 
-#### Câu hỏi: Làm cách nào tôi có thể truy xuất loại bảo vệ của tài liệu bằng Aspose.Words cho .NET?
+### Aspose.Words có thể phát hiện những loại bảo vệ nào?
+Aspose.Words có thể phát hiện nhiều loại bảo vệ khác nhau như NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments và AllowOnlyFormFields.
 
-Trả lời: Để truy xuất loại bảo vệ của tài liệu bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
-1.  Tải tài liệu bằng cách sử dụng`Document` lớp học.
-2.  Truy cập`ProtectionType` tài sản của`Document`đối tượng để lấy loại bảo vệ.
+### Làm cách nào tôi có thể nhận được hỗ trợ nếu gặp sự cố?
+ Đối với bất kỳ vấn đề, bạn có thể truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được giúp đỡ.
 
-#### Câu hỏi: Tôi có thể xác định xem tài liệu có được bảo vệ cho biểu mẫu hoặc trường biểu mẫu bằng thuộc tính ProtectionType không?
-
- Trả lời: Có, bạn có thể xác định xem tài liệu có được bảo vệ cho biểu mẫu hoặc trường biểu mẫu hay không bằng cách sử dụng`ProtectionType` thuộc tính trong Aspose.Words cho .NET. Nếu loại bảo vệ được đặt thành`AllowOnlyFormFields`, nó chỉ ra rằng tài liệu được bảo vệ và chỉ có thể chỉnh sửa các trường biểu mẫu.
-
-#### Câu hỏi: Thuộc tính ProtectionType có thể trả về những loại bảo vệ nào khác?
-
- Đáp: Cái`ProtectionType` Thuộc tính trong Aspose.Words cho .NET có thể trả về nhiều loại bảo vệ khác nhau, bao gồm:
-- `NoProtection`: Tài liệu không được bảo vệ.
-- `AllowOnlyRevisions`: Tài liệu được bảo vệ và chỉ có thể thực hiện sửa đổi.
-- `AllowOnlyComments`: Tài liệu được bảo vệ và chỉ có thể thêm nhận xét.
-- `AllowOnlyFormFields`: Tài liệu được bảo vệ và chỉ có thể chỉnh sửa các trường biểu mẫu.
-- `ReadOnly`: Tài liệu được bảo vệ và đặt ở chế độ chỉ đọc.
-
-#### Câu hỏi: Tôi có thể sửa đổi kiểu bảo vệ của tài liệu bằng thuộc tính ProtectionType không?
-
- Đ: Không, cái`ProtectionType`thuộc tính trong Aspose.Words cho .NET là thuộc tính chỉ đọc. Nó cho phép bạn truy xuất loại bảo vệ hiện tại của tài liệu nhưng không cung cấp phương tiện trực tiếp để sửa đổi loại bảo vệ. Để sửa đổi kiểu bảo vệ, bạn cần sử dụng các phương thức và thuộc tính khác có sẵn trong`Document` lớp, chẳng hạn như`Protect` hoặc`Unprotect`.
-
-#### Câu hỏi: Có thể bảo vệ một tài liệu bằng nhiều loại bảo vệ cùng một lúc không?
-
-Đáp: Không, Aspose.Words for .NET chỉ cho phép áp dụng một loại bảo vệ cho một tài liệu tại một thời điểm. Tuy nhiên, bạn có thể kết hợp các loại bảo vệ khác nhau bằng cách bật tính năng bảo vệ, đặt một loại, tắt tính năng bảo vệ rồi bật lại bằng loại khác.
-
+### Aspose.Words có tương thích với .NET Core không?
+Có, Aspose.Words tương thích với cả .NET Framework và .NET Core.

@@ -2,85 +2,105 @@
 title: 비밀번호로 문서 암호화
 linktitle: 비밀번호로 문서 암호화
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 비밀번호로 문서를 암호화하는 방법을 알아보세요.
+description: 이 상세한 단계별 가이드에서 .NET용 Aspose.Words를 사용하여 비밀번호로 문서를 암호화하는 방법을 알아보세요. 민감한 정보를 손쉽게 보호하세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-C# 응용 프로그램에서 파일을 단어 처리할 때 문서 보안은 필수적입니다. .NET용 Aspose.Words 라이브러리를 사용하면 문서를 비밀번호로 암호화하여 쉽게 보호할 수 있습니다. 이 단계별 가이드에서는 DocSaveOptions 저장 옵션을 사용하여 문서를 암호화하기 위해 .NET C# 소스 코드용 Aspose.Words를 사용하는 방법을 안내합니다.
+## 소개
 
-## Aspose.Words 라이브러리 이해
+비밀번호로 문서를 보호해야 했던 적이 있나요? 당신은 혼자가 아닙니다. 디지털 문서의 등장으로 민감한 정보를 보호하는 것이 그 어느 때보다 중요해졌습니다. Aspose.Words for .NET은 문서를 비밀번호로 암호화하는 원활한 방법을 제공합니다. 일기장에 자물쇠를 걸어놓는 것을 상상해 보세요. 열쇠(이 경우 비밀번호)를 가진 사람만이 내부를 엿볼 수 있습니다. 이를 달성할 수 있는 방법을 단계별로 살펴보겠습니다.
 
-코드를 살펴보기 전에 .NET용 Aspose.Words 라이브러리를 이해하는 것이 중요합니다. Aspose.Words는 .NET을 포함한 다양한 플랫폼에서 Word 문서를 생성, 편집, 변환 및 보호하는 강력한 라이브러리입니다. 텍스트 삽입, 서식 변경, 섹션 추가 등과 같은 문서 조작을 위한 다양한 기능을 제공합니다.
+## 전제조건
 
-## 1단계: 문서 디렉터리 정의
+일부 코드로 손을 더럽히기 전에 필요한 몇 가지 사항이 있습니다.
+1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio 또는 원하는 C# IDE.
+3. .NET Framework: 설치되어 있는지 확인하세요.
+4.  라이센스: 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 완전한 기능을 위해.
 
-첫 번째 단계는 암호화된 문서를 저장할 디렉터리를 설정하는 것입니다. 전체 디렉터리 경로를 지정해야 합니다. 예를 들어 :
+모든 것을 얻었나요? 엄청난! 프로젝트 설정으로 넘어가겠습니다.
+
+## 네임스페이스 가져오기
+
+시작하기 전에 필요한 네임스페이스를 가져와야 합니다. 네임스페이스를 DIY 프로젝트에 필요한 툴킷으로 생각하십시오.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1단계: 문서 만들기
+
+먼저 새 문서를 만들어 보겠습니다. 이는 마치 빈 종이를 준비하는 것과 같습니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-"YOUR DOCUMENTS DIRECTORY"를 문서 디렉토리의 실제 경로로 바꾸십시오.
-
-## 2단계: 문서 만들기 및 편집
-
-그런 다음 문서를 만들고 내용을 추가할 수 있습니다. Aspose.Words에서 제공하는 DocumentBuilder 클래스를 사용하여 문서 콘텐츠를 빌드하세요. 예를 들어 :
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-            
+```
+
+### 설명
+
+- dataDir: 이 변수는 문서가 저장될 경로를 저장합니다.
+- Document doc = new Document(): 이 줄은 새 문서를 초기화합니다.
+- DocumentBuilder builder = new DocumentBuilder(doc): DocumentBuilder는 문서에 콘텐츠를 추가하기 위한 편리한 도구입니다.
+
+## 2단계: 콘텐츠 추가
+
+이제 빈 시트가 생겼으니 그 위에 무언가를 적어 보겠습니다. 간단한 “Hello world!”는 어떻습니까? 권위 있는.
+
+```csharp
 builder.Write("Hello world!");
 ```
 
-이 예에서는 새 빈 문서를 만든 다음 DocumentBuilder를 사용하여 "Hello World!"라는 텍스트를 작성합니다.
+### 설명
 
-## 3단계: 녹음 옵션 구성
+- builder.Write("Hello world!"): 이 줄은 "Hello world!"라는 텍스트를 추가합니다. 귀하의 문서에.
 
-이제 문서의 저장 옵션을 구성해 보겠습니다. DocSaveOptions 클래스를 사용하여 저장 설정을 지정합니다. 예를 들어 :
+## 3단계: 저장 옵션 구성
+
+비밀번호 보호를 포함하도록 저장 옵션을 구성하는 중요한 부분이 여기에 있습니다. 여기서 잠금 강도를 결정합니다.
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 ```
 
-이 예에서는 새 DocSaveOptions 개체를 만들고 Password 속성을 "password"로 설정하여 이 암호로 문서를 암호화합니다.
+### 설명
 
-## 4단계: "비밀번호로 문서 암호화" 기능 활성화
+- DocSaveOptions saveOptions = new DocSaveOptions: DocSaveOptions 클래스의 새 인스턴스를 초기화합니다.
+- Password = "password": 문서의 비밀번호를 설정합니다. "password"를 원하는 비밀번호로 바꾸세요.
 
-우리는 이미 옵션을 구성했습니다.
+## 4단계: 문서 저장
 
-지정된 비밀번호로 등록하면 "비밀번호로 문서 암호화" 기능이 자동으로 활성화됩니다. 이렇게 하면 문서를 저장할 때 지정한 비밀번호로 문서가 암호화됩니다.
-
-## 5단계: 문서 저장
-
-마지막으로 Document 클래스의 Save 메서드를 사용하여 문서를 저장할 수 있습니다. 파일의 전체 경로와 원하는 파일 이름을 지정합니다. 예를 들어 :
+마지막으로 지정된 옵션을 사용하여 문서를 저장해 보겠습니다. 이는 잠긴 일기장을 안전한 곳에 보관하는 것과 같습니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);
 ```
 
-"dataDir"을 문서의 디렉터리 경로로 바꿔야 합니다.
+### 설명
 
-### .NET용 Aspose.Words를 사용하여 "비밀번호로 문서 암호화" 기능을 갖춘 DocSaveOptions 저장 옵션의 소스 코드 예
-
-```csharp
-// 문서 디렉토리 경로
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// 문서 만들기 및 편집
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-            
-builder.Write("Hello world!");
-
-// "암호로 문서 암호화" 기능으로 저장 옵션 구성
-DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
-
-// 지정된 옵션으로 문서를 저장합니다.
-doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);
-```
+- doc.Save: 정의된 저장 옵션을 사용하여 문서를 지정된 경로에 저장합니다.
+- dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx": 문서의 전체 경로와 파일 이름을 구성합니다.
 
 ## 결론
 
-이 가이드에서는 DocSaveOptions 저장 옵션을 사용하여 .NET용 Aspose.Words 라이브러리를 사용하여 비밀번호로 문서를 암호화하는 방법을 설명했습니다. 제공된 단계를 따르고 제공된 C# 소스 코드를 사용하면 C# 애플리케이션에 이 기능을 쉽게 적용할 수 있습니다. 문서를 비밀번호로 암호화하면 문서 처리 시 기밀성과 보안이 보장됩니다.
+그리고 거기에 있습니다! 당신은 .NET용 Aspose.Words를 사용하여 문서를 비밀번호로 암호화하는 방법을 배웠습니다. 이는 디지털 자물쇠 제조공이 되어 문서의 안전과 건전함을 보장하는 것과 같습니다. 민감한 비즈니스 보고서든 개인 메모든 보안을 유지하는 경우 이 방법은 간단하면서도 효과적인 솔루션을 제공합니다.
+
+## FAQ
+
+### 다른 유형의 암호화를 사용할 수 있나요?
+ 예, Aspose.Words for .NET은 다양한 암호화 방법을 지원합니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+
+### 문서 비밀번호를 잊어버리면 어떻게 되나요?
+안타깝게도 비밀번호를 잊어버리시면 문서에 접근하실 수 없습니다. 비밀번호를 안전하게 보관하세요!
+
+### 기존 문서의 비밀번호를 변경할 수 있나요?
+예, 동일한 단계를 사용하여 기존 문서를 로드하고 새 비밀번호로 저장할 수 있습니다.
+
+### 문서에서 비밀번호를 제거할 수 있나요?
+예, 비밀번호를 지정하지 않고 문서를 저장하면 기존 비밀번호 보호를 제거할 수 있습니다.
+
+### Aspose.Words for .NET에서 제공하는 암호화는 얼마나 안전합니까?
+Aspose.Words for .NET은 강력한 암호화 표준을 사용하여 문서를 잘 보호합니다.

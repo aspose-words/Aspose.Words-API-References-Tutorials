@@ -1,7 +1,7 @@
 ---
 title: Struktur und Inhalt in Word-Dokumenten verwalten
 linktitle: Struktur und Inhalt in Word-Dokumenten verwalten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für Python effizient verwalten. Diese Schritt-für-Schritt-Anleitung behandelt Dokumentstruktur, Textbearbeitung, Formatierung, Bilder, Tabellen und mehr.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ replacement_text = "with_this"
 doc.range.replace(text_to_replace, replacement_text, False, False)
 ```
 
-## Text und Absätze formatieren
+## Formatieren von Text und Absätzen
 
 Durch Formatieren können Sie Ihre Dokumente optisch ansprechender gestalten. Sie können verschiedene Schriftarten, Farben und Ausrichtungseinstellungen anwenden:
 

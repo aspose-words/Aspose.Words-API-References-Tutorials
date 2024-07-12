@@ -134,4 +134,4 @@ Hier vindt u enkele veelgestelde vragen over het werken met Aspose.Words voor op
 Ja, u kunt de HTML-uitvoer voor webweergave optimaliseren door opties te configureren zoals het exporteren van lettertypen als Base64 en het converteren van metabestanden naar SVG.
 
 ### Vraag 4: Zijn er beperkingen bij het converteren van complexe Word-documenten naar HTML?
-Hoewel Aspose.Words voor Java krachtige conversiemogelijkheden biedt, kunnen complexe Word-documenten met ingewikkelde lay-outs extra nabewerking vereisen om de gewenste HTML-uitvoer te verkrijgen.
+Hoewel Aspose.Words voor Java krachtige conversiemogelijkheden biedt, kunnen complexe Word-documenten met ingewikkelde lay-outs aanvullende nabewerking vereisen om de gewenste HTML-uitvoer te verkrijgen.

@@ -75,7 +75,7 @@ Odpověď: Chcete-li vložit všechna písma do dokumentu PDF pomocí Aspose.Wor
 
  Nastavte cestu k adresáři dokumentu nahrazením`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
 
- Vložte dokument, který chcete zpracovat, pomocí`Document` třídu a cestu dokumentu.
+ Vložte dokument, který chcete zpracovat, pomocí`Document` třída a cesta dokumentu.
 
  Nakonfigurujte možnosti uložení PDF vytvořením instance souboru`PdfSaveOptions` třídy a nastavení`EmbedFullFonts`majetek do`true`. To zajistí, že všechna písma použitá v dokumentu budou vložena do vygenerovaného souboru PDF.
 

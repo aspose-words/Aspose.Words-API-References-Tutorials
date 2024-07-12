@@ -2,120 +2,133 @@
 title: Wilayah yang Dapat Diedit Tidak Terbatas di Dokumen Word
 linktitle: Wilayah yang Dapat Diedit Tidak Terbatas di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat area yang dapat diedit tanpa batas di dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara membuat wilayah yang dapat diedit tanpa batas dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/document-protection/unrestricted-editable-regions/
 ---
-Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk menggunakan fitur area yang dapat diedit tidak terbatas di Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menentukan area dalam dokumen Word di mana konten dapat diedit tanpa batasan, meskipun bagian dokumen lainnya bersifat baca-saja. Ikuti langkah-langkah di bawah ini:
+## Perkenalan
 
-## Langkah 1: Memuat dokumen dan mengatur proteksi
+Jika Anda pernah ingin melindungi dokumen Word namun tetap mengizinkan bagian tertentu dapat diedit, Anda berada di tempat yang tepat! Panduan ini akan memandu Anda melalui proses pengaturan wilayah yang dapat diedit tanpa batas dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan membahas semuanya mulai dari prasyarat hingga langkah-langkah mendetail, memastikan Anda mendapatkan pengalaman yang lancar. Siap? Ayo selami!
 
-Mulailah dengan memuat dokumen yang ada:
+## Prasyarat
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+Sebelum kita mulai, pastikan Anda memiliki yang berikut ini:
 
-Lindungi dokumen dengan mengatur jenis perlindungan read-only dan kata sandi
+1.  Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduhlah[Di Sini](https://releases.aspose.com/words/net/).
+2.  Lisensi Aspose yang valid: Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio: Versi terbaru apa pun akan berfungsi dengan baik.
+4. Pengetahuan dasar tentang C# dan .NET: Ini akan membantu Anda mengikuti kodenya.
 
-## Langkah 2: Membuat area yang dapat diedit
+Sekarang Anda sudah siap, mari beralih ke bagian yang menyenangkan!
 
-Mulailah dengan membuat area yang dapat diedit menggunakan objek EditableRangeStart dan EditableRangeEnd:
+## Impor Namespace
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Objek EditableRange dibuat untuk EditableRangeStart yang baru saja kita buat.
-EditableRange editableRange = edRangeStart.EditableRange;
-
-// Letakkan sesuatu di dalam rentang yang dapat diedit.
-builder.Writeln("Paragraph inside first editable range");
-
-// Rentang yang dapat diedit terbentuk dengan baik jika memiliki awal dan akhir.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## Langkah 3: Tambahkan konten di luar area yang dapat diedit
-
-Anda dapat menambahkan konten di luar area yang dapat diedit, yang akan tetap hanya dapat dibaca:
+Untuk mulai menggunakan Aspose.Words untuk .NET, Anda harus mengimpor namespace yang diperlukan. Inilah cara Anda melakukannya:
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## Langkah 4: Simpan dokumen
+## Langkah 1: Menyiapkan Proyek Anda
 
-Terakhir, simpan dokumen yang dimodifikasi:
+Hal pertama yang pertama, mari buat proyek C# baru di Visual Studio.
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. Buka Visual Studio: Mulailah dengan membuka Visual Studio dan membuat proyek Aplikasi Konsol baru.
+2. Instal Aspose.Words: Gunakan Manajer Paket NuGet untuk menginstal Aspose.Words. Anda dapat melakukannya dengan menjalankan perintah berikut di Konsol Manajer Paket:
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-Pastikan untuk menentukan jalur dan nama file yang benar untuk menyimpan dokumen dengan area yang dapat diedit.
+## Langkah 2: Memuat Dokumen
 
-### Contoh kode sumber untuk Wilayah yang Dapat Diedit Tidak Terbatas menggunakan Aspose.Words untuk .NET
+Sekarang, mari muat dokumen yang ingin Anda lindungi. Pastikan Anda telah menyiapkan dokumen Word di direktori Anda.
 
-Berikut adalah kode sumber lengkap untuk area yang dapat diedit tanpa batas menggunakan Aspose.Words untuk .NET:
+1. Atur Direktori Dokumen: Tentukan jalur ke direktori dokumen Anda.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  Memuat Dokumen: Gunakan`Document` kelas untuk memuat dokumen Word Anda.
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Unggah dokumen dan jadikan sebagai hanya-baca.
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Langkah 3: Melindungi Dokumen
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+Selanjutnya, kita akan mengatur dokumen menjadi read-only. Ini akan memastikan bahwa tidak ada perubahan yang dapat dilakukan tanpa kata sandi.
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1.  Inisialisasi DocumentBuilder: Buat sebuah instance dari`DocumentBuilder` untuk membuat perubahan pada dokumen.
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. Tetapkan Tingkat Perlindungan: Lindungi dokumen menggunakan kata sandi.
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. Tambahkan Teks Hanya-Baca: Menyisipkan teks yang akan menjadi hanya-baca.
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-// Mulai rentang yang dapat diedit.
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Objek EditableRange dibuat untuk EditableRangeStart yang baru saja kita buat.
-EditableRange editableRange = edRangeStart.EditableRange;
+## Langkah 4: Membuat Rentang yang Dapat Diedit
 
-// Letakkan sesuatu di dalam rentang yang dapat diedit.
-builder.Writeln("Paragraph inside first editable range");
+Di sinilah keajaiban terjadi. Kami akan membuat bagian dalam dokumen yang dapat diedit meskipun ada perlindungan read-only secara keseluruhan.
 
-// Rentang yang dapat diedit terbentuk dengan baik jika memiliki awal dan akhir.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. Mulai Rentang yang Dapat Diedit: Tentukan awal rentang yang dapat diedit.
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2.  Buat Objek Rentang yang Dapat Diedit: An`EditableRange` objek akan dibuat secara otomatis.
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. Sisipkan Teks yang Dapat Diedit: Tambahkan teks di dalam rentang yang dapat diedit.
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## Langkah 5: Menutup Rentang yang Dapat Diedit
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+Rentang yang dapat diedit tidak lengkap tanpa akhir. Mari kita tambahkan itu selanjutnya.
 
-```
-Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah membuat area yang dapat diedit tanpa batas di dokumen Word Anda dengan Aspose.Words untuk .NET.
+1. Akhir Rentang yang Dapat Diedit: Tentukan akhir rentang yang dapat diedit.
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. Tambahkan Teks Hanya-Baca di Luar Rentang: Sisipkan teks di luar rentang yang dapat diedit untuk menunjukkan perlindungan.
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## Langkah 6: Menyimpan Dokumen
+
+Terakhir, mari simpan dokumen dengan perlindungan yang diterapkan dan wilayah yang dapat diedit.
+
+1.  Simpan Dokumen: Gunakan`Save` metode untuk menyimpan dokumen Anda yang dimodifikasi.
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara membuat wilayah yang dapat diedit tanpa batas di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang disediakan, Anda dapat menentukan area tertentu dalam dokumen tempat pengguna dapat dengan bebas mengedit konten sambil menjaga bagian dokumen lainnya hanya dapat dibaca. Aspose.Words untuk .NET menawarkan fitur canggih untuk perlindungan dan penyesuaian dokumen, memberi Anda kendali atas kemampuan pengeditan dokumen Word Anda.
 
-### FAQ untuk wilayah yang dapat diedit tanpa batas di dokumen Word
+Dan itu dia! Anda telah berhasil membuat wilayah yang dapat diedit tanpa batas dalam dokumen Word menggunakan Aspose.Words untuk .NET. Fitur ini sangat berguna untuk lingkungan kolaboratif di mana bagian tertentu dari dokumen tidak boleh diubah sementara bagian lain dapat diedit. 
 
-#### T: Apa saja wilayah yang dapat diedit tanpa batas di Aspose.Words untuk .NET?
+ Bereksperimenlah dengan skenario yang lebih kompleks dan tingkat perlindungan yang berbeda untuk mendapatkan hasil maksimal dari Aspose.Words. Jika Anda memiliki pertanyaan atau mengalami masalah, jangan ragu untuk memeriksanya[dokumentasi](https://reference.aspose.com/words/net/) atau menjangkau[mendukung](https://forum.aspose.com/c/words/8).
 
-J: Wilayah yang dapat diedit tidak dibatasi di Aspose.Words untuk .NET adalah area dalam dokumen Word di mana konten dapat diedit tanpa batasan apa pun, meskipun bagian dokumen lainnya disetel sebagai hanya-baca. Wilayah ini menyediakan cara untuk menentukan bagian tertentu dari dokumen yang dapat diubah oleh pengguna sambil mempertahankan perlindungan dokumen secara keseluruhan.
+## FAQ
 
-#### T: Bagaimana cara membuat wilayah yang dapat diedit tanpa batas menggunakan Aspose.Words untuk .NET?
+### Bisakah saya memiliki beberapa wilayah yang dapat diedit dalam satu dokumen?
+Ya, Anda dapat membuat beberapa wilayah yang dapat diedit dengan memulai dan mengakhiri rentang yang dapat diedit di berbagai bagian dokumen.
 
-J: Untuk membuat wilayah yang dapat diedit tanpa batas di dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
-1.  Muat dokumen yang ada menggunakan`Document` kelas.
-2.  Atur perlindungan dokumen ke hanya-baca menggunakan`Protect` metode`Document` obyek.
-3.  Menggunakan`DocumentBuilder` kelas untuk membuat rentang yang dapat diedit dengan menambahkan`EditableRangeStart` objek dan sebuah`EditableRangeEnd` obyek.
-4.  Tambahkan konten dalam rentang yang dapat diedit menggunakan`DocumentBuilder`.
-5.  Simpan dokumen yang dimodifikasi menggunakan`Save` metode`Document` obyek.
+### Jenis perlindungan apa lagi yang tersedia di Aspose.Words?
+Aspose.Words mendukung berbagai jenis perlindungan seperti AllowOnlyComments, AllowOnlyFormFields, dan NoProtection.
 
-#### T: Dapatkah saya memiliki beberapa wilayah yang dapat diedit tanpa batas dalam satu dokumen Word?
+### Apakah mungkin untuk menghapus perlindungan dari suatu dokumen?
+ Ya, Anda dapat menghapus perlindungan menggunakan`Unprotect` metode dan memberikan kata sandi yang benar.
 
-J: Ya, Anda dapat memiliki beberapa wilayah yang dapat diedit tanpa batas dalam dokumen Word. Untuk mencapai hal ini, Anda dapat membuat beberapa set`EditableRangeStart` Dan`EditableRangeEnd` objek menggunakan`DocumentBuilder` kelas. Setiap kumpulan objek akan menentukan wilayah terpisah yang dapat diedit di mana pengguna dapat mengubah konten tanpa batasan apa pun.
+### Bisakah saya menentukan kata sandi berbeda untuk bagian berbeda?
+Tidak, perlindungan tingkat dokumen menerapkan satu kata sandi untuk seluruh dokumen.
 
-#### T: Bisakah saya menyatukan wilayah yang dapat diedit satu sama lain?
-
- J: Tidak, Anda tidak dapat menyatukan wilayah yang dapat diedit satu sama lain menggunakan Aspose.Words untuk .NET. Setiap wilayah yang dapat diedit ditentukan oleh`EditableRangeStart` Dan`EditableRangeEnd` pasangan harus independen dan tidak tumpang tindih atau bersarang di wilayah lain yang dapat diedit. Wilayah bertingkat yang dapat diedit tidak didukung.
-
-#### T: Dapatkah saya menghapus perlindungan hanya-baca dari dokumen dalam wilayah yang dapat diedit?
-
-J: Tidak, Anda tidak dapat menghapus perlindungan hanya-baca dari dokumen dalam wilayah yang dapat diedit. Perlindungan hanya-baca diterapkan ke seluruh dokumen, dan tidak dapat dihapus secara selektif dalam wilayah tertentu yang dapat diedit. Tujuan dari wilayah yang dapat diedit adalah untuk memungkinkan modifikasi konten sekaligus menjaga keseluruhan dokumen hanya dapat dibaca.
+### Bagaimana cara saya mengajukan lisensi untuk Aspose.Words?
+Anda dapat menerapkan lisensi dengan memuatnya dari file atau aliran. Periksa dokumentasi untuk langkah-langkah detailnya.

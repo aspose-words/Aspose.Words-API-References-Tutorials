@@ -1,6 +1,6 @@
 ---
-title: Document Styling
-linktitle: Document Styling
+title: Στυλ εγγράφου
+linktitle: Στυλ εγγράφου
 second_title: Aspose.Words Java Document Processing API
 description: Κύριο στυλ εγγράφου με εκπαιδευτικά προγράμματα Aspose.Words for Java. Μάθετε προηγμένες τεχνικές μορφοποίησης για οπτικά ελκυστικά και αποτελεσματικά έγγραφα.
 type: docs

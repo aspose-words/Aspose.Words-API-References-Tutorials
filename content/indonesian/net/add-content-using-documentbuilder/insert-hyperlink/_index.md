@@ -18,11 +18,11 @@ Sebelum kita mendalami kodenya, ada beberapa hal yang perlu Anda siapkan:
 
 1. Visual Studio: Pastikan Anda telah menginstal Visual Studio di komputer Anda. Jika Anda belum memilikinya, Anda dapat mengunduhnya dari[Di Sini](https://visualstudio.microsoft.com/).
 2.  Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words untuk .NET. Anda bisa mendapatkannya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/) . Jika Anda belum siap membelinya, Anda dapat menggunakan[uji coba gratis](https://releases.aspose.com/) atau meminta a[izin sementara](https://purchase.aspose.com/temporary-license/).
-3. Pengetahuan Dasar C#: Sedikit keakraban dengan pemrograman C# akan sangat bermanfaat. Jika Anda baru mengenal C#, jangan khawatir; tutorial ini akan memandu Anda melalui setiap langkah.
+3. Pengetahuan Dasar tentang C#: Sedikit keakraban dengan pemrograman C# akan sangat bermanfaat. Jika Anda baru mengenal C#, jangan khawatir; tutorial ini akan memandu Anda melalui setiap langkah.
 
 ## Impor Namespace
 
-Hal pertama yang pertama, Anda harus mengimpor namespace yang diperlukan dalam proyek C# Anda. Ini penting untuk mengakses fungsi Aspose.Words.
+Hal pertama yang pertama, Anda harus mengimpor namespace yang diperlukan dalam proyek C# Anda. Ini penting untuk mengakses fungsionalitas Aspose.Words.
 
 ```csharp
 using System;
@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Baiklah, sekarang kita sudah memenuhi prasyarat dan namespace telah diimpor, mari beralih ke bagian yang menarik: menyisipkan hyperlink ke dalam dokumen Word menggunakan Aspose.Words untuk .NET!
+Baiklah, sekarang kita sudah memenuhi prasyaratnya dan namespace sudah diimpor, mari beralih ke bagian yang menarik: menyisipkan hyperlink ke dalam dokumen Word menggunakan Aspose.Words untuk .NET!
 
 ## Langkah 1: Siapkan Proyek Anda
 
@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Dalam cuplikan ini, kita menentukan jalur ke direktori tempat dokumen kita akan disimpan dan menginisialisasi yang baru`Document` Dan`DocumentBuilder` contoh.
+ Dalam cuplikan ini, kita menentukan jalur ke direktori tempat dokumen kita akan disimpan dan menginisialisasi yang baru`Document`Dan`DocumentBuilder` contoh.
 
 ## Langkah 3: Tulis Teks Awal
 

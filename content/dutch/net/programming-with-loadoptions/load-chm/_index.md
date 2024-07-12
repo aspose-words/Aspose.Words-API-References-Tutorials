@@ -66,7 +66,7 @@ EEN: Absoluut! Aspose.Words biedt verschillende laadopties die kunnen worden aan
 
 #### Vraag: Is Aspose.Words beperkt tot het verwerken van alleen Word-documenten?
 
-A: Hoewel Aspose.Words in de eerste plaats is ontworpen voor Word-documenten, ondersteunt het ook andere bestandsindelingen, zoals PDF, HTML, EPUB en meer, waardoor het een veelzijdig hulpmiddel is voor documentverwerking.
+A: Hoewel Aspose.Words in de eerste plaats is ontworpen voor Word-documenten, ondersteunt het ook andere bestandsformaten, zoals PDF, HTML, EPUB en meer, waardoor het een veelzijdig hulpmiddel is voor documentverwerking.
 
 #### Vraag: Hoe kan het laden van CHM-bestanden mijn C#-applicatie ten goede komen?
 

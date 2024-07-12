@@ -52,7 +52,7 @@ builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
 ## Langkah 3: Mulai Konten Dokumen di Halaman Baru
 
-Untuk memastikan pemformatan yang tepat, mulai konten dokumen sebenarnya di halaman baru:
+Untuk memastikan pemformatan yang benar, mulai konten dokumen sebenarnya di halaman baru:
 
 ```csharp
 // Sisipkan hentian halaman

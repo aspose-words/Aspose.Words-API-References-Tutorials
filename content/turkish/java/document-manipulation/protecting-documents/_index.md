@@ -10,7 +10,7 @@ url: /tr/java/document-manipulation/protecting-documents/
 
 ## Belge Korumaya Giriş
 
-Belge koruması, hassas bilgilerle uğraşırken hayati bir özelliktir. Aspose.Words for Java, belgelerinizi yetkisiz erişime karşı korumak için güçlü özellikler sunar.
+Belge koruması, hassas bilgilerle uğraşırken hayati bir özelliktir. Aspose.Words for Java, belgelerinizi yetkisiz erişime karşı korumak için güçlü özellikler sağlar.
 
 ## Belgeleri Parolalarla Koruma
 
@@ -56,7 +56,7 @@ Bu yazıda Aspose.Words for Java kullanarak Word belgelerinin nasıl korunacağ�
 
  Bir belgeyi parola olmadan korumak istiyorsanız aşağıdaki gibi diğer koruma türlerini kullanabilirsiniz:`ProtectionType.NO_PROTECTION` veya`ProtectionType.READ_ONLY`.
 
-### Korumalı bir belgenin şifresini değiştirebilir miyim?
+### Korumalı bir belgenin parolasını değiştirebilir miyim?
 
 Evet, korumalı bir belgenin parolasını aşağıdaki komutu kullanarak değiştirebilirsiniz:`protect` yeni şifreyle yöntem.
 

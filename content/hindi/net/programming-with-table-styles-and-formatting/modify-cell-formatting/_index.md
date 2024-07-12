@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## चरण 3: संशोधित करने के लिए सेल पर जाएँ
- किसी सेल की फ़ॉर्मेटिंग बदलने के लिए, हमें टेबल में उस खास सेल पर जाना होगा।`GetChild()` और`FirstRow.FirstCell` प्रथम सारणी के प्रथम कक्ष का संदर्भ प्राप्त करने की विधियाँ।
+ किसी सेल की फ़ॉर्मेटिंग बदलने के लिए, हमें टेबल में उस खास सेल पर जाना होगा।`GetChild()`और`FirstRow.FirstCell` प्रथम सारणी के प्रथम कक्ष का संदर्भ प्राप्त करने की विधियाँ।
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

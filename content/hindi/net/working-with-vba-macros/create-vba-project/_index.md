@@ -2,7 +2,7 @@
 title: वर्ड डॉक्यूमेंट में Vba प्रोजेक्ट बनाएं
 linktitle: वर्ड डॉक्यूमेंट में Vba प्रोजेक्ट बनाएं
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: इस ट्यूटोरियल में, Aspose.Words for .NET के साथ Word दस्तावेज़ में VBA प्रोजेक्ट बनाना सीखें।
+description: इस ट्यूटोरियल में, जानें कि Aspose.Words for .NET के साथ Word दस्तावेज़ में VBA प्रोजेक्ट कैसे बनाएं।
 type: docs
 weight: 10
 url: /hi/net/working-with-vba-macros/create-vba-project/
@@ -16,7 +16,7 @@ url: /hi/net/working-with-vba-macros/create-vba-project/
 - आपके प्रोजेक्ट में .NET के लिए Aspose.Words लाइब्रेरी स्थापित है
 
 ## चरण 1: दस्तावेज़ निर्देशिका निर्धारित करें
- सबसे पहले, आपको अपने वर्ड डॉक्यूमेंट के स्थान के लिए डायरेक्टरी पथ सेट करना होगा।`"YOUR DOCUMENT DIRECTORY"` कोड में उचित पथ के साथ.
+ सबसे पहले, आपको अपने वर्ड डॉक्यूमेंट के स्थान पर डायरेक्टरी पथ सेट करना होगा।`"YOUR DOCUMENT DIRECTORY"` कोड में उचित पथ के साथ.
 
 ```csharp
 // आपके दस्तावेज़ निर्देशिका का पथ

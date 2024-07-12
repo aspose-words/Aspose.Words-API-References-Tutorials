@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- Bu adımda birleştiriyoruz`Document1.docx` Ve`Document2.docx` adlı yeni bir dosyaya`MergedDocument.docx`.
+ Bu adımda birleştiriyoruz`Document1.docx`Ve`Document2.docx` adlı yeni bir dosyaya`MergedDocument.docx`.
 
 ## 3. Adım: Kaydetme Seçenekleri ile Birleştirme
 
@@ -74,7 +74,7 @@ Belgeleri birleştirmeniz ve sonucu PDF olarak kaydetmeniz gerekiyorsa Aspose.Wo
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Burada birleşiyoruz`Document1.docx` Ve`Document2.docx` ve sonucu PDF dosyası olarak kaydedin.
+ Burada birleşiyoruz`Document1.docx`Ve`Document2.docx` ve sonucu PDF dosyası olarak kaydedin.
 
 ## Adım 5: Birleştirilmiş Belgelerden Belge Örneği Oluşturma
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 
 ### 3. Birleştirme sırasında farklı biçimlendirmeleri nasıl halledebilirim?
 
- Aspose.Words aşağıdakiler gibi çeşitli birleştirme formatı modları sağlar:`KeepSourceFormatting` Ve`MergeFormatting` . Bakın[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
+ Aspose.Words aşağıdakiler gibi çeşitli birleştirme formatı modları sağlar:`KeepSourceFormatting`Ve`MergeFormatting` . Bakın[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
 
 ### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 

@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAnd
     
 ```
 
-正しいドキュメントパスを必ず指定してください。`dataDir`変数。
+必ず正しいドキュメントパスを指定してください。`dataDir`変数。
 
 Aspose.Words for .NET を使用して、ドキュメントから未使用のスタイルとリストをクリーンアップする方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、この機能を自分のドキュメントに簡単に適用できます。
 

@@ -40,7 +40,7 @@ sdt.Style = style;
 ```
 
 ## चरण 4: दस्तावेज़ सहेजें
- संशोधित दस्तावेज़ को निर्दिष्ट निर्देशिका में सहेजें`Save` विधि। उचित फ़ाइल एक्सटेंशन के साथ वांछित फ़ाइल नाम प्रदान करें। इस उदाहरण में, हम दस्तावेज़ को "WorkingWithSdt.SetContentControlStyle.docx" के रूप में सहेजते हैं।
+ संशोधित दस्तावेज़ को निर्दिष्ट निर्देशिका में सहेजें`Save`विधि। उचित फ़ाइल एक्सटेंशन के साथ वांछित फ़ाइल नाम प्रदान करें। इस उदाहरण में, हम दस्तावेज़ को "WorkingWithSdt.SetContentControlStyle.docx" के रूप में सहेजते हैं।
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 	doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ```
 
-बस! आपने Aspose.Words for .NET का उपयोग करके अपने Word दस्तावेज़ में सामग्री नियंत्रण की शैली सफलतापूर्वक सेट कर ली है।
+बस! आपने .NET के लिए Aspose.Words का उपयोग करके अपने Word दस्तावेज़ में सामग्री नियंत्रण की शैली सफलतापूर्वक सेट कर ली है।

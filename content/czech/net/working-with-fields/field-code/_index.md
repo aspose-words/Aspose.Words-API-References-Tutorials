@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Udělejte něco s kódem pole a výsledkem.
+     //Udělejte něco s kódem pole a výsledkem.
 }
 ```
 
@@ -73,7 +73,7 @@ Tímto končí náš průvodce používáním funkce „Získat kód pole“ s A
 
 #### Otázka: Jak mohu aktualizovat pole v dokumentu pomocí Aspose.Words for .NET?
 
- A: Chcete-li aktualizovat pole dokumentu pomocí Aspose.Words pro .NET, můžete použít`Document.UpdateFields`metoda. Tím se aktualizují všechna pole přítomná v dokumentu, jako jsou slučovací pole, datová pole atd.
+ A: Chcete-li aktualizovat pole dokumentu pomocí Aspose.Words pro .NET, můžete použít`Document.UpdateFields` metoda. Tím se aktualizují všechna pole přítomná v dokumentu, jako jsou slučovací pole, datová pole atd.
 
 #### Otázka: Jak mohu získat hodnotu konkrétního pole v Aspose.Words pro .NET?
 

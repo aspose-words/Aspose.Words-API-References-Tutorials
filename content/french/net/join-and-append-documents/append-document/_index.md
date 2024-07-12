@@ -36,7 +36,7 @@ Ces espaces de noms sont essentiels pour créer, manipuler et enregistrer des do
 
 ## Étape 1 : configuration du répertoire de documents
 
-Tout d'abord, nous devons spécifier le répertoire dans lequel nos documents sont stockés. Cela aide Aspose.Words à localiser les fichiers avec lesquels nous souhaitons travailler.
+Tout d'abord, nous devons spécifier le répertoire dans lequel nos documents sont stockés. Cela aide Aspose.Words à localiser les fichiers avec lesquels nous voulons travailler.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -93,7 +93,7 @@ Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeu
 
  Utilisez le`ImportFormatMode.KeepSourceFormatting` paramètre dans le`AppendDocument` méthode pour préserver la mise en forme du document source.
 
-### 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
+### 4. Comment puis-je obtenir de l'assistance pour Aspose.Words pour .NET ?
 
 Vous pouvez obtenir de l'aide en visitant le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 

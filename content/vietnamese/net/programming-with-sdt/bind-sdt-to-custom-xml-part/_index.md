@@ -17,7 +17,7 @@ Hướng dẫn này trình bày cách liên kết Thẻ tài liệu có cấu tr
 - Kiến thức cơ bản về C# và XML.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

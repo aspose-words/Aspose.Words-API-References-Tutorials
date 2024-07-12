@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Krok 7: Dodaj zawartość do komórek
- Teraz możemy dodawać zawartość do komórek za pomocą metody`Writeln()` I`InsertCell()` metody konstruktora dokumentów. W tym przykładzie dodajemy nagłówki „Item” i „Ilość (
+ Teraz możemy dodawać zawartość do komórek za pomocą metody`Writeln()`I`InsertCell()` metody konstruktora dokumentów. W tym przykładzie dodajemy nagłówki „Item” i „Ilość (
 
 kg)” i odpowiednie dane.
 

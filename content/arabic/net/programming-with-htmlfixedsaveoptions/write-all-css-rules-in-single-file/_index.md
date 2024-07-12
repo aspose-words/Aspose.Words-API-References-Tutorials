@@ -8,7 +8,7 @@ weight: 10
 url: /ar/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/
 ---
 
-عند تحويل مستند Word إلى HTML ثابت في تطبيق C#، قد ترغب في دمج جميع قواعد CSS في ملف واحد لتحسين التنظيم وسهولة النقل. باستخدام مكتبة Aspose.Words لـ .NET، يمكنك بسهولة تحديد هذه الوظيفة باستخدام خيارات الحفظ HtmlFixedSaveOptions. في هذا الدليل خطوة بخطوة، سنرشدك خلال كيفية استخدام Aspose.Words for .NET C# كود المصدر لتحويل مستند Word إلى HTML ثابت عن طريق كتابة جميع قواعد CSS في ملف واحد باستخدام خيارات الحفظ HtmlFixedSaveOptions.
+عند تحويل مستند Word إلى HTML ثابت في تطبيق C#، قد ترغب في دمج جميع قواعد CSS في ملف واحد لتحسين التنظيم وسهولة النقل. باستخدام مكتبة Aspose.Words لـ .NET، يمكنك بسهولة تحديد هذه الوظيفة باستخدام خيارات الحفظ HtmlFixedSaveOptions. في هذا الدليل خطوة بخطوة، سنرشدك خلال كيفية استخدام Aspose.Words for .NET C# من التعليمات البرمجية المصدرية لتحويل مستند Word إلى HTML ثابت عن طريق كتابة جميع قواعد CSS في ملف واحد باستخدام خيارات الحفظ HtmlFixedSaveOptions.
 
 ## فهم مكتبة Aspose.Words
 

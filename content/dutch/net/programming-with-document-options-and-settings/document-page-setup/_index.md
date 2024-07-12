@@ -62,4 +62,4 @@ Deze code stelt de lay-outmodus in op "Raster" en specificeert vervolgens het aa
 
  Zorg ervoor dat u het juiste documentpad opgeeft in het`dataDir` variabel.
 
-U hebt nu geleerd hoe u de lay-out van een document kunt configureren met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u eenvoudig de lay-out van uw eigen documenten aanpassen.
+hebt nu geleerd hoe u de lay-out van een document kunt configureren met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u eenvoudig de lay-out van uw eigen documenten aanpassen.

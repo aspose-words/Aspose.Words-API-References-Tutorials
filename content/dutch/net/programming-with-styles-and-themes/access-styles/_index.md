@@ -1,6 +1,6 @@
 ---
-title: Krijg documentstijlen in Word
-linktitle: Krijg documentstijlen in Word
+title: Documentstijlen ophalen in Word
+linktitle: Documentstijlen ophalen in Word
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u documentstijlen in Word kunt verkrijgen met Aspose.Words voor .NET. Volledige tutorial om de stijlen van uw documenten te manipuleren.
 type: docs

@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 步骤 2：插入合并字段
 
-接下来，让我们插入一个合并字段。将其视为在文档中放置一个标记，标记要合并数据的位置。
+接下来，让我们插入一个合并字段。将其视为在文档中将数据合并的位置放置一个标记。
 
 ```csharp
 Field field = builder.InsertField("MERGEFIELD field");

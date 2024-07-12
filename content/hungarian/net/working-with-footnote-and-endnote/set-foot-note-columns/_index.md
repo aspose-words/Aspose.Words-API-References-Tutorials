@@ -69,7 +69,7 @@ V: Igen, a dokumentum különböző szakaszaihoz eltérő számú oszlopot is me
 
 #### K: Figyelembe veszik a lábjegyzetek oszlopait, amikor más fájlformátumba konvertál?
 
-V: Igen, a lábjegyzetoszlopokat tartalmazó dokumentumok más fájlformátumba konvertálásakor az Aspose.Words megtartja az oszlopelrendezést. Ez garantálja az eredeti dokumentum pontos és hűséges átalakítását.
+V: Igen, a lábjegyzetoszlopokat tartalmazó dokumentumok más fájlformátumokba konvertálásakor az Aspose.Words megtartja az oszlopelrendezést. Ez garantálja az eredeti dokumentum pontos és hűséges átalakítását.
 
 #### K: Testreszabhatom a lábjegyzetoszlopok megjelenését?
 

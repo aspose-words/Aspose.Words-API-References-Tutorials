@@ -2,68 +2,127 @@
 title: A fejléc láblécének figyelmen kívül hagyása
 linktitle: A fejléc láblécének figyelmen kívül hagyása
 second_title: Aspose.Words Document Processing API
-description: Az Aspose.Words for .NET használatával megtudhatja, hogyan fűzhet hozzá egy dokumentumot a fejléc- és lábléctartalom figyelmen kívül hagyásával.
+description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan egyesíthet Word-dokumentumokat a fejlécek és láblécek figyelmen kívül hagyásával az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/join-and-append-documents/ignore-header-footer/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan használható az Aspose.Words for .NET egy dokumentum hozzáfűzésére, miközben figyelmen kívül hagyja a fejléc és a lábléc tartalmát. A mellékelt forráskód bemutatja, hogyan kell beállítani az importálási formátumbeállításokat a fejléc és a lábléc kizárására a hozzáfűzési folyamat során.
+A Word-dokumentumok egyesítése néha kissé bonyolult lehet, különösen akkor, ha egyes részeket érintetlenül szeretne megőrizni, míg másokat figyelmen kívül kell hagyni, például a fejlécet és a láblécet. Szerencsére az Aspose.Words for .NET elegáns megoldást kínál ennek kezelésére. Ebben az oktatóanyagban lépésről lépésre végigvezetem a folyamaton, biztosítva, hogy minden részt megértsen. Legyen könnyű, beszélgetős és vonzó, akárcsak egy baráttal való csevegés. Kész? Merüljünk el!
 
-## 1. lépés: Állítsa be a projektet
+## Előfeltételek
 
-Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+Mielőtt hozzákezdenénk, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
 
--  Aspose.Words for .NET könyvtár telepítve. Letöltheti innen[Aspose.Releases]https://releases.aspose.com/words/net/ vagy használja a NuGet csomagkezelőt a telepítéséhez.
-- Egy dokumentumkönyvtár elérési útja, ahol a forrás- és céldokumentum található.
+-  Aspose.Words for .NET: Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- Visual Studio: Minden újabb verziónak működnie kell.
+- A C# alapvető ismerete: Ne aggódjon, végigvezetem a kódon.
+- Két Word-dokumentum: az egyiket a másikhoz kell csatolni.
 
-## 2. lépés: Nyissa meg a forrás- és céldokumentumot
+## Névterek importálása
 
- Nyissa meg a forrás- és céldokumentumot a segítségével`Document` osztályú konstruktőr. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+Először is importálnunk kell a szükséges névtereket a C# projektünkbe. Ez döntő fontosságú, mivel lehetővé teszi az Aspose.Words osztályok és metódusok használatát anélkül, hogy állandóan a teljes névtérre hivatkoznánk.
 
 ```csharp
-// A dokumentumkönyvtár elérési útja
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1. lépés: Állítsa be projektjét
+
+### Hozzon létre egy új projektet
+
+Kezdjük egy új konzolalkalmazás-projekt létrehozásával a Visual Studióban.
+
+1. Nyissa meg a Visual Studio-t.
+2. Válassza az "Új projekt létrehozása" lehetőséget.
+3. Válassza a „Konzolalkalmazás (.NET Core)” lehetőséget.
+4. Nevezze el a projektet, és kattintson a "Létrehozás" gombra.
+
+### Telepítse az Aspose.Words for .NET programot
+
+Ezután hozzá kell adnunk az Aspose.Words for .NET-et a projektünkhöz. Ezt a NuGet Package Manager segítségével teheti meg:
+
+1. Kattintson a jobb gombbal a projektre a Solution Explorerben.
+2. Válassza a "NuGet-csomagok kezelése" lehetőséget.
+3. Keresse meg az "Aspose.Words" kifejezést, és telepítse.
+
+## 2. lépés: Töltse be a dokumentumokat
+
+Most, hogy a projektünk be van állítva, töltsük be az egyesíteni kívánt Word dokumentumokat. Az oktatóanyag kedvéért "Document source.docx" és "Northwind traders.docx" néven nevezzük őket.
+
+A következőképpen töltheti be őket az Aspose.Words használatával:
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDocument = new Document(dataDir + "Document source.docx");
 Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. lépés: Állítsa be az importálási formátum beállításait
+Ez a kódrészlet beállítja a dokumentumkönyvtár elérési útját, és betölti a dokumentumokat a memóriába.
 
- Hozzon létre egy példányt a`ImportFormatOptions` osztályt, és állítsa be a`IgnoreHeaderFooter`tulajdonát`false`. Ez biztosítja, hogy a fejléc és a lábléc tartalom szerepeljen a hozzáfűzési folyamat során.
+## 3. lépés: Az importálási beállítások konfigurálása
+
+A dokumentumok összevonása előtt be kell állítani az importálási lehetőségeinket. Ez a lépés elengedhetetlen, mert lehetővé teszi számunkra annak megadását, hogy figyelmen kívül akarjuk hagyni a fejléceket és lábléceket.
+
+Íme az importálási beállítások konfigurálásához szükséges kód:
 
 ```csharp
-ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
+ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
-## 4. lépés: A forrásdokumentum hozzáfűzése a céldokumentumhoz
+ A beállítással`IgnoreHeaderFooter` nak nek`true`, azt mondjuk az Aspose.Words-nek, hogy figyelmen kívül hagyja a fejléceket és a lábléceket az egyesítési folyamat során.
 
- Használja a`AppendDocument` a céldokumentum módszere a forrásdokumentum hozzáfűzéséhez. Pass`ImportFormatMode.KeepSourceFormatting`második paraméterként, harmadikként pedig az import formátum beállításai.
+## 4. lépés: Egyesítse a dokumentumokat
+
+A dokumentumok betöltése és az importálási lehetőségek konfigurálása után itt az ideje egyesíteni a dokumentumokat.
+
+Íme, hogyan kell csinálni:
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## 5. lépés: Mentse el a céldokumentumot
+Ez a kódsor hozzáfűzi a forrásdokumentumot a céldokumentumhoz, miközben megtartja a forrás formázását, figyelmen kívül hagyva a fejléceket és lábléceket.
 
-Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+## 5. lépés: Mentse el az egyesített dokumentumot
+
+Végül el kell mentenünk az egyesített dokumentumot. 
+
+Íme a kód az egyesített dokumentum mentéséhez:
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ```
 
-Ezzel befejeződik a dokumentum hozzáfűzésének megvalósítása, miközben figyelmen kívül hagyja a fejléc és a lábléc tartalmát az Aspose.Words for .NET használatával.
+Ezzel elmenti az egyesített dokumentumot a megadott könyvtárba "JoinAndAppendDocuments.IgnoreHeaderFooter.docx" fájlnévvel.
 
-### Példa forráskód a fejléc láblécének figyelmen kívül hagyásához az Aspose.Words for .NET használatával 
+## Következtetés
 
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+És megvan! Sikeresen egyesített két Word-dokumentumot, miközben figyelmen kívül hagyta a fejlécet és a láblécet az Aspose.Words for .NET használatával. Ez a módszer praktikus különféle dokumentumkezelési feladatokhoz, ahol kulcsfontosságú bizonyos dokumentumrészek karbantartása.
 
-	Document srcDocument = new Document(dataDir + "Document source.docx");
-	Document dstDocument = new Document(dataDir + "Northwind traders.docx");
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
-	dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
-	dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
-```
+Az Aspose.Words for .NET használatával jelentősen leegyszerűsítheti a dokumentumfeldolgozási munkafolyamatokat. Ne feledje, ha bármikor elakad, vagy további információra van szüksége, bármikor megtekintheti a[dokumentáció](https://reference.aspose.com/words/net/).
+
+## GYIK
+
+### Figyelmen kívül hagyhatom a dokumentum más részeit a fejléceken és lábléceken kívül?
+
+Igen, az Aspose.Words számos lehetőséget kínál az importálási folyamat testreszabására, beleértve a különböző szakaszok és formázások figyelmen kívül hagyását.
+
+### Megtartható a fejléc és a lábléc ahelyett, hogy figyelmen kívül hagynánk őket?
+
+ Teljesen. Egyszerűen beállítva`IgnoreHeaderFooter` nak nek`false` ban,-ben`ImportFormatOptions`.
+
+### Szükségem van licencre az Aspose.Words for .NET használatához?
+
+ Igen, az Aspose.Words for .NET egy kereskedelmi termék. Kaphatsz a[ingyenes próbaverzió](https://releases.aspose.com/) vagy vásároljon licencet[itt](https://purchase.aspose.com/buy).
+
+### Egyesíthetek kettőnél több dokumentumot ezzel a módszerrel?
+
+ Igen, a ciklus megismétlésével több dokumentumot is hozzáfűzhet`AppendDocument` módszer minden további dokumentumhoz.
+
+### Hol találok további példákat és dokumentációt az Aspose.Words for .NET-hez?
+
+ Részletes dokumentációt és példákat találhat az oldalon[Aspose honlapja](https://reference.aspose.com/words/net/).

@@ -17,7 +17,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 - Connaissance de base de C# : La familiarité avec la programmation C# vous aidera à comprendre et à mettre en œuvre les étapes en douceur.
 -  Bibliothèque Aspose.Words for .NET : téléchargez et installez Aspose.Words for .NET à partir du[lien de téléchargement](https://releases.aspose.com/words/net/).
 - Environnement de développement : un environnement approprié comme Visual Studio pour écrire et exécuter votre code.
--  Exemple de document : Un exemple de document (par exemple,`Rendering.docx`) pour appliquer les paramètres de police.
+- Exemple de document : Un exemple de document (par exemple,`Rendering.docx`) pour appliquer les paramètres de police.
 
 ## Importer des espaces de noms
 
@@ -55,7 +55,7 @@ Dans cet exemple :
 
 ## Étape 3 : Charger le document
 
-Une fois vos sources de polices configurées, l'étape suivante consiste à charger votre document dans un fichier Aspose.Words.`Document` objet. Cela vous permet de manipuler et éventuellement de sauvegarder le document.
+ Une fois vos sources de polices configurées, l'étape suivante consiste à charger votre document dans un fichier Aspose.Words.`Document`objet. Cela vous permet de manipuler et éventuellement de sauvegarder le document.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Toutes nos félicitations! Vous maîtrisez les bases de la gestion des paramètr
 
 ### Q1 : Puis-je utiliser les polices de plusieurs dossiers personnalisés ?
 
- Oui, vous pouvez spécifier plusieurs`FolderFontSource`instances au sein de`SetFontsSources` méthode pour inclure des polices de différents dossiers.
+ Oui, vous pouvez spécifier plusieurs`FolderFontSource` instances au sein de`SetFontsSources` méthode pour inclure des polices de différents dossiers.
 
 ### Q2 : Comment puis-je obtenir un essai gratuit d'Aspose.Words pour .NET ?
 

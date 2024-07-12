@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 
 #### س: ما هي مكتبات .NET الموصى بها لمعالجة مستندات Markdown؟
 
- ج: مكتبات .NET الموصى بها لمعالجة مستندات Markdown هي`Markdig` و`CommonMark.NET`. إنها توفر مرونة كبيرة ودعمًا كاملاً لميزات Markdown.
+ ج: مكتبات .NET الموصى بها لمعالجة مستندات Markdown هي`Markdig`و`CommonMark.NET`. إنها توفر مرونة كبيرة ودعمًا كاملاً لميزات Markdown.
 
 #### س: كيف أتعامل مع الأخطاء عند قراءة مستند Markdown؟
 

@@ -2,7 +2,7 @@
 title: 按 HTML 部分拆分 Word 文件
 linktitle: 按章節 Html
 second_title: Aspose.Words 文件處理 API
-description: 透過完整的程式碼範例，了解如何使用 Aspose.Words for .NET 將 Word 文件按部分 Html 分割。
+description: 透過完整的程式碼範例了解如何使用 Aspose.Words for .NET 將 Word 文件按部分 Html 拆分。
 type: docs
 weight: 10
 url: /zh-hant/net/split-document/by-sections-html/

@@ -11,7 +11,7 @@ Di dunia digital yang serba cepat saat ini, pemrosesan dokumen merupakan aspek p
 
 ## Menginstal Aspose.Words
 
- Sebelum kita mendalami detailnya, Anda perlu menyiapkan Aspose.Words untuk Python. Anda dapat mengunduh dan menginstalnya melalui tautan berikut:[Unduh Aspose.Words untuk Python](https://releases.aspose.com/words/python/). 
+Sebelum kita mendalami detailnya, Anda perlu menyiapkan Aspose.Words untuk Python. Anda dapat mengunduh dan menginstalnya melalui tautan berikut:[Unduh Aspose.Words untuk Python](https://releases.aspose.com/words/python/). 
 
 ## Menggabungkan Dokumen
 
@@ -127,7 +127,7 @@ Ya, Anda dapat melakukan kloning dangkal untuk hanya menyalin struktur dokumen t
  Memanfaatkan`range.replace()` metode bersama dengan opsi yang sesuai untuk menemukan dan mengganti teks secara efisien.
 
 ### Apakah Aspose.Words mendukung modifikasi format?
-Tentu saja, Anda dapat mengubah pemformatan menggunakan metode seperti`run.font.size` Dan`run.font.bold`.
+Tentu saja, Anda dapat mengubah pemformatan menggunakan metode seperti`run.font.size`Dan`run.font.bold`.
 
 ### Di mana saya dapat mengakses dokumentasi Aspose.Words?
  Anda dapat menemukan dokumentasi lengkap di[Aspose.Words untuk Referensi API Python](https://reference.aspose.com/words/python-net/).

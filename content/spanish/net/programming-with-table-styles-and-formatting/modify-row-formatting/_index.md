@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Paso 3: Accede a la línea a modificar
- Para cambiar el formato de una fila de la tabla, debemos navegar a la fila específica de la tabla. Usamos el`GetChild()` y`FirstRow` métodos para obtener la referencia a la primera fila de la tabla.
+ Para cambiar el formato de una fila de la tabla, debemos navegar a la fila específica de la tabla. Usamos el`GetChild()`y`FirstRow` métodos para obtener la referencia a la primera fila de la tabla.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

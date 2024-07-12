@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## चरण 2: दस्तावेज़ लोड करें और XML भाग बनाएँ
- Word दस्तावेज़ को लोड करने के लिए निम्न का उपयोग करें:`Document` कंस्ट्रक्टर, दस्तावेज़ के पथ को पैरामीटर के रूप में पास करता है। एक XML भाग बनाएँ जिसमें वह डेटा हो जिसे आप संरचित दस्तावेज़ टैग के भीतर प्रदर्शित करना चाहते हैं।
+ Word दस्तावेज़ को लोड करने के लिए निम्न का उपयोग करें:`Document`कंस्ट्रक्टर, दस्तावेज़ के पथ को पैरामीटर के रूप में पास करता है। एक XML भाग बनाएँ जिसमें वह डेटा हो जिसे आप संरचित दस्तावेज़ टैग के भीतर प्रदर्शित करना चाहते हैं।
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// एक StructuredDocumentTag बनाएं जो दस्तावेज़ में हमारे CustomXmlPart की सामग्री प्रदर्शित करेगा।
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// यदि हम अपने StructuredDocumentTag के लिए मैपिंग सेट करते हैं,
-	// यह CustomXmlPart का केवल वह भाग प्रदर्शित करेगा जिसकी ओर XPath इंगित करता है।
+	//यह CustomXmlPart का केवल वह भाग प्रदर्शित करेगा जिसकी ओर XPath इंगित करता है।
 	// यह XPath हमारे CustomXmlPart के पहले "<root>" तत्व के दूसरे "<text>" तत्व की सामग्री की ओर संकेत करेगा।
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

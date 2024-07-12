@@ -75,7 +75,7 @@ Diese Anweisungen zeigen die Anzahl der Stile und Listen, die nach der Bereinigu
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//Löscht nicht verwendete Stile und Listen aus dem Dokument, abhängig von den angegebenen CleanupOptions.
+	// Löscht nicht verwendete Stile und Listen aus dem Dokument, abhängig von den angegebenen CleanupOptions.
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 

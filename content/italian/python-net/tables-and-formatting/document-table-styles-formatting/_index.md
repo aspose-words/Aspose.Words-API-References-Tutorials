@@ -39,7 +39,7 @@ Per creare e inserire tabelle nei documenti utilizzando Aspose.Words per Python,
     table = builder.start_table()
     ```
 
-2.  Inserisci dati: aggiungi dati alla tabella utilizzando il builder`insert_cell` E`write` metodi.
+2.  Inserisci dati: aggiungi dati alla tabella utilizzando il builder`insert_cell`E`write` metodi.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Per creare e inserire tabelle nei documenti utilizzando Aspose.Words per Python,
 
 ## Applicazione della formattazione di base della tabella
 
- La formattazione di base della tabella può essere ottenuta utilizzando i metodi forniti da`Table` E`Cell` classi. Ecco come puoi migliorare l'aspetto del tuo tavolo:
+ La formattazione di base della tabella può essere ottenuta utilizzando i metodi forniti da`Table`E`Cell` classi. Ecco come puoi migliorare l'aspetto del tuo tavolo:
 
 1. Imposta la larghezza delle colonne: regola la larghezza delle colonne per garantire il corretto allineamento e l'aspetto visivo.
 

@@ -85,7 +85,7 @@ Gefeliciteerd! U hebt zojuist geleerd hoe u naar een specifieke tabelcel in een 
  Ja, door de juiste tabelindex op te geven in het`MoveToCell` Met de methode kunt u naar elke cel in elke tabel in het document navigeren.
 
 ### Hoe ga ik om met cellen die meerdere rijen of kolommen beslaan?
- U kunt gebruik maken van de`RowSpan` En`ColSpan` eigenschappen van de`Cell` klasse om samengevoegde cellen te beheren.
+ U kunt gebruik maken van de`RowSpan`En`ColSpan` eigenschappen van de`Cell` klasse om samengevoegde cellen te beheren.
 
 ### Is het mogelijk om de tekst in de cel op te maken?
  Absoluut! Gebruik`DocumentBuilder` methoden zoals`Font.Size`, `Font.Bold`en andere om uw tekst op te maken.

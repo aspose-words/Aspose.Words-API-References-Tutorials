@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: configura le origini dei caratteri
- Successivamente, creeremo un'istanza di`FontSettings` e ottieni le fonti dei caratteri esistenti utilizzando il file`GetFontsSources()` metodo. Aggiungeremo anche una nuova fonte di carattere specificando una cartella contenente i caratteri.
+Successivamente, creeremo un'istanza di`FontSettings` e ottieni le fonti dei caratteri esistenti utilizzando il file`GetFontsSources()` metodo. Aggiungeremo anche una nuova fonte di carattere specificando una cartella contenente i caratteri.
 
 ```csharp
 // Configura le origini dei caratteri
@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Aggiungi una nuova sorgente di cartella che indicherà ad Aspose.Words di cercare i caratteri nella seguente cartella.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//Aggiungi la cartella personalizzata che contiene i nostri caratteri all'elenco delle fonti di caratteri esistenti.
+// Aggiungi la cartella personalizzata che contiene i nostri caratteri all'elenco delle fonti di caratteri esistenti.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ R: Sì, puoi filtrare l'elenco dei caratteri disponibili in Aspose.Words utilizz
 
 #### D: Come posso utilizzare l'elenco dei caratteri disponibili nei miei documenti Word?
 
-R: Per utilizzare l'elenco dei caratteri disponibili nei tuoi documenti Word, puoi sfogliare l'elenco e selezionare i caratteri appropriati utilizzando i metodi e le proprietà del`FontSettings` classe in Aspose.Words.
+ R: Per utilizzare l'elenco dei caratteri disponibili nei tuoi documenti Word, puoi sfogliare l'elenco e selezionare i caratteri appropriati utilizzando i metodi e le proprietà del`FontSettings` classe in Aspose.Words.

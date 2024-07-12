@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 ###  س3: هل يمكنني التعامل مع أنواع أخرى من التحذيرات باستخدام`IWarningCallback`?
 
- نعم`IWarningCallback` يمكن للواجهة التعامل مع أنواع مختلفة من التحذيرات، وليس فقط استبدال الخطوط.
+ نعم`IWarningCallback`يمكن للواجهة التعامل مع أنواع مختلفة من التحذيرات، وليس فقط استبدال الخطوط.
 
 ### س4: أين يمكنني العثور على الدعم لـ Aspose.Words؟
 

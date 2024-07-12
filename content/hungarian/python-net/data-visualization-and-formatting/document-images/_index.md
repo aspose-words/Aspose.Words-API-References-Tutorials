@@ -16,7 +16,7 @@ Egy olyan világban, ahol a figyelem csökken, és az információs túlterhelts
 
 multimédiás képek különféle típusú vizuális tartalmakat tartalmaznak, például fényképeket, diagramokat, infografikákat és diagramokat. Használhatók fogalmak illusztrálására, kontextus biztosítására, adatok bemutatására és érzelmek kiváltására. Ha képeket épít be a dokumentumokba, az unalmas és monoton szöveget lebilincselő narratívákká alakíthatja, amelyek visszhangra találnak az olvasókban.
 
-## Az Aspose.Words for Python használatának megkezdése
+## Az Aspose.Words for Python használatának első lépései
 
 A multimédiás képek erejének kihasználásához integrálnia kell az Aspose.Words for Python API-t a fejlesztői környezetébe. Ez az API átfogó eszközkészletet biztosít a dokumentumok programozott kezeléséhez.
 

@@ -86,7 +86,7 @@ Evet, DOCX dosyalarından oluşan bir dizinde dolaşabilir ve aynı adımları k
 
 Aspose.Words for .NET, bir belgeyi kaydederken kodlama seçeneklerini belirtmenize olanak tanır. Daha fazla ayrıntı için belgelere bakın.
 
-### DOCX dosyasının formatını TXT dosyasında korumak mümkün müdür?
+### DOCX dosyasının formatını TXT dosyasında korumak mümkün mü?
 
 TXT dosyaları zengin metin biçimlendirmesini desteklemediğinden çıktı, biçimlendirme olmadan düz metin olacaktır.
 

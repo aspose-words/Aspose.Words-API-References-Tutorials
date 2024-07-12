@@ -2,24 +2,39 @@
 title: Ẩn trục biểu đồ trong tài liệu Word
 linktitle: Ẩn trục biểu đồ trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách ẩn trục biểu đồ trong tài liệu bằng Aspose.Words for .NET. Ẩn trục để hiển thị biểu đồ rõ ràng và tập trung hơn.
+description: Tìm hiểu cách ẩn trục biểu đồ trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi.
 type: docs
 weight: 10
 url: /vi/net/programming-with-charts/hide-chart-axis/
 ---
+## Giới thiệu
 
-Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để ẩn trục biểu đồ trong tài liệu. Mã nguồn được cung cấp trình bày cách tạo biểu đồ, thêm dữ liệu chuỗi và ẩn trục biểu đồ.
+Tạo tài liệu Word năng động và hấp dẫn về mặt trực quan thường liên quan đến việc kết hợp các biểu đồ và đồ thị. Một kịch bản như vậy có thể yêu cầu ẩn trục biểu đồ để trình bày rõ ràng hơn. Aspose.Words for .NET cung cấp API toàn diện và dễ sử dụng cho các tác vụ như vậy. Hướng dẫn này sẽ hướng dẫn bạn các bước để ẩn trục biểu đồ trong tài liệu Word bằng Aspose.Words for .NET.
 
-## Bước 1: Thiết lập dự án
+## Điều kiện tiên quyết
 
-Đảm bảo rằng bạn có các điều kiện tiên quyết sau:
+Trước khi chúng ta đi sâu vào hướng dẫn, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
 
-- Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
-- Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
+-  Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Bất kỳ IDE nào hỗ trợ phát triển .NET, chẳng hạn như Visual Studio.
+- .NET Framework: Đảm bảo rằng bạn đã cài đặt .NET Framework trên máy của mình.
+- Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C# sẽ có lợi.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
+## Nhập không gian tên
 
- Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
+Để bắt đầu làm việc với Aspose.Words cho .NET, bạn cần nhập các vùng tên được yêu cầu trong dự án của mình. Đây là cách bạn có thể làm điều đó:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Hãy chia nhỏ quy trình thành các bước đơn giản, dễ thực hiện.
+
+## Bước 1: Khởi tạo Document và DocumentBuilder
+
+Bước đầu tiên liên quan đến việc tạo một tài liệu Word mới và khởi tạo đối tượng DocumentBuilder.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
@@ -29,88 +44,78 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tiếp theo, chèn biểu đồ vào tài liệu bằng cách sử dụng`InsertChart` phương pháp của`DocumentBuilder`. Trong ví dụ này, chúng tôi sẽ chèn biểu đồ cột.
+ Trong bước này, chúng tôi xác định đường dẫn nơi tài liệu sẽ được lưu. Sau đó chúng tôi tạo một cái mới`Document` đối tượng và một`DocumentBuilder` đối tượng để bắt đầu xây dựng tài liệu của chúng tôi.
+
+## Bước 2: Chèn biểu đồ
+
+ Tiếp theo, chúng ta sẽ chèn biểu đồ vào tài liệu bằng cách sử dụng`DocumentBuilder` sự vật.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Bước 3: Thêm dữ liệu chuỗi vào biểu đồ
+ Ở đây, chúng tôi chèn biểu đồ cột với các kích thước được chỉ định. Các`InsertChart` phương thức trả về một`Shape` đối tượng chứa biểu đồ.
 
-Thêm dữ liệu chuỗi vào biểu đồ. Trong ví dụ này, chúng tôi sẽ thêm năm mục và giá trị tương ứng của chúng.
+## Bước 3: Xóa chuỗi hiện có
+
+Trước khi thêm dữ liệu mới vào biểu đồ, chúng ta cần xóa mọi chuỗi hiện có.
 
 ```csharp
 chart.Series.Clear();
+```
+
+Bước này đảm bảo rằng mọi dữ liệu mặc định trong biểu đồ sẽ bị xóa, nhường chỗ cho dữ liệu mới mà chúng tôi sẽ thêm tiếp theo.
+
+## Bước 4: Thêm dữ liệu chuỗi
+
+Bây giờ, hãy thêm chuỗi dữ liệu của riêng chúng ta vào biểu đồ.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Bước 4: Ẩn trục biểu đồ
+Trong bước này, chúng tôi thêm một chuỗi có tiêu đề "Aspose Series 1" với các danh mục và giá trị tương ứng.
 
- Để ẩn trục biểu đồ, hãy truy cập vào`AxisY` thuộc tính của biểu đồ và thiết lập`Hidden`tài sản để`true`.
+## Bước 5: Ẩn trục Y
+
+ Để ẩn trục Y của biểu đồ, chúng ta chỉ cần đặt`Hidden` thuộc tính của trục Y`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-Trong ví dụ này, chúng tôi ẩn trục Y của biểu đồ.
+Dòng mã này ẩn trục Y, khiến nó không hiển thị được trong biểu đồ.
 
-## Bước 5: Lưu tài liệu
+## Bước 6: Lưu tài liệu
 
- Cuối cùng, lưu tài liệu vào thư mục đã chỉ định bằng cách sử dụng lệnh`Save` phương pháp của`Document` sự vật.
+Cuối cùng, lưu tài liệu vào thư mục được chỉ định.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-Điều này hoàn tất việc thực hiện ẩn trục biểu đồ bằng Aspose.Words cho .NET.
-
-### Mã nguồn ví dụ cho Ẩn trục biểu đồ bằng Aspose.Words cho .NET 
-
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Hidden = true;
-	doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
-```
+Lệnh này lưu tài liệu Word có biểu đồ vào đường dẫn đã chỉ định.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, bạn đã học cách ẩn trục biểu đồ trong tài liệu Word bằng Aspose.Words for .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, bạn có thể tạo biểu đồ, thêm dữ liệu chuỗi và ẩn trục biểu đồ để đạt được hiệu ứng hình ảnh mong muốn.
+Chúc mừng! Bạn đã học thành công cách ẩn trục biểu đồ trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác các tài liệu Word theo chương trình. Bằng cách làm theo các bước này, bạn có thể tạo các tài liệu có giao diện chuyên nghiệp và tùy chỉnh mà không tốn nhiều công sức.
 
- Aspose.Words for .NET cung cấp API toàn diện cho Xử lý từ với các biểu đồ trong tài liệu Word, cho phép bạn thao tác các khía cạnh khác nhau của biểu đồ, bao gồm các thuộc tính trục. Bằng cách truy cập vào`AxisY` của biểu đồ, bạn có thể ẩn trục Y để xóa nó khỏi trực quan hóa biểu đồ.
+## Câu hỏi thường gặp
 
-Việc ẩn trục biểu đồ có thể hữu ích khi bạn muốn tập trung vào dữ liệu biểu đồ mà không bị các đường trục và nhãn làm phân tâm. Nó mang lại vẻ ngoài gọn gàng và tối giản hơn cho biểu đồ.
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một API mạnh mẽ để tạo, chỉnh sửa, chuyển đổi và thao tác các tài liệu Word trong các ứng dụng .NET.
 
-Bằng cách sử dụng Aspose.Words cho .NET, bạn có thể dễ dàng kết hợp các khả năng lập biểu đồ vào các ứng dụng .NET của mình và tạo các tài liệu có giao diện chuyên nghiệp với các biểu đồ tùy chỉnh và các trục biểu đồ ẩn.
+### Tôi có thể ẩn cả trục X và Y trong biểu đồ không?
+ Có, bạn có thể ẩn cả hai trục bằng cách đặt`Hidden` tài sản của cả hai`AxisX`Và`AxisY` ĐẾN`true`.
 
-### Câu hỏi thường gặp
+### Có bản dùng thử miễn phí dành cho Aspose.Words cho .NET không?
+ Có, bạn có thể dùng thử miễn phí[đây](https://releases.aspose.com/).
 
-#### Q1. Aspose.Words cho .NET là gì?
-Aspose.Words for .NET là một thư viện xử lý tài liệu mạnh mẽ cho phép các nhà phát triển tạo, thao tác và lưu tài liệu Word theo chương trình trong các ứng dụng .NET. Nó cung cấp nhiều tính năng cho Xử lý văn bản với các thành phần tài liệu, bao gồm biểu đồ và trục biểu đồ.
+### Tôi có thể tìm thêm tài liệu ở đâu?
+ Bạn có thể tìm tài liệu chi tiết về Aspose.Words for .NET[đây](https://reference.aspose.com/words/net/).
 
-#### Q2. Làm cách nào tôi có thể cài đặt Aspose.Words cho .NET?
-Bạn có thể cài đặt Aspose.Words cho .NET bằng cách tải xuống bằng cách sử dụng trình quản lý gói NuGet trong Visual Studio. Chỉ cần tìm kiếm "Aspose.Words" trong trình quản lý gói NuGet và cài đặt nó vào dự án của bạn.
-
-#### Q3. Tôi có thể ẩn cả trục X và trục Y của biểu đồ không?
- Có, bạn có thể ẩn cả trục X và trục Y của biểu đồ bằng Aspose.Words for .NET. Để ẩn trục X, bạn có thể truy cập`AxisX` thuộc tính của biểu đồ và thiết lập`Hidden`tài sản để`true` . Tương tự, để ẩn trục Y, bạn có thể truy cập vào`AxisY` thuộc tính và thiết lập`Hidden`tài sản để`true`. Điều này cho phép bạn loại bỏ cả hai trục khỏi trực quan hóa biểu đồ.
-
-#### Q4. Tôi có thể hiển thị lại trục sau khi ẩn nó không?
-Có, bạn có thể hiển thị lại trục biểu đồ sau khi ẩn nó bằng Aspose.Words for .NET. Để hiển thị trục ẩn, chỉ cần đặt`Hidden` thuộc tính tương ứng`AxisX` hoặc`AxisY` chủ đề`false`. Điều này sẽ làm cho trục hiển thị trở lại trong biểu đồ.
-
-#### Q5. Tôi có thể tùy chỉnh các thuộc tính khác của trục biểu đồ không?
- Có, Aspose.Words for .NET cho phép bạn tùy chỉnh các thuộc tính khác nhau của trục biểu đồ, chẳng hạn như tiêu đề trục, nhãn, màu đường, v.v. Bằng cách truy cập vào`AxisX` Và`AxisY` thuộc tính của biểu đồ, bạn có thể sửa đổi các thuộc tính như`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, và nhiều người khác. Điều này mang lại cho bạn khả năng kiểm soát chi tiết về hình thức và hoạt động của trục biểu đồ.
-
-#### Q6. Tôi có thể lưu biểu đồ có trục ẩn ở các định dạng tệp khác nhau không?
- Có, Aspose.Words for .NET cho phép bạn lưu tài liệu chứa biểu đồ có trục ẩn ở nhiều định dạng tệp khác nhau, chẳng hạn như DOCX, PDF, HTML, v.v. Bạn có thể chọn định dạng đầu ra mong muốn dựa trên yêu cầu của mình và sử dụng`Save` phương pháp của`Document` đối tượng để lưu tài liệu. Trục ẩn sẽ được giữ nguyên trong tài liệu đã lưu.
+### Làm cách nào tôi có thể nhận được hỗ trợ cho Aspose.Words cho .NET?
+ Bạn có thể nhận được hỗ trợ từ cộng đồng Aspose[đây](https://forum.aspose.com/c/words/8).

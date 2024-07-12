@@ -70,15 +70,15 @@ Dans ce guide, nous avons expliqué comment charger un document en convertissant
 
 #### Q : Pourquoi est-il nécessaire de convertir les formes en formules mathématiques Office ?
 
-: La conversion de formes en formules mathématiques Office est essentielle pour une meilleure compatibilité et une meilleure présentation des éléments mathématiques dans les documents Word dans une application C#.
+R : La conversion de formes en formules mathématiques Office est essentielle pour une meilleure compatibilité et une meilleure présentation des éléments mathématiques dans les documents Word dans une application C#.
 
 #### Q : Aspose.Words peut-il gérer des expressions mathématiques complexes ?
 
-R : Absolument ! Aspose.Words peut gérer un large éventail d'expressions et de formules mathématiques, ce qui en fait un outil approprié pour traiter même des contenus mathématiques complexes.
+R : Absolument ! Aspose.Words peut gérer un large éventail d'expressions et de formules mathématiques, ce qui en fait un outil approprié pour traiter des contenus mathématiques même complexes.
 
 #### Q : Aspose.Words est-il uniquement limité aux plates-formes .NET ?
 
-R : Bien qu'Aspose.Words soit optimisé pour .NET, il prend également en charge d'autres plates-formes, notamment Java et Android, ce qui en fait une solution polyvalente pour le traitement de documents.
+: Bien qu'Aspose.Words soit optimisé pour .NET, il prend également en charge d'autres plates-formes, notamment Java et Android, ce qui en fait une solution polyvalente pour le traitement de documents.
 
 #### Q : Puis-je personnaliser les options de chargement à d’autres fins ?
 
@@ -86,4 +86,4 @@ R : En effet ! Aspose.Words propose diverses options de chargement qui peuvent �
 
 #### Q : Aspose.Words prend-il en charge d'autres formats de documents que Word ?
 
-: Oui, outre les documents Word, Aspose.Words prend en charge un large éventail de formats, tels que PDF, HTML, EPUB, etc., ce qui en fait une solution complète pour la manipulation de documents.
+R : Oui, outre les documents Word, Aspose.Words prend en charge un large éventail de formats, tels que PDF, HTML, EPUB, etc., ce qui en fait une solution complète pour la manipulation de documents.

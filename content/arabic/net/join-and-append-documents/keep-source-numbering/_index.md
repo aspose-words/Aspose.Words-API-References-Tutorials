@@ -2,24 +2,38 @@
 title: احتفظ بترقيم المصدر
 linktitle: احتفظ بترقيم المصدر
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إلحاق مستند مع الحفاظ على تنسيق ترقيم المصدر في Aspose.Words لـ .NET.
+description: تعرف على كيفية استيراد المستندات مع الحفاظ على التنسيق باستخدام Aspose.Words لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
 type: docs
 weight: 10
 url: /ar/net/join-and-append-documents/keep-source-numbering/
 ---
+## مقدمة
 
-يشرح هذا البرنامج التعليمي كيفية إلحاق مستند مصدر بالمستند الوجهة مع الحفاظ على تنسيق الترقيم الأصلي للفقرات المرقمة باستخدام Aspose.Words for .NET.
+ عند العمل مع Aspose.Words for .NET، يمكن التعامل مع استيراد المستندات من مصدر إلى آخر مع الحفاظ على التنسيق بكفاءة باستخدام`NodeImporter` فصل. سيرشدك هذا البرنامج التعليمي خلال العملية خطوة بخطوة.
 
-## الخطوة 1: إعداد المشروع
+## المتطلبات الأساسية
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+قبل البدء، تأكد من أن لديك ما يلي:
+- تم تثبيت Visual Studio على جهازك.
+-  تم تثبيت Aspose.Words لـ .NET. إذا لم يكن الأمر كذلك، قم بتنزيله من[هنا](https://releases.aspose.com/words/net/).
+- المعرفة الأساسية ببرمجة C# و.NET.
 
--  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستندات المصدر والوجهة.
+## استيراد مساحات الأسماء
 
-## الخطوة 2: إنشاء الوجهة والمستندات المصدر
+أولاً، قم بتضمين مساحات الأسماء الضرورية في مشروعك:
 
- إنشاء مثيلات`Document` للوجهة والوثائق المصدر.
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+## الخطوة 1: قم بإعداد مشروعك
+
+ابدأ بإنشاء مشروع C# جديد في Visual Studio وقم بتثبيت Aspose.Words عبر NuGet Package Manager.
+
+## الخطوة 2: تهيئة المستندات
+إنشاء مثيلات للمصدر (`srcDoc`) والوجهة (`dstDoc`) وثائق.
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
@@ -29,18 +43,17 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: احتفظ بترقيم المصدر عند الاستيراد
-
- للحفاظ على تنسيق الترقيم للفقرات المرقمة من المستند المصدر، قم بإنشاء مثيل لـ`ImportFormatOptions` وحدد`KeepSourceNumbering` ل`true` . إستخدم`NodeImporter` لاستيراد العقد من المستند المصدر إلى المستند الوجهة، مع تحديد`ImportFormatMode.KeepSourceFormatting` و ال`importFormatOptions`.
+## الخطوة 3: تكوين خيارات الاستيراد
+قم بإعداد خيارات الاستيراد للحفاظ على تنسيق المصدر، بما في ذلك الفقرات المرقمة.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
+	importFormatOptions);
 ```
 
-## الخطوة 4: استيراد وإلحاق الفقرات
-
- قم بالتكرار عبر الفقرات الموجودة في المستند المصدر وقم باستيراد كل فقرة إلى المستند الوجهة باستخدام الملف`importer`. قم بإلحاق العقد المستوردة بالنص الأساسي للمستند الوجهة.
+## الخطوة 4: استيراد الفقرات
+قم بالتكرار خلال الفقرات الموجودة في المستند المصدر وقم باستيرادها إلى المستند الوجهة.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -51,33 +64,30 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## الخطوة 5: احفظ المستند المعدل
-
- احفظ المستند المعدل باستخدام`Save` طريقة`Document` هدف.
+## الخطوة 5: احفظ المستند
+احفظ المستند المدمج في الموقع الذي تريده.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-يؤدي هذا إلى إكمال تنفيذ إلحاق مستند مصدر بالمستند الوجهة مع الاحتفاظ بتنسيق الترقيم الأصلي باستخدام Aspose.Words for .NET.
+## خاتمة
 
-### مثال على التعليمات البرمجية المصدر للاحتفاظ بترقيم المصدر باستخدام Aspose.Words لـ .NET 
+ في الختام، يعد استخدام Aspose.Words لـ .NET لاستيراد المستندات مع الحفاظ على التنسيق أمرًا مباشرًا مع`NodeImporter` فصل. تضمن هذه الطريقة أن تحافظ مستنداتك على مظهرها الأصلي وبنيتها بسلاسة.
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## الأسئلة الشائعة
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//احتفظ بتنسيق قائمة المصدر عند استيراد فقرات مرقمة.
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, false);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
-```
+### هل يمكنني استيراد المستندات بأنماط تنسيق مختلفة؟
+ نعم`NodeImporter` يدعم الفصل استيراد المستندات ذات أنماط التنسيق المتنوعة.
+
+### ماذا لو كانت مستنداتي تحتوي على جداول وصور معقدة؟
+يتعامل Aspose.Words for .NET مع الهياكل المعقدة مثل الجداول والصور أثناء عمليات الاستيراد.
+
+### هل Aspose.Words متوافق مع كافة إصدارات .NET؟
+يدعم Aspose.Words إصدارات .NET Framework و.NET Core لتحقيق التكامل السلس.
+
+### كيف يمكنني معالجة الأخطاء أثناء استيراد المستندات؟
+استخدم كتل محاولة الالتقاط لمعالجة الاستثناءات التي قد تحدث أثناء عملية الاستيراد.
+
+### أين يمكنني العثور على مزيد من الوثائق التفصيلية حول Aspose.Words لـ .NET؟
+ قم بزيارة[توثيق](https://reference.aspose.com/words/net/) للحصول على أدلة شاملة ومراجع API.

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Stap 2: Laad het document en configureer de instellingen voor lettertypevervanging
- Vervolgens laden we het document met behulp van de`Document` class en configureer de instellingen voor het overschrijven van lettertypen met behulp van de`FontSettings`klas. We zullen de Fallback-instellingen voor het Noto-lettertype laden met behulp van de`LoadNotoFallbackSettings()` methode.
+ Vervolgens laden we het document met behulp van de`Document` class en configureer de instellingen voor het overschrijven van lettertypen met behulp van de`FontSettings` klas. We zullen de Fallback-instellingen voor het Noto-lettertype laden met behulp van de`LoadNotoFallbackSettings()` methode.
 
 ```csharp
 // Laad het document en configureer de instellingen voor lettertypevervanging

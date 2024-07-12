@@ -83,7 +83,7 @@ Di sini, kami menyimpan dokumen yang ditambahkan dengan nama file deskriptif, ya
 
 ### 1. Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini ideal untuk mengotomatisasi tugas-tugas yang berhubungan dengan dokumen.
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini ideal untuk mengotomatiskan tugas-tugas terkait dokumen.
 
 ### 2. Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
 

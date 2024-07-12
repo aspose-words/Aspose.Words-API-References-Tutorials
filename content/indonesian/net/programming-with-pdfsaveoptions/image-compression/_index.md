@@ -103,14 +103,14 @@ Itu saja ! Anda telah berhasil mengompresi gambar dalam dokumen dan menghasilkan
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelaskan cara mengompresi gambar dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang dijelaskan, Anda dapat dengan mudah mengurangi ukuran gambar dalam dokumen PDF Anda dan menghasilkan PDF dengan kompresi gambar yang tepat. Gunakan fitur kompresi gambar Aspose.Words untuk .NET untuk mengoptimalkan ukuran dokumen PDF Anda sekaligus menjaga kualitas gambar.
+Dalam tutorial ini, kami menjelaskan cara mengompres gambar dalam dokumen PDF menggunakan Aspose.Words for .NET. Dengan mengikuti langkah-langkah yang dijelaskan, Anda dapat dengan mudah mengurangi ukuran gambar dalam dokumen PDF Anda dan menghasilkan PDF dengan kompresi gambar yang tepat. Gunakan fitur kompresi gambar Aspose.Words untuk .NET untuk mengoptimalkan ukuran dokumen PDF Anda sekaligus menjaga kualitas gambar.
 
 ### Pertanyaan yang Sering Diajukan
 
 #### T: Apa yang dimaksud dengan kompresi gambar dalam dokumen PDF?
 A: Mengompresi gambar dalam dokumen PDF adalah untuk memperkecil ukuran gambar yang disertakan dalam dokumen PDF untuk memperkecil ukuran file PDF secara keseluruhan. Hal ini mengurangi ruang penyimpanan yang dibutuhkan dan meningkatkan kinerja saat memuat dan melihat PDF.
 
-#### T: Bagaimana cara mengompres gambar dalam dokumen PDF dengan Aspose.Words untuk .NET?
+#### T: Bagaimana cara mengompresi gambar dalam dokumen PDF dengan Aspose.Words untuk .NET?
 J: Untuk mengompresi gambar dalam dokumen PDF dengan Aspose.Words for .NET, ikuti langkah-langkah berikut:
 
  Buat sebuah instance dari`Document` kelas yang menentukan jalur ke dokumen Word.

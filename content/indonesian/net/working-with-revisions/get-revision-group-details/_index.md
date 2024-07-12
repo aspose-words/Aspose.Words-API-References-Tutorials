@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### T: Bagaimana cara mendapatkan detail grup revisi di Aspose.Words untuk .NET?
 
-J: Telusuri revisi dokumen menggunakan loop dan akses properti setiap revisi untuk mendapatkan detail yang Anda inginkan. Anda dapat menggunakan`RevisionType`, `Author`, `DateTime` Dan`ParentNode` properti untuk mendapatkan masing-masing jenis revisi, penulis, tanggal dan teks revisi.
+J: Telusuri revisi dokumen menggunakan loop dan akses properti setiap revisi untuk mendapatkan detail yang Anda inginkan. Anda dapat menggunakan`RevisionType`, `Author`, `DateTime`Dan`ParentNode` properti untuk mendapatkan masing-masing jenis revisi, penulis, tanggal dan teks revisi.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

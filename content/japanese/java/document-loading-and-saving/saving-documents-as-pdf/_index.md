@@ -16,7 +16,7 @@ url: /ja/java/document-loading-and-saving/saving-documents-as-pdf/
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## 文書をPDFに変換する
@@ -113,7 +113,7 @@ doc.save("output.pdf", saveOptions);
 
 ## 結論
 
-Aspose.Words for Java は、柔軟性とカスタマイズ オプションを備えた Word 文書を PDF 形式に変換する包括的な機能を提供します。フォント、文書のプロパティ、画像圧縮など、PDF 出力のさまざまな側面を制御できます。
+Aspose.Words for Java は、柔軟性とカスタマイズ オプションを備えた Word 文書を PDF 形式に変換するための包括的な機能を提供します。フォント、文書のプロパティ、画像圧縮など、PDF 出力のさまざまな側面を制御できます。
 
 ## よくある質問
 

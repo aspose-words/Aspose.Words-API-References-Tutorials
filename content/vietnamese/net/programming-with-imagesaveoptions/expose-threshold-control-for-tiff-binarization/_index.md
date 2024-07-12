@@ -44,7 +44,7 @@ ThresholdForFloydSteinbergDithering = 254
 doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
 ```
 
- Ở bước cuối cùng này, chúng tôi lưu hình ảnh tài liệu ở định dạng TIFF bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu được chỉ định.
+ Ở bước cuối cùng này, chúng tôi lưu hình ảnh tài liệu ở định dạng TIFF bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu đã chỉ định.
 
 Bây giờ bạn có thể chạy mã nguồn để chuyển đổi tài liệu của mình sang định dạng TIFF trong khi kiểm soát ngưỡng nhị phân bằng các tùy chọn đã chỉ định. Tệp kết quả sẽ được lưu trong thư mục được chỉ định với tên "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff".
 

@@ -109,7 +109,7 @@ Anda dapat menghapus baris berdasarkan penandanya dengan terlebih dahulu menemuk
 
 ### Apa saja kasus penggunaan umum untuk bookmark?
 
-Bookmark biasanya digunakan untuk membuat daftar isi, mengekstraksi konten tertentu, dan mengotomatiskan proses pembuatan dokumen.
+Bookmark biasanya digunakan untuk membuat daftar isi, mengekstraksi konten tertentu, dan mengotomatisasi proses pembuatan dokumen.
 
 ### Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Words untuk Java?
 

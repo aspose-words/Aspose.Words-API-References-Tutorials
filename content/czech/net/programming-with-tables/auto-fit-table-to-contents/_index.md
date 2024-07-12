@@ -63,4 +63,4 @@ Ujistěte se, že jste zadali správnou cestu a název souboru pro výstupní do
 ```
 
 ## Závěr
-tomto tutoriálu jsme se naučili, jak automaticky přizpůsobit tabulku jejímu obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle podrobného průvodce a implementace poskytnutého kódu C# můžete programově manipulovat s tabulkami v dokumentech aplikace Word. To vám umožňuje dynamicky upravovat šířku tabulky na základě jejího obsahu, což poskytuje profesionálnější a vizuálně přitažlivější dokument.
+V tomto tutoriálu jsme se naučili, jak automaticky přizpůsobit tabulku jejímu obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle podrobného průvodce a implementace poskytnutého kódu C# můžete programově manipulovat s tabulkami v dokumentech aplikace Word. To vám umožňuje dynamicky upravovat šířku tabulky na základě jejího obsahu, což poskytuje profesionálnější a vizuálně přitažlivější dokument.

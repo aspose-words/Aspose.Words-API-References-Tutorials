@@ -53,7 +53,7 @@ Tebrikler! Artık Aspose.Words for .NET ile kalın metinlerin nasıl yazılacağ
 
 #### S: Aspose.Words'te metni nasıl kalın yapabilirim?
 
- C: Aspose.Words'te metni kalın yapmak için`Font.Bold` mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metni kalın yapmak için. Örneğin şunları kullanabilirsiniz:`run.Font.Bold=true` içindeki metni kalınlaştırmak için`Run` nesne.
+ C: Aspose.Words'te metni kalın yapmak için`Font.Bold` mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metni kalın yapmak için. Örneğin, kullanabilirsiniz`run.Font.Bold=true` içindeki metni kalınlaştırmak için`Run` nesne.
 
 #### S: Aynı paragrafta birkaç metin parçasını kalın harflerle yazmak mümkün müdür?
 

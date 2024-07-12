@@ -14,7 +14,7 @@ A vízjelek finom, mégis hatásos elemként szolgálnak a dokumentumokban, prof
 
 vízjelek a dokumentumok hátterében elhelyezett tervezési elemek, amelyek további információkat vagy márkajelzést közvetítenek anélkül, hogy akadályoznák a fő tartalmat. Általában üzleti dokumentumokban, jogi dokumentumokban és kreatív munkákban használják a dokumentumok integritásának megőrzése és a vizuális vonzerő fokozása érdekében.
 
-## Az Aspose.Words for Python használatának megkezdése
+## Az Aspose.Words for Python használatának első lépései
 
  Kezdésként győződjön meg arról, hogy az Aspose.Words for Python telepítve van. Letöltheti az Aspose Releases oldaláról:[Töltse le az Aspose.Words for Python programot](https://releases.aspose.com/words/python/).
 

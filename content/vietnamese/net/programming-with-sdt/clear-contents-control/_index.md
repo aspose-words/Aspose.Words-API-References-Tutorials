@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tải tài liệu và lấy StructuredDocumentTag
- Tải tài liệu Word bằng cách sử dụng`Document` hàm tạo, chuyển đường dẫn đến tài liệu dưới dạng tham số. Sau đó, truy xuất mong muốn`StructuredDocumentTag` từ tài liệu. Trong ví dụ này, chúng tôi giả định rằng SDT là nút con đầu tiên trong tài liệu.
+ Tải tài liệu Word bằng cách sử dụng`Document` hàm tạo, chuyển đường dẫn đến tài liệu dưới dạng tham số. Sau đó, truy xuất mong muốn`StructuredDocumentTag`từ tài liệu. Trong ví dụ này, chúng tôi giả định rằng SDT là nút con đầu tiên trong tài liệu.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Bước 4: Lưu tài liệu
- Lưu tài liệu đã sửa đổi bằng cách sử dụng`Save`phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithSdt.ClearContentsControl.doc".
+ Lưu tài liệu đã sửa đổi bằng cách sử dụng`Save` phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithSdt.ClearContentsControl.doc".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

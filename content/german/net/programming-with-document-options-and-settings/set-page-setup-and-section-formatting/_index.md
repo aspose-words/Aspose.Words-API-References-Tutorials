@@ -58,6 +58,6 @@ Dieser Code stellt die Seitenausrichtung auf Querformat, den linken Rand auf 50 
   
 ```
 
-Geben Sie unbedingt den korrekten Pfad zum Verzeichnis an, in dem Sie das Dokument speichern möchten.`dataDir` Variable.
+ Achten Sie darauf, den korrekten Pfad zum Verzeichnis anzugeben, in dem Sie das Dokument speichern möchten.`dataDir` Variable.
 
 Sie haben nun gelernt, wie Sie das Layout und die Abschnittsformatierung eines Dokuments mit Aspose.Words für .NET konfigurieren. Indem Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie das Layout und die Formatierung Ihrer eigenen Dokumente ganz einfach anpassen.

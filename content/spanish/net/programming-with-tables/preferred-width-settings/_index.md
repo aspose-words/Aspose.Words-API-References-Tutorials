@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
 ## Paso 3: construir la mesa con los anchos preferidos
-A continuación, crearemos una tabla con tres celdas que tienen diferentes anchos preferidos. Utilice el siguiente código:
+continuación, crearemos una tabla con tres celdas que tienen diferentes anchos preferidos. Utilice el siguiente código:
 
 ```csharp
 // comienzo de la mesa

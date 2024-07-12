@@ -88,7 +88,7 @@ Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 ```
 
-tomto kroku přistoupíme k druhé části a její obsah připojíme ke třetí části. Nyní třetí oddíl obsahuje obsah prvního i druhého oddílu.
+V tomto kroku přistoupíme k druhé části a její obsah připojíme ke třetí části. Nyní třetí oddíl obsahuje obsah prvního i druhého oddílu.
 
 ## Krok 6: Uložení dokumentu
 
@@ -116,7 +116,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ## 3. Jaké jsou hlavní rysy Aspose.Words pro .NET?
 
- Aspose.Words for .NET nabízí širokou škálu funkcí včetně vytváření, formátování, konverze a manipulace s dokumenty. Více o jeho schopnostech si můžete přečíst v[API dokumentace](https://reference.aspose.com/words/net/).
+Aspose.Words for .NET nabízí širokou škálu funkcí včetně vytváření, formátování, konverze a manipulace s dokumenty. Více o jeho schopnostech si můžete přečíst v[API dokumentace](https://reference.aspose.com/words/net/).
 
 ## 4. Jak získám podporu pro Aspose.Words for .NET?
 

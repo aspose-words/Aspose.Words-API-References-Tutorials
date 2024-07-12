@@ -154,4 +154,4 @@ Sim, Aspose.Words for Java suporta a divisão de documentos protegidos por senha
 
 ### Q5. O Aspose.Words for Java é adequado para processamento de documentos em nível empresarial?
 
-Absolutamente! Aspose.Words for Java é amplamente utilizado em aplicativos de nível empresarial para várias tarefas de processamento de documentos devido à sua robustez e extenso conjunto de recursos.
+Absolutamente! Aspose.Words for Java é amplamente utilizado em aplicativos de nível empresarial para várias tarefas de processamento de documentos devido à sua robustez e amplo conjunto de recursos.

@@ -63,7 +63,7 @@ Dieser Code durchläuft die Seiten und speichert sie als HTML-Dateien.
 
 ## Abschluss
 
-In dieser Anleitung haben wir gelernt, wie man Word-Dokumente mit Aspose.Words für Java in HTML-Seiten aufteilt. Diese leistungsstarke API vereinfacht den Vorgang und erleichtert die programmgesteuerte Arbeit mit Word-Dokumenten.
+In diesem Handbuch haben wir gelernt, wie man Word-Dokumente mit Aspose.Words für Java in HTML-Seiten aufteilt. Diese leistungsstarke API vereinfacht den Vorgang und erleichtert die programmgesteuerte Arbeit mit Word-Dokumenten.
 
 Jetzt können Sie Ihre Word-Dokumente ganz einfach in HTML-Seiten umwandeln und sie so online zugänglich und gemeinsam nutzbar machen.
 

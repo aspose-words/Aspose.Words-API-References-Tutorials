@@ -9,7 +9,7 @@ url: /id/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## Perkenalan
 
-Hai, rekan-rekan pengembang! Pernahkah Anda mendapati diri Anda tenggelam dalam proyek dokumen Word dan berpikir, "Wah, saya benar-benar perlu memasukkan aturan horizontal di sini untuk memecahnya"? Coba tebak? Anda beruntung! Dalam tutorial hari ini, kita mendalami cara menyisipkan aturan horizontal di dokumen Word menggunakan Aspose.Words untuk .NET. Ini bukan sekadar tutorial biasa—ini dikemas dengan langkah-langkah mendetail, penjelasan menarik, dan sedikit kesenangan. Jadi, bersiaplah dan bersiaplah untuk menjadi ahli dalam menangani Aspose.Words untuk .NET!
+Hai, rekan-rekan pengembang! Pernahkah Anda mendapati diri Anda tenggelam dalam proyek dokumen Word dan berpikir, "Wah, saya benar-benar perlu memasukkan aturan horizontal di sini untuk memecahnya"? Coba tebak? Anda beruntung! Dalam tutorial hari ini, kita mendalami cara menyisipkan aturan horizontal di dokumen Word menggunakan Aspose.Words untuk .NET. Ini bukan sembarang tutorial biasa—ini dikemas dengan langkah-langkah mendetail, penjelasan menarik, dan sedikit kesenangan. Jadi, bersiaplah dan bersiaplah untuk menjadi ahli dalam menangani Aspose.Words untuk .NET!
 
 ## Prasyarat
 

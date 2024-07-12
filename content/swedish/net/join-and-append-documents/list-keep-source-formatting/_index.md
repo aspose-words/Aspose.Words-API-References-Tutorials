@@ -2,76 +2,87 @@
 title: Lista Behåll källformatering
 linktitle: Lista Behåll källformatering
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du bevarar listformatering när du ansluter och lägger till Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du slår samman Word-dokument samtidigt som du bevarar formateringen med Aspose.Words för .NET. Den här handledningen ger steg-för-steg-vägledning för sömlös sammanslagning av dokument.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## Introduktion
 
-Denna handledning guidar dig genom processen att använda funktionen List Keep Source Formatting i Aspose.Words för .NET. Den här funktionen låter dig gå med i och lägga till Word-dokument samtidigt som källformateringen av listor bevaras.
+I den här handledningen kommer vi att utforska hur man använder Aspose.Words för .NET för att slå samman dokument samtidigt som källformateringen bevaras. Denna förmåga är avgörande för scenarier där det är avgörande att behålla dokumentens ursprungliga utseende.
 
 ## Förutsättningar
 
-Innan du börjar, se till att du har följande:
+Innan du fortsätter, se till att du har följande förutsättningar:
 
-1. Aspose.Words för .NET installerat. Du kan ladda ner den från Asposes webbplats eller installera den via NuGet.
-2. Visual Studio eller någon annan C#-utvecklingsmiljö.
+- Visual Studio installerat på din dator.
+-  Aspose.Words för .NET installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/net/).
+- Grundläggande förtrogenhet med C#-programmering och .NET-miljö.
 
-## Steg 1: Initiera dokumentkatalogerna
+## Importera namnområden
 
- Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
+Importera först de nödvändiga namnrymden till ditt C#-projekt:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## Steg 2: Ladda käll- och måldokumenten
+## Steg 1: Konfigurera ditt projekt
 
-Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
+Börja med att skapa ett nytt C#-projekt i Visual Studio. Se till att Aspose.Words för .NET refereras till i ditt projekt. Om inte kan du lägga till det via NuGet Package Manager.
+
+## Steg 2: Initiera dokumentvariabler
 
 ```csharp
+// Sökväg till din dokumentkatalog
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Ladda käll- och måldokument
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Steg 3: Ställ in källdokumentet på att flöda kontinuerligt
+## Steg 3: Konfigurera avsnittsinställningar
 
- För att säkerställa att innehållet från källdokumentet flödar kontinuerligt när det läggs till måldokumentet, måste du ställa in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.Continuous`.
+För att upprätthålla ett kontinuerligt flöde i det sammanslagna dokumentet, justera avsnittsstarten:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Steg 4: Bifoga källdokumentet till destinationsdokumentet
+## Steg 4: Slå samman dokument
 
- Nu kan du lägga till källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. De`ImportFormatMode.KeepSourceFormatting`parametern säkerställer att källformateringen, inklusive formateringen av listor, bevaras under tilläggsåtgärden.
+Bifoga innehållet i källdokumentet (`srcDoc`) till måldokumentet (`dstDoc`) medan den ursprungliga formateringen behålls:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Steg 5: Spara det slutliga dokumentet
+## Steg 5: Spara det sammanslagna dokumentet
 
- Slutligen sparar du det sammanslagna dokumentet med funktionen List Keep Source Formatting aktiverad med hjälp av`Save` metod för`Document` klass.
+Slutligen, spara det sammanslagna dokumentet i din angivna katalog:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### Exempel på källkod för List Keep Source-formatering med Aspose.Words för .NET 
+## Slutsats
 
-Här är den fullständiga källkoden för funktionen List Keep Source Formatting i C# med Aspose.Words för .NET:
+Sammanfattningsvis är det enkelt att slå samman dokument samtidigt som deras ursprungliga formatering bevaras med Aspose.Words för .NET. Denna handledning har guidat dig genom processen och säkerställer att ditt sammanslagna dokument bibehåller källdokumentets layout och stil.
 
-```csharp
-	// Sökväg till din dokumentkatalog
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ's
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Lägg till innehållet i dokumentet så att det flödar kontinuerligt.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### Vad händer om mina dokument har olika stilar?
+Aspose.Words hanterar olika stilar graciöst och bevarar den ursprungliga formateringen så nära som möjligt.
 
-Det är allt! Du har framgångsrikt implementerat funktionen List Keep Source Formatting med Aspose.Words för .NET. Det slutliga dokumentet kommer att innehålla det sammanslagna innehållet med källdokumentets listformatering bevarad.
+### Kan jag slå samman dokument i olika format?
+Ja, Aspose.Words stöder sammanslagning av dokument i olika format, inklusive DOCX, DOC, RTF och andra.
+
+### Är Aspose.Words kompatibelt med .NET Core?
+Ja, Aspose.Words stöder fullt ut .NET Core, vilket möjliggör plattformsoberoende utveckling.
+
+### Hur kan jag hantera stora dokument effektivt?
+Aspose.Words tillhandahåller effektiva API:er för dokumenthantering, optimerade för prestanda även med stora dokument.
+
+### Var kan jag hitta fler exempel och dokumentation?
+ Du kan utforska fler exempel och detaljerad dokumentation på[Aspose.Words dokumentation](https://reference.aspose.com/words/net/).

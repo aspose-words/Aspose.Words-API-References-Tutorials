@@ -2,7 +2,7 @@
 title: Üstbilgi Altbilgisi Oluştur
 linktitle: Üstbilgi Altbilgisi Oluştur
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak Word belgelerine üstbilgi ve altbilgileri nasıl ekleyeceğinizi ve özelleştireceğinizi öğrenin. Bu adım adım kılavuz, profesyonel belge biçimlendirmeyi sağlar.
+description: Aspose.Words for .NET'i kullanarak Word belgelerinde üstbilgi ve altbilgileri nasıl ekleyeceğinizi ve özelleştireceğinizi öğrenin. Bu adım adım kılavuz, profesyonel belge biçimlendirmeyi sağlar.
 type: docs
 weight: 10
 url: /tr/net/working-with-headers-and-footers/create-header-footer/

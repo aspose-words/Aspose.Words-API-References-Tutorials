@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 #### Q: 문서의 미주 번호 매기기를 사용자 정의할 수 있습니까?
 
- A: 예, 문서의 미주 번호 매기기를 사용자 정의할 수 있습니다. 당신은 사용할 수 있습니다`RestartRule` 그리고`NumberStyle` 의 속성`EndnoteOptions` 특정 재시작 규칙과 번호 매기기 스타일을 정의하는 클래스입니다.
+ A: 예, 문서의 미주 번호 매기기를 사용자 정의할 수 있습니다. 당신은 사용할 수 있습니다`RestartRule`그리고`NumberStyle` 의 속성`EndnoteOptions` 특정 재시작 규칙과 번호 매기기 스타일을 정의하는 클래스입니다.
 
 #### Q: 문서에서 미주를 배치하려면 어떻게 해야 합니까?
 

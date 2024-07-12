@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## Langkah 3: Salin bagian tersebut ke dokumen tujuan
- Untuk menyalin bagian dari dokumen sumber ke dokumen tujuan, kita akan menggunakan`ImportNode`metode untuk mengimpor bagian sumber dan menambahkannya ke dokumen tujuan.
+ Untuk menyalin bagian dari dokumen sumber ke dokumen tujuan, kita akan menggunakan`ImportNode` metode untuk mengimpor bagian sumber dan menambahkannya ke dokumen tujuan.
 
 ```csharp
 // Dapatkan bagian sumber
@@ -86,7 +86,7 @@ A: Sebelum memulai, pastikan Anda memiliki item berikut:
 
 #### T: Bagaimana cara mengatur direktori dokumen di Aspose.Words untuk .NET?
 
- A: Untuk menyetel jalur ke direktori yang berisi dokumen Anda, Anda harus mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai. Berikut cara melakukannya:
+A: Untuk menyetel jalur ke direktori yang berisi dokumen Anda, Anda harus mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai. Berikut cara melakukannya:
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### T: Bagaimana cara memuat dokumen sumber dan tujuan di Aspose.Words untuk .NET?
 
-A: Untuk memuat dokumen sumber ke dalam sebuah instance dari`Document` kelas dipanggil`srcDoc` dan buat instance kosong dari`Document` kelas dipanggil`dstDoc` untuk dokumen tujuan, anda dapat menggunakan kode berikut:
+ A: Untuk memuat dokumen sumber ke dalam sebuah instance dari`Document` kelas dipanggil`srcDoc` dan buat instance kosong dari`Document` kelas dipanggil`dstDoc` untuk dokumen tujuan, anda dapat menggunakan kode berikut:
 
 ```csharp
 // Muat dokumen sumber

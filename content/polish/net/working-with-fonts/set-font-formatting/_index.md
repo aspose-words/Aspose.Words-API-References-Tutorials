@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Utwórz i sformatuj dokument
- Utwórz instancję`Document` klasa i`DocumentBuilder`klasa do zbudowania dokumentu. Użyj`Font` własność`DocumentBuilder` aby uzyskać dostęp do właściwości formatowania czcionki.
+ Utwórz instancję`Document` klasa i`DocumentBuilder` klasa do zbudowania dokumentu. Użyj`Font` własność`DocumentBuilder`aby uzyskać dostęp do właściwości formatowania czcionki.
 
 ```csharp
 Document doc = new Document();

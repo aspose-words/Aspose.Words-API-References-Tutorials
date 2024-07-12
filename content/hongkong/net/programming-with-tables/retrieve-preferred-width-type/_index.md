@@ -62,4 +62,4 @@ double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
 ## 結論
-在本教學中，我們學習如何使用 Aspose.Words for .NET 從 Word 文件的表格儲存格中擷取首選寬度類型及其值。透過遵循此逐步指南並實施提供的 C# 程式碼，您可以擷取 Word 文件表格中特定儲存格的此資訊。
+在本教學中，我們學習如何使用 Aspose.Words for .NET 從 Word 文件中的表格儲存格擷取首選寬度類型及其值。透過遵循此逐步指南並實施提供的 C# 程式碼，您可以擷取 Word 文件表格中特定儲存格的此資訊。

@@ -15,7 +15,7 @@ Hai! Jika Anda terjun ke dunia otomatisasi dokumen, Anda berada di tempat yang t
 
 Sebelum kita masuk ke seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Aspose.Words for .NET: Jika belum melakukannya, Anda harus mengunduh dan menginstal Aspose.Words for .NET. Anda bisa mendapatkannya dari[Unduh Halaman](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Jika belum, Anda harus mengunduh dan menginstal Aspose.Words for .NET. Anda bisa mendapatkannya dari[Unduh Halaman](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan .NET apa pun bisa digunakan, tetapi Visual Studio sangat disarankan.
 3. Pengetahuan Dasar C#: Anda harus terbiasa dengan dasar-dasar pemrograman C#.
 4.  Lisensi Sementara: Untuk membuka kemampuan penuh Aspose.Words, Anda mungkin memerlukan lisensi sementara yang dapat Anda peroleh[Di Sini](https://purchase.aspose.com/temporary-license/).
@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Langkah 2: Buat Dokumen Baru
 
- Baiklah, mari kita mulai dengan membuat dokumen Word baru. Kami akan menggunakan`Document` Dan`DocumentBuilder` kelas dari Aspose.Words untuk membuat segalanya berjalan lancar.
+ Baiklah, mari kita mulai dengan membuat dokumen Word baru. Kami akan menggunakan`Document`Dan`DocumentBuilder` kelas dari Aspose.Words untuk membuat segalanya berjalan lancar.
 
 ```csharp
 // Jalur ke direktori dokumen.

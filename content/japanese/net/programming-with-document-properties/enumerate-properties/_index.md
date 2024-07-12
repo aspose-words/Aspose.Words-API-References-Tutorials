@@ -43,7 +43,7 @@ foreach(DocumentProperty prop in doc.CustomDocumentProperties)
 Console.WriteLine("{0}:{1}", prop.Name, prop.Value);
 ```
 
-このコードはドキュメント名を表示し、組み込みプロパティとカスタム プロパティの名前と値を一覧表示します。
+このコードはドキュメント名を表示し、次に組み込みプロパティとカスタム プロパティの名前と値を一覧表示します。
 
 ### Aspose.Words for .NET を使用したプロパティの列挙のサンプル ソース コード
 
@@ -66,7 +66,7 @@ Console.WriteLine("{0}:{1}", prop.Name, prop.Value);
 		
 ```
 
-正しいドキュメントパスを必ず指定してください。`dataDir`変数。
+必ず正しいドキュメントパスを指定してください。`dataDir`変数。
 
 Aspose.Words for .NET を使用してドキュメント プロパティを列挙する方法を学習しました。このチュートリアルで提供されるステップ バイ ステップ ガイドに従うことで、独自のドキュメントのプロパティに簡単にアクセスして表示できます。
 

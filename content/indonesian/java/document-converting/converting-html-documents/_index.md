@@ -10,7 +10,7 @@ url: /id/java/document-converting/converting-html-documents/
 
 ## Perkenalan
 
-Aspose.Words untuk Java adalah perpustakaan kaya fitur yang memungkinkan pengembang bekerja dengan dokumen Word secara terprogram. Ini mendukung berbagai format dokumen, termasuk DOC, DOCX, RTF, dan HTML. Dalam panduan ini, kami akan fokus pada konversi konten HTML menjadi dokumen Word menggunakan API serbaguna ini.
+Aspose.Words untuk Java adalah perpustakaan kaya fitur yang memungkinkan pengembang bekerja dengan dokumen Word secara terprogram. Ini mendukung berbagai format dokumen, termasuk DOC, DOCX, RTF, dan HTML. Dalam panduan ini, kami akan fokus mengubah konten HTML menjadi dokumen Word menggunakan API serbaguna ini.
 
 ## Prasyarat
 

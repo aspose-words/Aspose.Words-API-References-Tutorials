@@ -15,7 +15,7 @@ Ezekből az oktatóanyagokból megtudhatja, hogyan használhatja a LoadOptions a
 | Cím | Leírás |
 | --- | --- |
 | [Frissítse a piszkos mezőket a Word-dokumentumban](./update-dirty-fields/) | Ismerje meg, hogyan tölthet be Word-dokumentumot a piszkos mezők Aspose.Words for .NET segítségével történő frissítésével. |
-| [Töltsön be titkosított Word dokumentumot](./load-encrypted-document/) | Ismerje meg, hogyan tölthet be és menthet titkosított Word dokumentumokat az Aspose.Words for .NET segítségével. |
+| [Titkosított Word-dokumentum betöltése](./load-encrypted-document/) | Ismerje meg, hogyan tölthet be és menthet titkosított Word dokumentumokat az Aspose.Words for .NET segítségével. |
 | [Alakzat konvertálása irodai matematikává](./convert-shape-to-office-math/) | Ismerje meg, hogyan konvertálhat alakzatokat Office matematikai képletekké, amikor dokumentumokat tölt fel az Aspose.Words for .NET segítségével. |
 | [Állítsa be az Ms Word verziót](./set-ms-word-version/) | Ismerje meg, hogyan tölthet be dokumentumot az MS Word meghatározott verziójával az Aspose.Words for .NET használatával. |
 | [Használja a Temp mappát a Word dokumentumban](./use-temp-folder/) | Ismerje meg, hogyan használhat ideiglenes mappát dokumentumok feltöltésekor az Aspose.Words for .NET segítségével. |

@@ -91,4 +91,4 @@ C: StructuredDocumentTag'ler (SDT), bir Word belgesindeki karmaşık içeriği v
 
 #### S: Tercih edilen seçenek olarak diğer kontrol türlerini kullanabilir miyim?
 
- C: Evet, bunun dışında`HtmlControlType.StructuredDocumentTag` Aspose.Words for .NET aşağıdaki gibi diğer kontrol türlerini destekler:`HtmlControlType.ContentControl` Ve`HtmlControlType.CustomXmlMarkup`.
+ C: Evet, bunun dışında`HtmlControlType.StructuredDocumentTag` Aspose.Words for .NET aşağıdaki gibi diğer kontrol türlerini destekler:`HtmlControlType.ContentControl`Ve`HtmlControlType.CustomXmlMarkup`.

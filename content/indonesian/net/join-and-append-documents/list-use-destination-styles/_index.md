@@ -2,49 +2,67 @@
 title: Daftar Gunakan Gaya Tujuan
 linktitle: Daftar Gunakan Gaya Tujuan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggabungkan dan menambahkan dokumen Word sambil mempertahankan gaya daftar dokumen tujuan menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menggabungkan dan mengelola daftar dokumen secara lancar dengan Aspose.Words untuk .NET. Ikuti tutorial langkah demi langkah kami untuk integrasi dokumen yang efisien.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/list-use-destination-styles/
 ---
+## Perkenalan
 
-Tutorial ini akan memandu Anda melalui proses penggunaan fitur Daftar Gunakan Gaya Tujuan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda untuk menggabungkan dan menambahkan dokumen Word saat menggunakan gaya daftar dokumen tujuan.
+Mengintegrasikan dokumen sambil mempertahankan gaya yang konsisten dapat menjadi tantangan, terutama dengan daftar. Aspose.Words untuk .NET menyediakan alat canggih untuk mengelola kompleksitas ini, memastikan dokumen Anda mempertahankan integritas pemformatannya. Tutorial ini akan memandu Anda melalui proses penggabungan dokumen dengan daftar, menggunakan gaya tujuan untuk produk akhir yang disempurnakan.
 
 ## Prasyarat
 
-Sebelum memulai, pastikan Anda memiliki hal berikut:
+Sebelum mendalami tutorial ini, pastikan Anda memiliki hal berikut:
+- Visual Studio diinstal pada mesin Anda.
+- Aspose.Words untuk perpustakaan .NET terintegrasi ke dalam proyek Anda.
+- Pemahaman dasar bahasa pemrograman C#.
 
-1. Aspose.Words untuk .NET diinstal. Anda dapat mendownloadnya dari situs Aspose atau menginstalnya melalui NuGet.
-2. Visual Studio atau lingkungan pengembangan C# lainnya.
+## Impor Namespace
 
-## Langkah 1: Inisialisasi Direktori Dokumen
-
- Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ubah nilai`dataDir` variabel ke jalur di mana dokumen Anda berada.
+Mulailah dengan mengimpor namespace yang diperlukan untuk memanfaatkan fungsionalitas Aspose.Words:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
+
+Mari kita bagi prosesnya menjadi langkah-langkah yang jelas:
+
+## Langkah 1: Siapkan Jalur Dokumen
+
+Pastikan Anda telah menentukan jalur direktori tempat dokumen Anda berada:
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+```
+
+ Mengganti`"YOUR_DOCUMENT_DIRECTORY_PATH"` dengan jalur direktori sebenarnya tempat dokumen Anda disimpan.
 
 ## Langkah 2: Muat Dokumen Sumber dan Tujuan
 
-Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
+Muat dokumen sumber dan tujuan menggunakan Aspose.Words:
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+Document srcDoc = new Document(dataDir + "DocumentSource.docx");
+Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
 ```
 
-## Langkah 3: Atur Dokumen Sumber untuk Dilanjutkan setelah Dokumen Tujuan
+ Menyesuaikan`"DocumentSource.docx"`Dan`"DocumentDestination.docx"` dengan nama file Anda yang sebenarnya.
 
- Untuk memastikan bahwa konten dari dokumen sumber berlanjut setelah akhir dokumen tujuan, Anda perlu mengaturnya`SectionStart` properti bagian pertama dalam dokumen sumber ke`SectionStart.Continuous`.
+## Langkah 3: Tetapkan Bagian Mulai untuk Dokumen Sumber
+
+Untuk memastikan dokumen digabungkan dengan lancar, atur bagian awal dokumen sumber:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Langkah 4: Tangani Pemformatan Daftar
+Pengaturan ini membantu menjaga kesinambungan antar dokumen.
 
-Untuk menangani pemformatan daftar, Anda akan mengulangi setiap paragraf dalam dokumen sumber dan memeriksa apakah itu merupakan item daftar. Jika ya, Anda akan membandingkan ID daftar dengan daftar yang ada di dokumen tujuan. Jika ada daftar dengan ID yang sama, Anda akan membuat salinan daftar di dokumen sumber dan memperbarui format daftar paragraf untuk menggunakan daftar yang disalin.
+## Langkah 4: Kelola Integrasi Daftar
+
+Ulangi paragraf dalam dokumen sumber untuk menangani item daftar:
 
 ```csharp
 Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -54,9 +72,11 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
     if (para.IsListItem)
     {
         int listId = para.ListFormat.List.ListId;
+
         if (dstDoc.Lists.GetListByListId(listId) != null)
         {
             Aspose.Words.Lists.List currentList;
+
             if (newLists.ContainsKey(listId))
             {
                 currentList = newLists[listId];
@@ -66,73 +86,42 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
                 currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
                 newLists.Add(listId, currentList);
             }
+
             para.ListFormat.List = currentList;
         }
     }
 }
 ```
 
+Segmen kode ini memastikan bahwa daftar dari dokumen sumber terintegrasi secara mulus ke dalam dokumen tujuan, mempertahankan format aslinya.
+
 ## Langkah 5: Tambahkan Dokumen Sumber ke Dokumen Tujuan
 
- Sekarang, Anda dapat menambahkan dokumen sumber ke dokumen tujuan menggunakan`AppendDocument` metode`Document` kelas. Itu`ImportFormatMode.UseDestinationStyles` parameter memastikan bahwa gaya daftar dokumen tujuan digunakan selama operasi penambahan.
+Gabungkan dokumen sumber yang dimodifikasi ke dalam dokumen tujuan:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## Langkah 6: Simpan Dokumen Akhir
+Perintah ini menggabungkan dokumen sambil mempertahankan gaya tujuan.
 
-Terakhir, simpan dokumen yang digabungkan dengan fitur Daftar Gunakan Gaya Tujuan yang diaktifkan menggunakan`Save` metode`Document` kelas.
+## Kesimpulan
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+Dengan mengikuti langkah-langkah ini, Anda dapat secara efektif mengelola dan menggabungkan daftar antar dokumen menggunakan Aspose.Words untuk .NET. Pendekatan ini memastikan bahwa dokumen akhir Anda mempertahankan gaya dan format yang konsisten, sehingga meningkatkan efisiensi manajemen dokumen secara keseluruhan.
 
-### Contoh kode sumber untuk Daftar Gunakan Gaya Tujuan menggunakan Aspose.Words untuk .NET 
+## FAQ
 
-Berikut kode sumber lengkap untuk fitur "Daftar Gunakan Gaya Tujuan" di C# menggunakan Aspose.Words untuk .NET:
+### Bagaimana cara menangani daftar bersarang menggunakan Aspose.Words untuk .NET?
+Aspose.Words menyediakan metode untuk mengelola daftar bertumpuk dengan melakukan iterasi melalui node dokumen dan memeriksa struktur daftar.
 
+### Apa manfaat menggunakan gaya tujuan dalam penggabungan dokumen?
+Gaya tujuan membantu menjaga keseragaman format di seluruh dokumen yang digabungkan, memastikan tampilan profesional.
 
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Apakah Aspose.Words mendukung penggabungan dokumen lintas platform?
+Ya, Aspose.Words mendukung penggabungan dokumen di berbagai platform, termasuk lingkungan Windows dan Linux.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Atur dokumen sumber agar dilanjutkan tepat setelah akhir dokumen tujuan.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// Melacak daftar yang dibuat.
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			// Periksa apakah dokumen tujuan sudah berisi daftar dengan ID ini. Jika ya, maka hal ini mungkin terjadi
-			// menyebabkan kedua daftar berjalan bersamaan. Buat salinan daftar di dokumen sumber.
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				// Daftar yang baru disalin sudah ada untuk ID ini, ambil daftar yang disimpan,
-				// dan menggunakannya pada paragraf saat ini.
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					// Tambahkan salinan daftar ini ke dokumen dan simpan untuk referensi nanti.
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				// Atur daftar paragraf ini ke daftar yang disalin.
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	// Tambahkan dokumen sumber ke akhir dokumen tujuan.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### Bisakah saya mengkustomisasi pemformatan daftar selama penggabungan dokumen?
+Aspose.Words memungkinkan penyesuaian format daftar yang ekstensif, memungkinkan solusi integrasi dokumen yang disesuaikan.
 
-Itu dia! Anda telah berhasil mengimplementasikan fitur Daftar Gunakan Gaya Tujuan menggunakan Aspose.Words untuk .NET. Dokumen akhir akan berisi konten gabungan dengan gaya daftar dari dokumen tujuan.
+### Di mana saya dapat menemukan lebih banyak sumber daya tentang manajemen dokumen tingkat lanjut dengan Aspose.Words?
+ Mengeksplorasi[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) untuk panduan komprehensif dan referensi API.

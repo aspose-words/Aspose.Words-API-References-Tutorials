@@ -121,4 +121,4 @@ C: Evet, stili değiştirmenin yanı sıra Aspose.Words for .NET'i kullanarak i�
 
 #### S: Aspose.Words for .NET, Word belgelerinde diğer stillerin ve formatların değiştirilmesini destekliyor mu?
 
-C: Evet, Aspose.Words for .NET, Word belgelerindeki çeşitli stilleri ve formatları değiştirmek için kapsamlı destek sağlar. Paragraflar, başlıklar, tablolar, listeler ve daha fazlası gibi farklı öğelerin stillerini değiştirmenize olanak tanır. İhtiyaçlarınıza göre yazı tiplerini, renkleri, hizalamayı, girintiyi, aralığı ve diğer biçimlendirme özelliklerini değiştirebilirsiniz.
+C: Evet, Aspose.Words for .NET, Word belgelerinde çeşitli stillerin ve formatların değiştirilmesi konusunda kapsamlı destek sağlar. Paragraflar, başlıklar, tablolar, listeler ve daha fazlası gibi farklı öğelerin stillerini değiştirmenize olanak tanır. İhtiyaçlarınıza göre yazı tiplerini, renkleri, hizalamayı, girintiyi, aralığı ve diğer biçimlendirme özelliklerini değiştirebilirsiniz.

@@ -62,7 +62,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 第 3 步：載入文檔
 
-現在，讓我們載入需要連字的文檔。
+現在，讓我們載入需要連字符的文檔。
 
 ```csharp
 Document document = new Document(dataDir + "German text.docx");
@@ -129,7 +129,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何在 Aspose.Words for .NET 中實現連字符回呼。透過執行這些步驟，您可以確保文件格式精美，無論使用何種語言。無論您處理的是英語、德語或任何其他語言，此方法都可以讓您輕鬆處理連字符。
+現在你就得到它了！您剛剛學習如何在 Aspose.Words for .NET 中實現連字符回呼。透過執行這些步驟，您可以確保文件格式精美，無論使用何種語言。無論您處理的是英語、德語或任何其他語言，此方法都可以讓您輕鬆處理連字符。
 
 ## 常見問題解答
 

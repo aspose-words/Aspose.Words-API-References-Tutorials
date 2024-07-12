@@ -22,7 +22,7 @@ Innan du börjar, se till att du har följande:
 - En grundläggande förståelse för Python-programmering.
 - Aspose.Words för Python API-referenser.
 
-## Installera Aspose.Words för Python
+## Installerar Aspose.Words för Python
 
 För att komma igång måste du installera paketet Aspose.Words for Python. Du kan göra detta med pip, Python-paketets installationsprogram, med följande kommando:
 
@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Positionering av textrutor
 
- Att kontrollera placeringen av textrutor är avgörande för att uppnå önskad layout. Du kan ställa in positionen med hjälp av`left` och`top` egenskaper. Till exempel:
+ Att kontrollera placeringen av textrutor är avgörande för att uppnå önskad layout. Du kan ställa in positionen med hjälp av`left`och`top` egenskaper. Till exempel:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ den här guiden har vi utforskat processen för att förbättra visuellt innehå
 
 ### Hur ändrar jag storlek på en textruta?
 
- För att ändra storlek på en textruta kan du justera dess egenskaper för bredd och höjd med hjälp av`width` och`height` attribut.
+ För att ändra storlek på en textruta kan du justera dess egenskaper för bredd och höjd med hjälp av`width`och`height` attribut.
 
 ### Kan jag rotera en textruta?
 

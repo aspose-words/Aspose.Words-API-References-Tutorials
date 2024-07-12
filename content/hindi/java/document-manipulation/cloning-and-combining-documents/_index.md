@@ -51,7 +51,7 @@ insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtBookmark.docx");
 ```
 
- यहाँ, हम नाम से बुकमार्क ढूंढते हैं और उपयोग करते हैं`insertDocument` सामग्री डालने की विधि`subDoc` दस्तावेज़ को बुकमार्क स्थान पर रखें.
+ यहाँ, हम नाम से बुकमार्क ढूंढते हैं और उपयोग करते हैं`insertDocument` सामग्री सम्मिलित करने की विधि`subDoc` दस्तावेज़ को बुकमार्क स्थान पर रखें.
 
 ## चरण 4: मेल मर्ज के दौरान दस्तावेज़ सम्मिलित करना
 
@@ -64,7 +64,7 @@ mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { "Yo
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
- इस उदाहरण में, हमने फ़ील्ड मर्जिंग कॉलबैक सेट किया है`InsertDocumentAtMailMergeHandler` "Document_1" फ़ील्ड द्वारा निर्दिष्ट दस्तावेज़ के सम्मिलन को संभालने के लिए क्लास।
+ इस उदाहरण में, हमने फ़ील्ड मर्जिंग कॉलबैक का उपयोग करके सेट किया है`InsertDocumentAtMailMergeHandler` "Document_1" फ़ील्ड द्वारा निर्दिष्ट दस्तावेज़ के सम्मिलन को संभालने के लिए क्लास।
 
 ## निष्कर्ष
 

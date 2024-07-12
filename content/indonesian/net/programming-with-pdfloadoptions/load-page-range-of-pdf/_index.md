@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Dalam contoh ini, kami memuat halaman pertama dokumen PDF. Anda dapat mengubah nilai`PageIndex` Dan`PageCount` ke rentang halaman yang diinginkan.
+ Dalam contoh ini, kami memuat halaman pertama dokumen PDF. Anda dapat mengubah nilai`PageIndex`Dan`PageCount` ke rentang halaman yang diinginkan.
 
 ## Langkah 2: Menyimpan dokumen
 

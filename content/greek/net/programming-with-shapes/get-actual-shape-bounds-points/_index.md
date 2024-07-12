@@ -17,7 +17,7 @@ url: /el/net/programming-with-shapes/get-actual-shape-bounds-points/
 - Βασικές γνώσεις C# και Επεξεργασία λέξεων με έγγραφα Word.
 
 ## Βήμα 1: Δημιουργήστε ένα νέο Document and DocumentBuilder
- Δημιουργήστε μια νέα παρουσία του`Document` τάξη και α`DocumentBuilder`αντίρρηση για εργασία με το έγγραφο.
+ Δημιουργήστε μια νέα παρουσία του`Document` τάξη και α`DocumentBuilder` αντίρρηση για εργασία με το έγγραφο.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Βήμα 2: Εισαγάγετε ένα σχήμα εικόνας
- Χρησιμοποιήστε το`InsertImage` μέθοδος του`DocumentBuilder` αντικείμενο για να εισαγάγετε ένα σχήμα εικόνας στο έγγραφο. Δώστε τη διαδρομή προς το αρχείο εικόνας ως παράμετρο.
+ Χρησιμοποιήστε το`InsertImage` μέθοδος του`DocumentBuilder`αντικείμενο για να εισαγάγετε ένα σχήμα εικόνας στο έγγραφο. Δώστε τη διαδρομή προς το αρχείο εικόνας ως παράμετρο.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

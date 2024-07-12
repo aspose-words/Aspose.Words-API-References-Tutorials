@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Etapa 2: carregue o documento e obtenha a StructuredDocumentTag
- Carregue o documento do Word usando o`Document` construtor, passando o caminho para o documento como parâmetro. Em seguida, recupere o desejado`StructuredDocumentTag` do documento. Neste exemplo, assumimos que o SDT é o primeiro nó filho no documento.
+ Carregue o documento do Word usando o`Document` construtor, passando o caminho para o documento como parâmetro. Em seguida, recupere o desejado`StructuredDocumentTag`do documento. Neste exemplo, assumimos que o SDT é o primeiro nó filho no documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Etapa 4: salve o documento
- Salve o documento modificado usando o`Save`método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithSdt.ClearContentsControl.doc".
+ Salve o documento modificado usando o`Save` método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithSdt.ClearContentsControl.doc".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

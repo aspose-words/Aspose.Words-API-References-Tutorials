@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "No default editing language.docx", loadOp
 
 ## 3. lépés: Az alapértelmezett nyelv ellenőrzése
 
-dokumentum feltöltése után ellenőrizzük, hogy az alapértelmezett nyelv megfelelően lett-e beállítva oroszra. Az alapértelmezett nyelvazonosító lekéréséhez használja a következő kódot:
+A dokumentum feltöltése után ellenőrizzük, hogy az alapértelmezett nyelv megfelelően lett-e beállítva oroszra. Az alapértelmezett nyelvazonosító lekéréséhez használja a következő kódot:
 
 ```csharp
 int localeId = doc.Styles.DefaultFont.LocaleId;

@@ -47,7 +47,7 @@ Paragraph para = new Paragraph(doc);
 // Legen Sie die Ausrichtung des Absatzes fest
 para.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-// Hinzufügen von Text zum Absatz
+// Fügen Sie dem Absatz Text hinzu
 Run run = new Run(doc, "This is a centered paragraph.");
 para.appendChild(run);
 
@@ -104,7 +104,7 @@ Paragraph para = new Paragraph(doc);
 // Anwenden eines vordefinierten Stils
 para.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
 
-// Hinzufügen von Text zum Absatz
+// Fügen Sie dem Absatz Text hinzu
 Run run = new Run(doc, "Heading 1 Style");
 para.appendChild(run);
 
@@ -371,7 +371,7 @@ Aspose.Words für Java bietet erweiterte Funktionen für die komplexe Dokumentbe
 
 ## Fehlerbehebung bei allgemeinen Problemen
 
-Tritt bei der Arbeit mit Aspose.Words für Java ein Problem auf? Im Support-Forum und in der Dokumentation finden Sie Lösungen für häufige Probleme.
+Tritt bei der Arbeit mit Aspose.Words für Java ein Problem auf? Im Supportforum und in der Dokumentation finden Sie Lösungen für häufige Probleme.
 
 ## Häufig gestellte Fragen (FAQs)
 

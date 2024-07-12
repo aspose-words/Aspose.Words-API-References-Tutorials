@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- V tomto kroku nakonfigurujeme možnosti načítání TXT dokumentu. Vytváříme nový`TxtLoadOptions` objekt a nastavte`LeadingSpacesOptions` a`TrailingSpacesOptions` vlastnosti do`TxtLeadingSpacesOptions.Trim` a`TxtTrailingSpacesOptions.Trim` respektive. To Aspose.Words řekne, aby při načítání dokumentu odstranilo úvodní a koncové mezery z řádků.
+ V tomto kroku nakonfigurujeme možnosti načítání TXT dokumentu. Vytváříme nový`TxtLoadOptions` objekt a nastavte`LeadingSpacesOptions`a`TrailingSpacesOptions` vlastnosti do`TxtLeadingSpacesOptions.Trim`a`TxtTrailingSpacesOptions.Trim` respektive. To Aspose.Words řekne, aby při načítání dokumentu odstranilo úvodní a koncové mezery z řádků.
 
 ## Krok 4: Načtení dokumentu
 

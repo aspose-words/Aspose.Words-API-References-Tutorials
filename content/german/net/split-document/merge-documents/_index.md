@@ -16,11 +16,11 @@ Hallo! Mussten Sie schon einmal mehrere Word-Dokumente zu einer zusammenhängend
 Bevor wir loslegen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
 1. Grundkenntnisse in C#: Sie sollten mit der Syntax und den Konzepten von C# vertraut sein.
-2.  Aspose.Words für .NET: Laden Sie es herunter[Hier](https://releases.aspose.com/words/net/) Wenn Sie nur erkunden, können Sie mit einem beginnen[Kostenlose Testphase](https://releases.aspose.com/).
+2.  Aspose.Words für .NET: Laden Sie es herunter[Hier](https://releases.aspose.com/words/net/) Wenn Sie nur erkunden, können Sie mit einem[Kostenlose Testphase](https://releases.aspose.com/).
 3. Visual Studio: Jede aktuelle Version sollte funktionieren, aber die neueste Version wird empfohlen.
 4. .NET Framework: Stellen Sie sicher, dass es auf Ihrem System installiert ist.
 
-Gut, nachdem wir nun die Voraussetzungen geklärt haben, kommen wir zum spaßigen Teil!
+Gut, da wir nun die Voraussetzungen geklärt haben, kommen wir zum spaßigen Teil!
 
 ## Namespaces importieren
 
@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- In diesem Schritt verschmelzen wir`Document1.docx` Und`Document2.docx` in eine neue Datei namens`MergedDocument.docx`.
+ In diesem Schritt verschmelzen wir`Document1.docx`Und`Document2.docx` in eine neue Datei namens`MergedDocument.docx`.
 
 ## Schritt 3: Zusammenführen mit Speicheroptionen
 
@@ -74,7 +74,7 @@ Wenn Sie Dokumente zusammenführen und das Ergebnis als PDF speichern müssen, m
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Hier verschmelzen wir`Document1.docx` Und`Document2.docx` und speichern Sie das Ergebnis als PDF-Datei.
+ Hier verschmelzen wir`Document1.docx`Und`Document2.docx` und speichern Sie das Ergebnis als PDF-Datei.
 
 ## Schritt 5: Erstellen einer Dokumentinstanz aus zusammengeführten Dokumenten
 
@@ -99,11 +99,11 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### 2. Kann ich Aspose.Words für .NET kostenlos nutzen?
 
- Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/). Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
+ Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/)Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
 
 ### 3. Wie gehe ich mit unterschiedlichen Formatierungen beim Zusammenführen um?
 
- Aspose.Words bietet verschiedene Zusammenführungsformatmodi wie`KeepSourceFormatting` Und`MergeFormatting` . Weitere Informationen finden Sie im[API-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Anweisungen.
+ Aspose.Words bietet verschiedene Zusammenführungsformatmodi wie`KeepSourceFormatting`Und`MergeFormatting` . Weitere Informationen finden Sie im[API-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Anweisungen.
 
 ### 4. Wie erhalte ich Unterstützung für Aspose.Words für .NET?
 

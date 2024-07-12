@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Cserélje ki`"Your Document Directory"` és`"Your Output Directory"` a megfelelő utakkal.
+ Cserélje ki`"Your Document Directory"`és`"Your Output Directory"` a megfelelő utakkal.
 
 ## 4. A körlevél testreszabása
 
@@ -100,7 +100,7 @@ A Class HandleMergeField forráskódja
             // Úgy döntöttünk, hogy az összes logikai értéket jelölőnégyzet űrlapmezőként akarjuk kiadni.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
-                // Vigye a „kurzort” az aktuális egyesítési mezőre.
+                // Vigye a "kurzort" az aktuális egyesítési mezőre.
                 mBuilder.moveToMergeField(e.getFieldName());
                 String checkBoxName = MessageFormat.format("{0}{1}", e.getFieldName(), e.getRecordIndex());
                 mBuilder.insertCheckBox(checkBoxName, (Boolean) e.getFieldValue(), 0);

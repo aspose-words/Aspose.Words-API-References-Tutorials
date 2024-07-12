@@ -81,10 +81,10 @@ N'hésitez pas à explorer d'autres fonctionnalités puissantes offertes par Asp
 ### FAQ
 
 #### Q1 : Puis-je diviser un document Word en sections en fonction de critères spécifiques autres que le saut de section ?
-Oui, vous pouvez personnaliser les critères de répartition en fonction de vos besoins spécifiques. Outre les sauts de section, vous pouvez diviser le document en fonction d'autres éléments tels que des titres, des signets ou un contenu spécifique à l'aide des différentes fonctionnalités et méthodes fournies par Aspose.Words for .NET.
+Oui, vous pouvez personnaliser les critères de répartition en fonction de vos besoins spécifiques. Outre les sauts de section, vous pouvez diviser le document en fonction d'autres éléments tels que des titres, des signets ou un contenu spécifique à l'aide des différentes fonctionnalités et méthodes fournies par Aspose.Words pour .NET.
 
 #### Q2 : Est-il possible de fusionner les sections en un seul document ?
- Oui, vous pouvez fusionner les sections distinctes en un seul document en important et en combinant les sections de plusieurs documents à l'aide de l'outil`ImportNode` et`Sections.Add` méthodes. Cela vous permet d'inverser le processus de fractionnement et de reconstruire le document original.
+ Oui, vous pouvez fusionner les sections distinctes en un seul document en important et en combinant les sections de plusieurs documents à l'aide de l'outil`ImportNode`et`Sections.Add` méthodes. Cela vous permet d'inverser le processus de fractionnement et de reconstruire le document original.
 
 #### Q3 : Existe-t-il des limites quant au nombre de sections pouvant être divisées à l'aide de la fonctionnalité « Par sections » ?
 Le nombre de sections pouvant être divisées à l'aide de la fonctionnalité « Par sections » dépend des capacités d'Aspose.Words for .NET et des ressources système disponibles. En général, il prend en charge le fractionnement de documents comportant un grand nombre de sections, mais les documents extrêmement longs ou un nombre très élevé de sections peuvent nécessiter des ressources système et un temps de traitement supplémentaires.

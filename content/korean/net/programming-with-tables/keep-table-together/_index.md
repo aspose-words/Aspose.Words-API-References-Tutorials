@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// 페이지 전체에 걸쳐 페이지가 깨지는 것을 방지하려면 테이블의 모든 단락에 대해 KeepWithNext를 활성화해야 합니다.
-	// 표 마지막 행의 마지막 단락을 제외하고.
+	//표 마지막 행의 마지막 단락을 제외하고.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

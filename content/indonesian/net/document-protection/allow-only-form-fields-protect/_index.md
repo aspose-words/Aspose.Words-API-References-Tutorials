@@ -2,115 +2,100 @@
 title: Izinkan Hanya Lindungi Bidang Formulir di Dokumen Word
 linktitle: Izinkan Hanya Lindungi Bidang Formulir di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan Aspose.Words untuk .NET untuk melindungi dokumen Word dan hanya mengizinkan bidang formulir untuk diedit.
+description: Pelajari cara melindungi dokumen Word, hanya mengizinkan bidang formulir untuk diedit menggunakan Aspose.Words untuk .NET. Ikuti panduan kami untuk memastikan dokumen Anda aman dan mudah diedit.
 type: docs
 weight: 10
 url: /id/net/document-protection/allow-only-form-fields-protect/
 ---
-Perlindungan dokumen adalah fitur penting saat Memproses Kata dengan file dalam aplikasi C# Anda. Dengan pustaka Aspose.Words untuk .NET, Anda dapat dengan mudah melindungi dokumen Anda dan hanya mengizinkan bidang formulir untuk diedit. Dalam panduan langkah demi langkah ini, kami akan memandu Anda tentang cara menggunakan kode sumber C# untuk hanya memperbolehkan bidang formulir diedit menggunakan fitur Izinkan Hanya Perlindungan Bidang Formulir dari Aspose.Words untuk .NET.
+## Perkenalan
 
-## Langkah 1: Mengatur Direktori Dokumen
+Hai! Pernahkah Anda perlu melindungi bagian tertentu dari dokumen Word dan membiarkan bagian lain tetap dapat diedit? Aspose.Words untuk .NET membuat ini menjadi sangat mudah. Dalam tutorial ini, kita mendalami cara mengizinkan hanya perlindungan bidang formulir di dokumen Word. Di akhir panduan ini, Anda akan memiliki pemahaman yang kuat tentang perlindungan dokumen menggunakan Aspose.Words untuk .NET. Siap? Ayo masuk!
 
-Langkah pertama adalah menentukan direktori dokumen Anda. Anda harus menentukan jalur di mana Anda ingin menyimpan dokumen yang dilindungi. Misalnya :
+## Prasyarat
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Sebelum kita masuk ke bagian pengkodean, pastikan Anda memiliki semua yang Anda butuhkan:
 
-Pastikan untuk mengganti "DIREKTORI DOKUMEN ANDA" dengan jalur sebenarnya ke direktori dokumen Anda.
+1.  Aspose.Words untuk .NET Library: Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Visual Studio: Versi terbaru apa pun akan berfungsi dengan baik.
+3. Pengetahuan Dasar C#: Memahami dasar-dasarnya akan membantu Anda mengikuti tutorial.
 
-## Langkah 2: Memasukkan Bagian dan Teks
+## Impor Namespace
 
-Selanjutnya, Anda perlu memasukkan bagian dan teks ke dalam dokumen Anda. Gunakan kelas DocumentBuilder yang disediakan oleh Aspose.Words untuk membuat konten dokumen Anda. Berikut ini contoh sederhananya:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Text added to a document.");
-```
-
-Dalam contoh ini, kita membuat dokumen kosong baru dan kemudian menggunakan DocumentBuilder untuk menambahkan sebaris teks.
-
-## Langkah 3: Mengaktifkan Perlindungan Dokumen
-
- Perlindungan dokumen hanya berfungsi bila perlindungan dokumen diaktifkan. Anda dapat mengaktifkan perlindungan dokumen menggunakan`Protect` metode kelas Dokumen. Begini caranya:
+Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan. Ini menyiapkan lingkungan kita untuk menggunakan Aspose.Words.
 
 ```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Dalam contoh ini, kami mengaktifkan proteksi dokumen dengan menentukan jenis proteksi `
+## Langkah 1: Siapkan Proyek Anda
 
-AllowOnlyFormFields` dan mengatur kata sandi.
+Buat proyek baru di Visual Studio  
+Buka Visual Studio dan buat proyek Aplikasi Konsol (.NET Core) baru. Beri nama dengan sesuatu yang bermakna, seperti "AsposeWordsProtection".
 
-## Langkah 4: Hanya Mengizinkan Bidang Formulir
+## Langkah 2: Instal Aspose.Words untuk .NET
 
-Sekarang perlindungan dokumen diaktifkan, kita perlu menentukan bahwa hanya pengeditan bidang formulir yang diperbolehkan. Hal ini memastikan bahwa pengguna hanya dapat mengedit bagian dokumen yang merupakan bidang formulir. Begini caranya:
+Instal melalui Manajer Paket NuGet  
+Klik kanan proyek Anda di Solution Explorer, pilih "Kelola Paket NuGet", dan cari`Aspose.Words`. Instal itu.
 
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
+## Langkah 3: Inisialisasi Dokumen
 
-Pastikan untuk mengganti "kata sandi" dengan kata sandi yang Anda buat sebelumnya.
-
-## Langkah 5: Menyimpan Dokumen yang Dilindungi
-
- Terakhir, Anda dapat menyimpan dokumen yang diproteksi menggunakan`Save` metode kelas Dokumen. Tentukan jalur file lengkap dan nama file yang diinginkan. Misalnya :
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
-```
-
-Pastikan untuk mengganti "dataDir" dengan jalur ke direktori dokumen Anda.
-
-### Contoh kode sumber untuk fitur Izinkan Hanya Bidang Formulir Lindungi menggunakan Aspose.Words untuk .NET
+Buat objek Dokumen baru  
+Mari kita mulai dengan membuat dokumen baru dan pembuat dokumen untuk menambahkan beberapa teks.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Sisipkan dua bagian dengan beberapa teks.
+// Inisialisasi Dokumen dan DocumentBuilder baru
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
+```
 
-// Perlindungan dokumen hanya berfungsi ketika perlindungan dokumen diaktifkan dan hanya pengeditan di bidang formulir yang diperbolehkan.
+ Di sini, kami membuat yang baru`Document`Dan`DocumentBuilder` contoh. Itu`DocumentBuilder` memungkinkan kita menambahkan teks ke dokumen kita.
+
+## Langkah 4: Lindungi Dokumen
+
+Terapkan perlindungan yang hanya mengizinkan pengeditan bidang formulir  
+Sekarang, mari tambahkan perlindungan pada dokumen kita.
+
+```csharp
+// Lindungi dokumen, izinkan hanya kolom formulir untuk diedit
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
 
-// Simpan dokumen yang dilindungi.
+Baris kode ini melindungi dokumen dan hanya mengizinkan bidang formulir untuk diedit. Kata sandi "kata sandi" digunakan untuk menegakkan perlindungan.
+
+## Langkah 5: Simpan Dokumen
+
+Simpan dokumen yang dilindungi  
+Terakhir, mari simpan dokumen kita ke direktori yang ditentukan.
+
+```csharp
+// Simpan dokumen yang dilindungi
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
+Ini menyimpan dokumen dengan perlindungan yang diterapkan.
+
 ## Kesimpulan
 
-Dalam panduan ini, kita menjelajahi cara menggunakan pustaka Aspose.Words untuk .NET guna melindungi dokumen dan hanya mengizinkan bidang formulir untuk diedit. Dengan mengikuti langkah-langkah yang disediakan, Anda dapat dengan mudah mengimplementasikan fungsi ini di aplikasi C# Anda. Perlindungan dokumen sangat penting untuk menjamin keamanan dan kerahasiaan dokumen Anda.
+Dan itu dia! Anda baru saja mempelajari cara memproteksi dokumen Word sehingga hanya bidang formulir yang dapat diedit menggunakan Aspose.Words untuk .NET. Ini adalah fitur berguna ketika Anda perlu memastikan bahwa bagian tertentu dari dokumen Anda tetap tidak berubah sambil mengizinkan kolom tertentu diisi.
 
-### FAQ untuk mengizinkan hanya bidang formulir yang dilindungi dalam dokumen Word
+## FAQ
 
-#### T: Apa yang dimaksud dengan perlindungan dokumen di Aspose.Words untuk .NET?
+###	 Bagaimana cara menghapus perlindungan dari dokumen?  
+ Untuk menghapus perlindungan, gunakan`doc.Unprotect("password")` metode, di mana "kata sandi" adalah kata sandi yang digunakan untuk melindungi dokumen.
 
-J: Perlindungan dokumen di Aspose.Words untuk .NET adalah fitur yang memungkinkan Anda mengamankan dokumen Anda dengan membatasi tindakan tertentu, seperti pengeditan, pemformatan, atau modifikasi konten. Ini membantu menjaga integritas dan kerahasiaan dokumen Anda dengan mencegah perubahan yang tidak sah.
+###	 Bisakah saya menerapkan berbagai jenis perlindungan menggunakan Aspose.Words untuk .NET?  
+ Ya, Aspose.Words mendukung berbagai jenis perlindungan seperti`ReadOnly`, `NoProtection` , Dan`AllowOnlyRevisions`.
 
-#### T: Bagaimana cara melindungi dokumen dan hanya mengizinkan bidang formulir untuk diedit menggunakan Aspose.Words untuk .NET?
+###	 Apakah mungkin menggunakan kata sandi yang berbeda untuk bagian yang berbeda?  
+Tidak, perlindungan tingkat dokumen di Aspose.Words berlaku untuk seluruh dokumen. Anda tidak dapat menetapkan kata sandi yang berbeda ke bagian yang berbeda.
 
-J: Untuk melindungi dokumen dan hanya mengizinkan bidang formulir untuk diedit menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
-1. Tentukan jalur direktori untuk dokumen Anda.
-2.  Sisipkan bagian dan teks ke dalam dokumen Anda menggunakan`DocumentBuilder` kelas.
-3.  Aktifkan perlindungan dokumen menggunakan`Protect` metode`Document` kelas, menentukan jenis perlindungan sebagai`AllowOnlyFormFields` dan memberikan kata sandi.
-4.  Simpan dokumen yang diproteksi menggunakan`Save` metode`Document` kelas.
+###	 Apa yang terjadi jika kata sandi yang digunakan salah?  
+Jika kata sandi yang digunakan salah, dokumen akan tetap terlindungi, dan perubahan yang ditentukan tidak akan diterapkan.
 
-#### T: Bisakah saya menyisipkan kolom formulir ke dalam dokumen yang dilindungi menggunakan Aspose.Words untuk .NET?
-
-J: Ya, Anda dapat menyisipkan kolom formulir ke dalam dokumen yang dilindungi menggunakan Aspose.Words untuk .NET. Perlindungan dokumen dengan`AllowOnlyFormFields` type memungkinkan pengguna untuk mengedit hanya bidang formulir sambil melindungi konten dokumen lainnya. Anda dapat menggunakan`DocumentBuilder` kelas untuk memasukkan bidang formulir ke dalam dokumen sebelum mengaktifkan perlindungan.
-
-#### T: Dapatkah saya menghapus perlindungan dokumen dari dokumen yang dilindungi?
-
- J: Ya, Anda dapat menghapus proteksi dokumen dari dokumen yang diproteksi menggunakan Aspose.Words untuk .NET. Untuk menghapus perlindungan, Anda dapat menggunakan`Unprotect` metode`Document` kelas dan berikan kata sandi yang benar. Ini akan menghapus perlindungan dan memungkinkan pengeditan dokumen tanpa batasan.
-
-#### T: Apakah mungkin untuk melindungi dokumen dengan beberapa jenis perlindungan?
-
- J: Tidak, Aspose.Words untuk .NET hanya mengizinkan satu jenis perlindungan untuk diterapkan ke dokumen dalam satu waktu. Namun, itu`AllowOnlyFormFields` jenis perlindungan dapat secara efektif membatasi pengeditan pada bidang formulir sambil mengizinkan jenis perlindungan lainnya, seperti`AllowOnlyComments` atau`AllowOnlyRevisions`untuk dikombinasikan dengan perlindungan bidang formulir.
-
-#### T: Dapatkah saya menetapkan kata sandi berbeda untuk jenis perlindungan berbeda dalam dokumen?
-
-J: Tidak, Aspose.Words untuk .NET memungkinkan Anda mengatur kata sandi tunggal untuk perlindungan dokumen, apa pun jenis perlindungannya. Kata sandi yang sama akan digunakan untuk mengaktifkan dan menonaktifkan perlindungan dokumen.
+###	 Bisakah saya memeriksa secara terprogram apakah suatu dokumen dilindungi?  
+ Ya, Anda dapat menggunakan`doc.ProtectionType` properti untuk memeriksa status perlindungan suatu dokumen.

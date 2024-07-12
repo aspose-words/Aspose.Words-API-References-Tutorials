@@ -14,7 +14,7 @@ In questo tutorial passo passo, ti guideremo su come inserire campi modulo, in p
 
 ## Passaggio 1: inizializzazione degli oggetti Document e DocumentBuilder
 
- Innanzitutto, inizializza il file`Document` E`DocumentBuilder` oggetti:
+ Innanzitutto, inizializza il file`Document`E`DocumentBuilder` oggetti:
 
 ```csharp
 Document doc = new Document();

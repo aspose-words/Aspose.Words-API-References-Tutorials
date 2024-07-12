@@ -151,7 +151,7 @@ Aspose.Words for Java 支援多種 Microsoft Word 文件格式，包括 DOC、DO
 
 ### 如何處理轉換後的 HTML 中的圖片？
 
-Aspose.Words for Java 可以透過將轉換後的 HTML 中的圖片儲存為與 HTML 檔案相同的資料夾中的單獨檔案來處理這些映像。這可確保圖像在 HTML 輸出中正確顯示。
+Aspose.Words for Java 可以透過將轉換後的 HTML 中的映像儲存為與 HTML 檔案相同的資料夾中的單獨檔案來處理這些映像。這可確保圖像在 HTML 輸出中正確顯示。
 
 ### 是否有 Aspose.Words for Java 的試用版？
 

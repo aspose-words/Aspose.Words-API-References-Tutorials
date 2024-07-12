@@ -2,119 +2,144 @@
 title: Nastavit výchozí možnosti pro štítky dat v grafu
 linktitle: Nastavit výchozí možnosti pro štítky dat v grafu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Přečtěte si, jak nastavit výchozí možnosti pro popisky dat v grafu pomocí Aspose.Words for .NET.
+description: Přečtěte si, jak nastavit výchozí možnosti pro popisky dat v grafu pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce a vytvořte a přizpůsobte grafy bez námahy.
 type: docs
 weight: 10
 url: /cs/net/programming-with-charts/default-options-for-data-labels/
 ---
+## Úvod
 
-Tento kurz vysvětluje, jak používat Aspose.Words pro .NET k nastavení výchozích možností pro popisky dat v grafu. Poskytnutý kód ukazuje, jak vytvořit graf, přidat datové řady a přizpůsobit štítky dat pomocí Aspose.Words.
+Nazdárek! Rádi se ponoříte do světa automatizace dokumentů? Dnes se podíváme na to, jak používat Aspose.Words pro .NET k vytváření úžasných dokumentů programově. Aspose.Words je výkonná knihovna, která vám umožňuje snadno manipulovat s dokumenty Wordu, a v tomto tutoriálu se zaměříme na nastavení výchozích možností pro popisky dat v grafu. Ať už jste ostřílený vývojář nebo nováček, tento průvodce vás provede každým krokem, abyste mohli okamžitě začít pracovat.
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Než začneme, ujistěte se, že máte splněny následující požadavky:
+Než začneme, ujistíme se, že spolu s tímto návodem máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
 
-- Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet a nainstalovat jej.
-- Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
+- Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET: Zde budete psát a spouštět svůj kód.
+-  Aspose.Words pro .NET: Můžete[stáhnout nejnovější verzi](https://releases.aspose.com/words/net/) a nainstalujte jej do svého projektu.
+- Základní znalost programování v C#: I když je tato příručka vhodná pro začátečníky, trocha znalosti C# vám pomůže.
+- Nainstalované rozhraní .NET Framework: Ujistěte se, že máte na počítači nastaveno rozhraní .NET Framework.
+-  Dočasná licence pro Aspose.Words: Získejte jednu[tady](https://purchase.aspose.com/temporary-license/) pro odemknutí plné funkčnosti.
 
-## Krok 2: Vytvořte nový dokument a vložte graf
+Jakmile máte tyto předpoklady vyřešené, jsme připraveni začít!
 
- Nejprve vytvoříme nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
+## Importovat jmenné prostory
+
+Nejprve nastavíme náš projekt a importujeme potřebné jmenné prostory. Tyto jmenné prostory jsou klíčové pro přístup k funkci Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.ReportingServices;
+```
+
+## Krok 1: Vytvořte nový dokument
+
+
+ Cesta začíná vytvořením nového dokumentu a inicializací`DocumentBuilder` . The`DocumentBuilder` class poskytuje sadu metod pro snadnou manipulaci s obsahem dokumentu.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Vytvořte nový dokument
 Document doc = new Document();
+
+// Inicializujte DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Dále vložíme graf do dokumentu pomocí`InsertChart` metoda`DocumentBuilder`. V tomto příkladu vložíme výsečový graf.
+### Vysvětlení
+
+ V tomto kroku jsme nastavili dokument a tvůrce, které budeme používat k vkládání a formátování našeho obsahu. The`dataDir` proměnná obsahuje cestu, kam uložíme náš konečný dokument.
+
+## Krok 2: Vložte graf
+
+ Dále do našeho dokumentu přidáme koláčový graf. The`InsertChart` metoda`DocumentBuilder` třída to velmi usnadňuje.
 
 ```csharp
+// Vložte výsečový graf
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
+
+// Přístup k objektu grafu
 Chart chart = shape.Chart;
 ```
 
-## Krok 3: Přidejte datové řady do grafu
+### Vysvětlení
 
-Nyní do grafu přidáme datovou řadu. V tomto příkladu přidáme tři kategorie a jejich odpovídající hodnoty.
+Zde do našeho dokumentu vkládáme výsečový graf. The`InsertChart` vyžaduje typ grafu, šířku a výšku jako parametry. Po vložení grafu přistoupíme k objektu grafu, abychom s ním dále manipulovali.
+
+## Krok 3: Přizpůsobte řadu grafů
+
+Nyní vymažeme všechny existující řady v grafu a přidáme vlastní řadu. Tato řada bude představovat naše datové body.
 
 ```csharp
+// Vymazat existující řady grafů
 chart.Series.Clear();
+
+// Přidejte do grafu novou řadu
 ChartSeries series = chart.Series.Add("Aspose Series 1",
     new string[] { "Category 1", "Category 2", "Category 3" },
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## Krok 4: Přizpůsobte štítky dat
+### Vysvětlení
 
- Abychom mohli upravit štítky dat v grafu, potřebujeme přístup k`ChartDataLabelCollection` objekt spojený se sérií.
+V tomto kroku se ujišťujeme, že je náš graf prázdný, tím, že vymažeme všechny již existující řady. Poté přidáme novou řadu s vlastními kategoriemi a hodnotami, které se zobrazí v našem koláčovém grafu.
+
+## Krok 4: Nastavte výchozí možnosti pro štítky dat
+
+Datové štítky jsou zásadní pro to, aby byl váš graf informativní. Nastavíme možnosti pro zobrazení procenta, hodnoty a přizpůsobení oddělovače.
 
 ```csharp
+// Přístup ke kolekci datových štítků
 ChartDataLabelCollection labels = series.DataLabels;
-```
 
- Poté můžeme modifikovat různé vlastnosti`labels`objekt pro nastavení požadovaných možností pro popisky dat. V tomto příkladu povolíme zobrazení procenta a hodnoty, zakážeme odkazové čáry a nastavíme vlastní oddělovač.
-
-```csharp
+// Nastavte možnosti štítku dat
 labels.ShowPercentage = true;
 labels.ShowValue = true;
 labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
+### Vysvětlení
+
+ Zde přistupujeme k`DataLabels`vlastnost naší řady přizpůsobit vzhled a informace zobrazené na každém štítku s údaji. Rozhodli jsme se zobrazit procento i hodnotu, skrýt odkazové čáry a nastavit vlastní oddělovač.
+
 ## Krok 5: Uložte dokument
 
- Nakonec dokument uložíme do určeného adresáře pomocí`Save` metoda`Document` objekt.
+Nakonec náš dokument uložíme do zadaného adresáře. Tento krok zajistí, že všechny naše změny budou zapsány do souboru.
 
 ```csharp
+// Uložte dokument
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-Tím je implementace nastavení výchozích možností pro popisky dat v grafu dokončena pomocí Aspose.Words for .NET.
+### Vysvětlení
 
-### Příklad zdrojového kódu pro výchozí možnosti pro datové štítky pomocí Aspose.Words pro .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	ChartSeries series = chart.Series.Add("Aspose Series 1",
-		new string[] { "Category 1", "Category 2", "Category 3" },
-		new double[] { 2.7, 3.2, 0.8 });
-	ChartDataLabelCollection labels = series.DataLabels;
-	labels.ShowPercentage = true;
-	labels.ShowValue = true;
-	labels.ShowLeaderLines = false;
-	labels.Separator = " - ";
-	doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
-```
+ V tomto posledním kroku uložíme náš dokument pomocí`Save` metoda. Dokument bude uložen do adresáře určeného uživatelem`dataDir`, s názvem "WorkingWithCharts.DefaultOptionsForDataLabels.docx".
 
 ## Závěr
 
-V tomto tutoriálu jste se naučili, jak nastavit výchozí možnosti pro popisky dat v grafu pomocí Aspose.Words for .NET. Podle podrobného průvodce můžete vytvořit graf, přidat datové řady a přizpůsobit štítky dat tak, aby vyhovovaly vašim konkrétním požadavkům. Aspose.Words for .NET poskytuje výkonné rozhraní API pro textové zpracování s grafy v dokumentech aplikace Word, které vám umožňuje manipulovat s různými prvky grafu a dosáhnout požadovaného vzhledu a funkčnosti.
+A tady to máte! Úspěšně jste vytvořili dokument aplikace Word s přizpůsobeným výsečovým grafem pomocí Aspose.Words for .NET. Tato výkonná knihovna usnadňuje automatizaci vytváření dokumentů a manipulaci s nimi, což vám šetří čas a námahu. Ať už generujete zprávy, faktury nebo jakýkoli jiný typ dokumentu, Aspose.Words vám pomůže.
 
- Nastavením vlastností`ChartDataLabelCollection`objekt spojený s řadou grafů, můžete ovládat zobrazení popisků dat, včetně možností, jako je zobrazení procent, hodnot, odkazových čar a vlastních oddělovačů. Tato flexibilita vám umožňuje efektivně prezentovat data a zlepšit vizuální reprezentaci vašich grafů.
+ Neváhejte a prozkoumejte[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) pro další funkce a příklady. Šťastné kódování!
 
-### Nejčastější dotazy
+## FAQ
 
-#### Q1. Co je Aspose.Words for .NET?
-Aspose.Words for .NET je knihovna, která umožňuje vývojářům vytvářet, manipulovat a ukládat dokumenty Wordu programově pomocí aplikací .NET. Poskytuje širokou škálu funkcí pro textové zpracování s prvky dokumentu, včetně grafů.
+### Mohu používat Aspose.Words zdarma?
+Aspose.Words můžete používat zdarma s a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo prozkoumejte jeho funkce pomocí[zkušební verze zdarma](https://releases.aspose.com/).
 
-#### Q2. Jak mohu nainstalovat Aspose.Words pro .NET?
-Aspose.Words for .NET můžete nainstalovat stažením pomocí správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Aspose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
+### Jak získám podporu pro Aspose.Words?
+ Podporu můžete získat prostřednictvím[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).
 
-#### Q3. Mohu upravit další aspekty grafu pomocí Aspose.Words pro .NET?
-Ano, Aspose.Words for .NET umožňuje přizpůsobit různé aspekty grafu, jako je typ grafu, popisky os, legenda, plocha grafu a další. Můžete přistupovat k různým vlastnostem objektu grafu a upravovat je, abyste dosáhli požadovaného vzhledu a chování.
+### Mohu přidat další typy grafů?
+ Ano, Aspose.Words podporuje různé typy grafů, jako jsou pruhové, spojnicové a sloupcové grafy. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
 
-#### Q4. Mohu uložit graf v různých formátech?
- Ano, Aspose.Words for .NET podporuje ukládání dokumentu obsahujícího graf v různých formátech, včetně DOCX, PDF, HTML a dalších. Můžete si vybrat vhodný formát na základě vašich požadavků a použít jej`Save` metoda`Document` objekt pro uložení dokumentu.
+### Je Aspose.Words kompatibilní s .NET Core?
+ Ano, Aspose.Words je kompatibilní s .NET Core. Více informací najdete v[dokumentace](https://reference.aspose.com/words/net/).
 
-#### Q5. Mohu tyto techniky použít na jiné typy grafů?
-Ano, techniky popsané v tomto tutoriálu lze aplikovat na jiné typy grafů podporované Aspose.Words for .NET. Klíčem je přístup k relevantním objektům a vlastnostem specifickým pro typ grafu, se kterým zpracováváte text.
+### Jak si mohu zakoupit licenci pro Aspose.Words?
+ Licenci si můžete zakoupit od[Aspose obchod](https://purchase.aspose.com/buy).
+

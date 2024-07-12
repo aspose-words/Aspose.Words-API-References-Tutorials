@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Stap 3: Bereken de afstand tussen de tabel en de omringende tekst
- Om de afstand tussen de tabel en de omringende tekst te bepalen, moeten we de tabel in het document openen met behulp van de`GetChild()` methode en de`NodeType.Table` eigendom. We kunnen vervolgens de verschillende afstanden weergeven met behulp van de array-eigenschappen`DistanceTop`, `DistanceBottom`, `DistanceRight` En`DistanceLeft`.
+ Om de afstand tussen de tabel en de omringende tekst te bepalen, moeten we de tabel in het document openen met behulp van de`GetChild()` methode en de`NodeType.Table` eigendom. We kunnen vervolgens de verschillende afstanden weergeven met behulp van de array-eigenschappen`DistanceTop`, `DistanceBottom`, `DistanceRight`En`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

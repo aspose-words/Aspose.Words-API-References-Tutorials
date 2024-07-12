@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- في هذه الخطوة، نقوم بالوصول إلى الفقرة الأولى من المستند باستخدام الملف`FirstSection` و`Body` ملكيات. بعد ذلك، نقوم بالوصول إلى`ParagraphFormat.Bidi` خاصية الحصول على اتجاه النص للفقرة. ثم نعرض هذه القيمة في وحدة التحكم.
+ في هذه الخطوة، نقوم بالوصول إلى الفقرة الأولى من المستند باستخدام الملف`FirstSection`و`Body` ملكيات. بعد ذلك، نقوم بالوصول إلى`ParagraphFormat.Bidi` خاصية الحصول على اتجاه النص للفقرة. ثم نعرض هذه القيمة في وحدة التحكم.
 
 ## الخطوة 5: احفظ المستند
 

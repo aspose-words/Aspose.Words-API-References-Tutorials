@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Lösning 2:
 
- S: Du kan också aktivera revisionsspårning med hjälp av`Document` konstruktör som accepterar`trackRevisions` och`author` parametrar.
+ S: Du kan också aktivera revisionsspårning med hjälp av`Document` konstruktör som accepterar`trackRevisions`och`author` parametrar.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

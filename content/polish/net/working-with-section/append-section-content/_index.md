@@ -68,7 +68,7 @@ Section section = doc.Sections[2];
 
  Na tym etapie uzyskujemy dostęp do trzeciej części naszego dokumentu. Pamiętaj, że indeks jest liczony od zera, więc`Sections[2]` odnosi się do części trzeciej.
 
-## Krok 4: Dołączanie zawartości do sekcji
+## Krok 4: Dołączanie treści do sekcji
 
 Dołączmy treść pierwszej sekcji do początku trzeciej sekcji.
 
@@ -116,7 +116,7 @@ Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom pr
 
 ## 3. Jakie są główne cechy Aspose.Words dla .NET?
 
- Aspose.Words dla .NET oferuje szeroką gamę funkcji, w tym tworzenie dokumentów, formatowanie, konwersję i manipulację. Więcej o jego możliwościach można przeczytać w artykule[Dokumentacja API](https://reference.aspose.com/words/net/).
+Aspose.Words dla .NET oferuje szeroką gamę funkcji, w tym tworzenie dokumentów, formatowanie, konwersję i manipulację. Więcej o jego możliwościach można przeczytać w artykule[Dokumentacja API](https://reference.aspose.com/words/net/).
 
 ## 4. Jak uzyskać wsparcie dla Aspose.Words dla .NET?
 

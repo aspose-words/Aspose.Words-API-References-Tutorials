@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Här lägger vi till lite text före och efter det bokmärkta innehållet. De`StartBookmark` och`EndBookmark` metoder definierar gränserna för bokmärket.
+ Här lägger vi till lite text före och efter det bokmärkta innehållet. De`StartBookmark`och`EndBookmark` metoder definierar gränserna för bokmärket.
 
 ## Steg 3: Infoga ett villkorligt fält
 

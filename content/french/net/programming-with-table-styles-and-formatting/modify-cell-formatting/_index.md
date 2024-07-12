@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Étape 3 : Accédez à la cellule à modifier
- Pour modifier le formatage d'une cellule, nous devons accéder à la cellule spécifique du tableau. Nous utilisons le`GetChild()` et`FirstRow.FirstCell` méthodes pour obtenir la référence à la première cellule du premier tableau.
+ Pour modifier le formatage d'une cellule, nous devons accéder à la cellule spécifique du tableau. Nous utilisons le`GetChild()`et`FirstRow.FirstCell` méthodes pour obtenir la référence à la première cellule du premier tableau.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

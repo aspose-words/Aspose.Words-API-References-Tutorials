@@ -2,139 +2,116 @@
 title: Erstellen und Unterzeichnen einer neuen Signaturzeile
 linktitle: Erstellen und Unterzeichnen einer neuen Signaturzeile
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine neue Signaturzeile in einem Word-Dokument erstellen und unterzeichnen.
+description: Erfahren Sie in diesem Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET eine Signaturzeile in einem Word-Dokument erstellen und digital signieren. Perfekt für die Dokumentenautomatisierung.
 type: docs
 weight: 10
 url: /de/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
-In diesem Tutorial führen wir Sie durch die Schritte zum Erstellen und Signieren einer neuen Signaturzeile mit Aspose.Words für .NET. Mit dieser Funktion können Sie eine Signaturzeile in ein Word-Dokument einfügen, benutzerdefinierte Optionen festlegen und das Dokument signieren. Befolgen Sie die folgenden Schritte:
+## Einführung
 
-## Schritt 1: Erstellen des Dokuments und des Generators
+Hallo! Sie haben also ein Word-Dokument und müssen eine Signaturzeile hinzufügen und es dann digital unterschreiben. Klingt kompliziert? Überhaupt nicht! Dank Aspose.Words für .NET können Sie dies nahtlos mit nur wenigen Codezeilen erreichen. In diesem Tutorial führen wir Sie durch den gesamten Prozess vom Einrichten Ihrer Umgebung bis zum Speichern Ihres Dokuments mit einer brandneuen Signatur. Bereit? Dann legen wir los!
 
-Beginnen Sie mit der Erstellung einer Instanz der Document-Klasse und eines DocumentBuilder-Objekts:
+## Voraussetzungen
+
+Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+1.  Aspose.Words für .NET - Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+2. Eine .NET-Entwicklungsumgebung – Visual Studio – wird dringend empfohlen.
+3. Ein zu unterzeichnendes Dokument – Erstellen Sie ein einfaches Word-Dokument oder verwenden Sie ein vorhandenes.
+4.  Eine Zertifikatsdatei - Diese wird für digitale Signaturen benötigt. Sie können eine`.pfx` Datei.
+5. Bilder für die Signaturzeile – Optional eine Bilddatei für die Signatur.
+
+## Namespaces importieren
+
+Zuerst müssen wir die erforderlichen Namespaces importieren. Dieser Schritt ist entscheidend, da er die Umgebung für die Verwendung der Aspose.Words-Funktionen einrichtet.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Signing;
+```
+
+## Schritt 1: Einrichten des Dokumentverzeichnisses
+
+Jedes Projekt braucht einen guten Start. Lassen Sie uns den Pfad zu Ihrem Dokumentverzeichnis einrichten. Hier werden Ihre Dokumente gespeichert und abgerufen.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Schritt 2: Neues Dokument erstellen
+
+Erstellen wir nun mit Aspose.Words ein neues Word-Dokument. Dies wird unsere Leinwand, auf der wir die Signaturzeile hinzufügen.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 2: Einfügen der Signaturzeile
+## Schritt 3: Einfügen der Signaturzeile
 
-Verwenden Sie die Methode InsertSignatureLine() des DocumentBuilder-Objekts, um eine neue Signaturzeile in das Dokument einzufügen:
+ Hier geschieht die Magie. Wir fügen eine Signaturzeile in unser Dokument ein, indem wir`DocumentBuilder` Klasse.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## Schritt 3: Speichern Sie das Dokument
+## Schritt 4: Speichern des Dokuments mit der Signaturzeile
 
-Speichern Sie das geänderte Dokument:
+Sobald die Signaturzeile vorhanden ist, müssen wir das Dokument speichern. Dies ist ein Zwischenschritt, bevor wir mit der Unterzeichnung fortfahren.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-Geben Sie zum Speichern des Dokuments unbedingt den richtigen Pfad und Dateinamen an.
+## Schritt 5: Einrichten der Signaturoptionen
 
-## Schritt 4: Unterzeichnen des Dokuments
-
-Um das Dokument zu signieren, müssen Sie die Signaturoptionen festlegen und die Klasse DigitalSignatureUtil verwenden:
+Richten wir nun die Optionen zum Signieren des Dokuments ein. Dazu gehört die Angabe der Signaturzeilen-ID und des zu verwendenden Bildes.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-	SignatureLineId = signatureLine.Id,
-	SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes(dataDir + "Enhanced Windows MetaFile.emf")
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-	dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
 ```
 
-Achten Sie darauf, die richtigen Pfade für das Dokument, das Signaturzeilenbild und das signierte Dokument anzugeben.
+## Schritt 6: Laden des Zertifikats
 
-### Beispielquellcode zum Erstellen und Signieren einer neuen Signaturzeile mit Aspose.Words für .NET
-
-Hier ist der vollständige Quellcode zum Erstellen und Signieren einer neuen Signaturzeile mit Aspose.Words für .NET:
+Für digitale Signaturen ist ein Zertifikat erforderlich. Hier laden wir die Zertifikatsdatei, mit der das Dokument signiert wird.
 
 ```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-		dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Wenn Sie diese Schritte befolgen, können Sie mit Aspose.Words für .NET ganz einfach eine neue Signaturzeile in Ihrem Word-Dokument erstellen und unterzeichnen.
+## Schritt 7: Unterzeichnen des Dokuments
+
+ Dies ist der letzte Schritt. Wir verwenden die`DigitalSignatureUtil`Klasse zum Signieren des Dokuments. Das signierte Dokument wird unter einem neuen Namen gespeichert.
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
+    dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
+```
 
 ## Abschluss
 
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET eine neue Signaturzeile in einem Word-Dokument erstellt und signiert. Indem Sie die angegebenen Schritte befolgen, können Sie ganz einfach eine Signaturzeile in Ihr Dokument einfügen, ihre Optionen anpassen und das Dokument mit einem digitalen Zertifikat signieren. Das Hinzufügen von Signaturzeilen und digitalen Signaturen zu Ihren Dokumenten verbessert deren Authentizität und Integrität und macht sie sicherer und vertrauenswürdiger. Aspose.Words für .NET bietet eine leistungsstarke API für die Textverarbeitung mit Signaturen und digitalen Zertifikaten in Word-Dokumenten, sodass Sie den Signaturprozess automatisieren und die Gültigkeit Ihrer Dokumente sicherstellen können.
+Und da haben Sie es! Mit diesen Schritten haben Sie erfolgreich ein neues Word-Dokument erstellt, eine Signaturzeile hinzugefügt und es mit Aspose.Words für .NET digital signiert. Es ist ein leistungsstarkes Tool, das die Dokumentenautomatisierung zum Kinderspiel macht. Egal, ob Sie mit Verträgen, Vereinbarungen oder anderen formellen Dokumenten arbeiten, diese Methode stellt sicher, dass sie sicher signiert und authentifiziert werden.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Was ist eine Signaturzeile in einem Word-Dokument?
+### Kann ich für die Signaturzeile andere Bildformate verwenden?
+Ja, Sie können verschiedene Bildformate wie PNG, JPG, BMP usw. verwenden.
 
-A: Eine Signaturzeile in einem Word-Dokument ist ein Platzhalter, der angibt, wo eine Signatur platziert werden soll. Sie enthält normalerweise den Namen, den Titel und das Datum und bietet Platz für eine handschriftliche oder digitale Signatur.
+###  Ist es notwendig, eine`.pfx` file for the certificate?
+ Ja ein`.pfx` Datei ist ein gängiges Format zum Speichern kryptografischer Informationen, einschließlich Zertifikaten und privaten Schlüsseln.
 
-#### F: Wie kann ich mit Aspose.Words für .NET eine Signaturzeile in einem Word-Dokument erstellen?
+### Kann ich in einem einzelnen Dokument mehrere Signaturzeilen hinzufügen?
+Auf jeden Fall! Sie können mehrere Signaturzeilen einfügen, indem Sie den Einfügeschritt für jede Signatur wiederholen.
 
-A: Um mit Aspose.Words für .NET eine Signaturzeile in einem Word-Dokument zu erstellen, können Sie diese Schritte befolgen:
-1.  Erstellen Sie eine Instanz des`Document` Klasse und eine`DocumentBuilder` Objekt.
-2.  Verwenden Sie die`InsertSignatureLine` Methode der`DocumentBuilder` Objekt, um eine neue Signaturzeile in das Dokument einzufügen.
-3. Speichern Sie das geänderte Dokument.
+### Was ist, wenn ich kein digitales Zertifikat habe?
+Sie müssen ein digitales Zertifikat von einer vertrauenswürdigen Zertifizierungsstelle beziehen oder eines mit Tools wie OpenSSL generieren.
 
-#### F: Kann ich die Optionen der Signaturzeile, beispielsweise Name, Titel und Datum, anpassen?
-
- A: Ja, Sie können die Optionen für die Signaturzeile anpassen.`SignatureLineOptions` Klasse bietet Eigenschaften zum Setzen der gewünschten Optionen, wie zum Beispiel`Signer`, `SignerTitle`, `ShowDate`usw. Sie können diese Eigenschaften ändern, bevor Sie die Signaturzeile einfügen.
-
-#### F: Wie kann ich das Dokument unterzeichnen, nachdem ich eine Signaturzeile erstellt habe?
-
- A: Um das Dokument nach dem Erstellen einer Signaturzeile zu signieren, müssen Sie die Signaturoptionen festlegen und die`DigitalSignatureUtil` Klasse. Hier sind die Schritte:
-1.  Legen Sie die`SignatureLineId` Eigentum in der`SignOptions` Objekt zur ID der Signaturzeile.
-2.  Legen Sie die`SignatureLineImage` Eigentum in der`SignOptions` Erheben Sie Einwände gegen das Bild der Signatur, die Sie verwenden möchten.
-3.  Laden Sie das Signaturzertifikat mit dem`CertificateHolder` Klasse.
-4.  Verwenden Sie die`DigitalSignatureUtil.Sign` Methode zum Signieren des Dokuments unter Angabe der erforderlichen Parameter.
-
-#### F: Kann ich zum Unterzeichnen des Dokuments ein digitales Signaturbild verwenden?
-
- A: Ja, Sie können ein digitales Signaturbild verwenden, um das Dokument zu unterzeichnen. Dazu müssen Sie die Bilddatei im`SignOptions` Objekt mit dem`SignatureLineImage`Eigenschaft. Das Bild kann in jedem unterstützten Bildformat vorliegen, beispielsweise JPEG, PNG oder EMF.
-
-#### F: Was ist der Zweck des Erstellens und Unterzeichnens einer neuen Signaturzeile in einem Word-Dokument?
-
-A: Wenn Sie mit Aspose.Words für .NET eine neue Signaturzeile in einem Word-Dokument erstellen und signieren, können Sie einen Platzhalter für eine Signatur hinzufügen und das Dokument dann mit einem digitalen Zertifikat signieren. Dieser Prozess stellt die Authentizität und Integrität des Dokuments sicher und liefert den Nachweis der Genehmigung oder Zustimmung.
-
-#### F: Kann ich mit Aspose.Words für .NET mehrere Signaturzeilen in einem Word-Dokument erstellen und unterzeichnen?
-
-A: Ja, Sie können mit Aspose.Words für .NET mehrere Signaturzeilen in einem Word-Dokument erstellen und unterzeichnen. Jede Signaturzeile kann ihre eigene eindeutige ID und Optionen haben. Sie können die Schritte wiederholen, um weitere Signaturzeilen im Dokument zu erstellen und zu unterzeichnen.
-
-#### F: Kann ich die Signaturzeile nach der Unterzeichnung ändern oder weitere Informationen hinzufügen?
-
-A: Sobald eine Signaturzeile unterzeichnet wurde, wird sie Teil des Dokumentinhalts und kann nicht separat geändert werden. Sie können jedoch nach der unterzeichneten Signaturzeile zusätzliche Informationen oder Inhalte hinzufügen.
-
-#### F: Kann ich die digitale Signatur eines Dokuments überprüfen, das eine Signaturzeile enthält?
-
- A: Ja, Aspose.Words für .NET bietet Funktionen zum Überprüfen der digitalen Signatur eines Dokuments, das eine Signaturzeile enthält. Sie können die`DigitalSignatureUtil.Verify` Methode zur Überprüfung der Gültigkeit und Authentizität der digitalen Signatur.
-
-#### F: Welches Dateiformat unterstützt Aspose.Words für .NET zum Erstellen und Signieren von Signaturzeilen?
-
-A: Aspose.Words für .NET unterstützt das Erstellen und Signieren von Signaturzeilen im DOCX-Dateiformat. Sie können Signaturzeilen in DOCX-Dateien mit den bereitgestellten Methoden und Klassen erstellen und signieren.
+### Wie überprüfe ich die digitale Signatur im Dokument?
+Sie können das signierte Dokument in Word öffnen und zu den Signaturdetails gehen, um die Authentizität und Integrität der Signatur zu überprüfen.

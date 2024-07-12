@@ -57,9 +57,9 @@ Certifique-se de especificar o caminho correto para salvar o PDF assinado digita
 
 Seguindo essas etapas, você pode criar facilmente um PDF assinado digitalmente com um certificado usando Aspose.Words for .NET.
 
-### Exemplo de código-fonte para PDF assinado digitalmente usando titular do certificado usando Aspose.Words for .NET
+### Exemplo de código-fonte para PDF assinado digitalmente usando titular do certificado usando Aspose.Words para .NET
 
-Aqui está o código-fonte completo do PDF assinado digitalmente usando o titular do certificado de um documento usando Aspose.Words for .NET:
+Aqui está o código-fonte completo para PDF assinado digitalmente usando titular de certificado de um documento usando Aspose.Words for .NET:
 
 ```csharp
 
@@ -105,4 +105,4 @@ R: Para adicionar uma assinatura digital a um documento PDF usando um certificad
 R: Para obter um certificado para adicionar uma assinatura digital a um documento PDF, geralmente você pode entrar em contato com uma autoridade de certificação (CA) ou um provedor de serviços confiável. Estas entidades emitem certificados digitais após verificação da sua identidade e validação do seu pedido. Depois de obter um certificado, você poderá usá-lo em seu aplicativo para adicionar assinaturas digitais a documentos PDF.
 
 #### P: É possível personalizar os detalhes da assinatura digital, como motivo e localização?
- R: Sim, você pode personalizar os detalhes da assinatura digital especificando o motivo e o local da assinatura. No código de exemplo fornecido, você pode modificar os valores do`reason` e`location` parâmetros ao criar o`PdfDigitalSignatureDetails` objeto. Certifique-se de fornecer informações apropriadas para cada parâmetro para refletir o motivo e a localização da assinatura em seu documento PDF.
+ R: Sim, você pode personalizar os detalhes da assinatura digital especificando o motivo e o local da assinatura. No código de exemplo fornecido, você pode modificar os valores do`reason`e`location` parâmetros ao criar o`PdfDigitalSignatureDetails` objeto. Certifique-se de fornecer informações apropriadas para cada parâmetro para refletir o motivo e a localização da assinatura em seu documento PDF.

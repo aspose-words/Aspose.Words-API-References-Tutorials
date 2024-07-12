@@ -20,7 +20,7 @@ url: /zh/net/add-content-using-documentbuilder/create-new-document/
 
 ## 导入命名空间
 
-首先，让我们导入必要的命名空间。将命名空间视为我们存放所有工具的工具箱。
+首先，让我们导入必要的命名空间。将命名空间视为我们保存所有工具的工具箱。
 
 ```csharp
 using System;

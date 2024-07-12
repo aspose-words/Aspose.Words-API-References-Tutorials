@@ -17,7 +17,7 @@ Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 - Basiskennis van C#: Bekendheid met programmeren in C# zal u helpen de stappen soepel te begrijpen en te implementeren.
 -  Aspose.Words voor .NET-bibliotheek: Download en installeer Aspose.Words voor .NET vanaf de[download link](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Een geschikte omgeving zoals Visual Studio om uw code te schrijven en uit te voeren.
--  Voorbeelddocument: een voorbeelddocument (bijv.`Rendering.docx`) om de lettertype-instellingen toe te passen.
+- Voorbeelddocument: een voorbeelddocument (bijv.`Rendering.docx`) om de lettertype-instellingen toe te passen.
 
 ## Naamruimten importeren
 
@@ -55,7 +55,7 @@ In dit voorbeeld:
 
 ## Stap 3: Laad het document
 
-Als uw lettertypebronnen zijn geconfigureerd, is de volgende stap het laden van uw document in een Aspose.Words`Document` voorwerp. Hierdoor kunt u het document manipuleren en uiteindelijk opslaan.
+ Als uw lettertypebronnen zijn geconfigureerd, is de volgende stap het laden van uw document in een Aspose.Words`Document`voorwerp. Hierdoor kunt u het document manipuleren en uiteindelijk opslaan.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -73,13 +73,13 @@ Door deze stappen te volgen, hebt u met succes aangepaste lettertype-instellinge
 
 ## Conclusie
 
-Gefeliciteerd! U beheerst de basisprincipes van het beheren van lettertype-instellingen met Aspose.Words voor .NET. Of u nu aan een eenvoudig project of aan een complex documentverwerkingssysteem werkt, deze vaardigheden helpen u ervoor te zorgen dat uw documenten er precies zo uitzien als u dat wilt. Vergeet niet dat de flexibiliteit van Aspose.Words een breed scala aan aanpassingen mogelijk maakt, dus aarzel niet om verschillende instellingen te verkennen en ermee te experimenteren.
+Gefeliciteerd! U beheerst de basisprincipes van het beheren van lettertype-instellingen met Aspose.Words voor .NET. Of u nu aan een eenvoudig project of aan een complex documentverwerkingssysteem werkt, deze vaardigheden helpen u ervoor te zorgen dat uw documenten er precies zo uitzien als u dat wilt. Houd er rekening mee dat de flexibiliteit van Aspose.Words een breed scala aan aanpassingen mogelijk maakt, dus aarzel niet om verschillende instellingen te verkennen en ermee te experimenteren.
 
 ## Veelgestelde vragen
 
 ### V1: Kan ik lettertypen uit meerdere aangepaste mappen gebruiken?
 
- Ja, u kunt er meerdere opgeven`FolderFontSource`exemplaren binnen de`SetFontsSources` methode om lettertypen uit verschillende mappen op te nemen.
+ Ja, u kunt er meerdere opgeven`FolderFontSource` exemplaren binnen de`SetFontsSources` methode om lettertypen uit verschillende mappen op te nemen.
 
 ### V2: Hoe krijg ik een gratis proefversie van Aspose.Words voor .NET?
 

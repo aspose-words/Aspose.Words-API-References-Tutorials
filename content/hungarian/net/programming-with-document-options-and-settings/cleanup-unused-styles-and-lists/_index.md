@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Unused styles.docx");
 
 ## 3. lépés: Tisztítás előtt számolja meg a stílusokat és a listákat
 
-Tisztítás előtt megszámoljuk a dokumentumban szereplő stílusok és listák számát. A számlálók megjelenítéséhez használja a következő kódot:
+Tisztítás előtt megszámoljuk a dokumentumban szereplő stílusok és listák számát. Használja a következő kódot a számlálók megjelenítéséhez:
 
 ```csharp
 Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
@@ -75,7 +75,7 @@ Ezek az utasítások a tisztítás után fennmaradó stílusok és listák szám
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//Megtisztítja a fel nem használt stílusokat és listákat a dokumentumból az adott CleanupOptions függvényében.
+	// Megtisztítja a fel nem használt stílusokat és listákat a dokumentumból az adott CleanupOptions függvényében.
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 

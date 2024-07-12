@@ -58,6 +58,6 @@ Bu kod sayfa yönünü yatay, sol kenar boşluğunu 50 ve kağıt boyutunu 10x14
   
 ```
 
-Belgeyi kaydetmek istediğiniz dizine giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.
+ Belgeyi kaydetmek istediğiniz dizine giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.
 
 Artık Aspose.Words for .NET kullanarak bir belgenin düzenini ve bölüm formatını nasıl yapılandıracağınızı öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek kendi belgelerinizin düzenini ve biçimlendirmesini kolayca özelleştirebilirsiniz.

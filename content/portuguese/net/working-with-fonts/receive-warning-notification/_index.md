@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Etapa 3: atualizar o layout da página
 
- Ligar para`UpdatePageLayout` método. Isso renderiza o documento na memória e captura quaisquer avisos que ocorram durante a renderização.
+ Ligar para`UpdatePageLayout`método. Isso renderiza o documento na memória e captura quaisquer avisos que ocorram durante a renderização.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ Não, você só pode especificar uma fonte padrão para substituição. No entan
 
 ###  Q3: Posso lidar com outros tipos de avisos com`IWarningCallback`?
 
- Sim o`IWarningCallback` interface pode lidar com vários tipos de avisos, não apenas com substituição de fontes.
+ Sim o`IWarningCallback`interface pode lidar com vários tipos de avisos, não apenas com substituição de fontes.
 
 ### Q4: Onde posso encontrar suporte para Aspose.Words?
 

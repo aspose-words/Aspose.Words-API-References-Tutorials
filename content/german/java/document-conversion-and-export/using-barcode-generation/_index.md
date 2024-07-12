@@ -76,7 +76,7 @@ Ja, Sie können Barcodes aus Textdaten generieren, indem Sie dem Barcode-Generat
 
 ### Ist Aspose.Words für Java für die Verarbeitung umfangreicher Dokumente geeignet?
 
-Auf jeden Fall! Aspose.Words für Java ist für die effiziente Verarbeitung großer Dokumentmengen konzipiert. Es wird häufig in Anwendungen auf Unternehmensebene verwendet.
+Auf jeden Fall! Aspose.Words für Java ist für die effiziente Verarbeitung großer Dokumentenmengen konzipiert. Es wird häufig in Anwendungen auf Unternehmensebene verwendet.
 
 ### Gibt es Lizenzanforderungen für die Verwendung von Aspose.Words für Java?
 

@@ -36,7 +36,7 @@ Aspose.Words 提供了一組豐富的功能，包括：
 Aspose.Words 可讓您將 Word 文件轉換為各種格式，如 PDF、HTML、TXT、EPUB 等，確保相容性和可存取性。
 
 #### 文檔操作： 
-使用Aspose.Words，您可以透過新增或擷取內容輕鬆操作文檔，使其成為文檔處理的多功能工具。
+使用Aspose.Words，您可以透過新增或擷取內容輕鬆操作文檔，使其成為文件處理的多功能工具。
 
 #### 格式選項
 該庫為文字、表格、圖像和其他元素提供了廣泛的格式選項，使您可以保持轉換後文件的外觀。
@@ -261,7 +261,7 @@ Aspose.Words for Python 與 Python 2.7 和 Python 3.x 版本相容。使用者�
 
 是的，Aspose.Words for Python 支援加密 Word 文件的轉換。它可以在轉換過程中處理受密碼保護的文件。
 
-### Aspose.Words 支援轉換為影像格式嗎？
+### Aspose.Words 是否支援轉換為影像格式？
 
 是的，Aspose.Words 支援將 Word 文件轉換為各種圖片格式，例如 JPEG、PNG、BMP 和 GIF。當使用者需要將文件內容作為圖像共用時，此功能非常有用。
 

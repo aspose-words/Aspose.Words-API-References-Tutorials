@@ -100,7 +100,7 @@ Dit is wat elke parameter betekent:
 - `100`: De hoogte van de afbeelding (in punten).
 - `WrapType.Square`: De tekstterugloopstijl rond de afbeelding.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het document ten slotte op de gewenste locatie op.
 
@@ -120,7 +120,7 @@ Je Word-document met de zwevende afbeelding is nu klaar!
 
 ## Conclusie
 
-Het invoegen van een zwevende afbeelding in een Word-document met Aspose.Words voor .NET is een eenvoudig proces als het wordt opgesplitst in beheersbare stappen. Door deze handleiding te volgen, kunt u professioneel ogende afbeeldingen aan uw documenten toevoegen, waardoor de visuele aantrekkingskracht ervan wordt vergroot. Aspose.Words biedt een robuuste API die documentmanipulatie kinderspel maakt, of u nu aan rapporten, voorstellen of een ander documenttype werkt.
+Het invoegen van een zwevende afbeelding in een Word-document met Aspose.Words voor .NET is een eenvoudig proces als het wordt opgesplitst in beheersbare stappen. Door deze handleiding te volgen, kunt u professioneel ogende afbeeldingen aan uw documenten toevoegen, waardoor de visuele aantrekkingskracht ervan wordt vergroot. Aspose.Words biedt een robuuste API die documentmanipulatie eenvoudig maakt, of u nu aan rapporten, voorstellen of een ander documenttype werkt.
 
 ## Veelgestelde vragen
 

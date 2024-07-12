@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Ten kod tworzy instancję`Document` I`DocumentBuilder` do zbudowania dokumentu. Wstawia`<img>` w dokumencie z obrazem zakodowanym w standardzie base64.
+ Ten kod tworzy instancję`Document`I`DocumentBuilder` do zbudowania dokumentu. Wstawia`<img>` w dokumencie z obrazem zakodowanym w standardzie base64.
 
 ## Krok 3: Ustaw opcje zapisywania HTML
 

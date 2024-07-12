@@ -75,7 +75,7 @@ V tomto článku jsme prozkoumali, jak tisknout dokumenty s vlastním nastavení
 
 ### Jak mohu změnit velikost papíru svého dokumentu?
 
- Chcete-li změnit velikost papíru dokumentu, použijte`setPageWidth` a`setPageHeight` metody`PageSetup` třídy a zadejte požadované rozměry v bodech.
+ Chcete-li změnit velikost papíru dokumentu, použijte`setPageWidth`a`setPageHeight` metody`PageSetup` třídy a zadejte požadované rozměry v bodech.
 
 ### Mohu vytisknout více kopií dokumentu?
 

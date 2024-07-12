@@ -33,7 +33,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- ในขั้นตอนนี้ เรากำหนดค่าตัวเลือกการบันทึก OOXML โดยใช้`OptimizeFor` และ`OoxmlSaveOptions` วิธีการ เราปรับความเข้ากันได้ของเอกสารให้เหมาะสมสำหรับเวอร์ชัน Word 2016 โดยใช้`OptimizeFor`และกำหนดการปฏิบัติตาม`Iso29500_2008_Strict` โดยใช้`Compliance`.
+ ในขั้นตอนนี้ เรากำหนดค่าตัวเลือกการบันทึก OOXML โดยใช้`OptimizeFor`และ`OoxmlSaveOptions` วิธีการ เราปรับความเข้ากันได้ของเอกสารให้เหมาะสมสำหรับเวอร์ชัน Word 2016 โดยใช้`OptimizeFor`และกำหนดการปฏิบัติตาม`Iso29500_2008_Strict` โดยใช้`Compliance`.
 
 ## ขั้นตอนที่ 4: บันทึกเอกสารด้วย Ooxml Iso 29500_2008_การปฏิบัติตามข้อกำหนดที่เข้มงวด
 

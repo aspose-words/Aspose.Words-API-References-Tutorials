@@ -87,7 +87,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 // 문서를 열려면 비밀번호를 설정하세요
 doc.getWriteProtection().setPassword("yourPassword");
 
-// 암호화 알고리즘 설정(선택사항)
+// 암호화 알고리즘 설정(선택 사항)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
 
 // 암호화된 문서를 저장하세요

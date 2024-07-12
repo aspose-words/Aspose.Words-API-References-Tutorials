@@ -2,119 +2,144 @@
 title: グラフのデータラベルのデフォルトオプションを設定する
 linktitle: グラフのデータラベルのデフォルトオプションを設定する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してグラフのデータ ラベルの既定のオプションを設定する方法を学習します。
+description: Aspose.Words for .NET を使用して、グラフのデータ ラベルの既定のオプションを設定する方法を学びます。ステップ バイ ステップ ガイドに従って、グラフを簡単に作成およびカスタマイズします。
 type: docs
 weight: 10
 url: /ja/net/programming-with-charts/default-options-for-data-labels/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してグラフのデータ ラベルの既定のオプションを設定する方法について説明します。提供されているコードは、Aspose.Words を使用してグラフを作成し、データ シリーズを追加し、データ ラベルをカスタマイズする方法を示しています。
+こんにちは！ドキュメント自動化の世界に飛び込むことにワクワクしていますか？今日は、Aspose.Words for .NET を使用して、プログラムで魅力的なドキュメントを作成する方法を説明します。Aspose.Words は、Word ドキュメントを簡単に操作できる強力なライブラリです。このチュートリアルでは、グラフのデータ ラベルの既定のオプションの設定に焦点を当てます。熟練した開発者でも初心者でも、このガイドでは各ステップを順を追って説明し、すぐに使い始めることができます。
 
-## ステップ1: プロジェクトを設定する
+## 前提条件
 
-始める前に、次の要件が満たされていることを確認してください。
+始める前に、このチュートリアルを進めるために必要なものがすべて揃っていることを確認しましょう。簡単なチェックリストを以下に示します。
 
-- Aspose.Words for .NET ライブラリがインストールされました。NuGet パッケージ マネージャーを使用してダウンロードし、インストールできます。
-- 出力ドキュメントが保存されるドキュメント ディレクトリ パス。
+- Visual Studio またはその他の .NET 互換 IDE: ここでコードを記述して実行します。
+-  Aspose.Words for .NET: 次のようなことができます[最新バージョンをダウンロード](https://releases.aspose.com/words/net/)プロジェクトにインストールします。
+- C# プログラミングの基礎知識: このガイドは初心者向けですが、C# について少し知っておくと役立ちます。
+- .NET Framework がインストールされている: マシンに .NET Framework が設定されていることを確認します。
+-  Aspose.Wordsの一時ライセンス: 1つ入手[ここ](https://purchase.aspose.com/temporary-license/)全機能のロックを解除します。
 
-## ステップ2: 新しいドキュメントを作成し、グラフを挿入する
+これらの前提条件を整理したら、準備は完了です。
 
-まず、新しい`Document`オブジェクトと`DocumentBuilder`ドキュメントを作成します。
+## 名前空間のインポート
+
+まず最初に、プロジェクトをセットアップして必要な名前空間をインポートしましょう。これらの名前空間は、Aspose.Words 機能にアクセスするために不可欠です。
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.ReportingServices;
+```
+
+## ステップ1: 新しいドキュメントを作成する
+
+
+この旅は、新しいドキュメントを作成し、`DocumentBuilder` 。`DocumentBuilder`クラスは、ドキュメントのコンテンツを簡単に操作するための一連のメソッドを提供します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+//新しいドキュメントを作成する
 Document doc = new Document();
+
+// DocumentBuilder を初期化する
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-次に、`InsertChart`方法の`DocumentBuilder`この例では、円グラフを挿入します。
+### 説明
+
+このステップでは、コンテンツを挿入してフォーマットするために使用するドキュメントとビルダーを設定しました。`dataDir`変数には、最終的なドキュメントを保存するパスが保持されます。
+
+## ステップ2: グラフを挿入する
+
+次に、ドキュメントに円グラフを追加します。`InsertChart`方法の`DocumentBuilder`クラスを使用すると、これが非常に簡単になります。
 
 ```csharp
+//円グラフを挿入する
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
+
+//チャートオブジェクトにアクセスする
 Chart chart = shape.Chart;
 ```
 
-## ステップ3: グラフにデータ系列を追加する
+### 説明
 
-次に、グラフにデータ系列を追加しましょう。この例では、3 つのカテゴリとそれに対応する値を追加します。
+ここでは、文書に円グラフを挿入しています。`InsertChart`メソッドには、チャートの種類、幅、高さをパラメータとして指定する必要があります。チャートを挿入した後、チャート オブジェクトにアクセスしてさらに操作します。
+
+## ステップ3: チャートシリーズをカスタマイズする
+
+ここで、グラフ内の既存のシリーズをクリアし、カスタム シリーズを追加します。このシリーズはデータ ポイントを表します。
 
 ```csharp
+//既存のチャートシリーズをクリア
 chart.Series.Clear();
+
+//チャートに新しいシリーズを追加する
 ChartSeries series = chart.Series.Add("Aspose Series 1",
     new string[] { "Category 1", "Category 2", "Category 3" },
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## ステップ4: データラベルをカスタマイズする
+### 説明
 
-グラフのデータラベルをカスタマイズするには、`ChartDataLabelCollection`シリーズに関連付けられたオブジェクト。
+このステップでは、既存のシリーズをすべてクリアして、グラフが空であることを確認します。次に、円グラフに表示されるカスタム カテゴリと値を持つ新しいシリーズを追加します。
+
+## ステップ4: データラベルのデフォルトオプションを設定する
+
+データ ラベルは、グラフに情報を伝えるために重要です。パーセンテージや値を表示したり、区切り線をカスタマイズしたりするためのオプションを設定します。
 
 ```csharp
+//データラベルコレクションにアクセスする
 ChartDataLabelCollection labels = series.DataLabels;
-```
 
-その後、さまざまなプロパティを変更できます`labels`オブジェクトを使用して、データ ラベルに必要なオプションを設定します。この例では、パーセンテージと値の表示を有効にし、リーダー ラインを無効にして、カスタム セパレーターを設定します。
-
-```csharp
+//データラベルオプションを設定する
 labels.ShowPercentage = true;
 labels.ShowValue = true;
 labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
+### 説明
+
+ここでは、`DataLabels`シリーズのプロパティを使用して、各データ ラベルに表示される外観と情報をカスタマイズします。パーセンテージと値の両方を表示し、リーダー ラインを非表示にして、カスタム セパレーターを設定することを選択しました。
+
 ## ステップ5: ドキュメントを保存する
 
-最後に、指定されたディレクトリにドキュメントを保存します。`Save`方法の`Document`物体。
+最後に、ドキュメントを指定されたディレクトリに保存します。この手順により、すべての変更がファイルに書き込まれるようになります。
 
 ```csharp
+//文書を保存する
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-これで、Aspose.Words for .NET を使用してグラフのデータ ラベルの既定のオプションを設定する実装が完了します。
+### 説明
 
-### Aspose.Words for .NET を使用したデータ ラベルの既定のオプションのサンプル ソース コード 
-
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	ChartSeries series = chart.Series.Add("Aspose Series 1",
-		new string[] { "Category 1", "Category 2", "Category 3" },
-		new double[] { 2.7, 3.2, 0.8 });
-	ChartDataLabelCollection labels = series.DataLabels;
-	labels.ShowPercentage = true;
-	labels.ShowValue = true;
-	labels.ShowLeaderLines = false;
-	labels.Separator = " - ";
-	doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
-```
+この最後のステップでは、`Save`メソッドで指定されたディレクトリに文書が保存されます。`dataDir`「WorkingWithCharts.DefaultOptionsForDataLabels.docx」という名前です。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用してグラフのデータ ラベルの既定のオプションを設定する方法を学習しました。ステップ バイ ステップ ガイドに従うことで、グラフを作成し、データ シリーズを追加し、特定の要件に合わせてデータ ラベルをカスタマイズできます。Aspose.Words for .NET は、Word 文書内のグラフを使用した Words Processing 用の強力な API を提供し、さまざまなグラフ要素を操作して、必要な外観と機能を実現できます。
+これで完了です。Aspose.Words for .NET を使用して、カスタマイズされた円グラフを含む Word 文書を作成できました。この強力なライブラリを使用すると、文書の作成と操作を簡単に自動化できるため、時間と労力を節約できます。レポート、請求書、またはその他の種類の文書を作成する場合でも、Aspose.Words が役立ちます。
 
-プロパティを設定することで`ChartDataLabelCollection`グラフ シリーズに関連付けられたオブジェクトを使用すると、パーセンテージ、値、リーダー ライン、カスタム セパレーターの表示などのオプションを含むデータ ラベルの表示を制御できます。この柔軟性により、データを効果的に表示し、グラフの視覚的表現を強化できます。
+ぜひご自由に探索してください[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)より多くの機能と例については、こちらをご覧ください。コーディングを楽しんでください!
 
-### よくある質問
+## よくある質問
 
-#### Q1. Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、開発者が .NET アプリケーションを使用してプログラムで Word 文書を作成、操作、保存できるようにするライブラリです。チャートなどの文書要素を使用して Words を処理するための幅広い機能を提供します。
+### Aspose.Words を無料で使用できますか?
+Aspose.Wordsは無料でご利用いただけます。[一時ライセンス](https://purchase.aspose.com/temporary-license/)または、[無料トライアル](https://releases.aspose.com/).
 
-#### Q2. Aspose.Words for .NET をインストールするにはどうすればよいですか?
-Aspose.Words for .NET は、Visual Studio の NuGet パッケージ マネージャーを使用してダウンロードすることでインストールできます。NuGet パッケージ マネージャーで「Aspose.Words」を検索し、プロジェクトにインストールするだけです。
+### Aspose.Words のサポートを受けるにはどうすればよいですか?
+サポートを受けるには[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8).
 
-#### Q3. Aspose.Words for .NET を使用してグラフの他の側面をカスタマイズできますか?
-はい、Aspose.Words for .NET を使用すると、グラフの種類、軸ラベル、凡例、プロット領域など、グラフのさまざまな側面をカスタマイズできます。グラフ オブジェクトのさまざまなプロパティにアクセスして変更し、希望する外観と動作を実現できます。
+### 他の種類のグラフを追加できますか?
+はい、Aspose.Wordsは棒グラフ、折れ線グラフ、縦棒グラフなど、さまざまなグラフタイプをサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
 
-#### Q4. チャートを異なる形式で保存できますか?
-はい、Aspose.Words for .NETは、DOCX、PDF、HTMLなど、さまざまな形式でチャートを含むドキュメントの保存をサポートしています。要件に基づいて適切な形式を選択し、`Save`方法の`Document`ドキュメントを保存するオブジェクト。
+### Aspose.Words は .NET Core と互換性がありますか?
+はい、Aspose.Wordsは.NET Coreと互換性があります。詳細については、[ドキュメンテーション](https://reference.aspose.com/words/net/).
 
-#### Q5. これらのテクニックを他の種類のチャートにも適用できますか?
-はい、このチュートリアルで説明する手法は、Aspose.Words for .NET でサポートされている他の種類のグラフにも適用できます。重要なのは、Words 処理に使用しているグラフの種類に固有の関連オブジェクトとプロパティにアクセスすることです。
+### Aspose.Words のライセンスを購入するにはどうすればよいですか?
+ライセンスは以下から購入できます。[Aspose ストア](https://purchase.aspose.com/buy).
+

@@ -59,7 +59,7 @@ Abschließend haben wir eine Schritt-für-Schritt-Anleitung zum Einfügen eines 
 
 Wenn Sie diese Schritte befolgen, können Sie mit Aspose.Words für .NET erfolgreich ein OLE-Objekt als Symbol in Ihre Word-Dokumente einfügen. Achten Sie darauf, die erforderlichen Referenzen zu importieren, und befolgen Sie die Anweisungen sorgfältig, um die gewünschten Ergebnisse zu erzielen.
 
-### FAQs zum Einfügen eines OLE-Objekts in ein Word-Dokument als Symbol
+### FAQs zum Einfügen eines OLE-Objekts als Symbol in ein Word-Dokument
 
 #### F. Welche Referenzen werden benötigt, um mit Aspose.Words für .NET ein OLE-Objekt als Symbol in ein Word-Dokument einzufügen?
 

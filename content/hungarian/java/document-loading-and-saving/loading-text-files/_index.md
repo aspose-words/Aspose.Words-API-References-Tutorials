@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- Ebben a példában egy szöveges dokumentumot töltünk be, és a kezdő és záró szóközöket levágjuk`TxtLeadingSpacesOptions.TRIM` és`TxtTrailingSpacesOptions.TRIM`.
+ Ebben a példában egy szöveges dokumentumot töltünk be, és a kezdő és záró szóközöket levágjuk`TxtLeadingSpacesOptions.TRIM`és`TxtTrailingSpacesOptions.TRIM`.
 
 ## 3. lépés: A szöveg irányának vezérlése
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-Ez a kód a dokumentum irányát automatikus felismerésre állítja (`DocumentDirection.AUTO`), és betölt egy szöveges dokumentumot héber szöveggel. Igény szerint módosíthatja a dokumentum irányát.
+Ez a kód a dokumentum irányát automatikus felismerésre állítja (`DocumentDirection.AUTO`), és betölt egy szöveges dokumentumot héber szöveggel. Szükség szerint módosíthatja a dokumentum irányát.
 
 ## Teljes forráskód szöveges fájlok betöltéséhez az Aspose.Words for Java segítségével
 
@@ -179,7 +179,7 @@ Az Aspose.Words for Java használatának megkezdéséhez kövesse az alábbi lé
 
 ### Hogyan kezelhetem a szóközöket a betöltött szöveges dokumentumokban?
 
- Szabályozhatja, hogy a betöltött szöveges dokumentumokban a kezdő és a záró szóközök hogyan legyenek kezelve`TxtLoadOptions` . Opciók, mint`TxtLeadingSpacesOptions` és`TxtTrailingSpacesOptions`lehetővé teszi a terek vágását vagy megőrzését szükség szerint. Példaként tekintse meg a jelen útmutató „Térbeállítások kezelése” című részét.
+ Szabályozhatja, hogy a betöltött szöveges dokumentumokban a kezdő és a záró szóközök hogyan legyenek kezelve`TxtLoadOptions` . Opciók, mint`TxtLeadingSpacesOptions`és`TxtTrailingSpacesOptions`lehetővé teszi a terek vágását vagy megőrzését szükség szerint. Példaként tekintse meg a jelen útmutató „Térbeállítások kezelése” című részét.
 
 ### Mi a jelentősége a szövegiránynak az Aspose.Words for Java-ban?
 

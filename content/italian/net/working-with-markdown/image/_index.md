@@ -65,7 +65,7 @@ Congratulazioni! Ora hai imparato come utilizzare la funzionalità delle immagin
 
 #### D: Come posso ridimensionare un'immagine in Aspose.Words?
 
- R: Per ridimensionare un'immagine in Aspose.Words, puoi utilizzare il file`Width` E`Height` proprietà del`Shape` oggetto.
+ R: Per ridimensionare un'immagine in Aspose.Words, puoi utilizzare il file`Width`E`Height` proprietà del`Shape` oggetto.
 
 #### D: Posso applicare filtri alle immagini in Aspose.Words?
 

@@ -1,6 +1,6 @@
 ---
-title: 定制文件打印
-linktitle: 定制文件打印
+title: 定制文件印刷
+linktitle: 定制文件印刷
 second_title: Aspose.Words Java 文档处理 API
 description: 了解如何使用 Aspose.Words for Java 轻松实现自定义文档打印。本分步指南涵盖了从设置到高级自定义的所有内容。
 type: docs

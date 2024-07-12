@@ -90,6 +90,6 @@ Melhor compatibilidade: Ao usar fontes comumente disponíveis em sistemas leitor
 #### P: Quais são as consequências de desativar a incorporação de fontes Arial e Times Roman em um documento PDF?
 R: As consequências de desabilitar a incorporação de fontes Arial e Times Roman em um documento PDF são as seguintes:
 
-Aparência diferente: Se as fontes Arial e Times Roman não estiverem disponíveis no sistema onde o PDF é aberto, serão utilizadas fontes substitutas, o que pode resultar em uma aparência diferente da pretendida.
+Aparência diferente: Caso as fontes Arial e Times Roman não estejam disponíveis no sistema onde o PDF é aberto, serão utilizadas fontes substitutas, o que pode resultar em uma aparência diferente da pretendida.
 
 Problemas de legibilidade: As fontes substitutas usadas podem não ser tão legíveis quanto as fontes originais, o que pode afetar a legibilidade do documento.

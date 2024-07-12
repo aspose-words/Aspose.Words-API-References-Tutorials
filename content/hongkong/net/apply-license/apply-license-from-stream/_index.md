@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## 結論
 
-現在你就擁有了！一旦您了解了步驟，從 Aspose.Words for .NET 中的串流應用程式授權是一個簡單的過程。遵循本指南，您可以確保您的應用程式可以不受任何限制地利用 Aspose.Words 的全部功能。如果您遇到任何問題，請隨時查看[文件](https://reference.aspose.com/words/net/)或尋求協助[支援論壇](https://forum.aspose.com/c/words/8)。快樂編碼！
+現在你就得到它了！一旦您了解了步驟，從 Aspose.Words for .NET 中的串流應用程式授權是一個簡單的過程。遵循本指南，您可以確保您的應用程式可以不受任何限制地利用 Aspose.Words 的全部功能。如果您遇到任何問題，請隨時查看[文件](https://reference.aspose.com/words/net/)或尋求協助[支援論壇](https://forum.aspose.com/c/words/8)。快樂編碼！
 
 ## 常見問題解答
 

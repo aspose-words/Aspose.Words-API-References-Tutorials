@@ -51,7 +51,7 @@ comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
 ## 4. lépés: Mentse el a dokumentumot
-megjegyzés és annak tartalmának hozzáadása után mentse a dokumentumot fájlba a Dokumentum osztály Mentés metódusával:
+A megjegyzés és annak tartalmának hozzáadása után mentse a dokumentumot fájlba a Dokumentum osztály Mentés metódusával:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");

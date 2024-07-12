@@ -21,7 +21,7 @@ Prima di immergerci nel tutorial, assicuriamoci di avere tutto ciò di cui hai b
 3. Visual Studio: funzionerà qualsiasi versione recente, ma si consiglia di utilizzare la versione più recente.
 4. .NET Framework: assicurati che sia installato sul tuo computer.
 
-Pronti per iniziare? Grande! Iniziamo importando gli spazi dei nomi necessari.
+Pronto per iniziare? Grande! Iniziamo importando gli spazi dei nomi necessari.
 
 ## Importa spazi dei nomi
 
@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Qui aggiungiamo del testo prima e dopo il contenuto aggiunto ai segnalibri. IL`StartBookmark` E`EndBookmark` metodi definiscono i confini del segnalibro.
+ Qui aggiungiamo del testo prima e dopo il contenuto aggiunto ai segnalibri. IL`StartBookmark`E`EndBookmark` metodi definiscono i confini del segnalibro.
 
 ## Passaggio 3: inserimento di un campo condizionale
 

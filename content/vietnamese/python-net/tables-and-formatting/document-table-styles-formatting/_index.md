@@ -39,7 +39,7 @@ Trước khi chúng ta đi sâu vào chi tiết cụ thể về kiểu và đị
     table = builder.start_table()
     ```
 
-2.  Chèn dữ liệu: Thêm dữ liệu vào bảng bằng cách sử dụng trình tạo`insert_cell` Và`write` phương pháp.
+2.  Chèn dữ liệu: Thêm dữ liệu vào bảng bằng cách sử dụng trình tạo`insert_cell`Và`write` phương pháp.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Trước khi chúng ta đi sâu vào chi tiết cụ thể về kiểu và đị
 
 ## Áp dụng định dạng bảng cơ bản
 
- Định dạng bảng cơ bản có thể đạt được bằng cách sử dụng các phương pháp được cung cấp bởi`Table` Và`Cell` các lớp học. Đây là cách bạn có thể nâng cao hình thức của bảng:
+ Định dạng bảng cơ bản có thể đạt được bằng cách sử dụng các phương pháp được cung cấp bởi`Table`Và`Cell` các lớp học. Đây là cách bạn có thể nâng cao hình thức của bảng:
 
 1. Đặt độ rộng cột: Điều chỉnh độ rộng của cột để đảm bảo căn chỉnh phù hợp và thu hút thị giác.
 
@@ -127,7 +127,7 @@ Tạo bố cục bảng phức tạp thường yêu cầu hợp nhất và chia 
 
 ## Điều chỉnh chiều cao và chiều rộng của hàng và cột
 
-Tinh chỉnh kích thước hàng và cột để có bố cục bảng cân bằng:
+Tinh chỉnh kích thước hàng và cột để có bố cục bảng cân đối:
 
 1. Điều chỉnh chiều cao hàng: Sửa đổi chiều cao hàng dựa trên nội dung.
 

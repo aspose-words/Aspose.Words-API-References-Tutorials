@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- Trong bước này, chúng tôi định cấu hình các tùy chọn sao lưu cho hình ảnh. Chúng tôi tạo ra một cái mới`ImageSaveOptions` đối tượng chỉ định định dạng lưu mong muốn, ở đây là "Jpeg" cho định dạng JPEG. Chúng tôi cũng đặt phạm vi trang cần chuyển đổi bằng cách sử dụng`PageSet`sự vật. Cuối cùng, chúng ta điều chỉnh độ sáng và độ tương phản của hình ảnh bằng cách sử dụng`ImageBrightness` Và`ImageContrast` các thuộc tính tương ứng. Chúng tôi cũng thay đổi độ phân giải ngang bằng cách sử dụng`HorizontalResolution` tài sản.
+ Trong bước này, chúng tôi định cấu hình các tùy chọn sao lưu cho hình ảnh. Chúng tôi tạo ra một cái mới`ImageSaveOptions` đối tượng chỉ định định dạng lưu mong muốn, ở đây là "Jpeg" cho định dạng JPEG. Chúng tôi cũng đặt phạm vi trang cần chuyển đổi bằng cách sử dụng`PageSet`sự vật. Cuối cùng, chúng ta điều chỉnh độ sáng và độ tương phản của hình ảnh bằng cách sử dụng`ImageBrightness`Và`ImageContrast` các thuộc tính tương ứng. Chúng tôi cũng thay đổi độ phân giải ngang bằng cách sử dụng`HorizontalResolution` tài sản.
 
 ## Bước 4: Sao lưu hình ảnh
 
@@ -43,7 +43,7 @@ options. HorizontalResolution = 72f;
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
 ```
 
- Ở bước cuối cùng này, chúng tôi lưu hình ảnh của phạm vi trang được chỉ định ở định dạng JPEG bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu được chỉ định.
+ Ở bước cuối cùng này, chúng tôi lưu hình ảnh của phạm vi trang được chỉ định ở định dạng JPEG bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu đã chỉ định.
 
 Bây giờ bạn có thể chạy mã nguồn để chuyển đổi một phạm vi trang cụ thể trong tài liệu của mình sang hình ảnh JPEG. Tệp kết quả sẽ được lưu trong thư mục được chỉ định với tên "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg".
 

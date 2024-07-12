@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## 3. Adım: Belgenin şifrelenip şifrelenmediğini kontrol edin
 
- biz kullanıyoruz`IsEncrypted` mülkiyeti`FileFormatInfo`belgenin şifrelenip şifrelenmediğini kontrol etmek için nesne. Bu özellik şunu döndürür:`true` belge şifrelenmişse, aksi halde geri döner`false`. Sonucu konsolda gösteriyoruz.
+ biz kullanıyoruz`IsEncrypted` mülkiyeti`FileFormatInfo` belgenin şifrelenip şifrelenmediğini kontrol etmek için nesne. Bu özellik şunu döndürür:`true` belge şifrelenmişse, aksi halde geri döner`false`. Sonucu konsolda gösteriyoruz.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### S: Dosya formatı nasıl tespit edilir?
- Şunu kullanabilirsiniz:`DetectFileFormat` yöntemi`FileFormatUtil`Dosya formatı bilgilerini tespit etmek için sınıf. Aşağıdaki örnekte, şifrelenmiş belgenin "Encrypted.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz:
+ Şunu kullanabilirsiniz:`DetectFileFormat` yöntemi`FileFormatUtil` Dosya formatı bilgilerini tespit etmek için sınıf. Aşağıdaki örnekte, şifrelenmiş belgenin "Encrypted.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### S: Belgenin şifrelenip şifrelenmediği nasıl kontrol edilir?
- Şunu kullanabilirsiniz:`IsEncrypted` mülkiyeti`FileFormatInfo`belgenin şifrelenip şifrelenmediğini kontrol etmek için nesne. Bu özellik şunu döndürür:`true` belge şifrelenmişse, aksi halde geri döner`false`. Sonuç konsolda görüntülenir:
+ Şunu kullanabilirsiniz:`IsEncrypted` mülkiyeti`FileFormatInfo` belgenin şifrelenip şifrelenmediğini kontrol etmek için nesne. Bu özellik şunu döndürür:`true` belge şifrelenmişse, aksi halde geri döner`false`. Sonuç konsolda görüntülenir:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

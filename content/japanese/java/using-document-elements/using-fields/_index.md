@@ -84,7 +84,7 @@ Object[] fieldValues = {
 doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
-HandleMergeField クラスのソースコード
+クラスHandleMergeFieldのソースコード
 
 ```java
     private static class HandleMergeField implements IFieldMergingCallback
@@ -295,7 +295,7 @@ HandleMergeField クラスのソースコード
     private static class HandleMergeFieldAlternatingRows implements IFieldMergingCallback
     {
         /// <要約>
-        /// ドキュメント内で検出されたすべてのマージ フィールドに対して呼び出されます。
+        /// ドキュメント内で検出されたすべての差し込みフィールドに対して呼び出されます。
         /// 差し込み印刷エンジンにデータを返すか、ドキュメントに対して他の処理を実行することができます。
         /// この場合はセルの書式を変更します。
         /// </要約>

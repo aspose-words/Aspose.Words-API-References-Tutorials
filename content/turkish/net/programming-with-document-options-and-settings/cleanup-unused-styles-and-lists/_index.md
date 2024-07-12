@@ -75,7 +75,7 @@ Bu talimatlar temizlikten sonra kalan stil ve liste sayısını gösterir.
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//Verilen CleanupOptions'a bağlı olarak kullanılmayan stilleri ve listeleri belgeden temizler.
+	// Verilen CleanupOptions'a bağlı olarak kullanılmayan stilleri ve listeleri belgeden temizler.
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 

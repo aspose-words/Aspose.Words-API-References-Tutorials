@@ -45,7 +45,7 @@ Finalmente, podemos salvar o documento no formato desejado.
 // Use um construtor de documentos para adicionar conteúdo ao documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Insira o hyperlink.
+//Insira o hyperlink.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", falso);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

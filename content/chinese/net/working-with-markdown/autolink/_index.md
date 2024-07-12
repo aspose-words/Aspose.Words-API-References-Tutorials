@@ -2,7 +2,7 @@
 title: 自动链接
 linktitle: 自动链接
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 插入自动链接分步指南。
+description: 了解如何使用 Aspose.Words for .NET 一步一步指南插入自动链接。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/autolink/
@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 步骤 2：插入超链接
 
-我们可以使用`InsertHyperlink`方法。我们指定 URL 和要显示的链接文本。
+我们可以使用`InsertHyperlink`文档生成器的方法。我们指定 URL 和要显示的链接文本。
 
 ```csharp
 builder.InsertHyperlink("https://www.aspose.com”， “https://www.aspose.com”， false);

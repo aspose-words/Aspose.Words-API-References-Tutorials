@@ -111,6 +111,6 @@ Pamiętaj, aby wziąć pod uwagę opcje ładowania, takie jak skonfigurowanie wy
 
 Aspose.Words dla .NET oferuje wiele zaawansowanych funkcji do manipulowania i generowania dokumentów. Dalsze zapoznawanie się z dokumentacją i przykładami dostarczonymi przez Aspose.Words umożliwi pełne wykorzystanie możliwości tej potężnej biblioteki.
 
-Nie wahaj się zatem zintegrować wykrywania numerowania białych znaków ze swoimi projektami Aspose.Words for .NET i wykorzystaj jego zalety do tworzenia dobrze ustrukturyzowanych i czytelnych dokumentów.
+Nie wahaj się zatem zintegrować wykrywania numerowania białych znaków ze swoimi projektami Aspose.Words for .NET i skorzystaj z jego zalet, aby tworzyć dobrze zorganizowane i czytelne dokumenty.
 
 

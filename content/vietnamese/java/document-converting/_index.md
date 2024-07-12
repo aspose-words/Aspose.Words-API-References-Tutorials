@@ -12,7 +12,7 @@ Bạn đang tìm cách chuyển đổi tài liệu dễ dàng trong ứng dụng
 
 ## Hướng dẫn chuyển đổi tài liệu toàn diện
 
-Aspose.Words for Java cung cấp một loạt các hướng dẫn để giúp việc chuyển đổi tài liệu trở nên dễ dàng. Cho dù bạn cần chuyển đổi nhiều tài liệu hàng loạt hay thực hiện chuyển đổi riêng lẻ, những hướng dẫn này đều giúp bạn. Từ các chuyển đổi đơn giản đến xử lý các thành phần tài liệu khác nhau như hình ảnh, bảng và tiêu đề, những hướng dẫn này giúp bạn đạt được các chuyển đổi tài liệu chính xác và đáng tin cậy. Khai thác sức mạnh của Aspose.Words cho API mạnh mẽ của Java để hợp lý hóa các tác vụ xử lý văn bản và xử lý tài liệu của bạn, đồng thời trải nghiệm tính hiệu quả và độ chính xác của việc chuyển đổi tài liệu.
+Aspose.Words for Java cung cấp một loạt các hướng dẫn để giúp việc chuyển đổi tài liệu trở nên dễ dàng. Cho dù bạn cần chuyển đổi hàng loạt nhiều tài liệu hay thực hiện chuyển đổi riêng lẻ, những hướng dẫn này đều giúp bạn. Từ các chuyển đổi đơn giản đến xử lý các thành phần tài liệu khác nhau như hình ảnh, bảng và tiêu đề, những hướng dẫn này giúp bạn đạt được các chuyển đổi tài liệu chính xác và đáng tin cậy. Khai thác sức mạnh của Aspose.Words cho API mạnh mẽ của Java để hợp lý hóa các tác vụ xử lý văn bản và xử lý tài liệu của bạn, đồng thời trải nghiệm tính hiệu quả và độ chính xác của việc chuyển đổi tài liệu.
 
 ## Đơn giản hóa quá trình chuyển đổi tài liệu
 

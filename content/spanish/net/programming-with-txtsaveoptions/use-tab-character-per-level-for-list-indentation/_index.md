@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
 
-En este tutorial, exploraremos el código fuente de C# proporcionado para la función "Usar un carácter de tabulación por nivel para la sangría de la lista" con Aspose.Words para .NET. Esta función le permite aplicar caracteres de tabulación para sangrar las listas en cada nivel, lo que brinda mayor flexibilidad y control sobre la apariencia de sus documentos.
+En este tutorial, exploraremos el código fuente de C# proporcionado para la función "Usar un carácter de tabulación por nivel para la sangría de la lista" con Aspose.Words para .NET. Esta característica le permite aplicar caracteres de tabulación para sangrar las listas en cada nivel, lo que brinda mayor flexibilidad y control sobre la apariencia de sus documentos.
 
 ## Paso 1: configurar el entorno
 
@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-En este paso, aplicamos el formato predeterminado de números de lista usando el`ApplyNumberDefault()` método del formateador de listas. A continuación, agregamos tres elementos a nuestra lista usando la herramienta del generador de documentos.`Writeln()` y`Write()` métodos. Usamos el`ListIndent()` Método para incrementar la sangría en cada nivel.
+En este paso, aplicamos el formato predeterminado de números de lista usando el`ApplyNumberDefault()` método del formateador de listas. A continuación, agregamos tres elementos a nuestra lista usando la herramienta del generador de documentos.`Writeln()`y`Write()` métodos. Usamos el`ListIndent()` Método para incrementar la sangría en cada nivel.
 
 ## Paso 4: configurar las opciones de grabación
 
@@ -100,7 +100,7 @@ Configure su entorno de desarrollo agregando las referencias necesarias e import
 
  Crear un nuevo`Document` objeto y un asociado`DocumentBuilder` objeto.
 
- Utilizar el`DocumentBuilder` para crear una lista con múltiples niveles de sangría usando los métodos`ApplyNumberDefault()` para aplicar el formato de número de lista predeterminado,`Writeln()` y`Write()` para agregar elementos a la lista, y`ListIndent()`para incrementar la sangría en cada nivel.
+ Utilizar el`DocumentBuilder` para crear una lista con múltiples niveles de sangría usando los métodos`ApplyNumberDefault()` para aplicar el formato de número de lista predeterminado,`Writeln()`y`Write()` para agregar elementos a la lista, y`ListIndent()`para incrementar la sangría en cada nivel.
 
  Configure las opciones de guardado creando un`TxtSaveOptions` objeto y estableciendo las propiedades`ListIndentation.Count` al número de caracteres de tabulación por nivel y`ListIndentation.Character` a`'\t'` para utilizar los caracteres de tabulación.
 

@@ -16,7 +16,7 @@ Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistět
 
 ## Krok 2: Načtení dokumentu
 
-V tomto kroku načteme dokument aplikace Word, který chceme vyčistit. K načtení dokumentu použijte následující kód:
+tomto kroku načteme dokument aplikace Word, který chceme vyčistit. K načtení dokumentu použijte následující kód:
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -73,7 +73,7 @@ Tento příkaz zobrazuje počet stylů zbývajících po vyčištění.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//Počet stylů po vyčištění byl snížen.
+	// Počet stylů po vyčištění byl snížen.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

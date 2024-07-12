@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // 자동 테이블 조정 활성화
 table. AllowAutoFit = true;
 
-// 첫 번째 행의 첫 번째 셀을 검색합니다.
+//첫 번째 행의 첫 번째 셀을 검색합니다.
 Cell firstCell = table.FirstRow.FirstCell;
 
 // 선호하는 너비 유형과 해당 값을 검색합니다.
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-여기서는 문서를 사용하여 첫 번째 테이블을 가져온 다음 자동 테이블 맞춤을 활성화합니다.`AllowAutoFit` 재산. 그런 다음 테이블의 첫 번째 행의 첫 번째 셀을 검색합니다. 이 셀에서 다음을 사용하여 선호하는 너비 유형을 검색할 수 있습니다.`PreferredWidth.Type` 재산과 그 가치`PreferredWidth.Value` 재산.
+ 여기서는 문서를 사용하여 첫 번째 테이블을 가져온 다음 자동 테이블 맞춤을 활성화합니다.`AllowAutoFit` 재산. 그런 다음 테이블의 첫 번째 행의 첫 번째 셀을 검색합니다. 이 셀에서 다음을 사용하여 선호하는 너비 유형을 검색할 수 있습니다.`PreferredWidth.Type` 재산과 그 가치`PreferredWidth.Value` 재산.
 
 ### .NET용 Aspose.Words를 사용하여 기본 너비 유형 검색에 대한 샘플 소스 코드 
 

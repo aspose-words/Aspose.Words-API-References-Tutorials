@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Stap 3: Ga naar de cel die u wilt wijzigen
- Om de opmaak van een cel te wijzigen, moeten we naar de specifieke cel in de tabel navigeren. Wij gebruiken de`GetChild()` En`FirstRow.FirstCell` methoden om de verwijzing naar de eerste cel van de eerste array te verkrijgen.
+ Om de opmaak van een cel te wijzigen, moeten we naar de specifieke cel in de tabel navigeren. Wij gebruiken de`GetChild()`En`FirstRow.FirstCell` methoden om de verwijzing naar de eerste cel van de eerste array te verkrijgen.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -33,7 +33,7 @@ Cell firstCell = table.FirstRow.FirstCell;
 ```
 
 ## Stap 4: Wijzig de celopmaak
- Nu kunnen we de celopmaak wijzigen met behulp van de eigenschappen van het`CellFormat` klas. We kunnen bijvoorbeeld de celbreedte, tekstrichting en achtergrondkleur instellen.
+ Nu kunnen we de celopmaak wijzigen met behulp van de eigenschappen van het`CellFormat` klas. We kunnen bijvoorbeeld de celbreedte, tekstoriëntatie en achtergrondkleur instellen.
 
 ```csharp
 firstCell.CellFormat.Width = 30;

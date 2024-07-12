@@ -16,7 +16,7 @@ Notas de rodapé e notas finais servem como uma forma de fornecer informações 
 
 ## Benefícios do uso de notas de rodapé e notas finais
 
-1. Legibilidade aprimorada: as notas de rodapé e de fim evitam interrupções no texto principal, permitindo que os leitores se concentrem no conteúdo enquanto acessam informações adicionais de maneira conveniente.
+1. Legibilidade aprimorada: notas de rodapé e finais evitam interrupções no texto principal, permitindo que os leitores se concentrem no conteúdo enquanto acessam informações adicionais de maneira conveniente.
 
 2. Gerenciamento de citações: Fornecem uma forma padronizada de citar fontes, melhorando a credibilidade do seu documento e permitindo que os leitores verifiquem as informações fornecidas.
 

@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 2. Создайте и отформатируйте документ.
- Создайте экземпляр`Document` класс и`DocumentBuilder`класс для создания документа. Использовать`Font` собственность`DocumentBuilder` для доступа к свойствам форматирования шрифта.
+ Создайте экземпляр`Document` класс и`DocumentBuilder` класс для создания документа. Использовать`Font` собственность`DocumentBuilder`для доступа к свойствам форматирования шрифта.
 
 ```csharp
 Document doc = new Document();

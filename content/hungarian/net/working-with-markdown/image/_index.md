@@ -65,7 +65,7 @@ Gratulálok ! Most már megtanulta, hogyan kell használni a képek funkciót az
 
 #### K: Hogyan méretezhetek át egy képet az Aspose.Words programban?
 
- V: Az Aspose.Words képének átméretezéséhez használhatja a`Width` és`Height` tulajdonságai a`Shape` tárgy.
+ V: Az Aspose.Words képének átméretezéséhez használhatja a`Width`és`Height` tulajdonságai a`Shape` tárgy.
 
 #### K: Alkalmazhatok szűrőket az Aspose.Words képeire?
 

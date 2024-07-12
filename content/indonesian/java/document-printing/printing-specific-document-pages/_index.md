@@ -94,7 +94,7 @@ Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOCX, DO
 
 ### Bagaimana cara mengatur opsi pencetakan tambahan, seperti orientasi halaman dan ukuran kertas?
 
- Anda dapat mengatur pilihan pencetakan tambahan, seperti orientasi halaman dan ukuran kertas, dengan mengkonfigurasi`PrintOptions` objek sebelum mencetak dokumen. Gunakan metode seperti`setOrientation` Dan`setPaperSize` untuk menyesuaikan pengaturan pencetakan.
+ Anda dapat mengatur pilihan pencetakan tambahan, seperti orientasi halaman dan ukuran kertas, dengan mengkonfigurasi`PrintOptions` objek sebelum mencetak dokumen. Gunakan metode seperti`setOrientation`Dan`setPaperSize` untuk menyesuaikan pengaturan pencetakan.
 
 ### Apakah ada versi uji coba Aspose.Words untuk Java yang tersedia?
 

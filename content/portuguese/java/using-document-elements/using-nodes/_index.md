@@ -101,7 +101,7 @@ public void createAndAddParagraphNode() throws Exception
 ```
 
 ## 8. Conclusão
-Neste tutorial, cobrimos aspectos essenciais do trabalho com nós no Aspose.Words for Java. Você aprendeu como obter nós pais, entender os documentos do proprietário, enumerar nós filhos, recorrer a todos os nós e criar e adicionar nós de parágrafo. Essas habilidades são inestimáveis para tarefas de processamento de documentos.
+Neste tutorial, cobrimos aspectos essenciais do trabalho com nós no Aspose.Words for Java. Você aprendeu como obter nós pai, entender os documentos do proprietário, enumerar nós filho, recorrer a todos os nós e criar e adicionar nós de parágrafo. Essas habilidades são inestimáveis para tarefas de processamento de documentos.
 
 ## 9. Perguntas frequentes (FAQ)
 

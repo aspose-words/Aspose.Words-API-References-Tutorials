@@ -74,7 +74,7 @@ public void convertMetafilesToSvg() throws Exception {
 }
 ```
 
-## 7. CSS-Klassennamenpräfix hinzufügen
+## 7. Fügen Sie ein CSS-Klassennamenpräfix hinzu
  Mit dem`addCssClassNamePrefix` können Sie den CSS-Klassennamen im exportierten HTML ein Präfix hinzufügen. Dadurch werden Konflikte mit vorhandenen Stilen vermieden.
 
 ```java
@@ -128,7 +128,7 @@ Hier sind einige häufig gestellte Fragen zur Arbeit mit Aspose.Words für Java-
  Um HTML wieder in das Word-Format zu konvertieren, können Sie die Aspose.Words API verwenden`load` Methode, um das HTML-Dokument zu laden und es dann im Word-Format zu speichern.
 
 ### F2: Kann ich die CSS-Stile beim Exportieren nach HTML anpassen?
- Ja, Sie können CSS-Stile anpassen, indem Sie die im HTML verwendeten Stylesheets ändern oder indem Sie`addCssClassNamePrefix` Methode zum Hinzufügen eines Präfixes zu CSS-Klassennamen.
+ Ja, Sie können CSS-Stile anpassen, indem Sie die im HTML verwendeten Stylesheets ändern oder die`addCssClassNamePrefix` Methode zum Hinzufügen eines Präfixes zu CSS-Klassennamen.
 
 ### F3: Gibt es eine Möglichkeit, die HTML-Ausgabe für die Anzeige im Web zu optimieren?
 Ja, Sie können die HTML-Ausgabe für die Anzeige im Web optimieren, indem Sie Optionen wie das Exportieren von Schriftarten als Base64 und das Konvertieren von Metadateien in SVG konfigurieren.

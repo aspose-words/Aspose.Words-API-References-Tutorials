@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Steg 2: Ställ in fotnots- och slutnotposition
 
- Gå sedan till`FootnoteOptions` och`EndnoteOptions`egenskaper för dokumentet för att ställa in positionen för fotnoter och slutnoter. I det här exemplet ställer vi in fotnoternas position under texten och positionen för slutnoter i slutet av avsnittet:
+ Gå sedan till`FootnoteOptions`och`EndnoteOptions`egenskaper för dokumentet för att ställa in positionen för fotnoter och slutnoter. I det här exemplet ställer vi in fotnoternas position under texten och positionen för slutnoter i slutet av avsnittet:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;
@@ -32,7 +32,7 @@ doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
 
 ## Steg 3: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");

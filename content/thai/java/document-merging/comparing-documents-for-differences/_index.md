@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- แทนที่`"original_document.docx"` และ`"modified_document.docx"` พร้อมเส้นทางสู่เอกสารของคุณเอง
+ แทนที่`"original_document.docx"`และ`"modified_document.docx"` พร้อมเส้นทางสู่เอกสารของคุณเอง
 
 ## ขั้นตอนที่ 2: เปรียบเทียบเอกสาร
 

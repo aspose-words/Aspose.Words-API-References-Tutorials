@@ -70,7 +70,7 @@ builder.Writeln("Text with InlineCode style with 3 backtick");
 
 #### P: ¿Es posible especificar la fuente o el color del código en línea en Aspose.Words?
 
- R: Sí, puede especificar la fuente o el color del código en línea en Aspose.Words. Puedes usar el`Font.Name` y`Font.Color` propiedades de la`Run` objeto para establecer la fuente y el color del código en línea. Por ejemplo, puedes usar`run.Font.Name = "Courier New"` para especificar la fuente para el código en línea y`run.Font.Color = Color.Blue`para especificar el color.
+ R: Sí, puede especificar la fuente o el color del código en línea en Aspose.Words. Puedes usar el`Font.Name`y`Font.Color` propiedades de la`Run` objeto para establecer la fuente y el color del código en línea. Por ejemplo, puedes usar`run.Font.Name = "Courier New"` para especificar la fuente para el código en línea y`run.Font.Color = Color.Blue`para especificar el color.
 
 #### P: ¿Puedo usar el código en línea en un párrafo que contenga otros elementos de texto?
 

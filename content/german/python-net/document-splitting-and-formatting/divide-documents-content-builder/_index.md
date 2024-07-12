@@ -1,7 +1,7 @@
 ---
 title: Dokumente mit Content Builder für Präzision aufteilen
 linktitle: Dokumente mit Content Builder für Präzision aufteilen
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Teilen und bearbeiten Sie Ihre Dokumente präzise mit Aspose.Words für Python. Erfahren Sie, wie Sie Content Builder zur effizienten Inhaltsextraktion und -organisation nutzen können.
 type: docs
 weight: 11

@@ -2,115 +2,116 @@
 title: البحث عن نص بسيط واستبداله في Word
 linktitle: البحث عن نص بسيط واستبداله في Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إجراء بحث بسيط عن نص واستبداله في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية البحث عن النص واستبداله بسهولة في مستندات Word باستخدام Aspose.Words for .NET. يتضمن دليل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/find-and-replace-text/simple-find-replace/
 ---
-في هذه المقالة، سنستكشف الكود المصدري لـ C# أعلاه لفهم كيفية استخدام Simple Text Find And Replace في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إجراء استبدال بسيط للنص من خلال البحث عن سلسلة محددة من الأحرف واستبدالها بسلسلة أخرى من الأحرف في مستند Word.
+## مقدمة
+
+مرحبًا أيها المبرمج الطموح! هل سبق لك أن احتجت إلى تحديث مثيلات متعددة لكلمة أو عبارة في مستند Word دون القيام بالمهمة الشاقة المتمثلة في البحث عن كل منها واستبدالها يدويًا؟ تخيل أن لديك قالبًا يقول "_CustomerName_" وتحتاج إلى أن تقول "جيمس بوند" بدلاً من ذلك. الأمر سهل، أليس كذلك؟ حسنًا، يمكن أن يكون ذلك باستخدام Aspose.Words لـ .NET! في هذا البرنامج التعليمي، سنرشدك خلال عملية البحث عن النص واستبداله في Word المستند باستخدام Aspose.Words لـ .NET، استعد لتبسيط مهام معالجة النص الخاصة بك!
 
 ## المتطلبات الأساسية
 
-- المعرفة الأساسية بلغة C#.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+قبل أن نتعمق في سحر استبدال النص، دعنا نتأكد من أن لديك كل ما تحتاجه:
 
-## الخطوة 1: إنشاء مستند جديد
+1.  Aspose.Words لمكتبة .NET: يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/) . إذا لم تكن قد قمت بذلك بالفعل، فاحصل على نسخة تجريبية مجانية[هنا](https://releases.aspose.com/).
 
- قبل أن نبدأ في استخدام البحث والاستبدال البسيط، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لـ`Document` هدف:
+2. .NET Framework: تأكد من تثبيت .NET Framework على جهازك. يمكنك تنزيله من موقع Microsoft على الويب إذا لزم الأمر.
+
+3. المعرفة الأساسية بـ C#: القليل من الإلمام بـ C# سيقطع شوطا طويلا في فهم هذا البرنامج التعليمي.
+
+4. محرر نصوص: Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة مع C#.
+
+## استيراد مساحات الأسماء
+
+قبل أن ندخل في التفاصيل الجوهرية، تحتاج إلى استيراد مساحات الأسماء الضرورية إلى مشروعك. إليك كيفية القيام بذلك:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+
+الآن، دعونا نحلل عملية البحث عن النص واستبداله في مستند Word خطوة بخطوة. ستكون كل خطوة بسيطة وسهلة المتابعة.
+
+## الخطوة 1: إعداد دليل المستندات الخاص بك
+
+أول الأشياء أولاً، لنقم بإعداد المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي سيتم فيه حفظ مستند Word الخاص بك بعد استبدال النص.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## الخطوة 2: إنشاء مستند جديد
 
- بمجرد حصولنا على مستند، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا، نستخدم`Writeln` طريقة لإدراج عبارة "مرحبا_CustomerName_":"
+بعد ذلك، ستقوم بإنشاء مستند Word جديد باستخدام Aspose.Words. سيتم التعامل مع هذا المستند لعرض وظيفة البحث والاستبدال.
 
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+ هنا نقوم بإنشاء`Document` كائن و`DocumentBuilder` هدف. ال`DocumentBuilder` يساعدنا على كتابة النص في وثيقتنا.
+
+## الخطوة 3: كتابة النص الأولي
+
+ الآن، دعنا نكتب بعض النص في المستند الذي سنقوم باستبداله لاحقًا. نحن نستخدم ال`DocumentBuilder` لإدراج النص "مرحبا_CustomerName_".
+
+```csharp
 builder.Writeln("Hello _CustomerName_,");
 ```
 
-## الخطوة 3: استبدال النص البسيط
+للتأكد من أن كل شيء يعمل بشكل صحيح حتى الآن، نقوم بطباعة نص المستند الأصلي إلى وحدة التحكم.
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال نص بسيط. في مثالنا، نقوم باستبدال كافة تكرارات السلسلة "_ClientName_ " مع "جيمس بوند" باستخدام`FindReplaceOptions` الخيار مع`FindReplaceDirection.Forward` اتجاه البحث:
+```csharp
+Console.WriteLine("Original document text: " + doc.Range.Text);
+```
+
+## الخطوة 4: استبدال النص
+
+هذا هو المكان الذي يحدث السحر! سوف نستبدل "_CustomerName_ " مع "جيمس بوند" باستخدام`Replace` طريقة. 
 
 ```csharp
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-## الخطوة 4: حفظ المستند المحرر
+ هنا،`FindReplaceOptions`يسمح لنا بتحديد اتجاه عملية البحث والاستبدال. كانوا يستخدمون`FindReplaceDirection.Forward` لاستبدال النص من البداية إلى نهاية المستند.
 
-وأخيرًا، نقوم بحفظ المستند المعدل في دليل محدد باستخدام الملف`Save` طريقة:
+## الخطوة 5: التحقق من الاستبدال
+
+للتحقق من نجاح عملية الاستبدال، قم بطباعة نص المستند المعدل إلى وحدة التحكم.
+
+```csharp
+Console.WriteLine("Document text after replace: " + doc.Range.Text);
+```
+
+يجب أن ترى ذلك "_CustomerName_"تم استبداله بـ "جيمس بوند".
+
+## الخطوة 6: حفظ المستند
+
+وأخيرًا، احفظ المستند المعدل في الدليل المحدد.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
-```
-
-### مثال على التعليمات البرمجية المصدر لـ Simple Find Replace باستخدام Aspose.Words لـ .NET
-
-فيما يلي المثال الكامل للتعليمة البرمجية المصدر لتوضيح استخدام البحث البسيط واستبداله بـ Aspose.Words for .NET:
-
-```csharp
-
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.Writeln("Hello _CustomerName_,");
-	Console.WriteLine("Original document text: " + doc.Range.Text);
-
-	doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
-
-	Console.WriteLine("Document text after replace: " + doc.Range.Text);
-
-	// احفظ المستند المعدل
-	doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
-
 ```
 
 ## خاتمة
 
-في هذه المقالة، قمنا باستكشاف التعليمات البرمجية المصدر لـ C# لفهم كيفية استخدام وظيفة Simple Find Replace الخاصة بـ Aspose.Words for .NET. لقد اتبعنا دليلاً خطوة بخطوة لإنشاء مستند وإدراج نص وإجراء استبدال بسيط للنص وحفظ المستند الذي تم تحريره.
+وهناك لديك! لقد قمت للتو بأتمتة عملية البحث عن النص واستبداله في مستند Word باستخدام Aspose.Words for .NET. لا مزيد من التحديثات اليدوية ولا مزيد من الأخطاء. سواء كنت تقوم بإعداد التقارير، أو إنشاء رسائل مخصصة، أو ببساطة إدارة محتوى المستند، فإن هذه التقنية البسيطة والقوية يمكن أن توفر لك الكثير من الوقت.
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: ما هي وظيفة البحث عن النص البسيط واستبداله في Aspose.Words لـ .NET؟
+### هل يمكنني استبدال عدة نصوص مختلفة في وقت واحد؟
+ نعم يمكنك ذلك. فقط اتصل ب`Replace` طريقة لكل نص تريد استبداله.
 
-ج: تتيح لك ميزة البحث عن النص البسيط واستبداله في Aspose.Words لـ .NET إجراء استبدال بسيط للنص في مستند Word. يسمح لك بالبحث عن سلسلة أحرف محددة واستبدالها بسلسلة أحرف أخرى. قد يكون هذا مفيدًا عندما تريد إجراء تغييرات عامة على مستند، مثل استبدال الأسماء أو التواريخ أو المعلومات الأخرى.
+### هل Aspose.Words لـ .NET مجاني؟
+يقدم Aspose.Words for .NET نسخة تجريبية مجانية، ولكن للحصول على الوظائف الكاملة، ستحتاج إلى شراء ترخيص. تحقق من بهم[التسعير](https://purchase.aspose.com/buy) لمزيد من التفاصيل.
 
-#### س: كيفية إنشاء مستند جديد في Aspose.Words لـ .NET؟
+### هل يمكنني استبدال النص بالتنسيق؟
+ قطعاً! يمكنك استبدال النص وتطبيق التنسيق باستخدام`FindReplaceOptions` فصل.
 
- ج: قبل استخدام وظيفة Simple Text Find And Replace، يجب عليك إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لـ`Document` هدف. فيما يلي نموذج التعليمات البرمجية لإنشاء مستند جديد:
+### ماذا لو كان النص الذي أريد استبداله موجودًا في مستندات متعددة؟
+يمكنك التنقل بين مستندات متعددة وتطبيق وظيفة البحث والاستبدال على كل منها برمجيًا.
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-```
-
-#### س: كيفية إدراج نص في مستند باستخدام Aspose.Words لـ .NET؟
-
- ج: بمجرد حصولك على مستند، يمكنك إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا، نستخدم`Writeln` طريقة لإدراج عبارة "مرحبا_CustomerName_:::
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Hello _CustomerName_:");
-```
-
-#### س: كيف يمكنني إجراء استبدال بسيط للنص في مستند باستخدام Aspose.Words for .NET؟
-
- ج: لإجراء استبدال بسيط للنص، يمكنك استخدام`Range.Replace` طريقة. في مثالنا، نقوم باستبدال كافة تكرارات السلسلة "_ClientName_ " مع "جيمس بوند" باستخدام`FindReplaceOptions` الخيار مع`FindReplaceDirection.Forward` اتجاه البحث:
-
-```csharp
-doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
-```
-
-#### س: كيف يتم حفظ المستند الذي تم تحريره في Aspose.Words لـ .NET؟
-
- ج: بمجرد الانتهاء من استبدال النص، يمكنك حفظ المستند المعدل في دليل محدد باستخدام الملف`Save` طريقة:
-
-```csharp
-doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
-```
+### هل يدعم Aspose.Words ميزات معالجة النص الأخرى؟
+نعم، Aspose.Words هي مكتبة قوية تدعم العديد من ميزات معالجة النصوص ومعالجة المستندات.

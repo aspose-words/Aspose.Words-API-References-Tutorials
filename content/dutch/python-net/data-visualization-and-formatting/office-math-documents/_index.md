@@ -63,7 +63,7 @@ format_eq_response = words_api.update_run(format_eq_request)
 
 ## Omgaan met breuken en subscripten
 
-Breuken en subscripts komen veel voor in wiskundige uitdrukkingen. Met Aspose.Words kunt u ze eenvoudig opnemen:
+Breuken en subscripts komen vaak voor in wiskundige uitdrukkingen. Met Aspose.Words kunt u ze eenvoudig opnemen:
 
 ```python
 # Insert a fraction

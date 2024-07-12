@@ -47,7 +47,7 @@ Install-Package Aspose.Words
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 3：加载 DOCX 文档
+## 步骤3：加载DOCX文档
 
 现在，让我们加载 DOCX 文档。我们使用`Stream`以只读模式打开文档。
 

@@ -69,7 +69,7 @@ S: Ja, vissa Markdown i .NET-bibliotek erbjuder anpassningsalternativ vid konver
 
 #### F: Vilka är de rekommenderade .NET-biblioteken för att manipulera Markdown-dokument?
 
- S: Rekommenderade .NET-bibliotek för att manipulera Markdown-dokument är`Markdig` och`CommonMark.NET`. De erbjuder stor flexibilitet och fullt stöd för Markdown-funktioner.
+ S: Rekommenderade .NET-bibliotek för att manipulera Markdown-dokument är`Markdig`och`CommonMark.NET`. De erbjuder stor flexibilitet och fullt stöd för Markdown-funktioner.
 
 #### F: Hur hanterar jag fel när jag läser ett Markdown-dokument?
 

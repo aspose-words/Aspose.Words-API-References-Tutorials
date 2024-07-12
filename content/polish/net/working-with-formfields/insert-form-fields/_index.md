@@ -14,7 +14,7 @@ W tym samouczku krok po kroku poprowadzimy Cię, jak wstawić pola formularza, w
 
 ## Krok 1: Inicjowanie obiektów Document i DocumentBuilder
 
- Najpierw zainicjuj`Document` I`DocumentBuilder` obiekty:
+ Najpierw zainicjuj`Document`I`DocumentBuilder` obiekty:
 
 ```csharp
 Document doc = new Document();

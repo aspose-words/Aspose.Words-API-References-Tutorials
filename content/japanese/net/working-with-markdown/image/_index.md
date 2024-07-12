@@ -29,7 +29,7 @@ shape. WrapType = WrapType. Inline;
 
 ## ステップ3: 画像のカスタマイズ
 
-フルパスを指定して画像をカスタマイズします。例えば、`"/attachment/1456/pic001.png"`画像にタイトルを追加します。
+画像のフルパスを指定してカスタマイズします。例えば`"/attachment/1456/pic001.png"`画像にタイトルを追加します。
 
 ```csharp
 shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
@@ -61,7 +61,7 @@ builder.InsertNode(shape);
 
 #### Q: Aspose.Words で URL から画像を挿入できますか?
 
- A: はい、Aspose.WordsでURLから画像を挿入できます。同じものを使用できます。`InsertImage`メソッドを使用し、ローカル ファイル パスの代わりにイメージ URL を指定します。
+ A: はい、Aspose.WordsでURLから画像を挿入できます。同じ方法を使用できます。`InsertImage`メソッドを使用し、ローカル ファイル パスの代わりにイメージ URL を指定します。
 
 #### Q: Aspose.Words で画像のサイズを変更するにはどうすればよいですか?
 

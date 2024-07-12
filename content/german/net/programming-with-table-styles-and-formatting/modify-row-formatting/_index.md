@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Schritt 3: Zugriff auf die zu ändernde Zeile
- Um die Formatierung einer Tabellenzeile zu ändern, müssen wir zu der entsprechenden Zeile in der Tabelle navigieren. Wir verwenden die`GetChild()` Und`FirstRow` Methoden, um den Verweis auf die erste Zeile der Tabelle zu erhalten.
+ Um die Formatierung einer Tabellenzeile zu ändern, müssen wir zu der entsprechenden Zeile in der Tabelle navigieren. Wir verwenden die`GetChild()`Und`FirstRow` Methoden, um den Verweis auf die erste Zeile der Tabelle zu erhalten.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

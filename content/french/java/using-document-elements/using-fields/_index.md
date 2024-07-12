@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Remplacer`"Your Document Directory"` et`"Your Output Directory"` avec les chemins appropriés.
+ Remplacer`"Your Document Directory"`et`"Your Output Directory"` avec les chemins appropriés.
 
 ## 4. Personnalisation du publipostage
 

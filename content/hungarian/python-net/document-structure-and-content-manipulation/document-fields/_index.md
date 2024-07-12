@@ -49,7 +49,7 @@ builder.insert_field('= 5 + 3')
 
 ## Adatok kinyerése a mezőkből
 
- A terepi adatokat a`Field` osztály:
+ A táblaadatokat a`Field` osztály:
 
 ```python
 field = doc.range.fields[0]
@@ -129,7 +129,7 @@ A legtöbb mezőtípust különböző Word-formátumok támogatják, de egyesek 
 
 A mezőket zárolással megvédheti a véletlen szerkesztésektől. Kattintson a jobb gombbal a mezőre, válassza a "Mező szerkesztése" lehetőséget, és engedélyezze a "Zárolt" opciót.
 
-### Lehetséges a mezőket egymásba ágyazni?
+### Lehetséges-e a mezőket egymásba ágyazni?
 
 Igen, a mezők egymásba ágyazhatók összetett dinamikus tartalom létrehozásához.
 

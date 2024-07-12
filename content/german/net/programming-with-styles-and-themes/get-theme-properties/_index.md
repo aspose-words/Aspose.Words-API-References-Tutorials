@@ -62,7 +62,7 @@ Durch die Möglichkeit, Designeigenschaften abzurufen, können Sie die Stile und
 
 Aspose.Words für .NET bietet eine leistungsstarke API zur Bearbeitung Ihrer Dokumentthemen, sodass Sie das Aussehen Ihrer Dokumente einfach anpassen und personalisieren können.
 
-Entdecken Sie weitere Funktionen von Aspose.Words für .NET, um Ihren Arbeitsablauf zu verbessern und Ihre spezifischen Anforderungen an Stil- und Themenverwaltung zu erfüllen.
+Entdecken Sie weitere Funktionen von Aspose.Words für .NET, um Ihren Workflow zu verbessern und Ihre spezifischen Anforderungen an Stil- und Themenverwaltung zu erfüllen.
 
 ### FAQs
 
@@ -72,7 +72,7 @@ Entdecken Sie weitere Funktionen von Aspose.Words für .NET, um Ihren Arbeitsabl
 
 #### Wie kann ich die primären und sekundären Schriftarten des Designs eines Dokuments abrufen?
 
- Sie können auf die primären und sekundären Schriftarten des Designs eines Dokuments zugreifen, indem Sie das`MajorFonts` Und`MinorFonts` Eigenschaften der`Theme` Objekt. Diese Eigenschaften ermöglichen den Zugriff auf die im Design des Dokuments für verschiedene Sprachen oder Regionen verwendeten Schriftnamen.
+ Sie können auf die primären und sekundären Schriftarten des Designs eines Dokuments zugreifen, indem Sie das`MajorFonts`Und`MinorFonts` Eigenschaften der`Theme` Objekt. Diese Eigenschaften ermöglichen den Zugriff auf die im Design des Dokuments für verschiedene Sprachen oder Regionen verwendeten Schriftnamen.
 
 #### Kann ich die im Design eines Dokuments verwendeten Akzentfarben abrufen?
 

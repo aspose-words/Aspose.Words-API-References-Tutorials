@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## 7단계: 셀에 콘텐츠 추가
- 이제 다음을 사용하여 셀에 내용을 추가할 수 있습니다.`Writeln()` 그리고`InsertCell()` 문서 작성기의 메소드. 이 예에서는 "Item" 및 "Quantity(
+ 이제 다음을 사용하여 셀에 내용을 추가할 수 있습니다.`Writeln()`그리고`InsertCell()` 문서 작성기의 메소드. 이 예에서는 "Item" 및 "Quantity(
 
 kg)" 및 해당 데이터.
 

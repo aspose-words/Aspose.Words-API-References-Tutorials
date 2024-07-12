@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- In questo esempio, stiamo caricando la prima pagina del documento PDF. È possibile modificare i valori di`PageIndex` E`PageCount` all'intervallo di pagine desiderato.
+ In questo esempio, stiamo caricando la prima pagina del documento PDF. È possibile modificare i valori di`PageIndex`E`PageCount` all'intervallo di pagine desiderato.
 
 ## Passaggio 2: salvataggio del documento
 

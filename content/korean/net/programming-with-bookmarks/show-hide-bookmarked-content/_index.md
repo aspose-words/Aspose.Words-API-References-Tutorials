@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- 여기서는 북마크된 콘텐츠 앞뒤에 텍스트를 추가합니다. 그만큼`StartBookmark` 그리고`EndBookmark` 메소드는 북마크의 경계를 정의합니다.
+ 여기서는 북마크된 콘텐츠 앞뒤에 텍스트를 추가합니다. 그만큼`StartBookmark`그리고`EndBookmark` 메소드는 북마크의 경계를 정의합니다.
 
 ## 3단계: 조건부 필드 삽입
 

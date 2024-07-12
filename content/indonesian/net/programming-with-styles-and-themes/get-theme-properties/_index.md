@@ -72,7 +72,7 @@ Jangan ragu untuk menjelajahi lebih banyak fitur Aspose.Words untuk .NET untuk m
 
 #### Bagaimana cara mengambil font primer dan sekunder dari tema dokumen?
 
- Anda dapat mengakses font primer dan sekunder dari tema dokumen dengan menggunakan`MajorFonts` Dan`MinorFonts` properti dari`Theme` objek, masing-masing. Properti ini menyediakan akses ke nama font yang digunakan dalam tema dokumen untuk bahasa atau wilayah berbeda.
+ Anda dapat mengakses font primer dan sekunder dari tema dokumen dengan menggunakan`MajorFonts`Dan`MinorFonts` properti dari`Theme` objek, masing-masing. Properti ini menyediakan akses ke nama font yang digunakan dalam tema dokumen untuk bahasa atau wilayah berbeda.
 
 #### Bisakah saya menggunakan warna aksen dalam tema dokumen?
 

@@ -1,7 +1,7 @@
 ---
 title: Einbetten von OLE-Objekten und ActiveX-Steuerelementen in Word-Dokumente
 linktitle: Einbetten von OLE-Objekten und ActiveX-Steuerelementen in Word-Dokumente
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python OLE-Objekte und ActiveX-Steuerelemente in Word-Dokumente einbetten. Erstellen Sie nahtlos interaktive und dynamische Dokumente.
 type: docs
 weight: 21
@@ -21,7 +21,7 @@ Bevor wir uns mit der Einbettung von OLE-Objekten und ActiveX-Steuerelementen be
 
 ## Einbetten von OLE-Objekten
 
-Mithilfe von OLE-Objekten können Sie externe Dateien wie Tabellen oder Präsentationen nahtlos in Ihre Word-Dokumente integrieren. Gehen Sie folgendermaßen vor, um ein OLE-Objekt einzubetten:
+Mithilfe von OLE-Objekten können Sie externe Dateien wie Tabellenkalkulationen oder Präsentationen nahtlos in Ihre Word-Dokumente integrieren. Gehen Sie folgendermaßen vor, um ein OLE-Objekt einzubetten:
 
 ### Schritt 1: Erforderliche Bibliotheken hinzufügen
 
@@ -99,4 +99,4 @@ Wenn das ActiveX-Steuerelement nicht funktioniert, liegt dies möglicherweise an
 
 ## Abschluss
 
-Die Einbindung von OLE-Objekten und ActiveX-Steuerelementen mit Aspose.Words für Python eröffnet eine Welt voller Möglichkeiten für die Erstellung dynamischer und interaktiver Word-Dokumente. Ganz gleich, ob Sie Tabellen, Multimedia oder interaktive Formulare einbetten möchten, mit dieser Funktion können Sie Ihre Ideen effektiv kommunizieren.
+Die Einbindung von OLE-Objekten und ActiveX-Steuerelementen mit Aspose.Words für Python eröffnet eine Welt voller Möglichkeiten zur Erstellung dynamischer und interaktiver Word-Dokumente. Ganz gleich, ob Sie Tabellen, Multimedia oder interaktive Formulare einbetten möchten, mit dieser Funktion können Sie Ihre Ideen effektiv kommunizieren.

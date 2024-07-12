@@ -64,7 +64,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir belgeyi kaydederken sıkışt�
 
 `OoxmlSaveOptions` sınıfı ayarlayarak sıkıştırma düzeyini kontrol etme esnekliği sağlar.`CompressionLevel` uygun bir değere sahip mülk, örneğin`SuperFast`. Bu, özel ihtiyaçlarınıza göre dosya boyutu ve yedekleme hızı arasında doğru dengeyi kurmanıza olanak tanır.
 
-Özellikle büyük belgelerde, oluşturulan dosyaların boyutunu azaltmanız gerektiğinde sıkıştırmayı kullanmak faydalı olabilir. Bu, belgelerin saklanmasını, paylaşılmasını ve iletilmesini kolaylaştırabilir.
+Özellikle büyük belgelerde, oluşturulan dosyaların boyutunu azaltmanız gerektiğinde sıkıştırmayı kullanmak yararlı olabilir. Bu, belgelerin saklanmasını, paylaşılmasını ve iletilmesini kolaylaştırabilir.
 
 Aspose.Words for .NET, belge manipülasyonu için bir dizi güçlü seçenek ve özellik sunar. Uygun yedekleme seçeneklerini kullanarak belge oluşturma sürecini özelleştirebilir ve uygulamanızın performansını optimize edebilirsiniz.
 

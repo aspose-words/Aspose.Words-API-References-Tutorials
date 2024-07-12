@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Fügt die erste Zelle der ersten Zeile ein
+//Fügt die erste Zelle der ersten Zeile ein
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Hier verwenden wir den Dokumentgenerator, um eine Tabelle mit zwei Kopfzeilen und mehreren Datenzeilen zu erstellen. Die`RowFormat.HeadingFormat`Parameter werden verwendet, um Kopfzeilen zu markieren, die auf nachfolgenden Seiten wiederholt werden sollen.
+ Hier verwenden wir den Dokumentgenerator, um eine Tabelle mit zwei Kopfzeilen und mehreren Datenzeilen zu erstellen. Die`RowFormat.HeadingFormat` Parameter werden verwendet, um Kopfzeilen zu markieren, die auf nachfolgenden Seiten wiederholt werden sollen.
 
 ## Schritt 4: Speichern des geänderten Dokuments
 Endlich USA

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2단계: 우선순위로 글꼴 폴더 설정
- 그런 다음 다음을 사용하여 글꼴 폴더에 우선순위를 설정할 수 있습니다.`FontSettings` 수업과`SetFontsSources()`방법. 인스턴스를 사용하여 여러 글꼴 소스를 지정할 수 있습니다.`SystemFontSource` 그리고`FolderFontSource`. 이 예에서는 기본 시스템 글꼴 소스와 우선 순위가 1인 사용자 정의 글꼴 폴더라는 두 가지 글꼴 소스를 정의했습니다.
+ 그런 다음 다음을 사용하여 글꼴 폴더에 우선순위를 설정할 수 있습니다.`FontSettings` 수업과`SetFontsSources()`방법. 인스턴스를 사용하여 여러 글꼴 소스를 지정할 수 있습니다.`SystemFontSource`그리고`FolderFontSource`. 이 예에서는 기본 시스템 글꼴 소스와 우선 순위가 1인 사용자 정의 글꼴 폴더라는 두 가지 글꼴 소스를 정의했습니다.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

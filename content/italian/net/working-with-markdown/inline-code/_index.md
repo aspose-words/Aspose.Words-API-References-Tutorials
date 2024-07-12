@@ -70,7 +70,7 @@ Congratulazioni! Ora hai imparato come utilizzare la funzionalità del codice in
 
 #### D: È possibile specificare il carattere o il colore del codice in linea in Aspose.Words?
 
- R: Sì, puoi specificare il carattere o il colore del codice in linea in Aspose.Words. Puoi usare il`Font.Name` E`Font.Color` proprietà del`Run` oggetto per impostare il carattere e il colore del codice in linea. Ad esempio, puoi usare`run.Font.Name = "Courier New"` per specificare il carattere per il codice in linea e`run.Font.Color = Color.Blue`per specificare il colore.
+ R: Sì, puoi specificare il carattere o il colore del codice in linea in Aspose.Words. Puoi usare il`Font.Name`E`Font.Color` proprietà del`Run` oggetto per impostare il carattere e il colore del codice in linea. Ad esempio, puoi usare`run.Font.Name = "Courier New"` per specificare il carattere per il codice in linea e`run.Font.Color = Color.Blue`per specificare il colore.
 
 #### D: Posso utilizzare il codice in linea in un paragrafo contenente altri elementi di testo?
 

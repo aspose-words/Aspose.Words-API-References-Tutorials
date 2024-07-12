@@ -68,7 +68,7 @@ Document doc = new Document();
 
 ## 步骤 4：初始化 DocumentBuilder
 
-要向我们的文档添加内容，我们将使用`DocumentBuilder`类。此类提供了一种将各种元素插入 Word 文档的便捷方法。
+要向我们的文档添加内容，我们将使用`DocumentBuilder`类。该类提供了一种将各种元素插入 Word 文档的便捷方法。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

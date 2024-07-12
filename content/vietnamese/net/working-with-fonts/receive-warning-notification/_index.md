@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Bước 3: Cập nhật bố cục trang
 
- Gọi`UpdatePageLayout` phương pháp. Thao tác này sẽ hiển thị tài liệu trong bộ nhớ và ghi lại mọi cảnh báo xảy ra trong quá trình hiển thị.
+ Gọi`UpdatePageLayout`phương pháp. Thao tác này sẽ hiển thị tài liệu trong bộ nhớ và ghi lại mọi cảnh báo xảy ra trong quá trình hiển thị.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ Không, bạn chỉ có thể chỉ định một phông chữ mặc định đ�
 
 ###  Câu hỏi 3: Tôi có thể xử lý các loại cảnh báo khác bằng`IWarningCallback`?
 
- Vâng`IWarningCallback` Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
+ Vâng`IWarningCallback`Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
 
 ### Câu hỏi 4: Tôi có thể tìm hỗ trợ cho Aspose.Words ở đâu?
 

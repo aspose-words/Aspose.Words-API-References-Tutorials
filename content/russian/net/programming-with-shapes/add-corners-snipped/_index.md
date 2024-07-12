@@ -17,14 +17,14 @@ url: /ru/net/programming-with-shapes/add-corners-snipped/
 - Базовые знания C# и обработки документов Word.
 
 ## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором вы хотите сохранить документ.
+ Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Шаг 2. Создайте новый документ и DocumentBuilder
- Создайте новый экземпляр`Document` класс и`DocumentBuilder`объект для работы с документом.
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 ```
 
 ## Шаг 4. Сохраните документ
- Сохраните документ в указанную директорию, используя команду`Save` метод. Укажите желаемое имя файла с соответствующим расширением. В этом примере мы сохраняем документ как «WorkingWithShapes.AddCornersSnipped.docx».
+ Сохраните документ в указанную директорию, используя команду`Save`метод. Укажите желаемое имя файла с соответствующим расширением. В этом примере мы сохраняем документ как «WorkingWithShapes.AddCornersSnipped.docx».
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)

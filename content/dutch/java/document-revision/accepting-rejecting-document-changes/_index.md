@@ -10,11 +10,11 @@ url: /nl/java/document-revision/accepting-rejecting-document-changes/
 
 ## Inleiding tot Aspose.Words voor Java
 
-Aspose.Words voor Java is een robuuste bibliotheek waarmee Java-ontwikkelaars gemakkelijk Word-documenten kunnen maken, manipuleren en converteren. Een van de belangrijkste kenmerken is de mogelijkheid om met documentwijzigingen te werken, waardoor het een hulpmiddel van onschatbare waarde is voor het gezamenlijk bewerken van documenten.
+Aspose.Words voor Java is een robuuste bibliotheek waarmee Java-ontwikkelaars eenvoudig Word-documenten kunnen maken, manipuleren en converteren. Een van de belangrijkste kenmerken is de mogelijkheid om met documentwijzigingen te werken, waardoor het een hulpmiddel van onschatbare waarde is voor het gezamenlijk bewerken van documenten.
 
 ## Documentwijzigingen begrijpen
 
-Voordat we ingaan op de implementatie, moeten we eerst begrijpen wat documentwijzigingen zijn. Documentwijzigingen omvatten bewerkingen, invoegingen, verwijderingen en opmaakwijzigingen die binnen een document worden aangebracht. Deze wijzigingen worden doorgaans bijgehouden met behulp van een revisiefunctie.
+Voordat we in de implementatie duiken, moeten we eerst begrijpen wat documentwijzigingen zijn. Documentwijzigingen omvatten bewerkingen, invoegingen, verwijderingen en opmaakwijzigingen die binnen een document worden aangebracht. Deze wijzigingen worden doorgaans bijgehouden met behulp van een revisiefunctie.
 
 ## Een document laden
 

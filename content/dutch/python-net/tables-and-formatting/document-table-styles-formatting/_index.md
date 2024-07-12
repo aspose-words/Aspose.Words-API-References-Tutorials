@@ -39,7 +39,7 @@ Volg deze stappen om tabellen te maken en in documenten in te voegen met Aspose.
     table = builder.start_table()
     ```
 
-2.  Gegevens invoegen: Voeg gegevens toe aan de tabel met behulp van de builder`insert_cell` En`write` methoden.
+2.  Gegevens invoegen: Voeg gegevens toe aan de tabel met behulp van de builder`insert_cell`En`write` methoden.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Volg deze stappen om tabellen te maken en in documenten in te voegen met Aspose.
 
 ## Basistabelopmaak toepassen
 
- Basistabelopmaak kan worden bereikt met behulp van methoden die worden aangeboden door de`Table` En`Cell` klassen. Zo kunt u het uiterlijk van uw tafel verbeteren:
+ Basistabelopmaak kan worden bereikt met behulp van methoden die worden aangeboden door de`Table`En`Cell` klassen. Zo kunt u het uiterlijk van uw tafel verbeteren:
 
 1. Kolombreedten instellen: Pas de breedte van kolommen aan om een goede uitlijning en visuele aantrekkingskracht te garanderen.
 
@@ -119,7 +119,7 @@ Het maken van complexe tabelindelingen vereist vaak het samenvoegen en splitsen 
     table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
     ```
 
-2. Gespleten cellen: Splits cellen terug in hun afzonderlijke componenten.
+2. Cellen splitsen: Splits cellen terug in hun afzonderlijke componenten.
 
     ```python
     cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE

@@ -72,7 +72,7 @@ Nyugodtan fedezze fel az Aspose.Words for .NET további funkcióit, hogy javíts
 
 #### Hogyan kérhetem le egy dokumentum témájának elsődleges és másodlagos betűtípusát?
 
- A dokumentum témájának elsődleges és másodlagos betűtípusait a következővel érheti el`MajorFonts` és`MinorFonts` tulajdonságai a`Theme` objektum, ill. Ezek a tulajdonságok hozzáférést biztosítanak a dokumentum témájában használt betűtípusnevekhez a különböző nyelvekhez vagy régiókhoz.
+ A dokumentum témájának elsődleges és másodlagos betűtípusait a következővel érheti el`MajorFonts`és`MinorFonts` tulajdonságai a`Theme` objektum, ill. Ezek a tulajdonságok hozzáférést biztosítanak a dokumentum témájában használt betűtípusnevekhez a különböző nyelvekhez vagy régiókhoz.
 
 #### Megkaphatom a dokumentum témájában használt hangsúlyos színeket?
 

@@ -70,7 +70,7 @@ Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji kodu wbudowanego w 
 
 #### P: Czy można określić czcionkę lub kolor kodu wbudowanego w Aspose.Words?
 
- O: Tak, możesz określić czcionkę lub kolor kodu wbudowanego w Aspose.Words. Możesz skorzystać z`Font.Name` I`Font.Color` właściwości`Run` obiekt, aby ustawić czcionkę i kolor kodu wbudowanego. Możesz na przykład użyć`run.Font.Name = "Courier New"` aby określić czcionkę dla kodu wbudowanego i`run.Font.Color = Color.Blue`aby określić kolor.
+ O: Tak, możesz określić czcionkę lub kolor kodu wbudowanego w Aspose.Words. Możesz skorzystać z`Font.Name`I`Font.Color` właściwości`Run` obiekt, aby ustawić czcionkę i kolor kodu wbudowanego. Możesz na przykład użyć`run.Font.Name = "Courier New"` aby określić czcionkę dla kodu wbudowanego i`run.Font.Color = Color.Blue`aby określić kolor.
 
 #### P: Czy mogę użyć kodu wbudowanego w akapicie zawierającym inne elementy tekstowe?
 

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-document-options-and-settings/optimize-for-ms-word/
 ---
 
-tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby zoptymalizować dokument dla MS Word za pomocą Aspose.Words dla .NET. Ta funkcja pozwala zoptymalizować dokument dla konkretnej wersji MS Word.
+W tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby zoptymalizować dokument dla MS Word za pomocą Aspose.Words dla .NET. Ta funkcja pozwala zoptymalizować dokument dla konkretnej wersji MS Word.
 
 ## Krok 1: Konfiguracja projektu
 

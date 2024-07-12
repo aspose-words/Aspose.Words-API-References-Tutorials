@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## ขั้นตอนที่ 3: ไปที่เซลล์แรกของตารางแรก
- ในการเริ่มต้น เราต้องนำทางไปยังเซลล์แรกของตารางแรกในเอกสาร เราใช้`GetChild()` และ`FirstRow.FirstCell` วิธีการรับการอ้างอิงไปยังเซลล์แรก
+ ในการเริ่มต้น เราต้องนำทางไปยังเซลล์แรกของตารางแรกในเอกสาร เราใช้`GetChild()`และ`FirstRow.FirstCell` วิธีการรับการอ้างอิงไปยังเซลล์แรก
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

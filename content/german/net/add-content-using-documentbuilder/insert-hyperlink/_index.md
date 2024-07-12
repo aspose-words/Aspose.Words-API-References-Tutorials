@@ -41,7 +41,7 @@ Starten Sie zunächst Visual Studio und erstellen Sie ein neues C#-Projekt. Der 
 
 Installieren Sie Aspose.Words für .NET
 
-Als Nächstes müssen Sie die Bibliothek Aspose.Words für .NET installieren. Sie können dies über den NuGet-Paket-Manager tun. Klicken Sie einfach mit der rechten Maustaste auf Ihr Projekt im Solution Explorer, wählen Sie „NuGet-Pakete verwalten“, suchen Sie nach „Aspose.Words“ und installieren Sie es.
+Als Nächstes müssen Sie die Bibliothek Aspose.Words für .NET installieren. Sie können dies über den NuGet-Paketmanager tun. Klicken Sie im Solution Explorer einfach mit der rechten Maustaste auf Ihr Projekt, wählen Sie „NuGet-Pakete verwalten“, suchen Sie nach „Aspose.Words“ und installieren Sie es.
 
 ## Schritt 2: Initialisieren Sie das Dokument
 
@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- In diesem Snippet definieren wir den Pfad zum Verzeichnis, in dem unser Dokument gespeichert wird, und initialisieren ein neues`Document` Und`DocumentBuilder` Beispiel.
+ In diesem Snippet definieren wir den Pfad zum Verzeichnis, in dem unser Dokument gespeichert wird, und initialisieren ein neues`Document`Und`DocumentBuilder` Beispiel.
 
 ## Schritt 3: Schreiben Sie den Anfangstext
 

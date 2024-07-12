@@ -103,7 +103,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
 
 ### 3. 테이블 형식을 다르게 지정하려면 어떻게 해야 합니까?
 
-Aspose.Words에서 제공하는 다양한 방법을 사용하여 테이블 형식을 사용자 정의할 수 있습니다. 을 체크 해봐[API 문서](https://reference.aspose.com/words/net/) 자세한 지침을 보려면.
+ Aspose.Words에서 제공하는 다양한 방법을 사용하여 테이블 형식을 사용자 정의할 수 있습니다. 을 체크 해봐[API 문서](https://reference.aspose.com/words/net/) 자세한 지침을 보려면.
 
 ### 4. .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
 

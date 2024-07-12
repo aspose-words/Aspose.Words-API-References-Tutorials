@@ -22,7 +22,7 @@ Bevor wir uns in die Dokumentenzusammenarbeit und -überprüfung vertiefen, rich
 
 3. Aspose.Words initialisieren: Initialisieren Sie Aspose.Words in Ihrem Java-Code, um seine Funktionen zu nutzen.
 
-Nachdem wir Aspose.Words für Java eingerichtet haben, können wir nun mit der Dokumentenzusammenarbeit fortfahren.
+Nachdem wir Aspose.Words für Java eingerichtet haben, können wir mit der Dokumentenzusammenarbeit fortfahren.
 
 ## Zusammenarbeit an Dokumenten
 

@@ -14,10 +14,10 @@ Avec ces didacticiels, vous pourrez maîtriser les fonctionnalités de signature
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Signer un document Word](./sign-document/) | Découvrez comment signer numériquement un document Word avec Aspose.Words pour .NET. |
-| [Signature d'un document Word crypté](./signing-encrypted-document/) | Découvrez comment signer numériquement un document Word crypté avec Aspose.Words for .NET. |
-| [Création et signature d'une nouvelle ligne de signature](./creating-and-signing-new-signature-line/) | Découvrez comment créer et signer une nouvelle ligne de signature dans un document Word avec Aspose.Words pour .NET. |
-| [Signature d'une ligne de signature existante dans un document Word](./signing-existing-signature-line/) | Découvrez comment signer une ligne de signature existante dans un document Word avec Aspose.Words pour .NET. |
-| [Définir l'ID du fournisseur de signature dans un document Word](./set-signature-provider-id/) | Découvrez comment définir l’ID du fournisseur de signature dans un document Word avec Aspose.Words pour .NET. |
-| [Créer une nouvelle ligne de signature et définir l'identifiant du fournisseur](./create-new-signature-line-and-set-provider-id/) | Découvrez comment créer une nouvelle ligne de signature et définir l'ID du fournisseur dans un document Word avec Aspose.Words pour .NET. |
-| [Accéder et vérifier la signature dans un document Word](./access-and-verify-signature/) | Découvrez comment accéder et vérifier les signatures numériques dans un document Word avec Aspose.Words for .NET. |
+| [Signer un document Word](./sign-document/) | Apprenez à signer un document Word à l'aide d'Aspose.Words pour .NET avec ce guide étape par étape. Sécurisez vos documents en toute simplicité. |
+| [Signature d'un document Word crypté](./signing-encrypted-document/) | Découvrez comment signer des documents Word cryptés à l'aide d'Aspose.Words pour .NET avec ce guide détaillé étape par étape. Parfait pour les développeurs. |
+| [Création et signature d'une nouvelle ligne de signature](./creating-and-signing-new-signature-line/) | Découvrez comment créer et signer numériquement une ligne de signature dans un document Word à l'aide d'Aspose.Words for .NET avec ce didacticiel étape par étape. Parfait pour l'automatisation des documents. |
+| [Signature d'une ligne de signature existante dans un document Word](./signing-existing-signature-line/) | Découvrez comment signer une ligne de signature existante dans un document Word à l'aide d'Aspose.Words for .NET grâce à notre guide détaillé étape par étape. Parfait pour les développeurs. |
+| [Définir l'ID du fournisseur de signature dans un document Word](./set-signature-provider-id/) | Définissez en toute sécurité un ID de fournisseur de signature dans les documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé de 2 000 mots pour signer numériquement vos documents. |
+| [Créer une nouvelle ligne de signature et définir l'identifiant du fournisseur](./create-new-signature-line-and-set-provider-id/) | Découvrez comment créer une nouvelle ligne de signature et définir l'ID du fournisseur dans les documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape. |
+| [Accéder et vérifier la signature dans un document Word](./access-and-verify-signature/) | Accédez et vérifiez les signatures numériques dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide complet étape par étape. Garantissez l’authenticité des documents sans effort. |

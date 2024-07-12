@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Εισαγάγετε το πεδίο IF στο έγγραφο.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Αξιολογήστε τη συνθήκη IF.
+// Αξιολογήστε τη συνθήκη IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Εμφάνιση του αποτελέσματος της αξιολόγησης.

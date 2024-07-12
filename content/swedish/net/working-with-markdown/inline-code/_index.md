@@ -70,7 +70,7 @@ Grattis! Du har nu lärt dig hur du använder inline-kodfunktionalitet med Aspos
 
 #### F: Är det möjligt att ange inline kodtypsnitt eller färg i Aspose.Words?
 
- S: Ja, du kan ange teckensnittet eller färgen på inline-koden i Aspose.Words. Du kan använda`Font.Name` och`Font.Color` egenskaper hos`Run` objekt för att ställa in teckensnitt och färg för inline-koden. Du kan till exempel använda`run.Font.Name = "Courier New"` för att ange teckensnitt för inline-kod och`run.Font.Color = Color.Blue`för att ange färgen.
+ S: Ja, du kan ange teckensnittet eller färgen på inline-koden i Aspose.Words. Du kan använda`Font.Name`och`Font.Color` egenskaper hos`Run` objekt för att ställa in teckensnitt och färg för inline-koden. Du kan till exempel använda`run.Font.Name = "Courier New"` för att ange teckensnitt för inline-kod och`run.Font.Color = Color.Blue`för att ange färgen.
 
 #### F: Kan jag använda inline-koden i ett stycke som innehåller andra textelement?
 

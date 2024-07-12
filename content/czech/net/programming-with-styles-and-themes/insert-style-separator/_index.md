@@ -106,7 +106,7 @@ Chcete-li nastavit prostředí, musíte se ujistit, že máte Aspose.Words for .
 
 #### Jak mohu použít různé styly na různé části textu?
 
- Na různé části textu můžete použít různé styly nastavením`ParagraphFormat.StyleName` vlastnictvím`DocumentBuilder`objekt. Před psaním textu můžete nastavit název stylu na požadovaný styl a následující text bude podle toho formátován.
+Na různé části textu můžete použít různé styly nastavením`ParagraphFormat.StyleName` vlastnictvím`DocumentBuilder` objekt. Před psaním textu můžete nastavit název stylu na požadovaný styl a následující text bude podle toho formátován.
 
 #### Mohu uložit dokument v různých formátech?
 

@@ -12,4 +12,4 @@ Pelajari cara mengaktifkan fitur OpenType di dokumen Word Anda dengan Aspose.Wor
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Fitur Tipe Terbuka](./open-type-features/) | Pelajari cara mengaktifkan dan menggunakan fitur Tipe Terbuka di Aspose.Words untuk .NET |
+| [Fitur Tipe Terbuka](./open-type-features/) | Pelajari cara mengaktifkan fitur OpenType di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. |

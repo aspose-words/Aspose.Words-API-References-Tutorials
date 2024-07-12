@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "HTML help.chm", loadOptions);
 
 #### Q: Aspose.Words는 C# 애플리케이션에서 CHM 파일을 어떻게 처리합니까?
 
-A: Aspose.Words for .NET은 CHM 파일을 Word 문서에 원활하게 로드하는 데 필요한 도구와 기능을 제공합니다. 적절한 로드 옵션을 활용함으로써 개발자는 CHM 파일을 올바르게 가져왔는지 확인할 수 있습니다.
+A: Aspose.Words for .NET은 CHM 파일을 Word 문서에 원활하게 로드하는 데 필요한 도구와 기능을 제공합니다. 적절한 로드 옵션을 활용하여 개발자는 CHM 파일을 올바르게 가져왔는지 확인할 수 있습니다.
 
 #### Q: 특정 CHM 파일을 기반으로 로딩 옵션을 사용자 정의할 수 있습니까?
 

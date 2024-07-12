@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Automatische tafelaanpassing activeren
 table. AllowAutoFit = true;
 
-// Haal de eerste cel van de eerste rij op
+//Haal de eerste cel van de eerste rij op
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Haal het gewenste breedtetype en de waarde ervan op
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-Hier gebruiken we het document om de eerste tabel op te halen, waarna we automatische tabelaanpassing inschakelen met de`AllowAutoFit` eigendom. Vervolgens halen we de eerste cel van de eerste rij van de tabel op. Vanuit deze cel kunnen we het gewenste breedtetype ophalen met de`PreferredWidth.Type` eigendom en de waarde ervan met de`PreferredWidth.Value` eigendom.
+ Hier gebruiken we het document om de eerste tabel op te halen, waarna we automatische tabelaanpassing inschakelen met de`AllowAutoFit` eigendom. Vervolgens halen we de eerste cel van de eerste rij van de tabel op. Vanuit deze cel kunnen we het gewenste breedtetype ophalen met de`PreferredWidth.Type` eigendom en de waarde ervan met de`PreferredWidth.Value` eigendom.
 
 ### Voorbeeldbroncode voor het ophalen van het gewenste breedtetype met Aspose.Words voor .NET 
 

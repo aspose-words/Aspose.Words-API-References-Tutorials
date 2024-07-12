@@ -65,7 +65,7 @@ Volg deze stappen om een specifiek veld in uw document te verwijderen met Aspose
 
 #### Vraag: Hoe kan ik een veld in een Word-document verwijderen met Aspose.Words voor .NET?
 
- A: Als u een veld in een Word-document wilt verwijderen met Aspose.Words voor .NET, kunt u door de velden in het document bladeren met behulp van de`FieldStart` klasse en gebruik de`FieldStart.Remove`methode om het veld te verwijderen.
+ A: Als u een veld in een Word-document wilt verwijderen met Aspose.Words voor .NET, kunt u door de velden in het document bladeren met behulp van de`FieldStart` klasse en gebruik de`FieldStart.Remove` methode om het veld te verwijderen.
 
 #### Vraag: Is het mogelijk om alleen bepaalde velden in een Word-document te verwijderen met Aspose.Words voor .NET?
 

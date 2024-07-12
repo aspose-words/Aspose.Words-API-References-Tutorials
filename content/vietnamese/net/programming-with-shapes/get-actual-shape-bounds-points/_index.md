@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách truy xuất giới hạn thực tế c�
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Tạo một tài liệu mới và DocumentBuilder
- Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder`đối tượng làm việc với tài liệu.
+ Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder` đối tượng làm việc với tài liệu.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 2: Chèn hình ảnh
- Sử dụng`InsertImage` phương pháp của`DocumentBuilder` đối tượng để chèn hình ảnh vào tài liệu. Cung cấp đường dẫn đến tệp hình ảnh làm tham số.
+ Sử dụng`InsertImage` phương pháp của`DocumentBuilder`đối tượng để chèn hình ảnh vào tài liệu. Cung cấp đường dẫn đến tệp hình ảnh làm tham số.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

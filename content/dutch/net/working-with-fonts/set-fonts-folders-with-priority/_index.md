@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Stap 2: Stel lettertypemappen met prioriteit in
- Vervolgens kunt u de lettertypemappen met prioriteit instellen met behulp van de`FontSettings` klasse en de`SetFontsSources()`methode. U kunt meerdere lettertypebronnen opgeven met behulp van exemplaren van`SystemFontSource` En`FolderFontSource`. In dit voorbeeld hebben we twee lettertypebronnen gedefinieerd: de standaard systeemlettertypebron en een aangepaste lettertypemap met prioriteit 1.
+ Vervolgens kunt u de lettertypemappen met prioriteit instellen met behulp van de`FontSettings` klasse en de`SetFontsSources()`methode. U kunt meerdere lettertypebronnen opgeven met behulp van exemplaren van`SystemFontSource`En`FolderFontSource`. In dit voorbeeld hebben we twee lettertypebronnen gedefinieerd: de standaard systeemlettertypebron en een aangepaste lettertypemap met prioriteit 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

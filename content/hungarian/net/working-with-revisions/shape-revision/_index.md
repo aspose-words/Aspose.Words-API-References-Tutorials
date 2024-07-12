@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### K: Hogyan ellenőrizhetem az Aspose.Words for .NET dokumentumban lévő alakzatok eltolási változatait?
 
- V: Ha egy Aspose.Words for .NET-dokumentumban szeretné ellenőrizni az alakeltolódás-revíziókat, betölthet egy meglévő dokumentumot, amely alakeltolódás-változatokat tartalmaz. Ezután elérheti az egyes alakzatokat`IsMoveFromRevision` és`IsMoveToRevision` tulajdonságai annak meghatározásához, hogy áthelyezik-e, és ha igen, honnan és hová:
+ V: Ha egy Aspose.Words for .NET-dokumentumban szeretné ellenőrizni az alakeltolódás-revíziókat, betölthet egy meglévő dokumentumot, amely alakeltolódás-változatokat tartalmaz. Ezután elérheti az egyes alakzatokat`IsMoveFromRevision`és`IsMoveToRevision` tulajdonságai annak meghatározásához, hogy áthelyezik-e, és ha igen, honnan és hová:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

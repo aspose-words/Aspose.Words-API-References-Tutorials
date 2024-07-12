@@ -2,66 +2,96 @@
 title: Ponechat formátování zdroje
 linktitle: Ponechat formátování zdroje
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak připojit zdrojový dokument k cílovému dokumentu při zachování původního formátování pomocí Aspose.Words for .NET.
+description: Naučte se sloučit dokumenty aplikace Word při zachování formátování pomocí Aspose.Words for .NET. Ideální pro vývojáře, kteří chtějí automatizovat úlohy sestavování dokumentů.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/keep-source-formatting/
 ---
+## Úvod
 
-Tento kurz ukazuje, jak připojit zdrojový dokument k cílovému dokumentu při zachování původního formátování zdrojového dokumentu pomocí Aspose.Words for .NET.
+tomto tutoriálu prozkoumáme, jak sloučit a připojit dokumenty aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna poskytuje vývojářům rozsáhlé možnosti pro programovou manipulaci s dokumenty Wordu. Zaměříme se na metodu, jak zachovat zdrojové formátování během slučování dokumentů beze změny a zajistit bezproblémové zachování původních stylů a rozvržení.
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Ujistěte se, že máte následující předpoklady:
+Než se pustíte do výukového programu, ujistěte se, že máte nastaveny následující předpoklady:
 
--  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose.Releases]https://releases.aspose.com/words/net/ nebo k instalaci použijte správce balíčků NuGet.
-- Cesta k adresáři dokumentů, kam budou uloženy zdrojové a cílové dokumenty.
+- Vývojové prostředí: Visual Studio nebo jakékoli IDE, které podporuje vývoj .NET.
+-  Aspose.Words for .NET Library: Stáhněte a nainstalujte knihovnu z[tady](https://releases.aspose.com/words/net/).
+- Základní znalost programování v C#: Znalost syntaxe C# a konceptů objektově orientovaného programování.
 
-## Krok 2: Vytvořte cílové a zdrojové dokumenty
+## Importovat jmenné prostory
 
- Vytvořit instance`Document` pro cílové a zdrojové dokumenty.
+Začněte importováním potřebných jmenných prostorů do vašeho projektu C#:
 
 ```csharp
-// Cesta k vašemu adresáři dokumentů
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document dstDoc = new Document();
-dstDoc.FirstSection.Body.AppendParagraph("Destination document text.");
-
-Document srcDoc = new Document();
-srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
+using Aspose.Words;
 ```
 
-## Krok 3: Připojte zdrojový dokument k cílovému dokumentu
+## Krok 1: Nastavte svůj projekt
 
- Použijte`AppendDocument` způsob cílového dokumentu pro připojení zdrojového dokumentu. Složit`ImportFormatMode.KeepSourceFormatting` jako režim formátu importu pro zachování původního formátování zdrojového dokumentu.
+Vytvořte novou konzolovou aplikaci C# ve Visual Studiu a nainstalujte balíček Aspose.Words NuGet. Tento balíček obsahuje knihovny potřebné pro práci s dokumenty Wordu ve vašem projektu.
+
+## Krok 2: Zahrňte jmenný prostor Aspose.Words
+
+Ujistěte se, že jste na začátek souboru C# zahrnuli jmenný prostor Aspose.Words, abyste získali přístup ke třídám a metodám Aspose.Words.
+
+## Krok 3: Inicializujte cesty dokumentu
+
+Definujte cestu k vašemu adresáři dokumentů, kde jsou umístěny zdrojové a cílové dokumenty.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+```
+
+## Krok 4: Vytvořte cílový dokument
+
+Inicializací nové instance třídy Document vytvořte cílový dokument, kde bude uložen sloučený obsah.
+
+```csharp
+Document dstDoc = new Document();
+```
+
+## Krok 5: Načtěte zdrojový dokument
+
+Podobně vytvořte další objekt Document pro načtení zdrojového dokumentu, který chcete připojit k cílovému dokumentu.
+
+```csharp
+Document srcDoc = new Document();
+```
+
+## Krok 6: Připojte zdrojový dokument se zachováním formátování
+
+Chcete-li sloučit zdrojový dokument do cílového dokumentu při zachování jeho původního formátování, použijte metodu AppendDocument s ImportFormatMode nastaveným na KeepSourceFormatting.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Krok 4: Uložte upravený dokument
+## Krok 7: Uložte sloučený dokument
 
- Uložte upravený dokument pomocí`Save` metoda`Document` objekt.
-
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
-```
-
-Tím je dokončena implementace připojení zdrojového dokumentu k cílovému dokumentu při zachování původního formátování pomocí Aspose.Words for .NET.
-
-### Příklad zdrojového kódu pro formátování formátu Keep pomocí Aspose.Words pro .NET 
+Nakonec uložte sloučený dokument do zadaného adresáře pomocí metody Save.
 
 ```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document dstDoc = new Document();
-	dstDoc.FirstSection.Body.AppendParagraph("Destination document text. ");
-	Document srcDoc = new Document();
-	srcDoc.FirstSection.Body.AppendParagraph("Source document text. ");
-	// Připojte zdrojový dokument k cílovému dokumentu.
-	// Předejte režim formátování, aby bylo zachováno původní formátování zdrojového dokumentu při jeho importu.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
+dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
+
+## Závěr
+
+tomto tutoriálu jsme se zabývali tím, jak sloučit dokumenty aplikace Word při zachování původního formátování pomocí Aspose.Words for .NET. Tento přístup zajišťuje, že styly, písma a rozvržení ze zdrojových dokumentů jsou hladce integrovány do cílového dokumentu, což poskytuje robustní řešení pro úlohy sestavování dokumentů.
+
+## FAQ
+
+### Mohu sloučit více dokumentů do jedné operace pomocí Aspose.Words for .NET?
+Ano, můžete sloučit více dokumentů postupným připojením každého dokumentu k cílovému dokumentu.
+
+### Zachová Aspose.Words během slučování dokumentu všechny atributy formátování?
+Aspose.Words podporuje různé režimy importu; režim KeepSourceFormatting zajišťuje zachování většiny atributů formátování.
+
+### Je Aspose.Words kompatibilní s aplikacemi .NET Core?
+Ano, Aspose.Words podporuje .NET Core, což vám umožňuje používat jej na různých platformách.
+
+### Jak mohu efektivně zpracovávat velké dokumenty pomocí Aspose.Words?
+Aspose.Words poskytuje efektivní rozhraní API pro práci s velkými dokumenty, včetně funkcí pro stránkování a správu paměti.
+
+### Kde najdu další zdroje a podporu pro Aspose.Words?
+ Navštivte[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) pro podrobné API reference, příklady a návody.

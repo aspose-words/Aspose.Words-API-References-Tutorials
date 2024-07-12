@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Nesta etapa, aplicamos o formato padrão de números de lista usando o`ApplyNumberDefault()` método do formatador de lista. A seguir, adicionamos três itens à nossa lista usando o construtor de documentos`Writeln()` e`Write()` métodos. Nós usamos o`ListIndent()` método para incrementar o recuo em cada nível.
+Nesta etapa, aplicamos o formato padrão de números de lista usando o`ApplyNumberDefault()` método do formatador de lista. A seguir, adicionamos três itens à nossa lista usando o construtor de documentos`Writeln()`e`Write()` métodos. Nós usamos o`ListIndent()` método para incrementar o recuo em cada nível.
 
 ## Etapa 4: configurar opções de gravação
 
@@ -100,7 +100,7 @@ Configure seu ambiente de desenvolvimento adicionando as referências necessári
 
  Crie um novo`Document` objeto e um associado`DocumentBuilder` objeto.
 
- Use o`DocumentBuilder` para criar uma lista com vários níveis de recuo usando os métodos`ApplyNumberDefault()` para aplicar o formato de número de lista padrão,`Writeln()` e`Write()` para adicionar itens à lista e`ListIndent()`para incrementar o recuo em cada nível.
+ Use o`DocumentBuilder` para criar uma lista com vários níveis de recuo usando os métodos`ApplyNumberDefault()` para aplicar o formato de número de lista padrão,`Writeln()`e`Write()` para adicionar itens à lista e`ListIndent()`para incrementar o recuo em cada nível.
 
  Configure as opções de salvamento criando um`TxtSaveOptions` objeto e definindo as propriedades`ListIndentation.Count` ao número de caracteres de tabulação por nível e`ListIndentation.Character` para`'\t'` para usar os caracteres de tabulação.
 

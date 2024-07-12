@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## الخطوة 2: إنشاء مستند جديد
 
- حسنًا، لنبدأ بإنشاء مستند Word جديد. سوف نستخدم`Document` و`DocumentBuilder` دروس من Aspose.Words لتحريك الأمور.
+ حسنًا، لنبدأ بإنشاء مستند Word جديد. سوف نستخدم`Document`و`DocumentBuilder` دروس من Aspose.Words لتحريك الأمور.
 
 ```csharp
 // المسار إلى دليل المستندات.

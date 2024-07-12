@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
 
-以下是逐步指南，解釋以下 C# 原始程式碼，有助於使用 .NET 的 Aspose.Words 程式庫為 Markdown 匯出選項設定映像資料夾。在使用此程式碼之前，請確保您已在專案中包含 Aspose.Words 程式庫。
+以下是逐步指南，解釋以下 C# 原始程式碼，有助於使用適用於 .NET 的 Aspose.Words 程式庫為 Markdown 匯出選項設定圖片資料夾。在使用此程式碼之前，請確保您已在專案中包含 Aspose.Words 程式庫。
 
 ## 步驟1：設定文檔目錄路徑
 

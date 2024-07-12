@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 
 ### 常見問題解答
 
-#### Q：如何在 Aspose.Words 中定位腳註和尾註？
+#### Q：如何在 Aspose.Words 中放置腳註和尾註？
 
 答：要在 Aspose.Words 中定位腳註和尾註，您需要使用`FootnoteOptions`類和`Position`財產。您可以將此屬性設定為您想要的任何值，例如`BottomOfPage`（在頁面底部）或`EndOfSection`（在本節的末尾）。
 

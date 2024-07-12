@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### Vraag: Hoe kan ik een knooppunt in een bijgehouden document verplaatsen zonder revisies te genereren?
 
- A: Als u een knooppunt in een bijgehouden document wilt verplaatsen zonder revisies te genereren, kunt u de`Remove` En`InsertAfter` of`InsertBefore` methoden van de`Node` voorwerp. Als u bijvoorbeeld een alinea na een andere alinea wilt verplaatsen, kunt u de volgende code gebruiken:
+ A: Als u een knooppunt in een bijgehouden document wilt verplaatsen zonder revisies te genereren, kunt u de`Remove`En`InsertAfter` of`InsertBefore` methoden van de`Node` voorwerp. Als u bijvoorbeeld een alinea na een andere alinea wilt verplaatsen, kunt u de volgende code gebruiken:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## الخطوة 3: تهيئة DocumentBuilder
 
-لإدراج HTML، سنحتاج إلى مساعدة`DocumentBuilder` فصل. تسهل هذه الفئة المفيدة إضافة محتوى إلى مستندنا.
+لإدراج HTML، سنحتاج إلى مساعدة`DocumentBuilder` فصل. تسهل هذه الفئة المفيدة إضافة محتوى إلى وثيقتنا.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -107,4 +107,4 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
  يمكنك البدء بـ أ[تجربة مجانية](https://releases.aspose.com/) أو الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للحصول على الميزات الكاملة.
 
 ### أين يمكنني العثور على المزيد من الدروس والأمثلة؟  
- ال[توثيق](https://reference.aspose.com/words/net/) و[منتديات الدعم](https://forum.aspose.com/c/words/8)هي أماكن رائعة للبدء للحصول على أدلة أكثر تفصيلاً ودعم المجتمع.
+ ال[توثيق](https://reference.aspose.com/words/net/)و[منتديات الدعم](https://forum.aspose.com/c/words/8)هي أماكن رائعة للبدء للحصول على أدلة أكثر تفصيلاً ودعم المجتمع.

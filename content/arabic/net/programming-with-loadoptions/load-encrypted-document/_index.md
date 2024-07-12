@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // قم بتحميل مستند مشفر بكلمة المرور المحددة
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// حفظ مستند مشفر بكلمة مرور جديدة
+//حفظ مستند مشفر بكلمة مرور جديدة
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

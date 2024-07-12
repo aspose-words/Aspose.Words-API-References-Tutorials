@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Adicionando cabeçalhos e rodapés às tabelas:
 
- As tabelas podem se beneficiar por terem cabeçalhos e rodapés que fornecem contexto ou informações adicionais. Você pode adicionar cabeçalhos e rodapés às tabelas usando o`Table.title` e`Table.description` propriedades.
+ As tabelas podem se beneficiar por terem cabeçalhos e rodapés que fornecem contexto ou informações adicionais. Você pode adicionar cabeçalhos e rodapés às tabelas usando o`Table.title`e`Table.description` propriedades.
 
 ```python
 # Set table title (header)

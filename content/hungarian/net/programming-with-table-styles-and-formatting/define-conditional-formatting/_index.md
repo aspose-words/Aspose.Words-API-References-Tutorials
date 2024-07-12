@@ -49,7 +49,7 @@ tableStyle.ConditionalStyles.FirstRow.Shading.BackgroundPatternColor = Color.Gre
 tableStyle.ConditionalStyles.FirstRow.Shading.Texture = TextureIndex.TextureNone;
 ```
 
-## 5. lépés: Alkalmazza a táblázat stílusát az asztalra
+## 5. lépés: Alkalmazza a táblázat stílusát a táblázatra
  Végül alkalmazzuk a táblázatra az általunk létrehozott táblázatstílust a`Style` az asztal tulajdonsága.
 
 ```csharp
@@ -59,7 +59,7 @@ table.Style = tableStyle;
 ## 6. lépés: Mentse el a módosított dokumentumot
 Végül mentse a módosított dokumentumot fájlba. Kiválaszthat egy nevet és
 
-  megfelelő helyet a kimeneti dokumentum számára.
+  megfelelő hely a kimeneti dokumentum számára.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");

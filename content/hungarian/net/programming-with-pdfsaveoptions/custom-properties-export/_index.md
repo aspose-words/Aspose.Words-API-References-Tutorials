@@ -1,6 +1,6 @@
 ---
-title: Egyéni tulajdonságok exportálása PDF-dokumentumban
-linktitle: Egyéni tulajdonságok exportálása PDF-dokumentumban
+title: Egyéni tulajdonságok exportálása PDF dokumentumba
+linktitle: Egyéni tulajdonságok exportálása PDF dokumentumba
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan exportálhat egyéni tulajdonságokat dokumentumok PDF-formátumba konvertálásakor az Aspose.Words for .NET segítségével.
 type: docs

@@ -2,120 +2,108 @@
 title: Ký dòng chữ ký hiện có trong tài liệu Word
 linktitle: Ký dòng chữ ký hiện có trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách ký dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách ký dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển.
 type: docs
 weight: 10
 url: /vi/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để sử dụng tính năng chữ ký của dòng chữ ký hiện có với Aspose.Words cho .NET. Tính năng này cho phép bạn ký điện tử vào dòng chữ ký đã có trong tài liệu Word. Làm theo các bước dưới đây:
+## Giới thiệu
 
-## Bước 1: Load tài liệu và truy cập dòng chữ ký
+Này! Bạn đã bao giờ cần ký một tài liệu kỹ thuật số nhưng thấy việc này hơi rắc rối? Bạn thật may mắn vì hôm nay chúng ta sẽ tìm hiểu cách bạn có thể dễ dàng ký vào dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình theo từng bước, đảm bảo bạn sẽ thành thạo nhiệm vụ này ngay lập tức.
 
-Bắt đầu bằng cách tải lên tài liệu chứa dòng chữ ký hiện có:
+## Điều kiện tiên quyết
+
+Trước khi đi sâu vào chi tiết thực tế, hãy đảm bảo chúng ta có mọi thứ mình cần:
+
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Nếu chưa có, bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích C# nào khác.
+3. Tài liệu và Chứng chỉ: Tài liệu Word có dòng chữ ký và chứng chỉ kỹ thuật số (tệp PFX).
+4. Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ có lợi.
+
+## Nhập không gian tên
+
+Trước khi có thể sử dụng các lớp và phương thức từ Aspose.Words, bạn cần nhập các không gian tên cần thiết. Đây là một đoạn nhập khẩu bắt buộc:
+
+```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.DigitalSignatures;
+```
+
+## Bước 1: Tải tài liệu của bạn
+
+Trước tiên, bạn cần tải tài liệu Word có chứa dòng chữ ký. Bước này rất quan trọng vì nó đặt nền tảng cho toàn bộ quá trình.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
-
-SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## Bước 2: Đặt tùy chọn chữ ký
+## Bước 2: Truy cập dòng chữ ký
 
-Tạo một thể hiện của lớp SignOptions và đặt các tùy chọn chữ ký, bao gồm ID dòng chữ ký và hình ảnh dòng chữ ký:
+Bây giờ chúng ta đã tải xong tài liệu, bước tiếp theo là xác định vị trí và truy cập dòng chữ ký trong tài liệu.
+
+```csharp
+SignatureLine signatureLine = ((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
+```
+
+## Bước 3: Thiết lập tùy chọn đăng nhập
+
+Việc thiết lập các tùy chọn ký hiệu là điều cần thiết. Điều này bao gồm việc chỉ định ID của dòng chữ ký và cung cấp hình ảnh sẽ được sử dụng làm chữ ký.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes("YOUR IMAGE DIRECTORY" + "signature_image.emf")
 };
 ```
 
-Đảm bảo chỉ định đường dẫn chính xác đến hình ảnh dòng chữ ký.
+## Bước 4: Tạo Chủ sở hữu chứng chỉ
 
-## Bước 3: Tải chứng chỉ
-
-Bắt đầu bằng cách tải chứng chỉ ký bằng lớp Chứng chỉHolder:
+Để ký tài liệu bằng kỹ thuật số, bạn cần có chứng chỉ kỹ thuật số. Đây là cách bạn tạo chủ sở hữu chứng chỉ từ tệp PFX của mình.
 
 ```csharp
-CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "your_password");
 ```
 
-Hãy đảm bảo chỉ định đường dẫn chính xác tới chứng chỉ và mật khẩu liên quan của bạn.
+## Bước 5: Ký vào tài liệu
 
-## Bước 4: Ký dòng chữ ký hiện có
-
-Sử dụng lớp DigitalSignatureUtil để ký dòng chữ ký hiện có:
+Bây giờ, chúng ta kết hợp tất cả các thành phần để ký vào tài liệu. Đây là nơi phép thuật xảy ra!
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-	dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Digitally signed.docx",
+    dataDir + "Signature line.docx",
+    certHolder,
+    signOptions
+);
 ```
-
-Đảm bảo chỉ định đường dẫn chính xác cho tài liệu nguồn, tài liệu đã ký và chứng chỉ.
-
-### Mã nguồn ví dụ để ký dòng chữ ký hiện có bằng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh để ký một dòng chữ ký hiện có với Aspose.Words cho .NET:
-
-
-```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Signature line.docx");
-	
-	SignatureLine signatureLine =
-		((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-		dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
-	
-
-```
-
-Bằng cách làm theo các bước này, bạn có thể dễ dàng ký dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words for .NET.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã học cách ký một dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được cung cấp, bạn có thể dễ dàng tải tài liệu, truy cập dòng chữ ký hiện có, đặt tùy chọn ký và ký vào tài liệu. Khả năng ký dòng chữ ký hiện có cung cấp một cách thuận tiện để thêm chữ ký điện tử vào các khu vực được xác định trước trong tài liệu Word của bạn, đảm bảo tính toàn vẹn và xác thực của tài liệu. Aspose.Words for .NET cung cấp API mạnh mẽ để Xử lý văn bản bằng chữ ký điện tử, cho phép bạn tùy chỉnh quy trình ký và nâng cao tính bảo mật cho tài liệu Word của mình.
+Và bạn có nó rồi đấy! Bạn đã ký thành công dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET. Không quá khó khăn phải không? Với các bước này, giờ đây bạn có thể ký điện tử vào các tài liệu, tăng thêm tính xác thực và tính chuyên nghiệp. Vì vậy, lần tới khi ai đó gửi cho bạn một tài liệu để ký, bạn sẽ biết chính xác phải làm gì!
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Hỏi: Dòng chữ ký hiện có trong tài liệu Word là gì?
+### Aspose.Words cho .NET là gì?
 
-Trả lời: Dòng chữ ký hiện có trong tài liệu Word là khu vực được xác định trước để có thể đặt chữ ký. Nó thường được thể hiện bằng một hình dạng hoặc đối tượng trong tài liệu và đóng vai trò là không gian được chỉ định để người ký thêm chữ ký điện tử của họ.
+Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word trong các ứng dụng .NET. Nó cho phép bạn tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình.
 
-#### Câu hỏi: Làm cách nào tôi có thể ký dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET?
+### Tôi có thể nhận bản dùng thử miễn phí Aspose.Words cho .NET ở đâu?
 
-Trả lời: Để ký dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
-1.  Tải tài liệu bằng cách sử dụng`Document` class và chỉ định đường dẫn đến tệp tài liệu.
-2.  Truy cập dòng chữ ký hiện có bằng phương pháp hoặc thuộc tính thích hợp. Ví dụ, bạn có thể sử dụng`GetChild` phương pháp để lấy hình dạng dòng chữ ký.
-3.  Tạo một thể hiện của`SignOptions` lớp và thiết lập`SignatureLineId` thuộc tính vào ID của dòng chữ ký hiện có.
-4.  Đặt`SignatureLineImage` tài sản của`SignOptions` lớp vào hình ảnh đại diện cho chữ ký số.
-5.  Tải chứng chỉ ký bằng cách sử dụng`CertificateHolder` class và cung cấp chứng chỉ và mật khẩu cần thiết.
-6.  Sử dụng`DigitalSignatureUtil.Sign` phương pháp ký tài liệu, cung cấp các tham số cần thiết bao gồm`SignOptions` sự vật.
+ Bạn có thể tải về dùng thử miễn phí[đây](https://releases.aspose.com/).
 
-#### Câu hỏi: Làm cách nào để truy cập dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET?
+### Tôi có thể sử dụng bất kỳ định dạng hình ảnh nào cho chữ ký không?
 
- Trả lời: Để truy cập dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng phương pháp hoặc thuộc tính thích hợp để truy xuất hình dạng dòng chữ ký từ cấu trúc của tài liệu. Ví dụ: bạn có thể sử dụng`GetChild` phương pháp với các tham số thích hợp để có được hình dạng dòng chữ ký mong muốn.
+Aspose.Words hỗ trợ nhiều định dạng hình ảnh khác nhau, nhưng việc sử dụng siêu tệp nâng cao (EMF) sẽ mang lại chất lượng chữ ký tốt hơn.
 
-#### Câu hỏi: Tôi có thể tùy chỉnh hình thức của chữ ký số trong dòng chữ ký hiện có không?
+### Làm cách nào tôi có thể nhận được chứng chỉ kỹ thuật số?
 
-Trả lời: Có, bạn có thể tùy chỉnh hình thức của chữ ký số trong dòng chữ ký hiện có bằng cách cung cấp tệp hình ảnh đại diện cho chữ ký. Hình ảnh có thể là biểu tượng, chữ ký viết tay hoặc bất kỳ hình thức thể hiện đồ họa nào khác của chữ ký. Bạn có thể thiết lập`SignatureLineImage` tài sản của`SignOptions` class thành byte của tệp hình ảnh.
+Bạn có thể mua chứng chỉ kỹ thuật số từ nhiều nhà cung cấp trực tuyến. Đảm bảo chứng chỉ ở định dạng PFX và bạn có mật khẩu.
 
-#### Hỏi: Tôi có thể ký nhiều dòng chữ ký hiện có trong tài liệu Word không?
- Trả lời: Có, bạn có thể ký nhiều dòng chữ ký hiện có trong tài liệu Word. Bạn cần làm theo các bước cho từng dòng chữ ký riêng biệt, thiết lập phù hợp`SignatureLineId` Và`SignatureLineImage` các giá trị trong`SignOptions` đối tượng cho mỗi dòng chữ ký.
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
 
-#### Câu hỏi: Tệp hình ảnh nên có định dạng nào cho chữ ký số trong dòng chữ ký hiện có?
-
- Đáp: Tệp hình ảnh cho chữ ký số trong dòng chữ ký hiện có có thể ở nhiều định dạng khác nhau, chẳng hạn như PNG, JPEG, BMP hoặc GIF. Bạn có thể chỉ định đường dẫn tệp hoặc đọc byte của tệp hình ảnh và gán nó cho`SignatureLineImage` tài sản của`SignOptions` lớp học.
+ Bạn có thể tìm thấy tài liệu phong phú[đây](https://reference.aspose.com/words/net/).

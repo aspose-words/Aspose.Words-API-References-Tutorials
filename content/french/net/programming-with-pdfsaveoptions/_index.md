@@ -7,7 +7,7 @@ type: docs
 weight: 1680
 url: /fr/net/programming-with-pdfsaveoptions/
 ---
-Les didacticiels Aspose.Words for .NET sur le traitement de mots avec PdfSaveOptions vous guident à travers les différentes fonctionnalités et techniques du traitement de mots avec les options d'enregistrement PDF. Ces didacticiels vous aident à comprendre comment personnaliser la conversion Word en PDF en modifiant les paramètres de mise en page, les polices, les images, les métadonnées et bien plus encore.
+Les didacticiels Aspose.Words pour .NET sur le traitement de mots avec PdfSaveOptions vous guident à travers les différentes fonctionnalités et techniques du traitement de mots avec les options d'enregistrement PDF. Ces didacticiels vous aident à comprendre comment personnaliser la conversion Word en PDF en modifiant les paramètres de mise en page, les polices, les images, les métadonnées et bien plus encore.
 
 Vous apprendrez à ajuster les options de qualité d'image, à choisir le niveau de compression des images, à définir les paramètres de sécurité PDF tels que le cryptage et les autorisations, et même à insérer des filigranes dans les fichiers PDF générés. Les didacticiels incluent également des exemples de code détaillés pour vous aider à mettre en pratique ces fonctionnalités dans vos projets.
 

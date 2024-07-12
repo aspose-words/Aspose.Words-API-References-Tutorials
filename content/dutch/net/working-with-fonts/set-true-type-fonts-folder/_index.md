@@ -76,7 +76,7 @@ A: Ja, u kunt meerdere TrueType-lettertypemappen opgeven in Aspose.Words met beh
 
 #### Vraag: Hoe kan ik de TrueType-lettertypenmap controleren die is geconfigureerd in Aspose.Words?
 
- A: Om de geconfigureerde TrueType Fonts-map in Aspose.Words te controleren, kunt u de`GetTrueTypeFontsFolder` werkwijze van de`Fonts` class om de locatie van de geconfigureerde map TrueType Fonts op te halen.
+ A: Om de geconfigureerde map TrueType Fonts in Aspose.Words te controleren, kunt u de`GetTrueTypeFontsFolder` werkwijze van de`Fonts` class om de locatie van de geconfigureerde map TrueType Fonts op te halen.
 
 #### Vraag: Waarom is het belangrijk om de map TrueType-lettertypen in Aspose.Words te configureren?
 

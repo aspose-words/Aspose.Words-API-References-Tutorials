@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-document-options-and-settings/document-page-setup/
 ---
 
-I den här handledningen går vi igenom C#-källkoden för att konfigurera dokumentlayouten med Aspose.Words för .NET. Denna funktion låter dig ställa in layoutläget, antalet tecken per rad och antalet rader per sida.
+den här handledningen går vi igenom C#-källkoden för att konfigurera dokumentlayouten med Aspose.Words för .NET. Denna funktion låter dig ställa in layoutläget, antalet tecken per rad och antalet rader per sida.
 
 ## Steg 1: Projektinställning
 

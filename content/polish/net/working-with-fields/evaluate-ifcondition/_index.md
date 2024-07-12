@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Wstaw pole JEŻELI do dokumentu.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Oceń warunek JEŻELI.
+// Oceń warunek JEŻELI.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Wyświetl wynik oceny.

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Nakonfigurujte možnosti načítání pomocí nastavení písma
- Dále vytvoříme instanci`LoadOptions` a určete nastavení písma vytvořením nové instance`FontSettings` a přiřadit jej`loadOptions.FontSettings`.
+Dále vytvoříme instanci`LoadOptions` a určete nastavení písma vytvořením nové instance`FontSettings` a přiřadit jej`loadOptions.FontSettings`.
 
 ```csharp
 // Nakonfigurujte možnosti načítání pomocí nastavení písma
@@ -57,7 +57,7 @@ V tomto tutoriálu jsme viděli, jak používat možnosti načítání s nastave
 
 #### Otázka: Jak mohu určit výchozí písmo při načítání dokumentu do Aspose.Words?
 
-A: Chcete-li určit výchozí písmo při načítání dokumentu v Aspose.Words, můžete použít`LoadOptions` třídu a nastavte`DefaultFontName` vlastnost na název požadovaného písma.
+ A: Chcete-li určit výchozí písmo při načítání dokumentu v Aspose.Words, můžete použít`LoadOptions` třídu a nastavte`DefaultFontName`vlastnost na název požadovaného písma.
 
 #### Otázka: Jaká další nastavení písma mohu určit pomocí možností načítání v Aspose.Words?
 
@@ -69,4 +69,4 @@ Odpověď: Pokud zadané výchozí písmo není dostupné, když je dokument na�
 
 #### Otázka: Mohu zadat různá nastavení písma pro každý nahraný dokument?
 
- Odpověď: Ano, můžete určit různá nastavení písma pro každý načtený dokument pomocí samostatných instancí souboru`LoadOptions`třídy a nastavení požadovaného nastavení písma pro každou instanci. To vám umožní přizpůsobit vzhled písma pro každý dokument nezávisle.
+ Odpověď: Ano, můžete určit různá nastavení písma pro každý načtený dokument pomocí samostatných instancí souboru`LoadOptions` třídy a nastavení požadovaného nastavení písma pro každou instanci. To vám umožní přizpůsobit vzhled písma pro každý dokument nezávisle.

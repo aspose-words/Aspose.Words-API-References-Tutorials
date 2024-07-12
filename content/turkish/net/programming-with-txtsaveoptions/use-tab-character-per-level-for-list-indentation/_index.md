@@ -2,7 +2,7 @@
 title: Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan
 linktitle: Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'te sekme karakterleri içeren girinti listeleri özelliğini nasıl kullanacağınızı öğrenin. Bu güçlü özellikle zamandan tasarruf edin ve iş akışınızı geliştirin.
+description: Aspose.Words for .NET'te sekme karakterleri içeren girinti listeleri özelliğini nasıl kullanacağınızı öğrenin. Bu güçlü özellikle zamandan tasarruf edin ve iş akışınızı iyileştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Bu adımda, liste numaralarının varsayılan formatını aşağıdaki komutu kullanarak uyguluyoruz:`ApplyNumberDefault()` liste biçimlendiricinin yöntemi. Daha sonra belge oluşturucuyu kullanarak listemize üç öğe ekliyoruz.`Writeln()` Ve`Write()` yöntemler. biz kullanıyoruz`ListIndent()` Her düzeyde girintiyi artırma yöntemi.
+Bu adımda, liste numaralarının varsayılan formatını aşağıdaki komutu kullanarak uyguluyoruz:`ApplyNumberDefault()` liste biçimlendiricinin yöntemi. Daha sonra belge oluşturucuyu kullanarak listemize üç öğe ekliyoruz.`Writeln()`Ve`Write()` yöntemler. biz kullanıyoruz`ListIndent()` Her düzeyde girintiyi artırma yöntemi.
 
 ## 4. Adım: Kayıt seçeneklerini yapılandırın
 
@@ -100,13 +100,13 @@ Gerekli referansları ekleyerek ve uygun ad alanlarını içe aktararak gelişti
 
  Yeni bir tane oluştur`Document` nesne ve ilişkili`DocumentBuilder` nesne.
 
- Kullan`DocumentBuilder` yöntemleri kullanarak birden fazla girinti düzeyine sahip bir liste oluşturmak için`ApplyNumberDefault()` varsayılan liste numarası biçimini uygulamak için,`Writeln()` Ve`Write()` Listeye öğe eklemek için ve`ListIndent()`Her düzeyde girintiyi artırmak için.
+ Kullan`DocumentBuilder` yöntemleri kullanarak birden fazla girinti düzeyine sahip bir liste oluşturmak için`ApplyNumberDefault()` varsayılan liste numarası biçimini uygulamak için,`Writeln()`Ve`Write()` Listeye öğe eklemek için ve`ListIndent()`Her düzeyde girintiyi artırmak için.
 
  Bir kayıt oluşturarak kaydetme seçeneklerini yapılandırın`TxtSaveOptions` nesne ve özelliklerin ayarlanması`ListIndentation.Count` seviye başına sekme karakterlerinin sayısına ve`ListIndentation.Character` ile`'\t'` Sekme karakterlerini kullanmak için
 
  kullanarak belgeyi kaydedin.`Save()` çıktı dosyasının tam yolunu ve kaydetme seçeneklerini belirten belge yöntemi.
 
-#### S: Liste girintisi için düzey başına sekme karakterlerinin sayısını özelleştirmek mümkün mü?
+#### S: Liste girintisi için düzey başına sekme karakterlerinin sayısını özelleştirmek mümkün müdür?
  Evet, liste girintisi için düzey başına sekme karakterlerinin sayısını, değerini değiştirerek özelleştirebilirsiniz.`ListIndentation.Count` içindeki mülk`TxtSaveOptions` sınıf. Her girinti düzeyi için istediğiniz sekme karakterlerinin sayısını belirtebilirsiniz.
 
 #### S: Aspose.Words for .NET'te liste girintisi için başka hangi karakterleri kullanabilirim?

@@ -95,7 +95,7 @@ Aspose.Words for Java oferece suporte a vários tipos de extensões da web, incl
 
 ### Como posso testar e visualizar extensões da web em meu documento?
 
-O teste e a visualização de extensões da Web em seu documento podem ser feitos abrindo o documento em um ambiente que ofereça suporte ao tipo específico de extensão da Web que você adicionou. Por exemplo, se você adicionou um suplemento do Office (OMEX), poderá abrir o documento em um aplicativo do Office que ofereça suporte a suplementos, como o Microsoft Word. Isso permite interagir e testar a funcionalidade da extensão da web no documento.
+O teste e a visualização de extensões da Web em seu documento podem ser feitos abrindo o documento em um ambiente que ofereça suporte ao tipo específico de extensão da Web que você adicionou. Por exemplo, se você adicionou um Suplemento do Office (OMEX), poderá abrir o documento em um aplicativo do Office que ofereça suporte a suplementos, como o Microsoft Word. Isso permite interagir e testar a funcionalidade da extensão da web no documento.
 
 ### Há alguma limitação ou consideração de compatibilidade ao usar extensões da web no Aspose.Words for Java?
 

@@ -52,7 +52,7 @@ builder.Writeln("Item 2");
 
  Trong những dòng này,`ApplyNumberDefault` bắt đầu danh sách được đánh số và`Writeln` thêm các mục vào danh sách.
 
-## Bước 3: Thụt lề cho cấp độ phụ
+## Bước 3: Thụt lề cho cấp độ con
 
  Tiếp theo, để tạo các cấp độ con trong danh sách của mình, bạn sử dụng`ListIndent` phương pháp. Phương thức này thụt lề mục danh sách, biến nó thành cấp độ con của mục trước đó.
 
@@ -125,7 +125,7 @@ Và bạn có nó rồi đấy! Bạn đã tạo thành công danh sách đa c�
  Có, bạn có thể tiếp tục đánh số bằng cách sử dụng`ListFormat.List` thuộc tính để liên kết đến một danh sách hiện có.
 
 ### Làm cách nào để thay đổi mức thụt lề một cách linh hoạt?
- Bạn có thể tự động thay đổi mức độ thụt lề bằng cách sử dụng`ListIndent` Và`ListOutdent` các phương pháp khi cần thiết.
+ Bạn có thể tự động thay đổi mức độ thụt lề bằng cách sử dụng`ListIndent`Và`ListOutdent` các phương pháp khi cần thiết.
 
 ### Tôi có thể tạo danh sách đa cấp ở các định dạng tài liệu khác như PDF không?
 Có, Aspose.Words hỗ trợ lưu tài liệu ở nhiều định dạng khác nhau bao gồm PDF, duy trì định dạng.

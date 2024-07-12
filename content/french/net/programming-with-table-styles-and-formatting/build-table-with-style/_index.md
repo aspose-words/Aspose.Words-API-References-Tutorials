@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Étape 7 : Ajouter du contenu aux cellules
- Nous pouvons maintenant ajouter du contenu aux cellules en utilisant le`Writeln()` et`InsertCell()` méthodes du générateur de documents. Dans cet exemple, nous ajoutons les en-têtes pour "Article" et "Quantité (
+ Nous pouvons maintenant ajouter du contenu aux cellules en utilisant le`Writeln()`et`InsertCell()` méthodes du générateur de documents. Dans cet exemple, nous ajoutons les en-têtes pour "Article" et "Quantité (
 
 kg)" et les données correspondantes.
 

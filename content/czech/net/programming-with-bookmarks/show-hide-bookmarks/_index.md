@@ -2,138 +2,153 @@
 title: Zobrazit skrýt záložky v dokumentu aplikace Word
 linktitle: Zobrazit skrýt záložky v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak zobrazit nebo skrýt konkrétní záložku v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak dynamicky zobrazit nebo skrýt záložky v dokumentu aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem. Ideální pro vývojáře.
 type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## Úvod
 
-V tomto článku prozkoumáme zdrojový kód C# výše, abychom pochopili, jak používat funkci Zobrazit skrýt záložky v knihovně Aspose.Words for .NET. Tato funkce umožňuje zobrazit nebo skrýt určitou záložku v dokumentu aplikace Word.
+Stalo se vám, že jste potřebovali dynamicky skrýt nebo zobrazit určité části dokumentu Word? Tak to máš štěstí! S Aspose.Words for .NET můžete snadno spravovat viditelnost obsahu se záložkami ve vašich dokumentech. Tento tutoriál vás provede procesem zobrazení a skrytí záložek v dokumentu aplikace Word pomocí Aspose.Words for .NET. Kód rozebereme krok za krokem, takže ať už jste ostřílený vývojář nebo nováček, tento průvodce se vám bude snadno řídit.
 
 ## Předpoklady
 
-- Základní znalost jazyka C#.
-- Vývojové prostředí .NET s nainstalovanou knihovnou Aspose.Words.
+Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-## Krok 1: Načtení dokumentu
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: IDE jako Visual Studio.
+3. Základní znalost C#: Výhodou bude znalost programování v C#.
+4. Dokument aplikace Word: Ukázkový dokument aplikace Word se záložkami.
 
- Používáme`Document` třídy k načtení existujícího dokumentu ze souboru:
+## Importovat jmenné prostory
+
+Než začnete s kódem, musíte importovat potřebné jmenné prostory. Na začátek souboru C# přidejte následující:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## Krok 1: Vložte svůj dokument
+
+Nejprve musíte načíst dokument aplikace Word, který obsahuje záložky. Můžete to udělat takto:
+
+```csharp
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## Krok 2: Zobrazte nebo skryjte konkrétní záložku
+### Vysvětlení
 
- Používáme`ShowHideBookmarkedContent` funkce pro zobrazení nebo skrytí konkrétní záložky v dokumentu. Tato funkce bere jako parametry dokument, název záložky a boolean označující, zda se má záložka zobrazit nebo skrýt:
+- dataDir: Toto je cesta k adresáři, kde se nachází váš dokument aplikace Word.
+-  Dokument dokumentu: Inicializuje novou instanci souboru`Document` třídy s vaším zadaným souborem.
+
+## Krok 2: Zobrazení nebo skrytí obsahu označeného záložkou
+
+Dále definujeme metodu, jak zobrazit nebo skrýt obsah označený záložkou. Zde je kompletní metoda:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{MERGEFIELD bookmark}" = "true" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### Vysvětlení
+
+- Záložka bm: Načte záložku z dokumentu.
+- Tvůrce DocumentBuilder: Pomáhá při navigaci a úpravách dokumentu.
+- Pole pole: Vloží pole KDYŽ pro kontrolu stavu záložky.
+- Uzel currentNode: Prochází přes uzly, aby našel začátek a konec pole.
+
+## Krok 3: Spusťte funkci Zobrazit/skrýt
+
+ Nyní musíte zavolat na`ShowHideBookmarkedContent` metoda, předání dokumentu, název záložky a příznak viditelnosti:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## Krok 3: Uložení upraveného dokumentu
+### Vysvětlení
 
- Používáme`Save` způsob uložení upraveného dokumentu do souboru:
+- doc: Objekt vašeho dokumentu.
+- "MyBookmark1": Název záložky, kterou chcete zobrazit/skrýt.
+- false: Příznak viditelnosti (true pro zobrazení, false pro skrytí).
+
+## Krok 4: Uložte dokument
+
+Nakonec upravený dokument uložte:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### Příklad zdrojového kódu pro Zobrazit skrýt záložky pomocí Aspose.Words pro .NET
+### Vysvětlení
 
-Zde je úplný ukázkový zdrojový kód, který demonstruje zobrazení nebo skrytí konkrétní záložky pomocí Aspose.Words pro .NET:
+- dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx": Cesta a název nového dokumentu, do kterého budou uloženy změny.
 
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### ShowHideBookmarkedContent zdrojový kód
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {IF "{MERGEFIELD bookmark}" = "true" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## Závěr
 
-V tomto článku jsme prozkoumali zdrojový kód C#, abychom pochopili, jak používat funkci Zobrazit skrýt záložky v Aspose.Words pro .NET. Postupovali jsme podle podrobného průvodce, jak zobrazit nebo skrýt konkrétní záložku v dokumentu.
+A tady to máte! Úspěšně jste se naučili, jak zobrazit a skrýt záložky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato technika může být neuvěřitelně užitečná pro dynamické generování dokumentů s podmíněným obsahem.
 
-### Nejčastější dotazy k zobrazení skrýt záložky v dokumentu aplikace Word
+## FAQ
 
-#### Otázka: Mohu zobrazit nebo skrýt více záložek v jednom dokumentu?
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro zpracování dokumentů, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově.
 
-Odpověď: Ano, můžete zobrazit nebo skrýt více záložek v jednom dokumentu opakováním kroků 2 a 3 pro každou záložku, kterou chcete zpracovat.
+### Jak získám Aspose.Words pro .NET?
+ Aspose.Words for .NET si můžete stáhnout z[tady](https://releases.aspose.com/words/net/). K dispozici je také bezplatná zkušební verze.
 
-#### Otázka: Funguje poskytnutý kód s jinými formáty dokumentů aplikace Word, jako jsou .doc nebo .docm?
+### Mohu tuto metodu použít pro jiné typy záložek?
+Ano, tuto metodu lze upravit tak, aby spravovala viditelnost všech záložek v dokumentu aplikace Word.
 
-Odpověď: Ano, poskytnutý kód funguje s různými formáty dokumentů Word podporovanými Aspose.Words, jako jsou .doc a .docm. Při načítání a ukládání dokumentu se ujistěte, že používáte správný název souboru a cestu.
+### Co když můj dokument neobsahuje zadanou záložku?
+Pokud záložka neexistuje, metoda vyvolá chybu. Před pokusem o její zobrazení/skrytí se ujistěte, že záložka existuje.
 
-#### Otázka: Jak mohu znovu zobrazit skrytou záložku?
-
- Odpověď: Chcete-li znovu zobrazit skrytou záložku, musíte použít stejnou`ShowHideBookmarkedContent` funkce předávající hodnotu`true` pro booleovský parametr, který označuje, zda se má záložka zobrazit nebo skrýt.
-
-#### Otázka: Mohu použít podmínky k zobrazení nebo skrytí záložek na základě hodnot slučovacích polí v dokumentu?
-
- Odpověď: Ano, můžete použít podmínky a sloučit hodnoty polí k určení, zda má být záložka zobrazena nebo skryta. Kód si můžete přizpůsobit`ShowHideBookmarkedContent` funkce zohlednit vhodné podmínky a hodnoty.
-
-#### Otázka: Jak mohu odstranit záložku v dokumentu aplikace Word pomocí Aspose.Words for .NET?
-
- Odpověď: Chcete-li odstranit záložku v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete použít`RemoveBookmarks` metoda`Document` třída. Zde je ukázkový kód:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### Jak mohu získat podporu, pokud narazím na problémy?
+ Můžete získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).

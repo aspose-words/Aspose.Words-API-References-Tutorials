@@ -83,7 +83,7 @@ In diesem Tutorial haben Sie gelernt, wie Sie Web-Erweiterungen in Aspose.Words 
 
 ### Wie füge ich einem Dokument mehrere Aufgabenbereiche der Web-Erweiterung hinzu?
 
-Um einem Dokument mehrere Aufgabenbereiche für Weberweiterungen hinzuzufügen, können Sie dieselben Schritte ausführen, die im Lernprogramm zum Hinzufügen eines einzelnen Aufgabenbereichs beschrieben werden. Wiederholen Sie den Vorgang einfach für jeden Aufgabenbereich, den Sie in das Dokument aufnehmen möchten. Jeder Aufgabenbereich kann über einen eigenen Satz von Eigenschaften und Bindungen verfügen, was Flexibilität bei der Integration webbasierter Inhalte in Ihr Dokument bietet.
+Um einem Dokument mehrere Aufgabenbereiche von Weberweiterungen hinzuzufügen, können Sie dieselben Schritte ausführen, die im Lernprogramm zum Hinzufügen eines einzelnen Aufgabenbereichs beschrieben werden. Wiederholen Sie den Vorgang einfach für jeden Aufgabenbereich, den Sie in das Dokument aufnehmen möchten. Jeder Aufgabenbereich kann über einen eigenen Satz von Eigenschaften und Bindungen verfügen, was Flexibilität bei der Integration webbasierter Inhalte in Ihr Dokument bietet.
 
 ### Kann ich das Erscheinungsbild und Verhalten eines Aufgabenbereichs einer Web-Erweiterung anpassen?
 

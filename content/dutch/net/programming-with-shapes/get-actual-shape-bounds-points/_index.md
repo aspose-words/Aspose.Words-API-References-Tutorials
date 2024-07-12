@@ -17,7 +17,7 @@ Om deze tutorial te volgen, heb je het volgende nodig:
 - Basiskennis van C# en woordenverwerking met Word-documenten.
 
 ## Stap 1: Maak een nieuw document en DocumentBuilder
- Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder`bezwaar maken tegen het werken met het document.
+ Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder` bezwaar maken tegen het werken met het document.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Stap 2: Voeg een afbeeldingsvorm in
- Gebruik de`InsertImage` werkwijze van de`DocumentBuilder` object om een afbeeldingsvorm in het document in te voegen. Geef het pad naar het afbeeldingsbestand op als parameter.
+ Gebruik de`InsertImage` werkwijze van de`DocumentBuilder`object om een afbeeldingsvorm in het document in te voegen. Geef het pad naar het afbeeldingsbestand op als parameter.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

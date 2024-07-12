@@ -17,7 +17,7 @@ Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 - Grundkenntnisse in C# und XML.
 
 ## Schritt 1: Einrichten des Dokumentverzeichnisses
- Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -68,4 +68,4 @@ doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 	doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 ```
 
-Das ist es! Sie haben erfolgreich ein SDT mit Aspose.Words für .NET an ein CustomXmlPart in Ihrem Word-Dokument gebunden.
+Das ist es! Sie haben mit Aspose.Words für .NET erfolgreich ein SDT an ein CustomXmlPart in Ihrem Word-Dokument gebunden.

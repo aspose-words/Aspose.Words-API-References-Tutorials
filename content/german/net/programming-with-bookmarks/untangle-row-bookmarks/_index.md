@@ -2,134 +2,137 @@
 title: Zeilenlesezeichen im Word-Dokument entwirren
 linktitle: Zeilenlesezeichen im Word-Dokument entwirren
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie verschachtelte Zeilenlesezeichen in einem Word-Dokument entwirren, um bestimmte Zeilen zu entfernen, ohne andere Lesezeichen zu beeinträchtigen.
+description: Entwirren Sie verworrene Zeilenlesezeichen in Ihren Word-Dokumenten mühelos mit Aspose.Words für .NET. Diese Anleitung führt Sie durch den Prozess für eine sauberere und sicherere Lesezeichenverwaltung.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
+## Einführung
 
-In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion Untangle Row Bookmarks in der Aspose.Words-Bibliothek für .NET verwendet wird. Diese Funktion ermöglicht es, die Enden von Zeilenlesezeichen in dieselbe Zeile wie die Anfänge der Lesezeichen zu setzen.
+Haben Sie schon einmal eine Situation erlebt, in der das Löschen einer Zeile in einem Word-Dokument durch ein Lesezeichen andere Lesezeichen in benachbarten Zeilen durcheinander bringt? Dies kann unglaublich frustrierend sein, insbesondere bei komplexen Tabellen. Glücklicherweise bietet Aspose.Words für .NET eine leistungsstarke Lösung: das Entwirren von Zeilenlesezeichen. 
+
+Diese Anleitung führt Sie durch den Prozess der Entwirrung von Zeilenlesezeichen in Ihren Word-Dokumenten mit Aspose.Words für .NET. Wir zerlegen den Code in leicht verständliche Schritte und erklären den Zweck jeder Funktion, sodass Sie diese lästigen Lesezeichenprobleme selbstbewusst angehen können.
 
 ## Voraussetzungen
 
-- Grundkenntnisse der Sprache C#.
-- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
+Bevor Sie loslegen, benötigen Sie einige Dinge:
 
-## Schritt 1: Dokument einlegen
+1.  Aspose.Words für .NET: Diese kommerzielle Bibliothek bietet Funktionen für die programmgesteuerte Arbeit mit Word-Dokumenten. 2. Sie können eine kostenlose Testversion herunterladen von[Download-Link](https://releases.aspose.com/words/net/) oder erwerben Sie eine Lizenz bei[kaufen](https://purchase.aspose.com/buy).
+3. AC#-Entwicklungsumgebung: Visual Studio oder jede andere C#-IDE funktionieren einwandfrei.
+4. Ein Word-Dokument mit Zeilenlesezeichen: Zu Demonstrationszwecken verwenden wir ein Beispieldokument mit dem Namen „Tabellenspaltenlesezeichen.docx“.
 
- Wir benutzen das`Document` Klasse zum Laden des vorhandenen Dokuments aus einer Datei:
+## Namespaces importieren
+
+Der erste Schritt besteht darin, die erforderlichen Namespaces in Ihr C#-Projekt zu importieren. Diese Namespaces bieten Zugriff auf die Klassen und Funktionen, die wir von Aspose.Words für .NET verwenden werden:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using System;
+```
+
+## Schritt 1: Laden Sie das Word-Dokument
+
+Wir beginnen mit dem Laden des Word-Dokuments, das die verwickelten Zeilenlesezeichen enthält.`Document` Klasse behandelt die Dokumentbearbeitung in Aspose.Words. So wird das Dokument geladen:
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Ersetzen Sie es durch den Speicherort Ihres Dokuments.
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
+ Denken Sie daran, zu ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrer Datei „Tabellenspalte Lesezeichen.docx“.
+
 ## Schritt 2: Zeilenlesezeichen entwirren
 
- Wir benutzen das`Untangle` Funktion zum Entwirren von Lesezeichen aus Zeilen. Diese Funktion führt die benutzerdefinierte Aufgabe aus, die Lesezeichenenden von Zeilen in dieselbe Zeile zu setzen, in der das Lesezeichen beginnt:
+ Hier geschieht die Magie! Die`Untangle` Funktion kümmert sich um die Entwirrung der Zeilenlesezeichen. Lassen Sie uns die Funktionalität genauer betrachten:
 
 ```csharp
-Untangle(doc);
+private void Untangle(Document doc)
+{
+   foreach (Bookmark bookmark in doc.Range.Bookmarks)
+   {
+	   // Holen Sie sich die übergeordnete Zeile des Lesezeichens und des Lesezeichenendes.
+	   Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
+	   Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+	   // Prüfen, ob Zeilen gültig und benachbart sind
+	   if (row1 != null && row2 != null && row1.NextSibling == row2)
+		   // Verschieben Sie das Lesezeichenende zum letzten Absatz der letzten Zelle der obersten Zeile.
+		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+   }
+}
 ```
+
+Hier ist eine schrittweise Erklärung, was der Code macht:
+
+ Wir durchlaufen alle Lesezeichen im Dokument mit einem`foreach` Schleife.
+Für jedes Lesezeichen rufen wir die übergeordnete Zeile sowohl des Lesezeichenanfangs (`bookmark.BookmarkStart`) und das Lesezeichenende (`bookmark.BookmarkEnd` ) Verwendung der`GetAncestor` Methode.
+Anschließend prüfen wir, ob beide Zeilen gefunden werden (`row1 != null`Und`row2 != null`und wenn es sich um benachbarte Zeilen handelt (`row1.NextSibling == row2`). Dadurch wird sichergestellt, dass wir nur Lesezeichen ändern, die sich über benachbarte Zeilen erstrecken.
+Wenn die Bedingungen erfüllt sind, verschieben wir den Lesezeichen-Endknoten an das Ende des letzten Absatzes in der letzten Zelle der obersten Zeile (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) und entwirrt sie effektiv.
 
 ## Schritt 3: Zeile per Lesezeichen löschen
 
- Wir benutzen das`DeleteRowByBookmark` Funktion zum Löschen einer bestimmten Zeile anhand ihres Lesezeichens:
+ Nachdem die Lesezeichen entwirrt sind, können wir Zeilen mit ihren Lesezeichennamen sicher löschen. Die`DeleteRowByBookmark` Funktion übernimmt diese Aufgabe:
 
 ```csharp
-DeleteRowByBookmark(doc, "ROW2");
+private void DeleteRowByBookmark(Document doc, string bookmarkName)
+{
+   Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+   Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+   row?.Remove();
+}
 ```
 
-## Schritt 4: Integrität anderer Lesezeichen prüfen
+Hier ist eine Aufschlüsselung dieser Funktion:
 
-Wir überprüfen, ob die anderen Lesezeichen nicht beschädigt wurden, indem wir prüfen, ob das Ende des Lesezeichens noch vorhanden ist:
+Wir nehmen den Lesezeichennamen (`bookmarkName`) als Eingabe.
+ Wir ermitteln das entsprechende Lesezeichenobjekt mit`doc.Range.Bookmarks[bookmarkName]`.
+ Wir erhalten dann die übergeordnete Zeile des Lesezeichens mit`GetAncestor` (ähnlich wie`Untangle` Funktion).
+Abschließend prüfen wir, ob das Lesezeichen und die Zeile vorhanden sind (`bookmark != null` Und
+
+## Schritt 4: Entwirrung überprüfen
+
+ Während`Untangle`Funktion soll die Sicherheit anderer Lesezeichen gewährleisten, es ist immer eine gute Praxis, dies zu überprüfen. So können wir überprüfen, ob beim Entwirrungsprozess nicht versehentlich das Ende eines anderen Lesezeichens gelöscht wurde:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-throw new Exception("Wrong, the end of the bookmark was deleted.");
+   throw new Exception("Wrong, the end of the bookmark was deleted.");
+```
 
+Dieser Codeausschnitt prüft, ob das Ende des Lesezeichens mit dem Namen „ROW1“ noch vorhanden ist, nachdem die Zeile mit dem Lesezeichen „ROW2“ gelöscht wurde. Wenn es null ist, wird eine Ausnahme ausgelöst, die auf ein Problem beim Entwirrungsprozess hinweist. 
+
+## Schritt 5: Speichern Sie das Dokument
+
+ Nachdem Sie die Lesezeichen entwirrt und ggf. Zeilen gelöscht haben, speichern Sie das geänderte Dokument mit dem`Save` Methode:
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Beispielquellcode für Untangle Row Bookmarks mit Aspose.Words für .NET
+Dadurch wird das Dokument mit den entwirrten Lesezeichen und allen gelöschten Zeilen unter einem neuen Dateinamen „WorkingWithBookmarks.UntangleRowBookmarks.docx“ gespeichert. 
 
-Hier ist der vollständige Beispielquellcode zum Entwirren von Lesezeichen aus Zeilen mit Aspose.Words für .NET:
-
-
-```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Table column bookmarks.docx");
-
-	//Dadurch wird die benutzerdefinierte Aufgabe ausgeführt, die Zeilenenden des Lesezeichens in dieselbe Zeile wie die Anfänge des Lesezeichens einzufügen.
-	Untangle(doc);
-
-	// Jetzt können wir problemlos Zeilen anhand eines Lesezeichens löschen, ohne die Lesezeichen anderer Zeilen zu beschädigen.
-	DeleteRowByBookmark(doc, "ROW2");
-
-	// Dies dient nur zur Überprüfung, dass das andere Lesezeichen nicht beschädigt wurde.
-	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-		throw new Exception("Wrong, the end of the bookmark was deleted.");
-
-	doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
-
-```
-
-#### Quellcode entwirren
-```csharp
-
-private void Untangle(Document doc)
-        {
-            foreach (Bookmark bookmark in doc.Range.Bookmarks)
-            {
-                // Holen Sie sich die übergeordnete Zeile des Lesezeichens und des Lesezeichen-Endknotens.
-                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-                // Wenn beide Zeilen in Ordnung sind und der Anfang und das Ende des Lesezeichens in benachbarten Zeilen liegen,
-                // Verschieben Sie den Lesezeichen-Endknoten an das Ende des letzten Absatzes in der letzten Zelle der obersten Zeile.
-                if (row1 != null && row2 != null && row1.NextSibling == row2)
-                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-            }
-        }
-
-```
-
-#### DeleteRowByBookmark-Quellcode
-```csharp
-
- private void DeleteRowByBookmark(Document doc, string bookmarkName)
-        {
-            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
-
-            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
-            row?.Remove();
-        }
-
-```
 ## Abschluss
 
-In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Zeilenlesezeichen entwirren“ von Aspose.Words für .NET verwendet wird. Wir sind einer Schritt-für-Schritt-Anleitung gefolgt, um Zeilenlesezeichen zu entwirren und eine bestimmte Zeile zu löschen, ohne andere Lesezeichen zu beschädigen.
+ Wenn Sie diese Schritte befolgen und die`Untangle`Funktion können Sie Zeilenlesezeichen in Ihren Word-Dokumenten mit Aspose.Words für .NET effektiv entwirren. Dadurch wird sichergestellt, dass das Löschen von Zeilen nach Lesezeichen keine unbeabsichtigten Folgen mit anderen Lesezeichen in benachbarten Zeilen hat. Denken Sie daran, Platzhalter wie`"YOUR DOCUMENT DIRECTORY"` durch Ihre tatsächlichen Pfade und Dateinamen.
 
-### FAQs zum Entwirren von Zeilenlesezeichen in Word-Dokumenten
+## Häufig gestellte Fragen
 
-#### F: Funktioniert „Zeilenlesezeichen entschlüsseln“ nur mit Zeilenlesezeichen in Tabellen?
+### Ist Aspose.Words für .NET kostenlos?
 
-A: Ja, die Funktion „Zeilenlesezeichen entwirren“ ist speziell dafür gedacht, Zeilenlesezeichen in Tabellen zu entwirren. Mit dieser Funktion können Zeilenlesezeichen in Arrays verarbeitet werden und sichergestellt werden, dass die Lesezeichenenden in derselben Zeile stehen wie die Lesezeichenanfänge.
+ Aspose.Words für .NET ist eine kommerzielle Bibliothek mit einer kostenlosen Testversion. Sie können sie herunterladen von[Download-Link](https://releases.aspose.com/words/net/).
 
-#### F: Ändert die Funktion „Zeilenlesezeichen entschlüsseln“ den Inhalt des Originaldokuments?
+### Kann ich Zeilenlesezeichen in Word manuell entwirren?
 
-A: Ja, die Funktion Zeilenlesezeichen entschlüsseln ändert das Originaldokument, indem sie die Enden der Zeilenlesezeichen so verschiebt, dass sie in derselben Zeile wie deren Anfänge stehen. Stellen Sie sicher, dass Sie eine Sicherungskopie des Dokuments speichern, bevor Sie diese Funktion anwenden.
+Obwohl es technisch möglich ist, kann das manuelle Entwirren von Lesezeichen in Word mühsam und fehleranfällig sein. Aspose.Words für .NET automatisiert diesen Prozess und spart Ihnen Zeit und Mühe.
 
-#### F: Wie kann ich Zeilenlesezeichen in meinem Word-Dokument identifizieren?
+###  Was passiert, wenn die`Untangle` function encounters an error?
 
-A: Zeilenlesezeichen werden normalerweise in Tabellen verwendet, um bestimmte Abschnitte zu markieren. Sie können Zeilenlesezeichen identifizieren, indem Sie die Lesezeichen im Dokument durchsuchen und prüfen, ob sich die Lesezeichen in Tabellenzeilen befinden.
+Der Code enthält einen Ausnahmehandler, der eine Ausnahme auslöst, wenn beim Entwirrungsprozess versehentlich das Ende eines anderen Lesezeichens gelöscht wird. Sie können diese Fehlerbehandlung an Ihre spezifischen Anforderungen anpassen.
 
-#### F: Ist es möglich, Zeilenlesezeichen in nicht benachbarten Tabellen zu entwirren?
+### Kann ich diesen Code verwenden, um Lesezeichen über nicht benachbarte Zeilen hinweg zu entwirren?
 
-A: Die in diesem Artikel vorgestellte Funktion „Zeilenlesezeichen entwirren“ ist dazu gedacht, Zeilenlesezeichen in benachbarten Tabellen zu entwirren. Um Zeilenlesezeichen in nicht benachbarten Tabellen zu entwirren, können je nach Struktur des Dokuments zusätzliche Anpassungen am Code erforderlich sein.
+Derzeit konzentriert sich der Code auf das Entwirren von Lesezeichen, die sich über nebeneinanderliegende Zeilen erstrecken. Das Ändern des Codes zum Verarbeiten nicht nebeneinanderliegender Zeilen würde zusätzliche Logik erfordern, um diese Szenarien zu identifizieren und zu verarbeiten.
 
-#### F: Welche anderen Manipulationen kann ich an Zeilenlesezeichen durchführen, nachdem sie aufgelöst wurden?
+### Gibt es bei der Verwendung dieses Ansatzes irgendwelche Einschränkungen?
 
-A: Sobald die Zeilenlesezeichen aufgelöst sind, können Sie je nach Bedarf verschiedene Manipulationen durchführen. Dazu können das Bearbeiten, Löschen oder Hinzufügen von Inhalt zu mit Lesezeichen versehenen Zeilen gehören. Gehen Sie mit Zeilenlesezeichen vorsichtig um, um unerwünschte Auswirkungen auf den Rest des Dokuments zu vermeiden.
+Bei diesem Ansatz wird davon ausgegangen, dass Lesezeichen in Tabellenzellen klar definiert sind. Wenn Lesezeichen außerhalb von Zellen oder an unerwarteten Stellen platziert werden, funktioniert der Entwirrungsprozess möglicherweise nicht wie beabsichtigt.

@@ -57,7 +57,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 #### Q: ドキュメントを Aspose.Words に読み込むときに、デフォルトのフォントを指定するにはどうすればよいですか?
 
-A: Aspose.Wordsでドキュメントを読み込むときにデフォルトのフォントを指定するには、`LoadOptions`クラスを設定し、`DefaultFontName`プロパティを目的のフォントの名前に変更します。
+ A: Aspose.Wordsでドキュメントを読み込むときにデフォルトのフォントを指定するには、`LoadOptions`クラスを設定し、`DefaultFontName`プロパティを目的のフォントの名前に変更します。
 
 #### Q: Aspose.Words の読み込みオプションで他にどのようなフォント設定を指定できますか?
 

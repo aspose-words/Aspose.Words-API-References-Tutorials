@@ -76,7 +76,7 @@ In diesem Tutorial haben wir erklärt, wie Sie mit Aspose.Words für .NET benutz
 ### Häufig gestellte Fragen
 
 #### F: Was bedeutet das Exportieren benutzerdefinierter Eigenschaften in ein PDF-Dokument?
-A: Durch das Exportieren benutzerdefinierter Eigenschaften in ein PDF-Dokument können zusätzliche Informationen in das generierte PDF-Dokument aufgenommen werden. Benutzerdefinierte Eigenschaften sind Metadaten, die für Ihr Dokument spezifisch sind, wie z. B. Tags, Schlüsselwörter oder Anmeldeinformationen. Durch das Exportieren dieser benutzerdefinierten Eigenschaften können Sie sie Benutzern beim Anzeigen des PDF-Dokuments zur Verfügung stellen.
+A: Durch das Exportieren benutzerdefinierter Eigenschaften in ein PDF-Dokument können zusätzliche Informationen in das generierte PDF-Dokument aufgenommen werden. Benutzerdefinierte Eigenschaften sind Metadaten, die für Ihr Dokument spezifisch sind, wie z. B. Tags, Schlüsselwörter oder Anmeldeinformationen. Indem Sie diese benutzerdefinierten Eigenschaften exportieren, können Sie sie Benutzern beim Anzeigen des PDF-Dokuments zur Verfügung stellen.
 
 #### F: Wie kann ich die benutzerdefinierten Eigenschaften eines Dokuments mit Aspose.Words für .NET in ein PDF-Dokument exportieren?
 A: Um die benutzerdefinierten Eigenschaften eines Dokuments mit Aspose.Words für .NET in ein PDF-Dokument zu exportieren, gehen Sie folgendermaßen vor:

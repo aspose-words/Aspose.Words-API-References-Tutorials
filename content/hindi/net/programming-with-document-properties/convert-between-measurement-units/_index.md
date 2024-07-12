@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- यह कोड उपयोग करता है`ConvertUtil` निर्दिष्ट मानों को इंच में बदलने के लिए Aspose.Words की क्लास (`InchToPoint` ) आप उपलब्ध अन्य रूपांतरण विधियों का भी उपयोग कर सकते हैं`ConvertUtil` मानों को अन्य माप इकाइयों में परिवर्तित करने के लिए क्लास का उपयोग करें।
+ यह कोड उपयोग करता है`ConvertUtil` निर्दिष्ट मानों को इंच में बदलने के लिए Aspose.Words की क्लास (`InchToPoint` आप उपलब्ध अन्य रूपांतरण विधियों का भी उपयोग कर सकते हैं`ConvertUtil` मानों को अन्य माप इकाइयों में परिवर्तित करने के लिए क्लास का उपयोग करें।
 
 ### .NET के लिए Aspose.Words का उपयोग करके मापन इकाइयों के बीच रूपांतरण हेतु उदाहरण स्रोत कोड
 

@@ -12,7 +12,7 @@ Aspose.Words para Java proporciona un conjunto completo de API para el procesami
 
 Los tutoriales de Aspose.Words para Java Table Processing brindan orientación detallada sobre todos los aspectos del procesamiento de tablas, desde temas básicos hasta avanzados. Estos tutoriales cubren todo, desde la creación de tablas simples hasta el llenado dinámico de tablas con datos mediante combinación de correspondencia.
 
-Siguiendo las instrucciones paso a paso y los ejemplos de código de los tutoriales de procesamiento de tablas, los desarrolladores pueden aprender rápidamente cómo usar Aspose.Words para crear y administrar tablas en sus documentos de Word. Ya sea un principiante o un desarrollador experimentado, los tutoriales de Aspose.Words para Java Table Processing pueden ayudarlo a llevar sus habilidades de procesamiento de tablas al siguiente nivel.
+Siguiendo las instrucciones paso a paso y los ejemplos de código de los tutoriales de Procesamiento de tablas, los desarrolladores pueden aprender rápidamente cómo usar Aspose.Words para crear y administrar tablas en sus documentos de Word. Ya sea un principiante o un desarrollador experimentado, los tutoriales de Aspose.Words para Java Table Processing pueden ayudarlo a llevar sus habilidades de procesamiento de tablas al siguiente nivel.
 
 Estos son algunos de los beneficios de usar Aspose.Words para Java para el procesamiento de tablas:
 

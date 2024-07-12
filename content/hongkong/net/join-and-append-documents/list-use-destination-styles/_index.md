@@ -2,49 +2,67 @@
 title: 列出使用目標樣式
 linktitle: 列出使用目標樣式
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 合併和追加 Word 文檔，同時保留目標文檔的清單樣式。
+description: 了解如何使用 Aspose.Words for .NET 無縫合併和管理文件清單。按照我們的分步教程進行高效的文檔整合。
 type: docs
 weight: 10
 url: /zh-hant/net/join-and-append-documents/list-use-destination-styles/
 ---
+## 介紹
 
-本教學將引導您完成使用 Aspose.Words for .NET 的清單使用目標樣式功能的流程。此功能可讓您在使用目標文件的清單樣式的同時加入和附加 Word 文件。
+在保持樣式一致的同時整合文件可能具有挑戰性，尤其是清單。 Aspose.Words for .NET 提供了強大的工具來管理這些複雜性，確保您的文件保持格式完整性。本教學將引導您完成將文件與清單合併的過程，使用目標樣式打造精美的最終產品。
 
 ## 先決條件
 
-在開始之前，請確保您具備以下條件：
+在深入學習本教學之前，請確保您具備以下條件：
+- Visual Studio 安裝在您的電腦上。
+- Aspose.Words for .NET 函式庫整合到您的專案中。
+- 對 C# 程式語言有基本了解。
 
-1. Aspose.Words for .NET 已安裝。您可以從 Aspose 網站下載它或透過 NuGet 安裝它。
-2. Visual Studio 或任何其他 C# 開發環境。
+## 導入命名空間
 
-## 第 1 步：初始化文件目錄
-
-首先，您需要設定文檔目錄的路徑。修改值`dataDir`變數到您的文件所在的路徑。
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 第 2 步：載入來源文檔和目標文檔
-
-接下來，您需要使用 Aspose.Words 來載入來源文檔和目標文檔`Document`班級。更新檔名`Document`根據您的文檔名稱建構函數。
+首先匯入必要的命名空間以利用 Aspose.Words 功能：
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
 
-## 步驟 3：將來源文件設定為在目標文件之後繼續
+讓我們將這個過程分解為清晰的步驟：
 
-為了確保來源文件的內容在目標文件結束後繼續，您需要設定`SectionStart`來源文檔中第一部分的屬性`SectionStart.Continuous`.
+## 第 1 步：設定文檔路徑
+
+確保您已定義文件所在的目錄路徑：
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+```
+
+代替`"YOUR_DOCUMENT_DIRECTORY_PATH"`與儲存文件的實際目錄路徑。
+
+## 第 2 步：載入來源和目標文檔
+
+使用 Aspose.Words 載入來源文件和目標文件：
+
+```csharp
+Document srcDoc = new Document(dataDir + "DocumentSource.docx");
+Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+```
+
+調整`"DocumentSource.docx"`和`"DocumentDestination.docx"`與您的實際檔案名稱。
+
+## 步驟 3：設定來源文檔的節開始
+
+為了確保文件順利合併，設定來源文件的節起始位置：
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## 第 4 步：處理清單格式
+此設定有助於保持文件之間的連續性。
 
-為了處理清單格式，您將遍歷來源文件中的每個段落並檢查它是否為清單項目。如果是，您將將該清單 ID 與目標文件中的現有清單進行比較。如果存在具有相同 ID 的列表，您將在來源文件中建立該列表的副本，並更新段落的列表格式以使用複製的列表。
+## 第 4 步：管理清單集成
+
+迭代來源文件中的段落來處理清單項目：
 
 ```csharp
 Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -54,9 +72,11 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
     if (para.IsListItem)
     {
         int listId = para.ListFormat.List.ListId;
+
         if (dstDoc.Lists.GetListByListId(listId) != null)
         {
             Aspose.Words.Lists.List currentList;
+
             if (newLists.ContainsKey(listId))
             {
                 currentList = newLists[listId];
@@ -66,73 +86,42 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
                 currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
                 newLists.Add(listId, currentList);
             }
+
             para.ListFormat.List = currentList;
         }
     }
 }
 ```
 
+此程式碼片段確保來源文件中的清單無縫整合到目標文件中，並保持其原始格式。
+
 ## 步驟 5：將來源文檔附加到目標文檔
 
-現在，您可以使用以下命令將來源文檔附加到目標文檔`AppendDocument`的方法`Document`班級。這`ImportFormatMode.UseDestinationStyles`參數可確保在追加操作期間使用目標文件的清單樣式。
+將修改後的來源文檔合併到目標文檔中：
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## 第 6 步：儲存最終文檔
+此命令會合併文檔，同時保留目標樣式。
 
-最後，使用啟用的「清單使用目標樣式」功能儲存合併的文檔`Save`的方法`Document`班級。
+## 結論
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+透過執行這些步驟，您可以使用 Aspose.Words for .NET 有效地管理和合併文件之間的清單。這種方法可確保您的最終文件保持一致的樣式和格式，從而提高整體文件管理效率。
 
-### 使用 Aspose.Words for .NET 的清單使用目標樣式的範例原始程式碼 
+## 常見問題解答
 
-以下是 C# 中使用 Aspose.Words for .NET 的「清單使用目標樣式」功能的完整原始碼：
+### 如何使用 Aspose.Words for .NET 處理巢狀清單？
+Aspose.Words 提供了透過迭代文件節點和檢查清單結構來管理巢狀清單的方法。
 
+### 在文件合併中使用目標樣式有什麼好處？
+目標樣式有助於保持合併文件格式的一致性，確保專業的外觀。
 
-```csharp
-	//文檔目錄的路徑
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Aspose.Words支援跨平台文件合併嗎？
+是的，Aspose.Words 支援跨各種平台的文件合併，包括 Windows 和 Linux 環境。
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//將來源文件設定為在目標文件結尾後直接繼續。
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	//追蹤創建的列表。
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			//檢查目標文件是否已包含具有此 ID 的清單。如果確實如此，那麼這可能
-			//使兩個列表一起運行。相反，請在來源文件中建立清單的副本。
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				//該 ID 已存在新複製的列表，檢索儲存的列表，
-				//並將其用於當前段落。
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					//將此清單的副本新增至文件中並儲存以供以後參考。
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				//將此段落的清單設定為複製的清單。
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	//將來源文件附加到目標文件的末端。
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### 我可以在文件合併期間自訂清單格式嗎？
+Aspose.Words 允許對清單格式進行廣泛的自定義，從而實現客製化的文件整合解決方案。
 
-就是這樣！您已使用 Aspose.Words for .NET 成功實現了「清單使用目標樣式」功能。最終文件將包含與目標文件中的清單樣式合併的內容。
+### 在哪裡可以找到有關使用 Aspose.Words 進行高級文件管理的更多資源？
+探索[Aspose.Words 文檔](https://reference.aspose.com/words/net/)取得全面的指南和 API 參考。

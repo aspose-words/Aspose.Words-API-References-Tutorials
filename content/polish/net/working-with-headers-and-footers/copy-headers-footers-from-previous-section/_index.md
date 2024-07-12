@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Krok 2: Uzyskaj dostęp do bieżącej sekcji
 
-Pobieramy bieżącą sekcję za pomocą`builder.CurrentSection`. Ta sekcja będzie miejscem docelowym, do którego skopiujemy nagłówki i stopki z poprzedniej sekcji.
+ Pobieramy bieżącą sekcję za pomocą`builder.CurrentSection`Ta sekcja będzie miejscem docelowym, do którego skopiujemy nagłówki i stopki z poprzedniej sekcji.
 
 ### Krok 3: Zdefiniuj poprzednią sekcję
 

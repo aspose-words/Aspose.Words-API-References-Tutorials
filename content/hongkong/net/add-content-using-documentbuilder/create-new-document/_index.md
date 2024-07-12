@@ -77,7 +77,7 @@ builder.Writeln("Hello World!");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-現在你就擁有了！您剛剛使用 Aspose.Words for .NET 建立了一個新的 Word 文件。
+現在你就得到它了！您剛剛使用 Aspose.Words for .NET 建立了一個新的 Word 文件。
 
 ## 結論
 

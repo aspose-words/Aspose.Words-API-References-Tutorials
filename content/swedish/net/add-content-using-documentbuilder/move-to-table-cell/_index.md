@@ -51,7 +51,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 3: Flytta till specifik tabellcell
 
-Det är här magin händer. Vi flyttar byggaren till en specifik cell i tabellen. I det här exemplet flyttar vi till rad 3, cell 4 i den första tabellen i dokumentet.
+Här händer magin. Vi flyttar byggaren till en specifik cell i tabellen. I det här exemplet flyttar vi till rad 3, cell 4 i den första tabellen i dokumentet.
 
 ```csharp
 // Flytta byggaren till rad 3, cell 4 i den första tabellen.
@@ -85,7 +85,7 @@ Grattis! Du har precis lärt dig hur du flyttar till en specifik tabellcell i et
  Ja, genom att ange rätt tabellindex i`MoveToCell` metod kan du navigera till valfri cell i valfri tabell i dokumentet.
 
 ### Hur hanterar jag celler som sträcker sig över flera rader eller kolumner?
- Du kan använda`RowSpan` och`ColSpan` egenskaper hos`Cell` klass för att hantera sammanslagna celler.
+ Du kan använda`RowSpan`och`ColSpan` egenskaper hos`Cell` klass för att hantera sammanslagna celler.
 
 ### Är det möjligt att formatera texten inuti cellen?
  Absolut! Använda sig av`DocumentBuilder` metoder som`Font.Size`, `Font.Bold`, och andra för att formatera din text.

@@ -103,7 +103,7 @@ Trong ví dụ này, chúng tôi lưu một bản sao của tài liệu với ph
 
 ### Tôi có thể chấp nhận hoặc từ chối các bản sửa đổi theo chương trình không?
 
- Có, bạn có thể chấp nhận hoặc từ chối các bản sửa đổi bằng Aspose.Words for Java. Sử dụng`acceptAllRevisions` Và`rejectAllRevisions` phương pháp quản lý sửa đổi.
+ Có, bạn có thể chấp nhận hoặc từ chối các bản sửa đổi bằng Aspose.Words for Java. Sử dụng`acceptAllRevisions`Và`rejectAllRevisions` phương pháp quản lý sửa đổi.
 
 ### Có thể tạo nhiều phiên bản của một tài liệu không?
 

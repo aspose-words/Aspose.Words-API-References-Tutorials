@@ -129,7 +129,7 @@ Aspose.Words voor Java is veelzijdig en kan in verschillende scenario's worden g
 
 ## Tips voor het oplossen van problemen
 
-Als u problemen ondervindt bij het werken met vormen en afbeeldingen, raadpleeg dan de Aspose.Words voor Java-documentatie of communityforums voor oplossingen. Veelvoorkomende problemen zijn onder meer de compatibiliteit van afbeeldingsformaten en problemen met lettertypen.
+Als u problemen ondervindt tijdens het werken met vormen en afbeeldingen, raadpleeg dan de Aspose.Words voor Java-documentatie of communityforums voor oplossingen. Veelvoorkomende problemen zijn onder meer de compatibiliteit van afbeeldingsformaten en problemen met lettertypen.
 
 ## Conclusie
 
@@ -139,7 +139,7 @@ Het verbeteren van uw documenten met vormen en afbeeldingen kan de visuele aantr
 
 ### Hoe kan ik het formaat van een vorm in mijn document wijzigen?
 
- Om het formaat van een vorm te wijzigen, gebruikt u de`setWidth` En`setHeight` methoden op het vormobject. Om bijvoorbeeld een vorm van 150 pixels breed en 75 pixels hoog te maken:
+ Om het formaat van een vorm te wijzigen, gebruikt u de`setWidth`En`setHeight` methoden op het vormobject. Om bijvoorbeeld een vorm van 150 pixels breed en 75 pixels hoog te maken:
 
 ```java
 shape.setWidth(150);

@@ -16,14 +16,14 @@ Ať už potřebujete nahradit konkrétní slova, aktualizovat textové šablony 
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Jednoduchý text najít a nahradit ve Wordu](./simple-find-replace/) | Naučte se, jak provést jednoduché vyhledání a nahrazení textu v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Meta Znaky Ve Vyhledávání Vzoru](./meta-characters-in-search-pattern/) | Naučte se používat metaznaky ve vyhledávacím vzoru pomocí Aspose.Words for .NET k manipulaci s dokumenty aplikace Word. |
-| [Word nahradit text obsahující meta znaky](./replace-text-containing-meta-characters/) | Naučte se, jak nahradit text obsahující metaznaky v dokumentech aplikace Word pomocí Aspose.Words for .NET. |
-| [Ignorovat text uvnitř polí](./ignore-text-inside-fields/) | Naučte se používat funkci "Ignorovat text uvnitř polí" Aspose.Words for .NET. |
-| [Ignorovat text uvnitř Odstranit revize](./ignore-text-inside-delete-revisions/) | Naučte se používat funkci "Ignorovat text uvnitř Delete Revisions" Aspose.Words for .NET. |
-| [Ignorujte text uvnitř revizí vložení](./ignore-text-inside-insert-revisions/) | Zjistěte, jak používat funkci "Ignorovat text uvnitř revizí vkládání" Aspose.Words for .NET k manipulaci s revizemi vkládání v dokumentech aplikace Word. |
-| [Nahradit text v zápatí](./replace-text-in-footer/) | Naučte se, jak nahradit text v zápatí dokumentů aplikace Word pomocí Aspose.Words for .NET. |
-| [Nahradit Regex](./replace-with-regex/) | Naučte se, jak provádět nahrazování textu na základě regulárních výrazů v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Rozpoznávání a substituce v rámci náhradních vzorů](./recognize-and-substitutions-within-replacement-patterns/) | Naučte se používat vzory nahrazování s rozpoznáváním a substitucemi v Aspose.Words for .NET k manipulaci s dokumenty Wordu. |
-| [Nahradit řetězcem](./replace-with-string/) | Naučte se, jak nahradit text řetězcem v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Nahradit text v tabulce](./replace-text-in-table/) | Naučte se, jak nahradit text v tabulce v dokumentu Word pomocí Aspose.Words for .NET. |
+| [Jednoduchý text najít a nahradit ve Wordu](./simple-find-replace/) | Naučte se, jak snadno najít a nahradit text v dokumentech aplikace Word pomocí Aspose.Words for .NET. Včetně průvodce krok za krokem. |
+| [Meta Znaky Ve Vyhledávání Vzoru](./meta-characters-in-search-pattern/) | V tomto podrobném podrobném průvodci se dozvíte, jak používat metaznaky ve vzorcích vyhledávání pomocí Aspose.Words for .NET. Optimalizujte zpracování dokumentů. |
+| [Word nahradit text obsahující meta znaky](./replace-text-containing-meta-characters/) | Naučte se, jak nahradit text obsahující meta znaky v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného a poutavého tutoriálu pro bezproblémovou manipulaci s textem. |
+| [Ignorovat text uvnitř polí](./ignore-text-inside-fields/) | Naučte se manipulovat s textem uvnitř polí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento tutoriál poskytuje návod krok za krokem s praktickými příklady. |
+| [Ignorovat text uvnitř Odstranit revize](./ignore-text-inside-delete-revisions/) | Naučte se, jak zacházet se sledovanými revizemi v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ovládněte automatizaci dokumentů s tímto komplexním výukovým programem. |
+| [Ignorujte text uvnitř revizí vložení](./ignore-text-inside-insert-revisions/) | Naučte se, jak efektivně spravovat revize dokumentů pomocí Aspose.Words for .NET. Objevte techniky, jak ignorovat text uvnitř revizí vkládání pro zjednodušené úpravy. |
+| [Nahradit text v zápatí](./replace-text-in-footer/) | Naučte se, jak nahradit text v zápatí dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupujte podle tohoto průvodce, abyste zvládli nahrazování textu pomocí podrobných příkladů. |
+| [Nahradit Regex](./replace-with-regex/) | Naučte se používat regulární výraz pro hledání a nahrazování v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce krok za krokem, abyste zvládli manipulaci s textem. |
+| [Rozpoznávání a substituce v rámci náhradních vzorů](./recognize-and-substitutions-within-replacement-patterns/) | Naučte se rozpoznávat a nahrazovat text v nahrazovacích vzorcích pomocí Aspose.Words for .NET. Průvodce krok za krokem s podrobnými příklady. |
+| [Nahradit řetězcem](./replace-with-string/) | Naučte se, jak nahradit řetězce v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Ideální pro vývojáře, kteří chtějí automatizovat úpravy dokumentů. |
+| [Nahradit text v tabulce](./replace-text-in-table/) | Bez námahy nahraďte text v tabulce aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem. |

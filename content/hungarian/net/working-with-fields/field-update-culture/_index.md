@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. lépés: Az időmező beszúrása
 
- Használjuk a`InsertField()` módszer egy időmező beillesztésére a dokumentumba.
+ Használjuk a`InsertField()`módszer egy időmező beillesztésére a dokumentumba.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

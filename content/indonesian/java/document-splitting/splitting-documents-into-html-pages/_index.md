@@ -79,7 +79,7 @@ Ya, Anda dapat menyesuaikan kriteria pemisahan sesuai kebutuhan Anda. Aspose.Wor
 
 ### Apakah Aspose.Words cocok untuk dokumen besar?
 
-Ya, Aspose.Words dapat menangani dokumen besar secara efisien, menjadikannya pilihan tepat untuk memproses dokumen Word yang luas.
+Ya, Aspose.Words dapat menangani dokumen berukuran besar secara efisien, menjadikannya pilihan tepat untuk memproses dokumen Word yang luas.
 
 ### Bisakah saya mengonversi halaman HTML kembali ke dokumen Word?
 

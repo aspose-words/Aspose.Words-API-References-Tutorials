@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Kode ini membuat sebuah instance dari`Document` Dan`DocumentBuilder` untuk membuat dokumen tersebut. Ini menyisipkan`<img>` tag ke dalam dokumen dengan gambar berkode base64.
+ Kode ini membuat sebuah instance dari`Document`Dan`DocumentBuilder` untuk membuat dokumen tersebut. Ini menyisipkan`<img>` tag ke dalam dokumen dengan gambar yang dikodekan base64.
 
 ## Langkah 3: Tetapkan opsi penyimpanan HTML
 

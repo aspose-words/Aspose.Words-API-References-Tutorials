@@ -1,6 +1,6 @@
 ---
-title: Agregar japonés como idiomas de edición
-linktitle: Agregar japonés como idiomas de edición
+title: Agregar japonés como idioma de edición
+linktitle: Agregar japonés como idioma de edición
 second_title: API de procesamiento de documentos Aspose.Words
 description: Guía paso a paso para agregar japonés como idioma de edición con Aspose.Words para .NET.
 type: docs
@@ -21,7 +21,7 @@ En este paso cargaremos el documento de Word que no contiene un idioma de edici�
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// Establezca las preferencias de idioma que se utilizarán al cargar el documento.
+//Establezca las preferencias de idioma que se utilizarán al cargar el documento.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";

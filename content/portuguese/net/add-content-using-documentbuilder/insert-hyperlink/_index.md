@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Neste trecho, estamos definindo o caminho para o diretório onde nosso documento será salvo e inicializando um novo`Document` e`DocumentBuilder` instância.
+ Neste trecho, estamos definindo o caminho para o diretório onde nosso documento será salvo e inicializando um novo`Document`e`DocumentBuilder` instância.
 
 ## Etapa 3: escrever o texto inicial
 

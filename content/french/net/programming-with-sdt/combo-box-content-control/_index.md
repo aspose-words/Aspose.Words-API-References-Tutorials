@@ -17,7 +17,7 @@ Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 - Connaissance de base de C# et du traitement de mots avec des documents Word.
 
 ## Étape 1 : configurer le répertoire de documents
- Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
+ Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Étape 3 : ajouter des éléments à la liste déroulante
- Ajoutez des éléments à la liste déroulante en utilisant le`ListItems` propriété du`StructuredDocumentTag` Chaque élément est représenté par un`SdtListItem` objet, qui prend un texte d’affichage et une valeur. Dans cet exemple, nous ajoutons trois éléments à la liste déroulante.
+ Ajoutez des éléments à la liste déroulante en utilisant le`ListItems` propriété du`StructuredDocumentTag` . Chaque élément est représenté par un`SdtListItem` objet, qui prend un texte d’affichage et une valeur. Dans cet exemple, nous ajoutons trois éléments à la liste déroulante.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

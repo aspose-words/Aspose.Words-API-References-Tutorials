@@ -14,7 +14,7 @@ Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn 
 
 ## Bước 1: Khởi tạo đối tượng Document và DocumentBuilder
 
- Đầu tiên, khởi tạo`Document` Và`DocumentBuilder` các đối tượng:
+ Đầu tiên, khởi tạo`Document`Và`DocumentBuilder` các đối tượng:
 
 ```csharp
 Document doc = new Document();

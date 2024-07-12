@@ -109,7 +109,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 #### 问：我可以使用 Aspose.Words for .NET 对目录应用其他格式更改吗？
 
-答：是的，除了更改样式之外，您还可以使用 Aspose.Words for .NET 对目录应用各种格式更改。例如，您可以修改字体大小、颜色、对齐方式或添加其他格式属性以增强目录的外观。
+答：是的，除了更改样式之外，您还可以使用 Aspose.Words for .NET 对目录应用各种格式更改。例如，您可以修改字体大小、颜色、对齐方式，或添加其他格式属性以增强目录的外观。
 
 #### 问：如何使用 Aspose.Words for .NET 为目录中的特定级别指定自定义样式？
 

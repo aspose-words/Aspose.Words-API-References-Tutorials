@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2단계: 문서 만들기 및 서식 지정
- 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder`문서를 작성하는 클래스입니다. 사용`Font` 의 재산`DocumentBuilder` 글꼴 서식 속성에 액세스합니다.
+ 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder` 문서를 작성하는 클래스입니다. 사용`Font` 의 재산`DocumentBuilder`글꼴 서식 속성에 액세스합니다.
 
 ```csharp
 Document doc = new Document();

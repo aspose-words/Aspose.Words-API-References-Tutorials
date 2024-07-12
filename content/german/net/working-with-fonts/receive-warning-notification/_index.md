@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.WarningInfo;
 ```
 
-## Schritt 1: Definieren Sie das Dokumentverzeichnis
+## Schritt 1: Dokumentverzeichnis definieren
 
 Geben Sie zunächst das Verzeichnis an, in dem Ihr Dokument gespeichert ist. Dies ist wichtig, um das zu verarbeitende Dokument zu finden.
 
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Schritt 3: Seitenlayout aktualisieren
 
- Ruf den`UpdatePageLayout` -Methode. Dadurch wird das Dokument im Speicher gerendert und es werden alle Warnungen erfasst, die während des Renderings auftreten.
+ Ruf den`UpdatePageLayout`-Methode. Dadurch wird das Dokument im Speicher gerendert und es werden alle Warnungen erfasst, die während des Renderings auftreten.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ Nein, Sie können nur eine Standardschriftart als Ersatz angeben. Sie können je
 
 ###  F3: Kann ich andere Arten von Warnungen mit`IWarningCallback`?
 
- Ja das`IWarningCallback` Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
+ Ja das`IWarningCallback`Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
 
 ### F4: Wo finde ich Unterstützung für Aspose.Words?
 

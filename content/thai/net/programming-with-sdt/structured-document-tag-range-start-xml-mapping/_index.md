@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสารและสร้างส่วน XML
- โหลดเอกสาร Word โดยใช้ไฟล์`Document` Constructor โดยส่งเส้นทางไปยังเอกสารเป็นพารามิเตอร์ สร้างส่วน XML ที่มีข้อมูลที่คุณต้องการแสดงภายในแท็กเอกสารที่มีโครงสร้าง
+ โหลดเอกสาร Word โดยใช้ไฟล์`Document`Constructor โดยส่งเส้นทางไปยังเอกสารเป็นพารามิเตอร์ สร้างส่วน XML ที่มีข้อมูลที่คุณต้องการแสดงภายในแท็กเอกสารที่มีโครงสร้าง
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// สร้าง StructuredDocumentTag ที่จะแสดงเนื้อหาของ CustomXmlPart ของเราในเอกสาร
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// หากเราตั้งค่าการแมปสำหรับ StructuredDocumentTag ของเรา
-	// โดยจะแสดงเฉพาะส่วนหนึ่งของ CustomXmlPart ที่ XPath ชี้ไป
+	//โดยจะแสดงเฉพาะส่วนหนึ่งของ CustomXmlPart ที่ XPath ชี้ไป
 	// XPath นี้จะชี้ไปที่เนื้อหาองค์ประกอบ "<text>" ที่สองขององค์ประกอบ "<root>" แรกของ CustomXmlPart ของเรา
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

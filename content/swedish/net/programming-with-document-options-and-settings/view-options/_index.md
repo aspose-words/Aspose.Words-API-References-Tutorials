@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-document-options-and-settings/view-options/
 ---
 
-den här handledningen går vi igenom C#-källkoden för att konfigurera visningsalternativ med Aspose.Words för .NET. Med den här funktionen kan du anpassa visningsläget och zoomnivån i ett dokument.
+I den här handledningen går vi igenom C#-källkoden för att konfigurera visningsalternativ med Aspose.Words för .NET. Med den här funktionen kan du anpassa visningsläget och zoomnivån i ett dokument.
 
 ## Steg 1: Projektinställning
 

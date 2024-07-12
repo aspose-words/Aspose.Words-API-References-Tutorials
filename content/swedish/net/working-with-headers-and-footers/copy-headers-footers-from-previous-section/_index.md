@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Steg 2: Gå till den aktuella sektionen
 
-Vi hämtar det aktuella avsnittet med hjälp av`builder.CurrentSection`. Det här avsnittet kommer att vara målet där vi kommer att kopiera sidhuvuden och sidfötter från föregående avsnitt.
+ Vi hämtar det aktuella avsnittet med hjälp av`builder.CurrentSection`Det här avsnittet kommer att vara målet där vi kommer att kopiera sidhuvuden och sidfötter från föregående avsnitt.
 
 ### Steg 3: Definiera föregående avsnitt
 

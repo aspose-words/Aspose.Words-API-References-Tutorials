@@ -17,14 +17,14 @@ url: /ru/net/programming-with-shapes/vertical-anchor/
 - Базовые знания C# и обработки документов Word.
 
 ## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором вы хотите сохранить документ.
+ Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Шаг 2. Создайте новый документ и DocumentBuilder
- Создайте новый экземпляр`Document` класс и`DocumentBuilder`объект для работы с документом.
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
 
 ```csharp
 Document doc = new Document();

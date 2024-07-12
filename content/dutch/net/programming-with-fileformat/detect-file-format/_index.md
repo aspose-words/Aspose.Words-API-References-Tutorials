@@ -14,7 +14,7 @@ Zorg ervoor dat u, voordat u begint, de Aspose.Words voor .NET-bibliotheek in uw
 
 ## Stap 1: Definieer mappen
 
- Om te beginnen moet u de mappen definiëren waarin u de bestanden wilt opslaan op basis van hun formaat. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentenmap. We maken de mappen "Ondersteund", "Onbekend", "Gecodeerd" en "Pre97" aan als deze nog niet bestaan.
+ Om te beginnen moet u de mappen definiëren waarin u de bestanden wilt opslaan op basis van hun formaat. Vervangen`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad naar uw documentenmap. We maken de mappen "Ondersteund", "Onbekend", "Gecodeerd" en "Pre97" aan als deze nog niet bestaan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## Stap 2: Blader door bestanden
 
- Dan gebruiken wij de`GetFiles` werkwijze van de`Directory` class om de lijst met bestanden in de opgegeven map op te halen. Wij gebruiken ook een`Where`clausule om een specifiek bestand met de naam "Beschadigd document.docx" uit te sluiten.
+ Dan gebruiken wij de`GetFiles` werkwijze van de`Directory` class om de lijst met bestanden in de opgegeven map op te halen. Wij gebruiken ook een`Where` clausule om een specifiek bestand met de naam "Beschadigd document.docx" uit te sluiten.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ Dat is alles ! U hebt met succes de indeling van verschillende documentbestanden
 
 #### Hoe kan ik het formaat van een documentbestand detecteren met Aspose.Words voor .NET?
 
- Om de indeling van een documentbestand te detecteren met Aspose.Words voor .NET, kunt u de stappen in de zelfstudie volgen. De ... gebruiken`DetectFileFormat` werkwijze van de`FileFormatUtil`class kunt u het formaat van het documentbestand detecteren. Hiermee kunt u bepalen of het een Microsoft Word 97-2003-document, een sjabloon, een Office Open XML WordprocessingML-document of een ander ondersteund formaat is. De code in de zelfstudie begeleidt u bij het implementeren van deze functie.
+ Om de indeling van een documentbestand te detecteren met Aspose.Words voor .NET, kunt u de stappen in de zelfstudie volgen. De ... gebruiken`DetectFileFormat` werkwijze van de`FileFormatUtil` class kunt u het formaat van het documentbestand detecteren. Hiermee kunt u bepalen of het een Microsoft Word 97-2003-document, een sjabloon, een Office Open XML WordprocessingML-document of een ander ondersteund formaat is. De code in de zelfstudie begeleidt u bij het implementeren van deze functie.
 
 #### Welke documentformaten ondersteunt Aspose.Words voor .NET?
 

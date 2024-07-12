@@ -30,7 +30,7 @@ Document revisedDocument = new Document("revised.docx");
 
 ## 比较文档版本
 
-现在我们已经加载了文档，让我们继续进行比较。 Aspose.Words for Java 为此提供了一种简单的方法。
+现在我们已经加载了文档，让我们继续进行比较。 Aspose.Words for Java 提供了一种简单的方法。
 
 ```java
 //比较文档

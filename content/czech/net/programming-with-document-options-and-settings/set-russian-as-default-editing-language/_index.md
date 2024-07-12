@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/
 ---
 
-V tomto tutoriálu vás provedeme zdrojovým kódem C# pro nastavení ruštiny jako výchozího jazyka pro úpravy pomocí Aspose.Words pro .NET. Tato funkce umožňuje nastavit výchozí jazyk při načítání dokumentu.
+tomto tutoriálu vás provedeme zdrojovým kódem C# pro nastavení ruštiny jako výchozího jazyka pro úpravy pomocí Aspose.Words pro .NET. Tato funkce umožňuje nastavit výchozí jazyk při načítání dokumentu.
 
 ## Krok 1: Nastavení projektu
 

@@ -17,14 +17,14 @@ För att följa denna handledning måste du ha följande:
 - Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Steg 2: Skapa en Document and DocumentBuilder
- Skapa en ny instans av`Document` klass och a`DocumentBuilder` för att bygga dokumentets innehåll.
+ Skapa en ny instans av`Document` klass och a`DocumentBuilder` att bygga dokumentets innehåll.
 
 ```csharp
 Document doc = new Document();
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Steg 4: Skapa en tabell- och tabellstruktur
- Börja skapa en tabell med hjälp av`StartTable` metod för`DocumentBuilder` . Lägg till tabellceller och innehåll med hjälp av`InsertCell` och`Write` metoder.
+ Börja skapa en tabell med hjälp av`StartTable` metod för`DocumentBuilder` . Lägg till tabellceller och innehåll med hjälp av`InsertCell`och`Write` metoder.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Skapa en`Row`för att representera varje objekt i det upprepade avsnittet och lägga till det till det upprepade avsnittet.
+ Skapa en`Row` för att representera varje objekt i det upprepade avsnittet och lägga till det till det upprepade avsnittet.
 
 ```csharp
 Row row = new Row(doc);

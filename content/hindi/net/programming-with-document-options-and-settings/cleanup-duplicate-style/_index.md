@@ -28,7 +28,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## चरण 3: सफाई से पहले शैलियों की गणना करें
 
-सफाई शुरू करने से पहले, हम दस्तावेज़ में मौजूद शैलियों की संख्या की गणना करेंगे। शैलियों की संख्या प्रदर्शित करने के लिए निम्न कोड का उपयोग करें:
+सफाई के साथ आगे बढ़ने से पहले, हम दस्तावेज़ में मौजूद शैलियों की संख्या की गणना करेंगे। शैलियों की संख्या प्रदर्शित करने के लिए निम्न कोड का उपयोग करें:
 
 ```csharp
 Console.WriteLine(doc.Styles.Count);
@@ -49,7 +49,7 @@ doc. Cleanup(options);
 
 ## चरण 5: सफाई के बाद स्टाइल की गिनती करें
 
-सफाई करने के बाद, हम फिर से स्टाइल की संख्या गिनेंगे ताकि यह पता चल सके कि यह कम हुई है या नहीं। नई स्टाइल की संख्या दिखाने के लिए निम्न कोड का उपयोग करें:
+सफाई करने के बाद, हम फिर से स्टाइल की संख्या गिनेंगे ताकि यह पता चल सके कि यह कम हुई है या नहीं। नई स्टाइल की संख्या प्रदर्शित करने के लिए निम्न कोड का उपयोग करें:
 
 ```csharp
 Console.WriteLine(doc.Styles.Count);
@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//क्लीनअप के बाद शैलियों की संख्या कम हो गई।
+	// क्लीनअप के बाद शैलियों की संख्या कम हो गई।
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

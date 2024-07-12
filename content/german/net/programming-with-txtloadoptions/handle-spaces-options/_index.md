@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- In diesem Schritt konfigurieren wir die Optionen zum Laden des TXT-Dokuments. Wir erstellen ein neues`TxtLoadOptions` Objekt und setzen Sie den`LeadingSpacesOptions` Und`TrailingSpacesOptions` Eigenschaften zu`TxtLeadingSpacesOptions.Trim` Und`TxtTrailingSpacesOptions.Trim` Dies weist Aspose.Words an, beim Laden des Dokuments führende und nachfolgende Leerzeichen aus den Zeilen zu entfernen.
+ In diesem Schritt konfigurieren wir die Optionen zum Laden des TXT-Dokuments. Wir erstellen ein neues`TxtLoadOptions` Objekt und setzen Sie den`LeadingSpacesOptions`Und`TrailingSpacesOptions` Eigenschaften zu`TxtLeadingSpacesOptions.Trim`Und`TxtTrailingSpacesOptions.Trim` Dies weist Aspose.Words an, beim Laden des Dokuments führende und nachfolgende Leerzeichen aus den Zeilen zu entfernen.
 
 ## Schritt 4: Dokument einlegen
 
@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- In diesem letzten Schritt speichern wir das resultierende Dokument im .docx-Format mit dem`Save` Methode und Übergabe des Pfads an die Ausgabedatei.
+ In diesem letzten Schritt speichern wir das resultierende Dokument im .docx-Format mit dem`Save` Methode und Übergabe des Pfads zur Ausgabedatei.
 
 Jetzt können Sie den Quellcode ausführen, um das Textdokument zu laden, indem Sie Optionen zur Behandlung von Leerzeichen angeben. Das resultierende Dokument wird im angegebenen Verzeichnis unter dem Namen „WorkingWithTxtLoadOptions.HandleSpacesOptions.docx“ gespeichert.
 

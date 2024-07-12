@@ -8,7 +8,7 @@ weight: 10
 url: /ja/net/programming-with-pdfsaveoptions/interpolate-images/
 ---
 
-この記事では、Aspose.Words for .NET を使用して PDF ドキュメントで画像補間機能を使用する方法について、ステップ バイ ステップで説明します。コードの各部分を詳しく説明します。このチュートリアルの最後には、PDF に変換するときに画像補間を有効にする方法が理解できるようになります。
+この記事では、Aspose.Words for .NET を使用して PDF ドキュメントで画像補間機能を使用する方法について、ステップ バイ ステップで説明します。コードの各部分を詳しく説明します。このチュートリアルの最後には、PDF に変換するときに画像補間を有効にする方法がわかります。
 
 開始する前に、プロジェクトに Aspose.Words for .NET ライブラリがインストールされ、構成されていることを確認してください。ライブラリとインストール手順は、Aspose Web サイトで参照できます。
 
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## ステップ3: フレーム補間を使用してPDFとして保存するためのオプションを設定する
+## ステップ3: フレーム補間でPDFとして保存するためのオプションを設定する
 
 PDFに変換するときに画像の補間を有効にするには、`PdfSaveOptions`オブジェクトを設定することで`InterpolateImages`財産に`true`.
 

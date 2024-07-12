@@ -37,7 +37,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 // Κλωνοποιήστε τη συστοιχία
 Table tableClone = (Table)table.Clone(true);
 
-// Εισαγάγετε τον κλωνοποιημένο πίνακα στο έγγραφο μετά το πρωτότυπο
+//Εισαγάγετε τον κλωνοποιημένο πίνακα στο έγγραφο μετά το πρωτότυπο
 table.ParentNode.InsertAfter(tableClone, table);
 
 // Εισαγάγετε μια κενή παράγραφο μεταξύ των δύο πινάκων
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 	// Κλωνοποιήστε τον πίνακα και τοποθετήστε τον στο έγγραφο μετά το πρωτότυπο.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	//Εισαγάγετε μια κενή παράγραφο μεταξύ των δύο πινάκων,
+	// Εισαγάγετε μια κενή παράγραφο μεταξύ των δύο πινάκων,
 	// ή αλλιώς θα συνδυαστούν σε ένα κατά την αποθήκευση, αυτό έχει να κάνει με την επικύρωση εγγράφων.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

@@ -2,90 +2,121 @@
 title: Rozmotat v dokumentu Word
 linktitle: Rozmotat v dokumentu Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak rozmotat vnořené záložky ve wordovém dokumentu v sousedních řádcích tabulky pomocí Aspose.Words for .NET.
+description: Zvládněte rozmotávání záložek v dokumentech aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro .NET vývojáře.
 type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/untangle/
 ---
+## Úvod
 
-V tomto článku prozkoumáme zdrojový kód C# výše, abychom pochopili, jak používat funkci Untangle v knihovně Aspose.Words for .NET. Tato funkce rozloží vnořené záložky, které jsou v sousedních řádcích tabulky.
+Procházení dokumentu aplikace Word pomocí programu může být trochu jako hledání cesty bludištěm. Můžete se setkat se záložkami, nadpisy, tabulkami a dalšími prvky, se kterými je třeba manipulovat. Dnes se ponoříme do běžného, ale složitého úkolu: rozbalování záložek v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento tutoriál vás provede procesem krok za krokem a zajistí, že porozumíte každé části cesty.
 
 ## Předpoklady
 
-- Základní znalost jazyka C#.
-- Vývojové prostředí .NET s nainstalovanou knihovnou Aspose.Words.
+Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-## Krok 1: Procházení záložek dokumentu
+1.  Aspose.Words for .NET: Budete potřebovat knihovnu Aspose.Words for .NET. Pokud ji nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio.
+3. Základní znalost C#: Pochopení základů C# vám pomůže sledovat úryvky kódu a vysvětlení.
 
-Smyčku foreach používáme k procházení všech záložek přítomných v dokumentu:
+## Importovat jmenné prostory
+
+Chcete-li začít, ujistěte se, že importujete potřebné jmenné prostory. To vám umožní přístup ke třídám a metodám potřebným pro manipulaci s dokumenty aplikace Word pomocí Aspose.Words.
 
 ```csharp
-foreach(Bookmark bookmark in doc.Range.Bookmarks)
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## Krok 1: Vložte svůj dokument
+
+Prvním krokem je načtení dokumentu aplikace Word, se kterým chcete pracovat. Tento dokument bude obsahovat záložky, které potřebujete rozmotat.
+
+Krok 1 Nadpis: Načtení dokumentu
+
+```csharp
+Document doc = new Document("path/to/your/document.docx");
+```
+
+V tomto řádku jednoduše načítáme dokument ze zadané cesty. Ujistěte se, že cesta ukazuje na váš skutečný dokument aplikace Word.
+
+## Krok 2: Iterujte přes záložky
+
+Dále musíme iterovat všechny záložky v dokumentu. To nám umožňuje přístup ke každé záložce a jejím vlastnostem.
+
+Krok 2 Nadpis: Iterace přes záložky
+
+```csharp
+foreach (Bookmark bookmark in doc.Range.Bookmarks)
 {
-     // Kód pro manipulaci se záložkami zde
+    // Zpracování každé záložky
 }
 ```
 
-## Krok 2: Získejte nadřazené řádky ze záložek
+ Zde používáme a`foreach` smyčka pro procházení každou záložkou v rozsahu dokumentu. Tato smyčka nám umožní pracovat s každou záložkou samostatně.
 
- Používáme`GetAncestor` metody pro načtení nadřazených řádků počátečních a koncových uzlů záložky:
+## Krok 3: Identifikujte počáteční a koncové řádky záložky
+
+Pro každou záložku musíme najít řádky, které obsahují začátek a konec záložky. To je zásadní pro určení, zda se záložka rozprostírá přes sousední řádky.
+
+Krok 3 Nadpis: Identifikace řádků
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-## Krok 3: Rozbalte vnořené záložky
+ tomto kroku používáme`GetAncestor` metoda k nalezení nadřazeného řádku jak počátečního, tak koncového uzlu záložky. To nám pomáhá přesně určit příslušné řádky.
 
-Pokud jsou nalezeny oba nadřazené řádky a záložka začíná a končí v sousedních řádcích, přesuneme koncový uzel záložky na konec posledního odstavce poslední buňky v horním řádku:
+## Krok 4: Zkontrolujte sousedící řádky
+
+Než přesuneme konec záložky, musíme zajistit, aby začátek a konec záložky byly v sousedních řádcích. Tato podmínka je nezbytná pro správné rozmotání záložky.
+
+Krok 4 Nadpis: Kontrola sousedství řádků
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
-     row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+{
+    // Řádky sousedí, pokračujte přesouváním konce záložky
+}
 ```
 
-### Příklad zdrojového kódu pro Untangle pomocí Aspose.Words pro .NET
+ Zde přidáváme podmínku pro kontrolu, zda byly nalezeny oba řádky a zda spolu sousedí. The`NextSibling` vlastnost nám pomáhá ověřit sousedství.
 
-Zde je úplný příklad zdrojového kódu pro rozpletení vnořených záložek pomocí Aspose.Words pro .NET:
+## Krok 5: Přesuňte konec záložky
+
+Nakonec, pokud jsou splněny podmínky, přesuneme koncový uzel záložky na konec posledního odstavce v poslední buňce horního řádku. Tento krok účinně rozmotá záložku.
+
+Krok 5 Nadpis: Přesunutí konce záložky
 
 ```csharp
-
-	foreach (Bookmark bookmark in doc.Range.Bookmarks)
-	{
-		// Získejte nadřazený řádek koncového uzlu záložky i záložky.
-		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-		// Pokud jsou oba řádky nalezeny v pořádku a začátek a konec záložky jsou obsaženy v sousedních řádcích,
-		// přesunout koncový uzel záložky na konec posledního odstavce v poslední buňce horního řádku.
-		if (row1 != null && row2 != null && row1.NextSibling == row2)
-			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-	}
-
+row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
+
+ tomto kroku používáme`AppendChild`metoda přesunutí koncového uzlu záložky. Jeho připojením k poslednímu odstavci poslední buňky horního řádku zajistíme, že je záložka správně rozmotaná.
 
 ## Závěr
 
-V tomto článku jsme prozkoumali zdrojový kód C#, abychom pochopili, jak používat funkci Untangle v Aspose.Words pro .NET. Postupovali jsme podle podrobného průvodce, jak rozmotat vnořené záložky v sousedních řádcích tabulky.
+Rozplétání záložek v dokumentu aplikace Word pomocí Aspose.Words for .NET se může zdát skličující, ale rozdělením do zvládnutelných kroků se proces stává mnohem jasnějším. Prošli jsme načítáním dokumentu, iterací mezi záložkami, identifikací relevantních řádků, kontrolou sousedství a nakonec přesouváním koncového uzlu záložky. S tímto průvodcem byste měli být schopni efektivněji zacházet se záložkami v dokumentech aplikace Word.
 
-### FAQ
+## FAQ
 
-#### Otázka: Funguje funkce Untangle pouze s vnořenými záložkami v sousedních řádcích tabulky?
+### Mohu použít Aspose.Words pro .NET k manipulaci s jinými prvky kromě záložek?
 
-Odpověď: Ano, funkce Untangle je navržena speciálně pro rozmotání vnořených záložek, které jsou v sousedních řádcích tabulky. Pokud se záložky nenacházejí v sousedních řádcích, tato funkce nebude použitelná.
+Ano, Aspose.Words for .NET je výkonná knihovna, která vám umožňuje manipulovat s celou řadou prvků dokumentu včetně odstavců, tabulek, obrázků a dalších.
 
-#### Otázka: Jak mohu identifikovat vnořené záložky v dokumentu aplikace Word?
+### Co když záložka zabírá více než dva řádky?
 
-Odpověď: Vnořené záložky můžete identifikovat procházením záložek v dokumentu a kontrolou, zda jsou počáteční a koncová záložka v sousedních řádcích tabulky. Zdrojový kód uvedený v tomto článku můžete použít jako výchozí bod k implementaci této funkce.
+Tento výukový program se zabývá záložkami, které se rozprostírají přes dva sousední řádky. Pro složitější případy by byla potřeba další logika pro zpracování záložek zahrnujících více řádků nebo sekcí.
 
-#### Otázka: Mění funkce Unscramble obsah původního dokumentu?
+### Je k dispozici zkušební verze Aspose.Words pro .NET?
 
-Odpověď: Ano, funkce Untangle upravuje původní dokument přesunutím koncového uzlu záložky na konec posledního odstavce poslední buňky v horním řádku. Před použitím této funkce nezapomeňte uložit záložní kopii dokumentu.
+ Ano můžeš[stáhnout zkušební verzi zdarma](https://releases.aspose.com/) z webu Aspose a prozkoumat funkce knihovny.
 
-#### Otázka: Jak mohu rozložit vnořené záložky v jiných typech prvků dokumentu, jako jsou oddíly nebo odstavce?
+### Jak mohu získat podporu, pokud narazím na problémy?
 
-Odpověď: Funkce Untangle uvedená v tomto článku je speciálně navržena k rozmotání vnořených záložek v sousedních řádcích tabulky. Pokud chcete rozmotat vnořené záložky v jiných prvcích dokumentu, budete muset odpovídajícím způsobem upravit kód a použít vhodné metody pro přístup k požadovaným prvkům.
+ Můžete navštívit[Aspose fórum podpory](https://forum.aspose.com/c/words/8) pro pomoc s jakýmikoli problémy nebo dotazy, které můžete mít.
 
-#### Otázka: Existují nějaké jiné metody pro rozmotání vnořených záložek v dokumentu aplikace Word pomocí Aspose.Words for .NET?
+### Potřebuji licenci k používání Aspose.Words pro .NET?
 
- Odpověď: Metoda uvedená v tomto článku je běžnou metodou pro rozpletení vnořených záložek v sousedních řádcích tabulky. Mohou však existovat i jiné přístupy nebo techniky v závislosti na konkrétních potřebách vašeho projektu. Můžete se podívat na[Aspose.Words for .NET API odkazy](https://reference.aspose.com/words/net/) k dalšímu prozkoumání dostupných funkcí.
+ Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete si zakoupit licenci[tady](https://purchase.aspose.com/buy) nebo požádat a[dočasná licence](https://purchase.aspose.com/temporary-license) pro účely hodnocení.

@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## Bước 7: Hoàn thiện bảng và lưu tài liệu
 TRONG
 
- kết thúc, chúng ta hoàn thành việc tạo bảng bằng cách sử dụng`EndRow()` Và`EndTable()` phương thức, sau đó chúng tôi lưu tài liệu đã sửa đổi vào một tệp.
+ kết thúc, chúng ta hoàn thành việc tạo bảng bằng cách sử dụng`EndRow()`Và`EndTable()` phương thức, sau đó chúng tôi lưu tài liệu đã sửa đổi vào một tệp.
 
 ```csharp
 builder. EndRow();

@@ -43,7 +43,7 @@ Assurez-vous de spécifier le chemin correct pour enregistrer le PDF converti.
 
 ### Exemple de code source pour la conversion en PDF 17 à l'aide d'Aspose.Words pour .NET
 
-Voici le code source complet à convertir en PDF 1.7 avec Aspose.Words for .NET :
+Voici le code source complet à convertir en PDF 1.7 avec Aspose.Words pour .NET :
 
 ```csharp
 

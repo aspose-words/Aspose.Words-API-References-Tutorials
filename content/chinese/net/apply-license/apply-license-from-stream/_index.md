@@ -61,7 +61,7 @@ Console.WriteLine("License set successfully.");
 
 ## 步骤 4：处理异常
 
-将代码包装在 try-catch 块中以处理任何潜在异常始终是一个好主意。这将确保您的应用程序能够妥善处理错误。
+将代码包装在 try-catch 块中以处理任何潜在异常始终是一个好主意。这将确保您的应用程序可以妥善处理错误。
 
 ```csharp
 try

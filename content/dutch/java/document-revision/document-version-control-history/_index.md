@@ -61,7 +61,7 @@ Nadat u wijzigingen heeft aangebracht, kunt u deze bekijken en accepteren of afw
 doc.acceptAllRevisions();
 ```
 
-## Stap 6: Sla het document op
+## Stap 6: Bewaar het document
 
 Sla het document op met een nieuw versienummer of tijdstempel om een geschiedenis van wijzigingen bij te houden.
 

@@ -2,79 +2,123 @@
 title: Document invoegen met Builder
 linktitle: Document invoegen met Builder
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een document aan het einde van een ander document kunt invoegen met Aspose.Words voor .NET.
+description: Leer hoe u twee Word-documenten kunt samenvoegen met Aspose.Words voor .NET. Stapsgewijze handleiding om een document in te voegen met DocumentBuilder en de opmaak te behouden.
 type: docs
 weight: 10
 url: /nl/net/join-and-append-documents/insert-document-with-builder/
 ---
+## Invoering
 
- In deze zelfstudie wordt uitgelegd hoe u Aspose.Words voor .NET gebruikt om een document in een ander document in te voegen met behulp van de`DocumentBuilder` klas. De meegeleverde broncode laat zien hoe u een document aan het einde van een ander document kunt invoegen terwijl de bronopmaak behouden blijft.
+heeft dus twee Word-documenten en u wilt ze samenvoegen tot één. Je denkt misschien: "Is er een eenvoudige manier om dit programmatisch te doen?" Absoluut! Vandaag ga ik je door het proces leiden van het invoegen van het ene document in het andere met behulp van de Aspose.Words voor .NET-bibliotheek. Deze methode is superhandig, vooral als je met grote documenten te maken hebt of het proces moet automatiseren. Laten we er meteen in duiken!
 
-## Stap 1: Zet het project op
+## Vereisten
 
-Zorg ervoor dat u aan de volgende vereisten voldoet:
+Voordat we aan de slag gaan, zorgen we ervoor dat u alles heeft wat u nodig heeft:
 
--  Aspose.Words voor .NET-bibliotheek geïnstalleerd. Je kunt het downloaden van[Aspose.Releases]https://releases.aspose.com/words/net/ of gebruik NuGet-pakketbeheer om het te installeren.
-- Een documentmappad waar de bron- en doeldocumenten zich bevinden.
+1.  Aspose.Words voor .NET: als u dat nog niet heeft gedaan, kunt u het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Zorg ervoor dat Visual Studio of een andere geschikte IDE is geïnstalleerd.
+3. Basiskennis van C#: Met een beetje bekendheid met C# kom je al een heel eind.
 
-## Stap 2: Open de bron- en doeldocumenten
+## Naamruimten importeren
 
- Open de bron- en doeldocumenten met behulp van de`Document` klasse constructor. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+Allereerst moet u de benodigde naamruimten importeren om toegang te krijgen tot de Aspose.Words-bibliotheekfunctionaliteiten. Hier ziet u hoe u het kunt doen:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Nu we onze vereisten op orde hebben, gaan we het proces stap voor stap opsplitsen.
+
+## Stap 1: Uw documentenmap instellen
+
+Voordat we beginnen met coderen, moet u het pad naar uw documentmap instellen. Hier worden uw bron- en bestemmingsdocumenten opgeslagen.
 
 ```csharp
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar uw documenten zich bevinden. Hierdoor kan het programma uw bestanden gemakkelijk vinden.
+
+## Stap 2: De bron- en doeldocumenten laden
+
+Vervolgens moeten we de documenten laden waarmee we willen werken. In dit voorbeeld hebben we een brondocument en een bestemmingsdocument.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Stap 3: Initialiseer DocumentBuilder
+ Hier gebruiken we de`Document` klasse uit de Aspose.Words-bibliotheek om onze documenten te laden. Zorg ervoor dat de bestandsnamen overeenkomen met die in uw map.
 
- Maak een nieuw exemplaar van de`DocumentBuilder` class en geef het doeldocument door als parameter.
+## Stap 3: Een DocumentBuilder-object maken
+
+ De`DocumentBuilder` class is een krachtig hulpmiddel in de Aspose.Words-bibliotheek. Het stelt ons in staat om door het document te navigeren en het te manipuleren.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
-## Stap 4: Plaats de DocumentBuilder
+ In deze stap hebben we een`DocumentBuilder` object voor ons bestemmingsdocument. Dit zal ons helpen inhoud in het document in te voegen.
 
-Verplaats de`DocumentBuilder` naar het einde van het document met behulp van de`MoveToDocumentEnd` methode. Voeg een pagina-einde in om de bestaande inhoud van het ingevoegde document te scheiden.
+## Stap 4: Naar het einde van het document gaan
+
+We moeten de builder-cursor naar het einde van het doeldocument verplaatsen voordat we het brondocument invoegen.
 
 ```csharp
 builder.MoveToDocumentEnd();
+```
+
+Dit zorgt ervoor dat het brondocument aan het einde van het bestemmingsdocument wordt ingevoegd.
+
+## Stap 5: Een pagina-einde invoegen
+
+Om het overzichtelijk te houden, voegen we een pagina-einde toe voordat we het brondocument invoegen. Hierdoor wordt de inhoud van het brondocument op een nieuwe pagina gestart.
+
+```csharp
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## Stap 5: Voeg het brondocument in
+Een pagina-einde zorgt ervoor dat de inhoud van het brondocument op een nieuwe pagina begint, waardoor het samengevoegde document er professioneel uitziet.
 
- Gebruik de`InsertDocument` werkwijze van de`DocumentBuilder` class om het brondocument in het doeldocument in te voegen. Stel de importformaatmodus in op`ImportFormatMode.KeepSourceFormatting` om de bronopmaak te behouden.
+## Stap 6: Het brondocument invoegen
+
+Nu komt het spannende gedeelte: het invoegen van het brondocument in het doeldocument.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Stap 6: Sla het gewijzigde document op
+ De ... gebruiken`InsertDocument` Met deze methode kunnen we het volledige brondocument in het doeldocument invoegen. De`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de opmaak van het brondocument behouden blijft.
 
-Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
+## Stap 7: Het samengevoegde document opslaan
+
+Laten we ten slotte het samengevoegde document opslaan. Hierdoor worden de bron- en doeldocumenten gecombineerd in één bestand.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 ```
 
-Hiermee is de implementatie voltooid van het invoegen van een document in een ander document met behulp van Aspose.Words voor .NET.
+Door het document op te slaan, voltooien we het proces van het samenvoegen van de twee documenten. Uw nieuwe document is nu klaar en opgeslagen in de opgegeven map.
 
-### Voorbeeldbroncode voor Insert Document With Builder met Aspose.Words voor .NET 
+## Conclusie
 
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+En daar heb je het! U hebt met succes het ene document in het andere ingevoegd met Aspose.Words voor .NET. Deze methode is niet alleen efficiënt, maar behoudt ook de opmaak van beide documenten, waardoor een naadloze samenvoeging wordt gegarandeerd. Of u nu aan een eenmalig project werkt of de documentverwerking moet automatiseren, Aspose.Words voor .NET heeft de oplossing voor u.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	DocumentBuilder builder = new DocumentBuilder(dstDoc);
-	builder.MoveToDocumentEnd();
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
-```
+## Veelgestelde vragen
+
+### Wat is Aspose.Words voor .NET?  
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, bewerken, converteren en manipuleren.
+
+### Kan ik de opmaak van het brondocument behouden?  
+ Ja, door te gebruiken`ImportFormatMode.KeepSourceFormatting`, blijft de opmaak van het brondocument behouden wanneer het in het doeldocument wordt ingevoegd.
+
+### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?  
+ Ja, Aspose.Words voor .NET vereist een licentie voor volledige functionaliteit. Je kunt een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
+
+### Kan ik dit proces automatiseren?  
+Absoluut! De beschreven methode kan worden opgenomen in grotere toepassingen om documentverwerkingstaken te automatiseren.
+
+### Waar kan ik meer bronnen en ondersteuning vinden?  
+Voor meer informatie kunt u kijken op de[documentatie](https://reference.aspose.com/words/net/) , of bezoek de[Helpforum](https://forum.aspose.com/c/words/8) Voor assistentie.

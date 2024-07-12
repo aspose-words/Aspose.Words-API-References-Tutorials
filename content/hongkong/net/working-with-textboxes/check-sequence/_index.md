@@ -54,7 +54,7 @@ if (textBox. Next == null && textBox. Previous != null)
 }
 ```
 
-如果文字方塊沒有下一個形狀（`Next`）但有先前的形狀（`Previous`)，這意味著這是序列的結尾。將顯示訊息“序列結束”。
+如果文字方塊沒有下一個形狀 (`Next`）但有先前的形狀（`Previous`)，這意味著這是序列的結尾。將顯示訊息“序列結束”。
 
 ### 使用 Aspose.Words for .NET 驗證序列的範例原始碼
 

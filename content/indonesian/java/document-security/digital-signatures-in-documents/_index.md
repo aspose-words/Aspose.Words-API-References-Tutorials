@@ -71,7 +71,7 @@ if (signedDoc.getDigitalSignatures().getCount() > 0) {
 
 ## Kesimpulan
 
-Dalam panduan ini, kita telah mempelajari cara menerapkan tanda tangan digital dalam dokumen menggunakan Aspose.Words untuk Java. Ini adalah langkah penting dalam memastikan keaslian dan integritas dokumen digital Anda. Dengan mengikuti langkah-langkah yang diuraikan di sini, Anda dapat dengan percaya diri menambahkan dan memverifikasi tanda tangan digital di aplikasi Java Anda.
+Dalam panduan ini, kita telah mempelajari cara menerapkan tanda tangan digital dalam dokumen menggunakan Aspose.Words untuk Java. Ini adalah langkah penting dalam memastikan keaslian dan integritas dokumen digital Anda. Dengan mengikuti langkah-langkah yang dijelaskan di sini, Anda dapat dengan percaya diri menambahkan dan memverifikasi tanda tangan digital di aplikasi Java Anda.
 
 ## FAQ
 

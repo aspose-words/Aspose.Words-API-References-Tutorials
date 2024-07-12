@@ -15,7 +15,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente ve
 - Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
 ## Schritt 1: Neues Dokument und Dokumentgenerator erstellen
- Zunächst erstellen wir ein neues Dokument durch Instanziierung des`Document` Klasse und einen Dokument-Builder durch Instanziierung der`DocumentBuilder` Klasse.
+ Zunächst erstellen wir ein neues Dokument durch die Instanziierung des`Document` Klasse und einen Dokument-Builder durch Instanziierung der`DocumentBuilder` Klasse.
 
 ```csharp
 // Neues Dokument erstellen
@@ -67,7 +67,7 @@ In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET den Zei
 
 #### F: Wie kann ich den Zeilenabstand eines bestimmten Textes in einem Word-Dokument ändern?
 
-A: Mit Aspose.Words können Sie den Zeilenabstand eines bestimmten Textes in einem Word-Dokument ganz einfach ändern. Verwenden Sie die API, um den gewünschten Text auszuwählen und den Zeilenabstand durch Angabe des entsprechenden Werts anzupassen.
+A: Mit Aspose.Words können Sie den Zeilenabstand von bestimmten Texten in einem Word-Dokument ganz einfach ändern. Verwenden Sie die API, um den gewünschten Text auszuwählen und den Zeilenabstand durch Angabe des entsprechenden Werts anzupassen.
 
 #### F: Ist es möglich, in einem Word-Dokument einen exakten Zeilenabstand festzulegen?
 

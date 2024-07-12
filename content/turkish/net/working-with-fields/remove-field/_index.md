@@ -65,9 +65,9 @@ Aspose.Words for .NET kullanarak belgenizdeki belirli bir alanı silmek için bu
 
 #### S: Aspose.Words for .NET kullanarak Word belgesindeki bir alanı nasıl silebilirim?
 
- C: Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir alanı kaldırmak için, belgedeki alanlar arasında geçiş yapabilirsiniz.`FieldStart` sınıf ve kullanın`FieldStart.Remove`Alanı kaldırma yöntemi.
+ C: Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir alanı kaldırmak için, belgedeki alanlar arasında geçiş yapabilirsiniz.`FieldStart` sınıf ve kullanın`FieldStart.Remove` Alanı kaldırma yöntemi.
 
-#### S: Aspose.Words for .NET ile bir Word belgesinde yalnızca belirli alanları silmek mümkün mü?
+#### S: Aspose.Words for .NET ile bir Word belgesinde yalnızca belirli alanları silmek mümkün müdür?
 
  C: Evet, Aspose.Words for .NET ile bir Word belgesindeki yalnızca belirli alanları silmek mümkündür. Alan adı veya diğer ilgili özellikler gibi belirli kriterleri kullanarak hangi alanların silineceğini filtreleyebilirsiniz. Daha sonra ilgili alanları kullanarak kaldırabilirsiniz.`FieldStart.Remove` yöntem.
 

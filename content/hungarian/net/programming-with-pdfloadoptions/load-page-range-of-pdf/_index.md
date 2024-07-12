@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Ebben a példában a PDF dokumentum első oldalát töltjük be. Módosíthatja az értékeket`PageIndex` és`PageCount` a kívánt oldaltartományra.
+ Ebben a példában a PDF dokumentum első oldalát töltjük be. Módosíthatja az értékeket`PageIndex`és`PageCount` a kívánt oldaltartományra.
 
 ## 2. lépés: A dokumentum mentése
 

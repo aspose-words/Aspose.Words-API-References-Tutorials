@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### Вопрос: Как указать исходные данные для поля почтового адреса в Aspose.Words for .NET?
 
- О: Чтобы указать исходные данные для поля почтового адреса в Aspose.Words for .NET, вы можете использовать команду`FieldAddressBlock.StartAddress` и`FieldAddressBlock.EndAddress` характеристики. Эти свойства используются для определения диапазонов адресов во внешнем источнике данных, например CSV-файле, базе данных и т. д.
+ О: Чтобы указать исходные данные для поля почтового адреса в Aspose.Words for .NET, вы можете использовать команду`FieldAddressBlock.StartAddress`и`FieldAddressBlock.EndAddress` характеристики. Эти свойства используются для определения диапазонов адресов во внешнем источнике данных, например CSV-файле, базе данных и т. д.
 
 #### Вопрос: Могу ли я включить дополнительные элементы в поле почтового адреса с помощью Aspose.Words для .NET?
 

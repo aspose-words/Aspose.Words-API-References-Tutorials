@@ -2,125 +2,143 @@
 title: Word Belgesinde Sınırsız Bölüm
 linktitle: Word Belgesinde Sınırsız Bölüm
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesinde sınırsız bölümleri nasıl tanımlayacağınızı öğrenin.
+description: Bu adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgenizdeki belirli bölümlerin kilidini açın. Hassas içeriği korumak için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/document-protection/unrestricted-section/
 ---
-Bu eğitimde Aspose.Words for .NET'in sınırsız bölüm özelliğini kullanma adımlarında size rehberlik edeceğiz. Bu özellik, belgenin geri kalanı korunsa bile, bir Word belgesinde korunmayan belirli bölümleri tanımlamanıza olanak tanır. Aşağıdaki adımları takip et:
+## giriiş
 
-## Adım 1: Belgeyi ve Bölümleri Oluşturma
+Selam! Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün süper pratik bir şeyle uğraşıyoruz: Bir Word belgesindeki belirli bölümlerin kilidini açarken diğer bölümleri korumayı nasıl sağlayacağız. Dokümanınızın bazı bölümlerini koruma altına alıp bazılarını düzenlemeye açık bırakmanız gerekiyorsa, bu eğitim tam size göre. Başlayalım!
 
-Document sınıfının bir örneğini ve bir DocumentBuilder nesnesini oluşturarak başlayın:
+## Önkoşullar
+
+İşin özüne geçmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olun:
+
+-  Aspose.Words for .NET: Henüz yapmadıysanız, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+- Visual Studio: Veya herhangi bir .NET uyumlu IDE.
+- Temel C# Anlayışı: C#'a biraz aşina olmak, bu eğitimde hızlı bir şekilde ilerlemenize yardımcı olacaktır.
+-  Lisansı Alın: Bir tane alın[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/) Test için ihtiyacınız varsa.
+
+## Ad Alanlarını İçe Aktar
+
+Kodlamaya başlamadan önce C# projenize gerekli ad alanlarını içe aktardığınızdan emin olun:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## 2. Adım: Belgeye içerik ekleyin
-Belgeye içerik eklemek ve bölüm sonları eklemek için DocumentBuilder nesnesini kullanın:
+Şimdi adım adım inceleyelim!
+
+## 1. Adım: Projenizi Kurun
+
+### Belge Dizininizi Başlatın
+
+Öncelikle belgeler dizininizin yolunu ayarlamanız gerekir. Burası Word dosyalarınızın kaydedileceği yerdir.
 
 ```csharp
-builder.Writeln("Section 1. Unprotected.");
-builder. InsertBreak(BreakType. SectionBreakContinuous);
-builder.Writeln("Section 2. Protected.");
-```
-
-## 3. Adım: Belgeyi ve Bölümleri Koruyun
-
-Bölüm koruması yalnızca belge koruması etkinleştirildiğinde çalışır ve yalnızca form alanlarında düzenlemeye izin verilir. Belgeyi, Document nesnesinin Koruma() yöntemini kullanarak koruyabilirsiniz:
-
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
-
-Doğru koruma türünü belirttiğinizden ve istediğiniz şifreyi ayarladığınızdan emin olun.
-
-## 4. Adım: Belirli bir bölüm için korumayı devre dışı bırakma
-
-Varsayılan olarak tüm bölümler korunur, ancak Bölüm nesnesinin KorumalıForForms özelliğini kullanarak belirli bir bölüm için korumayı seçerek devre dışı bırakabilirsiniz:
-
-```csharp
-doc.Sections[0].ProtectedForForms = false;
-```
-
-Bu örnekte, ilk bölüm için koruma devre dışı bırakılmıştır.
-
-## 5. Adım: Belgeyi kaydedin
-
-Son olarak değiştirilen belgeyi kaydedin:
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-```
-
-Belgeyi sınırsız bölümlerle kaydetmek için doğru yolu ve dosya adını belirttiğinizden emin olun.
-
-### Aspose.Words for .NET kullanan Kısıtlanmamış Bölüm için örnek kaynak kodu
-
-Aspose.Words for .NET kullanan sınırsız bölümün kaynak kodunun tamamı burada:
-
-
-```csharp
-
-// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Biraz metin içeren iki bölüm ekleyin.
+```
+
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgelerinizi kaydetmek istediğiniz gerçek yolla. Bu, dosyalarınızın doğru konumda saklanmasını sağladığı için çok önemlidir.
+
+### Yeni Bir Belge Oluştur
+
+Daha sonra Aspose.Words'ü kullanarak yeni bir belge oluşturacağız. Bu belge sihrimizi uygulayacağımız tuval olacak.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+`Document` sınıf yeni bir belge başlatır ve`DocumentBuilder` belgemize kolayca içerik eklememize yardımcı olur.
+
+## Adım 2: Bölümleri Ekle
+
+### Korumasız Bölüm Ekle
+
+Korumasız kalacak ilk bölümü ekleyerek başlayalım.
+
+```csharp
 builder.Writeln("Section 1. Unprotected.");
+```
+
+Bu kod satırına "Bölüm 1. Korumasız" metni eklenir. belgeye. Basit, değil mi?
+
+### Korumalı Bölüm Ekle
+
+Şimdi ikinci bir bölüm ekleyelim ve onu birinciden ayırmak için bölüm sonu ekleyelim.
+
+```csharp
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
-
-// Bölüm koruması yalnızca belge koruması açıldığında çalışır ve yalnızca form alanlarında düzenlemeye izin verilir.
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-
-//Varsayılan olarak tüm bölümler korunur, ancak korumayı seçerek kapatabiliriz.
-doc.Sections[0].ProtectedForForms = false;
-doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-
-doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-
 ```
 
-Bu adımları takip ederek Aspose.Words for .NET ile Word belgenizdeki sınırsız bölümleri kolayca tanımlayabileceksiniz.
+`InsertBreak` yöntemi sürekli bir bölüm sonu ekleyerek her bölüm için farklı ayarlara sahip olmamızı sağlar.
+
+## 3. Adım: Belgeyi Koruyun
+
+### Belge Korumasını Etkinleştir
+
+ Belgeyi korumak için şunu kullanacağız:`Protect` yöntem. Bu yöntem, aksi belirtilmedikçe yalnızca form alanlarının düzenlenebilmesini sağlar.
+
+```csharp
+doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
+
+ Burada belge şifre ile korunur ve yalnızca form alanları düzenlenebilir. Değiştirmeyi unutmayın`"password"` İstediğiniz şifre ile
+
+### Belirli Bölümün Korumasını Kaldır
+
+Varsayılan olarak tüm bölümler korunur. İlk bölüm için korumayı seçici olarak kapatmamız gerekiyor.
+
+```csharp
+doc.Sections[0].ProtectedForForms = false;
+```
+
+Bu satır, belgenin geri kalanı güvendeyken ilk bölümün korunmasız kalmasını sağlar.
+
+## Adım 4: Belgeyi Kaydedin ve Yükleyin
+
+### Belgeyi Kaydet
+
+Artık belgenizi uygulanan koruma ayarlarıyla kaydetmenin zamanı geldi.
+
+```csharp
+doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
+```
+
+ Bu, belgeyi belirtilen dizine şu adla kaydeder:`DocumentProtection.UnrestrictedSection.docx`.
+
+### Belgeyi Yükle
+
+Son olarak her şeyin doğru ayarlandığını doğrulamak için belgeyi yüklüyoruz.
+
+```csharp
+doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
+```
+
+Bu adım, belgenin düzgün bir şekilde kaydedilmesini ve koruma ayarlarını kaybetmeden yeniden yüklenebilmesini sağlar.
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET'in, Word belgesindeki belirli bölümlerin korumasız kalmasına ve belgenin geri kalanının korunmasına olanak tanıyan sınırsız bölüm özelliğini inceledik. Sağlanan adımları izleyerek, belgenizde kullanıcıların diğer bölümlerin korumasını korurken içeriği serbestçe düzenleyebilecekleri bölümleri kolayca tanımlayabilirsiniz. Aspose.Words for .NET, belge koruma ve özelleştirme için güçlü yetenekler sunarak, Word belgelerinizdeki düzenleme izinleri üzerinde kontrol sahibi olmanızı sağlar.
+İşte buyur! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak korumalı ve korumasız bölümlerin karışımından oluşan bir Word belgesini başarıyla oluşturdunuz. Bu yöntem, bir belgenin belirli bölümlerini kilitlerken diğer bölümlerini düzenlenebilir halde bırakmanız gerektiğinde son derece kullanışlıdır.
 
-### Word belgesindeki sınırsız bölüm için SSS
+## SSS'ler
 
-#### S: Aspose.Words for .NET'te sınırsız bölümler nelerdir?
+### Birden fazla bölümü koruyabilir miyim?
+Evet, gerektiğinde birden fazla bölümü seçerek koruyabilir ve korumasını kaldırabilirsiniz.
 
-C: Aspose.Words for .NET'teki sınırsız bölümler, belgenin geri kalanı korunsa bile, Word belgesindeki korunmayan belirli bölümlerdir. Bu bölümler, kullanıcıların belgenin geri kalan bölümleri için korumayı sürdürürken içlerindeki içeriği değiştirmelerine olanak tanır.
+### Belgeyi kaydettikten sonra koruma türünü değiştirmek mümkün müdür?
+Evet, belgeyi yeniden açabilir ve koruma ayarlarını gerektiği gibi değiştirebilirsiniz.
 
-#### S: Aspose.Words for .NET'i kullanarak nasıl sınırsız bölümler oluşturabilirim?
+### Aspose.Words'te başka hangi koruma türleri mevcut?
+ Aspose.Words çeşitli koruma türlerini destekler:`ReadOnly`, `Comments` , Ve`TrackedChanges`.
 
-C: Aspose.Words for .NET kullanarak bir Word belgesinde sınırsız bölümler oluşturmak için şu adımları takip edebilirsiniz:
-1.  Bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` nesne.
-2.  Kullan`DocumentBuilder` Belgeye içerik eklemek ve bölüm sonları eklemek için.
-3.  Belgeyi kullanarak koruyun`Protect` yöntemi`Document` İstenilen koruma tipini ve şifreyi belirterek nesneyi seçin.
-4.  Ayarlayarak belirli bir bölüm için korumayı devre dışı bırakın`ProtectedForForms` karşılık gelen mülk`Section` itiraz etmek`false`.
-5. Değiştirilen belgeyi kaydedin.
+### Bir belgeyi şifre olmadan koruyabilir miyim?
+Evet, bir belgeyi parola belirtmeden koruyabilirsiniz.
 
-#### S: Bir Word belgesinde birden fazla sınırsız bölüme sahip olabilir miyim?
-
- C: Evet, bir Word belgesinde birden fazla sınırsız bölüm bulunabilir. Belirli bölümler için korumayı seçerek devre dışı bırakarak`ProtectedForForms` mülkiyeti`Section`nesnesinde, diğer bölümleri korurken kullanıcıların içeriği serbestçe değiştirebileceği birden fazla bölüm tanımlayabilirsiniz.
-
-#### S4. Başlangıçta korunan bir bölümün korumasını kaldırabilir miyim?
- Evet, başlangıçta korunan bir bölümün korumasını aşağıdaki ayarları yaparak kaldırabilirsiniz:`ProtectedForForms` karşılık gelen mülk`Section` itiraz etmek`false`. Bu, kullanıcıların söz konusu bölümdeki içeriği herhangi bir kısıtlama olmaksızın düzenlemesine olanak tanır.
-
-#### S: Bir Word belgesine hangi koruma türleri uygulanabilir?
-
-C: Aspose.Words for .NET, bir Word belgesine uygulanabilecek çeşitli koruma türleri sağlar; örneğin:
-- Koruma Yok: Hiçbir koruma uygulanmaz.
-- AllowOnlyRevisions: Kullanıcılar yalnızca belgede revizyon yapabilir.
-- AllowOnlyComments: Kullanıcılar belgeye yalnızca yorum ekleyebilir.
-- AllowOnlyFormFields: Kullanıcılar yalnızca belgedeki form alanlarını düzenleyebilir.
-- Salt Okunur: Belge salt okunurdur ve düzenleme yapılmasına izin verilmez.
-
-
+### Bir bölümün korunup korunmadığını nasıl kontrol edebilirim?
+ Kontrol edebilirsiniz`ProtectedForForms` Korunup korunmadığını belirlemek için bir bölümün özelliği.

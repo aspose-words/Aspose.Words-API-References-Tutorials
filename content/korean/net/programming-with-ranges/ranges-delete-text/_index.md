@@ -75,7 +75,7 @@ A: Aspose.Words for .NET은 .NET 애플리케이션에서 Word 문서를 사용�
 
 #### Q: .NET용 Aspose.Words를 사용하여 Word 문서를 어떻게 로드합니까?
 
-A: .NET용 Aspose.Words를 사용하여 Word 문서를 로드하려면 다음을 사용할 수 있습니다.`Document` 클래스와 그 생성자. 매개변수로 문서의 파일 경로나 스트림을 제공해야 합니다. 예는 다음과 같습니다.
+ A: .NET용 Aspose.Words를 사용하여 Word 문서를 로드하려면 다음을 사용할 수 있습니다.`Document` 클래스와 그 생성자. 매개변수로 문서의 파일 경로나 스트림을 제공해야 합니다. 예는 다음과 같습니다.
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
@@ -91,7 +91,7 @@ doc.Sections[0].Range.Delete();
 
  이 코드는 인덱스를 사용하여 문서의 첫 번째 섹션에 액세스합니다.`0` 해당 범위 내의 모든 텍스트를 삭제합니다.
 
-#### Q: .NET용 Aspose.Words를 사용하여 Word 문서의 여러 범위에서 텍스트를 삭제할 수 있나요?
+#### Q: .NET용 Aspose.Words를 사용하여 Word 문서의 여러 범위에서 텍스트를 삭제할 수 있습니까?
 
  A: 예, Aspose.Words for .NET을 사용하여 Word 문서의 여러 범위에서 텍스트를 삭제할 수 있습니다. 각 범위에 개별적으로 액세스하고`Delete` 원하는 대로 텍스트 내용을 제거하려면 각 범위에 대해 메서드를 사용하세요.
 

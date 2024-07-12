@@ -2,49 +2,57 @@
 title: Mantenha a fonte unida
 linktitle: Mantenha a fonte unida
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como usar Aspose.Words for .NET para unir e anexar documentos do Word enquanto mantém o conteúdo de origem junto com o documento de destino.
+description: Aprenda como mesclar documentos do Word usando Aspose.Words for .NET preservando a formatação. Este guia abrangente cobre tudo, desde a configuração até a execução.
 type: docs
 weight: 10
 url: /pt/net/join-and-append-documents/keep-source-together/
 ---
+## Introdução
 
-Este tutorial irá guiá-lo através do processo de uso do recurso Keep Source Together do Aspose.Words for .NET. Este recurso permite unir e anexar vários documentos do Word, mantendo o conteúdo do documento de origem junto com o conteúdo do documento de destino. 
+Na era digital de hoje, a manipulação programática de documentos do Word é essencial em vários setores. Aspose.Words for .NET capacita os desenvolvedores a automatizar tarefas de manuseio de documentos com eficiência. Este guia abrangente irá orientá-lo no processo de mesclagem de documentos, preservando a formatação de origem usando Aspose.Words for .NET.
 
 ## Pré-requisitos
 
-Antes de começar, certifique-se de ter o seguinte:
+Antes de mergulhar na fusão de documentos com Aspose.Words for .NET, certifique-se de ter o seguinte:
 
-1. Aspose.Words para .NET instalado. Você pode baixá-lo do site Aspose ou instalá-lo via NuGet.
-2. Visual Studio ou qualquer outro ambiente de desenvolvimento C#.
+- Visual Studio: Ambiente de Desenvolvimento Integrado (IDE) para desenvolvimento .NET.
+- Aspose.Words for .NET: instalado e configurado em seu ambiente de desenvolvimento.
+- Familiaridade com C#: Compreensão básica da linguagem de programação C#.
 
-## Etapa 1: inicializar os diretórios de documentos
+## Importar namespaces
 
- Primeiro, você precisa definir o caminho para o diretório do seu documento. Modifique o valor do`dataDir` variável para o caminho onde seus documentos estão localizados.
+Para começar, importe os namespaces necessários:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## Etapa 2: Carregar os Documentos de Origem e Destino
+## Etapa 1: carregar documentos
 
-Em seguida, você precisa carregar os documentos de origem e destino usando o Aspose.Words`Document` aula. Atualize os nomes dos arquivos no`Document` construtor de acordo com os nomes dos seus documentos.
+ Em primeiro lugar, carregue os documentos de origem e destino em Aspose.Words`Document` objetos.
 
 ```csharp
+// Caminho para o diretório do seu documento
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+// Carregar documentos de origem e destino
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Etapa 3: definir o documento de origem para aparecer após o conteúdo do documento de destino
+## Etapa 2: definir o início da seção
 
- Para garantir que o documento de origem apareça imediatamente após o conteúdo do documento de destino, você precisa definir a opção`SectionStart` propriedade da primeira seção no documento de origem para`SectionStart.Continuous`.
+Configure o início da seção para garantir que o conteúdo do documento de origem flua continuamente após o documento de destino.
 
 ```csharp
+// Defina o documento de origem para aparecer logo após o conteúdo do documento de destino
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Etapa 4: definir a formatação de parágrafo "Manter com o próximo" para o documento de origem
+## Etapa 3: mantenha os parágrafos juntos
 
- Para manter os parágrafos do documento de origem juntos, você pode percorrer cada parágrafo do documento e definir o`KeepWithNext`propriedade para`true`.
+Para manter a integridade da formatação, marque cada parágrafo no documento de origem para permanecer no próximo parágrafo.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## Etapa 5: anexar o documento de origem ao documento de destino
+## Etapa 4: anexar documentos
 
- Agora, você pode anexar o documento de origem ao documento de destino usando o`AppendDocument` método do`Document` aula. O`ImportFormatMode.KeepSourceFormatting` O parâmetro garante que a formatação de origem seja preservada durante a operação de acréscimo.
+ Mesclar os documentos usando o`AppendDocument` método, garantindo a manutenção da formatação do documento de origem.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Etapa 6: salve o documento final
+## Etapa 5: Salvar documento mesclado
 
- Por fim, salve o documento mesclado com o recurso "Keep Source Together" habilitado usando o`Save` método do`Document` aula.
+Por fim, salve o documento mesclado no local desejado.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### Exemplo de código-fonte para Keep Source Together usando Aspose.Words for .NET 
+## Conclusão
 
-Aqui está o código-fonte completo do recurso "Keep Source Together" em C# usando Aspose.Words for .NET:
+Concluindo, Aspose.Words for .NET simplifica a tarefa de mesclar documentos do Word, preservando a formatação original perfeitamente. Esse recurso é crucial para aplicações que exigem processamento automatizado de documentos.
 
+## Perguntas frequentes
 
-```csharp
-	// Caminho para o diretório do seu documento
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### O Aspose.Words for .NET pode mesclar documentos de diferentes formatos?
+Sim, pode mesclar documentos independente do formato, mantendo a formatação original.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Defina o documento de origem para aparecer logo após o conteúdo do documento de destino.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### O Aspose.Words for .NET oferece suporte à mesclagem eficiente de documentos grandes?
+Com certeza, ele lida com documentos grandes com desempenho ideal.
 
-É isso! Você implementou com sucesso o recurso Keep Source Together usando Aspose.Words for .NET. O documento final conterá o conteúdo mesclado com os parágrafos do documento de origem mantidos juntos.
+### Existe uma versão de teste disponível para Aspose.Words for .NET?
+ Sim, você pode baixar uma versão de teste gratuita[aqui](https://releases.aspose.com/).
+
+### Como posso obter suporte técnico para Aspose.Words for .NET?
+ O suporte técnico está disponível através do[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### Posso adquirir uma licença temporária do Aspose.Words for .NET?
+ Sim, você pode adquirir uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).

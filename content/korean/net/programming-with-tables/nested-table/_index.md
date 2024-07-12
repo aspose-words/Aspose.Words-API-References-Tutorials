@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// 이 호출은 첫 번째 테이블 내에 중첩 테이블을 만드는 데 중요합니다.
-	// 이 호출이 없으면 아래에 삽입된 셀이 외부 테이블에 추가됩니다.
+	//이 호출이 없으면 아래에 삽입된 셀이 외부 테이블에 추가됩니다.
 	builder.EndTable();
 	// 외부 테이블의 첫 번째 셀로 이동합니다.
 	builder.MoveTo(cell.FirstParagraph);

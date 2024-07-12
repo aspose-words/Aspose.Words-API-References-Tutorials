@@ -17,7 +17,7 @@ url: /tr/net/working-with-fields/convert-fields-in-body/
 Aspose.Words for .NET kullanarak bir belgenin gövdesindeki alanları dönüştürme eğitimine dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
 - Visual Studio: .NET geliştirme için yüklendi ve yapılandırıldı.
--  Aspose.Words for .NET: İndirilir ve Visual Studio projenize başvurulur. adresinden alabilirsiniz[Burada](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Visual Studio projenize indirilir ve başvurulur. adresinden alabilirsiniz[Burada](https://releases.aspose.com/words/net/).
 - Temel C# Bilgisi: Sağlanan kod parçacıklarını anlamak ve değiştirmek için C# programlama diline aşinalık.
 
 ## Ad Alanlarını İçe Aktar

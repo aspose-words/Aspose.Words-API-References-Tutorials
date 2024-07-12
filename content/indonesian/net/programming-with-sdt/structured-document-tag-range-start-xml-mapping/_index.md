@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Langkah 2: Muat Dokumen dan Buat Bagian XML
- Muat dokumen Word menggunakan`Document` konstruktor, meneruskan jalur ke dokumen sebagai parameter. Buat bagian XML yang berisi data yang ingin Anda tampilkan dalam tag dokumen terstruktur.
+ Muat dokumen Word menggunakan`Document`konstruktor, meneruskan jalur ke dokumen sebagai parameter. Buat bagian XML yang berisi data yang ingin Anda tampilkan dalam tag dokumen terstruktur.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Buat StructuredDocumentTag yang akan menampilkan konten CustomXmlPart kami di dokumen.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Jika kita menetapkan pemetaan untuk StructuredDocumentTag kita,
-	// itu hanya akan menampilkan bagian dari CustomXmlPart yang ditunjuk oleh XPath.
+	//itu hanya akan menampilkan bagian dari CustomXmlPart yang ditunjuk oleh XPath.
 	// XPath ini akan menunjuk ke konten elemen "<text>" kedua dari elemen "<root>" pertama dari CustomXmlPart kita.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

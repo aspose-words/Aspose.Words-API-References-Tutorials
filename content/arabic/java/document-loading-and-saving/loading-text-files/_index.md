@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- في هذا المثال، نقوم بتحميل مستند نصي وقص المسافات البادئة واللاحقة باستخدام`TxtLeadingSpacesOptions.TRIM` و`TxtTrailingSpacesOptions.TRIM`.
+ في هذا المثال، نقوم بتحميل مستند نصي وقص المسافات البادئة واللاحقة باستخدام`TxtLeadingSpacesOptions.TRIM`و`TxtTrailingSpacesOptions.TRIM`.
 
 ## الخطوة 3: التحكم في اتجاه النص
 
@@ -179,7 +179,7 @@ Aspose.Words for Java هي مكتبة قوية لمعالجة المستندات
 
 ### كيف أتعامل مع المسافات في المستندات النصية المحملة؟
 
- يمكنك التحكم في كيفية التعامل مع المسافات البادئة والزائدة في المستندات النصية المحملة باستخدام`TxtLoadOptions` . خيارات مثل`TxtLeadingSpacesOptions` و`TxtTrailingSpacesOptions`تسمح لك بقص المساحات أو الحفاظ عليها حسب الحاجة. راجع قسم "خيارات التعامل مع المساحات" في هذا الدليل للحصول على مثال.
+ يمكنك التحكم في كيفية التعامل مع المسافات البادئة والزائدة في المستندات النصية المحملة باستخدام`TxtLoadOptions` . خيارات مثل`TxtLeadingSpacesOptions`و`TxtTrailingSpacesOptions`تسمح لك بقص المساحات أو الحفاظ عليها حسب الحاجة. راجع قسم "خيارات التعامل مع المساحات" في هذا الدليل للحصول على مثال.
 
 ### ما أهمية اتجاه النص في Aspose.Words لـ Java؟
 

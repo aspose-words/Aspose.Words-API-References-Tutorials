@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Passaggio 2: impostazione della posizione della nota a piè di pagina e della nota di chiusura
 
- Successivamente, accedi a`FootnoteOptions` E`EndnoteOptions`proprietà del documento per impostare la posizione delle note a piè di pagina e delle note di chiusura. In questo esempio, impostiamo la posizione delle note a piè di pagina sotto il testo e la posizione delle note di chiusura alla fine della sezione:
+ Successivamente, accedi a`FootnoteOptions`E`EndnoteOptions`proprietà del documento per impostare la posizione delle note a piè di pagina e delle note di chiusura. In questo esempio, impostiamo la posizione delle note a piè di pagina sotto il testo e la posizione delle note di chiusura alla fine della sezione:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

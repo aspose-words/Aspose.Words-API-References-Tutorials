@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveF
 
 请确保将“dataDir”替换为文档的目录路径。
 
-### 使用 Aspose.Words for .NET 实现“将形状转换为 Office Math”功能的 LoadOptions 示例源代码
+### 使用 Aspose.Words for .NET 的具有“将形状转换为 Office Math”功能的 LoadOptions 示例源代码
 
 ```csharp
 //文档目录的路径

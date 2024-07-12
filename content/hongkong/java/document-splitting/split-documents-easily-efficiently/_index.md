@@ -74,7 +74,7 @@ for (Paragraph paragraph : paragraphs) {
 若要使用 Aspose.Words for Java 按標題分割文檔，請依照下列步驟操作：
 
 ```java
-//使用 Aspose.Words for Java 按標題分割文件的 Java 程式碼
+//使用 Aspose.Words for Java 按標題拆分文件的 Java 程式碼
 Document doc = new Document("input.docx");
 LayoutCollector layoutCollector = new LayoutCollector(doc);
 

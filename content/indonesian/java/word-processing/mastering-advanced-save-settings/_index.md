@@ -138,7 +138,7 @@ doc.save("automated_document.docx", SaveFormat.DOCX);
 
 ## Bekerja dengan Metadata Dokumen
 
-Metadata berisi informasi berharga tentang suatu dokumen. Kami akan mempelajari cara bekerja dengan dan memanipulasi metadata dokumen.
+Metadata berisi informasi berharga tentang suatu dokumen. Kita akan mempelajari cara bekerja dengan dan memanipulasi metadata dokumen.
 
 ```java
 // Akses dan ubah metadata dokumen

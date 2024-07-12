@@ -125,7 +125,7 @@ il gioco è fatto! Hai creato con successo un elenco multilivello in un document
  Sì, puoi continuare la numerazione utilizzando il`ListFormat.List` proprietà per collegarsi a un elenco esistente.
 
 ### Come posso modificare dinamicamente il livello di rientro?
- È possibile modificare dinamicamente il livello di rientro utilizzando`ListIndent` E`ListOutdent` metodi secondo necessità.
+ È possibile modificare dinamicamente il livello di rientro utilizzando`ListIndent`E`ListOutdent` metodi secondo necessità.
 
 ### Posso creare elenchi multilivello in altri formati di documenti come PDF?
 Sì, Aspose.Words supporta il salvataggio di documenti in vari formati incluso PDF, mantenendo la formattazione.

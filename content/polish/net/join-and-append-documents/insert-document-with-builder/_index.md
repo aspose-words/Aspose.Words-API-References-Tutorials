@@ -2,79 +2,123 @@
 title: Wstaw dokument za pomocą Buildera
 linktitle: Wstaw dokument za pomocą Buildera
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić dokument na końcu innego dokumentu za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak połączyć dwa dokumenty programu Word za pomocą Aspose.Words dla .NET. Przewodnik krok po kroku dotyczący wstawiania dokumentu za pomocą narzędzia DocumentBuilder i zachowywania formatowania.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/insert-document-with-builder/
 ---
+## Wstęp
 
- W tym samouczku wyjaśniono, jak używać Aspose.Words dla .NET do wstawiania dokumentu do innego dokumentu za pomocą`DocumentBuilder` klasa. Dostarczony kod źródłowy pokazuje, jak wstawić dokument na końcu innego dokumentu, zachowując formatowanie źródłowe.
+Masz więc dwa dokumenty programu Word i chcesz połączyć je w jeden. Być może zastanawiasz się: „Czy istnieje prosty sposób, aby zrobić to programowo?” Absolutnie! Dzisiaj przeprowadzę Cię przez proces wstawiania jednego dokumentu do drugiego przy użyciu biblioteki Aspose.Words dla .NET. Ta metoda jest bardzo przydatna, zwłaszcza gdy masz do czynienia z dużymi dokumentami lub chcesz zautomatyzować proces. Zanurkujmy od razu!
 
-## Krok 1: Skonfiguruj projekt
+## Warunki wstępne
 
-Upewnij się, że masz następujące wymagania wstępne:
+Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
--  Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać z[Aspose.Releases]https://releases.aspose.com/words/net/ lub użyj menedżera pakietów NuGet, aby go zainstalować.
-- Ścieżka katalogu dokumentów, w którym znajdują się dokumenty źródłowe i docelowe.
+1.  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Upewnij się, że masz zainstalowany program Visual Studio lub inny odpowiedni IDE.
+3. Podstawowa znajomość języka C#: Trochę znajomości języka C# bardzo się przyda.
 
-## Krok 2: Otwórz dokumenty źródłowe i docelowe
+## Importuj przestrzenie nazw
 
- Otwórz dokumenty źródłowe i docelowe za pomocą narzędzia`Document` konstruktor klasy. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw, aby uzyskać dostęp do funkcjonalności biblioteki Aspose.Words. Oto jak możesz to zrobić:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Teraz, gdy mamy już warunki wstępne, przeanalizujmy proces krok po kroku.
+
+## Krok 1: Konfigurowanie katalogu dokumentów
+
+Zanim zaczniemy kodować, musisz ustawić ścieżkę do katalogu dokumentów. Tutaj przechowywane są dokumenty źródłowe i docelowe.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której znajdują się Twoje dokumenty. Pomoże to programowi łatwo znaleźć Twoje pliki.
+
+## Krok 2: Ładowanie dokumentów źródłowych i docelowych
+
+Następnie musimy załadować dokumenty, z którymi chcemy pracować. W tym przykładzie mamy dokument źródłowy i dokument docelowy.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Zainicjuj narzędzie DocumentBuilder
+ Tutaj używamy`Document` class z biblioteki Aspose.Words, aby załadować nasze dokumenty. Upewnij się, że nazwy plików odpowiadają nazwom w Twoim katalogu.
 
- Utwórz nową instancję`DocumentBuilder` class i przekazać dokument docelowy jako parametr.
+## Krok 3: Tworzenie obiektu DocumentBuilder
+
+ The`DocumentBuilder` class to potężne narzędzie w bibliotece Aspose.Words. Umożliwia nam nawigację i manipulowanie dokumentem.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
-## Krok 4: Ustaw moduł DocumentBuilder
+ Na tym etapie utworzyliśmy plik`DocumentBuilder` obiekt dla naszego dokumentu docelowego. Pomoże nam to wstawić treść do dokumentu.
 
-Przesuń`DocumentBuilder` na koniec dokumentu za pomocą`MoveToDocumentEnd` metoda. Wstaw podział strony, aby oddzielić istniejącą treść od wstawionego dokumentu.
+## Krok 4: Przejście na koniec dokumentu
+
+Przed wstawieniem dokumentu źródłowego musimy przesunąć kursor konstruktora na koniec dokumentu docelowego.
 
 ```csharp
 builder.MoveToDocumentEnd();
+```
+
+Dzięki temu dokument źródłowy zostanie wstawiony na końcu dokumentu docelowego.
+
+## Krok 5: Wstawianie podziału strony
+
+Aby zachować porządek, przed wstawieniem dokumentu źródłowego dodajmy podział strony. Spowoduje to rozpoczęcie zawartości dokumentu źródłowego na nowej stronie.
+
+```csharp
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## Krok 5: Włóż dokument źródłowy
+Podział strony gwarantuje, że treść dokumentu źródłowego rozpoczyna się na nowej stronie, dzięki czemu scalony dokument wygląda profesjonalnie.
 
- Użyj`InsertDocument` metoda`DocumentBuilder` class, aby wstawić dokument źródłowy do dokumentu docelowego. Ustaw tryb formatu importu na`ImportFormatMode.KeepSourceFormatting` aby zachować formatowanie źródłowe.
+## Krok 6: Wstawianie dokumentu źródłowego
+
+Teraz następuje ekscytująca część — wstawianie dokumentu źródłowego do dokumentu docelowego.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Krok 6: Zapisz zmodyfikowany dokument
+ Używając`InsertDocument` metodą możemy wstawić cały dokument źródłowy do dokumentu docelowego. The`ImportFormatMode.KeepSourceFormatting` zapewnia zachowanie formatowania dokumentu źródłowego.
 
-Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
+## Krok 7: Zapisywanie scalonego dokumentu
+
+Na koniec zapiszmy scalony dokument. Spowoduje to połączenie dokumentów źródłowych i docelowych w jeden plik.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 ```
 
-To kończy implementację wstawiania dokumentu do innego dokumentu za pomocą Aspose.Words dla .NET.
+Zapisując dokument, kończymy proces łączenia obu dokumentów. Twój nowy dokument jest teraz gotowy i zapisany w określonym katalogu.
 
-### Przykładowy kod źródłowy dla Wstaw dokument za pomocą Buildera przy użyciu Aspose.Words dla .NET 
+## Wniosek
 
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+I masz to! Pomyślnie wstawiłeś jeden dokument do drugiego za pomocą Aspose.Words dla .NET. Ta metoda jest nie tylko wydajna, ale także zachowuje formatowanie obu dokumentów, zapewniając płynne scalanie. Niezależnie od tego, czy pracujesz nad jednorazowym projektem, czy chcesz zautomatyzować przetwarzanie dokumentów, Aspose.Words dla .NET Ci pomoże.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	DocumentBuilder builder = new DocumentBuilder(dstDoc);
-	builder.MoveToDocumentEnd();
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
-```
+## Często zadawane pytania
+
+### Co to jest Aspose.Words dla .NET?  
+Aspose.Words dla .NET to potężna biblioteka, która pozwala programistom programowo tworzyć, edytować, konwertować i manipulować dokumentami programu Word.
+
+### Czy mogę zachować formatowanie dokumentu źródłowego?  
+ Tak, za pomocą`ImportFormatMode.KeepSourceFormatting`, formatowanie dokumentu źródłowego zostaje zachowane po wstawieniu go do dokumentu docelowego.
+
+### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?  
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+
+### Czy mogę zautomatyzować ten proces?  
+Absolutnie! Opisaną metodę można włączyć do większych aplikacji w celu automatyzacji zadań związanych z przetwarzaniem dokumentów.
+
+### Gdzie mogę znaleźć więcej zasobów i wsparcia?  
+Aby uzyskać więcej informacji, możesz sprawdzić[dokumentacja](https://reference.aspose.com/words/net/) lub odwiedź stronę[forum wsparcia](https://forum.aspose.com/c/words/8) do pomocy.

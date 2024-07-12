@@ -2,120 +2,133 @@
 title: Unbeschränkt bearbeitbare Bereiche im Word-Dokument
 linktitle: Unbeschränkt bearbeitbare Bereiche im Word-Dokument
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET uneingeschränkt bearbeitbare Bereiche in einem Word-Dokument erstellen.
+description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET uneingeschränkt bearbeitbare Bereiche in einem Word-Dokument erstellen.
 type: docs
 weight: 10
 url: /de/net/document-protection/unrestricted-editable-regions/
 ---
-In diesem Tutorial führen wir Sie durch die Schritte zur Verwendung der Funktion für uneingeschränkt bearbeitbare Bereiche von Aspose.Words für .NET. Mit dieser Funktion können Sie Bereiche in einem Word-Dokument definieren, in denen Inhalte ohne Einschränkung bearbeitet werden können, auch wenn der Rest des Dokuments schreibgeschützt ist. Befolgen Sie die folgenden Schritte:
+## Einführung
 
-## Schritt 1: Dokument laden und Schutz einrichten
+Wenn Sie schon immer ein Word-Dokument schützen, aber dennoch bestimmte Teile editierbar lassen wollten, sind Sie hier richtig! Diese Anleitung führt Sie durch den Prozess der Einrichtung uneingeschränkt editierbarer Bereiche in einem Word-Dokument mit Aspose.Words für .NET. Wir decken alles ab, von den Voraussetzungen bis zu den detaillierten Schritten, um sicherzustellen, dass Sie ein reibungsloses Erlebnis haben. Bereit? Lassen Sie uns eintauchen!
 
-Beginnen Sie mit dem Laden des vorhandenen Dokuments:
+## Voraussetzungen
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-Schützen Sie das Dokument, indem Sie den Schreibschutztyp und das Kennwort festlegen.
+1.  Aspose.Words für .NET: Wenn Sie es noch nicht getan haben, laden Sie es herunter[Hier](https://releases.aspose.com/words/net/).
+2.  Eine gültige Aspose-Lizenz: Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio: Jede aktuelle Version sollte einwandfrei funktionieren.
+4. Grundkenntnisse in C# und .NET: Diese helfen Ihnen dabei, dem Code zu folgen.
 
-## Schritt 2: Editierbaren Bereich erstellen
+Nun, da Sie bereit sind, können wir mit dem spaßigen Teil beginnen!
 
-Beginnen Sie mit der Erstellung eines bearbeitbaren Bereichs mithilfe der Objekte EditableRangeStart und EditableRangeEnd:
+## Namespaces importieren
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Für den gerade erstellten EditableRangeStart wird ein EditableRange-Objekt erstellt.
-EditableRange editableRange = edRangeStart.EditableRange;
-
-// Platzieren Sie etwas innerhalb des bearbeitbaren Bereichs.
-builder.Writeln("Paragraph inside first editable range");
-
-// Ein editierbarer Bereich ist wohlgeformt, wenn er einen Anfang und ein Ende hat.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## Schritt 3: Inhalte außerhalb der bearbeitbaren Bereiche hinzufügen
-
-Sie können Inhalte außerhalb der bearbeitbaren Bereiche hinzufügen, die schreibgeschützt bleiben:
+Um Aspose.Words für .NET verwenden zu können, müssen Sie die erforderlichen Namespaces importieren. So können Sie das tun:
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## Schritt 4: Speichern Sie das Dokument
+## Schritt 1: Einrichten Ihres Projekts
 
-Speichern Sie abschließend das geänderte Dokument:
+Lassen Sie uns zunächst ein neues C#-Projekt in Visual Studio erstellen.
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. Öffnen Sie Visual Studio: Öffnen Sie zunächst Visual Studio und erstellen Sie ein neues Konsolen-App-Projekt.
+2. Installieren Sie Aspose.Words: Verwenden Sie den NuGet-Paketmanager, um Aspose.Words zu installieren. Sie können dies tun, indem Sie den folgenden Befehl in der Paketmanager-Konsole ausführen:
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-Geben Sie unbedingt den richtigen Pfad und Dateinamen an, um das Dokument mit bearbeitbaren Bereichen zu speichern.
+## Schritt 2: Laden des Dokuments
 
-### Beispielquellcode für uneingeschränkt editierbare Regionen mit Aspose.Words für .NET
+Laden wir nun das Dokument, das Sie schützen möchten. Stellen Sie sicher, dass in Ihrem Verzeichnis ein Word-Dokument bereitliegt.
 
-Hier ist der vollständige Quellcode für uneingeschränkt editierbare Bereiche mit Aspose.Words für .NET:
+1. Legen Sie das Dokumentverzeichnis fest: Definieren Sie den Pfad zu Ihrem Dokumentverzeichnis.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  Laden Sie das Dokument: Verwenden Sie die`Document` Klasse, um Ihr Word-Dokument zu laden.
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-// Der Pfad zum Dokumentverzeichnis.
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Laden Sie ein Dokument hoch und machen Sie es schreibgeschützt.
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Schritt 3: Schützen des Dokuments
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+Als nächstes setzen wir das Dokument auf schreibgeschützt. Dadurch wird sichergestellt, dass ohne das Passwort keine Änderungen vorgenommen werden können.
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1.  Initialisieren Sie DocumentBuilder: Erstellen Sie eine Instanz von`DocumentBuilder` , um Änderungen am Dokument vorzunehmen.
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. Schutzstufe festlegen: Schützen Sie das Dokument mit einem Kennwort.
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. Schreibgeschützten Text hinzufügen: Fügen Sie schreibgeschützten Text ein.
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-// Starten Sie einen bearbeitbaren Bereich.
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Für den gerade erstellten EditableRangeStart wird ein EditableRange-Objekt erstellt.
-EditableRange editableRange = edRangeStart.EditableRange;
+## Schritt 4: Editierbare Bereiche erstellen
 
-// Platzieren Sie etwas innerhalb des bearbeitbaren Bereichs.
-builder.Writeln("Paragraph inside first editable range");
+Und hier geschieht die Magie. Wir erstellen Abschnitte im Dokument, die trotz des allgemeinen Nur-Lese-Schutzes bearbeitet werden können.
 
-// Ein editierbarer Bereich ist wohlgeformt, wenn er einen Anfang und ein Ende hat.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. Beginn des bearbeitbaren Bereichs: Definieren Sie den Beginn des bearbeitbaren Bereichs.
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2.  Editierbares Bereichsobjekt erstellen: Ein`EditableRange` Objekt wird automatisch erstellt.
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. Bearbeitbaren Text einfügen: Fügen Sie Text innerhalb des bearbeitbaren Bereichs hinzu.
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## Schritt 5: Schließen des bearbeitbaren Bereichs
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+Ein editierbarer Bereich ist ohne Ende nicht vollständig. Das fügen wir als Nächstes hinzu.
 
-```
-Wenn Sie diese Schritte befolgen, können Sie mit Aspose.Words für .NET ganz einfach uneingeschränkt bearbeitbare Bereiche in Ihrem Word-Dokument erstellen.
+1. Ende des bearbeitbaren Bereichs: Definieren Sie das Ende des bearbeitbaren Bereichs.
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. Fügen Sie schreibgeschützten Text außerhalb des Bereichs hinzu: Fügen Sie Text außerhalb des bearbeitbaren Bereichs ein, um den Schutz zu demonstrieren.
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## Schritt 6: Speichern des Dokuments
+
+Lassen Sie uns abschließend das Dokument mit dem angewendeten Schutz und den bearbeitbaren Bereichen speichern.
+
+1.  Speichern Sie das Dokument: Verwenden Sie die`Save` Methode, um Ihr geändertes Dokument zu speichern.
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET uneingeschränkt bearbeitbare Bereiche in einem Word-Dokument erstellt. Indem Sie die angegebenen Schritte befolgen, können Sie bestimmte Bereiche innerhalb des Dokuments definieren, in denen Benutzer den Inhalt frei bearbeiten können, während der Rest des Dokuments schreibgeschützt bleibt. Aspose.Words für .NET bietet leistungsstarke Funktionen zum Schutz und zur Anpassung von Dokumenten und gibt Ihnen Kontrolle über die Bearbeitungsmöglichkeiten Ihrer Word-Dokumente.
 
-### FAQs zu uneingeschränkt bearbeitbaren Bereichen in Word-Dokumenten
+Und da haben Sie es! Sie haben mit Aspose.Words für .NET erfolgreich uneingeschränkt bearbeitbare Bereiche in einem Word-Dokument erstellt. Diese Funktion ist unglaublich nützlich für kollaborative Umgebungen, in denen bestimmte Teile eines Dokuments unverändert bleiben müssen, während andere bearbeitet werden können. 
 
-#### F: Was sind uneingeschränkt editierbare Bereiche in Aspose.Words für .NET?
+ Experimentieren Sie mit komplexeren Szenarien und verschiedenen Schutzstufen, um das Beste aus Aspose.Words herauszuholen. Wenn Sie Fragen haben oder auf Probleme stoßen, zögern Sie nicht, sich die[Dokumentation](https://reference.aspose.com/words/net/) oder wenden Sie sich an[Unterstützung](https://forum.aspose.com/c/words/8).
 
-A: Unbeschränkt bearbeitbare Bereiche in Aspose.Words für .NET sind Bereiche innerhalb eines Word-Dokuments, in denen Inhalte ohne Einschränkungen bearbeitet werden können, selbst wenn der Rest des Dokuments schreibgeschützt ist. Diese Bereiche bieten eine Möglichkeit, bestimmte Teile des Dokuments zu definieren, die Benutzer ändern können, während der allgemeine Dokumentschutz erhalten bleibt.
+## Häufig gestellte Fragen
 
-#### F: Wie kann ich mit Aspose.Words für .NET uneingeschränkt bearbeitbare Bereiche erstellen?
+### Kann ich mehrere bearbeitbare Bereiche in einem Dokument haben?
+Ja, Sie können mehrere bearbeitbare Bereiche erstellen, indem Sie bearbeitbare Bereiche an verschiedenen Teilen des Dokuments beginnen und enden lassen.
 
-A: Um mit Aspose.Words für .NET uneingeschränkt bearbeitbare Bereiche in einem Word-Dokument zu erstellen, können Sie die folgenden Schritte ausführen:
-1.  Laden Sie das vorhandene Dokument mit dem`Document` Klasse.
-2.  Setzen Sie den Dokumentschutz auf schreibgeschützt mit dem`Protect` Methode der`Document` Objekt.
-3.  Verwenden Sie die`DocumentBuilder` Klasse, um einen editierbaren Bereich zu erstellen, indem Sie ein`EditableRangeStart` Objekt und ein`EditableRangeEnd` Objekt.
-4.  Fügen Sie Inhalt innerhalb des editierbaren Bereichs hinzu, indem Sie die`DocumentBuilder`.
-5.  Speichern Sie das geänderte Dokument mit dem`Save` Methode der`Document` Objekt.
+### Welche anderen Schutzarten sind in Aspose.Words verfügbar?
+Aspose.Words unterstützt verschiedene Schutztypen wie AllowOnlyComments, AllowOnlyFormFields und NoProtection.
 
-#### F: Kann ich in einem Word-Dokument mehrere uneingeschränkt bearbeitbare Bereiche haben?
+### Ist es möglich, den Schutz eines Dokuments aufzuheben?
+ Ja, Sie können den Schutz entfernen mit dem`Unprotect` Methode und geben Sie das richtige Passwort ein.
 
-A: Ja, Sie können mehrere uneingeschränkt bearbeitbare Bereiche in einem Word-Dokument haben. Um dies zu erreichen, können Sie mehrere Sätze von`EditableRangeStart` Und`EditableRangeEnd` Objekte mit dem`DocumentBuilder` Klasse. Jeder Objektsatz definiert einen separaten bearbeitbaren Bereich, in dem Benutzer den Inhalt ohne Einschränkungen ändern können.
+### Kann ich für verschiedene Bereiche unterschiedliche Passwörter festlegen?
+Nein, der Schutz auf Dokumentebene wendet ein einziges Kennwort für das gesamte Dokument an.
 
-#### F: Kann ich bearbeitbare Bereiche ineinander verschachteln?
-
- A: Nein, Sie können editierbare Bereiche nicht ineinander verschachteln, wenn Sie Aspose.Words für .NET verwenden. Jeder editierbare Bereich, der durch ein`EditableRangeStart` Und`EditableRangeEnd` Paar sollte unabhängig sein und darf sich nicht überlappen oder in einem anderen bearbeitbaren Bereich verschachtelt sein. Verschachtelte bearbeitbare Bereiche werden nicht unterstützt.
-
-#### F: Kann ich den schreibgeschützten Schutz des Dokuments innerhalb eines bearbeitbaren Bereichs entfernen?
-
-A: Nein, Sie können den Nur-Lese-Schutz des Dokuments innerhalb eines bearbeitbaren Bereichs nicht entfernen. Der Nur-Lese-Schutz wird auf das gesamte Dokument angewendet und kann nicht selektiv innerhalb bestimmter bearbeitbarer Bereiche entfernt werden. Der Zweck der bearbeitbaren Bereiche besteht darin, Inhaltsänderungen zu ermöglichen, während das gesamte Dokument schreibgeschützt bleibt.
+### Wie beantrage ich eine Lizenz für Aspose.Words?
+Sie können eine Lizenz anwenden, indem Sie sie aus einer Datei oder einem Stream laden. Detaillierte Schritte finden Sie in der Dokumentation.

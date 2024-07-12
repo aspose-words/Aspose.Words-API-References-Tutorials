@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Zde přidáme nějaký text před a za obsah označený záložkou. The`StartBookmark` a`EndBookmark` metody definují hranice záložky.
+ Zde přidáme nějaký text před a za obsah označený záložkou. The`StartBookmark`a`EndBookmark` metody definují hranice záložky.
 
 ## Krok 3: Vložení podmíněného pole
 

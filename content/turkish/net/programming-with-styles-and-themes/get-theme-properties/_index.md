@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Çözüm
 
- Bu eğitimde Aspose.Words for .NET ile bir belgenin tema özelliklerini almanın işlevselliğini araştırdık. Kullanmak`Theme`nesne ve ilişkili özellikleri sayesinde, belge temasında kullanılan vurgu renklerinin yanı sıra birincil ve ikincil yazı tipleri hakkındaki bilgilere de erişebildik.
+ Bu eğitimde Aspose.Words for .NET ile bir belgenin tema özelliklerini almanın işlevselliğini araştırdık. Kullanmak`Theme`nesne ve ilişkili özellikleri sayesinde, birincil ve ikincil yazı tipleri ile belge temasında kullanılan vurgu renkleri hakkındaki bilgilere ulaşabildik.
 
 Tema özelliklerini alma yeteneği, belgelerinizin stillerini ve düzenlerini analiz etmenize ve özelleştirmenize olanak tanır. Bu bilgileri hedeflenen değişiklikleri uygulamak, raporlar oluşturmak veya belgelerinizdeki yazı tipi ve renk kullanımına ilişkin analizler gerçekleştirmek için kullanabilirsiniz.
 
@@ -72,7 +72,7 @@ Aspose.Words for .NET, belge temalarınızı değiştirmek için güçlü bir AP
 
 #### Bir belge temasının birincil ve ikincil yazı tiplerini nasıl alabilirim?
 
- Bir belgenin temasının birincil ve ikincil yazı tiplerine,`MajorFonts` Ve`MinorFonts` özellikleri`Theme` sırasıyla nesne. Bu özellikler, farklı diller veya bölgeler için belgenin temasında kullanılan yazı tipi adlarına erişim sağlar.
+ Bir belgenin temasının birincil ve ikincil yazı tiplerine,`MajorFonts`Ve`MinorFonts` özellikleri`Theme` sırasıyla nesne. Bu özellikler, farklı diller veya bölgeler için belgenin temasında kullanılan yazı tipi adlarına erişim sağlar.
 
 #### Bir belgenin temasında kullanılan vurgu renklerini alabilir miyim?
 

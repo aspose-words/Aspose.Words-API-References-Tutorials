@@ -16,7 +16,7 @@ För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att 
 
 ## Steg 2: Ladda dokumentet
 
-I det här steget kommer vi att ladda Word-dokumentet som vi vill rensa upp. Använd följande kod för att ladda dokumentet:
+det här steget kommer vi att ladda Word-dokumentet som vi vill rensa upp. Använd följande kod för att ladda dokumentet:
 
 ```csharp
 // Sökväg till dokumentkatalogen.
@@ -73,7 +73,7 @@ Detta uttalande visar antalet stilar som återstår efter rengöring.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//Antalet stilar efter rengöring minskades.
+	// Antalet stilar efter rengöring minskades.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

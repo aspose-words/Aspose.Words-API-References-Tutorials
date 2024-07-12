@@ -2,7 +2,7 @@
 title: Sesuaikan Tabel Secara Otomatis Dengan Isi
 linktitle: Sesuaikan Tabel Secara Otomatis Dengan Isi
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyesuaikan tabel secara otomatis dengan kontennya dalam dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menyesuaikan tabel secara otomatis dengan kontennya di dokumen Word menggunakan Aspose.Words untuk .NET.
 type: docs
 weight: 10
 url: /id/net/programming-with-tables/auto-fit-table-to-contents/

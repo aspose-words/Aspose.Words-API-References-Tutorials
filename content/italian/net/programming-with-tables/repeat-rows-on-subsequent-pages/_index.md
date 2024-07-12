@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Inserisci la prima cella della prima riga
+//Inserisci la prima cella della prima riga
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Qui utilizziamo il generatore di documenti per creare una tabella con due righe di intestazione e più righe di dati. IL`RowFormat.HeadingFormat` parametri vengono utilizzati per contrassegnare le righe di intestazione che dovrebbero essere ripetute nelle pagine successive.
+ Qui utilizziamo il generatore di documenti per creare una tabella con due righe di intestazione e più righe di dati. IL`RowFormat.HeadingFormat` i parametri vengono utilizzati per contrassegnare le righe di intestazione che dovrebbero essere ripetute nelle pagine successive.
 
 ## Passaggio 4: salvataggio del documento modificato
 Infine gli Stati Uniti

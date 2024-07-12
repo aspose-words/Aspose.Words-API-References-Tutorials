@@ -139,6 +139,6 @@ Ja, du kan använda Aspose.Words för Java för att spåra revisioner i befintli
 
 ### 5. Var kan jag hitta stöd för Aspose.Words för Java?
 
- För frågor eller problem kan du besöka[Aspose.Words för Java supportforum](https://forum.aspose.com/).
+ För eventuella frågor eller problem kan du besöka[Aspose.Words för Java supportforum](https://forum.aspose.com/).
 
 Kom igång med Aspose.Words för Java idag och effektivisera dina dokumenthanteringsprocesser.

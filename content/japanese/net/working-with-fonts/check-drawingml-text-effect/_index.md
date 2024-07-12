@@ -41,7 +41,7 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Outline));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 ```
 
-### Aspose.Words for .NET を使用して DML テキスト効果をチェックするためのサンプル ソース コード 
+### Aspose.Words for .NET を使用して DMLText 効果をチェックするためのサンプル ソース コード 
 
 ```csharp
 

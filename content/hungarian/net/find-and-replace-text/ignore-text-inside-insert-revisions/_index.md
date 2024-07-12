@@ -2,196 +2,94 @@
 title: Szöveg figyelmen kívül hagyása a beszúrás verzióin belül
 linktitle: Szöveg figyelmen kívül hagyása a beszúrás verzióin belül
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan használhatja az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a módosításokon belül" funkcióját a Word-dokumentumok beszúrási változatainak kezeléséhez.
+description: Ismerje meg, hogyan kezelheti hatékonyan a dokumentumok átdolgozását az Aspose.Words for .NET segítségével. Fedezze fel azokat a technikákat, amelyek segítségével figyelmen kívül hagyhatja a szöveget a beszúrási változatokon belül az egyszerűsített szerkesztés érdekében.
 type: docs
 weight: 10
 url: /hu/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
+## Bevezetés
 
-Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogyan használható az Aspose.Words for .NET könyvtárban található Szöveg figyelmen kívül hagyása a változatok beszúrása funkciójában. Ez a funkció akkor hasznos, ha figyelmen kívül akarjuk hagyni a szöveg beszúrását a revíziókon belül a dokumentumok kezelése közben.
+Ebben az átfogó útmutatóban az Aspose.Words for .NET használatával foglalkozunk a dokumentumrevíziók hatékony kezeléséhez. Legyen szó fejlesztőről vagy technológiai rajongóról, ha megérti, hogyan lehet figyelmen kívül hagyni a szöveget a beszúrt változatokon belül, egyszerűsítheti a dokumentumfeldolgozási munkafolyamatokat. Ez az oktatóanyag felvértezi az Aspose.Words hatékony funkcióinak kihasználásához szükséges készségeket a dokumentum-revíziók zökkenőmentes kezeléséhez.
 
 ## Előfeltételek
 
-- C# nyelv alapismerete.
-- .NET fejlesztői környezet telepített Aspose.Words könyvtárral.
+Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+- A Visual Studio telepítve van a gépedre.
+- Aspose.Words for .NET könyvtár integrálva a projektbe.
+- C# programozási nyelv és .NET keretrendszer alapszintű ismerete.
 
-## 1. lépés: Új dokumentum létrehozása
+## Névterek importálása
 
- Mielőtt elkezdené manipulálni a szöveget a beillesztési változatokon belül, létre kell hoznunk egy új dokumentumot az Aspose.Words for .NET használatával. Ezt úgy lehet megtenni, hogy a`Document` tárgy:
-
+Kezdésként adja meg a szükséges névtereket a C# projektben:
 ```csharp
-Document doc = new Document();
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using System;
+using System.Text.RegularExpressions;
 ```
 
-## 2. lépés: Szöveg beszúrása revíziókövetéssel
+## 1. lépés: Hozzon létre egy új dokumentumot, és kezdje el a módosítások követését
 
- Ha megvan a dokumentumunk, a revíziókövetéssel ellátott szöveget a segítségével szúrhatjuk be`DocumentBuilder`tárgy. Például a "Beszúrva" szöveg beszúrásához revíziókövetéssel használhatjuk a`StartTrackRevisions`, `Writeln` és`StopTrackRevisions` mód:
-
+Először inicializáljon egy új dokumentumot, és kezdje el követni a revíziókat:
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// Kezdje el a revíziók követését
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted");
+builder.Writeln("Inserted"); //Szöveg beszúrása nyomon követési változatokkal
 doc.StopTrackRevisions();
 ```
 
-## 3. lépés: Szúrjon be nem ellenőrzött szöveget
+## 2. lépés: Szúrjon be nem felülvizsgált szöveget
 
- A revíziókövetéssel rendelkező szövegek mellett a felülvizsgálatlan szöveget is beszúrhatjuk a`DocumentBuilder` tárgy. Például a "Szöveg" szöveg átdolgozás nélküli beszúrásához használhatjuk a`Write` módszer:
-
+Ezután szúrjon be szöveget a dokumentumba a módosítások követése nélkül:
 ```csharp
 builder.Write("Text");
 ```
 
-## 4. lépés: A Szöveg figyelmen kívül hagyása a változatok beszúrása funkcióban
+## 3. lépés: A beszúrt szöveg figyelmen kívül hagyása a FindReplaceOptions használatával
 
- Ha figyelmen kívül szeretnénk hagyni a szöveget a beszúrási revíziókon belül a következő műveleteknél, használhatjuk a`FindReplaceOptions` objektumot és állítsa be a`IgnoreInserted`tulajdonát`true`:
-
+Most állítsa be a FindReplaceOptions alkalmazást a beillesztett változatok figyelmen kívül hagyásához:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-```
 
-## 5. lépés: Reguláris kifejezések használata kereséshez és cseréhez
-
-A dokumentumszöveg keresési műveleteinek és cseréjének végrehajtásához reguláris kifejezéseket használunk. Példánkban megkeressük az "e" betű összes előfordulását, és csillagra cseréljük őket* ". NET-et fogunk használni`Regex` osztály ehhez:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## 6. lépés: A módosított dokumentum kimenet megtekintése
+## 4. lépés: Írja ki a dokumentum szövegét
 
- A keresés és csere alkalmazása után a dokumentum megváltozott tartalmát a segítségével tudjuk megjeleníteni`GetText` módszer:
-
+A dokumentum szövegének megjelenítése a beillesztett változatok figyelmen kívül hagyása után:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## 7. lépés: Módosítsa a beállításokat a beszúrási változatok felvételéhez
+## 5. lépés: A beszúrt szöveg figyelmen kívül hagyása opció visszaállítása
 
-Ha a beszúrási revíziókon belüli szöveget bele akarjuk foglalni a kimeneti eredménybe, módosíthatjuk a beállításokat, hogy ne hagyjuk figyelmen kívül a beszúrási revíziókat. Ehhez beállítjuk a`IgnoreInserted`tulajdonát`false`:
-
+A beszúrt szöveg figyelmen kívül hagyásának visszaállításához módosítsa a FindReplaceOptions paramétert:
 ```csharp
 options.IgnoreInserted = false;
-```
-
-## 8. lépés: A módosított dokumentum megtekintése beszúrás-változatokkal
-
-Az opciók megváltoztatása után végre tudjuk hajtani a keresést és a cserét, hogy az eredmény a beszúrási revíziókon belüli szöveggel kapjuk meg:
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-
-### Példa forráskódra az Aspose.Words for .NET-hez való szövegbeszúráson belüli változatok figyelmen kívül hagyásához
-
-Íme a teljes mintaforráskód, amely bemutatja a Szöveg figyelmen kívül hagyása a változatok beszúrása funkciójában az Aspose.Words for .NET-hez:
-
-
-```csharp
-       
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Szöveg beszúrása nyomon követési változatokkal.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	builder.Writeln("Inserted");
-	doc.StopTrackRevisions();
-
-	// Nem átdolgozott szöveg beszúrása.
-	builder.Write("Text");
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreInserted = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-   
 ```
 
 ## Következtetés
 
-Ebben a cikkben megvizsgáltuk a C# forráskódot, hogy megértsük, hogyan használható az Aspose.Words for .NET verzióiban a szöveg figyelmen kívül hagyása funkciója. Lépésenkénti útmutatót követtünk a dokumentum létrehozásához, a nyomkövető revíziókkal rendelkező szöveg beszúrásához és a nem felülvizsgált szöveghez, a Szöveg figyelmen kívül hagyása a változatok beszúrása funkció használatához, a keresési és csereműveletek végrehajtásához reguláris kifejezésekkel, valamint a módosított dokumentum megjelenítéséhez.
+Az Aspose.Words for .NET segítségével a szöveg figyelmen kívül hagyásának technikájának elsajátítása a beszúrt revíziókon belül javítja dokumentumszerkesztési képességeit. Ha követi ezeket a lépéseket, hatékonyan kezelheti a dokumentumok revízióit, így biztosítva a szövegfeldolgozási feladatok egyértelműségét és pontosságát.
 
-### GYIK
+## GYIK
 
-#### K: Mi az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a módosításokon belül" funkciója?
+### Hogyan kezdhetem el a változatok nyomon követését egy Word-dokumentumban az Aspose.Words for .NET használatával?
+ A változatok követésének megkezdéséhez használja a`doc.StartTrackRevisions(author, date)` módszer.
 
-V: Az Aspose.Words for .NET "Szöveg figyelmen kívül hagyása a beszúráson belüli változatokon" funkciója lehetővé teszi annak megadását, hogy a beszúráson belüli szöveget figyelmen kívül kell-e hagyni bizonyos műveletek során, például szöveg keresése és cseréje során. Ha ez a funkció engedélyezve van, a beillesztési változatokban lévő szöveget a rendszer nem veszi figyelembe a műveletek során.
+### Milyen előnyökkel jár a beszúrt szöveg figyelmen kívül hagyása a dokumentum-változatoknál?
+beszúrt szöveg figyelmen kívül hagyása segít az alapvető tartalomra összpontosítani, miközben hatékonyan kezeli a dokumentummódosításokat.
 
-#### K: Hogyan hozhatok létre új dokumentumot az Aspose.Words for .NET használatával?
+### Visszaállíthatom a figyelmen kívül hagyott beszúrt szöveget az eredetire az Aspose.Words for .NET-ben?
+Igen, visszaállíthatja a figyelmen kívül hagyott beszúrt szöveget a megfelelő FindReplaceOptions beállítások segítségével.
 
- V: Ha új dokumentumot szeretne létrehozni az Aspose.Words for .NET használatával, példányosíthat egy`Document` tárgy. Íme egy példa a C# kódra új dokumentum létrehozásához:
+### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
+ Meglátogatni a[Aspose.Words .NET dokumentációhoz](https://reference.aspose.com/words/net/) részletes útmutatókért és API-referenciákért.
 
-```csharp
-Document doc = new Document();
-```
-
-#### K: Hogyan szúrhatok be szöveget revíziókövetéssel az Aspose.Words for .NET-be?
-
-V: Ha már rendelkezik egy dokumentummal, akkor az a segítségével beszúrhat szöveget revíziókövetéssel`DocumentBuilder` tárgy. Például a "Beszúrva" szöveg beszúrásához revíziókövetéssel, használhatja a`StartTrackRevisions`, `Writeln` , és`StopTrackRevisions` mód:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted");
-doc.StopTrackRevisions();
-```
-
-#### K: Hogyan illeszthetek be felül nem vizsgált szöveget az Aspose.Words for .NET-be?
-
- V: A revíziókövetéssel rendelkező szövegen kívül felülvizsgálatlan szöveget is beszúrhat a segítségével`DocumentBuilder` tárgy. Például a "Szöveg" szöveg átdolgozás nélküli beszúrásához használhatja a`Write` módszer:
-
-```csharp
-builder.Write("Text");
-```
-
-#### K: Hogyan hagyhatom figyelmen kívül a szöveget az Aspose.Words for .NET beszúrásain belül?
-
- V: Ha a későbbi műveletek során figyelmen kívül szeretné hagyni a szöveg beszúrási változatait, használhatja a`FindReplaceOptions` objektumot és állítsa be a`IgnoreInserted`tulajdonát`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-```
-
-#### K: Hogyan hajthatok végre keresést és cserét reguláris kifejezések használatával az Aspose.Words for .NET-ben?
-
- V: Ha keresési és csereműveleteket szeretne végrehajtani a dokumentum szövegén reguláris kifejezések használatával, használhatja a .NET-et`Regex` osztály. Például megkeresheti az "e" betű összes előfordulását, és csillaggal helyettesítheti őket* ", létrehozhat a`Regex` objektumot, és használja a`Replace` módszer:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### K: Hogyan tekinthetem meg a dokumentum módosított kimenetét az Aspose.Words for .NET-ben?
-
- V: A keresés és csere műveletek alkalmazása után megtekintheti a dokumentum megváltozott tartalmát a segítségével`GetText` módszer:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### K: Hogyan foglalhatom bele a beillesztési változatokat az Aspose.Words for .NET kimeneti eredményébe?
-
- V: Ha a kimeneti eredménybe bele szeretné foglalni a szöveg beszúrási változatait, módosíthatja a beállításokat, hogy ne hagyja figyelmen kívül a beszúrási változatokat. Ehhez beállíthatja a`IgnoreInserted` tulajdona a`FindReplaceOptions` tiltakozni`false`:
-
-```csharp
-options.IgnoreInserted = false;
-```
-
-#### K: Hogyan jeleníthetem meg a módosított dokumentumot az Aspose.Words for .NET beszúrási változataival?
-
-V: Miután módosította a beillesztési revíziók felvételére vonatkozó beállításokat, végrehajthatja a keresést és a cserét újra, hogy az eredmény a beszúrási revíziókon belüli szöveggel jelenjen meg:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Létezik közösségi fórum az Aspose.Words .NET-hez kapcsolódó lekérdezések megvitatására?
+ Igen, meglátogathatja a[Aspose.Words fórum](https://forum.aspose.com/c/words/8) közösségi támogatásra és beszélgetésekre.

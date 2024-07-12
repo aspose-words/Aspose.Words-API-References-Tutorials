@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Aquí, estamos creando una instancia de`Document` y`DocumentBuilder` . Pensar en`Document` como su documento de Word en blanco y`DocumentBuilder` como tu pluma.
+ Aquí, estamos creando una instancia de`Document`y`DocumentBuilder` . Pensar en`Document` como su documento de Word en blanco y`DocumentBuilder` como tu pluma.
 
 ## Paso 2: pasar al inicio del documento
 

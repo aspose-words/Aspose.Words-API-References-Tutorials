@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### Q: Aspose.Words for .NET を使用して Word 文書に挿入された TOA フィールドの外観をカスタマイズするにはどうすればよいですか?
 
-A: 挿入されたTOAフィールドの外観は、`FieldTOA`書式設定オプションを指定するオブジェクト。
+ A: 挿入されたTOAフィールドの外観は、`FieldTOA`書式設定オプションを指定するオブジェクト。
 
 #### Q: Aspose.Words for .NET を使用して、単一の Word 文書に複数の TOA フィールドを追加できますか?
 

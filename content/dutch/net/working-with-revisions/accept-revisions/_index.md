@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Oplossing 2:
 
- A: U kunt het bijhouden van revisies ook inschakelen met behulp van de`Document` constructeur die accepteert`trackRevisions` En`author` parameters.
+ A: U kunt het bijhouden van revisies ook inschakelen met behulp van de`Document` constructeur die accepteert`trackRevisions`En`author` parameters.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Bu kod bir örneğini oluşturur`Document` Ve`DocumentBuilder` belgeyi oluşturmak için. Bir ekler`<img>` belgeyi base64 kodlu bir görüntüyle etiketleyin.
+ Bu kod bir örneğini oluşturur`Document`Ve`DocumentBuilder` belgeyi oluşturmak için. Bir ekler`<img>` belgeyi base64 kodlu bir görüntüyle etiketleyin.
 
 ## 3. Adım: HTML kaydetme seçeneklerini ayarlayın
 

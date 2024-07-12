@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Met deze code wordt een exemplaar gemaakt van`Document` En`DocumentBuilder` om het document op te bouwen. Het voegt een`<img>` tag in het document met een base64-gecodeerde afbeelding.
+ Met deze code wordt een exemplaar gemaakt van`Document`En`DocumentBuilder` om het document op te bouwen. Het voegt een`<img>` tag in het document met een base64-gecodeerde afbeelding.
 
 ## Stap 3: Stel HTML-opslagopties in
 

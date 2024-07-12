@@ -145,7 +145,7 @@ table.setStyleIdentifier(StyleIdentifier.LIGHT_SHADING_ACCENT_1);
 cell1.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
 ```
 
-### Bir tablo hücresine köprü eklemek mümkün müdür?
+### Bir tablo hücresine köprü eklemek mümkün mü?
 
 Evet, Aspose.Words for Java'da tablo hücrelerine köprüler ekleyebilirsiniz. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 

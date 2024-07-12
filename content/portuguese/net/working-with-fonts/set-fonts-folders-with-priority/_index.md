@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Etapa 2: definir pastas de fontes com prioridade
- Então você pode definir as pastas de fontes com prioridade usando o`FontSettings` classe e o`SetFontsSources()`método. Você pode especificar várias fontes de fonte usando instâncias de`SystemFontSource` e`FolderFontSource`. Neste exemplo, definimos duas fontes de fontes: a fonte de fontes padrão do sistema e uma pasta de fontes personalizadas com prioridade 1.
+ Então você pode definir as pastas de fontes com prioridade usando o`FontSettings` classe e o`SetFontsSources()`método. Você pode especificar várias fontes de fonte usando instâncias de`SystemFontSource`e`FolderFontSource`. Neste exemplo, definimos duas fontes de fontes: a fonte de fontes padrão do sistema e uma pasta de fontes personalizadas com prioridade 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

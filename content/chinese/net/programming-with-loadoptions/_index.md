@@ -2,7 +2,7 @@
 title: 使用 Loadoptions 进行文字处理
 linktitle: 使用 Loadoptions 进行文字处理
 second_title: Aspose.Words 文档处理 API
-description: 学习使用 Aspose.Words for .NET 中的 LoadOptions 进行编程。详细的教程，带有用于加载和自定义加载 Word 文档的示例代码。
+description: 学习使用 Aspose.Words for .NET 中的 LoadOptions 进行编程。详细的教程，带有用于加载和自定义 Word 文档加载的示例代码。
 type: docs
 weight: 1610
 url: /zh/net/programming-with-loadoptions/

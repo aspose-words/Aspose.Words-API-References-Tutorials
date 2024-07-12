@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- ในขั้นตอนนี้ เราเข้าถึงย่อหน้าแรกของเอกสารโดยใช้`FirstSection` และ`Body` คุณสมบัติ. ต่อไปเราจะเข้าถึง`ParagraphFormat.Bidi` คุณสมบัติเพื่อรับทิศทางข้อความของย่อหน้า จากนั้นเราจะแสดงค่านี้ในคอนโซล
+ ในขั้นตอนนี้ เราเข้าถึงย่อหน้าแรกของเอกสารโดยใช้`FirstSection`และ`Body` คุณสมบัติ. ต่อไปเราจะเข้าถึง`ParagraphFormat.Bidi` คุณสมบัติเพื่อรับทิศทางข้อความของย่อหน้า จากนั้นเราจะแสดงค่านี้ในคอนโซล
 
 ## ขั้นตอนที่ 5: บันทึกเอกสาร
 

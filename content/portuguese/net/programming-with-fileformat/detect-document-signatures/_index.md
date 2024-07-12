@@ -80,7 +80,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 #### Qual é o impacto de abrir/salvar um documento com Aspose.Words nas assinaturas digitais?
 
-Ao abrir ou salvar um documento com Aspose.Words, as assinaturas digitais presentes no documento serão perdidas. Isso se deve às alterações feitas no documento durante o processamento com Aspose.Words. Se precisar preservar assinaturas digitais, leve isso em consideração e use outro método para gerenciar documentos que contenham assinaturas digitais.
+Ao abrir ou salvar um documento com Aspose.Words, as assinaturas digitais presentes no documento serão perdidas. Isso se deve às alterações feitas no documento durante o processamento com Aspose.Words. Se precisar preservar assinaturas digitais, você deve levar isso em consideração e usar outro método para gerenciar documentos que contenham assinaturas digitais.
 
 #### Que outros recursos do Aspose.Words for .NET podem ser usados em conjunto com a detecção de assinatura digital?
 
@@ -88,4 +88,4 @@ Ao abrir ou salvar um documento com Aspose.Words, as assinaturas digitais presen
 
 #### Quais são as limitações da detecção de assinaturas digitais com Aspose.Words for .NET?
 
-A detecção de assinatura digital com Aspose.Words for .NET limita-se à detecção da presença de assinaturas em um documento. No entanto, Aspose.Words não fornece funcionalidade para verificar a autenticidade ou integridade das assinaturas digitais. Para realizar operações mais avançadas em assinaturas digitais, você precisará usar outras ferramentas ou bibliotecas especializadas.
+detecção de assinatura digital com Aspose.Words for .NET limita-se à detecção da presença de assinaturas em um documento. No entanto, Aspose.Words não fornece funcionalidade para verificar a autenticidade ou integridade das assinaturas digitais. Para realizar operações mais avançadas em assinaturas digitais, você precisará usar outras ferramentas ou bibliotecas especializadas.

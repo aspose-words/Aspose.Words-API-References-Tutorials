@@ -323,4 +323,4 @@ builder.moveToParagraph(2, 0);
 builder.writeln("This is the 3rd paragraph.");
 ```
 
-これらは、Aspose.Words for JavaのDocumentBuilderを使い始める際に役立つ、よくある質問と回答です。さらに質問がある場合や、さらにサポートが必要な場合は、[図書館の資料](https://reference.aspose.com/words/java/)または、Aspose.Words コミュニティおよびサポート リソースから支援を求めてください。
+これらは、Aspose.Words for JavaのDocumentBuilderを使い始める際に役立つ、よくある質問と回答です。さらに質問がある場合やサポートが必要な場合は、[図書館の資料](https://reference.aspose.com/words/java/)または、Aspose.Words コミュニティおよびサポート リソースから支援を求めてください。

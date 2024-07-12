@@ -2,88 +2,131 @@
 title: سلوك النمط الذكي
 linktitle: سلوك النمط الذكي
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية الحفاظ على سلوك النمط الذكي عند الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية دمج مستندات Word بسلاسة مع Aspose.Words لـ .NET، والحفاظ على الأنماط وضمان النتائج الاحترافية.
 type: docs
 weight: 10
 url: /ar/net/join-and-append-documents/smart-style-behavior/
 ---
+## مقدمة
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Smart Style Behavior في Aspose.Words for .NET. تسمح لك هذه الميزة بالانضمام إلى مستندات Word وإلحاقها مع الحفاظ على سلوك النمط الذكي.
+مرحبًا يا معالجات الكلمات! هل وجدت نفسك متشابكًا في متاعب الجمع بين المستندات مع الحفاظ على النمط سليمًا؟ تخيل أن لديك مستندين Word، لكل منهما طابعه الخاص، وتحتاج إلى دمجهما دون فقدان تلك اللمسة الفريدة. يبدو الأمر صعبا، أليس كذلك؟ حسنًا، اليوم، نحن نتعمق في عالم Aspose.Words for .NET السحري لنوضح لك كيفية تحقيق ذلك بسهولة باستخدام Smart Style Behavior. بحلول نهاية هذا البرنامج التعليمي، ستكون محترفًا في دمج المستندات مثل الساحر الماهر في الأسلوب!
 
 ## المتطلبات الأساسية
 
-قبل أن تبدأ، تأكد من أن لديك ما يلي:
+قبل الشروع في مغامرة دمج المستندات هذه، دعونا نتأكد من أن لدينا كل ما نحتاجه:
 
-1. تم تثبيت Aspose.Words لـ .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير أخرى لـ C#.
+-  Aspose.Words for .NET: تأكد من حصولك على الإصدار الأحدث. إذا لم يكن الأمر كذلك، الاستيلاء عليها من[صفحة التحميل](https://releases.aspose.com/words/net/).
+- بيئة التطوير: أي بيئة متوافقة مع .NET ستفي بالغرض، مثل Visual Studio.
+- مستندان Word: في هذا البرنامج التعليمي، سنستخدم "Document source.docx" و"Northwind trades.docx".
+-  Aspose License: لتجنب أي قيود، احصل على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)إذا لم تكن قد اشتريت واحدة بعد.
 
-## الخطوة 1: تهيئة أدلة المستندات
+### استيراد مساحات الأسماء
 
- أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+أول الأشياء أولاً، دعونا نرتب مساحات الأسماء لدينا. هذه ضرورية للوصول إلى الميزات التي نحتاجها من Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## الخطوة 1: قم بتحميل المستندات الخاصة بك
 
-بعد ذلك، تحتاج إلى تحميل المستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في`Document` مُنشئ وفقًا لأسماء المستندات الخاصة بك.
+للبدء، نحتاج إلى تحميل مستندات المصدر والوجهة في تطبيقنا.
 
 ```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// قم بتحميل المستند المصدر
 Document srcDoc = new Document(dataDir + "Document source.docx");
+
+// قم بتحميل المستند الوجهة
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: أدخل فاصل الصفحات في المستند الوجهة
+توضيح:
+ نقوم هنا بتحميل "Document source.docx" و"Northwind trades.docx" من الدليل المحدد. تأكد من استبدال`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي حيث يتم تخزين المستندات الخاصة بك.
 
- للتأكد من ظهور المحتوى الملحق على صفحة جديدة في المستند الوجهة، يمكنك إدراج فاصل صفحات باستخدام`DocumentBuilder`.
+## الخطوة 2: تهيئة DocumentBuilder
+
+ بعد ذلك، نحن بحاجة إلى إنشاء`DocumentBuilder` كائن للمستند الوجهة. سيسمح لنا ذلك بمعالجة محتوى المستند.
 
 ```csharp
+// قم بتهيئة DocumentBuilder للمستند الوجهة
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
+```
+
+توضيح:
+ ال`DocumentBuilder` هي أداة مفيدة توفر طرقًا للتنقل في المستند وتعديله. نحن هنا نربطه بوثيقة الوجهة الخاصة بنا.
+
+## الخطوة 3: انتقل إلى نهاية المستند وأدخل فاصل الصفحات
+
+الآن، دعنا ننتقل إلى نهاية المستند الوجهة ونقوم بإدراج فاصل الصفحات. وهذا يضمن أن المحتوى من المستند المصدر يبدأ في صفحة جديدة.
+
+```csharp
+// الانتقال إلى نهاية المستند
 builder.MoveToDocumentEnd();
+
+// إدراج فاصل الصفحات
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## الخطوة 4: ضبط خيارات سلوك النمط الذكي
+توضيح:
+من خلال الانتقال إلى نهاية المستند وإدراج فاصل الصفحات، نضمن أن المحتوى الجديد يبدأ في صفحة جديدة، مع الحفاظ على بنية نظيفة ومنظمة.
 
-لتمكين سلوك النمط الذكي أثناء عملية الإلحاق، تحتاج إلى إنشاء مثيل لـ`ImportFormatOptions` وتعيين`SmartStyleBehavior`الملكية ل`true`.
+## الخطوة 4: ضبط سلوك النمط الذكي
+
+ قبل أن نقوم بدمج المستندات، نحتاج إلى تعيين`SmartStyleBehavior` ل`true`. يساعد هذا الخيار في الحفاظ على الأنماط من المستند المصدر بذكاء.
 
 ```csharp
+// ضبط سلوك النمط الذكي
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
 ```
 
-## الخطوة 5: إلحاق المستند المصدر بالمستند الوجهة
+توضيح:
+`SmartStyleBehavior` يضمن دمج الأنماط من المستند المصدر بسلاسة في المستند الوجهة، مما يؤدي إلى تجنب أي تعارض في الأنماط.
 
- الآن، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام الملف`InsertDocument` طريقة`DocumentBuilder` فصل. استخدم ال`ImportFormatMode.UseDestinationStyles` المعلمة وتمرير`ImportFormatOptions` كائن للحفاظ على سلوك النمط الذكي.
+## الخطوة 5: أدخل المستند المصدر في المستند الوجهة
+
+أخيرًا، دعونا نقوم بإدراج المستند المصدر في المستند الوجهة باستخدام خيارات التنسيق المحددة.
 
 ```csharp
+// قم بإدراج المستند المصدر في الموضع الحالي للمستند الوجهة
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## الخطوة 6: احفظ الوثيقة النهائية
+توضيح:
+يقوم هذا الأمر بدمج المستند المصدر في المستند الوجهة في الموضع الحالي (وهو النهاية، بعد فاصل الصفحات)، ويستخدم أنماط المستند الوجهة أثناء تطبيق الأنماط المصدر بذكاء عند الحاجة.
 
- أخيرًا، احفظ المستند المدمج مع تمكين ميزة Smart Style Behavior باستخدام`Save` طريقة`Document` فصل.
+## الخطوة 6: احفظ المستند المدمج
+
+وأخيرًا وليس آخرًا، نقوم بحفظ وثيقتنا المجمعة.
 
 ```csharp
+// احفظ المستند المدمج
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لسلوك النمط الذكي باستخدام Aspose.Words لـ .NET
+توضيح:
+نقوم بحفظ المنتج النهائي باسم "JoinAndAppendDocuments.SmartStyleBehavior.docx" في الدليل المحدد. الآن لديك مستند مدمج بشكل مثالي مع الأنماط المحفوظة!
 
-إليك الكود المصدري الكامل لميزة "Smart Style Behavior" في لغة C# باستخدام Aspose.Words for .NET:
- 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## خاتمة
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	DocumentBuilder builder = new DocumentBuilder(dstDoc);
-	builder.MoveToDocumentEnd();
-	builder.InsertBreak(BreakType.PageBreak);
-	ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
-	builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
-	builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
-```
+وهناك لديك الناس! من خلال هذه الخطوات، تعلمت كيفية دمج مستندات Word مع الحفاظ على أنماطها الفريدة باستخدام Aspose.Words for .NET. لا مزيد من الأخطاء في الأسلوب أو مشكلات التنسيق، ما عليك سوى الحصول على مستندات سلسة وأنيقة في كل مرة. سواء كنت تقوم بدمج التقارير أو المقترحات أو أي مستندات أخرى، فإن هذه الطريقة تضمن أن يبدو كل شيء على ما يرام.
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Smart Style Behavior باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الحفاظ على سلوك النمط الذكي.
+## الأسئلة الشائعة
+
+### هل يمكنني استخدام هذه الطريقة لأكثر من وثيقتين؟
+نعم، يمكنك تكرار العملية للحصول على مستندات إضافية. ما عليك سوى تحميل كل مستند جديد وإدراجه في المستند الوجهة كما هو موضح.
+
+### ماذا لو لم أقم بتعيين`SmartStyleBehavior` to true?
+بدون هذا الخيار، قد لا تتكامل أنماط المستند المصدر بشكل جيد، مما يؤدي إلى مشاكل في التنسيق.
+
+### هل Aspose.Words لـ .NET مجاني؟
+ يعد Aspose.Words for .NET منتجًا مدفوع الأجر، ولكن يمكنك تجربته مجانًا باستخدام[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/).
+
+### هل يمكنني استخدام هذه الطريقة لتنسيقات ملفات مختلفة؟
+هذا البرنامج التعليمي خاص بمستندات Word (.docx). بالنسبة للتنسيقات الأخرى، قد تحتاج إلى خطوات إضافية أو طرق مختلفة.
+
+### أين يمكنني الحصول على الدعم إذا واجهت مشاكل؟
+ لأية مشاكل، قم بزيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8).

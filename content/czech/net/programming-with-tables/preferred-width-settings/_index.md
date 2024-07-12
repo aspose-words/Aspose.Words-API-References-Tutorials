@@ -103,4 +103,4 @@ Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
 ```
 
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak nastavit preferovaná nastavení šířky pro buňky tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete přizpůsobit šířky buněk tabulky svým konkrétním potřebám v dokumentech aplikace Word.
+tomto tutoriálu jsme se naučili, jak nastavit preferovaná nastavení šířky pro buňky tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete přizpůsobit šířky buněk tabulky svým konkrétním potřebám v dokumentech aplikace Word.

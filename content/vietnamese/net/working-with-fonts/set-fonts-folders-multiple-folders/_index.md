@@ -55,7 +55,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 // Lưu ý rằng cài đặt này sẽ ghi đè mọi nguồn phông chữ mặc định đang được tìm kiếm theo mặc định. Bây giờ chỉ những thư mục này sẽ được tìm kiếm
-// phông chữ khi kết xuất hoặc nhúng phông chữ. Để thêm nguồn phông chữ bổ sung trong khi vẫn giữ nguồn phông chữ hệ thống, hãy sử dụng cả FontSettings.GetFontSources và
+// phông chữ khi hiển thị hoặc nhúng phông chữ. Để thêm nguồn phông chữ bổ sung trong khi vẫn giữ nguồn phông chữ hệ thống, hãy sử dụng cả FontSettings.GetFontSources và
 // Thay vào đó, FontSettings.SetFontSources.
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 doc.FontSettings = fontSettings;

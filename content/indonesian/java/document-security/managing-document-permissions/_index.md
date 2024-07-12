@@ -22,11 +22,11 @@ Sebelum kita mendalami pengelolaan izin dokumen, mari kita mulai dengan menyiapk
 
 3. Sertakan Aspose.Words dalam Proyek Anda: Tambahkan Aspose.Words untuk Java ke proyek Java Anda sebagai ketergantungan.
 
-Sekarang setelah Aspose.Words untuk Java aktif dan berjalan, mari kita jelajahi cara mengelola izin dokumen.
+Sekarang kita sudah menjalankan Aspose.Words untuk Java, mari kita jelajahi cara mengelola izin dokumen.
 
 ## Memahami Izin Dokumen
 
-Sebelum Anda dapat mengelola izin dokumen, penting untuk memahami berbagai aspek keamanan dokumen. Aspose.Words untuk Java menyediakan serangkaian fitur untuk mengontrol siapa yang dapat mengakses dan memodifikasi dokumen Anda. Mari kita uraikan konsep-konsep utamanya:
+Sebelum Anda dapat mengelola izin dokumen, penting untuk memahami berbagai aspek keamanan dokumen. Aspose.Words untuk Java menyediakan serangkaian fitur untuk mengontrol siapa yang dapat mengakses dan mengubah dokumen Anda. Mari kita uraikan konsep-konsep utamanya:
 
 - Perlindungan Dokumen: Aspose.Words untuk Java memungkinkan Anda melindungi dokumen dengan kata sandi. Hanya pengguna dengan kata sandi yang benar yang dapat membuka dan mengedit dokumen.
 

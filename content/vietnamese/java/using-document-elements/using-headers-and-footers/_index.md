@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Đánh số trang
 
- Bạn có thể bao gồm số trang trong đầu trang và chân trang bằng các trường như`PAGE` Và`NUMPAGES`. Các trường này tự động cập nhật khi bạn thêm hoặc xóa trang.
+ Bạn có thể bao gồm số trang trong đầu trang và chân trang bằng các trường như`PAGE`Và`NUMPAGES`. Các trường này tự động cập nhật khi bạn thêm hoặc xóa trang.
 
 ## 9. Thông tin bản quyền ở Footers
 

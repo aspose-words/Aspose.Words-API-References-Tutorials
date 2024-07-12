@@ -66,7 +66,7 @@ Az Aspose.Words for Java segítségével könnyedén konvertálhat dokumentumoka
  A képfelbontás beállításához használja a`setResolution` a metódusa`ImageSaveOptions` és adja meg a kívánt felbontást pont per hüvelykben (DPI).
 
 ### Átalakíthatom a dokumentum egyes oldalait képekké?
- Igen, megadhat oldaltartományt a`setPageCount` és`setPageIndex` módszerei`ImageSaveOptions` adott oldalak képpé alakításához.
+ Igen, megadhat oldaltartományt a`setPageCount`és`setPageIndex` módszerei`ImageSaveOptions` adott oldalak képpé alakításához.
 
 ### Az Aspose.Words for Java alkalmas kötegelt dokumentumok konvertálására?
 Teljesen! Az Aspose.Words for Java segítségével több dokumentumot kötegesen konvertálhat hatékonyan képpé.

@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### ถาม: ฉันจะระบุแหล่งข้อมูลสำหรับฟิลด์ที่อยู่ทางไปรษณีย์ใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: หากต้องการระบุแหล่งข้อมูลสำหรับฟิลด์ที่อยู่ทางไปรษณีย์ใน Aspose.Words สำหรับ .NET คุณสามารถใช้`FieldAddressBlock.StartAddress` และ`FieldAddressBlock.EndAddress` คุณสมบัติ. คุณสมบัติเหล่านี้ใช้เพื่อกำหนดช่วงที่อยู่ในแหล่งข้อมูลภายนอก เช่น ไฟล์ CSV ฐานข้อมูล ฯลฯ
+ ตอบ: หากต้องการระบุแหล่งข้อมูลสำหรับฟิลด์ที่อยู่ทางไปรษณีย์ใน Aspose.Words สำหรับ .NET คุณสามารถใช้`FieldAddressBlock.StartAddress`และ`FieldAddressBlock.EndAddress` คุณสมบัติ. คุณสมบัติเหล่านี้ใช้เพื่อกำหนดช่วงที่อยู่ในแหล่งข้อมูลภายนอก เช่น ไฟล์ CSV ฐานข้อมูล ฯลฯ
 
 #### ถาม: ฉันสามารถรวมองค์ประกอบเสริมในช่องที่อยู่ทางไปรษณีย์ด้วย Aspose.Words for .NET ได้หรือไม่
 

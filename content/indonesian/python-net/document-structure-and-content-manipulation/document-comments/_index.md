@@ -12,7 +12,7 @@ Komentar memainkan peran penting dalam berkolaborasi dan meninjau dokumen, memun
 
 ## Perkenalan
 
-Kolaborasi adalah aspek mendasar dalam pembuatan dokumen, dan komentar memberikan cara yang lancar bagi banyak pengguna untuk berbagi masukan dan pemikiran mereka dalam sebuah dokumen. Aspose.Words untuk Python, pustaka manipulasi dokumen yang kuat, memberdayakan pengembang untuk bekerja secara terprogram dengan dokumen Word, termasuk menambahkan, memodifikasi, dan mengambil komentar.
+Kolaborasi adalah aspek mendasar dalam pembuatan dokumen, dan komentar memberikan cara yang lancar bagi banyak pengguna untuk berbagi masukan dan pemikiran mereka dalam sebuah dokumen. Aspose.Words untuk Python, pustaka manipulasi dokumen yang canggih, memberdayakan pengembang untuk bekerja secara terprogram dengan dokumen Word, termasuk menambahkan, memodifikasi, dan mengambil komentar.
 
 ## Menyiapkan Aspose.Words untuk Python
 

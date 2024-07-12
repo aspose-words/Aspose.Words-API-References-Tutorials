@@ -21,7 +21,7 @@ Dans cette étape, nous allons charger le document Word qui ne contient pas de l
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// Définissez les préférences de langue qui seront utilisées lors du chargement du document.
+//Définissez les préférences de langue qui seront utilisées lors du chargement du document.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";

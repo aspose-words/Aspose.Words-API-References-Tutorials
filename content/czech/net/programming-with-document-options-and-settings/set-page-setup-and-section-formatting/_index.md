@@ -58,6 +58,6 @@ Tento kód nastaví orientaci stránky na šířku, levý okraj na 50 a velikost
   
 ```
 
-Nezapomeňte zadat správnou cestu k adresáři, do kterého chcete dokument uložit`dataDir` variabilní.
+ Nezapomeňte zadat správnou cestu k adresáři, do kterého chcete dokument uložit`dataDir` variabilní.
 
 Nyní jste se naučili, jak nakonfigurovat rozvržení a formátování oddílů dokumentu pomocí Aspose.Words for .NET. Podle podrobného průvodce uvedeného v tomto tutoriálu můžete snadno přizpůsobit rozvržení a formátování svých vlastních dokumentů.

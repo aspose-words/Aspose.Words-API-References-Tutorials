@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3. Adım: Değiştirilecek satıra erişin
- Bir tablo satırının formatını değiştirmek için tablodaki belirli satıra gitmemiz gerekir. biz kullanıyoruz`GetChild()` Ve`FirstRow` Tablonun ilk satırına referans alma yöntemleri.
+ Bir tablo satırının formatını değiştirmek için tablodaki belirli satıra gitmemiz gerekir. biz kullanıyoruz`GetChild()`Ve`FirstRow` Tablonun ilk satırına referans alma yöntemleri.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

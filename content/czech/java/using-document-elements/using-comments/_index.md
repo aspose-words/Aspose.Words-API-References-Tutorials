@@ -1,5 +1,5 @@
 ---
-title: Použití komentářů v Aspose.Words pro Javu
+title: Používání komentářů v Aspose.Words pro Javu
 linktitle: Pomocí komentářů
 second_title: Aspose.Words Java Document Processing API
 description: Naučte se používat komentáře v Aspose.Words for Java. Výukový program krok za krokem pro přidávání a přizpůsobení komentářů ve vašich dokumentech.

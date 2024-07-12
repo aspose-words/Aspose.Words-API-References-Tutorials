@@ -14,7 +14,7 @@ Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt và định 
 
 ## Bước 1: Xác định thư mục
 
- Để bắt đầu, bạn cần xác định các thư mục nơi bạn muốn lưu trữ các tệp theo định dạng của chúng. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn. Chúng tôi tạo các thư mục "Được hỗ trợ", "Không xác định", "Được mã hóa" và "Pre97" nếu chúng chưa tồn tại.
+ Để bắt đầu, bạn cần xác định các thư mục nơi bạn muốn lưu trữ các tệp theo định dạng của chúng. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục tài liệu của bạn. Chúng tôi tạo các thư mục "Được hỗ trợ", "Không xác định", "Được mã hóa" và "Pre97" nếu chúng chưa tồn tại.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## Bước 2: Duyệt tập tin
 
- Sau đó chúng tôi sử dụng`GetFiles` phương pháp của`Directory` class để lấy danh sách các tập tin trong thư mục được chỉ định. Chúng tôi cũng sử dụng một`Where`mệnh đề để loại trừ một tệp cụ thể có tên "Tài liệu bị hỏng.docx".
+ Sau đó chúng tôi sử dụng`GetFiles` phương pháp của`Directory` class để lấy danh sách các tập tin trong thư mục được chỉ định. Chúng tôi cũng sử dụng một`Where` mệnh đề để loại trừ một tệp cụ thể có tên "Tài liệu bị hỏng.docx".
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ break;
 
 #### Làm cách nào để phát hiện định dạng của tệp tài liệu bằng Aspose.Words cho .NET?
 
- Để phát hiện định dạng của tệp tài liệu bằng Aspose.Words cho .NET, bạn có thể làm theo các bước được cung cấp trong hướng dẫn. Sử dụng`DetectFileFormat` phương pháp của`FileFormatUtil`class sẽ cho phép bạn phát hiện định dạng của tệp tài liệu. Điều này sẽ cho phép bạn xác định xem đó là tài liệu Microsoft Word 97-2003, mẫu, tài liệu Office Open XML WordprocessingML hay các định dạng được hỗ trợ khác. Mã được cung cấp trong hướng dẫn sẽ hướng dẫn bạn triển khai tính năng này.
+ Để phát hiện định dạng của tệp tài liệu bằng Aspose.Words cho .NET, bạn có thể làm theo các bước được cung cấp trong hướng dẫn. Sử dụng`DetectFileFormat` phương pháp của`FileFormatUtil` class sẽ cho phép bạn phát hiện định dạng của tệp tài liệu. Điều này sẽ cho phép bạn xác định xem đó là tài liệu Microsoft Word 97-2003, mẫu, tài liệu Office Open XML WordprocessingML hay các định dạng được hỗ trợ khác. Mã được cung cấp trong hướng dẫn sẽ hướng dẫn bạn triển khai tính năng này.
 
 #### Aspose.Words for .NET hỗ trợ những định dạng tài liệu nào?
 

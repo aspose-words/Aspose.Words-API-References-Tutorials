@@ -15,7 +15,7 @@ Aspose.Words for .NET 是一个功能强大的库，可用于在 C# 应用程序
 
 ## 创建文档并添加内容
 
-第一步是创建一个新文档并向其中添加内容。使用 Document 类创建一个新的文档实例。然后使用 DocumentBuilder 类添加文本并创建一个具有多级缩进的列表。以下是示例：
+第一步是创建一个新文档并向其中添加内容。使用 Document 类创建一个新文档实例。然后使用 DocumentBuilder 类添加文本并创建一个具有多级缩进的列表。以下是示例：
 
 ```csharp
 Document doc = new Document();

@@ -13,7 +13,7 @@ Hallo Technikbegeisterte! Mussten Sie schon einmal programmgesteuert zu einem be
 
 ## Voraussetzungen
 
-Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie für den Einstieg brauchen:
+Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie für den Einstieg benötigen:
 
 1.  Aspose.Words für .NET: Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/).
 2. Visual Studio: Jede aktuelle Version ist geeignet.

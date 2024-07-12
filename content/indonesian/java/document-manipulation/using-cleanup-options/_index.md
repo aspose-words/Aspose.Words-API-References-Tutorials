@@ -150,7 +150,7 @@ Opsi pembersihan di Aspose.Words untuk Java adalah pengaturan yang memungkinkan 
 
 ###  Apa tujuan dari`REMOVE_UNUSED_REGIONS` cleanup option?
 
- Itu`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` opsi ini digunakan untuk menghapus wilayah dalam dokumen yang tidak memiliki data terkait selama proses penggabungan surat. Ini membantu menjaga dokumen Anda tetap rapi dengan membuang placeholder yang tidak digunakan.
+ Itu`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Opsi ini digunakan untuk menghapus wilayah dalam dokumen yang tidak memiliki data terkait selama proses penggabungan surat. Ini membantu menjaga dokumen Anda tetap rapi dengan membuang placeholder yang tidak digunakan.
 
 ### Bisakah saya menghapus baris tabel kosong dari dokumen menggunakan Aspose.Words untuk Java?
 
@@ -162,7 +162,7 @@ Opsi pembersihan di Aspose.Words untuk Java adalah pengaturan yang memungkinkan 
 
 ### Bagaimana cara menghapus bidang gabungan yang tidak digunakan dari dokumen saya?
 
- Untuk menghapus bidang gabungan yang tidak digunakan dari dokumen, Anda dapat mengatur`MailMergeCleanupOptions.REMOVE_UNUSED_FIELDS` pilihan menjadi benar. Ini secara otomatis akan menghilangkan bidang gabungan yang tidak diisi selama penggabungan surat, sehingga menghasilkan dokumen yang lebih bersih.
+ Untuk menghapus bidang gabungan yang tidak digunakan dari dokumen, Anda dapat mengatur`MailMergeCleanupOptions.REMOVE_UNUSED_FIELDS` pilihan menjadi benar. Ini secara otomatis akan menghilangkan kolom gabungan yang tidak diisi selama penggabungan surat, sehingga menghasilkan dokumen yang lebih bersih.
 
 ###  Apa perbedaan antara`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
@@ -170,7 +170,7 @@ Opsi pembersihan di Aspose.Words untuk Java adalah pengaturan yang memungkinkan 
 
 ### Bagaimana cara mengaktifkan penghapusan paragraf dengan tanda baca?
 
- Untuk mengaktifkan penghapusan paragraf dengan tanda baca, Anda dapat mengatur`cleanupParagraphsWithPunctuationMarks` opsi ke true dan tentukan tanda baca yang akan dipertimbangkan untuk pembersihan. Hal ini memungkinkan Anda membuat dokumen yang lebih halus dengan menghapus paragraf yang hanya berisi tanda baca yang tidak perlu.
+ Untuk mengaktifkan penghapusan paragraf dengan tanda baca, Anda dapat mengatur`cleanupParagraphsWithPunctuationMarks` opsi ke true dan tentukan tanda baca yang akan dipertimbangkan untuk pembersihan. Hal ini memungkinkan Anda membuat dokumen yang lebih halus dengan menghapus paragraf yang hanya berisi tanda baca yang tidak diperlukan.
 
 ### Bisakah saya menyesuaikan opsi pembersihan di Aspose.Words untuk Java?
 

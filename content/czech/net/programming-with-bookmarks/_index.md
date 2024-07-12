@@ -17,14 +17,14 @@ Dodržováním těchto výukových programů budete schopni efektivně manipulov
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Přístup k záložkám v dokumentu aplikace Word](./access-bookmarks/) | Naučte se přistupovat k záložkám v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Aktualizace dat záložek v dokumentu aplikace Word](./update-bookmark-data/) | Průvodce krok za krokem vysvětlující zdrojový kód C# aktualizace dat záložek Aspose.Words ve funkci dokumentu aplikace Word pro .NET. |
-| [Záložka sloupce tabulky v dokumentu aplikace Word](./bookmark-table-columns/) | Naučte se, jak vytvořit záložku sloupce tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Kopírovat text se záložkou v dokumentu aplikace Word](./copy-bookmarked-text/) | Naučte se kopírovat text záložky v dokumentu aplikace Word do jiného dokumentu pomocí Aspose.Words for .NET. |
-| [Přidat text se záložkou v dokumentu aplikace Word](./append-bookmarked-text/) | Přečtěte si, jak přidat text ze záložky do dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Vytvořit záložku v dokumentu aplikace Word](./create-bookmark/) | Naučte se vytvářet záložky v dokumentu aplikace Word a určit úrovně náhledu záložek v PDF pomocí Aspose.Words for .NET. |
-| [Zobrazit skrýt záložky v dokumentu aplikace Word](./show-hide-bookmarks/) | Naučte se, jak zobrazit nebo skrýt konkrétní záložku v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Zobrazit skrýt obsah označený záložkou v dokumentu aplikace Word](./show-hide-bookmarked-content/) | Naučte se, jak zobrazit nebo skrýt obsah záložek v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Rozmotat záložky řádků v dokumentu aplikace Word](./untangle-row-bookmarks/) | Naučte se, jak rozmotat vnořené záložky řádků v dokumentu aplikace Word, abyste odstranili konkrétní řádky bez ovlivnění ostatních záložek. |
-| [Rozmotat v dokumentu Word](./untangle/) | Naučte se, jak rozmotat vnořené záložky ve wordovém dokumentu v sousedních řádcích tabulky pomocí Aspose.Words for .NET. |
-| [Odstranit řádek podle záložky v dokumentu aplikace Word](./delete-row-by-bookmark/) | Naučte se, jak odstranit řádek tabulky na základě konkrétní záložky v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Přístup k záložkám v dokumentu aplikace Word](./access-bookmarks/) | Naučte se přistupovat k záložkám v dokumentech aplikace Word a jak s nimi manipulovat pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem. |
+| [Aktualizace dat záložek v dokumentu aplikace Word](./update-bookmark-data/) | Bez námahy aktualizujte obsah v dokumentech aplikace Word pomocí záložek a Aspose.Words .NET. Tato příručka vám umožní automatizovat zprávy, personalizovat šablony a další. |
+| [Záložka sloupce tabulky v dokumentu aplikace Word](./bookmark-table-columns/) | Naučte se, jak vytvořit záložku sloupců tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET pomocí tohoto komplexního, podrobného kurzu. |
+| [Kopírovat text se záložkou v dokumentu aplikace Word](./copy-bookmarked-text/) | Bez námahy zkopírujte text označený záložkou mezi dokumenty aplikace Word pomocí Aspose.Words pro .NET. Naučte se, jak na to, pomocí tohoto podrobného průvodce. |
+| [Přidat text se záložkou v dokumentu aplikace Word](./append-bookmarked-text/) | V tomto podrobném průvodci se dozvíte, jak přidat text se záložkou do dokumentu aplikace Word pomocí Aspose.Words for .NET. Ideální pro vývojáře. |
+| [Vytvořit záložku v dokumentu aplikace Word](./create-bookmark/) | Naučte se vytvářet záložky v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem. Ideální pro navigaci a organizaci dokumentů. |
+| [Zobrazit skrýt záložky v dokumentu aplikace Word](./show-hide-bookmarks/) | Naučte se, jak dynamicky zobrazit nebo skrýt záložky v dokumentu aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem. Ideální pro vývojáře. |
+| [Zobrazit skrýt obsah označený záložkou v dokumentu aplikace Word](./show-hide-bookmarked-content/) | Naučte se, jak dynamicky zobrazit nebo skrýt obsah označený záložkou v dokumentech aplikace Word pomocí Aspose.Words for .NET s tímto komplexním průvodcem krok za krokem. |
+| [Rozmotat záložky řádků v dokumentu aplikace Word](./untangle-row-bookmarks/) | Pomocí Aspose.Words for .NET snadno rozmotejte zamotané záložky řádků v dokumentech aplikace Word. Tato příručka vás provede procesem čistší a bezpečnější správy záložek. |
+| [Rozmotat v dokumentu Word](./untangle/) | Zvládněte rozmotávání záložek v dokumentech aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro .NET vývojáře. |
+| [Odstranit řádek podle záložky v dokumentu aplikace Word](./delete-row-by-bookmark/) | Přečtěte si, jak odstranit řádek pomocí záložky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro efektivní správu dokumentů. |

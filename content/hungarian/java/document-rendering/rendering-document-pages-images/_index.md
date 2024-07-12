@@ -88,7 +88,7 @@ Igen, az Aspose.Words for Java a dokumentumformátumok széles skáláját támo
 
 ### Az Aspose.Words alkalmas kötegelt dokumentumok feldolgozására?
 
-Igen, az Aspose.Words kiválóan alkalmas kötegelt dokumentumok feldolgozására. A Java használatával hatékonyan automatizálhatja több dokumentum képpé konvertálását.
+Igen, az Aspose.Words kiválóan alkalmas kötegelt dokumentumok feldolgozására. A Java segítségével hatékonyan automatizálhatja több dokumentum képpé konvertálását.
 
 ### Hol találok további dokumentációt és példákat?
 

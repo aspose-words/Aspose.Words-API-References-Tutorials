@@ -75,7 +75,7 @@ V: Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való 
 
 #### K: Hogyan tölthetek be Word-dokumentumot az Aspose.Words for .NET használatával?
 
-V: Word-dokumentum betöltéséhez az Aspose.Words for .NET használatával a`Document` osztály és annak konstruktora. Paraméterként meg kell adnia a dokumentum fájl elérési útját vagy adatfolyamát. Íme egy példa:
+ V: Word-dokumentum betöltéséhez az Aspose.Words for .NET használatával a`Document` osztály és annak konstruktora. Paraméterként meg kell adnia a dokumentum fájl elérési útját vagy adatfolyamát. Íme egy példa:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

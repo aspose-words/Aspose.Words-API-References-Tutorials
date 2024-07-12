@@ -103,9 +103,9 @@ Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeu
 
 ### 3. Comment formater les tableaux différemment ?
 
-Vous pouvez personnaliser le formatage du tableau en utilisant différentes méthodes fournies par Aspose.Words. Vérifier la[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
+ Vous pouvez personnaliser le formatage du tableau en utilisant différentes méthodes fournies par Aspose.Words. Vérifier la[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
 
-### 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
+### 4. Comment puis-je obtenir de l'assistance pour Aspose.Words pour .NET ?
 
 Vous pouvez obtenir de l'aide en visitant le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 

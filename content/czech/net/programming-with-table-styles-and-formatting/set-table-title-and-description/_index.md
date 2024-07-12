@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Krok 3: Otevřete tabulku a nastavte název a popis
- Nyní můžete přistupovat k tabulce v dokumentu pomocí`GetChild()` metoda a`Table` třída. Dále nastavte název a popis tabulky pomocí`Title` a`Description` vlastnosti.
+ Nyní můžete přistupovat k tabulce v dokumentu pomocí`GetChild()` metoda a`Table` třída. Dále nastavte název a popis tabulky pomocí`Title`a`Description` vlastnosti.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

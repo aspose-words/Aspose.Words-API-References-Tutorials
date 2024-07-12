@@ -8,7 +8,7 @@ weight: 10
 url: /cs/python-net/document-creation/creating-word-documents-using-python/
 ---
 
-této obsáhlé příručce se ponoříme do procesu vytváření dokumentů Microsoft Word pomocí Pythonu. Ať už jste zkušený vývojář Pythonu nebo nováček, tento článek si klade za cíl vybavit vás znalostmi a dovednostmi potřebnými k programovému generování dokumentů Wordu. Probereme základní úryvky kódu, knihovny a techniky, které vám umožní efektivně vytvářet dynamické a přizpůsobené dokumenty Wordu.
+této obsáhlé příručce se ponoříme do procesu vytváření dokumentů Microsoft Word pomocí Pythonu. Ať už jste zkušený vývojář Pythonu nebo nováček, cílem tohoto článku je vybavit vás znalostmi a dovednostmi nezbytnými pro programové generování dokumentů Wordu. Probereme základní úryvky kódu, knihovny a techniky, které vám umožní efektivně vytvářet dynamické a přizpůsobené dokumenty Wordu.
 
 ## Úvod do vytváření dokumentů Python Word
 

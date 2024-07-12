@@ -2,103 +2,117 @@
 title: Usuń ochronę dokumentu w dokumencie programu Word
 linktitle: Usuń ochronę dokumentu w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak usunąć ochronę w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak usunąć ochronę z dokumentów programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby łatwo odblokować swoje dokumenty.
 type: docs
 weight: 10
 url: /pl/net/document-protection/remove-document-protection/
 ---
-W tym samouczku przeprowadzimy Cię przez kolejne etapy korzystania z funkcji usuwania ochrony dokumentów w Aspose.Words dla .NET. Ta funkcja umożliwia usunięcie ochrony z dokumentu programu Word w celu udostępnienia go do dalszej edycji. Wykonaj poniższe kroki:
 
-## Krok 1: Tworzenie dokumentu i dodawanie treści
+## Wstęp
 
-Zacznij od utworzenia instancji klasy Document i obiektu DocumentBuilder:
+No hej! Czy zdarzyło Ci się kiedyś utracić dostęp do własnego dokumentu programu Word z powodu ustawień zabezpieczeń? To jakby próbować otworzyć drzwi złym kluczem – frustrujące, prawda? Ale nie bój się! Dzięki Aspose.Words dla .NET możesz łatwo usunąć ochronę z dokumentów Word. Ten samouczek przeprowadzi Cię przez cały proces krok po kroku, dzięki czemu w mgnieniu oka odzyskasz pełną kontrolę nad dokumentami. Zanurzmy się!
+
+## Warunki wstępne
+
+Zanim przejdziemy do kodu, upewnijmy się, że mamy wszystko, czego potrzebujemy:
+
+1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: środowisko programistyczne .NET, takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Zrozumienie podstaw języka C# pomoże Ci podążać dalej.
+
+## Importuj przestrzenie nazw
+
+Przed napisaniem jakiegokolwiek kodu upewnij się, że zaimportowano niezbędne przestrzenie nazw:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.Protection;
 ```
 
-## Krok 2: Dodaj treść do dokumentu
+Te przestrzenie nazw zapewnią nam wszystkie narzędzia potrzebne do manipulowania dokumentami Worda.
 
-Użyj obiektu DocumentBuilder, aby dodać treść do dokumentu:
+## Krok 1: Załaduj dokument
 
-```csharp
-builder.Writeln("Text added to a document.");
-```
-
-## Krok 3: Usuń ochronę dokumentu
-
-Aby wyłączyć ochronę dokumentu, możesz użyć metody Unprotect() obiektu Document. Możesz usunąć ochronę bez hasła lub z poprawnym hasłem. Usuwanie ochrony bez hasła:
+porządku, zaczynajmy. Pierwszym krokiem jest załadowanie dokumentu, który chcesz wyłączyć ochronę. W tym miejscu mówimy naszemu programowi, z jakim dokumentem mamy do czynienia.
 
 ```csharp
-doc.Unprotect();
-doc.Protect(ProtectionType.ReadOnly, "newPassword");
-doc.Unprotect("newPassword");
-```
-
-Pamiętaj, aby zastąpić „newPassword” poprawnym hasłem dokumentu.
-
-## Krok 4: Zapisz dokument bez ochrony
-
-Na koniec zapisz dokument bez ochrony, korzystając z metody Save() obiektu Document:
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
-```
-
-Pamiętaj, aby podać poprawną ścieżkę i nazwę pliku, aby zapisać dokument bez ochrony.
-
-### Przykładowy kod źródłowy dla Usuń ochronę dokumentów przy użyciu Aspose.Words dla .NET
-
-Oto kompletny kod źródłowy do usuwania ochrony dokumentu za pomocą Aspose.Words dla .NET:
-
-```csharp
-
 // Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Writeln("Text added to a document.");
-
-// Dokumenty mogą zostać usunięte bez ochrony hasłem lub przy użyciu prawidłowego hasła.
-doc.Unprotect();
-doc.Protect(ProtectionType.ReadOnly, "newPassword");
-doc.Unprotect("newPassword");
-
-doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
-
+Document doc = new Document(dataDir + "ProtectedDocument.docx");
 ```
 
-Wykonując poniższe kroki, możesz łatwo usunąć ochronę z dokumentu Word za pomocą Aspose.Words dla .NET.
+ Tutaj podajemy ścieżkę do katalogu zawierającego nasz dokument. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+
+## Krok 2: Usuń ochronę bez hasła
+
+Czasami dokumenty są chronione bez hasła. W takich przypadkach możemy po prostu usunąć zabezpieczenie jedną linijką kodu.
+
+```csharp
+// Usuń ochronę bez hasła
+doc.Unprotect();
+```
+
+Otóż to! Twój dokument nie jest teraz chroniony. Ale co, jeśli istnieje hasło?
+
+## Krok 3: Usuń ochronę hasłem
+
+Jeśli Twój dokument jest chroniony hasłem, musisz podać to hasło, aby usunąć ochronę. Oto jak to zrobić:
+
+```csharp
+// Usuń ochronę za pomocą prawidłowego hasła
+doc.Unprotect("currentPassword");
+```
+
+ Zastępować`"currentPassword"` z rzeczywistym hasłem używanym do ochrony dokumentu. Po podaniu prawidłowego hasła ochrona zostaje zniesiona.
+
+## Krok 4: Dodaj i usuń ochronę
+
+Załóżmy, że chcesz usunąć bieżącą ochronę, a następnie dodać nową. Może to być przydatne do resetowania ochrony dokumentu. Oto jak możesz to zrobić:
+
+```csharp
+// Dodaj nową ochronę
+doc.Protect(ProtectionType.ReadOnly, "newPassword");
+
+// Usuń nowe zabezpieczenie
+doc.Unprotect("newPassword");
+```
+
+ W powyższym kodzie najpierw dodajemy nowe zabezpieczenie hasłem`"newPassword"`, a następnie natychmiast usuń go, używając tego samego hasła.
+
+## Krok 5: Zapisz dokument
+
+Na koniec, po dokonaniu wszystkich niezbędnych zmian, nie zapomnij zapisać dokumentu. Oto kod umożliwiający zapisanie dokumentu:
+
+```csharp
+// Zapisz dokument
+doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
+```
+
+Spowoduje to zapisanie niechronionego dokumentu w określonym katalogu.
 
 ## Wniosek
 
-W tym samouczku omówiliśmy, jak usunąć ochronę dokumentu w dokumencie programu Word za pomocą Aspose.Words dla .NET. Wykonując podane kroki, możesz łatwo wyłączyć ochronę dokumentu i udostępnić go do dalszej edycji. Aspose.Words dla .NET zapewnia potężne API, które pozwala manipulować ustawieniami ochrony dokumentów i dostosowywać poziom bezpieczeństwa dokumentów Word. Usunięcie ochrony dokumentu zapewnia elastyczność modyfikowania zawartości i formatowania dokumentu w razie potrzeby.
+I masz to! Usunięcie ochrony z dokumentu programu Word za pomocą Aspose.Words dla .NET jest proste. Niezależnie od tego, czy jest to dokument chroniony hasłem, czy nie, Aspose.Words zapewnia elastyczność łatwego zarządzania ochroną dokumentów. Teraz możesz odblokować swoje dokumenty i przejąć pełną kontrolę za pomocą zaledwie kilku linijek kodu.
 
-### Często zadawane pytania dotyczące usuwania ochrony dokumentów w dokumencie programu Word
+## Często zadawane pytania
 
-#### P: Jaka jest ochrona dokumentów w Aspose.Words dla .NET?
+### Co się stanie, jeśli podam nieprawidłowe hasło?
 
-Odp.: Ochrona dokumentów w Aspose.Words dla .NET odnosi się do funkcji, która pozwala zastosować środki bezpieczeństwa do dokumentu programu Word w celu ograniczenia edycji, formatowania i modyfikacji zawartości. Pomaga zapewnić integralność i poufność dokumentu.
+Jeśli podasz nieprawidłowe hasło, Aspose.Words zgłosi wyjątek. Aby usunąć ochronę, upewnij się, że używasz prawidłowego hasła.
 
-#### P: Jak mogę usunąć ochronę dokumentów za pomocą Aspose.Words dla .NET?
+### Czy mogę usunąć ochronę z wielu dokumentów jednocześnie?
 
-Odp.: Aby usunąć ochronę dokumentów za pomocą Aspose.Words dla .NET, możesz wykonać następujące kroki:
-1.  Utwórz instancję`Document` klasa i A`DocumentBuilder` obiekt.
-2.  Użyj`DocumentBuilder` aby dodać treść do dokumentu.
-3.  Zadzwoń do`Unprotect` metoda`Document` sprzeciwić się usunięciu istniejącej ochrony z dokumentu. Można to zrobić bez podawania hasła lub podając prawidłowe hasło.
-4.  Zapisz niechroniony dokument za pomocą`Save` metoda`Document` obiekt.
+Tak, możesz przeglądać listę dokumentów i zastosować do każdego z nich tę samą logikę braku ochrony.
 
-#### P: Czy mogę usunąć ochronę z dokumentu programu Word bez hasła?
+### Czy Aspose.Words dla .NET jest darmowy?
 
- Odp.: Tak, możesz usunąć ochronę z dokumentu Word bez hasła, używając Aspose.Words dla .NET. Dzwoniąc do`Unprotect` metoda`Document`obiektu bez podawania hasła, możesz usunąć ochronę z dokumentu, jeśli był on wcześniej chroniony bez hasła.
+ Aspose.Words dla .NET jest biblioteką płatną, ale możesz ją wypróbować za darmo. Sprawdź[bezpłatna wersja próbna](https://releases.aspose.com/)!
 
-#### P: Jak mogę usunąć ochronę dokumentu programu Word za pomocą hasła?
+### Jakie inne rodzaje ochrony mogę zastosować do dokumentu programu Word?
 
- O: Aby usunąć ochronę z dokumentu programu Word, który był chroniony hasłem, należy podać prawidłowe hasło podczas wywoływania`Unprotect` metoda`Document` obiekt. Dzięki temu tylko użytkownicy posiadający prawidłowe hasło będą mogli usunąć ochronę i uzyskać dostęp do dokumentu w celu edycji.
+Aspose.Words umożliwia zastosowanie różnych typów ochrony, takich jak ReadOnly,AllowOnlyRevisions,AllowOnlyComments iAllowOnlyFormFields.
 
-#### P: Czy mogę usunąć określone typy ochrony z dokumentu programu Word?
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
 
- Odp.: Tak, używając Aspose.Words dla .NET, możesz selektywnie usuwać określone typy ochrony z dokumentu Word. Dzwoniąc do`Unprotect` metoda`Document` obiektu, możesz usunąć żądany typ ochrony, taki jak ochrona tylko do odczytu lub ochrona formularza, pozostawiając inne typy ochrony bez zmian.
+ Szczegółową dokumentację można znaleźć na stronie[Strona dokumentacji Aspose.Words dla platformy .NET](https://reference.aspose.com/words/net/).

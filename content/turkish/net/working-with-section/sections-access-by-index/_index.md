@@ -74,7 +74,7 @@ Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinin bölümlerine
 
 #### S: Aspose.Words for .NET'te belge dizini nasıl ayarlanır?
 
- C: Belgelerinizi içeren dizinin yolunu ayarlamak için değiştirmeniz gerekir`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
+C: Belgelerinizi içeren dizinin yolunu ayarlamak için değiştirmelisiniz`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 // Belgeler dizininizin yolu

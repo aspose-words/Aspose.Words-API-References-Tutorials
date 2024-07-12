@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## الخطوة 3: قم بتحميل المستند
- استخدم ال`Document` فئة Aspose.Words لتحميل مستند Word الذي يحتوي على الحقول المرتبطة التي تريد تحويلها.
+ استخدم ال`Document`فئة Aspose.Words لتحميل مستند Word الذي يحتوي على الحقول المرتبطة التي تريد تحويلها.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

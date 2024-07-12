@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passo 2: Crie e personalize o documento
- Crie uma instância do`Document` classe e um associado`DocumentBuilder` para construir o conteúdo do documento. Use o`Font.EmphasisMark` propriedade para definir o estilo de ênfase da fonte como`EmphasisMark.UnderSolidCircle` . Então use o`Write` e`Writeln` métodos do`DocumentBuilder` para adicionar texto com a ênfase de fonte especificada.
+ Crie uma instância do`Document` classe e um associado`DocumentBuilder` para construir o conteúdo do documento. Use o`Font.EmphasisMark` propriedade para definir o estilo de ênfase da fonte como`EmphasisMark.UnderSolidCircle` . Então use o`Write`e`Writeln` métodos do`DocumentBuilder` para adicionar texto com a ênfase de fonte especificada.
 
 ```csharp
 Document document = new Document();

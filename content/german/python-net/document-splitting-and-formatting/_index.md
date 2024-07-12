@@ -1,7 +1,7 @@
 ---
 title: Dokumentaufteilung und -formatierung
 linktitle: Dokumentaufteilung und -formatierung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Entdecken Sie die Aspose.Words-Tutorials zum Aufteilen und Formatieren von Dokumenten in Python und .NET. Lernen Sie, Dokumente effizient aufzuteilen und zu formatieren und so Ihre Dokumentverarbeitungsaufgaben zu verbessern.
 type: docs
 weight: 13
@@ -33,12 +33,12 @@ In diesen Tutorials erhalten Sie praktische Einblicke, Zugriff auf Quellcodebeis
 
 ## Tutorials zum Aufteilen und Formatieren von Dokumenten
 ### [Effiziente Strategien zur Dokumentaufteilung und -formatierung](./split-format-documents/)
-Erfahren Sie, wie Sie mit Aspose.Words für Python Dokumente effizient aufteilen und formatieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung und Quellcodebeispiele.
+Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Python effizient aufteilen und formatieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung und Quellcodebeispiele.
 ### [Dokumente mit Content Builder für Präzision aufteilen](./divide-documents-content-builder/)
 Teilen und bearbeiten Sie Ihre Dokumente präzise mit Aspose.Words für Python. Erfahren Sie, wie Sie Content Builder zur effizienten Inhaltsextraktion und -organisation nutzen können.
 ### [Kombinieren und Klonen von Dokumenten für komplexe Arbeitsabläufe](./combine-clone-documents/)
 Erfahren Sie, wie Sie mit Aspose.Words für Python Dokumente effizient kombinieren und klonen. Schritt-für-Schritt-Anleitung mit Quellcode zur Dokumentbearbeitung. Verbessern Sie noch heute Ihre Dokument-Workflows!
 ### [Vergleichen von Dokumentversionen für eine effektive Revisionskontrolle](./compare-document-versions/)
-Erfahren Sie, wie Sie Dokumentversionen mit Aspose.Words für Python effektiv vergleichen. Schritt-für-Schritt-Anleitung mit Quellcode zur Revisionskontrolle. Verbessern Sie die Zusammenarbeit und vermeiden Sie Fehler.
+Erfahren Sie, wie Sie mit Aspose.Words für Python Dokumentversionen effektiv vergleichen. Schritt-für-Schritt-Anleitung mit Quellcode zur Revisionskontrolle. Verbessern Sie die Zusammenarbeit und vermeiden Sie Fehler.
 ### [Beherrschen von Dokumentformatierungstechniken für visuelle Wirkung](./document-formatting-techniques/)
 Erfahren Sie, wie Sie die Dokumentformatierung mit Aspose.Words für Python meistern. Erstellen Sie optisch ansprechende Dokumente mit Schriftarten, Tabellen, Bildern und mehr. Schritt-für-Schritt-Anleitung mit Codebeispielen.

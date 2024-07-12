@@ -10,7 +10,7 @@ url: /hu/python-net/tables-and-formatting/document-table-styles-formatting/
 
 dokumentumtáblázatok döntő szerepet játszanak az információk szervezett és tetszetős megjelenítésében. Az Aspose.Words for Python hatékony eszközkészletet biztosít, amely lehetővé teszi a fejlesztők számára, hogy hatékonyan dolgozzanak a táblázatokkal, és testreszabják azok stílusát és formázását. Ebben a cikkben megvizsgáljuk, hogyan lehet manipulálni és javítani a dokumentumtáblázatokat az Aspose.Words for Python API használatával. Merüljünk el!
 
-## Az Aspose.Words for Python használatának megkezdése
+## Az Aspose.Words for Python használatának első lépései
 
 Mielőtt belemerülnénk a dokumentumtábla-stílusok és formázások sajátosságaiba, győződjön meg arról, hogy be van állítva a szükséges eszközök:
 
@@ -39,7 +39,7 @@ Táblázatok létrehozásához és dokumentumokba való beszúrásához az Aspos
     table = builder.start_table()
     ```
 
-2.  Adatok beszúrása: Adatok hozzáadása a táblához az építő segítségével`insert_cell` és`write` mód.
+2.  Adatok beszúrása: Adatok hozzáadása a táblához az építő segítségével`insert_cell`és`write` mód.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Táblázatok létrehozásához és dokumentumokba való beszúrásához az Aspos
 
 ## Alapvető táblázatformázás alkalmazása
 
- Az alapvető táblázatformázás a által biztosított módszerekkel érhető el`Table` és`Cell` osztályok. A következőképpen javíthatja asztala megjelenését:
+ Az alapvető táblázatformázás a által biztosított módszerekkel érhető el`Table`és`Cell` osztályok. A következőképpen javíthatja asztala megjelenését:
 
 1. Oszlopszélesség beállítása: Állítsa be az oszlopok szélességét a megfelelő igazítás és látványosság érdekében.
 
@@ -232,7 +232,7 @@ Ha elkészült a táblázat, exportálhatja különféle formátumokba, példáu
 
 ## Következtetés
 
-Az Aspose.Words for Python átfogó eszköztárat kínál dokumentumtáblázatok létrehozásához, stílusához és formázásához. A cikkben ismertetett lépések követésével hatékonyan kezelheti a dokumentumok táblázatait, testreszabhatja megjelenésüket, és exportálhatja azokat különböző formátumokba. Használja ki az Aspose.Words erejét, hogy javítsa dokumentumbemutatóit, és világos, tetszetős információkat biztosítson olvasóinak.
+Az Aspose.Words for Python átfogó eszköztárat kínál dokumentumtáblázatok létrehozásához, stílusához és formázásához. A cikkben ismertetett lépések követésével hatékonyan kezelheti a dokumentumok táblázatait, testreszabhatja megjelenésüket, és exportálhatja azokat különböző formátumokba. Használja ki az Aspose.Word erejét, hogy javítsa dokumentumbemutatóit, és világos, tetszetős információkat biztosítson olvasóinak.
 
 ## GYIK
 

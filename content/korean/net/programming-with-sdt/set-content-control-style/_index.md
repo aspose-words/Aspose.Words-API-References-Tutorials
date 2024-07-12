@@ -40,7 +40,7 @@ sdt.Style = style;
 ```
 
 ## 4단계: 문서 저장
- 수정된 문서를 다음을 사용하여 지정된 디렉터리에 저장합니다.`Save` 방법. 적절한 파일 확장자와 함께 원하는 파일 이름을 제공하십시오. 이 예에서는 문서를 "WorkingWithSdt.SetContentControlStyle.docx"로 저장합니다.
+ 수정된 문서를 다음을 사용하여 지정된 디렉터리에 저장합니다.`Save`방법. 적절한 파일 확장자와 함께 원하는 파일 이름을 제공하십시오. 이 예에서는 문서를 "WorkingWithSdt.SetContentControlStyle.docx"로 저장합니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");

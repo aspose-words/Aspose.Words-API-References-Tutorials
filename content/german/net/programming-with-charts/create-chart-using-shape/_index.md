@@ -2,92 +2,104 @@
 title: Erstellen und Anpassen von Diagrammen mithilfe von Formen
 linktitle: Erstellen und Anpassen von Diagrammen mithilfe von Formen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Diagramm mithilfe einer Form in einem Word-Dokument erstellen und anpassen.
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Diagramme in Word-Dokumenten erstellen und anpassen. Perfekt für die Datenvisualisierung.
 type: docs
 weight: 10
 url: /de/net/programming-with-charts/create-chart-using-shape/
 ---
+## Einführung
 
-In diesem Tutorial wird erklärt, wie Sie mit Aspose.Words für .NET ein Diagramm mithilfe einer Form in einem Word-Dokument erstellen.
+Das Erstellen und Anpassen von Diagrammen in Ihren Dokumenten ist in der heutigen datengesteuerten Welt eine entscheidende Fähigkeit. Diagramme können dabei helfen, Daten zu visualisieren und komplexe Informationen leichter verdaulich zu machen. Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente programmgesteuert erstellen und bearbeiten können. In diesem Tutorial führen wir Sie durch den Prozess des Erstellens und Anpassens eines Liniendiagramms mit Aspose.Words für .NET. Am Ende dieses Handbuchs können Sie mühelos professionell aussehende Diagramme erstellen.
 
 ## Voraussetzungen
-Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
-- Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
+Bevor Sie sich in den Code vertiefen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-## Schritt 1: Einrichten des Dokumentverzeichnisses
- Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
+-  Aspose.Words für .NET-Bibliothek: Sie können sie herunterladen[Hier](https://releases.aspose.com/words/net/).
+- Visual Studio: Jede Version, die .NET unterstützt.
+- Grundkenntnisse in C#: Das Verständnis der Grundlagen von C# wird Ihnen helfen, dem Tutorial zu folgen.
+
+## Namespaces importieren
+
+Um zu beginnen, müssen Sie die erforderlichen Namespaces importieren. Dieser Schritt ist wichtig, da Sie damit die von Aspose.Words für .NET bereitgestellten Klassen und Methoden verwenden können.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
 ```
 
-## Schritt 2: Neues Dokument und DocumentBuilder erstellen
- Erstellen Sie eine neue Instanz des`Document` Klasse und eine`DocumentBuilder`Objekt, um mit dem Dokument zu arbeiten.
+## Schritt 1: Neues Dokument erstellen
+
+Zuerst müssen Sie ein neues Word-Dokument erstellen. Dieses Dokument dient als Leinwand für Ihr Diagramm.
 
 ```csharp
+// Pfad zu Ihrem Dokumentverzeichnis
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 3: Einfügen und Konfigurieren einer Diagrammform
- Fügen Sie eine Diagrammform in das Dokument ein, indem Sie das`InsertChart` Methode der`DocumentBuilder` Objekt. Legen Sie den gewünschten Diagrammtyp und die gewünschten Abmessungen fest.
+## Schritt 2: Einfügen eines Diagramms
+
+ Als nächstes fügen Sie ein Liniendiagramm in das Dokument ein. Das`DocumentBuilder.InsertChart` Zu diesem Zweck wird die Methode verwendet.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Schritt 4: Das Diagramm anpassen
-Passen Sie das Diagramm an, indem Sie verschiedene Eigenschaften wie den Diagrammtitel und die Legende ändern.
+## Schritt 3: Den Diagrammtitel anpassen
+
+Durch Anpassen des Diagrammtitels können Sie den Kontext für die angezeigten Daten verbessern. Sie können den Titel anzeigen und seinen Text mit dem folgenden Code festlegen:
 
 ```csharp
 chart.Title.Show = true;
 chart.Title.Text = "Line Chart Title";
 chart.Title.Overlay = false;
+// Bitte beachten Sie, dass, wenn als Titeltext ein Null- oder leerer Wert angegeben wird, ein automatisch generierter Titel angezeigt wird.
+```
+
+## Schritt 4: Passen Sie die Legendenposition an
+
+Die Legende hilft dabei, verschiedene Datenreihen in Ihrem Diagramm zu identifizieren. Sie können ihre Position und Overlay-Einstellungen wie folgt anpassen:
+
+```csharp
 chart.Legend.Position = LegendPosition.Left;
 chart.Legend.Overlay = true;
 ```
 
 ## Schritt 5: Speichern Sie das Dokument
- Speichern Sie das Dokument im angegebenen Verzeichnis mit dem`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithCharts.CreateChartUsingShape.docx“.
+
+Zum Schluss müssen Sie das Dokument noch speichern. Mit diesem Schritt stellen Sie sicher, dass alle Ihre Änderungen in die Datei geschrieben werden.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ```
 
-### Beispielquellcode zum Erstellen eines Diagramms mithilfe von Shapes unter Verwendung von Aspose.Words für .NET 
-
-```csharp
-	// Pfad zu Ihrem Dokumentverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Show = true;
-	chart.Title.Text = "Line Chart Title";
-	chart.Title.Overlay = false;
-	// Bitte beachten Sie, dass, wenn als Titeltext ein Null- oder leerer Wert angegeben wird, ein automatisch generierter Titel angezeigt wird.
-	chart.Legend.Position = LegendPosition.Left;
-	chart.Legend.Overlay = true;
-	doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
-```
-
-Das ist es! Sie haben erfolgreich ein Diagramm mit einer Form in einem Word-Dokument mit Aspose.Words für .NET erstellt.
-
 ## Abschluss
-In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET ein Diagramm mit einer Form in einem Word-Dokument erstellen. Indem Sie der Schritt-für-Schritt-Anleitung folgen, können Sie eine Diagrammform einfügen und konfigurieren, ihr Erscheinungsbild anpassen und das Dokument speichern. Aspose.Words für .NET bietet einen umfassenden Satz von Funktionen für die Textverarbeitung mit Word-Dokumenten und -Diagrammen, sodass Sie professionell aussehende und optisch ansprechende Diagramme direkt in Ihren .NET-Anwendungen erstellen können.
 
-### FAQs
+In diesem Tutorial haben wir erläutert, wie Sie mit Aspose.Words für .NET ein Liniendiagramm in einem Word-Dokument erstellen und anpassen. Indem Sie der Schritt-für-Schritt-Anleitung folgen, können Sie jetzt optisch ansprechende Diagramme erstellen, die Ihre Daten effektiv kommunizieren. Aspose.Words für .NET bietet eine breite Palette an Anpassungsoptionen, mit denen Sie Diagramme an Ihre spezifischen Anforderungen anpassen können.
 
-#### F1. Kann ich mit Aspose.Words für .NET Diagramme in einem Word-Dokument erstellen?
-Ja, mit Aspose.Words für .NET können Sie programmgesteuert Diagramme in einem Word-Dokument erstellen. Aspose.Words bietet APIs und Funktionen zum Einfügen verschiedener Diagrammtypen, zum Anpassen ihres Erscheinungsbilds und zum Bearbeiten von Diagrammdaten.
+## Häufig gestellte Fragen
 
-#### F2. Welche Diagrammtypen werden von Aspose.Words für .NET unterstützt?
-Aspose.Words für .NET unterstützt eine breite Palette von Diagrammtypen, darunter Liniendiagramme, Balkendiagramme, Kreisdiagramme, Flächendiagramme, Streudiagramme und mehr. Sie können den geeigneten Diagrammtyp basierend auf Ihren Daten und Visualisierungsanforderungen auswählen.
+### Kann ich Aspose.Words für .NET verwenden, um andere Diagrammtypen zu erstellen?
 
-#### F3. Kann ich das Erscheinungsbild des erstellten Diagramms anpassen?
-Ja, Sie können das Erscheinungsbild des erstellten Diagramms mit Aspose.Words für .NET anpassen. Sie können Eigenschaften wie Diagrammtitel, Legendenposition, Datenbeschriftungen, Achsenbeschriftungen, Farben und andere visuelle Elemente ändern, um Ihren spezifischen Design- und Formatierungsanforderungen gerecht zu werden.
+ Ja, Aspose.Words für .NET unterstützt verschiedene Diagrammtypen, darunter Balkendiagramme, Kreisdiagramme und mehr. Sie können die Dokumentation erkunden[Hier](https://reference.aspose.com/words/net/) für mehr Details.
+
+### Wie kann ich Aspose.Words für .NET vor dem Kauf ausprobieren?
+
+ Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/). So können Sie die Bibliothek und ihre Funktionen testen, bevor Sie einen Kauf tätigen.
+
+### Gibt es eine Möglichkeit, Support zu erhalten, wenn ich auf Probleme stoße?
+
+ Absolut. Sie können Support über die Aspose-Community-Foren erhalten[Hier](https://forum.aspose.com/c/words/8)Die Community und die Mitarbeiter von Aspose reagieren sehr schnell.
+
+### Wie kaufe ich eine Lizenz für Aspose.Words für .NET?
+
+ Sie können eine Lizenz direkt von der Aspose-Website erwerben[Hier](https://purchase.aspose.com/buy). Es gibt verschiedene Lizenzierungsoptionen für unterschiedliche Anforderungen.
+
+### Was ist, wenn ich für ein kurzfristiges Projekt eine vorübergehende Lizenz benötige?
+
+ Aspose bietet temporäre Lizenzen an, die Sie anfordern können[Hier](https://purchase.aspose.com/temporary-license/).

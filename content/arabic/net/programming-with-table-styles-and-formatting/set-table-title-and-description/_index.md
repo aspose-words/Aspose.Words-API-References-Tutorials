@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## الخطوة 3: الوصول إلى الجدول وتعيين العنوان والوصف
- يمكنك الآن الوصول إلى الجدول الموجود في المستند باستخدام الملف`GetChild()` الطريقة و`Table` فصل. بعد ذلك، قم بتعيين عنوان الجدول ووصفه باستخدام الأمر`Title` و`Description` ملكيات.
+ يمكنك الآن الوصول إلى الجدول الموجود في المستند باستخدام الملف`GetChild()` الطريقة و`Table` فصل. بعد ذلك، قم بتعيين عنوان الجدول ووصفه باستخدام الأمر`Title`و`Description` ملكيات.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

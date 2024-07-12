@@ -8,7 +8,7 @@ weight: 10
 url: /pt/net/programming-with-officemath/math-equations/
 ---
 
-Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e manipular documentos do Word em um aplicativo C#. Entre as funcionalidades oferecidas pelo Aspose.Words está a possibilidade de adicionar equações matemáticas aos seus documentos. Neste guia, orientaremos você sobre como usar o código-fonte C# do Aspose.Words for .NET para adicionar equações matemáticas a um documento do Word.
+Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e manipular documentos Word em um aplicativo C#. Entre as funcionalidades oferecidas pelo Aspose.Words está a possibilidade de adicionar equações matemáticas aos seus documentos. Neste guia, orientaremos você sobre como usar o código-fonte C# do Aspose.Words for .NET para adicionar equações matemáticas a um documento do Word.
 
 ## Compreendendo a biblioteca Aspose.Words
 
@@ -16,7 +16,7 @@ Antes de mergulhar no código, é importante entender a biblioteca Aspose.Words 
 
 ## Carregando o documento do Word
 
-A primeira etapa é carregar o documento do Word ao qual deseja adicionar uma equação matemática. Use a classe Document para carregar o documento do arquivo de origem. Aqui está um exemplo :
+A primeira etapa é carregar o documento Word ao qual deseja adicionar uma equação matemática. Use a classe Document para carregar o documento do arquivo de origem. Aqui está um exemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "Office math.docx");

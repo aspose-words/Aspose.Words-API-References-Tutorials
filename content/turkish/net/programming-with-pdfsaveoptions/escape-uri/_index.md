@@ -78,7 +78,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir PDF belgesinde URI'lerden nas�
 ### Sıkça Sorulan Sorular
 
 #### S: PDF belgesindeki kaçış URI'si nedir ve neden önemlidir?
-C: Bir PDF belgesindeki Kaçış URI'si, biçim hatalarını önlemek için bir URL'deki özel karakterleri kaçış dizilerine dönüştürme yöntemini ifade eder. Bu önemlidir çünkü bir URL'deki özel karakterler, URL'nin yapısını bozabilir ve yanlış yorumlanmaya veya yanlış oluşturmaya yol açabilir. Özel karakterlerden kaçınarak URL'nin PDF belgesinde doğru şekilde yorumlandığını ve görüntülendiğini garanti ederiz.
+C: Bir PDF belgesindeki Kaçış URI'si, biçim hatalarını önlemek için bir URL'deki özel karakterleri kaçış dizilerine dönüştürme yöntemini ifade eder. Bu önemlidir çünkü bir URL'deki özel karakterler, URL'nin yapısını bozabilir ve yanlış yorumlanmaya veya hatalı oluşturmaya yol açabilir. Özel karakterlerden kaçınarak URL'nin PDF belgesinde doğru şekilde yorumlandığını ve görüntülendiğini garanti ederiz.
 
 #### S: Bir PDF belgesindeki URI'lerden kaçmak için Aspose.Words for .NET'i nasıl kullanabilirim?
 C: Aspose.Words for .NET kullanarak bir PDF belgesindeki URI'lerden kaçmak için şu adımları izleyin:

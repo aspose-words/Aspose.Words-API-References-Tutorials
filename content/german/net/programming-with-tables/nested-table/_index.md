@@ -82,7 +82,7 @@ Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument an
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Dieser Aufruf ist wichtig, um innerhalb der ersten Tabelle eine geschachtelte Tabelle zu erstellen.
-	// Ohne diesen Aufruf werden die unten eingefügten Zellen an die äußere Tabelle angehängt.
+	//Ohne diesen Aufruf werden die unten eingefügten Zellen an die äußere Tabelle angehängt.
 	builder.EndTable();
 	// Zur ersten Zelle der äußeren Tabelle wechseln.
 	builder.MoveTo(cell.FirstParagraph);

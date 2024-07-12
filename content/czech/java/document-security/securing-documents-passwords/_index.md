@@ -1,6 +1,6 @@
 ---
-title: Zabezpečení dokumentů hesly
-linktitle: Zabezpečení dokumentů hesly
+title: Zabezpečení dokumentů pomocí hesel
+linktitle: Zabezpečení dokumentů pomocí hesel
 second_title: Aspose.Words Java Document Processing API
 description: Zjistěte, jak zabezpečit dokumenty hesly pomocí Aspose.Words for Java. Tento podrobný průvodce obsahuje zdrojový kód a odborné tipy. Chraňte svá data.
 type: docs

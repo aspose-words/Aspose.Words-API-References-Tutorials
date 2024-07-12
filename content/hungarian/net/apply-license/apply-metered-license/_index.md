@@ -2,7 +2,7 @@
 title: Alkalmazza a mért licencet
 linktitle: Alkalmazza a mért licencet
 second_title: Aspose.Words Document Processing API
-description: Lépésről lépésre szóló útmutatónkból megtudhatja, hogyan alkalmazhat mérőszámos licencet az Aspose.Words for .NET-ben. Rugalmas, költséghatékony licencelés egyszerűen.
+description: Lépésről lépésre szóló útmutatónk segítségével megtudhatja, hogyan alkalmazhat mérőszámos licencet az Aspose.Words for .NET-ben. Rugalmas, költséghatékony licencelés egyszerűen.
 type: docs
 weight: 10
 url: /hu/net/apply-license/apply-metered-license/
@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Cserélje ki`"your_public_key"` és`"your_private_key"`az Aspose-tól kapott tényleges kulcsokkal. Ez a lépés lényegében közli az Aspose-val, hogy mérsékelt licencet szeretne használni.
+ Cserélje ki`"your_public_key"`és`"your_private_key"`az Aspose-tól kapott tényleges kulcsokkal. Ez a lépés lényegében közli az Aspose-val, hogy mérsékelt licencet szeretne használni.
 
 ## 3. lépés: Töltse be a dokumentumot
 

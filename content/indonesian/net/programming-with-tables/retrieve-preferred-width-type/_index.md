@@ -2,7 +2,7 @@
 title: Ambil Jenis Lebar Pilihan
 linktitle: Ambil Jenis Lebar Pilihan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengambil jenis dan nilai lebar sel yang diinginkan di tabel Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengambil jenis dan nilai lebar sel yang diinginkan dalam tabel Word dengan Aspose.Words untuk .NET.
 type: docs
 weight: 10
 url: /id/net/programming-with-tables/retrieve-preferred-width-type/
@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Aktifkan penyesuaian tabel otomatis
 table. AllowAutoFit = true;
 
-// Ambil sel pertama dari baris pertama
+//Ambil sel pertama dari baris pertama
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Ambil jenis lebar yang diinginkan dan nilainya
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-Di sini kita menggunakan dokumen untuk mengambil tabel pertama, lalu kita mengaktifkan penyesuaian tabel otomatis dengan`AllowAutoFit` Properti. Lalu kita mengambil sel pertama dari baris pertama tabel. Dari sel ini, kita dapat mengambil tipe lebar yang diinginkan dengan`PreferredWidth.Type` properti dan nilainya dengan`PreferredWidth.Value` Properti.
+ Di sini kita menggunakan dokumen untuk mengambil tabel pertama, lalu kita mengaktifkan penyesuaian tabel otomatis dengan`AllowAutoFit` Properti. Lalu kita mengambil sel pertama dari baris pertama tabel. Dari sel ini, kita dapat mengambil tipe lebar yang diinginkan dengan`PreferredWidth.Type` properti dan nilainya dengan`PreferredWidth.Value` Properti.
 
 ### Contoh kode sumber untuk Mengambil Jenis Lebar Pilihan menggunakan Aspose.Words untuk .NET 
 

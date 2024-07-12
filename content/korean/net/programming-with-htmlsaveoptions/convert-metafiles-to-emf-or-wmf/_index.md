@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- 이 코드는`Document` 그리고`DocumentBuilder` 문서를 작성합니다. 삽입합니다`<img>` base64로 인코딩된 이미지로 문서에 태그를 추가하세요.
+ 이 코드는`Document`그리고`DocumentBuilder` 문서를 작성합니다. 삽입합니다`<img>` base64로 인코딩된 이미지로 문서에 태그를 추가하세요.
 
 ## 3단계: HTML 저장 옵션 설정
 

@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- ในขั้นตอนนี้ เราจะเข้าถึง`Theme` วัตถุของ`Document`วัตถุเพื่อรับธีมเอกสาร ต่อไปเราสามารถแก้ไขคุณสมบัติของธีมได้ เช่น แบบอักษรรอง (`MinorFonts.Latin`) และสี (`Colors.Hyperlink`-
+ในขั้นตอนนี้ เราจะเข้าถึง`Theme` วัตถุของ`Document` วัตถุเพื่อรับธีมเอกสาร ต่อไปเราสามารถแก้ไขคุณสมบัติของธีมได้ เช่น แบบอักษรรอง (`MinorFonts.Latin`) และสี (`Colors.Hyperlink`-
 
 ## ขั้นตอนที่ 4: บันทึกเอกสาร
 

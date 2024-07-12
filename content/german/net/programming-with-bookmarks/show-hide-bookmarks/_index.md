@@ -2,138 +2,153 @@
 title: Lesezeichen im Word-Dokument ein- und ausblenden
 linktitle: Lesezeichen im Word-Dokument ein- und ausblenden
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein bestimmtes Lesezeichen in einem Word-Dokument anzeigen oder ausblenden.
+description: Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Lesezeichen in einem Word-Dokument dynamisch ein- oder ausblenden. Perfekt für Entwickler.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## Einführung
 
-In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion „Lesezeichen anzeigen/ausblenden“ in der Aspose.Words-Bibliothek für .NET verwendet wird. Mit dieser Funktion können Sie ein bestimmtes Lesezeichen in einem Word-Dokument anzeigen oder ausblenden.
+Mussten Sie schon einmal bestimmte Teile Ihres Word-Dokuments dynamisch ausblenden oder anzeigen? Dann haben Sie Glück! Mit Aspose.Words für .NET können Sie die Sichtbarkeit von mit Lesezeichen versehenen Inhalten in Ihren Dokumenten ganz einfach verwalten. Dieses Tutorial führt Sie durch den Vorgang des Ein- und Ausblendens von Lesezeichen in einem Word-Dokument mit Aspose.Words für .NET. Wir werden den Code Schritt für Schritt aufschlüsseln, sodass Sie diese Anleitung leicht befolgen können, egal ob Sie ein erfahrener Entwickler oder ein Neuling sind.
 
 ## Voraussetzungen
 
-- Grundkenntnisse der Sprache C#.
-- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
+Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-## Schritt 1: Dokument einlegen
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET installiert haben. Wenn nicht, können Sie sie herunterladen[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Eine IDE wie Visual Studio.
+3. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung sind von Vorteil.
+4. Ein Word-Dokument: Ein Beispiel-Word-Dokument mit Lesezeichen.
 
- Wir benutzen das`Document` Klasse zum Laden des vorhandenen Dokuments aus einer Datei:
+## Namespaces importieren
+
+Bevor Sie mit dem Code beginnen, müssen Sie die erforderlichen Namespaces importieren. Fügen Sie am Anfang Ihrer C#-Datei Folgendes hinzu:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## Schritt 1: Laden Sie Ihr Dokument
+
+Zunächst müssen Sie das Word-Dokument laden, das die Lesezeichen enthält. So können Sie das tun:
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## Schritt 2: Ein bestimmtes Lesezeichen ein- oder ausblenden
+### Erläuterung
 
- Wir benutzen das`ShowHideBookmarkedContent` Funktion zum Anzeigen oder Ausblenden eines bestimmten Lesezeichens im Dokument. Diese Funktion verwendet als Parameter das Dokument, den Namen des Lesezeichens und einen Booleschen Wert, der angibt, ob das Lesezeichen angezeigt oder ausgeblendet werden soll:
+- dataDir: Dies ist der Verzeichnispfad, in dem sich Ihr Word-Dokument befindet.
+-  Dokument doc: Dies initialisiert eine neue Instanz des`Document` Klasse mit Ihrer angegebenen Datei.
+
+## Schritt 2: Mit Lesezeichen versehenen Inhalt ein- oder ausblenden
+
+Als nächstes definieren wir eine Methode zum Anzeigen oder Ausblenden des mit Lesezeichen versehenen Inhalts. Hier ist die vollständige Methode:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{MERGEFIELD-Lesezeichen}" = "true" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### Erläuterung
+
+- Bookmark bm: Holt das Lesezeichen aus dem Dokument.
+- DocumentBuilder-Builder: Hilft bei der Navigation und Änderung des Dokuments.
+- Feldfeld: Fügt ein WENN-Feld ein, um den Zustand des Lesezeichens zu überprüfen.
+- Knoten currentNode: Durchläuft die Knoten, um den Feldanfang und das Feldende zu finden.
+
+## Schritt 3: Ausführen der Show/Hide-Funktion
+
+ Jetzt müssen Sie den`ShowHideBookmarkedContent` Methode, wobei das Dokument, der Lesezeichenname und das Sichtbarkeitsflag übergeben werden:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## Schritt 3: Speichern des geänderten Dokuments
+### Erläuterung
 
- Wir benutzen das`Save` Methode zum Speichern des geänderten Dokuments in einer Datei:
+- doc: Ihr Dokumentobjekt.
+- „MyBookmark1“: Der Name des Lesezeichens, das Sie anzeigen/ausblenden möchten.
+- false: Das Sichtbarkeits-Flag (true zum Anzeigen, false zum Ausblenden).
+
+## Schritt 4: Speichern Sie Ihr Dokument
+
+Speichern Sie abschließend das geänderte Dokument:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### Beispielquellcode für „Lesezeichen anzeigen/ausblenden“ mit Aspose.Words für .NET
+### Erläuterung
 
-Hier ist der vollständige Beispielquellcode zur Demonstration des Anzeigens oder Ausblendens eines bestimmten Lesezeichens mit Aspose.Words für .NET:
+- dataDir + „WorkingWithBookmarks.ShowHideBookmarks.docx“: Der Pfad und der Name des neuen Dokuments, in dem die Änderungen gespeichert werden.
 
-```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### Quellcode für mit Lesezeichen versehenen Inhalt anzeigen/ausblenden
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {IF "{MERGEFIELD-Lesezeichen}" = "true" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## Abschluss
 
-In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Lesezeichen ein-/ausblenden“ von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um ein bestimmtes Lesezeichen in einem Dokument ein- oder auszublenden.
+Und da haben Sie es! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET Lesezeichen in einem Word-Dokument ein- und ausblenden. Diese Technik kann unglaublich nützlich sein, um Dokumente mit bedingtem Inhalt dynamisch zu generieren.
 
-### FAQs zum Anzeigen und Ausblenden von Lesezeichen in Word-Dokumenten
+## Häufig gestellte Fragen
 
-#### F: Kann ich mehrere Lesezeichen im selben Dokument anzeigen oder ausblenden?
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Dokumentverarbeitungsbibliothek, mit der Entwickler Word-Dokumente programmgesteuert erstellen, ändern und konvertieren können.
 
-A: Ja, Sie können mehrere Lesezeichen im selben Dokument anzeigen oder ausblenden, indem Sie die Schritte 2 und 3 für jedes Lesezeichen wiederholen, das Sie verarbeiten möchten.
+### Wie bekomme ich Aspose.Words für .NET?
+ Sie können Aspose.Words für .NET herunterladen von[Hier](https://releases.aspose.com/words/net/)Eine kostenlose Testversion ist ebenfalls verfügbar.
 
-#### F: Funktioniert der bereitgestellte Code mit anderen Word-Dokumentformaten wie .doc oder .docm?
+### Kann ich diese Methode für andere Arten von Lesezeichen verwenden?
+Ja, diese Methode kann angepasst werden, um die Sichtbarkeit aller Lesezeichen in Ihrem Word-Dokument zu verwalten.
 
-A: Ja, der bereitgestellte Code funktioniert mit verschiedenen von Aspose.Words unterstützten Word-Dokumentformaten wie .doc und .docm. Achten Sie beim Laden und Speichern des Dokuments einfach darauf, den richtigen Dateinamen und Pfad zu verwenden.
+### Was ist, wenn mein Dokument das angegebene Lesezeichen nicht enthält?
+Wenn das Lesezeichen nicht vorhanden ist, gibt die Methode einen Fehler aus. Stellen Sie sicher, dass das Lesezeichen vorhanden ist, bevor Sie versuchen, es anzuzeigen/auszublenden.
 
-#### F: Wie kann ich ein verstecktes Lesezeichen wieder anzeigen?
-
- A: Um ein verstecktes Lesezeichen wieder anzuzeigen, müssen Sie dasselbe`ShowHideBookmarkedContent` Funktion, die den Wert übergibt`true` für den Booleschen Parameter, der angibt, ob das Lesezeichen angezeigt oder ausgeblendet werden soll.
-
-#### F: Kann ich Bedingungen verwenden, um Lesezeichen basierend auf Seriendruckfeldwerten im Dokument anzuzeigen oder auszublenden?
-
- A: Ja, Sie können Bedingungen und Seriendruckfeldwerte verwenden, um zu bestimmen, ob ein Lesezeichen angezeigt oder ausgeblendet werden soll. Sie können den Code des`ShowHideBookmarkedContent` Funktion, um die entsprechenden Bedingungen und Werte zu berücksichtigen.
-
-#### F: Wie kann ich mit Aspose.Words für .NET ein Lesezeichen in einem Word-Dokument löschen?
-
- A: Um ein Lesezeichen in einem Word-Dokument mit Aspose.Words für .NET zu entfernen, können Sie den`RemoveBookmarks` Methode der`Document` Klasse. Hier ist ein Beispielcode:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?
+ Sie können Unterstützung von der Aspose-Community erhalten[Hier](https://forum.aspose.com/c/words/8).

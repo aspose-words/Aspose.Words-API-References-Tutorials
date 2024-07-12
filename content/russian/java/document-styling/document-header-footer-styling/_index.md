@@ -48,7 +48,7 @@ Footer footer = section.getHeadersFooters().add(HeaderFooterType.FOOTER_PRIMARY)
 // Добавьте контент в нижний колонтитул
 footer.appendChild(new Run(doc, "Page 1"));
 
-// Настроить форматирование нижнего колонтитула
+// Настройте форматирование нижнего колонтитула
 footer.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 ```
 

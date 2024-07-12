@@ -75,7 +75,7 @@ Pada artikel ini, kita telah menjelajahi cara mencetak dokumen dengan pengaturan
 
 ### Bagaimana cara mengubah ukuran kertas dokumen saya?
 
- Untuk mengubah ukuran kertas dokumen Anda, gunakan`setPageWidth` Dan`setPageHeight` metode dari`PageSetup` kelas dan tentukan dimensi yang diinginkan dalam poin.
+ Untuk mengubah ukuran kertas dokumen Anda, gunakan`setPageWidth`Dan`setPageHeight` metode dari`PageSetup` kelas dan tentukan dimensi yang diinginkan dalam poin.
 
 ### Bisakah saya mencetak banyak salinan dokumen?
 

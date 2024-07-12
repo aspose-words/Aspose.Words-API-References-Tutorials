@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- 바꾸다`"your_public_key"` 그리고`"your_private_key"`Aspose에서 받은 실제 키를 사용하세요. 이 단계는 기본적으로 Aspose에게 계량 라이선스를 사용하고 싶다고 알려줍니다.
+ 바꾸다`"your_public_key"`그리고`"your_private_key"`Aspose에서 받은 실제 키를 사용하세요. 이 단계는 기본적으로 Aspose에게 계량 라이선스를 사용하고 싶다고 알려줍니다.
 
 ## 3단계: 문서 로드
 

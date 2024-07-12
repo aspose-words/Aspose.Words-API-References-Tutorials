@@ -103,7 +103,7 @@ Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang
 
 ### 3. Bagaimana cara memformat tabel secara berbeda?
 
-Anda dapat menyesuaikan pemformatan tabel dengan menggunakan metode berbeda yang disediakan oleh Aspose.Words. Periksalah[dokumentasi API](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
+ Anda dapat menyesuaikan pemformatan tabel dengan menggunakan metode berbeda yang disediakan oleh Aspose.Words. Periksalah[dokumentasi API](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
 
 ### 4. Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
 

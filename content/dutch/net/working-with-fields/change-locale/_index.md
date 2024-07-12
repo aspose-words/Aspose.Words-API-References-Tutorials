@@ -60,7 +60,7 @@ Thread.CurrentThread.CurrentCulture = currentCulture;
 
 In de bovenstaande code herstellen we de oorspronkelijke cultuur van de thread.
 
-## Stap 6: Sla het document op
+## Stap 6: Bewaar het document
 Sla het gewijzigde document op in een bestand met behulp van de Save-methode van de Document-klasse:
 
 ```csharp
@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
 ## Conclusie
-Gefeliciteerd! U hebt met succes geleerd hoe u de landinstelling in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu de opmaak van datums en getallen tijdens samenvoegbewerkingen bepalen. Pas de landinstelling aan uw vereisten aan om een nauwkeurige en consistente opmaak in uw documenten te garanderen.
+Gefeliciteerd! U hebt met succes geleerd hoe u de landinstelling in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu de opmaak van datums en getallen tijdens samenvoegbewerkingen beheren. Pas de landinstelling aan uw vereisten aan om een nauwkeurige en consistente opmaak in uw documenten te garanderen.
 
 ### Veelgestelde vragen
 

@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/working-with-fields/rename-merge-fields/
 ---
 
-Hier ist eine Schritt-für-Schritt-Anleitung zur Erklärung des C#-Quellcodes unten, der die Funktion zum Umbenennen von Seriendruckfeldern von Aspose.Words für .NET verwendet. Befolgen Sie jeden Schritt sorgfältig, um die gewünschten Ergebnisse zu erzielen.
+Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes unten, der die Funktion zum Umbenennen von Seriendruckfeldern von Aspose.Words für .NET verwendet. Befolgen Sie jeden Schritt sorgfältig, um die gewünschten Ergebnisse zu erzielen.
 
 ## Schritt 1: Einrichten des Dokumentverzeichnisses
 

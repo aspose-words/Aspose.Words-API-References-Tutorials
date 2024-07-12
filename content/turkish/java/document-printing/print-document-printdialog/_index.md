@@ -65,7 +65,7 @@ Yazdırma ayarlarını özel gereksinimlerinizi karşılayacak şekilde özelle�
 
 ## Çözüm
 
-Bu kılavuzda Aspose.Words for Java kullanarak PrintDialog ile bir belgenin nasıl yazdırılacağını araştırdık. Bu kitaplık, Java geliştiricileri için belge işlemeyi ve yazdırmayı basit hale getirerek belgeyle ilgili görevlerde zamandan ve emekten tasarruf sağlar.
+Bu kılavuzda Aspose.Words for Java kullanarak PrintDialog ile bir belgenin nasıl yazdırılacağını araştırdık. Bu kitaplık, Java geliştiricileri için belge işlemeyi ve yazdırmayı kolaylaştırarak belgeyle ilgili görevlerde zamandan ve emekten tasarruf sağlar.
 
 ## SSS
 

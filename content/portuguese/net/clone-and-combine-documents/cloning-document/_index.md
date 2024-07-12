@@ -9,14 +9,14 @@ url: /pt/net/clone-and-combine-documents/cloning-document/
 ---
 ## Introdução
 
-Ei! Você já precisou clonar um documento do Word usando Aspose.Words for .NET? Não é tão assustador quanto parece e estou aqui para guiá-lo passo a passo. Quer você seja um desenvolvedor experiente ou esteja apenas começando, este tutorial irá guiá-lo pelo processo de maneira simples e coloquial. No final, você terá um documento do Word clonado pronto para uso. Então, vamos mergulhar de cabeça!
+Ei! Você já precisou clonar um documento do Word usando Aspose.Words for .NET? Não é tão assustador quanto parece e estou aqui para guiá-lo passo a passo. Quer você seja um desenvolvedor experiente ou esteja apenas começando, este tutorial orientará você pelo processo de maneira simples e coloquial. No final, você terá um documento do Word clonado pronto para uso. Então, vamos mergulhar de cabeça!
 
 ## Pré-requisitos
 
 Antes de sujarmos as mãos com alguma codificação, vamos ter certeza de que temos tudo o que precisamos:
 
 1.  Biblioteca Aspose.Words for .NET: você pode baixá-lo do[Aspose Lançamentos](https://releases.aspose.com/words/net/) página.
-2. Visual Studio: qualquer versão recente deve resolver o problema.
+2. Visual Studio: Qualquer versão recente deve resolver o problema.
 3. Conhecimento básico de C#: você não precisa ser um especialista, mas um pouco de familiaridade ajudará.
 4.  Um exemplo de documento do Word: para este tutorial, vamos chamá-lo`Document.docx`.
 

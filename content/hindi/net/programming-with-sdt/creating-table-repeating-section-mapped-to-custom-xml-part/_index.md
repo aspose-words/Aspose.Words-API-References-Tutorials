@@ -17,7 +17,7 @@ url: /hi/net/programming-with-sdt/creating-table-repeating-section-mapped-to-cus
 - C# और वर्ड दस्तावेजों के साथ वर्ड प्रोसेसिंग का बुनियादी ज्ञान।
 
 ## चरण 1: दस्तावेज़ निर्देशिका सेट करें
- अपने दस्तावेज़ निर्देशिका का पथ सेट करके आरंभ करें।`"YOUR DOCUMENT DIRECTORY"` उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
+ अपने दस्तावेज़ निर्देशिका का पथ सेट करके आरंभ करें।`"YOUR DOCUMENT DIRECTORY"`उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## चरण 4: एक तालिका और तालिका संरचना बनाएँ
- का उपयोग करके तालिका बनाना प्रारंभ करें`StartTable` की विधि`DocumentBuilder` . का उपयोग करके तालिका कक्ष और सामग्री जोड़ें`InsertCell` और`Write` तरीके.
+ का उपयोग करके तालिका बनाना प्रारंभ करें`StartTable` की विधि`DocumentBuilder` . का उपयोग करके तालिका कक्ष और सामग्री जोड़ें`InsertCell`और`Write` तरीके.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- एक बनाने के`Row`दोहराए जाने वाले अनुभाग में प्रत्येक आइटम का प्रतिनिधित्व करने और उसे दोहराए जाने वाले अनुभाग आइटम में जोड़ने के लिए।
+ एक बनाने के`Row` दोहराए जाने वाले अनुभाग में प्रत्येक आइटम का प्रतिनिधित्व करने और उसे दोहराए जाने वाले अनुभाग आइटम में जोड़ने के लिए।
 
 ```csharp
 Row row = new Row(doc);

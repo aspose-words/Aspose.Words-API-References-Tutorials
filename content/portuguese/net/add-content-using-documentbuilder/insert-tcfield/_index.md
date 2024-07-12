@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Etapa 2: crie um novo documento
 
- Tudo bem, vamos começar criando um novo documento do Word. Usaremos o`Document` e`DocumentBuilder` aulas do Aspose.Words para fazer as coisas acontecerem.
+ Tudo bem, vamos começar criando um novo documento do Word. Usaremos o`Document`e`DocumentBuilder` aulas do Aspose.Words para fazer as coisas acontecerem.
 
 ```csharp
 // O caminho para o diretório de documentos.

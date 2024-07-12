@@ -62,7 +62,7 @@ tomto tutoriálu jsme viděli, jak odstranit obsah záhlaví a zápatí z dokume
 
 #### Otázka: Jak nastavit adresář dokumentů v Aspose.Words pro .NET?
 
- A: Chcete-li nastavit cestu k adresáři obsahujícímu vaše dokumenty, musíte nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou. Jak na to:
+A: Chcete-li nastavit cestu k adresáři obsahujícímu vaše dokumenty, musíte nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou. Jak na to:
 
 ```csharp
 // Cesta k adresáři vašich dokumentů

@@ -2,66 +2,96 @@
 title: الاحتفاظ بتنسيق المصدر
 linktitle: الاحتفاظ بتنسيق المصدر
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إلحاق مستند مصدر بالمستند الوجهة مع الحفاظ على التنسيق الأصلي باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية دمج مستندات Word مع الحفاظ على التنسيق باستخدام Aspose.Words لـ .NET. مثالية للمطورين الذين يتطلعون إلى أتمتة مهام تجميع المستندات.
 type: docs
 weight: 10
 url: /ar/net/join-and-append-documents/keep-source-formatting/
 ---
+## مقدمة
 
-يوضح هذا البرنامج التعليمي كيفية إلحاق مستند مصدر بالمستند الوجهة مع الحفاظ على التنسيق الأصلي للمستند المصدر باستخدام Aspose.Words لـ .NET.
+في هذا البرنامج التعليمي، سنستكشف كيفية دمج مستندات Word وإلحاقها باستخدام Aspose.Words for .NET. توفر هذه المكتبة القوية للمطورين إمكانيات واسعة للتعامل مع مستندات Word برمجيًا. سنركز على طريقة الحفاظ على تنسيق المصدر سليمًا أثناء دمج المستندات، مما يضمن الحفاظ على الأنماط والتخطيطات الأصلية بسلاسة.
 
-## الخطوة 1: إعداد المشروع
+## المتطلبات الأساسية
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+قبل الغوص في البرنامج التعليمي، تأكد من إعداد المتطلبات الأساسية التالية:
 
--  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستندات المصدر والوجهة.
+- بيئة التطوير: Visual Studio أو أي بيئة تطوير متكاملة تدعم تطوير .NET.
+-  Aspose.Words for .NET Library: قم بتنزيل المكتبة وتثبيتها من[هنا](https://releases.aspose.com/words/net/).
+- المعرفة الأساسية ببرمجة C#: الإلمام ببناء جملة C# ومفاهيم البرمجة الموجهة للكائنات.
 
-## الخطوة 2: إنشاء الوجهة والمستندات المصدر
+## استيراد مساحات الأسماء
 
- إنشاء مثيلات`Document` للوجهة والوثائق المصدر.
+ابدأ باستيراد مساحات الأسماء الضرورية في مشروع C# الخاص بك:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document dstDoc = new Document();
-dstDoc.FirstSection.Body.AppendParagraph("Destination document text.");
-
-Document srcDoc = new Document();
-srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
+using Aspose.Words;
 ```
 
-## الخطوة 3: إلحاق المستند المصدر بالمستند الوجهة
+## الخطوة 1: قم بإعداد مشروعك
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كوضع تنسيق الاستيراد للاحتفاظ بالتنسيق الأصلي للمستند المصدر.
+قم بإنشاء تطبيق وحدة تحكم C# جديد في Visual Studio وقم بتثبيت حزمة Aspose.Words NuGet. تحتوي هذه الحزمة على المكتبات اللازمة للعمل مع مستندات Word في مشروعك.
+
+## الخطوة 2: تضمين مساحة الاسم Aspose.Words
+
+تأكد من تضمين مساحة الاسم Aspose.Words في بداية ملف C# الخاص بك للوصول إلى فئات Aspose.Words وطرقها.
+
+## الخطوة 3: تهيئة مسارات المستند
+
+حدد المسار إلى دليل المستندات الخاص بك حيث توجد المستندات المصدر والوجهة.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+```
+
+## الخطوة 4: إنشاء مستند الوجهة
+
+قم بتهيئة مثيل جديد لفئة المستند لإنشاء مستند وجهة حيث سيتم تخزين المحتوى المدمج.
+
+```csharp
+Document dstDoc = new Document();
+```
+
+## الخطوة 5: تحميل المستند المصدر
+
+وبالمثل، قم بإنشاء كائن مستند آخر لتحميل المستند المصدر الذي تريد إلحاقه بالمستند الوجهة.
+
+```csharp
+Document srcDoc = new Document();
+```
+
+## الخطوة 6: إلحاق المستند المصدر مع الحفاظ على التنسيق
+
+لدمج المستند المصدر في المستند الوجهة مع الحفاظ على تنسيقه الأصلي، استخدم الأسلوب AppendDocument مع تعيين ImportFormatMode إلى KeepSourceFormatting.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 4: احفظ المستند المعدل
+## الخطوة 7: احفظ المستند المدمج
 
- احفظ المستند المعدل باستخدام`Save` طريقة`Document` هدف.
-
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
-```
-
-يؤدي هذا إلى إكمال تنفيذ إلحاق مستند مصدر بالمستند الوجهة مع الاحتفاظ بالتنسيق الأصلي باستخدام Aspose.Words for .NET.
-
-### مثال على التعليمات البرمجية المصدر للاحتفاظ بتنسيق المصدر باستخدام Aspose.Words لـ .NET 
+وأخيرًا، احفظ المستند المدمج في الدليل المحدد باستخدام طريقة الحفظ.
 
 ```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document dstDoc = new Document();
-	dstDoc.FirstSection.Body.AppendParagraph("Destination document text. ");
-	Document srcDoc = new Document();
-	srcDoc.FirstSection.Body.AppendParagraph("Source document text. ");
-	// إلحاق المستند المصدر بالمستند الوجهة.
-	// قم بتمرير وضع التنسيق للاحتفاظ بالتنسيق الأصلي للمستند المصدر عند استيراده.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
+dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
+
+## خاتمة
+
+في هذا البرنامج التعليمي، تناولنا كيفية دمج مستندات Word مع الحفاظ على التنسيق الأصلي باستخدام Aspose.Words for .NET. يضمن هذا الأسلوب دمج الأنماط والخطوط والتخطيطات من المستندات المصدر بسلاسة في المستند الوجهة، مما يوفر حلاً قويًا لمهام تجميع المستندات.
+
+## الأسئلة الشائعة
+
+### هل يمكنني دمج مستندات متعددة في عملية واحدة باستخدام Aspose.Words لـ .NET؟
+نعم، يمكنك دمج مستندات متعددة عن طريق إلحاق كل مستند بالمستند الوجهة بشكل تسلسلي.
+
+### هل يحتفظ Aspose.Words بجميع سمات التنسيق أثناء دمج المستندات؟
+يدعم Aspose.Words أوضاع الاستيراد المختلفة؛ يضمن وضع KeepSourceFormatting الاحتفاظ بمعظم سمات التنسيق.
+
+### هل Aspose.Words متوافق مع تطبيقات .NET Core؟
+نعم، يدعم Aspose.Words ‎.NET Core، مما يسمح لك باستخدامه عبر منصات مختلفة.
+
+### كيف يمكنني التعامل مع المستندات الكبيرة بكفاءة باستخدام Aspose.Words؟
+يوفر Aspose.Words واجهات برمجة تطبيقات فعالة للعمل مع المستندات الكبيرة، بما في ذلك ميزات ترقيم الصفحات وإدارة الذاكرة.
+
+### أين يمكنني العثور على المزيد من الموارد والدعم لـ Aspose.Words؟
+ قم بزيارة[Aspose.Words لوثائق .NET](https://reference.aspose.com/words/net/) للحصول على مراجع تفصيلية لواجهة برمجة التطبيقات، وأمثلة، وأدلة.

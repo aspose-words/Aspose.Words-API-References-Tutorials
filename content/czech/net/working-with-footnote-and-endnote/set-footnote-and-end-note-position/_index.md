@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Krok 2: Nastavení pozice poznámky pod čarou a koncové poznámky
 
- Dále přejděte na`FootnoteOptions` a`EndnoteOptions`vlastnosti dokumentu pro nastavení polohy poznámek pod čarou a vysvětlivky. V tomto příkladu nastavíme pozici poznámek pod čarou tak, aby byly pod textem, a pozici vysvětlivek na konci oddílu:
+ Dále přejděte na`FootnoteOptions`a`EndnoteOptions`vlastnosti dokumentu pro nastavení polohy poznámek pod čarou a vysvětlivky. V tomto příkladu nastavíme pozici poznámek pod čarou tak, aby byly pod textem, a pozici vysvětlivek na konci oddílu:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

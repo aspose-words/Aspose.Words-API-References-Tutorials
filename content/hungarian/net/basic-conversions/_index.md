@@ -2,7 +2,7 @@
 title: Alapvető konverziók
 linktitle: Alapvető konverziók
 second_title: Aspose.Words Document Processing API
-description: Tanulja meg az alapvető konverziókat az Aspose.Words for .NET segítségével. Könnyen konvertálhat Word dokumentumokat más formátumokba, például PDF, HTML, RTF és sok más formátumba.
+description: Tanulja meg az alapvető konverziókat az Aspose.Words for .NET segítségével. Könnyen konvertálhat Word dokumentumokat más formátumokba, például PDF, HTML, RTF stb.
 type: docs
 weight: 1600
 url: /hu/net/basic-conversions/

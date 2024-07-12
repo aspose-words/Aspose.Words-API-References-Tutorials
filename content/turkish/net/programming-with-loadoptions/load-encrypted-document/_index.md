@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Belirtilen parolayla şifrelenmiş bir belge yükleyin
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Şifrelenmiş bir belgeyi yeni bir parolayla kaydetme
+//Şifrelenmiş bir belgeyi yeni bir parolayla kaydetme
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

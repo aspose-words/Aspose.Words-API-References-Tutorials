@@ -84,7 +84,7 @@ Entdecken Sie auch die anderen leistungsstarken Funktionen von Aspose.Words für
 Ja, Sie können die Aufteilungskriterien Ihren spezifischen Anforderungen entsprechend anpassen. Abgesehen von Abschnittsumbrüchen können Sie das Dokument mithilfe der verschiedenen von Aspose.Words für .NET bereitgestellten Funktionen und Methoden auch anhand anderer Elemente wie Überschriften, Lesezeichen oder spezifischer Inhalte aufteilen.
 
 #### F2: Ist es möglich, die Abschnitte wieder in einem einzigen Dokument zusammenzuführen?
- Ja, Sie können die einzelnen Abschnitte wieder in einem einzigen Dokument zusammenführen, indem Sie die Abschnitte aus mehreren Dokumenten importieren und kombinieren. Verwenden Sie dazu`ImportNode` Und`Sections.Add` Methoden. Dadurch können Sie den Teilungsprozess rückgängig machen und das Originaldokument wiederherstellen.
+ Ja, Sie können die einzelnen Abschnitte wieder in einem einzigen Dokument zusammenführen, indem Sie die Abschnitte aus mehreren Dokumenten importieren und kombinieren. Verwenden Sie dazu`ImportNode`Und`Sections.Add` Methoden. Dadurch können Sie den Teilungsprozess rückgängig machen und das Originaldokument wiederherstellen.
 
 #### F3: Gibt es Beschränkungen hinsichtlich der Anzahl der Abschnitte, die mit der Funktion „Nach Abschnitten“ aufgeteilt werden können?
 Die Anzahl der Abschnitte, die mit der Funktion „Nach Abschnitten“ aufgeteilt werden können, hängt von den Funktionen von Aspose.Words für .NET und den verfügbaren Systemressourcen ab. Im Allgemeinen unterstützt es das Aufteilen von Dokumenten mit einer großen Anzahl von Abschnitten, aber extrem lange Dokumente oder eine sehr hohe Anzahl von Abschnitten können zusätzliche Systemressourcen und Verarbeitungszeit erfordern.

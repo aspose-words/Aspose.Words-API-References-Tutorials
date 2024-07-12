@@ -16,7 +16,7 @@ Aspose.Words for Java là một thư viện Java cho phép bạn làm việc v�
 
 ## Bắt đầu với Aspose.Words cho Java
 
-Trước khi đi sâu vào chi tiết về định dạng bảng, hãy thiết lập môi trường phát triển của chúng tôi và làm quen với Aspose.Words cho Java.
+Trước khi đi sâu vào chi tiết về định dạng bảng, hãy thiết lập môi trường phát triển của chúng tôi và làm quen với Aspose.Words for Java.
 
 ### Cài đặt
 

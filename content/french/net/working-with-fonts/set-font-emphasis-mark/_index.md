@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Créer et personnaliser le document
- Créez une instance du`Document` classe et un associé`DocumentBuilder` pour construire le contenu du document. Utilisez le`Font.EmphasisMark` propriété pour définir le style d'accentuation de la police sur`EmphasisMark.UnderSolidCircle` . Utilisez ensuite le`Write` et`Writeln` méthodes du`DocumentBuilder` pour ajouter du texte avec l'accentuation de la police spécifiée.
+ Créez une instance du`Document` classe et un associé`DocumentBuilder` pour construire le contenu du document. Utilisez le`Font.EmphasisMark` propriété pour définir le style d'accentuation de la police sur`EmphasisMark.UnderSolidCircle` . Utilisez ensuite le`Write`et`Writeln` méthodes du`DocumentBuilder` pour ajouter du texte avec l'accentuation de la police spécifiée.
 
 ```csharp
 Document document = new Document();

@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Ayarlayarak`AddSpaceBetweenFarEastAndAlpha` Ve`AddSpaceBetweenFarEastAndDigit` ile`true`Aspose.Words'e Asya karakterleri ile Latin harfleri veya rakamları arasındaki boşluğu otomatik olarak ayarlamasını söylüyoruz.
+ Ayarlayarak`AddSpaceBetweenFarEastAndAlpha`Ve`AddSpaceBetweenFarEastAndDigit` ile`true`Aspose.Words'e Asya karakterleri ile Latin harfleri veya rakamları arasındaki boşluğu otomatik olarak ayarlamasını söylüyoruz.
 
 ## 3. Adım: Belgeye Metin Ekleme
 

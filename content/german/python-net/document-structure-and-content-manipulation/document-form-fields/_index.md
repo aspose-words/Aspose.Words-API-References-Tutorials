@@ -1,7 +1,7 @@
 ---
 title: Formularfelder und Datenerfassung in Word-Dokumenten beherrschen
 linktitle: Formularfelder und Datenerfassung in Word-Dokumenten beherrschen
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Meistern Sie die Kunst des Erstellens und Verwaltens von Formularfeldern in Word-Dokumenten mit Aspose.Words für Python. Lernen Sie, Daten effizient zu erfassen und die Benutzereinbindung zu verbessern.
 type: docs
 weight: 15

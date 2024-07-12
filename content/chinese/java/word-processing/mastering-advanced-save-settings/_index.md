@@ -63,7 +63,7 @@ header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"))
 doc.save("header_first_page.docx", SaveFormat.DOCX);
 ```
 
-## 嵌入字体以实现跨平台查看
+## 嵌入字体以供跨平台查看
 
 在不同平台共享文档时，字体兼容性至关重要。了解如何嵌入字体以确保一致的浏览体验。
 
@@ -245,4 +245,4 @@ doc1.compare(doc2, "comparison_result.docx");
 
 掌握使用 Aspose.Words for Java 进行文档的高级保存设置，为文档处理开辟了无限可能。无论您是优化文档大小、保护敏感信息还是自动生成文档，Aspose.Words for Java 都能让您轻松实现目标。
 
-现在，有了这些知识，您可以将文档处理技能提升到新的高度。利用 Aspose.Words for Java 的强大功能，创建符合您确切规格的文档。
+现在，有了这些知识，您可以将文档处理技能提升到新的高度。利用 Aspose.Words for Java 的强大功能，创建符合您确切要求的文档。

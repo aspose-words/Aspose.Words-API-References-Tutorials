@@ -76,7 +76,7 @@ doc.save("sample.pdf", SaveFormat.PDF);
 
 ## Umgang mit Bildern und Tabellen
 
-Das Einbinden von Bildern und Tabellen ist eine häufige Anforderung bei der Arbeit mit Dokumenten. Aspose.Words vereinfacht auch diese Aufgaben.
+Das Einfügen von Bildern und Tabellen ist eine häufige Anforderung bei der Arbeit mit Dokumenten. Aspose.Words vereinfacht auch diese Aufgaben.
 
 ### Hinzufügen eines Bilds zu einem Dokument
 

@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## 2. Adım: Belgelerinizi Yükleyin
 
- Daha sonra, karşılaştırmak istediğiniz Word belgelerini yüklemeniz gerekecektir. Bu örnekte, adında iki belgeniz olduğunu varsayacağız.`Document.docx` Ve`Document2.docx` belgeler dizininizde bulunur.
+ Daha sonra, karşılaştırmak istediğiniz Word belgelerini yüklemeniz gerekecektir. Bu örnekte, adında iki belgeniz olduğunu varsayacağız.`Document.docx`Ve`Document2.docx` belgeler dizininizde bulunur.
 
 ```csharp
 // Belgeler dizininin yolu.

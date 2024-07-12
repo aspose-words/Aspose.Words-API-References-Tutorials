@@ -1,6 +1,6 @@
 ---
-title: Word 文書で Markdown 書式を利用する
-linktitle: Word 文書で Markdown 書式を利用する
+title: Word文書でマークダウン書式を活用する
+linktitle: Word文書でマークダウン書式を活用する
 second_title: Aspose.Words Python ドキュメント管理 API
 description: Aspose.Words for Python を使用して、Markdown フォーマットを Word 文書に統合する方法を学びます。動的で視覚的に魅力的なコンテンツを作成するためのコード例を含むステップバイステップ ガイドです。
 type: docs
@@ -91,7 +91,7 @@ doc.save("output.docx")
 
 ## 結論
 
-このガイドでは、Aspose.Words for Python を使用して、Word ドキュメント内での Markdown フォーマットの魅力的な融合について説明しました。環境の設定、ドキュメントの読み込みと作成、Markdown テキストの追加、スタイル設定、画像の挿入、表とリストの処理、ページのフォーマットの基本について説明しました。この強力な統合により、動的で視覚的に魅力的なコンテンツを生成するための創造的な可能性が広がります。
+このガイドでは、Aspose.Words for Python を使用して、Word 文書内での Markdown 書式設定の魅力的な融合について説明しました。環境の設定、文書の読み込みと作成、Markdown テキストの追加、スタイル設定、画像の挿入、表とリストの処理、ページの書式設定の基本について説明しました。この強力な統合により、動的で視覚的に魅力的なコンテンツを生成するための創造的な可能性が広がります。
 
 ## よくある質問
 

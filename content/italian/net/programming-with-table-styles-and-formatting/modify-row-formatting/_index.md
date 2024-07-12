@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Passaggio 3: accedere alla riga da modificare
- Per modificare la formattazione di una riga della tabella, dobbiamo accedere alla riga specifica nella tabella. Noi usiamo il`GetChild()` E`FirstRow` metodi per ottenere il riferimento alla prima riga della tabella.
+ Per modificare la formattazione di una riga della tabella, dobbiamo accedere alla riga specifica nella tabella. Noi usiamo il`GetChild()`E`FirstRow` metodi per ottenere il riferimento alla prima riga della tabella.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

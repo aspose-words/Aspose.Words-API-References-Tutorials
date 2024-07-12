@@ -92,7 +92,7 @@ Aspose.Words for .NET を使用してドキュメント内の結合フィール�
 
 #### Q: Aspose.Words for .NET を使用して、Word 文書内の特定の結合フィールドの名前のみを変更することは可能ですか?
 
-A: はい、Aspose.Words for .NETを使用すると、Word文書内の特定の結合フィールドのみの名前を変更することができます。フィールド名やその他の関連プロパティなどの特定の基準を使用して、名前を変更するフィールドをフィルタリングできます。次に、`FieldMergingArgs.FieldName`方法。
+A: はい、Aspose.Words for .NETではWord文書内の特定の結合フィールドのみの名前を変更することができます。フィールド名やその他の関連プロパティなどの特定の条件を使用して、名前を変更するフィールドをフィルタリングできます。次に、`FieldMergingArgs.FieldName`方法。
 
 #### Q: Aspose.Words for .NET を使用して Word 文書内の結合フィールドの名前が正常に変更されたかどうかを確認するにはどうすればよいですか?
 

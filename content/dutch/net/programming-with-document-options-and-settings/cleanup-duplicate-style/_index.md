@@ -73,7 +73,7 @@ Deze verklaring geeft het aantal resterende stijlen weer na het reinigen.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//Het aantal stijlen na het opruimen is verlaagd.
+	// Het aantal stijlen na het opruimen is verlaagd.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

@@ -12,7 +12,7 @@ Jeśli chcesz poprawić wygląd swoich dokumentów i stworzyć stylowe i profesj
 
 ## Wstęp
 
-Aspose.Words for Java to potężna biblioteka, która umożliwia programistom Java programowe tworzenie, edytowanie, konwertowanie i przetwarzanie dokumentów programu Word. Oferuje rozbudowany zestaw funkcji, w tym stylizację dokumentów, który umożliwia użytkownikom dostosowywanie wyglądu dokumentów w najdrobniejszych szczegółach. Niezależnie od tego, czy chcesz tworzyć raporty, faktury, listy, czy jakikolwiek inny typ dokumentu, Aspose.Words dla Java zapewnia narzędzia, które sprawią, że Twoje dokumenty będą atrakcyjne wizualnie i profesjonalne.
+Aspose.Words for Java to potężna biblioteka, która umożliwia programistom Java programowe tworzenie, edytowanie, konwertowanie i przetwarzanie dokumentów programu Word. Oferuje rozbudowany zestaw funkcji, w tym stylizację dokumentów, który umożliwia użytkownikom dostosowanie wyglądu dokumentów w najdrobniejszych szczegółach. Niezależnie od tego, czy chcesz tworzyć raporty, faktury, listy, czy jakikolwiek inny typ dokumentu, Aspose.Words dla Java zapewnia narzędzia, które sprawią, że Twoje dokumenty będą atrakcyjne wizualnie i profesjonalne.
 
 ## Pierwsze kroki z Aspose.Words dla Java
 
@@ -144,7 +144,7 @@ font.setUnderline(Underline.SINGLE);
 
 ### 3. Używanie kolorów i efektów tekstowych
 
-Aby zastosować kolory i inne efekty tekstowe, użyj także klasy Font.
+Aby zastosować kolory i inne efekty tekstowe, użyj również klasy Font.
 
 ```java
 font.setColor(Color.RED);

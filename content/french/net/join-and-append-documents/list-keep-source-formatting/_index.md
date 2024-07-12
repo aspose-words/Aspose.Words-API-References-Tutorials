@@ -2,76 +2,87 @@
 title: Liste Conserver le formatage source
 linktitle: Liste Conserver le formatage source
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment conserver le formatage des listes lors de la jointure et de l'ajout de documents Word à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment fusionner des documents Word tout en préservant le formatage à l'aide d'Aspose.Words pour .NET. Ce didacticiel fournit des conseils étape par étape pour une fusion transparente de documents.
 type: docs
 weight: 10
 url: /fr/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## Introduction
 
-Ce didacticiel vous guidera tout au long du processus d'utilisation de la fonctionnalité List Keep Source Formatting d'Aspose.Words for .NET. Cette fonctionnalité vous permet de joindre et d'ajouter des documents Word tout en préservant la mise en forme source des listes.
+Dans ce didacticiel, nous explorerons comment utiliser Aspose.Words for .NET pour fusionner des documents tout en préservant le formatage source. Cette fonctionnalité est essentielle pour les scénarios où le maintien de l’apparence originale des documents est crucial.
 
 ## Conditions préalables
 
-Avant de commencer, assurez-vous d'avoir les éléments suivants :
+Avant de continuer, assurez-vous de disposer des prérequis suivants :
 
-1. Aspose.Words pour .NET installé. Vous pouvez le télécharger depuis le site Web Aspose ou l'installer via NuGet.
-2. Visual Studio ou tout autre environnement de développement C#.
+- Visual Studio installé sur votre ordinateur.
+-  Aspose.Words pour .NET installé. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+- Familiarité de base avec la programmation C# et l'environnement .NET.
 
-## Étape 1 : initialiser les répertoires de documents
+## Importer des espaces de noms
 
- Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Modifier la valeur du`dataDir` variable au chemin où se trouvent vos documents.
+Tout d’abord, importez les espaces de noms nécessaires dans votre projet C# :
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## Étape 2 : Charger les documents source et de destination
+## Étape 1 : Configurez votre projet
 
-Ensuite, vous devez charger les documents source et de destination à l'aide du Aspose.Words`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
+Commencez par créer un nouveau projet C# dans Visual Studio. Assurez-vous qu'Aspose.Words for .NET est référencé dans votre projet. Sinon, vous pouvez l'ajouter via NuGet Package Manager.
+
+## Étape 2 : initialiser les variables du document
 
 ```csharp
+// Chemin d'accès à votre répertoire de documents
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Charger les documents source et destination
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Étape 3 : Définir le document source pour qu'il circule en continu
+## Étape 3 : Configurer les paramètres de section
 
- Pour garantir que le contenu du document source circule en continu lorsqu'il est ajouté au document de destination, vous devez définir le`SectionStart` propriété de la première section du document source à`SectionStart.Continuous`.
+Pour maintenir un flux continu dans le document fusionné, ajustez le début de la section :
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Étape 4 : Ajouter le document source au document de destination
+## Étape 4 : Fusionner des documents
 
- Maintenant, vous pouvez ajouter le document source au document de destination à l'aide du`AppendDocument` méthode du`Document` classe. Le`ImportFormatMode.KeepSourceFormatting`Le paramètre garantit que le formatage source, y compris le formatage des listes, est préservé lors de l’opération d’ajout.
+Ajouter le contenu du document source (`srcDoc`) au document de destination (`dstDoc`) tout en conservant la mise en forme d'origine :
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Étape 5 : Enregistrez le document final
+## Étape 5 : Enregistrez le document fusionné
 
- Enfin, enregistrez le document fusionné avec la fonctionnalité List Keep Source Formatting activée à l'aide de l'option`Save` méthode du`Document` classe.
+Enfin, enregistrez le document fusionné dans le répertoire spécifié :
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### Exemple de code source pour le formatage de la source List Keep à l'aide d'Aspose.Words pour .NET 
+## Conclusion
 
-Voici le code source complet de la fonctionnalité List Keep Source Formatting en C# à l’aide d’Aspose.Words for .NET :
+En conclusion, fusionner des documents tout en préservant leur mise en forme d'origine est simple avec Aspose.Words pour .NET. Ce didacticiel vous a guidé tout au long du processus, garantissant que votre document fusionné conserve la mise en page et le style du document source.
 
-```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Ajoutez le contenu du document pour qu’il circule en continu.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### Que faire si mes documents ont des styles différents ?
+Aspose.Words gère différents styles avec élégance, en préservant le plus fidèlement possible la mise en forme d'origine.
 
-C'est ça! Vous avez implémenté avec succès la fonctionnalité List Keep Source Formatting à l’aide d’Aspose.Words for .NET. Le document final contiendra le contenu fusionné avec la mise en forme de liste du document source conservée.
+### Puis-je fusionner des documents de formats différents ?
+Oui, Aspose.Words prend en charge la fusion de documents de différents formats, notamment DOCX, DOC, RTF et autres.
+
+### Aspose.Words est-il compatible avec .NET Core ?
+Oui, Aspose.Words prend entièrement en charge .NET Core, permettant le développement multiplateforme.
+
+### Comment puis-je gérer efficacement des documents volumineux ?
+Aspose.Words fournit des API efficaces pour la manipulation de documents, optimisées pour les performances même avec des documents volumineux.
+
+### Où puis-je trouver plus d’exemples et de documentation ?
+ Vous pouvez explorer plus d'exemples et une documentation détaillée sur[Documentation Aspose.Words](https://reference.aspose.com/words/net/).

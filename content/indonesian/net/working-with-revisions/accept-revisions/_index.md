@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Solusi 2:
 
- J: Anda juga dapat mengaktifkan pelacakan revisi menggunakan`Document` konstruktor yang menerima`trackRevisions` Dan`author` parameter.
+ J: Anda juga dapat mengaktifkan pelacakan revisi menggunakan`Document` konstruktor yang menerima`trackRevisions`Dan`author` parameter.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

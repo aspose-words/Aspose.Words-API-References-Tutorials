@@ -2,109 +2,110 @@
 title: Podepisování zašifrovaného dokumentu Word
 linktitle: Podepisování zašifrovaného dokumentu Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se digitálně podepisovat zašifrovaný textový dokument pomocí Aspose.Words for .NET.
+description: Naučte se podepisovat zašifrované dokumenty Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem. Ideální pro vývojáře.
 type: docs
 weight: 10
 url: /cs/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
-tomto tutoriálu vás provedeme kroky k použití funkce podepisování zašifrovaného wordového dokumentu pomocí Aspose.Words for .NET. Tato funkce umožňuje digitálně podepsat dokument aplikace Word, který je zašifrován pomocí dešifrovacího hesla. Postupujte podle následujících kroků:
+## Úvod
 
-## Krok 1: Nastavení možností podpisu
+Přemýšleli jste někdy, jak podepsat zašifrovaný dokument aplikace Word? Dnes si tento proces projdeme pomocí Aspose.Words for .NET. Připoutejte se a připravte se na podrobný, poutavý a zábavný tutoriál!
 
-Vytvořte instanci třídy SignOptions a nastavte heslo pro dešifrování:
+## Předpoklady
+
+Než se ponoříte do kódu, ujistěte se, že máte vše, co potřebujete:
+
+1.  Aspose.Words for .NET: Stáhněte a nainstalujte z[tady](https://releases.aspose.com/words/net/).
+2. Visual Studio: Ujistěte se, že jej máte nainstalovaný.
+3. Platný certifikát: Budete potřebovat soubor certifikátu .pfx.
+4. Základní znalost C#: Pochopení základů učiní tento tutoriál plynulejším.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Ty jsou klíčové pro přístup k funkcím Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionpassword" };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.DigitalSignatures;
 ```
 
-Ujistěte se, že jste pro svůj zašifrovaný dokument uvedli správné dešifrovací heslo.
+Nyní si tento proces rozdělíme do jednoduchých, zvládnutelných kroků.
 
-## Krok 2: Načtení certifikátu
+## Krok 1: Nastavení vašeho projektu
 
-Začněte načtením podpisového certifikátu pomocí třídy CertificateHolder:
+Nejprve si nastavte projekt sady Visual Studio. Otevřete Visual Studio a vytvořte novou C# Console Application. Pojmenujte to nějak popisně jako „SignEncryptedWordDoc“.
+
+## Krok 2: Přidání Aspose.Words do vašeho projektu
+
+Dále musíme do vašeho projektu přidat Aspose.Words. Existuje několik způsobů, jak to udělat, ale pomocí NuGet je nejjednodušší. 
+
+1. Otevřete konzolu Správce balíčků NuGet z Nástroje > Správce balíčků NuGet > Konzola správce balíčků.
+2. Spusťte následující příkaz:
+
+```powershell
+Install-Package Aspose.Words
+```
+
+## Krok 3: Příprava adresáře dokumentů
+
+Budete potřebovat adresář pro uložení dokumentů a certifikátů aplikace Word. Pojďme si jeden vytvořit.
+
+1. Vytvořte adresář v počítači. Pro zjednodušení tomu říkejme „DocumentDirectory“.
+2. Do tohoto adresáře umístěte svůj dokument aplikace Word (např. „Document.docx“) a certifikát .pfx (např. „morzal.pfx“).
+
+## Krok 4: Napsání kódu
+
+ Nyní se pojďme ponořit do kódu. Otevři tvůj`Program.cs` a začněte nastavením cesty k adresáři dokumentů a inicializací souboru`SignOptions` s dešifrovacím heslem.
+
+```csharp
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
+```
+
+## Krok 5: Načtení certifikátu
+
+ Dále načtěte svůj certifikát pomocí`CertificateHolder`třída. To bude vyžadovat cestu k vašemu souboru .pfx a heslo certifikátu.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Ujistěte se, že jste zadali správnou cestu k certifikátu a související heslo.
+## Krok 6: Podepsání dokumentu
 
-## Krok 3: Podepsání zašifrovaného dokumentu
-
-K podepsání zašifrovaného dokumentu použijte třídu DigitalSignatureUtil:
+ Nakonec použijte`DigitalSignatureUtil.Sign` způsob podepsání zašifrovaného dokumentu aplikace Word. Tato metoda vyžaduje vstupní soubor, výstupní soubor, držitel certifikátu a možnosti podpisu.
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-	certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Document.docx",
+    dataDir + "DigitallySignedDocument.docx",
+    certHolder,
+    signOptions);
 ```
 
-Nezapomeňte zadat správné cesty pro zašifrovaný dokument, podepsaný dokument a certifikát.
+## Krok 7: Spuštění kódu
 
-### Příklad zdrojového kódu pro podepisování zašifrovaného dokumentu pomocí Aspose.Words for .NET
-
-Zde je úplný zdrojový kód pro podepsání zašifrovaného dokumentu pomocí Aspose.Words pro .NET:
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-		certHolder, signOptions);
-	
-
-```
-Pomocí těchto kroků můžete snadno podepsat zašifrovaný dokument aplikace Word pomocí Aspose.Words for .NET.
+Uložte soubor a spusťte projekt. Pokud je vše správně nastaveno, měli byste vidět svůj podepsaný dokument v zadaném adresáři.
 
 ## Závěr
 
-V tomto tutoriálu jsme prozkoumali proces podepisování zašifrovaného dokumentu Word pomocí Aspose.Words for .NET. Poskytnutím dešifrovacího hesla a podpisového certifikátu můžeme k zašifrovanému dokumentu přidat digitální podpis. Podepisování zašifrovaných dokumentů zajišťuje jejich pravost a integritu a poskytuje další vrstvu zabezpečení. Aspose.Words for .NET vám umožňuje podepisovat zašifrované dokumenty a udržovat bezpečnost a důvěryhodnost vašich souborů aplikace Word.
+A tady to máte! Úspěšně jste podepsali zašifrovaný dokument aplikace Word pomocí Aspose.Words for .NET. S touto výkonnou knihovnou se digitální podepisování stává hračkou, a to i pro šifrované soubory. Šťastné kódování!
 
-### FAQ
+## FAQ
 
-#### Otázka: Co je podepisování dokumentů v Aspose.Words pro .NET?
+### Mohu použít jiný typ certifikátu?
+Ano, Aspose.Words podporuje různé typy certifikátů, pokud jsou ve správném formátu.
 
-Odpověď: Podepisování dokumentů v Aspose.Words for .NET se týká procesu digitálního podepisování dokumentu aplikace Word, aby byla zajištěna jeho autenticita, integrita a neodmítnutí. Zahrnuje přidání digitálního podpisu do dokumentu pomocí certifikátu.
+### Je možné podepsat více dokumentů najednou?
+Absolutně! Můžete procházet kolekcí dokumentů a každý z nich programově podepsat.
 
-#### Otázka: Co je zašifrovaný dokument aplikace Word?
+### Co když zapomenu heslo pro dešifrování?
+Bohužel bez dešifrovacího hesla nebudete moci dokument podepsat.
 
-Odpověď: Šifrovaný dokument aplikace Word je dokument, který byl zašifrován pomocí hesla. Šifrování je bezpečnostní opatření, které chrání obsah dokumentu tím, že jej zašifruje a učiní jej nečitelným bez správného dešifrovacího hesla.
+### Mohu k dokumentu přidat viditelný podpis?
+Ano, Aspose.Words vám umožňuje přidávat také viditelné digitální podpisy.
 
-#### Otázka: Jak mohu podepsat zašifrovaný dokument aplikace Word pomocí Aspose.Words for .NET?
-
-Odpověď: Chcete-li podepsat zašifrovaný dokument aplikace Word pomocí Aspose.Words for .NET, musíte spolu s podpisovým certifikátem poskytnout dešifrovací heslo. Následuj tyto kroky:
-1.  Nastavte heslo pro dešifrování v`SignOptions` objekt.
-2.  Načtěte podpisový certifikát pomocí`CertificateHolder` třída.
-3.  Použijte`DigitalSignatureUtil.Sign` způsob podepsání zašifrovaného dokumentu s uvedením nezbytných parametrů.
-
-#### Otázka: Jaký je účel podepsání zašifrovaného dokumentu?
-
-Odpověď: Podepsání zašifrovaného dokumentu pomocí Aspose.Words for .NET vám umožňuje přidat k dokumentu digitální podpis, i když je zašifrován. To poskytuje další vrstvu zabezpečení a zajišťuje pravost a integritu šifrovaného obsahu. Umožňuje příjemcům ověřit původ dokumentu a odhalit jakoukoli manipulaci.
-
-#### Otázka: Mohu podepsat zašifrovaný dokument bez zadání hesla pro dešifrování?
-
-Odpověď: Ne, k podepsání zašifrovaného dokumentu musíte zadat správné dešifrovací heslo. Pro přístup a úpravu zašifrovaného obsahu dokumentu před použitím digitálního podpisu je vyžadováno dešifrovací heslo.
-
-#### Otázka: Mohu podepsat zašifrovaný dokument aplikace Word pomocí jakéhokoli certifikátu?
-
-Odpověď: K podepsání zašifrovaného dokumentu aplikace Word pomocí Aspose.Words for .NET potřebujete platný certifikát X.509. Certifikát lze získat od důvěryhodné certifikační autority (CA) nebo lze pro testovací účely použít certifikát s vlastním podpisem.
-
-#### Otázka: Mohu podepsat více zašifrovaných dokumentů aplikace Word pomocí stejného certifikátu?
-
- Odpověď: Ano, pomocí stejného certifikátu můžete podepsat více zašifrovaných dokumentů aplikace Word. Jakmile načtete certifikát pomocí`CertificateHolder` třídy, můžete jej znovu použít k podepsání více zašifrovaných dokumentů.
-
-#### Otázka: Mohu ověřit digitální podpis podepsaného zašifrovaného dokumentu?
-
- Odpověď: Ano, Aspose.Words for .NET poskytuje funkce pro ověření digitálního podpisu podepsaného šifrovaného dokumentu. Můžete použít`DigitalSignatureUtil.Verify` způsob kontroly platnosti a pravosti digitálního podpisu.
-
-#### Otázka: Jaký formát souboru Aspose.Words for .NET podporuje pro podepisování šifrovaných dokumentů?
-
- Odpověď: Aspose.Words for .NET podporuje podepisování zašifrovaných dokumentů aplikace Word ve formátu souboru DOCX. Zašifrované soubory DOCX můžete podepsat pomocí`DigitalSignatureUtil.Sign` spolu s nezbytným dešifrovacím heslem a certifikátem.
-
-#### Otázka: Jak podepsání zašifrovaného dokumentu ovlivňuje šifrování?
-
-Odpověď: Podepsání zašifrovaného dokumentu pomocí Aspose.Words for .NET neovlivní šifrování dokumentu. Šifrování zůstává nedotčeno a k zašifrovanému obsahu je přidán digitální podpis. Digitální podpis poskytuje další zabezpečení a ověřování, aniž by došlo k ohrožení šifrování použitého na dokument.
+### Existuje způsob, jak ověřit podpis?
+ Ano, můžete použít`DigitalSignatureUtil.Verify` způsob ověřování podpisů.

@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Szúrja be az első sor első celláját
+//Szúrja be az első sor első celláját
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Itt a dokumentumkészítőt használjuk két fejlécsorral és több adatsorral rendelkező táblázat összeállítására. A`RowFormat.HeadingFormat`paraméterek a fejlécsorok megjelölésére szolgálnak, amelyeket a következő oldalakon meg kell ismételni.
+ Itt a dokumentumkészítőt használjuk két fejlécsorral és több adatsorral rendelkező táblázat összeállítására. A`RowFormat.HeadingFormat` paraméterek a fejlécsorok megjelölésére szolgálnak, amelyeket a következő oldalakon meg kell ismételni.
 
 ## 4. lépés: Mentse el a módosított dokumentumot
 Végül az USA

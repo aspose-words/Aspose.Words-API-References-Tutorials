@@ -2,76 +2,87 @@
 title: Listázza a Forrás formázásának megtartását
 linktitle: Listázza a Forrás formázásának megtartását
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan őrizheti meg a lista formázását Word-dokumentumok Aspose.Words for .NET segítségével történő egyesítése és hozzáfűzése közben.
+description: Ismerje meg, hogyan egyesíthet Word dokumentumokat a formázás megőrzése mellett az Aspose.Words for .NET használatával. Ez az oktatóanyag lépésről lépésre nyújt útmutatást a zökkenőmentes dokumentumegyesítéshez.
 type: docs
 weight: 10
 url: /hu/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## Bevezetés
 
-Ez az oktatóanyag végigvezeti az Aspose.Words for .NET List Keep Source Formatting szolgáltatásának használatán. Ez a funkció lehetővé teszi a Word-dokumentumok összekapcsolását és hozzáfűzését, miközben megőrzi a listák forrásformázását.
+Ebben az oktatóanyagban megvizsgáljuk, hogyan használható az Aspose.Words for .NET a dokumentumok egyesítésére a forrás formázásának megőrzése mellett. Ez a képesség elengedhetetlen olyan esetekben, amikor a dokumentumok eredeti megjelenésének megőrzése kulcsfontosságú.
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
+Mielőtt folytatná, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 
-1. Az Aspose.Words for .NET telepítve van. Letöltheti az Aspose webhelyéről, vagy telepítheti a NuGet segítségével.
-2. Visual Studio vagy bármely más C# fejlesztői környezet.
+- A Visual Studio telepítve van a gépedre.
+-  Az Aspose.Words for .NET telepítve van. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- C# programozás és .NET környezet alapszintű ismerete.
 
-## 1. lépés: Inicializálja a dokumentumkönyvtárakat
+## Névterek importálása
 
- Először is be kell állítania a dokumentumkönyvtár elérési útját. Módosítsa az értékét`dataDir` változó ahhoz az elérési úthoz, ahol a dokumentumok találhatók.
+Először importálja a szükséges névtereket a C# projektbe:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## 2. lépés: Töltse be a forrás- és céldokumentumot
+## 1. lépés: Állítsa be projektjét
 
-Ezután be kell töltenie a forrás- és céldokumentumot az Aspose.Words használatával`Document` osztály. Frissítse a fájlneveket a`Document` konstruktor a dokumentumnevek szerint.
+Kezdje egy új C#-projekt létrehozásával a Visual Studióban. Győződjön meg arról, hogy az Aspose.Words for .NET fájlra hivatkozik a projektben. Ha nem, akkor hozzáadhatja a NuGet Package Manager segítségével.
+
+## 2. lépés: Inicializálja a dokumentumváltozókat
 
 ```csharp
+// A dokumentumkönyvtár elérési útja
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Forrás- és céldokumentumok betöltése
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## 3. lépés: Állítsa a forrásdokumentumot Folyamatos áramlásra
+## 3. lépés: Konfigurálja a szakaszbeállításokat
 
- Annak érdekében, hogy a forrásdokumentumból származó tartalom folyamatosan folyjon a céldokumentumhoz fűzve, be kell állítania a`SectionStart` a forrásdokumentum első szakaszának tulajdonsága`SectionStart.Continuous`.
+folyamatos áramlás fenntartásához az egyesített dokumentumban állítsa be a szakasz elejét:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## 4. lépés: Csatolja a forrásdokumentumot a céldokumentumhoz
+## 4. lépés: Egyesítse a dokumentumokat
 
- Most hozzáfűzheti a forrásdokumentumot a céldokumentumhoz a segítségével`AppendDocument` módszere a`Document` osztály. A`ImportFormatMode.KeepSourceFormatting`paraméter biztosítja, hogy a forrás formázása, beleértve a listák formázását is, megmaradjon az append művelet során.
+Csatolja a forrásdokumentum tartalmát (`srcDoc`) a rendeltetési okmányhoz (`dstDoc`) az eredeti formázás megtartása mellett:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 5. lépés: Mentse el a záródokumentumot
+## 5. lépés: Mentse el az egyesített dokumentumot
 
- Végül mentse el az egyesített dokumentumot a Lista Forrásformázás megőrzése funkcióval a`Save` módszere a`Document` osztály.
+Végül mentse az egyesített dokumentumot a megadott könyvtárba:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### Példa forráskódra a List Keep Source formázáshoz az Aspose.Words for .NET használatával 
+## Következtetés
 
-Íme a List Keep Source Formatting szolgáltatás teljes forráskódja C# nyelven az Aspose.Words for .NET használatával:
+Összefoglalva, az Aspose.Words for .NET segítségével a dokumentumok egyesítése az eredeti formázás megőrzése mellett egyszerű. Ez az oktatóanyag végigvezette a folyamaton, biztosítva, hogy az egyesített dokumentum megtartsa a forrásdokumentum elrendezését és stílusát.
 
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## GYIK
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Add hozzá a dokumentum tartalmát, hogy az folyamatosan folyjon.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### Mi van, ha a dokumentumaim eltérő stílusúak?
+Az Aspose.Words kecsesen kezeli a különböző stílusokat, a lehető legpontosabban megőrizve az eredeti formázást.
 
-Ez az! Sikeresen implementálta a List Keep Source Formatting szolgáltatást az Aspose.Words for .NET használatával. A végső dokumentum az összevont tartalmat fogja tartalmazni, a forrásdokumentum listaformátumának megőrzésével.
+### Összevonhatok különböző formátumú dokumentumokat?
+Igen, az Aspose.Words támogatja a különböző formátumú dokumentumok egyesítését, beleértve a DOCX, DOC, RTF és más formátumokat.
+
+### Az Aspose.Words kompatibilis a .NET Core-al?
+Igen, az Aspose.Words teljes mértékben támogatja a .NET Core-t, lehetővé téve a platformok közötti fejlesztést.
+
+### Hogyan kezelhetem hatékonyan a nagyméretű dokumentumokat?
+Az Aspose.Words hatékony API-kat biztosít a dokumentumkezeléshez, még nagy dokumentumok esetén is optimalizálva.
+
+### Hol találok további példákat és dokumentációt?
+ További példákat és részletes dokumentációt találhat a címen[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/).

@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 ### 经常问的问题
 
 #### 问：什么是禁用 PDF 文档中的 Windows 字体嵌入？为什么这很重要？
-答：禁用 PDF 文档中的 Windows 字体嵌入是阻止 Windows 字体包含在生成的 PDF 文件中的过程。通过删除嵌入的 Windows 字体数据，可以减小 PDF 文件的大小。这对于减小 PDF 文件的大小非常重要，可以使它们更易于存储、共享和更快地传输。
+答：禁用 PDF 文档中的 Windows 字体嵌入是阻止 Windows 字体包含在生成的 PDF 文件中的过程。通过删除嵌入的 Windows 字体数据，可以减小 PDF 文件的大小。这对于减小 PDF 文件的大小非常重要，从而使它们更易于存储、共享和更快地传输。
 
 #### 问：如何使用 Aspose.Words for .NET 禁用 PDF 文档中的 Windows 字体嵌入？
 答：要使用 Aspose.Words for .NET 禁用在 PDF 文档中嵌入 Windows 字体，请按照以下步骤操作：
@@ -92,4 +92,4 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 
 外观和格式丢失：如果文档中指定的 Windows 字体在打开 PDF 的系统上不可用，则将使用替代字体，这可能会导致外观和格式不正确，形状与预期不同。
 
-可读性问题：如果使用的替代字体不如原始字体可读，则可能会影响 PDF 文档中文本的可读性。
+可读性问题：如果使用的替代字体不如原始字体可读性，则可能会影响 PDF 文档中文本的可读性。

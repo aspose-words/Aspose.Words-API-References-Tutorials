@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Tablolara Üstbilgi ve Altbilgi Ekleme:
 
- Tablolar, bağlam veya ek bilgi sağlayan üstbilgi ve altbilgilere sahip olmaktan yararlanabilir. kullanarak tablolara üstbilgi ve altbilgi ekleyebilirsiniz.`Table.title` Ve`Table.description` özellikler.
+ Tablolar, bağlam veya ek bilgi sağlayan üstbilgi ve altbilgilere sahip olmaktan yararlanabilir. kullanarak tablolara üstbilgi ve altbilgi ekleyebilirsiniz.`Table.title`Ve`Table.description` özellikler.
 
 ```python
 # Set table title (header)

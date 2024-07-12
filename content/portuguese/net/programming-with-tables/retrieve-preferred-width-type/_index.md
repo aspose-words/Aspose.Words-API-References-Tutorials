@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Ative o ajuste automático da mesa
 table. AllowAutoFit = true;
 
-// Recuperar a primeira célula da primeira linha
+//Recuperar a primeira célula da primeira linha
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Recuperar o tipo de largura preferido e seu valor
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-Aqui usamos o documento para buscar a primeira tabela, depois habilitamos o ajuste automático da tabela com o`AllowAutoFit` propriedade. Em seguida, recuperamos a primeira célula da primeira linha da tabela. A partir desta célula, podemos recuperar o tipo de largura preferido com o`PreferredWidth.Type` propriedade e seu valor com o`PreferredWidth.Value` propriedade.
+ Aqui usamos o documento para buscar a primeira tabela, depois habilitamos o ajuste automático da tabela com o`AllowAutoFit` propriedade. Em seguida, recuperamos a primeira célula da primeira linha da tabela. A partir desta célula, podemos recuperar o tipo de largura preferido com o`PreferredWidth.Type` propriedade e seu valor com o`PreferredWidth.Value` propriedade.
 
 ### Exemplo de código-fonte para recuperar tipo de largura preferencial usando Aspose.Words for .NET 
 

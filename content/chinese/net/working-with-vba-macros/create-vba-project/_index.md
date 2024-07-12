@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 步骤 2：创建新的 VBA 文档和项目
-接下来，我们将通过实例化`Document`通过实例化`VbaProject`班级。
+接下来，我们将通过实例化创建一个新文档`Document`通过实例化`VbaProject`班级。
 
 ```csharp
 //创建新文档
@@ -102,4 +102,4 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 #### 问：我可以向 Word 文档中的 VBA 项目添加多个 VBA 模块吗？
 
-答：是的，您可以通过实例化多个 VBA 模块，将多个 VBA 模块添加到 Word 文档中的 VBA 项目中`VbaModule`对象并将它们添加到`Modules`收集`VbaProject`对象。这样，您可以将 VBA 代码组织到不同的模块中，以便更好地管理和重复使用。
+答：是的，您可以通过实例化多个 VBA 模块将多个 VBA 模块添加到 Word 文档中的 VBA 项目中`VbaModule`对象并将它们添加到`Modules`收集`VbaProject`对象。这样，您可以将 VBA 代码组织到不同的模块中，以便更好地管理和重复使用。

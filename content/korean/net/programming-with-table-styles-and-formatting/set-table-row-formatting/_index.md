@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## 7단계: 표 완성 및 문서 저장
 ~ 안에
 
- 마지막으로 다음을 사용하여 테이블 생성을 마칩니다.`EndRow()` 그리고`EndTable()` 방법을 사용하면 수정된 문서를 파일에 저장합니다.
+ 마지막으로 다음을 사용하여 테이블 생성을 마칩니다.`EndRow()`그리고`EndTable()` 방법을 사용하면 수정된 문서를 파일에 저장합니다.
 
 ```csharp
 builder. EndRow();

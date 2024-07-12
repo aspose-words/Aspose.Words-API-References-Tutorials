@@ -44,11 +44,11 @@ NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 
 foreach (Paragraph para in paragraphs)
 {
-     // Wenn der Absatz einen Seitenumbruch hat, dann löschen Sie ihn
+     // Wenn der Absatz einen Seitenumbruch hat, dann lösche ihn
      if (para.ParagraphFormat.PageBreakBefore)
          para.ParagraphFormat.PageBreakBefore = false;
 
-     // Alle Absätze auf Seitenumbrüche prüfen und diese entfernen
+     // Alle Absätze im Absatz auf Seitenumbrüche prüfen und diese entfernen
      foreach(Run run in para.Runs)
      {
          if (run.Text.Contains(ControlChar.PageBreak))

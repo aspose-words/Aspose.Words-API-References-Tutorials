@@ -91,4 +91,4 @@ A: SDT(StructuredDocumentTags)는 Word 문서의 복잡한 콘텐츠와 컨트�
 
 #### Q: 다른 컨트롤 유형을 기본 옵션으로 사용할 수 있나요?
 
- A: 네, 그 외에는`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET은 다음과 같은 다른 컨트롤 유형을 지원합니다.`HtmlControlType.ContentControl` 그리고`HtmlControlType.CustomXmlMarkup`.
+ A: 네, 그 외에는`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET은 다음과 같은 다른 컨트롤 유형을 지원합니다.`HtmlControlType.ContentControl`그리고`HtmlControlType.CustomXmlMarkup`.

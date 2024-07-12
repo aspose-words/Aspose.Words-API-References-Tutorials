@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Numeração de páginas
 
- Você pode incluir números de página em seus cabeçalhos e rodapés usando campos como`PAGE` e`NUMPAGES`. Esses campos são atualizados automaticamente conforme você adiciona ou remove páginas.
+ Você pode incluir números de página em seus cabeçalhos e rodapés usando campos como`PAGE`e`NUMPAGES`. Esses campos são atualizados automaticamente conforme você adiciona ou remove páginas.
 
 ## 9. Informações de direitos autorais em rodapés
 
@@ -177,7 +177,7 @@ Depois de criar e personalizar seu documento, não esqueça de salvá-lo usando 
         pageSetup.setDifferentFirstPageHeaderFooter(false);
         // Esta seção exibe cabeçalhos/rodapés da seção anterior
         // por padrão, chame currentSection.HeadersFooters.LinkToPrevious(false) para cancelar a largura desta página
-        // é diferente para a nova seção e, portanto, precisamos definir larguras de célula diferentes para uma tabela de rodapé.
+        // é diferente para a nova seção e, portanto, precisamos definir larguras de células diferentes para uma tabela de rodapé.
         currentSection.getHeadersFooters().linkToPrevious(false);
         // Se quisermos usar o conjunto de cabeçalho/rodapé já existente para esta seção.
         // Mas com algumas pequenas modificações, pode ser conveniente copiar cabeçalhos/rodapés

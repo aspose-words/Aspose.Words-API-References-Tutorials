@@ -97,7 +97,7 @@ string text = doc.Range.Text;
 
 #### Q：我可以使用 Aspose.Words for .NET 中的「範圍取得 Word 文件中的文字」功能從 Word 文件中提取特定類型的內容（例如段落、部分或表格）嗎？
 
-答：是的，您可以使用 Aspose.Words for .NET 中的「Ranges Get Text In Word Document」功能從 Word 文件中提取特定類型的內容，例如段落、部分或表格。透過存取文件結構中所需的範圍並使用`Text`屬性，您可以根據需要提取和使用特定的內容類型。
+答：是的，您可以使用 Aspose.Words for .NET 中的「範圍取得 Word 文件中的文字」功能從 Word 文件中提取特定類型的內容，例如段落、部分或表格。透過存取文件結構中所需的範圍並使用`Text`屬性，您可以根據需要提取和使用特定的內容類型。
 
 #### Q：使用 Aspose.Words for .NET 從範圍中提取文字時，如何處理格式和結構？
 
@@ -105,7 +105,7 @@ string text = doc.Range.Text;
 
 #### Q：我可以使用 Aspose.Words for .NET 僅提取一定範圍內文字的特定部分嗎？
 
-答：是的，您可以使用 Aspose.Words for .NET 僅提取一定範圍內文字的特定部分。存取所需的範圍後，您可以使用標準字串操作技術來操作檢索到的文本，以提取特定部分或根據您的要求應用自訂過濾。
+答：是的，您可以使用 Aspose.Words for .NET 僅提取一定範圍內文字的特定部分。存取所需範圍後，您可以使用標準字串操作技術來操作檢索到的文本，以提取特定部分或根據您的要求應用自訂過濾。
 
 #### Q：我可以使用 Aspose.Words for .NET 從受密碼保護或加密的 Word 文件中提取文字嗎？
 

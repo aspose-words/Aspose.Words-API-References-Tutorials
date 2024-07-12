@@ -17,7 +17,7 @@ Antes de entrarmos no âmago da questão, vamos ter certeza de que você tem tud
 
 1.  Aspose.Words for .NET: Você precisa desta biblioteca. Se você ainda não tem, pegue-o em[aqui](https://releases.aspose.com/words/net/).
 2.  Uma licença: você precisará de uma licença válida para desbloquear todo o potencial do Aspose.Words. Você pode comprar um[aqui](https://purchase.aspose.com/buy) ou obtenha uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
-3. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+3. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 4. Conhecimento básico de C#: Não se preocupe, você não precisa ser um profissional, apenas alguns conhecimentos básicos bastarão.
 
 ## Importar namespaces
@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Etapa 3: carregue seus documentos
 
-Tudo bem, é hora de carregar os documentos que deseja comparar. Você precisará dos caminhos para esses documentos. Vamos supor que você tenha dois documentos:`DocumentA.docx` e`DocumentB.docx`.
+Tudo bem, é hora de carregar os documentos que deseja comparar. Você precisará dos caminhos para esses documentos. Vamos supor que você tenha dois documentos:`DocumentA.docx`e`DocumentB.docx`.
 
 ```csharp
 // O caminho para o diretório de documentos.

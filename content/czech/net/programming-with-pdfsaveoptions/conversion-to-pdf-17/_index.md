@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/conversion-to-pdf-17/
 ---
 
-tomto tutoriálu vás provedeme kroky, jak převést dokument aplikace Word do formátu PDF 1.7 pomocí Aspose.Words for .NET. Převod do PDF 1.7 vám umožňuje generovat soubory PDF, které odpovídají standardu PDF 1.7. Postupujte podle následujících kroků:
+V tomto tutoriálu vás provedeme kroky, jak převést dokument aplikace Word do formátu PDF 1.7 pomocí Aspose.Words for .NET. Převod do PDF 1.7 vám umožňuje generovat soubory PDF, které odpovídají standardu PDF 1.7. Postupujte podle následujících kroků:
 
 ## Krok 1: Načtení dokumentu
 

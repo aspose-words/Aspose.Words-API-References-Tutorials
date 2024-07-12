@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Positionnement des zones de texte
 
- Contrôler la position des zones de texte est crucial pour obtenir la mise en page souhaitée. Vous pouvez définir la position à l'aide du`left` et`top` propriétés. Par exemple:
+ Contrôler la position des zones de texte est crucial pour obtenir la mise en page souhaitée. Vous pouvez définir la position à l'aide du`left`et`top` propriétés. Par exemple:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ Dans ce guide, nous avons exploré le processus d'amélioration du contenu visue
 
 ### Comment redimensionner une zone de texte ?
 
- Pour redimensionner une zone de texte, vous pouvez ajuster ses propriétés de largeur et de hauteur à l'aide de l'outil`width` et`height` les attributs.
+ Pour redimensionner une zone de texte, vous pouvez ajuster ses propriétés de largeur et de hauteur à l'aide de l'outil`width`et`height` les attributs.
 
 ### Puis-je faire pivoter une zone de texte ?
 

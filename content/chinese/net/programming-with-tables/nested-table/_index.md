@@ -45,7 +45,7 @@ builder.Writeln("Cell 2 of the outer table");
 //外表的终止
 builder. EndTable();
 
-//移至外表的第一个单元格
+//移动到外表的第一个单元格
 builder.MoveTo(cell.FirstParagraph);
 
 //构建内表

@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- I det här steget kommer vi åt`Theme` föremålet för`Document`objekt för att hämta dokumenttemat. Därefter kan vi ändra temaegenskaper som sekundära teckensnitt (`MinorFonts.Latin`) och färger (`Colors.Hyperlink`).
+ det här steget kommer vi åt`Theme` föremålet för`Document` objekt för att hämta dokumenttemat. Därefter kan vi ändra temaegenskaper som sekundära teckensnitt (`MinorFonts.Latin`) och färger (`Colors.Hyperlink`).
 
 ## Steg 4: Spara dokumentet
 

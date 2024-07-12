@@ -19,7 +19,7 @@ Aspose.Words for .NET 教程“使用形状进行文字处理”提供了有关�
 | [添加组形状](./add-group-shape/) | 了解如何使用 Aspose.Words for .NET 将具有多个形状的组形状添加到 Word 文档。 |
 | [刀片形状](./insert-shape/) | 了解如何使用 Aspose.Words for .NET 将形状插入 Word 文档。 |
 | [长宽比已锁定](./aspect-ratio-locked/) | 了解如何使用 Aspose.Words for .NET 锁定或解锁 Word 文档中形状的纵横比。 |
-| [单元格布局](./layout-in-cell/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档的表格单元格内布局形状。 |
+| [单元格布局](./layout-in-cell/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中的表格单元格内布局形状。 |
 | [添加角剪断](./add-corners-snipped/) | 了解如何使用 Aspose.Words for .NET 将带有角剪切的形状添加到 Word 文档。 |
 | [获取实际形状边界点](./get-actual-shape-bounds-points/) | 了解如何使用 Aspose.Words for .NET 检索 Word 文档中形状的实际边界（以点为单位，测量单位）。 |
 | [垂直锚](./vertical-anchor/) | 了解如何使用 Aspose.Words for .NET 中的垂直锚点功能在文档内垂直定位形状。|

@@ -65,7 +65,7 @@ builder.InsertNode(shape);
 
 #### Q: Aspose.Words에서 이미지 크기를 어떻게 조정할 수 있나요?
 
- A: Aspose.Words에서 이미지 크기를 조정하려면`Width` 그리고`Height` 의 속성`Shape` 물체.
+ A: Aspose.Words에서 이미지 크기를 조정하려면`Width`그리고`Height` 의 속성`Shape` 물체.
 
 #### Q: Aspose.Words의 이미지에 필터를 적용할 수 있나요?
 

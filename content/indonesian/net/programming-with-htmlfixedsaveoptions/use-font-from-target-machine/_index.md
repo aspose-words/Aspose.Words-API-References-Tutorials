@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Muat dokumen Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Konfigurasikan opsi pencadangan dengan fitur "Gunakan font dari mesin target".
+// Konfigurasikan opsi pencadangan dengan fitur "Gunakan font dari mesin target".
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Ubah dokumen menjadi HTML tetap

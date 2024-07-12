@@ -82,7 +82,7 @@ Zorg ervoor dat u het juiste pad en naambestand voor het uitvoerdocument opgeeft
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Deze aanroep is belangrijk om een geneste tabel binnen de eerste tabel te maken.
-	// Zonder deze aanroep worden de hieronder ingevoegde cellen aan de buitenste tabel toegevoegd.
+	//Zonder deze aanroep worden de hieronder ingevoegde cellen aan de buitenste tabel toegevoegd.
 	builder.EndTable();
 	// Ga naar de eerste cel van de buitenste tabel.
 	builder.MoveTo(cell.FirstParagraph);
@@ -96,4 +96,4 @@ Zorg ervoor dat u het juiste pad en naambestand voor het uitvoerdocument opgeeft
 ```
 
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u een geneste tabel in een Word-document kunt maken met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen en de meegeleverde C#-code te implementeren, kunt u programmatisch geneste tabellen maken in uw Word-documenten volgens uw specifieke behoeften.
+In deze zelfstudie hebben we geleerd hoe u een geneste tabel in een Word-document kunt maken met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen en de meegeleverde C#-code te implementeren, kunt u programmatisch geneste tabellen maken in uw Word-documenten op basis van uw specifieke behoeften.

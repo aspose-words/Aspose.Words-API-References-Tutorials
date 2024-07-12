@@ -17,14 +17,14 @@ Bu eğitimleri takip ederek, Word belgelerinizdeki yer imlerini etkili bir şeki
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Word Belgesindeki Yer İşaretlerine Erişim](./access-bookmarks/) | Aspose.Words for .NET kullanarak bir Word belgesindeki yer imlerine nasıl erişeceğinizi öğrenin. |
-| [Word Belgesindeki Yer İşareti Verilerini Güncelleme](./update-bookmark-data/) | .NET için Aspose.Words yer imi veri güncelleme özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz. |
-| [Word Belgesindeki Tablo Sütunlarını Yer İşaretine Ekle](./bookmark-table-columns/) | Aspose.Words for .NET'i kullanarak Word belgesinde bir tablo sütununa nasıl yer işareti koyacağınızı öğrenin. |
-| [Yer İşaretli Metni Word Belgesine Kopyala](./copy-bookmarked-text/) | Aspose.Words for .NET'i kullanarak word belgesindeki yer imi metnini başka bir belgeye nasıl kopyalayacağınızı öğrenin. |
-| [Yer İşaretli Metni Word Belgesine Ekle](./append-bookmarked-text/) | Aspose.Words for .NET kullanarak bir Word belgesindeki yer iminden nasıl metin ekleyeceğinizi öğrenin. |
-| [Word Belgesinde Yer İşareti Oluştur](./create-bookmark/) | Aspose.Words for .NET'i kullanarak word belgesinde nasıl yer imleri oluşturulacağını ve PDF'de yer imi önizleme düzeylerini nasıl belirleyeceğinizi öğrenin. |
-| [Word Belgesinde Yer İşaretlerini Gizle'yi Göster](./show-hide-bookmarks/) | Aspose.Words for .NET'i kullanarak word belgesinde belirli bir yer imini nasıl göstereceğinizi veya gizleyeceğinizi öğrenin. |
-| [Word Belgesinde Yer İşaretli İçeriği Gizle'yi Göster](./show-hide-bookmarked-content/) | Aspose.Words for .NET'i kullanarak word belgesindeki yer imi içeriğini nasıl göstereceğinizi veya gizleyeceğinizi öğrenin. |
-| [Word Belgesindeki Satır Yer İmlerini Çözme](./untangle-row-bookmarks/) | Diğer yer imlerini etkilemeden belirli satırları kaldırmak için word belgesindeki iç içe geçmiş satır yer imlerini nasıl çözeceğinizi öğrenin. |
-| [Word Belgesinde Karışmayı Çözme](./untangle/) | Aspose.Words for .NET'i kullanarak word belgesindeki bitişik tablo satırlarındaki iç içe geçmiş yer işaretlerini nasıl çözeceğinizi öğrenin. |
-| [Word Belgesinde Yer İmine Göre Satırı Sil](./delete-row-by-bookmark/) | Aspose.Words for .NET kullanarak word belgesindeki belirli bir yer imine dayalı bir tablo satırını nasıl sileceğinizi öğrenin. |
+| [Word Belgesindeki Yer İşaretlerine Erişim](./access-bookmarks/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki yer imlerine nasıl erişeceğinizi ve bunları nasıl yöneteceğinizi öğrenin. |
+| [Word Belgesindeki Yer İşareti Verilerini Güncelleme](./update-bookmark-data/) | Yer işaretlerini ve Aspose.Words .NET'i kullanarak Word belgelerinin içeriğini zahmetsizce güncelleyin. Bu kılavuz, raporları otomatikleştirme, şablonları kişiselleştirme ve daha fazlasını yapma gücünün kilidini açar. |
+| [Word Belgesindeki Tablo Sütunlarını Yer İşaretine Ekle](./bookmark-table-columns/) | Bu kapsamlı, adım adım eğitimle Aspose.Words for .NET kullanarak bir Word belgesindeki tablo sütunlarına nasıl yer işareti koyacağınızı öğrenin. |
+| [Yer İşaretli Metni Word Belgesine Kopyala](./copy-bookmarked-text/) | Aspose.Words for .NET'i kullanarak yer imlerine eklenmiş metni Word belgeleri arasında zahmetsizce kopyalayın. Bu adım adım kılavuzla nasıl yapılacağını öğrenin. |
+| [Yer İşaretli Metni Word Belgesine Ekle](./append-bookmarked-text/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak yer imli metni bir Word belgesine nasıl ekleyeceğinizi öğrenin. Geliştiriciler için mükemmel. |
+| [Word Belgesinde Yer İşareti Oluştur](./create-bookmark/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde nasıl yer imleri oluşturulacağını öğrenin. Belgelerde gezinme ve organizasyon için mükemmeldir. |
+| [Word Belgesinde Yer İşaretlerini Gizle'yi Göster](./show-hide-bookmarks/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretlerini dinamik olarak nasıl göstereceğinizi veya gizleyeceğinizi öğrenin. Geliştiriciler için mükemmel. |
+| [Word Belgesinde Yer İşaretli İçeriği Gizle'yi Göster](./show-hide-bookmarked-content/) | Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde yer imlerine eklenmiş içeriği dinamik olarak nasıl göstereceğinizi veya gizleyeceğinizi öğrenin. |
+| [Word Belgesindeki Satır Yer İmlerini Çözme](./untangle-row-bookmarks/) | Aspose.Words for .NET'i kullanarak Word belgelerinizdeki karışık satır yer işaretlerini kolaylıkla çözün. Bu kılavuz, daha temiz ve daha güvenli yer imi yönetimi süreci boyunca size yol gösterir. |
+| [Word Belgesinde Karışmayı Çözme](./untangle/) | Ayrıntılı adım adım kılavuzumuzla Aspose.Words for .NET'i kullanarak Word belgelerindeki yer imlerini çözme konusunda ustalaşın. .NET geliştiricileri için mükemmel. |
+| [Word Belgesinde Yer İmine Göre Satırı Sil](./delete-row-by-bookmark/) | Aspose.Words for .NET'i kullanarak bir Word belgesinde yer işaretine göre bir satırı nasıl sileceğinizi öğrenin. Etkin belge yönetimi için adım adım kılavuzumuzu izleyin. |

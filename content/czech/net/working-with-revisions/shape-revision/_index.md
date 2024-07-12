@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### Otázka: Jak mohu zkontrolovat revize přemístění tvarů v dokumentu Aspose.Words for .NET?
 
- Odpověď: Chcete-li zkontrolovat revize posunutí tvaru v dokumentu Aspose.Words for .NET, můžete načíst existující dokument, který obsahuje revize posunutí tvaru. Poté můžete přistupovat ke každému tvaru`IsMoveFromRevision` a`IsMoveToRevision` vlastnosti, abyste zjistili, zda se přesouvá, a pokud ano, odkud a kam:
+ Odpověď: Chcete-li zkontrolovat revize posunutí tvaru v dokumentu Aspose.Words for .NET, můžete načíst existující dokument, který obsahuje revize posunutí tvaru. Poté můžete přistupovat ke každému tvaru`IsMoveFromRevision`a`IsMoveToRevision` vlastnosti, abyste zjistili, zda se přesouvá, a pokud ano, odkud a kam:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

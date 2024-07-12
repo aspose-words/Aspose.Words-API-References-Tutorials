@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // تفعيل التعديل التلقائي للجدول
 table. AllowAutoFit = true;
 
-// استرداد الخلية الأولى من الصف الأول
+//استرداد الخلية الأولى من الصف الأول
 Cell firstCell = table.FirstRow.FirstCell;
 
 // استرجع نوع العرض المفضل وقيمته
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-هنا نستخدم المستند لجلب الجدول الأول، ثم نقوم بتمكين الجدول التلقائي الذي يتناسب مع`AllowAutoFit` ملكية. ثم نقوم باسترداد الخلية الأولى من الصف الأول من الجدول. من هذه الخلية، يمكننا استرداد نوع العرض المفضل باستخدام الملف`PreferredWidth.Type` الملكية وقيمتها مع`PreferredWidth.Value` ملكية.
+ هنا نستخدم المستند لجلب الجدول الأول، ثم نقوم بتمكين الجدول التلقائي الذي يتناسب مع`AllowAutoFit` ملكية. ثم نقوم باسترداد الخلية الأولى من الصف الأول من الجدول. من هذه الخلية، يمكننا استرداد نوع العرض المفضل باستخدام الملف`PreferredWidth.Type` الملكية وقيمتها مع`PreferredWidth.Value` ملكية.
 
 ### نموذج التعليمات البرمجية المصدر لاسترداد نوع العرض المفضل باستخدام Aspose.Words لـ .NET 
 

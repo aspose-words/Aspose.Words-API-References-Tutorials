@@ -2,102 +2,109 @@
 title: Firmar documento de Word
 linktitle: Firmar documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a firmar digitalmente un documento de Word con Aspose.Words para .NET.
+description: Aprenda a firmar un documento de Word usando Aspose.Words para .NET con esta guía paso a paso. Asegure sus documentos con facilidad.
 type: docs
 weight: 10
 url: /es/net/programming-with-digital-signatures/sign-document/
 ---
-En este tutorial, lo guiaremos a través de los pasos para usar la función de firma de documentos con Aspose.Words para .NET. Esta función le permite firmar digitalmente un documento de Word mediante un certificado. Siga los pasos a continuación:
+## Introducción
 
-## Paso 1: cargar el certificado
+En el mundo digital actual, proteger sus documentos es más fundamental que nunca. Las firmas digitales proporcionan una forma de garantizar la autenticidad e integridad de sus documentos. Si está buscando firmar un documento de Word mediante programación usando Aspose.Words para .NET, está en el lugar correcto. Esta guía lo guiará a través de todo el proceso, paso a paso, de una manera sencilla y atractiva.
 
-Comience cargando el certificado de firma usando la clase CertificateHolder:
+## Requisitos previos
+
+Antes de profundizar en el código, hay algunas cosas que debes tener en cuenta:
+
+1.  Aspose.Words para .NET: asegúrese de tener instalada la última versión de Aspose.Words para .NET. Puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
+2. Entorno .NET: asegúrese de tener configurado un entorno de desarrollo .NET (por ejemplo, Visual Studio).
+3. Certificado digital: obtenga un certificado digital (por ejemplo, un archivo .pfx) para firmar documentos.
+4. Documento para firmar: tenga listo un documento de Word que desee firmar.
+
+## Importar espacios de nombres
+
+Lo primero es lo primero: debe importar los espacios de nombres necesarios. Agregue las siguientes directivas de uso a su proyecto:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.Security.Cryptography.X509Certificates;
+```
+
+Ahora, dividamos el proceso en pasos manejables.
+
+## Paso 1: Cargar el Certificado Digital
+
+El primer paso es cargar el certificado digital desde el archivo. Este certificado se utilizará para firmar el documento.
+
+```csharp
+// La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Cargue el certificado digital.
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Asegúrese de especificar la ruta correcta a su certificado y contraseña asociada.
+### Explicación
 
-## Paso 2: Firmar el documento
+- `dataDir`: Este es el directorio donde se almacenan su certificado y sus documentos.
+- `CertificateHolder.Create` : este método carga el certificado desde la ruta especificada. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio, y`"morzal.pfx"` con el nombre de su archivo de certificado. El`"aw"` es la contraseña del certificado.
 
-Utilice la clase DigitalSignatureUtil para firmar el documento:
+## Paso 2: cargue el documento de Word
 
-```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-	certHolder);
-```
-
-Asegúrese de especificar las rutas correctas para el documento fuente y el documento firmado.
-
-### Código fuente de ejemplo para firmar documento usando Aspose.Words para .NET
-
-Aquí está el código fuente completo para firmar un documento con Aspose.Words para .NET:
+A continuación, cargue el documento de Word que desea firmar.
 
 ```csharp
-
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-		certHolder);
-
+// Cargue el documento a firmar.
+Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-Siguiendo estos pasos, podrá firmar fácilmente un documento de Word con Aspose.Words para .NET.
+### Explicación
+
+- `Document` : Esta clase representa el documento de Word. Reemplazar`"Digitally signed.docx"`con el nombre de su documento.
+
+## Paso 3: Firme el documento
+
+ Ahora, usa el`DigitalSignatureUtil.Sign` método para firmar el documento.
+
+```csharp
+// Firma el documento.
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx", certHolder);
+```
+
+### Explicación
+
+- `DigitalSignatureUtil.Sign`: Este método firma el documento utilizando el certificado cargado. El primer parámetro es la ruta al documento original, el segundo es la ruta al documento firmado y el tercero es el titular del certificado.
+
+## Paso 4: guarde el documento firmado
+
+Finalmente, guarde el documento firmado en la ubicación especificada.
+
+```csharp
+// Guarde el documento firmado.
+doc.Save(dataDir + "Document.Signed.docx");
+```
+
+### Explicación
+
+- `doc.Save` : Este método guarda el documento firmado. Reemplazar`"Document.Signed.docx"` con el nombre deseado de su documento firmado.
 
 ## Conclusión
 
- En este tutorial, exploramos la función de firma de documentos en Aspose.Words para .NET. Al cargar un certificado de firma y utilizar el`DigitalSignatureUtil.Sign` Con este método podremos firmar digitalmente un documento de Word. La firma de documentos proporciona autenticación y garantiza la integridad del contenido del documento, lo que la convierte en una característica valiosa para una gestión de documentos segura y confiable.
+¡Y ahí lo tienes! Ha firmado con éxito un documento de Word utilizando Aspose.Words para .NET. Si sigue estos sencillos pasos, podrá asegurarse de que sus documentos estén firmados y autenticados de forma segura. Recuerde, las firmas digitales son una herramienta poderosa para proteger la integridad de sus documentos, así que utilícelas siempre que sea necesario.
 
-### Preguntas frecuentes sobre documentos de Word de signos
+## Preguntas frecuentes
 
-#### P: ¿Qué es la firma de documentos en Aspose.Words para .NET?
+### ¿Que es una asignatura digital?
+Una firma digital es una forma electrónica de firma que se puede utilizar para autenticar la identidad del firmante y garantizar que el documento no haya sido alterado.
 
-R: La firma de documentos en Aspose.Words para .NET se refiere al proceso de firmar digitalmente un documento de Word mediante un certificado. Esta característica agrega una firma digital al documento, proporcionando autenticidad, integridad y no repudio del contenido del documento.
+### ¿Por qué necesito un certificado digital?
+Se necesita un certificado digital para crear una firma digital. Contiene una clave pública y la identidad del propietario del certificado, proporcionando los medios para verificar la firma.
 
-#### P: ¿Cómo puedo cargar el certificado de firma en Aspose.Words para .NET?
+### ¿Puedo utilizar cualquier archivo .pfx para firmar?
+Sí, siempre y cuando el archivo .pfx contenga un certificado digital válido y tengas la contraseña para acceder.
 
- R: Para cargar el certificado de firma en Aspose.Words para .NET, puede utilizar el`CertificateHolder` clase. Crear una instancia de`CertificateHolder` proporcionando la ruta al archivo del certificado y la contraseña asociada. He aquí un ejemplo:
+### ¿Aspose.Words para .NET es de uso gratuito?
+ Aspose.Words para .NET es una biblioteca comercial. Puedes descargar una prueba gratuita[aquí](https://releases.aspose.com/) , pero necesitarás adquirir una licencia para disfrutar de su funcionalidad completa. Puedes comprarlo[aquí](https://purchase.aspose.com/buy).
 
-```csharp
-CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx", "password");
-```
-
-Asegúrese de proporcionar la ruta correcta a su certificado y la contraseña asociada.
-
-#### P: ¿Cómo firmo un documento de Word usando Aspose.Words para .NET?
-
- R: Para firmar un documento de Word usando Aspose.Words para .NET, puede usar el`DigitalSignatureUtil` clase. Llama a`Sign` método, proporcionando la ruta al documento fuente, la ruta al documento firmado (salida) y el`CertificateHolder` objeto. He aquí un ejemplo:
-
-```csharp
-DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/document.docx", certHolder);
-```
-
-Asegúrese de proporcionar las rutas correctas para el documento fuente y el documento firmado (salida).
-
-#### P: ¿Cuál es el propósito de la firma de documentos?
-
-R: La firma de documentos sirve como método para garantizar la autenticidad e integridad de un documento. Al firmar digitalmente un documento, puede proporcionar pruebas de su origen, verificar que su contenido no haya sido alterado y establecer el no repudio. La firma de documentos se utiliza comúnmente para documentos legales, financieros y confidenciales.
-
-#### P: ¿Puedo utilizar cualquier certificado para firmar documentos en Aspose.Words para .NET?
-
-R: Para firmar documentos en Aspose.Words para .NET, debe utilizar un certificado X.509 válido. Este certificado se puede obtener de una autoridad certificadora (CA) de confianza o se puede utilizar un certificado autofirmado con fines de prueba.
-
-#### P: ¿Qué formato de archivo admite Aspose.Words para .NET para la firma de documentos?
-
- R: Aspose.Words para .NET admite la firma de documentos de Word en formato de archivo DOCX. Puede firmar archivos DOCX usando el`DigitalSignatureUtil` clase y el certificado correspondiente.
-
-#### P: ¿Puedo firmar varios documentos de Word con el mismo certificado?
-
-R: Sí, puedes firmar varios documentos de Word con el mismo certificado. Una vez que haya cargado el certificado usando el`CertificateHolder` clase, puede reutilizarla para firmar varios documentos llamando al`DigitalSignatureUtil.Sign` método con diferentes rutas de documentos fuente y firmados.
-
-#### P: ¿La firma del documento modifica el documento original?
-
-R: La firma de documentos con Aspose.Words para .NET no modifica el documento original. En su lugar, crea una copia firmada digitalmente del documento, dejando intacto el documento original. La copia firmada digitalmente contiene la firma digital agregada, lo que garantiza la integridad del contenido del documento.
-
-#### P: ¿Puedo verificar la firma digital de un documento firmado usando Aspose.Words para .NET?
-
- R: Sí, Aspose.Words para .NET proporciona funcionalidad para verificar la firma digital de un documento firmado. Puedes usar el`DigitalSignatureUtil.Verify` Método para comprobar la validez y autenticidad de la firma digital.
+### ¿Dónde puedo encontrar más información sobre Aspose.Words para .NET?
+ Puedes encontrar documentación completa.[aquí](https://reference.aspose.com/words/net/) y apoyo[aquí](https://forum.aspose.com/c/words/8).

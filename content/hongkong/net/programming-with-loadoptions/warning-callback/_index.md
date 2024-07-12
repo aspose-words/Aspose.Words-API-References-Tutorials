@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh-hant/net/programming-with-loadoptions/warning-callback/
 ---
-在 C# 應用程式中對 Word 文件進行文字處理時，了解載入文件時發出的警告會很有用。使用適用於.NET 的 Aspose.Words 函式庫，您可以在使用 LoadOptions 載入選項載入文件時輕鬆指定回呼函數來處理警告。在本逐步指南中，我們將引導您了解如何使用 Aspose.Words for .NET C# 原始程式碼來載入文檔，並使用 LoadOptions 載入選項使用回呼函數來發出警告。
+在 C# 應用程式中對 Word 文件進行文字處理時，了解載入文件時發出的警告會很有用。使用適用於.NET 的 Aspose.Words 函式庫，您可以在使用 LoadOptions 載入選項載入文件時輕鬆指定回呼函數來處理警告。在本逐步指南中，我們將引導您了解如何使用 Aspose.Words for .NET C# 原始程式碼透過 LoadOptions 載入選項使用回呼函數來載入文件以發出警告。
 
 ## 了解 Aspose.Words 函式庫
 

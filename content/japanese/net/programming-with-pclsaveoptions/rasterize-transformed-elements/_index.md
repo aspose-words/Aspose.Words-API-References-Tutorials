@@ -40,7 +40,7 @@ PclSaveOptions saveOptions = new PclSaveOptions
 
 ## ドキュメントをPCL形式に変換する
 
-保存オプションの設定が完了したので、ドキュメントを PCL 形式に変換する手順に進みます。Document クラスの Save メソッドを使用して、保存オプションを指定して、変換されたドキュメントを PCL 形式で保存します。次に例を示します。
+保存オプションの設定が完了したので、ドキュメントを PCL 形式に変換する手順に進むことができます。Document クラスの Save メソッドを使用して、保存オプションを指定して、変換されたドキュメントを PCL 形式で保存します。次に例を示します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);

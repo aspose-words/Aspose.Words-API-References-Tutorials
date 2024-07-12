@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-In questo passaggio applichiamo il formato predefinito dei numeri dell'elenco utilizzando il formato`ApplyNumberDefault()` metodo del formattatore di elenchi. Successivamente, aggiungiamo tre elementi al nostro elenco utilizzando il generatore di documenti`Writeln()` E`Write()` metodi. Noi usiamo il`ListIndent()` metodo per incrementare il rientro ad ogni livello.
+In questo passaggio applichiamo il formato predefinito dei numeri dell'elenco utilizzando il formato`ApplyNumberDefault()` metodo del formattatore di elenchi. Successivamente, aggiungiamo tre elementi al nostro elenco utilizzando il generatore di documenti`Writeln()`E`Write()` metodi. Noi usiamo il`ListIndent()` metodo per incrementare il rientro ad ogni livello.
 
 ## Passaggio 4: configura le opzioni di registrazione
 
@@ -100,7 +100,7 @@ Configura il tuo ambiente di sviluppo aggiungendo i riferimenti necessari e impo
 
  Creane uno nuovo`Document` oggetto e un associato`DocumentBuilder` oggetto.
 
- Usa il`DocumentBuilder` per creare un elenco con più livelli di rientro utilizzando i metodi`ApplyNumberDefault()` per applicare il formato numerico dell'elenco predefinito,`Writeln()` E`Write()` per aggiungere elementi all'elenco e`ListIndent()`per incrementare il rientro ad ogni livello.
+ Usa il`DocumentBuilder` per creare un elenco con più livelli di rientro utilizzando i metodi`ApplyNumberDefault()` per applicare il formato numerico dell'elenco predefinito,`Writeln()`E`Write()` per aggiungere elementi all'elenco e`ListIndent()`per incrementare il rientro ad ogni livello.
 
  Configura le opzioni di salvataggio creando un file`TxtSaveOptions` oggetto e impostandone le proprietà`ListIndentation.Count` al numero di caratteri di tabulazione per livello e`ListIndentation.Character` A`'\t'` per utilizzare i caratteri di tabulazione.
 

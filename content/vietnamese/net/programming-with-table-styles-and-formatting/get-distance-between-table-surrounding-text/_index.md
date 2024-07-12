@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Bước 3: Lấy khoảng cách giữa bảng và văn bản xung quanh
- Để có được khoảng cách giữa bảng và văn bản xung quanh, chúng ta cần truy cập vào bảng trong tài liệu bằng cách sử dụng`GetChild()` phương pháp và`NodeType.Table` tài sản. Sau đó chúng ta có thể hiển thị các khoảng cách khác nhau bằng cách sử dụng thuộc tính mảng`DistanceTop`, `DistanceBottom`, `DistanceRight` Và`DistanceLeft`.
+ Để có được khoảng cách giữa bảng và văn bản xung quanh, chúng ta cần truy cập vào bảng trong tài liệu bằng cách sử dụng`GetChild()` phương pháp và`NodeType.Table` tài sản. Sau đó chúng ta có thể hiển thị các khoảng cách khác nhau bằng cách sử dụng thuộc tính mảng`DistanceTop`, `DistanceBottom`, `DistanceRight`Và`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

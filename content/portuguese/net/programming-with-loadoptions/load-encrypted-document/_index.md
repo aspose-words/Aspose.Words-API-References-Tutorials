@@ -15,7 +15,7 @@ Antes de mergulhar no código, é importante entender a biblioteca Aspose.Words 
 
 ## Carregando um documento criptografado
 
-A primeira etapa é fazer upload de um documento criptografado usando as opções de upload apropriadas. No nosso caso, usamos a classe Document para carregar o documento especificando o caminho e a senha do documento. Aqui está um exemplo :
+primeira etapa é fazer upload de um documento criptografado usando as opções de upload apropriadas. No nosso caso, usamos a classe Document para carregar o documento especificando o caminho e a senha do documento. Aqui está um exemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Carregue um documento criptografado com a senha especificada
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Salve um documento criptografado com uma nova senha
+//Salve um documento criptografado com uma nova senha
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

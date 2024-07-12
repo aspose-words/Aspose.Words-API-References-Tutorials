@@ -16,14 +16,14 @@ Ob Sie bestimmte Wörter ersetzen, Textvorlagen aktualisieren oder den Inhalt vo
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Einfaches Suchen und Ersetzen von Text in Word](./simple-find-replace/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine einfache Textsuche und -ersetzung in einem Word-Dokument durchführen. |
-| [Metazeichen im Suchmuster](./meta-characters-in-search-pattern/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Metazeichen im Suchmuster verwenden, um Word-Dokumente zu bearbeiten. |
-| [Word ersetzt Text, der Metazeichen enthält](./replace-text-containing-meta-characters/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Text mit Metazeichen in Word-Dokumenten ersetzen. |
-| [Text in Feldern ignorieren](./ignore-text-inside-fields/) | Erfahren Sie, wie Sie die Funktion „Text in Feldern ignorieren“ von Aspose.Words für .NET verwenden. |
-| [Text in gelöschten Revisionen ignorieren](./ignore-text-inside-delete-revisions/) | Erfahren Sie, wie Sie die Funktion „Text in gelöschten Revisionen ignorieren“ von Aspose.Words für .NET verwenden. |
-| [Text in eingefügten Revisionen ignorieren](./ignore-text-inside-insert-revisions/) | Erfahren Sie, wie Sie die Funktion „Text in Einfügerevisionen ignorieren“ von Aspose.Words für .NET verwenden, um Einfügerevisionen in Word-Dokumenten zu bearbeiten. |
-| [Text in der Fußzeile ersetzen](./replace-text-in-footer/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Text in der Fußzeile von Word-Dokumenten ersetzen. |
-| [Durch regulären Ausdruck ersetzen](./replace-with-regex/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET einen auf regulären Ausdrücken basierenden Textersatz in einem Word-Dokument durchführen. |
-| [Erkennen und Ersetzen innerhalb von Ersatzmustern](./recognize-and-substitutions-within-replacement-patterns/) | Erfahren Sie, wie Sie Ersetzungsmuster mit Erkennungen und Ersetzungen in Aspose.Words für .NET verwenden, um Word-Dokumente zu bearbeiten. |
-| [Durch Zeichenfolge ersetzen](./replace-with-string/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Text in einem Word-Dokument durch eine Zeichenfolge ersetzen. |
-| [Text in Tabelle ersetzen](./replace-text-in-table/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Text in einer Tabelle in einem Word-Dokument ersetzen. |
+| [Einfaches Suchen und Ersetzen von Text in Word](./simple-find-replace/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET mühelos Text in Word-Dokumenten suchen und ersetzen. Schritt-für-Schritt-Anleitung enthalten. |
+| [Metazeichen im Suchmuster](./meta-characters-in-search-pattern/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Metazeichen in Suchmustern verwenden. Optimieren Sie Ihre Dokumentverarbeitung. |
+| [Word ersetzt Text, der Metazeichen enthält](./replace-text-containing-meta-characters/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Text mit Metazeichen in Word-Dokumenten ersetzen. Folgen Sie unserem ausführlichen, spannenden Tutorial zur nahtlosen Textbearbeitung. |
+| [Text in Feldern ignorieren](./ignore-text-inside-fields/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Text in Feldern in Word-Dokumenten bearbeiten. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung mit praktischen Beispielen. |
+| [Text in gelöschten Revisionen ignorieren](./ignore-text-inside-delete-revisions/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET nachverfolgte Revisionen in Word-Dokumenten handhaben. Meistern Sie die Dokumentenautomatisierung mit diesem umfassenden Tutorial. |
+| [Text in eingefügten Revisionen ignorieren](./ignore-text-inside-insert-revisions/) | Erfahren Sie, wie Sie Dokumentrevisionen mit Aspose.Words für .NET effektiv verwalten. Entdecken Sie Techniken zum Ignorieren von Text in eingefügten Revisionen für optimiertes Bearbeiten. |
+| [Text in der Fußzeile ersetzen](./replace-text-in-footer/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Text in der Fußzeile eines Word-Dokuments ersetzen. Folgen Sie dieser Anleitung, um das Ersetzen von Text mit detaillierten Beispielen zu meistern. |
+| [Durch regulären Ausdruck ersetzen](./replace-with-regex/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Regex zum Suchen und Ersetzen in Word-Dokumenten verwenden. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung zur perfekten Textbearbeitung. |
+| [Erkennen und Ersetzen innerhalb von Ersatzmustern](./recognize-and-substitutions-within-replacement-patterns/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Text in Ersetzungsmustern erkennen und ersetzen. Schritt-für-Schritt-Anleitung mit ausführlichen Beispielen. |
+| [Durch Zeichenfolge ersetzen](./replace-with-string/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Zeichenfolgen in Word-Dokumenten ersetzen. Perfekt für Entwickler, die die Dokumentbearbeitung automatisieren möchten. |
+| [Text in Tabelle ersetzen](./replace-text-in-table/) | Ersetzen Sie mit Aspose.Words für .NET mühelos Text in Word-Tabellen mit dieser detaillierten Schritt-für-Schritt-Anleitung. |

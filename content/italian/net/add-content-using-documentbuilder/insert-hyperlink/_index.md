@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- In questo frammento definiamo il percorso della directory in cui verrà salvato il nostro documento e ne inizializziamo uno nuovo`Document` E`DocumentBuilder` esempio.
+ In questo frammento definiamo il percorso della directory in cui verrà salvato il nostro documento e ne inizializziamo uno nuovo`Document`E`DocumentBuilder` esempio.
 
 ## Passaggio 3: scrivere il testo iniziale
 

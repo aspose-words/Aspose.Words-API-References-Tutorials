@@ -75,4 +75,4 @@ Odpověď: Citace Markdown nepodporují konkrétní atributy. Jsou jednoduše zv
 
 #### Q: Můžete vložit uvozovky do Markdown?
 
-Odpověď: Ano, je možné vnořit uvozovky do Markdown přidáním další úrovně lomených závorek (`>`).
+Odpověď: Ano, do Markdown je možné vnořit uvozovky přidáním další úrovně lomených závorek (`>`).

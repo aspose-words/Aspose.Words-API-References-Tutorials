@@ -116,7 +116,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
 
 ## 3. Wat zijn de belangrijkste kenmerken van Aspose.Words voor .NET?
 
- Aspose.Words voor .NET biedt een breed scala aan functies, waaronder het maken, opmaken, converteren en manipuleren van documenten. U kunt meer lezen over de mogelijkheden in de[API-documentatie](https://reference.aspose.com/words/net/).
+Aspose.Words voor .NET biedt een breed scala aan functies, waaronder het maken, opmaken, converteren en manipuleren van documenten. U kunt meer lezen over de mogelijkheden in de[API-documentatie](https://reference.aspose.com/words/net/).
 
 ## 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 

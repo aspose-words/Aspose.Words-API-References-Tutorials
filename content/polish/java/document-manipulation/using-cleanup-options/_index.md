@@ -158,7 +158,7 @@ Opcje czyszczenia w Aspose.Words for Java to ustawienia, które pozwalają kontr
 
 ###  Co się stanie, gdy ustawię`REMOVE_CONTAINING_FIELDS` option?
 
- Ustawianie`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` opcja usunie całe pole korespondencji seryjnej, łącznie z akapitem zawierającym, z dokumentu podczas procesu korespondencji seryjnej. Jest to przydatne, gdy chcesz wyeliminować pola scalania i powiązany z nimi tekst.
+ Ustawianie`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` opcja usunie całe pole korespondencji seryjnej, łącznie z zawierającym go akapitem, z dokumentu podczas procesu korespondencji seryjnej. Jest to przydatne, gdy chcesz wyeliminować pola scalania i powiązany z nimi tekst.
 
 ### Jak mogę usunąć nieużywane pola scalania z mojego dokumentu?
 

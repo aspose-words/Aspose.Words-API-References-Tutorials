@@ -2,168 +2,95 @@
 title: Text in Feldern ignorieren
 linktitle: Text in Feldern ignorieren
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie die Funktion „Text in Feldern ignorieren“ von Aspose.Words für .NET verwenden.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Text in Feldern in Word-Dokumenten bearbeiten. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung mit praktischen Beispielen.
 type: docs
 weight: 10
 url: /de/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion „Text in Feldern ignorieren“ in der Aspose.Words-Bibliothek für .NET verwendet wird. Diese Funktion ist nützlich, wenn wir beim Bearbeiten von Dokumenten den Text in den Feldern ignorieren möchten.
+## Einführung
+
+In diesem Tutorial beschäftigen wir uns mit der Bearbeitung von Text in Feldern in Word-Dokumenten mithilfe von Aspose.Words für .NET. Aspose.Words bietet robuste Funktionen für die Dokumentverarbeitung, mit denen Entwickler Aufgaben effizient automatisieren können. Hier konzentrieren wir uns auf das Ignorieren von Text in Feldern, eine häufige Anforderung in Szenarien zur Dokumentautomatisierung.
 
 ## Voraussetzungen
 
-- Grundkenntnisse der Sprache C#.
-- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes eingerichtet haben:
+- Visual Studio ist auf Ihrem Computer installiert.
+- Aspose.Words für die .NET-Bibliothek in Ihr Projekt integriert.
+- Grundlegende Kenntnisse der C#-Programmierung und der .NET-Umgebung.
 
-## Schritt 1: Neues Dokument erstellen
+## Namespaces importieren
 
- Bevor wir mit der Textbearbeitung in Feldern beginnen, müssen wir ein neues Dokument mit Aspose.Words für .NET erstellen. Dies kann durch die Instanziierung eines`Document` Objekt:
-
+Um zu beginnen, schließen Sie die erforderlichen Namespaces in Ihr C#-Projekt ein:
 ```csharp
-Document doc = new Document();
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.FindReplace;
+using System;
+using System.Text.RegularExpressions;
 ```
 
-## Schritt 2: Einfügen eines Feldes mit Text darin
+## Schritt 1: Neues Dokument und Builder erstellen
 
- Sobald wir ein Dokument haben, können wir ein Feld mit Text darin einfügen, indem wir`DocumentBuilder` Objekt. Um beispielsweise ein "INCLUDETEXT"-Feld mit dem Text "Text im Feld" einzufügen, können wir das`InsertField` Methode:
-
+ Initialisieren Sie zunächst ein neues Word-Dokument und ein`DocumentBuilder`Objekt zur Erleichterung der Dokumenterstellung:
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## Schritt 2: Einfügen eines Feldes mit Text
+
+ Verwenden Sie die`InsertField` Methode von`DocumentBuilder` So fügen Sie ein Feld mit Text hinzu:
+```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## Schritt 3: Verwenden der Funktion „Text in Feldern ignorieren“
+## Schritt 3: Text in Feldern ignorieren
 
- Um Text in Feldern bei nachfolgenden Operationen zu ignorieren, können wir einen`FindReplaceOptions` Objekt und setzen Sie den`IgnoreFields`Eigentum an`true`:
-
+ Um Text zu manipulieren und dabei den Inhalt von Feldern zu ignorieren, verwenden Sie`FindReplaceOptions` mit dem`IgnoreFields` Eigenschaft festgelegt auf`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
-## Schritt 4: Verwenden regulärer Ausdrücke für Suchen und Ersetzen
+## Schritt 4: Textersetzung durchführen
 
-Um Such- und Ersetzungsvorgänge im Text des Dokuments durchzuführen, verwenden wir reguläre Ausdrücke. In unserem Beispiel suchen wir nach allen Vorkommen des Buchstabens "e" und ersetzen sie durch ein Sternchen "* ". Wir verwenden .NETs`Regex` Klasse dafür:
-
+Verwenden Sie reguläre Ausdrücke zum Ersetzen von Text. Hier ersetzen wir Vorkommen des Buchstabens 'e' durch ein Asterisk '*' im gesamten Dokumentumfang:
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Schritt 5: Anzeigen der geänderten Dokumentausgabe
+## Schritt 5: Geänderten Dokumenttext ausgeben
 
- Nach der Anwendung von Suchen und Ersetzen können wir den geänderten Inhalt des Dokuments anzeigen, indem wir`GetText` Methode:
-
+Rufen Sie den geänderten Text ab und drucken Sie ihn aus, um die vorgenommenen Ersetzungen zu überprüfen:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## Schritt 6: Optionen zum Einschließen von Feldern ändern
+## Schritt 6: Text in Felder einfügen
 
- Wir schließen den Text in den Feldern in das Ausgabeergebnis ein, wir können die Optionen ändern, um die Felder nicht zu ignorieren. Dazu setzen wir die`IgnoreFields`Eigentum an`false`:
-
+ Um Text in Feldern zu verarbeiten, setzen Sie die`IgnoreFields`Eigentum an`false` und führen Sie den Ersetzungsvorgang erneut aus:
 ```csharp
 options.IgnoreFields = false;
-```
-
-## Schritt 7: Anzeige des geänderten Dokuments mit den Feldern
-
-Nachdem wir die Optionen geändert haben, können wir die Suche und den Ersetzungsvorgang erneut durchführen, um das Ergebnis mit dem Text innerhalb der eingeschlossenen Felder zu erhalten:
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-### Beispielquellcode zum Ignorieren von Text in Feldern mit Aspose.Words für .NET
-
-Hier ist der vollständige Beispielquellcode zur Demonstration der Verwendung der Funktion „Text in Feldern ignorieren“ mit Aspose.Words für .NET:
-
-```csharp
-    
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Feld mit Text einfügen.
-	builder.InsertField("INCLUDETEXT", "Text in field");
-	
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-	
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreFields = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-  
 ```
 
 ## Abschluss
 
-In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Text in Feldern ignorieren“ in Aspose.Words für .NET verwendet wird. Wir sind einer Schritt-für-Schritt-Anleitung gefolgt, um ein Dokument zu erstellen, ein Feld mit Text einzufügen, die Funktion „Text in Feldern ignorieren“ zu verwenden, Such- und Ersetzungsvorgänge mit regulären Ausdrücken durchzuführen und das geänderte Dokument anzuzeigen.
+In diesem Tutorial haben wir untersucht, wie man Text in Feldern in Word-Dokumenten mit Aspose.Words für .NET bearbeitet. Diese Funktion ist für Szenarien unerlässlich, in denen Feldinhalte bei der programmgesteuerten Verarbeitung von Dokumenten eine besondere Behandlung erfordern.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Was ist die Funktion „Text in Feldern ignorieren“ in Aspose.Words für .NET?
+### Wie gehe ich mit verschachtelten Feldern in Word-Dokumenten um?
+Verschachtelte Felder können durch rekursives Navigieren durch den Inhalt des Dokuments mithilfe der API von Aspose.Words verwaltet werden.
 
-A: Mit der Funktion „Text in Feldern ignorieren“ in Aspose.Words für .NET können Sie angeben, ob der Text in Feldern bei bestimmten Vorgängen, wie z. B. beim Suchen und Ersetzen von Text, ignoriert werden soll. Wenn diese Funktion aktiviert ist, wird der Text in den Feldern bei Vorgängen nicht berücksichtigt.
+### Kann ich bedingte Logik anwenden, um Text selektiv zu ersetzen?
+Ja, Aspose.Words ermöglicht Ihnen die Implementierung einer bedingten Logik mit FindReplaceOptions, um den Textersatz basierend auf bestimmten Kriterien zu steuern.
 
-#### F: Wie kann ich mit Aspose.Words für .NET ein neues Dokument erstellen?
+### Ist Aspose.Words mit .NET Core-Anwendungen kompatibel?
+Ja, Aspose.Words unterstützt .NET Core und gewährleistet plattformübergreifende Kompatibilität für Ihre Anforderungen zur Dokumentautomatisierung.
 
- A: Um ein neues Dokument mit Aspose.Words für .NET zu erstellen, können Sie eine`Document` Objekt. Hier ist ein Beispiel für C#-Code zum Erstellen eines neuen Dokuments:
+### Wo finde ich weitere Beispiele und Ressourcen für Aspose.Words?
+ Besuchen[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) für umfassende Anleitungen, API-Referenzen und Codebeispiele.
 
-```csharp
-Document doc = new Document();
-```
-
-#### F: Wie kann ich mit Aspose.Words für .NET ein Feld mit Text in ein Dokument einfügen?
-
- A: Sobald Sie ein Dokument haben, können Sie ein Feld mit Text darin einfügen, indem Sie`DocumentBuilder` Objekt. Um beispielsweise ein "INCLUDETEXT"-Feld mit dem Text "Text im Feld" einzufügen, können Sie das`InsertField` Methode:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.InsertField("INCLUDETEXT", "Text in field");
-```
-
-#### F: Wie kann ich Text in Feldern in Aspose.Words für .NET ignorieren?
-
- A: Um Text in Feldern bei nachfolgenden Operationen zu ignorieren, können Sie einen`FindReplaceOptions` Objekt und setzen Sie den`IgnoreFields`Eigentum an`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-```
-
-#### F: Wie kann ich in Aspose.Words für .NET mit regulären Ausdrücken suchen und ersetzen?
-
- A: Um Such- und Ersetzungsoperationen im Text des Dokuments mithilfe regulärer Ausdrücke durchzuführen, können Sie die .NET`Regex` Klasse. Um beispielsweise nach allen Vorkommen des Buchstabens "e" zu suchen und diese durch ein Sternchen zu ersetzen "* " können Sie eine`Regex` Objekt und verwenden Sie es mit dem`Replace` Methode:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### F: Wie kann ich die geänderte Ausgabe des Dokuments in Aspose.Words für .NET anzeigen?
-
- A: Nach dem Anwenden von Such- und Ersetzungsvorgängen können Sie den geänderten Inhalt des Dokuments mithilfe der`GetText` Methode:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### F: Wie kann ich die Felder in das Ausgabeergebnis in Aspose.Words für .NET einschließen?
-
- A: Um den Text in den Feldern in das Ausgabeergebnis einzuschließen, können Sie die Optionen so ändern, dass die Felder nicht ignoriert werden. Dazu können Sie die`IgnoreFields` Eigentum der`FindReplaceOptions` Einwände erheben gegen`false`:
-
-```csharp
-options.IgnoreFields = false;
-```
-
-#### F: Wie kann ich das geänderte Dokument mit den Feldern in Aspose.Words für .NET anzeigen?
-
-A: Nachdem Sie die Optionen zum Einschließen von Feldern geändert haben, können Sie die Suche und das Ersetzen erneut durchführen, um das Ergebnis mit dem Text innerhalb der eingeschlossenen Felder zu erhalten:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Wie kann ich technischen Support für Aspose.Words erhalten?
+ Technische Unterstützung erhalten Sie im[Aspose.Words Support Forum](https://forum.aspose.com/c/words/8) wo Sie Ihre Fragen posten und mit der Community interagieren können.

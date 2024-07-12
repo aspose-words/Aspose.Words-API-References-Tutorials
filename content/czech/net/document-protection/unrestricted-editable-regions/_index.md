@@ -2,120 +2,133 @@
 title: Neomezené upravitelné oblasti v dokumentu aplikace Word
 linktitle: Neomezené upravitelné oblasti v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vytvořit neomezené upravitelné oblasti v dokumentu Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak vytvořit neomezené upravitelné oblasti v dokumentu aplikace Word pomocí Aspose.Words for .NET s tímto komplexním průvodcem krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/document-protection/unrestricted-editable-regions/
 ---
-V tomto tutoriálu vás provedeme kroky k použití funkce neomezených upravitelných oblastí Aspose.Words for .NET. Tato funkce umožňuje definovat oblasti v dokumentu aplikace Word, kde lze obsah upravovat bez omezení, i když je zbytek dokumentu pouze pro čtení. Postupujte podle následujících kroků:
+## Úvod
 
-## Krok 1: Vložení dokumentu a nastavení ochrany
+Pokud jste někdy chtěli chránit dokument aplikace Word, ale přesto povolit určité části upravovat, jste na správném místě! Tato příručka vás provede procesem nastavení neomezených upravitelných oblastí v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pokryjeme vše od předpokladů až po podrobné kroky, abychom vám zajistili hladký průběh. Připraveni? Pojďme se ponořit!
 
-Začněte načtením existujícího dokumentu:
+## Předpoklady
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+Než začneme, ujistěte se, že máte následující:
 
-Chraňte dokument nastavením typu ochrany pouze pro čtení a hesla
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+2.  Platná licence Aspose: Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio: Jakákoli nejnovější verze by měla fungovat dobře.
+4. Základní znalost C# a .NET: To vám pomůže sledovat kód.
 
-## Krok 2: Vytvoření upravitelné oblasti
+Nyní, když je vše připraveno, pojďme se vrhnout na zábavnější část!
 
-Začněte vytvořením upravitelné oblasti pomocí objektů EditableRangeStart a EditableRangeEnd:
+## Importovat jmenné prostory
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Pro EditableRangeStart, který jsme právě vytvořili, je vytvořen objekt EditableRange.
-EditableRange editableRange = edRangeStart.EditableRange;
-
-// Vložte něco do upravitelného rozsahu.
-builder.Writeln("Paragraph inside first editable range");
-
-// Upravitelný rozsah je dobře tvarovaný, pokud má začátek a konec.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## Krok 3: Přidejte obsah mimo upravitelné oblasti
-
-Můžete přidat obsah mimo upravitelné oblasti, které zůstanou pouze pro čtení:
+Chcete-li začít používat Aspose.Words pro .NET, budete muset importovat potřebné jmenné prostory. Můžete to udělat takto:
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## Krok 4: Uložte dokument
+## Krok 1: Nastavení vašeho projektu
 
-Nakonec upravený dokument uložte:
+Nejprve vytvořte nový projekt C# ve Visual Studiu.
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. Otevřete Visual Studio: Začněte otevřením Visual Studia a vytvořením nového projektu Console App.
+2. Instalace Aspose.Words: K instalaci Aspose.Words použijte Správce balíčků NuGet. To lze provést spuštěním následujícího příkazu v konzole Správce balíčků:
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-Chcete-li dokument uložit s upravitelnými oblastmi, nezapomeňte zadat správnou cestu a název souboru.
+## Krok 2: Vložení dokumentu
 
-### Příklad zdrojového kódu pro neomezené upravitelné oblasti pomocí Aspose.Words pro .NET
+Nyní načteme dokument, který chcete chránit. Ujistěte se, že máte ve svém adresáři připravený dokument aplikace Word.
 
-Zde je kompletní zdrojový kód pro neomezené upravitelné oblasti pomocí Aspose.Words pro .NET:
+1. Nastavit adresář dokumentů: Definujte cestu k adresáři dokumentů.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  Vložte dokument: Použijte`Document` třídy k načtení dokumentu aplikace Word.
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-// Cesta k adresáři dokumentů.
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Nahrajte dokument a vytvořte jej pouze pro čtení.
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Krok 3: Ochrana dokumentu
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+Dále nastavíme dokument pouze pro čtení. To zajistí, že bez hesla nebude možné provést žádné změny.
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1.  Initialize DocumentBuilder: Vytvořte instanci`DocumentBuilder` k provedení změn v dokumentu.
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. Nastavit úroveň ochrany: Chraňte dokument pomocí hesla.
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. Přidat text jen pro čtení: Vloží text, který bude jen pro čtení.
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-// Spusťte upravitelný rozsah.
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Pro EditableRangeStart, který jsme právě vytvořili, je vytvořen objekt EditableRange.
-EditableRange editableRange = edRangeStart.EditableRange;
+## Krok 4: Vytvoření upravitelných rozsahů
 
-// Vložte něco do upravitelného rozsahu.
-builder.Writeln("Paragraph inside first editable range");
+Tady se děje kouzlo. V dokumentu vytvoříme sekce, které lze upravovat i přes celkovou ochranu pouze pro čtení.
 
-// Upravitelný rozsah je dobře tvarovaný, pokud má začátek a konec.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. Start Editable Range: Definujte začátek upravitelného rozsahu.
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2.  Vytvořit upravitelný objekt rozsahu: An`EditableRange` objekt bude vytvořen automaticky.
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. Vložit upravitelný text: Přidejte text do upravitelného rozsahu.
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## Krok 5: Zavření upravitelného rozsahu
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+Upravitelný rozsah není úplný bez konce. Dále to přidáme.
 
-```
-Podle těchto kroků můžete snadno vytvořit neomezené upravitelné oblasti v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+1. End Editable Range: Definujte konec upravitelného rozsahu.
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. Přidat text jen pro čtení mimo rozsah: Vložení textu mimo upravitelný rozsah pro demonstraci ochrany.
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## Krok 6: Uložení dokumentu
+
+Nakonec uložíme dokument s aplikovanou ochranou a upravitelnými oblastmi.
+
+1.  Uložit dokument: Použijte`Save` způsob uložení upraveného dokumentu.
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak vytvořit neomezené upravitelné oblasti v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle uvedených kroků můžete definovat konkrétní oblasti v dokumentu, kde mohou uživatelé volně upravovat obsah, zatímco zbytek dokumentu zůstane pouze pro čtení. Aspose.Words for .NET nabízí výkonné funkce pro ochranu a přizpůsobení dokumentů a poskytuje vám kontrolu nad možnostmi úprav vašich dokumentů aplikace Word.
 
-### Časté dotazy pro neomezené upravitelné oblasti v dokumentu aplikace Word
+tady to máte! Úspěšně jste vytvořili neomezené upravitelné oblasti v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato funkce je neuvěřitelně užitečná pro kolaborativní prostředí, kde určité části dokumentu musí zůstat nezměněny, zatímco jiné lze upravovat. 
 
-#### Otázka: Jaké jsou neomezené upravitelné oblasti v Aspose.Words pro .NET?
+ Experimentujte se složitějšími scénáři a různými úrovněmi ochrany, abyste z Aspose.Words vytěžili maximum. Pokud máte nějaké dotazy nebo narazíte na problémy, neváhejte se podívat na[dokumentace](https://reference.aspose.com/words/net/) nebo oslovit[Podpěra, podpora](https://forum.aspose.com/c/words/8).
 
-Odpověď: Neomezené upravitelné oblasti v Aspose.Words pro .NET jsou oblasti v dokumentu Word, kde lze obsah upravovat bez jakýchkoli omezení, i když je zbytek dokumentu nastaven jako pouze pro čtení. Tyto oblasti poskytují způsob, jak definovat konkrétní části dokumentu, které mohou uživatelé upravovat při zachování celkové ochrany dokumentu.
+## FAQ
 
-#### Otázka: Jak mohu vytvořit neomezené upravitelné oblasti pomocí Aspose.Words for .NET?
+### Mohu mít v jednom dokumentu více upravitelných oblastí?
+Ano, můžete vytvořit více upravitelných oblastí zahájením a ukončením upravitelných oblastí v různých částech dokumentu.
 
-Odpověď: Chcete-li vytvořit neomezené upravitelné oblasti v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete postupovat takto:
-1.  Načtěte existující dokument pomocí`Document` třída.
-2.  Nastavte ochranu dokumentu na pouze pro čtení pomocí`Protect` metoda`Document` objekt.
-3.  Použijte`DocumentBuilder` třídy k vytvoření upravitelného rozsahu přidáním`EditableRangeStart` objekt a an`EditableRangeEnd` objekt.
-4.  Přidejte obsah v rámci upravitelného rozsahu pomocí`DocumentBuilder`.
-5.  Uložte upravený dokument pomocí`Save` metoda`Document` objekt.
+### Jaké další typy ochrany jsou dostupné v Aspose.Words?
+Aspose.Words podporuje různé typy ochrany, jako je AllowOnlyComments, AllowOnlyFormFields a NoProtection.
 
-#### Otázka: Mohu mít v dokumentu aplikace Word více neomezených upravitelných oblastí?
+### Je možné odstranit ochranu z dokumentu?
+ Ano, ochranu můžete odstranit pomocí`Unprotect` a zadáním správného hesla.
 
-Odpověď: Ano, v dokumentu aplikace Word můžete mít více neomezených upravitelných oblastí. Chcete-li toho dosáhnout, můžete vytvořit více sad`EditableRangeStart` a`EditableRangeEnd` objekty pomocí`DocumentBuilder` třída. Každá sada objektů bude definovat samostatnou upravitelnou oblast, kde mohou uživatelé upravovat obsah bez jakýchkoli omezení.
+### Mohu zadat různá hesla pro různé sekce?
+Ne, ochrana na úrovni dokumentu používá jediné heslo pro celý dokument.
 
-#### Otázka: Mohu do sebe vnořit upravitelné oblasti?
-
- Odpověď: Ne, pomocí Aspose.Words for .NET nemůžete do sebe vnořovat upravitelné oblasti. Každá editovatelná oblast definovaná pomocí an`EditableRangeStart` a`EditableRangeEnd` pár by měl být nezávislý a neměl by se překrývat ani být vnořený do jiné upravitelné oblasti. Vnořené upravitelné oblasti nejsou podporovány.
-
-#### Otázka: Mohu odstranit ochranu pouze pro čtení z dokumentu v rámci upravitelné oblasti?
-
-Odpověď: Ne, nemůžete odstranit ochranu pouze pro čtení z dokumentu v rámci upravitelné oblasti. Ochrana pouze pro čtení je aplikována na celý dokument a nelze ji selektivně odstranit v rámci určitých upravitelných oblastí. Účelem upravitelných oblastí je umožnit úpravu obsahu a zároveň zachovat celý dokument pouze pro čtení.
+### Jak mohu použít licenci pro Aspose.Words?
+Licenci můžete použít jejím načtením ze souboru nebo streamu. Podrobné kroky naleznete v dokumentaci.

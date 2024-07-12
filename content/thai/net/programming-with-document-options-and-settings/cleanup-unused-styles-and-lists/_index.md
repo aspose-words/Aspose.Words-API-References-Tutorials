@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAnd
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//ล้างสไตล์และรายการที่ไม่ได้ใช้ออกจากเอกสาร ขึ้นอยู่กับ CleanupOptions ที่กำหนด
+	// ล้างสไตล์และรายการที่ไม่ได้ใช้ออกจากเอกสาร ขึ้นอยู่กับ CleanupOptions ที่กำหนด
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 

@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Ladda Word-dokumentet
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Konfigurera alternativ för säkerhetskopiering med funktionen "Använd teckensnitt från måldator".
+// Konfigurera alternativ för säkerhetskopiering med funktionen "Använd teckensnitt från måldator".
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Konvertera dokument till fast HTML
@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.htm
 
 ## Slutsats
 
-I den här guiden har vi förklarat hur man konverterar ett Word-dokument till fast HTML med hjälp av målmaskinens teckensnitt med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Konverteringen till fast HTML med målmaskinens teckensnitt garanterar trogen och konsekvent rendering av dokumentet i HTML-format.
+den här guiden har vi förklarat hur man konverterar ett Word-dokument till fast HTML med hjälp av målmaskinens teckensnitt med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Konverteringen till fast HTML med målmaskinens teckensnitt garanterar trogen och konsekvent rendering av dokumentet i HTML-format.

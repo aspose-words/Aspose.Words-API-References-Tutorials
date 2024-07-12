@@ -44,7 +44,7 @@ Es importante manejar con elegancia las excepciones de licencia. Si hay un probl
 
 ## 6. Prueba de su aplicación Aspose.Words con licencia
 
-Después de aplicar la licencia, pruebe minuciosamente su aplicación Aspose.Words para asegurarse de que todas las funciones funcionen como se espera. Este paso es crucial para garantizar que sus documentos se generen sin limitaciones de prueba.
+Después de aplicar la licencia, pruebe minuciosamente su aplicación Aspose.Words para asegurarse de que todas las funciones funcionen como se esperaba. Este paso es crucial para garantizar que sus documentos se generen sin limitaciones de prueba.
 ## Código fuente completo
 ```java
         License license = new License();

@@ -17,7 +17,7 @@ Innan du dyker in i handledningen, se till att du har följande:
 - Grundläggande kunskaper om C#: Att förstå C#-programmering gör det lättare att följa och implementera stegen.
 -  Aspose.Words för .NET Library: Ladda ner och installera biblioteket från[nedladdningslänk](https://releases.aspose.com/words/net/).
 - Utvecklingsmiljö: Konfigurera en utvecklingsmiljö som Visual Studio för att skriva och köra din kod.
--  Exempeldokument: Ett exempeldokument (t.ex.`Rendering.docx`) att arbeta med under denna handledning.
+- Exempeldokument: Ett exempeldokument (t.ex.`Rendering.docx`) att arbeta med under denna handledning.
 
 ## Importera namnområden
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Steg 5: Skapa varningshanterarens klass
 
- För att hantera varningar effektivt, skapa en anpassad klass som implementerar`IWarningCallback` gränssnitt. Den här klassen kommer att fånga och logga alla varningar för teckensnittsersättning.
+För att hantera varningar effektivt, skapa en anpassad klass som implementerar`IWarningCallback` gränssnitt. Den här klassen kommer att fånga och logga alla varningar för teckensnittsersättning.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Du har nu bemästrat processen att hantera teckensnittsersättning utan suffix m
 
 ### F1: Hur kan jag använda typsnitt från flera anpassade kataloger?
 
- Du kan lägga till flera`FolderFontSource` instanser till`fontSources`lista och uppdatera teckensnittskällorna därefter.
+ Du kan lägga till flera`FolderFontSource` instanser till`fontSources` lista och uppdatera teckensnittskällorna därefter.
 
 ### F2: Var kan jag ladda ner en gratis testversion av Aspose.Words för .NET?
 

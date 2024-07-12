@@ -104,4 +104,4 @@ Console.WriteLine("\n" + properties);
 
 #### 问：如何获取文档中 ActiveX 控件的总数？
 
-答：要获取文档中的 ActiveX 控件总数，可以使用`GetChildNodes`方法`Document`指定对象`NodeType.Shape`类型并包括子节点。
+答：要获取文档中 ActiveX 控件的总数，可以使用`GetChildNodes`方法`Document`指定对象`NodeType.Shape`类型并包括子节点。

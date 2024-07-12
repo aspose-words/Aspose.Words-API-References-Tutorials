@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 
 #### Вопрос: Как удалить поле в документе Word с помощью Aspose.Words for .NET?
 
- О: Чтобы удалить поле в документе Word с помощью Aspose.Words for .NET, вы можете просмотреть поля в документе, используя команду`FieldStart` класс и используйте`FieldStart.Remove`метод удаления поля.
+ О: Чтобы удалить поле в документе Word с помощью Aspose.Words for .NET, вы можете просмотреть поля в документе, используя команду`FieldStart` класс и используйте`FieldStart.Remove` метод удаления поля.
 
 #### Вопрос: Можно ли удалить только определенные поля в документе Word с помощью Aspose.Words for .NET?
 

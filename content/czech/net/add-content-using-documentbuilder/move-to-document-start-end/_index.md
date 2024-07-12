@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Zde vytváříme instanci`Document` a`DocumentBuilder` . Myslet na`Document` jako váš prázdný dokument aplikace Word a`DocumentBuilder` jako vaše pero.
+ Zde vytváříme instanci`Document`a`DocumentBuilder` . Myslet na`Document` jako váš prázdný dokument aplikace Word a`DocumentBuilder` jako vaše pero.
 
 ## Krok 2: Přejděte na Start dokumentu
 

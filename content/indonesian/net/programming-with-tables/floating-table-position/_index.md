@@ -39,7 +39,7 @@ table. AbsoluteHorizontalDistance = 10;
 table. RelativeVerticalAlignment = VerticalAlignment. Center;
 ```
 
- Di sini kita menggunakan`AbsoluteHorizontalDistance` properti untuk mengatur jarak horizontal absolut tabel dari tepi kiri halaman. Kami juga menggunakan`RelativeVerticalAlignment` properti untuk menyetel perataan vertikal relatif tabel terhadap konten di sekitarnya.
+ Di sini kita menggunakan`AbsoluteHorizontalDistance` properti untuk mengatur jarak horizontal absolut tabel dari tepi kiri halaman. Kami juga menggunakan`RelativeVerticalAlignment` properti untuk mengatur perataan vertikal relatif tabel terhadap konten di sekitarnya.
 
 ## Langkah 4: Menyimpan dokumen yang dimodifikasi
 Terakhir, kita perlu menyimpan dokumen yang dimodifikasi dengan tabel diposisikan dalam posisi mengambang. Gunakan kode berikut:

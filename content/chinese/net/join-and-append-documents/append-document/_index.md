@@ -10,7 +10,7 @@ url: /zh/net/join-and-append-documents/append-document/
 
 ## 介绍
 
-嗨！您是否曾经需要将两个 Word 文档合并为一个，同时保持原始格式不变？无论您是编制报告、创建大量项目文档，还是只是尝试简化文档管理，Aspose.Words for .NET 都能让您的生活变得轻松很多。在本教程中，我们将探索如何使用 Aspose.Words for .NET 将一个 Word 文档附加到另一个 Word 文档，并详细分解每个步骤。在本指南结束时，您将能够像专业人士一样合并文档！
+嗨！您是否曾经需要将两个 Word 文档合并为一个，同时保持原始格式不变？无论您是编制报告、创建大量项目文档，还是只是想简化文档管理，Aspose.Words for .NET 都能让您的生活变得轻松很多。在本教程中，我们将探索如何使用 Aspose.Words for .NET 将一个 Word 文档附加到另一个 Word 文档，并详细分解每个步骤。在本指南结束时，您将像专业人士一样合并文档！
 
 ## 先决条件
 
@@ -77,7 +77,7 @@ dstDoc.Save(dataDir + "AppendedDocument.docx");
 
 ## 结论
 
-就这样！您已经成功学会了如何使用 Aspose.Words for .NET 将一个 Word 文档附加到另一个文档。本教程介绍了设置环境、加载文档、将一个文档附加到另一个文档（同时保留源格式）以及保存合并的文档。Aspose.Words 提供了广泛的功能，因此请务必探索[API 文档](https://reference.aspose.com/words/net/)以充分发挥其潜力。
+就这样！您已经成功学会了如何使用 Aspose.Words for .NET 将一个 Word 文档附加到另一个文档。本教程介绍了设置环境、加载文档、将一个文档附加到另一个文档（同时保留源格式）以及保存合并的文档。Aspose.Words 提供了广泛的功能，因此请务必探索[API 文档](https://reference.aspose.com/words/net/)以释放其全部潜力。
 
 ## 常见问题解答
 

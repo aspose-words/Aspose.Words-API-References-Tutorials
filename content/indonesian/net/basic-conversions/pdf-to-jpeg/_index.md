@@ -91,4 +91,4 @@ Memang itu. Aspose.Words mendukung .NET Framework dan .NET Core.
  Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/) atau membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
 ### Di mana saya dapat menemukan lebih banyak tutorial tentang Aspose.Words?
- Lihat[dokumentasi](https://reference.aspose.com/words/net/) untuk banyak tutorial dan panduan.
+ Lihat[dokumentasi](https://reference.aspose.com/words/net/) untuk sejumlah tutorial dan panduan.

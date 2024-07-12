@@ -22,7 +22,7 @@ Než se ponoříme do podrobností o hledání a nahrazování textu, ujistěte 
 
  Knihovnu Aspose.Words for Java si můžete stáhnout z[tady](https://releases.aspose.com/words/java/).
 
-## Hledání a nahrazování jednoduchého textu
+## Vyhledání a nahrazení jednoduchého textu
 
 ```java
 // Vložte dokument

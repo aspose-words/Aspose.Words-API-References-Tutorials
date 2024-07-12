@@ -17,7 +17,7 @@ Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 - Základní znalost C# a Word Processing s dokumenty Word.
 
 ## Krok 1: Nastavte adresář dokumentů
- Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři, kam chcete dokument uložit.
+ Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou k adresáři, kam chcete dokument uložit.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -40,7 +40,7 @@ builder.InsertNode(sdtCheckBox);
 ```
 
 ## Krok 4: Uložte dokument
- Uložte dokument do určeného adresáře pomocí`Save` metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu dokument uložíme jako „WorkingWithSdt.CheckBoxTypeContentControl.docx“.
+ Uložte dokument do určeného adresáře pomocí`Save`metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu dokument uložíme jako „WorkingWithSdt.CheckBoxTypeContentControl.docx“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);

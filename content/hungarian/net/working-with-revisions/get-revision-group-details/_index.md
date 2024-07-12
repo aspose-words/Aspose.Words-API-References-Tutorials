@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### K: Hogyan szerezhetem meg az Aspose.Words for .NET-ben található revíziócsoport részleteit?
 
-V: Menjen végig a dokumentum revízióin egy hurok segítségével, és érje el az egyes változatok tulajdonságait a kívánt részletek eléréséhez. Használhatja a`RevisionType`, `Author`, `DateTime` és`ParentNode` tulajdonságokat, hogy megkapja a revízió típusát, szerzőjét, dátumát és átdolgozott szövegét.
+V: Menjen végig a dokumentum revízióin egy hurok segítségével, és érje el az egyes változatok tulajdonságait a kívánt részletek eléréséhez. Használhatja a`RevisionType`, `Author`, `DateTime`és`ParentNode` tulajdonságokat, hogy megkapja a revízió típusát, szerzőjét, dátumát és átdolgozott szövegét.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

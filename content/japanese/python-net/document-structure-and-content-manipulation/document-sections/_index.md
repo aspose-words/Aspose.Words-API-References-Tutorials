@@ -82,7 +82,7 @@ doc_builder.write("Content after page break.")
 
 結論として、Aspose.Words for Python を使用すると、開発者はドキュメントのセクション、レイアウト、書式設定をシームレスに管理できるようになります。このチュートリアルでは、セクションの作成と変更、ページ レイアウトのカスタマイズ、ヘッダーとフッターの操作、ページ区切りの管理について説明しました。
 
-詳細情報と詳細なAPIリファレンスについては、[Aspose.Words for Python ドキュメント](https://reference.aspose.com/words/python-net/).
+詳しい情報と詳細なAPIリファレンスについては、[Aspose.Words for Python ドキュメント](https://reference.aspose.com/words/python-net/).
 
 ## よくある質問
 

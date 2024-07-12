@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- โดยการตั้งค่า`AddSpaceBetweenFarEastAndAlpha` และ`AddSpaceBetweenFarEastAndDigit` ถึง`true`เราบอกให้ Aspose.Words ปรับระยะห่างระหว่างอักขระเอเชียและตัวอักษรละตินหรือตัวเลขโดยอัตโนมัติ
+ โดยการตั้งค่า`AddSpaceBetweenFarEastAndAlpha`และ`AddSpaceBetweenFarEastAndDigit` ถึง`true`เราบอกให้ Aspose.Words ปรับระยะห่างระหว่างอักขระเอเชียและตัวอักษรละตินหรือตัวเลขโดยอัตโนมัติ
 
 ## ขั้นตอนที่ 3: การเพิ่มข้อความลงในเอกสาร
 

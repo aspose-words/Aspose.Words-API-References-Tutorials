@@ -75,7 +75,7 @@ A: Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die Textverar
 
 #### F: Wie lade ich ein Word-Dokument mit Aspose.Words für .NET?
 
-A: Um ein Word-Dokument mit Aspose.Words für .NET zu laden, können Sie den`Document` Klasse und deren Konstruktor. Sie müssen den Dateipfad oder Stream des Dokuments als Parameter angeben. Hier ist ein Beispiel:
+ A: Um ein Word-Dokument mit Aspose.Words für .NET zu laden, können Sie den`Document` Klasse und deren Konstruktor. Sie müssen den Dateipfad oder Stream des Dokuments als Parameter angeben. Hier ist ein Beispiel:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

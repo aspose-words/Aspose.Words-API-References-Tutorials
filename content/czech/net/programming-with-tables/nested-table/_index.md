@@ -82,7 +82,7 @@ Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Toto volání je důležité pro vytvoření vnořené tabulky v první tabulce.
-	// Bez tohoto volání budou buňky vložené níže připojeny k vnější tabulce.
+	//Bez tohoto volání budou buňky vložené níže připojeny k vnější tabulce.
 	builder.EndTable();
 	// Přesuňte se do první buňky vnější tabulky.
 	builder.MoveTo(cell.FirstParagraph);

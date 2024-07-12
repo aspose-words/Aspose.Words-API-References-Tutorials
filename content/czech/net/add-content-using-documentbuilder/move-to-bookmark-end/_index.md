@@ -130,7 +130,7 @@ Tady to máš! Právě jste se naučili, jak se přesunout na konec záložky v 
 
 ### 1. Mohu se přesunout na začátek záložky místo na konec?
 
- Absolutně! Stačí nastavit`isBookmarkStart` parametr do`true` a`isBookmarkEnd` na`false` v`MoveToBookmark` metoda.
+ Absolutně! Stačí nastavit`isBookmarkStart` parametr k`true`a`isBookmarkEnd` na`false` v`MoveToBookmark` metoda.
 
 ### 2. Co když je název mé záložky nesprávný?
 

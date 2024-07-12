@@ -11,7 +11,7 @@ Aspose.Words untuk .NET adalah perpustakaan yang kuat untuk membuat, mengedit, d
 
 ## Memahami perpustakaan Aspose.Words
 
-Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk menghapus teks dalam rentang tertentu.
+Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk menghapus teks dalam rentang tertentu.
 
 ## Memuat dokumen Word
 
@@ -75,7 +75,7 @@ J: Aspose.Words for .NET adalah perpustakaan yang kuat untuk Pemrosesan Kata den
 
 #### T: Bagaimana cara memuat dokumen Word menggunakan Aspose.Words untuk .NET?
 
-J: Untuk memuat dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document` kelas dan konstruktornya. Anda perlu menyediakan jalur file atau aliran dokumen sebagai parameter. Berikut ini contohnya:
+ J: Untuk memuat dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document` kelas dan konstruktornya. Anda perlu menyediakan jalur file atau aliran dokumen sebagai parameter. Berikut ini contohnya:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
@@ -111,7 +111,7 @@ J: Ya, fungsionalitas "Rentang Hapus Teks Dalam Dokumen Word" di Aspose.Words un
 
 #### T: Apakah ada batasan atau pertimbangan saat menggunakan fungsionalitas "Rentang Hapus Teks di Dokumen Word" di Aspose.Words untuk .NET?
 
-J: Saat menggunakan fungsionalitas "Rentang Hapus Teks Dalam Dokumen Word", penting untuk memastikan bahwa Anda menargetkan rentang yang benar untuk dihapus. Perhatian harus diberikan untuk menghindari penghapusan konten yang tidak diinginkan secara tidak sengaja. Selain itu, pertimbangkan dampaknya terhadap format dan struktur dokumen setelah penghapusan, karena elemen lain mungkin berubah atau disesuaikan.
+J: Saat menggunakan fungsionalitas "Rentang Hapus Teks Dalam Dokumen Word", penting untuk memastikan bahwa Anda menargetkan rentang yang benar untuk dihapus. Kehati-hatian harus diberikan untuk menghindari penghapusan konten yang tidak diinginkan secara tidak sengaja. Selain itu, pertimbangkan dampaknya terhadap format dan struktur dokumen setelah penghapusan, karena elemen lain mungkin berubah atau disesuaikan.
 
 #### Q:. Bisakah saya menghapus konten teks dalam paragraf tertentu atau rentang khusus lainnya menggunakan fungsionalitas "Rentang Hapus Teks Dalam Dokumen Word" di Aspose.Words untuk .NET?
 

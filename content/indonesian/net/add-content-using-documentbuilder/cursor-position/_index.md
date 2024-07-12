@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Inisialisasi Dokumen
 
- Mari kita mulai dengan membuat dokumen Word baru. Kami akan menggunakan`Document` Dan`DocumentBuilder` kelas dari Aspose.Words.
+ Mari kita mulai dengan membuat dokumen Word baru. Kami akan menggunakan`Document`Dan`DocumentBuilder` kelas dari Aspose.Words.
 
 ```csharp
 Document doc = new Document();

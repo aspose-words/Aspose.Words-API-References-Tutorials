@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
 
-Dans ce didacticiel, nous vous expliquerons les étapes permettant de réduire la taille d'un PDF en désactivant l'intégration des polices Windows dans un document PDF avec Aspose.Words pour .NET. En désactivant l'intégration des polices, vous pouvez réduire la taille du fichier PDF généré. Suivez les étapes ci-dessous :
+Dans ce didacticiel, nous vous expliquerons les étapes permettant de réduire la taille d'un PDF en désactivant l'intégration des polices Windows dans un document PDF avec Aspose.Words for .NET. En désactivant l'intégration des polices, vous pouvez réduire la taille du fichier PDF généré. Suivez les étapes ci-dessous :
 
 ## Étape 1 : Chargement du document
 
@@ -92,4 +92,4 @@ R : La désactivation de l'intégration des polices Windows dans un document P
 
 Perte d'apparence et de formatage : si les polices Windows spécifiées dans le document ne sont pas disponibles sur le système sur lequel le PDF est ouvert, des polices de remplacement seront utilisées, ce qui peut entraîner une apparence et un formatage incorrects. de forme différente de celles attendues.
 
-Problèmes de lisibilité : si les polices de substitution utilisées ne sont pas aussi lisibles que les polices d'origine, cela peut affecter la lisibilité du texte dans le document PDF.
+Problèmes de lisibilité : si les polices de remplacement utilisées ne sont pas aussi lisibles que les polices d'origine, cela peut affecter la lisibilité du texte dans le document PDF.

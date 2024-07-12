@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- На этом этапе мы настраиваем параметры загрузки документа TXT. Мы создаем новый`TxtLoadOptions` объект и установите`LeadingSpacesOptions` и`TrailingSpacesOptions` свойства для`TxtLeadingSpacesOptions.Trim` и`TxtTrailingSpacesOptions.Trim` соответственно. Это сообщает Aspose.Words удалять начальные и конечные пробелы из строк при загрузке документа.
+ На этом этапе мы настраиваем параметры загрузки документа TXT. Мы создаем новый`TxtLoadOptions` объект и установите`LeadingSpacesOptions`и`TrailingSpacesOptions` свойства для`TxtLeadingSpacesOptions.Trim`и`TxtTrailingSpacesOptions.Trim` соответственно. Это сообщает Aspose.Words удалять начальные и конечные пробелы из строк при загрузке документа.
 
 ## Шаг 4: Загрузка документа
 

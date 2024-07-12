@@ -2,7 +2,7 @@
 title: ページ設定とセクションの書式設定
 linktitle: ページ設定とセクションの書式設定
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメントのレイアウトとセクションの書式を設定する手順ガイド。
+description: Aspose.Words for .NET を使用してドキュメントのレイアウトとセクションの書式を設定するためのステップバイステップ ガイド。
 type: docs
 weight: 10
 url: /ja/net/programming-with-document-options-and-settings/set-page-setup-and-section-formatting/

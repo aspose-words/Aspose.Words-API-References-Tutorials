@@ -8,7 +8,7 @@ weight: 10
 url: /ja/net/working-with-revisions/get-revision-group-details/
 ---
 
-このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の一連の変更の詳細を取得する方法を説明します。完全なソース コードを提供し、マークダウン出力の書式設定方法を説明します。
+このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の一連の変更の詳細を取得する方法を説明します。完全なソース コードを提供し、マークダウン出力をフォーマットする方法を説明します。
 
 ## ステップ1: ドキュメントの読み込み
 

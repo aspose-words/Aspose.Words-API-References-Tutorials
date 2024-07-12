@@ -103,4 +103,4 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ```
 
 ## Slutsats
-I den här handledningen lärde vi oss hur man ställer in föredragna breddinställningar för tabellceller i ett Word-dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden och implementera den medföljande C#-koden kan du anpassa dina tabellcellbredder till dina specifika behov i dina Word-dokument.
+den här handledningen lärde vi oss hur man ställer in föredragna breddinställningar för tabellceller i ett Word-dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden och implementera den medföljande C#-koden kan du anpassa dina tabellcellbredder till dina specifika behov i dina Word-dokument.

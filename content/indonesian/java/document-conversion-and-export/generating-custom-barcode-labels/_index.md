@@ -20,7 +20,7 @@ Sebelum kita mendalami detail pembuatan label kode batang khusus, pastikan kita 
 
 2.  Aspose.Words for Java: Unduh dan instal Aspose.Words for Java dari[Di Sini](https://releases.aspose.com/words/java/).
 
-3. Pengetahuan Dasar tentang Java: Keakraban dengan pemrograman Java akan sangat membantu karena kita akan menulis kode Java untuk membuat label barcode khusus.
+3. Pengetahuan Dasar Java: Keakraban dengan pemrograman Java akan sangat membantu karena kita akan menulis kode Java untuk membuat label barcode khusus.
 
 ## Membuat Label Barcode Kustom
 

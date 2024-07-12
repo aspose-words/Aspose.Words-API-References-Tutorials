@@ -39,7 +39,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new Odt
 //文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//加载使用指定密码的加密文档
+//使用指定密码加载加密文档
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
 //使用新密码保存加密文档
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new Odt
 
 #### 问：我可以使用 Aspose.Words 更改加密文档的密码吗？
 
-答：当然可以！Aspose.Words 允许您使用新密码保存加密文档，让您能够根据需要灵活地更新密码。
+答：当然可以！Aspose.Words 允许您使用新密码保存加密文档，让您可以根据需要灵活地更新密码。
 
 #### 问：Aspose.Words 支持哪些加密算法？
 

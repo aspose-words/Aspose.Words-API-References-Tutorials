@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Adım 2: Yeni Bir Belge Oluşturun
 
- Tamam, yeni bir Word belgesi oluşturarak başlayalım. biz kullanacağız`Document` Ve`DocumentBuilder` İşleri yoluna koymak için Aspose.Words'ten dersler.
+ Tamam, yeni bir Word belgesi oluşturarak başlayalım. biz kullanacağız`Document`Ve`DocumentBuilder` İşleri yoluna koymak için Aspose.Words'ten dersler.
 
 ```csharp
 // Belgeler dizininin yolu.

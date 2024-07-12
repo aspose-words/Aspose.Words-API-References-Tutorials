@@ -2,24 +2,40 @@
 title: Határozza meg az XY tengely tulajdonságait egy diagramon
 linktitle: Határozza meg az XY tengely tulajdonságait egy diagramon
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan határozhatja meg az XY tengely tulajdonságait egy diagramban az Aspose.Words for .NET használatával. Bemutatjuk az X és Y tengely testreszabási lehetőségeit.
+description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan határozhatja meg az XY tengely tulajdonságait egy diagramban az Aspose.Words for .NET használatával. Tökéletes .NET fejlesztőknek.
 type: docs
 weight: 10
 url: /hu/net/programming-with-charts/define-xyaxis-properties/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan használható az Aspose.Words for .NET az X és Y tengely tulajdonságainak meghatározására egy diagramon. A mellékelt forráskód bemutatja, hogyan hozhat létre diagramot, hogyan adhat hozzá sorozatadatokat, és hogyan testreszabhatja a tengely tulajdonságait.
+A diagramok hatékony eszközt jelentenek az adatok megjelenítésére. Ha professzionális dokumentumokat kell létrehoznia dinamikus diagramokkal, az Aspose.Words for .NET felbecsülhetetlen értékű könyvtár. Ez a cikk végigvezeti az XY tengely tulajdonságainak diagramon történő meghatározásának folyamatán az Aspose.Words for .NET használatával, az egyes lépéseket lebontva az egyértelműség és a könnyebb érthetőség érdekében.
 
-## 1. lépés: Állítsa be a projektet
+## Előfeltételek
 
-Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+Mielőtt belemerülne a kódolásba, meg kell felelnie néhány előfeltételnek:
 
-- Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
-- Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+2. Fejlesztési környezet: Szüksége van egy integrált fejlesztői környezetre (IDE), például a Visual Studiora.
+3. .NET-keretrendszer: Győződjön meg arról, hogy a fejlesztői környezete be van állítva a .NET-fejlesztéshez.
+4. Alapvető C# ismerete: Ez az útmutató feltételezi, hogy rendelkezik a C# programozás alapvető ismereteivel.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+## Névterek importálása
 
- Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
+Először is importálnia kell a szükséges névtereket a projektbe. Ez biztosítja, hogy hozzáférjen a dokumentumok és diagramok létrehozásához és kezeléséhez szükséges összes osztályhoz és módszerhez.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+A folyamatot egyszerű lépésekre bontjuk, amelyek mindegyike az XY tengely tulajdonságainak diagramban történő meghatározásának egy-egy részére összpontosít.
+
+## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
+
+ Először is inicializálnia kell egy új dokumentumot, és a`DocumentBuilder` tárgy. A`DocumentBuilder` segít a tartalom beillesztésében a dokumentumba.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -29,48 +45,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ezután szúrjon be egy diagramot a dokumentumba a gombbal`InsertChart` módszere a`DocumentBuilder`. Ebben a példában egy területdiagramot szúrunk be.
+## 2. lépés: Helyezzen be egy diagramot
+
+Ezután beszúr egy diagramot a dokumentumba. Ebben a példában egy területdiagramot fogunk használni. Szükség szerint testreszabhatja a diagram méreteit.
 
 ```csharp
+// Diagram beszúrása
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. lépés: Adja hozzá a sorozatadatokat a diagramhoz
+## 3. lépés: Alapértelmezett sorozat törlése és egyéni adatok hozzáadása
 
-Sorozatadatok hozzáadása a diagramhoz. Ebben a példában öt adatpontot adunk hozzá a megfelelő dátumokkal és értékekkel.
+Alapértelmezés szerint a diagramnak néhány előre meghatározott sorozata lesz. Töröljük ezeket, és hozzáadjuk egyéni adatsorainkat.
 
 ```csharp
 chart.Series.Clear();
 chart.Series.Add("Aspose Series 1",
-    new DateTime[]
-    {
-        new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-        new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-    },
-    new double[] { 640, 320, 280, 120, 150 });
+	new DateTime[]
+	{
+		new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
+		new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
+	},
+	new double[] { 640, 320, 280, 120, 150 });
 ```
 
-## 4. lépés: Az X és Y tengely tulajdonságainak testreszabása
+## 4. lépés: Határozza meg az X tengely tulajdonságait
 
- Az X és Y tengely tulajdonságainak testreszabásához nyissa meg a`ChartAxis` a diagramhoz társított objektumok.
+Most itt az ideje, hogy meghatározzuk az X tengely tulajdonságait. Ez magában foglalja a kategória típusának beállítását, a tengely keresztezésének testreszabását, valamint a pipajelek és címkék beállítását.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
-ChartAxis yAxis = chart.AxisY;
-```
-
- Módosítsa a tulajdonságait`xAxis` és`yAxis`objektumokat az X és Y tengely kívánt opcióinak beállításához. Ebben a példában bemutatunk néhány általános tulajdonságot, amelyek testreszabhatók.
-
-```csharp
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3;
+xAxis.CrossesAt = 3; //Az Y tengely kijelzési egységeiben mérve (száz).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 xAxis.TickLabelOffset = 200;
+```
 
+## 5. lépés: Határozza meg az Y tengely tulajdonságait
+
+Hasonlóképpen beállíthatja az Y tengely tulajdonságait. Ez magában foglalja a pipa címke pozíciójának, a fő- és mellékegységek, a megjelenítési egység és a méretezés beállítását.
+
+```csharp
+ChartAxis yAxis = chart.AxisY;
 yAxis.TickLabelPosition = AxisTickLabelPosition.High;
 yAxis.MajorUnit = 100;
 yAxis.MinorUnit = 50;
@@ -79,78 +99,31 @@ yAxis.Scaling.Minimum = new AxisBound(100);
 yAxis.Scaling.Maximum = new AxisBound(700);
 ```
 
-## 5. lépés: Mentse el a dokumentumot
+## 6. lépés: Mentse el a dokumentumot
 
- Végül mentse a dokumentumot a megadott könyvtárba a`Save` módszere a`Document` tárgy.
+Végül mentse a dokumentumot a megadott könyvtárba. Ez létrehozza a Word dokumentumot a testreszabott diagrammal.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-Ezzel befejeződik az XY tengely tulajdonságainak diagramban történő meghatározásának megvalósítása az Aspose.Words for .NET használatával.
-
-### Példa forráskód a Define XYAxis tulajdonságokhoz az Aspose.Words for .NET használatával 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Diagram beszúrása
-	Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new DateTime[]
-		{
-			new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-			new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-		},
-		new double[] { 640, 320, 280, 120, 150 });
-	ChartAxis xAxis = chart.AxisX;
-	ChartAxis yAxis = chart.AxisY;
-	// Módosítsa az X tengelyt dátum helyett kategóriára, így az összes pont egyenlő időközönként kerül az X tengelyre.
-	xAxis.CategoryType = AxisCategoryType.Category;
-	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; //Az Y tengely kijelzési egységeiben mérve (száz).
-	xAxis.ReverseOrder = true;
-	xAxis.MajorTickMark = AxisTickMark.Cross;
-	xAxis.MinorTickMark = AxisTickMark.Outside;
-	xAxis.TickLabelOffset = 200;
-	yAxis.TickLabelPosition = AxisTickLabelPosition.High;
-	yAxis.MajorUnit = 100;
-	yAxis.MinorUnit = 50;
-	yAxis.DisplayUnit.Unit = AxisBuiltInUnit.Hundreds;
-	yAxis.Scaling.Minimum = new AxisBound(100);
-	yAxis.Scaling.Maximum = new AxisBound(700);
-	doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
-```
-
 ## Következtetés
 
-Ebben az oktatóanyagban megtanulta, hogyan határozhatja meg az X és Y tengely tulajdonságait egy diagramon az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével diagramot hozhat létre, sorozatadatokat adhat hozzá, és testreszabhatja a tengely tulajdonságait, hogy megfeleljenek az Ön speciális követelményeinek. Az Aspose.Words for .NET átfogó API-t biztosít a Word-dokumentumokban lévő diagramokkal a szövegfeldolgozáshoz, amely lehetővé teszi a diagram különböző aspektusainak, köztük a tengelyek kezelését.
+Word-dokumentumok diagramjainak létrehozása és testreszabása az Aspose.Words for .NET használatával egyszerű, ha megértette a szükséges lépéseket. Ez az útmutató végigvezeti az XY tengely tulajdonságainak diagramban történő meghatározásának folyamatán, a dokumentum inicializálásától a végtermék mentéséig. Ezekkel a készségekkel részletes, professzionális megjelenésű diagramokat hozhat létre, amelyek javítják dokumentumait.
 
- hozzáféréssel a`ChartAxis` A diagramhoz társított objektumokkal módosíthatja a tulajdonságokat, például a kategória típusát, a tengelykereszteket, a pipajeleket, a címkepozíciókat, a méretezést stb. Ez a rugalmasság lehetővé teszi a diagram tengelyeinek megjelenésének és viselkedésének testreszabását az adatok hatékony megjelenítése érdekében.
+## GYIK
 
-Az Aspose.Words for .NET használatával zökkenőmentesen integrálhatja a diagramkészítési és testreszabási lehetőségeket .NET-alkalmazásaiba, és automatizálhatja a professzionális megjelenésű dokumentumok létrehozását gazdag vizualizációkkal.
+### Milyen típusú diagramokat hozhatok létre az Aspose.Words for .NET segítségével?
+Különféle típusú diagramokat hozhat létre, beleértve a területet, oszlopot, vonalat, kört és még sok mást.
 
-### GYIK
+### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
+ Az Aspose.Words for .NET letölthető innen[itt](https://releases.aspose.com/words/net/) és kövesse a mellékelt telepítési utasításokat.
 
-#### Q1. Mi az Aspose.Words for .NET?
-Az Aspose.Words for .NET egy hatékony dokumentumfeldolgozó könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és mentését .NET-alkalmazásokban. Funkciók széles skáláját kínálja a dokumentumelemekkel, beleértve a diagramokat is tartalmazó szövegfeldolgozáshoz.
+### Testreszabhatom a diagramjaim megjelenését?
+Igen, az Aspose.Words for .NET lehetővé teszi a diagramok széles körű testreszabását, beleértve a színeket, a betűtípusokat és a tengelytulajdonságokat.
 
-#### Q2. Hogyan telepíthetem az Aspose.Words for .NET fájlt?
-Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjével töltse le. Egyszerűen keresse meg az „Aspose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
+ Igen, ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/).
 
-#### Q3. Testreszabhatom a diagram egyéb szempontjait az Aspose.Words for .NET használatával?
-Igen, az Aspose.Words for .NET kiterjedt lehetőségeket kínál a diagramok különböző szempontjainak testreszabásához. A tengely tulajdonságainak megadása mellett módosíthatja a diagram típusát, adatsorait, jelmagyarázatát, címét, diagramterületét, adatcímkéit és a diagram sok más elemét. Az API finoman szabályozza a diagram megjelenését és viselkedését.
-
-#### Q4. Létrehozhatok különböző típusú diagramokat az Aspose.Words for .NET használatával?
- Igen, az Aspose.Words for .NET diagramtípusok széles skáláját támogatja, beleértve a területet, sávot, vonalat, kört, szórványt és egyebeket. Használhatja a`ChartType` felsorolás a kívánt diagramtípus megadásához, amikor diagram alakzatot szúr be egy Word dokumentumba.
-
-#### Q5. Elmenthetem a diagramot különböző formátumokban?
-Igen, az Aspose.Words for .NET lehetővé teszi a diagramot tartalmazó dokumentum különböző formátumok, például DOCX, PDF, HTML stb. Kiválaszthatja az igényeinek megfelelő formátumot, és használhatja a`Save` módszere a`Document` objektumot a dokumentum mentéséhez.
-
-#### Q6. Alkalmazhatom ezeket a technikákat egy dokumentum több diagramjára?
- Igen, ezeket a technikákat egy dokumentum több diagramjára is alkalmazhatja, ha minden diagramnál megismétli a szükséges lépéseket. Létrehozhat külön`Chart` és`ChartAxis` objektumokat minden diagramhoz, és ennek megfelelően testreszabhatja tulajdonságaikat. Az Aspose.Words for .NET teljes mértékben támogatja a szövegfeldolgozást, több diagrammal egyetlen dokumentumban.
+### Hol találok további oktatóanyagokat és dokumentációt?
+ További oktatóanyagokat és részletes dokumentációt találhat a[Aspose.Words for .NET dokumentációs oldal](https://reference.aspose.com/words/net/).

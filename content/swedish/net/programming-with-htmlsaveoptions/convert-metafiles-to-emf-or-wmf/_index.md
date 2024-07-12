@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Denna kod skapar en instans av`Document` och`DocumentBuilder` att bygga dokumentet. Den infogar en`<img>` tagga in i dokumentet med en base64-kodad bild.
+ Denna kod skapar en instans av`Document`och`DocumentBuilder` att bygga dokumentet. Den infogar en`<img>` tagga in i dokumentet med en base64-kodad bild.
 
 ## Steg 3: Ställ in HTML-sparalternativ
 

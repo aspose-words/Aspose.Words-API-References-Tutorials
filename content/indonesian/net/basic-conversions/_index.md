@@ -14,7 +14,7 @@ Konversi Dasar memandu Anda melalui konversi dokumen dasar menggunakan pustaka A
 | Judul | Keterangan |
 | --- | --- |
 | [Konversikan Dokumen ke Docx](./doc-to-docx/) | Pelajari cara mengonversi DOC ke DOCX menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah dengan contoh kode. Sempurna untuk pengembang.  |
-| [Konversi Docx Ke Rtf](./docx-to-rtf/) | Pelajari cara mengonversi DOCX ke RTF menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Ideal untuk pengembang yang mencari solusi efisien.  |  
+| [Ubah Docx Ke Rtf](./docx-to-rtf/) | Pelajari cara mengonversi DOCX ke RTF menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Ideal untuk pengembang yang mencari solusi efisien.  |  
 | [Konversi File Word ke PDF](./docx-to-pdf/) | Pelajari cara mudah mengonversi file Word ke PDF menggunakan Aspose.Words untuk .NET dengan panduan kami. Sempurna untuk pengembang yang mencari konversi dokumen yang cepat dan andal. | 
 | [Konversi Docx Ke Byte](./docx-to-byte/) | Pelajari cara mengonversi Docx ke array byte di .NET menggunakan Aspose.Words untuk pemrosesan dokumen yang efisien. Panduan langkah demi langkah disertakan. |  
 | [Konversi Docx Ke Epub](./docx-to-epub/) | Konversi DOCX ke EPUB dengan mudah menggunakan Aspose.Words untuk .NET. Ikuti tutorial kami untuk integrasi yang lancar ke dalam aplikasi .NET Anda. |

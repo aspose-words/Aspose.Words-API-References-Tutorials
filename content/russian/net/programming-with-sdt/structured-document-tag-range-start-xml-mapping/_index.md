@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Шаг 2. Загрузите документ и создайте XML-часть.
- Загрузите документ Word, используя`Document` конструктор, передавая путь к документу в качестве параметра. Создайте часть XML, содержащую данные, которые вы хотите отобразить в теге структурированного документа.
+ Загрузите документ Word, используя`Document`конструктор, передавая путь к документу в качестве параметра. Создайте часть XML, содержащую данные, которые вы хотите отобразить в теге структурированного документа.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Создайте StructuredDocumentTag, который будет отображать содержимое нашей CustomXmlPart в документе.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Если мы установим сопоставление для нашего StructuredDocumentTag,
-	// он будет отображать только часть CustomXmlPart, на которую указывает XPath.
+	//он будет отображать только часть CustomXmlPart, на которую указывает XPath.
 	// Этот XPath будет указывать на содержимое второго элемента «<text>» первого элемента «<root>» нашей CustomXmlPart.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

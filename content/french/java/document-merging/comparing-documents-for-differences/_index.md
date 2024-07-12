@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Remplacer`"original_document.docx"` et`"modified_document.docx"` avec les chemins d'accès à vos propres documents.
+ Remplacer`"original_document.docx"`et`"modified_document.docx"` avec les chemins d'accès à vos propres documents.
 
 ## Étape 2 : Comparez les documents
 

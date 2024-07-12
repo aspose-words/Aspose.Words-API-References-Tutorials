@@ -35,7 +35,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
 
-//フォント設定を文書に適用する
+//フォント設定をドキュメントに適用する
 doc.FontSettings = fontSettings;
 ```
 

@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- Bu adımda şuraya erişiyoruz:`Theme` nesnesi`Document`belge temasını almak için nesne. Daha sonra ikincil yazı tipleri gibi tema özelliklerini değiştirebiliriz (`MinorFonts.Latin`) ve renkler (`Colors.Hyperlink`).
+Bu adımda şuraya erişiyoruz:`Theme` nesnesi`Document` belge temasını almak için nesne. Daha sonra ikincil yazı tipleri gibi tema özelliklerini değiştirebiliriz (`MinorFonts.Latin`) ve renkler (`Colors.Hyperlink`).
 
 ## 4. Adım: Belgeyi kaydedin
 

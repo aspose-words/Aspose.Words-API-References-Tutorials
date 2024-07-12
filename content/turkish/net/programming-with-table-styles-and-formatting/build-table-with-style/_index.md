@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## 7. Adım: Hücrelere içerik ekleyin
- Artık hücreleri kullanarak hücrelere içerik ekleyebiliriz.`Writeln()` Ve`InsertCell()` belge oluşturucunun yöntemleri. Bu örnekte "Öğe" ve "Miktar () başlıklarını ekliyoruz.
+ Artık hücreleri kullanarak hücrelere içerik ekleyebiliriz.`Writeln()`Ve`InsertCell()` belge oluşturucunun yöntemleri. Bu örnekte "Öğe" ve "Miktar () başlıklarını ekliyoruz.
 
 kg)" ve ilgili veriler.
 

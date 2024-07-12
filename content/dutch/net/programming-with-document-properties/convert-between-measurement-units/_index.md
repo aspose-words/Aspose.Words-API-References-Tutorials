@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Deze code maakt gebruik van de`ConvertUtil` klasse van Aspose.Words om de opgegeven waarden naar inches te converteren (`InchToPoint` ). U kunt ook andere conversiemethoden gebruiken die beschikbaar zijn in de`ConvertUtil` klasse om waarden naar andere meeteenheden om te zetten.
+ Deze code maakt gebruik van de`ConvertUtil` klasse van Aspose.Words om de opgegeven waarden naar inches te converteren (`InchToPoint`). U kunt ook andere conversiemethoden gebruiken die beschikbaar zijn in de`ConvertUtil` klasse om waarden naar andere meeteenheden om te zetten.
 
 ### Voorbeeldbroncode voor converteren tussen meeteenheden met Aspose.Words voor .NET
 
@@ -56,4 +56,4 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
   
 ```
 
-hebt nu geleerd hoe u tussen maateenheden kunt converteren bij het opgeven van marges, kop- en voettekstafstanden, enz. in een document met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze tutorial te volgen, kunt u eenvoudig de waarden in de gewenste maateenheden in uw eigen documenten opgeven.
+U hebt nu geleerd hoe u tussen maateenheden kunt converteren bij het opgeven van marges, kop- en voettekstafstanden, enz. in een document met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze tutorial te volgen, kunt u eenvoudig de waarden in de gewenste maateenheden in uw eigen documenten opgeven.

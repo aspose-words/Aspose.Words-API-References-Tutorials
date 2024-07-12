@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- ในตัวอย่างนี้ เรากำลังโหลดหน้าแรกของเอกสาร PDF คุณสามารถเปลี่ยนค่าของ`PageIndex` และ`PageCount` ไปจนถึงช่วงหน้าที่ต้องการ
+ ในตัวอย่างนี้ เรากำลังโหลดหน้าแรกของเอกสาร PDF คุณสามารถเปลี่ยนค่าของ`PageIndex`และ`PageCount` ไปจนถึงช่วงหน้าที่ต้องการ
 
 ## ขั้นตอนที่ 2: บันทึกเอกสาร
 

@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Αρχικοποιήστε το έγγραφο
 
- Ας ξεκινήσουμε δημιουργώντας ένα νέο έγγραφο του Word. Θα χρησιμοποιήσουμε το`Document` και`DocumentBuilder` τάξεις από το Aspose.Λέξεις.
+ Ας ξεκινήσουμε δημιουργώντας ένα νέο έγγραφο του Word. Θα χρησιμοποιήσουμε το`Document`και`DocumentBuilder` τάξεις από το Aspose.Λέξεις.
 
 ```csharp
 Document doc = new Document();

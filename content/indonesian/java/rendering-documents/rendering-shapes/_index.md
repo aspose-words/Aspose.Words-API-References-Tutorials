@@ -39,7 +39,7 @@ ShapeRenderer render = shape.getShapeRenderer();
 
 ## 5. Merender Bentuk sebagai Gambar EMF
 
- Kini sampai pada bagian yang menarik - menampilkan bentuk sebagai gambar EMF. Kami akan menggunakan`ImageSaveOptions` kelas untuk menentukan format keluaran dan menyesuaikan rendering.
+ Kini sampai pada bagian yang menarik - menampilkan bentuk sebagai gambar EMF. Kami akan menggunakan`ImageSaveOptions` kelas untuk menentukan format output dan menyesuaikan rendering.
 
 ```java
 ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.EMF);

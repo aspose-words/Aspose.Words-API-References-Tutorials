@@ -129,4 +129,4 @@ Ano, Aspose.Words poskytuje podrobné informace o revizi, ke kterým můžete p�
 Ano, ale musíte nejprve odemknout dokumenty pomocí příslušného hesla.
 
 ### Kde najdu další příklady a dokumentaci?  
- Další příklady a podrobnou dokumentaci naleznete na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/).
+ Další příklady a podrobnou dokumentaci naleznete na[Aspose.Words pro .NET dokumentaci](https://reference.aspose.com/words/net/).

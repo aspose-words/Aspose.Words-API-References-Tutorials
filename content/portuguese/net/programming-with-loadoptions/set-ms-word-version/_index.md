@@ -58,7 +58,7 @@ Neste guia, explicamos como fazer upload de um documento especificando uma vers�
 
 #### P: Por que eu precisaria especificar a versão do MS Word ao carregar um documento em um aplicativo C#?
 
-Especificar a versão do MS Word garante que o documento seja carregado e processado corretamente, especialmente quando se trata de formatação ou recursos específicos que podem variar entre diferentes versões.
+Especificar a versão do MS Word garante que o documento seja carregado e processado corretamente, especialmente quando se trata de formatação ou recursos específicos que podem variar entre as diferentes versões.
 
 #### P: Quais versões do MS Word o Aspose.Words suporta?
 

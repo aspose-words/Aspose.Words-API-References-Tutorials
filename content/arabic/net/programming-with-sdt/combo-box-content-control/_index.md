@@ -17,7 +17,7 @@ url: /ar/net/programming-with-sdt/combo-box-content-control/
 - المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
+ ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## الخطوة 3: إضافة عناصر إلى مربع التحرير والسرد
- إضافة عناصر إلى مربع التحرير والسرد باستخدام`ListItems` ملكية`StructuredDocumentTag` يتم تمثيل كل عنصر بواسطة`SdtListItem` كائن، والذي يأخذ نص العرض وقيمة. في هذا المثال، نضيف ثلاثة عناصر إلى مربع التحرير والسرد.
+ إضافة عناصر إلى مربع التحرير والسرد باستخدام`ListItems` ملكية`StructuredDocumentTag` . يتم تمثيل كل عنصر بواسطة`SdtListItem` كائن، والذي يأخذ نص العرض وقيمة. في هذا المثال، نضيف ثلاثة عناصر إلى مربع التحرير والسرد.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

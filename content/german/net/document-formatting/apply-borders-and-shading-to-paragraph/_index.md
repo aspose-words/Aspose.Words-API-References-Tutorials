@@ -95,7 +95,7 @@ Diese Zeile fügt unseren Text in das Dokument ein. Einfach, aber jetzt ist er i
 
 ## Schritt 6: Speichern Sie das Dokument
 
-Schließlich ist es Zeit, unsere Arbeit zu speichern. Speichern wir das Dokument im angegebenen Verzeichnis unter einem aussagekräftigen Namen.
+Schließlich ist es Zeit, unsere Arbeit zu speichern. Speichern wir das Dokument im angegebenen Verzeichnis unter einem beschreibenden Namen.
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
@@ -105,7 +105,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## Abschluss
 
-Und da haben Sie es! Mit nur wenigen Codezeilen haben wir einen einfachen Absatz in einen optisch ansprechenden Inhalt verwandelt. Aspose.Words für .NET macht es unglaublich einfach, Ihren Dokumenten eine professionell aussehende Formatierung hinzuzufügen. Egal, ob Sie einen Bericht, einen Brief oder ein beliebiges Dokument erstellen, diese Tricks helfen Ihnen, einen großartigen Eindruck zu machen. Probieren Sie es also aus und sehen Sie, wie Ihre Dokumente zum Leben erwachen!
+Und da haben Sie es! Mit nur wenigen Codezeilen haben wir einen einfachen Absatz in einen optisch ansprechenden Inhalt verwandelt. Aspose.Words für .NET macht es unglaublich einfach, Ihren Dokumenten eine professionell aussehende Formatierung hinzuzufügen. Egal, ob Sie einen Bericht, einen Brief oder ein beliebiges Dokument erstellen, diese Tricks helfen Ihnen, einen großartigen Eindruck zu machen. Probieren Sie es also aus und sehen Sie zu, wie Ihre Dokumente zum Leben erwachen!
 
 ## Häufig gestellte Fragen
 

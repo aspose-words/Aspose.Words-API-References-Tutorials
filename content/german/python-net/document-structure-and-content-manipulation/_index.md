@@ -1,7 +1,7 @@
 ---
 title: Dokumentstruktur und Inhaltsbearbeitung
 linktitle: Dokumentstruktur und Inhaltsbearbeitung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Entdecken Sie Aspose.Words-Tutorials für Python und .NET mit Schwerpunkt auf Dokumentstruktur und Inhaltsbearbeitung. Erfahren Sie, wie Sie Dokumentelemente effizient navigieren, extrahieren und ändern. Quellcodebeispiele werden bereitgestellt.
 type: docs
 weight: 10

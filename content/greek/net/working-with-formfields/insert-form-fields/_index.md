@@ -14,7 +14,7 @@ url: /el/net/working-with-formfields/insert-form-fields/
 
 ## Βήμα 1: Αρχικοποίηση των αντικειμένων Document και DocumentBuilder
 
- Αρχικά, αρχικοποιήστε το`Document` και`DocumentBuilder` αντικείμενα:
+ Αρχικά, αρχικοποιήστε το`Document`και`DocumentBuilder` αντικείμενα:
 
 ```csharp
 Document doc = new Document();

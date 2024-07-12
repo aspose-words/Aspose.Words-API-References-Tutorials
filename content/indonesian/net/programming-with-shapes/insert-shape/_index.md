@@ -17,14 +17,14 @@ Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Langkah 2: Buat Dokumen Baru dan DocumentBuilder
- Buat instance baru dari`Document` kelas dan a`DocumentBuilder`keberatan untuk bekerja dengan dokumen tersebut.
+ Buat instance baru dari`Document` kelas dan a`DocumentBuilder` keberatan untuk bekerja dengan dokumen tersebut.
 
 ```csharp
 Document doc = new Document();

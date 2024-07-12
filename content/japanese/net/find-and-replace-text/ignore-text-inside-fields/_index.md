@@ -2,168 +2,95 @@
 title: フィールド内のテキストを無視
 linktitle: フィールド内のテキストを無視
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET の「フィールド内のテキストを無視」機能の使用方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書のフィールド内のテキストを操作する方法を学びます。このチュートリアルでは、実用的な例を使用してステップバイステップのガイダンスを提供します。
 type: docs
 weight: 10
 url: /ja/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-この記事では、上記の C# ソース コードを調べて、Aspose.Words for .NET ライブラリの Ignore Text Inside Fields 関数の使用方法を理解します。この機能は、ドキュメントを操作するときにフィールド内のテキストを無視する場合に便利です。
+## 導入
+
+このチュートリアルでは、Aspose.Words for .NET を使用して Word ドキュメント内のフィールド内のテキストを操作する方法について詳しく説明します。Aspose.Words はドキュメント処理のための強力な機能を提供し、開発者がタスクを効率的に自動化できるようにします。ここでは、ドキュメント自動化シナリオで一般的な要件である、フィールド内のテキストを無視することに焦点を当てます。
 
 ## 前提条件
 
-- C# 言語に関する基本的な知識。
-- Aspose.Words ライブラリがインストールされた .NET 開発環境。
+始める前に、次の設定がされていることを確認してください。
+- マシンに Visual Studio がインストールされています。
+- Aspose.Words for .NET ライブラリがプロジェクトに統合されました。
+- C# プログラミングと .NET 環境に関する基本的な知識。
 
-## ステップ1: 新しいドキュメントを作成する
+## 名前空間のインポート
 
-フィールド内のテキストを操作する前に、Aspose.Words for .NETを使用して新しいドキュメントを作成する必要があります。これは、`Document`物体：
+まず、C# プロジェクトに必要な名前空間を含めます。
+```csharp
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.FindReplace;
+using System;
+using System.Text.RegularExpressions;
+```
 
+## ステップ1: 新しいドキュメントとビルダーを作成する
+
+まず、新しいWord文書を初期化し、`DocumentBuilder`ドキュメントの構築を容易にするオブジェクト:
 ```csharp
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ステップ2: テキストを含むフィールドを挿入する
 
-文書ができたら、その中にテキストを含むフィールドを挿入することができます。`DocumentBuilder`オブジェクト。たとえば、「フィールド内のテキスト」というテキストを含む「INCLUDETEXT」フィールドを挿入するには、`InsertField`方法：
-
+使用`InsertField`方法`DocumentBuilder`テキストを含むフィールドを追加するには:
 ```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## ステップ3: フィールド内のテキストを無視する機能を使用する
+## ステップ3: フィールド内のテキストを無視する
 
-後続の操作でフィールド内のテキストを無視するには、`FindReplaceOptions`オブジェクトを設定し、`IgnoreFields`財産に`true`:
-
+フィールド内のコンテンツを無視してテキストを操作するには、`FindReplaceOptions`とともに`IgnoreFields`プロパティが設定されている`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
-## ステップ4: 検索と置換に正規表現を使用する
+## ステップ4: テキストの置換を実行する
 
-文書のテキストに対して検索と置換を実行するには、正規表現を使用します。この例では、文字「e」のすべての出現を検索し、アスタリスク「*「.NETの`Regex`このクラス:
-
+テキスト置換には正規表現を使用します。ここでは、文字「e」をアスタリスク「*'文書の範囲全体にわたって:
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## ステップ5: 変更されたドキュメント出力の表示
+## ステップ5: 変更されたドキュメントテキストを出力する
 
-検索と置換を適用した後、`GetText`方法：
-
+変更されたテキストを取得して印刷し、行われた置換を確認します。
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## ステップ6: フィールドを含めるためのオプションの変更
+## ステップ6: フィールド内にテキストを含める
 
-出力結果にフィールド内のテキストを含めたい場合は、フィールドを無視しないようにオプションを変更することができます。そのためには、`IgnoreFields`財産に`false`:
-
+フィールド内のテキストを処理するには、`IgnoreFields`財産に`false`置換操作を再度実行します。
 ```csharp
 options.IgnoreFields = false;
-```
-
-## ステップ7: フィールドを含む変更されたドキュメントを表示する
-
-オプションを変更した後、再度検索と置換を実行して、含まれているフィールド内のテキストを含む結果を取得できます。
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-### Aspose.Words for .NET を使用してフィールド内のテキストを無視するサンプル ソース コード
-
-以下は、Aspose.Words for .NET でフィールド内のテキストを無視する機能の使用方法を示す完全なサンプル ソース コードです。
-
-```csharp
-    
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	//テキストが入ったフィールドを挿入します。
-	builder.InsertField("INCLUDETEXT", "Text in field");
-	
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-	
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreFields = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-  
 ```
 
 ## 結論
 
-この記事では、C# ソース コードを調べて、Aspose.Words for .NET の Ignore Text Inside Fields 機能の使用方法を理解しました。ドキュメントの作成、テキストを含むフィールドの挿入、Ignore Text Inside Fields 機能の使用、正規表現を使用した検索および置換操作の実行、変更されたドキュメントの表示について、ステップ バイ ステップ ガイドに従いました。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のフィールド内のテキストを操作する方法について説明しました。この機能は、ドキュメントをプログラムで処理する際にフィールド コンテンツに特別な処理が必要なシナリオに不可欠です。
 
-### よくある質問
+## よくある質問
 
-#### Q: Aspose.Words for .NET の「フィールド内のテキストを無視」機能とは何ですか?
+### Word 文書内のネストされたフィールドをどのように処理すればよいですか?
+ネストされたフィールドは、Aspose.Words の API を使用してドキュメントのコンテンツを再帰的にナビゲートすることで管理できます。
 
-A: Aspose.Words for .NET の「フィールド内のテキストを無視」機能を使用すると、テキストの検索や置換などの特定の操作中にフィールド内のテキストを無視するかどうかを指定できます。この機能を有効にすると、操作中にフィールド内のテキストは考慮されません。
+### 条件付きロジックを適用してテキストを選択的に置き換えることはできますか?
+はい、Aspose.Words では、FindReplaceOptions を使用して条件付きロジックを実装し、特定の条件に基づいてテキストの置換を制御できます。
 
-#### Q: Aspose.Words for .NET を使用して新しいドキュメントを作成するにはどうすればよいですか?
+### Aspose.Words は .NET Core アプリケーションと互換性がありますか?
+はい、Aspose.Words は .NET Core をサポートしており、ドキュメント自動化のニーズに対応するクロスプラットフォームの互換性を確保しています。
 
- A: Aspose.Words for .NETを使用して新しいドキュメントを作成するには、`Document`オブジェクト。新しいドキュメントを作成する C# コードの例を次に示します。
+### Aspose.Words のその他の例やリソースはどこで見つかりますか?
+訪問[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)包括的なガイド、API リファレンス、コード例については、こちらをご覧ください。
 
-```csharp
-Document doc = new Document();
-```
-
-#### Q: Aspose.Words for .NET を使用してドキュメント内にテキストを含むフィールドを挿入するにはどうすればよいですか?
-
- A: 文書を作成したら、テキストフィールドを挿入することができます。`DocumentBuilder`オブジェクト。たとえば、「フィールド内のテキスト」というテキストを含む「INCLUDETEXT」フィールドを挿入するには、`InsertField`方法：
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.InsertField("INCLUDETEXT", "Text in field");
-```
-
-#### Q: Aspose.Words for .NET のフィールド内のテキストを無視するにはどうすればよいですか?
-
- A: 後続の操作でフィールド内のテキストを無視するには、`FindReplaceOptions`オブジェクトを設定し、`IgnoreFields`財産に`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-```
-
-#### Q: Aspose.Words for .NET で正規表現を使用して検索と置換を実行するにはどうすればよいですか?
-
- A: 正規表現を使用して文書のテキストを検索および置換するには、.NETを使用します。`Regex`クラス。たとえば、文字「e」のすべての出現を検索し、それらをアスタリスク「* 「」を作成することができます`Regex`オブジェクトとそれを使用して`Replace`方法：
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### Q: Aspose.Words for .NET でドキュメントの変更された出力を表示するにはどうすればよいでしょうか?
-
- A: 検索と置換操作を適用した後、`GetText`方法：
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### Q: Aspose.Words for .NET の出力結果にフィールドを含めるにはどうすればよいでしょうか?
-
- A: フィールド内のテキストを出力結果に含めるには、フィールドを無視しないようにオプションを変更します。そのためには、`IgnoreFields`の財産`FindReplaceOptions`反対する`false`:
-
-```csharp
-options.IgnoreFields = false;
-```
-
-#### Q: Aspose.Words for .NET のフィールドを使用して変更されたドキュメントを表示するにはどうすればよいでしょうか?
-
-A: フィールドを含めるようにオプションを変更した後、再度検索と置換を実行して、フィールド内のテキストが含まれた結果を取得できます。
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Aspose.Words のテクニカル サポートを受けるにはどうすればよいですか?
+技術的なサポートについては、[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)質問を投稿したり、コミュニティと交流したりすることができます。

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## الخطوة 2: قم بتعيين مجلدات الخطوط ذات الأولوية
- ثم يمكنك تعيين مجلدات الخطوط ذات الأولوية باستخدام`FontSettings` الطبقة و`SetFontsSources()`طريقة. يمكنك تحديد مصادر خطوط متعددة باستخدام مثيلات`SystemFontSource` و`FolderFontSource`. في هذا المثال، قمنا بتعريف مصدرين للخط: مصدر خط النظام الافتراضي ومجلد خط مخصص بأولوية 1.
+ ثم يمكنك تعيين مجلدات الخطوط ذات الأولوية باستخدام`FontSettings` الطبقة و`SetFontsSources()`طريقة. يمكنك تحديد مصادر خطوط متعددة باستخدام مثيلات`SystemFontSource`و`FolderFontSource`. في هذا المثال، قمنا بتعريف مصدرين للخط: مصدر خط النظام الافتراضي ومجلد خط مخصص بأولوية 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

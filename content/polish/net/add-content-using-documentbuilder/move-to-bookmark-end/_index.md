@@ -130,7 +130,7 @@ Masz to! Właśnie nauczyłeś się, jak przejść na koniec zakładki w dokumen
 
 ### 1. Czy mogę przejść na początek zakładki zamiast na koniec?
 
- Absolutnie! Po prostu ustaw`isBookmarkStart` parametr do`true` I`isBookmarkEnd` Do`false` w`MoveToBookmark` metoda.
+ Absolutnie! Po prostu ustaw`isBookmarkStart` parametr do`true`I`isBookmarkEnd` Do`false` w`MoveToBookmark` metoda.
 
 ### 2. Co się stanie, jeśli nazwa mojej zakładki jest nieprawidłowa?
 

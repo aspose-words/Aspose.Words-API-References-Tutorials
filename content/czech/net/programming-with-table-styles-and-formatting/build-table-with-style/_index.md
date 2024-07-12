@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Krok 7: Přidejte obsah do buněk
- Nyní můžeme přidat obsah do buněk pomocí`Writeln()` a`InsertCell()` metody tvůrce dokumentů. V tomto příkladu přidáme záhlaví pro položky „Položka“ a „Množství (
+ Nyní můžeme přidat obsah do buněk pomocí`Writeln()`a`InsertCell()` metody tvůrce dokumentů. V tomto příkladu přidáme záhlaví pro položky „Položka“ a „Množství (
 
 kg)“ a odpovídající údaje.
 

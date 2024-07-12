@@ -2,92 +2,104 @@
 title: Grafiek maken en aanpassen met behulp van vorm
 linktitle: Grafiek maken en aanpassen met behulp van vorm
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een diagram kunt maken en aanpassen met behulp van een vorm in een Word-document met Aspose.Words voor .NET.
+description: Leer met deze stapsgewijze handleiding hoe u diagrammen in Word-documenten kunt maken en aanpassen met Aspose.Words voor .NET. Perfect voor datavisualisatie.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/create-chart-using-shape/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u een diagram maakt met behulp van een vorm in een Word-document met Aspose.Words voor .NET.
+Het maken en aanpassen van diagrammen in uw documenten is een cruciale vaardigheid in de datagestuurde wereld van vandaag. Grafieken kunnen helpen gegevens te visualiseren, waardoor complexe informatie beter verteerbaar wordt. Aspose.Words voor .NET is een krachtige bibliotheek waarmee u Word-documenten programmatisch kunt maken en manipuleren. In deze zelfstudie begeleiden we u bij het maken en aanpassen van een lijndiagram met Aspose.Words voor .NET. Aan het einde van deze handleiding kunt u eenvoudig professioneel ogende grafieken maken.
 
 ## Vereisten
-Om deze tutorial te volgen, heb je het volgende nodig:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd.
-- Basiskennis van C# en woordenverwerking met Word-documenten.
+Voordat je in de code duikt, zorg ervoor dat je het volgende hebt:
 
-## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+-  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+- Visual Studio: elke versie die .NET ondersteunt.
+- Basiskennis van C#: Als u de basisprincipes van C# begrijpt, kunt u de tutorial volgen.
+
+## Naamruimten importeren
+
+Om aan de slag te gaan, moet u de benodigde naamruimten importeren. Deze stap is essentieel omdat u hiermee de klassen en methoden van Aspose.Words voor .NET kunt gebruiken.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
 ```
 
-## Stap 2: Maak een nieuw document en DocumentBuilder
- Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder`bezwaar maken tegen het werken met het document.
+## Stap 1: Maak een nieuw document
+
+Eerst moet u een nieuw Word-document maken. Dit document zal dienen als canvas voor uw diagram.
 
 ```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Een grafiekvorm invoegen en configureren
- Voeg een grafiekvorm in het document in met behulp van de`InsertChart` werkwijze van de`DocumentBuilder` voorwerp. Stel het gewenste diagramtype en de afmetingen in.
+## Stap 2: Voeg een diagram in
+
+ Vervolgens voegt u een lijndiagram in het document in. De`DocumentBuilder.InsertChart` Hiervoor wordt een methode gebruikt.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Stap 4: Pas de grafiek aan
-Pas het diagram aan door verschillende eigenschappen te wijzigen, zoals de diagramtitel en legenda.
+## Stap 3: Pas de diagramtitel aan
+
+Het aanpassen van de diagramtitel kan helpen om context te bieden voor de gegevens die worden weergegeven. U kunt de titel weergeven en de tekst ervan instellen met behulp van de volgende code:
 
 ```csharp
 chart.Title.Show = true;
 chart.Title.Text = "Line Chart Title";
 chart.Title.Overlay = false;
+// Houd er rekening mee dat als een nul- of lege waarde wordt opgegeven als titeltekst, de automatisch gegenereerde titel wordt weergegeven.
+```
+
+## Stap 4: Pas de legendapositie aan
+
+De legenda helpt bij het identificeren van verschillende gegevensreeksen in uw diagram. U kunt de positie- en overlay-instellingen als volgt aanpassen:
+
+```csharp
 chart.Legend.Position = LegendPosition.Left;
 chart.Legend.Overlay = true;
 ```
 
-## Stap 5: Sla het document op
- Sla het document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithCharts.CreateChartUsingShape.docx".
+## Stap 5: Bewaar het document
+
+Ten slotte moet u het document opslaan. Deze stap zorgt ervoor dat al uw wijzigingen naar het bestand worden geschreven.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ```
 
-### Voorbeeldbroncode voor het maken van een diagram met behulp van Shape met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Show = true;
-	chart.Title.Text = "Line Chart Title";
-	chart.Title.Overlay = false;
-	// Houd er rekening mee dat als een nul- of lege waarde wordt opgegeven als titeltekst, de automatisch gegenereerde titel wordt weergegeven.
-	chart.Legend.Position = LegendPosition.Left;
-	chart.Legend.Overlay = true;
-	doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
-```
-
-Dat is het! U hebt met succes een diagram gemaakt met behulp van een vorm in een Word-document met Aspose.Words voor .NET.
-
 ## Conclusie
-In deze zelfstudie hebt u geleerd hoe u een diagram kunt maken met behulp van een vorm in een Word-document met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen, kunt u een diagramvorm invoegen en configureren, het uiterlijk ervan aanpassen en het document opslaan. Aspose.Words voor .NET biedt een uitgebreide reeks functies voor woordenverwerking met Word-documenten en grafieken, waardoor u professioneel ogende en visueel aantrekkelijke grafieken rechtstreeks in uw .NET-toepassingen kunt maken.
 
-### Veelgestelde vragen
+In deze zelfstudie hebben we besproken hoe u een lijndiagram in een Word-document kunt maken en aanpassen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen, kunt u nu visueel aantrekkelijke grafieken maken die uw gegevens effectief communiceren. Aspose.Words voor .NET biedt een breed scala aan aanpassingsopties, zodat u grafieken kunt afstemmen op uw specifieke behoeften.
 
-#### Q1. Kan ik diagrammen maken in een Word-document met Aspose.Words voor .NET?
-Ja, met Aspose.Words voor .NET kunt u programmatisch diagrammen in een Word-document maken. Aspose.Words biedt API's en functionaliteiten om verschillende soorten diagrammen in te voegen, het uiterlijk ervan aan te passen en diagramgegevens te manipuleren.
+## Veelgestelde vragen
 
-#### Vraag 2. Welke grafiektypen worden ondersteund door Aspose.Words voor .NET?
-Aspose.Words voor .NET ondersteunt een breed scala aan diagramtypen, waaronder lijndiagrammen, staafdiagrammen, cirkeldiagrammen, vlakdiagrammen, spreidingsdiagrammen en meer. U kunt het juiste diagramtype kiezen op basis van uw gegevens- en visualisatievereisten.
+### Kan ik Aspose.Words voor .NET gebruiken om andere typen diagrammen te maken?
 
-#### Q3. Kan ik het uiterlijk van het gemaakte diagram aanpassen?
-Ja, u kunt het uiterlijk van het gemaakte diagram aanpassen met Aspose.Words voor .NET. U kunt eigenschappen zoals diagramtitel, legendapositie, gegevenslabels, aslabels, kleuren en andere visuele elementen wijzigen om aan uw specifieke ontwerp- en opmaakbehoeften te voldoen.
+ Ja, Aspose.Words voor .NET ondersteunt verschillende diagramtypen, waaronder staafdiagrammen, cirkeldiagrammen en meer. U kunt de documentatie verkennen[hier](https://reference.aspose.com/words/net/) voor meer details.
+
+### Hoe kan ik Aspose.Words voor .NET uitproberen voordat ik het aanschaf?
+
+ U kunt een gratis proefversie downloaden van[hier](https://releases.aspose.com/). Hiermee kunt u de bibliotheek en de functies ervan testen voordat u een aankoop doet.
+
+### Is er een manier om ondersteuning te krijgen als ik problemen tegenkom?
+
+ Absoluut. U kunt toegang krijgen tot ondersteuning via de Aspose-communityforums[hier](https://forum.aspose.com/c/words/8)De community en het Aspose-personeel zijn zeer responsief.
+
+### Hoe koop ik een licentie voor Aspose.Words voor .NET?
+
+ U kunt een licentie rechtstreeks op de Aspose-website kopen[hier](https://purchase.aspose.com/buy). Er zijn verschillende licentieopties om aan verschillende behoeften te voldoen.
+
+### Wat moet ik doen als ik een tijdelijke licentie nodig heb voor een kortlopend project?
+
+ Aspose biedt tijdelijke licenties aan, die u kunt aanvragen[hier](https://purchase.aspose.com/temporary-license/).

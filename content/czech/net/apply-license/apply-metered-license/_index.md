@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Nahradit`"your_public_key"` a`"your_private_key"`se skutečnými klíči, které jste obdrželi od Aspose. Tento krok v podstatě říká Aspose, že chcete použít měřenou licenci.
+ Nahradit`"your_public_key"`a`"your_private_key"`se skutečnými klíči, které jste obdrželi od Aspose. Tento krok v podstatě říká Aspose, že chcete použít měřenou licenci.
 
 ## Krok 3: Vložte svůj dokument
 

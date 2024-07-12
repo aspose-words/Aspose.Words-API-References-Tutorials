@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Adım 2: Geçerli Bölüme Erişin
 
-Geçerli bölümü kullanarak alıyoruz`builder.CurrentSection`. Bu bölüm, önceki bölümdeki üstbilgileri ve altbilgileri kopyalayacağımız hedef olacaktır.
+ Geçerli bölümü kullanarak alıyoruz`builder.CurrentSection`Bu bölüm, önceki bölümdeki üstbilgileri ve altbilgileri kopyalayacağımız hedef olacaktır.
 
 ### Adım 3: Önceki Bölümü Tanımlayın
 
@@ -97,7 +97,7 @@ Geçerli bölümü kullanarak alıyoruz`builder.CurrentSection`. Bu bölüm, ön
 
 ### 4. Adım: Mevcut Üstbilgileri ve Altbilgileri Temizleyin
 
-Birden fazla üstbilgi ve altbilgi kümesiyle karşılaşmadığımızdan emin olmak için geçerli bölümdeki tüm mevcut üstbilgileri ve altbilgileri temizliyoruz.
+Birden fazla üstbilgi ve altbilgi kümesiyle karşılaşmadığımızdan emin olmak için geçerli bölümdeki mevcut üstbilgileri ve altbilgileri temizliyoruz.
 
 ### Adım 5: Üstbilgileri ve Altbilgileri Kopyalayın
 
@@ -109,7 +109,7 @@ Birden fazla üstbilgi ve altbilgi kümesiyle karşılaşmadığımızdan emin o
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak üstbilgileri ve altbilgileri bir Word belgesinde bir bölümden diğerine kopyalamak basit ve etkilidir. Bu adım adım kılavuzu izleyerek belgelerinizin tüm bölümlerde tutarlı ve profesyonel bir görünüme sahip olmasını sağlayabilirsiniz.
+Aspose.Words for .NET'i kullanarak üstbilgileri ve altbilgileri bir Word belgesinde bir bölümden diğerine kopyalamak basit ve etkilidir. Bu adım adım kılavuzu izleyerek belgelerinizin tüm bölümlerde tutarlı ve profesyonel bir görünüme sahip olmasını sağlayabilirsiniz.
 
 ## SSS
 

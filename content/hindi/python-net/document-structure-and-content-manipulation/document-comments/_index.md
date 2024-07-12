@@ -94,7 +94,7 @@ comment.runs[0].font.color = aw.Color.red
 
 ## टिप्पणी लेखकों का प्रबंधन
 
-टिप्पणियाँ लेखकों को दी जाती हैं। Aspose.Words for Python आपको टिप्पणी लेखकों को प्रबंधित करने देता है:
+टिप्पणियाँ लेखकों को सौंपी जाती हैं। Aspose.Words for Python आपको टिप्पणी लेखकों को प्रबंधित करने देता है:
 
 ```python
 # Change the author's name

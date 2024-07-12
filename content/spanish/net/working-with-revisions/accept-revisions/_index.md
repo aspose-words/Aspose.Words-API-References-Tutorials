@@ -139,7 +139,7 @@ En este tutorial, aprendimos cómo aceptar revisiones en un documento de Word ut
 
 #### Solución 1:
 
- R: Para habilitar el seguimiento de revisiones en Aspose.Words para .NET, utilice el`StartTrackRevisions` método de la`Document` objeto y especifique el nombre del autor y la fecha de inicio para el seguimiento de la revisión.
+ R: Para habilitar el seguimiento de revisiones en Aspose.Words para .NET, use el`StartTrackRevisions` método de la`Document` objeto y especifique el nombre del autor y la fecha de inicio para el seguimiento de la revisión.
 
 ```csharp
 doc.StartTrackRevisions("John Doe", DateTime.Now);
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Solución 2:
 
- R: También puede habilitar el seguimiento de revisiones usando el`Document` constructor que acepta`trackRevisions` y`author` parámetros.
+ R: También puede habilitar el seguimiento de revisiones usando el`Document` constructor que acepta`trackRevisions`y`author` parámetros.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

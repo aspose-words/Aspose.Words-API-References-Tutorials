@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Schriftartquellen konfigurieren
- Als nächstes erstellen wir eine Instanz von`FontSettings` und holen Sie sich die bestehenden Fontquellen mit dem`GetFontsSources()` Methode. Wir werden auch eine neue Schriftartquelle hinzufügen, indem wir einen Ordner mit Schriftarten angeben.
+Als nächstes erstellen wir eine Instanz von`FontSettings` und holen Sie sich die bestehenden Fontquellen mit dem`GetFontsSources()` Methode. Wir werden auch eine neue Schriftartquelle hinzufügen, indem wir einen Ordner mit Schriftarten angeben.
 
 ```csharp
 // Konfigurieren von Schriftartquellen
@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Fügen Sie eine neue Ordnerquelle hinzu, die Aspose.Words anweist, im folgenden Ordner nach Schriftarten zu suchen.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//Fügen Sie den benutzerdefinierten Ordner, der unsere Schriftarten enthält, zur Liste der vorhandenen Schriftartquellen hinzu.
+// Fügen Sie den benutzerdefinierten Ordner, der unsere Schriftarten enthält, zur Liste der vorhandenen Schriftartenquellen hinzu.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ A: Ja, Sie können die Liste der in Aspose.Words verfügbaren Schriftarten nach 
 
 #### F: Wie kann ich die Liste der verfügbaren Schriftarten in meinen Word-Dokumenten verwenden?
 
-A: Um die Liste der in Ihren Word-Dokumenten verfügbaren Schriftarten zu verwenden, können Sie die Liste durchsuchen und die entsprechenden Schriftarten mithilfe der Methoden und Eigenschaften des`FontSettings` Klasse in Aspose.Words.
+ A: Um die Liste der in Ihren Word-Dokumenten verfügbaren Schriftarten zu verwenden, können Sie die Liste durchsuchen und die entsprechenden Schriftarten mithilfe der Methoden und Eigenschaften des`FontSettings` Klasse in Aspose.Words.

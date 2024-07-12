@@ -2,43 +2,57 @@
 title: Inserisci grafico a dispersione nel documento di Word
 linktitle: Inserisci grafico a dispersione nel documento di Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come inserire un grafico a dispersione in un documento utilizzando Aspose.Words per .NET. Aggiungi dati di serie con le coordinate X e Y.
+description: Scopri come inserire un grafico a dispersione in Word con Aspose.Words per .NET. Semplici passaggi per integrare le rappresentazioni visive dei dati nei tuoi documenti.
 type: docs
 weight: 10
 url: /it/net/programming-with-charts/insert-scatter-chart/
 ---
+## introduzione
 
-Questo tutorial spiega come utilizzare Aspose.Words per .NET per inserire un grafico a dispersione in un documento. Il codice sorgente fornito dimostra come creare un grafico, aggiungere dati di serie e salvare il documento.
+In questo tutorial imparerai come sfruttare Aspose.Words per .NET per inserire un grafico a dispersione nel tuo documento Word. I grafici a dispersione sono potenti strumenti visivi in grado di visualizzare in modo efficace i punti dati in base a due variabili, rendendo i tuoi documenti più coinvolgenti e informativi.
 
-## Passaggio 1: impostare il progetto
+## Prerequisiti
 
-Assicurati di avere i seguenti prerequisiti:
+Prima di immergerci nella creazione di grafici a dispersione con Aspose.Words per .NET, assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. È possibile scaricarlo utilizzando Gestione pacchetti NuGet per installarlo.
-- Un percorso della directory del documento in cui verrà salvato il documento di output.
+1.  Installazione di Aspose.Words per .NET: Scarica e installa Aspose.Words per .NET da[Qui](https://releases.aspose.com/words/net/).
+   
+2. Conoscenza di base di C#: la familiarità con il linguaggio di programmazione C# e il framework .NET sarà utile.
 
-## Passaggio 2: crea un nuovo documento e inserisci un grafico
+## Importa spazi dei nomi
 
- Creane uno nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
+Per iniziare, devi importare gli spazi dei nomi necessari nel tuo progetto C#:
 
 ```csharp
-// Percorso della directory dei documenti
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+```
 
+Ora, analizziamo il processo di inserimento di un grafico a dispersione nel documento di Word utilizzando Aspose.Words per .NET:
+
+## Passaggio 1: inizializzare il documento e DocumentBuilder
+
+ Innanzitutto, inizializza una nuova istanza di`Document` classe e`DocumentBuilder` class per iniziare a costruire il tuo documento.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Successivamente, utilizzare il`InsertChart` metodo del`DocumentBuilder` per inserire un grafico a dispersione nel documento.
+## Passaggio 2: inserisci il grafico a dispersione
+
+ Usa il`InsertChart` metodo del`DocumentBuilder` classe per inserire un grafico a dispersione nel documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Passaggio 3: aggiungi i dati della serie al grafico
+## Passaggio 3: aggiungi serie di dati al grafico
 
-Aggiungi i dati della serie al grafico. In questo esempio, aggiungeremo due serie di coordinate X e Y.
+Ora aggiungi le serie di dati al grafico a dispersione. Questo esempio dimostra l'aggiunta di una serie con punti dati specifici.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
@@ -46,49 +60,29 @@ chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[]
 
 ## Passaggio 4: salva il documento
 
- Infine, salva il documento nella directory specificata utilizzando il file`Save` metodo del`Document` oggetto.
+ Infine, salva il documento modificato nella posizione desiderata utilizzando il file`Save` metodo del`Document` classe.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 ```
 
-Ciò completa l'implementazione dell'inserimento di un grafico a dispersione utilizzando Aspose.Words per .NET.
-
-### Codice sorgente di esempio per Inserisci grafico a dispersione utilizzando Aspose.Words per .NET 
-
-```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
-	doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
-```
-
 ## Conclusione
 
-In questo tutorial, hai imparato come inserire un grafico a dispersione in un documento Word utilizzando Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, puoi creare un nuovo documento, inserire un grafico a dispersione, aggiungere dati di serie con le coordinate X e Y e salvare il documento con il grafico.
+Congratulazioni! Hai imparato con successo come inserire un grafico a dispersione nel tuo documento Word utilizzando Aspose.Words per .NET. I grafici a dispersione sono strumenti eccellenti per visualizzare le relazioni tra i dati e con Aspose.Words puoi integrarli facilmente nei tuoi documenti per migliorare la chiarezza e la comprensione.
 
-Aspose.Words per .NET fornisce un'API completa per l'elaborazione delle parole con grafici nei documenti Word. I grafici a dispersione sono utili per visualizzare e analizzare i dati con due variabili numeriche. Con Aspose.Words per .NET, puoi facilmente creare grafici a dispersione che rappresentano la relazione tra i valori X e Y e identificare modelli o tendenze nei dati.
+## Domande frequenti
 
-Utilizzando Aspose.Words per .NET, puoi automatizzare il processo di generazione di documenti con grafici a dispersione, risparmiando tempo e fatica nella creazione manuale di documenti. La libreria offre un'ampia gamma di tipi di grafici, inclusi i grafici a dispersione, e fornisce varie opzioni di personalizzazione per personalizzare l'aspetto del grafico in base alle proprie esigenze.
+### Posso personalizzare l'aspetto del grafico a dispersione utilizzando Aspose.Words?
+Sì, Aspose.Words consente un'ampia personalizzazione delle proprietà del grafico come colori, assi ed etichette.
 
-### Domande frequenti
+### Aspose.Words è compatibile con diverse versioni di Microsoft Word?
+Aspose.Words supporta varie versioni di Microsoft Word, garantendo la compatibilità tra piattaforme.
 
-#### Q1. Cos'è un grafico a dispersione?
-Un grafico a dispersione è un tipo di grafico che mostra la relazione tra due variabili numeriche. Consiste in una serie di punti tracciati su una griglia di coordinate, con una variabile rappresentata sull'asse X e l'altra variabile rappresentata sull'asse Y. I grafici a dispersione vengono utilizzati per identificare modelli, correlazioni o tendenze tra due insiemi di punti dati.
+### Aspose.Words fornisce supporto per altri tipi di grafici?
+Sì, Aspose.Words supporta un'ampia gamma di tipi di grafici tra cui grafici a barre, grafici a linee e grafici a torta.
 
-#### Q2. Posso aggiungere più serie al grafico a dispersione?
-Sì, puoi aggiungere più serie al grafico a dispersione utilizzando Aspose.Words per .NET. Ciascuna serie rappresenta un insieme di punti dati con le rispettive coordinate X e Y. Aggiungendo più serie, puoi confrontare e analizzare diversi set di dati all'interno dello stesso grafico a dispersione, fornendo una visualizzazione completa dei tuoi dati.
+### Posso aggiornare dinamicamente i dati nel grafico a dispersione a livello di codice?
+Assolutamente, puoi aggiornare i dati del grafico in modo dinamico utilizzando le chiamate API Aspose.Words.
 
-#### Q3. Posso personalizzare l'aspetto del grafico a dispersione?
-Sì, utilizzando Aspose.Words per .NET, puoi personalizzare vari aspetti dell'aspetto del grafico a dispersione. Puoi modificare proprietà come il colore della serie, la forma dell'indicatore, le etichette degli assi e la formattazione dell'area del grafico. La libreria fornisce un ricco set di API per controllare gli elementi visivi del grafico e creare un aspetto personalizzato adatto alle tue esigenze.
-
-#### Q4. Posso salvare il documento con il grafico a dispersione inserito in diversi formati?
-Sì, Aspose.Words per .NET ti consente di salvare il documento con il grafico a dispersione inserito in vari formati, come DOCX, PDF, HTML e altro. Puoi scegliere il formato di output desiderato in base alle tue esigenze e utilizzare il file`Save` metodo del`Document` oggetto per salvare il documento. Il grafico a dispersione inserito verrà conservato nel documento salvato.
-
-#### Q5. Posso modificare i dati e l'aspetto del grafico a dispersione dopo averlo inserito?
-Sì, dopo aver inserito il grafico a dispersione nel documento, puoi modificarne i dati e l'aspetto utilizzando le API fornite da Aspose.Words per .NET. Puoi aggiornare i dati della serie con le nuove coordinate X e Y, modificare le forme e i colori dei marcatori, personalizzare le proprietà degli assi e applicare opzioni di formattazione per creare grafici dinamici e interattivi nei tuoi documenti Word.
+### Dove posso ottenere ulteriore assistenza o supporto per Aspose.Words?
+ Per ulteriore assistenza, visitare il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8).

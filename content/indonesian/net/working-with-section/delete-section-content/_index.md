@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /id/net/working-with-section/delete-section-content/
 ---
-Dalam tutorial ini, kami akan menunjukkan cara menghapus konten dari bagian tertentu dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Menghapus konten dari suatu bagian dapat berguna ketika Anda ingin mengatur ulang atau menghapus konten tertentu dari bagian tersebut. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
+Dalam tutorial ini, kami akan menunjukkan kepada Anda cara menghapus konten dari bagian tertentu dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Menghapus konten dari suatu bagian dapat berguna ketika Anda ingin mengatur ulang atau menghapus konten tertentu dari bagian tersebut. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
 
 ## Prasyarat
 Sebelum memulai, pastikan Anda memiliki item berikut:
@@ -61,7 +61,7 @@ Dalam tutorial ini, kita melihat cara menghapus konten dari bagian tertentu doku
 
 #### T: Bagaimana cara mengatur direktori dokumen di Aspose.Words untuk .NET?
 
- A: Untuk menyetel jalur ke direktori yang berisi dokumen Anda, Anda harus mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai. Berikut cara melakukannya:
+A: Untuk menyetel jalur ke direktori yang berisi dokumen Anda, Anda harus mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai. Berikut cara melakukannya:
 
 ```csharp
 // Jalur ke direktori dokumen Anda

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Étape 3 : accéder au tableau
+## Étape 3 : Accédez au tableau
  Pour permettre l'espacement des cellules, nous devons accéder au tableau dans le document. Le`Table` la classe représente un tableau dans Aspose.Words.
 
 ```csharp

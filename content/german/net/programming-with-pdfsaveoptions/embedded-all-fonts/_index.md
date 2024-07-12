@@ -94,7 +94,7 @@ Beibehaltung der Formatierung: Eingebettete Schriftarten bewahren die Formatieru
 Verbesserte Lesbarkeit: Durch das Einbetten von Schriftarten wird eine bessere Lesbarkeit des Dokuments gewährleistet, da die angegebenen Schriftarten zur Darstellung des Textes verwendet werden, auch wenn die Originalschriftarten nicht zur Verfügung stehen.
 
 #### F: Erhöht das Einbetten aller Schriftarten die Größe der PDF-Datei?
-A: Ja, das Einbetten aller Schriftarten in ein PDF-Dokument kann die Größe der generierten PDF-Datei erhöhen, da die Schriftdaten in die Datei aufgenommen werden müssen. Diese Größenzunahme ist jedoch bei den meisten Dokumenten normalerweise vernachlässigbar, und die Vorteile des Einbettens von Schriftarten überwiegen häufig diese leichte Größenzunahme.
+A: Ja, das Einbetten aller Schriftarten in ein PDF-Dokument kann die Größe der generierten PDF-Datei erhöhen, da die Schriftdaten in die Datei aufgenommen werden müssen. Diese Größenzunahme ist jedoch bei den meisten Dokumenten normalerweise vernachlässigbar, und die Vorteile des Einbettens von Schriftarten überwiegen oft diese leichte Größenzunahme.
 
 #### F: Kann ich bestimmte Schriftarten zum Einbetten in ein PDF-Dokument auswählen?
  A: Ja, mit Aspose.Words für .NET können Sie mithilfe erweiterter Konfigurationsoptionen bestimmte Schriftarten auswählen, die in ein PDF-Dokument eingebettet werden sollen. Sie können beispielsweise die`SubsetFonts` Eigentum der`PdfSaveOptions` -Objekt, um anzugeben, welche Schriftarten eingeschlossen werden sollen, oder verwenden Sie zusätzliche Optionen, um benutzerdefinierte Schriftartauswahlfilter festzulegen.

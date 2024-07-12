@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Étape 3 : Accédez à la ligne à modifier
- Pour modifier le formatage d'une ligne du tableau, nous devons accéder à la ligne spécifique du tableau. Nous utilisons le`GetChild()` et`FirstRow` méthodes pour obtenir la référence à la première ligne du tableau.
+ Pour modifier le formatage d'une ligne du tableau, nous devons accéder à la ligne spécifique du tableau. Nous utilisons le`GetChild()`et`FirstRow` méthodes pour obtenir la référence à la première ligne du tableau.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

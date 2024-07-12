@@ -43,7 +43,7 @@ Aspose.Words for Java 使您能够以前所未有的方式控制文档加载和�
 
 ## 文档加载和保存教程
 ### [使用 Aspose.Words for Java 加载和保存 HTML 文档](./loading-and-saving-html-documents/)
-了解如何使用 Aspose.Words for Java 在 Java 中加载和保存 HTML 文档。带有代码示例的分步指南，可实现无缝文档集成。
+了解如何使用 Aspose.Words for Java 在 Java 中加载和保存 HTML 文档。带有代码示例的分步指南，实现无缝文档集成。
 ### [使用 Aspose.Words for Java 中的加载选项](./using-load-options/)
 掌握 Aspose.Words for Java 中的加载选项。自定义文档加载、处理加密、转换形状、设置 Word 版本等，以实现高效的 Java 文档处理。
 ### [在 Aspose.Words for Java 中配置 RTF 加载选项](./configuring-rtf-load-options/)

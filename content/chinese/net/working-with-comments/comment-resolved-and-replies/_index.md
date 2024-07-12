@@ -96,4 +96,4 @@ doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 
 #### 问：我可以在 Aspose.Words for .NET 中编辑已解决的评论的文本吗？
 
-答：是的，您可以通过访问 Aspose.Words for .NET 中的`Comment.Text`相应财产`Comment`对象并根据需要修改文本。
+答：是的，您可以通过访问`Comment.Text`相应财产`Comment`对象并根据需要修改文本。

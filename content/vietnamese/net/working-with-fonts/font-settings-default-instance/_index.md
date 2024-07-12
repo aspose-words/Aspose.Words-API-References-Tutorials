@@ -17,7 +17,7 @@ Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có những đi�
 - Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ giúp bạn hiểu và thực hiện các bước một cách trôi chảy.
 -  Thư viện Aspose.Words for .NET: Tải xuống và cài đặt Aspose.Words for .NET từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Một môi trường phù hợp như Visual Studio để viết và thực thi mã của bạn.
--  Tài liệu mẫu: Một tài liệu mẫu (ví dụ:`Rendering.docx`) để áp dụng cài đặt phông chữ.
+- Tài liệu mẫu: Một tài liệu mẫu (ví dụ:`Rendering.docx`) để áp dụng cài đặt phông chữ.
 
 ## Nhập không gian tên
 
@@ -55,7 +55,7 @@ Trong ví dụ này:
 
 ## Bước 3: Tải tài liệu
 
-Với nguồn phông chữ của bạn được định cấu hình, bước tiếp theo là tải tài liệu của bạn vào Aspose.Words`Document` sự vật. Điều này cho phép bạn thao tác và cuối cùng là lưu tài liệu.
+ Với nguồn phông chữ của bạn được định cấu hình, bước tiếp theo là tải tài liệu của bạn vào Aspose.Words`Document`sự vật. Điều này cho phép bạn thao tác và cuối cùng là lưu tài liệu.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Chúc mừng! Bạn đã nắm vững kiến thức cơ bản về quản lý c�
 
 ### Câu hỏi 1: Tôi có thể sử dụng phông chữ từ nhiều thư mục tùy chỉnh không?
 
- Có, bạn có thể chỉ định nhiều`FolderFontSource`các trường hợp trong`SetFontsSources` phương pháp bao gồm phông chữ từ các thư mục khác nhau.
+ Có, bạn có thể chỉ định nhiều`FolderFontSource` các trường hợp trong`SetFontsSources` phương pháp bao gồm phông chữ từ các thư mục khác nhau.
 
 ### Câu hỏi 2: Làm cách nào để tôi có được bản dùng thử miễn phí Aspose.Words cho .NET?
 

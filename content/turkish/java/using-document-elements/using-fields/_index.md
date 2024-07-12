@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Yer değiştirmek`"Your Document Directory"` Ve`"Your Output Directory"` uygun yollar ile.
+ Yer değiştirmek`"Your Document Directory"`Ve`"Your Output Directory"` uygun yollar ile.
 
 ## 4. Adres Mektup Birleştirmeyi Özelleştirme
 

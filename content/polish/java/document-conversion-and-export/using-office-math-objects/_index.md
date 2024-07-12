@@ -10,7 +10,7 @@ url: /pl/java/document-conversion-and-export/using-office-math-objects/
 
 ## Wprowadzenie do korzystania z obiektów matematycznych pakietu Office w Aspose.Words dla języka Java
 
-W dziedzinie przetwarzania dokumentów w Javie Aspose.Words jest niezawodnym i potężnym narzędziem. Jedną z mniej znanych perełek jest możliwość pracy z obiektami Office Math. W tym obszernym przewodniku omówimy, jak wykorzystać obiekty Office Math w Aspose.Words for Java do manipulowania i wyświetlania równań matematycznych w dokumentach. 
+W dziedzinie przetwarzania dokumentów w Javie Aspose.Words jest niezawodnym i wydajnym narzędziem. Jedną z mniej znanych perełek jest możliwość pracy z obiektami Office Math. W tym obszernym przewodniku omówimy, jak wykorzystać obiekty Office Math w Aspose.Words for Java do manipulowania i wyświetlania równań matematycznych w dokumentach. 
 
 ## Warunki wstępne
 

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Standard-Schriftartenordner festlegen
- Anschließend können Sie den Standard-Schriftartenordner mit dem`FontSettings.DefaultInstance` Klasse und die`SetFontsFolder()`Methode. Geben Sie den Pfad zum Schriftartenordner an, den Sie als Standardordner verwenden möchten.
+ Anschließend können Sie den Standard-Schriftordner mit dem`FontSettings.DefaultInstance` Klasse und die`SetFontsFolder()`Methode. Geben Sie den Pfad zum Schriftartenordner an, den Sie als Standardordner verwenden möchten.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);

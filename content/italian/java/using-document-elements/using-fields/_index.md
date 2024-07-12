@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Sostituire`"Your Document Directory"` E`"Your Output Directory"` con gli appositi percorsi.
+ Sostituire`"Your Document Directory"`E`"Your Output Directory"` con gli appositi percorsi.
 
 ## 4. Personalizzazione della stampa unione
 

@@ -13,7 +13,7 @@ Words Processing with Markdown は、Aspose.Words for .NET ライブラリを使
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [太字](./bold-text/) | Aspose.Words for .NET を使用してテキストを太字にする方法をステップバイステップで学習します。 |
+| [太字](./bold-text/) | Aspose.Words for .NET を使用してテキストを太字にする方法をステップバイステップ ガイドで学習します。 |
 | [斜体テキスト](./italic-text/) | Aspose.Words for .NET を使用してテキストを斜体にする方法をステップバイステップで学習します。 |
 | [取り消し線](./strikethrough/) | Aspose.Words for .NET を使用して取り消し線テキスト スタイルを適用する方法をステップ バイ ステップ ガイドで学習します。 |
 | [インラインコード](./inline-code/) | Aspose.Words for .NET を使用してコードをインライン化する方法を学ぶステップバイステップ ガイド。 |

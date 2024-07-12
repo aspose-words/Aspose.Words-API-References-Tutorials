@@ -69,7 +69,7 @@ textBox.Previous?.BreakForwardLink();
 
 gratuluji! Nyní jste se naučili, jak přerušit odkazy přesměrování v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Podle kroků v této příručce jste byli schopni nastavit dokument, vytvořit tvar TextBox a přerušit přesměrování pomocí různých metod.
 
-### Nejčastější dotazy týkající se odkazu vpřed v dokumentu aplikace Word
+### Nejčastější dotazy pro odkaz vpřed v dokumentu aplikace Word
 
 #### Otázka: Jaká knihovna se používá k přerušení odkazů přesměrování v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 

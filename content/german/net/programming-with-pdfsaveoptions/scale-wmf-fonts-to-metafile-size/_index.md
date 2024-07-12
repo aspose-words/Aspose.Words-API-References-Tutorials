@@ -41,7 +41,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 
 ## Schritt 4: Konfigurieren Sie die Optionen zum Speichern als PDF mit Optionen zum Rendern von Metadateien
 
-Schließlich können wir die Optionen zum Speichern als PDF mithilfe der zuvor konfigurierten Optionen zum Rendern von Metadateien konfigurieren.
+Schließlich können wir die Optionen zum Speichern als PDF mithilfe der zuvor konfigurierten Optionen zum Rendern der Metadatei konfigurieren.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };

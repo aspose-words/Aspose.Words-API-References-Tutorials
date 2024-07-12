@@ -1,6 +1,6 @@
 ---
 title: HTML dokumentumok betöltése és mentése az Aspose.Words for Java segítségével
-linktitle: HTML dokumentumok betöltése és mentése
+linktitle: HTML dokumentumok betöltése és mentése ezzel
 second_title: Aspose.Words Java Document Processing API
 description: Ismerje meg, hogyan tölthet be és menthet HTML dokumentumokat Java nyelven az Aspose.Words for Java segítségével. Lépésről lépésre útmutató kódpéldákkal a zökkenőmentes dokumentumintegráció érdekében.
 type: docs

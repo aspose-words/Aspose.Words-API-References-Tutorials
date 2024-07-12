@@ -91,4 +91,4 @@ Trả lời: Tính năng "Loại điều khiển ưa thích" cho phép bạn ch�
 
 #### Câu hỏi: Tôi có thể sử dụng các loại điều khiển khác làm tùy chọn ưu tiên không?
 
- Đ: Vâng, ngoài`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET hỗ trợ các loại điều khiển khác như`HtmlControlType.ContentControl` Và`HtmlControlType.CustomXmlMarkup`.
+ Đ: Vâng, ngoài`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET hỗ trợ các loại điều khiển khác như`HtmlControlType.ContentControl`Và`HtmlControlType.CustomXmlMarkup`.

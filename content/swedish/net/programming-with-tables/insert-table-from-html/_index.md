@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-tables/insert-table-from-html/
 ---
 
-I den här handledningen kommer vi att lära oss hur man infogar en tabell i ett Word-dokument från HTML med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna infoga tabeller från HTML i dina Word-dokument programmatiskt.
+den här handledningen kommer vi att lära oss hur man infogar en tabell i ett Word-dokument från HTML med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna infoga tabeller från HTML i dina Word-dokument programmatiskt.
 
 ## Steg 1: Projektinställning
 1. Starta Visual Studio och skapa ett nytt C#-projekt.

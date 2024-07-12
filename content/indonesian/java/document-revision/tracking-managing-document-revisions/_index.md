@@ -103,7 +103,7 @@ Dalam contoh ini, kami menyimpan salinan dokumen dengan "_akhiran v2" untuk menu
 
 ### Bisakah saya menerima atau menolak revisi secara terprogram?
 
- Ya, Anda dapat menerima atau menolak revisi menggunakan Aspose.Words for Java. Memanfaatkan`acceptAllRevisions` Dan`rejectAllRevisions` metode untuk mengelola revisi.
+ Ya, Anda dapat menerima atau menolak revisi menggunakan Aspose.Words for Java. Memanfaatkan`acceptAllRevisions`Dan`rejectAllRevisions` metode untuk mengelola revisi.
 
 ### Apakah mungkin membuat beberapa versi dokumen?
 
@@ -123,4 +123,4 @@ Anda dapat mengunduh Aspose.Words untuk Java dari situs web di[https://releases.
 
 ## Kesimpulan
 
-Dalam panduan komprehensif ini, kami telah menjelajahi cara melacak dan mengelola revisi dokumen menggunakan Aspose.Words untuk Java. Dari memahami dasar-dasar Aspose.Words untuk Java hingga mengaktifkan pelacakan revisi dan mengelola versi dokumen, kini Anda memiliki pengetahuan untuk menangani manajemen revisi dokumen secara efektif dalam proyek Anda. Aspose.Words for Java adalah alat canggih yang menyederhanakan proses, baik Anda seorang pemula atau pengembang berpengalaman. Mulai gunakan sekarang dan sederhanakan tugas pengelolaan dokumen Anda.
+Dalam panduan komprehensif ini, kami telah mempelajari cara melacak dan mengelola revisi dokumen menggunakan Aspose.Words untuk Java. Dari memahami dasar-dasar Aspose.Words untuk Java hingga mengaktifkan pelacakan revisi dan mengelola versi dokumen, kini Anda memiliki pengetahuan untuk menangani manajemen revisi dokumen secara efektif dalam proyek Anda. Aspose.Words for Java adalah alat canggih yang menyederhanakan proses, baik Anda seorang pemula atau pengembang berpengalaman. Mulai gunakan sekarang dan sederhanakan tugas pengelolaan dokumen Anda.

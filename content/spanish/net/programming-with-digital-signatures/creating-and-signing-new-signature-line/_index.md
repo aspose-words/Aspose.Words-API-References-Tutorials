@@ -2,139 +2,116 @@
 title: Crear y firmar una nueva línea de firma
 linktitle: Crear y firmar una nueva línea de firma
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a crear y firmar una nueva línea de firma en un documento de Word con Aspose.Words para .NET.
+description: Aprenda a crear y firmar digitalmente una línea de firma en un documento de Word usando Aspose.Words para .NET con este tutorial paso a paso. Perfecto para la automatización de documentos.
 type: docs
 weight: 10
 url: /es/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
-En este tutorial, lo guiaremos a través de los pasos para usar la función de crear y firmar una nueva línea de firma con Aspose.Words para .NET. Esta función le permite insertar una línea de firma en un documento de Word, configurar opciones personalizadas y firmar el documento. Siga los pasos a continuación:
+## Introducción
 
-## Paso 1: crear el documento y el generador
+¡Hola! Entonces, tienes un documento de Word y necesitas agregar una línea de firma y luego firmarlo digitalmente. ¿Suena complicado? ¡De nada! Gracias a Aspose.Words para .NET, puedes lograr esto sin problemas con solo unas pocas líneas de código. En este tutorial, lo guiaremos a través de todo el proceso, desde configurar su entorno hasta guardar su documento con una firma nueva y brillante. ¿Listo? ¡Vamos a sumergirnos!
 
-Comience creando una instancia de la clase Documento y un objeto DocumentBuilder:
+## Requisitos previos
+
+Antes de pasar al código, asegurémonos de que tiene todo lo que necesita:
+1.  Aspose.Words para .NET: puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+2. Se recomienda encarecidamente un entorno de desarrollo .NET: Visual Studio.
+3. Un documento para firmar: cree un documento de Word sencillo o utilice uno existente.
+4.  Un archivo de certificado: es necesario para las firmas digitales. Puedes usar un`.pfx` archivo.
+5. Imágenes para la línea de firma: opcionalmente, un archivo de imagen para la firma.
+
+## Importar espacios de nombres
+
+Primero, necesitamos importar los espacios de nombres necesarios. Este paso es crucial ya que configura el entorno para utilizar las funcionalidades de Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Signing;
+```
+
+## Paso 1: configurar el directorio de documentos
+
+Todo proyecto necesita un buen comienzo. Configuremos la ruta a su directorio de documentos. Aquí es donde se guardarán y recuperarán sus documentos.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Paso 2: crear un nuevo documento
+
+Ahora, creemos un nuevo documento de Word usando Aspose.Words. Este será nuestro lienzo donde agregaremos la línea de firma.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 2: Insertar la línea de firma
+## Paso 3: Insertar la línea de firma
 
-Utilice el método InsertSignatureLine() del objeto DocumentBuilder para insertar una nueva línea de firma en el documento:
+ Aquí es donde ocurre la magia. Insertamos una línea de firma en nuestro documento usando el`DocumentBuilder` clase.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## Paso 3: guarde el documento
+## Paso 4: Guardar el documento con la línea de firma
 
-Guarde el documento modificado:
+Una vez que la línea de firma esté en su lugar, debemos guardar el documento. Este es un paso intermedio antes de proceder a firmarlo.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-Asegúrese de especificar la ruta y el nombre de archivo correctos para guardar el documento.
+## Paso 5: configurar las opciones de registro
 
-## Paso 4: Firmar el documento
-
-Para firmar el documento, debe configurar las opciones de firma y usar la clase DigitalSignatureUtil:
+Ahora, configuremos las opciones para firmar el documento. Esto incluye especificar el ID de la línea de firma y la imagen que se utilizará.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-	SignatureLineId = signatureLine.Id,
-	SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes(dataDir + "Enhanced Windows MetaFile.emf")
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-	dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
 ```
 
-Asegúrese de especificar las rutas correctas para el documento, la imagen de la línea de firma y el documento firmado.
+## Paso 6: cargar el certificado
 
-### Código fuente de ejemplo para crear y firmar una nueva línea de firma usando Aspose.Words para .NET
-
-Aquí está el código fuente completo para crear y firmar una nueva línea de firma con Aspose.Words para .NET:
+Las firmas digitales requieren un certificado. Aquí cargamos el archivo de certificado que se utilizará para firmar el documento.
 
 ```csharp
-
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-		dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Si sigue estos pasos, podrá crear y firmar fácilmente una nueva línea de firma en su documento de Word con Aspose.Words para .NET.
+## Paso 7: Firmar el documento
+
+ Este es el paso final. Usamos el`DigitalSignatureUtil`clase para firmar el documento. El documento firmado se guarda con un nuevo nombre.
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
+    dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
+```
 
 ## Conclusión
 
-En este tutorial, aprendimos cómo crear y firmar una nueva línea de firma en un documento de Word usando Aspose.Words para .NET. Si sigue los pasos proporcionados, puede insertar fácilmente una línea de firma en su documento, personalizar sus opciones y firmar el documento utilizando un certificado digital. Agregar líneas de firma y firmas digitales a sus documentos mejora su autenticidad e integridad, haciéndolos más seguros y confiables. Aspose.Words para .NET proporciona una potente API para el procesamiento de textos con firmas y certificados digitales en documentos de Word, lo que le permite automatizar el proceso de firma y garantizar la validez de sus documentos.
+¡Y ahí lo tienes! Con estos pasos, habrá creado con éxito un nuevo documento de Word, agregado una línea de firma y firmado digitalmente usando Aspose.Words para .NET. Es una herramienta poderosa que facilita la automatización de documentos. Ya sea que se trate de contratos, acuerdos o cualquier documento formal, este método garantiza que estén firmados y autenticados de forma segura.
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 
-#### P: ¿Qué es una línea de firma en un documento de Word?
+### ¿Puedo utilizar otros formatos de imagen para la línea de firma?
+Sí, puedes utilizar varios formatos de imagen como PNG, JPG, BMP, etc.
 
-R: Una línea de firma en un documento de Word es un marcador de posición que indica dónde se debe colocar una firma. Por lo general, incluye el nombre, el cargo y la fecha, y proporciona espacio para una firma manuscrita o digital.
+###  ¿Es necesario utilizar un`.pfx` file for the certificate?
+ Sí un`.pfx` El archivo es un formato común para almacenar información criptográfica, incluidos certificados y claves privadas.
 
-#### P: ¿Cómo puedo crear una línea de firma en un documento de Word usando Aspose.Words para .NET?
+### ¿Puedo agregar varias líneas de firma en un solo documento?
+¡Absolutamente! Puede insertar varias líneas de firma repitiendo el paso de inserción para cada firma.
 
-R: Para crear una línea de firma en un documento de Word usando Aspose.Words para .NET, puede seguir estos pasos:
-1.  Crear una instancia del`Document` clase y un`DocumentBuilder` objeto.
-2.  Utilizar el`InsertSignatureLine` método de la`DocumentBuilder` objeto para insertar una nueva línea de firma en el documento.
-3. Guarde el documento modificado.
+### ¿Qué pasa si no tengo un certificado digital?
+Deberá obtener un certificado digital de una autoridad certificadora confiable o generar uno usando herramientas como OpenSSL.
 
-#### P: ¿Puedo personalizar las opciones de la línea de firma, como nombre, título y fecha?
-
- R: Sí, puedes personalizar las opciones de la línea de firma. El`SignatureLineOptions` La clase proporciona propiedades para establecer las opciones deseadas, como`Signer`, `SignerTitle`, `ShowDate`, etc. Puede modificar estas propiedades antes de insertar la línea de firma.
-
-#### P: ¿Cómo puedo firmar el documento después de crear una línea de firma?
-
- R: Para firmar el documento después de crear una línea de firma, debe configurar las opciones de firma y usar el`DigitalSignatureUtil` clase. Aquí están los pasos:
-1.  Selecciona el`SignatureLineId` propiedad en el`SignOptions` oponerse al ID de la línea de firma.
-2.  Selecciona el`SignatureLineImage` propiedad en el`SignOptions` objete la imagen de la firma que desea utilizar.
-3.  Cargue el certificado de firma usando el`CertificateHolder` clase.
-4.  Utilizar el`DigitalSignatureUtil.Sign` método para firmar el documento, proporcionando los parámetros necesarios.
-
-#### P: ¿Puedo utilizar una imagen de firma digital para firmar el documento?
-
- R: Sí, puede utilizar una imagen de firma digital para firmar el documento. Para hacer esto, debe proporcionar el archivo de imagen en el`SignOptions` objeto usando el`SignatureLineImage`propiedad. La imagen puede estar en cualquier formato de imagen admitido, como JPEG, PNG o EMF.
-
-#### P: ¿Cuál es el propósito de crear y firmar una nueva línea de firma en un documento de Word?
-
-R: Crear y firmar una nueva línea de firma en un documento de Word usando Aspose.Words para .NET le permite agregar un marcador de posición para una firma y luego firmar el documento usando un certificado digital. Este proceso asegura la autenticidad e integridad del documento, proporcionando evidencia de aprobación o acuerdo.
-
-#### P: ¿Puedo crear y firmar varias líneas de firma en un documento de Word usando Aspose.Words para .NET?
-
-R: Sí, puede crear y firmar varias líneas de firma en un documento de Word utilizando Aspose.Words para .NET. Cada línea de firma puede tener su propia ID y opciones únicas. Puede repetir los pasos para crear y firmar líneas de firma adicionales en el documento.
-
-#### P: ¿Puedo modificar la línea de firma o agregar información adicional después de haberla firmado?
-
-R: Una vez que se ha firmado una línea de firma, pasa a formar parte del contenido del documento y no se puede modificar por separado. Sin embargo, puede agregar información o contenido adicional después de la línea de firma firmada.
-
-#### P: ¿Puedo verificar la firma digital de un documento que contiene una línea de firma?
-
- R: Sí, Aspose.Words para .NET proporciona funcionalidad para verificar la firma digital de un documento que contiene una línea de firma. Puedes usar el`DigitalSignatureUtil.Verify` Método para comprobar la validez y autenticidad de la firma digital.
-
-#### P: ¿Qué formato de archivo admite Aspose.Words para .NET para crear y firmar líneas de firma?
-
-R: Aspose.Words para .NET admite la creación y firma de líneas de firma en el formato de archivo DOCX. Puede crear y firmar líneas de firma en archivos DOCX utilizando los métodos y clases proporcionados.
+### ¿Cómo verifico la firma digital en el documento?
+Puede abrir el documento firmado en Word e ir a los detalles de la firma para verificar la autenticidad e integridad de la firma.

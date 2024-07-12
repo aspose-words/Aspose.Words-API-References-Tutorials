@@ -2,180 +2,144 @@
 title: Buat Baris Tanda Tangan Baru Dan Tetapkan Id Penyedia
 linktitle: Buat Baris Tanda Tangan Baru Dan Tetapkan Id Penyedia
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat baris tanda tangan baru dan mengatur ID penyedia di dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara membuat baris tanda tangan baru dan mengatur ID penyedia di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah.
 type: docs
 weight: 10
 url: /id/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
-Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk menggunakan fitur Buat Baris Tanda Tangan Baru dan Tetapkan ID Penyedia dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menyisipkan baris tanda tangan di dokumen Word, mengatur opsi khusus, dan menandatangani dokumen. Ikuti langkah-langkah di bawah ini:
+## Perkenalan
 
-## Langkah 1: Membuat Dokumen dan Generator
+Hai, penggemar teknologi! Pernah bertanya-tanya bagaimana cara menambahkan baris tanda tangan di dokumen Word Anda secara terprogram? Nah, hari ini kita akan mendalami hal itu menggunakan Aspose.Words untuk .NET. Panduan ini akan memandu Anda melalui setiap langkah, membuatnya sangat mudah untuk membuat baris tanda tangan baru dan mengatur ID penyedia di dokumen Word Anda. Baik Anda mengotomatiskan pemrosesan dokumen atau hanya ingin menyederhanakan alur kerja Anda, tutorial ini siap membantu Anda.
 
-Mulailah dengan membuat instance kelas Dokumen dan objek DocumentBuilder:
+## Prasyarat
+
+Sebelum kita mengotori tangan kita, pastikan kita memiliki semua yang kita butuhkan:
+
+1.  Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduhlah[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan C# lainnya.
+3. .NET Framework: Pastikan Anda telah menginstal .NET Framework.
+4. Sertifikat PFX: Untuk menandatangani dokumen, Anda memerlukan sertifikat PFX. Anda bisa mendapatkannya dari otoritas sertifikat tepercaya.
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan dalam proyek C# Anda:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Signing;
+using System;
+```
+
+Baiklah, mari kita langsung ke seluk beluknya. Berikut rincian detail setiap langkah untuk membuat baris tanda tangan baru dan menetapkan ID penyedia.
+
+## Langkah 1: Buat Dokumen Baru
+
+Untuk memulai, kita perlu membuat dokumen Word baru. Ini akan menjadi kanvas untuk garis tanda tangan kita.
+
+```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Mengatur Opsi Garis Tanda Tangan
+ Dalam cuplikan ini, kami menginisialisasi yang baru`Document` dan sebuah`DocumentBuilder` . Itu`DocumentBuilder` membantu kami menambahkan elemen ke dokumen kami.
 
-Buat instance kelas SignatureLineOptions dan atur opsi yang diinginkan:
+## Langkah 2: Tentukan Opsi Garis Tanda Tangan
+
+Selanjutnya, kita menentukan opsi untuk baris tanda tangan kita. Ini termasuk nama penandatangan, jabatan, email, dan detail lainnya.
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions
 {
-Sign = "vderyushev",
-SignerTitle = "QA",
-Email = "vderyushev@aspose.com",
-ShowDate=true,
-Default Instructions = false,
-Instructions = "Please sign here.",
-AllowComments = true
+    Signer = "vderyushev",
+    SignerTitle = "QA",
+    Email = "vderyushev@aspose.com",
+    ShowDate = true,
+    DefaultInstructions = false,
+    Instructions = "Please sign here.",
+    AllowComments = true
 };
 ```
 
-## Langkah 3: Memasukkan baris tanda tangan
+Opsi ini mempersonalisasi garis tanda tangan, menjadikannya jelas dan profesional.
 
-Gunakan metode InsertSignatureLine() pada objek DocumentBuilder untuk menyisipkan baris tanda tangan ke dalam dokumen:
+## Langkah 3: Masukkan Baris Tanda Tangan
+
+Dengan menetapkan pilihan kita, sekarang kita dapat memasukkan baris tanda tangan ke dalam dokumen.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-```
-
-## Langkah 4: Tetapkan ID Penyedia
-
-Tetapkan ID penyedia untuk baris tanda tangan menggunakan properti ProviderId:
-
-```csharp
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
-Pastikan untuk menentukan ID penyedia yang benar untuk kasus penggunaan Anda.
+ Di sini, itu`InsertSignatureLine` metode menambahkan baris tanda tangan, dan kami menetapkan ID penyedia unik ke dalamnya.
 
-## Langkah 5: Simpan Dokumen
+## Langkah 4: Simpan Dokumen
 
-Simpan dokumen yang diubah:
+Setelah menyisipkan baris tanda tangan, mari kita simpan dokumennya.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
 ```
 
-Pastikan untuk menentukan jalur dan nama file yang benar untuk menyimpan dokumen.
+Ini menyimpan dokumen Anda dengan baris tanda tangan yang baru ditambahkan.
 
-## Langkah 6: Menandatangani dokumen
+## Langkah 5: Siapkan Opsi Penandatanganan
 
-Untuk menandatangani dokumen, Anda perlu mengatur opsi tanda tangan dan menggunakan kelas DigitalSignatureUtil:
+Sekarang, kita perlu menyiapkan opsi untuk menandatangani dokumen. Ini termasuk ID baris tanda tangan, ID penyedia, komentar, dan waktu penandatanganan.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-ProviderId = signatureLine.ProviderId,
-Comments = "Document was signed by vderyushev",
-SignTime = DateTime.Now
+    SignatureLineId = signatureLine.Id,
+    ProviderId = signatureLine.ProviderId,
+    Comments = "Document was signed by vderyushev",
+    SignTime = DateTime.Now
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-	dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions)
 ```
 
-Pastikan untuk menentukan jalur yang benar untuk dokumen, sertifikat, dan dokumen yang ditandatangani.
+Opsi ini memastikan dokumen ditandatangani dengan rincian yang benar.
 
-### Contoh kode sumber untuk Membuat Baris Tanda Tangan Baru dan Menetapkan Id Penyedia menggunakan Aspose.Words untuk .NET
+## Langkah 6: Buat Pemegang Sertifikat
 
-Berikut kode sumber lengkap untuk membuat baris tanda tangan baru dan mengatur ID penyedia dengan Aspose.Words untuk .NET:
+Untuk menandatangani dokumen, kami akan menggunakan sertifikat PFX. Mari buat pemegang sertifikat untuk itu.
 
 ```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLineOptions signatureLineOptions = new SignatureLineOptions
-	{
-		Signer = "vderyushev",
-		SignerTitle = "QA",
-		Email = "vderyushev@aspose.com",
-		ShowDate = true,
-		DefaultInstructions = false,
-		Instructions = "Please sign here.",
-		AllowComments = true
-	};
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-	signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		ProviderId = signatureLine.ProviderId,
-		Comments = "Document was signed by vderyushev",
-		SignTime = DateTime.Now
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-		dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah membuat baris tanda tangan baru dan mengatur ID penyedia di dokumen Word Anda dengan Aspose.Words untuk .NET.
+ Pastikan untuk mengganti`"morzal.pfx"` dengan file sertifikat Anda yang sebenarnya dan`"aw"` dengan kata sandi sertifikat Anda.
+
+## Langkah 7: Tandatangani Dokumen
+
+Terakhir, kami menandatangani dokumen menggunakan utilitas tanda tangan digital.
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
+    dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
+```
+
+Ini menandatangani dokumen dan menyimpannya sebagai file baru.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita menjelajahi fitur membuat baris tanda tangan baru dan mengatur ID penyedia di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang disediakan, Anda dapat dengan mudah menyisipkan baris tanda tangan dengan opsi khusus dan mengaitkannya dengan penyedia tertentu menggunakan ID penyedia. Menambahkan baris tanda tangan dan menyesuaikan informasi penyedia akan meningkatkan keaslian dan kepercayaan dokumen Anda. Aspose.Words untuk .NET menyediakan API yang kuat untuk Pemrosesan Kata dengan baris tanda tangan dan sertifikat digital di dokumen Word, memungkinkan Anda mengotomatiskan proses penandatanganan dan memastikan validitas dokumen Anda.
+Dan itu dia! Anda telah berhasil membuat baris tanda tangan baru dan mengatur ID penyedia di dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka yang kuat ini membuatnya sangat mudah untuk mengelola dan mengotomatiskan tugas pemrosesan dokumen. Cobalah dan lihat bagaimana ini dapat menyederhanakan alur kerja Anda.
 
-### FAQ
+## FAQ
 
-#### T: Apa yang dimaksud dengan ID penyedia di baris tanda tangan?
+### Bisakah saya menyesuaikan tampilan garis tanda tangan?
+Sangat! Anda dapat mengubah berbagai opsi di`SignatureLineOptions` untuk memenuhi kebutuhan Anda.
 
-J: ID penyedia di baris tanda tangan adalah pengidentifikasi unik yang mewakili penyedia tanda tangan digital. Ini membantu mengidentifikasi sumber atau organisasi yang bertanggung jawab atas tanda tangan tersebut.
+### Bagaimana jika saya tidak memiliki sertifikat PFX?
+Anda harus mendapatkannya dari otoritas sertifikat tepercaya. Ini penting untuk menandatangani dokumen secara digital.
 
-#### T: Bagaimana cara membuat baris tanda tangan baru di dokumen Word menggunakan Aspose.Words untuk .NET?
+### Bisakah saya menambahkan beberapa baris tanda tangan ke dokumen?
+Ya, Anda dapat menambahkan baris tanda tangan sebanyak yang diperlukan dengan mengulangi proses penyisipan dengan opsi berbeda.
 
-A: Untuk membuat baris tanda tangan baru di dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
-1.  Buat sebuah instance dari`Document` kelas dan a`DocumentBuilder` obyek.
-2.  Buat sebuah instance dari`SignatureLineOptions` kelas dan atur opsi garis tanda tangan yang diinginkan.
-3.  Menggunakan`InsertSignatureLine` metode`DocumentBuilder` objek untuk memasukkan baris tanda tangan ke dalam dokumen.
+### Apakah Aspose.Words untuk .NET kompatibel dengan .NET Core?
+Ya, Aspose.Words untuk .NET mendukung .NET Core, menjadikannya serbaguna untuk lingkungan pengembangan yang berbeda.
 
-#### T: Dapatkah saya menyesuaikan opsi baris tanda tangan, seperti nama penandatangan, jabatan, dan instruksi?
-
- J: Ya, Anda dapat menyesuaikan opsi baris tanda tangan. Itu`SignatureLineOptions` kelas menyediakan properti untuk mengatur opsi yang diinginkan, seperti`Signer`, `SignerTitle`, `Instructions`, `AllowComments`, dll. Anda dapat mengubah properti ini sebelum menyisipkan baris tanda tangan.
-
-#### Q: Apa tujuan menyetel ID penyedia untuk baris tanda tangan?
-
-J: Menetapkan ID penyedia untuk baris tanda tangan membantu mengidentifikasi sumber atau organisasi yang bertanggung jawab atas tanda tangan digital. Hal ini memungkinkan Anda untuk mengaitkan tanda tangan dengan penyedia atau entitas tertentu, memberikan informasi tambahan tentang asal dan kepercayaan tanda tangan tersebut.
-
-#### T: Bagaimana cara mengatur ID penyedia untuk baris tanda tangan menggunakan Aspose.Words untuk .NET?
-
-J: Untuk mengatur ID penyedia baris tanda tangan menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
-1.  Setelah memasukkan baris tanda tangan, akses`ProviderId` properti dari`SignatureLine` obyek.
-2.  Mengatur`ProviderId` properti ke nilai ID penyedia yang diinginkan menggunakan`Guid` tipe data.
-
-#### T: Bisakah saya menandatangani dokumen setelah membuat baris tanda tangan baru dan mengatur ID penyedia?
-
- A: Ya, setelah membuat baris tanda tangan baru dan mengatur ID penyedia, Anda dapat menandatangani dokumen tersebut. Untuk menandatangani dokumen, Anda perlu mengatur opsi tanda tangan, termasuk ID baris tanda tangan, ID penyedia, komentar, dan waktu penandatanganan. Kemudian, gunakan`DigitalSignatureUtil.Sign` metode untuk menandatangani dokumen menggunakan sertifikat digital.
-
-#### T: Bisakah saya menentukan ID penyedia spesifik untuk setiap baris tanda tangan di dokumen Word?
-
-J: Ya, Anda bisa menentukan ID penyedia spesifik untuk setiap baris tanda tangan di dokumen Word. Setelah memasukkan setiap baris tanda tangan, Anda dapat mengatur ID penyedia untuk baris tanda tangan tersebut dengan mengakses`ProviderId` milik masing-masing`SignatureLine` obyek.
-
-#### T: Bagaimana cara menyimpan dokumen yang diubah setelah membuat baris tanda tangan baru dan mengatur ID penyedia?
-
- A: Untuk menyimpan dokumen yang dimodifikasi setelah membuat baris tanda tangan baru dan mengatur ID penyedia, Anda dapat menggunakan`Save` metode`Document` obyek. Tentukan jalur dan nama file yang benar untuk menyimpan dokumen.
-
-#### T: Format file apa yang didukung Aspose.Words for .NET untuk membuat dan menandatangani baris tanda tangan?
-
-J: Aspose.Words untuk .NET mendukung pembuatan dan penandatanganan baris tanda tangan dalam format file DOCX. Anda dapat membuat dan menandatangani baris tanda tangan di file DOCX menggunakan metode dan kelas yang disediakan.
-
-#### T: Dapatkah saya mengubah ID penyedia atau opsi lain pada baris tanda tangan setelah ditandatangani?
-
-J: Setelah baris tanda tangan ditandatangani, baris tersebut menjadi bagian dari konten dokumen dan tidak dapat diubah secara terpisah. Modifikasi apa pun pada baris tanda tangan, seperti mengubah ID penyedia atau opsi lainnya, memerlukan penghapusan tanda tangan yang ada dan membuat baris tanda tangan baru.
+### Seberapa amankah tanda tangan digital?
+Tanda tangan digital yang dibuat dengan Aspose.Words sangat aman, asalkan Anda menggunakan sertifikat yang valid dan tepercaya.

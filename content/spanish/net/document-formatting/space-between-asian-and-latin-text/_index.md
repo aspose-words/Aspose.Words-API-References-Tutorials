@@ -15,7 +15,7 @@ url: /es/net/document-formatting/space-between-asian-and-latin-text/
 
 Antes de lanzarnos a la magia, asegurémonos de tener todo lo que necesitamos. Aquí hay una lista de verificación rápida:
 
-1.  Aspose.Words para .NET: asegúrese de tener instalada esta poderosa biblioteca. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener instalada esta potente biblioteca. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: cualquier entorno compatible con .NET como Visual Studio.
 3. Conocimientos básicos de C#: no es necesario ser un mago, pero un poco de familiaridad será de gran ayuda.
 4.  Una licencia válida: obtenga una prueba gratuita[aquí](https://releases.aspose.com/) o comprar una licencia[aquí](https://purchase.aspose.com/buy).
@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Configurando`AddSpaceBetweenFarEastAndAlpha` y`AddSpaceBetweenFarEastAndDigit` a`true`, le decimos a Aspose.Words que ajuste automáticamente el espacio entre los caracteres asiáticos y las letras o dígitos latinos.
+ Configurando`AddSpaceBetweenFarEastAndAlpha`y`AddSpaceBetweenFarEastAndDigit` a`true`, le decimos a Aspose.Words que ajuste automáticamente el espacio entre los caracteres asiáticos y las letras o dígitos latinos.
 
 ## Paso 3: agregar texto al documento
 

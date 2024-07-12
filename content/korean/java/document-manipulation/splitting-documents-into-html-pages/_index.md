@@ -153,6 +153,6 @@ Aspose.Words for Java는 DOC, DOCX, RTF 등을 포함한 광범위한 Microsoft 
 
 Aspose.Words for Java는 변환된 HTML의 이미지를 HTML 파일과 동일한 폴더에 별도의 파일로 저장하여 처리할 수 있습니다. 이렇게 하면 이미지가 HTML 출력에 올바르게 표시됩니다.
 
-### Aspose.Words for Java 평가판이 있습니까?
+### Aspose.Words for Java 평가판이 있나요?
 
 예, Aspose 웹사이트에서 Aspose.Words for Java의 무료 평가판을 요청하여 라이선스를 구매하기 전에 기능을 평가할 수 있습니다.

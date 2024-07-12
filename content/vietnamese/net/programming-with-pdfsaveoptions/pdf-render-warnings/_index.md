@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "WMF with image.docx");
 
 ## Bước 3: Định cấu hình tùy chọn hiển thị Metafile
 
-Thiết lập các tùy chọn kết xuất siêu tệp để xác định cách xử lý các siêu tệp (ví dụ: tệp WMF) trong quá trình kết xuất.
+Thiết lập các tùy chọn hiển thị siêu tệp để xác định cách xử lý siêu tệp (ví dụ: tệp WMF) trong quá trình hiển thị.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions

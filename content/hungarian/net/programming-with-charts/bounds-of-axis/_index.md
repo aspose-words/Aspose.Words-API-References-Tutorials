@@ -7,98 +7,118 @@ type: docs
 weight: 10
 url: /hu/net/programming-with-charts/bounds-of-axis/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan lehet beállítani egy tengely határait egy diagramon az Aspose.Words for .NET használatával. Diagram beszúrásával, sorozatadatok hozzáadásával és a tengely méretezésének konfigurálásával meghatározhatja a tengely minimális és maximális értékét.
+Professzionális dokumentumokat szeretne létrehozni diagramokkal .NET-ben? Jó helyen jársz! Ez az útmutató végigvezeti az Aspose.Words for .NET használatával a tengely határainak diagramon történő beállításához. Minden egyes lépést lebontunk, hogy könnyen nyomon követhessük, még akkor is, ha még új vagy a könyvtárban. Szóval, merüljünk bele, és kezdjük el!
 
 ## Előfeltételek
-Az oktatóanyag követéséhez a következőkre van szükség:
 
-- Aspose.Words for .NET könyvtár telepítve.
-- C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+-  Aspose.Words for .NET: Megteheti[Letöltés](https://releases.aspose.com/words/net/) a legújabb verziót, vagy használja a[ingyenes próbaverzió](https://releases.aspose.com/).
+- .NET-keretrendszer: Győződjön meg arról, hogy a .NET telepítve van a rendszeren.
+- IDE: Olyan fejlesztői környezet, mint a Visual Studio.
+
+Ha mindennel készen van, folytathatjuk a következő lépésekkel.
+
+## Névterek importálása
+
+A kezdéshez importálnia kell a szükséges névtereket. Ezek lehetővé teszik az Aspose.Words könyvtár és annak diagramozási funkcióinak elérését.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+## 1. lépés: Állítsa be a dokumentumkönyvtárat
+
+Először is be kell állítania azt a könyvtárat, ahová a dokumentumot menteni fogja. Ez egy egyszerű lépés, de elengedhetetlen a fájlok rendszerezéséhez.
+
+```csharp
+// A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 2. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
- Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder`tiltakozik a dokumentummal való munkavégzésre.
+## 2. lépés: Hozzon létre egy új dokumentumot
+
+Ezután hozzon létre egy új dokumentumobjektumot. Ez a dokumentum a diagram tárolójaként fog szolgálni.
 
 ```csharp
 Document doc = new Document();
+```
+
+## 3. lépés: Inicializálja a Dokumentumkészítőt
+
+A DocumentBuilder osztály gyors és egyszerű módot biztosít a dokumentumok létrehozására. Inicializálja a dokumentummal.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. lépés: Diagram beszúrása és konfigurálása
- Szúrjon be egy diagramot a dokumentumba a gombbal`InsertChart` módszere a`DocumentBuilder` tárgy. Állítsa be a kívánt diagramtípust és méreteket.
+## 4. lépés: Helyezzen be egy diagramot
+
+Most itt az ideje, hogy beszúrjon egy diagramot a dokumentumba. Ebben a példában oszlopdiagramot fogunk használni.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 4. lépés: Sorozatadatok hozzáadása
-Töröljön minden meglévő sorozatot a diagramból, és adjon hozzá új sorozatadatokat. Ebben a példában „1. tétel” címkékkel ellátott sorozatot adunk az „5. tételhez” és a megfelelő értékekkel.
+## 5. lépés: Törölje a meglévő sorozatokat
+
+Annak érdekében, hogy tiszta lappal induljon, törölje a diagramból a meglévő sorozatokat.
 
 ```csharp
 chart.Series.Clear();
+```
+
+## 6. lépés: Adjon hozzá adatokat a diagramhoz
+
+Itt adatokat adunk a diagramhoz. Ez magában foglalja a sorozat nevének és az adatpontok megadását.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## 5. lépés: Állítsa be a tengely határait
- Konfigurálja az Y tengely méretezését a minimális és maximális értékek beállításával a`Scaling.Minimum` és`Scaling.Maximum` a tengely tulajdonságai.
+## 7. lépés: Állítsa be a tengelyhatárokat
+
+Az Y tengely határainak beállítása biztosítja a diagram megfelelő méretezését.
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
 chart.AxisY.Scaling.Maximum = new AxisBound(6);
 ```
 
-## 6. lépés: Mentse el a dokumentumot
- Mentse a dokumentumot a megadott könyvtárba a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithCharts.BoundsOfAxis.docx" néven mentjük.
+## 8. lépés: Mentse el a dokumentumot
+
+Végül mentse a dokumentumot a megadott könyvtárba.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-### Példa a Bounds Of Axis forráskódjához az Aspose.Words for .NET használatával 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Scaling.Minimum = new AxisBound(0);
-	chart.AxisY.Scaling.Maximum = new AxisBound(6);
-	doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
-```
-
-Ez az! Sikeresen beállította egy diagram tengelyének határait az Aspose.Words for .NET segítségével.
+És ez az! Sikeresen létrehozott egy dokumentumot diagrammal az Aspose.Words for .NET használatával. 
 
 ## Következtetés
-Ebben az oktatóanyagban megtanulta, hogyan állíthatja be a tengelyek határait egy diagramon az Aspose.Words for .NET használatával. A lépésenkénti útmutatót követve beszúrhat és konfigurálhat diagramot, sorozatadatokat adhat hozzá, és meghatározhatja a tengelyméretezés minimális és maximális értékét. Az Aspose.Words for .NET hatékony és rugalmas API-t biztosít Word-dokumentumokkal végzett szövegfeldolgozáshoz, amely lehetővé teszi dinamikus és tetszetős diagramok egyszerű létrehozását.
 
+Az Aspose.Words for .NET használatával egyszerűen hozhat létre és kezelhet diagramokat a dokumentumokban. Ez a lépésről lépésre bemutatott útmutató bemutatja, hogyan állíthatja be a tengely határait egy diagramon, így pontosabbá és professzionálisabbá teheti az adatok bemutatását. Akár jelentéseket, prezentációkat vagy bármilyen más dokumentumot készít, az Aspose.Words biztosítja a szükséges eszközöket.
 
-### GYIK
+## GYIK
 
-#### Q1. Mi az Aspose.Words for .NET?
-Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi a fejlesztők számára, hogy programozottan dolgozzanak Word-dokumentumokkal. Szolgáltatások és funkciók széles skáláját kínálja a Word dokumentumok létrehozásához, kezeléséhez és mentéséhez.
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi Word-dokumentumok programozott létrehozását, módosítását és konvertálását a .NET-keretrendszer használatával.
 
-#### Q2. Hogyan telepíthetem az Aspose.Words for .NET fájlt?
-Az Aspose.Words for .NET telepítéséhez a Visual Studio NuGet csomagkezelőjét használhatja. Egyszerűen keresse meg az „Aspose.Words” kifejezést a NuGet csomagkezelőben, és telepítse a projektbe.
+### Hogyan állíthatom be az Aspose.Words for .NET-et?
+ Letöltheti innen[itt](https://releases.aspose.com/words/net/) és kövesse a mellékelt telepítési utasításokat.
 
-#### Q3. Használhatom az Aspose.Words for .NET-et más programozási nyelvekkel?
-Nem, az Aspose.Words for .NET kifejezetten .NET-alkalmazásokhoz készült. Olyan programozási nyelvekkel működik, mint a C# és a VB.NET.
+### Használhatom ingyenesen az Aspose.Words-t?
+ Igen, használhatod a[ingyenes próbaverzió](https://releases.aspose.com/) vagy kap a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
 
-#### Q4. Vannak egyéb előfeltételei az Aspose.Words for .NET használatának?
-Az Aspose.Words for .NET könyvtár telepítése mellett alapszintű ismeretekkel kell rendelkeznie a C# programozásról és a Word-dokumentumokkal végzett szövegfeldolgozásról. A .NET keretrendszer ismerete is hasznos lesz.
+### Hol találom az Aspose.Words for .NET dokumentációját?
+ A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+
+### Hogyan kaphatok támogatást az Aspose.Words számára?
+ Meglátogathatja a[támogatói fórum](https://forum.aspose.com/c/words/8) segítségért.

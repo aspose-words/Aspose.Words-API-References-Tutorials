@@ -47,7 +47,7 @@ Nagłówki i podtytuły organizują treść i prowadzą czytelników przez struk
 
 Aspose.Words dla Pythona to potężne narzędzie do programowego tworzenia i manipulowania dokumentami Word. Przyjrzyjmy się, jak zastosować styl czcionki i tekstu za pomocą tego interfejsu API.
 
-### Dodawanie podkreśleń za pomocą kursywy
+### Dodawanie wyróżnień za pomocą kursywy
 
 Możesz użyć Aspose.Words, aby zastosować kursywę do określonych fragmentów tekstu. Oto przykład, jak to osiągnąć:
 

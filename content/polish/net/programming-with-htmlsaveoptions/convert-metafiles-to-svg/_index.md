@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Ten kod tworzy instancję`Document` I`DocumentBuilder` do zbudowania dokumentu. Wstawia A`<svg>` znacznik zawierający a`<polygon>` element z atrybutami definiującymi kształt i styl obrazu SVG.
+ Ten kod tworzy instancję`Document`I`DocumentBuilder` do zbudowania dokumentu. Wstawia A`<svg>` znacznik zawierający a`<polygon>` element z atrybutami definiującymi kształt i styl obrazu SVG.
 
 ## Krok 3: Ustaw opcje zapisywania HTML
 

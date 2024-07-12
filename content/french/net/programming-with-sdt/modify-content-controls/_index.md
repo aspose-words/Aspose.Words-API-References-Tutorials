@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Étape 2 : charger le document et parcourir les contrôles de contenu
- Chargez le document Word à l'aide du`Document`constructeur, en passant le chemin d'accès au document en paramètre. Parcourez toutes les balises de document structuré du document à l'aide d'un`foreach` boucle.
+ Chargez le document Word à l'aide du`Document` constructeur, en passant le chemin d'accès au document en paramètre. Parcourez toutes les balises de document structuré du document à l'aide d'un`foreach` boucle.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Étape 6 : Enregistrez le document modifié
- Enregistrez le document modifié dans le répertoire spécifié à l'aide du`Save` méthode. Fournissez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous le nom « WorkingWithSdt.ModifyContentControls.docx ».
+ Enregistrez le document modifié dans le répertoire spécifié à l'aide du`Save`méthode. Fournissez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous le nom « WorkingWithSdt.ModifyContentControls.docx ».
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

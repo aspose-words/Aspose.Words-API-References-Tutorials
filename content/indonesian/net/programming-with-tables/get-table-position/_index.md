@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Di sini kita menggunakan kondisi untuk memeriksa apakah array bertipe float. Jika ya, kami mencetaknya`RelativeHorizontalAlignment` Dan`RelativeVerticalAlignment` properti untuk mendapatkan keselarasan relatif horizontal dan vertikal tabel. Jika tidak, kami mencetak`Alignment` properti untuk mendapatkan penyelarasan array.
+ Di sini kita menggunakan kondisi untuk memeriksa apakah array bertipe float. Jika ya, kami mencetaknya`RelativeHorizontalAlignment`Dan`RelativeVerticalAlignment` properti untuk mendapatkan keselarasan relatif horizontal dan vertikal tabel. Jika tidak, kami mencetak`Alignment` properti untuk mendapatkan penyelarasan array.
 
 ### Contoh kode sumber untuk Mendapatkan Posisi Tabel menggunakan Aspose.Words untuk .NET 
 

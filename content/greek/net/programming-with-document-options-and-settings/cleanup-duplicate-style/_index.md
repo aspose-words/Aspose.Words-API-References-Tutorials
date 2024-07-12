@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//Ο αριθμός των στυλ μετά την Εκκαθάριση μειώθηκε.
+	// Ο αριθμός των στυλ μετά την Εκκαθάριση μειώθηκε.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

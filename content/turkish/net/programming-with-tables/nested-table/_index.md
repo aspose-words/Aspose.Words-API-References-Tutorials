@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Bu çağrı, ilk tablonun içinde iç içe bir tablo oluşturmak için önemlidir.
-	// Bu çağrı olmadan aşağıya eklenen hücreler dış tabloya eklenecektir.
+	//Bu çağrı olmadan aşağıya eklenen hücreler dış tabloya eklenecektir.
 	builder.EndTable();
 	// Dış tablonun ilk hücresine gidin.
 	builder.MoveTo(cell.FirstParagraph);

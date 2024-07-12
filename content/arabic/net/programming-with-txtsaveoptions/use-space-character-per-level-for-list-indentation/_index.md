@@ -44,7 +44,7 @@ saveOptions.ListIndentation.Character = ' ';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-في هذا المثال، قمنا بإنشاء مثيل لـ TxtSaveOptions وقمنا بتعيين الخاصية ListIndentation.Count إلى 3 للإشارة إلى وجود ثلاثة مستويات من المسافة البادئة في القائمة. قمنا أيضًا بتعيين خاصية ListIndentation.Character على حرف المسافة (' ') الذي نريد استخدامه للمسافة البادئة.
+في هذا المثال، قمنا بإنشاء مثيل TxtSaveOptions وقمنا بتعيين الخاصية ListIndentation.Count إلى 3 للإشارة إلى وجود ثلاثة مستويات من المسافة البادئة في القائمة. قمنا أيضًا بتعيين خاصية ListIndentation.Character على حرف المسافة (' ') الذي نريد استخدامه للمسافة البادئة.
 
 ### مثال على التعليمات البرمجية المصدر لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET
 

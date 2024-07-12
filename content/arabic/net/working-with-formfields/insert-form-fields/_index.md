@@ -14,7 +14,7 @@ url: /ar/net/working-with-formfields/insert-form-fields/
 
 ## الخطوة 1: تهيئة المستند وكائنات DocumentBuilder
 
- أولاً، قم بتهيئة`Document` و`DocumentBuilder` أشياء:
+ أولاً، قم بتهيئة`Document`و`DocumentBuilder` أشياء:
 
 ```csharp
 Document doc = new Document();

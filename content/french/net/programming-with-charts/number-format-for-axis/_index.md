@@ -2,43 +2,70 @@
 title: Format numérique pour l'axe dans un graphique
 linktitle: Format numérique pour l'axe dans un graphique
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment définir le format numérique d'un axe dans un graphique à l'aide d'Aspose.Words pour .NET.
+description: Apprenez à formater les numéros d'axe du graphique à l'aide d'Aspose.Words pour .NET avec ce guide étape par étape. Améliorez la lisibilité et le professionnalisme de votre document sans effort.
 type: docs
 weight: 10
 url: /fr/net/programming-with-charts/number-format-for-axis/
 ---
+## Introduction
 
-Ce didacticiel explique comment utiliser Aspose.Words for .NET pour définir le format numérique d'un axe dans un graphique. Le code source fourni montre comment créer un graphique, ajouter des données de série et formater les étiquettes des axes.
+Salut! Avez-vous déjà travaillé avec des graphiques dans vos documents et souhaité pouvoir formater les nombres sur votre axe pour leur donner un aspect plus professionnel ? Eh bien, vous avez de la chance ! Dans ce didacticiel, nous allons approfondir la façon dont vous pouvez y parvenir en utilisant Aspose.Words pour .NET. Cette puissante bibliothèque vous permet de gérer les documents Word d'une manière aussi simple que bonjour. Et aujourd’hui, nous nous concentrons sur la refonte de ces axes de graphique avec des formats de nombres personnalisés.
 
-## Étape 1 : Configurer le projet
+## Conditions préalables
 
-Assurez-vous que vous disposez des conditions préalables suivantes :
+Avant de commencer, assurons-nous que vous disposez de tout ce dont vous avez besoin. Voici une liste de contrôle rapide :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
-- Un chemin de répertoire de document où le document de sortie sera enregistré.
+-  Aspose.Words pour .NET : assurez-vous de l'avoir installé. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+- .NET Framework : assurez-vous qu'un framework .NET compatible est installé.
+- Environnement de développement : un IDE comme Visual Studio fonctionnera parfaitement.
+- Connaissance de base de C# : cela vous aidera à suivre les exemples de codage.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique
+## Importer des espaces de noms
 
- Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
+Tout d’abord, vous devez importer les espaces de noms nécessaires dans votre projet. C’est comme poser les fondations avant de construire une maison. Ajoutez les directives using suivantes en haut de votre fichier de code :
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Reporting;
+```
+
+Maintenant, décomposons le processus en étapes simples et faciles à suivre.
+
+## Étape 1 : configuration du document
+
+Titre : Initialisez votre document
+
+Tout d’abord, vous devez créer un nouveau document et un générateur de documents. Considérez cette étape comme la préparation de votre toile et de votre pinceau avant de commencer votre chef-d'œuvre.
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ensuite, utilisez le`InsertChart` méthode du`DocumentBuilder` pour insérer un histogramme dans le document.
+ Ici,`dataDir` est le chemin d'accès à votre répertoire de documents dans lequel vous enregistrerez le fichier final.`Document`et`DocumentBuilder` sont des classes d'Aspose.Words qui vous aident à créer et à manipuler des documents Word.
+
+## Étape 2 : Insérer un graphique
+
+Titre : Ajouter un graphique à votre document
+
+Ensuite, ajoutons un graphique à votre document. C'est là que la magie commence. Nous insérerons un histogramme qui servira de toile vierge.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Étape 3 : Ajouter des données de série au graphique
+ Le`InsertChart` La méthode insère un graphique du type spécifié (colonne dans ce cas) et des dimensions dans le document.
 
-Ajoutez des données de série au graphique. Dans cet exemple, nous ajouterons cinq éléments avec leurs valeurs correspondantes.
+## Étape 3 : Personnalisation de la série de graphiques
+
+Titre : Remplissez votre graphique avec des données
+
+Maintenant, nous devons ajouter quelques données à notre graphique. Cette étape revient à remplir votre graphique avec des informations significatives.
 
 ```csharp
 chart.Series.Clear();
@@ -47,71 +74,49 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
-## Étape 4 : Formater les étiquettes des axes
+ Ici, nous ajoutons une nouvelle série appelée « Aspose Series 1 » avec cinq points de données. Le`Series.Clear` La méthode garantit que toutes les données préexistantes sont supprimées avant d’ajouter notre nouvelle série.
 
- Pour définir le format numérique des étiquettes de l'axe Y, accédez au`AxisY` propriété du graphique et définissez la`NumberFormat.FormatCode` propriété au format souhaité. Dans cet exemple, nous définissons le format sur "#,##0" pour afficher les nombres avec des séparateurs de milliers.
+## Étape 4 : Formatage des numéros d'axe
+
+Titre : Embellissez vos numéros d'axe
+
+Enfin, formatons les nombres sur l'axe Y pour les rendre plus lisibles. C’est comme mettre la touche finale à votre œuvre d’art.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-## Étape 5 : Enregistrez le document
+ Le`FormatCode` La propriété vous permet de définir un format personnalisé pour les nombres sur l'axe. Dans cet exemple,`#,##0`garantit que les grands nombres sont affichés avec des virgules pour les milliers.
 
- Enfin, enregistrez le document dans le répertoire spécifié à l'aide du`Save` méthode du`Document` objet.
+## Étape 5 : Sauvegarde du document
+
+Titre : Enregistrez votre chef-d'œuvre
+
+Maintenant que tout est configuré, il est temps de sauvegarder votre document. Cette étape est la grande révélation de votre travail.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-Ceci termine la mise en œuvre de la définition du format numérique de l'axe à l'aide d'Aspose.Words pour .NET.
-
-### Exemple de code source pour le format numérique pour l'axe utilisant Aspose.Words pour .NET 
-
-```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
-	chart.AxisY.NumberFormat.FormatCode = "#,##0";
-	doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
-```
+ Ici le`Save` La méthode enregistre le document dans le chemin spécifié avec le nom de fichier`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Conclusion
 
-Dans ce didacticiel, vous avez appris à définir le format numérique d'un axe dans un graphique à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez créer un nouveau document, insérer un histogramme, ajouter des données de série et formater les étiquettes des axes pour afficher les nombres dans un format spécifique.
+Et voila! Vous avez formaté avec succès les nombres sur l'axe Y de votre graphique à l'aide d'Aspose.Words pour .NET. Cela donne non seulement à vos graphiques un aspect plus professionnel, mais améliore également la lisibilité. Aspose.Words offre une multitude de fonctionnalités qui peuvent vous aider à créer de superbes documents Word par programmation. Alors, pourquoi ne pas explorer davantage et voir ce que vous pouvez faire d’autre ?
 
-Aspose.Words for .NET fournit des fonctionnalités puissantes pour personnaliser l'apparence des graphiques dans les documents Word. En définissant le format numérique des étiquettes des axes, vous pouvez contrôler la façon dont les nombres sont affichés, y compris des options telles que les décimales, les séparateurs de milliers, les symboles monétaires, etc. Cela vous permet de présenter des données numériques de manière claire et significative.
+## FAQ
 
-Avec Aspose.Words pour .NET, vous avez la possibilité de formater divers aspects du graphique, y compris les étiquettes des axes. En définissant le format numérique de l'axe, vous pouvez garantir la cohérence et améliorer la lisibilité du graphique, permettant ainsi aux utilisateurs d'interpréter plus facilement les valeurs représentées.
+### Qu’est-ce qu’Aspose.Words pour .NET ?
+Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeurs de créer, manipuler et convertir des documents Word par programme.
 
-### FAQ
+### Puis-je formater d’autres aspects du graphique en plus des numéros d’axe ?
+Absolument! Aspose.Words for .NET vous permet de formater les titres, les étiquettes et même de personnaliser l'apparence du graphique.
 
-#### T1. Quel est le format numérique d’un axe dans un graphique ?
-Le format numérique d'un axe dans un graphique fait référence au formatage appliqué aux valeurs numériques affichées sur l'axe. Il vous permet de contrôler la façon dont les nombres sont présentés, y compris des options telles que les décimales, les séparateurs de milliers, les symboles monétaires, les signes de pourcentage, etc. En définissant le format numérique, vous pouvez personnaliser l'apparence des données numériques dans le graphique en fonction de vos besoins spécifiques.
+### Existe-t-il un essai gratuit disponible pour Aspose.Words pour .NET ?
+ Oui, vous pouvez obtenir un[essai gratuit ici](https://releases.aspose.com/).
 
-#### Q2. Comment puis-je définir le format numérique pour les étiquettes des axes ?
- Pour définir le format numérique des étiquettes d'axe dans un graphique à l'aide d'Aspose.Words for .NET, vous pouvez accéder au`AxisY` propriété du graphique et définissez la`NumberFormat.FormatCode`propriété au code de format souhaité. Le code de format suit la syntaxe des modèles de formatage numérique standard et détermine la manière dont les nombres sont affichés. Par exemple, vous pouvez utiliser « #,##0.00 » pour afficher des nombres avec deux décimales et des séparateurs de milliers.
+### Puis-je utiliser Aspose.Words pour .NET avec d’autres langages .NET autres que C# ?
+Oui, Aspose.Words for .NET est compatible avec n'importe quel langage .NET, y compris VB.NET et F#.
 
-#### Q3. Puis-je définir différents formats de nombres pour les étiquettes des axes X et Y ?
-Oui, vous pouvez définir différents formats numériques pour les étiquettes des axes X et Y à l'aide d'Aspose.Words for .NET. Accédez à l'axe respectif (`AxisX` pour l'axe X ou`AxisY` pour l'axe Y) du graphique et modifiez le`NumberFormat.FormatCode` propriété individuellement pour chaque axe. Cela vous permet d'appliquer différents formats de nombres aux étiquettes sur chaque axe en fonction de vos besoins spécifiques.
-
-#### Q4. Quels sont les codes de format numérique courants que je peux utiliser ?
-Aspose.Words for .NET prend en charge une large gamme de codes de format numérique que vous pouvez utiliser pour formater les étiquettes des axes dans un graphique. Certains codes de format courants incluent :
-
-- `0` ou`#` - Affiche le nombre sans décimales.
-- `0.00` ou`#.00` - Affiche le nombre avec deux décimales.
-- `#,##0` Affiche le nombre avec des séparateurs de milliers.
-- `"€"0.00` - Affiche le numéro avec le symbole monétaire de l'euro et deux décimales.
-- `"%"0` - Affiche le nombre sous forme de pourcentage.
-
- Vous pouvez trouver plus d'informations sur le numéro[formater les codes](https://reference.aspose.com/words/net/aspose.words.drawing.charts/chartnumberformat/formatcode/) dans Référence API d'Aspose.Words pour .NET.
-
-#### Q5. Puis-je personnaliser d’autres propriétés des étiquettes des axes ?
-Oui, Aspose.Words for .NET fournit un large éventail de propriétés pour personnaliser l'apparence et le comportement des étiquettes d'axe. En plus du format des nombres, vous pouvez modifier des propriétés telles que la police, la taille, la couleur, l'orientation, l'alignement, etc. Cela vous permet de personnaliser entièrement les étiquettes des axes pour qu'elles correspondent au style souhaité et aux exigences de présentation.
+### Où puis-je trouver une documentation plus détaillée ?
+ Une documentation détaillée est disponible sur le[Page de documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/).

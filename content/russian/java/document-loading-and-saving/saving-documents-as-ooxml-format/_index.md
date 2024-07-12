@@ -48,7 +48,7 @@ import com.aspose.words.OoxmlCompliance;
 // Загрузите документ
 Document doc = new Document("Document.docx");
 
-// Оптимизация для Word 2016
+// Оптимизировать для Word 2016
 doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2016);
 
 // Создайте OoxmlSaveOptions и установите уровень соответствия.
@@ -172,7 +172,7 @@ public void setCompressionLevel() throws Exception
 
 ### Могу ли я установить дополнительные свойства при сохранении документа в формате OOXML?
 
- Да, вы можете установить дополнительные свойства для документа перед его сохранением в формате OOXML. Использовать`BuiltInDocumentProperties` и`CustomDocumentProperties` классы для установки различных свойств, таких как автор, заголовок, ключевые слова и пользовательские свойства.
+ Да, вы можете установить дополнительные свойства для документа перед его сохранением в формате OOXML. Использовать`BuiltInDocumentProperties`и`CustomDocumentProperties` классы для установки различных свойств, таких как автор, заголовок, ключевые слова и пользовательские свойства.
 
 ### Каков уровень сжатия по умолчанию при сохранении документа в формате OOXML?
 

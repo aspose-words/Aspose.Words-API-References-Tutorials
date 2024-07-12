@@ -94,4 +94,4 @@ Aspose.Words para Java proporciona una amplia gama de opciones de formato para t
 
 ### 4. ¿Aspose.Words para Java es adecuado para el procesamiento de documentos a gran escala?
 
-Sí, Aspose.Words para Java está diseñado para manejar eficientemente tareas de procesamiento de documentos a pequeña y gran escala. Su motor de procesamiento optimizado garantiza un alto rendimiento y un procesamiento confiable incluso con documentos grandes y estructuras de tablas complejas.
+Sí, Aspose.Words para Java está diseñado para manejar de manera eficiente tareas de procesamiento de documentos a pequeña y gran escala. Su motor de procesamiento optimizado garantiza un alto rendimiento y un procesamiento confiable incluso con documentos grandes y estructuras de tablas complejas.

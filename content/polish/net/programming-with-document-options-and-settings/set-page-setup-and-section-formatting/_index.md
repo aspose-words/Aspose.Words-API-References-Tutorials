@@ -58,6 +58,6 @@ Ten kod ustawi orientację strony na poziomą, lewy margines na 50, a rozmiar pa
   
 ```
 
-Pamiętaj o podaniu prawidłowej ścieżki do katalogu, w którym chcesz zapisać dokument w formacie`dataDir` zmienny.
+ Pamiętaj o podaniu prawidłowej ścieżki do katalogu, w którym chcesz zapisać dokument w formacie`dataDir` zmienny.
 
 Nauczyłeś się teraz, jak skonfigurować układ i formatowanie sekcji dokumentu za pomocą Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem zawartym w tym samouczku, możesz łatwo dostosować układ i formatowanie własnych dokumentów.

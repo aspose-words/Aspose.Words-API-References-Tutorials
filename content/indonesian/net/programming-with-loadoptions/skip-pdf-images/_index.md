@@ -72,6 +72,6 @@ J: Melewatkan gambar PDF tidak akan mempengaruhi tata letak atau tampilan dokume
 
 J: Melewatkan gambar PDF paling cocok untuk skenario di mana gambar tidak penting untuk fungsi utama aplikasi Anda. Ini berfungsi dengan baik untuk aplikasi yang terutama berhubungan dengan konten tekstual atau tidak memerlukan manipulasi gambar.
 
-#### T: Dapatkah saya menerapkan fungsi ini ke bagian tertentu dari dokumen PDF?
+#### T: Bisakah saya menerapkan fungsi ini ke bagian tertentu dari dokumen PDF?
 
  A: Ya, Anda dapat menerapkannya`PdfLoadOptions` dengan`SkipPdfImages` mulai`true` ke bagian tertentu dari dokumen PDF dengan memuat bagian itu secara terpisah menggunakan Aspose.Words untuk .NET.

@@ -125,7 +125,7 @@ public class DocumentMerger {
             Document doc1 = new Document("document1.docx");
             Document doc2 = new Document("document2.docx");
 
-            // احصل على القسم المحدد من المستند الثاني
+            // احصل على القسم المحدد من الوثيقة الثانية
             Section sectionToMerge = doc2.getSections().get(0);
 
             // إلحاق القسم بالمستند الأول

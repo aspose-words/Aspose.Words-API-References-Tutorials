@@ -17,7 +17,7 @@ url: /hi/net/programming-with-sdt/combo-box-content-control/
 - C# और वर्ड दस्तावेजों के साथ वर्ड प्रोसेसिंग का बुनियादी ज्ञान।
 
 ## चरण 1: दस्तावेज़ निर्देशिका सेट करें
- अपने दस्तावेज़ निर्देशिका का पथ सेट करके आरंभ करें।`"YOUR DOCUMENT DIRECTORY"` उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
+ अपने दस्तावेज़ निर्देशिका का पथ सेट करके आरंभ करें।`"YOUR DOCUMENT DIRECTORY"`उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## चरण 3: कॉम्बो बॉक्स में आइटम जोड़ें
- का उपयोग करके कॉम्बो बॉक्स में आइटम जोड़ें`ListItems` की संपत्ति`StructuredDocumentTag`प्रत्येक आइटम को एक द्वारा दर्शाया गया है`SdtListItem` ऑब्जेक्ट, जो एक डिस्प्ले टेक्स्ट और एक मान लेता है। इस उदाहरण में, हम कॉम्बो बॉक्स में तीन आइटम जोड़ते हैं।
+ का उपयोग करके कॉम्बो बॉक्स में आइटम जोड़ें`ListItems` की संपत्ति`StructuredDocumentTag` प्रत्येक आइटम को एक द्वारा दर्शाया गया है`SdtListItem` ऑब्जेक्ट, जो एक डिस्प्ले टेक्स्ट और एक मान लेता है। इस उदाहरण में, हम कॉम्बो बॉक्स में तीन आइटम जोड़ते हैं।
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

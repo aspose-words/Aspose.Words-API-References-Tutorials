@@ -67,7 +67,7 @@ In deze handleiding hebben we besproken hoe u Aspose.Words voor .NET kunt gebrui
 
 #### Vraag: Wat is het doel van de functionaliteit "Bereiken tekst ophalen in Word-document" in Aspose.Words voor .NET?
 
-A: Met de functionaliteit "Bereiken tekst ophalen in Word-document" in Aspose.Words voor .NET kunt u de tekst uit specifieke bereiken van een Word-document extraheren. Het biedt de mogelijkheid om de tekstuele inhoud binnen gewenste bereiken, zoals secties, alinea's of andere op maat gedefinieerde bereiken, te openen en op te halen.
+A: Met de functionaliteit "Bereiken tekst ophalen in Word-document" in Aspose.Words voor .NET kunt u de tekst extraheren die zich in specifieke bereiken van een Word-document bevindt. Het biedt de mogelijkheid om de tekstuele inhoud binnen gewenste bereiken, zoals secties, alinea's of andere op maat gedefinieerde bereiken, te openen en op te halen.
 
 #### Vraag: Wat is Aspose.Words voor .NET?
 
@@ -75,7 +75,7 @@ A: Aspose.Words voor .NET is een krachtige bibliotheek voor woordenverwerking me
 
 #### Vraag: Hoe laad ik een Word-document met Aspose.Words voor .NET?
 
-A: Om een Word-document te laden met Aspose.Words voor .NET, kunt u de`Document` klasse en zijn constructor. U moet het bestandspad of de stroom van het document als parameter opgeven. Hier is een voorbeeld:
+ A: Om een Word-document te laden met Aspose.Words voor .NET, kunt u de`Document` klasse en zijn constructor. U moet het bestandspad of de stroom van het document als parameter opgeven. Hier is een voorbeeld:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
@@ -97,7 +97,7 @@ string text = doc.Range.Text;
 
 #### Vraag: Kan ik specifieke soorten inhoud (zoals alinea's, secties of tabellen) uit een Word-document extraheren met behulp van de functionaliteit "Bereikt tekst ophalen in Word-document" in Aspose.Words voor .NET?
 
- A: Ja, u kunt specifieke typen inhoud, zoals alinea's, secties of tabellen, uit een Word-document extraheren met behulp van de functionaliteit "Bereikt tekst ophalen in Word-document" in Aspose.Words voor .NET. Door toegang te krijgen tot de gewenste bereiken binnen de documentstructuur en de tekst op te halen met behulp van de`Text` eigenschap, kunt u indien nodig specifieke inhoudstypen extraheren en ermee werken.
+ A: Ja, u kunt specifieke soorten inhoud, zoals alinea's, secties of tabellen, uit een Word-document extraheren met behulp van de functionaliteit "Bereikt tekst ophalen in Word-document" in Aspose.Words voor .NET. Door toegang te krijgen tot de gewenste bereiken binnen de documentstructuur en de tekst op te halen met behulp van de`Text` eigenschap, kunt u indien nodig specifieke inhoudstypen extraheren en ermee werken.
 
 #### Vraag: Hoe ga ik om met de opmaak en structuur bij het extraheren van tekst uit bereiken met Aspose.Words voor .NET?
 

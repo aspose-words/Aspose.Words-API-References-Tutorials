@@ -12,7 +12,7 @@ Belge işleme birçok uygulamanın temel bir özelliğidir ve Aspose.Words for P
 
 ## Aspose.Words for Python'a Giriş
 
-Aspose.Words for Python, Python kullanarak Word belgeleri oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan, zengin özelliklere sahip bir kitaplıktır. İster rapor oluşturuyor olun, ister belge iş akışlarını otomatikleştiriyor olun, ister belge dönüştürmeleri gerçekleştiriyor olun, Aspose.Words karmaşık görevleri basitleştirir.
+Aspose.Words for Python, Python kullanarak Word belgeleri oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan zengin özelliklere sahip bir kitaplıktır. İster rapor oluşturuyor olun, ister belge iş akışlarını otomatikleştiriyor olun, ister belge dönüştürmeleri gerçekleştiriyor olun, Aspose.Words karmaşık görevleri basitleştirir.
 
 ## Belgeleri Yükleme ve Kaydetme
 

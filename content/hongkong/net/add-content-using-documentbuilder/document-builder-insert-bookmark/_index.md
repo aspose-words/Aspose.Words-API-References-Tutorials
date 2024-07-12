@@ -95,7 +95,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將書籤插入 Word 文件中。這看起來似乎只是一小步，但它是文件自動化領域的強大工具。使用書籤，您可以建立易於導航的動態和互動式文件。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將書籤插入 Word 文件中。這看起來似乎只是一小步，但它是文件自動化領域的強大工具。使用書籤，您可以建立易於導航的動態和互動式文件。
 
 ## 常見問題解答
 

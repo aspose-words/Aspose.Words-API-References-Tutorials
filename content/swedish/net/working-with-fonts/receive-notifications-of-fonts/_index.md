@@ -113,7 +113,7 @@ Nej, du kan bara ange ett standardteckensnitt för ersättning. Du kan dock konf
 
 ###  F3: Kan jag hantera andra typer av varningar med`IWarningCallback`?
 
- Ja den`IWarningCallback` gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
+ Ja den`IWarningCallback`gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
 
 ### F4: Var kan jag hitta support för Aspose.Words?
 

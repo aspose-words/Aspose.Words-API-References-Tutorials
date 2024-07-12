@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- Na tym etapie uzyskujemy dostęp do pierwszego akapitu dokumentu za pomocą`FirstSection` I`Body` nieruchomości. Następnie uzyskujemy dostęp do`ParagraphFormat.Bidi` właściwość, aby uzyskać kierunek tekstu akapitu. Następnie wyświetlamy tę wartość w konsoli.
+ Na tym etapie uzyskujemy dostęp do pierwszego akapitu dokumentu za pomocą`FirstSection`I`Body` nieruchomości. Następnie uzyskujemy dostęp do`ParagraphFormat.Bidi` właściwość, aby uzyskać kierunek tekstu akapitu. Następnie wyświetlamy tę wartość w konsoli.
 
 ## Krok 5: Zapisz dokument
 

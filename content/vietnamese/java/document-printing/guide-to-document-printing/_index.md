@@ -20,7 +20,7 @@ In tài liệu đề cập đến quá trình tạo ra một bản sao vật lý
 
 ### Tại sao nên sử dụng Aspose.Words cho Java?
 
-Aspose.Words for Java là một thư viện Java mạnh mẽ cung cấp một bộ tính năng toàn diện để làm việc với các tài liệu Word theo chương trình. Nó cung cấp hỗ trợ rộng rãi cho việc tạo, thao tác và hiển thị tài liệu. Ngoài ra, Aspose.Words for Java cung cấp giao diện thân thiện với người dùng để xử lý việc in tài liệu một cách dễ dàng.
+Aspose.Words for Java là một thư viện Java mạnh mẽ cung cấp một bộ tính năng toàn diện để làm việc với các tài liệu Word theo chương trình. Nó cung cấp hỗ trợ rộng rãi cho việc tạo, thao tác và hiển thị tài liệu. Ngoài ra, Aspose.Words for Java còn cung cấp giao diện thân thiện với người dùng để xử lý việc in tài liệu một cách dễ dàng.
 
 ## Thiết lập môi trường của bạn
 
@@ -183,7 +183,7 @@ Tự động hóa quy trình in tài liệu có thể rất hữu ích trong vi�
 
 ## Phần kết luận
 
-In tài liệu theo lập trình bằng Aspose.Words cho Java mở ra nhiều khả năng cho các nhà phát triển làm việc trong các dự án xử lý văn bản và xử lý tài liệu. Hướng dẫn từng bước được cung cấp trong bài viết này sẽ giúp bạn bắt đầu và phát huy toàn bộ tiềm năng của việc in tài liệu bằng Aspose.Words for Java.
+In tài liệu theo lập trình bằng Aspose.Words cho Java mở ra nhiều khả năng cho các nhà phát triển làm việc trong các dự án xử lý văn bản và xử lý tài liệu. Hướng dẫn từng bước được cung cấp trong bài viết này sẽ giúp bạn bắt đầu và phát huy toàn bộ tiềm năng của việc in tài liệu bằng Aspose.Words cho Java.
 
 ## Câu hỏi thường gặp
 

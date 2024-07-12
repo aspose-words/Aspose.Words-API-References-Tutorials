@@ -89,7 +89,7 @@ Trả lời: Để nhúng tất cả phông chữ vào tài liệu PDF bằng As
 
 Đảm bảo hình thức tài liệu nhất quán: Phông chữ được nhúng đảm bảo rằng tài liệu sẽ được hiển thị chính xác như được thiết kế, bất kể phông chữ có sẵn trên hệ thống.
 
-Bảo toàn định dạng: Phông chữ nhúng bảo toàn định dạng và bố cục tài liệu, tránh việc thay thế phông chữ và các biến thể về hình thức.
+Bảo toàn định dạng: Phông chữ nhúng bảo toàn định dạng và bố cục tài liệu, tránh việc thay thế phông chữ và thay đổi hình thức.
 
 Cải thiện khả năng đọc: Việc nhúng phông chữ đảm bảo tài liệu dễ đọc hơn vì các phông chữ được chỉ định sẽ được sử dụng để hiển thị văn bản, ngay cả khi phông chữ gốc không có sẵn.
 

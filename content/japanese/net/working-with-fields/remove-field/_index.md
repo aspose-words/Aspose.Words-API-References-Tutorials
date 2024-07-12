@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Various fields.docx");
 ```
 
-## ステップ3: フィールドの削除
+## ステップ3: フィールドを削除する
 
 ドキュメント範囲の最初のフィールドを選択し、`Remove()`それを削除する方法。
 
@@ -69,7 +69,7 @@ Aspose.Words for .NET を使用してドキュメント内の特定のフィー�
 
 #### Q: Aspose.Words for .NET を使用して Word 文書内の特定のフィールドのみを削除することは可能ですか?
 
- A: はい、Aspose.Words for .NET では Word 文書内の特定のフィールドのみを削除することができます。フィールド名やその他の関連プロパティなどの特定の条件を使用して、削除するフィールドをフィルターできます。次に、`FieldStart.Remove`方法。
+ A: はい、Aspose.Words for .NET では Word 文書内の特定のフィールドのみを削除することができます。フィールド名やその他の関連プロパティなどの特定の条件を使用して、削除するフィールドをフィルターできます。その後、`FieldStart.Remove`方法。
 
 #### Q: Aspose.Words for .NET を使用して Word 文書内のフィールドが正常に削除されたかどうかを確認するにはどうすればよいですか?
 

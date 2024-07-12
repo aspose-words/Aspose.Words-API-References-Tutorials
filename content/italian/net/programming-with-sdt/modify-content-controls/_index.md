@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Passaggio 2: caricare il documento e ripetere i controlli del contenuto
- Caricare il documento Word utilizzando il file`Document`costruttore, passando il percorso del documento come parametro. Itera su tutti i tag del documento strutturato nel documento utilizzando a`foreach` ciclo continuo.
+ Caricare il documento Word utilizzando il file`Document` costruttore, passando il percorso del documento come parametro. Itera su tutti i tag del documento strutturato nel documento utilizzando a`foreach` ciclo continuo.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Passaggio 6: salva il documento modificato
- Salvare il documento modificato nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithSdt.ModifyContentControls.docx".
+ Salvare il documento modificato nella directory specificata utilizzando il file`Save`metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithSdt.ModifyContentControls.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

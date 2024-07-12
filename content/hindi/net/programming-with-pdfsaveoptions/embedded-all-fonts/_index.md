@@ -38,7 +38,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
 
 ## चरण 4: दस्तावेज़ को एम्बेडेड फ़ॉन्ट के साथ PDF के रूप में सहेजें
 
- अंत में, हम दस्तावेज़ को एम्बेडेड फ़ॉन्ट के साथ PDF फ़ाइल के रूप में सहेज सकते हैं। आउटपुट फ़ाइल नाम और`saveOptions` ऑब्जेक्ट जिसे हमने पिछले चरण में कॉन्फ़िगर किया था।
+ अंत में, हम दस्तावेज़ को एम्बेडेड फ़ॉन्ट के साथ PDF फ़ाइल के रूप में सहेज सकते हैं। आउटपुट फ़ाइल नाम और फ़ाइल नाम निर्दिष्ट करें।`saveOptions` ऑब्जेक्ट जिसे हमने पिछले चरण में कॉन्फ़िगर किया था।
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptio
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// आउटपुट पीडीएफ दस्तावेज़ में पाए गए सभी फ़ॉन्ट्स के साथ एम्बेड किया जाएगा।
+	// आउटपुट पीडीएफ में दस्तावेज़ में मौजूद सभी फ़ॉन्ट्स एम्बेड किए जाएंगे।
 	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);

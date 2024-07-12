@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- Dalam contoh ini, kami memuat dokumen teks dan memangkas spasi awal dan akhir menggunakan`TxtLeadingSpacesOptions.TRIM` Dan`TxtTrailingSpacesOptions.TRIM`.
+ Dalam contoh ini, kami memuat dokumen teks dan memangkas spasi awal dan akhir menggunakan`TxtLeadingSpacesOptions.TRIM`Dan`TxtTrailingSpacesOptions.TRIM`.
 
 ## Langkah 3: Mengontrol Arah Teks
 
@@ -179,7 +179,7 @@ Untuk memulai Aspose.Words untuk Java, ikuti langkah-langkah berikut:
 
 ### Bagaimana cara menangani spasi dalam dokumen teks yang dimuat?
 
- Anda dapat mengontrol bagaimana spasi awal dan akhir ditangani dalam dokumen teks yang dimuat menggunakan`TxtLoadOptions` . Pilihan seperti`TxtLeadingSpacesOptions` Dan`TxtTrailingSpacesOptions`memungkinkan Anda memangkas atau melestarikan ruang sesuai kebutuhan. Lihat bagian "Menangani Opsi Spasi" dalam panduan ini untuk contohnya.
+ Anda dapat mengontrol bagaimana spasi awal dan akhir ditangani dalam dokumen teks yang dimuat menggunakan`TxtLoadOptions` . Pilihan seperti`TxtLeadingSpacesOptions`Dan`TxtTrailingSpacesOptions`memungkinkan Anda memangkas atau melestarikan ruang sesuai kebutuhan. Lihat bagian "Menangani Opsi Spasi" dalam panduan ini untuk contohnya.
 
 ### Apa pentingnya arah teks di Aspose.Words untuk Java?
 

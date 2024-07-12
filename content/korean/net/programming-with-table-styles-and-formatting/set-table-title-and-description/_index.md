@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3단계: 테이블에 액세스하여 제목과 설명 설정
- 이제 다음을 사용하여 문서의 테이블에 액세스할 수 있습니다.`GetChild()` 방법과`Table` 수업. 다음으로,`Title` 그리고`Description` 속성.
+ 이제 다음을 사용하여 문서의 테이블에 액세스할 수 있습니다.`GetChild()` 방법과`Table` 수업. 다음으로,`Title`그리고`Description` 속성.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

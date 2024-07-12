@@ -63,7 +63,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// Necesitamos habilitar KeepWithNext para cada párrafo de la tabla para evitar que se divida en una página.
-	// excepto los últimos párrafos de la última fila del cuadro.
+	//excepto los últimos párrafos de la última fila del cuadro.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

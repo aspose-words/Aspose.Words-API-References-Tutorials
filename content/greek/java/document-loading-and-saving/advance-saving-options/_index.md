@@ -40,7 +40,7 @@ DocSaveOptions saveOptions = new DocSaveOptions();
 doc.save("Your Directory Path" + "EncryptedDocument.docx", saveOptions);
 ```
 
-## Μη συμπίεση μικρών μετα-αρχείων
+## Μη συμπίεση μικρών μετααρχείων
 
 Τα μετα-αρχεία είναι απαραίτητα στα έγγραφα του Word, αλλά μπορεί να μην θέλετε να συμπιέσετε μικρά. Δείτε πώς μπορείτε να το πετύχετε αυτό:
 

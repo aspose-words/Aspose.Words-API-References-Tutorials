@@ -18,7 +18,7 @@ So sánh tài liệu bao gồm việc phân tích hai tài liệu và xác đị
 
 ## So sánh tài liệu cơ bản
 
- Hãy bắt đầu với những điều cơ bản về so sánh tài liệu. Chúng ta sẽ sử dụng hai tài liệu,`docA` Và`docB`, và so sánh chúng.
+ Hãy bắt đầu với những điều cơ bản về so sánh tài liệu. Chúng ta sẽ sử dụng hai tài liệu,`docA`Và`docB`, và so sánh chúng.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-Trong đoạn mã này, chúng tôi tải hai tài liệu,`docA` Và`docB` , sau đó sử dụng`compare` phương pháp so sánh chúng. Chúng tôi chỉ định tác giả là "người dùng" và việc so sánh được thực hiện. Cuối cùng, chúng tôi kiểm tra xem có bản sửa đổi nào không, chỉ ra sự khác biệt giữa các tài liệu.
+Trong đoạn mã này, chúng tôi tải hai tài liệu,`docA`Và`docB` , sau đó sử dụng`compare` phương pháp so sánh chúng. Chúng tôi chỉ định tác giả là "người dùng" và việc so sánh được thực hiện. Cuối cùng, chúng tôi kiểm tra xem có bản sửa đổi nào không, chỉ ra sự khác biệt giữa các tài liệu.
 
 ## Tùy chỉnh so sánh với các tùy chọn
 

@@ -27,7 +27,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## ステップ3: HTMLバックアップオプションの設定
 
-次に、ドキュメント リソースをエクスポートするための HTML 保存オプションを設定します。次のコードを使用します。
+ここで、ドキュメント リソースをエクスポートするための HTML 保存オプションを設定します。次のコードを使用します。
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions

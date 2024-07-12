@@ -2,76 +2,87 @@
 title: Danh sách Giữ định dạng nguồn
 linktitle: Danh sách Giữ định dạng nguồn
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách giữ nguyên định dạng danh sách trong khi nối và nối thêm tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách hợp nhất các tài liệu Word trong khi vẫn giữ nguyên định dạng bằng Aspose.Words cho .NET. Hướng dẫn này cung cấp hướng dẫn từng bước để hợp nhất tài liệu liền mạch.
 type: docs
 weight: 10
 url: /vi/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## Giới thiệu
 
-Hướng dẫn này sẽ hướng dẫn bạn trong quá trình sử dụng tính năng Định dạng nguồn giữ danh sách của Aspose.Words cho .NET. Tính năng này cho phép bạn nối và nối các tài liệu Word trong khi vẫn giữ nguyên định dạng nguồn của danh sách.
+Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng Aspose.Words cho .NET để hợp nhất các tài liệu trong khi vẫn giữ nguyên định dạng nguồn. Khả năng này rất cần thiết cho các tình huống trong đó việc duy trì hình thức ban đầu của tài liệu là rất quan trọng.
 
 ## Điều kiện tiên quyết
 
-Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
+Trước khi tiếp tục, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
 
-1. Đã cài đặt Aspose.Words cho .NET. Bạn có thể tải xuống từ trang web Aspose hoặc cài đặt nó qua NuGet.
-2. Visual Studio hoặc bất kỳ môi trường phát triển C# nào khác.
+- Visual Studio được cài đặt trên máy của bạn.
+-  Đã cài đặt Aspose.Words cho .NET. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+- Làm quen cơ bản với lập trình C# và môi trường .NET.
 
-## Bước 1: Khởi tạo thư mục tài liệu
+## Nhập không gian tên
 
- Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Sửa đổi giá trị của`dataDir` có thể thay đổi đường dẫn chứa tài liệu của bạn.
+Đầu tiên, nhập các không gian tên cần thiết vào dự án C# của bạn:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## Bước 2: Tải tài liệu nguồn và đích
+## Bước 1: Thiết lập dự án của bạn
 
-Tiếp theo, bạn cần tải tài liệu nguồn và đích bằng Aspose.Words`Document` lớp học. Cập nhật tên tập tin trong`Document` hàm tạo theo tên tài liệu của bạn.
+Bắt đầu bằng cách tạo một dự án C# mới trong Visual Studio. Đảm bảo rằng Aspose.Words for .NET được tham chiếu trong dự án của bạn. Nếu không, bạn có thể thêm nó thông qua Trình quản lý gói NuGet.
+
+## Bước 2: Khởi tạo các biến tài liệu
 
 ```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Tải tài liệu nguồn và đích
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Bước 3: Đặt tài liệu nguồn ở chế độ chảy liên tục
+## Bước 3: Định cấu hình cài đặt phần
 
- Để đảm bảo nội dung từ tài liệu nguồn được luân chuyển liên tục khi được thêm vào tài liệu đích, bạn cần đặt`SectionStart` thuộc tính của phần đầu tiên trong tài liệu nguồn để`SectionStart.Continuous`.
+Để duy trì luồng liên tục trong tài liệu đã hợp nhất, hãy điều chỉnh phần bắt đầu:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Bước 4: Nối tài liệu nguồn vào tài liệu đích
+## Bước 4: Hợp nhất tài liệu
 
- Bây giờ, bạn có thể nối tài liệu nguồn vào tài liệu đích bằng cách sử dụng`AppendDocument` phương pháp của`Document` lớp học. Các`ImportFormatMode.KeepSourceFormatting`tham số đảm bảo rằng định dạng nguồn, bao gồm định dạng danh sách, được giữ nguyên trong quá trình nối thêm.
+Nối thêm nội dung của tài liệu nguồn (`srcDoc`) đến tài liệu đích (`dstDoc`) trong khi vẫn giữ nguyên định dạng ban đầu:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Bước 5: Lưu tài liệu cuối cùng
+## Bước 5: Lưu tài liệu đã hợp nhất
 
- Cuối cùng, lưu tài liệu đã hợp nhất với tính năng Định dạng nguồn giữ danh sách được bật bằng cách sử dụng`Save` phương pháp của`Document` lớp học.
+Cuối cùng, lưu tài liệu đã hợp nhất vào thư mục đã chỉ định của bạn:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### Mã nguồn ví dụ cho Định dạng nguồn giữ danh sách bằng Aspose.Words cho .NET 
+## Phần kết luận
 
-Đây là mã nguồn đầy đủ cho tính năng Định dạng nguồn giữ danh sách trong C# bằng cách sử dụng Aspose.Words cho .NET:
+Tóm lại, việc hợp nhất các tài liệu trong khi vẫn giữ nguyên định dạng ban đầu của chúng thật đơn giản với Aspose.Words for .NET. Hướng dẫn này đã hướng dẫn bạn thực hiện quy trình, đảm bảo rằng tài liệu đã hợp nhất của bạn duy trì bố cục và kiểu dáng của tài liệu nguồn.
 
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Câu hỏi thường gặp
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Nối thêm nội dung của tài liệu để nó diễn ra liên tục.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### Điều gì sẽ xảy ra nếu tài liệu của tôi có các kiểu khác nhau?
+Aspose.Words xử lý các kiểu khác nhau một cách duyên dáng, giữ nguyên định dạng gốc nhất có thể.
 
-Đó là nó! Bạn đã triển khai thành công tính năng Định dạng nguồn giữ danh sách bằng Aspose.Words cho .NET. Tài liệu cuối cùng sẽ chứa nội dung đã hợp nhất với định dạng danh sách của tài liệu nguồn được giữ nguyên.
+### Tôi có thể hợp nhất các tài liệu có định dạng khác nhau không?
+Có, Aspose.Words hỗ trợ hợp nhất các tài liệu có nhiều định dạng khác nhau, bao gồm DOCX, DOC, RTF và các định dạng khác.
+
+### Aspose.Words có tương thích với .NET Core không?
+Có, Aspose.Words hỗ trợ đầy đủ .NET Core, cho phép phát triển đa nền tảng.
+
+### Làm cách nào tôi có thể xử lý các tài liệu lớn một cách hiệu quả?
+Aspose.Words cung cấp các API hiệu quả để thao tác tài liệu, được tối ưu hóa cho hiệu suất ngay cả với các tài liệu lớn.
+
+### Tôi có thể tìm thêm ví dụ và tài liệu ở đâu?
+ Bạn có thể khám phá thêm ví dụ và tài liệu chi tiết tại[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/).

@@ -21,7 +21,7 @@ url: /ja/net/programming-with-tables/auto-fit-to-page-width/
 3. Visual Studio: 最近のどのバージョンでも動作しますが、最新バージョンが推奨されます。
 4. .NET Framework: システムにインストールされていることを確認します。
 
-すべて揃いましたか？素晴らしい！それでは楽しい部分に移りましょう。
+すべて入手できましたか? 素晴らしい! では、楽しい部分に移りましょう。
 
 ## 名前空間のインポート
 
@@ -95,7 +95,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 
 ### 1. Aspose.Words for .NET とは何ですか?
 
-Aspose.Words for .NET は、開発者が Word ドキュメントをプログラムで作成、操作、変換できるようにする強力なライブラリです。ドキュメント関連のタスクを自動化するのに最適です。
+Aspose.Words for .NET は、開発者がプログラムで Word ドキュメントを作成、操作、変換できるようにする強力なライブラリです。ドキュメント関連のタスクを自動化するのに最適です。
 
 ### 2. Aspose.Words for .NET を無料で使用できますか?
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET は、開発者が Word ドキュメントをプログラ�
 
 ### 3. 表の書式を変更するにはどうすればよいですか?
 
-Aspose.Wordsが提供するさまざまな方法を使用して、表の書式をカスタマイズできます。[APIドキュメント](https://reference.aspose.com/words/net/)詳細な手順については、こちらをご覧ください。
+ Aspose.Wordsが提供するさまざまな方法を使用して、表の書式をカスタマイズできます。[APIドキュメント](https://reference.aspose.com/words/net/)詳細な手順については、こちらをご覧ください。
 
 ### 4. Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
 

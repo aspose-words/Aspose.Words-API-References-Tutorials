@@ -17,14 +17,14 @@ Hướng dẫn này giải thích cách khóa hoặc mở khóa tỷ lệ khung 
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tạo Tài liệu mới và DocumentBuilder
- Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder`đối tượng làm việc với tài liệu.
+ Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder` đối tượng làm việc với tài liệu.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 3: Chèn hình ảnh
- Sử dụng`InsertImage` phương pháp của`DocumentBuilder` đối tượng để chèn hình ảnh vào tài liệu. Cung cấp đường dẫn đến tệp hình ảnh làm tham số.
+ Sử dụng`InsertImage` phương pháp của`DocumentBuilder`đối tượng để chèn hình ảnh vào tài liệu. Cung cấp đường dẫn đến tệp hình ảnh làm tham số.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  Đặt`AspectRatioLocked` thuộc tính của hình dạng`true` hoặc`false` để khóa hoặc mở khóa tỷ lệ khung hình tương ứng.
 
 ```csharp
-shape.AspectRatioLocked = false; //Mở khóa tỷ lệ khung hình
+shape.AspectRatioLocked = false; // Mở khóa tỷ lệ khung hình
 ```
 
 ## Bước 5: Lưu tài liệu

@@ -17,14 +17,14 @@ Bằng cách làm theo các hướng dẫn này, bạn sẽ có thể thao tác 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Truy cập dấu trang trong tài liệu Word](./access-bookmarks/) | Tìm hiểu cách truy cập dấu trang trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Cập nhật dữ liệu Bookmark trong tài liệu Word](./update-bookmark-data/) | Hướng dẫn từng bước giải thích mã nguồn C# của tính năng cập nhật dữ liệu dấu trang Aspose.Words trong tài liệu word cho .NET. |
-| [Đánh dấu cột bảng trong tài liệu Word](./bookmark-table-columns/) | Tìm hiểu cách đánh dấu cột trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Sao chép văn bản được đánh dấu trong tài liệu Word](./copy-bookmarked-text/) | Tìm hiểu cách sao chép văn bản dấu trang trong tài liệu word sang tài liệu khác bằng Aspose.Words cho .NET. |
-| [Nối văn bản đã đánh dấu vào tài liệu Word](./append-bookmarked-text/) | Tìm hiểu cách thêm văn bản từ dấu trang trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Tạo Bookmark Trong Tài Liệu Word](./create-bookmark/) | Tìm hiểu cách tạo dấu trang trong tài liệu word và chỉ định mức xem trước dấu trang trong tệp PDF bằng Aspose.Words cho .NET. |
-| [Hiển thị Ẩn dấu trang trong tài liệu Word](./show-hide-bookmarks/) | Tìm hiểu cách hiển thị hoặc ẩn dấu trang cụ thể trong tài liệu word bằng Aspose.Words cho .NET. |
-| [Hiển thị ẩn nội dung được đánh dấu trong tài liệu Word](./show-hide-bookmarked-content/) | Tìm hiểu cách hiển thị hoặc ẩn nội dung dấu trang trong tài liệu word bằng Aspose.Words for .NET. |
-| [Gỡ rối các dấu trang hàng trong tài liệu Word](./untangle-row-bookmarks/) | Tìm hiểu cách gỡ rối các dấu trang hàng lồng nhau trong tài liệu word để xóa các hàng cụ thể mà không ảnh hưởng đến các dấu trang khác. |
-| [Gỡ rối trong tài liệu Word](./untangle/) | Tìm hiểu cách gỡ rối các dấu trang lồng nhau trong tài liệu word ở các hàng trong bảng liền kề bằng cách sử dụng Aspose.Words for .NET. |
-| [Xóa hàng theo dấu trang trong tài liệu Word](./delete-row-by-bookmark/) | Tìm hiểu cách xóa một hàng trong bảng dựa trên một dấu trang cụ thể trong tài liệu word bằng Aspose.Words for .NET. |
+| [Truy cập dấu trang trong tài liệu Word](./access-bookmarks/) | Tìm hiểu cách truy cập và thao tác dấu trang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. |
+| [Cập nhật dữ liệu Bookmark trong tài liệu Word](./update-bookmark-data/) | Dễ dàng cập nhật nội dung trong tài liệu Word bằng dấu trang & Aspose.Words .NET. Hướng dẫn này mở ra sức mạnh để tự động hóa báo cáo, cá nhân hóa mẫu và hơn thế nữa. |
+| [Đánh dấu cột bảng trong tài liệu Word](./bookmark-table-columns/) | Tìm hiểu cách đánh dấu các cột trong bảng trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. |
+| [Sao chép văn bản được đánh dấu trong tài liệu Word](./copy-bookmarked-text/) | Dễ dàng sao chép văn bản được đánh dấu giữa các tài liệu Word bằng Aspose.Words cho .NET. Tìm hiểu cách thực hiện với hướng dẫn từng bước này. |
+| [Nối văn bản đã đánh dấu vào tài liệu Word](./append-bookmarked-text/) | Tìm hiểu cách thêm văn bản được đánh dấu vào tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo cho các nhà phát triển. |
+| [Tạo Bookmark Trong Tài Liệu Word](./create-bookmark/) | Tìm hiểu cách tạo dấu trang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Hoàn hảo cho việc điều hướng và tổ chức tài liệu. |
+| [Hiển thị Ẩn dấu trang trong tài liệu Word](./show-hide-bookmarks/) | Tìm hiểu cách tự động hiển thị hoặc ẩn dấu trang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Hoàn hảo cho các nhà phát triển. |
+| [Hiển thị ẩn nội dung được đánh dấu trong tài liệu Word](./show-hide-bookmarked-content/) | Tìm hiểu cách tự động hiển thị hoặc ẩn nội dung được đánh dấu trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. |
+| [Gỡ rối các dấu trang hàng trong tài liệu Word](./untangle-row-bookmarks/) | Gỡ rối các dấu trang hàng rối rắm trong tài liệu Word của bạn một cách dễ dàng bằng cách sử dụng Aspose.Words for .NET. Hướng dẫn này sẽ hướng dẫn bạn quy trình quản lý dấu trang sạch hơn và an toàn hơn. |
+| [Gỡ rối trong tài liệu Word](./untangle/) | Nắm vững cách gỡ rối dấu trang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển .NET. |
+| [Xóa hàng theo dấu trang trong tài liệu Word](./delete-row-by-bookmark/) | Tìm hiểu cách xóa một hàng bằng dấu trang trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để quản lý tài liệu hiệu quả. |

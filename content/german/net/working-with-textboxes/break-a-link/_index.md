@@ -42,7 +42,7 @@ textBox. Next = null;
 
 ## Schritt 5: Einen Link trennen, der zur TextBox führt
 
- In manchen Fällen müssen wir einen Link trennen, der zur TextBox-Form führt. Dies erreichen wir durch den Aufruf des`BreakForwardLink()` Methode auf der`Previous` Formular, das die Verknüpfung zur TextBox unterbricht. Hier ist ein Beispiel, wie man eine solche Verknüpfung unterbricht:
+ In manchen Fällen müssen wir einen Link unterbrechen, der zur TextBox-Form führt. Dies erreichen wir durch den Aufruf des`BreakForwardLink()` Methode auf der`Previous` Formular, das die Verknüpfung zur TextBox unterbricht. Hier ist ein Beispiel, wie man eine solche Verknüpfung unterbricht:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();

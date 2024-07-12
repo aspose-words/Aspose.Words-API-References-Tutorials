@@ -62,7 +62,7 @@ tym samouczku dowiedzieliśmy się, jak ustawić foldery czcionek podczas render
 
 #### P: Jak mogę skonfigurować foldery czcionek w dokumencie programu Word przy użyciu Aspose.Words?
 
-Odp.: Aby skonfigurować foldery czcionek w dokumencie programu Word za pomocą Aspose.Words, możesz użyć interfejsu API do określenia niestandardowych folderów czcionek, które będą używane podczas generowania lub edytowania dokumentu. Umożliwi to programowi Word znalezienie czcionek wymaganych do prawidłowego renderowania.
+Odp.: Aby skonfigurować foldery czcionek w dokumencie programu Word za pomocą Aspose.Words, możesz użyć interfejsu API w celu określenia niestandardowych folderów czcionek, które będą używane podczas generowania lub edytowania dokumentu. Umożliwi to programowi Word znalezienie czcionek wymaganych do prawidłowego renderowania.
 
 #### P: Czy można dodać niestandardowe czcionki do dokumentu programu Word za pomocą Aspose.Words?
 
@@ -74,7 +74,7 @@ Odp.: Jeśli w dokumencie programu Word brakuje wymaganych czcionek, Aspose.Word
 
 #### P: Jak mogę usunąć niestandardowe czcionki z dokumentu Word za pomocą Aspose.Words?
 
-Odp.: Aby usunąć niestandardowe czcionki z dokumentu programu Word za pomocą Aspose.Words, możesz użyć interfejsu API w celu oczyszczenia dokumentu i usunięcia niestandardowych czcionek, które nie są już potrzebne. Zmniejszy to rozmiar pliku i ułatwi zarządzanie czcionkami.
+Odp.: Aby usunąć niestandardowe czcionki z dokumentu programu Word za pomocą Aspose.Words, możesz użyć interfejsu API do oczyszczenia dokumentu i usunięcia niestandardowych czcionek, które nie są już potrzebne. Zmniejszy to rozmiar pliku i ułatwi zarządzanie czcionkami.
 
 #### P: Czy ważne jest skonfigurowanie folderów czcionek w dokumencie programu Word?
 

@@ -69,7 +69,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 Ebben az útmutatóban bemutattuk, hogyan tölthet be egy dokumentumot a .NET Aspose.Words könyvtárával a betöltési figyelmeztetések visszahívási funkciójával. A megadott lépések követésével és a mellékelt C# forráskód használatával könnyedén alkalmazhatja ezt a funkciót a C# alkalmazásban. A figyelmeztetések kezelése a dokumentum betöltésekor lehetővé teszi, hogy értesüljön a betöltött dokumentummal kapcsolatos problémákról vagy figyelmeztetésekről.
 
-### GYIK a Word-dokumentumban lévő figyelmeztető visszahívásokhoz
+### GYIK a Word dokumentumban található figyelmeztető visszahívásokhoz
 
 Amikor Word-dokumentumokat dolgoz fel egy C#-alkalmazásban az Aspose.Words for .NET használatával, a dokumentum betöltése közben figyelmeztetéseket kaphat. Az alábbiakban néhány gyakran ismételt kérdés található a visszahívási funkció használatával kapcsolatban a figyelmeztetések kezelésére:
 

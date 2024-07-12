@@ -65,7 +65,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng hìn
 
 #### Hỏi: Làm cách nào tôi có thể thay đổi kích thước hình ảnh trong Aspose.Words?
 
- Trả lời: Để thay đổi kích thước hình ảnh trong Aspose.Words, bạn có thể sử dụng`Width` Và`Height` thuộc tính của`Shape` sự vật.
+ Trả lời: Để thay đổi kích thước hình ảnh trong Aspose.Words, bạn có thể sử dụng`Width`Và`Height` thuộc tính của`Shape` sự vật.
 
 #### Câu hỏi: Tôi có thể áp dụng bộ lọc cho hình ảnh trong Aspose.Words không?
 

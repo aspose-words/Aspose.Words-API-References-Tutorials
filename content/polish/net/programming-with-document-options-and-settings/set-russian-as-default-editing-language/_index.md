@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/
 ---
 
-W tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby ustawić rosyjski jako domyślny język edycji w Aspose.Words dla .NET. Ta funkcja umożliwia ustawienie domyślnego języka podczas ładowania dokumentu.
+tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby ustawić rosyjski jako domyślny język edycji w Aspose.Words dla .NET. Ta funkcja umożliwia ustawienie domyślnego języka podczas ładowania dokumentu.
 
 ## Krok 1: Konfiguracja projektu
 

@@ -2,34 +2,58 @@
 title: Grafikteki Veri Etiketi Sayısını Biçimlendir
 linktitle: Grafikteki Veri Etiketi Sayısını Biçimlendir
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir grafikteki veri etiketi sayısını nasıl formatlayacağınızı öğrenin. Veri etiketleri için sayı formatlarını kolayca özelleştirin.
+description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak grafiklerdeki veri etiketlerini nasıl formatlayacağınızı öğrenin. Word belgelerinizi zahmetsizce geliştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/format-number-of-data-label/
 ---
+## giriiş
 
-Bu eğitimde bir grafikteki veri etiketi sayısını biçimlendirmek için Aspose.Words for .NET'in nasıl kullanılacağı açıklanmaktadır. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve veri etiketlerinin sayı biçiminin nasıl özelleştirileceğini gösterir.
+İlgi çekici ve bilgilendirici belgeler oluşturmak genellikle iyi biçimlendirilmiş veri etiketlerine sahip grafiklerin eklenmesini içerir. Word belgelerinizi gelişmiş grafiklerle geliştirmek isteyen bir .NET geliştiricisiyseniz, Aspose.Words for .NET bunu başarmanıza yardımcı olacak muhteşem bir kütüphanedir. Bu eğitim, Aspose.Words for .NET kullanarak bir grafikteki sayı etiketlerini biçimlendirme sürecinde size adım adım yol gösterecektir.
 
-## 1. Adım: Projeyi ayarlayın
+## Önkoşullar
 
-Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Koda dalmadan önce yerine getirmeniz gereken birkaç önkoşul vardır:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
-- Çıktı belgesinin kaydedileceği belge dizini yolu.
+-  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. Henüz yüklemediyseniz, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Bir .NET geliştirme ortamı kurmuş olmalısınız. Visual Studio şiddetle tavsiye edilir.
+- Temel C# Bilgisi: Bu eğitim C# kodunu yazmayı ve anlamayı içerdiğinden, C# programlamaya aşina olmak çok önemlidir.
+-  Geçici Lisans: Aspose.Words'ü herhangi bir sınırlama olmaksızın kullanmak için,[geçici lisans](https://purchase.aspose.com/temporary-license/).
 
-## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
+Şimdi bir grafikteki sayı etiketlerini biçimlendirmenin adım adım sürecine dalalım.
 
- Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
+## Ad Alanlarını İçe Aktar
+
+Öncelikle Aspose.Words for .NET ile çalışmak için gerekli ad alanlarını içe aktarmamız gerekiyor. C# dosyanızın en üstüne aşağıdaki satırları ekleyin:
 
 ```csharp
-// Belge dizininizin yolu
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## 1. Adım: Belge Dizininizi Kurun
+
+Word belgenizi düzenlemeye başlamadan önce belgenizin kaydedileceği dizini belirtmeniz gerekir. Bu daha sonra kaydetme işlemi için gereklidir.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+
+## Adım 2: Document'ı ve DocumentBuilder'ı başlatın
+
+ Bir sonraki adım yeni bir başlangıç başlatmaktır`Document` ve bir`DocumentBuilder` .`DocumentBuilder` belge içeriğini oluşturmamızı sağlayan yardımcı sınıftır.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Daha sonra belgeye bir grafik ekleyin.`InsertChart` yöntemi`DocumentBuilder`. Bu örnekte bir çizgi grafiği ekleyeceğiz.
+## 3. Adım: Belgeye Grafik Ekleme
+
+ Şimdi belgeye şunu kullanarak bir grafik ekleyelim:`DocumentBuilder`. Bu eğitimde örnek olarak Çizgi grafiği kullanacağız.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,94 +61,74 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## 3. Adım: Grafiğe seri verilerini ekleyin
+Burada belirli genişlik ve yüksekliğe sahip bir Çizgi grafiği ekliyoruz ve grafiğin başlığını belirliyoruz.
 
-Grafiğe seri verileri ekleyin. Bu örnekte üç kategoriyi ve bunlara karşılık gelen değerleri ekleyeceğiz.
+## Adım 4: Varsayılan Seriyi Temizleyin ve Yeni Seriyi Ekleyin
+
+Varsayılan olarak grafikte önceden oluşturulmuş bazı seriler bulunur. Bunları temizleyip belirli veri noktalarına sahip kendi serilerimizi eklememiz gerekiyor.
 
 ```csharp
+// Varsayılan oluşturulan seriyi silin.
 chart.Series.Clear();
+
+// Özel veri noktalarına sahip yeni seriler ekleyin.
 ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-    new string[] { "Category 1", "Category 2", "Category 3" }, 
-    new double[] { 2.5, 1.5, 3.5 });
-series1.HasDataLabels = true;
+	new string[] { "Category 1", "Category 2", "Category 3" }, 
+	new double[] { 2.5, 1.5, 3.5 });
 ```
 
-## 4. Adım: Veri etiketlerinin sayı biçimini özelleştirin
+## 5. Adım: Veri Etiketlerini Etkinleştirin
 
- Veri etiketi sayısını biçimlendirmek için şuraya erişin:`DataLabels` seriyle ilişkili koleksiyon.
+Veri etiketlerini grafikte görüntülemek için bunları serimiz için etkinleştirmemiz gerekir.
 
 ```csharp
+series1.HasDataLabels = true;
 series1.DataLabels.ShowValue = true;
-series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-Bu örnekte her veri etiketi için farklı sayı formatları belirledik. İlk veri etiketi para birimi, ikincisi tarih ve üçüncüsü yüzde olarak biçimlendirilmiştir.
+## Adım 6: Veri Etiketlerini Biçimlendirin
 
-## 5. Adım: Belgeyi kaydedin
+Bu eğitimin özü veri etiketlerinin biçimlendirilmesidir. Her veri etiketine ayrı ayrı farklı sayı formatları uygulayabiliyoruz.
 
- Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
+```csharp
+series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Para birimi biçimi
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Tarih formatı
+series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Yüzde biçimi
+```
+
+ Ek olarak, bir veri etiketinin biçimini bir kaynak hücreye bağlayabilirsiniz. Bağlandığında,`NumberFormat` genel olarak sıfırlanacak ve kaynak hücreden devralınacak.
+
+```csharp
+series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
+```
+
+## Adım 7: Belgeyi Kaydedin
+
+Son olarak belgeyi belirtilen dizine kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanarak bir grafikteki veri etiketi sayısını biçimlendirme uygulamasını tamamlar.
-
-### Aspose.Words for .NET kullanan Veri Etiketi Sayısını Formatla için örnek kaynak kodu 
-
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Text = "Data Labels With Different Number Format";
-	// Varsayılan oluşturulan seriyi silin.
-	chart.Series.Clear();
-	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-		new string[] { "Category 1", "Category 2", "Category 3" }, 
-		new double[] { 2.5, 1.5, 3.5 });
-	series1.HasDataLabels = true;
-	series1.DataLabels.ShowValue = true;
-	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// Veya biçim kodunu bir kaynak hücreye bağlanacak şekilde ayarlayabilirsiniz.
-	//bu durumda NumberFormat genel olarak sıfırlanacak ve bir kaynak hücreden devralınacaktır.
-	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
-	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
-```
+Bu, belgenizi belirtilen adla kaydeder ve biçimlendirilmiş veri etiketlerine sahip grafiğinizin korunmasını sağlar.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir grafikteki veri etiketi sayısını nasıl formatlayacağınızı öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak bir grafik oluşturabilir, seri verileri ekleyebilir ve veri etiketlerinin sayı biçimini gereksinimlerinize göre özelleştirebilirsiniz.
+Aspose.Words for .NET kullanarak bir grafikteki veri etiketlerini biçimlendirmek, Word belgelerinizin okunabilirliğini ve profesyonelliğini büyük ölçüde artırabilir. Bu adım adım kılavuzu izleyerek artık bir grafik oluşturabilir, veri serileri ekleyebilir ve veri etiketlerini ihtiyaçlarınızı karşılayacak şekilde biçimlendirebilirsiniz. Aspose.Words for .NET, Word belgelerinin kapsamlı şekilde kişiselleştirilmesine ve otomasyonuna olanak tanıyan güçlü bir araçtır ve bu da onu .NET geliştiricileri için paha biçilmez bir varlık haline getirir.
 
- Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için kapsamlı bir API sunarak, veri etiketleri de dahil olmak üzere grafiğin çeşitli yönlerini değiştirmenize olanak tanır. Erişerek`DataLabels` bir seriyle ilişkili koleksiyon, tek tek veri etiketlerinin sayı biçimini özelleştirebilirsiniz.
+## SSS'ler
 
-API, değerlerin görüntülenmesini kontrol etmenize, her veri etiketi için farklı sayı biçimleri ayarlamanıza ve sayı biçimini bir kaynak hücreye bağlamanıza olanak tanır. Bu esneklik, sayısal verileri grafiklerde para birimi simgeleri, tarih biçimleri ve yüzde değerleri gibi istediğiniz biçimlendirmeyle sunmanıza olanak tanır.
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, Word belgelerini C# kullanarak programlı bir şekilde oluşturmak, değiştirmek ve dönüştürmek için kullanılan güçlü bir kütüphanedir.
 
-Aspose.Words for .NET'i kullanarak, güçlü grafik oluşturma yeteneklerini .NET uygulamalarınıza dahil edebilir ve tamamen formatlanmış grafikler ve veri etiketleriyle profesyonel görünümlü belgeler oluşturabilirsiniz.
+### Aspose.Words for .NET ile diğer grafik türlerini formatlayabilir miyim?
+Evet, Aspose.Words for .NET çubuk, sütun, pasta ve daha fazlasını içeren çeşitli grafik türlerini destekler.
 
-### SSS
+### Aspose.Words for .NET için nasıl geçici lisans alabilirim?
+ Geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
-#### S1. Aspose.Words for .NET nedir?
-Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve kaydetmesine olanak tanıyan, zengin özelliklere sahip bir belge işleme kitaplığıdır. Grafikler ve veri etiketleri de dahil olmak üzere belge öğeleriyle Kelime İşleme için geniş bir özellik yelpazesi sunar.
+### Veri etiketlerini Excel'deki kaynak hücrelere bağlamak mümkün müdür?
+Evet, veri etiketlerini kaynak hücrelere bağlayarak sayı biçiminin kaynak hücreden devralınmasına olanak tanıyabilirsiniz.
 
-#### Q2. Aspose.Words for .NET'i nasıl kurabilirim?
-Aspose.Words for .NET'i, Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini arayın ve projenize yükleyin.
-
-#### S3. Grafiğin diğer yönlerini Aspose.Words for .NET kullanarak formatlayabilir miyim?
-Evet, Aspose.Words for .NET bir grafiğin çeşitli yönlerini biçimlendirmek için kapsamlı yetenekler sağlar. Veri etiketlerine ek olarak grafik türünü, seri verilerini, eksen özelliklerini, açıklamayı, başlığı, çizim alanını ve grafiğin diğer birçok öğesini özelleştirebilirsiniz. API, grafik görünümü ve biçimlendirme üzerinde ayrıntılı kontrol sunar.
-
-#### S4. Aynı serideki farklı veri etiketlerine farklı sayı formatları uygulayabilir miyim?
-Evet, Aspose.Words for .NET, aynı seri içindeki bireysel veri etiketlerine farklı sayı formatları uygulamanıza olanak tanır. Erişerek`DataLabels` bir seriyle ilişkili koleksiyonu ayarlayabilirsiniz.`FormatCode` İstenilen sayı biçimini belirtmek için her veri etiketinin özelliği. Bu, sayısal değerleri aynı grafikte farklı formatlarda sunmanıza olanak tanır.
-
-#### S5. Veri etiketleri için özel sayı formatlarını kullanabilir miyim?
- Evet, Aspose.Words for .NET, veri etiketleri için özel sayı formatlarını destekler. İstediğiniz sayı formatını ayarlayarak belirleyebilirsiniz.`FormatCode` bir veri etiketinin özelliğini özel bir biçim koduna dönüştürür. Bu size para birimi simgeleri, tarih biçimleri, yüzde değerleri ve daha fazlası gibi çok çeşitli sayı biçimlerini uygulama esnekliği sağlar.
-
-#### S6. Grafiği, biçimlendirilmiş veri etiketleriyle farklı biçimlerde kaydedebilir miyim?
-Evet, Aspose.Words for .NET, grafiği içeren belgeyi biçimlendirilmiş veri etiketleriyle birlikte DOCX, PDF, HTML ve daha fazlası gibi çeşitli formatlarda kaydetmenize olanak tanır. Gereksinimlerinize göre uygun formatı seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne. Biçimlendirilmiş veri etiketleri kaydedilen belgede korunacaktır.
+### Aspose.Words for .NET için daha ayrıntılı belgeleri nerede bulabilirim?
+ Kapsamlı belgeler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

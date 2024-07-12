@@ -78,7 +78,7 @@ J: Untuk mengonfigurasi Aspose.Words untuk .NET agar tidak menyematkan font Aria
 
  Buat sebuah instance dari`PdfSaveOptions` kelas dan atur`FontEmbeddingMode`properti ke`PdfFontEmbeddingMode.EmbedAll`. Ini akan menyematkan semua font kecuali Arial dan Times Roman dalam file PDF yang dihasilkan.
 
- Menggunakan`Save` metode`Document` objek untuk menyimpan dokumen dalam format PDF dengan menentukan opsi penyimpanan yang dikonfigurasi sebelumnya.
+ Menggunakan`Save` metode`Document` keberatan untuk menyimpan dokumen dalam format PDF dengan menentukan opsi penyimpanan yang dikonfigurasi sebelumnya.
 
 #### T: Apa manfaat menonaktifkan penyematan font Arial dan Times Roman di dokumen PDF?
 A: Keuntungan menonaktifkan penyematan font Arial dan Times Roman di dokumen PDF adalah:

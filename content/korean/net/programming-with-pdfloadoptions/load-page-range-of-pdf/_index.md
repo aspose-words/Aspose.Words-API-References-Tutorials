@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- 이 예에서는 PDF 문서의 첫 번째 페이지를 로드합니다. 값을 변경할 수 있습니다.`PageIndex` 그리고`PageCount` 원하는 페이지 범위로 이동합니다.
+ 이 예에서는 PDF 문서의 첫 번째 페이지를 로드합니다. 값을 변경할 수 있습니다.`PageIndex`그리고`PageCount` 원하는 페이지 범위로 이동합니다.
 
 ## 2단계: 문서 저장
 

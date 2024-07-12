@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## Krok 3: Zmodyfikuj kod źródłowy makra
- Zmodyfikujemy teraz kod źródłowy pierwszego makra projektu VBA. Zastąp`newSourceCode` zmienną z nowym kodem źródłowym, którego chcesz użyć.
+Zmodyfikujemy teraz kod źródłowy pierwszego makra projektu VBA. Zastąp`newSourceCode` zmienną z nowym kodem źródłowym, którego chcesz użyć.
 
 ```csharp
 const string newSourceCode = "Test change source code";

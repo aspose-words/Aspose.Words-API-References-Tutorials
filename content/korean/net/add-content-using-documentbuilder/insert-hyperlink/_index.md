@@ -17,7 +17,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-hyperlink/
 코드를 살펴보기 전에 준비해야 할 몇 가지 사항이 있습니다.
 
 1. Visual Studio: 컴퓨터에 Visual Studio가 설치되어 있는지 확인하세요. 아직 없으시다면, 다음에서 다운로드하실 수 있습니다.[여기](https://visualstudio.microsoft.com/).
-2.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 필요합니다. 에서 받으실 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/) . 아직 구매할 준비가 되지 않았다면 다음을 이용하세요.[무료 시험판](https://releases.aspose.com/) 또는 요청[임시면허](https://purchase.aspose.com/temporary-license/).
+2.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 필요합니다. 에서 받으실 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/) . 아직 구매할 준비가 되지 않았다면 다음을 이용하세요.[무료 시험판](https://releases.aspose.com/) 또는 요청[임시 면허증](https://purchase.aspose.com/temporary-license/).
 3. C#에 대한 기본 지식: C# 프로그래밍에 조금이라도 익숙해지면 큰 도움이 됩니다. C#을 처음 사용하는 경우에도 걱정하지 마세요. 이 튜토리얼은 모든 단계를 안내합니다.
 
 ## 네임스페이스 가져오기
@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- 이 코드 조각에서는 문서가 저장될 디렉터리의 경로를 정의하고 새 경로를 초기화합니다.`Document` 그리고`DocumentBuilder` 사례.
+ 이 코드 조각에서는 문서가 저장될 디렉터리의 경로를 정의하고 새 경로를 초기화합니다.`Document`그리고`DocumentBuilder` 사례.
 
 ## 3단계: 초기 텍스트 작성
 

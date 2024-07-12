@@ -58,6 +58,6 @@ Questo codice imposterà l'orientamento della pagina su orizzontale, il margine 
   
 ```
 
-Assicurati di specificare il percorso corretto della directory in cui desideri salvare il documento nel file`dataDir` variabile.
+ Assicurati di specificare il percorso corretto della directory in cui desideri salvare il documento nel file`dataDir` variabile.
 
 Ora hai imparato come configurare il layout e la formattazione della sezione di un documento utilizzando Aspose.Words per .NET. Seguendo la guida passo passo fornita in questo tutorial, puoi personalizzare facilmente il layout e la formattazione dei tuoi documenti.

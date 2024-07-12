@@ -91,7 +91,7 @@ A: Typisierter Zugriff in Node.js bezieht sich auf die Verwendung bestimmter Kno
 
 #### F: Welche Vorteile bietet der typisierte Zugriff gegenüber dem untypisierten Zugriff?
 
-A: Der typisierte Zugriff hat gegenüber dem untypisierten Zugriff mehrere Vorteile. Erstens ermöglicht er eine bessere Spezifität beim Zugriff auf Knoten, was die Bearbeitung und Verwaltung von Knoten in einem XML-Dokument erleichtert. Darüber hinaus bietet der typisierte Zugriff eine bessere Sicherheit, indem Typfehler beim Zugriff auf Knoteneigenschaften und -werte vermieden werden.
+A: Der typisierte Zugriff hat gegenüber dem untypisierten Zugriff mehrere Vorteile. Erstens ermöglicht er eine bessere Spezifität beim Zugriff auf Knoten, was die Bearbeitung und Verwaltung von Knoten in einem XML-Dokument erleichtert. Darüber hinaus bietet der typisierte Zugriff eine bessere Sicherheit, indem er Typfehler beim Zugriff auf Knoteneigenschaften und -werte vermeidet.
 
 #### F: Auf welche Knotentypen kann mit typisiertem Zugriff zugegriffen werden?
 

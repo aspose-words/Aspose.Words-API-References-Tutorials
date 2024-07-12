@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-document-options-and-settings/view-options/
 ---
 
-tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby skonfigurować opcje wyświetlania w Aspose.Words dla .NET. Ta funkcja umożliwia dostosowanie trybu widoku i poziomu powiększenia dokumentu.
+W tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby skonfigurować opcje wyświetlania w Aspose.Words dla .NET. Ta funkcja umożliwia dostosowanie trybu widoku i poziomu powiększenia dokumentu.
 
 ## Krok 1: Konfiguracja projektu
 

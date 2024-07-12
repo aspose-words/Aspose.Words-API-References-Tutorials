@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Dieser Code erstellt eine Instanz von`Document` Und`DocumentBuilder` um das Dokument zu erstellen. Es fügt ein`<svg>` Tag mit einem`<polygon>` Element mit Attributen zum Definieren der Form und des Stils des SVG-Bildes.
+ Dieser Code erstellt eine Instanz von`Document`Und`DocumentBuilder` um das Dokument zu erstellen. Es fügt ein`<svg>` Tag mit einem`<polygon>` Element mit Attributen zum Definieren der Form und des Stils des SVG-Bildes.
 
 ## Schritt 3: HTML-Speicheroptionen festlegen
 

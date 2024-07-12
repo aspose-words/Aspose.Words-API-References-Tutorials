@@ -2,7 +2,7 @@
 title: Sửa đổi hình dạng
 linktitle: Sửa đổi hình dạng
 second_title: API xử lý tài liệu Aspose.Words
-description: Sửa đổi hình dạng trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Sửa đổi hình dạng trong tài liệu Word bằng Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/shape-revision/
@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### Câu hỏi: Làm cách nào tôi có thể kiểm tra các bản sửa đổi dịch chuyển của hình dạng trong tài liệu Aspose.Words cho .NET?
 
- Trả lời: Để kiểm tra các bản sửa đổi dịch chuyển hình dạng trong tài liệu Aspose.Words cho .NET, bạn có thể tải tài liệu hiện có có chứa các bản sửa đổi dịch chuyển hình dạng. Sau đó, bạn có thể truy cập từng hình dạng`IsMoveFromRevision` Và`IsMoveToRevision` Properties để xác định xem nó có đang được di chuyển hay không và nếu có thì từ đâu và đến đâu:
+ Trả lời: Để kiểm tra các bản sửa đổi dịch chuyển hình dạng trong tài liệu Aspose.Words cho .NET, bạn có thể tải tài liệu hiện có có chứa các bản sửa đổi dịch chuyển hình dạng. Sau đó, bạn có thể truy cập từng hình dạng`IsMoveFromRevision`Và`IsMoveToRevision` Properties để xác định xem nó có đang được di chuyển hay không và nếu có thì từ đâu và đến đâu:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-tables/horizontal-merge/
 ---
 
-Bu derste, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablodaki hücreleri yatay olarak nasıl birleştireceğimizi öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word tablolarınızdaki hücreleri programlı olarak yatay olarak birleştirebileceksiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablodaki hücreleri yatay olarak nasıl birleştireceğimizi öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word tablolarınızdaki hücreleri programlı olarak yatay olarak birleştirebileceksiniz.
 
 ## Adım 1: Proje Kurulumu
 1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.

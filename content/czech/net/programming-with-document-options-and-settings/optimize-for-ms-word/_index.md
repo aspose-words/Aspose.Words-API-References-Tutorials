@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-document-options-and-settings/optimize-for-ms-word/
 ---
 
-tomto tutoriálu vás provedeme zdrojovým kódem C# k optimalizaci dokumentu pro MS Word pomocí Aspose.Words pro .NET. Tato funkce umožňuje optimalizovat dokument pro konkrétní verzi MS Word.
+V tomto tutoriálu vás provedeme zdrojovým kódem C# k optimalizaci dokumentu pro MS Word pomocí Aspose.Words pro .NET. Tato funkce umožňuje optimalizovat dokument pro konkrétní verzi MS Word.
 
 ## Krok 1: Nastavení projektu
 

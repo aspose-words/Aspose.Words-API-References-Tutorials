@@ -73,7 +73,7 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
     currentSection.HeadersFooters.Add(headerFooter.Clone(true));
 ```
 
-## Stap 6: Sla het document op
+## Stap 6: Bewaar het document
 
 Sla het document ten slotte op een gewenste locatie op. Deze stap zorgt ervoor dat al uw wijzigingen naar het documentbestand worden geschreven.
 
@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Stap 2: Ga naar de huidige sectie
 
-We halen de huidige sectie op met behulp van`builder.CurrentSection`. Deze sectie zal het doel zijn waar we de kop- en voetteksten uit de vorige sectie zullen kopiëren.
+ We halen de huidige sectie op met behulp van`builder.CurrentSection`Deze sectie zal het doel zijn waar we de kop- en voetteksten uit de vorige sectie zullen kopiëren.
 
 ### Stap 3: Definieer de vorige sectie
 
@@ -103,7 +103,7 @@ We wissen alle bestaande kop- en voetteksten in de huidige sectie om ervoor te z
 
  Met behulp van een foreach-lus herhalen we ze allemaal`HeaderFooter` in het vorige gedeelte. De`Clone(true)` methode maakt een diepe kopie van de kop- of voettekst, waardoor alle inhoud en opmaak behouden blijven.
 
-### Stap 6: Sla het document op
+### Stap 6: Bewaar het document
 
  De`doc.Save("OutputDocument.docx")` line schrijft alle wijzigingen in het document en slaat het op met de opgegeven bestandsnaam.
 

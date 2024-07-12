@@ -55,7 +55,7 @@ Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx"
 
 このステップでは、`Document1.docx`そして`Document2.docx`新しいファイルに`MergedDocument.docx`.
 
-## ステップ3: 保存オプションとの結合
+## ステップ3: 保存オプションによるマージ
 
 場合によっては、結合したドキュメントにパスワード保護などの特定のオプションを設定する必要があります。その方法は次のとおりです。
 

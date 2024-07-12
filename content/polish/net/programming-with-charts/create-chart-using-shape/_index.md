@@ -2,92 +2,104 @@
 title: Utwórz i dostosuj wykres za pomocą kształtu
 linktitle: Utwórz i dostosuj wykres za pomocą kształtu
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak tworzyć i dostosowywać wykres przy użyciu kształtu w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak tworzyć i dostosowywać wykresy w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny do wizualizacji danych.
 type: docs
 weight: 10
 url: /pl/net/programming-with-charts/create-chart-using-shape/
 ---
+## Wstęp
 
-W tym samouczku wyjaśniono, jak utworzyć wykres przy użyciu kształtu w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+Tworzenie i dostosowywanie wykresów w dokumentach to kluczowa umiejętność w dzisiejszym świecie opartym na danych. Wykresy mogą pomóc w wizualizacji danych, dzięki czemu złożone informacje stają się bardziej zrozumiałe. Aspose.Words dla .NET to potężna biblioteka, która pozwala programowo tworzyć dokumenty Word i manipulować nimi. W tym samouczku przeprowadzimy Cię przez proces tworzenia i dostosowywania wykresu liniowego za pomocą Aspose.Words dla .NET. Po przeczytaniu tego przewodnika będziesz w stanie z łatwością tworzyć profesjonalnie wyglądające wykresy.
 
 ## Warunki wstępne
-Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 
-- Zainstalowana biblioteka Aspose.Words dla .NET.
-- Podstawowa znajomość języka C# i przetwarzania tekstów w dokumentach Word.
+Zanim zagłębisz się w kod, upewnij się, że masz następujące elementy:
 
-## Krok 1: Skonfiguruj katalog dokumentów
- Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+-  Biblioteka Aspose.Words dla .NET: Możesz ją pobrać[Tutaj](https://releases.aspose.com/words/net/).
+- Visual Studio: dowolna wersja obsługująca platformę .NET.
+- Podstawowa znajomość języka C#: Zrozumienie podstaw języka C# pomoże ci postępować zgodnie z samouczkiem.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Ten krok jest niezbędny, ponieważ pozwala na użycie klas i metod dostarczonych przez Aspose.Words dla .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
 ```
 
-## Krok 2: Utwórz nowy dokument i narzędzie DocumentBuider
- Utwórz nową instancję`Document` klasa i A`DocumentBuilder`sprzeciwić się pracy z dokumentem.
+## Krok 1: Utwórz nowy dokument
+
+Najpierw musisz utworzyć nowy dokument Word. Dokument ten posłuży jako płótno dla Twojego wykresu.
 
 ```csharp
+// Ścieżka do katalogu dokumentów
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Wstaw i skonfiguruj kształt wykresu
- Wstaw kształt wykresu do dokumentu za pomocą`InsertChart` metoda`DocumentBuilder` obiekt. Ustaw żądany typ wykresu i wymiary.
+## Krok 2: Wstaw wykres
+
+ Następnie wstawisz do dokumentu wykres liniowy. The`DocumentBuilder.InsertChart` W tym celu stosuje się metodę.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Krok 4: Dostosuj wykres
-Dostosuj wykres, modyfikując różne właściwości, takie jak tytuł wykresu i legenda.
+## Krok 3: Dostosuj tytuł wykresu
+
+Dostosowanie tytułu wykresu może pomóc w zapewnieniu kontekstu wyświetlanych danych. Możesz wyświetlić tytuł i ustawić jego tekst za pomocą następującego kodu:
 
 ```csharp
 chart.Title.Show = true;
 chart.Title.Text = "Line Chart Title";
 chart.Title.Overlay = false;
+// Należy pamiętać, że jeśli jako tekst tytułu zostanie określona wartość null lub pusta, wyświetlony zostanie tytuł wygenerowany automatycznie.
+```
+
+## Krok 4: Dostosuj pozycję legendy
+
+Legenda pomaga zidentyfikować różne serie danych na wykresie. Możesz dostosować jego położenie i ustawienia nakładki w następujący sposób:
+
+```csharp
 chart.Legend.Position = LegendPosition.Left;
 chart.Legend.Overlay = true;
 ```
 
 ## Krok 5: Zapisz dokument
- Zapisz dokument w określonym katalogu za pomocą`Save` metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithCharts.CreateChartUsingShape.docx”.
+
+Na koniec musisz zapisać dokument. Ten krok gwarantuje, że wszystkie zmiany zostaną zapisane w pliku.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ```
 
-### Przykładowy kod źródłowy narzędzia Utwórz wykres przy użyciu kształtu przy użyciu Aspose.Words dla .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Show = true;
-	chart.Title.Text = "Line Chart Title";
-	chart.Title.Overlay = false;
-	// Należy pamiętać, że jeśli jako tekst tytułu zostanie określona wartość null lub pusta, wyświetlony zostanie tytuł wygenerowany automatycznie.
-	chart.Legend.Position = LegendPosition.Left;
-	chart.Legend.Overlay = true;
-	doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
-```
-
-Otóż to! Pomyślnie utworzyłeś wykres przy użyciu kształtu w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
-
 ## Wniosek
-tym samouczku nauczyłeś się tworzyć wykres przy użyciu kształtu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem, możesz wstawić i skonfigurować kształt wykresu, dostosować jego wygląd i zapisać dokument. Aspose.Words dla .NET zapewnia kompleksowy zestaw funkcji do przetwarzania słów z dokumentami i wykresami programu Word, umożliwiając tworzenie profesjonalnie wyglądających i atrakcyjnych wizualnie wykresów bezpośrednio w aplikacjach .NET.
 
-### Często zadawane pytania
+W tym samouczku omówiliśmy, jak utworzyć i dostosować wykres liniowy w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z przewodnikiem krok po kroku, możesz teraz tworzyć atrakcyjne wizualnie wykresy, które skutecznie komunikują Twoje dane. Aspose.Words dla .NET oferuje szeroką gamę opcji dostosowywania, umożliwiając dostosowanie wykresów do Twoich konkretnych potrzeb.
 
-#### Pytanie 1. Czy mogę tworzyć wykresy w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
-Tak, dzięki Aspose.Words dla .NET możesz programowo tworzyć wykresy w dokumencie Word. Aspose.Words zapewnia interfejsy API i funkcje umożliwiające wstawianie różnych typów wykresów, dostosowywanie ich wyglądu i manipulowanie danymi wykresów.
+## Często zadawane pytania
 
-#### Pytanie 2. Jakie typy wykresów są obsługiwane przez Aspose.Words dla .NET?
-Aspose.Words dla .NET obsługuje szeroką gamę typów wykresów, w tym wykresy liniowe, wykresy słupkowe, wykresy kołowe, wykresy warstwowe, wykresy punktowe i inne. Możesz wybrać odpowiedni typ wykresu w oparciu o wymagania dotyczące danych i wizualizacji.
+### Czy mogę używać Aspose.Words dla .NET do tworzenia wykresów innego typu?
 
-#### Pytanie 3. Czy mogę dostosować wygląd tworzonego wykresu?
-Tak, możesz dostosować wygląd utworzonego wykresu za pomocą Aspose.Words dla .NET. Możesz modyfikować właściwości, takie jak tytuł wykresu, pozycja legendy, etykiety danych, etykiety osi, kolory i inne elementy wizualne, aby spełnić Twoje specyficzne potrzeby związane z projektem i formatowaniem.
+ Tak, Aspose.Words dla .NET obsługuje różne typy wykresów, w tym wykresy słupkowe, wykresy kołowe i inne. Możesz zapoznać się z dokumentacją[Tutaj](https://reference.aspose.com/words/net/) po więcej szczegółów.
+
+### Jak mogę wypróbować Aspose.Words dla .NET przed zakupem?
+
+ Możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.aspose.com/). Dzięki temu możesz przetestować bibliotekę i jej funkcje przed dokonaniem zakupu.
+
+### Czy istnieje sposób na uzyskanie wsparcia w przypadku napotkania problemów?
+
+ Absolutnie. Dostęp do pomocy technicznej można uzyskać za pośrednictwem forów społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8)Społeczność i pracownicy Aspose reagują bardzo szybko.
+
+### Jak kupić licencję na Aspose.Words dla .NET?
+
+ Możesz kupić licencję bezpośrednio na stronie Aspose[Tutaj](https://purchase.aspose.com/buy). Istnieją różne opcje licencjonowania dostosowane do różnych potrzeb.
+
+### Co jeśli potrzebuję tymczasowej licencji na projekt krótkoterminowy?
+
+ Aspose oferuje licencje tymczasowe, o które możesz poprosić[Tutaj](https://purchase.aspose.com/temporary-license/).

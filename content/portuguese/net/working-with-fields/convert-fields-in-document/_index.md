@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Etapa 3: carregue o documento
- Use o`Document` classe de Aspose.Words para carregar o documento do Word contendo os campos vinculados que você deseja converter.
+ Use o`Document`classe de Aspose.Words para carregar o documento do Word contendo os campos vinculados que você deseja converter.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

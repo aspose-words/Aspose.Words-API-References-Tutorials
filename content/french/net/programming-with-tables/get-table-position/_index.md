@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Ici, nous utilisons une condition pour vérifier si le tableau est de type float. Si c'est le cas, nous imprimons le`RelativeHorizontalAlignment` et`RelativeVerticalAlignment` propriétés pour obtenir l’alignement horizontal et vertical relatif de la table. Sinon, nous imprimons le`Alignment` propriété pour obtenir l’alignement du tableau.
+ Ici, nous utilisons une condition pour vérifier si le tableau est de type float. Si c'est le cas, nous imprimons le`RelativeHorizontalAlignment`et`RelativeVerticalAlignment` propriétés pour obtenir l’alignement horizontal et vertical relatif de la table. Sinon, nous imprimons le`Alignment` propriété pour obtenir l’alignement du tableau.
 
 ### Exemple de code source pour obtenir la position de la table à l'aide d'Aspose.Words pour .NET 
 

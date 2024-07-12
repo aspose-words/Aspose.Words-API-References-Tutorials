@@ -31,7 +31,7 @@ using System;
 
 ## Krok 1: Vytvořte nový dokument
 
- Nejprve vytvořte nový dokument a a`DocumentBuilder` pro usnadnění přidávání a manipulace s obsahem.
+ Nejprve vytvořte nový dokument a a`DocumentBuilder` usnadnit přidávání a manipulaci s obsahem.
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Krok 2: Vstupte do aktuální sekce
 
-Načteme aktuální sekci pomocí`builder.CurrentSection`. Tato sekce bude cílem, kam zkopírujeme záhlaví a zápatí z předchozí sekce.
+ Načteme aktuální sekci pomocí`builder.CurrentSection`Tato sekce bude cílem, kam zkopírujeme záhlaví a zápatí z předchozí sekce.
 
 ### Krok 3: Definujte předchozí sekci
 

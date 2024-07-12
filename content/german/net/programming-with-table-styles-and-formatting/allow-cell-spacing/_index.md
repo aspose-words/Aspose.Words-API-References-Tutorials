@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 
 Herzlichen Glückwunsch! Sie haben mit Aspose.Words für .NET erfolgreich Zellenabstände in Tabellen zugelassen.
 
-### Beispielquellcode für „Allow Cell Spacing“ mit Aspose.Words für .NET 
+### Beispielquellcode für „Zellenabstand zulassen“ mit Aspose.Words für .NET 
 
 ```csharp
 	// Pfad zu Ihrem Dokumentverzeichnis

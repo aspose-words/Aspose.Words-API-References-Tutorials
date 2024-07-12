@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Сделайте что-нибудь с кодом поля и результатом.
+     //Сделайте что-нибудь с кодом поля и результатом.
 }
 ```
 
@@ -73,7 +73,7 @@ foreach(Field field in doc.Range.Fields)
 
 #### Вопрос: Как обновить поля в документе с помощью Aspose.Words for .NET?
 
- О: Чтобы обновить поля документа с помощью Aspose.Words for .NET, вы можете использовать`Document.UpdateFields`метод. Это обновит все поля, присутствующие в документе, такие как поля слияния, поля даты и т. д.
+ О: Чтобы обновить поля документа с помощью Aspose.Words for .NET, вы можете использовать`Document.UpdateFields` метод. Это обновит все поля, присутствующие в документе, такие как поля слияния, поля даты и т. д.
 
 #### Вопрос: Как получить значение определенного поля в Aspose.Words для .NET?
 

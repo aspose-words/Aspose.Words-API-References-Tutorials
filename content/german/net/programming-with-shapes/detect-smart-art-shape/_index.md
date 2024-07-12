@@ -17,7 +17,7 @@ Hallo! Mussten Sie schon einmal programmgesteuert mit SmartArt in Word-Dokumente
 Bevor wir in die Details eintauchen, stellen wir sicher, dass Sie alles eingerichtet haben:
 
 1. Grundkenntnisse in C#: Sie sollten mit der Syntax und den Konzepten von C# vertraut sein.
-2.  Aspose.Words für .NET: Laden Sie es herunter[Hier](https://releases.aspose.com/words/net/) Wenn Sie nur erkunden, können Sie mit einem beginnen[Kostenlose Testphase](https://releases.aspose.com/).
+2.  Aspose.Words für .NET: Laden Sie es herunter[Hier](https://releases.aspose.com/words/net/) Wenn Sie nur erkunden, können Sie mit einem[Kostenlose Testphase](https://releases.aspose.com/).
 3. Visual Studio: Jede aktuelle Version sollte funktionieren, aber die neueste Version wird empfohlen.
 4. .NET Framework: Stellen Sie sicher, dass es auf Ihrem System installiert ist.
 
@@ -90,7 +90,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### 2. Kann ich Aspose.Words für .NET kostenlos nutzen?
 
- Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/). Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
+ Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/)Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
 
 ### 3. Wie erkenne ich andere Formentypen in einem Dokument?
 

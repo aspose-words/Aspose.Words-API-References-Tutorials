@@ -125,7 +125,7 @@ En daar heb je het! U hebt met succes een lijst met meerdere niveaus gemaakt in 
  Ja, u kunt doorgaan met nummeren door gebruik te maken van de`ListFormat.List` eigenschap om te koppelen aan een bestaande lijst.
 
 ### Hoe wijzig ik het inspringniveau dynamisch?
- U kunt het inspringniveau dynamisch wijzigen met behulp van`ListIndent` En`ListOutdent` methoden als dat nodig is.
+ U kunt het inspringniveau dynamisch wijzigen met behulp van`ListIndent`En`ListOutdent` methoden als dat nodig is.
 
 ### Kan ik lijsten met meerdere niveaus maken in andere documentformaten zoals PDF?
 Ja, Aspose.Words ondersteunt het opslaan van documenten in verschillende formaten, waaronder PDF, waarbij de opmaak behouden blijft.

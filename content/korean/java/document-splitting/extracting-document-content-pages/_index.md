@@ -2,7 +2,7 @@
 title: 페이지별로 문서 내용 추출
 linktitle: 페이지별로 문서 내용 추출
 second_title: Aspose.Words Java 문서 처리 API
-description: Aspose.Words for Java를 사용하여 페이지별로 문서 콘텐츠를 추출하는 방법을 알아보세요. 소스 코드가 포함된 이 단계별 가이드를 통해 여러분은 곧 전문가가 될 것입니다.
+description: Aspose.Words for Java를 사용하여 페이지별로 문서 콘텐츠를 추출하는 방법을 알아보세요. 소스 코드가 포함된 이 단계별 가이드를 통해 귀하는 곧 전문가가 될 것입니다.
 type: docs
 weight: 13
 url: /ko/java/document-splitting/extracting-document-content-pages/
@@ -138,7 +138,7 @@ Document doc = new Document("encrypted.docx", new LoadOptions("password"));
 
 예, Aspose.Words for Java를 사용하여 비밀번호로 보호된 문서에서 콘텐츠를 추출할 수 있습니다. 위에 표시된 대로 문서를 로드할 때 올바른 비밀번호를 제공하기만 하면 됩니다.
 
-### Aspose.Words for Java는 Java 11 이상과 호환되나요?
+### Aspose.Words for Java는 Java 11 이상과 호환됩니까?
 
 예, Aspose.Words for Java는 Java 11 이상 버전과 호환됩니다.
 

@@ -2,196 +2,135 @@
 title: Buat Bookmark Di Dokumen Word
 linktitle: Buat Bookmark Di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat bookmark di dokumen Word dan menentukan tingkat pratinjau bookmark di PDF menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara membuat bookmark di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Sempurna untuk navigasi dan pengorganisasian dokumen.
 type: docs
 weight: 10
 url: /id/net/programming-with-bookmarks/create-bookmark/
 ---
+## Perkenalan
 
-Pada artikel ini, kita akan menjelajahi kode sumber C# di atas untuk memahami cara menggunakan fungsi Buat Bookmark di pustaka Aspose.Words untuk .NET. Fitur ini memungkinkan Anda membuat bookmark dalam dokumen dan menentukan tingkat pratinjau bookmark dalam file PDF keluaran.
+Membuat bookmark di dokumen Word bisa menjadi terobosan baru, terutama ketika Anda ingin menavigasi dokumen berukuran besar dengan mudah. Hari ini, kita akan memandu proses pembuatan bookmark menggunakan Aspose.Words untuk .NET. Tutorial ini akan membawa Anda langkah demi langkah, memastikan Anda memahami setiap bagian prosesnya. Jadi, mari selami!
 
 ## Prasyarat
 
-- Pengetahuan dasar bahasa C#.
-- Lingkungan pengembangan .NET dengan perpustakaan Aspose.Words diinstal.
+Sebelum kita mulai, Anda harus memiliki yang berikut ini:
 
-## Langkah 1: Membuat Dokumen dan Generator
+1.  Aspose.Words untuk .NET Library: Unduh dan instal dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan .NET lainnya.
+3. Pengetahuan Dasar C#: Pemahaman konsep dasar pemrograman C#.
 
- Sebelum membuat bookmark, kita perlu membuat dokumen dan pembuat dokumen menggunakan`Document` Dan`DocumentBuilder` objek:
+## Impor Namespace
+
+Untuk bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Langkah 1: Siapkan Dokumen dan DocumentBuilder
+
+Inisialisasi Dokumen
+
+Pertama, kita perlu membuat dokumen baru dan menginisialisasi`DocumentBuilder`. Ini adalah titik awal untuk menambahkan konten dan bookmark ke dokumen Anda.
+
+```csharp
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Membuat bookmark utama
+ Penjelasan: Itu`Document` objek adalah kanvas Anda. Itu`DocumentBuilder` seperti pena Anda, yang memungkinkan Anda menulis konten dan membuat penanda di dokumen.
 
- Kami menggunakan`StartBookmark` metode untuk memulai bookmark utama dan`EndBookmark` metode untuk mengakhirinya. Di antaranya, kita dapat menambahkan teks dan bookmark lainnya:
+## Langkah 2: Buat Bookmark Utama
+
+Memulai dan Mengakhiri Bookmark Utama
+
+Untuk membuat bookmark, Anda perlu menentukan titik awal dan akhir. Di sini, kita akan membuat bookmark bernama "My Bookmark".
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-// Tambahkan lebih banyak bookmark atau teks di sini.
-
-builder. EndBookmark("My Bookmark");
 ```
 
-## Langkah 3: Membuat Bookmark Bersarang
+ Penjelasan: Itu`StartBookmark` metode menandai awal bookmark, dan`Writeln` menambahkan teks di dalam bookmark.
 
- Kita juga dapat membuat bookmark bersarang di dalam bookmark utama. Kami menggunakan hal yang sama`StartBookmark` Dan`EndBookmark` metode untuk membuat dan mengakhiri bookmark bersarang:
+## Langkah 3: Buat Bookmark Bersarang
+
+Tambahkan Bookmark Bersarang di dalam Bookmark Utama
+
+Anda dapat menyarangkan bookmark di dalam bookmark lainnya. Di sini, kami menambahkan "Bookmark Bersarang" di dalam "Bookmark Saya".
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## Langkah 4: Menentukan tingkat pratinjau bookmark di file PDF keluaran
+ Penjelasan: Penanda bersarang memungkinkan pengorganisasian konten yang lebih terstruktur dan hierarkis. Itu`EndBookmark` metode menutup bookmark saat ini.
 
- Kami menggunakan`PdfSaveOptions` objek untuk menentukan tingkat pratinjau bookmark dalam file PDF keluaran. Kami menggunakan`BookmarksOutlineLevels` Properti
+## Langkah 4: Tambahkan Teks di Luar Bookmark Bersarang
 
-  untuk menambahkan bookmark utama dan bookmark bersarang dengan levelnya masing-masing:
+Lanjutkan Menambahkan Konten
+
+Setelah bookmark bersarang, kita dapat terus menambahkan lebih banyak konten di dalam bookmark utama.
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+Penjelasan: Ini memastikan bahwa penanda utama mencakup penanda bersarang dan teks tambahan.
+
+## Langkah 5: Konfigurasikan Opsi Penyimpanan PDF
+
+Atur Opsi Penyimpanan PDF untuk Bookmark
+
+Saat menyimpan dokumen sebagai PDF, kita dapat mengonfigurasi opsi untuk menyertakan bookmark.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+ Penjelasan: Itu`PdfSaveOptions` kelas memungkinkan Anda menentukan bagaimana dokumen harus disimpan sebagai PDF. Itu`BookmarksOutlineLevels` properti mendefinisikan hierarki bookmark di PDF.
+
+## Langkah 6: Simpan Dokumen
+
+Simpan Dokumen sebagai PDF
+
+Terakhir, simpan dokumen dengan opsi yang ditentukan.
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### Contoh kode sumber untuk Membuat Bookmark menggunakan Aspose.Words untuk .NET
-
-Berikut adalah contoh lengkap kode sumber untuk mendemonstrasikan pembuatan bookmark menggunakan Aspose.Words untuk .NET:
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+ Penjelasan: Itu`Save` metode menyimpan dokumen dalam format dan lokasi yang ditentukan. PDF sekarang akan menyertakan bookmark yang kita buat.
 
 ## Kesimpulan
 
-Dalam artikel ini, kami menjelajahi kode sumber C# untuk memahami cara menggunakan fungsi Buat Bookmark Aspose.Words untuk .NET. Kami telah mengikuti panduan langkah demi langkah untuk membuat bookmark di dokumen dan menentukan tingkat pratinjau bookmark di file PDF keluaran.
+Membuat bookmark di dokumen Word menggunakan Aspose.Words untuk .NET sangatlah mudah dan sangat berguna untuk navigasi dan pengorganisasian dokumen. Baik Anda membuat laporan, membuat eBuku, atau mengelola dokumen berukuran besar, bookmark membuat hidup lebih mudah. Ikuti langkah-langkah yang diuraikan dalam tutorial ini, dan Anda akan memiliki PDF yang di-bookmark siap dalam waktu singkat.
 
-### FAQ
+## FAQ
 
-#### T: Apa saja prasyarat untuk menggunakan fungsi "Buat bookmark" di Aspose.Words untuk .NET?
+### Bisakah saya membuat banyak bookmark pada level berbeda?
 
-J: Untuk menggunakan fungsi "Buat bookmark" di Aspose.Words untuk .NET, Anda harus memiliki pengetahuan dasar tentang bahasa C#. Anda juga memerlukan lingkungan pengembangan .NET dengan perpustakaan Aspose.Words terinstal.
+Sangat! Anda dapat membuat bookmark sebanyak yang diperlukan dan menentukan tingkat hierarkinya saat menyimpan dokumen sebagai PDF.
 
-#### T: Bagaimana cara membuat dokumen di Aspose.Words untuk .NET?
+### Bagaimana cara memperbarui teks bookmark?
 
- J: Untuk membuat dokumen di Aspose.Words untuk .NET, Anda dapat menggunakan`Document` kelas. Berikut ini contoh kodenya:
+ Anda dapat menavigasi ke bookmark menggunakan`DocumentBuilder.MoveToBookmark` lalu perbarui teksnya.
 
-```csharp
-Document doc = new Document();
-```
+### Apakah mungkin untuk menghapus bookmark?
 
-#### T: Bagaimana cara membuat bookmark utama dalam dokumen menggunakan Aspose.Words untuk .NET?
+ Ya, Anda dapat menghapus bookmark menggunakan`Bookmarks.Remove` metode dengan menentukan nama bookmark.
 
- A: Untuk membuat bookmark utama dalam dokumen menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`StartBookmark` metode untuk memulai bookmark, menambahkan teks atau bookmark lain di dalamnya, lalu gunakan` EndBookmark` untuk mengakhirinya. Berikut ini contoh kodenya:
+### Bisakah saya membuat bookmark dalam format lain selain PDF?
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+Ya, Aspose.Words mendukung bookmark dalam berbagai format, termasuk DOCX, HTML, dan EPUB.
 
-#### T: Bagaimana cara membuat bookmark bersarang di dalam bookmark utama menggunakan Aspose.Words untuk .NET?
+### Bagaimana cara memastikan bookmark muncul dengan benar di PDF?
 
- J: Untuk membuat bookmark bersarang di dalam bookmark utama menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan yang sama`StartBookmark` Dan`EndBookmark` metode untuk memulai dan mengakhiri bookmark bersarang. Berikut ini contoh kodenya:
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### T: Bagaimana cara menentukan tingkat pratinjau bookmark dalam PDF keluaran menggunakan Aspose.Words untuk .NET?
-
- J: Untuk menentukan tingkat pratinjau bookmark dalam PDF keluaran menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`PdfSaveOptions` kelas dan`BookmarksOutlineLevels` Properti. Anda dapat menambahkan bookmark utama dan bookmark bersarang dengan levelnya masing-masing. Berikut ini contoh kodenya:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### T: Bagaimana cara menyimpan dokumen setelah membuat bookmark menggunakan Aspose.Words untuk .NET?
-
- A: Untuk menyimpan dokumen setelah membuat bookmark menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Save` metode`Document` objek yang menentukan jalur file tujuan. Berikut ini contoh kodenya:
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### T: Bagaimana cara menentukan tingkat pratinjau bookmark dalam PDF keluaran menggunakan Aspose.Words untuk .NET?
-
- J: Untuk menentukan tingkat pratinjau bookmark dalam PDF keluaran menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`PdfSaveOptions` kelas dan`BookmarksOutlineLevels` Properti. Anda dapat menambahkan bookmark utama dan bookmark bersarang dengan levelnya masing-masing. Berikut ini contoh kodenya:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### T: Bagaimana cara membuat bookmark bersarang di dalam bookmark utama menggunakan Aspose.Words untuk .NET?
-
- J: Untuk membuat bookmark bersarang di dalam bookmark utama menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan yang sama`StartBookmark` Dan`EndBookmark` metode untuk memulai dan mengakhiri bookmark bersarang. Pastikan untuk menentukan bookmark induk sebagai parameter saat memanggil`StartBookmark` metode. Berikut ini contoh kodenya:
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### T: Bagaimana cara menambahkan teks di dalam bookmark menggunakan Aspose.Words untuk .NET?
-
- A: Untuk menambahkan teks di dalam bookmark menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Write` metode`DocumentBuilder`objek yang menentukan teks yang akan ditambahkan. Berikut ini contoh kodenya:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### T: Bagaimana cara membuat bookmark utama dalam dokumen menggunakan Aspose.Words untuk .NET?
-
- A: Untuk membuat bookmark utama dalam dokumen menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`StartBookmark` metode untuk memulai bookmark dan`EndBookmark` metode untuk mengakhirinya. Berikut ini contoh kodenya:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+ Pastikan untuk mendefinisikan`BookmarksOutlineLevels` dengan benar di`PdfSaveOptions`. Ini memastikan penanda disertakan dalam kerangka PDF.

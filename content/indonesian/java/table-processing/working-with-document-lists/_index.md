@@ -12,7 +12,7 @@ Apakah Anda siap terjun ke dunia manipulasi dokumen di Java dengan Aspose.Words?
 
 ## Perkenalan
 
-Aspose.Words for Java adalah API tangguh yang memberdayakan pengembang Java untuk bekerja dengan berbagai aspek pemrosesan dokumen. Dalam panduan ini, kami akan fokus pada pengelolaan daftar dokumen, tugas mendasar dalam otomatisasi dokumen. Apakah Anda perlu membuat, memodifikasi, atau mengekstrak informasi dari daftar dokumen, Aspose.Words untuk Java siap membantu Anda.
+Aspose.Words for Java adalah API tangguh yang memberdayakan pengembang Java untuk bekerja dengan berbagai aspek pemrosesan dokumen. Dalam panduan ini, kami akan fokus pada pengelolaan daftar dokumen, tugas mendasar dalam otomatisasi dokumen. Baik Anda perlu membuat, memodifikasi, atau mengekstrak informasi dari daftar dokumen, Aspose.Words untuk Java siap membantu Anda.
 
 ## Memulai dengan Aspose.Words untuk Java
 

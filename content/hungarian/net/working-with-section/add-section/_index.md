@@ -73,7 +73,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### K: Hogyan lehet tartalmat hozzáadni a dokumentumhoz az Aspose.Words for .NET-ben?
 
- V: Ha tartalmat szeretne hozzáadni a dokumentumhoz az Aspose.Words for .NET-ben, használja a`DocumentBuilder` konstruktőr. Ebben a példában két sornyi szöveget adunk hozzá:
+ V: Ha tartalmat szeretne hozzáadni a dokumentumhoz az Aspose.Words for .NET alkalmazásban, használja a`DocumentBuilder` konstruktőr. Ebben a példában két sornyi szöveget adunk hozzá:
 
 ```csharp
 builder. Writen("Hello1");

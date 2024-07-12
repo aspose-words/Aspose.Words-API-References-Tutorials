@@ -113,7 +113,7 @@ R: Para resaltar texto usando Markdown, simplemente rodee el texto con los símb
 
 #### P: ¿Podemos combinar diferentes destacados en un mismo texto?
 
- R: Sí, es posible combinar diferentes resaltados en un mismo texto. Por ejemplo, puede poner en negrita y cursiva una palabra usando ambos`**` y`*` alrededor del mundo.
+ R: Sí, es posible combinar diferentes resaltados en un mismo texto. Por ejemplo, puede poner en negrita y cursiva una palabra usando ambos`**`y`*` alrededor del mundo.
 
 #### P: ¿Qué opciones de resaltado están disponibles en Markdown?
 

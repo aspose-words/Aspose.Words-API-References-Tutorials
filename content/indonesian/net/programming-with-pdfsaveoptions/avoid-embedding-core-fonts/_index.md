@@ -67,7 +67,7 @@ Dalam tutorial ini, kami menjelaskan cara memperkecil ukuran file PDF dengan tid
 
 ### Pertanyaan yang Sering Diajukan
 
-#### T: Apa yang dimaksud dengan opsi untuk tidak menyematkan font dasar dalam file PDF dan mengapa ini penting?
+#### T: Apa opsi untuk tidak menyematkan font dasar dalam file PDF dan mengapa ini penting?
 J: Opsi untuk tidak menyematkan font dasar dalam file PDF mengontrol apakah font dasar seperti Arial, Times New Roman, dll. harus disematkan dalam PDF saat mengonversi dokumen Word. Hal ini penting untuk mengurangi ukuran file PDF dengan menghindari penyertaan font yang umum tersedia pada sistem pembaca PDF. Ini juga dapat membantu memastikan kompatibilitas yang lebih baik dan tampilan dokumen PDF yang konsisten di berbagai perangkat dan platform.
 
 #### T: Bagaimana cara mengonfigurasi Aspose.Words untuk .NET agar tidak menyematkan font dasar dalam file PDF?

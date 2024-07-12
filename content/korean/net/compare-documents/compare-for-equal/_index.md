@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## 2단계: 문서 로드
 
- 다음으로 비교하려는 Word 문서를 로드해야 합니다. 이 예에서는 다음과 같은 두 개의 문서가 있다고 가정합니다.`Document.docx` 그리고`Document2.docx` 문서 디렉토리에 있습니다.
+ 다음으로 비교하려는 Word 문서를 로드해야 합니다. 이 예에서는 다음과 같은 두 개의 문서가 있다고 가정합니다.`Document.docx`그리고`Document2.docx` 문서 디렉토리에 있습니다.
 
 ```csharp
 // 문서 디렉터리의 경로입니다.
@@ -81,7 +81,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 예, Aspose.Words for .NET은 다양한 형식의 문서 비교를 지원합니다.
 
 ### 문서에 변경 내용이 추적되면 어떻게 되나요?
-Aspose.Words for .NET은 비교 프로세스에 추적된 변경 사항을 포함하므로 모든 차이점을 볼 수 있습니다.
+Aspose.Words for .NET은 비교 프로세스에 추적된 변경 사항을 포함하므로 모든 차이점을 확인할 수 있습니다.
 
 ### 서식 지정과 같은 특정 유형의 변경 사항을 무시할 수 있습니까?
 예, 특정 유형의 변경 사항을 무시하도록 비교 옵션을 사용자 정의할 수 있습니다.

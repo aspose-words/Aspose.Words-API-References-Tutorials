@@ -31,14 +31,14 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## Krok 4: Vstupte do sekce dokumentu
+## Krok 4: Otevřete sekci dokumentů
  Chcete-li přidat odstavec do dokumentu, musíme přistupovat k poslední části dokumentu pomocí`LastSection` vlastnictví.
 
 ```csharp
 Section section = doc.LastSection;
 ```
 
-## Krok 5: Přidejte do dokumentu uzel odstavce
+## Krok 5: Přidejte uzel odstavce do dokumentu
  Nyní, když máme sekci dokumentu, můžeme přidat uzel odstavce do sekce pomocí`AppendChild` metoda na sekci`Body` vlastnictví.
 
 ```csharp

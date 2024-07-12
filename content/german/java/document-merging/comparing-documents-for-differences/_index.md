@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Ersetzen`"original_document.docx"` Und`"modified_document.docx"` mit den Pfaden zu Ihren eigenen Dokumenten.
+ Ersetzen`"original_document.docx"`Und`"modified_document.docx"` mit den Pfaden zu Ihren eigenen Dokumenten.
 
 ## Schritt 2: Dokumente vergleichen
 

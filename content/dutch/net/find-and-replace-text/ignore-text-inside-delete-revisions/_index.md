@@ -2,204 +2,86 @@
 title: Negeer tekst binnenin en verwijder revisies
 linktitle: Negeer tekst binnenin en verwijder revisies
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de functie 'Tekst in verwijder revisies negeren' van Aspose.Words voor .NET gebruikt.
+description: Leer hoe u bijgehouden revisies in Word-documenten kunt verwerken met Aspose.Words voor .NET. Beheers documentautomatisering met deze uitgebreide tutorial.
 type: docs
 weight: 10
 url: /nl/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
+## Invoering
 
-In dit artikel zullen we de bovenstaande C#-broncode verkennen om te begrijpen hoe u de functie 'Tekst negeren binnen verwijderingsrevisies' in de Aspose.Words voor .NET-bibliotheek kunt gebruiken. Deze functie is handig als we tekst in verwijderingsrevisies willen negeren bij het verwerken van woorden met documenten.
+Op het gebied van .NET-ontwikkeling onderscheidt Aspose.Words zich als een robuuste bibliotheek voor het programmatisch werken met Microsoft Word-documenten. Of u nu een doorgewinterde ontwikkelaar bent of net begint, het beheersen van de mogelijkheden van Aspose.Words kan uw vermogen om Word-documenten efficiënt te manipuleren, creëren en beheren aanzienlijk vergroten. Deze tutorial duikt in een van de krachtige functies: het verwerken van bijgehouden revisies in documenten met behulp van Aspose.Words voor .NET.
 
-## Overzicht van de Aspose.Words voor .NET-bibliotheek
+## Vereisten
 
-Voordat ik in de codedetails duik, wil ik eerst kort de Aspose.Words voor .NET-bibliotheek introduceren. Het is een krachtige bibliotheek waarmee u Word-documenten in .NET-toepassingen kunt maken, wijzigen en converteren. Het biedt veel geavanceerde functies voor tekstverwerking met documenten, inclusief revisiebeheer.
+Voordat u in deze zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+- Basiskennis van de programmeertaal C#.
+- Visual Studio is op uw systeem geïnstalleerd.
+-  Aspose.Words voor .NET-bibliotheek geïntegreerd in uw project. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Toegang tot Aspose.Words voor .NET[documentatie](https://reference.aspose.com/words/net/) als referentie.
 
-## De functie "Tekst in revisies verwijderen negeren" begrijpen
+## Naamruimten importeren
 
-Met de functie "Tekst binnen verwijderrevisies negeren" in Aspose.Words voor .NET kunt u opgeven of tekst in verwijderrevisies moet worden genegeerd tijdens bepaalde bewerkingen, zoals het zoeken en vervangen van tekst. Wanneer deze functie is ingeschakeld, wordt tijdens bewerkingen geen rekening gehouden met verwijderde tekst in revisies.
+Begin met het importeren van de benodigde naamruimten in uw project:
+```csharp
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+## Stap 1: Maak een nieuw document en voeg tekst in
 
-## Stap 1: Een nieuw document maken met Aspose.Words voor .NET
-
- Voordat we tekst in een document gaan manipuleren, moeten we een nieuw document maken met Aspose.Words voor .NET. Dit kan worden gedaan door het instantiëren van a`Document` voorwerp:
-
+ Initialiseer eerst een nieuw exemplaar van`Document` en een`DocumentBuilder` om te beginnen met het samenstellen van uw document:
 ```csharp
 Document doc = new Document();
-```
-
-## Stap 2: Niet-herziene tekst in het document invoegen
-
- Zodra we een document hebben, kunnen we niet-beoordeelde tekst invoegen met behulp van a`DocumentBuilder` voorwerp. Om bijvoorbeeld de tekst "Verwijderde tekst" in te voegen, kunnen we de`Writeln` En`Write` methoden:
-
-```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. Writen("Deleted");
-builder. Write("Text");
 ```
 
-## Stap 3: Een alinea verwijderen met trackingrevisies
+## Stap 2: tekst invoegen en revisies bijhouden
 
-Ter illustratie van het gebruik van de functie "Tekst negeren binnen revisies verwijderen" verwijderen we een alinea uit het document met behulp van het bijhouden van revisies. Hierdoor kunnen we zien hoe deze functie latere bewerkingen beïnvloedt.
-
+U kunt tekst in het document invoegen en revisies bijhouden door het bijhouden van revisies te starten en te stoppen:
 ```csharp
+builder.Writeln("Deleted");
+builder.Write("Text");
+
 doc.StartTrackRevisions("author", DateTime.Now);
 doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## Stap 4: De functie "Tekst negeren in revisies verwijderen" toepassen
+## Stap 3: Vervang tekst met reguliere expressies
 
- Nu we ons document hebben voorbereid door een alinea te verwijderen, kunnen we de functie "Tekst negeren binnen revisies verwijderen" inschakelen met behulp van een`FindReplaceOptions` voorwerp. Wij zullen de`IgnoreDeleted`eigendom aan`true`:
-
+Om tekst te manipuleren, kunt u reguliere expressies gebruiken om specifieke patronen te vinden en te vervangen:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
 
-## Stap 5: Reguliere expressies gebruiken voor zoeken en vervangen
-
-Om zoek- en vervangbewerkingen op de tekst van het document uit te voeren, zullen we reguliere expressies gebruiken. In ons voorbeeld zoeken we naar alle exemplaren van de letter "e" en vervangen we deze door een asterisk "* ". .NET`Regex` Hiervoor wordt klasse gebruikt:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
-```
 
-## Stap 6: De gewijzigde documentuitvoer weergeven
-
- Na het toepassen van zoeken en vervangen kunnen we de gewijzigde inhoud van het document weergeven met behulp van de`GetText` methode:
-
-```csharp
 Console.WriteLine(doc.GetText());
-```
 
-## Stap 7: De opties wijzigen om verwijderde tekst op te nemen
-
- Als we verwijderde tekst in het uitvoerresultaat willen opnemen, kunnen we de opties wijzigen zodat verwijderde tekst niet wordt genegeerd. Hiervoor stellen we de`IgnoreDeleted`eigendom aan`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-## Stap 8: Het gewijzigde document met verwijderde tekst uitvoeren
-
-Nadat we de opties hebben gewijzigd, kunnen we het zoeken en vervangen opnieuw uitvoeren om het resultaat te krijgen, inclusief de verwijderde tekst:
-
-```csharp
+options.IgnoreDeleted = false;
 doc.Range.Replace(regex, "*", options);
+
 Console.WriteLine(doc.GetText());
-```
-
-### Voorbeeldbroncode voor het negeren van tekst binnen het verwijderen van revisies met Aspose.Words voor .NET
-
-Hier is de volledige voorbeeldbroncode om het gebruik van de functie "Tekst binnen verwijderen revisies negeren" te demonstreren met Aspose.Words voor .NET:
-
-```csharp
-        
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Voeg niet-herziene tekst in.
-	builder.Writeln("Deleted");
-	builder.Write("Text");
-
-	// Verwijder de eerste alinea met trackingrevisies.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	doc.FirstSection.Body.FirstParagraph.Remove();
-	doc.StopTrackRevisions();
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreDeleted = false;
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-    
 ```
 
 ## Conclusie
 
-In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de functie 'Tekst negeren binnen verwijderingsrevisies' kunt gebruiken in Aspose.Words voor .NET. Deze functie is handig voor het negeren van tekst in verwijderingsrevisies bij het manipuleren van documenten. We volgden een stapsgewijze handleiding om een document te maken, tekst in te voegen, een alinea te verwijderen met revisietracering, de functie "Tekst negeren binnen revisies verwijderen" toe te passen en zoek- en vervangbewerkingen uit te voeren.
+Door bijgehouden revisies in Word-documenten te beheersen met Aspose.Words voor .NET kunnen ontwikkelaars documentbewerkingstaken efficiënt automatiseren. Door gebruik te maken van de uitgebreide API en robuuste functies kunt u revisieverwerking naadloos in uw applicaties integreren, waardoor de productiviteit en de mogelijkheden voor documentbeheer worden verbeterd.
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is de functie "Tekst in verwijderrevisies negeren" in Aspose.Words voor .NET?
+### Wat zijn bijgehouden revisies in Word-documenten?
+Bijgehouden revisies in Word-documenten verwijzen naar wijzigingen die in een document zijn aangebracht en die voor anderen zichtbaar zijn met markeringen, vaak gebruikt voor gezamenlijke bewerking en revisie.
 
-A: Met de functie "Tekst binnen verwijderrevisies negeren" in Aspose.Words voor .NET kunt u opgeven of tekst in verwijderrevisies moet worden genegeerd tijdens bepaalde bewerkingen, zoals het zoeken en vervangen van tekst. Wanneer deze functie is ingeschakeld, wordt tijdens bewerkingen geen rekening gehouden met verwijderde tekst in revisies.
+### Hoe kan ik Aspose.Words voor .NET integreren in mijn Visual Studio-project?
+U kunt Aspose.Words voor .NET integreren door de bibliotheek te downloaden van de Aspose-website en ernaar te verwijzen in uw Visual Studio-project.
 
-#### Vraag: Wat is Aspose.Words voor .NET?
+### Kan ik bijgehouden revisies programmatisch terugdraaien met Aspose.Words voor .NET?
+Ja, u kunt bijgehouden revisies programmatisch beheren en terugzetten met Aspose.Words voor .NET, waardoor nauwkeurige controle over de documentbewerkingsworkflows mogelijk wordt.
 
-A: Aspose.Words voor .NET is een krachtige bibliotheek voor het maken, bewerken en converteren van Word-documenten naar .NET-toepassingen. Het biedt veel geavanceerde functies voor tekstverwerking met documenten, inclusief revisiebeheer.
+### Is Aspose.Words voor .NET geschikt voor het verwerken van grote documenten met bijgehouden revisies?
+Aspose.Words voor .NET is geoptimaliseerd voor het efficiënt verwerken van grote documenten, inclusief documenten met uitgebreide bijgehouden revisies.
 
-#### Vraag: Hoe maak ik een nieuw document in Aspose.Words voor .NET?
-
- A: Voordat u tekst in een document gaat manipuleren, moet u een nieuw document maken met Aspose.Words voor .NET. Dit kan gedaan worden door het instantiëren van een`Document` voorwerp. Hier is een voorbeeldcode om een nieuw document te maken:
-
-```csharp
-Document doc = new Document();
-```
-
-#### Vraag: Hoe kan ik onbewerkte tekst in een document invoegen met Aspose.Words voor .NET?
-
- A: Zodra u een document heeft, kunt u niet-beoordeelde tekst invoegen met behulp van a`DocumentBuilder` voorwerp. Als u bijvoorbeeld de tekst "Verwijderde tekst" wilt invoegen, kunt u de`Writeln` En`Write` methoden:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writen("Deleted");
-builder.Write("Text");
-```
-
-#### Vraag: Hoe verwijder ik een alinea met revisietracking in Aspose.Words voor .NET?
-
-A: Ter illustratie van het gebruik van de functie "Tekst negeren binnen revisies verwijderen" verwijderen we een alinea uit het document met behulp van het bijhouden van revisies. Hierdoor kunnen we zien hoe deze functie daaropvolgende bewerkingen beïnvloedt.
-
-```csharp
-doc.StartTrackRevisions("author", DateTime.Now);
-doc.FirstSection.Body.FirstParagraph.Remove();
-doc.StopTrackRevisions();
-```
-
-#### Vraag: Hoe kan ik de functie "Tekst negeren binnen verwijderen revisies" inschakelen in Aspose.Words voor .NET?
-
- A: Nu we ons document hebben voorbereid door een alinea te verwijderen, kunnen we de functie "Tekst negeren binnen revisies verwijderen" inschakelen met behulp van een`FindReplaceOptions` voorwerp. Wij zullen de`IgnoreDeleted`eigendom aan`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
-
-#### Vraag: Hoe kan ik zoeken en vervangen met reguliere expressies in Aspose.Words voor .NET?
-
-A: Om zoek- en vervangbewerkingen op de tekst van het document uit te voeren, zullen we reguliere expressies gebruiken. In ons voorbeeld zoeken we naar alle exemplaren van de letter "e" en vervangen we deze door een asterisk "* ". We zullen de .NET gebruiken`Regex` klasse hiervoor:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### Vraag: Hoe kan ik de gewijzigde documentinhoud bekijken in Aspose.Words voor .NET?
-
-A: Na het toepassen van zoeken en vervangen kunnen we de gewijzigde inhoud van het document weergeven met behulp van de`GetText` methode:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### Vraag: Hoe kan ik verwijderde tekst opnemen in het uitvoerresultaat in Aspose.Words voor .NET?
-
- A: Als we verwijderde tekst in het uitvoerresultaat willen opnemen, kunnen we de opties wijzigen zodat de verwijderde tekst niet wordt genegeerd. Hiervoor stellen we de`IgnoreDeleted`eigendom aan`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-#### Vraag: Hoe kan ik een bewerkt document met verwijderde tekst weergeven in Aspose.Words voor .NET?
-
-A: Nadat we de opties hebben gewijzigd, kunnen we opnieuw zoeken en vervangen om het resultaat te krijgen, inclusief de verwijderde tekst:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Waar kan ik meer bronnen en ondersteuning vinden voor Aspose.Words voor .NET?
+ kunt uitgebreide documentatie verkennen en ondersteuning krijgen van de Aspose.Words voor .NET-gemeenschap op[Aspose.Words-forum](https://forum.aspose.com/c/words/8).

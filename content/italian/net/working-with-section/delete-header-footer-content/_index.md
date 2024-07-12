@@ -62,7 +62,7 @@ In questo tutorial, abbiamo visto come rimuovere il contenuto di intestazione e 
 
 #### D: Come impostare la directory dei documenti in Aspose.Words per .NET?
 
- R: Per impostare il percorso della directory contenente i tuoi documenti, devi sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato. Ecco come farlo:
+R: Per impostare il percorso della directory contenente i tuoi documenti, devi sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato. Ecco come farlo:
 
 ```csharp
 // Percorso della directory dei documenti

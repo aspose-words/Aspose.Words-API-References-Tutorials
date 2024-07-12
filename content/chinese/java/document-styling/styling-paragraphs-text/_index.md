@@ -256,7 +256,7 @@ doc.getFirstSection().getBody().appendChild(para);
 doc.save("ImageDocument.docx");
 ```
 
-在这段代码中，我们从文件中加载图像并将其插入到文档中。
+在此代码中，我们从文件中加载图像并将其插入到文档中。
 
 ## 页面布局和边距
 

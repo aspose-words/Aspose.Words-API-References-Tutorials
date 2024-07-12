@@ -103,7 +103,7 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores
 
 ### 3. Como formatar tabelas de maneira diferente?
 
-Você pode personalizar a formatação da tabela usando diferentes métodos fornecidos pelo Aspose.Words. Verifica a[Documentação da API](https://reference.aspose.com/words/net/) para obter instruções detalhadas.
+ Você pode personalizar a formatação da tabela usando diferentes métodos fornecidos pelo Aspose.Words. Verifica a[Documentação da API](https://reference.aspose.com/words/net/) para obter instruções detalhadas.
 
 ### 4. Como obtenho suporte para Aspose.Words for .NET?
 

@@ -26,7 +26,7 @@ Ebben a példában betöltjük a dokumentumok könyvtárában található "Felso
 
 ## Biztonsági mentési beállítások konfigurálása
 
-következő lépés a mentési beállítások konfigurálása a rögzített HTML-re való konvertáláshoz. Használja a HtmlFixedSaveOptions osztályt, és állítsa a UseTargetMachineFonts tulajdonságot true értékre, hogy az Aspose.Words a célgépről származó betűtípusokat használja. Íme, hogyan kell csinálni:
+A következő lépés a mentési beállítások konfigurálása a rögzített HTML-re való konvertáláshoz. Használja a HtmlFixedSaveOptions osztályt, és állítsa a UseTargetMachineFonts tulajdonságot true értékre, hogy az Aspose.Words a célgépről származó betűtípusokat használja. Íme, hogyan kell csinálni:
 
 ```csharp
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
@@ -34,7 +34,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFo
 
 Létrehozunk egy új HtmlFixedSaveOptions objektumot, és igazra állítjuk a UseTargetMachineFonts tulajdonságot, hogy a célgép betűtípusait használjuk a konvertálás során.
 
-## Javítva a HTML dokumentum átalakítás
+## Javított HTML dokumentum konvertálás
 
 Most, hogy konfiguráltuk a mentési beállításokat, folytathatjuk a dokumentum konvertálását rögzített HTML-re. A Dokumentum osztály Mentés metódusával mentheti a konvertált dokumentumot rögzített HTML formátumba a mentési beállítások megadásával. Íme egy példa:
 
@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Töltse be a Word dokumentumot
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Konfigurálja a biztonsági mentési beállításokat a „Betűtípusok használata a célgépről” funkcióval
+// Konfigurálja a biztonsági mentési beállításokat a „Betűtípusok használata a célgépről” funkcióval
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Konvertálja a dokumentumot rögzített HTML formátumba

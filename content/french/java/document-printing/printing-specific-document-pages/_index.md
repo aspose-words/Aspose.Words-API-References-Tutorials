@@ -94,7 +94,7 @@ Oui, Aspose.Words for Java prend en charge un large éventail de formats de docu
 
 ### Comment puis-je définir des options d'impression supplémentaires, telles que l'orientation de la page et le format du papier ?
 
- Vous pouvez définir des options d'impression supplémentaires, telles que l'orientation de la page et le format du papier, en configurant le`PrintOptions` objet avant d’imprimer le document. Utilisez des méthodes comme`setOrientation` et`setPaperSize` pour personnaliser les paramètres d'impression.
+ Vous pouvez définir des options d'impression supplémentaires, telles que l'orientation de la page et le format du papier, en configurant le`PrintOptions` objet avant d’imprimer le document. Utilisez des méthodes comme`setOrientation`et`setPaperSize` pour personnaliser les paramètres d'impression.
 
 ### Existe-t-il une version d’essai d’Aspose.Words pour Java disponible ?
 

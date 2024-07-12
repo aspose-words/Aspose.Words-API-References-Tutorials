@@ -22,7 +22,7 @@ Sebelum kita mempelajari rendering dokumen, mari kita mulai dengan Aspose.Words 
 
 ### Instalasi dan Pengaturan
 
-Untuk menggunakan Aspose.Words untuk Java, Anda perlu menyertakan file JAR Aspose.Words di proyek Java Anda. Anda dapat mengunduh JAR dari Aspose Releases(https://releases.aspose.com/words/java/) dan menambahkannya ke classpath proyek Anda.
+Untuk menggunakan Aspose.Words untuk Java, Anda perlu menyertakan file JAR Aspose.Words dalam proyek Java Anda. Anda dapat mengunduh JAR dari Aspose Releases(https://releases.aspose.com/words/java/) dan menambahkannya ke classpath proyek Anda.
 
 ### Lisensi Aspose.Words untuk Java
 

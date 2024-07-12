@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Indem man es einstellt`AddSpaceBetweenFarEastAndAlpha` Und`AddSpaceBetweenFarEastAndDigit` Zu`true`weisen wir Aspose.Words an, den Abstand zwischen asiatischen Zeichen und lateinischen Buchstaben oder Ziffern automatisch anzupassen.
+ Indem man es einstellt`AddSpaceBetweenFarEastAndAlpha`Und`AddSpaceBetweenFarEastAndDigit` Zu`true`weisen wir Aspose.Words an, den Abstand zwischen asiatischen Zeichen und lateinischen Buchstaben oder Ziffern automatisch anzupassen.
 
 ## Schritt 3: Text zum Dokument hinzufügen
 
@@ -76,7 +76,7 @@ Zum Schluss müssen wir unser Dokument speichern. Das ist so, als würden Sie Ih
 doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
 ```
 
-Mit dieser Codezeile speichern wir unser Dokument im angegebenen Verzeichnis unter einem aussagekräftigen Namen. Und voilà! Ihr Dokument ist fertig, mit perfekt angepasstem Abstand zwischen asiatischem und lateinischem Text.
+Mit dieser Codezeile speichern wir unser Dokument im angegebenen Verzeichnis unter einem beschreibenden Namen. Und voilà! Ihr Dokument ist fertig, mit perfekt angepasstem Abstand zwischen asiatischem und lateinischem Text.
 
 ## Abschluss
 

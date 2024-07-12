@@ -2,13 +2,13 @@
 title: Kopírovat sekci
 linktitle: Kopírovat sekci
 second_title: Aspose.Words API pro zpracování dokumentů
-description: V tomto kurzu se dozvíte, jak zkopírovat část z dokumentu aplikace Word do jiného dokumentu pomocí Aspose.Words for .NET.
+description: tomto kurzu se dozvíte, jak zkopírovat část z dokumentu aplikace Word do jiného dokumentu pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-section/copy-section/
 ---
 
-tomto tutoriálu vysvětlíme, jak zkopírovat část z dokumentu aplikace Word do jiného dokumentu pomocí knihovny Aspose.Words pro .NET. Kopírování oddílu umožňuje přenést konkrétní oddíl ze zdrojového dokumentu do cílového dokumentu. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+V tomto tutoriálu vysvětlíme, jak zkopírovat část z dokumentu aplikace Word do jiného dokumentu pomocí knihovny Aspose.Words pro .NET. Kopírování oddílu umožňuje přenést konkrétní oddíl ze zdrojového dokumentu do cílového dokumentu. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
 
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující položky:
@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## Krok 3: Zkopírujte oddíl do cílového dokumentu
- Ke zkopírování oddílu ze zdrojového dokumentu do cílového dokumentu použijeme`ImportNode`metoda pro import zdrojové sekce a její přidání do cílového dokumentu.
+ Ke zkopírování oddílu ze zdrojového dokumentu do cílového dokumentu použijeme`ImportNode` metoda pro import zdrojové sekce a její přidání do cílového dokumentu.
 
 ```csharp
 // Získejte zdrojovou sekci
@@ -86,7 +86,7 @@ Odpověď: Než začnete, ujistěte se, že máte následující položky:
 
 #### Otázka: Jak nastavit adresář dokumentů v Aspose.Words pro .NET?
 
- A: Chcete-li nastavit cestu k adresáři obsahujícímu vaše dokumenty, musíte nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou. Jak na to:
+A: Chcete-li nastavit cestu k adresáři obsahujícímu vaše dokumenty, musíte nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou. Jak na to:
 
 ```csharp
 // Cesta k adresáři vašich dokumentů
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### Otázka: Jak načíst zdrojové a cílové dokumenty v Aspose.Words pro .NET?
 
-A: Chcete-li načíst zdrojový dokument do instance souboru`Document` třída tzv`srcDoc` a vytvořte prázdnou instanci souboru`Document` třída tzv`dstDoc` pro cílový dokument můžete použít následující kód:
+ A: Chcete-li načíst zdrojový dokument do instance souboru`Document` třída tzv`srcDoc` a vytvořte prázdnou instanci souboru`Document` třída tzv`dstDoc` pro cílový dokument můžete použít následující kód:
 
 ```csharp
 // Načtěte zdrojový dokument

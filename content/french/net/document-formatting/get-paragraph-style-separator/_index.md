@@ -82,7 +82,7 @@ Maintenant, exécutons votre code et voyons-le en action.
 
 ## Conclusion
 
-Et voila! Vous venez de maîtriser l'art de rechercher des séparateurs de style de paragraphe dans un document Word à l'aide d'Aspose.Words pour .NET. Ce n’est pas sorcier, mais cela ressemble vraiment à de la magie, n’est-ce pas ? En décomposant la tâche en étapes simples, vous avez débloqué un outil puissant pour gérer les documents Word par programmation.
+Et voila! Vous venez de maîtriser l'art de rechercher des séparateurs de style de paragraphe dans un document Word à l'aide d'Aspose.Words pour .NET. Ce n’est pas sorcier, mais cela ressemble à de la magie, n’est-ce pas ? En décomposant la tâche en étapes simples, vous avez débloqué un outil puissant pour gérer les documents Word par programmation.
 
 ## FAQ
 

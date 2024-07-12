@@ -9,7 +9,7 @@ url: /pl/net/programming-with-document-options-and-settings/
 ---
 Samouczki Aspose.Words dla .NET „Przetwarzanie tekstu z opcjami i ustawieniami dokumentu” przeprowadzą Cię przez różne funkcje i techniki manipulowania opcjami i ustawieniami dokumentów w Aspose.Words dla .NET. Te samouczki pomogą Ci zrozumieć, jak dostosowywać ustawienia przesyłania, zarządzać czcionkami, formatami dokumentów, szablonami i nie tylko.
 
-W samouczkach wyjaśniono, jak dostosować opcje ładowania dokumentów. Dowiesz się, jak określić parametry ładowania, takie jak zarządzanie czcionkami, rozdzielczość linków, optymalizacja wydajności itp. Opcje te pozwalają precyzyjnie kontrolować zachowanie ładowania dokumentów i optymalizować wydajność aplikacji.
+samouczkach wyjaśniono, jak dostosować opcje ładowania dokumentów. Dowiesz się, jak określić parametry ładowania, takie jak zarządzanie czcionkami, rozdzielczość linków, optymalizacja wydajności itp. Opcje te pozwalają precyzyjnie kontrolować zachowanie ładowania dokumentów i optymalizować wydajność aplikacji.
 
  ## Poradniki
 | Tytuł | Opis |

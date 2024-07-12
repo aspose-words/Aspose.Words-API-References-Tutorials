@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Stap 7: Voeg inhoud toe aan cellen
- Nu kunnen we inhoud aan cellen toevoegen met behulp van de`Writeln()` En`InsertCell()` methoden van de documentbouwer. In dit voorbeeld voegen we de kopteksten toe voor 'Artikel' en 'Aantal (
+ Nu kunnen we inhoud aan cellen toevoegen met behulp van de`Writeln()`En`InsertCell()` methoden van de documentbouwer. In dit voorbeeld voegen we de kopteksten toe voor 'Artikel' en 'Aantal (
 
 kg)" en de bijbehorende gegevens.
 

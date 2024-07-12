@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // दस्तावेज़ में IF फ़ील्ड डालें.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//IF स्थिति का मूल्यांकन करें.
+// IF स्थिति का मूल्यांकन करें.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // मूल्यांकन का परिणाम प्रदर्शित करें.

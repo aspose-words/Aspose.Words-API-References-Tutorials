@@ -101,7 +101,7 @@ Son olarak klonlanan belgemizin beklendiği gibi olup olmadığını kontrol ede
 
 Kesinlikle! Aspose.Words for .NET çok çeşitli belge formatlarını destekler; böylece belgeleri DOCX, DOC, RTF, ODT ve çok daha fazlasına kopyalayabilirsiniz.
 
-### Bir belgeyi birden çok kez kopyalamak mümkün müdür?
+### Bir belgeyi birden çok kez kopyalamak mümkün mü?
 
  Evet, bir belgeyi istediğiniz kadar kopyalayabilirsiniz. Sadece arayın`Clone` yöntemi tekrar tekrar kullanın.
 

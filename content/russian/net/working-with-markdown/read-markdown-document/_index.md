@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 
 #### Вопрос: Какие библиотеки .NET рекомендуются для работы с документами Markdown?
 
- О: Рекомендуемые библиотеки .NET для работы с документами Markdown:`Markdig` и`CommonMark.NET`. Они предлагают большую гибкость и полную поддержку функций Markdown.
+ О: Рекомендуемые библиотеки .NET для работы с документами Markdown:`Markdig`и`CommonMark.NET`. Они предлагают большую гибкость и полную поддержку функций Markdown.
 
 #### Вопрос: Как обрабатывать ошибки при чтении документа Markdown?
 

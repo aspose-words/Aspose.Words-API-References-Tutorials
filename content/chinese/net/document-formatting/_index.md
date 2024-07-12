@@ -17,7 +17,7 @@ url: /zh/net/document-formatting/
 | [Word 文档中的亚洲字体换行组](./asian-typography-line-break-group/) | 使用 Aspose.Words for .NET 掌握 Word 文档中的亚洲字体换行符。本指南提供了精确格式化的分步教程。 |
 | [Word 文档中的段落格式](./paragraph-formatting/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 轻松地格式化 Word 文档中的段落。 |
 | [Word 文档中的多级列表格式](./multilevel-list-formatting/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 掌握 Word 文档中的多级列表格式。轻松增强文档结构。 |
-| [在 Word 文档中应用段落样式](./apply-paragraph-style/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中应用段落样式。按照我们的分步指南，制作出精美、专业的文档。 |
+| [在 Word 文档中应用段落样式](./apply-paragraph-style/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中应用段落样式。按照我们的分步指南制作精美、专业的文档。 |
 | [在 Word 文档中对段落应用边框和底纹](./apply-borders-and-shading-to-paragraph/) | 使用 Aspose.Words for .NET 为 Word 文档中的段落添加边框和底纹。按照我们的分步指南来增强您的文档格式。 |
 | [更改 Word 文档中的亚洲段落间距和缩进](./change-asian-paragraph-spacing-and-indents/) | 通过本全面的分步指南了解如何使用 Aspose.Words for .NET 更改 Word 文档中的亚洲段落间距和缩进。 |
 | [在 Word 文档中对齐网格](./snap-to-grid/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中启用对齐网格。本详细教程涵盖先决条件、分步指南和常见问题解答。 |

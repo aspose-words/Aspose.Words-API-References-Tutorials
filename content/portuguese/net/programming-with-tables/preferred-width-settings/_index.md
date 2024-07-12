@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Certifique-se de substituir "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho real para o diretório de documentos.
 
 ## Passo 3: Construindo a mesa com larguras preferidas
-A seguir, construiremos uma tabela com três células que possuem diferentes larguras preferidas. Use o seguinte código:
+seguir, construiremos uma tabela com três células que possuem diferentes larguras preferidas. Use o seguinte código:
 
 ```csharp
 // Começo da mesa

@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/working-with-section/delete-header-footer-content/
 ---
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET Kopf- und Fußzeileninhalte aus einem Word-Dokument entfernen. Das Entfernen von Inhalten aus Kopf- und Fußzeilen kann nützlich sein, wenn Sie diese Elemente in Ihrem Dokument zurücksetzen oder entfernen möchten. Wir führen Sie Schritt für Schritt durch den Code, damit Sie ihn in Ihrem .NET-Projekt verstehen und implementieren können.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET Kopf- und Fußzeileninhalte aus Word-Dokumenten entfernen. Das Entfernen von Inhalten aus Kopf- und Fußzeilen kann nützlich sein, wenn Sie diese Elemente in Ihrem Dokument zurücksetzen oder entfernen möchten. Wir führen Sie Schritt für Schritt durch den Code, damit Sie ihn in Ihrem .NET-Projekt verstehen und implementieren können.
 
 ## Voraussetzungen
 Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente verfügen:
@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Laden Sie das Dokument und gehen Sie zum Abschnitt
- Als nächstes laden wir das Word-Dokument in eine Instanz des`Document` Klasse. Wir greifen mit Index 0 auf den ersten Abschnitt des Dokuments zu.
+ Als nächstes laden wir das Word-Dokument in eine Instanz des`Document` Klasse. Wir greifen auf den ersten Abschnitt des Dokuments über den Index 0 zu.
 
 ```csharp
 // Laden Sie das Dokument
@@ -62,7 +62,7 @@ In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET Kopf- u
 
 #### F: Wie lege ich das Dokumentverzeichnis in Aspose.Words für .NET fest?
 
- A: Um den Pfad zum Verzeichnis mit Ihren Dokumenten festzulegen, müssen Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad. So geht's:
+A: Um den Pfad zum Verzeichnis mit Ihren Dokumenten festzulegen, müssen Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad. So geht's:
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis

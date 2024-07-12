@@ -97,7 +97,7 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 예, 이러한 설정은 모든 텍스트에 적용할 수 있지만 고유한 간격 및 들여쓰기 요구 사항으로 인해 아시아 타이포그래피에 특히 유용합니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
- 예, Aspose.Words for .NET은 유료 라이브러리이지만[무료 시험판](https://releases.aspose.com/) 또는[임시면허](https://purchase.aspose.com/temporary-license/) 그것을 시험해보려고.
+ 예, Aspose.Words for .NET은 유료 라이브러리이지만[무료 시험판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 그것을 시험해보려고.
 
 ### 추가 문서는 어디서 찾을 수 있나요?
  다음에서 포괄적인 문서를 찾을 수 있습니다.[.NET 문서 페이지용 Aspose.Words](https://reference.aspose.com/words/net/).

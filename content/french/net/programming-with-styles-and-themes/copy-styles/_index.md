@@ -39,7 +39,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 
 Dans cette dernière étape, nous enregistrons le document source avec les styles copiés dans un fichier.
 
-Vous pouvez désormais exécuter du code source pour copier des styles d'un document source vers un document cible. Cette fonctionnalité vous permet de maintenir la cohérence du style sur plusieurs documents, facilitant ainsi la gestion de l'apparence et du formatage de vos documents.
+Vous pouvez désormais exécuter du code source pour copier des styles d'un document source vers un document cible. Cette fonctionnalité vous permet de maintenir la cohérence du style sur plusieurs documents, ce qui facilite la gestion de l'apparence et du formatage de vos documents.
 
 ### Exemple de code source pour les styles de copie à l'aide d'Aspose.Words pour .NET 
 
@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 
 ## Conclusion
 
- Dans ce didacticiel, nous avons exploré la fonctionnalité de styles de copie avec Aspose.Words pour .NET. En utilisant le`CopyStylesFromTemplate` Grâce à cette méthode, nous avons pu copier les styles d'un document source vers un document cible, ce qui facilite la cohérence des styles dans plusieurs documents.
+ Dans ce didacticiel, nous avons exploré la fonctionnalité de styles de copie avec Aspose.Words pour .NET. En utilisant le`CopyStylesFromTemplate` méthode, nous avons pu copier les styles d'un document source vers un document cible, ce qui facilite la cohérence des styles dans plusieurs documents.
 
 La copie de styles est particulièrement utile lorsque vous souhaitez appliquer des styles préconfigurés à plusieurs documents, garantissant ainsi une apparence et un formatage cohérents. Cela vous fait gagner du temps et des efforts en n'ayant pas à recréer les mêmes styles pour chaque document.
 

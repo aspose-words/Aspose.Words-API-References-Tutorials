@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 3: Dokument einlegen
- Verwenden Sie die`Document` Klasse von Aspose.Words, um das Word-Dokument zu laden, das die verknüpften Felder enthält, die Sie konvertieren möchten.
+ Verwenden Sie die`Document`Klasse von Aspose.Words, um das Word-Dokument zu laden, das die verknüpften Felder enthält, die Sie konvertieren möchten.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

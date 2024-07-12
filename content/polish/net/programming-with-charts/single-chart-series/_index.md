@@ -2,119 +2,123 @@
 title: Dostosuj serię pojedynczych wykresów na wykresie
 linktitle: Dostosuj serię pojedynczych wykresów na wykresie
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dostosować pojedyncze serie wykresów na wykresie za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak dostosować pojedyncze serie wykresów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby zapewnić bezproblemową obsługę.
 type: docs
 weight: 10
 url: /pl/net/programming-with-charts/single-chart-series/
 ---
+## Wstęp
 
-W tym samouczku wyjaśniono, jak używać Aspose.Words dla .NET do dostosowywania pojedynczych serii wykresów na wykresie. Dostarczony kod źródłowy pokazuje, jak utworzyć wykres, uzyskać dostęp do określonych serii i zmodyfikować ich właściwości.
+No hej! Czy kiedykolwiek chciałeś urozmaicić swoje dokumenty Word za pomocą niesamowitych wykresów? Cóż, jesteś we właściwym miejscu! Dzisiaj zagłębiamy się w świat Aspose.Words dla .NET, aby dostosować pojedyncze serie wykresów na wykresie. Niezależnie od tego, czy jesteś doświadczonym profesjonalistą, czy dopiero zaczynasz, ten przewodnik przeprowadzi Cię krok po kroku przez cały proces. Zatem zapnij pasy i przejdźmy do tworzenia wykresów!
 
-## Krok 1: Skonfiguruj projekt
+## Warunki wstępne
 
-Upewnij się, że masz następujące wymagania wstępne:
+Zanim zaczniemy, upewnijmy się, że mamy wszystko, czego potrzebujemy. Oto krótka lista kontrolna:
 
-- Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
-- Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
+1.  Biblioteka Aspose.Words dla .NET: Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+2. Visual Studio: każda najnowsza wersja powinna wystarczyć.
+3. Podstawowe zrozumienie języka C#: Nic nadzwyczajnego, wystarczą podstawy.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres
+## Importuj przestrzenie nazw
 
- Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
+Po pierwsze, musimy zaimportować niezbędne przestrzenie nazw. To jak przygotowanie sceny przed wielkim występem.
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Krok 1: Skonfiguruj swój dokument
+
+Zacznijmy od skonfigurowania nowego dokumentu Word. To tutaj wydarzy się cała magia.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Ścieżka do katalogu dokumentów
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Następnie użyj`InsertChart` metoda`DocumentBuilder` , aby wstawić wykres liniowy do dokumentu.
+## Krok 2: Wstaw wykres
+
+Następnie wstawimy do naszego dokumentu wykres liniowy. Pomyśl o tym jak o dodaniu płótna, na którym namalujemy nasze arcydzieło.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Krok 3: Uzyskaj dostęp do serii wykresów i dostosuj je
+## Krok 3: Uzyskaj dostęp do serii wykresów
 
- Aby zmodyfikować serię pojedynczych wykresów, musisz uzyskać dostęp do pliku`ChartSeries` obiekty wykresu.
+Przejdźmy teraz do serii wykresów. Od tego zaczniemy dostosowywanie.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
 ChartSeries series1 = chart.Series[1];
+```
 
+## Krok 4: Zmień nazwę serii wykresów
+
+Nadajmy naszej serii wykresów kilka znaczących nazw. To jak etykietowanie pędzli przed rozpoczęciem malowania.
+
+```csharp
 series0.Name = "Chart Series Name 1";
 series1.Name = "Chart Series Name 2";
+```
 
+## Krok 5: Wygładź linie
+
+Chcesz, żeby te linie wyglądały gładko i elegancko? Zróbmy to za pomocą splajnów Catmull-Rom.
+
+```csharp
 series0.Smooth = true;
 series1.Smooth = true;
+```
 
+## Krok 6: Postępuj z wartościami ujemnymi
+
+Czasami dane mogą być negatywne. Upewnijmy się, że nasz wykres poradzi sobie z tym z wdziękiem.
+
+```csharp
 series0.InvertIfNegative = true;
+```
+
+## Krok 7: Dostosuj znaczniki
+
+Markery przypominają małe kropki na naszych liniach. Sprawmy, żeby się wyróżniali.
+
+```csharp
 series0.Marker.Symbol = MarkerSymbol.Circle;
 series0.Marker.Size = 15;
-
 series1.Marker.Symbol = MarkerSymbol.Star;
 series1.Marker.Size = 10;
 ```
 
-## Krok 4: Zapisz dokument
+## Krok 8: Zapisz swój dokument
 
- Na koniec zapisz dokument w określonym katalogu za pomocą pliku`Save` metoda`Document` obiekt.
+Na koniec zapiszmy nasz dokument. To tutaj podziwiamy naszą pracę.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 ```
 
-To kończy implementację dostosowywania pojedynczej serii wykresów przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy dla serii pojedynczych wykresów przy użyciu Aspose.Words dla .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = chart.Series[0];
-	ChartSeries series1 = chart.Series[1];
-	series0.Name = "Chart Series Name 1";
-	series1.Name = "Chart Series Name 2";
-	// Można także określić, czy linia łącząca punkty na wykresie ma być wygładzana za pomocą splajnów Catmull-Rom.
-	series0.Smooth = true;
-	series1.Smooth = true;
-	// Określa, czy element nadrzędny domyślnie odwraca swoje kolory, jeśli wartość jest ujemna.
-	series0.InvertIfNegative = true;
-	series0.Marker.Symbol = MarkerSymbol.Circle;
-	series0.Marker.Size = 15;
-	series1.Marker.Symbol = MarkerSymbol.Star;
-	series1.Marker.Size = 10;
-	doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
-```
-
 ## Wniosek
 
-W tym samouczku nauczyłeś się, jak dostosować pojedynczą serię wykresów na wykresie za pomocą Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz utworzyć nowy dokument, wstawić wykres liniowy, uzyskać dostęp do określonych serii wykresów i zmodyfikować ich właściwości, aby uzyskać żądane dostosowanie.
+I masz to! Pomyślnie dostosowałeś pojedynczą serię wykresów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Całkiem fajnie, prawda? To tylko wierzchołek góry lodowej; z Aspose.Words możesz zrobić o wiele więcej. Eksperymentuj więc i twórz niesamowite dokumenty!
 
-Aspose.Words dla .NET zapewnia zaawansowane funkcje do manipulowania wykresami w dokumentach Word. Uzyskując dostęp do poszczególnych serii wykresów, możesz zastosować określone modyfikacje, aby dostosować ich wygląd i zachowanie. Umożliwia to zmianę nazwy serii, włączenie wygładzania linii wykresu, dostosowanie znaczników punktów danych, odwrócenie kolorów dla wartości ujemnych i wiele więcej, aby poprawić wizualną reprezentację wykresu.
+## Często zadawane pytania
 
-Dostosowywanie pojedynczej serii wykresów zapewnia elastyczność wyróżniania określonych danych lub podkreślania określonych trendów na wykresie. Dzięki Aspose.Words dla .NET możesz łatwo uzyskać dostęp do właściwości serii wykresów i je modyfikować, umożliwiając tworzenie atrakcyjnych wizualnie i bogatych w informacje wykresów w dokumentach programu Word.
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka, która pozwala programowo tworzyć, edytować, konwertować i manipulować dokumentami programu Word.
 
-### Często zadawane pytania
+### Czy mogę używać Aspose.Words za darmo?
+ Tak, możesz zacząć od[bezpłatna wersja próbna](https://releases.aspose.com/).
 
-#### Pytanie 1. Czy mogę dostosować wiele serii wykresów na jednym wykresie?
- Tak, możesz dostosować wiele serii wykresów na wykresie za pomocą Aspose.Words dla .NET. Uzyskując dostęp do`ChartSeries`obiektów na wykresie, możesz wybierać i modyfikować wiele serii na podstawie ich indeksów lub określonych kryteriów. Użyj pętli lub indywidualnych przypisań, aby zmodyfikować żądane właściwości każdej serii wykresów. W ten sposób możesz zastosować różne dostosowania do wielu serii na tym samym wykresie.
+### Jak uzyskać wsparcie dla Aspose.Words?
+ Możesz uzyskać wsparcie od społeczności Aspose na ich stronie[forum](https://forum.aspose.com/c/words/8).
 
-#### Pytanie 2. Jak zmienić nazwę serii wykresów?
- Aby zmienić nazwę serii wykresów na wykresie za pomocą Aspose.Words dla .NET, musisz uzyskać dostęp do`Name` własność`ChartSeries` obiekt i ustaw mu żądaną nazwę. Nazwa serii jest zwykle wyświetlana w legendzie wykresu lub etykietach danych, zapewniając opisową etykietę serii. Modyfikując nazwę serii, można nadać zrozumiałe nazwy, które odzwierciedlają dane reprezentowane przez każdą serię.
+### Czy można dostosować inne typy wykresów?
+Absolutnie! Aspose.Words obsługuje różne typy wykresów, takie jak wykresy słupkowe, kołowe i punktowe.
 
-#### Pytanie 3. Co to jest wygładzanie serii wykresów?
-Wygładzanie serii wykresów to technika poprawy wizualnej, która pozwala utworzyć gładką linię łączącą punkty na wykresie. Stosuje algorytm wygładzania, taki jak splajny Catmull-Rom, do interpolacji między punktami danych i tworzenia przyjemnej wizualnie krzywej. Aby włączyć wygładzanie serii na wykresie za pomocą Aspose.Words dla .NET, przejdź do`Smooth` własność`ChartSeries` obiekt i ustaw go na`true`. Wygładzanie może być przydatne do wyświetlania trendów lub wzorców w danych o nieregularnych wahaniach.
-
-#### Pytanie 4. Jak dostosować znaczniki punktów danych w serii wykresów?
- Aby dostosować znaczniki punktów danych w serii wykresów za pomocą Aspose.Words dla .NET, musisz uzyskać dostęp do`Marker` własność`ChartSeries` obiektu i modyfikować jego właściwości, takie jak`Symbol` I`Size`. Markery to wizualne wskaźniki umieszczane na wykresie w celu przedstawienia poszczególnych punktów danych. Można wybierać spośród wielu wbudowanych symboli znaczników i dostosowywać ich rozmiar, aby wyróżnić lub rozróżnić określone punkty danych w serii.
-
-#### Pytanie 5. Czy mogę odwrócić kolory wartości ujemnych w serii wykresów?
- Tak, możesz odwracać kolory wartości ujemnych w serii wykresów za pomocą Aspose.Words dla .NET. Ustawiając`InvertIfNegative` własność`ChartSeries` oponować`true`, kolory punktów danych o wartościach ujemnych zostaną odwrócone, dzięki czemu będą wizualnie odmienne od wartości dodatnich. Ta funkcja może być przydatna podczas porównywania wartości dodatnich i ujemnych w serii wykresów, zapewniając wyraźne rozróżnienie między nimi.
+### Gdzie mogę znaleźć więcej dokumentacji?
+ Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać bardziej szczegółowe przewodniki i przykłady.

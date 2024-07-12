@@ -127,7 +127,7 @@ W tym samouczku omówiliśmy, jak pracować z wykresami za pomocą Aspose.Words 
 
 ### Jak dodać wiele serii do wykresu?
 
- Możesz dodać wiele serii do wykresu za pomocą opcji`chart.getSeries().add()` metoda. Pamiętaj o określeniu nazwy serii, kategorii i wartości danych.
+ Możesz dodać wiele serii do wykresu za pomocą opcji`chart.getSeries().add()` metoda. Pamiętaj, aby określić nazwę serii, kategorie i wartości danych.
 
 ### Jak sformatować etykiety danych przy użyciu niestandardowych formatów liczb?
 

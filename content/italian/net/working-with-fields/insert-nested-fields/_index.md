@@ -112,11 +112,11 @@ R: L'utilizzo di campi nidificati offre numerosi vantaggi in un documento Word c
 
 #### D: Posso avere campi nidificati multilivello in un documento Word con Aspose.Words per .NET?
 
- R: Sì, è possibile avere campi nidificati multilivello in un documento Word con Aspose.Words per .NET. È possibile creare gerarchie complesse di campi nidificati utilizzando il comando`FieldStart.NextSibling` metodo per aggiungere campi secondari ai campi principali esistenti.
+R: Sì, è possibile avere campi nidificati multilivello in un documento Word con Aspose.Words per .NET. È possibile creare gerarchie complesse di campi nidificati utilizzando il comando`FieldStart.NextSibling` metodo per aggiungere campi secondari ai campi principali esistenti.
 
 #### D: Come posso personalizzare le proprietà dei campi nidificati in un documento di Word con Aspose.Words per .NET?
 
- R: Per personalizzare le proprietà dei campi nidificati in un documento Word con Aspose.Words per .NET, è possibile accedere al corrispondente`FieldStart`oggetti e modificarne le proprietà secondo necessità. È possibile impostare opzioni di formattazione, valori, calcoli, ecc. dei campi nidificati per ottenere il risultato desiderato.
+ R: Per personalizzare le proprietà dei campi nidificati in un documento Word con Aspose.Words per .NET, è possibile accedere al corrispondente`FieldStart` oggetti e modificarne le proprietà secondo necessità. È possibile impostare opzioni di formattazione, valori, calcoli, ecc. dei campi nidificati per ottenere il risultato desiderato.
 
 #### D: L'inserimento di campi nidificati influisce sulle prestazioni del documento Word con Aspose.Words per .NET?
 

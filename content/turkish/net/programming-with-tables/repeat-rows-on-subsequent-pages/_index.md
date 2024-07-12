@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// İlk satırın ilk hücresini ekle
+//İlk satırın ilk hücresini ekle
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Burada, iki başlık satırı ve birden fazla veri satırı içeren bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz.`RowFormat.HeadingFormat`parametreler sonraki sayfalarda tekrarlanması gereken başlık satırlarını işaretlemek için kullanılır.
+ Burada, iki başlık satırı ve birden fazla veri satırı içeren bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz.`RowFormat.HeadingFormat` parametreler sonraki sayfalarda tekrarlanması gereken başlık satırlarını işaretlemek için kullanılır.
 
 ## Adım 4: Değiştirilen belgeyi kaydetme
 Nihayet ABD

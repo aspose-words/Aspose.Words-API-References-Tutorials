@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Tento kód vytvoří instanci`Document` a`DocumentBuilder` k vytvoření dokumentu. Vkládá an`<img>` tag do dokumentu se zakódovaným obrázkem base64.
+ Tento kód vytvoří instanci`Document`a`DocumentBuilder` k vytvoření dokumentu. Vkládá an`<img>` tag do dokumentu se zakódovaným obrázkem base64.
 
 ## Krok 3: Nastavte možnosti uložení HTML
 

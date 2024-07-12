@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /id/net/working-with-fonts/font-settings-with-load-options/
 ---
-Dalam tutorial ini, kami akan menunjukkan kepada Anda cara menggunakan opsi pemuatan dengan pengaturan font di dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Opsi pemuatan memungkinkan Anda menentukan pengaturan tambahan saat memuat dokumen, termasuk pengaturan font. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
+Dalam tutorial ini, kami akan menunjukkan cara menggunakan opsi pemuatan dengan pengaturan font di dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Opsi pemuatan memungkinkan Anda menentukan pengaturan tambahan saat memuat dokumen, termasuk pengaturan font. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
 
 ## Prasyarat
 Sebelum memulai, pastikan Anda memiliki item berikut:
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 2: Konfigurasikan Opsi Pemuatan dengan Pengaturan Font
- Selanjutnya, kita akan membuat sebuah instance dari`LoadOptions` dan tentukan pengaturan font dengan membuat instance baru`FontSettings` dan menugaskannya ke`loadOptions.FontSettings`.
+Selanjutnya, kita akan membuat sebuah instance dari`LoadOptions` dan tentukan pengaturan font dengan membuat instance baru`FontSettings` dan menugaskannya ke`loadOptions.FontSettings`.
 
 ```csharp
 // Konfigurasikan opsi pemuatan dengan pengaturan font
@@ -57,7 +57,7 @@ Dalam tutorial ini, kita melihat cara menggunakan opsi pemuatan dengan pengatura
 
 #### T: Bagaimana cara menentukan font default saat memuat dokumen ke Aspose.Words?
 
-A: Untuk menentukan font default saat memuat dokumen di Aspose.Words, Anda dapat menggunakan`LoadOptions` kelas dan atur`DefaultFontName` properti ke nama font yang diinginkan.
+ A: Untuk menentukan font default saat memuat dokumen di Aspose.Words, Anda dapat menggunakan`LoadOptions` kelas dan atur`DefaultFontName`properti ke nama font yang diinginkan.
 
 #### T: Pengaturan font apa lagi yang dapat saya tentukan dengan opsi pemuatan di Aspose.Words?
 
@@ -69,4 +69,4 @@ A: Jika font default yang ditentukan tidak tersedia saat dokumen dimuat di Aspos
 
 #### T: Dapatkah saya menentukan pengaturan font yang berbeda untuk setiap dokumen yang diunggah?
 
- J: Ya, Anda dapat menentukan pengaturan font yang berbeda untuk setiap dokumen yang dimuat dengan menggunakan contoh terpisah dari`LoadOptions`kelas dan mengatur pengaturan font yang diinginkan untuk setiap instance. Ini memungkinkan Anda menyesuaikan tampilan font untuk setiap dokumen secara mandiri.
+ J: Ya, Anda dapat menentukan pengaturan font yang berbeda untuk setiap dokumen yang dimuat dengan menggunakan contoh terpisah dari`LoadOptions` kelas dan mengatur pengaturan font yang diinginkan untuk setiap instance. Ini memungkinkan Anda menyesuaikan tampilan font untuk setiap dokumen secara mandiri.

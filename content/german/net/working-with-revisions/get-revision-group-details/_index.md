@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Wie erhalte ich die Details einer Revisionsgruppe in Aspose.Words für .NET?
 
-A: Gehen Sie die Revisionen des Dokuments in einer Schleife durch und greifen Sie auf die Eigenschaften jeder Revision zu, um die gewünschten Details zu erhalten. Sie können den`RevisionType`, `Author`, `DateTime` Und`ParentNode` Eigenschaften, um jeweils Revisionstyp, Autor, Datum und überarbeiteten Text abzurufen.
+A: Gehen Sie die Revisionen des Dokuments in einer Schleife durch und greifen Sie auf die Eigenschaften jeder Revision zu, um die gewünschten Details zu erhalten. Sie können den`RevisionType`, `Author`, `DateTime`Und`ParentNode` Eigenschaften, um jeweils Revisionstyp, Autor, Datum und überarbeiteten Text abzurufen.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -89,7 +89,7 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
-#### F: Wie überprüft man, ob eine Revision zu einer Gruppe in Aspose.Words für .NET gehört?
+#### F: Wie kann ich überprüfen, ob eine Revision zu einer Gruppe in Aspose.Words für .NET gehört?
 
  A: Verwenden Sie die`Group` Eigentum der`Revision` Objekt, um zu prüfen, ob eine Revision zu einer Gruppe gehört. Wenn das`Group` Eigentum ist`null`, bedeutet dies, dass die Revision zu keiner Gruppe gehört.
 

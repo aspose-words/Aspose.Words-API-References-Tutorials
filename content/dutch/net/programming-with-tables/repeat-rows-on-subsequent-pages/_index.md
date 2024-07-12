@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Voeg de eerste cel van de eerste rij in
+//Voeg de eerste cel van de eerste rij in
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Hier gebruiken we de documentbouwer om een tabel te bouwen met twee koprijen en meerdere gegevensrijen. De`RowFormat.HeadingFormat`parameters worden gebruikt om koprijen te markeren die op volgende pagina's moeten worden herhaald.
+ Hier gebruiken we de documentbouwer om een tabel te bouwen met twee koprijen en meerdere gegevensrijen. De`RowFormat.HeadingFormat` parameters worden gebruikt om koprijen te markeren die op volgende pagina's moeten worden herhaald.
 
 ## Stap 4: Het gewijzigde document opslaan
 Eindelijk VS

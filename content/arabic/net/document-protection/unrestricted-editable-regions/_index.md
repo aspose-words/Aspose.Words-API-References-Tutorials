@@ -2,120 +2,133 @@
 title: مناطق غير مقيدة قابلة للتحرير في مستند Word
 linktitle: مناطق غير مقيدة قابلة للتحرير في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إنشاء مناطق غير مقيدة قابلة للتحرير في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إنشاء مناطق غير مقيدة قابلة للتحرير في مستند Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل الشامل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/document-protection/unrestricted-editable-regions/
 ---
-في هذا البرنامج التعليمي، سنرشدك خلال خطوات استخدام ميزة المناطق القابلة للتحرير غير المقيدة في Aspose.Words for .NET. تتيح لك هذه الميزة تحديد المناطق في مستند Word حيث يمكن تحرير المحتوى دون قيود، حتى لو كان باقي المستند للقراءة فقط. اتبع الخطوات التالية:
+## مقدمة
 
-## الخطوة 1: تحميل المستند وإعداد الحماية
+إذا كنت تريد حماية مستند Word ولكنك لا تزال تسمح بتعديل أجزاء معينة، فأنت في المكان الصحيح! سيرشدك هذا الدليل خلال عملية إعداد مناطق غير مقيدة قابلة للتحرير في مستند Word باستخدام Aspose.Words for .NET. سنغطي كل شيء بدءًا من المتطلبات الأساسية وحتى الخطوات التفصيلية، مما يضمن حصولك على تجربة سلسة. مستعد؟ دعونا الغوص في!
 
-ابدأ بتحميل المستند الموجود:
+## المتطلبات الأساسية
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-قم بحماية المستند عن طريق تعيين نوع الحماية للقراءة فقط وكلمة المرور
+1.  Aspose.Words for .NET: إذا لم تكن قد قمت بذلك بالفعل، فقم بتنزيله[هنا](https://releases.aspose.com/words/net/).
+2.  ترخيص Aspose صالح: يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio: أي إصدار حديث يجب أن يعمل بشكل جيد.
+4. المعرفة الأساسية بـ C# و.NET: سيساعدك هذا على متابعة التعليمات البرمجية.
 
-## الخطوة 2: إنشاء منطقة قابلة للتحرير
+الآن بعد أن انتهيت من كل شيء، دعنا ننتقل إلى الجزء الممتع!
 
-ابدأ بإنشاء منطقة قابلة للتحرير باستخدام كائني EditableRangeStart وEditableRangeEnd:
+## استيراد مساحات الأسماء
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// يتم إنشاء كائن EditableRange لـ EditableRangeStart الذي قمنا بإنشائه للتو.
-EditableRange editableRange = edRangeStart.EditableRange;
-
-// ضع شيئًا داخل النطاق القابل للتحرير.
-builder.Writeln("Paragraph inside first editable range");
-
-// يتم تشكيل النطاق القابل للتحرير بشكل جيد إذا كان له بداية ونهاية.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## الخطوة 3: إضافة محتوى خارج المناطق القابلة للتحرير
-
-يمكنك إضافة محتوى خارج المناطق القابلة للتحرير، والتي ستظل للقراءة فقط:
+لبدء استخدام Aspose.Words لـ .NET، ستحتاج إلى استيراد مساحات الأسماء الضرورية. وإليك كيف يمكنك القيام بذلك:
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## الخطوة 4: احفظ المستند
+## الخطوة 1: إعداد مشروعك
 
-وأخيرا، احفظ الوثيقة المعدلة:
+أول الأشياء أولاً، لنقم بإنشاء مشروع C# جديد في Visual Studio.
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. افتح Visual Studio: ابدأ بفتح Visual Studio وإنشاء مشروع تطبيق Console جديد.
+2. تثبيت Aspose.Words: استخدم NuGet Package Manager لتثبيت Aspose.Words. يمكنك القيام بذلك عن طريق تشغيل الأمر التالي في وحدة تحكم إدارة الحزم:
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بمساحات قابلة للتحرير.
+## الخطوة 2: تحميل المستند
 
-### مثال على التعليمات البرمجية المصدر للمناطق غير المقيدة القابلة للتحرير باستخدام Aspose.Words لـ .NET
+الآن، لنقم بتحميل المستند الذي تريد حمايته. تأكد من أن لديك مستند Word جاهزًا في الدليل الخاص بك.
 
-فيما يلي كود المصدر الكامل للمناطق غير المقيدة القابلة للتحرير باستخدام Aspose.Words for .NET:
+1. تعيين دليل المستندات: حدد المسار إلى دليل المستندات الخاص بك.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  قم بتحميل المستند: استخدم`Document` فئة لتحميل مستند Word الخاص بك.
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-// المسار إلى دليل المستندات.
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-// قم بتحميل مستند وجعله للقراءة فقط.
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## الخطوة 3: حماية الوثيقة
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+بعد ذلك، سنقوم بتعيين المستند للقراءة فقط. سيضمن ذلك عدم إمكانية إجراء أي تغييرات بدون كلمة المرور.
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1.  تهيئة DocumentBuilder: إنشاء مثيل لـ`DocumentBuilder` لإجراء تغييرات على المستند.
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. ضبط مستوى الحماية: قم بحماية المستند باستخدام كلمة مرور.
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. إضافة نص للقراءة فقط: أدخل النص الذي سيكون للقراءة فقط.
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-// ابدأ نطاقًا قابلاً للتحرير.
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// يتم إنشاء كائن EditableRange لـ EditableRangeStart الذي قمنا بإنشائه للتو.
-EditableRange editableRange = edRangeStart.EditableRange;
+## الخطوة 4: إنشاء نطاقات قابلة للتحرير
 
-// ضع شيئًا داخل النطاق القابل للتحرير.
-builder.Writeln("Paragraph inside first editable range");
+هنا يحدث السحر. سنقوم بإنشاء أقسام في المستند يمكن تحريرها على الرغم من الحماية الشاملة للقراءة فقط.
 
-// يتم تشكيل النطاق القابل للتحرير بشكل جيد إذا كان له بداية ونهاية.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. بدء النطاق القابل للتحرير: حدد بداية النطاق القابل للتحرير.
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2.  إنشاء كائن نطاق قابل للتحرير: An`EditableRange` سيتم إنشاء الكائن تلقائيًا.
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. إدراج نص قابل للتحرير: أضف نصًا داخل النطاق القابل للتحرير.
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## الخطوة 5: إغلاق النطاق القابل للتحرير
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+النطاق القابل للتحرير غير مكتمل بدون نهاية. دعونا نضيف ذلك بعد ذلك.
 
-```
-باتباع هذه الخطوات، يمكنك بسهولة إنشاء مناطق غير مقيدة قابلة للتحرير في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+1. نهاية النطاق القابل للتحرير: حدد نهاية النطاق القابل للتحرير.
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. إضافة نص للقراءة فقط خارج النطاق: أدخل نصًا خارج النطاق القابل للتحرير لتوضيح الحماية.
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## الخطوة 6: حفظ المستند
+
+أخيرًا، لنحفظ المستند بالحماية المطبقة والمناطق القابلة للتحرير.
+
+1.  احفظ المستند: استخدم`Save` طريقة لحفظ المستند المعدل.
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمنا كيفية إنشاء مناطق غير مقيدة قابلة للتحرير في مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات المتوفرة، يمكنك تحديد مناطق محددة داخل المستند حيث يمكن للمستخدمين تحرير المحتوى بحرية مع الاحتفاظ ببقية المستند للقراءة فقط. يوفر Aspose.Words for .NET ميزات قوية لحماية المستندات وتخصيصها، مما يوفر لك التحكم في إمكانيات التحرير لمستندات Word الخاصة بك.
 
-### الأسئلة الشائعة للمناطق غير المقيدة القابلة للتحرير في مستند Word
+وهناك لديك! لقد نجحت في إنشاء مناطق غير مقيدة قابلة للتحرير في مستند Word باستخدام Aspose.Words for .NET. تعد هذه الميزة مفيدة بشكل لا يصدق للبيئات التعاونية حيث يجب أن تظل أجزاء معينة من المستند دون تغيير بينما يمكن تحرير أجزاء أخرى. 
 
-#### س: ما هي المناطق غير المقيدة القابلة للتحرير في Aspose.Words لـ .NET؟
+ قم بتجربة سيناريوهات أكثر تعقيدًا ومستويات حماية مختلفة لتحقيق أقصى استفادة من Aspose.Words. إذا كانت لديك أي أسئلة أو واجهت مشاكل، فلا تتردد في مراجعة[توثيق](https://reference.aspose.com/words/net/) أو الوصول إلى[يدعم](https://forum.aspose.com/c/words/8).
 
-ج: المناطق غير المقيدة القابلة للتحرير في Aspose.Words لـ .NET هي مناطق داخل مستند Word حيث يمكن تحرير المحتوى دون أي قيود، حتى لو تم تعيين بقية المستند للقراءة فقط. توفر هذه المناطق طريقة لتحديد أجزاء معينة من المستند يمكن للمستخدمين تعديلها مع الحفاظ على الحماية الشاملة للمستند.
+## الأسئلة الشائعة
 
-#### س: كيف يمكنني إنشاء مناطق غير مقيدة قابلة للتحرير باستخدام Aspose.Words for .NET؟
+### هل يمكنني الحصول على مناطق متعددة قابلة للتحرير في مستند واحد؟
+نعم، يمكنك إنشاء مناطق متعددة قابلة للتحرير عن طريق بدء وإنهاء النطاقات القابلة للتحرير في أجزاء مختلفة من المستند.
 
-ج: لإنشاء مناطق غير مقيدة قابلة للتحرير في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك اتباع الخطوات التالية:
-1.  قم بتحميل المستند الموجود باستخدام`Document` فصل.
-2.  اضبط حماية المستند على القراءة فقط باستخدام`Protect` طريقة`Document` هدف.
-3.  استخدم ال`DocumentBuilder` فئة لإنشاء نطاق قابل للتحرير عن طريق إضافة`EditableRangeStart` كائن و`EditableRangeEnd` هدف.
-4.  أضف محتوى ضمن النطاق القابل للتحرير باستخدام`DocumentBuilder`.
-5.  احفظ المستند المعدل باستخدام`Save` طريقة`Document` هدف.
+### ما هي أنواع الحماية الأخرى المتوفرة في Aspose.Words؟
+يدعم Aspose.Words أنواع الحماية المختلفة مثلallowOnlyComments وAllowOnlyFormFields وNoProtection.
 
-#### س: هل يمكنني الحصول على مناطق متعددة غير مقيدة قابلة للتحرير في مستند Word؟
+### هل من الممكن إزالة الحماية من المستند؟
+ نعم، يمكنك إزالة الحماية باستخدام`Unprotect` الطريقة وتوفير كلمة المرور الصحيحة.
 
-ج: نعم، يمكن أن يكون لديك مناطق متعددة غير مقيدة قابلة للتحرير في مستند Word. لتحقيق ذلك، يمكنك إنشاء مجموعات متعددة من`EditableRangeStart` و`EditableRangeEnd` الكائنات باستخدام`DocumentBuilder` فصل. ستحدد كل مجموعة من الكائنات منطقة منفصلة قابلة للتحرير حيث يمكن للمستخدمين تعديل المحتوى دون أي قيود.
+### هل يمكنني تحديد كلمات مرور مختلفة لأقسام مختلفة؟
+لا، تطبق الحماية على مستوى المستند كلمة مرور واحدة للمستند بأكمله.
 
-#### س: هل يمكنني دمج المناطق القابلة للتحرير داخل بعضها البعض؟
-
- ج: لا، لا يمكنك دمج المناطق القابلة للتحرير داخل بعضها البعض باستخدام Aspose.Words لـ .NET. كل منطقة قابلة للتحرير محددة بواسطة`EditableRangeStart` و`EditableRangeEnd` يجب أن يكون الزوج مستقلاً وغير متداخل أو متداخل في منطقة أخرى قابلة للتحرير. المناطق المتداخلة القابلة للتحرير غير مدعومة.
-
-#### س: هل يمكنني إزالة الحماية للقراءة فقط من المستند داخل منطقة قابلة للتحرير؟
-
-ج: لا، لا يمكنك إزالة الحماية للقراءة فقط من المستند داخل منطقة قابلة للتحرير. يتم تطبيق حماية القراءة فقط على المستند بأكمله، ولا يمكن إزالتها بشكل انتقائي داخل مناطق محددة قابلة للتحرير. الغرض من المناطق القابلة للتحرير هو السماح بتعديل المحتوى مع الاحتفاظ بالمستند الإجمالي للقراءة فقط.
+### كيف يمكنني التقدم بطلب للحصول على ترخيص Aspose.Words؟
+يمكنك تطبيق ترخيص عن طريق تحميله من ملف أو دفق. تحقق من الوثائق لمعرفة الخطوات التفصيلية.

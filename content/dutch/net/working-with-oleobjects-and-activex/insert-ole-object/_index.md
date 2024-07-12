@@ -55,9 +55,9 @@ Dit is een compleet codevoorbeeld voor het invoegen van een OLE-object met Aspos
 
 ## Conclusie
 
-Concluderend: het invoegen van OLE-objecten in een Word-document is een krachtige functie die wordt aangeboden door Aspose.Words voor .NET. Met behulp van deze bibliotheek kunt u eenvoudig OLE-objecten, zoals HTML-bestanden, Excel-spreadsheets, PowerPoint-presentaties, enz., in uw Word-documenten insluiten.
+Concluderend: het invoegen van OLE-objecten in een Word-document is een krachtige functie die wordt aangeboden door Aspose.Words voor .NET. Met deze bibliotheek kunt u eenvoudig OLE-objecten, zoals HTML-bestanden, Excel-spreadsheets, PowerPoint-presentaties, enz., in uw Word-documenten insluiten.
 
-In dit artikel hebben we een stapsgewijze handleiding doorlopen om de broncode in C# uit te leggen, waarin wordt geïllustreerd hoe u een OLE-object in een Word-document kunt invoegen. We hebben de nodige referenties behandeld, een nieuw document en een documentgenerator gemaakt, en de stappen om een OLE-object in te voegen en het document op te slaan.
+In dit artikel hebben we een stapsgewijze handleiding doorlopen om de broncode in C# uit te leggen, waarin wordt geïllustreerd hoe u een OLE-object in een Word-document kunt invoegen. We hebben de nodige referenties besproken, een nieuw document en een documentgenerator gemaakt, en de stappen om een OLE-object in te voegen en het document op te slaan.
 
 ### Veelgestelde vragen over het invoegen van een OLE-object in een Word-document
 

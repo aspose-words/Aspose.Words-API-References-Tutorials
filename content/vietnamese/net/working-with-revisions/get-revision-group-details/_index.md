@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Câu hỏi: Làm cách nào để có được thông tin chi tiết về nhóm sửa đổi trong Aspose.Words cho .NET?
 
-Đáp: Xem qua các bản sửa đổi của tài liệu bằng cách sử dụng vòng lặp và truy cập các thuộc tính của từng bản sửa đổi để có được thông tin chi tiết bạn muốn. Bạn có thể dùng`RevisionType`, `Author`, `DateTime` Và`ParentNode` Properties để lấy loại sửa đổi, tác giả, ngày tháng và văn bản sửa đổi tương ứng.
+Đáp: Xem qua các bản sửa đổi của tài liệu bằng cách sử dụng vòng lặp và truy cập các thuộc tính của từng bản sửa đổi để có được thông tin chi tiết bạn muốn. Bạn có thể dùng`RevisionType`, `Author`, `DateTime`Và`ParentNode` Properties để lấy loại sửa đổi, tác giả, ngày tháng và văn bản sửa đổi tương ứng.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

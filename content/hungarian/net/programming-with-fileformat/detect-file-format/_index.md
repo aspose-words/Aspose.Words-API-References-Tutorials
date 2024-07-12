@@ -14,7 +14,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurált
 
 ## 1. lépés: Adja meg a könyvtárakat
 
- A kezdéshez meg kell határoznia azokat a könyvtárakat, amelyekben a fájlokat tárolni kívánja, formátumuk szerint. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával. Létrehozzuk a "Támogatott", "Ismeretlen", "Titkosított" és "Pre97" könyvtárakat, ha még nem léteznek.
+ A kezdéshez meg kell határoznia azokat a könyvtárakat, amelyekben a fájlokat tárolni kívánja, formátumuk szerint. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` dokumentumkönyvtár tényleges elérési útjával. Létrehozzuk a "Támogatott", "Ismeretlen", "Titkosított" és "Pre97" könyvtárakat, ha még nem léteznek.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## 2. lépés: Tallózás a fájlok között
 
- Ezután használjuk a`GetFiles` módszere a`Directory` osztályba, hogy megkapja a megadott könyvtárban lévő fájlok listáját. Használjuk továbbá a`Where`záradék egy adott "Sérült dokumentum.docx" nevű fájl kizárására.
+ Ezután használjuk a`GetFiles` módszere a`Directory` osztályba, hogy megkapja a megadott könyvtárban lévő fájlok listáját. Használjuk továbbá a`Where` záradék egy adott "Sérült dokumentum.docx" nevű fájl kizárására.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ Ez minden ! Sikeresen észlelte a különböző dokumentumfájlok formátumát a
 
 #### Hogyan lehet felismerni egy dokumentumfájl formátumát az Aspose.Words for .NET használatával?
 
- A dokumentumfájl formátumának észleléséhez az Aspose.Words for .NET használatával, kövesse az oktatóanyagban található lépéseket. Használni a`DetectFileFormat` módszere a`FileFormatUtil`osztály lehetővé teszi a dokumentumfájl formátumának észlelését. Ez lehetővé teszi annak meghatározását, hogy Microsoft Word 97-2003 dokumentumról, sablonról, Office Open XML WordprocessingML dokumentumról vagy más támogatott formátumról van-e szó. Az oktatóanyagban található kód végigvezeti a funkció megvalósításán.
+ A dokumentumfájl formátumának észleléséhez az Aspose.Words for .NET használatával, kövesse az oktatóanyagban található lépéseket. Használni a`DetectFileFormat` módszere a`FileFormatUtil` osztály lehetővé teszi a dokumentumfájl formátumának észlelését. Ez lehetővé teszi annak meghatározását, hogy Microsoft Word 97-2003 dokumentumról, sablonról, Office Open XML WordprocessingML dokumentumról vagy más támogatott formátumról van-e szó. Az oktatóanyagban található kód végigvezeti a funkció megvalósításán.
 
 #### Milyen dokumentumformátumokat támogat az Aspose.Words for .NET?
 

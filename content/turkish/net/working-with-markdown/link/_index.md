@@ -43,7 +43,7 @@ Tebrikler! Artık Aspose.Words for .NET ile bağlantılar özelliğini nasıl ku
 
 #### S: Aspose.Words'te bir URL'ye nasıl bağlantı verebilirim?
 
- C: Aspose.Words'te bir URL adresine bağlantı vermek için`<a>` ile etiketleyin`href` URL adresini içeren özellik. Örneğin şunları kullanabilirsiniz:`<a href="https://www.aspose.com">Click Here</a>` "Burayı tıklayın" görüntü metniyle birlikte "https://www.example.com" URL'sine köprü oluşturmak için.
+ C: Aspose.Words'te bir URL adresine bağlantı vermek için`<a>` ile etiketleyin`href` URL adresini içeren özellik. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com">Click Here</a>` "Burayı tıklayın" görüntü metniyle birlikte "https://www.example.com" URL'sine köprü oluşturmak için.
 
 #### S: Aspose.Words'te dahili bir yer imine bağlantı vermek mümkün mü?
 

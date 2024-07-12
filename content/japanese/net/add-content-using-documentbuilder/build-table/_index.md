@@ -122,7 +122,7 @@ doc.Save("YourDirectoryPath/AddContentUsingDocumentBuilder.BuildTable.docx");
 ## よくある質問
 
 ### Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、Word 文書をプログラムで操作するための強力なライブラリです。Microsoft Word を必要とせずに、文書を作成、編集、操作できます。
+Aspose.Words for .NET は、Word 文書をプログラムで操作するための強力なライブラリです。Microsoft Word を必要とせずに文書を作成、編集、操作できます。
 
 ### Aspose.Words for .NET をインストールするにはどうすればよいですか?
 あなたはできる[Aspose.Words for .NET をここからダウンロード](https://releases.aspose.com/words/net/)提供されているインストール手順に従って、開発環境でセットアップしてください。

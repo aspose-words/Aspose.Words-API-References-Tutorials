@@ -18,7 +18,7 @@ A dokumentumok összehasonlítása magában foglalja két dokumentum elemzését
 
 ## Alapvető dokumentumok összehasonlítása
 
- Kezdjük a dokumentum-összehasonlítás alapjaival. Két dokumentumot fogunk használni,`docA` és`docB`, és hasonlítsa össze őket.
+ Kezdjük a dokumentum-összehasonlítás alapjaival. Két dokumentumot fogunk használni,`docA`és`docB`, és hasonlítsa össze őket.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-Ebben a kódrészletben két dokumentumot töltünk be,`docA` és`docB` , majd használja a`compare` összehasonlítási módszer. A szerzőt "felhasználóként" adjuk meg, és megtörténik az összehasonlítás. Végül ellenőrizzük, hogy vannak-e revíziók, jelezve az eltéréseket a dokumentumok között.
+Ebben a kódrészletben két dokumentumot töltünk be,`docA`és`docB` , majd használja a`compare` összehasonlítási módszer. A szerzőt "felhasználóként" adjuk meg, és megtörténik az összehasonlítás. Végül ellenőrizzük, hogy vannak-e revíziók, jelezve az eltéréseket a dokumentumok között.
 
 ## Összehasonlítás testreszabása opciókkal
 

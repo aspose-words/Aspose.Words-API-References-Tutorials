@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### س: كيف يمكنني تحديد البيانات المصدر لحقل العنوان البريدي في Aspose.Words for .NET؟
 
- ج: لتحديد البيانات المصدر لحقل العنوان البريدي في Aspose.Words لـ .NET، يمكنك استخدام`FieldAddressBlock.StartAddress` و`FieldAddressBlock.EndAddress` ملكيات. تُستخدم هذه الخصائص لتحديد نطاقات العناوين في مصدر البيانات الخارجي، مثل ملف CSV وقاعدة البيانات وما إلى ذلك.
+ ج: لتحديد البيانات المصدر لحقل العنوان البريدي في Aspose.Words لـ .NET، يمكنك استخدام`FieldAddressBlock.StartAddress`و`FieldAddressBlock.EndAddress` ملكيات. تُستخدم هذه الخصائص لتحديد نطاقات العناوين في مصدر البيانات الخارجي، مثل ملف CSV وقاعدة البيانات وما إلى ذلك.
 
 #### س: هل يمكنني تضمين عناصر اختيارية في حقل العنوان البريدي باستخدام Aspose.Words for .NET؟
 

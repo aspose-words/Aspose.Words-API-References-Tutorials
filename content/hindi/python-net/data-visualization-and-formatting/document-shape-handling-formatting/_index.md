@@ -75,7 +75,7 @@ image.text_wrapping.style = aw.drawing.TextWrappingStyle.TIGHT
 image.text_wrapping.side = aw.drawing.TextWrappingSide.BOTH
 ```
 
-## उन्नत सुविधाएँ शामिल करना
+## उन्नत सुविधाओं को शामिल करना
 
 Aspose.Words for Python आपके दस्तावेज़ लेआउट को और बेहतर बनाने के लिए उन्नत सुविधाएँ प्रदान करता है। इनमें टेबल, चार्ट, हाइपरलिंक और बहुत कुछ जोड़ना शामिल है। संभावनाओं की एक विस्तृत सूची के लिए दस्तावेज़ देखें।
 

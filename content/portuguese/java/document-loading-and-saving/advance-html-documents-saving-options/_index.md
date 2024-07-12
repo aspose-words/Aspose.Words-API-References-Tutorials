@@ -134,4 +134,4 @@ Aqui estão algumas perguntas frequentes sobre como trabalhar com Aspose.Words p
 Sim, você pode otimizar a saída HTML para exibição na web configurando opções como exportar fontes como Base64 e converter metarquivos para SVG.
 
 ### P4: Há alguma limitação ao converter documentos complexos do Word em HTML?
-Embora Aspose.Words for Java forneça recursos de conversão poderosos, documentos Word complexos com layouts intrincados podem exigir pós-processamento adicional para obter a saída HTML desejada.
+Embora o Aspose.Words for Java forneça recursos de conversão poderosos, documentos complexos do Word com layouts complexos podem exigir pós-processamento adicional para obter a saída HTML desejada.

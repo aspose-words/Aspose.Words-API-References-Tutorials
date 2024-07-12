@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Tento kód vytvoří instanci`Document` a`DocumentBuilder` k vytvoření dokumentu. Vkládá a`<svg>` značka obsahující a`<polygon>` prvek s atributy pro definování tvaru a stylu obrázku SVG.
+ Tento kód vytvoří instanci`Document`a`DocumentBuilder` k vytvoření dokumentu. Vkládá a`<svg>` značka obsahující a`<polygon>` prvek s atributy pro definování tvaru a stylu obrázku SVG.
 
 ## Krok 3: Nastavte možnosti uložení HTML
 

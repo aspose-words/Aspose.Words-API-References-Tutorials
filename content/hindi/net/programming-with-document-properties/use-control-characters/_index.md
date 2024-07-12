@@ -20,7 +20,7 @@ url: /hi/net/programming-with-document-properties/use-control-characters/
 
 ```csharp
 const string text = "test\r";
-// नियंत्रण वर्ण "\r" को "\r\n" से बदलें।
+// नियंत्रण वर्ण "\r" को "\r\n" से बदलें.
 string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 ```
 

@@ -16,7 +16,7 @@ url: /ja/java/document-conversion-and-export/using-barcode-generation/
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## 必要なクラスをインポートする
@@ -62,7 +62,7 @@ doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 
 ## 結論
 
-おめでとうございます。Aspose.Words for Java を使用してカスタム バーコード イメージを生成する方法を学習しました。この多目的ライブラリは、ドキュメントの自動化と操作の可能性の世界を開きます。
+おめでとうございます。Aspose.Words for Java を使用してカスタム バーコード イメージを生成する方法を学習しました。この多目的ライブラリは、ドキュメントの自動化と操作の可能性の世界を切り開きます。
 
 ## よくある質問
 

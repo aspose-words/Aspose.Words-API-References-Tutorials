@@ -19,7 +19,7 @@ Başlamadan önce geliştirme ortamınızı Aspose.Words for .NET ile çalışac
 
 ## Adım 3: Gerekli Montajları Ekleyin
 
-Aspose.Words for .NET'in Granülariteyi Karşılaştır özelliğini kullanmak için gerekli derlemeleri projenize eklemeniz gerekir. Projenizde Aspose.Words'e doğru referansların bulunduğundan emin olun.
+Aspose.Words for .NET'in Granülerliği Karşılaştır özelliğini kullanmak için gerekli derlemeleri projenize eklemeniz gerekir. Projenizde Aspose.Words'e doğru referansların bulunduğundan emin olun.
 
 ```csharp
 using Aspose.Words;

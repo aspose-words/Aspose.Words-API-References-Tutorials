@@ -2,7 +2,7 @@
 title: Mostrar Ocultar contenido marcado en un documento de Word
 linktitle: Mostrar Ocultar contenido marcado en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a mostrar u ocultar dinámicamente contenido marcado en documentos de Word usando Aspose.Words para .NET con esta guía completa paso a paso.
+description: Aprenda a mostrar u ocultar dinámicamente contenido marcado como favorito en documentos de Word usando Aspose.Words para .NET con esta guía completa paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/show-hide-bookmarked-content/
@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Aquí, agregamos algo de texto antes y después del contenido marcado. El`StartBookmark` y`EndBookmark` Los métodos definen los límites del marcador.
+ Aquí, agregamos algo de texto antes y después del contenido marcado. El`StartBookmark`y`EndBookmark` Los métodos definen los límites del marcador.
 
 ## Paso 3: insertar un campo condicional
 

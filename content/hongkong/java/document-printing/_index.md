@@ -29,7 +29,7 @@ url: /zh-hant/java/document-printing/
 ### [使用頁面設定列印文檔](./printing-documents-page-setup/)
 了解如何使用 Aspose.Words for Java 以精確的頁面設定列印文件。自訂版面、紙張尺寸等。
 ### [定製文件列印](./customized-document-printing/)
-了解如何使用 Aspose.Words for Java 輕鬆實現自訂文件列印。本逐步指南涵蓋了從設定到進階自訂的所有內容。
+了解如何使用 Aspose.Words for Java 輕鬆實作自訂文件列印。本逐步指南涵蓋了從設定到進階自訂的所有內容。
 ### [列印特定文件頁面](./printing-specific-document-pages/)
 了解如何使用 Aspose.Words for Java 列印 Word 文件中的特定頁面。 Java 開發人員的逐步指南。
 ### [使用 PrintDialog 列印文檔](./print-document-printdialog/)

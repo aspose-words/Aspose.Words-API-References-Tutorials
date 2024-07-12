@@ -7,7 +7,7 @@ type: docs
 weight: 1550
 url: /zh/net/programming-with-officemath/
 ---
-Aspose.Words for .NET 教程“使用 OfficeMath 进行文字处理”将指导您使用 OfficeMath 功能来操作和格式化 Word 文档中的数学方程式。您将学习如何创建、修改和删除数学方程式，以及如何应用特定的样式和格式。这些教程将让您深入了解如何在 Word 文档中操作数学方程式。
+Aspose.Words for .NET 教程“使用 OfficeMath 进行文字处理”将指导您使用 OfficeMath 功能来操作和格式化 Word 文档中的数学方程式。您将学习如何创建、修改和删除数学方程式，以及如何应用特定的样式和格式。这些教程将帮助您深入了解如何在 Word 文档中操作数学方程式。
 
  ## 教程
 | 标题 | 描述 |

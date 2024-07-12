@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## 2단계: 각주 및 미주 위치 설정
 
- 다음으로`FootnoteOptions` 그리고`EndnoteOptions`각주와 미주의 위치를 설정하려면 문서의 속성을 사용하세요. 이 예에서는 각주 위치를 텍스트 아래로 설정하고 미주의 위치를 섹션 끝으로 설정합니다.
+ 다음으로`FootnoteOptions`그리고`EndnoteOptions`각주와 미주의 위치를 설정하려면 문서의 속성을 사용하세요. 이 예에서는 각주 위치를 텍스트 아래로 설정하고 미주의 위치를 섹션 끝으로 설정합니다.
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

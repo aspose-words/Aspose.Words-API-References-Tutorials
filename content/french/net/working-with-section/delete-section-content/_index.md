@@ -61,7 +61,7 @@ Dans ce didacticiel, nous avons vu comment supprimer le contenu d'une section sp
 
 #### Q : Comment définir le répertoire de documents dans Aspose.Words pour .NET ?
 
- R : Pour définir le chemin d'accès au répertoire contenant vos documents, vous devez remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié. Voici comment procéder :
+ : Pour définir le chemin d'accès au répertoire contenant vos documents, vous devez remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié. Voici comment procéder :
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents

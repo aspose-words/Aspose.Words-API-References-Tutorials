@@ -75,7 +75,7 @@ Neste artigo, exploramos como imprimir documentos com configuração de página 
 
 ### Como posso alterar o tamanho do papel do meu documento?
 
- Para alterar o tamanho do papel do seu documento, use o`setPageWidth` e`setPageHeight` métodos do`PageSetup` classe e especifique as dimensões desejadas em pontos.
+ Para alterar o tamanho do papel do seu documento, use o`setPageWidth`e`setPageHeight` métodos do`PageSetup` classe e especifique as dimensões desejadas em pontos.
 
 ### Posso imprimir várias cópias de um documento?
 

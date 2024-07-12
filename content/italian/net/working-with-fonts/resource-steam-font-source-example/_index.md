@@ -99,7 +99,7 @@ Ora hai imparato il processo di utilizzo di un flusso di risorse come origine di
 
 ###  Q3: Posso gestire altri tipi di avvisi con`IWarningCallback`?
 
- Sì, il`IWarningCallback` l'interfaccia può gestire vari tipi di avvisi, non solo la sostituzione dei caratteri.
+ Sì, il`IWarningCallback`l'interfaccia può gestire vari tipi di avvisi, non solo la sostituzione dei caratteri.
 
 ### Q4: Dove posso trovare supporto per Aspose.Words?
 

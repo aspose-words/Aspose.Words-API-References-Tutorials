@@ -74,7 +74,7 @@ Ebben az oktatóanyagban azt láthattuk, hogyan lehet index alapján elérni egy
 
 #### K: Hogyan állíthat be dokumentumkönyvtárat az Aspose.Words for .NET-ben?
 
- V: A dokumentumokat tartalmazó könyvtár elérési útjának beállításához le kell cserélnie`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal. Íme, hogyan kell csinálni:
+V: A dokumentumokat tartalmazó könyvtár elérési útjának beállításához le kell cserélnie`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal. Íme, hogyan kell csinálni:
 
 ```csharp
 // A dokumentumkönyvtár elérési útja

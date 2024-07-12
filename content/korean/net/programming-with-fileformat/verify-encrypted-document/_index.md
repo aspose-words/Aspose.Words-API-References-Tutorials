@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## 3단계: 문서가 암호화되었는지 확인
 
- 우리는`IsEncrypted` 의 재산`FileFormatInfo`문서가 암호화되었는지 확인하는 개체입니다. 이 속성은 다음을 반환합니다.`true` 문서가 암호화되어 있으면 그렇지 않으면 반환됩니다.`false`. 콘솔에 결과를 표시합니다.
+ 우리는`IsEncrypted` 의 재산`FileFormatInfo` 문서가 암호화되었는지 확인하는 개체입니다. 이 속성은 다음을 반환합니다.`true` 문서가 암호화되어 있으면 그렇지 않으면 반환됩니다.`false`. 콘솔에 결과를 표시합니다.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### Q: 파일 형식을 감지하는 방법은 무엇입니까?
- 당신은 사용할 수 있습니다`DetectFileFormat` 의 방법`FileFormatUtil`파일 형식 정보를 감지하는 클래스입니다. 다음 예에서는 암호화된 문서의 이름이 "Encrypted.docx"이고 지정된 문서 디렉터리에 있다고 가정합니다.
+ 당신은 사용할 수 있습니다`DetectFileFormat` 의 방법`FileFormatUtil` 파일 형식 정보를 감지하는 클래스입니다. 다음 예에서는 암호화된 문서의 이름이 "Encrypted.docx"이고 지정된 문서 디렉터리에 있다고 가정합니다.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### Q: 문서가 암호화되었는지 어떻게 확인하나요?
- 당신은 사용할 수 있습니다`IsEncrypted` 의 재산`FileFormatInfo`문서가 암호화되었는지 확인하는 개체입니다. 이 속성은 다음을 반환합니다.`true` 문서가 암호화되어 있으면 그렇지 않으면 반환됩니다.`false`. 결과가 콘솔에 표시됩니다.
+ 당신은 사용할 수 있습니다`IsEncrypted` 의 재산`FileFormatInfo` 문서가 암호화되었는지 확인하는 개체입니다. 이 속성은 다음을 반환합니다.`true` 문서가 암호화되어 있으면 그렇지 않으면 반환됩니다.`false`. 결과가 콘솔에 표시됩니다.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

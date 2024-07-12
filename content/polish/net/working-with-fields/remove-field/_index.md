@@ -2,7 +2,7 @@
 title: Usuń pole
 linktitle: Usuń pole
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: tym przewodniku dowiesz się, jak usunąć określone pole w dokumencie za pomocą Aspose.Words dla .NET.
+description: W tym przewodniku dowiesz się, jak usunąć określone pole w dokumencie za pomocą Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/remove-field/
@@ -34,7 +34,7 @@ Field field = doc.Range.Fields[0];
 field. Remove();
 ```
 
-## Krok 4: Zapisanie dokumentu
+## Krok 4: Zapisywanie dokumentu
 
  Na koniec nazywamy`Save()` metoda zapisania zmodyfikowanego dokumentu.
 
@@ -65,7 +65,7 @@ Wykonaj poniższe kroki, aby usunąć określone pole w dokumencie za pomocą As
 
 #### P: Jak mogę usunąć pole w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
 
- Odp.: Aby usunąć pole w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz przeglądać pola w dokumencie za pomocą`FieldStart` klasę i użyj`FieldStart.Remove`metoda usunięcia pola.
+ Odp.: Aby usunąć pole w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz przeglądać pola w dokumencie za pomocą`FieldStart` klasę i użyj`FieldStart.Remove` metoda usunięcia pola.
 
 #### P: Czy za pomocą Aspose.Words dla .NET można usunąć tylko niektóre pola z dokumentu Word?
 

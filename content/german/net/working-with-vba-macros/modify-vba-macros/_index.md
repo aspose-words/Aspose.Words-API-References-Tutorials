@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## Schritt 3: Ändern des Makro-Quellcodes
- Wir werden nun den Quellcode des ersten Makros des VBA-Projekts ändern. Ersetzen Sie das`newSourceCode` Variable mit dem neuen Quellcode, den Sie verwenden möchten.
+Wir werden nun den Quellcode des ersten Makros des VBA-Projekts ändern. Ersetzen Sie das`newSourceCode` Variable mit dem neuen Quellcode, den Sie verwenden möchten.
 
 ```csharp
 const string newSourceCode = "Test change source code";
@@ -69,7 +69,7 @@ In diesem Tutorial haben wir gesehen, wie man VBA-Makros in einem Word-Dokument 
 
 #### F: Was ist ein VBA-Makro in einem Word-Dokument?
 
-A: Ein VBA-Makro in einem Word-Dokument ist ein Code, der ausgeführt werden kann, um bestimmte Aktionen im Dokument auszuführen. Mit VBA-Makros können Sie Aufgaben automatisieren, benutzerdefinierte Funktionen hinzufügen und mit Dokumentinhalten interagieren.
+A: Ein VBA-Makro in einem Word-Dokument ist ein Codeabschnitt, der ausgeführt werden kann, um bestimmte Aktionen im Dokument auszuführen. Mit VBA-Makros können Sie Aufgaben automatisieren, benutzerdefinierte Funktionen hinzufügen und mit Dokumentinhalten interagieren.
 
 #### F: Was sind die Voraussetzungen für die Bearbeitung von VBA-Makros in einem Word-Dokument?
 

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
 ```
 
- Nesta etapa, configuramos as opções de salvamento OOXML usando o`OoxmlSaveOptions` aula. Habilitamos a atualização automática da última propriedade de tempo salvo definindo`UpdateLastSavedTimeProperty` para`true`.
+ Nesta etapa, configuramos as opções de salvamento OOXML usando o`OoxmlSaveOptions` aula. Ativamos a atualização automática da última propriedade de tempo salvo definindo`UpdateLastSavedTimeProperty` para`true`.
 
 ## Passo 4: Salve o documento com propriedade atualizada
 

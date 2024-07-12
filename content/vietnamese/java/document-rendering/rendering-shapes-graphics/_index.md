@@ -139,7 +139,7 @@ Cải thiện tài liệu của bạn bằng hình dạng và đồ họa có th
 
 ### Làm cách nào tôi có thể thay đổi kích thước hình dạng trong tài liệu của mình?
 
- Để thay đổi kích thước một hình dạng, hãy sử dụng`setWidth` Và`setHeight` các phương thức trên đối tượng hình dạng. Ví dụ: để tạo hình có chiều rộng 150 pixel và chiều cao 75 pixel:
+ Để thay đổi kích thước một hình dạng, hãy sử dụng`setWidth`Và`setHeight` các phương thức trên đối tượng hình dạng. Ví dụ: để tạo hình có chiều rộng 150 pixel và chiều cao 75 pixel:
 
 ```java
 shape.setWidth(150);

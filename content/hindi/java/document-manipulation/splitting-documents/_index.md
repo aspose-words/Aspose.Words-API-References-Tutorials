@@ -29,7 +29,7 @@ doc.save("Your Directory Path" + "SplitDocument.ByHeadingsHtml.html", options);
 दस्तावेज़ों को विभाजित करने का दूसरा तरीका अनुभागों के आधार पर है। अनुभाग आम तौर पर दस्तावेज़ के अलग-अलग हिस्सों का प्रतिनिधित्व करते हैं, और अनुभागों के आधार पर विभाजन छोटे, अधिक प्रबंधनीय दस्तावेज़ बनाने के लिए उपयोगी हो सकता है।
 
 ```java
-// Java के लिए Aspose.Words का उपयोग करके दस्तावेज़ को अनुभागों द्वारा विभाजित करने के लिए Java कोड
+// Aspose.Words for Java का उपयोग करके दस्तावेज़ को अनुभागों में विभाजित करने के लिए जावा कोड
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
 HtmlSaveOptions options = new HtmlSaveOptions();
 options.setDocumentSplitCriteria(DocumentSplitCriteria.SECTION_BREAK);

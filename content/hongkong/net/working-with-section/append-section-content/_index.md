@@ -102,7 +102,7 @@ doc.Save("output.docx");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功操作了 Word 文件中的各個部分。本教程涵蓋了創建文件、添加部分以及操作其內容的基礎知識。使用 Aspose.Words，您可以執行更複雜的操作，因此請毫不猶豫地探索[API文件](https://reference.aspose.com/words/net/)以獲得更高級的功能。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功操作了 Word 文件中的各個部分。本教程涵蓋了創建文件、添加部分以及操作其內容的基礎知識。使用 Aspose.Words，您可以執行更複雜的操作，因此請毫不猶豫地探索[API文件](https://reference.aspose.com/words/net/)以獲得更高級的功能。
 
 ## 常見問題解答
 
@@ -112,11 +112,11 @@ Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員以�
 
 ### 2. 我可以免費使用Aspose.Words for .NET嗎？
 
-您可以使用 Aspose.Words for .NET 嘗試[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
+您可以嘗試使用 Aspose.Words for .NET[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
 
 ## 3. Aspose.Words for .NET 的主要特點是什麼？
 
- Aspose.Words for .NET 提供了廣泛的功能，包括文件建立、格式化、轉換和操作。您可以閱讀有關其功能的更多信息[API文件](https://reference.aspose.com/words/net/).
+Aspose.Words for .NET 提供了廣泛的功能，包括文件建立、格式化、轉換和操作。您可以閱讀有關其功能的更多信息[API文件](https://reference.aspose.com/words/net/).
 
 ## 4. 如何獲得 Aspose.Words for .NET 支援？
 

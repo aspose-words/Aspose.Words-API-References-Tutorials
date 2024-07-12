@@ -9,7 +9,7 @@ url: /it/net/programming-with-document-options-and-settings/
 ---
 I tutorial Aspose.Words per .NET "Elaborazione delle parole con opzioni e impostazioni del documento" guidano attraverso le varie funzionalità e tecniche per manipolare le opzioni e le impostazioni del documento in Aspose.Words per .NET. Questi tutorial ti aiutano a capire come personalizzare le impostazioni di caricamento, gestire i caratteri, i formati dei documenti, i modelli e altro ancora.
 
-I tutorial spiegano come personalizzare le opzioni di caricamento del documento. Imparerai come specificare parametri di caricamento come gestione dei caratteri, risoluzione dei collegamenti, ottimizzazione delle prestazioni, ecc. Queste opzioni ti consentono di controllare con precisione il comportamento di caricamento dei documenti e ottimizzare le prestazioni della tua applicazione.
+tutorial spiegano come personalizzare le opzioni di caricamento del documento. Imparerai come specificare parametri di caricamento come gestione dei caratteri, risoluzione dei collegamenti, ottimizzazione delle prestazioni, ecc. Queste opzioni ti consentono di controllare con precisione il comportamento di caricamento dei documenti e ottimizzare le prestazioni della tua applicazione.
 
  ## Tutorial
 | Titolo | Descrizione |

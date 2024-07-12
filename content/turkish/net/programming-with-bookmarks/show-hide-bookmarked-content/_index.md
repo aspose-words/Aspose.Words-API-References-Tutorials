@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Burada, yer imlerine eklenen içeriğin öncesine ve sonrasına bir miktar metin ekliyoruz.`StartBookmark` Ve`EndBookmark` yöntemler yer iminin sınırlarını tanımlar.
+ Burada, yer imlerine eklenen içeriğin öncesine ve sonrasına bir miktar metin ekliyoruz.`StartBookmark`Ve`EndBookmark` yöntemler yer iminin sınırlarını tanımlar.
 
 ## 3. Adım: Koşullu Alan Ekleme
 
@@ -146,7 +146,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 
 ### 3. Bir yer iminin diğer özelliklerini nasıl değiştirebilirim?
 
- Aspose.Words, bir yer iminin metni ve konumu gibi çeşitli özelliklerini değiştirmenize olanak sağlar. Bakın[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
+ Aspose.Words, bir yer iminin metni ve konumu gibi çeşitli özelliklerini değiştirmenize olanak tanır. Bakın[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
 
 ### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 

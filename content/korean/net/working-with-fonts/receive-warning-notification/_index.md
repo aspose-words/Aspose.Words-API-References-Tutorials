@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3단계: 페이지 레이아웃 업데이트
 
- 를 불러`UpdatePageLayout` 방법. 이렇게 하면 문서가 메모리에 렌더링되고 렌더링 중에 발생하는 모든 경고가 캡처됩니다.
+ 를 불러`UpdatePageLayout`방법. 이렇게 하면 문서가 메모리에 렌더링되고 렌더링 중에 발생하는 모든 경고가 캡처됩니다.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ###  Q3: 다른 유형의 경고를 처리할 수 있나요?`IWarningCallback`?
 
- 예,`IWarningCallback` 인터페이스는 글꼴 대체뿐만 아니라 다양한 유형의 경고를 처리할 수 있습니다.
+ 예,`IWarningCallback`인터페이스는 글꼴 대체뿐만 아니라 다양한 유형의 경고를 처리할 수 있습니다.
 
 ### Q4: Aspose.Words에 대한 지원은 어디서 찾을 수 있나요?
 

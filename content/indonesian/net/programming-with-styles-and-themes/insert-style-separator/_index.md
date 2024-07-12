@@ -106,7 +106,7 @@ Untuk menyiapkan lingkungan, Anda perlu memastikan bahwa Anda telah menginstal d
 
 #### Bagaimana cara menerapkan gaya berbeda ke bagian teks berbeda?
 
- Anda dapat menerapkan gaya berbeda ke bagian teks berbeda dengan mengatur`ParagraphFormat.StyleName` properti dari`DocumentBuilder`obyek. Sebelum menulis teks, Anda dapat mengatur nama gaya ke gaya yang diinginkan, dan teks berikutnya akan diformat sesuai.
+Anda dapat menerapkan gaya berbeda ke bagian teks berbeda dengan mengatur`ParagraphFormat.StyleName` properti dari`DocumentBuilder` obyek. Sebelum menulis teks, Anda dapat mengatur nama gaya ke gaya yang diinginkan, dan teks berikut akan diformat sesuai.
 
 #### Bisakah saya menyimpan dokumen dalam format berbeda?
 

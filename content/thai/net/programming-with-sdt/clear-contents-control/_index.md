@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสารและรับ StructuredDocumentTag
- โหลดเอกสาร Word โดยใช้ไฟล์`Document` Constructor โดยส่งเส้นทางไปยังเอกสารเป็นพารามิเตอร์ จากนั้นจึงดึงสิ่งที่ต้องการกลับมา`StructuredDocumentTag` จากเอกสาร ในตัวอย่างนี้ เราถือว่า SDT เป็นโหนดลูกแรกในเอกสาร
+ โหลดเอกสาร Word โดยใช้ไฟล์`Document` Constructor โดยส่งเส้นทางไปยังเอกสารเป็นพารามิเตอร์ จากนั้นจึงดึงสิ่งที่ต้องการกลับมา`StructuredDocumentTag`จากเอกสาร ในตัวอย่างนี้ เราถือว่า SDT เป็นโหนดลูกแรกในเอกสาร
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## ขั้นตอนที่ 4: บันทึกเอกสาร
- บันทึกเอกสารที่แก้ไขโดยใช้`Save`วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithSdt.ClearContentsControl.doc"
+ บันทึกเอกสารที่แก้ไขโดยใช้`Save` วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithSdt.ClearContentsControl.doc"
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

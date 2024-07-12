@@ -61,7 +61,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Qui utilizziamo il generatore di documenti per costruire la tabella passo dopo passo. Iniziamo chiamando`StartTable()` per inizializzare la tabella, quindi utilizzare`InsertCell()` per inserire celle e`Write()` per aggiungere contenuto a ciascuna cella. Usiamo anche`EndRow()` per terminare una riga e iniziare una nuova riga. Infine chiamiamo`EndTable()` per indicare che la costruzione della tabella è completa.
+ Qui utilizziamo il generatore di documenti per costruire la tabella passo dopo passo. Iniziamo chiamando`StartTable()` per inizializzare la tabella, quindi utilizzare`InsertCell()` per inserire celle e`Write()` per aggiungere contenuto a ciascuna cella. Usiamo anche`EndRow()` per terminare una riga e iniziare una nuova riga. Alla fine chiamiamo`EndTable()` per indicare che la costruzione della tabella è completa.
 
 ## Passaggio 4: salva il documento
 Infine, dobbiamo risparmiare

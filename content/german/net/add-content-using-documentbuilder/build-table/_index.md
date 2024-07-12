@@ -13,7 +13,7 @@ Hallo! Möchten Sie Tabellen programmgesteuert in Ihren Word-Dokumenten erstelle
 
 ## Voraussetzungen
 
-Bevor wir uns auf unser Tischbauabenteuer begeben, sollten wir sicherstellen, dass alles in Ordnung ist. Folgendes brauchen Sie:
+Bevor wir uns auf unser Tischbau-Abenteuer einlassen, sollten wir sicherstellen, dass alles in Ordnung ist. Folgendes brauchen Sie:
 
 - Visual Studio (oder eine andere C#-IDE)
 - .NET Framework (4.0 oder höher)

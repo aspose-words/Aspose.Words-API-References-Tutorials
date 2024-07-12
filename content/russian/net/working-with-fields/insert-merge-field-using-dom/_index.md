@@ -24,7 +24,7 @@ url: /ru/net/working-with-fields/insert-merge-field-using-dom/
 Прежде всего, давайте настроим новый проект в Visual Studio.
 
 1. **Open Visual Studio.**
-2. **Create a New Project:** Перейдите в Файл > Создать > Проект. Выберите консольное приложение C#.
+2. **Create a New Project:** Откройте «Файл» > «Создать» > «Проект». Выберите консольное приложение C#.
 3. **Name Your Project:** Дайте вашему проекту осмысленное имя и нажмите «Создать».
 
 ## Шаг 2. Установите Aspose.Words

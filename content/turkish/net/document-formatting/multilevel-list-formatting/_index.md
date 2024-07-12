@@ -125,7 +125,7 @@ Bu, güzel biçimlendirilmiş belgenizi çok düzeyli listelerle kaydeder.
  Evet, numaralandırmaya şunu kullanarak devam edebilirsiniz:`ListFormat.List` Mevcut bir listeye bağlanma özelliği.
 
 ### Girinti düzeyini dinamik olarak nasıl değiştiririm?
- Girinti düzeyini kullanarak dinamik olarak değiştirebilirsiniz.`ListIndent` Ve`ListOutdent` gerektiği gibi yöntemler.
+ Girinti düzeyini kullanarak dinamik olarak değiştirebilirsiniz.`ListIndent`Ve`ListOutdent` gerektiği gibi yöntemler.
 
 ### PDF gibi diğer belge formatlarında çok düzeyli listeler oluşturabilir miyim?
 Evet, Aspose.Words, formatı koruyarak belgelerin PDF dahil çeşitli formatlarda kaydedilmesini destekler.

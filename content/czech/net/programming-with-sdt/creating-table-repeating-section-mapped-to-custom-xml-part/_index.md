@@ -17,7 +17,7 @@ Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 - Základní znalost C# a Word Processing s dokumenty Word.
 
 ## Krok 1: Nastavte adresář dokumentů
- Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři, kam chcete dokument uložit.
+ Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou k adresáři, kam chcete dokument uložit.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Krok 4: Vytvořte tabulku a strukturu tabulky
- Začněte vytvářet tabulku pomocí`StartTable` metoda`DocumentBuilder` . Přidejte buňky tabulky a obsah pomocí`InsertCell` a`Write` metody.
+ Začněte vytvářet tabulku pomocí`StartTable` metoda`DocumentBuilder` . Přidejte buňky tabulky a obsah pomocí`InsertCell`a`Write` metody.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Vytvořit`Row`reprezentovat každou položku v opakující se sekci a připojit ji k položce opakující se sekce.
+ Vytvořit`Row` reprezentovat každou položku v opakující se sekci a připojit ji k položce opakující se sekce.
 
 ```csharp
 Row row = new Row(doc);

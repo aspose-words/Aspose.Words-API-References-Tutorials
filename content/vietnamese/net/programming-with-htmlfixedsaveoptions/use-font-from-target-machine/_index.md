@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Tải tài liệu Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Định cấu hình các tùy chọn sao lưu với tính năng "Sử dụng phông chữ từ máy đích"
+// Định cấu hình các tùy chọn sao lưu với tính năng "Sử dụng phông chữ từ máy đích"
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Chuyển đổi tài liệu sang HTML cố định

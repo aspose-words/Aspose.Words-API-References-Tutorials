@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Faça algo com o código e o resultado do campo.
+     //Faça algo com o código e o resultado do campo.
 }
 ```
 
@@ -73,7 +73,7 @@ Isso conclui nosso guia sobre como usar o recurso "Obter código de campo" com A
 
 #### P: Como posso atualizar campos em um documento usando Aspose.Words for .NET?
 
- R: Para atualizar os campos do documento usando Aspose.Words for .NET, você pode usar o`Document.UpdateFields`método. Isso atualizará todos os campos presentes no documento, como campos de mesclagem, campos de data, etc.
+ R: Para atualizar os campos do documento usando Aspose.Words for .NET, você pode usar o`Document.UpdateFields` método. Isso atualizará todos os campos presentes no documento, como campos de mesclagem, campos de data, etc.
 
 #### P: Como posso recuperar o valor de um campo específico no Aspose.Words for .NET?
 

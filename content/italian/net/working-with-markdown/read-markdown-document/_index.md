@@ -69,7 +69,7 @@ R: Sì, alcune librerie Markdown in .NET offrono opzioni di personalizzazione du
 
 #### D: Quali sono le librerie .NET consigliate per la manipolazione dei documenti Markdown?
 
- R: Le librerie .NET consigliate per la manipolazione dei documenti Markdown sono`Markdig` E`CommonMark.NET`. Offrono grande flessibilità e supporto completo per le funzionalità Markdown.
+ R: Le librerie .NET consigliate per la manipolazione dei documenti Markdown sono`Markdig`E`CommonMark.NET`. Offrono grande flessibilità e supporto completo per le funzionalità Markdown.
 
 #### D: Come posso gestire gli errori durante la lettura di un documento Markdown?
 

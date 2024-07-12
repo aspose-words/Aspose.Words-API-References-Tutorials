@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 Este código convierte el documento a HTML, incluida la información de ida y vuelta, y guarda el archivo HTML exportado en el directorio especificado.
 
-### Código fuente de ejemplo para exportar información de ida y vuelta utilizando Aspose.Words para .NET
+### Código fuente de ejemplo para exportar información de ida y vuelta usando Aspose.Words para .NET
 
 
 ```csharp

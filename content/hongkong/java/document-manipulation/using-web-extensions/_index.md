@@ -45,7 +45,7 @@ taskPane.getWebExtension().getReference().setStoreType(WebExtensionStoreType.OME
 taskPane.getWebExtension().getReference().setStore("th-TH");
 ```
 
-## 向 Web 擴充功能新增屬性和綁定：
+## 將屬性和綁定新增至 Web 擴充功能：
 
 ```java
 taskPane.getWebExtension().getProperties().add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));

@@ -2,120 +2,108 @@
 title: 在 Word 文件中簽署現有簽名行
 linktitle: 在 Word 文件中簽署現有簽名行
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 對 Word 文件中的現有簽名行進行簽署。
+description: 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中簽署現有簽名行。非常適合開發人員。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
-在本教學中，我們將引導您完成透過 Aspose.Words for .NET 使用現有簽章行的簽章功能的步驟。此功能可讓您對 Word 文件中已有的簽章行進行數位簽章。請依照以下步驟操作：
+## 介紹
 
-## 第 1 步：載入文件並存取簽名行
+嘿！您是否曾經需要簽署數位文件但發現有點麻煩？您很幸運，因為今天我們將深入探討如何使用 Aspose.Words for .NET 輕鬆簽署 Word 文件中的現有簽名行。本教學將逐步引導您完成流程，確保您立即掌握此任務。
 
-首先上傳包含現有簽名行的文件：
+## 先決條件
+
+在我們深入了解具體細節之前，讓我們確保我們擁有所需的一切：
+
+1.  Aspose.Words for .NET：請確定您已安裝 Aspose.Words for .NET 程式庫。如果還沒有，您可以下載[這裡](https://releases.aspose.com/words/net/).
+2. 開發環境：Visual Studio 或任何其他 C# 相容 IDE。
+3. 文件和證書：帶有簽名行和數位證書（PFX 文件）的 Word 文件。
+4. C# 基礎：熟悉 C# 程式設計將會很有幫助。
+
+## 導入命名空間
+
+在使用 Aspose.Words 中的類別和方法之前，您需要匯入必要的命名空間。以下是所需導入的片段：
+
+```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.DigitalSignatures;
+```
+
+## 第 1 步：載入您的文檔
+
+首先，您需要載入包含簽名行的 Word 文件。這一步至關重要，因為它為整個過程奠定了基礎。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
-
-SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## 步驟2：設定簽名選項
+## 第 2 步：訪問簽名行
 
-建立 SignOptions 類別的實例並設定簽名選項，包括簽名行 ID 和簽名行圖像：
+現在我們已經載入了文檔，下一步是找到並存取文檔中的簽名行。
+
+```csharp
+SignatureLine signatureLine = ((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
+```
+
+## 第 3 步：設定簽名選項
+
+設定標誌選項至關重要。這包括指定簽名行的 ID 並提供將用作簽名的圖像。
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes("YOUR IMAGE DIRECTORY" + "signature_image.emf")
 };
 ```
 
-請務必指定簽名行影像的正確路徑。
+## 第 4 步：建立證書持有者
 
-## 第三步：載入證書
-
-首先使用 CertificateHolder 類別載入簽章憑證：
+要對文件進行數位簽名，您需要數位證書。以下是如何從 PFX 檔案建立憑證持有者。
 
 ```csharp
-CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "your_password");
 ```
 
-請務必指定證書和關聯密碼的正確路徑。
+## 第 5 步：簽署文件
 
-## 第 4 步：簽署現有簽名行
-
-使用 DigitalSignatureUtil 類別對現有簽章行進行簽章：
+現在，我們結合所有元件來簽署文件。這就是魔法發生的地方！
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-	dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Digitally signed.docx",
+    dataDir + "Signature line.docx",
+    certHolder,
+    signOptions
+);
 ```
-
-請務必指定來源文件、簽署文件和憑證的正確路徑。
-
-### 使用 Aspose.Words for .NET 簽署現有簽名行的範例原始程式碼
-
-以下是使用 Aspose.Words for .NET 簽署現有簽章行的完整原始碼：
-
-
-```csharp
-
-	//文檔目錄的路徑。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Signature line.docx");
-	
-	SignatureLine signatureLine =
-		((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-		dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
-	
-
-```
-
-透過執行下列步驟，您可以使用 Aspose.Words for .NET 輕鬆簽署 Word 文件中的現有簽名行。
 
 ## 結論
 
-在本教學中，我們學習如何使用 Aspose.Words for .NET 對 Word 文件中的現有簽名行進行簽署。透過依照提供的步驟操作，您可以輕鬆載入文件、存取現有簽名行、設定簽名選項並簽署文件。對現有簽章行進行簽署的功能提供了一種將數位簽章新增至 Word 文件中的預定義區域的便捷方法，從而確保文件的完整性和驗證。 Aspose.Words for .NET 提供了強大的 API，用於具有數位簽章的文字處理，可讓您自訂簽章流程並增強 Word 文件的安全性。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功簽署了 Word 文件中的現有簽名行。不太難吧？透過這些步驟，您現在可以對文件進行數位簽名，從而增加額外的真實性和專業性。因此，下次有人向您發送要簽署的文件時，您就會確切地知道該怎麼做！
 
-### 常見問題解答
+## 常見問題解答
 
-#### Q：Word 文件中的現有簽名行是什麼？
+### 什麼是 Aspose.Words for .NET？
 
-答：Word 文件中的現有簽名行是可以放置簽名的預先定義區域。它通常由文件中的形狀或物件表示，並用作簽署者添加數位簽章的指定空間。
+Aspose.Words for .NET 是一個功能強大的程式庫，用於在 .NET 應用程式中處理 Word 文件。它允許您以程式設計方式建立、修改和轉換 Word 文件。
 
-#### Q：如何使用 Aspose.Words for .NET 對 Word 文件中的現有簽名行進行簽署？
+### 在哪裡可以獲得 Aspose.Words for .NET 的免費試用版？
 
-答：若要使用 Aspose.Words for .NET 在 Word 文件中簽署現有簽章行，您可以依照下列步驟操作：
-1. 使用載入文檔`Document`類並指定文檔文件的路徑。
-2. 使用適當的方法或屬性存取現有簽名行。例如，您可以使用`GetChild`檢索簽名線形狀的方法。
-3. 建立一個實例`SignOptions`類別並設定`SignatureLineId`屬性到現有簽名行的 ID。
-4. 設定`SignatureLineImage`的財產`SignOptions`代表數位簽名的影像的類別。
-5. 使用加載簽名證書`CertificateHolder`類並提供必要的證書和密碼。
-6. 使用`DigitalSignatureUtil.Sign`方法簽署文檔，提供必要的參數，包括`SignOptions`目的。
+您可以下載免費試用版[這裡](https://releases.aspose.com/).
 
-#### Q：如何使用 Aspose.Words for .NET 存取 Word 文件中的現有簽名行？
+### 我可以使用任何圖像格式作為簽名嗎？
 
-答：要使用 Aspose.Words for .NET 存取 Word 文件中現有的簽名行，您可以使用適當的方法或屬性從文件結構中擷取簽名行形狀。例如，您可以使用`GetChild`方法與適當的參數來獲得所需的簽名線形狀。
+Aspose.Words 支援各種影像格式，但使用增強型圖元檔案 (EMF) 可以提供更好的簽名品質。
 
-#### Q：我可以在現有簽名行中自訂數位簽章的外觀嗎？
+### 如何獲得數位憑證？
 
-答：是的，您可以透過提供代表簽名的影像檔案來自訂現有簽名行中數位簽章的外觀。該圖像可以是徽標、手寫簽名或簽名的任何其他圖形表示。您可以設定`SignatureLineImage`的財產`SignOptions`類別到圖像檔案的位元組。
+您可以在線上從各個提供者購買數位憑證。確保憑證為 PFX 格式並且您有密碼。
 
-#### Q：我可以在 Word 文件中簽署多個現有簽名行嗎？
-答：是的，您可以在 Word 文件中簽署多個現有簽名行。您需要單獨按照每個簽名行的步驟進行操作，設定適當的`SignatureLineId`和`SignatureLineImage`中的值`SignOptions`每個簽名行的物件。
+### 在哪裡可以找到有關 Aspose.Words for .NET 的更多文件？
 
-#### Q：現有簽名行中的數位簽名的影像檔案應採用什麼格式？
-
-答：現有簽章行中的數位簽章的圖片檔案可以是多種格式，例如PNG、JPEG、BMP或GIF。您可以指定檔案路徑或讀取影像檔案的位元組並將其指派給`SignatureLineImage`的財產`SignOptions`班級。
+您可以找到大量文檔[這裡](https://reference.aspose.com/words/net/).

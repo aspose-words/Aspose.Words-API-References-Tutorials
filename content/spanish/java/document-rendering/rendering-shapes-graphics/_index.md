@@ -139,7 +139,7 @@ Mejorar sus documentos con formas y gráficos puede mejorar significativamente s
 
 ### ¿Cómo puedo cambiar el tamaño de una forma en mi documento?
 
- Para cambiar el tamaño de una forma, utilice el`setWidth` y`setHeight` métodos en el objeto de forma. Por ejemplo, para crear una forma de 150 píxeles de ancho y 75 píxeles de alto:
+ Para cambiar el tamaño de una forma, utilice el`setWidth`y`setHeight` métodos en el objeto de forma. Por ejemplo, para crear una forma de 150 píxeles de ancho y 75 píxeles de alto:
 
 ```java
 shape.setWidth(150);

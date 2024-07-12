@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-document-options-and-settings/add-japanese-as-editing-languages/
 ---
 
-tomto tutoriálu vás krok za krokem provedeme, abyste pochopili a implementovali funkce přidání japonštiny jako jazyka pro úpravy pomocí Aspose.Words pro .NET. Tato funkce umožňuje nastavit jazykové preference při načítání dokumentu a přidat japonštinu jako jazyk úprav.
+V tomto tutoriálu vás krok za krokem provedeme, abyste pochopili a implementovali funkce přidání japonštiny jako jazyka pro úpravy pomocí Aspose.Words pro .NET. Tato funkce umožňuje nastavit jazykové preference při načítání dokumentu a přidat japonštinu jako jazyk úprav.
 
 ## Krok 1: Nastavení projektu
 
@@ -21,7 +21,7 @@ V tomto kroku načteme dokument aplikace Word, který neobsahuje výchozí jazyk
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// Nastavte jazykové preference, které budou použity při načítání dokumentu.
+//Nastavte jazykové preference, které budou použity při načítání dokumentu.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";

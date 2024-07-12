@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh-hant/net/remove-content/remove-footers/
 ---
-當涉及到在 .NET 應用程式中對 Word 文件進行文字處理時，Aspose.Words 是一個功能強大且多功能的工具，可以幫助您輕鬆操作 DOCX 檔案。在本文中，我們將探討 Aspose.Words 的一個特定功能：刪除頁尾。
+當涉及到在 .NET 應用程式中使用 Word 文件進行文字處理時，Aspose.Words 是一個功能強大且多功能的工具，可以幫助您輕鬆操作 DOCX 檔案。在本文中，我們將探討 Aspose.Words 的一個特定功能：刪除頁尾。
 
 ## 了解 Aspose.Words for .NET
 
@@ -15,7 +15,7 @@ Aspose.Words for .NET 是一個功能強大的類別庫，用於在 .NET 應用�
 
 ## 在 Aspose.Words 中刪除頁腳的目的
 
-有時您可能會想要從 Word 文件中刪除頁尾。這可能是由於各種原因造成的，例如需要刪除敏感資訊、調整文件以供其他用途或只是為了消除不需要的元素。 Aspose.Words 為您提供了一種簡單有效的方法來從文件中刪除頁腳，從而使這項任務變得更加容易。
+有時您可能會想要從 Word 文件中刪除頁尾。這可能是由於多種原因造成的，例如需要刪除敏感資訊、調整文件以供其他用途或只是為了消除不需要的元素。 Aspose.Words 為您提供了一種簡單有效的方法來從文件中刪除頁腳，從而使這項任務變得更加容易。
 
 ## 步驟1：設定文檔目錄路徑
 
@@ -48,7 +48,7 @@ foreach (Section section in doc)
 
 ## 第 4 步：刪除頁腳
 
-現在我們已經導航到特定部分，我們可以從該部分刪除頁腳。在Aspose.Words中，有不同類型的可能的頁腳，例如「FooterFirst」（用於第一頁）、「FooterPrimary」（用於奇數頁）和「FooterEven」（用於偶數頁）。我們需要檢查並刪除所有這些類型的頁腳。
+現在我們已經導航到特定部分，我們可以從該部分刪除頁腳。在Aspose.Words中，有不同類型的可能頁腳，例如「FooterFirst」（用於第一頁）、「FooterPrimary」（用於奇數頁）和「FooterEven」（用於偶數頁）。我們需要檢查並刪除所有這些類型的頁腳。
 
 ```csharp
 HeaderFooter footer = section.HeadersFooters[HeaderFooterType.Footer

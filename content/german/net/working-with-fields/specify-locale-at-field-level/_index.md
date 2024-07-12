@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/working-with-fields/specify-locale-at-field-level/
 ---
 
-Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der die Angabe der Lokalisierung auf Feldebene mithilfe der Funktion Aspose.Words für .NET ermöglicht. Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in Ihr Projekt eingebunden haben, bevor Sie diesen Code verwenden.
+Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der die Angabe der Lokalisierung auf Feldebene mithilfe der Funktion Aspose.Words für .NET ermöglicht. Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in Ihr Projekt aufgenommen haben, bevor Sie diesen Code verwenden.
 
 ## Schritt 1: Dokumentverzeichnispfad festlegen
 

@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 2: Muat dokumen dan kloning bagian tersebut
- Selanjutnya, kita akan memuat dokumen Word ke dalam sebuah instance`Document` kelas. Kami kemudian akan menggunakan`Clone` metode untuk mengkloning bagian pertama dokumen.
+ Selanjutnya, kita akan memuat dokumen Word ke dalam sebuah instance`Document` kelas. Kami kemudian akan menggunakan`Clone`metode untuk mengkloning bagian pertama dokumen.
 
 ```csharp
 // Muat dokumen

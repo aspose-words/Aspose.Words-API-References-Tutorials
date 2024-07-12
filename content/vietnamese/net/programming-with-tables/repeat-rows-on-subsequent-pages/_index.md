@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Chèn ô đầu tiên của hàng đầu tiên
+//Chèn ô đầu tiên của hàng đầu tiên
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Ở đây chúng tôi sử dụng trình tạo tài liệu để xây dựng một bảng có hai hàng tiêu đề và nhiều hàng dữ liệu. Các`RowFormat.HeadingFormat`các tham số được sử dụng để đánh dấu các hàng tiêu đề cần được lặp lại trên các trang tiếp theo.
+ Ở đây chúng tôi sử dụng trình tạo tài liệu để xây dựng một bảng có hai hàng tiêu đề và nhiều hàng dữ liệu. Các`RowFormat.HeadingFormat` các tham số được sử dụng để đánh dấu các hàng tiêu đề cần được lặp lại trên các trang tiếp theo.
 
 ## Bước 4: Lưu tài liệu đã sửa đổi
 Cuối cùng là Mỹ

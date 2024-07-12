@@ -40,7 +40,7 @@ Cuối cùng, lưu tài liệu đã sửa đổi:
 doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
-Vì thế ! Bạn đã tải thành công từ điển gạch nối cho một ngôn ngữ cụ thể trong Aspose.Words cho .NET.
+Vì thế ! Bạn đã tải thành công từ điển gạch nối cho một ngôn ngữ cụ thể trong Aspose.Words for .NET.
 
 ### Mã nguồn ví dụ để tải từ điển gạch nối cho một ngôn ngữ bằng Aspose.Words cho .NET
 

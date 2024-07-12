@@ -2,7 +2,7 @@
 title: 了解 Word 文档中的字体和文本样式
 linktitle: 了解 Word 文档中的字体和文本样式
 second_title: Aspose.Words Python 文档管理 API
-description: 探索 Word 文档中的字体和文本样式世界。了解如何使用 Aspose.Words for Python 增强可读性和视觉吸引力。包含分步示例的综合指南。
+description: 探索 Word 文档中的字体和文本样式。了解如何使用 Aspose.Words for Python 增强可读性和视觉吸引力。包含分步示例的综合指南。
 type: docs
 weight: 13
 url: /zh/python-net/document-structure-and-content-manipulation/document-fonts/
@@ -92,7 +92,7 @@ doc.save("modified_document.docx")
 
 ### 调整文本对齐
 
-可以使用样式设置对齐方式。以下是示例：
+可以使用样式来设置对齐方式。以下是示例：
 
 ```python
 # Import the required classes

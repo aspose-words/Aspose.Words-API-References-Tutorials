@@ -50,7 +50,7 @@ doc. Cleanup(cleanupOptions);
 
 ## चरण 5: सफाई के बाद शैलियों और सूचियों की गणना करें
 
-सफाई करने के बाद, हम स्टाइल और सूचियों की फिर से गिनती करेंगे ताकि यह जांचा जा सके कि उन्हें छोटा किया गया है या नहीं। नए काउंटर प्रदर्शित करने के लिए निम्न कोड का उपयोग करें:
+सफाई करने के बाद, हम स्टाइल और सूचियों को फिर से गिनेंगे ताकि यह जांचा जा सके कि उन्हें छोटा किया गया है या नहीं। नए काउंटर प्रदर्शित करने के लिए निम्न कोड का उपयोग करें:
 
 ```csharp
 Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAnd
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//दिए गए CleanupOptions के आधार पर दस्तावेज़ से अप्रयुक्त शैलियों और सूचियों को साफ़ करता है।
+	// दिए गए CleanupOptions के आधार पर दस्तावेज़ से अप्रयुक्त शैलियों और सूचियों को साफ़ करता है।
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 

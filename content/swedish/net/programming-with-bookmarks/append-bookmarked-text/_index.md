@@ -2,120 +2,123 @@
 title: Lägg till bokmärkt text i Word-dokument
 linktitle: Lägg till bokmärkt text i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du lägger till text från ett bokmärke i ett Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du lägger till bokmärkt text i ett Word-dokument med Aspose.Words för .NET med denna steg-för-steg-guide. Perfekt för utvecklare.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/append-bookmarked-text/
 ---
+## Introduktion
 
-I den här artikeln kommer vi att utforska ovanstående C#-källkod för att förstå hur man använder funktionen Lägg till bokmärkt text i Aspose.Words för .NET-biblioteket. Med den här funktionen kan du lägga till texten i ett specifikt bokmärke i ett Word-dokument till ett annat dokument.
+Hallå där! Har du någonsin försökt lägga till text från ett bokmärkt avsnitt i ett Word-dokument och tyckt att det var svårt? Du har tur! Denna handledning kommer att leda dig genom processen med Aspose.Words för .NET. Vi delar upp det i enkla steg så att du enkelt kan följa med. Låt oss dyka in och lägga till den bokmärkta texten som ett proffs!
 
 ## Förutsättningar
 
-- Grundläggande kunskaper i C#-språket.
-- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
+Innan vi börjar, låt oss se till att du har allt du behöver:
 
-## Steg 1: Få stycken från bokmärket
+-  Aspose.Words för .NET: Se till att du har det installerat. Om inte, kan du[ladda ner den här](https://releases.aspose.com/words/net/).
+- Utvecklingsmiljö: Vilken .NET-utvecklingsmiljö som helst som Visual Studio.
+- Grundläggande kunskaper om C#: Att förstå grundläggande C#-programmeringskoncept kommer att hjälpa.
+- Word-dokument med bokmärken: Ett Word-dokument med bokmärken som vi använder för att lägga till text från.
 
- Innan vi börjar lägga till bokmärkestexten måste vi få fram styckena som innehåller början och slutet av bokmärket. Detta kan göras genom att gå till`BookmarkStart` och`BookmarkEnd` egenskaper för bokmärket:
+## Importera namnområden
+
+Till att börja med, låt oss importera de nödvändiga namnrymden. Detta kommer att säkerställa att vi har alla verktyg vi behöver till hands.
 
 ```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+using System;
+using Aspose.Words;
+using Aspose.Words.Importing;
 ```
 
-## Steg 2: Kontrollera överordnade stycken
+Låt oss dela upp exemplet i detaljerade steg.
 
-Vi kontrollerar om början och slutstycket har giltiga föräldrar, det vill säga om de verkligen tillhör ett stycke. Om inte genererar vi ett undantag:
+## Steg 1: Ladda dokumentet och initiera variabler
+
+Okej, låt oss börja med att ladda vårt Word-dokument och initiera de variabler vi behöver.
 
 ```csharp
+// Ladda käll- och måldokumenten.
+Document srcDoc = new Document("source.docx");
+Document dstDoc = new Document("destination.docx");
+
+// Initiera dokumentimportören.
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+
+// Hitta bokmärket i källdokumentet.
+Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## Steg 2: Identifiera start- och slutstyckena
+
+Låt oss nu hitta styckena där bokmärket börjar och slutar. Detta är avgörande eftersom vi måste hantera texten inom dessa ramar.
+
+```csharp
+// Detta är stycket som innehåller början av bokmärket.
+Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+
+// Detta är stycket som innehåller slutet av bokmärket.
+Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
 if (startPara == null || endPara == null)
-throw new InvalidOperationException(
-"The parent of the beginning or the end of the bookmark is not a paragrap
-
-hey, this situation can't be handled yet.");
+    throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## Steg 3: Kontrollera föräldrar till stycken
+## Steg 3: Validera paragrafföräldrar
 
-Vi kontrollerar om början och slutet av stycket har samma förälder. Om inte, betyder det att styckena inte finns i samma avsnitt eller dokument, och vi gör ett undantag:
+Vi måste se till att start- och slutstyckena har samma förälder. Detta är ett enkelt scenario för att hålla saker rakt på sak.
 
 ```csharp
+// Begränsa oss till ett ganska enkelt scenario.
 if (startPara.ParentNode != endPara.ParentNode)
-throw new InvalidOperationException(
-"Beginning and ending paragraphs have different parents, this situation cannot be handled yet.");
+    throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## Steg 4: Kopiera stycken
+## Steg 4: Identifiera noden som ska stoppas
 
-Vi itererar genom noderna (styckena) från startstycket till slutstycket. För varje nod skapar vi en kopia och importerar den till måldokumentets sammanhang:
+Därefter måste vi bestämma noden där vi ska sluta kopiera text. Detta kommer att vara noden omedelbart efter slutstycket.
 
 ```csharp
+// Vi vill kopiera alla stycken från startstycket till (och inklusive) slutstycket,
+// därför är noden där vi stannar en efter slutstycket.
 Node endNode = endPara.NextSibling;
+```
 
+## Steg 5: Lägg till bokmärkt text till destinationsdokument
+
+Låt oss slutligen gå igenom noderna från startstycket till noden efter slutstycket och lägga till dem i måldokumentet.
+
+```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-Node newNode = importer.ImportNode(curNode, true);
+    // Detta skapar en kopia av den aktuella noden och importerar den (gör den giltig) i sammanhanget
+    // av destinationsdokumentet. Importering innebär att anpassa stilar och listidentifierare korrekt.
+    Node newNode = importer.ImportNode(curNode, true);
 
-dstNode.AppendChild(newNode);
+    // Lägg till den importerade noden till måldokumentet.
+    dstDoc.FirstSection.Body.AppendChild(newNode);
 }
-```
 
-### Exempel på källkod för Lägg till bokmärkt text med Aspose.Words för .NET
-
-Här är den fullständiga källkoden som visar hur man lägger till text från ett bokmärke med Aspose.Words för .NET:
-
-```csharp
-
-	// Detta är stycket som innehåller början av bokmärket.
-	Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-	// Detta är stycket som innehåller slutet av bokmärket.
-	Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-	if (startPara == null || endPara == null)
-		throw new InvalidOperationException(
-			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-	// Begränsa oss till ett ganska enkelt scenario.
-	if (startPara.ParentNode != endPara.ParentNode)
-		throw new InvalidOperationException(
-			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-	// Vi vill kopiera alla stycken från startstycket till (och inklusive) slutstycket,
-	// därför är noden där vi stannar en efter slutstycket.
-	Node endNode = endPara.NextSibling;
-
-	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-	{
-		//Detta skapar en kopia av den aktuella noden och importerar den (gör den giltig) i sammanhanget
-		// av destinationsdokumentet. Importering innebär att anpassa stilar och listidentifierare korrekt.
-		Node newNode = importer.ImportNode(curNode, true);
-
-		dstNode.AppendChild(newNode);
-	}
-
+// Spara måldokumentet med den bifogade texten.
+dstDoc.Save("appended_document.docx");
 ```
 
 ## Slutsats
 
-I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Lägg till bokmärkt text i Aspose.Words för .NET. Vi har följt en steg-för-steg-guide för att hämta stycken från ett bokmärke, verifiera föräldrar och kopiera stycken till ett annat dokument.
+Och där har du det! Du har framgångsrikt lagt till text från ett bokmärkt avsnitt i ett Word-dokument med Aspose.Words för .NET. Det här kraftfulla verktyget gör dokumentmanipulering till en lek, och nu har du ytterligare ett trick i rockärmen. Glad kodning!
 
-### Vanliga frågor för att lägga till bokmärkt text i Word-dokument
+## FAQ's
 
-#### F1: Vilka är förutsättningarna för att använda funktionen "Lägg till text med bokmärken" i Aspose.Words för .NET?
+### Kan jag lägga till text från flera bokmärken på en gång?
+Ja, du kan upprepa processen för varje bokmärke och lägga till texten därefter.
 
-S: För att använda funktionen "Lägg till text med bokmärken" i Aspose.Words för .NET behöver du ha grundläggande kunskaper i C#-språket. Du behöver också en .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
+### Vad händer om start- och slutstyckena har olika föräldrar?
+Det aktuella exemplet förutsätter att de har samma förälder. För olika föräldrar krävs en mer komplex hantering.
 
-#### F2: Hur får man de stycken som innehåller början och slutet av ett bokmärke i ett Word-dokument?
+### Kan jag behålla den ursprungliga formateringen av den bifogade texten?
+ Absolut! De`ImportFormatMode.KeepSourceFormatting` säkerställer att den ursprungliga formateringen bevaras.
 
-S: För att få de stycken som innehåller början och slutet av ett bokmärke i ett Word-dokument kan du komma åt`BookmarkStart` och`BookmarkEnd` egenskaper för bokmärket. Här är en exempelkod:
+### Är det möjligt att lägga till text till en specifik position i måldokumentet?
+Ja, du kan lägga till texten på valfri position genom att navigera till önskad nod i måldokumentet.
 
-```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-```
-
-#### F3: Vad händer om start- och slutstyckena inte har giltiga föräldrar?
-
-S: Om start- och slutstyckena inte har giltiga föräldrar, dvs de är inte riktigt stycken, kommer ett undantag att kastas. Denna situation kan inte hanteras i nuläget.
+### Vad händer om jag behöver lägga till text från ett bokmärke till ett nytt avsnitt?
+Du kan skapa ett nytt avsnitt i måldokumentet och lägga till texten där.

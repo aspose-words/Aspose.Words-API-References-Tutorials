@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## चरण 2: फ़ुटनोट और एंडनोट स्थिति सेट करना
 
- इसके बाद, एक्सेस करें`FootnoteOptions` और`EndnoteOptions`दस्तावेज़ के गुणधर्मों का उपयोग करके फ़ुटनोट और एंडनोट की स्थिति निर्धारित करें। इस उदाहरण में, हमने फ़ुटनोट की स्थिति को पाठ के नीचे और एंडनोट की स्थिति को अनुभाग के अंत में निर्धारित किया है:
+ इसके बाद, एक्सेस करें`FootnoteOptions`और`EndnoteOptions`दस्तावेज़ के गुण फ़ुटनोट और एंडनोट की स्थिति निर्धारित करने के लिए। इस उदाहरण में, हमने फ़ुटनोट की स्थिति को पाठ के नीचे और एंडनोट की स्थिति को अनुभाग के अंत में सेट किया है:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;
@@ -38,7 +38,7 @@ doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 ```
 
-बस! आपने .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में फ़ुटनोट्स और एंडनोट्स की स्थिति सफलतापूर्वक सेट कर ली है।
+बस! आपने Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में फ़ुटनोट्स और एंडनोट्स की स्थिति सफलतापूर्वक सेट कर ली है।
 
 ### .NET के लिए Aspose.Words का उपयोग करके फुटनोट और एंडनोट स्थिति सेट करने के लिए उदाहरण स्रोत कोड
 

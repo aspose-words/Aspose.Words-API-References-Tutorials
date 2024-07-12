@@ -48,7 +48,7 @@ public class PrintDocumentWithDialog {
         // Initialisieren Sie die Druckereinstellungen
         PrinterSettings settings = new PrinterSettings();
 
-        // Den Druckdialog anzeigen
+        // Druckdialog anzeigen
         if (settings.showPrintDialog()) {
             // Drucken Sie das Dokument mit den ausgewählten Einstellungen
             doc.print(settings);
@@ -71,7 +71,7 @@ In dieser Anleitung haben wir untersucht, wie man ein Dokument mit einem PrintDi
 
 ### Wie kann ich die Seitenausrichtung für den Druck einstellen?
 
- Um die Seitenausrichtung (Hochformat oder Querformat) für den Druck einzustellen, können Sie die`PageSetup` Klasse in Aspose.Words. Hier ist ein Beispiel:
+ Um die Seitenausrichtung (Hochformat oder Querformat) für den Druck festzulegen, können Sie die`PageSetup` Klasse in Aspose.Words. Hier ist ein Beispiel:
 
 ```java
 Document doc = new Document("sample.docx");

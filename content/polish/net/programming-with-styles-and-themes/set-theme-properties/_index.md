@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- Na tym etapie uzyskujemy dostęp do`Theme` przedmiot`Document`obiekt, aby uzyskać motyw dokumentu. Następnie możemy modyfikować właściwości motywu, takie jak czcionki dodatkowe (`MinorFonts.Latin`) i kolory (`Colors.Hyperlink`).
+Na tym etapie uzyskujemy dostęp do`Theme` przedmiot`Document` obiekt, aby uzyskać motyw dokumentu. Następnie możemy modyfikować właściwości motywu, takie jak czcionki dodatkowe (`MinorFonts.Latin`) i kolory (`Colors.Hyperlink`).
 
 ## Krok 4: Zapisz dokument
 

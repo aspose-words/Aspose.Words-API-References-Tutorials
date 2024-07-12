@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Yer değiştirmek`"original_document.docx"` Ve`"modified_document.docx"` kendi belgelerinize giden yollarla.
+ Yer değiştirmek`"original_document.docx"`Ve`"modified_document.docx"` kendi belgelerinize giden yollarla.
 
 ## 2. Adım: Belgeleri Karşılaştırın
 
@@ -77,7 +77,7 @@ Aspose.Words öncelikle DOCX formatındaki Word belgeleriyle çalışır. Farkl�
 
 ### Aspose.Words'ü kullanırken belge boyutunda herhangi bir sınırlama var mı?
 
-Aspose.Words büyük belgeleri verimli bir şekilde işleyebilir, ancak çok büyük dosyalarla çalışırken sisteminizin belleğini ve performansını dikkate almak önemlidir.
+Aspose.Words büyük belgeleri verimli bir şekilde işleyebilir, ancak aşırı büyük dosyalarla çalışırken sisteminizin belleğini ve performansını dikkate almak önemlidir.
 
 ### Karşılaştırma sonucunda farklılıkların vurgulanma şeklini özelleştirebilir miyim?
 

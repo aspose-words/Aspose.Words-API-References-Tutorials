@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Załaduj zaszyfrowany dokument z określonym hasłem
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Zapisz zaszyfrowany dokument z nowym hasłem
+//Zapisz zaszyfrowany dokument z nowym hasłem
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

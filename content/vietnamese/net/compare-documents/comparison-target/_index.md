@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Bước 3: Tải tài liệu của bạn
 
-Được rồi, đã đến lúc tải tài liệu bạn muốn so sánh. Bạn sẽ cần đường dẫn đến những tài liệu này. Giả sử bạn có hai tài liệu:`DocumentA.docx` Và`DocumentB.docx`.
+Được rồi, đã đến lúc tải tài liệu bạn muốn so sánh. Bạn sẽ cần đường dẫn đến những tài liệu này. Giả sử bạn có hai tài liệu:`DocumentA.docx`Và`DocumentB.docx`.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.

@@ -34,7 +34,7 @@ Document doc = new Document(dataDir + "Properties.docx");
 doc.CustomDocumentProperties.Remove("Authorized Date");
 ```
 
-このコードは、ドキュメントから「Authorized Date」カスタム プロパティを削除します。「Authorized Date」は、削除するカスタム プロパティの名前に置き換えることができます。
+このコードは、ドキュメントから「承認日」カスタム プロパティを削除します。「承認日」は、削除するカスタム プロパティの名前に置き換えることができます。
 
 ### Aspose.Words for .NET を使用してカスタム ドキュメント プロパティを削除するサンプル ソース コード
 
@@ -47,6 +47,6 @@ doc.CustomDocumentProperties.Remove("Authorized Date");
 	
 ```
 
-正しいドキュメントパスを必ず指定してください。`dataDir`変数。
+必ず正しいドキュメントパスを指定してください。`dataDir`変数。
 
 Aspose.Words for .NET を使用してドキュメントからカスタム プロパティを削除する方法を学習しました。このチュートリアルで提供されるステップ バイ ステップ ガイドに従うことで、独自のドキュメントからカスタム プロパティを簡単に削除できます。

@@ -2,48 +2,90 @@
 title: Negeer tekstvakken
 linktitle: Negeer tekstvakken
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een document kunt toevoegen terwijl u de opmaak van tekstvakken negeert met Aspose.Words voor .NET.
+description: Voeg Word-documenten samen met Aspose.Words voor .NET, zodat de opmaak van de tekstvakken behouden blijft. Volg deze stapsgewijze handleiding voor een naadloze documentverwerking.
 type: docs
 weight: 10
 url: /nl/net/join-and-append-documents/ignore-text-boxes/
 ---
+## Invoering
 
-In deze tutorial wordt uitgelegd hoe u Aspose.Words voor .NET kunt gebruiken om een document toe te voegen terwijl de opmaak van tekstvakken behouden blijft. De meegeleverde broncode demonstreert hoe u de importformaatopties kunt instellen om tekstvakken op te nemen tijdens het toevoegproces.
+Welkom bij deze gedetailleerde tutorial over het gebruik van Aspose.Words voor .NET om Word-documenten samen te voegen zonder tekstvakken te negeren. Als u uw documentverwerking wilt stroomlijnen en ervoor wilt zorgen dat de opmaak van tekstvakken behouden blijft, bent u hier op de juiste plek. Laten we deze stapsgewijze handleiding eens doornemen.
 
-## Stap 1: Zet het project op
+## Vereisten
 
-Zorg ervoor dat u aan de volgende vereisten voldoet:
+Voordat we beginnen, zorgen we ervoor dat u alles heeft wat u nodig heeft:
 
--  Aspose.Words voor .NET-bibliotheek geïnstalleerd. Je kunt het downloaden van[Aspose.Releases]https://releases.aspose.com/words/net/ of gebruik NuGet-pakketbeheer om het te installeren.
-- Een documentmappad waar de bron- en doeldocumenten zich bevinden.
+1.  Aspose.Words voor .NET: Download het[hier](https://releases.aspose.com/words/net/).
+2. .NET-ontwikkelomgeving: Visual Studio of een andere gewenste IDE.
+3. Basiskennis van C#: Inzicht in de basisprogrammeerconcepten in C#.
 
-## Stap 2: Open de bron- en doeldocumenten
+## Naamruimten importeren
 
- Open de bron- en doeldocumenten met behulp van de`Document` klasse constructor. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+Om aan de slag te gaan, moet u de benodigde naamruimten in uw project importeren:
 
 ```csharp
-// Pad naar uw documentmap
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Importing;
+```
 
+## Stap 1: Stel uw project in
+
+Zorg er eerst voor dat uw project correct is ingesteld. Open uw IDE, maak een nieuw project en installeer de Aspose.Words voor .NET-bibliotheek via NuGet Package Manager.
+
+### Hoe Aspose.Words te installeren
+
+1. Open NuGet Package Manager in uw IDE.
+2. Zoek naar "Aspose.Words".
+3. Klik op "Installeren".
+
+## Stap 2: Definieer de documentmap
+
+Geef vervolgens de map op waar uw bron- en doeldocumenten zich bevinden.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+
+## Stap 3: Laad de documenten
+
+Laad nu zowel het bron- als het doeldocument in uw project.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Stap 3: Stel importformaatopties in
+## Stap 4: Configureer importopties
 
- Maak een exemplaar van de`ImportFormatOptions` klasse en stel de`IgnoreTextBoxes`eigendom aan`false`. Dit zorgt ervoor dat de tekstvakken worden opgenomen tijdens het toevoegproces, terwijl hun opmaak behouden blijft.
+ Om ervoor te zorgen dat de opmaak van de tekstvakken behouden blijft, stelt u de`IgnoreTextBoxes` optie om`false`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## Stap 4: Voeg de inhoud van het tekstvak toe
+## Stap 5: Initialiseer Node Importer
 
- Maak een`NodeImporter`object en gebruik het om tekstvakknooppunten van het brondocument naar het doeldocument te importeren. Doorloop elke alinea in het brondocument en importeer deze in het doeldocument.
+ Initialiseer de`NodeImporter` om knooppunten van het brondocument naar het doeldocument te importeren.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+```
+
+## Stap 6: Importeer alinea's uit het brondocument
+
+Haal alle alinea's op uit de eerste sectie van het brondocument.
+
+```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
+```
+
+## Stap 7: Voeg geïmporteerde alinea's toe aan het doeldocument
+
+Loop door elke paragraaf en voeg deze toe aan het doeldocument.
+
+```csharp
 foreach (Paragraph srcPara in srcParas)
 {
     Node importedNode = importer.ImportNode(srcPara, true);
@@ -51,33 +93,31 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Stap 5: Sla het bestemmingsdocument op
+## Stap 8: Sla het samengevoegde document op
 
-Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
+Sla ten slotte het samengevoegde document op met een nieuwe naam om te voorkomen dat de originele bestanden worden overschreven.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ```
 
-Hiermee is de implementatie van het toevoegen van een document voltooid, terwijl de opmaak van de tekstvakken behouden blijft met behulp van Aspose.Words voor .NET.
+## Conclusie
 
-### Voorbeeldbroncode voor het negeren van tekstvakken met Aspose.Words voor .NET 
+hebt met succes twee Word-documenten samengevoegd met Aspose.Words voor .NET, waarbij u ervoor heeft gezorgd dat tekstvakken tijdens het importeren niet worden genegeerd. Dit proces is van onschatbare waarde voor het behoud van de opmaakintegriteit van uw documenten. Of u nu te maken heeft met rapporten, contracten of welk ander type document dan ook, Aspose.Words voor .NET maakt het proces naadloos.
 
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Veelgestelde vragen
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Houd de opmaak van de brontekstvakken bij het importeren behouden.
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, true);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
-```
+### Wat is Aspose.Words voor .NET?
+ Aspose.Words voor .NET is een krachtige bibliotheek voor het maken, manipuleren en converteren van Word-documenten binnen .NET-toepassingen.[Kom meer te weten](https://reference.aspose.com/words/net/).
+
+### Kan ik Aspose.Words voor .NET uitproberen voordat ik het aanschaf?
+ Ja, u kunt een gratis proefversie downloaden[hier](https://releases.aspose.com/).
+
+### Hoe kan ik een tijdelijke licentie krijgen voor Aspose.Words voor .NET?
+ U kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/).
+
+### Waar kan ik meer gedetailleerde documentatie vinden?
+ U vindt de uitgebreide documentatie[hier](https://reference.aspose.com/words/net/).
+
+### Hoe kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
+ Bezoek de Aspose-forums voor ondersteuning[hier](https://forum.aspose.com/c/words/8).

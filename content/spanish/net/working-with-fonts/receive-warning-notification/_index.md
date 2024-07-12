@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Paso 3: actualizar el diseño de la página
 
- Llama a`UpdatePageLayout` método. Esto representa el documento en la memoria y captura cualquier advertencia que ocurra durante la representación.
+ Llama a`UpdatePageLayout`método. Esto representa el documento en la memoria y captura cualquier advertencia que ocurra durante la representación.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ No, solo puedes especificar una fuente predeterminada para la sustitución. Sin 
 
 ###  P3: ¿Puedo manejar otros tipos de advertencias con`IWarningCallback`?
 
- Sí el`IWarningCallback` La interfaz puede manejar varios tipos de advertencias, no solo la sustitución de fuentes.
+ Sí el`IWarningCallback`La interfaz puede manejar varios tipos de advertencias, no solo la sustitución de fuentes.
 
 ### P4: ¿Dónde puedo encontrar soporte para Aspose.Words?
 

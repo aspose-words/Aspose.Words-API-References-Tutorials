@@ -91,4 +91,4 @@ A: StructuredDocumentTags (SDT) zijn op XML gebaseerde elementen die kunnen word
 
 #### Vraag: Kan ik andere soorten besturingselementen als voorkeursoptie gebruiken?
 
- A: Ja, behalve`HtmlControlType.StructuredDocumentTag` , Aspose.Words voor .NET ondersteunt andere besturingstypen, zoals`HtmlControlType.ContentControl` En`HtmlControlType.CustomXmlMarkup`.
+ A: Ja, behalve`HtmlControlType.StructuredDocumentTag` , Aspose.Words voor .NET ondersteunt andere besturingstypen, zoals`HtmlControlType.ContentControl`En`HtmlControlType.CustomXmlMarkup`.

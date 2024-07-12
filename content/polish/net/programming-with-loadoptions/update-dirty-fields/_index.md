@@ -58,7 +58,7 @@ W tym przewodniku wyjaśniliśmy, jak przesłać dokument, aktualizując brudne 
 
 #### P: Czym są brudne pola w dokumencie programu Word?
 
-Odp.: Brudne pola w dokumencie programu Word odnoszą się do pól, które uległy zmianie, ale nie zostały zaktualizowane w celu odzwierciedlenia najnowszych wartości. Aktualizując te pola, masz pewność, że dokument zawsze będzie zawierał dokładne i aktualne informacje.
+Odp.: Brudne pola w dokumencie programu Word odnoszą się do pól, które uległy zmianie, ale nie zostały zaktualizowane w celu odzwierciedlenia najnowszych wartości. Aktualizując te pola, masz pewność, że dokument zawsze zawiera dokładne i aktualne informacje.
 
 #### P: Czy mogę dostosować opcje ładowania w Aspose.Words dla .NET?
 

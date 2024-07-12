@@ -14,7 +14,7 @@ Dans ce didacticiel étape par étape, nous vous expliquerons comment insérer d
 
 ## Étape 1 : initialisation des objets Document et DocumentBuilder
 
- Tout d'abord, initialisez le`Document` et`DocumentBuilder` objets:
+ Tout d'abord, initialisez le`Document`et`DocumentBuilder` objets:
 
 ```csharp
 Document doc = new Document();

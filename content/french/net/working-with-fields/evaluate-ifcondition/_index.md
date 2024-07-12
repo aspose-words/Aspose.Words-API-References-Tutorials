@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Insérez le champ IF dans le document.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Évaluez la condition IF.
+// Évaluez la condition IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Afficher le résultat de l'évaluation.
@@ -73,7 +73,7 @@ R : Pour insérer une condition IF dans un document Word avec Aspose.Words, vous
 3. Utilisez la méthode InsertField pour insérer une condition IF avec la syntaxe appropriée.
 
 
-#### : Comment mettre à jour une condition IF dans un document Word avec Aspose.Words ?
+#### Q : Comment mettre à jour une condition IF dans un document Word avec Aspose.Words ?
 
 R : Pour mettre à jour une condition IF dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les conditions IF, avec les données actuelles.
 

@@ -20,7 +20,7 @@ url: /ko/net/working-with-hyphenation/hyphenation-callback/
 2. IDE: Visual Studio와 같은 개발 환경입니다.
 3. C# 기본 지식: C# 및 .NET 프레임워크에 대한 이해.
 4. 하이픈 사전: 사용하려는 언어에 대한 하이픈 사전입니다.
-5.  Aspose 라이선스: 유효한 Aspose 라이선스입니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license/) 당신이 하나도 없다면.
+5.  Aspose 라이선스: 유효한 Aspose 라이선스입니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 당신이 하나도 없다면.
 
 ## 네임스페이스 가져오기
 

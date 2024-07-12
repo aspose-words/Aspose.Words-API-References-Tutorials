@@ -10,7 +10,7 @@ url: /zh/net/programming-with-bookmarks/show-hide-bookmarked-content/
 
 ## 介绍
 
-嗨！您是否曾经想根据某些条件控制 Word 文档中特定内容的可见性？使用 Aspose.Words for .NET，您只需几行代码即可动态显示或隐藏书签内容。在本教程中，我将逐步指导您完成该过程，确保您了解代码的每个部分。最后，您将成为操作 Word 文档中书签的专家。让我们开始吧！
+嗨！您是否曾经想根据某些条件控制 Word 文档中特定内容的可见性？使用 Aspose.Words for .NET，您只需几行代码即可动态显示或隐藏书签内容。在本教程中，我将逐步指导您完成该过程，确保您了解代码的每个部分。最后，您将成为操作 Word 文档书签的专家。让我们开始吧！
 
 ## 先决条件
 
@@ -72,7 +72,7 @@ builder.InsertField("MERGEFIELD MyBookmark", null);
 builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
 ```
 
-在这一步中，我们插入一个 IF 字段，检查书签的值。如果值为“true”，则显示“Visible”；否则，显示“Hidden”。
+在这一步中，我们插入一个 IF 字段，检查书签的值。如果值为“true”，则显示“Visible”；否则，则显示“Hidden”。
 
 ## 步骤 4：重新排列节点
 

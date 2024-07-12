@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Illessze be az IF mezőt a dokumentumba.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Értékelje az IF feltételt.
+// Értékelje az IF feltételt.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Jelenítse meg az értékelés eredményét.
@@ -81,6 +81,6 @@ V: A Word-dokumentumban lévő IF-feltételek Aspose.Words segítségével tört
 
 V: Az Aspose.Words segítségével számos feltételt kiértékelhet egy IF feltételben, beleértve a numerikus összehasonlításokat (pl. ha egy szám nagyobb, mint a másik), szöveges összehasonlításokat (pl. ha egy karakterlánc egyenlő egy másikkal), és még sok mást. Több feltételt is kombinálhat logikai operátorokkal, például ÉS és VAGY.
 
-#### K: Használhatók beágyazott IF-feltételek egy Word-dokumentumban az Aspose.Words használatával?
+#### K: Használhatók beágyazott IF-feltételek egy Word dokumentumban az Aspose.Words használatával?
 
 V: Igen, beágyazott IF-feltételek használhatók egy Word dokumentumban az Aspose.Words használatával. Ez azt jelenti, hogy kiértékelhet egy IF-feltételt egy másik IF-feltételen belül, hogy bonyolultabb logikát hozzon létre.

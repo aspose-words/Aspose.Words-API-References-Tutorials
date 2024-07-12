@@ -16,7 +16,7 @@ För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att 
 
 ## Steg 2: Ladda dokumentet
 
-det här steget kommer vi att ladda Word-dokumentet för vilket vi vill visa grammatiska och stavningsfel. Använd följande kod för att ladda dokumentet:
+I det här steget kommer vi att ladda Word-dokumentet för vilket vi vill visa grammatiska och stavningsfel. Använd följande kod för att ladda dokumentet:
 
 ```csharp
 // Sökväg till dokumentkatalogen.

@@ -126,7 +126,7 @@ Výchozí písmo pro vodoznaky je Calibri s velikostí písma 36.
 
 ### Jak mohu přidat čísla stránek počínaje konkrétní stránkou?
 
-Toho lze dosáhnout nastavením čísla počáteční stránky v dokumentu takto:
+Toho lze dosáhnout nastavením čísla úvodní stránky v dokumentu takto:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageStartingNumber(5);

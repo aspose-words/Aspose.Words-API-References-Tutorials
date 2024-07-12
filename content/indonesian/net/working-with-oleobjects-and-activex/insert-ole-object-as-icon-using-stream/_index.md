@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. Untuk menyematkan kode untuk menyisipkan objek OLE sebagai ikon dari aliran ke dalam proyek Anda, ikuti langkah-langkah berikut:
 -  Impor referensi yang diperlukan dengan menambahkan yang sesuai`using` pernyataan.
--  Buat dokumen baru dan pembuat dokumen menggunakan`Document` Dan`DocumentBuilder` kelas.
+-  Buat dokumen baru dan pembuat dokumen menggunakan`Document`Dan`DocumentBuilder` kelas.
 - Gunakan kode untuk menyisipkan objek OLE sebagai ikon dari aliran.
 -  Simpan dokumen menggunakan`Save` metode dengan jalur tujuan yang sesuai.
 

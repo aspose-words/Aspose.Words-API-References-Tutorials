@@ -69,7 +69,7 @@ A: Ja, sommige Markdown in .NET-bibliotheken bieden aanpassingsopties bij het co
 
 #### Vraag: Wat zijn de aanbevolen .NET-bibliotheken voor het manipuleren van Markdown-documenten?
 
- A: Aanbevolen .NET-bibliotheken voor het manipuleren van Markdown-documenten zijn dat wel`Markdig` En`CommonMark.NET`. Ze bieden grote flexibiliteit en volledige ondersteuning voor Markdown-functies.
+ A: Aanbevolen .NET-bibliotheken voor het manipuleren van Markdown-documenten zijn dat wel`Markdig`En`CommonMark.NET`. Ze bieden grote flexibiliteit en volledige ondersteuning voor Markdown-functies.
 
 #### Vraag: Hoe ga ik om met fouten bij het lezen van een Markdown-document?
 

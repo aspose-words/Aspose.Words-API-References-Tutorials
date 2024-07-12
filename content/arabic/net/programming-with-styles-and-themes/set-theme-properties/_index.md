@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- في هذه الخطوة نقوم بالوصول إلى`Theme` كائن من`Document`كائن للحصول على موضوع الوثيقة. بعد ذلك، يمكننا تعديل خصائص السمة مثل الخطوط الثانوية (`MinorFonts.Latin`) والألوان (`Colors.Hyperlink`).
+في هذه الخطوة نقوم بالوصول إلى`Theme` كائن من`Document` كائن للحصول على موضوع الوثيقة. بعد ذلك، يمكننا تعديل خصائص السمة مثل الخطوط الثانوية (`MinorFonts.Latin`) والألوان (`Colors.Hyperlink`).
 
 ## الخطوة 4: احفظ المستند
 

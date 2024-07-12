@@ -64,7 +64,7 @@ Dat is alles ! U hebt met succes subsets van lettertypen in een document ingeslo
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u subsets van lettertypen in een PDF-document kunt insluiten met behulp van Aspose.Words voor .NET. Door subsets van lettertypen in te sluiten, kunt u de grootte van het PDF-bestand verkleinen terwijl het uiterlijk van het document behouden blijft, doordat alleen de daadwerkelijk gebruikte tekens worden gebruikt. Dit zorgt voor betere compatibiliteit en prestaties bij het bekijken en afdrukken van de PDF. Voel je vrij om de functies van Aspose.Words voor .NET verder te verkennen om het genereren van je PDF-documenten met ingebedde lettertypesubsets te optimaliseren.
+In deze zelfstudie hebben we geleerd hoe u subsets van lettertypen in een PDF-document kunt insluiten met behulp van Aspose.Words voor .NET. Door subsets van lettertypen in te sluiten, kunt u de grootte van het PDF-bestand verkleinen, terwijl het uiterlijk van het document behouden blijft, doordat alleen de daadwerkelijk gebruikte tekens worden gebruikt. Dit zorgt voor betere compatibiliteit en prestaties bij het bekijken en afdrukken van de PDF. Voel je vrij om de functies van Aspose.Words voor .NET verder te verkennen om het genereren van je PDF-documenten met ingebedde lettertypesubsets te optimaliseren.
 
 ### Veel Gestelde Vragen
 
@@ -72,7 +72,7 @@ In deze zelfstudie hebben we geleerd hoe u subsets van lettertypen in een PDF-do
 A: Het insluiten van subsets van lettertypen in een PDF-document is het proces waarbij alleen de glyphs worden opgenomen die in het document worden gebruikt, in plaats van alle volledige lettertypen. Dit verkleint de grootte van het PDF-bestand door alleen de lettertypegegevens op te nemen die nodig zijn om de tekens weer te geven die daadwerkelijk in het document worden gebruikt.
 
 #### Vraag: Wat is het verschil tussen het insluiten van volledige lettertypen en het insluiten van subsets van lettertypen?
-A: Volledige lettertype-insluiting betekent dat alle lettertypen die in het document worden gebruikt in het PDF-bestand worden opgenomen. Dit zorgt ervoor dat het document precies wordt weergegeven zoals het is ontworpen, maar kan de grootte van het PDF-bestand vergroten. Daarentegen bevat het insluiten van subsets van lettertypen alleen de glyphs die in het document worden gebruikt, waardoor de grootte van het PDF-bestand wordt verkleind, maar de mogelijkheid wordt beperkt om het uiterlijk van het document exact te repliceren als er later extra tekens worden toegevoegd.
+A: Volledige lettertype-insluiting betekent dat alle lettertypen die in het document worden gebruikt, in het PDF-bestand worden opgenomen. Dit zorgt ervoor dat het document precies wordt weergegeven zoals het is ontworpen, maar kan de grootte van het PDF-bestand vergroten. Daarentegen bevat het insluiten van subsets van lettertypen alleen de glyphs die in het document worden gebruikt, waardoor de grootte van het PDF-bestand wordt verkleind, maar de mogelijkheid wordt beperkt om het uiterlijk van het document exact te repliceren als er later extra tekens worden toegevoegd.
 
 #### Vraag: Hoe kan ik subsets van lettertypen insluiten in een PDF-document met Aspose.Words voor .NET?
 A: Volg deze stappen om subsets van lettertypen in een PDF-document in te sluiten met Aspose.Words voor .NET:

@@ -14,10 +14,10 @@ Met deze tutorials kunt u de digitale handtekeningfuncties van Aspose.Words voor
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Onderteken Word-document](./sign-document/) | Leer hoe u een Word-document digitaal kunt ondertekenen met Aspose.Words voor .NET. |
-| [Gecodeerd Word-document ondertekenen](./signing-encrypted-document/) | Leer hoe u een gecodeerd Word-document digitaal kunt ondertekenen met Aspose.Words voor .NET. |
-| [Nieuwe handtekeningregel maken en ondertekenen](./creating-and-signing-new-signature-line/) | Leer hoe u een nieuwe handtekeningregel in een Word-document kunt maken en ondertekenen met Aspose.Words voor .NET. |
-| [Bestaande handtekeningregel in Word-document ondertekenen](./signing-existing-signature-line/) | Leer hoe u een bestaande handtekeningregel in een Word-document kunt ondertekenen met Aspose.Words voor .NET. |
-| [Stel de handtekeningprovider-ID in in een Word-document](./set-signature-provider-id/) | Leer hoe u de handtekeningprovider-ID in een Word-document instelt met Aspose.Words voor .NET. |
-| [Maak een nieuwe handtekeningregel en stel de provider-ID in](./create-new-signature-line-and-set-provider-id/) | Leer hoe u een nieuwe handtekeningregel maakt en de provider-ID in een Word-document instelt met Aspose.Words voor .NET. |
-| [Toegang tot en verifieer de handtekening in een Word-document](./access-and-verify-signature/) | Leer hoe u digitale handtekeningen in een Word-document kunt openen en verifiëren met Aspose.Words voor .NET. |
+| [Onderteken Word-document](./sign-document/) | Leer hoe u een Word-document ondertekent met Aspose.Words voor .NET met deze stapsgewijze handleiding. Beveilig uw documenten met gemak. |
+| [Gecodeerd Word-document ondertekenen](./signing-encrypted-document/) | Leer hoe u gecodeerde Word-documenten kunt ondertekenen met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. Ideaal voor ontwikkelaars. |
+| [Nieuwe handtekeningregel maken en ondertekenen](./creating-and-signing-new-signature-line/) | Leer hoe u een handtekeningregel in een Word-document kunt maken en digitaal kunt ondertekenen met Aspose.Words voor .NET met deze stapsgewijze zelfstudie. Perfect voor documentautomatisering. |
+| [Bestaande handtekeningregel in Word-document ondertekenen](./signing-existing-signature-line/) | Leer hoe u een bestaande handtekeningregel in een Word-document kunt ondertekenen met Aspose.Words voor .NET met onze gedetailleerde stapsgewijze handleiding. Ideaal voor ontwikkelaars. |
+| [Stel de handtekeningprovider-ID in in een Word-document](./set-signature-provider-id/) | Stel veilig een Signature Provider ID in Word-documenten in met Aspose.Words voor .NET. Volg onze gedetailleerde gids van 2000 woorden om uw documenten digitaal te ondertekenen. |
+| [Maak een nieuwe handtekeningregel en stel de provider-ID in](./create-new-signature-line-and-set-provider-id/) | Leer hoe u een nieuwe handtekeningregel maakt en de provider-ID in Word-documenten instelt met Aspose.Words voor .NET. Stap-voor-stap handleiding. |
+| [Toegang tot en verifieer de handtekening in een Word-document](./access-and-verify-signature/) | Krijg toegang tot en verifieer digitale handtekeningen in Word-documenten met Aspose.Words voor .NET met deze uitgebreide stapsgewijze handleiding. Garandeer moeiteloos de authenticiteit van documenten. |

@@ -17,7 +17,7 @@ Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące el
 - Podstawowa znajomość języka C#: Zrozumienie programowania w języku C# ułatwi wykonanie i wdrożenie poszczególnych kroków.
 -  Aspose.Words dla biblioteki .NET: Pobierz i zainstaluj bibliotekę z[link do pobrania](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: Skonfiguruj środowisko programistyczne, takie jak Visual Studio, aby pisać i uruchamiać kod.
--  Przykładowy dokument: przykładowy dokument (np.`Rendering.docx`), z którymi będziesz pracować w tym samouczku.
+- Przykładowy dokument: przykładowy dokument (np.`Rendering.docx`), z którymi będziesz pracować w tym samouczku.
 
 ## Importuj przestrzenie nazw
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Krok 5: Utwórz klasę obsługi ostrzeżeń
 
- Aby skutecznie obsługiwać ostrzeżenia, utwórz klasę niestandardową, która implementuje metodę`IWarningCallback` interfejs. Ta klasa będzie przechwytywać i rejestrować wszelkie ostrzeżenia dotyczące podstawiania czcionek.
+Aby skutecznie obsługiwać ostrzeżenia, utwórz klasę niestandardową, która implementuje metodę`IWarningCallback` interfejs. Ta klasa będzie przechwytywać i rejestrować wszelkie ostrzeżenia dotyczące podstawiania czcionek.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Opanowałeś teraz proces obsługi zastępowania czcionek bez przyrostków przy 
 
 ### P1: Jak mogę używać czcionek z wielu niestandardowych katalogów?
 
- Możesz dodać wiele`FolderFontSource` przypadki do`fontSources`wylistuj i odpowiednio zaktualizuj źródła czcionek.
+ Możesz dodać wiele`FolderFontSource` przypadki do`fontSources` wylistuj i odpowiednio zaktualizuj źródła czcionek.
 
 ### P2: Gdzie mogę pobrać bezpłatną wersję próbną Aspose.Words dla .NET?
 

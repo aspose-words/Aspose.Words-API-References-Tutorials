@@ -99,7 +99,7 @@ Anda sekarang telah menguasai proses penggunaan aliran sumber daya sebagai sumbe
 
 ###  Q3: Dapatkah saya menangani jenis peringatan lainnya`IWarningCallback`?
 
- Ya, itu`IWarningCallback` antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
+ Ya, itu`IWarningCallback`antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
 
 ### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words?
 

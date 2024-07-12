@@ -130,7 +130,7 @@ Ecco qua! Hai appena imparato come spostarti alla fine di un segnalibro in un do
 
 ### 1. Posso spostarmi all'inizio di un segnalibro anziché alla fine?
 
- Assolutamente! Basta impostare il`isBookmarkStart` parametro a`true` E`isBookmarkEnd` A`false` nel`MoveToBookmark` metodo.
+ Assolutamente! Basta impostare il`isBookmarkStart` parametro a`true`E`isBookmarkEnd` A`false` nel`MoveToBookmark` metodo.
 
 ### 2. Cosa succede se il nome del mio segnalibro non è corretto?
 

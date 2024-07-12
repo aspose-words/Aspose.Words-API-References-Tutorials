@@ -82,7 +82,7 @@ Var noga med att ange rätt sökväg och namnfil för utdatadokumentet.
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Detta anrop är viktigt för att skapa en kapslad tabell i den första tabellen.
-	// Utan detta anrop kommer cellerna som infogas nedan att läggas till i den yttre tabellen.
+	//Utan detta anrop kommer cellerna som infogas nedan att läggas till i den yttre tabellen.
 	builder.EndTable();
 	// Flytta till den första cellen i den yttre tabellen.
 	builder.MoveTo(cell.FirstParagraph);

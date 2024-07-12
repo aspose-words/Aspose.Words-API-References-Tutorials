@@ -67,7 +67,7 @@ En suivant ces étapes, vous pouvez facilement réduire la résolution de l'imag
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons expliqué comment réduire la taille d'un document PDF avec un échantillonnage d'images lors de la conversion en PDF à l'aide d'Aspose.Words pour .NET. En suivant les étapes décrites, vous pouvez facilement réduire la résolution des images et la taille du fichier PDF généré. Assurez-vous de spécifier le chemin d'accès correct à votre document et de configurer les options d'échantillonnage d'image selon vos besoins. La réduction de la taille du fichier PDF facilite le partage, le stockage et le chargement rapide du fichier sur différentes plates-formes. Profitez des avantages de la réduction de la taille des documents PDF grâce à l'échantillonnage d'images à l'aide d'Aspose.Words for .NET.
+Dans ce didacticiel, nous avons expliqué comment réduire la taille d'un document PDF avec échantillonnage d'images lors de la conversion en PDF à l'aide d'Aspose.Words pour .NET. En suivant les étapes décrites, vous pouvez facilement réduire la résolution des images et la taille du fichier PDF généré. Assurez-vous de spécifier le chemin d'accès correct à votre document et de configurer les options d'échantillonnage d'image selon vos besoins. La réduction de la taille du fichier PDF facilite le partage, le stockage et le chargement rapide du fichier sur différentes plates-formes. Profitez des avantages de la réduction de la taille des documents PDF grâce à l'échantillonnage d'images à l'aide d'Aspose.Words for .NET.
 
 ### Questions fréquemment posées
 

@@ -18,7 +18,7 @@ Ať už jste začátečník nebo zkušený vývojář, výukové programy Aspose
 | --- | --- |
 | [Získejte proměnné](./get-variables/) | Podrobný průvodce pro načtení proměnných dokumentu pomocí Aspose.Words pro .NET. |
 | [Výčet vlastností](./enumerate-properties/) | Podrobný průvodce výčtem vlastností dokumentu pomocí Aspose.Words pro .NET. |
-| [Přidat uživatelské vlastnosti dokumentu](./add-custom-document-properties/) | Krok za krokem průvodce přidáním vlastních vlastností do dokumentu pomocí Aspose.Words for .NET. |
+| [Přidat uživatelské vlastnosti dokumentu](./add-custom-document-properties/) | Krok za krokem průvodce přidáním vlastních vlastností do dokumentu pomocí Aspose.Words pro .NET. |
 | [Odebrat uživatelské vlastnosti dokumentu](./remove-custom-document-properties/) | Podrobný průvodce odstraněním uživatelských vlastností z dokumentu pomocí Aspose.Words for .NET. |
 | [Odebrat osobní údaje](./remove-personal-information/) | Podrobný průvodce odstraněním osobních údajů z dokumentu pomocí Aspose.Words for .NET. |
 | [Konfigurace odkazu na obsah](./configuring-link-to-content/) | Podrobný průvodce nastavením propojení s obsahem v dokumentu pomocí Aspose.Words pro .NET. |

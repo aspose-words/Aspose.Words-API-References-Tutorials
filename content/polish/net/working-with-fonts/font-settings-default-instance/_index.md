@@ -17,7 +17,7 @@ Zanim zaczniemy, upewnij się, że masz następujące elementy:
 - Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci płynnie zrozumieć i wdrożyć kroki.
 -  Biblioteka Aspose.Words dla .NET: Pobierz i zainstaluj Aspose.Words dla .NET z[link do pobrania](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: odpowiednie środowisko, takie jak Visual Studio, do pisania i wykonywania kodu.
--  Przykładowy dokument: przykładowy dokument (np.`Rendering.docx`), aby zastosować ustawienia czcionki.
+- Przykładowy dokument: przykładowy dokument (np.`Rendering.docx`), aby zastosować ustawienia czcionki.
 
 ## Importuj przestrzenie nazw
 
@@ -55,7 +55,7 @@ W tym przykładzie:
 
 ## Krok 3: Załaduj dokument
 
-Po skonfigurowaniu źródeł czcionek następnym krokiem jest załadowanie dokumentu do Aspose.Words`Document` obiekt. Pozwala to na manipulowanie i ostatecznie zapisanie dokumentu.
+ Po skonfigurowaniu źródeł czcionek następnym krokiem jest załadowanie dokumentu do Aspose.Words`Document`obiekt. Pozwala to na manipulowanie i ostatecznie zapisanie dokumentu.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Gratulacje! Opanowałeś podstawy zarządzania ustawieniami czcionek przy użyci
 
 ### P1: Czy mogę używać czcionek z wielu folderów niestandardowych?
 
- Tak, możesz określić wiele`FolderFontSource`przypadki w`SetFontsSources` metoda dołączania czcionek z różnych folderów.
+ Tak, możesz określić wiele`FolderFontSource` przypadki w`SetFontsSources` metoda dołączania czcionek z różnych folderów.
 
 ### P2: Jak uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
 

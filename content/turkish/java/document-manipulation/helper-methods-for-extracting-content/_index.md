@@ -162,4 +162,4 @@ Evet, oluşturulan belgedeki içe aktarılan düğümleri değiştirerek çıkar
 
 ### Aspose.Words for Java için daha fazla belge ve örneği nerede bulabilirim?
 
- Aspose web sitesinde Aspose.Words for Java için kapsamlı belgeler ve örnekler bulabilirsiniz. Ziyaret etmek[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) ayrıntılı belgeler ve kaynaklar için.
+ Aspose web sitesinde Aspose.Words for Java ile ilgili kapsamlı belgeler ve örnekler bulabilirsiniz. Ziyaret etmek[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) ayrıntılı belgeler ve kaynaklar için.

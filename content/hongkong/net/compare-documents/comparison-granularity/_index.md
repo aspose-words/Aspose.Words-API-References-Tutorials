@@ -90,7 +90,7 @@ builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOpti
 
 #### Q：如何在 Aspose.Words for .NET 中使用比較粒度？
 
-答：若要在 Aspose.Words for .NET 中使用比較粒度，請依照下列步驟操作：
+答：要在 Aspose.Words for .NET 中使用比較粒度，請依照下列步驟操作：
 1. 使用 Aspose.Words 函式庫設定您的開發環境。
 2. 透過引用 Aspose.Words 將必要的程式集新增到您的專案中。
 3. 使用以下命令建立要比較的文檔`DocumentBuilder`班級。

@@ -16,7 +16,7 @@ Aspose.Words for Java は、DOC、DOCX、RTF など、さまざまなドキュ�
 
 コードに進む前に、次の前提条件が満たされていることを確認してください。
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## ステップ1: Javaプロジェクトの設定

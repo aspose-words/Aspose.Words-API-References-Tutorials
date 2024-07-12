@@ -2,186 +2,126 @@
 title: Maak een bladwijzer van tabelkolommen in een Word-document
 linktitle: Maak een bladwijzer van tabelkolommen in een Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een bladwijzer kunt maken voor een tabelkolom in een Word-document met Aspose.Words voor .NET.
+description: Leer hoe u tabelkolommen in een Word-document kunt bookmarken met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze zelfstudie.
 type: docs
 weight: 10
 url: /nl/net/programming-with-bookmarks/bookmark-table-columns/
 ---
+## Invoering
 
-In dit artikel zullen we de bovenstaande C#-broncode verkennen om te begrijpen hoe u de functie Bladwijzertabelkolommen in de Aspose.Words voor .NET-bibliotheek kunt gebruiken. Met deze functie kunt u een bladwijzer maken voor een specifieke kolom van een tabel in een Word-document en toegang krijgen tot de inhoud van die kolom.
+Als u uw vaardigheden op het gebied van documentautomatisering wilt verbeteren, staat u een traktatie te wachten. Deze zelfstudie leidt u door het proces van het maken van bladwijzers voor tabelkolommen in een Word-document met behulp van Aspose.Words voor .NET. Klaar om erin te duiken? Laten we beginnen!
 
 ## Vereisten
 
-- Basiskennis van de C#-taal.
-- .NET-ontwikkelomgeving met Aspose.Words-bibliotheek geïnstalleerd.
+Voordat we ingaan op de code, zijn er een paar dingen die u moet regelen:
 
-## Stap 1: De tabel maken
+1.  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Zet een ontwikkelomgeving zoals Visual Studio op.
+3. Basiskennis van C#: Bekendheid met programmeren in C# kan nuttig zijn.
 
- Voordat we een bladwijzer voor een tabelkolom maken, moeten we eerst de tabel maken met behulp van a`DocumentBuilder`voorwerp. In ons voorbeeld maken we een tabel met twee rijen en twee kolommen:
+## Naamruimten importeren
+
+Om te beginnen moet u de benodigde naamruimten in uw C#-project importeren:
 
 ```csharp
-builder. StartTable();
-
-builder. InsertCell();
-
-builder. StartBookmark("MyBookmark");
-
-builder.Write("This is cell 1 of row 1");
-
-builder. InsertCell();
-builder.Write("This is cell 2 of row 1");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.Writeln("This is cell 1 of row 2");
-
-builder. InsertCell();
-builder.Writeln("This is cell 2 of row 2");
-
-builder. EndRow();
-builder. EndTable();
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Stap 2: De kolombladwijzer maken
+Laten we het proces nu in gedetailleerde stappen opsplitsen.
 
- Wij gebruiken de`StartBookmark` methode om een bladwijzer voor een specifieke kolom van de tabel te maken. In ons voorbeeld gebruiken we de naam "MyBookmark" voor de bladwijzer:
+## Stap 1: Initialiseer het document en DocumentBuilder
+
+ Eerst moeten we een nieuw Word-document maken en het`DocumentBuilder` om ermee te werken.
 
 ```csharp
-builder. StartBookmark("MyBookmark");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Toegang tot de kolominhoud
+## Stap 2: Start de tabel en voeg de eerste cel in
 
- We doorlopen alle bladwijzers in het document en geven hun namen weer. Als een bladwijzer een kolom is, hebben we toegang tot de inhoud van die kolom met behulp van de kolomindex en de`GetText` methode:
+Begin met het maken van een tabel en voeg de eerste cel in waar we de bladwijzer beginnen.
 
 ```csharp
-foreach (Bookmark
+builder.StartTable();
+builder.InsertCell();
+```
 
-  bookmark in doc.Range.Bookmarks)
+## Stap 3: Start de bladwijzer
+
+Vervolgens starten we de bladwijzer met de naam "MyBookmark" in de eerste cel.
+
+```csharp
+builder.StartBookmark("MyBookmark");
+builder.Write("This is row 1 cell 1");
+```
+
+## Stap 4: Voeg extra cellen in en beëindig de rij
+
+Voeg nog een cel toe aan de eerste rij en voltooi de eerste rij.
+
+```csharp
+builder.InsertCell();
+builder.Write("This is row 1 cell 2");
+builder.EndRow();
+```
+
+## Stap 5: Voeg cellen in voor de tweede rij
+
+Ga verder door cellen toe te voegen voor de tweede rij.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("This is row 2 cell 1");
+builder.InsertCell();
+builder.Writeln("This is row 2 cell 2");
+builder.EndRow();
+builder.EndTable();
+```
+
+## Stap 6: Beëindig de bladwijzer
+
+Beëindig de bladwijzer nadat u de tabel hebt voltooid.
+
+```csharp
+builder.EndBookmark("MyBookmark");
+```
+
+## Stap 7: Blader door bladwijzers en geef informatie weer
+
+Blader ten slotte door de bladwijzers in het document en geef informatie over elke bladwijzer weer.
+
+```csharp
+foreach (Bookmark bookmark in doc.Range.Bookmarks)
 {
-Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn?" (Column)": "");
-
-if (bookmark.IsColumn)
-{
-if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
+    Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn ? " (Column)" : "");
+    if (bookmark.IsColumn)
+    {
+        if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
+            Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
+    }
 }
-}
-```
-
-### Voorbeeldbroncode voor bladwijzertabelkolommen met Aspose.Words voor .NET
-
-Hier is de volledige voorbeeldbroncode om te demonstreren hoe u een bladwijzer in een tabelkolom maakt met behulp van Aspose.Words voor .NET:
-
-```csharp
-
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartTable();
-	
-	builder.InsertCell();
-
-	builder.StartBookmark("MyBookmark");
-
-	builder.Write("This is row 1 cell 1");
-
-	builder.InsertCell();
-	builder.Write("This is row 1 cell 2");
-
-	builder.EndRow();
-
-	builder.InsertCell();
-	builder.Writeln("This is row 2 cell 1");
-
-	builder.InsertCell();
-	builder.Writeln("This is row 2 cell 2");
-
-	builder.EndRow();
-	builder.EndTable();
-	
-	builder.EndBookmark("MyBookmark");
-	
-
-	
-	foreach (Bookmark bookmark in doc.Range.Bookmarks)
-	{
-		Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn ? " (Column)" : "");
-
-		if (bookmark.IsColumn)
-		{
-			if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-				Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
-		}
-	}
-	
-        
 ```
 
 ## Conclusie
 
-In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de functie Bookmark Table Columns van Aspose.Words voor .NET kunt gebruiken. We volgden een stapsgewijze handleiding om een specifieke kolom van een tabel in een Word-document van een bladwijzer te voorzien en naar de inhoud van die kolom te gaan.
+En daar heb je het! U hebt met succes een bladwijzer gemaakt voor tabelkolommen in een Word-document met Aspose.Words voor .NET. Dit proces helpt niet alleen bij het organiseren van uw document, maar maakt het ook gemakkelijker om door specifieke secties te navigeren en deze te manipuleren. Bladwijzers maken is een krachtige functie die uw mogelijkheden voor documentbeheer aanzienlijk kan verbeteren.
 
-### Veelgestelde vragen over bladwijzertabelkolommen in een Word-document
+## Veelgestelde vragen
 
-#### Vraag: Wat zijn de vereisten voor het gebruik van de functie "Bladwijzers voor tabelkolommen" in Aspose.Words voor .NET?
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten. Hiermee kunt u documenten maken, wijzigen en converteren zonder dat u Microsoft Word hoeft te installeren.
 
-A: Om de functie "Bladwijzers voor tabelkolommen" in Aspose.Words voor .NET te gebruiken, hebt u basiskennis van de C#-taal nodig. U hebt ook een .NET-ontwikkelomgeving nodig waarin de Aspose.Words-bibliotheek is geïnstalleerd.
+### Hoe installeer ik Aspose.Words voor .NET?
+ U kunt Aspose.Words voor .NET downloaden van de[website](https://releases.aspose.com/words/net/). Volg de meegeleverde installatie-instructies.
 
-#### Vraag: Hoe maak ik een tabel met kolommen in een Word-document met Aspose.Words voor .NET?
+### Kan ik Aspose.Words voor .NET gebruiken met andere programmeertalen?
+Ja, Aspose.Words voor .NET kan worden gebruikt met elke door .NET ondersteunde taal, inclusief C#, VB.NET en F#.
 
- A: Om een tabel met kolommen in een Word-document te maken met Aspose.Words voor .NET, kunt u een`DocumentBuilder` object om cellen en inhoud in de tabel in te voegen. Hier is een voorbeeldcode:
+### Hoe kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap en experts door naar de[Helpforum](https://forum.aspose.com/c/words/8).
 
-```csharp
-builder. StartTable();
-
-builder. InsertCell();
-builder.Write("Contents of cell 1 of column 1");
-
-builder. InsertCell();
-builder.Write("Contents of cell 2 of column 2");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.Write("Contents of cell 1 of column 2");
-
-builder. InsertCell();
-builder.Write("Contents of cell 2 of column 2");
-
-builder. EndRow();
-
-builder. EndTable();
-```
-
-#### Vraag: Hoe kan ik een tabelkolom bookmarken met Aspose.Words voor .NET?
-
- A: Om een bladwijzer voor een tabelkolom te maken met behulp van Aspose.Words voor .NET, kunt u de`StartBookmark` werkwijze van de`DocumentBuilder` object om de bladwijzer op een specifieke tabelkolom te starten. Hier is een voorbeeldcode:
-
-```csharp
-builder.StartBookmark("MyBookmark");
-```
-
-#### Vraag: Hoe krijg ik toegang tot de inhoud van tabelkolommen vanuit een bladwijzer met Aspose.Words voor .NET?
-
-A: Om toegang te krijgen tot de inhoud van een tabelkolom vanuit een bladwijzer met behulp van Aspose.Words voor .NET, kunt u door alle bladwijzers in het document bladeren, controleren of een bladwijzer een kolom is en de index van de kolom gebruiken om toegang te krijgen tot de inhoud van die kolom. Hier is een voorbeeldcode:
-
-```csharp
-foreach(Bookmark bookmark in doc.Range.Bookmarks)
-{
-     if (bookmark.IsColumn)
-     {
-         if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-         {
-             string content = row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar);
-             // Doe iets met de inhoud van de kolom...
-         }
-     }
-}
-```
-
-#### Vraag: Is er een limiet aan het aantal kolommen dat ik kan maken in een tabel met kolombladwijzers?
-
-A: Er is geen specifieke limiet voor het aantal kolommen dat u kunt maken in een tabel met kolombladwijzers met behulp van Aspose.Words voor .NET. De limiet hangt vooral af van de beschikbare bronnen op uw systeem en de specificaties van het Word-bestandsformaat dat u gebruikt. Het wordt echter aanbevolen om geen buitensporig groot aantal kolommen te maken, omdat dit de prestaties en leesbaarheid van het uiteindelijke document kan beïnvloeden.
+### Is er een proefversie van Aspose.Words voor .NET beschikbaar?
+ Ja, u kunt een gratis proefperiode krijgen van[hier](https://releases.aspose.com/).

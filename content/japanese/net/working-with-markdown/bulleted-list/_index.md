@@ -28,7 +28,7 @@ builder.ListFormat.ApplyBulletDefault();
 
 ## ステップ3: 箇条書きの書式をカスタマイズする
 
-箇条書きの書式は、以下のプロパティにアクセスすることでカスタマイズできます。`ListFormat.List.ListLevels[0]`この例では、ダッシュ「-」を箇条書きとして使用します。
+箇条書きの書式は、以下のプロパティにアクセスしてカスタマイズできます。`ListFormat.List.ListLevels[0]`この例では、ダッシュ「-」を箇条書きとして使用します。
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";

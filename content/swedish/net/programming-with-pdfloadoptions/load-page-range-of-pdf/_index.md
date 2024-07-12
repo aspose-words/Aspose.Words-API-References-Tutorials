@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- I det här exemplet laddar vi den första sidan av PDF-dokumentet. Du kan ändra värdena på`PageIndex` och`PageCount` till önskat sidintervall.
+ I det här exemplet laddar vi den första sidan av PDF-dokumentet. Du kan ändra värdena på`PageIndex`och`PageCount` till önskat sidintervall.
 
 ## Steg 2: Spara dokumentet
 

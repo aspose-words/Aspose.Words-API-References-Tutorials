@@ -33,7 +33,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- V tomto kroku nakonfigurujeme možnosti uložení OOXML pomocí`OptimizeFor` a`OoxmlSaveOptions` metody. Optimalizujeme kompatibilitu dokumentů pro verzi Word 2016 pomocí`OptimizeFor` nastavte shodu na`Iso29500_2008_Strict` použitím`Compliance`.
+ V tomto kroku nakonfigurujeme možnosti uložení OOXML pomocí`OptimizeFor`a`OoxmlSaveOptions` metody. Optimalizujeme kompatibilitu dokumentů pro verzi Word 2016 pomocí`OptimizeFor` nastavte shodu na`Iso29500_2008_Strict` použitím`Compliance`.
 
 ## Krok 4: Uložení dokumentu pomocí Ooxml Iso 29500_2008_Strict compliance
 

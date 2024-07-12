@@ -55,7 +55,7 @@ string customPropertyValue = customProperty.Value.ToString();
 
 Este código adiciona uma propriedade relacionada ao conteúdo chamada "Bookmark" com o marcador "MyBookmark". Em seguida, ele recupera informações de propriedade relacionadas ao conteúdo, como status do link, origem do link e valor da propriedade.
 
-### Exemplo de código-fonte para configurar link para conteúdo usando Aspose.Words for .NET
+### Exemplo de código-fonte para configurar link para conteúdo usando Aspose.Words para .NET
 
 ```csharp
 

@@ -106,8 +106,8 @@ Um die Umgebung einzurichten, müssen Sie sicherstellen, dass Aspose.Words für 
 
 #### Wie kann ich unterschiedliche Stile auf unterschiedliche Textabschnitte anwenden?
 
- Sie können verschiedene Stile auf verschiedene Textabschnitte anwenden, indem Sie die`ParagraphFormat.StyleName` Eigentum der`DocumentBuilder`Objekt. Bevor Sie den Text schreiben, können Sie den Stilnamen auf den gewünschten Stil setzen, und der folgende Text wird entsprechend formatiert.
+Sie können unterschiedliche Stile auf unterschiedliche Textabschnitte anwenden, indem Sie die`ParagraphFormat.StyleName` Eigentum der`DocumentBuilder` Objekt. Bevor Sie den Text schreiben, können Sie den Stilnamen auf den gewünschten Stil setzen, und der folgende Text wird entsprechend formatiert.
 
 #### Kann ich das Dokument in verschiedenen Formaten speichern?
 
- Ja, Sie können das Dokument in verschiedenen von Aspose.Words für .NET unterstützten Formaten speichern.`Save` Methode der`Document` Mit dem Objekt können Sie das Ausgabedateiformat angeben, z. B. DOCX, PDF, HTML usw. Wählen Sie das geeignete Format entsprechend Ihren Anforderungen aus.
+ Ja, Sie können das Dokument in verschiedenen von Aspose.Words für .NET unterstützten Formaten speichern. Die`Save` Methode der`Document` Mit dem Objekt können Sie das Ausgabedateiformat angeben, z. B. DOCX, PDF, HTML usw. Wählen Sie das geeignete Format entsprechend Ihren Anforderungen aus.

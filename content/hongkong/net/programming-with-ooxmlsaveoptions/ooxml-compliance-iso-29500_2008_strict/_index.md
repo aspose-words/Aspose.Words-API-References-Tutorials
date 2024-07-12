@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_strict/
 ---
 
-在本教程中，我們將探索所提供的 C# 原始程式碼，以確保在使用 Aspose.Words for .NET 保存文件時確保 Ooxml Iso 29500_2008_Strict 合規性。此功能可確保產生的文件符合 ISO 29500_2008_Strict 規格。
+在本教程中，我們將探索提供的 C# 原始程式碼，以確保在使用 Aspose.Words for .NET 保存文件時確保 Ooxml Iso 29500_2008_Strict 合規性。此功能可確保產生的文件符合 ISO 29500_2008_Strict 規格。
 
 ## 第一步：建構環境
 

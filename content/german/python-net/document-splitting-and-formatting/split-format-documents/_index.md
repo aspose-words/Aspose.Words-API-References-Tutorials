@@ -1,8 +1,8 @@
 ---
 title: Effiziente Strategien zur Dokumentaufteilung und -formatierung
 linktitle: Effiziente Strategien zur Dokumentaufteilung und -formatierung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für Python Dokumente effizient aufteilen und formatieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung und Quellcodebeispiele.
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+description: Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Python effizient aufteilen und formatieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung und Quellcodebeispiele.
 type: docs
 weight: 10
 url: /de/python-net/document-splitting-and-formatting/split-format-documents/
@@ -68,7 +68,7 @@ for i, section in enumerate(sections):
 ```
 
 ### Kann ich verschiedenen Absätzen innerhalb eines Abschnitts unterschiedliche Formatierungen zuweisen?
-Ja, Sie können Absätzen innerhalb eines Abschnitts unterschiedliche Formatierungen zuweisen. Gehen Sie durch die Absätze im Abschnitt und wenden Sie die gewünschte Formatierung mithilfe der`paragraph.runs` Eigentum.
+Ja, Sie können Absätzen innerhalb eines Abschnitts unterschiedliche Formatierungen zuweisen. Gehen Sie die Absätze im Abschnitt durch und wenden Sie die gewünschte Formatierung mithilfe der`paragraph.runs` Eigentum.
 
 ```python
 for paragraph in section.paragraphs:
@@ -97,4 +97,4 @@ document.sections.remove(section_to_remove)
 ## Abschluss
 Aspose.Words für Python bietet einen umfassenden Satz an Tools, um Dokumente effizient nach Ihren Anforderungen aufzuteilen und zu formatieren. Indem Sie die in diesem Tutorial beschriebenen Schritte befolgen und die bereitgestellten Quellcodebeispiele verwenden, können Sie Ihre Dokumente nahtlos verwalten und professionell präsentieren.
 
-In diesem Tutorial haben wir die Grundlagen der Dokumentaufteilung und -formatierung behandelt und Lösungen für häufig gestellte Fragen bereitgestellt. Jetzt sind Sie an der Reihe, die Funktionen von Aspose.Words für Python zu erkunden und damit zu experimentieren, um Ihren Dokumentenverwaltungs-Workflow weiter zu verbessern.
+In diesem Tutorial haben wir die Grundlagen der Dokumentenaufteilung und -formatierung behandelt und Lösungen für häufig gestellte Fragen bereitgestellt. Jetzt sind Sie an der Reihe, die Funktionen von Aspose.Words für Python zu erkunden und damit zu experimentieren, um Ihren Dokumentenverwaltungs-Workflow weiter zu verbessern.

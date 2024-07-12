@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## Krok 3: Upravte zdrojový kód makra
- Nyní upravíme zdrojový kód prvního makra projektu VBA. Nahradit`newSourceCode` proměnnou s novým zdrojovým kódem, který chcete použít.
+Nyní upravíme zdrojový kód prvního makra projektu VBA. Nahradit`newSourceCode` proměnnou s novým zdrojovým kódem, který chcete použít.
 
 ```csharp
 const string newSourceCode = "Test change source code";

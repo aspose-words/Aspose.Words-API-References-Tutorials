@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Questo codice crea un'istanza di`Document` E`DocumentBuilder` per costruire il documento. Inserisce un`<img>` tag nel documento con un'immagine codificata base64.
+ Questo codice crea un'istanza di`Document`E`DocumentBuilder` per costruire il documento. Inserisce un`<img>` tag nel documento con un'immagine codificata base64.
 
 ## Passaggio 3: imposta le opzioni di salvataggio HTML
 

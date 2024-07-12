@@ -2,49 +2,57 @@
 title: เก็บแหล่งที่มาไว้ด้วยกัน
 linktitle: เก็บแหล่งที่มาไว้ด้วยกัน
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีใช้ Aspose.Words สำหรับ .NET เพื่อเข้าร่วมและผนวกเอกสาร Word ในขณะที่ยังคงรักษาเนื้อหาต้นฉบับไว้พร้อมกับเอกสารปลายทาง
+description: เรียนรู้วิธีผสานเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ในขณะที่ยังคงการจัดรูปแบบไว้ คู่มือที่ครอบคลุมนี้ครอบคลุมทุกอย่างตั้งแต่การตั้งค่าไปจนถึงการดำเนินการ
 type: docs
 weight: 10
 url: /th/net/join-and-append-documents/keep-source-together/
 ---
+## การแนะนำ
 
-บทช่วยสอนนี้จะแนะนำคุณตลอดกระบวนการใช้ฟีเจอร์ Keep Source Together ของ Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณสามารถเข้าร่วมและผนวกเอกสาร Word หลายชุดโดยยังคงรักษาเนื้อหาของเอกสารต้นทางร่วมกับเนื้อหาของเอกสารปลายทาง 
+ในยุคดิจิทัลปัจจุบัน การจัดการเอกสาร Word โดยทางโปรแกรมถือเป็นสิ่งสำคัญในอุตสาหกรรมต่างๆ Aspose.Words สำหรับ .NET ช่วยให้นักพัฒนาสามารถจัดการเอกสารอัตโนมัติได้อย่างมีประสิทธิภาพ คู่มือที่ครอบคลุมนี้จะแนะนำคุณตลอดกระบวนการรวมเอกสารโดยยังคงรักษาการจัดรูปแบบต้นฉบับโดยใช้ Aspose.Words สำหรับ .NET
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+ก่อนที่จะเจาะลึกเรื่องการรวมเอกสารกับ Aspose.Words สำหรับ .NET ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
-1. ติดตั้ง Aspose.Words สำหรับ .NET แล้ว คุณสามารถดาวน์โหลดได้จากเว็บไซต์ Aspose หรือติดตั้งผ่าน NuGet
-2. Visual Studio หรือสภาพแวดล้อมการพัฒนา C# อื่น ๆ
+- Visual Studio: สภาพแวดล้อมการพัฒนาแบบรวม (IDE) สำหรับการพัฒนา .NET
+- Aspose.Words สำหรับ .NET: ติดตั้งและตั้งค่าในสภาพแวดล้อมการพัฒนาของคุณ
+- ความคุ้นเคยกับ C#: ความเข้าใจพื้นฐานเกี่ยวกับภาษาการเขียนโปรแกรม C#
 
-## ขั้นตอนที่ 1: เริ่มต้นไดเร็กทอรีเอกสาร
+## นำเข้าเนมสเปซ
 
- ขั้นแรก คุณต้องกำหนดเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แก้ไขค่าของ`dataDir` ตัวแปรไปยังเส้นทางที่เอกสารของคุณอยู่
+ในการเริ่มต้น ให้นำเข้าเนมสเปซที่จำเป็น:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## ขั้นตอนที่ 2: โหลดเอกสารต้นทางและปลายทาง
+## ขั้นตอนที่ 1: โหลดเอกสาร
 
-ถัดไป คุณต้องโหลดเอกสารต้นทางและปลายทางโดยใช้ Aspose.Words`Document` ระดับ. อัพเดตชื่อไฟล์ใน`Document` ตัวสร้างตามชื่อเอกสารของคุณ
+ ขั้นแรก โหลดเอกสารต้นทางและปลายทางลงใน Aspose.Words`Document` วัตถุ
 
 ```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+// โหลดเอกสารต้นทางและปลายทาง
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## ขั้นตอนที่ 3: ตั้งค่าเอกสารต้นฉบับให้ปรากฏหลังจากเนื้อหาของเอกสารปลายทาง
+## ขั้นตอนที่ 2: ตั้งค่าการเริ่มต้นส่วน
 
- เพื่อให้แน่ใจว่าเอกสารต้นทางปรากฏขึ้นทันทีหลังจากเนื้อหาของเอกสารปลายทาง คุณต้องตั้งค่า`SectionStart` คุณสมบัติของส่วนแรกในเอกสารต้นฉบับถึง`SectionStart.Continuous`.
+กำหนดค่าการเริ่มต้นส่วนเพื่อให้แน่ใจว่าเนื้อหาเอกสารต้นทางจะไหลอย่างต่อเนื่องหลังจากเอกสารปลายทาง
 
 ```csharp
+// ตั้งค่าเอกสารต้นทางให้ปรากฏต่อจากเนื้อหาของเอกสารปลายทาง
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## ขั้นตอนที่ 4: ตั้งค่าการจัดรูปแบบย่อหน้า "Keep with Next" สำหรับเอกสารต้นฉบับ
+## ขั้นตอนที่ 3: เก็บย่อหน้าไว้ด้วยกัน
 
- หากต้องการเก็บย่อหน้าในเอกสารต้นฉบับไว้ด้วยกัน คุณสามารถวนซ้ำแต่ละย่อหน้าในเอกสารและตั้งค่า`KeepWithNext`ทรัพย์สินเพื่อ`true`.
+เพื่อรักษาความสมบูรณ์ของการจัดรูปแบบ ให้ทำเครื่องหมายแต่ละย่อหน้าในเอกสารต้นฉบับเพื่อให้อยู่กับย่อหน้าถัดไป
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## ขั้นตอนที่ 5: ผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทาง
+## ขั้นตอนที่ 4: ผนวกเอกสาร
 
- ตอนนี้คุณสามารถผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทางได้โดยใช้`AppendDocument` วิธีการของ`Document` ระดับ. ที่`ImportFormatMode.KeepSourceFormatting` พารามิเตอร์ช่วยให้มั่นใจได้ว่าการจัดรูปแบบต้นฉบับจะถูกรักษาไว้ระหว่างการดำเนินการผนวก
+ รวมเอกสารโดยใช้`AppendDocument` วิธีการเพื่อให้มั่นใจว่าจะรักษารูปแบบของเอกสารต้นฉบับไว้
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## ขั้นตอนที่ 6: บันทึกเอกสารขั้นสุดท้าย
+## ขั้นตอนที่ 5: บันทึกเอกสารที่ผสาน
 
- สุดท้าย ให้บันทึกเอกสารที่ผสานด้วยคุณลักษณะ "Keep Source Together" ที่เปิดใช้งานโดยใช้`Save` วิธีการของ`Document` ระดับ.
+สุดท้าย ให้บันทึกเอกสารที่ผสานไปยังตำแหน่งที่ต้องการ
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### ตัวอย่างซอร์สโค้ดสำหรับ Keep Source Together โดยใช้ Aspose.Words สำหรับ .NET 
+## บทสรุป
 
-นี่คือซอร์สโค้ดแบบเต็มสำหรับฟีเจอร์ "Keep Source Together" ใน C# โดยใช้ Aspose.Words สำหรับ .NET:
+โดยสรุป Aspose.Words สำหรับ .NET ช่วยให้งานการรวมเอกสาร Word ง่ายขึ้น ขณะเดียวกันก็รักษาการจัดรูปแบบดั้งเดิมไว้ได้อย่างราบรื่น ความสามารถนี้มีความสำคัญอย่างยิ่งสำหรับแอปพลิเคชันที่ต้องการการประมวลผลเอกสารอัตโนมัติ
 
+## คำถามที่พบบ่อย
 
-```csharp
-	// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Aspose.Words สำหรับ .NET สามารถรวมเอกสารที่มีรูปแบบต่างกันได้หรือไม่
+ใช่ มันสามารถรวมเอกสารโดยไม่คำนึงถึงรูปแบบ โดยคงการจัดรูปแบบต้นฉบับไว้
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// ตั้งค่าเอกสารต้นทางให้ปรากฏต่อจากเนื้อหาของเอกสารปลายทาง
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### Aspose.Words สำหรับ .NET รองรับการรวมเอกสารขนาดใหญ่อย่างมีประสิทธิภาพหรือไม่
+รองรับเอกสารขนาดใหญ่ด้วยประสิทธิภาพสูงสุดอย่างแน่นอน
 
-แค่นั้นแหละ! คุณใช้งานฟีเจอร์ Keep Source Together สำเร็จแล้วโดยใช้ Aspose.Words สำหรับ .NET เอกสารขั้นสุดท้ายจะมีเนื้อหาที่ผสานกับย่อหน้าในเอกสารต้นฉบับที่เก็บไว้ด้วยกัน
+### มีรุ่นทดลองใช้สำหรับ Aspose.Words สำหรับ .NET หรือไม่
+ ใช่ คุณสามารถดาวน์โหลดรุ่นทดลองใช้ฟรีได้[ที่นี่](https://releases.aspose.com/).
+
+### ฉันจะรับการสนับสนุนด้านเทคนิคสำหรับ Aspose.Words สำหรับ .NET ได้อย่างไร
+ การสนับสนุนด้านเทคนิคมีให้ผ่านทาง[ฟอรั่ม Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### ฉันสามารถซื้อใบอนุญาตชั่วคราวสำหรับ Aspose.Words สำหรับ .NET ได้หรือไม่
+ ใช่ คุณสามารถขอรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/).

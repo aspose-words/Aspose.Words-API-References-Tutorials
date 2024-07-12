@@ -2,139 +2,116 @@
 title: Új aláírási sor létrehozása és aláírása
 linktitle: Új aláírási sor létrehozása és aláírása
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan hozhat létre és írhat alá új aláírási sort egy Word-dokumentumban az Aspose.Words for .NET segítségével.
+description: Ebből a lépésről lépésre mutató oktatóanyagból megtudhatja, hogyan hozhat létre és digitálisan írhat alá aláírási sort egy Word-dokumentumban az Aspose.Words for .NET használatával. Ideális dokumentumautomatizáláshoz.
 type: docs
 weight: 10
 url: /hu/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
-Ebben az oktatóanyagban végigvezetjük az Aspose.Words for .NET-hez tartozó aláírási vonal létrehozása és aláírása funkció használatának lépésein. Ez a funkció lehetővé teszi aláírási sor beszúrását egy Word dokumentumba, egyéni beállítások megadását és a dokumentum aláírását. Kövesse az alábbi lépéseket:
+## Bevezetés
 
-## 1. lépés: A dokumentum és a generátor létrehozása
+Halihó! Tehát van egy Word-dokumentuma, és hozzá kell adnia egy aláírási sort, majd digitálisan alá kell írnia. Trükkösnek hangzik? Egyáltalán nem! Az Aspose.Words for .NET-nek köszönhetően ezt zökkenőmentesen elérheti néhány sornyi kóddal. Ebben az oktatóanyagban végigvezetjük a teljes folyamaton, a környezet beállításától a dokumentum csillogó új aláírással történő mentéséig. Kész? Merüljünk el!
 
-Először hozzon létre egy példányt a Document osztályból és egy DocumentBuilder objektumból:
+## Előfeltételek
+
+Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
+1.  Aspose.Words for .NET – Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+2. A .NET fejlesztői környezet – Visual Studio erősen ajánlott.
+3. Aláírandó dokumentum – Hozzon létre egy egyszerű Word-dokumentumot, vagy használjon egy meglévőt.
+4.  Tanúsítványfájl – Ez a digitális aláírásokhoz szükséges. Használhatja a`.pfx` fájlt.
+5. Képek az aláírássorhoz – opcionálisan egy képfájl az aláíráshoz.
+
+## Névterek importálása
+
+Először is importálnunk kell a szükséges névtereket. Ez a lépés kulcsfontosságú, mivel beállítja az Aspose.Words funkciók használatának környezetét.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Signing;
+```
+
+## 1. lépés: A dokumentumkönyvtár beállítása
+
+Minden projekthez jó kezdés szükséges. Állítsuk be a dokumentumkönyvtár elérési útját. Ez az a hely, ahol a dokumentumok mentése és visszakeresése történik.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## 2. lépés: Új dokumentum létrehozása
+
+Most hozzunk létre egy új Word-dokumentumot az Aspose.Words használatával. Ez lesz a vásznunk, ahol hozzáadjuk az aláírási sort.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: Az aláírási sor beszúrása
+## 3. lépés: Az aláírási sor beszúrása
 
-A DocumentBuilder objektum InsertSignatureLine() metódusával új aláírási sort illeszthet be a dokumentumba:
+ Itt történik a varázslat. A dokumentumunkba egy aláírási sort szúrunk be a`DocumentBuilder` osztály.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## 3. lépés: Mentse el a dokumentumot
+## 4. lépés: A dokumentum mentése az aláírási sorral
 
-Mentse el a módosított dokumentumot:
+Miután az aláírási sor a helyére került, el kell mentenünk a dokumentumot. Ez egy közbülső lépés az aláírás előtt.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-Ügyeljen arra, hogy a megfelelő elérési utat és fájlnevet adja meg a dokumentum mentéséhez.
+## 5. lépés: Az aláírási lehetőségek beállítása
 
-## 4. lépés: A dokumentum aláírása
-
-A dokumentum aláírásához be kell állítania az aláírási beállításokat, és használnia kell a DigitalSignatureUtil osztályt:
+Most állítsuk be a dokumentum aláírásának lehetőségeit. Ez magában foglalja az aláírási sor azonosítójának és a használandó kép megadását.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-	SignatureLineId = signatureLine.Id,
-	SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes(dataDir + "Enhanced Windows MetaFile.emf")
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-	dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
 ```
 
-Ügyeljen arra, hogy a megfelelő elérési utat adja meg a dokumentumhoz, az aláírási sor képéhez és az aláírt dokumentumhoz.
+## 6. lépés: A tanúsítvány betöltése
 
-### Példa forráskód új aláírási sor létrehozásához és aláírásához az Aspose.Words for .NET használatával
-
-Íme a teljes forráskód egy új aláírási sor létrehozásához és aláírásához az Aspose.Words for .NET-hez:
+A digitális aláírásokhoz tanúsítvány szükséges. Itt betöltjük a tanúsítványfájlt, amely a dokumentum aláírására szolgál.
 
 ```csharp
-
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-		dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Ha követi ezeket a lépéseket, könnyen létrehozhat és aláírhat egy új aláírási sort a Word-dokumentumban az Aspose.Words for .NET segítségével.
+## 7. lépés: A dokumentum aláírása
+
+ Ez az utolsó lépés. Használjuk a`DigitalSignatureUtil`osztályt aláírni a dokumentumot. Az aláírt dokumentum új néven kerül mentésre.
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
+    dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
+```
 
 ## Következtetés
 
-Ebben az oktatóanyagban megtanultuk, hogyan lehet új aláírási sort létrehozni és aláírni egy Word-dokumentumban az Aspose.Words for .NET használatával. A megadott lépések követésével egyszerűen beilleszthet egy aláírási sort a dokumentumba, testreszabhatja annak beállításait, és aláírhatja a dokumentumot digitális tanúsítvánnyal. Aláírási sorok és digitális aláírások hozzáadása a dokumentumokhoz növeli azok hitelességét és integritását, így biztonságosabbá és megbízhatóbbá válik. Az Aspose.Words for .NET hatékony API-t biztosít a Word Processing-hoz aláírásokkal és digitális tanúsítványokkal a Word dokumentumokban, lehetővé téve az aláírási folyamat automatizálását és a dokumentumok érvényességének biztosítását.
+És megvan! Ezekkel a lépésekkel sikeresen létrehozott egy új Word-dokumentumot, hozzáadott egy aláírási sort, és digitálisan aláírta az Aspose.Words for .NET használatával. Ez egy hatékony eszköz, amely a dokumentumautomatizálást gyerekjátékká teszi. Legyen szó szerződésekről, megállapodásokról vagy bármilyen hivatalos dokumentumról, ez a módszer biztosítja azok biztonságos aláírását és hitelesítését.
 
-### GYIK
+## GYIK
 
-#### K: Mi az aláírássor egy Word-dokumentumban?
+### Használhatok más képformátumokat az aláírási sorhoz?
+Igen, különféle képformátumokat használhat, például PNG, JPG, BMP stb.
 
-V: A Word-dokumentumban lévő aláírássor egy helyőrző, amely jelzi, hová kell elhelyezni az aláírást. Általában tartalmazza a nevet, a címet és a dátumot, és helyet biztosít a kézzel írott vagy digitális aláírásnak.
+###  Szükséges-e használni a`.pfx` file for the certificate?
+ Igen, egy`.pfx` fájl egy elterjedt formátum a kriptográfiai információk, köztük a tanúsítványok és privát kulcsok tárolására.
 
-#### K: Hogyan hozhatok létre aláírási sort egy Word-dokumentumban az Aspose.Words for .NET használatával?
+### Hozzáadhatok több aláírási sort egyetlen dokumentumhoz?
+Teljesen! Több aláírási sort is beszúrhat úgy, hogy minden aláírásnál megismétli a beszúrási lépést.
 
-V: Aláírási sor létrehozásához egy Word-dokumentumban az Aspose.Words for .NET használatával, kövesse az alábbi lépéseket:
-1.  Hozzon létre egy példányt a`Document` osztály és a`DocumentBuilder` tárgy.
-2.  Használja a`InsertSignatureLine` módszere a`DocumentBuilder` objektumot egy új aláírási sor beillesztéséhez a dokumentumba.
-3. Mentse el a módosított dokumentumot.
+### Mi a teendő, ha nincs digitális tanúsítványom?
+Be kell szereznie egy digitális tanúsítványt egy megbízható tanúsító hatóságtól, vagy létre kell hoznia egyet olyan eszközökkel, mint az OpenSSL.
 
-#### K: Testreszabhatom az aláírási sor beállításait, például a nevet, a címet és a dátumot?
-
- V: Igen, testreszabhatja az aláírási sor beállításait. A`SignatureLineOptions` osztály tulajdonságokat biztosít a kívánt opciók beállításához, mint pl`Signer`, `SignerTitle`, `ShowDate`, stb. Az aláírási sor beszúrása előtt módosíthatja ezeket a tulajdonságokat.
-
-#### K: Hogyan írhatom alá a dokumentumot aláírási sor létrehozása után?
-
- V: A dokumentum aláírásához aláírási sor létrehozása után be kell állítania az aláírási beállításokat, és használnia kell a`DigitalSignatureUtil` osztály. Íme a lépések:
-1.  Állítsa be a`SignatureLineId` ingatlan a`SignOptions` objektumot az aláírási sor azonosítójára.
-2.  Állítsa be a`SignatureLineImage` ingatlan a`SignOptions` tiltakozzon a használni kívánt aláírás képére.
-3.  Töltse be az aláíró tanúsítványt a`CertificateHolder` osztály.
-4.  Használja a`DigitalSignatureUtil.Sign` a dokumentum aláírásának módja, megadva a szükséges paramétereket.
-
-#### K: Használhatok digitális aláírási képet a dokumentum aláírásához?
-
- V: Igen, használhat digitális aláírási képet a dokumentum aláírásához. Ehhez meg kell adnia a képfájlt a`SignOptions` objektum segítségével`SignatureLineImage`ingatlan. A kép bármilyen támogatott képformátumban lehet, például JPEG, PNG vagy EMF.
-
-#### K: Mi a célja egy új aláírási sor létrehozásának és aláírásának egy Word dokumentumban?
-
-V: Új aláírási sor létrehozása és aláírása egy Word-dokumentumban az Aspose.Words for .NET használatával lehetővé teszi, hogy helyőrzőt adjon az aláíráshoz, majd aláírja a dokumentumot digitális tanúsítvánnyal. Ez a folyamat biztosítja a dokumentum hitelességét és sértetlenségét, bizonyítva a jóváhagyást vagy az egyetértést.
-
-#### K: Létrehozhatok és aláírhatok több aláírási sort egy Word-dokumentumban az Aspose.Words for .NET használatával?
-
-V: Igen, az Aspose.Words for .NET használatával több aláírási sort is létrehozhat és aláírhat egy Word-dokumentumban. Minden aláírási sor saját egyedi azonosítóval és opciókkal rendelkezhet. A lépéseket megismételheti további aláírási sorok létrehozásához és aláírásához a dokumentumban.
-
-#### K: Módosíthatom az aláírási sort vagy adhatok hozzá további információkat az aláírás után?
-
-V: Az aláírási sor aláírása után a dokumentum tartalmának részévé válik, és külön nem módosítható. Az aláírt aláírási sor után azonban további információkat vagy tartalmat adhat hozzá.
-
-#### K: Ellenőrizhetem egy aláírási sort tartalmazó dokumentum digitális aláírását?
-
- V: Igen, az Aspose.Words for .NET funkciót biztosít az aláírássort tartalmazó dokumentumok digitális aláírásának ellenőrzésére. Használhatja a`DigitalSignatureUtil.Verify` módszer a digitális aláírás érvényességének és hitelességének ellenőrzésére.
-
-#### K: Milyen fájlformátumot támogat az Aspose.Words for .NET az aláírási sorok létrehozásához és aláírásához?
-
-V: Az Aspose.Words for .NET támogatja az aláírási sorok létrehozását és aláírását DOCX fájlformátumban. Létrehozhat és aláírhat aláírási sorokat DOCX-fájlokban a megadott metódusok és osztályok használatával.
+### Hogyan ellenőrizhetem a digitális aláírást a dokumentumban?
+Megnyithatja az aláírt dokumentumot a Wordben, és az aláírás részleteihez lépve ellenőrizheti az aláírás hitelességét és integritását.

@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/programming-with-shapes/vertical-anchor/
 ---
 
-Questo tutorial spiega come utilizzare la funzionalità di ancoraggio verticale in Aspose.Words per .NET per posizionare una forma verticalmente all'interno di un documento. Impostando la proprietà di ancoraggio verticale di una forma, puoi controllarne l'allineamento verticale rispetto al testo o alla pagina.
+Questo tutorial spiega come utilizzare la funzione di ancoraggio verticale in Aspose.Words per .NET per posizionare una forma verticalmente all'interno di un documento. Impostando la proprietà di ancoraggio verticale di una forma, puoi controllarne l'allineamento verticale rispetto al testo o alla pagina.
 
 ## Prerequisiti
 Per seguire questo tutorial, è necessario disporre di quanto segue:
@@ -17,14 +17,14 @@ Per seguire questo tutorial, è necessario disporre di quanto segue:
 - Conoscenza base di C# ed elaborazione testi con documenti Word.
 
 ## Passaggio 1: impostare la directory dei documenti
- Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui desideri salvare il documento.
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo della directory in cui desideri salvare il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Passaggio 2: crea un nuovo documento e DocumentBuilder
- Crea una nuova istanza di`Document` classe e a`DocumentBuilder`oggetto di lavorare con il documento.
+ Crea una nuova istanza di`Document` classe e a`DocumentBuilder` oggetto di lavorare con il documento.
 
 ```csharp
 Document doc = new Document();

@@ -42,7 +42,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Alkalmazza az alapértelmezett számozást
 
- Számozott listával kezdéshez használja a`ApplyNumberDefault` módszer. Ezzel beállítja az alapértelmezett számozott lista formázást.
+ A számozott listával kezdéshez használja a`ApplyNumberDefault` módszer. Ezzel beállítja az alapértelmezett számozott lista formázást.
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
@@ -125,7 +125,7 @@ Ezzel elmenti a gyönyörűen formázott dokumentumot többszintű listákkal.
  Igen, a számozást a gombbal folytathatja`ListFormat.List` tulajdonság egy meglévő listára való hivatkozáshoz.
 
 ### Hogyan változtathatom meg dinamikusan a behúzás szintjét?
- A használatával dinamikusan módosíthatja a behúzási szintet`ListIndent` és`ListOutdent` módszereket szükség szerint.
+ A használatával dinamikusan módosíthatja a behúzási szintet`ListIndent`és`ListOutdent` módszereket szükség szerint.
 
 ### Létrehozhatok többszintű listákat más dokumentumformátumokban, például PDF-ben?
 Igen, az Aspose.Words támogatja a dokumentumok mentését különféle formátumokban, beleértve a PDF-formátumot is, fenntartva a formázást.

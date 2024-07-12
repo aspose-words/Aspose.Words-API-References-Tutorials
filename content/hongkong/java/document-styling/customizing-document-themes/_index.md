@@ -2,7 +2,7 @@
 title: 自訂文件主題
 linktitle: 自訂文件主題
 second_title: Aspose.Words Java 文件處理 API
-description: 了解如何使用 Aspose.Words for Java 自訂文件主題。這個綜合指南提供了逐步說明和原始程式碼範例。
+description: 了解如何使用 Aspose.Words for Java 自訂文件主題。本綜合指南提供了逐步說明和原始程式碼範例。
 type: docs
 weight: 12
 url: /zh-hant/java/document-styling/customizing-document-themes/
@@ -120,6 +120,6 @@ Aspose.Words for Java 提供了一組預訂主題，您可以將其用作自訂�
 
 ## 結論
 
-使用 Aspose.Words for Java 自訂文件主題可讓您在 Java 應用程式中建立具有視覺吸引力且一致的文件。在本指南中，我們介紹了主題自訂的要點，包括更改顏色和字體。透過遵循提供的範例和最佳實踐，您可以掌握自訂文件主題的藝術。
+使用 Aspose.Words for Java 自訂文件主題可讓您在 Java 應用程式中建立具有視覺吸引力且一致的文件。在本指南中，我們介紹了主題自訂的要點，包括更改顏色和字體。透過遵循提供的範例和最佳實踐，您可以掌握自訂文件主題的技巧。
 
 現在您已經掌握了知識和程式碼，可以繼續使用 Aspose.Words 來增強您的 Java 文件處理能力。創建令人驚嘆的文檔，引人注目並給您的用戶留下深刻的印象。

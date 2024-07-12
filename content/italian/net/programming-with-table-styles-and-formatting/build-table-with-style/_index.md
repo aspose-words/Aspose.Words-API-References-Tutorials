@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Passaggio 7: aggiungi contenuto alle celle
- Ora possiamo aggiungere contenuto alle celle utilizzando il file`Writeln()` E`InsertCell()` metodi del costruttore di documenti. In questo esempio aggiungiamo le intestazioni per "Articolo" e "Quantità (
+ Ora possiamo aggiungere contenuto alle celle utilizzando il file`Writeln()`E`InsertCell()` metodi del costruttore di documenti. In questo esempio aggiungiamo le intestazioni per "Articolo" e "Quantità (
 
 kg)" e i dati corrispondenti.
 

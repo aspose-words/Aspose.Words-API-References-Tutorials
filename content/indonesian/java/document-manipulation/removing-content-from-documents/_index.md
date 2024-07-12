@@ -10,7 +10,7 @@ url: /id/java/document-manipulation/removing-content-from-documents/
 
 ## Pengantar Aspose.Words untuk Java
 
-Sebelum kita menyelami teknik penghapusan, mari kita perkenalkan secara singkat Aspose.Words untuk Java. Ini adalah Java API yang menyediakan fitur ekstensif untuk bekerja dengan dokumen Word. Anda dapat membuat, mengedit, mengonversi, dan memanipulasi dokumen Word dengan lancar menggunakan perpustakaan ini.
+Sebelum kita mendalami teknik penghapusan, mari perkenalkan secara singkat Aspose.Words untuk Java. Ini adalah Java API yang menyediakan fitur ekstensif untuk bekerja dengan dokumen Word. Anda dapat membuat, mengedit, mengonversi, dan memanipulasi dokumen Word dengan lancar menggunakan perpustakaan ini.
 
 ## Menghapus Page Break
 

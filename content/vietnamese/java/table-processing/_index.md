@@ -34,7 +34,7 @@ Tìm hiểu cách quản lý hiệu quả các bảng và bố cục trong tài 
 ### [Làm việc với danh sách tài liệu](./working-with-document-lists/)
 Tìm hiểu cách làm việc với danh sách tài liệu trong Java bằng Aspose.Words for Java. Hướng dẫn từng bước này bao gồm các ví dụ về mã nguồn để thao tác tài liệu hiệu quả.
 ### [Tạo bảng và hàng trong tài liệu](./creating-tables-rows/)
-Tìm hiểu cách tạo bảng và hàng trong tài liệu bằng Aspose.Words cho Java. Hãy làm theo hướng dẫn toàn diện này với mã nguồn và các câu hỏi thường gặp.
+Tìm hiểu cách tạo bảng và hàng trong tài liệu bằng Aspose.Words cho Java. Hãy làm theo hướng dẫn toàn diện này với mã nguồn và Câu hỏi thường gặp.
 ### [Định dạng bảng trong tài liệu](./formatting-tables/)
 Nắm vững nghệ thuật định dạng bảng trong tài liệu bằng Aspose.Words cho Java. Khám phá hướng dẫn từng bước và ví dụ về mã nguồn để định dạng bảng chính xác.
 ### [Tạo mục lục](./table-contents-generation/)

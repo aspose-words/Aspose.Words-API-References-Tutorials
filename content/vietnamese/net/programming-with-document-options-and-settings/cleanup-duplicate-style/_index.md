@@ -73,7 +73,7 @@ Câu lệnh này hiển thị số kiểu còn lại sau khi làm sạch.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//Số lượng kiểu sau khi Dọn dẹp đã giảm.
+	// Số lượng kiểu sau khi Dọn dẹp đã giảm.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

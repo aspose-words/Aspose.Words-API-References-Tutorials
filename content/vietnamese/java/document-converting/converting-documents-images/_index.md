@@ -66,7 +66,7 @@ Việc chuyển đổi tài liệu thành hình ảnh trong Java được thực
  Để đặt độ phân giải hình ảnh, hãy sử dụng`setResolution` phương pháp của`ImageSaveOptions` và chỉ định độ phân giải mong muốn tính bằng số chấm trên mỗi inch (DPI).
 
 ### Tôi có thể chuyển đổi các trang cụ thể của tài liệu thành hình ảnh không?
- Có, bạn có thể chỉ định phạm vi trang bằng cách sử dụng`setPageCount` Và`setPageIndex` phương pháp của`ImageSaveOptions` để chuyển đổi các trang cụ thể thành hình ảnh.
+ Có, bạn có thể chỉ định phạm vi trang bằng cách sử dụng`setPageCount`Và`setPageIndex` phương pháp của`ImageSaveOptions` để chuyển đổi các trang cụ thể thành hình ảnh.
 
 ### Aspose.Words cho Java có phù hợp để chuyển đổi tài liệu hàng loạt không?
 Tuyệt đối! Bạn có thể sử dụng Aspose.Words for Java để chuyển đổi hàng loạt nhiều tài liệu thành hình ảnh một cách hiệu quả.

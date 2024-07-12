@@ -1,6 +1,6 @@
 ---
-title: Uyarı Bildirimi Alın
-linktitle: Uyarı Bildirimi Alın
+title: Uyarı Bildirimi Al
+linktitle: Uyarı Bildirimi Al
 second_title: Aspose.Words Belge İşleme API'si
 description: Ayrıntılı kılavuzumuzla Aspose.Words for .NET'te yazı tipi değiştirme bildirimlerini nasıl alacağınızı öğrenin. Belgelerinizin her zaman doğru şekilde oluşturulduğundan emin olun.
 type: docs
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3. Adım: Sayfa Düzenini Güncelleyin
 
- Ara`UpdatePageLayout` yöntem. Bu, belgeyi bellekte işler ve işleme sırasında meydana gelen tüm uyarıları yakalar.
+ Ara`UpdatePageLayout`yöntem. Bu, belgeyi bellekte işler ve işleme sırasında meydana gelen tüm uyarıları yakalar.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ Hayır, değiştirme için yalnızca bir varsayılan yazı tipi belirleyebilirsi
 
 ###  S3: Diğer uyarı türlerini şununla işleyebilir miyim?`IWarningCallback`?
 
- Evet`IWarningCallback` arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
+ Evet`IWarningCallback`arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
 
 ### S4: Aspose.Words desteğini nerede bulabilirim?
 

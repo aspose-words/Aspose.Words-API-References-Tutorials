@@ -56,7 +56,7 @@ doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", sa
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
 // يستخدم Open Office السنتيمترات عند تحديد الأطوال والعروض والتنسيقات الأخرى القابلة للقياس
-// وخصائص المحتوى في المستندات بينما يستخدم MS Office البوصة.
+// وخصائص المحتوى في المستندات بينما يستخدم MS Office البوصات.
 OdtSaveOptions saveOptions = new OdtSaveOptions(); { saveOptions.setMeasureUnit(OdtSaveMeasureUnit.INCHES); }
 doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```

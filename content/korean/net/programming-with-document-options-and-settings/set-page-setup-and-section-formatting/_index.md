@@ -58,6 +58,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
   
 ```
 
-문서를 저장할 디렉토리의 올바른 경로를 지정하십시오.`dataDir` 변하기 쉬운.
+ 문서를 저장할 디렉토리의 올바른 경로를 지정하십시오.`dataDir` 변하기 쉬운.
 
 이제 Aspose.Words for .NET을 사용하여 문서의 레이아웃과 섹션 형식을 구성하는 방법을 배웠습니다. 이 튜토리얼에서 제공되는 단계별 가이드를 따르면 문서의 레이아웃과 서식을 쉽게 사용자 정의할 수 있습니다.

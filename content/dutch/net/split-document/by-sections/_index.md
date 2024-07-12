@@ -84,7 +84,7 @@ Ontdek gerust andere krachtige functies van Aspose.Words voor .NET om uw documen
 Ja, u kunt de splitsingscriteria aanpassen aan uw specifieke behoeften. Naast sectie-einden kunt u het document opsplitsen op basis van andere elementen, zoals koppen, bladwijzers of specifieke inhoud, met behulp van de verschillende functies en methoden van Aspose.Words voor .NET.
 
 #### Vraag 2: Is het mogelijk om de secties weer samen te voegen tot één document?
- Ja, u kunt de afzonderlijke secties weer samenvoegen tot één document door de secties uit meerdere documenten te importeren en te combineren met behulp van de`ImportNode` En`Sections.Add` methoden. Hierdoor kunt u het splitsingsproces omkeren en het originele document reconstrueren.
+ Ja, u kunt de afzonderlijke secties weer samenvoegen tot één document door de secties uit meerdere documenten te importeren en te combineren met behulp van de`ImportNode`En`Sections.Add` methoden. Hierdoor kunt u het splitsingsproces omkeren en het originele document reconstrueren.
 
 #### V3: Zijn er beperkingen op het aantal secties dat kan worden gesplitst met behulp van de functie 'Op secties'?
 Het aantal secties dat kan worden gesplitst met behulp van de functie "Per secties" is afhankelijk van de mogelijkheden van Aspose.Words voor .NET en de beschikbare systeembronnen. Over het algemeen ondersteunt het het splitsen van documenten met een groot aantal secties, maar extreem lange documenten of een zeer groot aantal secties kunnen extra systeembronnen en verwerkingstijd vereisen.

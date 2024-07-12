@@ -91,7 +91,7 @@ R: L'accesso tipizzato in Node.js si riferisce all'uso di tipi di nodo specifici
 
 #### D: Quali sono i vantaggi dell'accesso digitato rispetto all'accesso non digitato?
 
-R: L'accesso digitato presenta numerosi vantaggi rispetto all'accesso non digitato. Innanzitutto, consente una migliore specificità nell'accesso ai nodi, semplificando la manipolazione e la gestione dei nodi in un documento XML. Inoltre, l'accesso digitato fornisce una migliore sicurezza evitando errori di tipo durante l'accesso alle proprietà e ai valori del nodo.
+R: L'accesso digitato presenta diversi vantaggi rispetto all'accesso non digitato. Innanzitutto, consente una migliore specificità nell'accesso ai nodi, semplificando la manipolazione e la gestione dei nodi in un documento XML. Inoltre, l'accesso digitato fornisce una migliore sicurezza evitando errori di tipo durante l'accesso alle proprietà e ai valori del nodo.
 
 #### D: A quali tipi di nodi è possibile accedere con l'accesso digitato?
 

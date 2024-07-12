@@ -45,7 +45,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 // Используйте конструктор документов, чтобы добавить содержимое в документ.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Вставьте гиперссылку.
+//Вставьте гиперссылку.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

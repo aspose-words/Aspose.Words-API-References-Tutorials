@@ -82,7 +82,7 @@ if __name__ == "__main__":
     set_document_password(loaded_document)
 ```
 
-### 6.2 Omezení úprav dokumentu
+### 6.2 Omezení úprav dokumentů
 
 Aspose.Words umožňuje omezit možnosti úprav dokumentu. Můžete určit, které části dokumentu lze upravit a které části zůstanou chráněny.
 

@@ -58,7 +58,7 @@ public class DocumentToImageConverter {
 
 ## Conclusão
 
-conversão de documentos em imagens em Java é facilitada com Aspose.Words for Java. Ele fornece uma maneira robusta e eficiente de lidar com conversões de documentos. Você pode integrar essa funcionalidade em seus aplicativos Java para atender a vários requisitos de processamento de documentos.
+conversão de documentos em imagens em Java é facilitada com Aspose.Words for Java. Ele fornece uma maneira robusta e eficiente de lidar com conversões de documentos. Você pode integrar essa funcionalidade em seus aplicativos Java para atender a diversos requisitos de processamento de documentos.
 
 ## Perguntas frequentes
 
@@ -66,7 +66,7 @@ conversão de documentos em imagens em Java é facilitada com Aspose.Words for J
  Para definir a resolução da imagem, use o`setResolution` método de`ImageSaveOptions` e especifique a resolução desejada em pontos por polegada (DPI).
 
 ### Posso converter páginas específicas do documento em imagens?
- Sim, você pode especificar um intervalo de páginas usando o`setPageCount` e`setPageIndex` métodos de`ImageSaveOptions` para converter páginas específicas em imagens.
+ Sim, você pode especificar um intervalo de páginas usando o`setPageCount`e`setPageIndex` métodos de`ImageSaveOptions` para converter páginas específicas em imagens.
 
 ### O Aspose.Words for Java é adequado para conversão de documentos em lote?
 Absolutamente! Você pode usar Aspose.Words for Java para converter em lote vários documentos em imagens com eficiência.

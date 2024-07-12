@@ -39,7 +39,7 @@ builder.Font.Italic = false;
 
 ## Schritt 4: Anpassen der Setext-Überschriftenebenen
 
-Wir können Setext-Überschriftenebenen anpassen, indem wir neue Absatzformate basierend auf vorhandenen Überschriftenformaten hinzufügen. In diesem Beispiel erstellen wir ein Format „SetextHeading1“ basierend auf dem Format „Heading 1“, um eine Überschrift der Ebene 1 im Setext-Format darzustellen.
+Wir können Setext-Überschriftenebenen anpassen, indem wir neue Absatzstile auf Grundlage vorhandener Überschriftenstile hinzufügen. In diesem Beispiel erstellen wir einen Stil „SetextHeading1“ auf Grundlage des Stils „Heading 1“, um eine Überschrift der Ebene 1 im Setext-Format darzustellen.
 
 ```csharp
 Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");

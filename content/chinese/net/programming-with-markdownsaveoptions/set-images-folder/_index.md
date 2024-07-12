@@ -33,7 +33,7 @@ Document doc = new Document(dataDir + "Image bullet points.docx");
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
 ```
 
-我们创建一个实例`MarkdownSaveOptions`并使用设置图像文件夹的路径`ImagesFolder`属性。请确保指定要保存导出图像的文件夹的正确路径。
+我们创建一个实例`MarkdownSaveOptions`并使用`ImagesFolder`属性。请确保指定要保存导出图像的文件夹的正确路径。
 
 ## 步骤 4：使用 Markdown 导出选项保存文档
 

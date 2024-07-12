@@ -65,7 +65,7 @@ Grattis! Du har nu lärt dig hur du använder bildfunktionen med Aspose.Words f�
 
 #### F: Hur kan jag ändra storlek på en bild i Aspose.Words?
 
- S: För att ändra storlek på en bild i Aspose.Words kan du använda`Width` och`Height` egenskaper hos`Shape` objekt.
+ S: För att ändra storlek på en bild i Aspose.Words kan du använda`Width`och`Height` egenskaper hos`Shape` objekt.
 
 #### F: Kan jag använda filter på bilder i Aspose.Words?
 

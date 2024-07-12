@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Aqui usamos uma condição para verificar se o array é do tipo float. Se sim, imprimimos o`RelativeHorizontalAlignment` e`RelativeVerticalAlignment` propriedades para obter o alinhamento horizontal e vertical relativo da tabela. Caso contrário, imprimimos o`Alignment` propriedade para obter o alinhamento da matriz.
+ Aqui usamos uma condição para verificar se o array é do tipo float. Se sim, imprimimos o`RelativeHorizontalAlignment`e`RelativeVerticalAlignment` propriedades para obter o alinhamento horizontal e vertical relativo da tabela. Caso contrário, imprimimos o`Alignment` propriedade para obter o alinhamento da matriz.
 
 ### Exemplo de código-fonte para obter posição da tabela usando Aspose.Words for .NET 
 
@@ -67,4 +67,4 @@ Console.WriteLine(table.Alignment);
 ```
 
 ## Conclusão
-Neste tutorial, aprendemos como obter a posição de uma tabela em um documento Word usando Aspose.Words for .NET. Seguindo este guia passo a passo e implementando o código C# fornecido, você pode obter propriedades de posicionamento de tabela em seus documentos do Word de forma programática. Este recurso permite analisar e manipular arrays de acordo com suas posições específicas.
+Neste tutorial, aprendemos como obter a posição de uma tabela em um documento Word usando Aspose.Words for .NET. Seguindo este guia passo a passo e implementando o código C# fornecido, você pode obter propriedades de posicionamento de tabela em seus documentos do Word programaticamente. Este recurso permite analisar e manipular arrays de acordo com suas posições específicas.

@@ -55,7 +55,7 @@ document.save("modified_document.docx")
 
 ## 自定义脚注和尾注格式
 
-Aspose.Words 允许您自定义脚注和尾注的外观和格式：
+Aspose.Words允许您自定义脚注和尾注的外观和格式：
 
 - 更改编号样式
 - 调整字体大小和颜色

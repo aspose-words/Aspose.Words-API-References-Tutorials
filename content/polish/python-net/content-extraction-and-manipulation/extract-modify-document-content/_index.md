@@ -79,7 +79,7 @@ shape.get_image_data().set_source("path/to/image.jpg")
 
 ## Zapisywanie zmodyfikowanego dokumentu
 
-Po dokonaniu modyfikacji zapisz dokument:
+Po dokonaniu zmian zapisz dokument:
 
 ```python
 doc.save("path/to/modified/document.docx")

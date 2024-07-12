@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## 2. lépés: Hozzon létre egy új dokumentumot
 
- Rendben, kezdjük egy új Word-dokumentum létrehozásával. Használjuk a`Document` és`DocumentBuilder` osztályok Aspose.Words, hogy a dolgok gördül.
+ Rendben, kezdjük egy új Word-dokumentum létrehozásával. Használjuk a`Document`és`DocumentBuilder` osztályok Aspose.Words, hogy a dolgok gördül.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.

@@ -2,7 +2,7 @@
 title: Textverarbeitung mit Feldern
 linktitle: Textverarbeitung mit Feldern
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Eine umfassende Ressource für die Textverarbeitung mit Feldern in Word-Dokumenten mit Aspose.Words für .NET. Tutorials, Beispiele und ausführliche Erklärungen.
+description: Eine umfassende Ressource für die Textverarbeitung mit Feldern in Word-Dokumenten mithilfe von Aspose.Words für .NET. Tutorials, Beispiele und ausführliche Erklärungen.
 type: docs
 weight: 140
 url: /de/net/working-with-fields/

@@ -65,7 +65,7 @@ builder.InsertNode(shape);
 
 #### P: ¿Cómo puedo cambiar el tamaño de una imagen en Aspose.Words?
 
- R: Para cambiar el tamaño de una imagen en Aspose.Words, puede usar el`Width` y`Height` propiedades de la`Shape` objeto.
+ R: Para cambiar el tamaño de una imagen en Aspose.Words, puede usar el`Width`y`Height` propiedades de la`Shape` objeto.
 
 #### P: ¿Puedo aplicar filtros a imágenes en Aspose.Words?
 

@@ -51,6 +51,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
    
 ```
 
-正しいドキュメントパスを必ず指定してください。`dataDir`変数。
+必ず正しいドキュメントパスを指定してください。`dataDir`変数。
 
 Aspose.Words for .NET を使用して、特定のバージョンの MS Word 用にドキュメントを最適化する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、さまざまなバージョンの MS Word 用に独自のドキュメントを簡単に最適化できます。

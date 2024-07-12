@@ -69,7 +69,7 @@ Trả lời: Có, một số Markdown trong thư viện .NET cung cấp các tù
 
 #### Câu hỏi: Các thư viện .NET được đề xuất để thao tác với tài liệu Markdown là gì?
 
- Trả lời: Các thư viện .NET được đề xuất để thao tác với tài liệu Markdown là`Markdig` Và`CommonMark.NET`. Chúng cung cấp tính linh hoạt cao và hỗ trợ đầy đủ cho các tính năng Markdown.
+ Trả lời: Các thư viện .NET được đề xuất để thao tác với tài liệu Markdown là`Markdig`Và`CommonMark.NET`. Chúng cung cấp tính linh hoạt cao và hỗ trợ đầy đủ cho các tính năng Markdown.
 
 #### Câu hỏi: Làm cách nào để xử lý lỗi khi đọc tài liệu Markdown?
 

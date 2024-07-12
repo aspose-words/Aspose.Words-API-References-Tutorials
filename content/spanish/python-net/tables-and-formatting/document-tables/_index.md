@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Agregar encabezados y pies de página a las tablas:
 
- Las tablas pueden beneficiarse de tener encabezados y pies de página que brinden contexto o información adicional. Puede agregar encabezados y pies de página a las tablas usando el`Table.title` y`Table.description` propiedades.
+ Las tablas pueden beneficiarse de tener encabezados y pies de página que brinden contexto o información adicional. Puede agregar encabezados y pies de página a las tablas usando el`Table.title`y`Table.description` propiedades.
 
 ```python
 # Set table title (header)
@@ -125,7 +125,7 @@ doc.save(output_path)
 
 ## Conclusión:
 
-Optimizar tablas para la presentación de datos es una habilidad que le permite crear documentos con imágenes claras y atractivas. Al aprovechar las capacidades de Aspose.Words para Python, puede diseñar tablas que transmitan eficazmente información compleja manteniendo una apariencia profesional.
+Optimizar tablas para la presentación de datos es una habilidad que le permite crear documentos con imágenes claras y atractivas. Al aprovechar las capacidades de Aspose.Words para Python, puede diseñar tablas que transmitan información compleja de manera efectiva y al mismo tiempo mantengan una apariencia profesional.
 
 ## Preguntas frecuentes:
 

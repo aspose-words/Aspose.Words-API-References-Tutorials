@@ -113,7 +113,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 もちろんです！Aspose.Words for .NETでは、各境界線を個別にカスタマイズできます。`LineStyle`ガイドに示されているように、各境界線の種類ごとに。
 
 ### 他にどのようなシェーディング テクスチャが利用できますか?  
-使用できるテクスチャは、無地、横縞、縦縞などいくつかあります。[Aspose ドキュメント](https://reference.aspose.com/words/net/)完全なリストについてはこちらをご覧ください。
+使用できるテクスチャは、無地、横縞、縦縞など、いくつかあります。[Aspose ドキュメント](https://reference.aspose.com/words/net/)完全なリストについてはこちらをご覧ください。
 
 ### 境界線の色を変更するにはどうすればよいですか?  
 境界線の色は、`Color`各境界線のプロパティを設定します。たとえば、`borders[BorderType.Left].Color = Color.Red;`.

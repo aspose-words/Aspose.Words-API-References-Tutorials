@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signe
 
 ## Stap 3: Controleer op digitale handtekeningen
 
- We controleren of het document digitale handtekeningen bevat met behulp van de`HasDigitalSignature` eigendom van de`FileFormatInfo` voorwerp. Als er digitale handtekeningen worden gedetecteerd, geven we een bericht weer dat aangeeft dat de handtekeningen verloren zullen gaan als het document wordt geopend/opgeslagen met Aspose.Words.
+ We controleren of het document digitale handtekeningen bevat met behulp van de`HasDigitalSignature` eigendom van de`FileFormatInfo` voorwerp. Als digitale handtekeningen worden gedetecteerd, geven we een bericht weer dat aangeeft dat de handtekeningen verloren zullen gaan als het document wordt geopend/opgeslagen met Aspose.Words.
 
 ```csharp
 if (info.HasDigitalSignature)

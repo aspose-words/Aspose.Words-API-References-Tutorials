@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3단계: 첫 번째 테이블의 첫 번째 셀로 이동
- 시작하려면 문서에 있는 첫 번째 테이블의 첫 번째 셀로 이동해야 합니다. 우리는`GetChild()` 그리고`FirstRow.FirstCell` 첫 번째 셀에 대한 참조를 가져오는 방법입니다.
+ 시작하려면 문서에 있는 첫 번째 테이블의 첫 번째 셀로 이동해야 합니다. 우리는`GetChild()`그리고`FirstRow.FirstCell` 첫 번째 셀에 대한 참조를 가져오는 방법입니다.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

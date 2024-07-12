@@ -75,7 +75,7 @@ S: Aspose.Words för .NET är ett kraftfullt bibliotek för ordbehandling med Wo
 
 #### F: Hur laddar jag ett Word-dokument med Aspose.Words för .NET?
 
-S: För att ladda ett Word-dokument med Aspose.Words för .NET, kan du använda`Document` klass och dess konstruktör. Du måste ange dokumentets sökväg eller ström som en parameter. Här är ett exempel:
+ S: För att ladda ett Word-dokument med Aspose.Words för .NET, kan du använda`Document` klass och dess konstruktör. Du måste ange dokumentets sökväg eller ström som en parameter. Här är ett exempel:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

@@ -9,7 +9,7 @@ url: /pl/net/split-document/merge-documents/
 ---
 ## Wstęp
 
-No hej! Czy zdarzyło Ci się kiedyś połączyć wiele dokumentów programu Word w jeden spójny plik? Niezależnie od tego, czy kompilujesz raporty, montujesz projekt, czy po prostu próbujesz uporządkować, scalanie dokumentów może zaoszczędzić mnóstwo czasu i wysiłku. Dzięki Aspose.Words dla .NET proces ten staje się dziecinnie prosty. W tym samouczku omówimy, jak scalić dokumenty programu Word przy użyciu Aspose.Words dla .NET, dzieląc każdy krok, abyś mógł łatwo wykonać wszystkie kroki. Na koniec będziesz łączyć dokumenty jak profesjonalista!
+No hej! Czy zdarzyło Ci się kiedyś połączyć wiele dokumentów programu Word w jeden spójny plik? Niezależnie od tego, czy kompilujesz raporty, montujesz projekt, czy po prostu próbujesz uporządkować, scalanie dokumentów może zaoszczędzić mnóstwo czasu i wysiłku. Dzięki Aspose.Words dla .NET proces ten staje się dziecinnie prosty. W tym samouczku omówimy, jak scalić dokumenty programu Word za pomocą Aspose.Words dla .NET, dzieląc każdy krok, abyś mógł łatwo wykonać wszystkie kroki. Na koniec będziesz łączyć dokumenty jak profesjonalista!
 
 ## Warunki wstępne
 
@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- Na tym etapie łączymy`Document1.docx` I`Document2.docx` do nowego pliku o nazwie`MergedDocument.docx`.
+ Na tym etapie łączymy`Document1.docx`I`Document2.docx` do nowego pliku o nazwie`MergedDocument.docx`.
 
 ## Krok 3: Łączenie z opcjami zapisu
 
@@ -74,7 +74,7 @@ Jeśli chcesz scalić dokumenty i zapisać wynik w formacie PDF, Aspose.Words u�
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Tutaj łączymy`Document1.docx` I`Document2.docx` i zapisz wynik jako plik PDF.
+ Tutaj łączymy`Document1.docx`I`Document2.docx` i zapisz wynik jako plik PDF.
 
 ## Krok 5: Tworzenie instancji dokumentu z połączonych dokumentów
 
@@ -103,7 +103,7 @@ Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom pr
 
 ### 3. Jak sobie poradzić z różnymi formatowaniami podczas łączenia?
 
- Aspose.Words zapewnia różne tryby formatu scalania, takie jak`KeepSourceFormatting` I`MergeFormatting` . Patrz[Dokumentacja API](https://reference.aspose.com/words/net/) szczegółowe instrukcje.
+ Aspose.Words zapewnia różne tryby formatu scalania, takie jak`KeepSourceFormatting`I`MergeFormatting` . Patrz[Dokumentacja API](https://reference.aspose.com/words/net/) szczegółowe instrukcje.
 
 ### 4. Jak uzyskać wsparcie dla Aspose.Words dla .NET?
 

@@ -2,13 +2,13 @@
 title: Přidat uživatelské vlastnosti dokumentu
 linktitle: Přidat uživatelské vlastnosti dokumentu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Krok za krokem průvodce přidáním vlastních vlastností do dokumentu pomocí Aspose.Words for .NET.
+description: Krok za krokem průvodce přidáním vlastních vlastností do dokumentu pomocí Aspose.Words pro .NET.
 type: docs
 weight: 10
 url: /cs/net/programming-with-document-properties/add-custom-document-properties/
 ---
 
-tomto tutoriálu vás provedeme zdrojovým kódem C# pro přidání uživatelských vlastností do dokumentu pomocí Aspose.Words for .NET. Tato funkce umožňuje přidat do dokumentu vlastní informace.
+V tomto tutoriálu vás provedeme zdrojovým kódem C# pro přidání uživatelských vlastností do dokumentu pomocí Aspose.Words for .NET. Tato funkce umožňuje přidat do dokumentu vlastní informace.
 
 ## Krok 1: Nastavení projektu
 

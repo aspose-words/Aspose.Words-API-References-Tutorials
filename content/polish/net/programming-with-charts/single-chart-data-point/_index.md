@@ -2,123 +2,142 @@
 title: Dostosuj pojedynczy punkt danych na wykresie
 linktitle: Dostosuj pojedynczy punkt danych na wykresie
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dostosować pojedynczy punkt danych na wykresie za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak dostosować pojedyncze punkty danych na wykresie za pomocą Aspose.Words dla .NET w szczegółowym przewodniku krok po kroku. Ulepsz swoje wykresy dzięki unikalnym znacznikom i rozmiarom.
 type: docs
 weight: 10
 url: /pl/net/programming-with-charts/single-chart-data-point/
 ---
+## Wstęp
 
-tym samouczku wyjaśniono, jak używać Aspose.Words dla .NET do dostosowywania pojedynczego punktu danych na wykresie. Dostarczony kod źródłowy pokazuje, jak utworzyć wykres, uzyskać dostęp do określonych punktów danych i zmodyfikować ich właściwości.
+Czy zastanawiałeś się kiedyś, jak sprawić, by Twoje wykresy wyróżniały się unikalnymi punktami danych? Cóż, dzisiaj jest twój szczęśliwy dzień! Zagłębiamy się w dostosowywanie pojedynczego punktu danych na wykresie za pomocą Aspose.Words dla .NET. Zapnij pasy i skorzystaj z samouczka krok po kroku, który jest nie tylko pouczający, ale także zabawny i łatwy do zrozumienia.
 
-## Krok 1: Skonfiguruj projekt
+## Warunki wstępne
 
-Upewnij się, że masz następujące wymagania wstępne:
+Zanim zaczniemy, upewnijmy się, że masz wszystkie niezbędne elementy:
 
-- Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
-- Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
+-  Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję.[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+- .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
+- Podstawowa znajomość języka C#: Pomocna będzie podstawowa znajomość programowania w języku C#.
+- Zintegrowane środowisko programistyczne (IDE): zalecany jest program Visual Studio.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres
+## Importuj przestrzenie nazw
 
- Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
+Na początek zaimportujmy niezbędne przestrzenie nazw, aby ruszyć z piłką:
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
+
+W porządku, zacznijmy od zainicjowania nowego dokumentu i narzędzia DocumentBuilder. To będzie płótno dla naszego wykresu.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Następnie użyj`InsertChart` metoda`DocumentBuilder` , aby wstawić wykres liniowy do dokumentu.
+ Tutaj,`dataDir` to ścieżka katalogu, w którym zapiszesz swój dokument. The`DocumentBuilder` klasa pomaga w konstruowaniu dokumentu.
+
+## Krok 2: Wstaw wykres
+
+Następnie wstawmy do dokumentu wykres liniowy. To będzie nasz plac zabaw do dostosowywania punktów danych.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Krok 3: Uzyskaj dostęp i dostosuj punkty danych
+ The`InsertChart` Metoda przyjmuje jako parametry typ, szerokość i wysokość wykresu. W tym przypadku wstawiamy wykres liniowy o szerokości 432 i wysokości 252.
 
- Aby zmodyfikować poszczególne punkty danych, należy uzyskać dostęp do pliku`ChartDataPointCollection` serii i wybierz żądany punkt danych za pomocą indeksu.
+## Krok 3: Uzyskaj dostęp do serii wykresów
+
+Teraz nadszedł czas, aby uzyskać dostęp do serii na naszym wykresie. Wykres może składać się z wielu serii, a każda seria zawiera punkty danych.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
 ChartSeries series1 = chart.Series[1];
+```
 
+Tutaj mamy dostęp do pierwszych dwóch serii na naszym wykresie. 
+
+## Krok 4: Dostosuj punkty danych
+
+Tutaj dzieje się magia! Dostosujmy określone punkty danych w naszej serii.
+
+```csharp
 ChartDataPointCollection dataPointCollection = series0.DataPoints;
 ChartDataPoint dataPoint00 = dataPointCollection[0];
 ChartDataPoint dataPoint01 = dataPointCollection[1];
+```
 
+Pobieramy punkty danych z pierwszej serii. Teraz dostosujmy te punkty.
+
+### Dostosuj punkt danych 00
+
+```csharp
 dataPoint00.Explosion = 50;
 dataPoint00.Marker.Symbol = MarkerSymbol.Circle;
 dataPoint00.Marker.Size = 15;
+```
 
+ Dla`dataPoint00`, ustawiamy eksplozję (przydatne w przypadku wykresów kołowych), zmieniamy symbol znacznika na okrąg i ustawiamy rozmiar znacznika na 15.
+
+### Dostosuj punkt danych 01
+
+```csharp
 dataPoint01.Marker.Symbol = MarkerSymbol.Diamond;
 dataPoint01.Marker.Size = 20;
+```
 
+ Dla`dataPoint01`, zmieniamy symbol znacznika na romb i ustawiamy rozmiar znacznika na 20.
+
+### Dostosuj punkt danych w serii 1
+
+```csharp
 ChartDataPoint dataPoint12 = series1.DataPoints[2];
 dataPoint12.InvertIfNegative = true;
 dataPoint12.Marker.Symbol = MarkerSymbol.Star;
 dataPoint12.Marker.Size = 20;
 ```
 
-## Krok 4: Zapisz dokument
+ Dla trzeciego punktu danych w`series1`, ustawiamy go na odwracanie, jeśli wartość jest ujemna, zmieniamy symbol znacznika na gwiazdkę i ustawiamy rozmiar znacznika na 20.
 
- Na koniec zapisz dokument w określonym katalogu za pomocą pliku`Save` metoda`Document` obiekt.
+## Krok 5: Zapisz dokument
+
+Na koniec zapiszmy nasz dokument ze wszystkimi dostosowaniami.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartDataPoint.docx");
 ```
 
-To kończy implementację dostosowywania pojedynczego punktu danych na wykresie przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy dla pojedynczego punktu danych na wykresie przy użyciu Aspose.Words dla .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = chart.Series[0];
-	ChartSeries series1 = chart.Series[1];
-	ChartDataPointCollection dataPointCollection = series0.DataPoints;
-	ChartDataPoint dataPoint00 = dataPointCollection[0];
-	ChartDataPoint dataPoint01 = dataPointCollection[1];
-	dataPoint00.Explosion = 50;
-	dataPoint00.Marker.Symbol = MarkerSymbol.Circle;
-	dataPoint00.Marker.Size = 15;
-	dataPoint01.Marker.Symbol = MarkerSymbol.Diamond;
-	dataPoint01.Marker.Size = 20;
-	ChartDataPoint dataPoint12 = series1.DataPoints[2];
-	dataPoint12.InvertIfNegative = true;
-	dataPoint12.Marker.Symbol = MarkerSymbol.Star;
-	dataPoint12.Marker.Size = 20;
-	doc.Save(dataDir + "WorkingWithCharts.SingleChartDataPoint.docx");
-```
+ Ta linia zapisuje dokument w określonym katalogu pod nazwą`WorkingWithCharts.SingleChartDataPoint.docx`.
 
 ## Wniosek
 
-W tym samouczku nauczyłeś się, jak dostosować pojedynczy punkt danych na wykresie za pomocą Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz utworzyć nowy dokument, wstawić wykres liniowy, uzyskać dostęp do określonych punktów danych w serii wykresów i zmodyfikować ich właściwości, aby uzyskać żądane dostosowanie.
+masz to! Pomyślnie dostosowałeś poszczególne punkty danych na wykresie za pomocą Aspose.Words dla .NET. Dostosowując kilka właściwości, możesz sprawić, że Twoje wykresy będą o wiele bardziej informacyjne i atrakcyjne wizualnie. Zatem śmiało eksperymentuj z różnymi znacznikami i rozmiarami, aby zobaczyć, co najlepiej sprawdzi się w przypadku Twoich danych.
 
-Aspose.Words dla .NET zapewnia zaawansowane funkcje do manipulowania wykresami w dokumentach Word. Uzyskując dostęp do poszczególnych punktów danych w serii wykresów, możesz zastosować określone modyfikacje, aby dostosować ich wygląd i zachowanie. Umożliwia to wyróżnianie określonych punktów danych, zmianę symboli znaczników, dostosowywanie rozmiarów znaczników i wykonywanie innych czynności w celu ulepszenia wizualnej reprezentacji wykresu.
+## Często zadawane pytania
 
-Dostosowywanie poszczególnych punktów danych zapewnia elastyczność podkreślania ważnych danych lub wyróżniania określonych trendów na wykresie. Dzięki Aspose.Words dla .NET możesz łatwo uzyskać dostęp i modyfikować punkty danych na różnych typach wykresów, umożliwiając tworzenie atrakcyjnych wizualnie i bogatych w informacje wykresów w dokumentach Word.
+### Czy mogę dostosować punkty danych na wykresach innych typów?
 
-### Często zadawane pytania
+Absolutnie! Możesz dostosowywać punkty danych na różnych typach wykresów, w tym na wykresach słupkowych, wykresach kołowych i nie tylko. Proces jest podobny w przypadku różnych typów wykresów.
 
-#### Pytanie 1. Czy mogę dostosować wiele punktów danych na wykresie?
- Tak, możesz dostosować wiele punktów danych na wykresie za pomocą Aspose.Words dla .NET. Uzyskując dostęp do`ChartDataPointCollection`serii, można wybierać i modyfikować wiele punktów danych w oparciu o ich indeksy. Użyj pętli lub indywidualnych przypisań, aby zmodyfikować żądane właściwości każdego punktu danych. W ten sposób możesz zastosować różne dostosowania do wielu punktów danych na tym samym wykresie.
+### Czy można dodać niestandardowe etykiety do punktów danych?
 
-#### Pytanie 2. Jak mogę zmienić symbol znacznika punktu danych?
- Aby zmienić symbol znacznika punktu danych na wykresie przy użyciu Aspose.Words dla .NET, musisz uzyskać dostęp do`Marker` własność`ChartDataPoint` obiekt i ustaw`Symbol` właściwość do żądanego symbolu znacznika. Symbole znaczników reprezentują kształt lub ikonę używaną do reprezentowania każdego punktu danych na wykresie. Możesz wybierać spośród wielu wbudowanych symboli znaczników, takich jak okrąg, kwadrat, romb, trójkąt, gwiazda i inne.
+ Tak, możesz dodawać niestandardowe etykiety do punktów danych za pomocą`ChartDataPoint.Label` nieruchomość. Dzięki temu można zapewnić większy kontekst dla każdego punktu danych.
 
-#### Pytanie 3. Czy mogę dostosować rozmiar znacznika punktu danych?
- Tak, możesz dostosować rozmiar znacznika punktu danych na wykresie za pomocą Aspose.Words dla .NET. Uzyskać dostęp do`Marker` własność`ChartDataPoint` obiekt i ustaw`Size`właściwość do żądanego rozmiaru znacznika. Rozmiar znacznika jest zwykle podawany w punktach, gdzie większa wartość oznacza większy rozmiar znacznika. Dostosowanie rozmiaru znacznika pozwala uwypuklić określone punkty danych lub rozróżnić je na podstawie ich znaczenia.
+### Jak mogę usunąć punkt danych z serii?
 
-#### Pytanie 4. Jakie inne właściwości mogę modyfikować dla punktu danych?
-Aspose.Words dla .NET udostępnia szereg właściwości, które można modyfikować dla punktu danych na wykresie. Niektóre z często modyfikowanych właściwości obejmują symbol znacznika, rozmiar znacznika, kolor znacznika, widoczność etykiety danych, eksplozję, odwrócenie, jeśli jest ujemne i inne. Właściwości te umożliwiają dostosowanie wyglądu, zachowania i interaktywności poszczególnych punktów danych, umożliwiając tworzenie wykresów dostosowanych do konkretnych wymagań.
+ Można usunąć punkt danych, ustawiając jego widoczność na wartość Fałsz za pomocą`dataPoint.IsVisible = false`.
 
-#### Pytanie 5. Czy mogę dostosować punkty danych na wykresach innych typów?
-Tak, możesz dostosować punkty danych na różnych typach wykresów za pomocą Aspose.Words dla .NET. Chociaż w tym samouczku przedstawiono dostosowywanie punktów danych na wykresie liniowym, podobne techniki można zastosować do innych typów wykresów, takich jak wykresy kolumnowe, wykresy słupkowe, wykresy kołowe i inne. Proces ten obejmuje dostęp do serii i punktów danych na wykresie oraz odpowiednią modyfikację ich właściwości.
+### Czy mogę używać obrazów jako znaczników punktów danych?
+
+Chociaż Aspose.Words nie obsługuje używania obrazów bezpośrednio jako znaczników, możesz tworzyć niestandardowe kształty i używać ich jako znaczników.
+
+### Czy można animować punkty danych na wykresie?
+
+Aspose.Words dla .NET nie obsługuje animacji punktów danych na wykresie. Można jednak tworzyć animowane wykresy za pomocą innych narzędzi i osadzać je w dokumentach programu Word.

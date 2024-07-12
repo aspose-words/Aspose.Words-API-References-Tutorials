@@ -26,7 +26,7 @@ url: /ja/java/document-printing/customized-document-printing/
 
 ## 空白のドキュメントを作成する
 
-まず、Aspose.Words for Java を使用して空白のドキュメントを作成しましょう。
+まず、Aspose.Words for Java を使用して空白のドキュメントを作成します。
 
 ```java
 //空白のドキュメントを作成するための Java コード

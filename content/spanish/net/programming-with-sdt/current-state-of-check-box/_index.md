@@ -41,7 +41,7 @@ if (sdtCheckBox.SdtType == SdtType.Checkbox)
 ```
 
 ## Paso 4: guarde el documento
- Guarde el documento modificado en el directorio especificado utilizando el`Save`método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithSdt.CurrentStateOfCheckBox.docx".
+ Guarde el documento modificado en el directorio especificado utilizando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithSdt.CurrentStateOfCheckBox.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");

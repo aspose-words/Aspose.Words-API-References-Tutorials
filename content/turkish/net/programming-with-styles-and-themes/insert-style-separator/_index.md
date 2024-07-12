@@ -106,7 +106,7 @@ Ortamı kurmak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu v
 
 #### Metnin farklı bölümlerine farklı stilleri nasıl uygulayabilirim?
 
- Ayarlayarak metnin farklı bölümlerine farklı stiller uygulayabilirsiniz.`ParagraphFormat.StyleName` mülkiyeti`DocumentBuilder`nesne. Metni yazmadan önce stil adını istediğiniz stile ayarlayabilirsiniz ve ardından gelen metin buna göre biçimlendirilecektir.
+Ayarlayarak metnin farklı bölümlerine farklı stiller uygulayabilirsiniz.`ParagraphFormat.StyleName` mülkiyeti`DocumentBuilder` nesne. Metni yazmadan önce stil adını istediğiniz stile ayarlayabilirsiniz ve ardından gelen metin buna göre biçimlendirilecektir.
 
 #### Belgeyi farklı formatlarda kaydedebilir miyim?
 

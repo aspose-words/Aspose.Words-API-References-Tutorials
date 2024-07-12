@@ -14,7 +14,7 @@ url: /zh-hant/net/programming-with-tables/convert-to-horizontally-merged-cells/
 1. 啟動 Visual Studio 並建立一個新的 C# 專案。
 2. 新增對 Aspose.Words for .NET 函式庫的參考。
 
-## 第 2 步：載入文件並存取表
+## 第 2 步：載入文件並存取表格
 要對錶啟動文字處理，我們需要載入包含該表的文件並存取它。按著這些次序：
 
 ```csharp

@@ -117,7 +117,7 @@ private void saveHtmlTopic(Section section, Topic topic) throws Exception
 }
 ```
 
-## Paso 7: Genere una tabla de contenido para los temas
+## Paso 7: genere una tabla de contenido para los temas
 
 ```java
 private void saveTableOfContents(ArrayList<Topic> topics) throws Exception

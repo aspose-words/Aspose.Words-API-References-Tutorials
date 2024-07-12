@@ -70,7 +70,7 @@ gratuluji! Nyní jste se naučili, jak používat funkce vloženého kódu s Asp
 
 #### Otázka: Je možné v Aspose.Words určit písmo nebo barvu vloženého kódu?
 
- Odpověď: Ano, můžete určit písmo nebo barvu vloženého kódu v Aspose.Words. Můžete použít`Font.Name` a`Font.Color` vlastnosti`Run` objekt pro nastavení písma a barvy vloženého kódu. Můžete například použít`run.Font.Name = "Courier New"` k určení písma pro vložený kód a`run.Font.Color = Color.Blue` určení barvy.
+ Odpověď: Ano, můžete určit písmo nebo barvu vloženého kódu v Aspose.Words. Můžete použít`Font.Name`a`Font.Color` vlastnosti`Run` objekt pro nastavení písma a barvy vloženého kódu. Můžete například použít`run.Font.Name = "Courier New"` k určení písma pro vložený kód a`run.Font.Color = Color.Blue` určení barvy.
 
 #### Otázka: Mohu použít vložený kód v odstavci obsahujícím jiné textové prvky?
 

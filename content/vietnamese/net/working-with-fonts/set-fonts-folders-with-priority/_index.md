@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Đặt mức độ ưu tiên của thư mục phông chữ
- Sau đó, bạn có thể đặt mức độ ưu tiên của các thư mục phông chữ bằng cách sử dụng`FontSettings` lớp học và`SetFontsSources()`phương pháp. Bạn có thể chỉ định nhiều nguồn phông chữ bằng cách sử dụng các phiên bản của`SystemFontSource` Và`FolderFontSource`. Trong ví dụ này, chúng tôi đã xác định hai nguồn phông chữ: nguồn phông chữ hệ thống mặc định và thư mục phông chữ tùy chỉnh có mức độ ưu tiên là 1.
+ Sau đó, bạn có thể đặt mức độ ưu tiên của các thư mục phông chữ bằng cách sử dụng`FontSettings` lớp học và`SetFontsSources()`phương pháp. Bạn có thể chỉ định nhiều nguồn phông chữ bằng cách sử dụng các phiên bản của`SystemFontSource`Và`FolderFontSource`. Trong ví dụ này, chúng tôi đã xác định hai nguồn phông chữ: nguồn phông chữ hệ thống mặc định và thư mục phông chữ tùy chỉnh có mức độ ưu tiên là 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

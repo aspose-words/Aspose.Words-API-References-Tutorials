@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## 3. lépés: Töltse be a dokumentumokat
 
-Rendben, ideje betölteni az összehasonlítani kívánt dokumentumokat. Szüksége lesz ezekhez a dokumentumokhoz vezető útvonalakra. Tegyük fel, hogy két dokumentummal rendelkezik:`DocumentA.docx` és`DocumentB.docx`.
+Rendben, ideje betölteni az összehasonlítani kívánt dokumentumokat. Szüksége lesz ezekhez a dokumentumokhoz vezető útvonalakra. Tegyük fel, hogy két dokumentummal rendelkezik:`DocumentA.docx`és`DocumentB.docx`.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
@@ -61,7 +61,7 @@ Document docB = new Document(dataDir + "DocumentB.docx");
 
 ## 4. lépés: Klónozza a dokumentumot
 
-A klónozás olyan, mintha egy azonos ikerpárt készítenél a dokumentumból. Ez a lépés biztosítja, hogy legyen egy biztonsági másolat, amelyet összehasonlíthat az eredetivel.
+A klónozás olyan, mintha egy azonos ikertestvért készítenél a dokumentumból. Ez a lépés biztosítja, hogy legyen egy biztonsági másolat, amelyet összehasonlíthat az eredetivel.
 
 ```csharp
 Document docB = docA.Clone();

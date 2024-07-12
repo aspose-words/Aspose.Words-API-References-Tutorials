@@ -9,7 +9,7 @@ url: /pl/net/basic-conversions/docx-to-txt/
 ---
 ## Wstęp
 
-Konwersja plików DOCX do formatu TXT może być niezbędna w różnych zastosowaniach, takich jak uproszczenie wyodrębniania treści lub przekształcanie dokumentów w celu analizy zwykłego tekstu. Dzięki Aspose.Words dla .NET proces ten jest usprawniony i wydajny. W tym obszernym przewodniku przeprowadzimy Cię przez każdy krok, upewniając się, że dobrze rozumiesz proces. Zanurzmy się więc i z łatwością zamieńmy te pliki DOCX w pliki TXT!
+Konwersja plików DOCX do formatu TXT może być niezbędna w różnych zastosowaniach, takich jak upraszczanie wyodrębniania treści lub przekształcanie dokumentów w celu analizy zwykłego tekstu. Dzięki Aspose.Words dla .NET proces ten jest usprawniony i wydajny. W tym obszernym przewodniku przeprowadzimy Cię przez każdy krok, upewniając się, że dobrze rozumiesz proces. Zanurzmy się więc i z łatwością zamieńmy te pliki DOCX w pliki TXT!
 
 ## Warunki wstępne
 

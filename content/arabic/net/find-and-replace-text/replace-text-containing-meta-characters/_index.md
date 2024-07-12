@@ -2,170 +2,124 @@
 title: يقوم Word باستبدال النص الذي يحتوي على أحرف التعريف
 linktitle: يقوم Word باستبدال النص الذي يحتوي على أحرف التعريف
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية استبدال النص الذي يحتوي على أحرف أولية في مستندات Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية استبدال النص الذي يحتوي على أحرف التعريف في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع برنامجنا التعليمي التفصيلي والجذاب للتعامل السلس مع النص.
 type: docs
 weight: 10
 url: /ar/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
-في هذه المقالة، سنستكشف كود مصدر C# أعلاه لفهم كيفية استخدام وظيفة Word Replace Text Containing Meta Characters في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة استبدال أجزاء من النص في مستند يحتوي على أحرف تعريفية محددة.
+## مقدمة
+
+هل وجدت نفسك عالقًا في متاهة من بدائل النص في مستندات Word؟ إذا كنت تومئ برأسك، فاستعد لأننا نتعمق في برنامج تعليمي مثير باستخدام Aspose.Words for .NET. سنتناول اليوم كيفية استبدال النص الذي يحتوي على أحرف وصفية. هل أنت على استعداد لجعل معالجة مستنداتك أكثر سلاسة من أي وقت مضى؟ هيا بنا نبدأ!
 
 ## المتطلبات الأساسية
 
-- المعرفة الأساسية بلغة C#.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+قبل أن ننتقل إلى التفاصيل الجوهرية، دعونا نتأكد من حصولك على كل ما تحتاجه:
+-  Aspose.Words لـ .NET:[رابط التحميل](https://releases.aspose.com/words/net/)
+- .NET Framework: تأكد من تثبيته.
+- الفهم الأساسي لـ C#: القليل من المعرفة بالبرمجة يقطع شوطا طويلا.
+- محرر النصوص أو IDE: يوصى بشدة باستخدام Visual Studio.
 
-## الخطوة 1: إنشاء مستند جديد
+## استيراد مساحات الأسماء
 
- قبل أن نبدأ في استخدام استبدال نص الأحرف الأولية، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لـ`Document` هدف:
+أول الأشياء أولاً، فلنستورد مساحات الأسماء الضرورية. تضمن هذه الخطوة أن لديك جميع الأدوات المتاحة لك.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+
+الآن، دعونا نقسم العملية إلى خطوات سهلة الهضم. مستعد؟ دعنا نذهب!
+
+## الخطوة 1: إعداد بيئتك
+
+تخيل أنك تقوم بإعداد محطة العمل الخاصة بك. هذا هو المكان الذي تجمع فيه أدواتك وموادك. إليك كيف تبدأ:
+
+```csharp
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل النص في المستند
+ يقوم مقتطف الكود هذا بتهيئة المستند وإعداد المُنشئ. ال`dataDir` هي القاعدة الرئيسية للمستند الخاص بك.
 
- بمجرد حصولنا على مستند، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا، نستخدم`Writeln` طريقة لإدراج فقرات متعددة من النص في أقسام مختلفة:
+## الخطوة 2: تخصيص الخط الخاص بك وإضافة المحتوى
+
+بعد ذلك، دعونا نضيف بعض النص إلى وثيقتنا. فكر في هذا ككتابة السيناريو لمسرحيتك.
 
 ```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Font.Name = "Arial";
 builder.Writeln("First section");
-builder.Writeln("1st paragraph");
-builder.Writeln("2nd paragraph");
-builder. Writen("{insert-section}");
+builder.Writeln("  1st paragraph");
+builder.Writeln("  2nd paragraph");
+builder.Writeln("{insert-section}");
 builder.Writeln("Second section");
-builder.Writeln("1st paragraph");
+builder.Writeln("  1st paragraph");
 ```
 
-## الخطوة 3: تكوين خيارات البحث والاستبدال
+نقوم هنا بضبط الخط على Arial وكتابة بعض الأقسام والفقرات.
 
- سنقوم الآن بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا، قمنا بتعيين محاذاة الفقرات المستبدلة إلى "توسيط":
+## الخطوة 3: إعداد خيارات البحث والاستبدال
+
+حان الوقت الآن لتهيئة خيارات البحث والاستبدال. هذا مثل وضع قواعد لعبتنا.
 
 ```csharp
 FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
-## الخطوة 4: استبدال النص الذي يحتوي على أحرف أولية
+ نحن نقوم بإنشاء`FindReplaceOptions`كائن وتعيين محاذاة الفقرة إلى المركز.
 
- نحن نستخدم ال`Range.Replace`طريقة لإجراء استبدال النص الذي يحتوي على أحرف أولية. في مثالنا، نستبدل كل تكرار لكلمة "قسم" متبوعًا بفاصل فقرة بنفس الكلمة متبوعة بعدة شرطات وفاصل فقرة جديد:
+## الخطوة 4: استبدال النص بأحرف التعريف
+
+هذه الخطوة هي حيث يحدث السحر! سنقوم باستبدال كلمة "قسم" متبوعة بفاصل فقرة، وإضافة تسطير.
 
 ```csharp
+// ضاعف فاصل كل فقرة بعد كلمة "قسم"، وأضف نوعًا من التسطير واجعله في المنتصف.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 
-## الخطوة 5: استبدال علامة نصية مخصصة
+في هذا الكود، نقوم باستبدال النص "القسم" متبوعًا بفاصل فقرة (`&p`) بنفس النص بالإضافة إلى تسطير، وجعله في المنتصف.
 
- نحن نستخدم أيضًا`Range.Replace` طريقة لاستبدال مخصص "{insert-section}"علامة نصية تحتوي على فاصل مقطعي. في مثالنا، قمنا باستبدال "{insert-section}" مع "&b" لإدراج فاصل مقطعي:
+## الخطوة 5: إدراج فواصل المقاطع
+
+بعد ذلك، سنقوم باستبدال علامة نصية مخصصة بفاصل مقطعي. إنه مثل استبدال عنصر نائب بشيء أكثر وظيفية.
 
 ```csharp
+// قم بإدراج فاصل مقطعي بدلاً من علامة النص المخصصة.
 count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 ```
 
-## الخطوة 6: حفظ المستند المحرر
+ هنا،`{insert-section}` يتم استبداله بفاصل مقطعي (`&b`).
 
-وأخيرًا، نقوم بحفظ المستند المعدل في دليل محدد باستخدام الملف`Save` طريقة:
+## الخطوة 6: احفظ المستند
+
+وأخيرا، دعونا ننقذ عملنا الشاق. فكر في هذا على أنه الضغط على "حفظ" على تحفتك الفنية.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لاستبدال النص الذي يحتوي على أحرف التعريف باستخدام Aspose.Words لـ .NET
-
-فيما يلي المثال الكامل للتعليمة البرمجية المصدر لتوضيح استخدام استبدال النص الذي يحتوي على أحرف أولية باستخدام Aspose.Words لـ .NET:
-
-```csharp
-
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.Font.Name = "Arial";
-	builder.Writeln("First section");
-	builder.Writeln("  1st paragraph");
-	builder.Writeln("  2nd paragraph");
-	builder.Writeln("{insert-section}");
-	builder.Writeln("Second section");
-	builder.Writeln("  1st paragraph");
-
-	FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
-	findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
-
-	// ضاعف فاصل كل فقرة بعد كلمة "قسم"، وأضف نوعًا من التسطير واجعله في المنتصف.
-	int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
-
-	// قم بإدراج فاصل مقطعي بدلاً من علامة النص المخصصة.
-	count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
-
-	doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
-  
-```
+ يحفظ هذا الرمز المستند في الدليل المحدد بالاسم`FindAndReplace.ReplaceTextContainingMetaCharacters.docx`.
 
 ## خاتمة
 
-في هذه المقالة، قمنا باستكشاف التعليمات البرمجية المصدر لـ C# لفهم كيفية استخدام ميزة استبدال النص الذي يحتوي على أحرف التعريف في Aspose.Words لـ .NET. لقد اتبعنا دليلاً خطوة بخطوة لإنشاء مستند وإدراج نص واستبدال النص الذي يحتوي على أحرف أولية وحفظ المستند المعدل.
+وهناك لديك! لقد أتقنت الآن فن استبدال النص الذي يحتوي على أحرف تعريفية في مستند Word باستخدام Aspose.Words for .NET. بدءًا من إعداد بيئتك ووصولاً إلى حفظ مستندك النهائي، تم تصميم كل خطوة لتمنحك التحكم في معالجة النص. لذا، تفضل بالتعمق في مستنداتك، وقم بإجراء تلك الاستبدالات بثقة!
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: ما هي وظيفة استبدال النص الذي يحتوي على أحرف التعريف في Aspose.Words لـ .NET؟
+### ما هي الأحرف التعريفية في استبدال النص؟
+ الأحرف التعريفية هي أحرف خاصة لها وظيفة فريدة، مثل`&p` لفواصل الفقرة و`&b` لفواصل القسم.
 
-ج: تتيح لك ميزة استبدال النص الذي يحتوي على أحرف التعريف في Aspose.Words لـ .NET استبدال أجزاء من النص في مستند يحتوي على أحرف تعريف محددة. يمكنك استخدام هذه الميزة لإجراء عمليات استبدال متقدمة في مستندك مع مراعاة الأحرف الأولية.
+### هل يمكنني تخصيص النص البديل بشكل أكبر؟
+قطعاً! يمكنك تعديل سلسلة الاستبدال لتشمل نصًا أو تنسيقًا أو أحرف تعريف أخرى مختلفة حسب الحاجة.
 
-#### س: كيفية إنشاء مستند جديد في Aspose.Words لـ .NET؟
+### ماذا لو كنت بحاجة إلى استبدال عدة علامات مختلفة؟
+ يمكنك سلسلة متعددة`Replace` يدعو للتعامل مع العلامات أو الأنماط المختلفة في المستند الخاص بك.
 
- ج: قبل استخدام وظيفة استبدال النص الذي يحتوي على أحرف التعريف، يجب عليك إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لـ`Document` هدف. فيما يلي نموذج التعليمات البرمجية لإنشاء مستند جديد:
+### هل من الممكن استخدام الخطوط والتنسيقات الأخرى؟
+نعم، يمكنك تخصيص الخطوط وخيارات التنسيق الأخرى باستخدام`DocumentBuilder`و`FindReplaceOptions` أشياء.
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-```
-
-#### س: كيفية إدراج نص في مستند باستخدام Aspose.Words لـ .NET؟
-
- ج: بمجرد حصولك على مستند، يمكنك إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا، نستخدم`Writeln` طريقة لإدراج فقرات متعددة من النص في أقسام مختلفة:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Font.Name = "Arial";
-builder.Writeln("First section");
-builder.Writeln("1st paragraph");
-builder.Writeln("2nd paragraph");
-builder.Writen("{insert-section}");
-builder.Writeln("Second section");
-builder.Writeln("1st paragraph");
-```
-
-#### س: كيفية تكوين خيارات البحث والاستبدال في Aspose.Words لـ .NET؟
-
- ج: الآن سنقوم بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا، قمنا بتعيين محاذاة الفقرات المستبدلة إلى "توسيط":
-
-```csharp
-FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
-findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
-```
-
-#### س: كيف يمكن استبدال النص الذي يحتوي على أحرف أولية في مستند باستخدام Aspose.Words لـ .NET؟
-
- ج: نستخدم`Range.Replace` طريقة لإجراء استبدال النص الذي يحتوي على أحرف وصفية. في مثالنا، نستبدل كل تكرار لكلمة "قسم" متبوعًا بفاصل فقرة بنفس الكلمة متبوعة بعدة شرطات وفاصل فقرة جديد:
-
-```csharp
-int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
-```
-
-#### س: كيف يمكن استبدال علامة نصية مخصصة تحتوي على أحرف تعريفية في مستند باستخدام Aspose.Words لـ .NET؟
-
- ج: نستخدم أيضًا`Range.Replace` طريقة لاستبدال مخصص "{insert-section}"علامة نصية تحتوي على فاصل مقطعي. في مثالنا، قمنا باستبدال "{insert-section}" مع "&b" لإدراج فاصل مقطعي:
-
-```csharp
-count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
-```
-
-#### س: كيف يتم حفظ المستند الذي تم تحريره في Aspose.Words لـ .NET؟
-
- ج: بمجرد إجراء تغييرات على المستند، يمكنك حفظه في دليل محدد باستخدام الملف`Save` طريقة:
-
-```csharp
-doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
-```
+### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words لـ .NET؟
+ يمكنك زيارة[وثائق Aspose.Words](https://reference.aspose.com/words/net/) لمزيد من التفاصيل والأمثلة.

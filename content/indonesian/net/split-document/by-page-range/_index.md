@@ -20,7 +20,7 @@ Sebelum memulai, pastikan Anda memiliki hal berikut:
 Sekarang kita telah membahas persyaratannya, kita dapat melanjutkan ke langkah-langkah untuk menggunakan fitur Berdasarkan Rentang Halaman.
 
 ## Langkah 1: Inisialisasi dan pemuatan dokumen
-Setelah Anda menyiapkan lingkungan pengembangan, Anda perlu menginisialisasi dan memuat dokumen Word yang bagian tertentunya ingin Anda ekstrak. Berikut kode yang digunakan:
+Setelah Anda menyiapkan lingkungan pengembangan, Anda perlu menginisialisasi dan memuat dokumen Word yang ingin Anda ekstrak bagian tertentunya. Berikut kode yang digunakan:
 
 ```csharp
 // Jalur ke direktori dokumen.

@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- Bu adımda TXT belgesini yükleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`TxtLoadOptions` nesneyi ayarlayın ve`LeadingSpacesOptions` Ve`TrailingSpacesOptions` özellikleri`TxtLeadingSpacesOptions.Trim` Ve`TxtTrailingSpacesOptions.Trim` sırasıyla. Bu, Aspose.Words'e, belgeyi yüklerken satırların başındaki ve sonundaki boşlukları kaldırmasını söyler.
+ Bu adımda TXT belgesini yükleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`TxtLoadOptions` nesneyi ayarlayın ve`LeadingSpacesOptions`Ve`TrailingSpacesOptions` özellikleri`TxtLeadingSpacesOptions.Trim`Ve`TxtTrailingSpacesOptions.Trim` sırasıyla. Bu, Aspose.Words'e, belgeyi yüklerken satırların başındaki ve sonundaki boşlukları kaldırmasını söyler.
 
 ## Adım 4: Belgeyi yükleme
 

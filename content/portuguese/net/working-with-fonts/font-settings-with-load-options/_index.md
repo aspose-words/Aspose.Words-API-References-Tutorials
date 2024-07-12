@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Etapa 2: configurar opções de carregamento com configurações de fonte
- A seguir, criaremos uma instância de`LoadOptions` e especifique as configurações de fonte criando uma nova instância de`FontSettings` e atribuindo-o a`loadOptions.FontSettings`.
+ seguir, criaremos uma instância de`LoadOptions` e especifique as configurações de fonte criando uma nova instância de`FontSettings` e atribuindo-o a`loadOptions.FontSettings`.
 
 ```csharp
 // Configure opções de carregamento com configurações de fonte
@@ -57,7 +57,7 @@ Neste tutorial, vimos como usar opções de carregamento com configurações de 
 
 #### P: Como posso especificar uma fonte padrão ao carregar um documento no Aspose.Words?
 
-R: Para especificar uma fonte padrão ao carregar um documento no Aspose.Words, você pode usar o`LoadOptions` classe e definir o`DefaultFontName` propriedade ao nome da fonte desejada.
+ R: Para especificar uma fonte padrão ao carregar um documento no Aspose.Words, você pode usar o`LoadOptions` classe e definir o`DefaultFontName`propriedade ao nome da fonte desejada.
 
 #### P: Que outras configurações de fonte posso especificar com as opções de carregamento no Aspose.Words?
 
@@ -69,4 +69,4 @@ R: Se a fonte padrão especificada não estiver disponível quando o documento f
 
 #### P: Posso especificar configurações de fonte diferentes para cada documento carregado?
 
- R: Sim, você pode especificar diferentes configurações de fonte para cada documento carregado usando instâncias separadas do`LoadOptions`class e definir as configurações de fonte desejadas para cada instância. Isso permite que você personalize a aparência da fonte de cada documento de forma independente.
+ R: Sim, você pode especificar diferentes configurações de fonte para cada documento carregado usando instâncias separadas do`LoadOptions` class e definir as configurações de fonte desejadas para cada instância. Isso permite que você personalize a aparência da fonte de cada documento de forma independente.

@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Vytvoření nového dokumentu
 
- Dále vytvoříme novou instanci souboru`Document` třída. Toto představuje náš dokument Word.
+ Dále vytvoříme novou instanci`Document` třída. Toto představuje náš dokument Word.
 
 ```csharp
 Document doc = new Document();
@@ -107,4 +107,4 @@ Ano, jakmile je HTML vložen, můžete dále manipulovat s dokumentem pomocí r�
  Můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro plné funkce.
 
 ### Kde najdu další návody a příklady?  
- The[dokumentace](https://reference.aspose.com/words/net/) a[podpůrná fóra](https://forum.aspose.com/c/words/8)jsou skvělými místy, kde začít s podrobnějšími průvodci a podporou komunity.
+ The[dokumentace](https://reference.aspose.com/words/net/)a[podpůrná fóra](https://forum.aspose.com/c/words/8)jsou skvělými místy, kde začít s podrobnějšími průvodci a podporou komunity.

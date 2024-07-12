@@ -53,8 +53,8 @@ tableStyle.TopPadding = 12;
 tableStyle.BottomPadding = 12;
 ```
 
-## Schritt 5: Den Tabellenstil auf die Tabelle anwenden
- Zum Schluss wenden wir den von uns erstellten Tabellenstil auf die Tabelle an, indem wir`Style` Eigenschaft der Tabelle.
+## Schritt 5: Tabellenstil auf die Tabelle anwenden
+ Zum Schluss wenden wir den erstellten Tabellenstil auf die Tabelle an, indem wir`Style` Eigenschaft der Tabelle.
 
 ```csharp
 table.Style = tableStyle;

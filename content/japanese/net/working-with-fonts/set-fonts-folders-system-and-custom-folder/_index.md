@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 //デフォルトで検索される環境依存のフォント ソースの配列を取得します。
 //たとえば、Windows マシンでは「Windows\Fonts\」ソースが含まれます。
-//この配列を新しいリストに追加すると、フォント エントリの追加や削除が簡単になります。
+//フォント エントリの追加や削除がはるかに簡単になるように、この配列を新しいリストに追加します。
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 //Aspose.Words に次のフォルダーでフォントを検索するように指示する新しいフォルダー ソースを追加します。
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);

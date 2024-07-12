@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Schritt 4: Zelle einfügen und zum Zeilenformat wechseln
-Jetzt können wir eine Zelle in die Tabelle einfügen und das Zeilenformat für diese Zelle mit dem Dokument-Generator aufrufen.`InsertCell()` Und`RowFormat` Methoden.
+Jetzt können wir eine Zelle in die Tabelle einfügen und das Zeilenformat für diese Zelle mit dem Dokument-Generator aufrufen.`InsertCell()`Und`RowFormat` Methoden.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Schritt 5: Zeilenhöhe festlegen
- Um die Zeilenhöhe einzustellen, verwenden wir die`Height` Und`HeightRule` Eigenschaften des Zeilenformats. In diesem Beispiel setzen wir eine Zeilenhöhe von 100 Punkten und verwenden die`Exactly` Regel.
+ Um die Zeilenhöhe einzustellen, verwenden wir die`Height`Und`HeightRule` Eigenschaften des Zeilenformats. In diesem Beispiel setzen wir eine Zeilenhöhe von 100 Punkten und verwenden die`Exactly` Regel.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Schritt 6: Tabellenformatierung festlegen
- Einige Formatierungseigenschaften können in der Tabelle selbst festgelegt werden und werden auf alle Tabellenzeilen angewendet. In diesem Beispiel legen wir die Tabellenrandeigenschaften mithilfe der`LeftPadding`, `RightPadding`, `TopPadding` Und`BottomPadding` Eigenschaften.
+ Einige Formatierungseigenschaften können in der Tabelle selbst festgelegt werden und werden auf alle Tabellenzeilen angewendet. In diesem Beispiel legen wir die Tabellenrandeigenschaften mithilfe der`LeftPadding`, `RightPadding`, `TopPadding`Und`BottomPadding` Eigenschaften.
 
 ```csharp
 table. LeftPadding = 30;

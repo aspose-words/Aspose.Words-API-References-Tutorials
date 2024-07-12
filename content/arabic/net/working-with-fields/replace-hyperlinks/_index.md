@@ -16,7 +16,7 @@ url: /ar/net/working-with-fields/replace-hyperlinks/
 
 قبل الغوص في استبدال الارتباطات التشعبية بـ Aspose.Words لـ .NET، تأكد من أن لديك ما يلي:
 
-- Visual Studio: تم التثبيت والإعداد لتطوير .NET.
+- Visual Studio: تم تثبيته وإعداده لتطوير .NET.
 -  Aspose.Words for .NET: تم تنزيله والإشارة إليه في مشروعك. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
 - الإلمام بـ C#: الفهم الأساسي لكتابة التعليمات البرمجية وتجميعها.
 

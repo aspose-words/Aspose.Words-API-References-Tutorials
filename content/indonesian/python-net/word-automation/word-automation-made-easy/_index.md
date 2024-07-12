@@ -10,7 +10,7 @@ url: /id/python-net/word-automation/word-automation-made-easy/
 
 ## Perkenalan
 
-Di dunia yang serba cepat saat ini, otomatisasi tugas menjadi hal yang penting untuk meningkatkan efisiensi dan produktivitas. Salah satu tugas tersebut adalah Otomatisasi Word, di mana kita dapat membuat, memanipulasi, dan memproses dokumen Word secara terprogram. Dalam tutorial langkah demi langkah ini, kita akan mempelajari cara mencapai Otomatisasi Word dengan mudah menggunakan Aspose.Words untuk Python, pustaka canggih yang menyediakan berbagai fitur untuk pemrosesan kata dan manipulasi dokumen.
+Di dunia yang serba cepat saat ini, otomatisasi tugas menjadi hal yang penting untuk meningkatkan efisiensi dan produktivitas. Salah satu tugas tersebut adalah Otomatisasi Word, di mana kita dapat membuat, memanipulasi, dan memproses dokumen Word secara terprogram. Dalam tutorial langkah demi langkah ini, kita akan menjelajahi cara mencapai Otomatisasi Word dengan mudah menggunakan Aspose.Words untuk Python, pustaka canggih yang menyediakan berbagai fitur untuk pemrosesan kata dan manipulasi dokumen.
 
 ## Memahami Otomatisasi Kata
 

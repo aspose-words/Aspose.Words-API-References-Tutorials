@@ -2,120 +2,123 @@
 title: Ajouter du texte marqué dans un document Word
 linktitle: Ajouter du texte marqué dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment ajouter du texte à partir d'un signet dans un document Word à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment ajouter du texte mis en signet dans un document Word à l'aide d'Aspose.Words for .NET avec ce guide étape par étape. Parfait pour les développeurs.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/append-bookmarked-text/
 ---
+## Introduction
 
-Dans cet article, nous explorerons le code source C# ci-dessus pour comprendre comment utiliser la fonction Ajouter un signet de texte dans la bibliothèque Aspose.Words pour .NET. Cette fonctionnalité vous permet d'ajouter le texte contenu dans un signet spécifique d'un document Word à un autre document.
+Salut! Avez-vous déjà essayé d'ajouter du texte à partir d'une section marquée d'un signet dans un document Word et avez-vous trouvé cela difficile ? Tu es chanceux! Ce didacticiel vous guidera tout au long du processus d'utilisation d'Aspose.Words pour .NET. Nous le décomposerons en étapes simples afin que vous puissiez suivre facilement. Plongeons-nous et ajoutons ce texte mis en signet comme un pro !
 
 ## Conditions préalables
 
-- Connaissance de base du langage C#.
-- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+Avant de commencer, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-## Étape 1 : Obtenir des paragraphes à partir d'un signet
+-  Aspose.Words pour .NET : assurez-vous de l'avoir installé. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+- Environnement de développement : tout environnement de développement .NET comme Visual Studio.
+- Connaissance de base de C# : Comprendre les concepts de base de la programmation C# sera utile.
+- Document Word avec signets : un document Word avec des signets configurés, que nous utiliserons pour ajouter du texte.
 
- Avant de commencer à ajouter le texte du signet, nous devons récupérer les paragraphes contenant le début et la fin du signet. Cela peut être fait en accédant au`BookmarkStart` et`BookmarkEnd` propriétés du signet :
+## Importer des espaces de noms
+
+Tout d’abord, importons les espaces de noms nécessaires. Cela garantira que nous disposons de tous les outils dont nous avons besoin à portée de main.
 
 ```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+using System;
+using Aspose.Words;
+using Aspose.Words.Importing;
 ```
 
-## Étape 2 : Vérifiez les paragraphes parents
+Décomposons l'exemple en étapes détaillées.
 
-Nous vérifions si les paragraphes de début et de fin ont des parents valides, c'est-à-dire s'ils appartiennent réellement à un paragraphe. Sinon, nous générons une exception :
+## Étape 1 : charger le document et initialiser les variables
+
+Très bien, commençons par charger notre document Word et initialiser les variables dont nous aurons besoin.
 
 ```csharp
+// Chargez les documents source et destination.
+Document srcDoc = new Document("source.docx");
+Document dstDoc = new Document("destination.docx");
+
+// Initialisez l'importateur de documents.
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+
+// Recherchez le signet dans le document source.
+Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## Étape 2 : Identifiez les paragraphes de début et de fin
+
+Maintenant, localisons les paragraphes où commence et se termine le signet. Ceci est crucial car nous devons traiter le texte dans ces limites.
+
+```csharp
+// Il s'agit du paragraphe qui contient le début du signet.
+Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+
+// Il s'agit du paragraphe qui contient la fin du signet.
+Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
 if (startPara == null || endPara == null)
-throw new InvalidOperationException(
-"The parent of the beginning or the end of the bookmark is not a paragrap
-
-hey, this situation can't be handled yet.");
+    throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## Étape 3 : Vérifier les parents des paragraphes
+## Étape 3 : Valider les parents du paragraphe
 
-Nous vérifions si les paragraphes de début et de fin ont le même parent. Sinon, cela signifie que les paragraphes ne sont pas contenus dans la même section ou dans le même document, et nous générons une exception :
+Nous devons nous assurer que les paragraphes de début et de fin ont le même parent. Il s’agit d’un scénario simple pour garder les choses simples.
 
 ```csharp
+// Limitons-nous à un scénario raisonnablement simple.
 if (startPara.ParentNode != endPara.ParentNode)
-throw new InvalidOperationException(
-"Beginning and ending paragraphs have different parents, this situation cannot be handled yet.");
+    throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## Étape 4 : Copier les paragraphes
+## Étape 4 : Identifiez le nœud à arrêter
 
-Nous parcourons les nœuds (paragraphes) du paragraphe de début au paragraphe de fin. Pour chaque nœud, nous créons une copie et l'importons dans le contexte du document de destination :
+Ensuite, nous devons déterminer le nœud où nous arrêterons de copier le texte. Ce sera le nœud immédiatement après le paragraphe de fin.
 
 ```csharp
+// Nous voulons copier tous les paragraphes depuis le paragraphe de début jusqu'au paragraphe de fin (inclus),
+// donc le nœud auquel nous nous arrêtons est celui après le paragraphe de fin.
 Node endNode = endPara.NextSibling;
+```
 
+## Étape 5 : Ajouter le texte marqué au document de destination
+
+Enfin, parcourons les nœuds du paragraphe de début jusqu'au nœud après le paragraphe de fin, et ajoutons-les au document de destination.
+
+```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-Node newNode = importer.ImportNode(curNode, true);
+    // Cela crée une copie du nœud actuel et l'importe (le rend valide) dans le contexte
+    // du document de destination. Importer signifie ajuster correctement les styles et les identifiants de liste.
+    Node newNode = importer.ImportNode(curNode, true);
 
-dstNode.AppendChild(newNode);
+    // Ajoutez le nœud importé au document de destination.
+    dstDoc.FirstSection.Body.AppendChild(newNode);
 }
-```
 
-### Exemple de code source pour ajouter du texte marqué à l'aide d'Aspose.Words pour .NET
-
-Voici l'exemple complet de code source pour démontrer l'ajout de texte à partir d'un signet à l'aide d'Aspose.Words pour .NET :
-
-```csharp
-
-	// Il s'agit du paragraphe qui contient le début du signet.
-	Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-	// Il s'agit du paragraphe qui contient la fin du signet.
-	Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-	if (startPara == null || endPara == null)
-		throw new InvalidOperationException(
-			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-	// Limitons-nous à un scénario raisonnablement simple.
-	if (startPara.ParentNode != endPara.ParentNode)
-		throw new InvalidOperationException(
-			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-	// Nous voulons copier tous les paragraphes depuis le paragraphe de début jusqu'au paragraphe de fin (inclus),
-	// donc le nœud auquel nous nous arrêtons est celui après le paragraphe de fin.
-	Node endNode = endPara.NextSibling;
-
-	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-	{
-		//Cela crée une copie du nœud actuel et l'importe (le rend valide) dans le contexte
-		// du document de destination. Importer signifie ajuster correctement les styles et les identifiants de liste.
-		Node newNode = importer.ImportNode(curNode, true);
-
-		dstNode.AppendChild(newNode);
-	}
-
+// Enregistrez le document de destination avec le texte ajouté.
+dstDoc.Save("appended_document.docx");
 ```
 
 ## Conclusion
 
-Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Ajouter du texte marqué d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour extraire des paragraphes d'un signet, vérifier les parents et copier des paragraphes dans un autre document.
+Et voila! Vous avez ajouté avec succès le texte d’une section marquée d’un signet dans un document Word à l’aide d’Aspose.Words pour .NET. Cet outil puissant facilite la manipulation de documents et vous avez désormais un tour de plus dans votre sac. Bon codage !
 
-### FAQ pour ajouter du texte mis en signet dans un document Word
+## FAQ
 
-#### Q1 : Quelles sont les conditions préalables pour utiliser la fonctionnalité « Ajouter du texte avec des signets » dans Aspose.Words pour .NET ?
+### Puis-je ajouter du texte provenant de plusieurs signets en une seule fois ?
+Oui, vous pouvez répéter le processus pour chaque signet et ajouter le texte en conséquence.
 
-R : Pour utiliser la fonction « Ajouter du texte avec des signets » dans Aspose.Words for .NET, vous devez avoir des connaissances de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+### Que se passe-t-il si les paragraphes de début et de fin ont des parents différents ?
+L'exemple actuel suppose qu'ils ont le même parent. Pour différents parents, une manipulation plus complexe est nécessaire.
 
-#### Q2 : Comment obtenir les paragraphes contenant le début et la fin d'un signet dans un document Word ?
+### Puis-je conserver la mise en forme originale du texte ajouté ?
+ Absolument! Le`ImportFormatMode.KeepSourceFormatting` garantit que le formatage d’origine est préservé.
 
-R : Pour obtenir les paragraphes contenant le début et la fin d'un signet dans un document Word, vous pouvez accéder au`BookmarkStart` et`BookmarkEnd` propriétés du signet. Voici un exemple de code :
+### Est-il possible d'ajouter du texte à une position spécifique dans le document de destination ?
+Oui, vous pouvez ajouter le texte à n'importe quelle position en accédant au nœud souhaité dans le document de destination.
 
-```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-```
-
-#### Q3 : Que se passe-t-il si les paragraphes de début et de fin n'ont pas de parents valides ?
-
-R : Si les paragraphes de début et de fin n'ont pas de parents valides, c'est-à-dire qu'ils ne sont pas vraiment des paragraphes, une exception sera levée. Cette situation ne peut pas être gérée pour le moment.
+### Que faire si je dois ajouter le texte d'un signet à une nouvelle section ?
+Vous pouvez créer une nouvelle section dans le document de destination et y ajouter le texte.

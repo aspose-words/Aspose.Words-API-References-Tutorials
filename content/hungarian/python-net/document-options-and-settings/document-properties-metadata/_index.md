@@ -12,7 +12,7 @@ url: /hu/python-net/document-options-and-settings/document-properties-metadata/
 
 dokumentum tulajdonságai és metaadatai az elektronikus dokumentumok alapvető összetevői. Fontos információkat nyújtanak a dokumentumról, például a szerzőséget, a létrehozás dátumát és a kulcsszavakat. A metaadatok tartalmazhatnak további kontextuális információkat, amelyek segítik a dokumentumok kategorizálását és keresését. Az Aspose.Words for Python leegyszerűsíti ezen szempontok programozott kezelésének folyamatát.
 
-## Az Aspose.Words for Python használatának megkezdése
+## Az Aspose.Words for Python használatának első lépései
 
 Mielőtt belemerülnénk a dokumentumtulajdonságok és metaadatok kezelésébe, állítsuk be környezetünket az Aspose.Words for Python segítségével.
 

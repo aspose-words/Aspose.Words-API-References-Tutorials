@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 
 ## 結論
 
-このガイドでは、Aspose.Words ライブラリの .NET で HtmlFixedSaveOptions を使用してすべての CSS ルールを 1 つのファイルに記述し、Word 文書を固定 HTML に変換する方法について説明しました。提供されている手順に従い、提供されている C# ソース コードを使用すると、この機能を C# アプリケーションに簡単に適用できます。すべての CSS ルールを 1 つのファイルに記述すると、文書の変換中に生成される HTML コードの整理と管理が容易になります。
+このガイドでは、Aspose.Words ライブラリの .NET で HtmlFixedSaveOptions を使用してすべての CSS ルールを 1 つのファイルに記述し、Word 文書を固定 HTML に変換する方法について説明しました。提供されている手順に従い、提供されている C# ソース コードを使用すると、この機能を C# アプリケーションに簡単に適用できます。すべての CSS ルールを 1 つのファイルに記述すると、文書変換中に生成される HTML コードの整理と管理が容易になります。

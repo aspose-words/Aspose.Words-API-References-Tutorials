@@ -2,7 +2,7 @@
 title: Aspose.Words Java を使用した HTML ドキュメントの高度な保存オプション
 linktitle: HTML文書を保存する
 second_title: Aspose.Words Java ドキュメント処理 API
-description: このチュートリアルでは、Aspose.Words for Javaのさまざまな高度なHTMLドキュメント保存オプションについて説明しました。これらのオプションを使用すると、高品質のHTMLを作成できます。
+description: このチュートリアルでは、Aspose.Words for Javaのさまざまな高度なHTMLドキュメント保存オプションについて説明しました。これらのオプションにより、高品質のHTMLを作成できます。
 type: docs
 weight: 16
 url: /ja/java/document-loading-and-saving/advance-html-documents-saving-options/
@@ -89,7 +89,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```
 
 ## 8. MHTMLリソースのCID URLをエクスポートする
-の`exportCidUrlsForMhtmlResources`このメソッドは、ドキュメントを MHTML 形式で保存するときに使用されます。これにより、リソースの Content-ID URL をエクスポートできます。
+の`exportCidUrlsForMhtmlResources`このメソッドは、ドキュメントを MHTML 形式で保存するときに使用されます。これにより、リソースのコンテンツ ID URL をエクスポートできます。
 
 ```java
 @Test
@@ -99,7 +99,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```
 
 ## 9. フォント名を解決する
-の`resolveFontNames`このメソッドは、ドキュメントを HTML 形式で保存するときにフォント名を解決するのに役立ち、異なるプラットフォーム間で一貫したレンダリングを保証します。
+の`resolveFontNames`この方法は、ドキュメントを HTML 形式で保存するときにフォント名を解決するのに役立ち、異なるプラットフォーム間で一貫したレンダリングを保証します。
 
 ```java
 @Test
@@ -128,7 +128,7 @@ Aspose.Words for Java および HTML ドキュメント保存オプションの�
  HTMLをWord形式に戻すには、Aspose.Words APIの`load`HTML ドキュメントを読み込み、Word 形式で保存する方法。
 
 ### Q2: HTML にエクスポートするときに CSS スタイルをカスタマイズできますか?
-はい、HTMLで使用されているスタイルシートを変更するか、`addCssClassNamePrefix` CSS クラス名にプレフィックスを追加するメソッド。
+はい、HTMLで使用されるスタイルシートを変更するか、`addCssClassNamePrefix` CSS クラス名にプレフィックスを追加するメソッド。
 
 ### Q3: HTML 出力を Web 表示用に最適化する方法はありますか?
 はい、フォントを Base64 としてエクスポートしたり、メタファイルを SVG に変換したりするなどのオプションを構成することで、HTML 出力を Web 表示用に最適化できます。

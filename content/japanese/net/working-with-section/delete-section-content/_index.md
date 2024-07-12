@@ -61,7 +61,7 @@ section.ClearContent();
 
 #### Q: Aspose.Words for .NET でドキュメント ディレクトリを設定するにはどうすればいいですか?
 
- A: ドキュメントを含むディレクトリへのパスを設定するには、`"YOUR DOCUMENT DIRECTORY"`コードに適切なパスを追加します。方法は次のとおりです。
+A: ドキュメントを含むディレクトリへのパスを設定するには、`"YOUR DOCUMENT DIRECTORY"`コードに適切なパスを追加します。方法は次のとおりです。
 
 ```csharp
 //ドキュメントディレクトリへのパス

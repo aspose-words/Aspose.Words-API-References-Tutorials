@@ -19,7 +19,7 @@ Python 用の Aspose.Words チュートリアルは、ドキュメント処理�
 
 ## Python で Word 文書処理を向上
 
-Aspose.Words for Python を使用して Word ドキュメント処理をマスターします。チュートリアルでは、プロフェッショナルなドキュメントを作成するための実用的な例とステップバイステップの手順が提供されます。Aspose.Words チュートリアルを活用して、シームレスなドキュメント管理と処理のための Python Document API の可能性を最大限に活用します。
+Aspose.Words for Python を使用して Word ドキュメント処理をマスターします。チュートリアルでは、実践的な例と、プロフェッショナルなドキュメントを作成するための手順を段階的に説明します。Aspose.Words チュートリアルを活用して、シームレスなドキュメント管理と処理を実現する Python Document API の可能性を最大限に活用します。
 
 ## Aspose.Words For Python ドキュメント管理チュートリアル
 ### [ドキュメント作成](./document-creation/)

@@ -139,7 +139,7 @@ Belgelerinizi şekil ve grafiklerle geliştirmek, belgelerinizin görsel çekici
 
 ### Belgemdeki bir şekli nasıl yeniden boyutlandırabilirim?
 
- Bir şekli yeniden boyutlandırmak için`setWidth` Ve`setHeight` şekil nesnesi üzerindeki yöntemler. Örneğin, 150 piksel genişliğinde ve 75 piksel yüksekliğinde bir şekil oluşturmak için:
+ Bir şekli yeniden boyutlandırmak için`setWidth`Ve`setHeight` şekil nesnesi üzerindeki yöntemler. Örneğin, 150 piksel genişliğinde ve 75 piksel yüksekliğinde bir şekil oluşturmak için:
 
 ```java
 shape.setWidth(150);

@@ -15,7 +15,7 @@ Ebben az oktatóanyagban megtanuljuk, hogyan lehet az Aspose.Words for .NET-et h
 2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
 
 ## 2. lépés: A dokumentum betöltése és a táblázatok elérése
-táblázatokkal történő szövegfeldolgozás elindításához be kell töltenünk az azokat tartalmazó dokumentumot, és el kell érnünk őket. Kovesd ezeket a lepeseket:
+A táblázatokkal történő szövegfeldolgozás elindításához be kell töltenünk az azokat tartalmazó dokumentumot, és el kell érnünk őket. Kovesd ezeket a lepeseket:
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -72,4 +72,4 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan kombinálhatunk táblázatsorokat egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésről lépésre szóló útmutatót, és implementálja a mellékelt C# kódot, akkor programozottan módosíthatja a Word-dokumentumok táblázatsorait. Ezzel a funkcióval hatékonyan egyesítheti és táblázatba rendezheti adatait.
+Ebben az oktatóanyagban megtanultuk, hogyan kombinálhatunk táblázatsorokat egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésről lépésre szóló útmutatót, és implementálja a mellékelt C# kódot, akkor programozottan kezelheti a Word-dokumentumok táblázatsorait. Ezzel a funkcióval hatékonyan egyesítheti és táblázatba rendezheti adatait.

@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Schritt 7: Inhalt zu Zellen hinzufügen
- Nun können wir Inhalt zu Zellen hinzufügen, indem wir`Writeln()` Und`InsertCell()` Methoden des Dokumentgenerators. In diesem Beispiel fügen wir die Überschriften für "Artikel" und "Menge" hinzu (
+ Nun können wir Inhalt zu Zellen hinzufügen, indem wir`Writeln()`Und`InsertCell()` Methoden des Dokumentgenerators. In diesem Beispiel fügen wir die Überschriften für "Artikel" und "Menge" hinzu (
 
 kg)“ und die dazugehörigen Daten.
 

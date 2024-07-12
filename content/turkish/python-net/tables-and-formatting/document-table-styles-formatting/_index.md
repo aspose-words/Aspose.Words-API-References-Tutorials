@@ -39,7 +39,7 @@ Aspose.Words for Python'u kullanarak tablolar oluşturmak ve belgelere eklemek i
     table = builder.start_table()
     ```
 
-2.  Veri Ekle: Oluşturucuyu kullanarak tabloya veri ekleyin`insert_cell` Ve`write` yöntemler.
+2.  Veri Ekle: Oluşturucuyu kullanarak tabloya veri ekleyin`insert_cell`Ve`write` yöntemler.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Aspose.Words for Python'u kullanarak tablolar oluşturmak ve belgelere eklemek i
 
 ## Temel Tablo Formatını Uygulama
 
- Temel tablo biçimlendirmesi, tarafından sağlanan yöntemler kullanılarak elde edilebilir.`Table` Ve`Cell` sınıflar. Masanızın görünümünü şu şekilde geliştirebilirsiniz:
+ Temel tablo biçimlendirmesi, tarafından sağlanan yöntemler kullanılarak elde edilebilir.`Table`Ve`Cell` sınıflar. Masanızın görünümünü şu şekilde geliştirebilirsiniz:
 
 1. Sütun Genişliklerini Ayarlayın: Doğru hizalamayı ve görsel çekiciliği sağlamak için sütunların genişliğini ayarlayın.
 

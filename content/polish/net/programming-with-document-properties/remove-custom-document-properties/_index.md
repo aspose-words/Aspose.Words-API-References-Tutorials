@@ -16,7 +16,7 @@ Aby rozpocząć, utwórz nowy projekt C# w swoim ulubionym środowisku IDE. Upew
 
 ## Krok 2: Załaduj dokument
 
-W tym kroku załadujemy dokument Word, z którego chcemy usunąć niestandardowe właściwości. Aby załadować dokument, użyj poniższego kodu:
+tym kroku załadujemy dokument Word, z którego chcemy usunąć niestandardowe właściwości. Aby załadować dokument, użyj poniższego kodu:
 
 ```csharp
 // Ścieżka do katalogu dokumentów.

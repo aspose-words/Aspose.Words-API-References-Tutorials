@@ -41,7 +41,7 @@ Document doc = new Document();
 Document doc = new Document("path/to/your/document.docx");
 ```
 
-## Шаг 2: доступ к первому абзацу
+## Шаг 2. Доступ к первому абзацу
 
 Далее нам нужно получить доступ к определенному абзацу в документе. Для простоты возьмем первый абзац.
 
@@ -59,7 +59,7 @@ Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 NodeCollection children = paragraph.GetChildNodes(NodeType.Any, false);
 ```
 
-Эта строка кода собирает все дочерние узлы любого типа в пределах указанного абзаца.
+Эта строка кода собирает все дочерние узлы любого типа в указанном абзаце.
 
 ## Шаг 4. Перебор дочерних узлов
 

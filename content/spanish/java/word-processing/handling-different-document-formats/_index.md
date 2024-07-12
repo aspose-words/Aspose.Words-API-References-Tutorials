@@ -8,7 +8,7 @@ weight: 10
 url: /es/java/word-processing/handling-different-document-formats/
 ---
 
-En el ámbito del procesamiento y manipulación de documentos, Aspose.Words para Java brilla como una API versátil y poderosa. Esta guía paso a paso lo guiará a través del proceso de manejo de varios formatos de documentos usando Aspose.Words para Java. Desde comprender los conceptos básicos hasta realizar operaciones avanzadas, lo tenemos cubierto.
+En el ámbito del procesamiento y manipulación de documentos, Aspose.Words para Java brilla como una API versátil y potente. Esta guía paso a paso lo guiará a través del proceso de manejo de varios formatos de documentos usando Aspose.Words para Java. Desde comprender los conceptos básicos hasta realizar operaciones avanzadas, lo tenemos cubierto.
 
 ## Primeros pasos con Aspose.Words para Java
 

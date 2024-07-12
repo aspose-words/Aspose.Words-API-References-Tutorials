@@ -18,7 +18,7 @@ url: /ko/net/document-formatting/apply-borders-and-shading-to-paragraph/
 -  .NET용 Aspose.Words: 이 라이브러리를 설치해야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio 또는 .NET을 지원하는 기타 IDE.
 - C#에 대한 기본 지식: 코드 조각을 이해하고 조정하는 데 충분합니다.
-- 유효한 라이센스:[임시면허](https://purchase.aspose.com/temporary-license/) 또는 에서 구입한 것[Aspose](https://purchase.aspose.com/buy).
+- 유효한 라이센스:[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는 에서 구입한 것[Aspose](https://purchase.aspose.com/buy).
 
 ## 네임스페이스 가져오기
 

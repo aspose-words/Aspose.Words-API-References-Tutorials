@@ -54,7 +54,7 @@ foreach (Revision revision in doc.Revisions)
 Document doc = new Document(MyDir + "Revisions.docx");
 doc.UpdateListLabels();
 
-// สลับไปยังเอกสารเวอร์ชันที่แก้ไข
+// สลับไปยังเวอร์ชันที่แก้ไขของเอกสาร
 doc.RevisionsView = RevisionsView.Final;
 
 foreach (Revision revision in doc.Revisions)

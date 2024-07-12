@@ -2,41 +2,51 @@
 title: Odebrat zápatí zdrojových záhlaví
 linktitle: Odebrat zápatí zdrojových záhlaví
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak odstranit záhlaví a zápatí při spojování a připojování dokumentů aplikace Word pomocí Aspose.Words for .NET.
+description: Přečtěte si, jak odstranit záhlaví a zápatí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Zjednodušte si správu dokumentů pomocí našeho podrobného průvodce.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/remove-source-headers-footers/
 ---
+## Úvod
 
-Tento tutoriál vás provede procesem používání funkce Odebrat zdrojová záhlaví zápatí Aspose.Words for .NET. Tato funkce umožňuje spojovat a připojovat dokumenty Wordu a zároveň odstraňovat záhlaví a zápatí ze zdrojového dokumentu.
+V tomto komplexním průvodci se ponoříme do toho, jak efektivně odstranit záhlaví a zápatí z dokumentu aplikace Word pomocí Aspose.Words for .NET. Záhlaví a zápatí se běžně používají pro číslování stránek, názvy dokumentů nebo jiný opakující se obsah v dokumentech aplikace Word. Ať už slučujete dokumenty nebo čistíte formátování, zvládnutí tohoto procesu může zefektivnit vaše úkoly správy dokumentů. Pojďme prozkoumat proces krok za krokem, jak toho dosáhnout pomocí Aspose.Words for .NET.
 
 ## Předpoklady
 
-Než začnete, ujistěte se, že máte následující:
+Než se pustíte do výukového programu, ujistěte se, že máte nastaveny následující předpoklady:
 
-1. Aspose.Words for .NET nainstalován. Můžete si jej stáhnout z webu Aspose nebo nainstalovat přes NuGet.
-2. Visual Studio nebo jiné vývojové prostředí C#.
+1. Vývojové prostředí: Mějte nainstalované Visual Studio nebo jiné vývojové prostředí .NET.
+2.  Aspose.Words for .NET: Ujistěte se, že jste si stáhli a nainstalovali Aspose.Words for .NET. Pokud ne, můžete to získat od[tady](https://releases.aspose.com/words/net/).
+3. Základní znalosti: Znalost programování v C# a základy .NET frameworku.
 
-## Krok 1: Inicializujte adresáře dokumentů
+## Importovat jmenné prostory
 
- Nejprve musíte nastavit cestu k adresáři dokumentů. Upravte hodnotu`dataDir` proměnnou k cestě, kde jsou umístěny vaše dokumenty.
+Než začnete kódovat, nezapomeňte importovat potřebné jmenné prostory do souboru C#:
+
+```csharp
+using Aspose.Words;
+```
+
+## Krok 1: Načtěte zdrojový dokument
+
+ Nejprve musíte načíst zdrojový dokument, ze kterého chcete odstranit záhlaví a zápatí. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašeho dokumentu, kde se nachází zdrojový dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document srcDoc = new Document(dataDir + "Document source.docx");
 ```
 
-## Krok 2: Načtěte zdrojové a cílové dokumenty
+## Krok 2: Vytvořte nebo načtěte cílový dokument
 
-Dále musíte načíst zdrojové a cílové dokumenty pomocí Aspose.Words`Document` třída. Aktualizujte názvy souborů v`Document` konstruktor podle názvů vašich dokumentů.
+ Pokud jste ještě nevytvořili cílový dokument, kam chcete umístit upravený obsah, můžete vytvořit nový`Document` objekt nebo načíst existující.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Odeberte záhlaví a zápatí ze sekcí zdrojového dokumentu
+## Krok 3: Vymažte záhlaví a zápatí ze sekcí
 
- Chcete-li odstranit záhlaví a zápatí z každého oddílu ve zdrojovém dokumentu, můžete oddíly iterovat pomocí a`foreach` smyčka a zavolejte`ClearHeadersFooters` metoda.
+Iterujte každou sekci ve zdrojovém dokumentu (`srcDoc`) a vymažte jeho záhlaví a zápatí.
 
 ```csharp
 foreach (Section section in srcDoc.Sections)
@@ -45,51 +55,47 @@ foreach (Section section in srcDoc.Sections)
 }
 ```
 
-## Krok 4: Zakažte nastavení "LinkToPrevious" pro záhlavíZápatí
+## Krok 4: Správa nastavení LinkToPrevious
 
- po vymazání záhlaví a zápatí ze zdrojového dokumentu existuje možnost, že nastavení "LinkToPrevious" pro`HeadersFooters` lze ještě nastavit. Chcete-li se tomuto chování vyhnout, musíte jej výslovně nastavit`false` pro první oddíl`HeadersFooters` vlastnictví.
+Chcete-li zabránit pokračování záhlaví a zápatí v cílovém dokumentu (`dstDoc` ), ujistěte se, že`LinkToPrevious` nastavení pro záhlaví a zápatí je nastaveno na`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## Krok 5: Připojte zdrojový dokument k cílovému dokumentu
+## Krok 5: Připojte upravený dokument k cílovému dokumentu
 
- Nyní můžete připojit zdrojový dokument k cílovému dokumentu pomocí`AppendDocument` metoda`Document` třída. The`ImportFormatMode.KeepSourceFormatting` Parametr zajišťuje zachování formátování zdroje během operace připojení.
+Nakonec přidejte upravený obsah ze zdrojového dokumentu (`srcDoc`) do cílového dokumentu (`dstDoc`) při zachování formátování zdroje.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Krok 6: Uložte konečný dokument
+## Krok 6: Uložte výsledný dokument
 
- Nakonec uložte sloučený dokument s povolenou funkcí Odebrat zdrojová záhlaví zápatí pomocí`Save` metoda`Document` třída.
+Uložte konečný dokument s odstraněnými záhlavími a zápatími do určeného adresáře.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
 
-### Příklad zdrojového kódu pro Odstranit zápatí zdrojových záhlaví pomocí Aspose.Words pro .NET 
+## Závěr
 
-Zde je úplný zdrojový kód pro funkci "Odebrat zápatí zdrojových záhlaví" v C# pomocí Aspose.Words pro .NET:
+Odstranění záhlaví a zápatí z dokumentu aplikace Word pomocí Aspose.Words for .NET je přímočarý proces, který může výrazně zlepšit úkoly správy dokumentů. Podle výše uvedených kroků můžete dokumenty efektivně vyčistit a získat tak uhlazený profesionální vzhled.
 
+## FAQ
 
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Mohu odstranit záhlaví a zápatí pouze z určitých sekcí?
+Ano, můžete iterovat sekcemi a podle potřeby selektivně smazat záhlaví a zápatí.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Odeberte záhlaví a zápatí z každého oddílu ve zdrojovém dokumentu.
-	foreach (Section section in srcDoc.Sections)
-	{
-		section.ClearHeadersFooters();
-	}
-	// I poté, co jsou ze zdrojového dokumentu vymazána záhlaví a zápatí, nastavení "LinkToPrevious".
-	// pro HeadersFooters lze stále nastavit. To způsobí, že záhlaví a zápatí budou pokračovat z cíle
-	// dokument. Toto by mělo být nastaveno na hodnotu false, aby se tomuto chování zabránilo.
-	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
-```
-je to! Úspěšně jste implementovali funkci Odebrat zdrojová záhlaví zápatí pomocí Aspose.Words pro .NET. Konečný dokument bude obsahovat sloučený obsah se záhlavím a zápatím odstraněným ze zdrojového dokumentu.
+### Podporuje Aspose.Words for .NET odstranění záhlaví a zápatí ve více dokumentech?
+Rozhodně můžete manipulovat se záhlavími a zápatími ve více dokumentech pomocí Aspose.Words for .NET.
+
+###  Co se stane, když zapomenu nastavit`LinkToPrevious` to `false`?
+Záhlaví a zápatí ze zdrojového dokumentu mohou pokračovat do cílového dokumentu.
+
+### Mohu odstranit záhlaví a zápatí programově, aniž by to ovlivnilo jiné formátování?
+Ano, Aspose.Words for .NET umožňuje odstranit záhlaví a zápatí při zachování zbytku formátování dokumentu.
+
+### Kde najdu další zdroje a podporu pro Aspose.Words pro .NET?
+ Navštivte[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) pro podrobné odkazy a příklady API.

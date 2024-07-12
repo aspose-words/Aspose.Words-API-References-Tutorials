@@ -103,7 +103,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### 3. Jak mohu jinak formátovat tabulky?
 
-Formátování tabulky můžete přizpůsobit pomocí různých metod poskytovaných Aspose.Words. Zkontrolovat[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
+ Formátování tabulky můžete přizpůsobit pomocí různých metod poskytovaných Aspose.Words. Zkontrolovat[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
 
 ### 4. Jak získám podporu pro Aspose.Words for .NET?
 

@@ -2,90 +2,121 @@
 title: Menguraikan Kekusutan Dalam Dokumen Word
 linktitle: Menguraikan Kekusutan Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menguraikan penanda bertumpuk dokumen Word di baris tabel yang berdekatan menggunakan Aspose.Words untuk .NET.
+description: Kuasai penguraian bookmark di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah terperinci kami. Sempurna untuk pengembang .NET.
 type: docs
 weight: 10
 url: /id/net/programming-with-bookmarks/untangle/
 ---
+## Perkenalan
 
-Pada artikel ini, kita akan menjelajahi kode sumber C# di atas untuk memahami cara menggunakan fungsi Untangle di pustaka Aspose.Words untuk .NET. Fungsi ini menguraikan bookmark bersarang yang berada di baris tabel yang berdekatan.
+Menavigasi dokumen Word secara terprogram bisa seperti menemukan jalan melewati labirin. Anda mungkin menemukan bookmark, judul, tabel, dan elemen lain yang perlu dimanipulasi. Hari ini, kita menyelami tugas umum namun rumit: menguraikan bookmark di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini akan memandu Anda melalui proses langkah demi langkah, memastikan Anda memahami setiap bagian dari perjalanan.
 
 ## Prasyarat
 
-- Pengetahuan dasar bahasa C#.
-- Lingkungan pengembangan .NET dengan perpustakaan Aspose.Words diinstal.
+Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
 
-## Langkah 1: Telusuri Penanda Dokumen
+1.  Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words untuk .NET. Jika Anda tidak memilikinya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan .NET seperti Visual Studio.
+3. Pengetahuan Dasar C#: Memahami dasar-dasar C# akan membantu Anda mengikuti cuplikan kode dan penjelasannya.
 
-Kami menggunakan perulangan foreach untuk menelusuri semua bookmark yang ada di dokumen:
+## Impor Namespace
+
+Untuk memulai, pastikan Anda mengimpor namespace yang diperlukan. Ini akan memungkinkan Anda mengakses kelas dan metode yang diperlukan untuk memanipulasi dokumen Word dengan Aspose.Words.
 
 ```csharp
-foreach(Bookmark bookmark in doc.Range.Bookmarks)
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## Langkah 1: Muat Dokumen Anda
+
+Langkah pertama adalah memuat dokumen Word yang ingin Anda kerjakan. Dokumen ini akan berisi penanda yang perlu Anda uraikan.
+
+Langkah 1 Judul: Memuat Dokumen
+
+```csharp
+Document doc = new Document("path/to/your/document.docx");
+```
+
+Di baris ini, kami hanya memuat dokumen dari jalur yang ditentukan. Pastikan jalurnya mengarah ke dokumen Word Anda yang sebenarnya.
+
+## Langkah 2: Ulangi Melalui Bookmark
+
+Selanjutnya, kita perlu mengulangi semua bookmark di dokumen. Ini memungkinkan kita mengakses setiap bookmark dan propertinya.
+
+Langkah 2 Judul: Iterasi Melalui Bookmark
+
+```csharp
+foreach (Bookmark bookmark in doc.Range.Bookmarks)
 {
-     // Kode untuk menangani bookmark di sini
+    // Memproses setiap bookmark
 }
 ```
 
-## Langkah 2: Dapatkan baris induk dari bookmark
+ Di sini, kami menggunakan a`foreach` loop untuk menelusuri setiap bookmark dalam rentang dokumen. Perulangan ini akan memungkinkan kita menangani setiap bookmark satu per satu.
 
- Kami menggunakan`GetAncestor` metode untuk mengambil baris induk dari node awal dan akhir bookmark:
+## Langkah 3: Identifikasi Baris Awal dan Akhir Bookmark
+
+Untuk setiap bookmark, kita perlu mencari baris yang berisi awal dan akhir bookmark. Hal ini penting untuk menentukan apakah penanda terbentang di baris yang berdekatan.
+
+Langkah 3 Judul: Mengidentifikasi Baris
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-## Langkah 3: Menguraikan Bookmark Bersarang
+Pada langkah ini, kami menggunakan`GetAncestor` metode untuk menemukan baris induk dari node awal bookmark dan akhir bookmark. Ini membantu kami menentukan dengan tepat baris-baris yang terlibat.
 
-Jika kedua baris induk ditemukan dan penanda dimulai dan diakhiri pada baris yang berdekatan, kita pindahkan simpul akhir penanda ke akhir paragraf terakhir sel terakhir di baris atas:
+## Langkah 4: Periksa Baris yang Berdekatan
+
+Sebelum kita memindahkan ujung bookmark, kita perlu memastikan bahwa awal dan akhir bookmark berada di baris yang berdekatan. Kondisi ini penting untuk menguraikan bookmark dengan benar.
+
+Langkah 4 Judul: Memeriksa Kedekatan Baris
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
-     row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+{
+    // Baris-barisnya berdekatan, lanjutkan dengan memindahkan ujung penanda
+}
 ```
 
-### Contoh kode sumber untuk Untangle menggunakan Aspose.Words untuk .NET
+ Di sini, kami menambahkan kondisi untuk memeriksa apakah kedua baris ditemukan dan apakah keduanya berdekatan. Itu`NextSibling` properti membantu kami memverifikasi kedekatan.
 
-Berikut adalah contoh kode sumber lengkap untuk menguraikan bookmark bersarang menggunakan Aspose.Words untuk .NET:
+## Langkah 5: Pindahkan Ujung Bookmark
+
+Terakhir, jika kondisi terpenuhi, kita pindahkan node akhir penanda ke akhir paragraf terakhir di sel terakhir baris atas. Langkah ini secara efektif mengurai kekusutan bookmark.
+
+Langkah 5 Judul: Memindahkan Ujung Bookmark
 
 ```csharp
-
-	foreach (Bookmark bookmark in doc.Range.Bookmarks)
-	{
-		// Dapatkan baris induk dari node akhir bookmark dan bookmark.
-		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-		// Jika kedua baris ditemukan baik-baik saja, dan awal dan akhir penanda berada di baris yang berdekatan,
-		// pindahkan simpul akhir penanda ke akhir paragraf terakhir di sel terakhir baris atas.
-		if (row1 != null && row2 != null && row1.NextSibling == row2)
-			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-	}
-
+row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
+
+Pada langkah ini, kami menggunakan`AppendChild`metode untuk memindahkan node akhir bookmark. Dengan menambahkannya ke paragraf terakhir dari sel terakhir baris atas, kami memastikan bahwa bookmark tersebut terurai dengan benar.
 
 ## Kesimpulan
 
-Dalam artikel ini, kami menjelajahi kode sumber C# untuk memahami cara menggunakan fungsi Untangle Aspose.Words untuk .NET. Kami telah mengikuti panduan langkah demi langkah untuk menguraikan bookmark yang bersarang di baris tabel yang berdekatan.
+Menguraikan bookmark dalam dokumen Word menggunakan Aspose.Words untuk .NET mungkin tampak menakutkan, namun dengan memecahnya menjadi beberapa langkah yang dapat dikelola, prosesnya menjadi lebih jelas. Kita telah mempelajari cara memuat dokumen, melakukan iterasi melalui bookmark, mengidentifikasi baris yang relevan, memeriksa kedekatan, dan terakhir, memindahkan node akhir bookmark. Dengan panduan ini, Anda seharusnya dapat menangani bookmark di dokumen Word Anda dengan lebih efektif.
 
-### FAQ
+## FAQ
 
-#### T: Apakah fungsi Untangle hanya berfungsi dengan penanda bertumpuk di baris tabel yang berdekatan?
+### Bisakah saya menggunakan Aspose.Words untuk .NET untuk memanipulasi elemen lain selain bookmark?
 
-A: Ya, fitur Untangle dirancang khusus untuk menguraikan bookmark bersarang yang ada di baris tabel yang berdekatan. Jika penanda tidak berada pada baris yang berdekatan, fungsi ini tidak akan berlaku.
+Ya, Aspose.Words untuk .NET adalah pustaka canggih yang memungkinkan Anda memanipulasi berbagai elemen dokumen termasuk paragraf, tabel, gambar, dan banyak lagi.
 
-#### T: Bagaimana cara mengidentifikasi penanda bertumpuk di dokumen Word saya?
+### Bagaimana jika penandanya mencakup lebih dari dua baris?
 
-J: Anda dapat mengidentifikasi penanda bertumpuk dengan menelusuri penanda di dokumen dan memeriksa apakah penanda awal dan penanda akhir berada di baris tabel yang berdekatan. Anda dapat menggunakan kode sumber yang disediakan dalam artikel ini sebagai titik awal untuk mengimplementasikan fungsi ini.
+Tutorial ini membahas bookmark yang membentang di dua baris yang berdekatan. Untuk kasus yang lebih kompleks, logika tambahan diperlukan untuk menangani bookmark yang mencakup beberapa baris atau bagian.
 
-#### T: Apakah fungsi Unscramble mengubah konten dokumen asli?
+### Apakah ada versi uji coba Aspose.Words untuk .NET yang tersedia?
 
-A: Ya, fungsi Untangle memodifikasi dokumen asli dengan memindahkan simpul akhir penanda ke akhir paragraf terakhir sel terakhir di baris atas. Pastikan untuk menyimpan salinan cadangan dokumen sebelum menerapkan fitur ini.
+ Ya kamu bisa[unduh uji coba gratis](https://releases.aspose.com/) dari situs web Aspose untuk menjelajahi fitur perpustakaan.
 
-#### T: Bagaimana cara memisahkan penanda bertumpuk di jenis elemen dokumen lain, seperti bagian atau paragraf?
+### Bagaimana saya bisa mendapatkan dukungan jika saya mengalami masalah?
 
-J: Fungsi Untangle yang disajikan dalam artikel ini dirancang khusus untuk menguraikan bookmark yang bersarang di baris tabel yang berdekatan. Jika Anda ingin menguraikan bookmark yang bersarang di elemen dokumen lain, Anda perlu menyesuaikan kodenya dan menggunakan metode yang sesuai untuk mengakses elemen yang diinginkan.
+ Anda dapat mengunjungi[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8) untuk bantuan dengan masalah atau pertanyaan apa pun yang mungkin Anda miliki.
 
-#### T: Apakah ada metode lain untuk menguraikan penanda bertumpuk di dokumen Word menggunakan Aspose.Words untuk .NET?
+### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
 
- J: Metode yang disajikan dalam artikel ini adalah metode umum untuk mengurai kekusutan bookmark yang bersarang di baris tabel yang berdekatan. Namun, mungkin ada pendekatan atau teknik lain tergantung pada kebutuhan spesifik proyek Anda. Anda dapat memeriksanya[Aspose.Words untuk referensi .NET API](https://reference.aspose.com/words/net/) untuk mengeksplorasi lebih jauh fitur-fitur yang tersedia.
+ Ya, Aspose.Words untuk .NET memerlukan lisensi untuk fungsionalitas penuh. Anda dapat membeli lisensi[Di Sini](https://purchase.aspose.com/buy) atau meminta a[izin sementara](https://purchase.aspose.com/temporary-license) untuk tujuan evaluasi.

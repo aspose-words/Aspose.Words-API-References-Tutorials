@@ -2,43 +2,70 @@
 title: Format liczb dla osi na wykresie
 linktitle: Format liczb dla osi na wykresie
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić format liczb dla osi na wykresie za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak formatować numery osi wykresu za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Bez wysiłku zwiększ czytelność i profesjonalizm swojego dokumentu.
 type: docs
 weight: 10
 url: /pl/net/programming-with-charts/number-format-for-axis/
 ---
+## Wstęp
 
-W tym samouczku wyjaśniono, jak używać Aspose.Words dla .NET do ustawiania formatu liczb dla osi na wykresie. Dostarczony kod źródłowy pokazuje, jak utworzyć wykres, dodać dane serii i sformatować etykiety osi.
+No hej! Czy kiedykolwiek pracowałeś z wykresami w dokumentach i żałowałeś, że nie możesz sformatować liczb na osi, aby wyglądały bardziej profesjonalnie? Cóż, masz szczęście! W tym samouczku zagłębimy się w to, jak możesz to osiągnąć za pomocą Aspose.Words dla .NET. Ta potężna biblioteka umożliwia niezwykle łatwą obsługę dokumentów programu Word. Dzisiaj skupiamy się na odnowieniu osi wykresu za pomocą niestandardowych formatów liczb.
 
-## Krok 1: Skonfiguruj projekt
+## Warunki wstępne
 
-Upewnij się, że masz następujące wymagania wstępne:
+Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz. Oto krótka lista kontrolna:
 
-- Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
-- Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
+-  Aspose.Words dla .NET: Upewnij się, że masz go zainstalowanego. Jeśli nie, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+- .NET Framework: Upewnij się, że masz zainstalowaną kompatybilną platformę .NET.
+- Środowisko programistyczne: IDE takie jak Visual Studio będzie działać idealnie.
+- Podstawowa znajomość języka C#: pomoże Ci to w podążaniu za przykładami kodowania.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres
+## Importuj przestrzenie nazw
 
- Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu. To jak położenie fundamentów przed budową domu. Dodaj następujące dyrektywy using na górze pliku kodu:
 
 ```csharp
-// Ścieżka do katalogu dokumentów
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Reporting;
+```
+
+Podzielmy teraz proces na proste, łatwe do wykonania kroki.
+
+## Krok 1: Konfiguracja dokumentu
+
+Nagłówek: Zainicjuj swój dokument
+
+Najpierw musisz utworzyć nowy dokument i narzędzie do tworzenia dokumentów. Pomyśl o tym kroku jak o przygotowaniu płótna i pędzla przed rozpoczęciem tworzenia arcydzieła.
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Następnie użyj`InsertChart` metoda`DocumentBuilder` , aby wstawić wykres kolumnowy do dokumentu.
+ Tutaj,`dataDir` to ścieżka do katalogu dokumentów, w którym zapiszesz ostateczny plik.`Document`I`DocumentBuilder` to klasy z Aspose.Words, które pomagają tworzyć dokumenty Word i manipulować nimi.
+
+## Krok 2: Wstawianie wykresu
+
+Nagłówek: Dodaj wykres do swojego dokumentu
+
+Następnie dodajmy wykres do Twojego dokumentu. Tutaj zaczyna się magia. Wstawimy wykres kolumnowy, który będzie pełnił funkcję pustego obszaru roboczego.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Krok 3: Dodaj dane serii do wykresu
+ The`InsertChart` Metoda wstawia do dokumentu wykres określonego typu (w tym przypadku kolumnowy) i wymiarów.
 
-Dodaj dane serii do wykresu. W tym przykładzie dodamy pięć elementów z odpowiadającymi im wartościami.
+## Krok 3: Dostosowywanie serii wykresów
+
+Nagłówek: Wypełnij wykres danymi
+
+Teraz musimy dodać trochę danych do naszego wykresu. Ten krok przypomina wypełnienie wykresu znaczącymi informacjami.
 
 ```csharp
 chart.Series.Clear();
@@ -47,71 +74,49 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
-## Krok 4: Sformatuj etykiety osi
+ Tutaj dodajemy nową serię o nazwie „Aspose Series 1” z pięcioma punktami danych. The`Series.Clear` Metoda zapewnia usunięcie wszelkich istniejących danych przed dodaniem naszej nowej serii.
 
- Aby ustawić format liczb dla etykiet osi Y, przejdź do`AxisY` właściwość wykresu i ustaw`NumberFormat.FormatCode` właściwość do żądanego formatu. W tym przykładzie ustawiliśmy format na „#,##0”, aby wyświetlać liczby z separatorami tysięcy.
+## Krok 4: Formatowanie numerów osi
+
+Nagłówek: Upiększ swoje numery osi
+
+Na koniec sformatujmy liczby na osi Y, aby były bardziej czytelne. To tak, jakby nakładać ostatnie poprawki na dzieło sztuki.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-## Krok 5: Zapisz dokument
+ The`FormatCode` Właściwość umożliwia ustawienie niestandardowego formatu liczb na osi. W tym przykładzie`#,##0`zapewnia wyświetlanie dużych liczb z przecinkami w przypadku tysięcy.
 
- Na koniec zapisz dokument w określonym katalogu za pomocą pliku`Save` metoda`Document` obiekt.
+## Krok 5: Zapisywanie dokumentu
+
+Nagłówek: Zachowaj swoje arcydzieło
+
+Teraz, gdy wszystko jest skonfigurowane, czas zapisać dokument. Ten krok jest wielkim odkryciem Twojej pracy.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-To kończy implementację ustawiania formatu liczb dla osi przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy formatu liczb dla osi przy użyciu Aspose.Words dla .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
-	chart.AxisY.NumberFormat.FormatCode = "#,##0";
-	doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
-```
+ Tutaj`Save` Metoda zapisuje dokument w określonej ścieżce z nazwą pliku`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Wniosek
 
-W tym samouczku nauczyłeś się, jak ustawić format liczb dla osi na wykresie za pomocą Aspose.Words dla .NET. Postępując zgodnie z instrukcją krok po kroku i wykorzystując dostarczony kod źródłowy, możesz utworzyć nowy dokument, wstawić wykres kolumnowy, dodać dane serii i sformatować etykiety osi, aby wyświetlać liczby w określonym formacie.
+I masz to! Pomyślnie sformatowałeś liczby na osi Y wykresu przy użyciu Aspose.Words dla .NET. Dzięki temu nie tylko Twoje wykresy będą wyglądać bardziej profesjonalnie, ale także poprawi się ich czytelność. Aspose.Words oferuje mnóstwo funkcji, które mogą pomóc w programowym tworzeniu wspaniałych dokumentów Word. Dlaczego więc nie odkryć więcej i zobaczyć, co jeszcze możesz zrobić?
 
-Aspose.Words dla .NET zapewnia zaawansowane funkcje umożliwiające dostosowanie wyglądu wykresów w dokumentach programu Word. Ustawiając format liczb dla etykiet osi, możesz kontrolować sposób wyświetlania liczb, w tym opcje takie jak miejsca dziesiętne, separatory tysięcy, symbole walut i inne. Pozwala to na przedstawienie danych liczbowych w przejrzysty i zrozumiały sposób.
+## Często zadawane pytania
 
-Dzięki Aspose.Words dla .NET masz elastyczność formatowania różnych aspektów wykresu, w tym etykiet osi. Ustawiając format liczb dla osi, można zapewnić spójność i poprawić czytelność wykresu, ułatwiając użytkownikom interpretację przedstawianych wartości.
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom programowe tworzenie, manipulowanie i konwertowanie dokumentów programu Word.
 
-### Często zadawane pytania
+### Czy mogę sformatować inne aspekty wykresu oprócz numerów osi?
+Absolutnie! Aspose.Words dla .NET umożliwia formatowanie tytułów, etykiet, a nawet dostosowywanie wyglądu wykresu.
 
-#### Pytanie 1. Jaki jest format liczb dla osi na wykresie?
-Format liczb osi na wykresie odnosi się do formatowania zastosowanego do wartości numerycznych wyświetlanych na osi. Pozwala kontrolować sposób prezentacji liczb, w tym opcje takie jak miejsca dziesiętne, separatory tysięcy, symbole walut, znaki procentów i inne. Ustawiając format liczb, możesz dostosować wygląd danych liczbowych na wykresie do swoich konkretnych wymagań.
+### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+ Tak, możesz dostać[bezpłatny okres próbny tutaj](https://releases.aspose.com/).
 
-#### Pytanie 2. Jak ustawić format liczb dla etykiet osi?
- Aby ustawić format liczb dla etykiet osi na wykresie za pomocą Aspose.Words dla .NET, możesz uzyskać dostęp do`AxisY` właściwość wykresu i ustaw`NumberFormat.FormatCode`właściwość na żądany kod formatu. Kod formatu jest zgodny ze składnią standardowych wzorców formatowania liczb i określa sposób wyświetlania liczb. Na przykład możesz użyć „#,##0.00”, aby wyświetlić liczby z dwoma miejscami po przecinku i separatorami tysięcy.
+### Czy mogę używać Aspose.Words dla .NET z innymi językami .NET oprócz C#?
+Tak, Aspose.Words dla .NET jest kompatybilny z dowolnym językiem .NET, w tym VB.NET i F#.
 
-#### Pytanie 3. Czy mogę ustawić różne formaty liczb dla etykiet osi X i Y?
-Tak, możesz ustawić różne formaty liczb dla etykiet osi X i Y za pomocą Aspose.Words dla .NET. Uzyskaj dostęp do odpowiedniej osi (`AxisX` dla osi X lub`AxisY` dla osi Y) wykresu i zmodyfikuj`NumberFormat.FormatCode` właściwość indywidualnie dla każdej osi. Umożliwia to zastosowanie różnych formatów liczb do etykiet na każdej osi w zależności od konkretnych wymagań.
-
-#### Pytanie 4. Jakich typowych kodów formatu liczb mogę użyć?
-Aspose.Words dla .NET obsługuje szeroką gamę kodów formatu liczb, których można używać do formatowania etykiet osi na wykresie. Niektóre typowe kody formatu obejmują:
-
-- `0` Lub`#` - Wyświetla liczbę bez miejsc po przecinku.
-- `0.00` Lub`#.00` - Wyświetla liczbę z dwoma miejscami po przecinku.
-- `#,##0` Wyświetla liczbę z separatorami tysięcy.
-- `"€"0.00` - Wyświetla liczbę z symbolem waluty euro i dwoma miejscami po przecinku.
-- `"%"0` - Wyświetla liczbę jako procent.
-
- Więcej informacji o numerze znajdziesz[kody formatu](https://reference.aspose.com/words/net/aspose.words.drawing.charts/chartnumberformat/formatcode/) w dokumentacji API Aspose.Words dla .NET.
-
-#### Pytanie 5. Czy mogę dostosować inne właściwości etykiet osi?
-Tak, Aspose.Words dla .NET zapewnia szeroką gamę właściwości umożliwiających dostosowanie wyglądu i zachowania etykiet osi. Oprócz formatu liczb można modyfikować właściwości, takie jak czcionka, rozmiar, kolor, orientacja, wyrównanie i inne. Umożliwia to pełne dostosowanie etykiet osi do żądanego stylu i wymagań dotyczących prezentacji.
+### Gdzie mogę znaleźć bardziej szczegółową dokumentację?
+ Szczegółowa dokumentacja dostępna jest na stronie[Strona dokumentacji Aspose.Words dla platformy .NET](https://reference.aspose.com/words/net/).

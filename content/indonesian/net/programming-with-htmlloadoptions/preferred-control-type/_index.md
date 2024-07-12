@@ -36,7 +36,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlC
 
 ## Langkah 3: Muat dan simpan dokumen
 
- Kami menggunakan`Document` kelas untuk memuat kode HTML dari aliran memori dengan opsi pemuatan yang ditentukan sebelumnya. Kemudian kita simpan dokumen tersebut pada direktori yang ditentukan dengan`.docx`format file.
+ Kami menggunakan`Document` kelas untuk memuat kode HTML dari aliran memori dengan opsi pemuatan yang ditentukan sebelumnya. Kemudian kita simpan dokumen tersebut pada direktori yang ditentukan dengan`.docx`format berkas.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
@@ -91,4 +91,4 @@ J: StructuredDocumentTags (SDT) adalah elemen berbasis XML yang dapat digunakan 
 
 #### T: Dapatkah saya menggunakan jenis kontrol lain sebagai opsi pilihan?
 
- A: Ya, selain itu`HtmlControlType.StructuredDocumentTag` , Aspose.Words untuk .NET mendukung tipe kontrol lain seperti`HtmlControlType.ContentControl` Dan`HtmlControlType.CustomXmlMarkup`.
+ A: Ya, selain itu`HtmlControlType.StructuredDocumentTag` , Aspose.Words untuk .NET mendukung tipe kontrol lain seperti`HtmlControlType.ContentControl`Dan`HtmlControlType.CustomXmlMarkup`.

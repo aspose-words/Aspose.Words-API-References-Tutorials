@@ -2,134 +2,137 @@
 title: Démêler les signets de ligne dans un document Word
 linktitle: Démêler les signets de ligne dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment démêler les signets de lignes imbriquées dans un document Word pour supprimer des lignes spécifiques sans affecter les autres signets.
+description: Démêlez facilement les signets de lignes emmêlés dans vos documents Word à l'aide d'Aspose.Words pour .NET. Ce guide vous guide tout au long du processus pour une gestion plus propre et plus sûre des favoris.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
+## Introduction
 
-Dans cet article, nous explorerons le code source C# ci-dessus pour comprendre comment utiliser la fonction Untangle Row Bookmarks dans la bibliothèque Aspose.Words pour .NET. Cette fonction permet de mettre les fins de marque-pages de lignes sur la même ligne que les débuts de marque-pages.
+Avez-vous déjà rencontré une situation dans laquelle la suppression d'une ligne dans un document Word à l'aide d'un signet gâche les autres signets des lignes adjacentes ? Cela peut être incroyablement frustrant, surtout lorsqu'il s'agit de tables complexes. Heureusement, Aspose.Words for .NET propose une solution puissante : démêler les signets de lignes. 
+
+Ce guide vous guidera tout au long du processus de démêlage des signets de lignes dans vos documents Word à l'aide d'Aspose.Words pour .NET. Nous décomposerons le code en étapes faciles à comprendre et expliquerons le but de chaque fonction, vous permettant ainsi de résoudre ces problèmes embêtants de signets en toute confiance.
 
 ## Conditions préalables
 
-- Connaissance de base du langage C#.
-- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+Avant de vous lancer, vous aurez besoin de quelques éléments :
 
-## Étape 1 : Chargement du document
+1.  Aspose.Words pour .NET : cette bibliothèque commerciale fournit des fonctionnalités permettant de travailler avec des documents Word par programmation. 2. Vous pouvez télécharger un essai gratuit depuis[lien de téléchargement](https://releases.aspose.com/words/net/) ou achetez une licence auprès de[acheter](https://purchase.aspose.com/buy).
+3. Environnement de développement AC# : Visual Studio ou tout autre IDE C# fonctionnera parfaitement.
+4. Un document Word avec des signets de lignes : nous utiliserons un exemple de document nommé « Table column bookmarks.docx » à des fins de démonstration.
 
- Nous utilisons le`Document` classe pour charger le document existant à partir d'un fichier :
+## Importer des espaces de noms
+
+La première étape consiste à importer les espaces de noms nécessaires dans votre projet C#. Ces espaces de noms donnent accès aux classes et fonctionnalités que nous utiliserons à partir d'Aspose.Words for .NET :
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using System;
+```
+
+## Étape 1 : Charger le document Word
+
+Nous commençons par charger le document Word contenant les signets de lignes enchevêtrées. Le`Document` la classe gère la manipulation de documents dans Aspose.Words. Voici comment charger le document :
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Remplacer par l'emplacement de votre document
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## Étape 2 : Démêler les signets de ligne
+ N'oubliez pas de remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre fichier "Table column bookmarks.docx".
 
- Nous utilisons le`Untangle` fonction pour démêler les signets des lignes. Cette fonction effectue la tâche personnalisée consistant à placer les fins de lignes du signet sur la même ligne que le début du signet :
+## Étape 2 : Démêler les signets de ligne
+
+ C'est ici que la magie opère ! Le`Untangle` La fonction se charge de démêler les signets de ligne. Décomposons ses fonctionnalités :
 
 ```csharp
-Untangle(doc);
+private void Untangle(Document doc)
+{
+   foreach (Bookmark bookmark in doc.Range.Bookmarks)
+   {
+	   // Obtenez la ligne parent du signet et de la fin du signet
+	   Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
+	   Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+	   // Vérifiez si les lignes sont valides et adjacentes
+	   if (row1 != null && row2 != null && row1.NextSibling == row2)
+		   // Déplacer la fin du signet vers le dernier paragraphe de la dernière cellule de la ligne supérieure
+		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+   }
+}
 ```
+
+Voici une explication étape par étape de ce que fait le code :
+
+ Nous parcourons tous les signets du document à l'aide d'un`foreach` boucle.
+Pour chaque signet, nous récupérons la ligne parent du début du signet (`bookmark.BookmarkStart`) et la fin du signet (`bookmark.BookmarkEnd` ) en utilisant le`GetAncestor` méthode.
+Nous vérifions ensuite si les deux lignes sont trouvées (`row1 != null`et`row2 != null`et s'il s'agit de lignes adjacentes (`row1.NextSibling == row2`). Cela garantit que nous modifions uniquement les signets qui s’étendent sur les lignes adjacentes.
+Si les conditions sont remplies, nous déplaçons le nœud de fin du signet à la fin du dernier paragraphe dans la dernière cellule de la ligne du haut (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) les démêlant efficacement.
 
 ## Étape 3 : Supprimer la ligne par signet
 
- Nous utilisons le`DeleteRowByBookmark` fonction pour supprimer une ligne spécifique par son signet :
+ Maintenant que les signets sont démêlés, nous pouvons supprimer en toute sécurité des lignes en utilisant leurs noms de signets. Le`DeleteRowByBookmark` la fonction gère cette tâche :
 
 ```csharp
-DeleteRowByBookmark(doc, "ROW2");
+private void DeleteRowByBookmark(Document doc, string bookmarkName)
+{
+   Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+   Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+   row?.Remove();
+}
 ```
 
-## Étape 4 : Vérifiez l'intégrité des autres signets
+Voici une description de cette fonction :
 
-On vérifie que les autres marque-pages n'ont pas été endommagés en vérifiant si la fin du marque-page est toujours présente :
+Nous prenons le nom du signet (`bookmarkName`) comme entrée.
+ Nous récupérons l'objet bookmark correspondant en utilisant`doc.Range.Bookmarks[bookmarkName]`.
+ Nous obtenons ensuite la ligne parent du signet en utilisant`GetAncestor` (semblable à la`Untangle` fonction).
+Enfin, nous vérifions si le signet et la ligne existent (`bookmark != null` et
+
+## Étape 4 : Vérifiez le démêlage
+
+ Tandis que le`Untangle`La fonction doit garantir la sécurité des autres signets, c'est toujours une bonne pratique de vérifier. Voici comment vérifier si le processus de démêlage n'a pas accidentellement supprimé la fin d'un autre signet :
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-throw new Exception("Wrong, the end of the bookmark was deleted.");
+   throw new Exception("Wrong, the end of the bookmark was deleted.");
+```
 
+Cet extrait de code vérifie si la fin du signet nommé « ROW1 » existe toujours après la suppression de la ligne avec le signet « ROW2 ». S'il est nul, une exception est levée, indiquant un problème avec le processus de démêlage. 
+
+## Étape 5 : Enregistrez le document
+
+ Enfin, après avoir démêlé les signets et éventuellement supprimé des lignes, enregistrez le document modifié à l'aide du`Save` méthode:
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Exemple de code source pour les signets de ligne Untangle à l'aide d'Aspose.Words pour .NET
+Cela enregistre le document avec les signets démêlés et toutes les lignes supprimées sous un nouveau nom de fichier « WorkingWithBookmarks.UntangleRowBookmarks.docx ». 
 
-Voici l’exemple complet de code source pour démêler les signets des lignes à l’aide d’Aspose.Words for .NET :
-
-
-```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Table column bookmarks.docx");
-
-	//Cela effectue la tâche personnalisée consistant à placer les fins de signet de ligne dans la même ligne que le début du signet.
-	Untangle(doc);
-
-	// Nous pouvons désormais facilement supprimer des lignes d'un signet sans endommager les signets d'une autre ligne.
-	DeleteRowByBookmark(doc, "ROW2");
-
-	// Il s'agit simplement de vérifier que l'autre marque-page n'a pas été endommagé.
-	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-		throw new Exception("Wrong, the end of the bookmark was deleted.");
-
-	doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
-
-```
-
-#### Démêler le code source
-```csharp
-
-private void Untangle(Document doc)
-        {
-            foreach (Bookmark bookmark in doc.Range.Bookmarks)
-            {
-                // Obtenez la ligne parent du signet et du nœud de fin du signet.
-                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-                // Si les deux lignes sont correctes et que le début et la fin du signet sont contenus dans des lignes adjacentes,
-                // déplacez le nœud de fin du signet à la fin du dernier paragraphe de la dernière cellule de la ligne supérieure.
-                if (row1 != null && row2 != null && row1.NextSibling == row2)
-                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-            }
-        }
-
-```
-
-#### Code source de SupprimerRowByBookmark
-```csharp
-
- private void DeleteRowByBookmark(Document doc, string bookmarkName)
-        {
-            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
-
-            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
-            row?.Remove();
-        }
-
-```
 ## Conclusion
 
-Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonctionnalité Untangle Row Bookmarks d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour démêler les signets de ligne et supprimer une ligne spécifique sans endommager les autres signets.
+ En suivant ces étapes et en utilisant le`Untangle`fonction, vous pouvez démêler efficacement les signets de lignes dans vos documents Word avec Aspose.Words pour .NET. Cela garantit que la suppression de lignes par signets n'entraîne pas de conséquences inattendues avec d'autres signets dans les lignes adjacentes. N'oubliez pas de remplacer les espaces réservés comme`"YOUR DOCUMENT DIRECTORY"` avec vos chemins et noms de fichiers réels.
 
-### FAQ pour démêler les signets de lignes dans un document Word
+## FAQ
 
-#### Q : Unscramble Row Bookmarks fonctionne-t-il uniquement avec les signets de lignes dans les tableaux ?
+### Aspose.Words pour .NET est-il gratuit ?
 
-R : Oui, la fonctionnalité Démêler les signets de lignes est spécialement conçue pour démêler les signets de lignes qui se trouvent dans les tableaux. Cette fonction peut être utilisée pour traiter les signets de ligne dans des tableaux et garantir que les fins de signet sont sur la même ligne que le début du signet.
+ Aspose.Words for .NET est une bibliothèque commerciale avec un essai gratuit disponible. Vous pouvez le télécharger depuis[lien de téléchargement](https://releases.aspose.com/words/net/).
 
-#### Q : La fonction Déchiffrer les signets de ligne modifie-t-elle le contenu du document original ?
+### Puis-je démêler manuellement les signets de lignes dans Word ?
 
-R : Oui, la fonction Déchiffrer les signets de ligne modifie le document original en déplaçant les extrémités des signets de ligne pour les placer sur la même ligne que les débuts des signets. Assurez-vous d'enregistrer une copie de sauvegarde du document avant d'appliquer cette fonctionnalité.
+Bien que techniquement possible, démêler manuellement les signets dans Word peut être fastidieux et sujet aux erreurs. Aspose.Words for .NET automatise ce processus, vous faisant gagner du temps et des efforts.
 
-#### Q : Comment puis-je identifier les signets de ligne dans mon document Word ?
+###  Que se passe-t-il si le`Untangle` function encounters an error?
 
-R : Les signets de ligne sont généralement utilisés dans les tableaux pour marquer des sections spécifiques. Vous pouvez identifier les signets de lignes en parcourant les signets dans le document et en vérifiant si les signets se trouvent dans les lignes du tableau.
+Le code inclut un gestionnaire d'exceptions qui lève une exception si le processus de démêlage supprime accidentellement la fin d'un autre signet. Vous pouvez personnaliser cette gestion des erreurs pour l’adapter à vos besoins spécifiques.
 
-#### Q : Est-il possible de démêler les signets de lignes dans les tableaux non adjacents ?
+### Puis-je utiliser ce code pour démêler les signets sur des lignes non adjacentes ?
 
-R : La fonction Démêler les signets de lignes présentée dans cet article est conçue pour démêler les signets de lignes dans les tableaux adjacents. Pour démêler les signets de lignes dans les tableaux non adjacents, des ajustements supplémentaires du code peuvent être nécessaires en fonction de la structure du document.
+Actuellement, le code se concentre sur le démêlage des signets qui s’étendent sur les lignes adjacentes. Modifier le code pour gérer les lignes non adjacentes nécessiterait une logique supplémentaire pour identifier et gérer ces scénarios.
 
-#### Q : Quelles autres manipulations puis-je effectuer sur les signets de lignes une fois qu'ils ont été démêlés ?
+### Y a-t-il des limites à l’utilisation de cette approche ?
 
-R : Une fois les marque-pages défaits, vous pouvez effectuer différentes manipulations selon vos besoins. Cela peut inclure la modification, la suppression ou l’ajout de contenu aux lignes mises en signet. Assurez-vous de manipuler les signets de ligne avec soin pour éviter tout impact indésirable sur le reste du document.
+Cette approche suppose que les signets sont bien définis dans les cellules du tableau. Si les signets sont placés en dehors des cellules ou à des endroits inattendus, le processus de démêlage risque de ne pas fonctionner comme prévu.

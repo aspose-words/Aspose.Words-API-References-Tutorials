@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- Trong bước này, chúng ta truy cập đoạn đầu tiên của tài liệu bằng cách sử dụng`FirstSection` Và`Body` của cải. Tiếp theo, chúng ta truy cập vào`ParagraphFormat.Bidi` thuộc tính để lấy hướng văn bản của đoạn văn. Sau đó chúng tôi hiển thị giá trị này trong bảng điều khiển.
+ Trong bước này, chúng ta truy cập đoạn đầu tiên của tài liệu bằng cách sử dụng`FirstSection`Và`Body` của cải. Tiếp theo, chúng ta truy cập vào`ParagraphFormat.Bidi` thuộc tính để lấy hướng văn bản của đoạn văn. Sau đó chúng tôi hiển thị giá trị này trong bảng điều khiển.
 
 ## Bước 5: Lưu tài liệu
 

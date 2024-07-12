@@ -75,7 +75,7 @@ Trả lời: Aspose.Words for .NET là một thư viện mạnh mẽ để Xử 
 
 #### Câu hỏi: Làm cách nào để tải tài liệu Word bằng Aspose.Words cho .NET?
 
-Trả lời: Để tải tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`Document` lớp và hàm tạo của nó. Bạn cần cung cấp đường dẫn tệp hoặc luồng tài liệu làm tham số. Đây là một ví dụ:
+ Trả lời: Để tải tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`Document` lớp và hàm tạo của nó. Bạn cần cung cấp đường dẫn tệp hoặc luồng tài liệu làm tham số. Đây là một ví dụ:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

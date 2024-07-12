@@ -17,7 +17,7 @@ url: /ar/net/programming-with-sdt/check-box-type-content-control/
 - المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
+ ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -40,7 +40,7 @@ builder.InsertNode(sdtCheckBox);
 ```
 
 ## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام ملف`Save` طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.CheckBoxTypeContentControl.docx".
+ احفظ المستند في الدليل المحدد باستخدام ملف`Save`طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.CheckBoxTypeContentControl.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);

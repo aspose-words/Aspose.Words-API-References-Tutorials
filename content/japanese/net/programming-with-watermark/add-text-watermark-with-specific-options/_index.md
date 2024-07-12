@@ -2,7 +2,7 @@
 title: 特定のオプションでテキスト透かしを追加する
 linktitle: 特定のオプションでテキスト透かしを追加する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、特定のオプションでテキスト透かしを追加する方法を学習します。ステップ バイ ステップ ガイド。
+description: Aspose.Words for .NET を使用して、特定のオプションでテキスト透かしを追加する方法を学習します。ステップバイステップ ガイド。
 type: docs
 weight: 10
 url: /ja/net/programming-with-watermark/add-text-watermark-with-specific-options/

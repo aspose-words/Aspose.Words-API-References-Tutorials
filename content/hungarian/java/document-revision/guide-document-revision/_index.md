@@ -13,7 +13,7 @@ Napjaink felgyorsult világában a dokumentumkezelés és az együttműködés a
 
 ## A dokumentum felülvizsgálatának megértése
 
-### 1.1 Mi az a dokumentum-revízió?
+### 1.1 Mi az a dokumentum-felülvizsgálat?
 
 dokumentum-revízió a dokumentum módosításának folyamatára vonatkozik, legyen szó szöveges fájlról, táblázatról vagy prezentációról. Ezek a változtatások lehetnek tartalomszerkesztés, formázási módosítások vagy megjegyzések hozzáadása. Együttműködési környezetben több szerző és lektor is hozzájárulhat egy dokumentumhoz, ami idővel különféle revíziókhoz vezethet.
 

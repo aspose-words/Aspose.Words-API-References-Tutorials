@@ -39,7 +39,7 @@ Para crear e insertar tablas en documentos usando Aspose.Words para Python, siga
     table = builder.start_table()
     ```
 
-2.  Insertar datos: agregue datos a la tabla utilizando la función del constructor.`insert_cell` y`write` métodos.
+2.  Insertar datos: agregue datos a la tabla utilizando la función del constructor.`insert_cell`y`write` métodos.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Para crear e insertar tablas en documentos usando Aspose.Words para Python, siga
 
 ## Aplicar formato de tabla básico
 
- El formato básico de la tabla se puede lograr utilizando los métodos proporcionados por`Table` y`Cell` clases. Así es como puede mejorar la apariencia de su mesa:
+ El formato básico de la tabla se puede lograr utilizando los métodos proporcionados por`Table`y`Cell` clases. Así es como puede mejorar la apariencia de su mesa:
 
 1. Establecer anchos de columnas: ajuste el ancho de las columnas para garantizar una alineación adecuada y un atractivo visual.
 

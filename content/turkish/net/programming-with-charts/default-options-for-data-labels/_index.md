@@ -2,119 +2,144 @@
 title: Grafikteki Veri Etiketleri İçin Varsayılan Seçenekleri Ayarlama
 linktitle: Grafikteki Veri Etiketleri İçin Varsayılan Seçenekleri Ayarlama
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir grafikteki veri etiketleri için varsayılan seçenekleri nasıl ayarlayacağınızı öğrenin.
+description: Aspose.Words for .NET kullanarak bir grafikteki veri etiketleri için varsayılan seçenekleri nasıl ayarlayacağınızı öğrenin. Grafikleri zahmetsizce oluşturmak ve özelleştirmek için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/default-options-for-data-labels/
 ---
+## giriiş
 
-Bu eğitimde, bir grafikteki veri etiketleri için varsayılan seçenekleri ayarlamak amacıyla Aspose.Words for .NET'in nasıl kullanılacağı açıklanmaktadır. Sağlanan kod, Aspose.Words kullanarak bir grafiğin nasıl oluşturulacağını, veri serilerinin nasıl ekleneceğini ve veri etiketlerinin nasıl özelleştirileceğini gösterir.
+Selam! Belge otomasyonu dünyasına dalmaktan heyecanlı mısınız? Bugün Aspose.Words for .NET'i programlı olarak büyüleyici belgeler oluşturmak için nasıl kullanabileceğimizi keşfedeceğiz. Aspose.Words, Word belgelerini kolaylıkla değiştirmenize olanak tanıyan güçlü bir kütüphanedir ve bu eğitimde, bir grafikteki veri etiketleri için varsayılan seçenekleri ayarlamaya odaklanacağız. İster deneyimli bir geliştirici olun, ister yeni başlayan biri olun, bu kılavuz, kısa sürede çalışmaya başlamanız için her adımda size yol gösterecektir.
 
-## 1. Adım: Projeyi ayarlayın
+## Önkoşullar
 
-Başlamadan önce aşağıdaki gereksinimlerin karşılandığından emin olun:
+Başlamadan önce, bu eğitimle birlikte takip etmeniz gereken her şeye sahip olduğunuzdan emin olalım. İşte hızlı bir kontrol listesi:
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
-- Çıktı belgesinin kaydedileceği belge dizini yolu.
+- Visual Studio veya herhangi bir .NET uyumlu IDE: Kodunuzu yazacağınız ve çalıştıracağınız yer burasıdır.
+-  Aspose.Words for .NET: Yapabilirsin[en son sürümü indir](https://releases.aspose.com/words/net/) ve projenize yükleyin.
+- C# programlamaya ilişkin temel bilgiler: Bu kılavuz yeni başlayanlar için uygun olsa da, C#'a biraz aşina olmak faydalı olacaktır.
+- .NET Framework yüklü: Makinenizde .NET Framework'ün kurulu olduğundan emin olun.
+-  Aspose.Words için geçici lisans: Bir tane edinin[Burada](https://purchase.aspose.com/temporary-license/) Tam işlevselliğin kilidini açmak için.
 
-## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
+Bu önkoşulları sıraladıktan sonra başlamaya hazırız!
 
- İlk önce yeni bir tane oluşturalım`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
+## Ad Alanlarını İçe Aktar
+
+Öncelikle projemizi kuralım ve gerekli namespace’leri import edelim. Bu ad alanları Aspose.Words işlevselliğine erişim için çok önemlidir.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.ReportingServices;
+```
+
+## 1. Adım: Yeni Bir Belge Oluşturun
+
+
+ Yolculuk yeni bir belge oluşturup bir belge başlatarak başlar.`DocumentBuilder` .`DocumentBuilder` sınıf, belge içeriğini kolayca değiştirmek için bir dizi yöntem sağlar.
 
 ```csharp
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Yeni bir belge oluştur
 Document doc = new Document();
+
+// DocumentBuilder'ı başlat
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Daha sonra belgeye bir grafik ekliyoruz.`InsertChart` yöntemi`DocumentBuilder`. Bu örnekte pasta grafiği ekleyeceğiz.
+### Açıklama
+
+ Bu adımda içeriğimizi eklemek ve biçimlendirmek için kullanacağımız belgeyi ve oluşturucuyu kurduk.`dataDir` değişken son belgemizi kaydedeceğimiz yolu tutar.
+
+## 2. Adım: Grafik Ekleme
+
+ Daha sonra belgemize bir pasta grafiği ekleyeceğiz.`InsertChart` yöntemi`DocumentBuilder` sınıf bunu çok kolaylaştırıyor.
 
 ```csharp
+// Pasta grafiği ekleme
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
+
+// Grafik nesnesine erişme
 Chart chart = shape.Chart;
 ```
 
-## 3. Adım: Grafiğe veri serisi ekleyin
+### Açıklama
 
-Şimdi grafiğe bir veri serisi ekleyelim. Bu örnekte üç kategoriyi ve bunlara karşılık gelen değerleri ekleyeceğiz.
+Burada belgemize bir pasta grafiği ekliyoruz.`InsertChart` yöntem, parametre olarak grafik türünü, genişliğini ve yüksekliğini gerektirir. Grafiği ekledikten sonra, onu daha fazla değiştirmek için grafik nesnesine erişiriz.
+
+## 3. Adım: Grafik Serisini Özelleştirin
+
+Şimdi grafikteki mevcut serileri temizleyip özel serilerimizi ekleyeceğiz. Bu seri veri noktalarımızı temsil edecek.
 
 ```csharp
+// Mevcut grafik serisini temizle
 chart.Series.Clear();
+
+// Grafiğe yeni seriler ekleyin
 ChartSeries series = chart.Series.Add("Aspose Series 1",
     new string[] { "Category 1", "Category 2", "Category 3" },
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## 4. Adım: Veri etiketlerini özelleştirin
+### Açıklama
 
- Grafikteki veri etiketlerini özelleştirmek için`ChartDataLabelCollection` diziyle ilişkili nesne.
+Bu adımda önceden var olan serileri temizleyerek grafiğimizin boş olduğundan emin oluyoruz. Ardından pasta grafiğimizde görüntülenecek özel kategorilere ve değerlere sahip yeni bir seri ekliyoruz.
+
+## Adım 4: Veri Etiketleri için Varsayılan Seçenekleri Ayarlayın
+
+Grafiğinizi bilgilendirici kılmak için veri etiketleri çok önemlidir. Yüzdeyi, değeri gösterme ve ayırıcıyı özelleştirme seçeneklerini ayarlayacağız.
 
 ```csharp
+// Veri etiketleri koleksiyonuna erişme
 ChartDataLabelCollection labels = series.DataLabels;
-```
 
- Daha sonra çeşitli özelliklerini değiştirebiliriz.`labels`Veri etiketleri için istenilen seçenekleri ayarlamak için nesneyi seçin. Bu örnekte yüzde ve değerin gösterilmesini etkinleştireceğiz, öncü çizgileri devre dışı bırakacağız ve özel bir ayırıcı ayarlayacağız.
-
-```csharp
+// Veri etiketi seçeneklerini ayarlama
 labels.ShowPercentage = true;
 labels.ShowValue = true;
 labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
-## 5. Adım: Belgeyi kaydedin
+### Açıklama
 
- Son olarak, belgeyi kullanarak belirtilen dizine kaydediyoruz.`Save` yöntemi`Document` nesne.
+ Burada şuraya erişiyoruz:`DataLabels`Her veri etiketinde görüntülenen görünümü ve bilgileri özelleştirmek için serimizin özelliği. Hem yüzdeyi hem de değeri göstermeyi, öncü çizgileri gizlemeyi ve özel bir ayırıcı ayarlamayı seçtik.
+
+## Adım 5: Belgeyi Kaydedin
+
+Son olarak belgemizi belirtilen dizine kaydedeceğiz. Bu adım, tüm değişikliklerimizin bir dosyaya yazılmasını sağlar.
 
 ```csharp
+// Belgeyi kaydet
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanılarak bir grafikteki veri etiketleri için varsayılan seçeneklerin ayarlanması uygulamasını tamamlar.
+### Açıklama
 
-### Aspose.Words for .NET kullanan Veri Etiketleri İçin Varsayılan Seçenekler için örnek kaynak kodu 
-
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	ChartSeries series = chart.Series.Add("Aspose Series 1",
-		new string[] { "Category 1", "Category 2", "Category 3" },
-		new double[] { 2.7, 3.2, 0.8 });
-	ChartDataLabelCollection labels = series.DataLabels;
-	labels.ShowPercentage = true;
-	labels.ShowValue = true;
-	labels.ShowLeaderLines = false;
-	labels.Separator = " - ";
-	doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
-```
+ Bu son adımda belgemizi kullanarak kaydediyoruz.`Save` yöntem. Belge, belirtilen dizine kaydedilecektir.`dataDir`, "WorkingWithCharts.DefaultOptionsForDataLabels.docx" adıyla.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir grafikteki veri etiketleri için varsayılan seçenekleri nasıl ayarlayacağınızı öğrendiniz. Adım adım kılavuzu izleyerek bir grafik oluşturabilir, veri serileri ekleyebilir ve veri etiketlerini özel gereksinimlerinizi karşılayacak şekilde özelleştirebilirsiniz. Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için güçlü bir API sağlayarak çeşitli grafik öğelerini değiştirmenize ve istediğiniz görünüm ve işlevselliğe ulaşmanıza olanak tanır.
+İşte buyur! Aspose.Words for .NET'i kullanarak özelleştirilmiş pasta grafiğine sahip bir Word belgesini başarıyla oluşturdunuz. Bu güçlü kitaplık, belge oluşturmayı ve düzenlemeyi otomatikleştirmeyi kolaylaştırarak zamandan ve emekten tasarruf etmenizi sağlar. İster rapor, ister fatura, ister başka türde bir belge oluşturuyor olun, Aspose.Words yanınızdadır.
 
- Özelliklerini ayarlayarak`ChartDataLabelCollection`Grafik serisiyle ilişkili nesneyi kullanarak, yüzdeleri, değerleri, öncü çizgileri ve özel ayırıcıları gösterme gibi seçenekler de dahil olmak üzere veri etiketlerinin görünümünü kontrol edebilirsiniz. Bu esneklik, verileri etkili bir şekilde sunmanıza ve grafiklerinizin görsel sunumunu geliştirmenize olanak tanır.
+ Keşfetmekten çekinmeyin[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) daha fazla özellik ve örnek için. Mutlu kodlama!
 
-### SSS
+## SSS'ler
 
-#### S1. Aspose.Words for .NET nedir?
-Aspose.Words for .NET, geliştiricilerin .NET uygulamalarını kullanarak Word belgelerini programlı olarak oluşturmasına, yönetmesine ve kaydetmesine olanak tanıyan bir kitaplıktır. Grafikler de dahil olmak üzere belge öğeleriyle Kelime İşleme için geniş bir özellik yelpazesi sunar.
+### Aspose.Words'ü ücretsiz kullanabilir miyim?
+Aspose.Words'ü ücretsiz olarak kullanabilirsiniz.[geçici lisans](https://purchase.aspose.com/temporary-license/) veya özelliklerini kullanarak keşfedin[ücretsiz deneme](https://releases.aspose.com/).
 
-#### Q2. Aspose.Words for .NET'i nasıl kurabilirim?
-Aspose.Words for .NET'i Visual Studio'daki NuGet paket yöneticisini kullanarak indirerek kurabilirsiniz. NuGet paket yöneticisinde "Aspose.Words" ifadesini arayın ve projenize yükleyin.
+### Aspose.Words için nasıl destek alabilirim?
+ aracılığıyla destek alabilirsiniz.[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).
 
-#### S3. Aspose.Words for .NET'i kullanarak grafiğin diğer yönlerini özelleştirebilir miyim?
-Evet, Aspose.Words for .NET bir grafiğin grafik türü, eksen etiketleri, açıklama, çizim alanı ve daha fazlası gibi çeşitli yönlerini özelleştirmenize olanak tanır. İstediğiniz görünümü ve davranışı elde etmek için grafik nesnesinin farklı özelliklerine erişebilir ve bunları değiştirebilirsiniz.
+### Başka türde grafik ekleyebilir miyim?
+ Evet, Aspose.Words çubuk, çizgi ve sütun grafikleri gibi çeşitli grafik türlerini destekler. Kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
 
-#### S4. Grafiği farklı formatlarda kaydedebilir miyim?
- Evet, Aspose.Words for .NET, grafiği içeren belgenin DOCX, PDF, HTML ve daha fazlası dahil olmak üzere çeşitli formatlarda kaydedilmesini destekler. Gereksinimlerinize göre uygun formatı seçebilir ve`Save` yöntemi`Document` Belgeyi kaydetmek için nesne.
+### Aspose.Words .NET Core ile uyumlu mu?
+ Evet, Aspose.Words .NET Core ile uyumludur. Daha fazla bilgiyi şurada bulabilirsiniz:[dokümantasyon](https://reference.aspose.com/words/net/).
 
-#### S5. Bu teknikleri diğer grafik türlerine uygulayabilir miyim?
-Evet, bu eğitimde açıklanan teknikler Aspose.Words for .NET tarafından desteklenen diğer grafik türlerine de uygulanabilir. Anahtar, Kelime İşleme yaptığınız grafik türüne özgü ilgili nesnelere ve özelliklere erişmektir.
+### Aspose.Words lisansını nasıl satın alabilirim?
+ adresinden lisans satın alabilirsiniz.[Aspose mağaza](https://purchase.aspose.com/buy).
+

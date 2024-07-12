@@ -2,7 +2,7 @@
 title: Odebrat zápatí v dokumentu aplikace Word
 linktitle: Odebrat zápatí v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak snadno odstranit zápatí v dokumentech aplikace Word pomocí Aspose.Words pro .NET. Postupujte podle našeho podrobného průvodce pro efektivní manipulaci se soubory DOCX.
+description: Naučte se, jak snadno odstranit zápatí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro efektivní manipulaci se soubory DOCX.
 type: docs
 weight: 10
 url: /cs/net/remove-content/remove-footers/

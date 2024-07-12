@@ -207,7 +207,7 @@ for filename in input_files:
 
 经过
 
- 结合Python和Aspose.Words的强大功能，您可以自动进行文档的批量转换，从而提高生产力和效率。
+ 结合 Python 和 Aspose.Words 的强大功能，您可以自动执行文档的批量转换，从而提高生产力和效率。
 
 #### 例子：
 

@@ -181,7 +181,7 @@ doc1.compare(doc2, "comparison_result.docx");
 
 ### 如何將頁面尺寸設定為A4？
 
-若要將頁面尺寸設為 A4，您可以使用`PageSetup`類別並指定紙張尺寸，如下所示：
+若要將頁面尺寸設為 A4，您可以使用`PageSetup`類別並指定紙張尺寸如下：
 
 ```java
 Document doc = new Document();

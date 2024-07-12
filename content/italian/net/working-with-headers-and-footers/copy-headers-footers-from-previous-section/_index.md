@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Passaggio 2: accedi alla sezione corrente
 
-Recuperiamo la sezione corrente utilizzando`builder.CurrentSection`. Questa sezione sarà la destinazione in cui copieremo le intestazioni e i piè di pagina della sezione precedente.
+ Recuperiamo la sezione corrente utilizzando`builder.CurrentSection`Questa sezione sarà la destinazione in cui copieremo le intestazioni e i piè di pagina della sezione precedente.
 
 ### Passaggio 3: definire la sezione precedente
 

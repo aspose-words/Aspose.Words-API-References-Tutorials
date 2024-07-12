@@ -45,7 +45,7 @@ Nakonec můžeme dokument uložit v požadovaném formátu.
 // K přidání obsahu do dokumentu použijte tvůrce dokumentů.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Vložit hypertextový odkaz.
+//Vložit hypertextový odkaz.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", nepravda);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

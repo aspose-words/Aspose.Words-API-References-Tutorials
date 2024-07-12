@@ -17,7 +17,7 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## 4. lépés: Hozzon létre egy táblázatot és táblázatszerkezetet
- Kezdje el a táblázat létrehozását a`StartTable` módszere a`DocumentBuilder` . Adja hozzá a táblázat celláit és tartalmát a`InsertCell` és`Write` mód.
+ Kezdje el a táblázat létrehozását a`StartTable` módszere a`DocumentBuilder` . Adja hozzá a táblázat celláit és tartalmát a`InsertCell`és`Write` mód.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Hozzon létre egy`Row`hogy az ismétlődő szakasz minden elemét képviselje, és hozzáfűzze az ismétlődő szakaszelemhez.
+ Hozzon létre egy`Row` hogy az ismétlődő szakasz minden elemét képviselje, és hozzáfűzze az ismétlődő szakaszelemhez.
 
 ```csharp
 Row row = new Row(doc);

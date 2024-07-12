@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- Ebben a lépésben elérjük a`Theme` tárgya a`Document`objektumot a dokumentumtéma lekéréséhez. Ezután módosíthatjuk a téma tulajdonságait, például a másodlagos betűtípusokat (`MinorFonts.Latin`) és színek (`Colors.Hyperlink`).
+Ebben a lépésben elérjük a`Theme` tárgya a`Document` objektumot a dokumentumtéma lekéréséhez. Ezután módosíthatjuk a téma tulajdonságait, például a másodlagos betűtípusokat (`MinorFonts.Latin`) és színek (`Colors.Hyperlink`).
 
 ## 4. lépés: Mentse el a dokumentumot
 
@@ -63,7 +63,7 @@ Fedezze fel az Aspose.Words for .NET által kínált további funkciókat, hogy 
 
 #### Hogyan állíthatom be a környezetet a téma tulajdonságainak beállítására egy Word-dokumentumban az Aspose.Words for .NET használatával?
 
-környezet beállításához gondoskodnia kell arról, hogy az Aspose.Words for .NET telepítve legyen és konfigurálva legyen a fejlesztői környezetben. Ez magában foglalja a szükséges hivatkozások hozzáadását és a megfelelő névterek importálását az Aspose.Words API eléréséhez.
+A környezet beállításához gondoskodnia kell arról, hogy az Aspose.Words for .NET telepítve legyen és konfigurálva legyen a fejlesztői környezetben. Ez magában foglalja a szükséges hivatkozások hozzáadását és a megfelelő névterek importálását az Aspose.Words API eléréséhez.
 
 #### Hogyan érhetem el és módosíthatom a téma tulajdonságait?
 

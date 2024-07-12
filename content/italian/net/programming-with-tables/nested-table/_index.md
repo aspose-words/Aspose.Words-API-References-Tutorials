@@ -82,7 +82,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Questa chiamata è importante per creare una tabella nidificata all'interno della prima tabella.
-	// Senza questa chiamata, le celle inserite di seguito verranno aggiunte alla tabella esterna.
+	//Senza questa chiamata, le celle inserite di seguito verranno aggiunte alla tabella esterna.
 	builder.EndTable();
 	// Passa alla prima cella della tabella esterna.
 	builder.MoveTo(cell.FirstParagraph);

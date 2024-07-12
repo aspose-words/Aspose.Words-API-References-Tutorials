@@ -84,7 +84,7 @@ Nyugodtan fedezze fel az Aspose.Words for .NET által kínált egyéb hatékony 
 Igen, testreszabhatja a felosztási feltételeket az Ön egyedi igényei szerint. A szakasztöréseken kívül a dokumentumot más elemek, például címsorok, könyvjelzők vagy konkrét tartalom alapján is feloszthatja az Aspose.Words for .NET által biztosított különféle funkciók és módszerek segítségével.
 
 #### 2. kérdés: Lehetséges-e a részeket egyetlen dokumentumba visszavonni?
- Igen, a különálló szakaszokat visszaolvaszthatja egyetlen dokumentumba, ha több dokumentumból importálja és egyesíti a szakaszokat a`ImportNode` és`Sections.Add` mód. Ez lehetővé teszi a felosztási folyamat megfordítását és az eredeti dokumentum rekonstrukcióját.
+ Igen, a különálló szakaszokat visszaolvaszthatja egyetlen dokumentumba, ha több dokumentumból importálja és egyesíti a szakaszokat a`ImportNode`és`Sections.Add` mód. Ez lehetővé teszi a felosztási folyamat megfordítását és az eredeti dokumentum rekonstrukcióját.
 
 #### 3. kérdés: Vannak korlátozások a szakaszok szerint felosztható szakaszok számára?
 szakaszok szerint felosztható szakaszok száma az Aspose.Words for .NET képességeitől és a rendelkezésre álló rendszererőforrásoktól függ. Általában támogatja a nagy számú szakaszt tartalmazó dokumentumok felosztását, de a rendkívül hosszú dokumentumok vagy a nagyon sok szakasz további rendszererőforrásokat és feldolgozási időt igényelhet.

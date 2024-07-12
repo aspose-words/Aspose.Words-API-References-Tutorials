@@ -49,7 +49,7 @@ para.ParagraphFormat.StyleName = "Heading 1";
 ```
 
 ## चरण 6: दस्तावेज़ में पैराग्राफ़ जोड़ें
-अब हम दस्तावेज़ के मुख्य भाग में पैराग्राफ़ नोड जोड़ सकते हैं।
+अब हम दस्तावेज़ के मुख्य भाग में पैराग्राफ नोड जोड़ सकते हैं।
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);

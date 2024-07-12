@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## إضافة الرؤوس والتذييلات إلى الجداول:
 
- يمكن أن تستفيد الجداول من وجود رؤوس وتذييلات توفر سياقًا أو معلومات إضافية. يمكنك إضافة رؤوس وتذييلات إلى الجداول باستخدام`Table.title` و`Table.description` ملكيات.
+ يمكن أن تستفيد الجداول من وجود رؤوس وتذييلات توفر سياقًا أو معلومات إضافية. يمكنك إضافة رؤوس وتذييلات إلى الجداول باستخدام`Table.title`و`Table.description` ملكيات.
 
 ```python
 # Set table title (header)

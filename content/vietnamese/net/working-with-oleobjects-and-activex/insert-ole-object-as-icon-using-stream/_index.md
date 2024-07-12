@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. Để nhúng mã để chèn đối tượng OLE dưới dạng biểu tượng từ luồng vào dự án của bạn, hãy làm theo các bước sau:
 -  Nhập các tài liệu tham khảo cần thiết bằng cách thêm thích hợp`using` các câu lệnh.
--  Tạo một tài liệu mới và trình tạo tài liệu bằng cách sử dụng`Document` Và`DocumentBuilder` các lớp học.
+-  Tạo một tài liệu mới và trình tạo tài liệu bằng cách sử dụng`Document`Và`DocumentBuilder` các lớp học.
 - Sử dụng mã để chèn đối tượng OLE làm biểu tượng từ luồng.
 -  Lưu tài liệu bằng cách sử dụng`Save` phương pháp với đường dẫn đích thích hợp.
 

@@ -72,7 +72,7 @@ Gratulálunk! Sikeresen megtanulta, hogyan hozhat létre egyéni vonalkódképek
 
 ### Létrehozhatok vonalkódot szöveges adatokból?
 
-Igen, szöveges adatokból vonalkódokat generálhat, ha megadja a kívánt szöveget bemenetként a vonalkód-generátorba.
+Igen, szöveges adatokból állíthat elő vonalkódot, ha megadja a kívánt szöveget bemenetként a vonalkód-generátorba.
 
 ### Az Aspose.Words for Java alkalmas nagyméretű dokumentumfeldolgozásra?
 

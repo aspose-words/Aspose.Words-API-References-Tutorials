@@ -74,7 +74,7 @@ I den här handledningen såg vi hur man kommer åt delar av ett Word-dokument g
 
 #### F: Hur ställer jag in dokumentkatalogen i Aspose.Words för .NET?
 
- S: För att ställa in sökvägen till katalogen som innehåller dina dokument måste du ersätta`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg. Så här gör du:
+S: För att ställa in sökvägen till katalogen som innehåller dina dokument måste du ersätta`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg. Så här gör du:
 
 ```csharp
 // Sökväg till din dokumentkatalog

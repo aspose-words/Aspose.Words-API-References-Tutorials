@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// نحن بحاجة إلى تمكين KeepWithNext لكل فقرة في الجدول لمنعها من الانقسام عبر الصفحة.
-	// باستثناء الفقرات الأخيرة في الصف الأخير من الجدول.
+	//باستثناء الفقرات الأخيرة في الصف الأخير من الجدول.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();
@@ -75,4 +75,4 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
 
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمنا كيفية تجميع الجدول معًا في مستند Word باستخدام Aspose.Words لـ .NET. باتباع هذا الدليل التفصيلي وتنفيذ كود C# المقدم، يمكنك الحفاظ على الجدول سليمًا ومنعه من الانقسام عبر صفحات متعددة في مستنداتك. تمنحك هذه الميزة مزيدًا من التحكم في مظهر وتخطيط الجداول في مستنداتك.
+في هذا البرنامج التعليمي، تعلمنا كيفية تجميع الجدول معًا في مستند Word باستخدام Aspose.Words لـ .NET. باتباع هذا الدليل التفصيلي وتنفيذ كود C# المقدم، يمكنك الحفاظ على جدول سليم ومنعه من الانقسام عبر صفحات متعددة في مستنداتك. تمنحك هذه الميزة مزيدًا من التحكم في مظهر وتخطيط الجداول في مستنداتك.

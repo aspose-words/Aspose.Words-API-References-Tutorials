@@ -32,7 +32,7 @@ Table secondTable = (Table)doc.GetChild(NodeType.Table, 1, true);
 Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
 ## Paso 3: combinar filas de la tabla
-A continuación, combinaremos las filas de la segunda tabla hasta el final de la primera tabla. Utilice el siguiente código:
+continuación, combinaremos las filas de la segunda tabla hasta el final de la primera tabla. Utilice el siguiente código:
 
 ```csharp
 // Combinación de filas de la tabla

@@ -51,7 +51,7 @@ Het project opzetten
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Met deze regel wordt de map ingesteld waarin uw documenten worden opgeslagen. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
+ Met deze regel wordt de map ingesteld waarin uw documenten worden opgeslagen. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map.
 
 ## Stap 2: Initialiseer het document en DocumentBuilder
 
@@ -106,7 +106,7 @@ par.Runs[0].Font.SnapToGrid = true;
 
 - `par.Runs[0].Font.SnapToGrid = true;`zorgt ervoor dat het lettertype dat in de alinea wordt gebruikt, uitgelijnd is met het raster.
 
-## Stap 6: Sla het document op
+## Stap 6: Bewaar het document
 
 Sla het document ten slotte op in de door u opgegeven map.
 

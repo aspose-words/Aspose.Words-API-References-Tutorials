@@ -84,7 +84,7 @@ R: Para configurar o Aspose.Words for .NET para não incorporar fontes principai
 #### P: Quais são os benefícios de não incorporar fontes básicas em um arquivo PDF?
 R: Os benefícios de não incorporar fontes básicas em um arquivo PDF são:
 
-Redução do tamanho do arquivo PDF: Ao evitar a incorporação de fontes comumente disponíveis, como Arial, Times New Roman, etc., o tamanho do arquivo PDF pode ser reduzido, facilitando o armazenamento, compartilhamento e transferência de arquivos.
+Redução do tamanho do arquivo PDF: Ao evitar a incorporação de fontes comumente disponíveis, como Arial, Times New Roman, etc., o tamanho do arquivo PDF pode ser reduzido, facilitando o armazenamento, o compartilhamento e a transferência de arquivos.
 
 Melhor compatibilidade: Ao usar fontes básicas comumente disponíveis em sistemas leitores de PDF, você garante melhor compatibilidade e aparência do documento em diferentes dispositivos e plataformas.
 

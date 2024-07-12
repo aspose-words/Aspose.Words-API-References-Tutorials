@@ -10,7 +10,7 @@ url: /pl/java/document-merging/merging-documents-documentbuilder/
 
 ## Wprowadzenie do łączenia dokumentów za pomocą narzędzia DocumentBuilder
 
-W świecie przetwarzania dokumentów Aspose.Words for Java jest potężnym narzędziem do manipulowania dokumentami i zarządzania nimi. Jedną z jego kluczowych funkcji jest możliwość płynnego łączenia dokumentów za pomocą narzędzia DocumentBuilder. W tym przewodniku krok po kroku przeanalizujemy, jak to osiągnąć, korzystając z przykładów kodu, upewniając się, że możesz wykorzystać tę funkcję w celu usprawnienia przepływów pracy związanych z zarządzaniem dokumentami.
+W świecie przetwarzania dokumentów Aspose.Words for Java jest potężnym narzędziem do manipulowania dokumentami i zarządzania nimi. Jedną z jego kluczowych funkcji jest możliwość płynnego łączenia dokumentów za pomocą narzędzia DocumentBuilder. W tym przewodniku krok po kroku przeanalizujemy, jak to osiągnąć, korzystając z przykładów kodu, upewniając się, że możesz wykorzystać tę funkcję do usprawnienia przepływów pracy związanych z zarządzaniem dokumentami.
 
 ## Warunki wstępne
 

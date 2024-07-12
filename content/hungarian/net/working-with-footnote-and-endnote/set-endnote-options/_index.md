@@ -85,7 +85,7 @@ Nyugodtan használja ezt a kódot saját projektjeiben, és módosítsa saját i
 
 #### K: Testreszabható a végjegyzetek számozása egy dokumentumban?
 
- V: Igen, személyre szabható a végjegyzetek számozása egy dokumentumban. Használhatja a`RestartRule` és`NumberStyle` tulajdonságai a`EndnoteOptions` osztályban meghatározott újraindítási szabályok és számozási stílusok meghatározásához.
+ V: Igen, személyre szabható a végjegyzetek számozása egy dokumentumban. Használhatja a`RestartRule`és`NumberStyle` tulajdonságai a`EndnoteOptions` osztályban meghatározott újraindítási szabályok és számozási stílusok meghatározásához.
 
 #### K: Hogyan helyezhetem el a végjegyzeteket egy dokumentumban?
 

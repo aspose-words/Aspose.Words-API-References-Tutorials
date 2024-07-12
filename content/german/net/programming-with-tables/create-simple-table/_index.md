@@ -87,7 +87,7 @@ Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument an
 	builder.StartTable();
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 1 Content.");
-	// Baue die zweite Zelle.
+	// Bauen Sie die zweite Zelle.
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 2 Content.");
 	// Rufen Sie die folgende Methode auf, um die Zeile zu beenden und eine neue Zeile zu beginnen.
@@ -95,7 +95,7 @@ Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument an
 	// Bauen Sie die erste Zelle der zweiten Reihe.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 1 Content");
-	// Baue die zweite Zelle.
+	// Bauen Sie die zweite Zelle.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();

@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Substituir`"Your Document Directory"` e`"Your Output Directory"` com os caminhos apropriados.
+ Substituir`"Your Document Directory"`e`"Your Output Directory"` com os caminhos apropriados.
 
 ## 4. Personalização da mala direta
 

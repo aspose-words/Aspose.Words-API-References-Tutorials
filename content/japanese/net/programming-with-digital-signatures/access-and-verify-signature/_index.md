@@ -2,122 +2,150 @@
 title: Word 文書の署名にアクセスして検証する
 linktitle: Word 文書の署名にアクセスして検証する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内のデジタル署名にアクセスし、検証する方法を学習します。
+description: この包括的なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書のデジタル署名にアクセスし、検証します。文書の信頼性を簡単に確保できます。
 type: docs
 weight: 10
 url: /ja/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
-このチュートリアルでは、Aspose.Words for .NET のアクセスおよび署名検証機能を使用する手順を説明します。この機能を使用すると、Word 文書内のデジタル署名にアクセスし、その有効性を検証できます。以下の手順に従ってください。
+## 導入
 
-## ステップ1: ドキュメントを読み込み、署名にアクセスする
+こんにちは、技術愛好家の皆さん！Word 文書のデジタル署名にアクセスして検証する必要があるのに、どこから始めればよいか分からないという状況に陥ったことはありませんか？そんなあなたに朗報です！今日は、Word 文書の取り扱いを簡単にする強力なライブラリである Aspose.Words for .NET の素晴らしい世界に飛び込みます。このガイドを読み終える頃には、Word 文書のデジタル署名を検証するプロになっていることでしょう。さあ、始めましょう！
 
-まず、デジタル署名を含むドキュメントをアップロードします。
+## 前提条件
+
+細かい詳細に入る前に、準備しておく必要のあるものがいくつかあります。
+
+1. Visual Studio: マシンに Visual Studio がインストールされていることを確認してください。ここでコードを記述して実行します。
+2.  Aspose.Words for .NET: Aspose.Words for .NETがインストールされている必要があります。ダウンロードできます。[ここ](https://releases.aspose.com/words/net/)無料トライアルをお忘れなく[ここ](https://releases.aspose.com/)まだ読んでいないなら！
+3. デジタル署名された Word 文書: すでにデジタル署名された Word 文書を用意します。これが署名を検証するために使用するファイルです。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートしましょう。これらの名前空間により、プロジェクトで Aspose.Words 機能を使用できるようになります。
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.DigitalSignatures;
+```
+
+では、これを管理しやすいステップに分解してみましょう。各ステップでは、プロセスの特定の部分をガイドします。準備はいいですか? さあ、始めましょう!
+
+## ステップ1: プロジェクトを設定する
+
+デジタル署名を検証する前に、Visual Studio でプロジェクトを設定する必要があります。手順は次のとおりです。
+
+### 新しいプロジェクトを作成する
+
+1. Visual Studio を開きます。
+2. 「新しいプロジェクトの作成」をクリックします。
+3. 好みに応じて、コンソール アプリ (.NET Core) またはコンソール アプリ (.NET Framework) を選択します。
+4. 「次へ」をクリックし、プロジェクトに名前を付けて、「作成」をクリックします。
+
+### Aspose.Words for .NET をインストールする
+
+1. ソリューション エクスプローラーで、プロジェクト名を右クリックし、[NuGet パッケージの管理] を選択します。
+2. NuGet パッケージ マネージャーで、Aspose.Words を検索します。
+3. 「インストール」をクリックしてプロジェクトに追加します。
+
+## ステップ2: デジタル署名されたWord文書を読み込む
+
+プロジェクトが設定されたので、デジタル署名された Word 文書を読み込みます。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-## ステップ2: デジタル署名を参照する
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントディレクトリへの実際のパスを入力します。このコードスニペットは新しい`Document`オブジェクトを作成し、署名された Word 文書を読み込みます。
 
-ループを使用して、ドキュメント内のすべてのデジタル署名をループします。
+## ステップ3: デジタル署名にアクセスする
+
+ドキュメントが読み込まれたら、デジタル署名にアクセスします。
 
 ```csharp
 foreach (DigitalSignature signature in doc.DigitalSignatures)
 {
-	//署名情報にアクセスする
-	Console.WriteLine("* Signature Found *");
-	Console.WriteLine("Is valid: " + signature.IsValid);
-	//このプロパティは MS Word 文書でのみ使用できます。
-	Console.WriteLine("Reason for signing: " + signature.Comments); 
-	Console.WriteLine("Time of signing: " + signature.SignTime);
-	Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-	Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-	Console.WriteLine();
+    Console.WriteLine("* Signature Found *");
+    Console.WriteLine("Is valid: " + signature.IsValid);
+    Console.WriteLine("Reason for signing: " + signature.Comments); 
+    Console.WriteLine("Time of signing: " + signature.SignTime);
+    Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+    Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+    Console.WriteLine();
 }
 ```
 
-表示メッセージは必要に応じてカスタマイズしてください。
+このコードは、ドキュメント内の各デジタル署名をループし、署名に関するさまざまな詳細を出力します。各部分の動作を詳しく見てみましょう。
 
-### Aspose.Words for .NET を使用して署名にアクセスして検証するためのサンプル ソース コード
+1. 署名が見つかりました: 署名が見つかったことを示します。
+2. 有効: 署名が有効かどうかを確認します。
+3. 署名の理由: 署名の理由がある場合はそれを表示します。
+4. 署名時刻: 文書が署名されたときのタイムスタンプを表示します。
+5. サブジェクト名: 証明書からサブジェクト名を取得します。
+6. 発行者名: 証明書から発行者名を取得します。
 
-Aspose.Words for .NET を使用したアクセスおよび署名検証の完全なソース コードは次のとおりです。
+## ステップ4: コードを実行する
+
+すべての設定が完了したら、コードを実行して結果を確認します。
+
+
+1. プログラムを実行するには、F5 キーを押すか、Visual Studio の [スタート] ボタンをクリックします。
+2. ドキュメントがデジタル署名されている場合は、コンソールに署名の詳細が表示されます。
+
+## ステップ5: 潜在的なエラーを処理する
+
+発生する可能性のあるエラーを常に処理しておくことは良い考えです。コードに基本的なエラー処理を追加してみましょう。
 
 ```csharp
-	
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Digitally signed.docx");
+try
+{
+    //ドキュメント ディレクトリへのパス。
+    string dataDir = "YOUR DOCUMENT DIRECTORY";
+    Document doc = new Document(dataDir + "Digitally signed.docx");
 
-	foreach (DigitalSignature signature in doc.DigitalSignatures)
-	{
-		Console.WriteLine("* Signature Found *");
-		Console.WriteLine("Is valid: " + signature.IsValid);
-		//このプロパティは MS Word 文書でのみ使用できます。
-		Console.WriteLine("Reason for signing: " + signature.Comments); 
-		Console.WriteLine("Time of signing: " + signature.SignTime);
-		Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-		Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-		Console.WriteLine();
-	}
-
+    foreach (DigitalSignature signature in doc.DigitalSignatures)
+    {
+        Console.WriteLine("* Signature Found *");
+        Console.WriteLine("Is valid: " + signature.IsValid);
+        Console.WriteLine("Reason for signing: " + signature.Comments); 
+        Console.WriteLine("Time of signing: " + signature.SignTime);
+        Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+        Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+        Console.WriteLine();
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine("An error occurred: " + ex.Message);
+}
 ```
 
-これらの手順に従うと、Aspose.Words for .NET を使用して Word 文書内のデジタル署名に簡単にアクセスして検証できるようになります。
+これにより、発生する可能性のある例外がすべてキャッチされ、エラー メッセージが出力されます。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のデジタル署名にアクセスし、検証する機能について説明しました。提供されている手順に従うことで、文書を簡単に読み込み、そのデジタル署名にアクセスし、その有効性を検証できます。デジタル署名にアクセスして検証する機能により、Word 文書の整合性と信頼性を確保できます。Aspose.Words for .NET は、デジタル署名を使用した Words Processing 用の強力な API を提供し、検証プロセスを自動化して文書のセキュリティを強化できます。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書内のデジタル署名にアクセスし、検証することができました。思ったほど難しくありませんよね? これらの手順に従うと、Word 文書内のデジタル署名を自信を持って処理し、その信頼性と整合性を確保できます。コーディングを楽しんでください!
 
-### よくある質問
+## よくある質問
 
-#### Q: Word 文書のデジタル署名とは何ですか?
+### Aspose.Words for .NET を使用して Word 文書にデジタル署名を追加できますか?
 
-A: Word 文書のデジタル署名は、文書の整合性と発行元を認証する方法を提供する電子署名です。デジタル署名はデジタル証明書と暗号化アルゴリズムを使用して作成されるため、受信者は文書が改ざんされていないこと、信頼できるソースから送信されたことを確認できます。
+はい、Aspose.Words for .NET を使用して Word 文書にデジタル署名を追加できます。ライブラリには、デジタル署名の追加と検証の両方のための包括的な機能が用意されています。
 
-#### Q: Aspose.Words for .NET を使用して Word 文書内のデジタル署名にアクセスするにはどうすればよいでしょうか?
+### Aspose.Words for .NET はどのような種類のデジタル署名を検証できますか?
 
-A: Aspose.Words for .NET を使用して Word 文書内のデジタル署名にアクセスするには、次の手順に従います。
-1. ドキュメントをロードするには、`Document`クラスを作成し、ドキュメント ファイルへのパスを指定します。
-2. ループを使用して、`DigitalSignatures`ドキュメントのコレクション。各反復はデジタル署名を表します。
+Aspose.Words for .NET は、X.509 証明書を使用する DOCX ファイル内のデジタル署名を検証できます。
 
-#### Q: Word 文書のデジタル署名からどのような情報にアクセスできますか?
+### Aspose.Words for .NET は Microsoft Word のすべてのバージョンと互換性がありますか?
 
-A: Word 文書のデジタル署名からは、次のようなさまざまな情報にアクセスできます。
-- 有効性: 署名が有効かどうかを確認します。
-- コメント: 署名者が指定した署名理由を取得します。
-- 署名時刻: 文書が署名された時刻を取得します。
-- サブジェクト名: 署名者または証明書のサブジェクトの名前を取得します。
-- 発行者名: 証明書の発行者の名前を取得します。
+Aspose.Words for .NET は、DOC、DOCX、RTF など、Microsoft Word ドキュメントのすべてのバージョンをサポートします。
 
-#### Q: Aspose.Words for .NET を使用して Word 文書内のデジタル署名の有効性を検証できますか?
+### Aspose.Words for .NET の一時ライセンスを取得するにはどうすればよいですか?
 
- A: はい、Aspose.Words for .NETを使用してWord文書のデジタル署名の有効性を検証できます。`IsValid`の財産`DigitalSignature`オブジェクトを使用すると、署名が有効かどうかを判断できます。
+ Aspose.Words for .NETの一時ライセンスは以下から入手できます。[ここ](https://purchase.aspose.com/temporary-license/)これにより、ライブラリのすべての機能を制限なく試すことができます。
 
-#### Q: Aspose.Words for .NET を使用して Word 文書内のデジタル署名の有効性を検証するにはどうすればよいですか?
+### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
 
-A: Aspose.Words for .NET を使用して Word 文書内のデジタル署名の有効性を検証するには、次の手順に従います。
-1. アクセス`DigitalSignatures`文書の収集。
-2. それぞれを繰り返す`DigitalSignature`コレクション内のオブジェクト。
-3. 使用`IsValid`の財産`DigitalSignature`署名が有効かどうかを確認するオブジェクト。
-
-#### Q: Word 文書のデジタル署名から署名者のコメントや署名理由を取得できますか?
-
-A: はい、Word文書のデジタル署名から署名者のコメントや署名理由を取得できます。`Comments`の財産`DigitalSignature`オブジェクトは、署名プロセス中に署名者によって指定されたコメントへのアクセスを提供します。
-
-#### Q: Aspose.Words for .NET の署名検証機能はどのような種類のドキュメントをサポートしていますか?
-
-A: Aspose.Words for .NET の署名検証機能は、DOCX ファイル形式の Word 文書のデジタル署名の検証をサポートしています。この機能を使用して、DOCX ファイルの署名を検証できます。
-
-#### Q: Aspose.Words for .NET を使用して Word 文書内のデジタル署名の証明書の詳細にアクセスするにはどうすればよいでしょうか?
-
- A: Aspose.Words for .NETを使用してWord文書のデジタル署名の証明書の詳細にアクセスするには、`CertificateHolder`の財産`DigitalSignature`オブジェクト。`CertificateHolder`オブジェクトを使用すると、サブジェクト名や発行者名など、証明書のさまざまな詳細を取得できます。
-
-#### Q: Aspose.Words for .NET を使用して、Word 文書内のデジタル署名の表示や処理をカスタマイズできますか?
-
- A: はい、Aspose.Words for .NETを使用してWord文書のデジタル署名の表示や処理をカスタマイズできます。`DigitalSignature`オブジェクトを使用すると、必要な情報を抽出したり、追加の検証を実行したり、署名検証プロセスをアプリケーションのワークフローに統合したりできます。
-
-#### Q: Aspose.Words for .NET を使用して Word 文書内の複数のデジタル署名を検証することは可能ですか?
-
- A: はい、Aspose.Words for .NETを使用してWord文書内の複数のデジタル署名を検証することは可能です。`DigitalSignatures`ドキュメントのコレクションでは、各デジタル署名に個別にアクセスして検証できます。
-
+ Aspose.Words for .NETの詳細なドキュメントは以下をご覧ください。[ここ](https://reference.aspose.com/words/net/).

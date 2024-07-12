@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### س: كيفية إدراج كائن OLE مع حزمة OLE في المستند؟
 
- ج: استخدم`InsertOleObject`طريقة منشئ المستندات (`DocumentBuilder`) لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى. هنا مثال :
+ ج: استخدم`InsertOleObject`طريقة منشئ المستندات (`DocumentBuilder`) لإدراج كائن OLE مع حزمة OLE في المستند. حدد تدفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى. هنا مثال :
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");

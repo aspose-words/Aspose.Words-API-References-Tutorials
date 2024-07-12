@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Krok 3: Sprawdź, czy dokument jest zaszyfrowany
 
- Używamy`IsEncrypted` własność`FileFormatInfo`obiekt, aby sprawdzić, czy dokument jest zaszyfrowany. Ta właściwość powraca`true` jeśli dokument jest zaszyfrowany, w przeciwnym razie zostanie zwrócony`false`. Wynik wyświetlamy w konsoli.
+ Używamy`IsEncrypted` własność`FileFormatInfo` obiekt, aby sprawdzić, czy dokument jest zaszyfrowany. Ta właściwość powraca`true` jeśli dokument jest zaszyfrowany, w przeciwnym razie zostanie zwrócony`false`. Wynik wyświetlamy w konsoli.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### P: Jak wykryć format pliku?
- Możesz skorzystać z`DetectFileFormat` metoda`FileFormatUtil`class do wykrywania informacji o formacie pliku. W poniższym przykładzie zakładamy, że zaszyfrowany dokument nosi nazwę „Encrypted.docx” i znajduje się w określonym katalogu dokumentów:
+ Możesz skorzystać z`DetectFileFormat` metoda`FileFormatUtil` class do wykrywania informacji o formacie pliku. W poniższym przykładzie zakładamy, że zaszyfrowany dokument nosi nazwę „Encrypted.docx” i znajduje się w określonym katalogu dokumentów:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### P: Jak sprawdzić, czy dokument jest zaszyfrowany?
- Możesz skorzystać z`IsEncrypted` własność`FileFormatInfo`obiekt, aby sprawdzić, czy dokument jest zaszyfrowany. Ta właściwość powraca`true` jeśli dokument jest zaszyfrowany, w przeciwnym razie zostanie zwrócony`false`. Wynik zostanie wyświetlony w konsoli:
+ Możesz skorzystać z`IsEncrypted` własność`FileFormatInfo` obiekt, aby sprawdzić, czy dokument jest zaszyfrowany. Ta właściwość powraca`true` jeśli dokument jest zaszyfrowany, w przeciwnym razie zostanie zwrócony`false`. Wynik zostanie wyświetlony w konsoli:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

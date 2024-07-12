@@ -15,4 +15,4 @@ Ez az oldal részletes útmutatót nyújt a licencek alkalmazásához az Aspose.
 | --- | --- |
 | [Licenc alkalmazása fájlból](./apply-license-from-file/) | Részletes, lépésenkénti útmutatónkból megtudhatja, hogyan igényelhet licencet egy fájlból az Aspose.Words for .NET-ben. Könnyedén bontsa ki a könyvtárában rejlő teljes potenciált. |
 | [Licenc alkalmazása a Streamből](./apply-license-from-stream/) | Ebből a lépésenkénti útmutatóból megtudhatja, hogyan igényelhet licencet egy adatfolyamból az Aspose.Words for .NET-ben. Használja ki az Aspose.Words teljes potenciálját. |
-| [Alkalmazza a mért licencet](./apply-metered-license/) | Lépésről lépésre szóló útmutatónkból megtudhatja, hogyan alkalmazhat mérőszámos licencet az Aspose.Words for .NET-ben. Rugalmas, költséghatékony licencelés egyszerűen. |
+| [Alkalmazza a mért licencet](./apply-metered-license/) | Lépésről lépésre szóló útmutatónk segítségével megtudhatja, hogyan alkalmazhat mérőszámos licencet az Aspose.Words for .NET-ben. Rugalmas, költséghatékony licencelés egyszerűen. |

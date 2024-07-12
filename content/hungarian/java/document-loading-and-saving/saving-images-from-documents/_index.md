@@ -133,7 +133,7 @@ public void getJpegPageRange() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
-	// Állítsa a "PageSet" értéket "0"-ra, ha csak a dokumentum első oldalát szeretné konvertálni.
+	// Állítsa a „PageSet” értéket „0” értékre, hogy csak a dokumentum első oldalát konvertálja.
 	options.setPageSet(new PageSet(0));
 	// Módosítsa a kép fényerejét és kontrasztját.
 	// Mindkettő 0-1 skálán van, és alapértelmezés szerint 0,5.

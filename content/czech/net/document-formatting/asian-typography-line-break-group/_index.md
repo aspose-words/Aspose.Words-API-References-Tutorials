@@ -49,7 +49,7 @@ Dále potřebujeme získat přístup k formátu odstavce prvního odstavce ve va
 ParagraphFormat format = doc.FirstSection.Body.Paragraphs[0].ParagraphFormat;
 ```
 
-## Krok 3: Zakažte kontrolu přerušení čáry Dálného východu
+## Krok 3: Deaktivujte kontrolu přerušení čáry Dálného východu
 
 Nyní deaktivujeme kontrolu přerušení řádků Dálného východu. Toto nastavení určuje, jak se text zalamuje v asijských jazycích, a jeho vypnutím získáte větší kontrolu nad formátováním.
 

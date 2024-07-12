@@ -11,7 +11,7 @@ url: /hu/python-net/document-structure-and-content-manipulation/document-ole-obj
 mai digitális korban a gazdag és interaktív dokumentumok létrehozása elengedhetetlen a hatékony kommunikációhoz. Az Aspose.Words for Python hatékony eszközkészletet biztosít, amely lehetővé teszi az OLE (Object Linking and Embedding) objektumok és ActiveX-vezérlők beágyazását közvetlenül a Word-dokumentumokba. Ez a funkció a lehetőségek világát nyitja meg, lehetővé téve dokumentumok létrehozását integrált táblázatokkal, diagramokkal, multimédiával és még sok mással. Ebben az oktatóanyagban végigvezetjük az OLE-objektumok és ActiveX-vezérlők beágyazásának folyamatán az Aspose.Words for Python használatával.
 
 
-## Az Aspose.Words for Python használatának megkezdése
+## Az Aspose.Words for Python használatának első lépései
 
 Mielőtt belemerülnénk az OLE-objektumok és ActiveX-vezérlők beágyazásába, győződjön meg arról, hogy a megfelelő eszközökkel rendelkezik:
 
@@ -71,7 +71,7 @@ doc = aw.Document()
 
 ### 3. lépés: ActiveX-vezérlő beillesztése
 
-Tegyük fel, hogy egy multimédia lejátszót szeretne beágyazni. A következőképpen teheti meg:
+Tegyük fel, hogy egy multimédiás lejátszót szeretne beágyazni. A következőképpen teheti meg:
 
 ```python
 activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)

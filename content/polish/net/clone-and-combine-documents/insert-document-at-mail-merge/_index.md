@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Ładowanie dokumentu głównego
 
-Następnie załadujesz dokument główny. Ten dokument zawiera pola scalania, w których zostaną wstawione inne dokumenty.
+Następnie załadujesz dokument główny. Dokument ten zawiera pola scalania, w których zostaną wstawione inne dokumenty.
 
 ```csharp
 Document mainDoc = new Document(dataDir + "Document insertion 1.docx");

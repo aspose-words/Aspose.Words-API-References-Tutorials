@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Denna kod skapar en instans av`Document` och`DocumentBuilder` att bygga dokumentet. Den infogar en`<svg>` tagg som innehåller en`<polygon>` element med attribut för att definiera formen och stilen för SVG-bilden.
+ Denna kod skapar en instans av`Document`och`DocumentBuilder` att bygga dokumentet. Den infogar en`<svg>` tagg som innehåller en`<polygon>` element med attribut för att definiera formen och stilen för SVG-bilden.
 
 ## Steg 3: Ställ in HTML-sparalternativ
 

@@ -2,7 +2,7 @@
 title: Применить лицензию из потока
 linktitle: Применить лицензию из потока
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как применить лицензию из потока в Aspose.Words for .NET, с помощью этого пошагового руководства. Раскройте весь потенциал Aspose.Words.
+description: Узнайте, как применить лицензию из потока в Aspose.Words для .NET, с помощью этого пошагового руководства. Раскройте весь потенциал Aspose.Words.
 type: docs
 weight: 10
 url: /ru/net/apply-license/apply-license-from-stream/

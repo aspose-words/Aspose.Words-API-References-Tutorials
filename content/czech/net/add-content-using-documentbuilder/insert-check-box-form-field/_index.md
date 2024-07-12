@@ -50,7 +50,7 @@ Nyní, když máme nastavený adresář, je čas vytvořit nový dokument. Tento
 Document doc = new Document();
 ```
 
- Tento řádek inicializuje novou instanci souboru`Document` třídy, což nám dává prázdný dokument, se kterým můžeme pracovat.
+ Tento řádek inicializuje novou instanci souboru`Document` třída, což nám dává prázdný dokument, se kterým můžeme pracovat.
 
 ## Krok 3: Inicializace Tvůrce dokumentů
 

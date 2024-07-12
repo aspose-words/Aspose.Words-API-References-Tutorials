@@ -9,7 +9,7 @@ url: /nl/net/working-with-markdown/table/
 ---
 
 
-In dit voorbeeld laten we u zien hoe u een tabel maakt met Aspose.Words voor .NET. Een tabel is een gegevensstructuur die informatie in rijen en kolommen organiseert.
+In dit voorbeeld laten we u zien hoe u een tabel kunt maken met Aspose.Words voor .NET. Een tabel is een gegevensstructuur die informatie in rijen en kolommen organiseert.
 
 ## Stap 1: Een documentgenerator gebruiken
 

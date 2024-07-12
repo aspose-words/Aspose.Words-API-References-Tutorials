@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-document-properties/add-custom-document-properties/
 ---
 
-tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby dodać niestandardowe właściwości do dokumentu za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia dodanie niestandardowych informacji do dokumentu.
+W tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby dodać niestandardowe właściwości do dokumentu za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia dodanie niestandardowych informacji do dokumentu.
 
 ## Krok 1: Konfiguracja projektu
 

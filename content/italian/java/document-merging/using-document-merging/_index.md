@@ -15,7 +15,7 @@ L'unione dei documenti è il processo di combinazione di due o più documenti Wo
 
 ## 2. Iniziare con Aspose.Words per Java
 
-Prima di immergerci nell'unione dei documenti, assicuriamoci di avere Aspose.Words per Java configurato correttamente nel nostro progetto. Segui questi passaggi per iniziare:
+Prima di immergerci nell'unione dei documenti, assicuriamoci di avere Aspose.Words per Java impostato correttamente nel nostro progetto. Segui questi passaggi per iniziare:
 
 ### Ottieni Aspose.Words per Java:
  Visita le versioni Aspose (https://releases.aspose.com/words/java) per ottenere la versione più recente della libreria.

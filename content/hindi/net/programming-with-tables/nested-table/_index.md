@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// यह कॉल पहली तालिका के भीतर नेस्टेड तालिका बनाने के लिए महत्वपूर्ण है।
-	// इस कॉल के बिना, नीचे डाली गई कोशिकाएं बाहरी तालिका में जोड़ दी जाएंगी।
+	//इस कॉल के बिना, नीचे डाली गई कोशिकाएं बाहरी तालिका में जोड़ दी जाएंगी।
 	builder.EndTable();
 	// बाहरी तालिका के प्रथम कक्ष पर जाएँ।
 	builder.MoveTo(cell.FirstParagraph);

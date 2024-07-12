@@ -2,7 +2,7 @@
 title: Ejemplo de fuente de fuente de recurso Steam
 linktitle: Ejemplo de fuente de fuente de recurso Steam
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a utilizar una fuente de fuente de flujo de recursos con Aspose.Words para .NET en esta guía detallada. Asegúrese de que sus documentos se reproduzcan correctamente en todo momento.
+description: Aprenda a utilizar una fuente de flujo de recursos con Aspose.Words para .NET en esta guía detallada. Asegúrese de que sus documentos se reproduzcan correctamente en todo momento.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/resource-steam-font-source-example/
@@ -99,7 +99,7 @@ Ahora domina el proceso de utilizar un flujo de recursos como fuente de fuente c
 
 ###  P3: ¿Puedo manejar otros tipos de advertencias con`IWarningCallback`?
 
- Sí el`IWarningCallback` La interfaz puede manejar varios tipos de advertencias, no solo la sustitución de fuentes.
+ Sí el`IWarningCallback`La interfaz puede manejar varios tipos de advertencias, no solo la sustitución de fuentes.
 
 ### P4: ¿Dónde puedo encontrar soporte para Aspose.Words?
 

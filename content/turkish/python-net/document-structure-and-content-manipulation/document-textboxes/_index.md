@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Metin Kutularını Konumlandırma
 
- Metin kutularının konumunu kontrol etmek, istenen düzeni elde etmek için çok önemlidir. Konumu kullanarak ayarlayabilirsiniz.`left` Ve`top` özellikler. Örneğin:
+ Metin kutularının konumunu kontrol etmek, istenen düzeni elde etmek için çok önemlidir. Konumu kullanarak ayarlayabilirsiniz.`left`Ve`top` özellikler. Örneğin:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ Bu kılavuzda Aspose.Words Python API'sini kullanarak Word belgelerindeki metin 
 
 ### Bir metin kutusunu nasıl yeniden boyutlandırabilirim?
 
- Bir metin kutusunu yeniden boyutlandırmak için genişlik ve yükseklik özelliklerini aşağıdakileri kullanarak ayarlayabilirsiniz:`width` Ve`height` Öznitellikler.
+ Bir metin kutusunu yeniden boyutlandırmak için genişlik ve yükseklik özelliklerini aşağıdakileri kullanarak ayarlayabilirsiniz:`width`Ve`height` Öznitellikler.
 
 ### Bir metin kutusunu döndürebilir miyim?
 

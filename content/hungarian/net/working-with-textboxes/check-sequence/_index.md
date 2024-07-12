@@ -54,7 +54,7 @@ if (textBox. Next == null && textBox. Previous != null)
 }
 ```
 
-Ha a szövegdoboznak nincs következő alakja (`Next`), de korábbi alakja van (`Previous`), ez azt jelenti, hogy vége a sorozatnak. Megjelenik a "A sorozat vége" üzenet.
+Ha a szövegdoboznak nincs következő alakja (`Next`), de korábbi alakja van (`Previous`), ez azt jelenti, hogy a sorozat vége. Megjelenik a "A sorozat vége" üzenet.
 
 ### Példa forráskódra a sorrend ellenőrzéséhez az Aspose.Words for .NET segítségével
 
@@ -85,7 +85,7 @@ Gratulálok ! Most már tudja, hogyan ellenőrizheti a szövegdobozok sorrendjé
 
 ### GYIK a sorrend ellenőrzéséhez
 
-#### K: Milyen könyvtárat használnak a TextBoxok sorrendjének ellenőrzésére az Aspose.Words for .NET használatával?
+#### K: Milyen könyvtárat használnak a TextBox-ok sorrendjének ellenőrzésére az Aspose.Words for .NET használatával?
 
 V: A TextBox-ok sorrendjének ellenőrzéséhez az Aspose.Words for .NET használatával a használt könyvtár az Aspose.Words for .NET.
 

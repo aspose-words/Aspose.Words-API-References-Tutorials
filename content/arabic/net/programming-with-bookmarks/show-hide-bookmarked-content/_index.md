@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- هنا، نضيف بعض النص قبل وبعد المحتوى الذي تم وضع إشارة مرجعية عليه. ال`StartBookmark` و`EndBookmark` تحدد الطرق حدود الإشارة المرجعية.
+ هنا، نضيف بعض النص قبل وبعد المحتوى الذي تم وضع إشارة مرجعية عليه. ال`StartBookmark`و`EndBookmark` تحدد الطرق حدود الإشارة المرجعية.
 
 ## الخطوة 3: إدراج حقل شرطي
 

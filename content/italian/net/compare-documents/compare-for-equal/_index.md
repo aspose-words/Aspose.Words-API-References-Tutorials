@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Passaggio 2: carica i tuoi documenti
 
- Successivamente, dovrai caricare i documenti Word che desideri confrontare. Per questo esempio, supponiamo che tu abbia due documenti nominati`Document.docx` E`Document2.docx` situato nella directory dei documenti.
+ Successivamente, dovrai caricare i documenti Word che desideri confrontare. Per questo esempio, supponiamo che tu abbia due documenti nominati`Document.docx`E`Document2.docx` situato nella directory dei documenti.
 
 ```csharp
 // Il percorso della directory dei documenti.

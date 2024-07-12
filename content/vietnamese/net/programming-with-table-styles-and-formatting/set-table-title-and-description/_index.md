@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Bước 3: Truy cập vào bảng và đặt tiêu đề, mô tả
- Bây giờ bạn có thể truy cập vào bảng trong tài liệu bằng cách sử dụng`GetChild()` phương pháp và`Table` lớp học. Tiếp theo, đặt tiêu đề và mô tả cho bảng bằng cách sử dụng`Title` Và`Description` của cải.
+ Bây giờ bạn có thể truy cập vào bảng trong tài liệu bằng cách sử dụng`GetChild()` phương pháp và`Table` lớp học. Tiếp theo, đặt tiêu đề và mô tả cho bảng bằng cách sử dụng`Title`Và`Description` của cải.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

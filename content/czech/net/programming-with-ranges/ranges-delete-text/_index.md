@@ -75,7 +75,7 @@ A: Aspose.Words for .NET je výkonná knihovna pro zpracování textu s dokument
 
 #### Otázka: Jak načtu dokument aplikace Word pomocí Aspose.Words for .NET?
 
-A: Chcete-li načíst dokument aplikace Word pomocí Aspose.Words for .NET, můžete použít`Document` třída a její konstruktér. Jako parametr musíte zadat cestu k souboru nebo datový proud dokumentu. Zde je příklad:
+ A: Chcete-li načíst dokument aplikace Word pomocí Aspose.Words for .NET, můžete použít`Document` třída a její konstruktér. Jako parametr musíte zadat cestu k souboru nebo datový proud dokumentu. Zde je příklad:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

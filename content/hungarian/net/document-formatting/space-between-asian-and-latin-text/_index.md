@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Layout;
 ```
 
-Ezek a kódsorok elengedhetetlenek, mert bevezetik az Aspose.Words általunk használt funkciókat.
+Ezek a kódsorok elengedhetetlenek, mert behozzák az Aspose.Words azon funkcióit, amelyeket használni fogunk.
 
 ## 1. lépés: A dokumentum beállítása
 
@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- A beállítással`AddSpaceBetweenFarEastAndAlpha` és`AddSpaceBetweenFarEastAndDigit` nak nek`true`, azt mondjuk az Aspose.Words-nek, hogy automatikusan állítsa be az ázsiai karakterek és a latin betűk vagy számjegyek közötti távolságot.
+ A beállítással`AddSpaceBetweenFarEastAndAlpha`és`AddSpaceBetweenFarEastAndDigit` nak nek`true`, azt mondjuk az Aspose.Words-nek, hogy automatikusan állítsa be az ázsiai karakterek és a latin betűk vagy számjegyek közötti távolságot.
 
 ## 3. lépés: Szöveg hozzáadása a dokumentumhoz
 

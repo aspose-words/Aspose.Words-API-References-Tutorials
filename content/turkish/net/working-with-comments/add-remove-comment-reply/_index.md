@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-comments/add-remove-comment-reply/
 ---
 
-Bu kapsamlı eğitimde, Aspose.Words for .NET'i kullanarak bir Word belgesine yorum yanıtlarını nasıl ekleyip kaldıracağınızı öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda yorum yanıtlarını yönetebilecek ve bunları gereksinimlerinize göre özelleştirebileceksiniz.
+Bu kapsamlı eğitimde, Aspose.Words for .NET kullanarak bir Word belgesine yorum yanıtlarını nasıl ekleyip kaldıracağınızı öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda yorum yanıtlarını yönetebilecek ve bunları gereksinimlerinize göre özelleştirebileceksiniz.
 
 ## Önkoşullar
 Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:

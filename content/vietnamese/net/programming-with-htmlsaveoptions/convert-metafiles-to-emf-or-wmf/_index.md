@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Mã này tạo ra một thể hiện của`Document` Và`DocumentBuilder` để xây dựng tài liệu. Nó chèn một`<img>` gắn thẻ vào tài liệu bằng hình ảnh được mã hóa base64.
+ Mã này tạo ra một thể hiện của`Document`Và`DocumentBuilder` để xây dựng tài liệu. Nó chèn một`<img>` gắn thẻ vào tài liệu bằng hình ảnh được mã hóa base64.
 
 ## Bước 3: Đặt tùy chọn lưu HTML
 

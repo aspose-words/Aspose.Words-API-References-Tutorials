@@ -2,7 +2,7 @@
 title: استنساخ مستند Word
 linktitle: استنساخ مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية استنساخ مستند Word بسهولة باستخدام Aspose.Words لـ .NET من خلال دليلنا خطوة بخطوة. مثالية لكل من المطورين المبتدئين وذوي الخبرة.
+description: تعرف على كيفية استنساخ مستند Word بسهولة باستخدام Aspose.Words لـ .NET من خلال دليلنا خطوة بخطوة. مثالي لكل من المطورين المبتدئين وذوي الخبرة.
 type: docs
 weight: 10
 url: /ar/net/clone-and-combine-documents/cloning-document/

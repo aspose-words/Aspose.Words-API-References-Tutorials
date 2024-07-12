@@ -76,5 +76,5 @@ A：Markdown 中的分隔代码是一种用于在 Markdown 文档中显示代码
 
 #### 问：所有 Markdown 编辑器都支持 Markdown 中的分隔代码吗？
 
-答：Markdown 中对分隔代码的支持可能因 Markdown 编辑器而异。请查看发布者的特定文档以确保无误。
+答：不同 Markdown 编辑器对 Markdown 中分隔代码的支持可能有所不同。请查看发布商的具体文档以确保无误。
 

@@ -2,49 +2,67 @@
 title: 宛先スタイルの使用リスト
 linktitle: 宛先スタイルの使用リスト
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、宛先ドキュメントのリスト スタイルを保持しながら Word ドキュメントを結合および追加する方法を学習します。
+description: Aspose.Words for .NET を使用してドキュメント リストをシームレスに結合および管理する方法を学びます。効率的なドキュメント統合については、ステップ バイ ステップのチュートリアルに従ってください。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/list-use-destination-styles/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET のリスト使用宛先スタイル機能を使用する手順について説明します。この機能を使用すると、宛先ドキュメントのリスト スタイルを使用しながら、Word ドキュメントを結合および追加できます。
+一貫したスタイルを維持しながらドキュメントを統合することは、特にリストの場合は困難です。Aspose.Words for .NET は、これらの複雑さを管理するための強力なツールを提供し、ドキュメントの書式設定の整合性を維持します。このチュートリアルでは、宛先スタイルを使用してリストを含むドキュメントを結合し、洗練された最終製品を作成するプロセスについて説明します。
 
 ## 前提条件
 
-始める前に、次のものがあることを確認してください。
+このチュートリアルに進む前に、次のものを用意してください。
+- マシンに Visual Studio がインストールされています。
+- Aspose.Words for .NET ライブラリがプロジェクトに統合されました。
+- C# プログラミング言語の基本的な理解。
 
-1. Aspose.Words for .NET がインストールされています。Aspose Web サイトからダウンロードするか、NuGet 経由でインストールできます。
-2. Visual Studio またはその他の C# 開発環境。
+## 名前空間のインポート
 
-## ステップ1: ドキュメントディレクトリを初期化する
-
-まず、ドキュメントディレクトリへのパスを設定する必要があります。`dataDir`ドキュメントが保存されているパスへの変数。
+まず、Aspose.Words の機能を活用するために必要な名前空間をインポートします。
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
+
+プロセスを明確なステップに分解してみましょう。
+
+## ステップ1: ドキュメントパスを設定する
+
+ドキュメントが存在するディレクトリ パスを定義していることを確認します。
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+```
+
+交換する`"YOUR_DOCUMENT_DIRECTORY_PATH"`ドキュメントが保存されている実際のディレクトリ パスを入力します。
 
 ## ステップ2: ソースドキュメントと宛先ドキュメントを読み込む
 
-次に、Aspose.Wordsを使用してソースドキュメントと宛先ドキュメントをロードする必要があります。`Document`クラス。`Document`ドキュメント名に応じてコンストラクターを作成します。
+Aspose.Words を使用してソース ドキュメントと宛先ドキュメントを読み込みます。
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+Document srcDoc = new Document(dataDir + "DocumentSource.docx");
+Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
 ```
 
-## ステップ3: ソース文書を宛先文書の後に継続するように設定する
+調整する`"DocumentSource.docx"`そして`"DocumentDestination.docx"`実際のファイル名を使用します。
 
-ソース文書のコンテンツが宛先文書の終了後も継続されるようにするには、`SectionStart`ソース文書の最初のセクションのプロパティを`SectionStart.Continuous`.
+## ステップ3: ソースドキュメントのセクション開始を設定する
+
+ドキュメントがスムーズに結合されるようにするには、ソース ドキュメントのセクションの開始を設定します。
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## ステップ4: リストの書式設定を処理する
+この設定は、ドキュメント間の連続性を維持するのに役立ちます。
 
-リストの書式設定を処理するには、ソース ドキュメント内の各段落を反復処理し、それがリスト項目であるかどうかを確認します。リスト項目である場合は、リスト ID を宛先ドキュメント内の既存のリストと比較します。同じ ID のリストが存在する場合は、ソース ドキュメントにリストのコピーを作成し、コピーしたリストを使用するように段落のリスト書式を更新します。
+## ステップ4: リスト統合を管理する
+
+リスト項目を処理するには、ソース ドキュメント内の段落を反復処理します。
 
 ```csharp
 Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -54,9 +72,11 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
     if (para.IsListItem)
     {
         int listId = para.ListFormat.List.ListId;
+
         if (dstDoc.Lists.GetListByListId(listId) != null)
         {
             Aspose.Words.Lists.List currentList;
+
             if (newLists.ContainsKey(listId))
             {
                 currentList = newLists[listId];
@@ -66,73 +86,42 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
                 currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
                 newLists.Add(listId, currentList);
             }
+
             para.ListFormat.List = currentList;
         }
     }
 }
 ```
 
+このコード セグメントにより、ソース ドキュメントのリストが元の書式を維持しながら、宛先ドキュメントにシームレスに統合されます。
+
 ## ステップ5: ソースドキュメントを宛先ドキュメントに追加する
 
-これで、ソース文書を宛先文書に追加することができます。`AppendDocument`方法の`Document`クラス。`ImportFormatMode.UseDestinationStyles`パラメータにより、追加操作中に宛先ドキュメントのリスト スタイルが使用されるようになります。
+変更されたソース ドキュメントを宛先ドキュメントに結合します。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## ステップ6: 最終文書を保存する
+このコマンドは、宛先のスタイルを保持しながらドキュメントを統合します。
 
-最後に、リスト使用宛先スタイル機能を有効にして、結合された文書を保存します。`Save`方法の`Document`クラス。
+## 結論
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+これらの手順に従うことで、Aspose.Words for .NET を使用して、ドキュメント間のリストを効果的に管理および結合できます。このアプローチにより、最終的なドキュメントのスタイルと書式設定が一貫して維持され、全体的なドキュメント管理の効率が向上します。
 
-### Aspose.Words for .NET を使用したリスト使用宛先スタイルのサンプル ソース コード 
+## よくある質問
 
-以下は、Aspose.Words for .NET を使用した C# の「List Use Destination Styles」機能の完全なソース コードです。
+### Aspose.Words for .NET を使用してネストされたリストを処理するにはどうすればよいですか?
+Aspose.Words は、ドキュメント ノードを反復処理し、リスト構造をチェックすることで、ネストされたリストを管理するメソッドを提供します。
 
+### ドキュメントの結合で宛先スタイルを使用する利点は何ですか?
+宛先スタイルは、結合されたドキュメント全体の書式設定の統一性を維持し、プロフェッショナルな外観を実現します。
 
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Aspose.Words はクロスプラットフォームのドキュメント結合をサポートしていますか?
+はい、Aspose.Words は、Windows および Linux 環境を含むさまざまなプラットフォーム間でのドキュメントの結合をサポートしています。
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//ソース ドキュメントを、宛先ドキュメントの終了後すぐに継続するように設定します。
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	//作成されたリストを追跡します。
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			//宛先ドキュメントにこのIDのリストがすでに含まれていないか確認してください。含まれている場合は、
-			// 2 つのリストが一緒に実行される原因になります。代わりに、ソース ドキュメントにリストのコピーを作成します。
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				//このIDに対して新しくコピーされたリストが既に存在する場合は、保存されたリストを取得します。
-				//現在の段落で使用します。
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					//このリストのコピーをドキュメントに追加し、後で参照できるように保存します。
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				//この段落のリストをコピーしたリストに設定します。
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	//ソース ドキュメントを宛先ドキュメントの末尾に追加します。
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### ドキュメントの結合中にリストの書式設定をカスタマイズできますか?
+Aspose.Words では、リストの書式を広範囲にカスタマイズできるため、カスタマイズされたドキュメント統合ソリューションを実現できます。
 
-これで完了です。Aspose.Words for .NET を使用して、リストの宛先スタイルの使用機能を正常に実装しました。最終的なドキュメントには、宛先ドキュメントのリスト スタイルが結合されたコンテンツが含まれます。
+### Aspose.Words を使用した高度なドキュメント管理に関する詳細なリソースはどこで入手できますか?
+探検する[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)包括的なガイドと API リファレンスについては、こちらをご覧ください。

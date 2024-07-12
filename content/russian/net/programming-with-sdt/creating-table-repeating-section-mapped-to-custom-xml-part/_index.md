@@ -17,7 +17,7 @@ url: /ru/net/programming-with-sdt/creating-table-repeating-section-mapped-to-cus
 - Базовые знания C# и обработки документов Word.
 
 ## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором вы хотите сохранить документ.
+ Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Шаг 4. Создайте таблицу и структуру таблицы.
- Начните создавать таблицу с помощью`StartTable` метод`DocumentBuilder` . Добавьте ячейки и содержимое таблицы, используя`InsertCell` и`Write` методы.
+ Начните создавать таблицу с помощью`StartTable` метод`DocumentBuilder` . Добавьте ячейки и содержимое таблицы, используя`InsertCell`и`Write` методы.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Создать`Row`для представления каждого элемента в повторяющемся разделе и добавления его к элементу повторяющегося раздела.
+ Создать`Row` для представления каждого элемента в повторяющемся разделе и добавления его к элементу повторяющегося раздела.
 
 ```csharp
 Row row = new Row(doc);

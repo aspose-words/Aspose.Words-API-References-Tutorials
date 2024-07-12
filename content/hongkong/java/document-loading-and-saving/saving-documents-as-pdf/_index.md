@@ -63,7 +63,7 @@ doc.save("output.pdf", saveOptions);
 
 ## 匯出文檔結構
 
-若要匯出文件結構，請設定`exportDocumentStructure`選項`true`：
+若要匯出文件結構，請設定`exportDocumentStructure`選項`true`:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();

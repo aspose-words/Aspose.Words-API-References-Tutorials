@@ -11,7 +11,7 @@ url: /ar/python-net/document-splitting-and-formatting/combine-clone-documents/
 
 ## تثبيت Aspose.Words
 
- قبل أن نتعمق في التفاصيل، تحتاج إلى إعداد Aspose.Words لـ Python. يمكنك تنزيله وتثبيته باستخدام الرابط التالي:[تحميل Aspose.Words لبيثون](https://releases.aspose.com/words/python/). 
+قبل أن نتعمق في التفاصيل، تحتاج إلى إعداد Aspose.Words لـ Python. يمكنك تنزيله وتثبيته باستخدام الرابط التالي:[تحميل Aspose.Words لبيثون](https://releases.aspose.com/words/python/). 
 
 ## الجمع بين المستندات
 
@@ -127,7 +127,7 @@ Aspose.Words for Python هي مكتبة متعددة الاستخدامات تم
  الاستفادة من`range.replace()` الطريقة مع الخيارات المناسبة للعثور على النص واستبداله بكفاءة.
 
 ### هل يدعم Aspose.Words تعديل التنسيق؟
-بالتأكيد، يمكنك تعديل التنسيق باستخدام طرق مثل`run.font.size` و`run.font.bold`.
+بالتأكيد، يمكنك تعديل التنسيق باستخدام طرق مثل`run.font.size`و`run.font.bold`.
 
 ### أين يمكنني الوصول إلى وثائق Aspose.Words؟
  يمكنك العثور على وثائق شاملة في[Aspose.Words لمرجع Python API](https://reference.aspose.com/words/python-net/).

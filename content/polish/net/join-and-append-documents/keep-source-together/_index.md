@@ -2,49 +2,57 @@
 title: Zachowajcie źródło razem
 linktitle: Zachowajcie źródło razem
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak używać Aspose.Words dla .NET do łączenia i dołączania dokumentów programu Word, zachowując jednocześnie treść źródłową z dokumentem docelowym.
+description: Dowiedz się, jak łączyć dokumenty programu Word za pomocą Aspose.Words dla .NET, zachowując jednocześnie formatowanie. Ten obszerny przewodnik obejmuje wszystko, od konfiguracji po wykonanie.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/keep-source-together/
 ---
+## Wstęp
 
-Ten samouczek poprowadzi Cię przez proces korzystania z funkcji Keep Source Together w Aspose.Words dla .NET. Ta funkcja umożliwia łączenie i dołączanie wielu dokumentów programu Word, zachowując jednocześnie zawartość dokumentu źródłowego z zawartością dokumentu docelowego. 
+W dzisiejszej erze cyfrowej programowe manipulowanie dokumentami programu Word jest niezbędne w różnych branżach. Aspose.Words dla .NET umożliwia programistom efektywną automatyzację zadań związanych z obsługą dokumentów. Ten kompleksowy przewodnik przeprowadzi Cię przez proces łączenia dokumentów przy zachowaniu formatowania źródłowego przy użyciu Aspose.Words dla .NET.
 
 ## Warunki wstępne
 
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
+Przed przystąpieniem do łączenia dokumentów za pomocą Aspose.Words dla .NET upewnij się, że posiadasz następujące elementy:
 
-1. Zainstalowano Aspose.Words dla .NET. Możesz pobrać go ze strony Aspose lub zainstalować za pomocą NuGet.
-2. Visual Studio lub dowolne inne środowisko programistyczne C#.
+- Visual Studio: zintegrowane środowisko programistyczne (IDE) dla programowania .NET.
+- Aspose.Words dla .NET: Zainstalowany i skonfigurowany w Twoim środowisku programistycznym.
+- Znajomość języka C#: Podstawowa znajomość języka programowania C#.
 
-## Krok 1: Zainicjuj katalogi dokumentów
+## Importuj przestrzenie nazw
 
- Najpierw musisz ustawić ścieżkę do katalogu dokumentów. Zmodyfikuj wartość`dataDir` zmienną na ścieżkę, w której znajdują się Twoje dokumenty.
+Aby rozpocząć, zaimportuj niezbędne przestrzenie nazw:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## Krok 2: Załaduj dokumenty źródłowe i docelowe
+## Krok 1: Załaduj dokumenty
 
-Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
+ Najpierw załaduj dokumenty źródłowe i docelowe do Aspose.Words`Document` obiekty.
 
 ```csharp
+// Ścieżka do katalogu dokumentów
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+// Załaduj dokumenty źródłowe i docelowe
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Krok 3: Ustaw dokument źródłowy tak, aby pojawiał się po treści dokumentu docelowego
+## Krok 2: Ustaw początek sekcji
 
- Aby mieć pewność, że dokument źródłowy pojawi się bezpośrednio po treści dokumentu docelowego, należy ustawić opcję`SectionStart` właściwość pierwszej sekcji dokumentu źródłowego do`SectionStart.Continuous`.
+Skonfiguruj początek sekcji, aby zapewnić ciągły przepływ treści dokumentu źródłowego po dokumencie docelowym.
 
 ```csharp
+// Ustaw dokument źródłowy tak, aby pojawiał się bezpośrednio po treści dokumentu docelowego
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Krok 4: Ustaw formatowanie akapitu „Zachowuj z następnym” dla dokumentu źródłowego
+## Krok 3: Trzymaj akapity razem
 
- Aby zachować razem akapity w dokumencie źródłowym, możesz przeglądać każdy akapit w dokumencie i ustawić opcję`KeepWithNext`własność do`true`.
+Aby zachować integralność formatowania, zaznacz każdy akapit w dokumencie źródłowym, aby pozostał przy następnym akapicie.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## Krok 5: Dołącz dokument źródłowy do dokumentu docelowego
+## Krok 4: Dołącz dokumenty
 
- Teraz możesz dołączyć dokument źródłowy do dokumentu docelowego za pomocą`AppendDocument` metoda`Document` klasa. The`ImportFormatMode.KeepSourceFormatting` Parametr gwarantuje, że formatowanie źródłowe zostanie zachowane podczas operacji dołączania.
+ Połącz dokumenty za pomocą`AppendDocument` metodę, zapewniając zachowanie formatowania dokumentu źródłowego.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Krok 6: Zapisz dokument końcowy
+## Krok 5: Zapisz scalony dokument
 
- Na koniec zapisz scalony dokument z włączoną funkcją „Zachowaj źródło razem” za pomocą pliku`Save` metoda`Document` klasa.
+Na koniec zapisz scalony dokument w żądanej lokalizacji.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### Przykładowy kod źródłowy dla Keep Source Together przy użyciu Aspose.Words dla .NET 
+## Wniosek
 
-Oto pełny kod źródłowy funkcji „Keep Source Together” w języku C# przy użyciu Aspose.Words dla .NET:
+Podsumowując, Aspose.Words dla .NET upraszcza zadanie łączenia dokumentów programu Word, zachowując jednocześnie oryginalne formatowanie. Możliwość ta ma kluczowe znaczenie w zastosowaniach wymagających zautomatyzowanego przetwarzania dokumentów.
 
+## Często zadawane pytania
 
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Czy Aspose.Words for .NET może łączyć dokumenty w różnych formatach?
+Tak, może łączyć dokumenty niezależnie od ich formatu, zachowując formatowanie źródłowe.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Ustaw dokument źródłowy tak, aby pojawiał się bezpośrednio po treści dokumentu docelowego.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### Czy Aspose.Words dla .NET obsługuje efektywne łączenie dużych dokumentów?
+Absolutnie obsługuje duże dokumenty z optymalną wydajnością.
 
-Otóż to! Pomyślnie zaimplementowałeś funkcję Keep Source Together przy użyciu Aspose.Words dla .NET. Dokument końcowy będzie zawierał połączoną treść z akapitami dokumentu źródłowego przechowywanymi razem.
+### Czy dostępna jest wersja próbna Aspose.Words dla .NET?
+ Tak, możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
+
+### Jak mogę uzyskać pomoc techniczną dla Aspose.Words dla .NET?
+ Wsparcie techniczne jest dostępne poprzez[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### Czy mogę kupić tymczasową licencję na Aspose.Words dla .NET?
+ Tak, możesz nabyć licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).

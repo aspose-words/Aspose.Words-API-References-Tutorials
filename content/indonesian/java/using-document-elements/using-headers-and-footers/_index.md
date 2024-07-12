@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Penomoran Halaman
 
- Anda dapat memasukkan nomor halaman di header dan footer menggunakan bidang seperti`PAGE` Dan`NUMPAGES`. Bidang ini diperbarui secara otomatis saat Anda menambah atau menghapus halaman.
+ Anda dapat memasukkan nomor halaman di header dan footer menggunakan bidang seperti`PAGE`Dan`NUMPAGES`. Bidang ini diperbarui secara otomatis saat Anda menambah atau menghapus halaman.
 
 ## 9. Informasi Hak Cipta di Footer
 
@@ -189,7 +189,7 @@ Setelah membuat dan menyesuaikan dokumen Anda, jangan lupa untuk menyimpannya me
         row.getLastCell().getCellFormat().setPreferredWidth(PreferredWidth.fromPercent(100 * 2 / 3));
         doc.save("Your Directory Path" + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```	
-Kode sumber metode copyHeadersFootersFromPviousSection
+Kode sumber metode copyHeadersFootersFromPreviousSection
 ```java
     /// <ringkasan>
     /// Mengkloning dan menyalin header/footer dari bagian sebelumnya ke bagian yang ditentukan.

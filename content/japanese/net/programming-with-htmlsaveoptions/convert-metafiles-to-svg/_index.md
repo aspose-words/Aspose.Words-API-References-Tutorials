@@ -8,7 +8,7 @@ weight: 10
 url: /ja/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用してメタファイルを SVG 形式に変換するための C# ソース コードについて説明します。この機能を使用すると、ドキュメントを HTML に変換するときにメタファイルを SVG 形式に変換できます。
+このチュートリアルでは、Aspose.Words for .NET を使用してメタファイルを SVG 形式に変換する C# ソース コードについて説明します。この機能を使用すると、ドキュメントを HTML に変換するときにメタファイルを SVG 形式に変換できます。
 
 ## ステップ1: プロジェクトのセットアップ
 

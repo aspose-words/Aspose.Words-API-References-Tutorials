@@ -58,7 +58,7 @@ A: Um Textfelder in Word mit Aspose.Words für .NET zu verknüpfen, wird die Bib
 
 #### F: Wie kann ich vor dem Erstellen des Links überprüfen, ob das Linkziel gültig ist?
 
- A: Bevor Sie die Verknüpfung zwischen Textfeldern erstellen, können Sie die`IsValidLinkTarget()` Methode, um zu prüfen, ob das Linkziel gültig ist. Diese Methode überprüft, ob das zweite Textfeld ein gültiges Ziel für den Link vom ersten Textfeld sein kann.
+ A: Bevor Sie die Verknüpfung zwischen Textfeldern erstellen, können Sie die`IsValidLinkTarget()` Methode zum Überprüfen, ob das Linkziel gültig ist. Diese Methode überprüft, ob das zweite Textfeld ein gültiges Ziel für den Link vom ersten Textfeld sein kann.
 
 #### F: Wie erstelle ich eine Verknüpfung zwischen zwei Textfeldern?
 

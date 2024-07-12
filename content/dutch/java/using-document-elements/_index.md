@@ -12,7 +12,7 @@ Als u een Java-ontwikkelaar bent en de kracht van Aspose.Words voor Java wilt be
 
 ## Documentelementen begrijpen
 
-Voordat we ons verdiepen in de tutorials, is het essentieel om het concept van documentelementen te begrijpen. In Aspose.Words voor Java zijn documentelementen de bouwstenen van uw documenten. Ze omvatten tekst, alinea's, tabellen, afbeeldingen, kopteksten, voetteksten en meer. Elk element speelt een cruciale rol bij het vormgeven van uw documenten.
+Voordat we ons verdiepen in de tutorials, is het essentieel om het concept van documentelementen te begrijpen. In Aspose.Words voor Java zijn documentelementen de bouwstenen van uw documenten. Ze omvatten tekst, alinea's, tabellen, afbeeldingen, kop- en voetteksten en meer. Elk element speelt een cruciale rol bij het vormgeven van uw documenten.
 
 ## Documentelementen openen en manipuleren
 

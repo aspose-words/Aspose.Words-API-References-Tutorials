@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ở đây, chúng tôi đang tạo một phiên bản của`Document` Và`DocumentBuilder` . nghĩ về`Document` dưới dạng tài liệu Word trống của bạn và`DocumentBuilder` như cây bút của bạn.
+ Ở đây, chúng tôi đang tạo một phiên bản của`Document`Và`DocumentBuilder` . nghĩ về`Document` dưới dạng tài liệu Word trống của bạn và`DocumentBuilder` như cây bút của bạn.
 
 ## Bước 2: Di chuyển đến Bắt đầu Tài liệu
 

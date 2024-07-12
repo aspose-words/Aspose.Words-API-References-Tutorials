@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. Para incorporar o código para inserir um objeto OLE como um ícone de um fluxo em seu projeto, siga estas etapas:
 -  Importe as referências necessárias adicionando o apropriado`using` declarações.
--  Crie um novo documento e um construtor de documentos usando o`Document` e`DocumentBuilder` Aulas.
+-  Crie um novo documento e um construtor de documentos usando o`Document`e`DocumentBuilder` Aulas.
 - Use o código para inserir o objeto OLE como um ícone de um fluxo.
 -  Salve o documento usando o`Save` método com o caminho de destino apropriado.
 

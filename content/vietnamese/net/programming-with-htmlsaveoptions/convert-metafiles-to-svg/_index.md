@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Mã này tạo ra một thể hiện của`Document` Và`DocumentBuilder` để xây dựng tài liệu. Nó chèn một`<svg>` thẻ chứa một`<polygon>` phần tử có các thuộc tính để xác định hình dạng và kiểu dáng của hình ảnh SVG.
+ Mã này tạo ra một thể hiện của`Document`Và`DocumentBuilder` để xây dựng tài liệu. Nó chèn một`<svg>` thẻ chứa một`<polygon>` phần tử có các thuộc tính để xác định hình dạng và kiểu dáng của hình ảnh SVG.
 
 ## Bước 3: Đặt tùy chọn lưu HTML
 

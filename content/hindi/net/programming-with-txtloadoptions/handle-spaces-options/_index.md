@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- इस चरण में, हम TXT दस्तावेज़ लोड करने के लिए विकल्पों को कॉन्फ़िगर करते हैं। हम एक नया दस्तावेज़ बनाते हैं`TxtLoadOptions` ऑब्जेक्ट और सेट करें`LeadingSpacesOptions` और`TrailingSpacesOptions` गुण`TxtLeadingSpacesOptions.Trim` और`TxtTrailingSpacesOptions.Trim` यह Aspose.Words को दस्तावेज़ लोड करते समय लाइनों से आरंभिक और अंतिम रिक्त स्थान हटाने के लिए कहता है।
+ इस चरण में, हम TXT दस्तावेज़ लोड करने के लिए विकल्पों को कॉन्फ़िगर करते हैं। हम एक नया दस्तावेज़ बनाते हैं`TxtLoadOptions` ऑब्जेक्ट और सेट करें`LeadingSpacesOptions`और`TrailingSpacesOptions` गुण`TxtLeadingSpacesOptions.Trim`और`TxtTrailingSpacesOptions.Trim` यह Aspose.Words को दस्तावेज़ लोड करते समय लाइनों से आरंभिक और अंतिम रिक्त स्थान हटाने के लिए कहता है।
 
 ## चरण 4: दस्तावेज़ लोड करना
 

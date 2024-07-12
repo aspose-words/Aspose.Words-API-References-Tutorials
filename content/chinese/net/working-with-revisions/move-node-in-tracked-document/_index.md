@@ -52,7 +52,7 @@ while (node != endNode)
 }
 ```
 
-## 步骤 4：停止追踪评论
+## 步骤 4：停止跟踪评论
 
 我们将停止跟踪该文档的修订。
 
@@ -125,7 +125,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 ```
 
-#### 问：如何在跟踪的文档中移动节点而不生成修订？
+#### 问：如何在不生成修订的情况下移动跟踪文档中的节点？
 
 答：如果您想要移动跟踪文档中的节点而不生成修订，则可以使用`Remove`和`InsertAfter`或者`InsertBefore`方法`Node`对象。例如，要将一个段落移动到另一个段落之后，可以使用以下代码：
 

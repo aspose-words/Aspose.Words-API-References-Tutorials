@@ -2,7 +2,7 @@
 title: Spasi Antara Teks Asia dan Latin Dalam Dokumen Word
 linktitle: Spasi Antara Teks Asia dan Latin Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyesuaikan spasi antara teks Asia dan Latin secara otomatis di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang mendetail.
+description: Pelajari cara menyesuaikan spasi secara otomatis antara teks Asia dan Latin di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci.
 type: docs
 weight: 10
 url: /id/net/document-formatting/space-between-asian-and-latin-text/
@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Dengan mengatur`AddSpaceBetweenFarEastAndAlpha` Dan`AddSpaceBetweenFarEastAndDigit` ke`true`, kami memberi tahu Aspose.Words untuk secara otomatis menyesuaikan spasi antara karakter Asia dan huruf atau angka Latin.
+ Dengan mengatur`AddSpaceBetweenFarEastAndAlpha`Dan`AddSpaceBetweenFarEastAndDigit` ke`true`, kami memberi tahu Aspose.Words untuk secara otomatis menyesuaikan spasi antara karakter Asia dan huruf atau angka Latin.
 
 ## Langkah 3: Menambahkan Teks ke Dokumen
 

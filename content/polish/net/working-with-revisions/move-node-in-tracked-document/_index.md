@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### P: Jak mogę przenieść węzeł w śledzonym dokumencie bez generowania poprawek?
 
- Odp.: Jeśli chcesz przenieść węzeł w śledzonym dokumencie bez generowania wersji, możesz użyć opcji`Remove` I`InsertAfter` Lub`InsertBefore` metody`Node` obiekt. Na przykład, aby przenieść akapit za innym akapitem, możesz użyć następującego kodu:
+ Odp.: Jeśli chcesz przenieść węzeł w śledzonym dokumencie bez generowania wersji, możesz użyć opcji`Remove`I`InsertAfter` Lub`InsertBefore` metody`Node` obiekt. Na przykład, aby przenieść akapit za innym akapitem, możesz użyć następującego kodu:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

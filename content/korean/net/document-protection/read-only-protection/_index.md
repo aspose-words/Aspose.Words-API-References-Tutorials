@@ -2,114 +2,125 @@
 title: Word 문서의 읽기 전용 보호
 linktitle: Word 문서의 읽기 전용 보호
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서의 읽기 전용을 보호하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 읽기 전용 보호를 적용하여 Word 문서를 보호하는 방법을 알아보세요. 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/document-protection/read-only-protection/
 ---
-이 튜토리얼에서는 Aspose.Words for .NET의 읽기 전용 보호 기능을 사용하는 단계를 안내합니다. 이 기능을 사용하면 Word 문서를 읽기 전용으로 만들어 무단 수정을 방지할 수 있습니다. 아래 단계를 따르십시오.
+## 소개
 
-## 1단계: 문서 생성 및 보호 적용
+Word 문서를 관리할 때 내용을 보호하기 위해 읽기 전용으로 설정해야 하는 경우가 있습니다. 실수로 편집할 위험 없이 중요한 정보를 공유하거나 법률 문서의 무결성을 보장하기 위한 경우 읽기 전용 보호는 중요한 기능입니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 읽기 전용 보호를 구현하는 방법을 살펴보겠습니다. 우리는 귀하가 쉽게 따라할 수 있도록 각 단계를 자세하고 흥미로운 방식으로 안내해 드립니다.
 
-Document 클래스와 DocumentBuilder 개체의 인스턴스를 만드는 것부터 시작합니다.
+## 전제조건
+
+코드를 살펴보기 전에 다음과 같은 몇 가지 전제 조건을 충족해야 합니다.
+
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
+2. 개발 환경: .NET이 설치된 개발 환경을 설정합니다. Visual Studio가 좋은 선택입니다.
+3. C#의 기본 이해: 이 자습서에서는 사용자가 C# 프로그래밍에 대한 기본적인 이해가 있다고 가정합니다.
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져왔는지 확인하겠습니다. 이는 .NET용 Aspose.Words에서 필요한 클래스와 메서드에 액세스할 수 있게 해주기 때문에 매우 중요합니다.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 2단계: 문서에 콘텐츠 쓰기
-DocumentBuilder 객체를 사용하여 문서에 내용을 씁니다.
+## 1단계: 문서 설정
+
+이 단계에서는 새 문서와 문서 작성기를 만듭니다. 이것이 우리 운영의 기초를 형성합니다.
 
 ```csharp
-builder.Write("Open document as read-only");
-```
-
-## 3단계: 비밀번호를 설정하고 문서를 읽기 전용으로 설정
-
-WriteProtection 객체의 SetPassword() 속성을 사용하여 문서의 비밀번호를 설정합니다.
-
-```csharp
-doc.WriteProtection.SetPassword("MyPassword");
-```
-
-"MyPassword"를 사용하려는 실제 비밀번호로 바꾸십시오.
-
-## 4단계: 읽기 전용 문서 적용
-
-ReadOnlyRecommended 속성을 true로 설정하여 문서를 읽기 전용으로 만듭니다.
-
-```csharp
-doc.WriteProtection.ReadOnlyRecommended = true;
-```
-
-## 5단계: 읽기 전용 보호 적용 및 문서 저장
-
-마지막으로 Document 개체의 Protect() 메서드를 사용하여 읽기 전용 보호를 적용합니다.
-
-```csharp
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-```
-
-보호된 문서를 저장하려면 올바른 경로와 파일 이름을 지정해야 합니다.
-
-### .NET용 Aspose.Words를 사용하는 읽기 전용 보호의 예제 소스 코드
-
-다음은 .NET용 Aspose.Words를 사용하는 읽기 전용 보호의 전체 소스 코드입니다.
-
-```csharp
-
 // 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
+// 문서에 텍스트를 작성합니다.
 builder.Write("Open document as read-only");
-
-// 최대 15자 길이의 비밀번호를 입력하세요.
-doc.WriteProtection.SetPassword("MyPassword");
-
-// 문서를 읽기 전용으로 만듭니다.
-doc.WriteProtection.ReadOnlyRecommended = true;
-
-// 읽기 전용으로 쓰기 보호를 적용합니다.
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-
 ```
 
-다음 단계를 따르면 문서를 쉽게 보호할 수 있습니다.
+설명:
+
+- 문서가 저장될 디렉터리 경로를 정의하는 것부터 시작합니다.
+-  새로운`Document` 객체가 생성되고`DocumentBuilder` 그것과 연관되어 있습니다.
+- 빌더를 사용하여 문서에 간단한 텍스트 줄을 추가합니다.
+
+## 2단계: 쓰기 방지 비밀번호 설정
+
+다음으로 쓰기 방지를 위한 비밀번호를 설정해야 합니다. 이 비밀번호는 최대 15자까지 가능합니다.
+
+```csharp
+//최대 15자 길이의 비밀번호를 입력하세요.
+doc.WriteProtection.SetPassword("MyPassword");
+```
+
+설명:
+
+-  그만큼`SetPassword` 메서드가 호출됩니다.`WriteProtection` 문서의 속성입니다.
+- 보호를 제거하는 데 필요한 비밀번호(이 경우 "MyPassword")를 제공합니다.
+
+## 3단계: 읽기 전용 권장 사항 활성화
+
+이 단계에서는 문서를 읽기 전용으로 권장합니다. 즉, 문서가 열릴 때 사용자에게 읽기 전용 모드로 열라는 메시지가 표시됩니다.
+
+```csharp
+// 문서를 읽기 전용으로 만드는 것이 좋습니다.
+doc.WriteProtection.ReadOnlyRecommended = true;
+```
+
+설명:
+
+-  그만큼`ReadOnlyRecommended` 속성은 다음과 같이 설정됩니다.`true`.
+- 이렇게 하면 사용자에게 읽기 전용 모드로 문서를 열라는 메시지가 표시되지만 권장 사항을 무시하도록 선택할 수도 있습니다.
+
+## 4단계: 읽기 전용 보호 적용
+
+마지막으로 문서에 읽기 전용 보호를 적용합니다. 이 단계에서는 보호가 적용됩니다.
+
+```csharp
+// 읽기 전용으로 쓰기 보호를 적용합니다.
+doc.Protect(ProtectionType.ReadOnly);
+```
+
+설명:
+
+-  그만큼`Protect` 메서드는 문서에서 다음과 같이 호출됩니다.`ProtectionType.ReadOnly` 인수로.
+- 이 방법은 읽기 전용 보호를 강화하여 비밀번호 없이는 문서를 수정할 수 없도록 합니다.
+
+## 5단계: 문서 저장
+
+마지막 단계는 적용된 보호 설정으로 문서를 저장하는 것입니다.
+
+```csharp
+// 보호된 문서를 저장하세요.
+doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
+```
+
+설명:
+
+-  그만큼`Save` 메서드가 문서에서 호출되어 파일의 경로와 이름을 지정합니다.
+- 문서는 읽기 전용 보호 기능이 적용된 상태로 저장됩니다.
 
 ## 결론
 
-이 튜토리얼에서는 무단 수정을 방지하기 위해 Word 문서를 읽기 전용으로 만들 수 있는 Aspose.Words for .NET의 읽기 전용 보호 기능을 살펴보았습니다. 제공된 단계를 따르면 문서에 읽기 전용 보호를 쉽게 적용하고 보안을 강화할 수 있습니다. 읽기 전용 보호는 편집 기능을 제한하여 문서 내용의 무결성과 정확성을 보장하는 데 도움이 됩니다. Aspose.Words for .NET은 문서 보호를 처리하는 강력하고 유연한 API를 제공하고 Word 문서를 사용자 정의하고 보호하는 다양한 기타 기능을 지원합니다.
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 읽기 전용으로 보호된 Word 문서를 성공적으로 만들었습니다. 이 기능은 문서의 내용이 그대로 유지되고 변경되지 않도록 보장하여 추가 보안 계층을 제공합니다. 중요한 정보를 공유하든 법률 문서를 공유하든 읽기 전용 보호는 문서 관리에 꼭 필요한 도구입니다.
 
-### Word 문서의 읽기 전용 보호에 대한 FAQ
+## FAQ
 
-#### Q: Aspose.Words for .NET의 읽기 전용 보호란 무엇입니까?
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 개발자가 C# 또는 기타 .NET 언어를 사용하여 프로그래밍 방식으로 Word 문서를 생성, 수정, 변환 및 보호할 수 있는 강력한 라이브러리입니다.
 
-A: Aspose.Words for .NET의 읽기 전용 보호는 Word 문서를 읽기 전용으로 만들어 무단 수정을 방지할 수 있는 기능입니다. 문서가 읽기 전용으로 설정되면 사용자는 문서를 열고 볼 수 있지만 내용을 변경할 수는 없습니다.
+### 문서에서 읽기 전용 보호를 제거할 수 있나요?
+ 예, 다음을 사용하여 읽기 전용 보호를 제거할 수 있습니다.`Unprotect` 방법을 확인하고 올바른 비밀번호를 제공하세요.
 
-#### Q: Aspose.Words for .NET을 사용하여 Word 문서에 읽기 전용 보호를 적용하려면 어떻게 해야 합니까?
+### 문서에 설정된 비밀번호는 암호화되어 있나요?
+예, Aspose.Words는 보호된 문서의 보안을 보장하기 위해 비밀번호를 암호화합니다.
 
-A: .NET용 Aspose.Words를 사용하여 Word 문서에 읽기 전용 보호를 적용하려면 다음 단계를 따르세요.
-1.  인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder` 물체.
-2.  사용`DocumentBuilder` 문서에 내용을 쓰려면
-3.  다음을 사용하여 문서의 비밀번호를 설정하세요.`SetPassword` 의 방법`WriteProtection` 물체.
-4.  설정`ReadOnlyRecommended` 의 재산`WriteProtection` 반대하다`true` 문서를 읽기 전용으로 여는 것이 좋습니다.
-5.  다음을 사용하여 읽기 전용 보호를 적용합니다.`Protect` 의 방법`Document` 객체, 지정`ProtectionType` ~처럼`ReadOnly`.
-6.  다음을 사용하여 보호된 문서를 저장하세요.`Save` 의 방법`Document` 물체.
+### .NET용 Aspose.Words를 사용하여 다른 유형의 보호를 적용할 수 있나요?
+예, Aspose.Words for .NET은 댓글만 허용, 양식 채우기, 변경 사항 추적 등 다양한 유형의 보호를 지원합니다.
 
-#### Q: .NET용 Aspose.Words를 사용하여 Word 문서에서 읽기 전용 보호를 제거할 수 있습니까?
-
-A: 예, Aspose.Words for .NET을 사용하여 Word 문서에서 읽기 전용 보호를 제거할 수 있습니다. 이렇게 하려면 다음을 사용할 수 있습니다.`Unprotect` 의 방법`Document` 문서에서 기존 보호를 제거하는 클래스입니다.
-
-#### Q: Word 문서에서 읽기 전용 보호를 위해 다른 비밀번호를 설정할 수 있나요?
-
- A: 아니요, Aspose.Words for .NET의 읽기 전용 보호에서는 특히 읽기 전용 보호를 위해 별도의 비밀번호를 설정할 수 없습니다. 비밀번호는 다음을 사용하여 설정합니다.`SetPassword` 의 방법`WriteProtection` 개체는 읽기 전용 및 읽기-쓰기 보호를 포함하여 전체 문서 보호에 적용됩니다.
-
-#### Q: 사용자가 Word 문서에서 읽기 전용 보호를 우회할 수 있습니까?
-
-A: Word 문서의 읽기 전용 보호는 우발적이거나 무단 수정을 방지하기 위한 것입니다. 일정 수준의 보호 기능을 제공하지만 충분한 기술 지식이 있거나 편집 권한이 있는 사용자는 이를 우회할 수 있습니다. 그러나 읽기 전용 보호는 억제책 역할을 하며 문서의 무결성을 유지하는 데 도움이 됩니다.
+### .NET용 Aspose.Words에 대한 무료 평가판이 있습니까?
+ 예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/).

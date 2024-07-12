@@ -12,7 +12,7 @@ url: /fr/net/working-with-fonts/receive-warning-notification/
 
 ## Conditions préalables
 
-Avant de plonger, assurez-vous d’avoir les éléments suivants :
+Avant de plonger, assurez-vous d'avoir les éléments suivants :
 
 - Connaissance de base de C# : La familiarité avec C# vous aidera à comprendre et à mettre en œuvre les étapes.
 -  Aspose.Words for .NET Library : téléchargez-le et installez-le à partir du[lien de téléchargement](https://releases.aspose.com/words/net/).
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Étape 3 : Mettre à jour la mise en page
 
- Appeler le`UpdatePageLayout` méthode. Cela restitue le document en mémoire et capture tous les avertissements qui se produisent lors du rendu.
+ Appeler le`UpdatePageLayout`méthode. Cela restitue le document en mémoire et capture tous les avertissements qui se produisent lors du rendu.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ Non, vous ne pouvez spécifier qu'une seule police par défaut pour la substitut
 
 ###  Q3 : Puis-je gérer d'autres types d'avertissements avec`IWarningCallback`?
 
- Oui le`IWarningCallback` L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
+ Oui le`IWarningCallback`L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
 
 ### Q4 : Où puis-je trouver de l'aide pour Aspose.Words ?
 

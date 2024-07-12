@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- يستخدم هذا الرمز`ConvertUtil` فئة Aspose.Words لتحويل القيم المحددة إلى بوصة (`InchToPoint` ). يمكنك أيضًا استخدام طرق التحويل الأخرى المتوفرة في`ConvertUtil` فئة لتحويل القيم إلى وحدات القياس الأخرى.
+ يستخدم هذا الرمز`ConvertUtil` فئة Aspose.Words لتحويل القيم المحددة إلى بوصة (`InchToPoint`). يمكنك أيضًا استخدام طرق التحويل الأخرى المتوفرة في`ConvertUtil` فئة لتحويل القيم إلى وحدات القياس الأخرى.
 
 ### مثال على التعليمات البرمجية المصدر للتحويل بين وحدات القياس باستخدام Aspose.Words لـ .NET
 

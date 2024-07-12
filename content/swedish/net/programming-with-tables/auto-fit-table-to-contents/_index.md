@@ -63,4 +63,4 @@ Se till att du anger rätt sökväg och filnamn för utdatadokumentet.
 ```
 
 ## Slutsats
-den här handledningen har vi lärt oss hur man automatiskt anpassar en tabell till dess innehåll i ett Word-dokument med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden och implementera den medföljande C#-koden kan du manipulera tabeller i dina Word-dokument programmatiskt. Detta gör att du dynamiskt kan justera tabellens bredd baserat på dess innehåll, vilket ger ett mer professionellt och visuellt tilltalande dokument.
+I den här handledningen har vi lärt oss hur man automatiskt anpassar en tabell till dess innehåll i ett Word-dokument med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden och implementera den medföljande C#-koden kan du manipulera tabeller i dina Word-dokument programmatiskt. Detta gör att du dynamiskt kan justera tabellens bredd baserat på dess innehåll, vilket ger ett mer professionellt och visuellt tilltalande dokument.

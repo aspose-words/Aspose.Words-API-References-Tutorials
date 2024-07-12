@@ -172,7 +172,7 @@ Per rimuovere la protezione tramite password da un documento protetto da passwor
 
 ### Posso impostare proprietà personalizzate quando salvo un documento in formato OOXML?
 
- Sì, puoi impostare proprietà personalizzate per un documento prima di salvarlo in formato OOXML. Usa il`BuiltInDocumentProperties` E`CustomDocumentProperties` classi per impostare varie proprietà come autore, titolo, parole chiave e proprietà personalizzate.
+ Sì, puoi impostare proprietà personalizzate per un documento prima di salvarlo in formato OOXML. Usa il`BuiltInDocumentProperties`E`CustomDocumentProperties` classi per impostare varie proprietà come autore, titolo, parole chiave e proprietà personalizzate.
 
 ### Qual è il livello di compressione predefinito quando si salva un documento in formato OOXML?
 

@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Tải tài liệu được mã hóa bằng mật khẩu được chỉ định
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Lưu tài liệu được mã hóa bằng mật khẩu mới
+//Lưu tài liệu được mã hóa bằng mật khẩu mới
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

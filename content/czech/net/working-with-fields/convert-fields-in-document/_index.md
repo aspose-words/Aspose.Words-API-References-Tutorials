@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 3: Vložte dokument
- Použijte`Document` třídy Aspose.Words k načtení dokumentu aplikace Word obsahující propojená pole, která chcete převést.
+ Použijte`Document`třídy Aspose.Words k načtení dokumentu aplikace Word obsahující propojená pole, která chcete převést.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

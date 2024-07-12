@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Este código crea una instancia de`Document` y`DocumentBuilder` para construir el documento. Se inserta un`<img>` etiqueta en el documento con una imagen codificada en base64.
+ Este código crea una instancia de`Document`y`DocumentBuilder` para construir el documento. Se inserta un`<img>` etiqueta en el documento con una imagen codificada en base64.
 
 ## Paso 3: configurar las opciones de guardado de HTML
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /hi/net/compare-documents/comparison-granularity/
 ---
-नीचे C# स्रोत कोड को समझाने के लिए चरण-दर-चरण मार्गदर्शिका दी गई है, जो .NET के लिए Aspose.Words की वर्ड डॉक्यूमेंट सुविधा में ग्रैन्युलरिटी की तुलना का उपयोग करती है।
+नीचे C# स्रोत कोड को समझाने के लिए चरण-दर-चरण मार्गदर्शिका दी गई है, जो .NET के लिए Aspose.Words की वर्ड दस्तावेज़ सुविधा में ग्रैन्युलरिटी की तुलना का उपयोग करती है।
 
 ## चरण 1: परिचय
 
@@ -50,7 +50,7 @@ CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.C
 
 ## चरण 6: दस्तावेज़ तुलना
 
-अब चलिए डॉक्यूमेंट क्लास की Compare विधि का उपयोग करके दस्तावेजों की तुलना करते हैं। परिवर्तन डॉक्यूमेंट A में सहेजे जाएँगे।
+अब चलिए डॉक्यूमेंट क्लास की Compare विधि का उपयोग करके दस्तावेजों की तुलना करते हैं। परिवर्तन दस्तावेज़ A में सहेजे जाएँगे।
 
 ```csharp
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);

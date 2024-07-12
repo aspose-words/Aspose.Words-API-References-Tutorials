@@ -36,7 +36,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Link beszúrása.
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
-Gratulálok ! Most már megtanulta, hogyan kell használni a linkek funkciót az Aspose.Words for .NET-hez.
+Gratulálok ! Most megtanulta, hogyan kell használni a linkek funkciót az Aspose.Words for .NET-hez.
 
 
 ### GYIK

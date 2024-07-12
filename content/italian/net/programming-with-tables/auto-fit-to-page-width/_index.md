@@ -103,7 +103,7 @@ Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di 
 
 ### 3. Come posso formattare le tabelle in modo diverso?
 
-È possibile personalizzare la formattazione della tabella utilizzando diversi metodi forniti da Aspose.Words. Controlla il[Documentazione dell'API](https://reference.aspose.com/words/net/) per istruzioni dettagliate.
+ È possibile personalizzare la formattazione della tabella utilizzando diversi metodi forniti da Aspose.Words. Controlla il[Documentazione dell'API](https://reference.aspose.com/words/net/) per istruzioni dettagliate.
 
 ### 4. Come posso ottenere supporto per Aspose.Words per .NET?
 

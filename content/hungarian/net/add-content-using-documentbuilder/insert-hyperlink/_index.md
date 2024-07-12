@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ebben a részletben meghatározzuk annak a könyvtárnak az elérési útját, ahová a dokumentumunkat elmentjük, és inicializálunk egy új`Document` és`DocumentBuilder` példa.
+ Ebben a részletben meghatározzuk annak a könyvtárnak az elérési útját, ahová a dokumentumunkat elmentjük, és inicializálunk egy új`Document`és`DocumentBuilder` példa.
 
 ## 3. lépés: Írja meg a kezdő szöveget
 

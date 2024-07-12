@@ -2,119 +2,123 @@
 title: Sesuaikan Seri Bagan Tunggal Dalam Bagan
 linktitle: Sesuaikan Seri Bagan Tunggal Dalam Bagan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengkustomisasi rangkaian bagan tunggal dalam bagan menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mengkustomisasi rangkaian bagan tunggal dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk pengalaman yang lancar.
 type: docs
 weight: 10
 url: /id/net/programming-with-charts/single-chart-series/
 ---
+## Perkenalan
 
-Tutorial ini menjelaskan cara menggunakan Aspose.Words untuk .NET untuk mengkustomisasi rangkaian bagan tunggal dalam bagan. Kode sumber yang disediakan menunjukkan cara membuat bagan, mengakses rangkaian tertentu, dan mengubah propertinya.
+Hai! Pernahkah Anda ingin meramaikan dokumen Word Anda dengan beberapa bagan yang menarik? Nah, Anda berada di tempat yang tepat! Hari ini, kita mendalami dunia Aspose.Words untuk .NET guna menyesuaikan rangkaian bagan tunggal dalam bagan. Baik Anda seorang profesional berpengalaman atau baru memulai, panduan ini akan memandu Anda melalui seluruh proses langkah demi langkah. Jadi, kencangkan sabuk pengaman dan mari kita mulai membuat grafik!
 
-## Langkah 1: Siapkan proyek
+## Prasyarat
 
-Pastikan Anda memiliki prasyarat berikut:
+Sebelum kita mulai, pastikan kita memiliki semua yang kita butuhkan. Berikut daftar periksa singkatnya:
 
-- Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
-- Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
+1.  Aspose.Words untuk .NET Library: Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Visual Studio: Versi terbaru apa pun akan berhasil.
+3. Pemahaman Dasar tentang C#: Tidak ada yang terlalu mewah, hanya dasar-dasarnya saja yang cukup.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Impor Namespace
 
- Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
+Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan. Ini seperti menyiapkan panggung sebelum pertunjukan besar.
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Langkah 1: Siapkan Dokumen Anda
+
+Mari kita mulai dengan menyiapkan dokumen Word baru. Di sinilah semua keajaiban akan terjadi.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Jalur ke direktori dokumen Anda
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Selanjutnya, gunakan`InsertChart` metode`DocumentBuilder` untuk menyisipkan diagram garis ke dalam dokumen.
+## Langkah 2: Sisipkan Bagan
+
+Selanjutnya, kita akan menyisipkan diagram garis ke dalam dokumen kita. Anggap saja ini seperti menambahkan kanvas tempat kita akan melukis karya agung kita.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Langkah 3: Akses dan sesuaikan rangkaian bagan
+## Langkah 3: Akses Seri Bagan
 
- Untuk mengubah rangkaian bagan tunggal, Anda perlu mengakses`ChartSeries` objek grafik.
+Sekarang, mari kita akses rangkaian grafiknya. Di sinilah kami akan mulai menyesuaikan.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
 ChartSeries series1 = chart.Series[1];
+```
 
+## Langkah 4: Ganti Nama Seri Bagan
+
+Mari beri rangkaian bagan kita beberapa nama yang bermakna. Ini seperti memberi label pada kuas Anda sebelum mulai melukis.
+
+```csharp
 series0.Name = "Chart Series Name 1";
 series1.Name = "Chart Series Name 2";
+```
 
+## Langkah 5: Ratakan Garisnya
+
+Ingin garis-garis itu terlihat halus dan ramping? Mari kita lakukan itu menggunakan spline Catmull-Rom.
+
+```csharp
 series0.Smooth = true;
 series1.Smooth = true;
+```
 
+## Langkah 6: Tangani Nilai Negatif
+
+Terkadang, data bisa negatif. Mari kita pastikan bagan kita menanganinya dengan baik.
+
+```csharp
 series0.InvertIfNegative = true;
+```
+
+## Langkah 7: Sesuaikan Penanda
+
+Penanda itu seperti titik-titik kecil di garis kita. Mari kita buat mereka menonjol.
+
+```csharp
 series0.Marker.Symbol = MarkerSymbol.Circle;
 series0.Marker.Size = 15;
-
 series1.Marker.Symbol = MarkerSymbol.Star;
 series1.Marker.Size = 10;
 ```
 
-## Langkah 4: Simpan dokumen
+## Langkah 8: Simpan Dokumen Anda
 
- Terakhir, simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode`Document` obyek.
+Terakhir, mari simpan dokumen kita. Di sinilah kami mengagumi pekerjaan kami.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 ```
 
-Ini menyelesaikan implementasi penyesuaian rangkaian bagan tunggal menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk Seri Bagan Tunggal menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = chart.Series[0];
-	ChartSeries series1 = chart.Series[1];
-	series0.Name = "Chart Series Name 1";
-	series1.Name = "Chart Series Name 2";
-	// Anda juga dapat menentukan apakah garis yang menghubungkan titik-titik pada grafik harus dihaluskan menggunakan spline Catmull-Rom.
-	series0.Smooth = true;
-	series1.Smooth = true;
-	// Menentukan apakah secara default elemen induk akan membalikkan warnanya jika nilainya negatif.
-	series0.InvertIfNegative = true;
-	series0.Marker.Symbol = MarkerSymbol.Circle;
-	series0.Marker.Size = 15;
-	series1.Marker.Symbol = MarkerSymbol.Star;
-	series1.Marker.Size = 10;
-	doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
-```
-
 ## Kesimpulan
 
-Dalam tutorial ini, Anda telah mempelajari cara mengkustomisasi satu rangkaian bagan dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, Anda dapat membuat dokumen baru, menyisipkan diagram garis, mengakses rangkaian diagram tertentu, dan memodifikasi propertinya untuk mencapai penyesuaian yang diinginkan.
+Dan itu dia! Anda telah berhasil mengkustomisasi satu rangkaian bagan dalam dokumen Word menggunakan Aspose.Words untuk .NET. Cukup keren, bukan? Ini hanyalah puncak gunung es; masih banyak lagi yang dapat Anda lakukan dengan Aspose.Words. Jadi, teruslah bereksperimen dan buat dokumen keren!
 
-Aspose.Words untuk .NET menyediakan fitur canggih untuk memanipulasi bagan di dokumen Word. Dengan mengakses rangkaian bagan individual, Anda dapat menerapkan modifikasi spesifik untuk menyesuaikan tampilan dan perilakunya. Hal ini memungkinkan Anda mengubah nama rangkaian, mengaktifkan penghalusan garis bagan, menyesuaikan penanda untuk titik data, membalikkan warna untuk nilai negatif, dan banyak lagi, untuk menyempurnakan representasi visual bagan Anda.
+## FAQ
 
-Menyesuaikan satu rangkaian bagan memberi Anda fleksibilitas untuk menyorot data tertentu atau menekankan tren tertentu dalam bagan Anda. Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah mengakses dan memodifikasi properti rangkaian bagan, memungkinkan Anda membuat bagan yang menarik secara visual dan informatif di dokumen Word Anda.
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan Anda membuat, mengedit, mengonversi, dan memanipulasi dokumen Word secara terprogram.
 
-### FAQ
+### Bisakah saya menggunakan Aspose.Words secara gratis?
+ Ya, Anda bisa mulai dengan a[uji coba gratis](https://releases.aspose.com/).
 
-#### Q1. Bisakah saya mengkustomisasi beberapa rangkaian bagan dalam satu bagan?
- Ya, Anda dapat mengkustomisasi beberapa rangkaian bagan dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengakses`ChartSeries`objek dalam bagan, Anda dapat memilih dan memodifikasi beberapa rangkaian berdasarkan indeks atau kriteria spesifiknya. Gunakan tugas loop atau individual untuk mengubah properti yang diinginkan untuk setiap rangkaian bagan. Dengan cara ini, Anda dapat menerapkan penyesuaian berbeda ke beberapa rangkaian dalam diagram yang sama.
+### Bagaimana cara mendapatkan dukungan untuk Aspose.Words?
+ Anda bisa mendapatkan dukungan dari komunitas Aspose di situs mereka[forum](https://forum.aspose.com/c/words/8).
 
-#### Q2. Bagaimana cara mengubah nama rangkaian grafik?
- Untuk mengubah nama rangkaian bagan dalam bagan menggunakan Aspose.Words untuk .NET, Anda perlu mengakses`Name` properti dari`ChartSeries` objek dan atur ke nama yang diinginkan. Nama rangkaian biasanya ditampilkan dalam legenda bagan atau label data, memberikan label deskriptif untuk rangkaian tersebut. Dengan memodifikasi nama rangkaian, Anda dapat memberikan nama bermakna yang mencerminkan data yang diwakili oleh setiap rangkaian.
+### Apakah mungkin untuk menyesuaikan jenis bagan lainnya?
+Sangat! Aspose.Words mendukung berbagai jenis bagan seperti bagan batang, pai, dan sebar.
 
-#### Q3. Apa yang dimaksud dengan pemulusan rangkaian grafik?
-Pemulusan rangkaian grafik adalah teknik penyempurnaan visual yang memungkinkan Anda membuat garis halus yang menghubungkan titik-titik pada grafik. Ini menerapkan algoritme penghalusan, seperti spline Catmull-Rom, untuk melakukan interpolasi antar titik data dan membuat kurva yang menarik secara visual. Untuk mengaktifkan penghalusan rangkaian dalam bagan menggunakan Aspose.Words untuk .NET, akses`Smooth` properti dari`ChartSeries` objek dan atur ke`true`. Smoothing dapat berguna untuk menampilkan tren atau pola pada data yang fluktuasinya tidak teratur.
-
-#### Q4. Bagaimana cara menyesuaikan penanda untuk titik data dalam rangkaian bagan?
- Untuk menyesuaikan penanda titik data dalam rangkaian bagan menggunakan Aspose.Words untuk .NET, Anda perlu mengakses`Marker` properti dari`ChartSeries` objek dan memodifikasi propertinya seperti`Symbol` Dan`Size`. Penanda adalah indikator visual yang ditempatkan pada grafik untuk mewakili titik data individual. Anda dapat memilih dari berbagai simbol penanda bawaan dan menyesuaikan ukurannya untuk menyorot atau membedakan titik data tertentu dalam rangkaian.
-
-#### Q5. Bisakah saya membalikkan warna untuk nilai negatif dalam rangkaian bagan?
- Ya, Anda dapat membalikkan warna untuk nilai negatif dalam rangkaian bagan menggunakan Aspose.Words untuk .NET. Dengan mengatur`InvertIfNegative` properti dari`ChartSeries` objek untuk`true`, warna titik data dengan nilai negatif akan dibalik, membuatnya berbeda secara visual dari nilai positif. Fitur ini dapat berguna saat membandingkan nilai positif dan negatif dalam rangkaian bagan, sehingga memberikan perbedaan yang jelas antara keduanya.
+### Di mana saya dapat menemukan dokumentasi lainnya?
+ Lihat[dokumentasi](https://reference.aspose.com/words/net/) untuk panduan dan contoh yang lebih rinci.

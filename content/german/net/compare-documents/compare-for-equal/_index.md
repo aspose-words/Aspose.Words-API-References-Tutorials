@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Schritt 2: Laden Sie Ihre Dokumente
 
- Als nächstes müssen Sie die Word-Dokumente laden, die Sie vergleichen möchten. Für dieses Beispiel gehen wir davon aus, dass Sie zwei Dokumente mit dem Namen haben`Document.docx` Und`Document2.docx` befindet sich in Ihrem Dokumentverzeichnis.
+ Als nächstes müssen Sie die Word-Dokumente laden, die Sie vergleichen möchten. Für dieses Beispiel gehen wir davon aus, dass Sie zwei Dokumente mit dem Namen haben`Document.docx`Und`Document2.docx` befindet sich in Ihrem Dokumentverzeichnis.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.

@@ -81,7 +81,7 @@ A tady to máte! Právě jste vytvořili nový dokument aplikace Word pomocí As
 
 ## Závěr
 
-Gratulujeme! S Aspose.Words for .NET jste udělali své první kroky do světa automatizace dokumentů. Začali jsme od nuly, nastavili naše prostředí, vytvořili nový dokument, přidali nějaký obsah a uložili ho. Toto je jen špička ledovce. S Aspose.Words můžete manipulovat s dokumenty způsoby, které jste nikdy nepovažovali za možné – slučovat dokumenty, přidávat obrázky, vytvářet tabulky a mnoho dalšího.
+Gratulujeme! S Aspose.Words for .NET jste udělali své první kroky do světa automatizace dokumentů. Začali jsme od nuly, nastavili naše prostředí, vytvořili nový dokument, přidali nějaký obsah a uložili ho. Tohle je jen špička ledovce. S Aspose.Words můžete manipulovat s dokumenty způsoby, které jste nikdy nepovažovali za možné – slučovat dokumenty, přidávat obrázky, vytvářet tabulky a mnoho dalšího.
 
 ## FAQ
 
@@ -103,4 +103,4 @@ Můžete vytvářet a manipulovat s formáty DOC, DOCX, PDF, HTML a mnoha dalš�
 
 ### Kde najdu další dokumentaci a příklady?
 
- Podívejte se na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) pro další příklady a podrobné návody.
+ Podívejte se na[Aspose.Words pro .NET dokumentaci](https://reference.aspose.com/words/net/) pro další příklady a podrobné návody.

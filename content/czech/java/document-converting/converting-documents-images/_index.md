@@ -2,7 +2,7 @@
 title: Převod dokumentů na obrázky
 linktitle: Převod dokumentů na obrázky
 second_title: Aspose.Words Java Document Processing API
-description: Naučte se převádět dokumenty na obrázky pomocí Aspose.Words for Java. Podrobný průvodce pro vývojáře v Javě.
+description: Naučte se převádět dokumenty na obrázky pomocí Aspose.Words for Java. Podrobný průvodce pro vývojáře Java.
 type: docs
 weight: 14
 url: /cs/java/document-converting/converting-documents-images/
@@ -66,7 +66,7 @@ Převod dokumentů na obrázky v Javě je s Aspose.Words pro Javu snadný. Posky
  Pro nastavení rozlišení obrazu použijte`setResolution` metoda`ImageSaveOptions` a zadejte požadované rozlišení v bodech na palec (DPI).
 
 ### Mohu převést konkrétní stránky dokumentu na obrázky?
- Ano, můžete určit rozsah stránek pomocí`setPageCount` a`setPageIndex` metody`ImageSaveOptions` převést konkrétní stránky na obrázky.
+ Ano, můžete určit rozsah stránek pomocí`setPageCount`a`setPageIndex` metody`ImageSaveOptions` převést konkrétní stránky na obrázky.
 
 ### Je Aspose.Words for Java vhodný pro dávkovou konverzi dokumentů?
 Absolutně! Aspose.Words for Java můžete použít k dávkové konverzi více dokumentů na obrázky efektivně.

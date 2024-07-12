@@ -2,180 +2,144 @@
 title: 建立新簽名行並設定提供者 ID
 linktitle: 建立新簽名行並設定提供者 ID
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中建立新的簽名行並設定提供者 ID。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中建立新的簽名行並設定提供者 ID。逐步指南。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
-在本教學中，我們將引導您完成透過 Aspose.Words for .NET 使用「建立新簽章行」和「設定提供者 ID」功能的步驟。此功能可讓您在 Word 文件中插入簽名行、設定自訂選項並簽署文件。請依照以下步驟操作：
+## 介紹
 
-## 第 1 步：建立文件和產生器
+嘿，科技愛好者們！有沒有想過如何以程式設計方式在 Word 文件中新增簽名行？好吧，今天我們將深入探討使用 Aspose.Words for .NET。本指南將引導您完成每個步驟，讓您在 Word 文件中建立新的簽名行和設定提供者 ID 變得非常簡單。無論您是要自動化文件處理還是只是想簡化工作流程，本教學都能滿足您的要求。
 
-首先建立 Document 類別的實例和 DocumentBuilder 物件：
+## 先決條件
+
+在我們動手之前，讓我們確保我們已經擁有我們需要的一切：
+
+1.  Aspose.Words for .NET：如果您還沒有，請下載它[這裡](https://releases.aspose.com/words/net/).
+2. 開發環境：Visual Studio 或任何其他 C# 開發環境。
+3. .NET Framework：確保您已安裝 .NET Framework。
+4. PFX 憑證：要簽署文檔，您需要 PFX 憑證。您可以從受信任的憑證授權單位取得一份。
+
+## 導入命名空間
+
+首先，讓我們在 C# 專案中導入必要的命名空間：
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Signing;
+using System;
+```
+
+好吧，讓我們進入實質內容。以下是建立新簽名行和設定提供者 ID 的每個步驟的詳細細分。
+
+## 第 1 步：建立一個新文檔
+
+首先，我們需要建立一個新的 Word 文件。這將是我們簽名行的畫布。
+
+```csharp
+//文檔目錄的路徑。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 第 2 步：設定簽名行選項
+在此程式碼片段中，我們正在初始化一個新的`Document`和一個`DocumentBuilder`。這`DocumentBuilder`幫助我們為文件添加元素。
 
-建立 SignatureLineOptions 類別的實例並設定所需的選項：
+## 第 2 步：定義簽章行選項
+
+接下來，我們定義簽名行的選項。這包括簽名者的姓名、職位、電子郵件和其他詳細資訊。
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions
 {
-Sign = "vderyushev",
-SignerTitle = "QA",
-Email = "vderyushev@aspose.com",
-ShowDate=true,
-Default Instructions = false,
-Instructions = "Please sign here.",
-AllowComments = true
+    Signer = "vderyushev",
+    SignerTitle = "QA",
+    Email = "vderyushev@aspose.com",
+    ShowDate = true,
+    DefaultInstructions = false,
+    Instructions = "Please sign here.",
+    AllowComments = true
 };
 ```
 
-## 步驟 3：插入簽名行
+這些選項使簽名行個性化，使其清晰且專業。
 
-使用 DocumentBuilder 物件的 InsertSignatureLine() 方法將簽名行插入文件中：
+## 第 3 步：插入簽名行
+
+設定選項後，我們現在可以將簽名行插入文件中。
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-```
-
-## 第 4 步：設定提供者 ID
-
-使用 ProviderId 屬性設定簽名行的提供者 ID：
-
-```csharp
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
-請務必為您的用例指定正確的提供者 ID。
+在這裡，`InsertSignatureLine`方法新增簽名行，並且我們為其分配唯一的提供者 ID。
 
-## 第 5 步：儲存文檔
+## 步驟 4：儲存文檔
 
-儲存修改後的文件：
+插入簽名行後，讓我們儲存文件。
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
 ```
 
-請務必指定正確的路徑和檔案名稱來儲存文件。
+這將使用新新增的簽名行來儲存您的文件。
 
-## 第 6 步：簽署文件
+## 第 5 步：設定簽名選項
 
-要簽署文檔，您需要設定簽名選項並使用 DigitalSignatureUtil 類別：
+現在，我們需要設定用於簽署文件的選項。這包括簽名行 ID、提供者 ID、註解和簽名時間。
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-ProviderId = signatureLine.ProviderId,
-Comments = "Document was signed by vderyushev",
-SignTime = DateTime.Now
+    SignatureLineId = signatureLine.Id,
+    ProviderId = signatureLine.ProviderId,
+    Comments = "Document was signed by vderyushev",
+    SignTime = DateTime.Now
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-	dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions)
 ```
 
-請務必指定文件、憑證和簽署文件的正確路徑。
+這些選項可確保使用正確的詳細資訊簽署文件。
 
-### 使用 Aspose.Words for .NET 建立新簽名行並設定提供者 ID 的範例原始程式碼
+## 第 6 步：建立證書持有者
 
-以下是建立新簽章行並使用 Aspose.Words for .NET 設定提供者 ID 的完整原始碼：
+為了簽署文檔，我們將使用 PFX 憑證。讓我們為它建立一個證書持有者。
 
 ```csharp
-
-	//文檔目錄的路徑。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLineOptions signatureLineOptions = new SignatureLineOptions
-	{
-		Signer = "vderyushev",
-		SignerTitle = "QA",
-		Email = "vderyushev@aspose.com",
-		ShowDate = true,
-		DefaultInstructions = false,
-		Instructions = "Please sign here.",
-		AllowComments = true
-	};
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-	signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		ProviderId = signatureLine.ProviderId,
-		Comments = "Document was signed by vderyushev",
-		SignTime = DateTime.Now
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-		dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆建立新的簽名行並在 Word 文件中設定提供者 ID。
+確保更換`"morzal.pfx"`與您的實際證書文件和`"aw"`與您的證書密碼。
+
+## 第 7 步：簽署文件
+
+最後，我們使用數位簽章實用程式對文件進行簽署。
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
+    dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
+```
+
+這會對文件進行簽名並將其另存為新文件。
 
 ## 結論
 
-在本教學中，我們探索了使用 Aspose.Words for .NET 在 Word 文件中建立新簽章行和設定提供者 ID 的功能。透過按照提供的步驟操作，您可以輕鬆插入具有自訂選項的簽名行，並使用提供者 ID 將其與特定提供者關聯。新增簽名行和自訂提供者資訊可以增強文件的真實性和可信度。 Aspose.Words for .NET 為 Word 文件中的簽名行和數位憑證提供了強大的文字處理 API，使您能夠自動化簽章流程並確保文件的有效性。
+現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了新的簽名行並設定了提供者 ID。這個強大的程式庫使管理和自動化文件處理任務變得非常容易。嘗試一下，看看它如何簡化您的工作流程。
 
-### 常見問題解答
+## 常見問題解答
 
-#### Q：簽名行中的提供者 ID 是什麼？
+### 我可以自訂簽名行的外觀嗎？
+絕對地！您可以在其中調整各種選項`SignatureLineOptions`以滿足您的需求。
 
-答：簽名行中的提供者 ID 是代表數位簽章提供者的唯一識別碼。它有助於識別負責簽名的來源或組織。
+### 如果我沒有 PFX 憑證怎麼辦？
+您需要從受信任的憑證授權單位取得一份憑證。這對於數位簽章文件至關重要。
 
-#### Q：如何使用 Aspose.Words for .NET 在 Word 文件中建立新的簽名行？
+### 我可以在文件中新增多個簽名行嗎？
+是的，您可以透過使用不同的選項重複插入過程來新增所需數量的簽名行。
 
-答：要使用 Aspose.Words for .NET 在 Word 文件中建立新的簽名行，您可以按照以下步驟操作：
-1. 建立一個實例`Document`類別和一個`DocumentBuilder`目的。
-2. 建立一個實例`SignatureLineOptions`類別並設定所需的簽名行選項。
-3. 使用`InsertSignatureLine`的方法`DocumentBuilder`物件將簽名行插入到文件中。
+### Aspose.Words for .NET 與 .NET Core 相容嗎？
+是的，Aspose.Words for .NET 支援 .NET Core，使其適用於不同的開發環境。
 
-#### Q：我可以自訂簽名行的選項，例如簽名者姓名、標題和說明嗎？
-
- A：是的，您可以自訂簽名行的選項。這`SignatureLineOptions`類別提供屬性來設定所需的選項，例如`Signer`, `SignerTitle`, `Instructions`, `AllowComments`等等。
-
-#### Q：為簽名行設定提供者 ID 的目的是什麼？
-
-答：為簽名行設定提供者 ID 有助於識別負責數位簽章的來源或組織。它允許您將簽名與特定的提供者或實體關聯起來，提供有關簽名的來源和可信度的附加資訊。
-
-#### Q：如何使用 Aspose.Words for .NET 設定簽章行的提供者 ID？
-
-答：要使用 Aspose.Words for .NET 設定簽章行的提供者 ID，您可以依照下列步驟操作：
-1. 插入簽名行後，訪問`ProviderId`的財產`SignatureLine`目的。
-2. 設定`ProviderId`使用下列方法將屬性設定為所需的提供者 ID 值`Guid`資料類型。
-
-#### Q：建立新簽名行並設定提供者 ID 後可以簽署文件嗎？
-
-答：是的，建立新的簽名行並設定提供者 ID 後，您就可以簽署文件。要簽署文檔，您需要設定簽名選項，包括簽名行ID、提供者ID、註解和簽名時間。然後，使用`DigitalSignatureUtil.Sign`使用數位證書對文件進行簽署的方法。
-
-#### Q：我可以為 Word 文件中的每個簽章行指定特定的提供者 ID 嗎？
-
-答：是的，您可以為 Word 文件中的每個簽名行指定特定的提供者 ID。插入每個簽名行後，您可以透過存取設定該特定簽名行的提供者 ID`ProviderId`各自的財產`SignatureLine`目的。
-
-#### Q：建立新的簽名行並設定提供者 ID 後如何儲存修改後的文件？
-
-答：要在建立新簽名行並設定提供者 ID 後儲存修改後的文檔，您可以使用`Save`的方法`Document`目的。指定儲存文件的正確路徑和檔案名稱。
-
-#### Q：Aspose.Words for .NET 支援什麼檔案格式來建立和簽署簽章行？
-
-答：Aspose.Words for .NET 支援以 DOCX 檔案格式建立和簽署簽署行。您可以使用提供的方法和類別在 DOCX 檔案中建立和簽署簽名行。
-
-#### Q：簽署後我可以修改簽名行的提供者 ID 或其他選項嗎？
-
-答：簽名行一旦簽署，就成為文件內容的一部分，不能單獨修改。對簽名行的任何修改（例如更改提供者 ID 或其他選項）都需要刪除現有簽名並建立新簽名行。
+### 數位簽章的安全性如何？
+只要您使用有效且可信賴的證書，使用 Aspose.Words 建立的數位簽章就非常安全。

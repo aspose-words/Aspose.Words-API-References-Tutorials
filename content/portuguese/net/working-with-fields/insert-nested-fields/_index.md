@@ -112,11 +112,11 @@ R: O uso de campos aninhados oferece várias vantagens em um documento do Word c
 
 #### P: Posso ter campos aninhados de vários níveis em um documento do Word com Aspose.Words for .NET?
 
- R: Sim, é possível ter campos aninhados de vários níveis em um documento do Word com Aspose.Words for .NET. Você pode criar hierarquias complexas de campos aninhados usando o comando`FieldStart.NextSibling` método para adicionar campos filho a campos pai existentes.
+R: Sim, é possível ter campos aninhados de vários níveis em um documento do Word com Aspose.Words for .NET. Você pode criar hierarquias complexas de campos aninhados usando o comando`FieldStart.NextSibling` método para adicionar campos filho a campos pai existentes.
 
 #### P: Como posso personalizar as propriedades dos campos aninhados em um documento do Word com Aspose.Words for .NET?
 
- R: Para personalizar as propriedades dos campos aninhados em um documento do Word com Aspose.Words for .NET, você pode acessar o arquivo correspondente`FieldStart`objetos e modifique suas propriedades conforme necessário. Você pode definir opções de formatação, valores, cálculos, etc., de campos aninhados para obter o resultado desejado.
+ R: Para personalizar as propriedades dos campos aninhados em um documento do Word com Aspose.Words for .NET, você pode acessar o arquivo correspondente`FieldStart` objetos e modifique suas propriedades conforme necessário. Você pode definir opções de formatação, valores, cálculos, etc., de campos aninhados para obter o resultado desejado.
 
 #### P: A inserção de campos aninhados afeta o desempenho do documento Word com Aspose.Words for .NET?
 

@@ -2,138 +2,153 @@
 title: Показать скрыть закладки в документе Word
 linktitle: Показать скрыть закладки в документе Word
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как показать или скрыть определенную закладку в документе Word с помощью Aspose.Words для .NET.
+description: Узнайте, как динамически отображать или скрывать закладки в документе Word с помощью Aspose.Words для .NET, с помощью нашего пошагового руководства. Идеально подходит для разработчиков.
 type: docs
 weight: 10
 url: /ru/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## Введение
 
-В этой статье мы рассмотрим приведенный выше исходный код C#, чтобы понять, как использовать функцию «Показать скрыть закладки» в библиотеке Aspose.Words для .NET. Эта функция позволяет показать или скрыть определенную закладку в документе Word.
+Вам когда-нибудь приходилось динамически скрывать или показывать определенные части документа Word? Что ж, вам повезло! С помощью Aspose.Words для .NET вы можете легко управлять видимостью содержимого закладок в ваших документах. В этом руководстве вы узнаете, как показывать и скрывать закладки в документе Word с помощью Aspose.Words для .NET. Мы разберем код шаг за шагом, поэтому независимо от того, являетесь ли вы опытным разработчиком или новичком, вам будет легко следовать этому руководству.
 
 ## Предварительные условия
 
-- Базовые знания языка C#.
-- Среда разработки .NET с установленной библиотекой Aspose.Words.
+Прежде чем мы углубимся в код, давайте убедимся, что у вас есть все необходимое:
 
-## Шаг 1: Загрузка документа
+1.  Aspose.Words for .NET: убедитесь, что у вас установлена библиотека Aspose.Words for .NET. Если нет, то вы можете скачать его[здесь](https://releases.aspose.com/words/net/).
+2. Среда разработки: IDE, например Visual Studio.
+3. Базовые знания C#: Знание программирования на C# будет полезным.
+4. Документ Word: образец документа Word с закладками.
 
- Мы используем`Document` класс для загрузки существующего документа из файла:
+## Импортировать пространства имен
+
+Прежде чем начать работу с кодом, вам необходимо импортировать необходимые пространства имен. Добавьте следующее в начало вашего файла C#:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## Шаг 1. Загрузите документ
+
+Прежде всего, вам необходимо загрузить документ Word, содержащий закладки. Вот как вы можете это сделать:
+
+```csharp
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## Шаг 2. Показать или скрыть определенную закладку
+### Объяснение
 
- Мы используем`ShowHideBookmarkedContent` функция, позволяющая показать или скрыть определенную закладку в документе. Эта функция принимает в качестве параметров документ, имя закладки и логическое значение, указывающее, показывать или скрывать закладку:
+- dataDir: это путь к каталогу, в котором находится ваш документ Word.
+-  Документ документа: инициализирует новый экземпляр`Document` class с указанным вами файлом.
+
+## Шаг 2. Показать или скрыть контент, добавленный в закладки
+
+Далее мы определим метод для отображения или скрытия содержимого закладок. Вот полный метод:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{MARGEFIELD bookmark}" = "true" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### Объяснение
+
+- Bookmark bm: извлекает закладку из документа.
+- Конструктор DocumentBuilder: помогает в навигации и изменении документа.
+- Поле поля: вставляет поле IF для проверки состояния закладки.
+- Node currentNode: проходит через узлы, чтобы найти начало и конец поля.
+
+## Шаг 3. Выполните функцию «Показать/Скрыть».
+
+ Теперь вам нужно позвонить в`ShowHideBookmarkedContent` метод, передавая документ, имя закладки и флаг видимости:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## Шаг 3. Сохранение измененного документа.
+### Объяснение
 
- Мы используем`Save` метод сохранения измененного документа в файл:
+- doc: ваш объект документа.
+- «MyBookmark1»: имя закладки, которую вы хотите показать/скрыть.
+- false: флаг видимости (истина для отображения, ложь для скрытия).
+
+## Шаг 4. Сохраните документ
+
+Наконец, сохраните измененный документ:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### Пример исходного кода для «Показать скрытые закладки» с использованием Aspose.Words для .NET
+### Объяснение
 
-Вот полный пример исходного кода, демонстрирующий отображение или скрытие определенной закладки с помощью Aspose.Words для .NET:
+- dataDir + «WorkingWithBookmarks.ShowHideBookmarks.docx»: путь и имя нового документа, в котором будут сохранены изменения.
 
-```csharp
-
-	// Путь к каталогу документов.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### Исходный код ShowHideBookmarkedContent
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {IF "{MARGEFIELD bookmark}" = "true" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## Заключение
 
-В этой статье мы изучили исходный код C#, чтобы понять, как использовать функцию «Показать скрытые закладки» в Aspose.Words для .NET. Мы следовали пошаговому руководству, чтобы показать или скрыть определенную закладку в документе.
+И вот оно! Вы успешно научились показывать и скрывать закладки в документе Word с помощью Aspose.Words для .NET. Этот метод может быть невероятно полезен для динамического создания документов с условным содержимым.
 
-### Часто задаваемые вопросы по показу скрытых закладок в документе Word
+## Часто задаваемые вопросы
 
-#### Вопрос: Могу ли я показать или скрыть несколько закладок в одном документе?
+### Что такое Aspose.Words для .NET?
+Aspose.Words for .NET — это мощная библиотека обработки документов, которая позволяет разработчикам программно создавать, изменять и конвертировать документы Word.
 
-О: Да, вы можете показать или скрыть несколько закладок в одном документе, повторив шаги 2 и 3 для каждой закладки, которую вы хотите обработать.
+### Как мне получить Aspose.Words для .NET?
+ Вы можете скачать Aspose.Words для .NET с сайта[здесь](https://releases.aspose.com/words/net/). Также доступна бесплатная пробная версия.
 
-#### Вопрос: Работает ли предоставленный код с другими форматами документов Word, такими как .doc или .docm?
+### Могу ли я использовать этот метод для других типов закладок?
+Да, этот метод можно адаптировать для управления видимостью любых закладок в документе Word.
 
-О: Да, предоставленный код работает с различными форматами документов Word, поддерживаемыми Aspose.Words, такими как .doc и .docm. Просто обязательно используйте правильное имя файла и путь при загрузке и сохранении документа.
+### Что делать, если в моем документе нет указанной закладки?
+Если закладка не существует, метод выдаст ошибку. Убедитесь, что закладка существует, прежде чем пытаться ее показать/скрыть.
 
-#### Вопрос: Как мне снова показать скрытую закладку?
-
- О: Чтобы снова показать скрытую закладку, нужно использовать ту же`ShowHideBookmarkedContent` функция, передающая значение`true` для логического параметра, указывающего, показывать или скрывать закладку.
-
-#### Вопрос: Могу ли я использовать условия для отображения или скрытия закладок на основе значений поля слияния в документе?
-
- О: Да, вы можете использовать условия и значения полей слияния, чтобы определить, следует ли отображать или скрывать закладку. Вы можете настроить код`ShowHideBookmarkedContent` Функция учета соответствующих условий и значений.
-
-#### Вопрос: Как удалить закладку в документе Word с помощью Aspose.Words for .NET?
-
- О: Чтобы удалить закладку в документе Word с помощью Aspose.Words for .NET, вы можете использовать`RemoveBookmarks` метод`Document` сорт. Вот пример кода:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### Как я могу получить поддержку, если у меня возникнут проблемы?
+ Вы можете получить поддержку от сообщества Aspose[здесь](https://forum.aspose.com/c/words/8).

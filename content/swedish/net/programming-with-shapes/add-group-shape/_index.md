@@ -17,14 +17,14 @@ För att följa denna handledning måste du ha följande:
 - Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Steg 2: Skapa ett nytt dokument och GroupShape
- Skapa en ny instans av`Document` klass och`GroupShape`objekt för att arbeta med dokumentet.
+ Skapa en ny instans av`Document` klass och`GroupShape` objekt för att arbeta med dokumentet.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Steg 3: Skapa och lägg till former i GroupShape
- Skapa individuella former som t.ex`accentBorderShape` och`actionButtonShape` använda`Shape` klass. Anpassa deras egenskaper efter önskemål. Lägg till dessa former till`groupShape` objekt.
+ Skapa individuella former som t.ex`accentBorderShape`och`actionButtonShape` använda`Shape` klass. Anpassa deras egenskaper efter önskemål. Lägg till dessa former till`groupShape` objekt.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Steg 4: Ställ in mått för GroupShape
- Ställ in bredd, höjd och koordinatstorlek för`groupShape`.
+Ställ in bredd, höjd och koordinatstorlek för`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## Steg 6: Spara dokumentet
- Spara dokumentet i den angivna katalogen med hjälp av`Save`metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithShapes.AddGroupShape.docx".
+ Spara dokumentet i den angivna katalogen med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithShapes.AddGroupShape.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

@@ -75,7 +75,7 @@ R : La fonctionnalité « Plages de suppression de texte dans un document Word
 
 #### Q : Comment charger un document Word à l'aide d'Aspose.Words pour .NET ?
 
-R : Pour charger un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser le`Document` classe et son constructeur. Vous devez fournir le chemin du fichier ou le flux du document en tant que paramètre. Voici un exemple :
+ R : Pour charger un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser le`Document` classe et son constructeur. Vous devez fournir le chemin du fichier ou le flux du document en tant que paramètre. Voici un exemple :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
@@ -115,4 +115,4 @@ R : Lorsque vous utilisez la fonctionnalité « Plages de suppression de texte
 
 #### Question : . Puis-je supprimer le contenu du texte dans des paragraphes spécifiques ou d'autres plages personnalisées à l'aide de la fonctionnalité « Plages supprimer le texte dans un document Word » dans Aspose.Words pour .NET ?
 
-R : Oui, vous pouvez supprimer le contenu du texte dans des paragraphes spécifiques ou d'autres plages personnalisées à l'aide de la fonctionnalité « Plages supprimer le texte dans un document Word » dans Aspose.Words pour .NET. Vous pouvez accéder à la plage souhaitée dans la structure du document (telle que des sections, des paragraphes ou des tableaux) et appliquer la`Delete` méthode pour supprimer le contenu du texte dans cette plage.
+ : Oui, vous pouvez supprimer le contenu du texte dans des paragraphes spécifiques ou d'autres plages personnalisées à l'aide de la fonctionnalité « Plages supprimer le texte dans un document Word » dans Aspose.Words pour .NET. Vous pouvez accéder à la plage souhaitée dans la structure du document (telle que des sections, des paragraphes ou des tableaux) et appliquer la`Delete` méthode pour supprimer le contenu du texte dans cette plage.

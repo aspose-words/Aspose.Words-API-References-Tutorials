@@ -42,7 +42,7 @@ Erfahren Sie in diesem Schritt-für-Schritt-Tutorial, wie Sie Aspose.Words für 
 ### [Verwenden von Schriftarten in Aspose.Words für Java](./using-fonts/)
 Entdecken Sie die Schriftformatierung in Aspose.Words für Java: Größe, Stil, Farbe und mehr. Erstellen Sie mühelos schön formatierte Dokumente.
 ### [Verwenden von Fußnoten und Endnoten in Aspose.Words für Java](./using-footnotes-and-endnotes/)
-Erfahren Sie, wie Sie Fußnoten und Endnoten in Aspose.Words für Java effektiv verwenden. Verbessern Sie noch heute Ihre Fähigkeiten zur Dokumentformatierung!
+Erfahren Sie, wie Sie Fußnoten und Endnoten in Aspose.Words für Java effektiv nutzen. Verbessern Sie noch heute Ihre Fähigkeiten zur Dokumentformatierung!
 ### [Verwenden von Formularfeldern in Aspose.Words für Java](./using-form-fields/)
 „Erfahren Sie, wie Sie mit Aspose.Words für Java interaktive Word-Dokumente mit Formularfeldern erstellen. Legen Sie jetzt los!“
 ### [Verwenden von HarfBuzz in Aspose.Words für Java](./using-harfbuzz/)
@@ -54,7 +54,7 @@ Erfahren Sie in diesem umfassenden Tutorial, wie Sie die Silbentrennung in Aspos
 ### [Verwenden von Listen in Aspose.Words für Java](./using-lists/)
 Lernen Sie mit diesem Schritt-für-Schritt-Tutorial, Listen in Aspose.Words für Java zu verwenden. Organisieren und formatieren Sie Ihre Dokumente effektiv.
 ### [Verwenden von Markdown in Aspose.Words für Java](./using-markdown/)
-Lernen Sie mit diesem Schritt-für-Schritt-Tutorial, Markdown in Aspose.Words für Java zu verwenden. Erstellen, gestalten und speichern Sie mühelos Markdown-Dokumente.
+Lernen Sie mit diesem Schritt-für-Schritt-Tutorial, Markdown in Aspose.Words für Java zu verwenden. Erstellen, formatieren und speichern Sie mühelos Markdown-Dokumente.
 ### [Verwenden von Knoten in Aspose.Words für Java](./using-nodes/)
 Lernen Sie mit diesem Schritt-für-Schritt-Tutorial, Knoten in Aspose.Words für Java zu manipulieren. Schalten Sie die Leistung der Dokumentverarbeitung frei.
 ### [Verwenden von OLE-Objekten und ActiveX-Steuerelementen in Aspose.Words für Java](./using-ole-objects-and-activex/)

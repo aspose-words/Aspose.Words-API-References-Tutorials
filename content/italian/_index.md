@@ -62,7 +62,7 @@ Questi sono i link ad alcune risorse utili:
 
 ## Esercitazioni sulla gestione dei documenti Aspose.Words per Python
 {{% alert color="primary" %}}
-Questi tutorial offrono una guida passo passo su come lavorare con i documenti di Microsoft Word a livello di codice, inclusa la creazione, la manipolazione e varie funzionalità di sicurezza dei documenti come la crittografia e la protezione tramite password. Con l'aiuto di questa risorsa, gli sviluppatori possono implementare in modo efficiente le funzionalità di elaborazione dei documenti nelle loro applicazioni Python utilizzando Aspose.Words, migliorando la produttività e garantendo la sicurezza dei documenti. 
+Questi tutorial offrono una guida passo passo su come lavorare con i documenti Microsoft Word a livello di codice, inclusa la creazione, la manipolazione e varie funzionalità di sicurezza come la crittografia e la protezione tramite password. Con l'aiuto di questa risorsa, gli sviluppatori possono implementare in modo efficiente le funzionalità di elaborazione dei documenti nelle loro applicazioni Python utilizzando Aspose.Words, migliorando la produttività e garantendo la sicurezza dei documenti. 
 {{% /alert %}}
 
 Questi sono i link ad alcune risorse utili:

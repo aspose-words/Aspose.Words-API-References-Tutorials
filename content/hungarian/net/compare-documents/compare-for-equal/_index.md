@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## 2. lépés: Töltse be a dokumentumokat
 
- Ezután be kell töltenie az összehasonlítani kívánt Word-dokumentumokat. Ebben a példában feltételezzük, hogy két megnevezett dokumentuma van`Document.docx` és`Document2.docx` dokumentumkönyvtárában található.
+ Ezután be kell töltenie az összehasonlítani kívánt Word-dokumentumokat. Ebben a példában feltételezzük, hogy két megnevezett dokumentuma van`Document.docx`és`Document2.docx` dokumentumkönyvtárában található.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.

@@ -99,7 +99,7 @@ Az Aspose.Words for .NET segítségével most már elsajátította az erőforrá
 
 ###  3. kérdés: Kezelhetek-e más típusú figyelmeztetéseket`IWarningCallback`?
 
- Igen, a`IWarningCallback` A felület különféle típusú figyelmeztetéseket tud kezelni, nem csak a betűtípusok helyettesítését.
+ Igen, a`IWarningCallback` felület különféle típusú figyelmeztetéseket tud kezelni, nem csak a betűtípusok helyettesítését.
 
 ### 4. kérdés: Hol találok támogatást az Aspose.Words számára?
 

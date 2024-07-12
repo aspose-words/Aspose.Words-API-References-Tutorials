@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- รหัสนี้ใช้`ConvertUtil` คลาสของ Aspose.Words เพื่อแปลงค่าที่ระบุเป็นนิ้ว (`InchToPoint` - คุณยังสามารถใช้วิธีการแปลงอื่น ๆ ที่มีอยู่ใน`ConvertUtil` คลาสเพื่อแปลงค่าเป็นหน่วยการวัดอื่น
+ รหัสนี้ใช้`ConvertUtil` คลาสของ Aspose.Words เพื่อแปลงค่าที่ระบุเป็นนิ้ว (`InchToPoint` คุณยังสามารถใช้วิธีการแปลงอื่น ๆ ที่มีอยู่ใน`ConvertUtil` คลาสเพื่อแปลงค่าเป็นหน่วยการวัดอื่น
 
 ### ตัวอย่างซอร์สโค้ดสำหรับการแปลงระหว่างหน่วยการวัดโดยใช้ Aspose.Words สำหรับ .NET
 

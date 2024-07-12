@@ -51,7 +51,7 @@ builder.InsertHyphenation();
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-これで、Aspose.Words for .NET を使用して、Word 文書内のさまざまな言語の単語をハイフンでつないで処理することができました。
+これで、Aspose.Words for .NET を使用して、Word 文書内のさまざまな言語の単語をハイフンで区切って処理することができました。
 
 ### Aspose.Words for .NET を使用した単語のハイフネーションのサンプル ソース コード
 

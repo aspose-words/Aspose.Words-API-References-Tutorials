@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Làm điều gì đó với mã và kết quả của trường.
+     //Làm điều gì đó với mã và kết quả của trường.
 }
 ```
 
@@ -73,7 +73,7 @@ Phần này kết thúc hướng dẫn của chúng tôi về cách sử dụng 
 
 #### Câu hỏi: Làm cách nào tôi có thể cập nhật các trường trong tài liệu bằng Aspose.Words cho .NET?
 
- Trả lời: Để cập nhật các trường tài liệu bằng Aspose.Words cho .NET, bạn có thể sử dụng`Document.UpdateFields`phương pháp. Điều này sẽ cập nhật tất cả các trường có trong tài liệu, chẳng hạn như trường hợp nhất, trường ngày, v.v.
+ Trả lời: Để cập nhật các trường tài liệu bằng Aspose.Words cho .NET, bạn có thể sử dụng`Document.UpdateFields` phương pháp. Điều này sẽ cập nhật tất cả các trường có trong tài liệu, chẳng hạn như trường hợp nhất, trường ngày, v.v.
 
 #### Câu hỏi: Làm cách nào tôi có thể truy xuất giá trị của một trường cụ thể trong Aspose.Words cho .NET?
 

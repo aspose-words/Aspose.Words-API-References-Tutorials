@@ -62,7 +62,7 @@ In deze zelfstudie hebben we gezien hoe u de kop- en voettekstinhoud uit een Wor
 
 #### Vraag: Hoe kan ik de documentmap instellen in Aspose.Words voor .NET?
 
- A: Om het pad in te stellen naar de map die uw documenten bevat, moet u vervangen`"YOUR DOCUMENT DIRECTORY"` in de code met het juiste pad. Hier leest u hoe u het moet doen:
+A: Om het pad in te stellen naar de map die uw documenten bevat, moet u vervangen`"YOUR DOCUMENT DIRECTORY"` in de code met het juiste pad. Hier leest u hoe u het moet doen:
 
 ```csharp
 // Pad naar uw documentenmap

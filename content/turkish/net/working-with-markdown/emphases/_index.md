@@ -113,7 +113,7 @@ C: Markdown'ı kullanarak metni vurgulamak için metni uygun sembollerle çevrel
 
 #### S: Farklı vurguları aynı metinde birleştirebilir miyiz?
 
- C: Evet, aynı metinde farklı vurguları birleştirmek mümkündür. Örneğin, her ikisini de kullanarak bir kelimeyi kalın ve italik hale getirebilirsiniz.`**` Ve`*` kelimenin etrafında.
+ C: Evet, aynı metinde farklı vurguları birleştirmek mümkündür. Örneğin, her ikisini de kullanarak bir kelimeyi kalın ve italik hale getirebilirsiniz.`**`Ve`*` kelimenin etrafında.
 
 #### S: Markdown'da hangi vurgulama seçenekleri mevcut?
 

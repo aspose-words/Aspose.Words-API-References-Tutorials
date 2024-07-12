@@ -166,11 +166,11 @@ Aspose.Words for Java 中的清理选项是允许您在邮件合并过程中控�
 
 ### 有什么区别`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-这`REMOVE_EMPTY_FIELDS`选项会在邮件合并过程中删除没有数据或为空的合并字段。另一方面，`REMOVE_UNUSED_FIELDS`选项会删除合并过程中未填充数据的合并字段。选择哪个取决于您是要删除没有内容的字段还是要删除特定合并操作中未使用的字段。
+这`REMOVE_EMPTY_FIELDS`选项会在邮件合并过程中删除没有数据或为空的合并字段。另一方面，`REMOVE_UNUSED_FIELDS`选项会删除合并过程中未填充数据的合并字段。选择哪个取决于您是要删除没有内容的字段，还是要删除特定合并操作中未使用的字段。
 
 ### 如何才能删除带标点符号的段落？
 
-要删除带标点符号的段落，您可以设置`cleanupParagraphsWithPunctuationMarks`选项设置为 true，并指定要考虑清除的标点符号。这样，您就可以通过删除不必要的仅含标点符号的段落来创建更精致的文档。
+要删除带标点符号的段落，您可以设置`cleanupParagraphsWithPunctuationMarks`选项为 true，并指定要考虑清除的标点符号。这样，您就可以通过删除不必要的仅含标点符号的段落来创建更精致的文档。
 
 ### 我可以自定义 Aspose.Words for Java 中的清理选项吗？
 

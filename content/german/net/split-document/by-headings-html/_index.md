@@ -33,7 +33,7 @@ DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
 ```
 
-### Beispiel-Quellcode für By Headings HTML mit Aspose.Words für .NET
+### Beispielquellcode für By Headings HTML mit Aspose.Words für .NET
 
 Hier ist der vollständige Quellcode für die Funktion „Nach HTML-Überschrift“ von Aspose.Words für .NET:
 
@@ -74,7 +74,7 @@ Erkunden Sie die zusätzlichen Funktionen und Optionen von Aspose.Words für .NE
 
 #### Kann ich zum Aufteilen des Dokuments andere Kriterien auswählen?
 
-Ja, Sie können je nach Ihren Anforderungen ein anderes Kriterium für die Aufteilung des Dokuments auswählen. Aspose.Words für .NET bietet mehrere Kriterienoptionen, wie zum Beispiel`HeadingParagraph`, `Page`, `Section` und mehr. Ändern Sie die`DocumentSplitCriteria` Eigentum in der`HtmlSaveOptions` Objekt, um die entsprechenden Kriterien für die Aufteilung auszuwählen.
+Ja, Sie können je nach Ihren Anforderungen ein anderes Kriterium für die Aufteilung des Dokuments auswählen. Aspose.Words für .NET bietet mehrere Kriterienoptionen, wie z. B.`HeadingParagraph`, `Page`, `Section` und mehr. Ändern Sie die`DocumentSplitCriteria` Eigentum in der`HtmlSaveOptions` Objekt, um die entsprechenden Kriterien für die Aufteilung auszuwählen.
 
 #### Wie kann ich das Ausgabe-HTML für die aufgeteilten Teile anpassen?
 

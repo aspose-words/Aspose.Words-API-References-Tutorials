@@ -62,7 +62,7 @@ In diesem Tutorial haben wir gelernt, wie man die Standardschriftart beim Render
 
 #### F: Wie kann ich beim Konvertieren in PDF in Aspose.Words eine Standardschriftart angeben?
 
- A: Um eine Standardschriftart bei der Konvertierung in PDF in Aspose.Words festzulegen, können Sie die`PdfOptions` Klasse und legen Sie die`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
+ A: Um eine Standardschriftart bei der Konvertierung in PDF in Aspose.Words festzulegen, können Sie die`PdfOptions` Klasse und legen Sie die`DefaultFontName`-Eigenschaft auf den Namen der gewünschten Schriftart.
 
 #### F: Was passiert, wenn die Standardschriftart bei der Konvertierung in PDF nicht verfügbar ist?
 

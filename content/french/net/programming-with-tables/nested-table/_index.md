@@ -82,7 +82,7 @@ Assurez-vous de spécifier le chemin et le nom de fichier corrects pour le docum
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Cet appel est important pour créer une table imbriquée au sein de la première table.
-	// Sans cet appel, les cellules insérées ci-dessous seront ajoutées au tableau externe.
+	//Sans cet appel, les cellules insérées ci-dessous seront ajoutées au tableau externe.
 	builder.EndTable();
 	// Accédez à la première cellule du tableau externe.
 	builder.MoveTo(cell.FirstParagraph);

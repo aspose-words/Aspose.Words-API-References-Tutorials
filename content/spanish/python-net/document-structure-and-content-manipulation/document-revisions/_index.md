@@ -71,7 +71,7 @@ comparison.save("comparison_result.docx")
 
 ## Manejo de comentarios y anotaciones
 
-Los colaboradores pueden agregar comentarios y anotaciones a un documento. Puede administrar mediante programación estos elementos:
+Los colaboradores pueden agregar comentarios y anotaciones a un documento. Puede administrar estos elementos mediante programación:
 
 ```python
 comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")

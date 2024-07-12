@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Töltse be a dokumentumot, és ismételje meg a tartalomvezérlőket
- Töltse be a Word dokumentumot a`Document`konstruktor, paraméterként átadva a dokumentum elérési útját. Iteráljon a dokumentumban lévő összes strukturált dokumentumcímkén a a segítségével`foreach` hurok.
+ Töltse be a Word dokumentumot a`Document` konstruktor, paraméterként átadva a dokumentum elérési útját. Iteráljon a dokumentumban lévő összes strukturált dokumentumcímkén a a segítségével`foreach` hurok.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## 6. lépés: Mentse el a módosított dokumentumot
- Mentse el a módosított dokumentumot a megadott könyvtárba a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithSdt.ModifyContentControls.docx" néven mentjük.
+ Mentse el a módosított dokumentumot a megadott könyvtárba a`Save`módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithSdt.ModifyContentControls.docx" néven mentjük.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

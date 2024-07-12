@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. Aby osadzić kod umożliwiający wstawienie obiektu OLE jako ikony ze strumienia do projektu, wykonaj następujące kroki:
 -  Zaimportuj niezbędne referencje, dodając odpowiednie`using` sprawozdania.
--  Utwórz nowy dokument i narzędzie do tworzenia dokumentów za pomocą`Document` I`DocumentBuilder` zajęcia.
+-  Utwórz nowy dokument i narzędzie do tworzenia dokumentów za pomocą`Document`I`DocumentBuilder` zajęcia.
 - Użyj kodu do wstawienia obiektu OLE jako ikony ze strumienia.
 -  Zapisz dokument za pomocą`Save` metodę z odpowiednią ścieżką docelową.
 

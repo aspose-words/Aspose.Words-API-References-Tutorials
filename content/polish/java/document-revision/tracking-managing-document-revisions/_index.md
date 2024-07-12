@@ -103,7 +103,7 @@ W tym przykładzie zapisujemy kopię dokumentu z „_v2” wskazujący, że jest
 
 ### Czy mogę programowo zaakceptować lub odrzucić poprawki?
 
- Tak, możesz akceptować lub odrzucać poprawki za pomocą Aspose.Words dla Java. Skorzystaj z`acceptAllRevisions` I`rejectAllRevisions` metody zarządzania wersjami.
+ Tak, możesz akceptować lub odrzucać poprawki za pomocą Aspose.Words dla Java. Skorzystaj z`acceptAllRevisions`I`rejectAllRevisions` metody zarządzania wersjami.
 
 ### Czy można utworzyć wiele wersji dokumentu?
 

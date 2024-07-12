@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 
 ## Wniosek
 
-W tym przewodniku wyjaśniliśmy, jak załadować dokument z konwersją metaplików na obrazy PNG przy użyciu biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Konwersja metaplików do formatu PNG zapewnia lepszą kompatybilność i dokładne renderowanie dokumentów.
+tym przewodniku wyjaśniliśmy, jak załadować dokument z konwersją metaplików na obrazy PNG przy użyciu biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Konwersja metaplików do formatu PNG zapewnia lepszą kompatybilność i dokładne renderowanie dokumentów.
 
 
 ### Często zadawane pytania

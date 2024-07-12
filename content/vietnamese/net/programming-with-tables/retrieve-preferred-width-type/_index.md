@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Kích hoạt điều chỉnh bảng tự động
 table. AllowAutoFit = true;
 
-// Lấy ô đầu tiên của hàng đầu tiên
+//Lấy ô đầu tiên của hàng đầu tiên
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Truy xuất loại chiều rộng ưa thích và giá trị của nó
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-Ở đây chúng tôi sử dụng tài liệu để tìm nạp bảng đầu tiên, sau đó chúng tôi kích hoạt bảng tự động phù hợp với`AllowAutoFit` tài sản. Sau đó, chúng tôi lấy ô đầu tiên của hàng đầu tiên của bảng. Từ ô này, chúng ta có thể truy xuất loại chiều rộng ưa thích bằng`PreferredWidth.Type` tài sản và giá trị của nó bằng`PreferredWidth.Value` tài sản.
+ Ở đây chúng tôi sử dụng tài liệu để tìm nạp bảng đầu tiên, sau đó chúng tôi kích hoạt bảng tự động phù hợp với`AllowAutoFit` tài sản. Sau đó, chúng tôi lấy ô đầu tiên của hàng đầu tiên của bảng. Từ ô này, chúng ta có thể truy xuất loại chiều rộng ưa thích bằng`PreferredWidth.Type` tài sản và giá trị của nó bằng`PreferredWidth.Value` tài sản.
 
 ### Mã nguồn mẫu cho Truy xuất Loại chiều rộng ưa thích bằng Aspose.Words cho .NET 
 

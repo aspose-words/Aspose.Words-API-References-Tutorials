@@ -17,7 +17,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 - Conocimientos básicos de C#: la familiaridad con la programación en C# le ayudará a comprender e implementar los pasos sin problemas.
 -  Biblioteca Aspose.Words para .NET: descargue e instale Aspose.Words para .NET desde[enlace de descarga](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: un entorno adecuado como Visual Studio para escribir y ejecutar su código.
--  Documento de muestra: Un documento de muestra (p. ej.,`Rendering.docx`) para aplicar la configuración de fuente.
+- Documento de muestra: Un documento de muestra (p. ej.,`Rendering.docx`) para aplicar la configuración de fuente.
 
 ## Importar espacios de nombres
 
@@ -55,7 +55,7 @@ En este ejemplo:
 
 ## Paso 3: cargue el documento
 
-Con sus fuentes de fuentes configuradas, el siguiente paso es cargar su documento en Aspose.Words`Document` objeto. Esto le permite manipular y eventualmente guardar el documento.
+ Con sus fuentes de fuentes configuradas, el siguiente paso es cargar su documento en Aspose.Words`Document`objeto. Esto le permite manipular y eventualmente guardar el documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Si sigue estos pasos, habrá configurado correctamente los ajustes de fuente per
 
 ### P1: ¿Puedo utilizar fuentes de varias carpetas personalizadas?
 
- Sí, puedes especificar varios.`FolderFontSource`instancias dentro del`SetFontsSources` método para incluir fuentes de diferentes carpetas.
+ Sí, puedes especificar varios.`FolderFontSource` instancias dentro del`SetFontsSources` método para incluir fuentes de diferentes carpetas.
 
 ### P2: ¿Cómo obtengo una prueba gratuita de Aspose.Words para .NET?
 

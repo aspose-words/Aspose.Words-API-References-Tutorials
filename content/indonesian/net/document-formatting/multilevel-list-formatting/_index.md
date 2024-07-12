@@ -125,7 +125,7 @@ Dan itu dia! Anda telah berhasil membuat daftar bertingkat di dokumen Word mengg
  Ya, Anda dapat melanjutkan penomoran dengan menggunakan`ListFormat.List` properti untuk ditautkan ke daftar yang ada.
 
 ### Bagaimana cara mengubah tingkat indentasi secara dinamis?
- Anda dapat mengubah tingkat indentasi secara dinamis dengan menggunakan`ListIndent` Dan`ListOutdent` metode sesuai kebutuhan.
+ Anda dapat mengubah tingkat indentasi secara dinamis dengan menggunakan`ListIndent`Dan`ListOutdent` metode sesuai kebutuhan.
 
 ### Bisakah saya membuat daftar bertingkat dalam format dokumen lain seperti PDF?
 Ya, Aspose.Words mendukung penyimpanan dokumen dalam berbagai format termasuk PDF, mempertahankan formatnya.

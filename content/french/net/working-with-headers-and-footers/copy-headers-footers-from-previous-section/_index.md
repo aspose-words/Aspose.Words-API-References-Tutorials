@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Étape 2 : accéder à la section actuelle
 
-Nous récupérons la section courante en utilisant`builder.CurrentSection`. Cette section sera la cible où nous copierons les en-têtes et pieds de page de la section précédente.
+ Nous récupérons la section courante en utilisant`builder.CurrentSection`Cette section sera la cible où nous copierons les en-têtes et pieds de page de la section précédente.
 
 ### Étape 3 : définir la section précédente
 

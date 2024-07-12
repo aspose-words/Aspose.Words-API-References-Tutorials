@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 3. Загрузите документ
- Использовать`Document` класс Aspose.Words для загрузки документа Word, содержащего связанные поля, которые вы хотите преобразовать.
+ Использовать`Document`класс Aspose.Words для загрузки документа Word, содержащего связанные поля, которые вы хотите преобразовать.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

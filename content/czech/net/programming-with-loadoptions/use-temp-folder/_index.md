@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 V této příručce jsme vysvětlili, jak nahrát dokument pomocí určené dočasné složky pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Použití dočasné složky umožňuje ukládat dočasné soubory generované během zpracování dokumentů organizovaným a efektivním způsobem.
 
-### Časté dotazy k použití dočasné složky v dokumentu aplikace Word
+### Nejčastější dotazy k použití dočasné složky v dokumentu aplikace Word
 
 Při zpracovávání dokumentů aplikace Word v aplikaci C# pomocí Aspose.Words for .NET můžete narazit na scénáře, kdy použití dočasné složky bude nutné k uložení dočasných souborů generovaných během zpracování dokumentu. Níže jsou uvedeny některé časté dotazy týkající se této funkce:
 

@@ -188,7 +188,7 @@ La revisione dei documenti è un aspetto critico del lavoro collaborativo, poich
    - Aspose.Words per Java fornisce una potente soluzione per la gestione delle revisioni dei documenti a livello di codice. Consente agli utenti di rivedere, accettare o rifiutare modifiche, gestire diversi tipi di revisione e navigare nel documento in modo efficiente.
 
 ### Posso tenere traccia delle revisioni apportate da diversi autori in un documento
-   - Sì, Aspose.Words ti consente di accedere alle informazioni sulle revisioni, incluso l'autore, la data di modifica e il contenuto modificato, semplificando il monitoraggio delle modifiche apportate da diversi collaboratori.
+   - Sì, Aspose.Words ti consente di accedere alle informazioni sulle revisioni, incluso l'autore, la data della modifica e il contenuto modificato, semplificando il monitoraggio delle modifiche apportate da diversi collaboratori.
 
 ### È possibile accettare o rifiutare revisioni specifiche a livello di codice
    - Assolutamente! Aspose.Words consente l'accettazione o il rifiuto selettivo delle revisioni in base a criteri specifici, offrendoti un controllo capillare sul processo di revisione.

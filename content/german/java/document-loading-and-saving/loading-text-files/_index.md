@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- In diesem Beispiel laden wir ein Textdokument und entfernen führende und nachfolgende Leerzeichen mit`TxtLeadingSpacesOptions.TRIM` Und`TxtTrailingSpacesOptions.TRIM`.
+ In diesem Beispiel laden wir ein Textdokument und entfernen führende und nachfolgende Leerzeichen mit`TxtLeadingSpacesOptions.TRIM`Und`TxtTrailingSpacesOptions.TRIM`.
 
 ## Schritt 3: Textrichtung steuern
 
@@ -179,7 +179,7 @@ Um mit Aspose.Words für Java zu beginnen, befolgen Sie diese Schritte:
 
 ### Wie gehe ich mit Leerzeichen in geladenen Textdokumenten um?
 
- Sie können die Behandlung führender und nachfolgender Leerzeichen in geladenen Textdokumenten steuern mit`TxtLoadOptions` Optionen wie`TxtLeadingSpacesOptions` Und`TxtTrailingSpacesOptions`ermöglicht es Ihnen, Leerzeichen nach Bedarf zu kürzen oder beizubehalten. Ein Beispiel finden Sie im Abschnitt „Behandlung von Leerzeichenoptionen“ in diesem Handbuch.
+ Sie können die Behandlung führender und nachfolgender Leerzeichen in geladenen Textdokumenten steuern mit`TxtLoadOptions` Optionen wie`TxtLeadingSpacesOptions`Und`TxtTrailingSpacesOptions`ermöglicht es Ihnen, Leerzeichen nach Bedarf zu kürzen oder beizubehalten. Ein Beispiel finden Sie im Abschnitt „Behandlung von Leerzeichenoptionen“ in diesem Handbuch.
 
 ### Welche Bedeutung hat die Textrichtung in Aspose.Words für Java?
 

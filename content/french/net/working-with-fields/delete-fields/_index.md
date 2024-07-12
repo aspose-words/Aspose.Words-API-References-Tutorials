@@ -88,7 +88,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Conclusion
 
-En conclusion, ce didacticiel a fourni un guide complet sur la façon de supprimer efficacement des champs des documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez automatiser le processus de suppression de champs au sein de vos applications, améliorant ainsi la productivité et l'efficacité des tâches de gestion de documents.
+En conclusion, ce didacticiel a fourni un guide complet sur la façon de supprimer efficacement des champs des documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez automatiser le processus de suppression de champs au sein de vos applications, améliorant ainsi la productivité et l'efficacité des tâches de gestion documentaire.
 
 ## FAQ
 

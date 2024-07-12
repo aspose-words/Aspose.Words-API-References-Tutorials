@@ -91,7 +91,7 @@ shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 builder.Write("I'm a formatted paragraph with double border and nice shading.");
 ```
 
-此行將我們的文字插入文件中。很簡單，但現在它被包裹在時尚的框架和陰影背景中。
+該行將我們的文字插入文件中。很簡單，但現在它被包裹在時尚的框架和陰影背景中。
 
 ## 第 6 步：儲存文檔
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## 結論
 
-現在你就擁有了！只需幾行程式碼，我們就將一個簡單的段落轉換為視覺吸引力的內容。 Aspose.Words for .NET 讓您可以非常輕鬆地在文件中新增具有專業外觀的格式。無論您是在準備報告、信件或任何文件，這些技巧都將幫助您給人留下深刻的印象。所以，繼續嘗試吧，看看您的文件變得栩栩如生！
+現在你就得到它了！只需幾行程式碼，我們就將一個簡單的段落轉換為視覺吸引力的內容。 Aspose.Words for .NET 讓您可以非常輕鬆地在文件中新增具有專業外觀的格式。無論您是在準備報告、信件或任何文件，這些技巧都將幫助您給人留下深刻的印象。所以，繼續嘗試吧，看看您的文件變得栩栩如生！
 
 ## 常見問題解答
 

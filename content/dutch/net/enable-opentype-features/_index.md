@@ -12,4 +12,4 @@ Leer hoe u OpenType-functies in uw Word-documenten kunt inschakelen met Aspose.W
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Open Type-functies](./open-type-features/) | Leer hoe u Open Type-functies in Aspose.Words voor .NET inschakelt en gebruikt |
+| [Open Type-functies](./open-type-features/) | Leer hoe u OpenType-functies in Word-documenten kunt inschakelen met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. |

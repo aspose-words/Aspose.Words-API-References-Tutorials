@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.Save(dataDir + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
 ```
 
-In diesem Schritt speichern wir das gesamte Dokument im TIFF-Format mit dem`Save` Methode und Angabe des Pfads zur Ausgabedatei mit der Erweiterung`.tiff`.
+In diesem Schritt speichern wir das komplette Dokument im TIFF-Format mit dem`Save` Methode und Angabe des Pfads zur Ausgabedatei mit der Erweiterung`.tiff`.
 
 ## Schritt 4: Konfigurieren Sie Sicherungsoptionen für den Seitenbereich
 

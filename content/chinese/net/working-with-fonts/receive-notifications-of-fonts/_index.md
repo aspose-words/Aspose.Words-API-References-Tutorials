@@ -89,7 +89,7 @@ doc.FontSettings = fontSettings;
 
 ## 步骤 6：保存文档
 
-最后，在应用字体设置并处理所有字体替换后，保存文档。以您选择的格式保存；在这里，我们将其保存为 PDF。
+最后，在应用字体设置并处理任何字体替换后保存文档。以您选择的格式保存；在这里，我们将其保存为 PDF。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
@@ -119,6 +119,6 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 访问[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8)寻求帮助。
 
-### Q5：是否可以获得Aspose.Words的临时许可证？
+### Q5：可以获得 Aspose.Words 的临时许可证吗？
 
 是的，你可以从[临时执照页面](https://purchase.aspose.com/temporary-license/).

@@ -98,7 +98,7 @@ Werk de inhoudsopgave bij om de documentstructuur weer te geven:
 doc.UpdateFields();
 ```
 
-## Stap 6: Sla het document op
+## Stap 6: Bewaar het document
 
 Sla ten slotte uw document op in een opgegeven map:
 

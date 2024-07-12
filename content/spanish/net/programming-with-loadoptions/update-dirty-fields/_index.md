@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/update-dirty-fields/
 ---
-Cuando se procesa Words con documentos de Word en una aplicación C#, puede ser necesario actualizar los campos sucios para mostrar los valores más recientes. Con la biblioteca Aspose.Words para .NET, puede actualizar fácilmente los campos sucios al cargar el documento usando LoadOptions. En esta guía paso a paso, le explicaremos cómo utilizar Aspose.Words para el código fuente de .NET C# para cargar un documento actualizando campos sucios mediante LoadOptions.
+Cuando se procesa Words con documentos de Word en una aplicación C#, puede ser necesario actualizar los campos sucios para mostrar los valores más recientes. Con la biblioteca Aspose.Words para .NET, puede actualizar fácilmente los campos sucios al cargar el documento usando LoadOptions. En esta guía paso a paso, le explicaremos cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento actualizando campos sucios usando LoadOptions.
 
 ## Comprender la biblioteca Aspose.Words
 

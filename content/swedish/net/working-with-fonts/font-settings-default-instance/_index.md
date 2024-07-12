@@ -17,7 +17,7 @@ Innan vi börjar, se till att du har följande:
 - Grundläggande kunskaper i C#: Bekantskap med C#-programmering hjälper dig att förstå och implementera stegen smidigt.
 -  Aspose.Words for .NET Library: Ladda ner och installera Aspose.Words for .NET från[nedladdningslänk](https://releases.aspose.com/words/net/).
 - Utvecklingsmiljö: En lämplig miljö som Visual Studio för att skriva och exekvera din kod.
--  Exempeldokument: Ett exempeldokument (t.ex.`Rendering.docx`) för att tillämpa teckensnittsinställningarna.
+- Exempeldokument: Ett exempeldokument (t.ex.`Rendering.docx`) för att tillämpa teckensnittsinställningarna.
 
 ## Importera namnområden
 
@@ -55,7 +55,7 @@ I det här exemplet:
 
 ## Steg 3: Ladda dokumentet
 
-Med dina teckensnittskällor konfigurerade är nästa steg att ladda ditt dokument i en Aspose.Words`Document` objekt. Detta gör att du kan manipulera och så småningom spara dokumentet.
+ Med dina teckensnittskällor konfigurerade är nästa steg att ladda ditt dokument i en Aspose.Words`Document`objekt. Detta gör att du kan manipulera och så småningom spara dokumentet.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Grattis! Du har bemästrat grunderna för att hantera teckensnittsinställningar
 
 ### F1: Kan jag använda teckensnitt från flera anpassade mappar?
 
- Ja, du kan ange flera`FolderFontSource`instanser inom`SetFontsSources` metod för att inkludera teckensnitt från olika mappar.
+ Ja, du kan ange flera`FolderFontSource` instanser inom`SetFontsSources` metod för att inkludera teckensnitt från olika mappar.
 
 ### F2: Hur får jag en gratis provversion av Aspose.Words för .NET?
 

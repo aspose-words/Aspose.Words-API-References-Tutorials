@@ -95,7 +95,7 @@ A: Untuk menentukan apakah TextBox adalah kepala urutan, Anda dapat memeriksa ap
 
 #### T: Bagaimana cara mengetahui apakah TextBox berada di tengah-tengah urutan?
 
-A: Untuk menentukan apakah TextBox berada di tengah-tengah urutan, Anda perlu memeriksa apakah ia memiliki kedua bentuk selanjutnya (`Next`) dan bentuk sebelumnya (`Previous`). Jika ya, berarti ini berada di tengah-tengah barisan.
+A: Untuk menentukan apakah TextBox berada di tengah-tengah urutan, Anda perlu memeriksa apakah ia memiliki kedua bentuk berikutnya (`Next`) dan bentuk sebelumnya (`Previous`). Jika ya, berarti ini berada di tengah-tengah barisan.
 
 #### T: Bagaimana cara memeriksa apakah TextBox adalah akhir dari urutan?
 

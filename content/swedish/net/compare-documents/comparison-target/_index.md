@@ -9,7 +9,7 @@ url: /sv/net/compare-documents/comparison-target/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin sett dig själv att jämföra två versioner av ett Word-dokument och manuellt spåra varje liten förändring? Det är som att leta efter en nål i en höstack, eller hur? Tja, tänk om jag sa att det finns ett superenkelt sätt att göra det med Aspose.Words för .NET? Det är rätt! Detta kraftfulla bibliotek låter dig jämföra Word-dokument på ett ögonblick. Idag ska jag gå igenom processen steg för steg. Är du redo att bli en guide för jämförelse av dokument? Låt oss dyka in!
+Hallå där! Har du någonsin sett dig själv att jämföra två versioner av ett Word-dokument och manuellt spåra varje liten förändring? Det är som att leta efter en nål i en höstack, eller hur? Tja, tänk om jag sa att det finns ett superenkelt sätt att göra det med Aspose.Words för .NET? Det är rätt! Detta kraftfulla bibliotek låter dig jämföra Word-dokument på ett ögonblick. Idag ska jag gå igenom processen steg för steg. Är du redo att bli en guide för dokumentjämförelse? Låt oss dyka in!
 
 ## Förutsättningar
 
@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Steg 3: Ladda dina dokument
 
-Okej, dags att ladda de dokument du vill jämföra. Du behöver sökvägarna till dessa dokument. Låt oss anta att du har två dokument:`DocumentA.docx` och`DocumentB.docx`.
+Okej, dags att ladda de dokument du vill jämföra. Du behöver sökvägarna till dessa dokument. Låt oss anta att du har två dokument:`DocumentA.docx`och`DocumentB.docx`.
 
 ```csharp
 // Sökvägen till dokumentkatalogen.

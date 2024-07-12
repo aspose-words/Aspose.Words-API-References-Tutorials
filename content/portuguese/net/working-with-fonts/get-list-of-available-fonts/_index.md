@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Etapa 2: configurar fontes de fontes
- A seguir, criaremos uma instância de`FontSettings` e obtenha as fontes de fontes existentes usando o`GetFontsSources()` método. Também adicionaremos uma nova fonte de fonte especificando uma pasta que contém as fontes.
+ seguir, criaremos uma instância de`FontSettings` e obtenha as fontes de fontes existentes usando o`GetFontsSources()` método. Também adicionaremos uma nova fonte de fonte especificando uma pasta que contém as fontes.
 
 ```csharp
 // Configurar fontes de fontes
@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Adicione uma nova fonte de pasta que instruirá Aspose.Words a pesquisar fontes na seguinte pasta.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//Adicione a pasta personalizada que contém nossas fontes à lista de fontes de fontes existentes.
+// Adicione a pasta personalizada que contém nossas fontes à lista de fontes de fontes existentes.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ R: Sim, você pode filtrar a lista de fontes disponíveis no Aspose.Words usando
 
 #### P: Como posso usar a lista de fontes disponíveis em meus documentos do Word?
 
-R: Para usar a lista de fontes disponíveis em seus documentos do Word, você pode navegar na lista e selecionar as fontes apropriadas usando os métodos e propriedades do arquivo Word.`FontSettings` classe em Aspose.Words.
+ R: Para usar a lista de fontes disponíveis em seus documentos do Word, você pode navegar na lista e selecionar as fontes apropriadas usando os métodos e propriedades do arquivo Word.`FontSettings` classe em Aspose.Words.

@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Langkah 3: Akses tabel
- Untuk menerapkan batas garis, kita perlu mengakses tabel di dokumen. Itu`Table` kelas mewakili tabel di Aspose.Words.
+ Untuk menerapkan batas garis besar, kita perlu mengakses tabel di dokumen. Itu`Table` kelas mewakili tabel di Aspose.Words.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -46,7 +46,7 @@ table. ClearBorders();
 ```
 
 ## Langkah 6: Tentukan batas hijau di sekeliling tabel
- Kita sekarang dapat mengatur batas hijau di sekeliling tabel menggunakan`SetBorder()` metode untuk setiap sisi meja. Dalam contoh ini, kita menggunakan border tipe "Tunggal" dengan ketebalan 1,5 poin dan warna hijau.
+ Kita sekarang dapat mengatur batas hijau di sekeliling tabel menggunakan`SetBorder()` metode untuk setiap sisi meja. Dalam contoh ini, kita menggunakan border tipe "Single" dengan ketebalan 1,5 poin dan warna hijau.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);

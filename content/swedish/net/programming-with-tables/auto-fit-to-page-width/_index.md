@@ -103,7 +103,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ### 3. Hur formaterar jag tabeller annorlunda?
 
-Du kan anpassa tabellformateringen genom att använda olika metoder från Aspose.Words. Kolla[API dokumentation](https://reference.aspose.com/words/net/) för detaljerade instruktioner.
+ Du kan anpassa tabellformateringen genom att använda olika metoder från Aspose.Words. Kolla[API dokumentation](https://reference.aspose.com/words/net/) för detaljerade instruktioner.
 
 ### 4. Hur får jag support för Aspose.Words för .NET?
 

@@ -2,204 +2,86 @@
 title: Ignorar texto dentro de Eliminar revisiones
 linktitle: Ignorar texto dentro de Eliminar revisiones
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a utilizar la función "Ignorar texto dentro de eliminar revisiones" de Aspose.Words para .NET.
+description: Aprenda a manejar revisiones rastreadas en documentos de Word usando Aspose.Words para .NET. Domine la automatización de documentos con este completo tutorial.
 type: docs
 weight: 10
 url: /es/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
+## Introducción
 
-En este artículo, exploraremos el código fuente de C# anterior para comprender cómo utilizar la función "Ignorar texto dentro de eliminar revisiones" en la biblioteca Aspose.Words para .NET. Esta característica es útil cuando queremos ignorar el texto dentro de las revisiones de eliminación cuando procesamos textos con documentos.
+En el ámbito del desarrollo .NET, Aspose.Words se destaca como una biblioteca sólida para trabajar con documentos de Microsoft Word mediante programación. Ya sea que sea un desarrollador experimentado o esté comenzando, dominar las capacidades de Aspose.Words puede mejorar significativamente su capacidad para manipular, crear y administrar documentos de Word de manera eficiente. Este tutorial profundiza en una de sus poderosas características: manejar revisiones rastreadas dentro de documentos usando Aspose.Words para .NET.
 
-## Descripción general de la biblioteca Aspose.Words para .NET
+## Requisitos previos
 
-Antes de profundizar en los detalles del código, permítanme presentarles brevemente la biblioteca Aspose.Words para .NET. Es una poderosa biblioteca que permite crear, modificar y convertir documentos de Word en aplicaciones .NET. Ofrece muchas funciones avanzadas para el procesamiento de textos con documentos, incluida la gestión de revisiones.
+Antes de sumergirse en este tutorial, asegúrese de cumplir con los siguientes requisitos previos:
+- Conocimientos básicos del lenguaje de programación C#.
+- Visual Studio instalado en su sistema.
+-  Biblioteca Aspose.Words para .NET integrada en su proyecto. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+- Acceso a Aspose.Words para .NET[documentación](https://reference.aspose.com/words/net/) para referencia.
 
-## Comprender la función "Ignorar texto dentro de eliminar revisiones"
+## Importar espacios de nombres
 
-La función "Ignorar texto dentro de las revisiones de eliminación" en Aspose.Words para .NET le permite especificar si el texto dentro de las revisiones de eliminación debe ignorarse durante ciertas operaciones, como buscar y reemplazar texto. Cuando esta función está habilitada, el texto eliminado dentro de las revisiones no se considera durante las operaciones.
+Comience importando los espacios de nombres necesarios a su proyecto:
+```csharp
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+## Paso 1: cree un nuevo documento e inserte texto
 
-## Paso 1: crear un nuevo documento usando Aspose.Words para .NET
-
- Antes de comenzar a manipular texto en un documento, necesitamos crear un nuevo documento usando Aspose.Words para .NET. Se puede hacer creando una instancia de un`Document` objeto:
-
+ Primero, inicialice una nueva instancia de`Document` y un`DocumentBuilder` para comenzar a construir su documento:
 ```csharp
 Document doc = new Document();
-```
-
-## Paso 2: insertar texto no revisado en el documento
-
- Una vez que tenemos un documento, podemos insertar texto no revisado usando un`DocumentBuilder` objeto. Por ejemplo, para insertar el texto "Texto eliminado", podemos utilizar el`Writeln` y`Write` métodos:
-
-```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. Writen("Deleted");
-builder. Write("Text");
 ```
 
-## Paso 3: eliminar un párrafo con revisiones de seguimiento
+## Paso 2: insertar texto y realizar un seguimiento de las revisiones
 
-Para ilustrar el uso de la función "Ignorar texto dentro de eliminar revisiones", eliminaremos un párrafo del documento mediante el seguimiento de revisiones. Esto nos permitirá ver cómo afecta esta característica a operaciones posteriores.
-
+Puede insertar texto en el documento y realizar un seguimiento de las revisiones iniciando y deteniendo el seguimiento de revisiones:
 ```csharp
+builder.Writeln("Deleted");
+builder.Write("Text");
+
 doc.StartTrackRevisions("author", DateTime.Now);
 doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## Paso 4: Aplicar la función "Ignorar texto dentro de Eliminar revisiones"
+## Paso 3: reemplazar texto usando expresiones regulares
 
- Ahora que hemos preparado nuestro documento eliminando un párrafo, podemos habilitar la función "Ignorar texto dentro de eliminar revisiones" usando un`FindReplaceOptions` objeto. Estableceremos el`IgnoreDeleted`propiedad a`true`:
-
+Para manipular texto, puedes usar expresiones regulares para buscar y reemplazar patrones específicos:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
 
-## Paso 5: usar expresiones regulares para buscar y reemplazar
-
-Para realizar operaciones de búsqueda y reemplazo en el texto del documento, usaremos expresiones regulares. En nuestro ejemplo, buscaremos todas las apariciones de la letra "e" y las reemplazaremos con un asterisco ".* ". .NETO`Regex` La clase se utiliza para esto:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
-```
 
-## Paso 6: Mostrar el resultado del documento modificado
-
- Después de aplicar la búsqueda y reemplazo, podemos mostrar el contenido modificado del documento usando el`GetText` método:
-
-```csharp
 Console.WriteLine(doc.GetText());
-```
 
-## Paso 7: Modificar las opciones para incluir texto eliminado
-
- Si queremos incluir texto eliminado en el resultado de salida, podemos cambiar las opciones para no ignorar el texto eliminado. Para ello estableceremos el`IgnoreDeleted`propiedad a`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-## Paso 8: generar el documento modificado con texto eliminado
-
-Luego de cambiar las opciones, podemos realizar la búsqueda y reemplazar nuevamente para obtener el resultado con el texto eliminado incluido:
-
-```csharp
+options.IgnoreDeleted = false;
 doc.Range.Replace(regex, "*", options);
+
 Console.WriteLine(doc.GetText());
-```
-
-### Código fuente de ejemplo para ignorar texto dentro de eliminar revisiones usando Aspose.Words para .NET
-
-Aquí está el código fuente de muestra completo para demostrar el uso de la función "Ignorar texto dentro de eliminar revisiones" con Aspose.Words para .NET:
-
-```csharp
-        
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Insertar texto no revisado.
-	builder.Writeln("Deleted");
-	builder.Write("Text");
-
-	// Elimine el primer párrafo con revisiones de seguimiento.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	doc.FirstSection.Body.FirstParagraph.Remove();
-	doc.StopTrackRevisions();
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreDeleted = false;
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-    
 ```
 
 ## Conclusión
 
-En este artículo, exploramos el código fuente de C# para comprender cómo utilizar la función "Ignorar texto dentro de eliminar revisiones" en Aspose.Words para .NET. Esta característica es útil para ignorar el texto dentro de las revisiones de eliminación al manipular documentos. Seguimos una guía paso a paso para crear un documento, insertar texto, eliminar un párrafo con seguimiento de revisiones, aplicar la función "Ignorar texto dentro de eliminar revisiones" y realizar operaciones de búsqueda y reemplazo.
+Dominar las revisiones rastreadas en documentos de Word utilizando Aspose.Words para .NET permite a los desarrolladores automatizar las tareas de edición de documentos de manera eficiente. Al aprovechar su API integral y sus sólidas funciones, puede integrar perfectamente el manejo de revisiones en sus aplicaciones, mejorando la productividad y las capacidades de administración de documentos.
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 
-#### P: ¿Qué es la función "Ignorar texto dentro de eliminar revisiones" en Aspose.Words para .NET?
+### ¿Qué son las revisiones con seguimiento en documentos de Word?
+Las revisiones con seguimiento en documentos de Word se refieren a cambios realizados en un documento que son visibles para otros con marcas, que a menudo se utilizan para edición y revisión colaborativas.
 
-R: La función "Ignorar texto dentro de las revisiones de eliminación" en Aspose.Words para .NET le permite especificar si el texto dentro de las revisiones de eliminación debe ignorarse durante ciertas operaciones, como buscar y reemplazar texto. Cuando esta función está habilitada, el texto eliminado dentro de las revisiones no se considera durante las operaciones.
+### ¿Cómo puedo integrar Aspose.Words para .NET en mi proyecto de Visual Studio?
+Puede integrar Aspose.Words para .NET descargando la biblioteca del sitio web de Aspose y haciendo referencia a ella en su proyecto de Visual Studio.
 
-#### P: ¿Qué es Aspose.Words para .NET?
+### ¿Puedo revertir las revisiones rastreadas mediante programación usando Aspose.Words para .NET?
+Sí, puede administrar y revertir mediante programación las revisiones rastreadas utilizando Aspose.Words para .NET, lo que permite un control preciso sobre los flujos de trabajo de edición de documentos.
 
-R: Aspose.Words para .NET es una poderosa biblioteca para crear, editar y convertir documentos de Word en aplicaciones .NET. Ofrece muchas funciones avanzadas para el procesamiento de textos con documentos, incluida la gestión de revisiones.
+### ¿Aspose.Words para .NET es adecuado para manejar documentos grandes con revisiones rastreadas?
+Aspose.Words para .NET está optimizado para manejar documentos grandes de manera eficiente, incluidos aquellos con revisiones exhaustivas.
 
-#### P: ¿Cómo crear un nuevo documento en Aspose.Words para .NET?
-
- R: Antes de comenzar a manipular texto en un documento, necesita crear un documento nuevo usando Aspose.Words para .NET. Esto se puede hacer creando una instancia de un`Document` objeto. Aquí hay un código de muestra para crear un nuevo documento:
-
-```csharp
-Document doc = new Document();
-```
-
-#### P: ¿Cómo insertar texto sin editar en un documento usando Aspose.Words para .NET?
-
- R: Una vez que tenga un documento, puede insertar texto no revisado usando un`DocumentBuilder` objeto. Por ejemplo, para insertar el texto "Texto eliminado", puede utilizar el`Writeln` y`Write` métodos:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writen("Deleted");
-builder.Write("Text");
-```
-
-#### P: ¿Cómo elimino un párrafo con seguimiento de revisión en Aspose.Words para .NET?
-
-R: Para ilustrar el uso de la función "Ignorar texto dentro de eliminar revisiones", eliminaremos un párrafo del documento mediante el seguimiento de revisiones. Esto nos permitirá ver cómo afecta esta función a operaciones posteriores.
-
-```csharp
-doc.StartTrackRevisions("author", DateTime.Now);
-doc.FirstSection.Body.FirstParagraph.Remove();
-doc.StopTrackRevisions();
-```
-
-#### P: ¿Cómo habilitar la función "Ignorar texto dentro de eliminar revisiones" en Aspose.Words para .NET?
-
- R: Ahora que hemos preparado nuestro documento eliminando un párrafo, podemos habilitar la función "Ignorar texto dentro de eliminar revisiones" usando un`FindReplaceOptions` objeto. Estableceremos el`IgnoreDeleted`propiedad a`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
-
-#### P: ¿Cómo buscar y reemplazar usando expresiones regulares en Aspose.Words para .NET?
-
-R: Para realizar operaciones de búsqueda y reemplazo en el texto del documento, usaremos expresiones regulares. En nuestro ejemplo, buscaremos todas las apariciones de la letra "e" y las reemplazaremos con un asterisco ".* ". Usaremos el .NET`Regex` clase para esto:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### P: ¿Cómo ver el contenido modificado del documento en Aspose.Words para .NET?
-
-R: Después de aplicar la búsqueda y reemplazo, podemos mostrar el contenido modificado del documento usando el`GetText` método:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### P: ¿Cómo incluir texto eliminado en el resultado de salida en Aspose.Words para .NET?
-
- R: Si queremos incluir texto eliminado en el resultado de salida, podemos cambiar las opciones para no ignorar el texto eliminado. Para ello estableceremos el`IgnoreDeleted`propiedad a`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-#### P: ¿Cómo mostrar un documento editado con texto eliminado en Aspose.Words para .NET?
-
-R: Después de cambiar las opciones, podemos hacer una nueva búsqueda y reemplazar para obtener el resultado con el texto eliminado incluido:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### ¿Dónde puedo encontrar más recursos y soporte para Aspose.Words para .NET?
+Puede explorar documentación completa y obtener soporte de la comunidad Aspose.Words para .NET en[Foro Aspose.Words](https://forum.aspose.com/c/words/8).

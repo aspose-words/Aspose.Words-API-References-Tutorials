@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Belgeyi Başlat
 
- Yeni bir Word belgesi oluşturarak başlayalım. biz kullanacağız`Document` Ve`DocumentBuilder` Aspose.Words'ten dersler.
+ Yeni bir Word belgesi oluşturarak başlayalım. biz kullanacağız`Document`Ve`DocumentBuilder` Aspose.Words'ten dersler.
 
 ```csharp
 Document doc = new Document();

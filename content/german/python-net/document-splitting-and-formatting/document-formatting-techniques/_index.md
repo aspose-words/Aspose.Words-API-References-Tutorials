@@ -1,7 +1,7 @@
 ---
 title: Beherrschen von Dokumentformatierungstechniken für visuelle Wirkung
 linktitle: Beherrschen von Dokumentformatierungstechniken für visuelle Wirkung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie die Dokumentformatierung mit Aspose.Words für Python meistern. Erstellen Sie optisch ansprechende Dokumente mit Schriftarten, Tabellen, Bildern und mehr. Schritt-für-Schritt-Anleitung mit Codebeispielen.
 type: docs
 weight: 14
@@ -133,7 +133,7 @@ builder.insert_hyperlink("Jump to Section 2", "#section2")
 
 ## Dokumentensicherheit und -schutz
 
-Schützen Sie vertrauliche Inhalte, indem Sie den Dokumentschutz einrichten:
+Schützen Sie vertrauliche Inhalte, indem Sie den Dokumentenschutz einrichten:
 
 ```python
 doc.protect(aw.ProtectionType.READ_ONLY, "password")

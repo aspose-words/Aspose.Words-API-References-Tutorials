@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Zaktualizuj układ strony
 
- Zadzwoń do`UpdatePageLayout` metoda. Spowoduje to renderowanie dokumentu w pamięci i przechwytywanie wszelkich ostrzeżeń pojawiających się podczas renderowania.
+ Zadzwoń do`UpdatePageLayout`metoda. Spowoduje to renderowanie dokumentu w pamięci i przechwytywanie wszelkich ostrzeżeń pojawiających się podczas renderowania.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ Nie, możesz określić tylko jedną domyślną czcionkę do zamiany. Można jed
 
 ###  P3: Czy mogę obsługiwać inne typy ostrzeżeń za pomocą`IWarningCallback`?
 
- Tak`IWarningCallback` interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
+ Tak`IWarningCallback`interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
 
 ### P4: Gdzie mogę znaleźć wsparcie dla Aspose.Words?
 

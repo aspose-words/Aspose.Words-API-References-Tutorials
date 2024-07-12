@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Bước 3: Truy cập dòng cần sửa đổi
- Để thay đổi định dạng của một hàng trong bảng, chúng ta cần điều hướng đến hàng cụ thể trong bảng. Chúng tôi sử dụng`GetChild()` Và`FirstRow` các phương thức để lấy tham chiếu đến hàng đầu tiên của bảng.
+ Để thay đổi định dạng của một hàng trong bảng, chúng ta cần điều hướng đến hàng cụ thể trong bảng. Chúng tôi sử dụng`GetChild()`Và`FirstRow` các phương thức để lấy tham chiếu đến hàng đầu tiên của bảng.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

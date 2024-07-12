@@ -17,7 +17,7 @@ Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Adım 3: Birleşik Giriş Kutusuna Öğe Ekleme
- kullanarak açılan kutuya öğeler ekleyin.`ListItems` mülkiyeti`StructuredDocumentTag` Her öğe bir ile temsil edilir`SdtListItem` bir görüntü metni ve bir değer alan nesne. Bu örnekte açılan kutuya üç öğe ekliyoruz.
+ kullanarak açılan kutuya öğeler ekleyin.`ListItems` mülkiyeti`StructuredDocumentTag` . Her öğe bir ile temsil edilir`SdtListItem` bir görüntü metni ve bir değer alan nesne. Bu örnekte açılan kutuya üç öğe ekliyoruz.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

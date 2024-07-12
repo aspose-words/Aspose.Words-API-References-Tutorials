@@ -106,7 +106,7 @@ builder.Writeln("This is page 3.");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功建立了 Word 文件並插入了分頁符號。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功建立了 Word 文件並插入了分頁符號。
 
 ## 結論
 

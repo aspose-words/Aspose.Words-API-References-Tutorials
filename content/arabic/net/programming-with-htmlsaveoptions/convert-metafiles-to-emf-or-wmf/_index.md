@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`Document` و`DocumentBuilder` لبناء الوثيقة. يقوم بإدراج`<img>` ضع علامة في المستند باستخدام صورة مشفرة باستخدام Base64.
+ يقوم هذا الرمز بإنشاء مثيل لـ`Document`و`DocumentBuilder` لبناء الوثيقة. يقوم بإدراج`<img>` ضع علامة في المستند باستخدام صورة مشفرة باستخدام Base64.
 
 ## الخطوة 3: قم بتعيين خيارات حفظ HTML
 

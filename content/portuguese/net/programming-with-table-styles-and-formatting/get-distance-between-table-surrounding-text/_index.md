@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Etapa 3: obtenha a distância entre a tabela e o texto ao redor
- Para obter a distância entre a tabela e o texto ao redor, precisamos acessar a tabela no documento usando o`GetChild()` método e o`NodeType.Table` propriedade. Podemos então exibir as diferentes distâncias usando as propriedades do array`DistanceTop`, `DistanceBottom`, `DistanceRight` e`DistanceLeft`.
+ Para obter a distância entre a tabela e o texto ao redor, precisamos acessar a tabela no documento usando o`GetChild()` método e o`NodeType.Table` propriedade. Podemos então exibir as diferentes distâncias usando as propriedades do array`DistanceTop`, `DistanceBottom`, `DistanceRight`e`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

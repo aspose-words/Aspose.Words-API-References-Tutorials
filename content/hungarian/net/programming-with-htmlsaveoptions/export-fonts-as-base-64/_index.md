@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
  Ez a kód létrehozza a`Document` a dokumentum betöltésével a megadott könyvtárból.
 
-## 3. lépés: A HTML biztonsági mentési beállítások konfigurálása
+## 3. lépés: HTML biztonsági mentési beállítások konfigurálása
 
 Most konfiguráljuk a HTML mentési beállításokat az alap 64-es betűtípusok exportálására. Használja a következő kódot:
 

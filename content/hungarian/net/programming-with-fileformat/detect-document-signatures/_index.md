@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-fileformat/detect-document-signatures/
 ---
 
-Ez a cikk lépésről lépésre ismerteti a Digital Signature on Word-dokumentum észlelési szolgáltatásának használatát az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan lehet felismerni a digitális aláírásokat egy dokumentumban.
+Ez a cikk lépésről lépésre bemutatja a Digital Signature on Word dokumentumészlelési funkciójának használatát az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan lehet felismerni a digitális aláírásokat egy dokumentumban.
 
 Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
 
@@ -88,4 +88,4 @@ Amikor megnyit vagy ment egy dokumentumot az Aspose.Words segítségével, a dok
 
 #### Milyen korlátai vannak a digitális aláírások Aspose.Words for .NET segítségével történő észlelésének?
 
-A digitális aláírás-észlelés az Aspose.Words for .NET segítségével a dokumentumokban lévő aláírások észlelésére korlátozódik. Az Aspose.Words azonban nem biztosít funkciót a digitális aláírások hitelességének vagy integritásának ellenőrzésére. A digitális aláírásokkal kapcsolatos fejlettebb műveletek végrehajtásához más speciális eszközöket vagy könyvtárakat kell használnia.
+digitális aláírás-észlelés az Aspose.Words for .NET segítségével a dokumentumokban lévő aláírások észlelésére korlátozódik. Az Aspose.Words azonban nem biztosít funkciót a digitális aláírások hitelességének vagy integritásának ellenőrzésére. A digitális aláírásokkal kapcsolatos fejlettebb műveletek végrehajtásához más speciális eszközöket vagy könyvtárakat kell használnia.

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/conversion-to-pdf-17/
 ---
 
-den här handledningen går vi igenom stegen för hur du konverterar Word-dokument till PDF 1.7 med Aspose.Words för .NET. Genom att konvertera till PDF 1.7 kan du generera PDF-filer som överensstämmer med PDF 1.7-standarden. Följ stegen nedan:
+I den här handledningen går vi igenom stegen för hur du konverterar Word-dokument till PDF 1.7 med Aspose.Words för .NET. Genom att konvertera till PDF 1.7 kan du generera PDF-filer som överensstämmer med PDF 1.7-standarden. Följ stegen nedan:
 
 ## Steg 1: Ladda dokumentet
 

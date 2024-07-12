@@ -50,7 +50,7 @@ option.Position = EndnotePosition.EndOfSection;
 
 ## Steg 5: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
@@ -85,7 +85,7 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Är det möjligt att anpassa numreringen av slutnoter i ett dokument?
 
- S: Ja, det är möjligt att anpassa numreringen av slutnoter i ett dokument. Du kan använda`RestartRule` och`NumberStyle` egenskaper hos`EndnoteOptions` klass för att definiera specifika omstartsregler och numreringsstilar.
+ S: Ja, det är möjligt att anpassa numreringen av slutnoter i ett dokument. Du kan använda`RestartRule`och`NumberStyle` egenskaper hos`EndnoteOptions` klass för att definiera specifika omstartsregler och numreringsstilar.
 
 #### F: Hur kan jag placera slutnoter i ett dokument?
 

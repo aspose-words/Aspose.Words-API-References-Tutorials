@@ -8,7 +8,7 @@ weight: 10
 url: /vi/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để đặt thư mục phông chữ hệ thống và thư mục tùy chỉnh khi hiển thị tài liệu bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Đến cuối hướng dẫn này, bạn sẽ biết cách chỉ định nhiều thư mục phông chữ, bao gồm thư mục hệ thống và thư mục tùy chỉnh, để sử dụng khi hiển thị tài liệu của mình bằng Aspose.Words cho .NET.
+Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để đặt thư mục phông chữ hệ thống và thư mục tùy chỉnh khi hiển thị tài liệu bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Đến cuối hướng dẫn này, bạn sẽ biết cách chỉ định nhiều thư mục phông chữ, bao gồm thư mục hệ thống và thư mục tùy chỉnh, để sử dụng khi hiển thị tài liệu của bạn bằng Aspose.Words cho .NET.
 
 ## Bước 1: Xác định thư mục tài liệu
 Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Đây là vị trí bạn muốn lưu tài liệu được hiển thị đã chỉnh sửa của mình. Thay thế "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp.
@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Thêm nguồn thư mục mới sẽ hướng dẫn Aspose.Words tìm kiếm phông chữ trong thư mục sau.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Thêm thư mục tùy chỉnh chứa phông chữ của chúng tôi vào danh sách các nguồn phông chữ hiện có.
+// Thêm thư mục tùy chỉnh chứa phông chữ của chúng tôi vào danh sách các nguồn phông chữ hiện có.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

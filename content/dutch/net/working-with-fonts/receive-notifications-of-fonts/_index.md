@@ -87,7 +87,7 @@ doc.WarningCallback = callback;
 doc.FontSettings = fontSettings;
 ```
 
-## Stap 6: Sla het document op
+## Stap 6: Bewaar het document
 
 Sla ten slotte het document op nadat u de lettertype-instellingen hebt toegepast en eventuele lettertypevervangingen hebt afgehandeld. Bewaar het in een formaat naar keuze; hier slaan we het op als PDF.
 
@@ -113,7 +113,7 @@ Nee, u kunt slechts één standaardlettertype ter vervanging opgeven. U kunt ech
 
 ###  Vraag 3: Kan ik andere soorten waarschuwingen verwerken?`IWarningCallback`?
 
- Ja de`IWarningCallback` interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
+ Ja de`IWarningCallback`interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
 
 ### V4: Waar kan ik ondersteuning vinden voor Aspose.Words?
 

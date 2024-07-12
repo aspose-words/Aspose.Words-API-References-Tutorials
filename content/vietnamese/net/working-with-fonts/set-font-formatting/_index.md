@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Tạo và định dạng tài liệu
- Tạo một thể hiện của`Document` lớp học và`DocumentBuilder`lớp để xây dựng tài liệu. Sử dụng`Font` tài sản của`DocumentBuilder` để truy cập các thuộc tính định dạng phông chữ.
+ Tạo một thể hiện của`Document` lớp học và`DocumentBuilder` lớp để xây dựng tài liệu. Sử dụng`Font` tài sản của`DocumentBuilder`để truy cập các thuộc tính định dạng phông chữ.
 
 ```csharp
 Document doc = new Document();

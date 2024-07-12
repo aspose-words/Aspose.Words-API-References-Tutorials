@@ -154,7 +154,7 @@ doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 doc.StartTrackRevisions("John Doe");
 ```
 
-#### P: ¿Cómo puedo verificar las revisiones asociadas con cada forma en un documento Aspose.Words para .NET?
+#### P: ¿Cómo puedo verificar las revisiones asociadas con cada forma en un documento de Aspose.Words para .NET?
 
 R: Para verificar las revisiones asociadas con cada forma en un documento Aspose.Words para .NET, puede obtener la colección de formas del documento usando el`GetChildNodes` método con el`NodeType.Shape` tipo de nodo. Luego podrás acceder a cada forma.`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , y`IsMoveToRevision` propiedades para determinar qué tipo de revisión está asociada con la forma:
 
@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### P: ¿Cómo puedo comprobar las revisiones de desplazamiento de las formas en un documento de Aspose.Words para .NET?
 
- R: Para comprobar las revisiones de desplazamiento de forma en un documento de Aspose.Words para .NET, puede cargar un documento existente que contenga revisiones de desplazamiento de forma. Luego podrás acceder a cada forma.`IsMoveFromRevision` y`IsMoveToRevision` propiedades para determinar si se está moviendo y, de ser así, desde dónde y hacia dónde:
+ R: Para verificar las revisiones de desplazamiento de forma en un documento de Aspose.Words para .NET, puede cargar un documento existente que contenga revisiones de desplazamiento de forma. Luego podrás acceder a cada forma.`IsMoveFromRevision`y`IsMoveToRevision` propiedades para determinar si se está moviendo y, de ser así, desde dónde y hacia dónde:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

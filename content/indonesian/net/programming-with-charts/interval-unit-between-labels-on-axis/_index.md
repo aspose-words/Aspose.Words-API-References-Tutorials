@@ -7,39 +7,51 @@ type: docs
 weight: 10
 url: /id/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
+## Perkenalan
 
-Tutorial ini menjelaskan cara menggunakan Aspose.Words untuk .NET untuk mengatur satuan interval antar label pada sumbu bagan. Kode sumber yang disediakan menunjukkan cara membuat bagan, menambahkan data seri, dan menyesuaikan label sumbu.
+Selamat datang di panduan komprehensif kami tentang penggunaan Aspose.Words untuk .NET! Baik Anda seorang pengembang berpengalaman atau baru memulai, artikel ini akan memandu Anda melalui semua yang perlu Anda ketahui tentang memanfaatkan Aspose.Words untuk memanipulasi dan menghasilkan dokumen Word secara terprogram dalam aplikasi .NET.
 
-## Langkah 1: Siapkan proyek
+## Prasyarat
 
-Pastikan Anda memiliki prasyarat berikut:
+Sebelum mendalami Aspose.Words, pastikan Anda telah menyiapkan hal berikut:
+- Visual Studio diinstal pada mesin Anda
+- Pengetahuan dasar bahasa pemrograman C#
+-  Akses ke perpustakaan Aspose.Words untuk .NET (tautan unduhan[Di Sini](https://releases.aspose.com/words/net/))
 
-- Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
-- Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
+## Mengimpor Namespace dan Memulai
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+Mari kita mulai dengan mengimpor namespace yang diperlukan dan menyiapkan lingkungan pengembangan kita.
 
- Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
+### Menyiapkan Proyek Anda di Visual Studio
+Untuk memulai, luncurkan Visual Studio dan buat proyek C# baru.
 
+### Menginstal Aspose.Words untuk .NET
+ Anda dapat menginstal Aspose.Words untuk .NET melalui NuGet Package Manager atau dengan mengunduhnya langsung dari[Asumsikan situs web](https://releases.aspose.com/words/net/).
+
+### Mengimpor Namespace Aspose.Words
+Dalam file kode C# Anda, impor namespace Aspose.Words untuk mendapatkan akses ke kelas dan metodenya:
+```csharp
+using Aspose.Words;
+```
+
+Di bagian ini, kita akan mempelajari cara membuat dan mengkustomisasi bagan menggunakan Aspose.Words untuk .NET.
+
+## Langkah 1: Menambahkan Bagan ke Dokumen
+Untuk menyisipkan bagan ke dalam dokumen Word, ikuti langkah-langkah berikut:
+
+### Langkah 1.1: Inisialisasi DocumentBuilder dan Sisipkan Bagan
 ```csharp
 // Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
- Selanjutnya, gunakan`InsertChart` metode`DocumentBuilder` untuk menyisipkan bagan kolom ke dalam dokumen.
-
-```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Langkah 3: Tambahkan data seri ke bagan
-
-Tambahkan data seri ke bagan. Dalam contoh ini, kita akan menambahkan lima item dengan nilainya yang sesuai.
-
+### Langkah 1.2: Mengonfigurasi Data Bagan
+Selanjutnya, konfigurasikan data bagan dengan menambahkan seri dan titik datanya masing-masing:
 ```csharp
 chart.Series.Clear();
 chart.Series.Add("Aspose Series 1",
@@ -47,63 +59,37 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Langkah 4: Sesuaikan label sumbu
-
- Untuk mengatur satuan interval antar label pada sumbu X, akses`AxisX` properti bagan dan atur`TickLabelSpacing` properti ke nilai yang diinginkan. Dalam contoh ini, kami mengatur spasi menjadi 2.
+## Langkah 2: Menyesuaikan Properti Sumbu
+Sekarang, mari sesuaikan properti sumbu untuk mengontrol tampilan bagan kita:
 
 ```csharp
 chart.AxisX.TickLabelSpacing = 2;
 ```
 
-## Langkah 5: Simpan dokumen
-
- Terakhir, simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode`Document` obyek.
-
+## Langkah 3: Menyimpan Dokumen
+Terakhir, simpan dokumen dengan bagan yang disisipkan:
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```
 
-Ini menyelesaikan implementasi pengaturan satuan interval antar label pada sumbu menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber Unit Interval Antar Label Pada Sumbu menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisX.TickLabelSpacing = 2;
-	doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
-```
-
 ## Kesimpulan
 
-Dalam tutorial ini, Anda telah mempelajari cara mengatur satuan interval antar label pada sumbu bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, Anda dapat membuat dokumen baru, menyisipkan bagan kolom, menambahkan data seri, dan menyesuaikan label sumbu untuk mengontrol jarak antar label.
+Selamat! Anda telah mempelajari cara mengintegrasikan dan memanipulasi bagan menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memberdayakan pengembang untuk membuat dokumen yang dinamis dan menarik secara visual dengan mudah.
 
-Aspose.Words untuk .NET menyediakan fitur canggih untuk memanipulasi bagan di dokumen Word. Dengan mengatur satuan interval antar label pada sumbu, Anda dapat mengontrol kepadatan tampilan label dan meningkatkan keterbacaan bagan Anda. Hal ini memungkinkan Anda mengoptimalkan penyajian data dan meningkatkan pengalaman pengguna secara keseluruhan.
 
-Dengan Aspose.Words untuk .NET, Anda memiliki fleksibilitas untuk menyesuaikan berbagai aspek bagan, termasuk label sumbu. Anda dapat mengatur satuan interval yang diinginkan untuk memastikan bahwa label diberi jarak yang tepat dan memberikan representasi titik data yang jelas.
+## FAQ
 
-### FAQ
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word dalam aplikasi .NET.
 
-#### Q1. Apa yang dimaksud dengan label sumbu dalam bagan?
-Label sumbu dalam bagan merujuk pada representasi tekstual nilai di sepanjang sumbu horizontal (sumbu X) atau vertikal (sumbu Y) bagan. Label ini membantu mengidentifikasi dan menafsirkan titik data yang diplot pada bagan. Label sumbu memberikan konteks dan memungkinkan pengguna memahami skala dan rentang nilai dalam diagram.
+### Di mana saya dapat menemukan dokumentasi Aspose.Words untuk .NET?
+ Anda dapat menemukan dokumentasi terperinci[Di Sini](https://reference.aspose.com/words/net/).
 
-#### Q2. Bagaimana cara menyesuaikan jarak antar label sumbu?
- Untuk menyesuaikan jarak antar label sumbu dalam bagan menggunakan Aspose.Words untuk .NET, Anda dapat mengakses`AxisX` atau`AxisY` properti bagan dan memodifikasi`TickLabelSpacing` Properti. Dengan mengatur`TickLabelSpacing` ke nilai tertentu, Anda dapat mengontrol satuan interval antara label pada sumbu masing-masing, menyesuaikan jarak sesuai kebutuhan Anda.
+### Bisakah saya mencoba Aspose.Words untuk .NET sebelum membeli?
+ Ya, Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/).
 
-#### Q3. Bisakah saya mengatur jarak yang berbeda untuk label sumbu X dan sumbu Y?
-Ya, Anda dapat mengatur jarak berbeda untuk label sumbu X dan sumbu Y menggunakan Aspose.Words untuk .NET. Akses sumbu masing-masing (`AxisX` untuk sumbu X atau`AxisY` untuk sumbu Y) pada grafik dan modifikasi`TickLabelSpacing`properti secara individual untuk setiap sumbu. Hal ini memungkinkan Anda memiliki unit interval dan jarak yang berbeda untuk label pada sumbu X dan sumbu Y, sehingga memberikan kontrol yang lebih baik terhadap tampilan bagan.
+### Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
+ Untuk dukungan dan diskusi komunitas, kunjungi[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8).
 
-#### Q4. Apa arti satuan interval antar label pada sumbu?
-Satuan interval antar label pada sumbu menentukan jarak antar label berurutan yang ditampilkan pada grafik. Dengan mengatur satuan interval, Anda dapat mengontrol kepadatan label dan memastikan jarak label tepat untuk menghindari kepadatan dan tumpang tindih. Menyesuaikan satuan interval memungkinkan Anda menyajikan data dengan cara yang lebih mudah dibaca dan menarik secara visual.
-
-#### Q5. Bisakah saya mengubah properti lain dari label sumbu?
-Ya, Aspose.Words untuk .NET menyediakan berbagai properti untuk menyesuaikan tampilan dan perilaku label sumbu. Anda dapat memodifikasi properti seperti font, ukuran, warna, orientasi, perataan, dan lainnya untuk mencapai pemformatan dan gaya yang diinginkan untuk label sumbu. Pustaka ini menawarkan kontrol ekstensif atas elemen bagan, memungkinkan Anda membuat bagan yang terlihat profesional dan disesuaikan dengan kebutuhan spesifik Anda.
+### Di mana saya dapat membeli lisensi Aspose.Words untuk .NET?
+ Anda dapat membeli lisensi[Di Sini](https://purchase.aspose.com/buy).

@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Trong ví dụ này, chúng tôi đang tải trang đầu tiên của tài liệu PDF. Bạn có thể thay đổi các giá trị của`PageIndex` Và`PageCount` đến phạm vi trang mong muốn.
+ Trong ví dụ này, chúng tôi đang tải trang đầu tiên của tài liệu PDF. Bạn có thể thay đổi các giá trị của`PageIndex`Và`PageCount` đến phạm vi trang mong muốn.
 
 ## Bước 2: Lưu tài liệu
 

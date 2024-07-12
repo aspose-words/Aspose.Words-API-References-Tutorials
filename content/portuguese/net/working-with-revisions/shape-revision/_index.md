@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### P: Como posso verificar revisões de deslocamento de formas em um documento Aspose.Words for .NET?
 
- R: Para verificar revisões de deslocamento de forma em um documento Aspose.Words para .NET, você pode carregar um documento existente que contenha revisões de deslocamento de forma. Então você pode acessar cada forma`IsMoveFromRevision` e`IsMoveToRevision` propriedades para determinar se ele está sendo movido e, em caso afirmativo, de onde e para onde:
+ R: Para verificar revisões de deslocamento de forma em um documento Aspose.Words para .NET, você pode carregar um documento existente que contenha revisões de deslocamento de forma. Então você pode acessar cada forma`IsMoveFromRevision`e`IsMoveToRevision` propriedades para determinar se ele está sendo movido e, em caso afirmativo, de onde e para onde:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

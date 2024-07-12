@@ -34,7 +34,7 @@ Stellen Sie sicher, dass Sie die entsprechenden Wörterbuchdateien in Ihrem Date
 
 ## Schritt 3: Wörter durch Silbentrennung verarbeiten
 
-Jetzt können Sie Silbentrennungsfunktionen verwenden, um Wörter in verschiedenen Sprachen zu verarbeiten. Sie können verschiedene Methoden verwenden,`Document` oder`DocumentBuilder` abhängig von Ihren spezifischen Anforderungen.
+Jetzt können Sie Silbentrennungsfunktionen verwenden, um Wörter in verschiedenen Sprachen zu verarbeiten. Sie können verschiedene Methoden verwenden, um`Document` oder`DocumentBuilder` abhängig von Ihren spezifischen Anforderungen.
 
 ```csharp
 // Beispiel: Verwenden der Hyphenate-Methode von DocumentBuilder
@@ -79,4 +79,4 @@ A: Um die Silbentrennungssprache in Aspose.Words anzugeben, müssen Sie die ents
 
 #### F: Funktioniert die Silbentrennung für alle Sprachen in Aspose.Words?
 
-A: Die Silbentrennung in Aspose.Words hängt von sprachspezifischen Silbentrennungsregeln ab. Obwohl Aspose.Words eine Vielzahl von Sprachen unterstützt, werden einige Sprachen möglicherweise nicht unterstützt oder die Silbentrennung ist für sie nicht verfügbar. Lesen Sie in der Aspose.Words-Dokumentation nach, welche Sprachen für die Silbentrennung unterstützt werden.
+A: Die Silbentrennung in Aspose.Words hängt von sprachspezifischen Silbentrennungsregeln ab. Obwohl Aspose.Words eine Vielzahl von Sprachen unterstützt, werden manche Sprachen möglicherweise nicht unterstützt oder die Silbentrennung ist für sie nicht verfügbar. Lesen Sie in der Aspose.Words-Dokumentation nach, welche Sprachen für die Silbentrennung unterstützt werden.

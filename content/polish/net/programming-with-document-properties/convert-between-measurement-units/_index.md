@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-document-properties/convert-between-measurement-units/
 ---
 
-tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby konwertować jednostki miary za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia określenie marginesów, odległości nagłówka i stopki itp. w różnych jednostkach miary.
+W tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby konwertować jednostki miary za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia określenie marginesów, odległości nagłówka i stopki itp. w różnych jednostkach miary.
 
 ## Krok 1: Konfiguracja projektu
 
@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Ten kod używa`ConvertUtil` klasa Aspose.Words do konwersji określonych wartości na cale (`InchToPoint` ). Możesz także skorzystać z innych metod konwersji dostępnych w pliku`ConvertUtil` class do konwersji wartości na inne jednostki miary.
+ Ten kod używa`ConvertUtil` klasa Aspose.Words do konwersji określonych wartości na cale (`InchToPoint`). Możesz także skorzystać z innych metod konwersji dostępnych w pliku`ConvertUtil` class do konwersji wartości na inne jednostki miary.
 
 ### Przykładowy kod źródłowy konwersji między jednostkami miary przy użyciu Aspose.Words dla .NET
 

@@ -2,186 +2,126 @@
 title: Colonne della tabella dei segnalibri nel documento di Word
 linktitle: Colonne della tabella dei segnalibri nel documento di Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come aggiungere ai segnalibri una colonna di tabella in un documento di Word utilizzando Aspose.Words per .NET.
+description: Scopri come aggiungere ai segnalibri le colonne della tabella in un documento Word utilizzando Aspose.Words per .NET con questo tutorial completo e passo passo.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/bookmark-table-columns/
 ---
+## introduzione
 
-In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Colonne della tabella dei segnalibri nella libreria Aspose.Words per .NET. Questa funzionalità consente di aggiungere ai segnalibri una colonna specifica di una tabella in un documento di Word e accedere al contenuto di quella colonna.
+Se stai cercando di migliorare le tue capacità di automazione dei documenti, allora sei pronto per una sorpresa. Questo tutorial ti guiderà attraverso il processo di aggiunta dei segnalibri alle colonne della tabella in un documento Word utilizzando Aspose.Words per .NET. Pronti a tuffarvi? Iniziamo!
 
 ## Prerequisiti
 
-- Conoscenza base del linguaggio C#.
-- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
+Prima di addentrarci nel codice, ci sono alcune cose che devi avere a posto:
 
-## Passaggio 1: creazione della tabella
+1.  Aspose.Words per .NET: assicurati di avere Aspose.Words per .NET installato. Puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: configura un ambiente di sviluppo come Visual Studio.
+3. Conoscenza di base di C#: sarà utile la familiarità con la programmazione C#.
 
- Prima di creare un segnalibro su una colonna della tabella, dobbiamo prima creare la tabella utilizzando a`DocumentBuilder`oggetto. Nel nostro esempio, creiamo una tabella con due righe e due colonne:
+## Importa spazi dei nomi
+
+Per iniziare, dovrai importare gli spazi dei nomi necessari nel tuo progetto C#:
 
 ```csharp
-builder. StartTable();
-
-builder. InsertCell();
-
-builder. StartBookmark("MyBookmark");
-
-builder.Write("This is cell 1 of row 1");
-
-builder. InsertCell();
-builder.Write("This is cell 2 of row 1");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.Writeln("This is cell 1 of row 2");
-
-builder. InsertCell();
-builder.Writeln("This is cell 2 of row 2");
-
-builder. EndRow();
-builder. EndTable();
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Passaggio 2: creazione del segnalibro della colonna
+Ora suddividiamo il processo in passaggi dettagliati.
 
- Noi usiamo il`StartBookmark` metodo per creare un segnalibro su una colonna specifica della tabella. Nel nostro esempio, utilizziamo il nome "MyBookmark" per il segnalibro:
+## Passaggio 1: inizializzare il documento e DocumentBuilder
+
+ Per prima cosa dobbiamo creare un nuovo documento Word e inizializzarlo`DocumentBuilder` per lavorare con esso.
 
 ```csharp
-builder. StartBookmark("MyBookmark");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 3: accedi al contenuto della colonna
+## Passaggio 2: avvia la tabella e inserisci la prima cella
 
- Esaminiamo tutti i segnalibri nel documento e visualizziamo i loro nomi. Se un segnalibro è una colonna, accediamo al contenuto di quella colonna utilizzando l'indice della colonna e il file`GetText` metodo:
+Inizia a creare una tabella e inserisci la prima cella dove inizieremo il segnalibro.
 
 ```csharp
-foreach (Bookmark
+builder.StartTable();
+builder.InsertCell();
+```
 
-  bookmark in doc.Range.Bookmarks)
+## Passaggio 3: avvia il segnalibro
+
+Successivamente, iniziamo il segnalibro denominato "MyBookmark" nella prima cella.
+
+```csharp
+builder.StartBookmark("MyBookmark");
+builder.Write("This is row 1 cell 1");
+```
+
+## Passaggio 4: inserisci celle aggiuntive e termina la riga
+
+Aggiungi un'altra cella alla prima riga e completa la prima riga.
+
+```csharp
+builder.InsertCell();
+builder.Write("This is row 1 cell 2");
+builder.EndRow();
+```
+
+## Passaggio 5: inserisci le celle per la seconda riga
+
+Continua aggiungendo celle per la seconda riga.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("This is row 2 cell 1");
+builder.InsertCell();
+builder.Writeln("This is row 2 cell 2");
+builder.EndRow();
+builder.EndTable();
+```
+
+## Passaggio 6: termina il segnalibro
+
+Termina il segnalibro dopo aver terminato la tabella.
+
+```csharp
+builder.EndBookmark("MyBookmark");
+```
+
+## Passaggio 7: scorrere i segnalibri e visualizzare le informazioni
+
+Infine, scorri i segnalibri nel documento e visualizza le informazioni su ciascuno di essi.
+
+```csharp
+foreach (Bookmark bookmark in doc.Range.Bookmarks)
 {
-Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn?" (Column)": "");
-
-if (bookmark.IsColumn)
-{
-if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
+    Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn ? " (Column)" : "");
+    if (bookmark.IsColumn)
+    {
+        if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
+            Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
+    }
 }
-}
-```
-
-### Codice sorgente di esempio per le colonne della tabella dei segnalibri utilizzando Aspose.Words per .NET
-
-Ecco il codice sorgente di esempio completo per dimostrare la creazione di un segnalibro su una colonna di tabella utilizzando Aspose.Words per .NET:
-
-```csharp
-
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartTable();
-	
-	builder.InsertCell();
-
-	builder.StartBookmark("MyBookmark");
-
-	builder.Write("This is row 1 cell 1");
-
-	builder.InsertCell();
-	builder.Write("This is row 1 cell 2");
-
-	builder.EndRow();
-
-	builder.InsertCell();
-	builder.Writeln("This is row 2 cell 1");
-
-	builder.InsertCell();
-	builder.Writeln("This is row 2 cell 2");
-
-	builder.EndRow();
-	builder.EndTable();
-	
-	builder.EndBookmark("MyBookmark");
-	
-
-	
-	foreach (Bookmark bookmark in doc.Range.Bookmarks)
-	{
-		Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn ? " (Column)" : "");
-
-		if (bookmark.IsColumn)
-		{
-			if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-				Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
-		}
-	}
-	
-        
 ```
 
 ## Conclusione
 
-In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzione Colonne della tabella dei segnalibri di Aspose.Words per .NET. Abbiamo seguito una guida passo passo per aggiungere ai segnalibri una colonna specifica di una tabella in un documento di Word e passare al contenuto di quella colonna.
+E il gioco è fatto! Hai aggiunto con successo le colonne della tabella ai segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questo processo non solo aiuta a organizzare il documento, ma semplifica anche la navigazione e la manipolazione di sezioni specifiche. L'aggiunta di segnalibri è una funzionalità potente che può migliorare significativamente le capacità di gestione dei documenti.
 
-### Domande frequenti sulle colonne della tabella dei segnalibri nel documento Word
+## Domande frequenti
 
-#### D: Quali sono i prerequisiti per utilizzare la funzionalità "Segnalibri per colonne di tabella" in Aspose.Words per .NET?
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria per lavorare con documenti Word a livello di codice. Ti consente di creare, modificare e convertire documenti senza che sia necessario installare Microsoft Word.
 
-R: Per utilizzare la funzionalità "Segnalibri per colonne di tabella" in Aspose.Words per .NET, è necessario avere una conoscenza di base del linguaggio C#. È inoltre necessario un ambiente di sviluppo .NET con la libreria Aspose.Words installata.
+### Come installo Aspose.Words per .NET?
+ È possibile scaricare Aspose.Words per .NET da[sito web](https://releases.aspose.com/words/net/). Seguire le istruzioni di installazione fornite.
 
-#### D: Come creare una tabella con colonne in un documento Word utilizzando Aspose.Words per .NET?
+### Posso utilizzare Aspose.Words per .NET con altri linguaggi di programmazione?
+Sì, Aspose.Words per .NET può essere utilizzato con qualsiasi linguaggio supportato da .NET, inclusi C#, VB.NET e F#.
 
- R: Per creare una tabella con colonne in un documento Word utilizzando Aspose.Words per .NET, puoi utilizzare a`DocumentBuilder` oggetto per inserire celle e contenuto nella tabella. Ecco un codice di esempio:
+### Come posso ottenere supporto per Aspose.Words per .NET?
+ Puoi ottenere supporto dalla comunità e dagli esperti di Aspose visitando il sito[Forum di assistenza](https://forum.aspose.com/c/words/8).
 
-```csharp
-builder. StartTable();
-
-builder. InsertCell();
-builder.Write("Contents of cell 1 of column 1");
-
-builder. InsertCell();
-builder.Write("Contents of cell 2 of column 2");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.Write("Contents of cell 1 of column 2");
-
-builder. InsertCell();
-builder.Write("Contents of cell 2 of column 2");
-
-builder. EndRow();
-
-builder. EndTable();
-```
-
-#### D: Come aggiungere ai segnalibri una colonna di tabella utilizzando Aspose.Words per .NET?
-
- R: Per creare un segnalibro su una colonna di tabella utilizzando Aspose.Words per .NET, puoi utilizzare il file`StartBookmark` metodo del`DocumentBuilder` oggetto per avviare il segnalibro su una colonna di tabella specifica. Ecco un codice di esempio:
-
-```csharp
-builder.StartBookmark("MyBookmark");
-```
-
-#### D: Come accedere al contenuto della colonna della tabella dal segnalibro utilizzando Aspose.Words per .NET?
-
-A: Per accedere al contenuto di una colonna di tabella da un segnalibro utilizzando Aspose.Words per .NET, è possibile scorrere tutti i segnalibri nel documento, verificare se un segnalibro è una colonna e utilizzare l'indice della colonna per accedere al contenuto di quella colonna. Ecco un codice di esempio:
-
-```csharp
-foreach(Bookmark bookmark in doc.Range.Bookmarks)
-{
-     if (bookmark.IsColumn)
-     {
-         if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-         {
-             string content = row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar);
-             // Fai qualcosa con il contenuto della colonna...
-         }
-     }
-}
-```
-
-#### D: Esiste un limite al numero di colonne che posso creare in una tabella con segnalibri di colonna?
-
-R: Non esiste un limite specifico al numero di colonne che puoi creare in una tabella con segnalibri di colonna utilizzando Aspose.Words per .NET. Il limite dipende principalmente dalle risorse disponibili sul tuo sistema e dalle specifiche del formato di file Word che stai utilizzando. Si consiglia tuttavia di non creare un numero di colonne eccessivamente elevato, poiché ciò potrebbe compromettere la resa e la leggibilità del documento finale.
+### È disponibile una versione di prova di Aspose.Words per .NET?
+ Sì, puoi ottenere una prova gratuita da[Qui](https://releases.aspose.com/).

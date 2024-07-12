@@ -54,7 +54,7 @@ Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 Assert.True(shapes[1].IsInsertRevision);
 ```
 
-## 4. Adım: Şekil Taşıma Revizyonlarını Kontrol Etme
+## Adım 4: Şekil Taşıma Revizyonlarını Kontrol Etme
 
 Şekil değiştirme revizyonlarını içeren mevcut bir belgeyi yükleyeceğiz ve ilgili revizyonları kontrol edeceğiz.
 
@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### S: Aspose.Words for .NET belgesindeki şekillerin yer değiştirme revizyonlarını nasıl kontrol edebilirim?
 
- C: Bir Aspose.Words for .NET belgesindeki şekil değiştirme revizyonlarını kontrol etmek için, şekil değiştirme revizyonları içeren mevcut bir belgeyi yükleyebilirsiniz. Daha sonra her şeklin`IsMoveFromRevision` Ve`IsMoveToRevision` taşınıp taşınmadığını ve taşınıyorsa nereden ve nereye taşındığını belirlemek için özellikler:
+ C: Bir Aspose.Words for .NET belgesindeki şekil değiştirme revizyonlarını kontrol etmek için, şekil değiştirme revizyonları içeren mevcut bir belgeyi yükleyebilirsiniz. Daha sonra her şeklin`IsMoveFromRevision`Ve`IsMoveToRevision` taşınıp taşınmadığını ve taşınıyorsa nereden ve nereye taşındığını belirlemek için özellikler:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

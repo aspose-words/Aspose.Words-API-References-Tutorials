@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### 2. lépés: Nyissa meg az Aktuális részt
 
-Az aktuális részt lekérjük a használatával`builder.CurrentSection`. Ez a szakasz lesz a cél, ahová az előző rész fejléceit és lábléceit másoljuk.
+ Az aktuális részt lekérjük a használatával`builder.CurrentSection`Ez a szakasz lesz a cél, ahová az előző rész fejléceit és lábléceit másoljuk.
 
 ### 3. lépés: Határozza meg az előző szakaszt
 

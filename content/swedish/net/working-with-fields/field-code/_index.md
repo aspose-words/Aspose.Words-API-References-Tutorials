@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Gör något med fältets kod och resultat.
+     //Gör något med fältets kod och resultat.
 }
 ```
 
@@ -73,7 +73,7 @@ Detta avslutar vår guide om hur du använder funktionen "Hämta fältkod" med A
 
 #### F: Hur kan jag uppdatera fält i ett dokument med Aspose.Words för .NET?
 
- S: För att uppdatera dokumentfält med Aspose.Words för .NET kan du använda`Document.UpdateFields`metod. Detta kommer att uppdatera alla fält som finns i dokumentet, såsom sammanfogningsfält, datumfält, etc.
+ S: För att uppdatera dokumentfält med Aspose.Words för .NET kan du använda`Document.UpdateFields` metod. Detta kommer att uppdatera alla fält som finns i dokumentet, såsom sammanfogningsfält, datumfält, etc.
 
 #### F: Hur kan jag hämta värdet för ett specifikt fält i Aspose.Words för .NET?
 

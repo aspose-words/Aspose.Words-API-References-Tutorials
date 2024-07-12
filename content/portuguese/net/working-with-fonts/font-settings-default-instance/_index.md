@@ -17,7 +17,7 @@ Antes de começarmos, certifique-se de ter o seguinte:
 - Conhecimento básico de C#: A familiaridade com a programação C# o ajudará a compreender e implementar as etapas sem problemas.
 -  Biblioteca Aspose.Words for .NET: Baixe e instale Aspose.Words for .NET do[Link para Download](https://releases.aspose.com/words/net/).
 - Ambiente de Desenvolvimento: Um ambiente adequado como o Visual Studio para escrever e executar seu código.
--  Documento de amostra: Um documento de amostra (por exemplo,`Rendering.docx`) para aplicar as configurações de fonte.
+- Documento de amostra: Um documento de amostra (por exemplo,`Rendering.docx`) para aplicar as configurações de fonte.
 
 ## Importar namespaces
 
@@ -55,7 +55,7 @@ Neste exemplo:
 
 ## Etapa 3: carregue o documento
 
-Com suas fontes de fontes configuradas, a próxima etapa é carregar seu documento em um Aspose.Words`Document` objeto. Isso permite manipular e eventualmente salvar o documento.
+ Com suas fontes de fontes configuradas, a próxima etapa é carregar seu documento em um Aspose.Words`Document`objeto. Isso permite manipular e eventualmente salvar o documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -73,13 +73,13 @@ Seguindo essas etapas, você configurou com êxito as configurações de fonte p
 
 ## Conclusão
 
-Parabéns! Você dominou os fundamentos do gerenciamento de configurações de fonte usando Aspose.Words for .NET. Esteja você trabalhando em um projeto simples ou em um sistema complexo de processamento de documentos, essas habilidades o ajudarão a garantir que seus documentos tenham a aparência que você deseja. Lembre-se de que a flexibilidade fornecida pelo Aspose.Words permite uma ampla gama de personalizações, então não hesite em explorar e experimentar diferentes configurações.
+Parabéns! Você dominou os fundamentos do gerenciamento de configurações de fonte usando Aspose.Words for .NET. Esteja você trabalhando em um projeto simples ou em um sistema complexo de processamento de documentos, essas habilidades o ajudarão a garantir que seus documentos tenham a aparência que você deseja. Lembre-se, a flexibilidade fornecida pelo Aspose.Words permite uma ampla gama de personalizações, então não hesite em explorar e experimentar diferentes configurações.
 
 ## Perguntas frequentes
 
 ### P1: Posso usar fontes de várias pastas personalizadas?
 
- Sim, você pode especificar vários`FolderFontSource`instâncias dentro do`SetFontsSources` método para incluir fontes de pastas diferentes.
+ Sim, você pode especificar vários`FolderFontSource` instâncias dentro do`SetFontsSources` método para incluir fontes de pastas diferentes.
 
 ### Q2: Como faço para obter uma avaliação gratuita do Aspose.Words for .NET?
 

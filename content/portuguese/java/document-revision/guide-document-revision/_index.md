@@ -151,7 +151,7 @@ As revisões de formatação incluem alterações relacionadas a estilos de font
 
 ### 4.3 Comentários e alterações monitoradas
 
-Os colaboradores costumam usar comentários para fornecer feedback e sugestões. As alterações rastreadas, por outro lado, mantêm um registro das modificações feitas no documento. Aspose.Words permite que você gerencie comentários e controle alterações programaticamente.
+Os colaboradores costumam usar comentários para fornecer feedback e sugestões. As alterações rastreadas, por outro lado, mantêm um registro das modificações feitas no documento. Aspose.Words permite gerenciar comentários e controlar alterações programaticamente.
 
 ### 4.4 Tratamento Avançado de Revisão
 
@@ -163,7 +163,7 @@ Aspose.Words oferece recursos avançados para tratamento de revisões, como reso
 
 Aspose.Words permite aplicar várias opções de formatação a texto e parágrafos, como estilos de fonte, cores, alinhamento, espaçamento entre linhas e recuo.
 
-### 5.2 Adicionando cabeçalhos, rodapés e marcas d'água
+### 5.2 Adicionando cabeçalhos, rodapés e marcas d’água
 
 Cabeçalhos, rodapés e marcas d'água são elementos essenciais em documentos profissionais. Aspose.Words permite adicionar e personalizar esses elementos facilmente.
 
@@ -188,7 +188,7 @@ revisão de documentos é um aspecto crítico do trabalho colaborativo, garantin
    - Aspose.Words for Java fornece uma solução poderosa para gerenciar revisões de documentos de forma programática. Ele permite aos usuários revisar, aceitar ou rejeitar alterações, lidar com diferentes tipos de revisão e navegar pelo documento com eficiência.
 
 ### Posso rastrear revisões feitas por diferentes autores em um documento?
-   - Sim, Aspose.Words permite acessar informações sobre revisões, incluindo autor, data de alteração e conteúdo modificado, facilitando o rastreamento de alterações feitas por diferentes colaboradores.
+   - Sim, Aspose.Words permite acessar informações sobre revisões, incluindo autor, data da alteração e conteúdo modificado, facilitando o rastreamento das alterações feitas por diferentes colaboradores.
 
 ### É possível aceitar ou rejeitar revisões específicas programaticamente
    - Absolutamente! Aspose.Words permite a aceitação ou rejeição seletiva de revisões com base em critérios específicos, dando a você um controle refinado sobre o processo de revisão.

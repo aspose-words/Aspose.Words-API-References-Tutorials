@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### P: ¿Cómo puedo especificar los datos de origen para el campo de dirección postal en Aspose.Words para .NET?
 
- R: Para especificar los datos de origen para el campo de dirección postal en Aspose.Words para .NET, puede utilizar el`FieldAddressBlock.StartAddress` y`FieldAddressBlock.EndAddress` propiedades. Estas propiedades se utilizan para definir los rangos de direcciones en la fuente de datos externa, como un archivo CSV, una base de datos, etc.
+ R: Para especificar los datos de origen para el campo de dirección postal en Aspose.Words para .NET, puede utilizar el`FieldAddressBlock.StartAddress`y`FieldAddressBlock.EndAddress` propiedades. Estas propiedades se utilizan para definir los rangos de direcciones en la fuente de datos externa, como un archivo CSV, una base de datos, etc.
 
 #### P: ¿Puedo incluir elementos opcionales en el campo de dirección postal con Aspose.Words para .NET?
 

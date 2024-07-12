@@ -106,7 +106,7 @@ Hãy nhớ lưu tài liệu của bạn sau khi chèn dấu phân cách kiểu.
 
 #### Làm cách nào để áp dụng các kiểu khác nhau cho các phần khác nhau của văn bản?
 
- Bạn có thể áp dụng các kiểu khác nhau cho các phần khác nhau của văn bản bằng cách đặt`ParagraphFormat.StyleName` tài sản của`DocumentBuilder`sự vật. Trước khi viết văn bản, bạn có thể đặt tên kiểu theo kiểu mong muốn và văn bản theo sau sẽ được định dạng tương ứng.
+Bạn có thể áp dụng các kiểu khác nhau cho các phần khác nhau của văn bản bằng cách đặt`ParagraphFormat.StyleName` tài sản của`DocumentBuilder` sự vật. Trước khi viết văn bản, bạn có thể đặt tên kiểu theo kiểu mong muốn và văn bản theo sau sẽ được định dạng tương ứng.
 
 #### Tôi có thể lưu tài liệu ở các định dạng khác nhau không?
 

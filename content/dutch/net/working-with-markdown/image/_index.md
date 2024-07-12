@@ -65,7 +65,7 @@ Gefeliciteerd! U hebt nu geleerd hoe u de afbeeldingenfunctie kunt gebruiken met
 
 #### Vraag: Hoe kan ik het formaat van een afbeelding wijzigen in Aspose.Words?
 
- A: Om het formaat van een afbeelding in Aspose.Words te wijzigen, kunt u de`Width` En`Height` eigenschappen van de`Shape` voorwerp.
+ A: Om het formaat van een afbeelding in Aspose.Words te wijzigen, kunt u de`Width`En`Height` eigenschappen van de`Shape` voorwerp.
 
 #### Vraag: Kan ik filters toepassen op afbeeldingen in Aspose.Words?
 

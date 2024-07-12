@@ -2,109 +2,110 @@
 title: Menandatangani Dokumen Word Terenkripsi
 linktitle: Menandatangani Dokumen Word Terenkripsi
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menandatangani dokumen kata terenkripsi secara digital dengan Aspose.Words untuk .NET.
+description: Pelajari cara menandatangani dokumen Word terenkripsi menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Sempurna untuk pengembang.
 type: docs
 weight: 10
 url: /id/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
-Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk menggunakan fitur penandatanganan dokumen Word terenkripsi dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menandatangani dokumen Word secara digital yang dienkripsi menggunakan kata sandi dekripsi. Ikuti langkah-langkah di bawah ini:
+## Perkenalan
 
-## Langkah 1: Mengatur Opsi Tanda Tangan
+Pernah bertanya-tanya bagaimana cara menandatangani dokumen Word terenkripsi? Hari ini, kita akan menjalani proses ini menggunakan Aspose.Words untuk .NET. Bersiaplah dan bersiaplah untuk tutorial yang mendetail, menarik, dan menyenangkan!
 
-Buat instance kelas SignOptions dan atur kata sandi dekripsi:
+## Prasyarat
+
+Sebelum mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
+
+1.  Aspose.Words untuk .NET: Unduh dan instal dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Visual Studio: Pastikan Anda telah menginstalnya.
+3. Sertifikat yang Valid: Anda memerlukan file sertifikat .pfx.
+4. Pengetahuan Dasar C#: Memahami dasar-dasarnya akan membuat tutorial ini lebih lancar.
+
+## Impor Namespace
+
+Pertama, mari impor namespace yang diperlukan. Ini sangat penting untuk mengakses fungsionalitas Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionpassword" };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.DigitalSignatures;
 ```
 
-Pastikan untuk menentukan kata sandi dekripsi yang benar untuk dokumen terenkripsi Anda.
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dilakukan.
 
-## Langkah 2: Memuat sertifikat
+## Langkah 1: Menyiapkan Proyek Anda
 
-Mulailah dengan memuat sertifikat penandatanganan menggunakan kelas CertificateHolder:
+Hal pertama yang pertama, siapkan proyek Visual Studio Anda. Buka Visual Studio dan buat Aplikasi Konsol C# baru. Beri nama sesuatu yang deskriptif seperti "SignEncryptedWordDoc".
+
+## Langkah 2: Menambahkan Aspose.Words ke Proyek Anda
+
+Selanjutnya, kita perlu menambahkan Aspose.Words ke proyek Anda. Ada beberapa cara untuk melakukan ini, namun menggunakan NuGet adalah yang paling sederhana. 
+
+1. Buka Konsol Manajer Paket NuGet dari Alat > Manajer Paket NuGet > Konsol Manajer Paket.
+2. Jalankan perintah berikut:
+
+```powershell
+Install-Package Aspose.Words
+```
+
+## Langkah 3: Mempersiapkan Direktori Dokumen
+
+Anda memerlukan direktori untuk menyimpan dokumen dan sertifikat Word Anda. Mari kita buat satu.
+
+1. Buat direktori di komputer Anda. Untuk mempermudah, sebut saja "Direktori Dokumen".
+2. Tempatkan dokumen Word Anda (misalnya, "Document.docx") dan sertifikat .pfx Anda (misalnya, "morzal.pfx") di direktori ini.
+
+## Langkah 4: Menulis Kode
+
+ Sekarang, mari selami kodenya. Bukalah`Program.cs` file dan mulai dengan menyiapkan jalur ke direktori dokumen Anda dan menginisialisasi`SignOptions` dengan kata sandi dekripsi.
+
+```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
+```
+
+## Langkah 5: Memuat Sertifikat
+
+ Selanjutnya, muat sertifikat Anda menggunakan`CertificateHolder`kelas. Ini memerlukan jalur ke file .pfx dan kata sandi sertifikat.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Pastikan untuk menentukan jalur yang benar ke sertifikat Anda dan kata sandi terkait.
+## Langkah 6: Menandatangani Dokumen
 
-## Langkah 3: Menandatangani dokumen terenkripsi
-
-Gunakan kelas DigitalSignatureUtil untuk menandatangani dokumen terenkripsi:
+ Terakhir, gunakan`DigitalSignatureUtil.Sign` metode untuk menandatangani dokumen Word terenkripsi Anda. Metode ini memerlukan file input, file output, pemegang sertifikat, dan opsi tanda.
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-	certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Document.docx",
+    dataDir + "DigitallySignedDocument.docx",
+    certHolder,
+    signOptions);
 ```
 
-Pastikan untuk menentukan jalur yang benar untuk dokumen terenkripsi, dokumen yang ditandatangani, dan sertifikat.
+## Langkah 7: Menjalankan Kode
 
-### Contoh kode sumber untuk Menandatangani Dokumen Terenkripsi menggunakan Aspose.Words untuk .NET
-
-Berikut kode sumber lengkap untuk menandatangani dokumen terenkripsi dengan Aspose.Words untuk .NET:
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-		certHolder, signOptions);
-	
-
-```
-Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menandatangani dokumen Word terenkripsi dengan Aspose.Words untuk .NET.
+Simpan file Anda dan jalankan proyek. Jika semuanya sudah diatur dengan benar, Anda akan melihat dokumen yang Anda tandatangani di direktori yang ditentukan.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelajahi proses penandatanganan dokumen Word terenkripsi menggunakan Aspose.Words untuk .NET. Dengan memberikan kata sandi dekripsi dan sertifikat penandatanganan, kita dapat menambahkan tanda tangan digital ke dokumen terenkripsi. Menandatangani dokumen terenkripsi memastikan keaslian dan integritasnya, memberikan lapisan keamanan tambahan. Aspose.Words untuk .NET memungkinkan Anda menandatangani dokumen terenkripsi dan menjaga keamanan dan kepercayaan file Word Anda.
+Dan itu dia! Anda telah berhasil menandatangani dokumen Word terenkripsi menggunakan Aspose.Words untuk .NET. Dengan perpustakaan canggih ini, penandatanganan digital menjadi mudah, bahkan untuk file terenkripsi. Selamat membuat kode!
 
-### FAQ
+## FAQ
 
-#### T: Apa yang dimaksud dengan penandatanganan dokumen di Aspose.Words untuk .NET?
+### Bisakah saya menggunakan jenis sertifikat lain?
+Ya, Aspose.Words mendukung berbagai jenis sertifikat, asalkan formatnya benar.
 
-J: Penandatanganan dokumen di Aspose.Words untuk .NET mengacu pada proses penandatanganan dokumen Word secara digital untuk memastikan keaslian, integritas, dan non-penyangkalan. Ini melibatkan penambahan tanda tangan digital ke dokumen menggunakan sertifikat.
+### Apakah mungkin untuk menandatangani banyak dokumen sekaligus?
+Sangat! Anda dapat menelusuri kumpulan dokumen dan menandatangani masing-masing dokumen secara terprogram.
 
-#### T: Apa yang dimaksud dengan dokumen Word terenkripsi?
+### Bagaimana jika saya lupa kata sandi dekripsi?
+Sayangnya, tanpa kata sandi dekripsi, Anda tidak akan dapat menandatangani dokumen tersebut.
 
-J: Dokumen Word terenkripsi adalah dokumen yang telah dienkripsi menggunakan kata sandi. Enkripsi adalah tindakan keamanan yang melindungi konten dokumen dengan mengacaknya dan membuatnya tidak dapat dibaca tanpa kata sandi dekripsi yang benar.
+### Bisakah saya menambahkan tanda tangan yang terlihat pada dokumen?
+Ya, Aspose.Words memungkinkan Anda menambahkan tanda tangan digital yang terlihat juga.
 
-#### T: Bagaimana cara menandatangani dokumen Word terenkripsi menggunakan Aspose.Words untuk .NET?
-
-J: Untuk menandatangani dokumen Word terenkripsi menggunakan Aspose.Words untuk .NET, Anda perlu memberikan kata sandi dekripsi bersama dengan sertifikat penandatanganan. Ikuti langkah ini:
-1.  Tetapkan kata sandi dekripsi di`SignOptions` obyek.
-2.  Muat sertifikat penandatanganan menggunakan`CertificateHolder` kelas.
-3.  Menggunakan`DigitalSignatureUtil.Sign` metode untuk menandatangani dokumen terenkripsi, memberikan parameter yang diperlukan.
-
-#### T: Apa tujuan menandatangani dokumen terenkripsi?
-
-J: Menandatangani dokumen terenkripsi dengan Aspose.Words untuk .NET memungkinkan Anda menambahkan tanda tangan digital ke dokumen meskipun dokumen tersebut dienkripsi. Ini memberikan lapisan keamanan tambahan dan memastikan keaslian dan integritas konten terenkripsi. Hal ini memungkinkan penerima untuk memverifikasi asal dokumen dan mendeteksi adanya gangguan.
-
-#### T: Dapatkah saya menandatangani dokumen terenkripsi tanpa memberikan kata sandi dekripsi?
-
-J: Tidak, untuk menandatangani dokumen terenkripsi, Anda harus memberikan kata sandi dekripsi yang benar. Kata sandi dekripsi diperlukan untuk mengakses dan mengubah konten terenkripsi dokumen sebelum menerapkan tanda tangan digital.
-
-#### T: Dapatkah saya menandatangani dokumen Word terenkripsi menggunakan sertifikat apa pun?
-
-J: Untuk menandatangani dokumen Word terenkripsi menggunakan Aspose.Words untuk .NET, Anda memerlukan sertifikat X.509 yang valid. Sertifikat dapat diperoleh dari otoritas sertifikat (CA) tepercaya atau sertifikat yang ditandatangani sendiri dapat digunakan untuk tujuan pengujian.
-
-#### T: Dapatkah saya menandatangani beberapa dokumen Word terenkripsi menggunakan sertifikat yang sama?
-
- J: Ya, Anda bisa menandatangani beberapa dokumen Word terenkripsi menggunakan sertifikat yang sama. Setelah Anda memuat sertifikat menggunakan`CertificateHolder` kelas, Anda dapat menggunakannya kembali untuk menandatangani beberapa dokumen terenkripsi.
-
-#### T: Dapatkah saya memverifikasi tanda tangan digital dari dokumen terenkripsi yang ditandatangani?
-
- J: Ya, Aspose.Words untuk .NET menyediakan fungsionalitas untuk memverifikasi tanda tangan digital dari dokumen terenkripsi yang ditandatangani. Anda dapat menggunakan`DigitalSignatureUtil.Verify` metode untuk memeriksa keabsahan dan keaslian tanda tangan digital.
-
-#### T: Format file apa yang didukung Aspose.Words for .NET untuk menandatangani dokumen terenkripsi?
-
- J: Aspose.Words untuk .NET mendukung penandatanganan dokumen Word terenkripsi dalam format file DOCX. Anda dapat menandatangani file DOCX terenkripsi menggunakan`DigitalSignatureUtil.Sign` metode bersama dengan kata sandi dan sertifikat dekripsi yang diperlukan.
-
-#### T: Bagaimana pengaruh penandatanganan dokumen terenkripsi terhadap enkripsi?
-
-J: Menandatangani dokumen terenkripsi dengan Aspose.Words untuk .NET tidak memengaruhi enkripsi dokumen. Enkripsi tetap utuh, dan tanda tangan digital ditambahkan ke konten terenkripsi. Tanda tangan digital memberikan keamanan dan verifikasi tambahan tanpa mengorbankan enkripsi yang diterapkan pada dokumen.
+### Apakah ada cara untuk memverifikasi tanda tangan?
+ Ya, Anda dapat menggunakan`DigitalSignatureUtil.Verify` metode untuk memverifikasi tanda tangan.

@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Ez a kód létrehozza a`Document` és`DocumentBuilder` a dokumentum felépítéséhez. Beilleszti a`<svg>` címke, amely a`<polygon>` elem attribútumokkal az SVG-kép alakjának és stílusának meghatározásához.
+ Ez a kód létrehozza a`Document`és`DocumentBuilder` a dokumentum felépítéséhez. Beilleszti a`<svg>` címke, amely a`<polygon>` elem attribútumokkal az SVG-kép alakjának és stílusának meghatározásához.
 
 ## 3. lépés: Állítsa be a HTML mentési beállításokat
 

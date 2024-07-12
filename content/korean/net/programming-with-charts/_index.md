@@ -16,21 +16,21 @@ url: /ko/net/programming-with-charts/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [데이터 라벨의 형식 번호](./format-number-of-data-label/) | .NET용 Aspose.Words를 사용하여 차트의 데이터 레이블 수 형식을 지정하는 방법을 알아보세요. 데이터 레이블의 숫자 형식을 쉽게 사용자 정의합니다. |
-| [도형을 사용하여 차트 만들기](./create-chart-using-shape/) | Aspose.Words for .NET을 사용하여 Word 문서에서 도형을 사용하여 차트를 만들고 사용자 정의하는 방법을 알아보세요. |
-| [간단한 기둥형 차트 삽입](./insert-simple-column-chart/) | Aspose.Words for .NET을 사용하여 문서에 간단한 세로 막대형 차트를 삽입하는 방법을 알아보세요. |
-| [기둥형 차트 삽입](./insert-column-chart/) | Aspose.Words for .NET을 사용하여 문서에 세로 막대형 차트를 삽입하는 방법을 알아보세요. |
-| [영역 차트 삽입](./insert-area-chart/) | .NET용 Aspose.Words를 사용하여 문서에 영역 차트를 삽입하는 방법을 알아보세요. 계열 데이터를 추가하고 차트와 함께 문서를 저장합니다. |
-| [거품형 차트 삽입](./insert-bubble-chart/) | Aspose.Words for .NET을 사용하여 문서에 거품형 차트를 삽입하는 방법을 알아보세요. X, Y 및 거품 크기 값을 사용하여 계열 데이터를 추가합니다. |
-| [분산형 차트 삽입](./insert-scatter-chart/) | Aspose.Words for .NET을 사용하여 문서에 분산형 차트를 삽입하는 방법을 알아보세요. X 및 Y 좌표를 사용하여 계열 데이터를 추가합니다. |
-| [XYAxis 속성 정의](./define-xyaxis-properties/) | .NET용 Aspose.Words를 사용하여 차트에서 XY 축 속성을 정의하는 방법을 알아보세요. X 및 Y축에 대한 사용자 정의 옵션이 설명됩니다. |
-| [날짜 시간 값을 축으로](./date-time-values-to-axis/) | .NET용 Aspose.Words를 사용하여 차트 축에 날짜 시간 값을 추가하는 방법을 알아보세요. |
-| [축의 숫자 형식](./number-format-for-axis/) | .NET용 Aspose.Words를 사용하여 차트 축의 숫자 형식을 설정하는 방법을 알아보세요. |
+| [차트의 데이터 레이블 형식 수](./format-number-of-data-label/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 차트의 데이터 레이블 형식을 지정하는 방법을 알아보세요. Word 문서를 손쉽게 향상하세요. |
+| [모양을 사용하여 차트 생성 및 사용자 정의](./create-chart-using-shape/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 차트를 만들고 사용자 지정하는 방법을 알아보세요. 데이터 시각화에 적합합니다. |
+| [Word 문서에 간단한 기둥형 차트 삽입](./insert-simple-column-chart/) | .NET용 Aspose.Words를 사용하여 Word에 간단한 세로 막대형 차트를 삽입하는 방법을 알아보세요. 역동적인 시각적 데이터 프레젠테이션으로 문서를 향상시키세요. |
+| [Word 문서에 세로 막대형 차트 삽입](./insert-column-chart/) | .NET용 Aspose.Words를 사용하여 Word 문서에 세로 막대형 차트를 삽입하는 방법을 알아보세요. 보고서 및 프리젠테이션의 데이터 시각화를 향상하세요. |
+| [Word 문서에 영역형 차트 삽입](./insert-area-chart/) | 이 포괄적인 단계별 가이드에서 .NET용 Aspose.Words를 사용하여 Word 문서에 영역 차트를 삽입하는 방법을 알아보세요. |
+| [Word 문서에 거품형 차트 삽입](./insert-bubble-chart/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 거품형 차트를 삽입하는 방법을 알아보세요. 문서를 향상시키세요. |
+| [Word 문서에 분산형 차트 삽입](./insert-scatter-chart/) | .NET용 Aspose.Words를 사용하여 Word에 분산형 차트를 삽입하는 방법을 알아보세요. 시각적 데이터 표현을 문서에 통합하는 쉬운 단계입니다. |
+| [차트에서 XY 축 속성 정의](./define-xyaxis-properties/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 차트에서 XY 축 속성을 정의하는 방법을 알아보세요. .NET 개발자에게 적합합니다. |
+| [차트 축에 날짜 시간 값 추가](./date-time-values-to-axis/) | 이 포괄적인 단계별 가이드에서 .NET용 Aspose.Words를 사용하여 차트 축에 날짜 및 시간 값을 추가하는 방법을 알아보세요. |
+| [차트의 축에 대한 숫자 형식](./number-format-for-axis/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 차트 축 번호의 형식을 지정하는 방법을 알아보세요. 문서의 가독성과 전문성을 쉽게 향상시킬 수 있습니다. |
 | [축의 경계](./bounds-of-axis/) | 축에 표시되는 값의 범위를 제어하는 .NET용 Aspose.Words를 사용하여 차트에서 축의 경계를 설정하는 방법을 알아보세요. |
-| [축의 라벨 사이의 간격 단위](./interval-unit-between-labels-on-axis/) | Aspose.Words for .NET을 사용하여 차트 축의 레이블 사이 간격 단위를 설정하는 방법을 알아보세요. |
-| [차트 축 숨기기](./hide-chart-axis/) | .NET용 Aspose.Words를 사용하여 문서에서 차트 축을 숨기는 방법을 알아보세요. 보다 명확하고 집중된 차트 표시를 위해 축을 숨깁니다. |
-| [여러 줄 레이블 정렬을 선택합니다.](./tick-multi-line-label-alignment/) | .NET용 Aspose.Words를 사용하여 차트 축에서 눈금 여러 줄 레이블을 정렬하는 방법을 알아보세요. |
-| [차트 데이터 라벨](./chart-data-label/) | 데이터 요소에 대한 추가 정보를 제공하기 위해 Aspose.Words for .NET을 사용하여 차트에 데이터 레이블을 추가하고 사용자 정의하는 방법을 알아보세요. |
-| [데이터 레이블의 기본 옵션](./default-options-for-data-labels/) | .NET용 Aspose.Words를 사용하여 차트의 데이터 레이블에 대한 기본 옵션을 설정하는 방법을 알아보세요. |
-| [단일 차트 데이터 포인트](./single-chart-data-point/) | .NET용 Aspose.Words를 사용하여 차트의 단일 데이터 포인트를 사용자 정의하는 방법을 알아보세요. |
-| [싱글 차트 시리즈](./single-chart-series/) | .NET용 Aspose.Words를 사용하여 차트에서 단일 차트 시리즈를 사용자 정의하는 방법을 알아보세요. |
+| [차트 축의 레이블 간 간격 단위](./interval-unit-between-labels-on-axis/) | Aspose.Words for .NET을 사용하여 차트 축의 레이블 사이 간격 단위를 설정하는 방법을 알아보세요. |
+| [Word 문서에서 차트 축 숨기기](./hide-chart-axis/) | 자세한 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 차트 축을 숨기는 방법을 알아보세요. |
+| [차트에서 여러 줄 레이블 정렬을 선택합니다.](./tick-multi-line-label-alignment/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 차트에서 여러 줄 레이블 정렬을 선택하는 방법을 알아보세요. 모든 수준의 개발자에게 적합합니다. |
+| [차트 데이터 레이블 사용자 정의](./chart-data-label/) | 단계별 가이드에서 Aspose.Words for .NET을 사용하여 차트 데이터 레이블을 사용자 정의하는 방법을 알아보세요. .NET 개발자에게 적합합니다. |
+| [차트의 데이터 레이블에 대한 기본 옵션 설정](./default-options-for-data-labels/) | .NET용 Aspose.Words를 사용하여 차트의 데이터 레이블에 대한 기본 옵션을 설정하는 방법을 알아보세요. 단계별 가이드에 따라 차트를 손쉽게 만들고 맞춤설정하세요. |
+| [차트의 단일 차트 데이터 포인트 사용자 정의](./single-chart-data-point/) | 자세한 단계별 가이드에서 Aspose.Words for .NET을 사용하여 단일 차트 데이터 포인트를 사용자 정의하는 방법을 알아보세요. 고유한 마커와 크기로 차트를 향상하세요. |
+| [차트에서 단일 차트 시리즈 사용자 정의](./single-chart-series/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 단일 차트 시리즈를 사용자 정의하는 방법을 알아보세요. 원활한 경험을 위해 단계별 가이드를 따르세요. |

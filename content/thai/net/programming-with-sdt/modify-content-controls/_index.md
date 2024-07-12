@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสารและวนซ้ำการควบคุมเนื้อหา
- โหลดเอกสาร Word โดยใช้ไฟล์`Document`Constructor โดยส่งเส้นทางไปยังเอกสารเป็นพารามิเตอร์ วนซ้ำแท็กเอกสารที่มีโครงสร้างทั้งหมดในเอกสารโดยใช้`foreach` วนซ้ำ
+ โหลดเอกสาร Word โดยใช้ไฟล์`Document` Constructor โดยส่งเส้นทางไปยังเอกสารเป็นพารามิเตอร์ วนซ้ำแท็กเอกสารที่มีโครงสร้างทั้งหมดในเอกสารโดยใช้`foreach` วนซ้ำ
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## ขั้นตอนที่ 6: บันทึกเอกสารที่แก้ไข
- บันทึกเอกสารที่แก้ไขไปยังไดเร็กทอรีที่ระบุโดยใช้`Save` วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithSdt.ModifyContentControls.docx"
+ บันทึกเอกสารที่แก้ไขไปยังไดเร็กทอรีที่ระบุโดยใช้`Save`วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithSdt.ModifyContentControls.docx"
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

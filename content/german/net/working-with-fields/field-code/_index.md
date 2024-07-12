@@ -57,13 +57,13 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Machen Sie etwas mit dem Code und dem Ergebnis des Felds.
+     //Machen Sie etwas mit dem Code und dem Ergebnis des Felds.
 }
 ```
 
 In diesem Beispiel haben wir ein Dokument geladen und dann alle im Dokument vorhandenen Felder durchlaufen. Bei jeder Iteration haben wir den Code und das Ergebnis des Felds erhalten. Sie können Ihre eigene Logik hinzufügen, um den Code und die Ergebnisfelder nach Bedarf zu verarbeiten.
 
-Damit schließen wir unsere Anleitung zur Verwendung der Funktion „Feldcode abrufen“ mit Aspose.Words für .NET ab.
+Damit ist unsere Anleitung zur Verwendung der Funktion „Feldcode abrufen“ mit Aspose.Words für .NET abgeschlossen.
 
 ### Häufig gestellte Fragen
 
@@ -73,7 +73,7 @@ Damit schließen wir unsere Anleitung zur Verwendung der Funktion „Feldcode ab
 
 #### F: Wie kann ich mit Aspose.Words für .NET Felder in einem Dokument aktualisieren?
 
- A: Um Dokumentfelder mit Aspose.Words für .NET zu aktualisieren, können Sie das`Document.UpdateFields`Methode. Dadurch werden alle im Dokument vorhandenen Felder aktualisiert, z. B. Seriendruckfelder, Datumsfelder usw.
+ A: Um Dokumentfelder mit Aspose.Words für .NET zu aktualisieren, können Sie das`Document.UpdateFields` Methode. Dadurch werden alle im Dokument vorhandenen Felder aktualisiert, z. B. Seriendruckfelder, Datumsfelder usw.
 
 #### F: Wie kann ich den Wert eines bestimmten Felds in Aspose.Words für .NET abrufen?
 

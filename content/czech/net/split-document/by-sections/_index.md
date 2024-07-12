@@ -76,7 +76,7 @@ V tomto tutoriálu jsme prozkoumali funkci Rozdělit dokument podle sekcí Aspos
 
 Použití funkce Rozdělit dokument podle oddílů může být výhodné, když potřebujete manipulovat nebo analyzovat konkrétní části dokumentu, jako jsou kapitoly, oddíly nebo jiné oddíly. Aspose.Words for .NET poskytuje spolehlivé a přímočaré řešení pro oddělování sekcí a umožňuje efektivní zpracování dokumentů.
 
-Neváhejte a prozkoumejte další výkonné funkce, které nabízí Aspose.Words for .NET, abyste zlepšili své možnosti zpracování dokumentů a zefektivnili svůj pracovní postup.
+Neváhejte a prozkoumejte další výkonné funkce nabízené Aspose.Words pro .NET, abyste zlepšili své možnosti zpracování dokumentů a zefektivnili svůj pracovní postup.
 
 ### Nejčastější dotazy
 
@@ -84,7 +84,7 @@ Neváhejte a prozkoumejte další výkonné funkce, které nabízí Aspose.Words
 Ano, kritéria rozdělení si můžete přizpůsobit podle svých konkrétních potřeb. Kromě zalomení oddílů můžete dokument rozdělit na základě dalších prvků, jako jsou nadpisy, záložky nebo konkrétní obsah, pomocí různých funkcí a metod poskytovaných Aspose.Words pro .NET.
 
 #### Q2: Je možné sloučit oddíly zpět do jednoho dokumentu?
- Ano, samostatné oddíly můžete sloučit zpět do jednoho dokumentu importováním a zkombinováním oddílů z více dokumentů pomocí`ImportNode` a`Sections.Add` metody. To vám umožní obrátit proces dělení a rekonstruovat původní dokument.
+ Ano, samostatné oddíly můžete sloučit zpět do jednoho dokumentu importováním a zkombinováním oddílů z více dokumentů pomocí`ImportNode`a`Sections.Add` metody. To vám umožní obrátit proces dělení a rekonstruovat původní dokument.
 
 #### Otázka 3: Existují nějaká omezení počtu sekcí, které lze rozdělit pomocí funkce „Podle sekcí“?
 Počet sekcí, které lze rozdělit pomocí funkce "Podle sekcí", závisí na možnostech Aspose.Words pro .NET a dostupných systémových prostředcích. Obecně podporuje rozdělování dokumentů s velkým počtem oddílů, ale extrémně dlouhé dokumenty nebo velmi vysoký počet oddílů mohou vyžadovat dodatečné systémové zdroje a dobu zpracování.

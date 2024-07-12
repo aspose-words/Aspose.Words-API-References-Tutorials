@@ -103,7 +103,7 @@ Bu örnekte belgenin bir kopyasını "_v2" son ekini kullanarak bunun yeni bir s
 
 ### Düzeltmeleri programlı olarak kabul edebilir veya reddedebilir miyim?
 
- Evet, Aspose.Words for Java'yı kullanarak revizyonları kabul edebilir veya reddedebilirsiniz. Kullanın`acceptAllRevisions` Ve`rejectAllRevisions` Revizyonları yönetme yöntemleri.
+ Evet, Aspose.Words for Java'yı kullanarak revizyonları kabul edebilir veya reddedebilirsiniz. Kullanın`acceptAllRevisions`Ve`rejectAllRevisions` Revizyonları yönetme yöntemleri.
 
 ### Bir belgenin birden çok sürümünü oluşturmak mümkün mü?
 

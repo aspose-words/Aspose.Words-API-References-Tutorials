@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Bước 7: Thêm nội dung vào ô
- Bây giờ chúng ta có thể thêm nội dung vào các ô bằng cách sử dụng`Writeln()` Và`InsertCell()` phương pháp của người xây dựng tài liệu. Trong ví dụ này, chúng tôi thêm tiêu đề cho "Mặt hàng" và "Số lượng (
+ Bây giờ chúng ta có thể thêm nội dung vào các ô bằng cách sử dụng`Writeln()`Và`InsertCell()` phương pháp của người xây dựng tài liệu. Trong ví dụ này, chúng tôi thêm tiêu đề cho "Mặt hàng" và "Số lượng (
 
 kg)" và dữ liệu tương ứng.
 

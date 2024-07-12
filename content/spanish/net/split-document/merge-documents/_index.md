@@ -13,7 +13,7 @@ url: /es/net/split-document/merge-documents/
 
 ## Requisitos previos
 
-Antes de sumergirnos, asegurémonos de que tiene todo lo que necesita:
+Antes de sumergirnos, asegurémonos de que tienes todo lo que necesitas:
 
 1. Conocimientos básicos de C#: debe sentirse cómodo con la sintaxis y los conceptos de C#.
 2.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/) . Si recién estás explorando, puedes comenzar con un[prueba gratis](https://releases.aspose.com/).
@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- En este paso, fusionamos`Document1.docx` y`Document2.docx` en un nuevo archivo llamado`MergedDocument.docx`.
+ En este paso, fusionamos`Document1.docx`y`Document2.docx` en un nuevo archivo llamado`MergedDocument.docx`.
 
 ## Paso 3: fusionar con opciones de guardar
 
@@ -74,7 +74,7 @@ Si necesita fusionar documentos y guardar el resultado como PDF, Aspose.Words se
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Aquí nos fusionamos`Document1.docx` y`Document2.docx` y guarde el resultado como un archivo PDF.
+ Aquí nos fusionamos`Document1.docx`y`Document2.docx` y guarde el resultado como un archivo PDF.
 
 ## Paso 5: crear una instancia de documento a partir de documentos combinados
 
@@ -103,7 +103,7 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
 
 ### 3. ¿Cómo manejo los diferentes formatos durante la fusión?
 
- Aspose.Words proporciona varios modos de formato de combinación como`KeepSourceFormatting` y`MergeFormatting` . Referirse a[Documentación API](https://reference.aspose.com/words/net/) para obtener instrucciones detalladas.
+ Aspose.Words proporciona varios modos de formato de combinación como`KeepSourceFormatting`y`MergeFormatting` . Referirse a[Documentación API](https://reference.aspose.com/words/net/) para obtener instrucciones detalladas.
 
 ### 4. ¿Cómo obtengo soporte para Aspose.Words para .NET?
 
@@ -111,4 +111,4 @@ Puede obtener soporte visitando el[Aspose foro de soporte](https://forum.aspose.
 
 ### 5. ¿Puedo combinar otros formatos de archivo con Aspose.Words para .NET?
 
-Sí, Aspose.Words admite la combinación de varios formatos de archivos, incluidos DOCX, PDF y HTML.
+Sí, Aspose.Words admite la combinación de varios formatos de archivo, incluidos DOCX, PDF y HTML.

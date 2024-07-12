@@ -66,7 +66,7 @@ doc.save(outPath + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 
 ## Conclusión
 
-En este tutorial, hemos aprendido cómo usar HarfBuzz para dar forma a texto en Aspose.Words para Java. Si sigue estos pasos, puede mejorar sus capacidades de procesamiento de documentos de Word y garantizar una representación adecuada de scripts e idiomas complejos.
+En este tutorial, hemos aprendido cómo usar HarfBuzz para dar forma a texto en Aspose.Words para Java. Si sigue estos pasos, puede mejorar sus capacidades de procesamiento de documentos de Word y garantizar la representación adecuada de scripts e idiomas complejos.
 
 ## Preguntas frecuentes
 

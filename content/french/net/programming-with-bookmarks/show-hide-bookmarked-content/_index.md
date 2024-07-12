@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Ici, nous ajoutons du texte avant et après le contenu mis en signet. Le`StartBookmark` et`EndBookmark` les méthodes définissent les limites du signet.
+ Ici, nous ajoutons du texte avant et après le contenu mis en signet. Le`StartBookmark`et`EndBookmark` les méthodes définissent les limites du signet.
 
 ## Étape 3 : Insertion d'un champ conditionnel
 
@@ -148,7 +148,7 @@ Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeu
 
  Aspose.Words vous permet de manipuler diverses propriétés d'un signet, telles que son texte et son emplacement. Se référer au[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
 
-### 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
+### 4. Comment puis-je obtenir de l'assistance pour Aspose.Words pour .NET ?
 
 Vous pouvez obtenir de l'aide en visitant le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 

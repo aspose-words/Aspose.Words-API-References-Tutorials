@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### समाधान 2:
 
- उत्तर: आप इसका उपयोग करके संशोधन ट्रैकिंग भी सक्षम कर सकते हैं`Document` कन्स्ट्रक्टर जो स्वीकार करता है`trackRevisions` और`author` पैरामीटर.
+ उत्तर: आप इसका उपयोग करके संशोधन ट्रैकिंग भी सक्षम कर सकते हैं`Document` कन्स्ट्रक्टर जो स्वीकार करता है`trackRevisions`और`author` पैरामीटर.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

@@ -72,7 +72,7 @@ Ontdek gerust meer functies van Aspose.Words voor .NET om uw workflow te verbete
 
 #### Hoe kan ik de primaire en secundaire lettertypen van het thema van een document ophalen?
 
- U kunt toegang krijgen tot de primaire en secundaire lettertypen van het thema van een document door de`MajorFonts` En`MinorFonts` eigenschappen van de`Theme` voorwerp, respectievelijk. Deze eigenschappen bieden toegang tot de lettertypenamen die in het thema van het document worden gebruikt voor verschillende talen of regio's.
+ U kunt toegang krijgen tot de primaire en secundaire lettertypen van het thema van een document door de`MajorFonts`En`MinorFonts` eigenschappen van de`Theme` voorwerp, respectievelijk. Deze eigenschappen bieden toegang tot de lettertypenamen die in het thema van het document worden gebruikt voor verschillende talen of regio's.
 
 #### Kan ik de accentkleuren krijgen die in het thema van een document worden gebruikt?
 

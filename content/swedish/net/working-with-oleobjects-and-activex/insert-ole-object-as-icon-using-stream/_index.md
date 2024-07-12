@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. För att bädda in koden för att infoga ett OLE-objekt som en ikon från en ström i ditt projekt, följ dessa steg:
 -  Importera nödvändiga referenser genom att lägga till lämpliga`using` uttalanden.
--  Skapa ett nytt dokument och en dokumentbyggare med hjälp av`Document` och`DocumentBuilder` klasser.
+-  Skapa ett nytt dokument och en dokumentbyggare med hjälp av`Document`och`DocumentBuilder` klasser.
 - Använd koden för att infoga OLE-objektet som en ikon från en ström.
 -  Spara dokumentet med hjälp av`Save` metod med lämplig destinationssökväg.
 

@@ -39,7 +39,7 @@ Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
 doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 ```
 
- In diesem letzten Schritt speichern wir das resultierende Dokument im RTF-Format mit dem`Save` Methode und Übergabe des Pfads an die Ausgabedatei.
+ In diesem letzten Schritt speichern wir das resultierende Dokument im RTF-Format mit dem`Save` Methode und Übergabe des Pfads zur Ausgabedatei.
 
 Jetzt können Sie den Quellcode ausführen, um das RTF-Dokument zu laden und UTF-8-codierten Text korrekt zu erkennen. Das resultierende Dokument wird im angegebenen Verzeichnis unter dem Namen „WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf“ gespeichert.
 

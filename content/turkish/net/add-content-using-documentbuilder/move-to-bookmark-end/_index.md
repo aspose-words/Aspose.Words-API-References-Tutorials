@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. Bir yer iminin sonu yerine başına gidebilir miyim?
 
- Kesinlikle! Sadece ayarlayın`isBookmarkStart` parametre`true` Ve`isBookmarkEnd` ile`false` içinde`MoveToBookmark` yöntem.
+ Kesinlikle! Sadece ayarlayın`isBookmarkStart` parametre`true`Ve`isBookmarkEnd` ile`false` içinde`MoveToBookmark` yöntem.
 
 ### 2. Yer imi adım yanlışsa ne olur?
 

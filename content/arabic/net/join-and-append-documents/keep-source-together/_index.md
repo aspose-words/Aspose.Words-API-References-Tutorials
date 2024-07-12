@@ -2,49 +2,57 @@
 title: احتفظ بالمصدر معًا
 linktitle: احتفظ بالمصدر معًا
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية استخدام Aspose.Words for .NET لضم مستندات Word وإلحاقها مع الاحتفاظ بالمحتوى المصدر مع المستند الوجهة.
+description: تعرف على كيفية دمج مستندات Word باستخدام Aspose.Words لـ .NET مع الحفاظ على التنسيق. يغطي هذا الدليل الشامل كل شيء بدءًا من الإعداد وحتى التنفيذ.
 type: docs
 weight: 10
 url: /ar/net/join-and-append-documents/keep-source-together/
 ---
+## مقدمة
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Keep Source Together في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word متعددة وإلحاقها مع الاحتفاظ بمحتوى المستند المصدر مع محتوى المستند الوجهة. 
+في العصر الرقمي الحالي، يعد التعامل مع مستندات Word برمجيًا أمرًا ضروريًا في مختلف الصناعات. يعمل Aspose.Words for .NET على تمكين المطورين من أتمتة مهام معالجة المستندات بكفاءة. سيرشدك هذا الدليل الشامل خلال عملية دمج المستندات مع الحفاظ على تنسيق المصدر باستخدام Aspose.Words for .NET.
 
 ## المتطلبات الأساسية
 
-قبل أن تبدأ، تأكد من أن لديك ما يلي:
+قبل الغوص في دمج المستندات مع Aspose.Words for .NET، تأكد من أن لديك ما يلي:
 
-1. تم تثبيت Aspose.Words لـ .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير أخرى لـ C#.
+- Visual Studio: بيئة التطوير المتكاملة (IDE) لتطوير .NET.
+- Aspose.Words for .NET: تم تثبيته وإعداده في بيئة التطوير الخاصة بك.
+- الإلمام بـ C#: الفهم الأساسي للغة البرمجة C#.
 
-## الخطوة 1: تهيئة أدلة المستندات
+## استيراد مساحات الأسماء
 
- أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+للبدء، قم باستيراد مساحات الأسماء الضرورية:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## الخطوة 1: تحميل المستندات
 
-بعد ذلك، تحتاج إلى تحميل المستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في`Document` مُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ أولاً، قم بتحميل المستندات المصدر والوجهة إلى Aspose.Words`Document` أشياء.
 
 ```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+// تحميل مستندات المصدر والوجهة
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## الخطوة 3: قم بتعيين المستند المصدر ليظهر بعد محتوى مستند الوجهة
+## الخطوة 2: تعيين بداية القسم
 
- للتأكد من ظهور المستند المصدر مباشرةً بعد محتوى المستند الوجهة، يلزمك تعيين الإعداد`SectionStart` خاصية القسم الأول في الوثيقة المصدر ل`SectionStart.Continuous`.
+قم بتكوين بداية القسم لضمان تدفق محتوى المستند المصدر بشكل مستمر بعد المستند الوجهة.
 
 ```csharp
+// قم بتعيين المستند المصدر ليظهر مباشرة بعد محتوى المستند الوجهة
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## الخطوة 4: قم بتعيين تنسيق الفقرة "الاحتفاظ بالتالي" للمستند المصدر
+## الخطوة 3: احتفظ بالفقرات معًا
 
- للاحتفاظ بالفقرات في المستند المصدر معًا، يمكنك التكرار خلال كل فقرة في المستند وتعيين`KeepWithNext`الملكية ل`true`.
+للحفاظ على تكامل التنسيق، قم بوضع علامة على كل فقرة في المستند المصدر لتبقى مع الفقرة التالية.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## الخطوة 5: إلحاق المستند المصدر بالمستند الوجهة
+## الخطوة 4: إلحاق المستندات
 
- الآن، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام الملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ دمج المستندات باستخدام`AppendDocument` طريقة تضمن الاحتفاظ بتنسيق المستند المصدر.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ الوثيقة النهائية
+## الخطوة 5: حفظ المستند المدمج
 
- أخيرًا، احفظ المستند المدمج مع تمكين ميزة "الاحتفاظ بالمصدر معًا" باستخدام`Save` طريقة`Document` فصل.
+وأخيرًا، احفظ المستند المدمج في الموقع المطلوب.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لـ Keep Source Together باستخدام Aspose.Words لـ .NET 
+## خاتمة
 
-إليك الكود المصدري الكامل لميزة "الاحتفاظ بالمصدر معًا" في لغة C# باستخدام Aspose.Words for .NET:
+في الختام، Aspose.Words for .NET يبسط مهمة دمج مستندات Word مع الحفاظ على التنسيق الأصلي بسلاسة. تعتبر هذه القدرة ضرورية للتطبيقات التي تتطلب معالجة المستندات تلقائيًا.
 
+## الأسئلة الشائعة
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### هل يمكن لـ Aspose.Words لـ .NET دمج المستندات ذات التنسيقات المختلفة؟
+نعم، يمكنه دمج المستندات بغض النظر عن تنسيقها، مع الحفاظ على تنسيق المصدر.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// قم بتعيين المستند المصدر ليظهر مباشرة بعد محتوى المستند الوجهة.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### هل يدعم Aspose.Words for .NET دمج المستندات الكبيرة بكفاءة؟
+بالتأكيد، فهو يتعامل مع المستندات الكبيرة بأداء مثالي.
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Keep Source Together باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الاحتفاظ بالفقرات الموجودة في المستند المصدر معًا.
+### هل هناك إصدار تجريبي متاح لـ Aspose.Words لـ .NET؟
+ نعم، يمكنك تنزيل نسخة تجريبية مجانية[هنا](https://releases.aspose.com/).
+
+### كيف يمكنني الحصول على الدعم الفني لـ Aspose.Words لـ .NET؟
+ الدعم الفني متاح من خلال[منتدى Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### هل يمكنني شراء ترخيص مؤقت لـ Aspose.Words لـ .NET؟
+ نعم، يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).

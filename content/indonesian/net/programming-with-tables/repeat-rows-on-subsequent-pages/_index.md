@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Masukkan sel pertama dari baris pertama
+//Masukkan sel pertama dari baris pertama
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Di sini kita menggunakan pembuat dokumen untuk membuat tabel dengan dua baris header dan beberapa baris data. Itu`RowFormat.HeadingFormat`parameter digunakan untuk menandai baris header yang harus diulang pada halaman berikutnya.
+ Di sini kita menggunakan pembuat dokumen untuk membuat tabel dengan dua baris header dan beberapa baris data. Itu`RowFormat.HeadingFormat` parameter digunakan untuk menandai baris header yang harus diulang pada halaman berikutnya.
 
 ## Langkah 4: Menyimpan dokumen yang dimodifikasi
 Akhirnya AS

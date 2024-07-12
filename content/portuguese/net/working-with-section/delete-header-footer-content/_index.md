@@ -62,7 +62,7 @@ Neste tutorial, vimos como remover o conteúdo do cabeçalho e rodapé de um doc
 
 #### P: Como definir o diretório do documento no Aspose.Words for .NET?
 
- R: Para definir o caminho para o diretório que contém seus documentos, você deve substituir`"YOUR DOCUMENT DIRECTORY"` no código com o caminho apropriado. Veja como fazer isso:
+R: Para definir o caminho para o diretório que contém seus documentos, você deve substituir`"YOUR DOCUMENT DIRECTORY"` no código com o caminho apropriado. Veja como fazer isso:
 
 ```csharp
 // Caminho para o seu diretório de documentos

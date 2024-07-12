@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- 이 코드는`Document` 그리고`DocumentBuilder` 문서를 작성합니다. 이는`<svg>` 다음을 포함하는 태그`<polygon>` SVG 이미지의 모양과 스타일을 정의하는 속성이 있는 요소입니다.
+ 이 코드는`Document`그리고`DocumentBuilder` 문서를 작성합니다. 이는`<svg>` 다음을 포함하는 태그`<polygon>` SVG 이미지의 모양과 스타일을 정의하는 속성이 있는 요소입니다.
 
 ## 3단계: HTML 저장 옵션 설정
 

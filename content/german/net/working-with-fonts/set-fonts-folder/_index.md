@@ -39,7 +39,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-### Beispielquellcode für Set Fonts Folder mit Aspose.Words für .NET 
+### Beispielquellcode für den Ordner „Set Fonts“ mit Aspose.Words für .NET 
 
 ```csharp
 

@@ -2,114 +2,125 @@
 title: Word 文件中的唯讀保護
 linktitle: Word 文件中的唯讀保護
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 保護 Word 文件中的唯讀內容。
+description: 了解如何使用 Aspose.Words for .NET 應用唯讀保護來保護您的 Word 文件。請遵循我們的逐步指南。
 type: docs
 weight: 10
 url: /zh-hant/net/document-protection/read-only-protection/
 ---
-在本教學中，我們將引導您完成使用 Aspose.Words for .NET 的唯讀保護功能的步驟。此功能可讓您將 Word 文件設定為唯讀以防止未經授權的修改。請依照以下步驟操作：
+## 介紹
 
-## 第 1 步：建立文件並套用保護
+在管理 Word 文件時，有時需要將它們設定為唯讀以保護其內容。無論是為了分享重要資訊而避免意外編輯的風險，還是為了確保法律文件的完整性，只讀保護都是一個很有價值的功能。在本教學中，我們將探討如何使用 Aspose.Words for .NET 在 Word 文件中實現唯讀保護。我們將以詳細、引人入勝的方式引導您完成每個步驟，確保您可以輕鬆完成操作。
 
-首先建立 Document 類別的實例和 DocumentBuilder 物件：
+## 先決條件
+
+在我們深入研究程式碼之前，您需要滿足一些先決條件：
+
+1.  Aspose.Words for .NET：請確定您已安裝 Aspose.Words for .NET 程式庫。您可以從[Aspose 發佈頁面](https://releases.aspose.com/words/net/).
+2. 開發環境：設定安裝了.NET的開發環境。 Visual Studio 是不錯的選擇。
+3. C# 的基本了解：本教學假設您對 C# 程式設計有基本的了解。
+
+## 導入命名空間
+
+首先，我們確保導入了必要的命名空間。這一點至關重要，因為它允許我們從 Aspose.Words for .NET 存取所需的類別和方法。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 步驟2：將內容寫入文檔
-使用 DocumentBuilder 物件將內容寫入文件：
+## 第 1 步：設定文檔
+
+在此步驟中，我們將建立一個新文件和一個文件產生器。這構成了我們營運的基礎。
 
 ```csharp
-builder.Write("Open document as read-only");
-```
-
-## 第三步：設定密碼並將文件設定為唯讀
-
-使用 WriteProtection 物件的 SetPassword() 屬性設定文件的密碼：
-
-```csharp
-doc.WriteProtection.SetPassword("MyPassword");
-```
-
-請務必將「MyPassword」替換為您要使用的實際密碼。
-
-## 第4步：應用唯讀文檔
-
-透過將 ReadOnlyRecommended 屬性設為 true 使文件唯讀：
-
-```csharp
-doc.WriteProtection.ReadOnlyRecommended = true;
-```
-
-## 步驟 5：套用唯讀保護並儲存文檔
-
-最後，使用 Document 物件的 Protect() 方法應用唯讀保護：
-
-```csharp
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-```
-
-請務必指定正確的路徑和檔案名稱來儲存受保護的文件。
-
-### 使用 Aspose.Words for .NET 進行唯讀保護的範例原始程式碼
-
-以下是使用 Aspose.Words for .NET 進行唯讀保護的完整原始碼：
-
-```csharp
-
 //文檔目錄的路徑。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
+//在文件中寫入一些文字。
 builder.Write("Open document as read-only");
-
-//輸入最長 15 個字元的密碼。
-doc.WriteProtection.SetPassword("MyPassword");
-
-//將文檔設定為唯讀。
-doc.WriteProtection.ReadOnlyRecommended = true;
-
-//將寫入保護套用為唯讀。
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-
 ```
 
-透過執行以下步驟，您可以輕鬆保護您的文檔
+解釋：
+
+- 我們首先定義保存文件的目錄路徑。
+- 一個新的`Document`物件被創建，並且一個`DocumentBuilder`與之相關。
+- 使用建構器，我們為文件添加一行簡單的文字。
+
+## 步驟2：設定寫保護密碼
+
+接下來，我們需要設定寫保護的密碼。該密碼的長度最多為 15 個字元。
+
+```csharp
+//輸入最長 15 個字元的密碼。
+doc.WriteProtection.SetPassword("MyPassword");
+```
+
+解釋：
+
+- 這`SetPassword`方法被調用`WriteProtection`文檔的屬性。
+- 我們提供一個密碼（在本例中為「MyPassword」），需要該密碼才能刪除保護。
+
+## 步驟 3：啟用唯讀推薦
+
+在此步驟中，我們建議將該文件設定為唯讀。這意味著當打開文件時，它將提示使用者以唯讀模式開啟它。
+
+```csharp
+//建議將文檔設定為唯讀。
+doc.WriteProtection.ReadOnlyRecommended = true;
+```
+
+解釋：
+
+- 這`ReadOnlyRecommended`屬性設定為`true`.
+- 這將提示使用者以唯讀模式開啟文檔，但他們可以選擇忽略建議。
+
+## 步驟 4：應用唯讀保護
+
+最後，我們對文件應用唯讀保護。此步驟強制執行保護。
+
+```csharp
+//將寫入保護套用為唯讀。
+doc.Protect(ProtectionType.ReadOnly);
+```
+
+解釋：
+
+- 這`Protect`方法在文檔上調用`ProtectionType.ReadOnly`作為論點。
+- 此方法強制唯讀保護，防止在沒有密碼的情況下對文件進行任何修改。
+
+## 第 5 步：儲存文檔
+
+最後一步是使用應用程式的保護設定儲存文件。
+
+```csharp
+//儲存受保護的文件。
+doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
+```
+
+解釋：
+
+- 這`Save`在文件上呼叫方法，指定文件的路徑和名稱。
+- 該文件以唯讀保護的方式保存。
 
 ## 結論
 
-在本教學中，我們探索了 Aspose.Words for .NET 的唯讀保護功能，該功能可讓您將 Word 文件設定為唯讀以防止未經授權的修改。透過按照提供的步驟操作，您可以輕鬆地對文件套用唯讀保護並增強其安全性。只讀保護透過限制編輯功能來幫助確保文件內容的完整性和準確性。 Aspose.Words for .NET 提供了強大且靈活的 API 來處理文件保護，並支援各種其他功能來自訂和保護您的 Word 文件。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功建立了受唯讀保護的 Word 文件。此功能可確保您的文件內容保持完整且不被更改，從而提供額外的安全層。無論您是共享敏感資訊還是法律文檔，唯讀保護都是文檔管理工具庫中必備的工具。
 
-### Word 文件只讀保護常見問題解答
+## 常見問題解答
 
-#### Q：Aspose.Words for .NET 中的唯讀保護是什麼？
+### 什麼是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員使用 C# 或其他 .NET 語言以程式設計方式建立、修改、轉換和保護 Word 文件。
 
-答：Aspose.Words for .NET 中的唯讀保護功能可讓您將 Word 文件設定為唯讀，從而防止未經授權的修改。當文件設定為唯讀時，使用者可以開啟和檢視該文檔，但無法對其內容進行任何變更。
+### 我可以刪除文檔的唯讀保護嗎？
+是的，您可以使用以下命令刪除唯讀保護`Unprotect`方法並提供正確的密碼。
 
-#### Q：如何使用 Aspose.Words for .NET 對 Word 文件套用唯讀保護？
+### 文檔中設定的密碼是否已加密？
+是的，Aspose.Words 會對密碼進行加密，以確保受保護文件的安全。
 
-答：要使用 Aspose.Words for .NET 對 Word 文件套用唯讀保護，您可以依照下列步驟操作：
-1. 建立一個實例`Document`類別和一個`DocumentBuilder`目的。
-2. 使用`DocumentBuilder`將內容寫入文件。
-3. 使用以下命令為文件設定密碼`SetPassword`的方法`WriteProtection`目的。
-4. 設定`ReadOnlyRecommended`的財產`WriteProtection`反對`true`建議以唯讀方式開啟文件。
-5. 使用以下命令應用唯讀保護`Protect`的方法`Document`對象，指定`ProtectionType`作為`ReadOnly`.
-6. 使用以下命令儲存受保護的文檔`Save`的方法`Document`目的。
+### 我可以使用 Aspose.Words for .NET 應用其他類型的保護嗎？
+是的，Aspose.Words for .NET 支援各種類型的保護，包括僅允許評論、填寫表單或追蹤變更。
 
-#### Q：我可以使用 Aspose.Words for .NET 刪除 Word 文件的唯讀保護嗎？
-
-答：是的，您可以使用 Aspose.Words for .NET 從 Word 文件中刪除唯讀保護。為此，您可以使用`Unprotect`的方法`Document`類，它從文件中刪除任何現有的保護。
-
-#### Q：我可以在Word文件中設定不同的密碼以進行唯讀保護嗎？
-
-答：不可以，Aspose.Words for .NET 中的唯讀保護不允許您專門為唯讀保護設定單獨的密碼。使用設定的密碼`SetPassword`的方法`WriteProtection`object適用於整個文件的保護，包括唯讀和讀寫保護。
-
-#### Q：使用者可以繞過 Word 文件中的唯讀保護嗎？
-
-答：Word 文件中的唯讀保護旨在阻止和防止意外或未經授權的修改。雖然它提供了一定程度的保護，但具有足夠技術知識或編輯權限的使用者可以繞過它。然而，唯讀保護可以起到威懾作用，並有助於維護文件的完整性。
+### Aspose.Words for .NET 有沒有免費試用版？
+是的，您可以從以下位置下載免費試用版：[Aspose 發佈頁面](https://releases.aspose.com/).

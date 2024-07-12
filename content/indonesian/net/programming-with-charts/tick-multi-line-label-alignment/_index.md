@@ -2,96 +2,126 @@
 title: Centang Penyelarasan Label Multi Garis Dalam Bagan
 linktitle: Centang Penyelarasan Label Multi Garis Dalam Bagan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyelaraskan label multi-baris centang di sumbu bagan menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mencentang perataan label multi-baris dalam bagan menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah terperinci kami. Sempurna untuk pengembang dari semua tingkatan.
 type: docs
 weight: 10
 url: /id/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
+## Perkenalan
 
-Tutorial ini menjelaskan cara menggunakan Aspose.Words untuk .NET untuk mengatur perataan label multi-baris centang di sumbu bagan. Kode sumber yang disediakan menunjukkan cara membuat bagan, mengakses sumbu, dan mengubah perataan label centang.
+Hai, penggemar teknologi! Pernahkah Anda menggaruk-garuk kepala dan bertanya-tanya bagaimana cara mencentang perataan label multi-baris dalam bagan menggunakan Aspose.Words untuk .NET? Jika Anda menganggukkan kepala sekarang, Anda berada di tempat yang tepat! Dalam panduan komprehensif ini, kami akan memandu Anda melewati setiap sudut dan celah proses ini. Dari menyiapkan prasyarat hingga mendalami seluk beluk pengkodean, kami siap membantu Anda. Jadi, ambillah secangkir kopi, duduk santai, dan mari kita mulai!
 
-## Langkah 1: Siapkan proyek
+## Prasyarat
 
-Pastikan Anda memiliki prasyarat berikut:
+Sebelum kita mendalami dunia penyelarasan label multi-baris, pastikan Anda sudah menyiapkan semua hal secara berurutan. Inilah yang Anda perlukan:
 
-- Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
-- Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
+1.  Aspose.Words for .NET: Pastikan Anda memiliki Aspose.Words for .NET versi terbaru. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+2. Lingkungan .NET: Pastikan lingkungan pengembangan Anda diatur dengan .NET.
+3. Pengetahuan Dasar C#: Pemahaman mendasar tentang C# akan membuat perjalanan ini lebih lancar.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Impor Namespace
 
- Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
+Sebelum kita mulai coding, mari impor namespace yang diperlukan. Langkah ini penting karena memungkinkan kita mengakses fungsionalitas Aspose.Words untuk .NET dengan lancar.
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
 
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+Hal pertama yang pertama, kita perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda akan disimpan.
+
+
+ Mari tentukan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen Anda.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Langkah 2: Buat Dokumen Baru
+
+Sekarang, mari buat dokumen Word baru. Dokumen ini akan berfungsi sebagai kanvas untuk bagan kita.
+
+ Kita akan mulai dengan menginisialisasi instance baru dari`Document` kelas.
+
+```csharp
 Document doc = new Document();
+```
+
+## Langkah 3: Gunakan DocumentBuilder
+
+ Itu`DocumentBuilder` kelas di Aspose.Words adalah alat yang ampuh yang membantu dalam membuat dokumen. Kami akan menggunakannya untuk memasukkan grafik ke dalam dokumen kami.
+
+ Inisialisasi sebuah instance dari`DocumentBuilder` kelas, meneruskan objek dokumen kita ke konstruktornya.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Selanjutnya, gunakan`InsertChart` metode`DocumentBuilder` untuk menyisipkan diagram sebar ke dalam dokumen.
+## Langkah 4: Sisipkan Bagan
+
+Mari masukkan bagan ke dalam dokumen kita. Kami akan menggunakan diagram sebar untuk contoh ini.
+
+ Menggunakan`InsertChart` metode`DocumentBuilder` kelas, kita dapat menyisipkan diagram sebar ke dalam dokumen kita.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
+```
+
+## Langkah 5: Akses Sumbu Bagan
+
+Untuk mengubah perataan label, kita perlu mengakses sumbu X pada bagan kita.
+
+Kita akan mendapatkan sumbu X dari bentuk grafik kita.
+
+```csharp
 ChartAxis axis = shape.Chart.AxisX;
 ```
 
-## Langkah 3: Atur perataan label centang
+## Langkah 6: Atur Perataan Label Centang
 
- Untuk mengatur perataan label multi-baris centang, akses`AxisX` properti bagan dan atur`TickLabelAlignment` properti ke keselarasan yang diinginkan. Dalam contoh ini, kami mengatur perataan menjadi`ParagraphAlignment.Right`.
+Sekarang tibalah keajaibannya! Kami akan mengatur perataan label centang untuk label multi-baris.
+
+ Mengatur`TickLabelAlignment` properti sumbu ke`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
 ```
 
-## Langkah 4: Simpan dokumen
+## Langkah 7: Simpan Dokumen
 
- Terakhir, simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode`Document` obyek.
+Terakhir, mari simpan dokumen kita dengan perubahan yang diinginkan.
+
+ Menggunakan`Save` metode`Document` kelas untuk menyimpan dokumen di direktori yang ditentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```
 
-Ini menyelesaikan implementasi pengaturan penyelarasan label multi-baris centang menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk Centang Penyelarasan Label Multi Baris menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
-	ChartAxis axis = shape.Chart.AxisX;
-	// Properti ini hanya berlaku untuk label multi-baris.
-	axis.TickLabelAlignment = ParagraphAlignment.Right;
-	doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
-```
-
 ## Kesimpulan
 
-Dalam tutorial ini, Anda telah mempelajari cara mengatur perataan label multi-baris centang di sumbu bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, Anda dapat membuat dokumen baru, menyisipkan diagram sebar, mengakses sumbu diagram, dan mengubah perataan label centang.
+Dan itu dia! Anda telah berhasil mencentang perataan label multi-baris dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menyesuaikan grafik untuk memenuhi kebutuhan spesifik Anda. Baik Anda menyiapkan laporan profesional atau sekadar bereksperimen, Aspose.Words untuk .NET memberikan fleksibilitas dan kekuatan untuk menyelesaikan pekerjaan. Selamat membuat kode!
 
-Aspose.Words untuk .NET menyediakan fitur canggih untuk memanipulasi bagan di dokumen Word. Centang label multi-baris berguna ketika label sumbu berisi teks panjang yang memerlukan pembungkusan atau pemisahan menjadi beberapa baris. Dengan mengatur perataan label centang, Anda dapat mengontrol perataan horizontal label multi-baris dalam sumbu bagan, memastikan presentasi dan keterbacaan yang optimal.
+## FAQ
 
-Menyesuaikan perataan label multi-baris centang memungkinkan Anda menyempurnakan tampilan bagan Anda, terutama saat menangani label yang panjang atau rumit. Dengan menyelaraskan label ke kanan, kiri, tengah, atau rata, Anda dapat memperoleh susunan label centang yang seimbang dan menarik secara visual di sepanjang sumbu.
+### Apa itu Aspose.Words untuk .NET?
 
-Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah mengakses dan memodifikasi properti perataan label centang pada sumbu bagan, memberi Anda kontrol penuh atas tampilan dan tata letak label centang di bagan dokumen Word Anda.
+ Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram. Anda dapat mempelajarinya lebih lanjut[Di Sini](https://reference.aspose.com/words/net/).
 
-### FAQ
+### Bagaimana cara menginstal Aspose.Words untuk .NET?
 
-#### Q1. Apa yang dimaksud dengan label multi-baris centang pada sumbu bagan?
-Centang label multi-baris dalam sumbu bagan mengacu pada label sumbu yang membentang di beberapa baris ketika teks label panjang atau memerlukan pembungkusan agar sesuai dengan ruang yang tersedia. Daripada memotong teks label atau menyebabkan kekacauan visual, sumbu bagan secara otomatis membagi label menjadi beberapa baris untuk memastikan keterbacaan. Centang label multi-baris sangat berguna ketika menangani kategori panjang atau label nilai dalam bagan.
+ Anda dapat mengunduh Aspose.Words untuk .NET dari[situs web](https://releases.aspose.com/words/net/)Ikuti petunjuk instalasi yang disediakan di sana.
 
-#### Q2. Bisakah saya menyesuaikan perataan label centang pada sumbu bagan?
- Ya, Anda dapat mengkustomisasi perataan label centang di sumbu bagan menggunakan Aspose.Words untuk .NET. Dengan mengakses`TickLabelAlignment` properti dari`ChartAxis` objek, Anda dapat mengatur perataan yang diinginkan untuk label centang. Opsi perataan mencakup perataan kiri, kanan, tengah, atau rata. Menyesuaikan perataan memungkinkan Anda mengontrol posisi horizontal label centang di sepanjang sumbu bagan, memastikan keterbacaan dan presentasi visual yang tepat.
+### Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
 
-#### Q3. Kapan saya harus mempertimbangkan untuk mengubah perataan label centang pada sumbu bagan?
-Mengubah perataan label centang pada sumbu bagan bermanfaat bila Anda memiliki label panjang atau multi-baris yang memerlukan presentasi dan keterbacaan optimal. Dengan menyesuaikan perataannya, Anda dapat memastikan bahwa label telah disejajarkan dan diberi jarak dengan benar, menghindari tumpang tindih atau terpotong. Pertimbangkan untuk mengubah perataan label centang ketika berhadapan dengan bagan yang memiliki nama kategori panjang, label nilai yang panjang, atau skenario lainnya di mana perataan default tidak memberikan tampilan visual yang diinginkan.
+ Asumsikan penawaran a[uji coba gratis](https://releases.aspose.com/) yang dapat Anda gunakan untuk mengevaluasi produk. Untuk akses penuh, Anda perlu membeli lisensi.
 
-#### Q4. Apakah perataan label centang memengaruhi label satu baris pada sumbu bagan?
-Tidak, properti penyelarasan label centang tidak memengaruhi label satu baris di sumbu bagan. Ini dirancang khusus untuk label multi-garis yang memerlukan pembungkus atau pemisahan. Label satu baris disejajarkan berdasarkan pengaturan perataan default sumbu bagan. Properti penyelarasan label centang hanya berlaku untuk label yang tersebar di beberapa baris, sehingga Anda dapat mengontrol perataan setiap baris dalam label multi-baris.
+### Di mana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?
 
-#### Q5. Bisakah saya menyelaraskan label centang secara berbeda untuk sumbu X dan sumbu Y pada bagan?
- Ya, Anda dapat menyelaraskan label centang secara berbeda untuk sumbu X dan sumbu Y dalam bagan menggunakan Aspose.Words untuk .NET. Properti perataan label centang khusus untuk setiap sumbu bagan. Dengan mengakses yang sesuai`ChartAxis` objek untuk sumbu X atau sumbu Y, Anda dapat secara mandiri mengatur perataan label centang ke nilai yang berbeda. Hal ini memberi Anda fleksibilitas untuk menyelaraskan label centang secara berbeda berdasarkan kebutuhan spesifik Anda untuk setiap sumbu dalam bagan.
+ Anda bisa mendapatkan dukungan dari[Asumsikan forum komunitas](https://forum.aspose.com/c/words/8).
+
+### Apa saja persyaratan sistem untuk Aspose.Words untuk .NET?
+
+ Aspose.Words untuk .NET memerlukan lingkungan .NET. Persyaratan sistem khusus dapat ditemukan di[dokumentasi](https://reference.aspose.com/words/net/).

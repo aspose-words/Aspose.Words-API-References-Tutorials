@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Sayfa Numaralandırma
 
- Gibi alanları kullanarak üstbilgilerinize ve altbilgilerinize sayfa numaraları ekleyebilirsiniz.`PAGE` Ve`NUMPAGES`. Bu alanlar siz sayfa ekledikçe veya çıkardıkça otomatik olarak güncellenir.
+ Gibi alanları kullanarak üstbilgilerinize ve altbilgilerinize sayfa numaraları ekleyebilirsiniz.`PAGE`Ve`NUMPAGES`. Bu alanlar siz sayfa ekledikçe veya çıkardıkça otomatik olarak güncellenir.
 
 ## 9. Alt Bilgilerdeki Telif Hakkı Bilgileri
 

@@ -42,7 +42,7 @@ Aspose.Words for Java でドキュメントのセキュリティを強化しま�
 ### [ドキュメントの分割](./document-splitting/)
 Aspose.Words for Java を使用すると、ドキュメントを簡単に分割できます。ページ範囲、段落数、またはカスタム基準に基づいて、大きなファイルを効率的に分割します。
 ### [文書の改訂](./document-revision/)
-Aspose.Words for Java でドキュメントの改訂を効率化しましょう。変更を追跡し、バージョン管理を管理し、改訂タスクを簡単に自動化できます。 
+Aspose.Words for Java でドキュメントの改訂を効率化しましょう。変更を追跡し、バージョン管理を行い、改訂タスクを簡単に自動化できます。 
 ### [ドキュメントの読み込みと保存](./document-loading-and-saving/)
 弊社の包括的なチュートリアルで、Aspose.Words for Java を使用してドキュメントを簡単に読み込み、保存する方法を学びましょう。今すぐ Java ドキュメント処理スキルを高めましょう。
 ### [ドキュメント操作](./document-manipulation/)

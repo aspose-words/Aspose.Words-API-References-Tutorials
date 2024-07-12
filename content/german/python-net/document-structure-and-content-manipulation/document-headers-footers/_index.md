@@ -1,7 +1,7 @@
 ---
 title: Kopf- und Fußzeilen in Word-Dokumenten bearbeiten
 linktitle: Kopf- und Fußzeilen in Word-Dokumenten bearbeiten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie Kopf- und Fußzeilen in Word-Dokumenten mit Aspose.Words für Python bearbeiten. Schritt-für-Schritt-Anleitung mit Quellcode zum Anpassen, Hinzufügen, Entfernen und mehr. Verbessern Sie jetzt die Formatierung Ihres Dokuments!
 type: docs
 weight: 16
@@ -150,4 +150,4 @@ Ja, Sie können den Inhalt von Kopf- und Fußzeilen löschen, um sie effektiv zu
 
 ### Wo kann ich mehr über Aspose.Words für Python erfahren?
 
-Ausführlichere Dokumentation und Beispiele finden Sie im[Aspose.Words für Python API-Referenz](https://reference.aspose.com/words/python-net/).
+Ausführlichere Dokumentationen und Beispiele finden Sie im[Aspose.Words für Python API-Referenz](https://reference.aspose.com/words/python-net/).

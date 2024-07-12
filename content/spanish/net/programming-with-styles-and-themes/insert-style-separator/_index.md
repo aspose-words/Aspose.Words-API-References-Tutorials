@@ -106,7 +106,7 @@ Para configurar el entorno, debe asegurarse de tener Aspose.Words para .NET inst
 
 #### ¿Cómo puedo aplicar diferentes estilos a diferentes secciones de texto?
 
- Puede aplicar diferentes estilos a diferentes secciones de texto configurando el`ParagraphFormat.StyleName` propiedad de la`DocumentBuilder`objeto. Antes de escribir el texto, puede configurar el nombre del estilo en el estilo deseado y el texto siguiente tendrá el formato correspondiente.
+Puede aplicar diferentes estilos a diferentes secciones de texto configurando el`ParagraphFormat.StyleName` propiedad de la`DocumentBuilder` objeto. Antes de escribir el texto, puede configurar el nombre del estilo en el estilo deseado y el texto siguiente tendrá el formato correspondiente.
 
 #### ¿Puedo guardar el documento en diferentes formatos?
 

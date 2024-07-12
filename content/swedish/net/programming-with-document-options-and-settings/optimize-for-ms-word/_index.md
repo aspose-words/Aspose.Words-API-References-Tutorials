@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-document-options-and-settings/optimize-for-ms-word/
 ---
 
-den här handledningen går vi igenom C#-källkoden för att optimera ett dokument för MS Word med Aspose.Words för .NET. Med den här funktionen kan du optimera ett dokument för en specifik version av MS Word.
+I den här handledningen går vi igenom C#-källkoden för att optimera ett dokument för MS Word med Aspose.Words för .NET. Med den här funktionen kan du optimera ett dokument för en specifik version av MS Word.
 
 ## Steg 1: Projektinställning
 

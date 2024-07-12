@@ -2,70 +2,104 @@
 title: Csatlakozz a Continuoushoz
 linktitle: Csatlakozz a Continuoushoz
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan kapcsolhat össze két dokumentumot folyamatosan a formázás megőrzése mellett az Aspose.Words for .NET használatával.
+description: Ismerje meg, hogyan lehet zökkenőmentesen összekapcsolni két Word-dokumentumot az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat a zökkenőmentes és hatékony dokumentumegyesítés érdekében.
 type: docs
 weight: 10
 url: /hu/net/join-and-append-documents/join-continuous/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan lehet két dokumentumot folyamatosan összekapcsolni az Aspose.Words for .NET használatával. A mellékelt forráskód bemutatja, hogyan lehet egy dokumentumot hozzáfűzni egy másik dokumentum végéhez, miközben megőrzi az eredeti formázást.
+Szeretnél két Word-dokumentumot zökkenőmentesen, megszakítások nélkül eggyé egyesíteni? Az Aspose.Words for .NET fantasztikus módszert kínál ennek elérésére a Folyamatos szakasztörés funkció használatával. Ez az oktatóanyag lépésről lépésre végigvezeti Önt a folyamaton, így biztosítva, hogy könnyedén, gond nélkül összekapcsolhassa a dokumentumokat. Merüljünk el!
 
-## 1. lépés: Állítsa be a projektet
+## Előfeltételek
 
-Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+Mielőtt elkezdenénk, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
--  Aspose.Words for .NET könyvtár telepítve. Letöltheti innen[Aspose.Releases]https://releases.aspose.com/words/net/ vagy használja a NuGet csomagkezelőt a telepítéséhez.
-- Egy dokumentumkönyvtár elérési útja, ahol a forrás- és céldokumentum található.
+-  Aspose.Words for .NET: Ha még nem tette meg, töltse le és telepítse[Aspose.Words for .NET](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: Használhatja a Visual Studio-t vagy bármely más .NET fejlesztői környezetet.
+- Mintadokumentumok: Készítsen két Word-dokumentumot, amelyeket egyesíteni szeretne.
 
-## 2. lépés: Nyissa meg a forrás- és céldokumentumot
+## Névterek importálása
 
- Nyissa meg a forrás- és céldokumentumot a segítségével`Document` osztályú konstruktőr. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+Az Aspose.Words for .NET használatához importálnia kell a szükséges névtereket a projektbe. Íme, hogyan kell csinálni:
+
+```csharp
+using Aspose.Words;
+```
+
+Most bontsuk le a példát több lépésre az egyértelműség kedvéért.
+
+## 1. lépés: Állítsa be a dokumentumkönyvtárat
+
+Először is be kell állítanunk a könyvtárat, ahol a dokumentumokat tároljuk. Ez lehetővé teszi a kódunknak, hogy megtalálja az egyesíteni kívánt fájlokat.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumokat tárolják.
+
+## 2. lépés: Töltse be a forrás- és céldokumentumot
+
+Ezután betöltjük a forrás és cél dokumentumokat a programunkba. Ez az a két dokumentum, amelyet egyesíteni szeretne.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. lépés: Állítsa be a folyamatos szakaszindítást
+Győződjön meg arról, hogy a fájlnevek és elérési utak megegyeznek a ténylegesen használni kívánt fájlokkal.
 
-Ha azt szeretné, hogy a forrásdokumentum közvetlenül a céldokumentum tartalma után jelenjen meg, állítsa be a`SectionStart` a forrásdokumentum első szakaszának tulajdonsága`SectionStart.Continuous`.
+## 3. lépés: Állítsa be a szakasz kezdetét folyamatosként
+
+ Ahhoz, hogy a forrásdokumentum tartalma közvetlenül a céldokumentum után jelenjen meg, be kell állítanunk a`SectionStart` a forrásdokumentum első szakaszának tulajdonsága`Continuous`.
 
 ```csharp
+// A dokumentum közvetlenül a céldokumentum tartalma után jelenjen meg.
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
+Ez biztosítja, hogy ne legyenek szünetek a dokumentumok között, amikor egyesítik őket.
+
 ## 4. lépés: Csatolja a forrásdokumentumot
 
- Csatlakoztassa a forrásdokumentumot a céldokumentumhoz a gombbal`AppendDocument` módszere a`Document` osztály. Állítsa be az importálási formátum módot`ImportFormatMode.KeepSourceFormatting` hogy megőrizze az eredeti stílusokat a forrásdokumentumból.
+Most hozzáfűzzük a forrásdokumentumot a céldokumentumhoz. Ez a lépés biztosítja, hogy a forrásdokumentum tartalma hozzáadásra kerüljön a céldokumentum végéhez.
 
 ```csharp
+// A forrásdokumentum hozzáfűzése a forrásdokumentumban található eredeti stílusok használatával.
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 5. lépés: Mentse el a módosított dokumentumot
+ Használata`ImportFormatMode.KeepSourceFormatting` biztosítja, hogy a forrásdokumentum formázása megmaradjon a végleges egyesített dokumentumban.
 
-Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+## 5. lépés: Mentse el az egyesített dokumentumot
+
+Végül elmentjük az egyesített dokumentumot a megadott könyvtárba. Ezzel befejeződik a dokumentumok egyesítésének folyamata.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```
 
-Ezzel befejeződik a két dokumentum Aspose.Words for .NET segítségével történő folyamatos összekapcsolásának megvalósítása.
+Győződjön meg arról, hogy az elérési út és a fájlnév megfelel az Ön igényeinek.
 
-### Példa a Join Continuous for Aspose.Words for .NET forráskódjához 
+## Következtetés
 
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+És megvan! Néhány sornyi kóddal sikeresen egyesített két Word-dokumentumot egy folyamatos dokumentummá az Aspose.Words for .NET segítségével. Ez a folyamat nem csak egyszerű, hanem rendkívül hatékony is, biztosítva, hogy a dokumentumok megőrizzék eredeti formázásukat.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// A dokumentum közvetlenül a céldokumentum tartalma után jelenjen meg.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// A forrásdokumentum hozzáfűzése a forrásdokumentumban található eredeti stílusok használatával.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
-```
+## GYIK
+
+### Összevonhatok kettőnél több dokumentumot?
+Igen, megismételheti a folyamatot több dokumentum egyesítéséhez további dokumentumok betöltésével és egymás utáni hozzáfűzésével.
+
+### Megőrzik az eredeti formázást?
+ Igen, használ`ImportFormatMode.KeepSourceFormatting` biztosítja a forrásdokumentum formázásának megőrzését.
+
+### Az Aspose.Words for .NET kompatibilis a .NET Core-al?
+Igen, az Aspose.Words for .NET kompatibilis a .NET-keretrendszerrel és a .NET Core-val is.
+
+### Összevonhatok dokumentumokat különböző oldalbeállításokkal?
+Igen, de előfordulhat, hogy módosítania kell az oldalbeállítás tulajdonságait a zökkenőmentes egyesítés érdekében.
+
+### Hol kaphatok támogatást, ha problémákba ütközöm?
+ Támogatást kaphat az Aspose közösségi fórumtól[itt](https://forum.aspose.com/c/words/8).

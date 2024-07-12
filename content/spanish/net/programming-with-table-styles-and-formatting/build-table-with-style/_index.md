@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Paso 7: agregar contenido a las celdas
- Ahora podemos agregar contenido a las celdas usando el`Writeln()` y`InsertCell()` métodos del creador de documentos. En este ejemplo, agregamos los encabezados para "Artículo" y "Cantidad (
+ Ahora podemos agregar contenido a las celdas usando el`Writeln()`y`InsertCell()` métodos del creador de documentos. En este ejemplo, agregamos los encabezados para "Artículo" y "Cantidad (
 
 kg)" y los datos correspondientes.
 

@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Voeg het IF-veld in het document in.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Evalueer de ALS-voorwaarde.
+// Evalueer de ALS-voorwaarde.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Geef het resultaat van de evaluatie weer.

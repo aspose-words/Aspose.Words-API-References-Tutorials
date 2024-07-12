@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## Stap 3: Wijzig de macrobroncode
- We gaan nu de broncode van de eerste macro van het VBA-project aanpassen. Vervang de`newSourceCode` variabele met de nieuwe broncode die u wilt gebruiken.
+We gaan nu de broncode van de eerste macro van het VBA-project aanpassen. Vervang de`newSourceCode` variabele met de nieuwe broncode die u wilt gebruiken.
 
 ```csharp
 const string newSourceCode = "Test change source code";

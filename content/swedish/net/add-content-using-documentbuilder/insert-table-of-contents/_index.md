@@ -36,7 +36,7 @@ Låt oss dela upp processen i tydliga steg:
  Initiera först en ny Aspose.Words`Document` föremål och ett`DocumentBuilder` att arbeta med:
 
 ```csharp
-// Initiera Document and DocumentBuilder
+// Initiera Document och DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

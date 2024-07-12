@@ -85,7 +85,7 @@ Console.WriteLine(table.Rows[2].Cells[3].GetText().Trim());
  예, 올바른 테이블 인덱스를 지정하면 됩니다.`MoveToCell` 방법을 사용하면 문서 내의 모든 테이블에 있는 모든 셀로 이동할 수 있습니다.
 
 ### 여러 행이나 열에 걸쳐 있는 셀을 어떻게 처리합니까?
- 당신은 사용할 수 있습니다`RowSpan` 그리고`ColSpan` 의 속성`Cell` 병합된 셀을 관리하는 클래스입니다.
+ 당신은 사용할 수 있습니다`RowSpan`그리고`ColSpan` 의 속성`Cell` 병합된 셀을 관리하는 클래스입니다.
 
 ### 셀 안의 텍스트 서식을 지정할 수 있나요?
  전적으로! 사용`DocumentBuilder` 같은 방법`Font.Size`, `Font.Bold`및 기타 텍스트 형식을 지정합니다.

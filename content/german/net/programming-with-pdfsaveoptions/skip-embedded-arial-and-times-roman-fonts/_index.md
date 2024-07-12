@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Dokument hochladen
 
-Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Rendering.docx“ heißt und sich im angegebenen Dokumentverzeichnis befindet.
+Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Rendering.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -67,7 +67,7 @@ In diesem Tutorial haben wir erklärt, wie Sie die Einbettung der Schriftarten A
 ### Häufig gestellte Fragen
 
 #### F: Was bedeutet das Deaktivieren der Einbettung der Schriftarten Arial und Times Roman in ein PDF-Dokument und warum ist das wichtig?
-A: Wenn Sie die Einbettung der Schriftarten Arial und Times Roman in einem PDF-Dokument deaktivieren, werden diese Schriftarten nicht in die generierte PDF-Datei aufgenommen. Dies kann wichtig sein, um die Größe der PDF-Datei zu reduzieren, indem die Einbindung von Schriftarten vermieden wird, die bereits allgemein in PDF-Lesesystemen verfügbar sind. Es kann auch dazu beitragen, eine bessere Kompatibilität und ein einheitliches Erscheinungsbild des PDF-Dokuments auf verschiedenen Geräten und Plattformen sicherzustellen.
+A: Durch das Deaktivieren der Einbettung der Schriftarten Arial und Times Roman in ein PDF-Dokument werden diese Schriftarten nicht in die generierte PDF-Datei aufgenommen. Dies kann wichtig sein, um die Größe der PDF-Datei zu reduzieren, indem die Einbindung von Schriftarten vermieden wird, die bereits allgemein in PDF-Lesesystemen verfügbar sind. Es kann auch dazu beitragen, eine bessere Kompatibilität und ein einheitliches Erscheinungsbild des PDF-Dokuments auf verschiedenen Geräten und Plattformen sicherzustellen.
 
 #### F: Wie kann ich Aspose.Words für .NET so konfigurieren, dass die Schriftarten Arial und Times Roman nicht in ein PDF-Dokument eingebettet werden?
 A: Um Aspose.Words für .NET so zu konfigurieren, dass die Schriftarten Arial und Times Roman nicht in ein PDF-Dokument eingebettet werden, befolgen Sie diese Schritte:

@@ -17,14 +17,14 @@ Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder`belgeyle çalışmaya itiraz edin.
+ Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmaya itiraz edin.
 
 ```csharp
 Document doc = new Document();
@@ -137,4 +137,4 @@ doc
 	doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-Bu kadar! Aspose.Words for .NET'i kullanarak Word belgesindeki bir tablo hücresindeki şekli başarıyla yerleştirdiniz.
+Bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tablo hücresindeki şekli başarıyla yerleştirdiniz.

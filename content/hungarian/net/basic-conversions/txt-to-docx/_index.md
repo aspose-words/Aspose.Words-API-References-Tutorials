@@ -65,4 +65,4 @@ Igen, az Aspose.Words különféle .NET-keretrendszereket támogat, biztosítva 
 Igen, az Aspose.Words API-k segítségével több szövegfájl kötegelt feldolgozására is lehetőség nyílik a dokumentumkonverziós feladatok egyszerűsítésére.
 
 ### Hol találok további forrásokat és támogatást az Aspose.Words számára?
- Meglátogatni a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) és[támogatói fórum](https://forum.aspose.com/c/words/8) további információkért és segítségért.
+ Meglátogatni a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatói fórum](https://forum.aspose.com/c/words/8) további információkért és segítségért.

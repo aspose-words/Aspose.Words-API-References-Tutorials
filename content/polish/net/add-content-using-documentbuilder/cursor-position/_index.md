@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Zainicjuj dokument
 
- Zacznijmy od utworzenia nowego dokumentu Word. Skorzystamy z`Document` I`DocumentBuilder` klasy z Aspose.Words.
+ Zacznijmy od utworzenia nowego dokumentu Word. Skorzystamy z`Document`I`DocumentBuilder` klasy z Aspose.Words.
 
 ```csharp
 Document doc = new Document();

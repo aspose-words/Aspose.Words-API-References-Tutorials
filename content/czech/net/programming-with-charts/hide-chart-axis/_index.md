@@ -2,24 +2,39 @@
 title: Skrýt osu grafu v dokumentu aplikace Word
 linktitle: Skrýt osu grafu v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se skrýt osu grafu v dokumentu pomocí Aspose.Words for .NET. Skrytím osy získáte čistší a cílenější zobrazení grafu.
+description: Naučte se, jak skrýt osu grafu v dokumentu aplikace Word pomocí Aspose.Words for .NET, pomocí našeho podrobného výukového programu krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-charts/hide-chart-axis/
 ---
+## Úvod
 
-Tento tutoriál vysvětluje, jak pomocí Aspose.Words for .NET skrýt osu grafu v dokumentu. Poskytnutý zdrojový kód ukazuje, jak vytvořit graf, přidat data řady a skrýt osu grafu.
+Vytváření dynamických a vizuálně přitažlivých dokumentů aplikace Word často zahrnuje začlenění tabulek a grafů. Jeden takový scénář může vyžadovat skrytí osy grafu pro čistší prezentaci. Aspose.Words for .NET poskytuje komplexní a snadno použitelné API pro takové úkoly. Tento výukový program vás provede kroky ke skrytí osy grafu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Ujistěte se, že máte následující předpoklady:
+Než se pustíme do výukového programu, ujistěte se, že máte následující předpoklady:
 
-- Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
-- Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Jakékoli IDE, které podporuje vývoj .NET, jako je Visual Studio.
+- .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
+- Základní znalost C#: Výhodou bude znalost programovacího jazyka C#.
 
-## Krok 2: Vytvořte nový dokument a vložte graf
+## Importovat jmenné prostory
 
- Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
+Chcete-li začít pracovat s Aspose.Words for .NET, musíte do projektu importovat požadované jmenné prostory. Můžete to udělat takto:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Pojďme si tento proces rozdělit do jednoduchých, snadno pochopitelných kroků.
+
+## Krok 1: Inicializujte Document a DocumentBuilder
+
+První krok zahrnuje vytvoření nového dokumentu aplikace Word a inicializaci objektu DocumentBuilder.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
@@ -29,88 +44,78 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Dále vložte graf do dokumentu pomocí`InsertChart` metoda`DocumentBuilder`. V tomto příkladu vložíme sloupcový graf.
+ V tomto kroku definujeme cestu, kam bude dokument uložen. Poté vytvoříme nový`Document` objekt a a`DocumentBuilder` začněte budovat náš dokument.
+
+## Krok 2: Vložte graf
+
+ Dále vložíme do dokumentu graf pomocí`DocumentBuilder` objekt.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Krok 3: Přidejte do grafu data řady
+ Zde vložíme sloupcový graf se zadanými rozměry. The`InsertChart` metoda vrací a`Shape` objekt, který obsahuje graf.
 
-Přidejte do grafu data řady. V tomto příkladu přidáme pět položek a jejich odpovídající hodnoty.
+## Krok 3: Vymažte existující sérii
+
+Před přidáním nových dat do grafu musíme vymazat všechny existující řady.
 
 ```csharp
 chart.Series.Clear();
+```
+
+Tento krok zajistí, že všechna výchozí data z grafu budou odstraněna, čímž se uvolní místo pro nová data, která přidáme jako další.
+
+## Krok 4: Přidejte data série
+
+Nyní do grafu přidáme vlastní datovou řadu.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Krok 4: Skryjte osu grafu
+V tomto kroku přidáme řadu s názvem „Aspose Series 1“ s odpovídajícími kategoriemi a hodnotami.
 
- Chcete-li skrýt osu grafu, otevřete`AxisY` vlastnost grafu a nastavte`Hidden`majetek do`true`.
+## Krok 5: Skryjte osu Y
+
+ Chcete-li skrýt osu Y grafu, jednoduše nastavíme`Hidden` vlastnost osy Y k`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-tomto příkladu skryjeme osu Y grafu.
+Tento řádek kódu skrývá osu Y, takže je v grafu neviditelná.
 
-## Krok 5: Uložte dokument
+## Krok 6: Uložte dokument
 
- Nakonec uložte dokument do určeného adresáře pomocí`Save` metoda`Document` objekt.
+Nakonec dokument uložte do určeného adresáře.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-Tím je implementace skrytí osy grafu pomocí Aspose.Words pro .NET dokončena.
-
-### Příklad zdrojového kódu pro Hide Chart Axis pomocí Aspose.Words pro .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Hidden = true;
-	doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
-```
+Tento příkaz uloží dokument aplikace Word s grafem do zadané cesty.
 
 ## Závěr
 
-V tomto tutoriálu jste se naučili, jak skrýt osu grafu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle podrobného průvodce a pomocí poskytnutého zdrojového kódu můžete vytvořit graf, přidat data sérií a skrýt osu grafu, abyste dosáhli požadovaného vizuálního efektu.
+Gratulujeme! Úspěšně jste se naučili, jak skrýt osu grafu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna usnadňuje programovou manipulaci s dokumenty Wordu. Podle těchto kroků můžete s minimálním úsilím vytvářet přizpůsobené a profesionálně vypadající dokumenty.
 
- Aspose.Words for .NET poskytuje komplexní rozhraní API pro textové zpracování s grafy v dokumentech aplikace Word, které vám umožňuje manipulovat s různými aspekty grafu, včetně vlastností os. Přístupem k`AxisY` vlastnost grafu, můžete skrýt osu Y a odstranit ji z vizualizace grafu.
+## FAQ
 
-Skrytí osy grafu může být užitečné, když se chcete zaměřit na data grafu bez rozptylování čar a popisků os. Poskytuje čistší a minimalistický vzhled grafu.
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonné API pro vytváření, úpravy, konverzi a manipulaci s dokumenty Wordu v aplikacích .NET.
 
-Pomocí Aspose.Words for .NET můžete snadno začlenit možnosti vytváření grafů do svých aplikací .NET a vytvářet profesionálně vypadající dokumenty s přizpůsobenými grafy a skrytými osami grafů.
+### Mohu skrýt obě osy X a Y v grafu?
+ Ano, můžete skrýt obě osy nastavením`Hidden` majetek obou`AxisX`a`AxisY` na`true`.
 
-### Nejčastější dotazy
+### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
+ Ano, můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
 
-#### Q1. Co je Aspose.Words for .NET?
-Aspose.Words for .NET je výkonná knihovna pro zpracování dokumentů, která umožňuje vývojářům vytvářet, manipulovat a ukládat dokumenty Word programově v aplikacích .NET. Poskytuje širokou škálu funkcí pro textové zpracování s prvky dokumentu, včetně grafů a os grafů.
+### Kde najdu další dokumentaci?
+ Podrobnou dokumentaci najdete na Aspose.Words pro .NET[tady](https://reference.aspose.com/words/net/).
 
-#### Q2. Jak mohu nainstalovat Aspose.Words pro .NET?
-Aspose.Words for .NET můžete nainstalovat stažením pomocí správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Aspose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
-
-#### Q3. Mohu skrýt jak osu X, tak osu Y grafu?
- Ano, pomocí Aspose.Words for .NET můžete skrýt jak osu X, tak osu Y grafu. Chcete-li skrýt osu X, můžete získat přístup k`AxisX` vlastnost grafu a nastavte`Hidden`majetek do`true` . Podobně, chcete-li skrýt osu Y, můžete získat přístup k`AxisY` vlastnost a nastavte`Hidden`majetek do`true`. To vám umožní odstranit obě osy z vizualizace grafu.
-
-#### Q4. Mohu po skrytí osu znovu zobrazit?
-Ano, po skrytí můžete osu grafu znovu zobrazit pomocí Aspose.Words for .NET. Chcete-li zobrazit skrytou osu, jednoduše nastavte`Hidden` vlastnost odpovídající`AxisX` nebo`AxisY` namítat proti`false`. Tím se osa v grafu opět zviditelní.
-
-#### Q5. Mohu přizpůsobit další vlastnosti osy grafu?
- Ano, Aspose.Words for .NET umožňuje přizpůsobit různé vlastnosti osy grafu, jako je název osy, popisky, barva čáry a další. Přístupem k`AxisX` a`AxisY` vlastnosti grafu, můžete upravit vlastnosti jako`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, a mnoho dalších. To vám dává jemnou kontrolu nad vzhledem a chováním osy grafu.
-
-#### Q6. Mohu uložit graf se skrytou osou v různých formátech souborů?
- Ano, Aspose.Words for .NET umožňuje uložit dokument obsahující graf se skrytou osou v různých formátech souborů, jako jsou DOCX, PDF, HTML a další. Můžete si vybrat požadovaný výstupní formát na základě vašich požadavků a použít`Save` metoda`Document` objekt pro uložení dokumentu. Skrytá osa zůstane v uloženém dokumentu zachována.
+### Jak mohu získat podporu pro Aspose.Words pro .NET?
+ Můžete získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).

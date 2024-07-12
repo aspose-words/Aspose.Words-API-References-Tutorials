@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/programming-with-shapes/aspect-ratio-locked/
 ---
 
-Tutorial ini menjelaskan cara mengunci atau membuka kunci rasio aspek bentuk dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengunci rasio aspek, Anda dapat mempertahankan proporsi asli bentuk saat mengubah ukurannya.
+Tutorial ini menjelaskan cara mengunci atau membuka kunci rasio aspek bentuk di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengunci rasio aspek, Anda dapat mempertahankan proporsi asli bentuk saat mengubah ukurannya.
 
 ## Prasyarat
 Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
@@ -17,14 +17,14 @@ Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Langkah 2: Buat Dokumen Baru dan DocumentBuilder
- Buat instance baru dari`Document` kelas dan a`DocumentBuilder`keberatan untuk bekerja dengan dokumen tersebut.
+ Buat instance baru dari`Document` kelas dan a`DocumentBuilder` keberatan untuk bekerja dengan dokumen tersebut.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Langkah 3: Sisipkan Bentuk Gambar
- Menggunakan`InsertImage` metode`DocumentBuilder` objek untuk menyisipkan bentuk gambar ke dalam dokumen. Berikan jalur ke file gambar sebagai parameter.
+ Menggunakan`InsertImage` metode`DocumentBuilder`objek untuk menyisipkan bentuk gambar ke dalam dokumen. Berikan jalur ke file gambar sebagai parameter.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  Mengatur`AspectRatioLocked` properti bentuk ke`true` atau`false` untuk mengunci atau membuka kunci rasio aspek.
 
 ```csharp
-shape.AspectRatioLocked = false; //Buka kunci rasio aspek
+shape.AspectRatioLocked = false; // Buka kunci rasio aspek
 ```
 
 ## Langkah 5: Simpan Dokumen

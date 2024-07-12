@@ -17,7 +17,7 @@ url: /ar/net/programming-with-sdt/creating-table-repeating-section-mapped-to-cus
 - المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
+ ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## الخطوة 4: إنشاء جدول وهيكل الجدول
- ابدأ في إنشاء جدول باستخدام`StartTable` طريقة`DocumentBuilder` . إضافة خلايا الجدول والمحتوى باستخدام`InsertCell` و`Write` طُرق.
+ ابدأ في إنشاء جدول باستخدام`StartTable` طريقة`DocumentBuilder` . إضافة خلايا الجدول والمحتوى باستخدام`InsertCell`و`Write` طُرق.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- إنشاء`Row`لتمثيل كل عنصر في القسم المكرر وإلحاقه بعنصر القسم المكرر.
+ إنشاء`Row` لتمثيل كل عنصر في القسم المكرر وإلحاقه بعنصر القسم المكرر.
 
 ```csharp
 Row row = new Row(doc);

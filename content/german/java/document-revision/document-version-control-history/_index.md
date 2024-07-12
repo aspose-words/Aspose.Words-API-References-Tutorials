@@ -57,7 +57,7 @@ builder.writeln("Updated content goes here.");
 Nachdem Sie Änderungen vorgenommen haben, können Sie diese überprüfen und akzeptieren oder ablehnen. Dieser Schritt stellt sicher, dass nur genehmigte Änderungen in das endgültige Dokument aufgenommen werden.
 
 ```java
-// Änderungen annehmen oder ablehnen
+// Änderungen akzeptieren oder ablehnen
 doc.acceptAllRevisions();
 ```
 

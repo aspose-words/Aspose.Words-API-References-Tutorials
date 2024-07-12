@@ -11,7 +11,7 @@ Trong thế giới kỹ thuật số phát triển nhanh chóng ngày nay, xử 
 
 ## Cài đặt Aspose.Words
 
- Trước khi đi sâu vào chi tiết, bạn cần thiết lập Aspose.Words cho Python. Bạn có thể tải xuống và cài đặt nó bằng liên kết sau:[Tải xuống Aspose.Words cho Python](https://releases.aspose.com/words/python/). 
+Trước khi đi sâu vào chi tiết, bạn cần thiết lập Aspose.Words cho Python. Bạn có thể tải xuống và cài đặt nó bằng liên kết sau:[Tải xuống Aspose.Words cho Python](https://releases.aspose.com/words/python/). 
 
 ## Kết hợp tài liệu
 
@@ -127,7 +127,7 @@ Có, bạn có thể thực hiện bản sao nông để chỉ sao chép cấu t
  Sử dụng`range.replace()` phương pháp cùng với các tùy chọn thích hợp để tìm và thay thế văn bản một cách hiệu quả.
 
 ### Aspose.Words có hỗ trợ sửa đổi định dạng không?
-Tuyệt đối, bạn có thể sửa đổi định dạng bằng các phương pháp như`run.font.size` Và`run.font.bold`.
+Tuyệt đối, bạn có thể sửa đổi định dạng bằng các phương pháp như`run.font.size`Và`run.font.bold`.
 
 ### Tôi có thể truy cập tài liệu Aspose.Words ở đâu?
  Bạn có thể tìm thấy tài liệu đầy đủ tại[Aspose.Words để tham khảo API Python](https://reference.aspose.com/words/python-net/).

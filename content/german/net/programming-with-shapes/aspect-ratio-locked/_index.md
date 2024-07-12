@@ -17,14 +17,14 @@ Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 - Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Einrichten des Dokumentverzeichnisses
- Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Schritt 2: Neues Dokument und DocumentBuilder erstellen
- Erstellen Sie eine neue Instanz des`Document` Klasse und eine`DocumentBuilder`Objekt, um mit dem Dokument zu arbeiten.
+ Erstellen Sie eine neue Instanz des`Document` Klasse und eine`DocumentBuilder` Objekt, um mit dem Dokument zu arbeiten.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Schritt 3: Einfügen einer Bildform
- Verwenden Sie die`InsertImage` Methode der`DocumentBuilder` Objekt, um eine Bildform in das Dokument einzufügen. Geben Sie den Pfad zur Bilddatei als Parameter an.
+ Verwenden Sie die`InsertImage` Methode der`DocumentBuilder`Objekt, um eine Bildform in das Dokument einzufügen. Geben Sie den Pfad zur Bilddatei als Parameter an.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  Legen Sie die`AspectRatioLocked` Eigenschaft der Form zu`true` oder`false` um das Seitenverhältnis zu sperren bzw. zu entsperren.
 
 ```csharp
-shape.AspectRatioLocked = false; //Entsperren Sie das Seitenverhältnis
+shape.AspectRatioLocked = false; // Entsperren Sie das Seitenverhältnis
 ```
 
 ## Schritt 5: Speichern Sie das Dokument

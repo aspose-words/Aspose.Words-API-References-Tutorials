@@ -2,76 +2,87 @@
 title: 列表保留源格式
 linktitle: 列表保留源格式
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 连接和附加 Word 文档时保留列表格式。
+description: 了解如何使用 Aspose.Words for .NET 合并 Word 文档并保留格式。本教程提供无缝文档合并的分步指导。
 type: docs
 weight: 10
 url: /zh/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## 介绍
 
-本教程将指导您完成使用 Aspose.Words for .NET 的列表保留源格式功能的过程。此功能允许您加入和附加 Word 文档，同时保留列表的源格式。
+在本教程中，我们将探讨如何利用 Aspose.Words for .NET 合并文档并保留源格式。此功能对于保持文档原始外观至关重要的场景至关重要。
 
 ## 先决条件
 
-开始之前，请确保您已准备好以下物品：
+继续操作之前，请确保您满足以下先决条件：
 
-1. 已安装 Aspose.Words for .NET。您可以从 Aspose 网站下载它或通过 NuGet 安装它。
-2. Visual Studio 或任何其他 C# 开发环境。
+- 您的机器上安装了 Visual Studio。
+- 已安装 Aspose.Words for .NET。您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+- 基本熟悉 C# 编程和 .NET 环境。
 
-## 步骤 1：初始化文档目录
+## 导入命名空间
 
-首先，您需要设置文档目录的路径。修改`dataDir`变量为您的文档所在的路径。
+首先，将必要的命名空间导入到您的 C# 项目中：
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## 步骤 2：加载源文档和目标文档
+## 步骤 1：设置你的项目
 
-接下来，您需要使用 Aspose.Words 加载源文档和目标文档`Document`类。更新`Document`根据您的文档名称构造函数。
+首先在 Visual Studio 中创建一个新的 C# 项目。确保您的项目中引用了 Aspose.Words for .NET。如果没有，您可以通过 NuGet 包管理器添加它。
+
+## 第 2 步：初始化文档变量
 
 ```csharp
+//文档目录的路径
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+//加载源文档和目标文档
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## 步骤 3：将源文档设置为连续流动
+## 步骤 3：配置部分设置
 
-为了确保源文档的内容在附加到目标文档时连续流动，您需要设置`SectionStart`源文档第一节的属性`SectionStart.Continuous`.
+为了保持合并文档的连续流程，请调整章节开头：
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## 步骤 4：将源文档附加到目标文档
+## 步骤 4：合并文档
 
-现在，您可以使用`AppendDocument`方法`Document`类。`ImportFormatMode.KeepSourceFormatting`参数确保在附加操作期间保留源格式（包括列表的格式）。
+附加源文档的内容（`srcDoc`）复制到目标文档（`dstDoc`) 同时保留原始格式：
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 步骤 5：保存最终文档
+## 步骤 5：保存合并文档
 
-最后，使用`Save`方法`Document`班级。
+最后，将合并后的文档保存到您指定的目录中：
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### 使用 Aspose.Words for .NET 的列表保留源格式的示例源代码 
+## 结论
 
-以下是使用 Aspose.Words for .NET 的 C# 中的列表保留源格式功能的完整源代码：
+总之，使用 Aspose.Words for .NET 合并文档并保留其原始格式非常简单。本教程将指导您完成整个过程，确保合并后的文档保留源文档的布局和样式。
 
-```csharp
-	//文档目录的路径
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## 常见问题解答
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//附加文档内容以使其连续流动。
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### 如果我的文档有不同的风格怎么办？
+Aspose.Words 可以优雅地处理不同的风格，尽可能地保留原始格式。
 
-就是这样！您已成功使用 Aspose.Words for .NET 实现了列表保留源格式功能。最终文档将包含合并的内容，并保留源文档的列表格式。
+### 我可以合并不同格式的文档吗？
+是的，Aspose.Words 支持合并各种格式的文档，包括 DOCX、DOC、RTF 等。
+
+### Aspose.Words 与 .NET Core 兼容吗？
+是的，Aspose.Words 完全支持.NET Core，实现跨平台开发。
+
+### 如何才能高效地处理大型文档？
+Aspose.Words 提供了用于文档操作的高效 API，即使对于大型文档也能实现性能优化。
+
+### 在哪里可以找到更多示例和文档？
+您可以在以下位置探索更多示例和详细文档[Aspose.Words 文档](https://reference.aspose.com/words/net/).

@@ -37,7 +37,7 @@ options. HorizontalResolution = 72f;
 
 在此步驟中，我們配置映像的備份選項。我們創建一個新的`ImageSaveOptions`物件指定所需的儲存格式，此處「Jpeg」表示 JPEG 格式。我們還使用以下命令設定要轉換的頁面範圍`PageSet`目的。最後，我們使用以下命令調整影像的亮度和對比度`ImageBrightness`和`ImageContrast`屬性，分別。我們還使用以下命令更改水平分辨率`HorizontalResolution`財產。
 
-## 步驟 4：備份映像
+## 第 4 步：備份映像
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);

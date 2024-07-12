@@ -58,6 +58,6 @@ Deze code stelt de paginarichting in op liggend, de linkermarge op 50 en het pap
   
 ```
 
-Zorg ervoor dat u het juiste pad opgeeft naar de map waarin u het document wilt opslaan`dataDir` variabel.
+ Zorg ervoor dat u het juiste pad opgeeft naar de map waarin u het document wilt opslaan`dataDir` variabel.
 
 U hebt nu geleerd hoe u de lay-out en sectieopmaak van een document kunt configureren met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u eenvoudig de lay-out en opmaak van uw eigen documenten aanpassen.

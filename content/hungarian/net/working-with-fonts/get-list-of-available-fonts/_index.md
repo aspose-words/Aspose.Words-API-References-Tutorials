@@ -23,14 +23,14 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: Konfigurálja a fontforrásokat
- Ezután létrehozunk egy példányt`FontSettings` és szerezze be a meglévő fontforrásokat a`GetFontsSources()` módszer. A betűtípusokat tartalmazó mappa megadásával egy új fontforrást is hozzáadunk.
+Ezután létrehozunk egy példányt`FontSettings` és szerezze be a meglévő fontforrásokat a`GetFontsSources()` módszer. A betűtípusokat tartalmazó mappa megadásával egy új fontforrást is hozzáadunk.
 
 ```csharp
 // Betűtípus-források konfigurálása
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 
-// Új fontforrás hozzáadása
+// Új betűtípus-forrás hozzáadása
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
 fontSources.Add(folderFontSource);
 
@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Adjon hozzá egy új mappaforrást, amely utasítja az Aspose.Words-t, hogy keressen betűtípusokat a következő mappában.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//Adja hozzá a fontjainkat tartalmazó egyéni mappát a meglévő fontforrások listájához.
+// Adja hozzá a fontjainkat tartalmazó egyéni mappát a meglévő fontforrások listájához.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ V: Igen, szűrheti az Aspose.Words-ben elérhető betűtípusok listáját megha
 
 #### K: Hogyan használhatom a Word dokumentumaimban elérhető betűtípusok listáját?
 
-V: A Word dokumentumokban elérhető betűtípusok listájának használatához böngészhet a listában, és kiválaszthatja a megfelelő betűtípusokat a`FontSettings` osztályban Aspose.Words.
+ V: A Word dokumentumokban elérhető betűtípusok listájának használatához böngészhet a listában, és kiválaszthatja a megfelelő betűtípusokat a`FontSettings` osztályban Aspose.Words.

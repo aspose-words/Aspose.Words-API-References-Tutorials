@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- На этом этапе мы объединяем`Document1.docx` и`Document2.docx` в новый файл с именем`MergedDocument.docx`.
+ На этом этапе мы объединяем`Document1.docx`и`Document2.docx` в новый файл с именем`MergedDocument.docx`.
 
 ## Шаг 3. Объединение с параметрами сохранения.
 
@@ -74,7 +74,7 @@ Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.d
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Здесь мы объединяемся`Document1.docx` и`Document2.docx` и сохраните результат в формате PDF.
+ Здесь мы объединяемся`Document1.docx`и`Document2.docx` и сохраните результат в формате PDF.
 
 ## Шаг 5. Создание экземпляра документа из объединенных документов
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET — это мощная библиотека, котора
 
 ### 3. Как мне обрабатывать различное форматирование во время слияния?
 
- Aspose.Words предоставляет различные режимы формата слияния, такие как`KeepSourceFormatting` и`MergeFormatting` . Обратитесь к[Документация по API](https://reference.aspose.com/words/net/) для получения подробных инструкций.
+ Aspose.Words предоставляет различные режимы формата слияния, такие как`KeepSourceFormatting`и`MergeFormatting` . Обратитесь к[Документация по API](https://reference.aspose.com/words/net/) для получения подробных инструкций.
 
 ### 4. Как мне получить поддержку Aspose.Words для .NET?
 

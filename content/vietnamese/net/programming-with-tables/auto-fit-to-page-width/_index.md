@@ -103,7 +103,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### 3. Làm cách nào để định dạng bảng khác nhau?
 
-Bạn có thể tùy chỉnh định dạng bảng bằng cách sử dụng các phương pháp khác nhau do Aspose.Words cung cấp. Kiểm tra[Tài liệu API](https://reference.aspose.com/words/net/) để được hướng dẫn chi tiết.
+ Bạn có thể tùy chỉnh định dạng bảng bằng cách sử dụng các phương pháp khác nhau do Aspose.Words cung cấp. Kiểm tra[Tài liệu API](https://reference.aspose.com/words/net/) để được hướng dẫn chi tiết.
 
 ### 4. Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
 

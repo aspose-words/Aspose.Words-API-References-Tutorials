@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 
 ## Conclusione
 
-Padroneggiare l'arte di manipolare i campi dei documenti utilizzando Aspose.Words per .NET consente agli sviluppatori di automatizzare i flussi di lavoro dei documenti in modo efficiente. Che si tratti di convertire i campi in testo semplice o di gestire tipi di campi più complessi, Aspose.Words semplifica queste attività con la sua API intuitiva e un robusto set di funzionalità, garantendo una perfetta integrazione nelle applicazioni .NET.
+Padroneggiare l'arte di manipolare i campi dei documenti utilizzando Aspose.Words per .NET consente agli sviluppatori di automatizzare i flussi di lavoro dei documenti in modo efficiente. Sia che si tratti di convertire i campi in testo semplice o di gestire tipi di campi più complessi, Aspose.Words semplifica queste attività con la sua API intuitiva e un robusto set di funzionalità, garantendo una perfetta integrazione nelle applicazioni .NET.
 
 ## Domande frequenti (FAQ)
 

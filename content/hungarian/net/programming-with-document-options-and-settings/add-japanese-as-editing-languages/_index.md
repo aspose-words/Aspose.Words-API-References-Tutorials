@@ -21,7 +21,7 @@ Ebben a lépésben betöltjük azt a Word dokumentumot, amely nem tartalmaz alap
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// Állítsa be a dokumentum betöltésekor használt nyelvi beállításokat.
+//Állítsa be a dokumentum betöltésekor használt nyelvi beállításokat.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -40,7 +40,7 @@ Console.WriteLine(
 		: "The document default FarEast language was set to another than Japanese language originally, so it is not overridden.");
 ```
 
-kód ellenőrzi, hogy a távol-keleti nyelv azonosítója megegyezik-e a japán nyelvével. Az eredménynek megfelelően egy megfelelő üzenetet jelenít meg.
+A kód ellenőrzi, hogy a távol-keleti nyelv azonosítója megegyezik-e a japán nyelvével. Az eredménynek megfelelően egy megfelelő üzenetet jelenít meg.
 
 ### Példa forráskódra a Japán hozzáadása szerkesztési nyelvként az Aspose.Words for .NET használatával forráskódjához
 

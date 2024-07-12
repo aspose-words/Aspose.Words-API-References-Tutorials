@@ -41,7 +41,7 @@ Nu u de woordenboeken heeft geregistreerd, is het tijd om woordafbreking op uw d
 
 ## 5. Afbrekingswoordenboeken laden
 
-In sommige gevallen moet u de woordafbrekingswoordenboeken dynamisch laden. Hierdoor kunt u zich aanpassen aan verschillende taalvereisten. Zo kunt u een woordafbrekingswoordenboek voor een specifieke taal laden:
+In sommige gevallen moet u afbreekwoordenboeken dynamisch laden. Hierdoor kunt u zich aanpassen aan verschillende taalvereisten. Zo kunt u een woordafbrekingswoordenboek voor een specifieke taal laden:
 
 ```java
 Document doc = new Document(dataDir + "German text.docx");

@@ -103,7 +103,7 @@ doc.save("MyDocument_v2.docx");
 
 ### هل يمكنني قبول المراجعات أو رفضها برمجيًا؟
 
- نعم، يمكنك قبول المراجعات أو رفضها باستخدام Aspose.Words for Java. الاستفادة من`acceptAllRevisions` و`rejectAllRevisions` طرق إدارة المراجعات.
+ نعم، يمكنك قبول المراجعات أو رفضها باستخدام Aspose.Words for Java. الاستفادة من`acceptAllRevisions`و`rejectAllRevisions` طرق إدارة المراجعات.
 
 ### هل من الممكن إنشاء إصدارات متعددة من المستند؟
 

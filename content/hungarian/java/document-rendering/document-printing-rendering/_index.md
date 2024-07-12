@@ -60,7 +60,7 @@ Az Aspose.Words for Java lehetővé teszi a nyomtatás és a megjelenítés kül
 
 ## Dokumentumformátumok kezelése
 
-Az Aspose.Words for Java a dokumentumformátumok széles skáláját támogatja, beleértve a DOC, DOCX, RTF, HTML és egyebeket. Különböző formátumú dokumentumokat tölthet be, és különféle kimeneti formátumokba mentheti, így sokoldalúan használható dokumentumfeldolgozási igényeihez.
+Az Aspose.Words for Java a dokumentumformátumok széles skáláját támogatja, beleértve a DOC, DOCX, RTF, HTML és egyebeket. Különböző formátumú dokumentumokat tölthet be, és különféle kimeneti formátumokban mentheti el, így sokoldalúan használható dokumentumfeldolgozási igényeihez.
 
 ## Következtetés
 

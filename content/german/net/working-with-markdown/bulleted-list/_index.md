@@ -85,7 +85,7 @@ A: Ja, es ist möglich, Aufzählungslisten in Markdown zu verschachteln, indem S
 
 #### F: Wie kann ich Aufzählungszeichen anpassen?
 
-A: In Standard-Markdown sind Aufzählungszeichen vordefiniert. Einige Markdown-Editoren ermöglichen es Ihnen jedoch, sie mithilfe bestimmter Erweiterungen anzupassen.
+A: In Standard-Markdown sind Aufzählungszeichen vordefiniert. Einige Markdown-Editoren ermöglichen jedoch die Anpassung dieser Symbole mithilfe bestimmter Erweiterungen.
 
 #### F: Unterstützen Aufzählungslisten in Markdown Einrückungen?
 

@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- ที่นี่ เรากำลังสร้างอินสแตนซ์ของ`Document` และ`DocumentBuilder` - คิดถึง`Document` เป็นเอกสาร Word เปล่าของคุณและ`DocumentBuilder` เป็นปากกาของคุณ
+ ที่นี่ เรากำลังสร้างอินสแตนซ์ของ`Document`และ`DocumentBuilder` - คิดถึง`Document` เป็นเอกสาร Word เปล่าของคุณและ`DocumentBuilder` เป็นปากกาของคุณ
 
 ## ขั้นตอนที่ 2: ย้ายไปที่การเริ่มเอกสาร
 

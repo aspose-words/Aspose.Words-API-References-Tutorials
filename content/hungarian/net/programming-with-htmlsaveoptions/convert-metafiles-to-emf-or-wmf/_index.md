@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Ez a kód létrehozza a`Document` és`DocumentBuilder` a dokumentum felépítéséhez. Beilleszt egy`<img>` címkét a dokumentumba egy base64 kódolású képpel.
+ Ez a kód létrehozza a`Document`és`DocumentBuilder` a dokumentum felépítéséhez. Beilleszt egy`<img>` címkét a dokumentumba egy base64 kódolású képpel.
 
 ## 3. lépés: Állítsa be a HTML mentési beállításokat
 

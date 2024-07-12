@@ -99,11 +99,11 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### 2. Kann ich Aspose.Words für .NET kostenlos nutzen?
 
- Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/). Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
+ Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/)Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
 
 ### 3. Wie formatiere ich Tabellen anders?
 
-Sie können die Tabellenformatierung mithilfe verschiedener Methoden von Aspose.Words anpassen. Überprüfen Sie die[API-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Anweisungen.
+ Sie können die Tabellenformatierung mithilfe verschiedener Methoden von Aspose.Words anpassen. Überprüfen Sie die[API-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Anweisungen.
 
 ### 4. Wie erhalte ich Unterstützung für Aspose.Words für .NET?
 

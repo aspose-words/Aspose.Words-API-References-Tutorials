@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Инициализируйте документ
 
- Начнем с создания нового документа Word. Мы будем использовать`Document` и`DocumentBuilder` классы из Aspose.Words.
+ Начнем с создания нового документа Word. Мы будем использовать`Document`и`DocumentBuilder` классы из Aspose.Words.
 
 ```csharp
 Document doc = new Document();
@@ -80,7 +80,7 @@ Paragraph curParagraph = builder.CurrentParagraph;
 Console.WriteLine("\nCursor is currently at paragraph: " + curParagraph.GetText());
 ```
 
-Эта простая строка кода покажет нам, где находится курсор в документе, и даст нам четкое представление о том, как им управлять.
+Эта простая строка кода покажет нам, где в документе находится курсор, и даст нам четкое представление о том, как им управлять.
 
 ## Шаг 3: Перемещение курсора
 

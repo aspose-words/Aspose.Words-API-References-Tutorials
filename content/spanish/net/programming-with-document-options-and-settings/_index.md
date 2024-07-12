@@ -20,6 +20,6 @@ Los tutoriales explican cómo personalizar las opciones de carga de documentos. 
 | [Limpieza de estilo duplicado](./cleanup-duplicate-style/) | Guía paso a paso para limpiar estilos duplicados en un documento usando Aspose.Words para .NET. Código fuente completo incluido. |
 | [Ver opciones](./view-options/) | Guía paso a paso para configurar las opciones de visualización de documentos con Aspose.Words para .NET. |
 | [Configuración de página del documento](./document-page-setup/) | Guía paso a paso para configurar un diseño de documento con Aspose.Words para .NET. |
-| [Agregar japonés como idiomas de edición](./add-japanese-as-editing-languages/) | Guía paso a paso para agregar japonés como idioma de edición con Aspose.Words para .NET. |
+| [Agregar japonés como idioma de edición](./add-japanese-as-editing-languages/) | Guía paso a paso para agregar japonés como idioma de edición con Aspose.Words para .NET. |
 | [Establecer ruso como idioma de edición predeterminado](./set-russian-as-default-editing-language/) | Guía paso a paso para configurar el ruso como idioma de edición predeterminado de un documento con Aspose.Words para .NET. |
 | [Establecer configuración de página y formato de sección](./set-page-setup-and-section-formatting/) | Guía paso a paso para configurar el diseño y el formato de sección de un documento con Aspose.Words para .NET. |

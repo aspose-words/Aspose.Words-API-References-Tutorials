@@ -2,7 +2,7 @@
 title: 将文本文件转换为 Word 文档
 linktitle: 将文本文件转换为 Word 文档
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 将文本文件转换为 Word 文档。使用我们的综合指南高效管理文档转换。
+description: 了解如何使用 Aspose.Words for .NET 将文本文件转换为 Word 文档。使用我们全面的指南高效管理文档转换。
 type: docs
 weight: 10
 url: /zh/net/basic-conversions/txt-to-docx/

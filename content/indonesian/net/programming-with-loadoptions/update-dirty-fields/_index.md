@@ -66,7 +66,7 @@ J: Tentu saja! Aspose.Words menyediakan berbagai opsi pemuatan yang dapat disesu
 
 #### T: Apa manfaat memperbarui kolom kotor bagi aplikasi saya?
 
-J: Memperbarui kolom kotor memastikan aplikasi C# Anda menampilkan data terbaru di dokumen Word, meningkatkan pengalaman pengguna secara keseluruhan dan keakuratan informasi.
+J: Memperbarui bidang kotor memastikan aplikasi C# Anda menampilkan data terbaru di dokumen Word, meningkatkan pengalaman pengguna secara keseluruhan dan keakuratan informasi.
 
 #### T: Bisakah Aspose.Words menangani format dokumen lain selain Word?
 

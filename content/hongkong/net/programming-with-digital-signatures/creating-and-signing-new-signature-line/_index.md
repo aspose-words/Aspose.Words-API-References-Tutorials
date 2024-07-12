@@ -2,139 +2,116 @@
 title: 建立並簽署新的簽名行
 linktitle: 建立並簽署新的簽名行
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中建立和簽署新的簽名行。
+description: 透過此逐步教學課程，了解如何使用 Aspose.Words for .NET 在 Word 文件中建立簽名行並對其進行數位簽章。非常適合文件自動化。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
-在本教學中，我們將引導您完成使用 Aspose.Words for .NET 建立和簽署新簽章行功能的步驟。此功能可讓您在 Word 文件中插入簽名行、設定自訂選項並簽署文件。請依照以下步驟操作：
+## 介紹
 
-## 第 1 步：建立文件和產生器
+嘿！因此，您有一個 Word 文檔，需要新增簽名行，然後進行數位簽章。聽起來很棘手？一點也不！透過 Aspose.Words for .NET，您只需幾行程式碼即可無縫實現此目的。在本教程中，我們將引導您完成從設定環境到使用閃亮的新簽名保存文件的整個過程。準備好？讓我們深入了解吧！
 
-首先建立 Document 類別的實例和 DocumentBuilder 物件：
+## 先決條件
+
+在我們進入程式碼之前，讓我們確保您擁有所需的一切：
+1.  Aspose.Words for .NET - 你可以[在這裡下載](https://releases.aspose.com/words/net/).
+2. 強烈推薦 .NET 開發環境 - Visual Studio。
+3. 要簽署的文件 - 建立一個簡單的 Word 文件或使用現有文件。
+4. 證書文件 - 數位簽名需要該文件。您可以使用`.pfx`文件。
+5. 簽名行圖像 - （可選）簽名的圖像檔案。
+
+## 導入命名空間
+
+首先，我們需要導入必要的名稱空間。此步驟至關重要，因為它設定了使用 Aspose.Words 功能的環境。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Signing;
+```
+
+## 第 1 步：設定文檔目錄
+
+每個專案都需要一個好的開始。讓我們設定文檔目錄的路徑。這是保存和檢索您的文件的地方。
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## 第 2 步：建立新文檔
+
+現在，讓我們使用 Aspose.Words 建立一個新的 Word 文件。這將是我們添加簽名行的畫布。
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 步驟 2：插入簽名行
+## 第 3 步：插入簽名行
 
-使用 DocumentBuilder 物件的 InsertSignatureLine() 方法將新簽章行插入文件中：
+這就是奇蹟發生的地方。我們使用以下命令在文件中插入簽名行`DocumentBuilder`班級。
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## 步驟 3：儲存文檔
+## 步驟 4：儲存帶有簽名行的文檔
 
-儲存修改後的文件：
+簽名行到位後，我們需要儲存文件。這是我們繼續簽署之前的中間步驟。
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-請務必指定正確的路徑和檔案名稱來儲存文件。
+## 第 5 步：設定簽名選項
 
-## 第四步：簽署文件
-
-要簽署文檔，您需要設定簽名選項並使用 DigitalSignatureUtil 類別：
+現在，讓我們設定用於簽署文件的選項。這包括指定簽名行 ID 和要使用的映像。
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-	SignatureLineId = signatureLine.Id,
-	SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes(dataDir + "Enhanced Windows MetaFile.emf")
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-	dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
 ```
 
-請務必指定文件、簽名行影像和簽名文件的正確路徑。
+## 第6步：載入證書
 
-### 使用 Aspose.Words for .NET 建立和簽署新簽名行的範例原始程式碼
-
-以下是使用 Aspose.Words for .NET 建立和簽署新簽名行的完整原始碼：
+數位簽章需要憑證。在這裡，我們載入將用於簽署文件的證書文件。
 
 ```csharp
-
-	//文檔目錄的路徑。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-		dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-透過執行這些步驟，您將能夠使用 Aspose.Words for .NET 在 Word 文件中輕鬆建立並簽署新的簽名行。
+## 第 7 步：簽署文件
+
+這是最後一步。我們使用`DigitalSignatureUtil`類來簽署文件。已簽署的文件將以新名稱儲存。
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
+    dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
+```
 
 ## 結論
 
-在本教學中，我們學習如何使用 Aspose.Words for .NET 在 Word 文件中建立和簽署新的簽名行。透過依照提供的步驟操作，您可以輕鬆地將簽章行插入文件中，自訂其選項，並使用數位憑證簽署文件。在文件中添加簽名行和數位簽名可以增強其真實性和完整性，使它們更加安全和值得信賴。 Aspose.Words for .NET 為 Word 文件中的簽章和數位憑證提供了強大的文字處理 API，讓您可以自動執行簽章程序並確保文件的有效性。
+現在你就得到它了！透過這些步驟，您已成功建立了一個新的 Word 文檔，新增了簽名行，並使用 Aspose.Words for .NET 對其進行了數位簽章。它是一個強大的工具，使文件自動化變得輕而易舉。無論您處理合約、協議或任何正式文檔，此方法都可確保它們經過安全簽署和驗證。
 
-### 常見問題解答
+## 常見問題解答
 
-#### Q：Word文檔中的簽名行是什麼？
+### 我可以使用其他圖像格式作為簽名行嗎？
+是的，您可以使用各種圖像格式，如 PNG、JPG、BMP 等。
 
-答：Word 文件中的簽章行是一個佔位符，指示應放置簽章的位置。它通常包括姓名、標題和日期，並提供手寫或數位簽名的空間。
+### 是否有必要使用一個`.pfx` file for the certificate?
+是的，一個`.pfx`文件是儲存加密資訊（包括憑證和私鑰）的通用格式。
 
-#### Q：如何使用 Aspose.Words for .NET 在 Word 文件中建立簽名行？
+### 我可以在單一文件中新增多個簽名行嗎？
+絕對地！您可以透過對每個簽名重複插入步驟來插入多個簽名行。
 
-答：要使用 Aspose.Words for .NET 在 Word 文件中建立簽名行，您可以依照下列步驟操作：
-1. 建立一個實例`Document`類別和一個`DocumentBuilder`目的。
-2. 使用`InsertSignatureLine`的方法`DocumentBuilder`物件在文件中插入新的簽名行。
-3. 儲存修改後的文件。
+### 如果我沒有數位憑證怎麼辦？
+您需要從受信任的憑證授權單位取得數位憑證或使用 OpenSSL 等工具產生數位憑證。
 
-#### Q：我可以自訂簽名行選項，例如姓名、標題和日期嗎？
-
-答：是的，您可以自訂簽名行選項。這`SignatureLineOptions`類別提供屬性來設定所需的選項，例如`Signer`, `SignerTitle`, `ShowDate`等等。
-
-#### Q：建立簽名行後如何在文件上簽名？
-
-答：要在建立簽名行後對文件進行簽名，您需要設定簽名選項並使用`DigitalSignatureUtil`班級。步驟如下：
-1. 設定`SignatureLineId`財產在`SignOptions`反對簽名行的 ID。
-2. 設定`SignatureLineImage`財產在`SignOptions`反對您要使用的簽名圖像。
-3. 使用加載簽名證書`CertificateHolder`班級。
-4. 使用`DigitalSignatureUtil.Sign`方法簽署文檔，提供必要的參數。
-
-#### Q：我可以使用數位簽名影像來簽署文件嗎？
-
-答：是的，您可以使用數位簽名影像來簽署文件。為此，您需要在`SignOptions`物件使用`SignatureLineImage`財產。影像可以是任何支援的影像格式，例如 JPEG、PNG 或 EMF。
-
-#### Q：在 Word 文件中建立並簽署新簽名行的目的是什麼？
-
-答：使用 Aspose.Words for .NET 在 Word 文件中建立並簽署新的簽章行可讓您新增簽章佔位符，然後使用數位憑證簽署文件。此過程確保文件的真實性和完整性，提供批准或協議的證據。
-
-#### Q：我可以使用 Aspose.Words for .NET 在 Word 文件中建立並簽署多個簽名行嗎？
-
-答：是的，您可以使用 Aspose.Words for .NET 在 Word 文件中建立並簽署多個簽名行。每個簽名行可以有自己唯一的 ID 和選項。您可以重複這些步驟以在文件中建立並簽署其他簽名行。
-
-#### Q：簽名後我可以修改簽名行或添加其他資訊嗎？
-
-答：簽名行一旦簽署，就成為文件內容的一部分，不能單獨修改。但是，您可以在簽名行後新增其他資訊或內容。
-
-#### Q：我可以驗證包含簽名行的文件的數位簽章嗎？
-
-答：是的，Aspose.Words for .NET 提供了驗證包含簽章行的文件的數位簽章的功能。您可以使用`DigitalSignatureUtil.Verify`驗證數位簽章的有效性和真實性的方法。
-
-#### Q：Aspose.Words for .NET 支援什麼檔案格式來建立和簽署簽章行？
-
-答：Aspose.Words for .NET 支援以 DOCX 檔案格式建立和簽署簽署行。您可以使用提供的方法和類別在 DOCX 檔案中建立和簽署簽名行。
+### 如何驗證文件中的數位簽章？
+您可以在Word中開啟已簽署的文件並前往簽名詳細資料以驗證簽名的真實性和完整性。

@@ -16,7 +16,7 @@ Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistět
 
 ## Krok 2: Načtení dokumentu
 
-V tomto kroku načteme dokument aplikace Word, ze kterého chceme uživatelské vlastnosti odebrat. K načtení dokumentu použijte následující kód:
+tomto kroku načteme dokument aplikace Word, ze kterého chceme uživatelské vlastnosti odebrat. K načtení dokumentu použijte následující kód:
 
 ```csharp
 // Cesta k adresáři dokumentů.

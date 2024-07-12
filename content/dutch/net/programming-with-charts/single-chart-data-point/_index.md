@@ -2,123 +2,142 @@
 title: Pas één diagramgegevenspunt in een diagram aan
 linktitle: Pas één diagramgegevenspunt in een diagram aan
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u één gegevenspunt in een diagram kunt aanpassen met Aspose.Words voor .NET.
+description: Leer hoe u gegevenspunten van afzonderlijke diagrammen kunt aanpassen met Aspose.Words voor .NET in een gedetailleerde stapsgewijze handleiding. Verbeter uw diagrammen met unieke markeringen en formaten.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/single-chart-data-point/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u Aspose.Words voor .NET kunt gebruiken om één gegevenspunt in een diagram aan te passen. De meegeleverde broncode laat zien hoe u een diagram maakt, toegang krijgt tot specifieke gegevenspunten en hun eigenschappen wijzigt.
+Heeft u zich ooit afgevraagd hoe u uw grafieken kunt laten opvallen met unieke gegevenspunten? Nou, vandaag is je geluksdag! We duiken in het aanpassen van een enkel diagramgegevenspunt met Aspose.Words voor .NET. Maak je klaar voor een ritje door een stapsgewijze tutorial die niet alleen informatief is, maar ook leuk en gemakkelijk te volgen.
 
-## Stap 1: Zet het project op
+## Vereisten
 
-Zorg ervoor dat u aan de volgende vereisten voldoet:
+Voordat we aan de slag gaan, zorgen we ervoor dat u over alle essentiële zaken beschikt:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
-- Een documentmappad waar het uitvoerdocument wordt opgeslagen.
+-  Aspose.Words voor .NET Library: Zorg ervoor dat je de nieuwste versie hebt.[Download het hier](https://releases.aspose.com/words/net/).
+- .NET Framework: Zorg ervoor dat .NET Framework op uw computer is geïnstalleerd.
+- Basiskennis van C#: Een basiskennis van programmeren in C# zal nuttig zijn.
+- Geïntegreerde ontwikkelomgeving (IDE): Visual Studio wordt aanbevolen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Naamruimten importeren
 
- Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
+Laten we eerst de benodigde naamruimten importeren om de bal aan het rollen te krijgen:
 
 ```csharp
-// Pad naar uw documentmap
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Stap 1: Initialiseer het document en DocumentBuilder
+
+Oké, laten we beginnen met het initialiseren van een nieuw document en een DocumentBuilder. Dit zal het canvas zijn voor onze kaart.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Gebruik vervolgens de`InsertChart` werkwijze van de`DocumentBuilder` om een lijndiagram in het document in te voegen.
+ Hier,`dataDir` is het mappad waar u uw document opslaat. De`DocumentBuilder` class helpt bij het construeren van het document.
+
+## Stap 2: Voeg een diagram in
+
+Laten we vervolgens een lijndiagram in het document invoegen. Dit wordt onze speeltuin voor het aanpassen van datapunten.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Stap 3: Gegevenspunten openen en aanpassen
+ De`InsertChart` methode neemt het diagramtype, de breedte en de hoogte als parameters. In dit geval voegen we een lijndiagram in met een breedte van 432 en een hoogte van 252.
 
- Om individuele gegevenspunten te wijzigen, moet u toegang krijgen tot de`ChartDataPointCollection` van de reeks en selecteer het gewenste gegevenspunt met behulp van de index.
+## Stap 3: Toegang tot kaartseries
+
+Nu is het tijd om toegang te krijgen tot de series in onze grafiek. Een diagram kan meerdere reeksen bevatten, en elke reeks bevat gegevenspunten.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
 ChartSeries series1 = chart.Series[1];
+```
 
+Hier hebben we toegang tot de eerste twee series in onze grafiek. 
+
+## Stap 4: Gegevenspunten aanpassen
+
+Hier gebeurt de magie! Laten we specifieke gegevenspunten binnen onze reeks aanpassen.
+
+```csharp
 ChartDataPointCollection dataPointCollection = series0.DataPoints;
 ChartDataPoint dataPoint00 = dataPointCollection[0];
 ChartDataPoint dataPoint01 = dataPointCollection[1];
+```
 
+We halen de gegevenspunten uit de eerste reeks op. Laten we nu deze punten aanpassen.
+
+### Pas gegevenspunt 00 aan
+
+```csharp
 dataPoint00.Explosion = 50;
 dataPoint00.Marker.Symbol = MarkerSymbol.Circle;
 dataPoint00.Marker.Size = 15;
+```
 
+ Voor`dataPoint00`, stellen we een explosie in (handig voor cirkeldiagrammen), veranderen we het markeringssymbool in een cirkel en stellen we de markeringsgrootte in op 15.
+
+### Pas gegevenspunt 01 aan
+
+```csharp
 dataPoint01.Marker.Symbol = MarkerSymbol.Diamond;
 dataPoint01.Marker.Size = 20;
+```
 
+ Voor`dataPoint01`, veranderen we het markeringssymbool in een diamant en stellen we de markeringsgrootte in op 20.
+
+### Pas gegevenspunt in serie 1 aan
+
+```csharp
 ChartDataPoint dataPoint12 = series1.DataPoints[2];
 dataPoint12.InvertIfNegative = true;
 dataPoint12.Marker.Symbol = MarkerSymbol.Star;
 dataPoint12.Marker.Size = 20;
 ```
 
-## Stap 4: Sla het document op
+ Voor het derde gegevenspunt in`series1`, we stellen het in op omkeren als de waarde negatief is, veranderen het markeringssymbool in een ster en stellen de markeringsgrootte in op 20.
 
- Sla het document ten slotte op in de opgegeven map met behulp van de`Save` werkwijze van de`Document` voorwerp.
+## Stap 5: Bewaar het document
+
+Laten we tot slot ons document met alle aanpassingen opslaan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartDataPoint.docx");
 ```
 
-Hiermee is de implementatie voltooid van het aanpassen van een enkel gegevenspunt in een diagram met behulp van Aspose.Words voor .NET.
-
-### Voorbeeldbroncode voor Single Chart Data Point met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = chart.Series[0];
-	ChartSeries series1 = chart.Series[1];
-	ChartDataPointCollection dataPointCollection = series0.DataPoints;
-	ChartDataPoint dataPoint00 = dataPointCollection[0];
-	ChartDataPoint dataPoint01 = dataPointCollection[1];
-	dataPoint00.Explosion = 50;
-	dataPoint00.Marker.Symbol = MarkerSymbol.Circle;
-	dataPoint00.Marker.Size = 15;
-	dataPoint01.Marker.Symbol = MarkerSymbol.Diamond;
-	dataPoint01.Marker.Size = 20;
-	ChartDataPoint dataPoint12 = series1.DataPoints[2];
-	dataPoint12.InvertIfNegative = true;
-	dataPoint12.Marker.Symbol = MarkerSymbol.Star;
-	dataPoint12.Marker.Size = 20;
-	doc.Save(dataDir + "WorkingWithCharts.SingleChartDataPoint.docx");
-```
+ Deze regel slaat het document op in de door u opgegeven map met de naam`WorkingWithCharts.SingleChartDataPoint.docx`.
 
 ## Conclusie
 
-In deze zelfstudie hebt u geleerd hoe u één gegevenspunt in een diagram kunt aanpassen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u een nieuw document maken, een lijndiagram invoegen, toegang krijgen tot specifieke gegevenspunten binnen de diagramserie en hun eigenschappen wijzigen om de gewenste aanpassing te bereiken.
+En daar heb je het! U hebt met succes individuele gegevenspunten in een diagram aangepast met Aspose.Words voor .NET. Door een paar eigenschappen aan te passen, kunt u uw diagrammen veel informatiever en visueel aantrekkelijker maken. Experimenteer dus met verschillende markeringen en formaten om te zien wat het beste werkt voor uw gegevens.
 
-Aspose.Words voor .NET biedt krachtige functies voor het manipuleren van diagrammen in Word-documenten. Door toegang te krijgen tot individuele gegevenspunten binnen een diagramreeks, kunt u specifieke wijzigingen aanbrengen om hun uiterlijk en gedrag aan te passen. Hiermee kunt u specifieke gegevenspunten markeren, markeringssymbolen wijzigen, markeringsgroottes aanpassen en meer, om de visuele weergave van uw diagram te verbeteren.
+## Veelgestelde vragen
 
-Door individuele gegevenspunten aan te passen, heeft u de flexibiliteit om belangrijke gegevens te benadrukken of specifieke trends in uw diagram te benadrukken. Met Aspose.Words voor .NET kunt u eenvoudig gegevenspunten in verschillende diagramtypen openen en wijzigen, zodat u visueel aantrekkelijke en informatieve diagrammen in uw Word-documenten kunt maken.
+### Kan ik gegevenspunten in andere typen diagrammen aanpassen?
 
-### Veelgestelde vragen
+Absoluut! U kunt gegevenspunten in verschillende diagramtypen aanpassen, waaronder staafdiagrammen, cirkeldiagrammen en meer. Het proces is vergelijkbaar voor verschillende diagramtypen.
 
-#### Q1. Kan ik meerdere gegevenspunten in een diagram aanpassen?
- Ja, u kunt meerdere gegevenspunten in een diagram aanpassen met Aspose.Words voor .NET. Door toegang te krijgen tot de`ChartDataPointCollection`van een reeks kunt u meerdere gegevenspunten selecteren en wijzigen op basis van hun indices. Gebruik een lus of individuele toewijzingen om de gewenste eigenschappen voor elk datapunt te wijzigen. Op deze manier kunt u verschillende aanpassingen toepassen op meerdere gegevenspunten binnen hetzelfde diagram.
+### Is het mogelijk om aangepaste labels aan datapunten toe te voegen?
 
-#### Vraag 2. Hoe kan ik het markeringssymbool voor een datapunt wijzigen?
- Om het markeringssymbool voor een gegevenspunt in een diagram te wijzigen met Aspose.Words voor .NET, moet u naar het`Marker` eigendom van de`ChartDataPoint` bezwaar maken en instellen`Symbol` eigenschap naar het gewenste markeringssymbool. Markeringssymbolen vertegenwoordigen de vorm of het pictogram dat wordt gebruikt om elk gegevenspunt in het diagram weer te geven. U kunt kiezen uit een verscheidenheid aan ingebouwde markersymbolen, zoals cirkel, vierkant, ruit, driehoek, ster en meer.
+ Ja, u kunt aangepaste labels toevoegen aan gegevenspunten met behulp van de`ChartDataPoint.Label` eigendom. Hierdoor kunt u voor elk gegevenspunt meer context bieden.
 
-#### Q3. Kan ik de grootte van een gegevenspuntmarkering aanpassen?
- Ja, u kunt de grootte van een gegevenspuntmarkering in een diagram aanpassen met Aspose.Words voor .NET. Toegang krijgen tot`Marker` eigendom van de`ChartDataPoint` bezwaar maken en instellen`Size`eigenschap aanpassen aan de gewenste markeringsgrootte. De grootte van de markering wordt doorgaans gespecificeerd in punten, waarbij een grotere waarde een grotere markeringsgrootte vertegenwoordigt. Door de grootte van de markering aan te passen, kunt u specifieke gegevenspunten benadrukken of deze onderscheiden op basis van hun betekenis.
+### Hoe kan ik een datapunt uit een reeks verwijderen?
 
-#### Q4. Welke andere eigenschappen kan ik voor een datapunt wijzigen?
-Aspose.Words voor .NET biedt een reeks eigenschappen die u voor een gegevenspunt in een diagram kunt wijzigen. Enkele van de vaak gewijzigde eigenschappen zijn onder meer het markeringssymbool, de markeringsgrootte, de markeringskleur, de zichtbaarheid van gegevenslabels, explosie, omkeren indien negatief, en meer. Met deze eigenschappen kunt u het uiterlijk, het gedrag en de interactiviteit van individuele gegevenspunten aanpassen, zodat u grafieken kunt maken die zijn afgestemd op uw specifieke vereisten.
+ U kunt een gegevenspunt verwijderen door de zichtbaarheid ervan in te stellen op false met`dataPoint.IsVisible = false`.
 
-#### Vraag 5. Kan ik gegevenspunten in andere diagramtypen aanpassen?
-Ja, u kunt gegevenspunten in verschillende diagramtypen aanpassen met Aspose.Words voor .NET. Hoewel deze zelfstudie het aanpassen van gegevenspunten in een lijndiagram demonstreert, kunt u vergelijkbare technieken toepassen op andere diagramtypen, zoals kolomdiagrammen, staafdiagrammen, cirkeldiagrammen en meer. Het proces omvat toegang tot de reeksen en gegevenspunten in het diagram en het dienovereenkomstig aanpassen van hun eigenschappen.
+### Kan ik afbeeldingen gebruiken als markeringen voor gegevenspunten?
+
+Hoewel Aspose.Words het gebruik van afbeeldingen niet rechtstreeks als markeringen ondersteunt, kunt u aangepaste vormen maken en deze als markeringen gebruiken.
+
+### Is het mogelijk om gegevenspunten in het diagram te animeren?
+
+Aspose.Words voor .NET ondersteunt geen animatie voor diagramgegevenspunten. U kunt echter met andere hulpmiddelen geanimeerde diagrammen maken en deze in uw Word-documenten insluiten.

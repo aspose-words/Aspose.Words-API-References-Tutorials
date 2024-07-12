@@ -8,7 +8,7 @@ weight: 10
 url: /ja/net/working-with-fields/evaluate-ifcondition/
 ---
 
-ここでは、Aspose.Words for .NET の「IF 条件の評価」機能を使用する以下の C# ソース コードを説明するステップ バイ ステップ ガイドを示します。目的の結果を得るには、各手順を注意深く実行してください。
+ここでは、Aspose.Words for .NET の「IF 条件の評価」機能を使用する以下の C# ソース コードを説明するステップ バイ ステップ ガイドを示します。目的の結果を得るには、各手順を慎重に実行してください。
 
 ## ステップ1: ドキュメントジェネレーターの作成
 
@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 //ドキュメントに IF フィールドを挿入します。
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//IF条件を評価します。
+// IF条件を評価します。
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 //評価の結果を表示します。

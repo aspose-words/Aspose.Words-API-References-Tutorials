@@ -26,7 +26,7 @@ Neste exemplo, carregamos o documento "Marcadores com fonte alternativa.docx" lo
 
 ## Configurando opções de backup
 
-próxima etapa é configurar as opções de salvamento para conversão para HTML fixo. Use a classe HtmlFixedSaveOptions e defina a propriedade UseTargetMachineFonts como true para informar ao Aspose.Words para usar fontes da máquina de destino. Veja como fazer isso:
+A próxima etapa é configurar as opções de salvamento para conversão para HTML fixo. Use a classe HtmlFixedSaveOptions e defina a propriedade UseTargetMachineFonts como true para informar ao Aspose.Words para usar fontes da máquina de destino. Veja como fazer isso:
 
 ```csharp
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Carregue o documento do Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Configure opções de backup com o recurso "Usar fontes da máquina de destino"
+// Configure opções de backup com o recurso "Usar fontes da máquina de destino"
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Converter documento em HTML fixo

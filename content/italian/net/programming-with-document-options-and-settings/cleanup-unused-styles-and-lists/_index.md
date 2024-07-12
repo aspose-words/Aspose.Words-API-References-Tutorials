@@ -75,7 +75,7 @@ Queste istruzioni mostrano il numero di stili e di elenchi rimanenti dopo la pul
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//Pulisce gli stili e gli elenchi inutilizzati dal documento in base alle CleanupOptions specificate.
+	// Pulisce gli stili e gli elenchi inutilizzati dal documento in base alle CleanupOptions specificate.
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 

@@ -147,13 +147,13 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### 해결 방법 2:
 
- A: 다음을 사용하여 개정 추적을 활성화할 수도 있습니다.`Document` 받아들이는 생성자`trackRevisions` 그리고`author` 매개변수.
+ A: 다음을 사용하여 개정 추적을 활성화할 수도 있습니다.`Document` 받아들이는 생성자`trackRevisions`그리고`author` 매개변수.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
 ```
 
-#### Q: Aspose.Words for .NET을 사용하여 문서의 모든 변경 사항을 어떻게 수락하나요?
+#### Q: Aspose.Words for .NET을 사용하여 문서의 모든 변경 사항을 어떻게 수락합니까?
 
  답변:`AcceptAllRevisions` 의 방법`Document` 문서에 대한 모든 변경 사항을 수락하는 데 반대합니다.
 

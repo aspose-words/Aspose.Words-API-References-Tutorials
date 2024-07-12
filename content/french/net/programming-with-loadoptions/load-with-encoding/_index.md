@@ -55,11 +55,11 @@ Dans ce guide, nous avons expliqué comment charger un document texte avec un en
 
 #### Q : Qu'est-ce que l'encodage et pourquoi est-il important lors du traitement de documents texte ?
 
-R : Le codage fait référence à la méthode de représentation des caractères dans un format lisible par ordinateur. Il est essentiel pour interpréter et afficher correctement les documents texte, en particulier lorsqu'ils contiennent des caractères non-ASCII ou sont dans des jeux de caractères différents.
+: Le codage fait référence à la méthode de représentation des caractères dans un format lisible par ordinateur. Il est essentiel pour interpréter et afficher correctement les documents texte, en particulier lorsqu'ils contiennent des caractères non-ASCII ou sont dans des jeux de caractères différents.
 
 #### Q : Quel est le rôle de LoadOptions dans le chargement de documents texte avec encodage dans Aspose.Words ?
 
-R : LoadOptions dans Aspose.Words pour .NET permet aux développeurs de spécifier l'encodage souhaité lors du chargement de documents texte, garantissant ainsi que le contenu est lu et traité correctement.
+R : LoadOptions dans Aspose.Words pour .NET permet aux développeurs de spécifier l'encodage souhaité lors du chargement de documents texte, garantissant ainsi que le contenu est lu et traité correctement.
 
 #### Q : Puis-je utiliser un codage différent de UTF-7 lors du chargement de documents texte ?
 

@@ -16,6 +16,6 @@ En suivant ces tutoriels, vous apprendrez les bonnes pratiques pour enregistrer 
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Chiffrer le document avec un mot de passe](./encrypt-document-with-password/) | Découvrez comment chiffrer des documents avec un mot de passe à l'aide d'Aspose.Words pour .NET.  |
-| [Ne compressez pas les petits métafichiers](./do-not-compress-small-metafiles/) | Découvrez comment utiliser Aspose.Words pour .NET pour activer la fonctionnalité Ne pas compresser les petits métafichiers lors de l'enregistrement de documents. |
-| [Ne pas enregistrer la puce d'image](./do-not-save-picture-bullet/) | Découvrez comment désactiver l’enregistrement des puces d’image dans les documents Word à l’aide d’Aspose.Words pour .NET. |
+| [Chiffrer le document avec un mot de passe](./encrypt-document-with-password/) | Découvrez comment chiffrer un document avec un mot de passe à l'aide d'Aspose.Words for .NET dans ce guide détaillé étape par étape. Sécurisez vos informations sensibles sans effort. |
+| [Ne compressez pas les petits métafichiers](./do-not-compress-small-metafiles/) | Découvrez comment utiliser Aspose.Words pour .NET pour garantir que les petits métafichiers des documents Word ne sont pas compressés, préservant ainsi leur qualité et leur intégrité. Guide étape par étape inclus. |
+| [Ne pas enregistrer la puce d'image](./do-not-save-picture-bullet/) | Découvrez comment gérer les puces d'image dans Aspose.Words pour .NET avec notre guide étape par étape. Simplifiez la gestion des documents et créez des documents Word professionnels sans effort. |

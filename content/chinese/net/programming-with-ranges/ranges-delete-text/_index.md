@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 
 在本指南中，我们介绍了如何使用 Aspose.Words for .NET 使用提供的 C# 源代码删除 Word 文档特定范围内的文本。按照提供的步骤，您可以在 C# 应用程序中轻松删除 Word 文档中定义范围内的文本。Aspose.Words 为文本范围的文字处理提供了极大的灵活性和功能，使您可以精确而有目的地创建和编辑 Word 文档。
 
-### 关于 Word 文档中区域删除文本的常见问题解答
+### 关于 Word 文档中删除区域文本的常见问题解答
 
 #### 问：Aspose.Words for .NET 中的“Word 文档中的范围删除文本”功能有什么用途？
 

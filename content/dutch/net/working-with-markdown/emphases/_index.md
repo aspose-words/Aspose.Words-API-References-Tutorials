@@ -113,7 +113,7 @@ A: Om tekst te markeren met Markdown, omringt u de tekst eenvoudigweg met de jui
 
 #### Vraag: Kunnen we verschillende hoogtepunten in dezelfde tekst combineren?
 
- A: Ja, het is mogelijk om verschillende highlights in dezelfde tekst te combineren. U kunt een woord bijvoorbeeld vet en cursief maken door beide te gebruiken`**` En`*` over de hele wereld.
+ A: Ja, het is mogelijk om verschillende highlights in dezelfde tekst te combineren. U kunt een woord bijvoorbeeld vet en cursief maken door beide te gebruiken`**`En`*` over de hele wereld.
 
 #### Vraag: Welke markeringsopties zijn beschikbaar in Markdown?
 

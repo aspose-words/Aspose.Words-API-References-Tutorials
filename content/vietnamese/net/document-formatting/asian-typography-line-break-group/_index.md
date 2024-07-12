@@ -91,7 +91,7 @@ Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã th�
 Kiểm soát ngắt dòng ở Viễn Đông là cài đặt quản lý cách ngắt dòng văn bản trong các ngôn ngữ Châu Á, đảm bảo định dạng và khả năng đọc phù hợp.
 
 ### Tại sao tôi nên tắt dấu câu treo?
-Tắt dấu câu treo giúp duy trì giao diện rõ ràng và chuyên nghiệp, đặc biệt là trong các tài liệu có kiểu chữ châu Á.
+Tắt dấu câu treo giúp duy trì giao diện rõ ràng và chuyên nghiệp, đặc biệt là trong các tài liệu có kiểu chữ Châu Á.
 
 ### Tôi có thể áp dụng các cài đặt này cho nhiều đoạn văn không?
 Có, bạn có thể lặp qua tất cả các đoạn trong tài liệu và áp dụng các cài đặt này nếu cần.

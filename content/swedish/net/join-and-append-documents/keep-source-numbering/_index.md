@@ -2,24 +2,38 @@
 title: Behåll källnumrering
 linktitle: Behåll källnumrering
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du lägger till ett dokument samtidigt som du behåller källnumreringsformateringen i Aspose.Words för .NET.
+description: Lär dig hur du importerar dokument samtidigt som du bevarar formateringen med Aspose.Words för .NET. Steg-för-steg guide med kodexempel.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/keep-source-numbering/
 ---
+## Introduktion
 
-Den här handledningen förklarar hur man lägger till ett källdokument till ett måldokument samtidigt som den ursprungliga numreringsformateringen av numrerade stycken bevaras med Aspose.Words för .NET.
+ När du arbetar med Aspose.Words för .NET kan import av dokument från en källa till en annan med bibehållen formatering hanteras effektivt med hjälp av`NodeImporter` klass. Denna handledning guidar dig genom processen steg för steg.
 
-## Steg 1: Konfigurera projektet
+## Förutsättningar
 
-Se till att du har följande förutsättningar:
+Innan du börjar, se till att du har följande:
+- Visual Studio installerat på din dator.
+-  Aspose.Words för .NET installerat. Om inte, ladda ner den från[här](https://releases.aspose.com/words/net/).
+- Grundläggande kunskaper i C# och .NET programmering.
 
--  Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från[Aspose.Releases]https://releases.aspose.com/words/net/ eller använd NuGet-pakethanteraren för att installera den.
-- En dokumentkatalogsökväg där käll- och måldokumenten kommer att sparas.
+## Importera namnområden
 
-## Steg 2: Skapa mål- och källdokument
+Inkludera först de nödvändiga namnrymden i ditt projekt:
 
- Skapa instanser av`Document` för destinations- och källdokumenten.
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+## Steg 1: Konfigurera ditt projekt
+
+Börja med att skapa ett nytt C#-projekt i Visual Studio och installera Aspose.Words via NuGet Package Manager.
+
+## Steg 2: Initiera dokument
+Skapa instanser av källan (`srcDoc`) och destination (`dstDoc`) dokument.
 
 ```csharp
 // Sökväg till din dokumentkatalog
@@ -29,18 +43,17 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Steg 3: Behåll källnumreringen vid import
-
- För att bevara numreringsformateringen av numrerade stycken från källdokumentet, skapa en instans av`ImportFormatOptions` och ställ in`KeepSourceNumbering` till`true` . Använda en`NodeImporter` att importera noder från källdokumentet till måldokumentet, ange`ImportFormatMode.KeepSourceFormatting` och den`importFormatOptions`.
+## Steg 3: Konfigurera importalternativ
+Ställ in importalternativ för att behålla källformateringen, inklusive numrerade stycken.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
+	importFormatOptions);
 ```
 
-## Steg 4: Importera och lägg till stycken
-
- Iterera genom styckena i källdokumentet och importera varje stycke till måldokumentet med hjälp av`importer`. Lägg till de importerade noderna till måldokumentets brödtext.
+## Steg 4: Importera stycken
+Iterera genom stycken i källdokumentet och importera dem till måldokumentet.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -51,33 +64,30 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Steg 5: Spara det ändrade dokumentet
-
- Spara det ändrade dokumentet med hjälp av`Save` metod för`Document` objekt.
+## Steg 5: Spara dokumentet
+Spara det sammanslagna dokumentet på önskad plats.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-Detta slutför implementeringen av att lägga till ett källdokument till ett måldokument samtidigt som den ursprungliga numreringsformateringen behålls med Aspose.Words för .NET.
+## Slutsats
 
-### Exempel på källkod för Keep Source Numbering med Aspose.Words för .NET 
+ Sammanfattningsvis är det enkelt att använda Aspose.Words för .NET för att importera dokument med bibehållen formatering med`NodeImporter` klass. Den här metoden säkerställer att dina dokument behåller sitt ursprungliga utseende och struktur sömlöst.
 
-```csharp
-	// Sökväg till din dokumentkatalog
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ's
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Behåll formateringen av källlistan när du importerar numrerade stycken.
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, false);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
-```
+### Kan jag importera dokument med olika formateringsstilar?
+ Ja den`NodeImporter` class stöder import av dokument med olika formateringsstilar.
+
+### Vad händer om mina dokument innehåller komplexa tabeller och bilder?
+Aspose.Words för .NET hanterar komplexa strukturer som tabeller och bilder under importoperationer.
+
+### Är Aspose.Words kompatibel med alla versioner av .NET?
+Aspose.Words stöder .NET Framework och .NET Core versioner för sömlös integration.
+
+### Hur kan jag hantera fel under dokumentimport?
+Använd try-catch-block för att hantera undantag som kan inträffa under importprocessen.
+
+### Var kan jag hitta mer detaljerad dokumentation om Aspose.Words för .NET?
+ Besök[dokumentation](https://reference.aspose.com/words/net/) för omfattande guider och API-referenser.

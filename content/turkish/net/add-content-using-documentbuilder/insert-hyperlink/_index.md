@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Bu kod parçasında, belgemizin kaydedileceği dizinin yolunu tanımlıyoruz ve yeni bir dizin başlatıyoruz.`Document` Ve`DocumentBuilder` misal.
+ Bu kod parçasında, belgemizin kaydedileceği dizinin yolunu tanımlıyoruz ve yeni bir dizin başlatıyoruz.`Document`Ve`DocumentBuilder` misal.
 
 ## 3. Adım: İlk Metni Yazın
 

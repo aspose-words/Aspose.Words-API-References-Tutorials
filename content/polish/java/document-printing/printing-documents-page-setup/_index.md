@@ -75,7 +75,7 @@ W tym artykule omówiliśmy, jak drukować dokumenty z niestandardowymi ustawien
 
 ### Jak mogę zmienić rozmiar papieru w dokumencie?
 
- Aby zmienić rozmiar papieru dokumentu, użyj opcji`setPageWidth` I`setPageHeight` metody`PageSetup` class i określ żądane wymiary w punktach.
+ Aby zmienić rozmiar papieru dokumentu, użyj opcji`setPageWidth`I`setPageHeight` metody`PageSetup` class i określ żądane wymiary w punktach.
 
 ### Czy mogę wydrukować wiele kopii dokumentu?
 

@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Ez a kód létrehozza a`HtmlSaveOptions` és beállítja`CssStyleSheetType` nak nek`CssStyleSheetType.External`külső CSS stíluslap létrehozásához, és`CssClassNamePrefix` nak nek`"pfx_"` előtaghoz`"pfx_"` a CSS osztály megnevezéséhez.
+ Ez a kód létrehozza a`HtmlSaveOptions` és beállítja`CssStyleSheetType` nak nek`CssStyleSheetType.External`külső CSS stíluslap létrehozásához, és`CssClassNamePrefix` nak nek`"pfx_"` előtaghoz`"pfx_"` a CSS osztály megnevezésére.
 
 ## 4. lépés: A dokumentum konvertálása és mentése HTML formátumba
 

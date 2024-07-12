@@ -113,7 +113,7 @@ Nie, możesz określić tylko jedną domyślną czcionkę do zamiany. Można jed
 
 ###  P3: Czy mogę obsługiwać inne typy ostrzeżeń za pomocą`IWarningCallback`?
 
- Tak`IWarningCallback` interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
+ Tak`IWarningCallback`interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
 
 ### P4: Gdzie mogę znaleźć wsparcie dla Aspose.Words?
 

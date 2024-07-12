@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Με ρύθμιση`AddSpaceBetweenFarEastAndAlpha` και`AddSpaceBetweenFarEastAndDigit` προς την`true`, λέμε στο Aspose.Words να προσαρμόσει αυτόματα το διάστημα μεταξύ ασιατικών χαρακτήρων και λατινικών γραμμάτων ή ψηφίων.
+ Με ρύθμιση`AddSpaceBetweenFarEastAndAlpha`και`AddSpaceBetweenFarEastAndDigit` προς την`true`, λέμε στο Aspose.Words να προσαρμόσει αυτόματα το διάστημα μεταξύ ασιατικών χαρακτήρων και λατινικών γραμμάτων ή ψηφίων.
 
 ## Βήμα 3: Προσθήκη κειμένου στο έγγραφο
 

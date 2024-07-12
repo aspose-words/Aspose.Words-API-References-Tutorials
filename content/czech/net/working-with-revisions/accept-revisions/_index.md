@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Řešení 2:
 
- Odpověď: Můžete také povolit sledování revizí pomocí`Document` konstruktor, který přijímá`trackRevisions` a`author` parametry.
+ Odpověď: Můžete také povolit sledování revizí pomocí`Document` konstruktor, který přijímá`trackRevisions`a`author` parametry.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

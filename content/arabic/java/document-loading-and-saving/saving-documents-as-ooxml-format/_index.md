@@ -172,7 +172,7 @@ public void setCompressionLevel() throws Exception
 
 ### هل يمكنني تعيين خصائص مخصصة عند حفظ مستند بتنسيق OOXML؟
 
- نعم، يمكنك تعيين خصائص مخصصة للمستند قبل حفظه بتنسيق OOXML. استخدم ال`BuiltInDocumentProperties` و`CustomDocumentProperties` فئات لتعيين خصائص مختلفة مثل المؤلف والعنوان والكلمات الرئيسية والخصائص المخصصة.
+ نعم، يمكنك تعيين خصائص مخصصة للمستند قبل حفظه بتنسيق OOXML. استخدم ال`BuiltInDocumentProperties`و`CustomDocumentProperties` فئات لتعيين خصائص مختلفة مثل المؤلف والعنوان والكلمات الرئيسية والخصائص المخصصة.
 
 ### ما هو مستوى الضغط الافتراضي عند حفظ مستند بتنسيق OOXML؟
 

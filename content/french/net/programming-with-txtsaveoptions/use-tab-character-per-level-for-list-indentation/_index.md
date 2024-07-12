@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Dans cette étape, nous appliquons le format par défaut des numéros de liste en utilisant le`ApplyNumberDefault()` méthode du formateur de liste. Ensuite, nous ajoutons trois éléments à notre liste à l'aide du générateur de documents.`Writeln()` et`Write()` méthodes. Nous utilisons le`ListIndent()` méthode pour incrémenter l’indentation à chaque niveau.
+Dans cette étape, nous appliquons le format par défaut des numéros de liste en utilisant le`ApplyNumberDefault()` méthode du formateur de liste. Ensuite, nous ajoutons trois éléments à notre liste à l'aide du générateur de documents.`Writeln()`et`Write()` méthodes. Nous utilisons le`ListIndent()` méthode pour incrémenter l’indentation à chaque niveau.
 
 ## Étape 4 : Configurer les options d'enregistrement
 
@@ -100,7 +100,7 @@ Configurez votre environnement de développement en ajoutant les références n�
 
  Créer un nouveau`Document` objet et un associé`DocumentBuilder` objet.
 
- Utilisez le`DocumentBuilder` pour créer une liste avec plusieurs niveaux d'indentation à l'aide des méthodes`ApplyNumberDefault()` pour appliquer le format de numéro de liste par défaut,`Writeln()` et`Write()` pour ajouter des éléments à la liste, et`ListIndent()`pour incrémenter l'indentation à chaque niveau.
+ Utilisez le`DocumentBuilder` pour créer une liste avec plusieurs niveaux d'indentation à l'aide des méthodes`ApplyNumberDefault()` pour appliquer le format de numéro de liste par défaut,`Writeln()`et`Write()` pour ajouter des éléments à la liste, et`ListIndent()`pour incrémenter l'indentation à chaque niveau.
 
  Configurez les options de sauvegarde en créant un`TxtSaveOptions` objet et définition des propriétés`ListIndentation.Count` au nombre de caractères de tabulation par niveau et`ListIndentation.Character` à`'\t'` pour utiliser les caractères de tabulation.
 

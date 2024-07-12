@@ -66,7 +66,7 @@ To je vše ! Úspěšně jste exportovali záložky záhlaví a zápatí z dokum
 
 ## Závěr
 
-tomto tutoriálu jsme vysvětlili, jak exportovat záložky záhlaví a zápatí z dokumentu aplikace Word do dokumentu PDF pomocí Aspose.Words for .NET. Exportované záložky umožňují snadnou navigaci a rychlý odkaz na odpovídající záhlaví a zápatí ve vygenerovaném dokumentu PDF. Podle popsaných kroků exportujte záložky záhlaví a zápatí z dokumentu a vygenerujte PDF s příslušnými záložkami pomocí Aspose.Words for .NET. Ujistěte se, že jste zadali správnou cestu ke svým dokumentům a podle potřeby nakonfigurujte možnosti uložení.
+tomto tutoriálu jsme vysvětlili, jak exportovat záložky záhlaví a zápatí z dokumentu aplikace Word do dokumentu PDF pomocí Aspose.Words for .NET. Exportované záložky umožňují snadnou navigaci a rychlý odkaz na odpovídající záhlaví a zápatí ve vygenerovaném dokumentu PDF. Postupujte podle popsaných kroků pro export záložek záhlaví a zápatí z dokumentu a vygenerujte PDF s příslušnými záložkami pomocí Aspose.Words for .NET. Ujistěte se, že jste zadali správnou cestu ke svým dokumentům a podle potřeby nakonfigurujte možnosti uložení.
 
 ### Často kladené otázky
 

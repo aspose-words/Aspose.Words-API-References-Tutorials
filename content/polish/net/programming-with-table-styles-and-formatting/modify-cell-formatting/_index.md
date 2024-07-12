@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Krok 3: Przejdź do komórki, którą chcesz zmodyfikować
- Aby zmienić formatowanie komórki, musimy przejść do konkretnej komórki w tabeli. Używamy`GetChild()` I`FirstRow.FirstCell` metody umożliwiające uzyskanie odwołania do pierwszej komórki pierwszej tablicy.
+ Aby zmienić formatowanie komórki, musimy przejść do konkretnej komórki w tabeli. Używamy`GetChild()`I`FirstRow.FirstCell` metody umożliwiające uzyskanie odwołania do pierwszej komórki pierwszej tablicy.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

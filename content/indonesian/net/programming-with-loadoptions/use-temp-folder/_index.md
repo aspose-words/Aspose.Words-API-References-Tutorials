@@ -68,7 +68,7 @@ J: Tidak, menggunakan folder sementara tidak wajib, namun ini dianggap sebagai p
 
 #### T: Dapatkah saya menentukan jalur apa pun untuk folder sementara?
 
-J: Ya, Anda dapat menentukan jalur apa pun yang valid untuk folder sementara, asalkan aplikasi Anda memiliki izin yang sesuai untuk mengakses dan menulis ke lokasi tersebut.
+J: Ya, Anda dapat menentukan jalur valid apa pun untuk folder sementara, asalkan aplikasi Anda memiliki izin yang sesuai untuk mengakses dan menulis ke lokasi tersebut.
 
 #### Q: Apa yang terjadi pada file sementara setelah pemrosesan dokumen selesai?
 

@@ -9,7 +9,7 @@ url: /it/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
 ## introduzione
 
-Passare a una cella di tabella specifica in un documento Word potrebbe sembrare un compito arduo, ma con Aspose.Words per .NET è un gioco da ragazzi! Che tu stia automatizzando report, creando documenti dinamici o semplicemente manipolando i dati delle tabelle a livello di codice, questa potente libreria ti copre. Immergiamoci nel modo in cui è possibile spostarsi in una cella di tabella e aggiungervi contenuto utilizzando Aspose.Words per .NET.
+Passare a una cella di tabella specifica in un documento Word potrebbe sembrare un compito arduo, ma con Aspose.Words per .NET è un gioco da ragazzi! Che tu stia automatizzando report, creando documenti dinamici o semplicemente manipolando i dati delle tabelle a livello di programmazione, questa potente libreria ti copre. Immergiamoci nel modo in cui è possibile spostarsi in una cella di tabella e aggiungervi contenuto utilizzando Aspose.Words per .NET.
 
 ## Prerequisiti
 
@@ -85,7 +85,7 @@ Congratulazioni! Hai appena imparato come passare a una cella di tabella specifi
  Sì, specificando l'indice corretto della tabella nel file`MoveToCell` metodo, puoi passare a qualsiasi cella in qualsiasi tabella all'interno del documento.
 
 ### Come gestisco le celle che si estendono su più righe o colonne?
- Puoi usare il`RowSpan` E`ColSpan` proprietà del`Cell` classe per gestire le celle unite.
+ Puoi usare il`RowSpan`E`ColSpan` proprietà del`Cell` classe per gestire le celle unite.
 
 ### È possibile formattare il testo all'interno della cella?
  Assolutamente! Utilizzo`DocumentBuilder` metodi come`Font.Size`, `Font.Bold`e altri per formattare il testo.

@@ -21,7 +21,7 @@ Bu adımda varsayılan düzenleme dili içermeyen ve Japonca eklemek istediğimi
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// Belgeyi yüklerken kullanılacak dil tercihlerini ayarlayın.
+//Belgeyi yüklerken kullanılacak dil tercihlerini ayarlayın.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";

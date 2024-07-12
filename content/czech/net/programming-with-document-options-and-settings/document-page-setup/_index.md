@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-document-options-and-settings/document-page-setup/
 ---
 
-V tomto tutoriálu vás provedeme zdrojovým kódem C# pro konfiguraci rozvržení dokumentu pomocí Aspose.Words pro .NET. Tato funkce umožňuje nastavit režim rozvržení, počet znaků na řádek a počet řádků na stránku.
+tomto tutoriálu vás provedeme zdrojovým kódem C# pro konfiguraci rozvržení dokumentu pomocí Aspose.Words pro .NET. Tato funkce umožňuje nastavit režim rozvržení, počet znaků na řádek a počet řádků na stránku.
 
 ## Krok 1: Nastavení projektu
 

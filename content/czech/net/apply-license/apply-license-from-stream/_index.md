@@ -94,7 +94,7 @@ Použití licence odemkne všechny funkce Aspose.Words a odstraní veškerá ome
  Ujistěte se, že váš licenční soubor je neporušený a nezměněný. Pokud problémy přetrvávají, kontaktujte[Podpěra, podpora](https://forum.aspose.com/c/words/8).
 
 ### Kam mám uložit svůj licenční soubor?
-Uložte jej na bezpečné místo v adresáři projektu a zajistěte, aby byl přístupný pro vaši aplikaci.
+Uložte jej na bezpečném místě v adresáři projektu a zajistěte, aby byl přístupný pro vaši aplikaci.
 
 ###5. Mohu použít licenci z jiných zdrojů, jako je webový stream?
 Ano, platí stejný princip. Jen se ujistěte, že stream obsahuje data licenčního souboru.

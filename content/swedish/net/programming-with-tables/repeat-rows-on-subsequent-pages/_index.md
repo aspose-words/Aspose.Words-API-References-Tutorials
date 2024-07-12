@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Infoga den första cellen i den första raden
+//Infoga den första cellen i den första raden
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Här använder vi dokumentbyggaren för att bygga en tabell med två rubrikrader och flera datarader. De`RowFormat.HeadingFormat`parametrar används för att markera rubrikrader som ska upprepas på efterföljande sidor.
+ Här använder vi dokumentbyggaren för att bygga en tabell med två rubrikrader och flera datarader. De`RowFormat.HeadingFormat` parametrar används för att markera rubrikrader som ska upprepas på efterföljande sidor.
 
 ## Steg 4: Spara det ändrade dokumentet
 Äntligen USA

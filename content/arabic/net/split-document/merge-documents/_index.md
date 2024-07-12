@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- في هذه الخطوة نقوم بالدمج`Document1.docx` و`Document2.docx` في ملف جديد اسمه`MergedDocument.docx`.
+ في هذه الخطوة نقوم بالدمج`Document1.docx`و`Document2.docx` في ملف جديد اسمه`MergedDocument.docx`.
 
 ## الخطوة 3: الدمج مع خيارات الحفظ
 
@@ -74,7 +74,7 @@ Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.d
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- هنا، ندمج`Document1.docx` و`Document2.docx` وحفظ النتيجة كملف PDF.
+ هنا، ندمج`Document1.docx`و`Document2.docx` وحفظ النتيجة كملف PDF.
 
 ## الخطوة 5: إنشاء مثيل مستند من المستندات المدمجة
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET هي مكتبة قوية تتيح للمطورين إنش�
 
 ### 3. كيف أتعامل مع التنسيقات المختلفة أثناء الدمج؟
 
- يوفر Aspose.Words أوضاع تنسيق دمج متنوعة مثل`KeepSourceFormatting` و`MergeFormatting` . الرجوع إلى[وثائق واجهة برمجة التطبيقات](https://reference.aspose.com/words/net/) للحصول على تعليمات مفصلة.
+ يوفر Aspose.Words أوضاع تنسيق دمج متنوعة مثل`KeepSourceFormatting`و`MergeFormatting` . الرجوع إلى[وثائق واجهة برمجة التطبيقات](https://reference.aspose.com/words/net/) للحصول على تعليمات مفصلة.
 
 ### 4. كيف يمكنني الحصول على الدعم لـ Aspose.Words لـ .NET؟
 

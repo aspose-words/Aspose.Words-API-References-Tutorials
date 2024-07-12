@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Byta ut`"Your Document Directory"` och`"Your Output Directory"` med lämpliga vägar.
+ Byta ut`"Your Document Directory"`och`"Your Output Directory"` med lämpliga vägar.
 
 ## 4. Anpassa Mail Merge
 
@@ -62,7 +62,7 @@ När du har anpassat ditt dokument kan du spara det med följande kod:
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
 
- Byta ut`"Your Output Directory"` med önskad utgångsväg.
+ Byta ut`"Your Output Directory"` med önskad utmatningsväg.
 
 ## Komplett källkod
 ```java

@@ -18,7 +18,7 @@ In de tutorials wordt uitgelegd hoe u de opties voor het laden van documenten ku
 | [Toon grammaticale en spelfouten](./show-grammatical-and-spelling-errors/) | Stapsgewijze handleiding om grammatica- en spelfouten in een document weer te geven met Aspose.Words voor .NET. |
 | [Ruim ongebruikte stijlen en lijsten op](./cleanup-unused-styles-and-lists/) | Stapsgewijze handleiding voor het opschonen van ongebruikte stijlen en lijsten in een document met Aspose.Words voor .NET. |
 | [Dubbele stijl opruimen](./cleanup-duplicate-style/) | Stapsgewijze handleiding om dubbele stijlen in een document op te ruimen met Aspose.Words voor .NET. Volledige broncode inbegrepen. |
-| [Bekijk Opties](./view-options/) | Stapsgewijze handleiding voor het configureren van documentweergaveopties met Aspose.Words voor .NET. |
+| [Bekijk opties](./view-options/) | Stapsgewijze handleiding voor het configureren van documentweergaveopties met Aspose.Words voor .NET. |
 | [Documentpagina-instelling](./document-page-setup/) | Stapsgewijze handleiding voor het instellen van een documentlay-out met Aspose.Words voor .NET. |
 | [Voeg Japans toe als bewerkingstalen](./add-japanese-as-editing-languages/) | Stapsgewijze handleiding om Japans als bewerkingstaal toe te voegen met Aspose.Words voor .NET. |
 | [Stel Russisch in als standaard bewerkingstaal](./set-russian-as-default-editing-language/) | Stapsgewijze handleiding om Russisch in te stellen als de standaard bewerkingstaal van een document met Aspose.Words voor .NET. |

@@ -31,11 +31,11 @@ Generieren Sie benutzerdefinierte Barcode-Etiketten in Aspose.Words für Java. I
 ### [Verwenden der Barcode-Generierung in Aspose.Words für Java](./using-barcode-generation/)
 Erfahren Sie, wie Sie mit Aspose.Words für Java benutzerdefinierte Barcodes in Java generieren. Schritt-für-Schritt-Anleitung mit Quellcode zur Barcode-Generierung. Verbessern Sie die Dokumentenautomatisierung mit Aspose.Words.
 ### [Verwenden von Diagrammen in Aspose.Words für Java](./using-charts/)
-Erfahren Sie, wie Sie in Aspose.Words für Java Diagramme erstellen und anpassen. Erkunden Sie Diagrammtypen, Formatierungen und Achseneigenschaften zur Datenvisualisierung.
+Erfahren Sie, wie Sie Diagramme in Aspose.Words für Java erstellen und anpassen. Erkunden Sie Diagrammtypen, Formatierungen und Achseneigenschaften zur Datenvisualisierung.
 ### [Verwenden von Office Math-Objekten in Aspose.Words für Java](./using-office-math-objects/)
 Entfesseln Sie die Leistungsfähigkeit mathematischer Gleichungen in Dokumenten mit Aspose.Words für Java. Lernen Sie, Office Math-Objekte mühelos zu bearbeiten und anzuzeigen.
 ### [Verwenden von Dokumentformen in Aspose.Words für Java](./using-document-shapes/)
-Nutzen Sie die Leistungsfähigkeit von Dokumentformen in Aspose.Words für Java. Lernen Sie anhand von Schritt-für-Schritt-Beispielen, visuell ansprechende Dokumente zu erstellen.
+Nutzen Sie die Leistungsfähigkeit von Dokumentformen in Aspose.Words für Java. Lernen Sie anhand schrittweiser Beispiele, visuell ansprechende Dokumente zu erstellen.
 ### [Verwenden von Wasserzeichen in Dokumenten in Aspose.Words für Java](./using-watermarks-to-documents/)
 Erfahren Sie, wie Sie in Aspose.Words für Java Wasserzeichen zu Dokumenten hinzufügen. Passen Sie Text- und Bildwasserzeichen für professionell aussehende Dokumente an.
 ### [Formatieren von Tabellen und Tabellenstilen in Aspose.Words für Java](./formatting-tables-and-table-styles/)

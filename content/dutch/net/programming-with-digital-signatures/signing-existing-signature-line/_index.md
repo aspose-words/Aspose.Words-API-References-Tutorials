@@ -2,120 +2,108 @@
 title: Bestaande handtekeningregel in Word-document ondertekenen
 linktitle: Bestaande handtekeningregel in Word-document ondertekenen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een bestaande handtekeningregel in een Word-document kunt ondertekenen met Aspose.Words voor .NET.
+description: Leer hoe u een bestaande handtekeningregel in een Word-document kunt ondertekenen met Aspose.Words voor .NET met onze gedetailleerde stapsgewijze handleiding. Ideaal voor ontwikkelaars.
 type: docs
 weight: 10
 url: /nl/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
-In deze zelfstudie leiden we u door de stappen om de handtekeningfunctie van een bestaande handtekeningregel te gebruiken met Aspose.Words voor .NET. Met deze functie kunt u een handtekeningregel die al in een Word-document aanwezig is, digitaal ondertekenen. Volg onderstaande stappen:
+## Invoering
 
-## Stap 1: Het document laden en toegang krijgen tot de handtekeningregel
+Hallo daar! Heeft u ooit een digitaal document moeten ondertekenen, maar vond u dit een beetje gedoe? Je hebt geluk, want vandaag onderzoeken we hoe je moeiteloos een bestaande handtekeningregel in een Word-document kunt ondertekenen met Aspose.Words voor .NET. Deze tutorial begeleidt u stap voor stap door het proces, zodat u deze taak binnen de kortste keren onder de knie heeft.
 
-Begin met het uploaden van het document met de bestaande handtekeningregel:
+## Vereisten
+
+Voordat we ingaan op de details, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben:
+
+1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Als u dat nog niet heeft gedaan, kunt u deze downloaden[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Visual Studio of een andere C#-compatibele IDE.
+3. Document en Certificaat: Een Word-document met een handtekeningregel en een digitaal certificaat (PFX-bestand).
+4. Basiskennis van C#: Bekendheid met programmeren in C# is een voordeel.
+
+## Naamruimten importeren
+
+Voordat u de klassen en methoden uit Aspose.Words kunt gebruiken, moet u de benodigde naamruimten importeren. Hier is een fragment van de vereiste import:
+
+```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.DigitalSignatures;
+```
+
+## Stap 1: Laad uw document
+
+Allereerst moet u het Word-document laden dat de handtekeningregel bevat. Deze stap is cruciaal omdat ze de basis legt voor het hele proces.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
-
-SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## Stap 2: Handtekeningopties instellen
+## Stap 2: Ga naar de handtekeningregel
 
-Maak een exemplaar van de klasse SignOptions en stel de handtekeningopties in, inclusief handtekeningregel-ID en handtekeningregelafbeelding:
+Nu we ons document hebben geladen, is de volgende stap het lokaliseren en openen van de handtekeningregel in het document.
+
+```csharp
+SignatureLine signatureLine = ((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
+```
+
+## Stap 3: Tekenopties instellen
+
+Het instellen van de tekenopties is essentieel. Dit omvat het opgeven van de ID van de handtekeningregel en het opgeven van de afbeelding die als handtekening zal worden gebruikt.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes("YOUR IMAGE DIRECTORY" + "signature_image.emf")
 };
 ```
 
-Zorg ervoor dat u het juiste pad naar de handtekeninglijnafbeelding opgeeft.
+## Stap 4: Certificaathouder aanmaken
 
-## Stap 3: Het certificaat laden
-
-Begin met het laden van het handtekeningcertificaat met behulp van de klasse CertificateHolder:
+Om het document digitaal te ondertekenen, heeft u een digitaal certificaat nodig. Zo maakt u een certificaathouder aan op basis van uw PFX-bestand.
 
 ```csharp
-CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "your_password");
 ```
 
-Zorg ervoor dat u het juiste pad naar uw certificaat en het bijbehorende wachtwoord opgeeft.
+## Stap 5: Onderteken het document
 
-## Stap 4: Ondertekening van de bestaande handtekeningregel
-
-Gebruik de klasse DigitalSignatureUtil om de bestaande handtekeningregel te ondertekenen:
+Nu combineren we alle componenten om het document te ondertekenen. Dit is waar de magie gebeurt!
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-	dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Digitally signed.docx",
+    dataDir + "Signature line.docx",
+    certHolder,
+    signOptions
+);
 ```
-
-Zorg ervoor dat u de juiste paden opgeeft voor het brondocument, het ondertekende document en het certificaat.
-
-### Voorbeeldbroncode voor het ondertekenen van bestaande handtekeningregels met Aspose.Words voor .NET
-
-Hier is de volledige broncode om een bestaande handtekeningregel te ondertekenen met Aspose.Words voor .NET:
-
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Signature line.docx");
-	
-	SignatureLine signatureLine =
-		((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-		dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
-	
-
-```
-
-Door deze stappen te volgen, kunt u eenvoudig een bestaande handtekeningregel in een Word-document ondertekenen met Aspose.Words voor .NET.
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u een bestaande handtekeningregel in een Word-document kunt ondertekenen met Aspose.Words voor .NET. Door de gegeven stappen te volgen, kunt u het document eenvoudig laden, toegang krijgen tot de bestaande handtekeningregel, de ondertekeningsopties instellen en het document ondertekenen. De mogelijkheid om een bestaande handtekeningregel te ondertekenen biedt een handige manier om digitale handtekeningen toe te voegen aan vooraf gedefinieerde gebieden in uw Word-documenten, waardoor de documentintegriteit en authenticatie wordt gewaarborgd. Aspose.Words voor .NET biedt een krachtige API voor tekstverwerking met digitale handtekeningen, waarmee u het ondertekeningsproces kunt aanpassen en de beveiliging van uw Word-documenten kunt verbeteren.
+En daar heb je het! U hebt met succes een bestaande handtekeningregel in een Word-document ondertekend met Aspose.Words voor .NET. Niet te zwaar, toch? Met deze stappen kunt u nu documenten digitaal ondertekenen, waardoor u een extra laag authenticiteit en professionaliteit toevoegt. Dus de volgende keer dat iemand u een document ter ondertekening stuurt, weet u precies wat u moet doen!
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is een bestaande handtekeningregel in een Word-document?
+### Wat is Aspose.Words voor .NET?
 
-A: Een bestaande handtekeningregel in een Word-document is een vooraf gedefinieerd gebied waar een handtekening kan worden geplaatst. Het wordt doorgaans weergegeven door een vorm of object in het document en dient als een aangewezen ruimte voor de ondertekenaar om zijn digitale handtekening toe te voegen.
+Aspose.Words voor .NET is een krachtige bibliotheek voor het werken met Word-documenten in .NET-toepassingen. Hiermee kunt u Word-documenten programmatisch maken, wijzigen en converteren.
 
-#### Vraag: Hoe kan ik een bestaande handtekeningregel in een Word-document ondertekenen met Aspose.Words voor .NET?
+### Waar kan ik een gratis proefversie van Aspose.Words voor .NET krijgen?
 
-A: Om een bestaande handtekeningregel in een Word-document te ondertekenen met Aspose.Words voor .NET, kunt u deze stappen volgen:
-1.  Laad het document met behulp van de`Document` class en geef het pad naar het documentbestand op.
-2.  Krijg toegang tot de bestaande handtekeningregel met behulp van de juiste methode of eigenschap. U kunt bijvoorbeeld gebruiken`GetChild` methode om de vorm van de handtekeninglijn op te halen.
-3.  Maak een exemplaar van de`SignOptions` klasse en stel de`SignatureLineId` eigenschap toe aan de ID van de bestaande handtekeningregel.
-4.  Stel de`SignatureLineImage` eigendom van de`SignOptions` klasse toe aan de afbeelding die de digitale handtekening vertegenwoordigt.
-5.  Laad het ondertekeningscertificaat met behulp van de`CertificateHolder` class en geef het benodigde certificaat en wachtwoord op.
-6.  Gebruik de`DigitalSignatureUtil.Sign` methode om het document te ondertekenen, waarbij de nodige parameters worden opgegeven, waaronder de`SignOptions` voorwerp.
+ U kunt een gratis proefversie downloaden[hier](https://releases.aspose.com/).
 
-#### Vraag: Hoe krijg ik toegang tot de bestaande handtekeningregel in een Word-document met Aspose.Words voor .NET?
+### Kan ik elk afbeeldingsformaat gebruiken voor de handtekening?
 
- A: Om toegang te krijgen tot de bestaande handtekeninglijn in een Word-document met Aspose.Words voor .NET, kunt u de juiste methode of eigenschap gebruiken om de vorm van de handtekeninglijn uit de structuur van het document op te halen. U kunt bijvoorbeeld gebruik maken van de`GetChild` methode met de juiste parameters om de gewenste handtekeninglijnvorm te verkrijgen.
+Aspose.Words ondersteunt verschillende afbeeldingsformaten, maar het gebruik van een verbeterd metabestand (EMF) biedt een betere kwaliteit voor handtekeningen.
 
-#### Vraag: Kan ik het uiterlijk van de digitale handtekening in een bestaande handtekeningregel aanpassen?
+### Hoe kan ik een digitaal certificaat verkrijgen?
 
-A: Ja, u kunt het uiterlijk van de digitale handtekening in een bestaande handtekeningregel aanpassen door een afbeeldingsbestand aan te bieden dat de handtekening vertegenwoordigt. De afbeelding kan een logo, een handgeschreven handtekening of een andere grafische weergave van de handtekening zijn. U kunt de`SignatureLineImage` eigendom van de`SignOptions` klasse toe aan de bytes van het afbeeldingsbestand.
+Digitale certificaten kunt u online bij verschillende aanbieders aanschaffen. Zorg ervoor dat het certificaat de PFX-indeling heeft en dat u het wachtwoord hebt.
 
-#### Vraag: Kan ik meerdere bestaande handtekeningregels in een Word-document ondertekenen?
- A: Ja, u kunt meerdere bestaande handtekeningregels in een Word-document ondertekenen. U moet de stappen voor elke handtekeningregel afzonderlijk volgen en de juiste instelling instellen`SignatureLineId` En`SignatureLineImage` waarden in de`SignOptions` object voor elke handtekeningregel.
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
 
-#### Vraag: Welk formaat moet het afbeeldingsbestand hebben voor de digitale handtekening in een bestaande handtekeningregel?
-
- A: Het afbeeldingsbestand voor de digitale handtekening in een bestaande handtekeningregel kan verschillende formaten hebben, zoals PNG, JPEG, BMP of GIF. U kunt het bestandspad opgeven of de bytes van het afbeeldingsbestand lezen en toewijzen aan de`SignatureLineImage` eigendom van de`SignOptions` klas.
+ U kunt uitgebreide documentatie vinden[hier](https://reference.aspose.com/words/net/).

@@ -2,109 +2,110 @@
 title: 暗号化された Word 文書に署名する
 linktitle: 暗号化された Word 文書に署名する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して暗号化された Word 文書にデジタル署名する方法を学習します。
+description: この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して暗号化された Word 文書に署名する方法を学習します。開発者に最適です。
 type: docs
 weight: 10
 url: /ja/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
-このチュートリアルでは、Aspose.Words for .NET を使用して暗号化された Word 文書に署名する機能を使用する手順を説明します。この機能を使用すると、復号化パスワードを使用して暗号化された Word 文書にデジタル署名できます。以下の手順に従ってください。
+## 導入
 
-## ステップ1: 署名オプションの設定
+暗号化された Word 文書に署名する方法を考えたことはありませんか? 今日は、Aspose.Words for .NET を使用してこのプロセスについて説明します。シートベルトを締めて、詳細で魅力的で楽しいチュートリアルの準備をしましょう。
 
-SignOptions クラスのインスタンスを作成し、復号化パスワードを設定します。
+## 前提条件
+
+コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
+
+1.  Aspose.Words for .NET: ダウンロードしてインストールする[ここ](https://releases.aspose.com/words/net/).
+2. Visual Studio: インストールされていることを確認してください。
+3. 有効な証明書: .pfx 証明書ファイルが必要です。
+4. C# の基本知識: 基本を理解すると、このチュートリアルがよりスムーズになります。
+
+## 名前空間のインポート
+
+まず、必要な名前空間をインポートしましょう。これらは Aspose.Words の機能にアクセスするために重要です。
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionpassword" };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.DigitalSignatures;
 ```
 
-暗号化されたドキュメントには必ず正しい復号化パスワードを指定してください。
+それでは、プロセスをシンプルで管理しやすいステップに分解してみましょう。
 
-## ステップ2: 証明書の読み込み
+## ステップ1: プロジェクトの設定
 
-まず、CertificateHolder クラスを使用して署名証明書を読み込みます。
+まず最初に、Visual Studio プロジェクトをセットアップします。Visual Studio を開き、新しい C# コンソール アプリケーションを作成します。「SignEncryptedWordDoc」のようなわかりやすい名前を付けます。
+
+## ステップ 2: プロジェクトに Aspose.Words を追加する
+
+次に、Aspose.Words をプロジェクトに追加する必要があります。これを行うにはいくつかの方法がありますが、NuGet を使用するのが最も簡単です。 
+
+1. [ツール] > [NuGet パッケージ マネージャー] > [パッケージ マネージャー コンソール] から NuGet パッケージ マネージャー コンソールを開きます。
+2. 次のコマンドを実行します。
+
+```powershell
+Install-Package Aspose.Words
+```
+
+## ステップ3: ドキュメントディレクトリの準備
+
+Word 文書と証明書を保存するためのディレクトリが必要になります。作成してみましょう。
+
+1. コンピュータにディレクトリを作成します。簡単にするために、「DocumentDirectory」という名前を付けます。
+2. Word 文書 (例: 「Document.docx」) と .pfx 証明書 (例: 「morzal.pfx」) をこのディレクトリに配置します。
+
+## ステップ4: コードを書く
+
+さて、コードを見てみましょう。`Program.cs`ファイルを開いて、ドキュメントディレクトリへのパスを設定し、`SignOptions`復号化パスワードを使用します。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
+```
+
+## ステップ5: 証明書の読み込み
+
+次に、`CertificateHolder`クラス。これには、.pfx ファイルへのパスと証明書のパスワードが必要です。
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-証明書と関連するパスワードへの正しいパスを必ず指定してください。
+## ステップ6: 文書に署名する
 
-## ステップ3: 暗号化された文書に署名する
-
-暗号化されたドキュメントに署名するには、DigitalSignatureUtil クラスを使用します。
+最後に、`DigitalSignatureUtil.Sign`暗号化された Word 文書に署名する方法。この方法では、入力ファイル、出力ファイル、証明書所有者、および署名オプションが必要です。
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-	certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Document.docx",
+    dataDir + "DigitallySignedDocument.docx",
+    certHolder,
+    signOptions);
 ```
 
-暗号化されたドキュメント、署名されたドキュメント、および証明書の正しいパスを必ず指定してください。
+## ステップ7: コードを実行する
 
-### Aspose.Words for .NET を使用して暗号化されたドキュメントに署名するためのサンプル ソース コード
-
-Aspose.Words for .NET を使用して暗号化されたドキュメントに署名するための完全なソース コードは次のとおりです。
-
-```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-		certHolder, signOptions);
-	
-
-```
-これらの手順に従うと、Aspose.Words for .NET を使用して暗号化された Word 文書に簡単に署名できます。
+ファイルを保存してプロジェクトを実行します。すべてが正しく設定されていれば、指定したディレクトリに署名されたドキュメントが表示されます。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して暗号化された Word 文書に署名するプロセスについて説明しました。復号化パスワードと署名証明書を提供することで、暗号化された文書にデジタル署名を追加できます。暗号化された文書に署名すると、その信頼性と整合性が確保され、セキュリティがさらに強化されます。Aspose.Words for .NET を使用すると、暗号化された文書に署名し、Word ファイルのセキュリティと信頼性を維持できます。
+これで完了です。Aspose.Words for .NET を使用して暗号化された Word 文書に正常に署名できました。この強力なライブラリを使用すると、暗号化されたファイルでもデジタル署名が簡単になります。コーディングを楽しんでください。
 
-### よくある質問
+## よくある質問
 
-#### Q: Aspose.Words for .NET のドキュメント署名とは何ですか?
+### 別の種類の証明書を使用できますか?
+はい、Aspose.Words は、正しい形式であればさまざまな種類の証明書をサポートします。
 
-A: Aspose.Words for .NET でのドキュメント署名とは、Word ドキュメントにデジタル署名して、その信頼性、整合性、否認不可性を保証するプロセスを指します。証明書を使用してドキュメントにデジタル署名を追加します。
+### 一度に複数の文書に署名することは可能ですか?
+もちろんです! ドキュメントのコレクションをループし、プログラムでそれぞれに署名することができます。
 
-#### Q: 暗号化された Word 文書とは何ですか?
+### 復号パスワードを忘れてしまったらどうすればいいですか？
+残念ながら、復号化パスワードがないと文書に署名することはできません。
 
-A: 暗号化された Word 文書は、パスワードを使用して暗号化された文書です。暗号化は、文書の内容をスクランブルして正しい復号化パスワードがなければ読み取れないようにすることで、文書の内容を保護するセキュリティ対策です。
+### 文書に目に見える署名を追加できますか?
+はい、Aspose.Words では目に見えるデジタル署名も追加できます。
 
-#### Q: Aspose.Words for .NET を使用して暗号化された Word 文書に署名するにはどうすればよいですか?
-
-A: Aspose.Words for .NET を使用して暗号化された Word 文書に署名するには、署名証明書とともに復号化パスワードを提供する必要があります。次の手順に従います。
-1. 復号化パスワードを`SignOptions`物体。
-2. 署名証明書をロードするには、`CertificateHolder`クラス。
-3. 使用`DigitalSignatureUtil.Sign`必要なパラメータを指定して暗号化されたドキュメントに署名する方法。
-
-#### Q: 暗号化された文書に署名する目的は何ですか?
-
-A: Aspose.Words for .NET を使用して暗号化されたドキュメントに署名すると、ドキュメントが暗号化されている場合でも、そのドキュメントにデジタル署名を追加できます。これにより、セキュリティがさらに強化され、暗号化されたコンテンツの信頼性と整合性が確保されます。受信者はドキュメントの出所を確認し、改ざんを検出することができます。
-
-#### Q: 復号化パスワードを入力せずに暗号化された文書に署名できますか?
-
-A: いいえ、暗号化された文書に署名するには、正しい復号化パスワードを入力する必要があります。復号化パスワードは、デジタル署名を適用する前に、文書の暗号化されたコンテンツにアクセスして変更するために必要です。
-
-#### Q: 任意の証明書を使用して暗号化された Word 文書に署名できますか?
-
-A: Aspose.Words for .NET を使用して暗号化された Word 文書に署名するには、有効な X.509 証明書が必要です。証明書は、信頼できる証明機関 (CA) から取得するか、テスト目的で自己署名証明書を使用することができます。
-
-#### Q: 同じ証明書を使用して複数の暗号化された Word 文書に署名できますか?
-
- A: はい、同じ証明書を使用して複数の暗号化されたWord文書に署名できます。`CertificateHolder`クラスを使用すると、それを再利用して複数の暗号化されたドキュメントに署名できます。
-
-#### Q: 署名された暗号化文書のデジタル署名を検証できますか?
-
- A: はい、Aspose.Words for .NETには、署名された暗号化されたドキュメントのデジタル署名を検証する機能があります。`DigitalSignatureUtil.Verify`デジタル署名の有効性と信頼性を確認する方法。
-
-#### Q: Aspose.Words for .NET は暗号化されたドキュメントの署名にどのファイル形式をサポートしていますか?
-
- A: Aspose.Words for .NETは、DOCXファイル形式の暗号化されたWord文書への署名をサポートしています。暗号化されたDOCXファイルに署名するには、`DigitalSignatureUtil.Sign`必要な復号化パスワードと証明書とともにメソッドを使用します。
-
-#### Q: 暗号化された文書に署名すると、暗号化にどのような影響がありますか?
-
-A: Aspose.Words for .NET を使用して暗号化されたドキュメントに署名しても、ドキュメントの暗号化には影響しません。暗号化はそのまま残り、暗号化されたコンテンツにデジタル署名が追加されます。デジタル署名により、ドキュメントに適用された暗号化を損なうことなく、セキュリティと検証が強化されます。
+### 署名を検証する方法はありますか?
+はい、`DigitalSignatureUtil.Verify`署名を検証する方法。

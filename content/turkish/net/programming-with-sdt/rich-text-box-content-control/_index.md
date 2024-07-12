@@ -17,7 +17,7 @@ Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,7 +43,7 @@ para.Runs.Add(run);
 ```
 
 ## 4. Adım: Zengin Metin İçeriğini İçerik Kontrolüne Ekleme
-Zengin metin içeriğine sahip paragrafı şuraya ekleyin:`ChildNodes` zengin metin kutusu içerik denetiminin toplanması.
+ Zengin metin içeriğine sahip paragrafı şuraya ekleyin:`ChildNodes` zengin metin kutusu içerik denetiminin toplanması.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);

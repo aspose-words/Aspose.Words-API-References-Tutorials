@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Stap 2: Maak het document en formatteer het
- Maak een exemplaar van de`Document` klasse en de`DocumentBuilder`klasse om het document te bouwen. Gebruik de`Font` eigendom van de`DocumentBuilder` om toegang te krijgen tot de opmaakeigenschappen van lettertypen.
+ Maak een exemplaar van de`Document` klasse en de`DocumentBuilder` klasse om het document te bouwen. Gebruik de`Font` eigendom van de`DocumentBuilder`om toegang te krijgen tot de opmaakeigenschappen van lettertypen.
 
 ```csharp
 Document doc = new Document();

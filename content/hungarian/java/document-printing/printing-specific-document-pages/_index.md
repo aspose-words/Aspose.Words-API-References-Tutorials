@@ -94,7 +94,7 @@ Igen, az Aspose.Words for Java a dokumentumformátumok széles skáláját támo
 
 ### Hogyan állíthatok be további nyomtatási beállításokat, például az oldal tájolását és a papírméretet?
 
- Beállíthat további nyomtatási beállításokat, például az oldal tájolását és a papírméretet, ha konfigurálja a`PrintOptions` tárgyat a dokumentum kinyomtatása előtt. Használjon olyan módszereket, mint pl`setOrientation` és`setPaperSize` a nyomtatási beállítások testreszabásához.
+ Beállíthat további nyomtatási beállításokat, például az oldal tájolását és a papírméretet, ha konfigurálja a`PrintOptions` tárgyat a dokumentum kinyomtatása előtt. Használjon olyan módszereket, mint pl`setOrientation`és`setPaperSize` a nyomtatási beállítások testreszabásához.
 
 ### Elérhető az Aspose.Words for Java próbaverziója?
 

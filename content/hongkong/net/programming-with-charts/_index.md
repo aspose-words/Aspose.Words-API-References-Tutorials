@@ -16,21 +16,21 @@ Aspose.Words for .NET 圖形程式教學提供了全面的資源，用於學習�
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [資料標籤格式編號](./format-number-of-data-label/) | 了解如何使用 Aspose.Words for .NET 設定圖表中資料標籤數量的格式。輕鬆自訂資料標籤的數字格式。 |
-| [使用形狀建立圖表](./create-chart-using-shape/) | 了解如何使用 Aspose.Words for .NET 使用 Word 文件中的形狀建立和自訂圖表。 |
-| [插入簡單長條圖](./insert-simple-column-chart/) | 了解如何使用 Aspose.Words for .NET 將簡單的長條圖插入文件中。 |
-| [插入長條圖](./insert-column-chart/) | 了解如何使用 Aspose.Words for .NET 將長條圖插入文件中。 |
-| [插入面積圖](./insert-area-chart/) | 了解如何使用 Aspose.Words for .NET 將面積圖插入文件中。新增系列資料並使用圖表儲存文件。 |
-| [插入氣泡圖](./insert-bubble-chart/) | 了解如何使用 Aspose.Words for .NET 將氣泡圖插入文件中。新增具有 X、Y 和氣泡大小值的系列資料。 |
-| [插入散佈圖](./insert-scatter-chart/) | 了解如何使用 Aspose.Words for .NET 將散佈圖插入文件中。新增帶有 X 和 Y 座標的系列資料。 |
-| [定義 XY 軸屬性](./define-xyaxis-properties/) | 了解如何使用 Aspose.Words for .NET 在圖表中定義 XY 軸屬性。演示了 X 軸和 Y 軸的定制選項。 |
-| [日期時間值轉軸](./date-time-values-to-axis/) | 了解如何使用 Aspose.Words for .NET 將日期時間值新增至圖表的軸。 |
-| [軸的數字格式](./number-format-for-axis/) | 了解如何使用 Aspose.Words for .NET 設定圖表中軸的數字格式。 |
+| [設定圖表中資料標籤數量的格式](./format-number-of-data-label/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 設定圖表中資料標籤的格式。輕鬆增強您的 Word 文件。 |
+| [使用形狀建立和自訂圖表](./create-chart-using-shape/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中建立和自訂圖表。非常適合數據視覺化。 |
+| [在Word文件中插入簡單的長條圖](./insert-simple-column-chart/) | 了解如何使用 Aspose.Words for .NET 在 Word 中插入簡單的長條圖。透過動態視覺資料簡報增強您的文件。 |
+| [在 Word 文件中插入長條圖](./insert-column-chart/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中插入長條圖。增強報告和簡報中的資料視覺化。 |
+| [將面積圖插入 Word 文檔](./insert-area-chart/) | 在此綜合逐步指南中了解如何使用 Aspose.Words for .NET 將面積圖插入 Word 文件中。 |
+| [在Word文件中插入氣泡圖](./insert-bubble-chart/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中插入氣泡圖。增強您的文件。 |
+| [在Word文件中插入散佈圖](./insert-scatter-chart/) | 了解如何使用 Aspose.Words for .NET 在 Word 中插入散佈圖。將可視化資料表示整合到文件中的簡單步驟。 |
+| [在圖表中定義 XY 軸屬性](./define-xyaxis-properties/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 在圖表中定義 XY 軸屬性。非常適合 .NET 開發人員。 |
+| [將日期時間值加到圖表的軸](./date-time-values-to-axis/) | 在此綜合逐步指南中了解如何使用 Aspose.Words for .NET 將日期和時間值新增至圖表的軸。 |
+| [圖表中軸的數字格式](./number-format-for-axis/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 設定圖表軸編號的格式。輕鬆增強文件的可讀性和專業性。 |
 | [軸的界限](./bounds-of-axis/) | 了解如何使用 Aspose.Words for .NET 設定圖表中軸的邊界，控制軸上顯示的值的範圍。 |
-| [軸上標籤之間的間隔單位](./interval-unit-between-labels-on-axis/) | 了解如何使用 Aspose.Words for .NET 設定圖表軸上標籤之間的間隔單位。 |
-| [隱藏圖表軸](./hide-chart-axis/) | 了解如何使用 Aspose.Words for .NET 在文件中隱藏圖表軸。隱藏軸以獲得更清晰、更集中的圖表顯示。 |
-| [勾選多行標籤對齊](./tick-multi-line-label-alignment/) | 了解如何使用 Aspose.Words for .NET 在圖表軸中對齊刻度多行標籤。 |
-| [圖表數據標籤](./chart-data-label/) | 了解如何使用 Aspose.Words for .NET 在圖表中新增和自訂資料標籤，以提供有關資料點的附加資訊。 |
-| [資料標籤的預設選項](./default-options-for-data-labels/) | 了解如何使用 Aspose.Words for .NET 設定圖表中資料標籤的預設選項。 |
-| [單一圖表數據點](./single-chart-data-point/) | 了解如何使用 Aspose.Words for .NET 自訂圖表中的單一資料點。 |
-| [單圖系列](./single-chart-series/) | 了解如何使用 Aspose.Words for .NET 自訂圖表中的單一圖表系列。 |
+| [圖表軸上標籤之間的間隔單位](./interval-unit-between-labels-on-axis/) | 了解如何使用 Aspose.Words for .NET 設定圖表軸上標籤之間的間隔單位。 |
+| [在 Word 文件中隱藏圖表軸](./hide-chart-axis/) | 透過我們詳細的逐步教學，了解如何使用 Aspose.Words for .NET 在 Word 文件中隱藏圖表軸。 |
+| [勾選圖表中的多線標籤對齊](./tick-multi-line-label-alignment/) | 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在圖表中勾選多行標籤對齊。非常適合各個層級的開發人員。 |
+| [自訂圖表資料標籤](./chart-data-label/) | 透過逐步指南了解如何使用 Aspose.Words for .NET 自訂圖表資料標籤。非常適合 .NET 開發人員。 |
+| [設定圖表中資料標籤的預設選項](./default-options-for-data-labels/) | 了解如何使用 Aspose.Words for .NET 設定圖表中資料標籤的預設選項。按照我們的逐步指南輕鬆建立和自訂圖表。 |
+| [自訂圖表中的單一圖表資料點](./single-chart-data-point/) | 透過詳細的逐步指南了解如何使用 Aspose.Words for .NET 自訂單一圖表資料點。使用獨特的標記和尺寸增強您的圖表。 |
+| [自訂圖表中的單一圖表系列](./single-chart-series/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中自訂單一圖表系列。請遵循我們的逐步指南以獲得無縫體驗。 |

@@ -102,7 +102,7 @@ A: Absolut! Aspose.Words bietet umfassende Unterstützung für komplexe Feldstru
 
 #### F: Unterstützt Aspose.Words Feldaktualisierungsvorgänge?
 
-A: Ja, Aspose.Words ermöglicht Ihnen die planmäßige Aktualisierung von Feldern. Mithilfe der API können Sie Feldwerte problemlos aktualisieren, Berechnungen auffrischen und andere feldbezogene Vorgänge ausführen.
+A: Ja, Aspose.Words ermöglicht Ihnen die planmäßige Aktualisierung von Feldern. Mithilfe der API können Sie Feldwerte problemlos aktualisieren, Berechnungen aktualisieren und andere feldbezogene Vorgänge ausführen.
 
 #### F: Ist es möglich, Felder mit Aspose.Words in einfachen Text umzuwandeln?
 

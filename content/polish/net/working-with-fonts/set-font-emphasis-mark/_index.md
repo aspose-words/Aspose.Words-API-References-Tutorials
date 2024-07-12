@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Utwórz i dostosuj dokument
- Utwórz instancję`Document` klasa i powiązana`DocumentBuilder` do tworzenia treści dokumentu. Użyj`Font.EmphasisMark` właściwość, na którą chcesz ustawić styl wyróżnienia czcionki`EmphasisMark.UnderSolidCircle` . Następnie użyj`Write` I`Writeln` metody`DocumentBuilder` , aby dodać tekst z określonym wyróżnieniem czcionki.
+ Utwórz instancję`Document` klasa i powiązana`DocumentBuilder` do tworzenia treści dokumentu. Użyj`Font.EmphasisMark` właściwość, na którą chcesz ustawić styl wyróżnienia czcionki`EmphasisMark.UnderSolidCircle` . Następnie użyj`Write`I`Writeln` metody`DocumentBuilder` , aby dodać tekst z określonym wyróżnieniem czcionki.
 
 ```csharp
 Document document = new Document();
@@ -42,7 +42,7 @@ builder.Write("Simple text");
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
-### Przykładowy kod źródłowy dla Ustaw znacznik wyróżnienia czcionki przy użyciu Aspose.Words dla .NET 
+### Przykładowy kod źródłowy dla opcji Ustaw znak wyróżnienia czcionki przy użyciu Aspose.Words dla .NET 
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -81,4 +81,4 @@ Odp.: Tak, możesz dodać znaki akcentujące do określonej części tekstu w do
 
 #### P: Czy znaki akcentujące można dostosować do moich potrzeb?
 
-Odp.: Tak, znaki akcentu można dostosować do swoich potrzeb za pomocą Aspose.Words. Możesz dostosować właściwości stylu znaków akcentujących, takie jak kolor, rozmiar, rodzaj linii i inne, aby dopasować je do preferencji formatowania.
+Odp.: Tak, znaki akcentujące można dostosować do swoich potrzeb za pomocą Aspose.Words. Możesz dostosować właściwości stylu znaków akcentujących, takie jak kolor, rozmiar, rodzaj linii i inne, aby dopasować je do preferencji formatowania.

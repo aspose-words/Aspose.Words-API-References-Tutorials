@@ -85,7 +85,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesinde belirli bir ta
  Evet, doğru tablo dizinini belirterek`MoveToCell` yöntemiyle belgedeki herhangi bir tablodaki herhangi bir hücreye gidebilirsiniz.
 
 ### Birden çok satıra veya sütuna yayılan hücreleri nasıl yönetirim?
- Şunu kullanabilirsiniz:`RowSpan` Ve`ColSpan` özellikleri`Cell` birleştirilmiş hücreleri yönetmek için sınıf.
+ Şunu kullanabilirsiniz:`RowSpan`Ve`ColSpan` özellikleri`Cell` birleştirilmiş hücreleri yönetmek için sınıf.
 
 ### Hücre içindeki metni biçimlendirmek mümkün mü?
  Kesinlikle! Kullanmak`DocumentBuilder` gibi yöntemler`Font.Size`, `Font.Bold`, ve diğerleri metninizi biçimlendirmek için.

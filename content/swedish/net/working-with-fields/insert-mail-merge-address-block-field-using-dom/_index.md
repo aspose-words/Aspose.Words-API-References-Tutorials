@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### F: Hur kan jag ange källdata för postadressfältet i Aspose.Words för .NET?
 
- S: För att ange källdata för postadressfältet i Aspose.Words för .NET kan du använda`FieldAddressBlock.StartAddress` och`FieldAddressBlock.EndAddress` egenskaper. Dessa egenskaper används för att definiera adressintervallen i den externa datakällan, såsom en CSV-fil, databas, etc.
+ S: För att ange källdata för postadressfältet i Aspose.Words för .NET kan du använda`FieldAddressBlock.StartAddress`och`FieldAddressBlock.EndAddress` egenskaper. Dessa egenskaper används för att definiera adressintervallen i den externa datakällan, såsom en CSV-fil, databas, etc.
 
 #### F: Kan jag inkludera valfria element i postadressfältet med Aspose.Words för .NET?
 

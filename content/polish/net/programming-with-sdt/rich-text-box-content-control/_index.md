@@ -17,7 +17,7 @@ Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 - Podstawowa znajomość języka C# i przetwarzania tekstów w dokumentach Word.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
- Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+ Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,7 +43,7 @@ para.Runs.Add(run);
 ```
 
 ## Krok 4: Dodaj zawartość tekstu sformatowanego do kontroli zawartości
-Dodaj akapit z zawartością tekstu sformatowanego do pliku`ChildNodes` kolekcja kontrolki zawartości pola tekstu sformatowanego.
+ Dodaj akapit z zawartością tekstu sformatowanego do pliku`ChildNodes` kolekcja kontrolki zawartości pola tekstu sformatowanego.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);

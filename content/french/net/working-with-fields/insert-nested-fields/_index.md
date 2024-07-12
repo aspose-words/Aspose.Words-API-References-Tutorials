@@ -108,15 +108,15 @@ R : Pour insérer des champs imbriqués dans un document Word à l'aide d'Aspose
 
 #### Q : Quels sont les avantages de l'utilisation de champs imbriqués dans un document Word avec Aspose.Words pour .NET ?
 
-: L'utilisation de champs imbriqués offre plusieurs avantages dans un document Word avec Aspose.Words pour .NET. Cela permet une plus grande flexibilité dans la création de modèles de documents dynamiques, en permettant l'insertion de valeurs variables et de calculs dans des champs imbriqués. Les champs imbriqués peuvent également faciliter la génération automatisée de contenu, comme la génération de tables des matières, de numéros de page, etc.
+R : L'utilisation de champs imbriqués offre plusieurs avantages dans un document Word avec Aspose.Words pour .NET. Cela permet une plus grande flexibilité dans la création de modèles de documents dynamiques, en permettant l'insertion de valeurs variables et de calculs dans des champs imbriqués. Les champs imbriqués peuvent également faciliter la génération automatisée de contenu, comme la génération de tables des matières, de numéros de page, etc.
 
 #### Q : Puis-je avoir des champs imbriqués à plusieurs niveaux dans un document Word avec Aspose.Words pour .NET ?
 
- R : Oui, il est possible d'avoir des champs imbriqués à plusieurs niveaux dans un document Word avec Aspose.Words pour .NET. Vous pouvez créer des hiérarchies complexes de champs imbriqués à l'aide de l'outil`FieldStart.NextSibling` méthode pour ajouter des champs enfants aux champs parents existants.
+ : Oui, il est possible d'avoir des champs imbriqués à plusieurs niveaux dans un document Word avec Aspose.Words pour .NET. Vous pouvez créer des hiérarchies complexes de champs imbriqués à l'aide de l'outil`FieldStart.NextSibling` méthode pour ajouter des champs enfants aux champs parents existants.
 
 #### Q : Comment puis-je personnaliser les propriétés des champs imbriqués dans un document Word avec Aspose.Words pour .NET ?
 
- R : Pour personnaliser les propriétés des champs imbriqués dans un document Word avec Aspose.Words for .NET, vous pouvez accéder au fichier correspondant`FieldStart`objets et modifiez leurs propriétés si nécessaire. Vous pouvez définir des options de formatage, des valeurs, des calculs, etc. des champs imbriqués pour obtenir le résultat souhaité.
+ R : Pour personnaliser les propriétés des champs imbriqués dans un document Word avec Aspose.Words for .NET, vous pouvez accéder au fichier correspondant`FieldStart` objets et modifiez leurs propriétés si nécessaire. Vous pouvez définir des options de formatage, des valeurs, des calculs, etc. des champs imbriqués pour obtenir le résultat souhaité.
 
 #### Q : L'insertion de champs imbriqués affecte-t-elle les performances des documents Word avec Aspose.Words pour .NET ?
 

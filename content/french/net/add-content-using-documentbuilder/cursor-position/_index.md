@@ -9,7 +9,7 @@ url: /fr/net/add-content-using-documentbuilder/cursor-position/
 ---
 ## Introduction
 
-Salut, amis codeurs ! Vous êtes-vous déjà retrouvé plongé dans un projet, aux prises avec des documents Word dans vos applications .NET ? Tu n'es pas seul. Nous sommes tous passés par là, nous grattant la tête, essayant de comprendre comment manipuler des fichiers Word sans perdre la raison. Aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET, une bibliothèque fantastique qui simplifie la gestion des documents Word par programmation. Nous allons expliquer comment gérer la position du curseur dans un document Word à l'aide de cet outil astucieux. Alors, prenez votre café et commençons à coder !
+Salut, amis codeurs ! Vous êtes-vous déjà retrouvé plongé dans un projet, aux prises avec des documents Word dans vos applications .NET ? Tu n'es pas seul. Nous sommes tous passés par là, nous grattant la tête, essayant de comprendre comment manipuler des fichiers Word sans perdre la raison. Aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET, une fantastique bibliothèque qui simplifie la gestion des documents Word par programmation. Nous allons expliquer comment gérer la position du curseur dans un document Word à l'aide de cet outil astucieux. Alors, prenez votre café et commençons à coder !
 
 ## Conditions préalables
 
@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Initialiser le document
 
- Commençons par créer un nouveau document Word. Nous utiliserons le`Document` et`DocumentBuilder` cours d'Aspose.Words.
+ Commençons par créer un nouveau document Word. Nous utiliserons le`Document`et`DocumentBuilder` cours d'Aspose.Words.
 
 ```csharp
 Document doc = new Document();

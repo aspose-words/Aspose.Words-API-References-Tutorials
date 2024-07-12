@@ -45,7 +45,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 // ใช้ตัวสร้างเอกสารเพื่อเพิ่มเนื้อหาลงในเอกสาร
 DocumentBuilder builder = new DocumentBuilder();
 
-// แทรกไฮเปอร์ลิงก์
+//แทรกไฮเปอร์ลิงก์
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", เท็จ);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

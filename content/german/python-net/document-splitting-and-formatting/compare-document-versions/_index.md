@@ -1,8 +1,8 @@
 ---
 title: Vergleichen von Dokumentversionen für eine effektive Revisionskontrolle
 linktitle: Vergleichen von Dokumentversionen für eine effektive Revisionskontrolle
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
-description: Erfahren Sie, wie Sie Dokumentversionen mit Aspose.Words für Python effektiv vergleichen. Schritt-für-Schritt-Anleitung mit Quellcode zur Revisionskontrolle. Verbessern Sie die Zusammenarbeit und vermeiden Sie Fehler.
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+description: Erfahren Sie, wie Sie mit Aspose.Words für Python Dokumentversionen effektiv vergleichen. Schritt-für-Schritt-Anleitung mit Quellcode zur Revisionskontrolle. Verbessern Sie die Zusammenarbeit und vermeiden Sie Fehler.
 type: docs
 weight: 13
 url: /de/python-net/document-splitting-and-formatting/compare-document-versions/

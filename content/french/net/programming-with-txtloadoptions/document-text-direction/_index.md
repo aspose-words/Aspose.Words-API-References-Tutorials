@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- Dans cette étape, nous accédons au premier paragraphe du document en utilisant le`FirstSection` et`Body` propriétés. Ensuite, nous accédons au`ParagraphFormat.Bidi` propriété pour obtenir la direction du texte du paragraphe. Nous affichons ensuite cette valeur dans la console.
+ Dans cette étape, nous accédons au premier paragraphe du document en utilisant le`FirstSection`et`Body` propriétés. Ensuite, nous accédons au`ParagraphFormat.Bidi` propriété pour obtenir la direction du texte du paragraphe. Nous affichons ensuite cette valeur dans la console.
 
 ## Étape 5 : Enregistrez le document
 

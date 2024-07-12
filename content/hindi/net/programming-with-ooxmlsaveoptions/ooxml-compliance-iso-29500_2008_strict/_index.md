@@ -33,7 +33,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- इस चरण में, हम OOXML सेव विकल्पों को कॉन्फ़िगर करते हैं`OptimizeFor` और`OoxmlSaveOptions` विधियाँ। हम Word 2016 संस्करण के लिए दस्तावेज़ संगतता को अनुकूलित करते हैं`OptimizeFor`और अनुपालन निर्धारित करें`Iso29500_2008_Strict` का उपयोग करते हुए`Compliance`.
+ इस चरण में, हम OOXML सेव विकल्पों को कॉन्फ़िगर करते हैं`OptimizeFor`और`OoxmlSaveOptions` विधियाँ। हम Word 2016 संस्करण के लिए दस्तावेज़ संगतता को अनुकूलित करते हैं`OptimizeFor`और अनुपालन निर्धारित करें`Iso29500_2008_Strict` का उपयोग करते हुए`Compliance`.
 
 ## चरण 4: दस्तावेज़ को Ooxml Iso 29500_2008_Strict compliance के साथ सहेजना
 

@@ -55,7 +55,7 @@ dstDoc.updatePageLayout(); // Aktualisieren Sie das Seitenlayout für die korrek
 
 ## Umgang mit unterschiedlichen Seiteneinstellungen
 
-Beim Anhängen von Dokumenten mit unterschiedlichen Seiteneinstellungen:
+Beim Anhängen von Dokumenten mit unterschiedlichem Seitenaufbau:
 
 ```java
 srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);

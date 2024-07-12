@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Langkah 3: Akses tabel dan atur judul dan deskripsi
- Sekarang Anda dapat mengakses tabel dalam dokumen menggunakan`GetChild()` metode dan`Table` kelas. Selanjutnya, atur judul dan deskripsi tabel menggunakan`Title` Dan`Description` properti.
+ Sekarang Anda dapat mengakses tabel dalam dokumen menggunakan`GetChild()` metode dan`Table` kelas. Selanjutnya, atur judul dan deskripsi tabel menggunakan`Title`Dan`Description` properti.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

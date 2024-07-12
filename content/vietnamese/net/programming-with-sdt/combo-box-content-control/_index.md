@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách tạo Điều khiển nội dung Hộp t
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Bước 3: Thêm vật phẩm vào Combo Box
- Thêm các mục vào hộp tổ hợp bằng cách sử dụng`ListItems` tài sản của`StructuredDocumentTag` Mỗi mục được thể hiện bằng một`SdtListItem` đối tượng, lấy một văn bản hiển thị và một giá trị. Trong ví dụ này, chúng tôi thêm ba mục vào hộp tổ hợp.
+ Thêm các mục vào hộp tổ hợp bằng cách sử dụng`ListItems` tài sản của`StructuredDocumentTag` . Mỗi mục được thể hiện bằng một`SdtListItem` đối tượng, lấy một văn bản hiển thị và một giá trị. Trong ví dụ này, chúng tôi thêm ba mục vào hộp tổ hợp.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

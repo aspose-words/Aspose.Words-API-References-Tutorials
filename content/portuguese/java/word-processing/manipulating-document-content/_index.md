@@ -115,7 +115,7 @@ xmlMapping.setPrefixMappings("xmlns:ns='http://esquemas.exemplo'");
 doc.save("document_with_xml_data.docx");
 ```
 
-Este código vincula dados XML a partes específicas do seu documento, tornando-o dinâmico e orientado a dados.
+Este código vincula dados XML a partes específicas do seu documento, tornando-o dinâmico e orientado por dados.
 
 ## Perguntas frequentes (FAQ)
 
@@ -172,4 +172,4 @@ Este código vincula dados XML a partes específicas do seu documento, tornando-
 
 ## Conclusão
 
-Neste guia extenso, exploramos o mundo da manipulação do conteúdo do documento com limpeza, campos e dados XML usando Aspose.Words para Java. Você aprendeu como limpar documentos, trabalhar com campos e incorporar dados XML perfeitamente. Essas habilidades são inestimáveis para qualquer pessoa que lide com gerenciamento de documentos em aplicativos Java.
+Neste guia extenso, exploramos o mundo da manipulação de conteúdo de documentos com limpeza, campos e dados XML usando Aspose.Words para Java. Você aprendeu como limpar documentos, trabalhar com campos e incorporar dados XML perfeitamente. Essas habilidades são inestimáveis para qualquer pessoa que lide com gerenciamento de documentos em aplicativos Java.

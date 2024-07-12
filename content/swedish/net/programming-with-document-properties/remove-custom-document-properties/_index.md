@@ -16,7 +16,7 @@ För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att 
 
 ## Steg 2: Ladda dokumentet
 
-I det här steget kommer vi att ladda Word-dokumentet från vilket vi vill ta bort de anpassade egenskaperna. Använd följande kod för att ladda dokumentet:
+det här steget kommer vi att ladda Word-dokumentet från vilket vi vill ta bort de anpassade egenskaperna. Använd följande kod för att ladda dokumentet:
 
 ```csharp
 // Sökväg till dokumentkatalogen.

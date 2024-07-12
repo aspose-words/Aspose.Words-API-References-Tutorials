@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Kop- en voetteksten toevoegen aan tabellen:
 
- Tabellen kunnen profiteren van kop- en voetteksten die context of aanvullende informatie bieden. U kunt kop- en voetteksten aan tabellen toevoegen met behulp van de`Table.title` En`Table.description` eigenschappen.
+ Tabellen kunnen profiteren van kop- en voetteksten die context of aanvullende informatie bieden. U kunt kop- en voetteksten aan tabellen toevoegen met behulp van de`Table.title`En`Table.description` eigenschappen.
 
 ```python
 # Set table title (header)

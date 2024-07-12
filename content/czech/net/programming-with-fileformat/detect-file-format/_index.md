@@ -14,7 +14,7 @@ Než začnete, ujistěte se, že jste ve svém projektu nainstalovali a nakonfig
 
 ## Krok 1: Definujte adresáře
 
- Chcete-li začít, musíte definovat adresáře, kam chcete soubory ukládat, podle jejich formátu. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů. Vytváříme adresáře "Supported", "Unknown", "Encrypted" a "Pre97", pokud již neexistují.
+ Chcete-li začít, musíte definovat adresáře, kam chcete soubory ukládat, podle jejich formátu. Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou k adresáři vašich dokumentů. Vytváříme adresáře "Supported", "Unknown", "Encrypted" a "Pre97", pokud již neexistují.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## Krok 2: Procházení souborů
 
- Poté použijeme`GetFiles` metoda`Directory` třídy, abyste získali seznam souborů v zadaném adresáři. Používáme také a`Where`klauzule k vyloučení konkrétního souboru s názvem "Poškozený dokument.docx".
+ Poté použijeme`GetFiles` metoda`Directory` třídy, abyste získali seznam souborů v zadaném adresáři. Používáme také a`Where` klauzule k vyloučení konkrétního souboru s názvem "Poškozený dokument.docx".
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ To je vše ! Pomocí Aspose.Words for .NET jste úspěšně detekovali formát r
 
 #### Jak zjistit formát souboru dokumentu pomocí Aspose.Words for .NET?
 
- Chcete-li zjistit formát souboru dokumentu pomocí Aspose.Words for .NET, můžete postupovat podle kroků uvedených v tutoriálu. Za použití`DetectFileFormat` metoda`FileFormatUtil`class vám umožní zjistit formát souboru dokumentu. To vám umožní určit, zda se jedná o dokument Microsoft Word 97-2003, šablonu, dokument Office Open XML WordprocessingML nebo jiné podporované formáty. Kód uvedený v tutoriálu vás provede implementací této funkce.
+ Chcete-li zjistit formát souboru dokumentu pomocí Aspose.Words for .NET, můžete postupovat podle kroků uvedených v tutoriálu. Za použití`DetectFileFormat` metoda`FileFormatUtil` class vám umožní zjistit formát souboru dokumentu. To vám umožní určit, zda se jedná o dokument Microsoft Word 97-2003, šablonu, dokument Office Open XML WordprocessingML nebo jiné podporované formáty. Kód uvedený v tutoriálu vás provede implementací této funkce.
 
 #### Jaké formáty dokumentů Aspose.Words for .NET podporuje?
 

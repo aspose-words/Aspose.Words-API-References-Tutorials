@@ -55,7 +55,7 @@ doc.Sections.RemoveAt(0);
 ```
 
 ## Závěr
-V tomto tutoriálu jsme viděli, jak odstranit konkrétní sekci z dokumentu aplikace Word pomocí Aspose.Words for .NET. Odstranění oddílů vám umožňuje změnit uspořádání nebo odstranit určité části dokumentu. Neváhejte si tuto funkci přizpůsobit a používat podle svých konkrétních potřeb.
+V tomto tutoriálu jsme viděli, jak odstranit konkrétní sekci z dokumentu aplikace Word pomocí Aspose.Words for .NET. Odstranění sekcí umožňuje změnit uspořádání nebo odstranit určité části dokumentu. Neváhejte si tuto funkci přizpůsobit a používat podle svých konkrétních potřeb.
 
 ### FAQ
 

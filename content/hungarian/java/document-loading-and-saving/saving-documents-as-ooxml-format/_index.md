@@ -94,7 +94,7 @@ Document doc = new Document("LegacyControlChars.doc");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
 saveOptions.setKeepLegacyControlChars(true);
 
-// Mentse a dokumentumot örökölt vezérlőkarakterekkel
+// Mentse el a dokumentumot örökölt vezérlőkarakterekkel
 doc.save("LegacyControlCharsPreserved.docx", saveOptions);
 ```
 
@@ -172,7 +172,7 @@ A jelszóval védett dokumentum jelszavas védelmének eltávolításához megny
 
 ### Beállíthatok egyéni tulajdonságokat egy dokumentum OOXML formátumban való mentésekor?
 
- Igen, beállíthat egyéni tulajdonságokat egy dokumentumhoz, mielőtt OOXML formátumba menti. Használja a`BuiltInDocumentProperties` és`CustomDocumentProperties` osztályok különböző tulajdonságok, például szerző, cím, kulcsszavak és egyéni tulajdonságok beállításához.
+ Igen, beállíthat egyéni tulajdonságokat egy dokumentumhoz, mielőtt OOXML formátumba menti. Használja a`BuiltInDocumentProperties`és`CustomDocumentProperties` osztályok különböző tulajdonságok, például szerző, cím, kulcsszavak és egyéni tulajdonságok beállításához.
 
 ### Mi az alapértelmezett tömörítési szint egy dokumentum OOXML formátumban történő mentésekor?
 

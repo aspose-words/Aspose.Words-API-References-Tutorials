@@ -12,4 +12,4 @@ url: /zh/net/enable-opentype-features/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [开放式特色](./open-type-features/) | 了解如何在 Aspose.Words for .NET 中启用和使用 Open Type 功能 |
+| [开放式特色](./open-type-features/) | 通过本详细的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中启用 OpenType 功能。 |

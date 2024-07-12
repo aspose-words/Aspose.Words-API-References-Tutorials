@@ -125,7 +125,7 @@ aí está! Você criou com sucesso uma lista multinível em um documento do Word
  Sim, você pode continuar numerando usando o`ListFormat.List` propriedade para vincular a uma lista existente.
 
 ### Como altero o nível de recuo dinamicamente?
- Você pode alterar dinamicamente o nível de recuo usando`ListIndent` e`ListOutdent` métodos conforme necessário.
+ Você pode alterar dinamicamente o nível de recuo usando`ListIndent`e`ListOutdent` métodos conforme necessário.
 
 ### Posso criar listas multiníveis em outros formatos de documentos como PDF?
 Sim, Aspose.Words suporta salvar documentos em vários formatos inclusive PDF, mantendo a formatação.

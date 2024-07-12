@@ -1,7 +1,7 @@
 ---
 title: Inhaltsextraktion und -manipulation
 linktitle: Inhaltsextraktion und -manipulation
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Entdecken Sie die Welt der Inhaltsextraktion und -bearbeitung mit Aspose.Words-Tutorials. Erfahren Sie, wie Sie mit Python und .NET effizient Inhalte extrahieren und bearbeiten und so Ihre Dokumentverarbeitungsfunktionen verbessern.
 type: docs
 weight: 11

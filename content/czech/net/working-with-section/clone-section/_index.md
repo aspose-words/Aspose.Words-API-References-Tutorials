@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Vložte dokument a naklonujte sekci
- Dále načteme dokument aplikace Word do instance souboru`Document` třída. Poté použijeme`Clone` metoda pro klonování první části dokumentu.
+ Dále načteme dokument aplikace Word do instance souboru`Document` třída. Poté použijeme`Clone`metoda pro klonování první části dokumentu.
 
 ```csharp
 // Vložte dokument
@@ -49,7 +49,7 @@ Section cloneSection = doc.Sections[0].Clone();
 ```
 
 ## Závěr
-tomto tutoriálu jsme viděli, jak klonovat část dokumentu aplikace Word pomocí Aspose.Words for .NET. Klonování oddílů umožňuje vytvářet identické kopie existujících oddílů v dokumentu. Neváhejte a upravte a použijte tuto funkci klonování ve svých projektech k efektivní manipulaci a úpravám částí vašich dokumentů.
+V tomto tutoriálu jsme viděli, jak klonovat část dokumentu aplikace Word pomocí Aspose.Words for .NET. Klonování oddílů umožňuje vytvářet identické kopie existujících oddílů v dokumentu. Neváhejte a upravte a použijte tuto funkci klonování ve svých projektech k efektivní manipulaci a úpravám částí vašich dokumentů.
 
 ### FAQ
 

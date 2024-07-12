@@ -15,7 +15,7 @@ Ahoj, technický nadšenec! Zapletli jste se někdy do sítě převodů formát�
 
 Než skočíme do kouzelného světa konverze souborů, ujistěte se, že máme vše, co potřebujeme:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Pokud ne, stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Pokud ne, stáhněte si jej[tady](https://releases.aspose.com/words/net/).
 - .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 - Dokument PDF: Soubor PDF, který chcete převést.
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné preferované IDE.

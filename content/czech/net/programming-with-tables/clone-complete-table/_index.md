@@ -37,7 +37,7 @@ Dále naklonujeme celou tabulku a vložíme ji do dokumentu za originál. Použi
 // Klonujte pole
 Table tableClone = (Table)table.Clone(true);
 
-// Vložte klonovanou tabulku do dokumentu za originál
+//Vložte klonovanou tabulku do dokumentu za originál
 table.ParentNode.InsertAfter(tableClone, table);
 
 // Mezi dvě tabulky vložte prázdný odstavec
@@ -68,11 +68,11 @@ Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
 	// Naklonujte tabulku a vložte ji do dokumentu za originál.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	//Vložte prázdný odstavec mezi dvě tabulky,
+	// Vložte prázdný odstavec mezi dvě tabulky,
 	// jinak budou po uložení spojeny do jednoho, což souvisí s ověřením dokumentu.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```
 
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak naklonovat celou tabulku do dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete programově klonovat tabulky v dokumentech aplikace Word. Tato funkce vám umožňuje provádět pokročilé manipulace s poli tak, aby vyhovovaly vašim specifickým potřebám.
+tomto tutoriálu jsme se naučili, jak naklonovat celou tabulku do dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete programově klonovat tabulky v dokumentech aplikace Word. Tato funkce vám umožňuje provádět pokročilé manipulace s poli tak, aby vyhovovaly vašim specifickým potřebám.

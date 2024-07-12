@@ -16,21 +16,21 @@ Với những hướng dẫn này, bạn sẽ có thể cải thiện tài liệ
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Định dạng Số Nhãn Dữ liệu](./format-number-of-data-label/) | Tìm hiểu cách định dạng số lượng nhãn dữ liệu trong biểu đồ bằng Aspose.Words for .NET. Tùy chỉnh định dạng số cho nhãn dữ liệu một cách dễ dàng. |
-| [Tạo biểu đồ bằng hình dạng](./create-chart-using-shape/) | Tìm hiểu cách tạo và tùy chỉnh biểu đồ bằng hình dạng trong tài liệu Word bằng Aspose.Words for .NET. |
-| [Chèn biểu đồ cột đơn giản](./insert-simple-column-chart/) | Tìm hiểu cách chèn biểu đồ cột đơn giản vào tài liệu bằng Aspose.Words cho .NET. |
-| [Chèn biểu đồ cột](./insert-column-chart/) | Tìm hiểu cách chèn biểu đồ cột vào tài liệu bằng Aspose.Words cho .NET. |
-| [Chèn biểu đồ vùng](./insert-area-chart/) | Tìm hiểu cách chèn biểu đồ vùng vào tài liệu bằng Aspose.Words cho .NET. Thêm dữ liệu chuỗi và lưu tài liệu cùng với biểu đồ. |
-| [Chèn biểu đồ bong bóng](./insert-bubble-chart/) | Tìm hiểu cách chèn biểu đồ bong bóng vào tài liệu bằng Aspose.Words cho .NET. Thêm dữ liệu chuỗi với các giá trị kích thước X, Y và bong bóng. |
-| [Chèn biểu đồ phân tán](./insert-scatter-chart/) | Tìm hiểu cách chèn biểu đồ phân tán vào tài liệu bằng Aspose.Words cho .NET. Thêm dữ liệu chuỗi với tọa độ X và Y. |
-| [Xác định thuộc tính XYAxis](./define-xyaxis-properties/) | Tìm hiểu cách xác định thuộc tính trục XY trong biểu đồ bằng Aspose.Words for .NET. Các tùy chọn tùy chỉnh cho trục X và Y được thể hiện. |
-| [Giá trị ngày giờ theo trục](./date-time-values-to-axis/) | Tìm hiểu cách thêm giá trị ngày giờ vào trục của biểu đồ bằng Aspose.Words for .NET. |
-| [Định dạng số cho trục](./number-format-for-axis/) | Tìm hiểu cách đặt định dạng số cho một trục trong biểu đồ bằng Aspose.Words for .NET. |
+| [Định dạng số nhãn dữ liệu trong biểu đồ](./format-number-of-data-label/) | Tìm hiểu cách định dạng nhãn dữ liệu trong biểu đồ bằng Aspose.Words for .NET với hướng dẫn từng bước này. Cải thiện tài liệu Word của bạn một cách dễ dàng. |
+| [Tạo và tùy chỉnh biểu đồ bằng hình dạng](./create-chart-using-shape/) | Tìm hiểu cách tạo và tùy chỉnh biểu đồ trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo cho việc trực quan hóa dữ liệu. |
+| [Chèn biểu đồ cột đơn giản vào tài liệu Word](./insert-simple-column-chart/) | Tìm hiểu cách chèn biểu đồ cột đơn giản trong Word bằng Aspose.Words cho .NET. Nâng cao tài liệu của bạn bằng cách trình bày dữ liệu trực quan động. |
+| [Chèn biểu đồ cột vào tài liệu Word](./insert-column-chart/) | Tìm hiểu cách chèn biểu đồ cột trong tài liệu Word bằng Aspose.Words cho .NET. Tăng cường trực quan hóa dữ liệu trong báo cáo và bản trình bày của bạn. |
+| [Chèn biểu đồ vùng vào tài liệu Word](./insert-area-chart/) | Tìm hiểu cách chèn biểu đồ vùng vào tài liệu Word bằng Aspose.Words cho .NET trong hướng dẫn từng bước toàn diện này. |
+| [Chèn biểu đồ bong bóng vào tài liệu Word](./insert-bubble-chart/) | Tìm hiểu cách chèn biểu đồ bong bóng vào tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Nâng cao tài liệu của bạn. |
+| [Chèn biểu đồ phân tán vào tài liệu Word](./insert-scatter-chart/) | Tìm hiểu cách chèn biểu đồ phân tán trong Word bằng Aspose.Words for .NET. Các bước dễ dàng để tích hợp các biểu diễn dữ liệu trực quan vào tài liệu của bạn. |
+| [Xác định thuộc tính trục XY trong biểu đồ](./define-xyaxis-properties/) | Tìm hiểu cách xác định thuộc tính trục XY trong biểu đồ bằng Aspose.Words for .NET với hướng dẫn từng bước này. Hoàn hảo cho các nhà phát triển .NET. |
+| [Thêm giá trị ngày giờ vào trục của biểu đồ](./date-time-values-to-axis/) | Tìm hiểu cách thêm giá trị ngày và giờ vào trục của biểu đồ bằng Aspose.Words cho .NET trong hướng dẫn từng bước toàn diện này. |
+| [Định dạng số cho trục trong biểu đồ](./number-format-for-axis/) | Tìm hiểu cách định dạng số trục biểu đồ bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Nâng cao khả năng đọc và tính chuyên nghiệp của tài liệu của bạn một cách dễ dàng. |
 | [Giới hạn của trục](./bounds-of-axis/) | Tìm hiểu cách đặt giới hạn của một trục trong biểu đồ bằng Aspose.Words for .NET kiểm soát phạm vi giá trị được hiển thị trên trục. |
-| [Đơn vị khoảng cách giữa các nhãn trên trục](./interval-unit-between-labels-on-axis/) | Tìm hiểu cách đặt đơn vị khoảng giữa các nhãn trên trục của biểu đồ bằng Aspose.Words for .NET. |
-| [Ẩn trục biểu đồ](./hide-chart-axis/) | Tìm hiểu cách ẩn trục biểu đồ trong tài liệu bằng Aspose.Words for .NET. Ẩn trục để hiển thị biểu đồ rõ ràng và tập trung hơn. |
-| [Đánh dấu vào Căn chỉnh nhãn nhiều dòng](./tick-multi-line-label-alignment/) | Tìm hiểu cách căn chỉnh các nhãn nhiều dòng trong trục biểu đồ bằng Aspose.Words for .NET. |
-| [Nhãn dữ liệu biểu đồ](./chart-data-label/) | Tìm hiểu cách thêm và tùy chỉnh nhãn dữ liệu trong biểu đồ bằng Aspose.Words for .NET để cung cấp thêm thông tin về điểm dữ liệu. |
-| [Tùy chọn mặc định cho nhãn dữ liệu](./default-options-for-data-labels/) | Tìm hiểu cách đặt tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ bằng Aspose.Words cho .NET. |
-| [Điểm dữ liệu biểu đồ đơn](./single-chart-data-point/) | Tìm hiểu cách tùy chỉnh một điểm dữ liệu trong biểu đồ bằng Aspose.Words for .NET. |
-| [Chuỗi biểu đồ đơn](./single-chart-series/) | Tìm hiểu cách tùy chỉnh chuỗi biểu đồ đơn lẻ trong biểu đồ bằng Aspose.Words for .NET. |
+| [Đơn vị khoảng cách giữa các nhãn trên trục của biểu đồ](./interval-unit-between-labels-on-axis/) | Tìm hiểu cách đặt đơn vị khoảng giữa các nhãn trên trục của biểu đồ bằng Aspose.Words for .NET. |
+| [Ẩn trục biểu đồ trong tài liệu Word](./hide-chart-axis/) | Tìm hiểu cách ẩn trục biểu đồ trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. |
+| [Đánh dấu căn chỉnh nhãn nhiều dòng trong biểu đồ](./tick-multi-line-label-alignment/) | Tìm hiểu cách đánh dấu căn chỉnh nhãn nhiều dòng trong biểu đồ bằng Aspose.Words for .NET với hướng dẫn từng bước chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển ở mọi cấp độ. |
+| [Tùy chỉnh nhãn dữ liệu biểu đồ](./chart-data-label/) | Tìm hiểu cách tùy chỉnh nhãn dữ liệu biểu đồ bằng Aspose.Words cho .NET trong hướng dẫn từng bước. Hoàn hảo cho các nhà phát triển .NET. |
+| [Đặt tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ](./default-options-for-data-labels/) | Tìm hiểu cách đặt tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tạo và tùy chỉnh biểu đồ một cách dễ dàng. |
+| [Tùy chỉnh một điểm dữ liệu biểu đồ trong biểu đồ](./single-chart-data-point/) | Tìm hiểu cách tùy chỉnh các điểm dữ liệu biểu đồ đơn lẻ bằng Aspose.Words cho .NET trong hướng dẫn chi tiết từng bước. Nâng cao biểu đồ của bạn bằng các điểm đánh dấu và kích thước độc đáo. |
+| [Tùy chỉnh chuỗi biểu đồ đơn trong biểu đồ](./single-chart-series/) | Tìm hiểu cách tùy chỉnh chuỗi biểu đồ đơn lẻ trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để có trải nghiệm liền mạch. |

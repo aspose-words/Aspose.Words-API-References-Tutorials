@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Stap 2: Laad het document en haal de StructuredDocumentTag op
- Laad het Word-document met behulp van de`Document` constructor, waarbij het pad naar het document als parameter wordt doorgegeven. Haal vervolgens het gewenste op`StructuredDocumentTag` uit het document. In dit voorbeeld gaan we ervan uit dat de SDT het eerste onderliggende knooppunt in het document is.
+ Laad het Word-document met behulp van de`Document` constructor, waarbij het pad naar het document als parameter wordt doorgegeven. Haal vervolgens het gewenste op`StructuredDocumentTag`uit het document. In dit voorbeeld gaan we ervan uit dat de SDT het eerste onderliggende knooppunt in het document is.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Stap 4: Sla het document op
- Sla het gewijzigde document op met behulp van de`Save`methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.ClearContentsControl.doc".
+ Sla het gewijzigde document op met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.ClearContentsControl.doc".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

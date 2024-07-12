@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Ustaw priorytet folderów czcionek
- Następnie możesz ustawić priorytet folderów czcionek za pomocą`FontSettings` klasa i`SetFontsSources()`metoda. Można określić wiele źródeł czcionek, korzystając z instancji`SystemFontSource` I`FolderFontSource`. W tym przykładzie zdefiniowaliśmy dwa źródła czcionek: domyślne źródło czcionek systemowych i niestandardowy folder czcionek z priorytetem 1.
+ Następnie możesz ustawić priorytet folderów czcionek za pomocą`FontSettings` klasa i`SetFontsSources()`metoda. Można określić wiele źródeł czcionek, korzystając z instancji`SystemFontSource`I`FolderFontSource`. W tym przykładzie zdefiniowaliśmy dwa źródła czcionek: domyślne źródło czcionek systemowych i niestandardowy folder czcionek z priorytetem 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

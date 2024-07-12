@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
 
-在本教程中，我们将引导您完成使用 Aspose.Words for .NET 不嵌入核心字体来减小 PDF 文件大小的步骤。此功能允许您控制在转换 Word 文档时是否必须在 PDF 中嵌入基本字体（例如 Arial、Times New Roman 等）。请按照以下步骤操作：
+在本教程中，我们将引导您完成如何使用 Aspose.Words for .NET 不嵌入核心字体来减小 PDF 文件大小的步骤。此功能允许您控制在转换 Word 文档时是否必须在 PDF 中嵌入基本字体（例如 Arial、Times New Roman 等）。请按照以下步骤操作：
 
 ## 步骤 1：加载文档
 

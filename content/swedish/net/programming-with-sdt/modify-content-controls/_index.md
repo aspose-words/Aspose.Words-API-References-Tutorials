@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Steg 2: Ladda dokumentet och upprepa innehållskontrollerna
- Ladda Word-dokumentet med hjälp av`Document`konstruktor, skickar sökvägen till dokumentet som en parameter. Iterera över alla strukturerade dokumenttaggar i dokumentet med hjälp av en`foreach` slinga.
+ Ladda Word-dokumentet med hjälp av`Document` konstruktor, skickar sökvägen till dokumentet som en parameter. Iterera över alla strukturerade dokumenttaggar i dokumentet med hjälp av en`foreach` slinga.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Steg 6: Spara det ändrade dokumentet
- Spara det ändrade dokumentet i den angivna katalogen med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.ModifyContentControls.docx".
+ Spara det ändrade dokumentet i den angivna katalogen med hjälp av`Save`metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.ModifyContentControls.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

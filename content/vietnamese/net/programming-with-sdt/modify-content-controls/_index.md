@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tải tài liệu và lặp lại các điều khiển nội dung
- Tải tài liệu Word bằng cách sử dụng`Document`hàm tạo, chuyển đường dẫn đến tài liệu dưới dạng tham số. Lặp lại tất cả các thẻ tài liệu có cấu trúc trong tài liệu bằng cách sử dụng`foreach` vòng.
+ Tải tài liệu Word bằng cách sử dụng`Document` hàm tạo, chuyển đường dẫn đến tài liệu dưới dạng tham số. Lặp lại tất cả các thẻ tài liệu có cấu trúc trong tài liệu bằng cách sử dụng`foreach` vòng.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Bước 6: Lưu tài liệu đã sửa đổi
- Lưu tài liệu đã sửa đổi vào thư mục được chỉ định bằng cách sử dụng`Save` phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithSdt.ModifyContentControls.docx".
+ Lưu tài liệu đã sửa đổi vào thư mục được chỉ định bằng cách sử dụng`Save`phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithSdt.ModifyContentControls.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

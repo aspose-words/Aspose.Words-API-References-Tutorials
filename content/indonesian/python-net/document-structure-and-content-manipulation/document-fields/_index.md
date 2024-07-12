@@ -41,7 +41,7 @@ builder.insert_field('DATE \\@ "dd/MM/yyyy"')
 
 ## Menggabungkan Bidang Numerik dan Terhitung
 
-Bidang numerik dapat digunakan untuk perhitungan otomatis. Misalnya, untuk membuat kolom yang menghitung jumlah dua angka:
+Bidang numerik dapat digunakan untuk penghitungan otomatis. Misalnya, untuk membuat kolom yang menghitung jumlah dua angka:
 
 ```python
 builder.insert_field('= 5 + 3')

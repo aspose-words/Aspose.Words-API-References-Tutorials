@@ -103,7 +103,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 
 ### 3. Tabloları farklı şekilde nasıl formatlarım?
 
-Aspose.Words tarafından sağlanan farklı yöntemleri kullanarak tablo formatını özelleştirebilirsiniz. Kontrol edin[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
+ Aspose.Words tarafından sağlanan farklı yöntemleri kullanarak tablo formatını özelleştirebilirsiniz. Kontrol edin[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
 
 ### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 

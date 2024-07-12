@@ -2,166 +2,115 @@
 title: อักขระ Meta ในรูปแบบการค้นหา
 linktitle: อักขระ Meta ในรูปแบบการค้นหา
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีใช้อักขระเมตาในรูปแบบการค้นหาด้วย Aspose.Words สำหรับ .NET เพื่อจัดการเอกสาร Word
+description: เรียนรู้วิธีใช้อักขระเมตาในรูปแบบการค้นหาด้วย Aspose.Words สำหรับ .NET ในคำแนะนำโดยละเอียดทีละขั้นตอนนี้ เพิ่มประสิทธิภาพการประมวลผลเอกสารของคุณ
 type: docs
 weight: 10
 url: /th/net/find-and-replace-text/meta-characters-in-search-pattern/
 ---
-ในบทความนี้ เราจะสำรวจซอร์สโค้ด C# ด้านบนเพื่อทำความเข้าใจวิธีใช้ฟังก์ชัน Meta Character In Search Pattern ใน Aspose.Words สำหรับไลบรารี .NET คุณลักษณะนี้ช่วยให้คุณใช้อักขระเมตาพิเศษเพื่อทำการค้นหาขั้นสูงและแทนที่ในเอกสาร Word
+## การแนะนำ
+
+Aspose.Words for .NET เป็นไลบรารีที่มีประสิทธิภาพสำหรับการจัดการเอกสาร Word โดยทางโปรแกรม วันนี้ เรากำลังเจาะลึกถึงวิธีใช้ประโยชน์จากอักขระเมตาในรูปแบบการค้นหาโดยใช้ไลบรารีนี้ หากคุณต้องการเชี่ยวชาญการจัดการเอกสาร คู่มือนี้คือแหล่งข้อมูลที่คุณนำไปใช้ได้จริง เราจะอธิบายแต่ละขั้นตอนเพื่อให้แน่ใจว่าคุณสามารถแทนที่ข้อความได้อย่างมีประสิทธิภาพโดยใช้อักขระเมตา
 
 ## ข้อกำหนดเบื้องต้น
 
-- ความรู้พื้นฐานของภาษา C#
-- สภาพแวดล้อมการพัฒนา .NET ที่ติดตั้งไลบรารี Aspose.Words
+ก่อนที่เราจะพูดถึงโค้ด โปรดตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าทุกอย่างแล้ว:
 
-## ขั้นตอนที่ 1: การสร้างเอกสารใหม่
+1.  Aspose.Words สำหรับ .NET: คุณต้องติดตั้ง Aspose.Words สำหรับ .NET คุณสามารถดาวน์โหลดได้จาก[กำหนดหน้าเผยแพร่](https://releases.aspose.com/words/net/).
+2. สภาพแวดล้อมการพัฒนา: Visual Studio หรือสภาพแวดล้อมการพัฒนา C# อื่น ๆ
+3. ความรู้พื้นฐานของ C#: ความเข้าใจพื้นฐานการเขียนโปรแกรม C# จะเป็นประโยชน์
 
- ก่อนที่เราจะเริ่มใช้อักขระเมตาในรูปแบบการค้นหา เราจำเป็นต้องสร้างเอกสารใหม่โดยใช้ Aspose.Words สำหรับ .NET ซึ่งสามารถทำได้โดยการยกตัวอย่าง a`Document` วัตถุ:
+## นำเข้าเนมสเปซ
+
+ขั้นแรก เรามานำเข้าเนมสเปซที่จำเป็น:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+
+ในบทช่วยสอนนี้ เราจะแบ่งกระบวนการออกเป็นขั้นตอนง่ายๆ แต่ละขั้นตอนจะมีหัวข้อและคำอธิบายโดยละเอียดเพื่อแนะนำคุณตลอด
+
+## ขั้นตอนที่ 1: การตั้งค่าไดเร็กทอรีเอกสาร
+
+ก่อนที่คุณจะเริ่มจัดการเอกสาร คุณต้องกำหนดเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ นี่คือที่ที่ไฟล์เอาต์พุตของคุณจะถูกบันทึก
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ แทนที่`"YOUR DOCUMENT DIRECTORY"`ด้วยเส้นทางจริงที่คุณต้องการบันทึกเอกสารของคุณ
+
+## ขั้นตอนที่ 2: การสร้างเอกสารใหม่
+
+ต่อไป เราจะสร้างเอกสาร Word ใหม่และวัตถุ DocumentBuilder คลาส DocumentBuilder จัดเตรียมวิธีการเพิ่มเนื้อหาลงในเอกสาร
+
+```csharp
 Document doc = new Document();
-```
-
-## ขั้นตอนที่ 2: แทรกข้อความลงในเอกสาร
-
- เมื่อได้เอกสารแล้ว เราก็สามารถแทรกข้อความโดยใช้ a`DocumentBuilder` วัตถุ. ในตัวอย่างของเรา เราใช้`Writeln` และ`Write` วิธีการแทรกข้อความสองบรรทัด:
-
-```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("This is line 1");
-builder.Writeln("This is line 2");
 ```
 
-## ขั้นตอนที่ 3: ค้นหาและแทนที่ข้อความด้วยอักขระเมตา
+## ขั้นตอนที่ 3: การเขียนเนื้อหาเริ่มต้น
 
- ตอนนี้เราจะใช้`Range.Replace` ฟังก์ชั่นการค้นหาและแทนที่ข้อความโดยใช้รูปแบบการค้นหาที่มีอักขระเมตาพิเศษ ในตัวอย่างของเรา เราแทนที่วลี "นี่คือบรรทัด 1&pนี่คือบรรทัด 2" ด้วย "บรรทัดนี้ถูกแทนที่" โดยใช้`&p` meta character เพื่อแสดงตัวแบ่งย่อหน้า:
+เราจะเขียนเนื้อหาเริ่มต้นบางส่วนลงในเอกสารโดยใช้ DocumentBuilder
 
 ```csharp
-doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
+builder.Writeln("This is Line 1");
+builder.Writeln("This is Line 2");
 ```
 
-## ขั้นตอนที่ 4: การแทรกตัวแบ่งหน้าในเอกสาร
+## ขั้นตอนที่ 4: การแทนที่ข้อความโดยใช้อักขระ Meta ตัวแบ่งย่อหน้า
 
- เพื่อแสดงให้เห็นการใช้ meta character อื่น เราจะแทรกตัวแบ่งหน้าลงในเอกสารโดยใช้`InsertBreak` วิธีการด้วย`BreakType.PageBreak` พารามิเตอร์. ก่อนอื่นเราเลื่อนเคอร์เซอร์จาก`DocumentBuilder` ที่ท้ายเอกสาร จากนั้นเราจะแทรกตัวแบ่งหน้าและบรรทัดข้อความใหม่:
+ อักขระ Meta สามารถแสดงถึงองค์ประกอบต่างๆ เช่น ย่อหน้า แท็บ และการขึ้นบรรทัดใหม่ นี่เราใช้`&p` เพื่อแสดงตัวแบ่งย่อหน้า
 
 ```csharp
-builder. MoveToDocumentEnd();
-builder.Write("This is line 1");
-builder. InsertBreak(BreakType.PageBreak);
-builder.Writeln("This is line 2");
+doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");
 ```
 
-## ขั้นตอนที่ 5: ค้นหาและแทนที่ด้วย meta character อื่น
+## ขั้นตอนที่ 5: การย้ายไปยังจุดสิ้นสุดเอกสารและเพิ่มเนื้อหา
 
- ตอนนี้เราจะทำการค้นหาอีกครั้งและแทนที่โดยใช้`&m` meta character เพื่อแสดงตัวแบ่งหน้า เราแทนที่วลี "นี่คือบรรทัด 1&mนี่คือบรรทัด 2" ด้วย "ตัวแบ่งหน้าถูกแทนที่ด้วยข้อความใหม่" -
+มาเลื่อนเคอร์เซอร์ไปที่ท้ายเอกสารและเพิ่มเนื้อหาเพิ่มเติม รวมถึงตัวแบ่งหน้าด้วย
 
 ```csharp
-doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
+builder.MoveToDocumentEnd();
+builder.Write("This is Line 1");
+builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is Line 2");
 ```
 
-## ขั้นตอนที่ 6: บันทึกเอกสารที่แก้ไข
+## ขั้นตอนที่ 6: การแทนที่ข้อความโดยใช้อักขระ Meta ของตัวแบ่งบรรทัดแบบแมนนวล
 
-สุดท้าย เราจะบันทึกเอกสารที่แก้ไขไปยังไดเร็กทอรีที่ระบุโดยใช้`Save` วิธี:
+ ตอนนี้เราจะใช้`&m` อักขระเมตาเพื่อแสดงการแบ่งบรรทัดด้วยตนเองและแทนที่ข้อความตามลำดับ
 
 ```csharp
-doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
+doc.Range.Replace("This is Line 1&mThis is Line 2", "Page break is replaced with new text.");
 ```
 
-### ตัวอย่างซอร์สโค้ดสำหรับอักขระ Meta ในรูปแบบการค้นหาโดยใช้ Aspose.Words สำหรับ .NET
+## ขั้นตอนที่ 7: บันทึกเอกสาร
 
-ต่อไปนี้คือตัวอย่างซอร์สโค้ดแบบเต็มเพื่อสาธิตการใช้อักขระเมตาในรูปแบบการค้นหาด้วย Aspose.Words สำหรับ .NET:
+สุดท้าย ให้บันทึกเอกสารลงในไดเร็กทอรีที่ระบุ
 
 ```csharp
-
-	/* meta-characters
-	&p - paragraph break
-	&b - section break
-	&m - page break
-	&l - manual line break
-	*/
-
-	// เส้นทางไปยังไดเร็กทอรีเอกสาร
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Writeln("This is Line 1");
-	builder.Writeln("This is Line 2");
-
-	doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");
-
-	builder.MoveToDocumentEnd();
-	builder.Write("This is Line 1");
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.Writeln("This is Line 2");
-
-	doc.Range.Replace("This is Line 1&mThis is Line 2", "Page break is replaced with new text.");
-
-	doc.Save(dataDir + "FindAndReplace.MetaCharactersInSearchPattern.docx");
-
+doc.Save(dataDir + "FindAndReplace.MetaCharactersInSearchPattern.docx");
 ```
 
 ## บทสรุป
 
-ในบทความนี้ เราได้สำรวจซอร์สโค้ด C# เพื่อทำความเข้าใจวิธีใช้อักขระเมตาในรูปแบบการค้นหาของ Aspose.Words สำหรับ .NET เราทำตามคำแนะนำทีละขั้นตอนเพื่อสร้างเอกสาร แทรกข้อความ ทำการค้นหาและแทนที่โดยใช้อักขระเมตาพิเศษ แทรกตัวแบ่งหน้า และบันทึกเอกสารที่แก้ไข
+ยินดีด้วย! คุณจัดการเอกสาร Word ได้สำเร็จโดยใช้อักขระเมตาในรูปแบบการค้นหาด้วย Aspose.Words สำหรับ .NET เทคนิคนี้มีประโยชน์อย่างเหลือเชื่อสำหรับการแก้ไขและจัดรูปแบบเอกสารโดยอัตโนมัติ ทดลองใช้อักขระเมตาที่แตกต่างกันเพื่อค้นพบวิธีที่มีประสิทธิภาพมากขึ้นในการจัดการเอกสารของคุณ
 
-### คำถามที่พบบ่อย
+## คำถามที่พบบ่อย
 
-#### ถาม: ฟีเจอร์ Meta Character In Search Pattern ใน Aspose.Words สำหรับ .NET คืออะไร
+### อักขระเมตาใน Aspose.Words สำหรับ .NET คืออะไร
+อักขระ Meta เป็นอักขระพิเศษที่ใช้เพื่อแสดงองค์ประกอบต่างๆ เช่น ตัวแบ่งย่อหน้า ตัวแบ่งบรรทัดด้วยตนเอง แท็บ ฯลฯ ในรูปแบบการค้นหา
 
-ตอบ: คุณลักษณะ Meta อักขระในรูปแบบการค้นหาใน Aspose.Words สำหรับ .NET ช่วยให้คุณสามารถใช้อักขระ meta พิเศษเพื่อทำการค้นหาขั้นสูงและการแทนที่ในเอกสาร Word อักขระเมตาเหล่านี้ช่วยให้คุณสามารถแสดงตัวแบ่งย่อหน้า ตัวแบ่งส่วน ตัวแบ่งหน้า และองค์ประกอบพิเศษอื่นๆ ในรูปแบบการค้นหาของคุณ
+### ฉันจะติดตั้ง Aspose.Words สำหรับ .NET ได้อย่างไร
+ คุณสามารถดาวน์โหลดได้จาก[กำหนดหน้าเผยแพร่](https://releases.aspose.com/words/net/)- ทำตามคำแนะนำการติดตั้งที่ให้ไว้
 
-#### ถาม: จะสร้างเอกสารใหม่ใน Aspose.Words สำหรับ .NET ได้อย่างไร
+### ฉันสามารถใช้ Aspose.Words สำหรับ .NET กับภาษาการเขียนโปรแกรมอื่นได้หรือไม่
+Aspose.Words สำหรับ .NET ได้รับการออกแบบมาเป็นพิเศษสำหรับภาษา .NET เช่น C# อย่างไรก็ตาม Aspose มีไลบรารีสำหรับแพลตฟอร์มอื่นเช่นกัน
 
- ตอบ: ก่อนที่จะใช้อักขระเมตาในเทมเพลตการค้นหา คุณต้องสร้างเอกสารใหม่โดยใช้ Aspose.Words สำหรับ .NET ซึ่งสามารถทำได้โดยการยกตัวอย่าง a`Document` วัตถุ. นี่คือโค้ดตัวอย่างเพื่อสร้างเอกสารใหม่:
+### ฉันจะได้รับใบอนุญาตชั่วคราวสำหรับ Aspose.Words สำหรับ .NET ได้อย่างไร
+ คุณสามารถขอรับใบอนุญาตชั่วคราวได้จาก[ที่นี่](https://purchase.aspose.com/temporary-license/).
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-```
-
-#### ถาม: จะแทรกข้อความลงในเอกสารโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
-
- ตอบ: เมื่อคุณมีเอกสารแล้ว คุณสามารถแทรกข้อความโดยใช้ a`DocumentBuilder` วัตถุ. ในตัวอย่างของเรา เราใช้`Writeln` และ`Write` วิธีการแทรกข้อความสองบรรทัด:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("This is line 1");
-builder.Writeln("This is line 2");
-```
-
-#### ถาม: จะค้นหาและแทนที่ข้อความด้วยอักขระเมตาในเอกสารโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
-
- ตอบ: หากต้องการค้นหาและแทนที่ข้อความด้วยอักขระเมตา คุณสามารถใช้`Range.Replace` วิธี. ในตัวอย่างของเรา เราแทนที่วลี "นี่คือบรรทัด 1&pนี่คือบรรทัด 2" ด้วย "บรรทัดนี้ถูกแทนที่" โดยใช้`&p` meta character เพื่อแสดงตัวแบ่งย่อหน้า:
-
-```csharp
-doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
-```
-
-#### ถาม: จะแทรกตัวแบ่งหน้าในเอกสารโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
-
-ตอบ: เพื่อแสดงให้เห็นการใช้ meta character อื่น เราจะแทรกตัวแบ่งหน้าลงในเอกสารโดยใช้`InsertBreak` วิธีการด้วย`BreakType.PageBreak` พารามิเตอร์. ก่อนอื่นเราเลื่อนเคอร์เซอร์จาก`DocumentBuilder` ที่ท้ายเอกสาร จากนั้นเราจะแทรกตัวแบ่งหน้าและบรรทัดข้อความใหม่:
-
-```csharp
-builder. MoveToDocumentEnd();
-builder.Write("This is line 1");
-builder. InsertBreak(BreakType.PageBreak);
-builder.Writeln("This is line 2");
-```
-
-#### ถาม: จะค้นหาและแทนที่ด้วย meta character อื่นในเอกสารโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
-
- ตอบ: ตอนนี้เราจะทำการค้นหาอีกครั้งและแทนที่โดยใช้`&m` meta character เพื่อแสดงตัวแบ่งหน้า เราแทนที่วลี "นี่คือบรรทัด 1&mนี่คือบรรทัด 2" ด้วย "ตัวแบ่งหน้าถูกแทนที่ด้วยข้อความใหม่" -
-
-```csharp
-doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
-```
-
-#### ถาม: จะบันทึกเอกสารที่แก้ไขใน Aspose.Words สำหรับ .NET ได้อย่างไร
-
- ตอบ: เมื่อคุณทำการเปลี่ยนแปลงเอกสารแล้ว คุณสามารถบันทึกลงในไดเร็กทอรีที่ระบุได้โดยใช้`Save` วิธี:
-
-```csharp
-doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
-```
+### ฉันจะหาเอกสารรายละเอียดเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ .NET ได้ที่ไหน
+ คุณสามารถค้นหาเอกสารที่ครอบคลุมได้ที่[กำหนดหน้าเอกสารประกอบ](https://reference.aspose.com/words/net/).

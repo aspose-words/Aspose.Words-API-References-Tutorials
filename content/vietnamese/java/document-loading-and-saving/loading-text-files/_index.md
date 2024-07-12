@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- Trong ví dụ này, chúng tôi tải một tài liệu văn bản và cắt bớt khoảng trắng ở đầu và cuối bằng cách sử dụng`TxtLeadingSpacesOptions.TRIM` Và`TxtTrailingSpacesOptions.TRIM`.
+ Trong ví dụ này, chúng tôi tải một tài liệu văn bản và cắt bớt khoảng trắng ở đầu và cuối bằng cách sử dụng`TxtLeadingSpacesOptions.TRIM`Và`TxtTrailingSpacesOptions.TRIM`.
 
 ## Bước 3: Kiểm soát hướng văn bản
 
@@ -179,7 +179,7 @@ Aspose.Words for Java là một thư viện xử lý tài liệu mạnh mẽ cho
 
 ### Làm cách nào để xử lý khoảng trắng trong tài liệu văn bản được tải?
 
- Bạn có thể kiểm soát cách xử lý khoảng trắng ở đầu và cuối trong tài liệu văn bản được tải bằng cách sử dụng`TxtLoadOptions` . Tùy chọn như`TxtLeadingSpacesOptions` Và`TxtTrailingSpacesOptions`cho phép bạn cắt bớt hoặc bảo toàn không gian khi cần thiết. Hãy tham khảo phần "Tùy chọn xử lý không gian" trong hướng dẫn này để biết ví dụ.
+ Bạn có thể kiểm soát cách xử lý khoảng trắng ở đầu và cuối trong tài liệu văn bản được tải bằng cách sử dụng`TxtLoadOptions` . Tùy chọn như`TxtLeadingSpacesOptions`Và`TxtTrailingSpacesOptions`cho phép bạn cắt bớt hoặc bảo toàn không gian khi cần thiết. Hãy tham khảo phần "Tùy chọn xử lý không gian" trong hướng dẫn này để biết ví dụ.
 
 ### Tầm quan trọng của hướng văn bản trong Aspose.Words cho Java là gì?
 

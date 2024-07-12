@@ -64,6 +64,6 @@ Neste tutorial, exploramos a funcionalidade de preservar caracteres de controle 
 
  Preservar caracteres de controle herdados é especialmente útil no processamento de texto com documentos que usam recursos mais antigos ou específicos, como caracteres de controle especiais. Ao ativar o`KeepLegacyControlChars` opção ao salvar o documento, você garante que esses caracteres sejam preservados.
 
-Aspose.Words for .NET oferece uma gama de opções de backup flexíveis e poderosas para atender às suas necessidades de manipulação de documentos. Ao usar as opções apropriadas, você pode personalizar o processo de backup para preservar as características específicas dos seus documentos.
+Aspose.Words for .NET oferece uma variedade de opções de backup flexíveis e poderosas para atender às suas necessidades de manipulação de documentos. Ao usar as opções apropriadas, você pode personalizar o processo de backup para preservar as características específicas dos seus documentos.
 
 Sinta-se à vontade para incorporar essa funcionalidade em seus projetos Aspose.Words for .NET para garantir a integridade e preservação dos caracteres de controle legados em seus documentos.

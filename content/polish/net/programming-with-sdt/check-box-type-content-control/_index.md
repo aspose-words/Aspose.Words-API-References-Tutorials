@@ -17,7 +17,7 @@ Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 - Podstawowa znajomość języka C# i przetwarzania tekstów w dokumentach Word.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
- Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+ Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -40,7 +40,7 @@ builder.InsertNode(sdtCheckBox);
 ```
 
 ## Krok 4: Zapisz dokument
- Zapisz dokument w określonym katalogu za pomocą`Save` metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithSdt.CheckBoxTypeContentControl.docx”.
+ Zapisz dokument w określonym katalogu za pomocą`Save`metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithSdt.CheckBoxTypeContentControl.docx”.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);

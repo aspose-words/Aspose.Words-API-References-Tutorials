@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## 4단계: 셀을 삽입하고 행 형식으로 이동
-이제 테이블에 셀을 삽입하고 문서 작성기의`InsertCell()` 그리고`RowFormat` 행동 양식.
+이제 테이블에 셀을 삽입하고 문서 작성기의`InsertCell()`그리고`RowFormat` 행동 양식.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## 5단계: 행 높이 설정
- 행 높이를 설정하려면 다음을 사용합니다.`Height` 그리고`HeightRule` 행 형식의 속성입니다. 이 예에서는 행 높이를 100포인트로 설정하고`Exactly` 규칙.
+ 행 높이를 설정하려면 다음을 사용합니다.`Height`그리고`HeightRule` 행 형식의 속성입니다. 이 예에서는 행 높이를 100포인트로 설정하고`Exactly` 규칙.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## 6단계: 테이블 형식 정의
- 일부 서식 속성은 테이블 자체에 설정할 수 있으며 모든 테이블 행에 적용됩니다. 이 예에서는 다음을 사용하여 테이블 여백 속성을 설정합니다.`LeftPadding`, `RightPadding`, `TopPadding` 그리고`BottomPadding` 속성.
+ 일부 서식 속성은 테이블 자체에 설정할 수 있으며 모든 테이블 행에 적용됩니다. 이 예에서는 다음을 사용하여 테이블 여백 속성을 설정합니다.`LeftPadding`, `RightPadding`, `TopPadding`그리고`BottomPadding` 속성.
 
 ```csharp
 table. LeftPadding = 30;

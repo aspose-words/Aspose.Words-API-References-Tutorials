@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Chèn trường IF vào tài liệu.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Đánh giá điều kiện IF.
+// Đánh giá điều kiện IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Hiển thị kết quả đánh giá.

@@ -87,6 +87,6 @@ J: Untuk menghapus komentar di Aspose.Words untuk .NET, Anda dapat menggunakan`C
 
  J: Anda dapat mengakses komentar yang ada di Aspose.Words untuk .NET menggunakan`CommentCollection` properti dari`Document` obyek. Ini akan memungkinkan Anda menelusuri semua komentar yang ada di dokumen.
 
-#### T: Bisakah saya mengedit teks komentar di Aspose.Words untuk .NET?
+#### T: Dapatkah saya mengedit teks komentar di Aspose.Words untuk .NET?
 
  J: Ya, Anda dapat mengedit teks komentar di Aspose.Words untuk .NET dengan mengakses`Comment.Text` milik yang bersangkutan`Comment` objek dan memodifikasi teks sesuai kebutuhan.

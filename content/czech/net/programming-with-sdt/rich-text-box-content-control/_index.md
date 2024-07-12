@@ -17,7 +17,7 @@ Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 - Základní znalost C# a Word Processing s dokumenty Word.
 
 ## Krok 1: Nastavte adresář dokumentů
- Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři, kam chcete dokument uložit.
+ Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou k adresáři, kam chcete dokument uložit.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,7 +43,7 @@ para.Runs.Add(run);
 ```
 
 ## Krok 4: Přidejte obsah ve formátu RTF do ovládacího prvku obsahu
-Přidejte odstavec s obsahem formátovaného textu do`ChildNodes` kolekce ovládacího prvku obsahu pole s formátovaným textem.
+ Přidejte odstavec s obsahem formátovaného textu do`ChildNodes` kolekce ovládacího prvku obsahu pole s formátovaným textem.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);

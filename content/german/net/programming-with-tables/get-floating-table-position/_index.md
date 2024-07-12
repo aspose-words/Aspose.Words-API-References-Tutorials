@@ -27,7 +27,7 @@ Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
 Ersetzen Sie unbedingt „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis. Stellen Sie außerdem sicher, dass das Dokument schwebende Tabellen enthält.
 
-## Schritt 3: Abrufen der Positionierungseigenschaften für schwebende Tabellen
+## Schritt 3: Positionierungseigenschaften für schwebende Tabellen abrufen
 Als Nächstes durchlaufen wir alle Tabellen im Dokument und ermitteln die Positionierungseigenschaften der schwebenden Tabellen. Verwenden Sie den folgenden Code:
 
 ```csharp

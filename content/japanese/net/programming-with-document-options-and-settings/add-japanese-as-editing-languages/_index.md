@@ -40,7 +40,7 @@ Console.WriteLine(
 		: "The document default FarEast language was set to another than Japanese language originally, so it is not overridden.");
 ```
 
-コードは、極東の言語 ID が日本語のものと一致するかどうかを確認します。結果に応じて、対応するメッセージが表示されます。
+コードは、極東の言語 ID が日本語の ID と一致するかどうかをチェックします。結果に応じて、対応するメッセージが表示されます。
 
 ### Aspose.Words for .NET を使用して日本語を編集言語として追加するためのサンプル ソース コード
 

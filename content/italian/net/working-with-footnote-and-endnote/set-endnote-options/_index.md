@@ -85,7 +85,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo in ba
 
 #### D: È possibile personalizzare la numerazione delle note di chiusura in un documento?
 
- R: Sì, è possibile personalizzare la numerazione delle note di chiusura in un documento. Puoi usare il`RestartRule` E`NumberStyle` proprietà del`EndnoteOptions` classe per definire regole di riavvio e stili di numerazione specifici.
+ R: Sì, è possibile personalizzare la numerazione delle note di chiusura in un documento. Puoi usare il`RestartRule`E`NumberStyle` proprietà del`EndnoteOptions` classe per definire regole di riavvio e stili di numerazione specifici.
 
 #### D: Come posso posizionare le note di chiusura in un documento?
 

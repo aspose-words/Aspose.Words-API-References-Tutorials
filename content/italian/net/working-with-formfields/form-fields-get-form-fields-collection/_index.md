@@ -87,6 +87,6 @@ R: Sì, puoi filtrare la raccolta dei campi del modulo utilizzando le condizioni
 
  R: Per rimuovere un campo modulo specifico dalla raccolta, puoi utilizzare il file`FormField.Remove` metodo che specifica il campo che desideri rimuovere. Questo metodo rimuoverà il campo modulo dalla raccolta.
 
-#### D: è possibile modificare le proprietà di un campo modulo in Aspose.Words?
+#### D: È possibile modificare le proprietà di un campo modulo in Aspose.Words?
 
 R: Sì, puoi modificare le proprietà di un campo modulo in Aspose.Words accedendo alle sue singole proprietà. Ad esempio, puoi modificare il nome, il valore o le opzioni di un campo modulo utilizzando le proprietà appropriate.

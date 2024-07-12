@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- In deze stap configureren we back-upopties voor afbeeldingen. Wij creëren een nieuwe`ImageSaveOptions` object dat het gewenste opslagformaat specificeert, hier "Jpeg" voor het JPEG-formaat. We stellen ook het bereik van de pagina's in die moeten worden geconverteerd met behulp van de`PageSet`voorwerp. Ten slotte passen we de helderheid en het contrast van de afbeelding aan met behulp van de`ImageBrightness` En`ImageContrast` eigenschappen, respectievelijk. We veranderen ook de horizontale resolutie met behulp van de`HorizontalResolution` eigendom.
+ In deze stap configureren we back-upopties voor afbeeldingen. Wij creëren een nieuwe`ImageSaveOptions` object dat het gewenste opslagformaat specificeert, hier "Jpeg" voor het JPEG-formaat. We stellen ook het bereik van de pagina's in die moeten worden geconverteerd met behulp van de`PageSet`voorwerp. Ten slotte passen we de helderheid en het contrast van de afbeelding aan met behulp van de`ImageBrightness`En`ImageContrast` eigenschappen, respectievelijk. We veranderen ook de horizontale resolutie met behulp van de`HorizontalResolution` eigendom.
 
 ## Stap 4: Een back-up maken van afbeeldingen
 

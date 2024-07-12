@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- En este fragmento, definimos la ruta al directorio donde se guardará nuestro documento e inicializamos un nuevo`Document` y`DocumentBuilder` instancia.
+ En este fragmento, definimos la ruta al directorio donde se guardará nuestro documento e inicializamos un nuevo`Document`y`DocumentBuilder` instancia.
 
 ## Paso 3: escriba el texto inicial
 
@@ -121,7 +121,7 @@ Esto guarda el documento con el nombre especificado en el directorio que defini�
 
 ## Conclusión
 
-¡Y ahí lo tienes! Ha insertado con éxito un hipervínculo en un documento de Word utilizando Aspose.Words para .NET. Este proceso puede parecer un poco técnico al principio, pero con un poco de práctica, podrás agregar hipervínculos como un profesional en poco tiempo. Ya sea que esté creando informes, generando documentos automatizados o simplemente jugando con algún código, esta habilidad definitivamente le resultará útil.
+¡Y ahí lo tienes! Ha insertado con éxito un hipervínculo en un documento de Word utilizando Aspose.Words para .NET. Este proceso puede parecer un poco técnico al principio, pero con un poco de práctica, podrás agregar hipervínculos como un profesional en poco tiempo. Ya sea que estés creando informes, generando documentos automatizados o simplemente jugando con algún código, esta habilidad definitivamente te resultará útil.
 
 ## Preguntas frecuentes
 
@@ -135,7 +135,7 @@ Aspose ofrece una prueba gratuita y licencias temporales, que puede utilizar par
 
 ### ¿Es difícil aprender Aspose.Words para .NET?
 
-¡De nada! Si tiene conocimientos básicos de C# y sigue tutoriales como este, le resultará bastante sencillo de usar.
+¡De nada! Si tiene conocimientos básicos de C# y sigue tutoriales como este, le resultará bastante sencillo de utilizar.
 
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Words para .NET?
 

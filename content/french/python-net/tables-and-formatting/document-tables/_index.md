@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Ajout d'en-têtes et de pieds de page aux tableaux :
 
- Les tableaux peuvent bénéficier d’en-têtes et de pieds de page qui fournissent du contexte ou des informations supplémentaires. Vous pouvez ajouter des en-têtes et des pieds de page aux tableaux à l'aide de l'outil`Table.title` et`Table.description` propriétés.
+ Les tableaux peuvent bénéficier d’en-têtes et de pieds de page qui fournissent du contexte ou des informations supplémentaires. Vous pouvez ajouter des en-têtes et des pieds de page aux tableaux à l'aide de l'outil`Table.title`et`Table.description` propriétés.
 
 ```python
 # Set table title (header)

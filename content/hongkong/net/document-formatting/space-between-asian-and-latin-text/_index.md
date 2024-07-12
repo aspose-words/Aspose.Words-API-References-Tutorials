@@ -17,7 +17,7 @@ url: /zh-hant/net/document-formatting/space-between-asian-and-latin-text/
 
 1.  Aspose.Words for .NET：確保您安裝了這個功能強大的程式庫。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
 2. 開發環境：任何 .NET 相容環境，例如 Visual Studio。
-3. C# 基礎知識：您不需要成為嚮導，但稍微熟悉一下就會很有幫助。
+3. C# 基礎：您不需要成為嚮導，但稍微熟悉一下就會很有幫助。
 4. 有效許可證：獲得免費試用[這裡](https://releases.aspose.com/)或購買許可證[這裡](https://purchase.aspose.com/buy).
 
 好吧，東西都拿到了嗎？驚人的！讓我們動手吧。
@@ -80,7 +80,7 @@ doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 自動調整 Word 文件中亞洲文本和拉丁文本之間的間距。這就像擁有完美格式化的魔杖一樣。現在，繼續用您新發現的技能給您的朋友和同事留下深刻的印象。請記住，正確的工具使一切變得不同，Aspose.Words for .NET 絕對是您值得擁有的工具。
+現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 自動調整 Word 文件中亞洲文本和拉丁文本之間的間距。這就像擁有完美格式化的魔杖一樣。現在，繼續用您新發現的技能給您的朋友和同事留下深刻的印象。請記住，正確的工具使一切變得不同，Aspose.Words for .NET 絕對是您值得擁有的工具。
 
 ## 常見問題解答
 

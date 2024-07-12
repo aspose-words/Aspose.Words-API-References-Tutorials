@@ -16,7 +16,7 @@ Aby rozpocząć, utwórz nowy projekt C# w swoim ulubionym środowisku IDE. Upew
 
 ## Krok 2: Załaduj dokument
 
-W tym kroku załadujemy dokument programu Word, który chcemy wyczyścić. Aby załadować dokument, użyj poniższego kodu:
+tym kroku załadujemy dokument programu Word, który chcemy wyczyścić. Aby załadować dokument, użyj poniższego kodu:
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
@@ -73,7 +73,7 @@ To zestawienie wyświetla liczbę stylów pozostałych po czyszczeniu.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//Zmniejszono liczbę stylów po czyszczeniu.
+	// Zmniejszono liczbę stylów po czyszczeniu.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

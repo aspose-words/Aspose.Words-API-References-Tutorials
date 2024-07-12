@@ -99,7 +99,7 @@ Nyní jste zvládli proces používání toku prostředků jako zdroje písem po
 
 ###  Q3: Mohu zpracovat jiné typy varování pomocí`IWarningCallback`?
 
- Ano,`IWarningCallback` rozhraní zvládne různé typy varování, nejen náhradu písem.
+ Ano,`IWarningCallback`rozhraní zvládne různé typy varování, nejen náhradu písem.
 
 ### Q4: Kde najdu podporu pro Aspose.Words?
 

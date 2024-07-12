@@ -14,7 +14,7 @@ Neste guia abrangente, mergulharemos no mundo das formas de documentos em Aspose
 
 ## Introdução às formas de documentos
 
- Antes de entrarmos no código, vamos configurar nosso ambiente. Certifique-se de ter o Aspose.Words for Java integrado ao seu projeto. Se ainda não o fez, você pode baixá-lo no site Aspose[Baixe Aspose.Words para Java](https://releases.aspose.com/words/java/)
+ Antes de entrarmos no código, vamos configurar nosso ambiente. Certifique-se de ter Aspose.Words for Java integrado ao seu projeto. Se ainda não o fez, você pode baixá-lo no site Aspose[Baixe Aspose.Words para Java](https://releases.aspose.com/words/java/)
 
 ## Adicionando formas a documentos
 

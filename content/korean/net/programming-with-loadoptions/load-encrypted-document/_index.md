@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // 지정된 비밀번호로 암호화된 문서를 로드합니다.
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// 새 비밀번호로 암호화된 문서 저장
+//새 비밀번호로 암호화된 문서 저장
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

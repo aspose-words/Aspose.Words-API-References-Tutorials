@@ -64,7 +64,7 @@ Bu, Aspose.Words for .NET kullanılarak bir belgede alan düzeyinde yerelleştir
 
 #### S: Aspose.Words for .NET'te alan düzeyindeki yerel ayarı nasıl belirleyebilirim?
 
- C: Aspose.Words for .NET'te yerel ayarı alan düzeyinde belirtmek için`FieldOptions` sınıf ve onun`FieldLocale` İstenilen yerel ayarı ayarlama özelliği. Örneğin şunları kullanabilirsiniz:`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` Fransızca (Fransa) yerel ayarını belirtmek için.
+ C: Aspose.Words for .NET'te yerel ayarı alan düzeyinde belirtmek için`FieldOptions` sınıf ve onun`FieldLocale` İstenilen yerel ayarı ayarlama özelliği. Örneğin, kullanabilirsiniz`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` Fransızca (Fransa) yerel ayarını belirtmek için.
 
 #### S: Aspose.Words for .NET'te her alan için farklı bir yerel ayar belirlemek mümkün mü?
 

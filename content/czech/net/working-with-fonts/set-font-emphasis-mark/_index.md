@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Vytvořte a přizpůsobte dokument
- Vytvořte instanci souboru`Document` třída a přidružená`DocumentBuilder` k vytvoření obsahu dokumentu. Použijte`Font.EmphasisMark` vlastnost, na kterou chcete nastavit styl zvýraznění písma`EmphasisMark.UnderSolidCircle` . Poté použijte`Write` a`Writeln` metody`DocumentBuilder` pro přidání textu se zadaným zvýrazněním písma.
+ Vytvořte instanci souboru`Document` třída a přidružená`DocumentBuilder` k vytvoření obsahu dokumentu. Použijte`Font.EmphasisMark` vlastnost, na kterou chcete nastavit styl zvýraznění písma`EmphasisMark.UnderSolidCircle` . Poté použijte`Write`a`Writeln` metody`DocumentBuilder` pro přidání textu se zadaným zvýrazněním písma.
 
 ```csharp
 Document document = new Document();
@@ -81,4 +81,4 @@ Odpověď: Ano, pomocí Aspose.Words můžete do určité části textu v dokume
 
 #### Otázka: Mohou být akcenty přizpůsobeny mým potřebám?
 
-Odpověď: Ano, akcenty lze upravit podle vašich potřeb pomocí Aspose.Words. Vlastnosti stylu akcentních značek, jako je barva, velikost, typ čáry a další, můžete upravit tak, aby odpovídaly vašim předvolbám formátování.
+Odpověď: Ano, znaménka s diakritikou lze upravit podle vašich potřeb pomocí Aspose.Words. Vlastnosti stylu akcentních značek, jako je barva, velikost, typ čáry a další, můžete upravit tak, aby odpovídaly vašim předvolbám formátování.

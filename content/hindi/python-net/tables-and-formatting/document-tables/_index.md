@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## तालिकाओं में शीर्षलेख और पादलेख जोड़ना:
 
- तालिकाओं को हेडर और फ़ुटर से लाभ हो सकता है जो संदर्भ या अतिरिक्त जानकारी प्रदान करते हैं। आप तालिकाओं में हेडर और फ़ुटर जोड़ सकते हैं`Table.title` और`Table.description` गुण।
+ तालिकाओं को हेडर और फ़ुटर से लाभ हो सकता है जो संदर्भ या अतिरिक्त जानकारी प्रदान करते हैं। आप तालिकाओं में हेडर और फ़ुटर जोड़ सकते हैं`Table.title`और`Table.description` गुण।
 
 ```python
 # Set table title (header)

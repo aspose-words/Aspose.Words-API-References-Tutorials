@@ -125,7 +125,7 @@ Et voila! Vous avez créé avec succès une liste à plusieurs niveaux dans un d
  Oui, vous pouvez continuer la numérotation en utilisant le`ListFormat.List` propriété pour créer un lien vers une liste existante.
 
 ### Comment modifier dynamiquement le niveau d’indentation ?
- Vous pouvez modifier dynamiquement le niveau d'indentation en utilisant`ListIndent` et`ListOutdent` méthodes selon les besoins.
+ Vous pouvez modifier dynamiquement le niveau d'indentation en utilisant`ListIndent`et`ListOutdent` méthodes selon les besoins.
 
 ### Puis-je créer des listes à plusieurs niveaux dans d’autres formats de document comme PDF ?
 Oui, Aspose.Words prend en charge l'enregistrement de documents dans différents formats, y compris PDF, en conservant le formatage.

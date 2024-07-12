@@ -73,7 +73,7 @@ Questa affermazione mostra il numero di stili rimanenti dopo la pulizia.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//Il conteggio degli stili dopo la pulizia è stato ridotto.
+	// Il conteggio degli stili dopo la pulizia è stato ridotto.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

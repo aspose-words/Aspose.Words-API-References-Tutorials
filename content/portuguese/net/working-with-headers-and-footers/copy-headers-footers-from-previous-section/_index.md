@@ -40,7 +40,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Etapa 2: acesse a seção atual
 
-A seguir, acesse a seção atual do documento onde deseja copiar os cabeçalhos e rodapés.
+seguir, acesse a seção atual do documento onde deseja copiar os cabeçalhos e rodapés.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Etapa 2: acesse a seção atual
 
-Recuperamos a seção atual usando`builder.CurrentSection`. Esta seção será o destino onde copiaremos os cabeçalhos e rodapés da seção anterior.
+ Recuperamos a seção atual usando`builder.CurrentSection`Esta seção será o destino onde copiaremos os cabeçalhos e rodapés da seção anterior.
 
 ### Etapa 3: definir a seção anterior
 

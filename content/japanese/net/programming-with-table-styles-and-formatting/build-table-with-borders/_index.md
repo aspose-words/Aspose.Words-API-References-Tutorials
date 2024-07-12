@@ -46,7 +46,7 @@ table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
 ```
 
-おめでとうございます! Aspose.Words for .NET を使用して、カスタム境界線のあるテーブルを作成しました。
+おめでとうございます！Aspose.Words for .NET を使用して、カスタム境界線のあるテーブルを作成しました。
 
 ### Aspose.Words for .NET を使用して境界線付きの表を作成するためのサンプル ソース コード 
 

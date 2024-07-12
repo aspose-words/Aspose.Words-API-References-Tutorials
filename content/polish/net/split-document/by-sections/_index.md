@@ -84,7 +84,7 @@ Zachęcamy do zapoznania się z innymi zaawansowanymi funkcjami oferowanymi prze
 Tak, możesz dostosować kryteria podziału zgodnie ze swoimi konkretnymi potrzebami. Oprócz podziałów sekcji możesz dzielić dokument na podstawie innych elementów, takich jak nagłówki, zakładki lub określona treść, korzystając z różnych funkcji i metod udostępnianych przez Aspose.Words dla .NET.
 
 #### P2: Czy możliwe jest ponowne połączenie sekcji w jeden dokument?
- Tak, możesz scalić oddzielne sekcje z powrotem w jeden dokument, importując i łącząc sekcje z wielu dokumentów za pomocą`ImportNode` I`Sections.Add` metody. Dzięki temu można odwrócić proces podziału i zrekonstruować oryginalny dokument.
+ Tak, możesz scalić oddzielne sekcje z powrotem w jeden dokument, importując i łącząc sekcje z wielu dokumentów za pomocą`ImportNode`I`Sections.Add` metody. Dzięki temu można odwrócić proces podziału i zrekonstruować oryginalny dokument.
 
 #### P3: Czy istnieją jakieś ograniczenia dotyczące liczby sekcji, które można podzielić za pomocą funkcji „Według sekcji”?
 Liczba sekcji, które można podzielić za pomocą funkcji „Według sekcji” zależy od możliwości Aspose.Words dla .NET i dostępnych zasobów systemowych. Ogólnie rzecz biorąc, obsługuje dzielenie dokumentów z dużą liczbą sekcji, ale wyjątkowo długie dokumenty lub bardzo duża liczba sekcji mogą wymagać dodatkowych zasobów systemowych i czasu przetwarzania.

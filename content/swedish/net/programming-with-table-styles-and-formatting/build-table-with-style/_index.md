@@ -55,7 +55,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Steg 7: Lägg till innehåll i celler
- Nu kan vi lägga till innehåll till celler med hjälp av`Writeln()` och`InsertCell()` dokumentbyggarens metoder. I det här exemplet lägger vi till rubrikerna för "Artikel" och "Quantity (
+ Nu kan vi lägga till innehåll i celler med hjälp av`Writeln()`och`InsertCell()` dokumentbyggarens metoder. I det här exemplet lägger vi till rubrikerna för "Artikel" och "Quantity (
 
 kg)" och motsvarande data.
 

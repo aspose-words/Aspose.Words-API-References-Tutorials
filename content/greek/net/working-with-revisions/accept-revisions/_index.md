@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Λύση 2:
 
- Α: Μπορείτε επίσης να ενεργοποιήσετε την παρακολούθηση αναθεωρήσεων χρησιμοποιώντας το`Document` κατασκευαστής που δέχεται`trackRevisions` και`author` Παράμετροι.
+ Α: Μπορείτε επίσης να ενεργοποιήσετε την παρακολούθηση αναθεωρήσεων χρησιμοποιώντας το`Document` κατασκευαστής που δέχεται`trackRevisions`και`author` Παράμετροι.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

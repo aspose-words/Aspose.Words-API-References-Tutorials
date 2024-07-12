@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Hier gebruiken we een voorwaarde om te controleren of de array van het float-type is. Als dat zo is, printen wij de`RelativeHorizontalAlignment` En`RelativeVerticalAlignment` eigenschappen om de relatieve horizontale en verticale uitlijning van de tabel te verkrijgen. Anders printen wij de`Alignment` eigenschap om de array-uitlijning te verkrijgen.
+ Hier gebruiken we een voorwaarde om te controleren of de array van het float-type is. Als dat zo is, printen wij de`RelativeHorizontalAlignment`En`RelativeVerticalAlignment` eigenschappen om de relatieve horizontale en verticale uitlijning van de tabel te verkrijgen. Anders printen wij de`Alignment` eigenschap om de array-uitlijning te verkrijgen.
 
 ### Voorbeeldbroncode voor Get Table Position met Aspose.Words voor .NET 
 

@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Burada dizinin float tipinde olup olmadığını kontrol etmek için bir koşul kullanıyoruz. Eğer öyleyse, yazdırırız`RelativeHorizontalAlignment` Ve`RelativeVerticalAlignment` Tablonun göreceli yatay ve dikey hizalamasını elde etmek için özellikler. Aksi halde yazdırırız`Alignment` Dizi hizalamasını almak için özellik.
+ Burada dizinin float tipinde olup olmadığını kontrol etmek için bir koşul kullanıyoruz. Eğer öyleyse, yazdırırız`RelativeHorizontalAlignment`Ve`RelativeVerticalAlignment` Tablonun göreceli yatay ve dikey hizalamasını elde etmek için özellikler. Aksi halde yazdırırız`Alignment` Dizi hizalamasını almak için özellik.
 
 ### Aspose.Words for .NET kullanarak Tablo Konumunu Al için örnek kaynak kodu 
 

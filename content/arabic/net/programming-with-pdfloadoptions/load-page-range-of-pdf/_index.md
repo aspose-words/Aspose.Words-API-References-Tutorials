@@ -23,11 +23,11 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- في هذا المثال، نقوم بتحميل الصفحة الأولى من مستند PDF. يمكنك تغيير قيم`PageIndex` و`PageCount` إلى نطاق الصفحات المطلوب.
+ في هذا المثال، نقوم بتحميل الصفحة الأولى من مستند PDF. يمكنك تغيير قيم`PageIndex`و`PageCount` إلى نطاق الصفحات المطلوب.
 
 ## الخطوة 2: حفظ الوثيقة
 
- وأخيرًا، يمكنك حفظ المستند الذي يحتوي على نطاق الصفحات المحدد باستخدام الملف`Save` طريقة:
+ وأخيرًا، يمكنك حفظ المستند الذي يحتوي على نطاق الصفحات المحدد باستخدام ملف`Save` طريقة:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");

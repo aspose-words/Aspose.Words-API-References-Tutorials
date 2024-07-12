@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Lösung 2:
 
- A: Sie können die Revisionsverfolgung auch aktivieren, indem Sie`Document` Konstruktor, der akzeptiert`trackRevisions` Und`author` Parameter.
+ A: Sie können die Revisionsverfolgung auch aktivieren, indem Sie`Document` Konstruktor, der akzeptiert`trackRevisions`Und`author` Parameter.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

@@ -69,7 +69,7 @@ R : Oui, certaines bibliothèques Markdown dans .NET offrent des options de pers
 
 #### Q : Quelles sont les bibliothèques .NET recommandées pour manipuler les documents Markdown ?
 
- R : Les bibliothèques .NET recommandées pour manipuler les documents Markdown sont`Markdig` et`CommonMark.NET`. Ils offrent une grande flexibilité et une prise en charge complète des fonctionnalités Markdown.
+ R : Les bibliothèques .NET recommandées pour manipuler les documents Markdown sont`Markdig`et`CommonMark.NET`. Ils offrent une grande flexibilité et une prise en charge complète des fonctionnalités Markdown.
 
 #### Q : Comment gérer les erreurs lors de la lecture d’un document Markdown ?
 

@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Passaggio 4: inserisci la cella e vai al formato riga
-Ora possiamo inserire una cella nella tabella e accedere al formato di riga per quella cella utilizzando il generatore di documenti`InsertCell()` E`RowFormat` metodi.
+Ora possiamo inserire una cella nella tabella e accedere al formato di riga per quella cella utilizzando il generatore di documenti`InsertCell()`E`RowFormat` metodi.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Passaggio 5: imposta l'altezza della riga
- Per impostare l'altezza della riga, utilizziamo il`Height` E`HeightRule` proprietà del formato di riga. In questo esempio impostiamo un'altezza di riga pari a 100 punti e utilizziamo il metodo`Exactly` regola.
+ Per impostare l'altezza della riga, utilizziamo il`Height`E`HeightRule` proprietà del formato di riga. In questo esempio impostiamo un'altezza di riga pari a 100 punti e utilizziamo il metodo`Exactly` regola.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Passaggio 6: definire la formattazione della tabella
- Alcune proprietà di formattazione possono essere impostate sulla tabella stessa e vengono applicate a tutte le righe della tabella. In questo esempio, impostiamo le proprietà del margine della tabella utilizzando il file`LeftPadding`, `RightPadding`, `TopPadding` E`BottomPadding` proprietà.
+ Alcune proprietà di formattazione possono essere impostate sulla tabella stessa e vengono applicate a tutte le righe della tabella. In questo esempio, impostiamo le proprietà del margine della tabella utilizzando il file`LeftPadding`, `RightPadding`, `TopPadding`E`BottomPadding` proprietà.
 
 ```csharp
 table. LeftPadding = 30;

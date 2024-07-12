@@ -39,7 +39,7 @@ För att skapa och infoga tabeller i dokument med Aspose.Words för Python, föl
     table = builder.start_table()
     ```
 
-2.  Infoga data: Lägg till data i tabellen med hjälp av byggarens`insert_cell` och`write` metoder.
+2.  Infoga data: Lägg till data i tabellen med hjälp av byggarens`insert_cell`och`write` metoder.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ För att skapa och infoga tabeller i dokument med Aspose.Words för Python, föl
 
 ## Använder grundläggande tabellformatering
 
- Grundläggande tabellformatering kan uppnås med metoder som tillhandahålls av`Table` och`Cell` klasser. Så här kan du förbättra utseendet på ditt bord:
+ Grundläggande tabellformatering kan uppnås med metoder som tillhandahålls av`Table`och`Cell` klasser. Så här kan du förbättra utseendet på ditt bord:
 
 1. Ställ in kolumnbredder: Justera bredden på kolumner för att säkerställa korrekt justering och visuellt tilltalande.
 

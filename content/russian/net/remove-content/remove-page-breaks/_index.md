@@ -131,7 +131,7 @@ NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 
 foreach (Paragraph para in paragraphs)
 {
-      // Если в абзаце уже был разрыв страницы, удалите его.
+      // Если в абзаце ранее был разрыв страницы, удалите его.
       if (para.ParagraphFormat.PageBreakBefore)
           para.ParagraphFormat.PageBreakBefore = false;
 

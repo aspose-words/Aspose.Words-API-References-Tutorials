@@ -112,11 +112,11 @@ J: Menggunakan bidang bertingkat menawarkan beberapa keuntungan dalam dokumen Wo
 
 #### T: Bisakah saya memiliki bidang bertingkat bertingkat di dokumen Word dengan Aspose.Words untuk .NET?
 
- J: Ya, dimungkinkan untuk memiliki bidang bertingkat bertingkat dalam dokumen Word dengan Aspose.Words untuk .NET. Anda dapat membuat hierarki kompleks dari bidang bersarang dengan menggunakan`FieldStart.NextSibling` metode untuk menambahkan bidang anak ke bidang induk yang ada.
+J: Ya, dimungkinkan untuk memiliki bidang bertingkat bertingkat dalam dokumen Word dengan Aspose.Words untuk .NET. Anda dapat membuat hierarki kompleks dari bidang bersarang dengan menggunakan`FieldStart.NextSibling` metode untuk menambahkan bidang anak ke bidang induk yang ada.
 
 #### T: Bagaimana cara mengkustomisasi properti bidang bertumpuk di dokumen Word dengan Aspose.Words untuk .NET?
 
- J: Untuk mengkustomisasi properti bidang bertumpuk dalam dokumen Word dengan Aspose.Words untuk .NET, Anda dapat mengakses yang sesuai`FieldStart`objek dan memodifikasi propertinya sesuai kebutuhan. Anda dapat mengatur opsi pemformatan, nilai, perhitungan, dll., dari bidang bersarang untuk mencapai hasil yang diinginkan.
+ J: Untuk mengkustomisasi properti bidang bertumpuk dalam dokumen Word dengan Aspose.Words untuk .NET, Anda dapat mengakses yang sesuai`FieldStart` objek dan memodifikasi propertinya sesuai kebutuhan. Anda dapat mengatur opsi pemformatan, nilai, perhitungan, dll., dari bidang bersarang untuk mencapai hasil yang diinginkan.
 
 #### T: Apakah menyisipkan bidang bertumpuk memengaruhi kinerja dokumen Word dengan Aspose.Words untuk .NET?
 

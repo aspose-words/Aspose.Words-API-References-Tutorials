@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. Chcete-li do projektu vložit kód pro vložení objektu OLE jako ikonu ze streamu, postupujte takto:
 -  Importujte potřebné reference přidáním příslušných`using` prohlášení.
--  Vytvořte nový dokument a tvůrce dokumentů pomocí`Document` a`DocumentBuilder` třídy.
+-  Vytvořte nový dokument a tvůrce dokumentů pomocí`Document`a`DocumentBuilder` třídy.
 - Použijte kód pro vložení objektu OLE jako ikonu ze streamu.
 -  Uložte dokument pomocí`Save` metoda s příslušnou cílovou cestou.
 

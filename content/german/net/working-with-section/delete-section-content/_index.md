@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/working-with-section/delete-section-content/
 ---
-In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET Inhalt aus einem bestimmten Abschnitt eines Word-Dokuments löschen. Das Entfernen von Inhalt aus einem Abschnitt kann nützlich sein, wenn Sie bestimmten Inhalt aus diesem Abschnitt zurücksetzen oder entfernen möchten. Wir führen Sie Schritt für Schritt durch, damit Sie den Code verstehen und in Ihrem .NET-Projekt implementieren können.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET Inhalte aus einem bestimmten Abschnitt eines Word-Dokuments löschen. Das Entfernen von Inhalten aus einem Abschnitt kann nützlich sein, wenn Sie bestimmte Inhalte aus diesem Abschnitt zurücksetzen oder entfernen möchten. Wir führen Sie Schritt für Schritt durch, damit Sie den Code verstehen und in Ihrem .NET-Projekt implementieren können.
 
 ## Voraussetzungen
 Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente verfügen:
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Laden Sie das Dokument und gehen Sie zum Abschnitt
- Als nächstes laden wir das Word-Dokument in eine Instanz des`Document` Klasse. Wir greifen mit Index 0 auf den ersten Abschnitt des Dokuments zu.
+ Als nächstes laden wir das Word-Dokument in eine Instanz des`Document` Klasse. Wir greifen auf den ersten Abschnitt des Dokuments über den Index 0 zu.
 
 ```csharp
 // Laden Sie das Dokument
@@ -61,7 +61,7 @@ In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET Inhalte
 
 #### F: Wie lege ich das Dokumentverzeichnis in Aspose.Words für .NET fest?
 
- A: Um den Pfad zum Verzeichnis mit Ihren Dokumenten festzulegen, müssen Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad. So geht's:
+A: Um den Pfad zum Verzeichnis mit Ihren Dokumenten festzulegen, müssen Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad. So geht's:
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis

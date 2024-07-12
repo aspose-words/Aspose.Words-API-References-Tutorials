@@ -17,7 +17,7 @@ url: /zh/net/working-with-fields/convert-fields-in-document/
 - 包含要转换为文本的链接字段的 Word 文档。
 - 您可以保存转换后的文档的文档目录。
 
-## 第 2 步：设置环境
+## 步骤 2：设置环境
 确保您已正确配置开发环境以使用 Aspose.Words for .NET。导入必要的命名空间并设置文档目录的路径。
 
 ```csharp

@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### 2단계: 현재 섹션에 액세스
 
-다음을 사용하여 현재 섹션을 검색합니다.`builder.CurrentSection`. 이 섹션은 이전 섹션의 머리글과 바닥글을 복사할 대상이 됩니다.
+ 다음을 사용하여 현재 섹션을 검색합니다.`builder.CurrentSection`이 섹션은 이전 섹션의 머리글과 바닥글을 복사할 대상이 됩니다.
 
 ### 3단계: 이전 섹션 정의
 

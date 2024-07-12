@@ -15,7 +15,7 @@ Antes de mergulhar no código, é importante entender a biblioteca Aspose.Words 
 
 ## Configurando opções de carregamento
 
-primeiro passo é configurar as opções de carregamento do nosso documento. Use a classe LoadOptions para especificar parâmetros de carregamento. No nosso caso, queremos converter as formas em fórmulas matemáticas do Office, por isso precisamos definir a propriedade ConvertShapeToOfficeMath como verdadeira. Veja como fazer isso:
+O primeiro passo é configurar as opções de carregamento do nosso documento. Use a classe LoadOptions para especificar parâmetros de carregamento. No nosso caso, queremos converter as formas em fórmulas matemáticas do Office, por isso precisamos definir a propriedade ConvertShapeToOfficeMath como verdadeira. Veja como fazer isso:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };

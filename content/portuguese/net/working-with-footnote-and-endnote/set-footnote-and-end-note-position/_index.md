@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Etapa 2: definir a posição da nota de rodapé e da nota final
 
- A seguir, acesse o`FootnoteOptions` e`EndnoteOptions`propriedades do documento para definir a posição das notas de rodapé e notas finais. Neste exemplo, definimos a posição das notas de rodapé abaixo do texto e a posição das notas finais no final da seção:
+ A seguir, acesse o`FootnoteOptions`e`EndnoteOptions`propriedades do documento para definir a posição das notas de rodapé e notas finais. Neste exemplo, definimos a posição das notas de rodapé abaixo do texto e a posição das notas finais no final da seção:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

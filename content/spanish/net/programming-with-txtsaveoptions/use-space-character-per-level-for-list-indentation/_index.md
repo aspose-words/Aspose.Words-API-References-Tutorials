@@ -91,7 +91,7 @@ namespace Example
 
 ## Conclusión
 
-En esta guía, explicamos cómo usar Aspose.Words para .NET para aplicar la funcionalidad "Usar un carácter de espacio por nivel para la sangría de la lista". Si sigue los pasos proporcionados y utiliza el código fuente C# proporcionado, puede configurar fácilmente la sangría de las listas en sus documentos de Word utilizando un carácter de espacio por nivel. Aspose.Words ofrece una tremenda flexibilidad y potencia para el procesamiento de textos con formato de texto y gestión de listas, lo que le permite crear documentos bien estructurados en su aplicación C#.
+En esta guía, explicamos cómo usar Aspose.Words para .NET para aplicar la funcionalidad "Usar un carácter de espacio por nivel para la sangría de la lista". Si sigue los pasos proporcionados y utiliza el código fuente C# proporcionado, puede configurar fácilmente la sangría de las listas en sus documentos de Word utilizando un carácter de espacio por nivel. Aspose.Words ofrece una enorme flexibilidad y potencia para el procesamiento de textos con formato de texto y gestión de listas, lo que le permite crear documentos bien estructurados en su aplicación C#.
 
 ### Preguntas frecuentes
 

@@ -93,6 +93,6 @@ Aspose.Words for Java를 사용한 맞춤형 문서 인쇄는 기업이 맞춤�
 
 문서 인쇄에 문제가 발생하는 경우 문제 해결 지침은 Java용 Aspose.Words 설명서를 참조하세요.
 
-### Aspose.Words for Java 평가판이 있습니까?
+### Aspose.Words for Java 평가판이 있나요?
 
 예, 해당 웹사이트에서 Aspose.Words for Java 평가판에 액세스할 수 있습니다.

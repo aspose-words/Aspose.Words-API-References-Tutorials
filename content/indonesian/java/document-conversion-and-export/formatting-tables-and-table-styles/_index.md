@@ -133,7 +133,7 @@ builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
 // Hapus pemformatan sel untuk baris berikutnya
 builder.getCellFormat().clearFormatting();
-// Buat batas yang lebih besar untuk sel pertama baris ini
+// Buat batas yang lebih besar untuk sel pertama pada baris ini
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);

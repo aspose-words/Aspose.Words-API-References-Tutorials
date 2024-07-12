@@ -2,7 +2,7 @@
 title: 按索引访问部分
 linktitle: 按索引访问部分
 second_title: Aspose.Words 文档处理 API
-description: 在本教程中，学习如何通过索引访问 Word 文档的各个部分并使用 Aspose.Words for .NET 更改其设置。
+description: 在本教程中，了解如何通过索引访问 Word 文档的各个部分并使用 Aspose.Words for .NET 更改其设置。
 type: docs
 weight: 10
 url: /zh/net/working-with-section/sections-access-by-index/

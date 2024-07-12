@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Bước 3: Vào ô cần sửa đổi
- Để thay đổi định dạng của một ô, chúng ta cần điều hướng đến ô cụ thể trong bảng. Chúng tôi sử dụng`GetChild()` Và`FirstRow.FirstCell` các phương thức để lấy tham chiếu đến ô đầu tiên của mảng đầu tiên.
+ Để thay đổi định dạng của một ô, chúng ta cần điều hướng đến ô cụ thể trong bảng. Chúng tôi sử dụng`GetChild()`Và`FirstRow.FirstCell` các phương thức để lấy tham chiếu đến ô đầu tiên của mảng đầu tiên.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

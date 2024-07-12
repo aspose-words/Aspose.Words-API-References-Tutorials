@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## 4. Adım: Hücreyi ekleyin ve satır formatına gidin
-Artık tabloya bir hücre ekleyebilir ve belge oluşturucuyu kullanarak bu hücrenin satır biçimine erişebiliriz.`InsertCell()` Ve`RowFormat` yöntemler.
+Artık tabloya bir hücre ekleyebilir ve belge oluşturucuyu kullanarak bu hücrenin satır biçimine erişebiliriz.`InsertCell()`Ve`RowFormat` yöntemler.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Adım 5: Satır Yüksekliğini Ayarlayın
- Satır yüksekliğini ayarlamak için şunu kullanırız:`Height` Ve`HeightRule` satır biçiminin özellikleri. Bu örnekte, 100 puntoluk bir satır yüksekliği belirledik ve`Exactly` kural.
+ Satır yüksekliğini ayarlamak için şunu kullanırız:`Height`Ve`HeightRule` satır biçiminin özellikleri. Bu örnekte, 100 puntoluk bir satır yüksekliği belirledik ve`Exactly` kural.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## 6. Adım: Tablo biçimlendirmesini tanımlayın
- Bazı biçimlendirme özellikleri tablonun kendisinde ayarlanabilir ve tüm tablo satırlarına uygulanabilir. Bu örnekte, tablo kenar boşluğu özelliklerini kullanarak ayarladık.`LeftPadding`, `RightPadding`, `TopPadding` Ve`BottomPadding` özellikler.
+ Bazı biçimlendirme özellikleri tablonun kendisinde ayarlanabilir ve tüm tablo satırlarına uygulanabilir. Bu örnekte, tablo kenar boşluğu özelliklerini kullanarak ayarladık.`LeftPadding`, `RightPadding`, `TopPadding`Ve`BottomPadding` özellikler.
 
 ```csharp
 table. LeftPadding = 30;

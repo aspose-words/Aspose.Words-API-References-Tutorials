@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## Schritt 7: Tabelle fertigstellen und Dokument speichern
 In
 
- Ende, wir beenden die Erstellung der Tabelle mit dem`EndRow()` Und`EndTable()` Methode, dann speichern wir das geänderte Dokument in einer Datei.
+ Ende, wir beenden die Erstellung der Tabelle mit dem`EndRow()`Und`EndTable()` Methode, dann speichern wir das geänderte Dokument in einer Datei.
 
 ```csharp
 builder. EndRow();

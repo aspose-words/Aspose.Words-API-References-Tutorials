@@ -45,7 +45,7 @@ Terakhir, kita bisa menyimpan dokumen dalam format yang diinginkan.
 // Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Sisipkan hyperlink.
+//Sisipkan hyperlink.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", salah);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

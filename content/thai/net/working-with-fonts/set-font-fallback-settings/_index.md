@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## ขั้นตอนที่ 4: ใช้การตั้งค่าแบบอักษรกับเอกสาร
 
- กำหนดการกำหนดค่า`FontSettings` ไปยังเอกสาร เพื่อให้แน่ใจว่ามีการใช้กฎทางเลือกแบบอักษรเมื่อแสดงผลเอกสาร
+ กำหนดการกำหนดค่า`FontSettings` ไปที่เอกสาร เพื่อให้แน่ใจว่ามีการใช้กฎทางเลือกแบบอักษรเมื่อแสดงผลเอกสาร
 
 ```csharp
 doc.FontSettings = fontSettings;

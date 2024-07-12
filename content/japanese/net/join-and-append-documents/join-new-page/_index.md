@@ -2,70 +2,96 @@
 title: 新しいページに参加する
 linktitle: 新しいページに参加する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、書式設定を保持しながら 2 つのドキュメントを新しいページに結合する方法を学習します。
+description: Aspose.Words for .NET を使用して Word でドキュメントを結合および追加する方法を学びます。効率的なドキュメントの結合については、ステップバイステップのガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/join-new-page/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して 2 つのドキュメントを新しいページに結合する方法について説明します。提供されているソース コードは、新しいページで追加されたドキュメントを開始しながら、別のドキュメントの末尾にドキュメントを追加する方法を示しています。
+大きなドキュメントを扱ったり、複数のドキュメントを 1 つに結合したりする場合、書式設定を維持し、明瞭性を確保することが非常に重要です。Aspose.Words for .NET は、Word ドキュメントをプログラムで操作するための強力なツールを提供し、開発者が複雑なタスクを効率的に実行できるようにします。
+
+## 前提条件
+
+このチュートリアルを開始する前に、次のものを用意してください。
+- マシンに Visual Studio がインストールされています。
+-  Aspose.Words for .NETライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- C# プログラミングと .NET 環境に関する基本的な知識。
+
+## 名前空間のインポート
+
+まず、C# プロジェクトに必要な名前空間をインポートします。
+
+```csharp
+using Aspose.Words;
+using System;
+```
+
+追加されたコンテンツが新しいページで始まることを確認しながらドキュメントを結合および追加するには、次の手順に従います。
 
 ## ステップ1: プロジェクトを設定する
 
-次の前提条件を満たしていることを確認してください。
+まず、Visual Studio で新しい C# コンソール アプリケーションを作成します。Aspose.Words NuGet パッケージをプロジェクトにインストールします。
 
--  Aspose.Words for .NETライブラリがインストールされています。ダウンロードはこちらから[Aspose.Releases]https://releases.aspose.com/words/net/ にアクセスするか、NuGet パッケージ マネージャーを使用してインストールします。
-- ソース ドキュメントと宛先ドキュメントが配置されているドキュメント ディレクトリ パス。
-
-## ステップ2: ソースドキュメントと宛先ドキュメントを開く
-
-ソース文書と宛先文書を`Document`クラスコンストラクタ。置換`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
+## ステップ2: ソースドキュメントと宛先ドキュメントを読み込む
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+//ソースドキュメントと宛先ドキュメントを読み込む
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## ステップ3: 新しいページセクションの開始を設定する
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメント ファイルへの実際のパスを入力します。
 
-追加された文書を新しいページで開始するには、`SectionStart`ソース文書の最初のセクションのプロパティを`SectionStart.NewPage`.
+## ステップ3: セクションの開始を新しいページに設定する
+
+ソース ドキュメントの最初のセクションのセクション開始を新しいページで開始するように設定します。
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## ステップ4: ソースドキュメントを追加する
+これにより、追加されたコンテンツが宛先ドキュメントの新しいページで開始されるようになります。
 
-ソース文書を宛先文書に追加するには、`AppendDocument`方法の`Document`クラス。インポート形式モードを`ImportFormatMode.KeepSourceFormatting`ソース ドキュメントの元のスタイルを保持します。
+## ステップ4: ソースドキュメントを宛先ドキュメントに追加する
+
+元の書式を維持しながら、ソース ドキュメントを宛先ドキュメントに追加します。
 
 ```csharp
+//ソース ドキュメントにある元のスタイルを使用して、ソース ドキュメントを追加します。
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
 ## ステップ5: 変更したドキュメントを保存する
 
-最後に、変更した宛先ドキュメントを`Save`方法の`Document`物体。
+変更した宛先ドキュメントを新しいファイルに保存します。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```
 
-これで、Aspose.Words for .NET を使用して 2 つのドキュメントを新しいページに結合する実装が完了します。
+これにより、追加されたコンテンツが新しいページから始まる結合されたドキュメントが保存されます。
 
-### Aspose.Words for .NET を使用して新しいページを結合するためのサンプル ソース コード 
+## 結論
 
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+このチュートリアルでは、Aspose.Words for .NET を使用して Word ファイル内のドキュメントを結合および追加する方法を学習しました。これらの手順に従うことで、元の書式を維持しながら、追加されたコンテンツが新しいページで始まるようにしながら、複数のドキュメントを効率的に結合できます。
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//追加されたドキュメントが新しいページで開始するように設定します。
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	//ソース ドキュメントにある元のスタイルを使用して、ソース ドキュメントを追加します。
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
-```
+## よくある質問
+
+### Aspose.Words for .NET を使用して 2 つ以上のドキュメントを追加できますか?
+はい、各ドキュメントに対して追加操作を繰り返すことで、複数のドキュメントを順番に追加できます。
+
+### 追加中にドキュメントの書式設定の競合を処理するにはどうすればよいですか?
+Aspose.Words には、ソース書式の保持や宛先書式の使用など、書式の競合を処理するためのさまざまなインポート モードが用意されています。
+
+### Aspose.Words は、異なる言語またはエンコードのドキュメントの追加をサポートしていますか?
+はい、Aspose.Words は言語やエンコードに関係なくドキュメントの追加を処理し、シームレスな統合を保証します。
+
+### マクロやフォームフィールドを含むドキュメントを追加することは可能ですか?
+Aspose.Words は、マクロとフォーム フィールドを含むドキュメントの追加をサポートし、マージされたドキュメント内でそれらの機能を維持します。
+
+### Aspose.Words を使用して、ドキュメント追加タスクをバッチ プロセスで自動化できますか?
+Aspose.Words for .NET を使用すると、バッチ プロセスでドキュメント追加タスクを自動化し、ドキュメント管理の生産性を向上させることができます。

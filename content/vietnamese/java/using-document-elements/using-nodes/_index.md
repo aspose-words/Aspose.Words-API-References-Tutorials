@@ -7,7 +7,7 @@ type: docs
 weight: 20
 url: /vi/java/using-document-elements/using-nodes/
 ---
-Trong hướng dẫn toàn diện này, chúng ta sẽ đi sâu vào thế giới làm việc với các nút trong Aspose.Words cho Java. Các nút là thành phần cơ bản của cấu trúc tài liệu và việc hiểu cách thao tác với chúng là rất quan trọng đối với các tác vụ xử lý tài liệu. Chúng ta sẽ khám phá các khía cạnh khác nhau, bao gồm lấy các nút cha, liệt kê các nút con cũng như tạo và thêm các nút đoạn văn.
+Trong hướng dẫn toàn diện này, chúng ta sẽ đi sâu vào thế giới làm việc với các nút trong Aspose.Words cho Java. Các nút là thành phần cơ bản trong cấu trúc của tài liệu và việc hiểu cách thao tác với chúng là rất quan trọng đối với các tác vụ xử lý tài liệu. Chúng ta sẽ khám phá các khía cạnh khác nhau, bao gồm lấy các nút cha, liệt kê các nút con cũng như tạo và thêm các nút đoạn văn.
 
 ## 1. Giới thiệu
 Aspose.Words for Java là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Các nút đại diện cho các thành phần khác nhau trong tài liệu Word, chẳng hạn như đoạn văn, dòng, phần, v.v. Trong hướng dẫn này, chúng ta sẽ khám phá cách thao tác các nút này một cách hiệu quả.

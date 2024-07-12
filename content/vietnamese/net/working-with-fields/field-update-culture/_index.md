@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Bước 3: Chèn trường thời gian
 
- Chúng tôi sử dụng`InsertField()` phương pháp chèn trường thời gian vào tài liệu.
+ Chúng tôi sử dụng`InsertField()`phương pháp chèn trường thời gian vào tài liệu.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

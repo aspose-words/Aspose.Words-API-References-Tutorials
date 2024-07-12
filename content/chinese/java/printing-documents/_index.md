@@ -10,7 +10,7 @@ url: /zh/java/printing-documents/
 
 如果您希望利用 Aspose.Words for Java 的强大功能无缝打印文档，那么您来对地方了。在本综合指南中，我们将带您完成各种教程，帮助您创建、格式化和自定义 Java 文档打印解决方案。 
 
-## 为什么选择 Aspose.Words for Java？
+## 为什么要选择 Aspose.Words for Java？
 
 在深入研究教程之前，让我们先了解一下为什么 Aspose.Words for Java 是 Java 应用程序中文档打印的首选。Aspose.Words 是一个强大的 Java API，允许开发人员轻松处理 Word 文档。无论您处理的是报告、发票还是任何其他文档类型，Aspose.Words 都可以简化流程。
 

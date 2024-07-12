@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: Állítsa be a font mappák prioritását
- Ezután beállíthatja a font mappákat prioritásként a segítségével`FontSettings` osztály és a`SetFontsSources()`módszer. Több betűtípust is megadhat a példányok használatával`SystemFontSource` és`FolderFontSource`. Ebben a példában két betűtípus-forrást definiáltunk: az alapértelmezett rendszer-betűtípus-forrást és egy egyéni betűtípus-mappát 1-es prioritással.
+ Ezután beállíthatja a font mappákat prioritásként a segítségével`FontSettings` osztály és a`SetFontsSources()`módszer. Több betűtípust is megadhat a példányok használatával`SystemFontSource`és`FolderFontSource`. Ebben a példában két betűtípus-forrást definiáltunk: az alapértelmezett rendszer-betűtípus-forrást és egy egyéni betűtípus-mappát 1-es prioritással.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

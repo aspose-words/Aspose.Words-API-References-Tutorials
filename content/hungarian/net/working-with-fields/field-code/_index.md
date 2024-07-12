@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Tegyen valamit a mező kódjával és eredményével.
+     //Tegyen valamit a mező kódjával és eredményével.
 }
 ```
 
@@ -73,7 +73,7 @@ Ezzel véget is értünk az Aspose.Words for .NET "Mezőkód lekérése" funkci�
 
 #### K: Hogyan frissíthetem a dokumentum mezőit az Aspose.Words for .NET használatával?
 
- V: A dokumentummezők Aspose.Words for .NET használatával frissítéséhez használhatja a`Document.UpdateFields`módszer. Ez frissíti a dokumentumban lévő összes mezőt, például az egyesített mezőket, a dátummezőket stb.
+ V: A dokumentummezők Aspose.Words for .NET használatával frissítéséhez használhatja a`Document.UpdateFields` módszer. Ez frissíti a dokumentumban lévő összes mezőt, például az egyesített mezőket, a dátummezőket stb.
 
 #### K: Hogyan kérhetem le egy adott mező értékét az Aspose.Words for .NET-ben?
 

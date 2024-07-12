@@ -73,7 +73,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 要在 Markdown 文件中包含映像，您需要指定映像所在的資料夾。 Aspose.Words for Java 允許您將圖像資料夾設定在`MarkdownSaveOptions`.
 
-以下是如何設定圖像資料夾並保存帶有圖像的文件：
+以下是設定圖像資料夾並保存帶有圖像的文檔的方法：
 
 ```java
 //載入包含映像的文檔
@@ -83,7 +83,7 @@ Document doc = new Document("document_with_images.docx");
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 saveOptions.setImagesFolder("images_folder/");
 
-//儲存帶有圖像的文檔
+//儲存帶有影像的文檔
 doc.save("document_with_images.md", saveOptions);
 ```
 

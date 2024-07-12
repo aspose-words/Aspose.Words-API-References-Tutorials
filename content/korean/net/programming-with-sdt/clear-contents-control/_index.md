@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2단계: 문서 로드 및 StructuredDocumentTag 가져오기
- 다음을 사용하여 Word 문서를 로드합니다.`Document` 생성자, 문서 경로를 매개변수로 전달합니다. 그런 다음 원하는 것을 검색하십시오.`StructuredDocumentTag` 문서에서. 이 예에서는 SDT가 문서의 첫 번째 하위 노드라고 가정합니다.
+ 다음을 사용하여 Word 문서를 로드합니다.`Document` 생성자, 문서 경로를 매개변수로 전달합니다. 그런 다음 원하는 것을 검색하십시오.`StructuredDocumentTag`문서에서. 이 예에서는 SDT가 문서의 첫 번째 하위 노드라고 가정합니다.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## 4단계: 문서 저장
- 다음을 사용하여 수정된 문서를 저장합니다.`Save`방법. 적절한 파일 확장자와 함께 원하는 파일 이름을 제공하십시오. 이 예에서는 문서를 "WorkingWithSdt.ClearContentsControl.doc"로 저장합니다.
+ 다음을 사용하여 수정된 문서를 저장합니다.`Save` 방법. 적절한 파일 확장자와 함께 원하는 파일 이름을 제공하십시오. 이 예에서는 문서를 "WorkingWithSdt.ClearContentsControl.doc"로 저장합니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

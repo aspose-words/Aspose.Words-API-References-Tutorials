@@ -2,59 +2,86 @@
 title: Voeg datum-tijdwaarden toe aan de as van een diagram
 linktitle: Voeg datum-tijdwaarden toe aan de as van een diagram
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u datum-tijdwaarden aan de as van een diagram toevoegt met Aspose.Words voor .NET.
+description: Leer hoe u datum- en tijdwaarden aan de as van een diagram toevoegt met Aspose.Words voor .NET in deze uitgebreide stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/date-time-values-to-axis/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u datum-tijdwaarden aan de as van een diagram kunt toevoegen met behulp van Aspose.Words voor .NET.
+Het maken van diagrammen in documenten kan een krachtige manier zijn om gegevens te visualiseren. Bij het omgaan met tijdreeksgegevens is het toevoegen van datum- en tijdwaarden aan de as van een diagram cruciaal voor de duidelijkheid. In deze zelfstudie begeleiden we u bij het toevoegen van datum- en tijdwaarden aan de as van een diagram met behulp van Aspose.Words voor .NET. Deze stapsgewijze handleiding helpt u bij het opzetten van uw omgeving, het schrijven van de code en het begrijpen van elk onderdeel van het proces. Laten we erin duiken!
 
 ## Vereisten
-Om deze tutorial te volgen, heb je het volgende nodig:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd.
-- Basiskennis van C# en woordenverwerking met Word-documenten.
+Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
 
-## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+1. Visual Studio of een andere .NET IDE: u hebt een ontwikkelomgeving nodig om uw .NET-code te schrijven en uit te voeren.
+2.  Aspose.Words voor .NET: De Aspose.Words voor .NET-bibliotheek moet geïnstalleerd zijn. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+3. Basiskennis van C#: Deze tutorial gaat ervan uit dat je een basiskennis hebt van programmeren in C#.
+4.  Een geldige Aspose-licentie: U kunt een tijdelijke licentie verkrijgen via[hier](https://purchase.aspose.com/temporary-license/).
+
+## Naamruimten importeren
+
+Zorg er om te beginnen voor dat de benodigde naamruimten in uw project zijn geïmporteerd. Deze stap is cruciaal voor toegang tot de Aspose.Words-klassen en -methoden.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+## Stap 1: Stel uw documentenmap in
+
+Eerst moet u de map definiëren waarin uw document zal worden opgeslagen. Dit is belangrijk voor het organiseren van uw bestanden en om ervoor te zorgen dat uw code correct wordt uitgevoerd.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Stap 2: Maak een nieuw document en DocumentBuilder
- Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder`bezwaar maken tegen het werken met het document.
+
+ Maak vervolgens een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder` voorwerp. Deze objecten helpen u bij het samenstellen en manipuleren van uw document.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Een grafiekvorm invoegen en configureren
- Voeg een grafiekvorm in het document in met behulp van de`InsertChart` werkwijze van de`DocumentBuilder` voorwerp. Stel het gewenste diagramtype en de afmetingen in.
+## Stap 3: Voeg een diagram in het document in
+
+ Voeg nu een diagram in uw document in met behulp van de`DocumentBuilder` voorwerp. In dit voorbeeld gebruiken we een kolomdiagram, maar u kunt ook andere typen kiezen.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
+```
+
+## Stap 4: Wis bestaande series
+
+Wis eventuele bestaande series in het diagram om er zeker van te zijn dat u met een schone lei begint. Deze stap is essentieel voor aangepaste gegevens.
+
+```csharp
 chart.Series.Clear();
 ```
 
-## Stap 4: Voeg gegevens toe aan het diagram
-Voeg gegevens toe aan de diagramserie, inclusief datum-tijdwaarden.
+## Stap 5: Voeg datum- en tijdwaarden toe aan de reeks
+
+Voeg uw datum- en tijdwaarden toe aan de diagramreeks. Deze stap omvat het maken van arrays voor datums en bijbehorende waarden.
 
 ```csharp
 chart.Series.Add("Aspose Series 1",
-	new[]
-	{
-		new DateTime(2017, 11, 06), new DateTime(2017, 11, 09), new DateTime(2017, 11, 15),
-		new DateTime(2017, 11, 21), new DateTime(2017, 11, 25), new DateTime(2017, 11, 29)
-	},
-	new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
+    new[]
+    {
+        new DateTime(2017, 11, 06), new DateTime(2017, 11, 09), new DateTime(2017, 11, 15),
+        new DateTime(2017, 11, 21), new DateTime(2017, 11, 25), new DateTime(2017, 11, 29)
+    },
+    new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
 ```
 
-## Stap 5: Configureer de as
-Configureer de X-as van het diagram om de datum-tijdwaarden weer te geven.
+## Stap 6: Configureer de X-as
+
+Stel de schaal en maatstreepjes voor de X-as in. Dit zorgt ervoor dat uw datums correct en met de juiste tussenpozen worden weergegeven.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
@@ -66,54 +93,36 @@ xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 ```
 
-## Stap 6: Sla het document op
- Sla het document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithCharts.DateTimeValuesToAxis.docx".
+## Stap 7: Bewaar het document
+
+Sla ten slotte uw document op in de opgegeven map. Met deze stap wordt het proces afgerond en uw document zou nu een diagram moeten bevatten met datum- en tijdwaarden op de X-as.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-### Voorbeeldbroncode voor Date Time Values To Axis met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new[]
-		{
-			new DateTime(2017, 11, 06), new DateTime(2017, 11, 09), new DateTime(2017, 11, 15),
-			new DateTime(2017, 11, 21), new DateTime(2017, 11, 25), new DateTime(2017, 11, 29)
-		},
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
-	ChartAxis xAxis = chart.AxisX;
-	xAxis.Scaling.Minimum = new AxisBound(new DateTime(2017, 11, 05).ToOADate());
-	xAxis.Scaling.Maximum = new AxisBound(new DateTime(2017, 12, 03).ToOADate());
-	// Stel grote eenheden in op een week en kleine eenheden op een dag.
-	xAxis.MajorUnit = 7;
-	xAxis.MinorUnit = 1;
-	xAxis.MajorTickMark = AxisTickMark.Cross;
-	xAxis.MinorTickMark = AxisTickMark.Outside;
-	doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
-```
-
-Met deze voorbeeldcode wordt een nieuw Word-document gemaakt, wordt een kolomdiagram met datum-tijdwaarden op de X-as ingevoegd en wordt het document in de opgegeven map opgeslagen.
-
 ## Conclusie
-In deze zelfstudie hebt u geleerd hoe u datum-tijdwaarden kunt toevoegen aan de as van een diagram met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen, kunt u een diagram maken, datum-tijdwaarden aan de reeks toevoegen en de as configureren om de datum-tijdwaarden nauwkeurig weer te geven. Aspose.Words voor .NET biedt een krachtige reeks functies voor woordenverwerking met grafieken in Word-documenten, waardoor u gegevens effectief kunt weergeven en visualiseren met datum-tijdwaarden.
 
-### Veelgestelde vragen
+Het toevoegen van datum- en tijdwaarden aan de as van een diagram in een document is een eenvoudig proces met Aspose.Words voor .NET. Door de stappen in deze zelfstudie te volgen, kunt u duidelijke en informatieve diagrammen maken die tijdreeksgegevens effectief visualiseren. Of u nu rapporten, presentaties of welk document dan ook voorbereidt dat gedetailleerde gegevensrepresentatie vereist, Aspose.Words biedt de tools die u nodig hebt om te slagen.
 
-#### Q1. Kan ik datum-tijdwaarden toevoegen aan de as van een diagram met Aspose.Words voor .NET?
-Ja, met Aspose.Words voor .NET kunt u datum-tijdwaarden toevoegen en weergeven op de as van een diagram in een Word-document. Aspose.Words biedt API's en functionaliteiten om met verschillende diagramtypen te werken en hun uiterlijk aan te passen, inclusief het verwerken van datum-tijdwaarden op de as.
+## Veelgestelde vragen
 
-#### Vraag 2. Hoe voeg ik datum-tijdwaarden toe aan de diagramserie?
- Als u datum-tijdwaarden aan de diagramserie wilt toevoegen, kunt u de`Add`methode van de serie van het diagram. Geef een matrix met datum-tijdwaarden op als categoriegegevens (X-as), samen met de bijbehorende reekswaarden. Hiermee kunt u gegevenspunten met datum-tijdwaarden in het diagram plotten.
+### Kan ik andere diagramtypen gebruiken met Aspose.Words voor .NET?
 
-#### Q3. Hoe kan ik de as configureren om datum-tijdwaarden weer te geven?
- U kunt de as van het diagram configureren om datum-tijdwaarden weer te geven door de juiste eigenschappen in te stellen. U kunt bijvoorbeeld de minimum- en maximumwaarden voor de as opgeven met behulp van de`Scaling.Minimum` En`Scaling.Maximum` eigenschappen, respectievelijk. Bovendien kunt u de hoofd- en secundaire eenheden instellen om het interval en de maatstreepjes voor de as te definiëren.
+Ja, Aspose.Words ondersteunt verschillende diagramtypen, waaronder lijn-, staaf-, cirkel- en meer.
+
+### Hoe kan ik het uiterlijk van mijn diagram aanpassen?
+
+kunt het uiterlijk aanpassen door de eigenschappen van het diagram te openen en stijlen, kleuren en meer in te stellen.
+
+### Is het mogelijk om meerdere reeksen aan een diagram toe te voegen?
+
+ Absoluut! U kunt meerdere series aan uw diagram toevoegen door het telefoonnummer te bellen`Series.Add` methode meerdere keren met verschillende gegevens.
+
+### Wat moet ik doen als ik de kaartgegevens dynamisch moet bijwerken?
+
+U kunt de diagramgegevens dynamisch bijwerken door de reeks- en aseigenschappen programmatisch te manipuleren op basis van uw vereisten.
+
+### Waar kan ik meer gedetailleerde documentatie vinden voor Aspose.Words voor .NET?
+
+ U kunt meer gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/).

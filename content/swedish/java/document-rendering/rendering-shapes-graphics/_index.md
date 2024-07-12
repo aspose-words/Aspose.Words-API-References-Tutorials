@@ -139,7 +139,7 @@ Att förbättra dina dokument med former och grafik kan avsevärt förbättra de
 
 ### Hur kan jag ändra storlek på en form i mitt dokument?
 
- För att ändra storlek på en form, använd`setWidth` och`setHeight` metoder på formobjektet. Till exempel, för att göra en form 150 pixlar bred och 75 pixlar hög:
+ För att ändra storlek på en form, använd`setWidth`och`setHeight` metoder på formobjektet. Till exempel, för att göra en form 150 pixlar bred och 75 pixlar hög:
 
 ```java
 shape.setWidth(150);

@@ -82,7 +82,7 @@ Menyalin gaya antar dokumen memungkinkan Anda menjaga konsistensi gaya di bebera
 
 #### Bisakah saya menyesuaikan gaya yang disalin setelah menyalinnya?
 
-Ya, setelah menyalin gaya, Anda dapat menyesuaikannya lebih lanjut di dokumen target. Aspose.Words for .NET menyediakan serangkaian API komprehensif untuk mengubah dan memanipulasi gaya. Anda dapat menyesuaikan pemformatan, mengubah properti, atau menerapkan gaya yang disalin ke elemen dokumen tertentu sesuai kebutuhan.
+Ya, setelah menyalin gaya, Anda dapat menyesuaikannya lebih lanjut di dokumen target. Aspose.Words for .NET menyediakan serangkaian API komprehensif untuk memodifikasi dan memanipulasi gaya. Anda dapat menyesuaikan pemformatan, mengubah properti, atau menerapkan gaya yang disalin ke elemen dokumen tertentu sesuai kebutuhan.
 
 #### Bisakah saya menyalin gaya antar dokumen dengan templat berbeda?
 

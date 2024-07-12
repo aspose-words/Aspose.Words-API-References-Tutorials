@@ -2,120 +2,133 @@
 title: Các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word
 linktitle: Các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tạo các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách tạo các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này.
 type: docs
 weight: 10
 url: /vi/net/document-protection/unrestricted-editable-regions/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để sử dụng tính năng vùng có thể chỉnh sửa không hạn chế của Aspose.Words cho .NET. Tính năng này cho phép bạn xác định các khu vực trong tài liệu Word nơi nội dung có thể được chỉnh sửa mà không bị hạn chế, ngay cả khi phần còn lại của tài liệu ở chế độ chỉ đọc. Làm theo các bước dưới đây:
+## Giới thiệu
 
-## Bước 1: Tải tài liệu và cài đặt bảo vệ
+Nếu bạn từng muốn bảo vệ tài liệu Word nhưng vẫn cho phép chỉnh sửa một số phần nhất định thì bạn đã đến đúng nơi! Hướng dẫn này sẽ hướng dẫn bạn quy trình thiết lập các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ đề cập đến mọi thứ, từ điều kiện tiên quyết đến các bước chi tiết, đảm bảo bạn có trải nghiệm suôn sẻ. Sẵn sàng? Hãy đi sâu vào!
 
-Bắt đầu bằng cách tải tài liệu hiện có:
+## Điều kiện tiên quyết
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có những điều sau:
 
-Bảo vệ tài liệu bằng cách đặt loại và mật khẩu bảo vệ chỉ đọc
+1.  Aspose.Words for .NET: Nếu bạn chưa có, hãy tải xuống[đây](https://releases.aspose.com/words/net/).
+2.  Giấy phép Aspose hợp lệ: Bạn có thể nhận được giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio: Mọi phiên bản gần đây đều hoạt động tốt.
+4. Kiến thức cơ bản về C# và .NET: Điều này sẽ giúp bạn theo dõi mã.
 
-## Bước 2: Tạo vùng có thể chỉnh sửa
+Bây giờ bạn đã sẵn sàng, hãy chuyển sang phần thú vị!
 
-Bắt đầu bằng cách tạo một vùng có thể chỉnh sửa bằng cách sử dụng các đối tượng EditableRangeStart và EditableRangeEnd:
+## Nhập không gian tên
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Một đối tượng EditableRange được tạo cho EditableRangeStart mà chúng ta vừa tạo.
-EditableRange editableRange = edRangeStart.EditableRange;
-
-// Đặt nội dung nào đó vào trong phạm vi có thể chỉnh sửa.
-builder.Writeln("Paragraph inside first editable range");
-
-// Một phạm vi có thể chỉnh sửa được coi là hợp lệ nếu nó có phần đầu và phần cuối.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## Bước 3: Thêm nội dung bên ngoài vùng có thể chỉnh sửa
-
-Bạn có thể thêm nội dung bên ngoài vùng có thể chỉnh sửa, nội dung này sẽ vẫn ở chế độ chỉ đọc:
+Để bắt đầu sử dụng Aspose.Words cho .NET, bạn cần nhập các vùng tên cần thiết. Đây là cách bạn có thể làm điều đó:
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## Bước 4: Lưu tài liệu
+## Bước 1: Thiết lập dự án của bạn
 
-Cuối cùng, lưu tài liệu đã sửa đổi:
+Trước tiên, hãy tạo một dự án C# mới trong Visual Studio.
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. Mở Visual Studio: Bắt đầu bằng cách mở Visual Studio và tạo dự án Ứng dụng Console mới.
+2. Cài đặt Aspose.Words: Sử dụng Trình quản lý gói NuGet để cài đặt Aspose.Words. Bạn có thể thực hiện việc này bằng cách chạy lệnh sau trong Bảng điều khiển quản lý gói:
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-Đảm bảo chỉ định đường dẫn và tên tệp chính xác để lưu tài liệu với các vùng có thể chỉnh sửa.
+## Bước 2: Tải tài liệu
 
-### Mã nguồn ví dụ cho Vùng có thể chỉnh sửa không hạn chế bằng Aspose.Words cho .NET
+Bây giờ, hãy tải tài liệu bạn muốn bảo vệ. Đảm bảo bạn có sẵn tài liệu Word trong thư mục của mình.
 
-Đây là mã nguồn hoàn chỉnh cho các vùng có thể chỉnh sửa không hạn chế bằng Aspose.Words cho .NET:
+1. Đặt thư mục tài liệu: Xác định đường dẫn đến thư mục tài liệu của bạn.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  Nạp tài liệu: Sử dụng`Document` class để tải tài liệu Word của bạn.
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Tải lên một tài liệu và đặt nó ở dạng chỉ đọc.
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Bước 3: Bảo vệ tài liệu
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+Tiếp theo, chúng ta sẽ đặt tài liệu ở chế độ chỉ đọc. Điều này sẽ đảm bảo rằng không thể thực hiện thay đổi nào nếu không có mật khẩu.
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1.  Khởi tạo DocumentBuilder: Tạo một phiên bản của`DocumentBuilder` để thực hiện các thay đổi đối với tài liệu.
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. Đặt mức bảo vệ: Bảo vệ tài liệu bằng mật khẩu.
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. Thêm văn bản chỉ đọc: Chèn văn bản sẽ ở chế độ chỉ đọc.
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-// Bắt đầu một phạm vi có thể chỉnh sửa.
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Một đối tượng EditableRange được tạo cho EditableRangeStart mà chúng ta vừa tạo.
-EditableRange editableRange = edRangeStart.EditableRange;
+## Bước 4: Tạo phạm vi có thể chỉnh sửa
 
-// Đặt nội dung nào đó vào trong phạm vi có thể chỉnh sửa.
-builder.Writeln("Paragraph inside first editable range");
+Đây là nơi phép thuật xảy ra. Chúng tôi sẽ tạo các phần trong tài liệu có thể chỉnh sửa được mặc dù có chế độ bảo vệ chỉ đọc tổng thể.
 
-// Một phạm vi có thể chỉnh sửa được coi là hợp lệ nếu nó có phần đầu và phần cuối.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. Bắt đầu phạm vi có thể chỉnh sửa: Xác định điểm bắt đầu của phạm vi có thể chỉnh sửa.
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2.  Tạo đối tượng phạm vi có thể chỉnh sửa: An`EditableRange` đối tượng sẽ được tạo tự động.
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. Chèn văn bản có thể chỉnh sửa: Thêm văn bản trong phạm vi có thể chỉnh sửa.
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## Bước 5: Đóng phạm vi có thể chỉnh sửa
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+Một phạm vi có thể chỉnh sửa sẽ không hoàn chỉnh nếu không có điểm kết thúc. Hãy thêm nó vào tiếp theo.
 
-```
-Bằng cách làm theo các bước này, bạn có thể dễ dàng tạo các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word của mình bằng Aspose.Words for .NET.
+1. Kết thúc phạm vi có thể chỉnh sửa: Xác định phần cuối của phạm vi có thể chỉnh sửa.
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. Thêm văn bản chỉ đọc bên ngoài phạm vi: Chèn văn bản bên ngoài phạm vi có thể chỉnh sửa để thể hiện khả năng bảo vệ.
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## Bước 6: Lưu tài liệu
+
+Cuối cùng, hãy lưu tài liệu với các vùng có thể chỉnh sửa và bảo vệ được áp dụng.
+
+1.  Lưu tài liệu: Sử dụng`Save` phương pháp để lưu tài liệu đã sửa đổi của bạn.
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã học cách tạo các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được cung cấp, bạn có thể xác định các khu vực cụ thể trong tài liệu nơi người dùng có thể tự do chỉnh sửa nội dung trong khi vẫn giữ phần còn lại của tài liệu ở chế độ chỉ đọc. Aspose.Words for .NET cung cấp các tính năng mạnh mẽ để bảo vệ và tùy chỉnh tài liệu, cung cấp cho bạn quyền kiểm soát khả năng chỉnh sửa tài liệu Word của mình.
 
-### Câu hỏi thường gặp về các vùng có thể chỉnh sửa không hạn chế trong tài liệu word
+Và bạn có nó rồi đấy! Bạn đã tạo thành công các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word bằng Aspose.Words for .NET. Tính năng này cực kỳ hữu ích cho các môi trường cộng tác trong đó một số phần nhất định của tài liệu cần được giữ nguyên trong khi những phần khác có thể được chỉnh sửa. 
 
-#### Câu hỏi: Vùng có thể chỉnh sửa không hạn chế trong Aspose.Words dành cho .NET là gì?
+ Thử nghiệm với các tình huống phức tạp hơn và các mức độ bảo vệ khác nhau để tận dụng tối đa Aspose.Words. Nếu bạn có bất kỳ câu hỏi hoặc gặp vấn đề gì, đừng ngần ngại kiểm tra[tài liệu](https://reference.aspose.com/words/net/) hoặc tiếp cận với[ủng hộ](https://forum.aspose.com/c/words/8).
 
-Trả lời: Các vùng có thể chỉnh sửa không hạn chế trong Aspose.Words dành cho .NET là các vùng trong tài liệu Word nơi nội dung có thể được chỉnh sửa mà không có bất kỳ hạn chế nào, ngay cả khi phần còn lại của tài liệu được đặt ở dạng chỉ đọc. Các vùng này cung cấp cách xác định các phần cụ thể của tài liệu mà người dùng có thể sửa đổi trong khi vẫn duy trì khả năng bảo vệ tài liệu tổng thể.
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Làm cách nào tôi có thể tạo các vùng có thể chỉnh sửa không hạn chế bằng Aspose.Words cho .NET?
+### Tôi có thể có nhiều vùng có thể chỉnh sửa trong một tài liệu không?
+Có, bạn có thể tạo nhiều vùng có thể chỉnh sửa bằng cách bắt đầu và kết thúc các phạm vi có thể chỉnh sửa ở các phần khác nhau của tài liệu.
 
-Trả lời: Để tạo các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
-1.  Tải tài liệu hiện có bằng cách sử dụng`Document` lớp học.
-2.  Đặt bảo vệ tài liệu thành chỉ đọc bằng cách sử dụng`Protect` phương pháp của`Document` sự vật.
-3.  Sử dụng`DocumentBuilder` lớp để tạo một phạm vi có thể chỉnh sửa bằng cách thêm một`EditableRangeStart` đối tượng và một`EditableRangeEnd` sự vật.
-4.  Thêm nội dung trong phạm vi có thể chỉnh sửa bằng cách sử dụng`DocumentBuilder`.
-5.  Lưu tài liệu đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
+### Những loại bảo vệ nào khác có sẵn trong Aspose.Words?
+Aspose.Words hỗ trợ nhiều loại bảo vệ khác nhau như AllowOnlyComments, AllowOnlyFormFields và NoProtection.
 
-#### Hỏi: Tôi có thể có nhiều vùng có thể chỉnh sửa không hạn chế trong tài liệu Word không?
+### Có thể loại bỏ bảo vệ khỏi một tài liệu?
+ Có, bạn có thể loại bỏ bảo vệ bằng cách sử dụng`Unprotect` phương pháp và cung cấp mật khẩu chính xác.
 
-Trả lời: Có, bạn có thể có nhiều vùng có thể chỉnh sửa không hạn chế trong tài liệu Word. Để đạt được điều này, bạn có thể tạo nhiều bộ`EditableRangeStart` Và`EditableRangeEnd` các đối tượng sử dụng`DocumentBuilder` lớp học. Mỗi bộ đối tượng sẽ xác định một vùng có thể chỉnh sửa riêng biệt nơi người dùng có thể sửa đổi nội dung mà không có bất kỳ hạn chế nào.
+### Tôi có thể chỉ định các mật khẩu khác nhau cho các phần khác nhau không?
+Không, tính năng bảo vệ ở cấp độ tài liệu áp dụng một mật khẩu duy nhất cho toàn bộ tài liệu.
 
-#### Câu hỏi: Tôi có thể lồng các vùng có thể chỉnh sửa vào nhau được không?
-
- Đáp: Không, bạn không thể lồng các vùng có thể chỉnh sửa vào nhau bằng Aspose.Words for .NET. Mỗi vùng có thể chỉnh sửa được xác định bởi một`EditableRangeStart` Và`EditableRangeEnd` cặp phải độc lập và không chồng chéo hoặc được lồng trong một vùng có thể chỉnh sửa khác. Các vùng có thể chỉnh sửa lồng nhau không được hỗ trợ.
-
-#### Câu hỏi: Tôi có thể xóa chế độ bảo vệ chỉ đọc khỏi tài liệu trong vùng có thể chỉnh sửa không?
-
-Trả lời: Không, bạn không thể xóa chế độ bảo vệ chỉ đọc khỏi tài liệu trong vùng có thể chỉnh sửa. Tính năng bảo vệ chỉ đọc được áp dụng cho toàn bộ tài liệu và không thể xóa nó một cách có chọn lọc trong các vùng có thể chỉnh sửa cụ thể. Mục đích của các vùng có thể chỉnh sửa là cho phép sửa đổi nội dung trong khi vẫn giữ toàn bộ tài liệu ở chế độ chỉ đọc.
+### Làm cách nào để xin giấy phép cho Aspose.Words?
+Bạn có thể áp dụng giấy phép bằng cách tải nó từ một tệp hoặc luồng. Kiểm tra tài liệu để biết các bước chi tiết.

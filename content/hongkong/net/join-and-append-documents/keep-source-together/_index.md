@@ -2,49 +2,57 @@
 title: 將原始碼放在一起
 linktitle: 將原始碼放在一起
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 加入和附加 Word 文檔，同時將來源內容與目標文檔保留在一起。
+description: 了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保留格式。這份綜合指南涵蓋了從設定到執行的所有內容。
 type: docs
 weight: 10
 url: /zh-hant/net/join-and-append-documents/keep-source-together/
 ---
+## 介紹
 
-本教學將引導您完成使用 Aspose.Words for .NET 的「保持原始碼在一起」功能的過程。此功能可讓您加入和追加多個 Word 文檔，同時將來源文檔的內容與目標文檔的內容保留在一起。 
+在當今的數位時代，以程式設計方式操作 Word 文件對於各個行業都至關重要。 Aspose.Words for .NET 讓開發人員能夠有效率地自動化文件處理任務。本綜合指南將引導您完成使用 Aspose.Words for .NET 合併文件同時保留來源格式的程序。
 
 ## 先決條件
 
-在開始之前，請確保您具備以下條件：
+在深入研究使用 Aspose.Words for .NET 進行文件合併之前，請確保您具備以下條件：
 
-1. Aspose.Words for .NET 已安裝。您可以從 Aspose 網站下載它或透過 NuGet 安裝它。
-2. Visual Studio 或任何其他 C# 開發環境。
+- Visual Studio：用於 .NET 開發的整合開發環境 (IDE)。
+- Aspose.Words for .NET：在您的開發環境中安裝和設定。
+- 熟悉 C#：對 C# 程式語言有基本了解。
 
-## 第 1 步：初始化文件目錄
+## 導入命名空間
 
-首先，您需要設定文檔目錄的路徑。修改值`dataDir`變數到您的文件所在的路徑。
+首先，導入必要的命名空間：
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## 第 2 步：載入來源文檔和目標文檔
+## 第 1 步：載入文檔
 
-接下來，您需要使用 Aspose.Words 來載入來源文檔和目標文檔`Document`班級。更新檔名`Document`根據您的文檔名稱建構函數。
+首先，將來源文檔和目標文檔載入Aspose.Words中`Document`對象。
 
 ```csharp
+//文檔目錄的路徑
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+//載入來源文檔和目標文檔
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## 步驟 3：將來源文件設定為顯示在目標文件內容之後
+## 第 2 步：設定部分開始
 
-為了確保來源文件緊接在目標文件內容之後出現，您需要設定`SectionStart`來源文檔中第一部分的屬性`SectionStart.Continuous`.
+配置部分開始以確保來源文檔內容在目標文件之後持續流動。
 
 ```csharp
+//將來源文件設定為直接顯示在目標文件內容之後
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## 步驟 4：為來源文件設定「與下一個保持一致」段落格式
+## 第三步：將段落放在一起
 
-若要將來源文件中的段落保留在一起，您可以迭代文件中的每個段落並設定`KeepWithNext`財產給`true`.
+為了保持格式完整性，請標記來源文件中的每個段落以與下一個段落保持一致。
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## 步驟 5：將來源文檔附加到目標文檔
+## 第 4 步：附加文件
 
-現在，您可以使用以下命令將來源文檔附加到目標文檔`AppendDocument`的方法`Document`班級。這`ImportFormatMode.KeepSourceFormatting`參數確保在追加操作期間保留來源格式。
+使用合併文檔`AppendDocument`方法，確保保留來源文件的格式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 第 6 步：儲存最終文檔
+## 步驟 5：儲存合併文檔
 
-最後，使用啟用的「將來源保持在一起」功能儲存合併的文檔`Save`的方法`Document`班級。
+最後，將合併後的文件儲存到所需位置。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### 使用 Aspose.Words for .NET 將原始程式碼保持在一起的範例原始程式碼 
+## 結論
 
-以下是使用 Aspose.Words for .NET 在 C# 中實作「保持原始碼在一起」功能的完整原始碼：
+總之，Aspose.Words for .NET 簡化了合併 Word 文件的任務，同時無縫保留原始格式。此功能對於需要自動文件處理的應用程式至關重要。
 
+## 常見問題解答
 
-```csharp
-	//文檔目錄的路徑
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Aspose.Words for .NET 可以合併不同格式的文件嗎？
+是的，它可以合併文檔，無論其格式如何，並保持來源格式。
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//將來源文件設定為直接顯示在目標文件內容之後。
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### Aspose.Words for .NET 支援高效合併大型文件嗎？
+當然，它可以以最佳性能處理大型文件。
 
-就是這樣！您已使用 Aspose.Words for .NET 成功實現了「保持原始碼在一起」功能。最終文檔將包含與來源文檔中的段落合併在一起的合併內容。
+### Aspose.Words for .NET 有試用版嗎？
+是的，您可以下載免費試用版[這裡](https://releases.aspose.com/).
+
+### 如何獲得 Aspose.Words for .NET 的技術支援？
+技術支援可透過[Aspose.Words 論壇](https://forum.aspose.com/c/words/8).
+
+### 我可以購買 Aspose.Words for .NET 的臨時授權嗎？
+是的，您可以獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).

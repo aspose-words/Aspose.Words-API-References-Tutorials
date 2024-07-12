@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- รหัสนี้สร้างอินสแตนซ์ของ`Document` และ`DocumentBuilder` เพื่อสร้างเอกสาร มันแทรก`<img>` แท็กลงในเอกสารด้วยรูปภาพที่เข้ารหัส base64
+ รหัสนี้สร้างอินสแตนซ์ของ`Document`และ`DocumentBuilder` เพื่อสร้างเอกสาร มันแทรก`<img>` แท็กลงในเอกสารด้วยรูปภาพที่เข้ารหัส base64
 
 ## ขั้นตอนที่ 3: ตั้งค่าตัวเลือกการบันทึก HTML
 

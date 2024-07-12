@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Langkah 3: Perbarui Tata Letak Halaman
 
- Hubungi`UpdatePageLayout` metode. Ini merender dokumen dalam memori dan menangkap peringatan apa pun yang terjadi selama rendering.
+ Hubungi`UpdatePageLayout`metode. Ini merender dokumen dalam memori dan menangkap peringatan apa pun yang terjadi selama rendering.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ Tidak, Anda hanya dapat menentukan satu font default untuk substitusi. Namun, An
 
 ###  Q3: Dapatkah saya menangani jenis peringatan lainnya`IWarningCallback`?
 
- Ya, itu`IWarningCallback` antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
+ Ya, itu`IWarningCallback`antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
 
 ### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words?
 

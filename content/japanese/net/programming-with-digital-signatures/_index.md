@@ -14,10 +14,10 @@ Aspose.Words for .NET には、ワード処理タスクを簡単に実行する�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [Word文書に署名する](./sign-document/) | Aspose.Words for .NET を使用して Word 文書にデジタル署名する方法を学習します。 |
-| [暗号化された Word 文書に署名する](./signing-encrypted-document/) | Aspose.Words for .NET を使用して暗号化された Word 文書にデジタル署名する方法を学習します。 |
-| [新しい署名欄の作成と署名](./creating-and-signing-new-signature-line/) | Aspose.Words for .NET を使用して Word 文書に新しい署名欄を作成し、署名する方法を学習します。 |
-| [Word 文書内の既存の署名欄に署名する](./signing-existing-signature-line/) | Aspose.Words for .NET を使用して Word 文書内の既存の署名欄に署名する方法を学習します。 |
-| [Word 文書に署名プロバイダー ID を設定する](./set-signature-provider-id/) | Aspose.Words for .NET を使用して Word 文書に署名プロバイダー ID を設定する方法を学習します。 |
-| [新しい署名欄を作成し、プロバイダー ID を設定する](./create-new-signature-line-and-set-provider-id/) | Aspose.Words for .NET を使用して、Word 文書に新しい署名行を作成し、プロバイダー ID を設定する方法を学習します。 |
-| [Word 文書の署名にアクセスして検証する](./access-and-verify-signature/) | Aspose.Words for .NET を使用して Word 文書内のデジタル署名にアクセスし、検証する方法を学習します。 |
+| [Word文書に署名する](./sign-document/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書に署名する方法を学習します。文書を簡単に保護します。 |
+| [暗号化された Word 文書に署名する](./signing-encrypted-document/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して暗号化された Word 文書に署名する方法を学習します。開発者に最適です。 |
+| [新しい署名欄の作成と署名](./creating-and-signing-new-signature-line/) | このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に署名欄を作成し、デジタル署名する方法を学習します。文書の自動化に最適です。 |
+| [Word 文書内の既存の署名欄に署名する](./signing-existing-signature-line/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書内の既存の署名欄に署名する方法を学びます。開発者に最適です。 |
+| [Word 文書に署名プロバイダー ID を設定する](./set-signature-provider-id/) | Aspose.Words for .NET を使用して、Word 文書に署名プロバイダー ID を安全に設定します。文書にデジタル署名するには、2,000 語の詳細なガイドに従ってください。 |
+| [新しい署名欄を作成し、プロバイダー ID を設定する](./create-new-signature-line-and-set-provider-id/) | Aspose.Words for .NET を使用して、Word 文書に新しい署名欄を作成し、プロバイダー ID を設定する方法を学習します。ステップ バイ ステップ ガイド。 |
+| [Word 文書の署名にアクセスして検証する](./access-and-verify-signature/) | この包括的なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書のデジタル署名にアクセスし、検証します。文書の信頼性を簡単に確保できます。 |

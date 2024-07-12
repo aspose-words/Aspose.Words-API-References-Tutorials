@@ -2,114 +2,125 @@
 title: Word 文書の読み取り専用保護
 linktitle: Word 文書の読み取り専用保護
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書の読み取り専用を保護する方法を学習します。
+description: Aspose.Words for .NET を使用して読み取り専用保護を適用し、Word 文書を保護する方法を学びます。ステップ バイ ステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/document-protection/read-only-protection/
 ---
-このチュートリアルでは、Aspose.Words for .NET の読み取り専用保護機能を使用する手順を説明します。この機能を使用すると、Word 文書を読み取り専用にして、不正な変更を防ぐことができます。以下の手順に従ってください。
+## 導入
 
-## ステップ1: ドキュメントの作成と保護の適用
+Word 文書を管理する場合、内容を保護するために文書を読み取り専用にする必要がある場合があります。誤って編集されるリスクなしに重要な情報を共有する場合でも、法的文書の整合性を確保する場合でも、読み取り専用保護は貴重な機能です。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に読み取り専用保護を実装する方法を説明します。各手順を詳細かつ魅力的な方法で説明し、簡単に理解できるようにします。
 
-まず、Document クラスのインスタンスと DocumentBuilder オブジェクトを作成します。
+## 前提条件
+
+コードに進む前に、いくつかの前提条件を満たす必要があります。
+
+1.  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされていることを確認してください。[Aspose リリース ページ](https://releases.aspose.com/words/net/).
+2. 開発環境: .NET がインストールされた開発環境をセットアップします。Visual Studio が適しています。
+3. C# の基本的な理解: このチュートリアルでは、C# プログラミングの基本的な理解があることを前提としています。
+
+## 名前空間のインポート
+
+まず、必要な名前空間がインポートされていることを確認しましょう。これは、Aspose.Words for .NET から必要なクラスとメソッドにアクセスできるようにするため、非常に重要です。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## ステップ2: ドキュメントにコンテンツを書き込む
-DocumentBuilder オブジェクトを使用してドキュメントにコンテンツを書き込みます。
+## ステップ1: ドキュメントを設定する
+
+このステップでは、新しいドキュメントとドキュメント ビルダーを作成します。これが操作の基盤となります。
 
 ```csharp
-builder.Write("Open document as read-only");
-```
-
-## ステップ3: パスワードを設定し、ドキュメントを読み取り専用にする
-
-WriteProtection オブジェクトの SetPassword() プロパティを使用してドキュメントのパスワードを設定します。
-
-```csharp
-doc.WriteProtection.SetPassword("MyPassword");
-```
-
-必ず「MyPassword」を実際に使用するパスワードに置き換えてください。
-
-## ステップ4: 読み取り専用ドキュメントを適用する
-
-ReadOnlyRecommended プロパティを true に設定して、ドキュメントを読み取り専用にします。
-
-```csharp
-doc.WriteProtection.ReadOnlyRecommended = true;
-```
-
-## ステップ5: 読み取り専用保護を適用してドキュメントを保存する
-
-最後に、Document オブジェクトの Protect() メソッドを使用して読み取り専用保護を適用します。
-
-```csharp
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-```
-
-保護されたドキュメントを保存するには、正しいパスとファイル名を指定してください。
-
-### Aspose.Words for .NET を使用した読み取り専用保護のサンプル ソース コード
-
-以下は、Aspose.Words for .NET を使用した読み取り専用保護の完全なソース コードです。
-
-```csharp
-
 //ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
+//ドキュメントにテキストを書き込みます。
 builder.Write("Open document as read-only");
-
-//最大 15 文字のパスワードを入力してください。
-doc.WriteProtection.SetPassword("MyPassword");
-
-//ドキュメントを読み取り専用にします。
-doc.WriteProtection.ReadOnlyRecommended = true;
-
-//書き込み保護を読み取り専用として適用します。
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-
 ```
 
-これらの手順に従うことで、文書を簡単に保護できます
+説明：
+
+- まず、ドキュメントを保存するディレクトリ パスを定義します。
+- 新しい`Document`オブジェクトが作成され、`DocumentBuilder`それに関連します。
+- ビルダーを使用して、ドキュメントに単純なテキスト行を追加します。
+
+## ステップ2: 書き込み保護パスワードを設定する
+
+次に、書き込み保護のためのパスワードを設定する必要があります。このパスワードは最大 15 文字までです。
+
+```csharp
+//最大 15 文字のパスワードを入力してください。
+doc.WriteProtection.SetPassword("MyPassword");
+```
+
+説明：
+
+- の`SetPassword`メソッドは`WriteProtection`ドキュメントのプロパティ。
+- 保護を解除するために必要なパスワード (この場合は「MyPassword」) を提供します。
+
+## ステップ3: 読み取り専用推奨を有効にする
+
+このステップでは、ドキュメントを読み取り専用にすることを推奨します。つまり、ドキュメントを開くと、ユーザーに読み取り専用モードで開くように求めるメッセージが表示されます。
+
+```csharp
+//ドキュメントを読み取り専用にすることをお勧めします。
+doc.WriteProtection.ReadOnlyRecommended = true;
+```
+
+説明：
+
+- の`ReadOnlyRecommended`プロパティは次のように設定されています`true`.
+- これにより、ユーザーはドキュメントを読み取り専用モードで開くように求められますが、この推奨事項を無視することもできます。
+
+## ステップ4: 読み取り専用保護を適用する
+
+最後に、ドキュメントに読み取り専用保護を適用します。この手順により、保護が強化されます。
+
+```csharp
+//書き込み保護を読み取り専用として適用します。
+doc.Protect(ProtectionType.ReadOnly);
+```
+
+説明：
+
+- の`Protect`メソッドはドキュメント上で呼び出され、`ProtectionType.ReadOnly`議論として。
+- この方法は読み取り専用保護を強制し、パスワードなしでドキュメントを変更することを防止します。
+
+## ステップ5: ドキュメントを保存する
+
+最後のステップは、保護設定を適用したドキュメントを保存することです。
+
+```csharp
+//保護されたドキュメントを保存します。
+doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
+```
+
+説明：
+
+- の`Save`メソッドはドキュメントに対して呼び出され、ファイルのパスと名前が指定されます。
+- ドキュメントは読み取り専用保護が設定された状態で保存されます。
 
 ## 結論
 
-このチュートリアルでは、Word ドキュメントを読み取り専用にして不正な変更を防ぐことができる Aspose.Words for .NET の読み取り専用保護機能について説明しました。提供されている手順に従うことで、ドキュメントに読み取り専用保護を簡単に適用し、セキュリティを強化できます。読み取り専用保護は、編集機能を制限してドキュメントのコンテンツの整合性と正確性を確保するのに役立ちます。Aspose.Words for .NET は、ドキュメント保護を処理するための強力で柔軟な API を提供し、Word ドキュメントをカスタマイズして保護するためのさまざまな機能をサポートしています。
+これで完了です。Aspose.Words for .NET を使用して、読み取り専用で保護された Word 文書を正常に作成できました。この機能により、文書の内容がそのまま変更されずに保持され、セキュリティがさらに強化されます。機密情報や法的文書を共有する場合でも、読み取り専用保護は文書管理の必須ツールです。
 
-### Word 文書の読み取り専用保護に関する FAQ
+## よくある質問
 
-#### Q: Aspose.Words for .NET の読み取り専用保護とは何ですか?
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、開発者が C# またはその他の .NET 言語を使用してプログラムで Word 文書を作成、変更、変換、保護できるようにする強力なライブラリです。
 
-A: Aspose.Words for .NET の読み取り専用保護は、Word 文書を読み取り専用にして、不正な変更を防ぐ機能です。文書が読み取り専用に設定されている場合、ユーザーは文書を開いて表示することはできますが、その内容を変更することはできません。
+### ドキュメントから読み取り専用保護を削除できますか?
+はい、読み取り専用保護を解除するには、`Unprotect`方法と正しいパスワードを入力してください。
 
-#### Q: Aspose.Words for .NET を使用して Word 文書に読み取り専用保護を適用するにはどうすればよいですか?
+### 文書に設定されたパスワードは暗号化されていますか?
+はい、Aspose.Words はパスワードを暗号化して、保護されたドキュメントのセキュリティを確保します。
 
-A: Aspose.Words for .NET を使用して Word 文書に読み取り専用保護を適用するには、次の手順に従います。
-1. インスタンスを作成する`Document`クラスと`DocumentBuilder`物体。
-2. 使用`DocumentBuilder`ドキュメントにコンテンツを書き込みます。
-3. 文書にパスワードを設定するには、`SetPassword`方法の`WriteProtection`物体。
-4. をセットする`ReadOnlyRecommended`の財産`WriteProtection`反対する`true`ドキュメントを読み取り専用で開くことを推奨します。
-5. 読み取り専用保護を適用するには、`Protect`方法の`Document`オブジェクト、指定`ProtectionType`として`ReadOnly`.
-6. 保護された文書を保存するには、`Save`方法の`Document`物体。
+### Aspose.Words for .NET を使用して他の種類の保護を適用できますか?
+はい、Aspose.Words for .NET は、コメントのみの許可、フォームへの入力、変更の追跡など、さまざまな種類の保護をサポートしています。
 
-#### Q: Aspose.Words for .NET を使用して Word 文書から読み取り専用保護を削除できますか?
-
-A: はい、Aspose.Words for .NETを使用してWord文書から読み取り専用保護を解除できます。これを行うには、`Unprotect`方法の`Document`クラスは、ドキュメントから既存の保護を削除します。
-
-#### Q: Word 文書の読み取り専用保護に別のパスワードを設定できますか?
-
- A: いいえ、Aspose.Words for .NETの読み取り専用保護では、読み取り専用保護専用の別のパスワードを設定することはできません。`SetPassword`方法の`WriteProtection`オブジェクトは、読み取り専用保護と読み取り/書き込み保護の両方を含むドキュメント全体の保護に適用されます。
-
-#### Q: ユーザーは Word 文書の読み取り専用保護を回避できますか?
-
-A: Word 文書の読み取り専用保護は、偶発的または不正な変更を阻止し、防止することを目的としています。一定の保護レベルは提供されますが、十分な技術的知識または編集権限を持つユーザーによって回避される可能性があります。ただし、読み取り専用保護は抑止力として機能し、文書の整合性を維持するのに役立ちます。
+### Aspose.Words for .NET の無料試用版はありますか?
+はい、無料トライアルは以下からダウンロードできます。[Aspose リリース ページ](https://releases.aspose.com/).

@@ -2,204 +2,86 @@
 title: Text in gelöschten Revisionen ignorieren
 linktitle: Text in gelöschten Revisionen ignorieren
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie die Funktion „Text in gelöschten Revisionen ignorieren“ von Aspose.Words für .NET verwenden.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET nachverfolgte Revisionen in Word-Dokumenten handhaben. Meistern Sie die Dokumentenautomatisierung mit diesem umfassenden Tutorial.
 type: docs
 weight: 10
 url: /de/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
+## Einführung
 
-In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion „Text in Löschrevisionen ignorieren“ in der Aspose.Words-Bibliothek für .NET verwendet wird. Diese Funktion ist nützlich, wenn wir bei der Textverarbeitung mit Dokumenten Text in Löschrevisionen ignorieren möchten.
+Im Bereich der .NET-Entwicklung sticht Aspose.Words als robuste Bibliothek für die programmgesteuerte Arbeit mit Microsoft Word-Dokumenten hervor. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, die Beherrschung der Funktionen von Aspose.Words kann Ihre Fähigkeit, Word-Dokumente effizient zu bearbeiten, zu erstellen und zu verwalten, erheblich verbessern. Dieses Tutorial befasst sich mit einer seiner leistungsstarken Funktionen: der Handhabung verfolgter Revisionen in Dokumenten mit Aspose.Words für .NET.
 
-## Übersicht über die Aspose.Words-Bibliothek für .NET
+## Voraussetzungen
 
-Bevor ich in die Codedetails eintauche, möchte ich kurz die Aspose.Words-Bibliothek für .NET vorstellen. Es handelt sich um eine leistungsstarke Bibliothek, mit der Word-Dokumente in .NET-Anwendungen erstellt, geändert und konvertiert werden können. Sie bietet viele erweiterte Funktionen für die Textverarbeitung mit Dokumenten, einschließlich Revisionsverwaltung.
+Bevor Sie mit diesem Tutorial beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+- Grundkenntnisse der Programmiersprache C#.
+- Visual Studio ist auf Ihrem System installiert.
+-  Aspose.Words für .NET-Bibliothek in Ihr Projekt integriert. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/).
+- Zugriff auf Aspose.Words für .NET[Dokumentation](https://reference.aspose.com/words/net/) als Referenz.
 
-## Erläuterung der Funktion „Text in gelöschten Revisionen ignorieren“
+## Namespaces importieren
 
-Mit der Funktion „Text in gelöschten Revisionen ignorieren“ in Aspose.Words für .NET können Sie angeben, ob Text in gelöschten Revisionen bei bestimmten Vorgängen, z. B. beim Suchen und Ersetzen von Text, ignoriert werden soll. Wenn diese Funktion aktiviert ist, wird gelöschter Text in Revisionen bei Vorgängen nicht berücksichtigt.
+Importieren Sie zunächst die erforderlichen Namespaces in Ihr Projekt:
+```csharp
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+## Schritt 1: Neues Dokument erstellen und Text einfügen
 
-## Schritt 1: Erstellen eines neuen Dokuments mit Aspose.Words für .NET
-
- Bevor wir mit der Textbearbeitung in einem Dokument beginnen, müssen wir ein neues Dokument mit Aspose.Words für .NET erstellen. Dies kann durch die Instanziierung eines`Document` Objekt:
-
+ Initialisieren Sie zunächst eine neue Instanz von`Document` und ein`DocumentBuilder` So beginnen Sie mit der Erstellung Ihres Dokuments:
 ```csharp
 Document doc = new Document();
-```
-
-## Schritt 2: Nicht überarbeiteten Text in das Dokument einfügen
-
- Sobald wir ein Dokument haben, können wir ungeprüften Text einfügen mit einem`DocumentBuilder` Objekt. Um beispielsweise den Text "Gelöschter Text" einzufügen, können wir das`Writeln` Und`Write` Methoden:
-
-```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. Writen("Deleted");
-builder. Write("Text");
 ```
 
-## Schritt 3: Entfernen eines Absatzes mit Revisionsverfolgung
+## Schritt 2: Text einfügen und Revisionen verfolgen
 
-Um die Verwendung der Funktion „Text in gelöschten Revisionen ignorieren“ zu veranschaulichen, löschen wir mithilfe der Revisionsverfolgung einen Absatz aus dem Dokument. So können wir sehen, wie sich diese Funktion auf nachfolgende Vorgänge auswirkt.
-
+Sie können Text in das Dokument einfügen und Revisionen verfolgen, indem Sie die Revisionsverfolgung starten und stoppen:
 ```csharp
+builder.Writeln("Deleted");
+builder.Write("Text");
+
 doc.StartTrackRevisions("author", DateTime.Now);
 doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## Schritt 4: Anwenden der Funktion „Text in gelöschten Revisionen ignorieren“
+## Schritt 3: Text durch reguläre Ausdrücke ersetzen
 
- Nachdem wir nun unser Dokument durch das Löschen eines Absatzes vorbereitet haben, können wir die Funktion "Text in gelöschten Revisionen ignorieren" aktivieren, indem wir`FindReplaceOptions` Objekt. Wir setzen den`IgnoreDeleted`Eigentum an`true`:
-
+Um Text zu bearbeiten, können Sie reguläre Ausdrücke verwenden, um bestimmte Muster zu suchen und zu ersetzen:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
 
-## Schritt 5: Verwenden regulärer Ausdrücke für Suchen und Ersetzen
-
-Um Such- und Ersetzungsvorgänge im Text des Dokuments durchzuführen, verwenden wir reguläre Ausdrücke. In unserem Beispiel suchen wir nach allen Vorkommen des Buchstabens "e" und ersetzen sie durch ein Sternchen "* ". .NETZ`Regex` Hierzu wird die Klasse verwendet:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
-```
 
-## Schritt 6: Anzeige der geänderten Dokumentausgabe
-
- Nach der Anwendung von Suchen und Ersetzen können wir den geänderten Inhalt des Dokuments anzeigen, indem wir`GetText` Methode:
-
-```csharp
 Console.WriteLine(doc.GetText());
-```
 
-## Schritt 7: Ändern der Optionen zum Einschließen gelöschten Textes
-
- Wenn wir gelöschten Text in das Ausgabeergebnis einschließen möchten, können wir die Optionen ändern, um gelöschten Text nicht zu ignorieren. Dazu setzen wir die`IgnoreDeleted`Eigentum an`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-## Schritt 8: Ausgabe des geänderten Dokuments mit gelöschtem Text
-
-Nachdem wir die Optionen geändert haben, können wir die Suche und Ersetzung erneut durchführen, um das Ergebnis mit dem gelöschten Text zu erhalten:
-
-```csharp
+options.IgnoreDeleted = false;
 doc.Range.Replace(regex, "*", options);
+
 Console.WriteLine(doc.GetText());
-```
-
-### Beispielquellcode zum Ignorieren von Text in gelöschten Revisionen mit Aspose.Words für .NET
-
-Hier ist der vollständige Beispielquellcode zur Demonstration der Verwendung der Funktion „Text in gelöschten Revisionen ignorieren“ mit Aspose.Words für .NET:
-
-```csharp
-        
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Nicht überarbeiteten Text einfügen.
-	builder.Writeln("Deleted");
-	builder.Write("Text");
-
-	// Entfernen Sie den ersten Absatz mit der Revisionsverfolgung.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	doc.FirstSection.Body.FirstParagraph.Remove();
-	doc.StopTrackRevisions();
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreDeleted = false;
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-    
 ```
 
 ## Abschluss
 
-In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Text in gelöschten Revisionen ignorieren“ in Aspose.Words für .NET verwendet wird. Diese Funktion ist nützlich, um Text in gelöschten Revisionen beim Bearbeiten von Dokumenten zu ignorieren. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um ein Dokument zu erstellen, Text einzufügen, einen Absatz mit Revisionsverfolgung zu löschen, die Funktion „Text in gelöschten Revisionen ignorieren“ anzuwenden und Such- und Ersetzungsvorgänge durchzuführen.
+Durch die Beherrschung nachverfolgter Revisionen in Word-Dokumenten mit Aspose.Words für .NET können Entwickler Dokumentbearbeitungsaufgaben effizient automatisieren. Durch die Nutzung der umfassenden API und der robusten Funktionen können Sie die Revisionsverwaltung nahtlos in Ihre Anwendungen integrieren und so die Produktivität und die Dokumentverwaltungsfunktionen verbessern.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Was ist die Funktion „Text in gelöschten Revisionen ignorieren“ in Aspose.Words für .NET?
+### Was sind nachverfolgte Revisionen in Word-Dokumenten?
+Nachverfolgte Revisionen in Word-Dokumenten beziehen sich auf an einem Dokument vorgenommene Änderungen, die mit Markierungen für andere sichtbar sind und häufig für die gemeinsame Bearbeitung und Überprüfung verwendet werden.
 
-A: Mit der Funktion „Text in gelöschten Revisionen ignorieren“ in Aspose.Words für .NET können Sie angeben, ob Text in gelöschten Revisionen bei bestimmten Vorgängen, wie z. B. beim Suchen und Ersetzen von Text, ignoriert werden soll. Wenn diese Funktion aktiviert ist, wird gelöschter Text in Revisionen bei Vorgängen nicht berücksichtigt.
+### Wie kann ich Aspose.Words für .NET in mein Visual Studio-Projekt integrieren?
+Sie können Aspose.Words für .NET integrieren, indem Sie die Bibliothek von der Aspose-Website herunterladen und in Ihrem Visual Studio-Projekt darauf verweisen.
 
-#### F: Was ist Aspose.Words für .NET?
+### Kann ich verfolgte Revisionen programmgesteuert mit Aspose.Words für .NET rückgängig machen?
+Ja, Sie können verfolgte Revisionen mit Aspose.Words für .NET programmgesteuert verwalten und rückgängig machen, was eine präzise Kontrolle über die Arbeitsabläufe zur Dokumentbearbeitung ermöglicht.
 
-A: Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Konvertieren von Word-Dokumenten in .NET-Anwendungen. Sie bietet viele erweiterte Funktionen für die Textverarbeitung mit Dokumenten, einschließlich Revisionsverwaltung.
+### Ist Aspose.Words für .NET für die Verarbeitung großer Dokumente mit nachverfolgten Revisionen geeignet?
+Aspose.Words für .NET ist für die effiziente Handhabung großer Dokumente optimiert, einschließlich solcher mit umfangreichen nachverfolgten Revisionen.
 
-#### F: Wie erstelle ich in Aspose.Words für .NET ein neues Dokument?
-
- A: Bevor Sie mit der Textbearbeitung in einem Dokument beginnen, müssen Sie ein neues Dokument mit Aspose.Words für .NET erstellen. Dies kann durch die Instanziierung eines`Document` Objekt. Hier ist ein Beispielcode zum Erstellen eines neuen Dokuments:
-
-```csharp
-Document doc = new Document();
-```
-
-#### F: Wie füge ich mit Aspose.Words für .NET unbearbeiteten Text in ein Dokument ein?
-
- A: Sobald Sie ein Dokument haben, können Sie ungeprüften Text einfügen mit einem`DocumentBuilder` Objekt. Um beispielsweise den Text "Gelöschter Text" einzufügen, können Sie das`Writeln` Und`Write` Methoden:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writen("Deleted");
-builder.Write("Text");
-```
-
-#### F: Wie lösche ich einen Absatz mit Revisionsverfolgung in Aspose.Words für .NET?
-
-A: Um die Verwendung der Funktion „Text in gelöschten Revisionen ignorieren“ zu veranschaulichen, löschen wir mithilfe der Revisionsverfolgung einen Absatz aus dem Dokument. Dadurch können wir sehen, wie sich diese Funktion auf nachfolgende Vorgänge auswirkt.
-
-```csharp
-doc.StartTrackRevisions("author", DateTime.Now);
-doc.FirstSection.Body.FirstParagraph.Remove();
-doc.StopTrackRevisions();
-```
-
-#### F: Wie aktiviere ich die Funktion „Text in gelöschten Revisionen ignorieren“ in Aspose.Words für .NET?
-
- A: Nachdem wir nun unser Dokument durch das Löschen eines Absatzes vorbereitet haben, können wir die Funktion „Text in gelöschten Revisionen ignorieren“ aktivieren, indem wir`FindReplaceOptions` Objekt. Wir setzen den`IgnoreDeleted`Eigentum an`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
-
-#### F: Wie kann ich in Aspose.Words für .NET mit regulären Ausdrücken suchen und ersetzen?
-
-A: Um Such- und Ersetzungsvorgänge im Text des Dokuments durchzuführen, verwenden wir reguläre Ausdrücke. In unserem Beispiel suchen wir nach allen Vorkommen des Buchstabens "e" und ersetzen sie durch ein Sternchen "* ". Wir werden die .NET`Regex` Klasse dafür:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### F: Wie kann ich geänderte Dokumentinhalte in Aspose.Words für .NET anzeigen?
-
-A: Nach der Anwendung von Suchen und Ersetzen können wir den geänderten Inhalt des Dokuments anzeigen, indem wir`GetText` Methode:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### F: Wie schließe ich gelöschten Text in das Ausgabeergebnis in Aspose.Words für .NET ein?
-
- A: Wenn wir gelöschten Text in das Ausgabeergebnis einschließen möchten, können wir die Optionen ändern, um gelöschten Text nicht zu ignorieren. Dazu setzen wir die`IgnoreDeleted`Eigentum an`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-#### F: Wie zeige ich in Aspose.Words für .NET bearbeitete Dokumente mit gelöschtem Text an?
-
-A: Nachdem wir die Optionen geändert haben, können wir eine neue Suche und Ersetzung durchführen, um das Ergebnis mit dem gelöschten Text zu erhalten:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Wo finde ich weitere Ressourcen und Support für Aspose.Words für .NET?
+Sie können die umfassende Dokumentation erkunden und Unterstützung von der Aspose.Words für .NET-Community erhalten unter[Aspose.Words Forum](https://forum.aspose.com/c/words/8).

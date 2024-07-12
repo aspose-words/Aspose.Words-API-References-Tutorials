@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Σε αυτό το απόσπασμα, ορίζουμε τη διαδρομή προς τον κατάλογο όπου θα αποθηκευτεί το έγγραφό μας και αρχικοποιούμε ένα νέο`Document` και`DocumentBuilder` παράδειγμα.
+ Σε αυτό το απόσπασμα, ορίζουμε τη διαδρομή προς τον κατάλογο όπου θα αποθηκευτεί το έγγραφό μας και αρχικοποιούμε ένα νέο`Document`και`DocumentBuilder` παράδειγμα.
 
 ## Βήμα 3: Γράψτε το αρχικό κείμενο
 
@@ -139,7 +139,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση για το Aspose.Words για .NET;
 
- Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση για το[Aspose ιστότοπο](https://reference.aspose.com/words/net/).
+ Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση για το[Aspose website](https://reference.aspose.com/words/net/).
 
 ### Μπορώ να προσθέσω άλλους τύπους περιεχομένου σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET;
 

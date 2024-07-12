@@ -2,125 +2,143 @@
 title: Onbeperkte sectie in Word-document
 linktitle: Onbeperkte sectie in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u onbeperkte secties in een Word-document definieert met Aspose.Words voor .NET.
+description: Ontgrendel specifieke secties in uw Word-document met Aspose.Words voor .NET met deze stapsgewijze handleiding. Perfect voor het beschermen van gevoelige inhoud.
 type: docs
 weight: 10
 url: /nl/net/document-protection/unrestricted-section/
 ---
-In deze zelfstudie begeleiden we u bij de stappen voor het gebruik van de onbeperkte sectiefunctie van Aspose.Words voor .NET. Met deze functie kunt u specifieke secties in een Word-document definiëren die niet zijn beveiligd, zelfs als de rest van het document wel is beveiligd. Volg onderstaande stappen:
+## Invoering
 
-## Stap 1: Het document en de secties maken
+Hallo daar! Klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag pakken we iets superpraktisch aan: hoe je specifieke secties in een Word-document kunt ontgrendelen terwijl je andere delen beschermd houdt. Als u ooit bepaalde delen van uw document wilt beveiligen, maar andere delen open wilt laten voor bewerking, dan is deze tutorial iets voor u. Laten we beginnen!
 
-Begin met het maken van een exemplaar van de klasse Document en een DocumentBuilder-object:
+## Vereisten
+
+Voordat we in de kern duiken, zorg ervoor dat je alles hebt wat je nodig hebt:
+
+-  Aspose.Words voor .NET: als u dat nog niet heeft gedaan, kunt u dat doen[download het hier](https://releases.aspose.com/words/net/).
+- Visual Studio: of een andere .NET-compatibele IDE.
+- Basiskennis van C#: Een beetje bekendheid met C# zal u helpen deze tutorial snel te doorlopen.
+-  Aspose-licentie: pak een[gratis proefperiode](https://releases.aspose.com/) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) als je het nodig hebt om te testen.
+
+## Naamruimten importeren
+
+Voordat u begint met coderen, moet u ervoor zorgen dat u de benodigde naamruimten in uw C#-project hebt geïmporteerd:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Stap 2: Voeg inhoud toe aan het document
-Gebruik het DocumentBuilder-object om inhoud aan het document toe te voegen en sectie-einden in te voegen:
+Laten we het nu stap voor stap opsplitsen!
+
+## Stap 1: Stel uw project in
+
+### Initialiseer uw documentmap
+
+Allereerst moet u het pad naar uw documentenmap instellen. Dit is waar uw Word-bestanden worden opgeslagen.
 
 ```csharp
-builder.Writeln("Section 1. Unprotected.");
-builder. InsertBreak(BreakType. SectionBreakContinuous);
-builder.Writeln("Section 2. Protected.");
-```
-
-## Stap 3: Bescherm document en secties
-
-Sectiebeveiliging werkt alleen als documentbeveiliging is ingeschakeld en alleen bewerken in formuliervelden is toegestaan. U kunt het document beveiligen met behulp van de Protect()-methode van het Document-object:
-
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
-
-Zorg ervoor dat u het juiste type beveiliging specificeert en het gewenste wachtwoord instelt.
-
-## Stap 4: Beveiliging voor een specifieke sectie uitschakelen
-
-Standaard zijn alle secties beveiligd, maar u kunt de beveiliging voor een specifieke sectie selectief uitschakelen met behulp van de eigenschap ProtectedForForms van het Section-object:
-
-```csharp
-doc.Sections[0].ProtectedForForms = false;
-```
-
-In dit voorbeeld is de bescherming uitgeschakeld voor de eerste sectie.
-
-## Stap 5: Sla het document op
-
-Sla ten slotte het gewijzigde document op:
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-```
-
-Zorg ervoor dat u het juiste pad en de juiste bestandsnaam opgeeft om het document met onbeperkte secties op te slaan.
-
-### Voorbeeldbroncode voor Unrestricted Section met Aspose.Words voor .NET
-
-Hier is de volledige broncode voor de onbeperkte sectie met Aspose.Words voor .NET:
-
-
-```csharp
-
-// Het pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Voeg twee secties in met wat tekst.
+```
+
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar u uw documenten wilt opslaan. Dit is van cruciaal belang omdat het ervoor zorgt dat uw bestanden op de juiste locatie worden opgeslagen.
+
+### Maak een nieuw document
+
+Vervolgens maken we een nieuw document met Aspose.Words. Dit document zal het canvas zijn waarop we onze magie zullen toepassen.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ De`Document` klasse initialiseert een nieuw document, en de`DocumentBuilder` helpt ons eenvoudig inhoud aan ons document toe te voegen.
+
+## Stap 2: Secties invoegen
+
+### Voeg onbeschermde sectie toe
+
+Laten we beginnen met het toevoegen van de eerste sectie, die onbeschermd blijft.
+
+```csharp
 builder.Writeln("Section 1. Unprotected.");
+```
+
+Deze coderegel voegt de tekst 'Sectie 1. Onbeschermd' toe. naar het document. Simpel, toch?
+
+### Voeg een beveiligde sectie toe
+
+Laten we nu een tweede sectie toevoegen en een sectie-einde invoegen om deze van de eerste te scheiden.
+
+```csharp
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
-
-// Sectiebeveiliging werkt alleen als de documentbeveiliging is ingeschakeld en alleen bewerken in formuliervelden is toegestaan.
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-
-//Standaard zijn alle secties beveiligd, maar we kunnen de beveiliging selectief uitschakelen.
-doc.Sections[0].ProtectedForForms = false;
-doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-
-doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-
 ```
 
-Door deze stappen te volgen, kunt u eenvoudig onbeperkte secties in uw Word-document definiëren met Aspose.Words voor .NET.
+ De`InsertBreak` methode voegt een doorlopend sectie-einde in, waardoor we voor elke sectie verschillende instellingen kunnen hebben.
+
+## Stap 3: Bescherm het document
+
+### Schakel documentbeveiliging in
+
+ Om het document te beschermen, gebruiken we de`Protect` methode. Deze methode zorgt ervoor dat alleen formuliervelden kunnen worden bewerkt, tenzij anders aangegeven.
+
+```csharp
+doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
+
+ Hier is het document beveiligd met een wachtwoord en kunnen alleen formuliervelden worden bewerkt. Vergeet niet te vervangen`"password"` met uw gewenste wachtwoord.
+
+### Beveiliging van specifieke sectie opheffen
+
+Standaard zijn alle secties beveiligd. We moeten de beveiliging voor het eerste gedeelte selectief uitschakelen.
+
+```csharp
+doc.Sections[0].ProtectedForForms = false;
+```
+
+Deze lijn zorgt ervoor dat het eerste gedeelte onbeschermd blijft terwijl de rest van het document beveiligd is.
+
+## Stap 4: Bewaar en laad het document
+
+### Sla het document op
+
+Nu is het tijd om uw document op te slaan met de toegepaste beveiligingsinstellingen.
+
+```csharp
+doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
+```
+
+ Hiermee wordt het document met de naam in de opgegeven map opgeslagen`DocumentProtection.UnrestrictedSection.docx`.
+
+### Laad het document
+
+Ten slotte laden we het document om te controleren of alles correct is ingesteld.
+
+```csharp
+doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
+```
+
+Deze stap zorgt ervoor dat het document correct wordt opgeslagen en opnieuw kan worden geladen zonder dat de beveiligingsinstellingen verloren gaan.
 
 ## Conclusie
 
-In deze zelfstudie hebben we de onbeperkte sectiefunctie van Aspose.Words voor .NET onderzocht, waarmee specifieke secties in een Word-document onbeschermd kunnen blijven terwijl de rest van het document wordt beschermd. Door de gegeven stappen te volgen, kunt u eenvoudig secties binnen uw document definiëren waar gebruikers de inhoud vrijelijk kunnen bewerken terwijl de bescherming voor andere secties behouden blijft. Aspose.Words voor .NET biedt krachtige mogelijkheden voor documentbescherming en aanpassing, waardoor u controle krijgt over de bewerkingsrechten binnen uw Word-documenten.
+En daar heb je het! Door deze stappen te volgen, hebt u met succes een Word-document gemaakt met een mix van beveiligde en onbeveiligde secties met behulp van Aspose.Words voor .NET. Deze methode is ongelooflijk handig als u bepaalde delen van een document wilt vergrendelen terwijl andere delen bewerkbaar moeten blijven.
 
-### Veelgestelde vragen voor onbeperkte sectie in Word-document
+## Veelgestelde vragen
 
-#### Vraag: Wat zijn onbeperkte secties in Aspose.Words voor .NET?
+### Kan ik meer dan één sectie beschermen?
+Ja, u kunt indien nodig meerdere secties selectief beveiligen en de beveiliging opheffen.
 
-A: Onbeperkte secties in Aspose.Words voor .NET zijn specifieke secties binnen een Word-document die niet zijn beveiligd, zelfs als de rest van het document wel is beveiligd. Met deze secties kunnen gebruikers de inhoud ervan wijzigen, terwijl de bescherming van de overige delen van het document behouden blijft.
+### Is het mogelijk om het beveiligingstype te wijzigen nadat het document is opgeslagen?
+Ja, u kunt het document opnieuw openen en de beveiligingsinstellingen indien nodig wijzigen.
 
-#### Vraag: Hoe kan ik onbeperkte secties maken met Aspose.Words voor .NET?
+### Welke andere beveiligingstypen zijn beschikbaar in Aspose.Words?
+ Aspose.Words ondersteunt verschillende soorten bescherming, waaronder`ReadOnly`, `Comments` , En`TrackedChanges`.
 
-A: Om onbeperkte secties in een Word-document te maken met Aspose.Words voor .NET, kunt u deze stappen volgen:
-1.  Maak een exemplaar van de`Document` klasse en een`DocumentBuilder` voorwerp.
-2.  Gebruik de`DocumentBuilder` om inhoud aan het document toe te voegen en sectie-einden in te voegen.
-3.  Beveilig het document met behulp van de`Protect` werkwijze van de`Document` object, met vermelding van het gewenste beveiligingstype en wachtwoord.
-4.  Schakel de bescherming voor een specifieke sectie uit door de`ProtectedForForms` eigendom van de corresponderende`Section` bezwaar tegen`false`.
-5. Sla het gewijzigde document op.
+### Kan ik een document beveiligen zonder wachtwoord?
+Ja, u kunt een document beveiligen zonder een wachtwoord op te geven.
 
-#### Vraag: Kan ik meerdere onbeperkte secties binnen een Word-document hebben?
-
- A: Ja, u kunt meerdere onbeperkte secties binnen een Word-document hebben. Door selectief de bescherming voor specifieke secties uit te schakelen met behulp van de`ProtectedForForms` eigendom van de`Section`object kunt u meerdere secties definiëren waar gebruikers de inhoud vrijelijk kunnen wijzigen terwijl andere secties beschermd blijven.
-
-#### Q4. Kan ik de beveiliging verwijderen van een sectie die aanvankelijk beveiligd was?
- Ja, u kunt de beveiliging verwijderen van een sectie die aanvankelijk werd beveiligd door de`ProtectedForForms` eigendom van de corresponderende`Section` bezwaar tegen`false`. Hierdoor kunnen gebruikers de inhoud binnen die specifieke sectie zonder enige beperking bewerken.
-
-#### Vraag: Welke beveiligingstypen kunnen op een Word-document worden toegepast?
-
-A: Aspose.Words voor .NET biedt verschillende beveiligingstypen die op een Word-document kunnen worden toegepast, waaronder:
-- NoProtection: Er wordt geen bescherming toegepast.
-- AllowOnlyRevisions: Gebruikers kunnen alleen revisies in het document aanbrengen.
-- AllowOnlyComments: Gebruikers kunnen alleen opmerkingen aan het document toevoegen.
-- AllowOnlyFormFields: Gebruikers kunnen alleen formuliervelden in het document bewerken.
-- Alleen-lezen: het document is alleen-lezen en bewerken is niet toegestaan.
-
-
+### Hoe kan ik controleren of een sectie beveiligd is?
+ U kunt de`ProtectedForForms` eigenschap van een sectie om te bepalen of deze beschermd is.

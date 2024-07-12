@@ -100,7 +100,7 @@ A: Ja, het is mogelijk om alleen bepaalde samengevoegde velden in een Word-docum
 
 #### Vraag: Wat zijn de gevolgen van het hernoemen van een samengevoegd veld in een Word-document met Aspose.Words voor .NET?
 
-A: Wanneer u de naam van een samengevoegd veld in een Word-document wijzigt met Aspose.Words voor .NET, verandert de naam van het veld in het document, wat van invloed kan zijn op andere functionaliteit of processen die afhankelijk zijn van de veldnaam. Houd rekening met deze mogelijke gevolgen voordat u de naam van samengevoegde velden wijzigt.
+A: Wanneer u de naam van een samengevoegd veld in een Word-document hernoemt met Aspose.Words voor .NET, verandert de naam van het veld in het document, wat van invloed kan zijn op andere functionaliteit of processen die afhankelijk zijn van de veldnaam. Houd rekening met deze mogelijke gevolgen voordat u de naam van samengevoegde velden wijzigt.
 
 #### Vraag: Is het mogelijk om de oorspronkelijke naam van een samengevoegd veld te herstellen nadat het is hernoemd met Aspose.Words voor .NET?
 

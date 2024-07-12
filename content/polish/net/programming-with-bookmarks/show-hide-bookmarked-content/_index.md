@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Tutaj dodajemy tekst przed i po treści dodanej do zakładek. The`StartBookmark` I`EndBookmark` metody definiują granice zakładki.
+ Tutaj dodajemy tekst przed i po treści dodanej do zakładek. The`StartBookmark`I`EndBookmark` metody definiują granice zakładki.
 
 ## Krok 3: Wstawianie pola warunkowego
 

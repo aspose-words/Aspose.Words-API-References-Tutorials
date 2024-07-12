@@ -66,7 +66,7 @@ Konwersja dokumentów na obrazy w Javie jest łatwa dzięki Aspose.Words dla Jav
  Aby ustawić rozdzielczość obrazu, użyj opcji`setResolution` metoda`ImageSaveOptions` i określ żądaną rozdzielczość w punktach na cal (DPI).
 
 ### Czy mogę przekonwertować określone strony dokumentu na obrazy?
- Tak, możesz określić zakres stron za pomocą`setPageCount` I`setPageIndex` metody`ImageSaveOptions` do konwersji określonych stron na obrazy.
+ Tak, możesz określić zakres stron za pomocą`setPageCount`I`setPageIndex` metody`ImageSaveOptions` do konwersji określonych stron na obrazy.
 
 ### Czy Aspose.Words dla Java nadaje się do konwersji dokumentów wsadowych?
 Absolutnie! Możesz użyć Aspose.Words dla Java do wydajnej konwersji wielu dokumentów na obrazy.

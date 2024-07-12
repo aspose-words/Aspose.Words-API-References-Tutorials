@@ -17,14 +17,14 @@ url: /th/net/programming-with-shapes/add-group-shape/
 - ความรู้พื้นฐานเกี่ยวกับ C# และการประมวลผลคำด้วยเอกสาร Word
 
 ## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสาร
- เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสาร
+ เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"`ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสาร
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: สร้างเอกสารใหม่และ GroupShape
- สร้างอินสแตนซ์ใหม่ของ`Document` ชั้นเรียนและ`GroupShape`คัดค้านการทำงานกับเอกสาร
+ สร้างอินสแตนซ์ใหม่ของ`Document` ชั้นเรียนและ`GroupShape` คัดค้านการทำงานกับเอกสาร
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## ขั้นตอนที่ 3: สร้างและเพิ่มรูปร่างให้กับ GroupShape
- สร้างรูปร่างเฉพาะบุคคลเช่น`accentBorderShape` และ`actionButtonShape` ใช้`Shape` ระดับ. ปรับแต่งคุณสมบัติตามต้องการ ผนวกรูปร่างเหล่านี้เข้ากับ`groupShape` วัตถุ.
+ สร้างรูปร่างเฉพาะบุคคลเช่น`accentBorderShape`และ`actionButtonShape` ใช้`Shape` ระดับ. ปรับแต่งคุณสมบัติตามต้องการ ผนวกรูปร่างเหล่านี้เข้ากับ`groupShape` วัตถุ.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## ขั้นตอนที่ 4: กำหนดขนาดสำหรับ GroupShape
- กำหนดความกว้าง ความสูง และขนาดพิกัดสำหรับ`groupShape`.
+กำหนดความกว้าง ความสูง และขนาดพิกัดสำหรับ`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## ขั้นตอนที่ 6: บันทึกเอกสาร
- บันทึกเอกสารไปยังไดเร็กทอรีที่ระบุโดยใช้`Save`วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithShapes.AddGroupShape.docx"
+ บันทึกเอกสารไปยังไดเร็กทอรีที่ระบุโดยใช้`Save` วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithShapes.AddGroupShape.docx"
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

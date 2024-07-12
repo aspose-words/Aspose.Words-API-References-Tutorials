@@ -2,80 +2,96 @@
 title: 画像を保存しない
 linktitle: 画像を保存しない
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書内の画像の箇条書きの保存を無効にする方法を学習します。
+description: ステップバイステップ ガイドを使用して、Aspose.Words for .NET で画像の箇条書きを処理する方法を学びます。ドキュメント管理を簡素化し、プロフェッショナルな Word ドキュメントを簡単に作成します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
+## 導入
 
-画像行頭記号は、Word 文書でカスタム行頭記号を追加するためによく使用される機能です。ただし、Aspose.Words Library for .NET を使用して文書を操作するときに、画像行頭記号の登録を無効にする必要がある場合があります。このステップ バイ ステップ ガイドでは、Aspose.Words C# ソース コード for .NET を使用して、DocSaveOptions 保存オプションで画像行頭記号の保存を無効にする方法について説明します。
+開発者の皆さん、こんにちは。Word 文書を操作していて、画像の箇条書きを保存する複雑な手順に困惑したことはありませんか? これは、文書の最終的な外観に大きな違いをもたらす可能性がある小さな詳細の 1 つです。今日は、Aspose.Words for .NET で画像の箇条書きを処理するプロセスについて、特に「画像の箇条書きを保存しない」機能に焦点を当てて説明します。準備はできましたか? さあ、始めましょう!
 
-## Aspose.Words ライブラリを理解する
+## 前提条件
 
-コードに進む前に、.NET 用の Aspose.Words ライブラリを理解することが重要です。Aspose.Words は、.NET を含むさまざまなプラットフォームで Word 文書を作成、編集、変換、保護するための強力なライブラリです。テキストの挿入、書式の変更、セクションの追加など、文書を操作するための多くの機能を提供します。
+コードの修正を始める前に、準備しておくべきことがいくつかあります。
 
-## ステップ1: ドキュメントディレクトリの設定
+1.  Aspose.Words for .NET: この強力なライブラリがインストールされていることを確認してください。まだインストールしていない場合は、ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio などの動作する .NET 開発環境。
+3. C# の基礎知識: C# プログラミングに関するある程度の知識があると役立ちます。
+4. サンプル ドキュメント: テスト用の画像の箇条書きを含む Word ドキュメント。
 
-最初のステップは、ドキュメントが保存されているディレクトリを定義することです。完全なディレクトリ パスを指定する必要があります。例:
+## 名前空間のインポート
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-「YOUR DOCUMENTS DIRECTORY」を、ドキュメント ディレクトリへの実際のパスに置き換えてください。
-
-## ステップ2: イメージ箇条書き付きのドキュメントを読み込む
-
-次に、イメージ箇条書きを含むドキュメントを読み込む必要があります。Document クラスを使用して、ファイルからドキュメントを読み込みます。例:
+まず、必要な名前空間をインポートする必要があります。これは非常に簡単ですが、Aspose.Words の機能にアクセスするために不可欠です。
 
 ```csharp
-Document doc = new Document(dataDir + "Image bullet points.docx");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-この例では、「Image bullet points.docx」ファイルからドキュメントを読み込んでいます。
+プロセスを管理しやすいステップに分解してみましょう。こうすることで、コードの各部分を簡単に理解できるようになります。
 
-  ドキュメントディレクトリにあります。
+## ステップ1: ドキュメントディレクトリを設定する
 
-## ステップ3: 録画オプションを設定する
-
-次に、ドキュメントの保存オプションを設定しましょう。保存設定を指定するには、DocSaveOptions クラスを使用します。例:
-
-```csharp
-DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
-```
-
-この例では、新しい DocSaveOptions オブジェクトを作成し、SavePictureBullet プロパティを false に設定して、画像の箇条書きの保存を無効にします。
-
-## ステップ4: 「画像の箇条書きを保存しない」機能を有効にする
-
-「画像の箇条書きを保存しない」機能を有効にするために、SavePictureBullet を false に設定して保存オプションを既に構成しています。これにより、画像の箇条書きが最終文書に保存されなくなります。
-
-## ステップ5: ドキュメントを保存する
-
-最後に、Document クラスの Save メソッドを使用してドキュメントを保存できます。ファイルへのフル パスと希望のファイル名を指定します。例:
-
-```csharp
-doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
-```
-
-必ず「dataDir」をドキュメントへのディレクトリ パスに置き換えてください。
-
-## Aspose.Words for .NET を使用した「画像の箇条書きを保存しない」機能を備えた DocSaveOptions 保存オプションのサンプル ソース コード
+まず最初に、ドキュメント ディレクトリへのパスを指定する必要があります。これは、Word ドキュメントが保存され、変更されたファイルを保存する場所です。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが保存されているシステム上の実際のパスを入力します。
+
+## ステップ2: イメージ箇条書き付きのドキュメントを読み込む
+
+次に、画像の箇条書きを含む Word 文書を読み込みます。この文書は、保存時に画像の箇条書きを削除するように変更されます。
+
+```csharp
 //イメージ箇条書き付きの文書を読み込む
 Document doc = new Document(dataDir + "Image bullet points.docx");
+```
 
-//「画像の箇条書きを保存しない」機能を使用して保存オプションを設定します
+ファイルが`"Image bullet points.docx"`指定されたディレクトリに存在します。
+
+## ステップ3: 保存オプションを設定する
+
+ここで、画像の箇条書きを保存しないように指定する保存オプションを設定しましょう。ここで魔法が起こります。
+
+```csharp
+// 「画像の箇条書きを保存しない」機能を使用して保存オプションを設定します
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
+```
 
+設定することにより`SavePictureBullet`に`false`出力ドキュメントに画像の箇条書きを保存しないように Aspose.Words に指示します。
+
+## ステップ4: ドキュメントを保存する
+
+最後に、指定したオプションでドキュメントを保存します。これにより、画像の箇条書きが含まれない新しいファイルが生成されます。
+
+```csharp
 //指定されたオプションでドキュメントを保存します
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
+新しいファイル、`"WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx"`はドキュメントディレクトリに保存されます。
+
 ## 結論
 
-このガイドでは、.NET 用の Aspose.Words ライブラリを使用して、ドキュメント内の画像の箇条書きの保存を無効にする方法について説明しました。提供されている手順に従い、提供されている C# ソース コードを使用すると、この機能を C# アプリケーションに簡単に適用できます。画像の箇条書きの保存を無効にすると、画像の箇条書きを保存せずにドキュメントの構造と書式設定を保持できるため、状況によっては便利です。
+これで完了です。わずか数行のコードで、ドキュメントを保存するときに画像の箇条書きを省略するように Aspose.Words for .NET を正常に構成できました。これは、画像の箇条書きに邪魔されずに、すっきりとした一貫した外観が必要な場合に非常に便利です。
+
+## よくある質問
+
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、.NET アプリケーション内で Word 文書を作成、編集、変換するための強力なライブラリです。
+
+### この機能を他の種類の弾丸にも使用できますか?
+いいえ、この特定の機能は画像の箇条書き用です。ただし、Aspose.Words には他の箇条書きの種類を処理するための広範なオプションが用意されています。
+
+### Aspose.Words のサポートはどこで受けられますか?
+サポートを受けるには[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).
+
+### Aspose.Words for .NET の無料試用版はありますか?
+はい、無料トライアルをご利用いただけます[ここ](https://releases.aspose.com/).
+
+### Aspose.Words for .NET のライセンスを購入するにはどうすればよいですか?
+ライセンスは以下から購入できます。[アポーズストア](https://purchase.aspose.com/buy).

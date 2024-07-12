@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// 첫 번째 행의 첫 번째 셀 삽입
+//첫 번째 행의 첫 번째 셀 삽입
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- 여기서는 문서 작성기를 사용하여 두 개의 머리글 행과 여러 데이터 행이 있는 테이블을 만듭니다. 그만큼`RowFormat.HeadingFormat`매개변수는 후속 페이지에서 반복되어야 하는 헤더 행을 표시하는 데 사용됩니다.
+ 여기서는 문서 작성기를 사용하여 두 개의 머리글 행과 여러 데이터 행이 있는 테이블을 만듭니다. 그만큼`RowFormat.HeadingFormat` 매개변수는 후속 페이지에서 반복되어야 하는 헤더 행을 표시하는 데 사용됩니다.
 
 ## 4단계: 수정된 문서 저장
 드디어 미국

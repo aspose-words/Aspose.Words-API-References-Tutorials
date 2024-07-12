@@ -62,7 +62,7 @@ den här handledningen har vi sett hur du tar bort sidhuvud och sidfotsinnehåll
 
 #### F: Hur ställer jag in dokumentkatalogen i Aspose.Words för .NET?
 
- S: För att ställa in sökvägen till katalogen som innehåller dina dokument måste du ersätta`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg. Så här gör du:
+S: För att ställa in sökvägen till katalogen som innehåller dina dokument måste du ersätta`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg. Så här gör du:
 
 ```csharp
 // Sökväg till din dokumentkatalog

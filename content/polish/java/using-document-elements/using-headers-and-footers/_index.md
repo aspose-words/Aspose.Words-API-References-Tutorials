@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Numeracja stron
 
- Możesz umieścić numery stron w nagłówkach i stopkach, korzystając z pól takich jak`PAGE` I`NUMPAGES`. Pola te są automatycznie aktualizowane w miarę dodawania lub usuwania stron.
+ Możesz umieścić numery stron w nagłówkach i stopkach, korzystając z pól takich jak`PAGE`I`NUMPAGES`. Pola te są automatycznie aktualizowane w miarę dodawania lub usuwania stron.
 
 ## 9. Informacje o prawach autorskich w stopkach
 

@@ -12,4 +12,4 @@ Aspose.Words for .NET을 사용하여 Word 문서에서 OpenType 기능을 활�
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [개방형 특징](./open-type-features/) | Aspose.Words for .NET에서 개방형 기능을 활성화하고 사용하는 방법을 알아보세요. |
+| [개방형 특징](./open-type-features/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 OpenType 기능을 활성화하는 방법을 알아보세요. |

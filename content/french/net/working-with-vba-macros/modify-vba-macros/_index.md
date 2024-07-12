@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## Étape 3 : Modifier le code source de la macro
- Nous allons maintenant modifier le code source de la première macro du projet VBA. Remplace le`newSourceCode` variable avec le nouveau code source que vous souhaitez utiliser.
+Nous allons maintenant modifier le code source de la première macro du projet VBA. Remplace le`newSourceCode` variable avec le nouveau code source que vous souhaitez utiliser.
 
 ```csharp
 const string newSourceCode = "Test change source code";

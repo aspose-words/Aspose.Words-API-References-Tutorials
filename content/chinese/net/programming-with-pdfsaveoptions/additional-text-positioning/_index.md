@@ -1,6 +1,6 @@
 ---
-title: 使用附加文本定位功能改进 PDF 文本定位
-linktitle: 使用附加文本定位功能改进 PDF 文本定位
+title: 使用附加文本定位功能改善 PDF 文本定位
+linktitle: 使用附加文本定位功能改善 PDF 文本定位
 second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 将 Word 文档转换为 PDF 时通过附加文本定位来改善 PDF 文本定位。
 type: docs

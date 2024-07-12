@@ -17,7 +17,7 @@ Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder`belgeyle çalışmaya itiraz edin.
+ Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmaya itiraz edin.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 2. Adım: Görüntü Şekli Ekleme
- Kullan`InsertImage` yöntemi`DocumentBuilder` Belgeye bir görüntü şekli eklemek için nesne. Görüntü dosyasının yolunu parametre olarak belirtin.
+ Kullan`InsertImage` yöntemi`DocumentBuilder`Belgeye bir görüntü şekli eklemek için nesne. Görüntü dosyasının yolunu parametre olarak belirtin.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

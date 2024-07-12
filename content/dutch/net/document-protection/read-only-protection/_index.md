@@ -2,114 +2,125 @@
 title: Alleen-lezen-beveiliging in Word-document
 linktitle: Alleen-lezen-beveiliging in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u uw alleen-lezen documenten in Word kunt beveiligen met Aspose.Words voor .NET.
+description: Leer hoe u uw Word-documenten kunt beveiligen door alleen-lezen-beveiliging toe te passen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/document-protection/read-only-protection/
 ---
-In deze zelfstudie begeleiden we u bij de stappen voor het gebruik van de alleen-lezen-beveiligingsfunctie van Aspose.Words voor .NET. Met deze functie kunt u een Word-document alleen-lezen maken om ongeoorloofde wijzigingen te voorkomen. Volg onderstaande stappen:
+## Invoering
 
-## Stap 1: Het document maken en beveiliging toepassen
+Als het gaat om het beheren van Word-documenten, zijn er momenten waarop u ze alleen-lezen moet maken om hun inhoud te beschermen. Of het nu gaat om het delen van belangrijke informatie zonder het risico van onbedoelde bewerkingen of het waarborgen van de integriteit van juridische documenten, alleen-lezen-beveiliging is een waardevolle functie. In deze zelfstudie onderzoeken we hoe u alleen-lezen-beveiliging kunt implementeren in een Word-document met behulp van Aspose.Words voor .NET. We leiden u op een gedetailleerde, boeiende manier door elke stap, zodat u alles gemakkelijk kunt volgen.
 
-Begin met het maken van een exemplaar van de klasse Document en een DocumentBuilder-object:
+## Vereisten
+
+Voordat we in de code duiken, zijn er een paar vereisten die je moet hebben:
+
+1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Je kunt het downloaden van de[Aspose-releasespagina](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Zet een ontwikkelomgeving op waarin .NET is geïnstalleerd. Visual Studio is een goede keuze.
+3. Basiskennis van C#: Deze tutorial gaat ervan uit dat je een basiskennis hebt van programmeren in C#.
+
+## Naamruimten importeren
+
+Laten we er eerst voor zorgen dat de benodigde naamruimten zijn geïmporteerd. Dit is van cruciaal belang omdat het ons toegang geeft tot de klassen en methoden die we nodig hebben vanuit Aspose.Words voor .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Stap 2: Schrijf inhoud naar het document
-Gebruik het DocumentBuilder-object om inhoud naar het document te schrijven:
+## Stap 1: Stel het document in
+
+In deze stap maken we een nieuw document en een documentbuilder. Dit vormt de basis voor onze bedrijfsvoering.
 
 ```csharp
-builder.Write("Open document as read-only");
-```
-
-## Stap 3: Stel het wachtwoord in en maak het document alleen-lezen
-
-Stel een wachtwoord in voor het document met behulp van de eigenschap SetPassword() van het WriteProtection-object:
-
-```csharp
-doc.WriteProtection.SetPassword("MyPassword");
-```
-
-Zorg ervoor dat u "MyPassword" vervangt door het daadwerkelijke wachtwoord dat u wilt gebruiken.
-
-## Stap 4: Alleen-lezen document toepassen
-
-Maak het document alleen-lezen door de eigenschap ReadOnlyRecommended in te stellen op true:
-
-```csharp
-doc.WriteProtection.ReadOnlyRecommended = true;
-```
-
-## Stap 5: Pas alleen-lezen-beveiliging toe en sla het document op
-
-Pas ten slotte alleen-lezen-beveiliging toe met behulp van de Protect()-methode van het Document-object:
-
-```csharp
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-```
-
-Zorg ervoor dat u het juiste pad en de juiste bestandsnaam opgeeft om het beveiligde document op te slaan.
-
-### Voorbeeldbroncode voor alleen-lezen-beveiliging met Aspose.Words voor .NET
-
-Hier is de volledige broncode voor alleen-lezen-beveiliging met Aspose.Words voor .NET:
-
-```csharp
-
 // Het pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
+// Schrijf wat tekst in het document.
 builder.Write("Open document as read-only");
-
-// Voer een wachtwoord in dat maximaal 15 tekens lang is.
-doc.WriteProtection.SetPassword("MyPassword");
-
-// Maak het document als alleen-lezen.
-doc.WriteProtection.ReadOnlyRecommended = true;
-
-// Pas schrijfbeveiliging toe als alleen-lezen.
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-
 ```
 
-Door deze stappen te volgen, kunt u uw documenten eenvoudig beschermen
+Uitleg:
+
+- We beginnen met het definiëren van het mappad waar het document zal worden opgeslagen.
+-  Een nieuwe`Document` object is gemaakt, en a`DocumentBuilder` wordt ermee geassocieerd.
+- Met behulp van de builder voegen we een eenvoudige regel tekst toe aan het document.
+
+## Stap 2: Stel het schrijfbeveiligingswachtwoord in
+
+Vervolgens moeten we een wachtwoord instellen voor schrijfbeveiliging. Dit wachtwoord mag maximaal 15 tekens lang zijn.
+
+```csharp
+//Voer een wachtwoord in dat maximaal 15 tekens lang is.
+doc.WriteProtection.SetPassword("MyPassword");
+```
+
+Uitleg:
+
+-  De`SetPassword` methode wordt aangeroepen op de`WriteProtection` eigendom van het document.
+- Wij verstrekken een wachtwoord (“MyPassword” in dit geval) dat nodig is om de beveiliging op te heffen.
+
+## Stap 3: Alleen-lezen aanbeveling inschakelen
+
+In deze stap maken we het document alleen-lezen aanbevolen. Dit betekent dat wanneer het document wordt geopend, de gebruiker wordt gevraagd het in de alleen-lezenmodus te openen.
+
+```csharp
+// Maak het document als alleen-lezen aanbevolen.
+doc.WriteProtection.ReadOnlyRecommended = true;
+```
+
+Uitleg:
+
+-  De`ReadOnlyRecommended` eigenschap is ingesteld`true`.
+- Hierdoor worden gebruikers gevraagd het document in de alleen-lezenmodus te openen, hoewel ze ervoor kunnen kiezen de aanbeveling te negeren.
+
+## Stap 4: Alleen-lezen-beveiliging toepassen
+
+Ten slotte passen we de alleen-lezen-beveiliging toe op het document. Met deze stap wordt de bescherming afgedwongen.
+
+```csharp
+// Pas schrijfbeveiliging toe als alleen-lezen.
+doc.Protect(ProtectionType.ReadOnly);
+```
+
+Uitleg:
+
+-  De`Protect` methode wordt aangeroepen op het document met`ProtectionType.ReadOnly` als argument.
+- Deze methode dwingt de alleen-lezen-beveiliging af, waardoor wijzigingen aan het document zonder het wachtwoord worden voorkomen.
+
+## Stap 5: Bewaar het document
+
+De laatste stap is het opslaan van het document met de toegepaste beveiligingsinstellingen.
+
+```csharp
+// Sla het beveiligde document op.
+doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
+```
+
+Uitleg:
+
+-  De`Save` methode wordt aangeroepen op het document, waarbij het pad en de naam van het bestand worden opgegeven.
+- Het document wordt opgeslagen met de alleen-lezen-beveiliging.
 
 ## Conclusie
 
-In deze zelfstudie hebben we de alleen-lezen-beveiligingsfunctie van Aspose.Words voor .NET onderzocht, waarmee u Word-documenten alleen-lezen kunt maken om ongeoorloofde wijzigingen te voorkomen. Door de aangegeven stappen te volgen, kunt u eenvoudig alleen-lezen-beveiliging op uw documenten toepassen en de beveiliging ervan verbeteren. Alleen-lezen-beveiliging helpt de integriteit en nauwkeurigheid van de inhoud van uw document te garanderen door de bewerkingsmogelijkheden te beperken. Aspose.Words voor .NET biedt een krachtige en flexibele API voor documentbeveiliging en ondersteunt diverse andere functies om uw Word-documenten aan te passen en te beveiligen.
+En daar heb je het! U hebt met succes een alleen-lezen beveiligd Word-document gemaakt met Aspose.Words voor .NET. Deze functie zorgt ervoor dat de inhoud van uw document intact en ongewijzigd blijft, waardoor een extra beveiligingslaag wordt geboden. Of u nu gevoelige informatie of juridische documenten deelt, alleen-lezen-beveiliging is een onmisbare tool in uw documentbeheerarsenaal.
 
-### Veelgestelde vragen over alleen-lezen-beveiliging in Word-documenten
+## Veelgestelde vragen
 
-#### Vraag: Wat is alleen-lezen-beveiliging in Aspose.Words voor .NET?
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen, converteren en beveiligen met behulp van C# of andere .NET-talen.
 
-A: Alleen-lezen-beveiliging in Aspose.Words voor .NET is een functie waarmee u een Word-document alleen-lezen kunt maken, waardoor ongeoorloofde wijzigingen worden voorkomen. Wanneer een document is ingesteld op alleen-lezen, kunnen gebruikers het document openen en bekijken, maar kunnen ze geen wijzigingen aanbrengen in de inhoud ervan.
+### Kan ik de alleen-lezen-beveiliging van een document verwijderen?
+ Ja, u kunt de alleen-lezen-beveiliging verwijderen met behulp van de`Unprotect` methode en het juiste wachtwoord opgeven.
 
-#### Vraag: Hoe kan ik alleen-lezen-beveiliging toepassen op een Word-document met Aspose.Words voor .NET?
+### Is het wachtwoord dat in het document is ingesteld gecodeerd?
+Ja, Aspose.Words codeert het wachtwoord om de veiligheid van het beveiligde document te garanderen.
 
-A: Om alleen-lezen-beveiliging toe te passen op een Word-document met Aspose.Words voor .NET, kunt u deze stappen volgen:
-1.  Maak een exemplaar van de`Document` klasse en een`DocumentBuilder` voorwerp.
-2.  Gebruik de`DocumentBuilder` om inhoud naar het document te schrijven.
-3.  Stel een wachtwoord in voor het document met behulp van de`SetPassword` werkwijze van de`WriteProtection` voorwerp.
-4.  Stel de`ReadOnlyRecommended` eigendom van de`WriteProtection` bezwaar tegen`true` om aan te bevelen het document als alleen-lezen te openen.
-5.  Pas alleen-lezen-beveiliging toe met behulp van de`Protect` werkwijze van de`Document` object, met vermelding van de`ProtectionType` als`ReadOnly`.
-6.  Sla het beveiligde document op met behulp van de`Save` werkwijze van de`Document` voorwerp.
+### Kan ik andere soorten beveiliging toepassen met Aspose.Words voor .NET?
+Ja, Aspose.Words voor .NET ondersteunt verschillende soorten beveiliging, waaronder het alleen toestaan van opmerkingen, het invullen van formulieren of het bijhouden van wijzigingen.
 
-#### Vraag: Kan ik de alleen-lezen-beveiliging van een Word-document verwijderen met Aspose.Words voor .NET?
-
-A: Ja, u kunt de alleen-lezen-beveiliging van een Word-document verwijderen met Aspose.Words voor .NET. Om dit te doen, kunt u gebruik maken van de`Unprotect` werkwijze van de`Document` class, die alle bestaande bescherming van het document verwijdert.
-
-#### Vraag: Kan ik een ander wachtwoord instellen voor alleen-lezen-beveiliging in een Word-document?
-
- A: Nee, dankzij de alleen-lezen-beveiliging in Aspose.Words voor .NET kunt u niet specifiek een apart wachtwoord instellen voor alleen-lezen-beveiliging. Het wachtwoord dat is ingesteld met behulp van de`SetPassword` werkwijze van de`WriteProtection` object is van toepassing op de algehele documentbeveiliging, inclusief zowel alleen-lezen- als lees-schrijfbeveiliging.
-
-#### Vraag: Kunnen gebruikers de alleen-lezen-beveiliging in een Word-document omzeilen?
-
-A: Alleen-lezen-beveiliging in een Word-document is bedoeld om onbedoelde of ongeoorloofde wijzigingen te ontmoedigen en te voorkomen. Hoewel het een beschermingsniveau biedt, kan het worden omzeild door gebruikers met voldoende technische kennis of bewerkingsrechten. Alleen-lezen-beveiliging dient echter als afschrikmiddel en helpt de integriteit van het document te behouden.
+### Is er een gratis proefversie beschikbaar voor Aspose.Words voor .NET?
+ Ja, u kunt een gratis proefversie downloaden van de[Aspose-releasespagina](https://releases.aspose.com/).

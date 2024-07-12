@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveF
 
 ## Závěr
 
-V této příručce jsme vysvětlili, jak načíst dokument s převodem tvarů na matematické vzorce Office pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Převod tvarů na matematické vzorce Office poskytuje lepší kompatibilitu a prezentaci dokumentů, které obsahují matematické prvky.
+této příručce jsme vysvětlili, jak načíst dokument s převodem tvarů na matematické vzorce Office pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Převod tvarů na matematické vzorce Office poskytuje lepší kompatibilitu a prezentaci dokumentů, které obsahují matematické prvky.
 
 
 ### FAQ

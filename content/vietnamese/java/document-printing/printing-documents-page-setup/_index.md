@@ -75,7 +75,7 @@ Trong bài viết này, chúng tôi đã khám phá cách in tài liệu với t
 
 ### Làm cách nào để thay đổi kích thước giấy của tài liệu của tôi?
 
- Để thay đổi kích thước giấy của tài liệu, hãy sử dụng`setPageWidth` Và`setPageHeight` các phương pháp của`PageSetup` lớp và chỉ định kích thước mong muốn theo điểm.
+ Để thay đổi kích thước giấy của tài liệu, hãy sử dụng`setPageWidth`Và`setPageHeight` các phương pháp của`PageSetup` lớp và chỉ định kích thước mong muốn theo điểm.
 
 ### Tôi có thể in nhiều bản sao của một tài liệu không?
 

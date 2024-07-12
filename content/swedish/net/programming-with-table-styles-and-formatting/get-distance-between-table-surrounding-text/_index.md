@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Steg 3: Få avståndet mellan tabellen och den omgivande texten
- För att få avståndet mellan tabellen och den omgivande texten måste vi komma åt tabellen i dokumentet med hjälp av`GetChild()` metoden och`NodeType.Table` fast egendom. Vi kan sedan visa de olika avstånden med hjälp av arrayegenskaperna`DistanceTop`, `DistanceBottom`, `DistanceRight` och`DistanceLeft`.
+ För att få avståndet mellan tabellen och den omgivande texten måste vi komma åt tabellen i dokumentet med hjälp av`GetChild()` metoden och`NodeType.Table` fast egendom. Vi kan sedan visa de olika avstånden med hjälp av arrayegenskaperna`DistanceTop`, `DistanceBottom`, `DistanceRight`och`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

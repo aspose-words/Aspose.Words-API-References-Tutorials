@@ -69,7 +69,7 @@ Odpověď: Ano, některé knihovny Markdown v knihovnách .NET nabízejí možno
 
 #### Otázka: Jaké jsou doporučené knihovny .NET pro manipulaci s dokumenty Markdown?
 
- A: Doporučené knihovny .NET pro manipulaci s dokumenty Markdown jsou`Markdig` a`CommonMark.NET`. Nabízejí velkou flexibilitu a plnou podporu funkcí Markdown.
+ A: Doporučené knihovny .NET pro manipulaci s dokumenty Markdown jsou`Markdig`a`CommonMark.NET`. Nabízejí velkou flexibilitu a plnou podporu funkcí Markdown.
 
 #### Otázka: Jak se vypořádám s chybami při čtení dokumentu Markdown?
 

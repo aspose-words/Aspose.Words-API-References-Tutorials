@@ -134,7 +134,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Závěr
 
-A tady to máte! Úspěšně jste vložili dokumenty do určitých polí během operace hromadné korespondence pomocí Aspose.Words for .NET. Tato výkonná funkce vám může ušetřit spoustu času a úsilí, zejména při práci s velkými objemy dokumentů. Berte to tak, že máte osobního asistenta, který se za vás postará o veškeré těžké zvedání. Takže do toho a vyzkoušejte to. Šťastné kódování!
+A tady to máte! Úspěšně jste vložili dokumenty do určitých polí během operace hromadné korespondence pomocí Aspose.Words for .NET. Tato výkonná funkce vám může ušetřit spoustu času a úsilí, zejména při práci s velkými objemy dokumentů. Berte to tak, že máte osobního asistenta, který se za vás postará o veškeré těžké zvedání. Takže jděte do toho a vyzkoušejte to. Šťastné kódování!
 
 ## FAQ
 

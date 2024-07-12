@@ -17,7 +17,7 @@ Avant de plonger dans le didacticiel, assurez-vous d'avoir les éléments suivan
 - Connaissance de base de C# : Comprendre la programmation C# facilitera le suivi et la mise en œuvre des étapes.
 -  Aspose.Words for .NET Library : téléchargez et installez la bibliothèque à partir du[lien de téléchargement](https://releases.aspose.com/words/net/).
 - Environnement de développement : configurez un environnement de développement tel que Visual Studio pour écrire et exécuter votre code.
--  Exemple de document : Un exemple de document (par exemple,`Rendering.docx`) avec lequel travailler pendant ce didacticiel.
+- Exemple de document : Un exemple de document (par exemple,`Rendering.docx`) avec lequel travailler pendant ce didacticiel.
 
 ## Importer des espaces de noms
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Étape 5 : Créer la classe de gestionnaire d’avertissements
 
- Pour gérer efficacement les avertissements, créez une classe personnalisée qui implémente le`IWarningCallback` interface. Cette classe capturera et enregistrera tous les avertissements de substitution de police.
+Pour gérer efficacement les avertissements, créez une classe personnalisée qui implémente le`IWarningCallback` interface. Cette classe capturera et enregistrera tous les avertissements de substitution de police.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Vous maîtrisez désormais le processus de gestion de la substitution de polices
 
 ### Q1 : Comment puis-je utiliser les polices de plusieurs répertoires personnalisés ?
 
- Vous pouvez en ajouter plusieurs`FolderFontSource` instances à la`fontSources`répertoriez et mettez à jour les sources de polices en conséquence.
+ Vous pouvez en ajouter plusieurs`FolderFontSource` instances à la`fontSources` répertoriez et mettez à jour les sources de polices en conséquence.
 
 ### Q2 : Où puis-je télécharger un essai gratuit d'Aspose.Words pour .NET ?
 

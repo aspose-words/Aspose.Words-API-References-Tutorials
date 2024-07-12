@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Certifique-se de substituir "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho real para o diretório de documentos.
 
 ## Etapa 3: construindo a tabela aninhada
-A seguir, construiremos a tabela aninhada inserindo células na tabela externa e criando uma nova tabela dentro da primeira célula. Use o seguinte código:
+seguir, construiremos a tabela aninhada inserindo células na tabela externa e criando uma nova tabela dentro da primeira célula. Use o seguinte código:
 
 ```csharp
 // Insira a primeira célula da tabela externa
@@ -82,7 +82,7 @@ Certifique-se de especificar o caminho e o nome do arquivo corretos para o docum
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Esta chamada é importante para criar uma tabela aninhada na primeira tabela.
-	// Sem esta chamada, as células inseridas abaixo serão anexadas à tabela externa.
+	//Sem esta chamada, as células inseridas abaixo serão anexadas à tabela externa.
 	builder.EndTable();
 	// Vá para a primeira célula da tabela externa.
 	builder.MoveTo(cell.FirstParagraph);

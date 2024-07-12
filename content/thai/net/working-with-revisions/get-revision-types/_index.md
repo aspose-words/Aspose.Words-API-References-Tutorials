@@ -35,7 +35,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 ### ตัวอย่างซอร์สโค้ดสำหรับรับประเภทการแก้ไขโดยใช้ Aspose.Words สำหรับ .NET
 
-นี่คือซอร์สโค้ดแบบเต็มสำหรับรับประเภทการแก้ไขในเอกสารโดยใช้ Aspose.Words สำหรับ .NET:
+นี่คือซอร์สโค้ดแบบเต็มสำหรับการรับประเภทการแก้ไขในเอกสารโดยใช้ Aspose.Words สำหรับ .NET:
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");

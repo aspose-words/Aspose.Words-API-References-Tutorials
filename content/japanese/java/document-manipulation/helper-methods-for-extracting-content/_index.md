@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でコンテンツを抽出するためのヘルパー メソッド
 linktitle: コンテンツ抽出のためのヘルパーメソッド
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用して Word 文書からコンテンツを効率的に抽出する方法を学びます。この包括的なガイドで、ヘルパー メソッド、カスタム書式設定などについて説明します。
+description: Aspose.Words for Java を使用して Word 文書からコンテンツを効率的に抽出する方法を学びます。この包括的なガイドで、ヘルパー メソッド、カスタム フォーマットなどについて説明します。
 type: docs
 weight: 14
 url: /ja/java/document-manipulation/helper-methods-for-extracting-content/
@@ -66,7 +66,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     //ドキュメントから抽出している現在のノード。
     Node currNode = startNode;
 
-    //コンテンツの抽出を開始します。すべてのブロックレベルのノードを処理し、特に最初の
+    //コンテンツの抽出を開始します。すべてのブロックレベルのノードを処理し、特に最初のノードを分割します。
     //必要に応じて最後のノードを追加して、段落の書式設定が保持されるようにします。
     //この方法は通常の抽出器よりも少し複雑で、因数分解する必要がある。
     //インライン ノード、フィールド、ブックマークなどを使用して抽出することで、有用になります。

@@ -72,7 +72,7 @@ doc.save(""output.docx"");
 
 ## 結論
 
-恭喜！您已經成功學習如何使用 Aspose.Words for Java 從 DataTable 產生表格。本逐步指南示範了準備 DataTable、在 Word 文件中建立和格式化表格以及儲存最終輸出的過程。 Aspose.Words for Java 提供了強大且靈活的表格處理 API，可以輕鬆管理表格資料並將其合併到您的文字處理專案中。
+恭喜！您已經成功學習如何使用 Aspose.Words for Java 從 DataTable 產生表格。本逐步指南示範了準備 DataTable、在 Word 文件中建立和格式化表格以及儲存最終輸出的過程。 Aspose.Words for Java 為表格處理提供了強大且靈活的 API，可以輕鬆管理表格資料並將其合併到您的文字處理專案中。
 
 透過利用 Aspose.Words 的功能，您可以處理複雜的表格結構、套用自訂格式並將表格無縫整合到文件中。無論您是產生報告、發票或任何其他需要表格表示的文檔，Aspose.Words 都能讓您輕鬆獲得專業結果。
 

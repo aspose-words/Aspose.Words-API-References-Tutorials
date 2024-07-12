@@ -2,70 +2,96 @@
 title: Připojte se na novou stránku
 linktitle: Připojte se na novou stránku
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak spojit dva dokumenty na nové stránce při zachování formátování pomocí Aspose.Words for .NET.
+description: Naučte se spojovat a připojovat dokumenty ve Wordu pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro efektivní slučování dokumentů.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/join-new-page/
 ---
+## Úvod
 
-Tento tutoriál vysvětluje, jak spojit dva dokumenty na nové stránce pomocí Aspose.Words for .NET. Poskytnutý zdrojový kód ukazuje, jak připojit dokument na konec jiného dokumentu při spuštění připojeného dokumentu na nové stránce.
+Při práci s velkými dokumenty nebo slučování více dokumentů do jednoho je zásadní zachování formátování a zajištění přehlednosti. Aspose.Words for .NET poskytuje výkonné nástroje pro programovou manipulaci s dokumenty Wordu a umožňuje vývojářům efektivně provádět složité úkoly.
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Ujistěte se, že máte následující předpoklady:
+Před zahájením tohoto kurzu se ujistěte, že máte následující:
+- Visual Studio nainstalované na vašem počítači.
+-  Aspose.Words pro knihovnu .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Základní znalost programování v C# a prostředí .NET.
 
--  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose.Releases]https://releases.aspose.com/words/net/ nebo k instalaci použijte správce balíčků NuGet.
-- Cesta k adresáři dokumentů, kde jsou umístěny zdrojové a cílové dokumenty.
+## Importovat jmenné prostory
 
-## Krok 2: Otevřete zdrojové a cílové dokumenty
+Nejprve importujte potřebné jmenné prostory do svého projektu C#:
 
- Otevřete zdrojové a cílové dokumenty pomocí`Document` konstruktor třídy. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů.
+```csharp
+using Aspose.Words;
+using System;
+```
+
+Chcete-li připojit a připojit dokumenty, postupujte podle těchto kroků a ujistěte se, že přidaný obsah začíná na nové stránce:
+
+## Krok 1: Nastavte svůj projekt
+
+Začněte vytvořením nové konzolové aplikace C# v sadě Visual Studio. Nainstalujte do svého projektu balíček Aspose.Words NuGet.
+
+## Krok 2: Načtěte zdrojové a cílové dokumenty
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Načtěte zdrojové a cílové dokumenty
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Nastavte začátek nové sekce stránky
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k souborům dokumentů.
 
- Chcete-li začít připojený dokument na nové stránce, nastavte`SectionStart` vlastnost první sekce ve zdrojovém dokumentu na`SectionStart.NewPage`.
+## Krok 3: Nastavte začátek sekce na novou stránku
+
+Nastavte začátek oddílu prvního oddílu ve zdrojovém dokumentu tak, aby začínal na nové stránce:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## Krok 4: Připojte zdrojový dokument
+To zajistí, že připojený obsah začíná na nové stránce v cílovém dokumentu.
 
- Připojte zdrojový dokument k cílovému dokumentu pomocí`AppendDocument` metoda`Document` třída. Nastavte režim formátu importu na`ImportFormatMode.KeepSourceFormatting` pro zachování původních stylů ze zdrojového dokumentu.
+## Krok 4: Připojte zdrojový dokument k cílovému dokumentu
+
+Připojte zdrojový dokument k cílovému dokumentu při zachování původního formátování:
 
 ```csharp
+// Připojte zdrojový dokument pomocí původních stylů nalezených ve zdrojovém dokumentu.
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
 ## Krok 5: Uložte upravený dokument
 
-Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+Uložte upravený cílový dokument do nového souboru:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```
 
-Tím je dokončena implementace spojení dvou dokumentů na nové stránce pomocí Aspose.Words for .NET.
+Tím se uloží kombinovaný dokument s připojeným obsahem začínající na nové stránce.
 
-### Příklad zdrojového kódu pro Join New Page pomocí Aspose.Words pro .NET 
+## Závěr
 
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+V tomto tutoriálu jsme se naučili, jak spojit a připojit dokumenty do souboru aplikace Word pomocí Aspose.Words for .NET. Pomocí těchto kroků můžete efektivně sloučit více dokumentů a zároveň zajistit, aby přidaný obsah začínal na nové stránce, přičemž se zachová původní formátování.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Nastavte připojený dokument tak, aby začínal na nové stránce.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	// Připojte zdrojový dokument pomocí původních stylů nalezených ve zdrojovém dokumentu.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
-```
+## FAQ
+
+### Mohu pomocí Aspose.Words pro .NET připojit více než dva dokumenty?
+Ano, můžete připojit více dokumentů postupně opakováním operace připojení pro každý dokument.
+
+### Jak mohu zvládnout konflikty formátování dokumentu během přidávání?
+Aspose.Words poskytuje různé režimy importu pro řešení konfliktů formátování, jako je zachování zdrojového formátování nebo použití cílového formátování.
+
+### Podporuje Aspose.Words připojování dokumentů s různými jazyky nebo kódováním?
+Ano, Aspose.Words zvládá připojování dokumentů bez ohledu na jazyk nebo kódování a zajišťuje bezproblémovou integraci.
+
+### Je možné připojit dokumenty obsahující makra nebo pole formuláře?
+Aspose.Words podporuje připojování dokumentů pomocí maker a polí formuláře, přičemž zachovává jejich funkčnost ve sloučeném dokumentu.
+
+### Mohu automatizovat úlohy připojování dokumentů v dávkovém procesu pomocí Aspose.Words?
+Aspose.Words for .NET vám umožňuje automatizovat úlohy připojování dokumentů v dávkových procesech, což zvyšuje produktivitu při správě dokumentů.

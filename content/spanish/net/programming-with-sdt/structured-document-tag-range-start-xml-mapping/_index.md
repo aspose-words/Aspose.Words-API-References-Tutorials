@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-sdt/structured-document-tag-range-start-xml-mapping/
 ---
 
-Este tutorial explica cómo configurar la asignación XML para un rango de etiquetas de documento estructurado que comienza en un documento de Word usando Aspose.Words para .NET. El mapeo XML le permite mostrar partes específicas de una fuente de datos XML dentro del control de contenido.
+Este tutorial explica cómo configurar la asignación XML para un inicio de rango de etiquetas de documento estructurado en un documento de Word usando Aspose.Words para .NET. El mapeo XML le permite mostrar partes específicas de una fuente de datos XML dentro del control de contenido.
 
 ## Requisitos previos
 Para seguir este tutorial, necesita tener lo siguiente:
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Paso 2: cargue el documento y cree la parte XML
- Cargue el documento de Word usando el`Document` constructor, pasando la ruta al documento como parámetro. Cree una parte XML que contenga los datos que desea mostrar dentro de la etiqueta del documento estructurado.
+ Cargue el documento de Word usando el`Document`constructor, pasando la ruta al documento como parámetro. Cree una parte XML que contenga los datos que desea mostrar dentro de la etiqueta del documento estructurado.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Cree una StructuredDocumentTag que mostrará el contenido de nuestro CustomXmlPart en el documento.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Si configuramos una asignación para nuestra StructuredDocumentTag,
-	// solo mostrará una parte de CustomXmlPart a la que apunta XPath.
+	//solo mostrará una parte de CustomXmlPart a la que apunta XPath.
 	// Este XPath apuntará al segundo elemento "<text>" del contenido del primer elemento "<root>" de nuestro CustomXmlPart.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

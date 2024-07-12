@@ -15,7 +15,7 @@ url: /zh/java/document-styling/document-watermarking-page-setup/
 
 ### 添加水印
 
-在文档中添加水印对于品牌推广或保护内容至关重要。Aspose.Words for Java 使这项任务变得简单。操作方法如下：
+在文档中添加水印对于品牌推广或内容保护至关重要。Aspose.Words for Java 使这项任务变得简单。操作方法如下：
 
 ```java
 //加载文档

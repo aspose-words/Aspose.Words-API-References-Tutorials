@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hier maken we een exemplaar van`Document` En`DocumentBuilder` . Denken aan`Document` als uw lege Word-document en`DocumentBuilder` als uw pen.
+ Hier maken we een exemplaar van`Document`En`DocumentBuilder` . Denken aan`Document` als uw lege Word-document en`DocumentBuilder` als uw pen.
 
 ## Stap 2: Ga naar Document Start
 

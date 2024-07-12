@@ -12,7 +12,7 @@ Bent u klaar om aan een reis te beginnen om de kunst onder de knie te krijgen va
 
 ## Invoering
 
-Aspose.Words voor Java is een game-changer als het gaat om programmatisch werken met Word-documenten. Of u nu een doorgewinterde Java-ontwikkelaar bent of net begint met coderen, deze gids leidt u door het proces van het extraheren van documentinhoud per pagina, waardoor u waardevolle vaardigheden krijgt voor verschillende toepassingen.
+Aspose.Words voor Java is een game-changer als het gaat om programmatisch werken met Word-documenten. Of u nu een doorgewinterde Java-ontwikkelaar bent of net begint met coderen, deze handleiding leidt u door het proces van het extraheren van documentinhoud per pagina, waardoor u waardevolle vaardigheden krijgt voor verschillende toepassingen.
 
 ## Aan de slag
 

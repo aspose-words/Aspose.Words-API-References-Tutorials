@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: A fő dokumentum betöltése
 
-Ezután töltse be a fő dokumentumot. Ez a dokumentum tartalmazza azokat az egyesítési mezőket, amelyekbe más dokumentumok kerülnek beszúrásra.
+Ezután töltse be a fő dokumentumot. Ez a dokumentum tartalmazza azokat az egyesítési mezőket, amelyekbe más dokumentumokat is beillesztenek.
 
 ```csharp
 Document mainDoc = new Document(dataDir + "Document insertion 1.docx");

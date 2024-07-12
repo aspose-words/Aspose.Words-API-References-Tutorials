@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Posicionando caixas de texto
 
- Controlar a posição das caixas de texto é crucial para obter o layout desejado. Você pode definir a posição usando o`left` e`top` propriedades. Por exemplo:
+ Controlar a posição das caixas de texto é crucial para obter o layout desejado. Você pode definir a posição usando o`left`e`top` propriedades. Por exemplo:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ Neste guia, exploramos o processo de aprimoramento de conteúdo visual com caixa
 
 ### Como faço para redimensionar uma caixa de texto?
 
- Para redimensionar uma caixa de texto, você pode ajustar suas propriedades de largura e altura usando o botão`width` e`height` atributos.
+ Para redimensionar uma caixa de texto, você pode ajustar suas propriedades de largura e altura usando o botão`width`e`height` atributos.
 
 ### Posso girar uma caixa de texto?
 

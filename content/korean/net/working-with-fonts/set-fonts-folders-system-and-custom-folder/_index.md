@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Aspose.Words가 다음 폴더에서 글꼴을 검색하도록 지시하는 새 폴더 소스를 추가합니다.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//기존 글꼴 소스 목록에 글꼴이 포함된 사용자 정의 폴더를 추가합니다.
+// 기존 글꼴 소스 목록에 글꼴이 포함된 사용자 정의 폴더를 추가합니다.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

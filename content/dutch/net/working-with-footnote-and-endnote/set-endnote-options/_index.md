@@ -85,7 +85,7 @@ U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw spec
 
 #### Vraag: Is het mogelijk om de nummering van eindnoten in een document aan te passen?
 
- A: Ja, het is mogelijk om de nummering van eindnoten in een document aan te passen. U kunt gebruik maken van de`RestartRule` En`NumberStyle` eigenschappen van de`EndnoteOptions` class om specifieke herstartregels en nummeringsstijlen te definiëren.
+ A: Ja, het is mogelijk om de nummering van eindnoten in een document aan te passen. U kunt gebruik maken van de`RestartRule`En`NumberStyle` eigenschappen van de`EndnoteOptions` class om specifieke herstartregels en nummeringsstijlen te definiëren.
 
 #### Vraag: Hoe kan ik eindnoten in een document plaatsen?
 

@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
-這段程式碼使用了`ConvertUtil`Aspose.Words 類別將指定值轉換為英吋 (`InchToPoint` ）。您也可以使用其他可用的轉換方法`ConvertUtil`類別將值轉換為其他測量單位。
+這段程式碼使用了`ConvertUtil`Aspose.Words 類別將指定值轉換為英吋 (`InchToPoint`）。您也可以使用其他可用的轉換方法`ConvertUtil`類別將值轉換為其他測量單位。
 
 ### 使用 Aspose.Words for .NET 在測量單位之間轉換的範例原始碼
 

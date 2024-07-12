@@ -2,168 +2,95 @@
 title: Negeer tekst in velden
 linktitle: Negeer tekst in velden
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de functie 'Tekst in velden negeren' van Aspose.Words voor .NET gebruikt.
+description: Leer hoe u tekst in velden in Word-documenten kunt manipuleren met Aspose.Words voor .NET. Deze tutorial biedt stapsgewijze begeleiding met praktische voorbeelden.
 type: docs
 weight: 10
 url: /nl/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-In dit artikel zullen we de bovenstaande C#-broncode verkennen om te begrijpen hoe u de functie Tekst binnen velden negeren in de Aspose.Words voor .NET-bibliotheek kunt gebruiken. Deze functie is handig als we de tekst in de velden willen negeren bij het manipuleren van documenten.
+## Invoering
+
+In deze zelfstudie gaan we dieper in op het manipuleren van tekst in velden in Word-documenten met behulp van Aspose.Words voor .NET. Aspose.Words biedt robuuste functies voor documentverwerking, waardoor ontwikkelaars taken efficiënt kunnen automatiseren. Hier concentreren we ons op het negeren van tekst in velden, een veel voorkomende vereiste in scenario's voor documentautomatisering.
 
 ## Vereisten
 
-- Basiskennis van de C#-taal.
-- .NET-ontwikkelomgeving met Aspose.Words-bibliotheek geïnstalleerd.
+Voordat we beginnen, zorg ervoor dat u het volgende hebt ingesteld:
+- Visual Studio is op uw computer geïnstalleerd.
+- Aspose.Words voor .NET-bibliotheek geïntegreerd in uw project.
+- Basiskennis van programmeren in C# en de .NET-omgeving.
 
-## Stap 1: Een nieuw document maken
+## Naamruimten importeren
 
- Voordat we tekst in velden gaan manipuleren, moeten we een nieuw document maken met Aspose.Words voor .NET. Dit kan gedaan worden door het instantiëren van een`Document` voorwerp:
-
+Om aan de slag te gaan, neemt u de benodigde naamruimten op in uw C#-project:
 ```csharp
-Document doc = new Document();
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.FindReplace;
+using System;
+using System.Text.RegularExpressions;
 ```
 
-## Stap 2: Een veld met tekst erin invoegen
+## Stap 1: Maak een nieuw document en een nieuwe bouwer
 
- Zodra we een document hebben, kunnen we een veld met tekst erin invoegen met behulp van a`DocumentBuilder` voorwerp. Om bijvoorbeeld een veld "INCLUDETEXT" in te voegen met de tekst "Tekst in veld", kunnen we de`InsertField` methode:
-
+ Initialiseer eerst een nieuw Word-document en a`DocumentBuilder`object om de constructie van documenten te vergemakkelijken:
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## Stap 2: Voeg een veld met tekst in
+
+ Gebruik de`InsertField` methode van`DocumentBuilder` om een veld met tekst toe te voegen:
+```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## Stap 3: Gebruik de functie Tekst in velden negeren
+## Stap 3: Negeer tekst in velden
 
- Om tekst in velden bij volgende bewerkingen te negeren, kunnen we a gebruiken`FindReplaceOptions` bezwaar maken en instellen`IgnoreFields`eigendom aan`true`:
-
+ Om tekst te manipuleren terwijl de inhoud binnen velden wordt genegeerd, gebruikt u`FindReplaceOptions` met de`IgnoreFields` eigenschap ingesteld`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
-## Stap 4: Reguliere expressies gebruiken voor zoeken en vervangen
+## Stap 4: Voer tekstvervanging uit
 
-Om zoek- en vervangbewerkingen op de tekst van het document uit te voeren, zullen we reguliere expressies gebruiken. In ons voorbeeld zoeken we naar alle exemplaren van de letter "e" en vervangen we deze door een asterisk "* ". We zullen .NET's gebruiken`Regex` klasse hiervoor:
-
+Gebruik reguliere expressies voor tekstvervanging. Hier vervangen we de letters 'e' door een asterisk '*' binnen het bereik van het document:
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Stap 5: De gewijzigde documentuitvoer bekijken
+## Stap 5: Gewijzigde documenttekst uitvoeren
 
- Na het toepassen van zoeken en vervangen kunnen we de gewijzigde inhoud van het document weergeven met behulp van de`GetText` methode:
-
+Haal de gewijzigde tekst op en druk deze af om de uitgevoerde vervangingen te verifiëren:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## Stap 6: Opties wijzigen om velden op te nemen
+## Stap 6: Neem tekst op in velden
 
- we nemen de tekst in de velden op in het uitvoerresultaat, we kunnen de opties wijzigen om de velden niet te negeren. Hiervoor stellen we de`IgnoreFields`eigendom aan`false`:
-
+ Als u tekst in velden wilt verwerken, stelt u de instellingen opnieuw in`IgnoreFields`eigendom aan`false` en voer de vervangingshandeling opnieuw uit:
 ```csharp
 options.IgnoreFields = false;
-```
-
-## Stap 7: Het gewijzigde document met de velden weergeven
-
-Nadat we de opties hebben gewijzigd, kunnen we het zoeken en vervangen opnieuw uitvoeren om het resultaat te krijgen met de tekst in de opgenomen velden:
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-### Voorbeeldbroncode voor het negeren van tekst in velden met Aspose.Words voor .NET
-
-Hier is de volledige voorbeeldbroncode om het gebruik van de functie Ignore Text Inside Fields met Aspose.Words voor .NET te demonstreren:
-
-```csharp
-    
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Veld invoegen met tekst erin.
-	builder.InsertField("INCLUDETEXT", "Text in field");
-	
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-	
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreFields = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-  
 ```
 
 ## Conclusie
 
-In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de functie Tekst binnen velden negeren in Aspose.Words voor .NET kunt gebruiken. We volgden een stapsgewijze handleiding om een document te maken, een veld met tekst erin in te voegen, de functie Tekst in velden negeren te gebruiken, zoek- en vervangingsbewerkingen uit te voeren met reguliere expressies en het gewijzigde document weer te geven.
+In deze zelfstudie hebben we onderzocht hoe u tekst in velden in Word-documenten kunt manipuleren met Aspose.Words voor .NET. Deze mogelijkheid is essentieel voor scenario's waarin veldinhoud speciale behandeling vereist tijdens het programmatisch verwerken van documenten.
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is de functie "Tekst in velden negeren" in Aspose.Words voor .NET?
+### Hoe ga ik om met geneste velden binnen Word-documenten?
+Geneste velden kunnen worden beheerd door recursief door de inhoud van het document te navigeren met behulp van de API van Aspose.Words.
 
-A: Met de functie "Tekst in velden negeren" in Aspose.Words voor .NET kunt u opgeven of de tekst in velden moet worden genegeerd tijdens bepaalde bewerkingen, zoals het zoeken en vervangen van tekst. Wanneer deze functie is ingeschakeld, wordt er tijdens bewerkingen geen rekening gehouden met de tekst in de velden.
+### Kan ik voorwaardelijke logica toepassen om tekst selectief te vervangen?
+Ja, met Aspose.Words kunt u voorwaardelijke logica implementeren met behulp van FindReplaceOptions om tekstvervanging te beheren op basis van specifieke criteria.
 
-#### Vraag: Hoe kan ik een nieuw document maken met Aspose.Words voor .NET?
+### Is Aspose.Words compatibel met .NET Core-applicaties?
+Ja, Aspose.Words ondersteunt .NET Core, waardoor platformonafhankelijke compatibiliteit voor uw documentautomatiseringsbehoeften wordt gegarandeerd.
 
- A: Om een nieuw document te maken met Aspose.Words voor .NET, kunt u een`Document` voorwerp. Hier is een voorbeeld van C#-code om een nieuw document te maken:
+### Waar kan ik meer voorbeelden en bronnen voor Aspose.Words vinden?
+ Bezoek[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) voor uitgebreide handleidingen, API-referenties en codevoorbeelden.
 
-```csharp
-Document doc = new Document();
-```
-
-#### Vraag: Hoe kan ik een veld met tekst in een document invoegen met Aspose.Words voor .NET?
-
- A: Zodra u een document heeft, kunt u een veld met tekst erin invoegen met behulp van a`DocumentBuilder` voorwerp. Als u bijvoorbeeld een veld "INCLUDETEXT" wilt invoegen met de tekst "Tekst in veld", kunt u de`InsertField` methode:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.InsertField("INCLUDETEXT", "Text in field");
-```
-
-#### Vraag: Hoe kan ik tekst in velden in Aspose.Words voor .NET negeren?
-
- A: Om tekst in velden te negeren tijdens volgende bewerkingen, kunt u een`FindReplaceOptions` bezwaar maken en instellen`IgnoreFields`eigendom aan`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-```
-
-#### Vraag: Hoe kan ik zoeken en vervangen met reguliere expressies in Aspose.Words voor .NET?
-
- A: Om zoek- en vervangbewerkingen uit te voeren op de tekst van het document met behulp van reguliere expressies, kunt u .NET gebruiken`Regex` klas. Als u bijvoorbeeld wilt zoeken naar alle exemplaren van de letter 'e' en deze wilt vervangen door een asterisk '* ", kunt u een`Regex` object en gebruik het met de`Replace` methode:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### Vraag: Hoe kan ik de gewijzigde uitvoer van het document bekijken in Aspose.Words voor .NET?
-
- A: Nadat u zoek- en vervangbewerkingen hebt toegepast, kunt u de gewijzigde inhoud van het document bekijken met behulp van de`GetText` methode:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### Vraag: Hoe kan ik de velden opnemen in het uitvoerresultaat in Aspose.Words voor .NET?
-
- A: Om de tekst in de velden in het uitvoerresultaat op te nemen, kunt u de opties zo wijzigen dat de velden niet worden genegeerd. Hiervoor kunt u de`IgnoreFields` eigendom van de`FindReplaceOptions` bezwaar tegen`false`:
-
-```csharp
-options.IgnoreFields = false;
-```
-
-#### Vraag: Hoe kan ik het gewijzigde document met de velden in Aspose.Words voor .NET weergeven?
-
-A: Nadat u de opties heeft gewijzigd om velden op te nemen, kunt u het zoeken en vervangen opnieuw uitvoeren om het resultaat te krijgen met de tekst binnen de velden:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Hoe kan ik technische ondersteuning krijgen voor Aspose.Words?
+ Voor technische ondersteuning kunt u terecht op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) waar u uw vragen kunt posten en kunt communiceren met de community.

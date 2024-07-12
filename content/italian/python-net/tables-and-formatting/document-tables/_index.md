@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Aggiunta di intestazioni e piè di pagina alle tabelle:
 
- Le tabelle possono trarre vantaggio dall'avere intestazioni e piè di pagina che forniscono contesto o informazioni aggiuntive. Puoi aggiungere intestazioni e piè di pagina alle tabelle utilizzando il file`Table.title` E`Table.description` proprietà.
+ Le tabelle possono trarre vantaggio dall'avere intestazioni e piè di pagina che forniscono contesto o informazioni aggiuntive. Puoi aggiungere intestazioni e piè di pagina alle tabelle utilizzando il file`Table.title`E`Table.description` proprietà.
 
 ```python
 # Set table title (header)

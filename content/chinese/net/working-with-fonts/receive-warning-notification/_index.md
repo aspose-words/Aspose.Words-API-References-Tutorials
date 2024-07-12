@@ -112,6 +112,6 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 访问[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8)寻求帮助。
 
-### Q5：是否可以获得Aspose.Words的临时许可证？
+### Q5：可以获得 Aspose.Words 的临时许可证吗？
 
 是的，你可以从[临时执照页面](https://purchase.aspose.com/temporary-license/).

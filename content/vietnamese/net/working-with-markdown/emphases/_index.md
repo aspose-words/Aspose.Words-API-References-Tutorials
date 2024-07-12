@@ -113,7 +113,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### Hỏi: Chúng ta có thể kết hợp các điểm nổi bật khác nhau trong cùng một văn bản không?
 
- Đáp: Có, có thể kết hợp các điểm nổi bật khác nhau trong cùng một văn bản. Ví dụ: bạn có thể in đậm và in nghiêng một từ bằng cách sử dụng cả hai`**` Và`*` Vòng quanh thế giới.
+ Đáp: Có, có thể kết hợp các điểm nổi bật khác nhau trong cùng một văn bản. Ví dụ: bạn có thể in đậm và in nghiêng một từ bằng cách sử dụng cả hai`**`Và`*` Vòng quanh thế giới.
 
 #### Câu hỏi: Những tùy chọn đánh dấu nào có sẵn trong Markdown?
 

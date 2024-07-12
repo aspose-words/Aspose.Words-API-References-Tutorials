@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. Um den Code zum Einfügen eines OLE-Objekts als Symbol aus einem Stream in Ihr Projekt einzubetten, führen Sie die folgenden Schritte aus:
 -  Importieren Sie die notwendigen Referenzen durch Hinzufügen der entsprechenden`using` Aussagen.
--  Erstellen Sie ein neues Dokument und einen Dokumentgenerator mit dem`Document` Und`DocumentBuilder` Klassen.
+-  Erstellen Sie ein neues Dokument und einen Dokumentgenerator mit dem`Document`Und`DocumentBuilder` Klassen.
 - Verwenden Sie den Code zum Einfügen des OLE-Objekts als Symbol aus einem Stream.
 -  Speichern Sie das Dokument mit dem`Save` Methode mit dem entsprechenden Zielpfad.
 

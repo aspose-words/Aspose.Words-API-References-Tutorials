@@ -113,7 +113,7 @@ R: Per evidenziare il testo utilizzando Markdown, circonda semplicemente il test
 
 #### D: Possiamo combinare diversi punti salienti nello stesso testo?
 
- R: Sì, è possibile combinare diversi punti salienti nello stesso testo. Ad esempio, puoi mettere in grassetto e in corsivo una parola utilizzando entrambi`**` E`*` intorno alla parola.
+ R: Sì, è possibile combinare diversi punti salienti nello stesso testo. Ad esempio, puoi mettere in grassetto e in corsivo una parola utilizzando entrambi`**`E`*` intorno alla parola.
 
 #### D: Quali opzioni di evidenziazione sono disponibili in Markdown?
 

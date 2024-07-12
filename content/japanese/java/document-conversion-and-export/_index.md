@@ -39,4 +39,4 @@ Aspose.Words for Java のドキュメント シェイプのパワーを解き放
 ### [Aspose.Words for Java でドキュメントに透かしを使用する](./using-watermarks-to-documents/)
 Aspose.Words for Java でドキュメントに透かしを追加する方法を学びます。テキストと画像の透かしをカスタマイズして、プロフェッショナルな外観のドキュメントを作成します。
 ### [Aspose.Words for Java でのテーブルとテーブル スタイルの書式設定](./formatting-tables-and-table-styles/)
-Aspose.Words for Java でテーブルをフォーマットし、テーブル スタイルを適用する方法を学びます。効果的なテーブル フォーマットのためのソース コードを含むステップ バイ ステップ ガイドを調べます。Aspose.Words を使用してドキュメント レイアウトを強化します。
+Aspose.Words for Java でテーブルをフォーマットし、テーブル スタイルを適用する方法を学びます。効果的なテーブル フォーマットのためのソース コード付きのステップ バイ ステップ ガイドを調べます。Aspose.Words を使用してドキュメント レイアウトを強化します。

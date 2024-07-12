@@ -42,7 +42,7 @@ textBox. Next = null;
 
 ## ステップ5: TextBoxにつながるリンクを解除する
 
-場合によっては、TextBoxシェイプにつながるリンクを解除する必要があります。これは、`BreakForwardLink()`方法`Previous`フォームは TextBox へのリンクを切断します。このようなリンクを切断する方法の例を次に示します。
+場合によっては、TextBoxシェイプにつながるリンクを解除する必要があります。これは、`BreakForwardLink()`方法`Previous`フォームでは、TextBox へのリンクが切断されます。このようなリンクを切断する方法の例を次に示します。
 
 ```csharp
 textBox.Previous?.BreakForwardLink();

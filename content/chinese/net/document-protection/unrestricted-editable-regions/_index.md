@@ -2,120 +2,133 @@
 title: Word 文档中不受限制的可编辑区域
 linktitle: Word 文档中不受限制的可编辑区域
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建不受限制的可编辑区域。
+description: 通过本全面的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中创建不受限制的可编辑区域。
 type: docs
 weight: 10
 url: /zh/net/document-protection/unrestricted-editable-regions/
 ---
-在本教程中，我们将指导您完成使用 Aspose.Words for .NET 的不受限制的可编辑区域功能的步骤。此功能允许您在 Word 文档中定义可以不受限制地编辑内容的区域，即使文档的其余部分是只读的。请按照以下步骤操作：
+## 介绍
 
-## 步骤 1：加载文档并设置保护
+如果您曾经想要保护 Word 文档但仍允许某些部分可编辑，那么您来对地方了！本指南将引导您完成使用 Aspose.Words for .NET 在 Word 文档中设置不受限制的可编辑区域的过程。我们将涵盖从先决条件到详细步骤的所有内容，确保您拥有顺畅的体验。准备好了吗？让我们开始吧！
 
-首先加载现有文档：
+## 先决条件
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+在开始之前，请确保您已准备好以下内容：
 
-通过设置只读保护类型和密码来保护文档
+1.  Aspose.Words for .NET：如果您还没有下载，请下载[这里](https://releases.aspose.com/words/net/).
+2. 有效的 Aspose 许可证：您可以获得临时许可证[这里](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio：任何最新版本都应该可以正常工作。
+4. C# 和 .NET 的基本知识：这将帮助您跟随代码。
 
-## 步骤 2：创建可编辑区域
+现在您已一切就绪，让我们进入有趣的部分！
 
-首先使用 EditableRangeStart 和 EditableRangeEnd 对象创建可编辑区域：
+## 导入命名空间
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-//为我们刚刚创建的 EditableRangeStart 创建一个 EditableRange 对象。
-EditableRange editableRange = edRangeStart.EditableRange;
-
-//将一些内容放入可编辑范围内。
-builder.Writeln("Paragraph inside first editable range");
-
-//如果可编辑范围具有起点和终点，则该范围是格式正确的。
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## 步骤 3：在可编辑区域之外添加内容
-
-您可以在可编辑区域之外添加内容，这些内容将保持只读状态：
+要开始使用 Aspose.Words for .NET，您需要导入必要的命名空间。操作方法如下：
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## 步骤 4：保存文档
+## 步骤 1：设置项目
 
-最后保存修改后的文档：
+首先，让我们在 Visual Studio 中创建一个新的 C# 项目。
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. 打开 Visual Studio：首先打开 Visual Studio 并创建一个新的控制台应用程序项目。
+2. 安装 Aspose.Words：使用 NuGet 包管理器安装 Aspose.Words。您可以通过在包管理器控制台中运行以下命令来执行此操作：
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-确保指定正确的路径和文件名来保存具有可编辑区域的文档。
+## 步骤 2：加载文档
 
-### 使用 Aspose.Words for .NET 的无限制可编辑区域的示例源代码
+现在，让我们加载要保护的文档。确保您的目录中已准备好 Word 文档。
 
-以下是使用 Aspose.Words for .NET 的不受限制的可编辑区域的完整源代码：
+1. 设置文档目录：定义文档目录的路径。
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2. 加载文档：使用`Document`类来加载你的Word文档。
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-//文档目录的路径。
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-//上传文档并将其设为只读。
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## 步骤 3：保护文档
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+接下来，我们将文档设置为只读。这将确保没有密码就无法进行任何更改。
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1. 初始化 DocumentBuilder：创建一个实例`DocumentBuilder`对文档进行更改。
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. 设置保护级别：使用密码保护文档。
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. 添加只读文本：插入只读文本。
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-//开始可编辑范围。
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-//为我们刚刚创建的 EditableRangeStart 创建一个 EditableRange 对象。
-EditableRange editableRange = edRangeStart.EditableRange;
+## 步骤 4：创建可编辑范围
 
-//将一些内容放入可编辑范围内。
-builder.Writeln("Paragraph inside first editable range");
+奇迹就在这里发生。我们将在文档中创建一些部分，尽管整体上是只读保护，但这些部分仍可编辑。
 
-//如果可编辑范围具有起点和终点，则该范围是格式正确的。
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. 开始可编辑范围：定义可编辑范围的开始。
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2. 创建可编辑范围对象：`EditableRange`对象将被自动创建。
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. 插入可编辑文本：在可编辑范围内添加文本。
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## 步骤 5：关闭可编辑范围
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+如果没有结束，可编辑范围就不完整。接下来让我们添加结束。
 
-```
-通过遵循这些步骤，您可以使用 Aspose.Words for .NET 轻松地在 Word 文档中创建不受限制的可编辑区域。
+1. 结束可编辑范围：定义可编辑范围的结束。
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. 添加范围外的只读文本：在可编辑范围外插入文本以显示保护。
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## 步骤6：保存文档
+
+最后，让我们保存应用了保护和可编辑区域的文档。
+
+1. 保存文档：使用`Save`方法保存修改后的文档。
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 在 Word 文档中创建不受限制的可编辑区域。按照提供的步骤，您可以定义文档内的特定区域，用户可以自由编辑内容，同时保持文档的其余部分为只读。Aspose.Words for .NET 提供了强大的文档保护和自定义功能，让您可以控制 Word 文档的编辑功能。
 
-### Word 文档中不受限制的可编辑区域的常见问题解答
+就这样！您已成功使用 Aspose.Words for .NET 在 Word 文档中创建了不受限制的可编辑区域。此功能对于协作环境非常有用，在协作环境中，文档的某些部分需要保持不变，而其他部分可以编辑。 
 
-#### 问：Aspose.Words for .NET 中不受限制的可编辑区域是什么？
+尝试更复杂的场景和不同的保护级别，以充分利用 Aspose.Words。如果您有任何疑问或遇到问题，请随时查看[文档](https://reference.aspose.com/words/net/)或联系[支持](https://forum.aspose.com/c/words/8).
 
-答：Aspose.Words for .NET 中的不受限制的可编辑区域是 Word 文档中的区域，即使文档的其余部分设置为只读，也可以不受任何限制地编辑内容。这些区域提供了一种定义文档特定部分的方法，用户可以修改这些部分，同时保持文档的整体保护。
+## 常见问题解答
 
-#### 问：如何使用 Aspose.Words for .NET 创建不受限制的可编辑区域？
+### 一个文档中可以有多个可编辑区域吗？
+是的，您可以通过在文档的不同部分开始和结束可编辑范围来创建多个可编辑区域。
 
-答：要使用 Aspose.Words for .NET 在 Word 文档中创建不受限制的可编辑区域，您可以按照以下步骤操作：
-1. 使用加载现有文档`Document`班级。
-2. 使用将文档保护设置为只读`Protect`方法`Document`目的。
-3. 使用`DocumentBuilder`类来创建可编辑范围，方法是添加`EditableRangeStart`对象和`EditableRangeEnd`目的。
-4. 使用`DocumentBuilder`.
-5. 使用保存修改后的文档`Save`方法`Document`目的。
+### Aspose.Words 中还有哪些其他保护类型？
+Aspose.Words 支持各种保护类型，例如 AllowOnlyComments、AllowOnlyFormFields 和 NoProtection。
 
-#### 问：Word 文档中可以有多个不受限制的可编辑区域吗？
+### 是否可以取消文档的保护？
+是的，您可以使用`Unprotect`方法并提供正确的密码。
 
-答：是的，Word 文档中可以有多个不受限制的可编辑区域。为此，您可以创建多组`EditableRangeStart`和`EditableRangeEnd`使用的对象`DocumentBuilder`类。每组对象都会定义一个单独的可编辑区域，用户可以不受任何限制地修改其中的内容。
+### 我可以为不同的部分指定不同的密码吗？
+不，文档级保护对整个文档应用单一密码。
 
-#### 问：我可以将可编辑区域嵌套在一起吗？
-
-答：不可以，您不能使用 Aspose.Words for .NET 将可编辑区域嵌套在一起。每个可编辑区域由`EditableRangeStart`和`EditableRangeEnd`对应独立，且不得重叠或嵌套在另一个可编辑区域内。不支持嵌套的可编辑区域。
-
-#### 问：我可以删除文档可编辑区域内的只读保护吗？
-
-答：不可以，您无法在可编辑区域内取消文档的只读保护。只读保护适用于整个文档，无法在特定可编辑区域内选择性取消。可编辑区域的目的是允许修改内容，同时保持整个文档为只读。
+### 如何申请 Aspose.Words 的许可证？
+您可以通过从文件或流中加载来应用许可证。查看文档了解详细步骤。

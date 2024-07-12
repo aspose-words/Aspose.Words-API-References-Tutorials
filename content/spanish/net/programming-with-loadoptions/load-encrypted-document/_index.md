@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Cargue un documento cifrado con la contraseña especificada
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Guarde un documento cifrado con una nueva contraseña
+//Guarde un documento cifrado con una nueva contraseña
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

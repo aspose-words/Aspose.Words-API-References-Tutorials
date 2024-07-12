@@ -62,7 +62,7 @@ Itu saja ! Anda telah berhasil mengaktifkan pembaruan properti "Terakhir Dicetak
 ```
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelaskan cara memperbarui properti "Terakhir Dicetak" dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang diberikan, Anda dapat dengan mudah mengonfigurasi opsi untuk memperbarui properti "Terakhir Dicetak" saat mengonversi dokumen ke PDF. Gunakan fitur ini untuk melacak penggunaan dokumen dan informasi terkait.
+Dalam tutorial ini, kami menjelaskan cara memperbarui properti "Terakhir Dicetak" di dokumen PDF menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang diberikan, Anda dapat dengan mudah mengonfigurasi opsi untuk memperbarui properti "Terakhir Dicetak" saat mengonversi dokumen ke PDF. Gunakan fitur ini untuk melacak penggunaan dokumen dan informasi terkait.
 
 ### Pertanyaan yang Sering Diajukan
 

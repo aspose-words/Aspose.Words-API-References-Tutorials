@@ -2,7 +2,7 @@
 title: セルの書式を変更する
 linktitle: セルの書式を変更する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してテーブル内のセルの書式設定を変更するためのステップ バイ ステップ ガイド。
+description: Aspose.Words for .NET を使用してテーブル内のセルの書式を変更するためのステップ バイ ステップ ガイド。
 type: docs
 weight: 10
 url: /ja/net/programming-with-table-styles-and-formatting/modify-cell-formatting/

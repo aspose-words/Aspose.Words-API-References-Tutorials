@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-document-options-and-settings/document-page-setup/
 ---
 
-W tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby skonfigurować układ dokumentu za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia ustawienie trybu układu, liczby znaków w wierszu i liczby wierszy na stronie.
+tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby skonfigurować układ dokumentu za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia ustawienie trybu układu, liczby znaków w wierszu i liczby wierszy na stronie.
 
 ## Krok 1: Konfiguracja projektu
 

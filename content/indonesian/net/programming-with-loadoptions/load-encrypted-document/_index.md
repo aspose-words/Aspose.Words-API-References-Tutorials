@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Muat dokumen terenkripsi dengan kata sandi yang ditentukan
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Simpan dokumen terenkripsi dengan kata sandi baru
+//Simpan dokumen terenkripsi dengan kata sandi baru
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

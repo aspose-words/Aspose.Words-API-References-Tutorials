@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Configurer les sources de polices
- Ensuite, nous allons créer une instance de`FontSettings` et récupérez les sources de polices existantes en utilisant le`GetFontsSources()` méthode. Nous ajouterons également une nouvelle source de polices en spécifiant un dossier contenant les polices.
+Ensuite, nous allons créer une instance de`FontSettings` et récupérez les sources de polices existantes en utilisant le`GetFontsSources()` méthode. Nous ajouterons également une nouvelle source de polices en spécifiant un dossier contenant les polices.
 
 ```csharp
 // Configurer les sources de polices
@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Ajoutez une nouvelle source de dossier qui demandera à Aspose.Words de rechercher les polices dans le dossier suivant.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//Ajoutez le dossier personnalisé contenant nos polices à la liste des sources de polices existantes.
+// Ajoutez le dossier personnalisé contenant nos polices à la liste des sources de polices existantes.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ R : Oui, vous pouvez filtrer la liste des polices disponibles dans Aspose.Words 
 
 #### Q : Comment puis-je utiliser la liste des polices disponibles dans mes documents Word ?
 
- : Pour utiliser la liste des polices disponibles dans vos documents Word, vous pouvez parcourir la liste et sélectionner les polices appropriées à l'aide des méthodes et propriétés du`FontSettings` classe dans Aspose.Words.
+ R : Pour utiliser la liste des polices disponibles dans vos documents Word, vous pouvez parcourir la liste et sélectionner les polices appropriées à l'aide des méthodes et propriétés du`FontSettings` classe dans Aspose.Words.

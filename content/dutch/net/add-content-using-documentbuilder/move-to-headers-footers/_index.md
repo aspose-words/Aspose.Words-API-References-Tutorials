@@ -87,7 +87,7 @@ builder.Writeln("Page2");
 
 Hier voegen we tekst toe aan het document en voegen we een pagina-einde in om een tweede pagina te maken.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het document ten slotte op in de opgegeven map.
 

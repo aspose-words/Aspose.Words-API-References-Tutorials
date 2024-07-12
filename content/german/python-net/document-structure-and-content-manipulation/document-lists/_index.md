@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Verwalten von Listen in Word-Dokumenten
 linktitle: Erstellen und Verwalten von Listen in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie mit der Aspose.Words Python-API Listen in Word-Dokumenten erstellen und verwalten. Schritt-für-Schritt-Anleitung mit Quellcode für Listenformatierung, Anpassung, Verschachtelung und mehr.
 type: docs
 weight: 18

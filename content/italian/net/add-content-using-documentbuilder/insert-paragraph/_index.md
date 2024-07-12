@@ -37,7 +37,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 2: formatta il carattere e il paragrafo
+## Passaggio 2: formattare il carattere e il paragrafo
 
 Successivamente, personalizza il carattere e la formattazione del paragrafo per il nuovo paragrafo.
 ```csharp

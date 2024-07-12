@@ -79,13 +79,13 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## 結論
 
-現在你就擁有了！一旦將其分解為以下簡單步驟，使用 Aspose.Words for .NET 從 Word 文件中刪除 TOC 就變得非常簡單。這個強大的程式庫不僅有助於刪除目錄，還可以處理無數其他文件操作。所以，繼續嘗試吧！
+現在你就得到它了！一旦將其分解為以下簡單步驟，使用 Aspose.Words for .NET 從 Word 文件中刪除 TOC 就變得非常簡單。這個強大的程式庫不僅有助於刪除目錄，還可以處理無數其他文件操作。所以，繼續嘗試吧！
 
 ## 常見問題解答
 
 ### 1. 什麼是 Aspose.Words for .NET？
 
-Aspose.Words for .NET 是一個強大的 .NET 文件操作庫，可讓開發人員以程式設計方式建立、修改和轉換 Word 文件。
+Aspose.Words for .NET 是一個用於文件操作的強大 .NET 函式庫，可讓開發人員以程式設計方式建立、修改和轉換 Word 文件。
 
 ### 2. 我可以免費使用Aspose.Words嗎？
 

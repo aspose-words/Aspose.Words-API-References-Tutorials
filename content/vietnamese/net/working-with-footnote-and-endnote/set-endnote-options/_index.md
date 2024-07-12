@@ -85,7 +85,7 @@ Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa 
 
 #### Hỏi: Có thể tùy chỉnh cách đánh số chú thích cuối trong tài liệu không?
 
- Trả lời: Có, có thể tùy chỉnh cách đánh số chú thích cuối trong tài liệu. Bạn có thể dùng`RestartRule` Và`NumberStyle` thuộc tính của`EndnoteOptions` lớp để xác định các quy tắc khởi động lại và kiểu đánh số cụ thể.
+ Trả lời: Có, có thể tùy chỉnh cách đánh số chú thích cuối trong tài liệu. Bạn có thể dùng`RestartRule`Và`NumberStyle` thuộc tính của`EndnoteOptions` lớp để xác định các quy tắc khởi động lại và kiểu đánh số cụ thể.
 
 #### Câu hỏi: Làm cách nào tôi có thể định vị chú thích cuối trong tài liệu?
 

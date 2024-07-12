@@ -22,7 +22,7 @@ Document doc = new Document(MyDir + "Rendering.docx");
 
 ## 步骤 2：将文档按 HTML 格式划分为多个部分
 
-现在我们将设置保存选项，以 HTML 格式将文档分成几部分。操作方法如下：
+现在我们将设置保存选项，以将文档分成 HTML 格式的部分。操作方法如下：
 
 ```csharp
 HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
@@ -72,7 +72,7 @@ Aspose.Words for .NET 提供了各种选项来自定义 HTML 输出格式。您�
 
 是的，Aspose.Words for .NET 支持将文档拆分为各种格式，包括 PDF、纯文本、图像等。您可以修改保存选项以生成所需的输出格式。有关可用格式以及如何在保存选项中指定它们的更多详细信息，请参阅 Aspose.Words for .NET 文档。
 
-#### 我可以同时拆分多个文档吗？
+#### 我可以同时分割多个文档吗？
 
 是的，您可以通过遍历文档集合并单独执行每个文档的拆分代码，同时将拆分过程应用于多个文档。这样您就可以高效地处理多个文档并为每个文档生成单独的部分。
 

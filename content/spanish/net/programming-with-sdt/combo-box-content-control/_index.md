@@ -17,7 +17,7 @@ Para seguir este tutorial, necesita tener lo siguiente:
 - Conocimientos básicos de C# y procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Paso 3: agregue elementos al cuadro combinado
- Agregue elementos al cuadro combinado usando el`ListItems` propiedad de la`StructuredDocumentTag` Cada elemento está representado por un`SdtListItem` objeto, que toma un texto de visualización y un valor. En este ejemplo, agregamos tres elementos al cuadro combinado.
+ Agregue elementos al cuadro combinado usando el`ListItems` propiedad de la`StructuredDocumentTag` . Cada elemento está representado por un`SdtListItem` objeto, que toma un texto de visualización y un valor. En este ejemplo, agregamos tres elementos al cuadro combinado.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

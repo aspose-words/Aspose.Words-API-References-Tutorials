@@ -9,7 +9,7 @@ url: /ja/net/join-and-append-documents/
 ---
  Aspose.Words for .NET のチュートリアルでは、アプリケーションで Word 文書を処理するためのさまざまな機能とテクニックを紹介しています。そのようなチュートリアルの 1 つである「文書の結合とマージ」では、複数の Word 文書を 1 つに結合する方法を説明します。`Document`ドキュメントを開いて操作するためのクラス、および`AppendDocument`あるドキュメントの内容を別のドキュメントに追加する方法です。このチュートリアルでは、この操作を簡単に実行するための手順を段階的に説明します。
 
-もう1つの優れたチュートリアルは「文書内のテキストの置換」です。これは、Word文書内でテキストの自動置換を実行する方法を説明しています。`FindReplaceOptions`そして`Document`柔軟な検索オプションを指定して、テキストを検索および置換するクラス。このチュートリアルでは、ドキュメント内のテキストを置換するプロセスを順を追って説明し、この面倒なタスクを自動化できるようにします。
+もう1つの優れたチュートリアルは「文書内のテキストの置換」です。これは、Word文書内でテキストの自動置換を実行する方法を説明しています。`FindReplaceOptions`そして`Document`柔軟な検索オプションを指定して、テキストを検索および置換するクラス。このチュートリアルでは、ドキュメント内のテキストを置換するプロセスを順を追って説明し、この面倒な作業を自動化できるようにします。
 
 最後に、「マージデータを使用したレポートの作成」チュートリアルでは、Word文書テンプレートにデータをマージして動的なレポートを作成する方法を説明します。`MailMerge`クラスを使用して、テーブル、カスタム オブジェクト、データベースなどのさまざまなソースからデータのマージを実行します。このチュートリアルでは、さまざまなデータからカスタム レポートを生成するための具体的な例と実用的なヒントを紹介します。
 
@@ -18,25 +18,25 @@ url: /ja/net/join-and-append-documents/
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [シンプルなドキュメントの追加](./simple-append-document/) | Aspose.Words for .NET を使用して、書式を保持したまま Word 文書を結合および追加する方法を学習します。 |
+| [シンプルなドキュメントの追加](./simple-append-document/) | この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して 1 つの Word 文書を別の Word 文書に追加する方法を説明します。 |
 | [ドキュメントを追加](./append-document/) | Aspose.Words for .NET を使用して、あるドキュメントの内容を別のドキュメントに追加する方法を学びます。 |
-| [空白にドキュメントを追加](./append-document-to-blank/) | Aspose.Words for .NET で空白の宛先ドキュメントにドキュメントを追加する方法を学習します。 |
-| [インポート形式オプションを追加](./append-with-import-format-options/) | Aspose.Words for .NET を使用して、インポート形式オプションを使用してドキュメントを追加する方法を学習します。 |
-| [異なるページ設定](./different-page-setup/) | Aspose.Words for .NET を使用して、異なるページ設定でドキュメントを追加する方法を学習します。 |
-| [連続参加](./join-continuous/) | Aspose.Words for .NET を使用して、書式設定を保持しながら 2 つのドキュメントを連続的に結合する方法を学習します。 |
-| [新しいページに参加する](./join-new-page/) | Aspose.Words for .NET を使用して、書式設定を保持しながら 2 つのドキュメントを新しいページに結合する方法を学習します。 |
-| [ソースの書式を維持](./keep-source-formatting/) | Aspose.Words for .NET を使用して、元の書式設定を保持しながらソース ドキュメントを宛先ドキュメントに追加する方法を学びます。 |
-| [ソースをまとめる](./keep-source-together/) | Aspose.Words for .NET を使用して、ソース コンテンツを宛先ドキュメントと一緒に保ちながら Word ドキュメントを結合および追加する方法を学習します。 |
-| [リストのソース書式を保持](./list-keep-source-formatting/) | Aspose.Words for .NET を使用して Word 文書を結合および追加するときにリストの書式を保持する方法を学習します。 |
-| [宛先スタイルの使用リスト](./list-use-destination-styles/) | Aspose.Words for .NET を使用して、宛先ドキュメントのリスト スタイルを保持しながら Word ドキュメントを結合および追加する方法を学習します。 |
+| [空白にドキュメントを追加](./append-document-to-blank/) | Aspose.Words for .NET を使用して、空白のドキュメントにシームレスにドキュメントを追加する方法を学びます。ステップバイステップ ガイド、コード スニペット、FAQ が含まれています。 |
+| [インポート形式オプションを追加](./append-with-import-format-options/) | Aspose.Words for .NET を使用すると、詳細なステップバイステップのガイダンスに従って書式を維持しながら、Word 文書を簡単に追加できます。 |
+| [異なるページ設定](./different-page-setup/) | Aspose.Words for .NET を使用して Word 文書を結合するときに、さまざまなページ構成を設定する方法を学びます。ステップ バイ ステップ ガイドが含まれています。 |
+| [連続参加](./join-continuous/) | Aspose.Words for .NET を使用して 2 つの Word 文書をシームレスに結合する方法を学びます。スムーズで効率的な文書の結合については、ステップ バイ ステップ ガイドに従ってください。 |
+| [新しいページに参加する](./join-new-page/) | Aspose.Words for .NET を使用して Word でドキュメントを結合および追加する方法を学びます。効率的なドキュメントの結合については、ステップバイステップのガイドに従ってください。 |
+| [ソースの書式を維持](./keep-source-formatting/) | Aspose.Words for .NET を使用して、書式設定を保持しながら Word 文書を結合する方法を学びます。ドキュメント アセンブリ タスクを自動化したい開発者に最適です。 |
+| [ソースをまとめる](./keep-source-together/) | Aspose.Words for .NET を使用して、書式設定を保持しながら Word 文書を結合する方法を学びます。この包括的なガイドでは、セットアップから実行まですべてをカバーしています。 |
+| [リストのソース書式を保持](./list-keep-source-formatting/) | Aspose.Words for .NET を使用して、書式を保持しながら Word 文書を結合する方法を学びます。このチュートリアルでは、シームレスな文書結合の手順を順を追って説明します。 |
+| [宛先スタイルの使用リスト](./list-use-destination-styles/) | Aspose.Words for .NET を使用してドキュメント リストをシームレスに結合および管理する方法を学びます。効率的なドキュメント統合については、ステップ バイ ステップのチュートリアルに従ってください。 |
 | [ページ番号付けを再開](./restart-page-numbering/) | Aspose.Words for .NET を使用して Word 文書を結合および追加するときにページ番号付けを再開する方法を学習します。 |
-| [ページレイアウトの更新](./update-page-layout/) | Aspose.Words for .NET を使用して Word 文書を結合および追加するときにページ レイアウトを更新する方法を学習します。 |
-| [宛先スタイルを使用する](./use-destination-styles/) | Aspose.Words for .NET を使用して、宛先ドキュメント スタイルを適用しながら Word ドキュメントを結合および追加する方法を学習します。 |
-| [スマートスタイルの動作](./smart-style-behavior/) | Aspose.Words for .NET を使用して Word 文書を結合および追加するときにスマート スタイルの動作を維持する方法を学習します。 |
-| [ビルダーでドキュメントを挿入](./insert-document-with-builder/) | Aspose.Words for .NET を使用して、別のドキュメントの最後にドキュメントを挿入する方法を学習します。 |
-| [ソース番号を保持](./keep-source-numbering/) | Aspose.Words for .NET でソース番号の書式を保持しながらドキュメントを追加する方法を学習します。 |
-| [テキストボックスを無視](./ignore-text-boxes/) | Aspose.Words for .NET を使用して、テキスト ボックスの書式を無視しながらドキュメントを追加する方法を学習します。 |
-| [ヘッダーフッターを無視](./ignore-header-footer/) | Aspose.Words for .NET を使用して、ヘッダーとフッターのコンテンツを無視しながらドキュメントを追加する方法を学習します。 |
-| [リンク ヘッダー フッター](./link-headers-footers/) | Aspose.Words for .NET を使用して Word 文書を結合および追加するときにヘッダーとフッターをリンクする方法を学習します。 |
-| [ソースヘッダーフッターを削除](./remove-source-headers-footers/) | Aspose.Words for .NET を使用して Word 文書を結合および追加するときにヘッダーとフッターを削除する方法を学習します。 |
-| [ヘッダーとフッターのリンクを解除](./unlink-headers-footers/) | Aspose.Words for .NET を使用して、ヘッダーとフッターのリンクを解除しながら Word 文書を結合および追加する方法を学習します。 |
+| [ページレイアウトの更新](./update-page-layout/) | 詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word 文書のページ レイアウトを簡単に更新します。 |
+| [宛先スタイルを使用する](./use-destination-styles/) | Aspose.Words for .NET で宛先スタイルを使用して、一貫した書式を維持しながらドキュメントをシームレスに追加する方法を学びます。 |
+| [スマートスタイルの動作](./smart-style-behavior/) | Aspose.Words for .NET を使用して Word 文書をシームレスに結合し、スタイルを保持してプロフェッショナルな結果を保証する方法を学習します。 |
+| [ビルダーでドキュメントを挿入](./insert-document-with-builder/) | Aspose.Words for .NET を使用して 2 つの Word 文書を結合する方法を学びます。DocumentBuilder を使用して文書を挿入し、書式を保持するためのステップバイステップ ガイドです。 |
+| [ソース番号を保持](./keep-source-numbering/) | Aspose.Words for .NET を使用して書式設定を保持しながらドキュメントをインポートする方法を学びます。コード例を使用したステップバイステップのガイド。 |
+| [テキストボックスを無視](./ignore-text-boxes/) | Aspose.Words for .NET を使用して Word 文書を結合し、テキスト ボックスの書式設定が保持されるようにします。シームレスな文書処理のために、このステップ バイ ステップ ガイドに従ってください。 |
+| [ヘッダーフッターを無視](./ignore-header-footer/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して、ヘッダーとフッターを無視しながら Word 文書を結合する方法を学習します。 |
+| [リンク ヘッダー フッター](./link-headers-footers/) | Aspose.Words for .NET でドキュメント間のヘッダーとフッターをリンクする方法を学びます。一貫性と書式の整合性を簡単に確保します。 |
+| [ソースヘッダーフッターを削除](./remove-source-headers-footers/) | Aspose.Words for .NET を使用して Word 文書のヘッダーとフッターを削除する方法を学びます。ステップバイステップ ガイドを使用して、ドキュメント管理を簡素化します。 |
+| [ヘッダーとフッターのリンクを解除](./unlink-headers-footers/) | Aspose.Words for .NET を使用して Word 文書のヘッダーとフッターのリンクを解除する方法を学びます。詳細なステップバイステップ ガイドに従って、文書の操作をマスターしてください。 |

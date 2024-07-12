@@ -2,109 +2,110 @@
 title: Signieren eines verschlüsselten Word-Dokuments
 linktitle: Signieren eines verschlüsselten Word-Dokuments
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein verschlüsseltes Word-Dokument digital signieren.
+description: Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie verschlüsselte Word-Dokumente mit Aspose.Words für .NET signieren. Perfekt für Entwickler.
 type: docs
 weight: 10
 url: /de/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
-In diesem Tutorial führen wir Sie durch die Schritte zur Verwendung der Funktion zum Signieren eines verschlüsselten Word-Dokuments mit Aspose.Words für .NET. Mit dieser Funktion können Sie ein Word-Dokument digital signieren, das mit einem Entschlüsselungskennwort verschlüsselt ist. Befolgen Sie die folgenden Schritte:
+## Einführung
 
-## Schritt 1: Signaturoptionen festlegen
+Haben Sie sich schon einmal gefragt, wie man ein verschlüsseltes Word-Dokument signiert? Heute führen wir diesen Prozess mit Aspose.Words für .NET durch. Schnall dich an und mach dich bereit für ein detailliertes, spannendes und unterhaltsames Tutorial!
 
-Erstellen Sie eine Instanz der SignOptions-Klasse und legen Sie das Entschlüsselungskennwort fest:
+## Voraussetzungen
+
+Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+
+1.  Aspose.Words für .NET: Herunterladen und installieren von[Hier](https://releases.aspose.com/words/net/).
+2. Visual Studio: Stellen Sie sicher, dass Sie es installiert haben.
+3. Ein gültiges Zertifikat: Sie benötigen eine PFX-Zertifikatsdatei.
+4. Grundlegende C#-Kenntnisse: Durch das Verständnis der Grundlagen wird dieses Tutorial flüssiger.
+
+## Namespaces importieren
+
+Importieren wir zunächst die erforderlichen Namespaces. Diese sind für den Zugriff auf die Aspose.Words-Funktionen von entscheidender Bedeutung.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionpassword" };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.DigitalSignatures;
 ```
 
-Geben Sie unbedingt das richtige Entschlüsselungskennwort für Ihr verschlüsseltes Dokument an.
+Lassen Sie uns den Prozess nun in einfache, überschaubare Schritte unterteilen.
 
-## Schritt 2: Zertifikat laden
+## Schritt 1: Einrichten Ihres Projekts
 
-Beginnen Sie mit dem Laden des Signaturzertifikats mithilfe der Klasse CertificateHolder:
+Richten Sie zunächst Ihr Visual Studio-Projekt ein. Öffnen Sie Visual Studio und erstellen Sie eine neue C#-Konsolenanwendung. Geben Sie ihr einen beschreibenden Namen wie „SignEncryptedWordDoc“.
+
+## Schritt 2: Hinzufügen von Aspose.Words zu Ihrem Projekt
+
+Als nächstes müssen wir Aspose.Words zu Ihrem Projekt hinzufügen. Es gibt mehrere Möglichkeiten, dies zu tun, aber die Verwendung von NuGet ist die einfachste. 
+
+1. Öffnen Sie die NuGet-Paket-Manager-Konsole über Tools > NuGet-Paket-Manager > Paket-Manager-Konsole.
+2. Führen Sie den folgenden Befehl aus:
+
+```powershell
+Install-Package Aspose.Words
+```
+
+## Schritt 3: Vorbereiten des Dokumentverzeichnisses
+
+Sie benötigen ein Verzeichnis zum Speichern Ihrer Word-Dokumente und Zertifikate. Lassen Sie uns eines erstellen.
+
+1. Erstellen Sie ein Verzeichnis auf Ihrem Computer. Der Einfachheit halber nennen wir es „DocumentDirectory“.
+2. Platzieren Sie Ihr Word-Dokument (z. B. „Dokument.docx“) und Ihr .pfx-Zertifikat (z. B. „morzal.pfx“) in diesem Verzeichnis.
+
+## Schritt 4: Schreiben des Codes
+
+ Tauchen wir nun in den Code ein. Öffnen Sie Ihre`Program.cs` Datei und beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis und der Initialisierung des`SignOptions` mit dem Entschlüsselungskennwort.
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
+```
+
+## Schritt 5: Laden des Zertifikats
+
+ Laden Sie anschließend Ihr Zertifikat mit dem`CertificateHolder`Klasse. Dazu benötigen Sie den Pfad zu Ihrer PFX-Datei und das Passwort des Zertifikats.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Achten Sie darauf, den richtigen Pfad zu Ihrem Zertifikat und dem zugehörigen Passwort anzugeben.
+## Schritt 6: Unterzeichnen des Dokuments
 
-## Schritt 3: Signieren des verschlüsselten Dokuments
-
-Verwenden Sie die Klasse DigitalSignatureUtil, um das verschlüsselte Dokument zu signieren:
+ Verwenden Sie abschließend die`DigitalSignatureUtil.Sign` Methode zum Signieren Ihres verschlüsselten Word-Dokuments. Diese Methode erfordert die Eingabedatei, die Ausgabedatei, den Zertifikatsinhaber und die Signaturoptionen.
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-	certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Document.docx",
+    dataDir + "DigitallySignedDocument.docx",
+    certHolder,
+    signOptions);
 ```
 
-Achten Sie darauf, die richtigen Pfade für das verschlüsselte Dokument, das signierte Dokument und das Zertifikat anzugeben.
+## Schritt 7: Ausführen des Codes
 
-### Beispielquellcode zum Signieren verschlüsselter Dokumente mit Aspose.Words für .NET
-
-Hier ist der vollständige Quellcode zum Signieren eines verschlüsselten Dokuments mit Aspose.Words für .NET:
-
-```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-		certHolder, signOptions);
-	
-
-```
-Indem Sie diese Schritte befolgen, können Sie mit Aspose.Words für .NET ganz einfach ein verschlüsseltes Word-Dokument signieren.
+Speichern Sie Ihre Datei und führen Sie das Projekt aus. Wenn alles richtig eingerichtet ist, sollten Sie Ihr signiertes Dokument im angegebenen Verzeichnis sehen.
 
 ## Abschluss
 
-In diesem Tutorial haben wir den Prozess der Signierung eines verschlüsselten Word-Dokuments mit Aspose.Words für .NET untersucht. Indem wir das Entschlüsselungskennwort und das Signaturzertifikat angeben, können wir einem verschlüsselten Dokument eine digitale Signatur hinzufügen. Das Signieren verschlüsselter Dokumente stellt deren Authentizität und Integrität sicher und bietet eine zusätzliche Sicherheitsebene. Mit Aspose.Words für .NET können Sie verschlüsselte Dokumente signieren und die Sicherheit und Vertrauenswürdigkeit Ihrer Word-Dateien aufrechterhalten.
+Und da haben Sie es! Sie haben erfolgreich ein verschlüsseltes Word-Dokument mit Aspose.Words für .NET signiert. Mit dieser leistungsstarken Bibliothek wird das digitale Signieren selbst für verschlüsselte Dateien zum Kinderspiel. Viel Spaß beim Programmieren!
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Was ist Dokumentsignierung in Aspose.Words für .NET?
+### Kann ich einen anderen Zertifikatstyp verwenden?
+Ja, Aspose.Words unterstützt verschiedene Zertifikattypen, solange sie im richtigen Format vorliegen.
 
-A: Unter Dokumentsignierung in Aspose.Words für .NET versteht man den Vorgang, ein Word-Dokument digital zu signieren, um dessen Authentizität, Integrität und Nichtabstreitbarkeit sicherzustellen. Dabei wird dem Dokument mithilfe eines Zertifikats eine digitale Signatur hinzugefügt.
+### Ist es möglich, mehrere Dokumente gleichzeitig zu unterzeichnen?
+Auf jeden Fall! Sie können eine Sammlung von Dokumenten durchlaufen und jedes einzelne programmgesteuert signieren.
 
-#### F: Was ist ein verschlüsseltes Word-Dokument?
+### Was passiert, wenn ich das Entschlüsselungskennwort vergesse?
+Ohne das Entschlüsselungskennwort können Sie das Dokument leider nicht unterzeichnen.
 
-A: Ein verschlüsseltes Word-Dokument ist ein Dokument, das mit einem Kennwort verschlüsselt wurde. Die Verschlüsselung ist eine Sicherheitsmaßnahme, die den Inhalt des Dokuments schützt, indem sie ihn verschlüsselt und ohne das richtige Entschlüsselungskennwort unlesbar macht.
+### Kann ich dem Dokument eine sichtbare Signatur hinzufügen?
+Ja, Aspose.Words ermöglicht Ihnen auch das Hinzufügen sichtbarer digitaler Signaturen.
 
-#### F: Wie kann ich mit Aspose.Words für .NET ein verschlüsseltes Word-Dokument signieren?
-
-A: Um ein verschlüsseltes Word-Dokument mit Aspose.Words für .NET zu signieren, müssen Sie das Entschlüsselungskennwort zusammen mit dem Signaturzertifikat angeben. Folgen Sie diesen Schritten:
-1.  Legen Sie das Entschlüsselungskennwort im`SignOptions` Objekt.
-2.  Laden Sie das Signaturzertifikat mit dem`CertificateHolder` Klasse.
-3.  Verwenden Sie die`DigitalSignatureUtil.Sign` Methode zum Signieren des verschlüsselten Dokuments unter Angabe der erforderlichen Parameter.
-
-#### F: Was ist der Zweck der Unterzeichnung eines verschlüsselten Dokuments?
-
-A: Wenn Sie ein verschlüsseltes Dokument mit Aspose.Words für .NET signieren, können Sie dem Dokument auch dann eine digitale Signatur hinzufügen, wenn es verschlüsselt ist. Dies bietet eine zusätzliche Sicherheitsebene und gewährleistet die Authentizität und Integrität des verschlüsselten Inhalts. Empfänger können damit den Ursprung des Dokuments überprüfen und Manipulationen erkennen.
-
-#### F: Kann ich ein verschlüsseltes Dokument unterzeichnen, ohne das Entschlüsselungskennwort anzugeben?
-
-A: Nein, um ein verschlüsseltes Dokument zu signieren, müssen Sie das richtige Entschlüsselungskennwort eingeben. Das Entschlüsselungskennwort ist erforderlich, um auf den verschlüsselten Inhalt des Dokuments zuzugreifen und ihn zu ändern, bevor die digitale Signatur angewendet wird.
-
-#### F: Kann ich ein verschlüsseltes Word-Dokument mit einem beliebigen Zertifikat signieren?
-
-A: Um ein verschlüsseltes Word-Dokument mit Aspose.Words für .NET zu signieren, benötigen Sie ein gültiges X.509-Zertifikat. Das Zertifikat kann von einer vertrauenswürdigen Zertifizierungsstelle (CA) bezogen werden, oder es kann zu Testzwecken ein selbstsigniertes Zertifikat verwendet werden.
-
-#### F: Kann ich mehrere verschlüsselte Word-Dokumente mit demselben Zertifikat signieren?
-
- A: Ja, Sie können mehrere verschlüsselte Word-Dokumente mit demselben Zertifikat signieren. Nachdem Sie das Zertifikat mit dem`CertificateHolder` Klasse können Sie sie wiederverwenden, um mehrere verschlüsselte Dokumente zu signieren.
-
-#### F: Kann ich die digitale Signatur eines signierten verschlüsselten Dokuments überprüfen?
-
- A: Ja, Aspose.Words für .NET bietet Funktionen zur Überprüfung der digitalen Signatur eines signierten verschlüsselten Dokuments. Sie können die`DigitalSignatureUtil.Verify` Methode zur Überprüfung der Gültigkeit und Authentizität der digitalen Signatur.
-
-#### F: Welches Dateiformat unterstützt Aspose.Words für .NET zum Signieren verschlüsselter Dokumente?
-
- A: Aspose.Words für .NET unterstützt das Signieren verschlüsselter Word-Dokumente im DOCX-Dateiformat. Sie können verschlüsselte DOCX-Dateien signieren mit dem`DigitalSignatureUtil.Sign` Methode zusammen mit dem erforderlichen Entschlüsselungskennwort und Zertifikat.
-
-#### F: Welchen Einfluss hat das Signieren eines verschlüsselten Dokuments auf die Verschlüsselung?
-
-A: Das Signieren eines verschlüsselten Dokuments mit Aspose.Words für .NET hat keine Auswirkungen auf die Verschlüsselung des Dokuments. Die Verschlüsselung bleibt erhalten und die digitale Signatur wird dem verschlüsselten Inhalt hinzugefügt. Die digitale Signatur bietet zusätzliche Sicherheit und Überprüfung, ohne die auf das Dokument angewendete Verschlüsselung zu beeinträchtigen.
+### Gibt es eine Möglichkeit, die Signatur zu überprüfen?
+ Ja, Sie können die`DigitalSignatureUtil.Verify` Methode zur Überprüfung von Signaturen.

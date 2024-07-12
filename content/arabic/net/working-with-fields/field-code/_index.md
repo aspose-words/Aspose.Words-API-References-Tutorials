@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // افعل شيئًا ما باستخدام رمز الحقل والنتيجة.
+     //افعل شيئًا ما باستخدام رمز الحقل والنتيجة.
 }
 ```
 
@@ -73,7 +73,7 @@ foreach(Field field in doc.Range.Fields)
 
 #### س: كيف يمكنني تحديث الحقول في مستند باستخدام Aspose.Words for .NET؟
 
- ج: لتحديث حقول المستند باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Document.UpdateFields`طريقة. سيؤدي هذا إلى تحديث جميع الحقول الموجودة في المستند، مثل حقول الدمج وحقول التاريخ وما إلى ذلك.
+ ج: لتحديث حقول المستند باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Document.UpdateFields` طريقة. سيؤدي هذا إلى تحديث جميع الحقول الموجودة في المستند، مثل حقول الدمج وحقول التاريخ وما إلى ذلك.
 
 #### س: كيف يمكنني استرداد قيمة حقل معين في Aspose.Words لـ .NET؟
 

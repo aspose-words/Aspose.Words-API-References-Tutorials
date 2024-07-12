@@ -8,7 +8,7 @@ weight: 10
 url: /vi/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
 
-Việc thêm và sao chép đầu trang và chân trang trong tài liệu của bạn có thể nâng cao tính chuyên nghiệp và tính nhất quán của chúng. Với Aspose.Words for .NET, tác vụ này trở nên đơn giản và có khả năng tùy chỉnh cao. Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn quy trình sao chép đầu trang và chân trang từ phần này sang phần khác trong tài liệu Word của bạn, theo từng bước.
+Việc thêm và sao chép đầu trang và chân trang trong tài liệu của bạn có thể nâng cao tính chuyên nghiệp và tính nhất quán của chúng. Với Aspose.Words for .NET, tác vụ này trở nên đơn giản và có khả năng tùy chỉnh cao. Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn từng bước quy trình sao chép đầu trang và chân trang từ phần này sang phần khác trong tài liệu Word của bạn.
 
 ## Điều kiện tiên quyết
 
@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Bước 2: Truy cập phần hiện tại
 
-Chúng tôi truy xuất phần hiện tại bằng cách sử dụng`builder.CurrentSection`. Phần này sẽ là mục tiêu mà chúng ta sẽ sao chép đầu trang và chân trang từ phần trước.
+ Chúng tôi truy xuất phần hiện tại bằng cách sử dụng`builder.CurrentSection`Phần này sẽ là mục tiêu mà chúng ta sẽ sao chép đầu trang và chân trang từ phần trước.
 
 ### Bước 3: Xác định phần trước
 

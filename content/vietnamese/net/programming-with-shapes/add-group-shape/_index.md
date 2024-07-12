@@ -2,7 +2,7 @@
 title: Thêm hình dạng nhóm
 linktitle: Thêm hình dạng nhóm
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách thêm hình dạng nhóm có nhiều hình dạng vào tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách thêm hình dạng nhóm có nhiều hình dạng vào tài liệu Word bằng Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /vi/net/programming-with-shapes/add-group-shape/
@@ -17,14 +17,14 @@ Hướng dẫn này giải thích cách thêm hình dạng nhóm chứa nhiều 
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tạo một tài liệu mới và GroupShape
- Tạo một phiên bản mới của`Document` lớp học và`GroupShape`đối tượng làm việc với tài liệu.
+ Tạo một phiên bản mới của`Document` lớp học và`GroupShape` đối tượng làm việc với tài liệu.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Bước 3: Tạo và thêm hình vào GroupShape
- Tạo các hình dạng riêng lẻ như`accentBorderShape` Và`actionButtonShape` sử dụng`Shape` lớp học. Tùy chỉnh thuộc tính của họ như mong muốn. Nối các hình dạng này vào`groupShape` sự vật.
+ Tạo các hình dạng riêng lẻ như`accentBorderShape`Và`actionButtonShape` sử dụng`Shape` lớp học. Tùy chỉnh thuộc tính của họ như mong muốn. Nối các hình dạng này vào`groupShape` sự vật.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Bước 4: Đặt kích thước cho GroupShape
- Đặt chiều rộng, chiều cao và kích thước tọa độ cho`groupShape`.
+Đặt chiều rộng, chiều cao và kích thước tọa độ cho`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## Bước 6: Lưu tài liệu
- Lưu tài liệu vào thư mục được chỉ định bằng cách sử dụng`Save`phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithShapes.AddGroupShape.docx".
+ Lưu tài liệu vào thư mục được chỉ định bằng cách sử dụng`Save` phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithShapes.AddGroupShape.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

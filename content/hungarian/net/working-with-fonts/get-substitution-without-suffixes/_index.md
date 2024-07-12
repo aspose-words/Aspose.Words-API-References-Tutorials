@@ -17,7 +17,7 @@ Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy rendelkezik
 - C# alapismeretek: A C# programozás megértése megkönnyíti a lépések követését és végrehajtását.
 -  Aspose.Words for .NET Library: Töltse le és telepítse a könyvtárat a[letöltési link](https://releases.aspose.com/words/net/).
 - Fejlesztési környezet: állítson be egy fejlesztői környezetet, például a Visual Studio-t a kód írásához és futtatásához.
--  Dokumentumminta: Egy mintadokumentum (pl.`Rendering.docx`), amellyel az oktatóprogram során dolgozhat.
+- Dokumentumminta: Egy mintadokumentum (pl.`Rendering.docx`), amellyel az oktatóprogram során dolgozhat.
 
 ## Névterek importálása
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## 5. lépés: Hozza létre a Figyelmeztetéskezelő osztályt
 
- A figyelmeztetések hatékony kezeléséhez hozzon létre egy egyéni osztályt, amely megvalósítja a`IWarningCallback` felület. Ez az osztály rögzíti és naplózza a betűtípus helyettesítésére vonatkozó figyelmeztetéseket.
+ figyelmeztetések hatékony kezeléséhez hozzon létre egy egyéni osztályt, amely megvalósítja a`IWarningCallback` felület. Ez az osztály rögzíti és naplózza a betűtípus helyettesítésére vonatkozó figyelmeztetéseket.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Most már elsajátította a betűtípusok utótagok nélküli helyettesítésén
 
 ### 1. kérdés: Hogyan használhatok betűtípusokat több egyéni könyvtárból?
 
- Többet is hozzáadhat`FolderFontSource` példányok a`fontSources`listázza ki, és ennek megfelelően frissítse a fontforrásokat.
+ Többet is hozzáadhat`FolderFontSource` példányok a`fontSources` listázza ki, és ennek megfelelően frissítse a fontforrásokat.
 
 ### 2. kérdés: Honnan tölthetem le az Aspose.Words for .NET ingyenes próbaverzióját?
 

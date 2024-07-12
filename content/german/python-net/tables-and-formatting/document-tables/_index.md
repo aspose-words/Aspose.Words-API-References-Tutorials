@@ -1,7 +1,7 @@
 ---
 title: Optimieren von Tabellen für die Datenpräsentation in Word-Dokumenten
 linktitle: Optimieren von Tabellen für die Datenpräsentation in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie Tabellen mit Aspose.Words für Python für die Datenpräsentation in Word-Dokumenten optimieren. Verbessern Sie die Lesbarkeit und visuelle Attraktivität mit Schritt-für-Schritt-Anleitungen und Quellcodebeispielen.
 type: docs
 weight: 11
@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Hinzufügen von Kopf- und Fußzeilen zu Tabellen:
 
- Tabellen können von Kopf- und Fußzeilen profitieren, die Kontext oder zusätzliche Informationen bieten. Sie können Tabellen Kopf- und Fußzeilen hinzufügen, indem Sie`Table.title` Und`Table.description` Eigenschaften.
+ Tabellen können von Kopf- und Fußzeilen profitieren, die Kontext oder zusätzliche Informationen bieten. Sie können Tabellen Kopf- und Fußzeilen hinzufügen, indem Sie`Table.title`Und`Table.description` Eigenschaften.
 
 ```python
 # Set table title (header)

@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Inserta la primera celda de la primera fila.
+//Inserta la primera celda de la primera fila.
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Aquí utilizamos el generador de documentos para crear una tabla con dos filas de encabezado y varias filas de datos. El`RowFormat.HeadingFormat`Los parámetros se utilizan para marcar las filas del encabezado que deben repetirse en las páginas siguientes.
+ Aquí utilizamos el generador de documentos para crear una tabla con dos filas de encabezado y varias filas de datos. El`RowFormat.HeadingFormat` Los parámetros se utilizan para marcar las filas del encabezado que deben repetirse en las páginas siguientes.
 
 ## Paso 4: guardar el documento modificado
 Finalmente Estados Unidos

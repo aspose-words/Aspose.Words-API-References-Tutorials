@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3단계: 시간 필드 삽입
 
- 우리는`InsertField()` 문서에 시간 필드를 삽입하는 방법입니다.
+ 우리는`InsertField()`문서에 시간 필드를 삽입하는 방법입니다.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Vložte první buňku prvního řádku
+//Vložte první buňku prvního řádku
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Zde používáme tvůrce dokumentů k vytvoření tabulky se dvěma řádky záhlaví a více řádky dat. The`RowFormat.HeadingFormat`parametry se používají k označení řádků záhlaví, které by se měly opakovat na následujících stránkách.
+ Zde používáme tvůrce dokumentů k vytvoření tabulky se dvěma řádky záhlaví a více řádky dat. The`RowFormat.HeadingFormat` parametry se používají k označení řádků záhlaví, které by se měly opakovat na následujících stránkách.
 
 ## Krok 4: Uložení upraveného dokumentu
 Konečně USA

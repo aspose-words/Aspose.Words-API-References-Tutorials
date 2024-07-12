@@ -17,7 +17,7 @@ Merhaba teknoloji tutkunu! Hiç program aracılığıyla bir Word belgesinde bel
 
 1.  Aspose.Words for .NET: İndirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 2. Visual Studio: Herhangi bir güncel sürüm işe yarayacaktır.
-3. .NET Framework: .NET Framework'ün kurulu olduğundan emin olun.
+3. .NET Framework: .NET Framework'ün yüklü olduğundan emin olun.
 4. Bir Word Belgesi: Çalışmak için örnek bir Word belgesine ihtiyacınız olacak.
 
 Herşeye sahip? Harika! Hadi devam edelim.

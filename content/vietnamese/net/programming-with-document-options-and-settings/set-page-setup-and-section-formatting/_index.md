@@ -58,6 +58,6 @@ Mã này sẽ đặt hướng trang thành ngang, lề trái thành 50 và khổ
   
 ```
 
-Đảm bảo chỉ định đường dẫn chính xác đến thư mục mà bạn muốn lưu tài liệu vào`dataDir` Biến đổi.
+ Đảm bảo chỉ định đường dẫn chính xác đến thư mục mà bạn muốn lưu tài liệu vào`dataDir` Biến đổi.
 
 Bây giờ bạn đã học cách định cấu hình bố cục và định dạng phần của tài liệu bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước được cung cấp trong hướng dẫn này, bạn có thể dễ dàng tùy chỉnh bố cục và định dạng tài liệu của riêng mình.

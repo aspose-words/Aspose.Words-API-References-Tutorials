@@ -75,7 +75,7 @@ Các hướng dẫn này hiển thị số kiểu và danh sách còn lại sau 
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//Xóa các kiểu và danh sách không sử dụng khỏi tài liệu tùy thuộc vào CleanupOptions nhất định.
+	// Xóa các kiểu và danh sách không sử dụng khỏi tài liệu tùy thuộc vào CleanupOptions nhất định.
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 

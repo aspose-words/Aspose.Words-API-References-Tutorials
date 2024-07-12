@@ -16,14 +16,14 @@ Of u nu specifieke woorden moet vervangen, tekstsjablonen moet bijwerken of de i
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Eenvoudige tekst zoeken en vervangen in Word](./simple-find-replace/) | Leer hoe u eenvoudig tekst kunt zoeken en vervangen in een Word-document met Aspose.Words voor .NET. |
-| [Metakarakters in zoekpatroon](./meta-characters-in-search-pattern/) | Leer hoe u metatekens in het zoekpatroon kunt gebruiken met Aspose.Words voor .NET om Word-documenten te manipuleren. |
-| [Woord Vervang tekst die metatekens bevat](./replace-text-containing-meta-characters/) | Leer hoe u tekst met metatekens in Word-documenten kunt vervangen met behulp van Aspose.Words voor .NET. |
-| [Negeer tekst in velden](./ignore-text-inside-fields/) | Leer hoe u de functie 'Tekst in velden negeren' van Aspose.Words voor .NET gebruikt. |
-| [Negeer tekst binnenin en verwijder revisies](./ignore-text-inside-delete-revisions/) | Leer hoe u de functie 'Tekst in verwijder revisies negeren' van Aspose.Words voor .NET gebruikt. |
-| [Negeer tekst in invoegrevisies](./ignore-text-inside-insert-revisions/) | Leer hoe u de functie "Tekst in invoegrevisies negeren" van Aspose.Words voor .NET kunt gebruiken om invoegrevisies in Word-documenten te manipuleren. |
-| [Vervang tekst in voettekst](./replace-text-in-footer/) | Leer hoe u tekst in de voettekst van Word-documenten vervangt met Aspose.Words voor .NET. |
-| [Vervangen door Regex](./replace-with-regex/) | Leer hoe u op reguliere expressies gebaseerde tekstvervanging uitvoert in een Word-document met Aspose.Words voor .NET. |
-| [Herken en vervangingen binnen vervangingspatronen](./recognize-and-substitutions-within-replacement-patterns/) | Leer hoe u vervangingspatronen met herkenningen en vervangingen kunt gebruiken in Aspose.Words voor .NET om Word-documenten te manipuleren. |
-| [Vervangen door tekenreeks](./replace-with-string/) | Leer hoe u tekst vervangt door een tekenreeks in een Word-document met Aspose.Words voor .NET. |
-| [Vervang tekst in tabel](./replace-text-in-table/) | Leer hoe u tekst in een tabel in een Word-document vervangt met Aspose.Words voor .NET. |
+| [Eenvoudige tekst zoeken en vervangen in Word](./simple-find-replace/) | Leer hoe u moeiteloos tekst in Word-documenten kunt vinden en vervangen met Aspose.Words voor .NET. Stap-voor-stap handleiding inbegrepen. |
+| [Metakarakters in zoekpatroon](./meta-characters-in-search-pattern/) | Leer hoe u metatekens in zoekpatronen kunt gebruiken met Aspose.Words voor .NET in deze gedetailleerde, stapsgewijze handleiding. Optimaliseer uw documentverwerking. |
+| [Woord Vervang tekst die metatekens bevat](./replace-text-containing-meta-characters/) | Leer hoe u tekst met metatekens in Word-documenten vervangt met Aspose.Words voor .NET. Volg onze gedetailleerde, boeiende tutorial voor naadloze tekstmanipulatie. |
+| [Negeer tekst in velden](./ignore-text-inside-fields/) | Leer hoe u tekst in velden in Word-documenten kunt manipuleren met Aspose.Words voor .NET. Deze tutorial biedt stapsgewijze begeleiding met praktische voorbeelden. |
+| [Negeer tekst binnenin en verwijder revisies](./ignore-text-inside-delete-revisions/) | Leer hoe u bijgehouden revisies in Word-documenten kunt verwerken met Aspose.Words voor .NET. Beheers documentautomatisering met deze uitgebreide tutorial. |
+| [Negeer tekst in invoegrevisies](./ignore-text-inside-insert-revisions/) | Leer hoe u documentrevisies effectief kunt beheren met Aspose.Words voor .NET. Ontdek technieken om tekst in invoegrevisies te negeren voor gestroomlijnde bewerking. |
+| [Vervang tekst in voettekst](./replace-text-in-footer/) | Leer hoe u tekst in de voettekst van een Word-document vervangt met Aspose.Words voor .NET. Volg deze handleiding om tekstvervanging onder de knie te krijgen met gedetailleerde voorbeelden. |
+| [Vervangen door Regex](./replace-with-regex/) | Leer hoe u regex kunt gebruiken voor zoeken en vervangen in Word-documenten met Aspose.Words voor .NET. Volg onze gedetailleerde, stapsgewijze handleiding om tekstmanipulatie onder de knie te krijgen. |
+| [Herken en vervangingen binnen vervangingspatronen](./recognize-and-substitutions-within-replacement-patterns/) | Leer hoe u tekst binnen vervangingspatronen kunt herkennen en vervangen met Aspose.Words voor .NET. Stap-voor-stap handleiding met gedetailleerde voorbeelden. |
+| [Vervangen door tekenreeks](./replace-with-string/) | Leer hoe u tekenreeksen in Word-documenten vervangt met Aspose.Words voor .NET met deze stapsgewijze handleiding. Perfect voor ontwikkelaars die het bewerken van documenten willen automatiseren. |
+| [Vervang tekst in tabel](./replace-text-in-table/) | Vervang moeiteloos tekst in de Word-tabel met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. |

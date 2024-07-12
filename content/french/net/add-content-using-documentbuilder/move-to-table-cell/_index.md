@@ -58,7 +58,7 @@ C'est ici que la magie opère. Nous allons déplacer le constructeur vers une ce
 builder.MoveToCell(0, 2, 3, 0);
 ```
 
-## Étape 4 : Ajouter du contenu à la cellule
+## Étape 4 : ajouter du contenu à la cellule
 
 Maintenant que nous sommes à l'intérieur de la cellule, ajoutons du contenu.
 
@@ -85,7 +85,7 @@ Toutes nos félicitations! Vous venez d'apprendre comment accéder à une cellul
  Oui, en spécifiant l'index de table correct dans le`MoveToCell` méthode, vous pouvez accéder à n’importe quelle cellule de n’importe quel tableau du document.
 
 ### Comment gérer les cellules qui s’étendent sur plusieurs lignes ou colonnes ?
- Vous pouvez utiliser le`RowSpan` et`ColSpan` propriétés du`Cell` classe pour gérer les cellules fusionnées.
+ Vous pouvez utiliser le`RowSpan`et`ColSpan` propriétés du`Cell` classe pour gérer les cellules fusionnées.
 
 ### Est-il possible de formater le texte à l’intérieur de la cellule ?
  Absolument! Utiliser`DocumentBuilder` des méthodes comme`Font.Size`, `Font.Bold`, et d'autres pour formater votre texte.

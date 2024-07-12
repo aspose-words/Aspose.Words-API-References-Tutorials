@@ -172,7 +172,7 @@ public void setCompressionLevel() throws Exception
 
 ### 문서를 OOXML 형식으로 저장할 때 사용자 정의 속성을 설정할 수 있나요?
 
- 예, 문서를 OOXML 형식으로 저장하기 전에 문서의 사용자 정의 속성을 설정할 수 있습니다. 사용`BuiltInDocumentProperties` 그리고`CustomDocumentProperties` 작성자, 제목, 키워드, 사용자 정의 속성 등 다양한 속성을 설정하는 클래스입니다.
+ 예, 문서를 OOXML 형식으로 저장하기 전에 문서의 사용자 정의 속성을 설정할 수 있습니다. 사용`BuiltInDocumentProperties`그리고`CustomDocumentProperties` 작성자, 제목, 키워드, 사용자 정의 속성 등 다양한 속성을 설정하는 클래스입니다.
 
 ### 문서를 OOXML 형식으로 저장할 때 기본 압축 수준은 무엇입니까?
 

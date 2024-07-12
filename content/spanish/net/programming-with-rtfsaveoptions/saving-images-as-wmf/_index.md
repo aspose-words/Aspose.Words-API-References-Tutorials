@@ -81,7 +81,7 @@ Configure su entorno de desarrollo agregando las referencias necesarias e import
  Configure las opciones de guardado de RTF creando un`RtfSaveOptions` objeto y establecer el`SaveImagesAsWmf`propiedad a`true`. Esto le dice a Aspose.Words que guarde las imágenes del documento como 
 WMF al convertir a RTF.
 
- Guarde el documento resultante en formato RTF usando el`Save` método y especificando la ruta completa al archivo de salida, junto con las opciones de guardado especificadas.
+ Guarde el documento resultante en formato RTF utilizando el`Save` método y especificando la ruta completa al archivo de salida, junto con las opciones de guardado especificadas.
 
 #### P: ¿Es posible elegir un formato de imagen diferente para guardar con las opciones de guardado RTF?
 R: No, esta característica específica guarda imágenes en formato WMF al convertirlas a RTF. Esta función no admite directamente otros formatos de imagen. Sin embargo, Aspose.Words ofrece otras funciones para la manipulación y conversión de imágenes, lo que le permite convertir imágenes a otros formatos antes o después de convertirlas a RTF.

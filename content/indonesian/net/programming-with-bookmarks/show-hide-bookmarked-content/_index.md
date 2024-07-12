@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Di sini, kami menambahkan beberapa teks sebelum dan sesudah konten yang ditandai. Itu`StartBookmark` Dan`EndBookmark` metode menentukan batas-batas bookmark.
+ Di sini, kami menambahkan beberapa teks sebelum dan sesudah konten yang ditandai. Itu`StartBookmark`Dan`EndBookmark` metode menentukan batas-batas bookmark.
 
 ## Langkah 3: Memasukkan Bidang Bersyarat
 
@@ -76,7 +76,7 @@ Pada langkah ini, kita menyisipkan kolom IF yang memeriksa nilai bookmark. Jika 
 
 ## Langkah 4: Menata Ulang Node
 
-Selanjutnya, kita perlu mengatur ulang node untuk memastikan logika kondisional berlaku dengan benar pada konten yang ditandai.
+Selanjutnya, kita perlu mengatur ulang node untuk memastikan logika kondisional berlaku dengan benar pada konten yang di-bookmark.
 
 ```csharp
 Bookmark bm = doc.Range.Bookmarks["MyBookmark"];

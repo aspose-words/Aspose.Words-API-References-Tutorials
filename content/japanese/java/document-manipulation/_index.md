@@ -57,7 +57,7 @@ Aspose.Words for Java のパワーを解き放ちます。ステップバイス�
 ### [Aspose.Words for Java でドキュメントからコンテンツを抽出する](./extracting-content-from-documents/)
 Aspose.Words for Java を使用してドキュメントからコンテンツを簡単に抽出する方法を学びます。ステップバイステップのガイドとコード サンプルにより、プロセスが簡素化されます。
 ### [Aspose.Words for Java でコンテンツを抽出するためのヘルパー メソッド](./helper-methods-for-extracting-content/)
-Aspose.Words for Java を使用して Word 文書からコンテンツを効率的に抽出する方法を学びます。この包括的なガイドで、ヘルパー メソッド、カスタム書式設定などについて説明します。
+Aspose.Words for Java を使用して Word 文書からコンテンツを効率的に抽出する方法を学びます。この包括的なガイドで、ヘルパー メソッド、カスタム フォーマットなどについて説明します。
 ### [Aspose.Words for Java でのテキストの検索と置換](./finding-and-replacing-text/)
 Aspose.Words for Java を使用して Word 文書内のテキストを検索および置換する方法を学びます。コード例を使用したステップバイステップのガイド。Java 文書の操作スキルを強化します。
 ### [Aspose.Words for Java でドキュメントからコンテンツを削除する](./removing-content-from-documents/)
@@ -65,7 +65,7 @@ Aspose.Words for Java を使用して Java で Word 文書からコンテンツ�
 ### [Aspose.Words for Java でのブックマークの使用](./using-bookmarks/)
 Aspose.Words for Java を使用してドキュメント処理を最適化します。このステップ バイ ステップ ガイドでは、ブックマークを使用して効率的なコンテンツ ナビゲーションと操作を行う方法を学習します。
 ### [Aspose.Words for Java でのドキュメント範囲の使用](./using-document-ranges/)
-Aspose.Words for Java でのドキュメント範囲の操作をマスターします。この包括的なガイドで、テキストの削除、抽出、書式設定を学習します。
+Aspose.Words for Java でのドキュメント範囲の操作をマスターします。この包括的なガイドで、テキストの削除、抽出、および書式設定を学習します。
 ### [Aspose.Words for Java で構造化ドキュメント タグ (SDT) を使用する](./using-structured-document-tags/)
 この包括的なガイドでは、Aspose.Words for Java で構造化ドキュメント タグ (SDT) を使用する方法を学習します。SDT を作成、変更し、カスタム XML データにバインドします。
 ### [Aspose.Words for Java でのスタイルとテーマの使用](./using-styles-and-themes/)
@@ -79,7 +79,7 @@ Aspose.Words for Java を使用してドキュメントをページに分割す�
 ### [Aspose.Words for Java でドキュメントを分割する](./splitting-documents/)
 Aspose.Words for Java でドキュメントを効率的に分割する方法を学びます。見出し、セクション、ページ範囲のテクニックを探ります。
 ### [Aspose.Words for Java でドキュメントを HTML ページに分割する](./splitting-documents-into-html-pages/)
-Aspose.Words for Java を使用してドキュメントを HTML ページに分割する方法を学びます。シームレスなドキュメント変換を行うには、ステップ バイ ステップ ガイドに従ってください。
+Aspose.Words for Java を使用してドキュメントを HTML ページに分割する方法を学びます。シームレスなドキュメント変換を行うには、ステップバイステップのガイドに従ってください。
 ### [Aspose.Words for Java で DocumentBuilder を使用してコンテンツを追加する](./adding-content-using-documentbuilder/)
 Aspose.Words for Java でドキュメント作成をマスターしましょう。テキスト、表、画像などを追加するためのステップバイステップ ガイド。魅力的な Word ドキュメントを簡単に作成できます。
 ### [Aspose.Words for Java でのドキュメントの複製と結合](./cloning-and-combining-documents/)
@@ -87,7 +87,7 @@ Aspose.Words for Java でドキュメントを複製および結合する方法�
 ### [Aspose.Words for Java でドキュメントを比較する](./comparing-documents/)
 効率的なドキュメント分析のための強力な Java ライブラリである Aspose.Words for Java でドキュメントを比較する方法を学習します。 
 ### [Aspose.Words for Java でのドキュメントの書式設定](./formatting-documents/)
-弊社の総合ガイドで、Aspose.Words for Java でのドキュメントの書式設定の技術を習得してください。強力な機能を調べて、ドキュメント処理スキルを強化してください。
+包括的なガイドで、Aspose.Words for Java でのドキュメントの書式設定の技術を学習します。強力な機能を調べて、ドキュメント処理スキルを強化します。
 ### [Aspose.Words for Java でのドキュメントの結合と追加](./joining-and-appending-documents/)
 Aspose.Words for Java を使用して、ドキュメントを簡単に結合および追加する方法を学びます。書式設定を保持し、ヘッダーやフッターなどを管理します。
 ### [Aspose.Words for Java でのドキュメント オプションと設定の使用](./using-document-options-and-settings/)

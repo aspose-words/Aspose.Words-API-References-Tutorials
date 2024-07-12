@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 
-Dalam tutorial ini, kita akan menjelajahi kode sumber C# yang disediakan untuk menggunakan callback penyimpanan halaman dengan opsi penyimpanan gambar Aspose.Words untuk .NET. Fitur ini memungkinkan Anda melakukan tindakan khusus saat menyimpan setiap halaman dokumen sebagai gambar.
+Dalam tutorial ini, kita akan menjelajahi kode sumber C# yang disediakan untuk menggunakan panggilan balik penyimpanan halaman dengan opsi penyimpanan gambar Aspose.Words untuk .NET. Fitur ini memungkinkan Anda melakukan tindakan khusus saat menyimpan setiap halaman dokumen sebagai gambar.
 
 ## Langkah 1: Menyiapkan lingkungan
 

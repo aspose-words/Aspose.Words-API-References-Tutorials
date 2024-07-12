@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Schritt 3: Ermitteln Sie den Abstand zwischen der Tabelle und dem umgebenden Text
- Um den Abstand zwischen der Tabelle und dem umgebenden Text zu ermitteln, müssen wir auf die Tabelle im Dokument zugreifen, und zwar mit dem`GetChild()` Methode und die`NodeType.Table` Eigenschaft. Wir können dann die verschiedenen Entfernungen mithilfe der Array-Eigenschaften anzeigen`DistanceTop`, `DistanceBottom`, `DistanceRight` Und`DistanceLeft`.
+ Um den Abstand zwischen der Tabelle und dem umgebenden Text zu ermitteln, müssen wir auf die Tabelle im Dokument zugreifen, und zwar mit dem`GetChild()` Methode und die`NodeType.Table` Eigenschaft. Wir können dann die verschiedenen Entfernungen mithilfe der Array-Eigenschaften anzeigen`DistanceTop`, `DistanceBottom`, `DistanceRight`Und`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

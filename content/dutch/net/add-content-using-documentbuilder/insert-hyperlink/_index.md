@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- In dit fragment definiëren we het pad naar de map waar ons document zal worden opgeslagen en initialiseren we een nieuw document`Document` En`DocumentBuilder` voorbeeld.
+ In dit fragment definiëren we het pad naar de map waar ons document zal worden opgeslagen en initialiseren we een nieuw document`Document`En`DocumentBuilder` voorbeeld.
 
 ## Stap 3: Schrijf de eerste tekst
 

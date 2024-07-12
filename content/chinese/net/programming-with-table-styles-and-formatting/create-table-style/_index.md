@@ -53,7 +53,7 @@ tableStyle.TopPadding = 12;
 tableStyle.BottomPadding = 12;
 ```
 
-## 步骤 5：将表格样式应用到表格
+## 步骤 5：将表格样式应用于表格
 最后，我们使用`Style`表的属性。
 
 ```csharp

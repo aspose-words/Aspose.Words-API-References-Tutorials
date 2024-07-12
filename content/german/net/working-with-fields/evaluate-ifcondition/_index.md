@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Fügen Sie das WENN-Feld in das Dokument ein.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Bewerten Sie die WENN-Bedingung.
+// Bewerten Sie die WENN-Bedingung.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Zeigen Sie das Ergebnis der Auswertung an.

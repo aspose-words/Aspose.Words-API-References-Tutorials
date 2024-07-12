@@ -72,7 +72,7 @@ Sentiti libero di esplorare ulteriori funzionalità di Aspose.Words per .NET per
 
 #### Come posso recuperare i caratteri primari e secondari del tema di un documento?
 
- Puoi accedere ai caratteri primari e secondari del tema di un documento utilizzando il file`MajorFonts` E`MinorFonts` proprietà del`Theme` oggetto, rispettivamente. Queste proprietà forniscono l'accesso ai nomi dei caratteri utilizzati nel tema del documento per lingue o regioni diverse.
+ Puoi accedere ai caratteri primari e secondari del tema di un documento utilizzando il file`MajorFonts`E`MinorFonts` proprietà del`Theme` oggetto, rispettivamente. Queste proprietà forniscono l'accesso ai nomi dei caratteri utilizzati nel tema del documento per lingue o regioni diverse.
 
 #### Posso ottenere i colori in risalto utilizzati nel tema di un documento?
 

@@ -89,4 +89,4 @@ In dieser Anleitung haben wir gezeigt, wie Sie Dokumente mit Aspose.Words für J
 
 ### Wie kann ich Ausnahmen beim Speichervorgang behandeln?
 
-Sie sollten die Implementierung von Fehlerbehandlungsmechanismen, wie etwa Try-Catch-Blöcken, in Erwägung ziehen, um Ausnahmen zu behandeln, die während des Dokumentspeichervorgangs auftreten können.
+Sie sollten die Implementierung von Fehlerbehandlungsmechanismen, wie etwa Try-Catch-Blöcken, in Erwägung ziehen, um Ausnahmen zu behandeln, die beim Speichern des Dokuments auftreten können.

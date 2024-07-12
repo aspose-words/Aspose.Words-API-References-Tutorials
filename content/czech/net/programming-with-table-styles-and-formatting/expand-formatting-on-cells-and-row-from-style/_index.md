@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Krok 3: Přejděte do první buňky první tabulky
- Chcete-li začít, musíme přejít do první buňky první tabulky v dokumentu. Používáme`GetChild()` a`FirstRow.FirstCell` metody pro získání odkazu na první buňku.
+ Chcete-li začít, musíme přejít do první buňky první tabulky v dokumentu. Používáme`GetChild()`a`FirstRow.FirstCell` metody pro získání odkazu na první buňku.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

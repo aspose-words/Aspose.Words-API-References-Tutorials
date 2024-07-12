@@ -13,7 +13,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép bạn làm vi�
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
 
 1.  Aspose.Words for .NET: Nếu bạn chưa có, hãy tải xuống thư viện từ[trang web giả định](https://releases.aspose.com/words/net/).
 2. Khóa cấp phép đo lường hợp lệ: Bạn cần có khóa để kích hoạt giấy phép đo lường. Bạn có thể lấy những thứ này từ[Trang mua hàng giả định](https://purchase.aspose.com/buy).
@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Thay thế`"your_public_key"` Và`"your_private_key"`bằng các khóa thực tế bạn nhận được từ Aspose. Bước này về cơ bản sẽ cho Aspose biết rằng bạn muốn sử dụng giấy phép có đồng hồ đo.
+ Thay thế`"your_public_key"`Và`"your_private_key"`bằng các khóa thực tế bạn nhận được từ Aspose. Bước này về cơ bản sẽ cho Aspose biết rằng bạn muốn sử dụng giấy phép có đồng hồ đo.
 
 ## Bước 3: Tải tài liệu của bạn
 
@@ -101,7 +101,7 @@ Giấy phép đo lường là mô hình trả tiền theo mức sử dụng, tro
  Bạn có thể lấy khóa cấp phép đồng hồ đo của mình từ[Trang mua hàng giả định](https://purchase.aspose.com/buy).
 
 ### Tôi có thể sử dụng giấy phép có đồng hồ đo với bất kỳ dự án .NET nào không?
-Có, bạn có thể sử dụng giấy phép có đồng hồ đo với bất kỳ dự án .NET nào sử dụng thư viện Aspose.Words cho .NET.
+Có, bạn có thể sử dụng giấy phép đồng hồ đo với bất kỳ dự án .NET nào sử dụng thư viện Aspose.Words cho .NET.
 
 ### Điều gì xảy ra nếu khóa cấp phép được đo không chính xác?
 Nếu khóa không chính xác, giấy phép sẽ không được áp dụng và ứng dụng của bạn sẽ đưa ra một ngoại lệ. Đảm bảo xử lý các trường hợp ngoại lệ để nhận được thông báo lỗi rõ ràng.

@@ -2,91 +2,104 @@
 title: 不要压缩小的图元文件
 linktitle: 不要压缩小的图元文件
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在保存文档时启用“不压缩小元文件”功能。
+description: 了解如何使用 Aspose.Words for .NET 确保 Word 文档中的小型元文件不被压缩，从而保持其质量和完整性。 包含分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
+## 介绍
 
-在 C# 应用程序中对文件进行文字处理时，压缩文档中的元数据是一项常见功能。但是，为了保持小文件的品质，可能有必要不压缩其元数据。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 的 C# 源代码在文档保存选项中启用“不压缩小元文件”功能。
+在文档处理领域，优化文件的保存方式可以显著提高文件的质量和可用性。Aspose.Words for .NET 提供了大量功能，可确保您的 Word 文档精确保存。其中一个功能是“不压缩小型元文件”选项。本教程将指导您如何使用此功能来维护 Word 文档中元文件的完整性。让我们开始吧！
 
-## 了解 Aspose.Words 库
+## 先决条件
 
-在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。Aspose.Words 是一个功能强大的库，可用于在包括 .NET 在内的不同平台中创建、编辑、转换和保护 Word 文档。它提供了许多用于操作文档的功能，例如插入文本、更改格式、添加部分等等。
+在开始之前，请确保您已准备好以下内容：
 
-## 步骤1：设置文档目录
+-  Aspose.Words for .NET：从以下网址下载并安装最新版本[这里](https://releases.aspose.com/words/net/).
+- 开发环境：Visual Studio 或任何其他兼容的 IDE。
+- 对 C# 的基本了解：熟悉 C# 编程语言和 .NET 框架。
+-  Aspose 许可证：要充分发挥 Aspose.Words 的潜力，请考虑获取[执照](https://purchase.aspose.com/buy) 您还可以使用[临时执照](https://purchase.aspose.com/temporary-license/)进行评估。
 
-第一步是定义要保存文档的目录。您必须指定完整的目录路径。例如：
+## 导入命名空间
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-确保将“YOUR DOCUMENTS DIRECTORY”替换为您的文档目录的实际路径。
-
-## 第 2 步：插入章节和文本
-
-然后，您可以将章节和文本插入到文档中。使用 Aspose.Words 提供的 DocumentBuilder 类来构建文档的内容。这是一个简单的例子：
+要在项目中使用 Aspose.Words，您需要导入必要的命名空间。在代码文件的开头添加以下几行：
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Text added to a document.");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-在这个例子中，我们创建一个新的空白文档，然后使用 DocumentBuilder 添加一行文本。
+现在，让我们分解使用 Aspose.Words for .NET 中的“不压缩小图元文件”功能的过程。我们将详细介绍每个步骤，以确保您可以轻松跟进。
 
-## 步骤 3：设置选项
+## 步骤 1：设置文档目录
 
-'登记
-
-现在让我们配置文档的保存选项。使用 DocSaveOptions 类指定保存设置。例如：
-
-```csharp
-DocSaveOptions saveOptions = new DocSaveOptions();
-```
-
-在这个例子中，我们创建一个新的 DocSaveOptions 对象来设置保存选项。
-
-## 步骤 4：启用“不压缩小型图元文件”功能
-
-要启用“不压缩小图元文件”功能，您必须设置`Compliance`DocSaveOptions 对象的属性值为`PdfCompliance.PdfA1a`。 就是这样：
-
-```csharp
-saveOptions.Compliance = PdfCompliance.PdfA1a;
-```
-
-此配置可确保在保存文档时不会压缩小文件元数据。
-
-## 步骤 5：保存文档
-
-最后，您可以使用`Save`方法。指定文件的完整路径和所需的文件名。例如：
-
-```csharp
-doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
-```
-
-确保将“dataDir”替换为您的文档目录的路径。
-
-### 使用 Aspose.Words for .NET 的 DocSaveOptions 不压缩小元文件功能的示例源代码
+首先，您需要指定文档的保存目录。这对于有效管理文件路径至关重要。
 
 ```csharp
 //文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
-//插入两个包含一些文本的部分。
+代替`"YOUR DOCUMENTS DIRECTORY"`与您想要保存文档的实际路径。
+
+## 步骤 2：创建新文档
+
+接下来，我们创建一个新文档和一个文档构建器来向文档添加内容。
+
+```csharp
+//创建新文档
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
+```
 
+在这里，我们初始化一个`Document`目的和用途`DocumentBuilder`添加一些文本。`Writeln`方法向文档添加一行文本。
+
+## 步骤 3：配置保存选项
+
+现在，我们配置保存选项以使用“不压缩小图元文件”功能。这是使用`DocSaveOptions`班级。
+
+```csharp
 //使用“不压缩小图元文件”功能配置保存选项
 DocSaveOptions saveOptions = new DocSaveOptions();
 saveOptions.Compliance = PdfCompliance.PdfA1a;
+```
 
+在此步骤中，我们创建一个实例`DocSaveOptions`并设置`Compliance`财产`PdfCompliance.PdfA1a`.这确保文档符合 PDF/A-1a 标准。
+
+## 步骤 4：保存文档
+
+最后，我们使用指定的选项保存文档，以确保小型图元文件不会被压缩。
+
+```csharp
 //使用指定选项保存文档
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 ```
 
+在这里，我们使用`Save`方法`Document`类来保存文档。路径包括目录和文件名“DocumentWithDoNotCompressMetafiles.pdf”。
+
 ## 结论
 
-在本指南中，我们解释了如何使用 .NET 的 Aspose.Words 库在保存文档时启用“不压缩小型元文件”功能。通过遵循提供的步骤并使用提供的 C# 源代码，您可以轻松地在 C# 应用程序中应用此功能。保留未压缩的小文件元数据对于维护文档质量和完整性非常重要。
+通过遵循这些步骤，您可以确保 Word 文档中的小元文件不会被压缩，从而保持其质量和完整性。Aspose.Words for .NET 提供了强大的工具来定制您的文档处理需求，使其成为使用 Word 文档的开发人员的宝贵资产。
+
+## 常见问题解答
+
+### 为什么应该使用“不压缩小型图元文件”功能？
+
+使用此功能有助于维护文档中小型元文件的质量和细节，这对于专业和高质量的输出至关重要。
+
+### 我可以将此功能用于其他文件格式吗？
+
+是的，Aspose.Words for .NET 允许您配置各种文件格式的保存选项，确保文档处理的灵活性。
+
+### 我需要许可证才能使用 Aspose.Words for .NET 吗？
+
+虽然您可以在没有许可证的情况下使用 Aspose.Words for .NET 进行评估，但需要许可证才能解锁完整功能。您可以获取许可证[这里](https://purchase.aspose.com/buy)或使用[临时执照](https://purchase.aspose.com/temporary-license/)进行评估。
+
+### 我如何确保我的文档符合 PDF/A 标准？
+
+ Aspose.Words for .NET 允许您设置合规性选项，例如`PdfCompliance.PdfA1a`以确保您的文件符合特定标准。
+
+### 在哪里可以找到有关 Aspose.Words for .NET 的更多信息？
+
+您可以找到全面的文档[这里](https://reference.aspose.com/words/net/) ，你可以下载最新版本[这里](https://releases.aspose.com/words/net/).

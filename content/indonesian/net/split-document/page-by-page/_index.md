@@ -60,7 +60,7 @@ Dengan kode ini Anda akan dapat membagi dokumen Word menjadi halaman individual 
 
 ## Kesimpulan
 
-Selamat! Anda telah mempelajari cara membagi dokumen Word menjadi beberapa halaman menggunakan fitur Halaman demi Halaman dari Aspose.Words untuk .NET. Dengan mengikuti kode sumber yang disediakan, Anda dapat mengekstrak setiap halaman dokumen dan menyimpannya sebagai dokumen terpisah.
+Selamat! Anda telah mempelajari cara membagi dokumen Word menjadi halaman individual menggunakan fitur Halaman demi Halaman dari Aspose.Words untuk .NET. Dengan mengikuti kode sumber yang disediakan, Anda dapat mengekstrak setiap halaman dokumen dan menyimpannya sebagai dokumen terpisah.
 
 Memisahkan dokumen berdasarkan halaman dapat berguna ketika Anda perlu bekerja dengan halaman tertentu atau mendistribusikan konten secara terperinci. Aspose.Words untuk .NET menyediakan API canggih yang menyederhanakan proses pemisahan dokumen, menjadikannya efisien dan nyaman.
 

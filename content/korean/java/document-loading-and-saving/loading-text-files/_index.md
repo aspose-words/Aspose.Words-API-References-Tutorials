@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- 이 예에서는 텍스트 문서를 로드하고 다음을 사용하여 선행 및 후행 공백을 자릅니다.`TxtLeadingSpacesOptions.TRIM` 그리고`TxtTrailingSpacesOptions.TRIM`.
+ 이 예에서는 텍스트 문서를 로드하고 다음을 사용하여 선행 및 후행 공백을 자릅니다.`TxtLeadingSpacesOptions.TRIM`그리고`TxtTrailingSpacesOptions.TRIM`.
 
 ## 3단계: 텍스트 방향 제어
 
@@ -179,7 +179,7 @@ Aspose.Words for Java를 시작하려면 다음 단계를 따르세요.
 
 ### 로드된 텍스트 문서에서 공백을 어떻게 처리합니까?
 
- 다음을 사용하여 로드된 텍스트 문서에서 선행 및 후행 공백을 처리하는 방법을 제어할 수 있습니다.`TxtLoadOptions` . 다음과 같은 옵션`TxtLeadingSpacesOptions` 그리고`TxtTrailingSpacesOptions`필요에 따라 공간을 자르거나 보존할 수 있습니다. 예제는 이 가이드의 "공간 옵션 처리" 섹션을 참조하세요.
+ 다음을 사용하여 로드된 텍스트 문서에서 선행 및 후행 공백을 처리하는 방법을 제어할 수 있습니다.`TxtLoadOptions` . 다음과 같은 옵션`TxtLeadingSpacesOptions`그리고`TxtTrailingSpacesOptions`필요에 따라 공간을 자르거나 보존할 수 있습니다. 예제는 이 가이드의 "공간 옵션 처리" 섹션을 참조하세요.
 
 ### Aspose.Words for Java에서 텍스트 방향의 중요성은 무엇입니까?
 

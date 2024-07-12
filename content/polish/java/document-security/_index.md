@@ -2,7 +2,7 @@
 title: Bezpieczeństwo dokumentów
 linktitle: Bezpieczeństwo dokumentów
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Zwiększ bezpieczeństwo dokumentów dzięki Aspose.Words dla Java! Wdrażaj ochronę, szyfrowanie i podpisy cyfrowe, aby zapewnić solidną ochronę danych.
+description: Zwiększ bezpieczeństwo dokumentów dzięki Aspose.Words dla Java! Wdróż ochronę, szyfrowanie i podpisy cyfrowe, aby zapewnić solidną ochronę danych.
 type: docs
 weight: 17
 url: /pl/java/document-security/

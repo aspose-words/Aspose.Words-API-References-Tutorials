@@ -2,119 +2,144 @@
 title: Đặt tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ
 linktitle: Đặt tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách đặt tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách đặt tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tạo và tùy chỉnh biểu đồ một cách dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/programming-with-charts/default-options-for-data-labels/
 ---
+## Giới thiệu
 
-Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để đặt các tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ. Mã được cung cấp trình bày cách tạo biểu đồ, thêm chuỗi dữ liệu và tùy chỉnh nhãn dữ liệu bằng Aspose.Words.
+Này! Bạn có hào hứng đi sâu vào thế giới tự động hóa tài liệu không? Hôm nay, chúng ta sẽ khám phá cách sử dụng Aspose.Words cho .NET để tạo các tài liệu tuyệt đẹp theo chương trình. Aspose.Words là một thư viện mạnh mẽ cho phép bạn thao tác với tài liệu Word một cách dễ dàng và trong hướng dẫn này, chúng tôi sẽ tập trung vào việc đặt các tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay người mới, hướng dẫn này sẽ hướng dẫn bạn từng bước để giúp bạn thiết lập và sử dụng ngay lập tức.
 
-## Bước 1: Thiết lập dự án
+## Điều kiện tiên quyết
 
-Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có sẵn các yêu cầu sau:
+Trước khi chúng ta bắt đầu, hãy đảm bảo rằng bạn có mọi thứ bạn cần để làm theo hướng dẫn này. Dưới đây là danh sách kiểm tra nhanh:
 
-- Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng trình quản lý gói NuGet để cài đặt nó.
-- Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
+- Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác: Đây là nơi bạn sẽ viết và chạy mã của mình.
+-  Aspose.Words cho .NET: Bạn có thể[tải xuống phiên bản mới nhất](https://releases.aspose.com/words/net/) và cài đặt nó trong dự án của bạn.
+- Kiến thức cơ bản về lập trình C#: Mặc dù hướng dẫn này thân thiện với người mới bắt đầu nhưng làm quen một chút với C# sẽ rất hữu ích.
+- Đã cài đặt .NET Framework: Đảm bảo rằng bạn đã cài đặt .NET Framework trên máy của mình.
+-  Giấy phép tạm thời cho Aspose.Words: Nhận một giấy phép[đây](https://purchase.aspose.com/temporary-license/) để mở khóa đầy đủ chức năng.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
+Khi bạn đã sắp xếp xong các điều kiện tiên quyết này, chúng tôi đã sẵn sàng triển khai!
 
- Đầu tiên chúng ta hãy tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
+## Nhập không gian tên
+
+Trước tiên, hãy thiết lập dự án của chúng ta và nhập các không gian tên cần thiết. Các không gian tên này rất quan trọng để truy cập chức năng Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.ReportingServices;
+```
+
+## Bước 1: Tạo một tài liệu mới
+
+
+ Hành trình bắt đầu bằng việc tạo một tài liệu mới và khởi tạo một`DocumentBuilder` . Các`DocumentBuilder` lớp cung cấp một tập hợp các phương thức để thao tác nội dung tài liệu một cách dễ dàng.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Tạo một tài liệu mới
 Document doc = new Document();
+
+// Khởi tạo DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tiếp theo, chúng ta chèn biểu đồ vào tài liệu bằng cách sử dụng`InsertChart` phương pháp của`DocumentBuilder`. Trong ví dụ này, chúng tôi sẽ chèn biểu đồ hình tròn.
+### Giải trình
+
+ Trong bước này, chúng tôi đã thiết lập tài liệu và trình tạo mà chúng tôi sẽ sử dụng để chèn và định dạng nội dung của mình. Các`dataDir` biến giữ đường dẫn nơi chúng ta sẽ lưu tài liệu cuối cùng của mình.
+
+## Bước 2: Chèn biểu đồ
+
+ Tiếp theo, chúng ta sẽ thêm biểu đồ hình tròn vào tài liệu của mình. Các`InsertChart` phương pháp của`DocumentBuilder` class khiến việc này trở nên cực kỳ dễ dàng.
 
 ```csharp
+// Chèn biểu đồ hình tròn
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
+
+// Truy cập đối tượng biểu đồ
 Chart chart = shape.Chart;
 ```
 
-## Bước 3: Thêm chuỗi dữ liệu vào biểu đồ
+### Giải trình
 
-Bây giờ, hãy thêm chuỗi dữ liệu vào biểu đồ. Trong ví dụ này, chúng tôi sẽ thêm ba danh mục và giá trị tương ứng của chúng.
+Ở đây, chúng tôi đang chèn biểu đồ hình tròn vào tài liệu của mình. Các`InsertChart` phương thức yêu cầu loại biểu đồ, chiều rộng và chiều cao làm tham số. Sau khi chèn biểu đồ, chúng ta truy cập vào đối tượng biểu đồ để thao tác thêm.
+
+## Bước 3: Tùy chỉnh chuỗi biểu đồ
+
+Bây giờ, chúng ta sẽ xóa mọi chuỗi hiện có trong biểu đồ và thêm chuỗi tùy chỉnh của mình. Chuỗi này sẽ đại diện cho các điểm dữ liệu của chúng tôi.
 
 ```csharp
+// Xóa chuỗi biểu đồ hiện có
 chart.Series.Clear();
+
+// Thêm chuỗi mới vào biểu đồ
 ChartSeries series = chart.Series.Add("Aspose Series 1",
     new string[] { "Category 1", "Category 2", "Category 3" },
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## Bước 4: Tùy chỉnh nhãn dữ liệu
+### Giải trình
 
- Để tùy chỉnh nhãn dữ liệu trong biểu đồ, chúng ta cần truy cập vào`ChartDataLabelCollection` đối tượng liên quan đến chuỗi.
+Trong bước này, chúng tôi đảm bảo biểu đồ của mình trống bằng cách xóa mọi chuỗi có sẵn. Sau đó, chúng tôi thêm một chuỗi mới với các danh mục và giá trị tùy chỉnh sẽ được hiển thị trong biểu đồ hình tròn của chúng tôi.
+
+## Bước 4: Đặt tùy chọn mặc định cho nhãn dữ liệu
+
+Nhãn dữ liệu rất quan trọng để làm cho biểu đồ của bạn có nhiều thông tin. Chúng tôi sẽ đặt các tùy chọn để hiển thị phần trăm, giá trị và tùy chỉnh dấu phân cách.
 
 ```csharp
+// Truy cập bộ sưu tập nhãn dữ liệu
 ChartDataLabelCollection labels = series.DataLabels;
-```
 
- Sau đó chúng ta có thể sửa đổi các thuộc tính khác nhau của`labels`đối tượng để đặt các tùy chọn mong muốn cho nhãn dữ liệu. Trong ví dụ này, chúng tôi sẽ bật hiển thị phần trăm và giá trị, tắt dòng dẫn đầu và đặt dấu phân cách tùy chỉnh.
-
-```csharp
+// Đặt tùy chọn nhãn dữ liệu
 labels.ShowPercentage = true;
 labels.ShowValue = true;
 labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
+### Giải trình
+
+ Ở đây, chúng ta đang truy cập`DataLabels`thuộc tính của loạt sản phẩm của chúng tôi để tùy chỉnh giao diện và thông tin hiển thị trên mỗi nhãn dữ liệu. Chúng tôi đã chọn hiển thị cả phần trăm và giá trị, ẩn dòng dẫn đầu và đặt dấu phân cách tùy chỉnh.
+
 ## Bước 5: Lưu tài liệu
 
- Cuối cùng, chúng ta lưu tài liệu vào thư mục đã chỉ định bằng cách sử dụng lệnh`Save` phương pháp của`Document` sự vật.
+Cuối cùng, chúng ta sẽ lưu tài liệu của mình vào thư mục đã chỉ định. Bước này đảm bảo rằng tất cả các thay đổi của chúng tôi được ghi vào một tệp.
 
 ```csharp
+// Lưu tài liệu
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-Điều này hoàn tất việc triển khai cài đặt các tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ bằng Aspose.Words for .NET.
+### Giải trình
 
-### Mã nguồn ví dụ cho Tùy chọn mặc định cho nhãn dữ liệu bằng Aspose.Words cho .NET 
-
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	ChartSeries series = chart.Series.Add("Aspose Series 1",
-		new string[] { "Category 1", "Category 2", "Category 3" },
-		new double[] { 2.7, 3.2, 0.8 });
-	ChartDataLabelCollection labels = series.DataLabels;
-	labels.ShowPercentage = true;
-	labels.ShowValue = true;
-	labels.ShowLeaderLines = false;
-	labels.Separator = " - ";
-	doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
-```
+ Ở bước cuối cùng này, chúng tôi lưu tài liệu của mình bằng cách sử dụng`Save` phương pháp. Tài liệu sẽ được lưu vào thư mục được chỉ định bởi`dataDir`, với tên "WorkingWithCharts.DefaultOptionsForDataLabels.docx".
 
 ## Phần kết luận
 
-Trong hướng dẫn này, bạn đã học cách đặt các tùy chọn mặc định cho nhãn dữ liệu trong biểu đồ bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước, bạn có thể tạo biểu đồ, thêm chuỗi dữ liệu và tùy chỉnh nhãn dữ liệu để đáp ứng các yêu cầu cụ thể của mình. Aspose.Words for .NET cung cấp API mạnh mẽ để Xử lý Từ với các biểu đồ trong tài liệu Word, cho phép bạn thao tác các thành phần biểu đồ khác nhau và đạt được hình thức cũng như chức năng mong muốn.
+Và bạn có nó rồi đấy! Bạn đã tạo thành công tài liệu Word có biểu đồ hình tròn tùy chỉnh bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng tự động hóa việc tạo và thao tác tài liệu, giúp bạn tiết kiệm thời gian và công sức. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ loại tài liệu nào khác, Aspose.Words đều có thể hỗ trợ bạn.
 
- Bằng cách thiết lập các thuộc tính của`ChartDataLabelCollection`đối tượng được liên kết với chuỗi biểu đồ, bạn có thể kiểm soát việc hiển thị nhãn dữ liệu, bao gồm các tùy chọn như hiển thị tỷ lệ phần trăm, giá trị, dòng chỉ dẫn và dấu phân cách tùy chỉnh. Tính linh hoạt này cho phép bạn trình bày dữ liệu một cách hiệu quả và nâng cao khả năng trình bày trực quan của biểu đồ.
+ Hãy thoải mái khám phá[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) để biết thêm các tính năng và ví dụ. Chúc mừng mã hóa!
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Q1. Aspose.Words cho .NET là gì?
-Aspose.Words for .NET là một thư viện cho phép các nhà phát triển tạo, thao tác và lưu tài liệu Word theo chương trình bằng các ứng dụng .NET. Nó cung cấp nhiều tính năng cho Xử lý văn bản với các thành phần tài liệu, bao gồm cả biểu đồ.
+### Tôi có thể sử dụng Aspose.Words miễn phí không?
+Bạn có thể sử dụng Aspose.Words miễn phí với[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) hoặc khám phá các tính năng của nó bằng cách sử dụng[dùng thử miễn phí](https://releases.aspose.com/).
 
-#### Q2. Làm cách nào tôi có thể cài đặt Aspose.Words cho .NET?
-Bạn có thể cài đặt Aspose.Words cho .NET bằng cách tải xuống bằng cách sử dụng trình quản lý gói NuGet trong Visual Studio. Chỉ cần tìm kiếm "Aspose.Words" trong trình quản lý gói NuGet và cài đặt nó vào dự án của bạn.
+### Làm cách nào để nhận được hỗ trợ cho Aspose.Words?
+ Bạn có thể nhận được hỗ trợ thông qua[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8).
 
-#### Q3. Tôi có thể tùy chỉnh các khía cạnh khác của biểu đồ bằng Aspose.Words cho .NET không?
-Có, Aspose.Words for .NET cho phép bạn tùy chỉnh các khía cạnh khác nhau của biểu đồ, chẳng hạn như loại biểu đồ, nhãn trục, chú giải, vùng vẽ, v.v. Bạn có thể truy cập và sửa đổi các thuộc tính khác nhau của đối tượng biểu đồ để đạt được hình thức và hành vi mong muốn.
+### Tôi có thể thêm các loại biểu đồ khác không?
+ Có, Aspose.Words hỗ trợ nhiều loại biểu đồ khác nhau như biểu đồ thanh, đường và cột. Kiểm tra[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.
 
-#### Q4. Tôi có thể lưu biểu đồ ở các định dạng khác nhau không?
- Có, Aspose.Words for .NET hỗ trợ lưu tài liệu chứa biểu đồ ở nhiều định dạng khác nhau, bao gồm DOCX, PDF, HTML, v.v. Bạn có thể chọn định dạng phù hợp dựa trên yêu cầu của mình và sử dụng`Save` phương pháp của`Document` đối tượng để lưu tài liệu.
+### Aspose.Words có tương thích với .NET Core không?
+ Có, Aspose.Words tương thích với .NET Core. Bạn có thể tìm thêm thông tin trong[tài liệu](https://reference.aspose.com/words/net/).
 
-#### Q5. Tôi có thể áp dụng những kỹ thuật này cho các loại biểu đồ khác không?
-Có, các kỹ thuật được mô tả trong hướng dẫn này có thể được áp dụng cho các loại biểu đồ khác được Aspose.Words hỗ trợ cho .NET. Điều quan trọng là truy cập vào các đối tượng và thuộc tính có liên quan cụ thể cho loại biểu đồ mà bạn đang Xử lý Từ.
+### Làm cách nào tôi có thể mua giấy phép cho Aspose.Words?
+ Bạn có thể mua giấy phép từ[Cửa hàng Aspose](https://purchase.aspose.com/buy).
+

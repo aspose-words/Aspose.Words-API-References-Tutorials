@@ -22,7 +22,7 @@ Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfü
 
 ## Einrichten des Projekts
 
-Beginnen Sie mit der Erstellung eines neuen Java-Projekts in Ihrer bevorzugten IDE. Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words zum Klassenpfad Ihres Projekts hinzufügen.
+Beginnen Sie mit der Erstellung eines neuen Java-Projekts in Ihrer bevorzugten IDE. Achten Sie darauf, die Bibliothek Aspose.Words zum Klassenpfad Ihres Projekts hinzuzufügen.
 
 ## Laden eines Word-Dokuments
 
@@ -51,7 +51,7 @@ Jetzt haben Sie Ihr Word-Dokument erfolgreich in PDF konvertiert. Mit dem obigen
 
 ## Abschluss
 
-Das Exportieren von Dokumenten in PDF mit Aspose.Words für Java ist ein einfacher und effizienter Vorgang. Diese leistungsstarke API bietet Ihnen die Tools, mit denen Sie Dokumentkonvertierungsaufgaben problemlos automatisieren können. Jetzt können Sie Ihre Dokumente ganz einfach im PDF-Format archivieren, freigeben oder drucken.
+Das Exportieren von Dokumenten in PDF mit Aspose.Words für Java ist ein einfacher und effizienter Vorgang. Diese leistungsstarke API bietet Ihnen die Tools, mit denen Sie Dokumentkonvertierungsaufgaben problemlos automatisieren können. Jetzt können Sie Ihre Dokumente problemlos im PDF-Format archivieren, freigeben oder drucken.
 
 ## Häufig gestellte Fragen
 

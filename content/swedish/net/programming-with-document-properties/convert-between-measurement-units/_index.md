@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-document-properties/convert-between-measurement-units/
 ---
 
-den här handledningen går vi igenom C#-källkoden för att konvertera mellan måttenheter med Aspose.Words för .NET. Denna funktion låter dig specificera marginaler, sidhuvuden och sidfotsavstånd etc. i olika måttenheter.
+I den här handledningen går vi igenom C#-källkoden för att konvertera mellan måttenheter med Aspose.Words för .NET. Denna funktion låter dig specificera marginaler, sidhuvuden och sidfotsavstånd etc. i olika måttenheter.
 
 ## Steg 1: Projektinställning
 
@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Denna kod använder`ConvertUtil` klass av Aspose.Words för att konvertera de angivna värdena till tum (`InchToPoint` ). Du kan också använda andra konverteringsmetoder som är tillgängliga i`ConvertUtil` klass för att konvertera värden till andra måttenheter.
+ Denna kod använder`ConvertUtil` klass av Aspose.Words för att konvertera de angivna värdena till tum (`InchToPoint`). Du kan också använda andra konverteringsmetoder som är tillgängliga i`ConvertUtil` klass för att konvertera värden till andra måttenheter.
 
 ### Exempel på källkod för Convert Between Measurement Units med Aspose.Words för .NET
 

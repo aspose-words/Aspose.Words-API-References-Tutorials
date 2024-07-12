@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Stap 2: Laad het document en herhaal de inhoudsbesturingselementen
- Laad het Word-document met behulp van de`Document`constructor, waarbij het pad naar het document als parameter wordt doorgegeven. Herhaal alle gestructureerde documenttags in het document met behulp van a`foreach` lus.
+ Laad het Word-document met behulp van de`Document` constructor, waarbij het pad naar het document als parameter wordt doorgegeven. Herhaal alle gestructureerde documenttags in het document met behulp van a`foreach` lus.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Stap 6: Sla het gewijzigde document op
- Sla het gewijzigde document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.ModifyContentControls.docx".
+ Sla het gewijzigde document op in de opgegeven map met behulp van de`Save`methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.ModifyContentControls.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

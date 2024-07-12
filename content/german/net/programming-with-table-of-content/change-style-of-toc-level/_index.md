@@ -85,7 +85,7 @@ Dieser Codeausschnitt erstellt ein neues, leeres Word-Dokument.
 
 #### F: Wie kann ich mit Aspose.Words für .NET den Stil einer bestimmten Ebene im Inhaltsverzeichnis ändern?
 
- A: Sobald Sie ein Dokument geladen haben, können Sie den Stil einer bestimmten Ebene im Inhaltsverzeichnis ändern, indem Sie auf die Stile des Dokuments zugreifen und die erforderlichen Änderungen vornehmen. In Aspose.Words für .NET können Sie den`Styles` Eigentum der`Document` -Klasse, um auf die Dokumentstile zuzugreifen, und ändern Sie dann den gewünschten Stil mithilfe der Eigenschaften. Um beispielsweise den Stil der ersten Ebene des Inhaltsverzeichnisses in Fettdruck zu ändern, können Sie den folgenden Code verwenden:
+ A: Sobald Sie ein Dokument geladen haben, können Sie den Stil einer bestimmten Ebene im Inhaltsverzeichnis ändern, indem Sie auf die Stile des Dokuments zugreifen und die erforderlichen Änderungen vornehmen. In Aspose.Words für .NET können Sie den`Styles` Eigentum der`Document` -Klasse, um auf die Dokumentstile zuzugreifen, und ändern Sie dann den gewünschten Stil mithilfe der Eigenschaften. Um beispielsweise den Stil der ersten Ebene des Inhaltsverzeichnisses in Fettschrift zu ändern, können Sie den folgenden Code verwenden:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
@@ -99,7 +99,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### F: Wie speichere ich das geänderte Dokument, nachdem ich den Stil des Inhaltsverzeichnisses mit Aspose.Words für .NET geändert habe?
 
- A: Sobald Sie die erforderlichen Änderungen am Stil des Inhaltsverzeichnisses vorgenommen haben, können Sie das geänderte Dokument mit dem`Save` Methode der`Document` Klasse. Geben Sie den gewünschten Dateipfad und -namen für das Ausgabedokument als Parameter an`Save` Methode. Hier ist ein Beispiel:
+ A: Sobald Sie die erforderlichen Änderungen am Stil des Inhaltsverzeichnisses vorgenommen haben, können Sie das geänderte Dokument mit dem`Save` Methode der`Document` Klasse. Geben Sie den gewünschten Dateipfad und Namen für das Ausgabedokument als Parameter an die`Save` Methode. Hier ist ein Beispiel:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
@@ -113,7 +113,7 @@ A: Ja, zusätzlich zum Ändern des Stils können Sie mit Aspose.Words für .NET 
 
 #### F: Wie kann ich mit Aspose.Words für .NET einen benutzerdefinierten Stil für eine bestimmte Ebene im Inhaltsverzeichnis festlegen?
 
- A: Um einen benutzerdefinierten Stil für eine bestimmte Ebene im Inhaltsverzeichnis mit Aspose.Words für .NET festzulegen, können Sie ein neues`Style` Objekt, konfigurieren Sie seine Eigenschaften entsprechend Ihrem gewünschten Stil und ordnen Sie es der entsprechenden Ebene des Inhaltsverzeichnisses über die`Styles` Eigentum der`Document` Klasse. Auf diese Weise können Sie basierend auf Ihren Anforderungen einen benutzerdefinierten Stil für eine bestimmte Ebene definieren.
+ A: Um mit Aspose.Words für .NET einen benutzerdefinierten Stil für eine bestimmte Ebene im Inhaltsverzeichnis anzugeben, können Sie ein neues`Style` Objekt, konfigurieren Sie seine Eigenschaften entsprechend Ihrem gewünschten Stil und ordnen Sie es der entsprechenden Ebene des Inhaltsverzeichnisses über die`Styles` Eigentum der`Document` Klasse. Auf diese Weise können Sie basierend auf Ihren Anforderungen einen benutzerdefinierten Stil für eine bestimmte Ebene definieren.
 
 #### F: Kann ich mit Aspose.Words für .NET den Stil des Inhaltsverzeichnisses in einem vorhandenen Word-Dokument ändern?
 

@@ -2,7 +2,7 @@
 title: विषय सूची पीढ़ी
 linktitle: विषय सूची पीढ़ी
 second_title: Aspose.Words जावा दस्तावेज़ प्रसंस्करण एपीआई
-description: Java के लिए Aspose.Words का उपयोग करके गतिशील विषय-सूची बनाना सीखें। चरण-दर-चरण मार्गदर्शन और स्रोत कोड उदाहरणों के साथ TOC जनरेशन में महारत हासिल करें।
+description: Aspose.Words का उपयोग करके Java के लिए गतिशील विषय-सूची बनाना सीखें। चरण-दर-चरण मार्गदर्शन और स्रोत कोड उदाहरणों के साथ TOC जनरेशन में महारत हासिल करें।
 type: docs
 weight: 14
 url: /hi/java/table-processing/table-contents-generation/

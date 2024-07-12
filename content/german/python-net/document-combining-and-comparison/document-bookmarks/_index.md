@@ -1,7 +1,7 @@
 ---
 title: Die Leistungsfähigkeit von Dokumentlesezeichen nutzen
 linktitle: Die Leistungsfähigkeit von Dokumentlesezeichen nutzen
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python die Leistungsfähigkeit von Dokumentlesezeichen nutzen. Erstellen, verwalten und navigieren Sie durch Lesezeichen mit Schritt-für-Schritt-Anleitungen und Codebeispielen.
 type: docs
 weight: 11

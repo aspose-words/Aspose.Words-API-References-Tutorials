@@ -15,7 +15,7 @@ url: /es/net/basic-conversions/docx-to-rtf/
 Antes de comenzar, asegúrese de tener lo siguiente:
 
 1.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/).
-2.  Una licencia Aspose válida: puede comprar una licencia completa[aquí](https://purchase.aspose.com/buy) o conseguir uno temporal[aquí](https://purchase.aspose.com/temporary-license/).
+2.  Una licencia Aspose válida: puede comprar una licencia completa[aquí](https://purchase.aspose.com/buy) o consigue uno temporal[aquí](https://purchase.aspose.com/temporary-license/).
 3. Entorno de desarrollo: un IDE como Visual Studio.
 4. .NET Framework: asegúrese de tener .NET Framework instalado en su máquina.
 

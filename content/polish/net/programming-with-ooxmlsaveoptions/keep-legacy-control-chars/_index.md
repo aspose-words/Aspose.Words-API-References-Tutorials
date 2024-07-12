@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 W tym samouczku zbadaliśmy funkcjonalność zachowywania starszych znaków kontrolnych podczas zapisywania dokumentu przy użyciu Aspose.Words dla .NET. Nauczyliśmy się, jak zachować te znaki specjalne, które mogą być ważne dla prawidłowego formatowania lub wyświetlania dokumentu.
 
- Zachowywanie starszych znaków sterujących jest szczególnie przydatne podczas przetwarzania tekstu w dokumentach korzystających ze starszych lub specyficznych funkcji, takich jak specjalne znaki sterujące. Włączając opcję`KeepLegacyControlChars` opcję podczas zapisywania dokumentu, masz pewność, że znaki te zostaną zachowane.
+ Zachowywanie starszych znaków kontrolnych jest szczególnie przydatne podczas przetwarzania tekstu w dokumentach korzystających ze starszych lub specyficznych funkcji, takich jak specjalne znaki sterujące. Włączając opcję`KeepLegacyControlChars` opcję podczas zapisywania dokumentu, masz pewność, że znaki te zostaną zachowane.
 
 Aspose.Words dla .NET oferuje szereg elastycznych i wydajnych opcji tworzenia kopii zapasowych, aby spełnić Twoje potrzeby w zakresie manipulacji dokumentami. Korzystając z odpowiednich opcji, możesz dostosować proces tworzenia kopii zapasowych tak, aby zachować specyfikę Twoich dokumentów.
 

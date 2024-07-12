@@ -108,7 +108,7 @@ doc.save("watermarked_document.docx", SaveFormat.DOCX);
 Große Dokumentdateien können unhandlich sein. Entdecken Sie Techniken zur Optimierung der Dokumentgröße ohne Qualitätseinbußen.
 
 ```java
-// Optimieren der Dokumentgröße
+// Optimieren Sie die Dokumentgröße
 Document doc = new Document("large_document.docx");
 doc.cleanup();
 doc.save("optimized_document.docx", SaveFormat.DOCX);

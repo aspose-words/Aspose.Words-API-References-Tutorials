@@ -80,7 +80,7 @@ comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 comparison.highlight_changes()
 ```
 
-## 比較結果を保存する
+## 比較結果の保存
 
 比較結果を新しいファイルに保存します。
 

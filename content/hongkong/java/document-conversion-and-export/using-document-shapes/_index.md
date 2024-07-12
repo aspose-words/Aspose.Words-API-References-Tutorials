@@ -20,7 +20,7 @@ url: /zh-hant/java/document-conversion-and-export/using-document-shapes/
 
 ### 插入組形狀
 
-A`GroupShape`允許您將多個形狀組合在一起。以下是建立和插入的方法`GroupShape`：
+A`GroupShape`允許您將多個形狀組合在一起。以下是建立和插入的方法`GroupShape`:
 
 ```java
 Document doc = new Document();
@@ -174,7 +174,7 @@ Aspose.Words for Java 是一個 Java 函式庫，可讓開發人員以程式設�
 
 您可以透過以下連結從 Aspose 網站下載 Aspose.Words for Java：[下載 Java 版 Aspose.Words](https://releases.aspose.com/words/java/)
 
-### 使用文檔形狀有什麼好處？
+### 使用文件形狀有什麼好處？
 
 文件形狀為文件添加視覺元素和互動性，使文件更具吸引力和資訊量。使用形狀，您可以建立標註、按鈕、影像、浮水印等，從而增強整體使用者體驗。
 

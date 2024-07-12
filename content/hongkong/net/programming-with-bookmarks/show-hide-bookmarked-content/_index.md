@@ -2,7 +2,7 @@
 title: 在 Word 文件中顯示隱藏書籤內容
 linktitle: 在 Word 文件中顯示隱藏書籤內容
 second_title: Aspose.Words 文件處理 API
-description: 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中動態顯示或隱藏書籤內容。
+description: 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 動態顯示或隱藏 Word 文件中的書籤內容。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-bookmarks/show-hide-bookmarked-content/
@@ -142,7 +142,7 @@ Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員以�
 
 ### 2. 我可以免費使用Aspose.Words for .NET嗎？
 
-您可以使用 Aspose.Words for .NET 嘗試[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
+您可以嘗試使用 Aspose.Words for .NET[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
 
 ### 3. 如何修改書籤的其他屬性？
 

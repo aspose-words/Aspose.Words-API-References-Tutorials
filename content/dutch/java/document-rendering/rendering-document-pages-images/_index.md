@@ -70,7 +70,7 @@ for (int pageIndex = 0; pageIndex < doc.getPageCount(); pageIndex++) {
 
 In deze stapsgewijze handleiding hebben we geleerd hoe u Aspose.Words voor Java kunt gebruiken om documentpagina's als afbeeldingen weer te geven. Dit kan ongelooflijk handig zijn voor verschillende toepassingen waarbij visuele weergaven van documenten vereist zijn.
 
-Vergeet niet om de opslagopties en bestandspaden aan te passen aan uw specifieke behoeften. Aspose.Words voor Java biedt uitgebreide flexibiliteit bij het aanpassen van het weergaveproces, waardoor u de gewenste uitvoer kunt bereiken.
+Vergeet niet om de opslagopties en bestandspaden aan te passen aan uw specifieke behoeften. Aspose.Words voor Java biedt uitgebreide flexibiliteit bij het aanpassen van het weergaveproces, zodat u de gewenste uitvoer kunt bereiken.
 
 ## Veelgestelde vragen
 

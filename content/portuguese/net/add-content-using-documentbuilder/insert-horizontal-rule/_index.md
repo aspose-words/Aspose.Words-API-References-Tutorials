@@ -9,7 +9,7 @@ url: /pt/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## Introdução
 
-Olá, colegas desenvolvedores! Você já se envolveu profundamente em um projeto de documento do Word e pensou: “Cara, eu realmente preciso inserir uma regra horizontal aqui para dividir as coisas”? Bem, adivinhe? Você está com sorte! No tutorial de hoje, vamos nos aprofundar em como inserir uma regra horizontal em um documento do Word usando Aspose.Words for .NET. Este não é apenas um tutorial comum – ele está repleto de etapas detalhadas, explicações envolventes e uma pitada de diversão. Então, aperte o cinto e prepare-se para se tornar um profissional no manuseio do Aspose.Words for .NET!
+Olá, colegas desenvolvedores! Você já se envolveu em um projeto de documento do Word e pensou: “Cara, eu realmente preciso inserir uma regra horizontal aqui para dividir as coisas”? Bem, adivinhe? Você está com sorte! No tutorial de hoje, vamos nos aprofundar em como inserir uma regra horizontal em um documento do Word usando Aspose.Words for .NET. Este não é apenas um tutorial comum – ele está repleto de etapas detalhadas, explicações envolventes e uma pitada de diversão. Então, aperte o cinto e prepare-se para se tornar um profissional no manuseio do Aspose.Words for .NET!
 
 ## Pré-requisitos
 

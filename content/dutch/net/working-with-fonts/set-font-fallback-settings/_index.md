@@ -64,7 +64,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 doc.FontSettings = fontSettings;
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte het document op. De fallback-instellingen voor het lettertype worden tijdens de opslagbewerking gebruikt om een juiste lettertypevervanging te garanderen.
 

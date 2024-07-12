@@ -2,109 +2,110 @@
 title: Podpisywanie zaszyfrowanego dokumentu Word
 linktitle: Podpisywanie zaszyfrowanego dokumentu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak cyfrowo podpisać zaszyfrowany dokument tekstowy za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak podpisywać zaszyfrowane dokumenty programu Word przy użyciu Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku. Idealny dla programistów.
 type: docs
 weight: 10
 url: /pl/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
-tym samouczku przeprowadzimy Cię przez kolejne kroki korzystania z funkcji podpisywania zaszyfrowanego dokumentu tekstowego za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia cyfrowe podpisanie dokumentu programu Word zaszyfrowanego przy użyciu hasła deszyfrującego. Wykonaj poniższe kroki:
+## Wstęp
 
-## Krok 1: Ustawianie opcji podpisu
+Czy zastanawiałeś się kiedyś, jak podpisać zaszyfrowany dokument Word? Dzisiaj przejdziemy przez ten proces, używając Aspose.Words dla .NET. Zapnij pasy i przygotuj się na szczegółowy, wciągający i zabawny samouczek!
 
-Utwórz instancję klasy SignOptions i ustaw hasło deszyfrujące:
+## Warunki wstępne
+
+Zanim zagłębisz się w kod, upewnij się, że masz wszystko, czego potrzebujesz:
+
+1.  Aspose.Words dla .NET: Pobierz i zainstaluj z[Tutaj](https://releases.aspose.com/words/net/).
+2. Visual Studio: Upewnij się, że masz go zainstalowanego.
+3. Ważny certyfikat: Będziesz potrzebować pliku certyfikatu .pfx.
+4. Podstawowa znajomość języka C#: zrozumienie podstaw sprawi, że ten samouczek będzie płynniejszy.
+
+## Importuj przestrzenie nazw
+
+Najpierw zaimportujmy niezbędne przestrzenie nazw. Są one kluczowe dla uzyskania dostępu do funkcjonalności Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionpassword" };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.DigitalSignatures;
 ```
 
-Pamiętaj, aby podać prawidłowe hasło deszyfrujące dla zaszyfrowanego dokumentu.
+Podzielmy teraz proces na proste, łatwe do wykonania kroki.
 
-## Krok 2: Ładowanie certyfikatu
+## Krok 1: Konfiguracja projektu
 
-Zacznij od załadowania certyfikatu podpisującego przy użyciu klasy CertyfikatHolder:
+Najpierw skonfiguruj projekt programu Visual Studio. Otwórz program Visual Studio i utwórz nową aplikację konsolową C#. Nadaj mu nazwę opisową, na przykład „SignEncryptedWordDoc”.
+
+## Krok 2: Dodawanie Aspose.Words do Twojego projektu
+
+Następnie musimy dodać Aspose.Words do Twojego projektu. Można to zrobić na kilka sposobów, ale użycie narzędzia NuGet jest najprostsze. 
+
+1. Otwórz konsolę Menedżera pakietów NuGet w obszarze Narzędzia > Menedżer pakietów NuGet > Konsola menedżera pakietów.
+2. Uruchom następujące polecenie:
+
+```powershell
+Install-Package Aspose.Words
+```
+
+## Krok 3: Przygotowanie katalogu dokumentów
+
+Będziesz potrzebować katalogu do przechowywania dokumentów i certyfikatów programu Word. Stwórzmy taki.
+
+1. Utwórz katalog na swoim komputerze. Dla uproszczenia nazwijmy go „Katalogiem Dokumentów”.
+2. Umieść dokument programu Word (np. „Document.docx”) i certyfikat .pfx (np. „morzal.pfx”) w tym katalogu.
+
+## Krok 4: Pisanie kodu
+
+ Teraz zagłębmy się w kod. Otwórz swoje`Program.cs` i zacznij od ustawienia ścieżki do katalogu dokumentów i zainicjowania pliku`SignOptions` z hasłem deszyfrującym.
+
+```csharp
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
+```
+
+## Krok 5: Ładowanie certyfikatu
+
+ Następnie załaduj swój certyfikat za pomocą metody`CertificateHolder`klasa. Będzie to wymagało ścieżki do pliku .pfx i hasła do certyfikatu.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Pamiętaj, aby podać poprawną ścieżkę do certyfikatu i powiązanego hasła.
+## Krok 6: Podpisanie dokumentu
 
-## Krok 3: Podpisanie zaszyfrowanego dokumentu
-
-Do podpisania zaszyfrowanego dokumentu użyj klasy DigitalSignatureUtil:
+ Na koniec skorzystaj z`DigitalSignatureUtil.Sign` metoda podpisywania zaszyfrowanego dokumentu programu Word. Ta metoda wymaga pliku wejściowego, pliku wyjściowego, posiadacza certyfikatu i opcji podpisu.
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-	certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Document.docx",
+    dataDir + "DigitallySignedDocument.docx",
+    certHolder,
+    signOptions);
 ```
 
-Pamiętaj, aby określić prawidłowe ścieżki zaszyfrowanego dokumentu, podpisanego dokumentu i certyfikatu.
+## Krok 7: Uruchomienie kodu
 
-### Przykładowy kod źródłowy do podpisywania zaszyfrowanego dokumentu przy użyciu Aspose.Words dla .NET
-
-Oto kompletny kod źródłowy do podpisania zaszyfrowanego dokumentu za pomocą Aspose.Words dla .NET:
-
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-		certHolder, signOptions);
-	
-
-```
-Wykonując poniższe kroki, możesz łatwo podpisać zaszyfrowany dokument Word za pomocą Aspose.Words dla .NET.
+Zapisz plik i uruchom projekt. Jeśli wszystko jest poprawnie skonfigurowane, podpisany dokument powinien pojawić się we wskazanym katalogu.
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy proces podpisywania zaszyfrowanego dokumentu programu Word przy użyciu Aspose.Words dla .NET. Podając hasło do odszyfrowania i certyfikat podpisu, możemy dodać podpis cyfrowy do zaszyfrowanego dokumentu. Podpisywanie zaszyfrowanych dokumentów zapewnia ich autentyczność i integralność, zapewniając dodatkową warstwę bezpieczeństwa. Aspose.Words dla .NET umożliwia podpisywanie zaszyfrowanych dokumentów oraz utrzymanie bezpieczeństwa i wiarygodności plików Word.
+I masz to! Pomyślnie podpisałeś zaszyfrowany dokument Word przy użyciu Aspose.Words dla .NET. Dzięki tej potężnej bibliotece podpisywanie cyfrowe staje się proste, nawet w przypadku zaszyfrowanych plików. Miłego kodowania!
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Co to jest podpisywanie dokumentów w Aspose.Words dla .NET?
+### Czy mogę użyć innego typu certyfikatu?
+Tak, Aspose.Words obsługuje różne typy certyfikatów, o ile są one w odpowiednim formacie.
 
-Odp.: Podpisywanie dokumentów w Aspose.Words dla .NET odnosi się do procesu cyfrowego podpisywania dokumentu programu Word w celu zapewnienia jego autentyczności, integralności i niezaprzeczalności. Polega na dodaniu podpisu cyfrowego do dokumentu za pomocą certyfikatu.
+### Czy można podpisać wiele dokumentów jednocześnie?
+Absolutnie! Możesz przeglądać kolekcję dokumentów i programowo podpisywać każdy z nich.
 
-#### P: Co to jest zaszyfrowany dokument programu Word?
+### Co się stanie, jeśli zapomnę hasła do odszyfrowania?
+Niestety bez hasła do odszyfrowania nie będziesz mógł podpisać dokumentu.
 
-Odp.: Zaszyfrowany dokument programu Word to dokument zaszyfrowany przy użyciu hasła. Szyfrowanie to środek bezpieczeństwa, który chroni zawartość dokumentu poprzez zaszyfrowanie go i uczynienie go nieczytelnym bez prawidłowego hasła deszyfrującego.
+### Czy mogę dodać widoczny podpis do dokumentu?
+Tak, Aspose.Words umożliwia również dodawanie widocznych podpisów cyfrowych.
 
-#### P: Jak mogę podpisać zaszyfrowany dokument Word przy użyciu Aspose.Words dla .NET?
-
-Odp.: Aby podpisać zaszyfrowany dokument Word przy użyciu Aspose.Words dla .NET, musisz podać hasło deszyfrujące wraz z certyfikatem podpisu. Wykonaj następujące kroki:
-1.  Ustaw hasło deszyfrujące w pliku`SignOptions` obiekt.
-2.  Załaduj certyfikat podpisywania za pomocą pliku`CertificateHolder` klasa.
-3.  Użyj`DigitalSignatureUtil.Sign` metodę podpisania zaszyfrowanego dokumentu, podając niezbędne parametry.
-
-#### P: Jaki jest cel podpisywania zaszyfrowanego dokumentu?
-
-Odp.: Podpisywanie zaszyfrowanego dokumentu za pomocą Aspose.Words dla .NET umożliwia dodanie podpisu cyfrowego do dokumentu, nawet jeśli jest on zaszyfrowany. Zapewnia to dodatkową warstwę bezpieczeństwa oraz zapewnia autentyczność i integralność zaszyfrowanej treści. Pozwala odbiorcom zweryfikować pochodzenie dokumentu i wykryć wszelkie manipulacje.
-
-#### P: Czy mogę podpisać zaszyfrowany dokument bez podawania hasła do odszyfrowania?
-
-O: Nie, aby podpisać zaszyfrowany dokument, musisz podać prawidłowe hasło deszyfrujące. Hasło deszyfrujące jest wymagane, aby uzyskać dostęp do zaszyfrowanej zawartości dokumentu i zmodyfikować go przed złożeniem podpisu cyfrowego.
-
-#### P: Czy mogę podpisać zaszyfrowany dokument programu Word przy użyciu dowolnego certyfikatu?
-
-Odp.: Aby podpisać zaszyfrowany dokument Word przy użyciu Aspose.Words dla .NET, potrzebujesz ważnego certyfikatu X.509. Certyfikat można uzyskać od zaufanego urzędu certyfikacji (CA) lub do celów testowych można użyć certyfikatu z podpisem własnym.
-
-#### P: Czy mogę podpisywać wiele zaszyfrowanych dokumentów programu Word przy użyciu tego samego certyfikatu?
-
- Odp.: Tak, możesz podpisywać wiele zaszyfrowanych dokumentów programu Word przy użyciu tego samego certyfikatu. Po załadowaniu certyfikatu za pomocą pliku`CertificateHolder` class, możesz go ponownie użyć do podpisania wielu zaszyfrowanych dokumentów.
-
-#### P: Czy mogę zweryfikować podpis cyfrowy podpisanego zaszyfrowanego dokumentu?
-
- Odp.: Tak, Aspose.Words dla .NET zapewnia funkcję weryfikacji podpisu cyfrowego podpisanego zaszyfrowanego dokumentu. Możesz skorzystać z`DigitalSignatureUtil.Verify` metoda sprawdzania ważności i autentyczności podpisu cyfrowego.
-
-#### P: Jaki format pliku obsługuje Aspose.Words dla .NET do podpisywania zaszyfrowanych dokumentów?
-
- Odp.: Aspose.Words dla .NET obsługuje podpisywanie zaszyfrowanych dokumentów Word w formacie pliku DOCX. Możesz podpisywać zaszyfrowane pliki DOCX za pomocą`DigitalSignatureUtil.Sign` metodę wraz z niezbędnym hasłem deszyfrującym i certyfikatem.
-
-#### P: W jaki sposób podpisanie zaszyfrowanego dokumentu wpływa na szyfrowanie?
-
-Odp.: Podpisanie zaszyfrowanego dokumentu za pomocą Aspose.Words dla .NET nie ma wpływu na szyfrowanie dokumentu. Szyfrowanie pozostaje nienaruszone, a podpis cyfrowy jest dodawany do zaszyfrowanej treści. Podpis cyfrowy zapewnia dodatkowe bezpieczeństwo i weryfikację bez naruszania szyfrowania zastosowanego w dokumencie.
+### Czy istnieje sposób na weryfikację podpisu?
+ Tak, możesz skorzystać z`DigitalSignatureUtil.Verify` metoda weryfikacji podpisów.

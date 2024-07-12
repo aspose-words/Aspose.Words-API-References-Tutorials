@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Aqui, adicionamos algum texto antes e depois do conteúdo marcado. O`StartBookmark` e`EndBookmark` métodos definem os limites do marcador.
+ Aqui, adicionamos algum texto antes e depois do conteúdo marcado. O`StartBookmark`e`EndBookmark` métodos definem os limites do marcador.
 
 ## Etapa 3: Inserindo um Campo Condicional
 

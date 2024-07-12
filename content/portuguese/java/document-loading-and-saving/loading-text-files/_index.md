@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- Neste exemplo, carregamos um documento de texto e cortamos os espaços iniciais e finais usando`TxtLeadingSpacesOptions.TRIM` e`TxtTrailingSpacesOptions.TRIM`.
+ Neste exemplo, carregamos um documento de texto e cortamos os espaços iniciais e finais usando`TxtLeadingSpacesOptions.TRIM`e`TxtTrailingSpacesOptions.TRIM`.
 
 ## Etapa 3: Controlando a direção do texto
 
@@ -179,7 +179,7 @@ Para começar a usar Aspose.Words para Java, siga estas etapas:
 
 ### Como lidar com espaços em documentos de texto carregados?
 
- Você pode controlar como os espaços iniciais e finais são tratados em documentos de texto carregados usando`TxtLoadOptions` . Opções como`TxtLeadingSpacesOptions` e`TxtTrailingSpacesOptions`permitem que você corte ou preserve espaços conforme necessário. Consulte a seção "Opções de tratamento de espaços" neste guia para obter um exemplo.
+ Você pode controlar como os espaços iniciais e finais são tratados em documentos de texto carregados usando`TxtLoadOptions` . Opções como`TxtLeadingSpacesOptions`e`TxtTrailingSpacesOptions`permitem que você corte ou preserve espaços conforme necessário. Consulte a seção "Opções de tratamento de espaços" neste guia para obter um exemplo.
 
 ### Qual é o significado da direção do texto em Aspose.Words for Java?
 

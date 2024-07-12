@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 
-tym samouczku dowiemy się, jak pobrać preferowany typ szerokości i jego wartość z komórki tabeli w dokumencie programu Word za pomocą Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł pobrać preferowany typ szerokości (bezwzględny, względny lub automatyczny) i jego wartość dla określonej komórki w tabelach dokumentów programu Word.
+W tym samouczku dowiemy się, jak pobrać preferowany typ szerokości i jego wartość z komórki tabeli w dokumencie programu Word za pomocą Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł pobrać preferowany typ szerokości (bezwzględny, względny lub automatyczny) i jego wartość dla określonej komórki w tabelach dokumentów programu Word.
 
 ## Krok 1: Konfiguracja projektu
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Aktywuj automatyczną regulację stołu
 table. AllowAutoFit = true;
 
-// Pobierz pierwszą komórkę pierwszego wiersza
+//Pobierz pierwszą komórkę pierwszego wiersza
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Pobierz preferowany typ szerokości i jego wartość
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-Tutaj używamy dokumentu do pobrania pierwszej tabeli, następnie umożliwiamy automatyczne dopasowanie tabeli za pomocą`AllowAutoFit` nieruchomość. Następnie pobieramy pierwszą komórkę pierwszego wiersza tabeli. Z tej komórki możemy pobrać preferowany typ szerokości za pomocą`PreferredWidth.Type` nieruchomość i jej wartość`PreferredWidth.Value` nieruchomość.
+ Tutaj używamy dokumentu do pobrania pierwszej tabeli, następnie umożliwiamy automatyczne dopasowanie tabeli za pomocą`AllowAutoFit` nieruchomość. Następnie pobieramy pierwszą komórkę pierwszego wiersza tabeli. Z tej komórki możemy pobrać preferowany typ szerokości za pomocą`PreferredWidth.Type` nieruchomość i jej wartość`PreferredWidth.Value` nieruchomość.
 
 ### Przykładowy kod źródłowy dla opcji Pobierz preferowany typ szerokości przy użyciu Aspose.Words dla .NET 
 
@@ -62,4 +62,4 @@ double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
 ## Wniosek
-W tym samouczku nauczyliśmy się, jak pobrać preferowany typ szerokości i jego wartość z komórki tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz pobrać te informacje dla określonych komórek w tabelach dokumentów programu Word.
+W tym samouczku nauczyliśmy się, jak pobrać preferowany typ szerokości i jego wartość z komórki tabeli w dokumencie programu Word za pomocą Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz pobrać te informacje dla określonych komórek w tabelach dokumentów programu Word.

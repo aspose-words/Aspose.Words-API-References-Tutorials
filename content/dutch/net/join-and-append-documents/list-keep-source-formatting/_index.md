@@ -2,76 +2,87 @@
 title: Lijst Behoud bronopmaak
 linktitle: Lijst Behoud bronopmaak
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de lijstopmaak kunt behouden terwijl u Word-documenten samenvoegt en toevoegt met Aspose.Words voor .NET.
+description: Leer hoe u Word-documenten samenvoegt met behoud van de opmaak met Aspose.Words voor .NET. Deze zelfstudie biedt stapsgewijze begeleiding voor het naadloos samenvoegen van documenten.
 type: docs
 weight: 10
 url: /nl/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## Invoering
 
-Deze tutorial begeleidt u bij het gebruik van de functie List Keep Source Formatting van Aspose.Words voor .NET. Met deze functie kunt u Word-documenten samenvoegen en toevoegen, terwijl de bronopmaak van lijsten behouden blijft.
+In deze zelfstudie onderzoeken we hoe u Aspose.Words voor .NET kunt gebruiken om documenten samen te voegen met behoud van de bronopmaak. Deze mogelijkheid is essentieel voor scenario's waarin het behoud van het oorspronkelijke uiterlijk van de documenten cruciaal is.
 
 ## Vereisten
 
-Zorg ervoor dat u over het volgende beschikt voordat u begint:
+Voordat u doorgaat, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 
-1. Aspose.Words voor .NET geïnstalleerd. Je kunt het downloaden van de Aspose-website of installeren via NuGet.
-2. Visual Studio of een andere C#-ontwikkelomgeving.
+- Visual Studio is op uw computer geïnstalleerd.
+-  Aspose.Words voor .NET geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Basiskennis van programmeren in C# en de .NET-omgeving.
 
-## Stap 1: Initialiseer de documentmappen
+## Naamruimten importeren
 
- Eerst moet u het pad naar uw documentmap instellen. Wijzig de waarde van de`dataDir` variabele naar het pad waar uw documenten zich bevinden.
+Importeer eerst de benodigde naamruimten in uw C#-project:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## Stap 2: Laad de bron- en doeldocumenten
+## Stap 1: Stel uw project in
 
-Vervolgens moet u de bron- en doeldocumenten laden met behulp van Aspose.Words`Document` klas. Werk de bestandsnamen bij in het`Document` constructor volgens uw documentnamen.
+Begin met het maken van een nieuw C#-project in Visual Studio. Zorg ervoor dat er in uw project naar Aspose.Words voor .NET wordt verwezen. Als dit niet het geval is, kunt u het toevoegen via NuGet Package Manager.
+
+## Stap 2: Initialiseer documentvariabelen
 
 ```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Bron- en bestemmingsdocumenten laden
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Stap 3: Stel het brondocument in op continu stromen
+## Stap 3: Sectie-instellingen configureren
 
- Om ervoor te zorgen dat de inhoud van het brondocument continu doorstroomt wanneer deze aan het doeldocument wordt toegevoegd, moet u de`SectionStart` eigenschap van de eerste sectie in het brondocument`SectionStart.Continuous`.
+Om een continue stroom in het samengevoegde document te behouden, past u het sectiebegin aan:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Stap 4: Voeg het brondocument toe aan het doeldocument
+## Stap 4: Documenten samenvoegen
 
- Nu kunt u het brondocument aan het doeldocument toevoegen met behulp van de`AppendDocument` werkwijze van de`Document` klas. De`ImportFormatMode.KeepSourceFormatting`parameter zorgt ervoor dat de bronopmaak, inclusief de opmaak van lijsten, behouden blijft tijdens de toevoegbewerking.
+Voeg de inhoud van het brondocument toe (`srcDoc`) naar het bestemmingsdocument (`dstDoc`) met behoud van de originele opmaak:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Stap 5: Sla het definitieve document op
+## Stap 5: Sla het samengevoegde document op
 
- Sla ten slotte het samengevoegde document op met de functie Lijst behouden bronopmaak ingeschakeld met behulp van de`Save` werkwijze van de`Document` klas.
+Sla ten slotte het samengevoegde document op in de door u opgegeven map:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### Voorbeeldbroncode voor List Keep Source Formatting met Aspose.Words voor .NET 
+## Conclusie
 
-Hier is de volledige broncode voor de functie List Keep Source Formatting in C# met behulp van Aspose.Words voor .NET:
+Kortom: het samenvoegen van documenten met behoud van de oorspronkelijke opmaak is eenvoudig met Aspose.Words voor .NET. Deze zelfstudie heeft u door het proces geleid en ervoor gezorgd dat uw samengevoegde document de lay-out en stijl van het brondocument behoudt.
 
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Veelgestelde vragen
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Voeg de inhoud van het document toe, zodat deze continu doorstroomt.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### Wat moet ik doen als mijn documenten verschillende stijlen hebben?
+Aspose.Words verwerkt verschillende stijlen op een elegante manier, waarbij de originele opmaak zo goed mogelijk behouden blijft.
 
-Dat is het! U hebt de functie List Keep Source Formatting met succes geïmplementeerd met Aspose.Words voor .NET. Het uiteindelijke document zal de samengevoegde inhoud bevatten, waarbij de lijstopmaak van het brondocument behouden blijft.
+### Kan ik documenten van verschillende formaten samenvoegen?
+Ja, Aspose.Words ondersteunt het samenvoegen van documenten van verschillende formaten, waaronder DOCX, DOC, RTF en andere.
+
+### Is Aspose.Words compatibel met .NET Core?
+Ja, Aspose.Words ondersteunt .NET Core volledig, waardoor platformonafhankelijke ontwikkeling mogelijk wordt.
+
+### Hoe kan ik efficiënt omgaan met grote documenten?
+Aspose.Words biedt efficiënte API's voor documentmanipulatie, geoptimaliseerd voor prestaties, zelfs bij grote documenten.
+
+### Waar kan ik meer voorbeelden en documentatie vinden?
+ U kunt meer voorbeelden en gedetailleerde documentatie bekijken op[Aspose.Words-documentatie](https://reference.aspose.com/words/net/).

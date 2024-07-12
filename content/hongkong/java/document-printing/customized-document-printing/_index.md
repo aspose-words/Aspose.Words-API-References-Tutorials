@@ -2,7 +2,7 @@
 title: 定製文件列印
 linktitle: 定製文件列印
 second_title: Aspose.Words Java 文件處理 API
-description: 了解如何使用 Aspose.Words for Java 輕鬆實現自訂文件列印。本逐步指南涵蓋了從設定到進階自訂的所有內容。
+description: 了解如何使用 Aspose.Words for Java 輕鬆實作自訂文件列印。本逐步指南涵蓋了從設定到進階自訂的所有內容。
 type: docs
 weight: 12
 url: /zh-hant/java/document-printing/customized-document-printing/

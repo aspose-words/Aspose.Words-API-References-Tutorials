@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## الخطوة 2: إنشاء وتنسيق المستند
- إنشاء مثيل لـ`Document` الطبقة و`DocumentBuilder`فئة لبناء الوثيقة. استخدم ال`Font` ملكية`DocumentBuilder` للوصول إلى خصائص تنسيق الخط.
+ إنشاء مثيل لـ`Document` الطبقة و`DocumentBuilder` فئة لبناء الوثيقة. استخدم ال`Font` ملكية`DocumentBuilder`للوصول إلى خصائص تنسيق الخط.
 
 ```csharp
 Document doc = new Document();

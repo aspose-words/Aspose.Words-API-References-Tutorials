@@ -58,7 +58,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## 步骤 4：将字体设置应用于文档
 
-分配已配置的`FontSettings`到文档。这可确保在呈现文档时应用字体回退规则。
+分配已配置的`FontSettings`到文档中。这可确保在呈现文档时应用字体回退规则。
 
 ```csharp
 doc.FontSettings = fontSettings;

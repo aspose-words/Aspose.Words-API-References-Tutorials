@@ -95,7 +95,7 @@ R: O acesso digitado tem diversas vantagens sobre o acesso não digitado. Primei
 
 #### P: Que tipos de nós podem ser acessados com acesso digitado?
 
-R: Com o acesso digitado no Node.js, você pode acessar diferentes tipos de nós, como nós de elementos, nós de texto, nós de atributos, etc. Cada tipo de nó possui seus próprios métodos e propriedades específicos para acessar suas características e valores.
+R: Com o acesso digitado no Node.js, você pode acessar diferentes tipos de nós, como nós de elementos, nós de texto, nós de atributos, etc.
 
 #### P: Como lidar com erros durante o acesso digitado?
 

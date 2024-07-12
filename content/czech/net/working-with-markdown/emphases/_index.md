@@ -113,7 +113,7 @@ A: Chcete-li zvýraznit text pomocí Markdown, jednoduše obklopte text příslu
 
 #### Otázka: Můžeme kombinovat různá zvýraznění ve stejném textu?
 
- Odpověď: Ano, je možné kombinovat různá zvýraznění ve stejném textu. Například můžete slovo zvýraznit tučným písmem a kurzívou pomocí obou`**` a`*` kolem slova.
+ Odpověď: Ano, je možné kombinovat různá zvýraznění ve stejném textu. Například můžete slovo zvýraznit tučným písmem a kurzívou pomocí obou`**`a`*` kolem slova.
 
 #### Otázka: Jaké možnosti zvýraznění jsou v Markdown k dispozici?
 

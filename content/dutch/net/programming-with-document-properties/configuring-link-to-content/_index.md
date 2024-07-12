@@ -80,4 +80,4 @@ Deze code voegt een inhoudgerelateerde eigenschap toe met de naam "Bookmark" met
 
 ```
 
-U hebt nu geleerd hoe u de koppeling naar inhoud in een document kunt configureren met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u eenvoudig koppelingen naar specifieke inhoud in uw eigen documenten maken en configureren.
+hebt nu geleerd hoe u de koppeling naar inhoud in een document kunt configureren met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u eenvoudig koppelingen naar specifieke inhoud in uw eigen documenten maken en configureren.

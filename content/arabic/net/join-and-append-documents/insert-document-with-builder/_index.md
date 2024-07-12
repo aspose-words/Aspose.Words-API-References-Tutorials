@@ -2,79 +2,123 @@
 title: إدراج مستند مع منشئ
 linktitle: إدراج مستند مع منشئ
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج مستند في نهاية مستند آخر باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية دمج مستندي Word باستخدام Aspose.Words لـ .NET. دليل خطوة بخطوة لإدراج مستند باستخدام DocumentBuilder والحفاظ على التنسيق.
 type: docs
 weight: 10
 url: /ar/net/join-and-append-documents/insert-document-with-builder/
 ---
+## مقدمة
 
- يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words لـ .NET لإدراج مستند في مستند آخر باستخدام`DocumentBuilder` فصل. يوضح كود المصدر المقدم كيفية إدراج مستند في نهاية مستند آخر مع الحفاظ على تنسيق المصدر.
+إذن، لديك مستندان من Word، وتتطلع إلى دمجهما في مستند واحد. قد تتساءل: "هل هناك طريقة سهلة للقيام بذلك برمجيًا؟" قطعاً! اليوم، سأرشدك خلال عملية إدراج مستند في آخر باستخدام مكتبة Aspose.Words for .NET. تعتبر هذه الطريقة مفيدة للغاية، خاصة عندما تتعامل مع مستندات كبيرة أو تحتاج إلى أتمتة العملية. دعونا نتعمق في الأمر!
 
-## الخطوة 1: إعداد المشروع
+## المتطلبات الأساسية
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+قبل أن نبدأ، دعونا نتأكد من حصولك على كل ما تحتاجه:
 
--  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+1.  Aspose.Words for .NET: إذا لم تكن قد قمت بذلك بالفعل، فيمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: تأكد من تثبيت Visual Studio أو أي بيئة تطوير متكاملة أخرى مناسبة.
+3. المعرفة الأساسية بـ C#: القليل من الإلمام بـ C# سيقطع شوطا طويلا.
 
-## الخطوة 2: افتح المستندات المصدر والوجهة
+## استيراد مساحات الأسماء
 
- افتح المستندات المصدر والوجهة باستخدام`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى دليل المستندات الخاص بك.
+أول الأشياء أولاً، تحتاج إلى استيراد مساحات الأسماء الضرورية للوصول إلى وظائف مكتبة Aspose.Words. وإليك كيف يمكنك القيام بذلك:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+الآن بعد أن أصبح لدينا متطلباتنا الأساسية، دعونا نقسم العملية خطوة بخطوة.
+
+## الخطوة 1: إعداد دليل المستندات الخاص بك
+
+قبل أن نبدأ البرمجة، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. هذا هو المكان الذي يتم فيه تخزين مستندات المصدر والوجهة.
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي حيث توجد المستندات الخاصة بك. سيساعد هذا البرنامج في العثور على ملفاتك بسهولة.
+
+## الخطوة 2: تحميل مستندات المصدر والوجهة
+
+بعد ذلك، نحتاج إلى تحميل المستندات التي نريد العمل معها. في هذا المثال، لدينا مستند مصدر ووثيقة وجهة.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: تهيئة DocumentBuilder
+ هنا، نحن نستخدم`Document` فئة من مكتبة Aspose.Words لتحميل مستنداتنا. تأكد من تطابق أسماء الملفات مع تلك الموجودة في الدليل الخاص بك.
 
- إنشاء مثيل جديد لـ`DocumentBuilder` فئة وتمرير المستند الوجهة كمعلمة.
+## الخطوة 3: إنشاء كائن DocumentBuilder
+
+ ال`DocumentBuilder` class هي أداة قوية في مكتبة Aspose.Words. يسمح لنا بالتنقل في المستند ومعالجته.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
-## الخطوة 4: ضع DocumentBuilder
+ في هذه الخطوة قمنا بإنشاء`DocumentBuilder` كائن لوثيقة وجهتنا. سيساعدنا هذا في إدراج المحتوى في المستند.
 
-حرك ال`DocumentBuilder` إلى نهاية المستند باستخدام`MoveToDocumentEnd` طريقة. قم بإدراج فاصل صفحات لفصل المحتوى الموجود عن المستند المدرج.
+## الخطوة 4: الانتقال إلى نهاية المستند
+
+نحتاج إلى تحريك مؤشر الإنشاء إلى نهاية المستند الوجهة قبل إدراج المستند المصدر.
 
 ```csharp
 builder.MoveToDocumentEnd();
+```
+
+وهذا يضمن إدراج المستند المصدر في نهاية المستند الوجهة.
+
+## الخطوة 5: إدراج فاصل الصفحات
+
+للحفاظ على الأمور مرتبة، دعنا نضيف فاصل صفحات قبل إدراج المستند المصدر. سيؤدي هذا إلى بدء محتوى المستند المصدر في صفحة جديدة.
+
+```csharp
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## الخطوة 5: أدخل المستند المصدر
+يضمن فاصل الصفحات أن يبدأ محتوى المستند المصدر على صفحة جديدة، مما يجعل المستند المدمج يبدو احترافيًا.
 
- استخدم ال`InsertDocument` طريقة`DocumentBuilder` فئة لإدراج المستند المصدر في المستند الوجهة. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting` للحفاظ على تنسيق المصدر.
+## الخطوة 6: إدراج المستند المصدر
+
+الآن يأتي الجزء المثير، وهو إدراج المستند المصدر في المستند الوجهة.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند المعدل
+ باستخدام`InsertDocument` الطريقة، يمكننا إدراج المستند المصدر بأكمله في المستند الوجهة. ال`ImportFormatMode.KeepSourceFormatting` يضمن الحفاظ على تنسيق المستند المصدر.
 
-وأخيرًا، احفظ مستند الوجهة المعدل باستخدام الملف`Save` طريقة`Document` هدف.
+## الخطوة 7: حفظ المستند المدمج
+
+أخيرًا، لنحفظ المستند المدمج. سيؤدي هذا إلى دمج المستندات المصدر والوجهة في ملف واحد.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 ```
 
-يكمل هذا تنفيذ إدراج مستند في مستند آخر باستخدام Aspose.Words لـ .NET.
+وبحفظ الوثيقة، نكمل عملية دمج الوثيقتين. المستند الجديد جاهز الآن ويتم حفظه في الدليل المحدد.
 
-### مثال على التعليمات البرمجية المصدر لـ Insert Document With Builder باستخدام Aspose.Words لـ .NET 
+## خاتمة
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+وهناك لديك! لقد نجحت في إدراج مستند في مستند آخر باستخدام Aspose.Words لـ .NET. هذه الطريقة ليست فعالة فحسب، بل تحافظ أيضًا على تنسيق كلا المستندين، مما يضمن الدمج السلس. سواء كنت تعمل في مشروع لمرة واحدة أو تحتاج إلى أتمتة معالجة المستندات، فإن Aspose.Words for .NET يوفر لك كل ما تحتاجه.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	DocumentBuilder builder = new DocumentBuilder(dstDoc);
-	builder.MoveToDocumentEnd();
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
-```
+## الأسئلة الشائعة
+
+### ما هو Aspose.Words لـ .NET؟  
+Aspose.Words for .NET هي مكتبة قوية تتيح للمطورين إنشاء مستندات Word وتحريرها وتحويلها ومعالجتها برمجيًا.
+
+### هل يمكنني الاحتفاظ بتنسيق المستند المصدر؟  
+ نعم باستخدام`ImportFormatMode.KeepSourceFormatting`، يتم الحفاظ على تنسيق المستند المصدر عند إدراجه في المستند الوجهة.
+
+### هل أحتاج إلى ترخيص لاستخدام Aspose.Words لـ .NET؟  
+ نعم، يتطلب Aspose.Words for .NET ترخيصًا للحصول على الوظائف الكاملة. يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
+
+### هل يمكنني أتمتة هذه العملية؟  
+قطعاً! يمكن دمج الطريقة الموضحة في تطبيقات أكبر لأتمتة مهام معالجة المستندات.
+
+### أين يمكنني العثور على المزيد من الموارد والدعم؟  
+لمزيد من المعلومات، يمكنك التحقق من[توثيق](https://reference.aspose.com/words/net/) ، أو قم بزيارة[منتدى الدعم](https://forum.aspose.com/c/words/8) للمساعدة.

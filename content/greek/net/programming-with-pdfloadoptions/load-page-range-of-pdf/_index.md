@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Σε αυτό το παράδειγμα, φορτώνουμε την πρώτη σελίδα του εγγράφου PDF. Μπορείτε να αλλάξετε τις τιμές του`PageIndex` και`PageCount` στο επιθυμητό εύρος σελίδων.
+ Σε αυτό το παράδειγμα, φορτώνουμε την πρώτη σελίδα του εγγράφου PDF. Μπορείτε να αλλάξετε τις τιμές του`PageIndex`και`PageCount` στο επιθυμητό εύρος σελίδων.
 
 ## Βήμα 2: Αποθήκευση του εγγράφου
 

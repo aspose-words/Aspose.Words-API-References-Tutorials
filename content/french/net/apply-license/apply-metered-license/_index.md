@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Remplacer`"your_public_key"` et`"your_private_key"`avec les clés réelles que vous avez reçues d'Aspose. Cette étape indique essentiellement à Aspose que vous souhaitez utiliser une licence limitée.
+ Remplacer`"your_public_key"`et`"your_private_key"`avec les clés réelles que vous avez reçues d'Aspose. Cette étape indique essentiellement à Aspose que vous souhaitez utiliser une licence limitée.
 
 ## Étape 3 : Chargez votre document
 

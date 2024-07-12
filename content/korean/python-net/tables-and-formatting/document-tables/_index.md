@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## 표에 머리글 및 바닥글 추가:
 
- 테이블에는 컨텍스트나 추가 정보를 제공하는 머리글과 바닥글이 있으면 이점을 얻을 수 있습니다. 다음을 사용하여 표에 머리글과 바닥글을 추가할 수 있습니다.`Table.title` 그리고`Table.description` 속성.
+ 테이블에는 컨텍스트나 추가 정보를 제공하는 머리글과 바닥글이 있으면 이점을 얻을 수 있습니다. 다음을 사용하여 표에 머리글과 바닥글을 추가할 수 있습니다.`Table.title`그리고`Table.description` 속성.
 
 ```python
 # Set table title (header)

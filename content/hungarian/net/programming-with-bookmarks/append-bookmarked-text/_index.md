@@ -2,120 +2,123 @@
 title: Könyvjelzővel ellátott szöveg hozzáfűzése a Word-dokumentumhoz
 linktitle: Könyvjelzővel ellátott szöveg hozzáfűzése a Word-dokumentumhoz
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan adhat hozzá szöveget egy könyvjelzőből egy Word-dokumentumhoz az Aspose.Words for .NET használatával.
+description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan fűzhet hozzá könyvjelzővel ellátott szöveget egy Word-dokumentumhoz az Aspose.Words for .NET használatával. Tökéletes fejlesztőknek.
 type: docs
 weight: 10
 url: /hu/net/programming-with-bookmarks/append-bookmarked-text/
 ---
+## Bevezetés
 
-Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogyan használhatjuk a Könyvjelzővel ellátott szöveg hozzáfűzése funkciót az Aspose.Words for .NET könyvtárban. Ez a funkció lehetővé teszi, hogy egy Word-dokumentum adott könyvjelzőjében található szöveget hozzáadja egy másik dokumentumhoz.
+Halihó! Próbált már szöveget hozzáfűzni egy Word-dokumentum könyvjelzővel ellátott szakaszából, és trükkösnek találta? szerencséd van! Ez az oktatóanyag végigvezeti a folyamaton az Aspose.Words for .NET használatával. Egyszerű lépésekre bontjuk, hogy könnyen követhesse. Merüljünk el, és fűzzük hozzá a könyvjelzővel ellátott szöveget, mint egy profi!
 
 ## Előfeltételek
 
-- C# nyelv alapismerete.
-- .NET fejlesztői környezet telepített Aspose.Words könyvtárral.
+Mielőtt elkezdenénk, győződjünk meg arról, hogy rendelkezik-e mindennel, amire szüksége van:
 
-## 1. lépés: Bekezdések lekérése a könyvjelzőből
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: Bármely .NET fejlesztői környezet, például a Visual Studio.
+- Alapvető C# ismerete: Az alapvető C# programozási fogalmak megértése segít.
+- Word-dokumentum könyvjelzőkkel: Word-dokumentum könyvjelzőkkel, amelyekből szöveget fűzünk hozzá.
 
- Mielőtt elkezdenénk hozzáadni a könyvjelző szövegét, be kell szereznünk azokat a bekezdéseket, amelyek a könyvjelző elejét és végét tartalmazzák. Ezt megteheti a`BookmarkStart` és`BookmarkEnd` a könyvjelző tulajdonságai:
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket. Ez biztosítja, hogy minden szükséges eszköz kéznél legyen.
 
 ```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+using System;
+using Aspose.Words;
+using Aspose.Words.Importing;
 ```
 
-## 2. lépés: Ellenőrizze a szülő bekezdéseket
+Bontsuk le a példát részletes lépésekre.
 
-Ellenőrizzük, hogy az eleje és a záró bekezdésnek van-e érvényes szülője, vagyis valóban egy bekezdéshez tartozik-e. Ha nem, kivételt generálunk:
+## 1. lépés: Töltse be a dokumentumot és inicializálja a változókat
+
+Rendben, kezdjük a Word dokumentumunk betöltésével és a szükséges változók inicializálásával.
 
 ```csharp
+// Töltse be a forrás- és céldokumentumot.
+Document srcDoc = new Document("source.docx");
+Document dstDoc = new Document("destination.docx");
+
+// Inicializálja a dokumentumimportőrt.
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+
+// Keresse meg a könyvjelzőt a forrásdokumentumban.
+Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## 2. lépés: Határozza meg a kezdő és záró bekezdéseket
+
+Most keressük meg azokat a bekezdéseket, ahol a könyvjelző kezdődik és végződik. Ez döntő fontosságú, mivel a szöveget ezeken a határokon belül kell kezelnünk.
+
+```csharp
+// Ez az a bekezdés, amely a könyvjelző elejét tartalmazza.
+Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+
+// Ez az a bekezdés, amely a könyvjelző végét tartalmazza.
+Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
 if (startPara == null || endPara == null)
-throw new InvalidOperationException(
-"The parent of the beginning or the end of the bookmark is not a paragrap
-
-hey, this situation can't be handled yet.");
+    throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## 3. lépés: Ellenőrizze a bekezdések szüleit
+## 3. lépés: A bekezdésszülők érvényesítése
 
-Ellenőrizzük, hogy a kezdő és a záró bekezdésnek ugyanaz a szülője. Ha nem, az azt jelenti, hogy a bekezdések nem ugyanabban a szakaszban vagy dokumentumban találhatók, és kivételt teszünk:
+Biztosítanunk kell, hogy a kezdő és a záró bekezdésnek ugyanaz a szülője legyen. Ez egy egyszerű forgatókönyv, hogy a dolgok egyértelműek legyenek.
 
 ```csharp
+// Korlátozzuk magunkat egy ésszerűen egyszerű forgatókönyvre.
 if (startPara.ParentNode != endPara.ParentNode)
-throw new InvalidOperationException(
-"Beginning and ending paragraphs have different parents, this situation cannot be handled yet.");
+    throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## 4. lépés: Bekezdések másolása
+## 4. lépés: Határozza meg a leállítandó csomópontot
 
-Iterálunk a csomópontokon (bekezdéseken) a kezdő bekezdéstől a befejező bekezdésig. Minden csomóponthoz létrehozunk egy másolatot, és importáljuk a céldokumentum kontextusába:
+Ezután meg kell határoznunk azt a csomópontot, ahol leállítjuk a szöveg másolását. Ez lesz a csomópont közvetlenül a záró bekezdés után.
 
 ```csharp
+// Minden bekezdést át akarunk másolni a kezdő bekezdéstől a záró bekezdésig (beleértve),
+// ezért a csomópont, amelynél megállunk, egy a bekezdés végének után van.
 Node endNode = endPara.NextSibling;
+```
 
+## 5. lépés: Könyvjelzővel ellátott szöveg hozzáfűzése a céldokumentumhoz
+
+Végül görgessük át a csomópontokat a kezdő bekezdéstől a záró bekezdés utáni csomópontig, és fűzzük hozzá őket a céldokumentumhoz.
+
+```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-Node newNode = importer.ImportNode(curNode, true);
+    // Ez létrehozza az aktuális csomópont másolatát, és importálja (érvényessé teszi) a kontextusba
+    // a rendeltetési okmány. Az importálás a stílusok és a listaazonosítók helyes beállítását jelenti.
+    Node newNode = importer.ImportNode(curNode, true);
 
-dstNode.AppendChild(newNode);
+    // Az importált csomópont hozzáfűzése a céldokumentumhoz.
+    dstDoc.FirstSection.Body.AppendChild(newNode);
 }
-```
 
-### Példa forráskódra a Könyvjelzővel ellátott szöveg hozzáfűzéséhez az Aspose.Words for .NET használatával
-
-Íme a teljes példaforráskód, amely bemutatja, hogyan lehet szöveget hozzáadni egy könyvjelzőből az Aspose.Words for .NET használatával:
-
-```csharp
-
-	// Ez az a bekezdés, amely a könyvjelző elejét tartalmazza.
-	Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-	// Ez az a bekezdés, amely a könyvjelző végét tartalmazza.
-	Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-	if (startPara == null || endPara == null)
-		throw new InvalidOperationException(
-			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-	// Korlátozzuk magunkat egy meglehetősen egyszerű forgatókönyvre.
-	if (startPara.ParentNode != endPara.ParentNode)
-		throw new InvalidOperationException(
-			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-	// Minden bekezdést át akarunk másolni a kezdő bekezdéstől a záró bekezdésig (beleértve),
-	// ezért a csomópont, amelynél megállunk, egy a bekezdés végének után van.
-	Node endNode = endPara.NextSibling;
-
-	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-	{
-		//Ez létrehozza az aktuális csomópont másolatát, és importálja (érvényessé teszi) a kontextusba
-		// a rendeltetési okmány. Az importálás a stílusok és a listaazonosítók helyes beállítását jelenti.
-		Node newNode = importer.ImportNode(curNode, true);
-
-		dstNode.AppendChild(newNode);
-	}
-
+// Mentse el a céldokumentumot a hozzáfűzött szöveggel.
+dstDoc.Save("appended_document.docx");
 ```
 
 ## Következtetés
 
-Ebben a cikkben megvizsgáltuk a C# forráskódot, hogy megértsük, hogyan használható az Aspose.Words for .NET Könyvjelzővel ellátott szöveg hozzáfűzése funkciója. Követtünk egy lépésről lépésre szóló útmutatót a bekezdések könyvjelzőből való lekéréséhez, a szülők ellenőrzéséhez és a bekezdések másik dokumentumba másolásához.
+És megvan! Sikeresen hozzáfűzte egy Word-dokumentum könyvjelzővel ellátott szakaszának szövegét az Aspose.Words for .NET segítségével. Ezzel a hatékony eszközzel gyerekjáték a dokumentumkezelés, és most még egy trükk vár a kezedre. Boldog kódolást!
 
-### GYIK a könyvjelzővel ellátott szöveg hozzáfűzéséhez a Word dokumentumban
+## GYIK
 
-#### 1. kérdés: Milyen előfeltételei vannak az Aspose.Words for .NET "Szöveg hozzáadása könyvjelzőkkel" funkciójának használatához?
+### Hozzáfűzhetek szöveget több könyvjelzőből egyszerre?
+Igen, megismételheti a folyamatot minden könyvjelzőnél, és ennek megfelelően fűzheti hozzá a szöveget.
 
-V: Az Aspose.Words for .NET "Szöveg hozzáadása könyvjelzőkkel" funkciójának használatához alapszintű C# nyelvtudással kell rendelkeznie. Szüksége van egy .NET fejlesztői környezetre is, amelyen az Aspose.Words könyvtár telepítve van.
+### Mi van akkor, ha a kezdő és a záró bekezdésnek különböző szülője van?
+jelenlegi példa azt feltételezi, hogy ugyanaz a szülő. A különböző szülők esetében összetettebb kezelésre van szükség.
 
-#### 2. kérdés: Hogyan lehet beolvasni azokat a bekezdéseket, amelyek egy könyvjelző elejét és végét tartalmazzák egy Word-dokumentumban?
+### Megtarthatom a hozzáfűzött szöveg eredeti formázását?
+ Teljesen! A`ImportFormatMode.KeepSourceFormatting` biztosítja az eredeti formázás megőrzését.
 
-V: A könyvjelző elejét és végét tartalmazó bekezdések megjelenítéséhez egy Word-dokumentumban elérheti a`BookmarkStart` és`BookmarkEnd` a könyvjelző tulajdonságait. Itt van egy minta kód:
+### Lehetséges-e szöveget hozzáfűzni a céldokumentum egy adott helyéhez?
+Igen, a szöveget tetszőleges pozícióhoz hozzáfűzheti, ha a kívánt csomóponthoz navigál a céldokumentumban.
 
-```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-```
-
-#### 3. kérdés: Mi történik, ha a kezdő és a záró bekezdésnek nincs érvényes szülője?
-
-V: Ha a kezdő és záró bekezdésnek nincs érvényes szülője, azaz valójában nem bekezdések, akkor kivételt dobunk. Ez a helyzet jelenleg nem kezelhető.
+### Mi a teendő, ha egy könyvjelzőből szöveget kell hozzáfűznem egy új szakaszhoz?
+Létrehozhat egy új szakaszt a céldokumentumban, és hozzáfűzheti a szöveget.

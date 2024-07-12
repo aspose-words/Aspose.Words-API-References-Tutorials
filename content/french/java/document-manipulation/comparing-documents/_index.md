@@ -18,7 +18,7 @@ La comparaison de documents implique l'analyse de deux documents et l'identifica
 
 ## Comparaison des documents de base
 
- Commençons par les bases de la comparaison de documents. Nous utiliserons deux documents,`docA` et`docB`, et comparez-les.
+ Commençons par les bases de la comparaison de documents. Nous utiliserons deux documents,`docA`et`docB`, et comparez-les.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-Dans cet extrait de code, nous chargeons deux documents,`docA` et`docB` , puis utilisez le`compare` méthode pour les comparer. Nous spécifions l'auteur comme « utilisateur » et la comparaison est effectuée. Enfin, nous vérifions s'il y a des révisions, indiquant des différences entre les documents.
+Dans cet extrait de code, nous chargeons deux documents,`docA`et`docB` , puis utilisez le`compare` méthode pour les comparer. Nous spécifions l'auteur comme « utilisateur » et la comparaison est effectuée. Enfin, nous vérifions s'il y a des révisions, indiquant des différences entre les documents.
 
 ## Personnalisation de la comparaison avec les options
 

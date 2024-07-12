@@ -106,7 +106,7 @@ Per configurare l'ambiente, è necessario assicurarsi di avere Aspose.Words per 
 
 #### Come posso applicare stili diversi a diverse sezioni di testo?
 
- Puoi applicare stili diversi a diverse sezioni di testo impostando il file`ParagraphFormat.StyleName` proprietà del`DocumentBuilder`oggetto. Prima di scrivere il testo, è possibile impostare il nome dello stile sullo stile desiderato e il testo successivo verrà formattato di conseguenza.
+Puoi applicare stili diversi a diverse sezioni di testo impostando il file`ParagraphFormat.StyleName` proprietà del`DocumentBuilder` oggetto. Prima di scrivere il testo, è possibile impostare il nome dello stile sullo stile desiderato e il testo successivo verrà formattato di conseguenza.
 
 #### Posso salvare il documento in diversi formati?
 

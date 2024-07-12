@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## ステップ4: ドキュメントを保存する
-変更した文書を保存するには、`Save`メソッド。適切なファイル拡張子を持つファイル名を指定します。この例では、ドキュメントを「WorkingWithSdt.ClearContentsControl.doc」として保存します。
+変更した文書を`Save`メソッド。適切なファイル拡張子を持つファイル名を指定します。この例では、ドキュメントを「WorkingWithSdt.ClearContentsControl.doc」として保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

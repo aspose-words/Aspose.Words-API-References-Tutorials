@@ -199,7 +199,7 @@ Güvenlik önlemlerini uyguladıktan sonra çeşitli senaryolarda güvende kald�
 
 ## 14. Sonuç
 
-Bu adım adım kılavuzda belge güvenliğinin önemini ve Aspose.Words for Java'nın belgelerinizi yetkisiz erişime karşı nasıl koruyabileceğini inceledik. Kitaplığın parola koruması, şifreleme, dijital imza, filigran ekleme ve redaksiyon gibi özelliklerinden yararlanarak belgelerinizin güvende ve emniyette kalmasını sağlayabilirsiniz.
+Bu adım adım kılavuzda belge güvenliğinin önemini ve Aspose.Words for Java'nın belgelerinizi yetkisiz erişime karşı korumaya nasıl yardımcı olabileceğini inceledik. Kitaplığın parola koruması, şifreleme, dijital imza, filigran ekleme ve redaksiyon gibi özelliklerinden yararlanarak belgelerinizin güvende ve emniyette kalmasını sağlayabilirsiniz.
 
 ## SSS
 

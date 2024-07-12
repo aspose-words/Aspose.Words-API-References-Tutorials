@@ -73,7 +73,7 @@ Hangende interpunctie kan soms de tekststroom verstoren, vooral in Aziatische ty
 format.HangingPunctuation = false;
 ```
 
-## Stap 6: Sla het document op
+## Stap 6: Bewaar het document
 
 Eindelijk, nadat u al deze aanpassingen heeft aangebracht, is het tijd om uw document op te slaan. Hiermee worden alle opmaakwijzigingen toegepast die we hebben aangebracht.
 

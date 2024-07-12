@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// Wstaw pierwszą komórkę pierwszego wiersza
+//Wstaw pierwszą komórkę pierwszego wiersza
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Tutaj używamy narzędzia do tworzenia dokumentów, aby zbudować tabelę z dwoma wierszami nagłówków i wieloma wierszami danych. The`RowFormat.HeadingFormat`Parametry służą do oznaczania wierszy nagłówka, które należy powtórzyć na kolejnych stronach.
+ Tutaj używamy narzędzia do tworzenia dokumentów, aby zbudować tabelę z dwoma wierszami nagłówków i wieloma wierszami danych. The`RowFormat.HeadingFormat` Parametry służą do oznaczania wierszy nagłówka, które należy powtórzyć na kolejnych stronach.
 
 ## Krok 4: Zapisanie zmodyfikowanego dokumentu
 Wreszcie USA

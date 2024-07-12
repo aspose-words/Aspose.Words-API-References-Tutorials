@@ -21,6 +21,6 @@ url: /zh/net/basic-conversions/
 | [将 Docx 转换为 Mhtml 并发送电子邮件](./docx-to-mhtml-and-sending-email/) | 在本分步指南中了解如何使用 Aspose.Words for .NET 将 DOCX 转换为 MHTML 并发送电子邮件。通过轻松的自动化提高您的工作效率。 |
 | [将 Docx 文件转换为 Markdown](./docx-to-markdown/) | 了解如何使用 Aspose.Words for .NET 将 DOCX 文件转换为 Markdown。按照我们的详细指南，无缝集成到您的 .NET 应用程序中。 |
 | [转换 Docx 为 Txt](./docx-to-txt/) | 按照我们的分步指南使用 Aspose.Words for .NET 将 DOCX 转换为 TXT。学习如何高效、轻松地转换文档。 |
-| [将文本文件转换为 Word 文档](./txt-to-docx/) | 了解如何使用 Aspose.Words for .NET 将文本文件转换为 Word 文档。使用我们的综合指南高效管理文档转换。 | 
+| [将文本文件转换为 Word 文档](./txt-to-docx/) | 了解如何使用 Aspose.Words for .NET 将文本文件转换为 Word 文档。使用我们全面的指南高效管理文档转换。 | 
 | [将 Pdf 另存为 Jpeg](./pdf-to-jpeg/) | 使用 Aspose.Words for .NET 轻松将 PDF 转换为 JPEG。遵循我们的详细指南，其中包含示例和常见问题解答。非常适合开发人员和爱好者。 |
 | [将 PDF 保存为 Word 格式 (Docx)](./pdf-to-docx/) | 通过本详细分步指南了解如何使用 Aspose.Words for .NET 将 PDF 转换为 Word 文档 (Docx)。非常适合开发人员。 |

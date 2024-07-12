@@ -2,43 +2,70 @@
 title: Format Angka Untuk Sumbu Dalam Bagan
 linktitle: Format Angka Untuk Sumbu Dalam Bagan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengatur format angka untuk sumbu dalam bagan menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara memformat nomor sumbu bagan menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Tingkatkan keterbacaan dan profesionalisme dokumen Anda dengan mudah.
 type: docs
 weight: 10
 url: /id/net/programming-with-charts/number-format-for-axis/
 ---
+## Perkenalan
 
-Tutorial ini menjelaskan cara menggunakan Aspose.Words untuk .NET untuk mengatur format angka untuk sumbu dalam bagan. Kode sumber yang disediakan menunjukkan cara membuat bagan, menambahkan data seri, dan memformat label sumbu.
+Hai! Pernahkah Anda bekerja dengan bagan di dokumen Anda dan berharap dapat memformat angka pada sumbu Anda agar terlihat lebih profesional? Nah, Anda beruntung! Dalam tutorial ini, kita akan mendalami bagaimana Anda dapat mencapai hal tersebut menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memungkinkan Anda menangani dokumen Word dengan cara yang sangat mudah. Dan hari ini, kami berfokus untuk memberikan perubahan pada sumbu grafik tersebut dengan format angka khusus.
 
-## Langkah 1: Siapkan proyek
+## Prasyarat
 
-Pastikan Anda memiliki prasyarat berikut:
+Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan. Berikut daftar periksa singkatnya:
 
-- Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
-- Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstalnya. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+- .NET Framework: Pastikan Anda telah menginstal kerangka .NET yang kompatibel.
+- Lingkungan Pengembangan: IDE seperti Visual Studio akan bekerja dengan sempurna.
+- Pengetahuan Dasar C#: Ini akan membantu Anda mengikuti contoh pengkodean.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Impor Namespace
 
- Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan dalam proyek Anda. Ini seperti meletakkan pondasi sebelum membangun sebuah rumah. Tambahkan arahan penggunaan berikut di bagian atas file kode Anda:
 
 ```csharp
-// Jalur ke direktori dokumen Anda
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Reporting;
+```
+
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah diikuti.
+
+## Langkah 1: Menyiapkan Dokumen
+
+Judul: Inisialisasi Dokumen Anda
+
+Pertama, Anda perlu membuat dokumen baru dan pembuat dokumen. Anggaplah langkah ini sebagai menyiapkan kanvas dan kuas sebelum memulai karya Anda.
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Selanjutnya, gunakan`InsertChart` metode`DocumentBuilder` untuk menyisipkan bagan kolom ke dalam dokumen.
+ Di Sini,`dataDir` adalah jalur ke direktori dokumen tempat Anda akan menyimpan file akhir.`Document`Dan`DocumentBuilder` adalah kelas dari Aspose.Words yang membantu Anda membuat dan memanipulasi dokumen Word.
+
+## Langkah 2: Memasukkan Bagan
+
+Judul: Tambahkan Bagan ke Dokumen Anda
+
+Selanjutnya, mari tambahkan bagan ke dokumen Anda. Di sinilah keajaiban dimulai. Kita akan menyisipkan bagan kolom yang akan bertindak sebagai kanvas kosong.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Langkah 3: Tambahkan data seri ke bagan
+ Itu`InsertChart` metode menyisipkan bagan dengan tipe tertentu (Kolom dalam hal ini) dan dimensi ke dalam dokumen.
 
-Tambahkan data seri ke bagan. Dalam contoh ini, kita akan menambahkan lima item dengan nilainya yang sesuai.
+## Langkah 3: Menyesuaikan Seri Bagan
+
+Judul: Isi Bagan Anda dengan Data
+
+Sekarang, kita perlu menambahkan beberapa data ke grafik kita. Langkah ini mirip dengan mengisi bagan Anda dengan informasi yang bermakna.
 
 ```csharp
 chart.Series.Clear();
@@ -47,71 +74,49 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
-## Langkah 4: Format label sumbu
+ Di sini, kami menambahkan seri baru yang disebut "Aspose Series 1" dengan lima titik data. Itu`Series.Clear` metode ini memastikan semua data yang sudah ada sebelumnya dihapus sebelum menambahkan seri baru kami.
 
- Untuk mengatur format angka pada label sumbu Y, akses`AxisY` properti bagan dan atur`NumberFormat.FormatCode` properti ke format yang diinginkan. Dalam contoh ini, kami mengatur format ke "#,##0" untuk menampilkan angka dengan pemisah ribuan.
+## Langkah 4: Memformat Nomor Sumbu
+
+Judul: Mempercantik Angka Sumbu Anda
+
+Terakhir, mari kita format angka pada sumbu Y agar lebih mudah dibaca. Ini seperti memberikan sentuhan akhir pada karya seni Anda.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-## Langkah 5: Simpan dokumen
+ Itu`FormatCode` properti memungkinkan Anda mengatur format khusus untuk angka-angka pada sumbu. Dalam contoh ini,`#,##0`memastikan bahwa angka besar ditampilkan dengan koma untuk ribuan.
 
- Terakhir, simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode`Document` obyek.
+## Langkah 5: Menyimpan Dokumen
+
+Judul: Simpan Karya Anda
+
+Sekarang semuanya sudah siap, saatnya menyimpan dokumen Anda. Langkah ini adalah pengungkapan besar karya Anda.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-Ini menyelesaikan implementasi pengaturan format angka untuk sumbu menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber Format Angka Untuk Sumbu menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
-	chart.AxisY.NumberFormat.FormatCode = "#,##0";
-	doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
-```
+ Di sini, itu`Save` metode menyimpan dokumen ke jalur yang ditentukan dengan nama file`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Kesimpulan
 
-Dalam tutorial ini, Anda telah mempelajari cara mengatur format angka untuk sumbu dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, Anda dapat membuat dokumen baru, menyisipkan bagan kolom, menambahkan data seri, dan memformat label sumbu untuk menampilkan angka dalam format tertentu.
+Dan itu dia! Anda telah berhasil memformat angka pada sumbu Y bagan Anda menggunakan Aspose.Words untuk .NET. Hal ini tidak hanya membuat grafik Anda terlihat lebih profesional tetapi juga meningkatkan keterbacaan. Aspose.Words menawarkan banyak fitur yang dapat membantu Anda membuat dokumen Word yang menakjubkan secara terprogram. Jadi mengapa tidak menjelajah lebih jauh dan melihat apa lagi yang bisa Anda lakukan?
 
-Aspose.Words untuk .NET menyediakan fitur canggih untuk menyesuaikan tampilan bagan di dokumen Word. Dengan mengatur format angka untuk label sumbu, Anda dapat mengontrol cara angka ditampilkan, termasuk opsi seperti tempat desimal, pemisah ribuan, simbol mata uang, dan lainnya. Hal ini memungkinkan Anda menyajikan data numerik dengan cara yang jelas dan bermakna.
+## FAQ
 
-Dengan Aspose.Words untuk .NET, Anda memiliki fleksibilitas untuk memformat berbagai aspek bagan, termasuk label sumbu. Dengan mengatur format angka untuk sumbu, Anda dapat memastikan konsistensi dan meningkatkan keterbacaan bagan, sehingga memudahkan pengguna untuk menafsirkan nilai yang diwakili.
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram.
 
-### FAQ
+### Bisakah saya memformat aspek lain pada bagan selain nomor sumbu?
+Sangat! Aspose.Words untuk .NET memungkinkan Anda memformat judul, label, dan bahkan menyesuaikan tampilan bagan.
 
-#### Q1. Apa format angka untuk sumbu dalam grafik?
-Format angka untuk sumbu dalam bagan mengacu pada format yang diterapkan pada nilai numerik yang ditampilkan pada sumbu. Ini memungkinkan Anda mengontrol bagaimana angka disajikan, termasuk opsi seperti tempat desimal, pemisah ribuan, simbol mata uang, tanda persentase, dan banyak lagi. Dengan mengatur format angka, Anda dapat menyesuaikan tampilan data numerik dalam bagan agar sesuai dengan kebutuhan spesifik Anda.
+### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?
+ Ya, Anda bisa mendapatkan[uji coba gratis di sini](https://releases.aspose.com/).
 
-#### Q2. Bagaimana cara mengatur format angka untuk label sumbu?
- Untuk mengatur format angka untuk label sumbu dalam bagan menggunakan Aspose.Words untuk .NET, Anda dapat mengakses`AxisY` properti bagan dan atur`NumberFormat.FormatCode`properti ke kode format yang diinginkan. Kode format mengikuti sintaks pola format numerik standar dan menentukan bagaimana angka ditampilkan. Misalnya, Anda dapat menggunakan "#,##0.00" untuk menampilkan angka dengan dua tempat desimal dan pemisah ribuan.
+### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa .NET lain selain C#?
+Ya, Aspose.Words untuk .NET kompatibel dengan bahasa .NET apa pun, termasuk VB.NET dan F#.
 
-#### Q3. Bisakah saya mengatur format angka yang berbeda untuk label sumbu X dan sumbu Y?
-Ya, Anda dapat mengatur format angka berbeda untuk label sumbu X dan sumbu Y menggunakan Aspose.Words untuk .NET. Akses sumbu masing-masing (`AxisX` untuk sumbu X atau`AxisY` untuk sumbu Y) pada grafik dan modifikasi`NumberFormat.FormatCode` properti secara individual untuk setiap sumbu. Hal ini memungkinkan Anda menerapkan format angka berbeda pada label di setiap sumbu berdasarkan kebutuhan spesifik Anda.
-
-#### Q4. Apa sajakah kode format angka umum yang dapat saya gunakan?
-Aspose.Words for .NET mendukung berbagai kode format angka yang dapat Anda gunakan untuk memformat label sumbu dalam bagan. Beberapa kode format umum meliputi:
-
-- `0` atau`#` - Menampilkan angka tanpa tempat desimal.
-- `0.00` atau`#.00` - Menampilkan nomor dengan dua tempat desimal.
-- `#,##0` Menampilkan angka dengan pemisah ribuan.
-- `"€"0.00` - Menampilkan nomor dengan simbol mata uang Euro dan dua tempat desimal.
-- `"%"0` - Menampilkan angka sebagai persentase.
-
- Anda dapat menemukan informasi lebih lanjut tentang nomor[kode format](https://reference.aspose.com/words/net/aspose.words.drawing.charts/chartnumberformat/formatcode/) di Referensi API Aspose.Words untuk .NET.
-
-#### Q5. Bisakah saya menyesuaikan properti lain dari label sumbu?
-Ya, Aspose.Words untuk .NET menyediakan berbagai properti untuk menyesuaikan tampilan dan perilaku label sumbu. Selain format angka, Anda dapat mengubah properti seperti font, ukuran, warna, orientasi, perataan, dan lainnya. Ini memungkinkan Anda untuk sepenuhnya menyesuaikan label sumbu agar sesuai dengan gaya dan persyaratan presentasi yang Anda inginkan.
+### Di mana saya dapat menemukan dokumentasi yang lebih detail?
+ Dokumentasi terperinci tersedia di[Halaman dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/).

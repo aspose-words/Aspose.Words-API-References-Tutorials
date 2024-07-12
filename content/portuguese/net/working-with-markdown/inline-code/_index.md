@@ -70,7 +70,7 @@ Parabéns! Agora você aprendeu como usar a funcionalidade de código embutido c
 
 #### P: É possível especificar a fonte ou cor do código embutido no Aspose.Words?
 
- R: Sim, você pode especificar a fonte ou cor do código embutido em Aspose.Words. Você pode usar o`Font.Name` e`Font.Color` propriedades do`Run` objeto para definir a fonte e a cor do código embutido. Por exemplo, você pode usar`run.Font.Name = "Courier New"` para especificar a fonte do código embutido e`run.Font.Color = Color.Blue`para especificar a cor.
+ R: Sim, você pode especificar a fonte ou cor do código embutido em Aspose.Words. Você pode usar o`Font.Name`e`Font.Color` propriedades do`Run` objeto para definir a fonte e a cor do código embutido. Por exemplo, você pode usar`run.Font.Name = "Courier New"` para especificar a fonte do código embutido e`run.Font.Color = Color.Blue`para especificar a cor.
 
 #### P: Posso usar o código embutido em um parágrafo que contém outros elementos de texto?
 

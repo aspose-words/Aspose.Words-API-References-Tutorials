@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 
 #### Q: Aspose.Words에서 PDF로 변환할 때 기본 글꼴을 어떻게 지정합니까?
 
- A: Aspose.Words에서 PDF로 변환할 때 기본 글꼴을 지정하려면`PdfOptions` 클래스를 설정하고`DefaultFontName` 속성을 원하는 글꼴 이름으로 설정합니다.
+ A: Aspose.Words에서 PDF로 변환할 때 기본 글꼴을 지정하려면`PdfOptions` 클래스를 설정하고`DefaultFontName`속성을 원하는 글꼴 이름으로 설정합니다.
 
 #### Q: PDF로 변환할 때 기본 글꼴을 사용할 수 없으면 어떻게 되나요?
 

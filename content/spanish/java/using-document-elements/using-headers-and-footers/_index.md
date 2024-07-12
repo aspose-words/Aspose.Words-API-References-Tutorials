@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Numeración de páginas
 
- Puede incluir números de página en sus encabezados y pies de página utilizando campos como`PAGE` y`NUMPAGES`. Estos campos se actualizan automáticamente a medida que agrega o elimina páginas.
+ Puede incluir números de página en sus encabezados y pies de página utilizando campos como`PAGE`y`NUMPAGES`. Estos campos se actualizan automáticamente a medida que agrega o elimina páginas.
 
 ## 9. Información de derechos de autor en pies de página
 
@@ -223,7 +223,7 @@ Sí, Aspose.Words brinda soporte para el desarrollo de Java. Asegúrese de tener
 Por supuesto, puedes personalizar las fuentes, la alineación y otros estilos para que tus encabezados y pies de página sean visualmente atractivos.
 
 ### 4. ¿Es posible tener encabezados diferentes para páginas pares e impares?
- Si, puedes usar`PageSetup.OddAndEvenPagesHeaderFooter` para especificar diferentes encabezados para páginas pares e impares.
+ Sí, puedes usar`PageSetup.OddAndEvenPagesHeaderFooter` para especificar diferentes encabezados para páginas pares e impares.
 
 ### 5. ¿Cómo empiezo a utilizar Aspose.Words para Java?
  Para comenzar, visite el[Aspose.Words Documentación Java](https://reference.aspose.com/words/java/) para obtener orientación completa sobre el uso de la API.

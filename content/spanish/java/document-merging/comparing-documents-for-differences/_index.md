@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Reemplazar`"original_document.docx"` y`"modified_document.docx"` con las rutas a sus propios documentos.
+ Reemplazar`"original_document.docx"`y`"modified_document.docx"` con las rutas a sus propios documentos.
 
 ## Paso 2: comparar documentos
 

@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 	Table table = builder.StartTable();
 	//在设置任何表格格式之前，我们必须先插入至少一行。
 	builder.InsertCell();
-	//根据唯一的样式标识符设置使用的表格样式。
+	//根据唯一样式标识符设置使用的表格样式。
 	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
 	//应用应按样式格式化的特征。
 	table.StyleOptions =

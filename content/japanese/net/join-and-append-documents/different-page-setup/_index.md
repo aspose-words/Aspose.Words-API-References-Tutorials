@@ -2,49 +2,97 @@
 title: 異なるページ設定
 linktitle: 異なるページ設定
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、異なるページ設定でドキュメントを追加する方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書を結合するときに、さまざまなページ構成を設定する方法を学びます。ステップ バイ ステップ ガイドが含まれています。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/different-page-setup/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、異なるページ設定を持つドキュメントを別のドキュメントに追加する方法について説明します。提供されているソース コードは、ソース ドキュメントと宛先ドキュメントに異なるページ設定を設定し、適切な継続と番号付けを確実に行う方法を示しています。
+こんにちは! Aspose.Words for .NET を使った魅力的なドキュメント操作の世界に飛び込む準備はできていますか? 今日は、Word ドキュメントを結合するときに異なるページ設定を設定するという、非常に便利なことに取り組みます。レポートを結合する場合でも、小説を作成する場合でも、単に楽しみのためにドキュメントをいじる場合でも、このガイドでは手順を追って説明します。さあ、始めましょう!
+
+## 前提条件
+
+作業を始める前に、必要なものがすべて揃っていることを確認しましょう。
+
+1.  Aspose.Words for .NET: Aspose.Words for .NETがインストールされていることを確認してください。[ここからダウンロード](https://releases.aspose.com/words/net/).
+2. .NET Framework: Aspose.Words for .NET をサポートする任意のバージョン。
+3. 開発環境: Visual Studio またはその他の .NET 互換 IDE。
+4. 基本的な C# の知識: 構文と構造を理解するための基本のみ。
+
+## 名前空間のインポート
+
+まず最初に、C# プロジェクトに必要な名前空間をインポートしましょう。これらの名前空間は、Aspose.Words の機能にアクセスするために不可欠です。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.Tables;
+```
+
+さて、本題に入りましょう。プロセス全体をわかりやすいステップに分解します。
 
 ## ステップ1: プロジェクトを設定する
 
-次の前提条件を満たしていることを確認してください。
+### ステップ 1.1: 新しいプロジェクトを作成する
 
--  Aspose.Words for .NETライブラリがインストールされています。ダウンロードはこちらから[Aspose.Releases]https://releases.aspose.com/words/net/ にアクセスするか、NuGet パッケージ マネージャーを使用してインストールします。
-- ソース ドキュメントと宛先ドキュメントが配置されているドキュメント ディレクトリ パス。
+Visual Studio を起動し、新しい C# コンソール アプリケーションを作成します。「DifferentPageSetupExample」のようなかっこいい名前を付けます。
 
-## ステップ2: ソースドキュメントと宛先ドキュメントを開く
+### ステップ 1.2: Aspose.Words 参照を追加する
 
-ソース文書と宛先文書を`Document`クラスコンストラクタ。置換`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
+Aspose.Words を使用するには、プロジェクトに追加する必要があります。まだダウンロードしていない場合は、Aspose.Words for .NET パッケージをダウンロードしてください。次のコマンドを使用して、NuGet パッケージ マネージャーからインストールできます。
+
+```bash
+Install-Package Aspose.Words
+```
+
+## ステップ2: ドキュメントを読み込む
+
+次に、結合するドキュメントを読み込みます。この例では、2 つの Word ドキュメントが必要です。`Document source.docx`そして`Northwind traders.docx`これらのファイルがプロジェクト ディレクトリにあることを確認してください。
 
 ```csharp
-//ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## ステップ3: ソースドキュメントのページ設定を設定する
+## ステップ3: ソースドキュメントのページ設定を構成する
 
-ソース文書のページ設定を調整して、適切な継続と番号付けを確実にします。この例では、セクションの開始を次のように設定しています。`SectionStart.Continuous`ページ番号付けを再開します。また、ページの幅、高さ、向きが、宛先ドキュメントの最後のセクションと一致していることを確認します。
+ソース ドキュメントのページ設定が宛先ドキュメントと一致していることを確認する必要があります。この手順は、シームレスな結合に不可欠です。
+
+### ステップ 3.1: 宛先ドキュメントの後に続行
+
+ソース ドキュメントが宛先ドキュメントの直後に続くように設定します。
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+```
+
+### ステップ3.2: ページ番号付けを再開する
+
+ソース ドキュメントの先頭からページ番号付けを再開します。
+
+```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
+```
+
+## ステップ4: ページ設定を一致させる
+
+レイアウトの不一致を避けるには、ソース ドキュメントの最初のセクションのページ設定が、宛先ドキュメントの最後のセクションのページ設定と一致していることを確認します。
+
+```csharp
 srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;
 ```
 
-## ステップ4: 段落の書式を変更する
+## ステップ5: 段落の書式を調整する
 
-適切な書式を維持するには、ソース文書内のすべての段落を反復処理し、`KeepWithNext`財産に`true`これにより、追加プロセス中に段落が一緒に保持されます。
+スムーズな流れを確保するには、ソース ドキュメントの段落の書式を調整する必要があります。
+
+ソース文書内のすべての段落を反復処理し、`KeepWithNext`財産。
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,49 +101,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## ステップ5: ソース文書を宛先文書に追加する
+## ステップ6: ソースドキュメントを追加する
 
-使用`AppendDocument`宛先ドキュメントのメソッドを使用して、ソースの書式設定を保持したまま、変更されたソース ドキュメントを宛先ドキュメントに追加します。
+最後に、元の書式が保持されるようにしながら、ソース ドキュメントを宛先ドキュメントに追加します。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## ステップ6: 宛先ドキュメントを保存する
+## ステップ7: 結合したドキュメントを保存する
 
-最後に、変更した宛先ドキュメントを`Save`方法の`Document`物体。
+次に、美しく結合されたドキュメントを保存します。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 ```
 
-これで、Aspose.Words for .NET を使用して異なるページ設定でドキュメントを追加する実装が完了します。
+## 結論
 
-### Aspose.Words for .NET を使用した異なるページ設定のサンプル ソース コード 
+これで完了です。Aspose.Words for .NET を使用して、ページ設定が異なる 2 つの Word 文書を結合しました。この強力なライブラリを使用すると、プログラムで文書を操作するのが非常に簡単になります。複雑なレポートを作成する場合でも、本を組み立てる場合でも、複数のセクションに分かれた文書を管理する場合でも、Aspose.Words が役立ちます。
 
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## よくある質問
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//ソース ドキュメントを、宛先ドキュメントの終了後すぐに継続するように設定します。
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	//ソース ドキュメントの先頭からページ番号付けを再開します。
-	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
-	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	//ソース文書のページ設定が異なる場合にこの問題が発生しないようにするには、
-	//設定は、宛先ドキュメントの最後のセクション間で同一です。
-	//ソース文書にさらに連続したセクションがある場合、
-	//これらのセクションに対してこれを繰り返す必要があります。
-	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
-	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
-	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;
-	//ソース ドキュメント内のすべてのセクションを反復処理します。
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
-```
+### この方法は 2 つ以上のドキュメントに使用できますか?
+もちろんです! 結合する追加ドキュメントごとに手順を繰り返すだけです。
+
+### ドキュメントの余白が異なる場合はどうなりますか?
+ページの幅、高さ、向きを合わせたのと同様に、余白設定を合わせることができます。
+
+### Aspose.Words は .NET Core と互換性がありますか?
+はい、Aspose.Words for .NET は .NET Core と完全に互換性があります。
+
+### 両方のドキュメントのスタイルを保持できますか?
+はい`ImportFormatMode.KeepSourceFormatting`このオプションにより、ソース ドキュメントのスタイルが保持されます。
+
+### Aspose.Words に関する詳細なサポートはどこで受けられますか?
+チェックしてください[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)または訪問する[サポートフォーラム](https://forum.aspose.com/c/words/8)さらにサポートが必要な場合はお問い合わせください。

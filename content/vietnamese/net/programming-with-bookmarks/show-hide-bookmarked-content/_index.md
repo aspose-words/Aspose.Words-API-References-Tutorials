@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Ở đây, chúng ta thêm một số văn bản trước và sau nội dung được đánh dấu. Các`StartBookmark` Và`EndBookmark` các phương thức xác định ranh giới của dấu trang.
+ Ở đây, chúng ta thêm một số văn bản trước và sau nội dung được đánh dấu. Các`StartBookmark`Và`EndBookmark` các phương thức xác định ranh giới của dấu trang.
 
 ## Bước 3: Chèn trường có điều kiện
 

@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- W tym fragmencie definiujemy ścieżkę do katalogu, w którym zostanie zapisany nasz dokument i inicjujemy nowy`Document` I`DocumentBuilder` instancja.
+ W tym fragmencie definiujemy ścieżkę do katalogu, w którym zostanie zapisany nasz dokument i inicjujemy nowy`Document`I`DocumentBuilder` instancja.
 
 ## Krok 3: Napisz tekst początkowy
 

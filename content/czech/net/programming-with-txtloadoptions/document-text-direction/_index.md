@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- V tomto kroku přistupujeme k prvnímu odstavci dokumentu pomocí`FirstSection` a`Body` vlastnosti. Dále přistupujeme k`ParagraphFormat.Bidi` vlastnost pro získání směru textu odstavce. Tuto hodnotu pak zobrazíme v konzoli.
+ V tomto kroku přistupujeme k prvnímu odstavci dokumentu pomocí`FirstSection`a`Body` vlastnosti. Dále přistupujeme k`ParagraphFormat.Bidi` vlastnost pro získání směru textu odstavce. Tuto hodnotu pak zobrazíme v konzoli.
 
 ## Krok 5: Uložte dokument
 

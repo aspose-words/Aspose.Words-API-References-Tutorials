@@ -113,7 +113,7 @@ Non, vous ne pouvez spécifier qu'une seule police par défaut pour la substitut
 
 ###  Q3 : Puis-je gérer d'autres types d'avertissements avec`IWarningCallback`?
 
- Oui le`IWarningCallback` L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
+ Oui le`IWarningCallback`L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
 
 ### Q4 : Où puis-je trouver de l'aide pour Aspose.Words ?
 

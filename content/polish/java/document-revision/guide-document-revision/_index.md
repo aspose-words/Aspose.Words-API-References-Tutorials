@@ -31,7 +31,7 @@ Aspose.Words for Java to bogata w funkcje biblioteka, która umożliwia programi
 
 ## Pierwsze kroki z Aspose.Words dla Java
 
-### 2.1 Instalacja Aspose.Words dla Javy
+### 2.1 Instalacja Aspose.Words dla Java
 
 Zanim zagłębisz się w wersję dokumentu, musisz skonfigurować Aspose.Words dla Java w swoim środowisku programistycznym. Aby rozpocząć, wykonaj te proste kroki:
 
@@ -191,7 +191,7 @@ Weryfikacja dokumentów to krytyczny aspekt wspólnej pracy, zapewniający dokł
    - Tak, Aspose.Words umożliwia dostęp do informacji o wersjach, w tym o autorze, dacie zmiany i zmodyfikowanej treści, co ułatwia śledzenie zmian wprowadzanych przez różnych współpracowników.
 
 ### Czy możliwe jest programowe zaakceptowanie lub odrzucenie określonych wersji?
-   - Absolutnie! Aspose.Words umożliwia selektywne akceptowanie lub odrzucanie poprawek w oparciu o określone kryteria, zapewniając precyzyjną kontrolę nad procesem sprawdzania.
+   - Absolutnie! Aspose.Words umożliwia selektywne akceptowanie lub odrzucanie poprawek w oparciu o określone kryteria, dając Ci precyzyjną kontrolę nad procesem sprawdzania.
 
 ### W jaki sposób Aspose.Words radzi sobie z konfliktami podczas równoczesnych edycji
    - Aspose.Words oferuje zaawansowane funkcje do wykrywania i obsługi konfliktów w przypadku jednoczesnej edycji przez wielu użytkowników, zapewniając bezproblemową współpracę.

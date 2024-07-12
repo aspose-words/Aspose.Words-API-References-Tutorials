@@ -86,7 +86,7 @@ Setelah semuanya siap, saatnya menjalankan kode Anda dan melihat hasilnya:
 
 ## Langkah 6: Verifikasi Outputnya
 
-Terakhir, mari kita periksa apakah dokumen kloning kita sesuai dengan yang diharapkan:
+Terakhir, mari kita periksa apakah dokumen kloning kita sudah sesuai dengan yang diharapkan:
 
 1.  Navigasi ke Direktori Dokumen Anda: Buka`Documents` folder dan temukan nama dokumen kloning`CloneAndCombineDocuments.CloningDocument.docx`.
 2.  Buka Dokumen Kloning: Klik dua kali untuk membukanya di Microsoft Word dan verifikasi bahwa itu adalah salinan persis dari dokumen asli Anda`Document.docx`.

@@ -85,7 +85,7 @@ Console.WriteLine(table.Rows[2].Cells[3].GetText().Trim());
  Sí, especificando el índice de tabla correcto en el`MoveToCell` método, puede navegar a cualquier celda de cualquier tabla dentro del documento.
 
 ### ¿Cómo manejo las celdas que abarcan varias filas o columnas?
- Puedes usar el`RowSpan` y`ColSpan` propiedades de la`Cell` clase para gestionar celdas fusionadas.
+ Puedes usar el`RowSpan`y`ColSpan` propiedades de la`Cell` clase para gestionar celdas fusionadas.
 
 ### ¿Es posible formatear el texto dentro de la celda?
  ¡Absolutamente! Usar`DocumentBuilder` métodos como`Font.Size`, `Font.Bold`y otros para formatear su texto.

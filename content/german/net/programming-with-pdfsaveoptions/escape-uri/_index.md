@@ -73,7 +73,7 @@ Das ist alles! Sie haben erfolgreich Hyperlinks mit Escape-URIs in ein Dokument 
 
 ## Abschluss
 
-In diesem Tutorial haben wir erläutert, wie Sie URIs in einem PDF-Dokument mit Aspose.Words für .NET maskieren. Durch das Maskieren von URIs können Sie Formatierungsfehler vermeiden und sicherstellen, dass Hyperlinks im PDF-Dokument richtig interpretiert und angezeigt werden. Befolgen Sie die beschriebenen Schritte, um Hyperlinks mit maskierten URIs in Ihr PDF-Dokument einzufügen. Achten Sie darauf, die Maskierung zu maskieren.
+In diesem Tutorial haben wir erläutert, wie Sie URIs in einem PDF-Dokument mit Aspose.Words für .NET maskieren. Durch das Maskieren von URIs können Sie Formatierungsfehler vermeiden und sicherstellen, dass Hyperlinks im PDF-Dokument richtig interpretiert und angezeigt werden. Befolgen Sie die beschriebenen Schritte, um Hyperlinks mit maskierten URIs in Ihr PDF-Dokument einzufügen. Achten Sie darauf, zu maskieren.
 
 ### Häufig gestellte Fragen
 

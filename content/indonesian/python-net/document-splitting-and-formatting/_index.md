@@ -35,10 +35,10 @@ Sepanjang tutorial ini, Anda akan mendapatkan wawasan praktis, akses ke contoh k
 ### [Strategi Pemisahan dan Pemformatan Dokumen yang Efisien](./split-format-documents/)
 Pelajari cara membagi dan memformat dokumen secara efisien menggunakan Aspose.Words untuk Python. Tutorial ini memberikan panduan langkah demi langkah dan contoh kode sumber.
 ### [Membagi Dokumen dengan Pembuat Konten untuk Presisi](./divide-documents-content-builder/)
-Bagilah dan taklukkan dokumen Anda dengan presisi menggunakan Aspose.Words untuk Python. Pelajari cara memanfaatkan Pembuat Konten untuk ekstraksi dan pengorganisasian konten secara efisien.
+Bagilah dan taklukkan dokumen Anda dengan presisi menggunakan Aspose.Words untuk Python. Pelajari cara memanfaatkan Pembuat Konten untuk ekstraksi dan pengorganisasian konten yang efisien.
 ### [Menggabungkan dan Mengkloning Dokumen untuk Alur Kerja yang Kompleks](./combine-clone-documents/)
 Pelajari cara menggabungkan dan mengkloning dokumen secara efisien menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk manipulasi dokumen. Tingkatkan alur kerja dokumen Anda hari ini!
 ### [Membandingkan Versi Dokumen untuk Pengendalian Revisi yang Efektif](./compare-document-versions/)
 Pelajari cara membandingkan versi dokumen secara efektif menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk kontrol revisi. Meningkatkan kolaborasi dan mencegah kesalahan.
 ### [Menguasai Teknik Pemformatan Dokumen untuk Dampak Visual](./document-formatting-techniques/)
-Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk Python. Buat dokumen yang menarik secara visual dengan gaya font, tabel, gambar, dan lainnya. Panduan langkah demi langkah dengan contoh kode.
+Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk Python. Buat dokumen yang menarik secara visual dengan gaya font, tabel, gambar, dan banyak lagi. Panduan langkah demi langkah dengan contoh kode.

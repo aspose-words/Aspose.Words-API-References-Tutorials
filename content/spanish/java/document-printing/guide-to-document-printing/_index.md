@@ -73,7 +73,7 @@ for (String printer : printers) {
 
 ### Seleccionar una impresora específica
 
-Si tiene varias impresoras, puede seleccionar una específica configurando su nombre:
+Si tiene varias impresoras, puede seleccionar una específica estableciendo su nombre:
 
 ```java
 PrinterSettings printerSettings = new PrinterSettings();

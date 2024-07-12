@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Dieser Code erstellt eine Instanz von`Document` Und`DocumentBuilder` um das Dokument zu erstellen. Es fügt ein`<img>` Tag mit einem Base64-codierten Bild in das Dokument.
+ Dieser Code erstellt eine Instanz von`Document`Und`DocumentBuilder` um das Dokument zu erstellen. Es fügt ein`<img>` Tag mit einem Base64-codierten Bild in das Dokument.
 
 ## Schritt 3: HTML-Speicheroptionen festlegen
 

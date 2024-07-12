@@ -55,7 +55,7 @@ OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.I
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-Jadi ! Anda telah berhasil mengatur ulang daftar bernomor untuk setiap bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET.
+Jadi ! Anda telah berhasil mengatur ulang daftar bernomor ke setiap bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET.
 
 ### Contoh kode sumber untuk mengatur ulang daftar di setiap bagian
 

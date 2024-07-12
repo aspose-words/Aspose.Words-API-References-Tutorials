@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: สร้างและจัดรูปแบบเอกสาร
- สร้างอินสแตนซ์ของ`Document` ชั้นเรียนและ`DocumentBuilder`คลาสเพื่อสร้างเอกสาร ใช้`Font` ทรัพย์สินของ`DocumentBuilder` เพื่อเข้าถึงคุณสมบัติการจัดรูปแบบแบบอักษร
+ สร้างอินสแตนซ์ของ`Document` ชั้นเรียนและ`DocumentBuilder` คลาสเพื่อสร้างเอกสาร ใช้`Font` ทรัพย์สินของ`DocumentBuilder`เพื่อเข้าถึงคุณสมบัติการจัดรูปแบบแบบอักษร
 
 ```csharp
 Document doc = new Document();

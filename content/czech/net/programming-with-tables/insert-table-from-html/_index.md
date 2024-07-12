@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-tables/insert-table-from-html/
 ---
 
-V tomto tutoriálu se naučíme, jak vložit tabulku do dokumentu Word z HTML pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete schopni vkládat tabulky z HTML do dokumentů Wordu programově.
+tomto tutoriálu se naučíme, jak vložit tabulku do dokumentu Word z HTML pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete schopni vkládat tabulky z HTML do dokumentů Wordu programově.
 
 ## Krok 1: Nastavení projektu
 1. Spusťte Visual Studio a vytvořte nový projekt C#.

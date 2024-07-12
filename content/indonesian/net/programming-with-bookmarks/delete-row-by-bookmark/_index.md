@@ -2,67 +2,91 @@
 title: Hapus Baris Berdasarkan Bookmark Di Dokumen Word
 linktitle: Hapus Baris Berdasarkan Bookmark Di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menghapus baris tabel berdasarkan bookmark tertentu di dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menghapus baris berdasarkan bookmark di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk pengelolaan dokumen yang efisien.
 type: docs
 weight: 10
 url: /id/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
+## Perkenalan
 
-Pada artikel ini, kita akan menjelajahi kode sumber C# di atas untuk memahami cara menggunakan fungsi Hapus Baris Berdasarkan Bookmark di perpustakaan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda untuk menghapus baris tabel berdasarkan penanda tertentu di dokumen Word.
+Menghapus baris berdasarkan bookmark di dokumen Word mungkin terdengar rumit, tetapi dengan Aspose.Words untuk .NET, itu sangat mudah. Panduan ini akan memandu Anda melalui semua yang perlu Anda ketahui untuk menyelesaikan tugas ini secara efisien. Siap untuk terjun? Mari kita mulai!
 
 ## Prasyarat
 
-- Pengetahuan dasar bahasa C#.
-- Lingkungan pengembangan .NET dengan perpustakaan Aspose.Words diinstal.
+Sebelum kita beralih ke kode, pastikan Anda memiliki yang berikut:
 
-## Langkah 1: Mendapatkan bookmark
+-  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Anda dapat mengunduhnya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Visual Studio atau IDE lain yang mendukung pengembangan .NET.
+- Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda mengikuti tutorial.
 
- Kami menggunakan`Bookmarks` properti rentang dokumen untuk mendapatkan bookmark spesifik yang ingin kita gunakan untuk menghapus baris tabel:
+## Impor Namespace
+
+Untuk memulai, Anda harus mengimpor namespace yang diperlukan. Namespace ini menyediakan kelas dan metode yang diperlukan untuk bekerja dengan dokumen Word di Aspose.Words.
 
 ```csharp
-Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Langkah 2: Menghapus baris tabel
+Mari kita bagi prosesnya menjadi langkah-langkah yang dapat dikelola. Setiap langkah akan dijelaskan secara rinci untuk memastikan Anda memahami cara menghapus baris berdasarkan bookmark di dokumen Word Anda.
 
- Kami menggunakan`GetAncestor` metode untuk mendapatkan`Row` ketik elemen induk dari bookmark. Selanjutnya kita menggunakan`Remove` metode untuk menghapus baris tabel:
+## Langkah 1: Muat Dokumen
+
+Pertama, Anda perlu memuat dokumen Word yang berisi bookmark. Dokumen ini akan menjadi dokumen yang barisnya ingin Anda hapus.
+
+```csharp
+Document doc = new Document("your-document.docx");
+```
+
+## Langkah 2: Temukan Bookmarknya
+
+Selanjutnya, cari bookmark di dokumen. Bookmark akan membantu Anda mengidentifikasi baris tertentu yang ingin Anda hapus.
+
+```csharp
+Bookmark bookmark = doc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## Langkah 3: Identifikasi Baris
+
+ Setelah Anda memiliki bookmark, Anda perlu mengidentifikasi baris yang berisi bookmark tersebut. Ini melibatkan navigasi ke nenek moyang bookmark, yang bertipe`Row`.
 
 ```csharp
 Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+```
+
+## Langkah 4: Hapus Baris
+
+Sekarang setelah Anda mengidentifikasi baris tersebut, Anda dapat melanjutkan untuk menghapusnya dari dokumen. Pastikan untuk menangani potensi nilai nol untuk menghindari pengecualian.
+
+```csharp
 row?.Remove();
 ```
 
-### Contoh kode sumber untuk Hapus Baris Berdasarkan Bookmark menggunakan Aspose.Words untuk .NET
+## Langkah 5: Simpan Dokumen
 
-Berikut ini contoh kode sumber lengkap untuk menunjukkan penghapusan baris tabel berdasarkan bookmark tertentu menggunakan Aspose.Words untuk .NET:
+Setelah menghapus baris, simpan dokumen untuk mencerminkan perubahan. Ini akan menyelesaikan proses menghapus baris berdasarkan bookmark.
 
 ```csharp
-
-	Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
-
-	Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
-	row?.Remove();
-        
+doc.Save("output-document.docx");
 ```
 
 ## Kesimpulan
 
-Dalam artikel ini, kami telah menjelajahi kode sumber C# untuk memahami cara menggunakan fungsi Hapus Baris Berdasarkan Bookmark Aspose.Words untuk .NET. Kami mengikuti panduan langkah demi langkah untuk menghapus baris tabel berdasarkan penanda tertentu dalam dokumen.
+Dan itu dia! Menghapus baris berdasarkan bookmark di dokumen Word menggunakan Aspose.Words untuk .NET sangatlah mudah jika Anda membaginya menjadi beberapa langkah sederhana. Metode ini memastikan Anda dapat secara tepat menargetkan dan menghapus baris berdasarkan penanda, menjadikan tugas pengelolaan dokumen Anda lebih efisien.
 
-### FAQ untuk menghapus baris demi bookmark di dokumen Word
+## FAQ
 
-#### T: Dapatkah saya menghapus beberapa baris menggunakan bookmark yang sama?
+### Bisakah saya menghapus beberapa baris menggunakan bookmark?
+Ya, Anda dapat menghapus beberapa baris dengan mengulangi beberapa bookmark dan menerapkan metode yang sama.
 
-J: Ya, Anda dapat menghapus beberapa baris menggunakan bookmark yang sama. Namun, Anda perlu menangani logika dalam kode Anda untuk menentukan jumlah baris yang akan dihapus dan melakukan penyesuaian yang diperlukan pada cuplikan kode yang disediakan.
+### Apa yang terjadi jika bookmark tidak ditemukan?
+ Jika penanda tidak ditemukan,`row` variabel akan menjadi nol, dan`Remove` metode tidak akan dipanggil, mencegah kesalahan apa pun.
 
-#### T: Apa yang terjadi jika bookmark tidak ada di dokumen?
+### Bisakah saya membatalkan penghapusan setelah menyimpan dokumen?
+Setelah dokumen disimpan, perubahannya bersifat permanen. Pastikan untuk menyimpan cadangan jika Anda perlu membatalkan perubahan.
 
-J: Jika bookmark yang ditentukan tidak ada dalam dokumen, cuplikan kode akan mengembalikan nilai null untuk objek bookmark. Oleh karena itu, Anda perlu menangani skenario ini dalam kode Anda dengan menambahkan pemeriksaan yang sesuai sebelum mencoba menghapus baris tabel.
+### Apakah mungkin menghapus baris berdasarkan kriteria lain?
+Ya, Aspose.Words untuk .NET menyediakan berbagai metode untuk menavigasi dan memanipulasi elemen dokumen berdasarkan kriteria yang berbeda.
 
-#### T: Apakah perpustakaan Aspose.Words gratis untuk digunakan?
-
- J: Perpustakaan Aspose.Words adalah perpustakaan komersial, dan Anda mungkin memerlukan lisensi yang valid untuk menggunakannya dalam proyek Anda. Anda dapat mengunjungi[Aspose.Words untuk referensi .NET API](https://reference.aspose.com/words/net/) untuk mempelajari lebih lanjut tentang opsi lisensi dan harga mereka.
-
-#### T: Dapatkah saya menghapus baris dari tabel di bagian tertentu pada dokumen Word?
-
-J: Ya, Anda bisa menghapus baris dari tabel di bagian tertentu dokumen Word. Anda dapat mengubah cuplikan kode yang disediakan untuk menargetkan bagian tertentu dengan menggunakan rentang atau bookmark yang sesuai dalam bagian tersebut.
+### Apakah metode ini berfungsi untuk semua jenis dokumen Word?
+Metode ini berfungsi untuk dokumen yang kompatibel dengan Aspose.Words untuk .NET. Pastikan format dokumen Anda didukung.

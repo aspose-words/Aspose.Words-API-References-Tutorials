@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Stap 3: Laad uw documenten
 
-Oké, tijd om de documenten te laden die je wilt vergelijken. U hebt de paden naar deze documenten nodig. Laten we aannemen dat u twee documenten heeft:`DocumentA.docx` En`DocumentB.docx`.
+Oké, tijd om de documenten te laden die je wilt vergelijken. U hebt de paden naar deze documenten nodig. Laten we aannemen dat u twee documenten heeft:`DocumentA.docx`En`DocumentB.docx`.
 
 ```csharp
 // Het pad naar de documentenmap.

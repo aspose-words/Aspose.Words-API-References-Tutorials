@@ -17,14 +17,14 @@ Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder`belgeyle çalışmaya itiraz edin.
+ Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmaya itiraz edin.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. Adım: Bir Görüntü Şekli Ekleme
- Kullan`InsertImage` yöntemi`DocumentBuilder` Belgeye bir görüntü şekli eklemek için nesne. Görüntü dosyasının yolunu parametre olarak belirtin.
+ Kullan`InsertImage` yöntemi`DocumentBuilder`Belgeye bir görüntü şekli eklemek için nesne. Görüntü dosyasının yolunu parametre olarak belirtin.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  Yı kur`AspectRatioLocked` şeklin özelliği`true` veya`false` En boy oranını sırasıyla kilitlemek veya kilidini açmak için.
 
 ```csharp
-shape.AspectRatioLocked = false; //En boy oranının kilidini açın
+shape.AspectRatioLocked = false; // En boy oranının kilidini açın
 ```
 
 ## Adım 5: Belgeyi Kaydedin

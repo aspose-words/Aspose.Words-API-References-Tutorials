@@ -2,7 +2,7 @@
 title: Java के लिए Aspose.Words में मार्कडाउन के रूप में दस्तावेज़ सहेजना
 linktitle: दस्तावेज़ों को मार्कडाउन के रूप में सहेजना
 second_title: Aspose.Words जावा दस्तावेज़ प्रसंस्करण एपीआई
-description: जानें कि Java के लिए Aspose.Words के साथ Word दस्तावेज़ों को Markdown में कैसे परिवर्तित करें। यह चरण-दर-चरण मार्गदर्शिका तालिका संरेखण, छवि प्रबंधन, और बहुत कुछ को कवर करती है।
+description: जावा के लिए Aspose.Words के साथ Word दस्तावेज़ों को Markdown में बदलने का तरीका जानें। यह चरण-दर-चरण मार्गदर्शिका तालिका संरेखण, छवि प्रबंधन, और बहुत कुछ को कवर करती है।
 type: docs
 weight: 18
 url: /hi/java/document-loading-and-saving/saving-documents-as-markdown/

@@ -116,7 +116,7 @@ Aspose.Words for .NET は、開発者がプログラムで Word ドキュメン�
 
 ## 3. Aspose.Words for .NET の主な機能は何ですか?
 
- Aspose.Words for .NETは、ドキュメントの作成、書式設定、変換、操作など、幅広い機能を提供します。詳細については、[APIドキュメント](https://reference.aspose.com/words/net/).
+Aspose.Words for .NETは、ドキュメントの作成、書式設定、変換、操作など、幅広い機能を提供します。詳細については、[APIドキュメント](https://reference.aspose.com/words/net/).
 
 ## 4. Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
 

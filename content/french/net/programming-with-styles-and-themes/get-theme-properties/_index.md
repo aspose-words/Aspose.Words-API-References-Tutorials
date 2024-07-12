@@ -72,7 +72,7 @@ N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words for .NET
 
 #### Comment récupérer les polices primaires et secondaires du thème d'un document ?
 
- Vous pouvez accéder aux polices principales et secondaires du thème d'un document en utilisant le`MajorFonts` et`MinorFonts` propriétés du`Theme` objet, respectivement. Ces propriétés donnent accès aux noms de polices utilisés dans le thème du document pour différentes langues ou régions.
+ Vous pouvez accéder aux polices principales et secondaires du thème d'un document en utilisant le`MajorFonts`et`MinorFonts` propriétés du`Theme` objet, respectivement. Ces propriétés donnent accès aux noms de polices utilisés dans le thème du document pour différentes langues ou régions.
 
 #### Puis-je obtenir les couleurs d’accent utilisées dans le thème d’un document ?
 

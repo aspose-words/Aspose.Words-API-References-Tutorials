@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3. lépés: Frissítse az oldal elrendezését
 
- Hívja a`UpdatePageLayout` módszer. Ez a dokumentumot a memóriában jeleníti meg, és rögzíti a renderelés során előforduló figyelmeztetéseket.
+ Hívja a`UpdatePageLayout`módszer. Ez a dokumentumot a memóriában jeleníti meg, és rögzíti a renderelés során előforduló figyelmeztetéseket.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -106,7 +106,7 @@ Nem, csak egy alapértelmezett betűtípust adhat meg helyettesítéshez. Azonba
 
 ###  3. kérdés: Kezelhetek-e más típusú figyelmeztetéseket`IWarningCallback`?
 
- Igen, a`IWarningCallback` A felület különféle típusú figyelmeztetéseket tud kezelni, nem csak a betűtípusok helyettesítését.
+ Igen, a`IWarningCallback` felület különféle típusú figyelmeztetéseket tud kezelni, nem csak a betűtípusok helyettesítését.
 
 ### 4. kérdés: Hol találok támogatást az Aspose.Words számára?
 

@@ -2,125 +2,143 @@
 title: Phần không hạn chế trong tài liệu Word
 linktitle: Phần không hạn chế trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách xác định các phần không bị hạn chế trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Mở khóa các phần cụ thể trong tài liệu Word của bạn bằng Aspose.Words for .NET với hướng dẫn từng bước này. Hoàn hảo để bảo vệ nội dung nhạy cảm.
 type: docs
 weight: 10
 url: /vi/net/document-protection/unrestricted-section/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để sử dụng tính năng phần không hạn chế của Aspose.Words cho .NET. Tính năng này cho phép bạn xác định các phần cụ thể trong tài liệu Word không được bảo vệ, ngay cả khi phần còn lại của tài liệu được bảo vệ. Làm theo các bước dưới đây:
+## Giới thiệu
 
-## Bước 1: Tạo tài liệu và các phần
+Này! Bạn đã sẵn sàng đi sâu vào thế giới Aspose.Words dành cho .NET chưa? Hôm nay, chúng tôi đang giải quyết một vấn đề siêu thực tế: cách mở khóa các phần cụ thể trong tài liệu Word trong khi vẫn bảo vệ các phần khác. Nếu bạn cần bảo vệ một số phần trong tài liệu của mình nhưng vẫn để mở những phần khác để chỉnh sửa thì hướng dẫn này là dành cho bạn. Bắt đầu nào!
 
-Bắt đầu bằng cách tạo một thể hiện của lớp Document và đối tượng DocumentBuilder:
+## Điều kiện tiên quyết
+
+Trước khi chúng ta đi sâu vào vấn đề chi tiết, hãy đảm bảo bạn có mọi thứ bạn cần:
+
+-  Aspose.Words for .NET: Nếu chưa có, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+- Visual Studio: Hoặc bất kỳ IDE tương thích .NET nào khác.
+- Hiểu biết cơ bản về C#: Làm quen một chút với C# sẽ giúp bạn dễ dàng thực hiện hướng dẫn này.
+-  Giấy phép Aspose: Lấy một[dùng thử miễn phí](https://releases.aspose.com/) hoặc nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) nếu bạn cần nó để thử nghiệm.
+
+## Nhập không gian tên
+
+Trước khi bắt đầu viết mã, hãy đảm bảo bạn đã nhập các vùng tên cần thiết trong dự án C# của mình:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Bước 2: Thêm nội dung vào tài liệu
-Sử dụng đối tượng DocumentBuilder để thêm nội dung vào tài liệu và chèn dấu ngắt phần:
+Bây giờ chúng ta hãy chia nhỏ nó ra từng bước một nhé!
+
+## Bước 1: Thiết lập dự án của bạn
+
+### Khởi tạo thư mục tài liệu của bạn
+
+Trước tiên, bạn cần thiết lập đường dẫn đến thư mục tài liệu của mình. Đây là nơi các tập tin Word của bạn sẽ được lưu.
 
 ```csharp
-builder.Writeln("Section 1. Unprotected.");
-builder. InsertBreak(BreakType. SectionBreakContinuous);
-builder.Writeln("Section 2. Protected.");
-```
-
-## Bước 3: Bảo vệ tài liệu và các phần
-
-Tính năng bảo vệ phần chỉ hoạt động khi tính năng bảo vệ tài liệu được bật và chỉ cho phép chỉnh sửa trong các trường biểu mẫu. Bạn có thể bảo vệ tài liệu bằng phương thức Protect() của đối tượng Document:
-
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
-
-Đảm bảo chỉ định đúng loại bảo vệ và đặt mật khẩu mong muốn.
-
-## Bước 4: Vô hiệu hóa bảo vệ cho một phần cụ thể
-
-Theo mặc định, tất cả các phần đều được bảo vệ, nhưng bạn có thể tắt tính năng bảo vệ một cách có chọn lọc cho một phần cụ thể bằng cách sử dụng thuộc tính ProtectedForForms của đối tượng Phần:
-
-```csharp
-doc.Sections[0].ProtectedForForms = false;
-```
-
-Trong ví dụ này, tính năng bảo vệ bị tắt đối với phần đầu tiên.
-
-## Bước 5: Lưu tài liệu
-
-Cuối cùng, lưu tài liệu đã sửa đổi:
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-```
-
-Đảm bảo chỉ định đường dẫn và tên tệp chính xác để lưu tài liệu với các phần không bị giới hạn.
-
-### Mã nguồn ví dụ cho Phần không hạn chế sử dụng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh cho phần không hạn chế sử dụng Aspose.Words cho .NET:
-
-
-```csharp
-
-// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Chèn hai phần với một số văn bản.
+```
+
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi bạn muốn lưu tài liệu của mình. Điều này rất quan trọng vì nó đảm bảo các tập tin của bạn được lưu trữ ở đúng vị trí.
+
+### Tạo một tài liệu mới
+
+Tiếp theo, chúng ta sẽ tạo một tài liệu mới bằng Aspose.Words. Tài liệu này sẽ là bức vẽ mà chúng ta sẽ áp dụng phép thuật của mình trên đó.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ Các`Document` lớp khởi tạo một tài liệu mới và`DocumentBuilder` giúp chúng ta dễ dàng thêm nội dung vào tài liệu của mình.
+
+## Bước 2: Chèn phần
+
+### Thêm phần không được bảo vệ
+
+Hãy bắt đầu bằng cách thêm phần đầu tiên, phần này sẽ không được bảo vệ.
+
+```csharp
 builder.Writeln("Section 1. Unprotected.");
+```
+
+Dòng mã này thêm dòng chữ "Phần 1. Không được bảo vệ." vào tài liệu. Đơn giản phải không?
+
+### Thêm phần được bảo vệ
+
+Bây giờ, hãy thêm phần thứ hai và chèn dấu ngắt phần để tách nó khỏi phần đầu tiên.
+
+```csharp
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
-
-// Tính năng bảo vệ phần chỉ hoạt động khi tính năng bảo vệ tài liệu được bật và chỉ cho phép chỉnh sửa trong các trường biểu mẫu.
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-
-//Theo mặc định, tất cả các phần đều được bảo vệ, nhưng chúng ta có thể tắt tính năng bảo vệ một cách có chọn lọc.
-doc.Sections[0].ProtectedForForms = false;
-doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-
-doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-
 ```
 
-Bằng cách làm theo các bước này, bạn sẽ có thể dễ dàng xác định các phần không bị hạn chế trong tài liệu Word của mình bằng Aspose.Words for .NET.
+ Các`InsertBreak` phương pháp chèn ngắt phần liên tục, cho phép chúng tôi có các cài đặt khác nhau cho từng phần.
+
+## Bước 3: Bảo vệ tài liệu
+
+### Bật bảo vệ tài liệu
+
+ Để bảo vệ tài liệu, chúng tôi sẽ sử dụng`Protect` phương pháp. Phương pháp này đảm bảo rằng chỉ có thể chỉnh sửa các trường biểu mẫu trừ khi có quy định khác.
+
+```csharp
+doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
+
+ Tại đây, tài liệu được bảo vệ bằng mật khẩu và chỉ có thể chỉnh sửa các trường biểu mẫu. Nhớ thay thế`"password"` với mật khẩu bạn mong muốn.
+
+### Phần cụ thể không bảo vệ
+
+Theo mặc định, tất cả các phần đều được bảo vệ. Chúng ta cần tắt tính năng bảo vệ có chọn lọc cho phần đầu tiên.
+
+```csharp
+doc.Sections[0].ProtectedForForms = false;
+```
+
+Dòng này đảm bảo rằng phần đầu tiên vẫn không được bảo vệ trong khi phần còn lại của tài liệu được bảo mật.
+
+## Bước 4: Lưu và tải tài liệu
+
+### Lưu tài liệu
+
+Bây giờ là lúc lưu tài liệu của bạn với các cài đặt bảo vệ được áp dụng.
+
+```csharp
+doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
+```
+
+ Thao tác này sẽ lưu tài liệu vào thư mục được chỉ định với tên`DocumentProtection.UnrestrictedSection.docx`.
+
+### Tải tài liệu
+
+Cuối cùng, chúng tôi tải tài liệu để xác minh rằng mọi thứ đã được thiết lập chính xác.
+
+```csharp
+doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
+```
+
+Bước này đảm bảo rằng tài liệu được lưu đúng cách và có thể được tải lại mà không làm mất cài đặt bảo vệ.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã khám phá tính năng phần không hạn chế của Aspose.Words dành cho .NET, cho phép các phần cụ thể trong tài liệu Word không được bảo vệ trong khi phần còn lại của tài liệu được bảo vệ. Bằng cách làm theo các bước được cung cấp, bạn có thể dễ dàng xác định các phần trong tài liệu của mình nơi người dùng có thể tự do chỉnh sửa nội dung trong khi vẫn duy trì chế độ bảo vệ cho các phần khác. Aspose.Words for .NET cung cấp các khả năng mạnh mẽ để bảo vệ và tùy chỉnh tài liệu, cho phép bạn kiểm soát các quyền chỉnh sửa trong tài liệu Word của mình.
+Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn đã tạo thành công tài liệu Word có sự kết hợp giữa các phần được bảo vệ và không được bảo vệ bằng Aspose.Words cho .NET. Phương pháp này cực kỳ hữu ích khi bạn cần khóa một số phần nhất định của tài liệu trong khi vẫn để các phần khác có thể chỉnh sửa được.
 
-### Câu hỏi thường gặp về phần không hạn chế trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Các phần không hạn chế trong Aspose.Words dành cho .NET là gì?
+### Tôi có thể bảo vệ nhiều hơn một phần không?
+Có, bạn có thể chọn lọc bảo vệ và bỏ bảo vệ nhiều phần nếu cần.
 
-Đáp: Các phần không hạn chế trong Aspose.Words for .NET là các phần cụ thể trong tài liệu Word không được bảo vệ, ngay cả khi phần còn lại của tài liệu được bảo vệ. Các phần này cho phép người dùng sửa đổi nội dung trong đó trong khi vẫn duy trì khả năng bảo vệ cho các phần còn lại của tài liệu.
+### Có thể thay đổi loại bảo vệ sau khi lưu tài liệu không?
+Có, bạn có thể mở lại tài liệu và sửa đổi cài đặt bảo vệ theo yêu cầu.
 
-#### Câu hỏi: Làm cách nào tôi có thể tạo các phần không bị hạn chế bằng Aspose.Words cho .NET?
+### Những loại bảo vệ nào khác có sẵn trong Aspose.Words?
+ Aspose.Words hỗ trợ một số loại bảo vệ bao gồm`ReadOnly`, `Comments` , Và`TrackedChanges`.
 
-Trả lời: Để tạo các phần không bị hạn chế trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
-1.  Tạo một thể hiện của`Document` lớp học và một`DocumentBuilder` sự vật.
-2.  Sử dụng`DocumentBuilder` để thêm nội dung vào tài liệu và chèn dấu ngắt phần.
-3.  Bảo vệ tài liệu bằng cách sử dụng`Protect` phương pháp của`Document` đối tượng, chỉ định loại bảo vệ và mật khẩu mong muốn.
-4.  Tắt tính năng bảo vệ cho một phần cụ thể bằng cách đặt`ProtectedForForms` thuộc tính tương ứng`Section` chủ đề`false`.
-5. Lưu tài liệu đã sửa đổi.
+### Tôi có thể bảo vệ tài liệu mà không cần mật khẩu không?
+Có, bạn có thể bảo vệ tài liệu mà không cần chỉ định mật khẩu.
 
-#### Hỏi: Tôi có thể có nhiều phần không hạn chế trong tài liệu Word không?
-
- Đáp: Có, bạn có thể có nhiều phần không hạn chế trong tài liệu Word. Bằng cách vô hiệu hóa có chọn lọc tính năng bảo vệ cho các phần cụ thể bằng cách sử dụng`ProtectedForForms` tài sản của`Section`đối tượng, bạn có thể xác định nhiều phần trong đó người dùng có thể tự do sửa đổi nội dung trong khi vẫn bảo vệ các phần khác.
-
-#### Q4. Tôi có thể xóa tính năng bảo vệ khỏi phần đã được bảo vệ ban đầu không?
- Có, bạn có thể xóa tính năng bảo vệ khỏi phần được bảo vệ ban đầu bằng cách đặt`ProtectedForForms` thuộc tính tương ứng`Section` chủ đề`false`. Điều này cho phép người dùng chỉnh sửa nội dung trong phần cụ thể đó mà không có bất kỳ hạn chế nào.
-
-#### Hỏi: Những loại bảo vệ nào có thể được áp dụng cho tài liệu Word?
-
-Trả lời: Aspose.Words for .NET cung cấp nhiều loại bảo vệ khác nhau có thể áp dụng cho tài liệu Word, bao gồm:
-- NoProtection: Không có biện pháp bảo vệ nào được áp dụng.
-- AllowOnlyRevisions: Người dùng chỉ có thể sửa đổi tài liệu.
-- AllowOnlyComments: Người dùng chỉ có thể thêm nhận xét vào tài liệu.
-- AllowOnlyFormFields: Người dùng chỉ có thể chỉnh sửa các trường biểu mẫu trong tài liệu.
-- ReadOnly: Tài liệu ở chế độ chỉ đọc và không được phép chỉnh sửa.
-
-
+### Làm cách nào để kiểm tra xem một phần có được bảo vệ hay không?
+ Bạn có thể kiểm tra`ProtectedForForms` thuộc tính của một phần để xác định xem nó có được bảo vệ hay không.

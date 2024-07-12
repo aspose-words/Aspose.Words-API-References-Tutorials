@@ -21,7 +21,7 @@ Pada langkah ini, kita akan memuat dokumen Word yang tidak berisi bahasa pengedi
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// Atur preferensi bahasa yang akan digunakan saat memuat dokumen.
+//Atur preferensi bahasa yang akan digunakan saat memuat dokumen.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";

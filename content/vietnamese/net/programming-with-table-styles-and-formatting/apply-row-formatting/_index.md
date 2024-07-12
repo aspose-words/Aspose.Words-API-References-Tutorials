@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Bước 4: Chèn ô và chuyển sang định dạng hàng
-Bây giờ chúng ta có thể chèn một ô vào bảng và truy cập định dạng hàng cho ô đó bằng cách sử dụng trình tạo tài liệu`InsertCell()` Và`RowFormat` phương pháp.
+Bây giờ chúng ta có thể chèn một ô vào bảng và truy cập định dạng hàng cho ô đó bằng cách sử dụng trình tạo tài liệu`InsertCell()`Và`RowFormat` phương pháp.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Bước 5: Đặt chiều cao hàng
- Để thiết lập chiều cao của hàng, chúng ta sử dụng`Height` Và`HeightRule` thuộc tính của định dạng hàng. Trong ví dụ này, chúng tôi đặt chiều cao hàng là 100 điểm và sử dụng`Exactly` luật lệ.
+ Để thiết lập chiều cao của hàng, chúng ta sử dụng`Height`Và`HeightRule` thuộc tính của định dạng hàng. Trong ví dụ này, chúng tôi đặt chiều cao hàng là 100 điểm và sử dụng`Exactly` luật lệ.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Bước 6: Xác định định dạng bảng
- Một số thuộc tính định dạng có thể được đặt trên chính bảng và được áp dụng cho tất cả các hàng của bảng. Trong ví dụ này, chúng tôi đặt thuộc tính lề bảng bằng cách sử dụng`LeftPadding`, `RightPadding`, `TopPadding` Và`BottomPadding` của cải.
+ Một số thuộc tính định dạng có thể được đặt trên chính bảng và được áp dụng cho tất cả các hàng của bảng. Trong ví dụ này, chúng tôi đặt thuộc tính lề bảng bằng cách sử dụng`LeftPadding`, `RightPadding`, `TopPadding`Và`BottomPadding` của cải.
 
 ```csharp
 table. LeftPadding = 30;

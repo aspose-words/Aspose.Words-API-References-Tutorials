@@ -88,7 +88,7 @@ url: /zh/python-net/tables-and-formatting/document-table-styles-formatting/
 
 Aspose.Words for Python提供了一系列样式选项，使您的表格更具视觉吸引力：
 
-1. 表格样式：应用预定义的表格样式以获得专业外观。
+1. 表格样式：应用预定义的表格样式来实现专业的外观。
 
     ```python
     table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5

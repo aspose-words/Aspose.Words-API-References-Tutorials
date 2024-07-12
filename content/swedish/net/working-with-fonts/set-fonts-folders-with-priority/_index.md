@@ -1,6 +1,6 @@
 ---
-title: Ställ in teckensnittsmappar med prioritet
-linktitle: Ställ in teckensnittsmappar med prioritet
+title: Ställ in typsnittsmappar med prioritet
+linktitle: Ställ in typsnittsmappar med prioritet
 second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ställa in teckensnittsmappar med prioritet när du renderar ett dokument med Aspose.Words för .NET.
 type: docs
@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Ställ in teckensnittsmappar med prioritet
- Sedan kan du ställa in teckensnittsmapparna med prioritet med hjälp av`FontSettings` klass och`SetFontsSources()`metod. Du kan ange flera teckensnittskällor med hjälp av instanser av`SystemFontSource` och`FolderFontSource`. I det här exemplet har vi definierat två teckensnittskällor: standardsystemets teckensnittskälla och en anpassad teckensnittsmapp med prioritet 1.
+ Sedan kan du ställa in teckensnittsmapparna med prioritet med hjälp av`FontSettings` klass och`SetFontsSources()`metod. Du kan ange flera teckensnittskällor med hjälp av instanser av`SystemFontSource`och`FolderFontSource`. I det här exemplet har vi definierat två teckensnittskällor: standardsystemets teckensnittskälla och en anpassad teckensnittsmapp med prioritet 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

@@ -63,7 +63,7 @@ Pastikan untuk menentukan jalur dan nama file yang benar untuk dokumen keluaran.
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// Kita perlu mengaktifkan KeepWithNext untuk setiap paragraf dalam tabel agar tidak terputus di satu halaman,
-	// kecuali paragraf terakhir di baris terakhir tabel.
+	//kecuali paragraf terakhir di baris terakhir tabel.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

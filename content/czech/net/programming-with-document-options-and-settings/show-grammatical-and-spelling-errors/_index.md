@@ -16,7 +16,7 @@ Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistět
 
 ## Krok 2: Načtení dokumentu
 
-tomto kroku načteme dokument Wordu, u kterého chceme zobrazit gramatické a pravopisné chyby. K načtení dokumentu použijte následující kód:
+V tomto kroku načteme dokument Wordu, u kterého chceme zobrazit gramatické a pravopisné chyby. K načtení dokumentu použijte následující kód:
 
 ```csharp
 // Cesta k adresáři dokumentů.

@@ -2,119 +2,144 @@
 title: Définir les options par défaut pour les étiquettes de données dans un graphique
 linktitle: Définir les options par défaut pour les étiquettes de données dans un graphique
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment définir les options par défaut pour les étiquettes de données dans un graphique à l'aide d'Aspose.Words for .NET.
+description: Découvrez comment définir les options par défaut pour les étiquettes de données dans un graphique à l'aide d'Aspose.Words for .NET. Suivez notre guide étape par étape pour créer et personnaliser des graphiques sans effort.
 type: docs
 weight: 10
 url: /fr/net/programming-with-charts/default-options-for-data-labels/
 ---
+## Introduction
 
-Ce didacticiel explique comment utiliser Aspose.Words for .NET pour définir les options par défaut pour les étiquettes de données dans un graphique. Le code fourni montre comment créer un graphique, ajouter des séries de données et personnaliser les étiquettes de données à l'aide d'Aspose.Words.
+Salut! Êtes-vous impatient de plonger dans le monde de l’automatisation des documents ? Aujourd'hui, nous allons explorer comment utiliser Aspose.Words for .NET pour créer de superbes documents par programmation. Aspose.Words est une bibliothèque puissante qui vous permet de manipuler facilement des documents Word. Dans ce didacticiel, nous nous concentrerons sur la définition des options par défaut pour les étiquettes de données dans un graphique. Que vous soyez un développeur chevronné ou un débutant, ce guide vous guidera à travers chaque étape pour vous permettre d'être opérationnel en un rien de temps.
 
-## Étape 1 : Configurer le projet
+## Conditions préalables
 
-Avant de commencer, assurez-vous que les conditions suivantes sont remplies :
+Avant de commencer, assurons-nous que vous disposez de tout ce dont vous avez besoin pour suivre ce didacticiel. Voici une liste de contrôle rapide :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger à l'aide du gestionnaire de packages NuGet pour l'installer.
-- Un chemin de répertoire de document où le document de sortie sera enregistré.
+- Visual Studio ou tout autre IDE compatible .NET : c'est ici que vous écrirez et exécuterez votre code.
+-  Aspose.Words pour .NET : vous pouvez[télécharger la dernière version](https://releases.aspose.com/words/net/) et installez-le dans votre projet.
+- Connaissance de base de la programmation C# : bien que ce guide soit adapté aux débutants, une petite familiarité avec C# sera utile.
+- .NET Framework installé : assurez-vous que .NET Framework est configuré sur votre ordinateur.
+-  Une licence temporaire pour Aspose.Words : obtenez-en une[ici](https://purchase.aspose.com/temporary-license/) pour débloquer toutes les fonctionnalités.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique
+Une fois que vous avez réglé ces prérequis, nous sommes prêts à démarrer !
 
- Tout d'abord, créons un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
+## Importer des espaces de noms
+
+Tout d’abord, configurons notre projet et importons les espaces de noms nécessaires. Ces espaces de noms sont cruciaux pour accéder à la fonctionnalité Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.ReportingServices;
+```
+
+## Étape 1 : Créer un nouveau document
+
+
+ Le voyage commence par la création d'un nouveau document et l'initialisation d'un`DocumentBuilder` . Le`DocumentBuilder` La classe fournit un ensemble de méthodes pour manipuler facilement le contenu du document.
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Créer un nouveau document
 Document doc = new Document();
+
+// Initialiser DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ensuite, nous insérons un graphique dans le document en utilisant le`InsertChart` méthode du`DocumentBuilder`. Dans cet exemple, nous allons insérer un diagramme circulaire.
+### Explication
+
+ Dans cette étape, nous avons configuré le document et le générateur que nous utiliserons pour insérer et formater notre contenu. Le`dataDir` La variable contient le chemin où nous enregistrerons notre document final.
+
+## Étape 2 : Insérer un graphique
+
+ Ensuite, nous ajouterons un diagramme circulaire à notre document. Le`InsertChart` méthode du`DocumentBuilder` la classe rend cela super facile.
 
 ```csharp
+// Insérer un diagramme circulaire
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
+
+// Accéder à l'objet graphique
 Chart chart = shape.Chart;
 ```
 
-## Étape 3 : Ajouter des séries de données au graphique
+### Explication
 
-Maintenant, ajoutons une série de données au graphique. Dans cet exemple, nous ajouterons trois catégories et leurs valeurs correspondantes.
+Ici, nous insérons un diagramme circulaire dans notre document. Le`InsertChart` La méthode nécessite le type, la largeur et la hauteur du graphique comme paramètres. Après avoir inséré le graphique, nous accédons à l’objet graphique pour le manipuler davantage.
+
+## Étape 3 : Personnaliser la série de graphiques
+
+Maintenant, nous allons effacer toutes les séries existantes dans le graphique et ajouter notre série personnalisée. Cette série représentera nos points de données.
 
 ```csharp
+// Effacer les séries de graphiques existantes
 chart.Series.Clear();
+
+// Ajouter une nouvelle série au graphique
 ChartSeries series = chart.Series.Add("Aspose Series 1",
     new string[] { "Category 1", "Category 2", "Category 3" },
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## Étape 4 : Personnaliser les étiquettes de données
+### Explication
 
- Pour personnaliser les étiquettes de données dans le graphique, nous devons accéder au`ChartDataLabelCollection` objet associé à la série.
+Dans cette étape, nous nous assurons que notre graphique est vide en effaçant toute série préexistante. Ensuite, nous ajoutons une nouvelle série avec des catégories et des valeurs personnalisées, qui seront affichées dans notre diagramme circulaire.
+
+## Étape 4 : Définir les options par défaut pour les étiquettes de données
+
+Les étiquettes de données sont cruciales pour rendre votre graphique informatif. Nous définirons les options pour afficher le pourcentage, la valeur et personnaliserons le séparateur.
 
 ```csharp
+// Accéder à la collection d'étiquettes de données
 ChartDataLabelCollection labels = series.DataLabels;
-```
 
- On peut alors modifier diverses propriétés du`labels`objet pour définir les options souhaitées pour les étiquettes de données. Dans cet exemple, nous allons activer l'affichage du pourcentage et de la valeur, désactiver les lignes de repère et définir un séparateur personnalisé.
-
-```csharp
+// Définir les options d'étiquette de données
 labels.ShowPercentage = true;
 labels.ShowValue = true;
 labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
+### Explication
+
+ Ici, nous accédons au`DataLabels`propriété de notre série pour personnaliser l'apparence et les informations affichées sur chaque étiquette de données. Nous avons choisi d'afficher à la fois le pourcentage et la valeur, de masquer les lignes de repère et de définir un séparateur personnalisé.
+
 ## Étape 5 : Enregistrez le document
 
- Enfin, nous enregistrons le document dans le répertoire spécifié en utilisant le`Save` méthode du`Document` objet.
+Enfin, nous enregistrerons notre document dans le répertoire spécifié. Cette étape garantit que toutes nos modifications sont écrites dans un fichier.
 
 ```csharp
+// Enregistrez le document
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-Ceci termine la mise en œuvre de la définition des options par défaut pour les étiquettes de données dans un graphique à l’aide d’Aspose.Words pour .NET.
+### Explication
 
-### Exemple de code source pour les options par défaut pour les étiquettes de données utilisant Aspose.Words pour .NET 
-
-```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	ChartSeries series = chart.Series.Add("Aspose Series 1",
-		new string[] { "Category 1", "Category 2", "Category 3" },
-		new double[] { 2.7, 3.2, 0.8 });
-	ChartDataLabelCollection labels = series.DataLabels;
-	labels.ShowPercentage = true;
-	labels.ShowValue = true;
-	labels.ShowLeaderLines = false;
-	labels.Separator = " - ";
-	doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
-```
+ Dans cette dernière étape, nous sauvegardons notre document en utilisant le`Save` méthode. Le document sera enregistré dans le répertoire spécifié par`dataDir`, avec le nom « WorkingWithCharts.DefaultOptionsForDataLabels.docx ».
 
 ## Conclusion
 
-Dans ce didacticiel, vous avez appris à définir les options par défaut pour les étiquettes de données dans un graphique à l'aide d'Aspose.Words for .NET. En suivant le guide étape par étape, vous pouvez créer un graphique, ajouter des séries de données et personnaliser les étiquettes de données pour répondre à vos besoins spécifiques. Aspose.Words for .NET fournit une API puissante pour le traitement de mots avec des graphiques dans des documents Word, vous permettant de manipuler divers éléments de graphique et d'obtenir l'apparence et les fonctionnalités souhaitées.
+Et voila! Vous avez créé avec succès un document Word avec un diagramme circulaire personnalisé à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'automatisation de la création et de la manipulation de documents, vous permettant ainsi d'économiser du temps et des efforts. Que vous génériez des rapports, des factures ou tout autre type de document, Aspose.Words est là pour vous.
 
- En définissant les propriétés du`ChartDataLabelCollection`objet associé à la série de graphiques, vous pouvez contrôler l'affichage des étiquettes de données, y compris des options telles que l'affichage des pourcentages, des valeurs, des lignes de repère et des séparateurs personnalisés. Cette flexibilité vous permet de présenter les données de manière efficace et d'améliorer la représentation visuelle de vos graphiques.
+ N'hésitez pas à explorer le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour plus de fonctionnalités et d’exemples. Bon codage !
 
-### FAQ
+## FAQ
 
-#### T1. Qu’est-ce qu’Aspose.Words pour .NET ?
-Aspose.Words for .NET est une bibliothèque qui permet aux développeurs de créer, manipuler et enregistrer des documents Word par programme à l'aide d'applications .NET. Il offre un large éventail de fonctionnalités pour le traitement de texte avec des éléments de document, notamment des graphiques.
+### Puis-je utiliser Aspose.Words gratuitement ?
+Vous pouvez utiliser Aspose.Words gratuitement avec un[permis temporaire](https://purchase.aspose.com/temporary-license/) ou explorez ses fonctionnalités à l'aide du[essai gratuit](https://releases.aspose.com/).
 
-#### Q2. Comment puis-je installer Aspose.Words pour .NET ?
-Vous pouvez installer Aspose.Words pour .NET en le téléchargeant à l'aide du gestionnaire de packages NuGet dans Visual Studio. Recherchez simplement « Aspose.Words » dans le gestionnaire de packages NuGet et installez-le dans votre projet.
+### Comment puis-je obtenir de l'aide pour Aspose.Words ?
+ Vous pouvez obtenir de l'aide via le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8).
 
-#### Q3. Puis-je personnaliser d’autres aspects du graphique à l’aide d’Aspose.Words for .NET ?
-Oui, Aspose.Words for .NET vous permet de personnaliser divers aspects d'un graphique, tels que le type de graphique, les étiquettes des axes, la légende, la zone de tracé, etc. Vous pouvez accéder et modifier différentes propriétés de l'objet graphique pour obtenir l'apparence et le comportement souhaités.
+### Puis-je ajouter d’autres types de graphiques ?
+ Oui, Aspose.Words prend en charge différents types de graphiques tels que les graphiques à barres, en courbes et en colonnes. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
-#### Q4. Puis-je enregistrer le graphique dans différents formats ?
- Oui, Aspose.Words for .NET prend en charge l'enregistrement du document contenant le graphique dans différents formats, notamment DOCX, PDF, HTML, etc. Vous pouvez choisir le format approprié en fonction de vos besoins et utiliser le`Save` méthode du`Document` objet pour enregistrer le document.
+### Aspose.Words est-il compatible avec .NET Core ?
+ Oui, Aspose.Words est compatible avec .NET Core. Vous pouvez trouver plus d'informations dans le[Documentation](https://reference.aspose.com/words/net/).
 
-#### Q5. Puis-je appliquer ces techniques à d’autres types de graphiques ?
-Oui, les techniques décrites dans ce didacticiel peuvent être appliquées à d'autres types de graphiques pris en charge par Aspose.Words for .NET. La clé est d'accéder aux objets et propriétés pertinents spécifiques au type de graphique avec lequel vous utilisez le traitement de texte.
+### Comment puis-je acheter une licence pour Aspose.Words ?
+ Vous pouvez acheter une licence auprès du[Magasin Aspose](https://purchase.aspose.com/buy).
+

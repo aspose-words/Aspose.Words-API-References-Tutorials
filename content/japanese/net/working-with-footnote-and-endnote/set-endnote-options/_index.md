@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
  A: はい、文書内の文末脚注の番号付けをカスタマイズすることは可能です。`RestartRule`そして`NumberStyle`の特性`EndnoteOptions`特定の再開ルールと番号付けスタイルを定義するクラス。
 
-#### Q: 文書内で文末脚注を配置するにはどうすればいいですか?
+#### Q: 文書内で文末脚注を配置するにはどうすればよいでしょうか?
 
 A: 文書内で文末脚注を配置するには、`Position`の財産`EndnoteOptions`クラス。文末脚注を各ページの下部、各セクションの末尾、または文書の末尾に配置するかどうかを指定できます。
 

@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. Bir OLE nesnesini bir akıştan simge olarak projenize ekleme kodunu eklemek için şu adımları izleyin:
 -  Uygun referansları ekleyerek gerekli referansları içe aktarın`using` ifadeler.
--  kullanarak yeni bir belge ve belge oluşturucu oluşturun.`Document` Ve`DocumentBuilder` sınıflar.
+-  kullanarak yeni bir belge ve belge oluşturucu oluşturun.`Document`Ve`DocumentBuilder` sınıflar.
 - OLE nesnesini bir akıştan simge olarak eklemek için kodu kullanın.
 -  kullanarak belgeyi kaydedin.`Save` uygun hedef yolu ile yöntem.
 

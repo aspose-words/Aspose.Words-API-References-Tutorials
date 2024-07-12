@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Stap 3: Pagina-indeling bijwerken
 
- Bel de`UpdatePageLayout` methode. Hierdoor wordt het document in het geheugen weergegeven en worden eventuele waarschuwingen vastgelegd die tijdens het renderen optreden.
+ Bel de`UpdatePageLayout`methode. Hierdoor wordt het document in het geheugen weergegeven en worden eventuele waarschuwingen vastgelegd die tijdens het renderen optreden.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -80,7 +80,7 @@ HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 ```
 
-## Stap 6: Sla het document op
+## Stap 6: Bewaar het document
 
 Sla ten slotte het document op. Zelfs als het document eerder is weergegeven, worden eventuele opslagwaarschuwingen tijdens deze stap aan de gebruiker gemeld.
 
@@ -106,7 +106,7 @@ Nee, u kunt slechts één standaardlettertype ter vervanging opgeven. U kunt ech
 
 ###  Vraag 3: Kan ik andere soorten waarschuwingen verwerken?`IWarningCallback`?
 
- Ja de`IWarningCallback` interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
+ Ja de`IWarningCallback`interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
 
 ### V4: Waar kan ik ondersteuning vinden voor Aspose.Words?
 

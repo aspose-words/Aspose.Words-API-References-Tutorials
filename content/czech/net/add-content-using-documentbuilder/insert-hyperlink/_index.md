@@ -55,7 +55,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- V tomto úryvku definujeme cestu k adresáři, kam bude náš dokument uložen, a inicializujeme nový`Document` a`DocumentBuilder` instance.
+ V tomto úryvku definujeme cestu k adresáři, kam bude náš dokument uložen, a inicializujeme nový`Document`a`DocumentBuilder` instance.
 
 ## Krok 3: Napište počáteční text
 

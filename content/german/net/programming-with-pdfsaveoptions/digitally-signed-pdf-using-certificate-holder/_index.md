@@ -88,7 +88,7 @@ In diesem Tutorial haben wir die Schritte zum Hinzufügen einer digitalen Signat
 ### Häufig gestellte Fragen
 
 #### F: Was ist eine digitale Signatur und warum ist sie in einem PDF-Dokument wichtig?
-A: Eine digitale Signatur ist eine Sicherheitstechnik, die die Authentizität, Integrität und Nichtabstreitbarkeit eines elektronischen Dokuments, wie z. B. einer PDF-Datei, gewährleistet. Mithilfe eines digitalen Zertifikats wird dem Dokument eine Sicherheitsebene hinzugefügt, mit der die Identität des Autors überprüft und nachträgliche Änderungen am Inhalt erkannt werden können.
+A: Eine digitale Signatur ist eine Sicherheitstechnik, die die Authentizität, Integrität und Nichtabstreitbarkeit eines elektronischen Dokuments, beispielsweise einer PDF-Datei, gewährleistet. Mithilfe eines digitalen Zertifikats wird dem Dokument eine zusätzliche Sicherheitsebene hinzugefügt, mit der die Identität des Autors überprüft und nachträgliche Änderungen am Inhalt erkannt werden können.
 
 #### F: Wie kann ich mit Aspose.Words für .NET mithilfe eines Zertifikats einem PDF-Dokument eine digitale Signatur hinzufügen?
 A: Um einem PDF-Dokument mit einem Zertifikat mit Aspose.Words für .NET eine digitale Signatur hinzuzufügen, gehen Sie folgendermaßen vor:
@@ -105,4 +105,4 @@ A: Um einem PDF-Dokument mit einem Zertifikat mit Aspose.Words für .NET eine di
 A: Um ein Zertifikat zum Hinzufügen einer digitalen Signatur zu einem PDF-Dokument zu erhalten, können Sie sich normalerweise an eine Zertifizierungsstelle (CA) oder einen Vertrauensdienstanbieter wenden. Diese Stellen stellen digitale Zertifikate aus, nachdem sie Ihre Identität überprüft und Ihre Anfrage validiert haben. Sobald Sie ein Zertifikat erhalten haben, können Sie es in Ihrer Anwendung verwenden, um PDF-Dokumenten digitale Signaturen hinzuzufügen.
 
 #### F: Ist es möglich, die Details der digitalen Signatur, wie etwa Grund und Ort, anzupassen?
- A: Ja, Sie können die Details der digitalen Signatur anpassen, indem Sie den Grund und den Ort der Signatur angeben. Im bereitgestellten Beispielcode können Sie die Werte der`reason` Und`location` Parameter beim Erstellen der`PdfDigitalSignatureDetails` Objekt. Stellen Sie sicher, dass Sie für jeden Parameter die entsprechenden Informationen angeben, um den Grund und den Ort der Signatur in Ihrem PDF-Dokument anzugeben.
+ A: Ja, Sie können die Details der digitalen Signatur anpassen, indem Sie den Grund und den Ort der Signatur angeben. Im bereitgestellten Beispielcode können Sie die Werte der`reason`Und`location` Parameter beim Erstellen der`PdfDigitalSignatureDetails` Objekt. Stellen Sie sicher, dass Sie für jeden Parameter die entsprechenden Informationen angeben, um den Grund und den Ort der Signatur in Ihrem PDF-Dokument anzugeben.

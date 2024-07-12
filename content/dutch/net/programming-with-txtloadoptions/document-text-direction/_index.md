@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- In deze stap hebben we toegang tot de eerste paragraaf van het document met behulp van de`FirstSection` En`Body` eigenschappen. Vervolgens hebben we toegang tot de`ParagraphFormat.Bidi` eigenschap om de tekstrichting van de alinea te bepalen. Deze waarde geven we vervolgens weer in de console.
+ In deze stap hebben we toegang tot de eerste paragraaf van het document met behulp van de`FirstSection`En`Body` eigenschappen. Vervolgens hebben we toegang tot de`ParagraphFormat.Bidi` eigenschap om de tekstrichting van de alinea te bepalen. Deze waarde geven we vervolgens weer in de console.
 
 ## Stap 5: Sla het document op
 

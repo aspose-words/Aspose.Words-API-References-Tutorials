@@ -125,11 +125,11 @@ Az Aspose.Words for Java sokoldalú, és különféle helyzetekben használható
 - Jelentések generálása diagramokkal és diagramokkal.
 - Prospektusok készítése szemet gyönyörködtető grafikával.
 - Oklevelek és díjak tervezése.
-- Megjegyzések és feliratok hozzáadása a dokumentumokhoz.
+- Megjegyzések és kiemelések hozzáadása a dokumentumokhoz.
 
 ## Hibaelhárítási tippek
 
-Ha problémákat tapasztal az alakzatokkal és grafikákkal végzett munka során, az Aspose.Words for Java dokumentációjában vagy közösségi fórumain talál megoldást. A gyakori problémák közé tartozik a képformátum-kompatibilitás és a betűtípusokkal kapcsolatos problémák.
+Ha problémákat tapasztal az alakzatokkal és grafikákkal végzett munka során, megoldásokért tekintse meg az Aspose.Words for Java dokumentációját vagy közösségi fórumait. A gyakori problémák közé tartozik a képformátum-kompatibilitás és a betűtípusokkal kapcsolatos problémák.
 
 ## Következtetés
 
@@ -139,7 +139,7 @@ Ha a dokumentumokat formákkal és grafikákkal javítja, jelentősen javíthatj
 
 ### Hogyan méretezhetek át egy alakzatot a dokumentumban?
 
- Egy alakzat átméretezéséhez használja a`setWidth` és`setHeight` módszerek az alakzat objektumon. Például egy 150 pixel széles és 75 képpont magas alakzat létrehozásához:
+ Egy alakzat átméretezéséhez használja a`setWidth`és`setHeight` módszerek az alakzat objektumon. Például egy 150 pixel széles és 75 képpont magas alakzat létrehozásához:
 
 ```java
 shape.setWidth(150);

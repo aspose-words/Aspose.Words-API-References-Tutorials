@@ -112,7 +112,7 @@ A: Aspose.Words for .NET でネストされたフィールドを使用すると�
 
 #### Q: Aspose.Words for .NET を使用して、Word 文書に複数レベルのネストされたフィールドを作成できますか?
 
- A: はい、Aspose.Words for .NETではWord文書に複数レベルのネストされたフィールドを持たせることができます。`FieldStart.NextSibling`既存の親フィールドに子フィールドを追加するメソッド。
+A: はい、Aspose.Words for .NETではWord文書に複数レベルのネストされたフィールドを持たせることができます。`FieldStart.NextSibling`既存の親フィールドに子フィールドを追加するメソッド。
 
 #### Q: Aspose.Words for .NET を使用して Word 文書内のネストされたフィールドのプロパティをカスタマイズするにはどうすればよいですか?
 

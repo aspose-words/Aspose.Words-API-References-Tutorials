@@ -1,6 +1,6 @@
 ---
-title: Bekijk Opties
-linktitle: Bekijk Opties
+title: Bekijk opties
+linktitle: Bekijk opties
 second_title: Aspose.Words-API voor documentverwerking
 description: Stapsgewijze handleiding voor het configureren van documentweergaveopties met Aspose.Words voor .NET.
 type: docs

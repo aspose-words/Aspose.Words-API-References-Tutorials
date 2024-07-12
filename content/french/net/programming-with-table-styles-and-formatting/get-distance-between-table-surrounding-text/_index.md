@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Étape 3 : Obtenez la distance entre le tableau et le texte environnant
- Pour obtenir la distance entre le tableau et le texte environnant, nous devons accéder au tableau dans le document en utilisant le`GetChild()` méthode et le`NodeType.Table` propriété. On peut alors afficher les différentes distances en utilisant les propriétés du tableau`DistanceTop`, `DistanceBottom`, `DistanceRight` et`DistanceLeft`.
+ Pour obtenir la distance entre le tableau et le texte environnant, nous devons accéder au tableau dans le document en utilisant le`GetChild()` méthode et le`NodeType.Table` propriété. On peut alors afficher les différentes distances en utilisant les propriétés du tableau`DistanceTop`, `DistanceBottom`, `DistanceRight`et`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

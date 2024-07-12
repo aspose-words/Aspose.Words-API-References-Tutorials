@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- ที่นี่ เราจะเพิ่มข้อความก่อนและหลังเนื้อหาที่บุ๊กมาร์กไว้ ที่`StartBookmark` และ`EndBookmark` วิธีการกำหนดขอบเขตของบุ๊กมาร์ก
+ ที่นี่ เราจะเพิ่มข้อความก่อนและหลังเนื้อหาที่บุ๊กมาร์กไว้ ที่`StartBookmark`และ`EndBookmark` วิธีการกำหนดขอบเขตของบุ๊กมาร์ก
 
 ## ขั้นตอนที่ 3: การแทรกฟิลด์แบบมีเงื่อนไข
 

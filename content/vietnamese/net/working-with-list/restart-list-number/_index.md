@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### Câu hỏi: Có thể tùy chỉnh tiền tố và hậu tố của việc đánh số danh sách được khởi động lại trong Aspose.Words không?
 
- Trả lời: Có, bạn có thể tùy chỉnh tiền tố và hậu tố của việc đánh số danh sách được khởi động lại trong Aspose.Words. Các`ListLevel` lớp cung cấp các thuộc tính như`ListLevel.NumberPrefix` Và`ListLevel.NumberSuffix`cho phép bạn chỉ định tiền tố và hậu tố cho từng cấp độ trong danh sách. Bạn có thể sử dụng các thuộc tính này để tùy chỉnh tiền tố và hậu tố nếu cần.
+ Trả lời: Có, bạn có thể tùy chỉnh tiền tố và hậu tố của việc đánh số danh sách được khởi động lại trong Aspose.Words. Các`ListLevel` lớp cung cấp các thuộc tính như`ListLevel.NumberPrefix`Và`ListLevel.NumberSuffix`cho phép bạn chỉ định tiền tố và hậu tố cho từng cấp độ trong danh sách. Bạn có thể sử dụng các thuộc tính này để tùy chỉnh tiền tố và hậu tố nếu cần.
 
 #### Câu hỏi: Làm cách nào tôi có thể chỉ định một giá trị đánh số cụ thể mà từ đó danh sách sẽ được khởi động lại?
 

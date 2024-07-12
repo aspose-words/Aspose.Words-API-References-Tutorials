@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListInde
 
 ```
 
-現在您已經完成使用製表符產生帶有清單縮排的文檔，您可以使用 Markdown 來格式化您的文章內容。請務必使用適當的格式標記來反白標題、副標題和包含的原始程式碼。
+現在您已經完成了使用製表符產生帶有清單縮排的文檔，您可以使用 Markdown 來格式化您的文章內容。請務必使用適當的格式標記來反白標題、副標題和包含的原始程式碼。
 
 ### 經常問的問題
 

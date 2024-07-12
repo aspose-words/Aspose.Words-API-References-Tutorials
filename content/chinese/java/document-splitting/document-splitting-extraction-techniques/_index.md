@@ -113,7 +113,7 @@ for (Table table : tables) {
 
 ## 结论
 
-Aspose.Words for Java 提供强大的文档分割和内容提取功能。借助此处提供的分步指南和源代码示例，您可以自信地完成文档操作任务。
+Aspose.Words for Java 提供强大的文档分割和内容提取功能。借助此处提供的分步指南和源代码示例，您可以自信地处理文档操作任务。
 
 请随意浏览 Aspose.Words for Java 文档以了解更多高级功能和可能性。
 

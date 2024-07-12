@@ -56,4 +56,4 @@ Deze code maakt de weergave van grammaticale fouten mogelijk (`ShowGrammaticalEr
 
  Zorg ervoor dat u het juiste documentpad opgeeft in het`dataDir` variabel.
 
-U hebt nu geleerd hoe u de weergave van grammaticale en spelfouten in een document kunt inschakelen met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u deze functie eenvoudig in uw eigen documenten inschakelen.
+hebt nu geleerd hoe u de weergave van grammaticale en spelfouten in een document kunt inschakelen met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u deze functie eenvoudig in uw eigen documenten inschakelen.

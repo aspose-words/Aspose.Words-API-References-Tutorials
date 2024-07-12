@@ -96,7 +96,7 @@ doc.save("path/to/save/document.docx")
 
 ## Conclusie
 
-Voor het efficiënt beheren en manipuleren van Word-documenten zijn vaak zoek- en vervangbewerkingen nodig. Met Aspose.Words voor Python beschikt u over een krachtig hulpmiddel om eenvoudige en geavanceerde tekstvervangingen uit te voeren met behoud van de opmaak en context. Door de stappen in dit artikel te volgen, kunt u uw documentverwerkingstaken stroomlijnen en uw productiviteit verhogen.
+Voor het efficiënt beheren en manipuleren van Word-documenten zijn vaak zoek- en vervangbewerkingen nodig. Met Aspose.Words voor Python beschikt u over een krachtig hulpmiddel om eenvoudige en geavanceerde tekstvervangingen uit te voeren, terwijl de opmaak en context behouden blijven. Door de stappen in dit artikel te volgen, kunt u uw documentverwerkingstaken stroomlijnen en uw productiviteit verhogen.
 
 ## Veelgestelde vragen
 

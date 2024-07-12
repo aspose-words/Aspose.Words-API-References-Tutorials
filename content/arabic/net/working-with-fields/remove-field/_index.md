@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 
 #### س: كيف يمكنني حذف حقل في مستند Word باستخدام Aspose.Words لـ .NET؟
 
- ج: لإزالة حقل في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك تكرار الحقول الموجودة في المستند باستخدام`FieldStart` الصف واستخدام`FieldStart.Remove`طريقة إزالة الحقل
+ ج: لإزالة حقل في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك تكرار الحقول الموجودة في المستند باستخدام`FieldStart` الصف واستخدام`FieldStart.Remove` طريقة إزالة الحقل
 
 #### س: هل من الممكن حذف حقول معينة فقط في مستند Word باستخدام Aspose.Words لـ .NET؟
 

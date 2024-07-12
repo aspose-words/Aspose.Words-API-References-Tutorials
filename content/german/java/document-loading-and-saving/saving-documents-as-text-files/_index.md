@@ -47,7 +47,7 @@ saveOptions.setAddBidiMarks(true);
 doc.save("output.txt", saveOptions);
 ```
 
- In diesem Beispiel erstellen wir eine`TxtSaveOptions` Objekt und setzen Sie den`AddBidiMarks`Eigentum an`true` um Bidi-Markierungen in die Textausgabe einzuschließen.
+ In diesem Beispiel erstellen wir ein`TxtSaveOptions` Objekt und setzen Sie den`AddBidiMarks`Eigentum an`true` um Bidi-Markierungen in die Textausgabe einzuschließen.
 
 ### Beispiel 2: Verwenden des Tabulatorzeichens zur Listeneinrückung
 

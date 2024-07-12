@@ -12,7 +12,7 @@ Los tutoriales de Procesamiento de palabras con fuentes lo guían a través de v
 
 Los tutoriales le brindan explicaciones detalladas paso a paso para cada característica, junto con el código fuente del lenguaje C# para ilustrar los conceptos. Aprenderá a utilizar clases y métodos de la biblioteca Aspose.Words para .NET para realizar tareas específicas relacionadas con fuentes en sus documentos de Word.
 
-Ya sea que desee formatear texto con diferentes fuentes, establecer reglas de sustitución de fuentes, cargar fuentes de directorios específicos o recibir notificaciones de fuentes, los tutoriales de "Procesamiento de textos con fuentes" le brindarán el conocimiento para realizar estas tareas. con facilidad.
+Ya sea que desee formatear texto con diferentes fuentes, establecer reglas de sustitución de fuentes, cargar fuentes de directorios específicos o recibir notificaciones de fuentes, los tutoriales "Procesamiento de textos con fuentes" le brindarán el conocimiento para realizar estas tareas. con facilidad.
 
  ## Tutoriales
 | Título | Descripción |

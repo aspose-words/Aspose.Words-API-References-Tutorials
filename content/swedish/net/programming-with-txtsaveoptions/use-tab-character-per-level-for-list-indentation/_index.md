@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- det här steget tillämpar vi standardformatet för listnummer med hjälp av`ApplyNumberDefault()` metod för listformateraren. Därefter lägger vi till tre objekt till vår lista med hjälp av dokumentbyggarens`Writeln()` och`Write()` metoder. Vi använder`ListIndent()` metod för att öka indraget på varje nivå.
+ det här steget tillämpar vi standardformatet för listnummer med hjälp av`ApplyNumberDefault()` metod för listformateraren. Därefter lägger vi till tre objekt till vår lista med hjälp av dokumentbyggarens`Writeln()`och`Write()` metoder. Vi använder`ListIndent()` metod för att öka indraget på varje nivå.
 
 ## Steg 4: Konfigurera inspelningsalternativ
 
@@ -100,7 +100,7 @@ Ställ in din utvecklingsmiljö genom att lägga till nödvändiga referenser oc
 
  Skapa en ny`Document` objekt och en tillhörande`DocumentBuilder` objekt.
 
- Använd`DocumentBuilder` för att skapa en lista med flera nivåer av indrag med hjälp av metoderna`ApplyNumberDefault()` för att använda standardformatet för listnummer,`Writeln()` och`Write()` för att lägga till objekt i listan, och`ListIndent()`för att öka indraget på varje nivå.
+ Använd`DocumentBuilder` för att skapa en lista med flera nivåer av indrag med hjälp av metoderna`ApplyNumberDefault()` för att använda standardformatet för listnummer,`Writeln()`och`Write()` för att lägga till objekt i listan, och`ListIndent()`för att öka indraget på varje nivå.
 
  Konfigurera sparalternativ genom att skapa en`TxtSaveOptions` objekt och ställa in egenskaperna`ListIndentation.Count` till antalet tabtecken per nivå och`ListIndentation.Character` till`'\t'` för att använda tabbtecken.
 

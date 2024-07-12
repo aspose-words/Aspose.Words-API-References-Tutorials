@@ -125,4 +125,4 @@ public void setEndnoteOptions() throws Exception {
 ### 4. 脚注和尾注在文档格式中重要吗？
 是的，脚注和尾注对于在文档中提供参考和附加信息至关重要。
 
-欢迎探索 Aspose.Words for Java 的更多功能并增强您的文档创建能力。祝您编码愉快！
+随意探索 Aspose.Words for Java 的更多功能并增强您的文档创建能力。祝您编码愉快！

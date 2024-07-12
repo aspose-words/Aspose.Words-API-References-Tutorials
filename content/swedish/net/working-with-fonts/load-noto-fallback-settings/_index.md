@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Ladda dokumentet och konfigurera inställningar för teckensnittsersättning
- Därefter laddar vi dokumentet med hjälp av`Document` klass och konfigurera inställningarna för teckensnittsåsidosättning med hjälp av`FontSettings`klass. Vi kommer att ladda Noto-typsnittets reservinställningar med hjälp av`LoadNotoFallbackSettings()` metod.
+ Därefter laddar vi dokumentet med hjälp av`Document` klass och konfigurera inställningarna för teckensnittsåsidosättning med hjälp av`FontSettings` klass. Vi kommer att ladda Noto-typsnittets reservinställningar med hjälp av`LoadNotoFallbackSettings()` metod.
 
 ```csharp
 // Ladda dokumentet och konfigurera inställningar för teckensnittsersättning

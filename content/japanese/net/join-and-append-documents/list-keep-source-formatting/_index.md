@@ -2,76 +2,87 @@
 title: リストのソース書式を保持
 linktitle: リストのソース書式を保持
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書を結合および追加するときにリストの書式を保持する方法を学習します。
+description: Aspose.Words for .NET を使用して、書式を保持しながら Word 文書を結合する方法を学びます。このチュートリアルでは、シームレスな文書結合の手順を順を追って説明します。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET のリストのソース書式保持機能を使用する手順を説明します。この機能を使用すると、リストのソース書式を保持しながら Word 文書を結合および追加できます。
+このチュートリアルでは、Aspose.Words for .NET を使用して、ソースの書式設定を保持しながらドキュメントを結合する方法について説明します。この機能は、ドキュメントの元の外観を維持することが重要なシナリオでは不可欠です。
 
 ## 前提条件
 
-始める前に、次のものがあることを確認してください。
+続行する前に、次の前提条件を満たしていることを確認してください。
 
-1. Aspose.Words for .NET がインストールされています。Aspose Web サイトからダウンロードするか、NuGet 経由でインストールできます。
-2. Visual Studio またはその他の C# 開発環境。
+- マシンに Visual Studio がインストールされています。
+-  Aspose.Words for .NETがインストールされていること。ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
+- C# プログラミングと .NET 環境に関する基本的な知識。
 
-## ステップ1: ドキュメントディレクトリを初期化する
+## 名前空間のインポート
 
-まず、ドキュメントディレクトリへのパスを設定する必要があります。`dataDir`ドキュメントが保存されているパスへの変数。
+まず、必要な名前空間を C# プロジェクトにインポートします。
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## ステップ2: ソースドキュメントと宛先ドキュメントを読み込む
+## ステップ1: プロジェクトを設定する
 
-次に、Aspose.Wordsを使用してソースドキュメントと宛先ドキュメントをロードする必要があります。`Document`クラス。`Document`ドキュメント名に応じてコンストラクターを作成します。
+まず、Visual Studio で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET が参照されていることを確認します。参照されていない場合は、NuGet パッケージ マネージャーを使用して追加できます。
+
+## ステップ2: ドキュメント変数を初期化する
 
 ```csharp
+//ドキュメントディレクトリへのパス
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+//ソースドキュメントと宛先ドキュメントを読み込む
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## ステップ3: ソースドキュメントを連続フローするように設定する
+## ステップ3: セクション設定を構成する
 
-ソース文書のコンテンツが宛先文書に追加されるときに連続して流れるようにするには、`SectionStart`ソース文書の最初のセクションのプロパティを`SectionStart.Continuous`.
+結合されたドキュメント内の連続したフローを維持するには、セクションの開始を調整します。
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## ステップ4: ソースドキュメントを宛先ドキュメントに追加する
+## ステップ4: ドキュメントを結合する
 
-これで、ソース文書を宛先文書に追加することができます。`AppendDocument`方法の`Document`クラス。`ImportFormatMode.KeepSourceFormatting`パラメータにより、リストの書式設定を含むソースの書式設定が追加操作中に保持されます。
+ソース文書の内容を追加します（`srcDoc`）を宛先ドキュメント（`dstDoc`）を元の書式のまま変更します。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## ステップ5: 最終文書を保存する
+## ステップ5: 結合した文書を保存する
 
-最後に、リストのソース書式維持機能を有効にして結合した文書を保存します。`Save`方法の`Document`クラス。
+最後に、結合したドキュメントを指定したディレクトリに保存します。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### Aspose.Words for .NET を使用したリストのソース フォーマットの保持のサンプル ソース コード 
+## 結論
 
-以下は、Aspose.Words for .NET を使用した C# のリスト保持ソース書式設定機能の完全なソース コードです。
+結論として、Aspose.Words for .NET を使用すると、元の書式設定を維持しながらドキュメントを結合することが簡単になります。このチュートリアルでは、結合されたドキュメントがソース ドキュメントのレイアウトとスタイルを維持するように、プロセスをガイドしました。
 
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## よくある質問
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//ドキュメントのコンテンツを追加して、連続的に流れるようにします。
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### ドキュメントのスタイルが異なる場合はどうなりますか?
+Aspose.Words はさまざまなスタイルを適切に処理し、元の書式設定を可能な限り維持します。
 
-これで完了です。Aspose.Words for .NET を使用して、リストのソース書式を保持する機能を正常に実装しました。最終的なドキュメントには、ソース ドキュメントのリスト書式が保持された状態で結合されたコンテンツが含まれます。
+### 異なる形式のドキュメントを結合できますか?
+はい、Aspose.Words は、DOCX、DOC、RTF など、さまざまな形式のドキュメントの結合をサポートしています。
+
+### Aspose.Words は .NET Core と互換性がありますか?
+はい、Aspose.Words は .NET Core を完全にサポートしており、クロスプラットフォーム開発が可能になります。
+
+### 大きな文書を効率的に処理するにはどうすればよいでしょうか?
+Aspose.Words は、大規模なドキュメントでもパフォーマンスが最適化された、ドキュメント操作用の効率的な API を提供します。
+
+### その他の例やドキュメントはどこで見つかりますか?
+より多くの例と詳細なドキュメントについては、[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/).

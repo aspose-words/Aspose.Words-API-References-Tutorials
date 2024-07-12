@@ -34,7 +34,7 @@ Használja ki a Java dokumentum-egyesítésben rejlő lehetőségeket az Aspose.
 ### [Dokumentum konvertálása](./document-converting/)
 Egyszerűsítse a dokumentumok konvertálását Java nyelven az Aspose.Words segítségével! Tanuljon meg átfogó útmutatókat a dokumentumok konvertálásához, szövegszerkesztéséhez és dokumentumfeldolgozásához.
 ### [Dokumentumnyomtatás](./document-printing/)
-Mesterdokumentumnyomtatás az Aspose.Words for Java segítségével! Automatizálja a nyomtatási beállításokat, optimalizálja a teljesítményt, és könnyedén érhet el professzionális eredményeket.
+Mester dokumentumnyomtatás az Aspose.Words for Java segítségével! Automatizálja a nyomtatási beállításokat, optimalizálja a teljesítményt, és könnyedén érjen el professzionális eredményeket.
 ### [Dokumentum renderelés](./document-rendering/)
 Az Aspose.Words segítségével hatékonyan renderelhet Word dokumentumokat különböző formátumokba Java nyelven! Mesterdokumentum renderelés professzionális eredményekhez.
 ### [Dokumentumbiztonság](./document-security/)

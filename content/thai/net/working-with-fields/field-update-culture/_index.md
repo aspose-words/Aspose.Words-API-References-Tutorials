@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ขั้นตอนที่ 3: การแทรกฟิลด์เวลา
 
- เราใช้`InsertField()` วิธีการแทรกฟิลด์เวลาลงในเอกสาร
+ เราใช้`InsertField()`วิธีการแทรกฟิลด์เวลาลงในเอกสาร
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

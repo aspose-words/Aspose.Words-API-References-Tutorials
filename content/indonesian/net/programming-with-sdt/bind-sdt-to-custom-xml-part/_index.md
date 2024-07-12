@@ -17,7 +17,7 @@ Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
 - Pengetahuan dasar tentang C# dan XML.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

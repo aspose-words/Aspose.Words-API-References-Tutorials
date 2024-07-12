@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- I det här steget konfigurerar vi alternativen för att ladda TXT-dokumentet. Vi skapar en ny`TxtLoadOptions` objekt och ställ in`LeadingSpacesOptions` och`TrailingSpacesOptions` fastigheter till`TxtLeadingSpacesOptions.Trim` och`TxtTrailingSpacesOptions.Trim` respektive. Detta säger till Aspose.Words att ta bort inledande och efterföljande mellanslag från rader när dokumentet laddas.
+ I det här steget konfigurerar vi alternativen för att ladda TXT-dokumentet. Vi skapar en ny`TxtLoadOptions` objekt och ställ in`LeadingSpacesOptions`och`TrailingSpacesOptions` fastigheter till`TxtLeadingSpacesOptions.Trim`och`TxtTrailingSpacesOptions.Trim` respektive. Detta säger till Aspose.Words att ta bort inledande och efterföljande mellanslag från rader när dokumentet laddas.
 
 ## Steg 4: Ladda dokumentet
 

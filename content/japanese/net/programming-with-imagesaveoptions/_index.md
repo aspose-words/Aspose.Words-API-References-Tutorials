@@ -16,6 +16,6 @@ ImageSaveOptions を使用した Words Processing に関する Aspose.Words for 
 | --- | --- |
 | [TIFF バイナリ化のしきい値コントロールを公開する](./expose-threshold-control-for-tiff-binarization/) | Aspose.Words for .NET を使用して TIFF の 2 値化しきい値を制御する方法を学びます。より高品質の画像を得るための完全なチュートリアルです。 |
 | [Tiff ページ範囲を取得](./get-tiff-page-range/) | Aspose.Words for .NET を使用して TIFF ページの範囲を抽出する方法を学習します。カスタム TIFF ファイルの完全なチュートリアル。 |
-| [フォーマット 1Bpp インデックス](./format-1bpp-indexed/) | Aspose.Words for .NET を使用して 1 bpp インデックスで画像をフォーマットする方法を学びます。色深度の低い画像に関する完全なチュートリアルです。 |
+| [フォーマット 1Bpp インデックス](./format-1bpp-indexed/) | Aspose.Words for .NET を使用してインデックスされた 1 bpp で画像をフォーマットする方法を学びます。色深度の低い画像に関する完全なチュートリアルです。 |
 | [Jpeg ページ範囲を取得](./get-jpeg-page-range/) | Aspose.Words for .NET を使用してさまざまな JPEG ページを取得する方法を学びます。カスタム イメージを抽出するための完全なチュートリアルです。 |
 | [ページ保存コールバック](./page-saving-callback/) | Aspose.Words for .NET を使用してドキュメント ページを画像として保存する方法を学習します。 |

@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
 
-En este tutorial, lo guiaremos paso a paso para aplicar un borde de contorno a una tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarle a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, comprenderá claramente cómo manipular los bordes de las tablas en sus documentos de Word utilizando Aspose.Words para .NET.
+En este tutorial, lo guiaremos paso a paso para aplicar un borde de contorno a una tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarle a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, comprenderá claramente cómo manipular los bordes de las tablas en sus documentos de Word usando Aspose.Words para .NET.
 
 ## Paso 1: definir el directorio de documentos
 Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se almacena su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.

@@ -65,7 +65,7 @@ Segui questi passaggi per eliminare un campo specifico nel tuo documento utilizz
 
 #### D: Come posso eliminare un campo in un documento Word utilizzando Aspose.Words per .NET?
 
- A: Per rimuovere un campo in un documento di Word utilizzando Aspose.Words per .NET, è possibile scorrere i campi nel documento utilizzando il comando`FieldStart` classe e utilizzare il file`FieldStart.Remove`metodo per rimuovere il campo.
+ A: Per rimuovere un campo in un documento di Word utilizzando Aspose.Words per .NET, è possibile scorrere i campi nel documento utilizzando il comando`FieldStart` classe e utilizzare il file`FieldStart.Remove` metodo per rimuovere il campo.
 
 #### D: È possibile eliminare solo determinati campi in un documento Word con Aspose.Words per .NET?
 

@@ -134,7 +134,7 @@ Aspose.Words menawarkan fitur-fitur canggih untuk menyempurnakan dan menyesuaika
 
 ### 8.1 Menambahkan Tanda Air
 
-Tambahkan tanda air, seperti "Rahasia" atau "Draf" ke dokumen Anda untuk menunjukkan statusnya.
+Tambahkan tanda air, seperti "Rahasia" atau "Draf", ke dokumen Anda untuk menunjukkan statusnya.
 
 ### 8.2 Menambahkan Header dan Footer
 

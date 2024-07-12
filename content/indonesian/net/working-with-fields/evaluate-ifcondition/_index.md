@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Masukkan bidang IF ke dalam dokumen.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Evaluasi kondisi IF.
+// Evaluasi kondisi IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Menampilkan hasil evaluasi.

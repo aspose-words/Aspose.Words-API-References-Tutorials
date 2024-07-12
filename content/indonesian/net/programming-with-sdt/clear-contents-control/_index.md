@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Langkah 2: Muat Dokumen dan Dapatkan StructuredDocumentTag
- Muat dokumen Word menggunakan`Document` konstruktor, meneruskan jalur ke dokumen sebagai parameter. Kemudian, ambil yang diinginkan`StructuredDocumentTag` dari dokumen. Dalam contoh ini, kami berasumsi bahwa SDT adalah node anak pertama dalam dokumen.
+ Muat dokumen Word menggunakan`Document` konstruktor, meneruskan jalur ke dokumen sebagai parameter. Kemudian, ambil yang diinginkan`StructuredDocumentTag`dari dokumen. Dalam contoh ini, kami berasumsi bahwa SDT adalah node anak pertama dalam dokumen.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Langkah 4: Simpan Dokumen
- Simpan dokumen yang dimodifikasi menggunakan`Save`metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.ClearContentsControl.doc".
+ Simpan dokumen yang dimodifikasi menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.ClearContentsControl.doc".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

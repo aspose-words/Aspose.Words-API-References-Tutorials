@@ -2,79 +2,123 @@
 title: ビルダーでドキュメントを挿入
 linktitle: ビルダーでドキュメントを挿入
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、別のドキュメントの最後にドキュメントを挿入する方法を学習します。
+description: Aspose.Words for .NET を使用して 2 つの Word 文書を結合する方法を学びます。DocumentBuilder を使用して文書を挿入し、書式を保持するためのステップバイステップ ガイドです。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/insert-document-with-builder/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NETを使用して、ドキュメントを別のドキュメントに挿入する方法について説明します。`DocumentBuilder`クラス。提供されているソース コードは、ソースの書式設定を保持しながら、別のドキュメントの最後にドキュメントを挿入する方法を示しています。
+つの Word 文書があり、それを 1 つに結合したいとします。「プログラムでこれを行う簡単な方法はないだろうか?」とお考えかもしれません。もちろんあります! 今日は、Aspose.Words for .NET ライブラリを使用して、1 つの文書を別の文書に挿入するプロセスについて説明します。この方法は、特に大きな文書を扱っている場合やプロセスを自動化する必要がある場合に非常に便利です。早速始めましょう!
 
-## ステップ1: プロジェクトを設定する
+## 前提条件
 
-次の前提条件を満たしていることを確認してください。
+始める前に、必要なものがすべて揃っていることを確認しましょう。
 
--  Aspose.Words for .NETライブラリがインストールされています。ダウンロードはこちらから[Aspose.Releases]https://releases.aspose.com/words/net/ にアクセスするか、NuGet パッケージ マネージャーを使用してインストールします。
-- ソース ドキュメントと宛先ドキュメントが配置されているドキュメント ディレクトリ パス。
+1.  Aspose.Words for .NET: まだダウンロードしていない場合は、こちらからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio またはその他の適切な IDE がインストールされていることを確認してください。
+3. C# の基本知識: C# に少しでも精通していると、大いに役立ちます。
 
-## ステップ2: ソースドキュメントと宛先ドキュメントを開く
+## 名前空間のインポート
 
-ソース文書と宛先文書を`Document`クラスコンストラクタ。置換`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
+まず最初に、Aspose.Words ライブラリの機能にアクセスするために必要な名前空間をインポートする必要があります。手順は次のとおりです。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+前提条件が整ったので、プロセスを段階的に説明しましょう。
+
+## ステップ1: ドキュメントディレクトリの設定
+
+コーディングを始める前に、ドキュメント ディレクトリへのパスを設定する必要があります。ここにソース ドキュメントと宛先ドキュメントが保存されます。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントが保存されている実際のパスを入力します。これにより、プログラムがファイルを簡単に見つけられるようになります。
+
+## ステップ2: ソースドキュメントと宛先ドキュメントの読み込み
+
+次に、作業するドキュメントを読み込む必要があります。この例では、ソース ドキュメントと宛先ドキュメントがあります。
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## ステップ3: DocumentBuilderを初期化する
+ここでは、`Document`ドキュメントを読み込むには、Aspose.Words ライブラリのクラスを使用します。ファイル名がディレクトリ内のファイル名と一致していることを確認してください。
 
-新しいインスタンスを作成する`DocumentBuilder`クラスを作成し、宛先ドキュメントをパラメータとして渡します。
+## ステップ 3: DocumentBuilder オブジェクトの作成
+
+の`DocumentBuilder`クラスは、Aspose.Words ライブラリの強力なツールです。これにより、ドキュメントをナビゲートしたり操作したりすることができます。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
-## ステップ4: DocumentBuilderを配置する
+このステップでは、`DocumentBuilder`宛先ドキュメントのオブジェクト。これにより、ドキュメントにコンテンツを挿入できるようになります。
 
-移動`DocumentBuilder`文書の末尾に`MoveToDocumentEnd`方法。既存のコンテンツを挿入されたドキュメントから分離するためにページ区切りを挿入します。
+## ステップ4: 文書の末尾に移動する
+
+ソース ドキュメントを挿入する前に、ビルダー カーソルを宛先ドキュメントの末尾に移動する必要があります。
 
 ```csharp
 builder.MoveToDocumentEnd();
+```
+
+これにより、ソース ドキュメントが宛先ドキュメントの最後に挿入されるようになります。
+
+## ステップ5: ページ区切りの挿入
+
+整理するために、ソース ドキュメントを挿入する前に改ページを追加しましょう。これにより、ソース ドキュメントの内容が新しいページで開始されます。
+
+```csharp
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## ステップ5: ソース文書を挿入する
+ページ区切りにより、ソース ドキュメントのコンテンツが新しいページで開始され、結合されたドキュメントがプロフェッショナルな外観になります。
 
-使用`InsertDocument`方法の`DocumentBuilder`クラスを使用して、ソース文書を宛先文書に挿入します。インポート形式モードを`ImportFormatMode.KeepSourceFormatting`ソースの書式設定を保持するため。
+## ステップ6: ソースドキュメントの挿入
+
+ここで、実際にソース ドキュメントを宛先ドキュメントに挿入するという、興味深い部分が始まります。
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## ステップ6: 変更したドキュメントを保存する
+使用方法`InsertDocument`この方法では、ソース文書全体を宛先文書に挿入することができます。`ImportFormatMode.KeepSourceFormatting`ソース ドキュメントの書式が保持されることを保証します。
 
-最後に、変更した宛先ドキュメントを`Save`方法の`Document`物体。
+## ステップ7: 結合した文書を保存する
+
+最後に、結合したドキュメントを保存します。これにより、ソース ドキュメントと宛先ドキュメントが 1 つのファイルに結合されます。
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 ```
 
-これで、Aspose.Words for .NET を使用してドキュメントを別のドキュメントに挿入する実装が完了します。
+ドキュメントを保存すると、2 つのドキュメントを結合するプロセスが完了します。これで新しいドキュメントの準備が整い、指定したディレクトリに保存されます。
 
-### Aspose.Words for .NET を使用してビルダーでドキュメントを挿入するためのサンプル ソース コード 
+## 結論
 
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+これで完了です。Aspose.Words for .NET を使用して、あるドキュメントを別のドキュメントに挿入できました。この方法は効率的であるだけでなく、両方のドキュメントの書式設定が保持されるため、シームレスな結合が保証されます。1 回限りのプロジェクトで作業している場合でも、ドキュメント処理を自動化する必要がある場合でも、Aspose.Words for .NET が役立ちます。
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	DocumentBuilder builder = new DocumentBuilder(dstDoc);
-	builder.MoveToDocumentEnd();
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
-```
+## よくある質問
+
+### Aspose.Words for .NET とは何ですか?  
+Aspose.Words for .NET は、開発者がプログラムによって Word 文書を作成、編集、変換、操作できるようにする強力なライブラリです。
+
+### ソースドキュメントの書式を維持できますか?  
+はい、使用することで`ImportFormatMode.KeepSourceFormatting`、ソース ドキュメントの書式設定は、宛先ドキュメントに挿入されたときに保持されます。
+
+### Aspose.Words for .NET を使用するにはライセンスが必要ですか?  
+はい、Aspose.Words for .NETの全機能を使用するにはライセンスが必要です。[一時ライセンス](https://purchase.aspose.com/temporary-license/)評価のため。
+
+### このプロセスを自動化できますか?  
+もちろんです! 説明した方法は、より大規模なアプリケーションに組み込んで、ドキュメント処理タスクを自動化できます。
+
+### より多くのリソースとサポートはどこで見つかりますか?  
+詳細については、[ドキュメンテーション](https://reference.aspose.com/words/net/) 、または[サポートフォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。

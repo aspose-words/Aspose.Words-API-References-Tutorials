@@ -85,7 +85,7 @@ R: Para eliminar un comentario en Aspose.Words para .NET, puede utilizar el`Comm
 
 #### P: ¿Cómo puedo acceder a los comentarios existentes en Aspose.Words para .NET?
 
- R: Puede acceder a los comentarios existentes en Aspose.Words para .NET utilizando el`CommentCollection` propiedad de la`Document` objeto. Esto le permitirá explorar todos los comentarios presentes en el documento.
+ R: Puede acceder a los comentarios existentes en Aspose.Words para .NET usando el`CommentCollection` propiedad de la`Document` objeto. Esto le permitirá explorar todos los comentarios presentes en el documento.
 
 #### P: ¿Puedo editar el texto del comentario en Aspose.Words para .NET?
 

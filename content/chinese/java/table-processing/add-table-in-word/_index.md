@@ -139,4 +139,4 @@ public class AddTableInWord {
 
 ### Q5: Aspose.Words 多久更新一次？
 
-Aspose.Words 会定期更新和改进以确保与最新版本的 Microsoft Word 和 Java 兼容。
+Aspose.Words 会定期更新和改进，以确保与最新版本的 Microsoft Word 和 Java 兼容。

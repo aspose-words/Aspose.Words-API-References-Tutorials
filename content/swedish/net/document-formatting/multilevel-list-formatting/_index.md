@@ -125,7 +125,7 @@ Och där har du det! Du har framgångsrikt skapat en flernivålista i ett Word-d
  Ja, du kan fortsätta numreringen genom att använda`ListFormat.List` egenskap för att länka till en befintlig lista.
 
 ### Hur ändrar jag indragsnivån dynamiskt?
- Du kan dynamiskt ändra indragsnivån genom att använda`ListIndent` och`ListOutdent` metoder efter behov.
+ Du kan dynamiskt ändra indragsnivån genom att använda`ListIndent`och`ListOutdent` metoder efter behov.
 
 ### Kan jag skapa flernivålistor i andra dokumentformat som PDF?
 Ja, Aspose.Words stöder att spara dokument i olika format inklusive PDF, att behålla formateringen.

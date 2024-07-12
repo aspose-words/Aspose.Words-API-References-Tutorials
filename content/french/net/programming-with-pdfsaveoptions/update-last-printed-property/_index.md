@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
 
-Cet article fournit un guide étape par étape sur la façon d'utiliser la propriété « Dernière impression » dans la fonctionnalité de mise à jour de document PDF avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. A la fin de ce tutoriel, vous pourrez comprendre comment configurer l'option de mise à jour de la propriété "Dernière impression" lors de la conversion en PDF.
+Cet article fournit un guide étape par étape sur la façon d'utiliser la propriété « Dernière impression » dans la fonctionnalité de mise à jour de document PDF avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. A la fin de ce tutoriel, vous saurez comprendre comment configurer l'option de mise à jour de la propriété "Dernière impression" lors de la conversion en PDF.
 
 Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words for .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 

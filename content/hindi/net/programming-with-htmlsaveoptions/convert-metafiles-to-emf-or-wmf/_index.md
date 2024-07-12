@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- यह कोड एक उदाहरण बनाता है`Document` और`DocumentBuilder` दस्तावेज़ बनाने के लिए। यह एक सम्मिलित करता है`<img>` टैग को एक बेस64 एनकोडेड छवि के साथ दस्तावेज़ में जोड़ें।
+ यह कोड एक उदाहरण बनाता है`Document`और`DocumentBuilder` दस्तावेज़ बनाने के लिए। यह एक सम्मिलित करता है`<img>` टैग को एक बेस64 एनकोडेड छवि के साथ दस्तावेज़ में जोड़ें।
 
 ## चरण 3: HTML सेव विकल्प सेट करें
 
@@ -54,7 +54,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafil
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
 ```
 
-यह कोड दस्तावेज़ को HTML में परिवर्तित करता है और इसे सेट किए गए सेव विकल्पों के आधार पर EMF या WMF प्रारूप में परिवर्तित मेटाफाइल्स के साथ एक फाइल में सेव करता है।
+यह कोड दस्तावेज़ को HTML में परिवर्तित करता है और इसे सहेजने के विकल्पों के आधार पर EMF या WMF प्रारूप में परिवर्तित मेटाफ़ाइलों के साथ एक फ़ाइल में सहेजता है।
 
 ### .NET के लिए Aspose.Words का उपयोग करके मेटाफ़ाइल्स को Emf या Wmf में परिवर्तित करने के लिए उदाहरण स्रोत कोड
 

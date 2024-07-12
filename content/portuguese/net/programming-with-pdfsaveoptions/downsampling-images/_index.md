@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 
 Certifique-se de especificar o caminho correto para salvar o PDF convertido.
 
-### Exemplo de código-fonte para imagens de redução de resolução usando Aspose.Words para .NET
+### Exemplo de código-fonte para imagens de redução de resolução usando Aspose.Words for .NET
 
 ```csharp
 

@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Schritt 2: Zugriff auf den aktuellen Abschnitt
 
-Den aktuellen Abschnitt ermitteln wir mit`builder.CurrentSection`. Dieser Abschnitt ist das Ziel, in das wir die Kopf- und Fußzeilen aus dem vorherigen Abschnitt kopieren.
+ Den aktuellen Abschnitt ermitteln wir mit`builder.CurrentSection`Dieser Abschnitt ist das Ziel, in das wir die Kopf- und Fußzeilen aus dem vorherigen Abschnitt kopieren.
 
 ### Schritt 3: Definieren Sie den vorherigen Abschnitt
 
@@ -123,7 +123,7 @@ Ja, Sie können Kopf- und Fußzeilen zwischen beliebigen Abschnitten in einem Wo
 
 ### F3: Wie gehe ich mit unterschiedlichen Kopf- und Fußzeilen für gerade und ungerade Seiten um?
 
- Sie können verschiedene Kopf- und Fußzeilen für gerade und ungerade Seiten festlegen, indem Sie`PageSetup.OddAndEvenPagesHeaderFooter` Eigentum.
+ Sie können unterschiedliche Kopf- und Fußzeilen für gerade und ungerade Seiten festlegen, indem Sie`PageSetup.OddAndEvenPagesHeaderFooter` Eigentum.
 
 ### F4: Wo finde ich weitere Informationen zu Aspose.Words für .NET?
 

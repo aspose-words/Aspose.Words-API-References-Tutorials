@@ -2,7 +2,7 @@
 title: Dokumentumok klónozása és kombinálása az Aspose.Words for Java programban
 linktitle: Dokumentumok klónozása és kombinálása
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan klónozhat és kombinálhat dokumentumokat az Aspose.Words for Java programban. Lépésről lépésre útmutató forráskód-példákkal.
+description: Ismerje meg, hogyan klónozhat és kombinálhat dokumentumokat az Aspose.Words for Java programban. Lépésről lépésre, forráskód-példákkal.
 type: docs
 weight: 27
 url: /hu/java/document-manipulation/cloning-and-combining-documents/
@@ -51,7 +51,7 @@ insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtBookmark.docx");
 ```
 
- Itt megtaláljuk a könyvjelzőt név szerint, és használjuk a`insertDocument` a tartalom beillesztésének módja`subDoc` dokumentumot a könyvjelző helyén.
+ Itt keressük meg a könyvjelzőt név szerint, és használjuk a`insertDocument` a tartalom beillesztésének módja`subDoc` dokumentumot a könyvjelző helyén.
 
 ## 4. lépés: Dokumentumok beszúrása a körlevél-egyesítés során
 

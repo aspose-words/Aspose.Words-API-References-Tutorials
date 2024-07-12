@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## Schritt 3: Kopieren Sie den Abschnitt in das Zieldokument
- Um den Abschnitt aus dem Quelldokument in das Zieldokument zu kopieren, verwenden wir den`ImportNode`Methode, um den Quellabschnitt zu importieren und ihn dem Zieldokument hinzuzufügen.
+ Um den Abschnitt aus dem Quelldokument in das Zieldokument zu kopieren, verwenden wir den`ImportNode` Methode, um den Quellabschnitt zu importieren und ihn dem Zieldokument hinzuzufügen.
 
 ```csharp
 // Abschnitt „Quelle abrufen“
@@ -86,7 +86,7 @@ A: Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Gegenst�
 
 #### F: Wie lege ich das Dokumentverzeichnis in Aspose.Words für .NET fest?
 
- A: Um den Pfad zum Verzeichnis mit Ihren Dokumenten festzulegen, müssen Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad. So geht's:
+A: Um den Pfad zum Verzeichnis mit Ihren Dokumenten festzulegen, müssen Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad. So geht's:
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### F: Wie lade ich Quell- und Zieldokumente in Aspose.Words für .NET?
 
-A: Um das Quelldokument in eine Instanz des`Document` Klasse namens`srcDoc` und erstellen Sie eine leere Instanz des`Document` Klasse namens`dstDoc` Für das Zieldokument können Sie den folgenden Code verwenden:
+ A: Um das Quelldokument in eine Instanz des`Document` Klasse namens`srcDoc` und erstellen Sie eine leere Instanz des`Document` Klasse namens`dstDoc` Für das Zieldokument können Sie den folgenden Code verwenden:
 
 ```csharp
 // Laden des Quelldokuments

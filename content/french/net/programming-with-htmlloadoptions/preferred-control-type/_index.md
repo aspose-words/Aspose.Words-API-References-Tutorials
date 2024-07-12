@@ -91,4 +91,4 @@ R : Les StructuredDocumentTags (SDT) sont des éléments basés sur XML qui peu
 
 #### Q : Puis-je utiliser d’autres types de contrôle comme option préférée ?
 
- R : Oui, à part`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET prend en charge d'autres types de contrôle tels que`HtmlControlType.ContentControl` et`HtmlControlType.CustomXmlMarkup`.
+ R : Oui, à part`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET prend en charge d'autres types de contrôle tels que`HtmlControlType.ContentControl`et`HtmlControlType.CustomXmlMarkup`.

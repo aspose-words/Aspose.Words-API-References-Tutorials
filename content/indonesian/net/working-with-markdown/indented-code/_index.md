@@ -65,7 +65,7 @@ J: Kode yang menjorok ke dalam di Markdown meningkatkan keterbacaan kode dan mem
 
 #### T: Apa perbedaan antara kode indentasi dan blok kode di Markdown?
 
-J: Kode berindentasi digunakan untuk cuplikan kode kecil yang disisipkan ke dalam teks, sedangkan blok kode digunakan untuk menampilkan potongan kode lebih besar dalam format terpisah.
+J: Kode berindentasi digunakan untuk cuplikan kode kecil yang disisipkan ke dalam teks, sedangkan blok kode digunakan untuk menampilkan potongan kode yang lebih besar dalam format terpisah.
 
 #### T: Apakah kode yang menjorok ke dalam Markdown didukung oleh semua editor Markdown?
 

@@ -92,7 +92,7 @@ Výčet podřízených uzlů v dokumentu aplikace Word pomocí Aspose.Words for 
 Odstavec může obsahovat uzly, jako jsou úseky, tvary, komentáře a další vložené prvky.
 
 ### 2. Jak mohu načíst existující dokument aplikace Word?
- Stávající dokument můžete načíst pomocí`Document doc = new Document("path/to/your/document.docx");`.
+ Existující dokument můžete načíst pomocí`Document doc = new Document("path/to/your/document.docx");`.
 
 ### 3. Mohu manipulovat s jinými typy uzlů kromě Run?
  Ano, můžete manipulovat s různými typy uzlů, jako jsou tvary, komentáře a další, jejich kontrolou`NodeType`.

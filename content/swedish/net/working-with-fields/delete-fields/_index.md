@@ -80,7 +80,7 @@ Denna loop itererar bakåt genom fältsamlingen för att undvika problem med att
 
 ## Steg 6: Spara det ändrade dokumentet
 
-Spara dokumentet efter att du tagit bort fälten:
+Spara dokumentet efter att du har tagit bort fälten:
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

@@ -96,7 +96,7 @@ Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeu
 
  Vous pouvez modifier la requête LINQ pour rechercher d'autres propriétés ou types de formes. Se référer au[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
-### 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
+### 4. Comment puis-je obtenir de l'assistance pour Aspose.Words pour .NET ?
 
 Vous pouvez obtenir de l'aide en visitant le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 

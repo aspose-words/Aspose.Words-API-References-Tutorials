@@ -58,6 +58,6 @@ Kode ini akan mengatur orientasi halaman menjadi lanskap, margin kiri menjadi 50
   
 ```
 
-Pastikan untuk menentukan jalur yang benar ke direktori tempat Anda ingin menyimpan dokumen di`dataDir` variabel.
+ Pastikan untuk menentukan jalur yang benar ke direktori tempat Anda ingin menyimpan dokumen di`dataDir` variabel.
 
 Anda sekarang telah mempelajari cara mengonfigurasi tata letak dan pemformatan bagian dokumen menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah yang disediakan dalam tutorial ini, Anda dapat dengan mudah menyesuaikan tata letak dan format dokumen Anda sendiri.

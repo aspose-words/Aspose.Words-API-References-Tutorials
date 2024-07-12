@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Načtěte dokument a vytvořte část XML
- Načtěte dokument aplikace Word pomocí`Document` konstruktor, předá cestu k dokumentu jako parametr. Vytvořte část XML, která obsahuje data, která chcete zobrazit ve značce strukturovaného dokumentu.
+ Načtěte dokument aplikace Word pomocí`Document`konstruktor, předá cestu k dokumentu jako parametr. Vytvořte část XML, která obsahuje data, která chcete zobrazit ve značce strukturovaného dokumentu.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -63,10 +63,10 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Vytvořte StructuredDocumentTag, který zobrazí obsah naší CustomXmlPart v dokumentu.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Pokud nastavíme mapování pro náš StructuredDocumentTag,
-	// zobrazí pouze část CustomXmlPart, na kterou XPath ukazuje.
+	//zobrazí pouze část CustomXmlPart, na kterou XPath ukazuje.
 	// Tato cesta XPath bude ukazovat na obsah druhého prvku „<text>“ prvního prvku „<root>“ naší CustomXmlPart.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
 ```
 
-je to! Úspěšně jste nastavili mapování XML pro začátek rozsahu značek strukturovaného dokumentu ve vašem dokumentu Word pomocí Aspose.Words for .NET.
+A je to! Úspěšně jste nastavili mapování XML pro začátek rozsahu značek strukturovaného dokumentu ve vašem dokumentu Word pomocí Aspose.Words for .NET.

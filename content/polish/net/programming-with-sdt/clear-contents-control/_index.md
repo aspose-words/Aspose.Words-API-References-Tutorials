@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Załaduj dokument i pobierz tag StructuredDocumentTag
- Załaduj dokument Word za pomocą`Document` konstruktor, przekazując ścieżkę do dokumentu jako parametr. Następnie pobierz żądane`StructuredDocumentTag` z dokumentu. W tym przykładzie zakładamy, że SDT jest pierwszym węzłem podrzędnym w dokumencie.
+ Załaduj dokument Word za pomocą`Document` konstruktor, przekazując ścieżkę do dokumentu jako parametr. Następnie pobierz żądane`StructuredDocumentTag` dokumentu. W tym przykładzie zakładamy, że SDT jest pierwszym węzłem podrzędnym w dokumencie.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Krok 4: Zapisz dokument
- Zapisz zmodyfikowany dokument za pomocą`Save`metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithSdt.ClearContentsControl.doc”.
+ Zapisz zmodyfikowany dokument za pomocą`Save` metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithSdt.ClearContentsControl.doc”.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

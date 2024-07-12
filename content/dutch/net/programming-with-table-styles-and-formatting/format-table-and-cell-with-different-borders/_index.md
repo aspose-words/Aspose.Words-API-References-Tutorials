@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
 
-In deze zelfstudie begeleiden we u stapsgewijs door het proces voor het opmaken van een tabel en een cel met verschillende randen met behulp van Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze zelfstudie weet u hoe u aangepaste randen kunt toepassen op specifieke tabellen en cellen in uw Word-documenten met behulp van Aspose.Words voor .NET.
+In deze zelfstudie leiden we u stapsgewijs door het proces voor het opmaken van een tabel en een cel met verschillende randen met behulp van Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze zelfstudie weet u hoe u aangepaste randen kunt toepassen op specifieke tabellen en cellen in uw Word-documenten met behulp van Aspose.Words voor .NET.
 
 ## Stap 1: Definieer de documentmap
 Eerst moet u het pad naar uw documentenmap instellen. Dit is de locatie waar u uw bewerkte Word-document wilt opslaan. Vervang "UW DOCUMENTENDIRECTORY" door het juiste pad.

@@ -91,7 +91,7 @@ R: Para verificar a sequência de TextBoxes usando Aspose.Words for .NET, a bibl
 
 #### P: Como determinar se um TextBox é o início da sequência?
 
-R: Para determinar se um TextBox é o cabeçalho da sequência, você pode verificar se ele possui um próximo formulário (`Next`) mas não uma forma anterior (`Previous`). Se sim, isso significa que ele é o líder da sequência.
+R: Para determinar se um TextBox é o cabeçalho da sequência, você pode verificar se ele possui um próximo formulário (`Next`) mas não uma forma anterior (`Previous`). Se sim, isso significa que ele é o líder da seqüência.
 
 #### P: Como saber se um TextBox está no meio da sequência?
 

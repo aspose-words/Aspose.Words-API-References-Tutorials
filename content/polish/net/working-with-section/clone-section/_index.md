@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Załaduj dokument i sklonuj sekcję
- Następnie załadujemy dokument programu Word do instancji pliku`Document` klasa. Następnie skorzystamy z`Clone` metoda klonowania pierwszej sekcji dokumentu.
+ Następnie załadujemy dokument programu Word do instancji pliku`Document` klasa. Następnie skorzystamy z`Clone`metoda klonowania pierwszej sekcji dokumentu.
 
 ```csharp
 // Załaduj dokument
@@ -49,7 +49,7 @@ Section cloneSection = doc.Sections[0].Clone();
 ```
 
 ## Wniosek
-tym samouczku widzieliśmy, jak sklonować sekcję dokumentu programu Word za pomocą Aspose.Words dla .NET. Klonowanie sekcji umożliwia utworzenie identycznych kopii istniejących sekcji w dokumencie. Możesz swobodnie dostosowywać i używać tej funkcji klonowania w swoich projektach, aby efektywnie manipulować i edytować sekcje dokumentów.
+W tym samouczku widzieliśmy, jak sklonować sekcję dokumentu programu Word za pomocą Aspose.Words dla .NET. Klonowanie sekcji umożliwia utworzenie identycznych kopii istniejących sekcji w dokumencie. Możesz swobodnie dostosowywać i używać tej funkcji klonowania w swoich projektach, aby efektywnie manipulować i edytować sekcje dokumentów.
 
 ### Często zadawane pytania
 

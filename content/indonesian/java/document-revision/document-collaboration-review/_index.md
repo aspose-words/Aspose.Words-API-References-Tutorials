@@ -14,7 +14,7 @@ Aspose.Words for Java adalah pustaka Java yang kuat dan serbaguna yang memungkin
 
 ## Menyiapkan Aspose.Words untuk Java
 
-Sebelum kita mendalami kolaborasi dan peninjauan dokumen, pertama-tama mari siapkan Aspose.Words untuk Java di proyek Anda. Ikuti langkah-langkah sederhana ini:
+Sebelum kita mendalami kolaborasi dan peninjauan dokumen, mari siapkan Aspose.Words untuk Java terlebih dahulu di proyek Anda. Ikuti langkah-langkah sederhana ini:
 
 1.  Unduh Aspose.Words untuk Java: Anda dapat mengunduh perpustakaan dari[Di Sini](https://releases.aspose.com/words/java/).
 

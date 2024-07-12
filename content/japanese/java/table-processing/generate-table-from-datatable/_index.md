@@ -14,7 +14,7 @@ url: /ja/java/table-processing/generate-table-from-datatable/
 
 始める前に、次の前提条件を満たしていることを確認してください。
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 - Aspose.Words for Java ライブラリがダウンロードされ、プロジェクトで参照されます。
 
 ## ステップ2: データテーブルを準備する
@@ -90,7 +90,7 @@ Aspose.Words for Java には、テーブル、セル、行、列の幅広い書�
 
 ### 3. 生成されたテーブルを別の形式でエクスポートできますか?
 
-もちろんです! Aspose.Words for Java は、Word 文書を PDF、HTML、XPS などのさまざまな形式にエクスポートすることをサポートしています。提供されているエクスポート オプションを使用して、生成されたテーブルを目的の形式に簡単に変換できます。
+もちろんです! Aspose.Words for Java は、PDF、HTML、XPS など、さまざまな形式への Word 文書のエクスポートをサポートしています。提供されているエクスポート オプションを使用して、生成されたテーブルを目的の形式に簡単に変換できます。
 
 ### 4. Aspose.Words for Java は大規模なドキュメント処理に適していますか?
 

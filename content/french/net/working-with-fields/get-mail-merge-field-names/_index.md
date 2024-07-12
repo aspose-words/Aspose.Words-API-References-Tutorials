@@ -96,7 +96,7 @@ foreach (string fieldName in fieldNames)
 
 #### Q : Qu'est-ce que le publipostage dans Aspose.Words ?
 
-R : Le publipostage dans Aspose.Words est un processus permettant de fusionner des données provenant d'une source externe (par exemple, une feuille de calcul Excel ou une base de données) avec un modèle de document Word pour créer des documents personnalisés. Cela facilite la génération automatisée de lettres, rapports et autres documents similaires.
+R : Le publipostage dans Aspose.Words est un processus permettant de fusionner des données provenant d'une source externe (par exemple, une feuille de calcul Excel ou une base de données) avec un modèle de document Word pour créer des documents personnalisés. Cela facilite la génération automatisée de lettres, rapports et autres documents similaires.
 
 #### Q : Comment puis-je obtenir la liste des champs de publipostage disponibles dans un document Word ?
 

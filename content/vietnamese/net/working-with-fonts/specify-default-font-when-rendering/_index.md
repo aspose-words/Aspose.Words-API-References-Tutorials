@@ -62,7 +62,7 @@ Trong hướng dẫn này, chúng ta đã tìm hiểu cách chỉ định phông
 
 #### Câu hỏi: Làm cách nào tôi có thể chỉ định phông chữ mặc định khi chuyển đổi sang PDF trong Aspose.Words?
 
- Trả lời: Để chỉ định phông chữ mặc định khi chuyển đổi sang PDF trong Aspose.Words, bạn có thể sử dụng`PdfOptions` lớp và thiết lập`DefaultFontName` thuộc tính thành tên của phông chữ mong muốn.
+ Trả lời: Để chỉ định phông chữ mặc định khi chuyển đổi sang PDF trong Aspose.Words, bạn có thể sử dụng`PdfOptions` lớp và thiết lập`DefaultFontName`thuộc tính thành tên của phông chữ mong muốn.
 
 #### Hỏi: Điều gì sẽ xảy ra nếu phông chữ mặc định không có sẵn khi chuyển đổi sang PDF?
 

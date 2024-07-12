@@ -172,7 +172,7 @@ Parola korumalı bir belgedeki parola korumasını kaldırmak için belgeyi doğ
 
 ### Bir belgeyi OOXML biçiminde kaydederken özel özellikleri ayarlayabilir miyim?
 
- Evet, bir belgeyi OOXML formatında kaydetmeden önce onun özel özelliklerini ayarlayabilirsiniz. Kullan`BuiltInDocumentProperties` Ve`CustomDocumentProperties` yazar, başlık, anahtar kelimeler ve özel özellikler gibi çeşitli özellikleri ayarlamak için sınıflar.
+ Evet, bir belgeyi OOXML formatında kaydetmeden önce onun özel özelliklerini ayarlayabilirsiniz. Kullan`BuiltInDocumentProperties`Ve`CustomDocumentProperties` yazar, başlık, anahtar kelimeler ve özel özellikler gibi çeşitli özellikleri ayarlamak için sınıflar.
 
 ### Bir belgeyi OOXML formatında kaydederken varsayılan sıkıştırma düzeyi nedir?
 

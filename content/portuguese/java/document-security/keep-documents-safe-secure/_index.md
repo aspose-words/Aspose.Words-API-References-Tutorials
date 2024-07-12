@@ -199,7 +199,7 @@ Depois de aplicar medidas de segurança, teste minuciosamente seus documentos pa
 
 ## 14. Conclusão
 
-Neste guia passo a passo, exploramos a importância da segurança dos documentos e como o Aspose.Words for Java pode ajudar a proteger seus documentos contra acesso não autorizado. Ao aproveitar os recursos da biblioteca, como proteção por senha, criptografia, assinaturas digitais, marca d’água e redação, você pode garantir que seus documentos permaneçam seguros e protegidos.
+Neste guia passo a passo, exploramos a importância da segurança dos documentos e como o Aspose.Words for Java pode ajudar a proteger seus documentos contra acesso não autorizado. Ao aproveitar os recursos da biblioteca, como proteção por senha, criptografia, assinaturas digitais, marca d'água e redação, você pode garantir que seus documentos permaneçam seguros e protegidos.
 
 ## Perguntas frequentes
 
@@ -216,4 +216,4 @@ Neste guia passo a passo, exploramos a importância da segurança dos documentos
    Não, Aspose.Words não oferece recursos de recuperação de senha. Certifique-se de manter suas senhas seguras.
 
 ### Posso personalizar a aparência das marcas d’água?
-   Sim, você pode personalizar totalmente a aparência das marcas d'água, incluindo texto, fonte, cor, tamanho e rotação.
+   Sim, você pode personalizar totalmente a aparência das marcas d’água, incluindo texto, fonte, cor, tamanho e rotação.

@@ -2,180 +2,144 @@
 title: Créer une nouvelle ligne de signature et définir l'identifiant du fournisseur
 linktitle: Créer une nouvelle ligne de signature et définir l'identifiant du fournisseur
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment créer une nouvelle ligne de signature et définir l'ID du fournisseur dans un document Word avec Aspose.Words pour .NET.
+description: Découvrez comment créer une nouvelle ligne de signature et définir l'ID du fournisseur dans les documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
-Dans ce didacticiel, nous vous guiderons à travers les étapes d'utilisation de la fonctionnalité Créer une nouvelle ligne de signature et définir l'ID du fournisseur avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'insérer une ligne de signature dans un document Word, de définir des options personnalisées et de signer le document. Suivez les étapes ci-dessous :
+## Introduction
 
-## Étape 1 : Création du document et du générateur
+Salut les passionnés de technologie ! Vous êtes-vous déjà demandé comment ajouter une ligne de signature dans vos documents Word par programmation ? Eh bien, aujourd'hui, nous abordons exactement cela en utilisant Aspose.Words pour .NET. Ce guide vous guidera à travers chaque étape, facilitant ainsi la création d'une nouvelle ligne de signature et la définition de l'ID du fournisseur dans vos documents Word. Que vous automatisiez le traitement de documents ou cherchiez simplement à rationaliser votre flux de travail, ce didacticiel est là pour vous.
 
-Commencez par créer une instance de la classe Document et un objet DocumentBuilder :
+## Conditions préalables
+
+Avant de mettre la main à la pâte, assurons-nous que nous avons tout ce dont nous avons besoin :
+
+1.  Aspose.Words for .NET : si vous ne l'avez pas déjà fait, téléchargez-le[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : Visual Studio ou tout autre environnement de développement C#.
+3. .NET Framework : assurez-vous que .NET Framework est installé.
+4. Certificat PFX : pour signer des documents, vous aurez besoin d'un certificat PFX. Vous pouvez en obtenir un auprès d’une autorité de certification de confiance.
+
+## Importer des espaces de noms
+
+Tout d’abord, importons les espaces de noms nécessaires dans votre projet C# :
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Signing;
+using System;
+```
+
+Très bien, passons aux choses sérieuses. Voici une description détaillée de chaque étape pour créer une nouvelle ligne de signature et définir l'ID du fournisseur.
+
+## Étape 1 : Créer un nouveau document
+
+Pour commencer, nous devons créer un nouveau document Word. Ce sera la toile de notre ligne signature.
+
+```csharp
+// Le chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Étape 2 : Définition des options de ligne de signature
+ Dans cet extrait, nous initialisons un nouveau`Document` et un`DocumentBuilder` . Le`DocumentBuilder` nous aide à ajouter des éléments à notre document.
 
-Créez une instance de la classe SignatureLineOptions et définissez les options souhaitées :
+## Étape 2 : Définir les options de la ligne de signature
+
+Ensuite, nous définissons les options de notre ligne de signature. Cela inclut le nom, le titre, l'adresse e-mail et d'autres détails du signataire.
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions
 {
-Sign = "vderyushev",
-SignerTitle = "QA",
-Email = "vderyushev@aspose.com",
-ShowDate=true,
-Default Instructions = false,
-Instructions = "Please sign here.",
-AllowComments = true
+    Signer = "vderyushev",
+    SignerTitle = "QA",
+    Email = "vderyushev@aspose.com",
+    ShowDate = true,
+    DefaultInstructions = false,
+    Instructions = "Please sign here.",
+    AllowComments = true
 };
 ```
 
-## Étape 3 : Insérer la ligne de signature
+Ces options personnalisent la ligne de signature, la rendant claire et professionnelle.
 
-Utilisez la méthode InsertSignatureLine() de l'objet DocumentBuilder pour insérer la ligne de signature dans le document :
+## Étape 3 : Insérez la ligne de signature
+
+Une fois nos options définies, nous pouvons maintenant insérer la ligne de signature dans le document.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-```
-
-## Étape 4 : Définir l'ID du fournisseur
-
-Définissez l'ID du fournisseur pour la ligne de signature à l'aide de la propriété ProviderId :
-
-```csharp
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
-Assurez-vous de spécifier l'ID de fournisseur correct pour votre cas d'utilisation.
+ Ici le`InsertSignatureLine` La méthode ajoute la ligne de signature et nous lui attribuons un identifiant de fournisseur unique.
 
-## Étape 5 : Enregistrez le document
+## Étape 4 : Enregistrez le document
 
-Enregistrez le document modifié :
+Après avoir inséré la ligne de signature, sauvegardons le document.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
 ```
 
-Assurez-vous de spécifier le chemin et le nom de fichier corrects pour enregistrer le document.
+Cela enregistre votre document avec la ligne de signature nouvellement ajoutée.
 
-## Étape 6 : Signature du document
+## Étape 5 : Configurer les options de signature
 
-Pour signer le document, vous devez définir les options de signature et utiliser la classe DigitalSignatureUtil :
+Maintenant, nous devons configurer les options de signature du document. Cela inclut l'ID de la ligne de signature, l'ID du fournisseur, les commentaires et l'heure de signature.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-ProviderId = signatureLine.ProviderId,
-Comments = "Document was signed by vderyushev",
-SignTime = DateTime.Now
+    SignatureLineId = signatureLine.Id,
+    ProviderId = signatureLine.ProviderId,
+    Comments = "Document was signed by vderyushev",
+    SignTime = DateTime.Now
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-	dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions)
 ```
 
-Assurez-vous de spécifier les chemins corrects pour le document, le certificat et le document signé.
+Ces options garantissent que le document est signé avec les détails corrects.
 
-### Exemple de code source pour créer une nouvelle ligne de signature et définir l'ID du fournisseur à l'aide d'Aspose.Words pour .NET
+## Étape 6 : Créer un titulaire de certificat
 
-Voici le code source complet pour créer une nouvelle ligne de signature et définir l'ID du fournisseur avec Aspose.Words pour .NET :
+Pour signer le document, nous utiliserons un certificat PFX. Créons un titulaire de certificat pour cela.
 
 ```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLineOptions signatureLineOptions = new SignatureLineOptions
-	{
-		Signer = "vderyushev",
-		SignerTitle = "QA",
-		Email = "vderyushev@aspose.com",
-		ShowDate = true,
-		DefaultInstructions = false,
-		Instructions = "Please sign here.",
-		AllowComments = true
-	};
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-	signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		ProviderId = signatureLine.ProviderId,
-		Comments = "Document was signed by vderyushev",
-		SignTime = DateTime.Now
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-		dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-En suivant ces étapes, vous pouvez facilement créer une nouvelle ligne de signature et définir l'ID du fournisseur dans votre document Word avec Aspose.Words pour .NET.
+ Assurez-vous de remplacer`"morzal.pfx"` avec votre fichier de certificat actuel et`"aw"` avec le mot de passe de votre certificat.
+
+## Étape 7 : Signez le document
+
+Enfin, nous signons le document à l'aide de l'utilitaire de signature numérique.
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
+    dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
+```
+
+Cela signe le document et l'enregistre en tant que nouveau fichier.
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons exploré la fonctionnalité de création d'une nouvelle ligne de signature et de définition de l'ID du fournisseur dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant les étapes fournies, vous pouvez facilement insérer une ligne de signature avec des options personnalisées et l'associer à un fournisseur spécifique à l'aide de l'ID du fournisseur. L'ajout de lignes de signature et la personnalisation des informations sur le fournisseur améliorent l'authenticité et la fiabilité de vos documents. Aspose.Words for .NET fournit une API puissante pour le traitement de mots avec des lignes de signature et des certificats numériques dans les documents Word, vous permettant d'automatiser le processus de signature et de garantir la validité de vos documents.
+Et voila! Vous avez réussi à créer une nouvelle ligne de signature et à définir l'ID du fournisseur dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite incroyablement la gestion et l'automatisation des tâches de traitement des documents. Essayez-le et voyez comment il peut rationaliser votre flux de travail.
 
-### FAQ
+## FAQ
 
-#### Q : Qu'est-ce qu'un identifiant de fournisseur dans une ligne de signature ?
+### Puis-je personnaliser l’apparence de la ligne de signature ?
+Absolument! Vous pouvez modifier diverses options dans le`SignatureLineOptions` pour répondre à vos besoins.
 
-R : Un identifiant de fournisseur dans une ligne de signature est un identifiant unique qui représente le fournisseur de la signature numérique. Il permet d'identifier la source ou l'organisation responsable de la signature.
+### Que faire si je n'ai pas de certificat PFX ?
+Vous devrez en obtenir un auprès d'une autorité de certification de confiance. C’est essentiel pour signer numériquement des documents.
 
-#### Q : Comment puis-je créer une nouvelle ligne de signature dans un document Word à l'aide d'Aspose.Words pour .NET ?
+### Puis-je ajouter plusieurs lignes de signature à un document ?
+Oui, vous pouvez ajouter autant de lignes de signature que nécessaire en répétant le processus d'insertion avec différentes options.
 
-: Pour créer une nouvelle ligne de signature dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez suivre ces étapes :
-1.  Créez une instance du`Document` classe et un`DocumentBuilder` objet.
-2.  Créez une instance du`SignatureLineOptions` classe et définissez les options de ligne de signature souhaitées.
-3.  Utilisez le`InsertSignatureLine` méthode du`DocumentBuilder` objet pour insérer la ligne de signature dans le document.
+### Aspose.Words pour .NET est-il compatible avec .NET Core ?
+Oui, Aspose.Words for .NET prend en charge .NET Core, ce qui le rend polyvalent pour différents environnements de développement.
 
-#### Q : Puis-je personnaliser les options de la ligne de signature, telles que le nom du signataire, le titre et les instructions ?
-
- R : Oui, vous pouvez personnaliser les options de la ligne de signature. Le`SignatureLineOptions` la classe fournit des propriétés pour définir les options souhaitées, telles que`Signer`, `SignerTitle`, `Instructions`, `AllowComments`, etc. Vous pouvez modifier ces propriétés avant d'insérer la ligne de signature.
-
-#### Q : A quoi sert la définition de l’ID de fournisseur pour une ligne de signature ?
-
-R : La définition de l'ID du fournisseur pour une ligne de signature permet d'identifier la source ou l'organisation responsable de la signature numérique. Il vous permet d'associer la signature à un fournisseur ou une entité spécifique, fournissant des informations supplémentaires sur l'origine et la fiabilité de la signature.
-
-#### Q : Comment puis-je définir l'ID du fournisseur pour une ligne de signature à l'aide d'Aspose.Words pour .NET ?
-
-R : Pour définir l'ID du fournisseur pour une ligne de signature à l'aide d'Aspose.Words for .NET, vous pouvez suivre ces étapes :
-1.  Après avoir inséré la ligne de signature, accédez au`ProviderId` propriété du`SignatureLine` objet.
-2.  Met le`ProviderId` propriété à la valeur d'ID de fournisseur souhaitée à l'aide de la`Guid` Type de données.
-
-#### Q : Puis-je signer le document après avoir créé une nouvelle ligne de signature et défini l'ID du fournisseur ?
-
- R : Oui, après avoir créé une nouvelle ligne de signature et défini l'ID du fournisseur, vous pouvez signer le document. Pour signer le document, vous devez définir les options de signature, notamment l'ID de la ligne de signature, l'ID du fournisseur, les commentaires et l'heure de signature. Ensuite, utilisez le`DigitalSignatureUtil.Sign` méthode pour signer le document à l’aide d’un certificat numérique.
-
-#### Q : Puis-je spécifier un ID de fournisseur spécifique pour chaque ligne de signature dans un document Word ?
-
- : Oui, vous pouvez spécifier un ID de fournisseur spécifique pour chaque ligne de signature dans un document Word. Après avoir inséré chaque ligne de signature, vous pouvez définir l'ID du fournisseur pour cette ligne de signature particulière en accédant au`ProviderId` propriété du respectif`SignatureLine` objet.
-
-#### Q : Comment puis-je enregistrer le document modifié après avoir créé une nouvelle ligne de signature et défini l'ID du fournisseur ?
-
- R : Pour enregistrer le document modifié après avoir créé une nouvelle ligne de signature et défini l'ID du fournisseur, vous pouvez utiliser le`Save` méthode du`Document` objet. Spécifiez le chemin et le nom de fichier corrects pour enregistrer le document.
-
-#### Q : Quel format de fichier Aspose.Words for .NET prend-il en charge pour la création et la signature de lignes de signature ?
-
-R : Aspose.Words for .NET prend en charge la création et la signature de lignes de signature au format de fichier DOCX. Vous pouvez créer et signer des lignes de signature dans des fichiers DOCX à l'aide des méthodes et classes fournies.
-
-#### Q : Puis-je modifier l'ID du fournisseur ou d'autres options d'une ligne de signature une fois celle-ci signée ?
-
-: Une fois qu'une ligne de signature a été signée, elle fait partie du contenu du document et ne peut pas être modifiée séparément. Toute modification de la ligne de signature, telle que la modification de l'ID du fournisseur ou d'autres options, nécessiterait la suppression de la signature existante et la création d'une nouvelle ligne de signature.
+### Dans quelle mesure les signatures numériques sont-elles sécurisées ?
+Les signatures numériques créées avec Aspose.Words sont hautement sécurisées, à condition que vous utilisiez un certificat valide et fiable.

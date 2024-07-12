@@ -37,7 +37,7 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Questo codice utilizza il`ConvertUtil` classe di Aspose.Words per convertire i valori specificati in pollici (`InchToPoint` ). Puoi anche utilizzare altri metodi di conversione disponibili nel file`ConvertUtil` classe per convertire i valori in altre unità di misura.
+ Questo codice utilizza il`ConvertUtil` classe di Aspose.Words per convertire i valori specificati in pollici (`InchToPoint`). Puoi anche utilizzare altri metodi di conversione disponibili nel file`ConvertUtil` classe per convertire i valori in altre unità di misura.
 
 ### Codice sorgente di esempio per convertire tra unità di misura utilizzando Aspose.Words per .NET
 

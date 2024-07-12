@@ -80,7 +80,7 @@ document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 
 Diese Zeile speichert das Dokument als PDF mit angewendeter Silbentrennung.
 
-## Schritt 5: Behandeln Sie die Wörterbuchausnahme „Fehlende Silbentrennung“
+## Schritt 5: Behandeln Sie die Wörterbuchausnahme für fehlende Silbentrennung
 
 Manchmal kann es vorkommen, dass das Silbentrennungswörterbuch fehlt. Wir kümmern uns darum.
 

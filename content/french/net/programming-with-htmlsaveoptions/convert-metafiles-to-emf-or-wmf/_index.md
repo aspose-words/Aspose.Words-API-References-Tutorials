@@ -34,7 +34,7 @@ builder.InsertHtml(
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Ce code crée une instance de`Document` et`DocumentBuilder` pour construire le document. Il insère un`<img>` balisez dans le document avec une image codée en base64.
+ Ce code crée une instance de`Document`et`DocumentBuilder` pour construire le document. Il insère un`<img>` balisez dans le document avec une image codée en base64.
 
 ## Étape 3 : Définir les options d'enregistrement HTML
 

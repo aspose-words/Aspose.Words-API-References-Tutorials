@@ -2,80 +2,96 @@
 title: 不保存图片项目符号
 linktitle: 不保存图片项目符号
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 禁用在 Word 文档中保存图像项目符号。
+description: 通过我们的分步指南学习如何在 Aspose.Words for .NET 中处理图片项目符号。简化文档管理并轻松创建专业的 Word 文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
+## 介绍
 
-图片项目符号是 Word 文档中常用的功能，用于添加自定义项目符号。但是，在某些情况下，使用 Aspose.Words Library for .NET 处理文档时可能需要禁用图像项目符号注册。在本分步指南中，我们将解释如何使用 Aspose.Words C# 源代码 for .NET 来使用 DocSaveOptions 保存选项禁用图像项目符号保存。
+嗨，各位开发人员！您是否曾经使用过 Word 文档，并发现自己陷入了保存图片项目符号的复杂问题中？这是那些可以对文档的最终外观产生重大影响的微小细节之一。那么，今天，我将指导您完成在 Aspose.Words for .NET 中处理图片项目符号的过程，特别关注“不保存图片项目符号”功能。准备好了吗？我们走吧！
 
-## 了解 Aspose.Words 库
+## 先决条件
 
-在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。Aspose.Words 是一个功能强大的库，可用于在包括 .NET 在内的不同平台中创建、编辑、转换和保护 Word 文档。它提供了许多用于操作文档的功能，例如插入文本、更改格式、添加部分等等。
+在我们开始修改代码之前，需要做好以下几点：
+
+1.  Aspose.Words for .NET：确保你已安装此强大的库。如果你还没有，可以下载[这里](https://releases.aspose.com/words/net/).
+2. 开发环境：一个有效的 .NET 开发环境，例如 Visual Studio。
+3. C# 基础知识：熟悉 C# 编程将会有所帮助。
+4. 示例文档：用于测试目的的带有图像项目符号的 Word 文档。
+
+## 导入命名空间
+
+首先，您需要导入必要的命名空间。这非常简单，但对于访问 Aspose.Words 功能至关重要。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+让我们将这个过程分解成易于管理的步骤。这样，你就可以轻松跟进并理解代码的每个部分。
 
 ## 步骤 1：设置文档目录
 
-第一步是定义文档所在的目录。您必须指定完整的目录路径。例如：
-
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-确保将“YOUR DOCUMENTS DIRECTORY”替换为您的文档目录的实际路径。
-
-## 步骤 2：使用图像项目符号加载文档
-
-接下来，您需要加载带有图像项目符号的文档。使用 Document 类从文件加载文档。例如：
-
-```csharp
-Document doc = new Document(dataDir + "Image bullet points.docx");
-```
-
-在此示例中，我们从文件“Image bullet points.docx”加载文档
-
-  位于文档目录中。
-
-## 步骤 3：配置录制选项
-
-现在让我们配置文档的保存选项。使用 DocSaveOptions 类指定保存设置。例如：
-
-```csharp
-DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
-```
-
-在这个例子中，我们创建一个新的 DocSaveOptions 对象，并将 SavePictureBullet 属性设置为 false，以禁用保存图片项目符号。
-
-## 步骤 4：启用“不保存图片项目符号”功能
-
-为了启用“不保存图片项目符号”功能，我们已将保存选项配置为将 SavePictureBullet 设置为 false。这可确保图片项目符号不会保存在最终文档中。
-
-## 步骤 5：保存文档
-
-最后，您可以使用 Document 类的 Save 方法保存文档。指定文件的完整路径和所需的文件名。例如：
-
-```csharp
-doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
-```
-
-请确保将“dataDir”替换为文档的目录路径。
-
-## 使用 Aspose.Words for .NET 的 DocSaveOptions 保存选项的示例源代码，具有“不保存图片项目符号”功能
+首先，您需要指定文档目录的路径。这是存储 Word 文档的地方，也是您保存修改后的文件的地方。
 
 ```csharp
 //文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+代替`"YOUR DOCUMENTS DIRECTORY"`与您的系统中文档所在的实际路径。
+
+## 步骤 2：使用图像项目符号加载文档
+
+接下来，您将加载包含图片项目符号的 Word 文档。保存时，将修改此文档以删除图片项目符号。
+
+```csharp
 //用图片项目符号加载文档
 Document doc = new Document(dataDir + "Image bullet points.docx");
+```
 
+确保文件`"Image bullet points.docx"`存在于指定目录中。
+
+## 步骤 3：配置保存选项
+
+现在，让我们配置保存选项以指定不应保存图片项目符号。这就是奇迹发生的地方！
+
+```csharp
 //使用“不保存图片项目符号”功能配置保存选项
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
+```
 
+通过设置`SavePictureBullet`到`false`，您指示 Aspose.Words 不要在输出文档中保存图片项目符号。
+
+## 步骤 4：保存文档
+
+最后，使用指定的选项保存文档。这将生成一个不包含图片项目符号的新文件。
+
+```csharp
 //使用指定选项保存文档
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
+新文件，`"WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx"`，将保存在您的文档目录中。
+
 ## 结论
 
-在本指南中，我们介绍了如何使用 .NET 的 Aspose.Words 库禁用在文档中保存图像项目符号。通过遵循提供的步骤并使用提供的 C# 源代码，您可以轻松地在 C# 应用程序中应用此功能。在某些情况下，禁用图片项目符号保存可能很有用，可以保留文档结构和格式而不保存图片项目符号。
+就这样！只需几行代码，您就成功配置了 Aspose.Words for .NET，使其在保存文档时忽略图片项目符号。当您需要干净、一致的外观而不受图片项目符号干扰时，此功能非常有用。
+
+## 常见问题解答
+
+### 什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个功能强大的库，用于在 .NET 应用程序内创建、编辑和转换 Word 文档。
+
+### 我可以将此功能用于其他类型的子弹吗？
+不，这个特定功能是针对图片项目符号的。但是，Aspose.Words 提供了广泛的选项来处理其他项目符号类型。
+
+### 我可以在哪里获得 Aspose.Words 的支持？
+您可以从[Aspose.Words 论坛](https://forum.aspose.com/c/words/8).
+
+### Aspose.Words for .NET 有免费试用版吗？
+是的，您可以免费试用[这里](https://releases.aspose.com/).
+
+### 如何购买 Aspose.Words for .NET 的许可证？
+您可以从[Aspose 商店](https://purchase.aspose.com/buy).

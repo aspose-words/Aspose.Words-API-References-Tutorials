@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/
 ---
 
-I den här handledningen går vi igenom C#-källkoden för att ställa in ryska som standardredigeringsspråk med Aspose.Words för .NET. Den här funktionen låter dig ställa in standardspråket när du laddar ett dokument.
+den här handledningen går vi igenom C#-källkoden för att ställa in ryska som standardredigeringsspråk med Aspose.Words för .NET. Den här funktionen låter dig ställa in standardspråket när du laddar ett dokument.
 
 ## Steg 1: Projektinställning
 

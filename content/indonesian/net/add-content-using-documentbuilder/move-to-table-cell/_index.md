@@ -85,7 +85,7 @@ Selamat! Anda baru saja mempelajari cara berpindah ke sel tabel tertentu di doku
  Ya, dengan menentukan indeks tabel yang benar di`MoveToCell` metode ini, Anda dapat menavigasi ke sel mana pun di tabel mana pun dalam dokumen.
 
 ### Bagaimana cara menangani sel yang mencakup beberapa baris atau kolom?
- Anda dapat menggunakan`RowSpan` Dan`ColSpan` properti dari`Cell` kelas untuk mengelola sel yang digabungkan.
+ Anda dapat menggunakan`RowSpan`Dan`ColSpan` properti dari`Cell` kelas untuk mengelola sel yang digabungkan.
 
 ### Apakah mungkin memformat teks di dalam sel?
  Sangat! Menggunakan`DocumentBuilder` metode seperti`Font.Size`, `Font.Bold`, dan lainnya untuk memformat teks Anda.

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: A dokumentum létrehozása és testreszabása
- Hozzon létre egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` a dokumentumtartalom felépítéséhez. Használja a`Font.EmphasisMark` tulajdonság a betűk kiemelési stílusának beállításához`EmphasisMark.UnderSolidCircle` . Ezután használja a`Write` és`Writeln` módszerei a`DocumentBuilder` szöveg hozzáadásához a megadott betűk hangsúlyozásával.
+ Hozzon létre egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` a dokumentumtartalom felépítéséhez. Használja a`Font.EmphasisMark` tulajdonság a betűk kiemelési stílusának beállításához`EmphasisMark.UnderSolidCircle` . Ezután használja a`Write`és`Writeln` módszerei a`DocumentBuilder` szöveg hozzáadásához a megadott betűk hangsúlyozásával.
 
 ```csharp
 Document document = new Document();

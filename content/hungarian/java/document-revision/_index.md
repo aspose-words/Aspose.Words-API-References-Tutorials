@@ -22,7 +22,7 @@ Az oktatóanyagok a verziókezelésre és a dokumentumelőzmények kezelésére 
 
 A fejlesztők betekintést nyerhetnek a revíziós feladatok automatizálásába az Aspose.Words for Java használatával. Az oktatóanyagok a revíziók programozott kezelésének, a revíziók elfogadásának vagy elutasításának automatizálásának, valamint a felülvizsgálati jelentések készítésének technikáit ismertetik. A revíziós feladatok automatizálásával a fejlesztők javíthatják dokumentumfeldolgozási munkafolyamataikat és biztosíthatják a hatékony revíziókezelést.
 
-Az Aspose.Words for Java segítségével a dokumentum-revízió elsajátításával a fejlesztők optimalizálhatják szöveg- és dokumentumfeldolgozási képességeiket. Az oktatóanyagok gyakorlati példákat és lépésről-lépésre szóló utasításokat kínálnak, amelyek lehetővé teszik a fejlesztők számára, hogy robusztus verziókövetést és verziókezelést valósítsanak meg Java-alkalmazásaikban. Használja ezeket az oktatóanyagokat a dokumentum-revíziós folyamatok egyszerűsítéséhez és a pontos, naprakész dokumentumok karbantartásához.
+Az Aspose.Words for Java segítségével a dokumentum-revízió elsajátításával a fejlesztők optimalizálhatják szöveg- és dokumentumfeldolgozási képességeiket. Az oktatóanyagok gyakorlati példákat és lépésről-lépésre szóló utasításokat kínálnak, amelyek lehetővé teszik a fejlesztők számára, hogy robusztus verziókövetést és verziókezelést hajtsanak végre Java-alkalmazásaikban. Használja ezeket az oktatóanyagokat a dokumentum-revíziós folyamatok egyszerűsítéséhez és a pontos, naprakész dokumentumok karbantartásához.
 
 ## Dokumentum átdolgozási oktatóanyagok
 ### [A végső útmutató a dokumentumok átdolgozásához](./guide-document-revision/)

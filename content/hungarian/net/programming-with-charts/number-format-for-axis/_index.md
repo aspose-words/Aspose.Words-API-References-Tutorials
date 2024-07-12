@@ -2,43 +2,70 @@
 title: Számformátum A tengelyhez egy diagramon
 linktitle: Számformátum A tengelyhez egy diagramon
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan állíthatja be a diagramon lévő tengelyek számformátumát az Aspose.Words for .NET használatával.
+description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan formázhatja a diagram tengelyszámait az Aspose.Words for .NET használatával. Fokozatmentesen fokozza dokumentuma olvashatóságát és professzionalizmusát.
 type: docs
 weight: 10
 url: /hu/net/programming-with-charts/number-format-for-axis/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan használhatja az Aspose.Words for .NET fájlt egy diagramon lévő tengely számformátumának beállítására. A mellékelt forráskód bemutatja, hogyan hozhat létre diagramot, hogyan adhat hozzá sorozatadatokat és formázhatja a tengelycímkéket.
+Halihó! Dolgozott már diagramokkal a dokumentumaiban, és azt kívánta, bárcsak formázhatná a tengelyén lévő számokat, hogy professzionálisabbnak tűnjenek? Nos, szerencséd van! Ebben az oktatóanyagban részletesen megvizsgáljuk, hogyan érheti el ezt az Aspose.Words for .NET használatával. Ez a hatékony könyvtár lehetővé teszi a Word-dokumentumok olyan egyszerű kezelését, mint a torta. Ma pedig arra összpontosítunk, hogy ezeket a diagramtengelyeket egyedi számformátumokkal alakítsuk át.
 
-## 1. lépés: Állítsa be a projektet
+## Előfeltételek
 
-Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+Mielőtt elkezdenénk, győződjünk meg arról, hogy mindennel megvan, amire szüksége van. Íme egy gyors ellenőrző lista:
 
-- Aspose.Words for .NET könyvtár telepítve. Letöltheti a NuGet csomagkezelő használatával a telepítéshez.
-- Egy dokumentumkönyvtár elérési útja, ahová a kimeneti dokumentum mentésre kerül.
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+- .NET-keretrendszer: Győződjön meg arról, hogy kompatibilis .NET-keretrendszer van telepítve.
+- Fejlesztési környezet: Az olyan IDE, mint a Visual Studio, tökéletesen működik.
+- Alapvető C# ismerete: Ez segít követni a kódolási példákat.
 
-## 2. lépés: Hozzon létre egy új dokumentumot, és szúrjon be egy diagramot
+## Névterek importálása
 
- Újat csinálni`Document` tárgy és a`DocumentBuilder` a dokumentum felépítéséhez.
+Először is importálnia kell a szükséges névtereket a projektbe. Ez olyan, mintha egy ház építése előtt alapoznánk meg. Adja hozzá a következőket a kódfájl tetején található direktívák használatával:
 
 ```csharp
-// A dokumentumkönyvtár elérési útja
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Reporting;
+```
+
+Most bontsuk le a folyamatot egyszerű, könnyen követhető lépésekre.
+
+## 1. lépés: A dokumentum beállítása
+
+Címsor: Inicializálja a dokumentumot
+
+Először is létre kell hoznia egy új dokumentumot és egy dokumentumkészítőt. Tekintsd ezt a lépést úgy, mint a vászon és az ecset előkészítése a remekmű elkészítése előtt.
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ezután használja a`InsertChart` módszere a`DocumentBuilder` oszlopdiagram beszúrásához a dokumentumba.
+ Itt,`dataDir` a dokumentumkönyvtár elérési útja, ahová a végső fájlt menteni fogja.`Document`és`DocumentBuilder` az Aspose.Words osztályai, amelyek segítenek a Word dokumentumok létrehozásában és kezelésében.
+
+## 2. lépés: Diagram beszúrása
+
+Címsor: Diagram hozzáadása a dokumentumhoz
+
+Ezután adjunk hozzá egy diagramot a dokumentumhoz. Itt kezdődik a varázslat. Beszúrunk egy oszlopdiagramot, amely üres vászonként fog működni.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. lépés: Adja hozzá a sorozatadatokat a diagramhoz
+ A`InsertChart` metódus meghatározott típusú (jelen esetben oszlop) és méretű diagramot szúr be a dokumentumba.
 
-Sorozatadatok hozzáadása a diagramhoz. Ebben a példában öt elemet adunk hozzá a hozzájuk tartozó értékekkel.
+## 3. lépés: A diagramsorozat testreszabása
+
+Címsor: Töltse fel diagramját adatokkal
+
+Most hozzá kell adnunk néhány adatot a diagramunkhoz. Ez a lépés hasonló a diagram kitöltéséhez értelmes információkkal.
 
 ```csharp
 chart.Series.Clear();
@@ -47,71 +74,49 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
-## 4. lépés: Formázza meg a tengelycímkéket
+ Itt adunk hozzá egy új sorozatot, az „Aspose Series 1” nevet, öt adatponttal. A`Series.Clear` módszer biztosítja, hogy minden már meglévő adatot eltávolítsanak az új sorozatunk hozzáadása előtt.
 
- Az Y-tengely címkéinek számformátumának beállításához nyissa meg a`AxisY` a diagram tulajdonságát, és állítsa be a`NumberFormat.FormatCode` tulajdonságot a kívánt formátumba. Ebben a példában a formátumot "#,##0"-ra állítjuk, hogy a számokat ezres elválasztókkal jelenítsük meg.
+## 4. lépés: A tengelyszámok formázása
+
+Rovat: Szépítsd a tengelyszámaidat
+
+Végül formázzuk meg a számokat az Y tengelyen, hogy jobban olvashatóak legyenek. Ez olyan, mintha az utolsó simításokat helyezné el a műalkotásokon.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-## 5. lépés: Mentse el a dokumentumot
+ A`FormatCode` tulajdonság lehetővé teszi, hogy egyéni formátumot állítson be a tengelyen lévő számokhoz. Ebben a példában`#,##0`biztosítja, hogy a nagy számok ezres vesszővel együtt jelenjenek meg.
 
- Végül mentse a dokumentumot a megadott könyvtárba a`Save` módszere a`Document` tárgy.
+## 5. lépés: A dokumentum mentése
+
+Rovat: Mentse meg remekművét
+
+Most, hogy minden be van állítva, ideje elmenteni a dokumentumot. Ez a lépés a munkája nagy feltárása.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-Ez befejezi a tengely számformátumának beállítását az Aspose.Words for .NET használatával.
-
-### Példa forráskód az Aspose.Words for Axis számformátumhoz a .NET-hez 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
-	chart.AxisY.NumberFormat.FormatCode = "#,##0";
-	doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
-```
+ Itt, a`Save` metódus elmenti a dokumentumot a megadott elérési útra a fájlnévvel`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Következtetés
 
-Ebben az oktatóanyagban megtanulta, hogyan állíthatja be a diagramon lévő tengelyek számformátumát az Aspose.Words for .NET segítségével. A lépésenkénti útmutató követésével és a megadott forráskód felhasználásával új dokumentumot hozhat létre, oszlopdiagramot szúrhat be, sorozatadatokat adhat hozzá, és formázhatja a tengelycímkéket, hogy a számokat meghatározott formátumban jelenítse meg.
+És megvan! Sikeresen formázta a diagram Y tengelyén lévő számokat az Aspose.Words for .NET használatával. Ez nemcsak professzionálisabbá teszi a diagramokat, hanem javítja az olvashatóságot is. Az Aspose.Words számos olyan funkciót kínál, amelyek segítségével lenyűgöző Word-dokumentumokat hozhat létre programozottan. Tehát miért nem fedezhet fel többet, és nézze meg, mit tehet még?
 
-Az Aspose.Words for .NET hatékony funkciókat kínál a diagramok megjelenésének testreszabásához a Word dokumentumokban. A tengelycímkék számformátumának beállításával szabályozhatja a számok megjelenítési módját, beleértve az olyan opciókat is, mint a tizedesjegyek, ezres elválasztók, pénznemszimbólumok stb. Ez lehetővé teszi a numerikus adatok egyértelmű és értelmes megjelenítését.
+## GYIK
 
-Az Aspose.Words for .NET segítségével rugalmasan formázhatja a diagram különböző aspektusait, beleértve a tengelycímkéket is. A tengely számformátumának beállításával biztosíthatja a konzisztenciát és javíthatja a diagram olvashatóságát, megkönnyítve a felhasználók számára a megjelenített értékek értelmezését.
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és konvertálását.
 
-### GYIK
+### A tengelyszámokon kívül formázhatom a diagram más aspektusait is?
+Teljesen! Az Aspose.Words for .NET segítségével formázhatja a címeket, címkéket, és még a diagram megjelenését is testreszabhatja.
 
-#### Q1. Milyen számformátumú a diagram egy tengelye?
-A diagramon szereplő tengelyek számformátuma a tengelyen megjelenített számértékekre alkalmazott formázásra vonatkozik. Lehetővé teszi a számok megjelenítésének szabályozását, beleértve az olyan opciókat, mint a tizedesjegyek, ezres elválasztók, valuta szimbólumok, százalékjelek stb. A számformátum beállításával testreszabhatja a numerikus adatok megjelenését a diagramon, hogy megfeleljen az Ön egyedi igényeinek.
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
+ Igen, kaphat a[ingyenes próbaverzió itt](https://releases.aspose.com/).
 
-#### Q2. Hogyan állíthatom be a tengelycímkék számformátumát?
- A diagramon lévő tengelycímkék számformátumának beállításához az Aspose.Words for .NET használatával elérheti a`AxisY` a diagram tulajdonságát, és állítsa be a`NumberFormat.FormatCode`tulajdonságot a kívánt formátumkódhoz. A formátumkód követi a szabványos numerikus formázási minták szintaxisát, és meghatározza a számok megjelenítési módját. Használhatja például a "#,##0.00" karaktert a számok két tizedesjegyekkel és ezres elválasztókkal való megjelenítéséhez.
+### Használhatom az Aspose.Words for .NET-et a C#-on kívül más .NET-nyelvekkel is?
+Igen, az Aspose.Words for .NET kompatibilis bármely .NET nyelvvel, beleértve a VB.NET-et és az F#-ot is.
 
-#### Q3. Beállíthatok különböző számformátumokat az X-tengely és az Y-tengely címkéihez?
-Igen, az Aspose.Words for .NET használatával különböző számformátumokat állíthat be az X-tengely és az Y-tengely címkéihez. Nyissa meg a megfelelő tengelyt (`AxisX` az X-tengelyhez ill`AxisY` az Y tengelyhez) a diagramon, és módosítsa a`NumberFormat.FormatCode` tengelyenként külön-külön. Ez lehetővé teszi, hogy különböző számformátumokat alkalmazzon az egyes tengelyeken lévő címkékre az Ön egyedi igényei alapján.
-
-#### Q4. Milyen általános számformátumú kódokat használhatok?
-Az Aspose.Words for .NET a számformátumkódok széles skáláját támogatja, amelyek segítségével formázhatja a diagram tengelycímkéit. Néhány általános formátumkód:
-
-- `0` vagy`#` - A számot tizedesjegyek nélkül jeleníti meg.
-- `0.00` vagy`#.00` - Két tizedesjegy pontossággal jeleníti meg a számot.
-- `#,##0` Ezerelválasztókkal jeleníti meg a számot.
-- `"€"0.00` - Megjeleníti a számot az euró valuta szimbólummal és két tizedesjegygel.
-- `"%"0` - A számot százalékban jeleníti meg.
-
- A számról további információkat találhat[formátumkódok](https://reference.aspose.com/words/net/aspose.words.drawing.charts/chartnumberformat/formatcode/) az API Reference of Aspose.Words for .NET-ben.
-
-#### Q5. Testreszabhatom a tengelycímkék egyéb tulajdonságait?
-Igen, az Aspose.Words for .NET tulajdonságok széles skáláját kínálja a tengelycímkék megjelenésének és viselkedésének testreszabásához. A számformátumon kívül módosíthatja az olyan tulajdonságokat, mint a betűtípus, méret, szín, tájolás, igazítás stb. Ez lehetővé teszi a tengelycímkék teljes testreszabását, hogy megfeleljenek a kívánt stílusnak és megjelenítési követelményeinek.
+### Hol találok részletesebb dokumentációt?
+ A részletes dokumentáció elérhető a[Aspose.Words for .NET dokumentációs oldal](https://reference.aspose.com/words/net/).

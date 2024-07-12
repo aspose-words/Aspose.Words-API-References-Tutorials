@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der beim Exportieren von Inhalten in eine Markdown-Datei mit Ausrichtung des Tabelleninhalts mithilfe der Aspose.Words-Bibliothek für .NET hilft. Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in Ihr Projekt eingebunden haben, bevor Sie diesen Code verwenden.
+Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der mithilfe der Aspose.Words-Bibliothek für .NET beim Exportieren von Inhalten in eine Markdown-Datei mit Ausrichtung des Tabelleninhalts hilft. Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in Ihr Projekt eingebunden haben, bevor Sie diesen Code verwenden.
 
 ## Schritt 1: Dokumentverzeichnispfad festlegen
 

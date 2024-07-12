@@ -58,7 +58,7 @@ builder.EndBookmark("MyBookmark");
 builder.Write("This is some text after the bookmark.");
 ```
 
- Здесь мы добавляем текст до и после содержимого, добавленного в закладки.`StartBookmark` и`EndBookmark` методы определяют границы закладки.
+ Здесь мы добавляем текст до и после содержимого, добавленного в закладки.`StartBookmark`и`EndBookmark` методы определяют границы закладки.
 
 ## Шаг 3. Вставка условного поля
 

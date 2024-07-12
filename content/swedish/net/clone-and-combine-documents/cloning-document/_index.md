@@ -88,7 +88,7 @@ Med allt på plats är det dags att köra din kod och se resultatet:
 
 Slutligen, låt oss kontrollera om vårt klonade dokument är som förväntat:
 
-1.  Navigera till din dokumentkatalog: Öppna`Documents` mapp och hitta det klonade dokumentet med namnet`CloneAndCombineDocuments.CloningDocument.docx`.
+1.  Navigera till din dokumentkatalog: Öppna`Documents` mapp och hitta det klonade dokumentet som heter`CloneAndCombineDocuments.CloningDocument.docx`.
 2.  Öppna det klonade dokumentet: Dubbelklicka för att öppna det i Microsoft Word och verifiera att det är en exakt kopia av ditt original`Document.docx`.
 
 ## Slutsats

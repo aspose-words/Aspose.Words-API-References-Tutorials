@@ -75,7 +75,7 @@ Estas instruções mostram os números de estilos e listas restantes após a lim
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//Limpa estilos e listas não utilizados do documento dependendo de CleanupOptions fornecidas.
+	// Limpa estilos e listas não utilizados do documento dependendo de CleanupOptions fornecidas.
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 

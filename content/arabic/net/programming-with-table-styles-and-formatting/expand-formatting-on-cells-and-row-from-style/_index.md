@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## الخطوة 3: انتقل إلى الخلية الأولى من الجدول الأول
- للبدء، نحتاج إلى الانتقال إلى الخلية الأولى في الجدول الأول في المستند. نحن نستخدم ال`GetChild()` و`FirstRow.FirstCell` طرق الحصول على المرجع إلى الخلية الأولى.
+ للبدء، نحتاج إلى الانتقال إلى الخلية الأولى في الجدول الأول في المستند. نحن نستخدم ال`GetChild()`و`FirstRow.FirstCell` طرق الحصول على المرجع إلى الخلية الأولى.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

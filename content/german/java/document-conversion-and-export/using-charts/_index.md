@@ -2,7 +2,7 @@
 title: Verwenden von Diagrammen in Aspose.Words für Java
 linktitle: Verwenden von Diagrammen
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
-description: Erfahren Sie, wie Sie in Aspose.Words für Java Diagramme erstellen und anpassen. Erkunden Sie Diagrammtypen, Formatierungen und Achseneigenschaften zur Datenvisualisierung.
+description: Erfahren Sie, wie Sie Diagramme in Aspose.Words für Java erstellen und anpassen. Erkunden Sie Diagrammtypen, Formatierungen und Achseneigenschaften zur Datenvisualisierung.
 type: docs
 weight: 12
 url: /de/java/document-conversion-and-export/using-charts/

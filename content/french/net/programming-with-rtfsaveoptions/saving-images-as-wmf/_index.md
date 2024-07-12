@@ -69,7 +69,7 @@ Aspose.Words for .NET offre de nombreuses fonctionnalités avancées pour la man
 ### Questions fréquemment posées
 
 #### : Qu'est-ce que la fonctionnalité « Enregistrer les images au format WMF avec les options d'enregistrement RTF » avec Aspose.Words pour .NET ?
-R : La fonctionnalité « Enregistrer les images au format WMF avec les options d'enregistrement RTF » d'Aspose.Words pour .NET permet d'enregistrer les images de documents au format Windows Metafile (WMF) lors de la conversion au format RTF. Cela permet de conserver la qualité et la résolution de l'image dans les documents RTF.
+R : La fonctionnalité « Enregistrer les images au format WMF avec les options d'enregistrement RTF » d'Aspose.Words for .NET permet d'enregistrer les images de documents au format Windows Metafile (WMF) lors de la conversion au format RTF. Cela permet de conserver la qualité et la résolution de l'image dans les documents RTF.
 
 #### Q : Comment puis-je utiliser cette fonctionnalité avec Aspose.Words pour .NET ?
 R : Pour utiliser cette fonctionnalité avec Aspose.Words for .NET, vous pouvez suivre ces étapes :

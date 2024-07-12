@@ -112,7 +112,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功比較了兩個 Word 文件。當您從事大型專案並需要確保一致性和準確性時，此過程可以成為真正的救星。請記住，關鍵是仔細設定比較選項，以便根據您的特定需求自訂比較。快樂編碼！
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功比較了兩個 Word 文件。當您從事大型專案並需要確保一致性和準確性時，此過程可以成為真正的救星。請記住，關鍵是仔細設定比較選項，以便根據您的特定需求自訂比較。快樂編碼！
 
 ## 常見問題解答
 

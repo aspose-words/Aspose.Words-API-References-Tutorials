@@ -65,7 +65,7 @@ Tebrikler! Artık Aspose.Words for .NET'te font dizinini nasıl ayarlayacağın�
 
 #### S: Aspose.Words'te birden fazla yazı tipi klasörü ayarlayabilir miyim?
 
- C: Evet, Aspose.Words'te birden fazla yazı tipi klasörü ayarlayabilirsiniz.`SetFontsFolders` Kullanmak istediğiniz farklı yazı tipi klasörlerinin yollarını kullanarak yöntemi birden çok kez kullanın.
+ C: Evet, Aspose.Words'te birden fazla font klasörü ayarlayabilirsiniz.`SetFontsFolders` Kullanmak istediğiniz farklı yazı tipi klasörlerinin yollarını kullanarak yöntemi birden çok kez kullanın.
 
 #### S: Belgede kullanılan bir yazı tipi, tanımlanan yazı tipi klasörlerinde mevcut değilse ne olur?
 

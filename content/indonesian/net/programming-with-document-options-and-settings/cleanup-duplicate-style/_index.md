@@ -45,7 +45,7 @@ CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 doc. Cleanup(options);
 ```
 
- Kode ini membersihkan gaya duplikat dari dokumen menggunakan opsi yang ditentukan. Dalam contoh ini, kami mengaktifkan`DuplicateStyle` pilihan untuk membersihkan gaya duplikat.
+ Kode ini membersihkan gaya duplikat dari dokumen menggunakan opsi yang ditentukan. Dalam contoh ini, kami mengaktifkan`DuplicateStyle` opsi untuk membersihkan gaya duplikat.
 
 ## Langkah 5: Hitung gaya setelah dibersihkan
 
@@ -73,7 +73,7 @@ Pernyataan ini menampilkan jumlah gaya yang tersisa setelah pembersihan.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//Jumlah gaya setelah Pembersihan dikurangi.
+	// Jumlah gaya setelah Pembersihan dikurangi.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

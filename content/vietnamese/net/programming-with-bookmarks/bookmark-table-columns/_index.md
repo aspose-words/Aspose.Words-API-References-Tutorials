@@ -2,186 +2,126 @@
 title: Đánh dấu cột bảng trong tài liệu Word
 linktitle: Đánh dấu cột bảng trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách đánh dấu cột trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách đánh dấu các cột trong bảng trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này.
 type: docs
 weight: 10
 url: /vi/net/programming-with-bookmarks/bookmark-table-columns/
 ---
+## Giới thiệu
 
-Trong bài viết này, chúng ta sẽ khám phá mã nguồn C# ở trên để hiểu cách sử dụng hàm Cột bảng đánh dấu trong thư viện Aspose.Words cho .NET. Tính năng này cho phép bạn đánh dấu một cột cụ thể của bảng trong tài liệu Word và truy cập nội dung của cột đó.
+Nếu bạn đang tìm cách nâng cao kỹ năng tự động hóa tài liệu của mình thì bạn sẽ được điều trị. Hướng dẫn này sẽ hướng dẫn bạn quy trình đánh dấu các cột trong bảng trong tài liệu Word bằng Aspose.Words cho .NET. Sẵn sàng để đi sâu vào? Bắt đầu nào!
 
 ## Điều kiện tiên quyết
 
-- Kiến thức cơ bản về ngôn ngữ C#.
-- Môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+Trước khi chúng ta bắt đầu viết mã, có một số điều bạn cần phải chuẩn bị sẵn:
 
-## Bước 1: Tạo bảng
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Bạn có thể tải nó xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Thiết lập môi trường phát triển như Visual Studio.
+3. Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ rất hữu ích.
 
- Trước khi tạo dấu trang trên một cột trong bảng, trước tiên chúng ta phải tạo bảng bằng cách sử dụng`DocumentBuilder`sự vật. Trong ví dụ của chúng tôi, chúng tôi tạo một bảng có hai hàng và hai cột:
+## Nhập không gian tên
+
+Để bắt đầu, bạn cần nhập các vùng tên cần thiết trong dự án C# của mình:
 
 ```csharp
-builder. StartTable();
-
-builder. InsertCell();
-
-builder. StartBookmark("MyBookmark");
-
-builder.Write("This is cell 1 of row 1");
-
-builder. InsertCell();
-builder.Write("This is cell 2 of row 1");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.Writeln("This is cell 1 of row 2");
-
-builder. InsertCell();
-builder.Writeln("This is cell 2 of row 2");
-
-builder. EndRow();
-builder. EndTable();
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Bước 2: Tạo dấu trang cột
+Bây giờ, hãy chia quy trình thành các bước chi tiết.
 
- Chúng tôi sử dụng`StartBookmark` phương pháp tạo dấu trang trên một cột cụ thể của bảng. Trong ví dụ của chúng tôi, chúng tôi sử dụng tên "MyBookmark" cho dấu trang:
+## Bước 1: Khởi tạo Document và DocumentBuilder
+
+ Đầu tiên chúng ta cần tạo một tài liệu Word mới và khởi tạo`DocumentBuilder` để làm việc với nó.
 
 ```csharp
-builder. StartBookmark("MyBookmark");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 3: Truy cập nội dung cột
+## Bước 2: Bắt đầu bảng và chèn ô đầu tiên
 
- Chúng tôi xem qua tất cả các dấu trang trong tài liệu và hiển thị tên của chúng. Nếu dấu trang là một cột, chúng ta truy cập nội dung của cột đó bằng chỉ mục cột và`GetText` phương pháp:
+Bắt đầu tạo bảng và chèn ô đầu tiên vào nơi chúng ta sẽ bắt đầu đánh dấu.
 
 ```csharp
-foreach (Bookmark
+builder.StartTable();
+builder.InsertCell();
+```
 
-  bookmark in doc.Range.Bookmarks)
+## Bước 3: Bắt đầu đánh dấu
+
+Tiếp theo, chúng ta bắt đầu đánh dấu có tên "MyBookmark" ở ô đầu tiên.
+
+```csharp
+builder.StartBookmark("MyBookmark");
+builder.Write("This is row 1 cell 1");
+```
+
+## Bước 4: Chèn ô bổ sung và kết thúc hàng
+
+Thêm một ô khác vào hàng đầu tiên và hoàn thành hàng đầu tiên.
+
+```csharp
+builder.InsertCell();
+builder.Write("This is row 1 cell 2");
+builder.EndRow();
+```
+
+## Bước 5: Chèn ô cho hàng thứ hai
+
+Tiếp tục bằng cách thêm các ô cho hàng thứ hai.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("This is row 2 cell 1");
+builder.InsertCell();
+builder.Writeln("This is row 2 cell 2");
+builder.EndRow();
+builder.EndTable();
+```
+
+## Bước 6: Kết thúc Bookmark
+
+Kết thúc việc đánh dấu sau khi hoàn thành bảng.
+
+```csharp
+builder.EndBookmark("MyBookmark");
+```
+
+## Bước 7: Lặp lại dấu trang và hiển thị thông tin
+
+Cuối cùng, duyệt qua các dấu trang trong tài liệu và hiển thị thông tin về từng dấu trang.
+
+```csharp
+foreach (Bookmark bookmark in doc.Range.Bookmarks)
 {
-Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn?" (Column)": "");
-
-if (bookmark.IsColumn)
-{
-if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
+    Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn ? " (Column)" : "");
+    if (bookmark.IsColumn)
+    {
+        if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
+            Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
+    }
 }
-}
-```
-
-### Mã nguồn ví dụ cho Cột bảng đánh dấu bằng Aspose.Words cho .NET
-
-Đây là mã nguồn mẫu đầy đủ để minh họa việc tạo dấu trang trên một cột trong bảng bằng Aspose.Words cho .NET:
-
-```csharp
-
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartTable();
-	
-	builder.InsertCell();
-
-	builder.StartBookmark("MyBookmark");
-
-	builder.Write("This is row 1 cell 1");
-
-	builder.InsertCell();
-	builder.Write("This is row 1 cell 2");
-
-	builder.EndRow();
-
-	builder.InsertCell();
-	builder.Writeln("This is row 2 cell 1");
-
-	builder.InsertCell();
-	builder.Writeln("This is row 2 cell 2");
-
-	builder.EndRow();
-	builder.EndTable();
-	
-	builder.EndBookmark("MyBookmark");
-	
-
-	
-	foreach (Bookmark bookmark in doc.Range.Bookmarks)
-	{
-		Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn ? " (Column)" : "");
-
-		if (bookmark.IsColumn)
-		{
-			if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-				Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
-		}
-	}
-	
-        
 ```
 
 ## Phần kết luận
 
-Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu cách sử dụng chức năng Cột bảng đánh dấu của Aspose.Words cho .NET. Chúng tôi đã làm theo hướng dẫn từng bước để đánh dấu một cột cụ thể của bảng trong tài liệu Word và chuyển đến nội dung của cột đó.
+Và bạn có nó rồi đấy! Bạn đã đánh dấu thành công các cột trong bảng trong tài liệu Word bằng Aspose.Words cho .NET. Quá trình này không chỉ giúp tổ chức tài liệu của bạn mà còn giúp điều hướng và thao tác các phần cụ thể dễ dàng hơn. Đánh dấu trang là một tính năng mạnh mẽ có thể nâng cao đáng kể khả năng quản lý tài liệu của bạn.
 
-### Câu hỏi thường gặp về cột bảng đánh dấu trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Điều kiện tiên quyết để sử dụng tính năng "Dấu trang cho cột bảng" trong Aspose.Words cho .NET là gì?
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Nó cho phép bạn tạo, sửa đổi và chuyển đổi tài liệu mà không cần cài đặt Microsoft Word.
 
-Đáp: Để sử dụng tính năng "Dấu trang cho các cột trong bảng" trong Aspose.Words cho .NET, bạn cần có kiến thức cơ bản về ngôn ngữ C#. Bạn cũng cần có môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+### Làm cách nào để cài đặt Aspose.Words cho .NET?
+ Bạn có thể tải xuống Aspose.Words cho .NET từ[trang mạng](https://releases.aspose.com/words/net/). Thực hiện theo các hướng dẫn cài đặt được cung cấp.
 
-#### Hỏi: Làm cách nào để tạo bảng có các cột trong tài liệu Word bằng Aspose.Words cho .NET?
+### Tôi có thể sử dụng Aspose.Words cho .NET với các ngôn ngữ lập trình khác không?
+Có, Aspose.Words for .NET có thể được sử dụng với bất kỳ ngôn ngữ nào được .NET hỗ trợ, bao gồm C#, VB.NET và F#.
 
- Trả lời: Để tạo bảng có các cột trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`DocumentBuilder` đối tượng chèn ô và nội dung vào bảng. Đây là một mã mẫu:
+### Làm cách nào tôi có thể nhận được hỗ trợ cho Aspose.Words cho .NET?
+ Bạn có thể nhận được hỗ trợ từ cộng đồng Aspose và các chuyên gia bằng cách truy cập[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8).
 
-```csharp
-builder. StartTable();
-
-builder. InsertCell();
-builder.Write("Contents of cell 1 of column 1");
-
-builder. InsertCell();
-builder.Write("Contents of cell 2 of column 2");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.Write("Contents of cell 1 of column 2");
-
-builder. InsertCell();
-builder.Write("Contents of cell 2 of column 2");
-
-builder. EndRow();
-
-builder. EndTable();
-```
-
-#### Câu hỏi: Làm cách nào để đánh dấu một cột trong bảng bằng Aspose.Words cho .NET?
-
- Trả lời: Để tạo dấu trang trên một cột trong bảng bằng Aspose.Words cho .NET, bạn có thể sử dụng`StartBookmark` phương pháp của`DocumentBuilder` đối tượng để bắt đầu đánh dấu trên một cột trong bảng cụ thể. Đây là một mã mẫu:
-
-```csharp
-builder.StartBookmark("MyBookmark");
-```
-
-#### Câu hỏi: Làm cách nào để truy cập nội dung cột trong bảng từ dấu trang bằng Aspose.Words cho .NET?
-
-Trả lời: Để truy cập nội dung của một cột trong bảng từ dấu trang bằng Aspose.Words cho .NET, bạn có thể lặp qua tất cả dấu trang trong tài liệu, kiểm tra xem dấu trang có phải là một cột hay không và sử dụng chỉ mục của cột để truy cập nội dung của cột đó. Đây là một mã mẫu:
-
-```csharp
-foreach(Bookmark bookmark in doc.Range.Bookmarks)
-{
-     if (bookmark.IsColumn)
-     {
-         if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-         {
-             string content = row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar);
-             // Làm điều gì đó với nội dung của cột...
-         }
-     }
-}
-```
-
-#### Câu hỏi: Có giới hạn về số lượng cột tôi có thể tạo trong bảng có dấu trang cột không?
-
-Trả lời: Không có giới hạn cụ thể về số lượng cột bạn có thể tạo trong bảng có dấu trang cột bằng Aspose.Words cho .NET. Giới hạn chủ yếu phụ thuộc vào tài nguyên có sẵn trên hệ thống của bạn và thông số kỹ thuật của định dạng tệp Word bạn đang sử dụng. Tuy nhiên, không nên tạo số lượng cột quá lớn vì điều này có thể ảnh hưởng đến hiệu suất và khả năng đọc của tài liệu cuối cùng.
+### Có phiên bản dùng thử của Aspose.Words cho .NET không?
+ Có, bạn có thể dùng thử miễn phí từ[đây](https://releases.aspose.com/).

@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 渲染文档时设置 True Type 字体文件夹。按照本分步指南，您可以轻松指定包含 True Type 字体的自定义文件夹，以便在渲染文档时使用。Aspose.Words 提供了强大而灵活的 API，用于处理文档中的字体文字。有了这些知识，您可以根据特定需求控制和自定义渲染文档时使用的字体。
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 渲染文档时设置 True Type 字体文件夹。按照本分步指南，您可以轻松指定包含 True Type 字体的自定义文件夹，以便在渲染文档时使用。Aspose.Words 提供强大而灵活的 API，用于处理文档中的字体文字。有了这些知识，您可以根据特定需求控制和自定义渲染文档时使用的字体。
 
 ### 常见问题解答
 
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 
 #### 问：我可以在 Aspose.Words 中指定多个 TrueType 字体文件夹吗？
 
-答：是的，您可以使用 Aspose.Words 中的以下命令指定多个 TrueType 字体文件夹：`SetTrueTypeFontsFolder`方法`Fonts`带有文件夹位置列表的类。
+答：是的，您可以使用 Aspose.Words 中的`SetTrueTypeFontsFolder`方法`Fonts`带有文件夹位置列表的类。
 
 #### 问：如何检查在 Aspose.Words 中配置的 TrueType 字体文件夹？
 

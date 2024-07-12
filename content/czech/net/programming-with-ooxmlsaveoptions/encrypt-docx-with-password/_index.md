@@ -2,7 +2,7 @@
 title: Šifrovat Docx pomocí hesla
 linktitle: Šifrovat Docx pomocí hesla
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se zašifrovat soubor DOCX pomocí hesla pomocí Aspose.Words for .NET. Kompletní návod pro zabezpečení dokumentů.
+description: Naučte se zašifrovat soubor DOCX pomocí hesla pomocí Aspose.Words for .NET. Kompletní výukový program pro zabezpečení dokumentů.
 type: docs
 weight: 10
 url: /cs/net/programming-with-ooxmlsaveoptions/encrypt-docx-with-password/

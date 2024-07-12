@@ -103,7 +103,7 @@ In dit voorbeeld slaan we een kopie van het document op met de tekst "_v2" achte
 
 ### Kan ik revisies programmatisch accepteren of afwijzen?
 
- Ja, u kunt revisies accepteren of afwijzen met Aspose.Words voor Java. Maak gebruik van de`acceptAllRevisions` En`rejectAllRevisions` methoden om revisies te beheren.
+ Ja, u kunt revisies accepteren of afwijzen met Aspose.Words voor Java. Maak gebruik van de`acceptAllRevisions`En`rejectAllRevisions` methoden om revisies te beheren.
 
 ### Is het mogelijk om meerdere versies van een document te maken?
 

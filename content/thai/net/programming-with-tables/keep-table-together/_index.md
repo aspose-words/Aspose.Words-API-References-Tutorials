@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// เราจำเป็นต้องเปิดใช้งาน KeepWithNext สำหรับทุกย่อหน้าในตารางเพื่อป้องกันไม่ให้แตกข้ามหน้า
-	// ยกเว้นย่อหน้าสุดท้ายในแถวสุดท้ายของตาราง
+	//ยกเว้นย่อหน้าสุดท้ายในแถวสุดท้ายของตาราง
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

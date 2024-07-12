@@ -2,48 +2,84 @@
 title: A diagram adatcímkéjének testreszabása
 linktitle: A diagram adatcímkéjének testreszabása
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan adhat hozzá és testreszabhat adatcímkéket egy diagramhoz az Aspose.Words for .NET használatával, hogy további információkat nyújtson az adatpontokról.
+description: A lépésenkénti útmutatóból megtudhatja, hogyan szabhatja testre a diagram adatcímkéit az Aspose.Words for .NET használatával. Tökéletes .NET fejlesztőknek.
 type: docs
 weight: 10
 url: /hu/net/programming-with-charts/chart-data-label/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan lehet adatcímkéket hozzáadni és testreszabni egy diagramban az Aspose.Words for .NET használatával. Az adatcímkék további információkat nyújtanak a diagram adatpontjairól.
+Dinamikus és testreszabott dokumentumfeldolgozási képességekkel szeretné feldobni .NET-alkalmazásait? Az Aspose.Words for .NET talán csak a válasz! Ebben az útmutatóban részletesen bemutatjuk a diagram adatcímkéinek testreszabását az Aspose.Words for .NET használatával, amely egy hatékony könyvtár Word-dokumentumok létrehozásához, módosításához és konvertálásához. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az oktatóanyag végigvezeti Önt minden lépésen, biztosítva, hogy megértse, hogyan használhatja hatékonyan ezt az eszközt.
 
 ## Előfeltételek
-Az oktatóanyag követéséhez a következőkre van szükség:
 
-- Aspose.Words for .NET könyvtár telepítve.
-- C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+1. Visual Studio: Telepítse a Visual Studio 2019 vagy újabb verzióját.
+2. .NET-keretrendszer: Győződjön meg arról, hogy rendelkezik a .NET-keretrendszer 4.0-s vagy újabb verziójával.
+3.  Aspose.Words for .NET: Töltse le és telepítse az Aspose.Words for .NET programot a[letöltési link](https://releases.aspose.com/words/net/).
+4. Alapvető C# ismerete: A C# programozás ismerete elengedhetetlen.
+5.  Érvényes licenc: Szerezzen be a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) vagy vásároljon egyet a[vásárlás link](https://purchase.aspose.com/buy).
+
+## Névterek importálása
+
+A kezdéshez importálnia kell a szükséges névtereket a C# projektbe. Ez a lépés kulcsfontosságú, mivel biztosítja, hogy hozzáférjen az Aspose.Words által biztosított összes osztályhoz és metódushoz.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Charts;
 ```
 
-## 2. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
- Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder`tiltakozik a dokumentummal való munkavégzésre.
+## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
+
+ Word-dokumentumok létrehozásához és kezeléséhez először inicializálnunk kell a`Document` osztály és a`DocumentBuilder` tárgy.
 
 ```csharp
+// A dokumentumkönyvtár elérési útja
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. lépés: Diagram beszúrása és konfigurálása
- Szúrjon be egy diagramot a dokumentumba a gombbal`InsertChart` módszere a`DocumentBuilder` tárgy. Állítsa be a kívánt diagramtípust és méreteket.
+### Magyarázat
+
+- Dokumentumdokumentum: Létrehoz egy új példányt a Dokumentum osztályból.
+- DocumentBuilder builder: A DocumentBuilder segít tartalmat beszúrni a Document objektumba.
+
+## 2. lépés: Helyezzen be egy diagramot
+
+ Ezután beszúrunk egy oszlopdiagramot a dokumentumba a`DocumentBuilder` tárgy.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 4. lépés: Az adatcímkék testreszabása
-Hozzáférhet a diagramsorozatok adatcímkegyűjteményéhez, és módosíthatja a különböző tulajdonságokat az adatcímkék megjelenésének testreszabásához.
+### Magyarázat
+
+- Alakzat alakja: A diagramot alakzatként jeleníti meg a dokumentumban.
+- builder.InsertChart(ChartType.Bar, 432, 252): Beszúr egy oszlopdiagramot meghatározott méretekkel.
+
+## 3. lépés: Nyissa meg a diagramsorozatot
+
+Az adatcímkék testreszabásához először el kell érnünk a diagram sorozatait.
 
 ```csharp
 ChartSeries series0 = shape.Chart.Series[0];
+```
+
+### Magyarázat
+
+- ChartSeries series0: Lekéri a diagram első sorozatát, amelyet személyre szabunk.
+
+## 4. lépés: Az adatcímkék testreszabása
+
+Az adatcímkék testreszabhatók különféle információk megjelenítéséhez. A címkéket úgy konfiguráljuk, hogy a jelmagyarázat kulcsát, a sorozat nevét és értékét mutassák, miközben elrejtik a kategória nevét és százalékát.
+
+```csharp
 ChartDataLabelCollection labels = series0.DataLabels;
 labels.ShowLegendKey = true;
 labels.ShowLeaderLines = true;
@@ -54,51 +90,46 @@ labels.ShowValue = true;
 labels.Separator = "/";
 ```
 
+### Magyarázat
+
+- ChartDataLabelCollection címkék: A sorozat adatcímkéit éri el.
+- címkék.ShowLegendKey: Megjeleníti a jelmagyarázat kulcsát.
+- labels.ShowLeaderLines: Megjeleníti az adatcímkék vezető vonalait, amelyek messze az adatpontokon kívül helyezkednek el.
+- labels.ShowCategoryName: Elrejti a kategória nevét.
+- címkék.ShowPercentage: Elrejti a százalékos értéket.
+- labels.ShowSeriesName: Megjeleníti a sorozat nevét.
+- címkék.ShowValue: Az adatpontok értékét jeleníti meg.
+- címkék.Elválasztó: Az adatcímkék elválasztóját állítja be.
+
 ## 5. lépés: Mentse el a dokumentumot
- Mentse a dokumentumot a megadott könyvtárba a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithCharts.ChartDataLabel.docx" néven mentjük.
+
+Végül mentse a dokumentumot a megadott könyvtárba.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
-### Példa a Chart Data Label forráskódjához az Aspose.Words for .NET használatával 
+### Magyarázat
 
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = shape.Chart.Series[0];
-	ChartDataLabelCollection labels = series0.DataLabels;
-	labels.ShowLegendKey = true;
-	// Alapértelmezés szerint, amikor adatcímkéket ad hozzá egy kördiagram adatpontjaihoz, a vezetővonalak megjelennek azokhoz az adatcímkékhez, amelyek
-	// messze az adatpontok végén kívül helyezkednek el. A vezetővonalak vizuális kapcsolatot hoznak létre az adatcímke és annak között
-	// megfelelő adatpont.
-	labels.ShowLeaderLines = true;
-	labels.ShowCategoryName = false;
-	labels.ShowPercentage = false;
-	labels.ShowSeriesName = true;
-	labels.ShowValue = true;
-	labels.Separator = "/";
-	labels.ShowValue = true;
-	doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
-```
-
-Ez az! Sikeresen hozzáadott és testreszabott adatcímkéket egy diagramhoz az Aspose.Words for .NET használatával.
+- doc.Save: Menti a dokumentumot a megadott néven a megadott könyvtárba.
 
 ## Következtetés
-Ebből az oktatóanyagból megtanulta, hogyan adhat hozzá és testreszabhat adatcímkéket egy diagramhoz az Aspose.Words for .NET használatával. A lépésenkénti útmutatót követve beszúrhat egy diagramot, hozzáférhet az adatcímkék gyűjteményéhez, és módosíthatja a tulajdonságokat az adatcímkék megjelenésének testreszabásához. Az Aspose.Words for .NET hatékony API-t biztosít a Word-dokumentumokkal és diagramokkal végzett szövegfeldolgozáshoz, amely lehetővé teszi, hogy tetszetős és informatív diagramokat készítsen testreszabott adatcímkékkel.
 
-### GYIK
+ Gratulálunk! Sikeresen testreszabta a diagram adatcímkéit az Aspose.Words for .NET használatával. Ez a könyvtár robusztus megoldást kínál a Word-dokumentumok programozott kezelésére, megkönnyítve a fejlesztők számára a kifinomult és dinamikus dokumentumfeldolgozó alkalmazások létrehozását. Merüljön el a[dokumentáció](https://reference.aspose.com/words/net/) további funkciók és képességek felfedezéséhez.
 
-#### Q1. Mik azok az adatcímkék a diagramban?
-A diagramon lévő adatcímkék további információkat nyújtanak a diagramon szereplő adatpontokról. A diagram típusától és konfigurációjától függően értékeket, kategóriákat, sorozatneveket, százalékokat vagy egyéb releváns részleteket jeleníthetnek meg.
+## GYIK
 
-#### Q2. Testreszabhatom az adatcímkék megjelenését?
-Igen, testreszabhatja az adatcímkék megjelenését a diagramon. Az Aspose.Words for .NET lehetőséget biztosít az adatcímkék különféle tulajdonságainak módosítására, például a jelmagyarázat kulcsok, vezetővonalak, kategórianevek, sorozatnevek, értékek és egyebek megjelenítésére. Beállíthat elválasztókat és formázhatja is a címkéket, hogy megfeleljenek az egyedi követelményeknek.
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony dokumentumfeldolgozó könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, módosítását és konvertálását.
 
-#### Q3. Hozzáadhatok adatcímkéket bármilyen diagramtípushoz?
-Igen, adatcímkéket adhat hozzá különféle típusú diagramokhoz, például oszlopdiagramokhoz, kördiagramokhoz, vonaldiagramokhoz és egyebekhez. Az adatcímkék hozzáadásának és testreszabásának folyamata kissé eltérhet a diagram típusától és a használt könyvtártól vagy eszköztől függően.
+### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
+ Letöltheti és telepítheti a[letöltési link](https://releases.aspose.com/words/net/). Kövesse a mellékelt telepítési utasításokat.
+
+### Kipróbálhatom ingyenesen az Aspose.Words for .NET-et?
+ Igen, kaphat a[ingyenes próbaverzió](https://releases.aspose.com/) vagy a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) termék értékeléséhez.
+
+### Az Aspose.Words for .NET kompatibilis a .NET Core-al?
+Igen, az Aspose.Words for .NET kompatibilis a .NET Core, a .NET Standard és a .NET Framework programmal.
+
+### Hol kaphatok támogatást az Aspose.Words for .NET-hez?
+ Meglátogathatja a[támogatói fórum](https://forum.aspose.com/c/words/8) segítségért és segítségért az Aspose közösségtől és szakértőktől.

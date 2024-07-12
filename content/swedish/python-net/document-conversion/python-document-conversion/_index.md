@@ -44,7 +44,7 @@ Biblioteket erbjuder omfattande formateringsalternativ för text, tabeller, bild
 #### Stöd för sidhuvuden, sidfötter och sidinställningar
 Aspose.Words gör att du kan bevara sidhuvuden, sidfötter och sidinställningar under konverteringsprocessen, vilket säkerställer dokumentkonsistens.
 
-## Installera Aspose.Words för Python
+## Installerar Aspose.Words för Python
 
 ### Förutsättningar
 

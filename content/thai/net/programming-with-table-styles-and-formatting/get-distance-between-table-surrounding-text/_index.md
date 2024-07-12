@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## ขั้นตอนที่ 3: หาระยะห่างระหว่างตารางกับข้อความโดยรอบ
- เพื่อให้ได้ระยะห่างระหว่างตารางและข้อความโดยรอบ เราจำเป็นต้องเข้าถึงตารางในเอกสารโดยใช้`GetChild()` วิธีการและ`NodeType.Table` คุณสมบัติ. จากนั้นเราสามารถแสดงระยะทางที่แตกต่างกันโดยใช้คุณสมบัติอาร์เรย์`DistanceTop`, `DistanceBottom`, `DistanceRight` และ`DistanceLeft`.
+ เพื่อให้ได้ระยะห่างระหว่างตารางและข้อความโดยรอบ เราจำเป็นต้องเข้าถึงตารางในเอกสารโดยใช้`GetChild()` วิธีการและ`NodeType.Table` คุณสมบัติ. จากนั้นเราสามารถแสดงระยะทางที่แตกต่างกันโดยใช้คุณสมบัติอาร์เรย์`DistanceTop`, `DistanceBottom`, `DistanceRight`และ`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

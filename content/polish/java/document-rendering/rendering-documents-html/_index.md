@@ -86,7 +86,7 @@ Tak, Aspose.Words for Java może być używany zarówno w projektach osobistych,
 
 ### Czy Aspose.Words for Java można łatwo zintegrować z istniejącymi projektami Java?
 
-Absolutnie! Aspose.Words for Java został zaprojektowany z myślą o łatwej integracji z projektami Java. Interfejs API jest dobrze udokumentowany, dzięki czemu rozpoczęcie pracy jest proste.
+Absolutnie! Aspose.Words for Java został zaprojektowany z myślą o łatwej integracji z projektami Java. Interfejs API jest dobrze udokumentowany, co ułatwia rozpoczęcie pracy.
 
 ### Czy istnieją jakieś ograniczenia podczas renderowania złożonych dokumentów do formatu HTML?
 

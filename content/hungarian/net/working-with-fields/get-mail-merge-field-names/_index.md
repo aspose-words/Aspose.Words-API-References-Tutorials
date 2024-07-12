@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Töltse be a dokumentumot.
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 
-// Egyesítési mezőnevek lekérése.
+// Az egyesítési mezők neveinek lekérése.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 
 // Az egyesítési mezők számának megjelenítése.

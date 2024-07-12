@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
-このコードはインスタンスを作成します`HtmlSaveOptions`そして、`ResolveFontNames`オプション`true`HTMLに変換するときにフォント名が見つからない場合の解決に役立ちます。また、`PrettyFormat`オプションは`true`適切にフォーマットされた HTML コードを取得します。
+このコードはインスタンスを作成します`HtmlSaveOptions`そして、`ResolveFontNames`オプション`true`HTMLに変換するときにフォント名が見つからない場合の解決に役立ちます。また、`PrettyFormat`オプションは`true`きれいにフォーマットされた HTML コードを取得します。
 
 ## ステップ4: ドキュメントをHTMLに変換して保存する
 

@@ -7,7 +7,7 @@ type: docs
 weight: 1610
 url: /it/net/programming-with-htmlfixedsaveoptions/
 ---
-tutorial Aspose.Words per .NET sono progettati per aiutarti a padroneggiare l'utilizzo della libreria Aspose.Words nei tuoi progetti .NET. Uno di questi tutorial, intitolato "Elaborazione delle parole con HtmlFixedSaveOptions", ti guida attraverso i passaggi necessari per convertire un documento Word in HTML fisso utilizzando le opzioni di salvataggio di HtmlFixedSaveOptions. Questo tutorial spiega come configurare le opzioni di salvataggio, come specificare le impostazioni di layout e come gestire immagini e caratteri durante la conversione. Imparerai anche come personalizzare le opzioni di backup per soddisfare le tue esigenze specifiche.
+I tutorial Aspose.Words per .NET sono progettati per aiutarti a padroneggiare l'utilizzo della libreria Aspose.Words nei tuoi progetti .NET. Uno di questi tutorial, intitolato "Elaborazione delle parole con HtmlFixedSaveOptions", ti guida attraverso i passaggi necessari per convertire un documento Word in HTML fisso utilizzando le opzioni di salvataggio di HtmlFixedSaveOptions. Questo tutorial spiega come configurare le opzioni di salvataggio, come specificare le impostazioni di layout e come gestire immagini e caratteri durante la conversione. Imparerai anche come personalizzare le opzioni di backup per soddisfare le tue esigenze specifiche.
 
  ## Tutorial
 | Titolo | Descrizione |

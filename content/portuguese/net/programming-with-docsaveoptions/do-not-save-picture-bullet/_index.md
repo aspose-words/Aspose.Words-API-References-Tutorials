@@ -2,80 +2,96 @@
 title: Não salve o marcador da imagem
 linktitle: Não salve o marcador da imagem
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como desabilitar o salvamento de marcadores de imagem em documentos do Word usando Aspose.Words for .NET.
+description: Aprenda como lidar com marcadores de imagens no Aspose.Words for .NET com nosso guia passo a passo. Simplifique o gerenciamento de documentos e crie documentos profissionais do Word sem esforço.
 type: docs
 weight: 10
 url: /pt/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
+## Introdução
 
-Marcadores de imagem são um recurso comumente usado em documentos do Word para adicionar marcadores personalizados. No entanto, em alguns casos pode ser necessário desabilitar o registro de marcadores de imagem ao manipular documentos usando a Biblioteca Aspose.Words para .NET. Neste guia passo a passo, explicaremos como usar o código-fonte Aspose.Words C# para .NET para desativar o salvamento de marcadores de imagem usando as opções de salvamento DocSaveOptions.
+Olá, colegas desenvolvedores! Você já trabalhou com documentos do Word e se viu envolvido nas complexidades de salvar marcadores de imagens? É um daqueles pequenos detalhes que podem fazer uma grande diferença na aparência final do seu documento. Bem, hoje estou aqui para guiá-lo através do processo de manipulação de marcadores de imagem no Aspose.Words for .NET, focando principalmente no recurso "Não salvar marcador de imagem". Pronto para mergulhar? Vamos!
 
-## Compreendendo a biblioteca Aspose.Words
+## Pré-requisitos
 
-Antes de mergulhar no código, é importante entender a biblioteca Aspose.Words para .NET. Aspose.Words é uma biblioteca poderosa para criar, editar, converter e proteger documentos do Word em diferentes plataformas, incluindo .NET. Oferece diversos recursos para manipulação de documentos, como inserção de texto, alteração de formatação, adição de seções e muito mais.
+Antes de começarmos a mexer no código, há algumas coisas que você precisa ter em mente:
 
-## Passo 1: Configurando o Diretório de Documentos
+1.  Aspose.Words for .NET: Certifique-se de ter esta poderosa biblioteca instalada. Se você ainda não tem, pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: um ambiente de desenvolvimento .NET funcional, como o Visual Studio.
+3. Conhecimento básico de C#: Alguma familiaridade com programação C# será útil.
+4. Documento de amostra: um documento do Word com marcadores de imagem para fins de teste.
 
-O primeiro passo é definir o diretório onde seus documentos estão localizados. Você deve especificar o caminho completo do diretório. Por exemplo :
+## Importar namespaces
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-Certifique-se de substituir "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho real para o diretório de documentos.
-
-## Etapa 2: Carregar o documento com marcadores de imagem
-
-Em seguida, você precisa carregar o documento com marcadores de imagem. Use a classe Document para carregar o documento de um arquivo. Por exemplo :
+Para começar, você precisa importar os namespaces necessários. Isso é bastante simples, mas crucial para acessar as funcionalidades do Aspose.Words.
 
 ```csharp
-Document doc = new Document(dataDir + "Image bullet points.docx");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Neste exemplo estamos carregando o documento do arquivo "Image bullet points.docx"
+Vamos dividir o processo em etapas gerenciáveis. Dessa forma, você pode acompanhar facilmente e entender cada parte do código.
 
-  localizado no diretório de documentos.
+## Etapa 1: configure seu diretório de documentos
 
-## Etapa 3: configurar opções de gravação
-
-Agora vamos configurar as opções de salvamento do nosso documento. Use a classe DocSaveOptions para especificar configurações de salvamento. Por exemplo :
-
-```csharp
-DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
-```
-
-Neste exemplo, criamos um novo objeto DocSaveOptions e definimos a propriedade SavePictureBullet como false para desabilitar o salvamento de marcadores de imagem.
-
-## Etapa 4: ativar o recurso "Não salvar marcador de imagem"
-
-Para habilitar o recurso "Do Not Save Picture Bullet", já configuramos as opções de salvamento com SavePictureBullet definido como falso. Isso garante que os marcadores da imagem não sejam salvos no documento final.
-
-## Etapa 5: salve o documento
-
-Finalmente, você pode salvar o documento usando o método Save da classe Document. Especifique o caminho completo para o arquivo e o nome do arquivo desejado. Por exemplo :
-
-```csharp
-doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
-```
-
-Certifique-se de substituir “dataDir” pelo caminho do diretório para seus documentos.
-
-## Exemplo de código-fonte para opções de salvamento DocSaveOptions com funcionalidade "Do Not Save Picture Bullet" usando Aspose.Words for .NET
+Em primeiro lugar, você precisa especificar o caminho para o diretório de documentos. É aqui que seus documentos do Word são armazenados e onde você salvará os arquivos modificados.
 
 ```csharp
 // Caminho para o seu diretório de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Substituir`"YOUR DOCUMENTS DIRECTORY"` com o caminho real no seu sistema onde seus documentos estão localizados.
+
+## Etapa 2: carregar o documento com marcadores de imagem
+
+A seguir, você carregará o documento do Word que contém marcadores de imagem. Este documento será modificado para remover os marcadores da imagem quando salvo.
+
+```csharp
 // Carregue o documento com marcadores de imagem
 Document doc = new Document(dataDir + "Image bullet points.docx");
+```
 
+ Certifique-se de que o arquivo`"Image bullet points.docx"` existe no diretório especificado.
+
+## Etapa 3: configurar opções de salvamento
+
+Agora, vamos configurar as opções de salvamento para especificar que os marcadores da imagem não devem ser salvos. É aqui que a mágica acontece!
+
+```csharp
 // Configure as opções de salvamento com o recurso "Não salvar marcador de imagem"
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
+```
 
+ Definindo`SavePictureBullet` para`false`, você instrui o Aspose.Words a não salvar marcadores de imagem no documento de saída.
+
+## Etapa 4: salve o documento
+
+Finalmente, salve o documento com as opções especificadas. Isso irá gerar um novo arquivo onde os marcadores da imagem não estão incluídos.
+
+```csharp
 // Salve o documento com as opções especificadas
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
+ O novo arquivo,`"WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx"`, será salvo em seu diretório de documentos.
+
 ## Conclusão
 
-Neste guia, abordamos como desabilitar o salvamento de marcadores de imagem em um documento usando a biblioteca Aspose.Words para .NET. Seguindo as etapas fornecidas e usando o código-fonte C# fornecido, você pode aplicar facilmente essa funcionalidade em seu aplicativo C#. Desativar o salvamento de marcadores de imagem pode ser útil em algumas situações para preservar a estrutura e a formatação do documento sem salvar os marcadores de imagem.
+E aí está! Com apenas algumas linhas de código, você configurou com sucesso o Aspose.Words for .NET para omitir marcadores de imagem ao salvar um documento. Isso pode ser extremamente útil quando você precisa de uma aparência limpa e consistente, sem a distração dos marcadores de imagem.
+
+## Perguntas frequentes
+
+### O que é Aspose.Words para .NET?
+Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e converter documentos Word em aplicativos .NET.
+
+### Posso usar esse recurso para outros tipos de marcadores?
+Não, esse recurso específico é para marcadores de imagens. No entanto, Aspose.Words oferece amplas opções para lidar com outros tipos de marcadores.
+
+### Onde posso obter suporte para Aspose.Words?
+ Você pode obter suporte do[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### Existe uma avaliação gratuita do Aspose.Words for .NET?
+ Sim, você pode obter um teste gratuito[aqui](https://releases.aspose.com/).
+
+### Como posso adquirir uma licença do Aspose.Words for .NET?
+ Você pode comprar uma licença no[Aspose Loja](https://purchase.aspose.com/buy).

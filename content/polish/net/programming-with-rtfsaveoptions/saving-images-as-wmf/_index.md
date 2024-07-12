@@ -33,7 +33,7 @@ RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 
  W tym kroku konfigurujemy opcje tworzenia kopii zapasowych RTF. Tworzymy nowe`RtfSaveOptions` obiekt i ustaw`SaveImagesAsWmf`własność do`true`. To mówi Aspose.Words, aby zapisywał obrazy dokumentów jako WMF podczas konwersji do RTF.
 
-## Krok 4: Zapisanie dokumentu
+## Krok 4: Zapisywanie dokumentu
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);

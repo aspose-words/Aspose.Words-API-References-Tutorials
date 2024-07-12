@@ -9,7 +9,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## 소개
 
-안녕하세요! 문서 자동화의 세계에 뛰어들고 있다면 바로 이곳에 오셨습니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서에 TC(목차) 필드를 삽입하는 방법을 살펴보겠습니다. 저를 믿으세요. 이 튜토리얼이 끝나면 여러분은 Word 문서에서 마법사가 주문을 거는 듯한 느낌을 받게 될 것입니다. 시작할 준비가 되셨나요? 해보자!
+안녕하세요! 문서 자동화의 세계에 뛰어들고 있다면 바로 이곳에 오셨습니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서에 TC(목차) 필드를 삽입하는 방법을 살펴보겠습니다. 저를 믿으세요. 이 튜토리얼이 끝나면 여러분은 Word 문서에서 마법사가 주문을 거는 듯한 느낌을 받게 될 것입니다. 시작할 준비가 되셨나요? 이렇게 해보자!
 
 ## 전제조건
 
@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## 2단계: 새 문서 만들기
 
- 자, 새 Word 문서를 만드는 것부터 시작해 보겠습니다. 우리는`Document` 그리고`DocumentBuilder` Aspose.Words의 클래스를 사용하여 작업을 진행하세요.
+ 자, 새 Word 문서를 만드는 것부터 시작해 보겠습니다. 우리는`Document`그리고`DocumentBuilder` Aspose.Words의 클래스를 사용하여 작업을 진행하세요.
 
 ```csharp
 // 문서 디렉터리의 경로입니다.

@@ -37,7 +37,7 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
 
 在此步驟中，我們配置映像的備份選項。我們創建一個新的`ImageSaveOptions`物件指定所需的儲存格式，此處「Png」表示 PNG 格式。我們也定義了要包含在影像中的頁面、黑白色彩模式和索引 1 bpp 像素格式。
 
-## 步驟 4：備份映像
+## 第 4 步：備份映像
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);

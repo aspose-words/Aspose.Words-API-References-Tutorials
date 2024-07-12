@@ -62,7 +62,7 @@ Ebben az oktatóanyagban azt láthattuk, hogyan távolíthat el fejléc- és lá
 
 #### K: Hogyan állíthat be dokumentumkönyvtárat az Aspose.Words for .NET-ben?
 
- V: A dokumentumokat tartalmazó könyvtár elérési útjának beállításához le kell cserélnie`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal. Íme, hogyan kell csinálni:
+V: A dokumentumokat tartalmazó könyvtár elérési útjának beállításához le kell cserélnie`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal. Íme, hogyan kell csinálni:
 
 ```csharp
 // A dokumentumkönyvtár elérési útja

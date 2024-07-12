@@ -76,7 +76,7 @@ doc.metadata["Keywords"] = "Python, Aspose.Words, Metadata"
 
 ## Mengotomatiskan Pembaruan Metadata
 
-Pembaruan metadata yang sering dilakukan dapat diotomatiskan menggunakan Aspose.Words. Misalnya, Anda dapat memperbarui properti "Terakhir Dimodifikasi Oleh" secara otomatis:
+Pembaruan metadata yang sering dilakukan dapat diotomatisasi menggunakan Aspose.Words. Misalnya, Anda dapat memperbarui properti "Terakhir Dimodifikasi Oleh" secara otomatis:
 
 ```python
 # Automatically update "Last Modified By"

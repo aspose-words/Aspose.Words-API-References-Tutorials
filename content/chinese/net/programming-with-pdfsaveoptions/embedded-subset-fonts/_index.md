@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 步骤 3：配置保存为 PDF 选项
+## 步骤 3：配置另存为 PDF 选项
 
 要创建仅包含文档中使用的字体子集的 PDF，我们需要配置`PdfSaveOptions`对象与`EmbedFullFonts`属性设置为`false`.
 

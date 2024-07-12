@@ -2,102 +2,109 @@
 title: Word文書に署名する
 linktitle: Word文書に署名する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書にデジタル署名する方法を学習します。
+description: このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書に署名する方法を学習します。文書を簡単に保護します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-digital-signatures/sign-document/
 ---
-このチュートリアルでは、Aspose.Words for .NET でドキュメント署名機能を使用する手順を説明します。この機能を使用すると、証明書を使用して Word ドキュメントにデジタル署名できます。以下の手順に従ってください。
+## 導入
 
-## ステップ1: 証明書の読み込み
+今日のデジタル世界では、ドキュメントのセキュリティ保護がこれまで以上に重要になっています。デジタル署名は、ドキュメントの信頼性と整合性を保証する手段です。Aspose.Words for .NET を使用してプログラムで Word ドキュメントに署名したい場合は、このガイドが役に立ちます。このガイドでは、プロセス全体をステップごとに、シンプルでわかりやすい方法で説明します。
 
-まず、CertificateHolder クラスを使用して署名証明書を読み込みます。
+## 前提条件
+
+コードに進む前に、準備しておくべきことがいくつかあります。
+
+1.  Aspose.Words for .NET: 最新バージョンのAspose.Words for .NETがインストールされていることを確認してください。ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. .NET 環境: .NET 開発環境 (Visual Studio など) が設定されていることを確認します。
+3. デジタル証明書: ドキュメントに署名するためのデジタル証明書 (.pfx ファイルなど) を取得します。
+4. 署名する文書: 署名する Word 文書を用意します。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートする必要があります。プロジェクトに次の using ディレクティブを追加します。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.Security.Cryptography.X509Certificates;
+```
+
+それでは、プロセスを管理しやすいステップに分解してみましょう。
+
+## ステップ1: デジタル証明書を読み込む
+
+最初のステップは、ファイルからデジタル証明書をロードすることです。この証明書は、ドキュメントに署名するために使用されます。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+//デジタル証明書をロードします。
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-証明書と関連するパスワードへの正しいパスを必ず指定してください。
+### 説明
 
-## ステップ2: 文書に署名する
+- `dataDir`: これは証明書とドキュメントが保存されるディレクトリです。
+- `CertificateHolder.Create` : このメソッドは指定されたパスから証明書を読み込みます。`"YOUR DOCUMENT DIRECTORY"`ディレクトリへの実際のパスと`"morzal.pfx"`証明書ファイルの名前を入力します。`"aw"`証明書のパスワードです。
 
-DigitalSignatureUtil クラスを使用してドキュメントに署名します。
+## ステップ2: Word文書を読み込む
 
-```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-	certHolder);
-```
-
-ソース ドキュメントと署名済みドキュメントの正しいパスを必ず指定してください。
-
-### Aspose.Words for .NET を使用してドキュメントに署名するためのサンプル ソース コード
-
-Aspose.Words for .NET を使用してドキュメントに署名するための完全なソース コードは次のとおりです。
+次に、署名する Word 文書を読み込みます。
 
 ```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-		certHolder);
-
+//署名する文書を読み込みます。
+Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-これらの手順に従うと、Aspose.Words for .NET を使用して Word 文書に簡単に署名できます。
+### 説明
+
+- `Document` : このクラスはWord文書を表します。`"Digitally signed.docx"`ドキュメントの名前を入力します。
+
+## ステップ3: 文書に署名する
+
+さて、`DigitalSignatureUtil.Sign`文書に署名する方法。
+
+```csharp
+//文書に署名してください。
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx", certHolder);
+```
+
+### 説明
+
+- `DigitalSignatureUtil.Sign`: このメソッドは、読み込まれた証明書を使用してドキュメントに署名します。最初のパラメータは元のドキュメントへのパス、2 番目は署名されたドキュメントへのパス、3 番目は証明書の所有者です。
+
+## ステップ4: 署名した文書を保存する
+
+最後に、署名された文書を指定された場所に保存します。
+
+```csharp
+//署名された文書を保存します。
+doc.Save(dataDir + "Document.Signed.docx");
+```
+
+### 説明
+
+- `doc.Save` : このメソッドは署名された文書を保存します。`"Document.Signed.docx"`署名した文書の希望する名前を入力します。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NETのドキュメント署名機能について説明しました。署名証明書を読み込み、`DigitalSignatureUtil.Sign`この方法を使用すると、Word 文書にデジタル署名することができます。文書に署名すると認証が提供され、文書の内容の整合性が保証されるため、安全で信頼できる文書管理に役立つ機能となります。
+これで完了です。Aspose.Words for .NET を使用して Word 文書に署名できました。これらの簡単な手順に従うことで、文書が安全に署名され、認証されることを保証できます。デジタル署名は文書の整合性を保護する強力なツールであるため、必要に応じて使用してください。
 
-### サインワード文書に関するFAQ
+## よくある質問
 
-#### Q: Aspose.Words for .NET のドキュメント署名とは何ですか?
+### デジタル署名とは何ですか?
+デジタル署名は、署名者の身元を認証し、文書が改ざんされていないことを確認するために使用できる電子形式の署名です。
 
-A: Aspose.Words for .NET でのドキュメント署名とは、証明書を使用して Word ドキュメントにデジタル署名するプロセスを指します。この機能は、ドキュメントにデジタル署名を追加し、ドキュメントの内容の信頼性、整合性、および否認不可性を提供します。
+### なぜデジタル証明書が必要なのですか?
+デジタル署名を作成するには、デジタル証明書が必要です。デジタル証明書には公開鍵と証明書所有者の ID が含まれており、署名を検証する手段を提供します。
 
-#### Q: Aspose.Words for .NET で署名証明書を読み込むにはどうすればいいですか?
+### 署名には任意の .pfx ファイルを使用できますか?
+はい、.pfx ファイルに有効なデジタル証明書が含まれており、アクセスするためのパスワードを持っている限り可能です。
 
- A: Aspose.Words for .NETで署名証明書を読み込むには、`CertificateHolder`クラスのインスタンスを作成します`CertificateHolder`証明書ファイルへのパスと関連するパスワードを指定します。次に例を示します。
+### Aspose.Words for .NET は無料で使用できますか?
+ Aspose.Words for .NETは商用ライブラリです。無料試用版をダウンロードできます。[ここ](https://releases.aspose.com/)ただし、フル機能を使用するにはライセンスを購入する必要があります。[ここ](https://purchase.aspose.com/buy).
 
-```csharp
-CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx", "password");
-```
-
-証明書への正しいパスと関連するパスワードを必ず指定してください。
-
-#### Q: Aspose.Words for .NET を使用して Word 文書に署名するにはどうすればよいですか?
-
- A: Aspose.Words for .NETを使用してWord文書に署名するには、`DigitalSignatureUtil`クラス。`Sign`メソッドは、ソース文書へのパス、署名された文書（出力）へのパス、および`CertificateHolder`オブジェクト。次に例を示します。
-
-```csharp
-DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/document.docx", certHolder);
-```
-
-ソース ドキュメントと署名済みドキュメント (出力) の正しいパスを指定していることを確認してください。
-
-#### Q: 文書に署名する目的は何ですか?
-
-A: ドキュメントの署名は、ドキュメントの信頼性と整合性を保証する方法として機能します。ドキュメントにデジタル署名することで、その出所を証明し、その内容が変更されていないことを確認し、否認防止を確立できます。ドキュメントの署名は、法律、財務、機密文書によく使用されます。
-
-#### Q: Aspose.Words for .NET でのドキュメント署名に任意の証明書を使用できますか?
-
-A: Aspose.Words for .NET でドキュメントに署名するには、有効な X.509 証明書を使用する必要があります。この証明書は、信頼できる証明機関 (CA) から取得するか、テスト目的で自己署名証明書を使用できます。
-
-#### Q: Aspose.Words for .NET はドキュメント署名にどのファイル形式をサポートしていますか?
-
- A: Aspose.Words for .NETは、DOCXファイル形式のWord文書の署名をサポートしています。DOCXファイルには、`DigitalSignatureUtil`クラスと適切な証明書。
-
-#### Q: 同じ証明書を使用して複数の Word 文書に署名できますか?
-
-A: はい、同じ証明書を使用して複数のWord文書に署名できます。`CertificateHolder`クラスを再利用して、`DigitalSignatureUtil.Sign`ソース パスと署名済みドキュメント パスが異なるメソッド。
-
-#### Q: 文書に署名すると元の文書は変更されますか?
-
-A: Aspose.Words for .NET によるドキュメントの署名では、元のドキュメントは変更されません。代わりに、元のドキュメントはそのまま残して、ドキュメントのデジタル署名されたコピーが作成されます。デジタル署名されたコピーには追加されたデジタル署名が含まれており、ドキュメントの内容の整合性が確保されます。
-
-#### Q: Aspose.Words for .NET を使用して署名されたドキュメントのデジタル署名を検証できますか?
-
- A: はい、Aspose.Words for .NETには署名された文書のデジタル署名を検証する機能があります。`DigitalSignatureUtil.Verify`デジタル署名の有効性と信頼性を確認する方法。
+### Aspose.Words for .NET の詳細情報はどこで入手できますか?
+包括的なドキュメントが見つかります[ここ](https://reference.aspose.com/words/net/)およびサポート[ここ](https://forum.aspose.com/c/words/8).

@@ -70,7 +70,7 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de co
 
 #### Q : Est-il possible de spécifier la police ou la couleur du code en ligne dans Aspose.Words ?
 
- R : Oui, vous pouvez spécifier la police ou la couleur du code en ligne dans Aspose.Words. Vous pouvez utiliser le`Font.Name` et`Font.Color` propriétés du`Run` objet pour définir la police et la couleur du code en ligne. Par exemple, vous pouvez utiliser`run.Font.Name = "Courier New"` pour spécifier la police du code en ligne et`run.Font.Color = Color.Blue`pour préciser la couleur.
+ R : Oui, vous pouvez spécifier la police ou la couleur du code en ligne dans Aspose.Words. Vous pouvez utiliser le`Font.Name`et`Font.Color` propriétés du`Run` objet pour définir la police et la couleur du code en ligne. Par exemple, vous pouvez utiliser`run.Font.Name = "Courier New"` pour spécifier la police du code en ligne et`run.Font.Color = Color.Blue`pour préciser la couleur.
 
 #### Q : Puis-je utiliser le code en ligne dans un paragraphe contenant d'autres éléments de texte ?
 

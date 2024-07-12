@@ -65,7 +65,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Bilderfunktion mit
 
 #### F: Wie kann ich die Größe eines Bildes in Aspose.Words ändern?
 
- A: Um die Größe eines Bildes in Aspose.Words zu ändern, können Sie den`Width` Und`Height` Eigenschaften der`Shape` Objekt.
+ A: Um die Größe eines Bildes in Aspose.Words zu ändern, können Sie den`Width`Und`Height` Eigenschaften der`Shape` Objekt.
 
 #### F: Kann ich in Aspose.Words Filter auf Bilder anwenden?
 

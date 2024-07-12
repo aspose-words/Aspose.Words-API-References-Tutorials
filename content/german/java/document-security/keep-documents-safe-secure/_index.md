@@ -96,7 +96,7 @@ doc.save("path/to/encrypted/document.docx");
 
 ## 7. Schutz bestimmter Dokumentelemente
 
-Manchmal möchten Sie möglicherweise nur bestimmte Teile Ihres Dokuments schützen, z. B. Kopf- und Fußzeilen oder bestimmte Absätze. Mit Aspose.Words können Sie beim Dokumentschutz folgende Detailgenauigkeit erreichen:
+Manchmal möchten Sie möglicherweise nur bestimmte Teile Ihres Dokuments schützen, z. B. Kopf- und Fußzeilen oder bestimmte Absätze. Mit Aspose.Words können Sie beim Dokumentschutz folgende Granularität erreichen:
 
 ```java
 // Einen bestimmten Abschnitt schützen (Nur-Lese-Schutz)

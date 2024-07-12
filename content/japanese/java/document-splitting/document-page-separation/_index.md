@@ -2,7 +2,7 @@
 title: ドキュメントページの分割
 linktitle: ドキュメントページの分割
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用してドキュメント ページ分離を実行する方法を学びます。この包括的なガイドでは、効率的なドキュメント処理のための手順とソース コードが段階的に提供されます。
+description: Aspose.Words for Java を使用してドキュメント ページ分離を実行する方法を学びます。この包括的なガイドでは、効率的なドキュメント処理のための手順とソース コードが段階的に説明されています。
 type: docs
 weight: 12
 url: /ja/java/document-splitting/document-page-separation/

@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-이 단계에서는 다음을 사용하여 목록 번호의 기본 형식을 적용합니다.`ApplyNumberDefault()` 목록 포맷터의 방법. 다음으로 문서 작성기의`Writeln()` 그리고`Write()` 행동 양식. 우리는`ListIndent()` 각 수준에서 들여쓰기를 증가시키는 방법입니다.
+이 단계에서는 다음을 사용하여 목록 번호의 기본 형식을 적용합니다.`ApplyNumberDefault()` 목록 포맷터의 방법. 다음으로 문서 작성기의`Writeln()`그리고`Write()` 행동 양식. 우리는`ListIndent()` 각 수준에서 들여쓰기를 증가시키는 방법입니다.
 
 ## 4단계: 녹음 옵션 구성
 
@@ -100,7 +100,7 @@ Aspose.Words for .NET의 "목록 들여쓰기를 위해 수준당 하나의 탭 
 
  새로 만들기`Document` 객체와 연관된`DocumentBuilder` 물체.
 
- 사용`DocumentBuilder` 메소드를 사용하여 여러 수준의 들여쓰기 목록을 작성하려면`ApplyNumberDefault()` 기본 목록 번호 형식을 적용하려면`Writeln()` 그리고`Write()` 목록에 항목을 추가하려면`ListIndent()`각 수준에서 들여쓰기를 증가시킵니다.
+ 사용`DocumentBuilder` 메소드를 사용하여 여러 수준의 들여쓰기 목록을 작성하려면`ApplyNumberDefault()` 기본 목록 번호 형식을 적용하려면`Writeln()`그리고`Write()` 목록에 항목을 추가하려면`ListIndent()`각 수준에서 들여쓰기를 증가시킵니다.
 
  생성하여 저장 옵션을 구성합니다.`TxtSaveOptions` 개체 및 속성 설정`ListIndentation.Count` 레벨당 탭 문자 수와`ListIndentation.Character` 에게`'\t'` 탭 문자를 사용합니다.
 

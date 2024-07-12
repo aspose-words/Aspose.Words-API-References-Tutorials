@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 ความหมายของแต่ละพารามิเตอร์มีดังนี้:
-- `imagePath`เส้นทางไปยังไฟล์รูปภาพของคุณ
+- `imagePath`เส้นทางไปยังไฟล์ภาพของคุณ
 - `RelativeHorizontalPosition.Margin`: ตำแหน่งแนวนอนสัมพันธ์กับระยะขอบ
 - `100`: ออฟเซ็ตแนวนอนจากระยะขอบ (เป็นพอยต์)
 - `RelativeVerticalPosition.Margin`: ตำแหน่งแนวตั้งสัมพันธ์กับระยะขอบ

@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Paso 3: ve a la primera celda de la primera tabla
- Para comenzar, debemos navegar hasta la primera celda de la primera tabla del documento. Usamos el`GetChild()` y`FirstRow.FirstCell` métodos para obtener la referencia a la primera celda.
+ Para comenzar, debemos navegar hasta la primera celda de la primera tabla del documento. Usamos el`GetChild()`y`FirstRow.FirstCell` métodos para obtener la referencia a la primera celda.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -80,4 +80,4 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ```
 
 ## Conclusión
-En este tutorial, aprendimos cómo expandir el formato a celdas y filas desde un estilo de tabla usando Aspose.Words para .NET. Siguiendo esta guía paso a paso, puede aplicar fácilmente formato de estilo de tabla a celdas y filas específicas en sus documentos de Word. Aspose.Words ofrece una API potente y flexible para manipular y formatear tablas en sus documentos. Con este conocimiento, podrá personalizar aún más el diseño y la presentación de sus documentos de Word.
+En este tutorial, aprendimos cómo expandir el formato a celdas y filas desde un estilo de tabla usando Aspose.Words para .NET. Si sigue esta guía paso a paso, puede aplicar fácilmente formato de estilo de tabla a celdas y filas específicas en sus documentos de Word. Aspose.Words ofrece una API potente y flexible para manipular y formatear tablas en sus documentos. Con este conocimiento, podrá personalizar aún más el diseño y la presentación de sus documentos de Word.

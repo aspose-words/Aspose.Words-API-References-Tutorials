@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Passaggio 3: carica i tuoi documenti
 
-Va bene, è ora di caricare i documenti che vuoi confrontare. Avrai bisogno dei percorsi di questi documenti. Supponiamo che tu abbia due documenti:`DocumentA.docx` E`DocumentB.docx`.
+Va bene, è ora di caricare i documenti che vuoi confrontare. Avrai bisogno dei percorsi di questi documenti. Supponiamo che tu abbia due documenti:`DocumentA.docx`E`DocumentB.docx`.
 
 ```csharp
 // Il percorso della directory dei documenti.

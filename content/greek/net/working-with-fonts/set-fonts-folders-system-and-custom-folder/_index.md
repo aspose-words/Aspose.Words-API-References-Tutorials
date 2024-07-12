@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Προσθέστε μια νέα πηγή φακέλου που θα δώσει εντολή στο Aspose.Words να αναζητήσει γραμματοσειρές στον παρακάτω φάκελο.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Προσθέστε τον προσαρμοσμένο φάκελο που περιέχει τις γραμματοσειρές μας στη λίστα με τις υπάρχουσες πηγές γραμματοσειρών.
+// Προσθέστε τον προσαρμοσμένο φάκελο που περιέχει τις γραμματοσειρές μας στη λίστα με τις υπάρχουσες πηγές γραμματοσειρών.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

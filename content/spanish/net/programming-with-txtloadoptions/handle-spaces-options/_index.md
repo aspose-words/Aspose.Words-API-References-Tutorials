@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- En este paso configuramos las opciones para cargar el documento TXT. Creamos un nuevo`TxtLoadOptions` objeto y establecer el`LeadingSpacesOptions` y`TrailingSpacesOptions` propiedades para`TxtLeadingSpacesOptions.Trim` y`TxtTrailingSpacesOptions.Trim` respectivamente. Esto le indica a Aspose.Words que elimine los espacios iniciales y finales de las líneas al cargar el documento.
+ En este paso configuramos las opciones para cargar el documento TXT. Creamos un nuevo`TxtLoadOptions` objeto y establecer el`LeadingSpacesOptions`y`TrailingSpacesOptions` propiedades para`TxtLeadingSpacesOptions.Trim`y`TxtTrailingSpacesOptions.Trim` respectivamente. Esto le indica a Aspose.Words que elimine los espacios iniciales y finales de las líneas al cargar el documento.
 
 ## Paso 4: cargar el documento
 
@@ -90,7 +90,7 @@ Esta característica es muy útil para lidiar con espacios innecesarios a la izq
 
 Aspose.Words para .NET ofrece muchas funciones avanzadas para la manipulación y generación de documentos. Gestionar espacios al cargar un documento TXT es una de las muchas herramientas poderosas que pone a tu disposición.
 
- Es importante elegir las opciones de gestión del espacio que mejor se adapten a su escenario específico. En este ejemplo, utilizamos el`Trim`Opciones para eliminar espacios innecesarios desde el principio y el final de la línea. Sin embargo, Aspose.Words también tiene otras opciones para conservar espacios, eliminarlos por completo o mantenerlos como están.
+ Es importante elegir las opciones de gestión del espacio que mejor se adapten a su escenario específico. En este ejemplo, utilizamos el`Trim`opciones para eliminar espacios innecesarios desde el principio y el final de la línea. Sin embargo, Aspose.Words también tiene otras opciones para conservar espacios, eliminarlos por completo o mantenerlos como están.
 
 No olvides adaptar estas opciones según tus necesidades específicas y la estructura de tus documentos TXT.
 

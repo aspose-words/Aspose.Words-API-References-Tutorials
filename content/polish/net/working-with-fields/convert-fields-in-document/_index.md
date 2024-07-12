@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 3: Załaduj dokument
- Użyj`Document` klasa Aspose.Words, aby załadować dokument Word zawierający połączone pola, które chcesz przekonwertować.
+ Użyj`Document`klasa Aspose.Words, aby załadować dokument Word zawierający połączone pola, które chcesz przekonwertować.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

@@ -342,7 +342,7 @@ doc.save("TableDocument.docx");
 
 I den här koden skapar vi en enkel tabell med tre rader och tre kolumner.
 
-## Spara och exportera dokument
+## Dokument spara och exportera
 
 När du har skapat och formaterat ditt dokument är det viktigt att spara eller exportera det i önskat format. Aspose.Words för Java stöder olika dokumentformat, inklusive DOCX, PDF och mer. Så här sparar du ett dokument som PDF:
 

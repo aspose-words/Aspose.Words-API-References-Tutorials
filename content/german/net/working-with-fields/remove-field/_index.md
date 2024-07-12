@@ -65,7 +65,7 @@ Befolgen Sie diese Schritte, um mit Aspose.Words für .NET ein bestimmtes Feld i
 
 #### F: Wie kann ich mit Aspose.Words für .NET ein Feld in einem Word-Dokument löschen?
 
- A: Um ein Feld in einem Word-Dokument mit Aspose.Words für .NET zu entfernen, können Sie die Felder im Dokument mit dem`FieldStart` Klasse und verwenden Sie die`FieldStart.Remove`Methode zum Entfernen des Feldes.
+ A: Um ein Feld in einem Word-Dokument mit Aspose.Words für .NET zu entfernen, können Sie die Felder im Dokument mit dem`FieldStart` Klasse und verwenden Sie die`FieldStart.Remove` Methode zum Entfernen des Feldes.
 
 #### F: Ist es mit Aspose.Words für .NET möglich, nur bestimmte Felder in einem Word-Dokument zu löschen?
 

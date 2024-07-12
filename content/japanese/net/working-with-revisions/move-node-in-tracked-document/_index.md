@@ -106,7 +106,7 @@ while (node != endNode)
 //リビジョンの追跡プロセスを停止します。
 doc.StopTrackRevisions();
 
-//移動元の範囲には 3 つの追加段落があります。
+//移動元の範囲には 3 つの追加の段落があります。
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```

@@ -65,7 +65,7 @@ gratuluji! Nyní jste se naučili používat funkci obrázků s Aspose.Words pro
 
 #### Otázka: Jak mohu změnit velikost obrázku v Aspose.Words?
 
- A: Chcete-li změnit velikost obrázku v Aspose.Words, můžete použít`Width` a`Height` vlastnosti`Shape` objekt.
+ A: Chcete-li změnit velikost obrázku v Aspose.Words, můžete použít`Width`a`Height` vlastnosti`Shape` objekt.
 
 #### Otázka: Mohu použít filtry na obrázky v Aspose.Words?
 

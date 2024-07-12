@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- Nesta etapa, configuramos opções de backup para imagens. Criamos um novo`ImageSaveOptions` objeto especificando o formato de salvamento desejado, aqui "Jpeg" para o formato JPEG. Também definimos o intervalo de páginas a serem convertidas usando o`PageSet`objeto. Finalmente, ajustamos o brilho e o contraste da imagem usando o`ImageBrightness` e`ImageContrast` propriedades, respectivamente. Também alteramos a resolução horizontal usando o`HorizontalResolution` propriedade.
+ Nesta etapa, configuramos opções de backup para imagens. Criamos um novo`ImageSaveOptions` objeto especificando o formato de salvamento desejado, aqui "Jpeg" para o formato JPEG. Também definimos o intervalo de páginas a serem convertidas usando o`PageSet`objeto. Finalmente, ajustamos o brilho e o contraste da imagem usando o`ImageBrightness`e`ImageContrast` propriedades, respectivamente. Também alteramos a resolução horizontal usando o`HorizontalResolution` propriedade.
 
 ## Etapa 4: fazer backup de imagens
 

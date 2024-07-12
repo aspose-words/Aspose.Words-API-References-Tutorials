@@ -13,7 +13,7 @@ url: /zh/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 
 ## 先决条件
 
-在深入学习本教程之前，请确保您已具备以下条件：
+在深入学习本教程之前，请确保您已准备好以下内容：
 
 - C#基础知识：熟悉C#编程语言。
 -  Aspose.Words for .NET：从下载并安装[下载链接](https://releases.aspose.com/words/net/).
@@ -140,6 +140,6 @@ MetafileRenderingOptions 是确定将文档转换为 PDF 时如何呈现元文�
 
 访问[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8)寻求帮助。
 
-### Q5：是否可以获得Aspose.Words的临时许可证？
+### Q5：可以获得 Aspose.Words 的临时许可证吗？
 
 是的，你可以从[临时执照页面](https://purchase.aspose.com/temporary-license/).

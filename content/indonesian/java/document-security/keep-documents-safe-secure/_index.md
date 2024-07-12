@@ -191,7 +191,7 @@ Untuk memastikan keamanan dokumen yang kuat, ikuti praktik terbaik berikut:
 - Perbarui langkah-langkah keamanan Anda secara berkala agar tetap terdepan dalam menghadapi potensi ancaman.
 - Gunakan kata sandi dan algoritma enkripsi yang kuat.
 - Batasi akses ke dokumen sensitif jika diperlukan.
-- Melatih karyawan untuk mengenali dan merespons risiko keamanan.
+- Latih karyawan untuk mengenali dan merespons risiko keamanan.
 
 ## 13. Pengujian Keamanan Dokumen
 
@@ -199,7 +199,7 @@ Setelah menerapkan langkah-langkah keamanan, uji dokumen Anda secara menyeluruh 
 
 ## 14. Kesimpulan
 
-Dalam panduan langkah demi langkah ini, kami mengeksplorasi pentingnya keamanan dokumen dan bagaimana Aspose.Words untuk Java dapat membantu melindungi dokumen Anda dari akses tidak sah. Dengan memanfaatkan fitur perpustakaan, seperti perlindungan kata sandi, enkripsi, tanda tangan digital, watermarking, dan redaksi, Anda dapat memastikan bahwa dokumen Anda tetap aman dan terlindungi.
+Dalam panduan langkah demi langkah ini, kami mengeksplorasi pentingnya keamanan dokumen dan bagaimana Aspose.Words untuk Java dapat membantu melindungi dokumen Anda dari akses tidak sah. Dengan memanfaatkan fitur perpustakaan, seperti perlindungan kata sandi, enkripsi, tanda tangan digital, penandaan air, dan redaksi, Anda dapat memastikan bahwa dokumen Anda tetap aman dan terlindungi.
 
 ## FAQ
 
@@ -209,7 +209,7 @@ Dalam panduan langkah demi langkah ini, kami mengeksplorasi pentingnya keamanan 
 ### Apakah Aspose.Words mendukung format dokumen lain selain Word?
    Ya, Aspose.Words mendukung berbagai format, termasuk PDF, HTML, EPUB, dan banyak lagi.
 
-### Apakah mungkin untuk menambahkan beberapa tanda tangan digital ke suatu dokumen?
+### Apakah mungkin untuk menambahkan beberapa tanda tangan digital ke sebuah dokumen?
    Ya, Aspose.Words memungkinkan Anda menambahkan beberapa tanda tangan digital ke dokumen.
 
 ### Apakah Aspose.Words mendukung pemulihan kata sandi dokumen?

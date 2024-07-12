@@ -14,7 +14,7 @@ In der Welt der Dokumentenverarbeitung ist Aspose.Words für Java ein leistungss
 
 ## Voraussetzungen
 
-Stellen Sie vor dem Eintauchen in den Dokumentzusammenführungsprozess sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor Sie mit dem Zusammenführen von Dokumenten beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 - Installierte Java-Entwicklungsumgebung
 - Aspose.Words für die Java-Bibliothek

@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### K: Hogyan adhatom meg a forrásadatokat a levelezési cím mezőben az Aspose.Words for .NET-ben?
 
- V: Az Aspose.Words for .NET levelezési cím mezőjének forrásadatainak megadásához használja a`FieldAddressBlock.StartAddress` és`FieldAddressBlock.EndAddress` tulajdonságait. Ezek a tulajdonságok a külső adatforrásban, például CSV-fájlban, adatbázisban stb. található címtartományok meghatározására szolgálnak.
+ V: Az Aspose.Words for .NET levelezési cím mezőjének forrásadatainak megadásához használja a`FieldAddressBlock.StartAddress`és`FieldAddressBlock.EndAddress` tulajdonságait. Ezek a tulajdonságok a külső adatforrásban, például CSV-fájlban, adatbázisban stb. található címtartományok meghatározására szolgálnak.
 
 #### K: Az Aspose.Words for .NET segítségével választható elemeket is beilleszthetek a levelezési cím mezőbe?
 

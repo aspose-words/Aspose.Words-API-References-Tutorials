@@ -2,7 +2,7 @@
 title: 太字
 linktitle: 太字
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してテキストを太字にする方法をステップバイステップで学習します。
+description: Aspose.Words for .NET を使用してテキストを太字にする方法をステップバイステップ ガイドで学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/bold-text/
@@ -57,7 +57,7 @@ builder.Writeln("This text will be Bold");
 
 #### Q: 同じ段落内の複数のテキストを太字にすることはできますか?
 
- A: はい、複数のテキストを1つの段落内で太字にすることができます。`Run`オブジェクトを複数作成できます`Run`オブジェクトを設定し、`Font.Bold`財産に`true`各オブジェクトでテキストの必要な部分を太字にすることができます。その後、`Paragraph.AppendChild(run)`方法。
+ A: はい、複数のテキストを1つの段落内で太字にすることができます。`Run`オブジェクトを複数作成できます`Run`オブジェクトを設定し、`Font.Bold`財産に`true`各オブジェクトでテキストの必要な部分を太字にすることができます。その後、段落に太字を追加することができます。`Paragraph.AppendChild(run)`方法。
 
 #### Q: Aspose.Words の表またはセル内のテキストを太字にできますか?
 

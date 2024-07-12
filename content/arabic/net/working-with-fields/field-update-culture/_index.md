@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 3: إدخال حقل الوقت
 
- نحن نستخدم ال`InsertField()` طريقة لإدراج حقل زمني في المستند.
+ نحن نستخدم ال`InsertField()`طريقة لإدراج حقل زمني في المستند.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

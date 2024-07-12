@@ -96,7 +96,7 @@ Właściwe odstępy między wierszami zwiększają czytelność. Możesz ustawi�
 
 Aspose.Words umożliwia justowanie lub wyrównanie tekstu zgodnie z potrzebami projektowymi. Zapewnia to czysty i zorganizowany wygląd.
 
-## Postępowanie z wdowami i sierotami
+## Opieka nad wdowami i sierotami
 
 Wdowy (pojedyncze linie na górze strony) i sieroty (pojedyncze linie na dole) mogą zakłócać przepływ dokumentu. Wykorzystaj opcje, aby zapobiegać lub kontrolować wdowy i sieroty.
 

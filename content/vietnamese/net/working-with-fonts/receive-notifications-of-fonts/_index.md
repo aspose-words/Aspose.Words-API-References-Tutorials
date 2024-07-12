@@ -113,7 +113,7 @@ Không, bạn chỉ có thể chỉ định một phông chữ mặc định đ�
 
 ###  Câu hỏi 3: Tôi có thể xử lý các loại cảnh báo khác bằng`IWarningCallback`?
 
- Vâng`IWarningCallback` Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
+ Vâng`IWarningCallback`Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
 
 ### Câu hỏi 4: Tôi có thể tìm hỗ trợ cho Aspose.Words ở đâu?
 

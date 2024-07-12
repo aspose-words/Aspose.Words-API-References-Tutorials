@@ -34,7 +34,7 @@ HeaderFooter header = section.getHeadersFooters().add(HeaderFooterType.HEADER_PR
 // Fügen Sie der Kopfzeile Inhalt hinzu
 header.appendChild(new Run(doc, "Document Header"));
 
-// Kopfzeilenformatierung anpassen
+// Anpassen der Kopfzeilenformatierung
 header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 ```
 
@@ -79,7 +79,7 @@ header.appendChild(field);
 
 Um ein nahtloses Erlebnis beim Gestalten von Kopf- und Fußzeilen von Dokumenten zu gewährleisten, beachten Sie die folgenden bewährten Methoden:
 
-- Halten Sie Kopf- und Fußzeilen präzise und passend zum Inhalt Ihres Dokuments.
+- Halten Sie Kopf- und Fußzeilen präzise und relevant für den Inhalt Ihres Dokuments.
 - Verwenden Sie in Kopf- und Fußzeilen eine einheitliche Formatierung, beispielsweise hinsichtlich Schriftgröße und -stil.
 - Testen Sie Ihr Dokument auf verschiedenen Geräten und in verschiedenen Formaten, um eine ordnungsgemäße Darstellung sicherzustellen.
 
@@ -115,7 +115,7 @@ Ja, Sie können benutzerdefinierte Felder zu Kopf- oder Fußzeilen hinzufügen. 
 
 ### Ist Aspose.Words für Java mit verschiedenen Dokumentformaten kompatibel?
 
-Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, darunter DOC, DOCX, PDF und mehr. Sie können damit Kopf- und Fußzeilen in Dokumenten verschiedener Formate formatieren.
+Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, darunter DOC, DOCX, PDF und mehr. Sie können damit Kopf- und Fußzeilen in Dokumenten verschiedener Formate gestalten.
 
 ## Abschluss
 

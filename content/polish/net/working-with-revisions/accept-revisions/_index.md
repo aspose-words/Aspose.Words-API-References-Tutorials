@@ -131,7 +131,7 @@ doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak akceptować poprawki w dokumencie programu Word za pomocą funkcji Akceptuj poprawki w Aspose.Words dla .NET. Wykonaliśmy kroki umożliwiające dodawanie i edytowanie treści dokumentu, śledzenie poprawek, usuwanie poprawionych akapitów, akceptowanie wszystkich zmian i zaprzestanie śledzenia wersji. Teraz możesz zastosować tę wiedzę, aby skutecznie zarządzać wersjami we własnych dokumentach Word za pomocą Aspose.Words dla .NET.
+W tym samouczku nauczyliśmy się, jak akceptować poprawki w dokumencie programu Word za pomocą funkcji Akceptuj poprawki w Aspose.Words dla .NET. Wykonaliśmy kroki, aby dodać i edytować treść dokumentu, śledzić poprawki, usuwać poprawiony akapit, akceptować wszystkie zmiany i zaprzestać śledzenia wersji. Teraz możesz zastosować tę wiedzę, aby skutecznie zarządzać wersjami we własnych dokumentach Word za pomocą Aspose.Words dla .NET.
 
 ### Często zadawane pytania
 
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Rozwiązanie 2:
 
- Odp.: Możesz także włączyć śledzenie wersji za pomocą`Document` konstruktor, który akceptuje`trackRevisions` I`author` parametry.
+ Odp.: Możesz także włączyć śledzenie wersji za pomocą`Document` konstruktor, który akceptuje`trackRevisions`I`author` parametry.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

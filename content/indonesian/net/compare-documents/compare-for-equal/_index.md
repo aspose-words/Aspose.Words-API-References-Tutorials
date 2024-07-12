@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Langkah 2: Muat Dokumen Anda
 
- Selanjutnya, Anda harus memuat dokumen Word yang ingin Anda bandingkan. Untuk contoh ini, kami berasumsi Anda memiliki dua dokumen yang diberi nama`Document.docx` Dan`Document2.docx` terletak di direktori dokumen Anda.
+ Selanjutnya, Anda perlu memuat dokumen Word yang ingin Anda bandingkan. Untuk contoh ini, kami berasumsi Anda memiliki dua dokumen yang diberi nama`Document.docx`Dan`Document2.docx` terletak di direktori dokumen Anda.
 
 ```csharp
 // Jalur ke direktori dokumen.

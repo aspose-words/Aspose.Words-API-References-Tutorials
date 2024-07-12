@@ -2,7 +2,7 @@
 title: Kurangi Ukuran PDF dengan Skala Font Wmf Ke Ukuran Metafile
 linktitle: Kurangi Ukuran PDF dengan Skala Font Wmf Ke Ukuran Metafile
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengurangi ukuran pdf dengan skala font wmf ke ukuran metafile saat mengonversi ke PDF dengan Aspose.Words untuk .NET.
+description: Panduan langkah demi langkah untuk memperkecil ukuran pdf dengan skala font wmf ke ukuran metafile saat mengonversi ke PDF dengan Aspose.Words untuk .NET.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/

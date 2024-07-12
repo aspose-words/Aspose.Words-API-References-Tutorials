@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Otázka: Jak získám podrobnosti o skupině revizí v Aspose.Words for .NET?
 
-Odpověď: Projděte revize dokumentu pomocí smyčky a otevřete vlastnosti každé revize, abyste získali požadované podrobnosti. Můžete použít`RevisionType`, `Author`, `DateTime` a`ParentNode` vlastnosti, abyste získali typ revize, autora, datum a revidovaný text.
+Odpověď: Projděte revize dokumentu pomocí smyčky a otevřete vlastnosti každé revize, abyste získali požadované podrobnosti. Můžete použít`RevisionType`, `Author`, `DateTime`a`ParentNode` vlastnosti, abyste získali typ revize, autora, datum a revidovaný text.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

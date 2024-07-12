@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/apply-license/
 ---
 
-Bu sayfada Aspose.Words for .NET kullanılarak projelerde lisansın nasıl uygulanacağı hakkında ayrıntılı bir kılavuz bulunmaktadır. Bu eğitimde Aspose.Words'ün tüm özelliklerini etkinleştirmek için bir lisansın nasıl kullanılacağı adım adım açıklanmaktadır. Ayrıca lisanslama sürecini göstermek için örnek kod da sağlar. Lisans başvurusunda bulunmak ve .NET uygulamalarınızdaki güçlü Aspose.Words kütüphanesinden en iyi şekilde yararlanmak için bu kılavuzu izleyin.
+Bu sayfada Aspose.Words for .NET kullanılarak projelerde lisansın nasıl uygulanacağı hakkında ayrıntılı bir kılavuz bulunmaktadır. Bu eğitimde Aspose.Words'ün tüm özelliklerini etkinleştirmek için bir lisansın nasıl kullanılacağı adım adım açıklanmaktadır. Ayrıca lisanslama sürecini göstermek için örnek kod da sağlar. Lisans başvurusu yapmak ve .NET uygulamalarınızdaki güçlü Aspose.Words kütüphanesinden en iyi şekilde yararlanmak için bu kılavuzu izleyin.
 
  ## Öğreticiler
 | Başlık | Tanım |

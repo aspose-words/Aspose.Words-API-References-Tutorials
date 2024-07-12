@@ -17,14 +17,14 @@ url: /ar/net/programming-with-shapes/add-group-shape/
 - المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
+ ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## الخطوة 2: إنشاء مستند جديد وشكل المجموعة
- إنشاء مثيل جديد لـ`Document` الطبقة و`GroupShape`كائن للعمل مع الوثيقة.
+ إنشاء مثيل جديد لـ`Document` الطبقة و`GroupShape` كائن للعمل مع الوثيقة.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## الخطوة 3: إنشاء الأشكال وإضافتها إلى GroupShape
- إنشاء أشكال فردية مثل`accentBorderShape` و`actionButtonShape` باستخدام`Shape` فصل. تخصيص خصائصها حسب الرغبة. إلحاق هذه الأشكال إلى`groupShape` هدف.
+ إنشاء أشكال فردية مثل`accentBorderShape`و`actionButtonShape` باستخدام`Shape` فصل. تخصيص خصائصها حسب الرغبة. إلحاق هذه الأشكال إلى`groupShape` هدف.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## الخطوة 4: تعيين أبعاد GroupShape
- قم بتعيين العرض والارتفاع وحجم الإحداثيات للملف`groupShape`.
+قم بتعيين العرض والارتفاع وحجم الإحداثيات للملف`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام ملف`Save`طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithShapes.AddGroupShape.docx".
+ احفظ المستند في الدليل المحدد باستخدام ملف`Save` طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithShapes.AddGroupShape.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

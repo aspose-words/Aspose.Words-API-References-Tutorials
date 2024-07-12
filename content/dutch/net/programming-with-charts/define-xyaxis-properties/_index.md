@@ -2,24 +2,40 @@
 title: Definieer XY-aseigenschappen in een diagram
 linktitle: Definieer XY-aseigenschappen in een diagram
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u XY-aseigenschappen in een diagram definieert met Aspose.Words voor .NET. Aanpassingsopties voor de X- en Y-assen worden gedemonstreerd.
+description: Leer met deze stapsgewijze handleiding hoe u XY-aseigenschappen in een diagram definieert met Aspose.Words voor .NET. Perfect voor .NET-ontwikkelaars.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/define-xyaxis-properties/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u Aspose.Words voor .NET gebruikt om eigenschappen voor de X- en Y-assen in een diagram te definiëren. De meegeleverde broncode laat zien hoe u een diagram maakt, reeksgegevens toevoegt en de aseigenschappen aanpast.
+Grafieken zijn een krachtig hulpmiddel voor het visualiseren van gegevens. Wanneer u professionele documenten met dynamische grafieken moet maken, is Aspose.Words voor .NET een bibliotheek van onschatbare waarde. Dit artikel leidt u door het proces van het definiëren van XY-aseigenschappen in een diagram met behulp van Aspose.Words voor .NET, waarbij elke stap wordt opgesplitst om duidelijkheid en begrijpelijkheid te garanderen.
 
-## Stap 1: Zet het project op
+## Vereisten
 
-Zorg ervoor dat u aan de volgende vereisten voldoet:
+Voordat je in de codering duikt, zijn er een paar vereisten die je moet hebben:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
-- Een documentmappad waar het uitvoerdocument wordt opgeslagen.
+1.  Aspose.Words voor .NET: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: u hebt een geïntegreerde ontwikkelomgeving (IDE) zoals Visual Studio nodig.
+3. .NET Framework: Zorg ervoor dat uw ontwikkelomgeving is ingesteld voor .NET-ontwikkeling.
+4. Basiskennis van C#: Deze handleiding gaat ervan uit dat u een basiskennis hebt van programmeren in C#.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Naamruimten importeren
 
- Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
+Om te beginnen moet u de benodigde naamruimten in uw project importeren. Dit zorgt ervoor dat u toegang heeft tot alle klassen en methoden die nodig zijn voor het maken en manipuleren van documenten en grafieken.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+We zullen het proces opsplitsen in eenvoudige stappen, waarbij elke stap zich richt op een specifiek onderdeel van het definiëren van de XY-aseigenschappen in een diagram.
+
+## Stap 1: Initialiseer het document en DocumentBuilder
+
+ Eerst moet u een nieuw document initialiseren en een`DocumentBuilder` voorwerp. De`DocumentBuilder` helpt bij het invoegen van inhoud in het document.
 
 ```csharp
 // Pad naar uw documentmap
@@ -29,48 +45,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Voeg vervolgens een diagram in het document in met behulp van de`InsertChart` werkwijze van de`DocumentBuilder`. In dit voorbeeld voegen we een vlakdiagram in.
+## Stap 2: Voeg een diagram in
+
+Vervolgens voegt u een diagram in het document in. In dit voorbeeld gebruiken we een vlakdiagram. U kunt de afmetingen van het diagram indien nodig aanpassen.
 
 ```csharp
+// Grafiek invoegen
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Stap 3: Voeg seriegegevens toe aan het diagram
+## Stap 3: Wis de standaardreeks en voeg aangepaste gegevens toe
 
-Voeg seriegegevens toe aan het diagram. In dit voorbeeld voegen we vijf gegevenspunten toe met bijbehorende datums en waarden.
+Standaard heeft het diagram een aantal vooraf gedefinieerde reeksen. We zullen deze wissen en onze aangepaste gegevensreeksen toevoegen.
 
 ```csharp
 chart.Series.Clear();
 chart.Series.Add("Aspose Series 1",
-    new DateTime[]
-    {
-        new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-        new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-    },
-    new double[] { 640, 320, 280, 120, 150 });
+	new DateTime[]
+	{
+		new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
+		new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
+	},
+	new double[] { 640, 320, 280, 120, 150 });
 ```
 
-## Stap 4: Pas de eigenschappen van de X- en Y-as aan
+## Stap 4: Definieer de X-aseigenschappen
 
- Om de eigenschappen van de X- en Y-assen aan te passen, gaat u naar de`ChartAxis` objecten die aan het diagram zijn gekoppeld.
+Nu is het tijd om de eigenschappen voor de X-as te definiëren. Dit omvat het instellen van het categorietype, het aanpassen van de kruising van de assen en het aanpassen van maatstreepjes en labels.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
-ChartAxis yAxis = chart.AxisY;
-```
-
- Wijzig de eigenschappen van de`xAxis` En`yAxis`objecten om de gewenste opties voor de X- en Y-assen in te stellen. In dit voorbeeld demonstreren we enkele algemene eigenschappen die kunnen worden aangepast.
-
-```csharp
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3;
+xAxis.CrossesAt = 3; //Gemeten in weergave-eenheden van de Y-as (honderden).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 xAxis.TickLabelOffset = 200;
+```
 
+## Stap 5: Definieer de Y-aseigenschappen
+
+Op dezelfde manier stelt u de eigenschappen voor de Y-as in. Dit omvat het instellen van de positie van het vinkje, de grote en kleine eenheden, de weergave-eenheid en de schaalverdeling.
+
+```csharp
+ChartAxis yAxis = chart.AxisY;
 yAxis.TickLabelPosition = AxisTickLabelPosition.High;
 yAxis.MajorUnit = 100;
 yAxis.MinorUnit = 50;
@@ -79,78 +99,31 @@ yAxis.Scaling.Minimum = new AxisBound(100);
 yAxis.Scaling.Maximum = new AxisBound(700);
 ```
 
-## Stap 5: Sla het document op
+## Stap 6: Bewaar het document
 
- Sla het document ten slotte op in de opgegeven map met behulp van de`Save` werkwijze van de`Document` voorwerp.
+Sla het document ten slotte op in de door u opgegeven map. Hierdoor wordt het Word-document met het aangepaste diagram gegenereerd.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-Hiermee is de implementatie voltooid van het definiëren van XY-aseigenschappen in een diagram met behulp van Aspose.Words voor .NET.
-
-### Voorbeeldbroncode voor het definiëren van XYAxis-eigenschappen met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Grafiek invoegen
-	Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new DateTime[]
-		{
-			new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-			new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-		},
-		new double[] { 640, 320, 280, 120, 150 });
-	ChartAxis xAxis = chart.AxisX;
-	ChartAxis yAxis = chart.AxisY;
-	// Wijzig de X-as in categorie in plaats van datum, zodat alle punten met gelijke intervallen op de X-as worden geplaatst.
-	xAxis.CategoryType = AxisCategoryType.Category;
-	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; //Gemeten in weergave-eenheden van de Y-as (honderden).
-	xAxis.ReverseOrder = true;
-	xAxis.MajorTickMark = AxisTickMark.Cross;
-	xAxis.MinorTickMark = AxisTickMark.Outside;
-	xAxis.TickLabelOffset = 200;
-	yAxis.TickLabelPosition = AxisTickLabelPosition.High;
-	yAxis.MajorUnit = 100;
-	yAxis.MinorUnit = 50;
-	yAxis.DisplayUnit.Unit = AxisBuiltInUnit.Hundreds;
-	yAxis.Scaling.Minimum = new AxisBound(100);
-	yAxis.Scaling.Maximum = new AxisBound(700);
-	doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
-```
-
 ## Conclusie
 
-In deze zelfstudie hebt u geleerd hoe u eigenschappen voor de X- en Y-assen in een diagram definieert met behulp van Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen, kunt u een diagram maken, reeksgegevens toevoegen en de aseigenschappen aanpassen aan uw specifieke vereisten. Aspose.Words voor .NET biedt een uitgebreide API voor woordenverwerking met diagrammen in Word-documenten, waardoor u verschillende aspecten van het diagram kunt manipuleren, inclusief de assen.
+Het maken en aanpassen van grafieken in Word-documenten met Aspose.Words voor .NET is eenvoudig als u eenmaal de stappen begrijpt. Deze gids heeft u door het proces geleid van het definiëren van XY-aseigenschappen in een diagram, vanaf het initialiseren van het document tot het opslaan van het eindproduct. Met deze vaardigheden kunt u gedetailleerde, professioneel ogende grafieken maken die uw documenten verrijken.
 
-Door toegang te krijgen tot de`ChartAxis` objecten die aan het diagram zijn gekoppeld, kunt u eigenschappen wijzigen, zoals het categorietype, askruisen, maatstreepjes, labelposities, schaling en meer. Dankzij deze flexibiliteit kunt u het uiterlijk en het gedrag van de diagramassen aanpassen, zodat uw gegevens effectief worden gepresenteerd.
+## Veelgestelde vragen
 
-Door Aspose.Words voor .NET te gebruiken, kunt u de mogelijkheden voor het maken en aanpassen van diagrammen naadloos integreren in uw .NET-toepassingen en het genereren van professioneel ogende documenten met rijke visualisaties automatiseren.
+### Welke soorten diagrammen kan ik maken met Aspose.Words voor .NET?
+U kunt verschillende soorten diagrammen maken, waaronder vlak-, staaf-, lijn-, cirkeldiagrammen en meer.
 
-### Veelgestelde vragen
+### Hoe installeer ik Aspose.Words voor .NET?
+ U kunt Aspose.Words voor .NET downloaden van[hier](https://releases.aspose.com/words/net/) en volg de meegeleverde installatie-instructies.
 
-#### Q1. Wat is Aspose.Words voor .NET?
-Aspose.Words voor .NET is een krachtige bibliotheek voor documentverwerking waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, manipuleren en opslaan in .NET-toepassingen. Het biedt een breed scala aan functies voor tekstverwerking met documentelementen, waaronder grafieken.
+### Kan ik het uiterlijk van mijn diagrammen aanpassen?
+Ja, Aspose.Words voor .NET maakt uitgebreide aanpassingen van grafieken mogelijk, inclusief kleuren, lettertypen en aseigenschappen.
 
-#### Vraag 2. Hoe kan ik Aspose.Words voor .NET installeren?
-kunt Aspose.Words voor .NET installeren door het te downloaden met behulp van NuGet-pakketbeheer in Visual Studio. Zoek eenvoudigweg naar "Aspose.Words" in de NuGet-pakketbeheerder en installeer het in uw project.
+### Is er een gratis proefversie beschikbaar voor Aspose.Words voor .NET?
+ Ja, u kunt een gratis proefperiode krijgen[hier](https://releases.aspose.com/).
 
-#### Q3. Kan ik andere aspecten van het diagram aanpassen met Aspose.Words voor .NET?
-Ja, Aspose.Words voor .NET biedt uitgebreide mogelijkheden voor het aanpassen van verschillende aspecten van een diagram. Naast het definiëren van aseigenschappen kunt u het diagramtype, gegevensreeksen, legenda, titel, plotgebied, gegevenslabels en vele andere elementen van het diagram wijzigen. De API biedt fijnmazige controle over het uiterlijk en gedrag van diagrammen.
-
-#### Q4. Kan ik verschillende soorten diagrammen maken met Aspose.Words voor .NET?
- Ja, Aspose.Words voor .NET ondersteunt een breed scala aan diagramtypen, waaronder gebied, staaf, lijn, cirkel, spreiding en meer. U kunt gebruik maken van de`ChartType` opsomming om het gewenste diagramtype op te geven bij het invoegen van een diagramvorm in een Word-document.
-
-#### Vraag 5. Kan ik het diagram in verschillende formaten opslaan?
-Ja, met Aspose.Words voor .NET kunt u het document met het diagram in verschillende formaten opslaan, zoals DOCX, PDF, HTML en meer. U kunt het juiste formaat kiezen op basis van uw vereisten en de`Save` werkwijze van de`Document` object om het document op te slaan.
-
-#### Vraag 6. Kan ik deze technieken toepassen op meerdere diagrammen in een document?
- Ja, u kunt deze technieken toepassen op meerdere diagrammen in een document door de noodzakelijke stappen voor elk diagram te herhalen. Je kunt aparte creëren`Chart` En`ChartAxis` objecten voor elk diagram en pas hun eigenschappen dienovereenkomstig aan. Aspose.Words voor .NET biedt volledige ondersteuning voor woordenverwerking met meerdere diagrammen in één document.
+### Waar kan ik meer tutorials en documentatie vinden?
+ Meer tutorials en gedetailleerde documentatie vindt u op de[Aspose.Words voor .NET-documentatiepagina](https://reference.aspose.com/words/net/).

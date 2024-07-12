@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## Bước 3: Sửa đổi mã nguồn macro
- Bây giờ chúng ta sẽ sửa đổi mã nguồn của macro đầu tiên của dự án VBA. Thay thế cái`newSourceCode` biến có mã nguồn mới mà bạn muốn sử dụng.
+Bây giờ chúng ta sẽ sửa đổi mã nguồn của macro đầu tiên của dự án VBA. Thay thế cái`newSourceCode` biến có mã nguồn mới mà bạn muốn sử dụng.
 
 ```csharp
 const string newSourceCode = "Test change source code";

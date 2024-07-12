@@ -2,108 +2,117 @@
 title: Ustaw identyfikator dostawcy podpisu w dokumencie programu Word
 linktitle: Ustaw identyfikator dostawcy podpisu w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić identyfikator dostawcy podpisu w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Bezpiecznie ustawiaj identyfikator dostawcy podpisu w dokumentach programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem zawierającym 2000 słów, aby cyfrowo podpisywać swoje dokumenty.
 type: docs
 weight: 10
 url: /pl/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
-W tym samouczku przeprowadzimy Cię przez kolejne etapy korzystania z funkcji Ustaw identyfikator dostawcy podpisu w Aspose.Words dla .NET. Ta funkcja umożliwia określenie identyfikatora dostawcy podpisu dla linii podpisu w dokumencie programu Word. Wykonaj poniższe kroki:
+## Wstęp
 
-## Krok 1: Załadowanie dokumentu i dostęp do linii podpisu
+No hej! Masz więc ten niesamowity dokument programu Word, który wymaga podpisu cyfrowego, prawda? Ale nie byle jaki podpis — musisz ustawić konkretny identyfikator dostawcy podpisu. Niezależnie od tego, czy zajmujesz się dokumentami prawnymi, umowami czy jakąkolwiek dokumentacją, dodanie bezpiecznego podpisu cyfrowego ma kluczowe znaczenie. W tym samouczku przeprowadzę Cię przez cały proces ustawiania identyfikatora dostawcy podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Gotowy? Zanurzmy się!
 
-Zacznij od przesłania dokumentu zawierającego linię podpisu:
+## Warunki wstępne
+
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
+
+1. Aspose.Words dla biblioteki .NET: Jeśli jeszcze tego nie zrobiłeś,[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub dowolne IDE zgodne z C#.
+3. Dokument programu Word: dokument z linią podpisu (`Signature line.docx`).
+4.  Certyfikat cyfrowy: A`.pfx` plik certyfikatu (np.`morzal.pfx`).
+5. Podstawowa znajomość języka C#: Tylko podstawy — nie martw się, jesteśmy tutaj, aby Ci pomóc!
+
+Teraz wskoczmy do akcji!
+
+## Importuj przestrzenie nazw
+
+Po pierwsze, upewnij się, że uwzględniłeś w swoim projekcie niezbędne przestrzenie nazw. Jest to niezbędne, aby uzyskać dostęp do biblioteki Aspose.Words i powiązanych klas.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.DigitalSignatures;
+```
+
+W porządku, podzielmy to na proste, zrozumiałe kroki.
+
+## Krok 1: Załaduj dokument Word
+
+Pierwszym krokiem jest załadowanie dokumentu programu Word zawierającego linię podpisu. Ten dokument zostanie zmodyfikowany w celu uwzględnienia podpisu cyfrowego z określonym identyfikatorem dostawcy podpisu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
+```
 
+ Tutaj określamy katalog, w którym znajduje się Twój dokument. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentu.
+
+## Krok 2: Uzyskaj dostęp do linii podpisu
+
+Następnie musimy uzyskać dostęp do linii podpisu w dokumencie. Linia podpisu jest osadzona jako obiekt kształtu w dokumencie programu Word.
+
+```csharp
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## Krok 2: Ustawianie opcji podpisu
+ Ta linia kodu pobiera pierwszy kształt z treści pierwszej sekcji dokumentu i rzutuje go na a`SignatureLine` obiekt.
 
-Utwórz instancję klasy SignOptions i ustaw opcje podpisywania, w tym identyfikator dostawcy:
+## Krok 3: Skonfiguruj opcje podpisywania
+
+Teraz tworzymy opcje podpisu, które obejmują identyfikator dostawcy i identyfikator linii podpisu z dostępnej linii podpisu.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-ProviderId = signatureLine.ProviderId,
- SignatureLineId = signatureLine.Id
+    ProviderId = signatureLine.ProviderId,
+    SignatureLineId = signatureLine.Id
 };
 ```
 
-## Krok 3: Podpisanie dokumentu
+Opcje te zostaną użyte podczas podpisywania dokumentu, aby upewnić się, że ustawiono prawidłowy identyfikator dostawcy podpisu.
 
-Aby podpisać dokument należy skorzystać z klasy DigitalSignatureUtil i określić certyfikat podpisujący:
+## Krok 4: Załaduj certyfikat
+
+ Aby podpisać dokument cyfrowo, potrzebny jest certyfikat. Oto jak załadować plik`.pfx` plik:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-	dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
-Pamiętaj, aby podać prawidłowe ścieżki dokumentu, certyfikatu i podpisanego dokumentu.
+ Zastępować`"aw"` z hasłem do pliku certyfikatu, jeśli takowe posiada.
 
-### Przykładowy kod źródłowy dla Ustaw identyfikator dostawcy podpisu przy użyciu Aspose.Words dla .NET
+## Krok 5: Podpisz dokument
 
-Oto kompletny kod źródłowy umożliwiający ustawienie identyfikatora dostawcy podpisu za pomocą Aspose.Words dla .NET:
+ Wreszcie nadszedł czas na podpisanie dokumentu za pomocą`DigitalSignatureUtil.Sign` metoda.
 
 ```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Signature line.docx");
-
-	SignatureLine signatureLine =
-		((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
-
-	SignOptions signOptions = new SignOptions
-	{
-		ProviderId = signatureLine.ProviderId, SignatureLineId = signatureLine.Id
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-		dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
-
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
+    dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
-Dokończ identyfikator dostawcy podpisu w dokumencie programu Word za pomocą Aspose.Words dla .NET.
-
+ Spowoduje to podpisanie dokumentu i zapisanie go jako nowego pliku,`Digitally signed.docx`.
 
 ## Wniosek
 
-tym samouczku nauczyliśmy się, jak ustawić identyfikator dostawcy podpisu dla linii podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Wykonując podane kroki, możesz łatwo załadować dokument, uzyskać dostęp do linii podpisu, ustawić identyfikator dostawcy i podpisać dokument. Możliwość ustawienia identyfikatora dostawcy podpisu pomaga ustalić tożsamość i wiarygodność osoby podpisującej, zwiększając bezpieczeństwo i integralność dokumentów programu Word. Aspose.Words dla .NET zapewnia solidne API do przetwarzania słów z podpisami cyfrowymi, umożliwiając łatwe dostosowywanie i zarządzanie procesem podpisywania.
+ masz to! Pomyślnie ustawiłeś identyfikator dostawcy podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Proces ten nie tylko zabezpiecza Twoje dokumenty, ale także zapewnia ich zgodność ze standardami podpisu cyfrowego. A teraz wypróbuj to na swoich dokumentach. Masz jakieś pytania? Sprawdź poniższe często zadawane pytania lub kliknij przycisk[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8).
 
-### Często zadawane pytania dotyczące ustawiania identyfikatora dostawcy podpisu w dokumencie programu Word
+## Często zadawane pytania
 
-#### P: Co to jest identyfikator dostawcy podpisu w dokumencie programu Word?
+### Co to jest identyfikator dostawcy podpisu?
 
-Odp.: Identyfikator dostawcy podpisu w dokumencie programu Word to unikalny identyfikator określający dostawcę podpisu cyfrowego. Pomaga zidentyfikować podmiot lub organizację odpowiedzialną za tworzenie podpisu cyfrowego i zarządzanie nim.
+Identyfikator dostawcy podpisu jednoznacznie identyfikuje dostawcę podpisu cyfrowego, zapewniając autentyczność i bezpieczeństwo.
 
-#### P: Jak mogę ustawić identyfikator dostawcy podpisu dla linii podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
+### Czy do podpisania mogę użyć dowolnego pliku .pfx?
 
-Odp.: Aby ustawić identyfikator dostawcy podpisu dla linii podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET, możesz wykonać następujące kroki:
-1.  Załaduj dokument za pomocą`Document` class i określ ścieżkę do pliku dokumentu.
-2.  Uzyskaj dostęp do linii podpisu, korzystając z odpowiedniej metody lub właściwości. Możesz na przykład użyć`GetChild` metoda pobierania kształtu linii podpisu.
-3. Pobierz identyfikator dostawcy z linii podpisu.
-4.  Utwórz instancję`SignOptions` klasę i ustaw`ProviderId` właściwość na pobrany identyfikator dostawcy.
-5.  Użyj`DigitalSignatureUtil.Sign` sposób podpisania dokumentu, podając niezbędne parametry m.in`SignOptions` obiekt.
+Tak, o ile jest to ważny certyfikat cyfrowy. Upewnij się, że masz prawidłowe hasło, jeśli jest chronione.
 
-#### P: Jak uzyskać dostęp do linii podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
+### Jak uzyskać plik .pfx?
 
- Odp.: Aby uzyskać dostęp do linii podpisu w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz użyć odpowiedniej metody lub właściwości w celu pobrania kształtu linii podpisu ze struktury dokumentu. Można na przykład użyć`GetChild` metodę z odpowiednimi parametrami, aby uzyskać pożądany kształt linii podpisu.
+Możesz uzyskać plik .pfx od urzędu certyfikacji (CA) lub wygenerować go za pomocą narzędzi takich jak OpenSSL.
 
-#### P: Czy mogę ustawić identyfikator dostawcy podpisu dla wielu wierszy podpisu w dokumencie programu Word?
+### Czy mogę podpisać wiele dokumentów jednocześnie?
 
- O: Tak, możesz ustawić identyfikator dostawcy podpisu dla wielu wierszy podpisu w dokumencie programu Word. Możesz przeglądać kolekcję linii podpisu w dokumencie i ustawić identyfikator dostawcy dla każdej linii podpisu indywidualnie, korzystając z opcji`SignOptions.ProviderId` nieruchomość.
+Tak, możesz przeglądać wiele dokumentów i stosować do każdego ten sam proces podpisywania.
 
-#### P: Jaki jest cel identyfikatora dostawcy podpisu w dokumencie programu Word?
+### Co się stanie, jeśli w dokumencie nie będzie linii podpisu?
 
-Odpowiedź: Identyfikator dostawcy podpisu w dokumencie programu Word służy do identyfikacji podmiotu lub organizacji odpowiedzialnej za tworzenie podpisu cyfrowego i zarządzanie nim. Pomaga ustalić autentyczność i wiarygodność podpisu cyfrowego poprzez powiązanie go z konkretnym dostawcą.
-
-#### P: Jakiego typu certyfikatów cyfrowych można użyć do ustawienia identyfikatora dostawcy podpisu w dokumencie programu Word?
-
-Odp.: Możesz użyć certyfikatów cyfrowych X.509 z odpowiednimi informacjami o dostawcy, aby ustawić identyfikator dostawcy podpisu w dokumencie programu Word. Certyfikat cyfrowy powinien być wystawiony przez zaufany urząd certyfikacji (CA) i zawierać metadane niezbędne do identyfikacji dostawcy.
+Najpierw musisz wstawić linię podpisu. Aspose.Words udostępnia metody programowego dodawania linii podpisu.

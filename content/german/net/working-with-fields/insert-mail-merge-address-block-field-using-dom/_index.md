@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### F: Wie kann ich die Quelldaten für das Feld „Postanschrift“ in Aspose.Words für .NET angeben?
 
- A: Um die Quelldaten für das Feld „Postanschrift“ in Aspose.Words für .NET anzugeben, können Sie den`FieldAddressBlock.StartAddress` Und`FieldAddressBlock.EndAddress` Eigenschaften. Diese Eigenschaften werden verwendet, um die Adressbereiche in der externen Datenquelle, beispielsweise einer CSV-Datei, einer Datenbank usw., zu definieren.
+ A: Um die Quelldaten für das Feld „Postanschrift“ in Aspose.Words für .NET anzugeben, können Sie den`FieldAddressBlock.StartAddress`Und`FieldAddressBlock.EndAddress` Eigenschaften. Diese Eigenschaften werden verwendet, um die Adressbereiche in der externen Datenquelle, beispielsweise einer CSV-Datei, einer Datenbank usw., zu definieren.
 
 #### F: Kann ich mit Aspose.Words für .NET optionale Elemente in das Feld „Postanschrift“ einschließen?
 

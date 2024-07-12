@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### F: Hur kan jag flytta en nod i ett spårat dokument utan att generera revisioner?
 
- S: Om du vill flytta en nod i ett spårat dokument utan att generera revisioner kan du använda`Remove` och`InsertAfter` eller`InsertBefore` metoder för`Node` objekt. Till exempel, för att flytta ett stycke efter ett annat stycke, kan du använda följande kod:
+ S: Om du vill flytta en nod i ett spårat dokument utan att generera revisioner kan du använda`Remove`och`InsertAfter` eller`InsertBefore` metoder för`Node` objekt. Till exempel, för att flytta ett stycke efter ett annat stycke, kan du använda följande kod:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

@@ -22,7 +22,7 @@ Trước khi đi sâu vào chi tiết, hãy đảm bảo bạn có mọi thứ b
 
 ## Thiết lập dự án Java của bạn
 
-Để bắt đầu, hãy tạo một dự án Java mới trong IDE của bạn và thêm thư viện Aspose.Words vào các phần phụ thuộc của dự án của bạn.
+Để bắt đầu, hãy tạo một dự án Java mới trong IDE của bạn và thêm thư viện Aspose.Words vào các phần phụ thuộc của dự án.
 
 ## Bước 1: Tải tài liệu
 
@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Thay thế`"original_document.docx"` Và`"modified_document.docx"` với các đường dẫn đến tài liệu của riêng bạn.
+ Thay thế`"original_document.docx"`Và`"modified_document.docx"` với các đường dẫn đến tài liệu của riêng bạn.
 
 ## Bước 2: So sánh tài liệu
 

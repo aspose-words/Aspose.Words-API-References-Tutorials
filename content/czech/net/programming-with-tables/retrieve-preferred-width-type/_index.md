@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 
-tomto tutoriálu se naučíme, jak získat preferovaný typ šířky a jeho hodnotu z buňky tabulky v dokumentu Word pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci získat preferovaný typ šířky (absolutní, relativní nebo automatický) a jeho hodnotu pro konkrétní buňku v tabulkách dokumentů aplikace Word.
+V tomto tutoriálu se naučíme, jak získat preferovaný typ šířky a jeho hodnotu z buňky tabulky v dokumentu Word pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci získat preferovaný typ šířky (absolutní, relativní nebo automatický) a jeho hodnotu pro konkrétní buňku v tabulkách dokumentů aplikace Word.
 
 ## Krok 1: Nastavení projektu
 1. Spusťte Visual Studio a vytvořte nový projekt C#.
@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Aktivujte automatické nastavení stolu
 table. AllowAutoFit = true;
 
-// Načtěte první buňku prvního řádku
+//Načtěte první buňku prvního řádku
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Načtěte preferovaný typ šířky a jeho hodnotu
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-Zde použijeme dokument k načtení první tabulky, poté povolíme automatické přizpůsobení tabulky`AllowAutoFit` vlastnictví. Poté načteme první buňku prvního řádku tabulky. Z této buňky můžeme získat preferovaný typ šířky pomocí`PreferredWidth.Type` majetku a jeho hodnoty s`PreferredWidth.Value` vlastnictví.
+ Zde použijeme dokument k načtení první tabulky, poté povolíme automatické přizpůsobení tabulky`AllowAutoFit` vlastnictví. Poté načteme první buňku prvního řádku tabulky. Z této buňky můžeme získat preferovaný typ šířky pomocí`PreferredWidth.Type` majetku a jeho hodnoty s`PreferredWidth.Value` vlastnictví.
 
 ### Ukázka zdrojového kódu pro Retrieve Preferred Width Type pomocí Aspose.Words for .NET 
 

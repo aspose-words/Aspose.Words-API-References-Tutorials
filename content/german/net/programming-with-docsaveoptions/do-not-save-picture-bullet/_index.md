@@ -2,80 +2,96 @@
 title: Bildaufzählungszeichen nicht speichern
 linktitle: Bildaufzählungszeichen nicht speichern
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie das Speichern von Bildaufzählungszeichen in Word-Dokumenten mit Aspose.Words für .NET deaktivieren.
+description: Erfahren Sie mit unserer Schritt-für-Schritt-Anleitung, wie Sie Bildaufzählungszeichen in Aspose.Words für .NET handhaben. Vereinfachen Sie die Dokumentenverwaltung und erstellen Sie mühelos professionelle Word-Dokumente.
 type: docs
 weight: 10
 url: /de/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
+## Einführung
 
-Bildaufzählungszeichen sind eine häufig verwendete Funktion in Word-Dokumenten, um benutzerdefinierte Aufzählungszeichen hinzuzufügen. In einigen Fällen kann es jedoch erforderlich sein, die Registrierung von Bildaufzählungszeichen zu deaktivieren, wenn Dokumente mit der Aspose.Words-Bibliothek für .NET bearbeitet werden. In dieser Schritt-für-Schritt-Anleitung erklären wir, wie Sie den Aspose.Words C#-Quellcode für .NET verwenden, um das Speichern von Bildaufzählungszeichen mithilfe der Speicheroptionen von DocSaveOptions zu deaktivieren.
+Hallo, liebe Entwickler! Haben Sie schon einmal mit Word-Dokumenten gearbeitet und sich dabei in den Feinheiten des Speicherns von Bildaufzählungszeichen verheddert? Es ist eines dieser winzigen Details, die einen großen Unterschied im endgültigen Erscheinungsbild Ihres Dokuments ausmachen können. Heute möchte ich Sie durch den Prozess der Handhabung von Bildaufzählungszeichen in Aspose.Words für .NET führen und mich dabei insbesondere auf die Funktion „Bildaufzählungszeichen nicht speichern“ konzentrieren. Sind Sie bereit, loszulegen? Los geht‘s!
 
-## Die Aspose.Words-Bibliothek verstehen
+## Voraussetzungen
 
-Bevor Sie sich in den Code vertiefen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten, Konvertieren und Schützen von Word-Dokumenten auf verschiedenen Plattformen, einschließlich .NET. Sie bietet viele Funktionen zum Bearbeiten von Dokumenten, z. B. zum Einfügen von Text, Ändern der Formatierung, Hinzufügen von Abschnitten und vieles mehr.
+Bevor wir anfangen, am Code herumzubasteln, müssen einige Dinge bereitstehen:
 
-## Schritt 1: Festlegen des Dokumentverzeichnisses
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie diese leistungsstarke Bibliothek installiert haben. Wenn Sie sie noch nicht haben, können Sie sie herunterladen[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Eine funktionierende .NET-Entwicklungsumgebung, beispielsweise Visual Studio.
+3. Grundkenntnisse in C#: Einige Kenntnisse der C#-Programmierung sind hilfreich.
+4. Beispieldokument: Ein Word-Dokument mit Bildaufzählungszeichen zu Testzwecken.
 
-Der erste Schritt besteht darin, das Verzeichnis anzugeben, in dem sich Ihre Dokumente befinden. Sie müssen den vollständigen Verzeichnispfad angeben. Beispiel:
+## Namespaces importieren
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ unbedingt durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
-
-## Schritt 2: Laden des Dokuments mit Bildaufzählungszeichen
-
-Als Nächstes müssen Sie das Dokument mit Bildaufzählungszeichen laden. Verwenden Sie die Document-Klasse, um das Dokument aus einer Datei zu laden. Beispiel:
+Um loszulegen, müssen Sie die erforderlichen Namespaces importieren. Dies ist ziemlich unkompliziert, aber für den Zugriff auf die Aspose.Words-Funktionen von entscheidender Bedeutung.
 
 ```csharp
-Document doc = new Document(dataDir + "Image bullet points.docx");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-In diesem Beispiel laden wir das Dokument aus der Datei „Image bullet points.docx“
+Lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Auf diese Weise können Sie ihn leicht nachvollziehen und jeden Teil des Codes verstehen.
 
-  befindet sich im Dokumentenverzeichnis.
+## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
-## Schritt 3: Aufzeichnungsoptionen konfigurieren
-
-Konfigurieren wir nun die Speicheroptionen für unser Dokument. Verwenden Sie die Klasse DocSaveOptions, um die Speichereinstellungen festzulegen. Beispiel:
-
-```csharp
-DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
-```
-
-In diesem Beispiel erstellen wir ein neues DocSaveOptions-Objekt und setzen die SavePictureBullet-Eigenschaft auf „false“, um das Speichern von Bildaufzählungszeichen zu deaktivieren.
-
-## Schritt 4: Aktivieren Sie die Funktion „Bildaufzählungszeichen nicht speichern“
-
-Um die Funktion „Bildaufzählungszeichen nicht speichern“ zu aktivieren, haben wir die Speicheroptionen bereits so konfiguriert, dass SavePictureBullet auf „false“ gesetzt ist. Dadurch wird sichergestellt, dass Bildaufzählungszeichen nicht im endgültigen Dokument gespeichert werden.
-
-## Schritt 5: Speichern Sie das Dokument
-
-Abschließend können Sie das Dokument mit der Save-Methode der Document-Klasse speichern. Geben Sie den vollständigen Pfad zur Datei und den gewünschten Dateinamen an. Beispiel:
-
-```csharp
-doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
-```
-
-Ersetzen Sie „dataDir“ unbedingt durch den Verzeichnispfad zu Ihren Dokumenten.
-
-## Beispielquellcode für DocSaveOptions-Speicheroptionen mit der Funktion „Bildaufzählungszeichen nicht speichern“ unter Verwendung von Aspose.Words für .NET
+Als Erstes müssen Sie den Pfad zu Ihrem Dokumentverzeichnis angeben. Hier sind Ihre Word-Dokumente gespeichert und hier speichern Sie die geänderten Dateien.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Ersetzen`"YOUR DOCUMENTS DIRECTORY"` durch den tatsächlichen Pfad auf Ihrem System, in dem sich Ihre Dokumente befinden.
+
+## Schritt 2: Laden Sie das Dokument mit Bildaufzählungszeichen
+
+Als Nächstes laden Sie das Word-Dokument, das Bildaufzählungszeichen enthält. Dieses Dokument wird so geändert, dass die Bildaufzählungszeichen beim Speichern entfernt werden.
+
+```csharp
 // Laden Sie das Dokument mit Bildaufzählungszeichen
 Document doc = new Document(dataDir + "Image bullet points.docx");
+```
 
+ Stellen Sie sicher, dass die Datei`"Image bullet points.docx"` existiert im angegebenen Verzeichnis.
+
+## Schritt 3: Speicheroptionen konfigurieren
+
+Konfigurieren wir nun die Speicheroptionen, um anzugeben, dass Bildaufzählungszeichen nicht gespeichert werden sollen. Hier geschieht die Magie!
+
+```csharp
 // Konfigurieren Sie Speicheroptionen mit der Funktion „Bildaufzählungszeichen nicht speichern“
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
+```
 
+ Indem man es einstellt`SavePictureBullet` Zu`false`weisen Sie Aspose.Words an, keine Bildaufzählungszeichen im Ausgabedokument zu speichern.
+
+## Schritt 4: Speichern Sie das Dokument
+
+Speichern Sie das Dokument abschließend mit den angegebenen Optionen. Dadurch wird eine neue Datei erstellt, in der die Bildaufzählungszeichen nicht enthalten sind.
+
+```csharp
 // Speichern Sie das Dokument mit den angegebenen Optionen
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
+ Die neue Datei,`"WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx"`, wird in Ihrem Dokumentverzeichnis gespeichert.
+
 ## Abschluss
 
-In dieser Anleitung haben wir erläutert, wie Sie das Speichern von Bildaufzählungszeichen in einem Dokument mithilfe der Aspose.Words-Bibliothek für .NET deaktivieren. Indem Sie die angegebenen Schritte befolgen und den bereitgestellten C#-Quellcode verwenden, können Sie diese Funktion problemlos in Ihrer C#-Anwendung anwenden. Das Deaktivieren des Speicherns von Bildaufzählungszeichen kann in einigen Situationen nützlich sein, um die Dokumentstruktur und -formatierung beizubehalten, ohne Bildaufzählungszeichen zu speichern.
+Und da haben Sie es! Mit nur wenigen Codezeilen haben Sie Aspose.Words für .NET erfolgreich so konfiguriert, dass beim Speichern eines Dokuments Bildaufzählungszeichen weggelassen werden. Dies kann unglaublich nützlich sein, wenn Sie ein sauberes, einheitliches Erscheinungsbild ohne störende Bildaufzählungszeichen benötigen.
+
+## Häufig gestellte Fragen
+
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Konvertieren von Word-Dokumenten innerhalb von .NET-Anwendungen.
+
+### Kann ich diese Funktion für andere Aufzählungszeichentypen verwenden?
+Nein, diese spezielle Funktion ist für Bildaufzählungszeichen gedacht. Aspose.Words bietet jedoch umfangreiche Optionen für die Handhabung anderer Aufzählungszeichentypen.
+
+### Wo erhalte ich Support für Aspose.Words?
+ Unterstützung erhalten Sie vom[Aspose.Words Forum](https://forum.aspose.com/c/words/8).
+
+### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?
+ Ja, Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/).
+
+### Wie erwerbe ich eine Lizenz für Aspose.Words für .NET?
+ Sie können eine Lizenz erwerben bei der[Aspose Store](https://purchase.aspose.com/buy).

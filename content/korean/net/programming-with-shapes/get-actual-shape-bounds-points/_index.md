@@ -17,7 +17,7 @@ url: /ko/net/programming-with-shapes/get-actual-shape-bounds-points/
 - C# 및 Word 문서를 사용한 단어 처리에 대한 기본 지식.
 
 ## 1단계: 새 문서 및 DocumentBuilder 만들기
- 새 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder`문서 작업에 사용할 개체입니다.
+ 새 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder` 문서 작업에 사용할 개체입니다.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 2단계: 이미지 모양 삽입
- 사용`InsertImage` 의 방법`DocumentBuilder` 문서에 이미지 모양을 삽입하는 개체입니다. 이미지 파일의 경로를 매개변수로 제공합니다.
+ 사용`InsertImage` 의 방법`DocumentBuilder`문서에 이미지 모양을 삽입하는 개체입니다. 이미지 파일의 경로를 매개변수로 제공합니다.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

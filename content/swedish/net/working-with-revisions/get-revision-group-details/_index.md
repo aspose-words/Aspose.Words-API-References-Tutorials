@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Hur får jag information om en revisionsgrupp i Aspose.Words för .NET?
 
-S: Gå igenom versionerna av dokumentet med hjälp av en loop och få tillgång till egenskaperna för varje version för att få de detaljer du vill ha. Du kan använda`RevisionType`, `Author`, `DateTime` och`ParentNode` egenskaper för att få revisionstyp, författare, datum respektive reviderad text.
+S: Gå igenom versionerna av dokumentet med hjälp av en loop och få tillgång till egenskaperna för varje version för att få de detaljer du vill ha. Du kan använda`RevisionType`, `Author`, `DateTime`och`ParentNode` egenskaper för att få revisionstyp, författare, datum respektive reviderad text.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

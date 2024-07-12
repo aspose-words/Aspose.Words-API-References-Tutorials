@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Schritt 2: Festlegen der Fußnoten- und Endnotenposition
 
- Als nächstes greifen Sie auf die`FootnoteOptions` Und`EndnoteOptions`Eigenschaften des Dokuments, um die Position von Fußnoten und Endnoten festzulegen. In diesem Beispiel legen wir die Position der Fußnoten unter dem Text und die Position der Endnoten am Ende des Abschnitts fest:
+ Als nächstes greifen Sie auf die`FootnoteOptions`Und`EndnoteOptions`Eigenschaften des Dokuments, um die Position von Fußnoten und Endnoten festzulegen. In diesem Beispiel legen wir die Position der Fußnoten unter dem Text und die Position der Endnoten am Ende des Abschnitts fest:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

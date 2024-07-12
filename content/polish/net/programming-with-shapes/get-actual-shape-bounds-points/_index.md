@@ -17,7 +17,7 @@ Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 - Podstawowa znajomość języka C# i przetwarzania tekstów w dokumentach Word.
 
 ## Krok 1: Utwórz nowy dokument i narzędzie DocumentBuider
- Utwórz nową instancję`Document` klasa i A`DocumentBuilder`sprzeciwić się pracy z dokumentem.
+ Utwórz nową instancję`Document` klasa i A`DocumentBuilder` sprzeciwić się pracy z dokumentem.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 2: Wstaw kształt obrazu
- Użyj`InsertImage` metoda`DocumentBuilder` obiekt, aby wstawić kształt obrazu do dokumentu. Podaj ścieżkę do pliku obrazu jako parametr.
+ Użyj`InsertImage` metoda`DocumentBuilder`obiekt, aby wstawić kształt obrazu do dokumentu. Podaj ścieżkę do pliku obrazu jako parametr.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

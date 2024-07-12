@@ -22,7 +22,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
 ## Schritt 1: Erstellen Sie ein Java-Projekt
 
-Beginnen wir mit der Erstellung eines neuen Java-Projekts in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Aspose.Words JAR-Dateien zum Klassenpfad Ihres Projekts hinzugefügt haben.
+Beginnen wir mit der Erstellung eines neuen Java-Projekts in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Aspose.Words-JAR-Dateien zum Klassenpfad Ihres Projekts hinzugefügt haben.
 
 ## Schritt 2: Ein Dokument verschlüsseln
 

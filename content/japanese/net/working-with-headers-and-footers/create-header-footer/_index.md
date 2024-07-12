@@ -186,4 +186,4 @@ Aspose.Words for .NET は、開発者が .NET アプリケーション内でプ�
 
 ### Q5: Aspose.Words のサポートはありますか?
 
-はい、Asposeはサポートを提供しています。[サポートフォーラム](https://forum.aspose.com/c/words/8).
+はい、Asposeはサポートを提供しています[サポートフォーラム](https://forum.aspose.com/c/words/8).

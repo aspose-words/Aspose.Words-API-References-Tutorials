@@ -1,7 +1,7 @@
 ---
 title: Extrahieren und Ändern von Inhalten in Word-Dokumenten
 linktitle: Extrahieren und Ändern von Inhalten in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Inhalte in Word-Dokumenten extrahieren und ändern. Schritt-für-Schritt-Anleitung mit Quellcode.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
         para.get_runs().get(0).set_text("new_text")
 ```
 
-## Mit Formatierungen arbeiten
+## Arbeiten mit Formatierungen
 
 Aspose.Words ermöglicht Ihnen das Arbeiten mit Formatierungsstilen:
 

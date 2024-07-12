@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ici, nous créons une instance de`Document` et`DocumentBuilder` . Penser à`Document` comme document Word vierge et`DocumentBuilder` comme votre stylo.
+ Ici, nous créons une instance de`Document`et`DocumentBuilder` . Penser à`Document` comme document Word vierge et`DocumentBuilder` comme votre stylo.
 
 ## Étape 2 : passer au début du document
 

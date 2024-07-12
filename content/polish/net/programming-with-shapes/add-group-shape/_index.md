@@ -17,14 +17,14 @@ Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 - Podstawowa znajomość języka C# i przetwarzania tekstów w dokumentach Word.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
- Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+ Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Utwórz nowy dokument i GroupShape
- Utwórz nową instancję`Document` klasa i`GroupShape`sprzeciwić się pracy z dokumentem.
+ Utwórz nową instancję`Document` klasa i`GroupShape` sprzeciwić się pracy z dokumentem.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Krok 3: Utwórz i dodaj kształty do GroupShape
- Twórz indywidualne kształty, np`accentBorderShape` I`actionButtonShape` używając`Shape` klasa. Dostosuj ich właściwości według potrzeb. Dołącz te kształty do`groupShape` obiekt.
+ Twórz indywidualne kształty, np`accentBorderShape`I`actionButtonShape` używając`Shape` klasa. Dostosuj ich właściwości według potrzeb. Dołącz te kształty do`groupShape` obiekt.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Krok 4: Ustaw wymiary dla GroupShape
- Ustaw szerokość, wysokość i rozmiar współrzędnych dla`groupShape`.
+Ustaw szerokość, wysokość i rozmiar współrzędnych dla`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## Krok 6: Zapisz dokument
- Zapisz dokument w określonym katalogu za pomocą`Save`metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithShapes.AddGroupShape.docx”.
+ Zapisz dokument w określonym katalogu za pomocą`Save` metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithShapes.AddGroupShape.docx”.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Burada bir örneğini oluşturuyoruz`Document` Ve`DocumentBuilder` . Düşün`Document` boş Word belgeniz olarak ve`DocumentBuilder` senin kalemin olarak.
+ Burada bir örneğini oluşturuyoruz`Document`Ve`DocumentBuilder` . Düşün`Document` boş Word belgeniz olarak ve`DocumentBuilder` senin kalemin olarak.
 
 ## Adım 2: Belge Başlangıcına Gidin
 

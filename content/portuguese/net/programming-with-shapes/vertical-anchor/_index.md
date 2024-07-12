@@ -1,6 +1,6 @@
 ---
-title: Âncora vertical
-linktitle: Âncora vertical
+title: Âncora Vertical
+linktitle: Âncora Vertical
 second_title: API de processamento de documentos Aspose.Words
 description: Aprenda como posicionar uma forma verticalmente em um documento usando o recurso de âncora vertical no Aspose.Words for .NET.
 type: docs
@@ -17,14 +17,14 @@ Para seguir este tutorial, você precisa ter o seguinte:
 - Conhecimento básico de C# e processamento de palavras com documentos Word.
 
 ## Etapa 1: configurar o diretório de documentos
- Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório onde você deseja salvar o documento.
+ Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real para o diretório onde você deseja salvar o documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Etapa 2: Crie um novo documento e DocumentBuilder
- Crie uma nova instância do`Document` aula e um`DocumentBuilder`objeto para trabalhar com o documento.
+ Crie uma nova instância do`Document` aula e um`DocumentBuilder` objeto para trabalhar com o documento.
 
 ```csharp
 Document doc = new Document();

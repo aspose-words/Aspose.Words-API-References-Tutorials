@@ -84,7 +84,7 @@ Belge işleme yeteneklerinizi geliştirmek ve iş akışınızı kolaylaştırma
 Evet, bölme kriterlerini özel ihtiyaçlarınıza göre özelleştirebilirsiniz. Bölüm sonlarının yanı sıra, Aspose.Words for .NET tarafından sağlanan çeşitli özellik ve yöntemleri kullanarak belgeyi başlıklar, yer imleri veya belirli içerikler gibi diğer öğelere göre bölebilirsiniz.
 
 #### S2: Bölümleri tek bir belgede birleştirmek mümkün mü?
- Evet, birden çok belgedeki bölümleri içe aktarıp birleştirerek ayrı bölümleri tekrar tek bir belgede birleştirebilirsiniz.`ImportNode` Ve`Sections.Add` yöntemler. Bu, bölme işlemini tersine çevirmenize ve orijinal belgeyi yeniden oluşturmanıza olanak tanır.
+ Evet, birden çok belgedeki bölümleri içe aktarıp birleştirerek ayrı bölümleri tekrar tek bir belgede birleştirebilirsiniz.`ImportNode`Ve`Sections.Add` yöntemler. Bu, bölme işlemini tersine çevirmenize ve orijinal belgeyi yeniden oluşturmanıza olanak tanır.
 
 #### S3: "Bölümlere Göre" özelliği kullanılarak bölünebilecek bölüm sayısında herhangi bir sınırlama var mı?
 "Bölümlere Göre" özelliği kullanılarak bölünebilecek bölümlerin sayısı Aspose.Words for .NET'in yeteneklerine ve mevcut sistem kaynaklarına bağlıdır. Genel olarak çok sayıda bölüme sahip belgelerin bölünmesini destekler ancak aşırı uzun belgeler veya çok yüksek sayıda bölüm, ek sistem kaynakları ve işlem süresi gerektirebilir.

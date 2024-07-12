@@ -21,7 +21,7 @@ Trong bước này, chúng tôi sẽ tải tài liệu Word không chứa ngôn 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// Đặt tùy chọn ngôn ngữ sẽ được sử dụng khi tải tài liệu.
+//Đặt tùy chọn ngôn ngữ sẽ được sử dụng khi tải tài liệu.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";

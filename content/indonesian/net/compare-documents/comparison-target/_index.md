@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Langkah 3: Muat Dokumen Anda
 
-Baiklah, saatnya memuat dokumen yang ingin Anda bandingkan. Anda memerlukan jalur ke dokumen-dokumen ini. Anggaplah Anda memiliki dua dokumen:`DocumentA.docx` Dan`DocumentB.docx`.
+Baiklah, saatnya memuat dokumen yang ingin Anda bandingkan. Anda memerlukan jalur ke dokumen-dokumen ini. Anggaplah Anda memiliki dua dokumen:`DocumentA.docx`Dan`DocumentB.docx`.
 
 ```csharp
 // Jalur ke direktori dokumen.

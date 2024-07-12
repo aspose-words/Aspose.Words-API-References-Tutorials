@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 步骤 2：应用有序列表格式
 
-我们将使用文档生成器的`ApplyBulletDefault`方法。我们还可以通过进入列表级别并设置所需的格式来自定义编号格式。
+我们将使用文档生成器的`ApplyBulletDefault`方法。我们还可以通过进入列表级别并设置我们想要的格式来自定义编号格式。
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();

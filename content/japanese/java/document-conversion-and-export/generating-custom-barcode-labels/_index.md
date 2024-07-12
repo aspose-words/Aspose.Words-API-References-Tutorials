@@ -90,7 +90,7 @@ private static float convertScalingFactor(String scalingFactor) throws Exception
 /// <param name="パラメータ"></param>
 /// <戻り値></戻り値>
 public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Exception {
-	//バーコードの種類と値が提供されているかどうかを確認します
+	//バーコードの種類と値が提供されているかどうかを確認する
 	if (parameters.getBarcodeType() == null || parameters.getBarcodeValue() == null)
 		return null;
 	
@@ -176,7 +176,7 @@ public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
 	{
 		generator.setCodeText(parameters.getPostalAddress());
 	}
-	//旧式のバーコード用のハードコードタイプ
+	//旧式のバーコードのハードコードタイプ
 	return generator.generateBarCodeImage();
 }
 ```

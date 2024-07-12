@@ -1,6 +1,6 @@
 ---
-title: Προσάρτηση εγγράφου
-linktitle: Προσάρτηση εγγράφου
+title: Προσθήκη εγγράφου
+linktitle: Προσθήκη εγγράφου
 second_title: Aspose.Words Document Processing API
 description: Μάθετε πώς να προσαρτάτε έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET με αυτόν τον αναλυτικό οδηγό βήμα προς βήμα. Ιδανικό για την αυτοματοποίηση της ροής εργασίας των εγγράφων σας.
 type: docs

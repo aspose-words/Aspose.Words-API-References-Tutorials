@@ -7,39 +7,51 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
+## Úvod
 
-Tento tutoriál vysvětluje, jak používat Aspose.Words pro .NET k nastavení jednotky intervalu mezi štítky na ose grafu. Poskytnutý zdrojový kód ukazuje, jak vytvořit graf, přidat data řady a přizpůsobit popisky os.
+Vítejte v našem komplexním průvodci používáním Aspose.Words pro .NET! Ať už jste zkušený vývojář nebo teprve začínáte, tento článek vás provede vším, co potřebujete vědět o využití Aspose.Words k programové manipulaci a generování dokumentů Wordu v aplikacích .NET.
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Ujistěte se, že máte následující předpoklady:
+Než se ponoříte do Aspose.Words, ujistěte se, že máte následující nastavení:
+- Visual Studio nainstalované na vašem počítači
+- Základní znalost programovacího jazyka C#
+-  Přístup ke knihovně Aspose.Words for .NET (odkaz ke stažení[tady](https://releases.aspose.com/words/net/))
 
-- Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
-- Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
+## Import jmenných prostorů a Začínáme
 
-## Krok 2: Vytvořte nový dokument a vložte graf
+Začněme importem potřebných jmenných prostorů a nastavením našeho vývojového prostředí.
 
- Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
+### Nastavení vašeho projektu ve Visual Studiu
+Chcete-li začít, spusťte Visual Studio a vytvořte nový projekt C#.
 
+### Instalace Aspose.Words pro .NET
+ Aspose.Words for .NET můžete nainstalovat prostřednictvím NuGet Package Manager nebo stažením přímo z[Aspose webové stránky](https://releases.aspose.com/words/net/).
+
+### Import jmenného prostoru Aspose.Words
+souboru kódu C# importujte jmenný prostor Aspose.Words, abyste získali přístup k jeho třídám a metodám:
+```csharp
+using Aspose.Words;
+```
+
+V této části prozkoumáme, jak vytvořit a přizpůsobit grafy pomocí Aspose.Words pro .NET.
+
+## Krok 1: Přidání grafu do dokumentu
+Chcete-li vložit graf do dokumentu aplikace Word, postupujte takto:
+
+### Krok 1.1: Inicializujte DocumentBuilder a vložte graf
 ```csharp
 // Cesta k vašemu adresáři dokumentů
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
- Dále použijte`InsertChart` metoda`DocumentBuilder` pro vložení sloupcového grafu do dokumentu.
-
-```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Krok 3: Přidejte do grafu data řady
-
-Přidejte do grafu data řady. V tomto příkladu přidáme pět položek s jejich odpovídajícími hodnotami.
-
+### Krok 1.2: Konfigurace dat grafu
+Dále nakonfigurujte data grafu přidáním řad a jejich příslušných datových bodů:
 ```csharp
 chart.Series.Clear();
 chart.Series.Add("Aspose Series 1",
@@ -47,63 +59,37 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Krok 4: Přizpůsobte popisky os
-
- Chcete-li nastavit jednotku intervalu mezi štítky na ose X, přejděte na`AxisX` vlastnost grafu a nastavte`TickLabelSpacing` vlastnost na požadovanou hodnotu. V tomto příkladu nastavíme rozestup na 2.
+## Krok 2: Úprava vlastností osy
+Nyní přizpůsobíme vlastnosti osy, abychom řídili vzhled našeho grafu:
 
 ```csharp
 chart.AxisX.TickLabelSpacing = 2;
 ```
 
-## Krok 5: Uložte dokument
-
- Nakonec uložte dokument do určeného adresáře pomocí`Save` metoda`Document` objekt.
-
+## Krok 3: Uložení dokumentu
+Nakonec uložte dokument s vloženým grafem:
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```
 
-Tím je implementace nastavení jednotky intervalu mezi štítky na ose dokončena pomocí Aspose.Words for .NET.
-
-### Příklad zdrojového kódu pro Interval Unit Between Labels On Axis pomocí Aspose.Words for .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisX.TickLabelSpacing = 2;
-	doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
-```
-
 ## Závěr
 
-tomto tutoriálu jste se naučili, jak nastavit jednotku intervalu mezi štítky na ose grafu pomocí Aspose.Words for .NET. Podle podrobného průvodce a pomocí poskytnutého zdrojového kódu můžete vytvořit nový dokument, vložit sloupcový graf, přidat data sérií a upravit popisky os tak, abyste řídili rozestupy mezi popisky.
+Gratulujeme! Naučili jste se integrovat a manipulovat s grafy pomocí Aspose.Words pro .NET. Tato výkonná knihovna umožňuje vývojářům bez námahy vytvářet dynamické a vizuálně přitažlivé dokumenty.
 
-Aspose.Words for .NET poskytuje výkonné funkce pro manipulaci s grafy v dokumentech aplikace Word. Nastavením jednotky intervalu mezi štítky na ose můžete ovládat hustotu zobrazení štítků a zlepšit čitelnost vašich grafů. To vám umožní optimalizovat prezentaci dat a zlepšit celkovou uživatelskou zkušenost.
 
-S Aspose.Words for .NET máte možnost přizpůsobit různé aspekty grafu, včetně označení os. Můžete nastavit požadovanou jednotku intervalu, abyste zajistili, že jsou štítky vhodně rozmístěny a poskytují jasnou reprezentaci datových bodů.
+## FAQ
 
-### Nejčastější dotazy
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je knihovna pro zpracování dokumentů, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word v aplikacích .NET.
 
-#### Q1. Co jsou popisky os v grafu?
-Popisky os v grafu odkazují na textovou reprezentaci hodnot podél vodorovné (osa X) nebo svislé (osa Y) grafu. Tyto popisky pomáhají identifikovat a interpretovat datové body vykreslené v grafu. Popisky os poskytují kontext a umožňují uživatelům porozumět měřítku a rozsahu hodnot v grafu.
+### Kde najdu dokumentaci k Aspose.Words pro .NET?
+ Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
 
-#### Q2. Jak mohu přizpůsobit rozestupy mezi štítky os?
- Chcete-li upravit mezery mezi popisky os v grafu pomocí Aspose.Words for .NET, můžete přistupovat k`AxisX` nebo`AxisY` vlastnost grafu a upravit`TickLabelSpacing` vlastnictví. Nastavením`TickLabelSpacing` na konkrétní hodnotu, můžete řídit jednotku intervalu mezi štítky na příslušné ose a upravovat rozestupy podle vašich požadavků.
+### Mohu Aspose.Words for .NET vyzkoušet před nákupem?
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
 
-#### Q3. Mohu nastavit různé rozestupy pro popisky osy X a Y?
-Ano, pomocí Aspose.Words for .NET můžete nastavit různé rozestupy pro popisky osy X a Y. Přístup k příslušné ose (`AxisX` pro osu X popř`AxisY` pro osu Y) grafu a upravte`TickLabelSpacing`vlastnost jednotlivě pro každou osu. To vám umožní mít různé intervalové jednotky a rozestupy pro popisky na ose X a Y, což poskytuje jemnou kontrolu nad vzhledem grafu.
+### Jak získám podporu pro Aspose.Words for .NET?
+ Pro podporu a komunitní diskuze navštivte[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
 
-#### Q4. Jaký význam má intervalová jednotka mezi popisky na ose?
-Jednotka intervalu mezi štítky na ose určuje rozestupy mezi po sobě jdoucími štítky zobrazenými v grafu. Nastavením jednotky intervalu můžete řídit hustotu štítků a zajistit, aby byly vhodně rozmístěny, aby nedocházelo k přeplňování a překrývání. Úprava jednotky intervalu vám umožní prezentovat data čitelnějším a vizuálně přitažlivějším způsobem.
-
-#### Q5. Mohu upravit další vlastnosti popisků os?
-Ano, Aspose.Words for .NET poskytuje širokou škálu vlastností pro přizpůsobení vzhledu a chování popisků os. Můžete upravit vlastnosti, jako je písmo, velikost, barva, orientace, zarovnání a další, abyste dosáhli požadovaného formátování a stylu pro popisky os. Knihovna nabízí rozsáhlou kontrolu nad prvky grafu, což vám umožňuje vytvářet profesionálně vypadající grafy přizpůsobené vašim konkrétním požadavkům.
+### Kde si mohu zakoupit licenci pro Aspose.Words pro .NET?
+ Můžete si zakoupit licenci[tady](https://purchase.aspose.com/buy).

@@ -2,196 +2,135 @@
 title: Criar marcador em documento do Word
 linktitle: Criar marcador em documento do Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como criar marcadores em documentos do Word e especificar níveis de visualização de marcadores em um PDF usando Aspose.Words for .NET.
+description: Aprenda como criar marcadores em documentos do Word usando Aspose.Words for .NET com este guia passo a passo detalhado. Perfeito para navegação e organização de documentos.
 type: docs
 weight: 10
 url: /pt/net/programming-with-bookmarks/create-bookmark/
 ---
+## Introdução
 
-Neste artigo, exploraremos o código-fonte C# acima para entender como usar a função Criar marcador na biblioteca Aspose.Words for .NET. Este recurso permite criar marcadores em um documento e especificar níveis de visualização de marcadores em um arquivo PDF de saída.
+Criar marcadores em um documento do Word pode mudar o jogo, especialmente quando você deseja navegar facilmente por documentos grandes. Hoje, percorreremos o processo de criação de marcadores usando Aspose.Words for .NET. Este tutorial irá guiá-lo passo a passo, garantindo que você entenda cada parte do processo. Então, vamos mergulhar de cabeça!
 
 ## Pré-requisitos
 
-- Conhecimento básico da linguagem C#.
-- Ambiente de desenvolvimento .NET com biblioteca Aspose.Words instalada.
+Antes de começarmos, você precisa ter o seguinte:
 
-## Etapa 1: Criando o Documento e o Gerador
+1.  Biblioteca Aspose.Words for .NET: Baixe e instale em[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro ambiente de desenvolvimento .NET.
+3. Conhecimento básico de C#: Compreensão dos conceitos básicos de programação em C#.
 
- Antes de criar marcadores, precisamos criar um documento e um construtor de documentos usando o`Document` e`DocumentBuilder` objetos:
+## Importar namespaces
+
+Para trabalhar com Aspose.Words for .NET, você precisa importar os namespaces necessários:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Etapa 1: configurar o documento e o DocumentBuilder
+
+Inicialize o documento
+
+Primeiro, precisamos criar um novo documento e inicializar o`DocumentBuilder`. Este é o ponto de partida para adicionar conteúdo e marcadores ao seu documento.
+
+```csharp
+// O caminho para o diretório de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passo 2: Criando o marcador principal
+ Explicação: O`Document` objeto é sua tela. O`DocumentBuilder` é como sua caneta, que permite escrever conteúdo e criar marcadores no documento.
 
- Nós usamos o`StartBookmark` método para iniciar um marcador principal e o`EndBookmark` método para acabar com isso. Nesse meio tempo, podemos adicionar texto e outros marcadores:
+## Etapa 2: crie o marcador principal
+
+Iniciar e terminar o marcador principal
+
+Para criar um marcador, você precisa especificar os pontos inicial e final. Aqui, criaremos um marcador chamado “Meu marcador”.
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-// Adicione mais marcadores ou texto aqui.
-
-builder. EndBookmark("My Bookmark");
 ```
 
-## Etapa 3: Criando marcadores aninhados
+ Explicação: O`StartBookmark` método marca o início do marcador e`Writeln` adiciona texto ao marcador.
 
- Também podemos criar marcadores aninhados dentro de um marcador principal. Usamos o mesmo`StartBookmark` e`EndBookmark` métodos para criar e finalizar marcadores aninhados:
+## Etapa 3: crie um marcador aninhado
+
+Adicionar marcador aninhado dentro do marcador principal
+
+Você pode aninhar marcadores dentro de outros marcadores. Aqui, adicionamos "Nested Bookmark" em "My Bookmark".
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## Etapa 4: Especificar os níveis de visualização dos marcadores no arquivo PDF de saída
+ Explicação: O aninhamento de marcadores permite uma organização de conteúdo mais estruturada e hierárquica. O`EndBookmark` método fecha o marcador atual.
 
- Nós usamos o`PdfSaveOptions` objeto para especificar os níveis de visualização do marcador no arquivo PDF de saída. Nós usamos o`BookmarksOutlineLevels` propriedade
+## Etapa 4: adicionar texto fora do marcador aninhado
 
-  para adicionar marcadores principais e marcadores aninhados com seus respectivos níveis:
+Continuar adicionando conteúdo
+
+Após o marcador aninhado, podemos continuar adicionando mais conteúdo ao marcador principal.
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+Explicação: Isso garante que o marcador principal inclua tanto o marcador aninhado quanto o texto adicional.
+
+## Passo 5: Configurar opções para salvar PDF
+
+Configurar opções de salvamento de PDF para marcadores
+
+Ao salvar o documento como PDF, podemos configurar opções para incluir marcadores.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+ Explicação: O`PdfSaveOptions` class permite que você especifique como o documento deve ser salvo como PDF. O`BookmarksOutlineLevels` propriedade define a hierarquia dos marcadores no PDF.
+
+## Etapa 6: salve o documento
+
+Salve o documento como PDF
+
+Finalmente, salve o documento com as opções especificadas.
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### Exemplo de código-fonte para Criar marcador usando Aspose.Words for .NET
-
-Aqui está o exemplo de código-fonte completo para demonstrar a criação de marcadores usando Aspose.Words for .NET:
-
-```csharp
-
-	// O caminho para o diretório de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+ Explicação: O`Save` método salva o documento no formato e local especificados. O PDF agora incluirá os marcadores que criamos.
 
 ## Conclusão
 
-Neste artigo, exploramos o código-fonte C# para entender como usar a função Criar marcador do Aspose.Words for .NET. Seguimos um guia passo a passo para criar marcadores em um documento e especificar níveis de visualização de marcadores em um arquivo PDF de saída.
+Criar marcadores em um documento do Word usando Aspose.Words for .NET é simples e imensamente útil para navegação e organização de documentos. Esteja você gerando relatórios, criando e-books ou gerenciando documentos grandes, os marcadores facilitam sua vida. Siga as etapas descritas neste tutorial e você terá um PDF marcado pronto rapidamente.
 
-### Perguntas frequentes
+## Perguntas frequentes
 
-#### P: Quais são os pré-requisitos para usar a função "Criar favoritos" no Aspose.Words for .NET?
+### Posso criar vários marcadores em níveis diferentes?
 
-R: Para usar a função "Criar favoritos" no Aspose.Words for .NET, você deve ter conhecimento básico da linguagem C#. Você também precisa de um ambiente de desenvolvimento .NET com a biblioteca Aspose.Words instalada.
+Absolutamente! Você pode criar quantos marcadores forem necessários e definir seus níveis hierárquicos ao salvar o documento como PDF.
 
-#### P: Como criar um documento no Aspose.Words for .NET?
+### Como atualizo o texto de um marcador?
 
- R: Para criar um documento no Aspose.Words for .NET, você pode usar o`Document` aula. Aqui está um exemplo de código:
+ Você pode navegar até o marcador usando`DocumentBuilder.MoveToBookmark` e atualize o texto.
 
-```csharp
-Document doc = new Document();
-```
+### É possível excluir um favorito?
 
-#### P: Como criar um marcador mestre em um documento usando Aspose.Words for .NET?
+ Sim, você pode excluir um favorito usando o`Bookmarks.Remove` método especificando o nome do marcador.
 
- R: Para criar um marcador principal em um documento usando Aspose.Words for .NET, você pode usar o`StartBookmark` método para iniciar o marcador, adicionar texto ou outros marcadores dentro e use o` EndBookmark` para acabar com isso. Aqui está um exemplo de código:
+### Posso criar marcadores em outros formatos além de PDF?
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+Sim, Aspose.Words oferece suporte a marcadores em vários formatos, incluindo DOCX, HTML e EPUB.
 
-#### P: Como criar um marcador aninhado dentro de um marcador principal usando Aspose.Words for .NET?
+### Como posso garantir que os marcadores apareçam corretamente no PDF?
 
- R: Para criar um marcador aninhado dentro de um marcador principal usando Aspose.Words for .NET, você pode usar o mesmo`StartBookmark` e`EndBookmark` métodos para iniciar e finalizar o marcador aninhado. Aqui está um exemplo de código:
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### P: Como especificar os níveis de visualização dos marcadores em um PDF de saída usando Aspose.Words for .NET?
-
- R: Para especificar os níveis de visualização de marcadores em um PDF de saída usando Aspose.Words for .NET, você pode usar o`PdfSaveOptions` classe e o`BookmarksOutlineLevels` propriedade. Você pode adicionar marcadores principais e marcadores aninhados com seus respectivos níveis. Aqui está um exemplo de código:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### P: Como salvar um documento após criar marcadores usando Aspose.Words for .NET?
-
- R: Para salvar um documento após criar marcadores usando Aspose.Words for .NET, você pode usar o`Save` método do`Document` objeto especificando o caminho do arquivo de destino. Aqui está um exemplo de código:
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### P: Como especificar os níveis de visualização dos marcadores em um PDF de saída usando Aspose.Words for .NET?
-
- R: Para especificar os níveis de visualização de marcadores em um PDF de saída usando Aspose.Words for .NET, você pode usar o`PdfSaveOptions` classe e o`BookmarksOutlineLevels` propriedade. Você pode adicionar marcadores principais e marcadores aninhados com seus respectivos níveis. Aqui está um exemplo de código:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### P: Como criar marcadores aninhados dentro de um marcador principal usando Aspose.Words for .NET?
-
- R: Para criar marcadores aninhados dentro de um marcador principal usando Aspose.Words for .NET, você pode usar o mesmo`StartBookmark` e`EndBookmark` métodos para iniciar e finalizar marcadores aninhados. Certifique-se de especificar o marcador pai como parâmetro ao chamar o`StartBookmark` método. Aqui está um exemplo de código:
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### P: Como adicionar texto dentro de um marcador usando Aspose.Words for .NET?
-
- R: Para adicionar texto dentro de um marcador usando Aspose.Words for .NET, você pode usar o`Write` método do`DocumentBuilder`objeto especificando o texto a ser adicionado. Aqui está um exemplo de código:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### P: Como criar um marcador mestre em um documento usando Aspose.Words for .NET?
-
- R: Para criar um marcador principal em um documento usando Aspose.Words for .NET, você pode usar o`StartBookmark` método para iniciar o marcador e o`EndBookmark` método para acabar com isso. Aqui está um exemplo de código:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+ Certifique-se de definir o`BookmarksOutlineLevels` corretamente no`PdfSaveOptions`. Isso garante que os marcadores sejam incluídos no esboço do PDF.

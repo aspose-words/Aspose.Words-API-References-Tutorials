@@ -2,49 +2,67 @@
 title: Sorolja fel a Használati célstílusokat
 linktitle: Sorolja fel a Használati célstílusokat
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan kapcsolhat össze és fűzhet hozzá Word-dokumentumokat, miközben megőrzi a céldokumentum listastílusait az Aspose.Words for .NET használatával.
+description: Tanulja meg, hogyan egyesítheti és kezelheti zökkenőmentesen a dokumentumlistákat az Aspose.Words for .NET segítségével. Kövesse lépésenkénti oktatóanyagunkat a hatékony dokumentumintegráció érdekében.
 type: docs
 weight: 10
 url: /hu/net/join-and-append-documents/list-use-destination-styles/
 ---
+## Bevezetés
 
-Ez az oktatóanyag végigvezeti Önt az Aspose.Words for .NET List Use Destination Styles funkciójának használatán. Ez a funkció lehetővé teszi Word-dokumentumok összekapcsolását és hozzáfűzését a céldokumentum listastílusainak használata közben.
+A dokumentumok integrálása a konzisztens stílus megőrzése mellett kihívást jelenthet, különösen listák esetén. Az Aspose.Words for .NET robusztus eszközöket kínál ezeknek a bonyolultságoknak a kezelésére, biztosítva, hogy a dokumentumok megőrizzék formázási integritásukat. Ez az oktatóanyag végigvezeti a dokumentumok és listák egyesítésének folyamatán, a célstílusok használatával a csiszolt végtermékhez.
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
+Mielőtt belevágna ebbe az oktatóanyagba, győződjön meg arról, hogy rendelkezik az alábbiakkal:
+- A Visual Studio telepítve van a gépedre.
+- Aspose.Words for .NET könyvtár integrálva a projektbe.
+- C# programozási nyelv alapvető ismerete.
 
-1. Az Aspose.Words for .NET telepítve van. Letöltheti az Aspose webhelyéről, vagy telepítheti a NuGet segítségével.
-2. Visual Studio vagy bármely más C# fejlesztői környezet.
+## Névterek importálása
 
-## 1. lépés: Inicializálja a dokumentumkönyvtárakat
-
- Először is be kell állítania a dokumentumkönyvtár elérési útját. Módosítsa az értékét`dataDir` változó ahhoz az elérési úthoz, ahol a dokumentumok találhatók.
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 2. lépés: Töltse be a forrás- és céldokumentumot
-
-Ezután be kell töltenie a forrás- és céldokumentumot az Aspose.Words használatával`Document` osztály. Frissítse a fájlneveket a`Document` konstruktor a dokumentumnevek szerint.
+Kezdje a szükséges névterek importálásával az Aspose.Words funkciók kihasználásához:
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+using Aspose.Words;
+using Aspose.Words.Lists;
 ```
 
-## 3. lépés: Állítsa a Forrásdokumentumot Folytatásra a céldokumentum után
+Bontsuk le a folyamatot egyértelmű lépésekre:
 
- Annak biztosításához, hogy a forrásdokumentum tartalma a céldokumentum vége után is folytatódjon, be kell állítania a`SectionStart` a forrásdokumentum első szakaszának tulajdonsága`SectionStart.Continuous`.
+## 1. lépés: Dokumentumútvonalak beállítása
+
+Győződjön meg arról, hogy meghatározta a könyvtár elérési útját, ahol a dokumentumok találhatók:
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+```
+
+ Cserélje ki`"YOUR_DOCUMENT_DIRECTORY_PATH"` a tényleges könyvtár elérési útjával, ahol a dokumentumokat tárolják.
+
+## 2. lépés: Töltse be a forrás és a cél dokumentumokat
+
+Töltse be a forrás- és céldokumentumot az Aspose.Words használatával:
+
+```csharp
+Document srcDoc = new Document(dataDir + "DocumentSource.docx");
+Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+```
+
+ Beállítani`"DocumentSource.docx"`és`"DocumentDestination.docx"` a tényleges fájlnevekkel.
+
+## 3. lépés: Állítsa be a Forrásdokumentum szakasz kezdetét
+
+A dokumentumok zökkenőmentes egyesítése érdekében állítsa be a forrásdokumentum szakaszának elejét:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## 4. lépés: Kezelje a lista formázását
+Ez a beállítás segít megőrizni a folytonosságot a dokumentumok között.
 
-A lista formázásának kezeléséhez ismételje meg a forrásdokumentum minden bekezdését, és ellenőrizze, hogy listaelem-e. Ha igen, akkor összehasonlítja a listaazonosítót a céldokumentumban lévő meglévő listákkal. Ha létezik azonos azonosítójú lista, akkor létrehoz egy másolatot a listáról a forrásdokumentumban, és frissíti a bekezdés listaformátumát a másolt lista használatához.
+## 4. lépés: Listaintegráció kezelése
+
+Iteráljon a forrásdokumentum bekezdésein keresztül a listaelemek kezeléséhez:
 
 ```csharp
 Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -54,9 +72,11 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
     if (para.IsListItem)
     {
         int listId = para.ListFormat.List.ListId;
+
         if (dstDoc.Lists.GetListByListId(listId) != null)
         {
             Aspose.Words.Lists.List currentList;
+
             if (newLists.ContainsKey(listId))
             {
                 currentList = newLists[listId];
@@ -66,73 +86,42 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
                 currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
                 newLists.Add(listId, currentList);
             }
+
             para.ListFormat.List = currentList;
         }
     }
 }
 ```
 
-## 5. lépés: Csatolja a forrásdokumentumot a céldokumentumhoz
+Ez a kódszegmens biztosítja, hogy a forrásdokumentum listái zökkenőmentesen integrálódjanak a céldokumentumba, megőrizve eredeti formázásukat.
 
- Most hozzáfűzheti a forrásdokumentumot a céldokumentumhoz a segítségével`AppendDocument` módszere a`Document` osztály. A`ImportFormatMode.UseDestinationStyles` paraméter biztosítja, hogy a céldokumentum listastílusait használjuk a hozzáfűzési művelet során.
+## 5. lépés: csatolja a forrásdokumentumot a céldokumentumhoz
+
+A módosított forrásdokumentum egyesítése a céldokumentumban:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## 6. lépés: Mentse el a záródokumentumot
+Ez a parancs konszolidálja a dokumentumokat, miközben megőrzi a célstílusokat.
 
-Végül mentse az egyesített dokumentumot a Célstílusok listázása funkcióval, amely engedélyezve van a segítségével`Save` módszere a`Document` osztály.
+## Következtetés
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+Az alábbi lépések követésével hatékonyan kezelheti és egyesítheti a listákat a dokumentumok között az Aspose.Words for .NET használatával. Ez a megközelítés biztosítja, hogy a végleges dokumentum stílusa és formázása egységes maradjon, javítva a dokumentumkezelés általános hatékonyságát.
 
-### Példa forráskód a List Use Destination Styles használatához Aspose.Words for .NET használatával 
+## GYIK
 
-Íme a teljes forráskód a "Cél-stílusok listája" funkciójához C# nyelven az Aspose.Words for .NET használatával:
+### Hogyan kezelhetem a beágyazott listákat az Aspose.Words for .NET használatával?
+Az Aspose.Words módszereket biztosít a beágyazott listák kezelésére a dokumentumcsomópontokon keresztül történő iteráció és a listaszerkezetek ellenőrzése révén.
 
+### Milyen előnyökkel jár a célstílusok használata a dokumentumok egyesítésében?
+A célstílusok segítenek megőrizni az egységes formázást az egyesített dokumentumokban, így biztosítva a professzionális megjelenést.
 
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Támogatja az Aspose.Words a többplatformos dokumentumegyesítést?
+Igen, az Aspose.Words támogatja a dokumentumok egyesítését különböző platformokon, beleértve a Windows és Linux környezeteket is.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Állítsa be a forrásdokumentumot úgy, hogy közvetlenül a céldokumentum vége után folytassa.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// Kövesse nyomon a létrehozott listákat.
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			// Ellenőrizze, hogy a céldokumentum tartalmaz-e már listát ezzel az azonosítóval. Ha igen, akkor lehet
-			// hogy a két lista együtt futjon. Inkább készítsen másolatot a listáról a forrásdokumentumban.
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				// Ehhez az azonosítóhoz már létezik újonnan másolt lista, kérje le a tárolt listát,
-				// és használja az aktuális bekezdésben.
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					// Adja hozzá a lista másolatát a dokumentumhoz, és tárolja későbbi hivatkozás céljából.
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				// Állítsa be ennek a bekezdésnek a listáját a másolt listára.
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	// Csatolja a forrásdokumentumot a céldokumentum végéhez.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### Testreszabhatom a lista formázását a dokumentumok egyesítése során?
+Az Aspose.Words lehetővé teszi a listaformázás széles körű testreszabását, lehetővé téve a személyre szabott dokumentum-integrációs megoldásokat.
 
-Ez az! Sikeresen megvalósította a List Use Destination Styles szolgáltatást az Aspose.Words for .NET használatával. A végső dokumentum az egyesített tartalmat fogja tartalmazni a céldokumentum listastílusaival.
+### Hol találhatok további forrásokat az Aspose.Words fejlett dokumentumkezeléséről?
+ Fedezd fel[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/) átfogó útmutatókért és API-referenciákért.

@@ -65,7 +65,7 @@ builder.InsertNode(shape);
 
 #### س: كيف يمكنني تغيير حجم الصورة في Aspose.Words؟
 
- ج: لتغيير حجم الصورة في Aspose.Words، يمكنك استخدام الملف`Width` و`Height` خصائص`Shape` هدف.
+ ج: لتغيير حجم الصورة في Aspose.Words، يمكنك استخدام الملف`Width`و`Height` خصائص`Shape` هدف.
 
 #### س: هل يمكنني تطبيق المرشحات على الصور في Aspose.Words؟
 

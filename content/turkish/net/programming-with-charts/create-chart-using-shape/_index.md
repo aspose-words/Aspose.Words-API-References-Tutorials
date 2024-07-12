@@ -2,92 +2,104 @@
 title: Şekli Kullanarak Grafik Oluşturun ve Özelleştirin
 linktitle: Şekli Kullanarak Grafik Oluşturun ve Özelleştirin
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak Word belgesindeki bir şekli kullanarak nasıl grafik oluşturacağınızı ve özelleştireceğinizi öğrenin.
+description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde grafikleri nasıl oluşturup özelleştireceğinizi öğrenin. Veri görselleştirme için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/create-chart-using-shape/
 ---
+## giriiş
 
-Bu eğitimde Aspose.Words for .NET kullanılarak bir Word belgesindeki bir şekli kullanarak grafiğin nasıl oluşturulacağı açıklanmaktadır.
+Belgelerinizde grafik oluşturmak ve özelleştirmek, günümüzün veri odaklı dünyasında çok önemli bir beceridir. Grafikler, karmaşık bilgilerin daha sindirilebilir olmasını sağlayarak verilerin görselleştirilmesine yardımcı olabilir. Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmanıza ve değiştirmenize olanak tanıyan güçlü bir kütüphanedir. Bu eğitimde, Aspose.Words for .NET'i kullanarak çizgi grafiği oluşturma ve özelleştirme sürecinde size yol göstereceğiz. Bu kılavuzun sonunda profesyonel görünümlü çizelgeleri kolaylıkla oluşturabileceksiniz.
 
 ## Önkoşullar
-Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- Aspose.Words for .NET kütüphanesi kuruldu.
-- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
+Koda dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+-  Aspose.Words for .NET Kütüphanesi: İndirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- Visual Studio: .NET'i destekleyen herhangi bir sürüm.
+- Temel C# Bilgisi: C#'ın temellerini anlamak, öğreticiyi takip etmenize yardımcı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu adım çok önemlidir çünkü Aspose.Words for .NET tarafından sağlanan sınıfları ve yöntemleri kullanmanıza olanak tanır.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
 ```
 
-## Adım 2: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder`belgeyle çalışmaya itiraz edin.
+## 1. Adım: Yeni Bir Belge Oluşturun
+
+Öncelikle yeni bir Word belgesi oluşturmanız gerekiyor. Bu belge grafiğiniz için tuval görevi görecektir.
 
 ```csharp
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Grafik Şekli Ekleme ve Yapılandırma
- kullanarak belgeye bir grafik şekli ekleyin.`InsertChart` yöntemi`DocumentBuilder` nesne. İstediğiniz grafik türünü ve boyutlarını ayarlayın.
+## 2. Adım: Grafik Ekleme
+
+ Daha sonra belgeye bir çizgi grafiği ekleyeceksiniz.`DocumentBuilder.InsertChart` Bu amaçla yöntem kullanılır.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 4. Adım: Grafiği Özelleştirin
-Grafik başlığı ve açıklama gibi çeşitli özellikleri değiştirerek grafiği özelleştirin.
+## 3. Adım: Grafik Başlığını Özelleştirin
+
+Grafik başlığını özelleştirmek, görüntülenen veriler için bağlam sağlamaya yardımcı olabilir. Aşağıdaki kodu kullanarak başlığı gösterebilir ve metnini ayarlayabilirsiniz:
 
 ```csharp
 chart.Title.Show = true;
 chart.Title.Text = "Line Chart Title";
 chart.Title.Overlay = false;
+// Başlık metni olarak boş veya boş bir değer belirtilirse, otomatik olarak oluşturulan başlığın gösterileceğini lütfen unutmayın.
+```
+
+## Adım 4: Gösterge Konumunu Ayarlayın
+
+Açıklama, grafiğinizdeki farklı veri serilerini tanımlamanıza yardımcı olur. Konumunu ve katman ayarlarını şu şekilde özelleştirebilirsiniz:
+
+```csharp
 chart.Legend.Position = LegendPosition.Left;
 chart.Legend.Overlay = true;
 ```
 
 ## Adım 5: Belgeyi Kaydedin
- Belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithCharts.CreateChartUsingShape.docx" olarak kaydediyoruz.
+
+Son olarak belgeyi kaydetmeniz gerekir. Bu adım, tüm değişikliklerinizin dosyaya yazılmasını sağlar.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ```
 
-### Aspose.Words for .NET Kullanarak Şekil Kullanarak Grafik Oluşturma için örnek kaynak kodu 
-
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Show = true;
-	chart.Title.Text = "Line Chart Title";
-	chart.Title.Overlay = false;
-	// Başlık metni olarak boş veya boş bir değer belirtilirse, otomatik olarak oluşturulan başlığın gösterileceğini lütfen unutmayın.
-	chart.Legend.Position = LegendPosition.Left;
-	chart.Legend.Overlay = true;
-	doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
-```
-
-Bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesindeki şekli kullanarak başarıyla bir grafik oluşturdunuz.
-
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki şekli kullanarak nasıl grafik oluşturulacağını öğrendiniz. Adım adım kılavuzu izleyerek bir grafik şekli ekleyip yapılandırabilir, görünümünü özelleştirebilir ve belgeyi kaydedebilirsiniz. Aspose.Words for .NET, Word belgeleri ve grafikleriyle Kelime İşleme için kapsamlı bir dizi özellik sunarak, doğrudan .NET uygulamalarınızda profesyonel görünümlü ve görsel olarak çekici grafikler oluşturmanıza olanak tanır.
 
-### SSS
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde çizgi grafiğin nasıl oluşturulacağını ve özelleştirileceğini ele aldık. Adım adım kılavuzu izleyerek artık verilerinizi etkili bir şekilde ileten görsel olarak çekici grafikler oluşturabilirsiniz. Aspose.Words for .NET çok çeşitli kişiselleştirme seçenekleri sunarak grafikleri özel ihtiyaçlarınıza göre uyarlamanıza olanak tanır.
 
-#### S1. Aspose.Words for .NET kullanarak bir Word belgesinde grafikler oluşturabilir miyim?
-Evet, Aspose.Words for .NET ile bir Word belgesinde programlı olarak grafikler oluşturabilirsiniz. Aspose.Words, çeşitli grafik türlerini eklemek, görünümlerini özelleştirmek ve grafik verilerini değiştirmek için API'ler ve işlevler sağlar.
+## SSS'ler
 
-#### Q2. Aspose.Words for .NET hangi grafik türlerini destekliyor?
-Aspose.Words for .NET, çizgi grafikler, çubuk grafikler, pasta grafikler, alan grafikleri, dağılım grafikleri ve daha fazlasını içeren çok çeşitli grafik türlerini destekler. Verilerinize ve görselleştirme gereksinimlerinize göre uygun grafik türünü seçebilirsiniz.
+### Aspose.Words for .NET'i başka türde grafikler oluşturmak için kullanabilir miyim?
 
-#### S3. Oluşturulan grafiğin görünümünü özelleştirebilir miyim?
-Evet, Aspose.Words for .NET'i kullanarak oluşturulan grafiğin görünümünü özelleştirebilirsiniz. Özel tasarım ve biçimlendirme ihtiyaçlarınızı karşılamak için grafik başlığı, gösterge konumu, veri etiketleri, eksen etiketleri, renkler ve diğer görsel öğeler gibi özellikleri değiştirebilirsiniz.
+ Evet, Aspose.Words for .NET; çubuk grafikler, pasta grafikler ve daha fazlası dahil olmak üzere çeşitli grafik türlerini destekler. Belgeleri inceleyebilirsiniz[Burada](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+
+### Satın almadan önce Aspose.Words for .NET'i nasıl deneyebilirim?
+
+ Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/). Bu, satın alma işlemi yapmadan önce kitaplığı ve özelliklerini test etmenize olanak tanır.
+
+### Sorunlarla karşılaşırsam destek almanın bir yolu var mı?
+
+ Kesinlikle. Desteğe Aspose topluluk forumları aracılığıyla erişebilirsiniz[Burada](https://forum.aspose.com/c/words/8)Topluluk ve Aspose personeli çok duyarlı.
+
+### Aspose.Words for .NET lisansını nasıl satın alabilirim?
+
+ Lisansı doğrudan Aspose web sitesinden satın alabilirsiniz.[Burada](https://purchase.aspose.com/buy). Farklı ihtiyaçlara uyacak çeşitli lisanslama seçenekleri vardır.
+
+### Kısa vadeli bir proje için geçici bir lisansa ihtiyacım olursa ne olur?
+
+ Aspose, talep edebileceğiniz geçici lisanslar sunar[Burada](https://purchase.aspose.com/temporary-license/).

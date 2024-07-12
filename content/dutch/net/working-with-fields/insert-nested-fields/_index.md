@@ -112,11 +112,11 @@ A: Het gebruik van geneste velden biedt verschillende voordelen in een Word-docu
 
 #### Vraag: Kan ik geneste velden op meerdere niveaus hebben in een Word-document met Aspose.Words voor .NET?
 
- A: Ja, het is mogelijk om geneste velden op meerdere niveaus in een Word-document te hebben met Aspose.Words voor .NET. U kunt complexe hiërarchieën van geneste velden maken met behulp van de`FieldStart.NextSibling` methode om onderliggende velden toe te voegen aan bestaande bovenliggende velden.
+A: Ja, het is mogelijk om geneste velden op meerdere niveaus in een Word-document te hebben met Aspose.Words voor .NET. U kunt complexe hiërarchieën van geneste velden maken met behulp van de`FieldStart.NextSibling` methode om onderliggende velden toe te voegen aan bestaande bovenliggende velden.
 
 #### Vraag: Hoe kan ik de eigenschappen van geneste velden in een Word-document aanpassen met Aspose.Words voor .NET?
 
- A: Om de eigenschappen van geneste velden in een Word-document aan te passen met Aspose.Words voor .NET, kunt u toegang krijgen tot de bijbehorende`FieldStart`objecten en wijzig hun eigenschappen indien nodig. U kunt opmaakopties, waarden, berekeningen enz. van geneste velden instellen om het gewenste resultaat te bereiken.
+ A: Om de eigenschappen van geneste velden in een Word-document aan te passen met Aspose.Words voor .NET, kunt u toegang krijgen tot de bijbehorende`FieldStart` objecten en wijzig hun eigenschappen indien nodig. U kunt opmaakopties, waarden, berekeningen enz. van geneste velden instellen om het gewenste resultaat te bereiken.
 
 #### Vraag: Heeft het invoegen van geneste velden invloed op de prestaties van Word-documenten met Aspose.Words voor .NET?
 

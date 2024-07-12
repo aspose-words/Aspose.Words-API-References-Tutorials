@@ -17,14 +17,14 @@ Seguindo esses tutoriais, você será capaz de manipular marcadores de maneira e
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Acessar marcadores em documento do Word](./access-bookmarks/) | Aprenda como acessar marcadores em um documento do Word usando Aspose.Words for .NET. |
-| [Atualizar dados de favoritos em documento do Word](./update-bookmark-data/) | Guia passo a passo para explicar o código-fonte C# da atualização de dados de marcadores Aspose.Words no recurso de documento Word para .NET. |
-| [Marcar colunas da tabela em um documento do Word](./bookmark-table-columns/) | Aprenda como marcar uma coluna de tabela em um documento do Word usando Aspose.Words for .NET. |
-| [Copiar texto marcado em documento do Word](./copy-bookmarked-text/) | Aprenda como copiar o texto do marcador em um documento do Word para outro documento usando Aspose.Words for .NET. |
-| [Anexar texto marcado em documento do Word](./append-bookmarked-text/) | Aprenda como adicionar texto de um marcador em um documento do Word usando Aspose.Words for .NET. |
-| [Criar marcador em documento do Word](./create-bookmark/) | Aprenda como criar marcadores em documentos do Word e especificar níveis de visualização de marcadores em um PDF usando Aspose.Words for .NET. |
-| [Mostrar ocultar marcadores em documento do Word](./show-hide-bookmarks/) | Aprenda como mostrar ou ocultar um marcador específico em um documento do Word usando Aspose.Words for .NET. |
-| [Mostrar ocultar conteúdo marcado em documento do Word](./show-hide-bookmarked-content/) | Aprenda como mostrar ou ocultar o conteúdo dos favoritos em um documento do Word usando Aspose.Words for .NET. |
-| [Desembaraçar marcadores de linha em documento do Word](./untangle-row-bookmarks/) | Aprenda como desembaraçar marcadores de linhas aninhadas em documentos do Word para remover linhas específicas sem afetar outros marcadores. |
-| [Desembaraçar em documento Word](./untangle/) | Aprenda como desembaraçar marcadores aninhados em documentos do Word em linhas adjacentes da tabela usando Aspose.Words for .NET. |
-| [Excluir linha por marcador em documento do Word](./delete-row-by-bookmark/) | Aprenda como excluir uma linha da tabela com base em um marcador específico em um documento do Word usando Aspose.Words for .NET. |
+| [Acessar marcadores em documento do Word](./access-bookmarks/) | Aprenda como acessar e manipular marcadores em documentos do Word usando Aspose.Words for .NET com este guia passo a passo detalhado. |
+| [Atualizar dados de favoritos em documento do Word](./update-bookmark-data/) | Atualize facilmente o conteúdo de documentos do Word usando marcadores e Aspose.Words .NET. Este guia revela o poder de automatizar relatórios, personalizar modelos e muito mais. |
+| [Marcar colunas da tabela em um documento do Word](./bookmark-table-columns/) | Aprenda como marcar colunas de tabela em um documento do Word usando Aspose.Words for .NET com este tutorial passo a passo abrangente. |
+| [Copiar texto marcado em documento do Word](./copy-bookmarked-text/) | Copie facilmente texto marcado entre documentos do Word usando Aspose.Words for .NET. Aprenda como com este guia passo a passo. |
+| [Anexar texto marcado em documento do Word](./append-bookmarked-text/) | Aprenda como anexar texto marcado em um documento do Word usando Aspose.Words for .NET com este guia passo a passo. Perfeito para desenvolvedores. |
+| [Criar marcador em documento do Word](./create-bookmark/) | Aprenda como criar marcadores em documentos do Word usando Aspose.Words for .NET com este guia passo a passo detalhado. Perfeito para navegação e organização de documentos. |
+| [Mostrar ocultar marcadores em documento do Word](./show-hide-bookmarks/) | Aprenda como mostrar ou ocultar marcadores dinamicamente em um documento do Word usando Aspose.Words for .NET com nosso guia passo a passo. Perfeito para desenvolvedores. |
+| [Mostrar ocultar conteúdo marcado em documento do Word](./show-hide-bookmarked-content/) | Aprenda como mostrar ou ocultar dinamicamente o conteúdo marcado em documentos do Word usando Aspose.Words for .NET com este guia passo a passo abrangente. |
+| [Desembaraçar marcadores de linha em documento do Word](./untangle-row-bookmarks/) | Desembarace marcadores de linhas emaranhados em seus documentos do Word com facilidade usando Aspose.Words for .NET. Este guia orienta você no processo para um gerenciamento de favoritos mais limpo e seguro. |
+| [Desembaraçar em documento Word](./untangle/) | Domine o desembaraço de marcadores em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo detalhado. Perfeito para desenvolvedores .NET. |
+| [Excluir linha por marcador em documento do Word](./delete-row-by-bookmark/) | Aprenda como excluir uma linha por marcador em um documento do Word usando Aspose.Words for .NET. Siga nosso guia passo a passo para um gerenciamento eficiente de documentos. |

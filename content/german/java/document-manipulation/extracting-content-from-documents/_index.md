@@ -79,7 +79,7 @@ Document dstDoc = ExtractContentHelper.generateDocument(doc, extractedNodes);
 dstDoc.save("Your Directory Path" + "ExtractContent.ExtractContentBetweenParagraphs.docx");
 ```
 
-## Extrahieren von Inhalten zwischen Absatzstilen
+## Extrahieren von Inhalten zwischen Absatzformaten
 
 ```java
 // Java-Codebeispiel zum Extrahieren von Inhalten zwischen Absatzstilen
@@ -232,7 +232,7 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie haben gelernt, wie Sie mit Aspose.Words für Java Inhalte aus Dokumenten extrahieren. In diesem Handbuch wurden verschiedene Extraktionstechniken behandelt, darunter Inhalte zwischen Knoten auf Blockebene, Lesezeichen, Kommentarbereiche, Absätze und mehr. Sie sind jetzt in der Lage, die Extraktion von Dokumentinhalten in Ihren Java-Anwendungen effizient durchzuführen.
+Herzlichen Glückwunsch! Sie haben gelernt, wie Sie mit Aspose.Words für Java Inhalte aus Dokumenten extrahieren. In diesem Handbuch wurden verschiedene Extraktionstechniken behandelt, darunter Inhalte zwischen Blockknoten, Lesezeichen, Kommentarbereichen, Absätzen und mehr. Sie sind jetzt in der Lage, die Extraktion von Dokumentinhalten in Ihren Java-Anwendungen effizient durchzuführen.
 
 ## Häufig gestellte Fragen
 

@@ -20,7 +20,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a következő e
 
 ## Bevezetés
 
-A mai digitális világban általános követelmény a Word-dokumentumok HTML-oldalakká alakítása. Az Aspose.Words leegyszerűsíti ezt a feladatot azáltal, hogy egy Java API-t biztosít, amely lehetővé teszi, hogy a Word dokumentumokat könnyedén HTML-oldalakra bontsuk. Kezdjük el.
+A mai digitális világban általános követelmény a Word-dokumentumok HTML-oldalakká alakítása. Az Aspose.Words leegyszerűsíti ezt a feladatot azáltal, hogy egy Java API-t biztosít, amely lehetővé teszi számunkra, hogy a Word dokumentumokat könnyedén HTML-oldalakra bontsuk. Kezdjük el.
 
 ## A Projekt beállítása
 

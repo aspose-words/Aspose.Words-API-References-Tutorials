@@ -14,7 +14,7 @@ url: /ru/net/working-with-formfields/insert-form-fields/
 
 ## Шаг 1. Инициализация объектов Document и DocumentBuilder
 
- Сначала инициализируйте`Document` и`DocumentBuilder` объекты:
+ Сначала инициализируйте`Document`и`DocumentBuilder` объекты:
 
 ```csharp
 Document doc = new Document();

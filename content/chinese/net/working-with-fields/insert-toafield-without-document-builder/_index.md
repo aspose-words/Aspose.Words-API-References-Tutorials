@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/working-with-fields/insert-toafield-without-document-builder/
 ---
 
-以下是分步指南，用于解释下面的 C# 源代码，该代码使用了 Aspose.Words for .NET 的“TOA 字段插入”功能。请仔细遵循每个步骤以获得所需的结果。
+以下是分步指南，用于解释下面的 C# 源代码，该代码使用了 Aspose.Words for .NET 的“TOA 字段插入”功能。请仔细按照每个步骤操作以获得所需的结果。
 
 ## 步骤 1：文档目录设置
 

@@ -72,7 +72,7 @@ public class DocumentRenderer {
 
 ## 结论
 
-在本指南中，我们介绍了使用 Aspose.Words for Java 将文档渲染为 HTML 的过程。这个多功能 API 简化了任务并为您的 HTML 输出提供了各种自定义选项。无论您是在进行文档转换、Web 内容生成还是任何其他与文档相关的任务，Aspose.Words for Java 都能满足您的需求。
+在本指南中，我们介绍了使用 Aspose.Words for Java 将文档呈现为 HTML 的过程。这个多功能 API 简化了任务并为您的 HTML 输出提供了各种自定义选项。无论您是在进行文档转换、Web 内容生成还是任何其他与文档相关的任务，Aspose.Words for Java 都能满足您的需求。
 
 ## 常见问题解答
 

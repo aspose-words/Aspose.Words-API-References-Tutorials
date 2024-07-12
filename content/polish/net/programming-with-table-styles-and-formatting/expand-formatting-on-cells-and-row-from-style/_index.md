@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Krok 3: Przejdź do pierwszej komórki pierwszej tabeli
- Aby rozpocząć, musimy przejść do pierwszej komórki pierwszej tabeli w dokumencie. Używamy`GetChild()` I`FirstRow.FirstCell` metody uzyskania odwołania do pierwszej komórki.
+ Aby rozpocząć, musimy przejść do pierwszej komórki pierwszej tabeli w dokumencie. Używamy`GetChild()`I`FirstRow.FirstCell` metody uzyskania odwołania do pierwszej komórki.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

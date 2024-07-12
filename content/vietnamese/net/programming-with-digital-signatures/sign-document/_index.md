@@ -2,102 +2,109 @@
 title: Ký tài liệu Word
 linktitle: Ký tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách ký điện tử vào tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách ký tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Bảo mật tài liệu của bạn một cách dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/programming-with-digital-signatures/sign-document/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để sử dụng tính năng ký tài liệu với Aspose.Words dành cho .NET. Tính năng này cho phép bạn ký điện tử vào tài liệu Word bằng chứng chỉ. Làm theo các bước dưới đây:
+## Giới thiệu
 
-## Bước 1: Tải chứng chỉ
+Trong thế giới kỹ thuật số ngày nay, việc bảo mật tài liệu của bạn trở nên quan trọng hơn bao giờ hết. Chữ ký số cung cấp một cách để đảm bảo tính xác thực và tính toàn vẹn của tài liệu của bạn. Nếu bạn đang muốn ký một tài liệu Word theo chương trình bằng Aspose.Words cho .NET thì bạn đã đến đúng nơi. Hướng dẫn này sẽ hướng dẫn bạn toàn bộ quá trình, từng bước một, một cách đơn giản và hấp dẫn.
 
-Bắt đầu bằng cách tải chứng chỉ ký bằng lớp Chứng chỉHolder:
+## Điều kiện tiên quyết
+
+Trước khi đi sâu vào mã, có một số điều bạn cần chuẩn bị sẵn:
+
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt phiên bản Aspose.Words for .NET mới nhất. Bạn có thể tải nó xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường .NET: Đảm bảo bạn đã thiết lập môi trường phát triển .NET (ví dụ: Visual Studio).
+3. Chứng chỉ kỹ thuật số: Lấy chứng chỉ kỹ thuật số (ví dụ: tệp .pfx) để ký tài liệu.
+4. Tài liệu cần ký: Chuẩn bị sẵn tài liệu Word mà bạn muốn ký.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các không gian tên cần thiết. Thêm các lệnh sử dụng sau vào dự án của bạn:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.Security.Cryptography.X509Certificates;
+```
+
+Bây giờ, hãy chia quy trình thành các bước có thể quản lý được.
+
+## Bước 1: Tải chứng chỉ số
+
+Bước đầu tiên là tải chứng chỉ số từ tệp. Giấy chứng nhận này sẽ được sử dụng để ký tài liệu.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Tải chứng chỉ kỹ thuật số.
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Hãy đảm bảo chỉ định đường dẫn chính xác tới chứng chỉ và mật khẩu liên quan của bạn.
+### Giải trình
 
-## Bước 2: Ký văn bản
+- `dataDir`: Đây là thư mục lưu trữ chứng chỉ và tài liệu của bạn.
+- `CertificateHolder.Create` : Phương thức này tải chứng chỉ từ đường dẫn đã chỉ định. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục của bạn và`"morzal.pfx"` với tên của tệp chứng chỉ của bạn. Các`"aw"` là mật khẩu cho chứng chỉ.
 
-Sử dụng lớp DigitalSignatureUtil để ký tài liệu:
+## Bước 2: Tải tài liệu Word
 
-```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-	certHolder);
-```
-
-Đảm bảo chỉ định đường dẫn chính xác cho tài liệu nguồn và tài liệu đã ký.
-
-### Mã nguồn mẫu cho Tài liệu ký bằng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh để ký một tài liệu bằng Aspose.Words cho .NET:
+Tiếp theo, tải tài liệu Word bạn muốn ký.
 
 ```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-		certHolder);
-
+// Tải tài liệu cần được ký.
+Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-Bằng cách làm theo các bước này, bạn có thể dễ dàng ký vào tài liệu Word bằng Aspose.Words cho .NET.
+### Giải trình
+
+- `Document` : Lớp này đại diện cho tài liệu Word. Thay thế`"Digitally signed.docx"`với tên tài liệu của bạn.
+
+## Bước 3: Ký vào tài liệu
+
+ Bây giờ, hãy sử dụng`DigitalSignatureUtil.Sign` phương thức ký văn bản.
+
+```csharp
+// Ký tài liệu.
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx", certHolder);
+```
+
+### Giải trình
+
+- `DigitalSignatureUtil.Sign`: Phương pháp này ký tài liệu bằng chứng chỉ đã tải. Tham số đầu tiên là đường dẫn đến tài liệu gốc, tham số thứ hai là đường dẫn đến tài liệu đã ký và tham số thứ ba là chủ sở hữu chứng chỉ.
+
+## Bước 4: Lưu tài liệu đã ký
+
+Cuối cùng, lưu tài liệu đã ký vào vị trí đã chỉ định.
+
+```csharp
+// Lưu tài liệu đã ký.
+doc.Save(dataDir + "Document.Signed.docx");
+```
+
+### Giải trình
+
+- `doc.Save` : Phương pháp này lưu tài liệu đã ký. Thay thế`"Document.Signed.docx"` với tên mong muốn của tài liệu đã ký của bạn.
 
 ## Phần kết luận
 
- Trong hướng dẫn này, chúng ta đã khám phá tính năng ký tài liệu trong Aspose.Words dành cho .NET. Bằng cách tải chứng chỉ ký và sử dụng`DigitalSignatureUtil.Sign` phương pháp này, chúng ta có thể ký điện tử vào một tài liệu Word. Việc ký tài liệu cung cấp khả năng xác thực và đảm bảo tính toàn vẹn của nội dung tài liệu, khiến nó trở thành một tính năng có giá trị để quản lý tài liệu an toàn và đáng tin cậy.
+Và bạn có nó rồi đấy! Bạn đã ký thành công tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đơn giản này, bạn có thể đảm bảo tài liệu của mình được ký và xác thực an toàn. Hãy nhớ rằng, chữ ký điện tử là một công cụ mạnh mẽ trong việc bảo vệ tính toàn vẹn của tài liệu của bạn, vì vậy hãy sử dụng chúng bất cứ khi nào cần thiết.
 
-### Câu hỏi thường gặp về tài liệu ký hiệu
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Việc ký tài liệu trong Aspose.Words dành cho .NET là gì?
+### Chữ ký số là gì?
+Chữ ký số là một dạng chữ ký điện tử có thể được sử dụng để xác thực danh tính của người ký và đảm bảo rằng tài liệu không bị thay đổi.
 
-Trả lời: Ký tài liệu trong Aspose.Words cho .NET đề cập đến quá trình ký điện tử vào tài liệu Word bằng chứng chỉ. Tính năng này thêm chữ ký số vào tài liệu, cung cấp tính xác thực, tính toàn vẹn và không thể chối bỏ nội dung của tài liệu.
+### Tại sao tôi cần chứng chỉ kỹ thuật số?
+Cần có chứng chỉ số để tạo chữ ký số. Nó chứa khóa công khai và danh tính của chủ sở hữu chứng chỉ, cung cấp phương tiện để xác minh chữ ký.
 
-#### Câu hỏi: Làm cách nào tôi có thể tải chứng chỉ ký trong Aspose.Words cho .NET?
+### Tôi có thể sử dụng bất kỳ tệp .pfx nào để ký không?
+Có, miễn là tệp .pfx chứa chứng chỉ kỹ thuật số hợp lệ và bạn có mật khẩu để truy cập nó.
 
- Trả lời: Để tải chứng chỉ ký trong Aspose.Words cho .NET, bạn có thể sử dụng`CertificateHolder` lớp học. Tạo một thể hiện của`CertificateHolder` bằng cách cung cấp đường dẫn đến tệp chứng chỉ và mật khẩu liên quan. Đây là một ví dụ:
+### Aspose.Words cho .NET có được sử dụng miễn phí không?
+ Aspose.Words for .NET là một thư viện thương mại. Bạn có thể tải về dùng thử miễn phí[đây](https://releases.aspose.com/) , nhưng bạn sẽ cần phải mua giấy phép để có đầy đủ chức năng. Bạn có thể mua nó[đây](https://purchase.aspose.com/buy).
 
-```csharp
-CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx", "password");
-```
-
-Đảm bảo cung cấp đường dẫn chính xác đến chứng chỉ của bạn và mật khẩu liên quan.
-
-#### Hỏi: Làm cách nào để tôi ký tài liệu Word bằng Aspose.Words cho .NET?
-
- Trả lời: Để ký tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`DigitalSignatureUtil` lớp học. Gọi`Sign` phương thức, cung cấp đường dẫn đến tài liệu nguồn, đường dẫn đến tài liệu đã ký (đầu ra) và`CertificateHolder` sự vật. Đây là một ví dụ:
-
-```csharp
-DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/document.docx", certHolder);
-```
-
-Đảm bảo rằng bạn cung cấp đường dẫn chính xác cho tài liệu nguồn và tài liệu đã ký (đầu ra).
-
-#### Hỏi: Mục đích của việc ký văn bản là gì?
-
-Trả lời: Việc ký tài liệu đóng vai trò như một phương pháp đảm bảo tính xác thực và tính toàn vẹn của tài liệu. Bằng cách ký điện tử một tài liệu, bạn có thể cung cấp bằng chứng về nguồn gốc của nó, xác minh nội dung của nó không bị thay đổi và thiết lập tính chống chối bỏ. Ký tài liệu thường được sử dụng cho các tài liệu pháp lý, tài chính và nhạy cảm.
-
-#### Câu hỏi: Tôi có thể sử dụng bất kỳ chứng chỉ nào để ký tài liệu trong Aspose.Words cho .NET không?
-
-Trả lời: Để ký tài liệu trong Aspose.Words cho .NET, bạn cần sử dụng chứng chỉ X.509 hợp lệ. Chứng chỉ này có thể được lấy từ cơ quan cấp chứng chỉ đáng tin cậy (CA) hoặc chứng chỉ tự ký có thể được sử dụng cho mục đích thử nghiệm.
-
-#### Câu hỏi: Aspose.Words for .NET hỗ trợ ký tài liệu ở định dạng tệp nào?
-
- Trả lời: Aspose.Words for .NET hỗ trợ ký tài liệu cho tài liệu Word ở định dạng tệp DOCX. Bạn có thể ký các tệp DOCX bằng cách sử dụng`DigitalSignatureUtil` lớp và chứng chỉ phù hợp.
-
-#### Hỏi: Tôi có thể ký nhiều tài liệu Word bằng cùng một chứng chỉ không?
-
-Đáp: Có, bạn có thể ký nhiều tài liệu Word bằng cùng một chứng chỉ. Khi bạn đã tải chứng chỉ bằng cách sử dụng`CertificateHolder` lớp, bạn có thể sử dụng lại nó để ký nhiều tài liệu bằng cách gọi lớp`DigitalSignatureUtil.Sign` phương thức với các đường dẫn tài liệu nguồn và đã ký khác nhau.
-
-#### Hỏi: Việc ký tài liệu có làm thay đổi tài liệu gốc không?
-
-Trả lời: Việc ký tài liệu bằng Aspose.Words cho .NET không sửa đổi tài liệu gốc. Thay vào đó, nó tạo ra một bản sao tài liệu được ký điện tử, giữ nguyên tài liệu gốc. Bản sao được ký điện tử có chứa chữ ký số được bổ sung, đảm bảo tính toàn vẹn của nội dung tài liệu.
-
-#### Câu hỏi: Tôi có thể xác minh chữ ký điện tử của tài liệu đã ký bằng Aspose.Words cho .NET không?
-
- Trả lời: Có, Aspose.Words for .NET cung cấp chức năng xác minh chữ ký số của tài liệu đã ký. Bạn có thể dùng`DigitalSignatureUtil.Verify` phương pháp kiểm tra tính hợp lệ và xác thực của chữ ký số.
+### Tôi có thể tìm thêm thông tin về Aspose.Words cho .NET ở đâu?
+ Bạn có thể tìm thấy tài liệu toàn diện[đây](https://reference.aspose.com/words/net/) và hỗ trợ[đây](https://forum.aspose.com/c/words/8).

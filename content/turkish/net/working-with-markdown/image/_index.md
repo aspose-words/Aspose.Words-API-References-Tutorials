@@ -65,7 +65,7 @@ Tebrikler! Artık Aspose.Words for .NET ile görseller özelliğini nasıl kulla
 
 #### S: Aspose.Words'te bir resmi nasıl yeniden boyutlandırabilirim?
 
- C: Aspose.Words'te bir resmi yeniden boyutlandırmak için`Width` Ve`Height` özellikleri`Shape` nesne.
+ C: Aspose.Words'te bir resmi yeniden boyutlandırmak için`Width`Ve`Height` özellikleri`Shape` nesne.
 
 #### S: Aspose.Words'teki görsellere filtre uygulayabilir miyim?
 

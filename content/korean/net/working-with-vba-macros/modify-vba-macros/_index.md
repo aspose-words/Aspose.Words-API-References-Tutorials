@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## 3단계: 매크로 소스 코드 수정
- 이제 VBA 프로젝트의 첫 번째 매크로 소스 코드를 수정하겠습니다. 교체`newSourceCode` 사용하려는 새 소스 코드를 변수에 추가합니다.
+이제 VBA 프로젝트의 첫 번째 매크로 소스 코드를 수정하겠습니다. 교체`newSourceCode` 사용하려는 새 소스 코드를 변수에 추가합니다.
 
 ```csharp
 const string newSourceCode = "Test change source code";

@@ -14,7 +14,7 @@ Les extensions Web sont devenues partie intégrante des systèmes modernes de ge
 
 ## Conditions préalables
 
-Avant de plonger dans les détails techniques, assurez-vous que les conditions préalables suivantes sont remplies :
+Avant d’entrer dans les détails techniques, assurez-vous d’avoir les conditions préalables suivantes en place :
 
 - Compréhension de base de la programmation Python.
 -  Référence de l'API Aspose.Words pour Python (disponible sur[ici](https://reference.aspose.com/words/python-net/).
@@ -101,7 +101,7 @@ Après avoir incorporé les extensions Web et apporté les modifications nécess
 document.save("output.docx", aspose.words.SaveFormat.DOCX)
 ```
 
-## Conseils pour l’optimisation des performances
+## Conseils pour l'optimisation des performances
 
 Pour garantir des performances optimales lors de l'utilisation d'extensions Web, tenez compte des conseils suivants :
 

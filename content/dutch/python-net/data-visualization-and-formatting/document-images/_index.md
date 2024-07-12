@@ -10,11 +10,11 @@ url: /nl/python-net/data-visualization-and-formatting/document-images/
 
 ## Invoering
 
-In een wereld waar de aandachtsspanne kleiner wordt en de overdaad aan informatie een constante uitdaging is, wordt het gebruik van rijke mediabeelden een cruciale strategie om uw documenten te laten opvallen. Visuele inhoud heeft het unieke vermogen om complexe concepten snel over te brengen, waardoor het voor uw publiek gemakkelijker wordt om belangrijke ideeën en inzichten te begrijpen.
+In een wereld waarin de aandachtsspanne kleiner wordt en de overdaad aan informatie een constante uitdaging is, wordt het gebruik van rijke mediabeelden een cruciale strategie om uw documenten te laten opvallen. Visuele inhoud heeft het unieke vermogen om complexe concepten snel over te brengen, waardoor het voor uw publiek gemakkelijker wordt om belangrijke ideeën en inzichten te begrijpen.
 
 ## De rol van Rich Media-afbeeldingen begrijpen
 
-Rich media-afbeeldingen omvatten verschillende soorten visuele inhoud, zoals foto's, diagrammen, infographics en grafieken. Ze kunnen worden gebruikt om concepten te illustreren, context te bieden, gegevens te presenteren en emoties op te roepen. Door afbeeldingen in uw documenten op te nemen, kunt u saaie en monotone tekst transformeren in boeiende verhalen die resoneren met uw lezers.
+Rich media-afbeeldingen omvatten verschillende soorten visuele inhoud, zoals foto's, diagrammen, infographics en grafieken. Ze kunnen worden gebruikt om concepten te illustreren, context te bieden, gegevens te presenteren en emoties op te roepen. Door afbeeldingen in uw documenten op te nemen, kunt u saaie en monotone tekst omzetten in boeiende verhalen die resoneren met uw lezers.
 
 ## Aan de slag met Aspose.Words voor Python
 

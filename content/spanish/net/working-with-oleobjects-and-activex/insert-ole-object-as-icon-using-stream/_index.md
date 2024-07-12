@@ -119,7 +119,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 A. Para incrustar el código para insertar un objeto OLE como un icono de una secuencia en su proyecto, siga estos pasos:
 -  Importe las referencias necesarias agregando las apropiadas`using` declaraciones.
--  Cree un nuevo documento y un generador de documentos utilizando el`Document` y`DocumentBuilder` clases.
+-  Cree un nuevo documento y un generador de documentos utilizando el`Document`y`DocumentBuilder` clases.
 - Utilice el código para insertar el objeto OLE como un icono de una secuencia.
 -  Guarde el documento usando el`Save` método con la ruta de destino adecuada.
 
