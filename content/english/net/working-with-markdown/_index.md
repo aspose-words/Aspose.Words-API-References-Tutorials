@@ -19,7 +19,7 @@ Words Processing with Markdown provides a comprehensive resource for learning ho
 | [Inline Code](./inline-code/) | Learn how to inline code with Aspose.Words for .NET Step-by-step guide. |
 | [Autolink](./autolink/) | Learn how to insert autolink with Aspose.Words for .NET Step-by-step guide. |
 | [Link](./link/) | Learn how to insert links with Aspose.Words for .NET. Step-by-step guide. |
-| [Image](./image/) | Learn how to insert and customize image with Aspose.Words for .NET Step-by-step guide. |
+| [Image](./image/) | Learn how to add images to your documents using Aspose.Words for .NET with this step-by-step guide. Enhance your docs with visuals in no time. |
 | [Horizontal Rule](./horizontal-rule/) | Learn how to insert a horizontal rule with Aspose.Words for .NET Step-by-step guide. |
 | [Heading](./heading/) | Learn how to use heading with Aspose.Words for .NET Step-by-step guide. |
 | [Setext Heading](./setext-heading/) | Learn how to use Setext headings to format your documents with Aspose.Words for .NET Step-by-step guide. |
