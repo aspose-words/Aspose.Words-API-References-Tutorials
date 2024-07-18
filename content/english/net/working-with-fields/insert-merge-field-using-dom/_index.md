@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Next, we need to move the cursor to a specific paragraph in the document where we want to insert the merge field.
 
 ```csharp
-// Move cursor to paragraph.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Step 6: Insert the Merge Field
