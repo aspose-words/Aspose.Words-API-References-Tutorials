@@ -45,15 +45,7 @@ Load your document into an Aspose.Words `Document` object. This allows you to ma
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Step 3: Update Page Layout
-
-Call the `UpdatePageLayout` method. This renders the document in memory and captures any warnings that occur during rendering.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Step 4: Set Up the Warning Callback
+## Step 3: Set Up the Warning Callback
 
 To capture and handle warnings, create a class that implements the `IWarningCallback` interface. This class will log any warnings that occur during document processing.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // We are only interested in fonts being substituted.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Step 5: Assign the Callback to the Document
+## Step 4: Assign the Callback to the Document
 
 Assign the warning callback to the document. This ensures that any font issues are captured and logged.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Step 5: Update Page Layout
+
+Call the `UpdatePageLayout` method. This renders the document in memory and captures any warnings that occur during rendering.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Step 6: Save the Document
