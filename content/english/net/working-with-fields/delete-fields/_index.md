@@ -69,11 +69,7 @@ Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to your document direct
 Iterate through all fields in the document and remove them:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 This loop iterates backwards through the fields collection to avoid issues with modifying the collection while iterating.
