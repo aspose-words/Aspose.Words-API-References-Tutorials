@@ -2,92 +2,102 @@
 title: Cleanup Unused Styles And Lists
 linktitle: Cleanup Unused Styles And Lists
 second_title: Aspose.Words Document Processing API
-description: Step-by-step guide to cleaning up unused styles and lists in a document with Aspose.Words for .NET.
+description: Clean up your Word documents with Aspose.Words for .NET by removing unused styles and lists. Follow this step-by-step guide to streamline your documents effortlessly.
 type: docs
 weight: 10
 url: /net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
+## Introduction
 
-In this tutorial, we will walk you through the C# source code to clean up unused styles and lists with Aspose.Words for .NET. This feature allows you to remove styles and lists that are not used in a document.
+Hey there! Have you ever felt like your Word documents are getting a bit cluttered? You know, those unused styles and lists that just sit there, taking up space and making your document look more complex than it needs to be? Well, you're in luck! Today, we're diving into a neat little trick using Aspose.Words for .NET to clean up those unused styles and lists. It's like giving your document a nice, refreshing bath. So, grab your coffee, sit back, and let's get started!
 
-## Step 1: Project Setup
+## Prerequisites
 
-To get started, create a new C# project in your favorite IDE. Make sure the Aspose.Words for .NET library is referenced in your project.
+Before we dive into the nitty-gritty details, let's make sure you have everything you need. Here's a quick checklist:
 
-## Step 2: Loading the document
+- Basic Knowledge of C#: You should be comfortable with C# programming.
+- Aspose.Words for .NET: Ensure you have this library installed. If not, you can download it [here](https://releases.aspose.com/words/net/).
+- Development Environment: Any C# compatible IDE like Visual Studio.
+- Sample Document: A Word document with some unused styles and lists to clean up.
 
-In this step, we will load the Word document containing the unused styles and lists that we want to clean up. Use the following code to load the document:
+## Import Namespaces
+
+First things first, let's get our namespaces in order. You'll need to import a few essential namespaces to work with Aspose.Words.
 
 ```csharp
-// Path to the documents directory.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Cleaning;
+```
+
+## Step 1: Load Your Document
+
+The first step is to load the document you want to clean up. You'll need to specify the path to your document directory. This is where your Word file is located.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
 
-Replace `"YOUR DOCUMENTS DIRECTORY"` with the actual path of the directory where your document is located.
+## Step 2: Check Current Styles and Lists
 
-## Step 3: Count styles and lists before cleaning
-
-Before cleaning, we will count the number of styles and lists present in the document. Use the following code to display the counters:
+Before we start cleaning up, it's a good idea to see how many styles and lists are currently in your document. This will give us a baseline to compare against after the cleanup.
 
 ```csharp
-Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
-$"Number of lists before cleaning: {doc.Lists.Count}");
+Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists before Cleanup: {doc.Lists.Count}");
 ```
 
-These instructions show the number of styles and lists present in the document before cleaning.
+## Step 3: Define Cleanup Options
 
-## Step 4: Clean up unused styles and lists
-
-Now let's clean up unused styles and lists from the document. Use the following code to perform the cleanup:
+Now, it's time to define the cleanup options. In this example, we're going to remove unused styles but keep the unused lists. You can adjust these options based on your needs.
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-doc. Cleanup(cleanupOptions);
 ```
 
-This code cleans up unused styles and lists from the document using the specified options. In this example, we enabled the `UnusedStyles` option to remove unused styles and disabled the `UnusedLists` option to keep the lists even if they are not used.
+## Step 4: Perform the Cleanup
 
-## Step 5: Count styles and lists after cleaning
-
-After doing the cleanup, we'll count the styles and lists again to check if they've been collapsed. Use the following code to display the new counters:
+With our cleanup options set, we can now clean up the document. This step will remove the unused styles and keep the unused lists intact.
 
 ```csharp
-Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-				  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
+doc.Cleanup(cleanupOptions);
 ```
 
-These instructions show the numbers of styles and lists remaining after cleaning.
+## Step 5: Check Styles and Lists After Cleanup
 
-### Example source code for Cleanup Unused Styles And Lists using Aspose.Words for .NET
+To see the impact of our cleanup, let's check the count of styles and lists again. This will show how many styles were removed.
 
 ```csharp
-
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Unused styles.docx");
-
-	// Combined with the built-in styles, the document now has eight styles.
-	// A custom style is marked as "used" while there is any text within the document
-	// formatted in that style. This means that the 4 styles we added are currently unused.
-	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
-					  $"Count of lists before Cleanup: {doc.Lists.Count}");
-
-	// Cleans unused styles and lists from the document depending on given CleanupOptions. 
-	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-	doc.Cleanup(cleanupOptions);
-
-	Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-					  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
-    
+Console.WriteLine($"Count of styles after Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 ```
 
-Be sure to specify the correct document path in the `dataDir` variable.
+## Step 6: Save the Cleaned Document
 
-You have now learned how to clean up unused styles and lists from a document using Aspose.Words for .NET. By following the step-by-step guide provided in this tutorial, you can easily apply this feature to your own documents.
+Finally, let's save our cleaned-up document. This will ensure all changes are saved, and your document is as tidy as possible.
 
+```csharp
+doc.Save(dataDir + "CleanedDocument.docx");
+```
+
+## Conclusion
+
+And there you have it! You've successfully cleaned up your Word document by removing unused styles and lists using Aspose.Words for .NET. It's like decluttering your digital desk, making your documents more manageable and efficient. Give yourself a pat on the back for a job well done!
+
+## FAQ's
+
+### What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful library that allows you to create, modify, and convert Word documents programmatically using C#.
+
+### Can I remove both unused styles and lists simultaneously?
+Yes, you can set both `UnusedLists` and `UnusedStyles` to `true` in the `CleanupOptions` to remove both.
+
+### Is it possible to undo the cleanup?
+No, once the cleanup is done and the document is saved, you cannot undo the changes. Always keep a backup of your original document.
+
+### Do I need a license for Aspose.Words for .NET?
+Yes, Aspose.Words for .NET requires a license for full functionality. You can get a [temporary license](https://purchase.aspose.com/temporary-license) or [purchase one](https://purchase.aspose.com/buy).
+
+### Where can I find more information and support?
+You can find detailed documentation [here](https://reference.aspose.com/words/net/) and get support from the [Aspose forum](https://forum.aspose.com/c/words/8).
 
