@@ -24,7 +24,7 @@ Whether you want to convert Word documents to PDF for online distribution, archi
 | [Reduce PDF Size by Disabling Embeded Fonts](./disable-embed-windows-fonts/) | Learn how to disable Windows font embedding when converting documents to PDF with Aspose.Words for .NET. |
 | [Optimize PDF Size with Skip Embedded Arial & Times Roman Fonts](./skip-embedded-arial-and-times-roman-fonts/) | Step-by-step guide to generate PDF without embedding Arial and Times Roman fonts with Aspose.Words for .NET. |
 | [Reduce PDF File Size by Not Embedding Core Fonts](./avoid-embedding-core-fonts/) | Learn how to avoid basic font embedding when converting Word documents to PDF with Aspose.Words for .NET. |
-| [Escape URI in PDF Document](./escape-uri/) | Step-by-step guide to escaping Uri with Aspose.Words for .NET. |
+| [Escape URI in PDF Document](./escape-uri/) | Learn how to escape URIs in PDFs using Aspose.Words for .NET. This detailed guide walks you through the process step-by-step. |
 | [Export Word Document Header Footer Bookmarks to PDF Document](./export-header-footer-bookmarks/) | Step by step guide to export header and footer bookmarks with Aspose.Words for .NET. |
 | [Reduce PDF Size with Scale Wmf Fonts To Metafile Size](./scale-wmf-fonts-to-metafile-size/) | Step-by-step guide to adjust WMF font size when converting to PDF with Aspose.Words for .NET. |
 | [Imporove PDF Text Postioning with Additional Text Positioning](./additional-text-positioning/) | Learn how to control the placement of additional text when converting Word documents to PDF with Aspose.Words for .NET. |
